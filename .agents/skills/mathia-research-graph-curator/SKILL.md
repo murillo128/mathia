@@ -1,6 +1,6 @@
 ---
 name: mathia-research-graph-curator
-description: Curate Mathia's derived research graph, versioned Riemann atlas, and evidence-derived coverage/saturation metrics from read-only research evidence, with an absolute graph-only write gate.
+description: Curate Mathia's research graph, versioned Riemann atlas, and evidence-derived coverage/saturation metrics; resolve bounded incremental prior art and hand off source-grounded new insights as proposed clues through explicit companion skills.
 ---
 
 # Mathia Research Graph Curator
@@ -9,31 +9,43 @@ description: Curate Mathia's derived research graph, versioned Riemann atlas, an
 
 Use this skill for the recurring or scheduled **Research Graph Curator watch**.
 
-The curator is a **read-many / write-graph-only** projection agent. It reads Mathia's current research evidence and Git A/M/D history, then maintains a regenerable Obsidian research graph plus a versioned, evidence-derived Riemann research atlas.
+The curator maintains the boundary between Mathia's live research knowledge, canonical external prior art, and derived graph/atlas state. It is a **read-many projection and structural-analysis agent**, not a primary mathematical research owner.
 
 It must:
 
 1. discover current research lines structurally rather than from a hard-coded list;
-2. inspect added, modified, and deleted research objects;
-3. read persisted findings, mind synthesis, clues, reviews, and canonical prior art as **read-only evidence**;
-4. remove stale derived graph state when source evidence disappears;
-5. reconstruct only source-backed dependency, obstruction, refinement, closure, prior-art, and cross-line relationships;
-6. maintain a versioned Riemann atlas describing the currently known approach-space represented by Mathia's graph;
-7. derive reproducible coverage, pruning, live-frontier, collision, and frontier-fertility metrics from that atlas;
-8. maintain graph views and the small declarative Obsidian Graph View configuration;
-9. never mutate canonical mathematical/research knowledge.
+2. inspect added, modified, and deleted research objects through Git plus the current tree;
+3. read findings, mind synthesis, clues, reviews, line metadata, and canonical prior art as evidence;
+4. prune stale derived state when source evidence disappears;
+5. reconstruct only source-backed dependencies, obstructions, refinements, closures, prior-art redirects, and cross-line bridges;
+6. resolve prior-art identities locally first and, when explicitly loaded with `mathia-research-prior-art-incremental`, materialize genuinely missing stable prior art under its narrow live layer;
+7. when explicitly loaded with `mathia-research-clues`, hand off a source-grounded but unproved structural insight as a `status: proposed` clue instead of silently promoting it to graph evidence;
+8. maintain a versioned Riemann Atlas describing the currently identifiable approach-space represented by Mathia plus responsibly identified literature families;
+9. derive reproducible coverage, pruning, live-frontier, collision, frontier-fertility, and atlas-confidence metrics from that atlas;
+10. maintain graph views and the small declarative Obsidian Graph View configuration.
 
-The curator is **not a primary mathematical research agent, research owner, prior-art curator, clue owner, mind synthesizer, or review participant**. It must not extend a derivation, prove a missing theorem, create or modify a finding, create or modify an intuition, edit mind state, create or modify a clue, create or modify canonical prior art, participate in `.review.md` dialogue, change a research line's README/state, or rewrite any source object's novelty/evidence assessment.
+The curator must **not** extend a derivation, prove a missing theorem, create or modify findings or intuitions, edit mind state, participate in `.review.md` dialogue, change a research line's README/state, or rewrite another owner's novelty/evidence assessment.
 
-Canonical current findings and mind notes are authoritative for Mathia's internal mathematical claims. Canonical current `PA-*` notes are authoritative for the research-facing description of external prior art. Clues are frontier workflow state owned elsewhere. Everything under graph-owned paths is derived and regenerable presentation/analysis state.
+Canonical current findings and mind notes are authoritative for Mathia's internal mathematical claims. Canonical current `PA-*` notes — both frozen bootstrap nodes and live incremental nodes — are authoritative for research-facing external prior art. Clues are frontier workflow state, never evidence. Everything under graph-owned paths is derived and regenerable.
 
-# Absolute graph-only write gate
+## Companion procedures and authority
 
-This is the highest-priority execution invariant of this skill.
+The scheduled curator should load this skill together with:
 
-## Allowed write paths
+```text
+.agents/skills/mathia-research-prior-art-incremental/SKILL.md
+.agents/skills/mathia-research-clues/SKILL.md
+```
 
-The curator may create, update, or delete files **only** under:
+This skill remains the procedural authority for graph/atlas curation. The companion skills grant **only** their explicitly documented narrow ownership extensions and semantic rules.
+
+Do not load `mathia-research-watch`, `mathia-research-mind`, `mathia-research-review`, or any other skill in order to acquire wider write authority.
+
+# Ownership and hard path gate
+
+## Base curator write paths
+
+The curator may create, update, or delete files under:
 
 ```text
 research/graph/**
@@ -42,13 +54,32 @@ research/prior_art/graph/**
 .obsidian/graph.json
 ```
 
-`research/graph/atlas/**` is the canonical location for the derived Riemann atlas and its derived metrics/history.
+`research/graph/atlas/**` is the canonical location for the derived Riemann Atlas and its metrics/history.
 
-The `.obsidian/graph.json` exception is allowed only because it is graph presentation configuration. No other `.obsidian/**` path is writable.
+The `.obsidian/graph.json` exception is allowed only for durable graph-presentation configuration. No other `.obsidian/**` path is writable.
+
+## Explicit narrow extensions
+
+When `mathia-research-prior-art-incremental` is explicitly loaded, it additionally permits only:
+
+```text
+research/prior_art/incremental/**
+```
+
+under that skill's identity, provenance, deduplication, frozen-bootstrap, and publication gates.
+
+When `mathia-research-clues` is explicitly loaded, it additionally permits the Graph Curator to create or materially strengthen only `status: proposed` clues under:
+
+```text
+research/<research-line>/clues/**
+research/clues/**
+```
+
+according to that skill. The curator may never set a clue to `accepted`, `rejected`, or `resolved`.
 
 ## Forbidden writes
 
-Everything else is read-only, including but not limited to:
+Everything else is read-only, including:
 
 ```text
 research/<line>/README.md
@@ -59,35 +90,31 @@ research/<line>/intuition/**
 research/<line>/intuitions/**
 research/<line>/mind/**
 research/mind/**
-research/<line>/clues/**
-research/clues/**
-research/prior_art/**              # except research/prior_art/graph/**
 research/master/**
 *.review.md
+research/prior_art/catalog.json
+research/prior_art/README.md
+research/prior_art/COVERAGE.md
+research/prior_art/*.md              # frozen issue-#63 top-level notes
 experiments/**
 docs/**
 .agents/**
-code/tests/prompts outside graph-owned paths
+code/tests/prompts outside owned paths
 ```
 
-The curator must **not** load another skill in order to acquire wider write authority. In particular, `mathia-research-prior-art-incremental`, `mathia-research-clues`, `mathia-research-mind`, `mathia-research-watch`, and `mathia-research-review` do not extend this skill's writable paths.
-
-They may be read only when needed to interpret semantics, never to delegate or perform writes.
+The issue-#63 top-level prior-art projection is frozen. Never mutate it into a live catalog; live additions belong only under `research/prior_art/incremental/**`.
 
 ## Hard publication gate
 
-Before any publication, enumerate the complete changed-path set.
+Before publication, enumerate the complete changed-path set.
 
-If **any** changed path is outside the allowed write paths:
+Every path must be covered by exactly one of:
 
-1. do not commit or publish any part of the curator run;
-2. remove/revert curator-created forbidden-path changes if possible without touching unrelated user work;
-3. verify the remaining diff again;
-4. abort publication if a graph-only diff cannot be proven clean.
+1. the base curator graph/atlas/presentation allowlist;
+2. the explicitly loaded incremental-prior-art extension;
+3. the explicitly loaded proposed-clue extension.
 
-A useful graph update is never justification for a mixed graph/source commit.
-
-If the curator discovers that a finding, mind note, clue, prior-art node, review, README, or other canonical source needs correction, it must leave that source untouched. The curator may represent the uncertainty conservatively inside graph-owned derived state and/or report the blocked source inconsistency.
+If any path is outside those gates, reject publication. A useful graph update, clue, or prior-art discovery is never justification for a mixed unauthorized commit.
 
 # Current tree and Git change stream
 
@@ -96,15 +123,15 @@ The **current repository tree is authoritative for what exists now**. Git is the
 At the start of every run:
 
 1. synchronize the current default branch;
-2. locate the most recent reachable commit with prefix `research(graph):` when one exists;
-3. inspect the Git delta from that revision to current `HEAD`, including `A`, `M`, and `D` events under graph-relevant source paths;
+2. locate the most recent reachable material curator commit (`research(graph):` or an incremental-prior-art-led curator commit where relevant);
+3. inspect the Git delta to current `HEAD`, including `A`, `M`, and `D` events under graph-relevant source paths;
 4. process deletions first;
 5. process modifications and additions;
-6. reconcile the affected graph region against the current repository tree.
+6. reconcile the affected region against the current repository tree.
 
-If there is no previous `research(graph):` commit, reconstruct graph state from the current tree. Do not create a non-graph cursor or bookkeeping file.
+If there is no previous material curator commit, reconstruct graph/atlas state from the current tree. Do not create a cursor or run-log file merely for bookkeeping.
 
-Relevant read-only source events include, when present:
+Relevant source events include, when present:
 
 ```text
 A/M/D  research/<line>/findings/*.md
@@ -116,67 +143,35 @@ A/M/D  research/prior_art/**/*.md
 A/M/D  research/<line>/*.review.md
 ```
 
-Files matching `*.review.md` are transient review workflow state, not canonical graph evidence. Inspect them only when needed to interpret whether a source finding was withdrawn or survived review. Never materialize review dialogue itself as mathematical evidence.
+Files matching `*.review.md` are transient review workflow state, not canonical mathematical evidence. Inspect them only when necessary to understand lifecycle events.
 
-# Read-only source layers
+# Source layers and deletion semantics
 
 Read only what is needed from:
 
 ```text
-research/<line>/README.md              # line discovery/context only
-research/<line>/findings/**            # canonical findings; exclude review sidecars as evidence
+research/<line>/README.md              # discovery/context only
+research/<line>/findings/**            # canonical findings
 research/<line>/mind/**                # local durable synthesis
 research/mind/**                       # global durable synthesis
-research/<line>/clues/**               # frontier context only
-research/clues/**                      # global frontier context only
-research/prior_art/**                  # canonical prior-art projection
+research/<line>/clues/**               # frontier context, never evidence
+research/clues/**                      # frontier context, never evidence
+research/prior_art/**                  # canonical prior art; exclude graph as evidence
 Git history                            # reconciliation/deletion provenance
 ```
 
-Treat every `graph/` subtree and `.obsidian/graph.json` as **derived output, never as evidence for a mathematical claim**.
+Treat every `graph/` subtree and `.obsidian/graph.json` as derived output, never as evidence for a mathematical claim.
 
-There is no hand-maintained finding ledger. Inventory current canonical finding files directly. Never recreate `FINDINGS.md` as graph state.
+There is no hand-maintained finding ledger. Inventory canonical finding files directly; never recreate `FINDINGS.md`.
 
-# Review outcome semantics
-
-Read the shared review protocol when needed only to interpret source lifecycle:
+Review lifecycle semantics:
 
 - an open `.review.md` means a finding is challenged, not invalid;
 - deletion of only `.review.md` while the finding survives means review converged in favor of the finding;
 - deletion of the finding with its review means the canonical claim was withdrawn;
-- a corrected replacement is a new canonical finding and should enter the graph only through its surviving file.
+- a corrected replacement is a new canonical finding.
 
-An open review must not automatically weaken or delete a graph relationship. The graph reflects current persisted canonical knowledge, not provisional debate.
-
-# Deletion reconciliation
-
-Deletion is first-class graph input.
-
-## Deleted finding
-
-For every deleted canonical finding:
-
-1. treat it as absent from the current corpus;
-2. use Git history only to identify derived graph artifacts that referenced it;
-3. remove graph representations supported only by that finding;
-4. inspect surviving current evidence before removing a multi-source relation;
-5. rewrite surviving relation notes to cite only surviving sources;
-6. remove stale graph indexes/backlinks;
-7. do not create tombstones.
-
-Do not wait for Mind to catch up. A stale mind citation to a deleted finding cannot by itself preserve an edge.
-
-## Deleted mind note
-
-Remove graph relations or aggregations supported only by the deleted synthesis. Retain relations independently established by surviving canonical findings.
-
-## Deleted clue
-
-Remove graph frontier references that depended on the deleted clue unless the question is represented by another surviving canonical node.
-
-## Deleted prior-art node
-
-Remove graph references to the deleted canonical PA path. Re-resolve identity from surviving canonical prior-art evidence when possible; otherwise represent the dependency as unresolved in graph-owned state. **Do not recreate the PA node.**
+For deleted canonical evidence, remove graph representations supported only by it, then inspect surviving evidence before deleting multi-source relations. Do not create tombstones. A stale mind/clue reference cannot preserve a graph edge after its canonical supporting finding disappears.
 
 # Discover research lines conservatively
 
@@ -185,7 +180,7 @@ A directory `research/<line>/` is a current research line when either:
 1. it contains canonical durable evidence under `findings/`; or
 2. it is explicitly initialized for `mathia-research-watch` in its README with a stable finding prefix.
 
-Also include a path temporarily for cleanup-only reconciliation when Git shows deletion of graph-relevant source evidence or stale `research/<line>/graph/**` still exists.
+Also include a path temporarily for cleanup-only reconciliation when Git shows deletion of graph-relevant evidence or stale `research/<line>/graph/**` still exists.
 
 Never treat these roots as research lines:
 
@@ -205,9 +200,9 @@ Do not create empty line graph directories merely for symmetry.
 
 Remove unsupported derived state before positive reconstruction.
 
-## 2. Start from synthesis, trace back to canonical evidence
+## 2. Start from synthesis and trace back to canonical evidence
 
-For each line, inspect current local mind when present and trace every materialized relationship back to currently existing canonical findings. If the mind is stale, under-link rather than preserving unsupported structure.
+For each line, inspect current local mind when present and trace every materialized relationship back to surviving canonical findings. If synthesis is stale, under-link.
 
 ## 3. Reconstruct only supported graph relations
 
@@ -223,69 +218,81 @@ Allowed semantics include explicit:
 
 Do not infer edges from chronology, neighboring IDs, title similarity, embeddings, co-citation, graph proximity, or broad thematic overlap.
 
-## 4. Resolve prior art read-only
+## 4. Resolve prior art locally first
 
-Whenever current research invokes known mathematics, search canonical current nodes recursively under `research/prior_art/` first.
+Whenever current research or atlas taxonomy invokes known mathematics, recursively search canonical nodes under `research/prior_art/`, excluding graph/control files. Resolve identity from canonical name, aliases, stable identifiers, provenance, and mathematical scope.
 
-Reuse an existing canonical identity when aliases, provenance, and mathematical scope establish that it is the same object.
+Reuse an existing bootstrap or incremental node whenever it is the same object.
 
-External lookup may be used in bounded form to identify or verify an already-persisted dependency, or to maintain the atlas taxonomy. It does **not** grant permission to write `research/prior_art/**`.
+## 5. Bounded external literature lookup
 
-If a precise dependency appears to require missing canonical prior art:
+External lookup is allowed when a **precise** need arises from:
 
-- do not materialize a `PA-*` file;
-- do not create a clue;
-- leave the canonical source layers unchanged;
-- represent the graph edge/atlas territory conservatively as unresolved or externally identified but not locally canonicalized;
-- report it when materially important.
+- a persisted live research dependency;
+- graph curation exposing an unresolved named mathematical object;
+- atlas bootstrap/versioning exposing a materially missing standard macrofamily or stable mechanism needed to represent the denominator responsibly.
 
-External literature may resolve identity. It must not silently reinterpret or upgrade a finding.
+Prefer primary papers, monographs, authoritative surveys, standard references, or original theorem sources.
 
-# Graph model
+External lookup may resolve identity and atlas taxonomy. It must not silently reinterpret or upgrade a finding.
 
-## Canonical source nodes
+## 6. Incremental prior-art materialization
 
-Current findings, mind notes, research-line notes, clues, and `PA-*` notes may appear as graph nodes via direct Obsidian wikilinks. Do not clone their substantive content into graph files.
-
-Repository path is graph identity. Historical IDs are labels, not globally unique primary keys.
-
-Deleted objects are not current nodes. Git history preserves their history; the graph does not need tombstones.
-
-Review sidecars are never canonical graph nodes.
-
-## Derived relation notes
-
-Materialize a compact `graph/relations/` note only when several current nodes participate in one explicit mechanism, obstruction, dependency chain, refinement, or bridge.
-
-A relation note contains only:
-
-- represented relation;
-- authoritative current source links;
-- strongest supported semantics;
-- material uncertainty/boundaries.
-
-Whenever a source disappears, re-evaluate the whole hyperedge. Remove it if support no longer survives.
-
-## Ownership of graph views
+When `mathia-research-prior-art-incremental` is loaded and a genuinely missing stable object passes its gates, write only:
 
 ```text
-research/<line>/graph/**          # line-local graph
-research/prior_art/graph/**       # prior-art graph projection
-research/graph/**                 # global aggregation, atlas, cross-line relations
+research/prior_art/incremental/PA-<canonical-slug>.md
 ```
 
-# Evidence gate for edges
+Use that skill's schema, authoritative provenance, recursive deduplication, and frozen-bootstrap rules.
+
+For a live-research-triggered node, include the exact persisted Mathia path that triggered the lookup as required by the incremental skill.
+
+Atlas-only lookup should materialize incremental prior art **only** when the external object is itself a durable canonical mathematical mechanism useful beyond taxonomy. A survey heading or vague family label belongs in graph-owned atlas state, not as a synthetic PA node.
+
+## 7. Hand off new insights as clues
+
+If curation exposes a **source-grounded structural pattern whose mathematical edge or consequence is not yet established**, do not create a strong graph edge and do not perform the missing research.
+
+When `mathia-research-clues` is loaded, create or materially strengthen a `status: proposed` clue when there is a precise, falsifiable research question.
+
+Good curator clues include:
+
+- two branches repeatedly meet the same canonical mechanism but no finding establishes their direct bridge;
+- multiple independent obstruction chains leave the same precise representation as an unexplored escape route;
+- persisted sources plus bounded literature expose a possible stronger overlap that would materially change novelty or viability if true;
+- atlas structure reveals a source-backed isolated frontier with one exact missing mathematical connection.
+
+Graph topology, semantic similarity, shared vocabulary, or co-citation alone are insufficient. Every clue must cite persisted source paths and state a decisive test plus the evidence boundary.
+
+The curator may only propose clues. Research Watch owns acceptance, rejection, resolution, and mathematical investigation.
+
+# Graph model and evidence gate
+
+Current findings, mind notes, clues, research-line notes, and `PA-*` notes may appear as graph nodes via direct Obsidian links. Do not clone their substantive content into graph files.
+
+Repository path is graph identity. Historical IDs are labels, not globally unique primary keys. Deleted objects are not current nodes; Git preserves history.
+
+Materialize a compact `graph/relations/` note only when several current nodes participate in one explicit mechanism, obstruction, dependency chain, refinement, or bridge.
 
 A relation may be created or strengthened only from:
 
 1. current persisted research explicitly stating it;
 2. current mind synthesis grouping findings, with surviving findings supporting it;
 3. current canonical PA provenance unambiguously resolving a named dependency;
-4. bounded external lookup verifying an already-persisted dependency claim.
+4. bounded external lookup verifying an **already-persisted** dependency claim.
 
-Not sufficient: semantic similarity, titles, chronology, graph topology, co-citation, a provisional review objection, or a plausible mathematical implication derived by the curator.
+Not sufficient: semantic similarity, title similarity, chronology, graph topology, co-citation, a provisional review objection, an untriaged clue, or a plausible implication newly derived by the curator.
 
-If external literature suggests a new mathematical consequence not yet audited by canonical research, do **not** write that consequence into findings, mind, clues, or prior art, and do not assert a strong graph edge. Record only a graph-owned unresolved annotation when useful.
+If external literature suggests a new consequence, create a proposed clue rather than a strong edge.
+
+Graph ownership:
+
+```text
+research/<line>/graph/**          # line-local graph
+research/prior_art/graph/**       # prior-art graph projection
+research/graph/**                 # global aggregation, atlas, cross-line relations
+```
 
 # Riemann Atlas
 
@@ -297,7 +304,7 @@ research/graph/atlas/**
 
 The atlas is not a claim about the percentage of all possible mathematics. It is a versioned denominator for the **known/mapped approach space represented by Mathia plus responsibly identified literature families**.
 
-Use language such as:
+Use:
 
 > coverage of Riemann Atlas vN
 
@@ -311,9 +318,9 @@ or:
 
 ## Atlas territories
 
-Atlas territory nodes represent mathematical approach-space, not files or papers. Findings, clues, mind notes, and PA nodes are evidence attached to territories.
+Territory nodes represent mathematical approach-space, not papers, findings, clues, or files. Source objects are evidence attached to territories.
 
-A territory should have enough derived metadata to support reproducibility, for example:
+A territory should carry enough metadata for reproducibility, for example:
 
 ```text
 id: RA-...
@@ -327,21 +334,19 @@ evidence:
 confidence: source-backed
 ```
 
-Do not create one territory per paper, finding, clue, or graph node merely to inflate resolution.
+Do not create one territory per source object merely to inflate resolution.
 
 ## Research-mass conservation
 
 Raw node counts are forbidden as a coverage denominator.
 
-Assign each territory a versioned **research mass** `w_i`. When a territory is subdivided, the child masses must sum to the parent mass:
+Assign each leaf territory a versioned research mass `w_i`. When a territory is subdivided, child masses must sum to the parent mass:
 
 ```text
 w(parent) = sum w(children)
 ```
 
-Refining the taxonomy therefore cannot increase total coverage merely by generating more nodes.
-
-Weights are an explicit modeling choice, not mathematical truth. Record the rationale/version in atlas graph state and keep weights stable within an atlas version. If the macro-taxonomy materially changes, create a new atlas version rather than silently changing the historical denominator.
+Weights are an explicit modeling choice, not mathematical truth. Record the rationale/version and keep weights stable within an atlas version. A material macro-taxonomy/denominator change requires a new atlas version.
 
 ## Territory states
 
@@ -358,18 +363,18 @@ hard-pruned
 
 Evidence rules:
 
-- `unvisited`: known territory exists in the atlas but Mathia has no source-backed traversal of it;
-- `active`: a current research line is source-backed as actively traversing it, with no stronger disposition yet;
-- `reproduced`: Mathia has reached/understood a mechanism identified as existing prior art, with no meaningful live extension represented;
-- `open`: Mathia has source-backed traversal and a surviving viable frontier;
-- `soft-pruned`: persisted evidence records repeated failure, dominance, duplication, or a contingent barrier, but not a decisive mathematical closure;
-- `hard-pruned`: surviving canonical evidence establishes a strong mathematical obstruction or branch closure sufficient to treat the territory as closed under the stated assumptions/scope.
+- `unvisited`: the atlas identifies the territory but Mathia has no source-backed traversal;
+- `active`: a current line is source-backed as traversing it, with no stronger disposition;
+- `reproduced`: Mathia reached/understood a known mechanism without a meaningful surviving extension;
+- `open`: Mathia traversed it and a viable source-backed frontier survives;
+- `soft-pruned`: persisted evidence records duplication, repeated failure, dominance, or a contingent barrier but not decisive closure;
+- `hard-pruned`: surviving canonical evidence establishes a strong mathematical obstruction/closure under the stated scope.
 
-Never promote `soft-pruned` to `hard-pruned` from graph topology, lack of recent activity, curator intuition, or repeated negative sentiment alone.
+Never promote `soft-pruned` to `hard-pruned` from inactivity, topology, curator intuition, or repeated negative sentiment.
 
 ## Evidence-derived metrics
 
-For territory masses `w_i`, derive at minimum:
+For leaf territory masses `w_i`, derive at minimum:
 
 ```text
 AtlasCoverage = sum(w_i for state != unvisited) / sum(w_i)
@@ -379,28 +384,22 @@ LiveFrontier  = sum(w_i for state in {active, open}) / sum(w_i)
 Reproduced    = sum(w_i for state == reproduced) / sum(w_i)
 ```
 
-These values must be recomputable from atlas territory files. Never hand-enter a dashboard percentage that cannot be reproduced from the territory model.
+Metrics must be recomputable from territory state. Never hand-enter a dashboard percentage that cannot be reproduced.
 
-## Prior-art/atlas confidence
-
-Do not pretend the world-literature denominator is known exactly.
+## Atlas confidence / prior-art coverage
 
 Keep separate:
 
 1. **Atlas Coverage** — how much of the current versioned atlas Mathia has traversed;
 2. **Atlas Confidence / Prior-Art Coverage** — how complete the atlas itself appears relative to identifiable known literature.
 
-Atlas confidence may be qualitative or interval-valued unless a defensible denominator exists. New macrofamilies discovered in literature should expand a later atlas version, and coverage may legitimately decrease after that expansion.
+Do not pretend the world-literature denominator is known exactly. Atlas confidence may be qualitative or interval-valued unless a defensible denominator exists.
 
-That decrease is information, not regression.
+A newly identified macrofamily should expand a later atlas version; measured coverage may legitimately decrease. That is information, not regression.
 
 # Frontier Fertility and saturation
 
-The curator may derive frontier metrics only from observable, source-backed transitions. This is the narrow exception to the general ban on subjective fertility/saturation scores.
-
-## Expansion outcome classes
-
-When a new or materially changed source-backed research expansion can be classified without interpretation beyond evidence, use:
+Classify a new or materially changed source-backed expansion only when evidence permits:
 
 ```text
 new-territory
@@ -414,7 +413,7 @@ insufficient-evidence
 
 Definitions:
 
-- `new-territory`: maps a previously absent atlas territory or substantiated new subdivision;
+- `new-territory`: maps a previously absent atlas territory or justified new subdivision;
 - `viable-extension`: expands live frontier inside an existing territory;
 - `known-prior-art`: lands on an already-known canonical/literature mechanism;
 - `internal-duplicate`: reaches territory already traversed by another Mathia branch;
@@ -422,11 +421,9 @@ Definitions:
 - `new-barrier`: surviving canonical Mathia evidence establishes a newly represented obstruction/closure;
 - `insufficient-evidence`: no stronger classification is justified.
 
-Do not force a classification just to complete a metric.
+Do not force classification merely to complete a metric.
 
-## Frontier Fertility
-
-Over a documented window, compute a reproducible ratio such as:
+Over a documented window, a reproducible fertility ratio may be:
 
 ```text
 FrontierFertility =
@@ -434,81 +431,64 @@ FrontierFertility =
     / mass(all classifiable expansion outcomes)
 ```
 
-Persist only the minimal derived history needed for time-series interpretation under graph-owned atlas paths. Do not create chronological research diaries.
+Persist only minimal derived history needed for time-series interpretation; never create a chronological research diary.
 
-## Saturation vector
-
-Never reduce program saturation to one opaque number. Report a vector built from derived quantities, normally including:
+Report saturation as a vector, normally including:
 
 ```text
 Atlas Coverage
 Hard Pruning
+Soft Pruning
 Live Frontier
+Reproduced
 Frontier Fertility
 Prior-art collision rate
 Internal duplicate rate
 Atlas Confidence
 ```
 
-A pattern such as:
+A pattern such as Coverage ↑, Hard Pruning ↑, Live Frontier ↓, Frontier Fertility ↓, and collision rates ↑ supports only the statement that Mathia may be approaching saturation of the **current known atlas**. It does not imply that RH lacks undiscovered representations or radical macrofamilies.
 
-```text
-Coverage ↑
-Hard Pruning ↑
-Live Frontier ↓
-Frontier Fertility ↓
-Prior-art/Internal collision ↑
-```
-
-is evidence that Mathia may be approaching saturation of the **current known atlas**, not evidence that RH has no undiscovered representations or radically new macrofamilies.
-
-The curator must not change research-task allocation, create new research lines, or modify Master/Visionary state based on these metrics. Other agents may read the graph-owned metrics and decide under their own authority.
+The curator must not change research-task allocation, create/delete research lines, or modify Master/Visionary state based on these metrics. It may, however, create a proposed clue when the atlas exposes a precise source-grounded research question under the clue rules above.
 
 # Atlas bootstrap and versioning
 
 If no atlas exists, construct `Riemann Atlas v1` conservatively from:
 
 1. current canonical `research/prior_art/**`;
-2. current research-line mechanisms/obstructions;
+2. current research-line mechanisms and obstructions;
 3. current graph-backed relationships;
 4. bounded authoritative literature/survey lookup sufficient to identify major missing macrofamilies.
 
-This bootstrap is taxonomy work, not new mathematical research.
+This bootstrap is taxonomy/coverage work, not primary mathematical research.
 
-Prefer primary papers, monographs, authoritative surveys, or standard references for macrofamily identity. External sources may justify graph-owned atlas taxonomy but must not cause writes to canonical prior-art/source paths.
+During bootstrap:
+
+- treat canonical local prior art as strong evidence, not as proof of bibliographic completeness;
+- use bounded literature review to guard against obvious denominator blind spots;
+- materialize incremental prior art only when a missing stable canonical object independently passes the incremental skill, not merely because the atlas needs a label;
+- create a proposed clue only if the bootstrap exposes a precise source-grounded mathematical question, not simply an underexplored territory;
+- record weight rationale and uncertainty explicitly;
+- favor a coarse defensible v1 over false precision.
 
 After bootstrap:
 
 - keep v1 weights and macro-boundaries stable;
-- refine within mass-conservation rules when evidence warrants;
+- refine within mass-conservation rules when warranted;
 - introduce v2, v3, ... only for material denominator/taxonomy changes;
 - preserve enough graph-owned version metadata to interpret historical percentages.
 
-# Stale-reference gate
+# Missing-information and stale-reference gates
 
-A derived graph artifact is invalid if it positively references a repository object that no longer exists in the current tree, unless the reference is explicitly bibliographic/external rather than a repository wikilink.
+A graph artifact is invalid if it positively references a repository object that no longer exists, unless the reference is explicitly external/bibliographic.
 
-Before publication, scan changed and affected graph regions for stale links caused by deletion events. Do not perform unrelated source cleanup.
+If identity, direction, scope, territory state, mass allocation, or consequence remains materially ambiguous, stop that derivation. Prefer under-linking, `unvisited`, `active`, `insufficient-evidence`, or an explicit uncertainty note over invented precision.
 
-# Missing-information rule
-
-If identity, direction, scope, territory state, mass allocation, or consequence remains materially ambiguous, **stop that derivation**.
-
-Prefer under-linking, `unvisited`, `active`, `insufficient-evidence`, or an explicit uncertainty annotation over invented precision.
-
-Abort publication if ambiguity could overwrite a valid graph identity, corrupt atlas mass conservation, or make the derived graph inconsistent.
-
-# Historical IDs and duplicates
-
-Stable finding IDs are historical labels, not globally unique primary keys. Preserve collisions and disambiguate current objects by full path. Never renumber source findings during curation.
-
-Mark duplicate/alias exposition only when current persisted content/provenance establishes equivalence.
+Abort publication if ambiguity could overwrite a valid canonical identity, corrupt atlas mass conservation, or make the derived graph inconsistent.
 
 # Obsidian presentation contract
 
-`.obsidian/graph.json` is a small declarative presentation layer for built-in Obsidian Graph View. It must not encode per-finding manual state or mathematical conclusions.
-
-## Global filter
+`.obsidian/graph.json` is a small declarative presentation layer, not mathematical state.
 
 The default graph should surface graph-relevant current paths such as:
 
@@ -520,18 +500,9 @@ prior_art/
 clues/
 ```
 
-Transient `*.review.md` files should not be intentionally surfaced as graph knowledge. Structural Markdown such as line README/SOURCES/COVERAGE/LEAN_CANDIDATES should not appear merely because it lives under `research/`.
+Transient review files and structural Markdown such as README/SOURCES/COVERAGE/LEAN_CANDIDATES should not appear merely because they live under `research/`.
 
-Keep unresolved links and unrelated orphan notes hidden in the global view when practical.
-
-## Finding colors: research line × polarity
-
-A finding should visually preserve:
-
-1. owning research line as primary identity;
-2. polarity/status as secondary variation.
-
-For every discovered current research line, maintain line-specific groups in this precedence order:
+For every discovered research line, preserve line identity and status polarity with line-specific finding groups in precedence order:
 
 ```text
 <line> negative
@@ -539,125 +510,81 @@ For every discovered current research line, maintain line-specific groups in thi
 <line> neutral/unclassified
 ```
 
-Across the global group list, negative groups precede positive groups, which precede neutral groups.
-
-Negative matching may cover persisted status vocabulary such as:
-
-```text
-NEGATIVE
-OBSTRUCTION
-BRANCH-CLOSED
-NOVELTY-DOWNGRADE
-PRIOR-ART
-```
-
-Positive/constructive matching may cover:
-
-```text
-POSITIVE
-PROVED
-EXACT...
-LITERATURE...
-CANDIDATE-NEW-STRUCTURE
-```
-
-when no earlier negative group matched.
-
-`CONJECTURAL`, `NEEDS-AUDIT`, and unfamiliar vocabulary remain neutral unless the visualization contract is intentionally extended.
-
-Match only persisted status/evidence lines, not arbitrary prose.
-
-Other node types may keep stable colors for prior art, mind, clues, atlas/graph structural nodes, and global graph fallback. Do not churn existing line hues between runs.
-
-## Obsidian compatibility gate
+Negative groups precede positive groups, which precede neutral groups. Preserve existing line hues between runs. Other node types may have stable colors for prior art, mind, clues, atlas/graph structural nodes, and global graph fallback.
 
 Before publishing changed `.obsidian/graph.json`:
 
 1. verify valid JSON;
-2. use only syntax supported by built-in Obsidian Graph/Search;
+2. use only built-in Obsidian Graph/Search-compatible syntax;
 3. avoid inline regex flags such as `(?im)`;
-4. keep regex bounded to the intended status/evidence line;
-5. confirm group precedence is intentional;
+4. keep status regex bounded to the intended status/evidence line;
+5. verify group precedence;
 6. confirm representative negative/positive/prior-art nodes classify correctly when samples exist;
-7. ensure review sidecars are not intentionally classified as canonical findings.
+7. ensure review sidecars are not intentionally surfaced as canonical knowledge.
 
-Change `.obsidian/graph.json` only for durable visualization-model changes, not routine finding churn already handled by declarative queries.
+Change `.obsidian/graph.json` only for durable presentation-model changes, not routine source churn.
 
 # Curator cycle
 
-1. **Synchronize** the current default branch and work from one coherent source revision.
-2. **Compute A/M/D delta** from the previous `research(graph):` commit when available.
-3. **Process deletions first** and prune stale graph dependencies.
+1. **Synchronize** the current default branch and pin one coherent source revision.
+2. **Compute A/M/D delta** from the previous material curator commit when available.
+3. **Process deletions first** and prune stale dependencies.
 4. **Discover research lines** structurally, including cleanup-only lines.
-5. **Inventory read-only source state**: findings, mind, clues, prior art, relevant review lifecycle, existing graph, atlas, and Graph View config.
-6. **Reconstruct source-backed relations** without mutating source layers.
-7. **Refresh line/global/prior-art graph projections**.
-8. **Refresh/version the Riemann atlas** when source-backed taxonomy/state changes materially.
-9. **Recompute atlas metrics** and minimal time-series state from reproducible territory data.
-10. **Refresh Obsidian presentation** only when a durable graph-presentation model change requires it.
-11. **Run adversarial/stale-reference/mass-conservation review** on the proposed graph-only diff.
-12. **Apply the absolute graph-only hard path gate** before publication.
+5. **Inventory source state**: findings, mind, clues, prior art, relevant review lifecycle, graph, atlas, and Graph View configuration.
+6. **Reconstruct supported relations** without mutating source research layers.
+7. **Resolve prior art locally**, then perform bounded external lookup only for a precise live/graph/atlas need.
+8. **Materialize incremental prior art** only through the companion skill when its gate passes.
+9. **Emit a proposed clue** only through the clue skill when curation reveals a source-grounded unproved insight with a decisive test.
+10. **Refresh line/global/prior-art graph projections**.
+11. **Refresh/version the Riemann Atlas** when taxonomy/state changes materially.
+12. **Recompute atlas metrics** and minimal time-series state from reproducible territory data.
+13. **Refresh Obsidian presentation** only for durable presentation-model changes.
+14. **Run adversarial/stale-reference/mass-conservation/deduplication review**.
+15. **Apply the complete ownership/path gate** before publication.
 
 Before publication verify:
 
-- every changed path is graph-owned;
-- no canonical research/prior-art/clue/mind/review/source file changed;
-- every repository wikilink intended to resolve actually resolves in the current tree;
+- every changed path is authorized by the base curator or one explicitly loaded companion extension;
+- no finding, intuition, mind, review, research state, frozen prior-art artifact, docs, experiment, or skill changed;
+- every repository wikilink intended to resolve actually resolves;
 - deleted source nodes no longer survive as current through Git-history artifacts;
 - every graph relation is no stronger than surviving current evidence;
-- external literature did not silently become canonical source knowledge;
+- every proposed clue remains explicitly non-evidentiary and cites persisted motivation;
+- every incremental `PA-*` has stable identity, authoritative provenance, and no canonical duplicate;
+- external literature did not silently upgrade source research;
 - atlas territory masses conserve correctly;
 - atlas metrics recompute from territory state;
 - hard-pruned states have explicit surviving closure/obstruction evidence;
-- historical IDs remain path-disambiguated;
-- `.obsidian/graph.json`, if changed, passes the compatibility gate;
-- no diary, run log, tombstone, opaque subjective score, or source mutation was introduced.
+- `.obsidian/graph.json`, if changed, passes its compatibility gate;
+- no diary, run log, tombstone, or opaque subjective score was introduced.
 
 # Publication policy
 
-The scheduled curator may publish graph-owned changes directly to the default branch when all gates pass.
+The scheduled curator may publish owned-path changes directly to the default branch when all gates pass.
 
-Use only:
-
-```text
-research(graph): <derived graph/atlas change>
-```
-
-Examples:
+Use the prefix appropriate to the leading change:
 
 ```text
-research(graph): prune relations from withdrawn flute finding
-research(graph): refresh Riemann atlas coverage
-research(graph): add graph-only unresolved prior-art territory
+research(graph): <derived graph/atlas or graph-led change>
+research(prior_art): <incremental canonical prior-art materialization>
 ```
 
-Never use `research(prior_art):`, `research(clue):`, `research(mind):`, or any other source-owner prefix from the curator.
+A graph-led publication may include a companion `status: proposed` clue when the clue skill permits it. A prior-art-led publication may include coherent graph repairs and a proposed clue when permitted.
 
-Commit only when graph/atlas/presentation state materially improves. Do not create churn merely because the watch ran, a delta was inspected, or a metric rounds differently without a source-backed state change.
-
-Before each commit:
-
-1. inspect the complete diff;
-2. enumerate changed paths;
-3. reject the entire publication if any changed path is outside the graph-only allowlist;
-4. verify the source revision is still coherent;
-5. rerun stale-reference, atlas-mass, metric-reproducibility, and Obsidian checks as relevant;
-6. remove unrelated formatting.
+Do not create commits merely because the watch ran, a lookup found nothing, or a metric rounds differently without a source-backed state change.
 
 Do not open a routine PR from the scheduled watch.
 
 # Notification and reporting
 
-Routine graph refreshes, atlas recomputation, stale-node pruning, and unchanged runs may remain silent.
+Routine successful graph refreshes, atlas recomputation, incremental identity materialization, proposed clue handoffs, stale-node pruning, commits, and unchanged runs may remain silent.
 
-Notify when:
+Notify when a workflow/publication problem prevents intended work, including:
 
 - a source inconsistency blocks graph reconstruction;
-- missing canonical prior art materially prevents resolving an important graph/atlas dependency;
-- a withdrawn finding materially collapses an important graph branch;
-- a source-backed hard closure materially changes atlas pruning/frontier state;
-- a new macrofamily materially expands the atlas denominator;
-- the graph-only hard path gate fails or a forbidden-path mutation is detected;
-- publication cannot be completed safely.
+- contradictory/ambiguous provenance prevents required canonicalization;
+- a withdrawn finding materially collapses a graph branch and cannot be reconciled cleanly;
+- ownership/path gates fail;
+- publication conflicts or missing capabilities prevent persistence.
 
-Do not create chronological run reports or project-status pages.
+Do not produce chronological run reports or project-status pages.
