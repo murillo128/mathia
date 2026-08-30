@@ -13,6 +13,10 @@ based_on:
   - research/prime_flute/findings/PF-110-zero-systole-obstructs-bounded-ideal-triangulations.md
   - research/prime_flute/findings/PF-111-shift-clone-has-summable-pant-local-marked-length-distortion.md
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
+  - research/prime_flute/findings/PF-113-relative-generator-right-limits-are-parabolic-gauge-data.md
+  - research/prime_flute/findings/PF-114-shift-clone-pant-waves-telescope-but-seam-relative-mode-does-not.md
+  - research/prime_flute/findings/PF-115-all-composite-shift-clone-has-the-same-gromov-hyperbolicity-class.md
+  - research/prime_flute/findings/PF-116-prime-flute-is-not-gromov-hyperbolic.md
 ---
 
 # Affine composite clone and the relative Laplacian class
@@ -25,15 +29,17 @@ PF-107 identifies a nonuniformity in the first intrinsic pants coordinate: for c
 
 PF-110 closes the bounded-ideal-triangulation shortcut: Whitney--Šarić bounded ideal triangulations would force quasiconformal equivalence to a zero-shear quotient by a subgroup of `PSL_2(Z)`, hence a positive systole after the modular trace floor and Wolpert length distortion. The prime flute has zero systole, so no bounded ideal triangulation in that sense exists.
 
-PF-111 removes pant-local word amplification. Thurston's pair-of-pants shrinking lemma, applied in both directions and then to the common-cusp limit, bounds the logarithmic length distortion of every nonperipheral closed word contained in one matched tight pant by the larger relative cuff defect. Those pant-local sup distortions are summable. Any surviving obstruction must therefore be cross-pant, a gluing failure, or genuinely nonlocal.
+PF-111 removes pant-local word amplification. Thurston's pair-of-pants shrinking lemma, applied in both directions and then to the common-cusp limit, bounds the logarithmic length distortion of every nonperipheral closed word contained in one matched tight pant by the larger relative cuff defect. Those pant-local sup distortions are summable. PF-114 gives the complementary simple-arc split: the two returning waves have summable logarithmic distortion, while the cross-cuff seam retains the common shift mode `log(S_n^+/S_n)=-1/p_n+o(1/p_n)` and is not `ell^1`, despite its **additive** defect being summable. Thus any surviving obstruction must be cross-pant, a gluing/energy amplification of that shrinking seam mode, or genuinely nonlocal.
 
 PF-112 closes the naive first-resolvent trace-class escalation independently of the tail problem. Under any smooth non-isometric common-manifold identification, a compactly localized first resolvent difference is a classical pseudodifferential operator of order `-2` with nonzero principal symbol in dimension two, with singular values at the critical `c/j` scale. Thus first-resolvent `S_1` is impossible even if compactness eventually holds. Global `S_p`, `p>1`, higher resolvent powers, heat differences, wave operators, and scattering remain separate gates.
 
+PF-113 shows that the most obvious fixed-frame generator right-limit mismatch is parabolic gauge data, while its conjugacy-invariant angle mismatch is summable. PF-115 and PF-116 close a coarse-geometric shortcut: the exact prime flute and the all-composite shift clone have the same Gromov-hyperbolicity class, and that common class is **non-hyperbolic**. Coarse Gromov geometry therefore cannot decide the relative-Laplacian question.
+
 ## Research question
 
-Does the canonical marked prime/composite matching extend directly to a quasiconformal, asymptotically isometric, or otherwise analytically controlled common-manifold comparison strong enough to imply compactness of a natural relative resolvent? If not, what exact nonlocal mechanism prevents such a conclusion despite the summable endpoint, transverse, area-weighted, canonical-separator, and pant-local marked-length defects?
+Does the canonical marked prime/composite matching extend directly to a quasiconformal, asymptotically isometric, or otherwise analytically controlled common-manifold comparison strong enough to imply compactness of a natural relative resolvent? If not, what exact nonlocal mechanism prevents such a conclusion despite the summable endpoint, transverse, area-weighted, canonical-separator, pant-local closed-word, and returning-wave defects?
 
-Compactness remains the first unresolved operator gate. If compactness is proved, PF-112 still forbids using the first resolvent difference as an ordinary trace-class determinant kernel.
+The only currently exposed nonsummable local relative mode is the shrinking cross-cuff seam scale from PF-114. Compactness remains the first unresolved operator gate. If compactness is proved, PF-112 still forbids using the first resolvent difference as an ordinary trace-class determinant kernel.
 
 ## Why it may matter
 
@@ -47,7 +53,7 @@ If compactness is proved, the next tests must respect PF-112: test `S_p`, `p>1`,
 
 ## Research-watch disposition
 
-**Accepted as a fertile research direction, not as proof of any operator equivalence.** The clue remains accepted after PF-110--PF-112 and the local-map prior-art audit below. No located theorem presently supplies the missing strong-equivalence map for this zero-systole, unbounded-cuff, one-cusp-per-pant tail.
+**Accepted as a fertile research direction, not as proof of any operator equivalence.** The clue remains accepted after PF-110--PF-116 and the strengthened local-map prior-art audit below. No located theorem presently supplies the missing strong-equivalence map for this zero-systole, unbounded-cuff, one-cusp-per-pant tail.
 
 ### Local geometric route that survives
 
@@ -65,9 +71,38 @@ The proof decomposes a hexagon into bands with metric `dx^2 + cosh^2(x) dy^2`, u
 K(C) -> 1 as C -> 0.
 ```
 
-In particular, PF-107's tail estimate `max |Delta ell| = O(1/p)` cannot simply be substituted as a varying `C_n` and turned into `K_n -> 1`. The boundary-case part of Minsky's argument is qualitative at exactly this point. A new uniform small-`C` refinement, specialized if necessary to one-cusp pants with two unbounded finite cuffs, is required before invoking strong metric equivalence.
+There is also a concrete reason not to extract such a modulus by naively affine-matching every band in Minsky's decomposition. A band parameter can tend to zero in the one-cusp boundary case, and two nearby pants can then have tiny corresponding artificial band widths whose ratio stays order-one away from `1`. An affine map forced to preserve those auxiliary band boundaries would inherit order-one distortion even though the intrinsic pants are becoming close. This is a **decomposition artifact**, not an intrinsic obstruction: a successful small-`C` proof must be allowed to remesh through the boundary case or use intrinsic coordinates rather than preserving all of Minsky's auxiliary bands.
 
-A second natural theorem has the complementary strength and weakness. Bishop, *Quasiconformal mappings of Y-pieces* (Rev. Mat. Iberoam. 18 (2002), 627--652, DOI `10.4171/RMI/330`), Theorem 1.1, constructs boundary-affine quasiconformal maps and gives `K <= 1 + C(L) epsilon` when the changed boundary-length ratio has logarithm `epsilon`. The boundary-affine property is exactly what one would like for zero-twist gluing. But Bishop assumes every boundary length is bounded above by the same finite `L`; the paper gives no usable growth estimate for `C(L)` as `L -> infinity`. Taking `L=L_n` along the prime-flute cuffs therefore does **not** prove that `C(L_n) epsilon_n -> 0`.
+The exact intrinsic seam gives a useful stress test. If a one-cusp pair of pants has finite boundary half-lengths `a,b` and `s` is the orthogeodesic joining them, the classical right-angled-hexagon identity gives
+
+```text
+sinh(s/2) = cosh((a-b)/2) / sqrt(sinh(a) sinh(b)).
+```
+
+Consequently
+
+```text
+d_a log sinh(s/2) = 0.5 tanh((a-b)/2) - 0.5 coth(a),
+d_b log sinh(s/2) = -0.5 tanh((a-b)/2) - 0.5 coth(b).
+```
+
+Since `d log(s) / d log sinh(s/2) = tanh(s/2)/(s/2) <= 1`, on `a,b >= A > 0` one obtains
+
+```text
+|Delta log s| <= (1+coth(A))/2 * (|Delta a|+|Delta b|)
+```
+
+along any interpolation staying in that region. The Lipschitz constant tends to `1` as `A -> infinity`. Thus the **true shrinking seam does not amplify an `O(1/p)` additive boundary perturbation into an order-one local distortion**. For the prime/shift clone it gives `|log(s_n^+/s_n)|=O(1/p_n)`, consistent with PF-114. The mode is nonsummable, but it vanishes pointwise; whether global gluing or Dirichlet energy can accumulate it remains the operator question.
+
+A second natural theorem has complementary strength and weakness. Bishop, *Quasiconformal mappings of Y-pieces* (Rev. Mat. Iberoam. 18 (2002), 627--652, DOI `10.4171/RMI/330`), Theorem 1.1, constructs boundary-affine quasiconformal maps and gives `K <= 1 + C(L) epsilon` when the changed boundary-length ratio has logarithm `epsilon`. The boundary-affine property is exactly what one would like for zero-twist gluing. But Bishop assumes every boundary length is bounded above by the same finite `L`; the paper gives no usable growth estimate for `C(L)` as `L -> infinity`. Taking `L=L_n` along the prime-flute cuffs therefore does **not** prove that `C(L_n) epsilon_n -> 0`.
+
+Buser--Makover--Muetzel--Silhol, *Quasiconformal embeddings of Y-pieces* (Comput. Methods Funct. Theory 14 (2014), 431--452, DOI `10.1007/s40315-014-0062-2`, arXiv:1311.0687), supply another useful boundary case. Their Theorem 2.1 maps a Y-piece `Y_{l1,l2,epsilon}` with a short third boundary to a restricted cusp Y-piece `Y^{epsilon*}_{l1,l2}`, `epsilon*=2epsilon/pi`, by a boundary-coherent quasiconformal embedding with
+
+```text
+q_phi <= 1 + 2 epsilon^2,
+```
+
+and the bound is independent of the other two boundary lengths `l1,l2`. This shows that **cusp degeneration plus unbounded other cuffs is not itself an obstruction to near-conformal, boundary-coherent control**. It still does not solve the prime/clone problem, because the parameter being changed there is the short third boundary, whereas our missing estimate perturbs the two long finite cuffs while keeping the cusp.
 
 The standard infinite-type Fenchel--Nielsen bridge has the same applicability problem in a different form. Šarić, *Fenchel-Nielsen coordinates for asymptotically conformal deformations* (Ann. Acad. Sci. Fenn. Math. 41 (2016), 167--176, DOI `10.5186/aasfm.2016.4112`), assumes an upper-bounded geodesic pants decomposition. That hypothesis fails for the distinguished prime-flute decomposition.
 
@@ -82,14 +117,19 @@ Bishop:
     boundary-affine maps + distortion -> 1 for fixed L
     but L-bounded cuffs;
 
-prime/shift-clone tail needs both:
-    unbounded cuffs + cusp
+Buser--Makover--Muetzel--Silhol:
+    boundary-coherent cusp degeneration + distortion -> 1
+    uniformly in the other two cuff lengths
+    but does not perturb those long cuffs;
+
+prime/shift-clone tail needs:
+    unbounded perturbed cuffs + cusp
     AND boundary-coherent distortion -> 1.
 ```
 
-This is the exact local theorem that remains to be proved or refuted. It should not be hidden behind a generic appeal to pair-of-pants continuity.
+This is the exact local theorem that remains to be proved or refuted. It should not be hidden behind a generic appeal to pair-of-pants continuity, nor disproved by forcing a map to preserve auxiliary bands whose widths degenerate.
 
-### Bounded-triangulation route is closed
+### Bounded-triangulation and coarse-hyperbolic routes are closed
 
 Whitney--Šarić, *Bounded ideal triangulations of infinite Riemann surfaces* (J. London Math. Soc. 112 (2025), e70276, DOI `10.1112/jlms.70276`, arXiv:2502.05590), cannot provide an alternate coordinate chart here. PF-110 proves
 
@@ -102,6 +142,8 @@ bounded ideal triangulation
 
 Accordingly, no effort should be spent searching for a bounded-valence, bounded-base-shear triangulation of this surface. The failure is intrinsic, not a defect of the obvious infinite fan.
 
+PF-115--PF-116 likewise show that coarse Gromov hyperbolicity provides no discriminator: prime and shift-clone share the same class and both fail to be Gromov hyperbolic. Any operator distinction must occur below this coarse level.
+
 ### Operator-theoretic gates after a direct common-manifold map
 
 Georgescu--Golénia, *Compact perturbations and stability of the essential spectrum of singular differential operators* (J. Operator Theory 59 (2008), 115--155), define strong equivalence for complete Riemannian structures on a common noncompact manifold via uniform metric equivalence plus metric-norm and volume-density ratios tending to one at infinity. Their Theorems 8.4--8.5 yield compact resolvent comparison in the natural identified Hilbert spaces and equality of essential spectra. This is the appropriate first payoff **if** the missing direct prime/composite map is constructed.
@@ -112,13 +154,16 @@ PF-112 supplies the operator-ideal boundary after any such map: strong equivalen
 
 ## Surviving research program
 
-1. Prove or refute a **uniform small-additive pants comparison** for the relevant one-cusp tail: if the two finite boundary lengths differ by `C_n -> 0` while the lengths themselves are unbounded, construct boundary-coherent maps whose metric distortion tends to one uniformly. The most direct route is a quantitative refinement of Minsky's band decomposition; Bishop's affine-boundary theorem is a useful model for the required gluing normalization but cannot be imported with `L_n -> infinity` without controlling `C(L_n)`.
-2. Glue those maps across the zero-twist cuffs and verify metric-norm and volume-density ratios on the complete surface, including the cusp and collar regions. Do not infer global equivalence from pant-local length control alone.
-3. If Georgescu--Golénia strong equivalence is obtained, derive compact relative resolvent and equality of essential spectra. Keep this conclusion separate from Schatten and relative-trace claims.
-4. Separately test the Güneysu--Thalmaier weighted metric-deviation integral for wave operators and absolutely continuous spectral stability, with special attention to collapsing unit-ball volumes.
-5. Do **not** pursue `S_1` of the first relative resolvent: PF-112 rules it out locally. If compactness survives, test `S_p`, `p>1`, and independently test higher resolvent powers or heat differences for trace-class behavior before defining any relative determinant or spectral-shift object.
-6. In parallel, search for a weakly-null sequence, a **cross-pant** closed-curve/arc amplification, a gluing obstruction, or another limit-operator mechanism showing that global tail metric equivalence fails despite PF-107--PF-111.
+1. Prove or refute a **uniform small-additive pants comparison** for the relevant one-cusp tail: if the two finite boundary lengths differ by `C_n -> 0` while the lengths themselves are unbounded, construct boundary-coherent maps whose metric distortion tends to one uniformly. Quantify the intrinsic right-angled-hexagon/pentagon coordinates directly, and permit remeshing through Minsky's small-band boundary case instead of affine-matching every auxiliary band.
+2. Use the exact seam estimate above as a falsification constraint: a proposed local obstruction cannot claim order-one amplification from the true cross-cuff seam itself. Conversely, do not silently replace PF-114's nonsummable `~1/p_n` **relative** seam mode by an `ell^1` budget; any global proof must show why shrinking support or metric/area weighting makes that mode harmless.
+3. Glue the local maps across the zero-twist cuffs and verify metric-norm and volume-density ratios on the complete surface, including the cusp and collar regions. Buser--Makover--Muetzel--Silhol supplies evidence that the cusp boundary case can be controlled independently of the long cuff sizes, but not the missing long-cuff perturbation estimate. Do not infer global equivalence from pant-local length control alone.
+4. If Georgescu--Golénia strong equivalence is obtained, derive compact relative resolvent and equality of essential spectra. Keep this conclusion separate from Schatten and relative-trace claims.
+5. Separately test the Güneysu--Thalmaier weighted metric-deviation integral for wave operators and absolutely continuous spectral stability, with special attention to collapsing unit-ball volumes.
+6. Do **not** pursue `S_1` of the first relative resolvent: PF-112 rules it out locally. If compactness survives, test `S_p`, `p>1`, and independently test higher resolvent powers or heat differences for trace-class behavior before defining any relative determinant or spectral-shift object.
+7. In parallel, search for a weakly-null sequence, a **cross-pant** closed-curve/arc amplification, a gluing obstruction, or another limit-operator mechanism showing that global tail metric equivalence fails. PF-111, PF-113, and the returning-wave part of PF-114 remove several purely local candidates; PF-115--PF-116 remove the coarse-Gromov candidate.
 
 ## Evidence boundary
 
-This clue is not evidence that the surfaces have compact relative resolvent, belong to any global Schatten perturbation class, are wave-equivalent, quasiconformally equivalent, asymptotically isometric, or spectrally equivalent. PF-105--PF-111 establish only the exact endpoint/cross-ratio, cuff-relative, transverse/collar, canonical-separator, and pant-local marked-length controls stated in those findings. PF-112 proves only the negative local statement about first-resolvent trace class. Minsky supplies fixed-`C` local pants/hexagon comparison but no audited `K(C)->1` modulus; Bishop supplies the needed affine-boundary normalization only under an upper cuff bound; Šarić's asymptotically conformal Fenchel--Nielsen theorem also assumes an upper-bounded pants decomposition; Georgescu--Golénia applies only after genuine strong equivalence is established; and Güneysu--Thalmaier requires a stronger weighted metric-deviation hypothesis for wave operators. The required quotient-surface bridge remains unproved.
+This clue is not evidence that the surfaces have compact relative resolvent, belong to any global Schatten perturbation class, are wave-equivalent, quasiconformally equivalent, asymptotically isometric, or spectrally equivalent. PF-105--PF-111 establish only the exact endpoint/cross-ratio, cuff-relative, transverse/collar, canonical-separator, and pant-local marked-length controls stated in those findings. PF-112 proves only the negative local statement about first-resolvent trace class. PF-113 removes a fixed-frame generator artifact but not the global operator gate. PF-114 proves a real nonsummable relative seam mode, but that mode tends to zero and its additive defect is summable; the exact seam differential estimate above rules out treating it as an order-one **local** amplification. PF-115--PF-116 show only that coarse Gromov hyperbolicity cannot distinguish prime and clone.
+
+Minsky supplies fixed-`C` local pants/hexagon comparison but no audited `K(C)->1` modulus; Bishop supplies the needed affine-boundary normalization only under an upper cuff bound; Buser--Makover--Muetzel--Silhol supply a near-conformal boundary-coherent **short-boundary-to-cusp** comparison uniform in the other two cuff lengths, not a theorem for perturbing those unbounded cuffs; Šarić's asymptotically conformal Fenchel--Nielsen theorem assumes an upper-bounded pants decomposition; Georgescu--Golénia applies only after genuine strong equivalence is established; and Güneysu--Thalmaier requires a stronger weighted metric-deviation hypothesis for wave operators. The required quotient-surface bridge remains unproved.
