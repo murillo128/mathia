@@ -221,6 +221,23 @@ Relevant finding: PF-111; relevant local clue: `CLUE-affine-composite-clone-rela
 
 **Scope warning.** PF-111 is pant-local. Thurston's lemma does not by itself control closed geodesics that traverse several pants, produce an equivariant global comparison, or imply any relative Laplacian/operator-ideal statement.
 
+## S14 — Gromov-hyperbolicity stability for flute/train length data
+
+**A. Portilla, J. M. Rodríguez, E. Tourís**, *A real variable characterization of Gromov hyperbolicity of flute surfaces*, Osaka Journal of Mathematics 48 (2011), 179–207. DOI: 10.18910/9158; arXiv:0806.0093.
+
+- https://doi.org/10.18910/9158
+- https://arxiv.org/abs/0806.0093
+
+Used for:
+
+- Definition 2.3: a train is encoded by fundamental geodesic half-lengths `l_n` and second-fundamental half-lengths `r_n`; for a flute surface every second fundamental geodesic is a puncture, hence `r_n=0`;
+- Theorem 3.8: Gromov hyperbolicity is invariant under uniformly bounded perturbations of both sequences `l_n` and `r_n`, with quantitative control of the hyperbolicity constant;
+- PF-115's specialization: PF-107 gives `ell_n^+-ell_n -> 0` for the exact all-composite shift clone, so the prime flute and the clone have the same Gromov-hyperbolicity class.
+
+Relevant finding: PF-115; relevant local clue: `CLUE-affine-composite-clone-relative-operator-class.md`.
+
+**Scope warning.** Theorem 3.8 is a coarse metric stability result and the paper explicitly notes that its conclusion need not arise from quasi-isometry. PF-115 therefore does not infer quasiconformal equivalence, strong metric equivalence, compact relative resolvent, equality of essential spectrum, or scattering equivalence.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
