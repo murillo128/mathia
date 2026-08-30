@@ -45,7 +45,7 @@ G^{\rm full}(x)
 \tag{2}
 \]
 
-where, on the finite index set `S`,
+where, on `S`,
 
 \[
 \boxed{
@@ -54,9 +54,7 @@ where, on the finite index set `S`,
 \tag{3}
 \]
 
-Every coefficient in (2) is rank-one positive semidefinite. This is stronger than positivity of `G^{full}(x)` at each radius: the entire radial power series lies coefficientwise in the PSD cone.
-
-The decomposition is just the common-Fourier-mode calculation behind `PC-056`, reorganized by the actual harmonic mode `r`. No zeta zeros, continuation, or spectral fitting enter.
+Every coefficient in (2) is rank-one positive semidefinite. This is stronger than positivity of `G^{full}(x)` at each radius: the entire radial power series lies coefficientwise in the PSD cone. It is simply the common-Fourier-mode calculation behind `PC-056`, reorganized by physical harmonic mode `r`; no zeta zeros, continuation, or spectral fitting enter.
 
 ## 2. Mellin transform gives an operator-valued positive-real family
 
@@ -67,7 +65,7 @@ s=\sigma+it,
 \qquad \sigma>0,
 \]
 
-define the finite-dimensional Mellin response
+define
 
 \[
 \mathcal M_S(s)
@@ -80,45 +78,42 @@ Termwise integration of (2) is absolutely convergent and gives
 \[
 \boxed{
 \mathcal M_S(s)
-=\sum_{r\ge1}
-\frac{b_rb_r^{\!*}}{r(r+s)}.
+=\sum_{r\ge1}\frac{b_rb_r^{\!*}}{r(r+s)}.
 }
 \tag{5}
 \]
 
-Taking Hermitian real parts,
+Hence
 
 \[
 \boxed{
 \operatorname{Re}\mathcal M_S(\sigma+it)
 =\sum_{r\ge1}
-\frac{r+\sigma}
-{r\bigl((r+\sigma)^2+t^2\bigr)}
+\frac{r+\sigma}{r((r+\sigma)^2+t^2)}
 \,b_rb_r^{\!*}
-\succeq0.
+\succeq0,
 }
 \tag{6}
 \]
 
-There is a second positivity which will be more relevant for the Gamma factor:
+and, more strongly for the Gamma readout,
 
 \[
 \boxed{
-\operatorname{Re}\bigl[s\mathcal M_S(s)\bigr]
+\operatorname{Re}[s\mathcal M_S(s)]
 =\sum_{r\ge1}
-\frac{\sigma(r+\sigma)+t^2}
-{r\bigl((r+\sigma)^2+t^2\bigr)}
+\frac{\sigma(r+\sigma)+t^2}{r((r+\sigma)^2+t^2)}
 \,b_rb_r^{\!*}
 \succeq0.
 }
 \tag{7}
 \]
 
-Thus the Prime-Circle radial Dirichlet family has a canonical operator-valued positive-real response throughout the half-plane `Re s>0`, including the Riemann critical vertical line `s=1/2+it`. This positivity follows directly from the harmonic Gram decomposition and is independent of RH.
+Thus the Prime-Circle radial Dirichlet family has a canonical operator-valued positive-real response throughout `Re s>0`, including the Riemann critical vertical line `s=1/2+it`. This positivity is geometric and independent of RH.
 
-Calling (5) a Stieltjes/positive-real family is standard operator theory; the Mathia-specific content is the exact coefficient vectors (3) forced by the Prime-Circle common-mode geometry.
+Calling (5) a Stieltjes/positive-real family is standard operator theory. The Mathia-specific content is the exact feature system (3) forced by the Prime-Circle common-mode geometry.
 
-## 3. The full-root diagonal gives a whole digamma family
+## 3. Every full-root diagonal gives a digamma scale
 
 On the diagonal `m=n=q`, equation (1) reads
 
@@ -126,12 +121,12 @@ On the diagonal `m=n=q`, equation (1) reads
 G^{\rm full}_{q,q}(x)=qF_x(q).
 \]
 
-Hence
+Therefore
 
 \[
 \begin{aligned}
 \mathcal M_{q,q}(s)
-&=q\int_0^1 x^{s-1}[-\log(1-x^q)]\,dx\\
+&=q\int_0^1x^{s-1}[-\log(1-x^q)]\,dx\\
 &=q\sum_{k\ge1}\frac1{k(s+qk)}.
 \end{aligned}
 \tag{8}
@@ -144,20 +139,18 @@ Using the classical digamma series
 =\sum_{k\ge1}\frac{z}{k(k+z)},
 \]
 
-or simply comparing the two absolutely convergent series, one gets the exact identity
+one obtains exactly
 
 \[
 \boxed{
 \mathcal M_{q,q}(s)
 =\frac{q}{s}
-\left[
-\psi\!\left(1+\frac{s}{q}\right)+\gamma
-\right].
+\left[\psi\!\left(1+\frac{s}{q}\right)+\gamma\right].
 }
 \tag{9}
 \]
 
-Equivalently, by the recurrence `psi(1+z)=psi(z)+1/z`,
+By `psi(1+z)=psi(z)+1/z`,
 
 \[
 \boxed{
@@ -167,7 +160,7 @@ Equivalently, by the recurrence `psi(1+z)=psi(z)+1/z`,
 \tag{10}
 \]
 
-So the appearance of a Gamma-type function is not a post-hoc zeta insertion: it is already present in the Mellin response of the exact two-dimensional Dirichlet Gram family.
+So a Gamma-type function is not inserted after the fact: it is already present in the Mellin response of the exact two-dimensional Dirichlet Gram family.
 
 ## 4. The `q=2` channel contains the exact Riemann archimedean scale
 
@@ -175,8 +168,7 @@ For the Riemann completed zeta function, the archimedean logarithmic derivative 
 
 \[
 A_\infty(s)
-:=\frac{d}{ds}
-\log\!\left(\pi^{-s/2}\Gamma(s/2)\right)
+:=\frac{d}{ds}\log\!\left(\pi^{-s/2}\Gamma(s/2)\right)
 =-\frac12\log\pi+\frac12\psi(s/2).
 \tag{11}
 \]
@@ -186,8 +178,7 @@ Setting `q=2` in (10) gives
 \[
 \boxed{
 A_\infty(s)
-=
-\frac{s}{4}\mathcal M_{2,2}(s)
+=\frac{s}{4}\mathcal M_{2,2}(s)
 -\frac\gamma2
 -\frac1s
 -\frac12\log\pi.
@@ -197,11 +188,11 @@ A_\infty(s)
 
 This is an exact scale match: the full-root two-level Prime-Circle radial field produces the `Gamma(s/2)` digamma, including the `1/s` recurrence term, by an intrinsic Mellin transform.
 
-There is an important adversarial control. Equation (10) holds for **every** integer `q>=1`, producing `psi(s/q)`. Therefore the Mellin mechanism itself does not single out `q=2` as an infinite place. The fact that `q=2` matches the Riemann Gamma factor is exact and potentially useful, but it is not yet an independent geometric explanation of why the real place should be the two-level channel. Any future use of (12) must supply that selector intrinsically rather than choose `q=2` because the target is known.
+The adversarial control is immediate and important. Equation (10) holds for **every** integer `q>=1`, producing `psi(s/q)`. Therefore the Mellin mechanism itself does not single out `q=2` as the infinite place. The fact that `q=2` matches the Riemann Gamma factor is exact and potentially useful, but it is not yet an independent geometric explanation of why the real place should be the two-level channel. Any future use of (12) must supply that selector intrinsically rather than choose `q=2` because the target is already known.
 
-## 5. Primitive-shell normalization preserves the positive-real representation
+## 5. Primitive-shell normalization exposes a positive Ramanujan feature system
 
-Now pass to the Möbius primitive-shell coordinates used by `PC-056`, `PC-057`, and `WP-034`. On a finite divisor-closed set, let
+Pass to the Möbius primitive-shell coordinates used by `PC-056`, `PC-057`, and `WP-034`. On a finite divisor-closed set let
 
 \[
 T=D_\varphi^{-1/2}M,
@@ -210,13 +201,15 @@ T=D_\varphi^{-1/2}M,
 \tag{13}
 \]
 
-Applying `T` to each coefficient vector in (2),
+Applying `T` coefficientwise to (2),
 
 \[
+\boxed{
 \widehat G_x
 =\sum_{r\ge1}\frac{x^r}{r}\,u_ru_r^{\!*},
 \qquad
 u_r:=Tb_r.
+}
 \tag{14}
 \]
 
@@ -227,46 +220,41 @@ For shell `n`,
 (u_r)_n
 &=\frac1{\sqrt{\varphi(n)}}
 \sum_{d\mid n}\mu(n/d)d\,\mathbf1_{d\mid r}\\
-&=\boxed{
-\frac{c_n(r)}{\sqrt{\varphi(n)}}
-},
+&=\boxed{\frac{c_n(r)}{\sqrt{\varphi(n)}}},
 \end{aligned}
 \tag{15}
 \]
 
-where `c_n(r)` is the classical Ramanujan sum in its divisor formula. Thus the exact primitive radial geometry has the positive feature map
+where `c_n(r)` is the classical Ramanujan sum in divisor form. Thus the exact primitive radial geometry has the positive feature map
 
 \[
 \boxed{
 r\longmapsto
-\left(
-\frac{c_n(r)}{\sqrt{\varphi(n)}}
-\right)_n.
+\left(\frac{c_n(r)}{\sqrt{\varphi(n)}}\right)_n.
 }
 \tag{16}
 \]
 
-Its Mellin response is correspondingly
+Its Mellin response is
 
 \[
 \boxed{
 \widehat{\mathcal M}(s)
-=\sum_{r\ge1}
-\frac{u_ru_r^{\!*}}{r(r+s)},
+=\sum_{r\ge1}\frac{u_ru_r^{\!*}}{r(r+s)},
 }
 \tag{17}
 \]
 
-and satisfies the same positive-real identities (6)--(7). This is a useful exact synthesis with `PC-058`/`PC-059`: the divisor-Haar geometry can be represented either by its finite common eigenbasis or by the positive Ramanujan feature measure over physical Fourier modes `r`.
+and obeys the same positive-real identities (6)--(7). This gives an exact bridge between the primitive divisor geometry and positive harmonic features; it is compatible with the divisor-Haar descriptions of `PC-058`/`PC-059` but does not depend on reading zeros into that spectrum.
 
 ## 6. The Weil-signed boundary operator is the high-Mellin finite part
 
-The decisive connection to `WP-034` is obtained by taking the Mellin parameter large, not by analytic continuation. `PC-057` gives on every fixed finite divisor box
+`PC-057` gives, on every fixed finite divisor box,
 
 \[
 \boxed{
 \widehat G_x
-=\Lambda_x I+C+o(1),
+=\Lambda_xI+C+o(1),
 \qquad
 \Lambda_x=-\log(1-x),
 \qquad x\to1^-.
@@ -274,7 +262,7 @@ The decisive connection to `WP-034` is obtained by taking the Mellin parameter l
 \tag{18}
 \]
 
-For real `a>0`, the probability density `a x^{a-1}dx` concentrates at `x=1`. The universal collision term has the exact Mellin average
+For real `a>0`, the density `a x^{a-1}dx` concentrates at `x=1`, while
 
 \[
 \boxed{
@@ -284,7 +272,7 @@ a\int_0^1x^{a-1}\Lambda_x\,dx
 \tag{19}
 \]
 
-Applying the approximate-identity limit to the bounded remainder in (18) gives
+Applying this approximate identity to the bounded remainder in (18) yields
 
 \[
 \boxed{
@@ -298,7 +286,7 @@ a\widehat{\mathcal M}(a)
 \tag{20}
 \]
 
-This identifies the `WP-034` boundary birth operator as a **renormalized high-Mellin finite part of the same positive family**.
+So the `WP-034` boundary birth operator is a renormalized high-Mellin finite part of the **same positive family**.
 
 On every interior prime-power ray, `WP-034` proves
 
@@ -312,7 +300,7 @@ C_{dp^k,d}
 \tag{21}
 \]
 
-Thus one intrinsic Prime-Circle Gram family really does reach both sides that had previously appeared disconnected:
+The common parent geometry can therefore be summarized as
 
 ```text
 exact radial Dirichlet Gram G_x >= 0
@@ -328,68 +316,64 @@ exact radial Dirichlet Gram G_x >= 0
 
 This is the strongest same-geometry finite/archimedean bridge found so far in the `weil_positivity` line.
 
-## 7. Why this still does not give global Weil positivity
+## 7. Why this is still not a global Weil positivity theorem
 
-The bridge passes an algebraic matching test but fails the current sign theorem test.
+The bridge passes an algebraic matching test but not the required sign theorem.
 
-First, the positivity theorem belongs to the **unrenormalized** response. For every real `a>0`,
+First, positivity belongs to the **unrenormalized** response. For every real `a>0`,
 
 \[
 a\widehat{\mathcal M}(a)\succeq0.
 \]
 
-But extracting the arithmetic finite part requires the scalar subtraction in (20). `WP-034` proves that the resulting operator `C` is not merely indefinite: along a prime-power cutoff `1,p,...,p^A`, its lowest eigenvalue is exactly
+But extracting the arithmetic finite part requires the scalar subtraction in (20). `WP-034` proves that the resulting `C` is not merely indefinite: along `1,p,...,p^A`, its lowest eigenvalue is exactly `-A log p`, and on a divisor box `D(N)` its lowest eigenvalue is `-log N`. The positive collision background is precisely what kept the full Dirichlet Gram positive.
 
-\[
--A\log p,
-\]
-
-and on a divisor box `D(N)` its lowest eigenvalue is `-log N`. The positive collision background is precisely what had kept the full Dirichlet Gram positive.
-
-Second, the exact Gamma identity (12) is also an affine **finite-part extraction** from a positive-real quantity. The theorem (7) says
+Second, the exact Gamma identity (12) is itself an affine finite-part extraction from a positive-real quantity. Equation (7) gives
 
 \[
 \operatorname{Re}[s\mathcal M(s)]\succeq0,
 \]
 
-but `A_infty(s)` is obtained only after subtracting `gamma/2`, `1/s`, and `(1/2)log pi`. Therefore the sign of the positive-real Mellin response does not transfer termwise to the standard Gamma contribution.
+but `A_infty(s)` appears only after subtracting `gamma/2`, `1/s`, and `(1/2)log pi`. Hence positivity of the Mellin response does not transfer termwise to the standard Gamma contribution.
 
-Third, the two extractions use the Mellin parameter in different roles. Equation (12) treats `s` as the complex spectral variable on `Re s>0`. Equation (20) obtains the arithmetic finite part from a **real high-Mellin limit** `a->+infinity`. Nothing derived here identifies those two operations as one canonical global quadratic form on Weil test functions.
+Third, the two extractions use the Mellin parameter differently. Equation (12) treats `s` as the complex spectral variable on `Re s>0`; equation (20) obtains the arithmetic finite part from a **real high-Mellin limit** `a->+infinity`. Nothing derived here identifies those two operations with one canonical quadratic form on Weil test functions.
 
-So the present result does not evade `WP-005`, `WP-028`, or `WP-034`. In particular, a scalar/finite-dimensional Gamma readout cannot repair the infinite negative index of the finite-prime translation comb. A successful use of this bridge would have to lift the positive-real radial response to an infinite-dimensional archimedean operator/compression that couples to the finite birth sector *before* the subtraction producing `C`.
+Consequently the result does not evade `WP-005`, `WP-028`, or `WP-034`. In particular, a scalar/finite-dimensional Gamma readout cannot repair the infinite negative index of the finite-prime translation comb. A successful use of this bridge must lift the positive-real radial response to an infinite-dimensional archimedean compression or coupling that interacts with the finite birth sector **before** the subtraction producing `C`.
 
-## 8. Adversarial controls
+## 8. Adversarial controls and falsification tests
 
-### 8.1 Replace `2` by an arbitrary level `q`
+### 8.1 Replace `2` by arbitrary `q`
 
-Equation (10) produces `psi(s/q)` for every `q`. Therefore `q=2` cannot be advertised as an intrinsic real-place theorem without an additional geometric characterization unique to the two-level channel.
+Equation (10) produces `psi(s/q)` for every level. Therefore `q=2` is a target match, not yet an intrinsically selected real place.
 
 ### 8.2 Keep only the positive-real Mellin response
 
-Then positivity is unconditional, but the object is a Stieltjes transform of the ordinary harmonic-mode measure in (5). Its analytic singularities occur at negative integers `s=-r`, and it contains no prime-log translation support by itself. This is Gamma/harmonic-mode structure, not the finite Weil comb.
+Then positivity is unconditional, but (5) is a Stieltjes transform of ordinary harmonic modes. Its analytic singularities are at negative integers `s=-r`; no prime-log translation comb appears inside the positive measure itself. This is Gamma/harmonic-mode structure, not the finite Weil term.
 
-### 8.3 Subtract the collision background to expose prime arithmetic
+### 8.3 Subtract the collision background
 
-This recovers `C` exactly by (20), but `WP-034` already proves that `C` is unbounded below under cofinal prime-power refinement. The subtraction is therefore not a harmless normalization preserving the geometric sign.
+Equation (20) then recovers `C`, but `WP-034` proves that `C` is unbounded below under cofinal prime-power refinement. The subtraction is not sign-preserving.
 
-### 8.4 Use the primitive Ramanujan feature representation as the positivity theorem
+### 8.4 Use the Ramanujan feature representation as the positivity theorem
 
-Equation (17) is genuinely positive-real, but it is still a positive transform of rank-one harmonic features. The exact Weil weights appear only in the boundary finite part, not as nonnegative weights of the Stieltjes measure. This is the same sign boundary in a different basis.
+Equation (17) is genuinely positive-real, but the exact Weil coefficients occur only in its boundary finite part, not as nonnegative Stieltjes weights. Changing basis does not remove the sign boundary.
 
 ### 8.5 Declare the digamma identity itself to be the solution
 
-The identity is classical special-function algebra. Moreover, `WP-013` already records the Gamma/digamma component of the completed zeta logarithmic derivative, and Connes–Consani provide genuine prior art for archimedean Weil positivity through operator compression. The novelty here is only the Mathia-specific derivation of that digamma scale from the exact Prime-Circle radial Gram and its simultaneous connection to `C`; it is not a new Gamma-function formula or an RH criterion.
+The identity is classical special-function algebra. `WP-013` already records the Gamma/digamma component of the completed zeta logarithmic derivative, and `SOURCES.md` records Connes–Consani's genuine archimedean Weil positivity through operator compression. No novelty is claimed for digamma formulas, Stieltjes theory, or Ramanujan sums.
+
+The claim can be falsified directly at finite level by checking four identities independently:
+
+1. expand (1) and verify the coefficient matrix at harmonic `r` is `b_rb_r^*/r`;
+2. apply the Möbius/totient congruence and verify `(u_r)_n=c_n(r)/sqrt(phi(n))`;
+3. compare the diagonal Mellin series with (9);
+4. numerically or symbolically evaluate (20) on a finite divisor box and compare with the `PC-057` finite boundary matrix.
 
 ## 9. Prior-art and novelty boundary
 
-The classical ingredients are deliberately separated from the project-specific content.
+The ambient ingredients are classical: the digamma series and recurrence, matrix-valued Stieltjes/Herglotz positivity, and Ramanujan sums. The relevant Weil and archimedean-compression prior art is already anchored in `SOURCES.md`; `WP-013` gives the canonical Gamma term and the failure of direct positive Hankel completion.
 
-- The digamma series, recurrence, and integral representations are standard Gamma-function identities; they can be checked directly from the convergent series used in (8)--(10).
-- Matrix/operator-valued Stieltjes and Herglotz/Nevanlinna positive-real representations are classical. Equations (6)--(7) are proved directly here, so no novelty is claimed for the abstract theory.
-- Ramanujan sums and the divisor identity in (15) are classical.
-- `SOURCES.md` already records the relevant Weil target and the Connes–Consani archimedean compression mechanism. `WP-013` records the canonical Gamma term in the completed logarithmic derivative and warns that direct positive Hankel completion fails.
-
-The durable Mathia-specific statement is instead the exact three-way identification
+The durable Mathia-specific statement is the exact three-way identification
 
 \[
 \boxed{
@@ -404,22 +388,22 @@ The durable Mathia-specific statement is instead the exact three-way identificat
 \tag{22}
 \]
 
-No previous `WP` finding established that one intrinsic Mathia family contains both the exact Riemann archimedean scale and the exact critical finite-ray coefficient bridge.
+No previous `WP` finding established that one intrinsic Mathia family contains both the exact Riemann archimedean scale and the exact critical finite-ray bridge.
 
 ## 10. Consequence for the search
 
-The search frontier changes in a useful way. It is no longer accurate to say that Prime Circle lacks any intrinsic archimedean structure related to the finite Weil bridge. The radial Dirichlet Gram already contains a canonical positive-real Mellin response whose two-level channel has the exact `Gamma(s/2)` scale.
+It is no longer accurate to say that Prime Circle lacks an intrinsic archimedean structure connected to its finite Weil bridge. The radial Dirichlet Gram already contains a canonical positive-real Mellin response whose two-level channel has the exact `Gamma(s/2)` scale.
 
-What remains missing is more specific and harder:
+What remains missing is more specific:
 
 \[
 \boxed{
 \text{derive one global compression/quotient/coupling in which}
 \quad
-\text{the finite-part subtraction and the archimedean response occur together,}
+\text{the finite-part subtraction and archimedean response occur together,}
 \quad
 \text{while positivity survives as an independent theorem.}
 }
 \]
 
-The next falsifiable target is therefore not another zeta or determinant. It is an **infinite-dimensional coupled finite–archimedean response built before renormalization**, with `G_x`/`mathcal M(s)` as the common parent object. Such a construction must explain intrinsically why the `q=2` channel is the real place, reproduce the endpoint correction omitted by the interior-ray identity (21), and survive the infinite-negative-index obstruction of `WP-028` without importing zero data or a known RH-equivalent Weil functional.
+The next falsifiable target is therefore an **infinite-dimensional coupled finite–archimedean response built before renormalization**, with `G_x`/`mathcal M(s)` as the common parent. It must explain intrinsically why `q=2` is the real place, reproduce the endpoint correction omitted by the interior-ray identity (21), and survive the infinite-negative-index obstruction of `WP-028` without importing zero data or a known RH-equivalent Weil functional.
