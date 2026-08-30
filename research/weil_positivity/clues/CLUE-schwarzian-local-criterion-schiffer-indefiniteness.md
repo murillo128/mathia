@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-schwarzian-local-criterion-schiffer-indefiniteness
 type: research-clue
-status: proposed
+status: resolved
 origin: adversarial
 target_line: weil_positivity
 based_on:
@@ -76,3 +76,18 @@ Failure of the proposed expansion or a family with the predicted local sign but 
 ## Evidence boundary
 
 The diagonal Schwarzian relation is classical structure, but the displayed higher-order kernel and determinant expansions are currently an exploratory calculation, not a persisted theorem or independently checked formal result.  WP-014 proves only the concrete cotangent-kernel obstruction.  No general Schwarzian criterion for Schiffer-kernel indefiniteness has yet been established.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/weil_positivity/findings/WP-042-local-schwarzian-sextic-detects-schiffer-two-point-indefiniteness]]
+
+The proposed coefficient is correct:
+\[
+\frac{SS''-S^3}{180}-\frac{(S')^2}{144}
+=
+\frac{4SS''-5(S')^2-4S^3}{720}.
+\]
+WP-042 proves that its sign controls the first nonzero near-diagonal two-point Gram determinant, establishes the projective covariance of the resulting weight-six density, and evaluates it for `V(x)=pi*cot(pi/x)`, where it is strictly negative for every `x>2`.  Möbius maps give the zero control, while `V(x)=x^alpha` with `0<alpha<1` gives a strictly positive local coefficient.  The result is deliberately only an infinitesimal `2 x 2` criterion; it does not promote nonnegative local sign to global positive definiteness.
