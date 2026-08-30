@@ -27,6 +27,14 @@ When local clues exist or the run needs to create/update a clue, also load:
 .agents/skills/mathia-research-clues/SKILL.md
 ```
 
+When a live mathematical question becomes a bounded machine-answerable subproblem worth delegating, load:
+
+```text
+.agents/skills/mathia-compute-design/SKILL.md
+```
+
+That skill governs whether computation is actually warranted, creation of the self-contained execution issue, and the handoff boundary after which Research Watch returns to ordinary research.
+
 ## Task-specific inputs
 
 Each research-watch prompt should supply only scheduler/runtime identity and any stricter operational override:
@@ -183,6 +191,32 @@ Prefer exact identities, invariants, reductions, controlled asymptotics, operato
 
 Numerical experiments may suggest or falsify a claim, but numerical coincidence is not a durable finding unless the task explicitly studies an empirical law. Preserve the distinction between exact derivation, literature theorem, computation, heuristic, conjecture, and proof-search failure.
 
+### 2a. Delegate bounded computation only when it buys information
+
+Do not introduce computation merely because tools are available. Most exact structural arguments are better derived directly.
+
+When a live question has become precise enough that a machine can answer a **bounded subproblem without inventing the next mathematical idea**, consider computational delegation. Useful cases include exact finite counterexample search, symbolic identity checks, matched-control experiments, finite classification, high-precision asymptotic/spectral diagnostics, or another machine test whose possible outcomes would materially alter the research frontier.
+
+In that case load:
+
+```text
+.agents/skills/mathia-compute-design/SKILL.md
+```
+
+and apply its admission gate. If the gate passes, use its specialization of `design-github-issue` to create one self-contained `execution-ready` GitHub issue for an independent Codex executor.
+
+The issue is a **delegation boundary**, not a new research artifact. After publication:
+
+- do not execute the computation in this Research Watch;
+- do not wait for or poll the issue;
+- do not create `COMPUTE_CANDIDATES.md`, TODO state, or another queue in the repository;
+- do not treat issue creation as evidence or a substantive finding;
+- continue ordinary research from current canonical evidence.
+
+A later compute result may re-enter only as a `status: proposed` clue produced under `mathia-compute-executor`; the Research Watch then triages that clue normally and independently.
+
+If the machine task is really a request for more open-ended mathematical reasoning, keep it here instead of delegating it as compute. If the desired durable output is a reusable Lean theorem/proof, route to `mathia-formalization-design` rather than the lightweight compute path.
+
 ### 3. Stress-test adversarially before publishing
 
 Try to kill a candidate before promoting it. Check, when relevant:
@@ -253,6 +287,7 @@ The following are not sufficient by themselves:
 - renaming/repackaging known zeta or prime identities;
 - recording what was attempted today;
 - acknowledging an adversarial review without materially answering or persisting it;
+- creating a computational delegation issue without a mathematical result;
 - updating a timestamp, status diary, TODO, or next-step log.
 
 If nothing passes the gate, create no repository churn.
@@ -274,6 +309,8 @@ findings/
 ```
 
 `LEAN_CANDIDATES.md` is an optional finite formalization queue. `clues/` is an optional research-direction inbox governed by `mathia-research-clues`.
+
+Computational delegation does **not** add a repository queue or compute-artifact directory. Its control plane is the GitHub issue created under `mathia-compute-design`; its only possible return to the research tree is a later proposed clue.
 
 `graph/` is owned by the graph curator. `mind/` is synthesis owned by the Mind. `research/master/` is owned by the Master Researcher. Research Watch does not maintain any of them.
 
@@ -350,6 +387,8 @@ When `research/<line>/clues/**` exists, use `mathia-research-clues` as the autho
 
 Research Watch may create a clue when primary research or a review response exposes a promising question that is not yet a finding. Keep clues explicitly below the evidence threshold.
 
+A clue created by `mathia-compute-executor` is likewise only a proposed research lead. Reconstruct its computational claim independently, respect its exact/numerical/bounded-search evidence boundary, and apply the normal Research Watch derivation, adversarial stress test, and prior-art gate before changing its status or creating a finding.
+
 Global/cross-line clue creation is permitted only as defined by `mathia-research-clues` and should be genuinely cross-line.
 
 ## Ownership and hard path gate
@@ -369,6 +408,8 @@ Within `findings/**`, writes to `*.review.md` must obey `mathia-research-review`
 An in-place modification of a target with an open review is allowed **only** in the acceptance-pending-persistence stage defined by `mathia-research-review`, and only when the mathematical claim identity is unchanged.
 
 When `mathia-research-clues` is loaded, its clue-path extension also applies.
+
+Creation of a compute GitHub issue under `mathia-compute-design` is a control-plane delegation operation, not a repository path write. It grants no additional repository write ownership to Research Watch.
 
 Do **not** write to:
 
@@ -426,7 +467,7 @@ Notify only for:
 3. **Clue acceptance:** a clue changes to `status: accepted`.
 4. **Owner-side adversarial review events:** every material owner-authored transition defined by `mathia-research-review`, including substantive `Owner` responses, persistence of accepted new mathematics into a finding, concessions, corrections, replacements, independent findings arising from review, and withdrawals.
 
-Do **not** notify for ordinary positive findings, routine negatives/dead ends, ordinary prior-art redirects, routine commits, source additions, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
+Do **not** notify for ordinary positive findings, routine negatives/dead ends, ordinary prior-art redirects, routine commits, source additions, compute-issue creation, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
 
 Do not notify merely because this watch observes an adversary-side review event. The authoring adversarial process owns those notifications, preventing duplicates.
 
