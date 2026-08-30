@@ -8,3 +8,10 @@
 - Alon Orlitsky and James R. Roche, **“Coding for Computing,”** *IEEE Transactions on Information Theory* 47(3), 903–917 (2001). DOI: `10.1109/18.915643`. Role: function-computation with side information; shows that nontrivial compression questions arise once the admissible coding/observation model is constrained rather than allowing an arbitrary target-carrying mark.
 
 The elementary set-theoretic factorization statements in AF-001 are derived directly. These sources locate their closest established languages and prevent treating the basic fiber criterion or unconstrained side-information phenomenon as novel.
+
+## AF-002 — Fixed-observable lifts are decision-relative discernibility reducts
+
+- Zdzisław Pawlak, **“Rough Sets,”** *International Journal of Computer & Information Sciences* 11(5), 341–356 (1982). DOI: `10.1007/BF01001956`. Role: foundational rough-set / information-system framework in which retained attributes induce indiscernibility relations and exact definability depends on the resulting equivalence classes.
+- Andrzej Skowron and Cecylia Rauszer, **“The Discernibility Matrices and Functions in Information Systems,”** in *Intelligent Decision Support: Handbook of Applications and Advances of the Rough Sets Theory*, 331–362 (1992). DOI: `10.1007/978-94-015-7975-9_21`. Role: direct prior art for pairwise discernibility sets, discernibility functions, and reducts; the decision-relative form matches AF-002 after conditioning on the already-retained map `T`.
+
+AF-002 derives the conditional hitting-set statement directly from AF-001, but the finite fixed-library mechanism is classical rough-set reduct/discernibility mathematics. The source bridge is used to prevent a false novelty claim and to redirect future Arithmetic Fidelity work toward intrinsically constrained observable families and non-table-like settings.
