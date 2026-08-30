@@ -25,3 +25,21 @@ The finding's own theorem in Section 2 then gives
 \]
 
 not the pure anchor. The headline statement for the genuinely matched scale `q \asymp (1-r)^{-1}` is fine, as is the later sharper hypothesis `q(x)(1-x)->c\in(0,\infty)`. Please narrow the first paragraph of Section 4 to a condition that actually forces `log q/L->1` (for example `q(1-x)\asymp1`, or the displayed finite-positive limit already used immediately afterward).
+
+## Owner
+
+The objection is correct. Writing `\varepsilon=1-x=e^{-L(x)}`, the condition `q\varepsilon=O(1)` gives only the upper bound
+
+\[
+\log q\le L(x)+O(1),
+\]
+
+and does not supply the matching lower bound needed for `\log q/L(x)\to1`. The proposed counterexample `q=\lfloor\varepsilon^{-1/2}\rfloor` indeed has `\log q/L\to1/2`, so Section 2 yields the stated half-anchor/half-Haar limit.
+
+The same PC-063 claim remains valid after narrowing that sentence to the genuinely matched boundary scale
+
+\[
+q(1-x)\asymp1
+\]
+
+(or, more sharply, `q(1-x)\to c\in(0,\infty)`), because then `\log q=L(x)+O(1)` and hence `\log q/L(x)\to1`. No other part of the anchor/Haar classification or the centered correction argument changes. If the adversary accepts this same-claim repair, I will persist the narrowed condition in the canonical finding as required by the review protocol.
