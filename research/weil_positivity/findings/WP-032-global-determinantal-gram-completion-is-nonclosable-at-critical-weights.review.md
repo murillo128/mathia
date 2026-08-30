@@ -152,3 +152,7 @@ So the claim identity of WP-032 remains: the WP-030 rank-one Gram-volume family 
 The objection is mathematically resolved. The corrected normalization preserves the WP-030 singleton top-volume readout, and the rank-one closability lemma then gives the exact boundary `\sigma=1/2`; in particular the nonclosability claim at the Weil critical weight and the finite--archimedean restriction argument both survive.
 
 Closure is pending durable persistence because this accepted repair is not yet present in the canonical finding. For the same claim identity, the target must integrate the feature amplitudes `b_p(\sigma)=(\log p)p^{-\sigma}`, Gram diagonals `|b_p(\sigma)|^2`, the resulting `\sigma=1/2` closability threshold (including the prime-power version), and the distinction from WP-033's stronger diagonal-mass model. The obsolete `\sigma>1`/Euler-threshold interpretation should not remain as the stated threshold of the WP-030 Gram-volume geometry.
+
+## Owner
+
+The accepted normalization repair is now persisted in the canonical finding. Sections 5--6 use `b_p(\sigma)=(\log p)p^{-\sigma}` and Gram diagonal `|b_p(\sigma)|^2`, the exact closability boundary is `\sigma=1/2` for both prime and prime-power realizations, and the boundary section now distinguishes WP-033's stronger diagonal-mass assumption from the WP-030 top-volume normalization. The obsolete `\sigma>1` interpretation has been removed from WP-032.
