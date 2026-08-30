@@ -1,4 +1,4 @@
-# PF-015 — local cusp transfer operators have a universal `1/2` threshold
+# PF-117 — local cusp transfer operators have a universal `1/2` threshold
 
 **Status:** NEGATIVE/OBSTRUCTION.
 
@@ -62,7 +62,7 @@ Prime-specific information, if any survives in a transfer-operator description, 
 
 ## Relation to earlier findings
 
-This strengthens PF-006. PF-006 says that primitive hyperbolic lengths accumulating at zero obstruct the ordinary Selberg/Ruelle Euler product and any faithful eventually uniformly expanding Bowen-Series coding. PF-015 says that even before confronting that global obstruction, the most tempting local transfer-operator signature — the `1/2` convergence threshold of an accelerated cusp branch — is completely universal.
+This strengthens PF-006. PF-006 says that primitive hyperbolic lengths accumulating at zero obstruct the ordinary Selberg/Ruelle Euler product and any faithful eventually uniformly expanding Bowen-Series coding. PF-117 says that even before confronting that global obstruction, the most tempting local transfer-operator signature — the `1/2` convergence threshold of an accelerated cusp branch — is completely universal.
 
 It does **not** prove that no transfer-operator formalism can ever be constructed for the infinitely generated prime-flute. Existing meromorphic/Fredholm results require hypotheses such as geometric finiteness, finitely many cusps, and a strict uniformly expanding transfer-operator approach that the prime-flute does not satisfy. No global determinant or meromorphic continuation for the prime-flute is asserted here.
 

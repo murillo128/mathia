@@ -29,7 +29,7 @@ At least one actual marked prime-cusp pair has a nontrivial exact/reference coef
 \boxed{\operatorname{Re}s>\frac12.}
 \]
 
-Therefore the selected all-block quarter-plane boundary of PF-084 cannot survive as the initial absolute-convergence boundary of a **full** marked relative Ruelle/Selberg completion. Cuspidal winding restores the universal parabolic half-threshold already seen from the transfer-operator side in PF-015.
+Therefore the selected all-block quarter-plane boundary of PF-084 cannot survive as the initial absolute-convergence boundary of a **full** marked relative Ruelle/Selberg completion. Cuspidal winding restores the universal parabolic half-threshold already seen from the transfer-operator side in PF-117.
 
 ## 1. Exact two-parabolic trace identity
 
@@ -300,7 +300,7 @@ One possible escape remained: perhaps that selected sector could be promoted to 
 
 Thus the quarter-plane boundary is a property of the selected non-winding block family, not the natural initial boundary of a full primitive-orbit completion.
 
-This is the orbit-side counterpart of PF-015. There the accelerated parabolic transfer block contains the standard sum
+This is the orbit-side counterpart of PF-117. There the accelerated parabolic transfer block contains the standard sum
 
 \[
 \sum_{k\ge1}(kw+z)^{-2s}
@@ -342,7 +342,7 @@ Accordingly, the novelty is a program-specific negative consequence, not a new t
 
 PF-103 does **not** establish a full Selberg/Ruelle zeta for the prime-flute. PF-035 still blocks the ordinary unrenormalized Euler product because primitive lengths accumulate at zero, and the standard geometrically finite transfer-operator theorems do not apply to this infinitely generated surface.
 
-It also does not exclude a more radical renormalization that explicitly removes cusp-winding families, nor a meromorphic continuation of some independently constructed relative object. But any such subtraction would have to justify why removing the universal cusp sector is canonical and what prime-sensitive information survives; simply observing a boundary at `1/2` would add no RH evidence because PF-015 and the compact-defect control already make that exponent universal.
+It also does not exclude a more radical renormalization that explicitly removes cusp-winding families, nor a meromorphic continuation of some independently constructed relative object. But any such subtraction would have to justify why removing the universal cusp sector is canonical and what prime-sensitive information survives; simply observing a boundary at `1/2` would add no RH evidence because PF-117 and the compact-defect control already make that exponent universal.
 
 The stable conclusion is therefore
 
