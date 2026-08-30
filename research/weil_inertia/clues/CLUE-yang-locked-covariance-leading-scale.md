@@ -1,12 +1,13 @@
 ---
 id: CLUE-weil-inertia-yang-locked-covariance-leading-scale
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-043-maximal-pair-discrepancy-does-not-control-locked-four-point-covariance.md
   - research/weil_inertia/findings/WI-048-full-local-welding-main-has-subpolynomial-prefix-discrepancy.md
+  - research/weil_inertia/findings/WI-049-locked-four-prime-local-main-centers-cellwise.md
 ---
 
 # Does the exact Yang locked covariance have a nonzero leading-scale term?
@@ -48,37 +49,64 @@ to relative error at most `1.7e-15`.  Runtime was 65 seconds and peak resident m
 41 MiB, well within the issue boundary.  Thus the bounded source computation selects the
 “residual of comparable scale” branch, not exact cancellation or visible stronger suppression.
 
+WI-049 materially narrows what this numerical branch can mean.  For the genuine four-form
+Hardy--Littlewood local factor of a fixed admissible cell, the exact local autocorrelation law
+gives
+
+```text
+mean over k mod p of sigma_4,p(k;j) = kappa_p(j)^2
+```
+
+prime by prime, hence over every finite CRT conductor.  Its finite-conductor interval discrepancy
+is `O_j((log P)^4)` and survives deterministic bounded-variation weighting.  Therefore a
+persistent leading covariance cannot be explained by a missing deterministic four-prime
+singular-series main.  It must survive after that true joint local main is subtracted, or come
+from an unresolved analytic weighting/diagonal interface.
+
 ## Research question
 
-For the exact Yang cells and normalization, does the sum of WI-043 locked pair--pair
-covariances have a nonzero negative leading term proportional to the full admissible strip
-geometry, or must it eventually become lower order through arithmetic cancellation not visible
-at these six finite scales?
+For the exact Yang cells and normalization, after replacing the factorized twin model by the
+genuine four-form local singular-series model, does the remaining WI-043 locked pair--pair
+covariance have a nonzero negative leading term proportional to the full admissible strip
+geometry, or must it become lower order through arithmetic cancellation?
 
 ## Why it may matter
 
-A nonzero leading covariance term would eliminate the remaining source-specific projection
-escape and show that the welding step genuinely needs joint four-prime information rather than
-better marginal discrepancy or deterministic local-series centering.  Conversely, a proof of
-eventual suppression would identify an arithmetic mechanism absent from both WI-043's abstract
-obstruction and the present finite source scales.
+A nonzero leading **post-local-main** covariance term would eliminate the remaining
+source-specific projection escape and show that the welding step genuinely needs joint
+four-prime information rather than better marginal discrepancy or deterministic local-series
+centering.  Conversely, a proof of eventual suppression would identify an arithmetic mechanism
+absent from WI-043's abstract obstruction.  WI-049 rules out the cheapest interpretation of the
+finite signal -- an omitted Hardy--Littlewood four-form main -- so this is now the shortest
+analytic fork in the one-sided fourth-moment route.
+
+## Research disposition
+
+**Accepted, narrowed by WI-049.** The exact monomial witness establishes that the source
+covariance is not an algebraic zero, and the finite scale run shows a stable enough signal to
+justify a targeted asymptotic audit.  WI-049 simultaneously proves that the deterministic
+four-form local main centers cellwise, so follow-up work should not spend cycles refining the
+factorized singular-series centering alone.  The accepted target is specifically the
+**post-four-form-local-main prime residual**.
 
 ## Decisive test
 
-Derive an asymptotic or a rigorous upper/lower bound for the exact source-weighted locked
-covariance across the structured `(b1,b2,k)` family, with the diagonal and deterministic
-`S1/S2/S3` bookings retained.  A nonzero limiting normalized coefficient, or a matching
+Recompute the exact source-weighted locked covariance across the structured `(b1,b2,k)` family
+with the genuine four-form Hardy--Littlewood local model subtracted cellwise, retaining the
+source diagonal and deterministic `S1/S2/S3` bookings.  Then derive an asymptotic or rigorous
+upper/lower bound for that residual.  A nonzero limiting normalized coefficient, or a matching
 four-prime lower bound on a positive proportion of source mass, would support the leading-term
-mechanism.  A proof that the covariance divided by its exact geometry/pair-main scale tends to
-zero would refute it.  Any claimed suppression must also explain the exact finite monomial
-witness rather than rely on an identity cancellation.
+mechanism.  A proof that the post-local-main covariance divided by its exact geometry/pair-main
+scale tends to zero would refute it.  Any claimed suppression must explain the exact finite
+monomial witness rather than rely on an identity cancellation.
 
 ## Evidence boundary
 
 The monomial witness is an exact finite/source certificate that cancellation is not an algebraic
 identity.  The six normalized values are bounded numerical evidence only: they do not prove a
 limit, its sign, a four-prime asymptotic, or the Yang--Yang one-sided fourth-moment theorem.
-The computation used the pinned source's finite `Lambda`, intervals, `J=19`, base family, and
-stored twin-constant value; it did not test transfer to different truncations or establish that
-the observed finite scaling persists asymptotically.  This clue makes no novelty claim and is
-not a canonical finding.
+WI-049 is an exact deterministic-local statement, not a prime-correlation theorem, and its
+full-Euler power-uniform extension for the genuine four-form product is not asserted.  The
+computation used the pinned source's finite `Lambda`, intervals, `J=19`, base family, and stored
+twin-constant value; it has not yet been rerun after subtracting the genuine four-form local
+model.  This clue makes no novelty claim and is not a canonical finding.
