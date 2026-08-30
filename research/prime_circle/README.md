@@ -2,6 +2,45 @@
 
 This directory records research that starts from the **original regular-polygon / roots-of-unity construction**, before imposing the hyperbolic prime-flute model.
 
+## Research mandate
+
+This section is the **canonical research contract** for the `prime_circle` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+
+### Objective
+
+Investigate only the original **prime-circle / roots-of-unity geometry** under `research/prime_circle/`, before imposing the hyperbolic prime-flute model. Treat `research/prime_flute/` as a downstream, read-only branch when useful for comparison, not as part of this line's research scope or writable output.
+
+Start from the regular-polygon / roots-of-unity construction with a common anchored vertex and ask whether structures forced intrinsically by that geometry yield a nontrivial and potentially novel bridge to the Riemann zeta function, its functional equation, explicit formulas, spectral/operator formulations, or the critical line.
+
+### Priority structures and questions
+
+Study, when they arise intrinsically from the construction:
+
+- primitive/new-vertex layers and cyclotomic structure;
+- chord distances and interactions;
+- logarithmic potentials `U_n(z)=log|Phi_n(z)|`;
+- the exact common-vertex von Mangoldt identity;
+- pairwise shell resultants;
+- Möbius/divisor decompositions;
+- Fourier/Ramanujan modes;
+- harmonic interior/exterior inversion;
+- scale/refinement dynamics;
+- spherical or projective representations;
+- exact orthogonal-circle constructions;
+- genuinely two-dimensional or nonlocal operators that retain information lost by scalar evaluation.
+
+The line should prefer exact geometry and harmonic structure before importing external analytic or spectral machinery.
+
+### Exclusions and falsification targets
+
+Be especially alert to candidates that collapse to classical cyclotomic identities, Farey/Bost-Connes/Dedekind-Vasyunin structures, gcd kernels, Mellin/Dirichlet transforms of von Mangoldt, telescoping or projective pure gauge, or other known reformulations.
+
+Do **not** count recovery of `-zeta'(s)/zeta(s)`, standard cyclotomic identities, or arbitrary spectral wrappers as progress by themselves. Do not develop new hyperbolic flute/cuff/cusp/scattering findings in this line; those belong to `prime_flute`.
+
+### Prior-art audit surface
+
+Novelty checks should search by mathematical mechanism and equivalent formulation, including classical cyclotomic polynomial/resultant theory, harmonic and potential theory on roots of unity, Ramanujan/Fourier sums, Farey and Franel-Landau-type RH criteria when relevant, Bost-Connes/cyclotomic dynamics, projective/discrete Schwarzian constructions, and known operator or spectral formulations that could already contain the candidate mechanism.
+
 ## Primary object
 
 Let

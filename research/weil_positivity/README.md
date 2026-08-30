@@ -2,6 +2,12 @@
 
 This directory preserves high-signal evidence from the **Mathia global Weil-positivity** research line.
 
+## Research mandate
+
+This README is the **canonical research contract** for the `weil_positivity` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+
+Other research branches and all `mind/` directories are read-only evidence for this line. Aggressively falsify candidate mechanisms and reject mere repackagings of zeta, known RH-equivalent positivity functionals, spectra defined from zeros, arbitrary regularizations, or hand-picked kernels whose sign is not forced independently by Mathia geometry.
+
 The central question is:
 
 > **Does Mathia contain, or can its intrinsic constructions force, a geometric structure whose own positivity yields a global Weil-type positivity statement, rather than merely producing another zeta function, spectrum, determinant, or representation of already-known zero data?**

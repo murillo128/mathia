@@ -2,6 +2,12 @@
 
 This directory preserves high-signal evidence from the **Mathia Weil-inertia** research line.
 
+## Research mandate
+
+This README is the **canonical research contract** for the `weil_inertia` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+
+Treat `research/weil_positivity/` and other Mathia branches as read-only evidence. This line is complementary to global Weil positivity: it studies quantitative defect and inertia rather than assuming or demanding full positivity at the outset.
+
 The line starts from the recent Montgomery/Weil-form, matrix-inertia route to an unconditional lower bound for zeros that are both **simple and on the critical line**. Its purpose is not to repackage that bound, but to attack the structural gap that remains after it.
 
 The central question is:
@@ -30,7 +36,7 @@ After that, the line should prioritize mechanisms that can materially change the
 2. **Exploit block structure, not only aggregate positivity.** Track separately the positive semidefinite contribution from critical-line zeros and the paired/quadrupled indefinite structure forced by off-line zeros, including multiplicities and all zeta symmetries.
 3. **Study extremizers.** If the present constant were close to sharp, determine what the zero configuration and the associated Hermitian form would have to look like. Then test whether the explicit formula, arithmetic side, known density estimates, or additional spectral invariants forbid such near-extremizers.
 4. **Add information beyond two global moments.** Investigate higher trace moments, mixed moments, principal minors, determinant/interlacing constraints, local spectral statistics, or other invariants only when they are actually accessible from the explicit formula or established zero statistics.
-5. **Optimize the test-function/kernel problem.** Determine the true variational barrier imposed by Fourier support, explicit-formula control, or positivity assumptions. Distinguish a sharp barrier of the method from a merely nonoptimal kernel choice.
+5. **Optimize the test-function/kernel problem.** Determine the true variational barrier imposed by Fourier support, explicit-formula control, or positivity assumptions. Distinguish a sharp barrier of the method from a merely nonoptimal kernel choice, and consider wider Fourier support only when justified by available arithmetic information.
 6. **Separate multiplicity from off-line mass.** Seek inequalities or auxiliary observables that penalize multiple critical-line zeros differently from off-line hyperbolic blocks, rather than paying for both with one undifferentiated error term.
 7. **Combine independent unconditional information carefully.** Zero-density theorems, simple-zero results, pair-correlation information, mollifier methods, or wider-support results are useful only when the hypotheses and overlap with the inertia framework are explicit and non-circular.
 8. **Look for a defect-to-zero mechanism.** A particularly valuable outcome would be a monotone or bootstrapping principle that turns a quantitative bound on negative inertia/off-line mass into a stronger bound, potentially iterating toward zero.

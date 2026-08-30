@@ -6,6 +6,34 @@ It is intentionally separate from `experiments/riemann_corpus/`: the frozen Riem
 
 Nothing here should silently be treated as a proved result. The strongest custom claims remain research notes until independently checked and, where practical, formalized.
 
+## Research mandate
+
+This section is the **canonical research contract** for the `prime_flute` Research Watch. The scheduled task should identify the line and stable finding prefix, then read this README for the mathematical objective, scope, priorities, exclusions, and prior-art surface. Routine Research Watch runs must not silently redefine this mandate.
+
+### Objective
+
+Investigate only the derived hyperbolic **prime-flute** construction under `research/prime_flute/`. Treat the prime-circle branch as upstream, read-only mathematical context when needed, not as part of this task's research scope or writable output.
+
+Focus on the exact hyperbolic surface defined from the ordered prime vertices and on its spectral and dynamical consequences. Study whether the distinguished cuff lengths `ell_n`, with
+
+```text
+ell_n ~ 2 log(4 p_n / g_n),
+```
+
+multi-gap separating geodesics, cusp structure, cross-ratios, and related intrinsic hyperbolic data induce any nontrivial and potentially novel relation between prime-gap fluctuations and the Laplacian, transfer operators, resonances, scattering, trace formulas, Patterson-Sullivan data, Selberg/Ruelle-type objects, determinants, or other natural spectral invariants of the infinite flute.
+
+### Exclusions and falsification targets
+
+Check carefully whether known results for tight flutes, infinitely generated Fuchsian groups, infinite-type hyperbolic surfaces, Selberg-type zeta functions, prime geodesic theorems, Patterson-Sullivan theory, cusp scattering, essential spectrum, and transfer-operator theory already cover each candidate.
+
+Be especially alert to universal cusp/background phenomena, telescoping or gauge artifacts, noncompactness obstructions, and quantities that erase the prime-gap information. Reject mere restatements of prime-gap statistics, arbitrary generating functions, or structures imported solely to mimic zeta.
+
+Do not develop new prime-circle/cyclotomic/potential-theory findings in this line; those belong to the separate `prime_circle` Research Watch.
+
+### Prior-art audit surface
+
+Novelty checks should search by mechanism and equivalent formulation across tight-flute and infinite-type hyperbolic-surface theory, infinitely generated Fuchsian groups, Selberg/Ruelle and prime-geodesic constructions, Patterson-Sullivan theory, cusp scattering, essential spectrum, trace formulas, transfer operators, and related determinant/resonance frameworks.
+
 ## Geometric convention
 
 For consecutive odd primes `p_n`, write
