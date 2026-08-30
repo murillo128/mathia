@@ -103,6 +103,27 @@ Check, when relevant:
 
 Important negative checks are useful only when they are precise. "This seems doubtful" is not an adversarial result.
 
+## Lightweight hallucination and line-integrity scan
+
+As a small part of the normal adversarial pass, perform a **lightweight sniff test** over the material already being inspected for signs that a research session may be hallucinating or that an unsupported premise may be propagating through a line. This is not a separate corpus audit and must not create persistent health state, scores, logs, or routine repository churn.
+
+Cheap signals worth noticing include, when they arise naturally:
+
+- a citation, theorem attribution, or source bridge that cannot be recovered or does not support the claim attributed to it;
+- a claim that becomes materially stronger across artifacts without corresponding new evidence;
+- contradiction with current canonical findings or accepted review outcomes that the line appears not to notice;
+- repeated reuse of a premise that has already been invalidated, withdrawn, or left unsupported;
+- definitions or notation drifting so later reasoning no longer concerns the same mathematical object;
+- a dependency chain that relies on purported persisted mathematics which is not actually present in the repository or cited source.
+
+A weak suspicion produces **no repository change**: no sidecar, clue, status marker, or notification. Do not classify a speculative hypothesis as hallucination merely because it is unproved and correctly labelled as speculative.
+
+If a material signal appears, perform a focused deeper check only around the suspicious source, claim, and dependency chain. Prefer authoritative sources, current canonical artifacts, Git-visible withdrawals/corrections, and exact neighboring dependencies. Distinguish an ordinary local mathematical error, which belongs in the normal `.review.md` protocol, from a broader integrity concern suggesting that the line may be repeatedly building on unsupported or invented context.
+
+Only when that focused check confirms a credible **line-level integrity risk** should the adversary load `mathia-research-clues` and create or materially strengthen one `status: proposed`, `origin: adversarial` clue. Encode the warning as a concrete falsifiable revalidation question compatible with the clue schema, preferably local to the affected line and global only when the suspected contamination crosses lines. The clue must cite the persisted artifacts or source mismatch that triggered it, state the precise suspected failure mode and potentially affected dependency scope, give a decisive revalidation test, and make clear in `Evidence boundary` that the warning is not itself proof that the line is corrupted.
+
+The purpose of this exceptional clue is to make the integrity warning visible to the Master Researcher and the owning Research Watch without creating a parallel monitoring system. The adversary must not write a health score, restart marker, audit report, or automatic reset instruction. It supplies evidence and a falsifiable check; downstream research governance decides what strategic action, if any, follows.
+
 ## Prior-art use
 
 A material novelty or theorem objection may require literature checking. Prefer primary papers, monographs, authoritative surveys, or original theorem statements.
@@ -185,6 +206,8 @@ research/clues/**
 for a genuinely cross-line or new-line candidate, subject to the clue skill's schema, deduplication, and evidence-boundary rules.
 
 The clue must cite the target/review paths that motivated it and must remain a research question, not a disguised finding.
+
+The lightweight line-integrity scan above is the only additional case in which an adversarial clue may be used: it must remain a falsifiable revalidation question rather than a verdict or process-status record.
 
 ## Ownership and hard path gate
 
