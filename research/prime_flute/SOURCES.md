@@ -242,6 +242,23 @@ Relevant findings: PF-115, PF-116; relevant local clue: `CLUE-affine-composite-c
 
 **Scope warning.** The Portilla--Rodríguez--Tourís results are coarse metric criteria. PF-115/PF-116 do not infer quasiconformal equivalence, strong metric equivalence, compact relative resolvent, equality of essential spectrum, wave/scattering equivalence, or any finer RH-relevant spectral identification.
 
+## S15 — compact resolvent stability for asymptotically equivalent metrics
+
+**V. Georgescu, S. Golénia**, *Compact perturbations and stability of the essential spectrum of singular differential operators*, Journal of Operator Theory 59 (2008), no. 1, 115–155.
+
+- https://jot.theta.ro/jot/archive/2008-059-001/2008-059-001-006.html
+- author preprint: https://www.math.u-bordeaux.fr/~sgolenia/Fichiers/qlocal.pdf
+
+Used for:
+
+- preprint Theorem 5.3: vanishing-at-infinity changes of the function-space density and cotangent quadratic form give a compact difference of resolvents;
+- preprint Proposition 5.4: for complete Riemannian structures, uniform equivalence together with metric-norm ratios tending to `1` and volume-density ratio tending to `1` implies equality of essential spectra;
+- PF-123's specialization: if the still-missing prime/shift-clone global marked comparison produces a transported metric tending to the prime metric at infinity, compact relative resolvent follows without an `ell^1` or other quantitative decay-rate hypothesis.
+
+Relevant finding: PF-123; relevant local clue: `CLUE-affine-composite-clone-relative-operator-class.md`.
+
+**Scope warning.** This source does not construct the global prime/shift-clone marking and does not imply trace-class resolvent difference, wave/scattering equivalence, resonance equality, relative determinants, or RH consequences. PF-123 uses the bounded topological identification between the two `L^2` realizations appearing in the theorem; stronger unitary/Schatten identifications require separate arguments.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:

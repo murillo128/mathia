@@ -17,6 +17,7 @@ based_on:
   - research/prime_flute/findings/PF-120-cusp-busemann-shifts-must-synchronize.md
   - research/prime_flute/findings/PF-121-ideal-lambert-shift-comparison-is-asymptotically-bilipschitz.md
   - research/prime_flute/findings/PF-122-canonical-cusp-strip-gluing-cost-is-summable.md
+  - research/prime_flute/findings/PF-123-asymptotic-metric-equivalence-forces-compact-relative-resolvent.md
 ---
 
 # Affine composite clone and the relative Laplacian class
@@ -36,7 +37,7 @@ log Bilip <= |epsilon_n - epsilon_{n+1}|
 
 and PF-119 proves the right-hand side is `ell^1`. The estimate is uniform even when `t_n->0` or `1`, and it uses one common Busemann gauge on all cusp rays. Thus the nonsummable reciprocal-prime common scale, extreme split ratios, and the infinite cusp itself no longer supply a plausible metric-amplification obstruction.
 
-The unresolved local problem is now confined to a bounded-height transition: reconcile the lower PF-121 quadrilateral maps with the PF-122 canonical cusp-strip map while keeping the finite-cuff boundary trace dependent only on that cuff. If this can be done with distortion `1+o(1)`, the resulting pentagons should double and the zero-twist pants should have a chance to glue canonically across the full flute.
+PF-123 audits the operator end of the bridge. Georgescu--Golénia's Riemannian specialization proves that, once a common-manifold metric comparison has uniformly equivalent coefficients tending to one at infinity and volume-density ratio tending to one, the corresponding Laplacians have compact resolvent difference under the canonical bounded identification and therefore equal essential spectrum. No `ell^1` or quantitative rate is required at that stage. The unresolved problem is therefore geometric: construct the boundary-coherent global marking with metric distortion tending to one.
 
 ## Research question
 
@@ -62,13 +63,13 @@ The concrete local gate is to construct, on each normalized pentagon, a piecewis
 4. induces on each finite cuff a trace determined only by that cuff parameter pair `(a_n,a_n^+)`, so the two adjacent pants glue with zero twist;
 5. has bilipschitz constant tending to `1` uniformly over all possible neighboring gap ratios.
 
-If those maps glue globally, the first operator target is **compact relative resolvent/equality of essential spectra**, not trace class. Georgescu--Golénia's strong-equivalence theorem for complete Riemannian structures is the natural theorem to audit against the resulting common-manifold metric coefficients.
+If those maps glue globally and satisfy the displayed metric/density convergence, PF-123 supplies **compact relative resolvent/equality of essential spectra** with no further integrability hypothesis. First-resolvent trace class remains a separate, already negative gate by PF-112.
 
 ## Why it may matter
 
-This is now a sharp adversarial test of whether any prime-specific information survives in the essential spectral class of the exact flute. A positive global strong-equivalence theorem would show that an explicit surface built only from composites has the same essential Laplace spectrum and compact relative resolvent under the natural marking, eliminating essential-spectrum data as a primality/RH selector for this construction.
+This is now a sharp adversarial test of whether any prime-specific information survives in the essential spectral class of the exact flute. A positive global asymptotic-equivalence construction, combined with PF-123, would show that an explicit surface built only from composites has the same essential Laplace spectrum and compact relative resolvent under the natural bounded identification, eliminating essential-spectrum data as a primality/RH selector for this construction.
 
-A negative result would be equally informative, but it can no longer be blamed on raw cuff divergence, local closed-word lengths, collar geometry, Lambert collapse, a scalar cusp offset, independent Busemann gauges, or extreme cusp split ratios. It would have to expose a genuine bounded-height gluing/Jacobian obstruction or a nonlocal infinite-surface amplification mechanism.
+A negative result would be equally informative, but it can no longer be blamed on raw cuff divergence, local closed-word lengths, collar geometry, Lambert collapse, a scalar cusp offset, independent Busemann gauges, extreme cusp split ratios, or a hidden operator-theoretic summability requirement. It would have to expose a genuine bounded-height gluing/Jacobian obstruction or a nonlocal infinite-surface amplification mechanism.
 
 ## Decisive test
 
@@ -77,7 +78,7 @@ A positive resolution must:
 1. construct the boundary-coherent transition described above with a tail bilipschitz constant `K_n->1`;
 2. double the pentagon maps and prove that maps on every shared cuff agree exactly under the zero-twist marking;
 3. glue them to a complete global homeomorphism and verify uniform metric equivalence plus pointwise metric-norm and volume-density ratios tending to `1` at infinity;
-4. audit and apply the exact hypotheses of an appropriate relative-Laplacian theorem to obtain compact relative resolvent/equality of essential spectra.
+4. invoke PF-123's audited Georgescu--Golénia bridge to obtain compact relative resolvent/equality of essential spectra.
 
 A decisive negative resolution must identify an invariant lower bound that survives PF-121 and PF-122: for example, prove that every transition with the required split/cuff traces pays a fixed positive bilipschitz or quasiconformal cost along an escaping sequence, or construct a weakly-null/Weyl sequence showing that no common-manifold metric perturbation tending to zero can realize the marked clone.
 
@@ -87,8 +88,8 @@ Do not use failure of `S_1` for the first resolvent as such a negative test: PF-
 
 This clue is **not** evidence that the complete prime and shift-clone surfaces are quasiconformally equivalent, strongly equivalent, compact-resolvent perturbations, wave-equivalent, or spectrally equivalent. PF-121 proves only a local ideal-quadrilateral map; PF-122 proves only a canonical map on the deep cusp strip. Their traces have not yet been reconciled across the bounded-height transition, the doubled pants have not been glued, and no global metric-density estimate has been established.
 
-The closest audited comparison literature remains hypothesis-mismatched rather than decisive: Minsky gives coarse bilipschitz pants/degenerate-hexagon comparisons for bounded additive boundary changes; Wu--Zhang give `1+o(1)` metric-tensor control with prescribed boundary data in a neighboring thick-boundary regime; Saric's asymptotically conformal Fenchel--Nielsen theorem assumes an upper-bounded pants decomposition; and bounded-ideal-triangulation routes are unavailable by PF-110. None of those statements directly supplies the current bounded-height transition for one cusp and two unbounded cuffs.
+The geometric comparison literature remains hypothesis-mismatched rather than decisive: Minsky gives coarse bilipschitz pants/degenerate-hexagon comparisons for bounded additive boundary changes; Wu--Zhang give `1+o(1)` metric-tensor control with prescribed boundary data in a neighboring thick-boundary regime; Saric's asymptotically conformal Fenchel--Nielsen theorem assumes an upper-bounded pants decomposition; and bounded-ideal-triangulation routes are unavailable by PF-110. None of those statements directly supplies the current bounded-height transition for one cusp and two unbounded cuffs. By contrast, the **operator** implication after such a transition is no longer an open literature bridge: PF-123 audits it directly from Georgescu--Golénia.
 
 ## Research disposition
 
-**Accepted and materially narrowed, not resolved.** PF-121 kills the single-Lambert interior obstruction and PF-122 kills the deep-cusp/split-ray amplification. The next tractable gate is the fixed-height boundary-coherent transition and exact zero-twist cuff gluing. Compact relative resolvent remains the first unresolved operator consequence; first-resolvent trace class remains closed negatively by PF-112.
+**Accepted and materially narrowed, not resolved.** PF-121 kills the single-Lambert interior obstruction, PF-122 kills the deep-cusp/split-ray amplification, and PF-123 removes the downstream compact-resolvent theorem as an independent unknown. The remaining decisive gate is the fixed-height boundary-coherent transition plus exact zero-twist cuff gluing that produces a global marked metric perturbation tending to zero. First-resolvent trace class remains closed negatively by PF-112.
