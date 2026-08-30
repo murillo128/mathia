@@ -101,3 +101,7 @@ This file records only durable literature dependencies for canonical findings in
 ## Compact-perturbation and finite-mode controls
 
 - **Yuming Shi**, *Stability of essential spectra of self-adjoint subspaces under compact perturbations*, Journal of Mathematical Analysis and Applications 433 (2016), no. 2, 832–851. DOI: `10.1016/j.jmaa.2015.08.017`; arXiv: `1506.05544`. Proves invariance of essential spectrum under compact perturbations in the more general setting of self-adjoint linear relations and treats finite-rank perturbations as a special case. WP-028 gives a direct compact-window paired-bump proof of the relevant negative-index obstruction and uses Shi only as a durable modern anchor for the classical Weyl-perturbation boundary.
+
+## Determinantal / Gram-rank controls
+
+- **Russell Lyons**, *Determinantal probability measures*, Publications Mathématiques de l'IHÉS 98 (2003), 167–212. DOI: `10.1007/s10240-003-0016-0`; arXiv: `math/0204325`. Develops the discrete determinantal-measure framework for positive-contraction kernels, principal-minor probabilities, exterior-algebra methods, and matroid support. WP-032 uses this only as the prior-art classification of the rank-one principal-minor selector; the nonclosability obstruction at the exact Riemann weights is derived directly.
