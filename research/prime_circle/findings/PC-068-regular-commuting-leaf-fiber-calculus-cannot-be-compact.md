@@ -65,7 +65,7 @@ If `F` is locally bounded at **even one** point
 
 then `H_F` does **not** have compact resolvent. Consequently no continuous, smooth, polynomial, or ordinary meromorphic/rational joint symbol with a regular noninteger point can turn the canonical leaf and chord data into a compact-resolvent Hamiltonian.
 
-A compact-resolvent diagonal coupling must instead be arithmetically singular: its energy must be unbounded in every neighborhood of the dense rational-frequency curve. An exact-order/denominator term supplies this transverse discontinuity, but on the full `\mathbb Q` character set it must also be combined with archimedean growth to control integer translates; for example `|q|+\operatorname{ord}(q\bmod\mathbb Z)` has finite balls. Such order, valuation, or height data are precisely discontinuous/non-archimedean scales not supplied by regular joint functional calculus of `A` and `B`.
+A compact-resolvent diagonal coupling must instead be arithmetically singular: its energy must be unbounded in every neighborhood of the dense rational-frequency curve. An exact-order/denominator term supplies this transverse discontinuity, but on the full `\mathbb Q` character set it must also be combined with archimedean growth to control integer translates; for example `|q|+\operatorname{ord}(q\bmod\mathbb Z)` has finite balls. Proper full-`\mathbb Q` alternatives include projective/global height or a genuinely global adelic/non-archimedean length controlling every denominator direction; a single fixed finite-adic valuation does not suffice. These are precisely discontinuous arithmetic scales not supplied by regular joint functional calculus of `A` and `B`.
 
 Thus the natural commuting repair
 
@@ -225,7 +225,7 @@ If `L_{\rm ar}(q)\le R` and `q=a/n` is reduced with `n=\operatorname{ord}(q\bmod
 }
 \]
 
-Thus arithmetic properness is possible, but only after adding a discontinuous denominator/order scale to ordinary real-frequency growth. The provenance problem is exactly the point: this proper function is not selected by a locally regular joint symbol `F(A,B)`. More generally denominator, projective height, or finite-adic valuation can supply the needed discrete size, but they introduce the additional transverse arithmetic scale that PC-065 identified as missing and PC-066 showed was not fixed by abstract exact-order symmetry.
+Thus arithmetic properness is possible, but only after adding a discontinuous denominator/order scale to ordinary real-frequency growth. The provenance problem is exactly the point: this proper function is not selected by a locally regular joint symbol `F(A,B)`. More generally, projective/global height, exact denominator/order combined with archimedean growth, or a genuinely global adelic/non-archimedean length controlling every denominator direction can supply a proper full-`\mathbb Q` scale. A single fixed finite-adic valuation cannot: for any prime `p`, choose a prime `\ell\ne p` and set `q_n=\ell^{-n}`. Then `|q_n|\to0` while `v_p(q_n)=0` and `|q_n|_p=1` for all `n`, so even `|q|+|q|_p` has an infinite bounded ball on `\mathbb Q`.
 
 This does not mean such a scale is illegitimate. It means Prime Circle must **derive** it from an additional exact geometric operation before spectralization; selecting it because properness or a desired Dirichlet series results is an arbitrary spectral wrapper.
 
@@ -233,7 +233,7 @@ This does not mean such a scale is illegitimate. It means Prime Circle must **de
 
 The functional-analytic ingredients are classical and no historical novelty is claimed for the compact-resolvent criterion or length-function spectral triples.
 
-A particularly close neighboring boundary is Carla Farsi, Therese Landry, Nadia S. Larsen and Judith A. Packer, **Spectral triples for noncommutative solenoids and a Wiener’s lemma**, *Journal of Noncommutative Geometry* 18:4 (2024), 1415–1452, DOI `10.4171/JNCG/557`, arXiv:2212.07470. They construct finitely summable spectral triples on noncommutative solenoids from length functions of bounded doubling. In their discrete-group formulation bounded doubling includes **properness**, i.e. finite metric balls, and their explicit `\mathbb Z[1/p]` length combines an archimedean absolute-value term with a `p`-adic size term. This is exactly the established neighboring pattern relevant here: solenoidal compact-resolvent geometry is restored by adding a non-archimedean/proper scale, not by a regular function of dense real frequency alone.
+A particularly close neighboring boundary is Carla Farsi, Therese Landry, Nadia S. Larsen and Judith A. Packer, **Spectral triples for noncommutative solenoids and a Wiener’s lemma**, *Journal of Noncommutative Geometry* 18:4 (2024), 1415–1452, DOI `10.4171/JNCG/557`, arXiv:2212.07470. They construct finitely summable spectral triples on noncommutative solenoids from length functions of bounded doubling. In their discrete-group formulation bounded doubling includes **properness**, i.e. finite metric balls, and their explicit `\mathbb Z[1/p]` length combines an archimedean absolute-value term with a `p`-adic size term. This is a useful restricted-denominator neighboring pattern: on `\mathbb Z[1/p]` the single `p`-adic place controls every allowed denominator direction, whereas on the full character group `\mathbb Q` it does not. The established lesson relevant here is therefore that solenoidal compact-resolvent geometry requires a genuinely proper arithmetic scale, not merely a regular function of dense real frequency alone.
 
 The project-specific content of PC-068 is the exact application of that properness boundary to the two canonical Prime-Circle operators already derived in PC-065 and PC-067. Targeted searches for solenoid spectral triples, leaf/transverse Dirac operators, and rational-frequency compactness did not identify this exact Prime-Circle joint-symbol no-go as an RH criterion or theorem. That absence is not a novelty proof.
 
@@ -259,7 +259,7 @@ It does **not** rule out:
 - a non-translation-invariant operator forced by the distinguished anchor or embedded old/new geometry;
 - cross-level primitive/old couplings such as the extensive squarefree sector reopened by PC-047;
 - nonlinear matrix or determinant data not reducible to scalar functional calculus of `A` and `B`;
-- an independently derived finite-adic/height energy with geometric provenance;
+- an independently derived projective/global height or genuinely global adelic energy with geometric provenance; a one-place finite-adic scale alone is not proper on `\mathbb Q`;
 - or the global primitive-root uniformization/accessory branch of PC-017.
 
 The narrowed gate is
@@ -283,5 +283,6 @@ The result has direct falsifiers.
 5. Choose distinct rationals `q_j\to x` for one irrational noninteger `x` and verify that local boundedness of `F` at `\Gamma(x)` gives an infinite bounded-energy subsequence.
 6. Test polynomial, continuous and rational examples and confirm the same failure at any regular irrational point.
 7. Verify that the exact-order decoder alone is not proper on `\mathbb Q` because all integers have order `1`, while `|q|+\operatorname{ord}(q\bmod\mathbb Z)` has finite balls; confirm that this repair escapes the theorem only through its arithmetic discontinuity.
+8. For a fixed prime `p`, verify with `q_n=\ell^{-n}` for any `\ell\ne p` that both a lone `p`-adic valuation and `|q|+|q|_p` fail properness on all of `\mathbb Q`.
 
 Failure of items 1–5 would invalidate the exact obstruction. A future leaf–fiber proposal escapes it only by leaving the stated commuting/regular class for a reason derived from Prime-Circle geometry itself.
