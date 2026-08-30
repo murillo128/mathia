@@ -1,15 +1,15 @@
 ---
 id: CLUE-prime-circle-transverse-solenoid-prime-discriminator
 type: research-clue
-status: proposed
+status: resolved
 origin: master
 target_line: prime_circle
 based_on:
-  - research/prime_circle/findings/PC-058-exact-radial-birth-gram-has-fixed-divisor-haar-basis.md
+  - research/prime_circle/findings/PC-058-exact-radial-dirichlet-birth-gram-has-fixed-divisor-haar-basis.md
   - research/prime_circle/findings/PC-059-infinite-divisor-haar-limit-is-profinite-valuation-measure.md
-  - research/prime_circle/findings/PC-060-exact-radial-symbol-vanishes-ae-and-mass-is-log-series-atoms.md
-  - research/prime_circle/findings/PC-061-normalized-radial-spectral-mass-returns-profinite-haar.md
-  - research/prime_circle/findings/PC-064-compatible-refinement-is-the-adelic-solenoid.md
+  - research/prime_circle/findings/PC-060-exact-radial-divisor-haar-symbol-vanishes-ae-and-mass-becomes-log-series-atoms.md
+  - research/prime_circle/findings/PC-061-normalized-radial-spectral-mass-returns-to-profinite-haar.md
+  - research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid.md
   - research/prime_circle/findings/PC-065-solenoid-leafwise-laplacian-has-dense-rational-square-spectrum.md
 ---
 
@@ -43,3 +43,21 @@ A negative resolution may instead prove that every canonical refinement-compatib
 This clue is not evidence that such an operator exists, that the arithmetic solenoid is an RH model, or that transverse finite-adic structure is automatically prime-selective. PC-065 establishes the opposite warning for the bare leaf geometry: its canonical spectrum is classical and too large, and regularizations based on denominator or height inject structure absent from that metric.
 
 The clue therefore keeps the remaining question upstream of spectral interpretation: **is there any canonical Prime-Circle transverse discriminator left before the final scalar/leafwise compression?**
+
+## Research disposition
+Outcome: classical
+
+Resolved by:
+- [[research/prime_circle/findings/PC-066-transverse-profinite-symmetry-fixes-exact-order-projectors-not-rh-hamiltonian.md]]
+
+PC-066 classifies the natural abstract transverse symmetry class rather than assuming a candidate Hamiltonian. Translation invariance makes the operator a Fourier multiplier on `\mathbb Q/\mathbb Z`, and invariance under `\widehat{\mathbb Z}^{\times}` makes exact character order the complete orbit invariant. The resulting eigenspaces are the primitive/exact-order Ramanujan projectors with multiplicity `\varphi(n)`.
+
+The intrinsic order label therefore does retain a literal prime discriminator, but only by recovering primitive-shell cardinality already present in the cyclotomic birth tower. Assigning order itself as energy gives a compact-resolvent conductor operator with the classical trace identity
+
+\[
+\operatorname{Tr}(C^{-s})=\frac{\zeta(s-1)}{\zeta(s)},
+\]
+
+while equally symmetry-compatible functions of the order change the spectral scale. This classicalizes the proposed abstract transverse repair rather than producing a new RH mechanism.
+
+The clue is resolved at that level. A genuinely open successor would have to derive a transverse or leaf--fiber coupling from **embedded** prime-circle chord/old-new geometry before exact-order diagonalization, thereby breaking the abstract unit-symmetry reduction for an intrinsic geometric reason.
