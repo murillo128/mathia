@@ -252,7 +252,7 @@ Load repository skills lazily by role:
 - design authority: `.agents/skills/design-github-issue/SKILL.md`;
 - main executor: `.agents/skills/spec-driven-codex-loop/SKILL.md`;
 - Mathia formalization issue design: `.agents/skills/mathia-formalization-design/SKILL.md` on top of `design-github-issue`;
-- Mathia formalization execution: `.agents/skills/mathia-formalization-executor/SKILL.md` on top of `spec-driven-codex-loop`;
+- Mathia formalization execution: `.agents/skills/mathia-formalization-executor/SKILL.md` as the autonomous no-PR Lean executor with fresh subagent Gate/final review;
 - recurring mathematical research watch: `.agents/skills/mathia-research-watch/SKILL.md`;
 - shared finding-review protocol for research owners and adversaries: `.agents/skills/mathia-research-review/SKILL.md`;
 - recurring adversarial research watch: `.agents/skills/mathia-research-adversarial/SKILL.md`;
@@ -275,13 +275,15 @@ Never commit secrets, credentials, private data, or artifacts without redistribu
 
 ## Git behavior
 
-- Use feature branches for non-trivial work unless the user explicitly requests a direct default-branch change.
+- Use feature branches for non-trivial work unless the user explicitly requests a direct default-branch change or a repository skill below defines an explicit no-PR direct-main workflow.
 - Scheduled mathematical research watches routed through `.agents/skills/mathia-research-watch/SKILL.md`, scheduled adversarial research watches routed through `.agents/skills/mathia-research-adversarial/SKILL.md`, scheduled research-mind synthesis routed through `.agents/skills/mathia-research-mind/SKILL.md`, scheduled graph-curator watches routed through `.agents/skills/mathia-research-graph-curator/SKILL.md`, scheduled Master Researcher passes routed through `.agents/skills/mathia-master-researcher/SKILL.md`, and scheduled Visionary Researcher passes routed through `.agents/skills/mathia-visionary-researcher/SKILL.md` are explicit exceptions: they may commit only changes inside their respective skill-owned paths directly to the default branch when all path and publication gates pass.
+- `.agents/skills/mathia-compute-executor/SKILL.md` is an explicit no-PR executor exception and may publish only the proposed-clue output authorized by that skill directly to the default branch.
+- `.agents/skills/mathia-formalization-executor/SKILL.md` is an explicit no-PR executor exception and may publish issue-authorized Lean source/minimal Lean wiring plus reviewer-produced `status: proposed` clues directly to the default branch only after its fresh Gate-0, Lean-validation, final-review, path, and concurrency gates pass.
 - Avoid unrelated formatting or cleanup.
 - Commit messages should describe one intentional outcome.
-- Executor workflows end at a ready-for-review pull request and handoff.
-- Executors must not merge or enable auto-merge on their own authority.
-- Merge requires explicit user authorization after review; CI success or independent-review `PASS` alone is not merge authorization.
+- Ordinary PR-backed executor workflows end at a ready-for-review pull request and handoff. The explicit no-PR executor exceptions above do not create or merge a PR.
+- Executors in PR-backed workflows must not merge or enable auto-merge on their own authority.
+- Merge of a PR-backed workflow requires explicit user authorization after review; CI success or independent-review `PASS` alone is not merge authorization.
 - Never force-push or rewrite shared history without explicit user approval.
 
 ## Current scope
