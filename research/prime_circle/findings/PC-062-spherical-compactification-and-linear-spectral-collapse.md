@@ -1,4 +1,4 @@
-# PC-015 — spherical compactification is exact, but round-sphere linear spectralization collapses to Ramanujan data
+# PC-062 — spherical compactification is exact, but round-sphere linear spectralization collapses to Ramanujan data
 
 **Status:** `EXACT-DERIVED` + `DECISIVE-NEGATIVE` for any RH mechanism that uses only a fixed round sphere and a rotationally invariant linear operator.
 
