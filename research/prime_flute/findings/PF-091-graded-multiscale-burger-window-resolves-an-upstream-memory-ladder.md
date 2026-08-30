@@ -59,12 +59,35 @@ PF-080's Feshbach/effective-resistance expansion refines this to
 
 where the downstream term is absent for `j=N-1`.
 
-The resistance identity behind the third term is exact:
+The zero mode in the resistance identity must be fixed explicitly. Let `L_{\{1,\ldots,j\}}` be the connected weighted path Laplacian on vertices `1,...,j`, define the centered source
 
 \[
-R_j=e_j^TL_{\{1,\ldots,j\}}^+e_j
+q_j:=e_j-\frac1j\mathbf 1\in\mathbf 1^\perp,
+\]
+
+and let `L_{\{1,\ldots,j\}}^+` denote its Moore--Penrose inverse, so
+
+\[
+L_{\{1,\ldots,j\}}^+\mathbf 1=0.
+\]
+
+Since `e_j=q_j+\mathbf 1/j`, the usual shorthand is exactly the gauge-invariant centered quadratic form:
+
+\[
+e_j^TL_{\{1,\ldots,j\}}^+e_j
+=q_j^TL_{\{1,\ldots,j\}}^+q_j.
+\]
+
+The centered equation `L_{\{1,\ldots,j\}}u=q_j` is solvable modulo constants. Across the edge `m\leftrightarrow m+1`, conservation gives current magnitude `m/j`; hence the Dirichlet energy is
+
+\[
+R_j:=q_j^TL_{\{1,\ldots,j\}}^+q_j
+=e_j^TL_{\{1,\ldots,j\}}^+e_j
+=\sum_{m=1}^{j-1}\frac{(m/j)^2}{w_m}
 =\frac1{j^2}\sum_{m=1}^{j-1}\frac{m^2}{w_m}.
 \]
+
+Thus every later use of `e_j^TL^+e_j` in this finding is shorthand under this Moore--Penrose zero-mode convention.
 
 For `j=2` this reduces to the PF-081/PF-090 coefficient `-3w_2^2/(8w_1)`.
 
@@ -120,7 +143,7 @@ the effective-resistance sum is dominated by its last term:
 
 \[
 \sum_{m<j}\frac{m^2}{w_m}
-=rac{(j-1)^2}{w_{j-1}}(1+o(1)).
+=\frac{(j-1)^2}{w_{j-1}}(1+o(1)).
 \]
 
 The downstream term obeys
