@@ -6,6 +6,21 @@ name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"
 
 [[lean_lib]]
-name = "MathiaFormalization"
-srcDir = "formalization/mathia"
-roots = ["WI011TraceEnergy", "WI011FourPointAssembly", "PF091WeightedPathMemory", "WP014SchifferIndefinite", "PC063AnchorHaar"]
+name = "MathiaPrimeCircleFormalization"
+srcDir = "research/prime_circle/formalization"
+roots = ["PC063AnchorHaar"]
+
+[[lean_lib]]
+name = "MathiaPrimeFluteFormalization"
+srcDir = "research/prime_flute/formalization"
+roots = ["PF091WeightedPathMemory"]
+
+[[lean_lib]]
+name = "MathiaWeilInertiaFormalization"
+srcDir = "research/weil_inertia/formalization"
+roots = ["WI011TraceEnergy", "WI011FourPointAssembly"]
+
+[[lean_lib]]
+name = "MathiaWeilPositivityFormalization"
+srcDir = "research/weil_positivity/formalization"
+roots = ["WP014SchifferIndefinite"]

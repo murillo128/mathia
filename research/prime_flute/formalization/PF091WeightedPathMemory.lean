@@ -3,8 +3,12 @@ import Mathlib
 /-!
 # PF-091 finite weighted-path memory
 
-This file formalizes only the finite-dimensional mechanism audited in
-`PF091WeightedPathMemoryGate.md`. It makes no claim about hyperbolic surfaces,
+Associated finding:
+`research/prime_flute/findings/PF-091-graded-multiscale-burger-window-resolves-an-upstream-memory-ladder.md`
+
+This file formalizes the finite-dimensional PF-091 core: the exact three-vertex weighted-path
+spectrum, the `-3/8` two-scale coefficient, the normalized Feshbach coupling, and the
+gauge-explicit weighted-path resistance identity. It makes no claim about hyperbolic surfaces,
 Burger's approximation, collar PDE estimates, or prime-pattern realization.
 -/
 
