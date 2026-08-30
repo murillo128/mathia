@@ -286,7 +286,7 @@ This is not a reformulation of RH, zeta, or its zeros. The proof uses only the c
 `WP-038` does **not** rule out:
 
 - a nonlocal transverse Dirichlet or pseudo-differential form canonically forced by the Prime-Circle radial/divisor-Haar geometry;
-- an infinite-rank coupling between the real leaf and `widehat Z` fiber formed before taking a quadratic sign;
+- an infinite-rank coupling between the real leaf and `\widehat{\mathbb Z}` fiber formed before taking a quadratic sign;
 - a solenoidal metric or lamination energy with genuinely cross-level terms rather than scalar-rescaled circle energies;
 - a non-invertible compression/quotient that removes the rational soft modes for an independently geometric reason;
 - multiplicative correspondences on the solenoid whose fixed-point/intersection theory supplies Mangoldt weights without importing the Tate/Connes apparatus by hand;
@@ -321,6 +321,6 @@ The next viable structure must put a **prime-sensitive transverse or cross-place
 ## Internal dependencies
 
 - `research/prime_circle/findings/PC-059-infinite-divisor-haar-limit-is-profinite-valuation-measure.md`
-- `research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-classical-adelic-solenoid.md`
+- `research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid.md`
 - `research/weil_positivity/findings/WP-031-place-additive-positive-quadratic-readouts-cannot-select-prime-powers.md`
 - `research/weil_positivity/findings/WP-037-prime-circle-weil-birth-form-is-singular-profinite-haar-tangent.md`
