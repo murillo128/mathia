@@ -55,6 +55,14 @@ B_(L,R)-B_R
 
 is noncompact and therefore belongs to no finite Schatten class `S_q`, including `S_1`.
 
+The same obstruction survives the ordinary relative-resolvent repair. For every nonreal `z`,
+
+```text
+(B_(L,R)-z)^(-1) - (B_R-z)^(-1)
+```
+
+is compact, or belongs to any fixed Schatten ideal `S_q`, **if and only if** `B_(L,R)-B_R` does. Hence for all sufficiently large `L` this relative resolvent difference is noncompact and lies in no finite `S_q`, including trace class.
+
 Thus the escape route left open after `PL-050`--`PL-052`,
 
 ```text
@@ -63,11 +71,11 @@ subtract the universal PNT boundary layer
 + obtain a norm-small or trace-class zeta-sensitive residual,
 ```
 
-fails already at fixed boundary depth. The same high-frequency prime-log recurrence used in `PL-052` is not merely a norm defect against the rank-one model: it gives a macroscopic **essential** defect that no compact renormalization can remove.
+fails already at fixed boundary depth. The same high-frequency prime-log recurrence used in `PL-052` is not merely a norm defect against the rank-one model: it gives a macroscopic **essential** defect that no compact renormalization or ordinary bounded-pair resolvent comparison can remove.
 
-**Evidence/status:** `EXACT-DERIVED + NEGATIVE/OBSTRUCTION`, and `DECISIVE-NEGATIVE` for compact/Schatten renormalization of the fixed-depth, naturally normalized prime boundary operator.
+**Evidence/status:** `EXACT-DERIVED + NEGATIVE/OBSTRUCTION`, and `DECISIVE-NEGATIVE` for compact/Schatten renormalization and relative-resolvent repair of the fixed-depth, naturally normalized prime boundary operator.
 
-The claim does not exclude weaker distributional/Sobolev topologies, mesoscopic depths `R=R(L)`, nonlinear functions of the operator whose compactness properties differ, threshold spectral flow, or the full Weil operator including archimedean and pole terms.
+The claim does not exclude weaker distributional/Sobolev topologies, mesoscopic depths `R=R(L)`, nonlinear functions of the operator whose compactness properties are not boundedly equivalent to the original difference, a canonically imposed external smoothing, threshold spectral flow, or the full Weil operator including archimedean and pole terms.
 
 ## Boundary cross block
 
@@ -316,6 +324,68 @@ At the naive second-order scale the obstruction becomes even larger:
 
 Thus the failure of an `exp(L)`-centered operator limit recorded in `PL-052` persists after quotienting by compact operators.
 
+## Resolvent comparison does not smooth this bounded pair
+
+Set
+
+```text
+A=B_(L,R),
+B=B_R,
+D=A-B,
+R_A(z)=(A-z)^(-1),
+R_B(z)=(B-z)^(-1),
+```
+
+with `z` nonreal. Both `A` and `B` are bounded self-adjoint operators. The classical second resolvent identity gives
+
+```text
+R_A(z)-R_B(z)
+ = -R_A(z) D R_B(z).
+```
+
+Conversely, multiplying by the bounded factors `A-z` and `B-z` gives the exact inverse relation
+
+```text
+D
+ = -(A-z)(R_A(z)-R_B(z))(B-z).
+```
+
+Therefore for every two-sided operator ideal `J` in `B(H_R direct_sum H_R)`,
+
+```text
+boxed:
+R_A(z)-R_B(z) in J
+    <=>
+D in J.
+```
+
+This applies in particular to the compact operators and every finite Schatten class `S_q`. The positive essential norm above therefore implies that, for all sufficiently large `L`,
+
+```text
+R_(B_(L,R))(z)-R_(B_R)(z)
+```
+
+is noncompact and belongs to no finite `S_q`. Ordinary relative-resolvent trace class, spectral-shift, or Fredholm-determinant machinery cannot be reached merely by replacing this bounded operator difference with its resolvent difference.
+
+The Calkin gap also yields a quantitative resolvent gap. From the inverse relation and submultiplicativity of the quotient norm,
+
+```text
+||R_A(z)-R_B(z)||_ess
+ >= ||D||_ess / (||A-z|| ||B-z||).
+```
+
+At `z=i`, `PL-046` gives `||A||<=2+o(1)` after the `exp(-L)` normalization, while `||B||=1-exp(-R)<=1`. Hence
+
+```text
+liminf_(L->infinity)
+ ||(B_(L,R)-i)^(-1)-(B_R-i)^(-1)||_ess
+ >= (1-exp(-R))/6 > 0.
+```
+
+The constant `1/6` is only a convenient coarse bound; the ideal-equivalence statement is the substantive point.
+
+This argument is specific to the present **bounded** pair. For genuinely unbounded self-adjoint pairs, resolvent comparability can be strictly weaker than Schatten membership of an operator difference and is a classical subject of perturbation theory. The present calculation therefore closes a local escape in this boundary model rather than a general resolvent-comparable program.
+
 ## What this closes, and what it does not
 
 This result closes a concrete trace/determinant repair suggested by the boundary program:
@@ -327,11 +397,11 @@ PNT leading layer B_R
     -> use trace, spectral shift, or Fredholm determinant.
 ```
 
-The direct residual is not even compact. More generally, adding or subtracting arbitrary compact counterterms cannot make it norm-small, because the recurrent atomic shell remains visible in the Calkin algebra.
+The direct residual is not even compact. More generally, adding or subtracting arbitrary compact counterterms cannot make it norm-small, because the recurrent atomic shell remains visible in the Calkin algebra. For this bounded pair, replacing the operator difference by a relative resolvent difference also cannot improve ideal membership: the two differences are related by bounded invertible sandwiches in both directions.
 
-This does **not** imply that no determinant or trace construction can ever be built from localized Weil data. For example, a resolvent difference, a nonlinear functional calculus, an additional smoothing operator, or a different topology can change ideal membership. Such a construction would need an independent canonical reason and must be audited separately. The claim is only about the natural fixed-depth boundary operator and compact/Schatten renormalizations of it.
+This does **not** imply that no determinant or trace construction can ever be built from localized Weil data. A nonlinear functional calculus, an independently canonical smoothing operator, a weaker topology, a mesoscopic boundary scaling, or the full Weil operator including its archimedean and pole terms can change the mathematical problem and must be audited separately. The present claim is only about the natural fixed-depth boundary operator, compact/Schatten renormalizations of it, and the ordinary relative resolvent of this bounded pair.
 
-The smooth-test zero expansion of `PL-052` is also unaffected. Fixed smooth probes deliberately suppress the high-frequency weakly-null states used here; after that smoothing the classical explicit formula recovers the zero divisor. The present obstruction says that this smoothing cannot be replaced by merely discarding compact operator structure.
+The smooth-test zero expansion of `PL-052` is also unaffected. Fixed smooth probes deliberately suppress the high-frequency weakly-null states used here; after that smoothing the classical explicit formula recovers the zero divisor. The present obstruction says that this smoothing cannot be replaced by merely discarding compact operator structure or by taking the ordinary relative resolvent.
 
 ## Exponent-lattice interpretation
 
@@ -360,6 +430,8 @@ Calkin quotient
     -> still sees O(1) prime-log recurrent atomicity.
 ```
 
+The relative resolvent adds no further information loss at the level of compact/Schatten ideals for this bounded pair, because it is ideal-equivalent to the same Calkin-visible difference.
+
 The surviving essential defect is therefore a precise form of microscopic prime-frequency information, but it is not yet zeta-specific rigidity.
 
 ## Beurling and universality audit
@@ -372,7 +444,7 @@ The proof uses only
 3. the fixed-width PNT-type shell limit.
 ```
 
-A matched generalized-prime or positive-frequency system with the same properties has the same essential-norm obstruction. Neither the zeta functional equation nor the Riemann zero divisor enters.
+A matched generalized-prime or positive-frequency system with the same properties has the same essential-norm obstruction. Neither the zeta functional equation nor the Riemann zero divisor enters. The bounded-pair resolvent equivalence is purely functional analytic and therefore propagates this same matched-control obstruction automatically.
 
 Accordingly, the result is a no-go statement, not an RH mechanism. The Calkin survival of atomic recurrence distinguishes weak homogenization from compact homogenization, but by itself it does not distinguish rational primes from suitably matched Beurling controls.
 
@@ -380,34 +452,36 @@ Accordingly, the result is a no-go statement, not an RH mechanism. The Calkin su
 
 No Euler product is used or analytically continued. At each finite `L`, the operator is the finite prime-power term extracted from the already-completed Weil explicit formula. The large-`L` input is the prime number theorem, and the essential-norm lower bound uses finite-dimensional Kronecker recurrence.
 
-The obstruction therefore lives entirely on the completed explicit-formula side and does not arise from illegitimately transporting a `Re(s)>1` identity into the critical strip.
+The obstruction therefore lives entirely on the completed explicit-formula side and does not arise from illegitimately transporting a `Re(s)>1` identity into the critical strip. The resolvent strengthening is an algebraic consequence of bounded operator theory and introduces no additional analytic continuation.
 
 ## Prior-art and novelty audit
 
-The functional-analytic principle behind the proof is standard: compact operators map weakly convergent sequences to norm-convergent sequences, and weakly-null test sequences are a classical way to lower-bound essential norm. Generic Calkin-algebra and finite-section boundary phenomena are likewise standard operator theory.
+The functional-analytic principles behind the proof are standard: compact operators map weakly convergent sequences to norm-convergent sequences, weakly-null test sequences are a classical way to lower-bound essential norm, Schatten classes are two-sided ideals, and the second resolvent identity is classical. Generic Calkin-algebra, finite-section boundary, and resolvent-comparable perturbation phenomena are standard operator theory.
 
-The arithmetic inputs are also already anchored: `PL-045`/`PL-052` supply prime-log Kronecker recurrence, while `PL-049`--`PL-051` supply the PNT shell measure and fixed-depth boundary model. A targeted literature audit across essential norms of truncated convolution/Hankel operators and compact perturbations did not locate a stronger theorem needed to change the specialization above. Search absence is not treated as evidence of novelty.
+The arithmetic inputs are also already anchored: `PL-045`/`PL-052` supply prime-log Kronecker recurrence, while `PL-049`--`PL-051` supply the PNT shell measure and fixed-depth boundary model. Modern resolvent-comparable perturbation theory treats the genuinely broader unbounded setting in which a Schatten resolvent difference need not come from a Schatten operator difference; that distinction does not apply to the present bounded pair because the second resolvent identity is invertible by bounded factors in both directions. A targeted literature audit did not identify any theorem that changes this elementary ideal-equivalence calculation.
 
-No novelty claim is made. The durable contribution is the exact consequence for the concrete localized-Weil boundary family: the recurrent norm gap of `PL-052` remains macroscopic in the Calkin quotient, so a compact/Schatten counterterm cannot expose a norm-small second layer.
+No novelty claim is made. The durable contribution is the exact consequence for the concrete localized-Weil boundary family: the recurrent norm gap of `PL-052` remains macroscopic in the Calkin quotient, so neither a compact/Schatten counterterm nor an ordinary relative-resolvent replacement can expose a norm-small or trace-class second layer.
 
 ## Falsification and boundary tests
 
-The claim reduces to six checkable statements:
+The claim reduces to eight checkable statements:
 
 1. `f_xi` and `g_xi` are weakly null as `|xi|->infinity`;
 2. the one-atom matrix element is the formula from `PL-052`;
 3. finite rational-prime logarithms admit simultaneous recurrent phases;
 4. compact operators send the recurrent `f_(xi_j)` to norm zero;
 5. cross-block compression cannot increase essential norm;
-6. fixed-width PNT sends `A_(L,R)` to `1-exp(-R)`.
+6. fixed-width PNT sends `A_(L,R)` to `1-exp(-R)`;
+7. the two displayed resolvent identities hold for bounded `A`, `B` and nonreal `z`;
+8. compact and Schatten classes are two-sided ideals under multiplication by bounded operators.
 
-Items 1, 4, and 5 are standard Hilbert-space facts; items 2 and 3 are already audited in `PL-052`; item 6 is the fixed-width PNT computation already audited in `PL-049`--`PL-052`.
+Items 1, 4, 5, 7, and 8 are standard Hilbert/operator-space facts; items 2 and 3 are already audited in `PL-052`; item 6 is the fixed-width PNT computation already audited in `PL-049`--`PL-052`.
 
-Any failure of one of these steps falsifies the stated lower bound.
+Any failure of one of these steps falsifies the stated lower bounds or the ideal-equivalence strengthening.
 
 ## Consequence for the research line
 
-The boundary ledger now separates three operator topologies:
+The boundary ledger now separates four operator viewpoints:
 
 ```text
 fixed profiles
@@ -421,6 +495,10 @@ uniform norm
 modulo compact operators
     ||B_(L,R)-B_R||_ess stays O(1) from zero
     -> no compact/Schatten renormalization                 [PL-053]
+
+ordinary relative resolvent of the bounded pair
+    ideal membership <=> ideal membership of B_(L,R)-B_R
+    -> no trace-class resolvent repair                     [PL-053]
 ```
 
-So a useful next mechanism cannot obtain zeta-specific spectral data merely by subtracting the universal boundary model and then passing to the compact/Schatten part. It must either impose a canonical smoothing/topology that genuinely controls the recurrent frequencies, exploit threshold or mesoscopic information before homogenization, or couple the prime boundary distribution to an additional arithmetic positivity/target structure that fails matched generalized-prime controls.
+So a useful next mechanism cannot obtain zeta-specific spectral data merely by subtracting the universal boundary model, passing to the compact/Schatten part, or replacing this bounded difference by its ordinary relative resolvent. It must instead impose a canonical smoothing/topology that genuinely controls the recurrent frequencies, exploit threshold or mesoscopic information before homogenization, or couple the prime boundary distribution to an additional arithmetic positivity/target structure that fails matched generalized-prime controls.
