@@ -143,7 +143,7 @@ the effective-resistance sum is dominated by its last term:
 
 \[
 \sum_{m<j}\frac{m^2}{w_m}
-=\frac{(j-1)^2}{w_{j-1}}(1+o(1)).
+=(j-1)^2w_{j-1}^{-1}(1+o(1)).
 \]
 
 The downstream term obeys
@@ -207,8 +207,7 @@ Since `mu^(j)~((j+1)/j)w_j`, the Burger error compared with the upstream term is
 
 \[
 \frac{w_j\sqrt{w_1}}{w_j^2/w_{j-1}}
-=
-\frac{\sqrt{w_1}}{r_j}
+=\frac{\sqrt{w_1}}{r_j}
 \longrightarrow0.
 \]
 
