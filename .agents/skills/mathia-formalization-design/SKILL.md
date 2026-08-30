@@ -30,6 +30,22 @@ For Mathia formalization work:
 
 The issue chooses the smallest sensible Mathia-local path for the formal artifact. Do not freeze a permanent repository layout or formalization framework from this skill alone.
 
+## Candidate intake and deduplication
+
+A Research Watch may invoke this skill directly when a current canonical finding contains a bounded theorem worth machine-checking. **Do not create or require `LEAN_CANDIDATES.md`, another candidate registry, or a repository TODO queue.** GitHub issues are the control plane for accepted formalization work.
+
+Before creating a formalization issue:
+
+1. read the authoritative current finding and any adjacent review sidecar;
+2. reject routing while the target is withdrawn, superseded, under an unresolved adversarial review, or still too under-specified to state faithfully;
+3. search open and closed Mathia issues for the finding ID, finding path, and an equivalent theorem boundary;
+4. inspect existing Mathia Lean/formalization artifacts for an equivalent or stronger theorem;
+5. if an active issue or existing formalization already covers the material target, do not create a duplicate.
+
+A finding is a good formalization target when the proposed theorem boundary is mathematically stable and bounded, and formalization would provide material value such as falsifying a delicate exact claim, certifying a reusable finite core, exposing hidden hypotheses/sign/indexing errors, or providing a dependency used by later research. Prefer exact or literature-backed claims and exact finite subclaims extracted from broader analytic findings. Do not route a statement merely because it is easy to encode, and do not use formalizability to upgrade its evidence status.
+
+When the admission check passes, create exactly one Mathia issue through this skill and `design-github-issue`. The issue must identify the canonical finding/path that motivates it. The issue itself is the durable pending-work record; research files do not mirror its status. A negative admission decision creates no repository state.
+
 ## Lean environment
 
 Use the Lean tooling available on the execution machine together with Mathia's current local Lean/Lake setup.
