@@ -11,6 +11,8 @@ This file records durable literature dependencies used to support or falsify fin
 
 - B. Gustafsson and V. G. Tkachev, **The Resultant on Compact Riemann Surfaces**, *Communications in Mathematical Physics* 286 (2009), 313–358. DOI: 10.1007/s00220-008-0622-2. arXiv:0710.2326. Role: mutual logarithmic energy as a resultant and renormalized self-energy as discriminant; key novelty correction in PC-006.
 - C. Aistleitner, I. Berkes and K. Seip, **GCD sums from Poisson integrals and systems of dilated functions**, *Journal of the European Mathematical Society* 17 (2015), 1517–1546. DOI: 10.4171/JEMS/537. arXiv:1210.0741. Role: classical critical GCD kernel `gcd(m,n)/sqrt(mn)` and its Poisson structure; key novelty correction in PC-006.
+- Henry J. Stephen Smith, **On the Value of a Certain Arithmetical Determinant**, *Proceedings of the London Mathematical Society* s1-7 (1875), 208–213. DOI: 10.1112/plms/s1-7.1.208. Role: classical determinant of the GCD matrix, `det(gcd(i,j))=prod phi(k)`; historical prior-art anchor for the boundary-collision GCD form in PC-056.
+- Warren P. Johnson, **An LDU Factorization in Elementary Number Theory**, *Mathematics Magazine* 76:5 (2003), 392–394. DOI: 10.1080/0025570X.2003.11953215. Role: modern incidence/LDU presentation of the classical Le Paige factorization `G=L Phi L^T` for the GCD matrix; direct prior-art anchor for the exact Möbius orthogonalization and Hilbert-completion classification in PC-056.
 
 ## Ramanujan sums and cyclotomic field transforms
 
