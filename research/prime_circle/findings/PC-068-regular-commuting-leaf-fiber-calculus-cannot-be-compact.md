@@ -107,7 +107,7 @@ B=b_0(A/2\pi),
 b_0(t)=\frac12\{t\}(1-\{t\}).
 \]
 
-The equality is in Borel functional calculus; `b_0` is bounded and periodic but discontinuous only at integers through the choice of fractional-part representative, where the left and right limits both tend to zero, so in fact the displayed quadratic periodicization is continuous there as well.
+The equality is in Borel functional calculus. The quadratic periodicization `b_0` is bounded, periodic, and continuous, including at the integers where both one-sided limits are zero.
 
 The important point is informational: **the commuting lifted chord coordinate does not enlarge the joint character label beyond `q` itself**. It can still expose exact order through the highly nonuniform rational point set, as PC-067 proves, but only set-theoretically inside a dense real spectrum.
 
@@ -269,6 +269,7 @@ The narrowed gate is
 \text{the missing ingredient is not another regular scalar combination of the known solenoid coordinates;}
 \quad
 \text{it must force arithmetic properness before commuting Fourier reduction.}
+}
 \]
 
 ## 8. Exact audit tests
