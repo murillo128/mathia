@@ -2,10 +2,6 @@
 
 ## Research mandate
 
-### Identity
-
-Research line: `weil_inertia`.
-
 ### Primary object
 
 The line starts from the recent Montgomery/Weil-form matrix-inertia approach giving an unconditional lower bound of roughly two thirds for zeta zeros that are both simple and on the critical line.
@@ -40,27 +36,21 @@ A particularly valuable outcome would be a defect-to-zero or bootstrapping mecha
 
 Do not interpret the uncertified complement as exactly `1/3`, as entirely off the critical line, or as a homogeneous exceptional population.
 
-Do not assume full Weil positivity at the outset; this line studies quantitative defect from positivity. Do not import conjectural pair-correlation, density, or support information into an unconditional bound without labeling the dependency explicitly.
+Do not assume full Weil positivity at the outset. Conjectural pair-correlation, density, support information, wider Fourier support, stronger moments, or additional spectral invariants may enter an unconditional improvement only when the required arithmetic control is actually available.
 
-A wider Fourier support, stronger moment estimate, or additional spectral invariant is admissible only when the arithmetic side required to control it is actually available.
+### Line-specific falsification controls
 
-### Falsification and novelty standard
+For proposed improvements, test specifically:
 
-Treat barriers and negative results as first-class outcomes. For each proposed improvement:
+- the exact inequality or information bottleneck changed by the proposal;
+- extremizers and near-extremizers for the current and modified bounds;
+- whether a new invariant is independent of the moments already used;
+- whether an apparent gain is only a different kernel choice inside the same variational barrier;
+- what additional arithmetic information would be required if the route cannot improve the constant;
+- all functional-equation, conjugation, multiplicity, normalization, and block-signature constraints;
+- whether the matrix reformulation adds information or merely rewrites the same bound.
 
-- identify the exact inequality or information bottleneck it changes;
-- compute or characterize extremizers and near-extremizers;
-- test whether the new invariant is independent of the moments already used;
-- distinguish a nonoptimal choice of kernel from a sharp barrier of the method;
-- determine what genuinely new arithmetic information would be required if the route cannot improve the constant;
-- check all functional-equation, conjugation, multiplicity, normalization, and block-signature constraints;
-- reject matrix reformulations that merely restate the same bound without adding information.
-
-Novelty must be assessed by mathematical mechanism, not by different matrix notation or decomposition language.
-
-### Prior-art audit surface
-
-Search by mechanism and equivalent formulation across:
+### Prior-art domains
 
 - Montgomery pair correlation and simple-zero density arguments;
 - Weil's explicit formula and Hermitian/positivity formulations;
@@ -74,5 +64,3 @@ Search by mechanism and equivalent formulation across:
 ### Relationship to other lines
 
 `weil_positivity` asks whether an independent Mathia-native structure can force global Weil positivity. This line is complementary: it studies inertia, rank, block signature, exceptional mass, and quantitative defect without assuming full positivity.
-
-Prime Circle, Prime Flute, and Prime Lattice may contribute explicit auxiliary structures or constraints only when a precise evidence-backed bridge exists. They are otherwise separate research objects.

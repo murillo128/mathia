@@ -2,10 +2,6 @@
 
 ## Research mandate
 
-### Identity
-
-Research line: `weil_positivity`.
-
 ### Primary object
 
 The line searches for a Mathia-native geometric pairing, energy, intersection form, norm, boundary response, cohomological structure, or operator-positive form whose own nonnegativity can be compared rigorously with a global Weil explicit-formula positivity criterion.
@@ -20,9 +16,9 @@ The target is an explanatory sign mechanism, not a new coordinate system for the
 
 ### Priority questions
 
-For every candidate ask:
+For every candidate determine:
 
-- what exact geometric object or form is being defined;
+- the exact geometric object or form being defined;
 - why that object is canonical rather than dependent on arbitrary gauges, bases, regularizations, or kernels;
 - what independent theorem or structural principle forces its sign;
 - how prime-local terms arise intrinsically;
@@ -33,27 +29,23 @@ For every candidate ask:
 
 ### Scope and exclusions
 
-Reject constructions whose positivity is obtained only after assuming RH, placing the zeros on a self-adjoint spectrum by definition, importing the Weil functional as an unexplained kernel, or choosing a regularization specifically to force the desired sign.
+Positivity obtained only after assuming RH, placing the zeros on a self-adjoint spectrum by definition, importing the Weil functional as an unexplained kernel, or choosing a regularization specifically to force the desired sign is outside the target.
 
-Do not count a zeta function, determinant, trace formula, spectral representation, or known RH-equivalent positivity functional as progress unless an independently justified Mathia structure explains why the relevant form is nonnegative.
+A zeta function, determinant, trace formula, spectral representation, or known RH-equivalent positivity functional is relevant only if an independently justified Mathia structure explains the sign.
 
-The line may read other Mathia branches as evidence, but it does not modify or subsume them merely because one of their objects can be inserted into a Weil-style formula.
+### Line-specific falsification controls
 
-### Falsification and novelty standard
+For candidate sign mechanisms, test specifically whether they survive:
 
-Aggressively test circularity and universality. In particular ask whether the candidate survives:
-
-- removal of explicit zero data from its definition;
+- removal of explicit zero data from the definition;
 - changes of gauge, basis, coordinates, or admissible regularization;
 - matched integer, density-matched, randomized, twisted-Euler-product, or other natural controls;
-- separation of finite-prime and archimedean terms to see whether they truly arise from one structure;
+- separation of finite-prime and archimedean terms to determine whether they truly arise from one structure;
 - comparison with known RH-equivalent positivity criteria and existing geometric/cohomological sign mechanisms.
 
-A viable result must explain the sign from geometry first and only then identify its arithmetic consequence.
+The decisive question is whether nonnegativity is forced before the arithmetic consequence is identified.
 
-### Prior-art audit surface
-
-Search by mechanism and equivalent formulation across:
+### Prior-art domains
 
 - Weil's positivity criterion and the Riemann explicit formula;
 - Hilbert-Pólya-style spectral formulations;
@@ -65,6 +57,6 @@ Search by mechanism and equivalent formulation across:
 
 ### Relationship to other lines
 
-Prime Circle, Prime Flute, and Prime Lattice are possible suppliers of intrinsic geometric or harmonic structures, but none is privileged and none of their current findings is assumed to solve the positivity problem.
+Prime Circle, Prime Flute, and Prime Lattice are possible suppliers of intrinsic geometric or harmonic structures; none is privileged by this mandate.
 
-`weil_inertia` is complementary: it studies quantitative defect from positivity and the amount of negative/exceptional mass compatible with available arithmetic information. A proven defect-to-zero mechanism may create a bridge between the two lines, but they remain distinct unless canonical evidence establishes that bridge.
+`weil_inertia` is complementary: it studies quantitative defect from positivity and the amount of negative/exceptional mass compatible with available arithmetic information. A defect-to-zero mechanism could create a substantive bridge between the two programs.

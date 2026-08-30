@@ -2,10 +2,6 @@
 
 ## Research mandate
 
-### Identity
-
-Research line: `prime_flute`.
-
 ### Primary object
 
 The line studies the exact zero-twist hyperbolic prime-flute built from the ordered odd primes. For consecutive odd primes `p_n`, write
@@ -23,7 +19,7 @@ Intrinsic data include cuff lengths, multi-gap separating geodesics, cusp geomet
 
 ### Objective
 
-Determine whether the exact hyperbolic surface carries a nontrivial and potentially novel relation between prime-gap fluctuations and natural spectral or dynamical objects relevant to zeta or the critical line.
+Determine whether the exact hyperbolic surface carries a nontrivial relation between prime-gap fluctuations and natural spectral or dynamical objects relevant to zeta or the critical line.
 
 The target is a mechanism intrinsic to the flute itself, not a spectral object imported solely to mimic the Riemann zeta function.
 
@@ -46,31 +42,25 @@ multi-gap separators, cross-ratios, cusp structure, and marked endpoint geometry
 - determinants or other natural spectral invariants;
 - genuinely global or nonlocal mechanisms capable of retaining information erased by local or scalar reductions.
 
-Prefer invariants forced by the exact discrete endpoint/Fuchsian data over constructions depending on an arbitrary continuum interpolation.
-
 ### Scope and exclusions
 
 This line covers only the derived hyperbolic prime-flute. Do not develop new prime-circle cyclotomic, root-of-unity, or potential-theory findings here.
 
-Reject mere restatements of prime-gap statistics, arbitrary generating functions, or operators/products introduced only because their notation resembles zeta. Do not treat an off-prime interpolation of `cot(pi/x)` as intrinsic surface data unless the proposed quantity is shown to descend to the sampled endpoint/Fuchsian geometry.
+Mere restatements of prime-gap statistics, arbitrary generating functions, or operators/products introduced only because their notation resembles zeta are outside the target. Off-prime interpolation data from `cot(pi/x)` are not intrinsic unless the proposed quantity descends to the sampled endpoint/Fuchsian geometry.
 
-### Falsification and novelty standard
+### Line-specific falsification controls
 
-Aggressively test whether a candidate is explained by:
+For candidate mechanisms, test specifically for:
 
 - universal cusp or background phenomena;
-- telescoping, gauge, coordinate, or normalization artifacts;
 - noncompactness or infinite-type surface effects unrelated to the primes;
 - quantities that retain only coarse gap shape while losing primality specificity;
 - matched composite, shifted, dilated, or otherwise non-prime endpoint controls;
-- local or finite-jet effects that can be reproduced by a smooth matched reference;
-- selected orbit sectors or truncated products whose apparent boundary disappears in the natural full object.
+- local or finite-jet effects reproducible by a smooth matched reference;
+- selected orbit sectors or truncated products whose apparent boundary disappears in the natural full object;
+- dependence on an arbitrary continuum interpolation rather than the exact discrete endpoint/Fuchsian data.
 
-A viable mechanism must survive relevant controls and be intrinsic to the exact surface rather than to an arbitrary representation of it.
-
-### Prior-art audit surface
-
-Search by mechanism and equivalent formulation across:
+### Prior-art domains
 
 - tight flutes and train surfaces;
 - infinitely generated Fuchsian groups and infinite-type hyperbolic surfaces;
@@ -83,6 +73,4 @@ Search by mechanism and equivalent formulation across:
 
 ### Relationship to other lines
 
-`prime_circle` is the upstream construction and may be read as mathematical context, but circle-specific claims are not automatically flute invariants.
-
-`weil_positivity` may consume a canonical positive or relative spectral structure if one survives here. `prime_lattice` and `weil_inertia` are separate research objects and may be used only for comparison or explicit cross-line bridges supported by evidence.
+`prime_circle` is the upstream construction that supplies the ordered prime geometry from which the flute is derived. Circle-specific claims are not automatically invariants of the hyperbolic surface.

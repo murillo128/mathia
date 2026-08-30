@@ -35,11 +35,59 @@ Each research-watch prompt should supply only scheduler/runtime identity and any
 - the stable finding prefix, such as `PC`, `PF`, `PL`, `WP`, or `WI`;
 - any notification threshold stricter than the defaults in the loaded skills.
 
-The line's `research/<line>/README.md` owns **what mathematics to investigate**: its canonical `## Research mandate` defines the mathematical object, objective, scope, priorities, exclusions, prior-art surface, and relationship to other lines. The scheduled prompt must not duplicate or independently redefine that scientific contract. This skill owns **how to investigate, handle reviews, persist evidence, and publish it**.
+The scheduled prompt must not duplicate or independently redefine the scientific contract. This skill owns **how to investigate, review, persist evidence, and publish it**. The line README owns **what mathematics that line investigates**.
 
-Every valid Research Watch line must therefore have `research/<line>/README.md` with an explicit `## Research mandate`. If it is missing or materially ambiguous, stop rather than inventing or recovering the objective from scheduler memory, chat history, old prompts, or derived state.
+## Canonical line README contract
 
-Routine Research Watch runs must not modify the `## Research mandate` section. Reorientation of the line is explicit repository maintenance outside the ordinary recurring research cycle. Other stable README context may still be maintained when allowed below.
+Every valid Research Watch line must have:
+
+```text
+research/<line>/README.md
+```
+
+with exactly one `## Research mandate`. The directory path already identifies the line, so do not duplicate an `Identity` section inside the README.
+
+The README is the canonical, externally maintained scientific contract for the line. Keep the same section structure across lines:
+
+```text
+## Research mandate
+
+### Primary object
+### Objective
+### Priority questions
+### Scope and exclusions
+### Line-specific falsification controls
+### Prior-art domains
+### Relationship to other lines
+```
+
+These sections contain **line-specific mathematics only**:
+
+- `Primary object`: intrinsic construction, definitions, conventions, and fixed mathematical data needed to know what is being studied;
+- `Objective`: the durable scientific question or target of the line;
+- `Priority questions`: line-specific mechanisms and questions worth attacking;
+- `Scope and exclusions`: mathematical boundaries specific to this line;
+- `Line-specific falsification controls`: controls, degeneracies, matched models, or no-go tests peculiar to the line;
+- `Prior-art domains`: only the mathematical literatures particularly relevant to this line;
+- `Relationship to other lines`: only genuine mathematical dependency, upstream/downstream structure, complementarity, or candidate supply relationships.
+
+Do **not** duplicate shared Research Watch procedure in a README. In particular, the README should not restate:
+
+- derive before interpreting;
+- try to falsify candidates before publishing;
+- treat important negative results as first-class findings;
+- assess novelty by mathematical mechanism and equivalent formulation rather than wording;
+- prefer primary/authoritative literature;
+- generic matched-control, gauge, convergence, or boundary-case discipline already defined below;
+- the generic rule that other research lines are read-only context/evidence;
+- evidence labels, finding-ID rules, file maps, persistence rules, publication rules, notification policy, or review protocol;
+- current findings, current branch status, research history, or a hand-maintained synthesis of the finding corpus.
+
+A useful placement test is: **if a sentence could be copied unchanged into another research line, it probably belongs in this skill rather than in the README.** Keep only the line-specific specialization in the README.
+
+If the README is missing, lacks the required structure, materially conflicts with itself, or does not define a usable scientific contract, stop rather than inventing or recovering the objective from scheduler memory, chat history, old prompts, graph state, or current findings.
+
+The entire README is **read-only to routine Research Watch runs**. Reorientation, restructuring, or maintenance of the canonical mandate is explicit repository maintenance outside the recurring research cycle.
 
 ## Load context progressively
 
@@ -48,7 +96,7 @@ Before substantive work:
 1. read `AGENTS.md`;
 2. read this skill;
 3. read `.agents/skills/mathia-research-review/SKILL.md`;
-4. read `research/<line>/README.md` and verify that its canonical `## Research mandate` is present and usable;
+4. read `research/<line>/README.md` and verify that its canonical `## Research mandate` and required sections are present and usable;
 5. inventory filenames under `research/<line>/findings/`, distinguishing canonical findings from adjacent `*.review.md` sidecars;
 6. inspect every open sidecar whose last substantive speaker is `Adversary`; these form the owner's review inbox;
 7. inspect `research/<line>/clues/**` when present, using `mathia-research-clues` for their semantics;
@@ -56,7 +104,7 @@ Before substantive work:
 9. use `research/<line>/graph/index.md` when present only as derived navigation, never as mathematical evidence;
 10. read only the individual findings and dependencies needed for the live review, candidate, clue, or duplication question.
 
-Other Mathia research lines and `mind/` may be read as context or evidence, but are read-only for this role. Treat every `graph/` subtree as regenerable derived state and verify substantive claims against canonical findings or sources.
+Other Mathia research lines and `mind/` may be read as context or evidence, but are read-only for this role. A cross-line mathematical claim must be traced to canonical findings or authoritative sources; a relationship stated in one line's README does not by itself establish evidence in another line. Treat every `graph/` subtree as regenerable derived state and verify substantive claims against canonical findings or sources.
 
 Do not preload all findings or complete repository history unless a dependency, deletion, review, or novelty question requires it.
 
@@ -150,13 +198,15 @@ Try to kill a candidate before promoting it. Check, when relevant:
 - whether a proposed spectral/geometric object exists with the required hypotheses;
 - boundary cases, matched controls, counterexamples, and degenerate instances.
 
+Apply the line-specific controls from its README in addition to these shared tests.
+
 Important negative results are first-class research results when they rule out a natural branch, expose hidden universality, or establish a reusable impossibility principle.
 
 This self-audit does not replace the independent `mathia-research-adversarial` process.
 
 ### 4. Run a serious prior-art and novelty check
 
-Search the closest classical and modern literature only after the candidate is precise enough to search for.
+Search the closest classical and modern literature only after the candidate is precise enough to search for. Use the README's `Prior-art domains` as line-specific coverage guidance, not as an exhaustive bibliography.
 
 Prefer primary papers, monographs, authoritative surveys, or original theorem sources over secondary summaries. Determine separately:
 
@@ -229,12 +279,15 @@ findings/
 
 ### `README.md`
 
-The README has two roles:
+`README.md` is the canonical line contract defined above, not a mutable research artifact. It contains only the stable line-specific mandate and must not contain:
 
-- `## Research mandate` is the canonical, externally maintained scientific contract for the line and is **read-only to routine Research Watch runs**;
-- the remaining README may hold stable line context such as conventions, research stance, evidence vocabulary, file map, and durable high-level interpretation.
+- a run log or chronology;
+- a hand-maintained summary of current findings;
+- evidence labels or finding indexes;
+- file-map or persistence instructions;
+- shared Research Watch procedure.
 
-Do not use any part of the README as a run log. A routine watch may update non-mandate README context only when a substantive finding materially changes that stable interpretation and the edit remains consistent with the canonical mandate.
+Routine Research Watch runs never modify `README.md`. Explicit repository maintenance may revise a mandate when the line is intentionally reoriented or the contract structure itself changes.
 
 ### Individual findings
 
@@ -304,13 +357,12 @@ Global/cross-line clue creation is permitted only as defined by `mathia-research
 For a Research Watch on `research/<line>/`, writable evidence is limited to:
 
 ```text
-research/<line>/README.md            # never alter ## Research mandate in routine runs
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md   # only when applicable
 research/<line>/findings/**
 ```
 
-Within `README.md`, the canonical `## Research mandate` is protected from routine Research Watch mutation even though other stable README context remains writable under the substantive gate.
+`research/<line>/README.md` is deliberately excluded from routine write ownership.
 
 Within `findings/**`, writes to `*.review.md` must obey `mathia-research-review`; ordinary Research Watch ownership does not override turn-taking.
 
@@ -320,6 +372,7 @@ When `mathia-research-clues` is loaded, its clue-path extension also applies.
 
 Do **not** write to:
 
+- `research/<line>/README.md`;
 - `research/<line>/graph/**`;
 - `research/<line>/mind/**`;
 - `research/mind/**`;
@@ -336,14 +389,13 @@ Before every commit:
 
 1. refresh the default branch and inspect the complete planned diff;
 2. verify every changed path is inside the allowed evidence/clue/review area;
-3. verify no `graph/`, `mind/`, `master/`, code, experiment, or unrelated file changed;
-4. if `README.md` changed, verify the canonical `## Research mandate` is byte-for-byte unchanged from the run's base revision;
-5. verify the update passes the substantive gate;
-6. for review changes, verify `mathia-research-review` turn ownership and persistence stage;
-7. if updating a reviewed target in place, verify the adversary explicitly accepted the mathematics pending persistence and the claim identity remains the same;
-8. if claim identity changes, verify target+sidecar withdrawal and a new non-recycled ID rather than `.v2`;
-9. verify `README.md`, `SOURCES.md`, or `LEAN_CANDIDATES.md` agree with current canonical findings;
-10. remove unrelated formatting churn.
+3. verify no `README.md`, `graph/`, `mind/`, `master/`, code, experiment, or unrelated file changed;
+4. verify the update passes the substantive gate;
+5. for review changes, verify `mathia-research-review` turn ownership and persistence stage;
+6. if updating a reviewed target in place, verify the adversary explicitly accepted the mathematics pending persistence and the claim identity remains the same;
+7. if claim identity changes, verify target+sidecar withdrawal and a new non-recycled ID rather than `.v2`;
+8. verify `SOURCES.md` or `LEAN_CANDIDATES.md` agree with current canonical findings when changed;
+9. remove unrelated formatting churn.
 
 Research-watch commits use:
 

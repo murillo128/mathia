@@ -2,10 +2,6 @@
 
 ## Research mandate
 
-### Identity
-
-Research line: `prime_lattice`.
-
 ### Primary object
 
 The line studies the prime-exponent geometry of the positive integers through the unique-factorization vector
@@ -55,13 +51,11 @@ Study in particular:
 
 Treat the exponent-vector representation, square-free Boolean hypercube, Euler-product factorization, classical Möbius inversion, and classical Bohr lift as baseline prior art rather than discoveries.
 
-Do not silently transport identities valid only in `Re(s)>1` into the critical strip. Analytic continuation is a substantive boundary, not a harmless coordinate extension.
+Do not transport identities valid only in `Re(s)>1` into the critical strip without a valid continuation mechanism. Operators, determinants, or geometric language that reproduce zeta by definition without additional structure are outside the target.
 
-Reject arbitrary operators, determinants, or geometric language that merely reproduce zeta by definition without yielding a precise and falsifiable additional mechanism.
+### Line-specific falsification controls
 
-### Falsification and novelty standard
-
-Test whether every candidate depends only on structure shared by broader multiplicative systems rather than on the exact rational primes. Relevant controls include:
+For candidate mechanisms, compare specifically against:
 
 - Helson-type phase twists and other prime-coordinate deformations;
 - Beurling/generalized-prime systems with matched coarse counting or finite-frequency data;
@@ -69,11 +63,9 @@ Test whether every candidate depends only on structure shared by broader multipl
 - regularizations that remove exactly the zero-sensitive term they are supposed to explain;
 - operators whose spectral behavior is universal or determined by a classical boundary singularity rather than by the Riemann zero divisor.
 
-A candidate must separate what is standard infinite-dimensional harmonic analysis from what is genuinely arithmetic and zeta-specific.
+The surviving mechanism must distinguish the exact rational-prime norm map from broader multiplicative systems sharing the same ambient lattice or coarse harmonic structure.
 
-### Prior-art audit surface
-
-Search by mechanism and equivalent formulation across:
+### Prior-art domains
 
 - Bohr's theory of Dirichlet series;
 - Hedenmalm-Lindqvist-Seip theory and Hardy spaces of Dirichlet series;
@@ -83,10 +75,8 @@ Search by mechanism and equivalent formulation across:
 - Beurling/generalized primes;
 - adelic/idèlic harmonic analysis when the missing global structure points there;
 - dynamical and recurrence formulations of zeta;
-- known Hilbert-space, Hankel/operator, determinant, trace, or spectral formulations of RH.
+- Hilbert-space, Hankel/operator, determinant, trace, or spectral formulations of RH.
 
 ### Relationship to other lines
 
-This line is mathematically independent of the prime-circle and prime-flute geometries, although exact cross-line bridges may be investigated when supported by canonical findings.
-
-`weil_positivity` may consume a canonical harmonic or operator-positive structure if one emerges here. `weil_inertia` is a separate quantitative explicit-form/inertia program and should not be conflated with the ambient prime-lattice geometry.
+This line is not derived from the prime-circle or prime-flute geometries. Any bridge to those constructions must therefore identify additional shared mathematical structure rather than assuming a common geometric origin.
