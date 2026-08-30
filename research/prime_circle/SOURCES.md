@@ -59,7 +59,7 @@ This file records durable literature dependencies used to support or falsify fin
 
 ## Hyperbolic/de Sitter duality and ideal-circle geometry
 
-- John G. Ratcliffe, **Foundations of Hyperbolic Manifolds**, 3rd ed., Graduate Texts in Mathematics 149, Springer (2019). DOI: 10.1007/978-1-4612-1934-7. Role: standard hyperbolic, inversive, Poincaré-disk, and Lorentz-model background for the intrinsic orthogonal-circle construction in PC-031.
+- John G. Ratcliffe, **Foundations of Hyperbolic Manifolds**, 3rd ed., Graduate Texts in Mathematics 149, Springer (2019). DOI: 10.1007/978-3-030-31597-9. Role: standard hyperbolic, inversive, Poincaré-disk, and Lorentz-model background for the intrinsic orthogonal-circle construction in PC-031.
 - Immanuel Asmus, **Duality between Hyperbolic and de Sitter Geometry**, arXiv:0810.5303v2 [math.DG] (2008). Role: explicit hyperbolic/de Sitter duality in Minkowski space and de Sitter causal geometry; prior-art anchor for the Lorentz-normal formulation in PC-031.
 - Maxim Arnold, Dmitry Fuchs, Ivan Izmestiev and Serge Tabachnikov, **Cross-ratio Dynamics on Ideal Polygons**, *International Mathematics Research Notices* 2022:9 (2022), 6770–6853. DOI: 10.1093/imrn/rnaa289. Role: classical projective dynamics of ideal polygons defined by cross-ratio, including the orthogonal-side case; prior-art boundary for attempts to extract a new orthogonal-circle dynamical mechanism in PC-031.
 - Robert C. Penner, **The decorated Teichmüller space of punctured surfaces**, *Communications in Mathematical Physics* 113 (1987), 299–339. Role: standard decorated Teichmüller and lambda-length framework in which finite ideal-edge lengths require horocycle decorations; supports the gauge boundary in PC-031.
