@@ -28,9 +28,9 @@ Before substantive work:
 2. read this skill;
 3. read `.agents/skills/mathia-research-clues/SKILL.md` for clue handoff;
 4. read `.agents/skills/mathia-research-review/SKILL.md` only to interpret review state and Git-visible review outcomes;
-5. use the current `mathia-research-mind` and `mathia-research-graph-curator` outputs as inputs, not as writable surfaces.
+5. use the current `mathia-research-mind` and `mathia-research-graph-curator` outputs — including the versioned Riemann Atlas and its derived metrics — as inputs, not as writable surfaces.
 
-When the sources conflict, the current canonical findings and accepted review outcomes outrank derived graph presentation. `mind/**` is the current synthesized mathematical snapshot and should normally be consumed whole, but it must not be treated as independent evidence when an important portfolio decision depends on a particular claim: trace that claim back to current findings.
+When the sources conflict, the current canonical findings and accepted review outcomes outrank derived graph presentation. `mind/**` is the current synthesized mathematical snapshot and should normally be consumed whole, but it must not be treated as independent evidence when an important portfolio decision depends on a particular claim: trace that claim back to current findings. Atlas metrics are strategic telemetry derived by the Graph Curator; they never outrank their underlying findings, prior art, or review state.
 
 ## Current tree and Git change stream
 
@@ -132,13 +132,44 @@ Read current `research/graph/**`, line-local `graph/**`, and canonical prior-art
 
 Graph topology, proximity, node counts, or visual clusters are not evidence by themselves. Verify important relationships against Mind/findings/prior art before making a strategic conclusion.
 
-### 4. Read current clues as the research inbox
+### 4. Consume the Riemann Atlas as portfolio telemetry
+
+When `research/graph/atlas/**` exists, read at minimum the current atlas index and metrics projection, normally:
+
+```text
+research/graph/atlas/index.md
+research/graph/atlas/metrics.md
+```
+
+Inspect family/territory nodes only as needed to understand a material metric or denominator change. Consume the Graph-Curator-maintained vector when present, including:
+
+```text
+Atlas Coverage
+Hard Pruning
+Soft Pruning
+Live Frontier
+Reproduced
+Frontier Fertility
+Prior-art collision rate
+Internal duplicate rate
+Atlas Confidence
+```
+
+These are **derived strategic telemetry, not mathematical evidence and not independent validation**. They are useful because the Graph Curator computes them from a versioned, mass-conserving atlas rather than from finding counts, graph degree, or subjective line scores.
+
+Use the metric vector and its trend to challenge portfolio allocation. For example, rising coverage/pruning/collision with falling live frontier/frontier fertility may support a hypothesis that the current known atlas is saturating; a large healthy live frontier or sustained viable-extension rate may argue against premature pause/merge recommendations. A large unvisited territory by itself is not a reason to open a new line, and a high coverage number is not evidence of progress toward proving RH.
+
+Never let a dashboard value alone justify `continue`, `narrow`, `merge-candidate`, `pause-candidate`, `split-candidate`, or `new-line-candidate`. Trace any consequential recommendation to the canonical findings, prior-art collisions, obstructions, live questions, or review outcomes that make the metric strategically meaningful.
+
+Treat Atlas telemetry as current only when it belongs to the current atlas version and is internally consistent with the current graph-owned atlas projection. If it appears stale, inconsistent, or older than source changes that materially affect its territories, **do not recompute or repair it in the Master role**. Mark the telemetry as stale for the current reasoning pass, fall back to canonical evidence, and leave graph/atlas repair to the Graph Curator.
+
+### 5. Read current clues as the research inbox
 
 Inspect local and global clues to understand what has already been proposed, accepted, rejected, or resolved. Do not duplicate existing clues. A rejected clue is not necessarily a theorem-level negative result; inspect its disposition before using it as a strategic reason.
 
 An `origin: adversarial` clue may exceptionally carry a focused line-integrity warning produced after the adversary found and verified suspicious hallucination-like behavior or propagation of unsupported context. Treat such a clue as a **high-priority epistemic risk signal, not as proof**: trace its cited persisted artifacts and source mismatch, independently assess whether current portfolio conclusions depend on the suspect chain, and avoid strengthening strategy from that chain until the revalidation question is resolved. The Master may reflect only evidence-backed strategic consequences; it must not treat the warning itself as authority to mutate tasks or sessions.
 
-### 5. Use prior art as a saturation/novelty constraint
+### 6. Use prior art as a saturation/novelty constraint
 
 Use canonical `research/prior_art/**` and persisted novelty statements to understand when multiple lines repeatedly collapse into already-known mathematics.
 
@@ -283,7 +314,7 @@ Links to existing local/global clues where possible. Do not duplicate the clue b
 Only current merge/pause/split/new-line candidates with concise evidence-based rationale and the condition that would reverse the recommendation.
 ```
 
-Do not include dates, run chronology, token/task counts, agent performance metrics, schedules, issue status, confidence percentages, or a history of decisions.
+Do not include dates, run chronology, token/task counts, agent performance metrics, schedules, issue status, confidence percentages, or a history of decisions. Atlas metrics may influence the reasoning behind this snapshot, but do not turn `STATE.md` into a duplicated metrics dashboard; link or refer to the current graph-owned Atlas when the numeric context is materially useful.
 
 Do not preserve stale sections merely because they existed previously. If a proposal is no longer supported, remove it.
 
@@ -294,15 +325,16 @@ Always distinguish:
 - **established current evidence** — live findings or source-backed current Mind statements;
 - **open adversarial risk** — claim under unresolved review;
 - **synthesis** — supported relationship between current results;
+- **derived Atlas telemetry** — Graph-Curator-computed portfolio context, not mathematical evidence;
 - **strategic recommendation** — where research effort should go, not a mathematical truth;
 - **clue** — unvalidated research question;
 - **new-line candidate** — portfolio proposal, not an initialized research line.
 
-Do not use finding counts, commit counts, elapsed time, or graph degree as a proxy for fertility.
+Do not use finding counts, commit counts, elapsed time, or graph degree as a proxy for fertility. Reproducible Atlas metrics are allowed as **context for fertility/saturation reasoning**, but never as a replacement for the source-backed causal argument behind a recommendation.
 
 A line with few but decisive findings can dominate the program. A busy line that repeatedly re-encodes known identities may deserve narrowing or pausing.
 
-Avoid false precision. Prefer explicit causal reasoning such as "the remaining route depends on X, and X is now the only unresolved discriminator" over subjective numeric scores.
+Avoid false precision. Prefer explicit causal reasoning such as "the remaining route depends on X, and X is now the only unresolved discriminator" over subjective numeric scores. When citing an Atlas number, preserve its atlas version and derived/modelled status.
 
 ## Execution cycle
 
@@ -310,11 +342,11 @@ Avoid false precision. Prefer explicit causal reasoning such as "the remaining r
 
 Start from current default branch and inspect `A/M/D` research changes since the previous material Master commit.
 
-Prioritize withdrawals, accepted review outcomes, materially changed Mind synthesis, new findings, resolved/rejected clues, and graph/prior-art changes that alter line relationships.
+Prioritize withdrawals, accepted review outcomes, materially changed Mind synthesis, new findings, resolved/rejected clues, and graph/prior-art changes that alter line relationships or Atlas telemetry.
 
 ### 2. Reconstruct current program state
 
-Consume global Mind, local Minds, current line set, current clues, graph navigation, and only the canonical findings/prior-art needed to audit consequential claims.
+Consume global Mind, local Minds, current line set, current clues, graph navigation, the current Riemann Atlas/metrics when available, and only the canonical findings/prior-art needed to audit consequential claims.
 
 ### 3. Reconcile previous Master state
 
@@ -324,7 +356,7 @@ Remove stale conclusions, stale line recommendations, references to withdrawn fi
 
 ### 4. Perform cross-line and portfolio analysis
 
-Apply the patterns and recommendation criteria in this skill. Challenge every proposed merge/pause/new-line decision with the strongest contrary evidence before persisting it.
+Apply the patterns and recommendation criteria in this skill. Use current Atlas metrics to challenge the portfolio-level saturation/fertility picture, then trace every consequential recommendation back to canonical evidence. Challenge every proposed merge/pause/new-line decision with the strongest contrary evidence before persisting it.
 
 ### 5. Emit research clues
 
@@ -342,6 +374,8 @@ Before publication verify:
 - deleted findings are not cited as current support;
 - open reviews are represented as uncertainty, not verdicts;
 - graph topology was not mistaken for mathematical evidence;
+- Atlas metrics were treated only as current derived telemetry and any consequential recommendation was traced to canonical evidence;
+- stale/inconsistent Atlas telemetry was not independently repaired or relied upon by the Master;
 - no broad external literature research was performed;
 - no finding, review, mind, graph, prior-art, task, or research-line directory was modified;
 - every clue follows `mathia-research-clues`;
