@@ -15,3 +15,11 @@ The elementary set-theoretic factorization statements in AF-001 are derived dire
 - Andrzej Skowron and Cecylia Rauszer, **“The Discernibility Matrices and Functions in Information Systems,”** in *Intelligent Decision Support: Handbook of Applications and Advances of the Rough Sets Theory*, 331–362 (1992). DOI: `10.1007/978-94-015-7975-9_21`. Role: direct prior art for pairwise discernibility sets, discernibility functions, and reducts; the decision-relative form matches AF-002 after conditioning on the already-retained map `T`.
 
 AF-002 derives the conditional hitting-set statement directly from AF-001, but the finite fixed-library mechanism is classical rough-set reduct/discernibility mathematics. The source bridge is used to prevent a false novelty claim and to redirect future Arithmetic Fidelity work toward intrinsically constrained observable families and non-table-like settings.
+
+## AF-003 — Invariant-observable quotients and orbit-closure fidelity
+
+- David Mumford, John Fogarty, and Frances Kirwan, ***Geometric Invariant Theory***, 3rd ed., Ergebnisse der Mathematik und ihrer Grenzgebiete, vol. 34, Springer (1994), ISBN `978-3-540-56963-3`. Role: standard source for reductive-group invariant theory, affine categorical quotients, orbit separation by invariants, and the distinction between quotient points and arbitrary group orbits.
+- T. A. Springer, ***Invariant Theory***, Lecture Notes in Mathematics 585, Springer (1977). DOI: `10.1007/BFb0095644`. Role: classical invariant-ring background and finite-generation/separation context for algebraic group actions.
+- **“Invariants, theory of,”** *Encyclopedia of Mathematics*. Role: concise authoritative summary of the affine reductive quotient statement used here: the invariant ring defines a quotient whose fibers contain exactly one closed orbit, and invariant functions alone do not generally retain complete information about nonclosed orbits.
+
+AF-003 derives the maximal-observable joint-evaluation criterion and the `\mathbb G_m` weight-`(1,-1)` example directly. The orbit-closure description of the full invariant algebra is classical GIT; the Arithmetic Fidelity contribution is to use that quotient as a no-go test for every lift constrained to the same invariant-observable class.
