@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-mesoscopic-weil-boundary-topology
 type: research-clue
-status: proposed
+status: accepted
 origin: mind
 target_line: prime_lattice
 based_on:
@@ -48,3 +48,9 @@ A negative outcome would show that every canonical candidate either universalize
 ## Evidence boundary
 
 No mesoscopic topology with these properties is currently known or persisted. PL-044 and PL-050--PL-054 establish only the three endpoint behaviors summarized above. The existence of an intermediate zero-sensitive limit, a relative determinant, or a useful spectral-shift object is a research question, not evidence and not an intuition promoted by this clue.
+
+## Research disposition
+
+Accepted for active investigation, but narrowed by `PL-055`. Every fixed `L`-independent compact Sobolev sandwich suppresses the high-frequency recurrence and upgrades the `PL-051` PNT boundary limit to norm/Schatten convergence; in trace class its limiting Fredholm determinant is the elementary rank-two determinant of the universal PNT mode. The apparent smoothing threshold `s>1/2` is already the generic one-dimensional Schatten threshold of the delta-Hankel reflection channel, not zeta-critical rigidity.
+
+The unresolved question is therefore specifically whether the localized Weil construction forces an **`L`-dependent mesoscopic decompactification** — for example `R(L)->infinity`, a boundary-frequency cutoff tending to infinity, or a Sobolev smoothing that weakens with `L` — for which the PNT layer can be removed while a nontrivial rational-prime-specific residual converges and fails matched Beurling controls. Fixed smoothing, compact/Schatten counterterms, and raw threshold Fredholm flow are excluded by `PL-053`--`PL-055`; no such moving scale is currently established.
