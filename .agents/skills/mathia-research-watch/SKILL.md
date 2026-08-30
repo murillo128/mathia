@@ -108,9 +108,9 @@ Before substantive work:
 5. inventory filenames under `research/<line>/findings/`, distinguishing canonical findings from adjacent `*.review.md` sidecars;
 6. inspect every open sidecar whose last substantive speaker is `Adversary`; these form the owner's review inbox;
 7. inspect `research/<line>/clues/**` when present, using `mathia-research-clues` for their semantics;
-8. read `research/<line>/SOURCES.md` and `LEAN_CANDIDATES.md` when relevant;
+8. read `research/<line>/SOURCES.md` when relevant;
 9. use `research/<line>/graph/index.md` when present only as derived navigation, never as mathematical evidence;
-10. read only the individual findings and dependencies needed for the live review, candidate, clue, or duplication question.
+10. read only the individual findings and dependencies needed for the live review, candidate, clue, duplication, or formalization-routing question.
 
 Other Mathia research lines and `mind/` may be read as context or evidence, but are read-only for this role. A cross-line mathematical claim must be traced to canonical findings or authoritative sources; a relationship stated in one line's README does not by itself establish evidence in another line. Treat every `graph/` subtree as regenerable derived state and verify substantive claims against canonical findings or sources.
 
@@ -215,7 +215,7 @@ The issue is a **delegation boundary**, not a new research artifact. After publi
 
 A later compute result may re-enter only as a `status: proposed` clue produced under `mathia-compute-executor`; the Research Watch then triages that clue normally and independently.
 
-If the machine task is really a request for more open-ended mathematical reasoning, keep it here instead of delegating it as compute. If the desired durable output is a reusable Lean theorem/proof, route to `mathia-formalization-design` rather than the lightweight compute path.
+If the machine task is really a request for more open-ended mathematical reasoning, keep it here instead of delegating it as compute. If the desired durable output is a reusable Lean theorem/proof, use the formalization-routing gate below rather than the lightweight compute path.
 
 ### 3. Stress-test adversarially before publishing
 
@@ -266,6 +266,28 @@ Use the line's established vocabulary when it is more specific. Common evidence 
 
 Labels may be combined when needed, but exactness, provenance, novelty, and remaining uncertainty must be unambiguous. Never silently upgrade evidence.
 
+### 6. Route mature Lean targets directly to Mathia issues
+
+After canonical mathematics is stable enough to survive the ordinary stress-test, prior-art, classification, and review rules above, inspect materially new or changed findings for a bounded formal core worth machine-checking. Older unformalized backlog may be sampled only after current review/new-change work and only as capacity permits.
+
+A potential Lean target must be a current canonical finding or a precise exact subclaim of one. Do not route a target while its claim is withdrawn, superseded, under an unresolved `.review.md`, or too under-specified to translate faithfully. Formalization is most valuable when it can falsify a delicate exact identity, certify a reusable finite core, expose hidden hypotheses/sign/indexing mistakes, or establish a dependency repeatedly used by later work. Ease of encoding alone is not sufficient, and formalizability never upgrades evidence.
+
+When a target appears to pass that threshold, load:
+
+```text
+.agents/skills/mathia-formalization-design/SKILL.md
+```
+
+and follow its candidate-intake and deduplication gate. In particular:
+
+1. search open and closed Mathia issues for the finding ID, finding path, and materially equivalent theorem boundary;
+2. inspect existing Mathia Lean/formalization artifacts for equivalent or stronger coverage;
+3. if an issue or formal artifact already covers the target, do not create another;
+4. if the target passes the formalization-design admission gate, create exactly one Mathia formalization issue through that skill and its `design-github-issue` authority;
+5. do not create `LEAN_CANDIDATES.md`, another candidate registry, TODO file, status ledger, or mirrored queue under `research/`.
+
+The GitHub issue is the control plane for pending formalization work. Issue creation is not mathematical evidence, does not change the finding's evidence status, and by itself does not justify a research commit or notification. Continue ordinary research after the handoff; do not execute, poll, or wait for the formalization from this Research Watch.
+
 ## Substantive-finding gate
 
 Persist a research update only when at least one of these happened materially:
@@ -287,7 +309,7 @@ The following are not sufficient by themselves:
 - renaming/repackaging known zeta or prime identities;
 - recording what was attempted today;
 - acknowledging an adversarial review without materially answering or persisting it;
-- creating a computational delegation issue without a mathematical result;
+- creating a computational delegation issue or formalization issue without a mathematical result;
 - updating a timestamp, status diary, TODO, or next-step log.
 
 If nothing passes the gate, create no repository churn.
@@ -308,7 +330,9 @@ SOURCES.md
 findings/
 ```
 
-`LEAN_CANDIDATES.md` is an optional finite formalization queue. `clues/` is an optional research-direction inbox governed by `mathia-research-clues`.
+`clues/` is an optional research-direction inbox governed by `mathia-research-clues`.
+
+Lean formalization candidates are **not** stored in the research tree. Their pending-work control plane is the Mathia issue created under `mathia-formalization-design`; completed formalization evidence lives in the Mathia-local formalization/code paths chosen by that issue.
 
 Computational delegation does **not** add a repository queue or compute-artifact directory. Its control plane is the GitHub issue created under `mathia-compute-design`; its only possible return to the research tree is a later proposed clue.
 
@@ -377,10 +401,6 @@ Their lifecycle, turn-taking, persistence handshake, deletion semantics, and not
 
 Maintain literature anchors used to support or falsify stored findings. Record stable bibliographic information and briefly what theorem/role each source provides. Do not turn it into search history.
 
-### `LEAN_CANDIDATES.md`
-
-When present, keep only high-value finite statements with a natural formal core. Separate local formalizable lemmas from external analytic/spectral theorems that remain assumptions. Formalizability does not upgrade evidence.
-
 ## Clue consumer and producer behavior
 
 When `research/<line>/clues/**` exists, use `mathia-research-clues` as the authority for triage and lifecycle.
@@ -397,7 +417,6 @@ For a Research Watch on `research/<line>/`, writable evidence is limited to:
 
 ```text
 research/<line>/SOURCES.md
-research/<line>/LEAN_CANDIDATES.md   # only when applicable
 research/<line>/findings/**
 ```
 
@@ -409,7 +428,7 @@ An in-place modification of a target with an open review is allowed **only** in 
 
 When `mathia-research-clues` is loaded, its clue-path extension also applies.
 
-Creation of a compute GitHub issue under `mathia-compute-design` is a control-plane delegation operation, not a repository path write. It grants no additional repository write ownership to Research Watch.
+Creation of a compute GitHub issue under `mathia-compute-design` is a control-plane delegation operation, not a repository path write. Creation of a Lean formalization GitHub issue under `mathia-formalization-design` is likewise a control-plane delegation operation. Neither grants additional repository write ownership to Research Watch.
 
 Do **not** write to:
 
@@ -435,7 +454,7 @@ Before every commit:
 5. for review changes, verify `mathia-research-review` turn ownership and persistence stage;
 6. if updating a reviewed target in place, verify the adversary explicitly accepted the mathematics pending persistence and the claim identity remains the same;
 7. if claim identity changes, verify target+sidecar withdrawal and a new non-recycled ID rather than `.v2`;
-8. verify `SOURCES.md` or `LEAN_CANDIDATES.md` agree with current canonical findings when changed;
+8. verify `SOURCES.md` agrees with current canonical findings when changed;
 9. remove unrelated formatting churn.
 
 Research-watch commits use:
@@ -467,7 +486,7 @@ Notify only for:
 3. **Clue acceptance:** a clue changes to `status: accepted`.
 4. **Owner-side adversarial review events:** every material owner-authored transition defined by `mathia-research-review`, including substantive `Owner` responses, persistence of accepted new mathematics into a finding, concessions, corrections, replacements, independent findings arising from review, and withdrawals.
 
-Do **not** notify for ordinary positive findings, routine negatives/dead ends, ordinary prior-art redirects, routine commits, source additions, compute-issue creation, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
+Do **not** notify for ordinary positive findings, routine negatives/dead ends, ordinary prior-art redirects, routine commits, source additions, compute-issue creation, formalization-issue creation, clue proposal/rejection/resolution, unchanged searches, or unchanged runs.
 
 Do not notify merely because this watch observes an adversary-side review event. The authoring adversarial process owns those notifications, preventing duplicates.
 
