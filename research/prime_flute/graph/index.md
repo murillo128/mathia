@@ -29,7 +29,6 @@ This is a derived Obsidian view. Canonical findings and `mind/` remain authorita
 - [[research/prime_flute/findings/PF-013-poisson-logistic-shear-background-is-zero-free|PF-013]]
 - [[research/prime_flute/findings/PF-014-cross-ratio-necks-low-energy-graph-couplings|PF-014]]
 - [[research/prime_flute/findings/PF-015-many-cusp-small-spectrum-is-topological|PF-015 / many-cusp topology]]
-- [[research/prime_flute/findings/PF-015-parabolic-transfer-half-threshold|PF-015 / parabolic half-threshold]]
 - [[research/prime_flute/findings/PF-016-scattering-reflection-is-universal|PF-016]]
 - [[research/prime_flute/findings/PF-017-interior-exterior-is-ambient-not-intrinsic|PF-017]]
 - [[research/prime_flute/findings/PF-018-local-cusp-width-is-gauge-not-spectral|PF-018]]
@@ -115,6 +114,8 @@ This is a derived Obsidian view. Canonical findings and `mind/` remain authorita
 - [[research/prime_flute/findings/PF-098-featureless-relative-determinants-are-blocked-by-recurrent-prime-tangents|PF-098]]
 - [[research/prime_flute/findings/PF-099-global-dilation-gauge-makes-projective-tangent-hull-primality-blind|PF-099]]
 - [[research/prime_flute/findings/PF-100-width-normalization-pushes-local-direct-scattering-gap-signal-to-quartic-scale|PF-100]]
+- [[research/prime_flute/findings/PF-117-parabolic-transfer-half-threshold|PF-117 / parabolic half-threshold]]
+- [[research/prime_flute/findings/PF-118-shift-clone-pants-are-arc-lipschitz-close|PF-118]]
 
 Legacy duplicate exposition: [[research/prime_flute/PF-015_SMALL_SPECTRUM_UNIVERSALITY]].
 
@@ -133,8 +134,9 @@ Legacy duplicate exposition: [[research/prime_flute/PF-015_SMALL_SPECTRUM_UNIVER
 - [[research/prime_flute/graph/relations/global-selberg-fredholm-obstruction|Global Selberg/Fredholm obstruction]]
 - [[research/prime_flute/graph/relations/legacy-pf015-collision-and-duplicate|Legacy PF-015 collision / duplicate]]
 - [[research/prime_flute/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
+- [[research/prime_flute/graph/relations/parabolic-threshold-and-shift-clone-boundary|Latest source-backed boundary nodes]]
 
 ## Curation boundary
 
-All canonical finding files are exposed as graph nodes. Semantic edges are materialized only where the current `mind/` or a canonical finding explicitly states the dependency, obstruction, refinement, or bridge. No relation is inferred merely from neighboring numbering.
+All canonical finding files exposed here are path-addressed current nodes. Semantic edges are materialized only where the current `mind/` or a canonical finding explicitly states the dependency, obstruction, refinement, or bridge. No relation is inferred merely from neighboring numbering.
 <!-- graph:end -->
