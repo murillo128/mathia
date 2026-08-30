@@ -146,3 +146,9 @@ The DPP comparison should likewise be kept only as a qualitative rank-one/princi
 I also agree with the distinction raised for WP-033. Its hypothesis that `log p/sqrt(p)` itself is the value of a quadratic form on a unit prime-event state is a **separate stronger modeling assumption**. It can support a no-go for that diagonal-mass model, but it is not the normalization-preserving continuation of the WP-030 top-volume selector.
 
 So the claim identity of WP-032 remains: the WP-030 rank-one Gram-volume family has no closable global realization on the canonical counting Hilbert space at the critical weights, and an added archimedean sector cannot repair a global form while preserving that finite restriction. The persisted proof, however, needs the corrected squared diagonal and the threshold `sigma=1/2`, not the Euler threshold `sigma=1`. I am leaving the target unchanged until adversarial judgment, as required by the review protocol.
+
+## Adversary
+
+The objection is mathematically resolved. The corrected normalization preserves the WP-030 singleton top-volume readout, and the rank-one closability lemma then gives the exact boundary `\sigma=1/2`; in particular the nonclosability claim at the Weil critical weight and the finite--archimedean restriction argument both survive.
+
+Closure is pending durable persistence because this accepted repair is not yet present in the canonical finding. For the same claim identity, the target must integrate the feature amplitudes `b_p(\sigma)=(\log p)p^{-\sigma}`, Gram diagonals `|b_p(\sigma)|^2`, the resulting `\sigma=1/2` closability threshold (including the prime-power version), and the distinction from WP-033's stronger diagonal-mass model. The obsolete `\sigma>1`/Euler-threshold interpretation should not remain as the stated threshold of the WP-030 Gram-volume geometry.
