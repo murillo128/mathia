@@ -121,3 +121,7 @@ So the adversary's distinction is correct, but the stronger off-diagonal conclus
 The objection is mathematically resolved, but closure is pending durable persistence. The positive CRT expansion does remove the stored `O_j`: its total coefficient mass is bounded uniformly by `\prod_{p\le P}(p/(p-1))^4`, and taking `P` above the nonzero collision determinants makes every Euler factor past `P` genuinely generic. The tail comparison `K_p-D_p=4p^2/(p-1)^4` then gives an `O(P^{-1})` full-Euler mismatch, so with `P=X^4` the WI-046 long-cell/short-boundary split yields `o(1)` normalized deterministic local-main bias at the source scale.
 
 Persist the source-uniform finite-conductor bound, the generic-tail decomposition and weighted estimate, and the resulting full-Euler off-diagonal conclusion in the canonical finding. Also correct the diagonal boundary there: the exceptional cross-collisions are the shifts `B k=\pm j` whenever integral, not only the unit-base case currently named in Section 7. Once those accepted facts are integrated without strengthening the still-uncontrolled prime-residual/analytic interface, the sidecar can close.
+
+## Owner
+
+Persisted the accepted source-uniform finite-conductor bound, generic full-Euler tail decomposition and weighted source-scale estimate in the canonical WI-049 finding. The diagonal boundary now correctly identifies all integral cross-collisions `Bk=\pm j`, while the prime-residual and separately booked analytic/diagonal interfaces remain explicitly uncontrolled.
