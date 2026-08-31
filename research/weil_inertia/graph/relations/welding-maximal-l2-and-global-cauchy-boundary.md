@@ -6,31 +6,16 @@ relation: welding-maximal-l2-and-global-cauchy-boundary
 derived: true
 ---
 
-# Welding boundary: exact centering versus the coupled analytic remainder
+# Welding boundary: local main removed, coefficient localization remains
 
-[[research/weil_inertia/findings/WI-041-mrt-endpoint-stability-gives-maximal-interval-l2|WI-041]] removes moving interval endpoints as the main obstruction by deriving maximal-interval MRT `L^2` control. [[research/weil_inertia/findings/WI-042-public-band-ledger-is-the-forbidden-family-cauchy-route|WI-042]] then shows that the public executable ledger applies the across-family/global Cauchy step that the printed argument explicitly excludes.
+[[research/weil_inertia/findings/WI-041-mrt-endpoint-stability-gives-maximal-interval-l2|WI-041]]--[[research/weil_inertia/findings/WI-047-level-of-distribution-leaves-welding-sublattice-mass|WI-047]] separate moving-endpoint control, the invalid public across-family Cauchy consumer, exact local centering, and the failure of a cheap fixed-level AP repair.
 
-The later audit separates a false intermediate obstruction from the actual remaining theorem gate:
+The current source delta removes further deterministic and low-coefficient explanations of the gap:
 
-- [[research/weil_inertia/findings/WI-043-maximal-pair-discrepancy-does-not-control-locked-four-point-covariance|WI-043]] proves that marginal maximal pair-discrepancy control alone cannot bound the isolated locked four-point covariance.
-- [[research/weil_inertia/findings/WI-044-isolated-locked-covariance-can-cancel-under-exact-cell-centering|WI-044]] corrects the consequence: a large isolated covariance can cancel exactly in the fully centered `S1-2S2+S3` cell dispersion.
-- [[research/weil_inertia/findings/WI-045-local-singular-series-collision-identity-centers-welding-main|WI-045]] proves the local singular-series collision identity that supplies this centering on the dominant coprime family.
-- [[research/weil_inertia/findings/WI-046-truncated-local-main-has-uniform-interval-discrepancy|WI-046]] shows that truncated deterministic local mains retain uniform interval discrepancy under nonuniform bounded-variation weights.
-- [[research/weil_inertia/findings/WI-047-level-of-distribution-leaves-welding-sublattice-mass|WI-047]] rules out the cheap large-index-sublattice repair based only on any fixed level-of-distribution theorem below one.
+- [[research/weil_inertia/findings/WI-048-full-local-welding-main-has-subpolynomial-prefix-discrepancy|WI-048]] upgrades the truncated singular-series analysis to the full Euler product with subpolynomial prefix discrepancy, so finite local cutoff is not the obstruction.
+- [[research/weil_inertia/findings/WI-049-locked-four-prime-local-main-centers-cellwise|WI-049]] proves that the genuine four-prime local main centers cellwise before marginal MRT; a leading locked covariance must survive after that local main is removed or come from separately booked collision/analytic terms.
+- [[research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz|WI-050]] shows every fixed polylogarithmic coefficient regime is an unconditional finite-complexity three-variable linear-forms problem and has the expected four-prime asymptotic.
+- [[research/weil_inertia/findings/WI-051-complexity-one-fourier-control-does-not-remove-coefficient-wall|WI-051]] identifies the remaining difficulty as localization/modulus aliasing rather than higher Gowers complexity: globally the four-form system has Cauchy--Schwarz complexity one, but natural local scales expose large-index quotient modes.
+- [[research/weil_inertia/findings/WI-052-barban-davenport-halberstam-suppresses-pure-quotient-prime-modes|WI-052]] then suppresses the pure residue-class quotient component of the actual centered von Mangoldt weight on average across the dominant prime moduli, ruling out the generic bounded-function witness as a faithful prime model on power-separated interior regions.
 
-The supported boundary is:
-
-```text
-endpoint motion
-    -> controlled by maximal MRT L2
-public global-cell square
-    -> wrong consumer
-isolated locked covariance
-    -> not controlled marginally, but can cancel after exact centering
-local singular-series / deterministic weighting
-    -> centered and quantitatively controlled
-fixed generic AP level of distribution
-    -> leaves positive dominant mass uncovered
-```
-
-The Yang--Yang candidate is not refuted. The surviving source-backed gate is a theorem for the actual coupled, locally centered four-prime welding weight with its moving windows, anisotropic coefficients, and required remainder scale.
+The Yang--Yang candidate remains neither certified nor refuted. The surviving source-backed gate is now narrower: nonzero aliasing/shift-frequency fibers at super-polylogarithmic coefficients, short-shift boundary concentration, or the separately booked collision/analytic interface after the genuine local main has already been removed.

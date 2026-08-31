@@ -6,25 +6,18 @@ relation: localized-weil-prime-boundary-obstruction
 derived: true
 ---
 
-# Localized Weil prime operator: topology-sensitive boundary obstruction
+# Localized Weil boundary: topology and mesoscopic-frequency obstruction
 
-[[research/prime_lattice/findings/PL-049-weil-prime-shift-norm-exponential-obstruction|PL-049]] proves that the localized non-archimedean Weil prime operator retains exponential operator-norm scale. [[research/prime_lattice/findings/PL-050-rescaled-weil-prime-boundary-escape|PL-050]] then shows that natural fixed-window rescaling has zero bulk strong limit while order-one spectral edges escape into shrinking endpoint layers.
+[[research/prime_lattice/findings/PL-049-weil-prime-shift-norm-exponential-obstruction|PL-049]]--[[research/prime_lattice/findings/PL-055-fixed-sobolev-weil-boundary-smoothing|PL-055]] establish the basic topology split: natural bulk rescaling converges strongly to zero, fixed-depth blow-up has a universal PNT rank-one strong limit, prime-log recurrence remains order one in norm/Calkin topology, and fixed compact smoothing erases it.
 
-The boundary blow-up sequence makes the topology split explicit:
+The newer chain sharply narrows the previously open mesoscopic escapes:
 
-- [[research/prime_lattice/findings/PL-051-weil-boundary-rank-one-pnt-model|PL-051]] gives a universal rank-one PNT Hankel model as the fixed-depth strong boundary limit.
-- [[research/prime_lattice/findings/PL-052-weil-boundary-kronecker-norm-gap|PL-052]] shows that prime-log recurrence prevents operator-norm convergence to that universal model.
-- [[research/prime_lattice/findings/PL-053-weil-boundary-essential-norm-obstruction|PL-053]] strengthens the obstruction to the Calkin quotient: compact counterterms cannot remove the residual.
-- [[research/prime_lattice/findings/PL-054-weil-threshold-delta-hankel-essential-channel|PL-054]] shows that individual prime-power thresholds enter as infinite-multiplicity essential delta-Hankel channels rather than discrete eigenvalue births.
-- [[research/prime_lattice/findings/PL-055-fixed-sobolev-weil-boundary-smoothing|PL-055]] closes the simplest smoothing escape: every fixed compact Sobolev smoothing removes the high-frequency recurrence and upgrades the same universal PNT boundary model to norm, and in the stated range Schatten, convergence.
+- [[research/prime_lattice/findings/PL-056-critical-sobolev-endpoint-det2-weak-trace|PL-056]] shows the critical fixed Sobolev endpoint has only a universal `det_2` limit and geometric weak-trace residue.
+- [[research/prime_lattice/findings/PL-057-growing-depth-boundary-tightness|PL-057]] proves that arbitrary growing boundary depth preserves the same strong/Calkin split, and [[research/prime_lattice/findings/PL-058-spatial-tail-recentering-exact-self-similarity|PL-058]] shows canonical inward recentering is exactly a smaller copy of the original window.
+- [[research/prime_lattice/findings/PL-059-weil-pole-pnt-boundary-cancellation|PL-059]] identifies the completed zeta pole as the canonical counterterm cancelling the universal PNT boundary mode strongly, while the essential prime-log residual survives.
+- [[research/prime_lattice/findings/PL-060-pnt-resolution-moving-smoothing|PL-060]] and [[research/prime_lattice/findings/PL-061-full-weil-pnt-band-archimedean-separation|PL-061]] show that growing low-frequency bands below PNT resolution collapse in norm even for the full completed Weil form; the archimedean term cannot balance that regime.
+- [[research/prime_lattice/findings/PL-062-vinogradov-korobov-weil-band-collapse|PL-062]] makes the band collapse unconditional from Vinogradov--Korobov PNT decay.
+- [[research/prime_lattice/findings/PL-063-zero-free-sampling-weil-band-collapse|PL-063]] strengthens it by sampling the completed explicit formula directly: every band with `log N (log log N)^2=o(L^(3/2))` collapses, including `N=exp(L^alpha)` for every `alpha<3/2`.
+- [[research/prime_lattice/findings/PL-064-zero-free-moving-sobolev-collapse|PL-064]] gives the corresponding moving-Sobolev barrier, and [[research/prime_lattice/findings/PL-065-zero-free-prime-log-recurrence-delay|PL-065]] proves coherent prime-log recurrence cannot occur below the same zero-free sampling scale, although arbitrarily late recurrence remains.
 
-The source-backed boundary is therefore:
-
-```text
-bulk strong topology       -> arithmetic escapes / limit is zero
-fixed-depth strong blow-up -> universal PNT rank-one model
-norm and Calkin topology   -> prime-log recurrence survives essentially
-fixed compact smoothing    -> recurrence is erased and the universal model returns
-```
-
-This closes neither the full localized Weil operator nor an `L`-dependent mesoscopic/relative topology derived independently of the zeros. The current synthesis identifies precisely that intermediate topology as the surviving route.
+The surviving source-backed boundary is now an ultra-high-frequency or otherwise non-band topology beyond these quantitative collapse regimes. These results use PNT/zero-free estimates as instruments inside the Weil-boundary problem; they do not constitute a primary zero-free-region attack on RH.

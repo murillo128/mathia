@@ -9,19 +9,16 @@ derived: true
 
 # Prime Lattice research graph
 
-This is a derived Obsidian view. Canonical finding files under `findings/` remain authoritative.
+This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritative; this file is not a finding ledger.
 
-<!-- graph:start -->
-## Findings
+## Durable synthesis
 
-- [[research/prime_lattice/findings/PL-001-bohr-hardy-half-boundary|PL-001]]
-- [[research/prime_lattice/findings/PL-002-standard-h2-kernel-zero-obstruction|PL-002]]
-- [[research/prime_lattice/findings/PL-003-ambient-prime-torus-zero-flexibility|PL-003]]
-- [[research/prime_lattice/findings/PL-004-prime-exponent-gas-prior-art|PL-004]]
-- [[research/prime_lattice/findings/PL-005-bagchi-prime-flow-recurrence-rh|PL-005]]
-- [[research/prime_lattice/findings/PL-006-random-bohr-boundary-gmc|PL-006]]
-- [[research/prime_lattice/findings/PL-007-canonical-prime-flow-schatten-ladder|PL-007]]
-- [[research/prime_lattice/findings/PL-008-mobius-hardy-zero-free-bridge|PL-008]]
+- [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding|MI-001 — exponent lattice is scaffolding]]
+- [[research/prime_lattice/mind/intuition/MI-002-critical-line-is-boundary-not-selector|MI-002 — critical line is boundary, not selector]]
+- [[research/prime_lattice/mind/intuition/MI-003-nyman-obstruction-is-target-data|MI-003 — Nyman obstruction is target data]]
+- [[research/prime_lattice/mind/intuition/MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle|MI-004 — prime-shift symmetry is not a zero Hamiltonian principle]]
+- [[research/prime_lattice/mind/intuition/MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary|MI-005 — localized Weil arithmetic lies between bulk and essential boundary]]
+- [[research/prime_lattice/mind/RESEARCH_LINES|Prime Lattice research lines]]
 
 ## Derived relation nodes
 
@@ -29,8 +26,8 @@ This is a derived Obsidian view. Canonical finding files under `findings/` remai
 - [[research/prime_lattice/graph/relations/ambient-bohr-structure-is-insufficient|Ambient Bohr structure is insufficient]]
 - [[research/prime_lattice/graph/relations/classical-prime-flow-bridge|Classical prime-flow RH bridge]]
 - [[research/prime_lattice/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
+- [[research/prime_lattice/graph/relations/localized-weil-prime-boundary-obstruction|Localized Weil boundary and mesoscopic-frequency obstruction]]
 
 ## Curation boundary
 
-Prime Lattice currently has no persisted `mind/` synthesis. None is invented here; the relation nodes are direct syntheses of statements already made by the canonical `PL-*` findings.
-<!-- graph:end -->
+Source findings remain direct graph nodes through their repository paths. Semantic relations are materialized only where current findings or durable synthesis explicitly support the dependency, obstruction, refinement, or bridge.

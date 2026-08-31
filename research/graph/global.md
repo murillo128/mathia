@@ -12,6 +12,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Materialized line hubs
 
+- [[research/arithmetic_fidelity/graph/index|Arithmetic Fidelity]]
 - [[research/prime_circle/graph/index|Prime Circle]]
 - [[research/prime_flute/graph/index|Prime Flute]]
 - [[research/prime_lattice/graph/index|Prime Lattice]]
@@ -44,5 +45,5 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Current integration boundary
 
-The current global `mind/` synthesis integrates evidence from all five current source-backed research lines. Riemann Atlas v1 is derived directly from the current source tree plus the calibrated prior-art projection; graph-node counts are not used as its denominator.
+Six source-backed research lines are currently discoverable. The persisted global `mind/` synthesis still integrates the five RH-facing lines; the newer Arithmetic Fidelity line is represented here as a transversal source-backed hub but has not been silently folded into the global mind. Riemann Atlas v1 remains an RH approach-space denominator and is not expanded merely because a transversal methodology line was added.
 <!-- graph:end -->

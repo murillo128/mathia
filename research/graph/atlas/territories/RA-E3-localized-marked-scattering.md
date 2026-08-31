@@ -11,18 +11,23 @@ derived: true
 
 # E3 — Localized marked scattering / inverse data
 
-Marked local spectral/scattering observables can retain ordered multi-gap information even when global scalar compression loses it. The current prime/shift-clone control program also tests whether those local signals survive a strong matched geometric comparison at the operator level.
+Marked local spectral/scattering observables can retain ordered multi-gap information even when global scalar compression loses it. The current prime/shift-clone control program tests which of those signals survive a strong matched geometric comparison.
 
 ## Evidence
 
-- [[research/prime_flute/mind/RESEARCH_LINES|Prime-flute synthesis]]
 - [[research/prime_flute/findings/PF-067-generalized-cusp-scattering-already-solves-the-full-inverse-tangent-problem|PF-067]]
 - [[research/prime_flute/findings/PF-118-shift-clone-pants-are-arc-lipschitz-close|PF-118]]
-- [[research/prime_flute/findings/PF-119-canonical-cusp-split-gluing-offset-has-summable-shift-clone-defect|PF-119]]
-- [[research/prime_flute/findings/PF-120-cusp-busemann-shifts-must-synchronize|PF-120]]
-- [[research/prime_flute/findings/PF-121-ideal-lambert-shift-comparison-is-asymptotically-bilipschitz|PF-121]]
-- [[research/prior_art/graph/index|Prior-art graph]]
+- [[research/prime_flute/findings/PF-122-canonical-cusp-strip-gluing-cost-is-summable|PF-122]]
+- [[research/prime_flute/findings/PF-123-asymptotic-metric-equivalence-forces-compact-relative-resolvent|PF-123]]
+- [[research/prime_flute/findings/PF-124-lambert-cuff-trace-is-zero-twist-coherent|PF-124]]
+- [[research/prime_flute/findings/PF-125-shift-clone-has-compact-relative-resolvent|PF-125]]
+- [[research/prime_flute/findings/PF-126-shift-clone-metric-defect-is-Lp-above-one|PF-126]]
+- [[research/prime_flute/findings/PF-127-collapsing-canonical-collar-is-schatten-benign-above-trace-endpoint|PF-127]]
+- [[research/prime_flute/findings/PF-128-full-collar-wave-weight-is-collapse-benign|PF-128]]
+- [[research/prime_flute/findings/PF-129-cusp-synchronization-has-summable-wave-weight|PF-129]]
+- [[research/prime_flute/findings/PF-130-lambert-shift-metric-defect-is-strong-L1-summable|PF-130]]
+- [[research/prime_flute/mind/RESEARCH_LINES|Prime-flute synthesis]]
 
-PF-118--PF-121 remove several **local geometric** obstructions to a strong prime/shift-clone comparison: matched pants are arc-Lipschitz close, the canonical gluing-offset defect is summable, cusp Busemann shifts can be synchronized, and the isolated ideal-Lambert pieces are asymptotically bilipschitz. None of these findings proves a global glued homeomorphism or a relative operator/scattering theorem.
+PF-125 closes the shift-clone comparison at the essential-spectrum level: an explicit global marked homeomorphism gives compact relative resolvent and equality of essential Laplace spectra. PF-126--PF-130 then show that the coefficient defect is `L^r` for every `r>1`, collapsing collars are locally Schatten-benign above the trace endpoint, cusp synchronization has summable wave weight, and Lambert-body defects are strongly `L^1`-summable.
 
-The territory therefore remains open. The source-backed frontier is to embed marked finite-tangent information canonically into the infinite-flute spectral representation while simultaneously testing whether it survives the strongest globally coherent composite-clone comparison.
+The territory remains open because compact relative resolvent does not imply equality of marked scattering, discrete spectrum, resonances, or stronger relative ideals. The surviving source-backed question is whether the remaining interfaces/nonlocal assembly still distinguish the prime flute from the explicit all-composite control in those stronger categories.

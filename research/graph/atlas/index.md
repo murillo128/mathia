@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 29273aad7b6a73c79cf41f0e9dd2f4e0503800d1
+source_revision: 6baea0d026985c90fcf1446bfa33215af994e2d1
 derived: true
 ---
 
@@ -26,9 +26,9 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 **Reading:** Mathia has traversed a large fraction of Atlas v1, but the program is **not close to saturation**: about 60.1% of the already-visited mass remains active/open, while only 20.4% of visited mass is pruned.
 
-The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
+The current source delta materially narrows several already-mapped frontiers without changing the v1 denominator or any leaf state: Prime Flute now reaches compact relative resolvent against its explicit all-composite control; Prime Lattice pushes its completed-Weil collapse barrier to zero-free sampling scales; Weil Inertia removes the full deterministic four-prime local main and the polylog coefficient regime; Prime Circle closes finite algebraic Hardy-shell essential interference; and Weil Positivity carries its category-changing audit through Prym integral data to a torsion-positivity obstruction. The new Arithmetic Fidelity line is transversal methodology and is therefore not counted as a new RH atlas territory.
 
-The current curator delta through the pinned source revision materially sharpens already mapped territories: Prime Circle closes several regular solenoid-scale constructions, Prime Flute removes multiple local shift-clone comparison gates, Prime Lattice isolates a topology-sensitive Weil-boundary frontier, Weil Inertia narrows the welding problem to its genuinely coupled centered remainder, and Weil Positivity separates finite selector recovery from the required positive pairing. None of these changes justifies a v1 territory-state or mass change, so the dashboard remains unchanged.
+The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
 
 ## Families
 
