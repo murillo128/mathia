@@ -97,7 +97,16 @@ Then:
 
 4. **Any surviving pointwise-rigidity claim must be singular.** If a center `c` were locally the unique source point with test vector `\Psi(c)`, then `J` cannot have locally constant rank there. In particular it cannot have full row rank. For `N>d`, special-point identifiability can occur only on a rank-stratification singularity where the Jacobian rank rises arbitrarily close to `c`.
 
-5. **Regularity is generic in the unconstrained smooth test class.** For fixed distinct center coordinates `c_j`, the matrix entries `G_i'(c_j)` can be perturbed independently by arbitrarily small compactly supported smooth perturbations of the tests near the `c_j`. Full-row-rank matrices are open dense in `\mathbb R^{d\times N}`. Hence the full-row-rank condition is open and locally jet-generic among unconstrained finite smooth test families.
+5. **Regularity is generic in the unconstrained smooth test class at visible nonresonant centers.** Assume
+   \[
+   0<c_j<A
+   \qquad(1\le j\le N)
+   \]
+   and
+   \[
+   c_j\ne m c_k
+   \]
+   for every `j\ne k` and every integer `m\ge1` with `m c_k<A`. Then the matrix entries `G_i'(c_j)` can be perturbed independently by arbitrarily small compactly supported smooth perturbations of the tests near the `c_j`. Full-row-rank matrices are open dense in `\mathbb R^{d\times N}`. Hence the full-row-rank condition is open and locally jet-generic among unconstrained finite smooth test families at every such center. For a rational-prime center the nonresonance condition is automatic once the selected primes satisfy `\log p_j<A`.
 
 6. The genericity statement is **category-dependent**. Positivity cones, Fourier-support constraints, evenness, Paley--Wiener conditions, transform relations, or another intrinsic admissibility restriction may forbid the independent local test perturbations used above. In such a constrained class, pointwise rational-prime rigidity is not ruled out merely by ambient genericity; the rank and singular-locus audit must be repeated inside the actual admissible family.
 
@@ -291,39 +300,64 @@ A proof route cannot appeal merely to the precision or nonlinear nature of its f
 
 ## Local jet genericity of the regular case
 
-The singular escape is not generic in the ambient smooth test space.
+The singular escape is not generic in the ambient smooth test space, but the local bump argument requires the center to be both visible to the tests and nonresonant with the other selected generator multiples.
 
-Fix distinct center coordinates `c_1,\ldots,c_N`. For a perturbation `\varphi_i` of the `i`-th test, the induced first-order change in the Jacobian entry is
-
-\[
-\Delta J_{ij}
-=
-\frac{d}{dt}
-\left[
-\sum_{m\ge1}t e^{-mt/2}\varphi_i(mt)
-\right]_{t=c_j}.
-\]
-
-It suffices to use perturbations supported so close to `c_j` that they do not meet any other points `m c_k` appearing in the finite jet calculation. In particular, in the upper-half chamber this reduces to
+Assume
 
 \[
-\Delta J_{ij}
-=e^{-c_j/2}
-\left[
-\left(1-\frac{c_j}{2}\right)\varphi_i(c_j)
-+c_j\varphi_i'(c_j)
-\right].
+0<c_j<A
+\qquad(1\le j\le N)
 \]
 
-Choose a compactly supported bump with
+and
 
 \[
-\varphi_i(c_j)=0
+c_j\ne m c_k
 \]
 
-and independently prescribed derivative `\varphi_i'(c_j)`. Since `c_j e^{-c_j/2}\ne0`, each matrix entry can be perturbed independently. Using disjoint bumps around the finitely many selected points realizes an arbitrary sufficiently small perturbation of `J(c)` while remaining inside `C_c^\infty(0,A)`.
+for every `j\ne k` and every integer `m\ge1` with `m c_k<A`. The finite set
 
-Full-row-rank `d\times N` matrices are open dense for `N\ge d`. Hence any unconstrained smooth finite test family can be approximated arbitrarily closely, at the level of these finite jets, by one for which the rational-prime center is regular and therefore lies on a positive-dimensional exact Beurling fiber.
+\[
+S=\{m c_k:1\le k\le N,\ m\ge1,\ m c_k<A\}
+\]
+
+then contains each `c_j` only as the first multiple of its own coordinate. Hence one can choose pairwise disjoint neighborhoods `V_j` of the `c_j` such that
+
+\[
+V_j\cap\bigl(S\setminus\{c_j\}\bigr)=\varnothing.
+\]
+
+For a perturbation `\varphi_i` of the `i`-th test supported in `V_j` with
+
+\[
+\varphi_i(c_j)=0,
+\]
+
+every contribution to every column `k\ne j` vanishes, and all higher-multiple contributions to column `j` vanish as well. The induced Jacobian perturbation is therefore exactly
+
+\[
+\boxed{
+\Delta J_{ij}=c_j e^{-c_j/2}\varphi_i'(c_j).
+}
+\]
+
+Because `c_j e^{-c_j/2}\ne0`, the derivative `\varphi_i'(c_j)` can be prescribed independently. Summing disjoint bumps over `j`, independently for each row `i`, realizes an arbitrary sufficiently small perturbation of the whole `d\times N` Jacobian while remaining inside `C_c^\infty(0,A)^d`.
+
+Full-row-rank `d\times N` matrices are open dense for `N\ge d`. Hence at every visible nonresonant center the full-row-rank condition is open dense in the unconstrained smooth finite-test class.
+
+For a rational-prime center `c_j=\log p_j`, nonresonance is automatic for distinct selected primes: an equality
+
+\[
+\log p_j=m\log p_k
+\]
+
+would imply `p_j=p_k^m`, impossible for distinct primes. The visibility hypothesis is not automatic: this genericity statement applies only to selected prime blocks satisfying
+
+\[
+\boxed{\log p_j<A.}
+\]
+
+If `c_j\ge A`, every admissible test vanishes near every `m c_j`, so the corresponding Jacobian column is identically zero and ambient full-row-rank genericity can fail. Resonant visible centers likewise require a separate coupled-jet analysis and are not covered by the independent-bump argument.
 
 This is **not** a statement that every analytically admissible explicit-formula test class is generic in this sense. If admissibility links values and derivatives nonlocally, imposes Fourier positivity, restricts to a finite-dimensional special family, or otherwise forbids independent local bumps, the relevant genericity space is smaller and must be analyzed separately.
 
@@ -348,7 +382,7 @@ A targeted literature search did not identify an established Beurling-prime theo
 - The constant-rank conclusion is local. It gives arbitrarily close exact controls, not a global classification of the whole finite-test fiber.
 - Full row rank is sufficient, not necessary, for a positive-dimensional fiber. Rank-deficient but locally constant points also have positive-dimensional fibers.
 - Rank deficiency alone does not prove special-point rigidity. Singular points require higher-order or global analysis, and many singular points still have large fibers.
-- The genericity statement is for unconstrained smooth test functions. It must not be exported unchanged to Fourier-positive, band-limited, Paley--Wiener, transform-coupled, positivity, or other restricted test categories.
+- The genericity statement is for unconstrained smooth test functions at visible nonresonant centers. It must not be exported to invisible/resonant centers or unchanged to Fourier-positive, band-limited, Paley--Wiener, transform-coupled, positivity, or other restricted test categories.
 - Moving finitely many generalized-prime generators preserves local finiteness and the exact multiplicative prime-power construction, but it need not preserve stronger global Beurling counting asymptotics unless those are imposed and checked separately.
 - The theorem concerns a finite test vector. AF-020's complete infinite test family on a support interval is a different destination and can recover the visible prime-power measure exactly.
 - The result says nothing about the location, multiplicity, or simplicity of zeta zeros and is not evidence for RH.

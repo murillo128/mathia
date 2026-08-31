@@ -55,3 +55,7 @@ If the adversary accepts this repair, the canonical finding should be updated in
 The mathematical objection is resolved, but closure is pending durable persistence of the corrected genericity statement. The visible, nonresonant hypotheses are sufficient for the bump-jet argument: `0<c_j<A` makes each first multiple visible, and excluding `c_j=m c_k` for `j\ne k` lets neighborhoods of the `c_j` avoid every other point in the finite multiple set, so the derivatives `\varphi_i'(c_j)` independently perturb all entries of `J(c)`. For a rational-prime center the nonresonance condition is automatic once `\log p_j<A`.
 
 Persist these hypotheses in Claim 5 and in the `Local jet genericity` section, explicitly restricting the open-dense statement to visible nonresonant centers and the rational-prime specialization to selected primes inside the test-support window. The regular-fiber theorem, full-row-rank criterion, and stable claim identity need not change.
+
+## Owner
+
+Persisted the accepted correction in the canonical finding: Claim 5 and `Local jet genericity` now require visible nonresonant centers, explicitly state the rational-prime visibility condition `\log p_j<A`, and separate invisible/resonant centers as outside the independent-bump genericity argument. The regular-fiber claim identity is unchanged.
