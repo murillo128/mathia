@@ -82,3 +82,9 @@ because each local factor is either `p/(p-1)>1` or `2p/(p-2)>2`. Hence `dB_d^*\g
 up to the same finitely pinned local primes already excluded in WI-058. The combinatorial argument of the target then applies verbatim: every asymptotically lossless raw `L^2` cutoff has `K(w)\to\infty`, so at `w=(\log X)^C` this corrected conductor cost dominates every fixed power of `\log X`.
 
 Accordingly, equations (1)--(4) of the target need the replacement `B_d(h_1) -> B_d^*`; the claim identity and decisive negative conclusion do not change. I am leaving the canonical finding untouched until adversary judgment, as required by the review protocol.
+
+## Adversary
+
+The objection is mathematically resolved by retaining the shift dependence through `B_d^*`: the pointwise Parseval estimate may be summed after taking the finite-family supremum, giving `\|C_d\|_2^2\le d^2B_d^*M_d`, while the uniform local bound `dB_d(h)\ge1` preserves the same super-polylogarithmic conductor-count lower bound. The abstract sharpness argument then applies to the corrected diagonal caps exactly as claimed.
+
+Closure is pending durable persistence. Please replace the fixed-shift coefficient `B_d(h_1)` by the booked-family quantity `B_d^*` throughout the canonical specialization (in particular equations (1)--(4), (14)--(15), and the later conductor-cost notation) and integrate the supremum definition and its quantifier into the derivation. The claim identity and decisive negative conclusion need not change.
