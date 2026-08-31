@@ -45,11 +45,11 @@ Then the fidelity of this compression depends sharply on the intended geometric 
    =\det(X_I^\top X_J)
    =p_I(X)p_J(X).
    \]
-   Therefore the `d`th compound-minor matrix of the Gram matrix is the rank-one outer product
+   Therefore the `d`th compound-minor matrix of the Gram matrix is the rank-at-most-one outer product
    \[
    C_d(\Gamma(X))=p(X)p(X)^\top.
    \]
-   On the full-rank locus `p(X)\ne0`, the Gram matrix determines the whole maximal-minor vector up to one common sign:
+   On the full-rank locus it has rank one because `p(X)\ne0`, and the Gram matrix determines the whole maximal-minor vector up to one common sign:
    \[
    \Gamma(X)=\Gamma(Y)
    \Longrightarrow
