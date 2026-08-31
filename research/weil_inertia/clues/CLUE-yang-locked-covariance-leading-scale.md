@@ -10,6 +10,7 @@ based_on:
   - research/weil_inertia/findings/WI-049-locked-four-prime-local-main-centers-cellwise.md
   - research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz.md
   - research/weil_inertia/findings/WI-051-complexity-one-fourier-control-does-not-remove-coefficient-wall.md
+  - research/weil_inertia/findings/WI-052-barban-davenport-halberstam-suppresses-pure-quotient-prime-modes.md
 ---
 
 # Does the exact Yang locked covariance have a nonzero leading-scale term?
@@ -95,6 +96,18 @@ norm tends to zero like a negative fourth-root of the subgroup index. Thus a suc
 complexity-one repair must be **quotient-aware** after the genuine local main is removed; ordinary
 one-variable `U^2=o(1)` is information-theoretically insufficient at source-faithful scale.
 
+WI-052 now removes the strongest **pure quotient** version of that witness from the prime-specific
+bulk. Proper prime powers carry only `o(1)` of the source Mertens base measure, so the dominant
+large coefficients are actual distinct prime moduli. Classical Barban--Davenport--Halberstam
+variance then implies that, on every fixed power-separated interior
+`alpha+beta <= 1-delta`, the Mertens-averaged `L^2` projection of the centered von Mangoldt
+function onto residue-class-constant modes modulo `b1` or `b2` is `o(1)`. Thus actual primes
+cannot imitate the order-one quadratic `mod r` witness of WI-051 throughout a positive-mass
+interior region. The unresolved aliasing is narrower: it must live in the **nonzero
+shift-frequency fibers inside residue classes**, concentrate toward the short-shift boundary, or
+arise from the separately booked collision/analytic interface. BDH alone does not control those
+nonzero fibers or the locked pair--pair covariance.
+
 ## Research question
 
 For the exact Yang cells and normalization **outside every fixed polylogarithmic reduced-coefficient
@@ -102,54 +115,58 @@ range**, after replacing the factorized twin model by the genuine full four-form
 singular-series model, does the remaining WI-043 locked pair--pair covariance have a nonzero
 negative leading term proportional to the full admissible strip geometry, or must it become
 lower order through arithmetic cancellation? WI-050 settles the corresponding question in the
-polylogarithmic coefficient regime in favor of lower order. WI-051 further reduces the plausible
-repair space: any lower-order proof in the power-sized regime must control the quotient/aliasing
-modes created by the large-index dilations, or bypass them with a genuinely joint estimate.
+polylogarithmic coefficient regime in favor of lower order. WI-051 identifies the large-index
+aliasing mechanism, while WI-052 shows that its residue-class-constant quotient component is
+arithmetically suppressed for actual primes on every fixed power-separated interior. The live
+prime-specific question is therefore whether **nonzero aliasing / within-residue pair-correlation
+fibers** can carry leading mass in the power-sized coefficient regime, especially near or beyond
+the interface where the available shift count becomes short.
 
 ## Why it may matter
 
-A nonzero leading **post-local-main** covariance term in the super-polylogarithmic/power-sized
-coefficient region would eliminate the remaining source-specific projection escape and show that
-the welding step genuinely needs coefficient-uniform joint four-prime information rather than
-better marginal discrepancy or deterministic local-series centering. Conversely, a proof of
-eventual suppression there would identify the missing arithmetic mechanism needed to finish the
-one-sided fourth-moment route. WI-049 rules out an omitted Hardy--Littlewood four-form main and a
-leading Euler-tail bias; WI-050 additionally rules out the entire fixed-polylog coefficient
-regime as the source of a leading prime residual; WI-051 rules out the cheap inference that
-complexity one plus ordinary `U^2` uniformity automatically controls the remaining anisotropic
-cells.
+A nonzero leading **post-local-main** covariance term in those nonzero fibers would identify the
+genuinely surviving arithmetic obstruction and show that the welding step needs coefficient-uniform
+joint four-prime information beyond ordinary AP variance and deterministic local-series centering.
+Conversely, a proof that those fibers are negligible would remove the principal prime-specific
+escape left after WI-049--WI-052 and could supply the missing arithmetic mechanism needed to
+finish the one-sided fourth-moment route. WI-052 is important here because it prevents the search
+from spending effort on arbitrary quotient witnesses that classical prime-distribution variance
+already rules out in the bulk.
 
 ## Research disposition
 
-**Accepted, narrowed by WI-049, WI-050 and WI-051.** The exact monomial witness establishes that
-the source covariance is not an algebraic zero, and the finite-scale run shows a stable enough
-signal to justify a targeted asymptotic audit. WI-049 proves that the genuine full four-form
-deterministic local main is centered with `o(1)` normalized source bias after the
-long-cell/short-boundary split. WI-050 (`research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz.md`)
+**Accepted, narrowed by WI-049--WI-052.** The exact monomial witness establishes that the source
+covariance is not an algebraic zero, and the finite-scale run shows a stable enough signal to
+justify a targeted asymptotic audit. WI-049 proves that the genuine full four-form deterministic
+local main is centered with `o(1)` normalized source bias after the long-cell/short-boundary
+split. WI-050 (`research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz.md`)
 then proves, using Bienvenu's established theorem, that the genuine post-local-main four-prime
 residual is itself `o(1)` on every fixed polylogarithmic coprime base range. WI-051
 (`research/weil_inertia/findings/WI-051-complexity-one-fourier-control-does-not-remove-coefficient-wall.md`)
-shows that the remaining system is Fourier-complexity one but that source-faithful localization
-creates coherent quotient modes and necessarily coefficient-sensitive `U^2` control. The
-accepted target is therefore specifically the **super-polylogarithmic/power-sized coefficient
-contribution to the post-four-form-local-main prime residual, with quotient/AP aliasing controlled
-explicitly**, while the separately booked collision/analytic interface remains distinct.
+shows that source-faithful localization creates coherent large-index fibers and that ordinary
+one-variable `U^2` control cannot bound them for arbitrary functions. WI-052
+(`research/weil_inertia/findings/WI-052-barban-davenport-halberstam-suppresses-pure-quotient-prime-modes.md`)
+then uses classical AP variance to suppress the residue-class-constant part of those fibers for
+actual primes on every fixed power-separated interior. The accepted target is now specifically
+the **nonzero aliasing / within-residue pair-correlation contribution to the post-four-form-local-main
+prime residual for power-sized coefficients**, with the short-shift boundary and separately
+booked collision/analytic interface kept distinct.
 
 ## Decisive test
 
 Decompose the exact source-weighted locked covariance by reduced coefficient size, retaining the
 source diagonal/collision and deterministic `S1/S2/S3` bookings and subtracting the genuine full
 four-form Hardy--Littlewood local model cellwise. The polylogarithmic part is already controlled
-by WI-050. On the complementary family, derive an asymptotic or rigorous upper/lower bound after
-normalization by its exact source mass. A viable suppression proof should in particular establish
-that the post-local-main prime residual has negligible mass on the quotient/aliasing Fourier
-fibers induced by `k -> r*k` and `k -> q*k`, uniformly over a positive proportion of the
-power-sized coefficient region, or supply a direct joint estimate that makes those fibers
-irrelevant. A nonzero limiting coefficient on a positive proportion of that mass, or a matching
-coefficient-uniform four-prime lower bound, would support the leading-term mechanism. A proof
-that this complementary residual is `o(1)` would refute it and close the clue. Any claimed
-suppression must explain both the exact finite monomial witness and the WI-051 quotient-mode
-obstruction rather than rely on identity cancellation or unlocalized `U^2` control.
+by WI-050, and the pure residue-class quotient projection on every fixed power-separated interior
+is controlled by WI-052. On the remaining family, resolve the localized Fourier fibers
+`A_r(t), A_q(-t)` with **nonzero** fiber parameter `t`, or derive a direct joint estimate that
+bypasses this decomposition. A viable suppression proof must show that their post-local-main
+source-weighted contribution is `o(1)` uniformly through the power-sized coefficient region, with
+a separate estimate for the shrinking short-shift boundary. A nonzero limiting coefficient on a
+positive proportion of that mass, or a matching coefficient-uniform four-prime lower bound,
+would support the leading-term mechanism. A proof that the complementary nonzero-fiber residual
+is `o(1)` would refute it and close the clue. Any claimed suppression must still explain the exact
+finite monomial witness rather than rely on identity cancellation.
 
 ## Evidence boundary
 
@@ -161,9 +178,10 @@ WI-050 rigorously controls the **aggregated** post-local-main residual only when
 coefficients are bounded by a fixed power of `log X`; it neither proves that this subfamily carries
 a positive fraction of the source ledger nor supplies any theorem for the power-sized coefficient
 range. WI-051 is an exact finite Fourier/localization obstruction for generic bounded functions,
-not a counterexample built from primes: it proves that ordinary `U^2` information alone cannot
-exclude coherent quotient modes, but it leaves open a prime-specific theorem showing that the
-genuine locally centered von Mangoldt residual is orthogonal to those modes. The original
-computation used the pinned source's finite `Lambda`, intervals, `J=19`, base family, and stored
-twin-constant value; it has not yet been rerun after subtracting the genuine full four-form local
-model. This clue makes no novelty claim and is not a canonical finding.
+not a counterexample built from primes. WI-052 is prime-specific but controls only the
+residue-class-constant `L^2` quotient projection, and only uniformly on fixed power-separated
+interiors; it does not control nonzero aliasing fibers, twin-prime residuals, the shrinking
+`alpha+beta=1` boundary, or the coupled four-prime covariance. The original computation used the
+pinned source's finite `Lambda`, intervals, `J=19`, base family, and stored twin-constant value; it
+has not yet been rerun after subtracting the genuine full four-form local model. This clue makes
+no novelty claim and is not a canonical finding.
