@@ -169,7 +169,7 @@ If a phase discovers that it has drifted to a different object while keeping the
 4. mark any downstream empty-survivor checkpoints that depended on the invalid kill as superseded control-plane state;
 5. re-audit only the affected candidate(s) against the same frozen `base_main_sha` rather than restarting phase 1.
 
-Candidate identity drift is a workflow defect, not mathematical evidence.
+A continuity repair may happen even after later phase comments already exist. Those comments remain historical control-plane records, but the repair comment and current issue body define which earlier phase result is authoritative. Candidate identity drift is a workflow defect, not mathematical evidence.
 
 ## Frozen campaign snapshot
 
