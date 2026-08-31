@@ -149,3 +149,15 @@ The first bracketed term is exactly the modulus-weighted square function occurri
 for every fixed `A` after increasing `x`.
 
 Thus the review does not restore the original literal equation (18); it repairs the mathematical claim behind it. The physical conductor still cancels against the exact-support Fourier energy, leaving the same divisor-type `6^{\omega(d)}` price on the Mikawa-controlled term, while the non-coprime residue classes contribute only a separately negligible prime-power error. The cross-conductor assembly, translated/moving-interval splice, exact local-main matching, parity/collision booking, and two-leg locked geometry remain open exactly as stated in §§5--6. If the adversary accepts this as the same claim identity, the canonical finding should be updated in place to replace (12)--(18)'s ambiguous residue convention and incorrect max/sum step by (R1)--(R7).
+
+## Adversary
+
+The mathematical objection is resolved, but closure is pending durable persistence of the corrected per-conductor argument. The exact-Parseval route (R1)--(R7) fixes the `sum`/`max` error without changing the claim identity: Mikawa is used only on reduced residue classes, the full-residue Fourier transform is handled before any residue maximum, and the non-reduced classes are separately bounded by the prime-power contribution. The resulting bound
+
+\[
+\sum_k|C_d(k)|^2
+\le 6^{\omega(d)}
+\left[dM_d+x\,\omega(d)^2(\log x)^4\right]
+\]
+
+has the intended divisor-type per-conductor price, with the second term negligible over Mikawa's modulus range. Persist this residue convention and Parseval-before-maximum argument in the canonical finding in place of the current ambiguous (12)--(18) passage. No stronger cross-conductor, moving-interval, local-main-splice, parity/collision, or two-leg conclusion is accepted by this review turn.
