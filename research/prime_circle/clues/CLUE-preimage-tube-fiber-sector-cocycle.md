@@ -28,7 +28,7 @@ Two persisted boundaries leave a narrower question. PC-024 classicalizes fixed f
 Let `p,q` be distinct refinement primes coprime to the base level `d`, and view the complete divisor-square preimage tube over `P_d^*` through its two lift coordinates, equivalently through the finite abelian fiber-translation group
 
 \[
-G_{p,q}\cong \mathbb Z/p\mathbb Z\times \mathbb Z/q\mathbb Z.
+G_{p,q}\cong \mathbb Z/p\mathbb Z\times\mathbb Z/q\mathbb Z.
 \]
 
 After Fourier decomposition, write `E_chi` for the sector of character `chi` of `G_{p,q}`. Does the **embedded Prime-Circle chord/cotangent old-new geometry itself** canonically determine a bilinear or quadratic interaction `B` between distinct sectors, with no freely chosen coefficients or cocycle, such that
