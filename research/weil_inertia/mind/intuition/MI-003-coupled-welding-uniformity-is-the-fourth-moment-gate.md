@@ -1,43 +1,35 @@
-# MI-003 — The one-sided fourth-moment route is now bottlenecked by coupled welding uniformity, not local singular-series algebra
+# MI-003 — The welding gate is now a super-polylogarithmic localized alias problem
 
-**Evidence level:** supported as an audit boundary; the candidate fourth-moment theorem itself remains unproved
+**Evidence level:** supported for the exact reductions and polylogarithmic regime; the newest prime-specific quotient-mode suppression remains literature-derived/audit-sensitive
 
 ## Core intuition
 
-The recent audit of the Yang--Yang one-sided fourth-moment candidate has removed several local and bookkeeping ambiguities without closing the theorem. The deterministic source limit, local singular-series centering, interval discrepancy, and the structured unweighted `L^2` consequence of Matomäki--Radziwiłł--Tao can all be justified. What remains is a genuinely coupled analytic problem: the exact four-prime welding weight must retain cancellation across the dominant continuum of large, anisotropic coefficients. Generic divisor-boundedness, unimodular reparametrization, or a black-box fixed level of distribution cannot supply that theorem.
+The unresolved Yang--Yang fourth-moment obstruction is no longer well described as “a generic four-prime correlation.” After the exact lock geometry and local factors are treated correctly, the difficult regime is much narrower: the genuine four-form local main centers, fixed polylogarithmic coefficients fall to higher-dimensional Siegel--Walfisz technology, and the global linear-form system has Cauchy--Schwarz complexity one. The surviving obstruction is the **anisotropic localization at super-polylogarithmic coefficients**, where coefficient-index sublattices create aliasing that global Fourier complexity does not see.
 
 ## Strongest justified principle
 
-The evidence divides cleanly into what has been closed and what has not.
+WI-047--WI-049 separate local-main bookkeeping from the global residual. Fixed-level distribution alone leaves mass uncovered, but the full structured local Euler product can be controlled and, crucially, the locked four-form local factor centers cellwise against the product of the two-form local factors. A leading covariance cannot be attributed to an unremoved singular-series main term.
 
-- WI-033 identifies the deterministic continuum/source collapse and local Euler stability. WI-034 checks that the cited MRT almost-all-shifts theorem does imply the needed **unweighted** structured `L^2` estimate by a good/bad-shift decomposition, including the structured multiplicity transfer.
-- WI-045 proves the exact finite CRT collision identity showing that the dominant coprime `S1` local product is centered by the same singular-series second moment used in `S2/S3`. WI-046 strengthens this: after finite prime truncation, the local main has uniform interval discrepancy `O((log P)^2)`, so deterministic nonuniform residue weighting alone does not break the centering.
-- WI-037 shows that MRT Proposition 5.4 and Appendix A do **not** provide minor-arc cancellation after multiplication by an arbitrary divisor-bounded welding coefficient; no theorem based only on divisor-boundedness could do so because a bounded coefficient can cancel a prescribed phase.
-- WI-039--WI-040 identify the large-coefficient wall and show that unimodular variable changes cannot remove it. WI-047 then closes the cheap sublattice repair: any black-box AP theorem of fixed level `theta<1` leaves positive mass of the dominant continuum outside its range, even under an optimistic one-sided coverage rule.
+WI-050 then unslices the lock. On the dominant coprime family the Yang square becomes four affine-linear prime forms in three variables. For every fixed polylogarithmic coefficient range, Bienvenu's higher-dimensional Siegel--Walfisz theorem gives the required asymptotic on the source convex regions, so the post-local-main residual is `o(1)` there. The obstruction therefore starts only after the coefficients leave every fixed polylogarithmic range.
 
-Thus the unresolved theorem must exploit the **specific coupled structure of the four-prime welding object**, not merely the size of its coefficient or separate distribution of two prime pairs.
+WI-051 identifies the algebraic reason this is not a higher-Gowers-order problem. The four forms have Cauchy--Schwarz complexity exactly one and are controlled by ordinary Fourier/`U²` uniformity on a single finite field. But at the physical anisotropic scale, `k↦rk` and `k↦qk` land in large-index sublattices, leaving quotient modes perfectly coherent; generic localized `U²` control must lose coefficient size.
 
-## Quantitative consequence
+WI-052 gives a prime-specific redirection, with its persisted `NEEDS-AUDIT` boundary: classical Barban--Davenport--Halberstam suppresses the **pure residue-class quotient projection** of the actual centered von Mangoldt weight on average over the dominant prime moduli in fixed power-separated interiors. If that audit holds as stated, the remaining signal must live in nonzero alias/shift-frequency fibers inside residue classes, the short-shift boundary, or separately booked collision/analytic interfaces rather than in the simplest generic quotient witness.
 
-WI-028 isolates the useful target if that analytic gate can be crossed. A fully rigorous one-sided fourth-moment estimate need not reproduce every claimed constant to improve the current Mathia inertia result: an admissible remainder below the persisted threshold there would already produce a quantitative gain. This makes the welding theorem a falsifiable arithmetic target rather than a vague request for “better prime correlations.”
+## What remains possible
 
-The thresholds in WI-028 are conditional on the rest of that audited candidate architecture and must not be read as established fourth-moment bounds.
-
-## Evidence against overgeneralization
-
-The negative audit does not prove the Yang--Yang route false. A source-specific anisotropic dispersion theorem, a coupled four-prime correlation theorem, or another estimate exploiting the exact welding factorization can evade WI-037/WI-047. Conversely, proving more uniform distribution for each prime pair separately is not automatically enough if the joint weight remains uncontrolled.
+The open gate is a coefficient-uniform estimate for the exact locally centered four-prime welding sum in the super-polylogarithmic regime, or a matched lower-bound mechanism showing that one of the surviving alias/boundary fibers genuinely contributes at fourth-moment scale. Generic singular-series estimates, fixed-level distribution, higher Gowers order, or arbitrary bounded quotient examples no longer isolate the right variable.
 
 ## Status / novelty
 
-The local identities, MRT derivation, and generic-repair obstructions are persisted findings. The identification of **coupled welding uniformity** as the remaining analytic gate is a supported synthesis. The one-sided fourth-moment theorem and any improved simple-zero proportion remain unproved.
+The exact lock identities, local centering, complexity-one reduction, and polylogarithmic treatment are persisted findings. The BDH redirection is persisted as literature-derived and still audit-sensitive; it should narrow hypotheses, not be treated as a final fourth-moment theorem.
 
 ## Falsification criterion
 
-Produce a rigorous estimate for the exact weighted welding sum, with its actual moving windows and coefficient geometry, strong enough to deliver the required remainder after the persisted deterministic/local centering. Alternatively, construct a matched arithmetic obstruction showing that the exact welding weight can correlate at main-term scale despite those local cancellations. A proof using only generic divisor-boundedness or fixed-level AP distribution would contradict WI-037/WI-047.
+Show that a leading normalized covariance already survives in the audited polylogarithmic coefficient range after the genuine four-form local main is removed, or that the actual von Mangoldt quotient projection retains order-one mass where WI-052 claims BDH suppression. A positive advance must instead control or identify the surviving super-polylogarithmic alias/boundary component at the scale required by the Yang fourth moment.
 
 ## Lean-formalizable core
 
-- Finite CRT singular-series collision identities.
-- Uniform discrepancy of the truncated local main.
-- Geometric support fractions for fixed-level AP coverage.
-- Logical separation between an unweighted `L^2` theorem and its unsupported weighted welding extension.
+- Cauchy--Schwarz complexity-one certificate for the four-form system.
+- Exact finite local-factor centering identities.
+- Algebraic decomposition of quotient versus nonzero alias fibers in finite cyclic models.

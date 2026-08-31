@@ -4,49 +4,35 @@
 
 ## Core intuition
 
-Several Mathia constructions now carry the same underlying arithmetic/geometric perturbation into sharply different conclusions depending on the operator topology or completion. Strong limits can erase moving boundary states; norm and Calkin limits can preserve only essential recurrence; trace-class demands can fail for purely local microlocal reasons; ordinary Hilbert completions can be nonclosable; regular compact-resolvent completions can be structurally impossible. These are not technical afterthoughts. **Choosing the topology determines which information channel is even visible.**
+The same arithmetic/geometric perturbation can be invisible, universal, compact, nuclear, nonclosable, or essentially recurrent depending on the completion or operator topology. The newest results sharpen both sides of the gate: a topology can be **too coarse**, as when the prime flute and an all-composite clone become compact-resolvent equivalent, or **too strong**, as when first-resolvent trace class is locally impossible. The surviving category has to be derived from the mathematics, not selected because it exposes a desired singularity.
 
 ## Strongest justified principle
 
-Three branches give exact versions of the phenomenon.
+Prime Flute now resolves a previously open endpoint. PF-125 proves compact first relative resolvent for the exact `p_n+1` clone, hence equality of essential spectra. Essential-spectrum/compact-class data are therefore too coarse to distinguish primality in that construction. PF-112 excludes first-resolvent `S_1` for any nonisometric smooth comparison, while PF-126--PF-130 leave plausible `S_r`, `r>1`, higher-resolvent, heat/wave, or scattering categories open only after global assembly is proved.
 
-- **Prime Lattice:** PL-050 has strong convergence to zero on every fixed window while moving boundary states retain order-one edges. PL-051 gives a universal PNT rank-one fixed-depth blow-up, whereas PL-052--PL-054 show an order-one norm/essential-norm obstruction and infinite-multiplicity partial reflections at prime-power thresholds. The same family is therefore trivial/universal strongly and nontrivial but non-Fredholm in the Calkin algebra.
-- **Prime Flute:** increasingly strong pant/collar/gluing agreement with the composite clone coexists with a local theorem that the first relative resolvent cannot be trace class for any nonisometric smooth comparison (PF-112). Raw generator right limits are moreover gauge-dependent (PF-113). The unresolved tail question belongs specifically to compactness, `S_p` with `p>1`, higher resolvent powers, heat/wave, or scattering categories after a synchronized global identification.
-- **Prime Circle / Weil Positivity:** the compatible solenoid carries exact-order labels, but regular commuting leaf/fiber operators have noncompact resolvent, while PC-069--PC-070 rule out ordinary compact-resolvent Hamiltonians under exact scalar affine dilation covariance. On the positivity side, the critical finite Gram selector becomes a nonclosable form on the natural Hilbert completion, while the Prime-Circle Weil birth term lives as a singular Haar tangent and disappears under ordinary positive radial/Schur completion (WP-032--WP-045).
+Prime Lattice narrows its intermediate regime dramatically. PL-059 shows that completion canonically cancels the PNT rank-one boundary mode. Fixed Sobolev smoothing, spatial growth/recentering, and broad moving Dirichlet bands then collapse; zero-free sampling pushes the collapse through enormous sub-`L^{3/2}` logarithmic frequency scales. The essential prime-log recurrence survives only on ultra-high moving states. The topology question is therefore not merely strong versus Calkin, but whether any independently forced scale remains between classical zero-free homogenization and non-Fredholm recurrence.
 
-The conclusion is not that weaker or singular topologies are better. It is that an RH claim must specify **why its topology is canonical for the arithmetic mechanism** and audit what universal or essential information survives there.
+Prime Circle supplies complementary compactness controls. Broad scalar dilation-covariance families on the solenoid cannot have ordinary compact resolvent, while projective-height properization can — but only by reducing to classical primitive-lattice zeta. Weil Positivity shows another category mismatch: finite positive selectors survive, yet radial Schur completion cancels them, principal Arakelov classes trivialize them, and the strongest Prym carrier is torsion invisible to real quadratic positivity.
 
 ## Consequence for synthesis
 
-A useful limit should occupy a narrow middle ground:
-
-\[
-\text{not so weak that the arithmetic escapes to moving states,}
-\qquad
-\text{not so strong that only essential/non-Fredholm spikes remain.}
-\]
-
-Relative determinants, spectral shift, mesoscopic smoothing, distributional boundary forms, or higher Schatten classes are legitimate candidates only when their category is forced independently of the desired zero signal. Moving to another topology solely because it reveals a preferred singularity is not evidence.
-
-This intuition complements MI-001. MI-001 asks whether a transformation identifies the target variable; MI-005 asks **which completion/topology makes that identification continuous, compact, singular, or invisible**.
+A useful topology must occupy a mechanism-specific middle ground. It must be strong enough to keep the claimed arithmetic distinction continuous, weak enough to avoid universal local ideal obstructions, and independently canonical. Relative determinants, spectral shift, mesoscopic smoothing, distributional boundary forms, or higher Schatten classes are candidates only after these three properties are proved.
 
 ## Evidence against overgeneralization
 
-Topology dependence is common in analysis and is not Mathia-specific novelty. The synthesis does not claim a universal “correct topology” for RH. It records that current exact controls invalidate arguments that silently move among strong, norm, Calkin, trace-class, Hilbert-form, and compact-resolvent categories as though they carried the same arithmetic content.
-
-A noncompact or distributional construction may still be decisive if it comes with an independently justified spectral/sign theorem.
+Topology dependence is common in analysis and is not Mathia-specific novelty. Nor is a weaker topology automatically preferable: it may merely push information into moving states or the essential spectrum. A singular or noncompact construction can still be decisive if it carries an independently justified selector/sign theorem.
 
 ## Status / novelty
 
-All topology separations cited above are persisted findings. Their cross-branch interpretation as a mandatory topology gate is a supported synthesis rather than a new operator theorem.
+All topology separations cited above are persisted findings. Their cross-branch interpretation as a mandatory topology gate is a supported synthesis rather than a universal operator theorem.
 
 ## Falsification criterion
 
-Exhibit an audited family for which the claimed arithmetic invariant is provably topology-independent across the relevant strong/norm/essential/Schatten/completion categories, or derive a canonical topology from the geometry and prove that it retains a zero-selecting invariant while the matched controls vanish there. Either would sharpen or replace this principle.
+Derive a canonical topology from one branch's geometry and prove that its zero-sensitive invariant is stable there while the strongest matched controls vanish or differ for a structural reason. Conversely, show that a currently proposed topology is equivalent to one already known to universalize, identify prime/composite controls, or retain only essential recurrence.
 
 ## Lean-formalizable core
 
-- Strong convergence with persistent norm/essential-norm lower bounds.
-- Schatten-class separations for pseudodifferential resolvent differences.
-- Nonclosability of rank-one critical forms.
-- Compact-resolvent obstruction under dense rational-frequency and affine dilation covariance.
+- Compact-relative-resolvent implication for essential spectrum.
+- Schatten endpoint separations.
+- Strong/norm/essential convergence distinctions.
+- Nonclosability and torsion-pairing category obstructions.

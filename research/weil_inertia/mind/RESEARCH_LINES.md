@@ -1,27 +1,23 @@
 # Weil-inertia research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate distinct mathematical bottlenecks.
+This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Retain new realized information beyond the single-profile four-point architecture
+## Keep optimization loss separate from information loss
 
-**Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses`.
+**Linked intuitions:** `MI-001-fenchel-duality-repairs-block-loss-not-screening-loss`.
 
-The exact Fenchel dual remains the right tool for eliminating artificial block-boundary optimization loss. The scalar trace--energy envelope is also no longer the final bottleneck: WI-021--WI-024 and WI-036 show that translation-Gram realizability and span packing recover information that an abstract fixed-energy spectrum discards. But WI-025--WI-026 now place a stronger boundary at the level of the **realized single-profile four-point pressure plus the same shifted assembly**: explicit periodic controls cap that architecture even after the local envelope has been improved.
+Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Continue to audit the exact represented object before strengthening inequalities on it.
 
-The live quantitative question is which unconditionally controlled datum changes the representation itself: an uncollapsed exceptional/off-line block, several independent test profiles and their cross-Gram information, a different pressure sensitive to additional span geometry, horizontal/depth data, or another observable not matched by the period-33 control. A decisive positive result must exhibit such a datum and improve the inertia bound; a matched countermodel reproducing it would move the information boundary again.
+## Use realized geometry to test whether scalar envelopes are attainable
 
-## Identify the minimal supercritical information that breaks screening
+**Linked intuitions:** `MI-002-realizability-is-a-separate-gate`.
 
-**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction`.
+Abstract trace/energy envelopes can overestimate what one translated profile and its shifted assembly can realize. Packing/span constraints and matched realized controls should be applied before interpreting an improved scalar bound as new arithmetic information.
 
-The critical-lattice control proves that every compression whose window support remains at or below one is exactly blind to horizontal depth on the adversarial off-line-pair lattice. The first depth-sensitive channel is a nonzero Poisson alias appearing only beyond support one, precisely where additional prime-side correlation information is required.
-
-The decisive test is to pair a supercritical alias observable with an unconditional arithmetic estimate strong enough to distinguish the screened off-line configuration from on-line doubles. A successful argument must identify the exact new arithmetic input and its cost; merely combining more subcritical windows, changing sample grids, or sharpening a depth-only matrix inequality cannot cross the proved information boundary.
-
-## Prove or refute the exact coupled welding estimate at the required remainder scale
+## Control the super-polylogarithmic locally centered welding residual
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`.
 
-The audit of the one-sided fourth-moment candidate has moved the unresolved step away from local singular-series algebra. The deterministic source limit, the unweighted structured MRT `L^2` consequence, the dominant local CRT centering, and finite-truncation interval discrepancy are now separately justified (WI-033--WI-034, WI-045--WI-046). On the other hand, divisor-boundedness alone cannot preserve the needed minor-arc cancellation, unimodular reparametrization does not remove the large coefficient wall, and any black-box fixed level of distribution leaves positive dominant continuum mass outside a sublattice AP repair (WI-037, WI-039--WI-040, WI-047).
+The unsliced Yang square is a finite-complexity, in fact complexity-one, four-form system. Its genuine local main centers, and every fixed polylogarithmic coefficient range is already accessible to higher-dimensional Siegel--Walfisz technology. Global `U²` complexity is therefore not the remaining obstacle. The difficult regime is anisotropic localization at super-polylogarithmic coefficients, where coefficient-index sublattices create aliasing; the simplest pure quotient mode of actual primes is itself suppressed on average in the persisted BDH audit.
 
-The live arithmetic question is therefore a source-specific theorem for the **actual coupled four-prime welding weight with its moving windows and anisotropic coefficients**. A decisive positive result must propagate the exact local centering through that weighted sum and meet the persisted admissible remainder threshold of WI-028; a decisive negative result would exhibit a matched configuration or lower bound showing main-scale covariance survives. Generic Bombieri--Vinogradov/MRT invocations that do not control the coupled weight do not resolve this line.
+A decisive result must estimate the exact **post-local-main** four-prime covariance uniformly far enough into that coefficient regime to meet the fourth-moment threshold, or exhibit a genuine surviving contribution in nonzero alias fibers, short-shift boundary terms, or the separately booked analytic/collision interface. Reintroducing the singular-series main, freezing the shift into binary prime-pair problems, or invoking generic higher-order uniformity does not address the remaining gate.

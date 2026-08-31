@@ -1,44 +1,43 @@
-# MI-002 — Relational memory is necessary locally, but arithmetic specificity requires a global anchor
+# MI-002 — Relational fidelity can be exact locally, but arithmetic specificity still needs a global anchor
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Mathia's strongest local mechanisms often emerge only after quotienting away an absolute scale: cross-ratios, cuff contrasts, mixed conformal defects, target-relative projection data, and cross-boundary variational couplings all survive where absolute coordinates or scalar summaries fail. But the newest controls show that **being relational is not enough to be arithmetic**. The relation must also be tied to a globally distinguished arithmetic structure that matched non-prime systems do not share.
+Mathia's strongest local mechanisms often emerge only after quotienting away an absolute scale: cross-ratios, cuff contrasts, mixed conformal defects, target-relative projection data, and cross-boundary couplings survive where absolute coordinates or scalar summaries fail. Arithmetic Fidelity now supplies exact positive models of the same idea: bispectral phase coupling, annihilator lattices, and matrix-valued marked spectral measures can restore an intended gauge without restoring absolute coordinates. But the strongest controls also show that **relational completeness and arithmetic specificity are separate properties**.
 
 ## Strongest current principle
 
-Prime Flute provides the positive local side. In a graded hyperbolic chain, an individual resolved eigenvalue contains a leading neck scale together with the upstream Feshbach correction `w_j^2/w_{j-1}`. After conversion to cuffs/gaps, this is a directed relation between adjacent relational scales. Scalar pseudodeterminants erase that memory, so retaining the marked mode matters (PF-080, PF-089--PF-091).
+AF-004--AF-006 make the local side precise. A relational lift can be exactly complete modulo translation or another intended symmetry, and its residual ambiguity can be computed algebraically rather than guessed from rank. This strengthens the reason to preserve off-diagonal/marked information when a scalarization loses provenance.
 
-The same branch also supplies the warning. Projective gap relations have exact all-composite clones, and PF-106 constructs the much stronger exact-cotangent control `p_n+1`: after canonical normalization its sampled endpoints are `ell^1`-close to the prime endpoints and all-span tail cross-ratios differ by only `O(P^-3)`. Thus even a rich family of relations can fail to be prime-specific when a matched composite system carries essentially the same marked tail geometry.
+Prime Flute supplies both a positive and a negative instance. Resolved multi-neck modes retain directed relation-between-neck scales, but PF-125 now shows that the entire exact prime flute and the all-composite `p_n+1` clone lie in the same compact-resolvent class. Rich local geometry and even essential spectral equivalence therefore do not distinguish the rational-prime source.
 
-Prime Lattice gives the global analogue. PL-015 shows that the entire free exponent architecture, strong counting regularity, and arbitrary finite prime prefixes survive Beurling deformations with incompatible RH behavior. PL-014 identifies what those controls generally lack: the exact rational-prime norm embedded in the adelic/product-formula completion. The surviving arithmetic variable is therefore not “relation” in the abstract but a relation anchored to the **exact infinite arithmetic placement and completion**.
-
-Prime Circle reinforces the same boundary from a different direction. Anchoring and nonlocality prevent some gauge losses, yet PC-032--PC-037 show that many one-shell relational/spectral constructions still collapse to classical regular-polygon or Dirichlet/divisor data. Cross-level or genuinely nonlinear coupling is required before a new claim can be made.
+Prime Lattice gives the global analogue: free exponent architecture and strong finite/local controls survive generalized-prime systems with incompatible zero behavior, so a surviving invariant must use the exact rational-prime norm/completion. Weil Positivity adds another caution: WP-056 stores `log p` in an integral Prym polarization discriminant, a genuinely relational lattice invariant, yet WP-057 shows that passing to the natural real positive quadratic category kills that torsion carrier.
 
 ## Consequence for synthesis
 
-A plausible RH mechanism should pass two independent tests:
+A plausible mechanism should pass two gates:
 
-1. **local memory:** after natural gauge reduction, does the observable retain the ordered/mixed variable it claims to use?
-2. **global specificity:** is that variable absent, changed, or differently organized in adversarial systems that match the local geometry/combinatorics as deeply as possible?
+1. **fidelity gate:** after the natural quotient, do the surviving relational observables determine the local variable modulo exactly the intended gauge?
+2. **specificity gate:** does the resulting structure distinguish the strongest control that preserves the same local/relational package but changes the arithmetic source?
 
-Passing the first test without the second produces a good geometric coordinate, not yet an arithmetic selector.
+Passing the first without the second produces a faithful coordinate system, not yet an RH selector.
 
 ## Evidence against overgeneralization
 
-This does not imply that only adelic objects can succeed, nor that local spectral memory is unimportant. A local mechanism may become decisive after coupling to a global normalization, target, or completion. The point is that local relational richness and arithmetic uniqueness are separate properties and must be proved separately.
+This does not privilege any one global completion, nor imply that local spectral memory is unimportant. A locally faithful relational carrier may become decisive after coupling to an independently forced arithmetic norm, target, or completion. The additional anchor must be derived rather than inferred from the fact that the input labels happened to be primes.
 
 ## Status / novelty
 
-The local memory formulas and matched controls are persisted evidence; the two-stage interpretation is a supported cross-branch synthesis.
+The exact relational-lift criteria and the branch controls are persisted findings. Their two-gate interpretation is a supported synthesis.
 
 ## Falsification criterion
 
-Find a canonical invariant that depends only on a locally relational structure already shared by the strongest matched non-prime controls, but nevertheless forces a Riemann-specific conclusion without any additional global arithmetic anchor or completion.
+Exhibit a canonical invariant depending only on a relational structure already matched by the strongest non-prime control, yet forcing a Riemann-specific conclusion without any additional global arithmetic anchor. Alternatively, derive a global anchor that provably breaks the matched-control equivalence while preserving the local fidelity.
 
 ## Lean-formalizable core
 
-- Algebraic conversion of `w_j^2/w_{j-1}` to a relation-between-cuff-contrasts.
-- Invariance/equivalence tests for matched cross-ratio data.
-- Abstract two-stage lemma separating preservation of a local variable from uniqueness of the global source producing it.
+- Bispectral completeness modulo translation.
+- Annihilator-lattice completeness modulo a subgroup.
+- Marked spectral Gram classification.
+- Abstract separation of quotient fidelity from source specificity.

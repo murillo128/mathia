@@ -1,51 +1,42 @@
 # MI-001 — Preserve the discriminating structure before compressing
 
-**Evidence level:** supported
+**Evidence level:** supported, with exact transversal fidelity theorems in several categories
 
 ## Core intuition
 
-Across Mathia, the recurring failure is not “spectralization,” “positivity,” or “taking a scalar” in the abstract. It is applying a transformation that is non-injective on the **particular distinction later claimed to be arithmetic**, or optimizing perfectly after that distinction has already been discarded. The newer evidence adds an important correction: large rank or noncommutativity does not by itself prove that information is novel. One must compute not only how many directions survive, but what classical data determine them.
+Across Mathia, the recurring failure is not “spectralization,” “positivity,” or “taking a scalar” in the abstract. It is applying a transformation whose induced indistinguishability relation already identifies states that the later arithmetic claim needs to distinguish. The new Arithmetic Fidelity line turns this from a methodological slogan into exact model theorems: recoverability is fiberwise, admissible observables define a maximal quotient, and deterministic post-processing or stochastic garbling cannot recreate information absent from that quotient.
 
 ## Strongest current principle
 
-Several branches now exhibit mathematically different forms of the same information-loss mechanism.
+Arithmetic Fidelity supplies the transversal formal core. AF-001 proves `d=r∘T` exactly when `d` is constant on `T`-fibers; AF-003 says the joint map of all admissible observables is the maximal quotient available to a constrained repair; AF-011 gives the zero-error support-confusability analogue. AF-002/AF-005 also show why “add more features” is not enough: the meaningful question is whether a canonically allowed family hits every discriminator conflict, including finite aliases invisible to rank. Unconstrained marks can simply leak the target and are mathematically vacuous.
 
-- **Prime Circle:** pointing a translation-invariant shell, staged Schur refinement, and fixed primitive character blocks classicalize. PC-047 corrects the former low-rank reading of the old/new cotangent carrier: it can be maximal or full rank. PC-048--PC-049 then show the deeper obstruction — much of that high-dimensional carrier is still fixed character/refinement data (`L(0,eta)`, Gauss/Ramanujan factors, commuting invertible pushforwards). Rank is information capacity, not evidence of a new arithmetic variable.
-- **Prime Flute:** marked local spectral measures can retain ordered multi-neck data that scalar determinants erase, while the `p_n+1` clone matches increasingly strong pant/collar/gluing geometry. PF-112 further shows that first-resolvent trace class is blocked locally for any nonisometric smooth metric comparison, so the tail question must be asked in a weaker operator category rather than inferred from coordinate summability.
-- **Prime Lattice:** a common off-line Blaschke factor is invisible to every generator Gram matrix while Nyman remains target/model-space totality. Prime-action repairs add the same warning: exact covariance can be too rigid, weak resolvent covariance automatic, and scalar/projective/standard model-space structures can retain formal complexity while remaining target-universal.
-- **Weil Inertia:** the hierarchy is now three-stage. Global Fenchel coupling removes block optimization loss; translation-Gram realizability improves the sharp abstract trace--energy envelope; but WI-025--WI-026 then give matched controls for the realized single-profile four-point architecture itself. Once that representation is matched, another inequality on the same data cannot recover the missing discriminator.
-- **Weil Positivity:** finite positive Gram or cycle-logdet readouts can recover `Lambda(n)` (WP-030, WP-043), so positivity need not erase arithmetic immediately. The failure occurs at the global pairing: direct critical completion is nonclosable, the signed birth form is singular/unbounded below, and natural positive radial/Schur reductions remove the birth term (WP-032--WP-045).
+The branch evidence then instantiates different failure modes. Prime Circle now has a genuinely nonlocal Hardy lift, yet every finite mixed essential algebra is only a wedge of universal Hilbert bands; arithmetic remains in trace-class relative data. Prime Flute has an even stronger matched control: PF-125 proves the exact prime flute and the all-composite `p_n+1` clone are compact-resolvent equivalent, so essential spectrum has already identified the prime/non-prime distinction. Prime Lattice repeatedly shows that generator/boundary compressions can be target-blind or topology-dependent. Weil Inertia separates optimization loss from a locally centered super-polylogarithmic alias obstruction. Weil Positivity shows that exact selectors can survive positive finite geometry while disappearing only when one passes to a radial reduction, principal class, or torsion-forgetting real pairing.
 
-These are not one theorem, but they support one robust rule:
+These are different theorems, not one universal category-free statement. Together they support a precise workflow:
 
 \[
-\boxed{
-\text{compute the fibers and classical determination of every stage before optimizing, spectralizing, or proving positivity.}
-}
+\boxed{\text{derive the admissible observable class} \to \text{compute its fibers} \to \text{only then optimize, spectralize, or prove positivity}.}
 \]
 
 ## Positive examples
 
-Compression remains useful when its fibers are controlled. Prime-Flute endpoint spectral measures/Weyl data can determine an ordered finite weighted path even when unmarked eigenvalues cannot. The Weil-Inertia Fenchel dual correctly recovers information lost by block pinching, and later span-packing constraints correctly recover information lost by an abstract scalar envelope. WP-030 shows that a nonlinear positive determinant can retain a finite selector even when a scalar quadratic readout would not.
+Compression can be repaired when the extra relation is canonical. AF-004's bispectrum restores finite-abelian signals modulo translation; AF-005 gives an exact annihilator-lattice criterion for monomial phase lifts; AF-006 shows that full marked eigenspace Gram data can classify what diagonal spectral measures lose. Prime-Flute marked Weyl/spectral data similarly retain ordered finite-neck memory that scalar determinants erase.
 
 ## Evidence against overgeneralization
 
-A map may be globally non-injective yet sufficient for one arithmetic predicate; full input reconstruction is unnecessary. Conversely, high rank, injectivity on labels, or retention of a selector does not prove RH relevance. The audit must be relative to the claimed distinction and separate **optimization loss**, **realizability loss**, **representation loss**, and **classical determination**.
-
-Nor does the rule demand that the final object remain high-dimensional. A later scalar or determinant can be decisive if the target predicate is proved to factor through it and the global sign/selector theorem is independent of the desired conclusion.
+Full input reconstruction is unnecessary if the desired predicate already factors through the quotient. Conversely, high rank, injective labels, a positive determinant, or an exact selector does not establish RH relevance. The relevant audit is always relative to the claimed discriminator and the admissibility constraints on information that may be added.
 
 ## Status / novelty
 
-This is a cross-branch synthesis, not a standalone theorem. Every listed loss/correction mechanism is grounded in persisted findings; their organization as an order-of-operations principle is supported.
+The fiberwise and category-specific fidelity results are persisted evidence; their use as a cross-branch order-of-operations principle is a supported synthesis.
 
 ## Falsification criterion
 
-Find a canonical pipeline in which a stage is provably invariant under changing the claimed RH-relevant variable, no later stage receives new target/mark/reference/arithmetic information, yet a later observable recovers that variable. Alternatively, exceed a persisted matched-representation ceiling using only the exact same represented data.
+Find a canonical pipeline where the target discriminator varies inside the maximal admissible fiber at some stage, no later stage receives new admissible information, yet the final invariant recovers the discriminator. Within the audited deterministic/stochastic models this would contradict the persisted fidelity results.
 
 ## Lean-formalizable core
 
-- Representative non-injectivity and telescoping identities.
-- Character determination despite maximal matrix rank.
-- Inner-isometry invariance of Gram matrices.
-- Exact Fenchel duality plus realized matched-representation countermodels.
-- Common-mode cancellation of arithmetic birth data under positive completion.
+- Fiberwise factorization and post-processing monotonicity.
+- Maximal admissible quotient and finite conflict hitting sets.
+- Support-confusability monotonicity under garbling.
+- Exact relational-lift examples via annihilator lattices and marked Gram data.
