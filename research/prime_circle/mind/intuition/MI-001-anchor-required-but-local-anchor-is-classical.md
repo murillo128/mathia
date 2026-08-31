@@ -1,40 +1,37 @@
-# MI-001 — Anchoring is necessary, but rank and same-shell noncommutativity are not arithmetic novelty
+# MI-001 — Anchoring is necessary, but rank and low-order nonlinear coupling are not arithmetic novelty
 
 **Evidence level:** supported by exact and literature-backed negative results
 
 ## Core intuition
 
-Breaking rotational symmetry by naming vertices or keeping an old/new block active is necessary to avoid the coarsest Prime-Circle quotients, but neither matrix rank nor same-level noncommutativity is a reliable proxy for new arithmetic information. The correction PC-047 is decisive here: the natural old/new cotangent carrier that had been interpreted as low-rank can in fact have maximal or full rank. What matters is not how many directions survive, but whether their values escape the classical character, divisor, and refinement data already forced by the shell geometry.
+Breaking rotational symmetry by naming vertices or keeping an old/new block active is necessary to avoid the coarsest Prime-Circle quotients, but neither matrix rank nor the first canonical nonlinear couplings are reliable proxies for new arithmetic information. What matters is whether the resulting interaction escapes the classical character, endpoint-potential, divisor, and gauge data already forced by the shell geometry.
 
 ## Strongest justified principle
 
-The current one-shell/canonical-refinement evidence separates **information capacity** from **information novelty**.
+The current one-shell and canonical-refinement evidence separates **information capacity** from **information novelty**.
 
-- PC-038 shows that pointed local spectral measures, vertex-deleted determinants, and Schur self-energies of a translation-invariant shell are derivative data of the full-shell characteristic polynomial.
-- PC-039 shows that canonical inverse-square divisor refinement by Schur/Kron reduction is path independent, so staged elimination creates no refinement holonomy.
-- PC-044--PC-045 reduce the first square-free primitive metric and oriented/chiral blocks to finite Dirichlet-character packages at fixed values `L(-1,chi)` and `L(0,chi)`.
-- PC-047 corrects the former low-rank reading: the old/new cotangent carrier can be maximal rank, and even the metric/chiral commutator can be full rank. High rank therefore does not itself identify a new arithmetic channel.
-- PC-048 then resolves the same carrier by exact birth order and multiplicative characters and finds explicit Gauss/Ramanujan factors multiplying fixed `L(0,eta)` data. PC-049 and the subsequent cotangent refinement calculations show that several natural fiber-average/pushforward operations are commuting, invertible, or affine copies of lower-level data rather than new dynamics.
+PC-038 shows that pointed local spectral measures, vertex-deleted determinants, and Schur self-energies of a translation-invariant shell are derivative data of the full-shell characteristic polynomial. PC-039 shows that canonical inverse-square divisor refinement by Schur/Kron reduction is path independent. PC-044--PC-045 reduce the first square-free primitive metric and oriented/chiral blocks to finite Dirichlet-character packages, while PC-047 corrects the former low-rank reading: the old/new cotangent carrier and even a natural commutator can have maximal or full rank. High rank therefore does not identify a new arithmetic channel.
 
-The live variable is therefore **structured fine/coarse coupling before it is averaged into a character package or a commuting refinement map**, not rank by itself.
+The newer nonlinear audits close three tempting escapes. PC-087 computes the sector coefficient induced by intrinsic pointwise multiplication on a complete preimage tube and proves that its apparent carry cocycle is an explicit coboundary. PC-088 takes the more geometric Leibniz defect of the cotangent operator: the resulting bilinear coupling and its associator are Hochschild gauge, coming from a trivial deformation, and do not see how a fixed total refinement multiplier factors. PC-089 then shows that a two-step cotangent path through one intermediate exact-order shell collapses exactly to the direct endpoint block multiplied by cyclotomic logarithmic-derivative potentials, plus a rank-one cardinality term.
+
+Thus adding noncommutativity, a raw associator, sector mixing, or an intermediate summation is not enough. The live variable must survive after quotienting out frame transport, operator coboundaries, endpoint-only potentials, fixed character packages, and commuting refinement maps.
 
 ## What remains possible
 
-A simultaneous multilevel operator can still carry information in correlations among old/new singular vectors, in noncommuting fine/coarse maps, in shell-dependent nonlinear response, or in a global uniformization that does not factor through fixed one-level character data. Those possibilities are not ruled out by PC-047--PC-049.
-
-What no longer qualifies is an argument whose novelty claim rests on a large rank, on the mere failure of one polynomial relation, or on a canonical fiber average whose character multipliers are already explicit classical data.
+Several genuinely stronger categories remain open: paths with multiple independently weighted intermediate shells, nonlinear tensors not generated by pointwise multiplication or one operator coboundary, the higher Hardy trace algebra, and global uniformization/monodromy. A surviving construction must exhibit information that cannot be reconstructed from the documented lower-order packages and must pass a matched refinement/composite control at the same interaction layer.
 
 ## Status / novelty
 
-The rank correction, character decompositions, path-independence identities, and commuting refinement formulas are persisted findings. The synthesis is a supported design constraint, not a theorem that every multilevel Prime-Circle construction classicalizes.
+The rank correction, character decompositions, path-independence identities, pure-gauge cocycles, Hochschild exactness, and endpoint-potential collapse are persisted findings. The synthesis is a supported design constraint, not a theorem that every multilevel Prime-Circle construction classicalizes.
 
 ## Falsification criterion
 
-Construct a canonical one-shell or commuting-refinement observable from the audited operators whose value is not determined by the corresponding shell spectrum, fixed Dirichlet-character data, and explicit refinement multipliers. Alternatively, exhibit a simultaneous multilevel invariant that survives after those classical packages are held fixed; that would confirm the stated boundary rather than falsify it.
+Construct a canonical low-order shell/refinement interaction in the audited classes whose value is not determined by the corresponding shell spectra, character data, gauge transport, endpoint potentials, and explicit refinement multipliers. Alternatively, exhibit a higher interaction that survives all of those controls; that would locate the first genuinely new information layer.
 
 ## Lean-formalizable core
 
-- Rank formulas for the old/new cotangent incidence block and the corrected same-level identities.
-- Character decomposition of fixed-level old/new couplings.
+- Rank formulas for old/new cotangent incidence blocks.
 - Associativity/path independence of Schur refinement.
-- Commutation and invertibility of the canonical cotangent refinement pushforwards.
+- Explicit coboundary formula for the sector carry cocycle.
+- Hochschild-coboundary identity for the Leibniz defect.
+- Three-point cotangent composition and one-intermediate-shell collapse.

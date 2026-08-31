@@ -1,37 +1,40 @@
-# MI-004 — Rational-prime specificity depends on which normed analytic layer is retained
+# MI-004 — Rational-prime specificity depends on the retained analytic layer and admissible global class
 
-**Evidence level:** supported by exact algebraic reconstruction and classical matched-control theorems
+**Evidence level:** supported by exact analytic fiber classifications and matched controls
 
 ## Core intuition
 
-“Contains primes” is not a stable fidelity statement. The bare multiplicative structure remembers atomhood and factorization shape while forgetting which atom is the rational prime `p` and what its Archimedean norm is. Adding a norm can restore that information, but a later analytic compression can erase it again. Prime specificity must therefore be audited at the exact destination layer, not inferred from the provenance of the input.
+“Contains primes” is not a stable fidelity statement, and neither is “contains the zero set.” The bare multiplicative source, the exact Euler product, the exact logarithmic derivative, and the zero/pole divisor are different information layers. A later global analytic restriction can also shrink a broad same-divisor fiber, but only when that restriction is independently part of the admitted object rather than imposed after the desired target is known.
 
 ## Strongest justified principle
 
-AF-015 computes the exact symmetry boundary of the bare multiplicative monoid: `Aut(N_{>0},x)` is the full permutation group of the prime generators. Its orbit quotient remembers exponent multisets, hence primality and factorization shape, but not the ordinary assignments `p`, `log p`, or prime order. Classical arithmetical-semigroup theory makes the missing structure explicit by adjoining a norm/degree as extra data.
+AF-015 computes the symmetry boundary of the bare multiplicative monoid: it remembers atomhood and factorization shape while forgetting the ordinary assignments `p`, `log p`, and prime order. AF-017 then shows that, in an absolute-convergence half-plane, the exact Euler-product function determines the unordered generator-norm multiset, whereas the meromorphic divisor can lose it through a zero-free factor.
 
-AF-017 then separates two analytic destinations. In an absolute-convergence half-plane, the exact Euler-product function determines the prime sum by logarithm plus Möbius inversion, and the prime sum determines the unordered generator-norm multiset. But the zero/pole divisor is not faithful: Grosswald--Schnitzer-type systems can alter generator norms while preserving the zeta zero divisor and pole in the stated half-plane through a nonvanishing analytic factor. Thus
+AF-019 inserts the exact logarithmic derivative between those layers. Equality of `f'/f` determines a meromorphic function up to one nonzero scalar, and normalized Euler products remove that scalar intrinsically; by contrast, retaining only the polar principal parts of `f'/f` is exactly divisor data and discards the regular contribution of the zero-free factor. Thus the regular part of the logarithmic derivative is a genuine fidelity carrier rather than disposable analytic background.
 
-`normed prime system -> exact Euler-product function -> meromorphic divisor`
-
-has a faithful first step for the norm multiset and a nonfaithful second step.
-
-AF-016 prevents a false converse. Killing the obvious prime-permutation automorphisms does not prove that a desired norm or marking is intrinsically recoverable in the declared language; outside regimes with a completeness theorem, base-model automorphism invariance is only a negative obstruction test.
+AF-018 supplies the complementary rigidity direction. Inside the class of entire functions of order at most one, a common zero divisor leaves only an `e^{as+b}` ambiguity. A common reflection equation kills the linear slope and one nonzero normalization kills the remaining scale. For Riemann `xi`, the nontrivial zero divisor together with the independently admitted order-one class, reflection law, normalization, and completion convention therefore recovers the exact completed function. This is constraint-assisted recovery, not faithfulness of the raw divisor in an unrestricted category.
 
 ## What remains possible
 
-A rational-prime-specific mechanism can survive if the destination retains enough independently normalized analytic data to fix the norm system or constrain the zero-free factor. Exact values, Euler coefficients, a rigid functional-equation/growth normalization, or another canonical enrichment are possible candidates, but their fidelity has to be proved against matched generalized-prime controls.
+A rational-prime-specific mechanism can survive at a compressed analytic layer when the full admissible category has a completeness theorem that classifies its fiber and the extra growth, reflection, normalization, boundary, or completion data are forced independently. Conversely, a route that uses only residues or a zero divisor must not silently inherit the regular/zero-free information of the exact logarithmic derivative.
+
+The audit is therefore category-indexed:
+
+`source -> exact analytic object -> exact log derivative -> regular/principal-part split -> divisor`,
+
+with any claimed reverse implication justified by an explicit fiber-rigidity theorem rather than provenance or symmetry alone.
 
 ## Status / novelty
 
-The free-monoid symmetry, arithmetical-semigroup norm separation, Möbius inversion, Svenonius boundary, and Grosswald--Schnitzer controls are classical or persisted exact findings. The category-indexed fidelity hierarchy is the supported Arithmetic Fidelity synthesis.
+Hadamard factorization, logarithmic-derivative recovery, the Riemann `xi` functional equation, Möbius inversion, and the Grosswald--Schnitzer controls are classical or persisted exact findings. The durable Arithmetic Fidelity contribution is the placement of these results into one explicit hierarchy of adjacent information layers and admissible-category fibers.
 
 ## Falsification criterion
 
-Exhibit two different normed prime systems with the same destination object in a category claimed to be faithful, or prove that a proposed destination normalization reconstructs the ordinary rational-prime norm multiset and defeats the strongest matched controls.
+Exhibit two different normed prime systems or completed analytic objects with the same destination inside a category claimed to be faithful, or prove that an independently forced analytic class and normalization classify the full destination fiber and reconstruct the exact normalized Euler product.
 
 ## Lean-formalizable core
 
-- Free commutative monoid automorphism/orbit classification.
-- Möbius inversion from Euler-product logarithm to prime sum.
-- Uniqueness of a locally finite norm multiset from its Dirichlet/Laplace sum.
+- Equality of logarithmic derivatives implies equality modulo scale on a connected domain.
+- Principal parts of `f'/f` equal divisor data.
+- Order-one same-zero fiber `e^{as+b}` and its reduction by reflection and normalization.
+- Möbius inversion from an exact normalized Euler product to the generator-norm multiset.

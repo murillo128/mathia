@@ -14,14 +14,12 @@ Global Fenchel coupling can remove artificial blockwise optimization loss, but n
 
 Abstract trace/energy envelopes can overestimate what one translated profile and its shifted assembly can realize. Packing/span constraints and matched realized controls should be applied before interpreting an improved scalar bound as new arithmetic information.
 
-## Control the source-faithful power-modulus welding residual beyond the nilsequence-BV region
+## Prove a source-faithful collective conditioned-pair estimate beyond the current welding region
 
-**Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`.
+**Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate` and `MI-004-w-conditioning-is-l2-compressible-but-l1-expensive`.
 
-The genuine four-form local main centers, fixed polylogarithmic coefficients are controlled, and Shao--Teräväinen nilsequence Bombieri--Vinogradov plus the exact pair-fiber/Parseval identity controls a positive-power region on both coefficient sides:
+The genuine four-form local main centers and fixed polylogarithmic coefficients are controlled, while Shao--Teräväinen nilsequence Bombieri--Vinogradov plus the exact pair-fiber/Parseval identity controls a positive-power region on both coefficient sides. The remaining obstruction is conditioned pair information outside that region.
 
-`4 alpha + beta < 1` and `alpha + 4 beta < 1`.
+WI-058--WI-060 sharpen the analytic shape of the missing input. The deterministic `W`-local pair main is spectrally concentrated at subpolynomial conductors in `L^2`, but every fixed-polylog conductor cutoff misses nonnegligible energy, and a sufficient retained spectrum has super-polylogarithmic Wiener mass. Therefore termwise additive-twist bounds assembled by triangle inequality cannot close the source problem with any fixed logarithmic saving.
 
-The remaining analytic problem lies outside that region, together with the deterministic `W`-local/genuine-four-form main splice and the separately booked boundary/collision interfaces. Recent AP-maximal, simultaneous-AP, and convolution-BV theorems do not black-box close the source object: their normalizations, residue hypotheses, congruence architecture, or well-factorable modulus slots do not match the locked additive four-prime system.
-
-A decisive result must therefore be a source-faithful conditioned/twisted pair-correlation or two-modulus dispersion theorem, or an exact identity that removes the offending local residue modes before estimation. Ordinary marginal pair discrepancy is insufficient; WI-057 gives an exact periodic control showing that even uniformly bounded interval discrepancy can correlate at full scale with a `W`-local mode.
+A decisive result must exploit collective square-function/large-sieve cancellation, a direct conditioned covariance theorem, or an exact identity that removes the offending local residue modes before estimation, while preserving the locked additive four-prime geometry and source normalization. Ordinary marginal pair discrepancy and modewise absolute summation are insufficient.

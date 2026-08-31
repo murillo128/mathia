@@ -26,10 +26,18 @@ Determine when vertical-rank, conditional-variance, statistical-sufficiency, ful
 
 A decisive result must state the topology/category and show either equivalence under sharp hypotheses or a persistent obstruction. Small average error, formal agreement, infinitesimal injectivity, or base-model symmetry breaking alone does not establish exact recoverability.
 
-## Separate rational-prime norm fidelity from divisor fidelity
+## Classify which analytic layer retains rational-prime norms
 
 **Linked intuitions:** `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`.
 
-The bare multiplicative monoid retains prime type but forgets rational-prime identities and the norm `p -> p`; a chosen norm restores a weighted prime system, while the exact Euler-product function can recover the unordered norm multiset. Passing only to a meromorphic zero/pole divisor can lose that information again through zero-free factors.
+The bare multiplicative monoid retains prime type but not rational-prime norms. Exact normalized Euler products and exact logarithmic derivatives can recover the unordered norm multiset, while principal-part/divisor compression can lose the zero-free analytic factor. Conversely, an independently justified rigid global class can shrink a same-divisor fiber: order-one growth plus reflection and one normalization recover the completed `xi` function.
 
-The live problem is category-indexed: identify independently forced enrichments and analytic normalizations that retain ordinary rational-prime specificity after the actual downstream compression, and test them against Beurling, arithmetic-equivalence, and Grosswald--Schnitzer-type matched controls. A positive result must prove fidelity of the destination, not merely break visible prime-permutation symmetries.
+The live problem is to compute the complete fiber at the exact destination used by a proposed mechanism and distinguish genuine intrinsic completion data from constraints added only after the target is known. A decisive result either reconstructs the normalized analytic object in its admitted category or exhibits a matched generalized-prime control that survives all retained structure.
+
+## Determine when finite test families can be faithful on arithmetic source classes
+
+**Linked intuitions:** `MI-005-test-family-fidelity-has-scale-and-dimension-gates`.
+
+The complete Weil test functional is norm-faithful and fixed support has an exact arithmetic horizon, but finite-dimensional test vectors have exact local Beurling collision fibers at regular points. Determine whether natural constrained test classes or source restrictions can force exceptional pointwise rigidity at the rational primes, and characterize the singular strata on which such rigidity could occur.
+
+A decisive positive result must prove isolation in the actual admissible generalized-prime/source category. A decisive negative result is an exact same-test deformation through the claimed source point or a structural theorem showing positive-dimensional fibers persist under the relevant test constraints.

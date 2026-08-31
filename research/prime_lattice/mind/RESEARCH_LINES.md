@@ -24,7 +24,7 @@ Exact prime-shift covariance is too rigid, while weak resolvent/projective cocyc
 
 **Linked intuitions:** `MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary`.
 
-Completion cancels the universal PNT rank-one mode; fixed smoothing, spatial decompactification, broad moving bands, and now every natural fixed-depth band with `log N=o(exp L)` are strongly constrained. PL-066 shows that order-one noncollapse in the latter regime would force a quantitatively rightmost zero, and under RH all such bands collapse. Essential prime-log recurrence survives only on much later moving states.
+Completion cancels the universal PNT rank-one mode; fixed smoothing, spatial decompactification, broad moving bands, and every natural fixed-depth band with `log N=o(exp L)` are strongly constrained. PL-066 shows that order-one noncollapse in the latter regime would force a quantitatively rightmost zero, and under RH all such bands collapse. Essential prime-log recurrence survives only on much later moving states.
 
 A decisive positive topology must therefore live at or beyond the remaining transition, be defined from the completed Weil geometry before inspecting zeros, and distinguish rational primes from Beurling controls. A general no-go proving that the residual transition is only zero-free/PNT estimates plus recurrence would close this route.
 
@@ -35,3 +35,11 @@ A decisive positive topology must therefore live at or beyond the remaining tran
 On fixed smooth cross-end probes, the critical second amplitude produces an almost-periodic zero signal. For residual probes its boundedness is RH-equivalent, but the signal generically has no limit under RH; its Bohr hull is a generic compact-group rotation, same-time prime coupling reduces to exact frequency-module intersection, and adaptive finite-horizon resonances are Diophantine-universal.
 
 The only potentially new route is therefore upstream: derive the required boundedness or an equivalent coercive estimate directly from rational-prime/completion structure without using the already-continued zero expansion as the controlling input. If every such derivation merely reimports the explicit formula or a zero-location theorem, the second-scale criterion is diagnostic rather than explanatory.
+
+## Separate global growing-lag coupling from universal fixed-lag criticality
+
+**Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
+
+The positive-cone `N~T` transition is universal, unpointed Möbius orientation is a torus gauge, and after pointing every fixed-lag component reduces to the universal sinc kernel multiplied by a classical additive correlation. The half-weight `sigma=1/2` is likewise universal whenever the coefficient system has nonzero fixed-lag density.
+
+The remaining mathematical question is whether growing lags, the full lag sum, or another genuinely global coefficient coupling yields an invariant not determined by the corresponding Chowla, Hardy--Littlewood, Mirsky, or generic spacing data. A decisive result must pass matched generalized-prime/coefficient controls and expose structure forced by the exact rational-prime norm completion rather than by the universal finite-horizon kernel.
