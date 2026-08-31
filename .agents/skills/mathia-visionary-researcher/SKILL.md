@@ -1,6 +1,6 @@
 ---
 name: mathia-visionary-researcher
-description: Run sparse ultra-effort program-level campaigns for genuinely new Riemann-hypothesis attack families, grounded in Mathia's full current research state and prior-art corpus, with campaign state persisted only in a GitHub issue and at most one literature-audited proposed clue published per campaign.
+description: Run sparse ultra-effort program-level campaigns for genuinely new Riemann-hypothesis attack families, grounded in Mathia's full current research state and prior-art corpus, with campaign state persisted only in a GitHub issue and at most one proposed clue published per campaign.
 ---
 
 # Mathia Visionary Researcher
@@ -26,6 +26,13 @@ Its only substantive repository output is:
 ```text
 zero or one proposed research clue per complete campaign
 ```
+
+That single clue may be either:
+
+- a **survivor clue**: the final attack-family candidate that survives phases 3–5 and the phase-6 publication gate; or
+- a **derived handoff clue**: a distinct falsifiable question exposed while a candidate is being killed, narrowed, or collided with existing Mathia work, even when the campaign ends with no surviving attack-family candidate.
+
+A derived handoff clue is not a way to resurrect a killed candidate. It must preserve the kill, state the new residual question separately, and hand only that question to the appropriate Research Watch or global clue inbox for ordinary triage.
 
 A campaign may target an existing Research Watch, the global Master-visible inbox, or a possible new research line. Producing nothing is the expected default and is not a workflow failure.
 
@@ -94,6 +101,16 @@ Before starting work, search for an open issue whose title begins `[visionary]` 
 
 A campaign issue may be closed only by phase 6 or when a workflow failure makes the campaign unrecoverable. A normal null result closes the issue silently.
 
+### Campaign identity invariant
+
+The campaign identifier is immutable after creation.
+
+- The suffix in the issue title `[visionary] <campaign-id>` and the body field `campaign: <campaign-id>` must match exactly before mathematical work begins.
+- A later phase must never mint a new campaign identifier inside the same issue.
+- `state_revision` must increase monotonically.
+- If title/body identity diverges and the issue history makes the intended identity unambiguous, repair the control-plane state before research and record one compact workflow-repair comment.
+- If identity is ambiguous, stop and report a workflow failure rather than guessing.
+
 ### Canonical issue state
 
 Keep the issue body as the compact mutable pointer to current state. It should contain fields equivalent to:
@@ -107,7 +124,10 @@ phase_state: in-progress
 base_main_sha: <sha>
 state_revision: 0
 survivors: []
+handoff_question: null
 ```
+
+`handoff_question` may contain at most one compact derived-handoff identifier/question for phase 6. It is not evidence and must not become a candidate backlog.
 
 It may additionally contain compact corpus/tree hashes or candidate IDs needed for deterministic recovery. Do not put mathematical claims in frontmatter-like state merely because they are convenient.
 
@@ -118,11 +138,38 @@ Each completed or partial phase adds one concise issue comment containing:
 - structured surviving candidate IDs/questions when relevant;
 - exact persisted paths or bibliographic identifiers needed by the next phase;
 - explicit kill reasons for candidates that must not be regenerated inside the same campaign;
+- when one exists, one compact derived handoff question and the killed/narrowed candidate from which it arose;
 - the next phase or remaining substep.
 
 Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully if ordinary context continuity is unavailable.
 
-After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, `state_revision`, and survivor set.
+After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, `state_revision`, survivor set, and optional single handoff question.
+
+## Candidate identity continuity gate
+
+Phase 2 establishes the immutable identity of each tournament candidate. Its checkpoint must preserve, for every retained candidate:
+
+- `candidate_id`;
+- likely owner/scope;
+- exact mathematical object/construction;
+- claimed obstruction or information-loss mechanism it aims to evade;
+- decisive first-kill test.
+
+Every later phase must load the last valid checkpoint and verify that it is still evaluating **that same candidate** before recording a kill, survival, or narrowing.
+
+A candidate may be narrowed around a residual question only when the mathematical object and operation remain recognizably the same. The checkpoint must state the narrowing explicitly. If the object, owner, mathematical category, or proposed mechanism changes materially, that is a new candidate and must not inherit the old `candidate_id` inside a later phase.
+
+Cross-line evidence may kill a candidate only when the checkpoint states the exact mathematical dictionary showing that the cited result applies to the candidate's object and hypotheses. Shared vocabulary or a thematically similar obstruction is not enough.
+
+If a phase discovers that it has drifted to a different object while keeping the same `candidate_id`:
+
+1. do not count that as a kill;
+2. keep the affected candidate alive;
+3. restore the campaign to the last valid phase/checkpoint for that candidate;
+4. mark any downstream empty-survivor checkpoints that depended on the invalid kill as superseded control-plane state;
+5. re-audit only the affected candidate(s) against the same frozen `base_main_sha` rather than restarting phase 1.
+
+Candidate identity drift is a workflow defect, not mathematical evidence.
 
 ## Frozen campaign snapshot
 
@@ -132,7 +179,7 @@ Phases 2–5 must not refresh, reset, or reinterpret the campaign merely because
 
 In particular, commits made after `base_main_sha` are **not** a staleness condition and must never send the campaign back to phase 1. When an exact repository file is needed in phases 2–5, read it at `base_main_sha` when the GitHub capability permits an explicit ref; otherwise use the phase-1 checkpoint and record any unavoidable source-version ambiguity as a workflow limitation.
 
-Only phase 6 synchronizes current `main` again. Its job is publication safety, not retroactive campaign reconstruction: compare the single surviving candidate, if any, against material changes since `base_main_sha`. If new evidence duplicates, classicalizes, refutes, or materially invalidates the candidate, kill it and close the campaign without publication. Do **not** restart the campaign. If the candidate remains coherent, apply the normal publication gate against current `main`.
+Only phase 6 synchronizes current `main` again. Its job is publication safety, not retroactive campaign reconstruction: compare the surviving candidate, if any, and any single derived handoff question against material changes since `base_main_sha`. If new evidence duplicates, classicalizes, refutes, or materially invalidates either, drop it. Do **not** restart the campaign.
 
 ## Phase 1 — reconstruct state
 
@@ -179,13 +226,13 @@ A candidate must answer provisionally:
 6. What cheap decisive test could kill it?
 7. Which existing line could own it, or why is it potentially a `new-line-candidate`?
 
-The phase checkpoint should retain only a small tournament set, normally **3–6 candidate IDs**, each with a compact exact question and first-kill test. Do not persist the larger brainstormed pool.
+The phase checkpoint should retain only a small tournament set, normally **3–6 candidate IDs**, each with the identity tuple required by the Candidate identity continuity gate. Do not persist the larger brainstormed pool.
 
 ## Phase 3 — internal collision audit
 
 Attempt to kill the phase-2 candidates using **Mathia's complete persisted knowledge at `base_main_sha` before spending external-literature budget**.
 
-For each survivor, trace it to the exact relevant snapshot versions of:
+For each candidate, first restate its phase-2 identity tuple and confirm that the candidate being audited is still the same mathematical object. Then trace it to the exact relevant snapshot versions of:
 
 - findings;
 - open or completed `.review.md` sidecars;
@@ -197,13 +244,17 @@ For each survivor, trace it to the exact relevant snapshot versions of:
 
 Reject candidates that were already represented, already killed, classicalized by the frozen local prior art, constant on a known destructive quotient, contradicted by an accepted review, or simply another wording of an existing clue at `base_main_sha`.
 
+Every kill must say **why the cited theorem/control applies to the exact candidate construction**. If that mapping cannot be made, the citation is only a threat and the candidate survives this phase.
+
 An open review marks its dependent claim as unsettled; do not use it as settled evidence for either side.
+
+A kill may expose a separate falsifiable question useful to an existing line or the global program. Record at most one such `handoff_question`; do not relabel it as a surviving attack-family candidate.
 
 The checkpoint should retain at most **three** candidates for external audit, with exact repository paths that establish both their motivation and their strongest internal threat.
 
 ## Phase 4 — external literature audit
 
-Perform the mandatory broad external literature audit only for candidates that survived phase 3.
+Perform the mandatory broad external literature audit only for attack-family candidates that survived phase 3.
 
 For each candidate search in several passes:
 
@@ -225,13 +276,17 @@ Distinguish:
 
 Failure to locate the same proposal is not proof of novelty. Never label a candidate novel.
 
-Discard a candidate if it is already known, is an immediate coordinate change, or differs only rhetorically. If prior art leaves a precise Mathia-specific residual question, reshape the candidate around that residual.
+Discard a candidate if it is already known, is an immediate coordinate change, or differs only rhetorically. If prior art leaves a precise Mathia-specific residual question, reshape the candidate around that residual while preserving explicit lineage to the same candidate identity.
 
-The checkpoint should retain at most **two** candidates and include only compact bibliographic identifiers and the residual question. It must not become a literature-search log.
+A literature kill may also expose one distinct research-worthy handoff question. Keep at most one campaign-level `handoff_question` and prefer the one with the clearest owner and cheapest decisive test.
+
+The checkpoint should retain at most **two** attack-family candidates and include only compact bibliographic identifiers and the residual question. It must not become a literature-search log.
 
 ## Phase 5 — adversarial kill
 
-Try seriously to destroy every remaining candidate. Load the exact findings and reviews from the frozen `base_main_sha` required to audit each survivor and test at minimum whether:
+Try seriously to destroy every remaining attack-family candidate. Load the exact findings and reviews from the frozen `base_main_sha` required to audit each survivor and first re-verify candidate identity continuity.
+
+Test at minimum whether:
 
 - the construction is a tautology or a known RH-equivalent criterion with no new leverage;
 - desired positivity, zero-free region, spectral placement, or rigidity was inserted as an assumption;
@@ -243,19 +298,23 @@ Try seriously to destroy every remaining candidate. Load the exact findings and 
 - the decisive first test cannot distinguish success from a generic/classical phenomenon;
 - the candidate depends on an unsettled review as though it were accepted evidence.
 
-At most **one** candidate may survive phase 5. It may survive with substantial uncertainty; it may not survive with an unnamed object, missing construction, unfalsifiable promise, or hidden import of RH.
+At most **one** attack-family candidate may survive phase 5. It may survive with substantial uncertainty; it may not survive with an unnamed object, missing construction, unfalsifiable promise, or hidden import of RH.
 
-If none survives, set the campaign to phase 6 with an empty survivor set. Do not publish or notify yet.
+A successful kill may leave a **different** precise question worth handing to another researcher. Record at most one derived handoff question if it is genuinely distinct from the killed route and has a concrete decisive test.
+
+If no attack-family candidate survives, set the campaign to phase 6 with an empty survivor set but preserve the optional single `handoff_question`. Do not publish or notify yet.
 
 ## Phase 6 — publication gate
 
-Synchronize current `main` and perform a **candidate-specific publication audit** against material changes since `base_main_sha`. This is the only phase that consumes post-snapshot Mathia knowledge.
+Synchronize current `main` and perform the publication-safety audit against material changes since `base_main_sha`. This is the only phase that consumes post-snapshot Mathia knowledge.
 
-If there is no survivor, close the campaign issue as a normal null result. Make no repository commit and do not notify.
+There are two possible clue sources, with **at most one clue total per campaign**:
 
-If the survivor has been duplicated, classicalized, refuted, or materially invalidated by post-snapshot Mathia work, kill it, record the final disposition compactly, and close the campaign. Do not restart at phase 1.
+### A. Survivor clue
 
-If one candidate still survives, apply the **ultra-selective clue gate** against current `main`. Publish or materially strengthen at most one clue only when all hold:
+If one attack-family candidate survived phase 5, compare it against current `main`. If it has been duplicated, classicalized, refuted, or materially invalidated by post-snapshot work, kill it without restarting the campaign.
+
+Otherwise apply the **ultra-selective survivor clue gate**. Publish or materially strengthen a clue only when all hold:
 
 1. the mathematical object and proposed mechanism are explicit enough for another researcher to reconstruct;
 2. the direction is not duplicated by current findings, Mind, Master state, graph navigation, prior-art nodes, or clues in any lifecycle state;
@@ -265,9 +324,27 @@ If one candidate still survives, apply the **ultra-selective clue gate** against
 6. resolving it could redirect an existing line, create a genuine new information channel, or alter the global program;
 7. uncertainty is stated strongly enough that no reader could mistake it for evidence.
 
-A clever analogy, unexplored keyword combination, or long speculative derivation does not pass.
+### B. Derived handoff clue
+
+Even when no attack-family candidate survives, phase 6 may publish or materially strengthen one `status: proposed` handoff clue when a kill/narrowing exposed a **distinct** falsifiable question that deserves ordinary Research Watch investigation.
+
+All must hold:
+
+1. the parent candidate's kill remains valid; the clue does not reopen, weaken, or rhetorically rebrand the killed route;
+2. the handoff question is mathematically explicit and materially useful on its own;
+3. it has a clear existing `target_line`, or is honestly global/cross-line;
+4. current findings, Mind, Master state, prior-art nodes, and clues do not already own the same precise question;
+5. the Visionary performs a bounded, targeted current literature check sufficient to rule out an obvious known duplicate or immediate classicalization; a full attack-family literature tournament is not required because the clue is explicitly unvalidated and will be triaged by Research Watch;
+6. it has a cheap decisive test or exact proof obligation;
+7. `## Evidence boundary` names the parent route that was killed/narrowed and makes explicit that only the residual question is being handed off.
+
+A clever analogy, generic future-work sentence, restatement of a kill, unexplored keyword combination, or long speculative derivation does not pass either gate.
+
+If both a survivor clue and a derived handoff clue qualify, prefer the survivor clue unless the handoff is clearly more actionable and program-relevant. Never publish more than one clue in the campaign.
 
 When the same precise question now exists as `status: proposed`, prefer materially strengthening that clue when permitted by the shared clue skill. Do not touch accepted, rejected, or resolved clues.
+
+If neither source qualifies, close the campaign issue as a normal null result with no repository commit.
 
 After the clue publication attempt, record only the final disposition and publication commit/path when applicable, then close the campaign issue.
 
@@ -295,9 +372,9 @@ origin: visionary-researcher
 
 Set `target_line` to the exact existing line, `global`, or `new-line-candidate`.
 
-The clue's `based_on` list must cite persisted Master/Mind/finding/prior-art/clue paths that motivated and constrained the proposal. In `## Evidence boundary`, include compact bibliographic identifiers for the closest authoritative external literature, state the exact overlap, and state the residual question not established there. Do not turn the clue into a campaign report.
+The clue's `based_on` list must cite persisted Master/Mind/finding/prior-art/clue paths that motivated and constrained the proposal. For a survivor clue, `## Evidence boundary` includes compact bibliographic identifiers for the closest authoritative external literature, the exact overlap, and the residual question not established there. For a derived handoff clue, include the bounded literature/dedup check and the exact persisted kill/narrowing boundary that makes the handoff question distinct.
 
-The Visionary must not set `accepted`, `rejected`, or `resolved`.
+Do not turn the clue into a campaign report. The Visionary must not set `accepted`, `rejected`, or `resolved`.
 
 ## Ownership and hard path gate
 
@@ -335,7 +412,7 @@ It must not create, delete, move, initialize, merge, pause, split, or recolor a 
 
 ## Publication policy
 
-A scheduled Visionary campaign may publish a clue change directly to the default branch only in phase 6 when the ultra-selective gate and all shared clue gates pass.
+A scheduled Visionary campaign may publish a clue change directly to the default branch only in phase 6 when either the survivor gate or derived-handoff gate and all shared clue gates pass.
 
 Before each publication commit:
 
@@ -343,7 +420,7 @@ Before each publication commit:
 2. inspect the complete diff;
 3. verify every changed path is an authorized clue path;
 4. verify every clue remains `status: proposed` and uses `origin: visionary-researcher`;
-5. verify the clue includes a concrete construction, decisive test, and bounded literature/evidence boundary;
+5. verify the clue includes a concrete question/construction, decisive test, and bounded literature/evidence boundary appropriate to its clue type;
 6. verify no state, finding, review, Mind, graph, prior-art, task, or unrelated file changed;
 7. remove formatting churn and any text that records the campaign rather than the research question.
 
@@ -354,7 +431,7 @@ research(visionary): propose <clue>
 research(visionary): sharpen <clue>
 ```
 
-If no candidate passes, create no commit. Never commit merely to show that a campaign phase ran.
+If no clue passes, create no commit. Never commit merely to show that a campaign phase ran.
 
 ## Notification and reporting
 
@@ -362,8 +439,9 @@ Campaign checkpoint issue comments are persistence, **not user notifications**.
 
 Notify only when:
 
-- phase 6 successfully publishes or materially strengthens a qualifying `status: proposed` Visionary clue; include clue path, `target_line`, exact research question, decisive first test, and publication commit;
-- a workflow, required-capability, synchronization, campaign-state ambiguity, path-gate, or publication failure prevents intended progress.
+- a workflow, required-capability, synchronization, campaign-state ambiguity, candidate-identity continuity, path-gate, or publication failure prevents intended progress.
+
+Clue creation/strengthening in `proposed` state follows the shared clue notification policy and is silent. The eventual Research Watch notifies separately if it changes the clue to `status: accepted`.
 
 Do not notify for:
 
@@ -375,13 +453,11 @@ Do not notify for:
 - routine literature completion;
 - normal campaign issue closure.
 
-The eventual Research Watch still notifies separately if it changes the clue to `status: accepted`.
-
 ## Operating cadence
 
-This skill is designed for **one continuing campaign advanced by a recurring invocation approximately every four hours**, rather than one monolithic weekly pass or a daily quota.
+This skill is designed for **one continuing campaign advanced by a recurring invocation**, rather than one monolithic weekly pass or a daily quota.
 
-The scheduler should invoke the same prompt each time. The skill determines whether to create a campaign, resume the current frozen-snapshot phase, repeat an incomplete phase, or close the campaign in phase 6.
+The scheduler should invoke the same prompt each time. The skill determines whether to create a campaign, resume the current frozen-snapshot phase, repeat an incomplete phase, repair an unambiguous control-plane identity/continuity defect, or close the campaign in phase 6.
 
 Do not start a second campaign while another is active. After phase 6 closes a campaign, the next scheduled invocation may start a new campaign immediately unless the user has changed the schedule.
 
