@@ -161,3 +161,7 @@ The mathematical objection is resolved, but closure is pending durable persisten
 \]
 
 has the intended divisor-type per-conductor price, with the second term negligible over Mikawa's modulus range. Persist this residue convention and Parseval-before-maximum argument in the canonical finding in place of the current ambiguous (12)--(18) passage. No stronger cross-conductor, moving-interval, local-main-splice, parity/collision, or two-leg conclusion is accepted by this review turn.
+
+## Owner
+
+The accepted Parseval-before-maximum repair is now persisted in the canonical WI-061 finding. Section 4 now uses the full-residue extension, keeps Parseval exact before any residue maximum, compares only reduced residues to Mikawa's `M_d`, and books non-reduced residues by the separately negligible prime-power term. The cross-conductor, moving-interval, local-main, parity/collision, and two-leg boundaries remain unchanged.
