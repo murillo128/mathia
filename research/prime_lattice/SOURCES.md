@@ -247,3 +247,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 62. **H. L. Montgomery, R. C. Vaughan**, “Hilbert's Inequality,” *Journal of the London Mathematical Society* (2) **8**(1) (1974), 73–82. DOI: https://doi.org/10.1112/jlms/s2-8.1.73.
     - Role: primary classical anchor for `PL-072`. The strengthened Hilbert inequality yields the weighted mean-value theorem for Dirichlet polynomials, giving the uniform quadratic estimate `integral_0^T |sum_(n<=N) a_n n^(-it)|^2 dt = T sum |a_n|^2 + O(sum n|a_n|^2)` and hence operator-norm asymptotic orthogonality of the positive-cone character Gram matrix when `N=o(T)`.
+
+## Nonharmonic Fourier density and the sharp logarithmic Gram phase
+
+63. **A. E. Ingham**, “Some trigonometrical inequalities with applications to the theory of series,” *Mathematische Zeitschrift* **41** (1936), 367–379.
+    - Role: primary classical gap-theorem anchor for `PL-080`. For separated real frequencies with gap at least `gamma`, gives two-sided nonharmonic Fourier `ell^2`/`L^2` inequalities on an interval whose length is strictly larger than `2 pi/gamma`; applied to the rescaled logarithmic gaps `T log((n+1)/n) -> 1/b`, this gives the uniform lower-frame side of the `b=1/(2 pi)` transition.
+
+64. **H. J. Landau**, “Necessary density conditions for sampling and interpolation of certain entire functions,” *Acta Mathematica* **117** (1967), 37–52. DOI: https://doi.org/10.1007/BF02395039.
+    - Role: classical density/Nyquist prior-art anchor for `PL-080`. Identifies the critical Beurling density constraints for stable sampling/interpolation of band-limited functions. For the unit-time rescaled logarithmic frequencies, the local point density near `n~xT` is `x`, placing the transition at the ordinary Nyquist value `x=1/(2 pi)` rather than at a prime-arithmetic scale.
