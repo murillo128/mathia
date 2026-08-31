@@ -363,6 +363,7 @@ The finite Hardy/Hankel program has a sharper frontier than PC-081 alone implied
 \[
 \boxed{
 \text{essential cross-shell geometry is universal, but higher nuclear traces are genuinely richer than resultants.}
+}
 \]
 
 For cyclically separated shells those traces are explicit critical cyclotomic cone periods. The next useful test is therefore not another finite essential-spectrum wrapper; it is to determine whether the canonical Abel regularization of these cycle-cone periods is already exhausted by cyclotomic conical-zeta/MZV theory, or whether Prime Circle forces a genuinely new cross-level analytic family before any RH interpretation is attempted.
