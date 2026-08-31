@@ -34,10 +34,10 @@ The bare multiplicative monoid retains prime type but not rational-prime norms. 
 
 The live problem is to compute the complete fiber at the exact destination used by a proposed mechanism and distinguish genuine intrinsic completion data from constraints added only after the target is known. A decisive result either reconstructs the normalized analytic object in its admitted category or exhibits a matched generalized-prime control that survives all retained structure.
 
-## Determine when finite test families can be faithful on arithmetic source classes
+## Determine which genuinely global test/source constraints can defeat local Weil programming
 
 **Linked intuitions:** `MI-005-test-family-fidelity-has-scale-and-dimension-gates`.
 
-The complete Weil test functional is norm-faithful and fixed support has an exact arithmetic horizon, but finite-dimensional test vectors have exact local Beurling collision fibers at regular points. Determine whether natural constrained test classes or source restrictions can force exceptional pointwise rigidity at the rational primes, and characterize the singular strata on which such rigidity could occur.
+The complete Weil functional is norm-faithful and fixed support has an exact arithmetic horizon, but finite-dimensional test vectors have exact local Beurling collision fibers at regular points. Singular isolation does not rescue this by itself: unconstrained smooth tests can manufacture an isolated point around any finite nonresonant source. Finite linear constraints can be invisible on the measurement quotient, and even normalized compact tests that are both pointwise nonnegative and Fourier-positive retain full-dimensional finite response jets.
 
-A decisive positive result must prove isolation in the actual admissible generalized-prime/source category. A decisive negative result is an exact same-test deformation through the claimed source point or a structural theorem showing positive-dimensional fibers persist under the relevant test constraints.
+The remaining question is therefore global. Determine whether a mathematically forced nonlocal admissibility condition, transform relation, infinite family constraint, or restricted source category destroys this local programming freedom and makes the rational-prime source exactly identifiable. A decisive positive result must prove isolation in that actual category and identify the quotient mechanism causing it; a decisive negative result is a same-test deformation or full-dimensional response family that survives the proposed global constraint.

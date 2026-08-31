@@ -1,39 +1,42 @@
-# MI-004 — A canonical critical axis or RH-equivalent diagnostic is not a zero-selection mechanism
+# MI-004 — A canonically forced critical half-weight or RH-equivalent diagnostic is not a zero-selection mechanism
 
 **Evidence level:** supported by exact/classical mechanisms in multiple branches
 
 ## Core intuition
 
-Mathia has many independent reasons why a distinguished real part, boundary, or real spectral carrier can emerge naturally: self-duality, Hilbert/Schatten membership, product-measure equivalence, cusp propagation, completion, or boundary rescaling. The newer evidence sharpens the separation further: one may even obtain a **criterion equivalent to RH** after the continued zero divisor has already been encoded, without obtaining a new mechanism that selects the zeros. Axis generation, diagnostic equivalence, and zero selection are three different mathematical achievements.
+Mathia now has several independent mechanisms that canonically produce the critical half-weight or critical axis without selecting Riemann zeros. Self-duality, Hilbert/measure normalization, finite-horizon correlation balance, and the pointed-cover isometry can all force `1/2` for structural reasons. One may also obtain an RH-equivalent boundedness criterion after the continued zero divisor is already encoded. **Axis/weight generation, diagnostic equivalence, and zero selection are three different achievements.**
 
 ## Strongest justified principle
 
-Prime Lattice gives the clearest hierarchy. Tate duality and several Hilbert/measure constructions canonically distinguish `Re(s)=1/2` without a target-sensitive zero theorem. Localized Weil operators can be spectrally real before prime terms appear, and completion cancels the first PNT boundary mode. PL-066 shows natural moving-band noncollapse below the archimedean scale would certify a sufficiently rightward zero; under RH those bands collapse.
+Prime Lattice gives two distinct controls. Tate duality and Hilbert/measure constructions canonically distinguish `Re(s)=1/2`, while fixed-lag finite-horizon Gram statistics select `n^{-1/2}` universally whenever a coefficient system has nonzero correlation density. PL-076--PL-081 then show that natural globalizations of this finite-horizon branch lead to classical prolate/Nyquist sampling, short-interval variance, prime-gap scales, or Montgomery pair correlation rather than a new zero selector.
 
-PL-067--PL-071 go one step further. At the critical second amplitude, fixed smooth completed boundary coefficients become explicit exponential sums over nontrivial zeros. For residual probes their boundedness is RH-equivalent (PL-068). But assuming RH the signal is generically nonconvergent almost-periodic recurrence; its translation hull is a generic compact-group rotation built from the zero frequency module, same-time coupling to the prime-log flow reduces to exact frequency intersection, and adaptive finite-horizon resonances can shadow arbitrary real frequency patterns. These operations reorganize zero data already supplied by the explicit formula rather than force the zeros onto the line.
+The completed-Weil second-scale branch is even more diagnostic. On fixed smooth probes its critical amplitude is an explicit almost-periodic zero-frequency sum; boundedness can be RH-equivalent, yet under RH the signal need not converge. Hull, joining, and adaptive resonance constructions reorganize zero data already supplied by the explicit formula rather than force the divisor onto the line.
 
-Prime Circle supplies parallel controls: a compatible carrier can preserve exact-order labels while natural spectra remain dense or scale-arbitrary, and the finite Hardy relative sector can recover nontrivial cyclotomic periods without a critical-line selector. Weil Positivity can recover exact finite coefficients or `log p` in positive determinant data while the completed sign operation cancels, classicalizes, or becomes a polar absolute value. Prime Flute produces universal critical exponents and shares essential spectrum with an all-composite clone.
+Weil Positivity now supplies an independent positive derivation of the same half-weight. In the canonical base-point local Dirichlet space, degree-`n` root-cover pullback multiplies energy by `n`, so `n^{-1/2}` is the **unique** positive normalization making every cover isometric. The same pointed geometry can also supply a positive `log p` trace defect. This is stronger than merely observing the desired coefficient, but WP-074--WP-075 show the missing selector explicitly: the positive prime-ray kernel must undergo an indefinite Poisson subtraction to become the Weil finite multiplier, and turning on the positive shifted-resolvent parameter needed for a digamma profile contaminates the exact finite coefficients.
 
-The programmatic requirement is therefore
+Prime Circle and Prime Flute provide further matched controls: canonical carriers can preserve rich arithmetic periods or universal hyperbolic exponents while still lacking an RH sign/selector, and the prime flute shares compact-resolvent class with an all-composite clone.
 
-`canonical carrier/axis + independently derived arithmetic selector + compatible global topology/sign estimate -> possible RH mechanism`.
+The programmatic requirement remains
 
-An RH-equivalent criterion counts as a new mechanism only if the decisive estimate is proved from upstream structure rather than by restating the zero expansion or another RH-equivalent theorem.
+`canonical carrier/critical normalization + independently derived arithmetic selector + compatible global sign/topology estimate -> possible RH mechanism`.
 
 ## Evidence against overgeneralization
 
-This intuition does not make the critical line arbitrary. Tate duality distinguishes it canonically, and an RH-equivalent boundedness statement is mathematically meaningful. The claim is about explanatory force: distinguished, coefficient-correct, and even diagnostically equivalent are all weaker than an independent zero-selection proof.
+The critical line is not arbitrary. Tate duality and pointed-cover isometry both distinguish the half-weight canonically, by unrelated mathematics. The claim concerns explanatory force: a canonical critical normalization can be genuine and still be only the kinematic scale at which the later arithmetic problem lives.
+
+Likewise an RH-equivalent criterion is mathematically meaningful. It becomes a new mechanism only when its decisive estimate is proved upstream rather than read from a zero expansion or from classical correlation theory already equivalent to the desired information.
 
 ## Status / novelty
 
-The component mechanisms are classical or exact persisted findings. Their separation into carrier, diagnostic, and selector layers is a cross-branch synthesis.
+The component mechanisms are classical or exact persisted findings. Their separation into kinematic critical normalization, diagnostic criterion, arithmetic selector, and sign theorem is a cross-branch synthesis.
 
 ## Falsification criterion
 
-Derive the PL-068 boundedness, or an analogous audited criterion, directly from rational-prime/completion geometry without importing a zero-location result, and use it to force the critical-line support. Such a proof would turn a diagnostic into a genuine selector and supersede the present boundary claim.
+Derive an audited critical-line support theorem from the pointed-cover/finite-horizon/Tate normalization itself without importing an explicit zero-location statement or an already equivalent correlation theorem. Such a proof would turn a kinematic half-weight into a genuine selector.
 
 ## Lean-formalizable core
 
+- Exact degree scaling and `n^{-1/2}` normalization.
+- Fixed-lag half-weight balance.
 - Fixed-axis identity for Tate duality.
-- Abstract distinction between a divisor-derived bounded signal and an upstream boundedness theorem.
-- Frequency-module hull/joining classifications.
+- Abstract distinction between divisor-derived bounded signals and upstream boundedness theorems.

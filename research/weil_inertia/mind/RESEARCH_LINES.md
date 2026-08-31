@@ -4,22 +4,20 @@ This file holds the current mathematical lines of investigation suggested by the
 
 ## Keep optimization loss separate from information loss
 
-**Linked intuitions:** `MI-001-fenchel-duality-repairs-block-loss-not-screening-loss`.
+**Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses`.
 
 Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Continue to audit the exact represented object before strengthening inequalities on it.
 
-## Use realized geometry to test whether scalar envelopes are attainable
+## Treat screening as an information-bandwidth obstruction
 
-**Linked intuitions:** `MI-002-realizability-is-a-separate-gate`.
+**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction`.
 
-Abstract trace/energy envelopes can overestimate what one translated profile and its shifted assembly can realize. Packing/span constraints and matched realized controls should be applied before interpreting an improved scalar bound as new arithmetic information.
+When the represented test family cannot resolve the coordinates needed by an off-line witness, sharper optimization of the same screened object cannot recover them. A decisive advance must enlarge the source-faithful information channel or prove that the existing channel already determines the missing witness variable.
 
-## Prove a source-faithful collective conditioned-pair estimate beyond the current welding region
+## Close the fourth-moment welding gate with a hierarchical conditioned-pair theorem
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate` and `MI-004-w-conditioning-is-l2-compressible-but-l1-expensive`.
 
-The genuine four-form local main centers and fixed polylogarithmic coefficients are controlled, while Shao--Teräväinen nilsequence Bombieri--Vinogradov plus the exact pair-fiber/Parseval identity controls a positive-power region on both coefficient sides. The remaining obstruction is conditioned pair information outside that region.
+The local main and presently controlled welding regions are no longer the main ambiguity. The `W`-local conditioning spectrum has subpolynomial `L^2` conductor scale but cannot be captured losslessly by a fixed polylog cutoff, by cheap sparse pruning, or by absolute mode summation. Classical pair-in-AP dispersion supplies relevant per-modulus conditioned information, and the actual residue errors have an exact divisor-martingale/refinement structure.
 
-WI-058--WI-060 sharpen the analytic shape of the missing input. The deterministic `W`-local pair main is spectrally concentrated at subpolynomial conductors in `L^2`, but every fixed-polylog conductor cutoff misses nonnegligible energy, and a sufficient retained spectrum has super-polylogarithmic Wiener mass. Therefore termwise additive-twist bounds assembled by triangle inequality cannot close the source problem with any fixed logarithmic saving.
-
-A decisive result must exploit collective square-function/large-sieve cancellation, a direct conditioned covariance theorem, or an exact identity that removes the offending local residue modes before estimation, while preserving the locked additive four-prime geometry and source normalization. Ordinary marginal pair discrepancy and modewise absolute summation are insufficient.
+The direct one-common-refinement strategy still pays the full refinement modulus and is super-polylogarithmically expensive. The decisive target is therefore a source-faithful **hierarchical or vector-valued conditioned pair estimate**: a residue-averaged square function, blockwise martingale/large-sieve theorem, or direct covariance estimate that exploits cross-conductor orthogonality without scalarizing every conductor and without paying one giant modulus. It must preserve the locked additive four-prime geometry, parity/collision bookkeeping, moving intervals, and exact local main.

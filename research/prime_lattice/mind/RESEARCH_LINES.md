@@ -4,7 +4,7 @@ This file holds the current mathematical lines of investigation suggested by the
 
 ## Distinguish the exact rational-prime norm completion from Beurling controls
 
-**Linked intuitions:** `MI-001-the-exponent-lattice-is-scaffolding` and `MI-002-critical-line-is-boundary-not-selector`.
+**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-002-critical-line-is-boundary-not-selector`.
 
 The free exponent cone, square-free hypercube, Euler-product architecture, square-root-scale counting regularity, and arbitrary finite prefixes of ordinary prime frequencies do not determine RH-type zero geometry. A surviving arithmetic invariant must use the full rational-prime norm/completion in a way unavailable to matched Beurling systems and must constrain more than the self-dual axis.
 
@@ -36,10 +36,10 @@ On fixed smooth cross-end probes, the critical second amplitude produces an almo
 
 The only potentially new route is therefore upstream: derive the required boundedness or an equivalent coercive estimate directly from rational-prime/completion structure without using the already-continued zero expansion as the controlling input. If every such derivation merely reimports the explicit formula or a zero-location theorem, the second-scale criterion is diagnostic rather than explanatory.
 
-## Separate global growing-lag coupling from universal fixed-lag criticality
+## Isolate the first prime-support finite-horizon scale not already classicalized
 
 **Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
 
-The positive-cone `N~T` transition is universal, unpointed Möbius orientation is a torus gauge, and after pointing every fixed-lag component reduces to the universal sinc kernel multiplied by a classical additive correlation. The half-weight `sigma=1/2` is likewise universal whenever the coefficient system has nonzero fixed-lag density.
+The unweighted integer-band local kernel is prolate, its macroscopic bulk is locally Toeplitz, and its first determinant transition is Nyquist/Ingham geometry. Smoothed growing-lag von Mangoldt observables route to classical short-interval variance and Montgomery pair correlation. Restricting to prime basis directions removes the integer-band bulk interaction for every `T >> X/log X`, while bounded gaps can still collapse the lower edge along subsequences.
 
-The remaining mathematical question is whether growing lags, the full lag sum, or another genuinely global coefficient coupling yields an invariant not determined by the corresponding Chowla, Hardy--Littlewood, Mirsky, or generic spacing data. A decisive result must pass matched generalized-prime/coefficient controls and expose structure forced by the exact rational-prime norm completion rather than by the universal finite-horizon kernel.
+The first unresolved support-only bulk scale is therefore `T~X/log X`, where the Fourier resolution equals the mean prime gap. Determine whether the exact prime-supported law or a finer target-relative/extreme statistic there contains information beyond classical short-interval/prime-gap theory. A decisive positive result must distinguish matched generalized-prime or non-arithmetic spacing controls and not merely restate Gallagher, Hardy--Littlewood, or pair-correlation statistics.

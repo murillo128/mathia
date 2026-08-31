@@ -1,38 +1,38 @@
-# MI-007 — Pointing breaks the Möbius gauge, but the first critical positive-cone scale exposes classical additive correlations
+# MI-007 — Finite-horizon positive-cone spectra resolve classical spacing and correlation scales
 
-**Evidence level:** supported by exact Gram identities, matched controls, and literature-backed correlation reductions
+**Evidence level:** supported by exact Gram identities, matched controls, sieve estimates, and literature-backed correlation reductions
 
 ## Core intuition
 
-The positive exponent cone does contain more structure than the signed prime-character group, and a fixed target can break the Möbius torus gauge that defeats unpointed statistics. But at the first nontrivial finite-horizon scale `N~T`, those gains do not produce a new RH selector: the geometry is a universal sinc-resolution transition, and the arithmetic that survives pointing is organized by familiar additive correlations.
+Pointing and prime support can expose arithmetic that unpointed exponent-lattice spectra miss, but the first finite-horizon spectral transitions are now largely classified. The local and macroscopic unweighted Gram geometry is controlled by ordinary sampling density, while arithmetic coefficient weightings and prime support route the surviving information into classical additive-correlation, short-interval, and pair-correlation theories. The half-weight `1/2` remains a canonical balance scale without becoming a zero selector.
 
 ## Strongest justified principle
 
-PL-072 establishes the ambient resolution scale. For positive-cone characters `n^{-it}` observed on `[0,T]`, the Gram matrix is asymptotically the identity for `N=o(T)`, adjacent top characters become unresolved for `N/T->infinity`, and the local `N~T` transition is a universal sinc kernel coming only from `log(n+k)-log(n+j)~(k-j)/n`. Prime factorization does not enter this first phase transition.
+PL-072--PL-075 identify the first resolution transition. On integer frequencies `log n`, observation time `T` resolves additive spacing at width `N/T`; the local `N~T` kernel is universal sinc geometry. Möbius orientation is an unpointed torus gauge, while pointing exposes fixed additive correlations. The `n^{-1/2}` factor is the unique order-one fixed-lag balance whenever the coefficient system has nonzero correlation density, so Mirsky and Hardy--Littlewood controls reproduce the same critical exponent.
 
-PL-073 then isolates the coefficient issue. On the square-free hypercube, multiplying coefficients by `mu(n)` is exactly translation by the prime-torus element with every coordinate `-1`. Haar value distributions and every unpointed Gram spectral invariant are therefore unchanged. The Möbius orientation is invisible unless the observable keeps a fixed target or another gauge-breaking datum.
+PL-076--PL-077 close much of the “collect many lags” escape. For the canonical smoothed von Mangoldt polynomial, long mean squares are already routed by classical theory to Montgomery zero pair correlation; Gallagher smoothing gives an exact Mellin-resolution trichotomy in which growing lags become multiplicative short-interval variance. At half weight, the induced `x^{-2}dx` measure is exactly the classical Selberg/Goldston--Montgomery scale. This is meaningful arithmetic information, but it belongs to the established prime/zero correlation dictionary rather than a new exponent-lattice spectral mechanism.
 
-PL-074 computes what the simplest pointing reveals at the critical scale. Fixed additive lags survive. For square-free support `mu^2`, their constants are Mirsky's square-free-pair singular series; for the Möbius orientation `mu`, they are fixed-shift Chowla correlations. The gauge has been broken, but the recovered variable has landed in classical additive-correlation theory rather than a new exponent-lattice spectral invariant.
+PL-078--PL-080 classify the unweighted sharp-window escape. The local sharp sinc Gram limit is exactly the classical prolate time-bandlimiting operator after a diagonal gauge. The full macroscopic bulk spectrum is a locally Toeplitz/Kac--Murdock--Szegő mixture of those prolate laws, and its first determinant/lower-frame transition is the classical Nyquist/Ingham density threshold. Matched non-arithmetic frequencies `log(n+theta)` have the same bulk and determinant phases. Thus oscillatory rectangular-window tails do not create a new arithmetic spectrum at these scales.
 
-PL-075 sharpens the critical-line caution. If a coefficient sequence has a nonzero fixed-lag correlation density, inserting `n^{-sigma}` gives a deterministic fixed-lag scale `T^{1-2 sigma}`. Hence `sigma=1/2` is the unique order-one weight for **any** such system. Mirsky's square-free control realizes the same half-weight transition unconditionally, while the von Mangoldt channel reduces, conditionally, to Hardy--Littlewood prime-pair constants. The appearance of `1/2` at fixed lag is therefore a Fourier/correlation balance, not a zero-selection mechanism.
+PL-081 then isolates what prime support genuinely changes. On prime basis directions, for `X/log X << T <= X` the empirical Gram spectrum tends to `delta_1`, yet bounded prime gaps force the smallest eigenvalue to approach zero along subsequences whenever `T=o(X)`. Prime support therefore produces a real **bulk/extreme scale split**. The first scale not excluded for nontrivial prime-supported bulk behavior is `T~X/log X`, exactly the mean-prime-gap/short-interval scale; known Gallagher-type results again route that boundary toward classical short-interval prime statistics.
 
 ## What remains possible
 
-These results do not classify the full lag sum, lags growing with `T`, mesoscopic windows, Montgomery-type pair correlation, or another genuinely global coefficient coupling. A surviving positive-cone mechanism must live beyond the universal fixed-lag resolution law and must distinguish the rational-prime norm system from matched generalized-prime or coefficient controls without merely restating Chowla, Hardy--Littlewood, or another existing correlation problem.
+The surviving positive-cone questions are now narrower: the exact prime-support law at `T~X/log X`, fine/extreme or subextensive spectral statistics not determined by the bulk law, coefficient-weighted observables beyond the known long-polynomial correlation dictionary, and target-relative/Nyman quantities. Any candidate must show that it uses exact rational-prime completion rather than merely sampling density, prime-gap statistics, or a repackaged explicit-formula/pair-correlation theorem.
 
-Pointing remains mathematically meaningful: it converts a gauge-invariant quotient into a target-relative observable. The lesson is that **breaking the gauge and obtaining arithmetic sensitivity are separate from obtaining a new arithmetic mechanism**.
+Pointing remains important because it breaks a real gauge. Prime support remains important because it changes the sampling density. Neither fact alone supplies a new RH mechanism.
 
 ## Status / novelty
 
-Montgomery--Vaughan mean-value estimates, Kronecker/torus gauge ideas, Mirsky square-free correlations, and Chowla/Hardy--Littlewood problems are classical prior art as recorded in the persisted findings. The exact placement of the gauge break, sinc transition, and fixed-lag half-weight boundary is the supported Prime Lattice synthesis.
+The prolate, locally Toeplitz, Ingham/Nyquist, Gallagher, Selberg-variance, and pair-correlation ingredients are classical prior art; the persisted findings identify their exact place in the Prime Lattice finite-horizon hierarchy. The bulk/extreme split on prime support is a supported structural boundary, not a characterization of the critical mean-gap regime.
 
 ## Falsification criterion
 
-Produce a fixed-lag pointed positive-cone invariant at `N~T` whose limiting value is not determined by the universal sinc kernel together with the corresponding additive coefficient correlation, or show that the `sigma=1/2` order-one transition fails for a coefficient system with a nonzero fixed-lag density. A positive advance would instead derive a genuinely global/growing-lag invariant that passes matched non-Riemann controls.
+Produce an unweighted local/macroscopic sharp Gram invariant in the audited regimes that differs from the matched prolate/Nyquist controls, or a smoothed long von Mangoldt statistic whose zero-sensitive content is not determined by the classical correlation machinery already identified. A positive advance should instead derive a prime-specific invariant at the mean-gap or finer target-relative scale and pass matched generalized-prime/coefficient controls.
 
 ## Lean-formalizable core
 
-- Diagonal-unitary equivalence of Möbius-oriented and unoriented Gram matrices.
-- Finite-horizon Gram kernel and local sinc limit.
-- Fixed-lag scaling `T^{1-2 sigma}` from a correlation-density hypothesis.
-- Torus-translation identity for completely multiplicative unimodular coefficient gauges.
+- Diagonal gauge from sharp Gram kernel to sinc Toeplitz form.
+- Gallagher log-frequency localization identity.
+- Local prolate Fourier multiplier.
+- Bulk/extreme spectral separation from normalized Hilbert--Schmidt control plus a near-colliding pair.

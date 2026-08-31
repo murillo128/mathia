@@ -1,41 +1,43 @@
 # MI-001 — Preserve the discriminating structure before compressing
 
-**Evidence level:** supported, with exact deterministic, analytic, and statistical-sufficiency theorems in several categories
+**Evidence level:** supported, with exact deterministic, analytic, statistical, and local-programming theorems in several categories
 
 ## Core intuition
 
-Across Mathia, the recurring failure is not spectralization, positivity, or taking a scalar in the abstract. It is applying a transformation whose induced indistinguishability relation already identifies states or models that the later arithmetic claim needs to distinguish. The relevant retained object can also fail by **insufficient resolution**: a complete test family may be faithful while every finite-dimensional projection has large exact fibers. The audit must therefore identify both the admissible category and the complete statistic actually retained there.
+Across Mathia, the recurring failure is not spectralization, positivity, or taking a scalar in the abstract. It is applying a transformation whose induced indistinguishability relation already identifies states or models that the later arithmetic claim needs to distinguish. The newer evidence adds an adversarial converse: **apparent injectivity can also be manufactured** if the observable class has enough source-tunable freedom. The audit must therefore identify the complete retained statistic, its fibers, and which constraints genuinely act on that statistic rather than on invisible directions.
 
 ## Strongest current principle
 
-AF-001 proves `d=r∘T` exactly when `d` is constant on `T`-fibers; AF-003 says the joint map of all admissible observables is the maximal quotient available to a constrained repair. AF-012--AF-013 add the stochastic analogue: for a finite family of probability models, the reference-relative likelihood-ratio vector is the complete statistic, and zero loss of one strictly convex multidistribution divergence is equivalent to statistical sufficiency for the whole experiment. Subsequent garbling only adds nonnegative loss.
+AF-001 and AF-003 give the deterministic quotient gate: a discriminator factors through a representation exactly when it is constant on its fibers, and the joint map of all admissible observables is the maximal quotient available to a constrained repair. AF-012--AF-013 give the stochastic analogue via likelihood-ratio sufficiency and strict-convexity equality.
 
-AF-014 prevents an opposite overstatement. Quadratic/positive data are not automatically information-poor: a full-rank Gram matrix retains all relative maximal-minor signs and loses only one global orientation torsor relative to `SO(d)`. AF-018--AF-019 make the analytic version equally category-sensitive. A divisor can be nonfaithful in a broad meromorphic class, while order-one growth plus reflection and normalization rigidify the same zero data; the exact logarithmic derivative retains the zero-free regular factor modulo scale, whereas its polar principal parts collapse back to divisor data.
+The analytic evidence is category-sensitive in both directions. Divisor data can be nonfaithful in a broad meromorphic class while rigid growth/reflection/normalization can recover the completed function. Exact logarithmic derivatives preserve more than principal parts. A statement about “the zeros” or “the spectrum” is therefore incomplete until the ambient analytic category is specified.
 
-AF-020--AF-023 add a distinct resolution gate. The complete Weil test functional determines the generalized-prime norm multiset, and fixed support has an exact arithmetic horizon. But replacing the complete test family by finitely many scalar tests creates exact collision fibers: arbitrary moment maps have affine fibers, and Beurling generalized-prime deformations realize those collisions arbitrarily locally. At regular `N>d` points the finite-test fiber through the point is positive-dimensional. Exact numerical precision is therefore not the same as retaining a complete statistic.
+AF-020--AF-023 separate complete versus finite test resolution. The full Weil test functional recovers generalized-prime norms, whereas finitely many tests have exact local Beurling fibers at regular source points. AF-024--AF-027 sharpen the adversarial side: an unconstrained smooth test can singularly isolate **any** finite nonresonant source; finite linear constraints may be repaired inside the exact measurement kernel; and normalized compact test classes that are Fourier-positive, even simultaneously pointwise and Fourier positive, still have full-dimensional finite Weil-response jets. Neither regular noninjectivity nor singular isolation alone establishes arithmetic fidelity.
 
-The branch evidence instantiates the same rule. Prime Flute's compact-resolvent clone shows a spectral quotient can identify prime/non-prime geometry; Prime Circle's finite Hardy Calkin algebra loses mixed arithmetic while relative trace data retain more; Weil Inertia separates collective `L^2` information from an unaffordable `l^1` assembly; Weil Positivity stores the exact Mangoldt selector on an algebraic Hardy core while the natural positive completion makes that functional unbounded.
+Prime Circle supplies a parallel algebraic warning. Adding finite nonlinear depth, arbitrary shell-local weights, or finite tree branching to the canonical cotangent propagator does not necessarily enlarge the retained quotient: exact partial-fraction/Hermite identities reduce broad finite networks to endpoint/forest algebra, while odd scalar contractions vanish and complete-shell scalars are Galois-rational.
+
+The order of operations is therefore
+
+`derive admissible category -> compute the complete statistic/fiber and invisible correction space -> test source specificity -> only then optimize, spectralize, complete, or prove positivity`.
 
 ## Consequence for synthesis
 
-The order of operations is
+A canonical mark or stronger constraint is useful only if it reduces the actual indistinguishability fiber. A finite family of infinitely precise observables is not complete unless identifiability is proved on the declared source class. Conversely, an isolated source point is not evidence of intrinsic fidelity if the test/metric was flexible enough to program that isolation around an arbitrary source.
 
-`derive admissible category -> identify the complete retained statistic/fibers and its resolution -> test source specificity -> only then optimize, spectralize, complete, or prove positivity`.
-
-A repair that adds a target-carrying mark or a normalization chosen after inspecting the desired zeros has not passed this gate. Nor has a finite list of infinitely precise observables unless the source class is proved identifiable from that list.
+This is why matched controls must be built at the same quotient layer as the proposed positive or spectral mechanism, and why “more nonlinear” or “more constrained” is not a substitute for an explicit fiber calculation.
 
 ## Status / novelty
 
-The component fidelity theorems are persisted findings with classical ingredients. Their use as a cross-branch order-of-operations and resolution principle is a supported synthesis.
+The component fidelity, local-programming, positive-definite modulation, and cotangent-reduction results are persisted findings with classical ingredients. Their synthesis as a two-sided **loss-versus-programmability** audit is supported rather than a universal theorem.
 
 ## Falsification criterion
 
-Find a canonical pipeline where the target varies inside the complete admissible fiber/statistic at some stage, no later stage receives new admissible information, yet the final invariant recovers the target. Or prove local finite-test rigidity at a regular source point where AF-023 predicts a positive-dimensional exact fiber. Within the audited categories either would contradict persisted fidelity results.
+Find a canonical pipeline where the target varies inside the complete admissible fiber at some stage, no later stage receives new admissible information, yet the final invariant recovers the target. Or show that an observable class proven to have the AF-024/AF-027 local programming freedom nevertheless gives prime-specific isolation for a reason not encoded in an additional source/global constraint.
 
 ## Lean-formalizable core
 
 - Fiberwise factorization and post-processing monotonicity.
 - Maximal admissible quotient.
-- Likelihood-ratio/Jensen equality and statistical sufficiency.
-- Gram fiber modulo `O(d)` and orientation-torsor refinement.
-- Finite-moment affine collision and regular-fiber dimension statements.
+- Finite-test Jacobian/fiber dimension.
+- Measurement-kernel correction criterion.
+- Finite cotangent network reduction identities.
