@@ -259,6 +259,23 @@ Relevant finding: PF-123; relevant local clue: `CLUE-affine-composite-clone-rela
 
 **Scope warning.** This source does not construct the global prime/shift-clone marking and does not imply trace-class resolvent difference, wave/scattering equivalence, resonance equality, relative determinants, or RH consequences. PF-123 uses the bounded topological identification between the two `L^2` realizations appearing in the theorem; stronger unitary/Schatten identifications require separate arguments.
 
+## S16 — scattering without injectivity-radius assumptions
+
+**B. Güneysu, A. Thalmaier**, *Scattering theory without injectivity radius assumptions, and spectral stability for the Ricci flow*, Annales de l'Institut Fourier 70 (2020), no. 1, 437–456. DOI: 10.5802/aif.3316; arXiv:1709.01612.
+
+- https://arxiv.org/abs/1709.01612
+- https://doi.org/10.5802/aif.3316
+
+Used for:
+
+- the zeroth-order multiplicative metric deviation `delta_{g,h}` defined from logarithms of the positive cotangent comparison endomorphism;
+- Corollary A: for complete quasi-isometric Riemannian metrics with Ricci curvature bounded below, integrability of `mu_j(x,1)^(-1) delta_{g,h}(x)` for one metric implies existence and completeness of the corresponding two-Hilbert-space wave operators;
+- PF-128's local full-collar audit of that inverse-unit-ball-volume weight in the collapsing prime/shift-clone geometry.
+
+Relevant finding: PF-128; relevant local clue: `CLUE-shift-clone-sharp-schatten-threshold.md`.
+
+**Scope warning.** PF-128 proves only a local estimate for the full matched standard collar. It does not establish the required global integral over the infinite prime flute, and the Güneysu--Thalmaier theorem is a wave-operator/scattering result rather than a Schatten-class theorem.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
