@@ -21,7 +21,7 @@ It must:
 6. resolve prior-art identities locally first and, when explicitly loaded with `mathia-research-prior-art-incremental`, materialize genuinely missing stable prior art under its narrow live layer;
 7. when explicitly loaded with `mathia-research-clues`, hand off a source-grounded but unproved structural insight as a `status: proposed` clue instead of silently promoting it to graph evidence;
 8. maintain a versioned Riemann Atlas describing the currently identifiable approach-space represented by Mathia plus responsibly identified literature families;
-9. derive reproducible coverage, pruning, live-frontier, collision, frontier-fertility, and atlas-confidence metrics from that atlas;
+9. derive reproducible coverage, pruning, live-frontier, collision, frontier-fertility, and atlas-confidence metrics from that atlas, including marginal frontier-episode telemetry that does not feed back into Research Watch;
 10. maintain graph views and the small declarative Obsidian Graph View configuration.
 
 The curator must **not** extend a derivation, prove a missing theorem, create or modify findings or intuitions, edit mind state, participate in `.review.md` dialogue, change a research line's README/state, or rewrite another owner's novelty/evidence assessment.
@@ -55,6 +55,8 @@ research/prior_art/graph/**
 ```
 
 `research/graph/atlas/**` is the canonical location for the derived Riemann Atlas and its metrics/history.
+
+`research/graph/atlas/telemetry/**` is the canonical location for marginal frontier-episode telemetry. It is derived strategic instrumentation, never mathematical evidence or Research Watch input.
 
 The `.obsidian/graph.json` exception is allowed only for durable graph-presentation configuration. No other `.obsidian/**` path is writable.
 
@@ -423,15 +425,86 @@ Definitions:
 
 Do not force classification merely to complete a metric.
 
-Over a documented window, a reproducible fertility ratio may be:
+## Unit of observation: frontier episode
+
+Frontier fertility measures **marginal movement of a discriminating research question**, not finding volume. One `frontier episode` is one source-backed expansion outcome on one mathematical frontier question. Several findings may support one episode when they are successive steps of the same coherent move; conversely, split one source delta into multiple episodes only when it settles materially different questions or produces independently classifiable outcomes.
+
+Never count every finding, commit, review turn, clue update, or graph edit as an episode. Activity volume is not research fertility.
+
+Persist the minimal derived state under:
 
 ```text
-FrontierFertility =
-    mass(new-territory + viable-extension)
-    / mass(all classifiable expansion outcomes)
+research/graph/atlas/telemetry/frontier-events.jsonl
+research/graph/atlas/telemetry/frontier-summary.md
 ```
 
-Persist only minimal derived history needed for time-series interpretation; never create a chronological research diary.
+`frontier-events.jsonl` is the canonical current derived episode set, not a run diary. Each line must contain a deterministic episode identity and enough provenance to recompute the summary. Use fields equivalent to:
+
+```text
+episode_id
+mode: retrospective | prospective
+source_window_base
+source_window_head
+line
+atlas_territory: RA-* | null
+classification
+source_paths: [...]
+basis
+```
+
+`basis` is one compact source-grounded explanation of why the classification follows. Do not add confidence percentages, productivity scores, priorities, agent/task metadata, or narrative run history.
+
+## Prospective capture
+
+Starting from the telemetry baseline, classify a material expansion in the **first curator pass that observes it** when surviving canonical evidence supports one of the categories above. If a delta only corrects metadata, advances a review lifecycle, updates a clue, or adds evidence without producing a classifiable frontier movement, create no episode merely to record activity.
+
+If later canonical correction or withdrawal changes an episode's basis, repair, reclassify, or remove that existing derived episode. Do not append compensating tombstones or a second event simply to preserve chronology; Git already preserves history.
+
+## Conservative retrospective backfill
+
+A retrospective seed is allowed when it can be reconstructed from reachable Git history, surviving canonical evidence, and prior material curator projections. Prefer the current Atlas version's bootstrap as the earliest backfill boundary so that the taxonomy being used actually existed.
+
+For every retrospective episode:
+
+- require surviving canonical source paths;
+- verify the mathematical outcome from the sources, not from the commit title;
+- omit findings that are currently withdrawn or whose decisive claim remains under open adversarial challenge;
+- omit any historical movement whose frontier question or classification cannot be reconstructed without hindsight or subjective guesswork;
+- set `mode: retrospective` explicitly;
+- keep retrospective ratios visibly separate from the clean prospective series.
+
+An incomplete high-confidence backfill is preferable to a complete-looking synthetic history.
+
+## Episode-derived metrics
+
+Do **not** reuse Atlas leaf mass as the weight of repeated frontier episodes. Atlas masses describe the versioned approach-space denominator; multiplying every revisit by a territory's mass would double-count the same territory and make a high-activity line appear artificially more fertile.
+
+For a documented episode window define:
+
+```text
+ClassifiableEpisodes =
+    episodes with classification != insufficient-evidence
+
+FrontierFertilityEpisodes =
+    count(new-territory + viable-extension)
+    / count(ClassifiableEpisodes)
+
+BarrierRate =
+    count(known-barrier + new-barrier)
+    / count(ClassifiableEpisodes)
+
+PriorArtCollisionRate =
+    count(known-prior-art)
+    / count(ClassifiableEpisodes)
+
+InternalDuplicateRate =
+    count(internal-duplicate)
+    / count(ClassifiableEpisodes)
+```
+
+Always report the episode sample size and the number of `insufficient-evidence` outcomes. Once the prospective series has enough events to support a trend, prefer a fixed trailing window of at most **10 classifiable prospective episodes per line** and at most **20 globally**. Do not silently mix retrospective and prospective episodes in one ratio.
+
+Persist only this minimal derived history needed for time-series interpretation; never create a chronological research diary.
 
 Report saturation as a vector, normally including:
 
@@ -441,15 +514,24 @@ Hard Pruning
 Soft Pruning
 Live Frontier
 Reproduced
-Frontier Fertility
+Frontier Fertility Episodes
+Barrier Rate
 Prior-art collision rate
 Internal duplicate rate
 Atlas Confidence
 ```
 
-A pattern such as Coverage ↑, Hard Pruning ↑, Live Frontier ↓, Frontier Fertility ↓, and collision rates ↑ supports only the statement that Mathia may be approaching saturation of the **current known atlas**. It does not imply that RH lacks undiscovered representations or radical macrofamilies.
+Atlas state masses and episode telemetry answer different questions. A territory may remain `open` while repeated episodes close increasingly narrow variants inside it. Therefore unchanged `AtlasCoverage`, `LiveFrontier`, or pruning percentages are not by themselves evidence of low saturation.
 
-The curator must not change research-task allocation, create/delete research lines, or modify Master/Visionary state based on these metrics. It may, however, create a proposed clue when the atlas exposes a precise source-grounded research question under the clue rules above.
+A pattern such as Coverage ↑, Hard Pruning ↑, Live Frontier ↓, Frontier Fertility Episodes ↓, Barrier Rate ↑, and collision rates ↑ supports only the statement that Mathia may be approaching saturation of the **current known atlas or a local frontier**. It does not imply that RH lacks undiscovered representations or radical macrofamilies.
+
+## Non-interference gate
+
+Frontier telemetry is **strategic derived instrumentation, never mathematical evidence**. It must not alter or be written into findings, intuitions, Mind, line README/state, review dialogue, clue lifecycle, or Research Watch task selection. Research Watch must not consume the telemetry as an input that changes what mathematics it is allowed or encouraged to attempt.
+
+The Master Researcher may consume the telemetry under its own existing skill as one strategic signal, but no dashboard value or rate may alone justify `continue`, `narrow`, `merge-candidate`, `pause-candidate`, `split-candidate`, or `new-line-candidate`. Consequential portfolio judgments must still trace to canonical findings, prior-art collisions, obstructions, live questions, and review outcomes.
+
+The curator itself must not change research-task allocation, create/delete research lines, or modify Master/Visionary state based on these metrics. It may, however, create a proposed clue when the atlas or telemetry exposes a precise source-grounded **mathematical** question under the clue rules above.
 
 # Atlas bootstrap and versioning
 
@@ -537,10 +619,11 @@ Change `.obsidian/graph.json` only for durable presentation-model changes, not r
 9. **Emit a proposed clue** only through the clue skill when curation reveals a source-grounded unproved insight with a decisive test.
 10. **Refresh line/global/prior-art graph projections**.
 11. **Refresh/version the Riemann Atlas** when taxonomy/state changes materially.
-12. **Recompute atlas metrics** and minimal time-series state from reproducible territory data.
-13. **Refresh Obsidian presentation** only for durable presentation-model changes.
-14. **Run adversarial/stale-reference/mass-conservation/deduplication review**.
-15. **Apply the complete ownership/path gate** before publication.
+12. **Classify and persist frontier episodes** for material source-backed expansions, repairing/removing stale episodes and keeping retrospective/prospective telemetry separate.
+13. **Recompute atlas metrics** and the telemetry summary from reproducible territory/episode data.
+14. **Refresh Obsidian presentation** only for durable presentation-model changes.
+15. **Run adversarial/stale-reference/mass-conservation/deduplication review**.
+16. **Apply the complete ownership/path gate** before publication.
 
 Before publication verify:
 
@@ -554,6 +637,9 @@ Before publication verify:
 - external literature did not silently upgrade source research;
 - atlas territory masses conserve correctly;
 - atlas metrics recompute from territory state;
+- every telemetry episode traces to surviving canonical evidence and is not raw finding/commit counting;
+- retrospective and prospective episode modes remain separate, and every telemetry ratio recomputes from `frontier-events.jsonl`;
+- telemetry did not feed back into Research Watch, research state, clue disposition, or task allocation;
 - hard-pruned states have explicit surviving closure/obstruction evidence;
 - `.obsidian/graph.json`, if changed, passes its compatibility gate;
 - no diary, run log, tombstone, or opaque subjective score was introduced.
@@ -571,7 +657,7 @@ research(prior_art): <incremental canonical prior-art materialization>
 
 A graph-led publication may include a companion `status: proposed` clue when the clue skill permits it. A prior-art-led publication may include coherent graph repairs and a proposed clue when permitted.
 
-Do not create commits merely because the watch ran, a lookup found nothing, or a metric rounds differently without a source-backed state change.
+Do not create commits merely because the watch ran, a lookup found nothing, a telemetry window advanced without a material source-backed episode, or a metric rounds differently without a source-backed state change.
 
 Do not open a routine PR from the scheduled watch.
 
