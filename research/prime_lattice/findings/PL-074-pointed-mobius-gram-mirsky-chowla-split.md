@@ -34,7 +34,7 @@ one has the exact lag decomposition
 ```text
 Q_a(T)
  = sum_(n in I_T) |a(n)|^2
-   +2 Re sum_(h>=1) C_(a,h)(T),
+   +2 T Re sum_(h>=1) C_(a,h)(T),
 
 C_(a,h)(T)
  =(1/T) sum_(n,n+h in I_T)
