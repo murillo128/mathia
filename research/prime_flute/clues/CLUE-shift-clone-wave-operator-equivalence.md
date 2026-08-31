@@ -17,6 +17,7 @@ based_on:
   - research/prime_flute/findings/PF-133-centered-lambert-split-ray-tail-is-strong-W11.md
   - research/prime_flute/findings/PF-134-lambert-scalar-tail-is-log-weight-summable.md
   - research/prime_flute/findings/PF-135-lambert-scalar-mode-has-subcritical-polynomial-moments.md
+  - research/prime_flute/findings/PF-136-long-pre-corner-split-mismatch-has-summable-strong-L1-extension.md
 ---
 
 # Do the prime flute and the all-composite shift clone have complete relative wave operators?
@@ -52,7 +53,15 @@ PF-135 strengthens the last point materially. The scalar mode `c_n=beta_n-beta_{
 \qquad(0\le\alpha<19/40)
 \]
 
-using only the already-audited Baker--Harman--Pintz input. The natural square-root adjacent-cuff aspect factor is only `O(p_n^(21/80))`, and PF-135 proves that the reciprocal combined Fermi width in the **middle corridor between the two Lambert corner heights** pays at most that factor. Hence extreme neighboring prime-gap ratios cannot create divergence there. The remaining boundary problem is narrower: before the first corner both Lambert widths can be simultaneously much smaller, and a naive transverse correction can pay an individual large-cuff factor. PF-135 does not show that such a loss is necessary or summable.
+using only the already-audited Baker--Harman--Pintz input. The natural square-root adjacent-cuff aspect factor is only `O(p_n^(21/80))`, and PF-135 proves that the reciprocal combined Fermi width in the **middle corridor between the two Lambert corner heights** pays at most that factor. Hence extreme neighboring prime-gap ratios cannot create divergence there.
+
+PF-136 now removes the unweighted version of the last long-corridor concern. Before the first Lambert corner, choose the wider finite-branch half and put `M_n=min(cosh a_n,cosh a_{n+1})`. The exact adjacent trace modes satisfy
+
+\[
+M_n\bigl(|\epsilon_n-\epsilon_{n+1}|+|c_n|\bigr)\to0,
+\]
+
+while the full pre-corner trace has summable `L^1 + dot W^{1,1}` mass. In normalized Fermi-strip coordinates the transverse derivative costs `|q|/H` but hyperbolic area contributes one factor `H`; an explicit correction therefore has summable **strong unweighted `L^1` metric mass** and bilipschitz constant tending to one while leaving the finite-cuff trace unchanged. Thus the long pre-first-corner region is not an intrinsic strong-`L^1` boundary-coherence obstruction. The inverse-unit-ball wave weight is sharper: it can remove that area cancellation and leave a term of scale `M_n|c_n|`, for which current evidence proves decay but not summability.
 
 ## Research question
 
@@ -70,27 +79,27 @@ Equivalently, does the exact all-composite shift clone lie in the same absolutel
 
 A positive answer would rule out another natural spectral carrier: not only the essential spectrum but the absolutely continuous dynamical scattering class would survive replacement of every prime label by a composite one. That would make any RH-relevant mechanism depend on finer data than this relative wave-equivalence class.
 
-A negative answer could be more informative than failure of a generic theorem only if it identifies a genuine pre-corner boundary-coherence, noncanonical-thin, interface, or infinite-assembly mechanism that survives PF-128's full canonical-collar cancellation, PF-129's summable all-cusp normalization, PF-130's summable isolated Lambert-body coefficient mass, and PF-131--PF-135's trace-level cancellations.
+A negative answer could be more informative than failure of a generic theorem only if it identifies a genuine **inverse-volume weighted** pre-corner, noncanonical-thin, interface, or infinite-assembly mechanism that survives PF-128's full canonical-collar cancellation, PF-129's summable all-cusp normalization, PF-130's summable isolated Lambert-body coefficient mass, and PF-131--PF-136's trace/extension cancellations.
 
 ## Decisive test
 
 A positive resolution must construct a smooth complete common-manifold comparison satisfying the hypotheses of Güneysu--Thalmaier and prove the weighted integral globally. In particular it must:
 
 1. impose PF-125/PF-129-compatible split-ray, finite-cuff, and cusp traces on a pant-body construction while retaining a summable version of PF-130's strong-`L^1` localization;
-2. solve the **pre-first-corner** two-dimensional extension problem without paying a nonsummable individual large-cuff factor; PF-135 already removes the weaker square-root aspect loss in the middle corridor;
-3. convert the resulting body estimate to strong **weighted** `L^1` wherever the ambient unit-ball volume is uniformly controlled;
+2. upgrade PF-136's pre-first-corner **unweighted** extension to the inverse-unit-ball weighted scale, or find a different globally organized comparison that avoids the residual thin-channel factor; merely repeating the transverse strip estimate is insufficient because the weight can leave a term of order `M_n|c_n|`;
+3. convert the remaining body/interface estimates to strong **weighted** `L^1` wherever the ambient unit-ball volume is uniformly controlled;
 4. control every non-cusp Margulis-thin component relevant to the ambient unit-ball volume, not assume without proof that every short simple closed geodesic belongs to the PF-004 canonical separator family;
 5. use PF-128 only where its matched-collar hypotheses are actually established, and sum the resulting thin-part costs;
 6. smooth and assemble the local comparisons without losing quasi-isometry or weighted integrability.
 
-A decisive negative resolution should prove an unavoidable divergence of this weighted criterion for every admissible marked quasi-isometric comparison, or establish a stronger operator obstruction to complete wave operators. Divergence of one naive transverse correction is not enough unless the loss is shown to be intrinsic.
+A decisive negative resolution should prove an unavoidable divergence of this weighted criterion for every admissible marked quasi-isometric comparison, or establish a stronger operator obstruction to complete wave operators. Divergence of the explicit PF-136 transverse correction is not enough unless the loss is shown to be intrinsic; PF-136 already proves that the corresponding unweighted metric mass is summable.
 
 ## Evidence boundary
 
-The clue is not evidence for wave-operator existence. PF-129 proves finite total cost only for the cusp-end sector. PF-128 is local to matched standard collars, and PF-109 controls only the PF-004 canonical separator family. PF-130 proves unweighted strong `L^1` only for independent one-parameter Lambert maps. PF-131--PF-135 show that their complete boundary mismatch is much better behaved than the raw reciprocal-prime scale, including polynomially weighted summability of the residual scalar mode, but they do **not** supply a boundary-coherent two-dimensional marking or the ambient inverse-unit-ball weight. PF-125's transported metric is only piecewise smooth in the form used for the compact-resolvent theorem. No current finding proves that the pre-corner body/interface pieces and every noncanonical thin component can be assembled with finite inverse-volume weighted cost.
+The clue is not evidence for wave-operator existence. PF-129 proves finite total cost only for the cusp-end sector. PF-128 is local to matched standard collars, and PF-109 controls only the PF-004 canonical separator family. PF-130 proves unweighted strong `L^1` only for independent one-parameter Lambert maps. PF-131--PF-135 show that their complete boundary mismatch is much better behaved than the raw reciprocal-prime scale, including polynomially weighted summability of the residual scalar mode. PF-136 adds a genuine two-dimensional result on the **long pre-first-corner sector**, but only for unweighted strong `L^1`; it explicitly does not control the inverse-unit-ball factor. No current finding supplies one globally smooth boundary-coherent marking with finite Güneysu--Thalmaier weight over all pant bodies, interfaces, and noncanonical thin components. PF-125's transported metric is only piecewise smooth in the form used for the compact-resolvent theorem.
 
-The relevant prior art is classical geometric scattering rather than prime-specific theory. B. Güneysu and A. Thalmaier, *Scattering theory without injectivity radius assumptions, and spectral stability for the Ricci flow*, Ann. Inst. Fourier 70 (2020), 437--456, DOI `10.5802/aif.3316`, supply the exact weighted criterion above. The 2024 Güneysu--Marot Kato--Ricci extension retains the same inverse-unit-ball-volume factor, so constant curvature `-1` does not remove the remaining thin-region gate. Hempel--Post--Weder and Müller--Salomonsen provide neighboring metric-perturbation scattering results with different geometric hypotheses. Directed checks found no theorem that automatically applies to this infinite-type, zero-systole flute from the present combination of compact-resolvent equivalence, thin-part controls, local strong-`L^1` body estimates, and trace polynomial moments.
+The relevant prior art is classical geometric scattering rather than prime-specific theory. B. Güneysu and A. Thalmaier, *Scattering theory without injectivity radius assumptions, and spectral stability for the Ricci flow*, Ann. Inst. Fourier 70 (2020), 437--456, DOI `10.5802/aif.3316`, supply the exact weighted criterion above. The 2024 Güneysu--Marot Kato--Ricci extension retains the same inverse-unit-ball-volume factor, so constant curvature `-1` does not remove the remaining thin-region gate. Hempel--Post--Weder and Müller--Salomonsen provide neighboring metric-perturbation scattering results with different geometric hypotheses. Directed checks found no theorem that automatically applies to this infinite-type, zero-systole flute from the present combination of compact-resolvent equivalence, thin-part controls, local strong-`L^1` body estimates, and explicit pre-corner extension.
 
 ## Research disposition
 
-The clue remains accepted for active investigation. PF-128--PF-135 now remove a sequence of cheap divergence mechanisms: full canonical-collar collapse, the infinite cusp family, an order-one-area Lambert-body interpretation of the reciprocal-prime deformation, bounded and deep split-ray trace accumulation, logarithmic cusp-entry propagation, and the natural square-root neighboring-cuff aspect loss in the middle Lambert corridor. The remaining question is specifically the **pre-first-corner boundary-coherent weighted extension, noncanonical-thin, and global assembly** problem. Acceptance asserts only that this is a well-posed natural spectral test; it does not assert wave completeness, equality of scattering matrices, resonance equality, determinant identities, or any RH consequence.
+The clue remains accepted for active investigation. PF-128--PF-136 now remove a sequence of cheap divergence mechanisms: full canonical-collar collapse, the infinite cusp family, an order-one-area Lambert-body interpretation of the reciprocal-prime deformation, bounded and deep split-ray trace accumulation, logarithmic cusp-entry propagation, the natural square-root neighboring-cuff aspect loss in the middle Lambert corridor, and finally the **unweighted** individual-cuff amplification in the long pre-first-corner corridor. The remaining question is specifically the inverse-unit-ball weighted pre-corner/interface problem, noncanonical thin geometry, and global smooth assembly. Acceptance asserts only that this is a well-posed natural spectral test; it does not assert wave completeness, equality of scattering matrices, resonance equality, determinant identities, or any RH consequence.
