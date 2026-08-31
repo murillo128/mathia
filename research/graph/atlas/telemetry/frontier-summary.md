@@ -2,6 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
+prospective_source_cutoff: 7a97f9e03e220ef24ef454890e1899b047326b3f
 derived: true
 ---
 
@@ -38,7 +39,9 @@ The retrospective vector is useful as a warning that unchanged Atlas state masse
 
 ## Prospective baseline
 
-The clean prospective series starts with the first material Graph Curator delta after this telemetry was introduced. From that point onward the curator records each newly observed, source-backed frontier episode as `mode: prospective`, repairs or removes an episode if its canonical support is corrected/withdrawn, and leaves the telemetry unchanged when a run contains no material expansion outcome.
+The clean prospective series starts strictly **after** `prospective_source_cutoff`. Source mutations at or before that revision are never relabeled as prospective merely because a later Graph Curator pass first sees them. Any gap between the conservative retrospective seed and the cutoff remains unclassified unless a later high-confidence backfill adds those outcomes explicitly as `mode: retrospective`.
+
+From that cutoff onward the curator records each newly observed, source-backed frontier episode as `mode: prospective`, repairs or removes an episode if its canonical support is corrected/withdrawn, and leaves the telemetry unchanged when a run contains no material expansion outcome.
 
 Until enough prospective episodes exist, report the sample size together with every ratio. For line-local interpretation, prefer a fixed trailing window of up to the latest 10 classifiable prospective episodes; for portfolio interpretation, prefer up to the latest 20. Never use the ratios alone to pause, merge, split, redirect, or create research lines.
 
