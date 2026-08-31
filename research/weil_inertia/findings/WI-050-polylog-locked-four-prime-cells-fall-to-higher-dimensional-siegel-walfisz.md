@@ -129,20 +129,51 @@ b_1,b_2\le (\log X)^{B_0}.
 \tag{11}
 \]
 
-Take `N=X(log X)^{O(B0)}` large enough to contain the source windows in all three coordinates. Equations (5)--(6) give `||Psi||_{N,B}=O(1)` for a fixed `B=O(B0)`.
+All source coordinates are `O(X)`, so take Bienvenu's ambient parameter `N=CX` for a fixed source-dependent constant `C`. Equations (5)--(6) then give `||Psi||_{N,B}=O(1)` for a fixed `B=O(B0)`.
 
-The source geometry is also thick enough. Because `Y \asymp X` and `J \asymp X`, choose `m` in a fixed interior portion of its window, `|k| <= cX/(log X)^{B0}`, and `n` in the interval around `(b2/b1)m` allowed by (4). The translated-window and lock constraints then leave a subbody of volume
+The exact source geometry is still thick enough after the translated-window constraints are imposed. Write the source `m` window as `I_m=[s_0X/b_2,s_1X/b_2]`, up to harmless integer endpoints, and choose a fixed central subinterval `I_m^*` of length `c_mX/b_2`. For sufficiently small fixed `c_k>0`, restrict
+
+\[
+c_k\frac{X}{b_1b_2}\le k\le 2c_k\frac{X}{b_1b_2}.
+\]
+
+Then `b_1k=O(X/b_2)`, so both `m` and `m'=m-b_1k` remain in the same interior source window. This one-sided choice also stays away from the deleted hyperplane `k=0`.
+
+Use the lock coordinate
+
+\[
+j=b_1n-b_2m.
+\]
+
+Choose a fixed one-sided interior slab `c_jX\le j\le2c_jX` with `2c_jX<J` and `c_j` small relative to the fixed source margins. For each admissible `m`, this gives an `n` interval of length `c_jX/b_1`. After shrinking the fixed constants if necessary it lies inside the source `n` range. Moreover
+
+\[
+b_1(n-b_2k)-b_2(m-b_1k)=b_1n-b_2m=j,
+\]
+
+so the translated lock is preserved exactly; since `b_2k=O(X/b_1)`, the same interior margins keep `n'=n-b_2k` in the translated `n` window. The choice `j>0` avoids the deleted hyperplane `j=0`.
+
+Hence the exact source region contains a convex subbody whose widths, measured directly in `(m,n,k)`, are
+
+\[
+\asymp \frac{X}{b_2},\qquad
+\asymp \frac{X}{b_1},\qquad
+\asymp \frac{X}{b_1b_2}.
+\]
+
+Therefore
 
 \[
 \operatorname{Vol}(K_{b_1,b_2}(X))
 \gg
-X^3(\log X)^{-C B_0}
+\frac{X^3}{b_1^2b_2^2}
+\ge X^3(\log X)^{-4B_0}.
 \tag{12}
 \]
 
-for an absolute fixed `C`; enlarging the ambient scale from `X` to `N=X log^{O(B0)}X` only changes the logarithmic exponent. Thus (9) holds for some fixed `A=A(B0)`.
+Thus Bienvenu's volume hypothesis (9) holds with a fixed exponent `A=4B0+O(1)` uniformly throughout (11).
 
-The source deletions `k=0` and `j=b1 n-b2 m=0` lie on codimension-one lattice hyperplanes. Their von-Mangoldt-weighted contribution is at most `N^2 log^{O(1)}N`, hence is `o(Vol(K) prod_p beta_p)` in the polylogarithmic regime. Equivalently one may split the sign components into finitely many convex bodies. These deletions therefore do not obstruct (10).
+The source deletions `k=0` and `j=b1 n-b2 m=0` lie on codimension-one lattice hyperplanes. Their von-Mangoldt-weighted contribution is at most `N^2 log^{O(1)}N`, hence is `o(Vol(K) prod_p beta_p)` in the fixed-polylogarithmic regime. Equivalently one may split the sign components into finitely many convex bodies. These deletions therefore do not obstruct (10).
 
 ## 4. Bienvenu's local factor is exactly the source `E2` factor
 
