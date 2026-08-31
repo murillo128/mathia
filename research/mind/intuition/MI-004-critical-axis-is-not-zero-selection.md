@@ -1,50 +1,39 @@
-# MI-004 — A canonical critical axis is not a zero-selection mechanism
+# MI-004 — A canonical critical axis or RH-equivalent diagnostic is not a zero-selection mechanism
 
 **Evidence level:** supported by exact/classical mechanisms in multiple branches
 
 ## Core intuition
 
-Mathia now has many independent reasons why a distinguished real part or boundary can emerge naturally: unitarity, self-duality, Hilbert/Schatten membership, product-measure equivalence, Fisher-information breakdown, cusp winding, graph-domain summability, or boundary rescaling. The newer localized evidence makes the separation stronger: one can have **real spectral characteristic functions before any prime term is present**, or a universal PNT boundary spectrum after primes are present, without obtaining any mechanism that selects the Riemann zero divisor. Axis/spectral-reality generation and zero selection are separate mathematical problems.
+Mathia has many independent reasons why a distinguished real part, boundary, or real spectral carrier can emerge naturally: self-duality, Hilbert/Schatten membership, product-measure equivalence, cusp propagation, completion, or boundary rescaling. The newer evidence sharpens the separation further: one may even obtain a **criterion equivalent to RH** after the continued zero divisor has already been encoded, without obtaining a new mechanism that selects the zeros. Axis generation, diagnostic equivalence, and zero selection are three different mathematical achievements.
 
 ## Strongest justified principle
 
-Prime Lattice gives the cleanest hierarchy. Tate's completed Fourier--Mellin involution has `Re(s)=1/2` as its Hermitian/unitary self-dual axis (PL-014), while the Möbius Bohr vector, product-Poisson measure, and weighted Hasse constructions independently generate the same Hilbert/measure/summability boundary (PL-021, PL-030--PL-031) without a target-sensitive zero theorem. PL-044 goes further: for short enough localization the canonical finite Weil operator has a real spectral characteristic object **before any prime-power term activates**. PL-051 then shows that the first fixed-depth boundary blow-up is governed by a universal PNT rank-one model. Spectral reality and first-order boundary structure can therefore precede or wash out the zero information entirely.
+Prime Lattice gives the clearest hierarchy. Tate duality and several Hilbert/measure constructions canonically distinguish `Re(s)=1/2` without a target-sensitive zero theorem. Localized Weil operators can be spectrally real before prime terms appear, and completion cancels the first PNT boundary mode. PL-066 shows natural moving-band noncollapse below the archimedean scale would certify a sufficiently rightward zero; under RH those bands collapse.
 
-Prime Circle supplies parallel controls. PC-055 produces `1/2` as the first square-summable Möbius-birth column but not as a bounded-invertibility or zero-selection threshold. PC-064--PC-069 show that the canonical adelic-solenoid completion retains exact-order labels while its natural leafwise/regular spectra are dense, noncompact, scale-arbitrary, or incompatible with compact resolvent under exact dilation covariance. A canonical carrier is not automatically a canonical Hamiltonian.
+PL-067--PL-071 go one step further. At the critical second amplitude, fixed smooth completed boundary coefficients become explicit exponential sums over nontrivial zeros. For residual probes their boundedness is RH-equivalent (PL-068). But assuming RH the signal is generically nonconvergent almost-periodic recurrence; its translation hull is a generic compact-group rotation built from the zero frequency module, same-time coupling to the prime-log flow reduces to exact frequency intersection, and adaptive finite-horizon resonances can shadow arbitrary real frequency patterns. These operations reorganize zero data already supplied by the explicit formula rather than force the zeros onto the line.
 
-Weil Positivity makes the distinction sharper. The Poisson score produces the exact finite Weil coefficients at the critical boundary, and Prime-Circle positive shell determinants can recover `Lambda(n)`, yet the canonical positive completion either diverges, becomes nonclosable, classicalizes to a universal background, or loses the boundary birth term under sign-preserving reduction (WP-022--WP-023, WP-030, WP-032--WP-045). Correct local coefficients plus positivity of some neighboring object still do not supply the missing global sign theorem.
+Prime Circle supplies parallel controls: a compatible carrier can preserve exact-order labels while natural spectra remain dense or scale-arbitrary, and the finite Hardy relative sector can recover nontrivial cyclotomic periods without a critical-line selector. Weil Positivity can recover exact finite coefficients or `log p` in positive determinant data while the completed sign operation cancels, classicalizes, or becomes a polar absolute value. Prime Flute produces universal critical exponents and shares essential spectrum with an all-composite clone.
 
-Prime Flute supplies the geometric analogue. Selected propagation/Ruelle thresholds arise from universal long-channel or cusp mechanisms and survive non-prime controls; even the first relative-resolvent trace-class obstruction is local pseudodifferential background rather than a prime-tail selector.
+The programmatic requirement is therefore
 
-The programmatic requirement remains
+`canonical carrier/axis + independently derived arithmetic selector + compatible global topology/sign estimate -> possible RH mechanism`.
 
-\[
-\boxed{
-\text{canonical axis/carrier}
-+\text{independent arithmetic selector}
-+\text{compatible global topology/sign theorem}
-\longrightarrow
-\text{possible RH mechanism}.
-}
-\]
+An RH-equivalent criterion counts as a new mechanism only if the decisive estimate is proved from upstream structure rather than by restating the zero expansion or another RH-equivalent theorem.
 
 ## Evidence against overgeneralization
 
-This intuition does not demote the critical line to an arbitrary coordinate. Tate duality distinguishes it canonically, and several Mathia constructions recover exact finite coefficients there. The claim is only that **distinguished, spectrally real, and coefficient-correct are all weaker than zero-selecting**.
-
-Nor must the selector be a conventional self-adjoint compact-resolvent operator. The recent topology obstructions make relative, singular, target-sensitive, or noncompact formulations more plausible, provided their arithmetic content and sign are independently derived.
+This intuition does not make the critical line arbitrary. Tate duality distinguishes it canonically, and an RH-equivalent boundedness statement is mathematically meaningful. The claim is about explanatory force: distinguished, coefficient-correct, and even diagnostically equivalent are all weaker than an independent zero-selection proof.
 
 ## Status / novelty
 
-The component mechanisms are classical or exact persisted findings. Their separation into carrier/axis generation versus zero selection is a cross-branch synthesis, not a theorem about all RH approaches.
+The component mechanisms are classical or exact persisted findings. Their separation into carrier, diagnostic, and selector layers is a cross-branch synthesis.
 
 ## Falsification criterion
 
-Produce one of the audited canonical carrier mechanisms and prove, from that same structure without an additional RH-equivalent positivity/target/divisor assumption, that all nontrivial Riemann zeros lie on its distinguished set. A canonical completion that retains the exact finite selector and supplies an independent Weil sign theorem would also supersede the present boundary claim.
+Derive the PL-068 boundedness, or an analogous audited criterion, directly from rational-prime/completion geometry without importing a zero-location result, and use it to force the critical-line support. Such a proof would turn a diagnostic into a genuine selector and supersede the present boundary claim.
 
 ## Lean-formalizable core
 
 - Fixed-axis identity for Tate duality.
-- Hilbert/Schatten and product-measure boundary calculations.
-- Prime-free localized spectral-reality control.
-- Abstract distinction between spectral reality/criticality of a carrier and support of a divisor on that carrier.
+- Abstract distinction between a divisor-derived bounded signal and an upstream boundedness theorem.
+- Frequency-module hull/joining classifications.

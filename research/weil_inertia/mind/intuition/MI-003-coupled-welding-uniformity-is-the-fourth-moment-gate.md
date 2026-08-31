@@ -1,35 +1,39 @@
-# MI-003 — The welding gate is now a super-polylogarithmic localized alias problem
+# MI-003 — The welding gate is a source-faithful power-modulus conditioned-covariance problem
 
-**Evidence level:** supported for the exact reductions and polylogarithmic regime; the newest prime-specific quotient-mode suppression remains literature-derived/audit-sensitive
+**Evidence level:** supported for the exact reductions and the doubly-small power region; the one-sided conditioned bridge remains audit-sensitive/open
 
 ## Core intuition
 
-The unresolved Yang--Yang fourth-moment obstruction is no longer well described as “a generic four-prime correlation.” After the exact lock geometry and local factors are treated correctly, the difficult regime is much narrower: the genuine four-form local main centers, fixed polylogarithmic coefficients fall to higher-dimensional Siegel--Walfisz technology, and the global linear-form system has Cauchy--Schwarz complexity one. The surviving obstruction is the **anisotropic localization at super-polylogarithmic coefficients**, where coefficient-index sublattices create aliasing that global Fourier complexity does not see.
+The unresolved Yang--Yang fourth-moment obstruction is no longer well described as a generic four-prime correlation or a purely super-polylogarithmic alias problem. The exact lock geometry, local factors, and pair-frequency decomposition isolate a sharper interface: a genuine positive-power region is now controlled by nilsequence Bombieri--Vinogradov, while the complement requires a theorem that respects the locked additive four-prime source, its all-residue localization, and its local conditioning.
 
 ## Strongest justified principle
 
-WI-047--WI-049 separate local-main bookkeeping from the global residual. Fixed-level distribution alone leaves mass uncovered, but the full structured local Euler product can be controlled and, crucially, the locked four-form local factor centers cellwise against the product of the two-form local factors. A leading covariance cannot be attributed to an unremoved singular-series main term.
+WI-047--WI-049 separate deterministic local-main bookkeeping from the analytic residual: the genuine four-form local factor centers cellwise, so a leading covariance cannot be blamed on an unremoved singular-series main. WI-050 controls every fixed polylogarithmic coefficient range. WI-051 shows the unsliced four-form system has Cauchy--Schwarz complexity one but that physical localization creates large-index alias fibers.
 
-WI-050 then unslices the lock. On the dominant coprime family the Yang square becomes four affine-linear prime forms in three variables. For every fixed polylogarithmic coefficient range, Bienvenu's higher-dimensional Siegel--Walfisz theorem gives the required asymptotic on the source convex regions, so the post-local-main residual is `o(1)` there. The obstruction therefore starts only after the coefficients leave every fixed polylogarithmic range.
+WI-053 audits the strongest 2026 AP-maximal higher-uniformity input: its error is normalized by ambient interval length, leaving a factor equal to the progression step on power-sparse Yang progressions, and its generalized von Neumann theorem is not uniform in power-growing coefficients. That black-box route therefore stops at the power scale.
 
-WI-051 identifies the algebraic reason this is not a higher-Gowers-order problem. The four forms have Cauchy--Schwarz complexity exactly one and are controlled by ordinary Fourier/`U²` uniformity on a single finite field. But at the physical anisotropic scale, `k↦rk` and `k↦qk` land in large-index sublattices, leaving quotient modes perfectly coherent; generic localized `U²` control must lose coefficient size.
+WI-054 materially advances the boundary. Shao--Teräväinen's modulus-averaged nilsequence Bombieri--Vinogradov theorem takes a supremum over bounded-complexity phases inside the modulus sum. Inserted into WI-051's exact residue/pair-frequency formula, Parseval upgrades that one-leg control to an `ell^2` bound for the entire pair fiber, and a second Cauchy--Schwarz controls the locked frequency sum. After the source Mertens weights, both sides are rigorously controlled in the fixed-margin region
 
-WI-052 gives a prime-specific redirection, with its persisted `NEEDS-AUDIT` boundary: classical Barban--Davenport--Halberstam suppresses the **pure residue-class quotient projection** of the actual centered von Mangoldt weight on average over the dominant prime moduli in fixed power-separated interiors. If that audit holds as stated, the remaining signal must live in nonzero alias/shift-frequency fibers inside residue classes, the short-shift boundary, or separately booked collision/analytic interfaces rather than in the simplest generic quotient witness.
+`4 alpha + beta < 1`, `alpha + 4 beta < 1`.
+
+WI-055 and WI-056 audit two tempting recent two-modulus/convolution theorems and show why neither can be cited as the missing welding theorem: they act on one prime/product congruence rather than the additive lock `(m,m-rk,n,n-qk)`, impose incompatible residue or well-factorable-weight hypotheses, or place divisor-boundedness in the wrong variable. Their dispersion/Kloosterman methods remain relevant prior art, not completed interfaces.
+
+WI-057 closes a simpler one-sided patch. Replacing the controlled pair by its exact `W`-local main leaves nonconstant periodic residue modes. An opposite pair error can have `O(1)` discrepancy on every interval and still correlate linearly with such a mode. Ordinary marginal MRT therefore cannot extend WI-054 to the one-sided union. What is needed is conditioned/twisted pair-correlation control relative to the local sigma-algebra, or a source identity that removes those modes.
 
 ## What remains possible
 
-The open gate is a coefficient-uniform estimate for the exact locally centered four-prime welding sum in the super-polylogarithmic regime, or a matched lower-bound mechanism showing that one of the surviving alias/boundary fibers genuinely contributes at fourth-moment scale. Generic singular-series estimates, fixed-level distribution, higher Gowers order, or arbitrary bounded quotient examples no longer isolate the right variable.
+The live gate is outside the doubly-small power polygon, plus the deterministic local-main splice and boundary/collision interfaces. A decisive advance would prove a Yang-specific two-modulus dispersion/fiber square-function estimate, or identify a genuine surviving lower-bound component. Generic Gowers uniformity, ordinary pair discrepancy, or a theorem for a different congruence architecture no longer isolates the right variable.
 
 ## Status / novelty
 
-The exact lock identities, local centering, complexity-one reduction, and polylogarithmic treatment are persisted findings. The BDH redirection is persisted as literature-derived and still audit-sensitive; it should narrow hypotheses, not be treated as a final fourth-moment theorem.
+The lock identities, local centering, complexity-one reduction, polylogarithmic treatment, and WI-054 positive-power region are persisted findings. WI-057 carries an explicit `NEEDS-AUDIT` boundary in its literature interface; it narrows the required theorem but is not itself a fourth-moment theorem.
 
 ## Falsification criterion
 
-Show that a leading normalized covariance already survives in the audited polylogarithmic coefficient range after the genuine four-form local main is removed, or that the actual von Mangoldt quotient projection retains order-one mass where WI-052 claims BDH suppression. A positive advance must instead control or identify the surviving super-polylogarithmic alias/boundary component at the scale required by the Yang fourth moment.
+Show a leading normalized covariance survives inside the WI-054 controlled polygon after genuine local-main subtraction, or prove that ordinary marginal pair discrepancy alone controls the `W`-local-conditioned covariance despite WI-057's exact periodic control. A positive advance must instead control the surviving source-faithful conditioned fibers at the fourth-moment scale.
 
 ## Lean-formalizable core
 
-- Cauchy--Schwarz complexity-one certificate for the four-form system.
-- Exact finite local-factor centering identities.
-- Algebraic decomposition of quotient versus nonzero alias fibers in finite cyclic models.
+- Cauchy--Schwarz complexity-one certificate.
+- Exact local-factor centering and pair-fiber Parseval identity.
+- Periodic counterexample separating marginal discrepancy from conditioned covariance.

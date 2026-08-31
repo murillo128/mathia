@@ -1,42 +1,40 @@
 # MI-001 — Preserve the discriminating structure before compressing
 
-**Evidence level:** supported, with exact transversal fidelity theorems in several categories
+**Evidence level:** supported, with exact deterministic and statistical-sufficiency theorems in several categories
 
 ## Core intuition
 
-Across Mathia, the recurring failure is not “spectralization,” “positivity,” or “taking a scalar” in the abstract. It is applying a transformation whose induced indistinguishability relation already identifies states that the later arithmetic claim needs to distinguish. The new Arithmetic Fidelity line turns this from a methodological slogan into exact model theorems: recoverability is fiberwise, admissible observables define a maximal quotient, and deterministic post-processing or stochastic garbling cannot recreate information absent from that quotient.
+Across Mathia, the recurring failure is not spectralization, positivity, or taking a scalar in the abstract. It is applying a transformation whose induced indistinguishability relation already identifies states or models that the later arithmetic claim needs to distinguish. Arithmetic Fidelity turns this into exact model theorems: recoverability is fiberwise, admissible observables define a maximal quotient, statistical compression is governed by likelihood-ratio sufficiency, and downstream processing cannot recreate information absent from the complete retained statistic.
 
 ## Strongest current principle
 
-Arithmetic Fidelity supplies the transversal formal core. AF-001 proves `d=r∘T` exactly when `d` is constant on `T`-fibers; AF-003 says the joint map of all admissible observables is the maximal quotient available to a constrained repair; AF-011 gives the zero-error support-confusability analogue. AF-002/AF-005 also show why “add more features” is not enough: the meaningful question is whether a canonically allowed family hits every discriminator conflict, including finite aliases invisible to rank. Unconstrained marks can simply leak the target and are mathematically vacuous.
+AF-001 proves `d=r∘T` exactly when `d` is constant on `T`-fibers; AF-003 says the joint map of all admissible observables is the maximal quotient available to a constrained repair. AF-012--AF-013 add the stochastic analogue: for a finite family of probability models, the reference-relative likelihood-ratio vector is the complete statistic, and zero loss of one strictly convex multidistribution divergence is equivalent to statistical sufficiency for the whole experiment. Subsequent garbling only adds nonnegative loss.
 
-The branch evidence then instantiates different failure modes. Prime Circle now has a genuinely nonlocal Hardy lift, yet every finite mixed essential algebra is only a wedge of universal Hilbert bands; arithmetic remains in trace-class relative data. Prime Flute has an even stronger matched control: PF-125 proves the exact prime flute and the all-composite `p_n+1` clone are compact-resolvent equivalent, so essential spectrum has already identified the prime/non-prime distinction. Prime Lattice repeatedly shows that generator/boundary compressions can be target-blind or topology-dependent. Weil Inertia separates optimization loss from a locally centered super-polylogarithmic alias obstruction. Weil Positivity shows that exact selectors can survive positive finite geometry while disappearing only when one passes to a radial reduction, principal class, or torsion-forgetting real pairing.
+AF-014 prevents an opposite overstatement. Quadratic/positive data are not automatically information-poor: a full-rank Gram matrix retains all relative maximal-minor signs and loses only one global orientation torsor relative to `SO(d)`. The right audit is therefore always the **exact fiber of the actual destination**, not a generic slogan about sign or positivity.
 
-These are different theorems, not one universal category-free statement. Together they support a precise workflow:
+AF-015--AF-017 add a source/category dimension. Bare multiplication remembers prime type but not rational-prime norms; adjoining a norm can restore them; retaining the exact Euler-product function can be faithful to the unordered norm multiset; retaining only the divisor can lose that information again through zero-free factors. AF-016 adds that breaking base-model automorphisms is only an escape condition unless the observable category has a completeness theorem.
 
-\[
-\boxed{\text{derive the admissible observable class} \to \text{compute its fibers} \to \text{only then optimize, spectralize, or prove positivity}.}
-\]
+The branch evidence instantiates these rules. Prime Flute's compact-resolvent clone shows a spectral quotient can identify prime/non-prime geometry; Prime Circle's finite Hardy Calkin algebra loses mixed arithmetic while the relative trace sector retains more; Weil Inertia separates local-main/conditioning information from optimization; Weil Positivity shows positive determinant carriers can retain arithmetic before a later completion or polar repair externalizes it.
 
-## Positive examples
+## Consequence for synthesis
 
-Compression can be repaired when the extra relation is canonical. AF-004's bispectrum restores finite-abelian signals modulo translation; AF-005 gives an exact annihilator-lattice criterion for monomial phase lifts; AF-006 shows that full marked eigenspace Gram data can classify what diagonal spectral measures lose. Prime-Flute marked Weyl/spectral data similarly retain ordered finite-neck memory that scalar determinants erase.
+The order of operations is
 
-## Evidence against overgeneralization
+`derive admissible category -> compute complete retained statistic/fibers -> test source specificity -> only then optimize, spectralize, complete, or prove positivity`.
 
-Full input reconstruction is unnecessary if the desired predicate already factors through the quotient. Conversely, high rank, injective labels, a positive determinant, or an exact selector does not establish RH relevance. The relevant audit is always relative to the claimed discriminator and the admissibility constraints on information that may be added.
+A repair that adds a target-carrying mark or a normalization chosen after inspecting the desired zeros has not passed this gate.
 
 ## Status / novelty
 
-The fiberwise and category-specific fidelity results are persisted evidence; their use as a cross-branch order-of-operations principle is a supported synthesis.
+The component fidelity theorems are persisted findings with classical ingredients. Their use as a cross-branch order-of-operations principle is a supported synthesis.
 
 ## Falsification criterion
 
-Find a canonical pipeline where the target discriminator varies inside the maximal admissible fiber at some stage, no later stage receives new admissible information, yet the final invariant recovers the discriminator. Within the audited deterministic/stochastic models this would contradict the persisted fidelity results.
+Find a canonical pipeline where the target varies inside the complete admissible fiber/statistic at some stage, no later stage receives new admissible information, yet the final invariant recovers the target. Within the audited categories this would contradict persisted fidelity results.
 
 ## Lean-formalizable core
 
 - Fiberwise factorization and post-processing monotonicity.
-- Maximal admissible quotient and finite conflict hitting sets.
-- Support-confusability monotonicity under garbling.
-- Exact relational-lift examples via annihilator lattices and marked Gram data.
+- Maximal admissible quotient.
+- Likelihood-ratio/Jensen equality and statistical sufficiency.
+- Gram fiber modulo `O(d)` and orientation-torsor refinement.

@@ -14,10 +14,14 @@ Global Fenchel coupling can remove artificial blockwise optimization loss, but n
 
 Abstract trace/energy envelopes can overestimate what one translated profile and its shifted assembly can realize. Packing/span constraints and matched realized controls should be applied before interpreting an improved scalar bound as new arithmetic information.
 
-## Control the super-polylogarithmic locally centered welding residual
+## Control the source-faithful power-modulus welding residual beyond the nilsequence-BV region
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`.
 
-The unsliced Yang square is a finite-complexity, in fact complexity-one, four-form system. Its genuine local main centers, and every fixed polylogarithmic coefficient range is already accessible to higher-dimensional Siegel--Walfisz technology. Global `U²` complexity is therefore not the remaining obstacle. The difficult regime is anisotropic localization at super-polylogarithmic coefficients, where coefficient-index sublattices create aliasing; the simplest pure quotient mode of actual primes is itself suppressed on average in the persisted BDH audit.
+The genuine four-form local main centers, fixed polylogarithmic coefficients are controlled, and Shao--Teräväinen nilsequence Bombieri--Vinogradov plus the exact pair-fiber/Parseval identity controls a positive-power region on both coefficient sides:
 
-A decisive result must estimate the exact **post-local-main** four-prime covariance uniformly far enough into that coefficient regime to meet the fourth-moment threshold, or exhibit a genuine surviving contribution in nonzero alias fibers, short-shift boundary terms, or the separately booked analytic/collision interface. Reintroducing the singular-series main, freezing the shift into binary prime-pair problems, or invoking generic higher-order uniformity does not address the remaining gate.
+`4 alpha + beta < 1` and `alpha + 4 beta < 1`.
+
+The remaining analytic problem lies outside that region, together with the deterministic `W`-local/genuine-four-form main splice and the separately booked boundary/collision interfaces. Recent AP-maximal, simultaneous-AP, and convolution-BV theorems do not black-box close the source object: their normalizations, residue hypotheses, congruence architecture, or well-factorable modulus slots do not match the locked additive four-prime system.
+
+A decisive result must therefore be a source-faithful conditioned/twisted pair-correlation or two-modulus dispersion theorem, or an exact identity that removes the offending local residue modes before estimation. Ordinary marginal pair discrepancy is insufficient; WI-057 gives an exact periodic control showing that even uniformly bounded interval discrepancy can correlate at full scale with a `W`-local mode.

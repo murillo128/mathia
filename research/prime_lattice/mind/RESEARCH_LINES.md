@@ -20,10 +20,18 @@ Generator Gram geometry cannot see a common off-line Blaschke factor, while the 
 
 Exact prime-shift covariance is too rigid, while weak resolvent/projective cocycle variants are too automatic. The live question is a target-relative, one-sided, ramified, or noncompact-reference action with a nontrivial invariant forced by the exact rational-prime completion and robust against Beurling and arbitrary-target controls.
 
-## Locate or rule out the ultra-high-frequency completed Weil boundary regime
+## Locate or rule out the remaining natural completed-Weil boundary regime
 
 **Linked intuitions:** `MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary`.
 
-The completed localized boundary problem is now tightly constrained. The zeta pole canonically cancels the universal PNT rank-one mode; fixed Sobolev smoothing, growing spatial depth, compensated spatial recentering, and broad moving Dirichlet bands all collapse. Classical zero-free sampling pushes that collapse through every `N=exp(L^α)` with `α<3/2` (and stronger stated logarithmic ranges), while unsmoothed prime-power recurrence survives in essential norm only on much later moving states.
+Completion cancels the universal PNT rank-one mode; fixed smoothing, spatial decompactification, broad moving bands, and now every natural fixed-depth band with `log N=o(exp L)` are strongly constrained. PL-066 shows that order-one noncollapse in the latter regime would force a quantitatively rightmost zero, and under RH all such bands collapse. Essential prime-log recurrence survives only on much later moving states.
 
-The remaining question is whether a canonical topology at or beyond that transition yields a stable rational-prime-specific residual, or whether every such construction is merely a reformulation of zero-free/PNT estimates plus Kronecker recurrence. A decisive positive result must define the topology from the completed Weil geometry, prove convergence, and pass Beurling controls without importing the zero divisor. A general no-go across the remaining transition would close the localized-Hamiltonian route.
+A decisive positive topology must therefore live at or beyond the remaining transition, be defined from the completed Weil geometry before inspecting zeros, and distinguish rational primes from Beurling controls. A general no-go proving that the residual transition is only zero-free/PNT estimates plus recurrence would close this route.
+
+## Determine whether the second-scale boundedness criterion can be derived upstream rather than read from the zero expansion
+
+**Linked intuitions:** `MI-006-second-scale-weil-signal-is-diagnostic-not-generative`.
+
+On fixed smooth cross-end probes, the critical second amplitude produces an almost-periodic zero signal. For residual probes its boundedness is RH-equivalent, but the signal generically has no limit under RH; its Bohr hull is a generic compact-group rotation, same-time prime coupling reduces to exact frequency-module intersection, and adaptive finite-horizon resonances are Diophantine-universal.
+
+The only potentially new route is therefore upstream: derive the required boundedness or an equivalent coercive estimate directly from rational-prime/completion structure without using the already-continued zero expansion as the controlling input. If every such derivation merely reimports the explicit formula or a zero-location theorem, the second-scale criterion is diagnostic rather than explanatory.

@@ -1,33 +1,38 @@
-# MI-003 — Arithmetic selectors can survive positive finite geometry, but the critical pairing repeatedly erases or externalizes them
+# MI-003 — Arithmetic information can survive positivity, but canonical completion often externalizes it into determinants or absolute values
 
-**Evidence level:** supported by exact finite selectors and decisive completion/category obstructions
+**Evidence level:** supported by exact finite selectors and decisive completion/symmetry obstructions
 
 ## Core intuition
 
-The current evidence no longer supports the crude slogan that positivity itself destroys arithmetic. Canonical positive finite operators, determinants, and even integral polarizations can retain exact `Λ(n)` or `log p`. The recurring failure occurs at the next categorical step: the operation that turns the carrier into the desired global positive pairing either cancels the arithmetic, forces divergent self-energy, passes to a principal/trivial class, or leaves the prime scale in torsion cardinality that no real quadratic form can see.
+The current evidence rules out the crude slogan that positivity destroys arithmetic. Canonical positive operators, Gram kernels, determinant lines, and polarizations can retain exact `Lambda(n)` or `log p`. The recurring failure occurs at the operation that is supposed to turn that carrier into the completed Weil sign: arithmetic is canceled across a complex, pushed into a logarithmic determinant, made universal by symmetry, or converted to an absolute value that no longer carries an independent sign theorem.
 
 ## Strongest justified principle
 
-The radial Prime-Circle route is now essentially classified for finite channel systems. WP-044--WP-045 showed that shell-blind contrasts and ordinary Schur elimination cancel the boundary Weil birth operator together with the universal collision mode. WP-046 extends the cancellation to bounded shell-dependent speeds, while WP-047 handles arbitrary noncomparable finite radial scales: a finite positive Schur limit forces arithmetic attenuation to zero; retaining the birth operator makes positive self-energy diverge; subtracting that divergence loses the inherited sign theorem and returns an indefinite congruence of the birth form.
+The earlier radial and Hodge/Prym results already separated carrier from pairing. Finite radial Schur limits either attenuate arithmetic to zero, diverge, or return an indefinite congruence of the birth form; principal divisor/class reductions and normalized Hodge transfer erase the desired finite coefficient; the Prym polarization kernel stores a genuine `p`-discriminant but finite torsion cannot support the required ordered real quadratic pairing.
 
-The archimedean channel-selection problem is narrower than before. WP-048 proves that the anchored reflection and compatible cycle geometry independently select order two, hence the Riemann `Γ_R` channel, without choosing `q=2` from the target factor. But WP-049--WP-050 show that the same reflection cannot provide the finite-prime grading: scalar parity cancels the primitive-shell contrast, while the canonical odd current produces a dyadic Mangoldt shadow. Together with PC-076, `Λ(n)` can be isolated algebraically only by mixing a positive determinant with a signed relative trace.
+WP-058 strengthens the positive side. The same Prym discriminant exports canonically to the Hodge determinant line: the polarization metric gives lattice covolume `p^{g_n}`, so `log p` is present in an honest positive norm. Yet the real polarization map is an isometry to its metric dual, so its canonical positive singular-value operator is exactly the identity. The prime scale lives in the integral lattice position/determinant, not in a linear positive spectrum.
 
-The arithmetic-intersection/Hodge route exhibits the same category change. WP-052--WP-054 recover exact finite resultant or endpoint coefficients, but the normalized divisors/correspondences are principal or whole-fiber directions before Hodge positivity can act. WP-055 grants a minimal hyperelliptic lift with genuine `H¹`; normalized Hodge transfer remains degree-flat. WP-056 then finds a stronger carrier: the Prym polarization kernel stores `log p` in its integral discriminant. WP-057 identifies the hard boundary — that carrier is finite torsion, so every real biadditive/quadratic pairing and the Néron--Tate height annihilate it. The surviving theta pairing is phase-valued, and the canonical Heisenberg representation remembers `p` only through dimension/cardinality.
+WP-059 resolves the strongest theta-action clue. Letting the Prym torsion act on the non-torsion Heisenberg representation before positivity produces a phase-free positive adjoint defect whose normalized log pseudodeterminant is `log p`. But that operator is exactly a multiplicity of the ordinary `p`-cycle Laplacian; its trace is universal, direct `p^k` depth gives `k log p`, and the mechanism is a classical determinant identity rather than a linear Weil pairing.
+
+WP-060 then shows that the most canonical untwisted analytic-torsion completion of the same determinant-line carrier erases it: on the relevant even-dimensional flat Prym torus the de Rham determinant-line volume cancels across degrees and Ray--Singer/holomorphic torsion is trivial. Any torsion escape must therefore add genuine twisting/family/boundary structure before the determinant is formed.
+
+The Hardy route exposes the parallel sign problem. WP-061 constructs a canonical positive `q=2` primitive-shell Gram kernel, but the independently selected **full-root** `q=2` archimedean Hardy channel is indefinite and the positive Gram does not preserve finite-place sparsity. WP-062 proves that every nonzero half-turn-equivariant compression of that full-root channel remains indefinite. WP-063 classifies the most natural symmetry-breaking Krein repair: among parity-exchanging self-adjoint unitary metrics, positivity forces the spectral-sign metric and the repaired operator is exactly the polar absolute value. That is a repair of sign, not an independent sign theorem.
 
 ## What remains possible
 
-A successful construction must couple the finite selector and archimedean/polar sector **before** the relevant quotient, class map, radial elimination, or torsion-forgetting positive completion. One precise surviving possibility is to let the Prym/theta torsion act on a larger non-torsion space before forming a positive relative pairing; another is a genuinely nonseparable infinite-dimensional finite--archimedean operation with its own sign theorem. Neither is established.
+A successful construction must couple the finite selector and archimedean/polar sector before determinant, full-cohomology cancellation, symmetric compression, or polar absolute-value repair. A twisted Prym family, a non-polar metric forced by additional geometry, or a genuinely nonseparable finite--archimedean operator remains logically possible, but none is established.
 
 ## Status / novelty
 
-The finite selectors, radial trilemma, canonical `q=2` selector, principal-class obstructions, and Prym torsion obstruction are persisted findings. Their common “carrier versus positive pairing” interpretation is a supported synthesis, not a theorem that every positive completion fails.
+The determinant-line norm, cycle-Laplacian reduction, torsion cancellation, Hardy chiral obstruction, and unique polar repair are persisted findings with classical ingredients. Their common “positive carrier versus completed sign” interpretation is a supported synthesis.
 
 ## Falsification criterion
 
-Derive a canonical global positive pairing that retains one of the audited finite carriers through the completed Weil form, supplies the archimedean/polar term, and has an independently proved sign. Within the closed finite-radial family, a bounded positive Schur limit retaining a nonzero birth operator would contradict WP-046--WP-047; a nonzero real quadratic pairing descending to the Prym polarization kernel would contradict WP-057.
+Derive a canonical completed positive pairing that retains one of the audited selectors and has an independently proved sign. Within the closed families, a nonzero half-turn-equivariant positive compression would contradict WP-062, while a different parity-exchanging unitary Krein metric producing positivity would contradict WP-063.
 
 ## Lean-formalizable core
 
-- Finite-dimensional Schur-complement trilemma with a common indefinite arithmetic block.
-- Reflection parity cancellation on primitive shells.
-- Vanishing of real biadditive forms on finite torsion groups.
+- Determinant/covolume identity from a symplectic polarization matrix.
+- Cycle-Laplacian pseudodeterminant identity.
+- Chiral-symmetry no-positive-compression lemma.
+- Uniqueness of the polar-sign Krein repair.

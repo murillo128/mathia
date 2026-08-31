@@ -18,10 +18,10 @@ Quarter- and half-plane thresholds, cusp winding, and long-geodesic propagation 
 
 The decisive test is an intrinsic residual that changes under a matched non-prime geometry only when the exact ordered arithmetic data change, not merely when a local defect or cusp channel is present.
 
-## Decide stronger-than-compact clone invariants
+## Decide stronger-than-compact clone invariants through a genuinely two-dimensional comparison
 
 **Linked intuitions:** `MI-004-coordinate-amplification-is-not-operator-amplification`.
 
-PF-125 proves that the exact prime flute and the exact all-composite shift clone are compact-resolvent equivalent under a canonical marked identification, so essential spectrum and every invariant depending only on that compact class are closed as prime discriminators. First-resolvent trace class is separately ruled out locally by PF-112. The remaining operator question lies strictly between or beyond those endpoints.
+PF-125 proves that the exact prime flute and the exact all-composite shift clone are compact-resolvent equivalent under a canonical marked identification, while first-resolvent trace class is locally impossible by PF-112. PF-131--PF-134 now remove the remaining one-dimensional gluing loopholes: the full nonlinear split-ray mismatch is summable through the cusp, its only persistent scalar mode has summable adjacent variation, the centered tail is strong `W^{1,1}`, and even the growing `O(log p_n)` cusp-entry length is harmless after weighting.
 
-Determine whether the global relative resolvent belongs to `S_r` for some `r>1`, whether higher resolvent powers or heat differences admit trace ideals, and whether wave/scattering, discrete spectral shift, resonance, or relative determinant data are well defined and clone-sensitive. A decisive positive result must distinguish the composite control; a theorem that all natural stronger relative invariants are likewise clone-stable would close the operator route much further.
+The remaining analytic gate is therefore genuinely two-dimensional: construct a boundary-coherent global metric comparison satisfying the relevant weighted metric/scattering criterion, or prove that such an extension necessarily fails. Only after that should one ask for global `S_r` (`r>1`), higher-resolvent, heat/wave/scattering, discrete spectral-shift, resonance, or relative-determinant data and test whether any of them distinguish the composite clone.
