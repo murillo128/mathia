@@ -25,8 +25,8 @@ Q_a(T)=(1/T) integral_0^T |D_(a,T)(t)|^2 dt.
 With
 
 ```text
-K_T(u)=(1/T) integral_0^T exp(-i t u) dt
-      =exp(-i T u/2) sinc(T u/2),
+K_T(u)=(1/T) integral_0^T exp(+i t u) dt
+      =exp(+i T u/2) sinc(T u/2),
 ```
 
 one has the exact lag decomposition
@@ -54,7 +54,7 @@ so the critical kernel has the nonzero limit
 K_T(log((n+h)/n))
  -> kappa_h(n/T),
 
-kappa_h(x)=exp(-i h/(2x)) sinc(h/(2x)).
+kappa_h(x)=exp(+i h/(2x)) sinc(h/(2x)).
 ```
 
 Thus fixed additive shifts survive exactly at the same `N~T` scale at which `PL-072` found the universal sinc Gram transition.
@@ -187,7 +187,7 @@ T log(1+h/n)=h/x+O_h(1/T).
 The finite-time character kernel consequently converges to
 
 ```text
-kappa_h(x)=exp(-i h/(2x)) sinc(h/(2x)).
+kappa_h(x)=exp(+i h/(2x)) sinc(h/(2x)).
 ```
 
 This is the same local sinc geometry as `PL-072`, now tested against arithmetic coefficients. The important change is informational: the kernel no longer asks about the prime-factor relation between two nearby exponent vectors. It weights the ordinary **additive shift pair**
