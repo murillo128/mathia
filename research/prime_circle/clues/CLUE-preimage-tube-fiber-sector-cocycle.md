@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-preimage-tube-fiber-sector-cocycle
 type: research-clue
-status: proposed
+status: accepted
 origin: visionary-researcher
 target_line: prime_circle
 based_on:
@@ -64,3 +64,9 @@ Then run the same construction on a matched composite/conductor control preservi
 No such coupling, associator, or prime-specific cohomology class has been established. Standard finite-group representation theory supplies the character-sector selection rule but does not select the coupling coefficients. Likewise, the existence of abstract cocycle twists is not evidence that Prime-Circle geometry carries one: A. O. Morris, *Projective Representations of Abelian Groups*, J. London Math. Soc. (2) 7 (1973), 235–238, DOI `10.1112/jlms/s2-7.2.235`, places projective twists in the standard multiplier/cohomology setting; I. Angiono and C. Galindo, *Pointed finite tensor categories over abelian groups*, Int. J. Math. 28 (2017), DOI `10.1142/S0129167X17500872`, makes the cohomology class of the associator explicit in the pointed setting; and O. Braunling, *Quinn's Formula and Abelian 3-Cocycles for Quadratic Forms*, Algebr. Represent. Theory 24 (2021), 1523–1555, DOI `10.1007/s10468-020-10001-1`, treats explicit abelian 3-cocycles/associators.
 
 Directed searches across roots-of-unity power-map fibers, cotangent/Fourier decompositions, projective representations, and pointed-category associators did not locate the exact geometry-forced Prime-Circle construction above. That is only a bounded literature boundary, not a novelty claim. The decisive burden remains to derive `B` canonically from the embedded tube and to show a difference after the matched control; choosing a nontrivial cocycle by hand would fail the clue immediately.
+
+## Research disposition
+
+Initial triage found and killed the most canonical nonlinear coupling. [[research/prime_circle/findings/PC-087-preimage-tube-sector-product-cocycle-is-pure-gauge]] proves that intrinsic pointwise multiplication, when transported through the exact PC-053 sector gauges, acquires only the carry factor `D_jD_kD_[j+k]^{-1}`; this is an explicit 2-coboundary, its associator is zero, and the matched total-fiber control is identical.
+
+The clue remains worth active investigation only in the narrower form: derive from the embedded chord/cotangent old-new geometry a bilinear or quadratic tensor that is **not** gauge-equivalent to ordinary pointwise multiplication and does not factor through the affine PC-052/053 block data. Any surviving candidate must then distinguish the prime-derived tube from a matched control without coefficients or cocycles chosen by hand.

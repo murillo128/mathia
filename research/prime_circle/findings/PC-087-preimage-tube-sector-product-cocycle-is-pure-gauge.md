@@ -1,0 +1,285 @@
+# PC-087 — preimage-tube sector-product cocycle is pure gauge
+
+**Status:** `EXACT-DERIVED` + `LITERATURE+DERIVED` + `DECISIVE-NEGATIVE` for the canonical nonlinear sector product obtained from the complete Prime-Circle preimage tube and the Fourier/gauge coordinates of PC-053. The apparent carry phase created when all fiber sectors are identified with one common base operator is an explicit 2-coboundary. The induced product is strictly associative, has no geometry-forced associator, and is unchanged by replacing a two-prime refinement by any matched realization with the same total fiber multiplier.
+
+This closes the most immediate nonlinear escape left open by PC-053: after the linear cotangent operator splits into affine Fourier blocks, ordinary pointwise multiplication of the physical tube fields does mix sectors, but the resulting sector coefficient carries no nontrivial projective or cohomological defect. It does **not** classify every conceivable bilinear kernel that could be built from chord/cotangent data; a surviving direction would have to derive a genuinely different interaction, not a gauge transport of the intrinsic pointwise product.
+
+## 1. Complete preimage tube and the PC-053 sector gauge
+
+Let `d>1` and `m>=1`. On the complete power-map preimage tube
+
+\[
+Y_{d,m}=\{\zeta_{dm}^{a+dt}:a\in U(d),\ t\in\mathbb Z/m\mathbb Z\},
+\]
+
+write
+
+\[
+\omega=e^{2\pi i/m},
+\qquad
+D_j(a)=\exp\!\left(\frac{2\pi ija}{dm}\right),
+\qquad 0\le j<m.
+\]
+
+PC-053 proves that after adding the canonical rank-one completion `J`, the cotangent operator on the full tube has fiber-Fourier blocks
+
+\[
+K_j=mD_jA_dD_j^{-1}-2jI,
+\qquad
+A_d=H_d+J_d.
+\]
+
+Thus the diagonal gauge `D_j` identifies every character sector with the same base space. It is convenient to encode that identification directly by the unnormalized sector embedding
+
+\[
+\boxed{
+\mathcal J_j(v)(a,t)=\omega^{jt}D_j(a)v(a).
+}
+\]
+
+Then
+
+\[
+\mathcal A_{d,m}\,\mathcal J_j(v)
+=
+\mathcal J_j\bigl((mA_d-2jI)v\bigr).
+\]
+
+The normalization of `\mathcal J_j` is irrelevant below; using `m^{-1/2}` would only insert an overall scalar in the bilinear product.
+
+## 2. Pointwise multiplication has an exact carry coefficient
+
+Pointwise multiplication of functions on `Y_{d,m}` is intrinsic and requires no extra kernel, weights, or spectral parameter. It is therefore the first canonical nonlinear interaction to test after the linear sector decomposition.
+
+For `0<=j,k<m`, put
+
+\[
+r=[j+k]_m,
+\qquad
+c_m(j,k)=\left\lfloor\frac{j+k}{m}\right\rfloor\in\{0,1\},
+\]
+
+so that
+
+\[
+j+k=r+mc_m(j,k).
+\]
+
+Define the base phase
+
+\[
+E(a)=e^{2\pi ia/d}.
+\]
+
+Because
+
+\[
+D_j(a)D_k(a)
+=
+D_r(a)E(a)^{c_m(j,k)},
+\]
+
+and `\omega^{(j+k)t}=\omega^{rt}`, one obtains the exact sector product
+
+\[
+\boxed{
+\mathcal J_j(v)\,\mathcal J_k(w)
+=
+\mathcal J_r\!\left(E^{c_m(j,k)}vw\right).
+}
+\]
+
+Thus the character-selection rule is the expected one,
+
+\[
+E_jE_k\longrightarrow E_{j+k\bmod m},
+\]
+
+but the coefficient visible in the common-base gauge is not arbitrary. It is forced to be the elementary carry factor
+
+\[
+\boxed{u_m(j,k)=E^{c_m(j,k)}.}
+\]
+
+This is the natural candidate suggested by the local clue `CLUE-preimage-tube-fiber-sector-cocycle`: the geometry supplies a nonlinear cross-sector tensor without choosing a cocycle by hand.
+
+## 3. The carry factor is a 2-cocycle — and explicitly a coboundary
+
+The carry satisfies the elementary associativity identity
+
+\[
+\boxed{
+c_m(j,k)+c_m([j+k]_m,\ell)
+=
+c_m(k,\ell)+c_m(j,[k+\ell]_m).
+}
+\]
+
+Both sides equal the number of wraps in reducing `j+k+\ell` modulo `m`, equivalently `\lfloor(j+k+\ell)/m\rfloor` after the intermediate representative is restored. Hence
+
+\[
+u_m(j,k)u_m([j+k]_m,\ell)
+=
+u_m(k,\ell)u_m(j,[k+\ell]_m).
+\]
+
+So `u_m` is a normalized 2-cocycle with values in the commuting diagonal unitary functions on the base shell.
+
+But it is stronger than merely associative. By its definition from the PC-053 gauges,
+
+\[
+\boxed{
+u_m(j,k)=D_jD_kD_{[j+k]_m}^{-1}.}
+\]
+
+Therefore
+
+\[
+\boxed{u_m=\delta D}
+\]
+
+is an explicit 2-**coboundary**. The apparent twist is exactly the basis change needed to identify the different Fourier blocks with one common copy of the base operator.
+
+This can be seen without any cohomology language. In the raw fiber-Fourier coordinates
+
+\[
+\widetilde{\mathcal J}_j(v)(a,t)=\omega^{jt}v(a),
+\]
+
+ordinary multiplication is simply
+
+\[
+\widetilde{\mathcal J}_j(v)\widetilde{\mathcal J}_k(w)
+=
+\widetilde{\mathcal J}_{[j+k]_m}(vw),
+\]
+
+with coefficient `1`. The factor `u_m` appears only after conjugating sector `j` by `D_j`. Undoing those gauges removes it completely.
+
+At every individual base vertex `a`, the same statement is scalar:
+
+\[
+u_{m,a}(j,k)
+=
+\frac{D_j(a)D_k(a)}{D_{[j+k]_m}(a)}.
+\]
+
+Thus there is no hidden nontrivial scalar projective class inside the diagonal-valued formula.
+
+## 4. There is no associator generated by the intrinsic product
+
+Let the gauged base-space product be
+
+\[
+B_{j,k}(v,w)=E^{c_m(j,k)}vw.
+\]
+
+Then the carry identity gives exactly
+
+\[
+\boxed{
+B_{[j+k]_m,\ell}(B_{j,k}(v,w),x)
+=
+B_{j,[k+\ell]_m}(v,B_{k,\ell}(w,x)).
+}
+\]
+
+Hence the associativity defect vanishes identically:
+
+\[
+\boxed{A_B(v,w,x)=0.}
+\]
+
+No Abel limit, asymptotic argument, or numerical cancellation is involved. This is simply strict associativity of pointwise multiplication transported through the exact PC-053 sector gauges.
+
+Consequently an `H^3`-type associator cannot be claimed from this canonical nonlinear operation. Abstract pointed categories may admit nontrivial associators, but selecting one is extra structure; it is not generated by the Prime-Circle preimage tube under the present construction.
+
+## 5. Distinct-prime two-step fibers do not change the conclusion
+
+Take distinct primes `p,q` coprime to `d` and set `m=pq`. The fiber group may be written either as
+
+\[
+\mathbb Z/m\mathbb Z
+\]
+
+or, by the Chinese remainder theorem, as
+
+\[
+G_{p,q}\cong
+\mathbb Z/p\mathbb Z\times\mathbb Z/q\mathbb Z.
+\]
+
+These are the same finite group because `p` and `q` are coprime. Transporting the pointwise product and the cochain `D` through the CRT isomorphism transports the coboundary identity with them. A different choice of representatives may change the displayed carry factors, but only by another cochain gauge.
+
+In particular, the two-prime square does not acquire an order-sensitive phase from composing `p` and `q`. The nonlinear multiplication law depends only on the total lift fiber and the base phase already present in `D_j`; it does not remember whether `m` was presented as `p q`, `q p`, or as one composite refinement.
+
+There is an additional classical warning here. Projective representations and twisted group algebras are governed by factor sets modulo coboundary; this is standard in the literature on projective representations of finite abelian groups and twisted group algebras. For the actual distinct-prime fiber the group is cyclic, so an abstract scalar projective multiplier does not provide a hidden prime-ordering degree of freedom either. The Prime-Circle result above is stronger for the canonical interaction because it exhibits the trivializing cochain explicitly.
+
+## 6. Matched-control test
+
+The clue requires a matched composite/conductor control preserving the fiber representation and ambient chord/cotangent rules while removing the interpretation of the two axes as separate rational-prime births.
+
+For the pointwise-sector product, such a control is decisive immediately. The formula
+
+\[
+B_{j,k}(v,w)=E^{c_m(j,k)}vw
+\]
+
+uses only:
+
+1. the total multiplier `m`;
+2. the base residue `a mod d` through `E(a)`;
+3. the sector gauges `D_j` already forced by the complete-tube Fourier decomposition.
+
+It contains no coefficient depending separately on the factorization `m=pq`. Therefore every matched realization with the same `d`, total `m`, fiber translations, and sector gauge data has exactly the same product algebra and the same zero associator.
+
+This fails the clue's requested prime-specific discriminator.
+
+## 7. Prior-art and novelty audit
+
+The cohomological ingredients are classical and no novelty is claimed for cocycles, coboundaries, or projective representations.
+
+- A. O. Morris, **Projective Representations of Abelian Groups**, *Journal of the London Mathematical Society* (2) 7 (1973), 235–238. DOI: `10.1112/jlms/s2-7.2.235`. Role: classical projective-representation/factor-set setting for finite abelian groups.
+- R. C. Busby and H. A. Smith, **Representations of Twisted Group Algebras**, *Transactions of the American Mathematical Society* 149 (1970), 503–537. DOI: `10.1090/S0002-9947-1970-0264418-8`. Role: standard twisted multiplication and cocycle framework.
+- The clue also records pointed-category and abelian 3-cocycle literature as the appropriate boundary for genuine associators.
+
+Directed searches around projective representations of abelian/cyclic groups, twisted group algebras, carry cocycles, and finite-sector associators find the abstract machinery to be classical. No source located gives reason to interpret the explicit Prime-Circle factor `D_jD_kD_{j+k}^{-1}` as a new cohomology class; indeed its displayed form proves the opposite.
+
+The durable contribution here is the Prime-Circle-specific obstruction: **the first nonlinear coupling canonically present on the complete tube becomes a carry twist only because PC-053 uses sector-dependent gauges, and that twist is exactly pure gauge.**
+
+## 8. Consequence for the Prime-Circle search
+
+PC-053 left nonlinear mixing of fiber sectors outside its affine spectral no-go. PC-087 now removes the most canonical such mixing mechanism:
+
+\[
+\boxed{
+\text{complete preimage tube}
+\to
+\text{fiber Fourier sectors}
+\to
+\text{intrinsic pointwise product}
+\to
+\text{carry phase / associator}
+\to
+\text{prime-specific RH mechanism}
+}
+\]
+
+fails because the carry factor is an explicit coboundary and the associator is identically zero.
+
+This does **not** prove that every geometry-derived bilinear tensor is trivial. A surviving version of the clue must now exhibit a bilinear or quadratic operator whose coefficients are derived from chord/cotangent old-new geometry but are **not** obtained by transporting ordinary multiplication through the `D_j` gauges. It must then pass the matched-control test and avoid collapsing to the affine block data of PC-052/053 or the fixed Fourier algebra of PC-024.
+
+That is a substantially narrower and falsifiable frontier.
+
+## 9. Exact audit tests
+
+The finding has direct finite checks.
+
+1. Verify from PC-053 that `K_j=mD_jA_dD_j^{-1}-2jI` and hence that `\mathcal J_j(v)=\omega^{jt}D_jv` is the common-base sector embedding.
+2. Multiply two such sector functions and recover `D_jD_k=D_{[j+k]_m}E^{c_m(j,k)}`.
+3. Check the carry identity for every `j,k,\ell in {0,...,m-1}`.
+4. Verify directly that `u_m(j,k)=D_jD_kD_{[j+k]_m}^{-1}`.
+5. Undo the `D_j` gauges and confirm that raw Fourier-sector pointwise multiplication has coefficient `1`.
+6. For `m=pq`, transport the formulas through CRT and confirm that reversing the factorization order does not change the product algebra.
+
+Any example in which the intrinsic pointwise product in raw Fourier coordinates acquires a nontrivial coefficient, or in which the displayed `u_m` cannot be removed by the existing `D_j` cochain, would falsify the claim.
