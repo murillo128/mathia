@@ -17,6 +17,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/arithmetic_fidelity/mind/intuition/MI-002-canonical-relational-lifts-can-restore-gauge|MI-002 — canonical relational lifts]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-003-fidelity-endpoints-are-category-dependent|MI-003 — category-dependent fidelity endpoints]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-004-prime-specificity-depends-on-the-retained-analytic-layer|MI-004 — prime specificity depends on the retained analytic layer]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-005-test-family-fidelity-has-scale-and-dimension-gates|MI-005 — test-family fidelity has scale and dimension gates]]
 - [[research/arithmetic_fidelity/mind/RESEARCH_LINES|Arithmetic Fidelity research lines]]
 
 ## Derived relation nodes

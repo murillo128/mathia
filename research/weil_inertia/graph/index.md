@@ -16,11 +16,12 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction|MI-001 — screening is an information-bandwidth obstruction]]
 - [[research/weil_inertia/mind/intuition/MI-002-global-fenchel-dual-separates-losses|MI-002 — Fenchel dual separates losses]]
 - [[research/weil_inertia/mind/intuition/MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate|MI-003 — coupled welding uniformity gate]]
+- [[research/weil_inertia/mind/intuition/MI-004-w-conditioning-is-l2-compressible-but-l1-expensive|MI-004 — W-conditioning is L2-compressible but L1-expensive]]
 - [[research/weil_inertia/mind/RESEARCH_LINES|Weil Inertia research lines]]
 
 ## Derived relation nodes
 
-- [[research/weil_inertia/graph/relations/welding-maximal-l2-and-global-cauchy-boundary|Welding exact-centering and coupled-remainder boundary]]
+- [[research/weil_inertia/graph/relations/welding-maximal-l2-and-global-cauchy-boundary|Welding conditioned-pair and cross-conductor boundary]]
 
 ## Curation boundary
 

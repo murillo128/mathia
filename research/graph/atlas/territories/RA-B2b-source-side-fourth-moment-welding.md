@@ -17,19 +17,16 @@ A live attempt to retain more arithmetic information before Gram collapse.
 
 - [[research/weil_inertia/findings/WI-028-one-sided-fourth-moment-needs-only-coarse-remainder-to-improve|WI-028]]
 - [[research/weil_inertia/findings/WI-049-locked-four-prime-local-main-centers-cellwise|WI-049]]
-- [[research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz|WI-050]]
-- [[research/weil_inertia/findings/WI-051-complexity-one-fourier-control-does-not-remove-coefficient-wall|WI-051]]
-- [[research/weil_inertia/findings/WI-052-barban-davenport-halberstam-suppresses-pure-quotient-prime-modes|WI-052]]
-- [[research/weil_inertia/findings/WI-053-ap-maximal-higher-uniformity-is-ambient-normalized|WI-053]]
 - [[research/weil_inertia/findings/WI-054-nilsequence-bv-controls-localized-pair-fibers|WI-054]]
-- [[research/weil_inertia/findings/WI-055-zheng-simultaneous-ap-does-not-black-box-close-welding|WI-055]]
-- [[research/weil_inertia/findings/WI-056-convolution-bv-does-not-black-box-close-welding|WI-056]]
 - [[research/weil_inertia/findings/WI-057-ordinary-mrt-does-not-control-w-local-conditioned-pair-covariance|WI-057]]
 - [[research/weil_inertia/findings/WI-058-w-local-pair-main-has-tight-fourier-conductor-energy|WI-058]]
 - [[research/weil_inertia/findings/WI-059-fixed-polylog-conductor-truncation-misses-w-local-energy|WI-059]]
 - [[research/weil_inertia/findings/WI-060-retained-w-spectrum-wiener-norm-forces-square-function-control|WI-060]]
+- [[research/weil_inertia/findings/WI-061-mikawa-pair-ap-dispersion-is-the-conditioned-input|WI-061]]
+- [[research/weil_inertia/findings/WI-063-lossless-spectral-sparsification-forces-superpolylog-diagonal-cost|WI-063]]
+- [[research/weil_inertia/findings/WI-064-mikawa-errors-form-exact-divisor-martingale-but-one-refinement-still-costs-superpolylog|WI-064]]
 - [[research/weil_inertia/mind/RESEARCH_LINES|Weil-inertia synthesis]]
 
-The deterministic local main, fixed polylogarithmic coefficient ranges, pure quotient mode and ordinary marginal conditioning are no longer the main obstruction. Nilsequence Bombieri--Vinogradov controls a genuine positive-power region. The `W`-local conditioning spectrum is now known to concentrate at subpolynomial conductor, but any fixed polylog cutoff misses positive `L^2` mass and termwise `l^1` assembly is too expensive.
+The conditioned-pair prior-art gap is narrower than in the previous atlas snapshot. WI-061's review converged with its canonical finding retained, so Mikawa pair-AP dispersion is now a source-backed conditioned input. At the same time, lossless diagonal spectral sparsification is super-polylogarithmically expensive and the exact divisor-martingale structure exposed by WI-064 still cannot be used through one common refinement without paying a super-polylogarithmic modulus.
 
-The territory remains open for a Yang-specific collective square-function/conditioned-pair splice over the retained subpolynomial conductors outside the currently controlled region, together with the separately booked boundary/collision and moving-interval interfaces. WI-061 is under open adversarial review, so its stronger Mikawa-splice claim is not used to change the atlas state. The Yang--Yang candidate is neither certified nor refuted.
+The territory remains `open`: the needed result is a Yang-specific collective/vector-valued conditioned-pair estimate exploiting cross-conductor martingale/orthogonality without the diagonal or common-refinement loss, plus the source bookkeeping required for the actual welding. WI-062 remains challenged by an open review and is not required for this atlas disposition. The Yang--Yang candidate is neither certified nor refuted.

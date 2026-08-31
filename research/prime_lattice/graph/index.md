@@ -19,6 +19,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_lattice/mind/intuition/MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle|MI-004 — prime-shift symmetry is not a zero Hamiltonian principle]]
 - [[research/prime_lattice/mind/intuition/MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary|MI-005 — localized Weil arithmetic lies between bulk and essential boundary]]
 - [[research/prime_lattice/mind/intuition/MI-006-second-scale-weil-signal-is-diagnostic-not-generative|MI-006 — second-scale Weil signal is diagnostic, not generative]]
+- [[research/prime_lattice/mind/intuition/MI-007-pointing-breaks-gauge-but-exposes-additive-correlations|MI-007 — pointing breaks gauge but exposes additive correlations]]
 - [[research/prime_lattice/mind/RESEARCH_LINES|Prime Lattice research lines]]
 
 ## Derived relation nodes
