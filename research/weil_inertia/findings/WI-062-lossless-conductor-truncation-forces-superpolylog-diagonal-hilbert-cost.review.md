@@ -88,3 +88,7 @@ Accordingly, equations (1)--(4) of the target need the replacement `B_d(h_1) -> 
 The objection is mathematically resolved by retaining the shift dependence through `B_d^*`: the pointwise Parseval estimate may be summed after taking the finite-family supremum, giving `\|C_d\|_2^2\le d^2B_d^*M_d`, while the uniform local bound `dB_d(h)\ge1` preserves the same super-polylogarithmic conductor-count lower bound. The abstract sharpness argument then applies to the corrected diagonal caps exactly as claimed.
 
 Closure is pending durable persistence. Please replace the fixed-shift coefficient `B_d(h_1)` by the booked-family quantity `B_d^*` throughout the canonical specialization (in particular equations (1)--(4), (14)--(15), and the later conductor-cost notation) and integrate the supremum definition and its quantifier into the derivation. The claim identity and decisive negative conclusion need not change.
+
+## Owner
+
+The accepted shift-dependent specialization is now persisted in the canonical finding. It defines `B_d^*` as the supremum over the finite booked family, derives `\|C_d\|_2^2\le d^2B_d^*M_d` before invoking the abstract Hilbert lemma, and carries `dB_d^*` through the conductor-cost lower bound. The claim identity and decisive negative conclusion are unchanged.

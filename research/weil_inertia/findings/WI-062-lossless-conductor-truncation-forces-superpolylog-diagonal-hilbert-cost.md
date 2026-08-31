@@ -2,16 +2,18 @@
 
 **Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE`, with a `LITERATURE+DERIVED` source bridge through WI-061 that retains WI-061's `NEEDS-AUDIT` boundary. This finding does **not** certify the Yang--Yang one-sided fourth-moment candidate, change Mathia's current unconditional simple-critical proportion, or rule out a genuinely cross-conductor large-sieve/martingale theorem. It closes a narrower route left open by WI-060--WI-061: after doing the correct Parseval/Cauchy bookkeeping **inside each exact Fourier conductor**, Mikawa's modulus-weighted pair-AP square function still cannot be assembled across conductors by any argument that retains only the individual conductor Hilbert norms and the total Mikawa square-function budget.
 
-The obstruction is exact and sharp at the information-interface level. If
+The obstruction is exact and sharp at the information-interface level. For each retained conductor `d`, let `\mathcal K_d` be the finite booked shift family on which the conductor contribution is estimated and define
 
 \[
-a_d:=d B_d(h_1),
+B_d^*:=\sup_{k\in\mathcal K_d} B_d(h_1(k)),
+\qquad
+a_d:=d B_d^*,
 \qquad
 y_d:=d M_d,
 \tag{1}
 \]
 
-where `B_d` is the exact-support Fourier energy from WI-058 and `M_d` is the residue-maximal pair-error square sum from WI-061, then the reduced-residue part of the one-conductor estimate has the form
+where `B_d(h)` is the exact-support Fourier energy from WI-058 and `M_d` is the residue-maximal pair-error square sum from WI-061. Then the reduced-residue part of the one-conductor estimate has the form
 
 \[
 \|C_d\|_{\ell^2(k)}^2\le a_d y_d,
@@ -26,7 +28,7 @@ From **only** this information, the optimal universal estimate for the scalar co
 \boxed{
 \left\|\sum_{d\in\mathcal D}C_d\right\|_2^2
 \le
-\left(\sum_{d\in\mathcal D}dB_d(h_1)\right)
+\left(\sum_{d\in\mathcal D}dB_d^*\right)
 \left(\sum_{d\in\mathcal D}dM_d\right),
 }
 \tag{3}
@@ -36,7 +38,7 @@ and the coefficient in front is best possible for abstract Hilbert vectors satis
 
 \[
 \boxed{
-\sum_{d\le w^{K(w)}}dB_d(h_1)
+\sum_{d\le w^{K(w)}}dB_d^*
 \gg_A (\log X)^A
 \quad\text{for every fixed }A>0
 }
@@ -128,7 +130,7 @@ C_d(k)
 \tag{10}
 \]
 
-Before the crude bound `dB_d<=6^{omega(d)}` is inserted, exact Parseval gives
+Before the crude bound `dB_d<=6^{omega(d)}` is inserted, exact Parseval gives pointwise in the booked shift parameter
 
 \[
 |C_d(k)|^2
@@ -139,14 +141,25 @@ B_d(h_1(k))\,d
 \tag{11}
 \]
 
-Restrict first to the reduced-residue piece. As in WI-061, for an injective booked shift subfamily,
+Restrict first to the reduced-residue piece. For each retained `d`, let `\mathcal K_d` be the finite injective booked shift subfamily to which the WI-061 estimate is applied and set
 
 \[
-\sum_k\sum_{(a,d)=1}|E_d(a,h_2(k))|^2
-\le
-\varphi(d)M_d
-\le dM_d,
+B_d^*:=\sup_{k\in\mathcal K_d}B_d(h_1(k)).
 \tag{12}
+\]
+
+The booking makes `k\mapsto h_2(k)` injective on `\mathcal K_d`, but does not require `h_1(k)` to be constant. Summing (11) only after taking the finite-family supremum gives
+
+\[
+\begin{aligned}
+\|C_d\|_{\ell^2(k)}^2
+&\le dB_d^*
+   \sum_{k\in\mathcal K_d}
+   \sum_{(a,d)=1}|E_d(a,h_2(k))|^2\\
+&\le dB_d^*\,\varphi(d)M_d\\
+&\le d^2B_d^*M_d,
+\end{aligned}
+\tag{13}
 \]
 
 where
@@ -154,7 +167,7 @@ where
 \[
 M_d:=\max_{(a,d)=1}
 \sum_{0<2k\le x}|E(x;d,a,2k)|^2.
-\tag{13}
+\tag{14}
 \]
 
 Consequently
@@ -162,18 +175,18 @@ Consequently
 \[
 \boxed{
 \|C_d\|_{\ell^2(k)}^2
-\le d^2B_d(h_1)M_d
-=\bigl(dB_d(h_1)\bigr)\bigl(dM_d\bigr).
+\le d^2B_d^*M_d
+=\bigl(dB_d^*\bigr)\bigl(dM_d\bigr).
 }
-\tag{14}
+\tag{15}
 \]
 
 This is (5) with
 
 \[
-a_d=dB_d(h_1),
+a_d=dB_d^*,
 \qquad y_d=dM_d.
-\tag{15}
+\tag{16}
 \]
 
 The square-function extracted in WI-061 from Mikawa's proof supplies, in its stated range,
@@ -183,79 +196,86 @@ The square-function extracted in WI-061 from Mikawa's proof supplies, in its sta
 \sum_{d\le Q}dM_d
 \ll_A x^3(\log x)^{-A}
 }
-\tag{16}
+\tag{17}
 \]
 
 for every fixed `A>0`, with the corresponding fixed `B(A)` in
 `Q<=x^(1/2)(log x)^(-B(A))`.
 
-The non-reduced residue classes from WI-061 are deliberately omitted here. They contribute a separately bounded prime-power error and cannot rescue an obstruction already present in the optimistic reduced-only problem. Likewise, replacing `dB_d` by the rougher `6^omega(d)` is unnecessary and would only weaken the diagnostic.
+The non-reduced residue classes from WI-061 are deliberately omitted here. They contribute a separately bounded prime-power error and cannot rescue an obstruction already present in the optimistic reduced-only problem. Likewise, replacing the shift-dependent `dB_d(h_1(k))` uniformly by the rougher `6^omega(d)` is unnecessary and would only weaken the diagnostic.
 
 Applying the sharp lemma gives exactly (3).
 
-## 3. The conductor weight `d B_d` is never small on an active exact support
+## 3. The booked-family conductor weight `d B_d^*` is never small on an active exact support
 
-WI-058 gives, for odd squarefree exact conductor `d`,
+WI-058 gives, for odd squarefree exact conductor `d` and every locally admissible shift `h`,
 
 \[
-B_d(h_1)=\prod_{p\mid d}v_p(h_1),
-\tag{17}
+B_d(h)=\prod_{p\mid d}v_p(h),
+\tag{18}
 \]
 
 with
 
 \[
-v_p(h_1)=
+v_p(h)=
 \begin{cases}
-1/(p-1),&p\mid h_1,\\[1mm]
-2/(p-2),&p\nmid h_1.
+1/(p-1),&p\mid h,\\[1mm]
+2/(p-2),&p\nmid h.
 \end{cases}
-\tag{18}
+\tag{19}
 \]
 
 Hence
 
 \[
-dB_d(h_1)
+dB_d(h)
 =
-\prod_{p\mid d}p\,v_p(h_1).
-\tag{19}
+\prod_{p\mid d}p\,v_p(h).
+\tag{20}
 \]
 
 For every active odd prime,
 
 \[
-pv_p(h_1)
+pv_p(h)
 =
 \begin{cases}
-p/(p-1)>1,&p\mid h_1,\\[1mm]
-2p/(p-2)>2,&p\nmid h_1.
+p/(p-1)>1,&p\mid h,\\[1mm]
+2p/(p-2)>2,&p\nmid h.
 \end{cases}
-\tag{20}
-\]
-
-and therefore
-
-\[
-\boxed{dB_d(h_1)\ge1.}
 \tag{21}
 \]
 
-The inequality is uniform in the shift. Primes dividing the shift only weaken the local factor from `>2` to `>1`; they do not remove the lower bound. Finitely many local primes pinned by a source progression can be deleted exactly as in WI-058 without changing the asymptotic conclusion below.
+and therefore, uniformly in the shift,
+
+\[
+\boxed{dB_d(h)\ge1.}
+\tag{22}
+\]
+
+Taking the supremum over the finite booked family preserves this bound:
+
+\[
+\boxed{dB_d^*\ge1.}
+\tag{23}
+\]
+
+Primes dividing the shift only weaken the local factor from `>2` to `>1`; they do not remove the lower bound. Finitely many local primes pinned by a source progression can be deleted exactly as in WI-058 without changing the asymptotic conclusion below.
 
 Let `P_w` be the number of active odd primes up to `w`. In the full Yang power-coefficient regime audited in WI-059, `P_w=pi(w)+O(1)`. For any integer `k>=0`, every support set of at most `k` active primes has conductor at most `w^k`. Thus
 
 \[
 \boxed{
 S_w(w^K):=
-\sum_{\substack{d\mid W\\d\le w^K}}dB_d(h_1)
+\sum_{\substack{d\mid W\\d\le w^K}}dB_d^*
 \ge
 \sum_{j=0}^{\lfloor K\rfloor}\binom{P_w}{j}.
 }
-\tag{22}
+\tag{24}
 \]
 
-This lower bound uses only the exact local Fourier-energy law. No prime-pair theorem enters it.
+This lower bound uses only the exact local Fourier-energy law and its shift-uniform local factor bound. No prime-pair theorem enters it.
 
 ## 4. Every asymptotically lossless raw `L^2` cutoff makes the diagonal cost super-polylogarithmic
 
@@ -267,7 +287,7 @@ D_w=w^{K(w)}:
 \nu_{W,h}\{d>D_w\}\to0
 \quad\Longleftrightarrow\quad
 K(w)\to\infty
-\tag{23}
+\tag{25}
 \]
 
 on the full active product. In particular, making the discarded **absolute** local-main `L^2` energy `o(1)` also forces `K(w)->infinity`, since the total energy is bounded below by a positive multiple of `log w`.
@@ -279,15 +299,15 @@ k(w):=\min\!\left(
 \lfloor K(w)\rfloor,
 \lfloor\sqrt{P_w}\rfloor
 \right).
-\tag{24}
+\tag{26}
 \]
 
-Then `k(w)->infinity`, `k<=K`, and `k=o(P_w)`. From (22),
+Then `k(w)->infinity`, `k<=K`, and `k=o(P_w)`. From (24),
 
 \[
 S_w(w^{K(w)})
 \ge\binom{P_w}{k}.
-\tag{25}
+\tag{27}
 \]
 
 Using
@@ -296,7 +316,7 @@ Using
 \binom Pk
 \ge
 \left(\frac{P-k+1}{k}\right)^k,
-\tag{26}
+\tag{28}
 \]
 
 and `k<=sqrt(P)`, for all large `w` one has
@@ -305,7 +325,7 @@ and `k<=sqrt(P)`, for all large `w` one has
 \log\binom{P_w}{k}
 \ge
 k\left(\frac12\log P_w+O(1)\right).
-\tag{27}
+\tag{29}
 \]
 
 Since `P_w~w/log w`,
@@ -322,14 +342,14 @@ so
 \ge
 \left(\frac12+o(1)\right)k(w)\log w.
 }
-\tag{28}
+\tag{30}
 \]
 
 At the Shao--Teräväinen/Yang scale
 
 \[
 w=(\log X)^C,
-\tag{29}
+\tag{31}
 \]
 
 with fixed `C>0`, this becomes
@@ -339,7 +359,7 @@ with fixed `C>0`, this becomes
 \ge
 \left(\frac C2+o(1)\right)k(w)
 \longrightarrow\infty.
-\tag{30}
+\tag{32}
 \]
 
 Therefore, for **every** fixed `A>0`, not merely at WI-059's convenient explicit sufficient cutoff,
@@ -349,7 +369,7 @@ Therefore, for **every** fixed `A>0`, not merely at WI-059's convenient explicit
 \frac{S_w(w^{K(w)})}{(\log X)^A}
 \longrightarrow\infty.
 }
-\tag{31}
+\tag{33}
 \]
 
 The conclusion is stronger than using the particular
@@ -357,16 +377,16 @@ The conclusion is stronger than using the particular
 
 ## 5. Why Mikawa's arbitrary fixed logarithmic saving does not close this route
 
-For every **fixed** `A`, WI-061's Mikawa bridge supplies the budget (16), with a corresponding fixed modulus-range parameter `B(A)`. The retained conductors `w^{K(w)}=X^{o(1)}` remain below the square-root modulus range for the explicit WI-059 cutoffs and for any comparable subpolynomial truncation used by this route.
+For every **fixed** `A`, WI-061's Mikawa bridge supplies the budget (17), with a corresponding fixed modulus-range parameter `B(A)`. The retained conductors `w^{K(w)}=X^{o(1)}` remain below the square-root modulus range for the explicit WI-059 cutoffs and for any comparable subpolynomial truncation used by this route.
 
-But (3) and (31) show that the norm-only assembly gives at best
+But (3) and (33) show that the norm-only assembly gives at best
 
 \[
 \left\|\sum_d C_d\right\|_2^2
 \ll_A
 x^3(\log x)^{-A}
 S_w(D_w),
-\tag{32}
+\tag{34}
 \]
 
 where `S_w(D_w)` dominates every fixed power of `log X`. Choosing a larger **fixed** `A` never resolves that asymptotic mismatch. Choosing `A=A(X)->infinity` is not licensed by Mikawa's theorem as stated, because its constants and admissible `B(A)` depend on the fixed parameter `A` with no required uniformity in a growing `A`.
@@ -383,7 +403,7 @@ Thus the chain
 \to
 \text{Cauchy across }d
 }
-\tag{33}
+\tag{35}
 \]
 
 cannot close the welding covariance while retaining asymptotically all of the deterministic `W`-local `L^2` spectrum.
@@ -404,7 +424,7 @@ The present obstruction is different and strictly later in the proposed repair. 
 Even after those steps, discarding cross-conductor geometry leaves the sharp coefficient
 
 \[
-S_w(D)=\sum_{d\le D}dB_d,
+S_w(D)=\sum_{d\le D}dB_d^*,
 \]
 
 which is again super-polylogarithmic at every asymptotically lossless raw `L^2` cutoff.
@@ -426,11 +446,11 @@ A possible escape based on a much smaller cutoff must first defeat WI-059's nece
 
 ## 8. Prior-art and novelty audit
 
-The abstract lemma (5)--(9) is ordinary Hilbert-space triangle inequality and Cauchy--Schwarz with its equality case. The local factorization (17)--(21), conductor-energy threshold (23), and source scale (29) are already persisted in WI-058--WI-060. The arithmetic budget (16) is the source-specific consequence extracted in WI-061 from H. Mikawa, *On prime twins in arithmetic progressions*, *Tsukuba Journal of Mathematics* 16:2 (1992), 377--387, DOI `10.21099/tkbjm/1496161970`, primary open-access source `https://tsukuba.repo.nii.ac.jp/record/16157/files/8.pdf`.
+The abstract lemma (5)--(9) is ordinary Hilbert-space triangle inequality and Cauchy--Schwarz with its equality case. The local factorization (18)--(23), conductor-energy threshold (25), and source scale (31) are already persisted in WI-058--WI-060. The arithmetic budget (17) is the source-specific consequence extracted in WI-061 from H. Mikawa, *On prime twins in arithmetic progressions*, *Tsukuba Journal of Mathematics* 16:2 (1992), 377--387, DOI `10.21099/tkbjm/1496161970`, primary open-access source `https://tsukuba.repo.nii.ac.jp/record/16157/files/8.pdf`.
 
 A targeted prior-art check around Barban--Davenport--Halberstam square means, large-sieve/Hilbert-space assembly, and Mikawa's pair-AP dispersion found the standard square-mean and large-sieve frameworks, but no theorem was imported that supplies the **off-diagonal cross-conductor structure** missing here. No novelty is claimed for Cauchy--Schwarz, large-sieve philosophy, conductor decompositions, or the individual literature inputs, and absence of this exact Yang/`W`-local formulation in the searched literature is not a priority claim.
 
-The durable Mathia contribution is the exact source-specific information-interface calculation: combine WI-058's `dB_d` energy with WI-059's necessary growing cutoff and WI-061's `dM_d` budget, compute the sharp norm-only assembly constant, and show that it is super-polylogarithmic for every lossless raw `L^2` truncation.
+The durable Mathia contribution is the exact source-specific information-interface calculation: combine WI-058's shift-uniform `dB_d(h)\ge1` local energy law with WI-059's necessary growing cutoff and WI-061's `dM_d` budget, compute the sharp norm-only assembly constant using the booked-family coefficient `dB_d^*`, and show that it is super-polylogarithmic for every lossless raw `L^2` truncation.
 
 ## 9. Consequence for the live research direction
 
@@ -441,9 +461,9 @@ The shortest credible continuation after WI-061 is now narrower:
 \text{do not search for a better diagonal Cauchy weight across conductors;}\\
 \text{search for a theorem that preserves cross-conductor arithmetic geometry.}
 }
-\tag{34}
+\tag{36}
 \]
 
 Concrete positive targets include a vector-valued form of Mikawa/Linnik dispersion in which the exact-conductor projections remain orthogonal until after the modulus sum, a martingale-difference decomposition tied to the CRT prime filtration, or a direct estimate for the `W`-localized pair covariance before its Fourier conductors are scalarized.
 
-A decisive falsification test for any proposed repair is therefore: after all deterministic/source weights are restored, identify the exact bilinear or quadratic form that couples `d` and `d'` and prove a saving unavailable from the diagonal bounds (14)/(16). If the proof can be rewritten using only `\|C_d\|_2` and `\sum dM_d`, the sharp extremizer above shows that it has not crossed the barrier.
+A decisive falsification test for any proposed repair is therefore: after all deterministic/source weights are restored, identify the exact bilinear or quadratic form that couples `d` and `d'` and prove a saving unavailable from the diagonal bounds (15)/(17). If the proof can be rewritten using only `\|C_d\|_2` and `\sum dM_d`, the sharp extremizer above shows that it has not crossed the barrier.
