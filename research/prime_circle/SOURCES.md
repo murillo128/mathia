@@ -85,7 +85,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Kron reduction and staged Schur elimination
 
 - Florian Dörfler and Francesco Bullo, **Kron Reduction of Graphs With Applications to Electrical Networks**, *IEEE Transactions on Circuits and Systems I: Regular Papers* 60:1 (2013), 150–163. DOI: 10.1109/TCSI.2012.2215780. arXiv:1102.2950. Role: graph-Laplacian Kron reduction as Schur complementation, with algebraic, spectral and resistive properties; primary general prior-art anchor for the divisor-subpolygon reduction in PC-039.
-- Douglas E. Crabtree and Emilie V. Haynsworth, **An identity for the Schur complement of a matrix**, *Proceedings of the American Mathematical Society* 22:2 (1969), 364–366. DOI: 10.1090/S0002-9947-1989-0958896-0. Role: classical quotient identity for staged Schur complementation; prior-art anchor for the exact refinement-path independence in PC-039.
+- Douglas E. Crabtree and Emilie V. Haynsworth, **An identity for the Schur complement of a matrix**, *Proceedings of the American Mathematical Society* 22:2 (1969), 364–366. DOI: 10.1090/S0002-9939-1969-0255573-1. Role: classical quotient identity for staged Schur complementation; prior-art anchor for the exact refinement-path independence in PC-039.
 
 ## Weil–Petersson homothety under covering constructions
 
