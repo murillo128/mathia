@@ -16,6 +16,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal|MI-001 — multigap spectral memory]]
 - [[research/prime_flute/mind/intuition/MI-002-localize-in-space-before-spectral-compression|MI-002 — localize and mark before compression]]
 - [[research/prime_flute/mind/intuition/MI-003-standard-global-selberg-machinery-is-structurally-incompatible|MI-003 — absolute Selberg/Fredholm obstruction]]
+- [[research/prime_flute/mind/intuition/MI-004-coordinate-amplification-is-not-operator-amplification|MI-004 — coordinate amplification is not operator amplification]]
 - [[research/prime_flute/mind/RESEARCH_LINES|Prime Flute research lines]]
 
 ## Derived relation nodes

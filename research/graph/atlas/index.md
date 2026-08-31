@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 6baea0d026985c90fcf1446bfa33215af994e2d1
+source_revision: 396f2d59c7a66c3437f3234988d6bdfc41eb4830
 derived: true
 ---
 
@@ -24,9 +24,9 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 | Macro-families | **10** |
 | Leaf territories | **37** |
 
-**Reading:** Mathia has traversed a large fraction of Atlas v1, but the program is **not close to saturation**: about 60.1% of the already-visited mass remains active/open, while only 20.4% of visited mass is pruned.
+**Reading:** Mathia has traversed a large fraction of Atlas v1, but the program is **not close to saturation**: about 60.1% of already-visited mass remains active/open, while only 20.4% of visited mass is pruned.
 
-The current source delta materially narrows several already-mapped frontiers without changing the v1 denominator or any leaf state: Prime Flute now reaches compact relative resolvent against its explicit all-composite control; Prime Lattice pushes its completed-Weil collapse barrier to zero-free sampling scales; Weil Inertia removes the full deterministic four-prime local main and the polylog coefficient regime; Prime Circle closes finite algebraic Hardy-shell essential interference; and Weil Positivity carries its category-changing audit through Prym integral data to a torsion-positivity obstruction. The new Arithmetic Fidelity line is transversal methodology and is therefore not counted as a new RH atlas territory.
+The latest source delta substantially narrows already-mapped frontiers without changing the v1 denominator or any leaf state. Prime Circle's higher Hardy traces exceed pairwise resultants but all finite mixed words now have canonical trace-norm finite-section limits and common repeated-prime depth is universal tensor inflation. Prime Flute removes the complete one-dimensional Lambert split-ray mismatch and even subcritical polynomial neighboring-gap amplification of its scalar mode as the obvious obstacle beyond compact-resolvent equivalence. Prime Lattice's natural second scale becomes an explicit-zero almost-periodic/RH-equivalent diagnostic whose hull, same-time prime coupling and finite-horizon resonances are generic frequency/Diophantine constructions rather than a new selector. Weil Inertia gains a genuine positive-power region from nilsequence Bombieri--Vinogradov while several nearby black-box distribution theorems still fail the remaining conditioned two-modulus interface. Weil Positivity exports `log p` through Prym determinant/action data but classicalizes or cancels the standard completions and closes the symmetric full-root `q=2` Hardy/Krein positivity corridor. Arithmetic Fidelity now supplies exact category-specific fidelity theorems and a durable mind, but remains transversal methodology and is not counted as a new RH territory.
 
 The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
 

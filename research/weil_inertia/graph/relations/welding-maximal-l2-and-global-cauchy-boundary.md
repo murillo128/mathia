@@ -6,16 +6,16 @@ relation: welding-maximal-l2-and-global-cauchy-boundary
 derived: true
 ---
 
-# Welding boundary: local main removed, coefficient localization remains
+# Welding boundary: local main removed, conditioned power-modulus covariance remains
 
-[[research/weil_inertia/findings/WI-041-mrt-endpoint-stability-gives-maximal-interval-l2|WI-041]]--[[research/weil_inertia/findings/WI-047-level-of-distribution-leaves-welding-sublattice-mass|WI-047]] separate moving-endpoint control, the invalid public across-family Cauchy consumer, exact local centering, and the failure of a cheap fixed-level AP repair.
+[[research/weil_inertia/findings/WI-041-mrt-endpoint-stability-gives-maximal-interval-l2|WI-041]]--[[research/weil_inertia/findings/WI-052-barban-davenport-halberstam-suppresses-pure-quotient-prime-modes|WI-052]] remove moving-endpoint loss, the invalid across-family Cauchy consumer, finite local-main cutoff, the genuine four-prime local main, every fixed polylogarithmic coefficient regime, higher-Gowers complexity as the global explanation, and the pure quotient prime mode on average.
 
-The current source delta removes further deterministic and low-coefficient explanations of the gap:
+The latest prior-art/interface audit narrows the power-coefficient regime further:
 
-- [[research/weil_inertia/findings/WI-048-full-local-welding-main-has-subpolynomial-prefix-discrepancy|WI-048]] upgrades the truncated singular-series analysis to the full Euler product with subpolynomial prefix discrepancy, so finite local cutoff is not the obstruction.
-- [[research/weil_inertia/findings/WI-049-locked-four-prime-local-main-centers-cellwise|WI-049]] proves that the genuine four-prime local main centers cellwise before marginal MRT; a leading locked covariance must survive after that local main is removed or come from separately booked collision/analytic terms.
-- [[research/weil_inertia/findings/WI-050-polylog-locked-four-prime-cells-fall-to-higher-dimensional-siegel-walfisz|WI-050]] shows every fixed polylogarithmic coefficient regime is an unconditional finite-complexity three-variable linear-forms problem and has the expected four-prime asymptotic.
-- [[research/weil_inertia/findings/WI-051-complexity-one-fourier-control-does-not-remove-coefficient-wall|WI-051]] identifies the remaining difficulty as localization/modulus aliasing rather than higher Gowers complexity: globally the four-form system has Cauchy--Schwarz complexity one, but natural local scales expose large-index quotient modes.
-- [[research/weil_inertia/findings/WI-052-barban-davenport-halberstam-suppresses-pure-quotient-prime-modes|WI-052]] then suppresses the pure residue-class quotient component of the actual centered von Mangoldt weight on average across the dominant prime moduli, ruling out the generic bounded-function witness as a faithful prime model on power-separated interior regions.
+- [[research/weil_inertia/findings/WI-053-ap-maximal-higher-uniformity-is-ambient-normalized|WI-053]] shows the 2026 AP-maximal higher-uniformity theorem is ambient-normalized, so selecting a Yang progression of step `r` still pays the ambient span and does not black-box give density-normalized cancellation for power-sized `r`.
+- [[research/weil_inertia/findings/WI-054-nilsequence-bv-controls-localized-pair-fibers|WI-054]] corrects the many-frequency boundary: Shao--Teräväinen nilsequence Bombieri--Vinogradov plus Parseval controls the entire localized pair-frequency fiber in the positive-power region `4 alpha + beta < 1` and `alpha + 4 beta < 1`.
+- [[research/weil_inertia/findings/WI-055-zheng-simultaneous-ap-does-not-black-box-close-welding|WI-055]] audits simultaneous-AP prior art and finds variable-role, residue and well-factorable-weight mismatches with the locked four-prime Yang source.
+- [[research/weil_inertia/findings/WI-056-convolution-bv-does-not-black-box-close-welding|WI-056]] finds the analogous mismatch for the fresh convolution Bombieri--Vinogradov theorem: its multiplicative congruence and external modulus weights do not equal the additive locked welding object.
+- [[research/weil_inertia/findings/WI-057-ordinary-mrt-does-not-control-w-local-conditioned-pair-covariance|WI-057]] shows ordinary marginal MRT cannot extend the one-sided region through a `W`-local all-main factor, because conditioned periodic residue modes require a twisted/conditioned pair theorem or an exact cancellation identity.
 
-The Yang--Yang candidate remains neither certified nor refuted. The surviving source-backed gate is now narrower: nonzero aliasing/shift-frequency fibers at super-polylogarithmic coefficients, short-shift boundary concentration, or the separately booked collision/analytic interface after the genuine local main has already been removed.
+The Yang--Yang candidate remains neither certified nor refuted. The live analytic gate is now a source-specific conditioned/two-modulus post-local-main covariance outside the doubly-small Shao--Teräväinen region, together with separately booked boundary/collision terms; generic marginal or well-factorable black-box theorems do not presently close it.

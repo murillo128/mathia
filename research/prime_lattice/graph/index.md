@@ -18,6 +18,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_lattice/mind/intuition/MI-003-nyman-obstruction-is-target-data|MI-003 — Nyman obstruction is target data]]
 - [[research/prime_lattice/mind/intuition/MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle|MI-004 — prime-shift symmetry is not a zero Hamiltonian principle]]
 - [[research/prime_lattice/mind/intuition/MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary|MI-005 — localized Weil arithmetic lies between bulk and essential boundary]]
+- [[research/prime_lattice/mind/intuition/MI-006-second-scale-weil-signal-is-diagnostic-not-generative|MI-006 — second-scale Weil signal is diagnostic, not generative]]
 - [[research/prime_lattice/mind/RESEARCH_LINES|Prime Lattice research lines]]
 
 ## Derived relation nodes
@@ -26,7 +27,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_lattice/graph/relations/ambient-bohr-structure-is-insufficient|Ambient Bohr structure is insufficient]]
 - [[research/prime_lattice/graph/relations/classical-prime-flow-bridge|Classical prime-flow RH bridge]]
 - [[research/prime_lattice/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
-- [[research/prime_lattice/graph/relations/localized-weil-prime-boundary-obstruction|Localized Weil boundary and mesoscopic-frequency obstruction]]
+- [[research/prime_lattice/graph/relations/localized-weil-prime-boundary-obstruction|Localized Weil boundary, second scale and mesoscopic obstruction]]
 
 ## Curation boundary
 

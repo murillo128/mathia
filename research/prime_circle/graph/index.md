@@ -16,6 +16,8 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical|MI-001 — anchored and nonlocal]]
 - [[research/prime_circle/mind/intuition/MI-002-first-order-transport-forgets-the-interior|MI-002 — first-order transport forgets the interior]]
 - [[research/prime_circle/mind/intuition/MI-003-exact-circle-defect-is-relational-but-trace-class|MI-003 — exact-circle two-point defect]]
+- [[research/prime_circle/mind/intuition/MI-004-compatible-completion-lacks-coercive-rh-scale|MI-004 — compatible completion lacks a coercive RH scale]]
+- [[research/prime_circle/mind/intuition/MI-005-hardy-shell-core-is-universal|MI-005 — Hardy shell core is universal]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime Circle research lines]]
 
 ## Derived relation nodes
@@ -26,7 +28,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_circle/graph/relations/legacy-pc015-id-collision|Legacy PC-015 ID collision]]
 - [[research/prime_circle/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
 - [[research/prime_circle/graph/relations/adelic-solenoid-spectral-obstruction|Adelic-solenoid proper-scale obstruction]]
-- [[research/prime_circle/graph/relations/hardy-hilbert-shell-collapse|Hardy/Hilbert shell collapse and resultant remainder]]
+- [[research/prime_circle/graph/relations/hardy-hilbert-shell-collapse|Hardy/Hilbert shell collapse and relative trace sector]]
 
 ## Curation boundary
 
