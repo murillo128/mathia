@@ -105,3 +105,7 @@ This file records only durable literature dependencies for canonical findings in
 ## Determinantal / Gram-rank controls
 
 - **Russell Lyons**, *Determinantal probability measures*, Publications Mathématiques de l'IHÉS 98 (2003), 167–212. DOI: `10.1007/s10240-003-0016-0`; arXiv: `math/0204325`. Develops the discrete determinantal-measure framework for positive-contraction kernels, principal-minor probabilities, exterior-algebra methods, and matroid support. WP-032 uses this only as the prior-art classification of the rank-one principal-minor selector; the nonclosability obstruction at the exact Riemann weights is derived directly.
+
+## Cyclic-cover Prym polarization controls
+
+- **Herbert Lange and Angela Ortega**, *Prym varieties of cyclic coverings*, Geometriae Dedicata 150 (2011), 391–403. DOI: `10.1007/s10711-010-9512-9`; arXiv: `0805.1020`. For a cyclic cover of degree `q`, base genus `g`, and reduced branch divisor of degree `r`, records the Prym dimension and the polarization type induced from the principal polarization of the covering Jacobian. In the ramified case `r>0`, the type is `(1,...,1,q,...,q)` with `q` occurring `g` times. WP-056 specializes this to the old-prime cover `C_{pn}->C_n`, where the resulting Prym polarization kernel has order `p^{2g_n}` and therefore stores `log p` as a lattice-discriminant invariant even though the normalized Hodge pairing remains degree-flat.
