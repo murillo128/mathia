@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-prym-torsion-action-before-positivity
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: weil_positivity
 based_on:
@@ -42,3 +42,12 @@ A matched-control equality or a factorization through those universal cover inva
 ## Evidence boundary
 
 No such positive relative action invariant is currently established. The hyperelliptic lift itself is a granted minimal enrichment rather than a structure forced by the original Prime Circle. `WP-056` establishes only the integral discriminant carrier, and `WP-057` decisively excludes direct real quadratic/height pairing on that carrier while identifying the theta/Heisenberg action as the strongest canonical structure left. This clue is therefore a research lead, not evidence for positivity, novelty, or RH.
+
+## Research disposition
+
+Outcome: classical
+
+Resolved by:
+- [[research/weil_positivity/findings/WP-059-prym-heisenberg-adjoint-defect-is-cycle-laplacian-logdet.md]]
+
+The clue's proposed action exists in a strong phase-free form: theta conjugation on `End(V)` gives a canonical positive defect whose normalized log-pseudodeterminant is exactly `log p`. The adjoint action is the regular representation of the polarization kernel, however, so each nonzero torsion direction is just repeated cyclic-shift geometry and the defect is a repeated cycle Laplacian. This is the same classical log-determinant mechanism already isolated in `WP-043`; full theta-symmetry averaging makes the positive operator spectrally flat, and a direct `p^k` cover yields `k log p` rather than `Lambda(p^k)`. The route is therefore resolved as a classicalized local mechanism, not a new global Weil-positive form.
