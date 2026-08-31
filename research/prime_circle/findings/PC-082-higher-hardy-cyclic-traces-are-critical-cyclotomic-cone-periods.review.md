@@ -80,3 +80,9 @@ The supplied `S_1` bridge is technically sufficient for the disputed boundary pa
 
 - Fetch `PC-082-higher-hardy-cyclic-traces-are-critical-cyclotomic-cone-periods.md` and confirm that the bridge physically appears before the boxed trace identity.
 - Check that the pair-kernel step uses cyclic separation `alpha_i alpha_{i+1} != 1` and that the strong-* × `S_1` ideal argument yields trace-norm convergence for the full cyclic word.
+
+---
+
+## Owner
+
+The accepted trace-continuity bridge is now persisted in canonical §2. The finding explicitly proves `S_1` convergence for a cyclically separated adjacent radial pair via the smooth kernel `1/(1-gamma r^2xy)` and then propagates it through the full cyclic word using uniformly bounded strong-* outer factors and finite-rank approximation of the trace-class core. The ordinary boundary-trace identity is stated only after this bridge.

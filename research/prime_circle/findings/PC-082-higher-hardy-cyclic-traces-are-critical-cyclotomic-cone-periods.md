@@ -42,13 +42,7 @@ so that
 }
 \]
 
-For roots `alpha_1,...,alpha_k`, write cyclic indices
-
-\[
-\alpha_{k+1}=\alpha_1.
-\]
-
-Assume
+For roots `alpha_1,...,alpha_k`, write cyclic indices `alpha_{k+1}=alpha_1` and assume
 
 \[
 \boxed{
@@ -57,9 +51,7 @@ Assume
 }
 \]
 
-This condition is automatic when the corresponding shell orders are cyclically adjacent and distinct, because `alpha_i alpha_{i+1}=1` would force the two roots to have the same exact order.
-
-Under this separation condition, the product is trace class. More generally, for completed shell operators this already follows from PC-080 whenever the word contains an adjacent pair of distinct shell labels, because `S_1` is a two-sided ideal.
+This condition is automatic when the corresponding shell orders are cyclically adjacent and distinct, because `alpha_i alpha_{i+1}=1` would force the two roots to have the same exact order. Under this separation condition the product is trace class. More generally, for completed shell operators this already follows from PC-080 whenever the word contains an adjacent pair of distinct shell labels, because `S_1` is a two-sided ideal.
 
 ## 2. Exact cyclic root-channel trace as a cube period
 
@@ -75,7 +67,7 @@ Expanding the diagonal of a `k`-fold channel product gives formally
 \qquad j_{k+1}=j_1.
 \]
 
-The correct boundary interpretation is the same radial/Abel convention used in PC-080. For `0<r<1`, replace every channel by
+Use the radial/Abel convention of PC-080. For `0<r<1`, put
 
 \[
 (\mathcal H_{\alpha,r})_{jk}
@@ -89,7 +81,7 @@ Now all sums are absolute. Using
 =\int_0^1x_i^{j_i+j_{i+1}}\,dx_i
 \]
 
-and summing each `j_i` geometrically yields
+and summing each `j_i` geometrically gives
 
 \[
 \operatorname{Tr}
@@ -102,7 +94,47 @@ and summing each `j_i` geometrically yields
 {1-r^2\alpha_i\alpha_{i+1}x_ix_{i+1}}.
 \]
 
-Because every `alpha_i alpha_{i+1}` is a nontrivial root of unity, the limiting denominators are nonzero on the compact cube. Dominated convergence therefore gives the canonical boundary value
+Because every `alpha_i alpha_{i+1}` is a nontrivial root of unity, the limiting denominators stay nonzero on the compact cube. Dominated convergence therefore gives the scalar Abel limit of the displayed radial traces.
+
+It remains to identify that scalar limit with the **ordinary trace of the boundary product**. Let
+
+\[
+R_r=\operatorname{diag}(1,r,r^2,\ldots).
+\]
+
+Then `R_r -> I` strongly, `||R_r|| <= 1`, and
+
+\[
+\mathcal H_{\alpha,r}=rR_r\mathcal H_\alpha R_r,
+\]
+
+so the radial channels converge strong-* and remain uniformly bounded. For a separated adjacent pair `gamma=alpha beta != 1`, use the PC-080 factorization of the pair through an integral operator on `L^2(0,1)` whose radial kernel is
+
+\[
+k_{\gamma,r}(x,y)=\frac1{1-\gamma r^2xy},
+\qquad
+k_\gamma(x,y)=\frac1{1-\gamma xy}.
+\]
+
+Separation keeps the denominators uniformly away from zero on `[0,1]^2`, hence `k_{gamma,r} -> k_gamma` in every `C^q` norm. For an integer `q>1`, the difference operator maps `L^2(0,1)` to `H^q(0,1)` with norm tending to zero, and the embedding `H^q(0,1) -> L^2(0,1)` is trace class. Therefore the separated radial pair converges in trace norm:
+
+\[
+\boxed{
+\|\mathcal H_{\alpha,r}\mathcal H_{\beta,r}
+-\mathcal H_\alpha\mathcal H_\beta\|_{\mathcal S_1}
+\longrightarrow0.
+}
+\]
+
+For a cyclically separated word choose one adjacent separated pair as a trace-class core and write `P_r=A_rT_rB_r`. The outer factors are uniformly bounded and converge strong-* to `A,B`, while `T_r -> T` in `S_1`. Finite-rank approximation of the fixed trace-class core gives
+
+\[
+\boxed{
+\|A_rT_rB_r-ATB\|_{\mathcal S_1}\longrightarrow0.
+}
+\]
+
+Consequently `Tr(P_r) -> Tr(P)`. Combining this trace-continuity bridge with the radial cube integral and dominated convergence proves the ordinary boundary-trace identity
 
 \[
 \boxed{
@@ -121,7 +153,7 @@ Because every `alpha_i alpha_{i+1}` is a nontrivial root of unity, the limiting 
 
 The right-hand side is a finite cyclotomic period forced directly by the primitive-root geometry and the Hardy interior/exterior split. No external spectral parameter or weighting has been inserted.
 
-For cyclically separated shell orders `n_1,...,n_k`, finite summation over the primitive roots gives
+For cyclically separated shell orders `n_1,...,n_k`, finite summation over primitive roots gives
 
 \[
 \boxed{
@@ -182,20 +214,14 @@ For three pairwise distinct shell orders `a,b,c`, the trace is
 Make the linear change
 
 \[
-r=i+j+1,
-\qquad
-s=j+k+1,
-\qquad
-t=k+i+1.
+r=i+j+1,\qquad s=j+k+1,\qquad t=k+i+1.
 \]
 
-The inverse is
+Its inverse is
 
 \[
-i=\frac{r+t-s-1}{2},
-\qquad
-j=\frac{r+s-t-1}{2},
-\qquad
+i=\frac{r+t-s-1}{2},\qquad
+j=\frac{r+s-t-1}{2},\qquad
 k=\frac{s+t-r-1}{2}.
 \]
 
@@ -203,14 +229,11 @@ Hence nonnegative integer triples `(i,j,k)` correspond bijectively to positive i
 
 \[
 \boxed{
- r+s>t,
-\qquad s+t>r,
-\qquad t+r>s,
-\qquad r+s+t\equiv1\pmod2.
+ r+s>t,\qquad s+t>r,\qquad t+r>s,\qquad r+s+t\equiv1\pmod2.
 }
 \]
 
-Therefore the third cyclic trace has the exact critical-cone form
+Therefore
 
 \[
 \boxed{
@@ -229,48 +252,32 @@ The superscript `Abel` is essential. The corresponding absolute sum is critical 
 
 ## 5. Exact control: higher mixed traces contain more than pairwise resultants
 
-It is important not to infer from PC-080 that all trace-class Hardy information is already encoded by resultants. There is a clean exact counterexample.
-
 For `n=2`,
 
 \[
 c_2(m)=(-1)^m,
+\qquad
+(\Gamma_2)_{jk}=\frac{(-1)^{j+k}}{j+k+1}.
 \]
 
-so
-
-\[
-(\Gamma_2)_{jk}
-=\frac{(-1)^{j+k}}{j+k+1}.
-\]
-
-Let
-
-\[
-D=\operatorname{diag}(1,-1,1,-1,\ldots).
-\]
-
-Then
+Let `D=diag(1,-1,1,-1,...)`. Then
 
 \[
 \boxed{\Gamma_2=DHD,}
 \]
 
-where `H` is the positive Hilbert matrix. Therefore `Gamma_2` is positive and injective. Injectivity can be seen directly from the Gram representation
+where `H` is the positive Hilbert matrix. Hence `Gamma_2` is positive and injective. Injectivity follows from
 
 \[
 H_{jk}=\int_0^1x^{j+k}\,dx:
 \]
 
-if `Hx=0`, then its quadratic form is the integral of the squared analytic generating function, forcing all coefficients of `x` to vanish.
+if `Hx=0`, its quadratic form is the integral of the squared analytic generating function, forcing all coefficients of `x` to vanish.
 
-On the other hand `Gamma_3` is a nonzero self-adjoint operator; for example its `(0,0)` entry is `-c_3(1)=1`.
-
-The pairwise resultant is trivial:
+On the other hand `Gamma_3` is a nonzero self-adjoint operator; for example its `(0,0)` entry is `-c_3(1)=1`. The pairwise resultant is trivial,
 
 \[
-|\operatorname{Res}(\Phi_2,\Phi_3)|
-=|\Phi_3(-1)|=1,
+|\operatorname{Res}(\Phi_2,\Phi_3)|=|\Phi_3(-1)|=1,
 \]
 
 so PC-080 gives
@@ -279,14 +286,7 @@ so PC-080 gives
 \boxed{\operatorname{Tr}(\Gamma_2\Gamma_3)=0.}
 \]
 
-But `Gamma_3 Gamma_2` is trace class by PC-080, and hence
-
-\[
-\Gamma_3\Gamma_2\Gamma_3
-\in\mathcal S_1.
-\]
-
-Moreover
+But `Gamma_3 Gamma_2` is trace class by PC-080, hence `Gamma_3 Gamma_2 Gamma_3` is trace class, and
 
 \[
 \boxed{
@@ -307,9 +307,7 @@ It is nonzero: if `Gamma_2^{1/2} Gamma_3=0`, injectivity of `Gamma_2^{1/2}` woul
 }
 \]
 
-This proves, with no numerical input, that the higher relative sector is strictly richer than the pairwise resultant graph.
-
-This repeated-shell word is intentionally **not** covered term-by-term by the cyclic root-separation formula of Sections 2--4: the wrap-around `3 -> 3` can contain reciprocal root channels. Its role is only to prove that the complete trace-class shell algebra has higher information after the pairwise traces vanish.
+This proves, with no numerical input, that the higher relative sector is strictly richer than the pairwise resultant graph. This repeated-shell word is intentionally **not** covered term-by-term by the cyclic root-separation formula of Sections 2--4: the wrap-around `3 -> 3` can contain reciprocal root channels. Its role is only to prove that the complete trace-class shell algebra has higher information after the pairwise traces vanish.
 
 ## 6. Prior-art and novelty audit
 
@@ -321,7 +319,7 @@ The closest arithmetic neighborhood is the theory of rational/conical zeta value
 
 There is nevertheless an exact boundary that must not be blurred. Terasoma's cone-zeta definition and reduction theorem assume absolute convergence, whereas the natural Prime-Circle cycle sums above sit at critical homogeneity and are not absolutely convergent. The present operator construction selects a particular **radial/Abel boundary value**. No theorem cited above has been shown here to identify that operator-selected value with a specific published renormalized conical zeta value or to reduce it to a cyclotomic multiple zeta value.
 
-Accordingly, the justified statement is not “PC-082 discovers new multiple-zeta periods.” It is:
+Accordingly, the justified statement is not “PC-082 discovers new multiple-zeta periods.” It is
 
 \[
 \boxed{
@@ -346,16 +344,17 @@ The old/new cotangent branch and the nonlinear uniformization/monodromy branch r
 
 ## 8. Falsification surface
 
-The finding has six direct audit points.
+The finding has seven direct audit points.
 
 1. The primitive-root decomposition `Gamma_n=-sum H_alpha` must have the PC-080 normalization.
 2. For cyclically separated roots, the radial expansion and `k` geometric sums must yield exactly the product denominators `1-alpha_i alpha_{i+1} x_i x_{i+1}` and prefactor `prod alpha_i` in the `r -> 1` limit.
-3. The `k=2` specialization must reduce to `-Log(1-alpha beta)` and hence to the PC-080 resultant after shell summation.
-4. The map `(i,j,k) -> (r,s,t)` must be a bijection onto strict integer triangles with odd total parity.
-5. The non-collapse control must satisfy simultaneously `Tr(Gamma_2 Gamma_3)=0`, positivity/injectivity of `Gamma_2`, and nonvanishing of `Gamma_3`, forcing `Tr(Gamma_3 Gamma_2 Gamma_3)>0`.
-6. No Terasoma-type CMZV reduction may be invoked without first resolving the absolute-convergence failure or proving equivalence of the Hardy radial boundary prescription with an appropriate published regularization.
+3. The separated adjacent radial pair must converge to its boundary product in `S_1`, and the strong-* outer factors must preserve that trace-norm convergence for the full cyclic word.
+4. The `k=2` specialization must reduce to `-Log(1-alpha beta)` and hence to the PC-080 resultant after shell summation.
+5. The map `(i,j,k) -> (r,s,t)` must be a bijection onto strict integer triangles with odd total parity.
+6. The non-collapse control must satisfy simultaneously `Tr(Gamma_2 Gamma_3)=0`, positivity/injectivity of `Gamma_2`, and nonvanishing of `Gamma_3`, forcing `Tr(Gamma_3 Gamma_2 Gamma_3)>0`.
+7. No Terasoma-type CMZV reduction may be invoked without first resolving the absolute-convergence failure or proving equivalence of the Hardy radial boundary prescription with an appropriate published regularization.
 
-Failure of points 1--5 invalidates the exact structure. Point 6 is the novelty firewall preventing an unsupported classicalization or novelty claim.
+Failure of points 1--6 invalidates the exact structure. Point 7 is the novelty firewall preventing an unsupported classicalization or novelty claim.
 
 ## Research consequence
 
@@ -364,7 +363,6 @@ The finite Hardy/Hankel program has a sharper frontier than PC-081 alone implied
 \[
 \boxed{
 \text{essential cross-shell geometry is universal, but higher nuclear traces are genuinely richer than resultants.}
-}
 \]
 
 For cyclically separated shells those traces are explicit critical cyclotomic cone periods. The next useful test is therefore not another finite essential-spectrum wrapper; it is to determine whether the canonical Abel regularization of these cycle-cone periods is already exhausted by cyclotomic conical-zeta/MZV theory, or whether Prime Circle forces a genuinely new cross-level analytic family before any RH interpretation is attempted.
