@@ -242,3 +242,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 61. **Frederik Broucke**, “On the connection between zero-free regions and the error term in the prime number theorem,” *Analysis Mathematica* (published 15 August 2026). DOI: https://doi.org/10.1007/s10476-026-00176-y.
     - Role: matched-control anchor for `PL-062`. Develops zero-free-region to PNT-remainder bounds for a wide class of regions, applies the method to general Beurling zeta functions, and constructs Beurling systems with zeros on prescribed contours plus corresponding PNT-error oscillations showing the transfer bounds are close to sharp. This prevents the Vinogradov--Korobov boundary-collapse scale from being treated as rational-prime-specific RH rigidity.
+
+## Dirichlet-polynomial finite-time resolution
+
+62. **H. L. Montgomery, R. C. Vaughan**, “Hilbert's Inequality,” *Journal of the London Mathematical Society* (2) **8**(1) (1974), 73–82. DOI: https://doi.org/10.1112/jlms/s2-8.1.73.
+    - Role: primary classical anchor for `PL-072`. The strengthened Hilbert inequality yields the weighted mean-value theorem for Dirichlet polynomials, giving the uniform quadratic estimate `integral_0^T |sum_(n<=N) a_n n^(-it)|^2 dt = T sum |a_n|^2 + O(sum n|a_n|^2)` and hence operator-norm asymptotic orthogonality of the positive-cone character Gram matrix when `N=o(T)`.
