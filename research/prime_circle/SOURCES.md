@@ -85,7 +85,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Kron reduction and staged Schur elimination
 
 - Florian Dörfler and Francesco Bullo, **Kron Reduction of Graphs With Applications to Electrical Networks**, *IEEE Transactions on Circuits and Systems I: Regular Papers* 60:1 (2013), 150–163. DOI: 10.1109/TCSI.2012.2215780. arXiv:1102.2950. Role: graph-Laplacian Kron reduction as Schur complementation, with algebraic, spectral and resistive properties; primary general prior-art anchor for the divisor-subpolygon reduction in PC-039.
-- Douglas E. Crabtree and Emilie V. Haynsworth, **An identity for the Schur complement of a matrix**, *Proceedings of the American Mathematical Society* 22:2 (1969), 364–366. DOI: 10.1090/S0002-9939-1969-0255573-1. Role: classical quotient identity for staged Schur complementation; prior-art anchor for the exact refinement-path independence in PC-039.
+- Douglas E. Crabtree and Emilie V. Haynsworth, **An identity for the Schur complement of a matrix**, *Proceedings of the American Mathematical Society* 22:2 (1969), 364–366. DOI: 10.1090/S0002-9947-1989-0958896-0. Role: classical quotient identity for staged Schur complementation; prior-art anchor for the exact refinement-path independence in PC-039.
 
 ## Weil–Petersson homothety under covering constructions
 
@@ -145,3 +145,7 @@ This file records durable literature dependencies used to support or falsify fin
 - Murray Gerstenhaber, **On the deformation of rings and algebras**, *Annals of Mathematics* 79 (1964), 59–103. DOI: 10.2307/1970484. Role: classical Hochschild-cohomological deformation theory, including trivial deformations induced by changes of variables; primary prior-art anchor for PC-088's classification of the cotangent Leibniz defect as a coboundary/gauge deformation.
 - José F. Cariñena, Janusz Grabowski and Giuseppe Marmo, **Quantum Bi-Hamiltonian Systems**, *International Journal of Modern Physics A* 15 (2000), 4797–4810. DOI: 10.1142/S0217751X00001954. arXiv:math-ph/0610011. Role: associative Nijenhuis operators and the derived product `N(a)b + aN(b) - N(ab)`; direct prior-art anchor for the operator-derived bilinear product tested in PC-088.
 - Tomasz Brzeziński and James Papworth, **Affine Nijenhuis Operators and Hochschild Cohomology of Trusses**, *SIGMA* 19 (2023), 056. DOI: 10.3842/SIGMA.2023.056. arXiv:2303.12880. Role: modern explicit treatment of Nijenhuis products and their associativity obstruction in Hochschild-cohomological terms; supporting novelty boundary for PC-088.
+
+## Hermite cotangent product identities
+
+- Warren P. Johnson, **Trigonometric Identities à la Hermite**, *The American Mathematical Monthly* 117:4 (2010), 311–327. DOI: 10.4169/000298910X480784. Role: gives Hermite's arbitrary-valence product-to-sum cotangent identity and a partial-fraction derivation; direct classical prior-art anchor for the hidden-shell star reduction and finite multileg tree boundary in PC-094.
