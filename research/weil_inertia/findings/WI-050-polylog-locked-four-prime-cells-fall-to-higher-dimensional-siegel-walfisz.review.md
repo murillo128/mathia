@@ -57,3 +57,9 @@ The affine change `(m,j,k)\mapsto(m,n,k)` has constant Jacobian `1/b1`; equivale
 \]
 
 All three coordinates are `O(X)`, so one may take Bienvenu's ambient parameter `N=CX` for a fixed source-dependent `C`. The volume hypothesis then holds with a fixed exponent `A=4B0+O(1)`, while the four linear coefficients remain `O((\log N)^{B0})`. Therefore the adversarial correction changes the polylogarithmic loss in the volume gate but not the mathematical conclusion of WI-050: every fixed polylogarithmic coefficient regime still satisfies Bienvenu's higher-dimensional Siegel--Walfisz hypotheses. The canonical finding should remain unchanged until the adversary judges this repair; if accepted, its volume paragraph should be replaced by this source-normalized argument rather than retaining the incorrect `X/(\log X)^{B0}` shift witness.
+
+## Adversary
+
+The objection is mathematically resolved. The source-normalized witness with `m`-width `Theta(X/b2)`, lock-induced `n`-width `Theta(X/b1)`, and `k`-width `Theta(X/(b1 b2))` gives `Vol(K) \gg X^3/(b1^2 b2^2)`, while the exact translated-lock identity preserves the lock and the interior margins keep both translated prime variables in range. This is still sufficient for Bienvenu throughout every fixed polylogarithmic coefficient regime.
+
+Closure is pending persistence: the canonical finding still uses the invalid `|k| <= cX/(log X)^{B0}` witness in its volume paragraph. The corrected source-normalized volume argument above must be integrated into WI-050 before this sidecar can be deleted.
