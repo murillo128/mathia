@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-beurling-arithmetic-equivalence-boundary
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: arithmetic_fidelity
 based_on:
@@ -63,6 +63,13 @@ These sources establish strong precedents for matched generalized-prime controls
 
 ## Research disposition
 
-The direction is worth continued investigation, but the category-independent branch is now sharply restricted. `AF-001` already makes unconstrained minimal lifts vacuous, while `AF-015` shows that in the bare multiplicative-monoid category the exact symmetry quotient is classical: arbitrary prime-generator permutations preserve prime type and factorization shape while erasing ordinary prime identity and norm. Knopfmacher's arithmetical-semigroup formalism already supplies the corresponding classical enrichment by adding a norm/degree map.
+Outcome: narrowed
 
-The remaining question is therefore explicitly category-indexed: for a concrete downstream category used by Mathia, identify an **independently defined enrichment beyond the free prime-label monoid** whose maximal admissible quotient both breaks the relevant prime-permutation/Beurling controls and survives the exact compression. The clue remains unresolved until such a theorem is proved for at least one nontrivial destination category, or a broader no-go shows that the admissible enrichments in that category still fail to distinguish the ordinary rational-prime norm.
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-017-exact-euler-product-recovers-prime-norms-zero-divisor-does-not.md]]
+
+`AF-017` supplies the requested category-indexed audit in the Euler-product / meromorphic-function setting. Exact Euler-product values retain the unordered generator-norm multiset through Möbius recovery of the prime Dirichlet sum and uniqueness of that discrete Laplace representation. Thus a genuinely different norm system cannot share the same exact Euler-product function in the convergence half-plane.
+
+The next compression to the meromorphic zero/pole divisor is non-faithful. Grosswald--Schnitzer give modified Euler products with changed generators but the same zeros with multiplicities and the same simple pole location in `Re(s)>0`; the difference is a holomorphic nonvanishing factor. This also narrows the arithmetic-equivalence warning: equality of Dedekind zeta can lose field/arithmetic provenance even though exact Euler-product data retain the multiset of local prime-ideal norms.
+
+The generic question posed by this clue is therefore resolved rather than left as an open request for any category-indexed boundary. The remaining line-wide problem is more specific: for each concrete RH compression, identify which relational provenance or zero-free analytic data lie beyond the exact retained representation and whether an independently justified enrichment survives that particular compression.
