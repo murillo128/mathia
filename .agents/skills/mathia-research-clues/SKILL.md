@@ -270,7 +270,7 @@ A derived handoff clue is valid only when:
 
 The derived-handoff gate is intentionally lower than the survivor attack-family gate because the owning Research Watch will perform the ordinary derivation, serious prior-art check, and accept/reject decision. It is **not** permission to persist brainstorm fragments, candidate backlogs, generic future-work sentences, or a weaker restatement of something the Visionary already killed.
 
-For either clue form, the Visionary must not persist brainstorming, candidate lists, literature-search logs, or claims of novelty. The clue must state a concrete question/construction, the strongest relevant Mathia obstruction, the exact unresolved residual, and a decisive first test. For survivor clues, include the closest authoritative external literature from the broad audit. For derived handoff clues, include the bounded literature comparison and the exact kill/narrowing boundary that produced the residual question.
+For either clue form, the Visionary must not persist brainstorming, candidate lists, literature-search logs, or claims of novelty. The clue must state a concrete question/construction, the strongest relevant Mathia obstruction, the exact unresolved residual, and a decisive first test. For survivor clues, include the closest authoritative external literature from the broad audit. For derived handoff clues, include the bounded literature comparison and cite only persisted repository evidence in `based_on`; the campaign issue may be mentioned in prose solely as non-evidentiary provenance for which parent candidate was killed, never as mathematical support.
 
 It must not change `accepted`, `rejected`, or `resolved` dispositions.
 
