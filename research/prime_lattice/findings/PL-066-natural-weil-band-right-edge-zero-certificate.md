@@ -1,8 +1,8 @@
-# PL-066 — Order-one natural Weil-band defects certify zeros near `Re(s)=1`
+# PL-066 — Natural Weil-band noncollapse gives a band-dependent rightmost-zero certificate
 
 ## Claim
 
-The fixed-depth moving-band escape left after `PL-063`--`PL-065` is more rigid than the one-way Vinogradov--Korobov collapse estimate suggests. Before inserting any zero-free region, the `PL-063` proof already gives an **inverse zero certificate**: an order-one defect of the naturally `exp(-L)`-normalized completed Weil form on a sub-archimedean Dirichlet band forces a nontrivial zeta zero close to the line `Re(s)=1`.
+The fixed-depth moving-band escape left after `PL-063`--`PL-065` is more rigid than the one-way Vinogradov--Korobov collapse estimate suggests. Before inserting any zero-free region, the `PL-063` proof already gives an **inverse zero-location certificate**: an order-one defect of the naturally `exp(-L)`-normalized completed Weil form forces a nontrivial zeta zero whose real part is quantitatively determined by the growth rate of the boundary band.
 
 Fix `R>0`. Let `Pi_N` be the two-copy projection onto the first `N` Dirichlet sine modes of `L^2(0,R)`, and let `W_(L,R)` be the naturally `exp(-L)`-normalized completed Weil boundary form used in `PL-059`--`PL-065`. Put
 
@@ -16,7 +16,7 @@ For `T>=max(e^e,2N)`, define
 M(T)=max_{rho: |Im rho|<=T} X^(Re rho-1),
 ```
 
-where the maximum is over nontrivial zeta zeros with multiplicity irrelevant to the maximum. The zero-sampling argument inside `PL-063`, *before* the Vinogradov--Korobov zero-free estimate is substituted, gives
+where the maximum is over nontrivial zeta zeros. The zero-sampling argument inside `PL-063`, *before* the Vinogradov--Korobov zero-free estimate is substituted, gives
 
 ```text
 boxed:
@@ -55,7 +55,21 @@ boxed:
  <= [log(C_(R,epsilon) log(2+N_j))]/(2L_j).
 ```
 
-Thus natural-scale fixed-depth band noncollapse is not a detector of critical-line zeros. In the whole regime where the normalized archimedean contribution is still negligible, it is a detector of zeros approaching the **right-hand edge** of the critical strip.
+This gives a useful scale dictionary. If
+
+```text
+log log N_j / L_j -> alpha,
+0 <= alpha < 1,
+```
+
+then any order-one defect forces
+
+```text
+boxed:
+liminf beta_j >= 1-alpha/2.
+```
+
+In particular, for every regime with `log log N=o(L)` it forces zeros with `beta->1`. As the band approaches the much larger scale `log N=exp((1-o(1))L)`, the certificate weakens continuously toward the critical-line threshold `beta>=1/2`; it should not be described as a near-`1` theorem in that extreme regime.
 
 There is an immediate conditional corollary. Under RH,
 
@@ -66,7 +80,7 @@ log N(L)=o(exp(L)), N(L)->infinity
 ||Pi_(N(L)) W_(L,R) Pi_(N(L))|| -> 0.
 ```
 
-So, assuming RH, the natural boundary normalization has no nontrivial fixed-depth Dirichlet-band limit anywhere below the much larger archimedean scale `log N ~ exp(L)`. This is vastly beyond the unconditional zero-free collapse scale of `PL-063`, but it is a **negative topology statement**, not an RH proof mechanism.
+So, assuming RH, the natural boundary normalization has no nontrivial fixed-depth Dirichlet-band limit anywhere below the scale at which the normalized archimedean logarithmic cost itself can become order one. This is a **negative topology statement**, not an RH proof mechanism.
 
 **Evidence/status:** `LITERATURE+EXACT-DERIVED + NEGATIVE/OBSTRUCTION`, and `DECISIVE-NEGATIVE` for the route
 
@@ -127,7 +141,7 @@ C_R exp(-L)(1+log(1+N)).
 
 Combining those three ingredients yields the displayed pre-zero-free bound for the **full completed compression**. The Vinogradov--Korobov region used in `PL-063` is only one possible upper bound for `M(T)`; it is not needed for the inverse argument.
 
-## An order-one defect forces a zero close to one
+## An order-one defect forces a band-dependent rightmost zero
 
 Take
 
@@ -178,13 +192,32 @@ Taking logarithms gives
 
 which is exactly the claimed certificate.
 
-This direction is stronger conceptually than merely reusing a known zero-free region. The band itself tells us what kind of zeta information would be necessary for it not to collapse: a zero must enter a right-edge window of width approximately
+The useful parameter is therefore
 
 ```text
-log log N / L
+alpha_L = log log N / L.
 ```
 
-below `Re(s)=1`, at height at most polynomial in the band index.
+Ignoring the lower-order `log C` term, noncollapse requires a zero with
+
+```text
+beta >= 1-alpha_L/2.
+```
+
+This makes the information geometry explicit:
+
+```text
+log log N=o(L)
+    -> a surviving defect forces beta->1;
+
+log log N ~ alpha L, 0<alpha<1
+    -> it forces beta >= 1-alpha/2-o(1);
+
+alpha ->1
+    -> the forced threshold approaches beta>=1/2.
+```
+
+Thus the fixed-depth natural-scale band does not single out `1/2` internally. The critical value appears only when the band itself is pushed to the separate scale where `log N` is almost `exp(L)`.
 
 ## Under RH the natural band collapses almost to the archimedean scale
 
@@ -225,18 +258,18 @@ exp(-i xi log n)
  = exp(-i xi <v(n),(log p)_p>).
 ```
 
-`PL-052` and `PL-065` show that these finite prime-log phases can recur coherently, but only at very late frequencies. The present inverse estimate says something complementary: if a low-enough Dirichlet band nevertheless carries an order-one completed defect, then the cause cannot merely be generic Kronecker recurrence of the exponent lattice. The completed explicit formula forces a zero close to `Re(s)=1`.
+`PL-052` and `PL-065` show that these finite prime-log phases can recur coherently, but only at very late frequencies. The present inverse estimate says something complementary: if a controlled Dirichlet band carries an order-one completed defect, then its required zero location is determined quantitatively by how fast that band grows. Generic Kronecker recurrence alone does not supply this band-to-zero-real-part law; it enters through the completed explicit formula.
 
-Thus the fixed-depth topology has a clean information flow:
+The fixed-depth topology therefore has the information flow
 
 ```text
 prime-log band defect
     -> compact-boundary explicit formula
     -> large factor X^(beta-1)
-    -> zero close to Re(s)=1.
+    -> rightmost-zero certificate set by log log N / L.
 ```
 
-This is genuine arithmetic information, but it is the wrong geometry for selecting `Re(s)=1/2`.
+This is genuine arithmetic information, but it does not independently select the self-dual line.
 
 ## Prior-art and novelty audit
 
@@ -244,7 +277,7 @@ The logical philosophy is classical rather than new. Turan's localization method
 
 The exact inequality above is not taken from that literature. It is the line-specific contrapositive extracted from the already-persisted completed-Weil Paley--Wiener estimate of `PL-063`. No novelty is claimed for the general principle that anomalously large prime observables can certify nearby zeros.
 
-The Vinogradov--Korobov and PNT anchors already recorded in `SOURCES.md` entries 59--60 explain the unconditional scale obtained by inserting a known zero-free envelope. Broucke's generalized-prime result in entry 61 remains the matched-control warning: zero-free contours and corresponding PNT-error scales can be reproduced in Beurling systems. Hence a boundary transition governed only by the right-edge zero-free envelope is not rational-prime-specific RH rigidity.
+The Vinogradov--Korobov and PNT anchors already recorded in `SOURCES.md` entries 59--60 explain the unconditional scale obtained by inserting a known zero-free envelope. Broucke's generalized-prime result in entry 61 remains the matched-control warning: zero-free contours and corresponding PNT-error scales can be reproduced in Beurling systems. Hence a boundary transition governed only by a rightmost-zero envelope is not rational-prime-specific RH rigidity.
 
 A targeted literature search across Turan localization, prime Dirichlet-polynomial suprema, localized Weil operators, and Paley--Wiener sampling did not locate this exact fixed-depth operator-norm certificate. Search absence is not evidence of originality.
 
@@ -262,12 +295,12 @@ The deduction
 
 ```text
 large band defect
-    -> some zero close to the right edge
+    -> a zero crossing a band-dependent rightmost threshold
 ```
 
-is structural for any generalized-prime explicit formula with the same compact-boundary sampling and zero-count estimates. The numerical right-edge envelope then depends on the generalized zeta zero-free region. This is exactly why the certificate is a negative guide for RH: its native spectral sensitivity points toward `Re(s)=1`, not toward the self-dual line.
+is structural for any generalized-prime explicit formula with the same compact-boundary sampling and zero-count estimates. The threshold then depends on the generalized zeta zero-free geometry. This is exactly why the certificate is a negative guide for RH: its native scale is controlled by the location of the rightmost available zeros, not by an intrinsic prime-lattice mechanism selecting `1/2`.
 
-To become specifically useful for the ordinary RH problem, a successor construction would need an additional rational-prime invariant that changes this information geometry rather than merely sharpening the right-edge zero-free estimate.
+To become specifically useful for the ordinary RH problem, a successor construction would need an additional rational-prime invariant that changes this information geometry rather than merely sharpening a right-edge zero-free estimate.
 
 ## Falsification and boundary tests
 
@@ -280,12 +313,13 @@ The result reduces to the following checkable steps:
 5. `log N=o(exp L)` makes the normalized archimedean/completion term vanish;
 6. an order-one norm lower bound therefore forces `M(N^3)>=c/log N`;
 7. `X=exp(2L)` converts that inequality into the displayed bound on `1-Re rho`;
-8. under RH, `M(T)=exp(-L)`, yielding full band collapse whenever `log N=o(exp L)`.
+8. the extra condition `log log N=o(L)`, not merely `log N=o(exp L)`, is what makes the forced zeros approach `Re(s)=1`;
+9. under RH, `M(T)=exp(-L)`, yielding full band collapse whenever `log N=o(exp L)`.
 
 Failure of any of the first three inherited estimates invalidates the certificate. The theorem does not address cutoffs whose basis has different high-zero approximation cost, unrestricted norm states, growing boundary depth, or the second amplitude scale obtained by multiplying the centered residual by `exp(L)`.
 
 ## Consequence for the research line
 
-The accepted `CLUE-mesoscopic-weil-boundary-topology` should no longer treat the unresolved fixed-depth Dirichlet-band transition at the **natural** `exp(-L)` normalization as a plausible way to obtain an RH-compatible nonzero limit. Below the archimedean scale, any order-one survival would certify a zero approaching `Re(s)=1`; under RH the whole regime collapses.
+The accepted `CLUE-mesoscopic-weil-boundary-topology` should no longer treat the unresolved fixed-depth Dirichlet-band transition at the **natural** `exp(-L)` normalization as a plausible way to obtain an RH-compatible nonzero limit. Under RH the entire sub-archimedean band regime collapses; conversely, any order-one survival there certifies a zero to the right of a band-dependent threshold, approaching `Re(s)=1` whenever `log log N=o(L)`.
 
 The surviving mesoscopic question therefore has to change one of the ingredients: use a further amplitude normalization that keeps square-root-scale zero terms visible, use a topology not controlled by compact-boundary zero sampling, couple to a genuinely global rational-prime invariant, or move to a regime where the archimedean and prime pieces interact nontrivially. Any `exp(L)` second normalization must in turn pass the prior-art test that it is not merely the classical explicit-formula zero series rewritten as a boundary operator.
