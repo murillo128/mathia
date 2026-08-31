@@ -28,8 +28,10 @@ Marked local spectral/scattering observables can retain ordered multi-gap inform
 - [[research/prime_flute/findings/PF-133-centered-lambert-split-ray-tail-is-strong-W11|PF-133]]
 - [[research/prime_flute/findings/PF-134-lambert-scalar-tail-is-log-weight-summable|PF-134]]
 - [[research/prime_flute/findings/PF-135-lambert-scalar-mode-has-subcritical-polynomial-moments|PF-135]]
+- [[research/prime_flute/findings/PF-136-long-pre-corner-split-mismatch-has-summable-strong-L1-extension|PF-136]]
+- [[research/prime_flute/findings/PF-137-pre-corner-wave-loss-localizes-to-true-thin-part|PF-137]]
 - [[research/prime_flute/mind/RESEARCH_LINES|Prime-flute synthesis]]
 
-PF-125 closes essential-spectrum distinguishability against the explicit all-composite shift clone. PF-126--PF-135 progressively remove coefficient, collar, cusp, Lambert-body, full split-ray and subcritical polynomial neighboring-gap amplification as obvious stronger-category obstructions.
+PF-125 closes essential-spectrum distinguishability against the explicit all-composite shift clone. PF-126--PF-136 progressively remove coefficient, canonical collar, cusp, Lambert-body, full split-ray, subcritical polynomial and long pre-corner narrowing costs as obvious stronger-category obstructions. PF-137 further localizes any remaining inverse-unit-ball weighted failure to genuine ambient thin geometry rather than coordinate narrowing.
 
-The territory remains open because compact relative resolvent and these one-dimensional/local budgets do not establish equality of marked scattering, discrete spectrum, resonances, global `S_r`, heat/wave data or the required two-dimensional inverse-unit-ball-weighted metric comparison.
+The territory remains open because compact relative resolvent and these local/strong-`L^1` budgets do not establish equality of marked scattering, discrete spectrum, resonances, global `S_r`, heat/wave data, or the required control on noncanonical thin collars and global assembly.

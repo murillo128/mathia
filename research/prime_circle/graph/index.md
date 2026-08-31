@@ -29,6 +29,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_circle/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
 - [[research/prime_circle/graph/relations/adelic-solenoid-spectral-obstruction|Adelic-solenoid proper-scale obstruction]]
 - [[research/prime_circle/graph/relations/hardy-hilbert-shell-collapse|Hardy/Hilbert shell collapse and relative trace sector]]
+- [[research/prime_circle/graph/relations/cotangent-nonlinear-gauge-collapse|Cotangent nonlinear gauge and endpoint collapse]]
 
 ## Curation boundary
 

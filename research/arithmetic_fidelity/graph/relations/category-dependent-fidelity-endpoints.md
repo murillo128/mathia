@@ -8,7 +8,7 @@ derived: true
 
 # Category-dependent fidelity endpoints
 
-Central intuition: [[research/arithmetic_fidelity/mind/intuition/MI-003-fidelity-endpoints-are-category-dependent]]. The newest findings make the retained category itself part of an exact fidelity statement.
+Central intuition: [[research/arithmetic_fidelity/mind/intuition/MI-003-fidelity-endpoints-are-category-dependent]]. The current findings make the retained category itself part of an exact fidelity statement.
 
 - [[research/arithmetic_fidelity/findings/AF-012-strictly-convex-f-divergence-equality-is-binary-statistical-fidelity|AF-012]] identifies equality in a strictly convex binary `f`-divergence with likelihood-ratio sufficiency.
 - [[research/arithmetic_fidelity/findings/AF-013-finite-experiment-fidelity-is-vector-likelihood-ratio-sufficiency|AF-013]] upgrades this to a finite statistical experiment: the complete retained statistic is the vector likelihood ratio.
@@ -16,5 +16,7 @@ Central intuition: [[research/arithmetic_fidelity/mind/intuition/MI-003-fidelity
 - [[research/arithmetic_fidelity/findings/AF-015-abstract-multiplication-forgets-rational-prime-norms|AF-015]] shows that the bare multiplicative monoid preserves prime type and factorization shape but forgets rational-prime identities and the numerical norm.
 - [[research/arithmetic_fidelity/findings/AF-016-base-automorphism-invariance-is-not-first-order-fidelity|AF-016]] separates base-model automorphism invariance from first-order definability unless an independent completeness theorem, such as the omega-categorical case, closes that gap.
 - [[research/arithmetic_fidelity/findings/AF-017-exact-euler-product-recovers-prime-norms-zero-divisor-does-not|AF-017]] gives an analytic-layer boundary: the exact Euler-product function recovers the unordered generator-norm multiset, while its meromorphic divisor can lose that information through a zero-free factor.
+- [[research/arithmetic_fidelity/findings/AF-018-order-one-reflection-rigidity-of-zero-divisors|AF-018]] shows that the same divisor becomes faithful up to scale after imposing the independently specified order-one plus reflection category, and one normalization value removes the final scale.
+- [[research/arithmetic_fidelity/findings/AF-019-exact-logarithmic-derivative-retains-zero-free-factor|AF-019]] places the exact logarithmic derivative strictly above divisor/principal-part data: it is faithful modulo scale and retains the derivative of the zero-free factor discarded by the divisor.
 
-Together these are not one universal theorem. They support the narrower structural rule that a fidelity claim must specify the retained observable class, gauge, topology/language, and analytic layer before recovery or loss is asserted.
+Together these are not one universal theorem. They support the narrower structural rule that a fidelity claim must specify the retained observable class, gauge, topology/language, admissible analytic class, and analytic layer before recovery or loss is asserted.

@@ -25,8 +25,11 @@ A live attempt to retain more arithmetic information before Gram collapse.
 - [[research/weil_inertia/findings/WI-055-zheng-simultaneous-ap-does-not-black-box-close-welding|WI-055]]
 - [[research/weil_inertia/findings/WI-056-convolution-bv-does-not-black-box-close-welding|WI-056]]
 - [[research/weil_inertia/findings/WI-057-ordinary-mrt-does-not-control-w-local-conditioned-pair-covariance|WI-057]]
+- [[research/weil_inertia/findings/WI-058-w-local-pair-main-has-tight-fourier-conductor-energy|WI-058]]
+- [[research/weil_inertia/findings/WI-059-fixed-polylog-conductor-truncation-misses-w-local-energy|WI-059]]
+- [[research/weil_inertia/findings/WI-060-retained-w-spectrum-wiener-norm-forces-square-function-control|WI-060]]
 - [[research/weil_inertia/mind/RESEARCH_LINES|Weil-inertia synthesis]]
 
-The deterministic local main, every fixed polylogarithmic coefficient range and pure quotient mode are no longer the main obstruction. Nilsequence Bombieri--Vinogradov now controls the entire localized pair-frequency fiber on the genuine positive-power region `4 alpha + beta < 1`, `alpha + 4 beta < 1`. Nearby AP-maximal, simultaneous-AP, convolution-BV and ordinary marginal MRT theorems do not black-box extend this to the remaining locked source object.
+The deterministic local main, fixed polylogarithmic coefficient ranges, pure quotient mode and ordinary marginal conditioning are no longer the main obstruction. Nilsequence Bombieri--Vinogradov controls a genuine positive-power region. The `W`-local conditioning spectrum is now known to concentrate at subpolynomial conductor, but any fixed polylog cutoff misses positive `L^2` mass and termwise `l^1` assembly is too expensive.
 
-The territory remains open for a Yang-specific conditioned/two-modulus post-local-main covariance outside that doubly-small region, together with the separately booked short-shift boundary/collision interface. The Yang--Yang candidate is neither certified nor refuted.
+The territory remains open for a Yang-specific collective square-function/conditioned-pair splice over the retained subpolynomial conductors outside the currently controlled region, together with the separately booked boundary/collision and moving-interval interfaces. WI-061 is under open adversarial review, so its stronger Mikawa-splice claim is not used to change the atlas state. The Yang--Yang candidate is neither certified nor refuted.

@@ -45,5 +45,5 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Current integration boundary
 
-Six source-backed research lines are currently discoverable. The persisted global `mind/` synthesis still integrates the five RH-facing lines; the newer Arithmetic Fidelity line is represented here as a transversal source-backed hub but has not been silently folded into the global mind. Riemann Atlas v1 remains an RH approach-space denominator and is not expanded merely because a transversal methodology line was added.
+Six source-backed research lines are currently discoverable. The persisted global `mind/` synthesis already incorporates Arithmetic Fidelity into its complete-statistic and rational-prime-specificity gates while keeping the five RH-facing lines as the mathematical attack portfolio. Riemann Atlas v1 remains an RH approach-space denominator and is not expanded merely because a transversal methodology line is present.
 <!-- graph:end -->

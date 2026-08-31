@@ -25,6 +25,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/arithmetic_fidelity/graph/relations/constrained-lifts-and-maximal-observable-quotients|Constrained lifts and maximal observable quotients]]
 - [[research/arithmetic_fidelity/graph/relations/relational-data-restores-lost-structure|Relational data can restore structure lost by scalar compression]]
 - [[research/arithmetic_fidelity/graph/relations/category-dependent-fidelity-endpoints|Category-dependent fidelity endpoints]]
+- [[research/arithmetic_fidelity/graph/relations/finite-weil-test-fidelity-filtration|Weil-test scale and resolution fidelity]]
 
 ## Curation boundary
 

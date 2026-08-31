@@ -28,6 +28,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/prime_lattice/graph/relations/classical-prime-flow-bridge|Classical prime-flow RH bridge]]
 - [[research/prime_lattice/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
 - [[research/prime_lattice/graph/relations/localized-weil-prime-boundary-obstruction|Localized Weil boundary, second scale and mesoscopic obstruction]]
+- [[research/prime_lattice/graph/relations/positive-cone-critical-gram-classicalization|Positive-cone critical Gram classicalization]]
 
 ## Curation boundary
 

@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 396f2d59c7a66c3437f3234988d6bdfc41eb4830
+source_revision: e53c36fbb9b7426e242b1778e8deb177424f11b6
 derived: true
 ---
 
@@ -26,7 +26,7 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 **Reading:** Mathia has traversed a large fraction of Atlas v1, but the program is **not close to saturation**: about 60.1% of already-visited mass remains active/open, while only 20.4% of visited mass is pruned.
 
-The latest source delta substantially narrows already-mapped frontiers without changing the v1 denominator or any leaf state. Prime Circle's higher Hardy traces exceed pairwise resultants but all finite mixed words now have canonical trace-norm finite-section limits and common repeated-prime depth is universal tensor inflation. Prime Flute removes the complete one-dimensional Lambert split-ray mismatch and even subcritical polynomial neighboring-gap amplification of its scalar mode as the obvious obstacle beyond compact-resolvent equivalence. Prime Lattice's natural second scale becomes an explicit-zero almost-periodic/RH-equivalent diagnostic whose hull, same-time prime coupling and finite-horizon resonances are generic frequency/Diophantine constructions rather than a new selector. Weil Inertia gains a genuine positive-power region from nilsequence Bombieri--Vinogradov while several nearby black-box distribution theorems still fail the remaining conditioned two-modulus interface. Weil Positivity exports `log p` through Prym determinant/action data but classicalizes or cancels the standard completions and closes the symmetric full-root `q=2` Hardy/Krein positivity corridor. Arithmetic Fidelity now supplies exact category-specific fidelity theorems and a durable mind, but remains transversal methodology and is not counted as a new RH territory.
+The current source delta materially narrows already-mapped frontiers without changing the v1 denominator or any leaf state. Prime Circle corrects the withdrawn one-letter Hardy trace claim and closes the canonical preimage-product, Leibniz-defect and one-intermediate cotangent escapes to gauge/endpoint data. Prime Flute pushes the shift-clone comparison through strong-`L^1` pre-corner correction and localizes any remaining wave-weight loss to genuine ambient thin geometry. Prime Lattice's positive-cone finite-horizon and coefficient audits redirect the first critical Gram signals to universal resolution, torus gauge, Mirsky/Chowla and Hardy--Littlewood correlations. Weil Inertia shows the `W`-local conditioned spectrum is subpolynomial in `L^2` but too large for fixed-polylog truncation or termwise Wiener assembly; an open review prevents promoting the newest Mikawa splice. Weil Positivity extends the polar-sign obstruction to bounded and operator-level unbounded metrics and proves the base-shell Mangoldt anchor functional is unbounded, closing finite scalar renormalization. Arithmetic Fidelity separates analytic-class recovery from divisor data and proves a support-radius/test-dimension fidelity filtration for finite Weil tests, but remains transversal methodology rather than a new RH territory.
 
 The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
 

@@ -21,8 +21,12 @@ The live Weil-positivity frontier is to couple the finite arithmetic selector to
 - [[research/weil_positivity/findings/WP-061-q2-hardy-gram-is-positive-but-full-root-channel-is-indefinite|WP-061]]
 - [[research/weil_positivity/findings/WP-062-q2-half-turn-equivariant-compression-cannot-be-positive|WP-062]]
 - [[research/weil_positivity/findings/WP-063-q2-hardy-krein-repair-is-uniquely-the-polar-absolute-value|WP-063]]
+- [[research/weil_positivity/findings/WP-064-bounded-self-adjoint-metric-repairs-force-the-polar-sign|WP-064]]
+- [[research/weil_positivity/findings/WP-065-unbounded-self-adjoint-metric-products-still-force-polar-sign|WP-065]]
+- [[research/weil_positivity/findings/WP-067-base-shell-hardy-canonical-zero-finite-part-is-indefinite|WP-067]]
+- [[research/weil_positivity/findings/WP-068-full-root-hardy-differences-make-mangoldt-anchor-functional-unbounded|WP-068]]
 - [[research/weil_positivity/mind/RESEARCH_LINES|Weil-positivity synthesis]]
 
-Finite arithmetic recovery and intrinsic `q=2` archimedean selection are both available, but the pairing/sign mechanism remains missing. The primitive order-two Hardy shell is positive yet is not the selected full-root channel; the full-root channel is chiral and indefinite, every half-turn-equivariant nonzero compression remains indefinite, and the natural parity-exchanging Krein repair is uniquely the polar absolute value.
+Finite arithmetic recovery and intrinsic `q=2` archimedean selection are both available, but the pairing/sign mechanism remains missing. The full-root channel is indefinite; symmetry-preserving compression fails; bounded and operator-level unbounded self-adjoint metric repairs force the polar sign; and the canonical base-shell Hardy square has an exact Mangoldt polarization whose anchor functional is unbounded, ruling out every finite scalar positivity counterterm.
 
-The territory remains open for a genuinely coupled larger/nonseparable construction whose positivity/sign is forced independently and still retains the exact finite selector.
+The territory remains open for a genuinely coupled larger/nonseparable construction or a more singular form-level category whose positivity/sign is forced independently and still retains the exact finite selector.
