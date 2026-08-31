@@ -21,35 +21,32 @@ based_on:
   - research/prime_flute/findings/PF-137-pre-corner-wave-loss-localizes-to-true-thin-part.md
   - research/prime_flute/findings/PF-138-zero-twist-reflection-exhausts-margulis-short-closed-geodesics.md
   - research/prime_flute/findings/PF-139-full-pre-cusp-split-mismatch-has-summable-two-sided-extension.md
+  - research/prime_flute/findings/PF-140-full-horocycle-handoff-has-summable-wave-weight.md
 ---
 
 # Do the prime flute and the all-composite shift clone have complete relative wave operators?
 
 ## Observation
 
-PF-125 gives a global marked quasi-isometric comparison between the exact prime flute and the exact all-composite shift clone `p_n -> p_n+1`, with metric coefficients tending to one at infinity and exact isometry sufficiently deep in every cusp. PF-126 shows that the resulting coarse zeroth-order metric defect is weak `L^1` and lies in every `L^r`, `r>1`, but that estimate is not strong enough by itself for scattering.
+PF-125 already puts the exact prime flute and exact all-composite shift clone `p_n -> p_n+1` in the same compact-relative-resolvent/essential-spectrum class. The stronger scattering target is Güneysu--Thalmaier's no-injectivity-radius criterion: after transporting one metric to the other, finiteness of the inverse-unit-ball weighted metric-deviation integral implies existence and completeness of the two-Hilbert-space wave operators and equality of the absolutely continuous spectra.
 
-Güneysu--Thalmaier's no-injectivity-radius criterion gives the relevant stronger target: for smooth complete quasi-isometric metrics with Ricci curvature bounded below, finiteness of
+The candidate obstruction has been narrowed substantially. PF-128 proves that an entire matched collapsing standard collar costs only `O(|log(L_+/L)|)` in the weighted criterion, and PF-109 makes that `O(P^-3)` for every canonical pinching separator. PF-129 gives a summable budget for the complete cusp family once an appropriate bottom trace is supplied. PF-130--PF-139 then construct and reconcile the lower Lambert/pant-body maps: their strong-`L^1` body defect is summable, internal split narrowing is not an ambient thinness obstruction, all short closed source geodesics are classified by PF-138, and the left/right Lambert split mismatch admits a summable two-sided extension all the way to the standard cusp entry `y=1`.
 
-\[
-\int_X \mu_j(x,1)^{-1}\,\delta_{g,h}(x)\,d\mu_j(x)
-\]
+PF-140 now closes the **first external handoff** that remained after PF-139. On the whole normalized standard-cusp sector the exact PF-121 map is exponentially closer to a hyperbolic dilation than its coarse `1+O(delta)` estimate. After restoring the physical pant charts, the leading horocycle mismatch is exactly PF-122's adjacent first-difference mode, while PF-139's top split correction contributes only its summable centered scalar mode. The actual PF-139 trace on `y=1` is therefore `ell^1`-close to the identity in a piecewise first-derivative trace norm and can be cut off directly to exact identity through one fixed Busemann slab with finite total Güneysu--Thalmaier weight.
 
-for one of the metrics implies existence and completeness of the two-Hilbert-space wave operators and equality of the absolutely continuous spectra.
-
-Several natural sources of divergence have now been removed by canonical findings. PF-128 proves that a matched collapsing standard collar contributes only `O(|log(L_+/L)|)` to the inverse-unit-ball weight, and PF-109 makes this `O(P^-3)` for every PF-004 canonical pinching separator. PF-129 gives a finite total weighted cost for the entire cusp family by synchronizing each cusp through a fixed Busemann slab and making the comparison exactly isometric above it. PF-130 shows that the independent PF-121 Lambert-body deformations have summable strong-`L^1` metric mass, while PF-131--PF-136 identify the complete split-ray mismatch and propagate it through the long pre-first-corner sector without destroying that unweighted `L^1` scale.
-
-PF-137 materially changed the wave gate by showing that a narrow internal Lambert/split chart is not itself an ambient thin region. On every fixed injectivity-radius-thick part, the ambient radius-one hyperbolic ball has a uniform positive area floor, so an unweighted strong-`L^1` estimate already gives the Güneysu--Thalmaier weighted estimate there. Any residual divergence must therefore be supported on the true ambient Margulis-thin set.
-
-PF-138 closes the remaining **geometric classification** of the closed thin part for the source prime metric. Every simple closed geodesic of length at most `2 arsinh 1` is either a distinguished tight-flute cuff or a PF-004/PF-034 consecutive-block separator. The distinguished cuffs tend to infinity, so the tail has no noncanonical closed thin cores. Moreover the shortness condition bounds the number of canonical blocks with left label `P` by `O(P^0.525)`; PF-109 gives `O(P^-3)` matched log-length defect for each one, and PF-128 therefore yields a finite sum of local model collar costs over the entire closed thin family.
-
-PF-139 removes another genuine assembly ambiguity. It constructs a two-sided Fermi correction of the **full** left/right PF-121 split mismatch from the finite split endpoint all the way to the canonical standard cusp horocycle `y=1`. The correction leaves every finite-cuff and outer-cusp boundary trace unchanged, has pantwise bilipschitz constants tending to one even for extreme neighboring gap ratios, and has summable strong-`L^1` metric defect. Thus unequal Lambert corner heights and the previously open middle/post-corner part of the artificial split no longer constitute a separate two-dimensional extension obstruction.
-
-The unresolved common-map bridge is now more specific. The split-coherent lower-pentagon map produced by PF-139 still has to be handed off at the full `y=1` horocycle to PF-129's preferred cusp normalization, and PF-128's optimized maps on every PF-138 closed thin collar still have to be realized compatibly inside the same global marking. Those two handoffs, plus smoothing, are the remaining geometric gates before the weighted scattering theorem can be invoked.
+The cusp/horocycle interface is consequently no longer a separate global gate. The unresolved issue is now concentrated on the **closed Margulis-thin collars and their interfaces with the already-controlled body map**. PF-138 identifies the relevant tail cores, and PF-128 proves that the sum of their optimized local model costs is finite, but no canonical finding yet realizes all of those local collar comparisons inside the same boundary-coherent global marking produced by PF-139/PF-140.
 
 ## Research question
 
-Can the PF-125 prime/shift comparison be replaced or smoothed within its marking class so that the complete Güneysu--Thalmaier weighted metric-deviation integral is finite, and hence
+Can the PF-139/PF-140 body-and-cusp comparison be modified around the complete PF-138 family of short closed cores so that, simultaneously,
+
+\[
+\int_X
+\mu_g(B_g(x,1))^{-1}
+\delta_{g,h}(x)\,d\mu_g(x)<\infty,
+\]
+
+with one smooth complete globally marked comparison, and hence
 
 \[
 W_\pm(\Delta_{X_+},\Delta_X,I)
@@ -57,40 +54,33 @@ W_\pm(\Delta_{X_+},\Delta_X,I)
 
 exist and are complete?
 
-After PF-139 the decisive question is no longer whether the two Lambert halves themselves can be made split-coherent. It is whether one can complete **both remaining external handoffs** with finite total weighted cost:
-
-1. reconcile the PF-139 lower-pentagon map with the PF-129 standard-cusp map across the full horocycle/interface, not merely at the artificial split point;
-2. realize PF-128's summable matched-collar model cost for every PF-138 closed thin core while preserving those pant/cusp traces.
-
-Equivalently, does the exact all-composite shift clone lie in the same absolutely-continuous Laplace spectral class as the prime flute under a natural marked identification, beyond the compact-relative-resolvent/essential-spectrum equivalence already proved in PF-125?
+Equivalently, can PF-128's boundary-to-boundary optimized collar maps be inserted for every PF-138 canonical short separator while matching the already-established pant-body traces on both collar boundaries at a summable total interface cost? The cusp side no longer needs a separate compatibility construction because PF-140 makes the comparison exactly isometric after a fixed cusp slab.
 
 ## Why it may matter
 
-A positive answer would rule out another natural spectral carrier: not only the essential spectrum but the absolutely continuous dynamical scattering class would survive replacement of every prime label by a composite one. Any RH-relevant mechanism would then have to live beyond this relative wave-equivalence class.
+A positive answer would show that the exact prime flute and an exact all-composite control have the same absolutely continuous Laplace spectral class under a natural marked comparison. Together with PF-125, this would rule out both the essential spectrum and the absolutely continuous scattering class as primality selectors for this construction; any RH-relevant mechanism would have to live in finer discrete, resonant, determinant, or genuinely arithmetic data not fixed by that equivalence.
 
-A negative answer would now be informative only if it identifies a genuine **horocycle, closed-thin-interface, or operator obstruction** that survives the established split extension, thick-part localization, cusp budget, and complete closed-thin model budget. PF-137 rules out fictitious inverse-volume losses caused solely by internal chart narrowing, PF-138 rules out a missing noncanonical short-core family, and PF-139 rules out unequal Lambert corner heights as an unweighted two-dimensional split-extension obstruction.
+A negative answer is now valuable only if it identifies a genuine **closed-thin interface or operator obstruction**. Universal cusp collapse, internal Lambert chart narrowing, unequal Lambert corner heights, unclassified short geodesics, and the full standard-horocycle handoff have all been removed as independent failure modes. A surviving amplification mechanism would therefore be structurally sharper than the earlier coarse objections.
 
 ## Decisive test
 
-A positive resolution must construct a smooth complete common-manifold comparison satisfying the hypotheses of Güneysu--Thalmaier and prove the weighted integral globally. In particular it must:
+A positive resolution must construct one smooth complete comparison, not merely sum incompatible local maps. A viable proof must:
 
-1. start from a split-coherent pant-body comparison using PF-139, retaining PF-124's exact finite-cuff zero-twist traces and the summable strong-`L^1` body budget;
-2. prove a **full-horocycle handoff** from that lower-pentagon comparison to PF-129's cusp normalization with summable weighted cost, rather than checking only the split ray or outer rays separately;
-3. use PF-137 on every fixed ambient thick part, where the inverse-unit-ball factor is uniformly bounded;
-4. use PF-138 to exhaust the source-metric closed thin cores by the finitely many short head cuffs and the PF-004 canonical separator family;
-5. realize PF-128's summable matched-collar model cost for that entire family **within the same global marking**, rather than summing local maps whose boundary traces may be incompatible;
-6. smooth and assemble the horocycle, collar, and thick-body transitions without losing quasi-isometry or weighted integrability.
+1. start from the PF-139 lower-pant comparison and PF-140 cusp cutoff, which already give a boundary-coherent body/cusp map with finite weighted contribution away from the closed thin collars;
+2. use PF-138 to choose the complete tail family of actual closed Margulis-thin cores, with only a finite exceptional head;
+3. replace the comparison on each relevant standard collar by a PF-128-type optimized boundary-to-boundary map and prove that the induced traces on both collar boundaries can be reconciled with the surrounding body map at a summable total weighted cost;
+4. control any interpolation annuli and smoothing zones in the same inverse-unit-ball weighted norm, without reintroducing a factor depending on the collapsing core length;
+5. verify global quasi-isometry, smooth completeness, and exact deep-cusp isometry after the modifications;
+6. invoke Güneysu--Thalmaier only after the complete global integral is established.
 
-A decisive negative resolution should prove an unavoidable divergence of this weighted criterion for every admissible marked quasi-isometric comparison, or establish a stronger operator obstruction to complete wave operators. A divergent estimate obtained solely from an internal split-strip width, solely from unequal Lambert corner heights, or solely from postulating an unclassified noncanonical thin family is no longer admissible after PF-137--PF-139.
+A decisive negative resolution should prove an unavoidable divergence for every admissible marked quasi-isometric comparison, or a stronger obstruction to complete wave operators, concentrated in the remaining closed-thin/interface sector. Failure of one convenient collar interpolation, or a divergent bound caused solely by a non-optimized coordinate choice, is not enough. PF-128 already shows that collapse itself does not force such divergence.
 
 ## Evidence boundary
 
-The clue is not evidence for wave-operator existence. PF-129 proves finite total cost for the cusp-end sector **once its boundary trace is imposed**. PF-139 proves that the lower Lambert pair can be made split-coherent up to `y=1` with summable strong-`L^1` cost while preserving the genuine pant boundaries, but it does not prove that its complete `y=1` horocycle trace is the PF-129 trace. PF-137 proves the inverse-volume factor is harmless on each fixed ambient thick part. PF-138 proves that all sufficiently short closed source-metric cores belong to the canonical separator family (up to a finite cuff head) and that the **sum of PF-128 local model collar costs over that family is finite**.
+The clue remains a research question, not evidence for wave-operator existence. PF-140 proves only that the **actual PF-139 standard-horocycle trace** can be killed to exact identity through fixed cusp slabs with summable weighted cost. PF-128 proves only a local optimized model for a matched standard collar. PF-138 classifies the short closed source cores and makes the sum of those local model budgets finite. None of those findings proves that the PF-128 collar boundary traces agree with, or can be reconciled summably to, the PF-139/PF-140 global body map.
 
-What remains unproved is the final common-map bridge. PF-128's collar comparison is a local boundary-to-boundary model, PF-129 fixes the preferred cusp normalization, and PF-139 fixes the internal Lambert split while deliberately leaving the full horocycle handoff open. No current finding proves that these constructions can all be chosen with compatible external traces and smoothed into one complete quasi-isometric identification while preserving the full Güneysu--Thalmaier weighted integral.
-
-The relevant prior art remains classical geometric scattering rather than prime-specific theory. B. Güneysu and A. Thalmaier, *Scattering theory without injectivity radius assumptions, and spectral stability for the Ricci flow*, Ann. Inst. Fourier 70 (2020), 437--456, DOI `10.5802/aif.3316`, supply the weighted criterion above. The 2024 Güneysu--Marot Kato--Ricci extension retains the same inverse-unit-ball-volume factor. Hempel--Post--Weder and Müller--Salomonsen provide neighboring metric-perturbation scattering results under different geometric hypotheses. Directed checks found no theorem that automatically performs the required global compatible smoothing for this infinite-type, zero-systole prime/shift pair.
+Nor would complete wave operators imply equality of scattering matrices, resonances, discrete eigenvalues, Selberg/Ruelle objects, relative determinants, or any RH statement. The external theorem remains Batu Güneysu and Anton Thalmaier, *Scattering theory without injectivity radius assumptions, and spectral stability for the Ricci flow*, Ann. Inst. Fourier 70 (2020), 437--456, DOI `10.5802/aif.3316`; it supplies the sufficient weighted criterion, not the missing prime-flute assembly theorem.
 
 ## Research disposition
 
-The clue remains accepted for active investigation. PF-139 removes the internal Lambert split as an independent global-assembly gate. The next decisive mathematical task is therefore the **external interface problem**: first make the complete `y=1` horocycle handoff to the PF-129 cusp map summable, then fit the PF-128 canonical-collar comparisons into that same boundary-coherent marking. Acceptance asserts only that this is a well-posed natural spectral test; it does not assert wave completeness, equality of scattering matrices, resonance equality, determinant identities, or any RH consequence.
+The clue remains `accepted` for active investigation, but PF-140 materially narrows its decisive gate. The full `y=1` horocycle/cusp handoff is resolved at finite total wave weight. The next work should therefore focus only on the **closed-thin collar/body interface problem**: realize PF-128's summable optimized collar comparisons coherently inside the PF-139/PF-140 global marking, or exhibit an intrinsic obstruction showing that this cannot be done. Acceptance asserts only that this final assembly question is mathematically well-posed and worth testing.
