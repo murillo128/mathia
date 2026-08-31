@@ -13,7 +13,7 @@ A **clue is not a finding, intuition, theorem, novelty claim, review verdict, po
 
 This skill is a narrow extension of the caller skill's path gate for clue files only. All other caller ownership restrictions remain unchanged.
 
-The existing Mind, Graph Curator, Research Watch, Adversarial Research, Master Researcher, and Visionary Researcher clue behavior remains unchanged; this skill additionally allows an Independent Reviewer of a Mathia formalization to persist clues exposed by formal-to-human correspondence work.
+The existing Mind, Graph Curator, Research Watch, Adversarial Research, Master Researcher, and Visionary Researcher clue behavior remains unchanged except where a producer-specific section below explicitly extends it; this skill additionally allows an Independent Reviewer of a Mathia formalization to persist clues exposed by formal-to-human correspondence work.
 
 ## Storage
 
@@ -242,18 +242,37 @@ For an existing destination line, prefer `research/<line>/clues/**`. Use `resear
 
 ## Producer: Visionary Researcher
 
-When loaded with `mathia-visionary-researcher`, the Visionary may emit a clue only after a full current-state/prior-art intake, broad external literature audit, and internal adversarial kill pass expose a **mathematically explicit attack family that is not already represented by the current program**.
+When loaded with `mathia-visionary-researcher`, the Visionary may emit **at most one** `status: proposed` clue per complete campaign. There are two legitimate clue forms.
 
-Good Visionary clues include:
+### Survivor clue
+
+A survivor clue comes from the final attack-family candidate after full current-state/prior-art intake, internal collision audit, broad external literature audit, adversarial kill, and current-main publication audit.
+
+Good survivor clues include:
 
 - a precise new information carrier that evades a persisted quotient/compression obstruction;
 - an exact operation or dual proof obligation outside the hypotheses of the current no-go results;
 - a structurally faithful transfer from a neighboring field with a complete mathematical dictionary and a cheap decisive test;
 - a genuinely distinct `new-line-candidate` whose first experiment can falsify the mechanism before a line is initialized.
 
-The Visionary must not persist brainstorming, candidate lists, literature-search logs, or claims of novelty. The clue must state a canonical construction, the strongest relevant Mathia obstruction, the closest authoritative literature, the exact unresolved residual, and a decisive first test. Put the compact literature comparison in `## Evidence boundary`; do not add a separate run report.
+### Derived handoff clue
 
-It may create or materially strengthen at most one `proposed` clue per run. It must not change `accepted`, `rejected`, or `resolved` dispositions.
+A derived handoff clue may be emitted even when the campaign has **no final surviving attack-family candidate**. It must be a separate falsifiable question exposed by an internal collision, literature narrowing, or adversarial kill and useful to an existing Research Watch or the global program.
+
+A derived handoff clue is valid only when:
+
+- the parent route remains killed/narrowed and is not reopened or rhetorically rebranded;
+- the residual question is mathematically distinct from the failed attack-family claim;
+- it has a clear destination and a cheap decisive test/proof obligation;
+- the Visionary deduplicates it against current findings, Mind, Master state, prior-art nodes, and clues;
+- phase 6 performs a bounded targeted literature check sufficient to rule out an obvious known duplicate or immediate classicalization;
+- `## Evidence boundary` explicitly states the killed/narrowed parent boundary and that the handoff itself remains unvalidated.
+
+The derived-handoff gate is intentionally lower than the survivor attack-family gate because the owning Research Watch will perform the ordinary derivation, serious prior-art check, and accept/reject decision. It is **not** permission to persist brainstorm fragments, candidate backlogs, generic future-work sentences, or a weaker restatement of something the Visionary already killed.
+
+For either clue form, the Visionary must not persist brainstorming, candidate lists, literature-search logs, or claims of novelty. The clue must state a concrete question/construction, the strongest relevant Mathia obstruction, the exact unresolved residual, and a decisive first test. For survivor clues, include the closest authoritative external literature from the broad audit. For derived handoff clues, include the bounded literature comparison and the exact kill/narrowing boundary that produced the residual question.
+
+It must not change `accepted`, `rejected`, or `resolved` dispositions.
 
 For an existing destination line, prefer `research/<line>/clues/**`. Use `research/clues/**` for genuinely cross-line questions or `new-line-candidate` proposals. The Master Researcher consumes both local and global clues, so no separate Master inbox is needed.
 
@@ -341,7 +360,7 @@ research/<line>/clues/**
 research/clues/**
 ```
 
-It must not change Research Watch disposition states, create more than one clue in a run, persist null results or candidate backlogs, or modify a clue merely to record literature search.
+It must not change Research Watch disposition states, create more than one clue in a campaign, persist null results or candidate backlogs, or modify a clue merely to record literature search.
 
 This exception does not grant access to any other caller-forbidden path.
 
@@ -354,7 +373,7 @@ A clue change may share the caller's normal direct-main publication path when al
 - any adversarial/review-sidecar-derived clue cites the persisted finding/review that motivated it;
 - any independent-review-derived clue cites the authoritative mathematical target and exact formalization/correspondence evidence that motivated it;
 - any Master-derived clue cites the current persisted findings/mind/graph/clues that motivated the cross-line question;
-- any Visionary-derived clue cites the current Master/Mind/finding/prior-art basis and gives a bounded closest-literature comparison plus a decisive first test;
+- any Visionary-derived clue cites the current Master/Mind/finding/prior-art basis, states the relevant survivor or killed/narrowed-parent boundary, gives a bounded closest-literature comparison appropriate to the clue type, and includes a decisive first test;
 - no timestamps/run logs/status noise were added;
 - the source revision remains coherent;
 - the caller's normal diff review and publication gates pass.
