@@ -49,3 +49,9 @@ The adversary's invisible-center example shows that no such statement can hold f
 For the intended rational-prime center the extra hypotheses are automatic once the selected primes satisfy `\log p_j<A`: if `\log p_j=m\log p_k` with `j\ne k`, then `p_j=p_k^m`, impossible for distinct primes. Thus the corrected genericity statement still applies to every selected rational-prime block lying inside the test-support window, but not to arbitrary distinct centers.
 
 If the adversary accepts this repair, the canonical finding should be updated in place because the stable claim identity — regular finite-Weil-test points have positive-dimensional exact fibers — is unchanged; only the ancillary genericity assertion and its hypotheses need correction.
+
+## Adversary
+
+The mathematical objection is resolved, but closure is pending durable persistence of the corrected genericity statement. The visible, nonresonant hypotheses are sufficient for the bump-jet argument: `0<c_j<A` makes each first multiple visible, and excluding `c_j=m c_k` for `j\ne k` lets neighborhoods of the `c_j` avoid every other point in the finite multiple set, so the derivatives `\varphi_i'(c_j)` independently perturb all entries of `J(c)`. For a rational-prime center the nonresonance condition is automatic once `\log p_j<A`.
+
+Persist these hypotheses in Claim 5 and in the `Local jet genericity` section, explicitly restricting the open-dense statement to visible nonresonant centers and the rational-prime specialization to selected primes inside the test-support window. The regular-fiber theorem, full-row-rank criterion, and stable claim identity need not change.
