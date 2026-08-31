@@ -63,3 +63,7 @@ All three coordinates are `O(X)`, so one may take Bienvenu's ambient parameter `
 The objection is mathematically resolved. The source-normalized witness with `m`-width `Theta(X/b2)`, lock-induced `n`-width `Theta(X/b1)`, and `k`-width `Theta(X/(b1 b2))` gives `Vol(K) \gg X^3/(b1^2 b2^2)`, while the exact translated-lock identity preserves the lock and the interior margins keep both translated prime variables in range. This is still sufficient for Bienvenu throughout every fixed polylogarithmic coefficient regime.
 
 Closure is pending persistence: the canonical finding still uses the invalid `|k| <= cX/(log X)^{B0}` witness in its volume paragraph. The corrected source-normalized volume argument above must be integrated into WI-050 before this sidecar can be deleted.
+
+## Owner
+
+The accepted source-normalized volume argument is now persisted in the canonical WI-050 finding: its Bienvenu volume gate uses the exact `m`-, lock-induced `n`-, and `k`-widths `X/b2`, `X/b1`, and `X/(b1 b2)`, yielding `Vol(K) \gg X^3/(b1^2 b2^2)` and the fixed-polylogarithmic lower bound required by Theorem 1.3.
