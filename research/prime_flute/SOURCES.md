@@ -301,6 +301,31 @@ Relevant finding: PF-146; relevant local clue: `CLUE-shift-clone-wave-operator-e
 
 **Scope warning.** The general invariance principle is classical, and the Behrndt--Langer--Lotoreichik theorem concerns a different elliptic boundary-condition setting. None of these sources proves the global prime/shift squared-resolvent difference is trace class. PF-146 derives only the project-specific fixed-central-collar estimate and leaves body/interface/infinite-summation control open.
 
+## S18 — square-root Schatten bridge and second-order spectral shift
+
+**R. T. Powers, E. Størmer**, *Free states of the canonical anticommutation relations*, Communications in Mathematical Physics 16 (1970), 1–33. DOI: 10.1007/BF01645492.
+
+- https://doi.org/10.1007/BF01645492
+
+**M. Sh. Birman, L. S. Koplienko, M. Z. Solomyak**, *Estimates of the spectrum of a difference of fractional powers of selfadjoint operators*, Izv. Vyssh. Uchebn. Zaved. Mat. 1975, no. 3, 3–10; English translation Soviet Math. (Iz. VUZ) 19(3) (1975), 1–6.
+
+- https://www.mathnet.ru/eng/ivm6330
+
+**F. Gesztesy, A. Pushnitski, B. Simon**, *On the Koplienko Spectral Shift Function. I. Basics*, Journal of Mathematical Physics, Analysis and Geometry 4 (2008), no. 1, 63–107; arXiv:0705.3629.
+
+- https://arxiv.org/abs/0705.3629
+- https://authors.library.caltech.edu/records/v88ga-mt387
+
+Used for:
+
+- the Powers--Størmer/Birman--Koplienko--Solomyak implication for positive bounded operators: a trace-class difference of squares gives a Hilbert--Schmidt difference of positive square roots, in the form used by PF-147;
+- identifying Hilbert--Schmidt self-adjoint perturbation pairs as the natural Koplienko second-order spectral-shift regime and `det_2` as the corresponding modified Fredholm determinant level;
+- the Gesztesy--Pushnitski--Simon counterexample showing that `S_2` perturbation alone does not force nontangential boundary values of the modified perturbation determinant.
+
+Relevant finding: PF-147; relevant local clue: `CLUE-shift-clone-sharp-schatten-threshold.md`.
+
+**Scope warning.** These are classical operator-theoretic results. They do not prove the open global prime/shift hypothesis `(Delta_+ + 1)^(-2) - (Delta + 1)^(-2) in S_1`, nor do they give boundary values, a scattering phase, resonances, or an RH mechanism for the prime flute. PF-147 is the project-specific conditional placement of that gate in the `S_2 \ S_1` first-resolvent hierarchy.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
