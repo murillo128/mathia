@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-cyclotomic-transversality-pairwise-rank
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: weil_inertia
 based_on:
@@ -46,8 +46,7 @@ Is the following stronger universal pairwise formula valid for all distinct posi
 \delta_N(m,n)\le\max\{\varphi(m),\varphi(n)\}
 \Longrightarrow
 \operatorname{rank}\bigl((U_m^{(N)})^*U_n^{(N)}\bigr)
-=
-\min\{\delta_N(m,n),\varphi(m),\varphi(n)\}.
+=\min\{\delta_N(m,n),\varphi(m),\varphi(n)\}.
 }
 \]
 
@@ -109,3 +108,12 @@ A counterexample to the `delta<=max(phi(m),phi(n))` rank formula kills the first
 The existing Lean artifact proves only the WI-081 boundary-rank upper bound and the small-boundary equality under `delta<=min(phi(m),phi(n))`; it does not prove the proposed `max` threshold, the full rectangular Vandermonde rank identity in the form needed here, the excess-transversality formula as a research invariant, or any cyclotomic classification of exceptional defects.
 
 The proposed strengthening is motivated by reconstructing the formal proof's separate injectivity/surjectivity steps, not by an accepted new theorem. The cyclotomic viewpoint is likewise an unvalidated change of representation. No claim is made that either statement is novel, useful for the global zero-proportion bound, or sufficient to escape the scalar obstructions already established in WI-082--WI-085.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-086-pairwise-ramanujan-rank-defect-starts-past-both-totient-dimensions]]
+
+The proposed `delta<=max(phi(m),phi(n))` strengthening is exact. In the residual regime the rank defect is exactly the excess intersection dimension `tau`, and orthogonality to one primitive-frequency block is exactly cyclotomic divisibility of the coefficient polynomial. The cyclotomic representation itself is only a normal form for the same subspace geometry, so any further saving requires source-specific or genuinely additional structure.
