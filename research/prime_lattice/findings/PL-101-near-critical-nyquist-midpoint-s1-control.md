@@ -19,7 +19,7 @@ y_(j,N)=A+(j-1/2)Delta/N,
 1<=j<=N.
 ```
 
-For any positive observation times `T_N`, define the dimensionless Nyquist ratio
+For positive observation times `T_N`, define
 
 ```text
 r_N=T_N Delta/(2 pi N).
@@ -55,7 +55,7 @@ boxed:
 ||A_N-B_N||_(S_1) ->0.
 ```
 
-More precisely, after the unitary rescaling `t=T_N x` to `L^2([0,1],dx)`, there is an absolute constant `C` such that, whenever `1/2<=r<=3/2`,
+More precisely, after the unitary rescaling `t=T_N x` to `L^2([0,1],dx)`, there is an absolute constant `C` such that for `1/2<=r<=3/2`,
 
 ```text
 boxed:
@@ -63,7 +63,7 @@ boxed:
  <=C[(r-1)_+/N + log(eN)/N^2].
 ```
 
-Combining this with the finite-rank lifting lemma of `PL-099` gives
+The finite-rank lifting lemma of `PL-099` then yields
 
 ```text
 ||A_(N,r)-B_(N,r)||_(S_1)
@@ -75,18 +75,16 @@ where
 
 ```text
 epsilon_(N,r)
- =1-sum_(j=1)^N beta_j(B_(N,r))
+ =1-sum_(j=1)^N beta_j(B_(N,r)).
 ```
 
-is the continuum prolate trace lying below the top `N` eigenvalues. The Landau--Widom concentration already used in `PL-098` implies
+The Landau--Widom prolate concentration already used in `PL-098` implies
 
 ```text
 r_N->1  =>  epsilon_(N,r_N)->0,
 ```
 
-so the trace-norm convergence follows.
-
-Consequently, for `r_N->1`, the ordered eigenvalue lists converge in `ell^1`, and for every fixed bounded `z>=0`,
+so trace-norm convergence follows. Consequently the ordered eigenvalue lists converge in `ell^1`, and for every fixed bounded `z>=0`,
 
 ```text
 log det(I+zA_N)-log det(I+zB_N)->0.
@@ -104,7 +102,7 @@ r_N=T_N Delta/(2 pi N)->1,
     -> rational-prime-specific or RH-sensitive evidence by itself.
 ```
 
-This does **not** prove the corresponding trace-norm convergence for the actual prime-power shell. It closes the matched-control question left explicitly open by `PL-100`: an arbitrary shrinking near-critical ratio does not create a new coarse spectral phase that is absent from non-arithmetic Fourier sampling.
+This does **not** prove the corresponding trace-norm convergence for the actual prime-power shell. It closes the matched-control question left explicitly open by `PL-100`: an arbitrary shrinking near-critical ratio does not create a new coarse spectral phase absent from non-arithmetic Fourier sampling.
 
 ## 1. Dimensionless midpoint and continuum kernels
 
@@ -130,10 +128,12 @@ K_(N,r)^(cont)(d)
  =sin(pi r N d)/(pi r N d).
 ```
 
-Every apparent singularity is understood by continuous extension. Their difference is therefore
+Every apparent singularity is understood by continuous extension. Hence
 
 ```text
 D_(N,r)(d)
+ =K_(N,r)^(mid)(d)-K_(N,r)^(cont)(d)
+
  =sin(pi r N d)/N
   [1/sin(pi r d)-1/(pi r d)].
 ```
@@ -145,9 +145,9 @@ The Hilbert--Schmidt norm is exactly
  =2 integral_0^1 (1-d)|D_(N,r)(d)|^2 dd.
 ```
 
-For fixed `r<1`, `PL-099` controlled this by staying uniformly away from the first pole of `1/sin(pi r d)`. At `r=1`, `PL-100` instead used exact Fourier orthogonality. The point here is that the numerator cancels the same apparent pole strongly enough to obtain one estimate uniform across a shrinking neighborhood of `r=1`.
+For fixed `r<1`, `PL-099` controlled this by staying uniformly away from the first pole of `1/sin(pi r d)`. At `r=1`, `PL-100` instead used exact Fourier orthogonality. Here the numerator cancels the same apparent pole strongly enough to give one estimate uniform across a shrinking neighborhood of `r=1`.
 
-## 2. The only near-critical alias singularity has vanishing weighted mass
+## 2. The first alias singularity has vanishing weighted mass
 
 Assume
 
@@ -209,35 +209,17 @@ The triangular Hilbert--Schmidt weight becomes
  =[pi(r-1)-nu]/(pi r).
 ```
 
-There are two cases.
-
-### Subcritical side `r<=1`
-
-Put `delta=pi(1-r)>=0`. The integration range stops at
-
-```text
-nu<=-delta,
-```
-
-and the triangular weight is bounded by `C|nu|`. Therefore the near-pole contribution is bounded by
+If `r<=1`, put `delta=pi(1-r)>=0`. The range stops at `nu<=-delta`, and the triangular weight is bounded by `C|nu|`. Therefore
 
 ```text
 C integral_delta^c
   u min(1,1/(N^2u^2)) du
- <=C log(eN)/N^2,
+ <=C log(eN)/N^2.
 ```
 
-uniformly in `delta`. This remains valid even when the endpoint approaches `pi` much faster than any prescribed function of `N`; there is no hidden rate condition on `1-r`.
+This is uniform in `delta`, so there is no hidden rate condition on `1-r`.
 
-### Supercritical side `r>=1`
-
-Put
-
-```text
-delta=pi(r-1)>=0.
-```
-
-Now the integration passes through `x=pi`. In the near-pole region the triangular weight is at most `C(delta+|nu|)`, so
+If `r>=1`, put `delta=pi(r-1)>=0`. The range crosses `x=pi`, and the weight is bounded by `C(delta+|nu|)`. Thus
 
 ```text
 integral
@@ -247,7 +229,7 @@ integral
  <=C[delta/N + log(eN)/N^2].
 ```
 
-The first term is the narrow first alias lobe: its height can be order one, but its width is `O(1/N)` and its triangular mass is proportional to the super-Nyquist excess `r-1`.
+The first term is the first alias lobe: its height may be order one, but its width is `O(1/N)` and its triangular mass is proportional to `r-1`.
 
 Combining the regular, zero, and first-alias regions gives
 
@@ -257,9 +239,9 @@ boxed:
  <=C[(r-1)_+/N + log(eN)/N^2].
 ```
 
-This estimate is the key distinction from a crude uniform kernel bound. Above Nyquist the midpoint kernel really does develop an order-one alias peak, so `sup|D|` does not tend to zero. What vanishes in a shrinking critical window is its **weighted Hilbert--Schmidt mass**.
+Above Nyquist, `sup|D|` need not tend to zero. What vanishes in a shrinking critical window is the **weighted Hilbert--Schmidt mass** of the alias peak.
 
-## 3. Prolate concentration upgrades the estimate to trace norm
+## 3. Prolate concentration upgrades to trace norm
 
 Let
 
@@ -267,14 +249,14 @@ Let
 beta_1>=beta_2>=...
 ```
 
-be the eigenvalues of the continuum comparator `B_(N,r)`, and define
+be the eigenvalues of `B_(N,r)` and define
 
 ```text
 epsilon_(N,r)
  =1-sum_(j=1)^N beta_j.
 ```
 
-The lifting lemma proved in `PL-099` applies to every positive trace-one `A,B` with `rank A<=N`:
+The lifting lemma of `PL-099` says that for positive trace-one `A,B` with `rank A<=N`,
 
 ```text
 ||A-B||_1
@@ -282,7 +264,7 @@ The lifting lemma proved in `PL-099` applies to every positive trace-one `A,B` w
    +2[1-sum_(j=1)^N beta_j(B)].
 ```
 
-Using the preceding Hilbert--Schmidt estimate gives
+Therefore
 
 ```text
 boxed:
@@ -291,45 +273,34 @@ boxed:
    +2 epsilon_(N,r).
 ```
 
-The continuum operator is the normalized prolate time-band limiting operator with time-bandwidth dimension
+The continuum operator is the normalized prolate time-band limiting operator with dimension
 
 ```text
 W=rN.
 ```
 
-`PL-098`, via the classical Landau--Pollak/Landau--Widom concentration theorem, established for every finite limiting ratio that
+`PL-098`, using Landau--Pollak/Landau--Widom concentration, established for finite limiting ratio
 
 ```text
 sum_(j=1)^N beta_j
  ->min(1,1/r_lim).
 ```
 
-In particular, whenever
+Hence `r_N->1` implies `epsilon_(N,r_N)->0`. Since also
 
 ```text
-r_N->1,
+(r_N-1)_+->0,
+log N/N->0,
 ```
 
-one has
-
-```text
-epsilon_(N,r_N)->0.
-```
-
-The first term in the trace-norm bound also tends to zero, because
-
-```text
-(r_N-1)_+->0
-```
-
-and `log N/N->0`. Therefore
+we obtain
 
 ```text
 boxed:
 ||A_(N,r_N)-B_(N,r_N)||_1->0.
 ```
 
-No scale such as
+No condition such as
 
 ```text
 |r_N-1| << 1/log N,
@@ -339,7 +310,7 @@ or |r_N-1| << 1/N
 
 is required.
 
-## 4. Ordered spectrum and positive determinants remain universal
+## 4. Spectral and determinant consequences
 
 For positive compact operators, the Lidskii--Mirsky eigenvalue inequality gives
 
@@ -350,13 +321,7 @@ sum_j
  ->0.
 ```
 
-For fixed `z>=0`, the function
-
-```text
-lambda ->log(1+z lambda)
-```
-
-is `z`-Lipschitz on the positive half-line, so
+For fixed `z>=0`, `lambda ->log(1+z lambda)` is `z`-Lipschitz, so
 
 ```text
 |log det(I+zA_N)-log det(I+zB_N)|
@@ -364,20 +329,20 @@ is `z`-Lipschitz on the positive half-line, so
  ->0.
 ```
 
-Thus neither the entire ordered positive spectrum nor the ordinary positive Fredholm determinant creates an arithmetic invariant merely by tuning the observation horizon into an arbitrarily thin neighborhood of the Nyquist ratio.
+Thus neither the ordered positive spectrum nor the ordinary positive Fredholm determinant becomes arithmetic merely by tuning the observation horizon into an arbitrarily thin neighborhood of Nyquist.
 
 ## 5. Prior-art and novelty audit
 
 Every structural ingredient belongs to classical sampling and time--frequency limiting theory.
 
 - Landau--Pollak identify the effective time-bandwidth dimension of the continuous concentration operator.
-- Landau--Widom give the asymptotic prolate eigenvalue distribution and logarithmic transition width used in `PL-098` and again here only through the already-established top-`N` trace concentration.
+- Landau--Widom give the asymptotic prolate eigenvalue distribution and logarithmic transition width used in `PL-098` and here only through the already-established top-`N` trace concentration.
 - Slepian's discrete prolate theory is the classical setting for equally spaced finite Fourier samples and the Nyquist transition used in `PL-099`--`PL-100`.
-- Kadec/nonharmonic-Fourier stability theory is nearby prior art for perturbations of exponential bases, but it is not load-bearing here: the present midpoint cloud changes the observation ratio rather than perturbing individual nodes, and the proof above comes directly from the exact geometric-sum kernel.
+- Kadec/nonharmonic-Fourier stability theory is nearby prior art for perturbations of exponential bases, but it is not load-bearing here: the present midpoint cloud changes the observation ratio rather than perturbing individual nodes, and the proof comes directly from the exact geometric-sum kernel.
 
-A targeted literature check around prolate transition width, near-Nyquist exponential sampling, discrete prolates, and trace/rank approximation found mature classical sampling/frame theory rather than a prime- or zeta-specific near-critical mechanism. No novelty is claimed for Nyquist aliasing, prolate concentration, the geometric-sum kernel, or Schatten interpolation estimates.
+A targeted literature check around prolate transition width, near-Nyquist exponential sampling, discrete prolates, and trace/rank approximation found mature classical sampling/frame theory rather than a prime- or zeta-specific near-critical mechanism. No novelty is claimed for Nyquist aliasing, prolate concentration, the geometric-sum kernel, or Schatten estimates.
 
-The durable line-specific information is the closure of the precise discrimination gap left by `PL-100`: **even an arbitrarily tuned shrinking window around the critical time-bandwidth ratio admits an explicit non-arithmetic `S_1` control.** Failure to find this exact normalization stated verbatim in the literature is not treated as a novelty claim.
+The durable line-specific information is the closure of the precise discrimination gap left by `PL-100`: **even an arbitrarily tuned shrinking window around the critical time-bandwidth ratio admits an explicit non-arithmetic `S_1` control.** Failure to find this exact normalization stated verbatim is not treated as a novelty claim.
 
 No `SOURCES.md` update is needed: the load-bearing Landau--Pollak, Landau--Widom, and Slepian anchors are already recorded or cited in `PL-098`--`PL-100`; this finding uses no new external theorem beyond that audited corpus.
 
@@ -391,7 +356,7 @@ The midpoint cloud depends only on
 
 It has no prime powers, multiplication law, von Mangoldt or Möbius coefficients, Euler product, functional equation, analytic continuation, or zeta zero divisor. It can equally be viewed as a matched generalized-frequency control.
 
-Nevertheless, whenever its macroscopic observation ratio satisfies
+Nevertheless, whenever
 
 ```text
 T_N Delta/(2 pi N)->1,
@@ -403,11 +368,11 @@ Therefore a candidate arithmetic signal at near-critical Nyquist scale must use 
 
 ## 7. Adversarial boundaries
 
-1. **This is a matched-control theorem, not a prime-power theorem.** No `S_1` convergence of the actual prime-power shell is asserted when `r_N->1`; that remains a question about its microscopic frequency discrepancy.
+1. **This is a matched-control theorem, not a prime-power theorem.** No `S_1` convergence of the actual prime-power shell is asserted when `r_N->1`; that remains a question about microscopic frequency discrepancy.
 2. **A fixed super-Nyquist ratio is different.** If `r_N->r>1`, `PL-098` gives a strictly positive universal rank floor `2(1-1/r)`. The present convergence uses essentially that the supercritical excess itself tends to zero.
-3. **Rates or renormalized excess can still carry information.** The result proves unscaled `S_1` convergence. A rescaling by `|r_N-1|`, by a microscopic spacing scale, or subtraction of a matched-control contribution is not classified here.
-4. **The weighted/von-Mangoldt critical comparator is not covered.** The theorem is for the unweighted trace-one covariance. The weighted Wiener--Hopf analogue would need its own trace-tail and kernel analysis.
-5. **Hard-edge observables remain outside the no-go.** Inverse eigenvalues, condition numbers, smallest singular values, target-relative Schur complements, or indefinite completed forms are not controlled by trace-norm convergence of the positive covariance.
+3. **Rates or renormalized excess can still carry information.** The result proves unscaled `S_1` convergence. Rescaling by `|r_N-1|`, by a microscopic spacing scale, or subtracting a matched-control contribution is not classified here.
+4. **The weighted/von-Mangoldt critical comparator is not covered.** The theorem is for the unweighted trace-one covariance. The weighted Wiener--Hopf analogue needs its own trace-tail and kernel analysis.
+5. **Hard-edge observables remain outside the no-go.** Inverse eigenvalues, condition numbers, smallest singular values, target-relative Schur complements, or indefinite completed forms are not controlled by positive-covariance trace-norm convergence.
 6. **No analytic continuation or zero information enters.** The proof is finite Fourier geometry plus classical prolate concentration. It neither extends the Euler product nor constrains the Riemann zero divisor.
 7. **No mathematical priority claim is made.** The estimate is stored because it materially closes a Prime-Lattice branch boundary, not because its sampling-theoretic ingredients are asserted to be new.
 
