@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-power-cancellation-aware-pretentiousness
 type: research-clue
-status: proposed
+status: resolved
 origin: adversarial
 target_line: mobius_cancellation
 based_on:
@@ -35,3 +35,12 @@ Kill the direction if every parameter range capable of transferring an exponent 
 ## Evidence boundary
 
 No stronger Möbius bound is established here. The cited paper proves general power-cancellation transfer results for strengthened notions of pretentiousness; it does not establish that their hypotheses give new unconditional control of `M(x)`. The proposed Möbius/Liouville specialization and non-circularity audit remain to be carried out by the owning Research Watch.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-003-mobius-liouville-square-convolution-threshold.md]]
+
+The Möbius/Liouville specialization does retain genuinely new prime-power information, but its exact convergence threshold is `beta>1/2`, matching the classical square-divisor convolution between the two functions. The natural Liouville comparator has no known fixed unconditional power-saving exponent below `1`, so the Jung–Lemke Oliver transfer theorem cannot bootstrap a stronger unconditional bound for `M(x)` from it. Any continuation must therefore supply a different independently controlled comparator or additional signed/multiscale structure rather than revisiting the same `mu`/`lambda` prime-power bridge.

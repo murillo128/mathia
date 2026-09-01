@@ -39,3 +39,21 @@ Role: explicit theorem statements used in `MC-002`. Section 3 defines the preten
 J. Barkley Rosser and Lowell Schoenfeld, *Approximate formulas for some functions of prime numbers*, Illinois Journal of Mathematics 6 (1962), no. 1, 64–94. DOI: https://doi.org/10.1215/ijm/1255631807.
 
 Role: classical explicit anchor for the prime reciprocal sum used in `MC-002`. In particular, Mertens' second theorem gives `sum_{p<=x} 1/p = log log x + B_1 + o(1)`, so every standard pretentious distance accumulated with weight `1/p` has only `O(log log x)` total prime mass at scale `x`.
+
+## MC-S7 — Jung and Lemke Oliver, pretentious detection of power cancellation
+
+Junehyuk Jung and Robert J. Lemke Oliver, *Pretentiously detecting power cancellation*, Mathematical Proceedings of the Cambridge Philosophical Society 154 (2013), no. 3, 481–498. DOI: https://doi.org/10.1017/S0305004112000655. arXiv: https://arxiv.org/abs/1111.1921.
+
+Role: primary source for `MC-003` and for the adversarial clue that motivated it. The paper defines the convolution quantity `H_beta(f,g)`, strong/total `beta`-pretentiousness, prime-power-sensitive distances, and transfer theorems preserving power cancellation. Theorem 1.1 gives `S_g(x) << x^max(alpha,beta)` when `S_f(x) << x^alpha` and the functions are strongly `beta`-pretentious; Theorems 1.2–1.5 analyze related distances and show explicitly why prime-only pretentiousness can fail to detect the desired power-cancellation scale.
+
+## MC-S8 — Humphries, Liouville summatory bounds and RH equivalence
+
+Peter Humphries, *The distribution of weighted sums of the Liouville function and Pólya's conjecture*, Journal of Number Theory 133 (2013), no. 2, 545–582. DOI: https://doi.org/10.1016/j.jnt.2012.08.011. arXiv: https://arxiv.org/abs/1108.1524.
+
+Role: Liouville comparison baseline for `MC-003`. The paper records the classical equivalence `RH iff L(x)=O_epsilon(x^(1/2+epsilon))` and, in Theorem 2.1 at weight zero, the unconditional Korobov–Vinogradov-shaped estimate `L(x) << x exp(-c (log x)^(3/5) (log log x)^(-1/5))`. Thus the natural Liouville comparator supplies no fixed unconditional exponent below `1` to feed into a power-cancellation transfer theorem.
+
+## MC-S9 — DLMF divisor identity for Liouville
+
+NIST Digital Library of Mathematical Functions, §27.6, *Divisor Sums*, equation 27.6.1; notes cite Apostol, *Introduction to Analytic Number Theory* (1976), Chapter 2. https://dlmf.nist.gov/27.6.
+
+Role: authoritative classical anchor for the square-divisor identity used in `MC-003`. DLMF records `sum_{d|n} lambda(d)=1` when `n` is a square and `0` otherwise. Möbius/Dirichlet inversion yields `lambda(n)=sum_{d^2|n} mu(n/d^2)`, from which the exact summatory square-convolution relation follows.
