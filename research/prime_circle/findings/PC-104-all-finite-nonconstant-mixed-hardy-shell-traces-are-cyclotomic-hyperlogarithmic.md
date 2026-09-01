@@ -197,7 +197,7 @@ Since `r/(r+1)<1`, the right-hand side is integrable on `[0,1]^{r+1}`. Different
 
 for every proper singular-edge subset of the cycle.
 
-This is also the exact power-counting boundary. If **every** edge is singular, the singular graph is the whole cycle; simultaneous scaling near the all-one corner has equal denominator and integration dimension and gives the familiar logarithmic criticality rather than the forest gain of one vertex per path component.
+This is also the exact power-counting boundary. If **every** edge is singular, the singular graph is the whole cycle; simultaneous scaling near the all-one corner has equal denominator and integration dimension and gives logarithmic criticality rather than the forest gain of one vertex per path component.
 
 ## 4. Dominated convergence identifies the ordinary trace with the improper cube
 
@@ -228,31 +228,29 @@ Hence the finite-section integrands in Section 2 are dominated, uniformly in `M`
 \lim_{M\to\infty}S_M
 =
 A\int_{[0,1]^k}
-\prod_{i=1}^k
-\frac{dx_1\cdots dx_k}
-{1-q_i x_ix_{i+1}},
+\left(
+\prod_{i=1}^k\frac1{1-q_i x_ix_{i+1}}
+\right)
+\,dx_1\cdots dx_k.
 }
 \]
 
-where the integral is an **ordinary absolutely convergent improper integral**.
-
-Under the operator-order hypothesis of Section 1, the left side is independently the ordinary trace of `W`. Thus
+The integral is an **ordinary absolutely convergent improper integral**. Under the operator-order hypothesis of Section 1, the left side is independently the ordinary trace of `W`. Thus
 
 \[
 \boxed{
 \operatorname{Tr}
 (\mathcal H_{\alpha_1}\cdots\mathcal H_{\alpha_k})
 =
-A\int_{[0,1]^k]
-\prod_{i=1}^k
-\frac{dx_1\cdots dx_k}
-{1-q_i x_ix_{i+1}}
+A\int_{[0,1]^k}
+\left(
+\prod_{i=1}^k\frac1{1-q_i x_ix_{i+1}}
+\right)
+\,dx_1\cdots dx_k.
 }
 \]
 
-with the obvious correction that the integration domain in the displayed formula is `[0,1]^k`.
-
-The bracket typo in the compact display is purely typographical; the exact formula is the preceding boxed identity with domain `[0,1]^k`. No Abel or other regularization is being introduced.
+No Abel or other regularization is being introduced.
 
 ## 5. Allowing `q_i=1` does not change the hyperlogarithmic reduction class
 
@@ -323,7 +321,7 @@ exact order is preserved by inversion. Therefore
 \operatorname{ord}(\alpha_j)=\operatorname{ord}(\alpha_{j+1}),
 \]
 
-contradicting `n_j!=n_{j+1}`. So **every** root word in the finite expansion of `W_n` has the trace-class core required above.
+contradicting `n_j!=n_{j+1}`. So **every** root word in the finite expansion of `W_{\mathbf n}` has the trace-class core required above.
 
 Since
 
@@ -356,9 +354,9 @@ The concrete word `Gamma_3 Gamma_2 Gamma_3`, which PC-084 used as the model repe
 
 ## 7. Constant-shell powers are a genuine boundary, not a missing case
 
-The conclusion must not be extended to `Gamma_n^k` by formal analogy. PC-075 gives a nontrivial absolutely continuous essential spectrum for `Gamma_n` when `n>2`; therefore a positive power is generally noncompact and cannot be trace class. There is no ordinary operator trace to classify by the argument above.
+The conclusion must not be extended to `Gamma_n^k` by formal analogy. PC-075 gives a nontrivial absolutely continuous essential spectrum for `Gamma_n` when `n>2`; spectral mapping therefore makes every positive power noncompact, so it cannot be trace class. There is no ordinary operator trace to classify by the argument above.
 
-At root level this obstruction is visible in reciprocal alternating words. A word may have no separated pair in its actual operator order even though a closing phase is nonsingular. Its scalar finite-section cube can still converge conditionally or even through the forest bound, but that does not make the operator trace class — exactly the distinction isolated in PC-086. For even alternating cycles one can also reach the full singular cycle, where the cube itself has logarithmic criticality.
+At root level this obstruction is visible in reciprocal alternating words. A word may have no separated pair in its actual operator order even though a closing phase is nonsingular. Its scalar finite-section cube can still converge through the forest bound, but that does not make the operator trace class — exactly the distinction isolated in PC-086. For even alternating cycles one can also reach the full singular cycle, where the cube itself has logarithmic criticality.
 
 Thus the correct finite boundary is sharp for the present method:
 
