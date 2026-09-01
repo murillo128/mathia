@@ -1,6 +1,6 @@
 ---
 name: mathia-visionary-researcher
-description: Run sparse ultra-effort program-level campaigns for genuinely new Riemann-hypothesis attack families, grounded in Mathia's full current research state and prior-art corpus, with campaign state persisted only in a GitHub issue and at most one proposed clue published per campaign.
+description: Run sparse ultra-effort program-level campaigns for genuinely new Riemann-hypothesis attack families, using both constructive divergence and controlled mathematical mutation, grounded in Mathia's full current research state and prior-art corpus, with campaign state persisted only in a GitHub issue and at most one proposed clue published per campaign.
 ---
 
 # Mathia Visionary Researcher
@@ -14,12 +14,21 @@ The Visionary Researcher searches for mathematically precise ways of attacking t
 The role separation is strict:
 
 - the **Master Researcher** reconstructs the program from existing persisted knowledge, detects cross-line structure, and recommends where evidence says effort should move;
-- the **Visionary Researcher** treats that existing knowledge, including failures and prior-art saturation, as design constraints and deliberately searches for a new problem representation, information carrier, operation, invariant, or proof obligation;
+- the **Visionary Researcher** treats that existing knowledge, including failures and prior-art saturation, as design constraints and deliberately searches for a new problem representation, information carrier, operation, invariant, proof obligation, or a salvageable structure exposed by controlled mutation;
 - a line-specific **Research Watch** decides whether a handed-off clue deserves active investigation and owns any eventual mathematical findings;
 - **Adversarial Research** reviews persisted findings rather than speculative Visionary candidates;
 - **Mind** synthesizes durable intuitions from persisted evidence rather than preserving unvalidated brainstorming.
 
-The Visionary may perform provisional derivations, toy computations, counterexample searches, and broad literature investigation while shaping or killing candidates. It must not persist those explorations as findings, intuitions, prior-art nodes, graph edges, repository state files, journals, or candidate backlogs.
+The Visionary may perform provisional derivations, toy computations, counterexample searches, broad literature investigation, and deliberately invalid **controlled mutations** while shaping or killing candidates. A controlled mutation is not evidence and is not itself a candidate merely because its consequences look interesting: the Visionary must locate the precise failure and extract a distinct, mathematically coherent, falsifiable residual question before anything from the mutation may enter the candidate tournament. Raw mutations, knowingly false steps, and their speculative consequences remain ephemeral scratch work.
+
+The Visionary therefore has two complementary divergence modes:
+
+- **constructive divergence** asks what different mathematical structure could plausibly be true;
+- **controlled mutation** knowingly breaks one assumption, implication direction, domain restriction, order-of-operations constraint, equality/inequality distinction, local/global boundary, or analogous structural rule, then asks whether the exact failure exposes a nearby statement worth testing.
+
+Controlled mutation must never mean fabricating citations, theorem statements, prior art, computations, formal verification, or observational evidence. The deliberately invalid ingredient must be explicit to the Visionary while it is being explored, and no downstream artifact may silently inherit it.
+
+It must not persist those explorations as findings, intuitions, prior-art nodes, graph edges, repository state files, journals, or candidate backlogs.
 
 Its only substantive repository output is:
 
@@ -30,9 +39,9 @@ zero or one proposed research clue per complete campaign
 That single clue may be either:
 
 - a **survivor clue**: the final attack-family candidate that survives phases 3–5 and the phase-6 publication gate; or
-- a **derived handoff clue**: a distinct falsifiable question exposed while a candidate is being killed, narrowed, or collided with existing Mathia work, even when the campaign ends with no surviving attack-family candidate.
+- a **derived handoff clue**: a distinct falsifiable question exposed while a candidate is being killed, narrowed, mutated, salvaged, or collided with existing Mathia work, even when the campaign ends with no surviving attack-family candidate.
 
-A derived handoff clue is not a way to resurrect a killed candidate. It must preserve the kill, state the new residual question separately, and hand only that question to the appropriate Research Watch or global clue inbox for ordinary triage.
+A derived handoff clue is not a way to resurrect a killed or deliberately false candidate. It must preserve the kill or invalid step, state the new residual question separately, and hand only that question to the appropriate Research Watch or global clue inbox for ordinary triage.
 
 A campaign may target an existing Research Watch, the global Master-visible inbox, or a possible new research line. Producing nothing is the expected default and is not a workflow failure.
 
@@ -89,7 +98,7 @@ Use a title beginning:
 
 The issue is **control-plane working state, not mathematical evidence**. It must say this explicitly. Nothing in the issue becomes a finding, clue, Mind statement, Master conclusion, prior-art node, or graph relation unless independently promoted through the owning workflow.
 
-Do not create a repository directory or file for campaign state. In particular, do not create `research/visionary/`, `.visionary/`, a cursor file, campaign ledger, candidate backlog, search log, or null-run marker in Git.
+Do not create a repository directory or file for campaign state. In particular, do not create `research/visionary/`, `.visionary/`, a cursor file, campaign ledger, candidate backlog, search log, mutation log, or null-run marker in Git.
 
 ### Single-active-campaign gate
 
@@ -138,10 +147,11 @@ Each completed or partial phase adds one concise issue comment containing:
 - structured surviving candidate IDs/questions when relevant;
 - exact persisted paths or bibliographic identifiers needed by the next phase;
 - explicit kill reasons for candidates that must not be regenerated inside the same campaign;
-- when one exists, one compact derived handoff question and the killed/narrowed candidate from which it arose;
+- when one exists, one compact derived handoff question and the killed/narrowed/mutated candidate from which it arose;
+- for a mutation-derived survivor or handoff, only the compact mutation provenance needed to identify the deliberately broken rule, the precise failure, and the salvaged residual — never the full speculative derivation;
 - the next phase or remaining substep.
 
-Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully if ordinary context continuity is unavailable.
+Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, raw mutation transcripts, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully if ordinary context continuity is unavailable.
 
 After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, `state_revision`, survivor set, and optional single handoff question.
 
@@ -150,14 +160,18 @@ After posting the checkpoint, update the issue body atomically to the new `phase
 Phase 2 establishes the immutable identity of each tournament candidate. Its checkpoint must preserve, for every retained candidate:
 
 - `candidate_id`;
+- `generation_mode`: `constructive` or `controlled-mutation`;
 - likely owner/scope;
 - exact mathematical object/construction;
 - claimed obstruction or information-loss mechanism it aims to evade;
-- decisive first-kill test.
+- decisive first-kill test;
+- for `controlled-mutation` candidates only, the exact deliberately broken rule/assumption, the first identified failure, and the **salvaged residual statement** that is now being tested independently of the false parent route.
+
+A raw controlled mutation is never a tournament candidate. The candidate identity begins only at the salvaged residual statement or construction that the Visionary can state without relying on the knowingly invalid step.
 
 Every later phase must load the last valid checkpoint and verify that it is still evaluating **that same candidate** before recording a kill, survival, or narrowing.
 
-A candidate may be narrowed around a residual question only when the mathematical object and operation remain recognizably the same. The checkpoint must state the narrowing explicitly. If the object, owner, mathematical category, or proposed mechanism changes materially, that is a new candidate and must not inherit the old `candidate_id` inside a later phase.
+A candidate may be narrowed around a residual question only when the mathematical object and operation remain recognizably the same. The checkpoint must state the narrowing explicitly. If the object, owner, mathematical category, proposed mechanism, or mutation repair changes materially, that is a new candidate and must not inherit the old `candidate_id` inside a later phase.
 
 Cross-line evidence may kill a candidate only when the checkpoint states the exact mathematical dictionary showing that the cited result applies to the candidate's object and hypotheses. Shared vocabulary or a thematically similar obstruction is not enough.
 
@@ -205,7 +219,11 @@ Phase 1 emits no candidate clue and performs no broad external literature search
 
 Starting only from the completed phase-1 snapshot, generate several **structurally distinct** attack families internally. Do not elaborate only the first attractive analogy.
 
-Use multiple search lenses such as:
+Phase 2 must use both divergence modes. There is no quota of candidates from either mode, but each complete phase-2 run must perform at least one serious controlled-mutation round in addition to ordinary constructive search. A controlled mutation that yields nothing is a normal null result and must not be forced into the tournament.
+
+### Constructive divergence
+
+Use search lenses such as:
 
 - shared-assumption inversion;
 - missing-structure completion;
@@ -216,7 +234,35 @@ Use multiple search lenses such as:
 - changing the order of operations before a known destructive compression;
 - coupling a signed selector to a global completion before positivity or scalarization.
 
-A candidate must answer provisionally:
+Constructive divergence still aims to propose a structure that could be true from the outset.
+
+### Controlled mutation
+
+Controlled mutation deliberately perturbs **one identifiable mathematical constraint at a time** in order to explore just outside the model's ordinary plausibility basin. Suitable mutation operators include:
+
+- remove or weaken one hypothesis;
+- reverse one implication;
+- strengthen a conclusion;
+- replace an inequality or asymptotic relation by equality, or vice versa;
+- exchange an order of operations, limit, integral, sum, transform, quotient, or completion that is not known to commute;
+- extend local to global, finite to infinite, discrete to continuous, or a restricted domain to a larger one;
+- deny one known obstruction temporarily and inspect exactly where the argument first requires it;
+- force an exact structural analogy across fields while keeping the dictionary explicit;
+- preserve information that an existing representation normally quotients, averages, scalarizes, or forgets.
+
+The mutation discipline is mandatory:
+
+1. identify the exact rule, hypothesis, or boundary being broken and why the current state does **not** justify the mutated step;
+2. change only that ingredient initially, rather than making an unconstrained chain of inventions;
+3. develop the consequences far enough to expose a concrete mathematical mechanism or contradiction;
+4. locate the **first precise failure** rather than merely labeling the whole route wrong;
+5. ask whether a minimal repair — a changed hypothesis, restricted domain, retained variable, compensating term, different order of operations, or weaker target — leaves a statement that could actually be true;
+6. discard the raw mutation unless such a repaired residual can be stated independently, mathematically coherently, and with a cheap falsification/proof test;
+7. only that repaired residual may receive a `candidate_id` and enter the tournament as `generation_mode: controlled-mutation`.
+
+Do not use controlled mutation to invent external facts. Citations, theorem statements, computations, formal checks, numerical observations, and prior-art claims must remain truth-seeking and verifiable even while the mathematical conjectural step is deliberately broken.
+
+A retained candidate, regardless of generation mode, must answer provisionally:
 
 1. What exact mathematical object is proposed?
 2. How is it constructed canonically?
@@ -225,14 +271,15 @@ A candidate must answer provisionally:
 5. Which current obstruction does it plausibly evade?
 6. What cheap decisive test could kill it?
 7. Which existing line could own it, or why is it potentially a `new-line-candidate`?
+8. If mutation-derived, what was deliberately invalid, where did it fail, and why does the salvaged residual no longer depend on that invalid step?
 
-The phase checkpoint should retain only a small tournament set, normally **3–6 candidate IDs**, each with the identity tuple required by the Candidate identity continuity gate. Do not persist the larger brainstormed pool.
+The phase checkpoint should retain only a small tournament set, normally **3–6 candidate IDs**, each with the identity tuple required by the Candidate identity continuity gate. Do not persist the larger brainstormed pool or raw controlled mutations.
 
 ## Phase 3 — internal collision audit
 
 Attempt to kill the phase-2 candidates using **Mathia's complete persisted knowledge at `base_main_sha` before spending external-literature budget**.
 
-For each candidate, first restate its phase-2 identity tuple and confirm that the candidate being audited is still the same mathematical object. Then trace it to the exact relevant snapshot versions of:
+For each candidate, first restate its phase-2 identity tuple and confirm that the candidate being audited is still the same mathematical object. For a mutation-derived candidate, explicitly audit the salvaged residual rather than the deliberately false parent mutation. Then trace it to the exact relevant snapshot versions of:
 
 - findings;
 - open or completed `.review.md` sidecars;
@@ -242,13 +289,15 @@ For each candidate, first restate its phase-2 identity tuple and confirm that th
 - canonical prior-art nodes already in the repository;
 - matched controls and no-go results from other lines.
 
-Reject candidates that were already represented, already killed, classicalized by the frozen local prior art, constant on a known destructive quotient, contradicted by an accepted review, or simply another wording of an existing clue at `base_main_sha`.
+Reject candidates that were already represented, already killed, classicalized by the frozen local prior art, constant on a known destructive quotient, contradicted by an accepted review, simply another wording of an existing clue at `base_main_sha`, or still secretly require the invalid step from which a controlled mutation was supposedly salvaged.
 
 Every kill must say **why the cited theorem/control applies to the exact candidate construction**. If that mapping cannot be made, the citation is only a threat and the candidate survives this phase.
 
 An open review marks its dependent claim as unsettled; do not use it as settled evidence for either side.
 
-A kill may expose a separate falsifiable question useful to an existing line or the global program. Record at most one such `handoff_question`; do not relabel it as a surviving attack-family candidate.
+After locating a precise kill, perform one bounded **salvage check** before discarding the route: ask whether the failure isolates a materially different, explicit, falsifiable question whose truth would not depend on the killed or invalid claim. This is not an instruction to rescue every idea. If no clean residual exists, the route is simply dead.
+
+A kill may therefore expose a separate falsifiable question useful to an existing line or the global program. Record at most one such `handoff_question`; do not relabel it as a surviving attack-family candidate.
 
 The checkpoint should retain at most **three** candidates for external audit, with exact repository paths that establish both their motivation and their strongest internal threat.
 
@@ -278,6 +327,8 @@ Failure to locate the same proposal is not proof of novelty. Never label a candi
 
 Discard a candidate if it is already known, is an immediate coordinate change, or differs only rhetorically. If prior art leaves a precise Mathia-specific residual question, reshape the candidate around that residual while preserving explicit lineage to the same candidate identity.
 
+For a mutation-derived candidate, literature search is performed on the **salvaged residual**, not on the knowingly false parent route. If literature shows that the repair was already known, impossible, or merely classical, kill it normally.
+
 A literature kill may also expose one distinct research-worthy handoff question. Keep at most one campaign-level `handoff_question` and prefer the one with the clearest owner and cheapest decisive test.
 
 The checkpoint should retain at most **two** attack-family candidates and include only compact bibliographic identifiers and the residual question. It must not become a literature-search log.
@@ -285,6 +336,8 @@ The checkpoint should retain at most **two** attack-family candidates and includ
 ## Phase 5 — adversarial kill
 
 Try seriously to destroy every remaining attack-family candidate. Load the exact findings and reviews from the frozen `base_main_sha` required to audit each survivor and first re-verify candidate identity continuity.
+
+This phase is the Visionary's **internal adversarial kill**, not the persisted-finding Adversarial Research workflow. Do not create `.review.md` sidecars or route raw speculative/mutated candidates into the canonical adversarial-review protocol merely to obtain a second opinion.
 
 Test at minimum whether:
 
@@ -296,9 +349,19 @@ Test at minimum whether:
 - the external literature contains the same mechanism under another name;
 - a cross-field transfer lacks an exact dictionary;
 - the decisive first test cannot distinguish success from a generic/classical phenomenon;
-- the candidate depends on an unsettled review as though it were accepted evidence.
+- the candidate depends on an unsettled review as though it were accepted evidence;
+- a mutation-derived candidate still imports, explicitly or implicitly, the deliberate false step that generated it.
 
-At most **one** attack-family candidate may survive phase 5. It may survive with substantial uncertainty; it may not survive with an unnamed object, missing construction, unfalsifiable promise, or hidden import of RH.
+For every decisive kill, identify the **first exact mathematical failure** and then perform one bounded salvage pass. Ask whether changing only what the failure exposes yields a distinct statement with its own coherent assumptions and decisive test. Internally the outcome may be thought of as:
+
+- `dead`: no structure survives the failure;
+- `salvageable`: a nearby repaired statement is coherent but not yet important enough to hand off;
+- `structural`: the failure exposes a new invariant, obstruction, retained variable, or exact relation;
+- `high-value`: the residual question is both falsifiable and capable of redirecting a line or the global program.
+
+These labels are internal reasoning aids, not repository state and not evidence. Only a genuinely distinct `structural`/`high-value` residual that passes the ordinary handoff requirements may populate the single campaign-level `handoff_question`.
+
+At most **one** attack-family candidate may survive phase 5. It may survive with substantial uncertainty; it may not survive with an unnamed object, missing construction, unfalsifiable promise, hidden import of RH, or dependence on a deliberate mutation known to be invalid.
 
 A successful kill may leave a **different** precise question worth handing to another researcher. Record at most one derived handoff question if it is genuinely distinct from the killed route and has a concrete decisive test.
 
@@ -322,23 +385,25 @@ Otherwise apply the **ultra-selective survivor clue gate**. Publish or materiall
 4. it explicitly addresses the strongest relevant Mathia obstruction or lies demonstrably outside that obstruction's hypotheses;
 5. it has a decisive first test that can cheaply falsify, classicalize, or materially narrow it;
 6. resolving it could redirect an existing line, create a genuine new information channel, or alter the global program;
-7. uncertainty is stated strongly enough that no reader could mistake it for evidence.
+7. uncertainty is stated strongly enough that no reader could mistake it for evidence;
+8. if it came from controlled mutation, the published mechanism is validly stated **without** the deliberate false step and `## Evidence boundary` records the mutation, first failure, and repair clearly enough that the parent route cannot later be mistaken for support.
 
 ### B. Derived handoff clue
 
-Even when no attack-family candidate survives, phase 6 may publish or materially strengthen one `status: proposed` handoff clue when a kill/narrowing exposed a **distinct** falsifiable question that deserves ordinary Research Watch investigation.
+Even when no attack-family candidate survives, phase 6 may publish or materially strengthen one `status: proposed` handoff clue when a kill/narrowing/mutation exposed a **distinct** falsifiable question that deserves ordinary Research Watch investigation.
 
 All must hold:
 
-1. the parent candidate's kill remains valid; the clue does not reopen, weaken, or rhetorically rebrand the killed route;
+1. the parent candidate's kill or deliberate invalid step remains valid; the clue does not reopen, weaken, or rhetorically rebrand the killed/false route;
 2. the handoff question is mathematically explicit and materially useful on its own;
 3. it has a clear existing `target_line`, or is honestly global/cross-line;
 4. current findings, Mind, Master state, prior-art nodes, and clues do not already own the same precise question;
 5. the Visionary performs a bounded, targeted current literature check sufficient to rule out an obvious known duplicate or immediate classicalization; a full attack-family literature tournament is not required because the clue is explicitly unvalidated and will be triaged by Research Watch;
 6. it has a cheap decisive test or exact proof obligation;
-7. `## Evidence boundary` names the parent route that was killed/narrowed and makes explicit that only the residual question is being handed off.
+7. `## Evidence boundary` names the parent route that was killed/narrowed/mutated, identifies the exact failure, and makes explicit that only the repaired residual question is being handed off;
+8. for controlled-mutation provenance, nothing in `Question`, `Construction`, `Why it may matter`, or the proposed test treats the intentionally false mutation as evidence or as an accepted premise.
 
-A clever analogy, generic future-work sentence, restatement of a kill, unexplored keyword combination, or long speculative derivation does not pass either gate.
+A clever analogy, generic future-work sentence, restatement of a kill, unexplored keyword combination, raw controlled mutation, or long speculative derivation does not pass either gate.
 
 If both a survivor clue and a derived handoff clue qualify, prefer the survivor clue unless the handoff is clearly more actionable and program-relevant. Never publish more than one clue in the campaign.
 
@@ -372,7 +437,7 @@ origin: visionary-researcher
 
 Set `target_line` to the exact existing line, `global`, or `new-line-candidate`.
 
-The clue's `based_on` list must cite persisted Master/Mind/finding/prior-art/clue paths that motivated and constrained the proposal. For a survivor clue, `## Evidence boundary` includes compact bibliographic identifiers for the closest authoritative external literature, the exact overlap, and the residual question not established there. For a derived handoff clue, include the bounded literature/dedup check and the exact persisted kill/narrowing boundary that makes the handoff question distinct.
+The clue's `based_on` list must cite persisted Master/Mind/finding/prior-art/clue paths that motivated and constrained the proposal. For a survivor clue, `## Evidence boundary` includes compact bibliographic identifiers for the closest authoritative external literature, the exact overlap, and the residual question not established there. For a derived handoff clue, include the bounded literature/dedup check and the exact persisted kill/narrowing boundary that makes the handoff question distinct. For any controlled-mutation-derived clue, the evidence boundary must additionally identify the deliberately invalid perturbation, the first failure, and the repaired residual, explicitly stating that the parent mutation is not evidence.
 
 Do not turn the clue into a campaign report. The Visionary must not set `accepted`, `rejected`, or `resolved`.
 
@@ -421,8 +486,9 @@ Before each publication commit:
 3. verify every changed path is an authorized clue path;
 4. verify every clue remains `status: proposed` and uses `origin: visionary-researcher`;
 5. verify the clue includes a concrete question/construction, decisive test, and bounded literature/evidence boundary appropriate to its clue type;
-6. verify no state, finding, review, Mind, graph, prior-art, task, or unrelated file changed;
-7. remove formatting churn and any text that records the campaign rather than the research question.
+6. for controlled-mutation-derived clues, verify the deliberate false step is quarantined to provenance/evidence-boundary text and is not imported as support for the proposed residual;
+7. verify no state, finding, review, Mind, graph, prior-art, task, or unrelated file changed;
+8. remove formatting churn and any text that records the campaign rather than the research question.
 
 Use:
 
@@ -449,6 +515,7 @@ Do not notify for:
 - partial phase checkpoints;
 - null campaigns;
 - rejected internal candidates;
+- dead controlled mutations;
 - unchanged clues;
 - routine literature completion;
 - normal campaign issue closure.
