@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 864892d112c83929158a3a99aaf07ab962e5a288
+source_revision: 36680f696a56cbdae2904b252eada635976bebe7
 derived: true
 ---
 
@@ -26,7 +26,7 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 **Reading:** the v1 state masses are unchanged because the current source delta narrows already-visited territories rather than changing their mutually exclusive leaf states. Those coarse percentages do **not** by themselves establish low saturation: repeated source-backed closures can occur inside a territory that remains `open` or `active`. Marginal frontier episodes are therefore tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]].
 
-The current source revision materially narrows five RH-facing frontiers while expanding the transversal fidelity theory. Prime Circle closes repeated-shell finite cotangent networks, fixed-support infinite depth and the canonical complete growing tube, while classicalizing the cubic Hardy cycle and classifying the general cycle incidence fibers. Prime Flute identifies sharp `L^1` angular/radial interface currencies and opens a second wave route through squared-resolvent trace class. Prime Lattice routes the formerly unresolved mean-gap support bulk to Poisson local statistics under its stated Hardy--Littlewood hierarchy, closes sublinear extreme rigidity through bounded prime clusters, and shows ordinary prime-power bulk loses higher-depth information by vanishing rank. Weil Inertia pushes the cross-conductor splice through redundant-refinement, four-prime-rectangle, slope-slice and multivariate-polynomial theorem boundaries. Weil Positivity closes positive basepoint averaging and the canonical Möbius/coinvariant repairs while retaining the pointed finite-place survivor. Arithmetic Fidelity now distinguishes finite-test collision from faithful infinite determining families and classifies exactly what separate marginals forget relative to joint observables.
+The current source revision materially sharpens every active line without adding a new RH macrofamily. Arithmetic Fidelity extends exact support recovery into collective stability and distance-to-collision margins. Prime Circle classicalizes the full ordinary finite Hardy trace sector and several canonical conductor/two-scale escapes to cyclotomic, Hilbert/Carleman and Ramanujan controls. Prime Flute shows that resolvent-power and local heat regularizations do not create independent spectral information before the still-open global clone assembly and nonlocal value test. Prime Lattice extends ordinary Gram classicalization through growing-depth `S_2` universality and a sharp prolate/Nyquist `S_1` boundary. Weil Inertia closes positive scalar support/energy exits while isolating a signed finite-window Ramanujan operator as a genuinely source-sensitive remaining interface. Weil Positivity closes fixed positive mixtures and fixed refinement-coherent auxiliary couplings even for infinite unbounded global sectors, leaving only genuinely singular/refinement-dependent/higher-cohomological or nonseparable finite--archimedean routes.
 
 The central coverage remains robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
 

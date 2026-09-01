@@ -11,29 +11,25 @@ derived: true
 
 # C3 — Coupled selector/completion/sign theorem
 
-The live Weil-positivity frontier is to couple an increasingly strong positive finite-place geometry to the archimedean/polar completion without changing the exact coefficients or importing the sign.
+The live Weil-positivity frontier is to couple an exact positive finite-place package to the archimedean/polar sector without losing the coefficients, hiding Möbius cancellation, or importing the sign.
 
 ## Evidence
 
-- [[research/weil_positivity/findings/WP-043-cycle-laplacian-shell-logdet-recovers-mangoldt-but-spectral-positivity-is-the-wrong-pairing|WP-043]]
-- [[research/weil_positivity/findings/WP-048-anchored-reflection-and-cycle-extremum-select-q2-riemann-gamma-channel|WP-048]]
-- [[research/weil_positivity/findings/WP-061-q2-hardy-gram-is-positive-but-full-root-channel-is-indefinite|WP-061]]
-- [[research/weil_positivity/findings/WP-064-bounded-self-adjoint-metric-repairs-force-the-polar-sign|WP-064]]
-- [[research/weil_positivity/findings/WP-065-unbounded-self-adjoint-metric-products-still-force-polar-sign|WP-065]]
-- [[research/weil_positivity/findings/WP-068-full-root-hardy-differences-make-mangoldt-anchor-functional-unbounded|WP-068]]
-- [[research/weil_positivity/findings/WP-071-rotation-invariant-hilbert-completions-cannot-bound-mangoldt-boundary-anchor|WP-071]]
-- [[research/weil_positivity/findings/WP-072-base-point-local-dirichlet-energy-regularizes-mangoldt-anchor-but-is-not-global-weil-form|WP-072]]
-- [[research/weil_positivity/findings/WP-073-pointed-dirichlet-root-cover-isometry-forces-critical-half-weight|WP-073]]
 - [[research/weil_positivity/findings/WP-074-pointed-cover-inverse-scale-defect-has-positive-log-degree-trace-but-poisson-weil-lift-is-indefinite|WP-074]]
-- [[research/weil_positivity/findings/WP-075-positive-shifted-resolvent-cover-defects-mix-log-degree-with-digamma-but-exact-finite-weights-force-zero-shift|WP-075]]
-- [[research/weil_positivity/findings/WP-077-semigroup-invariant-basepoint-averaging-is-pointed-plus-haar-and-haar-kills-cover-defects|WP-077]]
-- [[research/weil_positivity/findings/WP-078-mobius-primitive-of-positive-cover-cocycle-is-indefinite-off-prime-powers|WP-078]]
-- [[research/weil_positivity/findings/WP-079-cover-coinvariant-quotient-collapses-to-trace|WP-079]]
 - [[research/weil_positivity/findings/WP-080-full-trace-ideal-cover-coinvariants-collapse-to-zero|WP-080]]
+- [[research/weil_positivity/findings/WP-081-fixed-shift-cover-coboundaries-form-a-positive-half-line-with-the-same-log-degree-class|WP-081]]
+- [[research/weil_positivity/findings/WP-083-homogeneous-cover-jensen-positivity-is-flat-and-mangoldt-support-is-singular-endpoint|WP-083]]
+- [[research/weil_positivity/findings/WP-084-fixed-shift-positive-cover-family-has-singular-fisher-boundary-at-covariant-origin|WP-084]]
+- [[research/weil_positivity/findings/WP-085-cover-range-principal-angle-defect-is-positive-but-log-degree-response-is-reference-relative|WP-085]]
+- [[research/weil_positivity/findings/WP-088-finite-multireference-cover-projection-spectral-readouts-are-affine-on-common-multiple-towers|WP-088]]
+- [[research/weil_positivity/findings/WP-089-cover-coherent-finite-global-couplings-freeze-to-one-collective-block|WP-089]]
+- [[research/weil_positivity/findings/WP-090-fixed-positive-shift-mixtures-cannot-cancel-digamma-contamination|WP-090]]
+- [[research/weil_positivity/findings/WP-091-schiffer-finite-certificate-is-generic-compact-positivity-not-pole-structure|WP-091]]
+- [[research/weil_positivity/findings/WP-092-refinement-coherent-fixed-infinite-auxiliary-sectors-still-freeze-to-one-collective-block|WP-092]]
 - [[research/weil_positivity/mind/RESEARCH_LINES|Weil-positivity synthesis]]
 
-The pointed Dirichlet/root-cover construction remains a genuine positive finite-place survivor: it makes the Mangoldt anchor continuous, forces the critical half-weight, and produces positive `log n` scale defects. The problem is no longer recovering the finite arithmetic coefficients.
+The pointed Dirichlet/root-cover construction remains a genuine positive finite-place survivor: it makes the Mangoldt anchor continuous, forces the critical half-weight and produces positive `log n` scale defects. The problem is no longer recovering the finite arithmetic coefficient.
 
-The obvious ways to globalize or support-select that survivor are now substantially narrower. Semigroup-compatible positive averaging of boundary basepoints gives only the pointed form plus Haar, and the Haar branch kills the cover defects. Möbius inversion of the positive cover cocycle recovers trace `Lambda(n)` and stays positive exactly on prime powers, but becomes indefinite on mixed composites. Quotienting away the mixed-prime trace-zero geometry by canonical cover coinvariants either reduces the diagonal theory to the ordinary trace or collapses the full trace/Schatten/compact ideal entirely.
+Regular positive globalizations are increasingly rigid. Scale-covariant Jensen/Fisher families either collapse to bounded/dyadic response or place exact Mangoldt behavior at a singular endpoint. Fixed two-projection and multireference constructions are reference-relative or affine on common-multiple towers. Refinement-coherent coupling to a fixed auxiliary sector freezes to one collective block not only in finite dimension but for an arbitrary fixed Hilbert sector with unbounded dynamics, so the standard relative spectral response remains tower-independent. Fixed positive shifted-resolvent mixtures cannot cancel the digamma contamination while retaining exact `log n` data. The finite Schiffer certificate also classicalizes as generic compact positivity rather than a hidden pole/sign mechanism.
 
-The territory remains `open` for a genuinely richer finite--archimedean/polar sign construction: higher/cohomological coefficient modules, selective geometry-forced quotients, nonlinear support mechanisms, or another nonseparable coupling introduced before positivity remain outside the closed classes. Any survivor must preserve the exact finite Mangoldt/half-weight data and produce the required global sign without merely hiding Möbius cancellation or discarding all operator geometry.
+The territory remains `open` for genuinely different categories: singular or domain-changing couplings, refinement-dependent global sectors, infinite/nonperiodic structures whose auxiliary data transform with the tower, higher-cohomological/twisted coefficient modules, or another nonseparable finite--archimedean operation introduced before separated positivity. Any survivor must retain the exact finite selector and prove the global Weil sign independently.

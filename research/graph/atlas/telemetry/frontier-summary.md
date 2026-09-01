@@ -26,42 +26,47 @@ A conservative retrospective backfill covers only high-confidence episodes recon
 | `weil_positivity` | 4 | 1 | 0 | 3 |
 | **Total** | **14** | **3** | **2** | **9** |
 
-For this **retrospective partial sample only**:
-
-- `FrontierFertilityEpisodes = 3 / 14 = 21.4%`
-- `BarrierRate = 9 / 14 = 64.3%`
-- `PriorArtCollisionRate = 2 / 14 = 14.3%`
-- `InternalDuplicateRate = 0 / 14 = 0%`
-
-No `new-territory`, `known-barrier`, `internal-duplicate`, or `insufficient-evidence` episode was persisted in this deliberately small backfill. That absence is not evidence that those outcomes did not occur historically.
+For this **retrospective partial sample only**, `FrontierFertilityEpisodes = 21.4%`, `BarrierRate = 64.3%`, `PriorArtCollisionRate = 14.3%`, and `InternalDuplicateRate = 0%`. The absence of other classes is not evidence that they did not occur historically.
 
 ## Prospective series
 
-The clean prospective series starts strictly **after** `prospective_source_cutoff`. Source mutations at or before that revision are never relabeled as prospective merely because a later Graph Curator pass first sees them. Any gap between the conservative retrospective seed and the cutoff remains unclassified unless a later high-confidence backfill adds those outcomes explicitly as `mode: retrospective`.
+The clean prospective series starts strictly **after** `prospective_source_cutoff`. Source mutations at or before that revision are never relabeled as prospective merely because a later Graph Curator pass first sees them.
 
-The first prospective curator window, from the previous material curator state through source revision `864892d112c83929158a3a99aaf07ab962e5a288`, contains the following classifiable episodes:
+The newest source window, `864892d112c83929158a3a99aaf07ab962e5a288` → `36680f696a56cbdae2904b252eada635976bebe7`, adds:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 2 | 2 | 0 | 0 |
-| `prime_circle` | 2 | 0 | 1 | 1 |
-| `prime_flute` | 2 | 2 | 0 | 0 |
-| `prime_lattice` | 3 | 0 | 1 | 2 |
-| `weil_inertia` | 2 | 0 | 0 | 2 |
-| `weil_positivity` | 2 | 0 | 0 | 2 |
-| **Total** | **13** | **4** | **2** | **7** |
+| `arithmetic_fidelity` | 3 | 3 | 0 | 0 |
+| `prime_circle` | 3 | 0 | 2 | 1 |
+| `prime_flute` | 1 | 0 | 0 | 1 |
+| `prime_lattice` | 1 | 0 | 0 | 1 |
+| `weil_inertia` | 2 | 1 | 0 | 1 |
+| `weil_positivity` | 3 | 0 | 1 | 2 |
+| **Total** | **13** | **4** | **3** | **6** |
 
-For this **prospective sample**:
+Across the complete prospective series so far:
 
-- `FrontierFertilityEpisodes = 4 / 13 = 30.8%`
-- `BarrierRate = 7 / 13 = 53.8%`
-- `PriorArtCollisionRate = 2 / 13 = 15.4%`
-- `InternalDuplicateRate = 0 / 13 = 0%`
+| Line | Episodes | Viable extension | Known prior art | New barrier |
+| --- | ---: | ---: | ---: | ---: |
+| `arithmetic_fidelity` | 5 | 5 | 0 | 0 |
+| `prime_circle` | 5 | 0 | 3 | 2 |
+| `prime_flute` | 3 | 2 | 0 | 1 |
+| `prime_lattice` | 4 | 0 | 1 | 3 |
+| `weil_inertia` | 4 | 1 | 0 | 3 |
+| `weil_positivity` | 5 | 0 | 1 | 4 |
+| **Total** | **26** | **8** | **5** | **13** |
+
+Every line currently has fewer than 10 prospective episodes, so the line rows above are already within the preferred line-local window. For the global trend, use the latest **20** classifiable prospective episodes rather than the whole accumulated history:
+
+- `FrontierFertilityEpisodes = 4 / 20 = 20.0%`
+- `BarrierRate = 12 / 20 = 60.0%`
+- `PriorArtCollisionRate = 4 / 20 = 20.0%`
+- `InternalDuplicateRate = 0 / 20 = 0%`
 - `InsufficientEvidence = 0`
 
-The prospective unit is deliberately coarser than a finding. For example, PL-083--PL-085 are one critical-bulk episode, PF-143--PF-145 are one collar-interface episode, and WP-078--WP-080 are one Möbius/coinvariant repair episode. This prevents activity volume from masquerading as fertility.
+The episode unit remains deliberately coarser than a finding. AF-034--AF-038 are one interaction-support episode; PC-108--PC-114 are one conductor/two-scale classicalization episode; PF-147--PF-155 are one resolvent/regularization boundary episode; PL-088--PL-099 are one growing-depth sampling episode; and WP-085--WP-092 are one fixed-reference/coherent-globalization barrier episode. This prevents activity volume from masquerading as fertility.
 
-The current window is **barrier-heavy but mixed**: Arithmetic Fidelity and Prime Flute account for all four viable extensions, while Prime Circle, Prime Lattice, Weil Inertia and Weil Positivity mostly narrow or classicalize already-live routes. With only 13 prospective classifiable episodes, this is an early signal rather than a stable portfolio trend.
+The prospective signal is now **persistently barrier-heavy** in the bounded global window. Arithmetic Fidelity still extends its transversal theory, and Weil Inertia gains one concrete signed finite-window operator interface, while the four other RH-facing lines in this newest window mainly close or classicalize natural variants. This is evidence about marginal search behavior inside the current known atlas, not evidence that RH lacks undiscovered representations or that a line should be stopped.
 
 ## Interpretation boundary
 

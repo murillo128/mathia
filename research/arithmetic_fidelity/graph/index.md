@@ -18,6 +18,8 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/arithmetic_fidelity/mind/intuition/MI-003-fidelity-endpoints-are-category-dependent|MI-003 — category-dependent fidelity endpoints]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-004-prime-specificity-depends-on-the-retained-analytic-layer|MI-004 — prime specificity depends on the retained analytic layer]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-005-test-family-fidelity-has-scale-and-dimension-gates|MI-005 — test-family fidelity has scale and dimension gates]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-006-interaction-support-governs-marginal-fidelity|MI-006 — interaction support governs marginal fidelity]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-007-stable-fidelity-is-distance-from-collision|MI-007 — stable fidelity is distance from collision]]
 - [[research/arithmetic_fidelity/mind/RESEARCH_LINES|Arithmetic Fidelity research lines]]
 
 ## Derived relation nodes
@@ -27,6 +29,8 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/arithmetic_fidelity/graph/relations/relational-data-restores-lost-structure|Relational data can restore structure lost by scalar compression]]
 - [[research/arithmetic_fidelity/graph/relations/category-dependent-fidelity-endpoints|Category-dependent fidelity endpoints]]
 - [[research/arithmetic_fidelity/graph/relations/finite-weil-test-fidelity-filtration|Weil-test scale and resolution fidelity]]
+- [[research/arithmetic_fidelity/graph/relations/interaction-support-and-collective-stability|Interaction support and collective stability]]
+- [[research/arithmetic_fidelity/graph/relations/stable-fidelity-distance-to-collision|Stable fidelity as distance to collision]]
 
 ## Curation boundary
 

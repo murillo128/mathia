@@ -17,6 +17,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/weil_positivity/mind/intuition/MI-002-operator-category-is-a-hard-compatibility-gate|MI-002 — operator category compatibility]]
 - [[research/weil_positivity/mind/intuition/MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking|MI-003 — selector versus positive bulk]]
 - [[research/weil_positivity/mind/intuition/MI-004-mangoldt-anchor-is-unbounded-in-positive-hardy-norm|MI-004 — Mangoldt anchor is unbounded in the positive Hardy norm]]
+- [[research/weil_positivity/mind/intuition/MI-005-cover-coinvariants-classicalize-or-collapse|MI-005 — cover coinvariants classicalize or collapse]]
 - [[research/weil_positivity/mind/RESEARCH_LINES|Weil Positivity research lines]]
 
 ## Derived relation nodes
