@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 36680f696a56cbdae2904b252eada635976bebe7
+source_revision: fab7348c11d2e561a59e64ac690c711bd46a25f4
 derived: true
 ---
 
@@ -15,20 +15,20 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 | Metric | v1 current |
 | --- | ---: |
-| Atlas coverage | **69.5%** |
-| Live frontier | **41.8%** |
+| Atlas coverage | **74.5%** |
+| Live frontier | **46.8%** |
 | Hard-pruned | **11.2%** |
 | Soft-pruned | **3.0%** |
 | Reproduced / prior-art redirect | **13.5%** |
-| Unvisited | **30.5%** |
+| Unvisited | **25.5%** |
 | Macro-families | **10** |
 | Leaf territories | **37** |
 
-**Reading:** the v1 state masses are unchanged because the current source delta narrows already-visited territories rather than changing their mutually exclusive leaf states. Those coarse percentages do **not** by themselves establish low saturation: repeated source-backed closures can occur inside a territory that remains `open` or `active`. Marginal frontier episodes are therefore tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]].
+**Reading:** the only v1 leaf-state change in this source window is A1, which moves from `unvisited` to `active` because Möbius Cancellation is now a primary source-backed summatory-error attack. The broad A1 bucket already existed, so no new mass or Atlas version is introduced. The other lines materially narrow existing `active`/`open` territories without changing their leaf states.
 
-The current source revision materially sharpens every active line without adding a new RH macrofamily. Arithmetic Fidelity extends exact support recovery into collective stability and distance-to-collision margins. Prime Circle classicalizes the full ordinary finite Hardy trace sector and several canonical conductor/two-scale escapes to cyclotomic, Hilbert/Carleman and Ramanujan controls. Prime Flute shows that resolvent-power and local heat regularizations do not create independent spectral information before the still-open global clone assembly and nonlocal value test. Prime Lattice extends ordinary Gram classicalization through growing-depth `S_2` universality and a sharp prolate/Nyquist `S_1` boundary. Weil Inertia closes positive scalar support/energy exits while isolating a signed finite-window Ramanujan operator as a genuinely source-sensitive remaining interface. Weil Positivity closes fixed positive mixtures and fixed refinement-coherent auxiliary couplings even for infinite unbounded global sectors, leaving only genuinely singular/refinement-dependent/higher-cohomological or nonseparable finite--archimedean routes.
+The current source revision also tightens the internal frontiers. Prime Circle closes arbitrary-conductor scalar correctors and all uniformly bounded representation/preconditioning rescues. Prime Flute obtains relative short-orbit cancellation but proves the controlled short and canonical-separator Selberg factors zero-free across the critical line. Prime Lattice classicalizes near-Nyquist trace/logdet signals and Bruhat--Tits/Ihara half-axes. Weil Inertia classifies the finite-window scalar Ramanujan quotient and finds macroscopic exact pairwise rank defects. Weil Positivity finds both a larger exact cover-positive prime-torus cone and an explicit mixed-prime positive completion, while the archimedean/sign coupling remains absent. Arithmetic Fidelity extends robust recovery into exact stochastic zero-error repair geometry. The current Mind now incorporates these findings, including the Möbius global-summation information-budget gate.
 
-The central coverage remains robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
+The current ±25% family-weight sensitivity band is approximately **70.0%–78.4%**. This is not a statistical confidence interval. Marginal frontier episodes are tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] and do not alter the Atlas denominator.
 
 ## Families
 

@@ -15,21 +15,18 @@ The Bohr/exponent-lattice representation is classical scaffolding; the live prob
 
 ## Evidence
 
-- [[research/prime_lattice/findings/PL-078-sharp-critical-gram-prolate-universality|PL-078]]
-- [[research/prime_lattice/findings/PL-082-bounded-prime-cluster-two-sided-gram-instability|PL-082]]
 - [[research/prime_lattice/findings/PL-085-critical-prime-gram-full-poisson-bulk-law|PL-085]]
-- [[research/prime_lattice/findings/PL-087-prime-power-axis-bulk-vanishing-rank|PL-087]]
-- [[research/prime_lattice/findings/PL-088-fixed-depth-prime-power-time-dilation|PL-088]]
-- [[research/prime_lattice/findings/PL-094-growing-depth-loguniform-shell-envelope|PL-094]]
-- [[research/prime_lattice/findings/PL-095-growing-depth-pnt-envelope-gram-universality|PL-095]]
 - [[research/prime_lattice/findings/PL-096-growing-depth-all-horizon-s2-universality|PL-096]]
-- [[research/prime_lattice/findings/PL-097-super-nyquist-s1-rank-defect-universality|PL-097]]
-- [[research/prime_lattice/findings/PL-098-critical-s1-nyquist-rank-floor|PL-098]]
-- [[research/prime_lattice/findings/PL-099-subnyquist-midpoint-s1-control|PL-099]]
+- [[research/prime_lattice/findings/PL-100-critical-nyquist-midpoint-s1-control|PL-100]]
+- [[research/prime_lattice/findings/PL-101-near-critical-nyquist-midpoint-s1-control|PL-101]]
+- [[research/prime_lattice/findings/PL-102-critical-prime-nyquist-poisson-s1-excess|PL-102]]
+- [[research/prime_lattice/findings/PL-103-poisson-bulk-logdet-decay|PL-103]]
+- [[research/prime_lattice/findings/PL-104-bruhat-tits-universal-tempered-half-axis|PL-104]]
+- [[research/prime_lattice/findings/PL-105-ihara-quotient-ramanujan-universality|PL-105]]
 - [[research/prime_lattice/mind/RESEARCH_LINES|Prime-lattice synthesis]]
 
-The ordinary critical-support bulk had already classicalized to local Poisson/prolate sampling under its stated inputs, and natural von-Mangoldt/prime-power population weighting did not restore a new empirical bulk variable. The newest growing-depth analysis closes a substantially larger ordinary coherent sector.
+Near-Nyquist trace norm no longer supplies a raw arithmetic discriminator. Deterministic midpoint clouds attain the same continuum comparator at exact Nyquist and along every approach `r_N->1`; the prime cloud's remaining critical `S_1` excess and raw log-determinant decay are already consequences of the generic Poisson sampling bulk under the stated local Hardy--Littlewood hierarchy.
 
-The prime-power shell develops a log-uniform/PNT envelope. After the natural normalization its covariance is Hilbert--Schmidt universal at **every** observation horizon throughout the first growing-depth regime, so the earlier inverse-PNT-error scale is not a new `S_2` phase. In the stronger trace norm, the remaining discrepancy is a classical Nyquist/rank boundary: super-Nyquist finite rank forces a universal defect, the critical scale has the corresponding rank floor, and a deterministic midpoint grid attains the same continuum prolate comparator below Nyquist.
+A separate local-geometry enrichment also classicalizes. Bruhat--Tits radial geometry singles out `Re(s)=1/2` as universal local temperedness, and an Ihara quotient turns the same half-axis into the graph Ramanujan bound. Abstract regular trees and Ramanujan graph families reproduce those mechanisms without rational-prime/local-field specificity, so an additional global coupling to the ordinary Riemann divisor is indispensable.
 
-The territory remains `open`, but the ordinary bulk and raw `S_2`/`S_1` growing-depth transitions are no longer live source-specific candidates. The surviving source-backed frontier is concentrated in information beyond the sharp sampling control: microscopic or hard-edge/inverse statistics, condition numbers, target-relative Schur complements, singular/growing tests, depth-selective observables, Nyman/target data, or completed indefinite Weil geometry. A survivor must distinguish rational primes from the PNT/log-uniform/prolate and deterministic controls in the same statistic and topology.
+The territory remains `open` for information beyond these controls: microscopic/hard-edge inverse statistics, target-relative or singular observables, completed indefinite Weil data, or another source-specific global coupling. Raw sampling phases and generic local/graph half-axes are no longer sufficient.

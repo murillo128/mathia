@@ -6,15 +6,10 @@ relation: stable-fidelity-distance-to-collision
 derived: true
 ---
 
-# Stable fidelity is measured by distance from collision
+# Stable fidelity is measured by distance from collision or repair geometry
 
-The newest Arithmetic Fidelity results give exact robustness moduli in several categories rather than merely binary injectivity tests.
+[[research/arithmetic_fidelity/findings/AF-041-stable-composition-is-range-kernel-transversality|AF-041]]--[[research/arithmetic_fidelity/findings/AF-045-lower-lipschitz-modulus-is-exact-nonlinear-collision-distance|AF-045]] turn robust deterministic fidelity into exact transversality and distance-to-collision moduli in operator, smooth, linear-secant and nonlinear Lipschitz categories.
 
-- [[research/arithmetic_fidelity/findings/AF-041-stable-composition-is-range-kernel-transversality|AF-041]] expresses stable composition through a quantitative range--kernel transversality modulus.
-- [[research/arithmetic_fidelity/findings/AF-042-compact-smooth-fidelity-is-injective-immersion|AF-042]] identifies compact smooth fidelity with the injective-immersion gate in its stated category.
-- [[research/arithmetic_fidelity/findings/AF-043-closed-secant-transversality-classifies-linear-compression-fidelity|AF-043]] and [[research/arithmetic_fidelity/findings/AF-044-closed-secant-modulus-is-distance-to-fidelity-loss|AF-044]] turn linear compression robustness into closed-secant transversality and an exact distance to the loss set.
-- [[research/arithmetic_fidelity/findings/AF-045-lower-lipschitz-modulus-is-exact-nonlinear-collision-distance|AF-045]] gives the nonlinear metric analogue: the lower Lipschitz modulus is exactly the distance to a collision map in the Lipschitz norm.
+The stochastic zero-error results add a complementary boundary rather than a universal extension of that theorem. [[research/arithmetic_fidelity/findings/AF-046-zero-error-fidelity-has-zero-tv-robustness|AF-046]] shows that exact support-disjoint recovery can have zero robustness even where output laws remain separated by a positive TV margin. [[research/arithmetic_fidelity/findings/AF-047-zero-error-tv-repair-is-bayes-error-plus-hall-coverage|AF-047]]--[[research/arithmetic_fidelity/findings/AF-050-f-divergence-zero-error-repair-reduces-to-binary-penalties|AF-050]] give exact projection distances to the zero-error set in several row-separable geometries, while [[research/arithmetic_fidelity/findings/AF-051-quadratic-zero-error-repair-is-clone-granularity-sensitive|AF-051]] shows that changing to quadratic geometry introduces representation-sensitive concentration/cardinality data.
 
-Across these source-backed categories, exact recovery and robust recovery are distinct. A map may be injective while arbitrarily close to fidelity loss; a downstream arithmetic claim that needs stable realization must therefore specify the perturbation topology and retain a positive distance-to-collision margin there.
-
-The relation is a transversal fidelity principle only. Applying it to a concrete RH-facing construction requires that construction's own source space, controls and destination norm to satisfy the corresponding hypotheses.
+Across these source-backed categories, exact recovery, robust recovery and minimum repair are distinct questions. A downstream arithmetic claim that needs stability must specify the perturbation geometry in which a positive margin is required; a margin proved in one metric or representation cannot be silently transferred to another.

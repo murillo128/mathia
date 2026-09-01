@@ -15,20 +15,17 @@ The active Prime-Circle escape is to preserve genuinely cross-level information 
 
 ## Evidence
 
-- [[research/prime_circle/findings/PC-081-finite-hardy-shell-algebra-is-a-wedge-of-hilbert-bands|PC-081]]
-- [[research/prime_circle/findings/PC-099-growing-complete-cotangent-tube-spectrum-converges-to-uniform-bands|PC-099]]
 - [[research/prime_circle/findings/PC-104-all-finite-nonconstant-mixed-hardy-shell-traces-are-cyclotomic-hyperlogarithmic|PC-104]]
-- [[research/prime_circle/findings/PC-105-cumulative-primitive-root-kernel-discrepancy-is-farey-mertens-data|PC-105]]
 - [[research/prime_circle/findings/PC-107-trace-class-hardy-determinant-cannot-have-riemann-zero-density|PC-107]]
 - [[research/prime_circle/findings/PC-109-prime-conductor-microlocal-remainder-is-universal-carleman-hilbert-defect|PC-109]]
-- [[research/prime_circle/findings/PC-111-affine-scale-carleman-hilbert-defects-form-trace-class-dilation-cocycle|PC-111]]
-- [[research/prime_circle/findings/PC-112-moebius-birth-dilation-cocycle-is-radical-unitary|PC-112]]
-- [[research/prime_circle/findings/PC-113-one-new-prime-hardy-microlocal-limit-is-reflection-tensor-inflation|PC-113]]
 - [[research/prime_circle/findings/PC-114-new-prime-hardy-two-scale-corrector-is-ramanujan-reflection-tensor|PC-114]]
+- [[research/prime_circle/findings/PC-117-arbitrary-conductor-joint-hardy-corrector-has-zero-free-gaussian-determinant|PC-117]]
+- [[research/prime_circle/findings/PC-118-bounded-similarity-and-isometric-unfolding-preserve-hardy-corrector-divisor|PC-118]]
+- [[research/prime_circle/findings/PC-119-bounded-two-sided-hardy-preconditioning-cannot-retain-a-finite-fredholm-divisor|PC-119]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime-circle synthesis]]
 
-The canonical finite and fixed-conductor Hardy sectors are now much narrower. Every finite nonconstant mixed shell trace lies in the cyclotomic-hyperlogarithmic period sector, the cumulative primitive-root cloud has classical Farey/Mertens data, and a fixed trace-class remainder has Fredholm zero density too sparse to realize the Riemann divisor under linear normalization.
+Finite and fixed-shell Hardy traces remain in classical cyclotomic sectors, while fixed trace-class determinants are too sparse in zero density. Canonical conductor limits first reduce to Hilbert/Carleman and Ramanujan data; the arbitrary old-conductor joint limit now closes the remaining scalar-normalized corrector escape with a zero-free Gaussian determinant.
 
-The canonical large-conductor escapes also universalize. Fixed-coordinate and microlocal limits produce Hilbert/Carleman defects; affine scale changes are trace-class dilation cocycles; Möbius births are radical-unitary; and adjoining one new prime yields reflection inflation. The two-scale corrector left open by that strong limit is itself a Ramanujan reflection tensor times the same universal Carleman--Hilbert defect, with only classical exact-order multiplicity and a nuclear zero divisor.
+Changing representation is not enough. Similarity and isometric unfolding preserve the entire divisor exactly, while every uniformly bounded two-sided operator-changing preconditioner keeps the normalized corrector infinitesimal in operator norm and forces finite Fredholm zeros out of compact sets.
 
-The territory remains `active`, not hard-pruned. Surviving classes require a genuinely joint all-shell construction formed before fixed-conductor/conductor universalization, a non-affine or otherwise intrinsic cross-level organization, source-specific norm/Schatten information surviving the strongest Hilbert/Carleman/Ramanujan controls, or global uniformization/monodromy. The newest closures materially narrow G2 but do not close those classes.
+The territory remains `active`, not hard-pruned. A survivor must cross a genuinely singular/unbounded operator scale, reorganize information before the canonical corrector split, use nonlinear joint all-shell structure, or move to another intrinsic/global uniformization mechanism. Those classes are not closed by the current evidence.

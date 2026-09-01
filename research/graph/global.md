@@ -13,6 +13,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 ## Materialized line hubs
 
 - [[research/arithmetic_fidelity/graph/index|Arithmetic Fidelity]]
+- [[research/mobius_cancellation/graph/index|Möbius Cancellation]]
 - [[research/prime_circle/graph/index|Prime Circle]]
 - [[research/prime_flute/graph/index|Prime Flute]]
 - [[research/prime_lattice/graph/index|Prime Lattice]]
@@ -43,12 +44,14 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/graph/relations/relational-multiscale-memory|Relational multiscale memory]]
 - [[research/graph/relations/universal-background-subtraction|Universal-background subtraction]]
 - [[research/graph/relations/gamma2-scattering-is-shared-background|Gamma(2) scattering is shared background]]
-- [[research/graph/relations/operator-topology-is-part-of-arithmetic-claim|Operator topology is part of the arithmetic claim]]
+- [[research/graph/relations/operator-topology-is-part-of-arithmetic-claim|Operator topology is part of arithmetic claim]]
 - [[research/graph/relations/universal-boundary-models|Universal boundary models before arithmetic interpretation]]
 
 ## Current integration boundary
 
-Six source-backed research lines are currently discoverable. The global synthesis now separates support fidelity, source specificity, stable realization, global assembly and the universal boundary model that can appear when a simpler category breaks. Arithmetic Fidelity supplies exact support/stability/distance-to-collision models; the five RH-facing lines supply concrete matched-control, operator, sampling, Ramanujan and positivity boundary tests.
+Seven source-backed research lines are now represented in the current global Mind: six RH-facing lines plus the transversal Arithmetic Fidelity line. Möbius Cancellation contributes a new exact program-level warning rather than a new ontology: strong local or scalar information is useful only if its quantitative budget survives the final global summation norm.
 
-Riemann Atlas v1 remains an RH approach-space denominator and is not expanded merely because the transversal fidelity theory grows. Marginal frontier telemetry is a separate derived strategic projection: it records whether source-backed expansions extend, classicalize or close already-mapped frontiers, but it is never mathematical evidence and does not feed Research Watch.
+The shared synthesis now separates support fidelity, source specificity, stable realization, global assembly and universal boundary models. Current evidence tightens each gate. Prime Circle closes bounded representations of its canonical conductor corrector; Prime Flute reaches relative Selberg cancellation but finds the controlled short/canonical factors zero-free across the critical line; Prime Lattice classicalizes both near-Nyquist and Bruhat--Tits/Ihara half-axis signals; Weil Inertia classifies the finite-window Ramanujan scalar quotient and its rank defects; Weil Positivity exposes a larger exact cover-positive cone whose mixed-prime completion survives only before the missing archimedean/sign coupling; and Möbius Cancellation shows that neither present almost-all local bounds nor a single pretentious scalar carries the polynomial information budget required for RH-scale Mertens cancellation.
+
+Riemann Atlas v1 remains an approach-space denominator, not a progress-to-proof score. Möbius Cancellation now traverses the existing broad classical summatory-error territory rather than forcing a new macrofamily. Marginal frontier telemetry remains separate derived strategic context and never feeds Research Watch.
 <!-- graph:end -->

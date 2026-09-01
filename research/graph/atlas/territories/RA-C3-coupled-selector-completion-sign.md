@@ -16,20 +16,16 @@ The live Weil-positivity frontier is to couple an exact positive finite-place pa
 ## Evidence
 
 - [[research/weil_positivity/findings/WP-074-pointed-cover-inverse-scale-defect-has-positive-log-degree-trace-but-poisson-weil-lift-is-indefinite|WP-074]]
-- [[research/weil_positivity/findings/WP-080-full-trace-ideal-cover-coinvariants-collapse-to-zero|WP-080]]
-- [[research/weil_positivity/findings/WP-081-fixed-shift-cover-coboundaries-form-a-positive-half-line-with-the-same-log-degree-class|WP-081]]
-- [[research/weil_positivity/findings/WP-083-homogeneous-cover-jensen-positivity-is-flat-and-mangoldt-support-is-singular-endpoint|WP-083]]
-- [[research/weil_positivity/findings/WP-084-fixed-shift-positive-cover-family-has-singular-fisher-boundary-at-covariant-origin|WP-084]]
-- [[research/weil_positivity/findings/WP-085-cover-range-principal-angle-defect-is-positive-but-log-degree-response-is-reference-relative|WP-085]]
-- [[research/weil_positivity/findings/WP-088-finite-multireference-cover-projection-spectral-readouts-are-affine-on-common-multiple-towers|WP-088]]
-- [[research/weil_positivity/findings/WP-089-cover-coherent-finite-global-couplings-freeze-to-one-collective-block|WP-089]]
-- [[research/weil_positivity/findings/WP-090-fixed-positive-shift-mixtures-cannot-cancel-digamma-contamination|WP-090]]
-- [[research/weil_positivity/findings/WP-091-schiffer-finite-certificate-is-generic-compact-positivity-not-pole-structure|WP-091]]
 - [[research/weil_positivity/findings/WP-092-refinement-coherent-fixed-infinite-auxiliary-sectors-still-freeze-to-one-collective-block|WP-092]]
+- [[research/weil_positivity/findings/WP-093-finite-band-cover-covariance-forces-a-weighted-dirichlet-cone-with-continuous-dual-hahn-critical-ray|WP-093]]
+- [[research/weil_positivity/findings/WP-094-exact-cover-covariance-collapses-positive-block-toeplitz-forms-to-singular-endpoint-anchor|WP-094]]
+- [[research/weil_positivity/findings/WP-095-finite-band-cover-positive-energy-cannot-regularize-the-endpoint-anchor|WP-095]]
+- [[research/weil_positivity/findings/WP-096-exact-cover-positive-forms-are-prime-torus-grams-but-sparse-weil-support-needs-infinite-diagonal|WP-096]]
+- [[research/weil_positivity/findings/WP-097-mixed-prime-product-completion-gives-sharp-finite-diagonal-threshold|WP-097]]
 - [[research/weil_positivity/mind/RESEARCH_LINES|Weil-positivity synthesis]]
 
-The pointed Dirichlet/root-cover construction remains a genuine positive finite-place survivor: it makes the Mangoldt anchor continuous, forces the critical half-weight and produces positive `log n` scale defects. The problem is no longer recovering the finite arithmetic coefficient.
+The finite-band non-diagonal loophole is real but rigid: exact cover covariance forces a weighted Dirichlet cone with an independently positive critical ray, yet that ray classicalizes to Cesàro/continuous-dual-Hahn geometry and is universal across integer cover degrees. Stationary block-Toeplitz infinite-range forms collapse to a singular nonclosable endpoint anchor, and adding the entire finite-band positive cone cannot regularize it while retaining positivity and closability.
 
-Regular positive globalizations are increasingly rigid. Scale-covariant Jensen/Fisher families either collapse to bounded/dyadic response or place exact Mangoldt behavior at a singular endpoint. Fixed two-projection and multireference constructions are reference-relative or affine on common-multiple towers. Refinement-coherent coupling to a fixed auxiliary sector freezes to one collective block not only in finite dimension but for an arbitrary fixed Hilbert sector with unbounded dynamics, so the standard relative spectral response remains tower-independent. Fixed positive shifted-resolvent mixtures cannot cancel the digamma contamination while retaining exact `log n` data. The finite Schiffer certificate also classicalizes as generic compact positivity rather than a hidden pole/sign mechanism.
+The full algebraic cover-positive cone is larger. After the critical first-order conjugacy every exact positive form is a multiplicative Toeplitz/prime-torus Gram measure. Sparse one-prime Weil Fourier data alone require infinite diagonal mass, but mixed-prime interactions restore positivity with an explicit finite sharp threshold. Those mixed terms are essential: deleting them returns the divergent sparse obstruction.
 
-The territory remains `open` for genuinely different categories: singular or domain-changing couplings, refinement-dependent global sectors, infinite/nonperiodic structures whose auxiliary data transform with the tower, higher-cohomological/twisted coefficient modules, or another nonseparable finite--archimedean operation introduced before separated positivity. Any survivor must retain the exact finite selector and prove the global Weil sign independently.
+The territory therefore remains `open` with a sharper positive survivor: a nonseparable mixed-prime positive completion exists. What is still missing is a structural positivity-preserving operation that converts that completion into the exact finite Weil readout together with the archimedean/polar contribution and an independent global sign theorem.

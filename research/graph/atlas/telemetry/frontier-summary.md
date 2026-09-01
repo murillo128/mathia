@@ -14,62 +14,50 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Retrospective seed
 
-A conservative retrospective backfill covers only high-confidence episodes reconstructable from surviving canonical findings and material Graph Curator windows after the Riemann Atlas v1 bootstrap. It is intentionally incomplete: ambiguous historical moves, withdrawn/challenged claims, and outcomes that cannot be classified without hindsight are omitted rather than guessed.
-
-| Line | Episodes | Viable extension | Known prior art | New barrier |
-| --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 1 | 0 | 0 | 1 |
-| `prime_circle` | 2 | 0 | 0 | 2 |
-| `prime_flute` | 2 | 2 | 0 | 0 |
-| `prime_lattice` | 2 | 0 | 1 | 1 |
-| `weil_inertia` | 3 | 0 | 1 | 2 |
-| `weil_positivity` | 4 | 1 | 0 | 3 |
-| **Total** | **14** | **3** | **2** | **9** |
-
-For this **retrospective partial sample only**, `FrontierFertilityEpisodes = 21.4%`, `BarrierRate = 64.3%`, `PriorArtCollisionRate = 14.3%`, and `InternalDuplicateRate = 0%`. The absence of other classes is not evidence that they did not occur historically.
+The conservative retrospective backfill remains unchanged: **14** high-confidence episodes, with `FrontierFertilityEpisodes = 21.4%`, `BarrierRate = 64.3%`, `PriorArtCollisionRate = 14.3%`, and `InternalDuplicateRate = 0%`. It is an intentionally incomplete historical sample and is never mixed silently with the prospective series.
 
 ## Prospective series
 
-The clean prospective series starts strictly **after** `prospective_source_cutoff`. Source mutations at or before that revision are never relabeled as prospective merely because a later Graph Curator pass first sees them.
-
-The newest source window, `864892d112c83929158a3a99aaf07ab962e5a288` → `36680f696a56cbdae2904b252eada635976bebe7`, adds:
+The clean prospective series starts strictly after `prospective_source_cutoff`. The newest source window, `fea5b3ef02c100315f1f5cb7433d13c24f2fe5dd` → `77cc50af912bb13cb392a90573d7df2750c9bc0b`, adds:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 3 | 3 | 0 | 0 |
-| `prime_circle` | 3 | 0 | 2 | 1 |
-| `prime_flute` | 1 | 0 | 0 | 1 |
-| `prime_lattice` | 1 | 0 | 0 | 1 |
-| `weil_inertia` | 2 | 1 | 0 | 1 |
-| `weil_positivity` | 3 | 0 | 1 | 2 |
-| **Total** | **13** | **4** | **3** | **6** |
+| `arithmetic_fidelity` | 1 | 1 | 0 | 0 |
+| `mobius_cancellation` | 2 | 0 | 0 | 2 |
+| `prime_circle` | 2 | 0 | 0 | 2 |
+| `prime_flute` | 2 | 1 | 0 | 1 |
+| `prime_lattice` | 2 | 0 | 2 | 0 |
+| `weil_inertia` | 2 | 0 | 0 | 2 |
+| `weil_positivity` | 3 | 2 | 0 | 1 |
+| **Total** | **14** | **4** | **2** | **8** |
 
 Across the complete prospective series so far:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 5 | 5 | 0 | 0 |
-| `prime_circle` | 5 | 0 | 3 | 2 |
-| `prime_flute` | 3 | 2 | 0 | 1 |
-| `prime_lattice` | 4 | 0 | 1 | 3 |
-| `weil_inertia` | 4 | 1 | 0 | 3 |
-| `weil_positivity` | 5 | 0 | 1 | 4 |
-| **Total** | **26** | **8** | **5** | **13** |
+| `arithmetic_fidelity` | 6 | 6 | 0 | 0 |
+| `mobius_cancellation` | 2 | 0 | 0 | 2 |
+| `prime_circle` | 7 | 0 | 3 | 4 |
+| `prime_flute` | 5 | 3 | 0 | 2 |
+| `prime_lattice` | 6 | 0 | 3 | 3 |
+| `weil_inertia` | 6 | 1 | 0 | 5 |
+| `weil_positivity` | 8 | 2 | 1 | 5 |
+| **Total** | **40** | **12** | **7** | **21** |
 
-Every line currently has fewer than 10 prospective episodes, so the line rows above are already within the preferred line-local window. For the global trend, use the latest **20** classifiable prospective episodes rather than the whole accumulated history:
+Every line remains below the preferred 10-episode line-local window. For the global trend, the latest **20** classifiable prospective episodes give:
 
-- `FrontierFertilityEpisodes = 4 / 20 = 20.0%`
+- `FrontierFertilityEpisodes = 5 / 20 = 25.0%`
 - `BarrierRate = 12 / 20 = 60.0%`
-- `PriorArtCollisionRate = 4 / 20 = 20.0%`
+- `PriorArtCollisionRate = 3 / 20 = 15.0%`
 - `InternalDuplicateRate = 0 / 20 = 0%`
 - `InsufficientEvidence = 0`
 
-The episode unit remains deliberately coarser than a finding. AF-034--AF-038 are one interaction-support episode; PC-108--PC-114 are one conductor/two-scale classicalization episode; PF-147--PF-155 are one resolvent/regularization boundary episode; PL-088--PL-099 are one growing-depth sampling episode; and WP-085--WP-092 are one fixed-reference/coherent-globalization barrier episode. This prevents activity volume from masquerading as fertility.
+The newest window is again barrier-heavy, but not uniformly negative. Arithmetic Fidelity extends exact repair geometry; Prime Flute gains a real relative-orbit cancellation interface before finding its controlled Selberg factors zero-free; and Weil Positivity finds a genuine mixed-prime positive completion. Möbius Cancellation opens a previously unvisited Atlas territory while its first two concrete tests are both barriers. Prime Circle, Prime Lattice and Weil Inertia continue to close or classicalize natural canonical variants.
 
-The prospective signal is now **persistently barrier-heavy** in the bounded global window. Arithmetic Fidelity still extends its transversal theory, and Weil Inertia gains one concrete signed finite-window operator interface, while the four other RH-facing lines in this newest window mainly close or classicalize natural variants. This is evidence about marginal search behavior inside the current known atlas, not evidence that RH lacks undiscovered representations or that a line should be stopped.
+The episode unit remains deliberately coarser than a finding. PC-115--PC-117 are one conductor-limit episode; PF-157--PF-158 are one canonical relative-Selberg episode; PL-100--PL-103 are one Nyquist/Poisson-control episode; WI-082--WI-085 are one scalar Ramanujan-quotient episode; and WP-096--WP-097 are one infinite-range mixed-prime completion episode. This prevents activity volume from masquerading as fertility.
 
 ## Interpretation boundary
 
-A low frontier-fertility ratio can mean a line is successfully closing a difficult search space, not that the work is worthless. A high ratio can reflect productive extension without bringing RH closer to proof. The telemetry exists to distinguish **marginal frontier movement** from unchanged coarse Atlas states; canonical findings, review outcomes, prior art, and exact live questions remain the basis for mathematical and portfolio judgments.
+A low frontier-fertility ratio can mean a line is successfully closing a difficult search space, not that the work is worthless. A high ratio can reflect productive extension without bringing RH closer to proof. The telemetry exists to distinguish **marginal frontier movement** from coarse Atlas states; canonical findings, review outcomes, prior art, and exact live questions remain the basis for mathematical and portfolio judgments.
 
 The telemetry must not feed Research Watch. It may be consumed by the Master Researcher only as derived strategic context under its own rules, and no ratio alone can justify pausing, merging, splitting, redirecting, or creating research lines.
