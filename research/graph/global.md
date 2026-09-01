@@ -24,6 +24,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 - [[research/graph/atlas/index|Riemann Atlas v1]]
 - [[research/graph/atlas/metrics|Atlas metrics]]
+- [[research/graph/atlas/telemetry/frontier-summary|Marginal frontier telemetry]]
 
 <!-- graph:start -->
 ## Global durable intuitions
@@ -45,5 +46,5 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Current integration boundary
 
-Six source-backed research lines are currently discoverable. The persisted global `mind/` synthesis already incorporates Arithmetic Fidelity into its complete-statistic and rational-prime-specificity gates while keeping the five RH-facing lines as the mathematical attack portfolio. Riemann Atlas v1 remains an RH approach-space denominator and is not expanded merely because a transversal methodology line is present.
+Six source-backed research lines are currently discoverable. The persisted global `mind/` synthesis incorporates Arithmetic Fidelity into the complete-statistic and rational-prime-specificity gates while keeping the five RH-facing lines as the mathematical attack portfolio. Riemann Atlas v1 remains an RH approach-space denominator and is not expanded merely because a transversal methodology line is present. Marginal frontier telemetry is a separate derived strategic projection: it records whether source-backed expansions extend or close already-mapped frontiers, but it is never mathematical evidence and does not feed Research Watch.
 <!-- graph:end -->

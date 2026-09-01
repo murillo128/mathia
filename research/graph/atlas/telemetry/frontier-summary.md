@@ -35,16 +35,36 @@ For this **retrospective partial sample only**:
 
 No `new-territory`, `known-barrier`, `internal-duplicate`, or `insufficient-evidence` episode was persisted in this deliberately small backfill. That absence is not evidence that those outcomes did not occur historically.
 
-The retrospective vector is useful as a warning that unchanged Atlas state masses can coexist with substantial local barrier concentration. It is **not** a calibrated historical productivity score and must not be mixed silently with the prospective series.
-
-## Prospective baseline
+## Prospective series
 
 The clean prospective series starts strictly **after** `prospective_source_cutoff`. Source mutations at or before that revision are never relabeled as prospective merely because a later Graph Curator pass first sees them. Any gap between the conservative retrospective seed and the cutoff remains unclassified unless a later high-confidence backfill adds those outcomes explicitly as `mode: retrospective`.
 
-From that cutoff onward the curator records each newly observed, source-backed frontier episode as `mode: prospective`, repairs or removes an episode if its canonical support is corrected/withdrawn, and leaves the telemetry unchanged when a run contains no material expansion outcome.
+The first prospective curator window, from the previous material curator state through source revision `864892d112c83929158a3a99aaf07ab962e5a288`, contains the following classifiable episodes:
 
-Until enough prospective episodes exist, report the sample size together with every ratio. For line-local interpretation, prefer a fixed trailing window of up to the latest 10 classifiable prospective episodes; for portfolio interpretation, prefer up to the latest 20. Never use the ratios alone to pause, merge, split, redirect, or create research lines.
+| Line | Episodes | Viable extension | Known prior art | New barrier |
+| --- | ---: | ---: | ---: | ---: |
+| `arithmetic_fidelity` | 2 | 2 | 0 | 0 |
+| `prime_circle` | 2 | 0 | 1 | 1 |
+| `prime_flute` | 2 | 2 | 0 | 0 |
+| `prime_lattice` | 3 | 0 | 1 | 2 |
+| `weil_inertia` | 2 | 0 | 0 | 2 |
+| `weil_positivity` | 2 | 0 | 0 | 2 |
+| **Total** | **13** | **4** | **2** | **7** |
+
+For this **prospective sample**:
+
+- `FrontierFertilityEpisodes = 4 / 13 = 30.8%`
+- `BarrierRate = 7 / 13 = 53.8%`
+- `PriorArtCollisionRate = 2 / 13 = 15.4%`
+- `InternalDuplicateRate = 0 / 13 = 0%`
+- `InsufficientEvidence = 0`
+
+The prospective unit is deliberately coarser than a finding. For example, PL-083--PL-085 are one critical-bulk episode, PF-143--PF-145 are one collar-interface episode, and WP-078--WP-080 are one Möbius/coinvariant repair episode. This prevents activity volume from masquerading as fertility.
+
+The current window is **barrier-heavy but mixed**: Arithmetic Fidelity and Prime Flute account for all four viable extensions, while Prime Circle, Prime Lattice, Weil Inertia and Weil Positivity mostly narrow or classicalize already-live routes. With only 13 prospective classifiable episodes, this is an early signal rather than a stable portfolio trend.
 
 ## Interpretation boundary
 
 A low frontier-fertility ratio can mean a line is successfully closing a difficult search space, not that the work is worthless. A high ratio can reflect productive extension without bringing RH closer to proof. The telemetry exists to distinguish **marginal frontier movement** from unchanged coarse Atlas states; canonical findings, review outcomes, prior art, and exact live questions remain the basis for mathematical and portfolio judgments.
+
+The telemetry must not feed Research Watch. It may be consumed by the Master Researcher only as derived strategic context under its own rules, and no ratio alone can justify pausing, merging, splitting, redirecting, or creating research lines.

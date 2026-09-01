@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 50af7aafcb01541b908e2343b53ef700bd577062
+source_revision: 864892d112c83929158a3a99aaf07ab962e5a288
 derived: true
 ---
 
@@ -28,7 +28,7 @@ Thus:
 - pruned share of visited mass = **20.4%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-The source evidence through the pinned revision materially sharpens scoped barriers, fidelity boundaries, matched-control comparisons and classical redirects inside already visited territories but does not change any v1 leaf state or mass. The state-mass metrics therefore remain unchanged. **These coarse state masses alone do not establish low saturation:** marginal frontier telemetry is tracked separately below because substantial local narrowing can occur while a territory remains `open` or `active`.
+The current source delta materially narrows already visited territories but does not change any v1 leaf state or mass. The state-mass metrics therefore remain unchanged. **These coarse state masses alone do not establish low saturation:** marginal frontier telemetry is tracked separately because substantial local closure can occur while a territory remains `open` or `active`.
 
 ## Largest unvisited territories
 
@@ -40,42 +40,44 @@ The source evidence through the pinned revision materially sharpens scoped barri
 6. zero-density as a primary attack — **2.5%**
 7. direct abstract Hilbert–Pólya zero operator — **2.5%**
 
-Prime-Lattice use of classical Dirichlet-polynomial resolution and zero-free estimates remains auxiliary to its lattice/operator audits; it does not turn A1 or A4 into a primary traversal.
+Prime-Lattice use of local Hardy--Littlewood/Poisson statistics remains an audit of an existing lattice/Gram route; it does not turn the unvisited primary RMT/GUE territory into a Mathia RMT research program.
 
 ## Scoped hard closures
 
-The hard-pruned mass remains concentrated in five specific interfaces rather than whole macro-families: ordinary Prime-Flute global Selberg/Ruelle/Fredholm machinery (**3.0%**), ordinary positive-calculus/Hodge/Fisher/DtN closures (**2.5%**), standard prime-shift covariance/log-Hamiltonian (**2.5%**), single-profile Gram-defect compression in Weil Inertia (**2.0%**), and the symmetric full-cover Weil–Petersson/uniformization package (**1.2%**). The newer metric/polar-sign, boundary-anchor and finite-anchor obstructions narrow C3, which remains open; they do not justify expanding C2's hard-pruned mass.
+The hard-pruned mass remains concentrated in five specific interfaces rather than whole macro-families: ordinary Prime-Flute global Selberg/Ruelle/Fredholm machinery (**3.0%**), ordinary positive-calculus/Hodge/Fisher/DtN closures (**2.5%**), standard prime-shift covariance/log-Hamiltonian (**2.5%**), single-profile Gram-defect compression in Weil Inertia (**2.0%**), and the symmetric full-cover Weil–Petersson/uniformization package (**1.2%**). The new Prime-Circle finite/infinite canonical collapses, Prime-Lattice bulk redirects, Weil-Inertia theorem-interface barriers and Weil-Positivity globalization no-go results all occur inside territories that still retain explicitly unclosed classes; none justifies expanding hard-pruned mass.
 
 ## Live frontier concentration
 
 Largest live family masses remain B moments/inertia/statistics (**8.5%**), C explicit-formula/positivity (**8.5%**), H geometric/cohomological/adelic (**6.8%**), G arithmetic/harmonic (**5.0%**), F equivalent criteria (**4.0%**), and E scattering/dynamical (**3.5%**).
 
-Their internal boundaries are much narrower than the unchanged family masses suggest. Prime Flute has compact-resolvent equivalence plus strong-`L^1` correction through the local thin/collar sector; the remaining wave gate is global boundary-coherent assembly. Prime Lattice's pointed critical Gram data redirect to classical additive correlations and prolate/time-bandlimiting geometry. Weil Inertia has the relevant Mikawa conditioned pair input, but its retained conductor spectrum requires collective square-function/martingale control rather than fixed-polylog truncation, termwise summation, diagonal sparsification or one common refinement. Prime Circle's canonical finite nonlinear cotangent repairs collapse to gauge, endpoint or rational/cyclotomic data. Weil Positivity has both strong topology/sign obstructions and a pointed Dirichlet/root-cover survivor that recovers the finite Mangoldt scale but not the full archimedean/sign completion. Arithmetic Fidelity separates analytic-category, support-horizon and finite-test-dimension fidelity without changing the RH denominator.
+Their internal boundaries are substantially narrower than the unchanged family masses suggest. Prime Circle has removed repeated-shell finite cotangent networks, fixed-support infinite depth and the canonical complete-tube scaling, while the Hardy frontier begins beyond cubic cyclotomic multiple-polylogarithms and the exact odd/even cycle incidence model. Prime Flute now has sharp local `L^1` interface currencies plus a squared-resolvent trace-class collar route, leaving global assembly. Prime Lattice has classicalized the ordinary critical support bulk and natural prime/prime-power weighting under the stated scopes, leaving rare-sector/hard-edge/completed observables. Weil Inertia has reduced the splice to a source-faithful changing-slope/multivariate four-prime estimate or an equivalent special identity. Weil Positivity retains the pointed finite-place survivor but has closed positive basepoint averaging and standard Möbius/coinvariant repairs. Arithmetic Fidelity now includes faithful infinite determining families and exact joint-versus-marginal kernel classifications without changing the RH denominator.
 
 ## Structural signals
 
 - **6** current research lines are source-backed: five RH-facing lines plus the transversal Arithmetic Fidelity line.
-- The current global mind has **5** reusable cross-branch no-go/selection principles and explicitly incorporates Arithmetic Fidelity in the complete-statistic and rational-prime-specificity gates.
-- The local research questions remain line-owned and should be read from current Mind/Research Watch state; this metrics projection does not infer progress from finding counts.
+- The current source delta did not modify local/global `mind/**`; several graph frontiers are therefore intentionally updated directly from newer canonical findings where the older synthesis is stale.
+- The withdrawn `WI-067` is not current evidence; its corrected successor `WI-068` is used instead.
+- Local research questions remain line-owned and should be read from current Mind/Research Watch state; this metrics projection does not infer progress from finding counts.
 
 ## Frontier fertility
 
-A conservative retrospective frontier-episode backfill is now stored under [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]]. It is **partial and retrospective**, not yet a calibrated prospective trend. Ambiguous historical moves are omitted instead of being classified from commit titles or hindsight.
+The conservative retrospective seed remains stored under [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] and stays separate from the clean prospective series.
 
-The current high-confidence retrospective sample contains **14** classifiable episodes:
+The first prospective curator window after the telemetry cutoff contains **13** classifiable frontier episodes, deliberately grouping successive findings that settle one coherent discriminating question rather than counting files:
 
-- `viable-extension`: **3**
+- `viable-extension`: **4**
 - `known-prior-art`: **2**
-- `new-barrier`: **9**
+- `new-barrier`: **7**
 - `new-territory`: **0**
 - `known-barrier`: **0**
 - `internal-duplicate`: **0**
+- `insufficient-evidence`: **0**
 
-Therefore, for this retrospective partial sample only:
+Therefore, for this prospective sample:
 
-- **FrontierFertilityEpisodes = 3 / 14 = 21.4%**
-- **BarrierRate = 9 / 14 = 64.3%**
-- **Prior-art collision rate = 2 / 14 = 14.3%**
-- **Internal duplicate rate = 0 / 14 = 0%**
+- **FrontierFertilityEpisodes = 4 / 13 = 30.8%**
+- **BarrierRate = 7 / 13 = 53.8%**
+- **Prior-art collision rate = 2 / 13 = 15.4%**
+- **Internal duplicate rate = 0 / 13 = 0%**
 
-These are **episode frequencies, not Atlas masses and not research-quality scores**. They do not alter `AtlasCoverage`, `LiveFrontier`, or pruning percentages. The clean prospective series starts with the first material Graph Curator delta after telemetry introduction; retrospective and prospective ratios must remain visibly separated until enough prospective events exist for a meaningful trend.
+These are episode frequencies, not Atlas masses and not research-quality scores. The early prospective window is barrier-heavy, but its sample size is still small and several barriers are valuable closures of already-live questions. It does not by itself justify pausing, merging, redirecting, or creating any research line.

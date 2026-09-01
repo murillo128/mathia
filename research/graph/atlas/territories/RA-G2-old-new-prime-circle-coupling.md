@@ -31,8 +31,13 @@ The active Prime-Circle escape is to preserve genuinely cross-level information 
 - [[research/prime_circle/findings/PC-092-finite-weighted-cotangent-shell-paths-collapse-to-endpoint-displacement-form|PC-092]]
 - [[research/prime_circle/findings/PC-094-finite-multileg-cotangent-trees-collapse-to-endpoint-forest-algebra|PC-094]]
 - [[research/prime_circle/findings/PC-095-two-leg-cotangent-trees-with-disjoint-path-shells-collapse-to-endpoint-displacement-form|PC-095]]
+- [[research/prime_circle/findings/PC-097-repeated-shell-cotangent-networks-collapse-to-collision-stratified-endpoint-algebra|PC-097]]
+- [[research/prime_circle/findings/PC-098-fixed-conductor-cotangent-depth-zeta-is-finite-state-rational|PC-098]]
+- [[research/prime_circle/findings/PC-099-growing-complete-cotangent-tube-spectrum-converges-to-uniform-bands|PC-099]]
+- [[research/prime_circle/findings/PC-100-cubic-hardy-cycle-periods-are-cyclotomic-multiple-polylogarithms|PC-100]]
+- [[research/prime_circle/findings/PC-101-hardy-cycle-index-map-has-odd-even-incidence-fibers|PC-101]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime-circle synthesis]]
 
-Finite Hardy essential interference is universal while its higher traces remain classical/cyclotomic period data. In the cotangent branch, odd scalar loops vanish, even fully contracted scalars are Galois-rational, finite weighted serial paths collapse to endpoint-displacement algebra, and finite disjoint-shell trees collapse by endpoint/forest identities.
+The canonical finite cotangent sector is now closed much further than the current line synthesis records: repeated-shell coincidence networks still reduce to endpoint/one-body data; fixed-support infinite depth is finite-state/rational; and the canonical complete growing preimage tube has a uniform-band spectral limit. In the Hardy sector, the cubic higher cycle lands in classical cyclotomic multiple-polylogarithm data and all cycle lengths have an exact incidence-fiber classification.
 
-The territory remains `active`, not hard-pruned, because repeated-shell/coincidence networks, cycles/repeated-edge powers, genuinely different cross-level operators, infinite-depth/all-level relative data, the separate Hardy trace sector, and global uniformization/monodromy remain explicitly outside those closures.
+The territory remains `active`, not hard-pruned. Surviving classes include incomplete/selectively growing conductor families, genuinely different intrinsic operators or higher tensors, singular/cross-level organizations not covered by the canonical complete tube, the unresolved `k>=4` Hardy cyclotomic conical boundary values, intrinsically infinite all-shell couplings, and global uniformization/monodromy. The new closures narrow the frontier materially but do not close the whole territory.

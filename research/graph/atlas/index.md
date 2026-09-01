@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: e53c36fbb9b7426e242b1778e8deb177424f11b6
+source_revision: 864892d112c83929158a3a99aaf07ab962e5a288
 derived: true
 ---
 
@@ -13,7 +13,7 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 ## Bootstrap dashboard
 
-| Metric | v1 bootstrap |
+| Metric | v1 current |
 | --- | ---: |
 | Atlas coverage | **69.5%** |
 | Live frontier | **41.8%** |
@@ -24,11 +24,11 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 | Macro-families | **10** |
 | Leaf territories | **37** |
 
-**Reading:** Mathia has traversed a large fraction of Atlas v1, but the program is **not close to saturation**: about 60.1% of already-visited mass remains active/open, while only 20.4% of visited mass is pruned.
+**Reading:** the v1 state masses are unchanged because the current source delta narrows already-visited territories rather than changing their mutually exclusive leaf states. Those coarse percentages do **not** by themselves establish low saturation: repeated source-backed closures can occur inside a territory that remains `open` or `active`. Marginal frontier episodes are therefore tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]].
 
-The current source delta materially narrows already-mapped frontiers without changing the v1 denominator or any leaf state. Prime Circle corrects the withdrawn one-letter Hardy trace claim and closes the canonical preimage-product, Leibniz-defect and one-intermediate cotangent escapes to gauge/endpoint data. Prime Flute pushes the shift-clone comparison through strong-`L^1` pre-corner correction and localizes any remaining wave-weight loss to genuine ambient thin geometry. Prime Lattice's positive-cone finite-horizon and coefficient audits redirect the first critical Gram signals to universal resolution, torus gauge, Mirsky/Chowla and Hardy--Littlewood correlations. Weil Inertia shows the `W`-local conditioned spectrum is subpolynomial in `L^2` but too large for fixed-polylog truncation or termwise Wiener assembly; an open review prevents promoting the newest Mikawa splice. Weil Positivity extends the polar-sign obstruction to bounded and operator-level unbounded metrics and proves the base-shell Mangoldt anchor functional is unbounded, closing finite scalar renormalization. Arithmetic Fidelity separates analytic-class recovery from divisor data and proves a support-radius/test-dimension fidelity filtration for finite Weil tests, but remains transversal methodology rather than a new RH territory.
+The current source revision materially narrows five RH-facing frontiers while expanding the transversal fidelity theory. Prime Circle closes repeated-shell finite cotangent networks, fixed-support infinite depth and the canonical complete growing tube, while classicalizing the cubic Hardy cycle and classifying the general cycle incidence fibers. Prime Flute identifies sharp `L^1` angular/radial interface currencies and opens a second wave route through squared-resolvent trace class. Prime Lattice routes the formerly unresolved mean-gap support bulk to Poisson local statistics under its stated Hardy--Littlewood hierarchy, closes sublinear extreme rigidity through bounded prime clusters, and shows ordinary prime-power bulk loses higher-depth information by vanishing rank. Weil Inertia pushes the cross-conductor splice through redundant-refinement, four-prime-rectangle, slope-slice and multivariate-polynomial theorem boundaries. Weil Positivity closes positive basepoint averaging and the canonical Möbius/coinvariant repairs while retaining the pointed finite-place survivor. Arithmetic Fidelity now distinguishes finite-test collision from faithful infinite determining families and classifies exactly what separate marginals forget relative to joint observables.
 
-The central coverage is robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
+The central coverage remains robust to moderate weighting choices: independently perturbing each macro-family weight by ±25% in the direction most favorable/unfavorable to coverage yields a **62.7%–74.6% weight-sensitivity band**. This is not a statistical confidence interval.
 
 ## Families
 
@@ -43,4 +43,4 @@ The central coverage is robust to moderate weighting choices: independently pert
 - [[research/graph/atlas/families/RA-I-noncommutative-qsm|I — Noncommutative geometry / QSM]]
 - [[research/graph/atlas/families/RA-J-computational-numerical|J — Computational/numerical]]
 
-See [[research/graph/atlas/v1|v1 model and calibration]] and [[research/graph/atlas/metrics|metrics and saturation reading]].
+See [[research/graph/atlas/v1|v1 model and calibration]], [[research/graph/atlas/metrics|metrics and saturation reading]], and [[research/graph/atlas/telemetry/frontier-summary|marginal frontier telemetry]].
