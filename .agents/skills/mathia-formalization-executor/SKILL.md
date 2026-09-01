@@ -221,15 +221,44 @@ Use `.agents/skills/codex-independent-review/SKILL.md` and require at least:
 2. proof-integrity and trust-footprint inspection;
 3. independent reconstruction of the Lean theorem in ordinary mathematics;
 4. independent reconstruction/compression of the proof as mathematics rather than tactics;
-5. explicit statement of the unformalized boundary;
-6. adversarial inspection of boundary cases, conventions, hidden assumptions, and accidental weakening;
-7. a final verdict of `PASS`, `PASS_WITH_NOTES`, `FAIL`, or `BLOCKED`.
+5. an explicit **Lean-vs-finding mathematical delta audit**, described below;
+6. explicit statement of the unformalized boundary;
+7. adversarial inspection of boundary cases, conventions, hidden assumptions, and accidental weakening;
+8. a final verdict of `PASS`, `PASS_WITH_NOTES`, `FAIL`, or `BLOCKED`.
+
+### Lean-vs-finding mathematical delta audit
+
+This audit is mandatory even when the Lean file compiles, the theorem faithfully implies the intended finding, and the correspondence check appears exact. The reviewer must **actively investigate**, rather than merely notice incidentally, whether formalization exposed mathematical information that the finding did not make explicit.
+
+Compare the final Lean statement, the hypotheses actually consumed by the proof, the intermediate lemmas/factorizations, and the reconstructed human proof against the canonical finding and any persisted informal proof. In particular, try to determine whether:
+
+- the finding or issue assumes hypotheses that the formal proof does not actually need;
+- Lean requires a hypothesis, side condition, convention, or bridge that the finding leaves implicit;
+- the checked argument proves or strongly suggests a cleaner, stronger, weaker, or differently parameterized exact theorem boundary;
+- an apparently symmetric informal condition is used only one-sidedly in the proof, so that a conjunction/min-type condition may really be a disjunction/max-type condition or admit another asymmetric relaxation;
+- a case split, factorization, injective/surjective decomposition, normal form, quotient, kernel/range description, or invariant in Lean reorganizes the mathematics in a way that suggests a separate theorem or obstruction;
+- the formal definitions identify two objects the prose treats as different, or distinguish two objects the prose treats as interchangeable;
+- a proof-engineering necessity is actually revealing a mathematical degenerate case, missing bridge, or latent generalization rather than mere library plumbing.
+
+Do not treat every syntactic difference as mathematics. The point is to search for **semantic deltas in the theorem or proof structure** that could change understanding or open a falsifiable direction.
+
+The final review must explicitly record one of these outcomes:
+
+```text
+no material mathematical delta found
+non-blocking mathematical delta / clue candidate
+material finding-or-statement divergence
+```
+
+A `material finding-or-statement divergence` is a correctness/research challenge: route it through the adversarial-review protocol and do not hide it in a clue. A `non-blocking mathematical delta` may coexist with `PASS` or `PASS_WITH_NOTES`; if it yields a genuinely distinct falsifiable research question, apply the clue gate below. `No material mathematical delta found` is an acceptable outcome, but only after the active comparison above has actually been performed.
 
 `FAIL` or `BLOCKED` prevents publication. Correct material defects and obtain a new fresh final review of the changed target.
 
 ### Reviewer-produced clues
 
-If the formal-to-human reconstruction exposes a **genuinely distinct, falsifiable research direction**, the final reviewer may load:
+The **search for a mathematical delta is mandatory; clue creation remains selective**. The reviewer must not stop after establishing that Lean proves the intended theorem. It must inspect whether the exact Lean hypotheses and proof organization expose an additional direction beyond the issue boundary.
+
+If the formal-to-human reconstruction or delta audit exposes a **genuinely distinct, falsifiable research direction**, the final reviewer may load:
 
 ```text
 .agents/skills/mathia-research-clues/SKILL.md
@@ -237,7 +266,9 @@ If the formal-to-human reconstruction exposes a **genuinely distinct, falsifiabl
 
 and create or materially strengthen only a `status: proposed` clue under the owning research line or global clue inbox as that skill permits.
 
-The reviewer, not the executor's convenience, decides whether the clue gate passes. A shorter tactic proof, useful lemma, or import simplification is not enough.
+Examples include a hypothesis relaxation suggested by the actual dependency structure, an equivalent formulation that isolates a new invariant, or a factorization/normal form that turns an exceptional case into a precise new classification problem. A shorter tactic proof, useful lemma, import simplification, or other purely formal convenience is not enough.
+
+The reviewer, not the executor's convenience, decides whether the clue gate passes. Do not suppress a valid clue merely because proving the stronger/generalized statement was outside the controlling formalization issue: the clue records the question without silently expanding the theorem being published.
 
 When a reviewer-generated clue is ready, the executor may include that exact proposed clue in the same final direct-main publication as the Lean artifact, preserving `origin: independent-review` and all normal clue deduplication/evidence-boundary rules. Research Watch alone owns later clue disposition and any substantive finding.
 
