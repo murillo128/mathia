@@ -241,6 +241,27 @@ private lemma shiftedSamplingMatrix_rank {m d start : ℕ}
     (shiftedSamplingMatrix m d start).rank = d := by
   simpa using (shiftedSamplingMatrix_rows_linearIndependent hm hd).rank_matrix
 
+private lemma shiftedSamplingMatrix_rank_min {m d start : ℕ} (hm : 0 < m) :
+    (shiftedSamplingMatrix m d start).rank = min d (Nat.totient m) := by
+  by_cases hd : d ≤ Nat.totient m
+  · rw [min_eq_left hd, shiftedSamplingMatrix_rank hm hd]
+  · have htot : Nat.totient m ≤ d := Nat.le_of_not_ge hd
+    rw [min_eq_right htot]
+    apply le_antisymm
+    · have hrank := Matrix.rank_le_card_width (shiftedSamplingMatrix m d start)
+      rw [primitiveFrequency_card] at hrank
+      exact hrank
+    · have hsub := Matrix.rank_submatrix_le (shiftedSamplingMatrix m d start)
+          (Fin.castLE htot) (Equiv.refl (PrimitiveFrequency m))
+      have hsubmatrix :
+          (shiftedSamplingMatrix m d start).submatrix (Fin.castLE htot)
+              (Equiv.refl (PrimitiveFrequency m)) =
+            shiftedSamplingMatrix m (Nat.totient m) start := by
+        ext i z
+        rfl
+      rw [hsubmatrix, shiftedSamplingMatrix_rank hm le_rfl] at hsub
+      exact hsub
+
 private lemma shiftedSamplingMatrix_surjective {m d start : ℕ}
     (hm : 0 < m) (hd : d ≤ Nat.totient m) :
     Function.Surjective (shiftedSamplingMatrix m d start).mulVec := by
@@ -249,6 +270,15 @@ private lemma shiftedSamplingMatrix_surjective {m d start : ℕ}
   apply Submodule.eq_top_of_finrank_eq
   rw [← Matrix.rank, shiftedSamplingMatrix_rank hm hd,
     Module.finrank_fintype_fun_eq_card, Fintype.card_fin]
+
+private lemma shifted_boundary_product_rank_of_right_surjective {m n d start : ℕ}
+    (hm : 0 < m) (hn : 0 < n) (hdn : d ≤ Nat.totient n) :
+    ((shiftedSamplingMatrix m d start).conjTranspose *
+        shiftedSamplingMatrix n d start).rank = min d (Nat.totient m) := by
+  rw [Matrix.rank, Matrix.mulVecLin_mul,
+    LinearMap.range_comp_of_range_eq_top _
+      (LinearMap.range_eq_top.mpr (shiftedSamplingMatrix_surjective hn hdn)),
+    ← Matrix.rank, Matrix.rank_conjTranspose, shiftedSamplingMatrix_rank_min hm]
 
 private lemma shiftedSamplingMatrix_conjTranspose_injective {m d start : ℕ}
     (hm : 0 < m) (hd : d ≤ Nat.totient m) :
@@ -274,6 +304,34 @@ private lemma shifted_boundary_product_rank {m n d start : ℕ}
       (LinearMap.range_eq_top.mpr (shiftedSamplingMatrix_surjective hn hdn)),
     LinearMap.finrank_range_of_inj (shiftedSamplingMatrix_conjTranspose_injective hm hdm),
     Module.finrank_fintype_fun_eq_card, Fintype.card_fin]
+
+private lemma shifted_boundary_product_rank_of_le_max_totient {m n d start : ℕ}
+    (hm : 0 < m) (hn : 0 < n)
+    (hd : d ≤ max (Nat.totient m) (Nat.totient n)) :
+    ((shiftedSamplingMatrix m d start).conjTranspose *
+        shiftedSamplingMatrix n d start).rank =
+      min d (min (Nat.totient m) (Nat.totient n)) := by
+  by_cases hmn : Nat.totient m ≤ Nat.totient n
+  · have hdn : d ≤ Nat.totient n := by
+      simpa [max_eq_right hmn] using hd
+    simpa [min_eq_left hmn] using
+      shifted_boundary_product_rank_of_right_surjective hm hn hdn
+  · have hnm : Nat.totient n ≤ Nat.totient m := Nat.le_of_not_ge hmn
+    have hdm : d ≤ Nat.totient m := by
+      simpa [max_eq_left hnm] using hd
+    calc
+      ((shiftedSamplingMatrix m d start).conjTranspose *
+          shiftedSamplingMatrix n d start).rank =
+          (((shiftedSamplingMatrix m d start).conjTranspose *
+            shiftedSamplingMatrix n d start).conjTranspose).rank :=
+        (Matrix.rank_conjTranspose _).symm
+      _ = ((shiftedSamplingMatrix n d start).conjTranspose *
+            shiftedSamplingMatrix m d start).rank := by
+        rw [Matrix.conjTranspose_mul, Matrix.conjTranspose_conjTranspose]
+      _ = min d (Nat.totient n) :=
+        shifted_boundary_product_rank_of_right_surjective hn hm hdm
+      _ = min d (min (Nat.totient m) (Nat.totient n)) := by
+        rw [min_eq_right hnm]
 
 /-- The pairwise cross Gram is supported on at most the nearest-period boundary coordinates. -/
 theorem crossGram_rank_le {m n N : ℕ} (hm : 0 < m) (hn : 0 < n) (hmn : m ≠ n) :
@@ -320,7 +378,40 @@ theorem crossGram_rank_eq_of_boundaryDefect_le_totient {m n N : ℕ}
       shifted_boundary_product_rank hm hn hdm hdn]
     simp
 
+/-!
+## WI-086 strengthened max-totient threshold
+
+Associated finding:
+`research/weil_inertia/findings/WI-086-pairwise-ramanujan-rank-defect-starts-past-both-totient-dimensions.md`
+
+The theorem below formalizes only the strengthened pairwise statement that the cross Gram has
+maximal possible rank while the nearest-period boundary defect is at most the larger Euler-totient
+dimension.  It does not formalize WI-086's residual transversality/cyclotomic analysis or any
+surrounding Yang or zeta conclusion.
+-/
+
+/-- Up to the larger totient dimension, the pairwise cross Gram has maximal possible rank. -/
+theorem crossGram_rank_eq_of_boundaryDefect_le_max_totient {m n N : ℕ}
+    (hm : 0 < m) (hn : 0 < n) (hmn : m ≠ n)
+    (hδ : boundaryDefect m n N ≤ max (Nat.totient m) (Nat.totient n)) :
+    (crossGram m n N).rank =
+      min (boundaryDefect m n N) (min (Nat.totient m) (Nat.totient n)) := by
+  classical
+  rw [crossGram_eq_short_boundary hm hn hmn]
+  simp only [boundaryDefect]
+  let ell := Nat.lcm m n
+  let r := N % ell
+  let d := min r (ell - r)
+  change d ≤ max (Nat.totient m) (Nat.totient n) at hδ
+  by_cases hshort : r ≤ ell - r
+  · rw [ite_eq_left hshort,
+      shifted_boundary_product_rank_of_le_max_totient hm hn hδ]
+  · rw [ite_eq_right hshort, Matrix.rank_smul_of_mem_nonZeroDivisors,
+      shifted_boundary_product_rank_of_le_max_totient hm hn hδ]
+    simp
+
 #print axioms crossGram_rank_le
 #print axioms crossGram_rank_eq_of_boundaryDefect_le_totient
+#print axioms crossGram_rank_eq_of_boundaryDefect_le_max_totient
 
 end Mathia.WI081
