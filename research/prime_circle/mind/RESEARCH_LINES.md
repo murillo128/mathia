@@ -6,7 +6,7 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`.
 
-Finite cotangent networks, fixed-support depth, and canonical complete-preimage growth reduce to endpoint/cyclotomic or finite-state data. PC-105 adds a different closure: the cumulative primitive-root cloud has exact Ramanujan/Mertens Fourier coefficients, and every fixed translation-invariant positive kernel is only a weighted package of those classical modes.
+Finite cotangent networks, fixed-support depth, and canonical complete-preimage growth reduce to endpoint/cyclotomic or finite-state data. The cumulative primitive-root cloud has exact Ramanujan/Mertens Fourier coefficients, and every fixed translation-invariant positive kernel is only a weighted package of those classical modes.
 
 A surviving mechanism must therefore retain cross-level incidence, provenance, or another nonconvolutional/non-endpoint structure before cumulative or scalar compression. A decisive observable must change under a control preserving the complete endpoint algebra and the relevant cumulative Fourier package; merely increasing graph rank or replacing discrepancy by a fixed positive kernel is insufficient.
 
@@ -26,10 +26,10 @@ The adelic solenoid preserves exact-order labels, but regular commuting calculi 
 
 The live question is whether the compatible geometry forces a non-scalar, one-sided, singular, or relative operator scale that is neither a scalar reparametrization of the dilation action nor a decoded projective height. A decisive result must derive that scale intrinsically and show that it carries an RH-relevant invariant beyond functional-equation or lattice-zeta structure.
 
-## Test genuinely all-shell Hardy coupling beyond fixed trace-class closure
+## Build a genuinely cross-level Hardy object before conductor universalization
 
 **Linked intuitions:** `MI-005-hardy-shell-core-is-universal`.
 
-The finite Hardy boundary is now closed much further than a cycle-by-cycle audit. Every finite cyclically separated cycle, every ordinary nonconstant mixed shell trace, and every fixed-shell relative moment is cyclotomic-hyperlogarithmic. For a fixed conductor the canonical relative remainder is trace class, and PC-107 shows that its Fredholm zero divisor has reciprocal-summable zeros and `o(R)` counting, incompatible with Riemann's `T log T` zero density under an asymptotically linear spectral normalization.
+Finite/fixed-shell Hardy traces classicalize to cyclotomic periods or trace-class spectral data with the wrong zero-density scale. The canonical large-prime escape is now closed much further: prime-conductor strong limits produce the Hilbert matrix; conductor-microlocal limits produce a universal Carleman--Hilbert defect whose compact off-origin part is trace class; affine scale changes are unitary dilations with nuclear differences; Möbius births are radical-unitary; and the canonical one-new-prime strong limit is reflection tensor inflation of the old fixed-conductor residual.
 
-The live question is therefore a genuinely infinite all-shell mechanism that changes the operator ideal or spectral scale: a canonical non-trace-class/relative completion, an intrinsically forced Hilbert--Schmidt regularized determinant, or another global coupling not determined by any fixed conductor. A decisive positive result must derive that category from the Prime-Circle geometry and show source-specific information beyond cyclotomic periods and universal Hilbert bands; merely resumming fixed-shell moments cannot evade the trace-class density obstruction.
+The live question is therefore a joint all-shell construction formed **before** those reductions, with a non-affine cross-level invariant that is not determined by fixed-conductor blocks plus universal Hilbert/Carleman channels. PC-113 leaves one precise type of information still worth testing: norm or Schatten mass can escape a strong limit even when the strong spectral locations classicalize. A decisive positive result must derive such a joint observable canonically and show source-specific information beyond endpoint/Fourier and conductor-universal controls.

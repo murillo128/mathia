@@ -42,10 +42,18 @@ For linear tests the exact object is the closed measured span `V_F`: its annihil
 
 The remaining question is to compute this span and source-restricted annihilator for mathematically forced explicit-formula families whose admissibility is genuinely global. A decisive positive result must prove completeness in the actual measured category without source-tuned programming; a decisive negative result is an exact alias or nonzero admissible annihilator.
 
-## Classify interaction support and stability beyond independent product sources
+## Classify interaction support and collective stability beyond independent product sources
 
 **Linked intuitions:** `MI-006-interaction-support-governs-marginal-fidelity`.
 
-The Boolean marginal model has now been extended in three directions. Independent product spaces admit an exact Hoeffding interaction decomposition; bounded multiplicative channel degree is exactly channel-cover number; and arbitrary dependent sources have an exact degree filtration given by the fusion span of actual sigma-field joins. Exact support recovery therefore survives far beyond Walsh coordinates, but the grading becomes source-dependent under dependence.
+Arbitrary dependent sources have an exact degree filtration given by fusion spans of sigma-field joins, but support recovery is only the first gate. AF-040 shows that multichannel stability is collective: all pairwise sums can be closed with fixed positive pairwise angle while the full algebraic sum is nonclosed and the joint fusion lower bound vanishes.
 
-The next gate is stability. Even when a target belongs to the retained closed span, an infinite-dimensional decoder may be unbounded; for two channels the sharp constant is controlled by the Friedrichs angle. A decisive theorem should compute both the source-dependent retained support and a uniform reconstruction modulus for a mathematically forced family. A claimed minimal lift is incomplete if it restores algebraic recoverability while its stability constant collapses in the limit.
+A decisive theorem should compute both the source-dependent retained support and a **global** lower fusion-frame/closed-sum modulus for a mathematically forced family. Pairwise conditioning is not enough. A claimed minimal lift is incomplete if it restores algebraic recoverability while the collective stability constant collapses in the intended limit.
+
+## Compute robust fidelity as distance to the collision boundary in the category actually used downstream
+
+**Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision` and `MI-003-fidelity-endpoints-are-category-dependent`.
+
+AF-041--AF-045 identify exact distance-to-loss formulas in Hilbert, Euclidean-linear, compact smooth, and general Lipschitz settings. The live question is how far this principle extends to operator families, quotient/moduli problems, stochastic channels, and asymptotic completions, and how those margins compose.
+
+A decisive result must specify the perturbation topology and prove an exact or sharp distance-to-collision formula there. For arithmetic use, the important stress test is whether a rational-prime discriminator remains a positive distance from matched non-prime controls in the same topology required by the final analytic or spectral theorem.

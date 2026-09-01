@@ -1,47 +1,46 @@
-# MI-003 — The fourth-moment welding difficulty survives every source-agnostic reboxing
+# MI-003 — Scalarizing the Yang lock moves the hard part into signed finite-window Ramanujan leakage
 
-**Evidence level:** supported for the exact source reductions, sparsity/density theorems, and controlled power region; the remaining weighted-energy/multivariate analytic bridge is open
+**Evidence level:** supported for the exact source reductions, positive/unweighted scalar-energy obstructions, Ramanujan projector decomposition, and pairwise boundary-rank theorems; the remaining signed many-modulus/source-weighted analytic bridge is open
 
 ## Core intuition
 
-The unresolved Yang--Yang fourth-moment obstruction is now a source-faithful representation problem with a quantitative conservation law. Keeping the physical lock pays growing coefficients; freeing the shifts pays a power-sparse two-dimensional incidence selector; fixed finite `L^p` control still pays a power through duality; coordinate-wise pruning cannot densify the long-shift relation; scalar LCM projection loses the incidence sparsity and in fact has near-linear effective support; and aggregating the bases produces a fixed-coefficient multivariate polynomial system outside the audited quantitative theorem interface. None of these source-agnostic changes removes the hard part.
+The unresolved Yang--Yang fourth-moment obstruction is a source-faithful representation problem with a conservation law. Freeing physical shifts produces a power-sparse two-dimensional selector; scalar LCM projection removes that sparsity but produces a near-linear, maximally additively energetic positive family; and using signs does not help inside the existing positive large-sieve interface. After scalarization, genuine sign cancellation can occur only through finite-window leakage between otherwise orthogonal Ramanujan subspaces.
 
 ## Strongest justified principle
 
-WI-047--WI-054 separate the deterministic local main from the analytic residual and establish a genuine controlled power region. WI-055--WI-057 show that marginal pair discrepancy and one-sided dispersion do not automatically control the conditioned four-prime covariance.
+WI-068--WI-076 establish the representation boundary. Free independent shifts expose finite-complexity prime patterns only after projecting back to a thin exact slope slice. The physical two-dimensional incidence lies in an `lcm << X` envelope of density `X^{-1+o(1)}`, so every source-agnostic fixed finite `L^p` restriction pays a power and Cartesian reboxing cannot remove the long-shift GCD sparsity. Scalar LCM projection behaves oppositely: one fixed source slope already gives at least `X/(log X)^4` effective nonzero scalar moduli.
 
-WI-068--WI-070 identify the original three representations. Free independent shifts make finite-complexity prime-pattern input available only after projecting back to the exact slope slice `(h_1,h_2)=(rk,qk)`, while varying-base aggregation produces a source-faithful degree-two multivariate polynomial system with anisotropic boxes and outer source weights.
+WI-077 closes the ordinary unweighted additive-energy repair. A near-linear scalar family inside an `O(X)` interval has symmetric and asymmetric additive energy `Q^{3-o(1)}`, the maximal exponent, so the Baker--Munsch--Shparlinski sparse-moduli theorem gives no fixed-power gain at the natural density. WI-078 strengthens this to the actual positive Yang weights: their weighted energies have the maximal exponent, and every pruning that retains a subpolynomial fraction of positive source mass keeps that exponent. Positive support/energy reduction is therefore not the missing theorem.
 
-WI-071 shows that even after aggregating all primitive slopes, the physical shift incidence support lies inside `lcm(|h_1|,|h_2|) << X` and the maximally enlarged envelope has only `O(X(log X)^2)` points in an ambient `X^2` square. WI-072 makes the resulting norm cost exact: a selector of density `delta` has dual norm at least `delta^{-1/p}` against every fixed finite `L^p` ambient estimate. WI-073 closes separate coordinate pruning: on long-shift shells the same source has `gcd(|h_1|,|h_2|)=|k|`, and extremal GCD/LCM theory prevents subpolynomially dense Cartesian reboxing from making the relation positive-density.
+WI-079 identifies what the surviving signed route would have to estimate. The published scalar large sieve is a positive sum of squared modulus blocks, so passing a centered signed combination through it replaces the weights by their absolute values. Before that positivity projection, the signed operator is the Toeplitz Ramanujan sum
 
-WI-075 correctly warns that projecting incidences to the scalar `L=lcm(|h_1|,|h_2|)` need not preserve two-dimensional sparsity. WI-076 now resolves the missing weighted-support cardinality in the opposite direction. On one fixed source slope `(b_1,b_2)=(5,7)`, Bienvenu's finite-complexity prime-pattern asymptotic plus a trivial slice multiplicity bound gives
+`R_omega(h) = sum_m omega_m c_m(h)`,
 
-\[
-\#\mathcal L^{\rm eff}(X)\gg X/(\log X)^4.
-\]
+and small operator norm forces simultaneous cancellation of the totient diagonal and low-divisor Möbius marginals. Ordinary signed additive energy is not an input to this operator problem.
 
-Thus the **actual nonzero weighted scalar LCM support is not power-sparse**. A scalar sparse-large-sieve strategy cannot obtain the needed power localization gain from support cardinality. The useful scalar structure, if any, must be subtler: weighted cancellation, additive energy, factorization labels, or another theorem exploiting the source weights rather than mere set size.
+WI-080 then diagonalizes the complete-period model exactly. On any common period, the Ramanujan modulus blocks are pairwise orthogonal projections; signs merely change the signs of spectral blocks and give **no** operator/Schatten/rank cancellation. Hence every cross-modulus signed gain is created solely by restriction to a finite consecutive source window.
 
-The conservation law is therefore sharper than before. The two-dimensional incidence is power-sparse and expensive to restrict from ambient boxes; its scalar projection is near-linear and loses that cheap sparsity asset; the multivariate representation preserves the source but crosses a theorem boundary. Difficulty moves between coefficient size, incidence sparsity, weighted scalar structure, and multivariate polynomial complexity.
+WI-081 localizes that leakage further. For a pair `m,n`, the cross-Gram rank is bounded by the distance `delta_N(m,n)` from the window length to the nearest multiple of `lcm(m,n)`, and this bound is exact whenever `delta` is at most both Ramanujan dimensions. For separated prime moduli it is generically maximal once the boundary defect reaches the smaller dimension. Only a close-prime phase strip admits additional rank deficiency. Thus even the pairwise finite-window route has little generic rank room left.
+
+The scalar conservation law is now sharp: two-dimensional source fidelity costs sparse incidence; positive scalarization costs maximal density/energy; signed scalarization avoids that positive obstruction only by relying on nonperiodic time-limiting interaction among Ramanujan subspaces.
 
 ## What remains possible
 
-The surviving interfaces are precise: a Yang-specific weighted incidence/rectangle estimate; a scalar theorem exploiting the actual weights/additive energy rather than support cardinality; a labelled scalar transform retaining reduced-slope factorization; or a quantitative multivariate polynomial von-Mangoldt theorem with the actual anisotropic boxes and outer weights. The base-aggregated polynomial representation remains especially important because it avoids projecting an ambient theorem back onto a sparse slice.
+The viable scalar route must use the **actual centered signed Yang coefficients** and prove cancellation in the finite-window Ramanujan operator beyond what pairwise rank alone can supply — for example through singular values, coherent dependencies across many modulus pairs, or a source-forced structure in the close-modulus phase. A labelled transform retaining reduced slopes, a direct weighted two-dimensional incidence theorem, or the base-aggregated multivariate polynomial representation remain distinct source-faithful alternatives.
 
-A generic free-shift theorem, fixed-`L^p` ambient bound, Cartesian reboxing, or scalar support-counting argument is insufficient. Any scalar route must now prove a nontrivial **weighted** property beyond the near-linear support forced by WI-076.
+Any argument that restores complete residue periods before estimating, applies a positive scalar large sieve after absolute values, prunes only positive mass, or relies only on scalar support/additive energy is now closed as a cheap interface.
 
 ## Status / novelty
 
-The lock identities and source reductions are persisted findings. Hölder/Parseval, GCD/LCM extremal theory, Bienvenu's prime-pattern theorem, and sparse-modulus large-sieve theory are classical/prior-art inputs. The synthesis is a sharpened theorem-interface statement, not a proof that the Yang route is impossible.
+Ramanujan sums/subspaces, additive-energy inequalities, large-sieve positivity, Fourier truncation, and Vandermonde rank are classical. The persisted Mathia content is the exact placement of the Yang source inside these models and the resulting identification of finite-window Ramanujan leakage as the only remaining sign-sensitive scalar channel.
 
 ## Falsification criterion
 
-Produce a source-agnostic fixed-`L^p` or Cartesian restriction avoiding the proved sparsity costs, or a scalar support-cardinality theorem giving a power saving despite WI-076's `X/(log X)^4` lower bound. A positive advance should instead close one weighted/source-faithful interface with every normalization and source condition explicit.
+Find a power-saving positive/unweighted scalar-energy interface contradicting WI-077--WI-078, cross-modulus norm cancellation on a complete common period contradicting WI-080, or a stronger generic pairwise rank saving in the exact WI-081 regime. A positive advance should estimate the signed finite-window operator with the exact source coefficients rather than a support surrogate.
 
 ## Lean-formalizable core
 
-- Locked-to-free lcm/gcd identities.
-- LCM-sublevel incidence cardinality bound.
-- Sharp selector dual-norm lower bound.
-- Cartesian large-GCD density implication.
-- Multiplicity conversion from positive weighted first moment to near-linear effective scalar support.
+- Positive weighted energy lower bounds on interval-supported measures.
+- Loewner majorization of signed modulus blocks by absolute weights.
+- Ramanujan-projector orthogonality on common periods.
+- Pairwise LCM-boundary factorization and exact small-boundary rank.

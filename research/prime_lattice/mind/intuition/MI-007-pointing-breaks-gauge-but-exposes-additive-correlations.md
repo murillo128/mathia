@@ -1,38 +1,40 @@
-# MI-007 — Ordinary prime-power Gram spectra classicalize through the first growing-depth transition
+# MI-007 — Growing-depth coherent Gram spectra classicalize through a Nyquist/Schatten sampling boundary
 
-**Evidence level:** supported by exact time-dilation/rank/trace-norm identities, classical prime counting, and conditional Hardy--Littlewood bulk input only where explicitly stated
+**Evidence level:** supported by exact time-dilation/rank/trace identities, quantitative PNT transport, all-horizon Hilbert--Schmidt control, and classical prolate sampling theory
 
 ## Core intuition
 
-Prime support and exponent depth do carry arithmetic data, but the ordinary finite-time Gram spectrum now has a much larger classicalized region than the prime-only bulk. Fixed prime-power depth is exactly a time-dilated prime layer; fixed depth tails are dominated in dimension by their shallowest layer; and even when a growing-depth tail reaches the first `sqrt(log X)` population transition, the natural von-Mangoldt half-weight collapses its normalized spectrum. The first scalar repair removes the depth grading rather than revealing a new phase.
+Prime-power support and depth retain arithmetic data, but the ordinary coherent Gram construction loses far more of it than the first bulk arguments suggested. Through the first growing-depth range, the one-point shell becomes log-uniform, the normalized coherent operator is Hilbert--Schmidt universal at **every** observation horizon, and the remaining trace-class discrepancy develops a classical finite-rank/Nyquist phase. Neither convergence nor failure of convergence in these ordinary Schatten topologies is arithmetic evidence by itself.
 
 ## Strongest justified principle
 
-PL-081--PL-087 already separate bulk from extremes. At the prime mean-gap horizon the support-only bulk is the Poisson-sinc law under the full local Hardy--Littlewood hierarchy, while bounded clusters destroy uniform extreme conditioning. Prime-only von-Mangoldt weighting is asymptotically deterministic on a fixed shell, and higher prime powers have vanishing rank in the full ordinary bulk.
+PL-081--PL-093 establish the first layer: fixed depth is exact time dilation of the prime-support Gram; deeper fixed tails are rank-negligible; the first population transition occurs at `K ~ alpha sqrt(log X)`; natural von-Mangoldt weighting collapses normalized trace/determinant; and the first `K^2` repair becomes normalized-trace-norm equivalent to the unweighted shell envelope through that transition.
 
-PL-088 closes the first depth-conditioned loophole exactly. On `p^k`, the logarithmic frequency is `k log p`, so the depth-`k` Gram at horizon `T` is the ordinary prime-support Gram at base scale `Y=X^(1/k)` and time `kT`. The inherited von-Mangoldt half-weight adds only the deterministic factor `1/k^2` and a macroscopic shell envelope. At its own mean-gap scale the depth layer therefore has the same local prime-process bulk, not a new exponent-depth phase.
+PL-094 removes the remaining one-point shell freedom. For `K -> infinity`, `K=O(sqrt(log X))`, the logarithmic shell coordinate converges to the elementary log-uniform law, and the diagonal envelope contributions to trace and log determinant are universal.
 
-PL-089 shows that retaining **all** cross-depth couplings above any fixed minimum depth `K` does not change the ordinary empirical law: deeper layers occupy only `o(N)` rows/columns, so an arbitrary Hermitian tail matrix has the same weak bulk as its depth-`K` principal block. PL-090 extends that rank mechanism to growing `K=o(sqrt(log X))` and identifies the first population transition at `K~alpha sqrt(log X)`, where adjacent depth offsets acquire a geometric population law. That transition is forced by ordinary prime density and is not itself RH-sensitive.
+PL-095--PL-096 then control the off-diagonal coherent spectrum. Quantitative PNT first gives trace-norm transport below the inverse-PNT-error horizon. More strongly, PL-096 proves uniform `S_2` convergence of the normalized empirical covariance to the deterministic continuum time-band operator for **all** `T>0`. Ordered eigenvalues are uniformly `ell^2` close, fixed positive Fredholm determinants agree asymptotically, and along every `T_X -> infinity` the normalized operator norm tends to zero. Thus pushing the observation time beyond the PNT-error scale does not expose arithmetic in the `S_2` topology.
 
-PL-091--PL-093 then show why the new population mass still fails to create a natural von-Mangoldt bulk. For every `K(X)->infinity`, positivity and the diagonal `1/k^2` amplitude give normalized trace `O(K^{-2})`, hence empirical measure `->delta_0` uniformly in observation time. The determinant root collapses at the same scale. The first scalar normalization that can avoid this is `K^2`; but throughout `K=o(sqrt(log X))` and `K~alpha sqrt(log X)`, the `K^2`-rescaled matrix is normalized-trace-norm equivalent to the unweighted shell-envelope Gram. Consequently every ordinary Lipschitz spectral statistic and every bounded-`z` per-site `log det(I+zA)` loses the specifically von-Mangoldt depth factor.
+The `S_1` endpoint has a different but still classical obstruction. PL-097 shows that when `T_X/N_X -> infinity`, finite empirical rank forces the trace distance from the diffuse comparator to its maximal value. PL-098 identifies the exact finite-ratio rank floor through the prolate time-bandwidth dimension: a positive universal defect appears once `T_X/N_X` exceeds `2 pi/Delta`. PL-099 supplies the opposite control below that threshold: a deterministic midpoint frequency grid converges to the same continuum comparator in trace norm. Hence the basic sub-/super-Nyquist trace-class phase is sampling geometry, not prime arithmetic.
+
+The exact critical ratio and the actual prime cloud's **excess** over the optimal rank floor may contain finer spacing information, but the existence, disappearance, or universal minimum size of the raw `S_1` defect does not.
 
 ## What remains possible
 
-The surviving prime-power spectral sector is therefore **non-Lipschitz or non-bulk**: hard-edge and inverse statistics, extreme eigenvalues, condition numbers, target-relative Schur complements, singular/growing test functions, or a completed indefinite Weil object that weights sparse/deep layers before ordinary empirical normalization. Growth regimes beyond the audited `sqrt(log X)` transition are also structurally open, but their population effect alone is not arithmetic evidence.
+The surviving sector is genuinely finer than ordinary normalized Gram spectra: target-relative Schur complements, hard-edge/inverse statistics, condition numbers, singular or growing test functions, microscopic spacing observables, or the excess finite-window error after subtracting the sharp prolate rank floor. Any such candidate must also survive generalized-prime/Poisson controls rather than merely distinguish a discrete cloud from a continuum.
 
-A positive candidate must show where rational-prime information enters after the deterministic time-dilation, rank, trace, and `K^2` trace-norm controls have been removed. Matching only local Hardy--Littlewood/Poisson statistics or the deterministic depth population is insufficient.
+A later depth regime remains open only if it introduces a source-specific mechanism beyond the deterministic population/sampling geometry already isolated here.
 
 ## Status / novelty
 
-The PNT, Hardy--Littlewood, Poisson, rank-interlacing, trace/determinant inequalities, and Schatten norm estimates are classical ingredients. The persisted Prime-Lattice content is the exact organization of these controls and the resulting closure of ordinary prime-power Gram bulk through the first growing-depth transition.
+PNT estimates, prolate time-band limiting, finite-rank approximation, Schatten inequalities, and sampling theory are classical ingredients. The persisted Prime-Lattice content is the exact organization of the growing prime-power Gram into log-uniform envelope, all-horizon `S_2` universality, and a classical Nyquist-controlled `S_1` boundary.
 
 ## Falsification criterion
 
-Produce, under the hypotheses of PL-093, an ordinary Lipschitz spectral statistic of the `K^2`-rescaled natural von-Mangoldt Gram that stays separated from the unweighted envelope Gram, or a fixed-depth/tail weak empirical law contradicting the exact time-dilation/rank reductions. A positive advance should instead isolate a genuinely non-Lipschitz or target-relative statistic and pass generalized-prime controls.
+Produce, in the audited growing-depth regime, a normalized `S_2` spectral statistic separated from the continuum comparator despite PL-096, or show that the `S_1` rank floor depends on arithmetic locations rather than only rank and prolate spectrum. A positive advance should isolate an excess or target-relative statistic after those universal components are removed.
 
 ## Lean-formalizable core
 
-- Fixed-depth time-dilation identity.
-- Rank stability of depth-tail empirical spectra.
-- Positive trace and determinant collapse from the `1/k^2` amplitude.
-- `K^2` normalized trace-norm equivalence.
+- Fixed-depth time-dilation and rank reductions.
+- `K^2` normalized trace-norm envelope equivalence.
+- Finite-rank trace-distance lower bound.
+- Exact best rank-`N` trace approximation formula for a positive comparator.
