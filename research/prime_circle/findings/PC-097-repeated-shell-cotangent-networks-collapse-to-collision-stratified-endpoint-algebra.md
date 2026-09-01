@@ -1,0 +1,231 @@
+# PC-097 — repeated-shell cotangent networks collapse to collision-stratified endpoint algebra
+
+**Status:** `EXACT-DERIVED` + `LITERATURE+DERIVED` + `CLASSICAL-IDENTITY` + `STRUCTURAL-COLLAPSE` + `DECISIVE-BOUNDARY` for arbitrary finite networks built from the intrinsic zero-diagonal Prime-Circle cotangent kernel, finite shell-local scalar weights, and exact-order shell labels that may repeat. PC-096 proved endpoint compression only when the participating vertex shells were globally pairwise disjoint. Repeated shell labels do not open a new finite hidden-shell tensor: the assignment space splits into finitely many equality strata, every nonzero stratum contracts coincident vertices, and the remaining injective same-shell sums reduce by the same confluent Cauchy partial fractions applied to punctured shells. The only extra data are one-body **diagonal-punctured Cauchy jets** and endpoint equality-stratum information.
+
+This removes the repeated-shell/coincidence exception left explicitly by PC-096. It does **not** cover a genuinely different intrinsic edge operator or higher tensor, infinite-depth/limit constructions, Hardy/Hankel operators, global uniformization/monodromy, or cross-level organizations of the surviving one-body endpoint jets. The exact obstruction is: **finite reuse of the same primitive shell, including arbitrary collision strata and finite graph topology, does not by itself preserve irreducible interior information for the canonical cotangent kernel.**
+
+## 1. The diagonal is a finite collision constraint, not a new pole species
+
+For distinct nonzero circle points write
+
+\[
+K(z,u)=i\cot\!\left(\frac{\theta_z-\theta_u}{2}\right)
+=\frac{z+u}{u-z}.
+\]
+
+The finite Prime-Circle cotangent matrices use the zero-diagonal extension
+
+\[
+\kappa(z,u)=
+\begin{cases}
+K(z,u),&z\ne u,\\
+0,&z=u.
+\end{cases}
+\]
+
+When two network vertices range over the same exact-order shell, the rational formula therefore has to be combined with a finite equality constraint. The key point is that an assignment of shell variables has a unique **equality partition** inside every repeated shell label. On a fixed equality stratum, vertices in the same block carry one common root.
+
+If an original cotangent edge has both endpoints in the same equality block, that entire stratum contributes zero because `\kappa(z,z)=0`. Otherwise contract every equality block. Local scalar weights on coincident vertices multiply, and several original edges may become parallel edges between two contracted blocks. PC-096 already handles arbitrary finite edge multiplicity once the contracted block variables are distinct. Thus collisions do not create a new local interaction; they create a finite family of quotient networks together with injectivity constraints among distinct blocks carrying the same shell label.
+
+## 2. Injectivity is exactly a punctured-shell confluent sum
+
+The remaining issue is that distinct equality blocks carrying the same shell label must be assigned distinct roots. This is handled locally without inclusion of any new operator.
+
+Let `B` be a finite shell, `f:B->C`, and let `W\subseteq B` be the finite set of same-shell values already occupied by surviving blocks. Let `z_1,...,z_d` be distinct pole endpoints with multiplicities `m_1,...,m_d`, and assume every `z_i` that belongs to `B` is contained in `W`. Set
+
+\[
+R(u)=\prod_{i=1}^{d}K(z_i,u)^{m_i}.
+\]
+
+As in PC-096, for `u` away from the endpoints the repeated-pole partial fraction expansion is
+
+\[
+R(u)=1+\sum_{i=1}^{d}\sum_{r=1}^{m_i}
+\frac{A_{i,r}}{(u-z_i)^r},
+\]
+
+where the coefficients `A_{i,r}` are endpoint rational functions obtained from the usual confluent derivative formula. Define the punctured transforms
+
+\[
+H_{B,r;W}^{f}(z)
+=\sum_{u\in B\setminus W}\frac{f(u)}{(u-z)^r},
+\qquad
+s_B(f)=\sum_{u\in B}f(u).
+\]
+
+Summing the partial fraction identity only over the admissible values `B\setminus W` gives the exact local reduction
+
+\[
+\boxed{
+\sum_{u\in B\setminus W}
+ f(u)\prod_{i=1}^{d}K(z_i,u)^{m_i}
+=
+s_B(f)-\sum_{w\in W}f(w)
++\sum_{i=1}^{d}\sum_{r=1}^{m_i}
+ A_{i,r}H_{B,r;W}^{f}(z_i).
+}
+\]
+
+So an injectivity constraint does not leave a hidden shell index. It merely punctures the one-body Cauchy transforms already present in PC-096.
+
+## 3. Punctured transforms reduce to ordinary or diagonal-punctured one-body jets
+
+The punctured transforms themselves contain no higher-body shell object. If `z\notin B`, then
+
+\[
+\boxed{
+H_{B,r;W}^{f}(z)
+=
+H_{B,r}^{f}(z)
+-\sum_{w\in W}\frac{f(w)}{(w-z)^r},
+}
+\]
+
+where `H_{B,r}^{f}(z)=\sum_{u\in B}f(u)/(u-z)^r` is the ordinary one-body transform of PC-096.
+
+If `z\in W\subseteq B`, define instead the diagonal-punctured jet
+
+\[
+\widehat H_{B,r}^{f}(z)
+=\sum_{u\in B\setminus\{z\}}\frac{f(u)}{(u-z)^r}.
+\]
+
+Then
+
+\[
+\boxed{
+H_{B,r;W}^{f}(z)
+=
+\widehat H_{B,r}^{f}(z)
+-\sum_{w\in W\setminus\{z\}}
+\frac{f(w)}{(w-z)^r}.
+}
+\]
+
+Hence all exclusions generated by repeated shell labels reduce to one-body ordinary/diagonal-punctured jets plus finite endpoint Cauchy factors. The number of exclusions is controlled by the finite network, not by the shell cardinality.
+
+For the unweighted primitive shell `B=P_n^*` and `z\in P_n^*`, write
+
+\[
+\Phi_n(t)=(t-z)Q_z(t).
+\]
+
+Then the diagonal-punctured primitive-shell jets are local cyclotomic derivative data:
+
+\[
+\boxed{
+\widehat H_{P_n^*,r}^{1}(z)
+=
+\frac1{(r-1)!}
+\left.
+\frac{d^{r-1}}{dt^{r-1}}
+\left(-\frac{Q_z'(t)}{Q_z(t)}\right)
+\right|_{t=z}.
+}
+\]
+
+In particular,
+
+\[
+\boxed{
+\widehat H_{P_n^*,1}^{1}(z)
+=-\frac{\Phi_n''(z)}{2\Phi_n'(z)}.
+}
+\]
+
+Thus confluence at a root of the very shell being summed does not reveal a new global period: it yields finite jets of the same cyclotomic polynomial at that root.
+
+## 4. Finite repeated-shell networks close under collision stratification and elimination
+
+Consider a finite multigraph `G=(V,E)`. Each vertex `v` carries a finite exact-order shell `S_v=P_{n(v)}^*` and a scalar local weight `f_v:S_v->C`; shell labels may repeat arbitrarily. Every edge contributes one factor of the zero-diagonal kernel `\kappa`. Some vertices may remain exposed and all others are summed over their shells.
+
+For each shell label `n`, partition the vertices with `n(v)=n` according to equality of their assigned roots. The product assignment space is the finite disjoint union over all such partition choices. Fix one stratum.
+
+1. Contract every equality block. If an original edge becomes a self-loop, the stratum is zero.
+2. Otherwise the contracted graph is a finite multigraph. Distinct blocks with the same shell label are constrained to take injectively distinct shell values; blocks with different exact-order labels automatically range over disjoint sets.
+3. Eliminate hidden contracted blocks one at a time. When eliminating a block with shell `B`, let `W` be the values occupied by the surviving blocks with that same shell. The local dependence on the eliminated variable is a one-body weight times finitely many Cauchy poles, possibly repeated because of parallel edges or earlier elimination. Section 2 replaces that sum by punctured one-body jets and endpoint Cauchy factors.
+4. Section 3 rewrites every punctured jet using an ordinary or diagonal-punctured one-body jet plus finitely many pairwise endpoint terms. The algebraic class is therefore preserved at the next elimination step.
+
+Induction on the number of hidden blocks proves, on every equality stratum,
+
+\[
+\boxed{
+\begin{array}{c}
+\text{finite zero-diagonal cotangent multigraph}\\
++\text{ arbitrary repeated finite shell labels}
+\end{array}
+\Longrightarrow
+\text{finite collision-stratified endpoint algebra}.
+}
+\]
+
+If no vertices remain exposed, each stratum is a scalar. If exposed same-shell vertices remain, the final expression is piecewise by their finite equality partition; those equality indicators are endpoint data, not hidden-shell memory. Summing over the finitely many strata completes the reduction for the original unrestricted network.
+
+This argument also shows why the boundary left by PC-096 was technical rather than a new information carrier. Global shell disjointness allowed one to ignore the diagonal entirely. Dropping it requires bookkeeping of equality partitions and punctured sums, but it does not alter the rational-function closure mechanism.
+
+## 5. Small collision check: a repeated edge at a shell point
+
+For `u\ne z`,
+
+\[
+K(z,u)^2
+=1+\frac{4z}{u-z}+\frac{4z^2}{(u-z)^2}.
+\]
+
+If `z\in B` and the diagonal value is set to zero, summing over the same shell gives exactly
+
+\[
+\boxed{
+\sum_{u\in B}\kappa(z,u)^2
+=|B|-1
++4z\widehat H_{B,1}^{1}(z)
++4z^2\widehat H_{B,2}^{1}(z).
+}
+\]
+
+The coincident endpoint has not produced an additional tensor or spectral parameter. It has simply converted two simple cotangent factors into a double confluent pole evaluated by diagonal-punctured one-body jets.
+
+## 6. Prime-Circle consequence and matched controls
+
+For exact-order roots, different shell labels are disjoint because a root has a unique order. Therefore **all** finite collision phenomena in the canonical cotangent network come from repeated use of the same shell label, precisely the case classified above.
+
+Nothing in the reduction uses primality or even roots of unity beyond the final specialization of one-body transforms. The equality-stratum decomposition, punctured finite sums, and confluent partial fractions work for arbitrary finite point sets on the circle equipped with the same zero-diagonal rational cotangent rule. Replacing primitive shells by matched arbitrary finite sets leaves the composition law unchanged.
+
+Consequently, no claimed prime-specific curvature, associator, holonomy, or finite spectral carrier can arise solely from reusing a shell, permitting collisions, adding finite cycles, or adding finite edge multiplicity. Prime-Circle arithmetic can survive only in the endpoint one-body profiles themselves, and in the primitive case those profiles are finite cyclotomic derivative jets.
+
+No free complex parameter `s`, gamma factor, functional equation, zeta zero divisor, or critical-line selector is generated by this finite collision completion.
+
+## 7. Prior-art and novelty audit
+
+No historical novelty is claimed for either algebraic engine.
+
+- PC-096 already reduces repeated cotangent poles to confluent Cauchy partial fractions. Günter Mühlbach's Cauchy–Vandermonde/Hermite interpolation theory treats prescribed multiple poles and multiple nodes with the corresponding confluent derivative data; the 1996 paper gives the confluent Cauchy–Vandermonde matrix explicitly, and the 2000 survey treats multiple nodes and multiple poles systematically. Thus diagonal-punctured/repeated-pole endpoint jets belong to a classical rational-interpolation framework.
+- The decomposition of finite assignment sums by equality partitions, and the conversion between unrestricted and injective assignments through quotient graphs and partition-lattice Möbius inversion, are classical combinatorics. Lovász's *Large Networks and Graph Limits*, equations (5.16)–(5.18), gives the standard graph-homomorphism version. The weighted cotangent argument above does not need to import that theorem, but it sits on the same classical collision-partition mechanism.
+- The Prime-Circle-specific contribution is only the **research boundary**: combining equality-stratum contraction with the PC-096 confluent reduction removes the repeated-shell/coincidence exception for every finite network built solely from the canonical cotangent kernel and shell-local scalar weights.
+
+A directed search across Cauchy–Vandermonde confluence, injective/quotient graph sums, cotangent product identities, and roots-of-unity shell interactions found no reason to regard the local ingredients as new, and no prior result that changes the stated Prime-Circle boundary into an RH mechanism.
+
+## 8. Stress tests and falsification controls
+
+The reduction is finite and directly auditable.
+
+1. Choose a finite set `B`, an occupied set `W`, arbitrary scalar weights `f`, repeated pole multiplicities, and endpoints satisfying the admissibility condition. Compare the direct sum over `B\setminus W` with the punctured repeated-star formula of Section 2.
+2. Set `W=emptyset`; the identity must reduce exactly to the PC-096 repeated-star formula.
+3. Put one pole endpoint `z` inside `B` and in `W`; the formula must remain finite and reduce to the diagonal-punctured jets rather than evaluate a singular rational term.
+4. For `B=P_n^*`, verify `\widehat H_{1}(z)=-\Phi_n''(z)/(2\Phi_n'(z))` directly from `\Phi_n(t)=(t-z)Q_z(t)`.
+5. On a finite network with repeated shell labels, enumerate assignments by equality partition. Any partition collapsing an original edge must contribute zero; every other partition must agree with the contracted injective network.
+6. Eliminate the same nonzero stratum in two different hidden-vertex orders. Finite Fubini guarantees equality; disagreement would expose a failure of the punctured closure step.
+7. Replace every primitive shell by an arbitrary finite point set with the same label-repetition pattern and zero-diagonal cotangent rule. The collision/elimination mechanism must be unchanged.
+
+A counterexample consisting of a finite canonical-cotangent network with scalar local weights and repeated finite shell labels that cannot be reduced by these steps refutes the theorem. A construction using a genuinely different edge operator/tensor, an infinite network/limit, or a later nonlocal organization of endpoint jets does not.
+
+## 9. Remaining frontier
+
+PC-092, PC-094, PC-096 and the present result now close the finite canonical-cotangent hierarchy without a shell-disjointness loophole:
+
+- serial finite weighted paths collapse to endpoint displacement;
+- finite multileg trees collapse to endpoint forest algebra;
+- arbitrary finite disjoint-shell multigraphs collapse to confluent endpoint algebra;
+- **arbitrary finite repeated-shell/collision multigraphs collapse to a collision-stratified version of the same endpoint algebra.**
+
+Therefore simply adding finite relational memory to the canonical cotangent kernel—more shells, repeated shells, collisions, branching, loops, or parallel edges—does not escape endpoint compression. A surviving finite construction must use a genuinely different intrinsic operator/tensor. The other untouched directions are infinite-depth/limit organization, Hardy/Hankel structures already studied separately, global uniformization/monodromy, or cross-level use of the surviving endpoint profiles that cannot be reduced to a fixed finite cotangent network.
