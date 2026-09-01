@@ -35,13 +35,13 @@ When a live mathematical question becomes a bounded machine-answerable subproble
 
 That skill governs whether computation is actually warranted, creation of the self-contained execution issue, and the handoff boundary after which Research Watch returns to ordinary research.
 
-When a canonical finding matures into a stable, high-value, reusable Lean theorem target, load:
+When a canonical finding matures into a stable, high-value Lean theorem target for **verification, reusable formal infrastructure, or structural fertility**, load:
 
 ```text
 .agents/skills/mathia-formalization-design/SKILL.md
 ```
 
-That skill governs deduplication, Gate 0, issue construction, and publication. A ready formalization candidate is handed off directly as a GitHub issue; Research Watch does not maintain a separate Lean-candidate queue.
+A theorem being prior art or classical does not by itself disqualify it from this handoff. The formalization-design skill decides whether the target has enough structural pressure to justify Lean rather than mere transcription. That skill governs deduplication, Gate 0, issue construction, and publication. A ready formalization candidate is handed off directly as a GitHub issue; Research Watch does not maintain a separate Lean-candidate queue.
 
 ## Task-specific inputs
 
@@ -276,28 +276,44 @@ Labels may be combined when needed, but exactness, provenance, novelty, and rema
 
 ### 5a. Hand off mature Lean formalization targets
 
-After the result has been reconstructed, stress-tested, checked against prior art, and classified, ask whether a canonical finding now contains a **stable, bounded, reusable theorem surface** whose Lean formalization would materially improve confidence or reuse.
+After the result has been reconstructed, stress-tested, checked against prior art, and classified, ask whether a canonical finding contains a **stable, bounded theorem surface** whose Lean formalization has material value for verification, reusable formal infrastructure, or **formalization fertility**.
+
+Formalization fertility means that exact proof construction is plausibly useful as a conceptual pressure test even when the target theorem is already classical or known prior art. The expected value is not novelty of the theorem itself, but the possibility that formalization makes the proof's minimal hypotheses, load-bearing intermediate object, asymmetry, factorization, kernel/range structure, quotient, normal form, invariant, or alternate representation explicit enough to generate a new falsifiable question.
+
+Do **not** formalize prior art indiscriminately. Prefer fertility targets where at least one of the following is true:
+
+- the theorem marks an exact structural boundary such as equality, sharpness, rank, kernel/image, dimension, injectivity/surjectivity, extremality, or classification;
+- there are multiple materially different human proof representations whose relation is not conceptually settled;
+- hypotheses look non-minimal, overly symmetric, or application-specific;
+- the proof appears to require a reusable structural lemma or exact finite certificate that the canonical finding does not currently foreground;
+- an exceptional/counterexample regime is known but its structural cause remains opaque;
+- the same bridge recurs across multiple findings and a minimal formal interface could clarify what is essential.
+
+Routine identities, bulk prior-art transcription, and targets expected to collapse to a direct library theorem with no live structural question should not be delegated merely to increase formal coverage.
 
 A finding is ready for automatic formalization handoff only when all of the following hold:
 
 - the target is grounded in a canonical finding, not merely a clue, review-sidecar argument, transient computation, or speculative direction;
 - the intended theorem surface and its important hypotheses can be stated precisely enough for Gate 0;
 - the target is finite/bounded enough to be a sensible Lean task without requiring the formalizer to invent the next mathematical idea;
-- formalization has material value as verification or reusable infrastructure rather than serving only as documentation;
+- formalization has material value as verification, reusable infrastructure, or a concrete fertility probe rather than serving only as documentation;
+- when fertility is the main motive, the structural question is explicit enough to tell the final reviewer what kind of semantic delta to look for without presupposing that one exists;
 - no unresolved adversarial review is likely to materially change the target statement;
-- the target is not already controlled by an equivalent Mathia formalization issue or existing completed formal artifact.
+- the target is not already controlled by an equivalent Mathia formalization issue or existing completed formal artifact exposing the same structural interface.
+
+Prior-art status is recorded honestly but is **not** itself a rejection criterion. An existing Lean/mathlib formalization that already exposes the same theorem boundary and structural interface normally makes the handoff `reuse-only`; a merely classical human theorem does not.
 
 When the gate passes:
 
 1. load `.agents/skills/mathia-formalization-design/SKILL.md` and its required `design-github-issue` authority;
 2. perform the deduplication required by that skill against open/closed Mathia issues and existing formalization artifacts;
 3. if no equivalent control object exists, **create the Mathia formalization issue in the same Research Watch run**;
-4. reference the exact canonical finding path/ID and isolate the smallest useful theorem boundary in the issue;
+4. reference the exact canonical finding path/ID, isolate the smallest useful theorem boundary, and state the motive as `verification`, `fertility`, or `verification + fertility` when useful;
 5. after publication, do not execute Lean here, wait for the issue, poll it, or create a repository candidate queue; continue ordinary research from current evidence.
 
 Do not merely report that something "would be a good Lean candidate" when the gate passes. Issue creation is the required handoff. If GitHub write capability is unavailable or issue publication fails, treat that as a workflow/publication failure under the notification policy.
 
-Issue creation is not evidence and does not by itself satisfy the substantive-finding gate.
+Issue creation is not evidence and does not by itself satisfy the substantive-finding gate. A later formalization that reports `no material fertility delta found` is still a successful formalization outcome; no clue or discovery is required.
 
 ## Substantive-finding gate
 
@@ -376,7 +392,7 @@ A stable ID denotes a stable **mathematical claim identity**, not an immutable b
 ```text
 same claim + stronger/completed accepted proof/evidence -> M existing finding
 materially changed/replacement claim                   -> D old + A new ID
-independent durable result                             -> A new ID
+independent durable result                             -> A new finding
 ```
 
 Never create `.v2`/`.v3` finding variants. Git versions the same claim; new IDs represent new claims.
