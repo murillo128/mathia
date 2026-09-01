@@ -38,14 +38,14 @@ The live problem is to compute the complete fiber at the exact destination used 
 
 **Linked intuitions:** `MI-005-test-family-fidelity-has-scale-and-dimension-gates`.
 
-For linear tests the exact object is now the closed measured span `V_F`: its annihilator is the full signed-measure kernel, and restricted-source fidelity is `(S-S) intersect V_F^perp={0}`. Infinite families can lie on either side. Analytically accumulating double-positive modulations are complete on a bounded visible interval, while lattice modulation has the sharp alias horizon `hB=pi`; functions in an unmeasured generated algebra do not enlarge the statistic.
+For linear tests the exact object is the closed measured span `V_F`: its annihilator is the full signed-measure kernel, and restricted-source fidelity is `(S-S) intersect V_F^perp={0}`. Infinite families can lie on either side. Analytically accumulating double-positive modulations are complete on a bounded visible interval, while lattice modulation has the sharp alias horizon `hB=pi`; functions in an unmeasured generated algebra do not enlarge the statistic.
 
 The remaining question is to compute this span and source-restricted annihilator for mathematically forced explicit-formula families whose admissibility is genuinely global. A decisive positive result must prove completeness in the actual measured category without source-tuned programming; a decisive negative result is an exact alias or nonzero admissible annihilator.
 
-## Extend exact interaction-support fidelity beyond Boolean marginal scenarios
+## Classify interaction support and stability beyond independent product sources
 
 **Linked intuitions:** `MI-006-interaction-support-governs-marginal-fidelity`.
 
-On the Boolean cube, a marginal scenario is exactly a simplicial fidelity lattice: retained Walsh interactions are its faces, missing faces are the kernel, and target-relative minimal recovery reduces to covering the target interaction support. This gives a complete local model of how perfect marginals can lose coupling.
+The Boolean marginal model has now been extended in three directions. Independent product spaces admit an exact Hoeffding interaction decomposition; bounded multiplicative channel degree is exactly channel-cover number; and arbitrary dependent sources have an exact degree filtration given by the fusion span of actual sigma-field joins. Exact support recovery therefore survives far beyond Walsh coordinates, but the grading becomes source-dependent under dependence.
 
-Seek analogous exact decompositions for product measures, continuous features, tensor/operator observations, or representation-theoretic source classes. A useful theorem must identify the interaction coordinates, the exact kernel of the admissible marginal/joint observations, and a target-relative minimal lift; dimension counting or generic rank alone is not enough.
+The next gate is stability. Even when a target belongs to the retained closed span, an infinite-dimensional decoder may be unbounded; for two channels the sharp constant is controlled by the Friedrichs angle. A decisive theorem should compute both the source-dependent retained support and a uniform reconstruction modulus for a mathematically forced family. A claimed minimal lift is incomplete if it restores algebraic recoverability while its stability constant collapses in the limit.

@@ -1,36 +1,38 @@
-# MI-007 — Critical prime-support bulk is Poisson-classical; arithmetic survives only in finer spectral sectors
+# MI-007 — Ordinary prime-power Gram spectra classicalize through the first growing-depth transition
 
-**Evidence level:** supported by exact Gram identities, bounded-cluster controls, and conditional Hardy--Littlewood bulk theorems
+**Evidence level:** supported by exact time-dilation/rank/trace-norm identities, classical prime counting, and conditional Hardy--Littlewood bulk input only where explicitly stated
 
 ## Core intuition
 
-Prime support and pointing do expose arithmetic that the unpointed exponent-lattice bulk misses, but the ordinary finite-horizon empirical spectrum is now classified much further. At the mean-prime-gap scale, the support-only macroscopic bulk is the Poisson-sinc law under the natural full local Hardy--Littlewood hierarchy. Meanwhile bounded prime clusters force extreme ill-conditioning at every sublinear observation time. Ordinary bulk, extreme spectrum, and exact von-Mangoldt depth are therefore distinct information layers.
+Prime support and exponent depth do carry arithmetic data, but the ordinary finite-time Gram spectrum now has a much larger classicalized region than the prime-only bulk. Fixed prime-power depth is exactly a time-dilated prime layer; fixed depth tails are dominated in dimension by their shallowest layer; and even when a growing-depth tail reaches the first `sqrt(log X)` population transition, the natural von-Mangoldt half-weight collapses its normalized spectrum. The first scalar repair removes the depth grading rather than revealing a new phase.
 
 ## Strongest justified principle
 
-PL-072--PL-080 already classicalize the integer-band and smoothed coefficient regimes: local sharp windows give sinc/prolate kernels, macroscopic integer bulk is locally Toeplitz, determinant onset is Nyquist/Ingham, and smoothed growing-lag von Mangoldt statistics route to classical short-interval variance and Montgomery pair correlation. The half-weight `1/2` is a canonical balance scale but not a selector.
+PL-081--PL-087 already separate bulk from extremes. At the prime mean-gap horizon the support-only bulk is the Poisson-sinc law under the full local Hardy--Littlewood hierarchy, while bounded clusters destroy uniform extreme conditioning. Prime-only von-Mangoldt weighting is asymptotically deterministic on a fixed shell, and higher prime powers have vanishing rank in the full ordinary bulk.
 
-PL-081 finds the first genuine prime-support split above the mean-gap horizon: for `X/log X << T <= X`, the empirical prime Gram law tends to `delta_1`, yet bounded gaps can still force the smallest eigenvalue to zero along subsequences. PL-082 strengthens the extreme side. For every `T=o(X)`, bounded prime clusters produce arbitrarily large almost-rank-one principal blocks, so along subsequences the bottom edge tends to zero and the top edge becomes unbounded. No uniform frame/Riesz or extreme-spectral rigidity can survive in the full sublinear regime even when the bulk is benign.
+PL-088 closes the first depth-conditioned loophole exactly. On `p^k`, the logarithmic frequency is `k log p`, so the depth-`k` Gram at horizon `T` is the ordinary prime-support Gram at base scale `Y=X^(1/k)` and time `kT`. The inherited von-Mangoldt half-weight adds only the deterministic factor `1/k^2` and a macroscopic shell envelope. At its own mean-gap scale the depth layer therefore has the same local prime-process bulk, not a new exponent-depth phase.
 
-PL-083--PL-085 classify the critical support-only bulk under increasingly strong local Hardy--Littlewood hypotheses. At `T=cX/log X`, the second moment is exactly the Poisson-sinc second moment; every fixed trace moment matches the Palm Poisson sinc Gram hierarchy; and under the full fixed-order local tuple hierarchy the empirical spectral measure converges to the deterministic Poisson-sinc Euclidean-random-matrix law. This is a meaningful prime-statistics limit, but it is classical local-tuple input rather than a new RH spectral law.
+PL-089 shows that retaining **all** cross-depth couplings above any fixed minimum depth `K` does not change the ordinary empirical law: deeper layers occupy only `o(N)` rows/columns, so an arbitrary Hermitian tail matrix has the same weak bulk as its depth-`K` principal block. PL-090 extends that rank mechanism to growing `K=o(sqrt(log X))` and identifies the first population transition at `K~alpha sqrt(log X)`, where adjacent depth offsets acquire a geometric population law. That transition is forced by ordinary prime density and is not itself RH-sensitive.
 
-PL-086 shows that prime-only von-Mangoldt half-weighting on a fixed multiplicative shell is asymptotically just a deterministic envelope: `log p/log X=1+O(1/log X)`. It cannot restore a new prime-only bulk. PL-087 closes the most obvious prime-power escape for the ordinary dimension-normalized bulk: higher prime powers retain the pointwise exponent-depth factor `1/k`, but occupy only vanishing matrix rank, so every weak bulk limit is the same as the prime block, uniformly in the time scale.
+PL-091--PL-093 then show why the new population mass still fails to create a natural von-Mangoldt bulk. For every `K(X)->infinity`, positivity and the diagonal `1/k^2` amplitude give normalized trace `O(K^{-2})`, hence empirical measure `->delta_0` uniformly in observation time. The determinant root collapses at the same scale. The first scalar normalization that can avoid this is `K^2`; but throughout `K=o(sqrt(log X))` and `K~alpha sqrt(log X)`, the `K^2`-rescaled matrix is normalized-trace-norm equivalent to the unweighted shell-envelope Gram. Consequently every ordinary Lipschitz spectral statistic and every bounded-`z` per-site `log det(I+zA)` loses the specifically von-Mangoldt depth factor.
 
 ## What remains possible
 
-The surviving positive-cone observables are finer than the ordinary bulk: hard-edge statistics, raw or suitably renormalized determinants, growing-order moments, depth-conditioned/subextensive sectors, target-relative/Nyman data, or a completed Weil form that weights the sparse prime-power sector non-macroscopically. Any candidate must show why its statistic is not already determined by bounded-cluster geometry, Hardy--Littlewood local tuples, Poisson sampling, or a vanishing-rank perturbation.
+The surviving prime-power spectral sector is therefore **non-Lipschitz or non-bulk**: hard-edge and inverse statistics, extreme eigenvalues, condition numbers, target-relative Schur complements, singular/growing test functions, or a completed indefinite Weil object that weights sparse/deep layers before ordinary empirical normalization. Growth regimes beyond the audited `sqrt(log X)` transition are also structurally open, but their population effect alone is not arithmetic evidence.
+
+A positive candidate must show where rational-prime information enters after the deterministic time-dilation, rank, trace, and `K^2` trace-norm controls have been removed. Matching only local Hardy--Littlewood/Poisson statistics or the deterministic depth population is insufficient.
 
 ## Status / novelty
 
-The prolate/Nyquist, Hardy--Littlewood, Poisson, bounded-gap, and rank-interlacing ingredients are classical or literature-backed; the persisted findings locate their exact roles in the Prime Lattice hierarchy. The full Poisson bulk statement is conditional on the stated local tuple hierarchy and does not control the hard edge, determinants, or growing-order correlations.
+The PNT, Hardy--Littlewood, Poisson, rank-interlacing, trace/determinant inequalities, and Schatten norm estimates are classical ingredients. The persisted Prime-Lattice content is the exact organization of these controls and the resulting closure of ordinary prime-power Gram bulk through the first growing-depth transition.
 
 ## Falsification criterion
 
-Produce an ordinary dimension-normalized critical prime-support bulk law incompatible with the PL-085 Poisson-sinc moment hierarchy while retaining its hypotheses, or a higher-prime-power sector of nonvanishing matrix density on the fixed shell of PL-087. A positive advance should instead isolate a finer statistic that distinguishes matched Poisson/generalized-prime controls and is not a restatement of classical prime correlations.
+Produce, under the hypotheses of PL-093, an ordinary Lipschitz spectral statistic of the `K^2`-rescaled natural von-Mangoldt Gram that stays separated from the unweighted envelope Gram, or a fixed-depth/tail weak empirical law contradicting the exact time-dilation/rank reductions. A positive advance should instead isolate a genuinely non-Lipschitz or target-relative statistic and pass generalized-prime controls.
 
 ## Lean-formalizable core
 
-- Rank/interlacing stability of empirical spectral laws.
-- Vanishing-rank contribution of higher prime powers.
-- Near-rank-one cluster eigenvalue bounds.
-- Moment-to-bulk bookkeeping under a prescribed tuple-correlation hierarchy.
+- Fixed-depth time-dilation identity.
+- Rank stability of depth-tail empirical spectra.
+- Positive trace and determinant collapse from the `1/k^2` amplitude.
+- `K^2` normalized trace-norm equivalence.

@@ -1,38 +1,43 @@
-# MI-001 — Finite canonical cotangent networks close to endpoint algebra
+# MI-001 — Finite canonical circle compressions repeatedly classicalize
 
-**Evidence level:** supported by exact structural reductions and classical cotangent identities
+**Evidence level:** supported by exact structural reductions, Fourier identities, and classical cyclotomic/Farey controls
 
 ## Core intuition
 
-Breaking rotational symmetry by naming vertices or retaining old/new structure is necessary to avoid the coarsest Prime-Circle quotients, but finite cotangent complexity is now much more tightly closed than before. Cycles, repeated shells, coincidence strata, parallel edges, arbitrary finite graph topology, and scalar local weights do not by themselves create a new interior arithmetic channel: after exact confluent elimination they reduce to endpoint Cauchy/cyclotomic data.
+Breaking rotational symmetry by naming vertices or retaining old/new structure is necessary to avoid the coarsest Prime-Circle quotients, but neither finite combinatorial complexity nor a fixed translation-invariant nonlocal kernel is enough to create a new arithmetic channel. The current evidence closes two large classes: finite cotangent networks reduce to endpoint/cyclotomic algebra, while cumulative primitive-root kernel statistics reduce to classical Farey/Mertens Fourier data.
 
 ## Strongest justified principle
 
-The earlier one-shell and low-depth evidence already separated information capacity from novelty: pointed spectra can be derivative data of a full-shell characteristic polynomial; inverse-square divisor refinement is path independent; finite character blocks remain classical; and the first nonlinear cocycle/Leibniz/two-hop constructions reduce to coboundary or endpoint data.
+PC-090--PC-097 close the finite cotangent sector. Reflection parity, Galois-rational complete-shell contractions, arbitrary diagonal shell weights, cycles, parallel edges, repeated shells, and collision strata all reduce by exact confluent elimination to one-body endpoint Cauchy/cyclotomic data. PC-098 then shows that fixed finite shell support with arbitrary composition depth is finite-state by Cayley--Hamilton, and PC-099 shows that canonical complete-preimage growth has universal affine-band limits determined by the base spectrum.
 
-PC-090--PC-095 expanded the closure to reflection parity, Galois-rational complete-shell contractions, arbitrary diagonal shell weights, and finite acyclic multileg networks under disjointness hypotheses. PC-096 removes the acyclic restriction for globally disjoint shell sets: arbitrary finite cotangent multigraphs, including cycles and parallel edges, collapse by confluent partial fractions to one-body endpoint Cauchy jets.
+PC-105 supplies a distinct nonlocal control. The cumulative primitive-root cloud is exactly the Farey cloud, and its Fourier coefficients are finite divisor transforms of the Mertens function. In particular its first nonconstant mode is
 
-PC-097 closes the main remaining finite loophole. Repeated shell variables and equality/collision strata can be partitioned and eliminated with punctured-shell confluent identities, so arbitrary finite canonical cotangent networks with scalar local weights reduce to a collision-stratified endpoint algebra. The previously open repeated-shell/cycle escape is therefore not a live finite mechanism.
+\[
+\widehat\nu_N(1)=M(N)/A_N,
+\]
 
-Two canonical attempts to evade finiteness also classicalize. PC-098 shows that on fixed finite shell support, arbitrary composition depth is finite-state by Cayley--Hamilton: depth generating functions are rational and loop zeta functions are determinants of a fixed finite operator whose coefficients already lie in the endpoint/cyclotomic algebra. PC-099 shows that the canonical growing complete preimage-tube normalization has explicit affine spectral ladders whose empirical limits are universal bands determined by the fixed base spectrum.
+so the familiar RH-sensitive rate is already the classical Mertens criterion. Every fixed translation-invariant positive kernel on the circle produces a weighted `l^2` package of the same summatory Ramanujan/Mertens modes. Pairing every point with every other point therefore does not by itself leave the classical quotient.
 
-Thus adding finite graph complexity, fixed-support infinite depth, or canonical complete-preimage growth does not itself leave the classical quotient.
+These results are complementary. The cotangent closure says finite graph topology does not add an unseen interior variable; the kernel result says fixed convolutional nonlocality on the cumulative root cloud does not add a new spectral variable either. Complexity and nonlocality count only when they change the information layer consumed by the final invariant.
 
 ## What remains possible
 
-A surviving cotangent mechanism must change the information layer rather than merely the graph topology. Possibilities include a genuinely different intrinsic operator or tensor, an incomplete or source-selective growing family whose selector is independently forced, a singular renormalized limit not determined by fixed-state data, or a global completion/monodromy mechanism. Each must first prove that it does not factor through the endpoint/collision algebra or the canonical finite-state/growing controls.
+A surviving Prime-Circle mechanism must use structure not already determined by endpoint/cyclotomic elimination or by the cumulative Fourier package. Possibilities include a genuinely non-translation-invariant operator forced by the geometry, a cross-level construction retaining incidence/provenance before cumulative averaging, a singular or relative completion, or a truly infinite coupling whose operator ideal and spectral data are not fixed by finite-shell controls.
+
+Any such candidate must first prove nonfactorization through the closed classes above. Rewriting Mertens/Farey discrepancy in a positive kernel norm, increasing finite graph depth, or attaching an arbitrary determinant does not qualify.
 
 ## Status / novelty
 
-The reductions use persisted exact findings; Hermite/confluent cotangent identities and Cayley--Hamilton are classical ingredients. The synthesis is a strong closure theorem for the audited canonical finite cotangent sector, not a theorem about every possible Prime-Circle operator.
+The reductions use persisted exact findings and classical cotangent, Ramanujan, Farey, Mertens, and kernel-Fourier theory. The synthesis is a closure statement for the audited canonical finite/convolutional Prime-Circle sectors, not a theorem about every possible circle operator.
 
 ## Falsification criterion
 
-Exhibit a finite canonical cotangent multigraph with scalar local weights covered by PC-096/PC-097 whose observable contains an irreducible hidden-shell variable not representable in the stated collision-stratified endpoint algebra. A positive advance should instead derive a new information layer outside those hypotheses and pass a matched refinement/non-prime control there.
+Exhibit a canonical finite cotangent network covered by PC-096/PC-097 with an irreducible hidden-shell variable, or a fixed translation-invariant positive kernel on the cumulative primitive-root cloud whose statistic is not determined by the exact Fourier/Mertens package of PC-105. A positive advance should instead derive a new information layer outside those hypotheses.
 
 ## Lean-formalizable core
 
 - Confluent partial-fraction elimination of finite cotangent networks.
 - Equality-partition reduction for repeated shells.
-- Fixed-state Cayley--Hamilton recurrence and rational depth generating function.
-- Explicit affine-ladder spectrum for complete preimage tubes.
+- Fixed-state Cayley--Hamilton recurrence.
+- Exact cumulative Ramanujan/Mertens Fourier identity.
+- Translation-invariant kernel-energy decomposition into Fourier modes.

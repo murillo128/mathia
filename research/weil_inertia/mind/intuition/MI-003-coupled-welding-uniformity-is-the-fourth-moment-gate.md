@@ -1,42 +1,47 @@
-# MI-003 — The fourth-moment welding difficulty is conserved across coefficient, selector, and multivariate representations
+# MI-003 — The fourth-moment welding difficulty survives every source-agnostic reboxing
 
-**Evidence level:** supported for the exact reductions and controlled power region; the remaining multivariate/source-weighted analytic bridge is open
+**Evidence level:** supported for the exact source reductions, sparsity/density theorems, and controlled power region; the remaining weighted-energy/multivariate analytic bridge is open
 
 ## Core intuition
 
-The unresolved Yang--Yang fourth-moment obstruction is now a source-faithful representation problem rather than a generic appeal to four-prime cancellation. The same locked arithmetic geometry can be written in three natural ways, and each moves rather than removes the hard part: keep the physical lock and pay growing coefficients; free the shifts and pay a thin slope selector; or aggregate the changing bases and obtain a fixed-coefficient **multivariate polynomial** prime pattern outside the currently audited quantitative theorem interface.
+The unresolved Yang--Yang fourth-moment obstruction is now a source-faithful representation problem with a quantitative conservation law. Keeping the physical lock pays growing coefficients; freeing the shifts pays a power-sparse two-dimensional incidence selector; fixed finite `L^p` control still pays a power through duality; coordinate-wise pruning cannot densify the long-shift relation; scalar LCM projection loses the incidence sparsity and in fact has near-linear effective support; and aggregating the bases produces a fixed-coefficient multivariate polynomial system outside the audited quantitative theorem interface. None of these source-agnostic changes removes the hard part.
 
 ## Strongest justified principle
 
-WI-047--WI-054 separate the deterministic local main from the analytic residual and establish a genuine controlled power region. The exact four-form local factor centers cellwise; the unsliced system has complexity one; and Shao--Teräväinen modulus-averaged nilsequence Bombieri--Vinogradov plus pair-fiber Parseval controls the fixed-margin polygon `4 alpha+beta<1`, `alpha+4 beta<1`.
+WI-047--WI-054 separate the deterministic local main from the analytic residual and establish a genuine controlled power region. WI-055--WI-057 show that marginal pair discrepancy and one-sided dispersion do not automatically control the conditioned four-prime covariance.
 
-WI-055--WI-057 show why one-sided or differently structured dispersion theorems do not automatically extend this region. The local conditioning leaves nonconstant periodic residue modes, so ordinary marginal pair discrepancy cannot control the required conditioned covariance.
+WI-068--WI-070 identify the original three representations. Free independent shifts make finite-complexity prime-pattern input available only after projecting back to the exact slope slice `(h_1,h_2)=(rk,qk)`, while varying-base aggregation produces a source-faithful degree-two multivariate polynomial system with anisotropic boxes and outer source weights.
 
-WI-068 corrects a tempting overreach in the free-shift direction. The finite-complexity prime-pattern theorem applies after both physical shifts are free, not to the fixed locked rectangle. WI-069 makes the exact price of freeing them explicit: the Yang source occupies the slope slice `(h_1,h_2)=(rk,qk)`, whose density in the free rectangle is `1/(rqK)`, with a Fourier selector of matching size. Termwise projection therefore reintroduces the same power-scale loss in dual form.
+WI-071 shows that even after aggregating all primitive slopes, the physical shift incidence support lies inside `lcm(|h_1|,|h_2|) << X` and the maximally enlarged envelope has only `O(X(log X)^2)` points in an ambient `X^2` square. WI-072 makes the resulting norm cost exact: a selector of density `delta` has dual norm at least `delta^{-1/p}` against every fixed finite `L^p` ambient estimate. WI-073 closes separate coordinate pruning: on long-shift shells the same source has `gcd(|h_1|,|h_2|)=|k|`, and extremal GCD/LCM theory prevents subpolynomially dense Cartesian reboxing from making the relation positive-density.
 
-WI-070 identifies the third representation. Aggregating the varying reduced bases before invoking a prime-pattern theorem removes the growing coefficients and produces a fixed-coefficient degree-two multivariate system such as
+WI-075 correctly warns that projecting incidences to the scalar `L=lcm(|h_1|,|h_2|)` need not preserve two-dimensional sparsity. WI-076 now resolves the missing weighted-support cardinality in the opposite direction. On one fixed source slope `(b_1,b_2)=(5,7)`, Bienvenu's finite-complexity prime-pattern asymptotic plus a trivial slice multiplicity bound gives
 
-`0, -rk, d, d-qk`
+\[
+\#\mathcal L^{\rm eff}(X)\gg X/(\log X)^4.
+\]
 
-in variables `(r,q,k,d)`. This is source-faithful and avoids the thin-selector projection, but it crosses a genuine theorem boundary: the audited quantitative polynomial-prime input is one-parameter, while the needed system is multivariate, anisotropic, and carries outer prime/Mertens weights.
+Thus the **actual nonzero weighted scalar LCM support is not power-sparse**. A scalar sparse-large-sieve strategy cannot obtain the needed power localization gain from support cardinality. The useful scalar structure, if any, must be subtler: weighted cancellation, additive energy, factorization labels, or another theorem exploiting the source weights rather than mere set size.
 
-The durable conclusion is a **conservation of difficulty** across the known linearizations. Coefficient size, slope-selector sparsity, and multivariate polynomial complexity are three representations of the same locked source constraint. A successful theorem must address one of them without silently averaging away the source.
+The conservation law is therefore sharper than before. The two-dimensional incidence is power-sparse and expensive to restrict from ambient boxes; its scalar projection is near-linear and loses that cheap sparsity asset; the multivariate representation preserves the source but crosses a theorem boundary. Difficulty moves between coefficient size, incidence sparsity, weighted scalar structure, and multivariate polynomial complexity.
 
 ## What remains possible
 
-A decisive advance could be a Yang-specific two-modulus dispersion theorem, a hierarchy-aware rectangle estimate, or a quantitative multivariate polynomial von-Mangoldt theorem uniform in the anisotropic boxes and outer source weights. An independent source identity that genuinely collapses the slope selector or polynomial system would also qualify. Generic Gowers uniformity or a free-shift theorem without the projection back to the Yang slice does not.
+The surviving interfaces are precise: a Yang-specific weighted incidence/rectangle estimate; a scalar theorem exploiting the actual weights/additive energy rather than support cardinality; a labelled scalar transform retaining reduced-slope factorization; or a quantitative multivariate polynomial von-Mangoldt theorem with the actual anisotropic boxes and outer weights. The base-aggregated polynomial representation remains especially important because it avoids projecting an ambient theorem back onto a sparse slice.
+
+A generic free-shift theorem, fixed-`L^p` ambient bound, Cartesian reboxing, or scalar support-counting argument is insufficient. Any scalar route must now prove a nontrivial **weighted** property beyond the near-linear support forced by WI-076.
 
 ## Status / novelty
 
-The lock identities, local centering, positive-power region, slope-slice density, and multivariate polynomial reformulation are persisted findings. The absence of a currently audited matching theorem is a literature-interface statement, not a proof that no such theorem can exist.
+The lock identities and source reductions are persisted findings. Hölder/Parseval, GCD/LCM extremal theory, Bienvenu's prime-pattern theorem, and sparse-modulus large-sieve theory are classical/prior-art inputs. The synthesis is a sharpened theorem-interface statement, not a proof that the Yang route is impossible.
 
 ## Falsification criterion
 
-Produce a bounded-complexity free-shift reduction of the exact Yang source with no power-density selector loss, or a one-parameter quantitative theorem that directly covers the multivariate anisotropic system of WI-070 under its actual source weights. A positive advance should instead close one representation with all source bookkeeping explicit.
+Produce a source-agnostic fixed-`L^p` or Cartesian restriction avoiding the proved sparsity costs, or a scalar support-cardinality theorem giving a power saving despite WI-076's `X/(log X)^4` lower bound. A positive advance should instead close one weighted/source-faithful interface with every normalization and source condition explicit.
 
 ## Lean-formalizable core
 
-- Exact locked-to-free slope-slice counting.
-- Fourier size of the slope selector.
-- Polynomial reformulation of the varying-base rectangle.
-- Algebraic equivalence of the three source representations.
+- Locked-to-free lcm/gcd identities.
+- LCM-sublevel incidence cardinality bound.
+- Sharp selector dual-norm lower bound.
+- Cartesian large-GCD density implication.
+- Multiplicity conversion from positive weighted first moment to near-linear effective scalar support.

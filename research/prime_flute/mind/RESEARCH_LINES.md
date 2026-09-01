@@ -18,12 +18,18 @@ Quarter- and half-plane thresholds, cusp winding, and long-geodesic propagation 
 
 The decisive test is an intrinsic residual that changes under a matched non-prime geometry only when the exact ordered arithmetic data change, not merely when a local defect or cusp channel is present.
 
-## Decide stronger-than-wave clone invariants after closing one global wave route
+## Close one global clone-comparison route, then test the value of the relative invariant
 
 **Linked intuitions:** `MI-004-coordinate-amplification-is-not-operator-amplification`.
 
-The exact prime flute and the all-composite shift clone already share compact-resolvent class. All known local body/cusp/thin-core budgets are controlled, but PF-143--PF-145 show that the remaining nonconstant collar interface has a sharp unsuppressed `L^1` angular/radial trace cost. In parallel, PF-146 shows that first-resolvent trace class can fail while the local **squared** relative resolvent is trace class with a summable short-collar budget.
+The exact prime flute and the all-composite shift clone already share compact-resolvent class. The geometric route has reduced the unresolved metric cost to the actual reflection-compatible angular/radial interface traces. The operator route asks for the global trace-class estimate
 
-There are therefore two concrete global gates. The geometric route is to construct one reflection-compatible map whose actual angular/radial interface traces have summable weighted `L^1` cost. The operator route is to globalize the local squared-resolvent estimate and prove `(H_++1)^(-2)-(H+1)^(-2) in S_1`, which would yield complete wave operators by the invariance principle. A decisive negative must identify a genuine global obstruction to both relevant closures, not merely invoke first-resolvent `S_1` failure or another coordinate artifact.
+\[
+(H_++1)^{-2}-(H+1)^{-2}\in S_1,
+\]
 
-Once either wave route closes, compare only invariants stronger than the resulting equivalence: relative `S_r` data where meaningful, scattering matrix/phase, resonances, spectral shift, or relative determinants. Any claimed arithmetic residual must still distinguish the composite clone at the same operator category.
+whose fixed short-collar analogue is proved in PF-146.
+
+The consequences of a positive operator closure are now sharply known. PF-147/PF-150 place the first relative resolvent exactly at the abstractly sharp `S_2` boundary (`S_2\setminus S_1`, with no functional-calculus route below `2`). PF-148 shows that the trace-class squared transform nevertheless supplies ordinary Krein spectral shift and a Birman--Krein scattering phase for the original Laplacians by invariance. PF-149 removes the trivial-versus-density-unitary `L^2` identification as a gauge ambiguity. PF-151 rules out the unweighted critical Wodzicki/Dixmier residue density as a prime-gap scalar because it is just hyperbolic area.
+
+A decisive positive result is therefore either a globally coherent weighted metric comparison or the global squared-resolvent `S_1` estimate. After that, **existence** of wave operators, spectral shift, or a scattering phase is not arithmetic evidence by itself; the next discriminator is the actual relative phase/function, resonance continuation, or another stronger invariant and whether it distinguishes the composite clone in the same operator category. A decisive negative must obstruct the genuine global assembly, not invoke first-resolvent `S_1` failure, volume-identification gauge, or the universal critical residue.

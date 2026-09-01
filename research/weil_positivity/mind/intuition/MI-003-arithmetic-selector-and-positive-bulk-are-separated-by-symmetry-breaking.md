@@ -1,38 +1,47 @@
-# MI-003 — Arithmetic information can survive positivity, but canonical completion often externalizes it into determinants or absolute values
+# MI-003 — Positive finite selectors persist, but the discriminating response is repeatedly singular or sign-indefinite
 
-**Evidence level:** supported by exact finite selectors and decisive completion/symmetry obstructions
+**Evidence level:** supported by exact pointed-cover selectors, matched positive families, Jensen/Fisher calculations, and two-projection classification
 
 ## Core intuition
 
-The current evidence rules out the crude slogan that positivity destroys arithmetic. Canonical positive operators, Gram kernels, determinant lines, and polarizations can retain exact `Lambda(n)` or `log p`. The recurring failure occurs at the operation that is supposed to turn that carrier into the completed Weil sign: arithmetic is canceled across a complex, pushed into a logarithmic determinant, made universal by symmetry, or converted to an absolute value that no longer carries an independent sign theorem.
+The current evidence decisively rejects the slogan that positivity itself destroys arithmetic. The pointed cover geometry contains large families of positive operators with exact `log n` or prime-power `Lambda` traces. The obstruction appears when one asks for the **distinguishing archimedean/global variation** while preserving that selector: the relevant response becomes a singular endpoint, an indefinite contrast, a reference-relative determinant, or a bounded positive calculus with the wrong scale.
 
 ## Strongest justified principle
 
-The earlier radial and Hodge/Prym results already separated carrier from pairing. Finite radial Schur limits either attenuate arithmetic to zero, diverge, or return an indefinite congruence of the birth form; principal divisor/class reductions and normalized Hodge transfer erase the desired finite coefficient; the Prym polarization kernel stores a genuine `p`-discriminant but finite torsion cannot support the required ordered real quadratic pairing.
+The earlier Prym, Hodge, Boolean, Poisson, and Hardy results already separate positive carrier from completed sign. Exact finite coefficients can live in positive determinant lines, supertrace selectors, and radial scores, while canonical completion cancels them, turns them into absolute values, or drives the positive metric to a critical divergence.
 
-WP-058 strengthens the positive side. The same Prym discriminant exports canonically to the Hodge determinant line: the polarization metric gives lattice covolume `p^{g_n}`, so `log p` is present in an honest positive norm. Yet the real polarization map is an isometry to its metric dual, so its canonical positive singular-value operator is exactly the identity. The prime scale lives in the integral lattice position/determinant, not in a linear positive spectrum.
+WP-081 makes the pointed-cover control stronger. For every fixed shift `c>=0`, the positive trace-class cover coboundary
 
-WP-059 resolves the strongest theta-action clue. Letting the Prym torsion act on the non-torsion Heisenberg representation before positivity produces a phase-free positive adjoint defect whose normalized log pseudodeterminant is `log p`. But that operator is exactly a multiplicity of the ordinary `p`-cycle Laplacian; its trace is universal, direct `p^k` depth gives `k log p`, and the mechanism is a classical determinant identity rather than a linear Weil pairing.
+\[
+D_{n,c}=(\rho_n-I)(L+cI)^{-1}
+\]
 
-WP-060 then shows that the most canonical untwisted analytic-torsion completion of the same determinant-line carrier erases it: on the relevant even-dimensional flat Prym torus the de Rham determinant-line volume cancels across degrees and Ray--Singer/holomorphic torsion is trivial. Any torsion escape must therefore add genuine twisting/family/boundary structure before the determinant is formed.
+has the same trace `log n`, and its prime-power Möbius primitive remains positive with trace `log p`. Thus the positive finite coefficient does not by itself single out the covariant Riemann representative `c=0`; what is unique there is the stronger scale covariance `W_n^*LW_n=nL`.
 
-The Hardy route exposes the parallel sign problem. WP-061 constructs a canonical positive `q=2` primitive-shell Gram kernel, but the independently selected **full-root** `q=2` archimedean Hardy channel is indefinite and the positive Gram does not preserve finite-place sparsity. WP-062 proves that every nonzero half-turn-equivariant compression of that full-root channel remains indefinite. WP-063 classifies the most natural symmetry-breaking Krein repair: among parity-exchanging self-adjoint unitary metrics, positivity forces the spectral-sign metric and the repaired operator is exactly the polar absolute value. That is a repair of sign, not an independent sign theorem.
+WP-082--WP-083 test canonical positive nonlinear responses before scalarization. The scale-covariant logarithmic Jensen defect is positive and trace class, but at `c=0` its trace collapses to a dyadic `(1-1/n)` statistic. More generally the homogeneous operator-concave Jensen family is a flat positive cocycle; exact Mangoldt support appears only at the singular inverse-scale endpoint `r=-1`. Every interior power/log member has primitive trace on all composites. Varying a regular positive functional calculus therefore does not interpolate finite and archimedean Weil data in the required way.
+
+WP-084 attacks the shift parameter itself. After normalizing `D_{n,c}` to a positive state, the canonical Fisher/Hellinger tangent is finite for `c>0` but diverges exactly at the covariant point `c=0`; every nontrivial additive shift contrast has trace zero and is indefinite. The positive half-line carries the finite coefficient, but its discriminating relative information does not inherit a finite positive tangent at the canonical representative.
+
+WP-085--WP-086 provide a genuinely noncommuting control. Range projections of distinct covers have an intrinsic positive principal-angle defect; for the dyadic reference its reduced log determinant gives `log n` on odd degrees. But the scalar is reference-relative, blind to even degrees, has a parity-twisted Möbius primitive, and does not form a positive degree kernel. More strongly, the entire fixed bounded norm-continuous positive `C*` calculus of the two cover projections has trace either linear in `n` or bounded (and pure interaction defects tend to zero). The logarithm appears only through the singular endpoint operation `-log(delta_n)` as the angle closes.
 
 ## What remains possible
 
-A successful construction must couple the finite selector and archimedean/polar sector before determinant, full-cohomology cancellation, symmetric compression, or polar absolute-value repair. A twisted Prym family, a non-polar metric forced by additional geometry, or a genuinely nonseparable finite--archimedean operator remains logically possible, but none is established.
+A successful Weil mechanism must couple the exact finite selector to the archimedean/polar sector **before** these singular/relative operations are scalarized, and obtain its sign from an independent geometric theorem. The surviving categories are therefore genuinely nonseparable finite--archimedean objects, higher cohomological or twisted/family/boundary constructions, or singular/unbounded forms whose domain and sign are forced by geometry rather than chosen to manufacture `log n`.
+
+The new evidence also sets a strong matched-control requirement: `log n` in a positive operator is not enough, because fixed-shift controls preserve it; noncommutativity is not enough, because bounded two-projection calculus has the wrong trace scale; and a singular log determinant is not enough, because its degree dependence can be reference-relative and fail positive-kernel assembly.
 
 ## Status / novelty
 
-The determinant-line norm, cycle-Laplacian reduction, torsion cancellation, Hardy chiral obstruction, and unique polar repair are persisted findings with classical ingredients. Their common “positive carrier versus completed sign” interpretation is a supported synthesis.
+Operator concavity/Jensen, Fisher information, principal angles, Halmos two-projection theory, and trace-class facts are classical. The persisted Mathia content is their exact specialization to the pointed cover geometry and the resulting boundary between positive finite carriers and a global sign-producing response.
 
 ## Falsification criterion
 
-Derive a canonical completed positive pairing that retains one of the audited selectors and has an independently proved sign. Within the closed families, a nonzero half-turn-equivariant positive compression would contradict WP-062, while a different parity-exchanging unitary Krein metric producing positivity would contradict WP-063.
+Derive a canonical completed positive pairing from the audited pointed-cover families that retains the exact finite selector and obtains the archimedean/global term without crossing a singular or sign-indefinite step. Within the closed families, a regular homogeneous Jensen member with exact Mangoldt support away from `r=-1`, a finite Fisher tangent at `c=0`, or a fixed bounded positive two-projection calculus with intrinsic `log n` trace would contradict the persisted findings.
 
 ## Lean-formalizable core
 
-- Determinant/covolume identity from a symplectic polarization matrix.
-- Cycle-Laplacian pseudodeterminant identity.
-- Chiral-symmetry no-positive-compression lemma.
-- Uniqueness of the polar-sign Krein repair.
+- Fixed-shift cover-coboundary trace and positivity threshold.
+- Homogeneous Jensen cocycle and Möbius-primitive formula.
+- Fisher divergence from the `k^{-3}` state versus `k^{-2}` tangent tails.
+- Principal-angle determinant for block cover projections.
+- Linear-or-bounded trace dichotomy for bounded two-projection positive calculus.
