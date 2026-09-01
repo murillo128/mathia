@@ -7,7 +7,7 @@ description: Design a self-contained Mathia Lean formalization issue for autonom
 
 ## Responsibility
 
-Use this skill when Mathia wants to test, sharpen, falsify, or retain a mathematical claim as a checked Lean theorem.
+Use this skill when Mathia wants to test, sharpen, falsify, retain, or structurally interrogate a mathematical claim as a checked Lean theorem.
 
 This skill may also be invoked automatically by `mathia-research-watch` when a canonical finding has a stable, high-value, reusable Lean theorem core. In that case, issue creation is the handoff itself: do not stop at identifying the candidate and do not require separate user confirmation before creating the issue.
 
@@ -21,16 +21,47 @@ Load that skill as the generic issue-design authority. The controlling Mathia is
 
 A formalization issue is a control-plane object, not a request to create a PR for later human review.
 
+## Two legitimate formalization motives
+
+Mathia formalization has two legitimate motives that may coexist:
+
+```text
+verification
+fertility
+```
+
+**Verification** asks whether an important persisted theorem is stated correctly and can be kernel-checked with the intended hypotheses and conventions.
+
+**Fertility** uses formalization as a structural observation surface. The target theorem may already be classical or prior art; the value is that forcing an exact formal proof can expose which hypotheses are truly consumed, which intermediate object carries the proof, whether an apparently symmetric argument is actually one-sided, or whether a hidden factorization, kernel/range description, normal form, quotient, invariant, or alternate representation is doing the real work.
+
+Prior-art status is therefore **not a disqualifier** for Lean. Novelty of the target theorem is neither required nor implied. A prior-art target is worth formalizing for fertility only when the formalization is likely to create useful conceptual pressure rather than merely translate known prose.
+
+Good fertility candidates include theorem surfaces with one or more of these properties:
+
+- the theorem sits on a structural boundary such as exact rank, equality, sharpness, kernel, image, dimension, injectivity/surjectivity, extremality, or classification;
+- the informal argument admits multiple materially different representations or proof explanations;
+- the persisted statement uses hypotheses that look stronger, more symmetric, or less canonical than the underlying mechanism may require;
+- the proof is expected to pass through a reusable factorization, normal form, quotient, invariant, or exact finite certificate that the finding does not currently treat as a first-class object;
+- several findings or lines reuse the same mathematical bridge and an exact formal interface could reveal its minimal theorem boundary;
+- an exceptional/counterexample regime is understood computationally or informally but its exact structural cause remains opaque.
+
+Poor fertility candidates include routine identities whose expected formalization is only library lookup or syntactic translation, bulk prior-art transcription, theorem collections with no live structural question, and targets whose only benefit is documentation.
+
+A fertility target must still satisfy the same statement fidelity and proof-integrity standards as a verification target. It does **not** authorize the formalizer to invent a stronger theorem, broaden the issue during proof search, or treat an exposed pattern as evidence before the ordinary clue/research workflow validates it.
+
+When designing the issue, state the motive concisely as `verification`, `fertility`, or `verification + fertility` when that distinction helps the final reviewer understand what to inspect. Do not turn this into a scoring system or quota.
+
 ## Automatic research handoff and deduplication
 
 Before creating an issue from Research Watch:
 
 1. identify the exact canonical finding path and stable finding ID that motivate the formalization;
 2. isolate the smallest theorem surface that is mathematically useful and faithful to the persisted finding;
-3. search existing open and closed Mathia issues for that finding ID, equivalent theorem surface, and distinctive target terminology;
-4. inspect existing Mathia Lean source when relevant to determine whether the target is already formalized or already has a controlling issue;
-5. if an equivalent issue or completed formalization exists, return that control object rather than creating a duplicate;
-6. otherwise create the controlling Mathia issue immediately through `design-github-issue`.
+3. decide whether the material value is verification, fertility, or both; for fertility, identify the precise structural pressure expected from formalization without predicting a discovery;
+4. search existing open and closed Mathia issues for that finding ID, equivalent theorem surface, and distinctive target terminology;
+5. inspect existing Mathia Lean source when relevant to determine whether the target is already formalized or already has a controlling issue;
+6. if an equivalent issue or completed formalization exists, return that control object rather than creating a duplicate;
+7. otherwise create the controlling Mathia issue immediately through `design-github-issue`.
 
 Do not create or maintain `LEAN_CANDIDATES.md`, TODO files, or another formalization queue. A candidate ready for execution is represented by its GitHub issue; a candidate not ready remains ordinary research evidence.
 
@@ -91,6 +122,8 @@ Gate 0 must independently reconstruct and attack the intended theorem surface, i
 - exact or stronger prior formalizations;
 - reusable mathlib or existing Mathia Lean declarations;
 - dependency/import choices.
+
+For a fertility-motivated issue, Gate 0 must additionally distinguish **mathematical prior art** from **already-formalized/reuse-only**. A theorem being classical does not kill the issue; an existing formal theorem that already exposes the same exact structural interface normally does. If prior art is known, preserve that provenance and make no novelty claim.
 
 Allowed outcomes are:
 
@@ -158,6 +191,8 @@ The issue must state enough target-specific mathematics to distinguish:
 
 A compiling theorem never silently certifies unformalized prose.
 
+For fertility-motivated formalization, success does **not** require a new clue or conceptual delta. A clean `no material mathematical delta found` after serious review is a valid result. The experiment is to apply conceptual pressure, not to manufacture novelty.
+
 ## Autonomous research return
 
 Formalization is also an observation surface. The executor and its fresh reviewers must notice mathematically material differences exposed by statement reconstruction, proof search, or formal-to-human proof reconstruction.
@@ -187,6 +222,12 @@ and create or materially strengthen only a `status: proposed` clue. Research Wat
 
 A shorter tactic script, convenient library lemma, or import simplification is not clue-worthy.
 
+For every final Mathia Lean review, and especially for a fertility-motivated target, explicitly ask:
+
+> **What did Lean have to prove, factor, define, separate, or use that the finding or source did not treat as a first-class mathematical object?**
+
+The answer may be `nothing material`. Otherwise inspect the exposed object or asymmetry as a possible semantic delta; do not promote it automatically.
+
 ## Lean proof-integrity contract
 
 Unless the issue explicitly establishes a different proof boundary, successful formalization requires:
@@ -209,11 +250,12 @@ A Mathia Lean formalization issue should normally contain only the target-specif
 
 1. research provenance: exact finding path(s) and why the theorem matters;
 2. intended formal theorem boundary;
-3. Gate-0 risks specific to this target;
-4. any target-specific Lean setup/import constraints;
-5. proof-integrity constraints beyond the defaults above, if any;
-6. surrounding claims explicitly out of scope;
-7. target-specific validation or review conditions beyond the executor defaults, if any.
+3. formalization motive (`verification`, `fertility`, or both) when useful, including the structural reason for fertility without assuming a positive outcome;
+4. Gate-0 risks specific to this target;
+5. any target-specific Lean setup/import constraints;
+6. proof-integrity constraints beyond the defaults above, if any;
+7. surrounding claims explicitly out of scope;
+8. target-specific validation or review conditions beyond the executor defaults, if any.
 
 End the issue with a compact execution pointer such as:
 
