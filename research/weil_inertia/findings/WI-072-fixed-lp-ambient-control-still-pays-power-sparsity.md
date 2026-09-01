@@ -1,0 +1,355 @@
+# WI-072 — fixed-\(L^p\) ambient control still pays a power for the lcm-sparse Yang shift set
+
+**Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE`. This finding does **not** certify the Yang--Yang one-sided fourth-moment candidate and does not change Mathia's current unconditional simple-critical proportion. It strengthens the source-localization obstruction of WI-069 and WI-071 in a different norm regime. WI-071 showed that, after freeing the two physical shifts, the complete changing-slope Yang support is contained in the lcm-sparse set
+
+\[
+\operatorname{lcm}(|h_1|,|h_2|)\ll X,
+\]
+
+with only `O(X (log X)^2)` points in an ambient shift square of area `asymp X^2`; dyadically, a long-shift block has source density `O(1/K)`. The present finding proves that replacing termwise/triangle-inequality localization by an ordinary Hilbert-space or any other **fixed finite \(L^p\)** ambient estimate does not remove that power loss. For every selector supported on a set of density `delta` and normalized to have ambient mean one, its exact dual norm is bounded below by
+
+\[
+\boxed{\|\sigma\|_{p'}\ge \delta^{-1/p}},
+\qquad 1\le p<\infty,
+\]
+
+where `p'` is conjugate to `p`. Hence on a Yang long-shift dyadic block any black-box `L^p` localization pays at least `K^(1/p)`, and globally it pays at least
+
+\[
+\boxed{\gg X^{1/(2p)}(\log X)^{-2/p}}
+\]
+
+if one uses the square `[-CX,CX]^2` only crudely, or `\gg X^{1/p}(\log X)^{-2/p}` with the exact cardinality normalization stated below. In particular an arbitrary fixed power of logarithmic saving in an ambient `L^p` error cannot, for any fixed finite `p`, imply an `o(1)` source-normalized Yang error by Hölder/Parseval alone.
+
+The obstruction is information-theoretically sharp: the operator norm of restriction to the normalized selector is exactly `||sigma||_{p'}`. Thus a generic square-function/large-sieve estimate can escape WI-071 only if it contains **source-correlated arithmetic information beyond an ambient norm bound**, supplies a genuine power saving matching the sparsity, is normalized directly to the lcm support, or controls moments whose order grows at least on the scale `log X / log log X`. This does not rule out an arithmetic large-sieve theorem adapted to the actual selector; it rules out the cheaper hope that ordinary finite-moment Hilbert/Hölder bookkeeping by itself turns the logarithmically accurate free-shift theorems into the required source estimate.
+
+## 1. Exact localization lemma
+
+Let `Omega` be any finite set with normalized counting measure
+
+\[
+\mathbb E_\Omega f:=\frac1{|\Omega|}\sum_{x\in\Omega}f(x),
+\]
+
+and let `S subset Omega` have density
+
+\[
+\delta:=\frac{|S|}{|\Omega|}>0.
+\tag{1}
+\]
+
+A **normalized selector** is any complex function `sigma` satisfying
+
+\[
+\operatorname{supp}(\sigma)\subseteq S,
+\qquad
+\mathbb E_\Omega\sigma=1.
+\tag{2}
+\]
+
+No positivity or uniformity of the selector is assumed. For `1<=p<infty`, let `p'` be the conjugate exponent. Since `sigma=1_S sigma`, Hölder gives
+
+\[
+1
+=|\mathbb E_\Omega 1_S\sigma|
+\le
+\|1_S\|_p\,\|\sigma\|_{p'}
+=\delta^{1/p}\|\sigma\|_{p'}.
+\tag{3}
+\]
+
+Therefore
+
+\[
+\boxed{
+\|\sigma\|_{p'}\ge\delta^{-1/p}.
+}
+\tag{4}
+\]
+
+For a uniform selector `sigma=delta^{-1}1_S`, equality holds in (4). Thus even allowing arbitrary signed or source-weighted selectors cannot reduce the dual-norm cost below the uniform-support value.
+
+If an ambient error function `F` is known only through
+
+\[
+\|F\|_p\le\varepsilon,
+\tag{5}
+\]
+
+then the source functional satisfies
+
+\[
+|\mathbb E_\Omega F\sigma|
+\le
+\varepsilon\|\sigma\|_{p'}.
+\tag{6}
+\]
+
+More importantly, (6) is the **exact** information interface, not merely a loose use of Hölder: duality of finite-dimensional `L^p` spaces gives
+
+\[
+\sup_{\|F\|_p\le\varepsilon}
+|\mathbb E_\Omega F\sigma|
+=
+\varepsilon\|\sigma\|_{p'}.
+\tag{7}
+\]
+
+For `1<p<infty`, an extremizer is obtained by taking `F` proportional to
+`sgn(conj(sigma)) |sigma|^(p'-1)`; the endpoint `p=1` is the ordinary `L^1`--`L^infty` duality statement. Hence no theorem whose **only** output about the ambient error is (5) can imply a better uniform source restriction than (6).
+
+For `p=2`, (4) becomes the Hilbert-space statement
+
+\[
+\boxed{\|\sigma\|_2\ge\delta^{-1/2}}.
+\tag{8}
+\]
+
+If `Omega` is embedded in a finite abelian group and normalized Fourier coefficients are used, Parseval says exactly that the `ell^2` norm of the Fourier selector is the same quantity. Thus passing from the termwise Fourier sum of WI-069 to a square-function estimate gains a square root, but **only** a square root of the sparsity index.
+
+No novelty is claimed for (3)--(8): they are elementary Hölder duality and Parseval. Their role here is to evaluate, exactly, the information cost of the source support identified in WI-071.
+
+## 2. Global lcm sparsity forces a power-sized dual norm
+
+WI-071 proves from the exact public Yang lock that every nonzero physical shift pair generated by the changing reduced-base family lies in
+
+\[
+\mathcal S_X
+\subseteq
+\{(h_1,h_2)\in\mathbb Z^2:
+\operatorname{lcm}(|h_1|,|h_2|)\le CX\}
+\tag{9}
+\]
+
+for one fixed source-block constant `C`, and that even the enlarged all-integer primitive-slope envelope has
+
+\[
+|\mathcal S_X|\ll X(\log X)^2.
+\tag{10}
+\]
+
+Take as ambient set the integer square
+
+\[
+\Omega_X:=\{(h_1,h_2):1\le |h_1|,|h_2|\le CX\},
+\tag{11}
+\]
+
+with the harmless sign and zero-axis conventions deleted or added. Then
+
+\[
+|\Omega_X|\asymp X^2,
+\]
+
+so the source density obeys
+
+\[
+\boxed{
+\delta_X:=\frac{|\mathcal S_X|}{|\Omega_X|}
+\ll\frac{(\log X)^2}{X}.
+}
+\tag{12}
+\]
+
+Every selector supported on the **actual** Yang set has support no larger than the enlarged set in (10), so (4) and (12) imply
+
+\[
+\boxed{
+\|\sigma_X\|_{p'}
+\gg_p
+\frac{X^{1/p}}{(\log X)^{2/p}}
+}
+\qquad(1\le p<\infty).
+\tag{13}
+\]
+
+In particular,
+
+\[
+\boxed{
+\|\sigma_X\|_2
+\gg
+\frac{\sqrt X}{\log X}.
+}
+\tag{14}
+\]
+
+Equation (13) is independent of the detailed source weights. Prime/Mertens restrictions, moving-window deletions, and any other pruning can only make the support smaller. Reweighting the surviving points cannot improve the lower bound because (4) already optimizes over **all** normalized weights on that support.
+
+## 3. The dyadic long-shift form costs `K^(1/p)`
+
+The global square mixes many source scales, so it is useful to record the source-faithful dyadic version as well. WI-071 considers reduced primitive slopes
+
+\[
+r\asymp R,
+\qquad q\asymp Q,
+\qquad (r,q)=1,
+\tag{15}
+\]
+
+and the structured shift range `1<=k<=K`. The exact map
+
+\[
+(r,q,k)\longmapsto(h_1,h_2)=(rk,qk)
+\tag{16}
+\]
+
+is injective because
+
+\[
+k=\gcd(h_1,h_2),
+\qquad r=h_1/k,
+\qquad q=h_2/k.
+\tag{17}
+\]
+
+Even granting **all** coprime integer slopes in the dyadic block, the source therefore has at most
+
+\[
+O(RQK)
+\tag{18}
+\]
+
+points, whereas a coefficient-free shift rectangle containing it has cardinality
+
+\[
+\asymp RQK^2.
+\tag{19}
+\]
+
+Thus
+
+\[
+\boxed{\delta_{R,Q,K}\ll K^{-1}}.
+\tag{20}
+\]
+
+Applying (4), every normalized selector for that block satisfies
+
+\[
+\boxed{
+\|\sigma_{R,Q,K}\|_{p'}\gg K^{1/p}.
+}
+\tag{21}
+\]
+
+For `p=2`, ordinary Hilbert-space localization therefore costs at least `sqrt(K)`. WI-071 already records that on every fixed long-shift interior the natural Yang range has `K` a fixed positive power of `X`; equivalently its support density is power-small. On such a block (21) is a fixed power of `X` for every fixed finite `p`.
+
+The point is not that a particular choice of rectangle is optimal. Any ambient set whose cardinality is a fixed multiple of the natural free-shift rectangle has the same conclusion. Enlarging the ambient set only increases the dual-norm lower bound.
+
+## 4. Arbitrary logarithmic ambient savings are still insufficient at fixed moment order
+
+Suppose, optimistically, that a coefficient-free prime-pattern consumer supplied an ambient error function on the free-shift variables satisfying
+
+\[
+\|F_X\|_p\ll_A(\log X)^{-A}
+\tag{22}
+\]
+
+for every fixed `A>0`, at one fixed finite `p`. This is deliberately stronger than what is needed to state the obstruction; no existing theorem is being asserted to provide exactly (22).
+
+On the global source, (6) and (13) yield only
+
+\[
+|\mathbb E F_X\sigma_X|
+\ll_A
+\frac{X^{1/p}}{(\log X)^{A+2/p}},
+\tag{23}
+\]
+
+and by the sharpness statement (7) **no conclusion better than this can follow from the norm hypothesis (22) alone**. The power `X^(1/p)` dominates every fixed logarithmic saving. Dyadically the corresponding unavoidable interface factor is `K^(1/p)`.
+
+Thus upgrading an ambient theorem from a termwise error to a square function, fourth moment, sixth moment, or any other **fixed finite moment** does not solve the Yang localization problem in a source-agnostic way. It changes the sparsity penalty from `K` to `K^(1/p)`, but that remains a power on the long-shift interior.
+
+There are only four generic ways around this exact norm barrier:
+
+1. an ambient error with a genuine power saving strong enough to absorb `delta^(-1/p)`;
+2. a theorem normalized directly to the lcm-sparse/source support rather than the free-shift box;
+3. arithmetic information proving that the actual prime-error vector is unusually orthogonal to the selector, which is **more information than its ambient `L^p` norm**;
+4. moment order `p=p(X)` growing with `X`.
+
+The fourth option is quantitatively severe. From (13), making the support penalty only polylogarithmic requires
+
+\[
+\frac{\log X}{p}=O(\log\log X),
+\]
+
+hence
+
+\[
+\boxed{
+p\gg\frac{\log X}{\log\log X}
+}
+\tag{24}
+\]
+
+up to the desired logarithmic exponent. A fixed tower of higher ambient moments therefore cannot asymptotically emulate source-uniform control.
+
+## 5. Relation to WI-069 and WI-071
+
+WI-069 fixed one primitive slope `(r,q)` and showed that the normalized source-line selector has exact Fourier support cardinality `rqK`; a termwise character estimate therefore pays the full index `rqK`. WI-071 then aggregated all changing slopes and proved that the union gains substantial density but remains lcm-sparse, with global density `O((log X)^2/X)` and dyadic density `O(1/K)`.
+
+The present finding addresses the most immediate Hilbert-space escape left open there:
+
+\[
+\boxed{
+\text{termwise projection cost }\sim K
+\quad\longrightarrow\quad
+\text{square-function cost }\gtrsim\sqrt K,
+}
+\tag{25}
+\]
+
+but `sqrt(K)` is still power-sized. More generally the best possible source-agnostic fixed-`L^p` cost is `K^(1/p)`.
+
+This deliberately does **not** close the broader “Hilbert/large-sieve or arithmetic decomposition” gate of WI-071. A large-sieve theorem can contain arithmetic geometry tying the error family to the slope/lcm selector; such a theorem supplies information not encoded in (22), so it is outside the no-go. Likewise the exact divisor/martingale structures isolated in WI-058--WI-066 may permit source-specific cross-conductor cancellation. What is closed is the cheaper move
+
+\[
+\boxed{
+\text{ambient free-shift }L^p\text{ estimate with log savings}
++
+\text{Hölder/Parseval}
+\Longrightarrow
+\text{Yang source estimate}
+}
+\tag{26}
+\]
+
+for every fixed finite `p`.
+
+## 6. Nearby prior art and novelty boundary
+
+No novelty is claimed for Hölder duality, the norm of a restriction functional, Parseval, finite-set density bounds, or the principle that restricting an ambient estimate to a sparse set costs a dual norm. The lcm-support theorem and its dyadic source geometry are the already-canonical Mathia deduction in WI-071, derived from the pinned Yang source. WI-069 supplies the complementary exact single-slope Fourier projection.
+
+The nearby prime-pattern theorem surfaces remain those already audited in WI-068--WI-071: Shao--Teräväinen opens the genuinely free-shift finite-complexity rectangle but not a fixed twin-prime slice, while Matthiesen--Teräväinen--Wang's 2026 quantitative polynomial-prime theorem remains one-parameter on the polynomial side. A fresh bounded search on 1 September 2026 did not locate a theorem whose printed interface directly gives a source-normalized four-prime estimate on the lcm-sparse Yang shift family. That negative search is **not** used as novelty or impossibility evidence.
+
+The durable line-specific deduction is only this exact information barrier: once WI-071's source density is inserted into finite-dimensional duality, **every source-agnostic fixed finite ambient moment retains a power localization cost**. The statement is useful because it distinguishes a genuinely source-adapted large-sieve/dispersion theorem from merely applying Cauchy, Parseval, or a few more ambient moments to an existing free-shift theorem.
+
+## 7. Falsification and narrowing gates
+
+Narrow or retire the program consequence if any of the following is established.
+
+1. WI-071's source support/cardinality estimate is materially wrong: in particular, if the exact changing-slope family occupies a positive-density subset of a natural bounded-coefficient free-shift domain.
+2. A source-faithful regrouping represents the Yang covariance by an ambient variable set of cardinality comparable to the source support while retaining bounded prime-form coefficients. Then `delta` would no longer be power-small.
+3. A prime-pattern theorem supplies a **source-correlated** estimate whose hypotheses contain more information than an ambient `L^p` norm, for example a large-sieve square function over the actual lcm/gcd components. Such a theorem would escape rather than falsify (4)--(7).
+4. A theorem gives a sufficiently strong power-saving ambient error to absorb the factor in (13) or (21).
+5. A growing-moment theorem with `p` on at least the scale (24), with constants uniform enough for the Yang source, becomes available.
+
+A claimed repair based only on a fixed `L^2`, `L^4`, or other fixed-`L^p` ambient estimate plus Hölder/Parseval cannot pass this gate: equations (4), (7), and the source densities (12)/(20) give the exact worst-case obstruction.
+
+## 8. Consequence for `weil_inertia`
+
+The accepted Yang locked-covariance clue remains open. WI-070 and WI-071 left two structurally different live representations: a source-dense multivariate polynomial system whose quantitative theorem is missing, and a bounded-coefficient free-shift system supported on an lcm-sparse set. The latter cannot now be repaired merely by moving from termwise errors to any fixed finite ambient moment.
+
+The free-shift route therefore has a sharper evidence-changing target:
+
+\[
+\boxed{
+\text{prove arithmetic orthogonality adapted to the lcm/gcd selector}
+\quad\text{or}\quad
+\text{prove a source-normalized sparse-shift theorem};
+}
+\tag{27}
+\]
+
+ordinary finite-moment ambient control is not enough. This is a decisive closure of a generic functional-analytic shortcut, not a no-go theorem for the Yang one-sided fourth-moment program itself.
