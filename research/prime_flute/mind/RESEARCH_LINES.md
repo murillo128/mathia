@@ -10,15 +10,15 @@ Finite graded chains show that a resolved local eigenvalue can retain a leading 
 
 A decisive result must distinguish order from multiset data and survive the corresponding gauge/projective controls.
 
-## Separate geometric prime-gap memory from universal hyperbolic propagation
+## Separate geometric prime-gap memory from universal hyperbolic and Selberg propagation
 
 **Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
 
-Quarter- and half-plane thresholds, cusp winding, and long-geodesic propagation can be generated without rational-prime arithmetic. Any proposed resonance, transfer, trace, or Ruelle object must remove those universal channels before assigning prime-gap meaning to a critical exponent.
+Quarter- and half-plane thresholds, cusp winding, and long-geodesic propagation can be generated without rational-prime arithmetic. The matched Selberg audit is now much stronger. PF-156 shows that the prime/shift difference of complete repeated packets for every source-Margulis-short primitive family is absolutely summable against the natural smooth tests. PF-157 upgrades the corresponding local Selberg cocycle to a holomorphic **zero-free** relative factor on `Re s>0`. PF-158 removes the shortness restriction for the complete canonical consecutive-block separator family and proves a sharp natural abscissa `Re s=1/4`; its normalized matched product is zero-free throughout `Re s>1/4`, so the Riemann critical line lies strictly inside the proved zero-free region.
 
-The decisive test is an intrinsic residual that changes under a matched non-prime geometry only when the exact ordered arithmetic data change, not merely when a local defect or cusp channel is present.
+The infinitely many pinching primitives, zero-systole subsequences, positive canonical length accumulation, and arbitrarily long canonical block separators therefore cannot supply a hidden critical-line divisor after the exact all-composite subtraction. A surviving Selberg/Ruelle mechanism must use primitive word classes outside the canonical separator sector, a genuinely global continuation coupling sectors, or another nonlocal invariant whose value is not already zero-free under the matched control.
 
-## Close the global clone comparison, then test a genuinely nonlocal relative value
+## Close the global clone comparison, then test the first genuinely nonlocal relative value
 
 **Linked intuitions:** `MI-004-coordinate-amplification-is-not-operator-amplification`.
 
@@ -30,6 +30,6 @@ The exact prime flute and the all-composite shift clone already share compact-re
 
 whose fixed short-collar analogue is proved in PF-146; the geometric route asks for the corresponding global weighted metric/interface assembly.
 
-The consequences of a positive closure are now sharply delimited. PF-147/PF-150 place the first relative resolvent at the abstractly sharp `S_2` boundary, while PF-148 transports one ordinary Krein/Birman--Krein phase from the squared transform. PF-153 shows that higher even powers do not create additional phases, and PF-154 shows that the natural first-resolvent `det_2` has no independent zero divisor. PF-151/PF-155 rule out the entire local scalar heat/residue tower as gap-sensitive data, while PF-152 shows that residue cancellation alone does not canonize a finite part.
+The consequences of a positive closure are sharply delimited. PF-147/PF-150 place the first relative resolvent at the abstractly sharp `S_2` boundary, PF-148 transports one ordinary Krein/Birman--Krein phase from the squared transform, PF-153 shows that higher even powers do not create additional phases, and PF-154 shows that the natural first-resolvent `det_2` has no independent zero divisor. PF-151/PF-155 rule out the local scalar heat/residue tower as gap-sensitive data, while PF-152 shows that residue cancellation alone does not canonize a finite part. PF-156--PF-158 additionally close the most canonical marked Selberg orbit sectors through and beyond `Re s=1/2`.
 
-A decisive positive result is therefore a genuine global assembly followed by a **value theorem** for the relative spectral-shift/scattering function, resonance continuation, closed-geodesic sector, or another nonlocal invariant that separates the exact composite control. A decisive negative must obstruct the actual global assembly or show that the resulting relative value is still control-universal; changing resolvent exponent, regularization, or local heat coefficient is no longer a distinct route.
+A decisive positive result is therefore a genuine global assembly followed by a **value theorem** for the relative spectral-shift/scattering function, resonance continuation, the noncanonical primitive-word sector, or another nonlocal invariant that separates the exact composite control. A decisive negative must obstruct the actual global assembly or show that the resulting full relative value is still control-universal; changing resolvent exponent, regularization, local heat coefficient, or selecting another canonical separator subfamily is no longer a distinct route.

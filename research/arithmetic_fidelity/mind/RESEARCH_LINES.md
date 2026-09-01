@@ -22,9 +22,9 @@ A decisive positive example should derive the relational observable canonically 
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`.
 
-Determine when vertical-rank, conditional-variance, statistical-sufficiency, full-jet, and support-confusability criteria imply one another after adding connectedness, quasianalyticity, support separation, or other natural assumptions. The aim is to replace informal category changes by exact bridge theorems or exact counterexamples.
+Determine when vertical-rank, conditional-variance, statistical-sufficiency, full-jet, support-confusability, and zero-error criteria imply one another after adding connectedness, quasianalyticity, support separation, or other natural assumptions. AF-046 now supplies a sharp warning: distribution-law separation may have a positive total-variation margin while exact support-disjoint zero-error fidelity has zero margin in the same ambient channel simplex.
 
-A decisive result must state the topology/category and show either equivalence under sharp hypotheses or a persistent obstruction. Small average error, formal agreement, infinitesimal injectivity, or base-model symmetry breaking alone does not establish exact recoverability.
+A decisive result must state the topology/category and show either equivalence under sharp hypotheses or a persistent obstruction. Small average error, formal agreement, infinitesimal injectivity, base-model symmetry breaking, or positive law separation alone does not establish exact zero-error recoverability.
 
 ## Classify which analytic layer retains rational-prime norms
 
@@ -50,10 +50,12 @@ Arbitrary dependent sources have an exact degree filtration given by fusion span
 
 A decisive theorem should compute both the source-dependent retained support and a **global** lower fusion-frame/closed-sum modulus for a mathematically forced family. Pairwise conditioning is not enough. A claimed minimal lift is incomplete if it restores algebraic recoverability while the collective stability constant collapses in the intended limit.
 
-## Compute robust fidelity as distance to the collision boundary in the category actually used downstream
+## Make robust-fidelity and repair geometry intrinsic to the admitted representation category
 
 **Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision` and `MI-003-fidelity-endpoints-are-category-dependent`.
 
-AF-041--AF-045 identify exact distance-to-loss formulas in Hilbert, Euclidean-linear, compact smooth, and general Lipschitz settings. The live question is how far this principle extends to operator families, quotient/moduli problems, stochastic channels, and asymptotic completions, and how those margins compose.
+AF-041--AF-045 identify exact distance-to-loss formulas in Hilbert, Euclidean-linear, compact smooth, and general Lipschitz settings. AF-046--AF-051 show that stochastic repair adds a second gate: the target notion and the discrepancy geometry jointly determine the answer. Prior-weighted TV repair is a Bayes/Hall partition problem, row-sup TV becomes a max-min allocation problem, forward KL sees a support barrier while reverse KL has a finite conditioning projection, all row-separable Csiszar `f`-divergences reduce to retained-mass penalties, and quadratic repair retains extra coordinate granularity.
 
-A decisive result must specify the perturbation topology and prove an exact or sharp distance-to-collision formula there. For arithmetic use, the important stress test is whether a rational-prime discriminator remains a positive distance from matched non-prime controls in the same topology required by the final analytic or spectral theorem.
+The last point is a decisive control. Uniform output cloning is statistically reversible, yet the quadratic repair cost changes with clone granularity. A candidate `distance from fidelity` is therefore not automatically an intrinsic information quantity merely because it is exact. The live problem is to classify repair/stability geometries that are invariant under the equivalences declared information-preserving by the category, and to separate them from coordinate-sensitive costs.
+
+A decisive result must specify the perturbation topology, target failure set, and admissible representation equivalences. For arithmetic use, a rational-prime discriminator should remain separated from matched controls in the same intrinsic category required by the downstream theorem, rather than only in a convenient coordinate metric.

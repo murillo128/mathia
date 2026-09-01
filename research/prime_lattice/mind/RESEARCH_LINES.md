@@ -2,11 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Distinguish the exact rational-prime norm completion from Beurling controls
+## Distinguish the exact rational-prime norm completion from Beurling and universal tempered controls
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-002-critical-line-is-boundary-not-selector`.
 
-The free exponent cone, square-free hypercube, Euler-product architecture, square-root-scale counting regularity, and arbitrary finite prefixes of ordinary prime frequencies do not determine RH-type zero geometry. A surviving arithmetic invariant must use the full rational-prime norm/completion in a way unavailable to matched Beurling systems and must constrain more than the self-dual axis.
+The free exponent cone, square-free hypercube, Euler-product architecture, square-root-scale counting regularity, and arbitrary finite prefixes of ordinary prime frequencies do not determine RH-type zero geometry. PL-104--PL-105 add a particularly strong control: Bruhat--Tits radial geometry produces `Re(s)=1/2` as the classical local tempered axis, and finite regular quotients add cycles, an Ihara Euler product, a determinant formula, and an exact RH-like root-location theorem. Yet generic Ramanujan graphs, including degrees with no local-field residue cardinality, satisfy the same package.
+
+A surviving arithmetic invariant must therefore use the full rational-prime norm/completion in a way unavailable to matched Beurling systems **and** unavailable to universal local/graph temperedness. Producing a half-axis, a cycle zeta, or even a determinant with an RH-equivalent Ramanujan condition is not a rational-prime selector by itself.
 
 ## Resolve the discrete Nyman defect with target-sensitive data
 
@@ -36,10 +38,12 @@ On fixed smooth cross-end probes, the critical second amplitude produces an almo
 
 The only potentially new route is therefore upstream: derive the required boundedness or an equivalent coercive estimate directly from rational-prime/completion structure without using the already-continued zero expansion as the controlling input. If every such derivation merely reimports the explicit formula or a zero-location theorem, the second-scale criterion is diagnostic rather than explanatory.
 
-## Target microscopic or target-relative data after the coherent Gram sampling boundary
+## Target the residual after both coherent sampling and Poisson bulk controls
 
 **Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
 
-The ordinary growing prime-power Gram is now classicalized through a much stronger range. The shell envelope is log-uniform; after the natural `K^2` repair the normalized covariance is `S_2`-universal at every observation horizon in the first growing-depth regime; and its raw `S_1` discrepancy from the continuum follows a classical prolate Nyquist/rank phase. Super-Nyquist separation is forced by finite rank, while sub-Nyquist trace-norm convergence is reproduced by a deterministic midpoint grid.
+The ordinary growing prime-power Gram is now classicalized through a stronger range. The shell envelope is log-uniform; after the natural `K^2` repair the normalized covariance is `S_2`-universal; and PL-100--PL-101 show that deterministic midpoint clouds attain the continuum in `S_1` at exact and arbitrarily near Nyquist scale. PL-102 then shows that the critical prime-band `S_1` excess, when it occurs under the local Hardy--Littlewood hierarchy, is already forced by the generic Poisson bulk law rather than a rational-prime rigidity. PL-103 similarly shows that exponential Gram log-determinant decay is a generic consequence of the same nondegenerate Poisson bulk.
 
-The live question is therefore not another ordinary bulk, fixed extreme eigenvalue, fixed positive determinant, or raw trace-norm defect. It is the **excess beyond the sharp sampling control**: microscopic spacing, hard-edge/inverse statistics, condition numbers, target-relative Schur complements, singular/growing tests, or a completed indefinite Weil observable. A decisive positive result must survive the log-uniform/PNT envelope, all-horizon `S_2`, prolate rank-floor, and deterministic sub-Nyquist controls and then distinguish rational primes from generalized-prime/Poisson models.
+The live question is therefore not ordinary bulk, fixed extreme eigenvalues, raw trace-norm discrepancy, or unrenormalized log determinant. It is the **residual beyond both controls**: first subtract/match the deterministic prolate/Nyquist sampling model, then match the Poisson shot-noise bulk. Only microscopic correlations, hard-edge/inverse statistics, target-relative Schur complements, singular/growing tests, or a completed indefinite Weil observable that survives both layers can still be prime-specific.
+
+A decisive positive result must distinguish rational primes from generalized-prime/Poisson models at this doubly matched layer; a statistic reproduced by either the coherent grid or the Poisson bulk is not an arithmetic selector.
