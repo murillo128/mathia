@@ -293,13 +293,13 @@ Therefore
 
 \[
 \boxed{
-S_f(kL)\ne\log(kL)
-\quad\text{for all }k
+S_f(kL)=\log(kL)
+\quad\text{cannot hold for all }k\ge1.
 }
 \tag{23}
 \]
 
-for every fixed finite multireference construction covered by (9)--(19).
+Equivalently, equality must fail for at least one of `k=1,2,4`; isolated intersections between an affine response and `log(kL)` are not excluded.
 
 The implication for von Mangoldt extraction is exact. If an arithmetic preprimitive `G` has Möbius primitive
 
