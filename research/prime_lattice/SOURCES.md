@@ -255,3 +255,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 64. **H. J. Landau**, “Necessary density conditions for sampling and interpolation of certain entire functions,” *Acta Mathematica* **117** (1967), 37–52. DOI: https://doi.org/10.1007/BF02395039.
     - Role: classical density/Nyquist prior-art anchor for `PL-080`. Identifies the critical Beurling density constraints for stable sampling/interpolation of band-limited functions. For the unit-time rescaled logarithmic frequencies, the local point density near `n~xT` is `x`, placing the transition at the ordinary Nyquist value `x=1/(2 pi)` rather than at a prime-arithmetic scale.
+
+## Critical prime-support local statistics and Poisson Euclidean spectra
+
+65. **P. X. Gallagher**, “On the distribution of primes in short intervals,” *Mathematika* **23**(1) (1976), 4–9. DOI: https://doi.org/10.1112/S0025579300016442.
+    - Role: classical arithmetic anchor for `PL-083`--`PL-085`. Under suitable Hardy--Littlewood prime-tuple conjectures, logarithmic-length prime counts have Poisson asymptotics; the singular-series averaging in Gallagher's proof is the exact local arithmetic mechanism that removes fixed-tuple prime factors from the critical support-Gram bulk moments.
+
+66. **Tristan Freiberg**, “A Note on the Distribution of Primes in Intervals,” in *Irregularities in the Distribution of Prime Numbers*, Springer, 2018, pp. 23–44. DOI: https://doi.org/10.1007/978-3-319-92777-0_2.
+    - Role: joint-local-statistics anchor for `PL-084` and `PL-085`. Assuming a Hardy--Littlewood prime-tuples hypothesis, proves asymptotic independence of prime counts in finitely many adjacent logarithmic intervals, supporting the finite-dimensional Poisson-process interpretation rather than only a one-interval count.
+
+67. **Charles Bordenave**, “Eigenvalues of Euclidean random matrices,” *Random Structures & Algorithms* **33**(4) (2008), 515–532. DOI: https://doi.org/10.1002/rsa.20228. arXiv: https://arxiv.org/abs/math/0606624.
+    - Role: main random-matrix matched-control anchor for `PL-084` and `PL-085`. Proves almost-sure empirical spectral convergence for fixed-density Euclidean random matrices with compact-support kernels, computes limiting moments through equality/surjection patterns, and obtains a `(Cm)^m` Carleman bound. `PL-085` uses this only for the compact-range Poisson control and removes the sinc tail separately by a prime-pair Frobenius/Wasserstein estimate.
