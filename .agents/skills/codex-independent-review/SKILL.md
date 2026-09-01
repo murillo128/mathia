@@ -13,6 +13,8 @@ The reviewer owns independent exact-target inspection, proportional validation, 
 
 For a completed Mathia Lean formalization, the reviewer also owns an independent **formal-to-human correspondence review**: reconstruct the Lean theorem in ordinary mathematical language, explain the proof as mathematics rather than tactics, and state exactly what surrounding mathematics remains outside the formal theorem.
 
+For Mathia Lean, the reviewer additionally treats formalization as a possible **fertility instrument**. The target theorem may be prior art or otherwise non-novel; the review must still ask whether the exact formal proof exposed a mathematically meaningful object, asymmetry, hypothesis boundary, factorization, or representation that the informal source did not make explicit. This is an observation obligation, not a requirement to manufacture a clue.
+
 A `PASS` or `PASS_WITH_NOTES` means the reviewed target is technically safe to progress according to the controlling workflow. It is not merge authorization.
 
 ## Trust the issue as the technical contract
@@ -103,9 +105,41 @@ auditable.
 
 A human proof need not mimic the tactic sequence. A better mathematical compression is preferred when it is faithful to the same formal argument.
 
+### 3a. Formalization-fertility audit
+
+For every completed Mathia Lean formalization, perform a short but active fertility audit after reconstructing the human proof. This audit is mandatory whether the target theorem is new, classical, or known prior art.
+
+Ask explicitly:
+
+> **What did Lean have to prove, factor, define, separate, or use that the finding or source did not treat as a first-class mathematical object?**
+
+Inspect especially:
+
+- hypotheses actually consumed versus hypotheses merely present in the informal statement;
+- one-sided injectivity/surjectivity or monotonicity hidden behind an apparently symmetric informal condition;
+- intermediate lemmas whose theorem surface is cleaner or more general than the final target;
+- exact kernel/range/image descriptions, quotients, normal forms, factorizations, finite certificates, or invariant decompositions introduced because the formal proof needed them;
+- case splits or degenerate branches that reveal the true theorem boundary;
+- two distinct proof representations that become visibly equivalent only after formal reconstruction;
+- proof dependencies that suggest the target belongs to a broader structural class than its original application.
+
+Do not confuse library plumbing with mathematics. A helper is fertile only when its content changes how the theorem can be understood, generalized, classified, or falsified.
+
+The audit must end with one of:
+
+```text
+no material fertility delta found
+material fertility delta / clue candidate
+material finding-or-statement divergence
+```
+
+`no material fertility delta found` is a fully successful outcome. A fertility-motivated formalization is an experiment in conceptual pressure, not a quota for discoveries.
+
+A material finding-or-statement divergence is a correctness/research challenge and must follow the adversarial-review route owned by the Mathia formalization workflow; do not launder it into a clue.
+
 ### 4. Extract research clues from representation changes
 
-For a Mathia Lean formalization review, the correspondence reconstruction is also an observation surface.
+For a Mathia Lean formalization review, the correspondence reconstruction and fertility audit are also observation surfaces.
 
 If translating the Lean proof back into mathematics exposes a **distinct, falsifiable research direction** -- for example:
 
@@ -114,6 +148,7 @@ If translating the Lean proof back into mathematics exposes a **distinct, falsif
 - a new invariant, equivalence, normal form, or obstruction;
 - a plausible generalization suggested by which hypotheses the Lean proof actually uses;
 - two independent explanations of the same result whose coexistence suggests a deeper common mechanism;
+- a classical/prior-art theorem whose formal proof reveals a new structural interface worth testing beyond the original application;
 
 then load:
 
@@ -126,6 +161,8 @@ Deduplicate against existing clues and create or materially strengthen only a `s
 A shorter tactic script, easier library lemma, import simplification, or merely shorter proof is **not** clue-worthy. The key test is whether the alternative proof changes the mathematical explanation/representation and yields a concrete research question with a decisive test.
 
 The WP-014 pattern is canonical: a global Mittag--Leffler explanation and an independent finite Taylor/polynomial certificate of the same Schiffer obstruction can motivate questions about finite local certificates or deeper local invariants. The clue is the new research question, not the fact that one proof is shorter.
+
+Likewise, prior-art status of the theorem does not prevent a clue when the **new research question** comes from a structural delta exposed by formalization. The clue must not imply that the prior-art theorem itself is novel.
 
 The reviewer may not:
 
@@ -144,7 +181,7 @@ Run issue-defined validation when supported. Prefer checks capable of falsifying
 
 A checkpoint can serve as final technical review when it covers the complete final diff and all remaining acceptance criteria. Later technical changes invalidate that verdict for the changed target.
 
-For a completed Mathia Lean formalization, final review is not complete until the formal-to-human correspondence and evidence boundary above have been reconstructed.
+For a completed Mathia Lean formalization, final review is not complete until the formal-to-human correspondence, fertility audit, and evidence boundary above have been reconstructed.
 
 Final technical review completion allows a ready-for-review handoff. It does not authorize merge.
 
@@ -158,6 +195,7 @@ For completed Mathia Lean formalizations, also record:
 - the concise human proof/proof structure;
 - correspondence verdict against the authoritative claim;
 - explicit unformalized boundary;
+- fertility-audit outcome;
 - any proposed clue path created from a material representation change.
 
 ## Repeated-review circuit breaker
