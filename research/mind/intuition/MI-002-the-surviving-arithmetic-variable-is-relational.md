@@ -1,47 +1,42 @@
-# MI-002 — Relational fidelity can be exact locally, but arithmetic specificity still needs a global anchor
+# MI-002 — Relational fidelity can be exact, but coupling, specificity, and realization remain separate gates
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Mathia's strongest local mechanisms often emerge only after quotienting away an absolute scale: cross-ratios, cuff contrasts, mixed conformal defects, target-relative projection data, and cross-boundary couplings survive where absolute coordinates or scalar summaries fail. Arithmetic Fidelity supplies exact positive models of the same idea: bispectral phase coupling, annihilator lattices, and matrix-valued marked spectral measures can restore an intended gauge without restoring absolute coordinates. But the strongest controls show that **relational completeness, gauge breaking, and arithmetic specificity are three separate properties**.
+Mathia's strongest local mechanisms often emerge only after quotienting away an absolute scale: cross-ratios, cuff contrasts, mixed conformal defects, target-relative projection data, and cross-boundary couplings survive where scalar summaries fail. Arithmetic Fidelity supplies exact positive models of this idea. The new marginal results sharpen the caveat: even complete knowledge of every chosen relation separately can lose the **coupling among those relations**. Relational completeness, joint-interaction fidelity, rational-prime specificity, and usable realization are distinct properties.
 
 ## Strongest current principle
 
-AF-004--AF-006 make the local side precise. A relational lift can be exactly complete modulo translation or another intended symmetry, and its residual ambiguity can be computed algebraically rather than guessed from rank. This strengthens the reason to preserve off-diagonal/marked information when scalarization loses provenance.
+AF-004--AF-006 show that higher-order relational lifts can be exactly complete modulo an intended symmetry, with the residual ambiguity group computed algebraically. AF-031--AF-033 show the complementary failure mode. Complete marginal feature laws need not determine their joint law; on a Boolean cube the retained interaction coordinates are exactly the faces of the observed simplicial marginal complex. The target is recoverable only if its interaction support is retained. A relational lift therefore earns its role by an exact joint-completeness theorem, not by having high order or many coordinates.
 
-Prime Flute supplies both a positive and a negative instance. Resolved multi-neck modes retain directed relation-between-neck scales, but PF-125 puts the entire exact prime flute and the all-composite `p_n+1` clone in the same compact-resolvent class. Rich local geometry and even essential spectral equivalence therefore do not distinguish the rational-prime source.
+Prime Flute supplies the specificity control. Resolved multi-neck data can retain directed relations, yet the exact prime flute and all-composite shift clone already share compact-resolvent class and increasingly strong local wave budgets. Local relational richness alone does not distinguish the rational-prime source.
 
-Prime Lattice adds a sharper gauge-breaking control. PL-073 shows that Möbius orientation on the square-free hypercube is exactly a prime-torus translation for unpointed statistics. Pointing at a fixed target does break that gauge, but PL-074--PL-075 identify the first recovered critical-scale variables as Mirsky square-free correlations, Chowla correlations, or Hardy--Littlewood prime-pair data multiplied by a universal sinc kernel. Recovering a relation that the quotient had erased is meaningful, yet it does not by itself create a new Riemann-specific invariant.
+Prime Lattice supplies the gauge/correlation control. Pointing breaks a real torus gauge, but the first recovered finite-horizon variables route into classical additive correlations, short-interval variance, Poisson-sinc sampling, or pair-correlation theory. At the critical prime-support bulk scale, full local Hardy--Littlewood input produces a Poisson law rather than a new zero selector.
 
-Prime Lattice also gives the global norm warning: free exponent architecture and strong finite/local controls survive generalized-prime systems with incompatible zero behavior, so a surviving invariant must use the exact rational-prime norm/completion. Weil Positivity adds another form of the same separation: the Hardy shell algebra recovers `Lambda` exactly, but the natural positive norm makes the anchor functional discontinuous, so algebraic fidelity alone does not give a usable positive realization.
+Weil Positivity supplies the realization control. The finite selector is now algebraically and positively present much further than before: pointed topology makes the anchor continuous, root covers force the half-weight, and the positive cocycle/Möbius primitive recovers the exact finite coefficient. Yet the support-selecting and archimedean completion steps remain indefinite, coboundary, or quotient-trivial.
 
 ## Consequence for synthesis
 
-A plausible mechanism should pass three gates:
+A plausible mechanism should pass four explicit gates:
 
-1. **fidelity gate:** after the natural quotient, do the surviving relational observables determine the local variable modulo exactly the intended gauge?
-2. **specificity gate:** does the resulting structure distinguish the strongest control that preserves the same local/relational package but changes the arithmetic source?
-3. **realization gate:** is the recovered discriminator continuous or otherwise usable in the topology/operator category needed by the final theorem?
+1. **joint fidelity:** do the retained relational/interaction observables determine the needed local variable modulo exactly the intended gauge?
+2. **specificity:** does that joint structure distinguish the strongest matched non-Riemann source/control?
+3. **realization:** is the discriminator continuous or otherwise usable in the required topology/operator category?
+4. **completion:** does the global operation preserve the discriminator while supplying the required sign or spectral theorem?
 
-Passing only the first gives a faithful coordinate system. Passing the first two but failing the third can leave the arithmetic selector stranded on an algebraic core.
-
-## Evidence against overgeneralization
-
-This does not privilege any one global completion, nor imply that local spectral memory or pointing is unimportant. A locally faithful carrier may become decisive after coupling to an independently forced arithmetic norm, target, completion, or global sign mechanism. The additional anchor must be derived rather than inferred from the fact that the input labels happened to be primes.
+Passing only the first gives a coordinate system. Passing the first two but failing realization strands the selector; passing three but losing it under completion still does not select zeros.
 
 ## Status / novelty
 
-The exact relational-lift criteria and branch controls are persisted findings. Their three-gate interpretation is a supported synthesis.
+The exact relational-lift, marginal-interaction, clone, correlation, and pointed-realization results are persisted evidence. Their four-gate interpretation is supported synthesis.
 
 ## Falsification criterion
 
-Exhibit a canonical invariant depending only on a relational structure already matched by the strongest non-prime control, yet forcing a Riemann-specific conclusion without an additional global arithmetic anchor. Alternatively, derive a global anchor and realization topology that provably break the matched-control equivalence while preserving the local fidelity.
+Exhibit a canonical invariant depending only on relations already matched by the strongest control, yet forcing a Riemann-specific conclusion without an additional global arithmetic anchor. Or recover a target interaction outside the exact observed marginal support without adding new information.
 
 ## Lean-formalizable core
 
-- Bispectral completeness modulo translation.
-- Annihilator-lattice completeness modulo a subgroup.
-- Marked spectral Gram classification.
-- Diagonal-gauge equivalence for unpointed coefficient statistics.
-- Abstract separation of quotient fidelity, source specificity, and realization continuity.
+- Relational completeness modulo a symmetry group.
+- Joint-versus-marginal interaction kernel.
+- Abstract separation of joint fidelity, source specificity, realization continuity, and completion.

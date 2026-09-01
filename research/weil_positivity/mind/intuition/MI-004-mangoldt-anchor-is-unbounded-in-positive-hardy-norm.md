@@ -1,46 +1,42 @@
-# MI-004 — Pointed topology repairs the Mangoldt anchor, but positive finite and archimedean pieces still fail to couple with the Weil sign
+# MI-004 — Pointed positivity recovers the finite Weil coefficient, but support selection and archimedean coupling still break the sign
 
-**Evidence level:** supported by exact positive constructions and exact compatibility obstructions
+**Evidence level:** supported by exact positive constructions, Möbius extraction, and exact semigroup/globalization obstructions
 
 ## Core intuition
 
-The Mangoldt selector is not intrinsically incompatible with positive Hilbert geometry. It is incompatible with the original rotation-invariant Hardy topology. Once the canonical base point is built into the metric, the selector becomes continuous and the intrinsic power maps force both the critical half-weight and a positive logarithmic scale defect. The remaining failure is more informative: the positive finite-place package still does not assemble with the signed Weil multiplier and the archimedean shift without an indefinite subtraction or coefficient contamination.
+The finite arithmetic package is now stronger than merely having a bounded Mangoldt anchor. In the pointed local Dirichlet geometry, intrinsic covers force the critical half-weight, a positive trace-class cocycle supplies `log n`, and Möbius extraction gives the exact scalar coefficient `Lambda(n)/sqrt(n)`. The obstruction has moved to the operation that selects prime-power support and couples it to the archimedean Weil term: that operation leaves the positive cone or collapses to a separable/coboundary structure.
 
 ## Strongest justified principle
 
-WP-067--WP-069 establish the original topology obstruction. The Hardy shell form recovers `Lambda(n)` algebraically, but the full-root controls give a null sequence on which the anchor stays equal to one. No finite scalar counterterm or regular positive auxiliary extension preserving that finite Hardy energy can represent the anchor by a finite-energy vector.
+WP-067--WP-071 identify the original topology obstruction: the exact shell anchor is unbounded in the natural rotation-invariant Hardy energy, and positive rotation-invariant repairs do not fix it. WP-072--WP-074 give the canonical positive escape. The base-point local Dirichlet form contains every shell, makes evaluation at `1` bounded, forces the unique isometric normalization `n^{-1/2}` under degree-`n` covers, and produces positive trace-class inverse-scale defects `Q_n` with `Tr Q_n=log n`.
 
-WP-070--WP-071 show that obvious symmetric repairs do not help. The canonical antipodal `q=2` positive correction remains blind to the normalized odd full-root controls, and in fact **every** positive rotation-invariant Hilbert completion with bounded evaluation at `1` excludes every nontrivial cyclotomic logarithm. The obstruction is therefore to rotation-invariant topology, not to positive realization as such.
+WP-075--WP-076 close the direct archimedean shift escape. Positive shifted-resolvent defects contain a digamma correction, but under multiplicative composition they form an exact positive semigroup cocycle and the entire digamma term is the scalar coboundary `F(c/n)-F(c)`. It telescopes to endpoint data and creates no irreducible cross-prime coupling. Exact finite `log n` weights remain the zero-shift endpoint of this separated family.
 
-WP-072 supplies the positive survivor. The canonical base-point local Dirichlet energy
-`D_1(F)=||(F-F(1))/(z-1)||_{H^2}^2`
-contains every cyclotomic shell, makes `F(1)=Lambda(n)` bounded, and is positive definite on the shell span. This is not a fitted point: `1` is already the distinguished base-shell point.
+WP-077 classifies the most canonical positive globalization by averaging the same pointed fibers over boundary basepoints while preserving every root cover. The only invariant probability measures are `a delta_1+(1-a) Haar`. The pointed branch is the existing construction; the Haar branch is the classical Dirichlet form and kills the cover resolvent defects and bounded anchor. Positive semigroup-compatible averaging therefore supplies no third mechanism.
 
-WP-073 then derives the critical attenuation internally. Composition by the intrinsic degree-`n` power map multiplies `D_1` by `n`, so `n^{-1/2}C_n` is the unique positive isometric normalization. The boundary representer is an adjoint eigenvector with eigenvalue `n^{-1/2}`, giving the exact `Lambda(n)/sqrt(n)` scale. This is a canonical **critical half-weight**, but still not zero selection.
+WP-078 nevertheless sharpens the finite arithmetic result. The divisor-Möbius primitive
 
-WP-074 adds a second positive structure from the same cover geometry. The uniquely covariant half-integer number operator produces a positive trace-class inverse-scale defect with trace `log n`; on a primitive prime ray its Gram kernel has first row `(log p)p^{-k/2}`. Thus both factors in the finite Weil prime-power weight can be forced positively before analytic continuation. But converting the positive Poisson kernel into the actual finite Weil multiplier requires the sign-changing subtraction `1-P_r`.
+`M_n = sum_{d|n} mu(d) Q_{n/d}`
 
-WP-075 makes the finite/archimedean incompatibility exact. Positive shifted-resolvent defects mix `log n` with a digamma difference, but the exact finite coefficient remains `log n` for every degree only at zero shift, precisely where the digamma contribution disappears. Inside this canonical positive family, turning on the archimedean spectral shift necessarily contaminates the finite prime coefficient.
+has `Tr M_n=Lambda(n)`. On every prime power `p^k`, `M_{p^k}` is itself positive and is just a transported copy of the one-step prime defect. On integers with at least two distinct prime factors, `M_n` is nonzero trace-zero and indefinite. Multiplying the trace by the cover overlap gives the exact finite scalar `Lambda(n)/sqrt(n)`, but the support-selecting Möbius operation is precisely where positivity fails off the prime-power rays.
 
-The present boundary is therefore not “find a positive norm containing the selector.” That has been done. It is **derive one global positive/sign-producing operation that couples the pointed finite package to the archimedean/polar terms without performing the known indefinite subtraction and without altering the exact finite coefficients**.
+Thus positivity does not fail to carry arithmetic. It fails to turn the exact finite selector into one completed positive Weil sign without an independently justified operation that handles mixed-prime cancellation and the archimedean term simultaneously.
 
 ## What remains possible
 
-A nonseparable finite--archimedean construction could couple the two sectors before either is reduced to a Poisson kernel or shifted resolvent trace. A singular boundary/intersection/cohomological form may also lie outside the scalar positive families classified so far. Any such mechanism must keep the `D_1`-level selector continuous, retain the forced half-density/log-degree data, and supply its own sign theorem.
-
-Choosing a different shift because it resembles the Gamma factor, or subtracting the positive Poisson kernel from the identity after the fact, does not qualify.
+A genuinely nonseparable finite--archimedean form, higher cohomological construction, twisted family/boundary geometry, or singular pairing could couple the prime-power selector before it is reduced to scalar Möbius cancellation or a separated shifted resolvent. Any such mechanism must retain the pointed continuity and exact half-weight/log-degree package while proving its sign independently.
 
 ## Status / novelty
 
-Local Dirichlet positivity, composition-operator scaling, Jensen/resolvent positivity, and digamma trace formulas use classical functional analysis. Their exact specialization to the Mathia shell/cover data is persisted evidence. The synthesis is a supported finite-versus-global compatibility gate, not a Weil-positivity proof.
+Local Dirichlet positivity, composition scaling, Jensen/resolvent positivity, semigroup cocycles, Möbius inversion, and invariant-measure arguments use classical ingredients. Their exact specialization to the Mathia cover data and the positive-on-prime-powers/indefinite-off-prime-powers split are persisted evidence. This is not a Weil-positivity proof.
 
 ## Falsification criterion
 
-Construct within the audited pointed-cover positive family a nonzero archimedean shift that preserves the exact finite `log p` weights, contradicting WP-075, or show that the pointed Dirichlet anchor is unbounded despite WP-072. A positive advance should instead derive a new global coupling outside the separated positive Poisson/resolvent architecture and prove its sign independently.
+Construct within the audited pointed-cover family a positive Möbius primitive on every integer while retaining `Tr M_n=Lambda(n)`, contradicting WP-078, or a semigroup-compatible positive basepoint average outside the pointed-plus-Haar classification of WP-077. A positive advance should instead derive a new nonseparable completion outside those closed families.
 
 ## Lean-formalizable core
 
-- Boundedness of boundary evaluation in the pointed Dirichlet norm.
-- Exact degree scaling and unique `n^{-1/2}` isometric normalization.
-- Positivity/trace of the inverse-scale defect.
-- Uniqueness of zero shift for exact finite log-degree coefficients.
+- Cover-cocycle identity and digamma coboundary telescoping.
+- Invariant-measure classification under all power maps.
+- Möbius primitive trace identity.
+- Positivity on prime powers and trace-zero indefiniteness off them.

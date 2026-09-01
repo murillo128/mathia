@@ -1,40 +1,40 @@
-# MI-005 — Finite test families have independent scale, dimension, and admissibility gates
+# MI-005 — Test-family fidelity is governed by measured span, scale, and admissibility
 
-**Evidence level:** supported by exact reconstruction, local programming, constrained-cone jet freedom, and Beurling deformation fibers
+**Evidence level:** supported by exact reconstruction, aliasing, closed-span, local-programming, and constrained-cone results
 
 ## Core intuition
 
-A test family can fail for three different reasons. Restricting where tests live creates a **scale horizon**; retaining only finitely many test values creates a **resolution horizon** inside the visible scale; and imposing admissibility conditions helps only when those conditions actually shrink the response quotient seen by the source. Singular isolation of one source point is not by itself evidence of arithmetic fidelity, because a flexible test class can manufacture such isolation around an arbitrary source.
+The raw number of tests is not the decisive variable. For linear source measurements, fidelity is controlled by the closed linear span of the functions that are actually measured, together with the spatial scale on which they live and the source class on which injectivity is required. An infinite analytically coupled family can be complete, while an infinite regularly sampled family can have an exact alias horizon. Admissibility constraints help only when they shrink this measured quotient rather than merely the ambient function class.
 
 ## Strongest justified principle
 
-AF-020 gives the positive endpoint: the complete Weil functional on `C_c^\infty(0,\infty)` determines the prime-power measure and hence the unordered generalized-prime norm multiset. Restricting support to `(0,A)` has an exact interpretation: generators beyond `e^A` are invisible.
+AF-020 gives the complete endpoint: the full Weil functional determines the generalized-prime measure on its visible support. AF-021--AF-023 show that a fixed finite family leaves positive-dimensional local collision fibers at regular source points. AF-024--AF-027 show the opposite danger: a flexible smooth or double-positive test class can retain enough local response freedom to manufacture finite-order isolation, so singularity or positivity alone does not certify arithmetic specificity.
 
-AF-021--AF-023 separate finite-dimensional resolution from scale. Any fixed `d` scalar tests admit exact generalized-prime collisions; at a regular `N>d` source point the same-test fiber through the point has positive dimension. Thus ordinary rational primes cannot be locally identifiable there unless the source point is singular or the admissible category removes the ambient deformation directions.
+AF-028 supplies the first exact infinite-family positive repair. A fixed compact double-positive modulation family indexed by frequencies with a finite accumulation point determines every finite signed measure on the visible interval, by analytic continuation of its cosine transform. Thus finite-dimensional nonidentifiability does not extend automatically to an infinite family whose parameter set is analytically complete.
 
-AF-024 shows why singularity alone is not enough. In the unconstrained smooth class, local one-generator response germs can be programmed independently at any finite nonresonant block, and one nonnegative test can make an arbitrary chosen source an isolated exact point with vanishing Jacobian and positive Hessian. Pointwise rigidity can therefore be source-tuned rather than source-specific.
+AF-029 shows that infinitude alone is still insufficient. Sampling the same modulation family on the lattice `nh` retains only the pushforward through `x -> cos(hx)` and is faithful on `(0,B)` exactly up to the Nyquist-type threshold `hB<=pi`; beyond that threshold exact cosine aliases occur. The corresponding generalized-prime norm horizon is `exp(pi/h)`.
 
-AF-025 sharpens the admissibility audit. The local experiment has a large exact measurement kernel. Finite linear constraints, moments, evenness, pointwise nonnegativity, and a finite normalization can be repaired inside that kernel and need not restrict the source experiment at all. The right invariant is the constraint induced on the quotient by the measurement kernel, not the formal strength of the condition on the test function.
+AF-030 gives the invariant formulation. For a scalar test family `F` on compact `X`, the complete linear measurement map on finite signed measures has kernel exactly the annihilator of
 
-AF-026--AF-027 then show that even compact support, normalization, Fourier positivity/positive definiteness, and simultaneous pointwise plus Fourier positivity leave full-dimensional finite raw-jet and Weil-response-jet freedom at every finite nonresonant block. These results do not prove arbitrary exact germ programming inside the double-positive cone, but they rule out the idea that those natural positivity constraints alone create finite-order prime rigidity.
+`V_F = closure(span F) subset C(X)`.
+
+It is injective on all signed measures exactly when `V_F=C(X)`, and on a restricted source class `S` exactly when `(S-S) intersect V_F^perp={0}`. Functions obtainable only by multiplication or another generated-algebra operation do not count unless those functions are themselves measured or their values are derivable from the observed linear data.
 
 ## What remains possible
 
-Finite-test fidelity can still arise from a genuinely global admissible class, a nonlocal transform relation, an exact infinite-dimensional coupling among test values, or a source restriction that removes the Beurling deformation fiber. Such a mechanism must be specified before the rational-prime point is selected and must constrain the **measurement quotient itself**, not merely impose conditions that can be corrected in invisible directions.
-
-The surviving question is therefore no longer whether a singular finite-test point or a standard positivity cone can isolate the primes. It is whether a mathematically forced global test/source category destroys the programmable local freedom and gives exact source identifiability.
+A mathematically forced nonlocal or infinite test family can defeat the local Beurling programming obstruction if its actual measured span is complete on the declared source category. Conversely, a global-looking family may still have exact aliases, an incomplete closed span, or a large source-restricted annihilator. The useful next step for any proposed explicit-formula family is therefore to compute `V_F`, its annihilator, and any scale-dependent alias fibers before interpreting numerical injectivity or positivity.
 
 ## Status / novelty
 
-The measure-determination, constant-rank, local smooth-programming, quotient-kernel, and positive-definite modulation ingredients are exact persisted findings with classical analytic/convex inputs. Their synthesis is a supported fidelity gate, not a theorem about every explicit-formula test class.
+The measure duality, identity-theorem, cosine aliasing, constant-rank, and positive-definite modulation ingredients are classical or exact persisted results. Their synthesis is an exact measured-span gate for Mathia fidelity, not a theorem about every possible nonlinear observation scheme.
 
 ## Falsification criterion
 
-Produce exact local prime-specific isolation in an audited admissible class while the class still has the AF-024/AF-027 response freedom, or prove that one of the listed finite constraints reduces the local response image to a lower-dimensional locus contrary to AF-025--AF-027. A positive advance should instead prove isolation in a genuinely global constrained category or source class and identify the exact quotient mechanism responsible.
+Exhibit a linear test family whose measurements determine all finite signed measures while its closed measured span is a proper subspace of `C(X)`, or a source pair in `S` differing by a nonzero element of `V_F^perp` yet separated by the same measurement vector. For an infinite family, a positive advance must identify the exact completeness mechanism rather than appeal only to cardinality.
 
 ## Lean-formalizable core
 
-- Finite-test Jacobian/fiber dimension.
-- Measurement-kernel quotient criterion for linear constraints.
-- Construction of exact local smooth response germs.
-- Full-dimensional finite-jet images under positive-definite modulation families.
+- Annihilator characterization of the linear measurement kernel.
+- Restricted-source injectivity criterion.
+- Cosine-map alias criterion on a bounded interval.
+- Finite-test Jacobian/fiber dimension and exact scale horizon.

@@ -1,33 +1,36 @@
-# MI-005 — Hardy nonlocality survives, but its finite essential core is universal and its finite relative sector is cyclotomic-period data
+# MI-005 — Hardy nonlocality survives, but finite cycle periods remain cyclotomic and incidence-controlled
 
-**Evidence level:** supported by exact operator classifications and finite-trace formulas
+**Evidence level:** supported by exact operator classifications, finite-trace formulas, and the cubic period reduction
 
 ## Core intuition
 
-The canonical Hardy interior/exterior split genuinely escapes Prime Circle's earlier modewise scalarization: the logarithmic cyclotomic potential becomes a nonlocal Hankel operator. Its noncompact spectral core is nevertheless universal. Arithmetic survives below the essential level, in trace-class interactions whose finite-word traces are canonical and richer than pairwise resultants, but still sit inside explicit cyclotomic-period geometry rather than a demonstrated RH selector.
+The canonical Hardy interior/exterior split genuinely escapes Prime Circle's cotangent endpoint closure: the logarithmic cyclotomic potential becomes a nonlocal Hankel operator. Its noncompact spectral core is nevertheless universal. Arithmetic survives below the essential level in trace-class mixed words, but the new evidence pushes their finite cycle structure toward classical cyclotomic multiple-period data rather than toward an independent RH spectral parameter.
 
 ## Strongest justified principle
 
-PC-075 decomposes each primitive-shell Hardy operator into finitely many generalized Hilbert channels plus a trace-class remainder; for `n>2` the essential spectrum is the universal band `[-pi,pi]`. PC-081 shows that for any finite family of distinct shells every genuinely mixed algebraic word is trace class and the joint Calkin algebra is a wedge of independent universal Hilbert bands. Finite algebraic coupling cannot create a new joint arithmetic essential spectrum.
+PC-075 and PC-081 classify the essential layer. Each primitive-shell Hardy operator is a finite combination of generalized Hilbert channels plus trace-class remainder, and any finite family has a joint Calkin algebra that is a wedge of independent universal Hilbert bands. Finite algebraic coupling therefore cannot create a new joint arithmetic essential spectrum.
 
-The relative sector is stronger than the earlier pairwise picture. PC-082 proves that higher cyclic traces are exact cyclotomic cone/cube periods and supplies a control showing information beyond pairwise resultants. The corrected PC-086 establishes the ordinary operator-trace statement at the precise root-channel boundary: cyclically separated root words of length at least two are trace class and their natural finite Hardy sections converge in trace norm to the ordinary trace. A one-letter separated scalar finite-section sum can converge without making the underlying Hilbert channel trace class, so scalar convergence must not be confused with an operator trace. PC-084 supplies the corresponding trace-norm convergence mechanism for the completed-shell finite-word sector.
+The relative layer is richer but controlled. PC-082 gives exact cone/cube period formulas beyond pairwise resultants; PC-084 and the corrected PC-086 give the corresponding trace-class and finite-section convergence boundary for genuinely mixed separated words. Common repeated-prime depth factors as a universal finite tensor component rather than a new interaction variable.
 
-PC-085 identifies a large universal direction inside that richer algebra. Repeated prime-power depth common to every conductor in a finite word factors simultaneously as a finite involutive tensor component. It changes multiplicity/sign in a universal way but not the residual mixed Hardy interaction. The potentially informative variables are therefore in the primitive/radical interaction pattern, not common repeated depth.
+PC-100 identifies the first nontrivial cycle period explicitly: cubic Hardy cycle traces are weight-three cyclotomic multiple polylogarithms. This is a real nonlocal finite interaction, but it belongs to an established cyclotomic-period category rather than defining a new spectral arithmetic algebra by itself.
+
+PC-101 then isolates the combinatorics for all separated cycles. The denominator-index map is the unsigned incidence matrix of a cycle. Odd cycles have determinant `2` and parity-coset uniqueness; even cycles have a one-dimensional alternating kernel and explicit fiber multiplicity. In particular, the quartic trace acquires a genuine relation such as `r+t=s+u` with a multiplicity factor rather than reducing immediately to the cubic pattern. The remaining finite-period question is therefore precise: determine whether the `k>=4` incidence-constrained sums reduce to known cyclotomic multiple-polylogarithmic/conical period spaces or create a genuinely larger canonical period algebra.
 
 ## What remains possible
 
-Higher finite trace periods may encode arithmetic beyond endpoints and pairwise resultants, and an infinite all-shell coupling could organize them in a way not visible at any finite Calkin level. Neither fact supplies an RH spectral parameter, functional equation, or sign theorem. A surviving mechanism must show that the relevant period package is not just known cyclotomic/conical-period data and then derive an independently meaningful zero selector.
+Higher finite traces may contain arithmetic beyond endpoints and pairwise resultants, but a positive result must first survive the cyclotomic-period audit. Even a larger finite period algebra would still need an independently derived RH selector, sign theorem, or analytic parameter. A truly infinite all-shell coupling could organize the finite periods in a way not visible at any finite Calkin level, but fixed-state rational wrappers and canonical complete-tube limits are already controlled by PC-098--PC-099.
 
 ## Status / novelty
 
-The Hilbert-channel classification, trace-class mixed products, corrected finite-section convergence, higher cone-period formulas, and common-depth tensor factorization are persisted exact findings. Neighboring conical/cyclotomic period theories are established prior art; no theorem-level historical novelty is inferred from the synthesis.
+The Hilbert-channel classification, trace-class mixed products, cubic multiple-polylogarithm reduction, and cycle-incidence formulas are persisted exact findings. Cyclotomic multiple polylogarithms and conical periods are established prior art; no theorem-level novelty is inferred merely from their appearance here.
 
 ## Falsification criterion
 
-Construct a finite algebraic combination whose essential class contains genuinely mixed shell information, contradicting PC-081, or produce a cyclically separated one-letter Hilbert channel that is trace class, contradicting the corrected boundary in PC-086. A positive advance would instead derive an all-level invariant whose arithmetic content cannot be reduced to the documented finite period/classical packages.
+Construct a finite mixed word whose essential class contains shell interaction, contradicting PC-081, or show that the cubic trace escapes the weight-three cyclotomic multiple-polylogarithm space, contradicting PC-100. A positive finite advance should characterize the `k>=4` period space and prove a component not already forced by classical cyclotomic-period theory.
 
 ## Lean-formalizable core
 
-- Trace-class ideal argument for mixed shell words and finite-section convergence at length at least two.
-- Quotient algebra decomposition into one-shell branches.
-- Simultaneous common-depth tensor factorization.
+- Trace-class ideal argument for mixed shell words.
+- Cycle incidence determinant/rank classification.
+- Parity-coset solution count for odd cycles.
+- Alternating-kernel fiber description for even cycles.

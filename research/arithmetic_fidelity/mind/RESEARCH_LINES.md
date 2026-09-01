@@ -12,11 +12,11 @@ A decisive result is either an exact factorization/recovery theorem through the 
 
 ## Characterize canonical relational lifts that remove exactly the intended gauge
 
-**Linked intuitions:** `MI-002-canonical-relational-lifts-can-restore-gauge`.
+**Linked intuitions:** `MI-002-canonical-relational-lifts-can-restore-gauge` and `MI-006-interaction-support-governs-marginal-fidelity`.
 
-Use higher-order couplings, monomial lattices, Gram/compound-minor data, or matrix-valued marked spectral data to identify when relational information restores a discriminator without selecting an arbitrary absolute coordinate. The exact test is whether the remaining ambiguity group equals the intended symmetry group, including finite aliases invisible to rank-only arguments.
+Use higher-order couplings, monomial lattices, Gram/compound-minor data, matrix-valued marked spectral data, or joint feature laws to identify when relational information restores a discriminator without selecting an arbitrary absolute coordinate. The exact test is whether the remaining ambiguity group equals the intended symmetry group and whether the interaction coordinates needed by the target are actually retained.
 
-A decisive positive example should derive the relational observable canonically and prove completeness modulo the intended gauge. Gram compression is an important control: at full rank it already retains all relative maximal-minor signs and loses only the global `O(d)/SO(d)` orientation torsor.
+A decisive positive example should derive the relational observable canonically and prove completeness modulo the intended gauge. Complete marginals are an important control: even perfect knowledge of every low-order marginal can miss a pure higher-order interaction, while the correct joint lift may recover it exactly.
 
 ## Prove bridges between differential, average, formal, and zero-error fidelity only under explicit hypotheses
 
@@ -34,10 +34,18 @@ The bare multiplicative monoid retains prime type but not rational-prime norms. 
 
 The live problem is to compute the complete fiber at the exact destination used by a proposed mechanism and distinguish genuine intrinsic completion data from constraints added only after the target is known. A decisive result either reconstructs the normalized analytic object in its admitted category or exhibits a matched generalized-prime control that survives all retained structure.
 
-## Determine which genuinely global test/source constraints can defeat local Weil programming
+## Determine which global test/source constraints make the measured span complete without programmable isolation
 
 **Linked intuitions:** `MI-005-test-family-fidelity-has-scale-and-dimension-gates`.
 
-The complete Weil functional is norm-faithful and fixed support has an exact arithmetic horizon, but finite-dimensional test vectors have exact local Beurling collision fibers at regular points. Singular isolation does not rescue this by itself: unconstrained smooth tests can manufacture an isolated point around any finite nonresonant source. Finite linear constraints can be invisible on the measurement quotient, and even normalized compact tests that are both pointwise nonnegative and Fourier-positive retain full-dimensional finite response jets.
+For linear tests the exact object is now the closed measured span `V_F`: its annihilator is the full signed-measure kernel, and restricted-source fidelity is `(S-S) intersect V_F^perp={0}`. Infinite families can lie on either side. Analytically accumulating double-positive modulations are complete on a bounded visible interval, while lattice modulation has the sharp alias horizon `hB=pi`; functions in an unmeasured generated algebra do not enlarge the statistic.
 
-The remaining question is therefore global. Determine whether a mathematically forced nonlocal admissibility condition, transform relation, infinite family constraint, or restricted source category destroys this local programming freedom and makes the rational-prime source exactly identifiable. A decisive positive result must prove isolation in that actual category and identify the quotient mechanism causing it; a decisive negative result is a same-test deformation or full-dimensional response family that survives the proposed global constraint.
+The remaining question is to compute this span and source-restricted annihilator for mathematically forced explicit-formula families whose admissibility is genuinely global. A decisive positive result must prove completeness in the actual measured category without source-tuned programming; a decisive negative result is an exact alias or nonzero admissible annihilator.
+
+## Extend exact interaction-support fidelity beyond Boolean marginal scenarios
+
+**Linked intuitions:** `MI-006-interaction-support-governs-marginal-fidelity`.
+
+On the Boolean cube, a marginal scenario is exactly a simplicial fidelity lattice: retained Walsh interactions are its faces, missing faces are the kernel, and target-relative minimal recovery reduces to covering the target interaction support. This gives a complete local model of how perfect marginals can lose coupling.
+
+Seek analogous exact decompositions for product measures, continuous features, tensor/operator observations, or representation-theoretic source classes. A useful theorem must identify the interaction coordinates, the exact kernel of the admissible marginal/joint observations, and a target-relative minimal lift; dimension counting or generic rank alone is not enough.

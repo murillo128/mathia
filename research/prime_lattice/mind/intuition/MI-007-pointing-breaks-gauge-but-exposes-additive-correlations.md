@@ -1,38 +1,36 @@
-# MI-007 — Finite-horizon positive-cone spectra resolve classical spacing and correlation scales
+# MI-007 — Critical prime-support bulk is Poisson-classical; arithmetic survives only in finer spectral sectors
 
-**Evidence level:** supported by exact Gram identities, matched controls, sieve estimates, and literature-backed correlation reductions
+**Evidence level:** supported by exact Gram identities, bounded-cluster controls, and conditional Hardy--Littlewood bulk theorems
 
 ## Core intuition
 
-Pointing and prime support can expose arithmetic that unpointed exponent-lattice spectra miss, but the first finite-horizon spectral transitions are now largely classified. The local and macroscopic unweighted Gram geometry is controlled by ordinary sampling density, while arithmetic coefficient weightings and prime support route the surviving information into classical additive-correlation, short-interval, and pair-correlation theories. The half-weight `1/2` remains a canonical balance scale without becoming a zero selector.
+Prime support and pointing do expose arithmetic that the unpointed exponent-lattice bulk misses, but the ordinary finite-horizon empirical spectrum is now classified much further. At the mean-prime-gap scale, the support-only macroscopic bulk is the Poisson-sinc law under the natural full local Hardy--Littlewood hierarchy. Meanwhile bounded prime clusters force extreme ill-conditioning at every sublinear observation time. Ordinary bulk, extreme spectrum, and exact von-Mangoldt depth are therefore distinct information layers.
 
 ## Strongest justified principle
 
-PL-072--PL-075 identify the first resolution transition. On integer frequencies `log n`, observation time `T` resolves additive spacing at width `N/T`; the local `N~T` kernel is universal sinc geometry. Möbius orientation is an unpointed torus gauge, while pointing exposes fixed additive correlations. The `n^{-1/2}` factor is the unique order-one fixed-lag balance whenever the coefficient system has nonzero correlation density, so Mirsky and Hardy--Littlewood controls reproduce the same critical exponent.
+PL-072--PL-080 already classicalize the integer-band and smoothed coefficient regimes: local sharp windows give sinc/prolate kernels, macroscopic integer bulk is locally Toeplitz, determinant onset is Nyquist/Ingham, and smoothed growing-lag von Mangoldt statistics route to classical short-interval variance and Montgomery pair correlation. The half-weight `1/2` is a canonical balance scale but not a selector.
 
-PL-076--PL-077 close much of the “collect many lags” escape. For the canonical smoothed von Mangoldt polynomial, long mean squares are already routed by classical theory to Montgomery zero pair correlation; Gallagher smoothing gives an exact Mellin-resolution trichotomy in which growing lags become multiplicative short-interval variance. At half weight, the induced `x^{-2}dx` measure is exactly the classical Selberg/Goldston--Montgomery scale. This is meaningful arithmetic information, but it belongs to the established prime/zero correlation dictionary rather than a new exponent-lattice spectral mechanism.
+PL-081 finds the first genuine prime-support split above the mean-gap horizon: for `X/log X << T <= X`, the empirical prime Gram law tends to `delta_1`, yet bounded gaps can still force the smallest eigenvalue to zero along subsequences. PL-082 strengthens the extreme side. For every `T=o(X)`, bounded prime clusters produce arbitrarily large almost-rank-one principal blocks, so along subsequences the bottom edge tends to zero and the top edge becomes unbounded. No uniform frame/Riesz or extreme-spectral rigidity can survive in the full sublinear regime even when the bulk is benign.
 
-PL-078--PL-080 classify the unweighted sharp-window escape. The local sharp sinc Gram limit is exactly the classical prolate time-bandlimiting operator after a diagonal gauge. The full macroscopic bulk spectrum is a locally Toeplitz/Kac--Murdock--Szegő mixture of those prolate laws, and its first determinant/lower-frame transition is the classical Nyquist/Ingham density threshold. Matched non-arithmetic frequencies `log(n+theta)` have the same bulk and determinant phases. Thus oscillatory rectangular-window tails do not create a new arithmetic spectrum at these scales.
+PL-083--PL-085 classify the critical support-only bulk under increasingly strong local Hardy--Littlewood hypotheses. At `T=cX/log X`, the second moment is exactly the Poisson-sinc second moment; every fixed trace moment matches the Palm Poisson sinc Gram hierarchy; and under the full fixed-order local tuple hierarchy the empirical spectral measure converges to the deterministic Poisson-sinc Euclidean-random-matrix law. This is a meaningful prime-statistics limit, but it is classical local-tuple input rather than a new RH spectral law.
 
-PL-081 then isolates what prime support genuinely changes. On prime basis directions, for `X/log X << T <= X` the empirical Gram spectrum tends to `delta_1`, yet bounded prime gaps force the smallest eigenvalue to approach zero along subsequences whenever `T=o(X)`. Prime support therefore produces a real **bulk/extreme scale split**. The first scale not excluded for nontrivial prime-supported bulk behavior is `T~X/log X`, exactly the mean-prime-gap/short-interval scale; known Gallagher-type results again route that boundary toward classical short-interval prime statistics.
+PL-086 shows that prime-only von-Mangoldt half-weighting on a fixed multiplicative shell is asymptotically just a deterministic envelope: `log p/log X=1+O(1/log X)`. It cannot restore a new prime-only bulk. PL-087 closes the most obvious prime-power escape for the ordinary dimension-normalized bulk: higher prime powers retain the pointwise exponent-depth factor `1/k`, but occupy only vanishing matrix rank, so every weak bulk limit is the same as the prime block, uniformly in the time scale.
 
 ## What remains possible
 
-The surviving positive-cone questions are now narrower: the exact prime-support law at `T~X/log X`, fine/extreme or subextensive spectral statistics not determined by the bulk law, coefficient-weighted observables beyond the known long-polynomial correlation dictionary, and target-relative/Nyman quantities. Any candidate must show that it uses exact rational-prime completion rather than merely sampling density, prime-gap statistics, or a repackaged explicit-formula/pair-correlation theorem.
-
-Pointing remains important because it breaks a real gauge. Prime support remains important because it changes the sampling density. Neither fact alone supplies a new RH mechanism.
+The surviving positive-cone observables are finer than the ordinary bulk: hard-edge statistics, raw or suitably renormalized determinants, growing-order moments, depth-conditioned/subextensive sectors, target-relative/Nyman data, or a completed Weil form that weights the sparse prime-power sector non-macroscopically. Any candidate must show why its statistic is not already determined by bounded-cluster geometry, Hardy--Littlewood local tuples, Poisson sampling, or a vanishing-rank perturbation.
 
 ## Status / novelty
 
-The prolate, locally Toeplitz, Ingham/Nyquist, Gallagher, Selberg-variance, and pair-correlation ingredients are classical prior art; the persisted findings identify their exact place in the Prime Lattice finite-horizon hierarchy. The bulk/extreme split on prime support is a supported structural boundary, not a characterization of the critical mean-gap regime.
+The prolate/Nyquist, Hardy--Littlewood, Poisson, bounded-gap, and rank-interlacing ingredients are classical or literature-backed; the persisted findings locate their exact roles in the Prime Lattice hierarchy. The full Poisson bulk statement is conditional on the stated local tuple hierarchy and does not control the hard edge, determinants, or growing-order correlations.
 
 ## Falsification criterion
 
-Produce an unweighted local/macroscopic sharp Gram invariant in the audited regimes that differs from the matched prolate/Nyquist controls, or a smoothed long von Mangoldt statistic whose zero-sensitive content is not determined by the classical correlation machinery already identified. A positive advance should instead derive a prime-specific invariant at the mean-gap or finer target-relative scale and pass matched generalized-prime/coefficient controls.
+Produce an ordinary dimension-normalized critical prime-support bulk law incompatible with the PL-085 Poisson-sinc moment hierarchy while retaining its hypotheses, or a higher-prime-power sector of nonvanishing matrix density on the fixed shell of PL-087. A positive advance should instead isolate a finer statistic that distinguishes matched Poisson/generalized-prime controls and is not a restatement of classical prime correlations.
 
 ## Lean-formalizable core
 
-- Diagonal gauge from sharp Gram kernel to sinc Toeplitz form.
-- Gallagher log-frequency localization identity.
-- Local prolate Fourier multiplier.
-- Bulk/extreme spectral separation from normalized Hilbert--Schmidt control plus a near-colliding pair.
+- Rank/interlacing stability of empirical spectral laws.
+- Vanishing-rank contribution of higher prime powers.
+- Near-rank-one cluster eigenvalue bounds.
+- Moment-to-bulk bookkeeping under a prescribed tuple-correlation hierarchy.

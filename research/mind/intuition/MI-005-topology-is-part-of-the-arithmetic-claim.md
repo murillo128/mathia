@@ -1,22 +1,20 @@
-# MI-005 — The topology and norm of the realization are part of the arithmetic claim
+# MI-005 — Topology, functional calculus, norm, and coefficient module are part of the arithmetic claim
 
-**Evidence level:** supported by exact topology- and norm-sensitive positive and negative results in several branches
+**Evidence level:** supported by exact topology-, norm-, operator-, and quotient-sensitive results across several branches
 
 ## Core intuition
 
-The same arithmetic or geometric signal can be invisible, compact, nuclear, recurrent, discontinuous, or unaffordable depending on the completion and norm in which it is realized. The newer evidence shows that changing topology can also produce a **genuine positive repair**: the Mangoldt anchor is unbounded in the rotation-invariant Hardy norm but bounded in the canonically pointed local Dirichlet norm. The gate is therefore not “stronger versus weaker topology”; it is whether the topology is independently forced, keeps the selector operational, and remains compatible with the global comparison or sign theorem.
+The same arithmetic or geometric signal can be invisible, compact, nuclear, recurrent, discontinuous, or unaffordable depending on how it is realized. The new evidence sharpens this further: even within one operator comparison, changing the **function of the operator** can move a relative difference across a Schatten boundary; and even within one semigroup action, changing from a diagonal module to the full operator ideal can change the coinvariant quotient from one-dimensional to zero. There is no category-free statement that a signal is “spectrally small” or “preserved by the quotient.”
 
 ## Strongest justified principle
 
-Prime Flute has nearly exhausted the local geometry of its operator-comparison problem. Compact relative resolvent identifies the prime flute with an all-composite clone at the essential-spectrum level, while first-resolvent `S_1` is too strong. PF-138--PF-142 now classify every tail closed Margulis-thin core, give summable local collar and cusp/handoff budgets, and remove constant collar phase as a marked gauge. No divergent local family is currently known; the remaining wave gate is coherent global interface/shape assembly of already controlled local maps.
+Prime Flute now has two concrete wave-equivalence routes. The geometric route has reduced every local sector to controlled budgets except the actual reflection-odd angular and reflection-even radial interface traces, whose sharp cost is `L^1` and is not suppressed by collar collapse. The operator route starts from the opposite observation: first-resolvent trace class is too strong, yet PF-146 proves local trace class for the **squared** relative resolvent. If that estimate globalizes, the invariance principle yields complete wave operators. Functional-calculus order is therefore part of the operator category, not a cosmetic postprocessing choice.
 
-Weil Inertia refines its norm separation. The `W`-local spectrum is costly under diagonal conductor norms even after arbitrary lossless sparsification, but the actual pair errors have an exact divisor-martingale structure giving real cross-conductor orthogonality. One huge common refinement still fails because the available residue-maximal theorem pays the refinement modulus. The desired topology is therefore hierarchical/vector-valued: exploit the projective `L^2` structure without reverting either to Wiener `l^1` or to one super-polylogarithmic fine modulus.
+Weil Inertia refines the norm lesson. The conditioning spectrum has exact divisor-martingale `L^2` structure and cannot be assembled cheaply by diagonal, sparse, common-refinement, or redundant-refinement methods. But the natural residue-summed square function expands to a genuine four-prime rectangle. Moving to a hierarchical/vector-valued norm is useful only if the source theorem controlling that higher correlation is also proved; topology cannot manufacture arithmetic cancellation.
 
-Weil Positivity supplies the sharpest continuity example. The exact Mangoldt functional is unbounded in the natural rotation-invariant Hardy energy, and no regular positive extension preserving that energy can represent it. Yet the canonical base-point local Dirichlet energy contains every cyclotomic shell and makes the same boundary functional bounded. This is a successful topology change forced by the already distinguished point `1`. Its limitation is not continuity but global sign compatibility: the positive finite package still fails to combine with the archimedean/Weil sign inside the audited separated families.
+Weil Positivity supplies both a positive topology repair and a quotient warning. The pointed local Dirichlet norm makes the Mangoldt anchor continuous where every relevant rotation-invariant Hilbert completion fails. Yet zeroth cover coinvariants depend violently on the coefficient module: diagonal trace-class coinvariants reduce to ordinary trace, whereas full standard operator-ideal coinvariants collapse to zero. The module/action/closure used in a cohomological completion is therefore itself part of the arithmetic assertion.
 
-Arithmetic Fidelity adds the admissibility analogue. Global-looking constraints can be topologically irrelevant if they can be repaired inside the exact measurement kernel, while even double-positive compact test cones retain full finite-jet dimension. A useful category must constrain the actual source-response quotient, not merely look restrictive in the ambient function space.
-
-Prime Lattice and Prime Circle contribute convergence/operator-ideal controls: natural finite-horizon spectra can be universal prolate/Nyquist laws or classical correlation objects, while finite Hardy relative words can be trace class even when the essential algebra is universal. There is no single preferred “spectral topology” across the program.
+Arithmetic Fidelity gives the measurement analogue. An infinite family is faithful exactly through its measured closed span and source annihilator; lattice sampling can impose a sharp alias horizon even with infinitely many tests. Prime Lattice likewise separates ordinary bulk topology from hard-edge/subextensive data: a vanishing-rank prime-power sector is invisible to weak empirical bulk while remaining pointwise arithmetically nontrivial.
 
 ## Consequence for synthesis
 
@@ -24,23 +22,23 @@ A useful realization category must satisfy four properties simultaneously:
 
 1. the arithmetic discriminator is continuous or otherwise well defined there;
 2. the strongest matched control is not automatically identified there;
-3. the norm/topology is compatible with the available global assembly or sign estimates;
-4. the category is independently forced by the construction rather than chosen because it reveals the desired answer.
+3. the norm/operator functional calculus supports the required global assembly or sign/scattering theorem;
+4. the topology, module, action, and normalization are independently forced by the construction rather than chosen because they reveal the desired answer.
 
-The pointed Dirichlet repair proves that a branch can pass property 1 after failing it in a more symmetric topology. Prime Flute and Weil Inertia now emphasize property 3: after local control is established, the decisive issue can be coherent assembly in the correct global norm.
+Changing category can be a genuine mathematical advance, as the pointed Dirichlet repair shows. But every change must carry an explicit information and theorem audit: what becomes continuous, what is quotiented out, and what new estimate is now required?
 
 ## Status / novelty
 
-All topology and norm separations cited above are persisted findings. Their cross-branch interpretation as a mandatory **realization-continuity-and-assembly gate** is supported synthesis, not a universal operator theorem.
+All topology, norm, functional-calculus, and quotient separations cited above are persisted findings. Their cross-branch interpretation as a realization-category gate is supported synthesis, not a universal operator theorem.
 
 ## Falsification criterion
 
-Derive a canonical category in which a selector is continuous, the strongest matched control differs, and the required global assembly/sign estimate closes. Conversely, show that a proposed middle category either identifies the controls, leaves the selector discontinuous, pays an unavoidable global assembly cost, or merely repackages explicit zero/correlation data.
+Derive a canonical category in which a selector is continuous, the strongest matched control differs, and the required global theorem closes. Conversely, show that a proposed category either identifies the controls, leaves the selector discontinuous, moves the obstruction into an unproved higher-correlation estimate, or quotients the arithmetic signal away.
 
 ## Lean-formalizable core
 
-- Compact-relative-resolvent implication for essential spectrum.
 - Null-sequence criterion for unbounded functionals.
-- Pointed Dirichlet bounded-evaluation inequality.
-- `l^1` versus hierarchical `L^2` norm separation.
-- Local-to-global weighted cost bookkeeping.
+- Closed-span/annihilator measurement kernel.
+- Schatten behavior under different resolvent powers.
+- Dense-range/coinvariant quotient criterion.
+- Vanishing-rank stability of weak empirical spectra.

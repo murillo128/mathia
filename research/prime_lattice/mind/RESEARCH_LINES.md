@@ -36,10 +36,10 @@ On fixed smooth cross-end probes, the critical second amplitude produces an almo
 
 The only potentially new route is therefore upstream: derive the required boundedness or an equivalent coercive estimate directly from rational-prime/completion structure without using the already-continued zero expansion as the controlling input. If every such derivation merely reimports the explicit formula or a zero-location theorem, the second-scale criterion is diagnostic rather than explanatory.
 
-## Isolate the first prime-support finite-horizon scale not already classicalized
+## Move beyond the classicalized prime-support bulk to hard-edge, subextensive, or target-relative data
 
 **Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
 
-The unweighted integer-band local kernel is prolate, its macroscopic bulk is locally Toeplitz, and its first determinant transition is Nyquist/Ingham geometry. Smoothed growing-lag von Mangoldt observables route to classical short-interval variance and Montgomery pair correlation. Restricting to prime basis directions removes the integer-band bulk interaction for every `T >> X/log X`, while bounded gaps can still collapse the lower edge along subsequences.
+The ordinary finite-horizon prime-support bulk is now tightly constrained. Above the mean-gap scale it approaches the identity in bulk while bounded clusters still destroy extreme conditioning. At `T~X/log X`, the local Hardy--Littlewood hierarchy yields the Poisson-sinc bulk, prime-only von-Mangoldt weighting is asymptotically deterministic grading, and the full prime-power axis changes the ordinary weak bulk only by vanishing rank.
 
-The first unresolved support-only bulk scale is therefore `T~X/log X`, where the Fourier resolution equals the mean prime gap. Determine whether the exact prime-supported law or a finer target-relative/extreme statistic there contains information beyond classical short-interval/prime-gap theory. A decisive positive result must distinguish matched generalized-prime or non-arithmetic spacing controls and not merely restate Gallagher, Hardy--Littlewood, or pair-correlation statistics.
+The live question is therefore a finer spectral layer: hard-edge laws, raw/renormalized determinants, growing-order moments, depth-conditioned or subextensive sectors, target-relative/Nyman observables, or completed Weil quantities that do not normalize away sparse prime-power data. A decisive positive result must distinguish matched Poisson/generalized-prime controls and use information not already equivalent to bounded-gap or Hardy--Littlewood local correlation input.

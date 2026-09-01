@@ -1,39 +1,42 @@
-# MI-003 — The welding gate is a source-faithful power-modulus conditioned-covariance problem
+# MI-003 — The fourth-moment welding difficulty is conserved across coefficient, selector, and multivariate representations
 
-**Evidence level:** supported for the exact reductions and the doubly-small power region; the one-sided conditioned bridge remains audit-sensitive/open
+**Evidence level:** supported for the exact reductions and controlled power region; the remaining multivariate/source-weighted analytic bridge is open
 
 ## Core intuition
 
-The unresolved Yang--Yang fourth-moment obstruction is no longer well described as a generic four-prime correlation or a purely super-polylogarithmic alias problem. The exact lock geometry, local factors, and pair-frequency decomposition isolate a sharper interface: a genuine positive-power region is now controlled by nilsequence Bombieri--Vinogradov, while the complement requires a theorem that respects the locked additive four-prime source, its all-residue localization, and its local conditioning.
+The unresolved Yang--Yang fourth-moment obstruction is now a source-faithful representation problem rather than a generic appeal to four-prime cancellation. The same locked arithmetic geometry can be written in three natural ways, and each moves rather than removes the hard part: keep the physical lock and pay growing coefficients; free the shifts and pay a thin slope selector; or aggregate the changing bases and obtain a fixed-coefficient **multivariate polynomial** prime pattern outside the currently audited quantitative theorem interface.
 
 ## Strongest justified principle
 
-WI-047--WI-049 separate deterministic local-main bookkeeping from the analytic residual: the genuine four-form local factor centers cellwise, so a leading covariance cannot be blamed on an unremoved singular-series main. WI-050 controls every fixed polylogarithmic coefficient range. WI-051 shows the unsliced four-form system has Cauchy--Schwarz complexity one but that physical localization creates large-index alias fibers.
+WI-047--WI-054 separate the deterministic local main from the analytic residual and establish a genuine controlled power region. The exact four-form local factor centers cellwise; the unsliced system has complexity one; and Shao--Teräväinen modulus-averaged nilsequence Bombieri--Vinogradov plus pair-fiber Parseval controls the fixed-margin polygon `4 alpha+beta<1`, `alpha+4 beta<1`.
 
-WI-053 audits the strongest 2026 AP-maximal higher-uniformity input: its error is normalized by ambient interval length, leaving a factor equal to the progression step on power-sparse Yang progressions, and its generalized von Neumann theorem is not uniform in power-growing coefficients. That black-box route therefore stops at the power scale.
+WI-055--WI-057 show why one-sided or differently structured dispersion theorems do not automatically extend this region. The local conditioning leaves nonconstant periodic residue modes, so ordinary marginal pair discrepancy cannot control the required conditioned covariance.
 
-WI-054 materially advances the boundary. Shao--Teräväinen's modulus-averaged nilsequence Bombieri--Vinogradov theorem takes a supremum over bounded-complexity phases inside the modulus sum. Inserted into WI-051's exact residue/pair-frequency formula, Parseval upgrades that one-leg control to an `ell^2` bound for the entire pair fiber, and a second Cauchy--Schwarz controls the locked frequency sum. After the source Mertens weights, both sides are rigorously controlled in the fixed-margin region
+WI-068 corrects a tempting overreach in the free-shift direction. The finite-complexity prime-pattern theorem applies after both physical shifts are free, not to the fixed locked rectangle. WI-069 makes the exact price of freeing them explicit: the Yang source occupies the slope slice `(h_1,h_2)=(rk,qk)`, whose density in the free rectangle is `1/(rqK)`, with a Fourier selector of matching size. Termwise projection therefore reintroduces the same power-scale loss in dual form.
 
-`4 alpha + beta < 1`, `alpha + 4 beta < 1`.
+WI-070 identifies the third representation. Aggregating the varying reduced bases before invoking a prime-pattern theorem removes the growing coefficients and produces a fixed-coefficient degree-two multivariate system such as
 
-WI-055 and WI-056 audit two tempting recent two-modulus/convolution theorems and show why neither can be cited as the missing welding theorem: they act on one prime/product congruence rather than the additive lock `(m,m-rk,n,n-qk)`, impose incompatible residue or well-factorable-weight hypotheses, or place divisor-boundedness in the wrong variable. Their dispersion/Kloosterman methods remain relevant prior art, not completed interfaces.
+`0, -rk, d, d-qk`
 
-WI-057 closes a simpler one-sided patch. Replacing the controlled pair by its exact `W`-local main leaves nonconstant periodic residue modes. An opposite pair error can have `O(1)` discrepancy on every interval and still correlate linearly with such a mode. Ordinary marginal MRT therefore cannot extend WI-054 to the one-sided union. What is needed is conditioned/twisted pair-correlation control relative to the local sigma-algebra, or a source identity that removes those modes.
+in variables `(r,q,k,d)`. This is source-faithful and avoids the thin-selector projection, but it crosses a genuine theorem boundary: the audited quantitative polynomial-prime input is one-parameter, while the needed system is multivariate, anisotropic, and carries outer prime/Mertens weights.
+
+The durable conclusion is a **conservation of difficulty** across the known linearizations. Coefficient size, slope-selector sparsity, and multivariate polynomial complexity are three representations of the same locked source constraint. A successful theorem must address one of them without silently averaging away the source.
 
 ## What remains possible
 
-The live gate is outside the doubly-small power polygon, plus the deterministic local-main splice and boundary/collision interfaces. A decisive advance would prove a Yang-specific two-modulus dispersion/fiber square-function estimate, or identify a genuine surviving lower-bound component. Generic Gowers uniformity, ordinary pair discrepancy, or a theorem for a different congruence architecture no longer isolates the right variable.
+A decisive advance could be a Yang-specific two-modulus dispersion theorem, a hierarchy-aware rectangle estimate, or a quantitative multivariate polynomial von-Mangoldt theorem uniform in the anisotropic boxes and outer source weights. An independent source identity that genuinely collapses the slope selector or polynomial system would also qualify. Generic Gowers uniformity or a free-shift theorem without the projection back to the Yang slice does not.
 
 ## Status / novelty
 
-The lock identities, local centering, complexity-one reduction, polylogarithmic treatment, and WI-054 positive-power region are persisted findings. WI-057 carries an explicit `NEEDS-AUDIT` boundary in its literature interface; it narrows the required theorem but is not itself a fourth-moment theorem.
+The lock identities, local centering, positive-power region, slope-slice density, and multivariate polynomial reformulation are persisted findings. The absence of a currently audited matching theorem is a literature-interface statement, not a proof that no such theorem can exist.
 
 ## Falsification criterion
 
-Show a leading normalized covariance survives inside the WI-054 controlled polygon after genuine local-main subtraction, or prove that ordinary marginal pair discrepancy alone controls the `W`-local-conditioned covariance despite WI-057's exact periodic control. A positive advance must instead control the surviving source-faithful conditioned fibers at the fourth-moment scale.
+Produce a bounded-complexity free-shift reduction of the exact Yang source with no power-density selector loss, or a one-parameter quantitative theorem that directly covers the multivariate anisotropic system of WI-070 under its actual source weights. A positive advance should instead close one representation with all source bookkeeping explicit.
 
 ## Lean-formalizable core
 
-- Cauchy--Schwarz complexity-one certificate.
-- Exact local-factor centering and pair-fiber Parseval identity.
-- Periodic counterexample separating marginal discrepancy from conditioned covariance.
+- Exact locked-to-free slope-slice counting.
+- Fourier size of the slope selector.
+- Polynomial reformulation of the varying-base rectangle.
+- Algebraic equivalence of the three source representations.

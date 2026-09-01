@@ -1,42 +1,40 @@
-# MI-004 — The composite clone has finite local wave budget; the remaining gate is coherent global collar assembly
+# MI-004 — The composite clone now has two local routes toward wave equivalence; the remaining gate is global assembly
 
-**Evidence level:** supported; compact relative resolvent and all currently isolated local weighted budgets are exact, while the single global wave comparison remains open
+**Evidence level:** supported; compact relative resolvent and the local geometric/operator budgets are exact, while both global wave-comparison closures remain open
 
 ## Core intuition
 
-Large Fenchel--Nielsen coordinates, narrow Lambert charts, cusp handoffs, and even collapsing short collars have progressively failed to create a spectral separation between the exact prime flute and the all-composite shift clone `q_n=p_n+1`. The comparison problem has now passed from “find the bad geometric region” to a sharper existence question: can the individually summable, canonically marked body/cusp/collar maps be welded into one global smooth comparison satisfying the Güneysu--Thalmaier weighted criterion?
+The exact prime flute and the all-composite shift clone `q_n=p_n+1` are increasingly hard to distinguish in natural asymptotic operator categories. The local comparison has now split into two independent sufficient routes toward wave equivalence: a geometric route through a globally coherent weighted metric map, and an operator route through trace class after applying a stronger resolvent functional calculus. The remaining obstruction in both is global assembly, not another large Fenchel--Nielsen coordinate or undiscovered thin component.
 
 ## Strongest justified principle
 
-PF-121--PF-125 construct the canonical marked asymptotically bilipschitz identification and prove compact first relative resolvent and equality of essential spectra. PF-112 shows that first-resolvent trace class is too strong for a nonisometric smooth metric comparison, so neither the compact endpoint nor `S_1` is the natural final category.
+PF-121--PF-125 give the baseline: a canonical marked asymptotically bilipschitz identification and compact first relative resolvent, hence equality of essential spectra. PF-112 shows that first-resolvent trace class is too strong for a nonisometric smooth metric comparison, so `S_1` at the first resolvent cannot be used as the universal wave-equivalence gate.
 
-PF-126--PF-137 then remove coordinate and body artifacts: the metric defect is `L^r` for every `r>1`, cusp synchronization and split-ray modes are summable, the Lambert body has strong `L^1` control, long narrowing admits a boundary-coherent extension, and the inverse-unit-ball weight is harmless on every genuinely thick ambient region.
+PF-126--PF-142 remove the previously suspected local geometric divergences. Body, cusp, split-ray, short-core, and handoff contributions are summable in the appropriate local currencies; all tail Margulis-short closed cores are classified; deep cusps can be made exactly isometric; and the reflection marking removes the constant collar phase.
 
-PF-138 closes the last unknown thin-family classification. The zero-twist reflection shows that every tail Margulis-short simple closed geodesic is a canonical consecutive-block separator; distinguished cuffs eventually leave the thin part. The count of such separators and the clone length defect give a finite sum of optimized local collar wave costs over **all** closed thin cores.
+PF-143--PF-145 identify the exact remaining collar-interface currency. Collapse does **not** suppress a nonconstant angular trace: any near-isometric welding pays a sharp cost comparable to the centered `L^1` angular displacement. Reflection makes the canonical angular trace odd/mean-zero but does not remove this cost. The radial/transverse graph has the analogous sharp `L^1` cost. Thus the geometric Güneysu--Thalmaier route has been reduced to estimating the actual prime/clone angular and radial trace amplitudes and summing them while welding all local maps coherently; one cannot hide them behind the shrinking core length.
 
-PF-139--PF-140 close the remaining lower-pant and cusp interfaces outside those collars. The split-coherent lower map reaches the standard horocycle with summable strong `L^1` cost, and its actual horocycle trace can be cut to exact identity through a fixed cusp slab with summable inverse-unit-ball weighted cost. Deep cusps are therefore exactly isometric after the handoff.
+PF-146 supplies a genuinely different operator route. On a fixed matched Dirichlet short collar, although the first relative resolvent is not trace class, the **squared** relative resolvent is trace class with a much smaller length-defect budget; its zero Fourier mode cancels exactly and the nonzero modes are controlled through Hilbert--Schmidt factorization. For prime/shift separator collars the resulting local trace norm is summable at the derived scale. If the corresponding global squared-resolvent difference can be placed in `S_1`, the Birman--Kato invariance principle and Kato--Rosenblum give complete wave operators for the original Laplacians.
 
-PF-141--PF-142 remove the obvious angular assembly singularity. A bounded collar phase would cost only `O(L|tau|)` under collapse, and in the canonical reflection-equivariant marked comparison the constant phase is actually zero: the two reflection-fixed points give a canonical angular origin. What remains is the nonconstant reflection-odd angular reparametrization and transverse/noncircular trace shape needed to fit the optimized standard-collar maps into the same global body comparison.
-
-Consequently there is no longer a known geometric family with a divergent local budget. The unresolved theorem is **coherent simultaneous assembly**, not discovery of another thin sector.
+This changes the operator-category lesson: failure of trace class for one resolvent function does not rule out scattering equivalence when a different monotone functional calculus lands in trace class.
 
 ## What remains possible
 
-A positive result would construct one global marked diffeomorphism whose body, cusp, and complete short-collar pieces agree on interfaces after controlled smoothing and satisfy the full weighted metric criterion. That would permit the Güneysu--Thalmaier wave/scattering theorem and then a clean audit of stronger relative spectral categories against the composite clone.
+A positive geometric result would prove summability of the actual reflection-odd angular and reflection-even radial interface traces and construct one global weighted comparison. A positive operator result would globalize PF-146 across the full flute, including body/cusp/interface coupling, and prove trace class of the squared relative resolvent. Either route would establish wave equivalence and expose the next stronger-than-wave relative invariants for comparison with the all-composite clone.
 
-A negative result must now be equally specific: exhibit an unavoidable interface-shape or smoothing term whose weighted cost diverges despite the finite local budgets, or prove an incompatibility among the canonical marked local models. Coordinate growth, cusp depth, an unclassified short geodesic, or a constant collar twist no longer qualify.
+A decisive negative must now obstruct both kinds of closure at the actual global level: an unavoidable nonsummable interface-shape term, or a global operator contribution preventing the squared-resolvent trace-class estimate. Coordinate width, cusp depth, constant twist, or first-resolvent `S_1` failure alone no longer suffices.
 
 ## Status / novelty
 
-The compact-resolvent equivalence, complete thin-core classification, local collar budget, split/cusp handoffs, and phase-gauge elimination are persisted exact findings with classical hyperbolic and scattering inputs. The synthesis is a narrowed operator-comparison boundary, not a proof of complete wave operators, scattering equivalence, resonance equality, determinant comparison, or RH.
+The compact-resolvent equivalence, thin-core classification, sharp local welding costs, and local squared-resolvent result are persisted exact findings with classical hyperbolic/scattering inputs. The synthesis is a narrowed comparison boundary, not a proof of global wave operators, scattering-matrix equality, resonance equality, determinant comparison, or RH.
 
 ## Falsification criterion
 
-Produce a tail Margulis-short closed core outside PF-138's classification, a nonsummable cusp/handoff contribution contradicting PF-139--PF-140, or a forced constant phase contradicting PF-142. A genuine advance should instead prove or refute the existence of the single globally coherent weighted comparison assembled from the current local models.
+Produce a local collar welding with uniformly smaller cost than the sharp `L^1` trace scale of PF-143--PF-145, or show that the PF-146 local squared-resolvent estimate fails under its stated matched-collar hypotheses. A genuine advance should instead prove or refute one of the two global assemblies.
 
 ## Lean-formalizable core
 
-- Reflection classification of short simple geodesics.
-- Summability of canonical separator collar costs.
-- Standard-horocycle cutoff estimate.
-- Reflection-fixed-point elimination of constant collar phase.
+- Sharp `L^1` angular/radial collar extension estimates.
+- Zero-mode cancellation for the squared relative resolvent.
+- Schatten ideal composition used in the local `S_1` bound.
+- Abstract implication from trace-class functional-calculus difference to wave equivalence.
