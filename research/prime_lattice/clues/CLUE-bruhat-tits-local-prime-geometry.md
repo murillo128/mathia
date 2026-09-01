@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-bruhat-tits-local-prime-geometry
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -73,3 +73,14 @@ No new RH mechanism, positivity principle, zero-localization theorem, or non-sca
 `PL-039` creates a strong prior obstruction: the canonical unramified spherical channel carrying the ordinary Riemann Euler factor is one-dimensional, so any building construction that merely reproduces spherical harmonic analysis is expected to scalarize to known local L-factor data. `PL-040` creates a second obstruction: ordinary fixed smooth nonspherical adelic data are exceptional at only finitely many primes and therefore do not automatically produce the required infinite-prime operator coupling.
 
 The unresolved question is narrower: whether the full local recursive geometry contains an intrinsic residual observable outside those two reductions, with a cheap rank-one falsification test and a clear generic-tree control. Until that test is passed, the building viewpoint should be treated only as a proposed enrichment of `prime_lattice`, not as evidence for a new research line or for a connection to the Riemann zero divisor.
+
+## Research disposition
+
+Outcome: refuted
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-104-bruhat-tits-universal-tempered-half-axis.md]]
+
+The rank-one decisive test is negative. The adjacency/Hecke radial recurrence on the Bruhat–Tits tree gives the classical Satake parametrization `lambda(s)=q^s+q^(1-s)` and therefore a canonical tempered axis `Re(s)=1/2`, but the radial Green function, Plancherel measure, return-path data, and boundary-depth scaling depend only on the homogeneous branching parameter `q`. The same half-axis and spectral package occur on abstract `(q+1)`-regular trees, including controls such as `q=6` that have no local-field origin.
+
+For `Q_p`, prime-power depth is indeed geometrized and can generate the usual `p^(-ks)` Mellin/Satake response, but on the ordinary unramified zeta channel this is exactly the classical scalar local L-factor already isolated by `PL-039`. No zeta-sensitive residual survives spherical normalization, and `PL-040` blocks the fixed-vector nonspherical repair across infinitely many primes. Under this clue's own gate, there is therefore no reason to escalate to higher-rank buildings without first specifying an additional genuinely global or nonspherical coupling outside the tested route.
