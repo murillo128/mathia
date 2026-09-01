@@ -1,0 +1,407 @@
+# WP-088 — Finite multireference cover-projection spectral readouts are affine on common-multiple towers
+
+**Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE + NONSEPARABLE-MULTIREFERENCE + MATCHED-CONTROL + PRIOR-ART-CLASSICALIZATION`.
+
+`WP-087` rules out repairing the reference dependence of the positive cover-angle pseudolog by a nonnegative additive mixture of pairwise reference responses, but leaves open a genuinely nonseparable escape: combine several cover projections **before** scalarization so that cross-reference noncommutativity can create a new positive logarithmic carrier.
+
+For every **fixed finite** reference dictionary, the canonical pointed-cover projection algebra has an exact common-multiple obstruction. Let
+
+\[
+M=\{m_1,\ldots,m_r\},
+\qquad
+L=\operatorname{lcm}(m_1,\ldots,m_r),
+\]
+
+and evaluate the reference projections together with the target projection at the tower of target degrees
+
+\[
+n=kL,\qquad k\ge1.
+\]
+
+On one target cell `E_n`, every fixed reference projection repeats identically in the `k` copies of the `L`-cell, while the target projection is only the rank-one averaging projection across those copies. This forces any **fixed bounded noncommutative construction** from
+
+\[
+P_{m_1},\ldots,P_{m_r},P_{kL}
+\]
+
+to have a spectrum consisting of a fixed finite set of eigenvalues whose multiplicities are affine in `k`. Consequently every fixed **additive spectral readout** — traces of fixed functional calculus, Schatten-power traces when defined, reduced log-determinants/pseudolog traces, and the corresponding positive spectral energies — has the exact form
+
+\[
+\boxed{S(kL)=Ak+B.}
+\tag{1}
+\]
+
+It therefore cannot equal `log(kL)` on the tower. In particular it cannot be a global preprimitive whose Möbius primitive is exactly `Lambda`.
+
+This closes a materially larger class than `WP-087`: arbitrary cross-reference products and noncommutative couplings among a finite reference set are allowed **before** scalarization. Positivity is not needed for the affine-spectrum theorem, so the obstruction applies a fortiori to fixed positive elements of the multireference projection algebra.
+
+The theorem does **not** close infinite reference systems, degree-dependent formulas, unbounded scale operators outside the projection algebra, nonperiodic global couplings, or a genuinely nonseparable finite--archimedean object formed before scalarization. Those remain the live ways to evade the common-multiple repetition.
+
+## 1. Exact tensor decomposition on a common-multiple tower
+
+The pointed cover isometries used in `WP-073`--`WP-087` are
+
+\[
+W_m e_j
+=
+\frac1{\sqrt m}\sum_{a=0}^{m-1}e_{mj+a},
+\qquad
+P_m=W_mW_m^*.
+\tag{2}
+\]
+
+Thus `P_m` is the orthogonal projection onto sequences constant on consecutive blocks of length `m`.
+
+Fix the finite reference set `M` and put `L=lcm(M)`. For `n=kL`, identify the target cell canonically as
+
+\[
+E_{kL}
+\cong
+\mathbb C^k\otimes E_L
+\tag{3}
+\]
+
+by grouping the coordinates into `k` consecutive `L`-blocks. Since every `m in M` divides `L`, its block boundaries align with every `L`-cell, hence
+
+\[
+\boxed{
+P_m^{(kL)}
+=I_k\otimes P_m^{(L)}
+\qquad(m\in M).
+}
+\tag{4}
+\]
+
+Here the superscript denotes restriction to the indicated finite cell.
+
+The target projection is averaging on the whole `kL`-cell. If
+
+\[
+J_d:=\frac1d\mathbf 1_d\mathbf 1_d^*,
+\]
+
+then under (3)
+
+\[
+\boxed{
+P_{kL}^{(kL)}
+=J_k\otimes J_L.
+}
+\tag{5}
+\]
+
+Each reference projection fixes the normalized constant vector on `E_L`. Because it is self-adjoint, the orthogonal complement of that vector is also reducing. Write
+
+\[
+E_L
+=
+\mathbb C\mathbf 1_L\oplus H_0,
+\qquad
+P_m^{(L)}
+=1\oplus \widehat P_m.
+\tag{6}
+\]
+
+Combining (3)--(6) gives the reducing decomposition
+
+\[
+E_{kL}
+\cong
+\underbrace{\mathbb C^k\otimes\mathbb C\mathbf1_L}_{H_{\rm const}}
+\oplus
+\underbrace{\mathbb C^k\otimes H_0}_{H_{\rm mean0}}.
+\tag{7}
+\]
+
+On `H_const`, every fixed reference projection is the identity and the target projection is `J_k`. On `H_mean0`, the target projection is zero and every reference projection is `I_k tensor \widehat P_m`:
+
+\[
+\begin{array}{c|cc}
+& H_{\rm const} & H_{\rm mean0}\\ \hline
+P_m & I_k & I_k\otimes\widehat P_m\\
+P_{kL} & J_k & 0.
+\end{array}
+\tag{8}
+\]
+
+This is the load-bearing identity. It uses only the exact consecutive-block geometry of the pointed covers.
+
+## 2. The full finite multireference algebra has only fixed eigenvalues with growing multiplicities
+
+Let `Phi` be any fixed noncommutative `*`-polynomial in `r+1` projection variables, with scalar coefficients independent of `k`, and evaluate
+
+\[
+A_k
+:=
+\Phi(P_{m_1}^{(kL)},\ldots,P_{m_r}^{(kL)},P_{kL}^{(kL)}).
+\tag{9}
+\]
+
+The same conclusion holds for any fixed norm limit of such polynomials, i.e. any fixed bounded `C*`-algebraic expression in these generators.
+
+On `H_const`, all reference variables evaluate to `I_k`, so only the projection `J_k` remains. The algebra generated by one projection is two-dimensional. Hence there are scalars `a_Phi,b_Phi`, independent of `k`, such that
+
+\[
+A_k|_{H_{\rm const}}
+=
+a_\Phi I_k+b_\Phi J_k.
+\tag{10}
+\]
+
+On `H_mean0`, the target variable is zero and every reference variable carries the common tensor factor `I_k`. Therefore there is a fixed operator `B_Phi` on `H_0`, independent of `k`, with
+
+\[
+A_k|_{H_{\rm mean0}}
+=I_k\otimes B_\Phi.
+\tag{11}
+\]
+
+Thus
+
+\[
+\boxed{
+A_k
+\cong
+(a_\Phi I_k+b_\Phi J_k)
+\oplus
+(I_k\otimes B_\Phi).
+}
+\tag{12}
+\]
+
+No commutativity among the reference projections is assumed. All of their genuinely noncommuting finite-cell interaction is retained inside the fixed operator `B_Phi`; the point is that this entire interaction simply repeats `k` times.
+
+For self-adjoint `A_k`, its spectrum with multiplicity is therefore
+
+\[
+\boxed{
+\{a_\Phi+b_\Phi\}^{\times1}
+\cup
+\{a_\Phi\}^{\times(k-1)}
+\cup
+\bigcup_{\lambda\in\operatorname{Spec}(B_\Phi)}
+\{\lambda\}^{\times k\,m_B(\lambda)}.
+}
+\tag{13}
+\]
+
+The eigenvalue locations do not move with `k`. Only their multiplicities do, and those multiplicities are affine in `k`.
+
+### Target compression is even flatter
+
+There is a useful stronger corollary. Since `m | kL` for every reference,
+
+\[
+\operatorname{Ran}P_{kL}\subseteq\operatorname{Ran}P_m,
+\qquad
+P_mP_{kL}=P_{kL}=P_{kL}P_m.
+\tag{14}
+\]
+
+Thus the target line reduces the whole fixed-reference algebra, and every reference generator acts as `1` there. For any fixed bounded expression `A` made only from the reference projections,
+
+\[
+\boxed{
+P_{kL}AP_{kL}
+=\chi(A)P_{kL},
+}
+\tag{15}
+\]
+
+where `chi` is the scalar character sending every reference projection to `1`. Any purely target-compressed finite-reference response is therefore **degree-flat** on the common-multiple tower. The only possible `k`-dependence in the larger algebra comes from multiplicity outside the target line.
+
+## 3. Every fixed additive spectral scalarization is affine in the tower parameter
+
+Let `f` be any fixed scalar function defined on the finite spectrum in (13), and suppose the spectral sum is finite. Then
+
+\[
+\begin{aligned}
+S_f(kL)
+&:=\operatorname{Tr}f(A_k)\\
+&=f(a_\Phi+b_\Phi)
++(k-1)f(a_\Phi)
++k\operatorname{Tr}f(B_\Phi).
+\end{aligned}
+\tag{16}
+\]
+
+Hence exactly
+
+\[
+\boxed{
+S_f(kL)=A_fk+B_f.
+}
+\tag{17}
+\]
+
+Continuity of `f` is not needed once `A_k` has the fixed spectral template (13). In particular the conclusion survives the singular endpoint convention used in `WP-085`--`WP-087`: if `A_k` is a positive contraction and
+
+\[
+f(0)=0,
+\qquad
+f(x)=-\log x\quad(x>0),
+\tag{18}
+\]
+
+then the reduced pseudolog trace
+
+\[
+-\log\det{}'A_k
+=\operatorname{Tr}f(A_k)
+\tag{19}
+\]
+
+is still affine in `k`, provided it is finite. Exact zero modes merely contribute zero with multiplicity affine in `k`; no eigenvalue approaches zero as `k` varies on this tower.
+
+The same applies to every fixed positive spectral energy `Tr f(A_k)` with `f>=0` on the relevant spectrum, Schatten-power traces, and finite sums of such readouts. Positivity does not change the scaling obstruction.
+
+This is deliberately a theorem about **additive spectral scalarization**. An arbitrary nonlinear function of dimension or multiplicity can manufacture `log k` — for example, one can simply take the logarithm of a known rank. Such a step is not an inherited spectral positivity theorem and is outside the claim unless an additional Mathia structure independently forces that nonlinear operation.
+
+## 4. Affine tower response cannot be logarithmic degree
+
+Exact logarithmic degree would require
+
+\[
+S(kL)=\log(kL)=\log L+\log k
+\tag{20}
+\]
+
+for every positive integer `k`.
+
+Every affine sequence `S(kL)=Ak+B` obeys the exact three-scale identity
+
+\[
+S(4L)-S(2L)
+=2\bigl(S(2L)-S(L)\bigr).
+\tag{21}
+\]
+
+But the logarithmic target gives
+
+\[
+\log(4L)-\log(2L)=\log2,
+\]
+
+while
+
+\[
+2\bigl(\log(2L)-\log L\bigr)=2\log2.
+\tag{22}
+\]
+
+Therefore
+
+\[
+\boxed{
+S_f(kL)\ne\log(kL)
+\quad\text{for all }k
+}
+\tag{23}
+\]
+
+for every fixed finite multireference construction covered by (9)--(19).
+
+The implication for von Mangoldt extraction is exact. If an arithmetic preprimitive `G` has Möbius primitive
+
+\[
+(\mu*G)(n)=\Lambda(n)
+\qquad(n>1),
+\tag{24}
+\]
+
+then convolution with the constant-one function gives
+
+\[
+G(n)=G(1)+\sum_{d\mid n}\Lambda(d)
+=G(1)+\log n.
+\tag{25}
+\]
+
+Thus allowing an arbitrary value at `1` changes only the additive constant. Equation (21) is invariant under constants, so an affine common-multiple response cannot have exact Möbius primitive `Lambda` either.
+
+This obstruction occurs before the critical attenuation `n^{-1/2}`, the archimedean Gamma term, the polar terms, or Weil autocorrelation are introduced. The finite carrier already has the wrong degree law.
+
+## 5. Relation to WP-085--WP-087: cross-reference noncommutativity is retained but only periodically
+
+`WP-085` identifies a positive principal-angle defect and a singular pseudolog capable of producing `log n` for individual nonnested cover pairs. `WP-086` shows that bounded two-projection positive calculus has the wrong scale, while `WP-087` proves that arbitrary nonnegative **additive mixtures** of the singular pairwise pseudologs already fail between degrees `2` and `4`.
+
+The present theorem attacks a different escape. It allows one to form, before any trace or determinant,
+
+\[
+P_{m_i}P_{m_j}P_{kL}P_{m_\ell},
+\qquad
+[P_{m_i},P_{m_j}]^*[P_{m_i},P_{m_j}],
+\]
+
+arbitrary fixed sums of words, positive squares, fixed functional calculus of those operators, and norm limits of such constructions. Cross-reference interference is therefore not discarded pairwise.
+
+Nevertheless, once the reference dictionary is finite, all of that noncommutative structure lives on one fixed `L`-cell and is replicated on the tower `kL`. The target projection contributes only the elementary `J_k` sector. There is no moving principal angle and no new spectral scale from which `log k` could emerge.
+
+So the finite multireference escape narrows to
+
+\[
+\boxed{
+\text{finite fixed reference algebra}
++\text{arbitrary nonseparable bounded coupling}
++\text{fixed additive spectral readout}
+\Longrightarrow
+Ak+B,
+}
+\tag{26}
+\]
+
+not logarithmic degree.
+
+## 6. Matched control and scope boundary
+
+Nothing in (3)--(26) uses primality, a zeta function, the functional equation, zero data, or the special distribution of the rational primes. The same exact decomposition holds for an all-integer block-cover system with the same consecutive-block projections. It is therefore a structural limitation of this finite periodic cover algebra, not hidden evidence for RH.
+
+Several routes remain outside the theorem and should stay open:
+
+1. **Infinite reference dictionaries.** A genuinely infinite family has no finite common `lcm`; new accumulation spectra or domains could appear. Positivity and convergence would then need independent control.
+2. **Degree-dependent coefficients or formulas.** A coefficient chosen as `log n` or a reference set chosen from the factorization of each target trivially evades the fixed-algebra theorem, but is not intrinsic unless another Mathia construction forces it without importing the arithmetic answer.
+3. **Unbounded scale operators outside the projection algebra.** The half-integer/ladder operator used in `WP-074`--`WP-076` carries scale information not present in the bounded finite projection algebra and is not covered here.
+4. **Nonperiodic/global boundary couplings.** The proof is on one finite target cell and exploits exact periodic repetition. A global response that couples different cells before scalarization is not of form (12).
+5. **A genuinely nonseparable finite--archimedean object formed before scalarization.** An auxiliary global sector can alter the finite multiplicity geometry through couplings not generated by the cover projections alone. No claim is made that a fixed-dimensional archimedean block is automatically harmless: cross-cell coupling through such a block can produce `k`-dependent singular values, so it requires a separate analysis.
+6. **Non-additive geometric invariants with an independent sign theorem.** Determinantal volumes, ranks, capacities, or other nonlinear invariants are not ruled out merely because their logarithm could depend on multiplicity; they must be audited on their own merits and cannot infer Weil positivity from (17).
+
+The key narrowing is only that **finite nonseparable coupling inside the pointed-cover projection algebra itself is insufficient**. A survivor needs a source of scale not reducible to periodic multiplicity.
+
+## 7. Prior-art and novelty audit
+
+No theorem-level novelty is claimed for tensor-product decompositions, finite-dimensional `C*`-algebras, functional calculus, or the fact that spectral traces are additive over direct sums and multiplicities. The two-projection decomposition used in `WP-086` is already classicalized by Halmos and by Böttcher--Spitkovsky, *A gentle guide to the basics of two projections theory*, Linear Algebra and its Applications **432** (2010), 1412--1459, DOI `10.1016/j.laa.2009.11.002`.
+
+A directed audit around algebras generated by finitely many projections, spectral traces of repeated finite blocks, and periodic/Floquet-type block decompositions found broad classical operator-algebra machinery but no external theorem needed for the exact specialization (4)--(13). The present result should therefore be read as a **Mathia-specific derived obstruction**: the pointed consecutive-block cover projections have an exact common-multiple repetition that turns the finite multireference escape left by `WP-087` into an affine-multiplicity problem.
+
+This is distinct from `WP-086`, where a single noncommuting two-projection angle moves toward a commuting endpoint as `n` grows, and from `WP-087`, where independently constructed pairwise pseudolog sectors are mixed positively. Here the reference-reference noncommutativity can be arbitrary but is frozen on `E_L`; the target tower only replicates it.
+
+The result does not approach Weil/Frobenius/cohomology, Hilbert--Pólya, Sonin/localization, Connes/trace, or intersection-form prior art as a competing global construction. It is a local no-go before any global sign theorem has been produced.
+
+## 8. Exact falsification surface
+
+The finding is falsified if any of the following fails for the pointed-cover normalization of `WP-073`--`WP-087`:
+
+1. for `m|L` and every `k>=1`, `P_m^(kL)=I_k tensor P_m^(L)` under consecutive `L`-cell decomposition;
+2. `P_(kL)^(kL)=J_k tensor J_L`;
+3. every reference `P_m^(L)` fixes the constant line and reduces its orthogonal complement;
+4. a fixed noncommutative polynomial in the references and target can have, on the common-multiple tower, an eigenvalue location depending nontrivially on `k` rather than only a changing multiplicity;
+5. a fixed reduced pseudolog/logdet or other additive spectral readout of such an operator can violate the affine law (17);
+6. an affine sequence can satisfy the logarithmic relation at `k=1,2,4` in (21)--(22);
+7. exact Möbius primitive `Lambda` does not force the preprimitive to be `log n` up to its value at `1`.
+
+Items 1--3 follow directly from the block-cover definitions; items 4--5 follow from the reducing decomposition (12); items 6--7 are elementary exact identities. No numerical evidence is load-bearing.
+
+## Research consequence
+
+`WP-087` left **genuinely nonseparable multi-projection coupling** as the principal finite multireference escape from pairwise positive averaging. For a fixed finite reference dictionary and a fixed bounded projection-algebra construction, that escape is now sharply restricted:
+
+\[
+\boxed{
+\text{all reference noncommutativity}
+=\text{one fixed }L\text{-cell block repeated }k\text{ times},
+}
+\]
+
+so every natural additive spectral scalarization is affine in `k`, not logarithmic.
+
+A viable cross-cover continuation must therefore acquire scale **outside finite periodic projection multiplicity**: through an infinite reference system, an unbounded/nonperiodic operator, a global cross-cell quotient or boundary response, or a genuinely nonseparable finite--archimedean construction before scalarization. Merely replacing the positive pairwise mixture of `WP-087` by an arbitrary fixed bounded polynomial or positive element of finitely many cover projections cannot produce the required logarithmic preprimitive, and hence cannot provide the finite side of a global Weil positivity mechanism.
