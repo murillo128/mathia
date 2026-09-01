@@ -149,3 +149,9 @@ This file records durable literature dependencies used to support or falsify fin
 ## Hermite cotangent product identities
 
 - Warren P. Johnson, **Trigonometric Identities à la Hermite**, *The American Mathematical Monthly* 117:4 (2010), 311–327. DOI: 10.4169/000298910X480784. Role: gives Hermite's arbitrary-valence product-to-sum cotangent identity and a partial-fraction derivation; direct classical prior-art anchor for the hidden-shell star reduction and finite multileg tree boundary in PC-094.
+
+## Cyclotomic multiple polylogarithms and hyperlogarithmic reduction
+
+- A. B. Goncharov, **Multiple polylogarithms, cyclotomy and modular complexes**, *Mathematical Research Letters* 5 (1998), 497–516. DOI: 10.4310/MRL.1998.v5.n4.a7. Role: iterated-integral continuation and special-value theory of multiple polylogarithms at roots of unity; primary period-class anchor for PC-100/PC-102.
+- Jianqiang Zhao, **A Note on Colored Tornheim's Double Series**, *Integers* 10:6 (2010), 879–882. DOI: 10.1515/integ.2010.059. arXiv:0907.5106. Role: explicit reduction of colored double Tornheim series to double polylogarithm values at roots of unity; direct prior-art anchor for the weight-three `S(X,Y)` building block in PC-102.
+- Erik Panzer, **Algorithms for the symbolic integration of hyperlogarithms with applications to Feynman integrals**, *Computer Physics Communications* 188 (2015), 148–166. DOI: 10.1016/j.cpc.2014.10.019. arXiv:1403.3385. Role: standard hyperlogarithmic integration and alphabet/linear-reducibility framework for rational functions times hyperlogarithms; prior-art anchor for the quartic reduction in PC-102.
