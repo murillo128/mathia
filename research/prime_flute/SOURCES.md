@@ -276,6 +276,31 @@ Relevant finding: PF-128; relevant local clue: `CLUE-shift-clone-sharp-schatten-
 
 **Scope warning.** PF-128 proves only a local estimate for the full matched standard collar. It does not establish the required global integral over the infinite prime flute, and the Güneysu--Thalmaier theorem is a wave-operator/scattering result rather than a Schatten-class theorem.
 
+## S17 — resolvent-power trace class and the invariance principle
+
+**T. Kato**, *Wave operators and unitary equivalence*, Pacific Journal of Mathematics 15 (1965), no. 1, 171–180. DOI: 10.2140/pjm.1965.15.171.
+
+- https://doi.org/10.2140/pjm.1965.15.171
+
+**M. Schechter**, *The invariance principle*, Commentarii Mathematici Helvetici 54 (1979), 111–125. DOI: 10.1007/BF02566259.
+
+- https://doi.org/10.1007/BF02566259
+
+**J. Behrndt, M. Langer, V. Lotoreichik**, *Trace formulae and singular values of resolvent power differences of self-adjoint elliptic operators*, Journal of the London Mathematical Society 88 (2013), 319–337. DOI: 10.1112/jlms/jdt012; arXiv:1301.5780.
+
+- https://doi.org/10.1112/jlms/jdt012
+- https://arxiv.org/abs/1301.5780
+
+Used for:
+
+- the classical Birman--Kato invariance principle: after a trace-class comparison of a suitable strictly monotone function of two self-adjoint operators, wave-operator existence/completeness transfers back to the original pair;
+- PF-146's use of `Phi(lambda)=(1+lambda)^(-2)` as the concrete monotone transform relevant to a squared-resolvent trace-class target;
+- prior-art context that higher resolvent powers can cross a trace-class threshold in elliptic spectral problems even when lower-order resolvent differences do not.
+
+Relevant finding: PF-146; relevant local clue: `CLUE-shift-clone-wave-operator-equivalence.md`.
+
+**Scope warning.** The general invariance principle is classical, and the Behrndt--Langer--Lotoreichik theorem concerns a different elliptic boundary-condition setting. None of these sources proves the global prime/shift squared-resolvent difference is trace class. PF-146 derives only the project-specific fixed-central-collar estimate and leaves body/interface/infinite-summation control open.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
