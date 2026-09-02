@@ -18,45 +18,47 @@ The conservative retrospective backfill remains unchanged: **14** high-confidenc
 
 ## Prospective series
 
-The clean prospective series starts strictly after `prospective_source_cutoff`. The newest classifiable finding window, `48e4fb0394ee91c4c45cf8140590f69494294f40` → `0000ac94a724611f82aa067c4729c27a1c6a7c9a`, adds:
+The newest classifiable source window, `6140afa5cce42e087bbf5378c02a967f1a0216a3` → `63a3dd25fe73a103bf828331ee4e30fa70868e23`, adds:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 2 | 1 | 0 | 1 |
-| `mobius_cancellation` | 3 | 1 | 0 | 2 |
-| `prime_circle` | 4 | 0 | 2 | 2 |
+| `arithmetic_fidelity` | 1 | 0 | 0 | 1 |
+| `mobius_cancellation` | 1 | 0 | 1 | 0 |
+| `prime_circle` | 1 | 0 | 0 | 1 |
 | `prime_flute` | 1 | 0 | 0 | 1 |
-| `prime_lattice` | 1 | 0 | 1 | 0 |
-| `weil_inertia` | 2 | 0 | 0 | 2 |
-| `weil_positivity` | 3 | 1 | 0 | 2 |
-| **Total** | **16** | **3** | **3** | **10** |
+| `prime_lattice` | 2 | 0 | 1 | 1 |
+| `weil_inertia` | 1 | 0 | 0 | 1 |
+| `weil_positivity` | 2 | 1 | 0 | 1 |
+| **Total** | **9** | **1** | **2** | **6** |
 
-`PL-107` is deliberately absent from this window: its canonical finding has been narrowed in response to the adversary, but the `.review.md` sidecar remains open, so no frontier classification is forced before that lifecycle converges. Subsequent Mind synthesis through `5bc357e790f8fb65049ab731926dd5ed56a60027` sharpens the same boundaries and changes no episode classification.
+The first Prime-Lattice episode is classified only now because the `PL-107` adversarial sidecar was deleted while the corrected canonical finding survived, which the curator protocol treats as review convergence in favor of the finding. `PL-108` is a separate `known-prior-art` episode: a fresh inverse theorem gives a genuine zero-forcing bridge for the energy-ball Bohr sum, but the canonical finding explicitly identifies it as a literature redirect through scalar `log n` energy and near-`Re(s)=1` analytic machinery rather than a new critical-line localization principle. The Möbius `MC-009` episode is likewise a `known-prior-art` endpoint and remains explicitly conditional on its fresh theorem surviving the audit requested by the finding.
 
 Across the complete prospective series so far:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 8 | 7 | 0 | 1 |
-| `mobius_cancellation` | 5 | 1 | 0 | 4 |
-| `prime_circle` | 11 | 0 | 5 | 6 |
-| `prime_flute` | 6 | 3 | 0 | 3 |
-| `prime_lattice` | 7 | 0 | 4 | 3 |
-| `weil_inertia` | 8 | 1 | 0 | 7 |
-| `weil_positivity` | 11 | 3 | 1 | 7 |
-| **Total** | **56** | **15** | **10** | **31** |
+| `arithmetic_fidelity` | 9 | 7 | 0 | 2 |
+| `mobius_cancellation` | 6 | 1 | 1 | 4 |
+| `prime_circle` | 12 | 0 | 5 | 7 |
+| `prime_flute` | 7 | 3 | 0 | 4 |
+| `prime_lattice` | 9 | 0 | 5 | 4 |
+| `weil_inertia` | 9 | 1 | 0 | 8 |
+| `weil_positivity` | 13 | 4 | 1 | 8 |
+| **Total** | **65** | **16** | **12** | **37** |
 
-Prime Circle and Weil Positivity now exceed the preferred 10-episode line-local interpretation window; line-local trend claims should therefore use their latest 10 events rather than these cumulative totals. For the portfolio trend, the latest **20** classifiable prospective episodes give:
+For the portfolio trend, the latest **20** classifiable prospective episodes give:
 
-- `FrontierFertilityEpisodes = 5 / 20 = 25.0%`
-- `BarrierRate = 12 / 20 = 60.0%`
-- `PriorArtCollisionRate = 3 / 20 = 15.0%`
+- `FrontierFertilityEpisodes = 2 / 20 = 10.0%`
+- `BarrierRate = 13 / 20 = 65.0%`
+- `PriorArtCollisionRate = 5 / 20 = 25.0%`
 - `InternalDuplicateRate = 0 / 20 = 0%`
 - `InsufficientEvidence = 0`
 
-The headline vector is numerically unchanged from the previous pass even though the underlying window rolled forward. The newest episodes remain barrier-heavy: Prime Circle closes scalar and finite cyclotomic spectralizations; Prime Flute resolves two Selberg boundaries into universal propagation/local-factor layers; Weil Inertia sharply limits both the incidence and metric significance of pairwise rank defects; and Weil Positivity closes positive/passive sparsification plus finite Fisher geometry. The positive movements are also concrete: Arithmetic Fidelity gains an exact safe-envelope calculus, Möbius Cancellation separates analytic nonmasking from absolute inversion, and Weil Positivity finds correlated Haar-equivalent critical completions.
+The rolling window becomes more barrier/prior-art heavy in this pass. AF-058 shows that exact safe-lift existence can disappear under arbitrarily near-isometric renorming when no uniform safety margin exists; PC-126 collapses finite global projective shell resultants to classical collision hyperplanes; PF-161 turns the last connected canonical Ruelle boundary into a nonzero `s log s` cusp rather than a divisor; the accepted PL-107 result reduces the regularized prime Hamiltonian to a translation-invariant multiplier; and WI-094 rules out accumulation of the positive-density rank-defect sector as a fixed dyadic Hilbert--Schmidt cancellation resource. PL-108 contributes a real zero-forcing bridge but lands on a newly published literature theorem whose mechanism factors through the scalar energy projection and the near-one analytic edge.
 
-The episode unit remains deliberately coarser than a finding. AF-054--AF-057 are one safe-envelope episode; MC-004--MC-006 are one qualitative-correlation budget episode; PC-122--PC-123 are one coherent Toeplitz collapse; WI-088--WI-091 are one sharp rank-boundary episode; and WP-100--WP-101 are one measure-class/correlation-survivor episode. This prevents activity volume from masquerading as fertility.
+WP-103 is intentionally split into two episodes because it answers two materially different frontier questions. Nonlinear Gibbs/logarithmic readout **does** exactly erase mixed-prime modes while retaining the Weil rays, which is a viable algebraic extension beyond the positive-linear no-go results. The same construction nevertheless fails as a sign/regularity mechanism because carrier positivity is tautological and the critical all-prime entropy and multiplicative-flow energy diverge.
+
+The episode unit remains deliberately coarser than a finding. A source window is split only when one persisted result settles genuinely different questions, as in WP-103's successful nonlinear sparsification versus failed Gibbs sign/energy realization. This prevents activity volume from masquerading as fertility.
 
 ## Interpretation boundary
 

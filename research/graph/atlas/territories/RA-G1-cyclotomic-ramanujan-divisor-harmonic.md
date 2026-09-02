@@ -24,6 +24,7 @@ Single-shell roots-of-unity, Ramanujan/Fourier and divisor-harmonic readouts rep
 - [[research/prime_circle/findings/PC-121-cyclotomic-toeplitz-sections-are-finite-period-quasipolynomials|PC-121]]
 - [[research/prime_circle/findings/PC-124-primitive-shell-opuc-cmv-spectralization-is-classical-ramanujan-cyclotomic-data|PC-124]]
 - [[research/prime_circle/findings/PC-125-relative-scale-resultant-spectralization-is-purely-cyclotomic|PC-125]]
+- [[research/prime_circle/findings/PC-126-global-mobius-shell-resultants-factor-into-collision-hyperplanes|PC-126]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime-circle synthesis]]
 - [[research/prior_art/graph/index|Prior-art redirects]]
 
@@ -31,4 +32,6 @@ The Hardy/Hilbert lift already strengthened the soft pruning from a nonlocal ope
 
 The newer finite spectralizations close more natural attempts to extract a nontrivial divisor from one or two cyclotomic shells. Scalar Toeplitz sections are finite-period quasipolynomials governed by discriminant/root-of-unity data; primitive-shell OPUC/CMV merely returns the input cyclotomic spectrum and Ramanujan moments; and a complex relative-scale resultant has only finite cyclotomic torsion zeros with Ramanujan-correlation multiplicities.
 
-The pruning remains soft because genuinely simultaneous growing cross-level coupling before finite-shell compression is separated into G2 and remains active. These results close canonical single-shell/finite spectralizations, not every possible all-level arithmetic organization.
+PC-126 enlarges the relative-scale test from scalar dilation to an arbitrary single global projective motion of one finite shell. The binary-form resultant still factors into pairwise collision hyperplanes; one-parameter complexifications yield only elementary arithmetic zero lattices or finite sets with `O(T)` counting growth, and the same mechanism applies to arbitrary finite point clouds. Global Möbius nonuniformity therefore does not escape the finite classical collision class.
+
+The pruning remains soft because genuinely simultaneous growing cross-level coupling before finite-shell compression is separated into G2 and remains active. These results close canonical single-shell/finite spectralizations and global projective motion of finite shells, not every possible all-level arithmetic organization.

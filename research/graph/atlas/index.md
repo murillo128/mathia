@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 5bc357e790f8fb65049ab731926dd5ed56a60027
+source_revision: 63a3dd25fe73a103bf828331ee4e30fa70868e23
 derived: true
 ---
 
@@ -24,11 +24,9 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 | Macro-families | **10** |
 | Leaf territories | **37** |
 
-**Reading:** no v1 leaf changes state or mass in this source window. The newly traversed Möbius summatory-error leaf A1 remains `active`; the other new findings refine already `active`, `open`, `soft-pruned`, or `reproduced` territories. No new macrofamily, leaf mass, or Atlas version is justified.
+**Reading:** no v1 leaf changes state or mass in this source window. The Möbius summatory-error leaf A1 remains `active`; all other new findings refine already `open`, `soft-pruned`, or `reproduced` territories. No new macrofamily, leaf mass, or Atlas version is justified.
 
-The internal frontiers nevertheless move materially. Möbius Cancellation closes prime-power and qualitative-correlation black-box transfers while separating analytic zero-nonmasking from absolute inversion. Prime Circle closes divergent scalar Hardy zooms and several finite Toeplitz/CMV/resultant spectralizations. Prime Flute decomposes its remaining canonical Selberg convergence boundaries into one-ended propagation and the bottom Ruelle layer. Prime Lattice classifies an engineered zeta DQPT as a programmable Dirichlet readout; PL-107 remains under open review and is not used for a stronger Atlas disposition. Weil Inertia sharply confines large prime-pair Ramanujan rank defects and shows that extensive rank loss has only bounded metric overlap. Weil Positivity blocks positive/passive mixed-mode deletion, finds a correlated Haar-equivalent completion, and then proves that every exact critical completion has infinite cylindrical Fisher energy. Arithmetic Fidelity adds target-descent and maximal safe-envelope geometry under representation refinement.
-
-The subsequent Mind synthesis through the pinned source revision sharpens those same boundaries and changes no leaf disposition.
+The internal frontiers nevertheless move materially. Arithmetic Fidelity exposes zero-margin instability of safe lifts under arbitrarily near-isometric renorming. Möbius Cancellation adds a conditional fresh-literature endpoint linking mean-absolute Mertens growth to the rightmost zero boundary without supplying a new unconditional estimate. Prime Circle extends finite cyclotomic classicalization from relative scale to a global projective shell motion. Prime Flute turns the residual connected bottom-Ruelle boundary into a finite nonzero product with a logarithmic cusp rather than a divisor. Prime Lattice can now use PL-107 after review convergence, closing the concrete translation-invariant prime-Hamiltonian bulk, while PL-108 adds a genuine but prior-art-supplied energy-ball coherence-to-zero inverse theorem whose mechanism still factors through scalar `log n` energy and the near-`1` analytic edge. Weil Inertia closes collective dyadic accumulation of the positive-density rank-defect sector. Weil Positivity proves that nonlinear logarithmic readout can sparsify the finite prime rays exactly, while the canonical Gibbs realization still fails to supply an independent finite-energy sign mechanism.
 
 The current ±25% family-weight sensitivity band remains approximately **70.0%–78.4%**. This is not a statistical confidence interval. Marginal frontier episodes are tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] and do not alter the Atlas denominator.
 

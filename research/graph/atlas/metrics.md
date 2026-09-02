@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 5bc357e790f8fb65049ab731926dd5ed56a60027
+source_revision: 63a3dd25fe73a103bf828331ee4e30fa70868e23
 derived: true
 ---
 
@@ -28,7 +28,7 @@ Thus:
 - pruned share of visited mass = **19.1%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-No v1 leaf state or mass changes in this source window. A1 remains `active`: Möbius Cancellation has found a sharper analytic transfer distinction but still no independently proved positive cancellation mechanism. The other source changes all narrow, classicalize or extend frontiers inside territories that were already visited.
+No v1 leaf state or mass changes in this source window. A1 remains `active`; the other source changes all narrow, classicalize or extend frontiers inside territories that were already visited. Review convergence for PL-107 strengthens D2's existing `reproduced` disposition, while PL-108 adds a genuine zero-forcing literature bridge inside the already `open` Bohr/harmonic territory G3.
 
 ## Largest unvisited territories
 
@@ -39,34 +39,36 @@ No v1 leaf state or mass changes in this source window. A1 remains `active`: Mö
 5. zero-density as a primary attack — **2.5%**
 6. direct abstract Hilbert–Pólya zero operator — **2.5%**
 
-Möbius Cancellation does not count as a traversal of mollifiers, primary zero-density or zero-detection merely because those tools may be relevant later; its current canonical findings remain inside A1.
+Möbius Cancellation does not count as a traversal of mollifiers, primary zero-density or zero-detection merely because those tools may be relevant later; its current canonical findings remain inside A1. The audited prime-translation Hamiltonian PL-107 remains a prime-log spectral reformulation in D2 rather than a viable traversal of the direct abstract D1a construction. PL-108 is represented in G3 because its exact lattice formulation and phase depend only on the scalar Bohr energy `log n`; the near-one inverse theorem is a zero-detection bridge, not a new primary zero-density or direct Hilbert--Pólya route.
 
 ## Scoped hard closures
 
-Hard-pruned mass remains concentrated in the same five scoped interfaces: ordinary Prime-Flute global Selberg/Ruelle/Fredholm machinery (**3.0%**), ordinary positive-calculus/Hodge/Fisher/DtN closures (**2.5%**), standard prime-shift covariance/log-Hamiltonian (**2.5%**), single-profile Gram-defect compression in Weil Inertia (**2.0%**), and the symmetric full-cover Weil–Petersson/uniformization package (**1.2%**). The new findings narrow neighboring open/active territories but do not justify expanding those hard closures.
+Hard-pruned mass remains concentrated in the same five scoped interfaces: ordinary Prime-Flute global Selberg/Ruelle/Fredholm machinery (**3.0%**), ordinary positive-calculus/Hodge/Fisher/DtN closures (**2.5%**), standard prime-shift covariance/log-Hamiltonian (**2.5%**), single-profile Gram-defect compression in Weil Inertia (**2.0%**), and the symmetric full-cover Weil–Petersson/uniformization package (**1.2%**). The new findings narrow neighboring open/active/reproduced/soft-pruned territories but do not justify expanding those hard closures.
 
 ## Live frontier concentration
 
 Largest live family masses remain B moments/inertia/statistics (**8.5%**), C explicit-formula/positivity (**8.5%**), H geometric/cohomological/adelic (**6.8%**), A classical analytic localization (**6.5%**), G arithmetic/harmonic (**5.0%**), F equivalent criteria (**4.0%**), and E scattering/dynamical (**3.5%**).
 
-The internal boundaries are narrower again. Prime Circle loses divergent scalar Hardy amplification and several finite cyclotomic spectralizations. Prime Flute's canonical Selberg abscissae reduce to one-ended propagation and the bottom Ruelle layer. Prime Lattice's engineered DQPT is a programmable readout; the separate PL-107 Hamiltonian claim remains under open review and is excluded from the settled Atlas basis. Weil Inertia's large pairwise rank defects are boundary-confined and metrically weak. Weil Positivity keeps a correlated Haar-equivalent mixed-prime completion but cannot pass through positive/passive sparsification or finite cylindrical Fisher geometry. Arithmetic Fidelity separates representation-invariant information from target-descent invariance and supplies exact safe envelopes. Möbius Cancellation distinguishes analytic zero-nonmasking from absolute coefficientwise inversion after several quantitative black-box failures.
+The internal boundaries narrow again. Arithmetic Fidelity shows that even arbitrarily near-isometric target renorming can destroy finite safe lifts when the unperturbed representation has zero uniform safety margin. Möbius Cancellation gains a conditional literature endpoint in which mean-absolute Mertens growth would recover the rightmost zero boundary, but no new unconditional cancellation input. Prime Circle closes the global finite `PGL_2` shell-resultant escape to ordinary collision hyperplanes. Prime Flute identifies the residual connected bottom Ruelle boundary as a finite nonzero product with a logarithmic cusp rather than a zero or pole. Prime Lattice now has two distinct settled updates: PL-107 reduces the concrete regularized prime-translation Hamiltonian to a scalar Fourier multiplier whose boundary/renormalization must supply any discrete selector, while PL-108 redirects a genuinely non-programmed energy-ball coherence-to-zero implication to a newly published inverse theorem operating through scalar `log n` energy and the near-`1` analytic edge. Weil Inertia rules out collective accumulation of positive-density rank-defect pairs as a fixed dyadic Hilbert--Schmidt cancellation source. Weil Positivity demonstrates that nonlinear log-density readout can sparsify mixed-prime modes exactly, while the same Gibbs realization has tautological positivity and divergent critical entropy/flow energy.
 
 ## Structural signals
 
 - **7** current research lines are source-backed: six RH-facing lines plus the transversal Arithmetic Fidelity line.
 - Atlas v1 still has **10 macro-families and 37 leaf territories**; no denominator or leaf-state change occurs in this pass.
-- The open PL-107 adversarial sidecar is treated as challenged workflow state; its corrected finding is not used for a new strong Atlas edge or telemetry episode until the review lifecycle closes.
+- The PL-107 review sidecar has been deleted while the corrected finding survives, so the curator now treats PL-107 as settled canonical evidence under the review-lifecycle rule.
+- MC-009 remains conditional on a fresh external theorem explicitly marked `NEEDS-AUDIT` in the finding; it is represented as a literature endpoint, not as an unconditional Mathia result.
+- PL-108 is also a prior-art redirect, but its canonical finding records a source-independent positive fact stronger than a programmed readout: large unweighted energy-ball coherence can force ordinary zeta zeros. Its own boundary analysis keeps the mechanism in scalar energy projection / near-one zero detection rather than critical-line localization.
 
 ## Frontier fertility
 
-The newest classifiable finding window, `48e4fb0394ee91c4c45cf8140590f69494294f40` → `0000ac94a724611f82aa067c4729c27a1c6a7c9a`, contributes **16** classifiable frontier episodes: **3 viable extensions**, **3 known-prior-art collisions**, and **10 new barriers**. Subsequent Mind synthesis through `5bc357e790f8fb65049ab731926dd5ed56a60027` changes no episode classification. PL-107 is omitted rather than forced into a classification while its review remains open. The complete prospective series now contains **56** episodes: **15 viable extensions**, **10 known-prior-art collisions**, and **31 new barriers**.
+The newest classifiable source window, `6140afa5cce42e087bbf5378c02a967f1a0216a3` → `63a3dd25fe73a103bf828331ee4e30fa70868e23`, contributes **9** classifiable frontier episodes: **1 viable extension**, **2 known-prior-art collisions**, and **6 new barriers**. The complete prospective series now contains **65** episodes: **16 viable extensions**, **12 known-prior-art collisions**, and **37 new barriers**.
 
 Using the skill-mandated latest **20** classifiable prospective episodes for the global headline gives:
 
-- **FrontierFertilityEpisodes = 5 / 20 = 25.0%**
-- **BarrierRate = 12 / 20 = 60.0%**
-- **PriorArtCollisionRate = 3 / 20 = 15.0%**
+- **FrontierFertilityEpisodes = 2 / 20 = 10.0%**
+- **BarrierRate = 13 / 20 = 65.0%**
+- **PriorArtCollisionRate = 5 / 20 = 25.0%**
 - **InternalDuplicateRate = 0 / 20 = 0%**
 - **InsufficientEvidence = 0**
 
-The headline ratios happen to remain unchanged: the 16 new episodes plus the four immediately preceding episodes have the same `5/3/12` viable/prior-art/barrier split as the previous trailing window. That numerical stability does not mean the frontier was static; the underlying episode composition changed materially. Atlas state masses and marginal telemetry continue to answer different questions, and neither signal alone justifies changing the research portfolio.
+The rolling frontier is therefore more barrier/prior-art heavy than in the preceding snapshot even though Atlas state masses are unchanged. WP-103 contributes the sole viable extension in this window—exact nonlinear logarithmic sparsification—and a separate new barrier for the canonical Gibbs sign/energy realization. PL-108 is counted as known prior art because the positive inverse implication is supplied by the newly published Dong--Wang--Wang--Zhang theorem rather than by a new Mathia derivation. Atlas state masses and marginal telemetry continue to answer different questions, and neither signal alone justifies changing the research portfolio.
