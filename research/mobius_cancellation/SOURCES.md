@@ -117,3 +117,9 @@ Role: authoritative classical anchor for `MC-008`. DLMF records `zeta(s)=eta(s)/
 János Pintz, *Oscillation of partial sums of the Möbius function and zeros of Riemann's zeta function*, arXiv:2608.24878 (submitted 25 August 2026; revised 26 August 2026). https://arxiv.org/abs/2608.24878.
 
 Role: primary source for `MC-009`. Theorems 2.1 and 2.2 relate the mean absolute statistic `D_M(x)=x^(-1) int_0^x |M(u)|du` and the near-end maximum `S_{M,delta}(x)` to the zero-edge quantities `Z(x)` and `W(x)`, yielding logarithmic order governed by `vartheta=sup_{zeta(rho)=0} Re(rho)`. This is a very recent arXiv preprint; its theorem-level proof is treated as literature evidence pending independent audit rather than as independently verified Mathia derivation.
+
+## MC-S20 — Ford, explicit Korobov–Vinogradov zeta bound
+
+Kevin Ford, *Vinogradov's Integral and Bounds for the Riemann Zeta Function*, Proceedings of the London Mathematical Society 85 (2002), no. 3, 565–633. DOI: https://doi.org/10.1112/S0024611502013655.
+
+Role: primary analytic source for `MC-011` and the explicit form cited by Pintz in `MC-S19`. Ford proves `|zeta(sigma+it)| <= A |t|^(B(1-sigma)^(3/2)) log^(2/3)|t|` with `A=76.2` and `B=4.45`, valid for `1/2 <= sigma <= 1` and `|t| >= 3`. `MC-011` uses the explicit exponent and domain to audit Pintz's equation (6.23), including the shifted-height numerator that the printed bound drops and the separate treatment required when the shifted height is below `3`.
