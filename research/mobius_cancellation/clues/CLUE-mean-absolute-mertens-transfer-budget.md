@@ -12,6 +12,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-011-pintz-kernel-height-factor-repair.md
   - research/mobius_cancellation/findings/MC-012-pintz-section7-window-parameter-repair.md
   - research/mobius_cancellation/findings/MC-013-discrete-tanaka-l1-feedback-carrier.md
+  - research/mobius_cancellation/findings/MC-014-character-control-tanaka-cancellation-excursion-square-budget.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
@@ -20,7 +21,7 @@ based_on:
 
 The current local and averaged inputs remain below the polynomial information budget needed for RH-scale pointwise summatory control: `MC-001` isolates the exceptional-mass transfer barrier and `MC-006` shows that the available averaged two-point Chowla input yields only logarithmic saving through the audited van der Corput route. Separately, `MC-009` records a potentially weaker target in the mean-absolute Mertens quantity
 
-`D_M(X)=X^{-1}\int_1^X |M(x)|\,dx`,
+`D_M(X)=X^{-1}\int_1^X |M(x)|dx`,
 
 conditional on a recent external theorem whose proof is not yet fully audited. `MC-010`, `MC-011`, and `MC-012` repair specific endpoint, kernel-height, and Section-7 window defects but do not independently establish the full theorem.
 
@@ -46,10 +47,10 @@ This clue does not assert that the theorem recorded in `MC-009` is correct, that
 
 ## Research disposition
 
-Accepted in narrowed form after `MC-013` identified an exact candidate interface. The discrete Tanaka decomposition gives a source-natural one-step signed carrier
+Accepted in narrowed form after `MC-013` identified an exact candidate interface and `MC-014` stress-tested how that interface may be used. The discrete Tanaka decomposition gives a source-natural signed carrier `mu(n) * sgn(M(n-1))` plus a zero-departure local-time term, but `MC-014` shows with the completely multiplicative character modulo `3` that these two triangular components can each be quadratic while their sum has only linear size. Independent polynomial bounds for the two components are therefore not a cancellation-faithful generic route.
 
-`mu(n) * sgn(M(n-1))`
+The surviving candidate is coupled excursion-level information. If `ell_j` are the lengths of maximal blocks on which the Mertens partial sum is nonzero, `MC-014` proves the exact pathwise transfer
 
-plus a zero-departure local-time term, and their triangularly weighted sum equals `N D_M(N)` exactly. This removes transfer loss but does **not** by itself solve the clue: a bound on the combined carrier is algebraically the original mean-absolute target.
+`N D_M(N) <= (sum_j ell_j^2 + N)/2`.
 
-The active question is now sharper and non-circular: determine whether independently controlled arithmetic information can bound the triangular sign-feedback and local-time components at `N^(3/2+epsilon)` scale (or prove a weaker coupled inequality with the same consequence), without treating `sgn(M(n-1))` as an external test function. If available local/Chowla/pretentious inputs cannot control this endogenous feedback, construct a matched multiplicative/control model demonstrating the obstruction. `MC-013` therefore advances and focuses the clue but does not resolve it.
+Thus an independently proved bound `sum_j ell_j^2 = O_epsilon(N^(3/2+epsilon))` would reach the desired mean-absolute scale without requiring a pointwise square-root bound in the underlying path class. The active question is whether Möbius arithmetic can control this excursion-length second moment, or a truncated multiscale version of its tail, from information genuinely independent of the target. The clue remains accepted rather than resolved because no such arithmetic estimate is currently established.
