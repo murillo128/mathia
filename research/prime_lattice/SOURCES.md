@@ -266,3 +266,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 67. **Charles Bordenave**, “Eigenvalues of Euclidean random matrices,” *Random Structures & Algorithms* **33**(4) (2008), 515–532. DOI: https://doi.org/10.1002/rsa.20228. arXiv: https://arxiv.org/abs/math/0606624.
     - Role: main random-matrix matched-control anchor for `PL-084` and `PL-085`. Proves almost-sure empirical spectral convergence for fixed-density Euclidean random matrices with compact-support kernels, computes limiting moments through equality/surjection patterns, and obtains a `(Cm)^m` Carleman bound. `PL-085` uses this only for the compact-range Poisson control and removes the sinc tail separately by a prime-pair Frobenius/Wasserstein estimate.
+
+## Engineered quantum zeta dynamics and programmable readouts
+
+68. **Shijie Wei, Yue Zhai, Quanfeng Lu, Wentao Yang, Pan Gao, Chao Wei, Junda Song, Franco Nori, Tao Xin, Guilu Long**, “The Riemann Hypothesis manifested in dynamical quantum phase transitions,” *Nature Communications* **17** (2026), Article 8163. DOI: https://doi.org/10.1038/s41467-026-74935-8. Published 1 July 2026; version of record 11 August 2026.
+    - Role: main current-literature anchor for `PL-106`. Constructs engineered logarithmic-spectrum many-body systems whose accumulated-phase and Loschmidt observables encode zeta zeros as DQPT singularities; in the first system the measured phase is exactly the normalized partial eta Dirichlet series, with the thermodynamic free-energy rate jumping at zeta zeros, while the second system explicitly inserts the Riemann--Siegel theta phase. `PL-106` audits this as a physical/readout correspondence rather than an independent prime-lattice zero-localization theorem.
+
+69. **R. Mack, J. P. Dahl, H. Moya-Cessa, W. T. Strunz, R. Walser, W. P. Schleich**, “Riemann zeta function from wave-packet dynamics,” *Physical Review A* **82** (2010), 032119. DOI: https://doi.org/10.1103/PhysRevA.82.032119.
+    - Role: engineered-quantum prior-art anchor for `PL-106`, predating the DQPT construction and showing that tailored quantum wave-packet dynamics can realize Riemann-zeta structure. Used only for novelty/context; it is not claimed to contain the 2026 DQPT rate mechanism.
+
+70. **C. Feiler, W. P. Schleich**, “Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function,” *New Journal of Physics* **15** (2013), 063009. DOI: https://doi.org/10.1088/1367-2630/15/6/063009.
+    - Role: analytic-continuation/quantum prior-art anchor for `PL-106`. Explicitly proposes quantum measurements realizing the Dirichlet representation and its extension into the critical strip, showing that engineered quantum encodings of zeta continuation predate the 2026 DQPT correspondence.
