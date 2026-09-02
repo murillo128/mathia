@@ -12,18 +12,18 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Materialized line hubs
 
-- [[research/arithmetic_fidelity/graph/index|Arithmetic Fidelity]]
-- [[research/mobius_cancellation/graph/index|Möbius Cancellation]]
-- [[research/prime_circle/graph/index|Prime Circle]]
-- [[research/prime_flute/graph/index|Prime Flute]]
-- [[research/prime_lattice/graph/index|Prime Lattice]]
-- [[research/weil_positivity/graph/index|Weil Positivity]]
-- [[research/weil_inertia/graph/index|Weil Inertia]]
-- [[research/prior_art/graph/index|Prior-art redirects]]
+- [[research/arithmetic_fidelity/graph/arithmetic-fidelity|Arithmetic Fidelity]]
+- [[research/mobius_cancellation/graph/mobius-cancellation|Möbius Cancellation]]
+- [[research/prime_circle/graph/prime-circle|Prime Circle]]
+- [[research/prime_flute/graph/prime-flute|Prime Flute]]
+- [[research/prime_lattice/graph/prime-lattice|Prime Lattice]]
+- [[research/weil_positivity/graph/weil-positivity|Weil Positivity]]
+- [[research/weil_inertia/graph/weil-inertia|Weil Inertia]]
+- [[research/prior_art/graph/prior-art|Prior-art redirects]]
 
 ## Riemann Atlas
 
-- [[research/graph/atlas/index|Riemann Atlas v1]]
+- [[research/graph/atlas/riemann-atlas|Riemann Atlas v1]]
 - [[research/graph/atlas/metrics|Atlas metrics]]
 - [[research/graph/atlas/telemetry/frontier-summary|Marginal frontier telemetry]]
 
