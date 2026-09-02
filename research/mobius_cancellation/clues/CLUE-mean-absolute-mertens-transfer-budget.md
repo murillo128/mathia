@@ -14,6 +14,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-013-discrete-tanaka-l1-feedback-carrier.md
   - research/mobius_cancellation/findings/MC-014-character-control-tanaka-cancellation-excursion-square-budget.md
   - research/mobius_cancellation/findings/MC-015-qualitative-chowla-excursion-square-obstruction.md
+  - research/mobius_cancellation/findings/MC-016-random-walk-excursion-overconstraint-path-energy.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
@@ -50,10 +51,16 @@ This clue does not assert that the theorem recorded in `MC-009` is correct, that
 
 Accepted in narrowed form after `MC-013` identified an exact candidate interface and `MC-014` stress-tested how that interface may be used. The discrete Tanaka decomposition gives a source-natural signed carrier `mu(n) * sgn(M(n-1))` plus a zero-departure local-time term, but `MC-014` shows with the completely multiplicative character modulo `3` that these two triangular components can each be quadratic while their sum has only linear size. Independent polynomial bounds for the two components are therefore not a cancellation-faithful generic route.
 
-The surviving candidate is coupled excursion-level information. If `ell_j` are the lengths of maximal blocks on which the Mertens partial sum is nonzero, `MC-014` proves the exact pathwise transfer
+`MC-014` then isolated the excursion-length second moment `E_2(N)=sum_j ell_j^2` as an exact cancellation-respecting sufficient statistic, and `MC-015` showed that exact Möbius square-free support plus all qualitative fixed-shift Chowla limits can still give `E_2(N) >> N^2/log^2 N` and `D_a(N) >> N/log^2 N` along a subsequence. This killed qualitative Chowla as a black-box source for excursion-square control, but left open whether stronger growing-scale or multiplicative information might make long excursions sufficiently rare.
 
-`N D_M(N) <= (sum_j ell_j^2 + N)/2`.
+`MC-016` now narrows that residual further. In the exact-support independent-sign model, which is almost surely a qualitative Chowla sequence, the classical last-return arcsine law gives a macroscopic nonzero excursion with probability at least one half at the tested operational horizon. Intersecting this with the diffusive mean-absolute event yields deterministic realizations with `D_a(Y) <= 4 sqrt(Y)` but `E_2(Y) >= Y^2/16`. Thus small excursion-square mass is **not** a generic signature of square-root cancellation; a long low-amplitude excursion can be harmless. `E_2` remains a valid sufficient condition, but it should no longer be treated as the preferred randomness-derived transfer target unless a specifically Möbius-arithmetic mechanism forces it.
 
-`MC-015` now supplies a direct matched-control obstruction at this interface: the exact-support qualitative-Chowla sequence from `MC-004` has, along a subsequence, `D_a(N) >> N/log^2 N` and `sum_j ell_j^2 >> N^2/log^2 N`. Thus exact Möbius square-free support plus all qualitative fixed-shift Chowla limits are still insufficient even for the weaker mean-absolute endpoint and cannot yield the required excursion-square estimate as a black box.
+The active residual question is amplitude-sensitive. `MC-016` records the quadratic path energy
 
-The active residual question is therefore stricter: can genuinely **quantitative growing-scale** correlation/local information, or specifically multiplicative consistency that rules out the sparse coherent blocks of `MC-015`, control the excursion-length second moment or a truncated multiscale tail with polynomial strength? The clue remains accepted rather than resolved because no such arithmetic estimate is currently established.
+`V_M(N)=sum_{k<N} M(k)^2`
+
+with the exact transfer `D_M(N)^2 <= V_M(N)/N` and the signed correlation identity
+
+`V_a(N) = sum_{n<N}(N-n)a(n)^2 + 2 sum_h sum_X C_h(X)`.
+
+The support-matched independent-sign model has `E V_a(N) ~ (3/pi^2)N^2` and almost surely `V_a(N) <<_epsilon N^(2+epsilon)`, so this carrier has the expected diffusive polynomial scale while retaining amplitude. The next decisive test is whether genuinely signed growing-scale correlations or Möbius multiplicative consistency can control the off-diagonal all-shift/all-prefix aggregate at `N^(2+epsilon)` scale without taking absolute values and recreating the `MC-006` logarithmic ceiling. A matched multiplicative control with small current local/correlation observables but superquadratic path energy would instead kill this interface as well. The clue remains accepted rather than resolved because neither arithmetic estimate nor such a multiplicative obstruction is currently established.

@@ -135,3 +135,9 @@ Role: probability-theory prior-art boundary for `MC-013`. Fujita applies a discr
 Gordon Vincent Chavez, *Correlations of the Möbius and Liouville functions with their partial sums*, International Journal of Number Theory (2026), published 13 May 2026. DOI: https://doi.org/10.1142/S1793042126500934.
 
 Role: closest arithmetic prior art for `MC-013`. Chavez studies logarithmically weighted correlations of `mu(n)` with `M(n-1)` and of `lambda(n)` with `L(n-1)`. Under RH and simplicity of the nontrivial zeta zeros he derives formulas involving negative moments of `zeta'(rho)` and reports numerical evidence of anticorrelation. `MC-013` uses this as a boundary: the unweighted amplitude correlation collapses to an exact quadratic chain rule, while the sign-weighted Tanaka carrier targets the `L^1` mean-absolute process and remains an independently unproved arithmetic object.
+
+## MC-S23 — Kostinski and Amir, last-return arcsine law for one-dimensional random walk
+
+Sarah Kostinski and Ariel Amir, *An elementary derivation of first and last return times of 1D random walks*, American Journal of Physics 84 (2016), no. 1, 57–60. DOI: https://doi.org/10.1119/1.4930092. arXiv: https://arxiv.org/abs/1509.04800.
+
+Role: probability-theory anchor for `MC-016`. The paper derives by direct path enumeration the first-return distribution for the one-dimensional simple symmetric random walk and the last-return distribution, which follows the arcsine law. `MC-016` uses the exact discrete last-zero symmetry to show that a support-matched independent-sign walk has a macroscopic terminal nonzero excursion with probability at least one half at the tested operational horizon, despite diffusive mean-absolute partial-sum size.
