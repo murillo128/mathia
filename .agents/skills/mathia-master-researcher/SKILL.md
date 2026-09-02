@@ -133,12 +133,14 @@ Graph topology, proximity, node counts, or visual clusters are not evidence by t
 
 ### 4. Consume the Riemann Atlas as portfolio telemetry
 
-When `research/graph/atlas/**` exists, read at minimum the current atlas index and metrics projection, normally:
+When `research/graph/atlas/**` exists, discover the current root-level Atlas files before reading them. Read at minimum the current Atlas entrypoint and metrics projection. At the current repository layout, prefer:
 
 ```text
-research/graph/atlas/index.md
+research/graph/atlas/riemann-atlas.md
 research/graph/atlas/metrics.md
 ```
+
+Do not assume a historical filename such as `research/graph/atlas/index.md` exists. If the preferred Atlas entrypoint is renamed or missing, discover the current graph-owned root-level Atlas entrypoint under `research/graph/atlas/` and continue with it; a missing obsolete filename is not by itself a workflow failure.
 
 Inspect family/territory nodes only as needed to understand a material metric or denominator change. Consume the Graph-Curator-maintained vector when present, including:
 
