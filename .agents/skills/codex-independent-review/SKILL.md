@@ -7,15 +7,15 @@ description: Independently review an exact published target against the controll
 
 ## Responsibility
 
-Use this skill for declared checkpoints and final technical review when a separate review is required.
+Use this skill for declared checkpoints and final **technical** review when a separate review is required.
 
-The reviewer owns independent exact-target inspection, proportional validation, materiality, and the technical verdict. It does not implement fixes, redesign the issue, mutate workflow state, continue execution, or authorize/perform merge.
+The reviewer owns independent exact-target inspection, proportional validation, materiality, and the technical verdict. It does not implement fixes, redesign the issue, mutate workflow state, continue execution, authorize/perform merge, or perform open-ended research discovery.
 
 For a completed Mathia Lean formalization, the reviewer also owns an independent **formal-to-human correspondence review**: reconstruct the Lean theorem in ordinary mathematical language, explain the proof as mathematics rather than tactics, and state exactly what surrounding mathematics remains outside the formal theorem.
 
-For Mathia Lean, the reviewer additionally treats formalization as a possible **fertility instrument**. The target theorem may be prior art or otherwise non-novel; the review must still ask whether the exact formal proof exposed a mathematically meaningful object, asymmetry, hypothesis boundary, factorization, or representation that the informal source did not make explicit. This is an observation obligation, not a requirement to manufacture a clue.
+The formal-to-human reconstruction may expose a correctness-relevant mathematical mismatch. Report such a mismatch as part of the technical verdict. **Do not turn this final technical review into a clue-generation or fertility-search stage.** `mathia-formalization-executor` launches a separate fresh post-approval fertility subagent only after this review has returned `PASS` or `PASS_WITH_NOTES`.
 
-A `PASS` or `PASS_WITH_NOTES` means the reviewed target is technically safe to progress according to the controlling workflow. It is not merge authorization.
+A `PASS` or `PASS_WITH_NOTES` means the reviewed target is technically safe to progress according to the controlling workflow. It is not merge authorization and does not mean that a later independent fertility audit will find no mathematical subproducts.
 
 ## Trust the issue as the technical contract
 
@@ -37,17 +37,20 @@ Load prior history only when an unresolved material finding or repeated-review c
 
 For Mathia Lean formalizations, also load the authoritative informal claim/finding and the exact Lean source being reviewed.
 
+Do not preload neighboring findings merely to search for possible research leads. That belongs to the separate post-approval fertility stage.
+
 ## Independence
 
 The reviewer must:
 
 - use a fresh context that does not inherit executor hidden reasoning;
 - inspect exactly the requested target;
-- remain read-only over the reviewed implementation and workflow state;
+- remain read-only over the reviewed implementation, research state, and workflow state;
 - judge evidence rather than intent;
-- not implement corrections or advance later work.
+- not implement corrections or advance later work;
+- not create/update clues, canonical findings, or adversarial sidecars.
 
-The only research-state write exception is the narrow Mathia formalization clue handoff defined below. It does not permit implementation edits, issue-state mutation, adversarial-review edits, canonical-finding edits, or clue disposition changes.
+There is **no research-tree write exception** in this technical-review role.
 
 ## Materiality
 
@@ -92,10 +95,10 @@ Independently perform all of the following:
 1. **Human theorem reconstruction.** Read the Lean definitions, quantifiers, hypotheses, domains, conventions, and conclusion and restate the theorem in ordinary mathematical notation and prose without relying on the surrounding informal claim.
 2. **Correspondence check.** Compare that reconstructed theorem with the authoritative Mathia claim. Identify whether they are equivalent, one is stronger/weaker, or a bridge is being assumed outside Lean. Pay special attention to indexing, normalization, gauge, singularities, boundary cases, coercions, and encoded side conditions.
 3. **Human proof reconstruction.** Convert the formal proof into a concise mathematical proof or proof sketch that exposes the actual mathematical steps. Compress tactic noise and library plumbing; preserve the substantive lemmas, reductions, inequalities, invariants, case splits, and representation changes that make the theorem true.
-4. **Explanation comparison.** Compare the reconstructed proof with any persisted informal proof. If the formal proof gives a materially different explanation or representation of the same theorem, state that difference explicitly rather than treating it as mere proof-engineering trivia.
+4. **Explanation/correctness comparison.** Compare the reconstructed proof with any persisted informal proof. If a difference changes theorem meaning, hides a required bridge, weakens/strengthens the formal claim, or otherwise affects correctness, report it. A merely different valid proof representation is not a technical defect by itself.
 5. **Evidence boundary.** State precisely what the Lean theorem does not prove: upstream identities accepted as definitions/inputs, analytic or asymptotic bridges, geometric interpretations, novelty claims, or surrounding consequences.
 
-The purpose is not to require a second formal proof. It is to make the chain
+The purpose is to make the chain
 
 ```text
 informal claim <-> Lean statement <-> human mathematical proof <-> checked Lean proof
@@ -105,73 +108,21 @@ auditable.
 
 A human proof need not mimic the tactic sequence. A better mathematical compression is preferred when it is faithful to the same formal argument.
 
-### 3a. Formalization-fertility audit
+### 4. Do not perform the post-approval fertility audit here
 
-For every completed Mathia Lean formalization, perform a short but active fertility audit after reconstructing the human proof. This audit is mandatory whether the target theorem is new, classical, or known prior art.
+For Mathia formalization, stop once technical correspondence, proof integrity, boundaries, and acceptance criteria are decided.
 
-Ask explicitly:
+Do **not** use the technical review to decide whether a quotient, kernel, normal form, factorization, alternate representation, hypothesis relaxation, or other formal subproduct deserves a clue merely because you noticed it while reconstructing the proof.
 
-> **What did Lean have to prove, factor, define, separate, or use that the finding or source did not treat as a first-class mathematical object?**
+You may mention a representation change when it is necessary to explain the proof or a technical mismatch, but do not investigate its downstream research fertility and do not create a clue.
 
-Inspect especially:
-
-- hypotheses actually consumed versus hypotheses merely present in the informal statement;
-- one-sided injectivity/surjectivity or monotonicity hidden behind an apparently symmetric informal condition;
-- intermediate lemmas whose theorem surface is cleaner or more general than the final target;
-- exact kernel/range/image descriptions, quotients, normal forms, factorizations, finite certificates, or invariant decompositions introduced because the formal proof needed them;
-- case splits or degenerate branches that reveal the true theorem boundary;
-- two distinct proof representations that become visibly equivalent only after formal reconstruction;
-- proof dependencies that suggest the target belongs to a broader structural class than its original application.
-
-Do not confuse library plumbing with mathematics. A helper is fertile only when its content changes how the theorem can be understood, generalized, classified, or falsified.
-
-The audit must end with one of:
+After `PASS` or `PASS_WITH_NOTES`, `mathia-formalization-executor` must spawn a different fresh subagent under:
 
 ```text
-no material fertility delta found
-material fertility delta / clue candidate
-material finding-or-statement divergence
+.agents/skills/mathia-formalization-fertility-review/SKILL.md
 ```
 
-`no material fertility delta found` is a fully successful outcome. A fertility-motivated formalization is an experiment in conceptual pressure, not a quota for discoveries.
-
-A material finding-or-statement divergence is a correctness/research challenge and must follow the adversarial-review route owned by the Mathia formalization workflow; do not launder it into a clue.
-
-### 4. Extract research clues from representation changes
-
-For a Mathia Lean formalization review, the correspondence reconstruction and fertility audit are also observation surfaces.
-
-If translating the Lean proof back into mathematics exposes a **distinct, falsifiable research direction** -- for example:
-
-- an alternative proof that explains the theorem through a genuinely different representation;
-- a finite/local certificate replacing apparently essential global structure;
-- a new invariant, equivalence, normal form, or obstruction;
-- a plausible generalization suggested by which hypotheses the Lean proof actually uses;
-- two independent explanations of the same result whose coexistence suggests a deeper common mechanism;
-- a classical/prior-art theorem whose formal proof reveals a new structural interface worth testing beyond the original application;
-
-then load:
-
-```text
-.agents/skills/mathia-research-clues/SKILL.md
-```
-
-Deduplicate against existing clues and create or materially strengthen only a `status: proposed` clue under the owning research line (or the global clue inbox when genuinely cross-line).
-
-A shorter tactic script, easier library lemma, import simplification, or merely shorter proof is **not** clue-worthy. The key test is whether the alternative proof changes the mathematical explanation/representation and yields a concrete research question with a decisive test.
-
-The WP-014 pattern is canonical: a global Mittag--Leffler explanation and an independent finite Taylor/polynomial certificate of the same Schiffer obstruction can motivate questions about finite local certificates or deeper local invariants. The clue is the new research question, not the fact that one proof is shorter.
-
-Likewise, prior-art status of the theorem does not prevent a clue when the **new research question** comes from a structural delta exposed by formalization. The clue must not imply that the prior-art theorem itself is novel.
-
-The reviewer may not:
-
-- set a clue to `accepted`, `rejected`, or `resolved`;
-- create or rewrite a canonical finding;
-- create/update an adversarial `.review.md` as part of this exception;
-- modify the Lean target to make the clue easier to state.
-
-Clue persistence is separate from the technical verdict. Report any created/strengthened clue path in the review handoff.
+That later role owns the deliberate Lean-vs-finding/subproduct audit and any narrow proposed-clue write exception.
 
 ### 5. Test proportionally
 
@@ -181,9 +132,9 @@ Run issue-defined validation when supported. Prefer checks capable of falsifying
 
 A checkpoint can serve as final technical review when it covers the complete final diff and all remaining acceptance criteria. Later technical changes invalidate that verdict for the changed target.
 
-For a completed Mathia Lean formalization, final review is not complete until the formal-to-human correspondence, fertility audit, and evidence boundary above have been reconstructed.
+For a completed Mathia Lean formalization, final technical review is complete when the formal-to-human correspondence and evidence boundary above have been reconstructed. **Fertility review is deliberately not part of this verdict.**
 
-Final technical review completion allows a ready-for-review handoff. It does not authorize merge.
+Final technical review completion allows the controlling executor to enter its post-approval fertility stage. It does not authorize merge or publication by itself.
 
 ### 7. Report briefly
 
@@ -194,9 +145,9 @@ For completed Mathia Lean formalizations, also record:
 - the human mathematical statement corresponding to the principal Lean theorem(s);
 - the concise human proof/proof structure;
 - correspondence verdict against the authoritative claim;
-- explicit unformalized boundary;
-- fertility-audit outcome;
-- any proposed clue path created from a material representation change.
+- explicit unformalized boundary.
+
+Do not report a fertility outcome or proposed clue path from this technical-review invocation.
 
 ## Repeated-review circuit breaker
 
