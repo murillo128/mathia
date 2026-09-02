@@ -57,3 +57,27 @@ Role: Liouville comparison baseline for `MC-003`. The paper records the classica
 NIST Digital Library of Mathematical Functions, §27.6, *Divisor Sums*, equation 27.6.1; notes cite Apostol, *Introduction to Analytic Number Theory* (1976), Chapter 2. https://dlmf.nist.gov/27.6.
 
 Role: authoritative classical anchor for the square-divisor identity used in `MC-003`. DLMF records `sum_{d|n} lambda(d)=1` when `n` is a square and `0` otherwise. Möbius/Dirichlet inversion yields `lambda(n)=sum_{d^2|n} mu(n/d^2)`, from which the exact summatory square-convolution relation follows.
+
+## MC-S10 — Shi, Chowla sequences and independent random constructions
+
+Ruxi Shi, *Construction of some Chowla sequences*, Monatshefte für Mathematik 194 (2021), 193–224. DOI: https://doi.org/10.1007/s00605-020-01448-x.
+
+Role: exact sequence-theoretic anchor for `MC-004`. Definition 3.3 gives the finite-index Chowla property; for `{-1,0,1}` sequences it is equivalent to the usual Chowla condition. Proposition 5.7 states that an independent, not necessarily identically distributed, sequence in `S^1 union {0}` is almost surely Chowla when the nontrivial index moments vanish eventually. This applies to the support-matched random base `mu(n)^2 epsilon_n` used in `MC-004`.
+
+## MC-S11 — Pincus and Singer, slow bias under qualitative normality
+
+Steve Pincus and Burton H. Singer, *A zoo of computable binary normal sequences*, Proceedings of the National Academy of Sciences 109 (2012), no. 47, 19145–19150. DOI: https://doi.org/10.1073/pnas.1215998109.
+
+Role: adjacent prior art for the perturbative obstruction in `MC-004`. The paper records that changing `o(N)` entries of a binary normal sequence preserves normality (Theorem Pr-4) and constructs normal sequences with arbitrarily slow prescribed decay of one-symbol bias. It therefore supplies a close symbolic-dynamics precedent for the principle that qualitative finite-pattern equidistribution does not control the rate of an anchored partial sum. `MC-004` uses a separate support-matched Chowla construction rather than claiming this normality result as arithmetic evidence.
+
+## MC-S12 — Montgomery and Vaughan, square-free counting
+
+Hugh L. Montgomery and Robert C. Vaughan, *Multiplicative Number Theory I: Classical Theory*, Cambridge Studies in Advanced Mathematics 97, Cambridge University Press (2007), Chapter 6, Exercise 19. ISBN 9780521849036; chapter DOI: https://doi.org/10.1017/CBO9780511618314.008.
+
+Role: classical square-free counting anchor for `MC-004`. The exercise records `Q(x)=(6/pi^2)x+R(x)` for the number of square-free integers and derives an error stronger than `O(sqrt(x))`. The weaker elementary form `Q(x)=(6/pi^2)x+O(sqrt(x))` is sufficient to show that an interval of length `x/log x` contains asymptotically `(6/pi^2)x/log x` square-free integers.
+
+## MC-S13 — Matomäki, Radziwiłł and Tao, averaged Chowla
+
+Kaisa Matomäki, Maksym Radziwiłł and Terence Tao, *An averaged form of Chowla's conjecture*, Algebra & Number Theory 9 (2015), no. 9, 2167–2196. DOI: https://doi.org/10.2140/ant.2015.9.2167. arXiv: https://arxiv.org/abs/1503.05121.
+
+Role: arithmetic comparison boundary for `MC-004`. The paper proves Chowla-type correlations after averaging over shifts growing with `X`, with quantitative decay roughly `log log H / log H`, and extends the method to bounded multiplicative functions including Möbius. This is materially stronger information than merely knowing every fixed-shift qualitative correlation tends to zero, so `MC-004` does not treat the modern averaged theorem as covered by its no-go.
