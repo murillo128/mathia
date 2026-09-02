@@ -123,3 +123,15 @@ Role: primary source for `MC-009`. Theorems 2.1 and 2.2 relate the mean absolute
 Kevin Ford, *Vinogradov's Integral and Bounds for the Riemann Zeta Function*, Proceedings of the London Mathematical Society 85 (2002), no. 3, 565–633. DOI: https://doi.org/10.1112/S0024611502013655.
 
 Role: primary analytic source for `MC-011` and the explicit form cited by Pintz in `MC-S19`. Ford proves `|zeta(sigma+it)| <= A |t|^(B(1-sigma)^(3/2)) log^(2/3)|t|` with `A=76.2` and `B=4.45`, valid for `1/2 <= sigma <= 1` and `|t| >= 3`. `MC-011` uses the explicit exponent and domain to audit Pintz's equation (6.23), including the shifted-height numerator that the printed bound drops and the separate treatment required when the shifted height is below `3`.
+
+## MC-S21 — Fujita, discrete Tanaka formula for random walks
+
+Takahiko Fujita, *A random walk analogue of Lévy's theorem*, Studia Scientiarum Mathematicarum Hungarica 45 (2008), no. 2, 223–233. DOI: https://doi.org/10.1556/SScMath.45.2008.2.50. Open author version: https://hdl.handle.net/10086/15876.
+
+Role: probability-theory prior-art boundary for `MC-013`. Fujita applies a discrete Itô formula to obtain a discrete Tanaka formula and local time for simple random walks. The `{-1,0,1}` Mertens specialization in `MC-013` is an elementary pathwise version of this classical mechanism, so no novelty is claimed for the Tanaka/local-time decomposition itself.
+
+## MC-S22 — Chavez, Möbius correlations with their partial sums
+
+Gordon Vincent Chavez, *Correlations of the Möbius and Liouville functions with their partial sums*, International Journal of Number Theory (2026), published 13 May 2026. DOI: https://doi.org/10.1142/S1793042126500934.
+
+Role: closest arithmetic prior art for `MC-013`. Chavez studies logarithmically weighted correlations of `mu(n)` with `M(n-1)` and of `lambda(n)` with `L(n-1)`. Under RH and simplicity of the nontrivial zeta zeros he derives formulas involving negative moments of `zeta'(rho)` and reports numerical evidence of anticorrelation. `MC-013` uses this as a boundary: the unweighted amplitude correlation collapses to an exact quadratic chain rule, while the sign-weighted Tanaka carrier targets the `L^1` mean-absolute process and remains an independently unproved arithmetic object.

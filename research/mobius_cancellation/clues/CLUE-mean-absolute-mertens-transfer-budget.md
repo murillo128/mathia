@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-mean-absolute-mertens-transfer-budget
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -10,6 +10,8 @@ based_on:
   - research/mobius_cancellation/findings/MC-009-pintz-mean-absolute-zero-boundary.md
   - research/mobius_cancellation/findings/MC-010-pintz-endpoint-localization-audit.md
   - research/mobius_cancellation/findings/MC-011-pintz-kernel-height-factor-repair.md
+  - research/mobius_cancellation/findings/MC-012-pintz-section7-window-parameter-repair.md
+  - research/mobius_cancellation/findings/MC-013-discrete-tanaka-l1-feedback-carrier.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
@@ -20,7 +22,7 @@ The current local and averaged inputs remain below the polynomial information bu
 
 `D_M(X)=X^{-1}\int_1^X |M(x)|\,dx`,
 
-conditional on a recent external theorem whose proof is not yet fully audited. `MC-010` and `MC-011` repair specific endpoint and kernel-height defects but do not independently establish the full theorem.
+conditional on a recent external theorem whose proof is not yet fully audited. `MC-010`, `MC-011`, and `MC-012` repair specific endpoint, kernel-height, and Section-7 window defects but do not independently establish the full theorem.
 
 ## Research question
 
@@ -40,4 +42,14 @@ Fix an explicit source-natural local or multiscale statistic and prove one of tw
 
 ## Evidence boundary
 
-This clue does not assert that the theorem recorded in `MC-009` is correct, that current local inputs imply an RH-scale mean-absolute bound, or that such a transfer exists. `MC-009` remains `NEEDS-AUDIT`; `MC-010` and `MC-011` provide only partial audits and repairs. Any use of the mean-absolute endpoint as an RH consequence must first respect that evidence boundary.
+This clue does not assert that the theorem recorded in `MC-009` is correct, that current local inputs imply an RH-scale mean-absolute bound, or that such a transfer exists. `MC-009` remains `NEEDS-AUDIT`; `MC-010`, `MC-011`, and `MC-012` provide only partial audits and repairs. Any use of the mean-absolute endpoint as an RH consequence must first respect that evidence boundary.
+
+## Research disposition
+
+Accepted in narrowed form after `MC-013` identified an exact candidate interface. The discrete Tanaka decomposition gives a source-natural one-step signed carrier
+
+`mu(n) * sgn(M(n-1))`
+
+plus a zero-departure local-time term, and their triangularly weighted sum equals `N D_M(N)` exactly. This removes transfer loss but does **not** by itself solve the clue: a bound on the combined carrier is algebraically the original mean-absolute target.
+
+The active question is now sharper and non-circular: determine whether independently controlled arithmetic information can bound the triangular sign-feedback and local-time components at `N^(3/2+epsilon)` scale (or prove a weaker coupled inequality with the same consequence), without treating `sgn(M(n-1))` as an external test function. If available local/Chowla/pretentious inputs cannot control this endogenous feedback, construct a matched multiplicative/control model demonstrating the obstruction. `MC-013` therefore advances and focuses the clue but does not resolve it.
