@@ -26,7 +26,7 @@ for some `c>0`, and identifies this shape as the asymptotically strongest known 
 
 Andrew Granville and K. Soundararajan, *Decay of Mean Values of Multiplicative Functions*, Canadian Journal of Mathematics 55 (2003), no. 6, 1191–1230. DOI: https://doi.org/10.4153/CJM-2003-047-0. arXiv: https://arxiv.org/abs/math/9911246.
 
-Role: primary pretentious/Halász mean-value anchor for `MC-002`. The paper studies quantitative bounds for `(1/x) sum_{n<=x} f(n)` for `1`-bounded multiplicative `f` in terms of the prime-harmonic quantity `M = min_y sum_{p<=x}(1-Re(f(p)p^{-iy}))/p`, and records the standard `(1+M)e^{-M}` scale.
+Role: primary pretentious/Halász mean-value anchor for `MC-002`. The paper studies quantitative bounds for `(1/x) sum_{n<=x} f(n)` for `1`-bounded multiplicative `f(n)` in terms of the prime-harmonic quantity `M = min_y sum_{p<=x}(1-Re(f(p)p^{-iy}))/p`, and records the standard `(1+M)e^{-M}` scale.
 
 ## MC-S5 — Granville and Mangerel, explicit modern Halász formulation
 
@@ -99,3 +99,15 @@ Role: classical prime-number-theorem-in-arithmetic-progressions anchor for `MC-0
 Oleksiy Klurman, Alexander P. Mangerel, Cosmin Pohoata and Joni Teräväinen, *Multiplicative functions that are close to their mean*, Transactions of the American Mathematical Society 374 (2021), no. 11, 7967–7990. DOI: https://doi.org/10.1090/tran/8427. arXiv: https://arxiv.org/abs/1911.06265.
 
 Role: direct adjacent prior art for `MC-005`. Theorem 1.1 proves that for every multiplicative `g:N->{-1,+1}`, the square-free-supported sequence `mu^2 g` has unbounded partial sums. This confirms Aymone's square-free discrepancy conjecture and establishes that the exact-support multiplicative comparator class itself is already a studied object. `MC-005` uses a particular residue-biased member of this class for which standard Selberg–Delange theory yields the much larger explicit logarithmic-order asymptotic.
+
+## MC-S17 — Venturini, auxiliary multiplicative Dirichlet series and zeta nonvanishing
+
+Sergio Venturini, *Non vanishing of Dirichlet series of completely multiplicative functions*, Rivista di Matematica della Università di Parma 11 (2020), no. 1, 153–180. Journal page: https://www.rivmat.unipr.it/vols/2020-11-1/08-venturini.html. Repository record: https://hdl.handle.net/11585/729849.
+
+Role: adjacent prior art for `MC-008`. Venturini proves that for a bounded completely multiplicative coefficient sequence, holomorphic continuation of its Dirichlet series to `Re(s)>1-delta` together with `L(1)=0` forces that half-plane to be zero-free for the Riemann zeta function. The hypotheses and mechanism are not the same as the explicit non-completely-multiplicative comparator in `MC-008`, but the paper establishes the broader prior-art principle that analyticity of an auxiliary multiplicative Dirichlet series can constrain the zeta zero divisor.
+
+## MC-S18 — DLMF alternating-zeta prefactor
+
+NIST Digital Library of Mathematical Functions, §25.2(ii), equation 25.2.3, *Riemann Zeta Function: Definition and Expansions*. https://dlmf.nist.gov/25.2.E3.
+
+Role: authoritative classical anchor for `MC-008`. DLMF records `zeta(s)=eta(s)/(1-2^(1-s))` for `Re(s)>0`, equivalently `eta(s)=(1-2^(1-s))zeta(s)`. The factor `1-2^(1-s)` occurring in the explicit 2-adic transfer kernel of `MC-008` is therefore standard; its zeros lie on `Re(s)=1`, so no novelty is claimed for that factor or its zero set.
