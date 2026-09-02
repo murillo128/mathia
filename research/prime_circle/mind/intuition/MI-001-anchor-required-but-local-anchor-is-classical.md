@@ -1,43 +1,43 @@
-# MI-001 — Finite canonical circle compressions repeatedly classicalize
+# MI-001 — Finite canonical circle compressions and standard spectralizations repeatedly classicalize
 
-**Evidence level:** supported by exact structural reductions, Fourier identities, and classical cyclotomic/Farey controls
+**Evidence level:** supported by exact structural reductions, Fourier identities, and classical cyclotomic/Farey/Toeplitz/OPUC controls
 
 ## Core intuition
 
-Breaking rotational symmetry by naming vertices or retaining old/new structure is necessary to avoid the coarsest Prime-Circle quotients, but neither finite combinatorial complexity nor a fixed translation-invariant nonlocal kernel is enough to create a new arithmetic channel. The current evidence closes two large classes: finite cotangent networks reduce to endpoint/cyclotomic algebra, while cumulative primitive-root kernel statistics reduce to classical Farey/Mertens Fourier data.
+Breaking rotational symmetry by naming vertices or retaining old/new structure is necessary to avoid the coarsest Prime-Circle quotients, but neither finite combinatorial complexity, fixed translation-invariant nonlocality, nor standard finite-section spectral machinery is enough to create a new arithmetic channel. The current evidence closes three large classes: finite cotangent networks reduce to endpoint/cyclotomic algebra, cumulative primitive-root kernel statistics reduce to classical Farey/Mertens Fourier data, and natural Toeplitz/CMV/resultant spectralizations of finitely many cyclotomic shells reduce to finite-period, finite-state, or tautological cyclotomic data.
 
 ## Strongest justified principle
 
 PC-090--PC-097 close the finite cotangent sector. Reflection parity, Galois-rational complete-shell contractions, arbitrary diagonal shell weights, cycles, parallel edges, repeated shells, and collision strata all reduce by exact confluent elimination to one-body endpoint Cauchy/cyclotomic data. PC-098 then shows that fixed finite shell support with arbitrary composition depth is finite-state by Cayley--Hamilton, and PC-099 shows that canonical complete-preimage growth has universal affine-band limits determined by the base spectrum.
 
-PC-105 supplies a distinct nonlocal control. The cumulative primitive-root cloud is exactly the Farey cloud, and its Fourier coefficients are finite divisor transforms of the Mertens function. In particular its first nonconstant mode is
+PC-105 supplies a distinct nonlocal control. The cumulative primitive-root cloud is exactly the Farey cloud, and its Fourier coefficients are finite divisor transforms of the Mertens function. In particular `nu_N^(1)=M(N)/A_N`, so the familiar RH-sensitive rate is already the classical Mertens criterion. Every fixed translation-invariant positive kernel on the circle packages the same summatory Ramanujan/Mertens modes in a weighted `l^2` norm.
 
-\[
-\widehat\nu_N(1)=M(N)/A_N,
-\]
+PC-121--PC-125 now close the most natural finite-shell spectralization escape. For the scalar symbol `|Phi_n|^2`, the Toeplitz determinant is an exact quasipolynomial in section size with period dividing `n`; its ordinary generating function is rational and its leading term is the cyclotomic discriminant. The coherent multi-shell matrix symbol `p p^*` is overcomplete: its block determinant becomes identically zero beyond a finite dimension threshold and the last two-shell nonsingular section is a cyclotomic resultant. Passing to the canonical pseudodeterminant removes the off-diagonal shell coherence and leaves a fixed-band scalar recurrence with rational generating function.
 
-so the familiar RH-sensitive rate is already the classical Mertens criterion. Every fixed translation-invariant positive kernel on the circle produces a weighted `l^2` package of the same summatory Ramanujan/Mertens modes. Pairing every point with every other point therefore does not by itself leave the classical quotient.
+The alternative OPUC/CMV spectralization is equally rigid. Equal mass on primitive roots has normalized Ramanujan moments; the finite CMV spectrum is exactly the primitive roots supplied as input and its characteristic polynomial is `Phi_n`. Finally, promoting a pairwise shell resultant to a relative complex scale does create a divisor, but every zero is a root-of-unity ratio and the whole divisor factors into ordinary cyclotomic polynomials with Ramanujan-correlation multiplicities.
 
-These results are complementary. The cotangent closure says finite graph topology does not add an unseen interior variable; the kernel result says fixed convolutional nonlocality on the cumulative root cloud does not add a new spectral variable either. Complexity and nonlocality count only when they change the information layer consumed by the final invariant.
+These results are complementary. Finite topology, convolutional nonlocality, and standard finite-shell spectral machinery can all look richer while remaining functions of the same finite cyclotomic/Fourier information layer.
 
 ## What remains possible
 
-A surviving Prime-Circle mechanism must use structure not already determined by endpoint/cyclotomic elimination or by the cumulative Fourier package. Possibilities include a genuinely non-translation-invariant operator forced by the geometry, a cross-level construction retaining incidence/provenance before cumulative averaging, a singular or relative completion, or a truly infinite coupling whose operator ideal and spectral data are not fixed by finite-shell controls.
+A surviving Prime-Circle mechanism must use structure not already determined by endpoint/cyclotomic elimination, cumulative Fourier data, or finite polynomial spectralization. Possibilities include a genuinely cross-level operator retaining provenance before finite-shell compression, an independently forced incomplete growing family, a singular/domain-changing completion, or a global coupling whose operator ideal and spectral data are not fixed by finite-state polynomial algebra.
 
-Any such candidate must first prove nonfactorization through the closed classes above. Rewriting Mertens/Farey discrepancy in a positive kernel norm, increasing finite graph depth, or attaching an arbitrary determinant does not qualify.
+Any candidate should first prove nonfactorization through the closed classes above. Rewriting Mertens discrepancy in a positive kernel norm, replacing a finite shell by its CMV matrix, increasing Toeplitz section size at fixed conductor, taking a pseudodeterminant of the one-channel coherent lift, or promoting a resultant by a single relative scale no longer qualifies.
 
 ## Status / novelty
 
-The reductions use persisted exact findings and classical cotangent, Ramanujan, Farey, Mertens, and kernel-Fourier theory. The synthesis is a closure statement for the audited canonical finite/convolutional Prime-Circle sectors, not a theorem about every possible circle operator.
+The reductions use persisted exact findings and classical cotangent, Ramanujan, Farey, Mertens, Toeplitz, resultant, and OPUC/CMV theory. The synthesis is a closure statement for the audited canonical finite/convolutional/spectralized Prime-Circle sectors, not a theorem about every possible circle operator.
 
 ## Falsification criterion
 
-Exhibit a canonical finite cotangent network covered by PC-096/PC-097 with an irreducible hidden-shell variable, or a fixed translation-invariant positive kernel on the cumulative primitive-root cloud whose statistic is not determined by the exact Fourier/Mertens package of PC-105. A positive advance should instead derive a new information layer outside those hypotheses.
+Exhibit a canonical object covered by PC-090--PC-125 whose invariant is not determined by the stated endpoint/Fourier/cyclotomic finite-state data, or derive a new cross-level spectral variable before those reductions apply and prove that it survives matched non-arithmetic controls.
 
 ## Lean-formalizable core
 
 - Confluent partial-fraction elimination of finite cotangent networks.
-- Equality-partition reduction for repeated shells.
 - Fixed-state Cayley--Hamilton recurrence.
 - Exact cumulative Ramanujan/Mertens Fourier identity.
-- Translation-invariant kernel-energy decomposition into Fourier modes.
+- Toeplitz finite-section quasipolynomial/rank reductions.
+- Gram pseudodeterminant reduction to an output frame operator.
+- Primitive-root moment/CMV characteristic-polynomial identity.
+- Cyclotomic factorization of the relative-scale resultant.

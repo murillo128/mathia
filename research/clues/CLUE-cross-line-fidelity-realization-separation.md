@@ -7,49 +7,57 @@ target_line: global
 based_on:
   - research/arithmetic_fidelity/findings/AF-023-regular-weil-test-points-have-positive-dimensional-beurling-fibers.md
   - research/arithmetic_fidelity/findings/AF-053-null-symbol-stabilization-collapses-zero-error-tv-repair-to-bayes-risk.md
+  - research/arithmetic_fidelity/findings/AF-054-maximal-safe-target-envelope-under-isometric-refinement.md
   - research/prime_circle/findings/PC-120-divergent-scalar-hardy-amplification-destroys-det2-normality.md
   - research/prime_flute/findings/PF-159-canonical-selberg-quarter-boundary-is-one-ended-propagation.md
   - research/prime_lattice/findings/PL-106-zeta-dqpt-programmable-dirichlet-readout.md
-  - research/weil_inertia/findings/WI-085-finite-window-ramanujan-scalarization-has-exact-alias-quotient.md
+  - research/weil_inertia/findings/WI-093-extensive-prime-rank-defect-forces-bounded-metric-overlap.md
   - research/weil_positivity/findings/WP-099-passive-positive-auxiliary-elimination-cannot-sparsify-the-mixed-prime-completion.md
+  - research/weil_positivity/findings/WP-102-exact-critical-prime-torus-completions-have-infinite-cylindrical-fisher-energy.md
 ---
 
-# Can source fidelity and destination realization be separated by one exact cross-line criterion?
+# Can source fidelity, target transport, and destination realization be separated by one exact cross-line criterion?
 
 ## Observation
 
-Several current lines now fail at mathematically different interfaces, and `AF-053` exposes a distinction that the earlier version of this clue did not isolate. A retained statistic can preserve the source experiment and even preserve its ambient discrepancy under a declared representation equivalence, while the distance to a structural target still changes because the target acquires non-descending realizations. Thus "the information survived" and "the metric is invariant" do not by themselves imply that the **target semantics** are intrinsic.
+Several current lines fail at mathematically different interfaces, and AF-053--AF-054 now make one of those interfaces exact. A retained statistic can preserve the source experiment and even preserve its ambient discrepancy under an admitted representation equivalence while the distance to a structural target changes because the refined target acquires non-descending realizations. AF-054 identifies the unique maximal **safe target envelope** under an isometric refinement, so target-descent failure is no longer only a conceptual warning: it has an exact metric criterion in a broad model class.
 
-The newer RH-facing results expose complementary boundaries. `PC-120` keeps the source-derived Hardy corrector but scalar amplification either remains zero-free or leaves the finite Fredholm category. `PF-159` removes the canonical one-ended Selberg boundary and leaves a zero-free connected residual. `PL-106` preserves the logarithmic spectrum while showing that a zero divisor can be programmed through the observable. `WI-085` identifies an exact scalar finite-window alias quotient. `WP-099` preserves positivity under passive reduction but proves that the resulting order relation cannot produce the sparse target carrier. These are not evidence that one universal theorem already exists; they make the interfaces precise enough to test whether one can.
+The RH-facing results expose complementary failures after source information has survived. PC-120 keeps the source-derived Hardy corrector but scalar amplification either stays zero-free or leaves finite Fredholm normality. PF-159 preserves the separator geometry while identifying the apparent quarter boundary as a one-ended propagation term. PL-106 preserves the logarithmic spectrum while showing that a zero divisor can be programmed through the observable. WI-093 shows that an extensive algebraic rank defect can coexist with only bounded metric overlap. WP-099 preserves positivity under passive reduction but proves that the order relation cannot produce the sparse target carrier, while WP-102 shows that even arbitrary correlated positive completions with the exact target moments fail a destination regularity requirement through infinite cylindrical Fisher energy.
+
+These are not evidence that one universal theorem already exists. They make the interfaces precise enough to test whether a reusable factorization can distinguish them without collapsing them into one vague notion of "information loss."
 
 ## Research question
 
-Can a candidate mechanism be factored, under explicit hypotheses, into
+Can a candidate arithmetic mechanism be factored, under explicit hypotheses, into
 
-1. a source-to-statistic map with an admissible source equivalence;
-2. an equivalence-compatible **target family** for the claimed structural property;
-3. a destination realization carrying the required topology/operator ideal/sign; and
-4. a global assembly or quantitative transfer map,
+1. a source-to-statistic map together with an admitted source equivalence;
+2. an equivalence-compatible **target transport/envelope** for the structural property being claimed;
+3. a destination realization carrying the required metric, topology, regularity, operator ideal, or sign cone; and
+4. a global assembly/quantitative transfer map,
 
-so that fidelity loss, target-descent failure, realization failure, and assembly/information-budget failure are mathematically distinguishable?
+so that source fidelity loss, target-descent failure, destination-realization failure, and assembly/information-budget failure are theorem-level distinct?
 
-The sharp subquestion introduced by `AF-053` is whether **target-descent failure is genuinely independent of realization failure**. If every compatible target can be encoded as part of the destination category, the taxonomy should collapse. If not, there should be an explicit example where source fidelity and destination continuity/realizability survive while an equivalent presentation changes the admissible structural target.
+The sharpened subquestion is whether AF-054's safe-envelope notion can serve as the exact target-transport component of such a factorization while WP-102-type energy/domain obstructions remain genuinely independent destination conditions. If every target-descent condition can always be absorbed into the destination category without loss of explanatory power, the taxonomy should collapse. If not, one should be able to prove a counterexample where source fidelity and destination realizability survive but an admitted equivalent presentation changes the target outside the safe envelope.
 
 ## Why it may matter
 
-A theorem-level separation would prevent two opposite errors: treating every negative result as "information loss", and treating a representation-dependent target or programmable observable as an intrinsic realization merely because the source statistic is faithful. It would also give the program a reusable rule for deciding when adding coordinates, auxiliaries, quotients, regularizations, or equivalent presentations is harmless and when it silently changes the theorem being asked.
+A theorem-level separation would prevent two opposite errors: treating every negative result as source information loss, and treating a representation-dependent target or programmable observable as intrinsic merely because the source statistic is faithful. It would also give Mathia a reusable rule for deciding when adding coordinates, auxiliaries, quotients, regularizations, equivalent presentations, or singular domains is harmless and when it silently changes either the theorem being asked or the category in which the theorem must be proved.
+
+AF-054 now provides a candidate exact invariant for one gate; WP-102 and WI-093 provide clean examples where the obstruction instead lies in destination metric/regularity after algebraic information is present. This makes the clue more falsifiable than a purely terminological taxonomy.
 
 ## Decisive test
 
-Start with `AF-053`, where the source experiment and TV geometry are Blackwell-invariant but unrestricted zero-error target distance changes under null stabilization. Pair it with at least one RH-facing construction whose obstruction occurs after source retention, preferably `PC-120` or `WP-099`.
+Start with the AF-054 isometric-refinement theorem and one RH-facing case whose obstruction occurs strictly after source retention, preferably WP-102 or WI-093. Write explicitly the source class, admitted equivalence, retained statistic, target family, safe target envelope, destination category/metric, and assembly map.
 
-Write the exact source class, declared equivalence, retained object, target family, destination category, topology/order, and assembly map for both cases. Then prove one of the following:
+Then prove one of the following:
 
-- a proposition showing that target descent is always representable as an ordinary realization condition under explicit reusable hypotheses, and recover both cited line-specific obstructions as instances; or
-- a counterexample satisfying source fidelity and destination realization/stability while changing the admissible target under an allowed equivalence, proving that target descent is a separate gate.
+- a factorization theorem under reusable hypotheses showing that target transport and destination realization are independent gates, with AF-054 and the chosen RH-facing obstruction as genuine instances; or
+- a reduction theorem showing that target transport is always representable as an ordinary destination-realization condition in the relevant category, so the four-way taxonomy can be simplified without losing either example.
 
-The result must reproduce the canonical line-specific obstruction rather than merely rename it. If neither direction can be made exact across two lines, narrow this clue to the smallest pair for which the distinction is theorem-level.
+A useful stress test is PL-106: the source/log-spectrum realization is exact, but the observable is programmable. The framework should classify this as a target/selector issue rather than source loss. It should also classify WI-093 as metric-strength loss rather than rank/support loss, and WP-102 as regularity/domain failure rather than positivity or measure-class failure.
+
+If neither direction can be made exact across two lines, narrow the clue to the smallest pair for which the distinction is theorem-level.
 
 ## Evidence boundary
 
-No cross-line equivalence, factorization theorem, or four-way obstruction taxonomy is established here. Each cited finding supports only its own source, target, topology, or assembly statement. Graph topology and frontier telemetry are navigation aids only and are not evidence for this clue.
+No cross-line factorization theorem or universal obstruction taxonomy is established here. AF-054 proves an exact safe-envelope statement only in its metric refinement setting; WI-093 and WP-102 prove line-specific metric/regularity obstructions; PC-120, PF-159, and PL-106 support only their own operator, geometric, or readout claims. Graph topology and frontier telemetry are navigation aids only and are not evidence for this clue.

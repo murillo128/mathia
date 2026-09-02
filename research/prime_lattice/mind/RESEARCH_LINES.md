@@ -2,13 +2,15 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Distinguish the exact rational-prime norm completion from Beurling and universal tempered controls
+## Distinguish the exact rational-prime norm completion and forced observables from Beurling, tempered, and programmable-readout controls
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-002-critical-line-is-boundary-not-selector`.
 
-The free exponent cone, square-free hypercube, Euler-product architecture, square-root-scale counting regularity, and arbitrary finite prefixes of ordinary prime frequencies do not determine RH-type zero geometry. PL-104--PL-105 add a particularly strong control: Bruhat--Tits radial geometry produces `Re(s)=1/2` as the classical local tempered axis, and finite regular quotients add cycles, an Ihara Euler product, a determinant formula, and an exact RH-like root-location theorem. Yet generic Ramanujan graphs, including degrees with no local-field residue cardinality, satisfy the same package.
+The free exponent cone, square-free hypercube, Euler-product architecture, square-root-scale counting regularity, and arbitrary finite prefixes of ordinary prime frequencies do not determine RH-type zero geometry. PL-104--PL-105 add a strong geometric control: Bruhat--Tits radial geometry produces `Re(s)=1/2` as the classical local tempered axis, and finite regular quotients add cycles, an Ihara Euler product, a determinant formula, and an exact RH-like root-location theorem. Generic Ramanujan graphs satisfy the same package.
 
-A surviving arithmetic invariant must therefore use the full rational-prime norm/completion in a way unavailable to matched Beurling systems **and** unavailable to universal local/graph temperedness. Producing a half-axis, a cycle zeta, or even a determinant with an RH-equivalent Ramanujan condition is not a rational-prime selector by itself.
+PL-106 adds a different control at the operator/readout level. The finite Hamiltonian with spectrum `log n` becomes a universal Dirichlet-polynomial encoder once the diagonal probe is allowed to vary. The DQPT zeta construction chooses the eta coefficients explicitly; in exponent coordinates the phase only tests occupation of the `2`-coordinate. The observed zero singularities therefore read a programmed divisor rather than select it from the logarithmic spectrum.
+
+A surviving arithmetic invariant must use the full rational-prime norm/completion in a way unavailable to matched Beurling systems and universal local/graph temperedness, and it must derive its probe or selector intrinsically rather than program the target Dirichlet coefficients. Producing a half-axis, a cycle zeta, a determinant with an RH-equivalent Ramanujan condition, or a physical readout of already encoded zeros is not a rational-prime selector by itself.
 
 ## Resolve the discrete Nyman defect with target-sensitive data
 

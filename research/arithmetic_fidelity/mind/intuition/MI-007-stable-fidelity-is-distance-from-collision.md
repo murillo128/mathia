@@ -1,43 +1,46 @@
-# MI-007 — Stable fidelity is positive distance from the collision boundary in the admitted topology
+# MI-007 — Stable fidelity is distance from the admitted collision boundary, and repair is relative to target transport
 
-**Evidence level:** supported by exact Hilbert, Euclidean, smooth-compact, Lipschitz, and finite-channel classifications
+**Evidence level:** supported by exact Hilbert, Euclidean, smooth-compact, Lipschitz, finite-channel, and metric-refinement classifications
 
 ## Core intuition
 
-Exact recoverability and stable recoverability are not merely qualitative and quantitative versions of the same slogan. In the natural normed spaces studied so far, the stability modulus is a distance to loss of the relevant distinction: stable fidelity means that the representation lies a positive distance from the closure of admitted collisions in the **specific topology in which perturbations are allowed**.
+Exact recoverability, stable recoverability, and distance to a repaired structural target are different claims. Stability is controlled by distance from the relevant collision set in the **specific perturbation geometry**, while a repair radius is intrinsic only after the target family is transported compatibly with the representation equivalences that the category declares harmless.
 
-The target failure notion is part of that statement. AF-046 shows that two channel rows can remain positively separated as probability laws while exact zero-error support fidelity has zero total-variation robustness. Thus `distance to collision` is meaningful only after both the collision relation and the ambient perturbation category are fixed.
+The newer channel/refinement results make the second clause essential. A representation map can be statistically reversible and even exactly isometric for the ambient discrepancy while an unrestricted target on the refined presentation acquires new non-descending points and moves closer. Thus an invariant source metric does not by itself make distance to structure invariant.
 
 ## Strongest justified principle
 
-AF-041 gives the linear-composition prototype. If `A` has closed range and `B` has closed range, then `BA` is exactly injective when `Ran(A)` misses `ker(B)`, but is bounded below only when the two subspaces are uniformly transverse. The transversality modulus quantitatively controls the lower modulus of the composite.
+AF-041 gives the linear-composition prototype. If `A` and `B` have closed range, exact injectivity of `BA` only requires `Ran(A)` to miss `ker(B)`, whereas stable injectivity requires uniform transversality. AF-042--AF-045 identify the same geometry through closed secants, injective immersions, operator-norm distance to pair collisions, and the Lipschitz lower modulus. In these settings the stable-fidelity modulus is literally a distance to the closure of admitted collisions.
 
-AF-042--AF-043 turn this into a geometric statement. On a compact smooth carrier, a `C^1` representation is stably faithful exactly when it is an injective immersion. For a linear compression of an arbitrary Euclidean set `S`, the exact object is the closed unit-secant carrier: exact injectivity avoids the kernel on actual secants, while stable fidelity avoids it on all limiting secants as well. Tangent directions are precisely the extra limiting secants that appear for compact smooth manifolds.
+AF-046--AF-051 show that the failure relation and discrepancy must also be specified. Law equality can have a positive total-variation margin while zero-error support fidelity has zero TV robustness; average TV, row-sup TV, KL directions, general `f`-divergences, and quadratic costs induce different repair problems. Quadratic repair is exact but changes under statistically reversible output cloning.
 
-AF-044 identifies the perturbative meaning exactly. The closed-secant modulus `kappa_S(B)` is the operator-norm distance from `B` to stable fidelity failure and also the distance to the set of actual pair-collapsing operators; the stable-failure set is the closure of the collision set. AF-045 removes finite-dimensional linearity: for a pointed metric space and Banach-valued Lipschitz map `f`, the lower Lipschitz modulus `beta(f)` is exactly the Lipschitz-norm distance to noninjective maps and to their closed stable-failure set. Lipschitz-free linearization identifies normalized elementary molecules as the intrinsic secant carrier.
+AF-052--AF-054 isolate the deeper target-transport issue. Uniform cloning is Blackwell reversible and TV-isometric, yet the unrestricted zero-error repair radius drops because the refined alphabet admits new support partitions that do not descend. Adding null symbols collapses the presentation-relaxed TV repair radius all the way to Bayes risk. In general, for an isometric refinement `C:X->Y`, AF-054 gives the unique maximal **safe target envelope**
 
-AF-046--AF-050 add a complementary finite-channel boundary. Law equality has a positive TV collision margin when rows are separated, whereas zero-error support overlap is dense and destroys any positive TV zero-error margin. Distances **to repair** the same zero-error target then depend sharply on the discrepancy: average TV, row-sup TV, forward/reverse KL, and general `f`-divergences induce different exact partition objectives.
+`E_C(S)={y in Y : d(Cx,y) >= dist(x,S) for every x}`
 
-AF-051 adds a representation audit. Quadratic/Brier repair is exact but changes under statistically reversible uniform output cloning. Hence an exact metric projection can still be non-intrinsic if the metric distinguishes presentations that the information category regards as equivalent.
+and proves that enlarging the transported target preserves every source repair radius exactly iff the enlargement stays inside this envelope. A split nonexpansive retraction supplies a descent criterion and a quantitative bound on contraction.
+
+AF-055--AF-057 then classify how much of this geometry is classical and how metric-dependent it is. Singleton linear envelopes are best-coapproximation fibers; finite-dimensional Hilbert set targets reduce to convex-roof/Delaunay radius geometry. But even equivalent finite-dimensional product norms can disagree sharply on whether a finite safe lift exists: for a two-point Euclidean target, the midpoint has a finite vertical lift for product exponent `p<=2` and none for `p>2` or the max metric.
 
 ## What remains possible
 
-The next useful question is to classify distance-to-loss and distance-to-repair formulas for nonlinear operator families, quotient/moduli problems, stochastic channels, and asymptotic completions while requiring invariance under the category's own harmless refinements. Composition is especially important: individually stable stages can approach a downstream kernel and make the composite unstable.
+The live frontier is not another coordinate formula for repair. It is to identify representation categories in which the collision relation, target transport, perturbation metric, and admissible refinements are all intrinsic to the mathematical construction. Non-Hilbert metrics, nonlinear refinements, asymptotic completions, quotient/moduli problems, and arithmetic-specific target constraints remain legitimate because the classical coapproximation/convex-roof reductions no longer settle them automatically.
 
-For arithmetic applications, a representation that distinguishes rational primes only at zero distance from a matched-control collision set is structurally fragile even if every finite instance is injective. Conversely, a positive coordinate distance is not enough when a reversible re-encoding can change that distance. A meaningful robust discriminator should come with a positive, representation-invariant margin in the topology required by the final theorem.
+For arithmetic applications, a discriminator should therefore pass two independent robustness tests: it must lie a positive distance from the matched-control collision set in the topology used downstream, and the structural target whose distance is being measured must descend through every equivalence declared information-preserving. A positive coordinate margin that changes under reversible re-encoding is not yet an intrinsic arithmetic separation.
 
 ## Status / novelty
 
-The underlying closed-range, secant, embedding, perturbation, channel-projection, and Lipschitz-free facts are classical or direct. The persisted Mathia synthesis is the identification of a common stability object — distance to the relevant collision boundary — together with the newer requirement that the failure relation, topology, and information-preserving representation equivalences all be declared before that distance is interpreted.
+The closed-range, secant, embedding, Lipschitz-free, channel-decision, Blackwell, coapproximation, convex-roof, and Delaunay mechanisms are classical or direct. The persisted Mathia synthesis is the joint gate: **robust fidelity is relative to a collision geometry, while robust repair is additionally relative to an equivalence-compatible target family**. AF-054 supplies an exact maximal-envelope theorem for the latter rather than only an example.
 
 ## Falsification criterion
 
-Find a covered category in which the stated lower modulus is positive but arbitrarily small admitted perturbations create the relevant collision, or conversely where the modulus vanishes while a positive perturbation radius remains. For proposed intrinsic repair costs, exhibit a reversible refinement that changes the cost, or prove invariance under the full admitted equivalence class.
+For stability, exhibit a covered category where the stated lower modulus disagrees with distance to admitted collision. For repair, give an isometric/reversible refinement and a target enlargement outside the AF-054 safe envelope that nevertheless preserves every source repair radius, or prove that a proposed arithmetic target and metric are invariant under the full declared equivalence category.
 
 ## Lean-formalizable core
 
 - Range-kernel transversality bounds for composition.
 - Closed-secant characterization of stable linear compression.
-- Distance from a linear map to collision/stable-loss sets.
-- Lipschitz lower modulus as distance to noninjectivity.
+- Distance from a linear/Lipschitz map to collision or stable-loss sets.
 - Finite-channel law-collision versus zero-error-support margins.
+- Maximal safe target envelope under isometric refinement and descent-defect bounds.
+- Hilbert convex-roof/Delaunay description and product-metric threshold examples.

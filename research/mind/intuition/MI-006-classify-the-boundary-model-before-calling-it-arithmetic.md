@@ -1,42 +1,50 @@
-# MI-006 — Classify the boundary model before interpreting an escape as arithmetic
+# MI-006 — Classify the boundary model and its information budget before interpreting an escape as arithmetic
 
-**Evidence level:** supported by independent exact boundary classifications in Prime Circle, Prime Lattice, Prime Flute, Weil Inertia, Weil Positivity, and Arithmetic Fidelity
+**Evidence level:** supported by independent exact boundary classifications across Arithmetic Fidelity, Möbius Cancellation, Prime Circle, Prime Lattice, Prime Flute, Weil Inertia, and Weil Positivity
 
 ## Core intuition
 
-Many surviving Mathia routes appear only after an ordinary category fails: take a singular conductor limit, move to a stronger Schatten norm, truncate a complete periodic model, subtract a universal residue, approach a closing principal angle, or sit arbitrarily near a collision set. The new evidence shows a recurring danger: **the boundary mechanism that revives the signal can itself be universal or classical**. Arithmetic significance begins only after that boundary model is identified and removed or beaten by a matched control.
+Many surviving Mathia routes appear only after an ordinary category fails: refine a representation, add prime-power data, take a singular conductor limit, move to a stronger Schatten norm, truncate a complete periodic model, subtract a relative Selberg background, complete a sparse positive carrier with mixed modes, or sit at a critical regularity threshold. The recurring danger is that **the boundary mechanism that revives the signal can itself be universal, classical, or presentation-generated**. Arithmetic significance begins only after that boundary model and its information budget are identified and beaten by a matched control.
 
 ## Strongest justified principle
 
-Prime Circle is the clearest singular-limit example. The fixed-shell Hardy determinant is too nuclear, so one lets the conductor grow. The canonical strong limit becomes the Hilbert matrix; the microlocal limit becomes the Carleman--Hilbert discretization defect; its compact off-origin residual is again trace class; affine scale changes are unitary dilation; Möbius births repeat radical blocks; and one-new-prime strong limits inflate an old residual by reflection. Crossing the fixed-shell boundary is real, but its canonical limit models are prime-blind.
+Arithmetic Fidelity supplies the abstract representation boundary. AF-052--AF-054 show that an isometric/information-preserving refinement can manufacture nearer target states unless the target transport stays inside the exact safe envelope. AF-057 then shows that even equivalent finite-dimensional norms can have different safe-lift thresholds. Crossing a representation boundary can change the theorem being measured before any arithmetic enters.
 
-Prime Lattice supplies the topology boundary. The normalized growing-depth Gram is universally close in `S_2` for all horizons, while `S_1` can fail. That failure does not reveal primes automatically: finite rank versus prolate time-bandwidth forces a universal Nyquist floor above the critical sampling ratio, and a deterministic midpoint grid realizes trace-norm convergence below it. The boundary between Schatten topologies has its own classical sampling theory.
+Möbius Cancellation supplies two quantitative boundaries. The first missing Möbius/Liouville layer is at prime squares, so both exact convolution and prime-power pretentious transfer have a natural `1/2` threshold. But that threshold merely transmits already available cancellation. Separately, current averaged two-point Chowla information has only logarithmic strength and van der Corput takes a square root; the boundary model is an explicit information budget, not hidden RH cancellation. MC-008 adds a useful distinction: absolute inversion can fail well before analytic zero sensitivity does, so one must classify whether a comparator factor truly masks the target strip rather than infer significance from coefficient growth alone.
 
-Weil Inertia supplies a finite-window boundary. On a complete common period, signed Ramanujan modulus blocks are orthogonal projectors and signs cannot cancel any norm. Every signed cross-modulus gain is created by truncating the period. Pairwise interaction is then controlled by the distance to the nearest LCM period and is often rank-maximal. Any arithmetic gain must therefore be an **excess finite-window interference** beyond this universal truncation geometry.
+Prime Circle is the clearest singular-limit example. The fixed-shell Hardy determinant is too nuclear, so one lets the conductor grow. Canonical strong/microlocal limits become Hilbert/Carleman objects; the one-new-prime corrector becomes operator-infinitesimal with universal quadratic mass and zero-free Gaussian `det_2`. PC-120 shows that divergent real scalar zoom destroys determinant normality rather than exposing a new divisor. PC-121--PC-125 show that the alternative finite-section spectral boundary is equally classical: Toeplitz sections become quasipolynomials, coherent determinants become resultants/zero, pseudodeterminants become finite-band recurrences, CMV returns the primitive roots, and relative-scale resultants have only torsion zeros.
 
-Weil Positivity supplies a singular/coherence boundary. Fixed positive mixtures and finite coherent projection/global couplings have the wrong affine degree scale, while a moving principal angle can manufacture exact logarithmic growth. The moving angle is therefore not a result; it is the new datum that needs an intrinsic geometric derivation and an independent sign theorem.
+Prime Flute supplies a relative-summation boundary whose source is now explicit. PF-159 removes the exact one-ended far-separator response and moves the connected canonical Selberg cocycle from the sharp `1/4` ordinary boundary to a zero-free half-plane `Re s>0`; PF-160 shows that the remaining `s=0` boundary is entirely the bottom Selberg/Ruelle layer plus reciprocal-prime harmonic divergence. A visible convergence threshold is therefore not evidence until its propagation/local-factor content has been removed.
 
-Prime Flute gives two complementary cautions. Constant-curvature local heat/residue data are universal, while subtracting the critical residue leaves a weight-dependent finite part; the real moduli dependence is beyond all local heat orders in nonlocal geodesic/scattering data. Likewise a `det_2` regularization of a Hilbert--Schmidt relative resolvent does not create new zeros. Passing to a boundary/regularization can expose a legitimate relative object without supplying a new selector.
+Prime Lattice supplies both topology and readout boundaries. `S_2` versus `S_1` Gram behavior is governed by deterministic prolate/Nyquist and Poisson controls, while a `log n` Hamiltonian with a freely chosen diagonal probe can reproduce arbitrary Dirichlet polynomials. The boundary between a physical realization and arithmetic selection lies in whether the probe is independently forced.
 
-Arithmetic Fidelity provides the abstract stability analogue. Stable fidelity is positive distance from a collision boundary in the admitted perturbation topology. A representation that distinguishes two sources only by sitting at zero margin on that boundary has not acquired robust information simply because each finite instance remains injective.
+Weil Inertia supplies a finite-window algebraic/metric boundary. The exact scalar alias quotient permits sharp close-prime rank defects, but WI-092--WI-093 show that even positive-density rank loss carries only bounded total canonical overlap. The rank boundary is not the metric cancellation scale.
+
+Weil Positivity supplies an interaction/regularity boundary. Sparse exact critical rays require infinite diagonal mass; mixed-prime completion restores finite positivity. Product completion is singular at the critical exponent, but correlations can restore Haar equivalence, proving that measure class is not the robust obstruction. WP-102 identifies the correlation-robust control: every exact critical completion has infinite standard cylindrical Fisher energy, with a sharp supercritical transition.
 
 ## Consequence for synthesis
 
-For any proposed “escape at the boundary,” first compute the **boundary control model**: the limit operator, rank floor, truncated-period interaction, collision closure, residue anomaly, or singular scale that arises without source-specific arithmetic. Only the residual beyond that model is eligible for a novelty or RH-relevance claim.
+For any proposed “escape at the boundary,” compute three objects before assigning arithmetic significance:
 
-This is stronger than asking whether a construction is noncompact, singular, or nonlocal. Those properties may be exactly what creates a universal control channel. A positive result should identify a source-specific residual that survives the strongest boundary-matched control and then prove the analytic/sign theorem in the same category.
+1. the **boundary control model** — limit operator, alias quotient, one-ended response, local product layer, safe target envelope, mixed-mode completion, or regularity threshold that appears without source-specific arithmetic;
+2. the **information budget** — which source distinctions, target semantics, moments, correlations, or operator values survive that boundary operation and at what quantitative strength;
+3. the **matched residual** — the first invariant left after a non-arithmetic/control construction reproduces the same boundary model in the same category.
+
+Only that residual is eligible for a novelty or RH-relevance claim. Noncompactness, singularity, stronger-norm failure, zero-free relative continuation, a new regularized object, physical zero readout, or strong local cancellation can all be mathematically genuine while still belonging to the boundary control.
 
 ## Status / novelty
 
-The individual Hilbert/Carleman, prolate, Ramanujan, heat-kernel, projection, and stability statements are persisted exact findings with classical ingredients. The boundary-model rule is supported cross-line synthesis, not a theorem that every singular or limiting construction classicalizes.
+The individual Hilbert/Carleman, Toeplitz/CMV, prolate/Poisson, Ramanujan, Selberg/Ruelle, safe-envelope, convolution, product-measure, and Fisher statements are persisted exact findings with classical ingredients. The boundary-model/information-budget rule is supported cross-line synthesis, not a theorem that every singular or limiting construction classicalizes.
 
 ## Falsification criterion
 
-Produce a canonical boundary transition in one of the audited families whose leading boundary model is intrinsically source-specific and survives a matched non-arithmetic control, or show that subtracting the identified universal boundary model destroys a genuinely source-specific invariant that was present only in the full object. Either outcome would sharpen the rule.
+Produce a canonical boundary transition whose leading model is intrinsically source-specific and survives a matched non-arithmetic control, or show that subtracting an identified boundary control destroys a genuinely source-specific invariant present only in the full object. Either outcome would sharpen the rule.
 
 ## Lean-formalizable core
 
-- Distance to collision closure.
-- Rank-constrained trace-distance floor.
-- Complete-period Ramanujan orthogonality and boundary-rank truncation.
-- Unitary dilation/radical repetition identities.
+- Safe-envelope criterion under isometric refinement.
+- Square-convolution and correlation-budget thresholds.
+- Unitary/finite-state boundary reductions.
+- One-ended Selberg factorization and bottom-layer split.
+- Complete-period/finite-window Ramanujan overlap bounds.
+- Coordinate-moment Fisher lower bound.

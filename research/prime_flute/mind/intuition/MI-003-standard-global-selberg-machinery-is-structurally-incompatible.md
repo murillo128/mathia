@@ -1,54 +1,43 @@
-# MI-003 — Absolute Selberg theory fails, and relative theory must beat asymptotically affine composite clones
+# MI-003 — Absolute Selberg theory fails, and the canonical relative boundaries decompose into universal propagation layers
 
-**Evidence level:** proved for the stated obstructions; supported for the surviving relative-program constraint
+**Evidence level:** proved for the stated absolute and canonical-relative obstructions; supported for the surviving nonlocal relative-program constraint
 
 ## Core intuition
 
-The prime flute is structurally outside the standard absolute Selberg/Ruelle/Fredholm regime, but this no longer leaves “some relative theory” as a sufficiently discriminating target. The strongest exact controls now preserve the projective gap process and approximate the **entire sampled exact tail** by an all-composite flute with summable endpoint displacement. Any future relative invariant must therefore survive both the universal noncompact background and this much tighter arithmetic control.
+The prime flute is structurally outside the standard absolute Selberg/Ruelle/Fredholm regime, but the strongest canonical relative constructions no longer leave an unexplained critical boundary. After matching against the all-composite shift clone, the natural separator cocycles are zero-free through the Riemann half-plane, and their apparent convergence thresholds can be factored into **one-ended geometric propagation** and the standard bottom Selberg/Ruelle layer rather than collective prime-tail dynamics.
+
+This sharpens the matched-control principle. A future spectral mechanism must survive not only the universal noncompact background and asymptotically affine composite clone, but also exact subtraction of the one-ended response and the local-product layer that currently create the visible `1/4` and `0` boundaries.
 
 ## Strongest justified impossibility principle
 
-For the ordinary `L^2` Laplacian, the absolute obstruction remains decisive: primitive lengths accumulate at zero and on positive compact intervals, recurrent finite tangents implant sub-quarter essential spectrum, and the pencil
+For the ordinary `L^2` Laplacian, the absolute obstruction remains decisive: primitive lengths accumulate at zero and on positive compact intervals, recurrent finite tangents implant sub-quarter essential spectrum, and the pencil `Delta-s(1-s)` is non-Fredholm at infinitely many points tending to `s=1`. Standard absolute Selberg/Ruelle products and near-one meromorphic-Fredholm theory are therefore the wrong category for this surface.
 
-\[
-\Delta-s(1-s)
-\]
+The all-composite controls constrain the relative branch at several levels. PF-104 shows that off-prime analytic interpolation data are not intrinsic surface data. PF-105--PF-106 give exact all-composite dilation and shift clones whose tail cross-ratios, separators, and endpoint matching approach the prime flute with summable defects. Thus projective tangents, finite jets, interpolation choices, and asymptotically affine marked tail data cannot by themselves certify prime specificity.
 
-is non-Fredholm at infinitely many points tending to `s=1`. Standard absolute Selberg/Ruelle products and near-one meromorphic-Fredholm theory are therefore the wrong category for this surface.
+PF-156--PF-158 then test canonical Selberg sectors directly. Repeated packets over every source-Margulis-short primitive family have an absolutely summable prime/shift difference and a zero-free normalized relative Selberg factor on `Re s>0`. Extending to the complete canonical consecutive-block separator family gives a natural ordinary-convergence boundary at `Re s=1/4`, but its matched normalized cocycle is zero-free throughout `Re s>1/4`.
 
-The relative branch is constrained at several additional levels.
+PF-159 identifies the source of that quarter boundary exactly. For each fixed left exterior gap, subtract the exact far-right one-ended cross-ratio response forced by the endpoint defect. The connected remainder then converges locally normally and defines a zero-free normalized factor on the whole half-plane `Re s>0`. The removed one-ended term alone has sharp abscissa `1/4`. The quarter line is therefore long-channel propagation of one exterior mismatch, not a collective prime-tail resonance.
 
-- PF-088 and PF-102 show that the selected `Re s=1/4` boundaries can be produced by one-dimensional propagation and even by a single compact endpoint defect.
-- PF-103 shows that completing the selected primitive-orbit sector to include arbitrary cusp windings restores the universal parabolic threshold `Re s=1/2`.
-- PF-104 shows that differential or analytic information of the continuous interpolation `x -> cot(pi/x)` away from the sampled endpoints is not intrinsic surface data.
-- PF-105 gives an all-composite dilation clone with uniformly vanishing full-tail cross-ratio/separator distortion.
-- PF-106 strengthens this to the affine clone `q_n=p_n+1`: after the canonical Möbius translation, its sampled endpoint displacement from the exact prime flute is `ell^1`, every all-span tail cross-ratio distortion is `O(P^-3)`, and the natural piecewise-affine boundary matching has `L^1` derivative defect with tail mass tending to zero.
-
-Thus a candidate that depends continuously only on projective tangents, finite endpoint jets, off-prime interpolation, or an asymptotically affine/summable marked deformation cannot claim prime specificity.
+PF-160 classifies the next boundary. The connected term has a sharp ordinary-summation obstruction at `s=0` because the fixed-left length defect is asymptotic to `const/c`; after the removable local singularity is taken out, the bottom `m=0` Selberg/Ruelle factor produces a positive reciprocal-prime harmonic tail. Every higher Selberg layer is already holomorphic across `s=0`. Thus even the connected zero boundary is carried by a standard local-product layer plus classical prime harmonic divergence, not by an RH-scale zero selector.
 
 ## The surviving operator question
 
-PF-106 deliberately stops before the decisive analytic bridge. The piecewise-affine boundary matching is not yet a group-equivariant quasiconformal comparison of the quotient surfaces, and no theorem has been proved that the corresponding resolvent, heat, or scattering difference is compact or lies in a Schatten class.
+The exact endpoint closeness still does **not** prove that the two full Laplacians are related by a compact/Schatten resolvent perturbation. The global assembly problem remains genuine. If the all-composite affine clone is operator-theoretically perturbative relative to the prime flute, any surviving arithmetic distinction is confined to a relative spectral-shift/scattering or resonance value beyond the canonical separator sectors. If it is not perturbative despite summable geometric defects, the failure itself would identify a nonlocal amplification mechanism.
 
-This is now the sharp boundary. If the all-composite affine clone is operator-theoretically perturbative relative to the prime flute, then any surviving global spectral distinction is confined to an even smaller relative spectral-shift/scattering sector and cannot be read from the tail geometry alone. If it is **not** perturbative despite `ell^1` endpoint closeness, the obstruction itself would identify a genuinely nonlocal amplification mechanism worth understanding.
-
-## Evidence against overgeneralization
-
-The composite-clone estimates do not imply isometry, isospectrality, compact resolvent difference, or equality of scattering data. Nor do they erase the finite resolved multi-gap memory of MI-001: that mechanism is a local marked statement before the prime/composite global comparison is imposed.
-
-Likewise, relative constructions remain legitimate when their reference is forced by the geometry and shares the same essential/orbit pathology. What is no longer legitimate is treating a convenient analytic threshold, a cotangent jet, or a weakly matched smooth background as arithmetic evidence.
+Likewise, PF-159--PF-160 do not prove meromorphic continuation through `s=0` for a full Selberg object. They show only that ordinary canonical separator summation has identifiable one-ended and bottom-layer obstructions. A separately forced regularization or continuation remains logically possible, but its residual must be shown to contain source-specific information after those layers are removed.
 
 ## Status / novelty
 
-The absolute spectral obstructions and the endpoint-control estimates are rigorous findings. The conclusion that future relative theory must be tested against the affine all-composite clone is a supported synthesis, not a theorem that all such relative objects coincide.
+The absolute spectral obstructions, endpoint controls, and canonical separator decompositions are rigorous findings. The local Selberg/Ruelle product identities and reciprocal-prime divergence are classical mechanisms. The persisted synthesis is that the visible relative boundaries are now **explained controls**, so a surviving prime-flute mechanism must live in genuinely nonlocal operator assembly, noncanonical primitive-word coupling, or a continued relative value not generated by those controls.
 
 ## Falsification criterion
 
-Refute the synthesis by producing an intrinsic prime-flute spectral invariant that is continuous under the PF-106 marked asymptotically affine comparison yet distinguishes the prime and all-composite flutes for a reason not supplied by external labels; or by disproving one of the exact endpoint/cross-ratio estimates used by the control.
+Produce an intrinsic prime-flute relative invariant within the PF-156--PF-160 canonical separator setup whose nonzero divisor or RH-relevant value survives the exact all-composite subtraction and cannot be decomposed into the one-ended and bottom-layer controls; or complete the global prime/clone Laplacian comparison and show a source-specific relative value beyond them.
 
 ## Lean-formalizable core
 
 - Essential-spectrum implies non-Fredholmness of `Delta-lambda`.
-- `p`-series thresholds underlying the universal `1/4` and cusp-winding `1/2` examples.
-- Summability of the normalized endpoint displacement for `p -> p+1`.
-- Uniform propagation of secant-ratio bounds to cross-ratios and separating lengths.
+- Summability of normalized endpoint displacement under `p -> p+1`.
+- Exact one-ended cross-ratio factorization.
+- Shift identity separating the bottom Selberg/Ruelle layer.
+- Harmonic-prime divergence of the connected `s=0` ordinary sum.
