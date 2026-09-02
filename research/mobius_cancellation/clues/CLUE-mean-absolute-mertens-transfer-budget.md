@@ -16,6 +16,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-015-qualitative-chowla-excursion-square-obstruction.md
   - research/mobius_cancellation/findings/MC-016-random-walk-excursion-overconstraint-path-energy.md
   - research/mobius_cancellation/findings/MC-017-boundary-cancelled-fourier-path-energy.md
+  - research/mobius_cancellation/findings/MC-018-anchor-free-local-filter-zero-frequency-obstruction.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
@@ -42,7 +43,7 @@ A positive result would move the missing quantitative bridge to an endpoint pote
 
 ## Decisive test
 
-Fix an explicit source-natural local or multiscale statistic and prove one of two outcomes: derive a source-compatible inequality from a polynomial-strength hypothesis on that statistic to RH-scale `D_M(X)`, with every exceptional-set, scale-transition, and correlation-range loss explicit; or construct a source-compatible matched control satisfying the proposed local hypothesis while its mean-absolute summatory function retains an exponent strictly above `1/2`.
+Fix an explicit source-natural local or multiscale statistic and prove one of two outcomes: derive a source-compatible inequality from a polynomial-strength hypothesis on that statistic to RH-scale `D_M(X)`, with every exceptional-set, scale-transition, correlation-range, and coarse-mode loss explicit; or construct a source-compatible matched control satisfying the proposed local hypothesis while its mean-absolute summatory function retains an exponent strictly above `1/2`.
 
 ## Evidence boundary
 
@@ -62,10 +63,12 @@ The active residual became amplitude-sensitive through the quadratic path energy
 
 with the exact transfer `D_M(N)^2 <= V_M(N)/N` and the signed correlation identity recorded in `MC-016`. The support-matched independent-sign model has `E V_a(N) ~ (3/pi^2)N^2` and almost surely `V_a(N) <<_epsilon N^(2+epsilon)`, so this carrier has the expected diffusive polynomial scale while retaining amplitude.
 
-`MC-017` now identifies the same carrier exactly in frequency space:
+`MC-017` identifies the same carrier exactly in frequency space:
 
 `V_a(N) = int_0^1 |F_N(t)-A(N-1)e(Nt)|^2 / |1-e(t)|^2 dt`.
 
 This kills ordinary global Fourier `L^2` as a possible missing datum: actual Möbius, the all-positive square-free indicator, and every exact-support sign assignment all have the identical unweighted Parseval mass `sum_{n<N} mu(n)^2`, while the all-positive control has cubic path energy and the independent-sign control has quadratic expected path energy. The unresolved information therefore lives in **boundary-cancelled low-frequency phase organization with the inverse summation multiplier retained**, not in total Fourier energy.
 
-The next decisive test is correspondingly sharper: prove diffusive-scale `L^2` control for the boundary-cancelled Möbius polynomial across the inverse-square low-frequency dyadic hierarchy, including the critical `1/N` core, from a genuinely arithmetic signed/multiplicative theorem that is not already RH-equivalent; or construct a multiplicative exact-support comparator satisfying the proposed local Fourier inputs while its weighted energy remains superquadratic. The clue remains accepted rather than resolved because neither outcome is currently established.
+`MC-018` now rules out a broad local-linear repair of that Fourier target. For every finite translation-invariant filter of the partial-sum process, eliminating dependence on the unknown local anchor forces the coefficients to sum to zero, hence forces a `(z-1)` factor. That factor cancels the inverse-summation multiplier from `MC-017`. After normalizing the filter coefficient mass, a support radius `R` has only `O(R)` gain on the increment polynomial at the critical `1/N` frequency, versus the `O(N)` gain of the primitive. Thus a genuinely local `R=o(N)` filter pays an explicit `R/N` low-frequency deficit even when signs are retained. The exact boundary-cancelled sliding-window identity in `MC-018` also shows why Gallagher/Selberg-style short-window control does not remove this burden: the boundary terms reintroduce the path-energy target itself.
+
+The next decisive test is therefore no longer to swap in another finite zero-mean local linear statistic. It is to exhibit and control an **escape from the coarse-mode obstruction**: a multiscale decomposition with an independently bounded scaling/coarse coefficient, a nonlinear or multiplicative identity that reconstructs the critical low-frequency mode from source-natural arithmetic information, or a global-scale statistic whose conditioning is explicitly paid. A matched multiplicative exact-support comparator with the proposed local/coarse inputs but superquadratic path energy would kill the chosen escape. The clue remains accepted rather than resolved because no such arithmetic coarse-mode control is currently established.
