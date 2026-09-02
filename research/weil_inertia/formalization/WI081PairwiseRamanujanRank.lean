@@ -151,7 +151,7 @@ private lemma crossGram_eq_remainder {m n N : ℕ} (hm : 0 < m) (hn : 0 < n)
   rw [crossGram_apply hm, crossGram_apply hm]
   exact geometric_sum_remainder hm hn hmn z w
 
-private lemma crossGram_eq_short_boundary {m n N : ℕ} (hm : 0 < m) (hn : 0 < n)
+lemma crossGram_eq_short_boundary {m n N : ℕ} (hm : 0 < m) (hn : 0 < n)
     (hmn : m ≠ n) :
     let ell := Nat.lcm m n
     let r := N % ell
@@ -191,11 +191,11 @@ private lemma crossGram_eq_short_boundary {m n N : ℕ} (hm : 0 < m) (hn : 0 < n
     simp only [neg_smul, one_smul]
     exact (eq_neg_iff_add_eq_zero).2 hzero
 
-private lemma primitiveFrequency_card (m : ℕ) :
+lemma primitiveFrequency_card (m : ℕ) :
     Fintype.card (PrimitiveFrequency m) = Nat.totient m := by
   rw [Fintype.card_coe, Complex.card_primitiveRoots]
 
-private lemma shiftedSamplingMatrix_rows_linearIndependent {m d start : ℕ}
+lemma shiftedSamplingMatrix_rows_linearIndependent {m d start : ℕ}
     (hm : 0 < m) (hd : d ≤ Nat.totient m) :
     LinearIndependent ℂ (shiftedSamplingMatrix m d start).row := by
   classical
