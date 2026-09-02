@@ -2,11 +2,9 @@
 
 **Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE + CORRELATION-ROBUST + SHARP-THRESHOLD + MATCHED-CONTROL + PRIOR-ART-CLASSICALIZATION`.
 
-`WP-096`--`WP-101` leave a narrow but important question open. Exact cover covariance turns every finite positive scalar completion into a positive measure on the infinite prime torus. At the critical attenuation, `WP-097` gives such a completion by paying with mixed-prime moments, and `WP-101` shows that arbitrary correlations can even restore equivalence to product Haar at the sharp total mass. Thus neither product singularity nor absolute continuity is itself a correlation-robust obstruction.
+`WP-096`--`WP-101` leave a narrow but important escape. Exact cover covariance turns every finite positive scalar completion into a positive measure on the infinite prime torus. `WP-097` pays for the exact one-prime Weil rays with mixed-prime moments, and `WP-101` shows that arbitrary correlations can even restore equivalence to product Haar at the sharp total mass. Thus neither product singularity nor absolute continuity is a correlation-robust obstruction.
 
-There is, however, a stronger obstruction for the most canonical first-order positive geometry of a torus density: **spatial Fisher/Dirichlet energy**. It is independent of the mixed-prime correlations.
-
-Let
+The standard first-order positive geometry of such a state has a stronger obstruction. Let
 
 \[
 \mathbb T^{\mathcal P}=\prod_p\mathbb T,
@@ -14,7 +12,7 @@ Let
 m=\bigotimes_p m_p,
 \]
 
-and let `mu_sigma` be any finite positive measure of mass `C>0` whose one-prime moments are the exact cover/Weil rays
+and let `mu_sigma` be any finite positive measure of mass `C>0` with the exact one-prime moments
 
 \[
 \boxed{
@@ -25,24 +23,23 @@ and let `mu_sigma` be any finite positive measure of mass `C>0` whose one-prime 
 \tag{1}
 \]
 
-No assumption is made on any mixed-prime Fourier coefficient. For a finite prime set `P`, normalize the marginal
+No condition is imposed on mixed-prime Fourier coefficients. For a finite prime set `P`, let
 
 \[
 \nu_P:=\frac1C(\pi_P)_*\mu_\sigma
 \tag{2}
 \]
 
-and define its extended spatial Fisher energy by
+be the normalized marginal. Define its extended spatial Fisher energy by
 
 \[
 \mathcal I_P(\nu_P)
-:=
-4\sum_{p\in P}
+:=4\sum_{p\in P}
 \left\|\partial_p\sqrt{h_P}\right\|_{L^2(m_P)}^2
 \tag{3}
 \]
 
-when `nu_P=h_P m_P` and `sqrt(h_P)` has the indicated weak derivatives, and set `I_P=+infinity` otherwise. Define the cylindrical energy
+when `nu_P=h_P m_P` and `sqrt(h_P)` has the indicated weak derivatives; otherwise set `I_P=+infinity`. Define
 
 \[
 \mathcal I_{\rm cyl}(\mu_\sigma)
@@ -50,57 +47,56 @@ when `nu_P=h_P m_P` and `sqrt(h_P)` has the indicated weak derivatives, and set 
 \tag{4}
 \]
 
-Then every finite cylinder obeys the exact lower bound
+Then every finite cylinder satisfies
 
 \[
 \boxed{
 \mathcal I_P(\nu_P)
 \ge
-\frac1{C^2}
-\sum_{p\in P}
+\frac1{C^2}\sum_{p\in P}
 \frac{(\log p)^2}{p^{2\sigma}}.
 }
 \tag{5}
 \]
 
-Consequently
+Hence
 
 \[
 \boxed{
 \mathcal I_{\rm cyl}(\mu_\sigma)=+\infty
-\qquad\text{for every }\sigma\le\frac12.
+\qquad(\sigma\le1/2).
 }
 \tag{6}
 \]
 
-In particular, at the Weil exponent
+In particular, every exact critical completion has
 
 \[
 \boxed{
-\mathcal I_{\rm cyl}(\mu_{1/2})=+\infty
+\mathcal I_{\rm cyl}(\mu_{1/2})=+\infty,
 }
 \tag{7}
 \]
 
-for **every** positive prime-torus completion carrying the exact one-prime rays, whether its mixed moments are independent, correlated, Haar-equivalent, Haar-singular, or chosen by some other positive extension. Correlations can repair the measure-class obstruction of `WP-100`, as `WP-101` demonstrates, but they cannot repair finite product-coordinate Fisher geometry.
+whether its mixed moments are independent, correlated, Haar-equivalent, Haar-singular, or chosen by some other positive extension. Correlations can repair the measure-class obstruction of `WP-100`, as `WP-101` demonstrates, but they cannot repair finite product-coordinate Fisher geometry.
 
-The threshold is sharp for this architecture. For `sigma>1/2`, the mixed-prime product completion used in `WP-097`/`WP-100` has finite cylindrical spatial Fisher energy. Thus (6) is not a generic pathology of infinite products: it occurs exactly at the same square-summability boundary forced by the critical Weil first moments.
+The threshold is sharp for this architecture: for `sigma>1/2`, the mixed-prime product completion underlying `WP-097`/`WP-100` has finite cylindrical spatial Fisher energy.
 
-This does **not** prove Weil positivity. It is a negative result about a natural positive geometry on the exact-cover completion space. It closes the route
+This does **not** prove Weil positivity. It closes only the route
 
 ```text
 exact cover covariance
     -> positive prime-torus completion
-    -> allow arbitrary mixed-prime correlations
-    -> canonical finite spatial Fisher / square-root Dirichlet geometry
+    -> arbitrary mixed-prime correlations allowed
+    -> finite spatial Fisher / square-root Dirichlet geometry
     -> use its independent positivity as the Weil sign source
 ```
 
-at the critical exponent. Any rescue within a first-order torus geometry must make the prime-coordinate metric asymptotically degenerate, use a genuinely nonlocal/non-product direction, quotient away infinitely much coordinate energy, or couple the finite and archimedean sectors before the scalar prime-torus state is formed. None of those structures is supplied by the present completion itself.
+at the critical exponent. A rescue must alter the geometry itself: for example through asymptotically degenerate coordinate weights, a genuinely nonlocal direction, an infinite-dimensional quotient, or finite--archimedean coupling before the scalar prime-torus state is formed.
 
 ## 1. One coordinate moment already costs Fisher energy
 
-Fix a finite prime set `P`. If `I_P=+infinity`, (5) is automatic, so assume
+Fix a finite prime set `P`. If `I_P=+infinity`, (5) is automatic. Otherwise write
 
 \[
 \nu_P=h_Pm_P,
@@ -111,27 +107,27 @@ u:=\sqrt{h_P}\in H^1(\mathbb T^P).
 \tag{8}
 \]
 
-For `p in P`, write
+To avoid confusing the measure `nu_P` with the square-root amplitude, rename the latter immediately as
 
 \[
-z_p(\theta)=e^{i\theta_p}.
-\]
-
-The normalized first moment inherited from (1) is
-
-\[
-a_p
-:=
-\int_{\mathbb T^P}\overline{z_p}\,h_P\,dm_P
-=-\frac{\log p}{C p^\sigma}.
+u:=\sqrt{h_P}.
 \tag{9}
 \]
 
-Because `h_P=u^2` with `u in H^1`, its weak derivative is
+For `p in P`, put `z_p(theta)=e^{i theta_p}`. The normalized first moment inherited from (1) is
+
+\[
+a_p
+:=\int_{\mathbb T^P}\overline{z_p}\,h_P\,dm_P
+=-\frac{\log p}{C p^\sigma}.
+\tag{10}
+\]
+
+Since `h_P=u^2` with `u in H^1`, its weak derivative satisfies
 
 \[
 \partial_p h_P=2u\,\partial_pu\in L^1.
-\tag{10}
+\tag{11}
 \]
 
 Periodic integration by parts against the smooth character gives
@@ -140,75 +136,58 @@ Periodic integration by parts against the smooth character gives
 \int (\partial_p h_P)\overline{z_p}\,dm_P
 =i\int h_P\overline{z_p}\,dm_P
 =i a_p.
-\tag{11}
+\tag{12}
 \]
 
 Therefore
 
 \[
 |a_p|
-=
-2\left|\int u\,\partial_pu\,\overline{z_p}\,dm_P\right|
-\le
-2\|u\|_2\|\partial_pu\|_2
-=
-2\|\partial_pu\|_2,
-\tag{12}
-\]
-
-since `||u||_2^2=int h_P dm_P=1`. Squaring,
-
-\[
-\boxed{
-|a_p|^2
-\le
-4\|\partial_p\sqrt{h_P}\|_2^2.
-}
+=2\left|\int u\,\partial_pu\,\overline{z_p}\,dm_P\right|
+\le2\|u\|_2\|\partial_pu\|_2
+=2\|\partial_pu\|_2,
 \tag{13}
 \]
 
-Summing (13) over `p in P` proves
+because `||u||_2^2=int h_P dm_P=1`. Thus
 
 \[
-\sum_{p\in P}|a_p|^2
-\le
-\mathcal I_P(\nu_P),
+\boxed{
+|a_p|^2\le4\|\partial_p\sqrt{h_P}\|_2^2.
+}
 \tag{14}
 \]
 
-and substituting (9) gives (5).
+Summing (14) over `p in P` and inserting (10) proves (5).
 
-For a strictly positive smooth density, (3) is the ordinary Fisher information for the independent translation parameters of the torus:
+For a strictly positive smooth density, the right-hand side of (3) is the ordinary Fisher information of the independent translation parameters:
 
 \[
 4\|\partial_p\sqrt h\|_2^2
-=
-\int |\partial_p\log h|^2 h\,dm.
+=\int |\partial_p\log h|^2h\,dm.
 \tag{15}
 \]
 
-The square-root formulation is preferable here because it remains meaningful at zeros of the density and extends directly by Sobolev closure. Equation (13) is simply the score/Cauchy--Schwarz or Cramér--Rao mechanism written in compact-group coordinates.
+The square-root formulation is useful because it still makes sense at zeros of the density and extends by Sobolev closure. Equation (14) is the compact-circle score/Cauchy--Schwarz mechanism in its simplest form.
 
-## 2. The critical prime rays force infinite cylindrical energy
+## 2. Critical Weil rays force infinite cylindrical energy
 
-At `sigma=1/2`, (5) becomes
+At `sigma=1/2`, (5) is
 
 \[
 \mathcal I_P(\nu_P)
-\ge
-\frac1{C^2}
-\sum_{p\in P}\frac{(\log p)^2}{p}.
+\ge\frac1{C^2}\sum_{p\in P}\frac{(\log p)^2}{p}.
 \tag{16}
 \]
 
-Euler's divergence of `sum_p 1/p` already implies
+Euler's divergence of `sum_p 1/p` implies
 
 \[
 \sum_p\frac{(\log p)^2}{p}=+\infty,
 \tag{17}
 \]
 
-since `(log p)^2` is bounded below away from zero for all sufficiently large primes. Taking an increasing exhaustion by finite prime sets in (16) therefore proves (7).
+because `(log p)^2` is bounded below away from zero for all sufficiently large primes. Exhausting the primes in (16) proves (7).
 
 More generally,
 
@@ -221,223 +200,172 @@ More generally,
 \tag{18}
 \]
 
-The convergent half follows by comparison with
+The convergent half follows by comparison with `sum_{n>=2}(log n)^2 n^{-2 sigma}`; the boundary is (17), and smaller `sigma` only enlarges the tail. This proves (6).
 
-\[
-\sum_{n\ge2}(\log n)^2n^{-2\sigma},
-\]
-
-and the boundary divergence follows from (17); smaller `sigma` only enlarges the tail. This proves the exact threshold in (6).
-
-The argument uses only the **first** prime-coordinate moment. It does not inspect, factor, or constrain any coefficient supported on two or more distinct primes. Consequently mixed-prime correlations cannot cancel the lower bound.
+Only the **first** coordinate moment is used. No mixed-prime coefficient enters the estimate, so correlations cannot cancel the lower bound.
 
 ## 3. Global singularity is not an escape
 
-A possible response to `WP-101` is to abandon absolute continuity and use a Haar-singular positive completion. Definition (4) deliberately tests that escape at the level relevant to local first-order geometry.
+A globally singular measure on an infinite product can still have smooth finite-dimensional marginals; `WP-100` is a direct warning not to identify global singularity with bad finite cylinders. Definition (4) therefore tests finite marginals rather than assuming a global density.
 
-A globally singular measure on an infinite product can still have smooth finite-dimensional marginals; `WP-100` supplies exactly this kind of warning through Kakutani product singularity. The present obstruction does not infer infinite Fisher information merely from global singularity. Instead it examines every finite marginal separately.
+For each finite `P`, either the marginal has no square-root `H^1` density, giving `I_P=+infinity` immediately, or (5) applies. In the second case the lower bounds accumulate as `P` grows. Hence even a globally singular completion with regular finite marginals satisfies (7).
 
-For each finite `P`, either:
+This is stronger in a different direction from `WP-101`. `WP-101` proves that every **globally absolutely continuous** critical completion lies outside `L(log L)^{1/2}`. `WP-102` says that **all** positive completions, including globally singular ones, fail the finite cylindrical Fisher test. No global density is assumed.
 
-1. the normalized marginal fails to have a square-root `H^1` density, in which case `I_P=+infinity` by definition; or
-2. it has such a density, in which case (5) applies.
+## 4. The boundary is sharp above one half
 
-As `P` exhausts the primes, the second alternative accumulates the divergent lower bound (17). Therefore even a globally singular completion with perfectly regular finite cylinders has
-
-\[
-\mathcal I_{\rm cyl}=+\infty.
-\tag{19}
-\]
-
-This is stronger in a different direction from `WP-101`. That finding proves that every **absolutely continuous global** critical completion lies below the `L(log L)^{1/2}` endpoint. The present finding says that **all positive completions**, including singular ones, fail the finite cylindrical Fisher test. It does not require a global density at all.
-
-## 4. The boundary is sharp: the supercritical product completion has finite Fisher trace
-
-The lower bound would be less informative if every infinite prime-torus completion had infinite spatial Fisher trace. The explicit mixed-prime product state from `WP-097`/`WP-100` gives a matched supercritical control.
-
-For
+The explicit mixed-prime product state from `WP-097`/`WP-100` supplies a matched supercritical control. Let
 
 \[
 r_p=p^{-\sigma},
 \qquad
 P_{r_p}(\theta)=\frac{1-r_p^2}{1-2r_p\cos\theta+r_p^2},
-\tag{20}
+\tag{19}
 \]
 
-consider the one-prime factor
+and
 
 \[
 \rho_{p,C,\sigma}(\theta)
-=
-1+\frac{\log p}{C}\bigl(1-P_{r_p}(\theta)\bigr).
-\tag{21}
+=1+\frac{\log p}{C}\bigl(1-P_{r_p}(\theta)\bigr).
+\tag{20}
 \]
 
-For `C=C_*` from `WP-097`, all these factors are nonnegative at `sigma=1/2`; for every `sigma>1/2` they are strictly positive, because decreasing `r_p` weakens the local positivity constraint. Their product has the required first moments and the mixed coefficients that pay for positivity.
+For `C=C_*` from `WP-097`, these factors are nonnegative at `sigma=1/2`; for every `sigma>1/2` they are strictly positive because decreasing `r_p` weakens the local positivity constraint. The corresponding product has the exact first moments and the mixed moments that pay for positivity.
 
-The local spatial Fisher contribution is
+Its one-coordinate Fisher contribution is
 
 \[
 J_{p,\sigma}
-=
-\int_{\mathbb T}
-\frac{|\rho'_{p,C,\sigma}|^2}
-{\rho_{p,C,\sigma}}\,dm.
-\tag{22}
+=\int_{\mathbb T}
+\frac{|\rho'_{p,C,\sigma}|^2}{\rho_{p,C,\sigma}}\,dm.
+\tag{21}
 \]
 
-For all sufficiently large `p`, `rho_{p,C,sigma}` is uniformly bounded below, while
+For all sufficiently large `p`, the factors are uniformly bounded below and
 
 \[
 \rho'_{p,C,\sigma}
 =-\frac{\log p}{C}P'_{r_p}.
-\tag{23}
+\tag{22}
 \]
 
-The Poisson Fourier series gives exactly
+The Poisson Fourier series gives
 
 \[
 \|P_r'\|_2^2
 =2\sum_{k\ge1}k^2r^{2k}
-=
-\frac{2r^2(1+r^2)}{(1-r^2)^3}.
-\tag{24}
+=\frac{2r^2(1+r^2)}{(1-r^2)^3}.
+\tag{23}
 \]
 
-Hence
+Therefore
 
 \[
 J_{p,\sigma}
-=O_C\!\left((\log p)^2p^{-2\sigma}\right)
-\qquad(p\to\infty).
-\tag{25}
+=O_C\!\left((\log p)^2p^{-2\sigma}\right).
+\tag{24}
 \]
 
-For `sigma>1/2`, (18) makes `sum_p J_{p,sigma}` finite; the finitely many small-prime factors are smooth and strictly positive and contribute only a finite amount. Thus the product completion has
+Equation (18) makes `sum_p J_{p,sigma}` finite for `sigma>1/2`; the finitely many small-prime factors contribute finitely. Thus
 
 \[
 \mathcal I_{\rm cyl}<\infty
-\qquad(\sigma>1/2).
-\tag{26}
+\qquad(\sigma>1/2)
+\tag{25}
 \]
 
-At `sigma=1/2`, individual local factors can still have finite Fisher energy — even the saturated dyadic factor has only a quadratic zero, so its square root has finite one-dimensional Dirichlet energy. The divergence is genuinely the accumulated all-prime tail, not a single bad coordinate.
+for this explicit completion.
 
-Therefore the Fisher transition is exactly the same critical square-summability boundary as the first moments themselves:
+At `sigma=1/2`, an individual saturated factor can still have finite Fisher energy: the dyadic factor has only a quadratic zero, so its square root has finite one-dimensional Dirichlet energy. The obstruction is the accumulated all-prime tail, not one bad coordinate.
 
-```text
-sigma > 1/2:
-    exact mixed-prime positive completion
-    + finite cylindrical spatial Fisher geometry is possible
+## 5. Uniformly coercive first-order metrics inherit the obstruction
 
-sigma = 1/2:
-    exact positive completion is still possible
-    but every such completion has infinite cylindrical Fisher geometry
-```
-
-## 5. Uniformly coercive first-order metrics do not repair the divergence
-
-Equation (5) is not tied to one numerical normalization of the product metric. Let a weighted coordinate energy on a finite cylinder be
+For weights `lambda_p>0`, define
 
 \[
 \mathcal E_{P,\lambda}(h)
-=
-4\sum_{p\in P}\lambda_p
-\|\partial_p\sqrt h\|_2^2,
-\qquad \lambda_p>0.
-\tag{27}
+=4\sum_{p\in P}\lambda_p
+\|\partial_p\sqrt h\|_2^2.
+\tag{26}
 \]
 
-Then the same proof gives
+The same argument gives
 
 \[
 \boxed{
 \mathcal E_{P,\lambda}(h_P)
-\ge
-\frac1{C^2}
-\sum_{p\in P}\lambda_p
+\ge\frac1{C^2}\sum_{p\in P}\lambda_p
 \frac{(\log p)^2}{p^{2\sigma}}.
 }
-\tag{28}
+\tag{27}
 \]
 
-At the critical exponent, any weighting with `inf_p lambda_p>0` therefore still diverges. More generally, finite energy requires at least
+At the critical exponent any weighting with `inf_p lambda_p>0` still diverges. More generally, finite critical energy requires at least
 
 \[
 \sum_p\lambda_p\frac{(\log p)^2}{p}<\infty.
-\tag{29}
+\tag{28}
 \]
 
-Likewise, a positive quadratic form in the score vector whose metric matrices are uniformly coercive on every finite prime cylinder dominates a fixed multiple of the unweighted Fisher trace and is ruled out by (17).
+Likewise, any positive first-order metric on the score vector whose finite-cylinder metric matrices are uniformly bounded below by a fixed positive multiple of the product metric dominates the unweighted Fisher trace and is blocked by (17).
 
-Thus a first-order metric can escape only by becoming asymptotically cheap or degenerate in the prime directions, or by ceasing to be a uniformly coercive product-coordinate geometry. Such a degeneration may be mathematically meaningful if another Mathia construction forces it, but inserting weights solely to make (29) converge would be a hand-picked regularization and would not satisfy the research mandate.
+So a first-order escape must become asymptotically cheap/degenerate in prime directions or cease to be uniformly coercive in the product-coordinate geometry. Such degeneration could be meaningful if another Mathia construction forces it; choosing weights solely to make (28) converge would be an inserted regularization.
 
-This statement does **not** rule out the one-dimensional Kronecker flow `theta_p=t log p`, a nonlocal sub-Riemannian geometry, an infinite-codimension quotient, or a finite--archimedean coupling that changes the relevant state before the scalar prime-torus completion. Those are genuinely different constructions and require their own sign theorem.
+This result does **not** rule out the one-dimensional Kronecker flow `theta_p=t log p`, a nonlocal/sub-Riemannian geometry, an infinite-codimension quotient, or a finite--archimedean coupling that changes the relevant state before scalar completion.
 
-## 6. This is spatial Fisher geometry, not the parameter Fisher divergences of WP-022 or WP-084
+## 6. Distinction from WP-022 and WP-084
 
-The word `Fisher` appears earlier in this research line, but the objects are different.
+The word `Fisher` occurs earlier in this line, but the geometries differ.
 
-`WP-022` studies the **parameter score**
-
-\[
-\partial_\sigma\log\nu_\sigma
-\]
-
-of the specific canonical product-Poisson family. Its Fisher norm diverges at `sigma=1/2`. That result depends on the chosen radial family and its `sigma` derivative.
+`WP-022` studies the **parameter score** `partial_sigma log nu_sigma` of the specific canonical product-Poisson family. Its Fisher norm diverges at `sigma=1/2`; that claim depends on the chosen radial family and its `sigma` derivative.
 
 `WP-084` studies the **shift-parameter score** of the positive fixed-shift cover family `P_{n,c}` and finds a singular Fisher boundary at `c=0`.
 
-Here there is no chosen path of measures and no derivative with respect to `sigma`, `c`, or another external parameter. The derivatives in (3) are **spatial translation derivatives on the prime torus itself**. The result quantifies the first-order geometry of an arbitrary positive completion at a fixed `sigma`, and (5) survives arbitrary correlations. In particular, it applies to the correlated Haar-equivalent critical completion constructed in `WP-101`, which is not the product-Poisson family of `WP-022`.
+Here there is no path of measures and no derivative with respect to `sigma`, `c`, or another external parameter. Equations (3)--(15) use **spatial translation derivatives on the prime torus itself**. The result applies to an arbitrary positive completion at fixed `sigma`, including the correlated Haar-equivalent critical state constructed in `WP-101`.
 
-## 7. Prior-art audit: the Fourier/Fisher inequality is classical; the Mathia application is the new boundary
+## 7. Prior-art audit
 
-No theorem-level novelty is claimed for (13). Bounding Fourier/characteristic-function data by Fisher information through a score identity and Cauchy--Schwarz is classical Cramér--Rao technology. A close explicit prior-art anchor is:
+No theorem-level novelty is claimed for (14). Fisher-information bounds on Fourier/characteristic-function data are classical score/Cramér--Rao technology. A close explicit anchor is:
 
 - Zhengmin Zhang, *Inequalities for characteristic functions involving Fisher information*, **Comptes Rendus Mathématique** 344 (2007), no. 5, 327--330, DOI `10.1016/j.crma.2007.01.008`.
 
-Zhang proves upper bounds on characteristic functions in terms of Fisher information on the real line by applying Cramér--Rao to trigonometric observables. The compact-torus one-character estimate (13) is simpler and follows directly from periodic integration by parts.
+Zhang derives characteristic-function bounds from Fisher information on the real line using Cramér--Rao with trigonometric observables. The compact-circle estimate (14) is simpler and follows directly from periodic integration by parts.
 
-The project-specific content is the simultaneous arithmetic specialization forced by `WP-096`--`WP-101`:
+The retained Mathia content is the simultaneous specialization forced by the exact cover moments,
 
 \[
-\widehat\mu(e_p)
-=-\frac{\log p}{C\sqrt p}
+\widehat\mu(e_p)=-\frac{\log p}{C\sqrt p}
 \quad\text{for every prime }p,
-\tag{30}
+\tag{29}
 \]
 
-combined with the growing-cylinder trace of the translation Fisher metric. That specialization converts the classical local inequality into the correlation-independent divergence (7), and it is this exact boundary — not the Fisher inequality itself — that is retained here.
-
-The finding also stays outside classical Weil positivity in the important sense: no zero data or RH-equivalent positivity functional enters the proof. But it is a **no-go**, not an independent proof of the required global sign.
+followed by the growing-cylinder trace. That turns a classical local inequality into the correlation-independent critical divergence (7). No zero data, RH assumption, or RH-equivalent positivity functional enters the derivation, but the conclusion is a no-go rather than an independent global sign theorem.
 
 ## 8. Matched free-generator control
 
-The obstruction is not specific to rational primes. Let a free commutative monoid have generator energies `E_j>0`, let its character torus be `prod_j T`, and require first moments
+Let a free commutative monoid have generator energies `E_j>0`, character torus `prod_j T`, and target moments
 
 \[
-\widehat\mu_\sigma(e_j)
-=-E_j e^{-\sigma E_j}.
-\tag{31}
+\widehat\mu_\sigma(e_j)=-E_je^{-\sigma E_j}.
+\tag{30}
 \]
 
-For a mass-`C` positive completion, the same argument gives
+For a mass-`C` positive completion, the same cylinder argument gives
 
 \[
 \mathcal I_{\rm cyl}(\mu_\sigma)
-\ge
-\frac1{C^2}
-\sum_j E_j^2e^{-2\sigma E_j}.
-\tag{32}
+\ge\frac1{C^2}\sum_jE_j^2e^{-2\sigma E_j}.
+\tag{31}
 \]
 
-Thus the Fisher boundary is controlled by the square-summability of the generator amplitudes in any free-generator system. The rational primes are the specialization `E_j=log p_j`, where that square-summability threshold is exactly `sigma=1/2`.
+Thus the boundary is controlled by square-summability of the generator amplitudes in any free-generator system. Rational primes are the specialization `E_j=log p_j`, for which the threshold is exactly `sigma=1/2`.
 
-This matched control is decisive for interpretation. Infinite critical Fisher energy is a structural consequence of the exact one-generator amplitudes and the product-coordinate first-order geometry; by itself it contains no Riemann-specific global information.
+This control prevents overinterpretation: the Fisher divergence is structural to the exact one-generator amplitudes plus product-coordinate first-order geometry; by itself it contains no Riemann-specific global information.
 
 ## Consequence for the research line
 
-`WP-101` showed that allowing correlations is much more powerful than the independent-product model suggested: it can restore Haar equivalence at the exact critical rays. `WP-102` narrows that escape substantially:
+`WP-101` showed that correlations can restore Haar equivalence at the exact critical rays. `WP-102` narrows that escape:
 
 \[
 \boxed{
@@ -446,6 +374,6 @@ This matched control is decisive for interpretation. Infinite critical Fisher en
 }
 \]
 
-Therefore a future positive completion cannot obtain the Weil sign merely by declaring the correlated prime-torus state to carry the standard finite translation Fisher/Dirichlet geometry. At the exact critical arithmetic moments that geometry has infinite total energy before any Gamma or polar sector is addressed.
+A future positive completion therefore cannot obtain the Weil sign merely by placing the standard finite translation Fisher/Dirichlet geometry on the correlated prime-torus state. At the exact critical arithmetic moments that geometry has infinite total energy before any Gamma or polar sector is addressed.
 
-The remaining live target is correspondingly more specific: a successful Mathia-native structure must introduce a nontrivial global coupling, quotient, degenerate/nonlocal metric, or finite--archimedean geometry whose sign theorem is meaningful **before** the exact Weil consequence is read out. It must also explain why that altered geometry is canonical rather than a regularization designed around the divergent series (17), survive the generalized-generator control, and generate the archimedean/polar terms intrinsically.
+The remaining live target is more specific: a successful Mathia-native structure must introduce a genuinely global coupling, quotient, degenerate/nonlocal metric, or finite--archimedean geometry whose sign theorem is meaningful **before** the exact Weil consequence is read out. It must explain why that altered geometry is canonical rather than a regularization tailored to (17), survive the generalized-generator control, and generate the archimedean/polar terms intrinsically.
