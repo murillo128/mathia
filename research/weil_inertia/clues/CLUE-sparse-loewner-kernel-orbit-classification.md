@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-sparse-loewner-kernel-orbit-classification
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: weil_inertia
 based_on:
@@ -76,4 +76,17 @@ hypotheses needed to produce new Ramanujan cross-Gram rank formulas.
 Lean proves only the WI-087 family and only the vanishing implication needed when
 `(g-a) % 3 != 0`.  It does not prove the proposed kernel equivalence, the nullity formula, or any
 new cross-Gram family arising from singular matrices.  No novelty, asymptotic consequence,
-many-modulus inertia consequence, or zeta consequence is established.
+many-modulus inertia consequence, or zeta consequence is established here; the resolved theorem
+and its evidence boundary are recorded in the canonical finding below.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-097-sparse-loewner-nullity-is-exact-orbit-three-resonance.md]]
+
+WI-097 proves the displayed nullity formula exactly, by first identifying
+`gcd(P,Q) = X^(2h) + X^h + 1` when `3 | L` and `gcd(P,Q)=1` otherwise, then applying the classical
+Bezoutian nullity theorem.  The orbit recurrence gives the same `2h`/`0` count, while the gcd proof
+avoids any unproved reconstruction step from recurrence solutions to the full coefficient kernel.
