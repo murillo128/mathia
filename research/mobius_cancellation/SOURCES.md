@@ -26,7 +26,7 @@ for some `c>0`, and identifies this shape as the asymptotically strongest known 
 
 Andrew Granville and K. Soundararajan, *Decay of Mean Values of Multiplicative Functions*, Canadian Journal of Mathematics 55 (2003), no. 6, 1191–1230. DOI: https://doi.org/10.4153/CJM-2003-047-0. arXiv: https://arxiv.org/abs/math/9911246.
 
-Role: primary pretentious/Halász mean-value anchor for `MC-002`. The paper studies quantitative bounds for `(1/x) sum_{n<=x} f(n)` for `1`-bounded multiplicative `f(n)` in terms of the prime-harmonic quantity `M = min_y sum_{p<=x}(1-Re(f(p)p^{-iy}))/p`, and records the standard `(1+M)e^{-M}` scale.
+Role: primary pretentious/Halász mean-value anchor for `MC-002`. The paper studies quantitative bounds for `(1/x) sum_{n<=x} f(n)` for `1`-bounded multiplicative `f` in terms of the prime-harmonic quantity `M = min_y sum_{p<=x}(1-Re(f(p)p^{-iy}))/p`, and records the standard `(1+M)e^{-M}` scale.
 
 ## MC-S5 — Granville and Mangerel, explicit modern Halász formulation
 

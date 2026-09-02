@@ -19,7 +19,7 @@ g_2(2^k)=-1\quad(k\ge2).
 \tag{1}
 \]
 
-Thus `g_2` differs from `mu` only on powers of `2` of exponent at least two. Put
+Thus `g_2` has exactly the Möbius local data at every odd prime and differs only through the `2`-adic prime-power factor; globally that local difference propagates multiplicatively to integers with `v_2(n)\ge2`. Put
 
 \[
 S_2(x)=\sum_{n\le x}g_2(n).
@@ -219,7 +219,7 @@ More generally, the same argument yields a useful **masking lemma**. Suppose `g=
 H(s)=\sum_n h(n)n^{-s}
 \]
 
-is holomorphic on `Re(s)>1/2`, and `S_g(x)=O_\varepsilon(x^{1/2+\varepsilon})`. Then every zeta zero `rho` with `Re(rho)>1/2` must also be a zero of `H`, with at least the multiplicity needed to remove the pole of `H/zeta`. Therefore a zero-free transfer factor on the open right critical strip is sufficient for the comparator bound to imply RH. Absolute convergence of the Dirichlet inverse of `h` is not required.
+is absolutely convergent on `Re(s)>1/2`, and `S_g(x)=O_\varepsilon(x^{1/2+\varepsilon})`. Then `F_g(s)=H(s)/zeta(s)` on `Re(s)>1`, and every zeta zero `rho` with `Re(rho)>1/2` must also be a zero of `H`, with at least the multiplicity needed to remove the pole of `H/zeta`. Therefore a zero-free transfer factor on the open right critical strip is sufficient for the comparator bound to imply RH. Absolute convergence of the Dirichlet inverse of `h` is not required.
 
 ## 5. Why this materially refines MC-007
 
