@@ -277,3 +277,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 70. **C. Feiler, W. P. Schleich**, “Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function,” *New Journal of Physics* **15** (2013), 063009. DOI: https://doi.org/10.1088/1367-2630/15/6/063009.
     - Role: analytic-continuation/quantum prior-art anchor for `PL-106`. Explicitly proposes quantum measurements realizing the Dirichlet representation and its extension into the critical strip, showing that engineered quantum encodings of zeta continuation predate the 2026 DQPT correspondence.
+
+## Prime-axis Lindelöf criteria and generalized-prime controls
+
+71. **Steven M. Gonek, Sidney W. Graham, Yoonbok Lee**, “The Lindelöf hypothesis for primes is equivalent to the Riemann hypothesis,” *Proceedings of the American Mathematical Society* **148**(7) (2020), 2863–2875. DOI: https://doi.org/10.1090/proc/14974.
+    - Role: main theorem-level anchor for `PL-109` and supporting prior art for `PL-108`. Proves `LH(P) <=> RH`; in the proof the prime exponential-sum estimate is reduced by partial summation to a von Mangoldt sum supported only on prime powers, hence on exponent-lattice axis rays `k e_p`.
+
+72. **William D. Banks**, “The Riemann and Lindelöf hypotheses are determined by thin sets of primes,” *Proceedings of the American Mathematical Society* **150**(10) (2022), 4213–4222. DOI: https://doi.org/10.1090/proc/15959.
+    - Role: thin-axis falsification control for `PL-109`. Constructs prime subsets of arbitrarily small fixed relative density whose appropriately normalized generalized Lindelöf property remains equivalent to ordinary RH, and still thinner subsets detecting zero-free half-planes with a strengthened variant equivalent to RH.
+
+73. **Frederik Broucke, Sebastian Weishäupl**, “On the Lindelöf hypothesis for general sequences,” *Mathematika* **70**(2) (2024), Article e12240. DOI: https://doi.org/10.1112/mtk.12240. arXiv: https://arxiv.org/abs/2307.00239.
+    - Role: generalized-prime matched control for `PL-109`. Theorem 1.3 extends the Gonek--Graham--Lee equivalence to Beurling generalized prime systems satisfying `N_P(x)=Ax+O(x^(1/2))`, with the associated Beurling RH equivalent to `LH(P,Li(x))`; the paper also proves sharpness of the square-root regularity threshold in the stated sense.
