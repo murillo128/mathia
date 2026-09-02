@@ -111,3 +111,9 @@ Role: adjacent prior art for `MC-008`. Venturini proves that for a bounded compl
 NIST Digital Library of Mathematical Functions, §25.2(ii), equation 25.2.3, *Riemann Zeta Function: Definition and Expansions*. https://dlmf.nist.gov/25.2.E3.
 
 Role: authoritative classical anchor for `MC-008`. DLMF records `zeta(s)=eta(s)/(1-2^(1-s))` for `Re(s)>0`, equivalently `eta(s)=(1-2^(1-s))zeta(s)`. The factor `1-2^(1-s)` occurring in the explicit 2-adic transfer kernel of `MC-008` is therefore standard; its zeros lie on `Re(s)=1`, so no novelty is claimed for that factor or its zero set.
+
+## MC-S19 — Pintz, average and maximal oscillation of the Mertens function
+
+János Pintz, *Oscillation of partial sums of the Möbius function and zeros of Riemann's zeta function*, arXiv:2608.24878 (submitted 25 August 2026; revised 26 August 2026). https://arxiv.org/abs/2608.24878.
+
+Role: primary source for `MC-009`. Theorems 2.1 and 2.2 relate the mean absolute statistic `D_M(x)=x^(-1) int_0^x |M(u)|du` and the near-end maximum `S_{M,delta}(x)` to the zero-edge quantities `Z(x)` and `W(x)`, yielding logarithmic order governed by `vartheta=sup_{zeta(rho)=0} Re(rho)`. This is a very recent arXiv preprint; its theorem-level proof is treated as literature evidence pending independent audit rather than as independently verified Mathia derivation.
