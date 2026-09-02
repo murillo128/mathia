@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-gap2-tail-eigenspace-locking
 type: research-clue
-status: proposed
+status: accepted
 origin: visual-researcher
 target_line: prime_circle
 based_on:
@@ -48,3 +48,9 @@ As a computational falsifier before a proof, use sparse eigensolvers at the next
 ## Evidence boundary
 
 The near-locking is finite numerical evidence at three conductors, not a theorem, asymptotic law, novelty claim, or RH mechanism. The gap-two min-max lower bound and matching dimension are established by PC-139, but neither PC-139, PC-141, nor this computation proves that these vectors exhaust the macroscopic tail. The comparison controls only show that the observed alignment is not generic among the tested pair subspaces; short-chord dominance remains a live explanation.
+
+## Research disposition
+
+Accepted for continued investigation. [[research/prime_circle/findings/PC-142-gap-two-matching-has-an-exact-macroscopic-spectral-cliff]] resolves the spectral-count and separation half of the clue: for every level divisible by `6`, not only primorials, the gap-two matching contributes exactly all primitive-shell eigenvalues at or above `beta_N`, and the `E_N`th / `(E_N+1)`st gap is bounded below by a fixed positive multiple of `N^2`. The observed spectral cliff is therefore exact rather than a finite numerical pattern.
+
+The unresolved question is now the **eigenspace geometry**. PC-142 does not prove that the top-`E_N` spectral projector converges to `P_{V_N}`; its period-six operator-norm domination is deliberately too coarse to control the principal angles sharply. Continue on the off-diagonal block `P_{V_N^perp}R_NP_{V_N}`, and distinguish normalized Frobenius/average locking from the worst principal angle. Acceptance is workflow triage only, not evidence of asymptotic locking, novelty, or an RH mechanism.
