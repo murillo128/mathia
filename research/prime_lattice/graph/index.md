@@ -24,7 +24,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 
 ## Derived relation nodes
 
-- [[research/prime_lattice/graph/relations/critical-hilbert-boundary-does-not-locate-zeros|Critical Hilbert boundary does not locate zeros]]
+- [[research/prime_lattice/graph/relations/critical-hilbert-boundary-does-not-locate-zeros|Natural half-axes and encoded spectral readouts do not select zeros]]
 - [[research/prime_lattice/graph/relations/ambient-bohr-structure-is-insufficient|Ambient Bohr structure is insufficient]]
 - [[research/prime_lattice/graph/relations/classical-prime-flow-bridge|Classical prime-flow RH bridge]]
 - [[research/prime_lattice/graph/relations/canonical-prior-art-redirects|Canonical prior-art redirects]]
@@ -33,4 +33,4 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 
 ## Curation boundary
 
-Source findings remain direct graph nodes through their repository paths. Semantic relations are materialized only where current findings or durable synthesis explicitly support the dependency, obstruction, refinement, or bridge.
+Source findings remain direct graph nodes through their repository paths. Semantic relations are materialized only where current findings or durable synthesis explicitly support the dependency, obstruction, refinement, or bridge. A finding with an open adversarial sidecar is under-linked rather than used as a settled strong relation.

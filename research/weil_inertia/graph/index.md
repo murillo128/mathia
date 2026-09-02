@@ -21,7 +21,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 
 ## Derived relation nodes
 
-- [[research/weil_inertia/graph/relations/welding-maximal-l2-and-global-cauchy-boundary|Welding conditioned-pair and cross-conductor boundary]]
+- [[research/weil_inertia/graph/relations/welding-maximal-l2-and-global-cauchy-boundary|Welding, scalar Ramanujan aliasing and pairwise metric boundary]]
 
 ## Curation boundary
 

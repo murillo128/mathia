@@ -23,7 +23,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 ## Derived relation nodes
 
 - [[research/weil_positivity/graph/relations/solenoid-markov-positivity-obstruction|Regular solenoid positive-energy obstruction]]
-- [[research/weil_positivity/graph/relations/positive-selector-pairing-collapse|Positive selector readouts versus the Weil pairing]]
+- [[research/weil_positivity/graph/relations/positive-selector-pairing-collapse|Prime-torus completion, sparsification and global Weil-pairing boundary]]
 - [[research/weil_positivity/graph/relations/algebraic-hodge-refinement-boundary|Arithmetic-intersection and Hodge/Prym boundary]]
 
 ## Curation boundary

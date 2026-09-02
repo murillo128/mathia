@@ -21,9 +21,14 @@ Single-shell roots-of-unity, Ramanujan/Fourier and divisor-harmonic readouts rep
 - [[research/prime_circle/findings/PC-076-hardy-hilbert-relative-trace-is-parity-twisted-von-mangoldt|PC-076]]
 - [[research/prime_circle/findings/PC-077-hardy-hilbert-second-relative-trace-is-radical-divisor-data|PC-077]]
 - [[research/prime_circle/findings/PC-078-repeated-prime-hardy-refinement-is-signed-radical-tensor-inflation|PC-078]]
+- [[research/prime_circle/findings/PC-121-cyclotomic-toeplitz-sections-are-finite-period-quasipolynomials|PC-121]]
+- [[research/prime_circle/findings/PC-124-primitive-shell-opuc-cmv-spectralization-is-classical-ramanujan-cyclotomic-data|PC-124]]
+- [[research/prime_circle/findings/PC-125-relative-scale-resultant-spectralization-is-purely-cyclotomic|PC-125]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime-circle synthesis]]
 - [[research/prior_art/graph/index|Prior-art redirects]]
 
-The newer Hardy/Hilbert lift strengthens the same soft pruning from a genuinely nonlocal operator category: its noncompact core is universal Hilbert spectrum, first relative trace returns endpoint Mangoldt data, second moment reduces to radical/divisor data, and repeated-prime depth is only finite tensor inflation.
+The Hardy/Hilbert lift already strengthened the soft pruning from a nonlocal operator category: its noncompact core is universal Hilbert spectrum, relative traces return endpoint Mangoldt/radical data, and repeated-prime depth is finite tensor inflation.
 
-The pruning remains soft because simultaneous mixed-prime/cross-level coupling before scalar or finite-shell compression is separated into G2 and remains active.
+The newer finite spectralizations close more natural attempts to extract a nontrivial divisor from one or two cyclotomic shells. Scalar Toeplitz sections are finite-period quasipolynomials governed by discriminant/root-of-unity data; primitive-shell OPUC/CMV merely returns the input cyclotomic spectrum and Ramanujan moments; and a complex relative-scale resultant has only finite cyclotomic torsion zeros with Ramanujan-correlation multiplicities.
+
+The pruning remains soft because genuinely simultaneous growing cross-level coupling before finite-shell compression is separated into G2 and remains active. These results close canonical single-shell/finite spectralizations, not every possible all-level arithmetic organization.

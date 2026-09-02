@@ -30,7 +30,7 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 - [[research/arithmetic_fidelity/graph/relations/category-dependent-fidelity-endpoints|Category-dependent fidelity endpoints]]
 - [[research/arithmetic_fidelity/graph/relations/finite-weil-test-fidelity-filtration|Weil-test scale and resolution fidelity]]
 - [[research/arithmetic_fidelity/graph/relations/interaction-support-and-collective-stability|Interaction support and collective stability]]
-- [[research/arithmetic_fidelity/graph/relations/stable-fidelity-distance-to-collision|Stable fidelity as distance to collision]]
+- [[research/arithmetic_fidelity/graph/relations/stable-fidelity-distance-to-collision|Stable fidelity, target descent and safe repair envelopes]]
 
 ## Curation boundary
 

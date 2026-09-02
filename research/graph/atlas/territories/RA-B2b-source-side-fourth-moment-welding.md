@@ -23,11 +23,15 @@ A live attempt to retain source-specific arithmetic information before Gram or p
 - [[research/weil_inertia/findings/WI-084-subwindow-ramanujan-blocks-form-an-exact-toeplitz-basis|WI-084]]
 - [[research/weil_inertia/findings/WI-085-finite-window-ramanujan-scalarization-has-exact-alias-quotient|WI-085]]
 - [[research/weil_inertia/findings/WI-086-pairwise-ramanujan-rank-defect-starts-past-both-totient-dimensions|WI-086]]
-- [[research/weil_inertia/findings/WI-087-close-prime-ramanujan-cross-grams-have-an-exact-loewner-bezout-rank-family|WI-087]]
+- [[research/weil_inertia/findings/WI-088-residual-prime-ramanujan-rank-defect-is-sharply-capped-at-one-third|WI-088]]
+- [[research/weil_inertia/findings/WI-090-exact-prime-pairwise-one-third-defect-is-an-opposite-residue-matching|WI-090]]
+- [[research/weil_inertia/findings/WI-091-opposite-residue-prime-rank-defect-has-exact-triangular-boundary-layer|WI-091]]
+- [[research/weil_inertia/findings/WI-092-sharp-prime-rank-defect-has-bounded-metric-overlap|WI-092]]
+- [[research/weil_inertia/findings/WI-093-extensive-prime-rank-defect-forces-bounded-metric-overlap|WI-093]]
 - [[research/weil_inertia/mind/RESEARCH_LINES|Weil-inertia synthesis]]
 
-The universal scalar Ramanujan interface is now close to fully classified. Before overcompleteness, Vandermonde congruence fixes signed inertia exactly. Prime moduli larger than the window collapse to `span{I,J}` and admit exact saturated cancellation. For moduli up to the window the Ramanujan blocks form an exact symmetric-Toeplitz basis, while arbitrary super-window scalar laws alias uniquely through low divisor-Möbius marginals plus one high-divisor moment.
+The universal scalar Ramanujan interface is now close to fully classified. Before overcompleteness, Vandermonde congruence fixes signed inertia exactly; super-window scalar laws alias through an exact `N`-coordinate Toeplitz quotient; and residual pairwise rank loss begins only past both totient dimensions.
 
-Pairwise rank saving is also not a generic source of control. Any exceptional rank loss starts only beyond both totient dimensions, and an explicit infinite close-prime Loewner--Bezout family has a defect occupying asymptotically one third of the smaller primitive-frequency space.
+The exceptional prime-pair geometry is now sharply constrained rather than merely known to exist. The residual defect is universally capped at one third, exact extremizers occur only on opposite-residue boundary matchings, and near-extremal defect follows an exact triangular boundary profile. More importantly, WI-092--WI-093 show that macroscopic rank defect carries only bounded total whitened metric overlap and only `O(1)` directions above any fixed correlation threshold.
 
-The territory remains `open` because these are source-agnostic scalar classifications. The surviving routes must use the actual Yang coefficient/modulus restrictions, genuinely many-modulus centered signed coherence, a direct weighted rectangle/incidence theorem, or the anisotropic multivariate polynomial representation. None is supplied by the universal scalar quotient alone.
+The territory remains `open` because these are source-agnostic scalar and pairwise classifications. The surviving routes must use the actual Yang coefficient/modulus restrictions, genuinely many-modulus centered signed coherence, a direct weighted rectangle/incidence theorem, or the anisotropic multivariate polynomial representation. None is supplied by large pairwise rank loss alone.

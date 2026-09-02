@@ -22,10 +22,13 @@ The active Prime-Circle escape is to preserve genuinely cross-level information 
 - [[research/prime_circle/findings/PC-117-arbitrary-conductor-joint-hardy-corrector-has-zero-free-gaussian-determinant|PC-117]]
 - [[research/prime_circle/findings/PC-118-bounded-similarity-and-isometric-unfolding-preserve-hardy-corrector-divisor|PC-118]]
 - [[research/prime_circle/findings/PC-119-bounded-two-sided-hardy-preconditioning-cannot-retain-a-finite-fredholm-divisor|PC-119]]
+- [[research/prime_circle/findings/PC-120-divergent-scalar-hardy-amplification-destroys-det2-normality|PC-120]]
+- [[research/prime_circle/findings/PC-122-coherent-cross-shell-toeplitz-determinant-collapses-to-resultant-and-zero|PC-122]]
+- [[research/prime_circle/findings/PC-123-coherent-toeplitz-pseudodeterminant-incoherentizes-to-banded-scalar-recurrence|PC-123]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime-circle synthesis]]
 
-Finite and fixed-shell Hardy traces remain in classical cyclotomic sectors, while fixed trace-class determinants are too sparse in zero density. Canonical conductor limits first reduce to Hilbert/Carleman and Ramanujan data; the arbitrary old-conductor joint limit now closes the remaining scalar-normalized corrector escape with a zero-free Gaussian determinant.
+Finite and fixed-shell Hardy traces remain in classical cyclotomic sectors, while fixed trace-class determinants are too sparse in zero density. Canonical conductor limits reduce to Hilbert/Carleman and Ramanujan data; the arbitrary old-conductor joint limit closes the scalar-normalized corrector escape with a zero-free Gaussian determinant. Bounded representation/preconditioning changes cannot recover a finite divisor, and PC-120 now closes real divergent scalar amplification as well: it destroys finite `det_2` normality instead of producing a new entire limit.
 
-Changing representation is not enough. Similarity and isometric unfolding preserve the entire divisor exactly, while every uniformly bounded two-sided operator-changing preconditioner keeps the normalized corrector infinitesimal in operator norm and forces finite Fredholm zeros out of compact sets.
+A direct coherent finite cross-shell lift also fails to create a surviving many-shell determinant. PC-122 turns the rank-one matrix symbol into an overcomplete polynomial Gram system whose determinant is eventually exactly zero, while PC-123 shows that the canonical pseudodeterminant quotient removes the off-diagonal coherence and leaves fixed-band scalar recurrence/resultant data.
 
-The territory remains `active`, not hard-pruned. A survivor must cross a genuinely singular/unbounded operator scale, reorganize information before the canonical corrector split, use nonlinear joint all-shell structure, or move to another intrinsic/global uniformization mechanism. Those classes are not closed by the current evidence.
+The territory remains `active`, not hard-pruned. A survivor must cross a genuinely non-scalar unbounded/domain-changing operator scale, reorganize information before the canonical corrector/finite-section split, use nonlinear or growing all-shell structure not reducible to one coherent amplitude channel, or move to another intrinsic/global uniformization mechanism. Those classes are not closed by the current evidence.

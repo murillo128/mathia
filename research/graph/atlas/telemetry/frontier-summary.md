@@ -18,33 +18,35 @@ The conservative retrospective backfill remains unchanged: **14** high-confidenc
 
 ## Prospective series
 
-The clean prospective series starts strictly after `prospective_source_cutoff`. The newest source window, `fea5b3ef02c100315f1f5cb7433d13c24f2fe5dd` → `77cc50af912bb13cb392a90573d7df2750c9bc0b`, adds:
+The clean prospective series starts strictly after `prospective_source_cutoff`. The newest classifiable finding window, `48e4fb0394ee91c4c45cf8140590f69494294f40` → `0000ac94a724611f82aa067c4729c27a1c6a7c9a`, adds:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 1 | 1 | 0 | 0 |
-| `mobius_cancellation` | 2 | 0 | 0 | 2 |
-| `prime_circle` | 2 | 0 | 0 | 2 |
-| `prime_flute` | 2 | 1 | 0 | 1 |
-| `prime_lattice` | 2 | 0 | 2 | 0 |
+| `arithmetic_fidelity` | 2 | 1 | 0 | 1 |
+| `mobius_cancellation` | 3 | 1 | 0 | 2 |
+| `prime_circle` | 4 | 0 | 2 | 2 |
+| `prime_flute` | 1 | 0 | 0 | 1 |
+| `prime_lattice` | 1 | 0 | 1 | 0 |
 | `weil_inertia` | 2 | 0 | 0 | 2 |
-| `weil_positivity` | 3 | 2 | 0 | 1 |
-| **Total** | **14** | **4** | **2** | **8** |
+| `weil_positivity` | 3 | 1 | 0 | 2 |
+| **Total** | **16** | **3** | **3** | **10** |
+
+`PL-107` is deliberately absent from this window: its canonical finding has been narrowed in response to the adversary, but the `.review.md` sidecar remains open, so no frontier classification is forced before that lifecycle converges. Subsequent Mind synthesis through `5bc357e790f8fb65049ab731926dd5ed56a60027` sharpens the same boundaries and changes no episode classification.
 
 Across the complete prospective series so far:
 
 | Line | Episodes | Viable extension | Known prior art | New barrier |
 | --- | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 6 | 6 | 0 | 0 |
-| `mobius_cancellation` | 2 | 0 | 0 | 2 |
-| `prime_circle` | 7 | 0 | 3 | 4 |
-| `prime_flute` | 5 | 3 | 0 | 2 |
-| `prime_lattice` | 6 | 0 | 3 | 3 |
-| `weil_inertia` | 6 | 1 | 0 | 5 |
-| `weil_positivity` | 8 | 2 | 1 | 5 |
-| **Total** | **40** | **12** | **7** | **21** |
+| `arithmetic_fidelity` | 8 | 7 | 0 | 1 |
+| `mobius_cancellation` | 5 | 1 | 0 | 4 |
+| `prime_circle` | 11 | 0 | 5 | 6 |
+| `prime_flute` | 6 | 3 | 0 | 3 |
+| `prime_lattice` | 7 | 0 | 4 | 3 |
+| `weil_inertia` | 8 | 1 | 0 | 7 |
+| `weil_positivity` | 11 | 3 | 1 | 7 |
+| **Total** | **56** | **15** | **10** | **31** |
 
-Every line remains below the preferred 10-episode line-local window. For the global trend, the latest **20** classifiable prospective episodes give:
+Prime Circle and Weil Positivity now exceed the preferred 10-episode line-local interpretation window; line-local trend claims should therefore use their latest 10 events rather than these cumulative totals. For the portfolio trend, the latest **20** classifiable prospective episodes give:
 
 - `FrontierFertilityEpisodes = 5 / 20 = 25.0%`
 - `BarrierRate = 12 / 20 = 60.0%`
@@ -52,9 +54,9 @@ Every line remains below the preferred 10-episode line-local window. For the glo
 - `InternalDuplicateRate = 0 / 20 = 0%`
 - `InsufficientEvidence = 0`
 
-The newest window is again barrier-heavy, but not uniformly negative. Arithmetic Fidelity extends exact repair geometry; Prime Flute gains a real relative-orbit cancellation interface before finding its controlled Selberg factors zero-free; and Weil Positivity finds a genuine mixed-prime positive completion. Möbius Cancellation opens a previously unvisited Atlas territory while its first two concrete tests are both barriers. Prime Circle, Prime Lattice and Weil Inertia continue to close or classicalize natural canonical variants.
+The headline vector is numerically unchanged from the previous pass even though the underlying window rolled forward. The newest episodes remain barrier-heavy: Prime Circle closes scalar and finite cyclotomic spectralizations; Prime Flute resolves two Selberg boundaries into universal propagation/local-factor layers; Weil Inertia sharply limits both the incidence and metric significance of pairwise rank defects; and Weil Positivity closes positive/passive sparsification plus finite Fisher geometry. The positive movements are also concrete: Arithmetic Fidelity gains an exact safe-envelope calculus, Möbius Cancellation separates analytic nonmasking from absolute inversion, and Weil Positivity finds correlated Haar-equivalent critical completions.
 
-The episode unit remains deliberately coarser than a finding. PC-115--PC-117 are one conductor-limit episode; PF-157--PF-158 are one canonical relative-Selberg episode; PL-100--PL-103 are one Nyquist/Poisson-control episode; WI-082--WI-085 are one scalar Ramanujan-quotient episode; and WP-096--WP-097 are one infinite-range mixed-prime completion episode. This prevents activity volume from masquerading as fertility.
+The episode unit remains deliberately coarser than a finding. AF-054--AF-057 are one safe-envelope episode; MC-004--MC-006 are one qualitative-correlation budget episode; PC-122--PC-123 are one coherent Toeplitz collapse; WI-088--WI-091 are one sharp rank-boundary episode; and WP-100--WP-101 are one measure-class/correlation-survivor episode. This prevents activity volume from masquerading as fertility.
 
 ## Interpretation boundary
 

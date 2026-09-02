@@ -6,12 +6,14 @@ relation: narrows
 derived: true
 ---
 
-# Natural half-axes do not by themselves locate Riemann zeros
+# Natural half-axes and encoded spectral readouts do not by themselves locate Riemann zeros
 
 [[research/prime_lattice/findings/PL-001-bohr-hardy-half-boundary|PL-001]] identifies `Re(s)=1/2` as the exact bounded-evaluation boundary of the standard Bohr--Hardy geometry, while [[research/prime_lattice/findings/PL-002-standard-h2-kernel-zero-obstruction|PL-002]] shows that the ordinary reproducing-kernel route is zero-free where it is defined. The critical axis is therefore geometrically natural there but not a zero selector.
 
-The same distinction survives a much richer local geometric test. [[research/prime_lattice/findings/PL-104-bruhat-tits-universal-tempered-half-axis|PL-104]] shows that Bruhat--Tits radial adjacency, Green and Plancherel geometry singles out `Re(s)=1/2` exactly as the classical local tempered/unitary axis. The entire package is reproduced by an abstract regular tree even for branching parameters that are not residue-field cardinalities.
+The same distinction survives richer local geometric tests. [[research/prime_lattice/findings/PL-104-bruhat-tits-universal-tempered-half-axis|PL-104]] shows that Bruhat--Tits radial adjacency, Green and Plancherel geometry singles out `Re(s)=1/2` exactly as the classical local tempered/unitary axis, and [[research/prime_lattice/findings/PL-105-ihara-quotient-ramanujan-universality|PL-105]] adds finite quotient cycles, an Ihara Euler product and Bass determinant whose graph-theoretic RH is exactly the Ramanujan adjacency bound. Both packages are reproduced by abstract regular trees/graphs without rational-prime specificity.
 
-[[research/prime_lattice/findings/PL-105-ihara-quotient-ramanujan-universality|PL-105]] adds finite quotient cycles, an Ihara Euler product and Bass determinant. Its graph-theoretic RH is exactly the Ramanujan adjacency bound and is again reproduced by generic regular-graph families, including degrees with no local-field origin. Arithmetic quotients can contain genuine arithmetic, but the graph-zeta half-axis does not identify their cycle divisor with the ordinary Riemann divisor.
+[[research/prime_lattice/findings/PL-106-zeta-dqpt-programmable-dirichlet-readout|PL-106]] closes a different but related modern spectralization. The logarithmic Hamiltonian plus thermal weights and a chosen diagonal phase implements an arbitrary unimodular Dirichlet polynomial; the zeta DQPT example obtains its continuation from the programmed eta coefficients, while its second construction explicitly uses Riemann--Siegel completion data. A singularity at a zero is therefore a faithful physical/readout reformulation of an encoded divisor, not an independent mechanism forcing zeros onto the half-axis.
 
-Derived curation statement: a canonical `1/2` boundary, even together with a local tree spectrum or an exact graph RH, is not evidence of ordinary zeta-zero selection until a source-specific global coupling to the Riemann divisor is proved.
+The current [[research/prime_lattice/findings/PL-107-modular-arithmetic-hamiltonian-multiplier-obstruction.review|PL-107 review]] remains open and is intentionally not used to strengthen this relation. Its corrected canonical finding may become relevant after the review lifecycle closes.
+
+Derived curation statement: a canonical `1/2` boundary, an exact graph RH, a physical DQPT at encoded zeros, or another spectrally faithful readout is not evidence of ordinary zeta-zero selection until a source-specific mechanism derives the divisor/location upstream rather than programming or importing it.

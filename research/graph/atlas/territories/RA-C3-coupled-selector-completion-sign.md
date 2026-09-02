@@ -22,10 +22,17 @@ The live Weil-positivity frontier is to couple an exact positive finite-place pa
 - [[research/weil_positivity/findings/WP-095-finite-band-cover-positive-energy-cannot-regularize-the-endpoint-anchor|WP-095]]
 - [[research/weil_positivity/findings/WP-096-exact-cover-positive-forms-are-prime-torus-grams-but-sparse-weil-support-needs-infinite-diagonal|WP-096]]
 - [[research/weil_positivity/findings/WP-097-mixed-prime-product-completion-gives-sharp-finite-diagonal-threshold|WP-097]]
+- [[research/weil_positivity/findings/WP-098-positive-prime-torus-quotients-preserving-coordinate-observables-cannot-erase-mixed-prime-modes|WP-098]]
+- [[research/weil_positivity/findings/WP-099-passive-positive-auxiliary-elimination-cannot-sparsify-the-mixed-prime-completion|WP-099]]
+- [[research/weil_positivity/findings/WP-100-mixed-prime-product-completion-is-haar-singular-at-the-weil-boundary|WP-100]]
+- [[research/weil_positivity/findings/WP-101-correlations-restore-haar-equivalence-at-critical-diagonal-but-only-below-zygmund-endpoint|WP-101]]
+- [[research/weil_positivity/findings/WP-102-exact-critical-prime-torus-completions-have-infinite-cylindrical-fisher-energy|WP-102]]
 - [[research/weil_positivity/mind/RESEARCH_LINES|Weil-positivity synthesis]]
 
-The finite-band non-diagonal loophole is real but rigid: exact cover covariance forces a weighted Dirichlet cone with an independently positive critical ray, yet that ray classicalizes to Cesàro/continuous-dual-Hahn geometry and is universal across integer cover degrees. Stationary block-Toeplitz infinite-range forms collapse to a singular nonclosable endpoint anchor, and adding the entire finite-band positive cone cannot regularize it while retaining positivity and closability.
+The full exact-cover-positive cone remains genuinely larger than the sparse selector: mixed-prime Fourier coefficients restore positivity with finite sharp diagonal mass. Those terms cannot be deleted by a positive unital quotient preserving the prime coordinates, nor by arbitrary passive positive auxiliary elimination, without returning to the divergent sparse obstruction.
 
-The full algebraic cover-positive cone is larger. After the critical first-order conjugacy every exact positive form is a multiplicative Toeplitz/prime-torus Gram measure. Sparse one-prime Weil Fourier data alone require infinite diagonal mass, but mixed-prime interactions restore positivity with an explicit finite sharp threshold. Those mixed terms are essential: deleting them returns the divergent sparse obstruction.
+The natural independent product completion is singular to product Haar at the critical exponent, but that is not a universal measure-class obstruction. WP-101 constructs correlated positive completions that retain the sharp mass and exact one-prime Weil moments while becoming Haar-equivalent. This is a real positive survivor, albeit necessarily rough below the classical Zygmund endpoint.
 
-The territory therefore remains `open` with a sharper positive survivor: a nonseparable mixed-prime positive completion exists. What is still missing is a structural positivity-preserving operation that converts that completion into the exact finite Weil readout together with the archimedean/polar contribution and an independent global sign theorem.
+WP-102 supplies a stronger correlation-robust boundary: every exact critical completion has infinite cylindrical Fisher/square-root Dirichlet energy. Thus correlations can repair measure class but cannot turn the critical prime-torus completion into a finite first-order product-coordinate geometry that independently supplies the Weil sign.
+
+The territory remains `open` with a narrower survivor: a correlated nonseparable mixed-prime positive completion exists. What is still missing is a genuinely transforming finite--archimedean/polar operation that uses that completion without passive sparsification or finite Fisher geometry, retains the exact finite coefficients, and proves the global sign independently.

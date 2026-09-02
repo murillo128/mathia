@@ -22,10 +22,12 @@ Marked local spectral/scattering observables can retain ordered multi-gap inform
 - [[research/prime_flute/findings/PF-156-matched-short-orbit-packets-cancel-relative-trace-divergence|PF-156]]
 - [[research/prime_flute/findings/PF-157-matched-source-short-selberg-cocycle-is-zero-free|PF-157]]
 - [[research/prime_flute/findings/PF-158-full-canonical-separator-selberg-cocycle-has-sharp-one-quarter-abscissa|PF-158]]
+- [[research/prime_flute/findings/PF-159-canonical-selberg-quarter-boundary-is-one-ended-propagation|PF-159]]
+- [[research/prime_flute/findings/PF-160-connected-selberg-zero-boundary-is-bottom-ruelle-layer|PF-160]]
 - [[research/prime_flute/mind/RESEARCH_LINES|Prime-flute synthesis]]
 
-The geometric/resolvent comparison still requires global assembly, and local resolvent powers, determinants and heat coefficients no longer provide independent arithmetic values. The new orbit analysis nevertheless gives a genuine relative extension: the canonically matched short-orbit packet difference is absolutely summable against admissible test functions even though the absolute Selberg orbital measure is nowhere locally finite.
+The geometric/resolvent comparison still requires global assembly, and local resolvent powers, determinants and heat coefficients no longer provide independent arithmetic values. Relative short-orbit matching gives a genuine extension: the complete repeated packet difference is summable against admissible tests even though the absolute Selberg orbital measure diverges.
 
-That extension does not itself generate a critical-line divisor. The matched source-short local Selberg factor is zero-free on `Re s>0`, and the complete canonical consecutive-block separator factor is zero-free on `Re s>1/4`; hence the critical line lies strictly inside both controlled zero-free regions.
+The controlled Selberg sectors nevertheless become progressively more universal under exact subtraction. The source-short factor is zero-free on `Re s>0`; the full canonical-separator factor is zero-free on `Re s>1/4`. PF-159 identifies the one-quarter boundary with the exact one-ended far-separator propagation term, and PF-160 identifies the connected zero boundary with the ordinary bottom Selberg/Ruelle layer plus reciprocal-prime divergence. Higher connected layers are already holomorphic across zero.
 
-The territory remains `open`. Primitive word classes outside the canonical separator family, a full global relative trace/scattering construction, resonances and other genuinely nonlocal marked inverse values remain uncontrolled and could still distinguish the exact composite control.
+The territory remains `open`. These results make the canonical separator/Selberg escape substantially less plausible, but primitive word classes outside that sector, a full global relative trace/scattering construction, resonances and other genuinely nonlocal marked inverse values remain uncontrolled and could still distinguish the exact composite control.
