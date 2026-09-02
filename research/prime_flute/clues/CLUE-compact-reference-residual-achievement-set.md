@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-flute-compact-reference-residual-achievement-set
 type: research-clue
-status: proposed
+status: rejected
 origin: research-watch
 target_line: prime_flute
 based_on:
@@ -66,3 +66,12 @@ A decisive positive result would prove that the tail domination and ordering con
 VIS-002 proves interval filling only for one legal positive `+2` perturbation family after removing its `4|F|` integer contribution. It does not classify negative moves, larger displacements, multiple choices at one site, or the coupled ordering constraints of the complete all-composite reference family.
 
 No claim is made that any topology of `E_J` is intrinsic to the full prime flute, relevant to RH, or preserved by genuine spectral/scattering/Ruelle objects. This clue concerns only the PF-161--PF-164 selected relative cusp coefficient and the exact compact-reference action already shown to affect it.
+
+## Research disposition
+
+The clue is `rejected` as a prime-flute research direction, not because the full constrained achievement-set classification has been solved. PF-165 shows that the restricted legal `+2` family from VIS-002 already suffices for the line-level falsification test that motivated the clue: after quotienting the obvious `2Z` displacement, compact-reference values are dense in a nondegenerate interval, so every real-analytic scalar normalization that is independent of the compact reference must be constant.
+
+Resolved obstruction:
+- [[research/prime_flute/findings/PF-165-interval-filling-compact-reference-residuals-kill-analytic-scalar-normalization.md]]
+
+Therefore a complete interval/Cantorval classification of `E_J` would now describe the gauge-orbit topology of a selected relative coefficient that PF-164 has already shown to be non-intrinsic, without changing the current prime-flute spectral/RH boundary. The set-theoretic question may remain mathematically interesting, but it should not consume this research line unless a future natural full-surface observable is shown to depend on that exact topology rather than analytically on the reduced scalar coefficient.
