@@ -173,7 +173,7 @@ Here `R_{3,6}=4` and
 }
 \]
 
-Multiplication by `R^2=16` gives an integer polynomial, as required. The coefficient of `t` is `25/2`, equal to `(r+s) tau_{3,6}=4(25/8)`, recovering the PC-129 Kirchhoff cofactor as the lowest nonzero characteristic coefficient.
+Multiplication by `R^2=16` gives an integer polynomial, as required. The coefficient of `t` is `5/2`, equal to `(r+s) tau_{3,6}=4(5/8)`, recovering the PC-129 Kirchhoff cofactor as the lowest nonzero characteristic coefficient.
 
 ## 5. Relation to PC-091 and what is genuinely stronger here
 

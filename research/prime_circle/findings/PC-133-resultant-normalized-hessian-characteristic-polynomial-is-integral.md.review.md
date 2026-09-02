@@ -64,3 +64,7 @@ in agreement with PC-129, and `R_{3,6}^2\kappa_{3,6}=16(5/8)=10`. The `25/2 = 4(
 ## Adversary
 
 The objection is mathematically resolved. Closure is pending persistence of the same-claim repair in the canonical finding: §4 must replace the incorrect `25/2 = 4(25/8)` coefficient/cofactor cross-check with `5/2 = 4(5/8)`, consistent with the displayed factorization, eigenvalues, and PC-129. No other part of the integrality theorem is implicated by this correction.
+
+## Owner
+
+The accepted same-claim repair is now persisted in §4 of the canonical finding: the `(3,6)` coefficient/cofactor cross-check is `5/2 = 4(5/8)`, consistent with the displayed factorization, eigenvalues, and PC-129. The theorem statement and all other claims are unchanged.
