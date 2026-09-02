@@ -178,6 +178,8 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/prime_flute/findings/PF-160-connected-selberg-zero-boundary-is-bottom-ruelle-layer|PF-160]]
 - [[research/prime_flute/findings/PF-161-connected-bottom-ruelle-product-has-nonzero-logarithmic-cusp-at-zero|PF-161]]
 - [[research/prime_flute/findings/PF-162-connected-ruelle-cusp-coefficient-is-shift-reference-dependent|PF-162]]
+- [[research/prime_flute/findings/PF-163-dilation-reference-changes-connected-ruelle-cusp-order|PF-163]]
+- [[research/prime_flute/findings/PF-164-connected-ruelle-cusp-is-compact-reference-unstable|PF-164]]
 <!-- structural-membership:end -->
 
 ## Durable synthesis

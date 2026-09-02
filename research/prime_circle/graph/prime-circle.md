@@ -145,6 +145,10 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/prime_circle/findings/PC-130-coprime-hessian-crt-incidence-is-fixed-dirichlet-L2-data|PC-130]]
 - [[research/prime_circle/findings/PC-131-squarefree-noncoprime-hessian-incidence-is-dirichlet-bernoulli|PC-131]]
 - [[research/prime_circle/findings/PC-132-nonsquarefree-hessian-incidence-is-depth-filtered-dirichlet-bernoulli|PC-132]]
+- [[research/prime_circle/findings/PC-133-resultant-normalized-hessian-characteristic-polynomial-is-integral|PC-133]]
+- [[research/prime_circle/findings/PC-134-finite-hessian-tensor-networks-collapse-to-confluent-cauchy-algebra|PC-134]]
+- [[research/prime_circle/findings/PC-135-coherent-all-divisor-hessian-aggregate-collapses-to-full-polygon-laplacian|PC-135]]
+- [[research/prime_circle/findings/PC-136-cross-shell-only-primorial-hessian-has-universal-bulk-spectrum-with-mertens-squared-defect|PC-136]]
 <!-- structural-membership:end -->
 
 ## Durable synthesis

@@ -79,6 +79,11 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/arithmetic_fidelity/findings/AF-063-horofunction-margin-is-signed-convex-hull-distance|AF-063]]
 - [[research/arithmetic_fidelity/findings/AF-064-strongly-convex-minkowski-safe-lift-threshold|AF-064]]
 - [[research/arithmetic_fidelity/findings/AF-065-support-contact-profile-localizes-boundary-fidelity|AF-065]]
+- [[research/arithmetic_fidelity/findings/AF-066-dual-face-coherence-classifies-polyhedral-first-order-fidelity|AF-066]]
+- [[research/arithmetic_fidelity/findings/AF-067-polyhedral-fidelity-kernels-are-finite-cone-hulls|AF-067]]
+- [[research/arithmetic_fidelity/findings/AF-068-finite-cone-hull-order-is-generator-cofinality|AF-068]]
+- [[research/arithmetic_fidelity/findings/AF-069-compact-targets-complete-filtered-cone-fidelity|AF-069]]
+- [[research/arithmetic_fidelity/findings/AF-070-compact-cone-consequence-is-zero-normalized-excess|AF-070]]
 <!-- structural-membership:end -->
 
 ## Durable synthesis

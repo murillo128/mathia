@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 63a3dd25fe73a103bf828331ee4e30fa70868e23
+source_revision: 48738f2546ad6a41418eead90569a795974c0ffa
 derived: true
 ---
 
@@ -24,9 +24,11 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 | Macro-families | **10** |
 | Leaf territories | **37** |
 
-**Reading:** no v1 leaf changes state or mass in this source window. The Möbius summatory-error leaf A1 remains `active`; all other new findings refine already `open`, `soft-pruned`, or `reproduced` territories. No new macrofamily, leaf mass, or Atlas version is justified.
+**Reading:** no v1 leaf changes state or mass in this source window. The Möbius summatory-error leaf A1 remains `active`; all new RH-facing findings refine already visited `open`, `active`, `hard-pruned` or `reproduced` territory. Visual Exploration and Arithmetic Fidelity remain transversal research lines and do not create new Atlas denominator mass by themselves. No new macrofamily, leaf mass, or Atlas version is justified.
 
-The internal frontiers nevertheless move materially. Arithmetic Fidelity exposes zero-margin instability of safe lifts under arbitrarily near-isometric renorming. Möbius Cancellation adds a conditional fresh-literature endpoint linking mean-absolute Mertens growth to the rightmost zero boundary without supplying a new unconditional estimate. Prime Circle extends finite cyclotomic classicalization from relative scale to a global projective shell motion. Prime Flute turns the residual connected bottom-Ruelle boundary into a finite nonzero product with a logarithmic cusp rather than a divisor. Prime Lattice can now use PL-107 after review convergence, closing the concrete translation-invariant prime-Hamiltonian bulk, while PL-108 adds a genuine but prior-art-supplied energy-ball coherence-to-zero inverse theorem whose mechanism still factors through scalar `log n` energy and the near-`1` analytic edge. Weil Inertia closes collective dyadic accumulation of the positive-density rank-defect sector. Weil Positivity proves that nonlinear logarithmic readout can sparsify the finite prime rays exactly, while the canonical Gibbs realization still fails to supply an independent finite-energy sign mechanism.
+The internal frontiers nevertheless move materially. Arithmetic Fidelity extends safe-repair structure to dual-face coherence, filtered cone generation and an exact zero-normalized-excess compact consequence criterion. Möbius Cancellation isolates both a path-energy barrier and a narrower harmonic endpoint kernel, while Visual Exploration shows that the kernel's leading sawtooth boundary model is classical prior art. Prime Circle's resultant-Hessian hierarchy continues to classicalize through integral characteristic data, confluent-Cauchy structure and universal primorial bulk behavior. Prime Flute makes the connected Ruelle cusp reference-dependent rather than an intrinsic divisor candidate.
+
+Prime Lattice closes fixed profinite/l-adic spectral selectors to scalar or gauge data and redirects stronger geometries to Deninger, Meyer and Suzuki prior art: even a canonical unconditional positive screw-Hilbert norm does not bypass the RH-equivalent theorem identifying it with the Weil metric. Weil Inertia reduces the residual rank-defect regime to exact finite rotation and triangular-boundary geometry. Weil Positivity extends the critical divergence barrier from Fisher/Gibbs energy to Chentsov-natural metrics, product transport, finite-block correlations and the full nontrivial one-dimensional Lévy/Dirichlet multiplier cone.
 
 The current ±25% family-weight sensitivity band remains approximately **70.0%–78.4%**. This is not a statistical confidence interval. Marginal frontier episodes are tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] and do not alter the Atlas denominator.
 

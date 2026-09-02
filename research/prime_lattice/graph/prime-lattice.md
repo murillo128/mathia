@@ -131,6 +131,11 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/prime_lattice/findings/PL-113-relative-logprime-pair-kernel-scalarization|PL-113]]
 - [[research/prime_lattice/findings/PL-114-fixed-modulus-congruence-pair-scalarization|PL-114]]
 - [[research/prime_lattice/findings/PL-115-fixed-galois-frobenius-pair-scalarization|PL-115]]
+- [[research/prime_lattice/findings/PL-116-profinite-galois-central-scalarization|PL-116]]
+- [[research/prime_lattice/findings/PL-117-compatible-ladic-frobenius-purity-obstruction|PL-117]]
+- [[research/prime_lattice/findings/PL-118-deninger-prime-orbit-hodge-half-axis|PL-118]]
+- [[research/prime_lattice/findings/PL-119-meyer-adelic-zero-spectrum-positivity-gap|PL-119]]
+- [[research/prime_lattice/findings/PL-120-suzuki-screw-hilbert-metric-gap|PL-120]]
 <!-- structural-membership:end -->
 
 ## Durable synthesis

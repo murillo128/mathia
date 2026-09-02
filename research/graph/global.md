@@ -17,6 +17,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/prime_circle/graph/prime-circle|Prime Circle]]
 - [[research/prime_flute/graph/prime-flute|Prime Flute]]
 - [[research/prime_lattice/graph/prime-lattice|Prime Lattice]]
+- [[research/visual_exploration/graph/visual-exploration|Visual Exploration]]
 - [[research/weil_positivity/graph/weil-positivity|Weil Positivity]]
 - [[research/weil_inertia/graph/weil-inertia|Weil Inertia]]
 - [[research/prior_art/graph/prior-art|Prior-art redirects]]
@@ -49,13 +50,13 @@ This is the derived root graph for Mathia research. Source findings and mind not
 
 ## Current integration boundary
 
-Seven source-backed research lines remain represented: six RH-facing lines plus the transversal Arithmetic Fidelity line. The new findings sharpen already persisted portfolio-level distinctions but do not establish a new cross-line theorem or justify a new relation node.
+Eight source-backed research lines are represented: six RH-facing lines plus the transversal Arithmetic Fidelity and Visual Exploration lines. The source window materially expands existing frontiers but does not establish a new cross-line theorem or justify a new global relation node.
 
-Arithmetic Fidelity now shows that the target metric itself needs quantitative conditioning: an exact safe lift can disappear under arbitrarily near-isometric renorming when its multiplicative safety margin is zero. Möbius Cancellation adds, conditionally on a fresh theorem still marked for audit, a mean-absolute Mertens endpoint that would recover the rightmost zero boundary without solving the missing cancellation estimate. Prime Circle extends finite cyclotomic/resultant classicalization to one global projective motion of an entire shell. Prime Flute resolves the last selected canonical Ruelle boundary as a finite nonzero product with a logarithmic cusp rather than a hidden zero/pole.
+Arithmetic Fidelity extends exact robustness from safe-lift margins through dual-face coherence and filtered cone generation to a zero-normalized-excess characterization of compact consequence. Möbius Cancellation isolates a boundary-cancelled path-energy route and a sharper harmonic endpoint kernel; Visual Exploration identifies the leading harmonic boundary model with Watt's classical sawtooth term, so that geometric pattern is a prior-art redirect rather than a new arithmetic mechanism.
 
-Prime Lattice now has two different evidence updates. The PL-107 adversarial lifecycle has converged, so the corrected prime-translation Hamiltonian obstruction is settled: its regularized bulk is a translation-invariant scalar multiplier and the missing arithmetic domain/renormalization must supply the actual discrete Hilbert--Pólya selector. PL-108, by contrast, is a positive prior-art redirect: a newly published inverse theorem shows that extreme energy-ball Bohr coherence can force ordinary zeta-zero clusters, but the observable factors through scalar `log n` and the theorem works near the `Re(s)=1` analytic edge rather than localizing zeros on the critical line.
+Prime Circle pushes the canonical Hessian/resultant program further into integral and confluent-Cauchy structure: coherent all-divisor aggregation collapses to the full polygon Laplacian, and even the cross-shell-only primorial aggregate has the same universal bulk law up to a Mertens-squared defect. Prime Flute shows that the connected Ruelle cusp is not reference-stable under natural dilation or compact/local comparison changes.
 
-Weil Inertia now rules out cumulative dyadic recovery from the positive-density pairwise rank-defect sector even under adversarial weights. Weil Positivity supplies the main positive/negative split of this window: nonlinear Gibbs/logarithmic readout can remove mixed-prime Fourier modes exactly while preserving the Weil rays, but positivity of that carrier is tautological and its critical entropy and multiplicative-flow energy diverge.
+Prime Lattice closes fixed profinite and compatible l-adic spectral escapes to scalar/gauge data, while Deninger's prime-orbit half-axis, Meyer's adelic zero spectrum, and Suzuki's unconditional positive screw-Hilbert norm are explicit prior-art redirects whose missing positivity, cohomology or metric-identification content remains the hard theorem. Weil Inertia identifies the residual prime rank-defect geometry with exact cyclic rotations and triangular islands. Weil Positivity closes Chentsov-natural, product-Wasserstein, finite-block correlated and Lévy/Dirichlet positive spectral repairs at the critical prime weights by divergent low-frequency cost.
 
-Riemann Atlas v1 remains an approach-space denominator, not a progress-to-proof score. No leaf state changes in this pass: the new work materially narrows, redirects or extends already visited territories. Marginal frontier telemetry records the stronger barrier/prior-art concentration separately and never feeds Research Watch.
+Riemann Atlas v1 remains an approach-space denominator, not a progress-to-proof score. No leaf state or mass changes in this pass; marginal frontier telemetry records the new extensions, prior-art collisions and barriers separately and never feeds Research Watch.
 <!-- graph:end -->
