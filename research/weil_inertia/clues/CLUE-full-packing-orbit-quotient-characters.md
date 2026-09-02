@@ -29,7 +29,7 @@ Q=(\mathbf Z/t\mathbf Z)/H,
 
 then proves `|H|=t/g` and `|Q|=g` for `g=gcd(R,t)`. WI-102 uses the same arithmetic only to count the `g` rotation cycles. WI-096 and WI-099 independently identify the true row kernel as functions constant on the equal free cycles, subject to one global zero-mean relation, but they do not organize those cycle coordinates by the quotient-group structure exposed by Lean.
 
-At full packing there are no path components, and the WI-102 collapse equivalence conjugates the exceptional permutation to `x -> x+R`. Combining the persisted results therefore suggests a stronger normal form: the row kernel should be naturally the mean-zero function space on `Q`, equivalently the augmentation-zero part of the regular representation of the cyclic quotient. Since `H` should identify with the multiples of `g` in `Z/tZ`, `Q` should identify with `Z/gZ`, so its nontrivial characters would give a canonical basis rather than an arbitrary choice of `g-1` cycle coordinates. Pulled back through the explicit order collapse, those modes become piecewise characters on the original `p` residue coordinates, with a phase jump across the deleted interval.
+At full packing there are no path components, and the WI-102 collapse equivalence conjugates the exceptional permutation to `x -> x+R`. Combining the persisted results therefore suggests a stronger normal form: the row kernel should be naturally the mean-zero function space on `Q`, equivalently the augmentation ideal of the regular representation of the cyclic quotient. Since `H` is the subgroup of multiples of `g` in `Z/tZ`, `Q` identifies with `Z/gZ`, so its nontrivial characters would give a canonical basis rather than an arbitrary choice of `g-1` cycle coordinates. Pulled back through the explicit order collapse, those modes become piecewise characters on the original `p` residue coordinates, with a phase jump across the deleted interval.
 
 ## Research question
 
@@ -45,7 +45,7 @@ Q=(\mathbf Z/t\mathbf Z)/\langle R\rangle,
 
 with the nontrivial characters of `Q` pulling back to an explicit basis in the original `p`-frequency coordinates?
 
-More importantly, does this quotient-character representation impose a new simultaneous constraint when two full-packing residual interactions share the same source modulus `p` at one observation length `N`? For two targets `q_1,q_2`, let `K_i` be the corresponding row-kernel subspaces and `g_i=gcd(R_i,t_i)`. Does a nonzero vector in `K_1 intersection K_2` require compatibility between the two quotient characters or a common nontrivial quotient of `Q_1` and `Q_2`? A particularly sharp first possibility to test is whether
+More importantly, does this quotient-character representation impose a new simultaneous constraint when two full-packing residual interactions share the same source modulus `p` at one observation length `N`? For two targets `q_1,q_2`, let `K_i` be the corresponding row-kernel subspaces and `g_i=gcd(R_i,t_i)`. Does a nonzero vector in `K_1\cap K_2` require compatibility between the two quotient characters or a common nontrivial quotient of `Q_1` and `Q_2`? A particularly sharp first possibility to test is whether
 
 \[
 \gcd(g_1,g_2)=1
@@ -65,7 +65,7 @@ If shared-source intersections are strongly restricted by quotient compatibility
 
 Prove the single-pair quotient normal form first, without using numerical rank tolerance: identify `Q` with `Z/gZ`, pull every nontrivial quotient character back through the WI-102 collapse, verify directly from the WI-096 residue-sum equations that these vectors lie in the true row kernel, and prove that they span its `g-1` dimensions. The examples underlying the full three-cycle and five-cycle packings provide small exact checks, but the proof should be symbolic.
 
-Then fix one source prime `p` and one observation length `N`, enumerate exact target primes for which two or more residual edges are simultaneously full-packed, and compute the intersections of their pulled-back character spaces in the shared `p`-frequency coordinates. A single exact example with `gcd(g_1,g_2)=1` and `K_1 intersection K_2 != {0}` kills the sharp coprime-order conjecture. If the conjecture survives, derive the compatibility condition directly from the two piecewise collapse maps and test whether the general intersection dimension is controlled by a common quotient/character order rather than by ambient dimension alone.
+Then fix one source prime `p` and one observation length `N`, enumerate exact target primes for which two or more residual edges are simultaneously full-packed, and compute the intersections of their pulled-back character spaces in the shared `p`-frequency coordinates. A single exact example with `gcd(g_1,g_2)=1` and `K_1\cap K_2\ne\{0\}` kills the sharp coprime-order conjecture. If the conjecture survives, derive the compatibility condition directly from the two piecewise collapse maps and test whether the general intersection dimension is controlled by a common quotient/character order rather than by ambient dimension alone.
 
 ## Evidence boundary
 
