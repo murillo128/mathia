@@ -1,6 +1,6 @@
 ---
 name: mathia-formalization-executor
-description: Execute one approved Mathia Lean formalization issue autonomously through adversarial Gate 0, proof engineering, Lean validation, fresh subagent review, and direct-main publication.
+description: Execute one approved Mathia Lean formalization issue autonomously through adversarial Gate 0, proof engineering, Lean validation, fresh technical review, post-approval fertility review, and direct-main publication.
 ---
 
 # Mathia Lean Formalization Executor
@@ -9,7 +9,7 @@ description: Execute one approved Mathia Lean formalization issue autonomously t
 
 Use this skill when Codex is asked to execute an approved Mathia Lean formalization issue.
 
-The controlling issue owns the exact mathematical question and theorem boundary. This skill owns the reusable execution procedure.
+The controlling issue owns the exact mathematical question and theorem boundary. This skill owns the reusable execution procedure and **orchestrates all fresh subagents** required by that procedure.
 
 This is intentionally a **no-PR autonomous executor**, analogous to `mathia-compute-executor` but with a durable checked Lean artifact and stronger mathematical review gates.
 
@@ -19,6 +19,7 @@ There is deliberately:
 - no user review/merge checkpoint after successful autonomous review;
 - no committed Gate-0 report;
 - no committed independent-review report;
+- no committed fertility-review report;
 - no durable feature branch requirement.
 
 A local branch/worktree may be used as scratch execution state. Publication is a direct commit to `main` only after every gate below passes.
@@ -32,13 +33,12 @@ Before execution:
 3. read this skill;
 4. read the exact associated canonical finding(s), open adjacent review sidecars, and only the additional persisted mathematics needed to reconstruct the target;
 5. inspect the current Mathia Lean/Lake setup and relevant existing formalization source;
-6. load `.agents/skills/codex-independent-review/SKILL.md` for fresh Gate/final review semantics;
-7. load `.agents/skills/codex-github-operations/SKILL.md` before publication;
-8. load the research review/clue skills only when the routing rules below require them.
+6. load `.agents/skills/codex-independent-review/SKILL.md` for fresh Gate/final technical-review semantics;
+7. load `.agents/skills/mathia-formalization-fertility-review/SKILL.md` for the mandatory post-approval fertility stage;
+8. load `.agents/skills/codex-github-operations/SKILL.md` before publication;
+9. load the research review/clue skills only when the routing rules below require them.
 
 Treat the issue as the scientific contract and recompute independently from persisted evidence. Do not recover or depend on the originating Research Watch's hidden reasoning.
-
-The current repository skill owns generic execution procedure. Boilerplate in an older issue that merely says "feature branch", "PR", "ready for review", or asks for a `*Gate*.md` file is superseded by this workflow unless that issue explicitly records a later target-specific reason for the exception.
 
 If the issue is not self-contained enough to identify the intended theorem without inventing a material mathematical choice, return it to design rather than choosing a convenient theorem.
 
@@ -52,7 +52,7 @@ The durable outputs of a successful run are normally:
 
 ```text
 1. issue-authorized Lean source / minimal Lean project wiring
-2. optionally, one or more `status: proposed` clues produced by the fresh independent reviewer when genuinely warranted
+2. optionally, one or more `status: proposed` clues produced by the post-approval fertility reviewer when genuinely warranted
 ```
 
 A material challenge to the source finding is not a clue; route it through the adversarial review protocol described below.
@@ -101,15 +101,7 @@ mathematical conflict / counterevidence
 
 ### No Gate artifact
 
-Gate 0 is review process, not an additional repository document.
-
-Do **not** create or commit files such as:
-
-```text
-*Gate.md
-*_GATE0.md
-*Gate0.md
-```
+Gate 0 is review process, not an additional repository document. Do not create or commit companion `*Gate*.md` files.
 
 When durable transport is useful, leave a concise comment on the controlling issue containing the frozen theorem surface, verdict, and any material blocking observation. Detailed review scratch remains ephemeral.
 
@@ -121,7 +113,7 @@ When durable transport is useful, leave a concise comment on the controlling iss
 
 ## Research challenge routing
 
-If Gate 0 or later Lean work exposes a material challenge to a persisted finding, spawn a fresh subagent and load:
+If Gate 0, Lean work, final technical review, or post-approval fertility review exposes a material challenge to a persisted finding, spawn a fresh subagent and load:
 
 ```text
 .agents/skills/mathia-research-adversarial/SKILL.md
@@ -133,6 +125,8 @@ The adversarial subagent independently reconstructs the challenge and owns any c
 Do not encode a direct objection to the finding as a clue merely to avoid the review protocol.
 
 If the challenge makes theorem progression unsafe, stop the current formalization until the issue/finding boundary is repaired or the review establishes that the frozen theorem remains safe. Do not prove around the defect.
+
+Any material target change after Gate 0 invalidates affected validation and final-review evidence. Re-run the required stages on the new exact target.
 
 ## Proof engineering
 
@@ -182,22 +176,11 @@ Do not use a Gate-file reference as a substitute. An issue number or finding ID 
 
 When one formalization spans multiple modules, every principal/public module should be locally intelligible; avoid duplicating long prose, but preserve enough finding/theorem context that an isolated `.lean` file is not anonymous.
 
-## Formalization is an observation surface
+## Formalization is an observation surface during execution
 
-During statement reconstruction, proof search, debugging, and review, actively notice when Lean exposes mathematics rather than syntax.
+During statement reconstruction, proof search, and debugging, notice mathematics rather than syntax. Material observations can include missing/unnecessary hypotheses, counterexamples, degenerate cases, stronger/weaker boundaries, hidden conventions, alternate invariants, normal forms, quotients, kernels/ranges, or genuinely different exact proof routes.
 
-Material observations include, for example:
-
-- a missing or unnecessary hypothesis;
-- a counterexample or degenerate case;
-- a stronger/weaker exact theorem boundary;
-- a sign, normalization, indexing, orientation, or gauge subtlety;
-- an unexpected invariant or equivalent formulation;
-- a proof that works only on a narrower domain than the persisted claim;
-- a genuinely different exact mathematical route;
-- a plausible generalization or obstruction suggested by the formal derivation.
-
-Challenges to the persisted finding use the adversarial-review route above. Distinct fertile directions are considered during final independent review below.
+Do not let such observations disappear. Correctness challenges use the adversarial route above. Non-blocking observations may be retained as input context, but **the executor itself does not decide or write research clues**. Clue extraction belongs to the final independent fertility subagent after technical approval.
 
 ## Lean validation
 
@@ -211,66 +194,61 @@ Before final review, run the repository-native Lean command and verify as applic
 - relevant dependencies/imports are proportionate to the bounded theorem;
 - each principal `.lean` file satisfies the finding/theorem header-comment contract.
 
-## Fresh final subagent review
+## Fresh final technical-review subagent
 
-After implementation and Lean validation, spawn a **new fresh independent-review subagent** over the exact final candidate diff. It must not inherit the executor's hidden reasoning or the Gate reviewer's reasoning.
+After implementation and Lean validation, spawn a **new fresh `codex-independent-review` subagent** over the exact final candidate diff. It must not inherit the executor's hidden reasoning or the Gate reviewer's reasoning.
 
-Use `.agents/skills/codex-independent-review/SKILL.md` and require at least:
+This subagent is the **technical/mathematical certifier**, not the clue hunter. Require at least:
 
 1. exact statement/finding correspondence;
 2. proof-integrity and trust-footprint inspection;
 3. independent reconstruction of the Lean theorem in ordinary mathematics;
 4. independent reconstruction/compression of the proof as mathematics rather than tactics;
-5. an explicit **Lean-vs-finding mathematical delta audit**, described below;
-6. explicit statement of the unformalized boundary;
-7. adversarial inspection of boundary cases, conventions, hidden assumptions, and accidental weakening;
-8. a final verdict of `PASS`, `PASS_WITH_NOTES`, `FAIL`, or `BLOCKED`.
+5. explicit statement of the unformalized boundary;
+6. adversarial inspection of boundary cases, conventions, hidden assumptions, and accidental weakening;
+7. a final verdict of `PASS`, `PASS_WITH_NOTES`, `FAIL`, or `BLOCKED`.
 
-### Lean-vs-finding mathematical delta audit
+The final technical reviewer remains read-only and **must not create research clues**. Keeping approval separate from clue search prevents a technically safe theorem from being judged through a creativity objective and gives the later fertility stage an uncontaminated target.
 
-This audit is mandatory even when the Lean file compiles, the theorem faithfully implies the intended finding, and the correspondence check appears exact. The reviewer must **actively investigate**, rather than merely notice incidentally, whether formalization exposed mathematical information that the finding did not make explicit.
+`FAIL` or `BLOCKED` prevents publication. Correct material defects and obtain a new fresh final technical review of the changed target.
 
-Compare the final Lean statement, the hypotheses actually consumed by the proof, the intermediate lemmas/factorizations, and the reconstructed human proof against the canonical finding and any persisted informal proof. In particular, try to determine whether:
+## Mandatory post-approval fertility subagent
 
-- the finding or issue assumes hypotheses that the formal proof does not actually need;
-- Lean requires a hypothesis, side condition, convention, or bridge that the finding leaves implicit;
-- the checked argument proves or strongly suggests a cleaner, stronger, weaker, or differently parameterized exact theorem boundary;
-- an apparently symmetric informal condition is used only one-sidedly in the proof, so that a conjunction/min-type condition may really be a disjunction/max-type condition or admit another asymmetric relaxation;
-- a case split, factorization, injective/surjective decomposition, normal form, quotient, kernel/range description, or invariant in Lean reorganizes the mathematics in a way that suggests a separate theorem or obstruction;
-- the formal definitions identify two objects the prose treats as different, or distinguish two objects the prose treats as interchangeable;
-- a proof-engineering necessity is actually revealing a mathematical degenerate case, missing bridge, or latent generalization rather than mere library plumbing.
+Only after the exact final candidate has received `PASS` or `PASS_WITH_NOTES` with no unresolved material defect, spawn **one more fresh isolated subagent** as the last analytical stage before publication.
 
-Do not treat every syntactic difference as mathematics. The point is to search for **semantic deltas in the theorem or proof structure** that could change understanding or open a falsifiable direction.
-
-The final review must explicitly record one of these outcomes:
+This subagent must load:
 
 ```text
-no material mathematical delta found
-non-blocking mathematical delta / clue candidate
-material finding-or-statement divergence
-```
-
-A `material finding-or-statement divergence` is a correctness/research challenge: route it through the adversarial-review protocol and do not hide it in a clue. A `non-blocking mathematical delta` may coexist with `PASS` or `PASS_WITH_NOTES`; if it yields a genuinely distinct falsifiable research question, apply the clue gate below. `No material mathematical delta found` is an acceptable outcome, but only after the active comparison above has actually been performed.
-
-`FAIL` or `BLOCKED` prevents publication. Correct material defects and obtain a new fresh final review of the changed target.
-
-### Reviewer-produced clues
-
-The **search for a mathematical delta is mandatory; clue creation remains selective**. The reviewer must not stop after establishing that Lean proves the intended theorem. It must inspect whether the exact Lean hypotheses and proof organization expose an additional direction beyond the issue boundary.
-
-If the formal-to-human reconstruction or delta audit exposes a **genuinely distinct, falsifiable research direction**, the final reviewer may load:
-
-```text
+.agents/skills/mathia-formalization-fertility-review/SKILL.md
 .agents/skills/mathia-research-clues/SKILL.md
 ```
 
-and create or materially strengthen only a `status: proposed` clue under the owning research line or global clue inbox as that skill permits.
+It must not inherit hidden reasoning from the executor, Gate reviewer, or final technical reviewer.
 
-Examples include a hypothesis relaxation suggested by the actual dependency structure, an equivalent formulation that isolates a new invariant, or a factorization/normal form that turns an exceptional case into a precise new classification problem. A shorter tactic proof, useful lemma, import simplification, or other purely formal convenience is not enough.
+Its task is not to approve the theorem again. It independently asks what the now-certified Lean formalization exposed that the finding did not preserve as first-class mathematics, including **unused formal structure and subproducts**.
 
-The reviewer, not the executor's convenience, decides whether the clue gate passes. Do not suppress a valid clue merely because proving the stronger/generalized statement was outside the controlling formalization issue: the clue records the question without silently expanding the theorem being published.
+In particular, it must inspect mathematically nontrivial definitions, equivalences, quotients, groups/subgroups, kernels/ranges, normal forms, factorizations, orbit spaces, order structures, and auxiliary invariants, and ask:
 
-When a reviewer-generated clue is ready, the executor may include that exact proposed clue in the same final direct-main publication as the Lean artifact, preserving `origin: independent-review` and all normal clue deduplication/evidence-boundary rules. Research Watch alone owns later clue disposition and any substantive finding.
+- what structure the object carries;
+- what part the final theorem actually consumes;
+- what information is discarded when that object is compressed to a cardinality, rank, dimension, scalar, existence statement, or other endpoint;
+- whether that discarded structure, combined with the bounded immediate mathematical neighborhood of the finding, yields a distinct falsifiable research question.
+
+Target-specific fertility questions in the issue are **minimum probes, not an exhaustive checklist**. The fertility subagent is specifically expected to notice subproducts the issue designer and executor did not anticipate.
+
+The subagent returns exactly one outcome under its skill:
+
+```text
+NO_MATERIAL_FERTILITY_DELTA
+PROPOSED_CLUE
+MATERIAL_CHALLENGE
+```
+
+`NO_MATERIAL_FERTILITY_DELTA` is valid only after the subproduct audit has actually been performed; it cannot mean merely "Lean proves the intended theorem."
+
+`PROPOSED_CLUE` may create or strengthen only `status: proposed` clues through `mathia-research-clues`, with exact formalization provenance and deduplication.
+
+`MATERIAL_CHALLENGE` blocks publication and returns to the research-challenge route. If resolution changes the target or proof, rerun Lean validation, final technical review, and this fertility stage on the new exact candidate.
 
 ## Direct-main publication gate
 
@@ -280,45 +258,35 @@ Publish directly to the repository default branch with **no PR** only when all o
 2. Gate 0 was performed by a fresh isolated subagent and returned `safe progression`;
 3. the final theorem is unchanged in mathematical meaning from the Gate-0 frozen boundary;
 4. repository-native Lean validation succeeds;
-5. the exact final candidate passed a fresh independent-review subagent with `PASS` or `PASS_WITH_NOTES` and no material unresolved defect;
-6. every principal Lean module satisfies the associated-finding/theorem-boundary comment contract;
-7. the only implementation diff is issue-authorized Lean source plus the smallest necessary Mathia Lean project wiring;
-8. no Gate report, review report, scratch script, generated log/data, or unrelated cleanup is included;
-9. any research clue included was produced/strengthened by the final independent reviewer, remains `status: proposed`, and passes `mathia-research-clues` deduplication/path gates;
-10. any material finding challenge has already been routed through the adversarial-review protocol rather than hidden in implementation;
-11. `main` was refreshed immediately before publication and the relevant files were checked for concurrent changes.
+5. the exact final candidate passed a fresh `codex-independent-review` technical subagent with `PASS` or `PASS_WITH_NOTES` and no material unresolved defect;
+6. the mandatory fresh post-approval fertility subagent completed with `NO_MATERIAL_FERTILITY_DELTA` or `PROPOSED_CLUE`;
+7. every principal Lean module satisfies the associated-finding/theorem-boundary comment contract;
+8. the only implementation diff is issue-authorized Lean source plus the smallest necessary Mathia Lean project wiring;
+9. no Gate report, technical-review report, fertility-review report, scratch script, generated log/data, or unrelated cleanup is included;
+10. any research clue included was produced/strengthened by the post-approval fertility reviewer, remains `status: proposed`, and passes `mathia-research-clues` deduplication/path gates;
+11. any material finding challenge has already been routed through the adversarial-review protocol rather than hidden in implementation;
+12. `main` was refreshed immediately before publication and the relevant files were checked for concurrent changes.
 
-If `main` moved in a way that touches the formalization target, dependencies, associated finding/review state, or clue path, reconcile and rerun the validation/review affected by that movement before publishing. Never force-push or overwrite another actor's changes.
+If `main` moved in a way that touches the formalization target, dependencies, associated finding/review state, or clue path, reconcile and rerun the validation/review stages affected by that movement before publishing. Never force-push or overwrite another actor's changes.
 
-Prefer one focused direct-main commit for the accepted Lean artifact plus any reviewer-produced proposed clue, for example:
-
-```text
-formalize(WP-014): prove two-point Schiffer indefiniteness
-```
-
-or:
-
-```text
-formalize(PC-063): prove anchor-Haar crossover
-```
+Prefer one focused direct-main commit for the accepted Lean artifact plus any fertility-reviewer-produced proposed clue.
 
 A finding-review sidecar created by an adversarial research subagent remains owned and published by that review workflow; do not fold unrelated review churn into the formalization commit merely for atomicity.
 
 ## Issue completion
 
-The formalization issue is control-plane state, not a PR-backed implementation issue.
-
 After successful direct-main publication:
 
 - leave a concise final issue comment linking the commit and principal Lean file(s);
 - state the exact bounded theorem outcome;
-- mention any reviewer-produced proposed clue path;
+- state the final technical-review verdict;
+- state the fertility outcome and mention any proposed clue path;
 - mention any surviving explicit unformalized boundary that matters for interpretation;
 - close the issue as completed.
 
 If Gate 0 concludes `reuse-only`, close the issue after recording the already-existing formal artifact and why it satisfies the target.
 
-If a material statement-design defect prevents trustworthy execution, return the issue to `design-required` rather than inventing a repaired theorem. If an unavailable capability blocks execution, use `blocked`.
+If a material statement-design defect prevents trustworthy execution, return the issue to design rather than inventing a repaired theorem. If an unavailable capability blocks execution, use the repository's blocked state/procedure.
 
 ## Terminal report
 
@@ -326,8 +294,8 @@ Keep the executor/user-facing handoff minimal:
 
 - controlling issue;
 - principal Lean artifact/commit or reuse-only result;
-- final independent-review verdict;
-- any proposed clue path;
+- final independent technical-review verdict;
+- post-approval fertility outcome and any proposed clue path;
 - any real blocker.
 
 Do not ask for a PR review or merge decision after the direct-main publication gate has passed.
