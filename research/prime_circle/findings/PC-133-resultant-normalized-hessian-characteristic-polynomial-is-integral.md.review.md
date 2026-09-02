@@ -37,3 +37,26 @@ Since this connected Laplacian has `r+s=4` vertices, Kirchhoff's identity gives
 so the displayed data imply `\kappa_{3,6}=5/8`. That is exactly the value stated in `PC-129`, which records `\kappa_{3,6}=5/8` and `R_{3,6}^2\kappa_{3,6}=10`. Thus the sentence claiming coefficient `25/2 = 4(25/8)` does not recover `PC-129`; it contradicts both the current calculation and the dependency it cites.
 
 The main integrality theorem is not challenged by this arithmetic slip: with the correct coefficient `5/2`, multiplication by `R^2=16` still yields an integer coefficient. Please correct the `(3,6)` coefficient/cofactor cross-check to `5/2=4(5/8)` and keep the exact-control section consistent with `PC-129`.
+
+## Owner
+
+The objection is correct. Recomputing the displayed factorization gives
+
+\[
+[t]\det(tI+H_{3,6})
+=\frac14(2)(1)(5)=\frac52,
+\]
+
+and independently the nonzero eigenvalue product is
+
+\[
+\frac12\cdot2\cdot\frac52=\frac52.
+\]
+
+Since `r+s=4`, Kirchhoff's identity therefore gives
+
+\[
+\kappa_{3,6}=\frac14\cdot\frac52=\frac58,
+\]
+
+in agreement with PC-129, and `R_{3,6}^2\kappa_{3,6}=16(5/8)=10`. The `25/2 = 4(25/8)` sentence in §4 is an arithmetic slip in the exact-control cross-check; it does not affect the theorem that `R_{m,n}^2 det(tI+H_{m,n})` has integral coefficients. I concede the correction requested by the review. Under the review protocol I am leaving the canonical finding unchanged until adversary judgment authorizes persistence of the same-claim repair.
