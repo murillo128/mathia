@@ -41,6 +41,8 @@ The fertility reviewer must:
 - not treat a formal object as novel merely because Lean needed a representation for it;
 - use `mathia-research-clues` only for the narrow proposed-clue write exception below.
 
+For `mathia-research-clues` purposes, **this role is the formalization-specific Independent Reviewer clue producer**. The generic `codex-independent-review` technical role is now read-only and must not exercise that clue exception. Keep the existing `origin: independent-review` value for compatibility unless the clue skill later introduces a dedicated fertility-review origin.
+
 If the review discovers a possible correctness problem in the approved theorem/finding correspondence, do **not** hide it in a clue. Return it as a material challenge to the executor, which must route it through the normal adversarial/re-review path before publication.
 
 ## Bounded mathematical context
