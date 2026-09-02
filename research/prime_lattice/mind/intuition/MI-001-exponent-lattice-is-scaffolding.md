@@ -4,39 +4,43 @@
 
 ## Core intuition
 
-The prime-exponent lattice is an exact and useful representation of multiplication, but its abstract combinatorics — even after natural topology, persistence, or the logarithmic spectrum are added — are too universal to determine Riemann zero geometry. What remains distinctive is not the free cone itself but the **entire rational-prime norm assignment together with global analytic structure and an independently forced observable capable of turning that norm into more than a programmable or RH-equivalent readout**.
+The prime-exponent lattice is an exact and useful representation of multiplication, but its abstract combinatorics and many natural scalar harmonic observables are too universal to determine Riemann zero geometry. What remains distinctive is not the free cone itself but the **entire rational-prime norm assignment together with global analytic structure and an independently forced observable that cannot be scalarized to a pre-existing one-variable zeta/prime-zeta readout**.
 
 ## Strongest justified principle
 
-PL-015 supplies the decisive deformation control. Beurling generalized-prime systems can preserve the same free exponent cone, square-free Boolean sector, Euler-product architecture, square-root-scale generalized-integer counting regularity, and even an arbitrarily long exact initial segment of the ordinary rational primes, while having radically different RH-type zero behavior. Therefore none of those shared structures can force the Riemann zero divisor.
+PL-015 gives the decisive deformation control: Beurling generalized-prime systems can preserve the free exponent cone, square-free Boolean sector, Euler architecture, square-root-scale generalized-integer regularity, and arbitrarily long ordinary-prime prefixes while having different zero behavior. PL-022 and PL-032 show that ordinary topology and persistence classicalize: the square-free energy complex is Björner's number-theoretic complex and the LogPrime barcode has only `[b,2b)` intervals, so RH remains cancellation among births rather than a new topological lifetime.
 
-PL-022 closes the static-topology escape: the energy cutoff of the square-free exponent cube is already Björner's number-theoretic simplicial complex, and the full exponent down-set already has a classical CW realization. RH becomes square-root cancellation of an Euler characteristic. For the canonical shifted square-free complex, ordinary Hodge spectra are integral and the heat supertrace is identically the same Euler characteristic for every time.
+PL-014 identifies structure that those controls need not preserve. The finite-idelic valuation quotient and product formula put the logarithmic norm inside Tate's completed additive/Fourier setting. That completion explains continuation and functional equation, not RH by itself.
 
-PL-032 closes the most immediate persistent refinement. The same `log p` filtration is the classical LogPrime quota complex of Pakianathan--Winfree, and its entire reduced barcode has the exact form `[b,2b)` for odd square-free `b`; every logarithmic lifetime is exactly `log 2`. Ordinary persistence therefore adds no zero-ordinate or long-lived topological scale: the RH-sensitive content remains the signed Möbius cancellation among births and degrees.
+PL-106 adds a programmable-readout control: a finite `log n` Hamiltonian plus an arbitrary diagonal phase produces the corresponding Dirichlet polynomial. The spectrum is a universal frequency carrier unless the coefficient observable is forced upstream.
 
-PL-014 identifies a classical boundary that the Beurling controls and bare cell complex generally do not preserve. The signed valuation lattice is `A_f^x/Zhat^x ~= direct_sum_p Z`, and the prime-lattice energy `log n` is the finite idelic log norm balanced by the archimedean place through the product formula. Tate's additive Fourier/Mellin theory then supplies analytic continuation and the functional equation on the **completed** adelic object. The bare Bohr torus is only the Pontryagin dual of a valuation quotient; it has forgotten the local-unit, additive, archimedean, and Poisson structure used by the functional equation.
+PL-108--PL-109 sharpen the harmonic boundary in opposite directions. A large energy-ball coherence `sum_{n<=x} n^(it)` can genuinely force a local cluster of zeta zeros by a recent inverse theorem, but the observable depends on the exponent vector only through scalar energy and acts near the Euler-product edge `Re s=1`. Conversely, a classical RH-equivalent Lindelöf criterion already lives on the **prime coordinate axes** (equivalently prime-power rays after partial summation), and related criterion schemas survive thin-prime and Beurling controls. Thus even a strong or RH-equivalent vertical-flow statement need not use mixed-support lattice geometry.
 
-PL-106 now adds an operator/readout control. On the finite logarithmic Hamiltonian `H_N=sum_{n<=N} log(n)|n><n|`, a thermal weight together with an arbitrary diagonal phase observable produces exactly the corresponding Dirichlet polynomial `sum a_n n^{-s}`. The engineered DQPT construction chooses `a_n=(-1)^(n+1)`, so the continued numerator is the classical eta function; in exponent coordinates the phase only tests whether the `2`-coordinate is occupied. Changing the diagonal probe programs a different Dirichlet series without changing the `log n` spectrum. Thus the logarithmic Hamiltonian is a universal frequency carrier, not a zero selector unless the coefficient observable itself is forced by additional arithmetic structure.
+PL-110--PL-113 close a natural full-lattice escape. Fixed-depth totient observables inspect every exponent coordinate but their Dirichlet transform is a scalar zeta ratio; second Riesz smoothing repairs the defective unsmoothed criterion yet remains a Mellin test of that same transported divisor. Breaking multiplicativity with any fixed-degree symmetric depth coupling still reduces to finitely many prime-zeta values. Even a broad class of pair interactions depending on relative log-prime energy `log p-log q` Fourier-diagonalizes to scalar vertical prime-zeta power spectra. Genuine coefficient-level mixing is therefore insufficient when symmetry and translation invariance allow scalarization.
 
 ## Evidence against overgeneralization
 
-This does not say that Tate theory proves RH, nor that every successful mechanism must literally be adelic. Tate explains continuation and the self-dual functional-equation axis, not why every zero lies there. Likewise PL-022/PL-032 do not rule out weighted, nonlocal, completed, sheaf-like, or adelically coupled operators on the exponent complex.
+This does not say mixed-prime geometry can never matter. PL-112--PL-113 leave asymmetric, growing-degree, non-Fourier-Stieltjes, operator-valued, singular, or globally completed couplings outside their scope. PL-108 also shows that scalar lattice coherence can carry real zero information; the point is that such information must not be mistaken for an independently geometric selector.
 
-PL-106 also does not diminish the value of engineered quantum readouts. It shows only that reproducing zeta zeros dynamically is not an independent localization mechanism when the relevant Dirichlet coefficients or Riemann--Siegel data are explicitly programmed into the observable. A genuine prime-lattice selector must explain why its probe/coupling is canonical before the target zero divisor is known.
+Likewise Tate theory explains continuation and the self-dual functional-equation axis, not why every zero lies there.
+
+## What remains possible
+
+A genuine prime-lattice mechanism should therefore be irreducible in two senses: it should fail matched Beurling/thin-axis controls, and its readout should not collapse under Euler/Mellin/Fourier diagonalization to a scalar zeta or prime-zeta function whose divisor is already present. Candidates may require asymmetric provenance-sensitive multi-coordinate operators, growing interaction degree, a noncommutative completion, or a finite--archimedean coupling forced before scalarization.
 
 ## Status / novelty
 
-The adelic identification, Beurling counterexamples, Björner/Duval--Reiner topology, LogPrime quota-complex framework, and programmable Dirichlet-polynomial identity are classical or persisted exact findings. The synthesis is a supported discriminator for this line: **global norm/completion data plus a forced selector, not free multiplicative combinatorics, ordinary topology/persistence, or a freely programmable logarithmic readout, are the surviving variables**.
+The adelic identification, Beurling controls, topology/persistence results, prime-axis criteria, inverse large-sum theorem, zeta-ratio identities, prime-zeta theory, and Fourier diagonalization are classical or literature-backed; the exact finite reductions are persisted findings. The synthesis is the supported discriminator: **mixed-support occupancy is not yet arithmetic specificity if the forced readout scalarizes**.
 
 ## Falsification criterion
 
-Give a mechanism whose complete inputs are preserved by one of the contrasting Beurling systems, determined by the ordinary Björner/LogPrime persistence module, or reducible to a freely chosen diagonal probe on the `log n` spectrum, yet which logically forces the ordinary Riemann zero divisor without importing additional rational-prime, completion, or selector data.
+Give a canonical mixed-coordinate observable inside the PL-110--PL-113 classes whose invariant cannot be expressed by the stated scalar zeta/prime-zeta data, or a mechanism preserved by the Beurling/thin-axis controls that nevertheless forces the ordinary Riemann divisor without additional rational-prime completion data.
 
 ## Lean-formalizable core
 
-- Unique-factorization exponent-cone identities.
-- Square-free energy down-set and Euler-characteristic identity.
-- Filtered `[b,2b)` barcode and factor-two persistence nilpotence.
-- Finite-idelic valuation quotient and product-formula relation.
-- Universal diagonal Dirichlet-polynomial encoder on the `log n` Hamiltonian.
-- Abstract control lemma: an invariant shared by systems with different target zero behavior cannot by itself determine that behavior.
+- Exponent-cone and square-free identities.
+- LogPrime `[b,2b)` persistence.
+- Universal diagonal Dirichlet-polynomial encoder.
+- Fixed-depth zeta-ratio scalarization.
+- Symmetric-depth Newton/prime-zeta reduction.
+- Relative-log-energy pair Fourier scalarization.

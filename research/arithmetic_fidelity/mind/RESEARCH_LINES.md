@@ -22,40 +22,34 @@ A decisive positive example should derive the relational observable canonically 
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`.
 
-Determine when vertical-rank, conditional-variance, statistical-sufficiency, full-jet, support-confusability, and zero-error criteria imply one another after adding connectedness, quasianalyticity, support separation, or other natural assumptions. AF-046 now supplies a sharp warning: distribution-law separation may have a positive total-variation margin while exact support-disjoint zero-error fidelity has zero margin in the same ambient channel simplex.
-
-A decisive result must state the topology/category and show either equivalence under sharp hypotheses or a persistent obstruction. Small average error, formal agreement, infinitesimal injectivity, base-model symmetry breaking, or positive law separation alone does not establish exact zero-error recoverability.
+Determine when vertical-rank, conditional-variance, statistical-sufficiency, full-jet, support-confusability, and zero-error criteria imply one another after adding connectedness, quasianalyticity, support separation, or other natural assumptions. A decisive result must state the topology/category and show either equivalence under sharp hypotheses or a persistent obstruction.
 
 ## Classify which analytic layer retains rational-prime norms
 
 **Linked intuitions:** `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`.
 
-The bare multiplicative monoid retains prime type but not rational-prime norms. Exact normalized Euler products and exact logarithmic derivatives can recover the unordered norm multiset, while principal-part/divisor compression can lose the zero-free analytic factor. Conversely, an independently justified rigid global class can shrink a same-divisor fiber: order-one growth plus reflection and one normalization recover the completed `xi` function.
+The bare multiplicative monoid retains prime type but not rational-prime norms. Exact normalized Euler products and exact logarithmic derivatives can recover the unordered norm multiset, while principal-part/divisor compression can lose the zero-free analytic factor. Conversely, an independently justified rigid global class can shrink a same-divisor fiber.
 
-The live problem is to compute the complete fiber at the exact destination used by a proposed mechanism and distinguish genuine intrinsic completion data from constraints added only after the target is known. A decisive result either reconstructs the normalized analytic object in its admitted category or exhibits a matched generalized-prime control that survives all retained structure.
+The live problem is to compute the complete fiber at the exact destination used by a proposed mechanism and distinguish genuine intrinsic completion data from constraints added only after the target is known.
 
 ## Determine which global test/source constraints make the measured span complete without programmable isolation
 
 **Linked intuitions:** `MI-005-test-family-fidelity-has-scale-and-dimension-gates`.
 
-For linear tests the exact object is the closed measured span `V_F`: its annihilator is the full signed-measure kernel, and restricted-source fidelity is `(S-S) intersect V_F^perp={0}`. Infinite families can lie on either side. Analytically accumulating double-positive modulations are complete on a bounded visible interval, while lattice modulation has the sharp alias horizon `hB=pi`; functions in an unmeasured generated algebra do not enlarge the statistic.
-
-The remaining question is to compute this span and source-restricted annihilator for mathematically forced explicit-formula families whose admissibility is genuinely global. A decisive positive result must prove completeness in the actual measured category without source-tuned programming; a decisive negative result is an exact alias or nonzero admissible annihilator.
+For linear tests the exact object is the closed measured span `V_F`: its annihilator is the full signed-measure kernel, and restricted-source fidelity is `(S-S) intersect V_F^perp={0}`. A decisive positive result must prove completeness in the actual measured category without source-tuned programming; a decisive negative result is an exact alias or nonzero admissible annihilator.
 
 ## Classify interaction support and collective stability beyond independent product sources
 
 **Linked intuitions:** `MI-006-interaction-support-governs-marginal-fidelity`.
 
-Arbitrary dependent sources have an exact degree filtration given by fusion spans of sigma-field joins, but support recovery is only the first gate. AF-040 shows that multichannel stability is collective: all pairwise sums can be closed with fixed positive pairwise angle while the full algebraic sum is nonclosed and the joint fusion lower bound vanishes.
+Arbitrary dependent sources have an exact degree filtration given by fusion spans of sigma-field joins, but support recovery is only the first gate. Multichannel stability is collective: all pairwise sums can be closed with fixed positive pairwise angle while the full algebraic sum is nonclosed and the joint fusion lower bound vanishes.
 
-A decisive theorem should compute both the source-dependent retained support and a **global** lower fusion-frame/closed-sum modulus for a mathematically forced family. Pairwise conditioning is not enough. A claimed minimal lift is incomplete if it restores algebraic recoverability while the collective stability constant collapses in the intended limit.
+A decisive theorem should compute both the source-dependent retained support and a global lower fusion-frame/closed-sum modulus for a mathematically forced family.
 
-## Make robust fidelity, target transport, and repair geometry intrinsic to the admitted representation category
+## Make robust fidelity, target transport, and asymptotic repair geometry intrinsic to the admitted representation category
 
 **Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision` and `MI-003-fidelity-endpoints-are-category-dependent`.
 
-AF-041--AF-045 identify exact distance-to-loss formulas in Hilbert, Euclidean-linear, compact smooth, and general Lipschitz settings. AF-046--AF-051 show that stochastic repair adds discrepancy- and target-dependent gates. AF-052--AF-054 sharpen the issue: uniform cloning is both Blackwell-reversible and TV-isometric, yet unrestricted zero-error repair changes because the refined target admits non-descending partitions; null-symbol stabilization collapses the presentation-relaxed TV radius to Bayes risk; and the maximal safe target envelope gives an exact criterion for which target enlargements preserve every repair radius under an isometric refinement.
+AF-041--AF-057 identify exact distance-to-loss and safe-target formulas, while AF-059--AF-063 now classify the asymptotic fixed-base boundary. In Euclidean powered products the finite-lift set changes at powers `1`, `2`, and `>2`; near-isometric renorming can destroy fixed-base liftability; an `ell^r` source moves the critical exponent to `r`; and the general powered problem is controlled exactly by the decay of the positive distance excess. In smooth strictly convex finite-dimensional norms, the whole first-order horofunction layer sees only signed distance to the convex hull.
 
-AF-055--AF-057 then classify important boundaries. Singleton linear safe envelopes are classical best coapproximation, finite-dimensional Hilbert set targets reduce to convex-roof/Delaunay radius geometry, and equivalent product norms can disagree on whether a finite safe lift exists. Topological equivalence alone is therefore too weak: the quantitative metric and the rule for transporting structural targets are part of the claim.
-
-The live problem is to classify categories in which the perturbation geometry, harmless representation equivalences, and admissible target transport are jointly intrinsic. A decisive positive theorem should prove a representation-invariant stability/repair margin under the full declared equivalence class. A decisive negative is a reversible/isometric refinement that changes the target radius, an unsafe point outside the maximal envelope, or a matched control that approaches the collision boundary at zero margin.
+The live problem is therefore to classify categories in which **both** first-order collision geometry and any higher-order hull-boundary scale are representation-invariant. A decisive positive theorem should prove a target-compatible stability/repair margin and boundary exponent under the full declared equivalence class. A decisive negative is a reversible/isometric refinement that changes the target radius, a near-isometric source renorming that changes the finite-lift regime, or a matched control that approaches the same first-order hull boundary while changing the higher-order decay law.

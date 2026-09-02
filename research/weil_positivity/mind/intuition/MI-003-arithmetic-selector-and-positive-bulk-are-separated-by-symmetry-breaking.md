@@ -1,42 +1,40 @@
-# MI-003 — Positive finite selectors persist, but fixed positive/coherent assembly cannot generate the discriminating logarithmic response
+# MI-003 — Positive selectors exist, but regular cover assembly classicalizes and exact logarithmic degree lives at a singular endpoint
 
-**Evidence level:** supported by exact pointed-cover selectors, matched positive families, Jensen/Fisher calculations, two-projection classification, and finite/coherent multireference no-go theorems
+**Evidence level:** supported by exact pointed selectors, Jensen/entropy identities, cover-cocycle dynamics, matched controls, and finite/coherent no-go theorems
 
 ## Core intuition
 
-The current evidence rejects the slogan that positivity itself destroys arithmetic: pointed-cover geometry contains positive operators with exact `log n` or prime-power `Lambda` traces. The obstruction appears when one tries to turn those finite carriers into a **distinguishing global response** while preserving positivity and functoriality. Regular positive calculus, fixed positive mixtures, finite multireference noncommutativity, and refinement-coherent finite global couplings all classicalize or have the wrong degree scale. The logarithm reappears only at singular or degree-dependent moving-angle boundaries whose canonicity and sign must be justified independently.
+Positivity itself does not erase arithmetic: pointed covers contain positive operators with exact `log n` or prime-power `Lambda` traces. The obstruction is assembling those finite carriers into a distinguishing global response while keeping positivity and functoriality. The newest cover-Jensen results sharpen this boundary: a genuinely positive logarithmic cocycle exists and even forces the exact `log n` state dynamically, but that state is the same singular zero-frequency endpoint already known to be nonclosable and universal for ordinary circle covers.
 
 ## Strongest justified principle
 
-WP-081--WP-086 establish the first separation. Positive shifted cover coboundaries preserve `log n` across a whole family, so the coefficient does not identify the covariant representative. Regular homogeneous Jensen responses lose exact Mangoldt support except at a singular inverse-scale endpoint; the natural Fisher tangent diverges at the covariant origin; and bounded positive two-projection calculus has only linear-or-bounded trace scale. A principal-angle pseudolog can produce `log n` on part of the degree set, but only through a reference-relative singular determinant.
+WP-081--WP-091 show that positive finite selectors persist while regular homogeneous Jensen responses, fixed positive mixtures, finite multireference calculi, and coherent finite auxiliary sectors have the wrong degree scale or classicalize. Exact logarithmic behavior reappears only at singular/moving-angle boundaries.
 
-WP-087 rules out repairing that reference dependence by positive averaging. Any fixed nonnegative mixture of cover-angle pseudologs that has nonzero degree-two response strictly overproduces degree four relative to `log 4=2 log 2`. Positive reference mixing cannot cancel the defect.
+WP-093 provides the strongest positive survivor: the critical weighted Dirichlet form has exact cover covariance and a classical continuous-dual-Hahn spectral parameter. WP-104 applies operator concavity of `log` to obtain a bona fide positive Jensen defect. Its ordinary trace is extensive, with trace density
 
-WP-088 permits a much larger noncommutative finite reference dictionary **before** scalarization. On a common-multiple tower `n=kL`, every fixed bounded expression in the reference and target cover projections decomposes into fixed spectral values with multiplicities affine in `k`. Every fixed additive spectral readout is therefore `Ak+B`, never `log(kL)`.
+`c_n=2(H_n-1)-log n`,
 
-WP-089 adds a finite auxiliary/global sector. Refinement-coherent coupling is forced into one normalized collective line, so it changes only one fixed block while the bulk repeats; additive spectra remain affine in `k`. Repeating a nonzero local-strength coupling instead violates positivity as `k` grows. A degree-dependent moving principal angle can produce exact `log k`, but precisely because it drops the coherence constraint and inserts a new scale that must come from additional geometry.
+whose Möbius primitive has mixed-degree contamination and wrong prime-power values. Thus positivity is real, but the canonical trace scalarization is arithmetically universal.
 
-WP-090 closes the analogous positive-mixture escape for shifted resolvents. If a fixed positive Borel mixture matches `log n` at degree two and on any unbounded degree sequence, the measure is forced to `delta_0`. Positive averaging cannot cancel the digamma contamination while retaining a nontrivial shifted family.
+WP-105 identifies the bulk Jensen symbol exactly as a relative entropy of the cover alias distribution. It is bounded by `log n`, and equality occurs only at the singular Bloch phase `0`. Any regular positive bulk state gives strictly less than `log n`; exact logarithmic degree forces the boundary character already isolated in WP-094--WP-095.
 
-WP-091 supplies a complementary caution about local sign proofs. The short finite Schiffer certificate found by formalization does not encode the global Mittag--Leffler pole structure: after finite-order contact is factored, finite polynomial positivity certificates are generic on compact one-dimensional intervals. A finite certificate is evidence for the sign it proves, not for a hidden global analytic mechanism.
+WP-106 removes the concern that this endpoint is merely chosen post hoc. The finite Jensen defects form an exact positive semigroup cocycle; the bulk alias kernels form a Markov semigroup whose unique stationary state and global attractor is `delta_0`. Under Haar control this is just the classical Fejer approximate identity. The cover geometry therefore **forces** the singular endpoint, but what it forces is universal cover dynamics, not a rational-prime selector. Prime-power support still requires an additional signed primitive, and no archimedean/polar sector appears.
 
 ## What remains possible
 
-A successful Weil mechanism must couple the exact finite selector to the archimedean/polar sector **before** the audited finite/coherent scalarizations, with a geometry-forced singular scale, infinite/nonperiodic auxiliary sector, higher cohomology, twisted family/boundary data, or genuinely nonseparable finite--archimedean interaction. The final sign must be proved independently rather than manufactured by `-log`, absolute value, or a degree-dependent coefficient chosen to fit `log n`.
-
-The matched-control requirement is now strong: `log n` in a positive operator is not enough; positive mixtures are not enough; finite noncommutative reference algebras are not enough; and a fixed coherent finite global sector is not enough. A positive advance must explain why the missing moving scale is intrinsic.
+A successful Weil mechanism must couple the exact finite selector to the archimedean/polar sector before the audited trace/bulk scalarizations, or change the operator/domain category so the forced endpoint acquires a new source-specific meaning. Higher cohomology, twisted coefficients, nonseparable finite--archimedean geometry, or a singular boundary theory can lie outside the current no-go, but their sign and scale must be derived rather than fitted.
 
 ## Status / novelty
 
-Operator concavity, Fisher information, principal angles, finite projection algebras, and compact positivity certificates are classical. The persisted Mathia content is their exact specialization to pointed covers and the resulting boundary between positive finite selectors and a genuinely global sign-producing logarithmic response.
+Operator Jensen inequalities, entropy, Fejer kernels, Markov refinement, principal angles, and finite projection algebras are classical. The persisted synthesis is that **even a canonical positive logarithmic cocycle can be too universal**: exact `log n` is dynamically forced only at a singular endpoint that ordinary cover geometry already supplies independently of prime arithmetic.
 
 ## Falsification criterion
 
-Derive a fixed positive/coherent construction inside the audited families whose additive spectral response is exactly `log n` on all degrees, contradicting WP-087--WP-090. A positive route outside the scope must state the new infinite, singular, noncoherent, cohomological, or finite--archimedean structure and derive its scale and sign independently.
+Produce a regular positive cover state with exact `log n` response despite WP-105, or a source-specific invariant of the WP-104--WP-106 cocycle not reproduced by generic integer circle covers. A positive escape must identify the new finite--archimedean or singular structure and prove its sign independently.
 
 ## Lean-formalizable core
 
-- Dyadic inequality for positive reference mixtures.
-- Common-multiple tensor decomposition and affine spectral multiplicities.
-- Coherent collective-block decomposition.
-- Positive-mixture rigidity for shifted resolvents.
+- Finite cover covariance and Jensen positivity.
+- Alias-probability entropy identity.
+- Uniqueness of the `log n` endpoint state.
+- Markov semigroup composition and attraction to the endpoint.

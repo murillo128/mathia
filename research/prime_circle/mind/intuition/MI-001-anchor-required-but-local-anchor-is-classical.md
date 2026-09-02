@@ -1,43 +1,43 @@
-# MI-001 — Finite canonical circle compressions and standard spectralizations repeatedly classicalize
+# MI-001 — Finite canonical circle compressions and their differential spectralizations repeatedly classicalize
 
-**Evidence level:** supported by exact structural reductions, Fourier identities, and classical cyclotomic/Farey/Toeplitz/OPUC controls
+**Evidence level:** supported by exact structural reductions, Fourier identities, and classical cyclotomic/Farey/Toeplitz/OPUC/hyperplane controls
 
 ## Core intuition
 
-Breaking rotational symmetry by naming vertices or retaining old/new structure is necessary to avoid the coarsest Prime-Circle quotients, but neither finite combinatorial complexity, fixed translation-invariant nonlocality, nor standard finite-section spectral machinery is enough to create a new arithmetic channel. The current evidence closes three large classes: finite cotangent networks reduce to endpoint/cyclotomic algebra, cumulative primitive-root kernel statistics reduce to classical Farey/Mertens Fourier data, and natural Toeplitz/CMV/resultant spectralizations of finitely many cyclotomic shells reduce to finite-period, finite-state, or tautological cyclotomic data.
+Breaking rotational symmetry by naming vertices or retaining old/new structure is necessary to avoid the coarsest Prime-Circle quotients, but finite combinatorial complexity, fixed translation-invariant nonlocality, standard finite-section spectral machinery, and even full finite vertex-dependent deformation are not enough to create a new arithmetic channel. The audited finite objects repeatedly reduce to endpoint/cyclotomic algebra, classical Ramanujan/Farey transforms, finite polynomial spectralization, or collision-hyperplane geometry.
 
 ## Strongest justified principle
 
-PC-090--PC-097 close the finite cotangent sector. Reflection parity, Galois-rational complete-shell contractions, arbitrary diagonal shell weights, cycles, parallel edges, repeated shells, and collision strata all reduce by exact confluent elimination to one-body endpoint Cauchy/cyclotomic data. PC-098 then shows that fixed finite shell support with arbitrary composition depth is finite-state by Cayley--Hamilton, and PC-099 shows that canonical complete-preimage growth has universal affine-band limits determined by the base spectrum.
+PC-090--PC-099 close the finite cotangent and fixed-depth sectors: arbitrary finite networks reduce to one-body endpoint Cauchy/cyclotomic data; fixed finite shell support is finite-state; and canonical complete-preimage growth has universal affine-band limits.
 
-PC-105 supplies a distinct nonlocal control. The cumulative primitive-root cloud is exactly the Farey cloud, and its Fourier coefficients are finite divisor transforms of the Mertens function. In particular `nu_N^(1)=M(N)/A_N`, so the familiar RH-sensitive rate is already the classical Mertens criterion. Every fixed translation-invariant positive kernel on the circle packages the same summatory Ramanujan/Mertens modes in a weighted `l^2` norm.
+PC-105 gives the cumulative nonlocal control. The primitive-root cloud is exactly the Farey cloud, with Fourier coefficients finite divisor transforms of Mertens. Fixed translation-invariant positive kernels therefore package classical Ramanujan/Mertens modes rather than create a new carrier.
 
-PC-121--PC-125 now close the most natural finite-shell spectralization escape. For the scalar symbol `|Phi_n|^2`, the Toeplitz determinant is an exact quasipolynomial in section size with period dividing `n`; its ordinary generating function is rational and its leading term is the cyclotomic discriminant. The coherent multi-shell matrix symbol `p p^*` is overcomplete: its block determinant becomes identically zero beyond a finite dimension threshold and the last two-shell nonsingular section is a cyclotomic resultant. Passing to the canonical pseudodeterminant removes the off-diagonal shell coherence and leaves a fixed-band scalar recurrence with rational generating function.
+PC-121--PC-125 close the first finite-shell spectralization escape. Toeplitz determinants are finite-period quasipolynomials, coherent block determinants become resultants or vanish by rank, pseudodeterminants reduce to fixed-band recurrences, CMV returns the input primitive roots, and a scalar relative-scale resultant has only cyclotomic torsion zeros.
 
-The alternative OPUC/CMV spectralization is equally rigid. Equal mass on primitive roots has normalized Ramanujan moments; the finite CMV spectrum is exactly the primitive roots supplied as input and its characteristic polynomial is `Phi_n`. Finally, promoting a pairwise shell resultant to a relative complex scale does create a divisor, but every zero is a root-of-unity ratio and the whole divisor factors into ordinary cyclotomic polynomials with Ramanujan-correlation multiplicities.
+PC-126--PC-130 now close the natural deformation escape around those resultants. Moving a complete shell by `PGL_2` makes the relative resultant a product of pairwise collision hyperplanes. Its logarithm is a classical arrangement master function, so every finite differential response tensor remains an edgewise sum. Allowing all vertices to move independently makes the Hessian exactly the complete-bipartite inverse-square chord Laplacian. Its reduced determinant is a weighted spanning-tree polynomial whose cyclotomic-resultant normalization is integral; for coprime shells even the surviving CRT incidence has a multiplicative Fourier table given by fixed Dirichlet `L(2,chi)` data.
 
-These results are complementary. Finite topology, convolutional nonlocality, and standard finite-shell spectral machinery can all look richer while remaining functions of the same finite cyclotomic/Fourier information layer.
+Thus passing from divisor to gradient, Hessian, determinant, or vertexwise deformation does not manufacture a hidden many-body spectral layer. The finite relational information is real, but the canonical readouts remain functions of classical collision/chord/cyclotomic packages.
 
 ## What remains possible
 
-A surviving Prime-Circle mechanism must use structure not already determined by endpoint/cyclotomic elimination, cumulative Fourier data, or finite polynomial spectralization. Possibilities include a genuinely cross-level operator retaining provenance before finite-shell compression, an independently forced incomplete growing family, a singular/domain-changing completion, or a global coupling whose operator ideal and spectral data are not fixed by finite-state polynomial algebra.
+A surviving Prime-Circle mechanism must use structure not already determined by endpoint elimination, cumulative Fourier data, finite polynomial spectralization, or finite collision-arrangement response. Plausible categories are genuinely cross-level operators retaining provenance across unbounded shell families, singular/domain-changing completions, noncoprime/infinite-level nonlinear arrangements, or the global uniformization/monodromy branch that is not a finite resultant construction.
 
-Any candidate should first prove nonfactorization through the closed classes above. Rewriting Mertens discrepancy in a positive kernel norm, replacing a finite shell by its CMV matrix, increasing Toeplitz section size at fixed conductor, taking a pseudodeterminant of the one-channel coherent lift, or promoting a resultant by a single relative scale no longer qualifies.
+Any candidate should first prove nonfactorization through the closed classes above. Increasing deformation dimension at fixed finite shell support, differentiating a resultant, taking a Hessian determinant, or Fourier-transforming coprime CRT incidence no longer qualifies.
 
 ## Status / novelty
 
-The reductions use persisted exact findings and classical cotangent, Ramanujan, Farey, Mertens, Toeplitz, resultant, and OPUC/CMV theory. The synthesis is a closure statement for the audited canonical finite/convolutional/spectralized Prime-Circle sectors, not a theorem about every possible circle operator.
+The reductions use persisted exact findings and classical cotangent, Ramanujan, Farey, Mertens, Toeplitz, resultant, OPUC/CMV, hyperplane-arrangement, graph-Laplacian, matrix-tree, and Dirichlet-`L` theory. The synthesis is a closure statement for the audited canonical finite/convolutional/spectralized/deformation sectors, not a theorem about every circle operator.
 
 ## Falsification criterion
 
-Exhibit a canonical object covered by PC-090--PC-125 whose invariant is not determined by the stated endpoint/Fourier/cyclotomic finite-state data, or derive a new cross-level spectral variable before those reductions apply and prove that it survives matched non-arithmetic controls.
+Exhibit a canonical finite object covered by PC-090--PC-130 whose invariant is not determined by the stated endpoint/Fourier/collision/cyclotomic data, or derive a cross-level spectral variable before those reductions apply and prove that it survives matched non-arithmetic controls.
 
 ## Lean-formalizable core
 
-- Confluent partial-fraction elimination of finite cotangent networks.
+- Confluent elimination of finite cotangent networks.
 - Fixed-state Cayley--Hamilton recurrence.
 - Exact cumulative Ramanujan/Mertens Fourier identity.
-- Toeplitz finite-section quasipolynomial/rank reductions.
-- Gram pseudodeterminant reduction to an output frame operator.
-- Primitive-root moment/CMV characteristic-polynomial identity.
-- Cyclotomic factorization of the relative-scale resultant.
+- Toeplitz/Gram/CMV finite reductions.
+- Hyperplane factorization of projective shell resultants.
+- Bipartite inverse-square chord Hessian.
+- Matrix-tree/resultant integrality and coprime CRT Fourier classification.
