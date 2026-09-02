@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-mixed-prime-positive-completion-selector-quotient
 type: research-clue
-status: proposed
+status: accepted
 origin: mind
 target_line: weil_positivity
 based_on:
@@ -37,4 +37,12 @@ A decisive negative is a theorem that any positive/unital or geometrically admis
 
 ## Evidence boundary
 
-No such quotient or coupling is established. WP-097 proves only existence of a positive mixed-prime completion, not that its mixed coefficients can be removed canonically or that it matches the global Weil form. This file is therefore a research lead, not evidence for Weil positivity or for RH.
+No finite--archimedean coupling with the required properties is established. WP-097 proves only existence of a positive mixed-prime completion, not that its mixed coefficients can be removed canonically or that it matches the global Weil form. This file remains a research lead, not evidence for Weil positivity or for RH.
+
+## Research disposition
+
+Accepted, but sharply narrowed by [`WP-098`](../findings/WP-098-positive-prime-torus-quotients-preserving-coordinate-observables-cannot-erase-mixed-prime-modes.md).
+
+The same-algebra positive quotient / conditional-expectation route is closed: a unital positive map that preserves each prime-coordinate unitary lies in the multiplicative-domain regime and therefore preserves all mixed products, while the exact first-order Fourier projector that deletes mixed modes is not positivity preserving. Even a state-specific positive sparse output with finite diagonal mass recreates the divergent `WP-096` bound.
+
+The remaining live question is narrower: can an independently forced **enlarged finite--archimedean architecture** alter the prime-coordinate observables before compression — for example by turning them into strict contractions or coupling them to a non-scalar global sector — so that the multiplicative-domain obstruction no longer applies, while a new sign theorem survives and the exact Weil readout emerges only after the global coupling?
