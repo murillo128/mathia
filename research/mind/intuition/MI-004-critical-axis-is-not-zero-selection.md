@@ -1,43 +1,43 @@
-# MI-004 — A canonically forced critical half-weight or RH-equivalent readout is not a zero-selection mechanism
+# MI-004 — A canonical critical axis, exact zero readout, or positive auxiliary Hilbert space is not a zero-selection mechanism
 
 **Evidence level:** supported by exact/classical mechanisms in multiple branches
 
 ## Core intuition
 
-Mathia now has several independent mechanisms that canonically produce the critical half-weight or expose the Riemann zero divisor without selecting it. Self-duality, Hilbert/measure normalization, finite-horizon correlation balance, pointed-cover isometry, power-transfer thresholds, and programmable logarithmic Hamiltonians can all produce `1/2` or an RH-equivalent diagnostic for structural reasons. **Axis/weight generation, faithful readout, diagnostic equivalence, and zero selection are different achievements.**
+Mathia now has canonical constructions that generate the half-weight, exact constructions that realize or trace the full Riemann zero divisor, and unconditional positive Hilbert structures built from completed zeta data. These are three different achievements, and none alone forces the zeros onto `Re(s)=1/2`.
+
+The missing step is a **positive arithmetic identification on the zero-sensitive object itself**: a polarization, metric, unitary structure, sign theorem, or quantitative source estimate that rules out the off-axis alternative rather than merely representing it faithfully.
 
 ## Strongest justified principle
 
-Prime Lattice gives the cleanest geometric and readout controls. Tate duality and Hilbert/measure constructions canonically distinguish `Re(s)=1/2`, while Bruhat--Tits/Ramanujan geometry produces the same half-axis together with exact Ihara determinant theorems in generic non-arithmetic graph families. PL-106 then shows that the finite `log n` Hamiltonian can encode any chosen unimodular Dirichlet polynomial through a diagonal probe. The zeta DQPT construction selects the eta coefficients explicitly, so its singularities faithfully read the already encoded zeta divisor; a hypothetical off-line zero would be read out just as well. A physical or operator realization of zeros is not yet a principle forcing their location.
+Prime Lattice makes the separation exact. Tate duality gives `Re(s)=1/2` as the Hermitian self-dual axis. Deninger's Hodge template explains how a positive pairing would turn that axis into a localization theorem: if the flow acts with weight one on the relevant positive cohomology, then `Theta-(1/2)I` is skew-adjoint. The load-bearing hypothesis is the arithmetic cohomology/polarization, not the appearance of the number `1/2`.
 
-The completed-Weil second-scale branch gives another diagnostic example. On fixed smooth probes its critical amplitude is an explicit almost-periodic zero-frequency sum; boundedness can be RH-equivalent, yet under RH the signal need not converge. Hull, joining, and adaptive resonance constructions reorganize zero data already supplied by the explicit formula rather than force the divisor onto the line.
+PL-119 is an even stronger readout control: Meyer's adelic representation already realizes every zeta zero spectrally with an exact explicit-formula character. A hypothetical off-axis zero is represented just as faithfully. PL-120 gives the complementary positivity control: Suzuki already has an unconditional canonical positive Hilbert norm from zeta screw data, while RH is the additional theorem that identifies it with the zero-sensitive Weil Hermitian form.
 
-Möbius Cancellation supplies the quantitative analogue. MC-003 shows that prime-power information naturally reaches the square-root threshold because the first Möbius/Liouville discrepancy occurs at prime squares, but that threshold is a transfer boundary rather than a source of cancellation. MC-004--MC-006 show that qualitative Chowla, exact support, multiplicativity, mean zero, and current averaged correlation decay can all coexist with only logarithmic or near-linear global cancellation. MC-008 is sharper still: an explicit same-prime comparator has an RH-equivalent square-root summatory criterion even though absolute convolution inversion fails below exponent `1`; the equivalence comes from an auxiliary factor that is analytically nonmasking in the critical half-strip. The criterion remains diagnostic unless the comparator bound itself is proved upstream.
+PL-124 shows that even the desired-looking frequency-lattice-to-zero-divisor trace architecture is classical and universal. Poisson--Newton turns general Dirichlet frequency semigroups into divisor trace formulas; for zeta the logarithmic coefficients collapse the full exponent cone to the prime-power rays. Functional-equation centering at `1/2` does not remove the exponential real factor contributed by an off-axis zero.
 
-Weil Positivity independently forces the half-weight through cover isometry and recovers exact finite prime-power coefficients in positive local operators, yet the global selector/sign problem survives. Prime Circle and Prime Flute likewise exhibit canonical carriers and relative objects that retain rich arithmetic/geometric data while their natural determinants or Selberg cocycles remain zero-free in the relevant half-planes.
+Weil Positivity reaches the same boundary from the sign side. WP-117 constructs a genuinely positive Riemann Gamma Markov/Schoenberg symbol selected independently by the Prime-Circle `q=2` channel, but WP-118--WP-120 show that canonical positive ways of gluing this archimedean object to the exact critical finite-prime amplitudes diverge. An independently positive sector is not yet the required global positive identification.
 
-The programmatic requirement is therefore
-
-`canonical carrier/critical normalization + independently forced arithmetic selector + compatible global sign/topology/quantitative theorem -> possible RH mechanism`.
+Möbius Cancellation supplies the quantitative analogue. An RH-equivalent Riesz or mean-absolute diagnostic is not a source theorem; MC-019 shows that a natural path-energy norm already contains an RH-equivalent coarse mode. Nonlinear scale-doubling identities remain exponent-neutral unless some retained signed boundary datum receives an independent cancellation estimate.
 
 ## Evidence against overgeneralization
 
-The critical line is not arbitrary. Tate duality, pointed-cover isometry, square-layer convergence, and several analytic norms all distinguish it canonically. Likewise an RH-equivalent comparator or dynamical readout can be mathematically valuable. The restriction concerns explanatory force: the decisive estimate must be proved **before** the target divisor is used to define or analyze the observable.
+The critical line, exact zero-spectrum models, and positive zeta-derived Hilbert spaces are mathematically valuable. They identify the right symmetry, representation, or possible target metric. The restriction concerns explanatory force: **the same theorem must connect the arithmetic representation to the positive/unitary structure that excludes off-axis behavior**, or an independently proved source estimate must do the equivalent quantitative work.
 
-An engineered probe, a continued zero expansion, or a transfer factor whose zero-free property is itself obtained from `1/zeta` cannot serve as the missing selector merely because the final statement is equivalent to RH.
+An engineered probe, a zero expansion, a generic trace formula, or positivity living on an auxiliary completion cannot be promoted to selection merely because the final statement is equivalent to RH.
 
 ## Status / novelty
 
-The component mechanisms are classical or exact persisted findings. Their separation into kinematic critical normalization, programmable/faithful readout, diagnostic criterion, arithmetic selector, and independent sign/quantitative theorem is cross-branch synthesis.
+The component mechanisms are classical or exact persisted findings. Their separation into critical normalization, faithful divisor readout, auxiliary positivity, and arithmetic polarization/selection is cross-line synthesis.
 
 ## Falsification criterion
 
-Derive an audited critical-line support theorem from one of the structural half-weight/readout mechanisms itself without importing an explicit zero-location statement or an already equivalent correlation theorem. Such a proof would turn a kinematic/diagnostic object into a genuine selector.
+Derive an unconditional positive/unitary structure on an exact zeta-zero representation that directly forces `Theta-(1/2)I` to be skew-adjoint, or prove an equivalent Weil-form positivity/metric-identification theorem from upstream arithmetic data. A new exact spectral realization or positive norm that still permits hypothetical off-axis zeros does not falsify the principle.
 
 ## Lean-formalizable core
 
-- Exact degree scaling and `n^{-1/2}` normalization.
-- Fixed-axis identity for Tate duality.
-- Universal diagonal Dirichlet-polynomial encoder on the `log n` spectrum.
-- Square-layer convergence threshold for Möbius/Liouville transfer.
-- Logical separation between divisor-derived readouts and upstream zero-selection theorems.
+- Tate self-dual half-axis identity.
+- Hodge-pairing identity implying skew-adjoint centered generator.
+- Logical separation of spectral realization and localization.
+- Prime-power-ray collapse in logarithmic trace formulas.
+- Projection of positive norms onto RH-equivalent coarse readouts.

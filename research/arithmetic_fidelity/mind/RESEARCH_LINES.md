@@ -46,10 +46,18 @@ Arbitrary dependent sources have an exact degree filtration given by fusion span
 
 A decisive theorem should compute both the source-dependent retained support and a global lower fusion-frame/closed-sum modulus for a mathematically forced family.
 
-## Make robust fidelity, target transport, and asymptotic repair geometry intrinsic to the admitted representation category
+## Make repair geometry intrinsic to the admitted smooth or nonsmooth representation category
 
 **Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision` and `MI-003-fidelity-endpoints-are-category-dependent`.
 
-AF-041--AF-057 identify exact distance-to-loss and safe-target formulas, while AF-059--AF-063 now classify the asymptotic fixed-base boundary. In Euclidean powered products the finite-lift set changes at powers `1`, `2`, and `>2`; near-isometric renorming can destroy fixed-base liftability; an `ell^r` source moves the critical exponent to `r`; and the general powered problem is controlled exactly by the decay of the positive distance excess. In smooth strictly convex finite-dimensional norms, the whole first-order horofunction layer sees only signed distance to the convex hull.
+The finite-dimensional boundary is now structurally split. Strongly-convex Minkowski geometry restores the Euclidean powered-lift phase diagram, and on a hull boundary the support-contact profile controls the higher-order exponent. Polyhedral geometry behaves differently: norming faces preserve first-order provenance, the safe set is an exact finite cone hull, and all powers `p>1` share one dual-face coherence gate.
 
-The live problem is therefore to classify categories in which **both** first-order collision geometry and any higher-order hull-boundary scale are representation-invariant. A decisive positive theorem should prove a target-compatible stability/repair margin and boundary exponent under the full declared equivalence class. A decisive negative is a reversible/isometric refinement that changes the target radius, a near-isometric source renorming that changes the finite-lift regime, or a matched control that approaches the same first-order hull boundary while changing the higher-order decay law.
+A decisive positive theorem must show that the smooth contact order or nonsmooth face structure used by an arithmetic application is invariant under its declared representation equivalences. A decisive negative is an admissible re-encoding that changes the contact exponent, the norming-face witness, or the resulting safe-lift classification.
+
+## Prove cross-scale compactness before promoting finite-resolution witnesses to compact-target fidelity
+
+**Linked intuitions:** `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`.
+
+AF-069--AF-075 identify a separate infinite-resolution gate. Compact-target consequence is controlled by the compact-transversal margin and is equivalent to coherent finite approximants or arbitrarily accurate finite witness pools whose pooled union is precompact. For bounded witness families, vanishing Kolmogorov widths are the exact quantitative non-escape test.
+
+A viable growing-window, increasing-degree, or refinement construction should therefore derive one source-natural compactness mechanism across scales. Per-cutoff finite rank, small local error, or low complexity is insufficient when the witnessing directions can escape as the resolution grows.

@@ -2,13 +2,21 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Distinguish exact rational-prime completion and irreducible readouts from Beurling, axis-only, and scalarization controls
+## Distinguish exact rational-prime completion and irreducible readouts from Beurling, axis-only, Galois-scalarization, and trace-formula controls
 
-**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-002-critical-line-is-boundary-not-selector`.
+**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, and `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
 
-The free cone, ordinary topology/persistence, generic local temperedness, and programmable `log n` readouts do not determine Riemann zeros. PL-108 adds a genuine but scalar zero-forcing bridge from large energy-ball coherence; PL-109 shows that an RH-equivalent vertical-flow criterion already exists on prime axes and is portable to thin-prime/Beurling settings. PL-110--PL-113 then show that full-lattice fixed-depth observables, Riesz repairs, bounded-degree symmetric depth couplings, and translation-invariant relative-log-prime pair kernels scalarize to zeta ratios or prime-zeta power spectra.
+The free cone, ordinary topology/persistence, generic local temperedness, and programmable `log n` readouts do not determine Riemann zeros. Full-lattice fixed-depth observables and relative-log-prime pair kernels scalarize to zeta ratios or prime-zeta spectra. PL-114--PL-117 show that fixed congruence/Galois, profinite class-function, and compatible `l`-adic labels do not automatically create an intrinsic cross-prime matrix frame. PL-124 adds a global control: Poisson--Newton already converts general Dirichlet frequency lattices into divisor trace formulas, while zeta's logarithmic coefficients collapse the full cone to prime-power rays.
 
-A surviving lattice mechanism must therefore use rational-prime completion plus an observable that is both independently forced and **irreducibly multicoordinate**: it must survive Beurling/thin-axis controls and resist Mellin/Euler/Fourier scalarization. Asymmetric provenance, growing interaction degree, operator-valued couplings, or finite--archimedean completion remain open categories.
+A surviving lattice mechanism must therefore use rational-prime completion plus a readout that is independently forced, irreducibly global, and not already supplied by character scalarization or universal Dirichlet trace machinery.
+
+## Target the arithmetic polarization rather than another spectral realization
+
+**Linked intuitions:** `MI-002-critical-line-is-boundary-not-selector` and `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
+
+Deninger identifies the Hodge/polarization mechanism that would force the half-axis; Meyer already realizes every zeta zero spectrally with an exact adelic trace formula; Suzuki already supplies an unconditional positive zeta-derived Hilbert norm. The missing theorem is the identification of the zero-sensitive representation/form with a positive or unitary structure strong enough to exclude off-line spectrum.
+
+A decisive positive should produce that pairing/metric/determinant relation from arithmetic completion itself. Another exact trace formula, another operator whose spectrum contains the zeros, or another auxiliary positive norm is not a new line unless it supplies the missing polarization identity.
 
 ## Resolve the discrete Nyman defect with target-sensitive data
 

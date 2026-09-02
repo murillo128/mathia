@@ -2,34 +2,36 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Identify the signed or multiscale datum that beats the polynomial information-budget barrier
+## Find a signed or multiscale datum that beats the polynomial information budget
 
-**Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`.
+**Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget` and `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`.
 
-MC-001 gives an exact black-box local-to-global transfer bound, while MC-004--MC-006 show that the same quantitative barrier survives much stronger-looking inputs. A surviving cancellation mechanism must identify additional source-natural data that rule out these controls at polynomial strength. Natural candidates are signed correlations between overlapping windows, multiscale compatibility of exceptional sets, quantitative prime-local constraints, bilinear structure, or higher correlations uniform over polynomial ranges.
-
-A decisive result must state the transfer inequality and produce a fixed polynomial gain after every exceptional-set, scale-transition, and correlation-range loss.
+Local qualitative randomness, fixed-pattern Chowla information, exact squarefree support, and single-scale pretentious distances do not transfer polynomial cancellation at the required strength. A decisive positive must identify a source-natural family whose information budget grows at the scale needed to control Mertens cancellation, with a quantitative theorem rather than a pseudorandomness analogy.
 
 ## Preserve cancellation while targeting mean-absolute Mertens size
 
 **Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`.
 
-MC-013 gives an exact Tanaka interface for `D_M`, but MC-014 proves that separately bounding its signed-feedback and local-time pieces is the wrong generic target: for the character modulo `3` both pieces are quadratic and cancel almost completely. The first surviving pathwise carrier is the excursion-square budget `E_2(N)=sum ell_j^2`, which controls total absolute area and can be `N^(3/2)` even when pointwise height reaches `N^(3/4)`.
+Separate Tanaka budgets fail on a completely multiplicative character control, while the excursion-square carrier is too strong even for a support-matched diffusive random-sign walk. Path energy preserves the desired amplitude but its coarse constant mode contains an RH-equivalent first Riesz sum.
 
-The live arithmetic question is whether Möbius structure yields `E_2(N)=O_epsilon(N^(3/2+epsilon))`, or a comparably strong multiscale excursion-tail bound, without importing the desired Mertens estimate. The connection from RH-scale `D_M` back to RH currently uses the fresh Pintz theorem recorded in MC-009 and remains subject to its incomplete audit in MC-010--MC-012; that conditional endpoint must not be used as upstream evidence.
+The live problem is therefore a signed, multiscale carrier that survives the character and random-sign controls **and** removes or independently controls the RH-equivalent coarse projection before taking a positive norm. A decisive theorem should derive its bound from Möbius arithmetic rather than from an already equivalent mean-absolute/Riesz estimate.
 
-## Separate prime-power fidelity from a genuinely useful comparator theorem
+## Keep prime-power fidelity distinct from the comparator theorem
 
-**Linked intuitions:** `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling` and `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`.
+**Linked intuitions:** `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`.
 
-MC-002 proves that the standard prime-only pretentious scalar has only `O(log log x)` information. MC-003 shows that prime-power enrichment distinguishes Möbius from Liouville, but its exact threshold is the square layer `1/2`, matching the elementary square-divisor convolution. MC-007--MC-008 show that absolute reverse inversion can fail even when a comparator remains analytically RH-sensitive.
+A comparator can share prime data and differ only on prime powers while still carrying an RH-equivalent summatory criterion because an analytic transfer factor is nonmasking in the critical region. The live question is to classify source-natural prime-power corrections whose nonmasking property is independently available and whose cancellation can actually be proved upstream.
 
-The live problem is to find an independently controlled comparator together with a nonmasking transfer factor whose zero-free property is proved without importing the zeta divisor.
+## Test whether retained cutoff-face information can make scale transfer exponent-improving
 
-## Require every global-cancellation statistic to expose its information budget and matched controls
+**Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
 
-**Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`, `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`, and `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`.
+The Huxley--Watt branch now has a sharp no-amplification control. Harmonic scale doubling exposes an RH-equivalent coarse mode; finite jets form an infinite triangular hierarchy; higher product degree transports exponents by convex averaging; and collapsing to unrestricted generalized Möbius convolutions preserves the same zero boundary.
 
-Local pseudorandomness, logarithmic averages, correlation bounds, pretentious distances, prime-power enrichments, comparator Dirichlet series, and excursion statistics should be evaluated by the quantitative information they retain about the anchored summatory target. MC-014 adds a new matched-control rule: **do not turn an internally cancelling identity into separate absolute budgets** unless the source theorem genuinely controls those pieces.
+A genuine advance must keep signed cutoff-face or asymmetric auxiliary information that those scalarizations discard and prove an independent estimate strong enough to improve the exponent. Algebraic degree, differentiation, or passing from `N` to `N^2` is not itself a cancellation gain.
 
-A decisive candidate must state both the information budget and the strongest matched control. Using `1/zeta`, Perron shifting, an explicit formula, or the still-audited mean-absolute zero theorem is admissible only when the zero information needed by the argument has been derived upstream rather than imported through the target continuation.
+## Require every proposed global-cancellation statistic to expose its information budget and matched controls
+
+**Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`, and `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
+
+For any new norm, excursion statistic, correlation functional, nonlinear identity, or spectral representation, compute the exact support/coarse-mode information it uses and test it against periodic characters, support-matched random signs, qualitative-Chowla controls, and generalized-product collapse where applicable. A candidate survives only if the target estimate does not follow merely by projecting onto an already RH-equivalent quantity and is not substantially stronger than the desired cancellation on natural controls.

@@ -4,17 +4,25 @@ This file holds the current mathematical lines of investigation suggested by the
 
 ## Preserve genuinely cross-level information before finite, Fourier, deformation, or finite-section spectral classicalization
 
-**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`.
+**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical` and `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
 
-Finite cotangent networks, fixed-support depth, and complete-preimage growth reduce to endpoint/cyclotomic or finite-state data. Cumulative primitive-root statistics reduce to Ramanujan/Mertens Fourier data. PC-121--PC-125 close the standard finite Toeplitz/Gram/CMV/resultant spectralizations, and PC-126--PC-130 extend the closure to the full natural finite deformation hierarchy: projective resultants are collision-hyperplane products, logarithmic responses are arrangement master functions, vertexwise Hessians are inverse-square chord Laplacians, reduced determinants are resultant-normalized spanning-tree integers, and coprime CRT incidence Fourier-transforms to fixed Dirichlet `L(2)` data.
+The audited finite canonical sector now extends through vertexwise Hessians, normalized characteristic polynomials, finite Hessian tensor networks, coherent all-divisor aggregation, scalar spectral moments, and fixed Fourier edge windows. PC-131--PC-141 show repeated reduction to Dirichlet--Bernoulli, confluent-Cauchy, full-polygon, totient/Artin/Murata, or Nicolas data.
 
-A surviving mechanism must retain cross-level incidence, provenance, or another structure before these finite reductions. Merely increasing finite deformation dimension, differentiating a resultant, taking a Hessian determinant, or transforming the CRT incidence is insufficient.
+At the same time PC-139 proves that universal bulk convergence does not erase every arithmetic mode: a mesoscopic family of macroscopic defect eigenvalues survives. The live target is therefore the **growing organization** of that defect subspace, not another fixed finite network or scalar summary.
+
+## Determine whether a growing or provenance-adapted defect sector escapes the classical controls
+
+**Linked intuitions:** `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
+
+A decisive positive should derive a growing spectral window, non-Fourier localization, or cross-level operator directly from the cyclotomic geometry and prove that its joint invariant is not determined by the squared primorial totient factor, Artin/Murata constants, or Nicolas's criterion. A decisive negative would show that the entire PC-139 macroscopic defect sector is asymptotically reconstructible from those classical scalar data.
+
+Fixed-width edge windows, the universal top eigenpair, total trace, and Wasserstein bulk defect are now controls rather than candidate mechanisms.
 
 ## Locate the first mechanism beyond canonical finite cyclotomic/collision spectralization
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`.
 
-The audited finite canonical sector now includes arbitrary finite networks, repeated shells, coincidence strata, fixed depth, Toeplitz/CMV constructions, scalar and projective resultants, full vertexwise collision response, and their most direct collective determinant/Fourier readouts. The live question is therefore to derive a genuinely different carrier: an all-shell/provenance-sensitive operator, an independently forced incomplete growing family, a singular/domain-changing completion, a noncoprime or infinite-level coupling whose invariant provably does not factor through the finite collision algebra, or global uniformization/monodromy data outside the resultant category.
+Arbitrary finite networks, repeated shells, coincidence strata, fixed depth, Toeplitz/CMV constructions, scalar and projective resultants, full vertexwise collision response, normalized Hessian characteristic polynomials, and finite Hessian tensor networks all classicalize. A genuinely different carrier must be all-shell/provenance-sensitive, singular/domain-changing, or otherwise outside finite confluent collision algebra.
 
 ## Use compatible completion as a carrier, not as an automatic Hamiltonian
 
@@ -28,6 +36,6 @@ The live question is whether compatible geometry forces a non-scalar, one-sided,
 
 **Linked intuitions:** `MI-005-hardy-shell-core-is-universal`.
 
-The canonical Hardy escape is closed through two-scale, conductor, bounded-preconditioning, and scalar-zoom limits: the normalized correctors become universal Ramanujan/Carleman data with zero-free Gaussian determinants, while divergent scalar zoom destroys determinant normality.
+The canonical Hardy escape is closed through two-scale, conductor, bounded-preconditioning, and scalar-zoom limits: normalized correctors become universal Ramanujan/Carleman data with zero-free Gaussian determinants, while divergent scalar zoom destroys determinant normality.
 
 The surviving boundary is genuinely non-scalar and pre-universalization. A viable Hardy mechanism must act before the one-new-prime split, use a jointly organized all-shell object, or derive an unbounded/domain-changing/nonlinear operation from the geometry itself.

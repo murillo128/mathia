@@ -1,41 +1,44 @@
-# MI-006 — Finite-mass positive completion forces mixed-prime coupling and critical roughness
+# MI-006 — Positive completion forces mixed-prime coupling and a global critical roughness that standard positive geometries cannot regularize
 
-**Evidence level:** proved for the exact-cover prime-torus completion class and its standard Fisher, entropy, and Kronecker-flow regularity tests
+**Evidence level:** proved for the exact critical prime-torus completion class and the positive spectral/information/transport/Gamma coupling classes covered by WP-096--WP-120
 
 ## Core intuition
 
-The critical one-prime Weil rays can live inside a finite positive all-prime carrier, but not as an isolated sparse positive sector. Positivity must be paid for with mixed-prime correlations, and the most natural positive operations cannot later erase those correlations while preserving the prime coordinates. More strongly, no choice of correlations can make the exact critical carrier regular for the ordinary information/Dirichlet geometries now tested: Fisher, cylindrical relative entropy, and the intrinsic log-prime Kronecker density energy all diverge at `sigma=1/2`.
+The critical one-prime Weil rays can live inside a finite positive all-prime carrier, but positivity must be paid for with mixed-prime correlations. Those correlations are not a disposable implementation detail: at the critical exponent they force divergent cost across a much larger range of canonical positive geometries than Fisher or ordinary Dirichlet energy.
 
-The durable lesson is that **positive completion changes both interaction support and regularity category**. Nonlinear sparsification can recover the desired ray support algebraically, but positivity then becomes tautological or the natural global energy becomes infinite.
+The newer results close both ends of the obvious smoothing strategy. Mandatory one-prime axes make every nontrivial Markov/Lévy scalar energy divergent, while positivity itself forces infinite mixed Fourier mass arbitrarily close to zero Kronecker frequency, defeating arbitrarily strong inhomogeneous high-frequency smoothing. Exact scale covariance also rules out a scale-free band-pass compromise. The independently positive Riemann Gamma channel exists, but its most canonical scalar, shared-Hilbert, parity, and jump-local positive matrix couplings to the finite-prime carrier still diverge.
 
 ## Strongest justified principle
 
-WP-096--WP-099 give the interaction-support boundary. A sparse exact one-prime positive carrier requires infinite diagonal mass; allowing mixed-prime coefficients restores finite positivity, while same-algebra positive quotients and passive Schur elimination cannot delete the mixed modes afterward.
+WP-096--WP-108 establish the base completion boundary. Sparse exact one-prime positivity requires infinite diagonal mass; mixed-prime coefficients restore finite positivity; same-algebra positive quotients and passive elimination cannot remove them afterward. Correlations can repair Haar measure class, but every exact critical completion has infinite cylindrical Fisher, KL, and ordinary Kronecker density energy.
 
-WP-100--WP-102 show that correlations can change global measure class but not the first regularity obstruction. Product completion is Kakutani-singular at `sigma<=1/2`; correlated completions can be Haar-equivalent, yet every exact critical completion has infinite cylindrical Fisher energy.
+WP-109 pushes the scalar spectral boundary through Sobolev order `-1`: compulsory prime axes already diverge for every `s>=-1`. WP-110 shows that the independent product completion diverges for every Sobolev order because near-resonant mixed modes accumulate at zero frequency. WP-113 extends that all-order failure to the finite-block correlated class, and WP-114 removes the correlation hypothesis completely: covariance positivity forces infinite mixed-prime Fourier mass in every fixed neighborhood of zero frequency for **every** exact critical positive completion. Any nonnegative multiplier with `w(0)>0` therefore has infinite cylindrical cost.
 
-WP-103 tests a nonlinear escape. Exponentiating the exact finite Weil score gives a positive Gibbs density whose **logarithm** has precisely the one-prime rays and no mixed-prime Fourier modes. The algebraic selector succeeds, but positivity of `e^V/Z` is automatic for every real potential and hence supplies no Weil sign theorem. Its all-prime relative entropy and Kronecker-flow score energy diverge at the critical exponent.
+WP-111--WP-112 show the obstruction is not peculiar to one smooth metric: Chentsov-natural Riemannian metrics reduce to Fisher up to scale, and additive product-Wasserstein cost is also infinite with the same sharp critical threshold.
 
-WP-107 makes the entropy obstruction correlation-robust. For any finite positive completion with the exact first one-prime moments, every finite cylinder has KL cost bounded below by the sum of `(log p)^2 p^(-2sigma)`; total correlation can only add nonnegative cost. Hence cylindrical KL is infinite for `sigma<=1/2`, with a sharp supercritical regime.
+WP-115 closes the canonical zero-frequency-degenerate scalar escape. Every nontrivial symmetric conditionally negative-definite/Lévy symbol still has infinite prime-axis cost. WP-116 then shows that exact power-map covariance forces a homogeneous scalar symbol, and every nonzero homogeneous power is killed either by the high-frequency prime axes or by the near-zero mixed mass. A finite scalar band-pass can survive only by introducing a distinguished scale not supplied by exact multiplicative covariance.
 
-WP-108 does the same for the intrinsic multiplicative flow `X=sum_p (log p) partial_theta_p`. Parseval forces the exact rays to contribute at least the sum of `(log p)^4 p^(-2sigma)` to the ordinary density Dirichlet energy, again independently of mixed correlations and sharply divergent at the critical exponent.
+WP-117 supplies a genuine positive archimedean ingredient rather than another no-go. The Prime-Circle-selected Riemann Gamma digamma variation is an exact conditionally negative-definite Markov symbol with a positive Lévy measure. But direct finite--archimedean gluing fails in every canonical positive form so far tested: scalar coupling diverges by WP-115; shared Schoenberg coupling is an acute same-sign cone with threshold `sigma=1` (WP-118); reflection parity does not create cancellation (WP-119); and every bounded jump-local positive matrix coupling with nonzero short-jump limit retains the same coherent divergence (WP-120).
 
 ## What remains possible
 
-A surviving positive route must form the finite--archimedean object before a same-algebra quotient or passive reduction and must leave the ordinary product-coordinate information geometries. It may use a renormalized relative quantity, a globally coupled reference measure, a non-`L^2`/non-KL singular category, higher cohomology, or a nonseparable finite--archimedean form. Such an escape must derive its renormalization/sign independently; subtracting the divergent critical cost after seeing it is not enough.
+The surviving positive route must change the architecture **before** the final positive norm is formed. It cannot merely choose another standard metric, more negative Sobolev order, Markov symbol, homogeneous scalar calculus, parity split, or bounded local matrix weight.
+
+The remaining categories are genuinely nonlocal finite--archimedean couplings, frequency-dependent or singular intertwiners, cohomological/graded constructions whose sign is forced before squaring, domain-changing quotients, or renormalized relative quantities with an independently derived reference and normalization. Such an escape must explain why the covariance-forced near-zero mass and the Gamma short-jump coherence are both neutralized without deleting the exact prime moments.
 
 ## Status / novelty
 
-Multiplicative-domain rigidity, Schur shorting, Kakutani theory, Pinsker/KL, Fisher information, Parseval, and Kronecker flows are classical. The persisted synthesis is their exact interaction with the Weil rays: **correlations can repair positivity and measure class, but not ordinary critical information energy**.
+Information geometry, optimal transport, Lévy--Khintchine/Schoenberg theory, Sobolev functional calculus, and the Gamma digamma representation are classical. The synthesis is the exact critical incompatibility: **positive completion forces correlations, and the standard ways of assigning a positive global geometry to those correlations are either divergent or too universal to provide Weil positivity**.
 
 ## Falsification criterion
 
-Construct a finite-mass exact critical completion with finite cylindrical Fisher, KL, or Kronecker density energy, contradicting WP-102/WP-107/WP-108; or a positivity-preserving same-algebra/passive map that removes mixed modes while retaining the exact prime coordinates. A positive escape must explicitly change one of those hypotheses.
+Construct an exact critical positive completion with finite cost for one of the covered correlation-robust geometries, or a bounded jump-local Gamma matrix coupling with nonzero endpoint limit that avoids the WP-120 shell divergence. A positive escape outside those classes must state precisely which hypothesis it changes and derive its sign/renormalization upstream.
 
 ## Lean-formalizable core
 
-- Prime-torus sparse diagonal lower bound.
-- Multiplicative-domain and passive-order obstructions.
-- Coordinate-moment Fisher and KL lower bounds.
-- Kronecker-flow Parseval lower bound.
-- Critical divergence thresholds of the corresponding prime sums.
+- Prime-axis lower bounds for spectral multipliers.
+- Covariance-forced near-zero mixed Fourier mass.
+- Chentsov/Fisher and product-Wasserstein coordinate lower bounds.
+- Lévy-symbol axis divergence and power-covariance homogeneity.
+- Gamma Schoenberg Gram identities and parity projections.
+- Short-jump positive matrix shell asymptotic.

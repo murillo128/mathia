@@ -1,54 +1,42 @@
-# MI-007 — Stable fidelity is distance from the admitted collision boundary, and repair is relative to target transport
+# MI-007 — Stable fidelity is distance from the admitted collision boundary, and repair is category-relative
 
-**Evidence level:** supported by exact Hilbert, Euclidean, smooth-compact, Lipschitz, finite-channel, metric-refinement, powered-lift, and horofunction classifications
+**Evidence level:** supported by exact Hilbert, Euclidean, smooth strongly-convex, polyhedral, Lipschitz, finite-channel, metric-refinement, powered-lift, and horofunction classifications
 
 ## Core intuition
 
-Exact recoverability, stable recoverability, and distance to a repaired structural target are different claims. Stability is controlled by distance from the relevant collision set in the **specific perturbation geometry**, while a repair radius is intrinsic only after the target family is transported compatibly with the representation equivalences that the category declares harmless.
+Exact recoverability, stable recoverability, and distance to a repaired target are different claims. Stability is controlled by distance from the relevant collision set in the **specific perturbation geometry**, while a repair radius becomes intrinsic only after both target transport and the source metric category are fixed.
 
-The newer safe-lift results add a sharper asymptotic layer. Even after the source and target set are fixed, the existence of a finite repair above a prescribed base point can change under arbitrarily small renorming. In finite-dimensional smooth normed spaces the complete first-order horofunction boundary sees only the convex hull; every nontrivial powered threshold is therefore a higher-order boundary phenomenon whose exponent is set by the decay of the residual distance excess and by the source norm, not by a universal Hilbert scale.
+The newer safe-lift results sharpen the category dependence. Smooth strongly-convex norms recover a robust convex-hull phase diagram and a genuine higher-order boundary exponent, whereas polyhedral norms retain first-order provenance through norming faces and collapse every finite powered threshold to one dual-face coherence test. There is therefore no category-free meaning to a critical repair exponent.
 
 ## Strongest justified principle
 
-AF-041--AF-045 identify stable fidelity with a quantitative distance from admitted collisions in linear, smooth, and Lipschitz categories. AF-046--AF-051 show that the failure relation and discrepancy must also be specified: law equality, zero-error support fidelity, TV, KL, and quadratic costs induce genuinely different repair geometries.
+AF-041--AF-054 identify stable fidelity with quantitative distance from admitted collisions and isolate target transport. In particular the maximal safe envelope under an isometric refinement characterizes exactly which target enlargements preserve every source repair radius.
 
-AF-052--AF-054 isolate target transport. A refinement can be Blackwell reversible and isometric for the ambient discrepancy while an unrestricted refined target acquires non-descending points and moves closer. For an isometric refinement `C:X->Y`, AF-054 gives the maximal safe envelope
+AF-055--AF-063 show that higher-order repair is controlled by weighted positive distance excess and that the first smooth horofunction layer sees only signed distance to `conv(S)`. Arbitrarily small renorming can change fixed-base liftability, and an `ell^r` source moves the critical product exponent to `r`.
 
-`E_C(S)={y in Y : d(Cx,y) >= dist(x,S) for every x}`,
+AF-064--AF-065 show that this instability narrows under genuine geometric hypotheses. In finite-dimensional strongly convex reversible Minkowski spaces the Euclidean phase diagram is restored: power `1` admits every base point, `1<p<=2` admits exactly `conv(S)`, and `p>2` admits `S union int(conv(S))`. On the hull boundary, the exact support-contact profile controls the residual excess and therefore the critical higher-order exponent.
 
-and characterizes exactly which target enlargements preserve every source repair radius.
-
-AF-055--AF-059 classify the finite-lift boundary in concrete metric categories. Singleton linear envelopes are best-coapproximation fibers; Hilbert set targets reduce to convex-roof/Delaunay geometry. For Euclidean powered products the finite-lift base set has the exact phase diagram
-
-`B_1(S)=R^d`, `B_p(S)=conv(S)` for `1<p<=2`, and `B_p(S)=S union int(conv(S))` for `p>2`.
-
-AF-060--AF-061 show that this transition is not intrinsic under merely topological or near-isometric equivalence. Fixed-base finite lifting can disappear under arbitrarily small norm distortion, and for an `ell^r` source the critical product exponent is exactly `r`, not universally `2`.
-
-AF-062--AF-063 identify the mechanism behind those examples. Powered finite-lift existence is equivalent to boundedness of the weighted positive distance excess
-
-`(d(x,m)+d(m,S))^(p-1) (d(x,S)-d(x,m))_+`.
-
-In finite-dimensional smooth strictly convex normed spaces the first-order horofunction margin is exactly the signed distance from `m` to `conv(S)`: positive outside the hull, negative in its interior, and zero precisely on its boundary. Thus exterior failure and interior safety are first-order; only hull-boundary ties can carry higher-order target provenance, and their critical power is the decay exponent of the residual excess.
+AF-066--AF-068 give the nonsmooth counter-regime. For polyhedral norms, first-order safe lifting is governed by the whole norming face, not merely the convex hull. The safe kernel is an exact finite cone hull, its inclusion order is generator cofinality, and every finite power `p>1` has the same pass/fail boundary. Nonsmooth geometry can therefore preserve target provenance that smooth first-order convexification erases.
 
 ## What remains possible
 
-The live frontier is to identify representation categories in which collision geometry, target transport, perturbation metric, asymptotic boundary, and admissible refinements are all intrinsic to the mathematical construction. On a hull boundary, a higher-order invariant can still retain information erased by the first horofunction layer, but its exponent or finiteness has to be proved invariant under the declared source geometry rather than inferred from a preferred norm.
+The live problem is to identify representation categories in which collision geometry, target transport, norming-face data, and any higher-order contact exponent are all forced by the mathematical construction. A higher-order invariant is meaningful only after proving it stable under the declared equivalences; conversely, a polyhedral face invariant is meaningful only if the nonsmooth structure itself is intrinsic rather than a chosen encoding.
 
-For arithmetic applications, a discriminator should therefore pass three separate robustness tests: positive distance from the matched-control collision set; target descent through every information-preserving equivalence; and invariance of any higher-order boundary scale under the admitted metric/renorming class. A positive coordinate margin or critical exponent that changes under reversible re-encoding or near-isometric renorming is not yet an intrinsic arithmetic separation.
+For arithmetic applications, a discriminator should pass three independent tests: positive distance from matched-control collisions; target descent through information-preserving equivalences; and invariance of the relevant smooth-contact or nonsmooth-face boundary under the admitted representation class.
 
 ## Status / novelty
 
-The functional-analytic, channel-decision, coapproximation, convex-hull, horofunction, and norm-comparison mechanisms are classical or direct. The persisted Mathia synthesis is the joint gate: **robust fidelity is relative to a collision geometry; robust repair is additionally relative to target transport; and higher-order boundary fidelity is relative to the asymptotic metric category**.
+The functional-analytic, coapproximation, convex-hull, horofunction, polyhedral duality, and norm-comparison mechanisms are classical or direct. The Mathia synthesis is the joint gate: **robust fidelity is relative to a collision geometry; robust repair is additionally relative to target transport; and the form of higher-order boundary fidelity is itself category-dependent**.
 
 ## Falsification criterion
 
-For stability, exhibit a covered category where the stated lower modulus disagrees with distance to admitted collision. For repair, give an isometric/reversible refinement and a target enlargement outside the AF-054 safe envelope that nevertheless preserves every source repair radius. For the higher-order claim, exhibit a smooth finite-dimensional normed example where the first horofunction margin distinguishes more than the convex hull or where the AF-062 weighted-excess criterion gives the wrong powered-lift threshold.
+Exhibit a covered category where the stated distance or safe-envelope classifier fails, a smooth strongly-convex example violating the AF-064 phase diagram/contact-profile law, or a polyhedral example where powered liftability depends on the exponent despite the same dual-face coherence data.
 
 ## Lean-formalizable core
 
 - Range-kernel transversality and closed-secant stability.
 - Maximal safe target envelope under isometric refinement.
-- Euclidean powered-lift phase diagram.
-- Weighted-distance-excess equivalence for powered defects.
-- Horofunction margin as signed convex-hull distance.
-- Near-isometric renorming counterexamples and `ell^r` critical exponent.
+- Strongly-convex Minkowski powered-lift phase diagram.
+- Support-contact profile criterion.
+- Polyhedral dual-face coherence and finite cone hulls.
+- Weighted-distance-excess equivalence and horofunction margins.
