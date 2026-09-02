@@ -81,3 +81,21 @@ Role: classical square-free counting anchor for `MC-004`. The exercise records `
 Kaisa Matomäki, Maksym Radziwiłł and Terence Tao, *An averaged form of Chowla's conjecture*, Algebra & Number Theory 9 (2015), no. 9, 2167–2196. DOI: https://doi.org/10.2140/ant.2015.9.2167. arXiv: https://arxiv.org/abs/1503.05121.
 
 Role: arithmetic comparison boundary for `MC-004`. The paper proves Chowla-type correlations after averaging over shifts growing with `X`, with quantitative decay roughly `log log H / log H`, and extends the method to bounded multiplicative functions including Möbius. This is materially stronger information than merely knowing every fixed-shift qualitative correlation tends to zero, so `MC-004` does not treat the modern averaged theorem as covered by its no-go.
+
+## MC-S14 — Granville and Koukoulopoulos, Landau–Selberg–Delange from prime averages
+
+Andrew Granville and Dimitris Koukoulopoulos, *Beyond the LSD method for the partial sums of multiplicative functions*, Ramanujan Journal 49 (2019), no. 2, 287–319. DOI: https://doi.org/10.1007/s11139-018-0119-3. arXiv: https://arxiv.org/abs/1710.01389.
+
+Role: primary asymptotic-transfer theorem for `MC-005`. Theorem 1 starts from a prime-value average `sum_{p<=x} f(p) log p = alpha x + O(x/log^A x)` for a divisor-bounded multiplicative function and gives the corresponding Landau–Selberg–Delange expansion. Its leading coefficient is the Euler product `prod_p (1+f(p)/p+f(p^2)/p^2+...)(1-1/p)^alpha`. Applied to the explicit square-free-supported residue-class sign family in `MC-005`, it gives a positive main term of order `x(log x)^(alpha-1)` without importing zero information near the critical line.
+
+## MC-S15 — Montgomery and Vaughan, primes in arithmetic progressions
+
+Hugh L. Montgomery and Robert C. Vaughan, *Multiplicative Number Theory I: Classical Theory*, Cambridge Studies in Advanced Mathematics 97, Cambridge University Press (2007), Chapters 4 and 11, *Primes in arithmetic progressions I/II*. Chapter 4 DOI: https://doi.org/10.1017/CBO9780511618314.006.
+
+Role: classical prime-number-theorem-in-arithmetic-progressions anchor for `MC-005`. For each fixed modulus `q`, weighted primes are equidistributed among the reduced residue classes with an error stronger than any fixed inverse power of `log x`. This supplies the prime-average hypothesis for the explicit residue-class sign function used there.
+
+## MC-S16 — Klurman, Mangerel, Pohoata and Teräväinen, square-free-supported multiplicative discrepancy
+
+Oleksiy Klurman, Alexander P. Mangerel, Cosmin Pohoata and Joni Teräväinen, *Multiplicative functions that are close to their mean*, Transactions of the American Mathematical Society 374 (2021), no. 11, 7967–7990. DOI: https://doi.org/10.1090/tran/8427. arXiv: https://arxiv.org/abs/1911.06265.
+
+Role: direct adjacent prior art for `MC-005`. Theorem 1.1 proves that for every multiplicative `g:N->{-1,+1}`, the square-free-supported sequence `mu^2 g` has unbounded partial sums. This confirms Aymone's square-free discrepancy conjecture and establishes that the exact-support multiplicative comparator class itself is already a studied object. `MC-005` uses a particular residue-biased member of this class for which standard Selberg–Delange theory yields the much larger explicit logarithmic-order asymptotic.
