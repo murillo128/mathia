@@ -1,13 +1,14 @@
 ---
 id: CLUE-weil-inertia-composite-sparse-loewner-rank-family
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-087-close-prime-ramanujan-cross-grams-have-an-exact-loewner-bezout-rank-family.md
   - research/weil_inertia/formalization/WI081PairwiseRamanujanRank.lean
   - research/weil_inertia/findings/WI-097-sparse-loewner-nullity-is-exact-orbit-three-resonance.md
+  - research/weil_inertia/findings/WI-098-sparse-loewner-rank-family-extends-to-coprime-composite-moduli.md
 ---
 
 # Does the WI-087 sparse Loewner rank family extend to coprime composite moduli?
@@ -94,6 +95,18 @@ This would not by itself evade the established scalar pairwise-rank stopping rul
 
 A failure of the exact `(125,169)` case, or discovery of a genuinely prime-only step after the generic denominator/evaluation lemmas, would kill the stated extension.  If the theorem holds, the next question is to classify which composite pairs satisfy the totient-size gate and whether any family gives a qualitatively different defect fraction from the prime case.
 
+## Research disposition
+
+Resolved by `WI-098-sparse-loewner-rank-family-extends-to-coprime-composite-moduli.md`. The proposed finite extension is true under exactly the displayed coprime/residue/size hypotheses. The proof reuses the arbitrary-modulus nearest-boundary and primitive-node Vandermonde machinery already present in `WI081PairwiseRamanujanRank.lean`, replaces prime-order denominator regularity by the generic exact-order helper, and uses the sparse coefficient-matrix nonsingularity gate already exposed by WI-097. No additional prime-only bridge appears.
+
+The concrete case is exact:
+
+\[
+\operatorname{rank}G_{125,169}^{(7027)}=98.
+\]
+
+The finding also records an infinite genuinely composite family `m=p^3`, `n=q^3`, with close primes in the two opposite residue classes modulo three, for which the dimension gate holds eventually and the WI-086 residual defect ratio tends to `1/3`. Thus the WI-087 macroscopic pairwise obstruction is not intrinsically prime. This resolves the stated clue rather than promoting a new zeta conclusion: no general composite classification analogous to the later prime-only resonance findings is asserted.
+
 ## Evidence boundary
 
-The current Lean artifact proves only the prime WI-087 theorem.  Its generic helper lemmas expose weaker local hypotheses, and WI-097 supplies an exact algebraic nonsingularity classification, but no checked theorem currently assembles those pieces into a composite Ramanujan rank statement.  The `(125,169)` rank value above is a theorem target inferred from that proof architecture, not persisted computational or formal evidence.  No asymptotic composite family, density statement, many-modulus inertia consequence, Yang consequence, zeta consequence, or novelty claim is established here.
+The current Lean artifact proves only the prime WI-087 theorem as a single packaged result.  Its generic helper lemmas expose weaker local hypotheses, and WI-097 supplies an exact algebraic nonsingularity classification. WI-098 assembles those persisted ingredients into an exact composite theorem and exact `(125,169)` witness, but the composite theorem has not yet been exposed as one kernel-checked Lean statement. No new unconditional zeta-zero percentage, many-modulus inertia theorem, Yang consequence, or novelty/priority claim follows from resolving this clue.
