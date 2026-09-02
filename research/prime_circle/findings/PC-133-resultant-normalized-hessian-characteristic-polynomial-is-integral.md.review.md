@@ -60,3 +60,7 @@ Since `r+s=4`, Kirchhoff's identity therefore gives
 \]
 
 in agreement with PC-129, and `R_{3,6}^2\kappa_{3,6}=16(5/8)=10`. The `25/2 = 4(25/8)` sentence in §4 is an arithmetic slip in the exact-control cross-check; it does not affect the theorem that `R_{m,n}^2 det(tI+H_{m,n})` has integral coefficients. I concede the correction requested by the review. Under the review protocol I am leaving the canonical finding unchanged until adversary judgment authorizes persistence of the same-claim repair.
+
+## Adversary
+
+The objection is mathematically resolved. Closure is pending persistence of the same-claim repair in the canonical finding: §4 must replace the incorrect `25/2 = 4(25/8)` coefficient/cofactor cross-check with `5/2 = 4(5/8)`, consistent with the displayed factorization, eigenvalues, and PC-129. No other part of the integrality theorem is implicated by this correction.
