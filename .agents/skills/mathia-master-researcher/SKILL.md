@@ -13,7 +13,7 @@ The Master Researcher is the program-level research director. It does not own pr
 
 The role has four outputs:
 
-1. maintain one mutable global research snapshot under `research/master/STATE.md`;
+1. maintain one mutable global research snapshot under `research/README.md`;
 2. identify source-grounded cross-line connections, distinctions, bottlenecks, and portfolio-level implications;
 3. create or materially strengthen `proposed` clues through `.agents/skills/mathia-research-clues/SKILL.md` when a concrete falsifiable question should be handed to research;
 4. recommend `continue`, `narrow`, `merge`, `pause`, `split`, or `new-line-candidate` decisions without itself creating/deleting research lines or modifying scheduled tasks.
@@ -42,7 +42,7 @@ At the start of each run:
 2. locate the most recent reachable commit with prefix `research(master):` when one exists;
 3. inspect the Git delta from that revision to current `HEAD` across research-relevant paths, including **added, modified, and deleted** files;
 4. use the delta to prioritize what requires re-evaluation;
-5. still consume the current global/local `mind/**` snapshots and enough current graph/evidence state to make the final `STATE.md` self-consistent.
+5. still consume the current global/local `mind/**` snapshots and enough current graph/evidence state to make the final `research/README.md` self-consistent.
 
 Relevant events include, when present:
 
@@ -87,14 +87,13 @@ Inspect direct children of `research/`. A directory `research/<line>/` is a rese
 Never treat these repository-level roots as research lines:
 
 ```text
-research/master/
 research/mind/
 research/graph/
 research/prior_art/
 research/clues/
 ```
 
-A line that has just lost its final finding may still need one reconciliation pass if the Git delta, `mind/**`, graph state, clues, or previous `STATE.md` references it. After reconciliation it may disappear from the active portfolio snapshot if no current research object remains.
+A line that has just lost its final finding may still need one reconciliation pass if the Git delta, `mind/**`, graph state, clues, or previous `research/README.md` references it. After reconciliation it may disappear from the active portfolio snapshot if no current research object remains.
 
 ## Input hierarchy
 
@@ -199,7 +198,7 @@ Look for a single unresolved theorem, estimate, representation, existence result
 
 ### Negative-result convergence
 
-Several independent obstructions may jointly imply a stronger program-level restriction even when no individual line states it that way. The Master may record the strategic consequence in `STATE.md`, but if establishing the combined statement requires new mathematics, emit a clue rather than promote it as fact.
+Several independent obstructions may jointly imply a stronger program-level restriction even when no individual line states it that way. The Master may record the strategic consequence in `research/README.md`, but if establishing the combined statement requires new mathematics, emit a clue rather than promote it as fact.
 
 ### Productive cross-line transfer
 
@@ -281,10 +280,10 @@ The Master may not set clues to `accepted`, `rejected`, or `resolved`. Research 
 The Master Researcher owns exactly one primary state document:
 
 ```text
-research/master/STATE.md
+research/README.md
 ```
 
-This file is a **mutable current snapshot**, not a diary, changelog, run report, or append-only ledger. Rewrite it whenever the global research state materially changes. Git preserves history.
+This file is a **mutable current snapshot**, not a diary, changelog, run report, or append-only ledger. Rewrite it whenever the global research state materially changes. Git preserves history. Because it is the root `research/` README, it is also the human-facing entry point to the current research program.
 
 Keep it compact enough to be consumed whole on every Master run and useful to a human inspecting the program.
 
@@ -314,7 +313,7 @@ Links to existing local/global clues where possible. Do not duplicate the clue b
 Only current merge/pause/split/new-line candidates with concise evidence-based rationale and the condition that would reverse the recommendation.
 ```
 
-Do not include dates, run chronology, token/task counts, agent performance metrics, schedules, issue status, confidence percentages, or a history of decisions. Atlas metrics may influence the reasoning behind this snapshot, but do not turn `STATE.md` into a duplicated metrics dashboard; link or refer to the current graph-owned Atlas when the numeric context is materially useful.
+Do not include dates, run chronology, token/task counts, agent performance metrics, schedules, issue status, confidence percentages, or a history of decisions. Atlas metrics may influence the reasoning behind this snapshot, but do not turn `research/README.md` into a duplicated metrics dashboard; link or refer to the current graph-owned Atlas when the numeric context is materially useful.
 
 Do not preserve stale sections merely because they existed previously. If a proposal is no longer supported, remove it.
 
@@ -350,7 +349,7 @@ Consume global Mind, local Minds, current line set, current clues, graph navigat
 
 ### 3. Reconcile previous Master state
 
-Read the existing `research/master/STATE.md` when present. Treat it as a prior snapshot to revise, not as evidence.
+Read the existing `research/README.md` when present. Treat it as a prior snapshot to revise, not as evidence.
 
 Remove stale conclusions, stale line recommendations, references to withdrawn findings, and proposals whose premises have disappeared.
 
@@ -362,7 +361,7 @@ Apply the patterns and recommendation criteria in this skill. Use current Atlas 
 
 Create/strengthen only concrete falsifiable clues that materially improve downstream research allocation. Deduplicate against current clues first.
 
-### 6. Rewrite `STATE.md`
+### 6. Rewrite `research/README.md`
 
 Write the smallest coherent current snapshot that captures material program-level knowledge and decisions.
 
@@ -380,7 +379,7 @@ Before publication verify:
 - no finding, review, mind, graph, prior-art, task, or research-line directory was modified;
 - every clue follows `mathia-research-clues`;
 - every pause/merge/new-line proposal gives a reversible evidence-based reason;
-- `STATE.md` is current snapshot, not chronology/status telemetry.
+- `research/README.md` is a current snapshot, not chronology/status telemetry.
 
 If no material global state, recommendation, or clue changed, create no commit.
 
@@ -389,7 +388,7 @@ If no material global state, recommendation, or clue changed, create no commit.
 This skill may write only to:
 
 ```text
-research/master/STATE.md
+research/README.md
 ```
 
 When `mathia-research-clues` is loaded, its narrow Master clue extension additionally permits creation/material strengthening of `proposed` clues under:
@@ -426,7 +425,7 @@ A scheduled Master Researcher pass may publish substantive owned-path changes **
 Before each commit:
 
 1. inspect the complete diff;
-2. verify every path is `research/master/STATE.md` or a Master-authorized clue path;
+2. verify every path is `research/README.md` or a Master-authorized clue path;
 3. verify the source revision is still coherent;
 4. rerun the final adversarial gate;
 5. remove unrelated formatting churn.
