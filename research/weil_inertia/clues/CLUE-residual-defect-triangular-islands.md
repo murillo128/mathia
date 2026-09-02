@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-residual-defect-triangular-islands
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: weil_inertia
 based_on:
@@ -10,6 +10,7 @@ based_on:
   - research/weil_inertia/findings/WI-099-residual-prime-rank-defect-is-single-rotation-resonance.md
   - research/weil_inertia/findings/WI-100-near-saturated-prime-rotation-resonances-have-bounded-incidence.md
   - research/weil_inertia/findings/WI-101-prime-rotation-resonances-have-gap-coprime-odd-denominators.md
+  - research/weil_inertia/findings/WI-103-residual-prime-rank-defect-components-are-exact-triangular-islands.md
 ---
 
 # Is every residual Ramanujan defect sector an exact triangular island?
@@ -52,4 +53,10 @@ A single exact prime residual counterexample to the boxed formula kills the stro
 
 ## Evidence boundary
 
-The current support is finite exact computation plus the persisted structural classification in WI-096, WI-099, WI-100, and WI-101. No general proof of the triangular law or endpoint characterization is known here, no novelty claim has been established, and the composite control makes prime-specific significance doubtful rather than stronger. The visualization is motivation, not canonical mathematical evidence. Nothing in this clue improves the current fourth-moment bound or implies a new statement about zeta zeros.
+The original support was finite exact computation plus the persisted structural classification in WI-096, WI-099, WI-100, and WI-101. The prime residual conjecture and explicit endpoint problem are now proved in WI-103. The stronger unconditional odd-coprime composite extension was not silently promoted: WI-103 proves the same triangle conditionally for any instance satisfying the common-phase and no-carry hypotheses, while leaving a full composite antecedent audit separate. Nothing in this clue or its resolution improves the current fourth-moment bound or implies a new statement about zeta zeros.
+
+## Research disposition
+
+**Resolved.** WI-103 proves that every prime residual positive-defect component is exactly a unit-slope symmetric triangle. For one occurring phase `(m,ell)`, cyclic ordering and WI-101's common rotation step force a unique two-valued gap template `b_i in {b,b+d}`. The wrap gap equals `b`, while the `A/B` transition gap equals `b+d`; consequently there are exactly `b` integer translates of the orbit template and each translate survives for exactly `b` consecutive boundary positions. Their overlap count is therefore the exact discrete convolution of two equal-length intervals, yielding `1,2,...,b,...,2,1` free cycles and hence the claimed defect triangle after the WI-096 `c-1` zero-mean subtraction.
+
+WI-103 also gives explicit arithmetic endpoints from `(p,d,k,m,ell)` and shows that distinct phase supports cannot overlap by WI-099 phase purity. The composite visual control is interpreted as evidence that the geometry is structural rather than prime-specific; only the prime theorem is promoted unconditionally at the current evidence level.
