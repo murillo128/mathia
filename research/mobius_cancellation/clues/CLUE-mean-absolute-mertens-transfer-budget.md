@@ -13,6 +13,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-012-pintz-section7-window-parameter-repair.md
   - research/mobius_cancellation/findings/MC-013-discrete-tanaka-l1-feedback-carrier.md
   - research/mobius_cancellation/findings/MC-014-character-control-tanaka-cancellation-excursion-square-budget.md
+  - research/mobius_cancellation/findings/MC-015-qualitative-chowla-excursion-square-obstruction.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
@@ -53,4 +54,6 @@ The surviving candidate is coupled excursion-level information. If `ell_j` are t
 
 `N D_M(N) <= (sum_j ell_j^2 + N)/2`.
 
-Thus an independently proved bound `sum_j ell_j^2 = O_epsilon(N^(3/2+epsilon))` would reach the desired mean-absolute scale without requiring a pointwise square-root bound in the underlying path class. The active question is whether Möbius arithmetic can control this excursion-length second moment, or a truncated multiscale version of its tail, from information genuinely independent of the target. The clue remains accepted rather than resolved because no such arithmetic estimate is currently established.
+`MC-015` now supplies a direct matched-control obstruction at this interface: the exact-support qualitative-Chowla sequence from `MC-004` has, along a subsequence, `D_a(N) >> N/log^2 N` and `sum_j ell_j^2 >> N^2/log^2 N`. Thus exact Möbius square-free support plus all qualitative fixed-shift Chowla limits are still insufficient even for the weaker mean-absolute endpoint and cannot yield the required excursion-square estimate as a black box.
+
+The active residual question is therefore stricter: can genuinely **quantitative growing-scale** correlation/local information, or specifically multiplicative consistency that rules out the sparse coherent blocks of `MC-015`, control the excursion-length second moment or a truncated multiscale tail with polynomial strength? The clue remains accepted rather than resolved because no such arithmetic estimate is currently established.
