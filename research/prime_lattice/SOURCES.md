@@ -288,3 +288,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 73. **Frederik Broucke, Sebastian Weishäupl**, “On the Lindelöf hypothesis for general sequences,” *Mathematika* **70**(2) (2024), Article e12240. DOI: https://doi.org/10.1112/mtk.12240. arXiv: https://arxiv.org/abs/2307.00239.
     - Role: generalized-prime matched control for `PL-109`. Theorem 1.3 extends the Gonek--Graham--Lee equivalence to Beurling generalized prime systems satisfying `N_P(x)=Ax+O(x^(1/2))`, with the associated Beurling RH equivalent to `LH(P,Li(x))`; the paper also proves sharpness of the square-root regularity threshold in the stated sense.
+
+## Beurling functional equations and modular inversion
+
+74. **Titus W. Hilberdink, Michel L. Lapidus**, “Beurling Zeta Functions, Generalised Primes, and Fractal Membranes,” *Acta Applicandae Mathematicae* **94**(1) (2006), 21–48. DOI: https://doi.org/10.1007/s10440-006-9063-0. arXiv: https://arxiv.org/abs/math/0410270.
+    - Role: main prior-art anchor for `PL-134`. Proposition 3.1 derives the Mellin identity `G(s)zeta_P(s)=Mellin(F)(s)` first in the absolute-convergence strip and continues it from asymptotics of the smoothed generalized-integer sum. Theorem 3.2 characterizes generalized functional equations by the reciprocal modular relation `F_1(x)=x^(-1)F_2(1/x)+H(x)`, including the residual polar terms, and allows the two sides to come from different generalized-prime systems. This isolates global inversion data as the extra structure behind a Beurling zeta functional equation rather than an automatic consequence of the free exponent lattice or Euler product.
