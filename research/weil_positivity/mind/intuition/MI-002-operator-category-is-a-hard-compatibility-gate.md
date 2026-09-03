@@ -1,52 +1,38 @@
-# MI-002 — Operator category is a hard compatibility gate for cross-branch positivity
+# MI-002 — Operator category and spectral type are hard compatibility gates for cross-branch positivity
 
-**Evidence level:** proved for the audited Prime-Flute/Prime-Lattice comparison; supported as a broader gate
+**Evidence level:** proved for the audited Prime-Flute/Prime-Lattice and radial/solenoid comparisons; supported as a broader gate
 
 ## Core intuition
 
-Two constructions can carry closely related arithmetic-looking kernels and still be unable to represent the same positive operator because they live in incompatible operator ideals. The newer boundary-response evidence adds a second gate: even a category-changing passage is not enough if the operation reaches the critical spectral regime only by losing self-adjoint positivity. A viable bridge must change operator category **and** carry an independent sign theorem at the destination.
+Two constructions can carry closely related arithmetic-looking kernels or even the same scalar dispersion law and still be unable to represent the same positive operator. There are at least three independent compatibility gates: operator ideal/category, positivity under the category-changing operation, and **spectral type**. Matching eigenvalue formulas on a dense sample is not an operator bridge when one carrier is pure point and the other continuous.
+
+A viable cross-branch identification must therefore transport not only a scalar symbol but the relevant spectral measure/type and sign structure.
 
 ## Strongest justified principle
 
-WP-014 compares the canonical exact Prime-Flute Schiffer compression from PF-085 with the exact positive finite-Weil operator isolated in WP-004. The Schiffer cell operator is trace class, so its absolute value, square, bounded congruences, and bounded compressions remain trace class or better. The finite-Weil operator with prime-power weights satisfies
+WP-014 compares the canonical exact Prime-Flute Schiffer compression with the positive finite-Weil operator. The former is trace class; the latter lies in `S_q` exactly for `q>2` and is not Hilbert--Schmidt. Bounded coordinate changes, compressions, and congruences cannot cross that ideal boundary.
 
-\[
-T\in S_q\iff q>2,
-\]
+WP-015 tests the natural singular/boundary escape. Prime-Flute zero-energy DtN is positive, but spectral continuation loses self-adjoint positivity; on the critical scattering line the outgoing response is non-Hermitian because of universal cusp flux. A category-changing boundary operation therefore does not inherit a Weil-type sign theorem automatically.
 
-and is not Hilbert--Schmidt. Bounded coordinate changes therefore cannot bridge the two.
+WP-130--WP-131 add a different obstruction. The canonical solenoid Gamma generator samples the same scalar Gamma dispersion on the rational character spectrum, while the radial/log-scale Gamma generator realizes that dispersion as a continuous Fourier multiplier. After bounded heat functional calculus, the solenoid operator has a complete pure-point eigenbasis and the radial operator has no nonzero `L^2` eigenvectors because its multiplier has null level sets. Consequently **every bounded exact intertwiner in either direction is zero**. The mismatch is stronger than failure of unitary equivalence; changing to a bounded nonunitary representation does not help.
 
-WP-015 tests the most natural singular/boundary escape. Prime-Flute zero-energy DtN is genuinely positive, but its spectral continuation loses real positivity immediately; on the critical scattering line the outgoing response is non-Hermitian because of universal cusp flux. Feshbach reduction retains marked information through a resolvent, but the resolvent changes sign/poles across the positive spectrum rather than inheriting a Weil-type order theorem.
+## Evidence synthesis and boundaries
 
-The combined gate is stronger than ideal mismatch alone:
+The three gates are logically distinct. An unbounded or distributional transform can change spectral type; a boundary map or Schur complement can change operator ideal; a non-self-adjoint continuation can carry response data. None is ruled out merely because bounded intertwiners fail. But each such escape adds new structure and must prove its own domain, topology, and positivity theorem rather than borrowing positivity from the source operator.
 
-\[
-\boxed{
-\text{soft trace-class geometry}
-\to\text{category-changing operation}
-\to\text{critical-scale arithmetic operator}
-}
-\]
-
-is useful only if the middle arrow is geometrically forced **and** the final object has a sign theorem not borrowed from the positive source after that sign has already been lost.
-
-## What remains possible
-
-Unbounded weighting, singular boundary maps, relative/noncompact scattering, cohomological quotients, noncommuting insertions, or determinant-line constructions can cross Schatten boundaries. Boundary asymmetry and eta-type data can also retain information that a positive square forgets. None is ruled out categorically.
-
-The requirement is that the category change itself be canonical, survive matched controls, and produce both the required slower arithmetic tail and an independent sign/order statement. Choosing a singular weight to reproduce Mangoldt coefficients, or invoking ordinary DtN positivity after continuation has destroyed it, does not meet that requirement.
+Dense agreement of scalar dispersion values is therefore weak evidence. What matters is whether the spectral measures and the operation that transports them are canonically forced by the arithmetic geometry.
 
 ## Status / novelty
 
-Trace-ideal closure and boundary/Weyl theory are standard. The project-specific evidence is the exact placement of the Mathia operators on opposite sides of the Hilbert--Schmidt boundary together with the failure of the canonical Prime-Flute DtN/Feshbach bridge to preserve positivity at the critical spectral parameter.
+Trace-ideal closure, boundary/Weyl theory, the spectral theorem, and normal-operator intertwining theory are standard. The project-specific synthesis is the exact placement of Mathia candidates on incompatible sides of three boundaries: Schatten class, critical-line positivity, and pure-point versus continuous spectral type.
 
 ## Falsification criterion
 
-Construct a bounded transformation of the PF-085 trace-class compression yielding the finite-Weil operator, contradicting ideal invariance; or construct the ordinary continued Prime-Flute DtN/Feshbach object with a genuine positive quadratic form on the critical line despite the persisted cusp-flux obstruction. A different singular construction with its own sign theorem would evade rather than falsify the gate.
+Construct a bounded nonzero exact intertwiner between the WP-131 canonical heat semigroups, or a bounded transformation of the PF-085 trace-class compression yielding the finite-Weil operator. A genuinely unbounded/distributional or category-changing construction with an independently proved sign theorem would evade rather than falsify the gate.
 
 ## Lean-formalizable core
 
 - Ideal property under bounded sandwiches and compressions.
-- Schatten criterion for the prime-power diagonal finite-Weil operator.
-- Elementary variational loss of DtN positivity for `Delta-lambda` at `lambda>0`.
-- Abstract distinction between information-preserving category change and sign preservation.
+- Schatten criterion for the prime-power finite-Weil operator.
+- Loss of ordinary DtN positivity after positive-energy continuation.
+- Vanishing of bounded intertwiners from complete point spectrum to a multiplication operator with null level sets, and conversely by adjoints.
