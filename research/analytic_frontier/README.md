@@ -1,46 +1,51 @@
 # Analytic Frontier
 
-## Scope
+## Research mandate
 
-`analytic_frontier` is a classical analytic-number-theory research line for extracting mechanisms from the current quantitative frontier around the Riemann hypothesis and testing whether they can produce new RH-relevant leverage or transferable clues for other Mathia lines.
+### Primary object
 
-The line should concentrate on the active machinery that is currently producing unconditional progress: Dirichlet polynomials and their large values, zero-density estimates, zero-detecting arguments, mean values and moments of zeta and Dirichlet `L`-functions, mollifiers, exponential/sieve inputs, and zero statistics when they are used as quantitative analytic information rather than as a separate spectral program.
+The line studies the quantitative analytic-number-theory machinery surrounding the Riemann zeta function and closely related Dirichlet `L`-functions: Dirichlet polynomials, large-value estimates, zero-detecting arguments, zero-density bounds, mean values and twisted moments, mollifiers, exponential-sum and sieve inputs, and zero correlations when they function as analytic information about zero location.
 
-The purpose is not to repackage the whole classical literature or to optimize constants for their own sake. Prefer questions where a modern analytic estimate changes the available information budget, exposes a reusable structural mechanism, or gives a concrete bridge into an existing Mathia obstruction.
+For zero-density questions write `N(sigma,T)` for the number of nontrivial zeros `rho=beta+i gamma` with `beta >= sigma` and `0 < gamma <= T`, with the exact convention restated whenever a source uses a different normalization.
 
-## Research objective
+### Objective
 
-Seek explicit quantitative statements of the form
+Identify modern analytic estimates that genuinely enlarge the unconditional information available about zeta zeros, and determine whether that extra information can be converted into stronger zero-location consequences, sharper RH-adjacent partial results, or mathematically precise inputs for other Mathia research lines.
 
-`new analytic control -> stronger zero-location / zero-density / moment information -> RH-relevant consequence or transferable mechanism`.
+The emphasis is on mechanisms and information gains rather than isolated constant optimization: determine exactly which new estimate, support range, moment, correlation, or uniformity statement changes the available zero-information budget.
 
-In particular, investigate whether recent large-value, zero-density, mollifier, correlation, or moment techniques can:
+### Priority questions
 
-- strengthen unconditional control of zeros away from `Re s = 1/2`;
-- supply missing arithmetic inputs required by `weil_inertia`, `mobius_cancellation`, or other active lines;
-- identify finite-order statistics or estimates that are genuinely stronger than the information already encoded by classical support-one / first-two-moment arguments;
-- expose a precise quantitative barrier showing why a tempting classical route cannot scale to RH.
+- Can Guth--Maynard-type large-value bounds for Dirichlet polynomials be pushed, recombined, or transferred so that the resulting zero-density information controls a new RH-relevant regime rather than only improving a known exponent?
+- Which zero-detecting decompositions or mean-value estimates are currently load-bearing in the best zero-density bounds, and what precise stronger estimate would move the next barrier?
+- Can Levinson--Conrey-style arguments gain more from optimized combinations of zeta and its derivatives, twisted moments, or new auxiliary functions than from mollifier length alone?
+- Is there a finite amount of pair/higher-correlation or moment information that gives useful horizontal information about zeros before one assumes the full conjectural hierarchy?
+- Can recent unconditional analytic estimates provide the missing source-side input for a live obstruction in `weil_inertia` or `mobius_cancellation`?
+- When a classical route stalls, can the obstruction be expressed as a sharp exponent, Fourier-support, correlation-order, or uniformity threshold that another method could attack directly?
 
-A result is valuable even when it is negative, provided it sharply identifies the missing estimate, exponent, support range, correlation order, or uniformity regime.
+### Scope and exclusions
 
-## Boundaries
+This line owns upstream analytic machinery and its direct quantitative consequences. It does not own the compressed Weil-form/rank-inertia construction itself, prime-circle/flute geometry, or a generic catalogue of RH equivalences.
 
-Do not treat a known equivalence to RH as progress. Do not count a restatement, a numerical verification at finite height, or a conditional theorem whose hypothesis already contains essentially the desired zero-location information as an RH advance.
+Finite-height verification, a reformulation equivalent to RH, or a conditional theorem whose hypothesis already contains essentially the desired zero-location conclusion is not a target result. Pure numerical improvement of a constant is low priority unless the derivation exposes a reusable mechanism or crosses a mathematically meaningful threshold.
 
-Keep literature results, Mathia derivations, computational evidence, and speculative transfer clues epistemically separate. When using very recent preprints, independently audit the load-bearing estimate before treating it as evidence.
+### Line-specific falsification controls
 
-Do not duplicate `weil_inertia`: if the main mathematical object becomes the compressed Weil form, inertia, rank defects, or its specific prime-side matrix realization, hand the resulting question to that line. `analytic_frontier` owns the upstream analytic machinery and its quantitative consequences.
+For every proposed gain, track the complete exponent and support budget through the zero detector rather than only the locally improved estimate. Check whether an apparent unconditional statement imports RH, Lindelof, a density hypothesis, Hardy--Littlewood correlations, or an unproved moment asymptotic at another step.
 
-## Starting directions
+When using Dirichlet-polynomial or moment estimates, separate diagonal control from off-diagonal correlations and verify the exact length, coefficient class, averaging range, and uniformity needed by the downstream zero statement. Test whether the same analytic input is compatible with matched zero configurations having materially different horizontal mass; if so, it is not yet a horizontal discriminator.
 
-The initial search surface is intentionally broad but classical:
+### Prior-art domains
 
-1. Guth–Maynard-style large-value bounds for Dirichlet polynomials and their consequences for zero-density and primes in short intervals.
-2. Modern zero-detecting and density estimates, especially where a new witness decomposition or mean-value estimate changes an exponent barrier.
-3. Levinson–Conrey-type mollifier methods, including optimization of zeta/derivative combinations and twisted moments rather than mollifier length alone.
-4. Pair/higher correlations and moments when they can be converted into unconditional quantitative zero-location information or a clearly isolated missing theorem.
-5. Bridges from these tools into active Mathia lines, emitted as clues only after the exact transferred statement and decisive test are identified.
+- large values of Dirichlet polynomials and zeta/L-functions;
+- zero-density and zero-detecting methods;
+- mean values, twisted moments, mollifiers, and zeta-derivative combinations;
+- exponential sums, large sieve, dispersion, and related sieve machinery;
+- pair correlation, higher zero correlations, and zero statistics used analytically;
+- primes in short intervals when the proof mechanism feeds back into zeta-zero control.
 
-## Persistence
+### Relationship to other lines
 
-Use the standard Mathia Research Watch workflow and repository conventions. Durable results belong under `findings/`; speculative but falsifiable handoffs belong under `clues/`; granular research attempts belong wherever the Research Watch skill currently requires. Do not create artifacts merely to record activity.
+`analytic_frontier` is primarily an upstream supplier of quantitative analytic information. `weil_inertia` may consume new correlation, moment, zero-density, or prime-distribution input but owns the resulting compressed-Weil and inertia arguments. `mobius_cancellation` may consume new signed-sum or mean-value estimates but owns Möbius-specific cancellation mechanisms.
+
+`xi_flow` may consume unconditional zero-spacing or correlation information as dynamical input, while retaining ownership of the de Bruijn--Newman heat flow and collision problem. Cross-line transfers should become clues only when the exact mathematical statement and decisive test are identified.
