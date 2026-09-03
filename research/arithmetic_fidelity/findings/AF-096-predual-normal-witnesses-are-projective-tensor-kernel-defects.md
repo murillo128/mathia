@@ -68,12 +68,12 @@ Such a witness annihilates every linearly extendable fiber operator exactly when
 \boxed{
 \Phi_u|_{\operatorname{ran}R_{F,Y^*}}=0
 \iff
-u\in\ker A
+u\in\ker A.
 }
 \tag{8}
 \]
 
-with the symbol on the right understood as the same representing tensor `u`; equivalently, without introducing a separate symbol,
+Here the `u` on the right is the same representing tensor as in `\Phi_u`. Equivalently, identifying a tensor with its evaluation functional, the predual-normal witness space is
 
 \[
 \boxed{
@@ -226,7 +226,7 @@ A `\sigma(P^*,P)`-continuous linear functional is evaluation at an element `u\in
 \tag{21}
 \]
 
-Since `Q^*` separates points of `Q`, this vanishes for all `S` iff `Au=0`, proving (9) and (14). AF-095 permits the whole bidual `P^{**}` as a witness space; AF-096 identifies exactly the part lying in the canonical copy of `P` selected by the chosen predual.
+Since `Q^*` separates points of `Q`, this vanishes for all `S` iff `Au=0`, proving (8)--(9) and (14). AF-095 permits the whole bidual `P^{**}` as a witness space; AF-096 identifies exactly the part lying in the canonical copy of `P` selected by the chosen predual.
 
 ### The normal margin is distance to weak-star recoverability
 
@@ -254,7 +254,7 @@ For every bounded `A:P\to Q`, annihilator duality gives
 \tag{24}
 \]
 
-Together with `R=A^*`, this proves (11)--(12). The distinction from AF-095 is therefore exact: norm closure tests arbitrary bounded separation, while weak-star closure tests separation by the declared predual.
+Together with `R=A^*`, this proves (11)--(12). The distinction from AF-095 is exact: norm closure tests arbitrary bounded separation, while weak-star closure tests separation by the declared predual.
 
 ### Completion is essential
 
