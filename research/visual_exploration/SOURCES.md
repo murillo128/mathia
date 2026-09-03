@@ -35,6 +35,10 @@ This file records durable external literature dependencies used to support or de
 
 - Elias M. Stein and Rami Shakarchi, **Complex Analysis**, Princeton Lectures in Analysis II, Princeton University Press (2003), Chapter 5 §1, pp. 135–137. Role: standard Jensen formula relating the logarithmic circular mean of a holomorphic function to the moduli of the zeros inside the disk; prior-art boundary for `VIS-014`, which uses the formula to show that the circular-mean zero-entry profile is exactly a transform of centered radial zero distances.
 
+## Poisson–Jensen zero-potential decomposition
+
+- Thomas Ransford, **Potential Theory in the Complex Plane**, London Mathematical Society Student Texts 28, Cambridge University Press (1995), §4.5 “The Poisson–Jensen Formula”. Role: classical Green-function/harmonic-measure decomposition of `log|F|` into boundary harmonic data plus zero/pole sources; prior-art boundary for `VIS-015`, which rewrites the disk zero-source term in angular Fourier/log-radius coordinates and uses it as a negative control for circular-shell multiscale geometry.
+
 ## Hybrid prime/zero decompositions
 
 - S. M. Gonek, C. P. Hughes, and J. P. Keating, **A hybrid Euler-Hadamard product for the Riemann zeta function**, *Duke Mathematical Journal* 136:3 (2007), 507–549. DOI: `10.1215/S0012-7094-07-13634-2`. Role: establishes the unconditional smoothed representation `zeta(s) = P_X(s) Z_X(s) (1 + explicit error)` with a finite von-Mangoldt prime factor and a smoothed zero factor; canonical prior-art baseline for the critical-strip scale decomposition and quotient-control obstruction in `VIS-010` and the accepted prime-phase recursive-geometry clue.
