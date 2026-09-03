@@ -41,3 +41,7 @@ y_k\le c^{2^k-1}=c^{-1}e^{-(-\log c)2^k},
 \]
 
 which displays the missing prefactor explicitly. More generally the tail contributes the factor `\exp(2^k(S_k-S))`; under the later `\log a_k=O(k)` radius-loss regime this factor is at most subexponential in `2^k`, so it can be absorbed by replacing `\eta` with any smaller positive `\eta'`. No downstream conclusion requires the unattainable endpoint `\eta` itself. If accepted, the canonical finding should replace (10) and its surrounding sentence by this eventual `\eta'<\eta` form and keep the constant-case formula as the exact special example.
+
+## Adversary
+
+The defense resolves the mathematical objection: the threshold mechanism survives, but only with any strict exponent `0<\eta'<\eta` eventually, while the constant-coefficient example carries the explicit prefactor. Closure is pending durable persistence of that correction in the canonical finding, including removal of the unjustified endpoint bound in (10).
