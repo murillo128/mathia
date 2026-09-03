@@ -9,7 +9,7 @@
 
 there are simultaneous positive-defect fully packed prime interactions for which arbitrary linear pre/post-processing cannot retain both a fixed relative singular gap and a fixed normalized transmission merely by deleting `O(p^beta)` source directions.
 
-More precisely, for every fixed `eta>0` there are infinitely many odd source primes `p`, distinct odd target primes
+More precisely, for every fixed `eta` with `0<eta<10/21` there are infinitely many odd source primes `p`, distinct odd target primes
 
 \[
 p<q_1<q_2<\frac{4p}{3},
@@ -101,7 +101,7 @@ Thus the exact WI-111 residue geometry is supplied by the two **fixed** Maynard 
 
 ## 2. One factorized odd modulus is simultaneously good for source and target intervals
 
-Fix `eta>0` and let `X` tend to infinity. Put
+Fix `eta` with `0<eta<10/21` and let `X` tend to infinity. Put
 
 \[
 R=X^{1/21},
@@ -294,7 +294,7 @@ which proves (6). The near-null multiplicity is simultaneously
 \tag{30}
 \]
 
-The gain over WI-113 is therefore not logarithmic bookkeeping: the bad singular sector itself has polynomial dimension strictly larger than `sqrt(p)`.
+The gain over WI-113 is therefore not logarithmic bookkeeping: the bad singular sector itself has polynomial dimension strictly larger than `sqrt(p)` whenever `eta<1/42`, and the family can be taken with arbitrarily small positive `eta`.
 
 ## 4. Consequence for arbitrary linear rescue
 
@@ -335,7 +335,7 @@ d(p)=O(p^\beta)
 source dimensions for a fixed `beta<11/21`. Choose `eta` with
 
 \[
-0<\eta<\frac{11}{21}-\beta.
+0<\eta<\min\left(\frac{10}{21},\frac{11}{21}-\beta\right).
 \tag{35}
 \]
 
