@@ -1,6 +1,8 @@
 # XF-009 — fixed-radius gap averages lose mesoscopic phase at leading order
 
-**Status:** `EXACT-DERIVED` + `CROSS-LINE-OBSTRUCTION` + `LITERATURE-CALIBRATED`. XF-008 identifies the fixed-heat-time perturbative coordinate `X=h^2 j` and its Cauchy generator. The new result is that any translation-averaged statistic built from a fixed number of consecutive normalized gaps freezes, to leading order as `h -> 0`, to a pointwise functional of the mesoscopic profile. It therefore retains the value distribution of that profile but loses its mesoscopic ordering/phase. Explicit equimeasurable cosine profiles have identical leading fixed-radius gap statistics while relaxing at different order-one Cauchy rates. Thus a fixed-radius asymptotic constant is not enough to constrain fixed-time Xi-flow dynamics; the missing information first appears at `O(h^2)`, i.e. `O(log^-2 T)` at Xi height `T`, unless the observed block grows to the mesoscopic `Theta(h^-2)` scale.
+**Status:** `EXACT-DERIVED` + `CROSS-LINE-OBSTRUCTION` + `LITERATURE-CALIBRATED`. XF-008 identifies the fixed-heat-time perturbative coordinate `X=h^2 j` and its Cauchy generator. The result here is that any translation-averaged statistic built from a fixed number of consecutive normalized gaps freezes, to leading order as `h -> 0`, to a pointwise functional of the mesoscopic profile. It therefore retains the value distribution of that profile but loses its mesoscopic ordering/phase. Explicit equimeasurable cosine profiles have identical leading fixed-radius gap statistics while relaxing at different order-one Cauchy rates. Thus a fixed-radius asymptotic constant is not enough to constrain fixed-time Xi-flow dynamics.
+
+The general Lipschitz estimate below leaves an `O(h^2)` remainder. XF-010 sharpens the smooth translation-averaged subclass: its entire `O(h^2)` correction is a periodic coboundary and cancels, so generic phase sensitivity first appears at `O(h^4)`. The present finding therefore supplies the broad frozen-stencil obstruction; XF-010 supplies the sharper smooth-response scale and local/nonlocal symbol mismatch.
 
 ## 1. Claim
 
@@ -84,7 +86,7 @@ U_k(t,X)=a e^{-2\pi k t}\cos(kX),
 
 so two profiles that are indistinguishable by **all leading fixed-radius translation averages** can have different order-one decay over any fixed positive heat time.
 
-Consequently a fixed-radius local statistic can constrain this fixed-time flow only if it carries information beyond its leading asymptotic constant: either a phase-sensitive `O(h^2)` term (or better), a radius growing with `h^{-2}`, or some genuinely nonlocal observable.
+Consequently a fixed-radius local statistic can constrain this fixed-time flow only if it carries information beyond its leading asymptotic constant: a quantitatively controlled subleading term, a radius growing with `h^-2`, or some genuinely nonlocal observable. Equation (3) alone gives the coarse requirement that the relevant information lies within an `O(h^2)` remainder; XF-010 shows that smooth translation averaging generically suppresses the first phase-sensitive correction further to `O(h^4)`.
 
 ## 2. Frozen-stencil derivation
 
@@ -116,24 +118,24 @@ F\bigl(1+\epsilon U(X_j),\ldots,1+\epsilon U(X_j)\bigr)
 \tag{9}
 \]
 
-The remaining summand is a fixed `C^1` periodic function of `X_j`; its uniform Riemann sum differs from its torus integral by `O(h^2)`. This proves (3).
+The remaining summand is a fixed `C^1` periodic function of `X_j`; its uniform Riemann sum converges to its torus integral. With the stated regularity one retains the displayed `O(h^2)` scale after combining the two estimates, proving (3).
 
 The obstruction is therefore not probabilistic and does not depend on a particular pair-correlation conjecture. It is a deterministic scale-separation statement: on the coordinate `X=h^2j`, a fixed index stencil has physical `X`-diameter only `O(h^2)` and collapses to one point in the fixed-time limit.
 
 The cosine comparison then isolates exactly what is lost. The maps `X -> kX mod 2pi` preserve Haar measure, so all `U_k` have the same one-point value distribution. Equation (3) cannot distinguish their mesoscopic frequencies at leading order. Equation (5), by contrast, distinguishes them through the multiplier `|k|`.
 
-## 3. The missing information is on the same `h^2` scale as the Xi equilibrium defect
+The `O(h^2)` estimate is intentionally a general upper bound, not a claim that every local functional has a nonzero correction at that order. For smooth translation-averaged `F`, the first-order Taylor term integrates to zero; XF-010 derives the resulting explicit `O(h^4)` Hessian/gradient term. Nonsmooth functionals such as local absolute differences need not enjoy that cancellation and can genuinely retain `O(h^2)` information.
 
-XF-008 already showed that an order-one mesoscopic profile can evolve over order-one heat time while
+## 3. The observation scale versus the Xi equilibrium defect
+
+XF-008 showed that an order-one mesoscopic profile can evolve over order-one heat time while
 
 \[
 R_j-2=O(h^2).
 \tag{10}
 \]
 
-The present calculation shows the same scale from the observation side. Fixed-radius local averages freeze to their diagonal value with error `O(h^2)`. Thus the first phase-sensitive information available from a smooth fixed stencil lives at exactly the order at which the normalized exterior-field defect becomes visible.
-
-At Xi height `T`,
+Equation (3) shows that a fixed-radius local average freezes to its diagonal value within a remainder of the same coarse size. At Xi height `T`,
 
 \[
 h_T\sim\frac{4\pi}{\log T},
@@ -142,21 +144,21 @@ h_T^2\asymp\frac1{(\log T)^2}.
 \tag{11}
 \]
 
-Therefore an upstream local-gap theorem that supplies only a limiting constant with an unspecified `o(1)` error is too coarse for this perturbative fixed-time mechanism. The error can be much larger than the `log^{-2}T` signal that distinguishes mesoscopic phase.
+Therefore an upstream local-gap theorem that supplies only a limiting constant with an unspecified `o(1)` error is too coarse for this perturbative fixed-time mechanism: the error can be much larger than the `log^{-2}T` driver that distinguishes mesoscopic phase.
 
-This does **not** say that every useful theorem must literally prove an expansion in powers of `h^2`. A growing block or a nonlocal statistic can retain the phase at leading order. But a genuinely fixed-radius translation average must resolve its first non-frozen correction quantitatively if it is to control the Cauchy field.
+For smooth translation-averaged observables the mismatch is stronger. XF-010 proves that the `O(h^2)` term is a coboundary and the first generic phase-sensitive correction is instead `O(h^4)=O(log^{-4}T)`, with local `k^2` frequency response rather than the Cauchy `|k|` response. The broader statement here remains necessary because not every potentially useful finite-block statistic is smooth.
+
+This does **not** say that every useful theorem must literally prove an expansion in powers of `h`. A growing block or a nonlocal statistic can retain phase at leading order, and a deliberately nonsmooth fixed-radius statistic may expose order-`h^2` variation. The durable conclusion is that a mere fixed-block limiting constant has discarded the ordering needed by the fixed-time field.
 
 ## 4. Consequence for the current `analytic_frontier` bridge
 
-ANF-006 establishes an important unconditional fact: finite ordered-gap/block processing can beat the Montgomery--Taylor global pair-moment ceiling. ANF-008 then shows that, for its frozen `n_point_bound` architecture, the improving block size is forced by a finite certificate; the currently verified examples use fixed `n` and fixed finite `m` independent of `T`.
+ANF-006 establishes an important unconditional fact: finite ordered-gap/block processing can beat the Montgomery--Taylor global pair-moment ceiling. Subsequent `analytic_frontier` work shows that the verified gains currently arise from fixed finite certificates rather than blocks growing with height.
 
-That information is valuable for simple-zero counting, but it does not automatically match the Xi-flow scale. Any continuous statistic extracted from a fixed block of normalized gaps is subject to the frozen-stencil law (3) on a smooth mesoscopic modulation. The stored ANF theorem provides a limiting simple-zero proportion, not a phase-sensitive `O(log^{-2}T)` asymptotic for a mesoscopic ordered field.
+That information is valuable for simple-zero counting, but it does not automatically match the Xi-flow scale. Any continuous statistic extracted from a fixed block of normalized gaps is subject to the frozen-stencil law (3) on a smooth mesoscopic modulation. A limiting simple-zero proportion does not by itself retain the low-frequency ordering that controls Cauchy relaxation.
 
-Hence the current ANF gain should **not** be imported into `xi_flow` merely because it retains more local configuration information than pair correlation. To become a fixed-time dynamical input, that architecture would need at least one of the following upgrades:
+Hence the current ANF gain should **not** be imported into `xi_flow` merely because it retains more local configuration information than pair correlation. To become a fixed-time dynamical input, that architecture needs at least one genuinely scale-matched feature: a block/stencil whose index width grows on the `h_T^{-2}=Theta(log^2 T)` scale; a quantitatively controlled subleading expansion linked to mesoscopic phase; or a separate nonlocal observable that retains ordering before global averaging.
 
-- a block/stencil whose index width grows on the `h_T^{-2}=Theta(log^2 T)` scale;
-- a uniform expansion or error bound sharp enough to resolve the `O(h_T^2)=O(log^{-2}T)` non-frozen term;
-- a separate mesoscopic/nonlocal observable that retains ordering or low-frequency phase before global averaging.
+XF-010 adds an important qualification. For smooth translation-averaged fixed-block observables, the needed phase term is generically only `O(log^-4 T)`. This sharpening is **not** automatically applied to nonsmooth optimization certificates in `analytic_frontier`; their regularity must be checked before using the stronger scale.
 
 This is a scale-matching obstruction, not a criticism of the ANF simple-zero theorem. A fixed finite block can improve a global counting constant while still discarding the spatial information needed to propagate a gap field for fixed heat time.
 
@@ -168,18 +170,20 @@ There is also a substantial literature on **mesoscopic statistics of zeta zeros*
 
 These papers are **not** evidence that an existing theorem already supplies the Xi-flow input isolated here. Their test-function regimes, hypotheses, observables, and scaling are different, and an ordered real-gap field cannot be assumed when RH is precisely what the flow is meant to constrain. They serve only as prior-art calibration that a mesoscopic analytic layer exists and that `H^{1/2}`-type frequency weights are natural in zeta-zero fluctuation theory.
 
-The Mathia-specific contribution is the exact scale bridge: combining XF-008's `X=h^2j` Cauchy limit with a frozen-stencil expansion proves that leading fixed-radius ordered-gap averages lose the phase that controls fixed-time relaxation, and that the information first re-enters at the same `h^2~log^{-2}T` scale as the exterior-field defect.
+The Mathia-specific contribution is the scale bridge: combining XF-008's `X=h^2j` Cauchy limit with the frozen-stencil estimate proves that leading fixed-radius ordered-gap averages lose the phase that controls fixed-time relaxation. XF-010 then refines the smooth subclass by identifying the exact cancellation and `h^4` first generic correction.
 
 ## 6. Falsification boundary
 
-This finding is deliberately perturbative and does not claim that every Xi zero configuration is a smooth modulation of an arithmetic lattice. Large Lehmer defects, collision cascades, singular profiles, and strongly nonlinear regimes may carry information that is visible to a fixed local statistic without an `h^2` penalty.
+This finding is deliberately perturbative and does not claim that every Xi zero configuration is a smooth modulation of an arithmetic lattice. Large Lehmer defects, collision cascades, singular profiles, and strongly nonlinear regimes may carry information that is visible to a fixed local statistic without a small-`h` penalty.
 
 The synthetic gap sequences (1) are also not asserted to be complete zero sets of admissible Xi-type entire functions. Their role is narrower: they are exact profiles for the lattice linearization that governs the candidate perturbative fixed-time mechanism. A future Xi-specific theorem could rule out one of the compared profiles by arithmetic structure; that would be precisely the missing source-specific law rather than a failure of the scale calculation.
 
-Nor does the result apply when the observation radius grows with height. If `r h^2` stays of order one, the stencil spans a nontrivial interval in `X` and no longer freezes to a point. Likewise, a fixed-radius theorem with a proved `O(h^2)` expansion may recover derivative/phase information from its subleading coefficient. Statistics retaining absolute spatial location rather than translation averaging also fall outside the equimeasurability argument.
+Nor does the result apply when the observation radius grows with height. If `r h^2` stays of order one, the stencil spans a nontrivial interval in `X` and no longer freezes to a point. Statistics retaining absolute spatial location rather than translation averaging also fall outside the equimeasurability argument.
+
+Finally, do not infer the sharper `h^4` scale without the hypotheses of XF-010. A Lipschitz or cusp-like functional can have a genuine `O(h^2)` translation-averaged correction, so the broad theorem here remains the correct safe statement for arbitrary fixed-radius observables of that regularity.
 
 ## 7. Consequence for `xi_flow`
 
-XF-007 and XF-008 established that fixed heat time lives on `Theta(log^2 T)` gaps and is propagated by a nonlocal Cauchy field. XF-009 now identifies the complementary **observation barrier**: leading fixed-radius local statistics collapse before they can see that field's phase.
+XF-007 and XF-008 established that fixed heat time lives on `Theta(log^2 T)` gaps and is propagated by a nonlocal Cauchy field. XF-009 identifies the complementary **observation barrier**: leading fixed-radius local statistics collapse before they can see that field's phase.
 
-A credible statistical route to an upper bound on `Lambda` must therefore match both sides of the scale. It must provide unconditional information that is real-rootedness-safe and either remains coherent across `Theta(log^2 T)` ordered gaps, or resolves fixed-block observables to roughly `log^{-2}T` precision with a demonstrable link to the Cauchy mode structure. A stronger asymptotic constant for a fixed local block, without such a rate or mesoscopic organization, can improve zero counting while still being dynamically too coarse.
+A credible statistical route to an upper bound on `Lambda` must therefore match both sides of the scale. It must provide unconditional information that is real-rootedness-safe and either remains coherent across `Theta(log^2 T)` ordered gaps, or retains a controlled subleading phase-sensitive term with a demonstrable link to the Cauchy mode structure. For smooth translation-averaged local observables, XF-010 raises that subleading target from the coarse `log^-2 T` remainder here to a generic `log^-4 T` signal. A stronger asymptotic constant for a fixed local block, without such rate or mesoscopic organization, can improve zero counting while still being dynamically too coarse.

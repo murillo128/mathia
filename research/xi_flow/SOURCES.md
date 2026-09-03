@@ -13,9 +13,11 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 - George Csordas, Wayne Smith and Richard S. Varga, **Lehmer Pairs of Zeros, the de Bruijn–Newman Constant Lambda, and the Riemann Hypothesis**, *Constructive Approximation* 10 (1994), 107–129, DOI `10.1007/BF01205170`. Role: primary anchor for the classical real-zero dynamics/Lehmer-pair mechanism, the exact `Delta^2 G < 4/5` Lehmer criterion used in XF-005, and the associated lower bounds on `Lambda`.
 - Jeffrey Stopple, **Lehmer Pairs Revisited**, *Experimental Mathematics* 26:1 (2017), 130–138; arXiv:1508.05870. Role: accessible restatement of the Csordas–Smith–Varga criterion and its reformulation through pre-Schwarzian data and nearby zeros of `zeta'`; used only for prior-art calibration in XF-005.
 
-## Nonlocal lattice and fractional-diffusion scaling
+## Nonlocal lattice, periodic quadrature, and fractional-diffusion scaling
 
 - Óscar Ciaurri, Luz Roncal, Pablo R. Stinga, José L. Torrea and Juan L. Varona, **Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications**, *Advances in Mathematics* 330 (2018), 688–738, DOI `10.1016/j.aim.2018.03.023`; arXiv:1608.08913. Role: peer-reviewed anchor for discrete nonlocal diffusion and convergence to continuum fractional Laplacians. XF-008 uses it only to calibrate the prior-art class of the Cauchy/half-Laplacian hydrodynamic limit; the exact finite-spacing Xi lattice linearization is derived independently and is not identified with the canonical discrete fractional Laplacian of this paper.
+- Kay Kirkpatrick, Enno Lenzmann and Gigliola Staffilani, **On the continuum limit for discrete NLS with long-range lattice interactions**, *Communications in Mathematical Physics* 317:3 (2013), 563–591, DOI `10.1007/s00220-012-1621-x`; arXiv:1108.6136. Role: rigorous neighboring-field anchor for the locality/nonlocality boundary used in XF-010: long-range lattice interactions can produce fractional continuum symbols, while short-range interactions yield ordinary local Laplacian dispersion. It is prior-art calibration, not evidence for the Xi-specific coefficient derived there.
+- Mohsin Javed and Lloyd N. Trefethen, **A trapezoidal rule error bound unifying the Euler–Maclaurin formula and geometric convergence for periodic functions**, *Proceedings of the Royal Society A* 470:2161 (2014), 20130571, DOI `10.1098/rspa.2013.0571`. Role: authoritative periodic trapezoidal/Euler–Maclaurin anchor for the lattice-average-to-torus-integral step in XF-010; periodic endpoint cancellation justifies pushing quadrature error below the explicit `h^4` correction under sufficient smoothness.
 
 ## Upper-bound and high-zero asymptotic machinery
 
@@ -46,4 +48,4 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 ## Expansion rule
 
-Add primary sources for zero-motion, Lehmer-pair, collision, or real-entire-function mechanisms only when a canonical finding depends on their exact theorem. A numerical trajectory or secondary exposition is not a source anchor for a mathematical claim.
+Add primary sources for zero-motion, Lehmer-pair, collision, real-entire-function, or nonlocal continuum mechanisms only when a canonical finding depends on their exact theorem or needs them to delimit a durable prior-art boundary. A numerical trajectory or secondary exposition is not a source anchor for a mathematical claim.
