@@ -144,21 +144,37 @@ and
 \tag{9}
 \]
 
-then
+write
 
 \[
-y_k\le e^{-\eta 2^k}=N_k^{-\eta/\log N_0}.
+S_k:=\sum_{j=0}^{k-1}2^{-j-1}\log a_j.
+\]
+
+Then (8) gives the exact tail-sensitive estimate
+
+\[
+2^{-k}\log y_k\le -\eta+(S_k-S).
 \tag{10}
 \]
 
-Thus an initially normalized `O(1)` state that lies below the explicit threshold `e^{-S}` acquires a positive power saving along the tower.
+Convergence `S_k\to S` does not in general control the sign of `S_k-S`, so the endpoint exponent `\eta` cannot be claimed without an additional one-sided tail hypothesis. Instead, for every `0<\eta'<\eta` there is `k_0(\eta')` such that
 
-The constant-contraction example is immediate. If `a_k=c<1`, then `S=\log c`, and for `y_0=1` one obtains
+\[
+y_k\le e^{-\eta'2^k}
+=N_k^{-\eta'/\log N_0}
+\qquad(k\ge k_0).
+\tag{11}
+\]
+
+Thus an initially normalized `O(1)` state that lies below the explicit threshold `e^{-S}` acquires every strict positive power saving below the limiting exponent `\eta/\log N_0` along the tower. The exact endpoint requires additional control of the weighted tail.
+
+The constant-contraction example shows the missing finite prefactor explicitly. If `a_k=c<1`, then `S=\log c`, and for `y_0=1` one obtains exactly
 
 \[
 y_k\le c^{2^k-1}
+=c^{-1}e^{-(-\log c)2^k}
 =c^{-1}N_k^{-(-\log c)/\log N_0}.
-\tag{11}
+\tag{12}
 \]
 
 More generally, if an unnormalized estimate is `x_0\le C N_0^{-\alpha}` and the recurrence is `x_{k+1}\le c x_k^2`, then the normalized starting value is `y_0\le C`; a gain occurs when the corresponding threshold condition, in particular `cC<1` in this constant case, is met. A subunit coefficient by itself is therefore not enough, but a truly iterable contraction can become a power gain.
@@ -181,7 +197,7 @@ Then
 
 \[
 \rho_{k+1}=\frac{\rho_k}{2}.
-\tag{12}
+\tag{13}
 \]
 
 Apply (4) with source radius `R=\rho_k` and target radius `r=\rho_{k+1}`. Since `h` is nonzero near the origin, `\|1/h\|_{\rho_k}` is uniformly bounded for large `N_0`; hence
@@ -190,10 +206,10 @@ Apply (4) with source radius `R=\rho_k` and target radius `r=\rho_{k+1}`. Since 
 a_k:=C_{\rho_{k+1},\rho_k}
 =O\!\left(\frac1{\rho_k}\right)
 =O(\log N_k).
-\tag{13}
+\tag{14}
 \]
 
-Because `\log N_k=2^k\log N_0`, equation (13) gives
+Because `\log N_k=2^k\log N_0`, equation (14) gives
 
 \[
 \log a_k=O(k+\log\log N_0).
@@ -203,7 +219,7 @@ Therefore
 
 \[
 \sum_{k\ge0}2^{-k-1}\log a_k<\infty.
-\tag{14}
+\tag{15}
 \]
 
 This is the decisive correction to a generic radius-loss no-go. The Cauchy constants diverge as the germ shrinks, but under the `N\mapsto N^2` dynamics their logarithms have finite dyadic weight. They raise the initial smallness threshold in (9); they do not algebraically forbid an exponent bootstrap.
@@ -226,7 +242,7 @@ Taking absolute values termwise gives
 y_{k+1}
 \le
 a_k y_k^2+e_k,
-\tag{15}
+\tag{16}
 \]
 
 where
@@ -236,30 +252,30 @@ e_k
 :=
 N_{k+1}^\alpha
 \frac{\|B_{N_k}\|_{\rho_{k+1}}}{N_k^2}.
-\tag{16}
+\tag{17}
 \]
 
 To upgrade from exponent `alpha` to `alpha+delta`, the normalized target is
 
 \[
 y_k=O(N_k^{-\delta}).
-\tag{17}
+\tag{18}
 \]
 
-A separately bounded positive residual in (15) must therefore satisfy, at the relevant scale,
+A separately bounded positive residual in (16) must therefore satisfy, at the relevant scale,
 
 \[
 e_k=O(N_{k+1}^{-\delta})
 =O(N_k^{-2\delta}),
-\tag{18}
+\tag{19}
 \]
 
-or an equivalent summably smaller condition. Translating (18) back to the unnormalized residual requires
+or an equivalent summably smaller condition. Translating (19) back to the unnormalized residual requires
 
 \[
 \frac{\|B_{N_k}\|_{\rho_{k+1}}}{N_k^2}
 =O(N_{k+1}^{-(\alpha+\delta)}).
-\tag{19}
+\tag{20}
 \]
 
 So a proof that estimates `Q[A_N]` and `B_N/N^2` separately by absolute values risks demanding the improved exponent from the residual before the bootstrap can produce it.
@@ -268,14 +284,14 @@ There is one important escape: equation (1) is signed. A useful arithmetic mecha
 
 \[
 \mathcal Q[A_N](t)-\frac{B_N(t)}{N^2}
-\tag{20}
+\tag{21}
 \]
 
 directly and obtain cancellation that is invisible after the triangle inequality. The residual-floor obstruction applies to separated positive norm bounds, not to a proved signed coupling.
 
 ## 5. Square-tower amplification still needs global coverage
 
-Even if (6)–(10) hold, they directly control only
+Even if (6)–(11) hold, they directly control only
 
 \[
 N_0,\ N_0^2,\ N_0^4,\ldots
@@ -299,7 +315,7 @@ The fixed-radius warning survives independently of the iteration correction. Fix
 \|A_N\|_R=O(N^{-\alpha}),
 \qquad R>\delta,
 \qquad \alpha>\delta.
-\tag{21}
+\tag{22}
 \]
 
 At `t=-delta`,
@@ -308,7 +324,7 @@ At `t=-delta`,
 F_N(-\delta)-f(-\delta)
 =N^\delta A_N(-\delta)
 =O(N^{\delta-\alpha})\to0.
-\tag{22}
+\tag{23}
 \]
 
 Hence
@@ -333,4 +349,4 @@ The durable result is a correction and a sharper boundary for the active Mathia 
 
 The analytic continuation of `MC-023` is more viable than a one-step exponent ledger suggests, but only in a very specific form. A useful bootstrap would need to prove that a shrinking analytic germ enters an iterative small-state basin, then control the Huxley–Watt residual either at the improved scale or through direct signed cancellation, and finally bridge square-scale towers to all `N`.
 
-This focuses the next attack on the exact coupled residual rather than on searching for a generic norm in which the quadratic map merely has a bounded constant. A candidate mechanism that cannot beat the normalized floor in (15), or cannot propagate beyond a sparse tower, cannot improve the Mertens exponent even if its pure quadratic part contracts.
+This focuses the next attack on the exact coupled residual rather than on searching for a generic norm in which the quadratic map merely has a bounded constant. A candidate mechanism that cannot beat the normalized floor in (16), or cannot propagate beyond a sparse tower, cannot improve the Mertens exponent even if its pure quadratic part contracts.
