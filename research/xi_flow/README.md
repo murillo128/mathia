@@ -1,43 +1,59 @@
 # Xi Flow
 
-## Scope
+## Research mandate
 
-`xi_flow` studies the Riemann hypothesis through the de Bruijn–Newman heat-flow deformation of the completed zeta function. Its core viewpoint is dynamical: instead of treating zero location as a static condition, study how the zero configuration evolves under the heat parameter and whether `t = 0` can be characterized as the exact transition boundary for real-rootedness.
+### Primary object
 
-The line should use the de Bruijn–Newman constant, zero dynamics, collision/repulsion structure, Lehmer-pair phenomena, monotone or nearly monotone energies, barrier arguments, local-versus-global gap statistics, and faithful finite-dimensional models when they illuminate the infinite system.
+The line studies the de Bruijn--Newman heat-flow deformation of the Riemann xi function. In the Rodgers--Tao normalization,
 
-## Research objective
+\[
+H_t(z)=\int_0^\infty e^{t u^2}\Phi(u)\cos(zu)\,du,
+\]
 
-Seek a source-faithful mechanism that would force or constrain
+with a finite constant `Lambda` such that all zeros of `H_t` are real exactly for `t >= Lambda`. At `t=0`, real-rootedness is equivalent to the Riemann hypothesis; hence RH is equivalent to `Lambda <= 0`, while the proved Newman conjecture gives `Lambda >= 0`.
 
-`Lambda = 0`,
+The intrinsic objects are therefore the zero configuration of `H_t`, its evolution with `t`, collisions and near-collisions, gap geometry, and global quantities that can be justified for this specific heat deformation.
 
-or, more realistically, produce a new unconditional upper bound or structural obstruction on positive-time first collision.
+### Objective
 
-Prefer concrete intermediate statements such as:
+Find a source-faithful dynamical mechanism that constrains the transition time `Lambda` from above, ideally forcing `Lambda=0`, or obtain a new rigorous structural/quantitative obstruction to a positive transition time.
 
-- a monotone quantity along the zero flow that has the correct sign at `t = 0`;
-- a collision barrier derived from global zero statistics or arithmetic input;
-- a rigidity theorem showing that a positive `Lambda` would force an impossible local/global gap configuration;
-- a finite-dimensional or truncated model whose invariant survives a controlled limit to the actual xi flow;
-- a quantitative relation between Lehmer-type near-collisions and global density/correlation information that improves known bounds on `Lambda`.
+Intermediate progress should explain why the actual xi-flow zero configuration cannot follow a candidate positive-`Lambda` collision scenario, rather than merely re-expressing the equivalence between RH and the sign of `Lambda`.
 
-## Boundaries
+### Priority questions
 
-Do not count the equivalence `RH <=> Lambda <= 0` or the known lower bound `Lambda >= 0` as new progress. Do not infer infinite-system behavior from a visually compelling finite simulation without a topology-matched stability argument.
+- Which exact zero-motion equations hold in the real-rooted regime, and do they admit monotone, convex, coercive, or conserved quantities that remain informative as `t` approaches `0`?
+- Can unconditional spacing, pair-correlation, or higher-correlation information rule out the local equilibrium or collision geometry required by a hypothetical `Lambda>0`?
+- Can Lehmer-type near-collisions be organized into a quantitative local-to-global statement about the transition, rather than used only as numerical evidence?
+- Is there an energy, entropy, Lyapunov, discriminant, or gap functional whose behavior distinguishes the actual xi flow from matched real-entire heat flows with positive transition time?
+- Can finite truncations or particle models provide a theorem-level invariant that survives a controlled infinite-system limit?
+- Can the Rodgers--Tao contradiction mechanism be strengthened by replacing the currently used zero-statistical input with richer unconditional information?
 
-Avoid silently assuming RH in zero-labeling, pair-correlation, or real-root dynamics. When a formula for moving zeros is valid only inside a real-rooted regime, state that domain explicitly and do not extrapolate it through a collision.
+### Scope and exclusions
 
-Do not duplicate `weil_inertia` merely because both lines use zero statistics. `xi_flow` owns the heat deformation, zero motion, collision geometry, and `Lambda`; if the central object becomes the compressed Weil form or a rank/inertia certificate, hand the question to `weil_inertia` as a clue.
+This line owns the heat deformation, zero dynamics, collision geometry, and the de Bruijn--Newman constant. It does not own generic Hilbert--Polya constructions, compressed-Weil inertia certificates, or unrelated spectral analogies.
 
-## Starting directions
+Do not extrapolate a zero-motion formula beyond the regime in which the relevant zeros are known to be real and simple. Numerical zero trajectories, finite particle simulations, or visually striking Lehmer pairs are not target results without a controlled stability or limiting argument. Do not assume RH to label, order, or statistically model the very zero configuration whose real-rootedness is at issue.
 
-1. Reconstruct the exact zero-motion equations in the real-rooted regime and identify quantities with monotonicity, convexity, or conservation properties that could survive toward `t = 0`.
-2. Study whether known pair-correlation or higher-correlation information imposes a quantitative obstruction to a positive-time first collision.
-3. Audit Lehmer-pair mechanisms as possible local witnesses of near-criticality while separating numerical evidence from a global theorem.
-4. Search for energy/entropy/Lyapunov formulations whose sign or growth changes at the de Bruijn–Newman transition and test them against matched synthetic zero configurations.
-5. Use visualization as clue-generation only when it leads to an explicit invariant, inequality, counterexample, or falsifiable dynamical hypothesis.
+### Line-specific falsification controls
 
-## Persistence
+Any proposed dynamical invariant must be tested against matched even real-entire functions or synthetic zero systems whose heat deformation has a different transition time. If the invariant is shared by those controls, it is not a xi-specific selector.
 
-Use the standard Mathia Research Watch workflow and repository conventions. Durable results belong under `findings/`; speculative but falsifiable handoffs belong under `clues/`; granular research attempts belong wherever the Research Watch skill currently requires. Do not create artifacts merely to record activity.
+Track collision singularities explicitly: a quantity that is monotone only while all gaps stay uniformly positive cannot by itself cross the first-collision boundary. For truncated or finite-dimensional models, require a topology and error estimate strong enough to preserve the claimed sign, coercivity, or non-collision property in the infinite limit.
+
+When importing zero statistics, distinguish unconditional statements from RH-conditional versions and verify that the statistic remains meaningful for a hypothetical configuration containing nonreal zeros.
+
+### Prior-art domains
+
+- de Bruijn--Newman deformation and constants;
+- dynamics of zeros under heat flow and real-entire/Laguerre--Polya theory;
+- Rodgers--Tao and subsequent proofs/generalizations of Newman's conjecture;
+- Csordas--Smith--Varga zero-dynamics methods and Lehmer-pair literature;
+- Montgomery pair correlation and higher zero statistics when used without circular RH assumptions;
+- interacting-particle, logarithmic-energy, and Calogero-type structures only where an exact dictionary with the xi flow is established.
+
+### Relationship to other lines
+
+`analytic_frontier` is a natural upstream source of unconditional zero-density, spacing, and correlation estimates that may constrain xi-flow dynamics. `weil_inertia` also uses zero statistics but owns the compressed Weil form and rank/inertia certificates; a bridge discovered here should be handed off rather than duplicating that machinery.
+
+`visual_exploration` can probe zero trajectories, gap evolution, collision patterns, and candidate energies as clue-generating diagnostics, but any durable xi-flow claim remains owned and proved here.
