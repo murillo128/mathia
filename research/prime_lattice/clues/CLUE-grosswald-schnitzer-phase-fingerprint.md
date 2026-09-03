@@ -6,6 +6,7 @@ origin: research-watch
 target_line: prime_lattice
 based_on:
   - research/prime_lattice/findings/PL-127-grosswald-schnitzer-phase-slope-rigidity.md
+  - research/prime_lattice/findings/PL-129-kakeya-phase-slope-tail-aliasing.md
   - research/visual_exploration/findings/VIS-007-grosswald-schnitzer-rigidity-profile-monotone.md
   - research/visual_exploration/visualizations/grosswald-schnitzer-rigidity-profile.md
 ---
@@ -20,7 +21,9 @@ based_on:
 
 is a positive additive discriminator for one-sided Grosswald–Schnitzer deformations and, with integer generators, certifies that all primes below a controlled cutoff are untouched. `VIS-007` sharpens the cutoff: the minimum detectable one-step defect is a strictly decreasing function of prime scale, so the scalar certificate has a canonical resolution profile.
 
-That scalarization still discards structure. Once the untouched prefix has been certified, `D(q)` records only the sum of the later positive contributions. It need not say which admissible generators changed or how several changes are distributed. The full reflection cocycle `R_q(1/2+it)` carries a critical-line phase function whose local derivatives and samples potentially retain more of that arithmetic fingerprint.
+`PL-129` now proves that this scalarization has exact aliases, not merely poor conditioning. Even in the binary endpoint subclass `q_n in {p_n,p_(n+1)}`, the possible central slopes fill the whole interval `[0,g(2)]`; for every prime index `j`, a deformation at `j` can be matched exactly by a suitable admissible tail with `q_j` left unchanged. Thus `D` cannot recover any designated low generator uniformly over an arbitrary tail, despite retaining the sharp one-sided prefix certificate of `PL-127`.
+
+The full reflection cocycle `R_q(1/2+it)` still carries a critical-line phase function whose additional local derivatives and samples may retain more of that arithmetic fingerprint.
 
 ## Research question
 
@@ -36,21 +39,20 @@ A negative result would be equally useful. If two distinct admissible integer de
 
 ## Decisive test
 
-Start with a fixed finite cutoff and one- and two-defect families. Write the exact contribution of each altered generator to `log R_q(1/2+it)` and to its derivatives at `t=0`.
+The one-observable case is closed negatively by `PL-129`. The next test must be genuinely vector-valued and keep the arbitrary tail active.
 
-Then either:
+For a fixed cutoff `X`, choose an explicit finite family of independent critical-line observables beyond `D` and write the exact contribution of each endpoint or integer generator change. Then either prove a tail-uniform separation bound for all admissible tails, or construct two admissible sequences that differ below `X` but collide exactly under the whole finite observable vector.
 
-- prove that a finite collection of such observables gives an injective map on the finite admissible integer deformation set up to `X`, with an explicit separation bound; or
-- construct two distinct admissible deformation patterns below `X` that collide under the proposed observables, and determine whether increasing derivative/sample order resolves the collision or whether a structural non-identifiability remains.
-
-The test should keep `X` finite first; compactness of a finite deformation set must not be mistaken for a useful quantitative theorem unless the observable family and separation scale are explicit.
+Finite-support or tail-frozen uniqueness is not enough: after cross-multiplication that setting reduces to a finite exponential-polynomial identity and sufficiently long Taylor data separate it by classical Vandermonde/Prony arguments. The target is specifically the infinite-tail inverse problem.
 
 ## Evidence boundary
 
-`PL-127` establishes only the positive scalar phase slope and its low-prefix certificate. `VIS-007` proves only that the one-step integer threshold decreases monotonically with prime scale. Neither result proves reconstruction of the complete deformation pattern from finitely many phase observables, and no such injectivity or collision theorem is asserted here.
+`PL-127` establishes the positive scalar phase slope and its low-prefix certificate. `VIS-007` proves the monotone one-step integer threshold. `PL-129` establishes exact arbitrary-tail collisions for that **single** scalar slope. None of these results proves or disproves reconstruction from a finite vector of two or more independent phase observables.
+
+The Grosswald–Schnitzer continuation to `Re(s)>0` relies on paired factor differences, so returning to a finitely supported or absolutely convergent coefficient-inversion problem removes the hard part rather than solving it.
 
 ## Research disposition
 
-Accepted. The direction survives initial scope and prior-art checks only as a tail-uniform inverse problem. If the tail is frozen and only finitely many Euler factors vary, equality of reflection cocycles reduces after cross-multiplication to a finite exponential-polynomial identity, so a sufficiently long Taylor jet is separating by classical Vandermonde/Prony uniqueness. That finite-dimensional argument is not the target and gives no useful uniform separation in the presence of an arbitrary admissible tail.
+Accepted, but narrowed again. The scalar branch is now decisively resolved negatively: `D` alone cannot identify even one prescribed low generator against an arbitrary admissible integer tail, because `PL-129` supplies exact tail aliases at every prime index.
 
-The remaining question is whether finitely many critical-line observables recover every generator below `X` uniformly over the full integer Grosswald–Schnitzer tail. The continuation to `Re(s)>0` uses paired factor differences, so simply returning to a finitely supported or absolutely convergent coefficient-inversion setting removes the hard part. A resolution must control tail contamination using the one-sided integer constraints or exhibit an exact admissible integer-tail collision.
+The surviving direction is the finite-dimensional tail-uniform inverse problem. A substantive resolution must either exhibit a finite phase fingerprint with an explicit separation theorem uniform over the full admissible integer tail, or prove structural non-identifiability by constructing an exact collision for a genuinely multi-observable finite fingerprint. Merely increasing precision in `D`, freezing the tail, or invoking finite-dimensional Prony uniqueness no longer counts as progress on this clue.
