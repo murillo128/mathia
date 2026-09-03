@@ -8,6 +8,11 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 - Brad Rodgers and Terence Tao, **The de Bruijn–Newman constant is non-negative**, *Forum of Mathematics, Pi* 8 (2020), e6. Role: primary anchor for `Lambda >= 0`, the zero-dynamics contradiction mechanism, and its use of local zero statistics.
 - Charles M. Newman and Wei Wu, **Constants of de Bruijn–Newman type in analytic number theory and statistical physics**, *Bulletin of the American Mathematical Society* 57:4 (2020), 595–614. Role: authoritative historical/structural survey of the de Bruijn and Newman deformation framework and neighboring de Bruijn–Newman constants.
 
+## Zero dynamics and Lehmer pairs
+
+- George Csordas, Wayne Smith and Richard S. Varga, **Lehmer Pairs of Zeros, the de Bruijn–Newman Constant Lambda, and the Riemann Hypothesis**, *Constructive Approximation* 10 (1994), 107–129, DOI `10.1007/BF01205170`. Role: primary anchor for the classical real-zero dynamics/Lehmer-pair mechanism, the exact `Delta^2 G < 4/5` Lehmer criterion used in XF-005, and the associated lower bounds on `Lambda`.
+- Jeffrey Stopple, **Lehmer Pairs Revisited**, *Experimental Mathematics* 26:1 (2017), 130–138; arXiv:1508.05870. Role: accessible restatement of the Csordas–Smith–Varga criterion and its reformulation through pre-Schwarzian data and nearby zeros of `zeta'`; used only for prior-art calibration in XF-005.
+
 ## Upper-bound and high-zero asymptotic machinery
 
 - D. H. J. Polymath, **Effective approximation of heat flow evolution of the Riemann xi function, and a new upper bound for the de Bruijn–Newman constant**, *Research in the Mathematical Sciences* 6 (2019), article 31; arXiv:1904.12438. Role: primary anchor for effective `H_t` asymptotics, the fixed-`t` zero-counting law used in XF-004, and the published `Lambda <= 0.22` upper-bound framework.
