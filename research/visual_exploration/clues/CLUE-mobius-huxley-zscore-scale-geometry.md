@@ -1,13 +1,14 @@
 ---
 id: CLUE-visual-exploration-mobius-huxley-zscore-scale-geometry
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: visual_exploration
 based_on:
   - research/mobius_cancellation/findings/MC-033-annular-product-fiber-sign-coherence.md
   - research/mobius_cancellation/findings/MC-034-random-multiplicative-annulus-critical-rms.md
   - research/mobius_cancellation/clues/CLUE-reciprocal-phase-prime-log-slab-coupling.md
+  - research/visual_exploration/visualizations/mobius-huxley-dyadic-mode-parity.md
 ---
 
 # Does the fixed Möbius/Huxley z-score panel contain coherent cross-kernel scale geometry hidden by the scalar anomaly test?
@@ -34,3 +35,9 @@ Retain a paired visualization under `research/visual_exploration/visualizations/
 
 ## Evidence boundary
 Issue #105 is a finite, fixed-panel diagnostic and explicitly found no robust anomaly under its declared criterion. This clue does not reinterpret `|Z| <= 2.429` as evidence of hidden structure, does not authorize a larger search, and does not claim an asymptotic Möbius law or any RH consequence. Visual coherence is motivation only until it is converted into a representation-independent statement and survives the normal Research Watch evidence gate.
+
+## Research disposition
+
+Accepted after the fixed-panel visual test. The retained representation exposes a post-hoc alternating dyadic sign geometry: after dephasing by `(-1)^(j+1)`, `31/36` cells are positive, and every one-scale or one-mode deletion leaves the same qualitative alignment. This is not a statistical anomaly certificate because `MC-034`'s matched random multiplicative ensemble induces an exact but currently unevaluated cross-kernel covariance across the reciprocal modes.
+
+The precise follow-up is handed to [[research/mobius_cancellation/clues/CLUE-dyadic-mode-parity-covariance.md]]. No finding is established by the finite picture; the next decision depends on whether the alternating direction survives the exact joint matched-control covariance rather than only the marginal z-score normalization.
