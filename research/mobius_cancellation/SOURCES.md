@@ -141,3 +141,9 @@ Role: closest arithmetic prior art for `MC-013`. Chavez studies logarithmically 
 Sarah Kostinski and Ariel Amir, *An elementary derivation of first and last return times of 1D random walks*, American Journal of Physics 84 (2016), no. 1, 57–60. DOI: https://doi.org/10.1119/1.4930092. arXiv: https://arxiv.org/abs/1509.04800.
 
 Role: probability-theory anchor for `MC-016`. The paper derives by direct path enumeration the first-return distribution for the one-dimensional simple symmetric random walk and the last-return distribution, which follows the arcsine law. `MC-016` uses the exact discrete last-zero symmetry to show that a support-matched independent-sign walk has a macroscopic terminal nonzero excursion with probability at least one half at the tested operational horizon, despite diffusive mean-absolute partial-sum size.
+
+## MC-S24 — Huxley and Watt, independent-range Mertens identities
+
+M. N. Huxley and N. Watt, *Mertens Sums requiring Fewer Values of the Möbius function*, Chebyshevskii Sbornik 19 (2018), no. 3, 20–34. DOI: https://doi.org/10.22405/2226-8383-2018-19-3-20-34. arXiv: https://arxiv.org/abs/1807.05890.
+
+Role: primary source for `MC-025`–`MC-029`. Theorem 1 gives the finite Möbius identity with arbitrary independent cutoffs `N_1,...,N_d` under `K < product_i(1+N_i)`, and the authors explicitly note that differencing the identity at `K` and `K-1` gives a formula for `mu(K)` independent of the auxiliary totally multiplicative function `g`. Equation (1.10) gives the companion Dirichlet-series factorization. `MC-029` uses exactly this coefficient extraction to audit what survives after total-product collapse; no novelty is claimed for the coefficient identity itself.
