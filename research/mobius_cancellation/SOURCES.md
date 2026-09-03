@@ -189,3 +189,9 @@ Role: classical summability-theory boundary for `MC-041`. The paper treats logar
 Shōta Inoue, *Riesz mean of Möbius function*, RIMS Kôkyûroku 2203 (2021), 31–40. Kyoto University RIMS proceedings page: https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2203.html. National Diet Library bibliographic record: https://ndlsearch.ndl.go.jp/books/R000000004-I031952384.
 
 Role: primary prior-art anchor for `MC-042` and the order-one discussion in `MC-019`. The paper defines generalized Möbius Riesz means for nonnegative order, derives explicit formulas exposing zeta-zero contributions with the characteristic Gamma-ratio smoothing factor, and studies both fixed and growing smoothing order under RH. `MC-042` independently derives the fixed-order Mellin factorization and RH-equivalence audit; no novelty is claimed for the Riesz objects or their classical transform machinery.
+
+## MC-S32 — Guth and Maynard, prime asymptotics in uniform short intervals
+
+Larry Guth and James Maynard, *New large value estimates for Dirichlet polynomials*, Annals of Mathematics 203 (2026), no. 2, 623–675. DOI: https://doi.org/10.4007/annals.2026.203.2.6. arXiv: https://arxiv.org/abs/2405.20552.
+
+Role: primary short-interval prime-counting input for `MC-045`. Corollary 1.3 gives the uniform prime-number asymptotic in intervals of length `y` throughout `x^(17/30+epsilon) <= y <= x^0.99` for every fixed positive `epsilon`; equivalently `pi(x+y)-pi(x) ~ y/log x` in that range. This improves the previous `7/12` threshold and is used only to guarantee that a terminal prime slab of width `X^alpha`, `alpha>17/30`, contains `X^(alpha+o(1))` primes. No RH assumption enters this input.
