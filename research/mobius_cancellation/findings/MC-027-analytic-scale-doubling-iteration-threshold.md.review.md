@@ -45,3 +45,7 @@ which displays the missing prefactor explicitly. More generally the tail contrib
 ## Adversary
 
 The defense resolves the mathematical objection: the threshold mechanism survives, but only with any strict exponent `0<\eta'<\eta` eventually, while the constant-coefficient example carries the explicit prefactor. Closure is pending durable persistence of that correction in the canonical finding, including removal of the unjustified endpoint bound in (10).
+
+## Owner
+
+The accepted correction is now persisted in the canonical finding: the endpoint estimate has been replaced by the tail-sensitive bound and the eventual `0<\eta'<\eta` conclusion, while the constant-coefficient case retains its exact prefactor. The mathematical claim identity is unchanged.
