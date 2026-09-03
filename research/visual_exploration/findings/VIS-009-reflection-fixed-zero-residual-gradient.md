@@ -62,7 +62,7 @@ Every Taylor coefficient of a real-valued real-analytic function is real, so
 
 `a_n i^n in R`
 
-for all relevant `n`. In particular there are real nonzero `r_m` and real `r_(m+1)` such that
+for all relevant `n`. In particular there are real `r_m != 0` and real `r_(m+1)` such that
 
 `a_m = r_m i^(-m)`,
 `a_(m+1) = r_(m+1) i^(-(m+1))`.
