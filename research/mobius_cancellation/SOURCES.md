@@ -147,3 +147,9 @@ Role: probability-theory anchor for `MC-016`. The paper derives by direct path e
 M. N. Huxley and N. Watt, *Mertens Sums requiring Fewer Values of the Möbius function*, Chebyshevskii Sbornik 19 (2018), no. 3, 20–34. DOI: https://doi.org/10.22405/2226-8383-2018-19-3-20-34. arXiv: https://arxiv.org/abs/1807.05890.
 
 Role: primary source for `MC-025`–`MC-029`. Theorem 1 gives the finite Möbius identity with arbitrary independent cutoffs `N_1,...,N_d` under `K < product_i(1+N_i)`, and the authors explicitly note that differencing the identity at `K` and `K-1` gives a formula for `mu(K)` independent of the auxiliary totally multiplicative function `g`. Equation (1.10) gives the companion Dirichlet-series factorization. `MC-029` uses exactly this coefficient extraction to audit what survives after total-product collapse; no novelty is claimed for the coefficient identity itself.
+
+## MC-S25 — Letendre, truncated Möbius convolution and divisor multiplicative energy
+
+Patrick Letendre, *Truncated convolution of the Möbius function and multiplicative energy of an integer n*, Acta Arithmetica 195 (2020), 83–95. DOI: https://doi.org/10.4064/aa190515-18-10. arXiv: https://arxiv.org/abs/1903.05629.
+
+Role: adjacent prior-art boundary for `MC-033`. Letendre studies the one-sided truncated divisor sum `M(n,z)=sum_{d|n,d<=z} mu(d)` and moments tied to divisor multiplicative energy. `MC-033` distinguishes that established object from the paired Huxley–Watt cutoff coefficient `c_N(q)=sum_{mn=q,m,n<=N} mu(m)mu(n)`, whose complementary-factor product is sign-coherent on each cube-free product fiber. Letendre's cancellation estimates therefore cannot be transferred to the paired coefficient without an additional argument.
