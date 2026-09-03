@@ -20,11 +20,16 @@ This file records durable external literature dependencies used to support or de
 
 ## Riemann-zeta zero geometry
 
-- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008`, `VIS-009`, `VIS-011`, and `VIS-012`; none of those local identities assumes RH unless explicitly stated as a conditional specialization.
+- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008`, `VIS-009`, `VIS-011`, `VIS-012`, and `VIS-013`; none of those local identities assumes RH unless explicitly stated as a conditional specialization.
 
 ## Hadamard zero moments and Lehmer pairs
 
 - George Csordas, Wayne Smith, and Richard S. Varga, **Lehmer pairs of zeros, the de Bruijn-Newman constant Lambda, and the Riemann Hypothesis**, *Constructive Approximation* 10:1 (1994), 107–129. DOI: `10.1007/BF01205170`. Role: canonical-product and inverse-square zero-interaction prior art for `VIS-012`. Their equation (1.7) gives the relevant even canonical product, equation (1.12) defines the inverse-square interaction `g_k(0)`, and equation (1.11) gives the Lehmer-pair threshold. `VIS-012` uses these to show that the gap-normalized average second log-residual curvature is an affine re-expression of the classical Lehmer quantity rather than a new visual invariant.
+
+## Poisson harmonic extension
+
+- **Encyclopedia of Mathematics**, *Poisson integral*, https://encyclopediaofmath.org/wiki/Poisson_integral. Role: standard reference for harmonic reconstruction in a disk from boundary data; prior-art boundary for `VIS-013`, which applies this classical Poisson-semigroup relation to zero-normalized `xi` log-modulus shells.
+- **Encyclopedia of Mathematics**, *Abel–Poisson summation method*, https://encyclopediaofmath.org/wiki/Abel%E2%80%93Poisson_summation_method. Role: standard Fourier-series form of Poisson extension, with radial multiplier `r^k` on angular mode `k`; supports the exact Fourier-mode scaling used in `VIS-013`.
 
 ## Hybrid prime/zero decompositions
 

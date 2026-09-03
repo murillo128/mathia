@@ -8,65 +8,53 @@ based_on:
   - research/visual_exploration/README.md
   - research/visual_exploration/visualizations/simple-zero-local-universality.md
   - research/visual_exploration/findings/VIS-008-infinitesimal-zero-portraits-universal.md
-  - research/visual_exploration/visualizations/critical-line-residual-gradient-baseline.md
   - research/visual_exploration/findings/VIS-009-reflection-fixed-zero-residual-gradient.md
-  - research/visual_exploration/visualizations/critical-line-residual-exact-reflection-parity.md
   - research/visual_exploration/findings/VIS-011-taylor-normalized-residual-full-reflection-parity.md
   - research/visual_exploration/findings/VIS-012-log-residual-jets-zero-moments.md
+  - research/visual_exploration/visualizations/zero-free-shell-poisson-collapse.md
+  - research/visual_exploration/findings/VIS-013-zero-free-shells-poisson-determined.md
 ---
 
 # Does the critical-strip geometry of zeta contain a nontrivial multiscale or fractal signature?
 
 ## Observation
 
-The visual-exploration mandate permits fractal, multiscale, complex-plane, phase, zero, and spectral representations, but visual self-similarity is easy for generic analytic structure or rendering choices to manufacture. The critical strip therefore remains a deliberately speculative but falsifiable target: nested views of intrinsic fields derived from `zeta` or `xi`, normalized by a mathematically meaningful local scale.
+The visual-exploration mandate permits fractal, multiscale, complex-plane, phase, zero, and spectral representations, but the most obvious local and nested-scale structures are now exact baselines rather than candidate discoveries.
 
-Four increasingly strong local baselines now remove the obvious routes. `VIS-008` proves that after translation and leading-Taylor normalization, an arbitrarily deep zoom around any isolated analytic zero converges to the universal multiplicity monomial. `VIS-009` identified a first residual differential constraint at a reflection-fixed zero. `VIS-011` strengthened that to the complete finite-radius identity `H(-conj(w))=conj(H(w))`, so the Taylor-normalized modulus residual is exactly reflection-even in the normal coordinate.
+`VIS-008` proves that after translation and leading-Taylor normalization, an arbitrarily deep zoom around any isolated analytic zero converges to the universal multiplicity monomial. `VIS-011` proves the complete finite-radius anti-holomorphic reflection identity at a reflection-fixed zero, so the Taylor-normalized modulus residual is exactly reflection-even in the normal coordinate. `VIS-012` then identifies every fixed finite log-residual jet of order at least two with a reciprocal-power moment of the remaining zero configuration; its second-order neighboring-pair statistic is an affine form of the classical Lehmer-pair crowding quantity.
 
-`VIS-012` closes the next natural escape: every finite log-residual jet of order `r>=2` is exactly the reciprocal-power zero moment
-
-`(-1)^(r-1)(r-1)! sum_(rho' != rho) (rho-rho')^(-r)`.
-
-In particular, the second normal curvature is the inverse-square zero-crowding field; for neighboring real zeros its gap-normalized pair average is an affine re-expression of the classical Csordas-Smith-Varga Lehmer-pair quantity. A finite Taylor-jet signature is therefore not an independent mesoscopic geometry merely because it is displayed as a local field.
+`VIS-013` closes a stronger apparent multiscale escape. If the complete local zero monomial is removed and two concentric radii remain below the nearest additional zero, then `log|H_rho|` is harmonic on the whole outer disk. Every inner circular shell is therefore the exact Poisson extension of the outer shell, and angular Fourier mode `n` scales only by `(r_inner/r_outer)^|n|`. Smooth nested circular evolution inside one zero-free neighborhood is not an independent scale channel even when the whole shell, rather than finitely many Taylor coefficients, is retained.
 
 ## Research question
 
-After subtracting the universal local monomial, quotienting the full anti-holomorphic reflection parity, and treating finite-order reciprocal-power zero moments as classical baselines, do **mesoscopic finite-radius** critical-strip views — at scales comparable to a non-negligible fraction of local mean zero spacing — exhibit stable scale coupling, contour statistics, recurrence, or self-similarity that is not reconstructible from a small vector of local zero moments, ordinary gap statistics, pair correlation, coordinate choice, finite resolution, or known zero-crowding diagnostics?
+After quotienting the universal zero monomial, fixed-line reflection parity, finite reciprocal-power moments, and the full zero-free Poisson-semigroup transfer, is there a **mesoscopic finite-radius geometry associated with zero-entry or multi-zero organization** that survives standard zero-statistical and analytic controls?
 
-A useful candidate should depend genuinely on how structure changes across a finite range of radii or on nonlinear organization among several neighboring zeros, rather than on one Taylor coefficient or a fixed finite jet at the central zero.
+A useful candidate should depend on a genuine change of configuration across scale: for example a radius crossing one or more neighboring zeros, a statistic of how zero contributions enter a Poisson-Jensen decomposition, an interaction among several spacing-normalized zero shells, or a cross-zero comparison after the forced harmonic inward continuation has been removed. Merely observing coherent change among nested zero-free circles is no longer sufficient.
 
 ## Why it may matter
 
-A robust residual statistic would turn the vague intuition that zeta may have a "fractal-looking" organization into an exact object comparable across height, scale, representation, and surrogate worlds. The exact baselines now make the target substantially sharper: a useful signal must involve finite-radius organization, interaction among multiple zero shells, cross-scale coupling, or arithmetic/analytic information that survives after local normal form, reflection symmetry, and finite zero moments are accounted for.
+A surviving statistic would turn the vague intuition that zeta may have a fractal or multiscale organization into an exact object located beyond four strong analytic confounds: local zero normal form, reflection symmetry, finite zero moments, and zero-free harmonic continuation.
 
-If such a statistic discriminated the zeta/xi geometry from matched analytic controls after these quotients, it could expose an information channel not already represented by standard local zero statistics. A clean failure would also be valuable by showing that attractive multiscale texture is exhausted by generic complex analysis plus the classical zero configuration.
+The surviving frontier is also sharper geometrically. The nearest-neighbor radius is a real transition: below it the normalized log modulus evolves by a deterministic Poisson semigroup; at or beyond it, additional zeros enter and Poisson-Jensen bookkeeping changes. If any nontrivial scale geometry exists, zero-entry events and organization across several neighboring zeros are now more plausible places to look than smooth zooming inside an isolated-zero disk.
+
+A clean failure would be valuable by showing that visually compelling mesoscopic texture is exhausted by classical complex analysis plus the zero configuration and its standard statistics.
 
 ## Decisive test
 
-Choose one or more intrinsic scalar/phase fields derived from `zeta` or `xi`, normalize spatial scale by local mean zero spacing, remove the multiplicity monomial, and quotient the complete reflection baseline from `VIS-011`. For modulus fields, retain a reflection-invariant component such as
+Choose an intrinsic field derived from `xi` or `zeta`, center at verified zeros, remove the complete local monomial, normalize scale by a local spacing quantity, and quotient the reflection baseline from `VIS-011`.
 
-`A_even(x,y)=(A(x,y)+A(-x,y))/2`
+First enforce the `VIS-013` control. For every nested circular comparison whose outer radius is below the nearest additional zero, either analytically Poisson-normalize the inner shell to the outer shell or discard that comparison as a candidate multiscale signal. Likewise compare any fixed local jet against the reciprocal-power moments from `VIS-012`.
 
-and discard the identically constrained antisymmetric channel before defining a candidate statistic.
+Then study a genuinely nontrivial scale transition. A canonical first target is the sequence of radii at which neighboring zeros enter the disk. Use Poisson-Jensen or an equivalent exact decomposition to separate the explicit contribution of newly enclosed zeros from the zero-free harmonic remainder. Measure a statistic that couples multiple entry events, angular organization, or several neighboring shells and cannot be reconstructed from a small local moment vector, ordinary gap ratios, pair correlation, inverse-square crowding/Lehmer quantities, or the deterministic Poisson transfer.
 
-Before interpreting any remaining local feature, compute a finite baseline vector of reciprocal-power moments
-
-`M_r(rho)=sum_(rho' != rho) (rho-rho')^(-r)`, for several `r>=2`,
-
-or the equivalent Taylor/log jets. Also compare against local gap ratios, inverse-square crowding/Lehmer quantities, and standard zero-spacing statistics. A candidate that is determined by these quantities is classicalized rather than promoted.
-
-The surviving test must then be genuinely finite-radius or cross-scale: for example contour-length scaling over nested spacing-normalized annuli, wavelet/multiresolution energy transfer between scales, recurrence of reflection-even level geometry after conditioning on the finite moment vector, or another explicitly defined statistic that couples more than one radius. Repeat it across separated height windows and nested mesoscopic scales.
-
-Compare with synthetic analytic controls whose zero density, multiplicity, coarse reflection symmetry, local gap/moment statistics, and relevant finite-radius scale are matched as closely as the candidate requires. When introducing off-critical-line pairs, do not allow their unavoidable failure of fixed-point parity around an individual zero to become the classifier: symmetrize or otherwise quotient that channel first.
-
-Kill the direction if the surviving statistic is unstable under reasonable reparameterization, is reproduced by matched controls, or separates controls only through the universal monomial, fixed-line reflection, a finite reciprocal-power moment vector, ordinary zero crowding, or another already-classical zero statistic.
+Repeat across separated height windows and compare with synthetic analytic controls whose zero density, reflection symmetry, local gaps/moments, and relevant entry radii are matched. Kill the direction if the statistic is unstable under reasonable reparameterization, is reproduced by matched controls, or separates only through known zero counts, gap/crowding data, fixed-line symmetry, or Poisson-Jensen terms that are algebraically forced by the chosen representation.
 
 ## Evidence boundary
 
-`VIS-008` establishes the universal infinitesimal monomial baseline. `VIS-011` establishes complete fixed-line reflection parity of the Taylor-normalized residual. `VIS-012` establishes that every finite log-residual jet of order at least two is a reciprocal-power moment of the remaining zero set and identifies the second-order pair statistic with classical Lehmer-pair crowding.
+`VIS-008`, `VIS-011`, `VIS-012`, and `VIS-013` establish only negative controls and exact analytic reductions. They do not establish a mesoscopic fractal dimension, scale invariant, zero-entry law, RH criterion, or distinction between the exact zeta geometry and matched analytic zero configurations.
 
-No mesoscopic fractal structure, fractal dimension, cross-scale invariant, RH criterion, or residual distinction between the exact zeta geometry and matched analytic controls is established. Any statistic extracted from finite renderings remains exploratory until its mathematical dependence on zeta is justified independently of the picture and its dependence on known zero statistics is explicitly controlled.
+The retained `zero-free-shell-poisson-collapse` visualization numerically illustrates `VIS-013`; it is not evidence for new mesoscopic structure. Any future finite rendering remains exploratory until its candidate statistic is stated independently of the image and survives the stated analytic and zero-statistical controls.
 
 ## Research disposition
 
-Accepted in further narrowed form. The live question begins **beyond the universal zero monomial, the complete fixed-line reflection parity, and every fixed finite collection of local reciprocal-power zero moments**. Search only for representation-stable finite-radius or cross-scale structure that survives matched analytic and zero-statistical controls.
+Accepted in further narrowed form. The live question begins **at genuine zero-entry or multi-zero scale transitions, or after explicitly quotienting the zero-free Poisson semigroup**. Do not pursue smooth nested circular zooms inside one isolated-zero disk as an independent multiscale mechanism.
