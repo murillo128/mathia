@@ -21,6 +21,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 - [[research/weil_positivity/graph/weil-positivity|Weil Positivity]]
 - [[research/weil_inertia/graph/weil-inertia|Weil Inertia]]
 - [[research/prior_art/graph/prior-art|Prior-art redirects]]
+- [[research/graph/intuition-membership|Durable intuition membership]]
 
 ## Riemann Atlas
 
@@ -38,7 +39,6 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 - [[research/mind/intuition/MI-005-topology-is-part-of-the-arithmetic-claim|MI-005 — topology is part of arithmetic claim]]
 - [[research/mind/intuition/MI-006-classify-the-boundary-model-before-calling-it-arithmetic|MI-006 — classify the boundary model before calling it arithmetic]]
 - [[research/mind/intuition/MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure|MI-007 — surviving structure needs quantitative non-escape]]
-- [[research/mind/RESEARCH_LINES|Global Mathia research lines]]
 
 ## Cross-line relation nodes
 
