@@ -2,21 +2,21 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Separate source rigidity from zero localization
+## Separate source rigidity, readout fidelity, divisor orientation, and zero localization
 
-**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, and `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
+**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-The bare exponent cone and broad scalar readouts remain flexible under Beurling/Helson controls, but PL-136 shows that the full degree-one Selberg analytic package rigidifies the entire unimodular prime-phase torus to ordinary zeta. The source-selection problem is therefore classically solvable in a sufficiently strong global category.
+The bare exponent cone and broad scalar readouts remain flexible under Beurling/Helson controls, while PL-136 shows that the full degree-one Selberg analytic package rigidifies the unimodular prime-phase torus to ordinary zeta. PL-139--PL-140 then show that source fidelity depends on the readout: exact coprime power values can recover phase, but real-part/chord power metrics remain blind to independent prime-wise reflection even when all powers are observed.
 
-The live RH problem begins after that selection. A decisive mechanism must put a positive/unitary/Hodge-type structure on a zero-sensitive representation or derive an equivalent sign theorem; identifying the correct Euler product and functional equation is not enough.
+PL-141 adds a divisor-orientation gate. For Möbius, inverse small-sum rigidity recovers the already known prime phase and tracks zeros of `1/zeta`, whereas nontrivial Riemann zeros are poles of that reciprocal. A decisive RH mechanism must therefore state separately what identifies the source, what the readout retains, which divisor it acts on, and what independent sign/unitary/Hodge theorem localizes that divisor.
 
 ## Demand a source mechanism, not only a stability metric
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-PL-138 shows that power-sensitive prime and prime-power pretentious metrics are established transfer geometries. They can preserve a cancellation exponent supplied by a reference function, but they do not create that reference cancellation or intrinsically select the half exponent.
+PL-138 shows that power-sensitive prime and prime-power pretentious metrics are established transfer geometries. PL-139--PL-140 show why adding powers does not create a new source theorem: exact powers have a gcd torsion dichotomy, while the metric hierarchy remains reflection-blind after scalarization.
 
-A surviving metric proposal must explain where the zeta-specific reference state, critical normalization, or positivity comes from. Reweighting prime coordinates or adding finitely many prime-power rays is not by itself a new RH mechanism.
+A surviving metric proposal must explain where the zeta-specific reference state, critical normalization, orientation, or positivity comes from. Reweighting coordinates or accumulating more powers of the same quotient geometry is not by itself an RH mechanism.
 
 ## Target the arithmetic polarization rather than another spectral realization
 

@@ -8,13 +8,15 @@ This file holds the current mathematical lines of investigation suggested by the
 
 Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Audit the complete represented object before strengthening inequalities on it.
 
-## Extend fixed-period transversality to growing-period and source-admissible zeta screening
+## Prove source coercivity for the normalized odd Schur complement
 
 **Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction` and `MI-006-source-rigidity-can-eliminate-screening-extremizers`.
 
-The finite-period branch is now quantitatively rigid. WI-125 gives a period-uniform first-half alias-energy floor for every off-line mirror-symmetric cell. WI-126 identifies an exact nonnegative Lamzouri horizontal remainder that charges anti-invariant off-real directions, and WI-127 proves that fixed-period repetition makes this charge extensive.
+The fixed-period branch is quantitatively rigid, but raw conditioning is not the right growing-period target. WI-128 makes subextensive screening force a macroscopic bottom raw-Vandermonde near-null sector; WI-130 shows that close pair centers can produce exactly such raw collapse while the true `g/h` quotient remains transverse, and WI-131 removes the shortcut through duplicated real projections.
 
-The live theorem is no longer “find some leaked harmonic.” It is to prevent transversality from collapsing when the cell period grows, roots nearly collide, multiplicities appear, or the selected pattern is embedded in an arbitrary external zero reservoir. A decisive positive would derive an extensive lower bound from unconditional zeta source constraints; a decisive negative would build a source-admissible growing-period/aperiodic screen with vanishing normalized horizontal remainder.
+WI-132 isolates the orientation-sensitive invariant. After normalizing each odd direction by its horizontal depth, `S=U^*(I-P_V)U` is the grouped Schur-complement Gram matrix and `a=lambda_min(S)` satisfies the exact finite bound `n >= 2N-Q+4aD_2`, with `D_2=sum m_z(Im z)^2`. A decisive positive should derive, from unconditional zeta source constraints, a lower bound on `a` (or an aggregate lower-tail substitute) on configurations carrying macroscopic `D_2`. A decisive negative would build source-admissible growing configurations with macroscopic square depth and `a -> 0`.
+
+Full Riesz stability of the normalized conjugation-adapted family is sufficient but stronger than necessary. The Schur quotient itself is the preferred theorem surface.
 
 ## Move from residual rank to quantitative source coercivity
 

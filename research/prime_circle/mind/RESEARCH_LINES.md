@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Target the residual after fixed-support, canonical refinement, and one-hole puncture controls
+## Target the residual after fixed-support, canonical refinement, half-reflection, and one-hole controls
 
-**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical` and `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
+**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`, `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`, and `MI-007-bloch-half-reflection-is-universal-time-reversal`.
 
 Every fixed connected scalar support is controlled by finite Hardy--Littlewood tuple data, including all-orders `log det` resummation. The canonical full-chord refinement carrier is constrained too: PC-155 makes new-prime coarse compression a commuting conjugacy polynomial, PC-156 reduces repeated-prime full fibers to one fixed quadratic pencil, PC-157 makes the new-prime normalized bulk converge to a fixed base-level Bloch law, and PC-158 proves that the one-missing-residue puncture has only a bounded positive spectral-shift budget reproduced by composite fiber sizes.
 
-The live target is therefore a conductor-growing support organization, a microscopic fine-fiber residual beyond the one-hole geometry, a provenance-sensitive statistic, or a genuinely noncommuting/nonlinear cross-level coupling that survives all controls in the same topology.
+PC-159 adds a symmetry control: the exact `t <-> 1-t` reflection of the full-chord pencil holds for every finite subset of roots of unity, so its `1/2` fixed point is universal Bloch time reversal rather than a rational-prime selector. The live target is therefore a conductor-growing support organization, microscopic/provenance-sensitive fine-fiber residual, or genuinely noncommuting/nonlinear cross-level coupling that survives all of these controls in the same topology.
 
 ## Distinguish average top-band capture from uniform subspace fidelity
 
@@ -18,9 +18,9 @@ Short-chord models recover the first top-band projector strongly in average/Mert
 
 ## Locate the first carrier beyond canonical finite cyclotomic/collision spectralization
 
-**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`.
+**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical` and `MI-007-bloch-half-reflection-is-universal-time-reversal`.
 
-Finite networks, repeated shells, coincidence strata, Toeplitz/CMV/resultant constructions, vertexwise Hessian collision response, and finite tensor networks all classicalize. A genuinely different carrier must be all-shell, provenance-sensitive, singular/domain-changing, or otherwise outside finite confluent collision algebra.
+Finite networks, repeated shells, coincidence strata, Toeplitz/CMV/resultant constructions, vertexwise Hessian collision response, finite Bloch pencils, and their exact half-reflection all classicalize. A genuinely different carrier must be all-shell, provenance-sensitive, singular/domain-changing, or otherwise outside finite confluent/cyclic collision algebra.
 
 ## Use compatible completion as a carrier, not as an automatic Hamiltonian
 

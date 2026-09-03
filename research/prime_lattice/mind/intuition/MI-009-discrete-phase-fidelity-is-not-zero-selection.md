@@ -1,40 +1,40 @@
-# MI-009 — Discrete arithmetic can compress analytic phase injectivity to a finite fingerprint without selecting the zero divisor
+# MI-009 — Arithmetic identifiability is readout-relative and remains independent of zero selection
 
-**Evidence level:** proved for the standard Grosswald--Schnitzer deformation class in PL-125--PL-133
+**Evidence level:** supported by PL-125--PL-141; exact for the stated Grosswald--Schnitzer and prime-phase quotient controls, with literature-backed pretentious/inverse inputs
 
 ## Core intuition
 
-Prime Lattice now has an unusually clean separation between **arithmetic identifiability** and **zero localization**. Grosswald--Schnitzer deformations can share the zeta zero divisor while changing the underlying generator sequence. The relative critical-line reflection phase remembers those generators, but how much data is needed depends decisively on whether the generator coordinates are continuous or arithmetically discrete.
+Prime Lattice now separates three questions that are easily conflated: whether the arithmetic source is identifiable, whether the chosen readout has already quotiented away part of that source, and whether the resulting analytic object has any mechanism forcing its zero divisor onto the critical line.
 
-This demonstrates that recovering rational-prime input can be a strong theorem and still be logically independent of RH.
+Discrete arithmetic can make an analytic phase family finitely identifying, while a metric projection can remain exactly blind even after all positive powers are added. Conversely, inverse small-sum structure can recover a prime phase that was already known while looking at the wrong divisor orientation for the Riemann zeros. Strong source information is therefore not automatically the missing RH selector.
 
 ## Strongest justified principle
 
-PL-130 shows that for real Grosswald--Schnitzer generators every finite family of natural critical-line phase jets and samples has exact local aliases: finitely many far-tail coordinates can compensate a change in a prescribed low generator. Smooth finite-dimensional phase data are therefore non-identifying in the continuous control class.
+PL-130--PL-132 give the Grosswald--Schnitzer hierarchy. Continuous generator controls have exact finite phase aliases; accumulating critical-line phase data identify the whole deformation; integer discreteness compresses any fixed low-generator prefix to finitely many phase samples uniformly over arbitrary integer tails. PL-133 keeps the boundary explicit: all members already share the relevant zeta zero divisor.
 
-PL-131 gives the opposite infinite-data boundary. Equality of the reflection cocycle on any accumulating critical-line set forces equality of the whole deformation: analytic continuation, exponential-type control, Hadamard rigidity, and normalization remove the zero-free gauge.
+PL-139 adds an exact power-tomography gate. For exact positive powers indexed by `K`, `d=gcd(K)>1` leaves the independent prime-wise torsion gauge `product_p mu_d`; when `d=1`, exact phase values recover the base phase and simultaneous pretentiousness collapses to ordinary pretentiousness. Merely taking several powers creates no intermediate qualitative source rigidity.
 
-PL-132 then shows that integrality changes the information complexity. The integer control space is a compact product of finite sets; distinct low-prefix cylinders have disjoint compact phase-arc images, hence a positive separation. Uniform equicontinuity compresses that separation to finitely many phase samples. For every fixed prime cutoff, **some finite phase fingerprint identifies the entire integer prefix uniformly over arbitrary integer tails**.
+PL-140 shows that the situation is stricter after metric scalarization. Pretentious distances of **all** positive powers depend prime-wise only on `cos(phi_p)` or chord magnitudes and are invariant under independent reflections `r_p -> conjugate(r_p)`. The full cutoff profile at power one already determines the higher power distances, but not orientation. Exact complex power data or the full Kronecker time profile escape because they retain oriented coefficients. Thus enrichment cannot repair a quotient that the readout itself has imposed.
 
-PL-133 and the earlier self-duality controls keep the logical boundary clear: reflection-axis structure and a shared zero divisor do not become a zero-selection theorem merely because the arithmetic generator is identifiable.
+PL-141 closes a complementary inverse route for Möbius. Small-sum inverse structure specializes to the already exact phase `mu(p)=-1` (or `-p^{i gamma}` after twisting), while its zero-transition theorem is oriented toward zeros of `L(s,mu)=1/zeta(s)` near `1`. Nontrivial zeta zeros are poles of this reciprocal. RH-strength Möbius cancellation excludes them directly through analytic continuation of `1/zeta`; the inverse phase theorem does not manufacture a new localization mechanism.
 
 ## Evidence synthesis and boundaries
 
-The finite integer fingerprint is non-effective: sample complexity, optimal heights, and separation margins are not quantitatively controlled as the cutoff grows. It does not give one finite vector that recovers the infinite prime sequence.
+These results do not say phase metrics or inverse theorems are weak. Pretentious distances transfer cancellation from a comparator, full time profiles can recover oriented prime coefficients, and inverse theorems strongly constrain general multiplicative functions. The restriction is explanatory: one must identify what the readout retains and whether the theorem acts on the same divisor orientation as the target.
 
-More importantly, every member of the Grosswald--Schnitzer class already shares the relevant zeta zeros. Phase fidelity therefore answers “which arithmetic source produced this analytic quotient?” rather than “why are the common zeros on the critical line?”
+A viable RH mechanism may combine source rigidity with functional equation, explicit-formula positivity, a pole-sensitive reciprocal theorem, or a different zero-sensitive observable. Those are additional structures rather than consequences of source identification alone.
 
 ## Status / novelty
 
-The deformation theorem, compactness, identity theorem, and Hadamard factorization are classical inputs. The synthesis is the finite/accumulating and real/integer information hierarchy and its separation from zero selection.
+Grosswald--Schnitzer rigidity, pretentious metrics, structured-power theorems, and inverse small-sum results are literature or persisted exact inputs. The synthesis is the readout-relative hierarchy: **source fidelity can be exact, finite, or metrically stable while still missing orientation or acting on the wrong analytic divisor, and none of those achievements is zero selection by itself**.
 
 ## Falsification criterion
 
-Produce an exact finite real-control phase fingerprint that defeats the compensating-tail theorem, or show that the integer compactness separation can collapse for a fixed prefix. For RH relevance, derive an additional positive/unitary theorem on the common zero-sensitive representation; source identifiability alone is not enough.
+Construct an all-positive-power pretentious metric that distinguishes independent prime-wise conjugation within the PL-140 hypotheses, or show that the current Möbius inverse theorem localizes poles of `1/zeta` rather than its zeros without an additional analytic input. For RH relevance, derive the missing sign/unitary/pole-sensitive theorem on a zero-sensitive representation.
 
 ## Lean-formalizable core
 
-- Local finite-data noninjectivity in a continuous product.
-- Accumulating-set analytic injectivity.
-- Compact finite-prefix separation and finite sampling.
-- Logical independence of source identification from a shared zero divisor.
+- Finite-prefix phase identification under discrete controls.
+- GCD torsion kernel for exact power observations.
+- Independent reflection quotient for real-part/chord power metrics.
+- Logical zero/pole orientation for reciprocal Dirichlet series.

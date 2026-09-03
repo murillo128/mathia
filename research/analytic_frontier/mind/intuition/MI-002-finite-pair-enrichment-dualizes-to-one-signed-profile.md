@@ -1,43 +1,48 @@
-# MI-002 — Universal affine scalar pair certificates collapse to signed support one; out-of-band gain requires a new counting carrier
+# MI-002 — Universal affine scalar pair certificates are positive-band and nearly periodization-saturated
 
-**Evidence level:** supported by ANF-003--ANF-005 and the exact out-of-band obstructions ANF-010--ANF-011
+**Evidence level:** supported by ANF-003--ANF-005 and ANF-010--ANF-014
 
 ## Core intuition
 
-Finite enrichment does not create new pair information when all channels are ultimately compressed into one translation-invariant scalar affine counting functional. ANF-003--ANF-005 reduce that category to one signed support-one profile plus an explicit normalization slack. The newer all-frequency audit sharpens the boundary: the unconditional pair-correlation input has a useful nonnegative tail outside support one, but **no universal scalar affine pair-count certificate can exploit that tail by becoming negative there**.
+Finite enrichment does not create new pair information when all channels are ultimately compressed into one translation-invariant scalar affine counting functional. The surviving scalar branch is now much narrower than a generic signed support-one profile: universal validity over conjugation-invariant multisets forces the compact-band spectral profile to be nonnegative, and long duplicated lattices then impose an all-scale periodization floor tied by an exact Mellin identity to the analytic pair-correlation cost.
 
-The surviving out-of-band route must therefore change the zero-side carrier before scalar affine compression: matrix/inertia structure, a zeta-specific inequality, higher-order data, or another non-affine configuration functional.
+Thus the residual scalar question is an extremal problem near simultaneous saturation of a continuum of deterministic controls, not a search over arbitrary signed kernels.
 
 ## Strongest justified principle
 
-ANF-003 shows that common-translation vector features become one scalar Gram kernel after the common character is integrated out. ANF-004 extends this to finite convex families of already-global pair moments: affine separation yields one signed scalar dual witness. ANF-005 then exposes the unavoidable slack. For a universal certificate
+ANF-003--ANF-005 reduce finite global pair enrichments to one scalar support-one witness plus explicit normalization slack. ANF-010--ANF-011 independently close the tempting out-of-band escape: the favorable positive BGSST tail cannot be harvested by giving a universal affine scalar witness a nontrivial negative Fourier tail.
 
-`simple-real count >= A N - sum F(z-s)`,
+ANF-012 strengthens the in-band constraint. Multiplicity amplification first forces nonnegativity of the pair energy for every finite conjugation-invariant multiset. Conjugate binomial combs can then concentrate spectral weight at any prescribed band frequency, so every continuous compact-band profile in this universal affine class must satisfy `J(alpha)>=0` pointwise. Signed spectral density is therefore unavailable even before the scalar extremal problem is optimized.
 
-small configurations force `delta=1+F(0)-A >= 0`, lower bounds on real and imaginary translates, and copositivity constraints. At zero slack one returns to the classical termwise-nonnegative Montgomery--Taylor class.
+ANF-013 adds thermodynamic controls. Long equally spaced real configurations give the scale-free periodization floor
 
-ANF-010 observes that the unconditional BGSST form factor is nonnegative for all real frequencies, so a negative Fourier tail beyond `|alpha|=1` would be analytically favorable if a compatible zero-side certificate existed. Positive scalar Gram kernels cannot do this by Bochner.
+`p(J)=inf_{h>0} h^{-1} sum_k J(k/h)`,
 
-ANF-011 closes the broader universal affine scalar escape. If a Fourier--Laplace-admissible scalar profile is nonpositive outside support one with any nontrivial negative tail, its imaginary-axis continuation diverges negatively. A single conjugate pair, however, imposes a universal lower barrier on that same imaginary-axis response. The two requirements are incompatible. Hence the unconditional out-of-band positivity cannot be harvested by merely allowing an indefinite scalar affine pair kernel.
+and any fixed profile can beat Montgomery--Taylor only if `C(J)/p(J)<C_MT`.
+
+ANF-014 shows that the numerator and denominator of this ratio are not independent. Its Mellin identity gives
+
+`C(J)/p(J) >= 1+3/pi^2 = 1.3039635509...`,
+
+leaving only about `0.0235357` of ratio room below the Montgomery--Taylor constant. Equality would require the periodization and central-value constraints to saturate essentially everywhere; the Möbius profile from ANF-013 is the formal equality candidate.
 
 ## What remains possible
 
-The signed support-one extremal problem with positive slack remains open. So do carriers that preserve structure before the final scalarization: matrix-valued Hilbert inequalities, inertia/signature identities, ordered local blocks, genuine higher correlations, or source-specific nonlinear counting inequalities. The point is categorical, not that pair correlation has no more information.
+The positive-band scalar branch is not yet proved empty. A decisive scalar result must either show that the full finite-configuration constraints raise the Mellin floor to Montgomery--Taylor, or construct a genuinely valid profile below it. The latter must satisfy the universal counting inequality, not only the periodization necessary conditions.
 
-Any proposed out-of-band improvement should first state which hypothesis of ANF-011 it leaves. If it remains universal, affine, scalar, translation invariant, and pairwise, the negative-tail escape is already closed.
+Out-of-band gain, matrix/inertia order, source-specific inequalities, nonlinear configuration functionals, and genuine higher correlations remain outside this scalar-affine classification.
 
 ## Status / novelty
 
-Bochner positivity, Fourier support, affine duality, and entire Fourier--Laplace continuation are classical ingredients. The persisted synthesis is the exact information boundary: **global scalar pair enrichment stays inside a signed support-one affine class, and the unconditional out-of-band tail becomes usable only after leaving that class on the zero side**.
+Fourier positivity, Fejér periodization, Mellin transforms, and the underlying pair-correlation input are classical. The persisted synthesis is the information boundary: **universal affine scalar pair enrichment is forced into a nonnegative compact-band cone whose remaining improvement budget is quantitatively tiny and all-scale constrained**.
 
 ## Falsification criterion
 
-Construct a universal affine scalar pair-count certificate satisfying the ANF-005 finite-configuration constraints and carrying a nontrivial negative out-of-band tail without violating the ANF-011 conjugate-pair barrier. A positive result outside those hypotheses would evade rather than falsify the intuition.
+Exhibit a universal affine scalar certificate in the stated compact-band class with a negative spectral value, contradicting ANF-012, or construct a profile satisfying the complete deterministic certificate with `C(J)/p(J)<C_MT`. A non-scalar or non-affine carrier would evade rather than falsify this intuition.
 
 ## Lean-formalizable core
 
-- Affine scalarization of finitely many pair channels.
-- Normalization-slack inequalities from finite configurations.
-- Bochner obstruction for positive scalar Gram kernels.
-- Imaginary-axis lower barrier from a conjugate pair.
-- Incompatibility of a nontrivial negative out-of-band scalar tail with the universal affine certificate.
+- Affine scalarization of finite pair channels.
+- Conjugate-comb localization forcing `J>=0`.
+- Duplicated-lattice periodization constraints.
+- Mellin identity for `C(J)` and the universal ratio floor.

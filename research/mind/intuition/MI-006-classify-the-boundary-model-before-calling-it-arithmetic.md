@@ -1,43 +1,41 @@
-# MI-006 — Classify the boundary carrier and its information budget before interpreting an escape as arithmetic
+# MI-006 — Classify the boundary carrier and its complete control family before interpreting an escape as arithmetic
 
 **Evidence level:** supported by independent exact boundary classifications across the active Mathia research lines
 
 ## Core intuition
 
-Many plausible advances arise by leaving a category that has just failed: use a nonlinear quotient repair, add higher correlations, move outside Fourier support one, smooth a sum, let support grow, refine a conductor, pass to generalized eigenfunctions, renormalize a zero mode, inspect nested scales, or enter a mesoscopic limit. The recurring danger is that **the new carrier itself has a universal/classical boundary model**. More complexity inside that carrier can then look informative while adding no new source-specific mechanism.
+Many plausible advances arise by leaving a category that has just failed: add more tests, use a nonlinear repair, smooth more aggressively, pass to a singular endpoint, refine a conductor, inspect zero-entry scales, replace scalar conditioning by a larger spectrum, or move to an endpoint function space. The recurring danger is that **the new carrier itself has a universal or classical complete control model**.
 
-The correct order is: identify the carrier change, classify its complete null/control model, compute what information and scale survive, and only then credit the residual.
+The correct order is: identify the carrier change, determine the strongest admissible control family, compute the exact information quotient and quantitative scale, and only then credit the residual. A few successful tests or a visually new representation are not enough when the full control family collapses the candidate.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity now gives an exact nonlinear-repair classifier. AF-092 says a Banach extension is Lipschitz-splittable exactly when its class dies after pullback along the Lipschitz-free barycenter map; AF-093 identifies the killed defect as operators on the forgotten barycentric kernel modulo those extendable to the full free space. AF-091 closes the escape for ultrasummand kernels.
+Analytic Frontier now gives an especially sharp example. Finite global pair enrichments scalarize; ANF-012 then uses the complete conjugation-invariant finite-multiset family to force the entire compact-band spectral profile nonnegative. ANF-013--ANF-014 add all-scale duplicated-lattice controls and an exact Mellin identity, leaving only a narrow periodization defect budget below Montgomery--Taylor.
 
-Analytic Frontier separates two carrier boundaries. Ordered local triples really do preserve information lost by global pair scalarization, but ANF-008--ANF-009 show that block-size tuning and unlimited point order inside the same pressure bridge saturate. Independently, ANF-010--ANF-011 show that the unconditional out-of-band pair-correlation tail cannot be exploited by any universal scalar affine pair certificate with a negative tail. Using that analytic region requires a new zero-side carrier.
+Arithmetic Fidelity gives the repair analogue. AF-093 identifies algebraic Lipschitz repair with an operator-extension quotient, AF-094 replaces range by norm closure for robustness, and AF-095 identifies bounded separating witnesses. The corrected AF-096 then closes the tempting predual escape completely: a genuine dual coefficient is an ultrasummand, making the restriction map surjective and the entire Lipschitz-versus-linear defect vanish. Declaring a predual does not reveal a subtler witness sector; it moves into a coefficient class where this defect is absent.
 
-Möbius Cancellation exposes a summability/carrier distinction. MC-039--MC-040 show that exact support, multiplicativity, strong aperiodicity, and every fixed odd-order qualitative logarithmic self-correlation still allow near-linear anchored sums. MC-041 proves that harmonic correlation primitives do not transfer polynomial strength to ordinary correlations without extra signed Tauberian structure. MC-042 closes fixed-order Riesz smoothing because every fixed order retains the same reciprocal-zeta divisor through a zero-free Gamma factor.
+Möbius Cancellation gives variable-smoothing controls. MC-043 shows that growing Riesz order can manufacture a square-root-looking exponent through normalization alone; MC-044 shows that high order delays current-scale visibility; and MC-045 preserves exact Möbius support and multiplicativity while a terminal prime slab is invisible to standard one-scale pretentious and fixed-order same-scale Riesz observations at square-root resolution.
 
-Prime Circle now classifies support, canonical refinement, and the first sparse puncture defect. Fixed connected scalar support reduces to finite-tuple singular-series data. PC-155--PC-157 reduce new-prime coarse transport, repeated-prime full fibers, and new-prime bulk to base-level conjugacy/pencil/Bloch models. PC-158 shows that the one-hole new-prime puncture is an explicit positive spectral shift with only `O(phi(d))` order-one displaced positions and, crucially, the same budget for composite fiber sizes. The most obvious sparse edge residue is prime-blind.
+Prime Circle adds a symmetry control to its refinement controls. The exact full-chord `1/2` reflection of PC-159 holds for arbitrary root subsets and is universal Bloch time reversal. Prime Flute remains a complete-tail assembly control: marked geometry can approach an all-composite clone uniformly.
 
-Prime Lattice supplies a source-rigidity control. PL-136 shows that the full degree-one Selberg global package collapses the unimodular prime torus to ordinary zeta, while PL-138 shows that power-sensitive prime/prime-power metrics are classical relative transfer geometries. Global analytic completion can identify the source; metric closeness can preserve cancellation; neither by itself supplies zero localization.
+Visual Exploration classifies both sides of circular zero entry. Zero-free nested shells are one Poisson orbit, while VIS-014 makes the circular zero-entry mean exactly a Jensen transform of radial zero distances.
 
-Visual Exploration closes another apparent multiscale carrier. VIS-013 shows that nested circular log-modulus shells inside a zero-free disk are exactly related by the Poisson semigroup. Even infinitely many angular modes gain no new radial information until a zero enters or the domain/center changes.
+Weil Inertia shows why the control must match the final quotient. WI-130 constructs raw Vandermonde collapse with extensive true `g/h` transversality, WI-131 removes the shortcut through duplicated real projections, and WI-132 identifies the correct depth-normalized carrier: the odd divided-difference Schur matrix `S=U^*(I-P_V)U` enters Lamzouri's slack through the exact product `lambda_min(S) * sum m_z(Im z)^2`.
 
-Weil Inertia has moved from qualitative alias location to a pre-scalar coercive carrier. WI-125 gives a period-uniform lower-half alias-energy packet; WI-126 exposes an exact nonnegative Lamzouri horizontal transversality remainder; WI-127 makes that charge extensive under fixed-period repetition. The remaining boundary is growing-period/irregular source transfer.
+Weil Positivity classifies regular and first singular refinement responses. Stationary coarse response, extensive regular full-fiber response, bounded new-prime puncture response, and generic harmonic Green logarithms all miss exact finite Mangoldt birth in different ways.
 
-Weil Positivity closes both inheritance and regular positive refinement routes. WP-133 proves anchored zero-mode subtraction cannot retain old Gamma heat contractivity unless the form vanishes. WP-134--WP-135 make repeated-prime coarse refinement stationary and reducing with zero self-energy, while WP-136 shows fixed continuous nonnegative full-fiber spectral traces are either zero or extensive in deck multiplicity. Regular positive assembly has the wrong depth law for a constant Mangoldt birth.
-
-Xi Flow makes the scale/category tradeoff explicit. XF-009--XF-010 show that fixed-radius translation averages lose mesoscopic phase, with smooth ones responding only at `h^4 k^2` while fixed-time flow is `h^2 |k|`. XF-011 gives a nonlinear local escape for `W^{1,p}`, `p>1`, after renormalization, but the scale-matched `p=1` endpoint loses strong fractional-generator control.
+Xi Flow upgrades its boundary carrier twice. `L log L` supplies the scale-matched endpoint fractional transfer, XF-014 makes nonlinear bulk gap dissipation exactly positive, and XF-015 proves that this Cauchy coercivity survives finite amplitude under an upper gap envelope. The unresolved boundary model is now large-gap/envelope escape plus external flux, not loss of bulk sign under nonlinearity.
 
 ## Consequence for synthesis
 
-A proposed escape should be credited only after four objects are explicit: the carrier change, the complete universal/control model inside that carrier, the quantitative information budget after target rescaling, and the matched residual that survives the final assembly. Increasing point count, smoothing order, refinement depth, visual scale, or operator singularity is not evidence by itself.
+A proposed escape should be credited only after four things are explicit: the new carrier, the complete control/null model inside it, the target-scale information budget, and the residual that survives the final assembly. Increasing multiplicity, smoothing order, point count, refinement depth, spectral dimension, or visual scale is not evidence by itself.
 
-The strongest positive pattern is a source-forced carrier whose boundary model already contains a quantitative sign/coercivity mechanism. The strongest negative is a factorization showing the entire escape becomes universal, prime-blind, stationary/extensive in the wrong variable, or otherwise loses the target before the final theorem.
+The strongest positive pattern is a source-forced carrier whose complete boundary model already contains a quantitative sign/coercivity mechanism. The strongest negative is an exact factorization or matched control showing that the apparent new structure is universal, radialized, prime-blind, normalization-driven, wrongly oriented, or measured in the wrong quotient.
 
 ## Status / novelty
 
-The component free-space, pressure, Fourier--Laplace, Tauberian, Riesz, Bloch, Selberg, Poisson, self-inversive, Hilbert-transversality, spectral-shift, Feshbach, and fractional-Sobolev mechanisms are classical or persisted exact results. The synthesis is a cross-line research discipline, not a universal theorem that every category change classicalizes.
+The component Fourier, Mellin, Banach-space, Riesz, Bloch, Poisson--Jensen, Vandermonde, divided-difference, Schur-complement, Green, spectral-shift, Orlicz, and nonlinear-diffusion mechanisms are classical or persisted exact results. The synthesis is a cross-line research discipline, not a universal theorem that every category change classicalizes.
 
 ## Falsification criterion
 
-Produce a source-forced carrier change whose leading boundary model is not reproducible by the applicable controls and whose residual remains quantitatively coercive in the final category, or show that one of the stated controls fails inside its exact hypotheses.
+Produce a source-forced carrier change whose complete admissible control family cannot reproduce the leading signal and whose residual remains quantitatively coercive in the final category, or show that one of the stated complete-control classifications fails inside its exact hypotheses.

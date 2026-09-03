@@ -10,13 +10,13 @@ Exact squarefree support, multiplicativity, strong aperiodicity, qualitative log
 
 MC-041 makes the carrier mismatch explicit: harmonic correlation primitives do not convert to ordinary correlations at polynomial strength by black-box summation by parts. A decisive positive needs an ordinary-scale estimate, a source-specific signed Tauberian bridge, or growing-complexity information with a proved polynomial transfer.
 
-## Change the smoothing law with scale only if the inverse transfer is independently weaker than RH
+## Change smoothing with scale only while proving both nonvacuity and endpoint recovery
 
-**Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget` and `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
+**Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`, and `MI-007-growing-order-smoothing-can-hide-endpoint-information`.
 
-MC-042 proves that every fixed-order Möbius Riesz mean has the same critical RH burden because its Mellin multiplier is zero-free in the target half-plane. Raising a fixed Cesaro/Riesz order is therefore not a softer endpoint.
+MC-042 proves that every fixed-order Riesz mean has the same critical RH burden. MC-043 then shows that growing normalized order can cross the square-root exponent through kernel mass alone at order about `(1/2) log x/log log x`. MC-044 shows that even after mass normalization, large order hides current-scale terminal blocks and moves fixed-strength visibility to future scale `Omega(kx)`. MC-045 strengthens the control to a multiplicative terminal prime-slab twist with exact Möbius support: its ordinary endpoint sum changes above square-root scale while the standard one-scale pretentious scalar changes by `o(1)` and every fixed-order same-scale Riesz observation remains subcritical.
 
-The live smoothing question begins only with a genuinely changing carrier, such as scale-dependent order, nonlinear multiscale averaging, or another transform whose arithmetic control is independently weaker. It must come with a quantitative inverse/Tauberian theorem that recovers ordinary polynomial cancellation without simply reimporting the same zero-free statement.
+A viable changing-order carrier must therefore stay nonvacuous **and** recover endpoint information through same-order multiscale control, localization, derivatives, or a source-specific Tauberian theorem using more than one-scale multiplicativity and pretentious closeness. Small diagonal smoothed values are not enough.
 
 ## Preserve cancellation while targeting mean-absolute Mertens size
 

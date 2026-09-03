@@ -14,13 +14,13 @@ Given a compression and its mathematically forced observable class, determine th
 
 Determine when higher-order couplings, joint laws, compound-minor data, or other relational observables reduce the ambiguity exactly to the intended symmetry group. Complete low-order marginals remain a control: a target may live entirely in a missing interaction face even when every marginal is known.
 
-## Make repair geometry intrinsic to the admitted category and quantify the operator-extension defect
+## Classify algebraic repair, robust repair, and coefficient-category survival separately
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-007-stable-fidelity-is-distance-from-collision`, and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-For Banach quotient repair the qualitative Lipschitz boundary is now exact. AF-092 identifies Lipschitz repair with vanishing of `beta_F^*(xi)`, and AF-093 identifies its kernel with bounded operators on the barycentric fiber `Z_F` modulo those extendable to the full Lipschitz-free space. AF-091 shows that ultrasummand kernels eliminate this nonlinear escape entirely.
+The Lipschitz-free model is now quantitative. AF-093 identifies the algebraic nonlinear-versus-linear defect as fiber operators modulo extendable operators. AF-094 shows that robustness is distance from the norm closure of that range and that closed range is equivalent to a uniform extension-cost bound. AF-095 identifies the robust margin with bounded annihilator witnesses.
 
-The live question is therefore quantitative and structural: derive a source-natural norm/modulus for distance to extendability, prove the required operator range is closed or otherwise controllable, and impose the provenance/equivariance/order constraints actually required by the arithmetic representation. A free-space repair that exists only in an enlarged category is not enough unless that category is itself forced.
+AF-096 then closes the apparent weak-star/predual refinement: if the coefficient is a genuine dual space `Y^*`, ultrasummand linearization makes every fiber operator extend, so the complete defect and both unrestricted and normal witness spaces vanish. A live arithmetic repair must therefore justify a source-natural **non-ultrasummand** coefficient or another recovery category, then prove its closure/stability properties together with the required provenance, equivariance, order, or positivity constraints.
 
 ## Prove bridges between differential, average, formal, and zero-error fidelity only under explicit hypotheses
 

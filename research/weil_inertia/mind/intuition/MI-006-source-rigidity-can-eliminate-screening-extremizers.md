@@ -1,50 +1,58 @@
-# MI-006 — Mirror symmetry and pre-scalar Hilbert geometry force quantitative leakage in fixed-period screens; source extraction remains the gate
+# MI-006 — Normalized odd Schur stability is the correct Lamzouri screening carrier; source coercivity remains the gate
 
-**Evidence level:** supported by WI-115--WI-127, with exact quantitative fixed-period results and literature-backed zeta source inputs in the stated regimes
+**Evidence level:** supported by WI-115--WI-132, with exact periodic/grouped controls and literature-backed zeta source inputs in the stated regimes
 
 ## Core intuition
 
-Screening can erase one marginal while forced information survives in another. The recent results substantially strengthen this from qualitative alias existence. For mirror-symmetric periodic cells, off-line displacement forces a **period-uniform packet of lower-half reciprocal alias energy**; in Lamzouri's Hilbert-space formulation, off-real pairs also carry an exact nonnegative anti-invariant transversality remainder before scalar inequalities are applied; and fixed-period repetition makes that remainder extensive.
+Pre-scalar Hilbert geometry really does charge off-real directions, but the correct quantitative carrier is subtler than the singular spectrum of the raw exponential/Vandermonde system. Growing-period screening can force a macroscopic raw near-null sector, yet the same raw collapse can arise from harmless confluent center pairs while the actual Lamzouri anti-invariant quotient remains uniformly transverse.
 
-The remaining problem is no longer whether a canonical fixed-period screen can hide everything. It is whether comparable coercivity survives **growing-period, aperiodic, source-admissible zeta configurations and the complete global assembly**.
+WI-132 now isolates the right normalized invariant. Dividing each odd conjugate-pair direction by its horizontal depth removes the unavoidable vanishing as the pair approaches the critical line and turns it into an exact exponential divided difference. The resulting Schur-complement Gram matrix measures genuine screening modulo the complete retained even/real space.
 
 ## Strongest justified principle
 
-WI-115--WI-122 establish the screening baseline. Support-one termwise positivity can be screened; Fujii moments rule out one long double-density extremizer at positive density; and finite compensated motifs show that bounded counting discrepancy and moving-edge cancellation can coexist with off-line mass.
+WI-115--WI-127 establish the base screening/coercivity picture. Support-one scalar data admit screening aliases; independent zeta moment input excludes some long density extremizers; mirror symmetry forces lower-half reciprocal leakage; and Lamzouri's Hilbert proof contains an exact nonnegative horizontal remainder
 
-WI-123--WI-124 then use conjugation and same-ordinate mirror symmetry to force reciprocal leakage. A genuinely off-line mirror-symmetric period-`P` cell cannot make all first `floor(P/2)` reciprocal power sums vanish; some alias must occur at `alpha<=1/2`.
+`R_H >= 4 sum m_z dist(h_z,V)^2`.
 
-WI-125 makes that leakage quantitative uniformly in `P`. If `p_m=C(m/P)` and `q=floor(P/2)`, the weighted first-half mass `sum_{m<=q}|p_m|/m` at or below `log 2` forces every reciprocal root onto the unit circle. Hence any off-line cell has strictly larger weighted mass and, by Cauchy--Schwarz, a period-uniform positive lower bound on total first-half squared alias energy. Growing period cannot make the entire selected-cell lower-half packet disappear in aggregate.
+For a fixed simple periodic cell with distinct reciprocal roots, WI-127 makes this charge extensive under repetition.
 
-WI-126 exposes a second, pre-scalar carrier inside Lamzouri's finite Hilbert inequality. Reconstructing the discarded terms gives an exact decomposition
+WI-128 strengthens the growing-period necessary condition. If a positive density of bounded-depth off-line pairs has subextensive normalized horizontal remainder, then a positive-density bottom tail of the normalized raw reciprocal-node Vandermonde must collapse in mean square. One bad singular direction is not enough.
 
-`Q-(2N-n)=R_B+R_U+R_M+R_H`,
+WI-130 shows why that raw tail is not the discriminator. A density-one family with nearby same-sign pair centers can make the entire bottom half of the raw Vandermonde spectrum collapse while the Lamzouri `g/h` quotient stays transverse and pays extensive horizontal slack. Raw ill-conditioning can therefore encode confluent parametrization rather than horizontal screening.
 
-with every remainder nonnegative. The horizontal block satisfies
+WI-131 removes the parallel shortcut through real projections. The conjugate lattice `2n+/-ib` gives an explicit complex exponential Riesz basis although the real projections duplicate and are nonminimal. Conjugation symmetry and projected collisions do not by themselves destroy complex scalar stability; clustered systems naturally require grouped/vector-valued or divided-difference coordinates.
 
-`R_H >= 4 sum m_z dist(h_z,V)^2`,
+WI-132 converts that correction into an exact target. For `z_j=x_j+i y_j`, define the normalized odd divided differences
 
-so off-real conjugate pairs carry a basis-independent transversality charge before the final scalar estimate. Finite equality is impossible in the presence of off-real mass, although asymptotic screening can still drive the charge small.
+`u_j=h_{z_j}/y_j=(f_{z_j}-f_{bar z_j})/(z_j-bar z_j)`
 
-WI-127 closes the fixed-period screening escape for that stronger carrier. Repeating a simple conjugation-symmetric cell with distinct reciprocal roots fiberizes the complete `g/h` system to an invertible Vandermonde matrix. Each omitted anti-invariant `h` direction stays a fixed positive distance from the even/real span, so the Lamzouri horizontal remainder grows linearly with the number of periods, uniformly along the smoothing family approaching the Montgomery--Taylor optimizer.
+and let
+
+`S=U^*(I-P_V)U`, `a=lambda_min(S)>0`.
+
+Then Lamzouri's finite inequality sharpens to
+
+`n >= 2N-Q + 4 a D_2`,  where `D_2=sum_j m_j y_j^2`.
+
+Hence if the Lamzouri baseline is asymptotically sharp while `D_2` remains a positive proportion of `N`, necessarily `a -> 0`. Near-extremal screening with macroscopic off-line square depth must create a genuinely anti-invariant grouped near-null direction after the trivial depth factor has been divided out. A lower Riesz bound for the full normalized conjugation-adapted family is sufficient, but stronger than necessary; `S` is the sharper object.
 
 ## Evidence synthesis and boundaries
 
-These results do not yet improve the unconditional zeta proportion. The constants can degenerate when period grows, reciprocal roots approach collision, multiplicities appear, or the selected cell is embedded in a large irregular reservoir. WI-125 controls aggregate reciprocal alias energy of the selected periodic cell, while WI-126--WI-127 control Hilbert transversality for fixed-period repetition; neither yet proves that actual zeta off-line density forces an extensive remainder after arbitrary surrounding zeros are included.
+These results still do not give an unconditional zeta percentage improvement. There is no source-uniform lower bound for `a`, and the square-depth mass can itself vanish if exceptional zeros approach the critical line. Multiplicity, irregular growing configurations, and an arbitrary surrounding reservoir also remain part of the source-transfer problem.
 
-The live theorem is therefore a source-transfer/coercivity statement: show that sustained off-line mass in the actual zeta zero process forces a quantitative lower bound on the Lamzouri horizontal remainder or another pre-scalar channel, using unconditional density/correlation inputs to exclude the remaining screening geometries.
+What is closed is the idea that raw Vandermonde conditioning or real-projection collisions are faithful proxies for the horizontal Lamzouri charge. A decisive theorem must control the normalized odd Schur quotient itself, or derive zeta source information strong enough to force either `D_2=o(N)` or a positive lower bound for the relevant Schur spectrum.
 
 ## Status / novelty
 
-Self-inversive polynomial criteria, Newton identities, Vandermonde conditioning, shift-invariant fiberization, and Hilbert/Bessel decompositions are classical. The persisted synthesis is the sharpened channel-transfer principle: **fixed-period compensation is quantitatively charged before scalarization; only source-valid global screening remains unresolved**.
+Vandermonde singular values, Eckart--Young, fiberization, Riesz bases, exponential divided differences, and Schur complements are classical tools. The persisted synthesis is the carrier correction: **horizontal zero information lives in a depth-normalized anti-invariant quotient, and the exact product `a D_2` is the coercive quantity exposed by Lamzouri's slack**.
 
 ## Falsification criterion
 
-Construct a fixed-period simple mirror-symmetric off-line cell with vanishing first-half aggregate alias energy, or repeated fixed-period cells whose Lamzouri anti-invariant distance is sublinear despite the WI-127 hypotheses. A growing-period/aperiodic source-admissible family with vanishing global transversality would instead delimit the remaining boundary.
+Construct a configuration satisfying the WI-132 hypotheses with macroscopic `D_2`, asymptotically sharp Lamzouri baseline, and `a` bounded away from zero. A source theorem forcing such a lower bound would instead yield the desired positive advance by charging off-line square depth.
 
 ## Lean-formalizable core
 
-- Self-inversive first-half coefficient/alias energy bound.
-- Exact Lamzouri slack decomposition.
-- Basis-independent horizontal transversality lower bound.
-- Fixed-period Vandermonde fiberization and extensive distance.
+- Bottom-singular-tail lower bound from a rank-`k` Schur residual.
+- Confluent raw-Vandermonde collapse construction.
+- Depth-normalized odd divided differences.
+- Exact `n >= 2N-Q+4aD_2` Schur/slack inequality.

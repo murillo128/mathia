@@ -1,10 +1,10 @@
-# MI-001 — Visual structure becomes evidence only after exact coordinate, symmetry, local-moment, and Poisson baselines
+# MI-001 — Visual structure becomes evidence only after exact coordinate, symmetry, moment, Poisson, and Jensen baselines
 
 **Evidence level:** supported by exact artifact classifications and visualization-led theorem handoffs
 
 ## Core intuition
 
-A visually strong pattern can be imposed by coordinates, reflection symmetry, the universal local normal form near a zero, finitely many reciprocal-zero moments, classical kernel asymptotics, or even harmonic continuation from one outer boundary profile. The newest boundary is stronger than a finite-jet warning: **inside a zero-free disk, an entire nested family of circular log-modulus portraits has no independent radial multiscale channel at all**.
+A visually strong pattern can be imposed by coordinates, reflection symmetry, the universal local normal form near a zero, reciprocal-zero moments, harmonic continuation, or classical zero-counting. The boundary is now sharp on both sides of the first zero-entry event: nested zero-free circular shells are one Poisson orbit, while the circular mean after zeros enter is exactly a Jensen transform of their centered radial distances.
 
 Visualization is therefore most useful as a theorem generator and falsification instrument. Durable evidence begins with the residual left after every exact baseline appropriate to the representation and scale has been removed.
 
@@ -14,28 +14,37 @@ VIS-001 gives the coordinate control: CRT-aligned survivor patterns can be exact
 
 VIS-006 and VIS-011 give reflection controls. A modulus-only functional-equation trench vanishes on the critical line for every Schwarz-symmetric input, and the Taylor-normalized critical-line modulus residual is itself reflection-even. Critical-line visual symmetry is not a phase-sensitive discriminator.
 
-VIS-008 gives the infinitesimal normal form: after translation and multiplicity normalization every isolated zero portrait tends to the universal monomial. VIS-012 closes all fixed finite log-residual jets of order at least two by identifying them exactly with reciprocal-power moments of the remaining zero set; the quadratic crowding quantity is already a classical Lehmer-pair statistic.
+VIS-008 gives the infinitesimal normal form. After translation and multiplicity normalization every isolated zero portrait tends to the universal monomial. VIS-012 closes all fixed finite log-residual jets of order at least two by identifying them exactly with reciprocal-power moments of the remaining zero set.
 
-VIS-013 closes the obvious radial multiscale escape inside one zero-free neighborhood. After removing the local zero monomial, `log|H_rho|` is harmonic. For any two radii below the nearest remaining zero, the inner circular shell is exactly the Poisson extension of the outer one, and Fourier mode `n` scales by `(r_1/r_2)^|n|`. Even infinitely many angular modes therefore gain no independent information merely by moving inward through a zero-free annulus.
+VIS-013 closes radial refinement before another zero enters. `log|H_rho|` is harmonic in a zero-free disk, so every inner circular shell is exactly the Poisson extension of an outer one and angular Fourier mode `n` scales by `(r_1/r_2)^|n|`.
 
-VIS-002 remains the constructive standard: a visual Prime-Flute cusp-residual pattern became an exact achievement-set theorem and then a separate line finding. The image mattered because it generated a falsifiable statement not already fixed by the rendering coordinates.
+VIS-014 closes the simplest scalar zero-entry escape. Jensen's formula gives
+
+`J_rho(r)=sum_{|rho'-rho|<r} m(rho') log(r/|rho'-rho|)`,
+
+so the complete circular log-modulus mean is equivalent to the multiset of centered zero distances and erases every angular coordinate. Its kinks and staircase structure are zero-counting in radial disguise.
+
+VIS-002 remains the constructive standard: a Prime-Flute image generated an exact achievement-set theorem and a separate research-line handoff. The image mattered because it exposed a falsifiable residual not already fixed by the rendering map.
 
 ## What remains possible
 
-A genuinely new local/mesoscopic visual carrier must cross a boundary where the exact baseline changes: a zero-entry event and its Poisson--Jensen term, a comparison across different centers/heights, a noncircular or jointly moving domain, phase-sensitive data, or a multi-zero reorganization at spacing scale. These candidates must still survive the owning line's matched controls and actual operator/statistical topology.
+A genuinely new local/mesoscopic visual carrier must retain information deleted by both Poisson and Jensen baselines: nonzero angular modes after explicit zero-entry terms are removed, joint angular organization of several zeros, cross-center comparisons, noncircular or moving domains, phase-sensitive quantities, or a multi-zero reorganization at spacing scale.
+
+Those residuals still need an exact theorem and must survive the owning line's matched controls and target topology. Zero entry by itself is no longer enough if the statistic immediately radializes it.
 
 ## Status / novelty
 
-Taylor normal forms, Hadamard reciprocal moments, reflection symmetry, and Poisson harmonic extension are classical. The synthesis is methodological but exact: **nested zero-free radial coherence is analytic continuation, not independent multiscale evidence**.
+Taylor normal forms, Hadamard moments, reflection symmetry, Poisson extension, and Jensen's formula are classical. The synthesis is methodological but exact: **radial visual complexity before and after zero entry can be fully predetermined; arithmetic evidence starts in the nonradial/cross-object residual**.
 
 ## Falsification criterion
 
-Exhibit two nested zero-free circular shells of the normalized local function that violate the Poisson transfer, or derive a source-specific invariant from a zero-entry/cross-center/noncircular residual that remains nontrivial after the exact baselines and matched controls.
+Exhibit a normalized circular mean whose value is not determined by the centered zero-distance multiset under the VIS-014 hypotheses, or derive a source-specific nonradial/cross-center invariant that survives the exact baselines and matched controls.
 
 ## Lean-formalizable core
 
 - CRT tensor factorization.
 - Reflection-forced critical-line parity.
-- Taylor-normalized zero convergence and reciprocal-moment jet identities.
-- Poisson transfer of zero-free circular log-modulus shells.
+- Taylor-normalized reciprocal-moment identities.
+- Poisson transfer in zero-free disks.
+- Jensen radial-distance identity after zero entry.
 - Achievement-set interval criterion.

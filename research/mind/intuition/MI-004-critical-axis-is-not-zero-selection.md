@@ -1,40 +1,40 @@
-# MI-004 — A canonical critical axis, exact arithmetic readout, or positive auxiliary Hilbert space is not a zero-selection mechanism
+# MI-004 — A canonical half-axis, exact reflection, source fingerprint, or positive auxiliary space is not zero selection
 
 **Evidence level:** supported by exact/classical mechanisms in multiple branches
 
 ## Core intuition
 
-Mathia now has canonical constructions that generate the half-weight, exact constructions that realize the full Riemann zero divisor, positive Hilbert structures built from completed zeta data, and even phase data that can identify rational-prime generators inside an isozero deformation family. These are different achievements, and none alone forces the zeros onto `Re(s)=1/2`.
+Mathia now has several constructions that produce something shaped like the critical symmetry: Tate self-duality gives the half-weight, a Prime-Circle Bloch pencil has an exact `t <-> 1-t` reflection, Grosswald--Schnitzer phase can identify arithmetic generators, and positive zeta-derived Hilbert structures exist. These are different achievements, and none alone forces the Riemann zero divisor onto `Re(s)=1/2`.
 
-The missing step is a **positive arithmetic identification on the zero-sensitive object itself**: a polarization, metric, unitary structure, sign theorem, or quantitative source estimate that rules out the off-axis alternative rather than merely representing the source or its zeros faithfully.
+The missing step remains a **positive arithmetic identification on the zero-sensitive object itself** — a polarization, unitary structure, sign theorem, pole-sensitive theorem, or quantitative source estimate that excludes the off-axis alternative rather than merely reproducing its symmetry or identifying its source.
 
 ## Strongest justified principle
 
-Prime Lattice makes the separation exact. Tate duality gives `Re(s)=1/2` as the Hermitian self-dual axis. Deninger's Hodge template explains how a positive pairing would turn that axis into localization: if the flow acts with weight one on the relevant positive cohomology, then `Theta-(1/2)I` is skew-adjoint. The load-bearing hypothesis is the arithmetic cohomology/polarization, not the number `1/2`.
+Prime Lattice makes the separation exact. Tate duality places `Re(s)=1/2` at the Hermitian self-dual axis. Deninger's Hodge template explains what would turn this into localization: a positive arithmetic pairing making the centered flow skew-adjoint. Meyer already realizes the zeta divisor spectrally, while Suzuki supplies an unconditional positive zeta-derived Hilbert norm. The load-bearing theorem is the arithmetic polarization, not the existence of the axis, spectrum, or auxiliary norm.
 
-Meyer's adelic representation already realizes every zeta zero spectrally, while Suzuki supplies an unconditional canonical positive zeta-derived Hilbert norm. The Grosswald--Schnitzer phase hierarchy sharpens the logical separation further. PL-130--PL-132 show that reflection phase can identify the deformation — and for integer controls finitely many samples can identify any fixed low-prime prefix uniformly over the tail — even though the entire deformation class shares the zeta zero divisor. **Arithmetic identifiability and zero localization are independent gates.**
+Grosswald--Schnitzer phase and PL-136 show that source identification can be strong as well. Integer phase data can finitely identify low generator prefixes and the full degree-one Selberg package can select ordinary zeta inside a broad prime-phase family, while the zero-localization problem remains untouched.
 
-Analytic Frontier gives the quantitative analogue: a global Hilbert/conjugation inequality can extract horizontal-zero information that local termwise-positive kernels miss, but a fixed-depth power saving may still collapse at the microscopic `1/log T` scale. The selector must be coercive in the target regime, not merely positive somewhere.
+PL-141 adds an orientation warning. For Möbius, inverse small-sum theory recovers the already known phase of `1/zeta` and organizes zeros of that reciprocal near `1`, whereas nontrivial Riemann zeros are **poles** of the reciprocal. A theorem can be source-sensitive and analytic while acting on the wrong side of the divisor.
 
-Weil Positivity reaches the same boundary from the sign side. The Riemann Gamma channel is independently positive, yet broad canonical local couplings to the exact critical finite-prime amplitudes diverge. An auxiliary positive sector is not the required global positive identification.
+Prime Circle supplies the cleanest symmetry control. PC-159 proves that the full-chord pencil satisfies an exact half-reflection and characteristic-polynomial functional equation for every finite subset of roots of unity, before primitive arithmetic is imposed. The `1/2` fixed point is universal antiunitary Bloch time reversal in that carrier, not a rational-prime or zeta-zero selector.
 
-Möbius Cancellation supplies another readout control. An RH-equivalent Riesz, mean-absolute, or annular mode is not an upstream source theorem; isolating it can merely move the desired conclusion into a coarse coordinate.
+Weil Positivity reaches the same boundary from sign and scale. Positive finite selectors exist, but canonical regular refinement has stationary, extensive, or bounded response; the first singular Green escape produces generic harmonic `log m` rather than exact finite Mangoldt birth. Qualitative positivity and even the right asymptotic logarithm are weaker than the exact arithmetic sign law required by the Weil formula.
 
 ## Evidence against overgeneralization
 
-Critical normalization, exact source recovery, zero-spectrum models, and positive zeta-derived Hilbert spaces are mathematically valuable. The restriction concerns explanatory force: the same theorem must connect the arithmetic representation to a positive/unitary structure that excludes off-axis behavior, or an independently proved source estimate must do the equivalent quantitative work.
+Critical normalization, functional-equation-shaped symmetry, exact source recovery, zero-spectrum models, and positive Hilbert spaces are mathematically valuable. The restriction concerns explanatory force: the final theorem must couple the arithmetic source to the zero-sensitive object in a way that generic matched controls cannot share.
 
 ## Status / novelty
 
-The component mechanisms are classical or exact persisted findings. Their separation into source identification, critical normalization, faithful divisor readout, auxiliary positivity, and arithmetic polarization/selection is cross-line synthesis.
+The component mechanisms are classical or exact persisted findings. Their separation into source identification, divisor orientation, critical reflection, spectral realization, auxiliary positivity, and arithmetic localization is cross-line synthesis.
 
 ## Falsification criterion
 
-Derive an unconditional positive/unitary structure on an exact zeta-zero representation that directly forces the centered generator to be skew-adjoint, or prove an equivalent Weil-form positivity/metric-identification theorem from upstream arithmetic data. A stronger finite fingerprint for the prime source does not falsify the principle while the same zero divisor remains possible off axis.
+Derive an unconditional positive/unitary structure on an exact zeta-zero representation that directly forces the centered generator to be skew-adjoint, or an equivalent Weil-form/pole-sensitive localization theorem from upstream arithmetic data. A stronger source fingerprint or another universal half-reflection does not falsify the principle.
 
 ## Lean-formalizable core
 
 - Tate self-dual half-axis identity.
 - Hodge-pairing implication to skew-adjoint centered generator.
-- Logical separation of source identification, spectral realization, and localization.
-- Projection of positive norms onto RH-equivalent coarse readouts.
+- Universal antiunitary half-reflection versus arithmetic selector.
+- Logical separation of zero and pole orientation for reciprocal series.

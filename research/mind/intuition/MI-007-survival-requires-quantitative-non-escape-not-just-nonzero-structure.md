@@ -1,43 +1,39 @@
-# MI-007 — Survival requires quantitative non-escape across carrier change, target scale, and global assembly
+# MI-007 — Survival requires quantitative non-escape across closure, scale, quotient, and global assembly
 
-**Evidence level:** supported by exact compactness, conditioning, transfer, refinement, transversality, operator-domain, and mesoscopic-scale results
+**Evidence level:** supported by exact compactness, closed-range, transfer, refinement, grouped-transversality, operator-domain, and mesoscopic-flow results
 
 ## Core intuition
 
-A signal can remain nonzero or exactly recoverable at every finite stage and still become useless in the target limit. It may require representatives outside the source range, lose polynomial strength when summability changes, classicalize in every fixed support or macroscopic refinement channel, survive only as a prime-blind sparse defect, or remain detectable at a norm endpoint where the required nonlocal operator is unbounded.
+A signal can be nonzero, algebraically recoverable, or exactly present at every finite stage and still become useless in the target theorem. It may approach the closure of recoverable data, disappear after a coefficient-category change, become small through normalization rather than cancellation, hide current-scale coefficients, collapse only in a raw proxy while the true quotient remains transverse, or dissipate internally while large-gap/boundary escape dominates.
 
-The common resource is **quantitative non-escape after the actual carrier change and target normalization, not merely persistence of structure**.
+The common resource is **quantitative non-escape in the exact topology and quotient used by the final argument**.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity gives the abstract model. Compact-target fidelity requires coherent/precompact witness families rather than unrelated finite witnesses. AF-092--AF-093 add a different non-escape variable: nonlinear quotient repair is exactly an operator-extension defect on the forgotten barycentric kernel. Existence does not provide a quantitative distance to extendability or source-natural section.
+Arithmetic Fidelity makes both closure and category survival explicit. AF-094 distinguishes a nonzero algebraic operator-extension class from positive distance to the extendable range; AF-095 identifies that distance with the best bounded annihilator witness. AF-096 shows a stronger kind of escape: moving the coefficient into a dual Banach category makes it an ultrasummand and collapses the complete defect rather than producing a refined normal witness.
 
-Möbius Cancellation supplies a transfer-category model. Strong logarithmic decorrelation can coexist with near-linear ordinary sums, bounded harmonic primitives with linear ordinary correlations, and fixed Riesz smoothing with the same critical divisor burden. A power saving survives only if the carrier change includes a quantitative inverse theorem whose loss remains polynomial.
+Möbius Cancellation gives a scale-information version. Growing Riesz order can cross a target exponent through universal Gamma normalization, and after mass renormalization can suppress a terminal block by `(L/X)^(k+1)`. MC-045 strengthens the escaping control to exact support and multiplicativity while remaining invisible to standard one-scale pretentious and fixed-order Riesz data.
 
-Analytic Frontier supplies a complexity-collapse model. Ordered local relations matter, but within the current pressure carrier block size becomes deterministic and point-order headroom tends to zero. More finite states do not constitute non-escape when the carrier's discriminating margin vanishes with complexity.
+Analytic Frontier gives a control-margin version. The surviving scalar profile must remain above its periodization floor at every scale while spending only about `0.0235` of ratio defect below Montgomery--Taylor.
 
-Prime Circle supplies support, refinement, and sparse-defect controls. A genuine arithmetic defect subspace survives, yet every fixed support classicalizes; canonical cross-level channels converge to base-level models; and PC-158 shows that the one-hole puncture's order-one spectral-shift budget is bounded and prime-blind. A useful residual must retain coercive mass in a growing/provenance-sensitive sector not washed out by fixed-support, empirical, or matched composite limits.
+Prime Circle and Prime Flute supply assembly controls. A nonuniversal defect can survive locally while canonical refinement, universal half-reflection, puncture budgets, or an all-composite tail clone remove its source specificity from the final operator.
 
-Prime Flute remains an assembly model. Complete marked tail geometries can approach all-composite controls uniformly; pointwise differences matter only if an infinite-orbit/operator assembly amplifies them with a proved summability theorem.
+Weil Inertia quantifies quotient non-escape. WI-132 gives `slack >= 4 a D_2`, with `a=lambda_min(U^*(I-P_V)U)` and `D_2=sum m_z(Im z)^2`. Both resources must survive: macroscopic square depth with `a -> 0`, or positive `a` with vanishing square depth, can each evade an extensive charge.
 
-Visual Exploration gives a radial-information model. The entire zero-free nested circular shell family is one Poisson orbit; no inward scale refinement adds an independent channel until a zero-entry or domain/center change occurs.
+Weil Positivity supplies depth-law non-escape. A response can remain positive while its magnitude is stationary, extensive, bounded, or only asymptotically logarithmic; the exact finite Mangoldt birth is then absent even though positivity survives.
 
-Weil Inertia now separates fixed-period non-escape from source non-escape. WI-125 gives a period-uniform aggregate alias packet, and WI-127 makes Lamzouri transversality extensive for fixed-period repetition. The remaining question is whether the margin survives growing period, root collisions, multiplicity, and arbitrary surrounding zeta zeros.
-
-Weil Positivity supplies domain and depth-law examples. Distributional bridges can exist formally while being nonclosable; anchored subtraction can make a statistic finite while destroying old-semigroup contractivity; repeated-prime coarse response is stationary while regular positive full-spectrum traces are extensive. The target needs a nonzero intensive prime-power birth, so both regular limits miss the required normalization in opposite directions.
-
-Xi Flow provides the clearest joint scale/amplitude tradeoff. Fixed-time memory lives on `Theta(log^2 T)` gaps with Cauchy `|D|` dynamics. Smooth fixed stencils see phase only at `log^-4 T`, while `W^{1,p}` local Lyapunovs control the fractional generator for `p>1` only after renormalization; the raw `p=1` scale is correct but strong `L^1` control fails.
+Xi Flow now separates bulk from two escape mechanisms. The endpoint `L log L` carrier has the right `h^2` scale and strong fractional control. XF-014 gives exact nonlinear bulk dissipation, and XF-015 shows that under `g_i<=Mh` the bulk remains uniformly Cauchy-coercive at finite amplitude. Fixed-time survival can therefore fail through the **envelope constant** `M` or through external boundary flux, not merely through nonlinear weakening of the internal operator.
 
 ## Program consequence
 
-For every limiting mechanism, demand a uniform target margin in the intended category, a source-range/domain theorem, a controlled complexity/support growth law, a quantitative transfer across changes of summability or norm, and an assembly estimate showing that the residual remains coercive after the full operator/orbit/global sum is formed.
+For every limiting mechanism, demand a positive margin in the intended topology, survival under the source-forced coefficient/category choice, a controlled complexity/support or envelope growth law, quantitative inverse transfer across changes of summability or norm, and an assembly estimate in the actual quotient that carries the target information.
 
-This is stronger than information preservation. The data may be present while becoming unextendable, macroscopically universal, prime-blind, nonclosable, stationary/extensive in the wrong variable, or visible only through an endpoint that loses the needed operator bound.
+This is stronger than information preservation. The data may be present while continuously uncertifiable, category-collapsed, delayed to future scales, radialized, prime-blind, split between a vanishing amplitude and a collapsing condition number, or lost through large-gap/boundary escape.
 
 ## Status / novelty
 
-The component compactness, operator-extension, Tauberian, support-growth, Bloch/spectral-shift, Poisson, transversality, Feshbach, and fractional-Sobolev results are classical or persisted exact findings. The synthesis is the common quantitative resource principle.
+The component closed-range, quotient-duality, ultrasummand, Tauberian, periodization, Bloch, clone, Schur-complement, spectral-shift, Orlicz, and entropy results are classical or persisted exact findings. The synthesis is the common quantitative resource principle.
 
 ## Falsification criterion
 
-Produce a canonical construction whose signal loses range, transfer strength, source specificity, support-scale mass, domain control, or norm coercivity under the target limit yet still yields a stable source-specific invariant without additional structure. Conversely, derive the missing uniform margin from the arithmetic source in one of the live boundary categories.
+Produce a canonical construction whose signal has zero stability margin, disappears under its admitted coefficient category, loses current-scale visibility, collapses in the final quotient, or leaks through global assembly, yet still yields a stable source-specific invariant without additional structure. Conversely, derive one of the missing uniform margins from the arithmetic source.

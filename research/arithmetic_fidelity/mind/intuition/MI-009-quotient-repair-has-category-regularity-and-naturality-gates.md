@@ -1,50 +1,48 @@
-# MI-009 — Lipschitz quotient repair is an exact operator-extension defect; range, regularity, and naturality remain separate gates
+# MI-009 — Quotient repair separates algebraic defect, robust defect, and coefficient-category collapse
 
-**Evidence level:** supported by AF-078--AF-093; exact in the Banach/Lipschitz-free category stated there
+**Evidence level:** supported by AF-078--AF-096; exact in the Banach/Lipschitz-free categories stated there
 
 ## Core intuition
 
-The question “can information be repaired after a quotient?” is category-relative, but in the Lipschitz Banach setting the nonlinear-versus-linear gap is now much more precise than a hierarchy of examples. For an extension `0 -> K -> E -> F -> 0`, Lipschitz repair exists exactly when its extension class dies after pullback along the barycenter map of the Lipschitz-free space. The killed obstruction is concretely **operator data on the forgotten barycentric kernel modulo data that extend to the full pre-compression free space**.
+The question “can information be repaired after a quotient?” has several distinct levels even after the repair category is fixed. A defect may be algebraically nonrecoverable, quantitatively separated from all recoverable data, or disappear entirely when the coefficient space is moved into a stronger structural category.
 
-Thus a category change helps exactly by making a previously nonextendable fiber datum extendable. It does not automatically provide quantitative stability, source naturality, equivariance, or a repair in a stricter category.
+For Lipschitz Banach repair the hierarchy is now exact. The nonlinear-versus-linear defect is an operator-extension quotient on the forgotten barycentric fiber, robustness is distance from the closure of extendable operators, and dual coefficient spaces do not create a natural weak-star witness layer: they collapse the complete defect itself by ultrasummand linearization.
 
 ## Strongest justified principle
 
-AF-078 identifies the linear endpoint: bounded linear repair is equivalent to splitting the quotient. AF-081 shows that nonlinear geometry can select canonical continuous homogeneous representatives even when linear splitting fails, while AF-082/AF-084 identify regularity thresholds that force linearity back.
+AF-078--AF-093 identify the qualitative categories. Linear repair is splitting. Lipschitz repair is equivalent to killing the extension class under the Lipschitz-free barycenter pullback, and the resulting defect is
 
-AF-087--AF-090 clarify locality and range. A Lipschitz section on one nontrivial ball globalizes in the relevant category; bidual relaxation always yields strong linear structure, so “repair exists after completion” is weaker than original-range repair.
+`L(Z_F,K) / ran R_{F,K}`,
 
-AF-091 closes a large part of that apparent escape. If the forgotten kernel `K` is an ultrasummand, any local Lipschitz quotient repair already forces the original exact sequence to split linearly. Hence a genuinely Lipschitz-but-not-linear example must simultaneously evade target-side separable linearization and kernel-side bidual descent.
+where `R_{F,K}` restricts ambient operators to the forgotten barycentric kernel. Ultrasummand and lifting hypotheses can force this quotient to vanish.
 
-AF-092 gives the exact homological classifier. If `xi in Ext(F,K)` is the extension class and `beta_F : F(F) -> F` is the Lipschitz-free barycenter map, then
+AF-094 supplies the exact stability modulus:
 
-`Lipschitz repair <=> beta_F^*(xi)=0`,
+`rho([T]) = dist(T, ran R_{F,K})`.
 
-while linear repair is `xi=0`. The nonlinear defect is therefore `ker beta_F^*`, with the optimal Lipschitz constant equal to the optimal norm of the corresponding linear lift on the free space.
+A nonzero algebraic class can nevertheless have `rho=0` precisely when it lies in the norm closure of the extendable operators. Hausdorffizing the defect replaces `ran R` by its closure, and closed range is exactly the condition under which every algebraic defect is robust. The same closed-range gate is equivalent to a uniform extension-cost bound for operators that are already extendable.
 
-AF-093 resolves that kernel into concrete fiber data. Writing `Z_F=ker beta_F`,
+AF-095 dualizes that margin. `rho([T])` is the optimal value of a bounded linear functional annihilating every extendable fiber operator. Robust defects are exactly those separated by such a witness; closure-only defects are invisible to every bounded linear witness.
 
-`ker beta_F^* ~= L(Z_F,K) / {restrictions of bounded operators F(F)->K}`.
-
-A nonzero nonlinear-repair class is exactly a bounded operator on the forgotten barycentric fiber that does not extend linearly across the full free space. Target lifting property and ultrasummand coefficients are two independent mechanisms forcing every such operator to extend.
+The corrected AF-096 closes the tempting predual escape. If the coefficient is explicitly dual, `K=Y^*`, then `Y^*` is automatically an ultrasummand. AF-091 therefore forces every operator `T:Z_F->Y^*` to extend to `F(F)`, so `R_{F,Y^*}` is surjective, the Lipschitz-versus-linear defect vanishes, the projective-tensor map `j tensor_pi I_Y` is bounded below, and both unrestricted and weak-star-normal witness spaces are zero. A genuine Banach predual supplies a natural weak-star category only after entering a coefficient class in which this particular defect has disappeared.
 
 ## Evidence synthesis and boundaries
 
-This classification is algebraic/category-exact, not yet a quantitative stability theorem. The quotient of operator spaces need not have a closed range or canonical norm measuring distance to extendability. Nor does the free-space section automatically respect arithmetic provenance, group actions, positivity, locality, or a stricter admissible recovery class.
+A positive arithmetic application must therefore name both the repair category and the coefficient category. For a general non-ultrasummand coefficient, algebraic nonrecoverability and robust nonrecoverability remain distinct and are measured by AF-094--AF-095. But simply declaring the coefficient to be a dual Banach space cannot expose a hidden normal witness for this defect; it removes the defect.
 
-Discriminator-specific recovery can also require much less than a full quotient section. The exact extension model applies when complete representative recovery is the claimed task.
+None of these abstract classifications supplies arithmetic provenance, equivariance, positivity, order, locality, or a canonical non-ultrasummand coefficient. Those structures must be forced by the source representation.
 
 ## Status / novelty
 
-Lipschitz-free spaces, barycenter maps, Banach `Ext`, pushouts, operator extension, and ultrasummand theory are classical. The persisted synthesis is the fidelity interpretation: **nonlinear repair forgets precisely a class of nonextendable operators on the compression fiber**.
+Lipschitz-free spaces, Banach `Ext`, closed-range theory, quotient duality, Hahn--Banach separation, projective tensor products, and ultrasummands are classical. The persisted synthesis is the exact fidelity hierarchy: **algebraic defect, robust defect, and coefficient-category survival are separate gates, and dual coefficients close rather than enrich the current Lipschitz defect**.
 
 ## Falsification criterion
 
-Produce a Lipschitz-splittable extension whose class is not killed by `beta_F^*`, or a nonzero class in `ker beta_F^*` whose corresponding barycentric-kernel operator nevertheless extends. For an arithmetic application, a positive must additionally derive the required range, stability, and naturality from the source.
+Produce a nonzero AF-093 defect with coefficient `Y^*`, or a nonzero weak-star-normal annihilator in that dual-coefficient setting, contradicting the ultrasummand extension theorem in AF-096. An arithmetic application can evade the no-go only by justifying a different, non-ultrasummand coefficient/recovery category.
 
 ## Lean-formalizable core
 
-- Lipschitz section/free-space linearization equivalence.
-- Pullback splitting criterion `beta_F^*(xi)=0`.
-- Long-homology identification of the kernel with an operator-extension quotient.
-- Ultrasummand and target-lifting injectivity gates.
+- Operator-extension quotient for Lipschitz repair.
+- Distance-to-range stability seminorm and closed-range gate.
+- Dual annihilator formula for robust margin.
+- Surjectivity of restriction to dual coefficients via ultrasummand linearization.
