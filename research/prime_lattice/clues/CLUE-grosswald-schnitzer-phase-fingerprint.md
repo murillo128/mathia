@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime_lattice-grosswald-schnitzer-phase-fingerprint
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: prime_lattice
 based_on:
@@ -9,6 +9,7 @@ based_on:
   - research/prime_lattice/findings/PL-129-kakeya-phase-slope-tail-aliasing.md
   - research/prime_lattice/findings/PL-130-finite-phase-fingerprint-real-grosswald-schnitzer-nonidentifiability.md
   - research/prime_lattice/findings/PL-131-grosswald-schnitzer-phase-arc-injectivity.md
+  - research/prime_lattice/findings/PL-132-integer-grosswald-schnitzer-finite-phase-fingerprint.md
   - research/visual_exploration/findings/VIS-007-grosswald-schnitzer-rigidity-profile-monotone.md
   - research/visual_exploration/visualizations/grosswald-schnitzer-rigidity-profile.md
 ---
@@ -27,7 +28,7 @@ is a positive additive discriminator for one-sided Grosswald–Schnitzer deforma
 
 `PL-130` closes the finite-observable branch for the original **real** Grosswald–Schnitzer class: any prescribed finite family of odd central phase derivatives and nonzero critical-line phase samples has exact local aliases, with finitely many tail coordinates compensating a change in a designated low real generator. This makes the integer restriction in the present clue load-bearing rather than cosmetic.
 
-`PL-131` supplies the complementary infinite-data boundary. For arbitrary admissible real generators, equality of the reflection cocycle on any set of critical-line heights with a finite accumulation point forces the two complete generator sequences to coincide. Thus the full analytic phase is injective even though every finite real fingerprint is not. The unresolved issue is specifically whether **integer discreteness reduces that analytic-germ requirement to finitely many observables**.
+`PL-131` supplies the complementary infinite-data boundary. For arbitrary admissible real generators, equality of the reflection cocycle on any set of critical-line heights with a finite accumulation point forces the two complete generator sequences to coincide. Thus the full analytic phase is injective even though every finite real fingerprint is not. The unresolved issue was specifically whether **integer discreteness reduces that analytic-germ requirement to finitely many observables**.
 
 ## Research question
 
@@ -43,20 +44,25 @@ A negative result would be equally useful. If two distinct admissible integer de
 
 ## Decisive test
 
-The one-observable case is closed negatively by `PL-129`, and the arbitrary finite-observable case is closed negatively for **real** generators by `PL-130`. At the other extreme, `PL-131` proves that exact phase data on any accumulating critical-line set are fully identifying even for real generators. The next test must therefore be genuinely finite-dimensional, integer-valued, and keep the arbitrary tail active.
+The one-observable case is closed negatively by `PL-129`, and the arbitrary finite-observable case is closed negatively for **real** generators by `PL-130`. At the other extreme, `PL-131` proves that exact phase data on any accumulating critical-line set are fully identifying even for real generators. The next test therefore had to be genuinely finite-dimensional, integer-valued, and keep the arbitrary tail active.
 
-For a fixed cutoff `X`, choose an explicit finite family of independent critical-line observables beyond `D` and write the exact contribution of each admissible integer generator change. Then either prove a tail-uniform separation bound for all admissible integer tails, or construct two admissible integer sequences that differ below `X` but collide exactly under the whole finite observable vector.
+For a fixed cutoff `X`, the decisive goal was to prove a tail-uniform separation bound for admissible integer prefixes under some finite family of phase observables, or else construct two admissible integer sequences differing below `X` that collide exactly under such a family.
 
-Finite-support or tail-frozen uniqueness is not enough: after cross-multiplication that setting reduces to a finite exponential-polynomial identity and sufficiently long Taylor data separate it by classical Vandermonde/Prony arguments. Likewise, an infinite Taylor jet, a phase arc, or an accumulating exact sample set is no longer progress on this clue because `PL-131` already proves that such analytic-germ data are injective. The target is specifically the **finite integer-tail inverse problem**.
+Finite-support or tail-frozen uniqueness was not enough: after cross-multiplication that setting reduces to a finite exponential-polynomial identity and sufficiently long Taylor data separate it by classical Vandermonde/Prony arguments. Likewise, an infinite Taylor jet, a phase arc, or an accumulating exact sample set was no longer progress because `PL-131` already proved those data injective. The target was specifically the **finite integer-tail inverse problem**.
 
 ## Evidence boundary
 
 `PL-127` establishes the positive scalar phase slope and its low-prefix certificate. `VIS-007` proves the monotone one-step integer threshold. `PL-129` establishes exact arbitrary-tail collisions for that **single** scalar slope. `PL-130` establishes exact collisions for every finite natural jet/sample fingerprint when the admissible generators vary continuously over the real prime gaps. `PL-131` establishes the opposite infinite-data boundary: an accumulating exact set of reflection-phase values determines the entire real Grosswald–Schnitzer sequence.
 
-None of these results proves or disproves reconstruction from a finite vector of two or more independent phase observables for **integer** generators. The Grosswald–Schnitzer continuation to `Re(s)>0` relies on paired factor differences, so returning to a finitely supported or absolutely convergent coefficient-inversion problem removes the hard tail rather than solving it.
+`PL-132` now supplies the missing discrete bridge. For any fixed cutoff and any nondegenerate bounded critical-line interval, the integer control space is a compact product of finite alphabets and its low-prefix quotient has finitely many clopen classes. The `PL-131` phase-arc map is continuous and injective on that compact space, so distinct prefix classes have a positive uniform distance in `C(I)`. Compactness of the image gives uniform equicontinuity, allowing the separating arc to be replaced by finitely many phase samples while retaining a positive tail-uniform margin.
+
+The result is non-effective: it proves existence of a finite sampling set and positive margin but does not provide useful explicit bounds for the number or location of samples or for the separation constant. Effective sample complexity is therefore a different residual question, not a reason to keep the yes/no finite-identifiability clue open.
 
 ## Research disposition
 
-Accepted, but now isolated to a sharp discrete information-compression question. The scalar branch is decisively negative by `PL-129`; every finite real-valued phase-fingerprint branch is negative by `PL-130`; and the analytic-germ/full-phase branch is positive by `PL-131`. What remains is neither ordinary phase retrieval nor smooth inverse-function theory.
+Outcome: narrowed
 
-A substantive resolution must show whether **integer Grosswald–Schnitzer discreteness** changes the finite/infinite boundary: either exhibit a finite phase fingerprint with an explicit separation theorem uniform over the full admissible integer tail, or prove structural non-identifiability by constructing an exact integer collision for a genuinely multi-observable finite fingerprint. Increasing precision in `D`, freezing the tail, using real-valued compensation, or taking infinitely many accumulating samples no longer counts as progress on this clue.
+Resolved by:
+- [[research/prime_lattice/findings/PL-132-integer-grosswald-schnitzer-finite-phase-fingerprint.md]]
+
+The core finite-integer-tail identifiability question is answered positively: for every fixed low-prime cutoff, finitely many critical-line reflection-phase samples separate all admissible integer prefixes uniformly over arbitrary admissible integer tails. What remains unresolved is quantitative effectiveness — explicit sample locations/counts and usable lower bounds for the separation margin. Any future clue should target those rates or conditioning directly rather than reopen finite-fingerprint existence.
