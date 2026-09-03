@@ -20,3 +20,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-133-anchored-zero-mode-renormalization-cannot-inherit-gamma-semigroup-contractivity|WP-133]]
 - [[research/weil_positivity/findings/WP-134-repeated-prime-full-chord-coarse-compression-is-exactly-stationary|WP-134]]
 - [[research/weil_positivity/findings/WP-135-repeated-prime-full-chord-feshbach-self-energy-is-zero|WP-135]]
+- [[research/weil_positivity/findings/WP-136-repeated-prime-full-chord-continuous-positive-spectral-traces-are-extensive|WP-136]]
+- [[research/weil_positivity/findings/WP-137-repeated-prime-full-chord-green-trace-is-harmonic-logarithmic-not-exact-mangoldt|WP-137]]
+- [[research/weil_positivity/findings/WP-138-new-prime-puncture-regular-positive-spectral-responses-cannot-supply-critical-logarithmic-local-scale|WP-138]]
+- [[research/weil_positivity/findings/WP-139-minimal-new-prime-puncture-singular-finite-part-is-bounded-and-prime-blind|WP-139]]

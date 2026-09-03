@@ -23,3 +23,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-155-full-chord-primitive-refinement-compression-is-a-commuting-invertible-conjugacy-polynomial|PC-155]]
 - [[research/prime_circle/findings/PC-156-repeated-prime-full-chord-fibers-collapse-to-a-fixed-quadratic-pencil|PC-156]]
 - [[research/prime_circle/findings/PC-157-new-prime-full-chord-bulk-collapses-to-a-fixed-bloch-limit|PC-157]]
+- [[research/prime_circle/findings/PC-158-new-prime-puncture-is-a-prime-blind-positive-spectral-shift|PC-158]]
+- [[research/prime_circle/findings/PC-159-bloch-half-reflection-is-universal-time-reversal-not-zeta-functional-equation|PC-159]]
+- [[research/prime_circle/findings/PC-160-bloch-pencil-is-hyperbolic-and-zero-free-on-the-open-unit-strip|PC-160]]

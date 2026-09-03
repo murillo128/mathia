@@ -23,3 +23,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/arithmetic_fidelity/findings/AF-091-ultrasummand-kernels-close-the-nonseparable-lipschitz-lifting-escape|AF-091]]
 - [[research/arithmetic_fidelity/findings/AF-092-free-space-pullback-classifies-lipschitz-quotient-repair|AF-092]]
 - [[research/arithmetic_fidelity/findings/AF-093-barycentric-kernel-operator-extension-cokernel|AF-093]]
+- [[research/arithmetic_fidelity/findings/AF-094-closed-range-classifies-stable-lipschitz-defect|AF-094]]
+- [[research/arithmetic_fidelity/findings/AF-095-dual-witnesses-certify-robust-lipschitz-defect|AF-095]]
+- [[research/arithmetic_fidelity/findings/AF-096-predual-normal-witnesses-are-projective-tensor-kernel-defects|AF-096]]
+- [[research/arithmetic_fidelity/findings/AF-097-finite-pointwise-observations-cannot-detect-linear-extension-defects|AF-097]]
+- [[research/arithmetic_fidelity/findings/AF-098-uniform-finite-interpolation-sits-between-bidual-and-target-recovery|AF-098]]

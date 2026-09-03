@@ -47,6 +47,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-004-mean-absolute-cancellation-needs-excursion-coupled-information]]
 - [[research/mobius_cancellation/mind/intuition/MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information]]
 - [[research/mobius_cancellation/mind/intuition/MI-006-asymptotically-fixed-mellin-drift-is-information-neutral]]
+- [[research/mobius_cancellation/mind/intuition/MI-007-growing-order-smoothing-can-hide-endpoint-information]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -55,6 +56,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-004-compatible-completion-lacks-coercive-rh-scale]]
 - [[research/prime_circle/mind/intuition/MI-005-hardy-shell-core-is-universal]]
 - [[research/prime_circle/mind/intuition/MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization]]
+- [[research/prime_circle/mind/intuition/MI-007-bloch-half-reflection-is-universal-time-reversal]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]
@@ -83,6 +85,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-004-w-conditioning-is-l2-compressible-but-l1-expensive]]
 - [[research/weil_inertia/mind/intuition/MI-005-rank-restoration-is-not-quantitative-coercivity]]
 - [[research/weil_inertia/mind/intuition/MI-006-source-rigidity-can-eliminate-screening-extremizers]]
+- [[research/weil_inertia/mind/intuition/MI-007-depth-weighted-schur-tail-is-screening-invariant]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]

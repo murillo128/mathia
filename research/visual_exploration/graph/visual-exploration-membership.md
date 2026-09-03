@@ -17,3 +17,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-011-taylor-normalized-residual-full-reflection-parity|VIS-011]]
 - [[research/visual_exploration/findings/VIS-012-log-residual-jets-zero-moments|VIS-012]]
 - [[research/visual_exploration/findings/VIS-013-zero-free-shells-poisson-determined|VIS-013]]
+- [[research/visual_exploration/findings/VIS-014-circular-zero-entry-logmeans-radial-only|VIS-014]]
+- [[research/visual_exploration/findings/VIS-015-nonzero-shell-modes-poisson-jensen-zero-sources|VIS-015]]
+- [[research/visual_exploration/findings/VIS-016-phase-modulus-boundary-uniqueness|VIS-016]]
+- [[research/visual_exploration/findings/VIS-017-overlap-connectivity-collapses-local-phase-freedom|VIS-017]]
