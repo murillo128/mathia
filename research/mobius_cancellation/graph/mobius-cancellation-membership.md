@@ -14,3 +14,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/mobius_cancellation/findings/MC-034-random-multiplicative-annulus-critical-rms|MC-034]]
 - [[research/mobius_cancellation/findings/MC-035-log-radial-zero-mode-mertens-equivalence|MC-035]]
 - [[research/mobius_cancellation/findings/MC-036-fixed-mellin-annulus-modes-rh-equivalent|MC-036]]
+- [[research/mobius_cancellation/findings/MC-037-pintz-v2-section5-contour-audit|MC-037]]
+- [[research/mobius_cancellation/findings/MC-038-convergent-mellin-frequency-rh-equivalence|MC-038]]
+- [[research/mobius_cancellation/findings/MC-039-strong-aperiodicity-log-elliott-no-power-saving|MC-039]]
+- [[research/mobius_cancellation/findings/MC-040-odd-order-logarithmic-chowla-no-power-saving|MC-040]]
+- [[research/mobius_cancellation/findings/MC-041-harmonic-chowla-tauberian-barrier|MC-041]]

@@ -12,14 +12,19 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Materialized line hubs
 
+- [[research/analytic_frontier/graph/analytic-frontier|Analytic Frontier]]
 - [[research/arithmetic_fidelity/graph/arithmetic-fidelity|Arithmetic Fidelity]]
+- [[research/farey_discrepancy/graph/farey-discrepancy|Farey Discrepancy]]
 - [[research/mobius_cancellation/graph/mobius-cancellation|Möbius Cancellation]]
+- [[research/nyman_beurling/graph/nyman-beurling|Nyman–Beurling]]
 - [[research/prime_circle/graph/prime-circle|Prime Circle]]
 - [[research/prime_flute/graph/prime-flute|Prime Flute]]
 - [[research/prime_lattice/graph/prime-lattice|Prime Lattice]]
+- [[research/robin_extremal/graph/robin-extremal|Robin Extremal]]
 - [[research/visual_exploration/graph/visual-exploration|Visual Exploration]]
-- [[research/weil_positivity/graph/weil-positivity|Weil Positivity]]
 - [[research/weil_inertia/graph/weil-inertia|Weil Inertia]]
+- [[research/weil_positivity/graph/weil-positivity|Weil Positivity]]
+- [[research/xi_flow/graph/xi-flow|Xi Flow]]
 - [[research/prior_art/graph/prior-art|Prior-art redirects]]
 - [[research/graph/intuition-membership|Durable intuition membership]]
 
@@ -52,7 +57,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Current integration boundary
 
-Eight source-backed research lines are represented: six RH-facing lines plus Arithmetic Fidelity and Visual Exploration as transversal lines. The new global synthesis is quantitative rather than merely topological: exact finite-scale survival repeatedly needs a compactness, coercivity, reference-stability or comparable non-escape theorem in the final category before it can carry arithmetic significance.
+Ten source-backed research lines are now represented, with Farey Discrepancy, Nyman–Beurling, and Robin Extremal additionally materialized as initialized zero-finding lines. The evidence-gated cross-line synthesis below remains focused on relations already supported by canonical sources; structural line membership alone does not create new semantic bridges.
 
 Prime Circle now has a genuine mesoscopic survivor after extensive classicalization: a gap-two macroscopic spectral band locks at Mertens/Frobenius scale but not in operator norm. Weil Inertia reaches the complementary obstruction: algebraic full rank survives while quantitative coercivity collapses on polynomial-dimensional near-null sectors. Arithmetic Fidelity supplies the abstract compactness/repair language for this distinction, while Visual Exploration supplies matched controls that separate robust residuals from coordinate or symmetry artifacts.
 

@@ -16,3 +16,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-131-grosswald-schnitzer-phase-arc-injectivity|PL-131]]
 - [[research/prime_lattice/findings/PL-132-integer-grosswald-schnitzer-finite-phase-fingerprint|PL-132]]
 - [[research/prime_lattice/findings/PL-133-grosswald-schnitzer-reflection-axis-universality|PL-133]]
+- [[research/prime_lattice/findings/PL-134-beurling-functional-equation-modular-inversion|PL-134]]
+- [[research/prime_lattice/findings/PL-135-boolean-walsh-squarefree-modular-enrichment|PL-135]]
+- [[research/prime_lattice/findings/PL-136-selberg-degree-one-prime-torus-rigidity|PL-136]]
+- [[research/prime_lattice/findings/PL-137-pretentious-prime-torus-pnt-edge-boundary|PL-137]]
+- [[research/prime_lattice/findings/PL-138-power-sensitive-pretentious-transfer-boundary|PL-138]]

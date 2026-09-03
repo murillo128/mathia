@@ -24,6 +24,11 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mind/intuition/MI-006-classify-the-boundary-model-before-calling-it-arithmetic]]
 - [[research/mind/intuition/MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure]]
 
+### Analytic Frontier
+- [[research/analytic_frontier/mind/intuition/MI-001-global-conjugation-geometry-carries-horizontal-information]]
+- [[research/analytic_frontier/mind/intuition/MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile]]
+- [[research/analytic_frontier/mind/intuition/MI-003-ordered-local-consistency-escapes-pair-scalarization]]
+
 ### Arithmetic Fidelity
 - [[research/arithmetic_fidelity/mind/intuition/MI-001-fidelity-is-quotient-relative]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-002-canonical-relational-lifts-can-restore-gauge]]
@@ -33,6 +38,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-006-interaction-support-governs-marginal-fidelity]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-007-stable-fidelity-is-distance-from-collision]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-008-compact-fidelity-needs-cross-scale-witness-compactness]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-009-quotient-repair-has-category-regularity-and-naturality-gates]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -40,6 +46,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion]]
 - [[research/mobius_cancellation/mind/intuition/MI-004-mean-absolute-cancellation-needs-excursion-coupled-information]]
 - [[research/mobius_cancellation/mind/intuition/MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information]]
+- [[research/mobius_cancellation/mind/intuition/MI-006-asymptotically-fixed-mellin-drift-is-information-neutral]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -64,6 +71,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-006-second-scale-weil-signal-is-diagnostic-not-generative]]
 - [[research/prime_lattice/mind/intuition/MI-007-pointing-breaks-gauge-but-exposes-additive-correlations]]
 - [[research/prime_lattice/mind/intuition/MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization]]
+- [[research/prime_lattice/mind/intuition/MI-009-discrete-phase-fidelity-is-not-zero-selection]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -74,6 +82,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate]]
 - [[research/weil_inertia/mind/intuition/MI-004-w-conditioning-is-l2-compressible-but-l1-expensive]]
 - [[research/weil_inertia/mind/intuition/MI-005-rank-restoration-is-not-quantitative-coercivity]]
+- [[research/weil_inertia/mind/intuition/MI-006-source-rigidity-can-eliminate-screening-extremizers]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
@@ -82,4 +91,9 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_positivity/mind/intuition/MI-004-mangoldt-anchor-is-unbounded-in-positive-hardy-norm]]
 - [[research/weil_positivity/mind/intuition/MI-005-cover-coinvariants-classicalize-or-collapse]]
 - [[research/weil_positivity/mind/intuition/MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness]]
+
+### Xi Flow
+- [[research/xi_flow/mind/intuition/MI-001-collision-safe-coordinates-separate-singularity-from-source-information]]
+- [[research/xi_flow/mind/intuition/MI-002-scale-free-gap-dynamics-still-need-an-xi-specific-law]]
+- [[research/xi_flow/mind/intuition/MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet]]
 <!-- intuition-membership:end -->
