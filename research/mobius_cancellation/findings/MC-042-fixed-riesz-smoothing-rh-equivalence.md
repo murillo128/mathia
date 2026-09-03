@@ -4,18 +4,18 @@
 
 ## Claim
 
-For a fixed real parameter `tau >= 0`, define the normalized Möbius Riesz mean
+For a fixed real parameter `tau>0`, define the normalized Möbius Riesz mean
 
 \[
 M_\tau(x)
 =
 \frac{1}{\Gamma(\tau+1)}
 \sum_{n\le x}\mu(n)\left(1-\frac{n}{x}\right)^\tau,
-\qquad x\ge1.
+\qquad x\ge1,
 \tag{1}
 \]
 
-Then, for every fixed `tau >= 0`,
+and set `M_0(x)=M(x)=sum_{n<=x} mu(n)`. Then, for every fixed `tau>=0`,
 
 \[
 \boxed{
@@ -34,12 +34,12 @@ The exact Mellin transform behind this equivalence is
 \int_1^\infty M_\tau(x)x^{-s-1}\,dx
 =
 \frac{\Gamma(s)}{\Gamma(s+\tau+1)}\frac1{\zeta(s)},
-\qquad \Re(s)>1.
+\qquad \Re(s)>1,
 }
 \tag{3}
 \]
 
-For fixed `tau >= 0`, the Gamma quotient in `(3)` is holomorphic and nonzero throughout `Re(s)>1/2`. Thus fixed-order Riesz smoothing does not mask any zeta zero in the critical half-plane: it only multiplies `1/zeta(s)` by a fixed zero-free analytic factor.
+with the `tau=0` case interpreted by `M_0=M`. For fixed `tau>=0`, the Gamma quotient in `(3)` is holomorphic and nonzero throughout `Re(s)>1/2`. Thus fixed-order Riesz smoothing does not mask any zeta zero in the critical half-plane: it only multiplies `1/zeta(s)` by a fixed zero-free analytic factor.
 
 Consequently the active Tauberian escape after `MC-041` cannot be obtained merely by replacing the ordinary Mertens sum, the order-one Riesz mode of `MC-019`, or another coarse observable by a **fixed higher-order** Riesz/Cesàro smoothing and then proving the same square-root exponent for that smoothed quantity. At the critical exponent every fixed order remains in the same RH information class.
 
@@ -47,7 +47,7 @@ This does not rule out scale-dependent smoothing `tau=tau(x)`, nonlinear multisc
 
 ## 1. Exact Mellin factorization
 
-For `Re(s)>1`, absolute convergence permits interchange of the sum and integral in `(1)`. For each `n`, substitute `u=1-n/x`:
+For `Re(s)>1` and `tau>0`, absolute convergence permits interchange of the sum and integral in `(1)`. For each `n`, substitute `u=1-n/x`:
 
 \[
 \begin{aligned}
@@ -71,7 +71,7 @@ Summing `(4)` against `mu(n)` gives `(3)` because
 \tag{5}
 \]
 
-No zero information has been used in deriving `(3)`; it is an identity in the half-plane of absolute convergence.
+For `tau=0`, the same identity follows directly from the Mellin transform of the ordinary summatory function. No zero information has been used in deriving `(3)`; it is an identity in the half-plane of absolute convergence.
 
 ## 2. A critical Riesz bound forces RH
 
@@ -105,13 +105,13 @@ G_\tau(s)=\frac1{\zeta(s)}.
 \tag{9}
 \]
 
-Thus `(8)` supplies a holomorphic continuation of the reciprocal zeta function to the whole half-plane `Re(s)>1/2`. The zeta function therefore has no nontrivial zero there. The functional equation and conjugation symmetry then place every nontrivial zero on `Re(s)=1/2`, proving RH.
+To make the nonvanishing consequence explicit, consider the connected domain `D={Re(s)>1/2 : s != 1}`. The function `zeta(s)G_tau(s)` is holomorphic on `D` and equals `1` on the nonempty open subset `Re(s)>1`; by the identity theorem it equals `1` throughout `D`. Hence `zeta` cannot have a zero in `Re(s)>1/2`. The pole at `s=1` causes no difficulty because `G_tau` extends there holomorphically with the corresponding reciprocal zero. The functional equation and conjugation symmetry then place every nontrivial zero on `Re(s)=1/2`, proving RH.
 
 The important structural point is the **nonmasking** property: unlike a transform whose multiplier could vanish exactly where `zeta` vanishes, the fixed Gamma quotient cannot cancel an off-critical zero divisor.
 
 ## 3. RH gives the fixed-order Riesz bound
 
-For `tau=0`, `(1)` is simply the ordinary Mertens function, so the implication is the classical Mertens criterion.
+For `tau=0`, the claim is the classical Mertens criterion.
 
 Let `tau>0`. Write
 
@@ -119,7 +119,7 @@ Let `tau>0`. Write
 M(u)=\sum_{n\le u}\mu(n).
 \]
 
-Stieltjes summation by parts applied to `(1)` gives the exact identity
+Stieltjes summation by parts applied to `(1)` gives
 
 \[
 M_\tau(x)
@@ -129,6 +129,8 @@ M_\tau(x)
 M(u)\left(1-\frac ux\right)^{\tau-1}\,du.
 \tag{10}
 \]
+
+For `0<tau<1`, the endpoint derivative is singular but integrable; `(10)` follows by applying summation by parts up to `x-eta` and letting `eta` tend to zero.
 
 Under RH, the classical criterion gives, for every `delta>0`,
 
@@ -156,7 +158,7 @@ This proves the reverse implication in `(2)` for every fixed positive order.
 
 ## 4. Prior art and novelty boundary
 
-Generalized Riesz means of the Möbius function are established prior art. Shōta Inoue, *Riesz mean of Möbius function*, RIMS Kôkyûroku 2203 (2021), 31–40, defines the same family `(1)` for nonnegative real order, develops explicit formulas in terms of zeta zeros, and studies both fixed and growing smoothing order under RH. The bibliographic record is independently indexed by the National Diet Library as RIMS Kôkyûroku 2203 (November 2021), pages 31–40.
+Generalized Riesz means of the Möbius function are established prior art. Shōta Inoue, *Riesz mean of Möbius function*, RIMS Kôkyûroku 2203 (2021), 31–40, defines this generalized Riesz-mean family for nonnegative order, develops explicit formulas in terms of zeta zeros, and studies both fixed and growing smoothing order under RH. The bibliographic record is independently indexed by the National Diet Library as RIMS Kôkyûroku 2203 (November 2021), pages 31–40.
 
 `MC-019` already used the order-one member of this family, where `x M_1(x)` is the first Möbius Riesz sum, and derived its RH equivalence by an elementary Mellin argument. The present result extends that information audit uniformly across **every fixed order** using the general beta-kernel factorization `(3)`.
 
