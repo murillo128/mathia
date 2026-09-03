@@ -31,6 +31,13 @@ This file records durable literature dependencies for `research/analytic_frontie
 
 - C. Carmeli, E. De Vito, A. Toigo and V. Umanità, **Vector valued reproducing kernel Hilbert spaces and universality**, *Analysis and Applications* 8 (2010), 19–61, DOI `10.1142/S0219530510001503`. Role: classical feature-map and operator-valued Bochner description of translation-invariant vector-valued kernels; prior-art boundary for `ANF-003`, clarifying that common-translation vectorization followed by scalar Gram compression is redundant while genuinely operator-valued spectral data can remain richer.
 
+## Local ordered-gap and block certificates
+
+- `anthropics/zeta-23-lean`, Lean 4 companion development for arXiv:2608.13637. Role: formal source of the unconditional baseline `H = 3/2 - (1/sqrt(2)) cot(1/sqrt(2)) = 0.672500703679...` and the analytic/stability infrastructure consumed by later local-gap refinements.
+- Thomas Lince / `teal-sea/zeta-lab`, `lean/bridge` development, frozen Palomar source commit `84312e4477dfeb7e0d8a91c38897f225f5a52f19`, registered as `PALOMAR-2026-08-25-000005` on 25 August 2026. Role: primary formal-artifact anchor for `ANF-006`; proves the parametric `n_point_bound` bridge, discharges the three- and four-point finite gap certificates inside Lean, and yields the unconditional four-point proportion `0.6728470197666887...`; the eight-point theorem explicitly retains its finite-certificate hypothesis.
+- `teal-sea/zeta-lab`, `lean/bridge/AXIOM-AUDIT.md`, current audit record dated through 31 August 2026. Role: pinned evidence boundary for the advertised bridge surface: no `sorryAx` in the proved declarations and only standard choice/propositional-extensionality/quotient axioms; explicitly notes that this does not make the conditional eight-point certificate unconditional.
+- Ainta, `ainta/zeta-simple-zeros`, seven-point local-gap refinement as audited and generalized by the `zeta-lab` bridge. Role: prior-art origin of the consecutive-gap/block-defect mechanism; its larger numerical certificate remains an external finite inequality rather than an unconditional Lean theorem in the bridge.
+
 ## Expansion rule
 
 Add a source here only when it becomes a durable dependency for a canonical finding or a repeated falsification boundary. Recent preprints should be anchored only after the line has identified the exact load-bearing theorem or estimate being used.
