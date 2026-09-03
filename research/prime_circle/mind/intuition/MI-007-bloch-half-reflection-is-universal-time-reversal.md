@@ -1,43 +1,46 @@
-# MI-007 — An exact half-reflection can be universal time reversal rather than arithmetic duality
+# MI-007 — The intrinsic Bloch half-reflection is universal time reversal, and its candidate strip is a resolvent region
 
-**Evidence level:** proved for the full-chord Bloch pencil in PC-159
+**Evidence level:** proved for the full-chord Bloch pencil in PC-159--PC-160
 
 ## Core intuition
 
-A finite spectral family can possess an exact `t <-> 1-t` functional-equation-shaped symmetry with fixed point `1/2` and still contain no zeta-specific localization mechanism. What matters is not the visual or algebraic resemblance to the Riemann reflection but whether the symmetry survives a control that removes the arithmetic source.
+A finite spectral family can possess an exact `t <-> 1-t` functional-equation-shaped symmetry with fixed point `1/2` and still have spectral geometry opposite to the Riemann zero problem. For the Prime-Circle full-chord Bloch pencil, the symmetry is already present for every finite subset of roots of unity, and the analytically continued pencil is **strictly accretive throughout `0<Re(t)<1`**.
 
-For the Prime-Circle full-chord Bloch pencil, the half-reflection is already present for every finite subset of roots of unity. It is therefore a real cyclic time-reversal symmetry of the carrier, not a selector for rational primes or Riemann zeros.
+Thus the intrinsic Bloch coordinate is not merely non-arithmetic as a critical-line selector. Its whole formal analogue of the critical strip is zero-free; the midpoint is quantitatively inside a resolvent region.
 
 ## Strongest justified principle
 
-PC-159 proves that for any finite `X subset Z/dZ`, without coprimality or primitive-shell assumptions,
+PC-159 proves that for any finite `X subset Z/dZ`, without primitiveness or coprimality assumptions,
 
-`P_X(1-t) = Z_X^{-1} conjugate(P_X(t)) Z_X`.
+`P_X(1-t)=Z_X^{-1} conjugate(P_X(t)) Z_X`,
 
-The corresponding antiunitary `Theta_X=Z_X^{-1}K` satisfies `Theta_X^2=I`, and the characteristic polynomial obeys
+so the characteristic polynomial factors through `t(1-t)`. The half-reflection is therefore universal cyclic time reversal before any rational-prime condition is imposed.
 
-`F_X(z,t)=F_X(z,1-t)=G_X(z,t(1-t))`.
+PC-160 strengthens the matched control geometrically. Complete cyclic lifts show that for real `0<=sigma<=1`,
 
-Thus the exact half-axis and its polynomial functional equation arise before the primitive arithmetic is imposed. Replacing `U(d)` by an arbitrary subset of roots leaves the symmetry intact.
+`P_X(sigma) >= sigma(1-sigma)/(2d^2) I`.
 
-This corrects the temptation to read the fixed point `t=1/2` as an intrinsic Riemann critical line. The reflection can organize the spectrum and constrain coefficients, but those constraints are matched by non-arithmetic root subsets.
+For `t=sigma+i tau`, the Hermitian part acquires the additional positive term `tau^2/(2d^2) I`. Hence `det P_X(t)` cannot vanish anywhere in the open unit strip and the inverse has an explicit norm bound there. A direct scalar-compression argument also shows that every polynomial eigenvalue in `t` is real and belongs to `(-infinity,0] union [1,infinity)`.
+
+The apparent Riemann-shaped reflection and the strip exclusion arise from the same universal complete-fiber geometry. Interpreting `t` itself as a hidden Riemann spectral parameter is therefore decisively blocked.
 
 ## What remains possible
 
-Arithmetic information may still live in how the primitive subset populates the reflected family, in a provenance-sensitive coupling across levels, or in an additional positive/unitary theorem that fails for generic subsets. The half-reflection can be part of such a mechanism, but it cannot supply the missing arithmetic selector by itself.
+Arithmetic information may still live in a fine-fiber puncture sector, a provenance-sensitive cross-level coupling, a nonlinear function of several pencils, a growing-support limit, or another construction that breaks the universal complete-lift positivity before the spectral variable is read.
 
-A viable continuation must therefore identify a residual not fixed by the antiunitary symmetry and show that it survives the existing bulk, refinement, puncture, and matched-subset controls.
+A viable continuation must identify what new arithmetic operation destroys the matched-subset accretivity and then prove a source-specific sign or zero theorem for the resulting object. Merely reparameterizing or analytically continuing the same finite Bloch pencil cannot do so.
 
 ## Status / novelty
 
-Bloch time reversal, antiunitary conjugation, and polynomial reflection invariance are classical mechanisms. The persisted contribution is the exact Prime-Circle control: **the full-chord `1/2` reflection is carrier symmetry before it is arithmetic symmetry**.
+Bloch time reversal, definite/hyperbolic Hermitian matrix polynomials, and positive graph Laplacians are classical. The persisted Prime-Circle contribution is the exact control: **the full-chord `1/2` reflection is universal and the entire associated open strip is intrinsically zero-free**.
 
 ## Falsification criterion
 
-Find a finite root subset for which the exact PC-159 matrix identities fail, or derive an arithmetic invariant from the half-reflection alone that changes when `U(d)` is replaced by a matched non-arithmetic subset despite the same reflected pencil symmetry.
+Find a finite root subset and `t` with `0<Re(t)<1` for which `det P_X(t)=0`, or a nonreal polynomial eigenvalue of the PC-160 pencil. A new carrier that changes the pencil rather than reinterpreting it would evade the result.
 
 ## Lean-formalizable core
 
-- Matrix conjugation identity for `P_X(t)`.
-- Antiunitary involution and `t <-> 1-t`.
-- Characteristic-polynomial factorization through `t(1-t)`.
+- Antiunitary `t <-> 1-t` conjugation.
+- Complete-lift positive lower bound on the real interval.
+- Strict accretivity in the complex strip.
+- Reality and exclusion interval for quadratic-pencil eigenvalues.

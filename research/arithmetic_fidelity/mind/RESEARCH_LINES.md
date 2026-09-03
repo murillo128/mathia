@@ -14,13 +14,15 @@ Given a compression and its mathematically forced observable class, determine th
 
 Determine when higher-order couplings, joint laws, compound-minor data, or other relational observables reduce the ambiguity exactly to the intended symmetry group. Complete low-order marginals remain a control: a target may live entirely in a missing interaction face even when every marginal is known.
 
-## Classify algebraic repair, robust repair, and coefficient-category survival separately
+## Separate algebraic repair, finite visibility, conditioning, bidual coherence, and target-range recovery
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-007-stable-fidelity-is-distance-from-collision`, and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-The Lipschitz-free model is now quantitative. AF-093 identifies the algebraic nonlinear-versus-linear defect as fiber operators modulo extendable operators. AF-094 shows that robustness is distance from the norm closure of that range and that closed range is equivalent to a uniform extension-cost bound. AF-095 identifies the robust margin with bounded annihilator witnesses.
+AF-093--AF-096 classify the norm-level Lipschitz defect: algebraic nonextension, distance from the extendable range, bounded annihilator witnesses, and coefficient-category collapse are distinct. AF-097 adds a sharp observation-topology warning: every finite-dimensional restriction of an arbitrary bounded fiber operator has an exact ambient extension, so even a robust norm defect can be invisible to every finite pointwise test.
 
-AF-096 then closes the apparent weak-star/predual refinement: if the coefficient is a genuine dual space `Y^*`, ultrasummand linearization makes every fiber operator extend, so the complete defect and both unrestricted and normal witness spaces vanish. A live arithmetic repair must therefore justify a source-natural **non-ultrasummand** coefficient or another recovery category, then prove its closure/stability properties together with the required provenance, equivariance, order, or positivity constraints.
+AF-098 identifies the quantitative bridge. The worst finite exact interpolation cost dominates the optimal bidual extension cost and is dominated by the original-target extension cost. Uniformly bounded finite repairs therefore cohere, by compactness, into a global `K**`-valued repair; for dual/reflexive or more generally `1`-complemented targets the finite and global optimal costs coincide exactly.
+
+A live arithmetic repair must therefore state what finite observations are available, what norm budget is source-forced, whether bidual landing is admissible, and how original-range, equivariance, order, positivity, or locality are retained. Per-cutoff exact solvability without a uniform conditioning theorem is not global fidelity.
 
 ## Prove bridges between differential, average, formal, and zero-error fidelity only under explicit hypotheses
 

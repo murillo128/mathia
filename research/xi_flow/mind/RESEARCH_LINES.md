@@ -12,17 +12,17 @@ Individual roots have square-root singularities at a simple double collision, wh
 
 **Linked intuitions:** `MI-002-scale-free-gap-dynamics-still-need-an-xi-specific-law` and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
 
-Fixed-time memory requires `Theta(log^2 T)` gaps. XF-013 supplies the scale-matched endpoint carrier: an adjacent-gap `L log L` Lyapunov with raw `Theta(h^2)` size and scale-independent control of the Cauchy driver. XF-015 shows that the corresponding inverse-square bulk coercivity survives finite-amplitude nonlinear deformation whenever the block has a uniform upper gap envelope `g_i<=Mh`; small gaps only strengthen the conductances.
+Fixed-time memory requires `Theta(log^2 T)` gaps. XF-013 supplies the scale-matched endpoint carrier: an adjacent-gap `L log L` Lyapunov with raw `Theta(h^2)` size and scale-independent control of the Cauchy driver. XF-015 shows that the corresponding inverse-square bulk comparison survives finite-amplitude deformation whenever the controlled block has a uniform upper gap envelope `g_i<=Mh`; small gaps do not weaken that comparison.
 
-The live source theorem should therefore control large-gap excursions and the endpoint Orlicz/fractional statistic on `Theta(log^2 T)` windows. A positive must produce height-uniform `M` (or an averaged substitute with the same coercive consequence) from Xi-specific information rather than assume near-lattice perturbation.
+The live source theorem should therefore control large-gap excursions and the endpoint Orlicz/fractional statistic on `Theta(log^2 T)` windows. A positive must produce height-uniform envelope control, or an averaged substitute with the same coercive consequence, from Xi-specific information rather than assume near-lattice perturbation.
 
-## Control the nonlinear boundary flux rather than reproving bulk dissipation
+## Control boundary flux with source information or genuinely non-self-similar localization
 
 **Linked intuitions:** `MI-002-scale-free-gap-dynamics-still-need-an-xi-specific-law` and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
 
-XF-014 proves exact positive-conductance gap diffusion and convex bulk dissipation. XF-015 shows the bulk has the correct Cauchy strength under bounded upper gaps. The only remaining sign-indefinite contribution in a finite block is the interaction with the external zero reservoir.
+XF-016 derives the relevant localized quadratic identity and shows that the sign-indefinite cutoff leakage is itself an inverse-square fractional form. For a fixed-shape self-similar taper, one-dimensional `H^{1/2}` scaling is critical: the useful localized bulk term and the leakage both remain order one as the mesoscopic window grows. Weighted-mean centering does not remove the obstruction, and envelope-only bounds do not turn it into `o(1)`.
 
-The live nonlinear problem is to choose a renormalized/growing window and prove that source-specific zero information makes this boundary flux negligible or sign-controlled at the `h^2` scale. Formal global entropy monotonicity without a convergent sum is not a mechanism.
+The live nonlinear boundary problem must therefore add structure absent from ordinary tapering: a source-specific signed exterior estimate, a non-self-similar multiscale/capacitary cutoff with a proved small boundary budget, an overlapping-window cancellation identity, or a convergent renormalized global entropy. The open adversarial sidecar on XF-014 is not used as accepted evidence until resolved.
 
 ## Match analytic-frontier inputs to mesoscopic width, norm, envelope, and precision before importing them
 
@@ -34,4 +34,4 @@ A fixed finite ordered-gap certificate can improve a simple-zero proportion whil
 
 **Linked intuitions:** `MI-001-collision-safe-coordinates-separate-singularity-from-source-information`, `MI-002-scale-free-gap-dynamics-still-need-an-xi-specific-law`, and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
 
-Any positive must remain uniform across height, a growing number of gaps, algebraic Cauchy tails, finite-amplitude nonlinear conductances, external flux, and collision cascades, then convert an independently controlled Xi statistic into a fixed backward-time interval. A decisive negative would construct source-compatible collective configurations obeying all available mesoscopic constraints while still permitting earlier collision.
+Any positive must remain uniform across height, a growing number of gaps, algebraic Cauchy tails, finite-amplitude bulk geometry, external flux, and collision cascades, then convert an independently controlled Xi statistic into a fixed backward-time interval. A decisive negative would construct source-compatible collective configurations obeying all available mesoscopic constraints while still permitting earlier collision.

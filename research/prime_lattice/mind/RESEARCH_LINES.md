@@ -2,27 +2,29 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Separate source rigidity, readout fidelity, divisor orientation, and zero localization
+## Separate source rigidity, readout fidelity, divisor orientation, native positivity, and zero localization
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-The bare exponent cone and broad scalar readouts remain flexible under Beurling/Helson controls, while PL-136 shows that the full degree-one Selberg analytic package rigidifies the unimodular prime-phase torus to ordinary zeta. PL-139--PL-140 then show that source fidelity depends on the readout: exact coprime power values can recover phase, but real-part/chord power metrics remain blind to independent prime-wise reflection even when all powers are observed.
+The bare exponent cone and broad scalar readouts remain flexible under Beurling/Helson controls, while the full degree-one Selberg analytic package can rigidify a unimodular prime-phase family back to ordinary zeta. Exact coprime power values can recover phase, whereas real-part/chord power metrics remain blind to independent prime-wise reflection. Möbius inverse-small-sum rigidity also acts on the reciprocal divisor orientation, not directly on the zeta-zero divisor.
 
-PL-141 adds a divisor-orientation gate. For Möbius, inverse small-sum rigidity recovers the already known prime phase and tracks zeros of `1/zeta`, whereas nontrivial Riemann zeros are poles of that reciprocal. A decisive RH mechanism must therefore state separately what identifies the source, what the readout retains, which divisor it acts on, and what independent sign/unitary/Hodge theorem localizes that divisor.
+PL-142--PL-144 add a separate positivity gate. The native HLS zeta kernel is not complete Pick already on the two-prime square-free face, while all its positive powers are nevertheless positive definite and its logarithm is an unconditional prime-power-axis compound-Poisson carrier. That native positivity is generic and confined to the Euler-product/evaluation half-plane. After global completion, Suzuki screw positivity, Schoenberg conditional negative type, and Nakamura--Suzuki infinite divisibility collapse to the same RH-equivalent completed structure; for the actual completed zeta function, the scalar sign `Psi(t)>=0` is already equivalent to RH.
+
+A decisive mechanism must therefore state separately what identifies the rational-prime source, what the readout retains, which divisor orientation it acts on, which positivity is merely native/universal, and what independent arithmetic theorem forces the completed zero-sensitive sign or polarization.
 
 ## Demand a source mechanism, not only a stability metric
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-PL-138 shows that power-sensitive prime and prime-power pretentious metrics are established transfer geometries. PL-139--PL-140 show why adding powers does not create a new source theorem: exact powers have a gcd torsion dichotomy, while the metric hierarchy remains reflection-blind after scalarization.
+Power-sensitive prime and prime-power pretentious metrics are established transfer geometries. Exact powers have torsion/identifiability structure, while scalarized metric hierarchies can remain reflection-blind. A surviving metric proposal must explain where the zeta-specific reference state, critical normalization, orientation, or positivity comes from. Reweighting coordinates or accumulating more powers of the same quotient geometry is not by itself an RH mechanism.
 
-A surviving metric proposal must explain where the zeta-specific reference state, critical normalization, orientation, or positivity comes from. Reweighting coordinates or accumulating more powers of the same quotient geometry is not by itself an RH mechanism.
-
-## Target the arithmetic polarization rather than another spectral realization
+## Force the completed arithmetic sign or polarization rather than another positive avatar
 
 **Linked intuitions:** `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-Meyer realizes the zeta divisor spectrally, Suzuki supplies positive zeta-derived Hilbert structure, Grosswald--Schnitzer phase can identify arithmetic generators inside a same-zero family, and PL-136 can select zeta in the degree-one Selberg category. The missing theorem is the arithmetic identification/polarization that makes the zero-sensitive object itself positive or unitary in the way required to exclude off-axis spectrum.
+Meyer realizes the zeta divisor spectrally, Suzuki supplies positive completed zeta Hilbert structure, and the native HLS kernel already has unconditional kernel-power/infinite-divisibility positivity. PL-144 shows that the completed screw, CND, and Lévy formulations do not provide independent targets: for the actual completed zeta function they all sit on top of Suzuki's scalar RH-equivalent condition `Psi(t)>=0`.
+
+The live theorem is therefore upstream and sharper. Either derive the sign of this completed arithmetic balance from exact rational-prime exponent/global-completion structure without importing an equivalent zero-localization or Weil-positivity assumption, or construct a genuinely different arithmetic polarization on the zero-sensitive representation that excludes off-axis spectrum for an independently proved reason.
 
 ## Quantify finite integer phase fingerprints without mistaking them for zero selection
 

@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Close the positive-band periodization extremal gap
+## Prove or break the sharp finite-cluster stability inequality for the universal scalar carrier
 
 **Linked intuitions:** `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`.
 
-The universal affine scalar branch is no longer a free signed support-one problem. ANF-012 forces every continuous compact-band spectral profile to be nonnegative, ANF-013 imposes the duplicated-lattice periodization floor `p(J)`, and ANF-014 ties that floor to the BGSST cost by an exact Mellin identity. The ratio `C(J)/p(J)` has universal floor `1+3/pi^2`, only about `0.0235357` below Montgomery--Taylor.
+ANF-012 forces every continuous compact-band spectral profile to be nonnegative. ANF-013--ANF-015 show that duplicated lattices and their multiplicative packing dual impose strong thermodynamic constraints, but ANF-016 proves those constraints alone still permit a profile below Montgomery--Taylor. ANF-017 then kills that survivor with a finite edge-detuned cluster.
 
-A decisive scalar result should either prove that the remaining finite-configuration constraints close this gap to Montgomery--Taylor, or exhibit a profile below it that satisfies the complete universal counting certificate rather than only the necessary lattice tests.
+ANF-018 identifies the complete finite-real floor with a classical stability constant: `q_real(J)=F(0)-2B_stab(F)`. The scalar problem is now to prove the corresponding sharp binding inequality for every admissible positive-type compact-spectrum potential, or to construct a profile whose **finite-cluster** floor still beats Montgomery--Taylor. More periodization or bulk-lattice optimization is not the decisive test.
 
 ## Use unconditional out-of-band pair information only through a non-scalar or non-affine zero-side carrier
 
@@ -16,7 +16,7 @@ A decisive scalar result should either prove that the remaining finite-configura
 
 The BGSST form factor is nonnegative beyond support one, but ANF-010--ANF-012 show that universal scalar affine certificates cannot exploit that region through a negative spectral tail: the out-of-band continuation is obstructed and the in-band profile is forced nonnegative. A decisive continuation must therefore change the zero-side carrier through matrix/inertia order, a source-specific inequality, a nonlinear configuration functional, or genuine higher-correlation structure.
 
-The test is not whether the analytic tail exists; it is whether the new carrier converts it into horizontal coercivity while surviving conjugate-pair and high-multiplicity controls.
+The test is not whether the analytic tail exists; it is whether the new carrier converts it into horizontal coercivity while surviving conjugate-pair, finite-cluster, and high-multiplicity controls.
 
 ## Change the local information carrier rather than only increasing block size or point order
 

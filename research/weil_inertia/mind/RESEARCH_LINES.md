@@ -8,15 +8,19 @@ This file holds the current mathematical lines of investigation suggested by the
 
 Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Audit the complete represented object before strengthening inequalities on it.
 
-## Prove source coercivity for the normalized odd Schur complement
+## Prove source coercivity for the depth-weighted Schur lower tail
 
-**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction` and `MI-006-source-rigidity-can-eliminate-screening-extremizers`.
+**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction`, `MI-006-source-rigidity-can-eliminate-screening-extremizers`, and `MI-007-depth-weighted-schur-tail-is-screening-invariant`.
 
-The fixed-period branch is quantitatively rigid, but raw conditioning is not the right growing-period target. WI-128 makes subextensive screening force a macroscopic bottom raw-Vandermonde near-null sector; WI-130 shows that close pair centers can produce exactly such raw collapse while the true `g/h` quotient remains transverse, and WI-131 removes the shortcut through duplicated real projections.
+The normalized conjugation-odd quotient remains the preferred theorem surface, but WI-133 rules out its single minimum eigenvalue as a density-scale invariant: endpoint tapering can force `lambda_min(S)->0` on a fixed-depth conjugate lattice while every diagonal odd distance and the total horizontal remainder remain extensive.
 
-WI-132 isolates the orientation-sensitive invariant. After normalizing each odd direction by its horizontal depth, `S=U^*(I-P_V)U` is the grouped Schur-complement Gram matrix and `a=lambda_min(S)` satisfies the exact finite bound `n >= 2N-Q+4aD_2`, with `D_2=sum m_z(Im z)^2`. A decisive positive should derive, from unconditional zeta source constraints, a lower bound on `a` (or an aggregate lower-tail substitute) on configurations carrying macroscopic `D_2`. A decisive negative would build source-admissible growing configurations with macroscopic square depth and `a -> 0`.
+WI-134 gives the correct aggregate replacement. After expanding multiplicities, the exact horizontal charge satisfies a depth--spectrum rearrangement bound and, for every fixed depth cutoff `A` and Schur threshold `a`,
 
-Full Riesz stability of the normalized conjugation-adapted family is sufficient but stronger than necessary. The Schur quotient itself is the preferred theorem surface.
+`H >= a(D_{2,A}-A^2 r_a)_+`,
+
+where `r_a` counts normalized Schur eigenvalues below `a`. Near-sharpness with macroscopic bounded square depth therefore forces a **macroscopic lower spectral sector** toward zero, not merely one soft mode. A decisive positive should use unconditional zeta source information to exclude that depth-matched spectral collapse or to force horizontal-depth collapse toward the line; a decisive negative would build source-admissible configurations realizing it.
+
+Full Riesz stability is sufficient but stronger than necessary. Positive spectral quantiles, depth-weighted trace distribution, or an equivalent source-frame bound are the preferred targets.
 
 ## Move from residual rank to quantitative source coercivity
 
