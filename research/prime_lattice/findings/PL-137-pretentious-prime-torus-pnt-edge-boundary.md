@@ -1,186 +1,182 @@
-# PL-137 — Pretentious distance is the canonical weighted prime-torus metric, but its established rigidity stops at mean-value and PNT-edge scales
+# PL-137 — Pretentious distance is a canonical weighted prime-torus geometry, but quantitative Halász control is bounded-time and stops at mean-value/PNT-edge scales
 
 ## Claim
 
 For a completely multiplicative function `f` with `|f(p)|=1` at every prime, write
 
-`f(p)=exp(i theta_p)`
+`f(p)=exp(i theta_p)`,
 
-and therefore, in prime-exponent coordinates,
+so that in prime-exponent coordinates
 
 `f(n)=exp(i <v(n),theta>)`.
 
-The standard truncated pretentious distance to the vertical character `n^(it)` is exactly
+For fixed `x` and real `t`, the standard prime sum
 
 `D_x(f,n^(it))^2 = sum_(p<=x) (1-Re(f(p)p^(-it)))/p`
 
-`= (1/2) sum_(p<=x) |exp(i theta_p)-exp(i t log p)|^2/p`.
+is exactly
 
-Thus classical pretentious multiplicative-function theory already equips the prime torus with a canonical arithmetic metric: a `1/p`-weighted chordal distance from the phase point `(f(p))_p` to the Kronecker orbit `(p^(it))_p`, whose frequencies are precisely the lattice energy coefficients `log p`.
+`D_x(f,n^(it))^2 = (1/2) sum_(p<=x) |exp(i theta_p)-exp(i t log p)|^2/p`.
 
-This geometry is mathematically substantive rather than decorative. Halász's theorem, in the explicit Granville--Soundararajan formulation, controls the mean value of a bounded multiplicative function through
+Thus pretentious multiplicative-function theory supplies a canonical arithmetic geometry on the finite prime torus: a `1/p`-weighted chordal distance from the phase point `(f(p))_(p<=x)` to the log-prime Kronecker trajectory `(p^(it))_(p<=x)`.
 
-`M(f;x)=min_(t in R) D_x(f,n^(it))^2`
+The quantitative Halász parameter relevant at finite scale is **not** the unrestricted distance to the full trajectory. Granville--Soundararajan use
 
-with principal decay of size `(1+M)e^(-M)`. Modern pretentious metrics also recover the classical Mertens `3-4-1` zero-free-region argument, and a 2026 extension to automorphic `L`-functions replaces the prime-only distance by a prime-power/logarithmic-derivative metric and obtains standard zero-free regions.
+`M(x,T)=min_(|t|<=2T) D_x(f,n^(it))^2`,
 
-However these established metric mechanisms do **not** naturally reach the RH scale. The standard prime-only distance has diameter only logarithmic in `log x`:
+so the correct geometric object is distance to a **bounded-time orbit segment**, with an analytic cutoff/location tradeoff. Their explicit completely-multiplicative corollary gives a main factor of order `(M+O(1))e^(-M)` together with `O(1/T + log log x/log x)`; the preceding Halász--Montgomery--Tenenbaum formulation has the related error `O(T^(-1/2))`.
 
-`D_x(f,n^(it))^2 <= 2 sum_(p<=x) 1/p = 2 log log x + O(1)`.
+This cutoff is load-bearing. Because the finitely many numbers `{log p:p<=x}` are rationally independent over `Q`, Kronecker's theorem makes the unrestricted trajectory dense in the finite prime torus. Hence for every unitary prescribed prime phase vector,
 
-Consequently the distance term in the Halász bound can never itself generate normalized cancellation of order `x^(-1/2+epsilon)`: even at its maximal possible scale it yields only polylogarithmic decay. The prime-power `D_sigma` metrics used for zero-free regions are defined for `sigma>1` and connect to logarithmic derivatives in their honest absolute-convergence half-plane; the metric argument supplies PNT-edge zero repulsion, not a continuation mechanism selecting `Re(s)=1/2`.
+`inf_(t in R) D_x(f,n^(it))^2 = 0`.
+
+The unrestricted full-orbit infimum is therefore geometrically meaningful only as a density statement; it is **not** the nontrivial finite-scale cancellation parameter.
+
+Even after this correction, the established pretentious mechanism does not naturally reach the RH scale. For every cutoff `T`,
+
+`M(x,T) <= 2 sum_(p<=x) 1/p = 2 log log x + O(1)`.
+
+Therefore the exponential distance term alone can provide at best polylogarithmic normalized decay, not the `x^(-1/2+epsilon)` scale associated with an RH-strength Mertens estimate. Prime-power pretentious metrics used for zero-free regions repair the loss of prime-power data but live initially in `sigma>1`, where logarithmic-derivative expansions are absolutely convergent, and support PNT-edge zero repulsion rather than a continuation/localization mechanism for `Re(s)=1/2`.
 
 **Evidence/status:** `LITERATURE+EXACT-DERIVED + PRIOR-ART-REDIRECT + NEGATIVE/OBSTRUCTION`.
 
-No new theorem is claimed. The torus interpretation and diameter bound are elementary consequences of the standard definitions. The durable value is to identify an established arithmetic geometry that matches the line's prime-coordinate/Kronecker language almost exactly, and to record the quantitative boundary preventing the standard distance-only Halász mechanism from being mistaken for an RH-scale mechanism.
+No new theorem is claimed. The torus rewrite, Kronecker-density correction, and diameter bound are elementary consequences of standard definitions and unique factorization. The durable value is to identify an established arithmetic geometry that matches the line's prime-coordinate/log-prime-flow language almost exactly, while recording the two quantitative gates that prevent the standard distance-only mechanism from being mistaken for an RH mechanism: unrestricted finite-truncation density makes the full-orbit infimum zero, whereas the theoremically relevant bounded-time distance has total mass only `O(log log x)`.
 
 ## Exact exponent-lattice interpretation
 
-Let `f` be completely multiplicative and unitary. Unique factorization gives
+Unique factorization gives
 
-`f(n)=product_p f(p)^(v_p(n))`.
+`f(n)=product_p f(p)^(v_p(n)) = exp(i <v(n),theta>)`.
 
-Writing `f(p)=e^(i theta_p)` yields
+The vertical character is
 
-`f(n)=e^(i <v(n),theta>)`.
-
-The vertical multiplicative character is
-
-`n^(it)=e^(it log n)=e^(it <v(n),(log p)_p>)`,
+`n^(it)=exp(it log n)=exp(i t <v(n),(log p)_p>)`,
 
 so its prime coordinates form the Kronecker curve
 
-`gamma(t)=(e^(it log p))_p`.
+`gamma_x(t)=(exp(i t log p))_(p<=x)`.
 
-For two unit complex numbers `z,w`,
+For unit complex numbers `z,w`,
 
 `1-Re(z conjugate(w))=(1/2)|z-w|^2`.
 
-Hence the usual pretentious distance becomes exactly
+Consequently the standard prime sum is literally the weighted squared chordal distance from the prime-phase point to `gamma_x(t)`. The pairing with the exponent lattice is exact: the same prime phases determine the character `f(n)` on every lattice point.
 
-`D_x(f,n^(it))^2`
+This geometry lives on the Pontryagin-dual prime coordinates, rather than directly on the positive cone. It is nevertheless a substantially stronger benchmark than inventing an arbitrary Euclidean metric on exponent vectors: it is the metric already used by multiplicative-number-theory machinery.
 
-`= sum_(p<=x) [1-Re(f(p)p^(-it))]/p`
+## Why the unrestricted orbit distance degenerates at fixed truncation
 
-`= (1/2) sum_(p<=x) |e^(i theta_p)-e^(it log p)|^2/p`.
+Fix `x` and enumerate the primes `p_1,...,p_r<=x`. If
 
-The distance is therefore not an arbitrary metric imposed on exponent vectors. It is the standard number-theoretic metric on prime phases, and its distinguished comparison family is exactly the one-parameter prime-log Kronecker flow emphasized by the `prime_lattice` mandate.
+`q_1 log p_1 + ... + q_r log p_r = 0`
 
-The geometry lives on the dual prime coordinates rather than directly on the positive exponent cone. The pairing with `v(n)` is nevertheless exact: the same coordinate phases that enter the distance determine the character `f(n)=e^(i<v(n),theta>)` on every lattice point.
+with rational `q_j`, clearing denominators and exponentiating gives a multiplicative relation among distinct primes. Unique factorization forces every coefficient to vanish. Hence the frequencies `log p_j` are rationally independent.
 
-## Halász turns this geometry into cancellation
+Kronecker approximation therefore implies that
 
-Granville and Soundararajan summarize Halász's theorem for multiplicative `|f(n)|<=1` by the parameter
+`t -> (exp(i t log p_1),...,exp(i t log p_r))`
 
-`M = min_(y in R) sum_(p<=x) [1-Re(f(p)p^(-iy))]/p`.
+is dense in the finite torus `T^r`. For every unitary completely multiplicative `f`, every `epsilon>0`, and fixed `x`, there is a sufficiently large `|t|` with
 
-Their explicit upper bound for the normalized mean value has the characteristic factor
+`D_x(f,n^(it))^2 < epsilon`.
 
-`(1+M)e^(-M)`.
+Thus
 
-Thus closeness to some vertical character `n^(iy)` is the obstruction to cancellation: a multiplicative function whose prime-phase point lies close to the Kronecker orbit may have a large mean, while large distance forces mean-value decay. This is an established and highly developed mechanism connecting prime-coordinate geometry to global arithmetic cancellation.
+`inf_(t in R) D_x(f,n^(it))^2=0`.
 
-In prime-lattice language, Halász theory therefore already realizes the schematic bridge
+This resolves an apparent paradox in the abstract-level shorthand sometimes used for Halász theory. The asymptotic theorem may discuss whether `f` resembles a fixed vertical character, but a finite prime truncation cannot use an unrestricted orbit minimization as a positive quantitative separation parameter: arbitrarily long times eventually approximate every finite phase vector.
 
-`prime phases -> distance from the log-prime flow -> cancellation of sums over lattice points`.
+## The quantitative Halász geometry is a bounded orbit segment
 
-This is stronger prior art than merely observing equidistribution of the Kronecker flow. It supplies a quantitative geometric functional that controls an arithmetic observable.
+Granville and Soundararajan define, in equation (1.2),
+
+`M(x,T)=min_(|t|<=2T) sum_(p<=x) [1-Re(f(p)p^(-it))]/p`,
+
+for `x>=3` and `T>=1`. The Halász--Montgomery--Tenenbaum estimate quoted immediately afterward is
+
+`|x^(-1) sum_(n<=x) f(n)| << (1+M)e^(-M) + O(T^(-1/2))`.
+
+Their Theorem 1 refines the constants through the associated truncated Euler product, and Corollary 1 gives, for completely multiplicative `f`,
+
+`|x^(-1) sum_(n<=x) f(n)| <= (M+12/7)e^(gamma-M) + O(1/T + log log x/log x)`.
+
+All of these statements use the same bounded-frequency parameter `M(x,T)`. The paper subsequently tracks the location of a minimizing frequency and develops hybrid estimates that penalize large `|t|`; this is exactly the information lost by collapsing the trajectory to its full dense closure.
 
 Primary literature anchor:
 
-- Andrew Granville and K. Soundararajan, “Decay of Mean Values of Multiplicative Functions,” *Canadian Journal of Mathematics* **55**(6) (2003), 1191--1230. DOI: https://doi.org/10.4153/CJM-2003-047-0. The abstract explicitly identifies Halász's minimizing prime sum and the bound `<<(1+M)e^(-M)`.
+- Andrew Granville and K. Soundararajan, “Decay of Mean Values of Multiplicative Functions,” *Canadian Journal of Mathematics* **55**(6) (2003), 1191--1230. DOI: https://doi.org/10.4153/CJM-2003-047-0. Equation (1.2), the Halász--Montgomery--Tenenbaum estimate, Theorem 1, Corollary 1, and the subsequent hybrid bounds make the time cutoff/location dependence explicit.
 
-## Quantitative obstruction to RH-scale cancellation from the standard distance alone
+The corrected lattice interpretation is therefore:
 
-Each summand in the squared distance satisfies
+`prime phases -> distance from a bounded segment of the log-prime flow -> mean-value cancellation, with a cutoff/location error`.
+
+That bridge is classical and quantitative. It is not a distance from the entire Kronecker orbit at fixed prime truncation.
+
+## Quantitative obstruction to RH-scale cancellation from the standard distance term
+
+For every prime and every `f,t`,
 
 `0 <= 1-Re(f(p)p^(-it)) <= 2`.
 
-Therefore for every `f,t`,
+Therefore, uniformly in `T`,
 
-`D_x(f,n^(it))^2 <= 2 sum_(p<=x) 1/p`.
+`M(x,T) <= 2 sum_(p<=x) 1/p = 2 log log x + O(1)`.
 
-Mertens' theorem for the reciprocal-prime sum gives
+This is a diameter bound for every bounded-time orbit-segment problem: restricting the available times can make the minimum nonzero, but cannot increase it beyond the total `1/p` mass.
 
-`sum_(p<=x) 1/p = log log x + O(1)`,
+The principal function `(1+M)e^(-M)` is decreasing for positive `M`. Even at the largest possible order of `M`, it has only polylogarithmic size, roughly
 
-hence
+`(log log x)/(log x)^2`
 
-`M(f;x) <= 2 log log x + O(1)`.
+up to constants and the theorem's auxiliary errors. By contrast, RH-strength Mertens cancellation would require
 
-This is a geometric diameter bound: with the standard `1/p` weights, the squared distance across the entire truncated prime torus grows only like `log log x`.
+`sum_(n<=x) mu(n)=O_epsilon(x^(1/2+epsilon))`,
 
-The function `(1+M)e^(-M)` is decreasing for `M>0`. Even if a particular multiplicative function attains distance of the maximal possible order, the smallest scale that this principal Halász term can reach is therefore only
+or normalized size `O_epsilon(x^(-1/2+epsilon))`. Producing that scale from an exponential term `e^(-M)` alone would require `M` of order `log x`, impossible for the standard `1/p` metric.
 
-`(1+O(log log x)) exp(-2 log log x+O(1))`
+The conclusion is deliberately narrow: **the standard bounded-time Halász distance term by itself cannot certify RH-scale square-root cancellation**. This does not exclude stronger cancellation for special functions, nor does it exclude pretentious inputs as one component of a different argument.
 
-`= (log log x) (log x)^(-2+O(1/log log x))`,
+## Prime-only information loss and prime-power repair
 
-up to constants and the precise theorem's auxiliary terms. This is polylogarithmic normalized decay.
+For general multiplicative functions the standard distance looks only at primes, so it is a pseudometric if prime-power values are allowed to vary independently. Möbius and Liouville give the simplest control:
 
-By contrast, an RH-strength Mertens estimate would require
+`mu(p)=lambda(p)=-1`
 
-`sum_(n<=x) mu(n) = O_epsilon(x^(1/2+epsilon))`,
+for every prime, while
 
-that is, normalized cancellation `O_epsilon(x^(-1/2+epsilon))`. To obtain such a scale from an exponential factor `e^(-M)` alone would require `M` of order `log x`, which the standard prime distance cannot have.
+`mu(p^2)=0`, `lambda(p^2)=1`.
 
-The conclusion is intentionally narrow: **the standard Halász distance term by itself cannot certify RH-scale square-root cancellation**. This does not say that pretentious methods can never participate in an RH argument, nor that special multiplicative functions cannot have much stronger cancellation for reasons invisible to the generic Halász bound.
+The prime-only distance cannot see this difference. For unitary completely multiplicative functions this issue disappears because prime values determine all prime powers; it reappears for Möbius and for logarithmic derivatives, whose arithmetic skeleton occupies every lattice point `k e_p`.
 
-## Prime-only information loss
-
-There is another exact limitation. The standard pretentious distance uses only values at primes. Consequently it is a pseudometric on the class of general multiplicative functions: two functions can have distance zero while differing on prime powers.
-
-The simplest arithmetic control is Möbius versus Liouville. At every prime,
-
-`mu(p)=lambda(p)=-1`,
-
-so their standard prime-only distance is zero, even though
-
-`mu(p^2)=0`, while `lambda(p^2)=1`.
-
-Therefore the standard metric sees the first prime-axis layer `e_p` but not the full axis rays `k e_p`. This does **not** affect the exact character interpretation above for unitary completely multiplicative functions, whose prime values determine all prime powers. It does matter when the target arithmetic function is Möbius or when zero-sensitive logarithmic derivatives naturally live on all prime powers.
-
-This distinction is important for the line because the von Mangoldt skeleton of the explicit formula occupies every point `k e_p`, not just `e_p`.
-
-## Prime-power metrics already repair that loss at the PNT edge
-
-Koukoulopoulos formalized the classical Hadamard--de la Vallée Poussin/Mertens `3-4-1` mechanism using a family of pretentious metrics `D_sigma` for `sigma>1`. A recent paper by Wattanawanichkul makes the prime-power structure explicit and extends the approach to automorphic `L`-functions.
-
-For automorphic representations the modified squared metric is a weighted sum over prime powers of squared differences of logarithmic-derivative coefficients, with weights proportional to
-
-`log N(p) / N(p)^(k sigma)`, `sigma>1`.
-
-It can be rewritten in terms of logarithmic derivatives of Rankin--Selberg `L`-functions. Wattanawanichkul then applies triangle inequalities to prove classical zero-free regions; in the Riemann-zeta specialization the construction recasts Mertens' `3-4-1` inequality. This shows that the metric idea can carry genuine zero-exclusion content and that adding the full prime-power rays is mathematically meaningful.
+Koukoulopoulos formalized classical zero-free-region arguments using pretentious metrics `D_sigma` for `sigma>1`. Wattanawanichkul's 2026 extension to automorphic `L`-functions makes the prime-power/logarithmic-derivative form explicit: the squared metric sums differences of local logarithmic-derivative coefficients over prime powers with weights proportional to `log N(p)/N(p)^(k sigma)`. It can be rewritten using logarithmic derivatives of Rankin--Selberg `L`-functions and yields standard zero-free regions, including the Riemann-zeta `3-4-1` mechanism as a specialization.
 
 Relevant sources:
 
-- Dimitris Koukoulopoulos, *The Distribution of Prime Numbers*, Graduate Studies in Mathematics **203**, American Mathematical Society, 2019. Theorem 8.3 is the metric formulation cited by the modern extension.
-- Nawapan Wattanawanichkul, “A metric approach to zero-free regions for L-functions,” *European Journal of Mathematics* **12** (2026), Article 30, published 6 July 2026. DOI: https://doi.org/10.1007/s40879-026-00913-5. The paper defines the prime-power/logarithmic-derivative metric for `sigma>1`, relates it to `L'/L`, recovers the `3-4-1` argument, and proves zero-free regions for standard and Rankin--Selberg `L`-functions under the stated self-duality hypotheses.
+- Dimitris Koukoulopoulos, *The Distribution of Prime Numbers*, Graduate Studies in Mathematics **203**, American Mathematical Society, 2019.
+- Nawapan Wattanawanichkul, “A metric approach to zero-free regions for L-functions,” *European Journal of Mathematics* **12** (2026), Article 30, published 6 July 2026. DOI: https://doi.org/10.1007/s40879-026-00913-5.
 
-The analytic-domain distinction is load-bearing. The metric sums and the logarithmic-derivative Dirichlet series are formed for `sigma>1`, where the Euler/logarithmic-derivative expansions converge. The resulting contradiction excludes zeros in a region near `Re(s)=1` by combining those inequalities with the meromorphic/analytic structure of the `L`-functions. The metric is not itself an analytically continued Euler product in the critical strip.
+The domain distinction remains load-bearing. These logarithmic-derivative metric sums are set up for `sigma>1`, where the relevant Euler/Dirichlet expansions converge. The analytic continuation of the underlying `L`-functions is separate input used to turn inequalities into zero-free regions. One cannot simply substitute `sigma=1/2` into the prime-power series and call the result a critical-line metric.
 
 ## Adversarial controls
 
-The most dangerous overstatement would be to say that the prime-torus metric “explains the critical line.” It does not. The established theorems demonstrate a different boundary: prime-phase geometry controls generic multiplicative mean values and supports classical zero-free-region repulsion near `Re(s)=1`.
+The most important falsification control is now internal to the torus picture itself. At fixed prime truncation, the full log-prime orbit is dense, so an unrestricted minimum contains no separation information for unitary phases. Any proposed finite-dimensional prime-torus metric must specify the time/frequency window or another compactness/regularization mechanism before interpreting distance from the orbit quantitatively.
 
-The mechanism is also deliberately broad. Pretentious distance applies to large classes of multiplicative functions, and the 2026 prime-power metric extends to broad automorphic `L`-functions. Therefore the mere existence of a metric, triangle inequality, or Kronecker comparison cannot distinguish the Riemann zeta function from matched controls. Any RH-level strengthening would have to use additional exact global structure such as the Riemann functional equation/archimedean factor, a positivity principle, or a zeta-specific trace/model-space coupling.
+The second control is the weight scale. The `1/p` geometry has total mass `~log log x`, explaining why the generic Halász distance term can only produce logarithmic-strength normalized decay. Reweighting the coordinates to manufacture total mass `~log x` is not a mechanism unless the weights arise canonically from a proved arithmetic/spectral identity and survive the line's deformation/generalized-prime controls.
 
-A second control is the weight scale. The `1/p` geometry has total mass only `~log log x`; this is exactly why Halász's generic cancellation mechanism is logarithmic rather than square-root. Changing the weights to force total mass `~log x` would not be a discovery unless the new weights arose canonically from an arithmetic/spectral identity and survived the README's generalized-prime and deformation controls.
+The third control is analytic continuation. Prime-power `D_sigma` methods have real zero-exclusion content near the PNT edge, but start in their honest half-plane of convergence. A proposed critical-line version needs an independent continuation or renormalization theorem plus a reason that the resulting object retains metric/positivity properties.
 
-A third control is analytic continuation. The prime-power `D_sigma` framework is powerful precisely where its weighted sums are absolutely convergent. A proposal that simply substitutes `sigma=1/2` into those Euler/log-derivative sums without a separate continuation or renormalization theorem fails the line's domain gate.
+Finally, pretentious theory is deliberately broad: analogous geometries apply to many multiplicative and automorphic objects. The existence of a metric, triangle inequality, or log-prime orbit therefore does not distinguish ordinary zeta. An RH mechanism needs additional zeta-specific global structure, such as the completed functional equation together with positivity, Hodge structure, or a trace/model-space coupling that constrains the zero divisor.
 
 ## Prior-art and novelty audit
 
-The underlying arithmetic theory is established prior art. Halász's mean-value theorem is classical; Granville--Soundararajan developed the explicit pretentious formulation; Koukoulopoulos turned the metric viewpoint into a systematic prime-number tool; Wattanawanichkul's 2026 work extends the metric/logarithmic-derivative mechanism to automorphic zero-free regions.
+Halász mean-value theory, the Granville--Soundararajan pretentious formulation, Koukoulopoulos's metric methods, Kronecker approximation, and the 2026 automorphic zero-free-region extension are prior art. No priority claim is made for the chordal rewrite or for the bounded-time correction.
 
-The exact expression of `D_x` as a weighted chordal distance from `(f(p))_p` to `(p^(it))_p` is an elementary rewrite of the standard definition. Searches around pretentious multiplicative functions, Halász distance, prime phases, Koukoulopoulos metrics, Mertens `3-4-1`, and metric zero-free regions show that describing this as a new geometric invariant would be inappropriate.
+The useful synthesis for `prime_lattice` is the matched boundary. The canonical prime-coordinate geometry sought by the lattice program already exists and couples the same frequencies `log p` to arithmetic cancellation. But at finite truncation its entire orbit is dense, so quantitative cancellation requires a bounded-frequency window; and once that correct window is imposed, the metric's total mass remains only `O(log log x)`. Its established prime-power variants reach zero-free regions from `sigma>1`, not RH localization.
 
-The useful research-line contribution is instead the boundary synthesis: the canonical prime-coordinate metric sought by the lattice program already exists and already couples the `log p` Kronecker orbit to arithmetic cancellation, but its generic diameter is `O(log log x)` and its established zero-sensitive prime-power variants operate from `sigma>1`. Neither ingredient supplies a natural square-root/critical-line localization mechanism.
+This finding complements `PL-136`. Degree-one global converse rigidity can collapse the ambient unimodular phase torus to the zeta point. Pretentious geometry then quantifies bounded-frequency proximity to vertical characters and controls mean values/PNT-edge phenomena. **The missing RH ingredient is neither phase selection nor a generic prime-phase metric: it is a global mechanism that converts the selected zeta arithmetic into critical-line positivity or square-root cancellation.**
 
 ## Consequence for the research line
 
-This finding removes a broad reinvention target. Future work should not spend cycles constructing an arbitrary Euclidean or chordal metric on prime phases and then asking whether distance from the vertical orbit controls cancellation; pretentious multiplicative-function theory is already the canonical realization of that idea.
+Future work should not construct another arbitrary distance on the prime torus and ask whether distance from the full Kronecker orbit controls cancellation. At finite prime level that full-orbit distance is identically zero on unitary phase points, while classical pretentious theory already provides the correct bounded-time version.
 
-The surviving target is sharper. An RH-relevant metric mechanism would need an additional structure that changes the scale or the meaning of the distance in a way forced by ordinary zeta: for example a critical renormalization with a proved continuation theorem, an archimedean/self-dual completion that couples the prime metric to `s <-> 1-s`, or a positivity/trace identity whose zero-sensitive term cannot be reproduced by generic multiplicative or automorphic controls.
-
-Combined with `PL-136`, the boundary is especially clear: degree-one global converse rigidity can collapse the ambient phase torus to the zeta point, while pretentious geometry can quantify distance from vertical characters and force PNT-edge cancellation. **The missing RH ingredient is neither phase selection nor a generic prime-phase metric; it is a new global mechanism that converts the selected zeta arithmetic into critical-line positivity or square-root cancellation.**
+A surviving metric route would need genuinely new structure: for example a canonical critical renormalization with a proved continuation theorem, an archimedean/self-dual completion coupling the prime metric to `s <-> 1-s`, or a positive trace/formula whose zero-sensitive contribution cannot be reproduced by generic multiplicative or automorphic controls. Any such proposal must preserve the time/frequency localization explicitly rather than hiding it behind unrestricted Kronecker density.
