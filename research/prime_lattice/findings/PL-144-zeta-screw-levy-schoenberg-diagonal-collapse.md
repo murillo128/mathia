@@ -1,0 +1,160 @@
+# PL-144 — Completed zeta Lévy positivity is the Schoenberg image of screw positivity, and its diagonal sign already equals RH
+
+## Claim
+
+The two completed RH-equivalent positivity mechanisms recorded separately in `PL-120` and `PL-143` are not independent. For Suzuki's completed zeta function
+
+`g(t)=-Psi(t)`,
+
+with `g` real, even, continuous, and `g(0)=0`, define `psi=-g=Psi`. Suzuki's screw kernel is
+
+`G_g(t,u)=g(t-u)-g(t)-g(-u)+g(0)`.
+
+Because `g` is real and even,
+
+`G_g(t,u)=psi(t)+psi(u)-psi(t-u)`.
+
+This is exactly the Schoenberg kernel associated with the translation-invariant conditionally negative-definite function `psi`. Hence, with the standard sign convention,
+
+`g is a screw function`
+
+if and only if
+
+`psi=-g is conditionally negative definite`,
+
+if and only if
+
+`exp(r g(t))` is positive definite for every `r>0`.
+
+Since `g(0)=0`, these positive-definite functions are normalized at the origin and therefore are characteristic functions. Equivalently, `exp(g)` is the characteristic function of an infinitely divisible distribution. Thus Suzuki's screw-function RH criterion and Nakamura–Suzuki's infinitely-divisible RH criterion are the same completed positivity structure under the classical Schoenberg/Lévy–Khintchine correspondence.
+
+There is a sharper zeta-specific collapse. Suzuki also proved
+
+`RH <=> Psi(t)>=0 for every real t`,
+
+that is,
+
+`RH <=> g(t)<=0 for every real t`.
+
+But
+
+`G_g(t,t)=-2g(t)=2Psi(t)`.
+
+Therefore, for this particular completed zeta function,
+
+`pointwise diagonal sign <=> RH <=> full screw-kernel positivity <=> conditional negative definiteness of -g <=> infinite divisibility of exp(g)`.
+
+The first equivalence is a special theorem about the completed zeta function, not a general fact about conditionally negative-definite kernels. For a generic even function, nonnegativity of `G_g(t,t)` is far weaker than positive semidefiniteness of every finite screw matrix.
+
+**Evidence/status:** `LITERATURE+EXACT-DERIVED + PRIOR-ART-REDIRECT + NEGATIVE/OBSTRUCTION` against treating completed conditional-negative-definiteness, screw positivity, and infinite divisibility as three independent routes to RH. The substantive redirect is that the surviving target stated in `PL-143` can be reduced further: at the completed-zeta level, proving the scalar sign `Psi(t)>=0` from arithmetic already proves RH and automatically upgrades to all of those stronger positivity avatars.
+
+## Exact screw-to-Schoenberg identification
+
+Krein's screw class used by Suzuki is defined by nonnegative definiteness of
+
+`G_g(t,u)=g(t-u)-g(t)-g(-u)+g(0)`.
+
+For Suzuki's zeta function, `g(-u)=g(u)` and `g(0)=0`. Putting `psi=-g` gives
+
+`G_g(t,u)=psi(t)+psi(u)-psi(t-u)`.
+
+For a translation-invariant Hermitian function `psi` with `psi(0)=0`, this kernel is positive semidefinite exactly when `psi` is conditionally negative definite. One direction can be seen directly: if `sum_j c_j=0`, then
+
+`sum_(j,k) c_j conj(c_k) psi(t_j-t_k)
+ = - sum_(j,k) c_j conj(c_k) G_g(t_j,t_k) <= 0`.
+
+Conversely, conditional negative definiteness of `psi` implies positivity of the anchored kernel `psi(t)+psi(u)-psi(t-u)` by the standard base-point construction. This is the classical equivalence between negative-type functions and Hilbertian increment kernels.
+
+Schoenberg's theorem then gives
+
+`psi conditionally negative definite <=> exp(-r psi) positive definite for every r>0`.
+
+Since `-r psi=r g`, the right-hand side is precisely `exp(r g)`. Because `g` is continuous, real, and normalized by `g(0)=0`, Bochner's theorem turns each `exp(rg)` into a probability characteristic function. Conversely, if `exp(g)` is infinitely divisible, its nonvanishing normalized real logarithm is a Lévy–Khintchine exponent, so `-g` is conditionally negative definite. Thus no extra probabilistic degree of freedom is introduced by passing from the screw kernel to infinite divisibility.
+
+This identification is entirely functional-analytic and does not use the Euler product or any formal continuation of it.
+
+## The zero-side Lévy covariance is the same screw Gram kernel
+
+Under RH, Suzuki obtains the zero-frequency expansion
+
+`G_g(t,u)=sum_gamma ((exp(i gamma t)-1)(exp(-i gamma u)-1))/gamma^2`,
+
+where the ordinates `gamma` of the zeros of `xi(1/2-i z)` are real and counted with multiplicity. Nakamura–Suzuki obtain for the same completed exponent an infinitely-divisible representation whose Lévy measure is supported at those zero ordinates, with weights proportional to `m_gamma/gamma^2`.
+
+These are not two unrelated zero-side representations. If a Lévy exponent is written as
+
+`g(t)=int (exp(i t lambda)-1) nu(dlambda)`
+
+in the present symmetric finite-measure situation, then its anchored increment kernel is
+
+`g(t-u)-g(t)-g(-u)+g(0)
+ = int (exp(i lambda t)-1)(exp(-i lambda u)-1) nu(dlambda)`.
+
+Substituting the zero-supported Lévy measure gives Suzuki's Hilbert-space Gram formula. The screw kernel is therefore the covariance/increment kernel generated by the same Lévy spectral measure; the probabilistic and screw pictures are related by the standard Schoenberg transform rather than by an additional arithmetic mechanism.
+
+This also sharpens the comparison with `PL-124`: an exact prime-power-to-zero-frequency explicit-formula duality can be represented as a trace, a screw Gram kernel, or a Lévy measure, but changing the functional-analytic avatar does not itself add the missing RH rigidity.
+
+## Zeta-specific diagonal collapse
+
+For every even `g` with `g(0)=0`, screw positivity implies the scalar inequalities
+
+`0 <= G_g(t,t) = -2g(t)`.
+
+The converse is false in general: positive diagonal entries do not make a kernel positive semidefinite, and pointwise nonnegativity of a function does not imply conditional negative definiteness.
+
+Suzuki's Theorem 1.7 is therefore substantially stronger than this trivial diagonal implication. For his explicit completed zeta function `Psi=-g`, he proves
+
+`RH <=> Psi(t)>=0 for every t in R`,
+
+and under RH `Psi(t)>0` for `t!=0`. His Theorem 1.2 independently gives
+
+`RH <=> g is a screw function on R`.
+
+Combining these prior-art theorems with the exact Schoenberg identification above yields the special chain
+
+`Psi>=0 pointwise <=> RH <=> G_g PSD <=> -g CND <=> exp(g) infinitely divisible`.
+
+The sufficiency of the first scalar condition is zeta-specific. It uses Suzuki's Fourier/Laplace relation with `xi'/xi` and the completed analytic structure; it is not a consequence of a generic diagonal-to-matrix positivity principle. This distinction is essential for falsification: any proposed prime-lattice argument that silently upgrades `Psi>=0` to conditional negative definiteness without using zeta-specific structure is invalid.
+
+## Consequence for the prime-lattice program
+
+`PL-143` separated two regimes correctly. In the native Bohr/HLS half-plane, Euler-product logarithms give unconditional compound-Poisson and kernel-power positivity supported on the prime-power rays `r e_p`; that mechanism is generic and remains confined to absolute convergence. After global completion and explicit-formula dualization, the zero-sensitive object `g` appears, and its positivity is RH-equivalent.
+
+The present finding removes a remaining apparent choice of target inside the completed regime. It is unnecessary to search separately for an arithmetic proof of a full Lévy measure, for all powers `exp(rg)` to be positive definite, or for every finite screw matrix to be positive semidefinite. Any such proof would already contain enough information to force the much simpler scalar statement
+
+`Psi(t)>=0 for all real t`,
+
+and Suzuki proves that this scalar statement itself is equivalent to RH. Conversely, once that scalar sign is established for the actual completed zeta `Psi`, RH supplies the full screw/CND/Lévy structure.
+
+Thus the minimal surviving question for `prime_lattice` is sharper:
+
+**Can exact rational-prime exponent geometry force the pointwise sign of Suzuki's completed arithmetic function `Psi(t)` without importing an equivalent zero-localization, Weil-positivity, or screw/Lévy assumption?**
+
+The arithmetic part of `Psi(t)` is a weighted finite von-Mangoldt sum and therefore still lives on the prime-power rays `v(p^r)=r e_p`, with the energy threshold `r log p<=t`, while the archimedean and pole terms encode global completion. A genuinely new lattice mechanism must explain the sign of this completed scalar balance, or introduce irreducible mixed-prime information that forces it. Repackaging the same balance as a CND kernel or infinitely-divisible law is prior art.
+
+## Prior art and novelty audit
+
+Primary sources and controls:
+
+- **Masatoshi Suzuki**, “Aspects of the screw function corresponding to the Riemann zeta-function,” *Journal of the London Mathematical Society* **108** (2023), 1448–1487, DOI `10.1112/jlms.12785`. Theorem 1.2 proves `RH <=> g=-Psi` is a screw function. Equation (1.4) is the screw kernel. Equation (1.9) gives its zero-frequency Gram representation under RH. Theorem 1.7 proves `RH <=> Psi(t)>=0` pointwise on `R`.
+- **Takashi Nakamura, Masatoshi Suzuki**, “On infinitely divisible distributions related to the Riemann hypothesis,” *Statistics & Probability Letters* **201** (2023), 109889, DOI `10.1016/j.spl.2023.109889`, arXiv:`2306.08317`. Their main theorem proves that `exp(g_zeta)` is the characteristic function of an infinitely divisible distribution exactly when RH holds and identifies the zero-supported Lévy representation under RH.
+- **Schoenberg's theorem / Lévy–Khintchine correspondence** is classical: a normalized continuous negative-definite function `psi` is characterized by positive definiteness of `exp(-r psi)` for all `r>0`; these exponentials form the characteristic-function semigroup of an infinitely divisible law. The anchored kernel `psi(t)+psi(u)-psi(t-u)` is the corresponding positive increment kernel.
+- **Masatoshi Suzuki**, “Screw functions of Dirichlet series in the extended Selberg class,” arXiv:`2209.12832` (published in *International Journal of Number Theory*, 2025), and **Takashi Nakamura, Masatoshi Suzuki**, “A probabilistic interpretation for central zeros of L-functions in the Selberg class,” arXiv:`2307.02027`, extend the screw/probabilistic architecture beyond the Riemann zeta function. This is a control against claiming the completed positivity formalism itself as rational-prime-specific geometry.
+
+A fresh targeted literature search for combinations of “screw function,” “infinitely divisible,” “Schoenberg,” and the zeta/RH function found the component theorems above but no need to claim a new theorem: the screw-to-CND-to-infinitely-divisible step is classical once Suzuki's kernel is written in Schoenberg form. Recent 2026 work on Suzuki's pointwise criterion also treats `Psi>=0` itself as the operative RH-equivalent target, reinforcing that the scalar sign criterion is active prior art rather than a new condition.
+
+The durable contribution here is therefore a **cross-reduction and research redirect**, not theorem novelty: the repository had treated `PL-120` screw positivity and `PL-143` completed Lévy positivity as neighboring but distinct mechanisms, and `PL-143` left direct CND/Lévy positivity as a surviving escape. They collapse to the same Schoenberg structure, while Suzuki's separate pointwise-sign theorem shows that even the full matrix/CND demand is stronger than necessary as a target for the actual zeta function.
+
+## Boundaries and falsification
+
+1. **No RH proof is claimed.** The pointwise sign `Psi>=0` is itself equivalent to RH. The finding only identifies the minimal completed target and removes redundant positivity reformulations.
+
+2. **Diagonal sign does not imply CND generically.** The equivalence between pointwise sign and full screw positivity holds here only through the two zeta-specific RH equivalences proved by Suzuki. Any attempt to universalize it is false.
+
+3. **No Euler product is continued into the strip.** Suzuki's `Psi` is defined with finite von-Mangoldt sums plus completion terms, and its zero-side identities use the completed `xi` function and Fourier/Laplace/Hadamard machinery. Native Euler-product identities remain restricted to their convergence region as in `PL-143`.
+
+4. **The Schoenberg transform adds no rational-prime rigidity.** It applies to arbitrary continuous negative-type functions. Selberg-class extensions provide a strong matched control. Any new `prime_lattice` result must enter before this universal transform, at the arithmetic sign-forcing step.
+
+5. **The full exponent lattice remains mostly absent from the completed scalar criterion.** The von-Mangoldt term is supported only on prime-power axes. A claim that mixed exponent vectors are essential must produce a precise mechanism connecting them to the sign of `Psi`; otherwise it is geometric decoration rather than evidence.
+
+6. **The correct redirect is minimal, not fatal.** The line should not spend further effort constructing new screw/CND/Lévy avatars of the same completed function. It should attack the zeta-specific scalar balance, or find an additional exact rational-prime law that forces that balance without assuming an RH-equivalent positivity condition.
