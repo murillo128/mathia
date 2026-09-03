@@ -153,3 +153,15 @@ Role: primary source for `MC-025`–`MC-029`. Theorem 1 gives the finite Möbius
 Patrick Letendre, *Truncated convolution of the Möbius function and multiplicative energy of an integer n*, Acta Arithmetica 195 (2020), 83–95. DOI: https://doi.org/10.4064/aa190515-18-10. arXiv: https://arxiv.org/abs/1903.05629.
 
 Role: adjacent prior-art boundary for `MC-033`. Letendre studies the one-sided truncated divisor sum `M(n,z)=sum_{d|n,d<=z} mu(d)` and moments tied to divisor multiplicative energy. `MC-033` distinguishes that established object from the paired Huxley–Watt cutoff coefficient `c_N(q)=sum_{mn=q,m,n<=N} mu(m)mu(n)`, whose complementary-factor product is sign-coherent on each cube-free product fiber. Letendre's cancellation estimates therefore cannot be transferred to the paired coefficient without an additional argument.
+
+## MC-S26 — Tao, logarithmically averaged two-point Elliott theorem
+
+Terence Tao, *The logarithmically averaged Chowla and Elliott conjectures for two-point correlations*, Forum of Mathematics, Pi 4 (2016), e8, 1–36. DOI: https://doi.org/10.1017/fmp.2016.6. arXiv: https://arxiv.org/abs/1509.05422.
+
+Role: primary correlation theorem for `MC-039`. Theorem 1.3 and Corollary 1.5 give the corrected logarithmically averaged two-point Elliott estimate for `1`-bounded multiplicative functions when one factor satisfies uniform strong nonpretentiousness against bounded-conductor Dirichlet-character/Archimedean twists. In particular, for every `omega(x)->infinity` the correlation over `x/omega(x)<n<=x` is `o(log omega(x))`. Tao explicitly distinguishes this corrected uniform condition from the weaker fixed-twist nonpretentiousness condition and notes that the latter is insufficient.
+
+## MC-S27 — Charamaras, Mountakis and Tsinas, finite generation implies strong aperiodicity
+
+Dimitrios Charamaras, Andreas Mountakis and Konstantinos Tsinas, *On multiplicative recurrence along linear patterns*, Journal of the London Mathematical Society 112 (2025), no. 3, e70292. DOI: https://doi.org/10.1112/jlms.70292.
+
+Role: strong-aperiodicity transfer used in `MC-039`. Definition 2.4 calls a multiplicative function finitely generated when its set of prime values is finite, and Proposition 2.5 proves that a nonpretentious finitely generated completely multiplicative unit-circle function is strongly aperiodic. `MC-039` applies this theorem to the completely multiplicative prime-sign lift `sigma_q`; the square-free-supported comparator `a_q=mu^2 sigma_q` has the same prime values and therefore satisfies the same corrected prime-distance hypothesis required by Tao's `MC-S26`.
