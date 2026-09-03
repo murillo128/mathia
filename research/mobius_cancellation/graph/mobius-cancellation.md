@@ -44,12 +44,14 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/mobius_cancellation/findings/MC-027-analytic-scale-doubling-iteration-threshold|MC-027]]
 - [[research/mobius_cancellation/findings/MC-028-huxley-watt-cutoff-defect-mobius-reflection|MC-028]]
 - [[research/mobius_cancellation/findings/MC-029-general-huxley-watt-product-collapse-reflection|MC-029]]
-- [[research/mobius_cancellation/findings/MC-030-huxley-watt-truncation-resolution-budget|MC-030]]
+- [[research/mobius_cancellation/findings/MC-031-huxley-watt-epsilon-dependent-truncation-budget|MC-031]]
+- [[research/mobius_cancellation/findings/MC-032-fourier-cutoff-annulus-localization|MC-032]]
+- [[research/mobius_cancellation/findings/MC-033-annular-product-fiber-sign-coherence|MC-033]]
 <!-- structural-membership:end -->
 
 ## Current source frontier
 
-MC-022--MC-029 close the most direct continuations of the harmonic endpoint route. Subtracting the Watt boundary term leaves a doubled-scale weighted Mertens mode with an RH-scale critical burden; finite analytic jets do not close the hierarchy; and higher-degree product collapse, reflection and iteration remain exponent-neutral without genuinely new signed information. MC-030 remains structurally present because it is canonical, but is deliberately not used as settled semantic support while its adversarial sidecar is open.
+The withdrawn `MC-030` no longer appears in the current graph. Its corrected continuation is represented by MC-031--MC-033, which keep the Huxley–Watt truncation and annular sign-coherence frontier attached to the line without using historical or review-only state as current evidence.
 
 - [[research/mobius_cancellation/mind/RESEARCH_LINES|Möbius Cancellation synthesis]]
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget|MI-001 — local cancellation needs a polynomial information budget]]
