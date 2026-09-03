@@ -84,12 +84,13 @@ Then the weak-star continuous witnesses that annihilate every linearly extendabl
 \boxed{
 \Phi_u|_{\operatorname{ran}R_{F,Y^*}}=0
 \iff
-u:=u\in\ker(j\widehat\otimes_\pi I_Y).
+u\in\ker(j\widehat\otimes_\pi I_Y),
+\quad\text{where }\nu=u.
 }
 \tag{10}
 \]
 
-Equivalently, the canonical predual-normal witness space is
+Equivalently, identifying `u` with its evaluation functional, the canonical predual-normal witness space is
 
 \[
 \boxed{
