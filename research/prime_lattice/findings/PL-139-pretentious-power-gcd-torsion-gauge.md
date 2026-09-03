@@ -32,11 +32,19 @@ choose integers `u,v` with
 
 `u a + v b = d = gcd(a,b)`.
 
-Because `f` is unitary, negative powers are conjugates. Repeated use of the product triangle inequality therefore gives
+Write `u_+=max(u,0)`, `u_-=-min(u,0)` and similarly for `v`. Since `f` is unitary, negative powers of `f` are complex conjugates, so
 
-`D(f^d, (chi_1 n^(it_1))^u (chi_2 n^(it_2))^v) < infinity`.
+`f^d = (f^a)^(u_+) conjugate(f^a)^(u_-) (f^b)^(v_+) conjugate(f^b)^(v_-)`.
 
-This is the unitary specialization of Lemma 2.8 in:
+Accordingly use the twisted-character comparator
+
+`G = chi_1^(u_+) conjugate(chi_1)^(u_-) chi_2^(v_+) conjugate(chi_2)^(v_-) n^(i(u t_1+v t_2))`.
+
+Repeated use of the product triangle inequality gives
+
+`D(f^d,G) <= |u| D(f^a,chi_1 n^(it_1)) + |v| D(f^b,chi_2 n^(it_2)) < infinity`.
+
+This formulation deliberately uses conjugate characters rather than reciprocal character values, since Dirichlet characters vanish at ramified primes. It is the unitary specialization of Lemma 2.8 in:
 
 - Dimitrios Charamaras, Andreas Mountakis, Konstantinos Tsinas, “On multiplicative recurrence along linear patterns,” *Journal of the London Mathematical Society* **112**(3) (2025), e70292. DOI: https://doi.org/10.1112/jlms.70292. arXiv: https://arxiv.org/abs/2412.03504.
 
@@ -44,9 +52,13 @@ Their Corollary 2.9 records the resulting classification: if one positive power 
 
 For a finite family `K`, the same Bezout argument gives the quantitative finite-distance implication
 
-`D(f^d,G) <= sum_j |a_j| D(f^(k_j), g_j)`
+`D(f^d,G) <= sum_j |a_j| D(f^(k_j), chi_j n^(it_j))`
 
-whenever `sum_j a_j k_j=d`, each `g_j` is a twisted Dirichlet character comparator, and `G=product_j g_j^(a_j)`. In particular, if `d=1`, simultaneous finite pretentious distances for the chosen powers already put the original `f` in the ordinary pretentious class.
+whenever `sum_j a_j k_j=d` and each `f^(k_j)` is compared with `chi_j n^(it_j)`. With `a_j^+=max(a_j,0)` and `a_j^-=-min(a_j,0)`, the comparator is
+
+`G = (product_j chi_j^(a_j^+) conjugate(chi_j)^(a_j^-)) n^(i sum_j a_j t_j)`.
+
+In particular, if `d=1`, simultaneous finite pretentious distances for the chosen powers already put the original `f` in the ordinary pretentious class.
 
 ## Exact prime-torus kernel
 
