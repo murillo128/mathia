@@ -165,3 +165,9 @@ Role: primary correlation theorem for `MC-039`. Theorem 1.3 and Corollary 1.5 gi
 Dimitrios Charamaras, Andreas Mountakis and Konstantinos Tsinas, *On multiplicative recurrence along linear patterns*, Journal of the London Mathematical Society 112 (2025), no. 3, e70292. DOI: https://doi.org/10.1112/jlms.70292.
 
 Role: strong-aperiodicity transfer used in `MC-039`. Definition 2.4 calls a multiplicative function finitely generated when its set of prime values is finite, and Proposition 2.5 proves that a nonpretentious finitely generated completely multiplicative unit-circle function is strongly aperiodic. `MC-039` applies this theorem to the completely multiplicative prime-sign lift `sigma_q`; the square-free-supported comparator `a_q=mu^2 sigma_q` has the same prime values and therefore satisfies the same corrected prime-distance hypothesis required by Tao's `MC-S26`.
+
+## MC-S28 — Tao and Teräväinen, structure of logarithmically averaged correlations
+
+Terence Tao and Joni Teräväinen, *The structure of logarithmically averaged correlations of multiplicative functions, with applications to the Chowla and Elliott conjectures*, Duke Mathematical Journal 168 (2019), no. 11, 1977–2027. DOI: https://doi.org/10.1215/00127094-2019-0002. arXiv: https://arxiv.org/abs/1708.02610.
+
+Role: primary higher-correlation theorem for `MC-040`. Corollary 1.6 states that logarithmically averaged correlations of fixed shifts of `1`-bounded multiplicative functions vanish when the pointwise product of the coefficient functions does not weakly pretend to any Dirichlet character; weak pretence is measured at prime-harmonic scale `o(log log x)`. The paper derives the odd-number-of-factors cases of logarithmically averaged Chowla as a special case. `MC-040` applies this product criterion to the explicit square-free-supported comparator family already constructed in `MC-005` and audited in `MC-039`.
