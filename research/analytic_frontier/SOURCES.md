@@ -27,6 +27,10 @@ This file records durable literature dependencies for `research/analytic_frontie
 - Andrés Chirre, Felipe Gonçalves and David de Laat, **Pair correlation estimates for the zeros of the zeta function via semidefinite programming**, *Advances in Mathematics* 361 (2020), 106926. Role: RH-conditional enlargement from compact Fourier support to a Cohn--Elkies/semidefinite sign class, yielding the `1.3208` multiplicity constant and `0.6792` simple-zero proportion; closest established comparison for a possible richer unconditional quadratic certificate beyond the Montgomery--Taylor class.
 - [`research/prior_art/montgomery-pair-correlation.md`](../prior_art/montgomery-pair-correlation.md). Role: retained anchor separating proved restricted pair-correlation information from conjectural full correlation and random-matrix extrapolation.
 
+## Positive-definite Fourier--Laplace structure
+
+- Jorge Buescu, A. C. Paixão and A. Symeonides, **Complex Positive Definite Functions on Strips**, *Complex Analysis and Operator Theory* 11:3 (2017), 627–649, DOI `10.1007/s11785-015-0527-y`. Role: classical characterization of holomorphic positive-definite strip functions as Fourier--Laplace transforms of positive exponentially finite measures, unifying the Bochner and Widder sections; prior-art boundary for `ANF-012`, which derives the needed spectral positivity from universal affine conjugation-invariant counting rather than assuming positive definiteness.
+
 ## Translation-invariant vector kernels
 
 - C. Carmeli, E. De Vito, A. Toigo and V. Umanità, **Vector valued reproducing kernel Hilbert spaces and universality**, *Analysis and Applications* 8 (2010), 19–61, DOI `10.1142/S0219530510001503`. Role: classical feature-map and operator-valued Bochner description of translation-invariant vector-valued kernels; prior-art boundary for `ANF-003`, clarifying that common-translation vectorization followed by scalar Gram compression is redundant while genuinely operator-valued spectral data can remain richer.
