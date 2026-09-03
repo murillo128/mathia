@@ -17,46 +17,49 @@ based_on:
   - research/visual_exploration/findings/VIS-014-circular-zero-entry-logmeans-radial-only.md
   - research/visual_exploration/visualizations/angular-zero-entry-poisson-jensen.md
   - research/visual_exploration/findings/VIS-015-nonzero-shell-modes-poisson-jensen-zero-sources.md
+  - research/visual_exploration/findings/VIS-016-phase-modulus-boundary-uniqueness.md
+  - research/visual_exploration/visualizations/overlap-cover-phase-gluing.md
+  - research/visual_exploration/findings/VIS-017-overlap-connectivity-collapses-local-phase-freedom.md
 ---
 
 # Does the critical-strip geometry of zeta contain a nontrivial multiscale or fractal signature?
 
 ## Observation
 
-The visual-exploration mandate permits fractal, multiscale, complex-plane, phase, zero, and spectral representations, but the most obvious local and nested-scale structures have collapsed to exact analytic baselines.
+The visual-exploration mandate permits fractal, multiscale, complex-plane, phase, zero, and spectral representations, but the most obvious local, nested-scale, and overlapping-disk structures have collapsed to exact analytic baselines.
 
 `VIS-008` proves that after translation and leading-Taylor normalization, arbitrarily deep zoom around an isolated analytic zero converges to the universal multiplicity monomial. `VIS-011` gives the complete finite-radius reflection parity at a reflection-fixed zero. `VIS-012` identifies fixed finite log-residual jets of order at least two with reciprocal-power moments of the remaining zero configuration.
 
-`VIS-013` then shows that zero-free concentric `log|H_rho|` shells are exactly related by Poisson continuation. `VIS-014` extends the reduction through zero entry for the circular mean: Jensen's formula makes the whole radial-mean profile equivalent to the centered zero-distance multiset.
+`VIS-013` through `VIS-015` classify complete concentric circular `log|F|` data as zero sources plus harmonic boundary data. `VIS-016` closes phase on one regular disk: the complete interior zero multiset plus one full boundary modulus determines the holomorphic field up to a single global phase.
 
-`VIS-015` closes the remaining nonzero-angular concentric-shell escape. For Fourier mode `n>=1`, each entered zero contributes an explicit exponential cusp in log radius whose complex source weight is the `n`th angular moment of the zero measure on that entry circle. Applying the radial operator `(d^2/dt^2-n^2)` extracts those zero sources exactly. Once they are subtracted, the remainder is harmonic and therefore Poisson-determined by one boundary shell. Thus the complete concentric circular `log|H_rho|` field carries only angularly resolved zero-configuration data plus harmonic boundary data.
+`VIS-017` now closes the easiest multi-center phase escape. For a family of overlapping regular disks, local zero-set plus boundary-modulus reconstructions glue with exactly one unimodular constant per connected component of the overlap graph. A connected disk atlas therefore has only one global phase; comparing phase alignment or domain coloring across overlapping centers does not create an independent relational channel.
 
 ## Research question
 
-After quotienting the universal local zero normal form, reflection parity, finite zero moments, and the full Poisson-Jensen source-plus-boundary decomposition of concentric `log|H_rho|` shells, is there a **mesoscopic finite-radius geometry that is not merely another encoding of the local zero configuration or harmonic continuation**?
+After quotienting the universal local zero normal form, reflection parity, finite zero moments, the full Poisson-Jensen source-plus-boundary decomposition, phase/modulus conjugacy, and overlap-phase gluing, is there a **mesoscopic geometry carrying information not already contained in the zero configuration plus regular holomorphic continuation data**?
 
-A surviving candidate must now live outside the exhausted concentric log-modulus channel. Plausible targets include a nonclassical statistic of the zero configuration tested against matched zero processes, a relation coupling several centers that is not reconstructible from their separate local zero measures, or another intrinsic field/observable whose scale behavior is not equivalent to Poisson-Jensen zero sources plus boundary data.
+The live targets are now substantially narrower. Plausible candidates are a source-sensitive statistic of the zero configuration tested against matched point processes; an incomplete or sparse measurement coupling whose missing information is quantifiable; a relation between genuinely separated regions that requires an explicit nonlocal bridge; or another observable not reconstructible from the regular holomorphic field itself.
 
 ## Why it may matter
 
-This narrows the original fractal/multiscale intuition substantially. Rich nested texture in `log|xi|` can arise from completely classical mechanisms: local analytic normal form, reflection symmetry, reciprocal zero moments, harmonic continuation, and the Green/logarithmic potentials of zeros entering the domain.
+This sequence of negative controls turns the original fractal/multiscale intuition into a precise information-accounting question. Rich texture can be generated by local analytic normal form, reflection symmetry, reciprocal zero moments, Green/Poisson propagation, zero entry, harmonic conjugacy, and ordinary analytic gluing.
 
-A surviving invariant would therefore have to identify structure in the **relations among zero configurations, centers, or observables**, not merely in the appearance of circular shells. That is a much sharper target and gives matched point-process controls a direct role. A clean failure would be useful evidence that this visual route is exhausted by classical complex analysis plus standard zero statistics.
+A surviving visual invariant therefore has to live in **source-specific organization of the zero data or in information deliberately absent from the regular local field**, not in another rendering of that field. This gives matched zero-process controls and incomplete-measurement constructions a direct role.
 
 ## Decisive test
 
-Do not continue searching for independent scale information in concentric circular `log|H_rho|` shells: `VIS-013` through `VIS-015` classify that channel as harmonic boundary data plus the angularly resolved zero measure.
+Do not continue searching for independent information in complete concentric `log|F|` shells, local phase/domain coloring, or phase relations among overlapping disks: `VIS-013` through `VIS-017` classify those channels.
 
-Choose one genuinely different candidate observable. State exactly what information it retains that the Poisson-Jensen decomposition does not. If the candidate is a statistic of the zero configuration, compare it against synthetic or random-matrix-style zero processes matched for the relevant local density, reflection symmetry, gap distribution, pair correlation, and any lower-order zero moments already known to determine it. If the candidate couples several centers, test whether it is reconstructible from the union of the underlying zero coordinates or from standard correlations before interpreting visual coherence as new geometry.
+Choose one genuinely different observable and state exactly what data it retains beyond the complete zero configuration plus regular holomorphic continuation. If it is a statistic of zeros, compare against controls matched for local density, reflection symmetry, gap distribution, pair correlation, and lower-order zero moments relevant to the candidate. If it links separated regions, identify the bridge observable explicitly and test whether it is reducible to the union of zero coordinates or to ordinary analytic continuation through supplied intermediate data.
 
-Keep the direction only if the statistic is stable under reasonable representation changes, survives the appropriate analytic quotient, and separates the zeta data from matched controls in a statement that can be expressed without the image. Kill it if it reduces to Poisson-Jensen/Green-potential bookkeeping, ordinary zero coordinates, known gap/crowding statistics, standard point-process correlations, or rendering choices.
+Keep the direction only if the statistic is stable under reasonable representation changes, survives the analytic quotient, and separates zeta from matched controls in a statement independent of the image. Kill it if it reduces to Poisson-Jensen bookkeeping, phase retrieval, overlap gluing, ordinary zero coordinates, known gap/crowding statistics, standard point-process correlations, or rendering choices.
 
 ## Evidence boundary
 
-`VIS-008`, `VIS-011`, `VIS-012`, `VIS-013`, `VIS-014`, and `VIS-015` are exact negative controls and analytic reductions. They do not establish a mesoscopic fractal dimension, a new zero statistic, an RH criterion, or a distinction between zeta zeros and matched analytic or point-process controls.
+`VIS-008`, `VIS-011`–`VIS-017` are exact analytic reductions or negative controls. They do not establish a mesoscopic fractal dimension, a new zero statistic, an RH criterion, or a distinction between zeta zeros and matched point-process controls.
 
-The retained visualizations illustrate the baselines and their information loss; they are not evidence for a surviving multiscale mechanism. Any future visual statistic remains exploratory until it is stated independently of the rendering and survives the corresponding analytic and zero-statistical controls.
+`VIS-017` is informationally local: disconnected measurement islands may still be related by a globally entire function, but their local zero-set and boundary-modulus data do not by themselves encode the missing connecting phase. Any proposed separated-region bridge remains exploratory until that extra information is defined and shown to be source-sensitive.
 
 ## Research disposition
 
-Accepted in further narrowed form. **Concentric circular `log|H_rho|` multiscale geometry is closed as an independent channel by `VIS-013`–`VIS-015`.** The live question is now whether a genuinely different observable, a nonclassical zero-configuration statistic, or a cross-center relation contains structure not reconstructible from classical complex analysis plus standard zero data. Changing only the domain shape or visual representation is not enough.
+Accepted in further narrowed form. **Complete regular holomorphic disk data are now closed both within one center and across connected overlapping covers.** The live question is whether zeta's zero configuration has a source-sensitive higher-order organization that survives matched controls, or whether an explicitly incomplete/separated measurement geometry exposes a nontrivial bridge not already forced by classical complex analysis.
