@@ -84,7 +84,7 @@ Visualization: [[research/visual_exploration/visualizations/grosswald-schnitzer-
 
 The retained log-log view plots `h(p)` for primes `11<=p<=100000` together with the `PL-127` asymptotic. It was motivated by a visual question: whether prime sampling introduced local dips into the cutoff threshold or whether the thresholds lay on a single monotone envelope. The picture strongly suggested the latter, and the calculus argument above removes dependence on the picture.
 
-As a renderer/formula audit, exact floating-point evaluations were checked at every prime through `200000`; the sampled sequence was strictly decreasing. Representative values are
+As a formula audit, `h(p)` was additionally evaluated at every prime through `200000`; the sampled sequence was strictly decreasing. Representative values are
 
 - `h(101) ~= 1.69865528e-3`;
 - `h(1009) ~= 8.27619606e-5`;
@@ -93,7 +93,7 @@ As a renderer/formula audit, exact floating-point evaluations were checked at ev
 
 The asymptotic curve approaches the exact profile smoothly. These numerical checks are not evidence for the theorem; the sign of `g''` is decisive.
 
-The committed PNG is palette-quantized only after rendering and was fully decoded with Pillow `Image.verify()`, then reopened and loaded before publication.
+The committed PNG is a compact monochrome rendering of the same prime samples, with exact and asymptotic curves separated by solid/dashed strokes. No color encodes mathematics. The exact published PNG bytes were fully decoded with Pillow `Image.verify()`, then reopened and loaded before publication.
 
 ## Prior-art and novelty assessment
 

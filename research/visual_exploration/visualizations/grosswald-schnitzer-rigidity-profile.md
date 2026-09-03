@@ -18,13 +18,13 @@ Define
 
 `h(x)=g(x)-g(x+1)`.
 
-The figure plots the exact values `h(p)` at every prime `11<=p<=100000` on logarithmic axes. It also plots the large-`p` asymptotic from `PL-127`,
+The retained compact image plots the exact values `h(p)` at primes `11<=p<=100000` on logarithmic axes. It also overlays the large-`p` asymptotic from `PL-127`,
 
-`((1/2)log p - 1) p^(-3/2)`.
+`((1/2)log p - 1) p^(-3/2)`,
 
-The first few primes are omitted from the asymptotic overlay because its leading coefficient changes sign below the range where it is a useful approximation; the exact `h(p)` remains positive there. Prime sampling is used only to display the integer-deformation thresholds. No smoothing or fitted envelope is applied.
+using a dashed stroke. No smoothing or fitted envelope is applied. The first few primes are omitted because the leading asymptotic coefficient changes sign below the range where it is a useful approximation; the exact `h(p)` remains positive there.
 
-The render was produced at `1800 x 1080` and palette-quantized after plotting to reduce repository size without changing coordinates or sampled values.
+The repository PNG is deliberately monochrome and compact because no color carries mathematical information: solid versus dashed strokes distinguish the exact threshold from the asymptotic.
 
 ## Observation
 
@@ -40,7 +40,7 @@ The visual impression is replaced by an exact control in [[research/visual_explo
 
 Thus monotonicity holds on the entire real interval, not just on the displayed primes. As a numerical audit, `h(p)` was additionally evaluated at every prime through `200000` and was strictly decreasing throughout.
 
-The final PNG passed a complete Pillow decode check using `Image.verify()`, followed by reopen and `Image.load()` after quantization.
+The exact published PNG bytes passed a complete Pillow decode check using `Image.verify()`, followed by reopen and `Image.load()`.
 
 ## Research consequence
 
