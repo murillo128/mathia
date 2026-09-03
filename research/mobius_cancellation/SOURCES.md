@@ -183,3 +183,9 @@ Role: recent preprint boundary for `MC-041`. Theorem 1.6 gives a fixed power-of-
 Y. Sitaraman, *A Note on Logarithmic Summability (L)*, Proceedings of the Edinburgh Mathematical Society 15 (1966), no. 1, 47–55. DOI: https://doi.org/10.1017/S0013091500013183.
 
 Role: classical summability-theory boundary for `MC-041`. The paper treats logarithmic summability and conditional Tauberian converses, making explicit that passage from logarithmic methods to stronger ordinary conclusions requires additional side conditions. `MC-041` does not import a specific theorem from this paper; it supplies its own exact summation-by-parts identity and dyadic correlation counterexample, using Sitaraman only to anchor the mechanism in established Tauberian prior art.
+
+## MC-S31 — Inoue, generalized Riesz means of the Möbius function
+
+Shōta Inoue, *Riesz mean of Möbius function*, RIMS Kôkyûroku 2203 (2021), 31–40. Kyoto University RIMS proceedings page: https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/2203.html. National Diet Library bibliographic record: https://ndlsearch.ndl.go.jp/books/R000000004-I031952384.
+
+Role: primary prior-art anchor for `MC-042` and the order-one discussion in `MC-019`. The paper defines generalized Möbius Riesz means for nonnegative order, derives explicit formulas exposing zeta-zero contributions with the characteristic Gamma-ratio smoothing factor, and studies both fixed and growing smoothing order under RH. `MC-042` independently derives the fixed-order Mellin factorization and RH-equivalence audit; no novelty is claimed for the Riesz objects or their classical transform machinery.
