@@ -9,3 +9,11 @@ This file records durable external literature dependencies used to support or de
 ## Reciprocal-prime asymptotics
 
 - Franz Mertens, **Ein Beitrag zur analytischen Zahlentheorie**, *Journal für die reine und angewandte Mathematik* 78 (1874), 46–62. DOI: `10.1515/crll.1874.78.46`. Role: classical reciprocal-prime asymptotic underlying the shifted sieve product `prod_{7<=p<=x}(1-1/(p-2)) = Theta(1/log x)` in `VIS-005`; the shift from `p` to `p-2` changes the logarithm only by an absolutely convergent `O(sum_p p^-2)` correction.
+
+## Local analytic-zero normal form
+
+- NIST Digital Library of Mathematical Functions, **§1.10(i) Taylor's Theorem for Complex Variables — Zeros**, https://dlmf.nist.gov/1.10. Role: authoritative standard reference for the definition of zero multiplicity by the first nonzero Taylor coefficient; prior-art boundary for the local factorization and universal rescaled zero portrait in `VIS-008`.
+
+## Riemann-zeta zero geometry
+
+- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used only as contextual boundaries in `VIS-008`; the local-universality theorem itself does not depend on RH.
