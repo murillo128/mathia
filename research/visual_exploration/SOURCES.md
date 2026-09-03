@@ -14,6 +14,10 @@ This file records durable external literature dependencies used to support or de
 
 - NIST Digital Library of Mathematical Functions, **§1.10(i) Taylor's Theorem for Complex Variables — Zeros**, https://dlmf.nist.gov/1.10. Role: authoritative standard reference for the definition of zero multiplicity by the first nonzero Taylor coefficient; prior-art boundary for the local factorization and universal rescaled zero portrait in `VIS-008`.
 
+## Riemann-xi reflection symmetry
+
+- NIST Digital Library of Mathematical Functions, **§25.4 Reflection Formulas**, https://dlmf.nist.gov/25.4. Role: authoritative definition of Riemann's `xi` function and its reflection functional equation; together with ordinary conjugation symmetry, this is the classical input for the reflection-fixed Taylor-coefficient constraint in `VIS-009`.
+
 ## Riemann-zeta zero geometry
 
-- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used only as contextual boundaries in `VIS-008`; the local-universality theorem itself does not depend on RH.
+- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008` and `VIS-009`; neither local theorem depends on RH.
