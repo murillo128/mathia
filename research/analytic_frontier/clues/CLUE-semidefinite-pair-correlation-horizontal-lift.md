@@ -10,6 +10,8 @@ based_on:
   - research/analytic_frontier/findings/ANF-004-convex-finite-pair-moment-lifts-dualize.md
   - research/analytic_frontier/findings/ANF-005-signed-affine-pair-certificates-pay-normalization-slack.md
   - research/analytic_frontier/findings/ANF-006-local-ordered-gap-certificates-escape-global-pair-moment-ceiling.md
+  - research/analytic_frontier/findings/ANF-007-two-point-local-gap-bridge-cannot-beat-montgomery-taylor.md
+  - research/analytic_frontier/findings/ANF-008-improving-n-point-bridge-saturates-block-cap.md
   - research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier.md
   - research/weil_inertia/findings/WI-118-termwise-positive-support-one-pair-kernels-are-screened.md
   - research/prior_art/montgomery-pair-correlation.md
@@ -51,6 +53,16 @@ m_{\rm MT}=0.3274992963\ldots .
 
 This does not contradict `ANF-004`: the local-gap method preserves ordered consecutive gaps, applies a nonlinear spectral defect to finite block Gram matrices, and performs pinching/shifted-block assembly before the final global scalar solve. Configuration-level second-order information is therefore a **demonstrated** escape from the global-pair-moment ceiling, not merely a hypothetical one.
 
+`ANF-007` sharpens the local branch further: inside this exact bridge, two points can never beat Montgomery--Taylor, while the fully checked three-point theorem does. The first successful local object is therefore a triple of consecutive zeros, where two adjacent gaps and their sum must be compatible.
+
+`ANF-008` removes another apparent optimization axis. For fixed local certificate `(n,c,p)`, if any admissible block size improves the baseline then `Phi_n` is strictly increasing in `m`, so the unique optimal integer block is the cap-saturating value
+
+\[
+m_{\max}=(n-1)+\left\lfloor1/c\right\rfloor.
+\]
+
+Equivalently, existence of any improvement is decided exactly by the single scalar gate at `m_max`. Thus block-size tuning after the finite certificate carries no independent zero information in this architecture; the remaining gain must come from the local certificate/functional or from a different bridge.
+
 `WI-118` still rules out the obvious support-one escape based on universal termwise nonnegativity because real-axis positivity forces Fourier-edge taper and screening.
 
 ## Research question
@@ -65,7 +77,7 @@ M(F)+\delta<m_{\rm MT},
 
 and, if such a candidate exists, can the corresponding global conjugation-invariant counting inequality be proved for arbitrary complex multisets? The cheapest first theorem remains to decide whether the finite-configuration constraints already imply \(M(F)+\delta\ge m_{\rm MT}\).
 
-Second, in the now-established **local configuration-level** class, what is the strongest bound that can be obtained with finite local-gap certificates whose finite inequalities and analytic bridge are both verified at the same evidence level as the four-point theorem? Which ingredient is genuinely responsible for the extra information: adjacency/order, the nonlinear block spectral defect, or the shifted pinching/averaging assembly? Can that information class be given a rigorous ceiling?
+Second, in the now-established **local configuration-level** class, what is the strongest bound that can be obtained with finite local-gap certificates whose finite inequalities and analytic bridge are both verified at the same evidence level as the four-point theorem? `ANF-008` means that, for the current `n_point_bound` architecture, this question is no longer an optimization over `(n,c,p,m)`: once `(n,c,p)` is known, `m` is forced. The live information question is therefore which new local compatibility, memory, nonlinear defect, or alternative bridge improves the attainable certificate itself, and whether that information class has a rigorous ceiling.
 
 The second question should not be replaced by simply quoting larger interval-search candidates. An eight-point bridge with a named `hCert`, or a larger externally certified finite search that has not been independently replayed in the current evidence chain, is a candidate input rather than an unconditional theorem of the same formal status.
 
@@ -73,7 +85,7 @@ The second question should not be replaced by simply quoting larger interval-sea
 
 A signed support-one profile with \(M(F)+\delta<m_{\rm MT}\) and a valid universal counting inequality would improve the unconditional simple-critical proportion while staying inside global support-one pair correlation. Conversely, a no-go theorem at \(m_{\rm MT}\) would combine `ANF-003`--`ANF-005` and `WI-118` into a broad exhaustion result for universal affine global second-order certificates.
 
-The local-gap branch is already known to beat that baseline, so its value is different. It supplies a concrete example of **information preserved by delaying compression**. Understanding its verified ceiling could reveal the minimal extra statistic that escapes the global pair-moment obstruction and indicate whether higher local order is merely a constant-improvement engine or a qualitatively stronger analytic channel.
+The local-gap branch is already known to beat that baseline, so its value is different. It supplies a concrete example of **information preserved by delaying compression**. `ANF-007` identifies three points as the minimal successful order and `ANF-008` shows that scalar block-length tuning is not the source of the gain. Understanding the verified ceiling now means isolating the information retained by the local certificate or by genuinely richer finite-memory/configuration processing, not searching a redundant block parameter.
 
 ## Decisive test
 
@@ -85,16 +97,16 @@ F(x)\ge-\delta,\qquad F(iy)\ge1-\delta,
 
 and impose the copositivity conditions already derived. A rigorous lower bound \(M(F)+\delta\ge m_{\rm MT}\) rejects the universal affine signed route; an explicit strict sub-Montgomery--Taylor candidate only passes the cheap falsifier and must still survive the full counting inequality.
 
-For the configuration-level branch, the decisive next comparison is evidence-matched: produce a higher-point or otherwise stronger local certificate for which both the finite gap inequality and the complete bridge to `riemannZeta` are checked without a named certificate hypothesis, then compare its structural ingredients against the four-point theorem. A rigorous ceiling theorem for the local block information class would be equally decisive.
+For the configuration-level branch, first apply `ANF-008`'s exact gate to any proposed `(n,c,p)` certificate and use `m_max`; a candidate that cannot improve there cannot improve anywhere inside the current bridge. For candidates that pass, the decisive comparison is evidence-matched: produce a stronger local certificate or a genuinely richer local functional for which the finite inequality and the complete bridge to `riemannZeta` are both checked without a named certificate hypothesis, then identify what configuration information was added beyond the three-point compatibility isolated by `ANF-007`. A rigorous ceiling theorem for that local information class would be equally decisive.
 
-Any proposed finite multi-profile SDP must still have its dual extracted before being treated as new information. If it only consumes finitely many already-global BGSST moments, `ANF-004` reduces it to the scalar signed problem. It belongs to the configuration-level branch only if order, matrix spectrum/inertia, or local block structure is used before global compression.
+Any proposed finite multi-profile SDP must still have its dual extracted before being treated as new information. If it only consumes finitely many already-global BGSST moments, `ANF-004` reduces it to the scalar signed problem. It belongs to the configuration-level branch only if order, matrix spectrum/inertia, local block structure, or genuine finite memory is used before global compression.
 
 ## Evidence boundary
 
 No signed support-one improvement and no complete signed-profile no-go theorem is established. `ANF-005` gives necessary constraints and an exact slack tradeoff, not a solution of the constrained extremal problem.
 
-`ANF-006` does establish that one particular local configuration-level mechanism beats the Montgomery--Taylor baseline at the fully checked four-point level. It does **not** validate every larger headline constant in the same family. In particular, the registered eight-point theorem retains `hCert`, and later approximately `0.67331` research-draft candidates depend on larger external finite certificates or imported trust boundaries that this watch has not promoted to the same formal-evidence tier.
+`ANF-006` establishes that one particular local configuration-level mechanism beats the Montgomery--Taylor baseline at the fully checked four-point level. `ANF-007` establishes only the minimal point count inside the same bridge, and `ANF-008` establishes only the forced optimization of its block-size parameter. None validates every larger headline constant in the family or proves a ceiling for richer Bellman/coboundary or multi-profile local methods. In particular, the registered eight-point theorem retains `hCert`, and later larger research-draft candidates depend on external finite certificates or broader imported trust boundaries that this watch has not promoted to the same formal-evidence tier.
 
 ## Research disposition
 
-Accepted and narrowed. The scalar signed branch remains an extremal/no-go problem around \(M(F)+\delta\). The configuration-level branch has passed its existence test and is no longer “find any matrix lift”: its frontier is to determine the strongest evidence-matched local-gap/block theorem and the exact information-class ceiling before treating larger candidate constants as established progress.
+Accepted and narrowed. The scalar signed branch remains an extremal/no-go problem around \(M(F)+\delta\). The configuration-level branch has now passed three structural filters: local processing can beat the global pair-moment ceiling (`ANF-006`), two points are insufficient (`ANF-007`), and block size is forced once a current-bridge local certificate is fixed (`ANF-008`). The remaining frontier is the local certificate/functional itself and any genuinely richer pre-compression memory, not scalar `m` tuning.
