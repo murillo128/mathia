@@ -13,6 +13,10 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 - George Csordas, Wayne Smith and Richard S. Varga, **Lehmer Pairs of Zeros, the de Bruijn–Newman Constant Lambda, and the Riemann Hypothesis**, *Constructive Approximation* 10 (1994), 107–129, DOI `10.1007/BF01205170`. Role: primary anchor for the classical real-zero dynamics/Lehmer-pair mechanism, the exact `Delta^2 G < 4/5` Lehmer criterion used in XF-005, and the associated lower bounds on `Lambda`.
 - Jeffrey Stopple, **Lehmer Pairs Revisited**, *Experimental Mathematics* 26:1 (2017), 130–138; arXiv:1508.05870. Role: accessible restatement of the Csordas–Smith–Varga criterion and its reformulation through pre-Schwarzian data and nearby zeros of `zeta'`; used only for prior-art calibration in XF-005.
 
+## Nonlocal lattice and fractional-diffusion scaling
+
+- Óscar Ciaurri, Luz Roncal, Pablo R. Stinga, José L. Torrea and Juan L. Varona, **Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications**, *Advances in Mathematics* 330 (2018), 688–738, DOI `10.1016/j.aim.2018.03.023`; arXiv:1608.08913. Role: peer-reviewed anchor for discrete nonlocal diffusion and convergence to continuum fractional Laplacians. XF-008 uses it only to calibrate the prior-art class of the Cauchy/half-Laplacian hydrodynamic limit; the exact finite-spacing Xi lattice linearization is derived independently and is not identified with the canonical discrete fractional Laplacian of this paper.
+
 ## Upper-bound and high-zero asymptotic machinery
 
 - D. H. J. Polymath, **Effective approximation of heat flow evolution of the Riemann xi function, and a new upper bound for the de Bruijn–Newman constant**, *Research in the Mathematical Sciences* 6 (2019), article 31; arXiv:1904.12438. Role: primary anchor for effective `H_t` asymptotics, the fixed-`t` zero-counting law used in XF-004, and the published `Lambda <= 0.22` upper-bound framework.
