@@ -62,6 +62,14 @@ The exact invariant is:
 
 modulo the required backlink to `research/graph/global.md`, path-preserving link syntax, headings, and aliases. Rebuild this projection from the current tree on every curator run so newly created or removed `MI-*` notes cannot remain as silent graph islands.
 
+## Conservative semantic-link reconciliation
+
+During normal processing of source objects already in scope because they were added, modified, or are needed for the current reconciliation, opportunistically materialize a missing semantic relation only when current persisted source text explicitly states both the target and the relationship. Suitable relations include explicit use/dependence, refinement or strengthening/weakening, correction/supersession/refutation, obstruction or branch closure, prior-art redirect, and source-backed cross-line bridge. The semantic evidence gate in `PROCEDURE.md` remains mandatory.
+
+Do not scan the historical backlog merely because nodes would become isolated if structural membership were hidden. Do not use orphan status, neighboring IDs, chronology, title or vocabulary similarity, graph proximity, centrality, motifs, color, or line ownership as evidence. An exact mention of another finding ID is also insufficient unless the surrounding persisted text makes the semantic relation unambiguous.
+
+This is incremental projection maintenance, not discovery. It MUST NOT create a new mathematical claim or inferred implication, remove or relocate structural membership nodes or edges, or change the default Obsidian graph presentation. When the relation is ambiguous, under-link. Do not persist semantic-orphan inventories, centrality scores, or other graph-mining analytics. A normal pass should reconcile only relations exposed by source material it already had an independent reason to inspect.
+
 ## Visible hub naming
 
 Obsidian Graph identifies file nodes by their file basenames; a wikilink alias does not repair a generic node basename. Therefore every graph-visible hub or structural membership root MUST have a semantic, stable basename.
@@ -111,12 +119,13 @@ In addition to the cycle defined in `PROCEDURE.md`, every material curator pass 
 2. inventory canonical finding files directly from the current tree and reconcile the union of line-hub and line-membership structural links to that exact inventory before optional semantic changes;
 3. inventory every current `research/**/mind/intuition/MI-*.md` note and reconcile `research/graph/intuition-membership.md` to that exact inventory;
 4. inventory graph-visible canonical prior-art notes and reconcile the prior-art membership projection;
-5. verify that every current line hub and other graph-visible root/membership hub uses a semantic basename rather than a generic one;
-6. update graph-owned inbound wikilinks atomically when a hub path changes;
-7. keep `clues/` and `RESEARCH_LINES.md` out of the default Graph View while retaining them unchanged as source workflow state;
-8. leave `showOrphans` enabled and use residual canonical-finding, `MI-*`, or prior-art orphans as validation failures, not as presentation problems.
+5. for source objects already being inspected for the current pass, reconcile any missing semantic relation that is explicit in persisted source text, without broad orphan/backlog scanning or topology-driven inference;
+6. verify that every current line hub and other graph-visible root/membership hub uses a semantic basename rather than a generic one;
+7. update graph-owned inbound wikilinks atomically when a hub path changes;
+8. keep `clues/` and `RESEARCH_LINES.md` out of the default Graph View while retaining them unchanged as source workflow state;
+9. leave `showOrphans` enabled and use residual canonical-finding, `MI-*`, or prior-art orphans as validation failures, not as presentation problems.
 
-These topology operations are derived maintenance, not mathematical claims. They do not require the semantic evidence gate that governs relation edges, but they remain subject to every ownership, hard-path, publication, source-authority, prior-art, clue, Atlas, and notification rule in `PROCEDURE.md`.
+These topology operations are derived maintenance, not mathematical claims. They do not require the semantic evidence gate that governs relation edges, but they remain subject to every ownership, hard-path, publication, source-authority, prior-art, clue, Atlas, and notification rule in `PROCEDURE.md`. Semantic-link reconciliation remains evidence-gated even though it is performed during the same pass.
 
 # Publication validation
 
@@ -129,6 +138,7 @@ Before declaring graph curation successful, verify all of the following in addit
 - `research/graph/intuition-membership.md` links the global graph and its MI target set exactly equals the current `research/**/mind/intuition/MI-*.md` inventory;
 - no `RESEARCH_LINES.md` or non-intuition mind file appears in durable-intuition structural membership;
 - every graph-visible canonical prior-art note is attached to the prior-art structural membership projection;
+- every semantic relation added by conservative reconciliation traces to an explicit current persisted statement of that relation rather than graph topology, similarity, chronology, or ownership;
 - no graph-visible root/line/membership hub uses a generic `index`, `overview`, or `hub` basename;
 - no graph-owned inbound wikilink still points at an obsolete renamed hub path;
 - `.obsidian/graph.json` exposes canonical findings, mind intuitions, graph state and prior art, excludes `clues/` and `RESEARCH_LINES.md`, and keeps `showOrphans: true`.
