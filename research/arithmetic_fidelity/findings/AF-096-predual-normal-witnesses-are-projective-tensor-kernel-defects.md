@@ -1,6 +1,6 @@
-# AF-096 — Predual-normal fidelity witnesses are projective-tensor kernel defects
+# AF-096 — Dual-coefficient predual witnesses collapse by ultrasummand linearization
 
-**Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `STRUCTURAL-CLASSIFICATION`, `ADMISSIBLE-WITNESS-REFINEMENT`, `CLASSICAL-MECHANISM`, `NO-NOVELTY-CLAIM`
+**Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `STRUCTURAL-CLASSIFICATION`, `ADMISSIBLE-WITNESS-REFINEMENT`, `DECISIVE-NEGATIVE`, `CLASSICAL-MECHANISM`, `NO-NOVELTY-CLAIM`
 
 ## Claim
 
@@ -12,7 +12,14 @@ Let
 \tag{1}
 \]
 
-be the canonical Lipschitz-free exact sequence of a real Banach space `F`. Fix a real Banach space `Y`, take the coefficient space in the explicitly dual form `K=Y^*`, and set
+be the canonical Lipschitz-free exact sequence of a real Banach space `F`. Fix a real Banach space `Y`, put the coefficient space in explicitly dual form
+
+\[
+K=Y^*,
+\tag{2}
+\]
+
+and set
 
 \[
 P:=Z_F\widehat\otimes_\pi Y,
@@ -20,7 +27,7 @@ P:=Z_F\widehat\otimes_\pi Y,
 Q:=\mathcal F(F)\widehat\otimes_\pi Y,
 \qquad
 A:=j\widehat\otimes_\pi I_Y:P\to Q.
-\tag{2}
+\tag{3}
 \]
 
 Projective-tensor duality gives canonical isometric identifications
@@ -29,165 +36,138 @@ Projective-tensor duality gives canonical isometric identifications
 P^*\cong\mathcal L(Z_F,Y^*),
 \qquad
 Q^*\cong\mathcal L(\mathcal F(F),Y^*),
-\tag{3}
-\]
-
-where
-
-\[
-\left\langle T,\sum_i z_i\otimes y_i\right\rangle
-=
-\sum_i\langle Tz_i,y_i\rangle.
 \tag{4}
 \]
 
-Under (3), the restriction map from AF-093--AF-095,
+under which the restriction map from AF-093--AF-095 is exactly
 
 \[
-R_{F,Y^*}(S)=S|_{Z_F},
+R_{F,Y^*}=A^*:
+\mathcal L(\mathcal F(F),Y^*)
+\longrightarrow
+\mathcal L(Z_F,Y^*).
 \tag{5}
 \]
 
-is exactly
+For a general bounded map `A:P->Q`, weak-star continuous annihilators of `ran A^*` are represented by `ker A`. In the present barycentric setting, however, the declared dual coefficient forces a much stronger conclusion:
 
 \[
-\boxed{R_{F,Y^*}=A^*.}
+\boxed{
+R_{F,Y^*}\text{ is surjective for every Banach }F,Y.
+}
 \tag{6}
 \]
 
-Regard `P^*=\mathcal L(Z_F,Y^*)` with the weak-star topology `\sigma(P^*,P)` supplied by this declared predual. Every weak-star continuous linear witness is evaluation by some `u\in P`,
+Indeed, every dual Banach space is an ultrasummand. AF-091 therefore applies to every canonically Lipschitz-split pushout from AF-093 and forces it to split linearly. Equivalently, every bounded operator
 
 \[
-\Phi_u(T)=\langle T,u\rangle.
+T:Z_F\to Y^*
 \tag{7}
 \]
 
-Such a witness annihilates every linearly extendable fiber operator exactly when
+extends to a bounded operator
 
 \[
-\boxed{
-\Phi_u|_{\operatorname{ran}R_{F,Y^*}}=0
-\iff
-u\in\ker A.
-}
+S:\mathcal F(F)\to Y^*.
 \tag{8}
 \]
 
-Here the `u` on the right is the same representing tensor as in `\Phi_u`. Equivalently, identifying a tensor with its evaluation functional, the predual-normal witness space is
+Consequently AF-093's complete Lipschitz-versus-linear defect vanishes:
 
 \[
 \boxed{
-W^{w^*}_{F,Y}
-\cong
-\ker(j\widehat\otimes_\pi I_Y).
+\ker\!\left(
+\beta_F^*: \operatorname{Ext}(F,Y^*)
+\to
+\operatorname{Ext}(\mathcal F(F),Y^*)
+\right)=0.
 }
 \tag{9}
 \]
 
-For `T\in\mathcal L(Z_F,Y^*)`, define the predual-normal witness margin
+Since `A^*=R_{F,Y^*}` is surjective, the standard adjoint bounded-below/surjectivity theorem gives
 
 \[
-\rho^{w^*}_{F,Y}(T)
-:=
-\sup_{\substack{u\in\ker A\\ \|u\|_\pi\le1}}
-|\langle T,u\rangle|.
+\boxed{
+i(A):=\inf_{\|u\|_\pi=1}\|Au\|_\pi>0.
+}
 \tag{10}
+\]
+
+Thus `A` is not merely injective: its range is closed and the projective tensor norm on `P` is uniformly controlled by the norm inherited through `Q`.
+
+Define the optimal extension constant
+
+\[
+E_{F,Y}
+:=
+\sup_{0\ne T\in\mathcal L(Z_F,Y^*)}
+\frac{
+\inf\{\|S\|:S\in\mathcal L(\mathcal F(F),Y^*),\ S|_{Z_F}=T\}
+}{\|T\|}.
+\tag{11}
 \]
 
 Then
 
 \[
 \boxed{
-\rho^{w^*}_{F,Y}(T)
-=
-\|T|_{\ker A}\|
-=
-\operatorname{dist}\!\left(T,(\ker A)^\perp\right)
-=
-\operatorname{dist}\!\left(
-T,
-\overline{\operatorname{ran}R_{F,Y^*}}^{\,w^*}
-\right).
-}
-\tag{11}
-\]
-
-The final distance is operator-norm distance to a weak-star closed comparison set. Since norm closure is contained in weak-star closure,
-
-\[
-\boxed{
-0\le \rho^{w^*}_{F,Y}(T)
-\le
-\rho_{F,Y^*}([T]),
+E_{F,Y}=\frac1{i(A)}<\infty.
 }
 \tag{12}
 \]
 
-where the right-hand side is AF-094/AF-095's unrestricted robust margin. Thus an AF-095 Hahn--Banach witness need not belong to the declared predual. In particular,
+Finally, regard `P^*=\mathcal L(Z_F,Y^*)` with the weak-star topology `\sigma(P^*,P)` induced by the declared predual. Every weak-star continuous linear functional has the form
 
 \[
-\boxed{
-\ker(j\widehat\otimes_\pi I_Y)=\{0\}
-\Longrightarrow
-\text{every nonzero AF-095 witness is weak-star discontinuous relative to }P.
-}
+\Phi_u(T)=\langle T,u\rangle,
+\qquad u\in P.
 \tag{13}
 \]
 
-Conversely,
+The general annihilator identity remains
 
 \[
-\boxed{
-\text{a nonzero predual-normal witness exists}
+\Phi_u|_{\operatorname{ran}R_{F,Y^*}}=0
 \iff
-j\widehat\otimes_\pi I_Y\text{ is not injective}.
-}
+u\in\ker A,
 \tag{14}
 \]
 
-There is also an exact finite-complexity obstruction. The algebraic map
-
-\[
-j\otimes I_Y:Z_F\otimes Y\to\mathcal F(F)\otimes Y
-\tag{15}
-\]
-
-is injective because tensoring vector spaces over `\mathbb R` preserves injections. Hence
+where the symbol on the right is the same representing tensor `u` from (13). In this specific setting (10) forces `ker A=0`, so
 
 \[
 \boxed{
-\ker(j\widehat\otimes_\pi I_Y)\cap(Z_F\otimes Y)=\{0\}.
+W^{w^*}_{F,Y}
+\cong
+\ker(j\widehat\otimes_\pi I_Y)
+=\{0\}.
+}
+\tag{15}
+\]
+
+More strongly, because `R_{F,Y^*}` is already surjective, the unrestricted AF-095 witness space also vanishes. There is no robust-but-non-normal sector hiding beyond the chosen predual:
+
+\[
+\boxed{
+\operatorname{ran}R_{F,Y^*}
+=
+\mathcal L(Z_F,Y^*)
+\Longrightarrow
+W_{F,Y^*}=0
+\quad\text{and}\quad
+\rho_{F,Y^*}=0.
 }
 \tag{16}
 \]
 
-Every nonzero predual-normal witness is therefore a genuinely completed projective-tensor phenomenon and cannot be a finite sum of elementary evaluations
-
-\[
-T\longmapsto\sum_{i=1}^m\langle Tz_i,y_i\rangle.
-\tag{17}
-\]
-
-In particular, if `Y` is finite-dimensional then `Z_F\otimes Y` is already complete up to its canonical finite-coordinate Banach-space identification, so
-
-\[
-\boxed{
-\dim Y<\infty
-\Longrightarrow
-\ker(j\widehat\otimes_\pi I_Y)=\{0\}
-\Longrightarrow
-W^{w^*}_{F,Y}=\{0\}.
-}
-\tag{18}
-\]
-
-The resulting Arithmetic Fidelity boundary is sharp: **robust nonrecoverability can be visible to an unrestricted bounded functional while remaining invisible to every witness normal for a mathematically declared predual.**
+The decisive Arithmetic Fidelity conclusion is therefore a no-go result: **using a genuine Banach predual `Y` to make the coefficient `K=Y^*` supplies a natural weak-star observable category only after entering a coefficient class in which the complete Lipschitz-versus-linear quotient defect has already disappeared.** Any nontrivial defect of the AF-092--AF-095 type must have a non-ultrasummand coefficient, and hence cannot be exposed by simply declaring that same coefficient to be a dual Banach space.
 
 ## Derivation
 
-### Restriction is the adjoint tensor map
+### 1. Restriction is the adjoint projective-tensor inclusion
 
-For Banach spaces `X,Y`, the universal property of the completed projective tensor product gives
+For Banach spaces `X,Y`, the projective tensor product satisfies
 
 \[
 (X\widehat\otimes_\pi Y)^*
@@ -195,136 +175,229 @@ For Banach spaces `X,Y`, the universal property of the completed projective tens
 \mathcal B(X\times Y)
 \cong
 \mathcal L(X,Y^*).
+\tag{17}
+\]
+
+For `S\in\mathcal L(\mathcal F(F),Y^*)` and algebraic
+
+\[
+u=\sum_i z_i\otimes y_i,
+\tag{18}
+\]
+
+one has
+
+\[
+\begin{aligned}
+\langle A^*S,u\rangle
+&=\langle S,Au\rangle\\
+&=\sum_i\langle S(jz_i),y_i\rangle\\
+&=\langle S|_{Z_F},u\rangle.
+\end{aligned}
 \tag{19}
 \]
 
-For `S\in\mathcal L(\mathcal F(F),Y^*)` and algebraic `u=\sum_i z_i\otimes y_i`,
+Density gives `A^*=R_{F,Y^*}` on the completed tensor products.
+
+### 2. A dual coefficient is automatically an ultrasummand
+
+Put `K=Y^*`. The canonical embedding
 
 \[
-\langle A^*S,u\rangle
-=
-\langle S,Au\rangle
-=
-\sum_i\langle S(jz_i),y_i\rangle
-=
-\langle S|_{Z_F},u\rangle.
+J_{Y^*}:Y^*\to Y^{***}
 \tag{20}
 \]
 
-Density proves (6) on all of `P`.
-
-### Normal annihilators are tensor-kernel vectors
-
-A `\sigma(P^*,P)`-continuous linear functional is evaluation at an element `u\in P`. Using (6), for every `S\in Q^*`,
+has the norm-one left inverse
 
 \[
-\Phi_u(R_{F,Y^*}S)
+J_Y^*:Y^{***}\to Y^*,
+\qquad
+J_Y^*J_{Y^*}=I_{Y^*}.
+\tag{21}
+\]
+
+Therefore
+
+\[
+J_{Y^*}J_Y^*:Y^{***}\to J_{Y^*}(Y^*)
+\tag{22}
+\]
+
+is a norm-one projection. Hence every dual Banach space is an ultrasummand in exactly the sense required by AF-091.
+
+Now fix any `T:Z_F->Y^*`. AF-093 forms the pushout extension
+
+\[
+0\to Y^*\to P_T\to F\to0,
+\tag{23}
+\]
+
+and its Dirac construction gives a canonical global `1`-Lipschitz right inverse. AF-091 applies to (23), because its kernel `Y^*` is an ultrasummand, and forces (23) to split linearly.
+
+AF-093 identifies linear splitting of this pushout with extendability of `T` from `Z_F` to `\mathcal F(F)`. Since `T` was arbitrary, `R_{F,Y^*}` is surjective, proving (6)--(9).
+
+This is stronger than merely saying that a particular weak-star witness cannot be found. The complete extension obstruction itself is zero in the dual-coefficient category.
+
+### 3. Surjectivity of the adjoint gives a quantitative tensor lower bound
+
+For a bounded operator `B:X->Z`, define its injection modulus
+
+\[
+i(B)=\inf_{\|x\|=1}\|Bx\|.
+\tag{24}
+\]
+
+Also define the surjection modulus of `B^*` by
+
+\[
+q(B^*)
+:=
+\sup\{r\ge0:rB_{X^*}\subseteq B^*(B_{Z^*})\}.
+\tag{25}
+\]
+
+The standard Hahn--Banach argument gives the exact identity
+
+\[
+\boxed{q(B^*)=i(B).}
+\tag{26}
+\]
+
+Indeed, if `i(B)>=r` and `x^*` has norm at most `r`, then
+
+\[
+Bx\longmapsto x^*(x)
+\tag{27}
+\]
+
+is a well-defined norm-at-most-one functional on `ran B`; Hahn--Banach extends it to some `z^*` with `||z^*||<=1`, giving `B^*z^*=x^*`. Conversely, if `rB_{X^*}` lies in `B^*(B_{Z^*})`, choose for each unit `x` a norm-one `x^*` with `x^*(x)=1`; any `z^*` satisfying `B^*z^*=rx^*` gives
+
+\[
+r\le\|Bx\|.
+\tag{28}
+\]
+
+Taking the infimum yields the reverse inequality.
+
+Apply this to `B=A`. Since `A^*=R_{F,Y^*}` is surjective, the open mapping theorem gives `q(A^*)>0`, hence (10).
+
+Moreover the reciprocal of `q(A^*)` is exactly the worst optimal preimage norm under `A^*`. Under the identifications (4)--(5), this is precisely the extension constant (11), proving (12).
+
+Thus the tensor inclusion and operator-extension formulations carry the same quantitative defect:
+
+\[
+\boxed{
+\inf_{\|u\|_\pi=1}
+\|(j\widehat\otimes_\pi I_Y)u\|_\pi
+=
+\frac1{E_{F,Y}}.
+}
+\tag{29}
+\]
+
+### 4. The formal normal-witness kernel exists abstractly but vanishes here
+
+For any bounded `A:P->Q`, a `\sigma(P^*,P)`-continuous functional on `P^*` is evaluation at some `u\in P`. Using `R=A^*`,
+
+\[
+\Phi_u(RS)
 =
 \langle A^*S,u\rangle
 =
 \langle S,Au\rangle.
-\tag{21}
+\tag{30}
 \]
 
-Since `Q^*` separates points of `Q`, this vanishes for all `S` iff `Au=0`, proving (8)--(9) and (14). AF-095 permits the whole bidual `P^{**}` as a witness space; AF-096 identifies exactly the part lying in the canonical copy of `P` selected by the chosen predual.
-
-### The normal margin is distance to weak-star recoverability
-
-Restriction of `T\in P^*` to `\ker A` gives
+Because `Q^*` separates points of `Q`, this vanishes for every `S` iff `Au=0`. Hence the abstract identity
 
 \[
-\rho^{w^*}_{F,Y}(T)=\|T|_{\ker A}\|.
-\tag{22}
+W^{w^*}_{F,Y}\cong\ker A
+\tag{31}
 \]
 
-Hahn--Banach extension gives
+is correct. But (10) yields the stronger fact
 
 \[
-\|T|_{\ker A}\|
-=
-\operatorname{dist}(T,(\ker A)^\perp).
-\tag{23}
+\ker A=0,
+\tag{32}
 \]
 
-For every bounded `A:P\to Q`, annihilator duality gives
+so the normal witness space is always trivial for the declared dual coefficient.
 
-\[
-\overline{\operatorname{ran}A^*}^{\,\sigma(P^*,P)}
-=(\ker A)^\perp.
-\tag{24}
-\]
-
-Together with `R=A^*`, this proves (11)--(12). The distinction from AF-095 is exact: norm closure tests arbitrary bounded separation, while weak-star closure tests separation by the declared predual.
-
-### Completion is essential
-
-Before completion, `j\otimes I_Y` is injective algebraically. The canonical maps from algebraic projective tensor products into their completions are injective because the projective crossnorm is a norm. Therefore an algebraic tensor killed by `A` must already be zero, proving (16).
-
-If `Y` is finite-dimensional, every element of `Z_F\widehat\otimes_\pi Y` has a finite-coordinate representation `\sum_{i=1}^n z_i\otimes y_i`; coordinate functionals on `Y` identify the tensor product with a finite Banach direct sum of copies of `Z_F`. The induced map is coordinatewise `j` and hence injective, proving (18).
+The completion phenomenon that projective tensor products need not respect arbitrary subspaces therefore does not create a kernel for this particular barycentric inclusion when the second factor is being used as a predual of the coefficient. AF-091 closes that possibility before any witness analysis begins.
 
 ## Exact controls
 
-### Complemented barycentric kernel
+### Arbitrary dual coefficient
 
-If `Z_F` is complemented in `\mathcal F(F)` by a bounded projection `P_F`, then `P_F\widehat\otimes_\pi I_Y` is a bounded left inverse of `j\widehat\otimes_\pi I_Y`. Thus `A` is injective for every `Y`. By AF-093 this includes targets with the Lipschitz lifting property, including the separable-target regime used there.
+No separability, reflexivity, finite-dimensionality, approximation property, or complementability assumption on `F` or `Y` is needed. The only special input is that the coefficient is exactly `Y^*`. That alone makes the kernel of every AF-093 pushout an ultrasummand and forces all fiber operators to extend.
 
-### Finite-dimensional predual
+### Finite-dimensional coefficient
 
-Equation (18) shows that finite-dimensional `Y` cannot realize a nonzero normal witness kernel even when `Z_F` itself is not complemented. Noncomplementability is therefore not sufficient for this admissible witness class.
+Finite-dimensional coefficients are a special case of the dual/ultrasummand gate, not a separate phenomenon. Their previously observed absence of tensor-kernel witnesses is therefore subsumed by the stronger surjectivity result (6).
 
-### Algebraic finite-sum control
+### Non-dual non-ultrasummand coefficient
 
-If a witness of the finite form (17) vanishes on every extendable operator, its representing algebraic tensor lies in `\ker A`; (16) forces that tensor to be zero. Thus no nonzero finite predual tensor can certify the complete extension defect.
+A genuine Lipschitz-but-not-linear defect can still exist when the coefficient `K` is not an ultrasummand; AF-091 identifies this as a necessary escape. The Aharoni--Lindenstrauss control with kernel `c_0` remains the canonical example. The present result does not claim that every non-ultrasummand coefficient produces a defect.
 
-### Robust-but-not-normal regime
+### No robust-but-not-normal dual-coefficient regime
 
-It is logically possible that
+For the setup `K=Y^*`, one cannot have
 
 \[
 \overline{\operatorname{ran}R}^{\,\|\cdot\|}
 \subsetneq
 \overline{\operatorname{ran}R}^{\,w^*}
 =P^*.
-\tag{25}
+\tag{33}
 \]
 
-Then AF-095 has nonzero bounded witnesses while AF-096 has no weak-star continuous witness because `A` is injective. This is an exact conditional regime classification, not a claim that a particular barycentric pair `(F,Y)` realizing it is presently known.
+because `ran R=P^*` already. Thus neither an unrestricted AF-095 separator nor a weak-star discontinuous escape survives. Any such regime must be sought with a coefficient category not covered by the ultrasummand theorem, rather than by choosing a different predual for a dual coefficient.
 
-### Chosen-predual control
+### Tensor distortion may remain although the defect is zero
 
-If the same coefficient Banach space `K` admits inequivalent preduals, the topology `\sigma(\mathcal L(Z_F,K),Z_F\widehat\otimes_\pi Y)` can depend on the declared representation `K=Y^*`. AF-096 therefore does not call predual-normality intrinsic to bare `K`. An application must justify the predual independently rather than select it after observing which witnesses it allows.
+Surjectivity of `R` gives `i(A)>0`, but it need not give `i(A)=1`. The projective tensor inclusion can therefore retain all information while changing norms by a bounded factor. Equation (29) identifies that factor with the optimal uniform extension cost.
+
+This separates **exact fidelity** from **metric distortion**: all fiber operators are recoverable, yet recovery may have a nontrivial condition number.
 
 ## Prior art and novelty assessment
 
-The tensor and duality ingredients are classical, and **no novelty is claimed** for projective tensor products, operator duality, failure of completed projective tensoring to be left exact in general, annihilator identities, or weak-star closure of adjoint ranges.
+The underlying mathematics is classical, and **no novelty is claimed** for dual-space bidual complementability, ultrasummands, projective-tensor duality, operator extension, injection/surjection moduli, or the adjoint bounded-below/surjectivity theorem.
 
-- Raymond A. Ryan, ***Introduction to Tensor Products of Banach Spaces***, Springer Monographs in Mathematics, Springer London (2002), DOI `10.1007/978-1-4471-3903-4`, especially Chapter 2. Role: the projective norm, `(X\widehat\otimes_\pi Y)^*\cong\mathcal B(X\times Y)\cong\mathcal L(X,Y^*)`, functoriality, and the classical warning that the projective tensor product does not in general respect subspaces. Ryan's Corollary 2.12 relates the stronger isometric-subspace property to operator extension into `Y^*`.
-- Joe Diestel, Jan Fourie, and Johan Swart, **“The Metric Theory of Tensor Products (Grothendieck's Résumé Revisited) Part 5: Injective and Projective Tensor Norms,”** *Quaestiones Mathematicae* 26(4) (2003), 477--497, DOI `10.2989/16073600309486077`. Role: standard metric tensor-norm framework, including left/right injectivity and projectivity.
-- Walter Rudin, ***Functional Analysis***, 2nd ed., McGraw--Hill (1991), Chapters 3--4. Role: standard Hahn--Banach, annihilator, and dual-pair background for (23)--(24).
+- Nigel J. Kalton, **“The nonlinear geometry of Banach spaces,”** *Revista Matemática Complutense* 21(1) (2008), 7--60, DOI `10.5209/rev_REMA.2008.v21.n1.16426`. Role: the Lipschitz-retract/local-complementation mechanism used by AF-091 before ultrasummand descent.
+- Félix Cabello Sánchez and Jesús M. F. Castillo, ***Homological Methods in Banach Space Theory***, Cambridge Studies in Advanced Mathematics 203, Cambridge University Press (2023), especially the local-splitting and `Ext` chapters. Role: classical statement that locally split exact sequences with ultrasummand kernel split, and the homological language used in AF-091--AF-093.
+- Raymond A. Ryan, ***Introduction to Tensor Products of Banach Spaces***, Springer Monographs in Mathematics, Springer London (2002), DOI `10.1007/978-1-4471-3903-4`, Chapter 2. Role: projective-tensor duality and the classical relation between preservation of a subspace under projective tensoring and extension of operators into a dual coefficient.
+- Eve Oja, **“Operators that are nuclear whenever they are nuclear for a larger range space,”** *Proceedings of the Edinburgh Mathematical Society* 47 (2004), 679--694, DOI `10.1017/S0013091502001165`. Theorems 3.1 and 3.3 explicitly connect projective-tensor inclusions, extension operators, and the injection modulus, including reciprocal quantitative extension bounds.
+- Eve Oja and Vaiki Randala, **“Into isomorphisms in tensor products of Banach spaces,”** *Quaestiones Mathematicae* 32(2) (2009), 269--279, DOI `10.2989/QM.2009.32.2.9.802`. Role: quantitative projective-tensor prior art formulated directly in terms of injection modulus, extension operators, and local/projection constants.
 
-The literature therefore blocks any claim that the underlying tensor theorem is new. The durable Arithmetic Fidelity result is the specialization and admissibility boundary: AF-095's unrestricted separators divide into witnesses represented by a declared predual and witnesses necessarily outside it, and the first class is measured exactly by the completed tensor kernel (9). Equation (16) adds a sharp finite-complexity no-go inside that class.
+The decisive correction supplied here is internal rather than a novelty claim. The general tensor identity `W^{w^*}\cong\ker A` is valid, but when it is specialized to the AF-093 barycentric defect with coefficient `K=Y^*`, AF-091 already forces `A^*=R` to be surjective. Therefore the nonzero-kernel and robust-but-non-normal branches are not live possibilities in this category.
 
 ## Boundaries and failure modes
 
-- The coefficient must be presented as a specific dual `K=Y^*`; the theorem does not manufacture a preferred predual.
-- `W^{w^*}_{F,Y}` is only the weak-star continuous sector relative to `P`, not the full AF-095 witness space `P^{**}`.
-- `\ker A=0` does not imply absence of robust defect; it implies only that any separator must be weak-star discontinuous for this predual.
-- `\ker A\ne0` supplies a normal separator but no arithmetic provenance, positivity, locality, equivariance, computability, or prime specificity.
-- Equation (16) rules out finite **predual tensors**, not every finitely described functional in every possible representation.
-- Failure to preserve a subspace projectively is more nuanced than kernel noninjectivity: the induced tensor norm may change even when the completed canonical map remains injective. AF-096 uses only the kernel condition required by its witness classification.
-- No RH conclusion follows.
+- The conclusion concerns the **complete quotient-repair defect** classified by AF-092--AF-093. A discriminator-specific observable may fail or survive even when the complete extension quotient is zero.
+- The result does not say that projective tensor products respect every Banach subspace for every second factor. It uses the special barycentric kernel `Z_F\subset\mathcal F(F)` together with the AF-093 canonical Lipschitz splitting and the fact that `Y^*` is an ultrasummand.
+- `i(A)>0` does not mean `A` is isometric. Metric distortion and exact information loss are separate.
+- A Banach coefficient that is not an ultrasummand need not possess any canonical predual. Introducing an arbitrary ambient dual representation after the fact would change the category rather than reveal an intrinsic normal witness.
+- No arithmetic provenance, locality, positivity, equivariance, computability, prime specificity, or RH conclusion follows from the extension theorem.
 
 ## Consequences for Arithmetic Fidelity
 
-AF-093 identifies exact nonlinear recovery defects as fiber operators modulo extension; AF-094 separates algebraic from robust defects by norm closure; AF-095 converts robust defect into arbitrary bounded separation. AF-096 adds a source-sensitive admissibility layer:
+AF-093 identifies complete Lipschitz nonlinear-repair defects with nonextendable operators on the forgotten barycentric fiber. AF-094 and AF-095 then distinguish algebraic, robust, and continuously witnessable defects. The dual-coefficient specialization now supplies an exact category gate:
 
 \[
-\text{arbitrary bounded witness}
-\supseteq
-\text{declared-predual normal witness}
-\cong
-\ker(j\widehat\otimes_\pi I_Y).
-\tag{26}
+\boxed{
+K=Y^*
+\Longrightarrow
+K\text{ ultrasummand}
+\Longrightarrow
+\operatorname{ran}R_{F,K}=\mathcal L(Z_F,K)
+\Longrightarrow
+\text{no AF-093 defect at all}.
+}
+\tag{34}
 \]
 
-A positive Hahn--Banach margin is therefore not sufficient when the application supplies a distinguished predual, topology, locality class, symmetry class, or other observable category. In the present Banach/Lipschitz model, predual-normal witnessability is exact and no finite algebraic tensor can realize it. Future arithmetic applications should ask whether the **source-justified observable class** contains a separator, rather than relying on a singular functional manufactured after the compression is already known.
+So the attempt to obtain a more intrinsic witness merely by demanding weak-star normality from a declared predual is self-defeating for this quotient-repair model: the declaration places the coefficient in a class where the nonlinear defect vanishes before the witness category is consulted.
+
+The live problem therefore moves one layer outward. A source-natural admissibility theory for a genuinely non-ultrasummand coefficient must be justified **without** first turning that coefficient into a dual Banach space. More generally, whenever a proposed observable category supplies extra regularity or duality, Arithmetic Fidelity must first check whether that category itself collapses the obstruction it was introduced to detect.
