@@ -34,6 +34,12 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - [`research/prior_art/montgomery-pair-correlation.md`](../prior_art/montgomery-pair-correlation.md). Role: retained anchor for the zero-statistical input used to falsify overly rigid local-equilibrium behavior, with RH-conditional and conjectural regimes kept distinct.
 
+## Mesoscopic zeta-zero statistics
+
+- Paul Bourgade, **Mesoscopic fluctuations of the zeta zeros**, *Probability Theory and Related Fields* 148:3–4 (2010), 479–500, DOI `10.1007/s00440-009-0237-3`. Role: primary anchor that mesoscopic zero fluctuations form a distinct analytic regime; XF-009 uses it only for prior-art calibration, not as a theorem already matching the Xi-flow `X=h^2 j` scale.
+- Paul Bourgade and Jeffrey Kuan, **Strong Szegő Asymptotics and Zeros of the Zeta-Function**, *Communications on Pure and Applied Mathematics* 67:6 (2014), 1028–1044, DOI `10.1002/cpa.21475`. Role: RH-conditional Gaussian linear-statistic limit with covariance governed by an `H^{1/2}` norm. XF-009 notes the structural resonance between its `|frequency|` covariance weight and XF-008's half-Laplacian generator while explicitly not treating this as an unconditional Xi-flow bridge.
+- Kenneth Maples and Brad Rodgers, **Bootstrapped zero density estimates and a central limit theorem for the zeros of the zeta function**, *International Journal of Number Theory* 11:7 (2015), 2087–2107, DOI `10.1142/S1793042115500918`. Role: unconditional mesoscopic/linear-statistic anchor allowing off-critical-line zeros in the formalism; used in XF-009 to delimit what unconditional mesoscopic information exists without claiming ordered real-gap control.
+
 ## Audited contemporary claims
 
 - Kevin Schatz, **Riemann Hypothesis: Backward Parabolic Positivity Barriers for the Xi Flow**, preprint dated 20 November 2025, DOI `10.5281/zenodo.17636625`. Role: source audited in XF-001. The manuscript claims a backward positivity barrier proving `Lambda=0`; XF-001 gives an exact backward-heat double-collision calculation showing that its Lemma C.1 holomorphic root-labelling step is false and that the speed-dependent endpoint Gronwall bridge is not justified as written. This source is retained as an audit target, not as established RH evidence.
