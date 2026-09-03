@@ -12,6 +12,10 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - [`research/prior_art/montgomery-pair-correlation.md`](../prior_art/montgomery-pair-correlation.md). Role: retained anchor for the zero-statistical input used to falsify overly rigid local-equilibrium behavior, with RH-conditional and conjectural regimes kept distinct.
 
+## Audited contemporary claims
+
+- Kevin Schatz, **Riemann Hypothesis: Backward Parabolic Positivity Barriers for the Xi Flow**, preprint dated 20 November 2025, DOI `10.5281/zenodo.17636625`. Role: source audited in XF-001. The manuscript claims a backward positivity barrier proving `Lambda=0`; XF-001 gives an exact backward-heat double-collision calculation showing that its Lemma C.1 holomorphic root-labelling step is false and that the speed-dependent endpoint Gronwall bridge is not justified as written. This source is retained as an audit target, not as established RH evidence.
+
 ## Expansion rule
 
 Add primary sources for zero-motion, Lehmer-pair, collision, or real-entire-function mechanisms only when a canonical finding depends on their exact theorem. A numerical trajectory or secondary exposition is not a source anchor for a mathematical claim.
