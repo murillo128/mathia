@@ -84,7 +84,9 @@ The phases are:
 
 If a phase cannot be completed safely within the invocation, persist a compact `phase_state: in-progress` checkpoint and leave the campaign on the same phase. The next invocation resumes that phase from the issue state. **Partial progress with a durable checkpoint is preferable to running until timeout.**
 
-Use ordinary session/context continuity as the primary working memory when it is available. The GitHub issue is the durable recovery checkpoint, not a replacement for all working context: persist enough structured state to recover a campaign after truncation, interruption, or timeout, but do not duplicate the full corpus or private reasoning.
+Ordinary session/context continuity may be used as scratch working memory, but it is **never authoritative** for campaign identity, phase, candidate IDs, `base_main_sha`, `state_revision`, survivor dispositions, or handoff state. At the start of every invocation, re-fetch the active GitHub issue title/body and the relevant valid checkpoint comments before using remembered context. If remembered session state conflicts with GitHub control-plane history, discard the remembered state and resume or repair from GitHub before mathematical work.
+
+The GitHub issue and its valid checkpoint history are the authoritative durable campaign state. Persist enough structured state to recover a campaign after truncation, interruption, timeout, or stale session context, but do not duplicate the full corpus or private reasoning.
 
 ## GitHub issue is the only durable campaign state
 
@@ -104,9 +106,11 @@ Do not create a repository directory or file for campaign state. In particular, 
 
 Before starting work, search for an open issue whose title begins `[visionary]` and whose body identifies it as an active Visionary campaign.
 
-- If exactly one active campaign exists, resume it.
+- If exactly one active campaign exists, re-fetch that issue and its checkpoint comments and resume it.
 - If none exists, create a new campaign issue and begin phase 1.
 - If more than one active campaign exists, treat this as a workflow failure. Do not research until the ambiguity is resolved.
+
+Do not choose or reconstruct a campaign from remembered session state when a current active GitHub issue exists.
 
 A campaign issue may be closed only by phase 6 or when a workflow failure makes the campaign unrecoverable. A normal null result closes the issue silently.
 
@@ -115,9 +119,10 @@ A campaign issue may be closed only by phase 6 or when a workflow failure makes 
 The campaign identifier is immutable after creation.
 
 - The suffix in the issue title `[visionary] <campaign-id>` and the body field `campaign: <campaign-id>` must match exactly before mathematical work begins.
-- A later phase must never mint a new campaign identifier inside the same issue.
-- `state_revision` must increase monotonically.
-- If title/body identity diverges and the issue history makes the intended identity unambiguous, repair the control-plane state before research and record one compact workflow-repair comment.
+- A later phase must never mint, infer, renumber, or restore a different campaign identifier inside the same issue from remembered session context, date arithmetic, run counts, or an earlier campaign.
+- The earliest valid creation/checkpoint identity and the subsequent valid issue history are authoritative when they make the intended identity unambiguous.
+- `state_revision` must increase monotonically; a control-plane repair also increments it.
+- If current title/body identity diverges from the valid checkpoint history and the intended identity is unambiguous, repair the control-plane state before research and record one compact workflow-repair comment.
 - If identity is ambiguous, stop and report a workflow failure rather than guessing.
 
 ### Canonical issue state
@@ -140,6 +145,8 @@ handoff_question: null
 
 It may additionally contain compact corpus/tree hashes or candidate IDs needed for deterministic recovery. Do not put mathematical claims in frontmatter-like state merely because they are convenient.
 
+Once phase 2 has established candidate identities, every entry in `survivors` must use the **exact opaque `candidate_id` string from the valid phase-2 checkpoint**. Never shorten, renumber, alias, normalize, or replace a candidate ID (for example, do not turn a descriptive ID into `C1`, `C2`, or another compact alias).
+
 Each completed or partial phase adds one concise issue comment containing:
 
 - phase name and outcome;
@@ -153,7 +160,7 @@ Each completed or partial phase adds one concise issue comment containing:
 
 Do **not** persist chain-of-thought, free-form brainstorming, long search transcripts, hidden reasoning, raw mutation transcripts, or every rejected idea. The checkpoint must contain only enough auditable state for another invocation to resume the campaign faithfully if ordinary context continuity is unavailable.
 
-After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, `state_revision`, survivor set, and optional single handoff question.
+After posting the checkpoint, update the issue body atomically to the new `phase`, `phase_state`, incremented `state_revision`, exact survivor set, and optional single handoff question. Before the update, compare the campaign ID and survivor IDs against the last valid checkpoints again; session memory is not a source of identity.
 
 ## Candidate identity continuity gate
 
@@ -167,7 +174,9 @@ Phase 2 establishes the immutable identity of each tournament candidate. Its che
 - decisive first-kill test;
 - for `controlled-mutation` candidates only, the exact deliberately broken rule/assumption, the first identified failure, and the **salvaged residual statement** that is now being tested independently of the false parent route.
 
-A raw controlled mutation is never a tournament candidate. The candidate identity begins only at the salvaged residual statement or construction that the Visionary can state without relying on the knowingly invalid step.
+Candidate IDs are opaque immutable strings. They are not display labels and must never be abbreviated, renumbered, aliased, or regenerated in phases 3–6.
+
+At the start of every phase 3–6 invocation, load the valid phase-2 checkpoint directly from the campaign issue history and verify the current survivor IDs character-for-character against it before mathematical work. Use later valid checkpoints only for kill/survival state; use phase 2 as the identity anchor. If current issue state or remembered session context uses different candidate strings for the same objects, treat that as control-plane identity drift and repair it before continuing.
 
 Every later phase must load the last valid checkpoint and verify that it is still evaluating **that same candidate** before recording a kill, survival, or narrowing.
 
@@ -182,6 +191,8 @@ If a phase discovers that it has drifted to a different object while keeping the
 3. restore the campaign to the last valid phase/checkpoint for that candidate;
 4. mark any downstream empty-survivor checkpoints that depended on the invalid kill as superseded control-plane state;
 5. re-audit only the affected candidate(s) against the same frozen `base_main_sha` rather than restarting phase 1.
+
+If the mathematical objects are unchanged but the campaign ID or candidate strings themselves drifted, repair the issue title/body and exact IDs from the unambiguous valid checkpoint history, increment `state_revision`, record one compact repair comment, and resume the current valid phase without changing any mathematical disposition.
 
 A continuity repair may happen even after later phase comments already exist. Those comments remain historical control-plane records, but the repair comment and current issue body define which earlier phase result is authoritative. Candidate identity drift is a workflow defect, not mathematical evidence.
 
@@ -201,7 +212,7 @@ This phase is the deliberate full-context exception to ordinary progressive-load
 
 Synchronize the repository default branch and reconstruct the complete current Riemann research state. Consume:
 
-1. `research/master/STATE.md` in full;
+1. `research/README.md` in full as the current Master Researcher global snapshot;
 2. global current Mind under `research/mind/**` in full;
 3. every dynamically discovered research line's `README.md` and current `mind/**` in full when present;
 4. the full canonical prior-art corpus recursively under `research/prior_art/**`, including the frozen bootstrap, `incremental/**`, and coverage/catalog controls needed to understand corpus boundaries;
@@ -524,7 +535,9 @@ Do not notify for:
 
 This skill is designed for **one continuing campaign advanced by a recurring invocation**, rather than one monolithic weekly pass or a daily quota.
 
-The scheduler should invoke the same prompt each time. The skill determines whether to create a campaign, resume the current frozen-snapshot phase, repeat an incomplete phase, repair an unambiguous control-plane identity/continuity defect, or close the campaign in phase 6.
+The scheduler should use a **minimal launcher prompt**: identify the repository, load this skill and its required companion skills, and execute one scheduled Visionary pass. Do not duplicate paths, phase transitions, campaign/candidate identity rules, frozen-snapshot rules, publication gates, clue lifecycle rules, or notification policy in scheduler text. Those rules live here. If legacy scheduler text contains procedural detail that conflicts with this skill, treat it as configuration drift and follow this skill; outside an explicit user-requested task edit, the Visionary must not rewrite its own schedule.
+
+The scheduler should invoke the same minimal prompt each time. The skill determines whether to create a campaign, resume the current frozen-snapshot phase, repeat an incomplete phase, repair an unambiguous control-plane identity/continuity defect, or close the campaign in phase 6.
 
 Do not start a second campaign while another is active. After phase 6 closes a campaign, the next scheduled invocation may start a new campaign immediately unless the user has changed the schedule.
 
