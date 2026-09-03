@@ -44,11 +44,29 @@ Every canonical prior-art Markdown node that is intentionally visible in the def
 
 This edge means only **“this note belongs to the canonical prior-art corpus.”** It does not assert relevance to a current research line. Semantic finding-to-prior-art redirects remain separately evidence-gated.
 
+## Structural durable-intuition membership
+
+Every graph-visible durable intuition `MI-*` note under `research/**/mind/intuition/` MUST have a structural parent independently of whether the curator has inferred any semantic relation for it.
+
+Maintain `research/graph/intuition-membership.md` as a deterministic global membership projection. It MUST link the global graph and MUST inventory every current `research/**/mind/intuition/MI-*.md` file, including global intuitions under `research/mind/intuition/`. `RESEARCH_LINES.md` and other mind workflow/synthesis files are not members of this projection.
+
+This edge means only **“this note is a durable Mathia intuition.”** It MUST NOT be interpreted as mathematical support, dependence, refinement, contradiction, chronology, endorsement, or evidence. Line hubs and semantic relation nodes may also link an intuition when justified, but those optional links do not replace structural membership.
+
+The exact invariant is:
+
+```text
+{MI targets in research/graph/intuition-membership.md}
+==
+{current research/**/mind/intuition/MI-*.md files}
+```
+
+modulo the required backlink to `research/graph/global.md`, path-preserving link syntax, headings, and aliases. Rebuild this projection from the current tree on every curator run so newly created or removed `MI-*` notes cannot remain as silent graph islands.
+
 ## Visible hub naming
 
 Obsidian Graph identifies file nodes by their file basenames; a wikilink alias does not repair a generic node basename. Therefore every graph-visible hub or structural membership root MUST have a semantic, stable basename.
 
-Do not publish graph-visible hubs as `index.md`, `overview.md`, `hub.md`, or another generic basename that loses the represented object. Use semantic kebab-case names such as `prime-circle.md`, `xi-flow.md`, `prior-art.md`, `prior-art-membership.md`, or `<line>-membership.md`; use `riemann-atlas.md` for the Atlas root.
+Do not publish graph-visible hubs as `index.md`, `overview.md`, `hub.md`, or another generic basename that loses the represented object. Use semantic kebab-case names such as `prime-circle.md`, `xi-flow.md`, `prior-art.md`, `prior-art-membership.md`, `intuition-membership.md`, or `<line>-membership.md`; use `riemann-atlas.md` for the Atlas root.
 
 When renaming a visible hub, update graph-owned inbound wikilinks and delete the obsolete generic path in the **same publication**, so the derived graph never intentionally contains both the semantic hub and a stale generic node.
 
@@ -81,9 +99,9 @@ Clues and `RESEARCH_LINES.md` remain first-class repository inputs for the agent
 
 ## Orphan visibility is diagnostic
 
-Keep orphan visibility enabled in the declarative Obsidian graph configuration. Do **not** hide topology defects by setting `showOrphans` to false or by filtering canonical findings or canonical prior-art nodes out merely because they lack links.
+Keep orphan visibility enabled in the declarative Obsidian graph configuration. Do **not** hide topology defects by setting `showOrphans` to false or by filtering canonical findings, durable intuitions, or canonical prior-art nodes out merely because they lack links.
 
-After structural membership has been rebuilt, a visible canonical finding or prior-art note that is still an orphan is a graph-curation defect: identify the missing or unresolved structural link and repair it. Other intentionally standalone derived nodes may remain when the model requires it.
+After structural membership has been rebuilt, a visible canonical finding, `MI-*` intuition, or prior-art note that is still an orphan is a graph-curation defect: identify the missing or unresolved structural link and repair it. Other intentionally standalone derived nodes may remain when the model requires it.
 
 # Curator-cycle integration
 
@@ -91,11 +109,12 @@ In addition to the cycle defined in `PROCEDURE.md`, every material curator pass 
 
 1. discover current research lines, including initialized zero-finding lines, and ensure each has a semantic visible hub;
 2. inventory canonical finding files directly from the current tree and reconcile the union of line-hub and line-membership structural links to that exact inventory before optional semantic changes;
-3. inventory graph-visible canonical prior-art notes and reconcile the prior-art membership projection;
-4. verify that every current line hub and other graph-visible root/membership hub uses a semantic basename rather than a generic one;
-5. update graph-owned inbound wikilinks atomically when a hub path changes;
-6. keep `clues/` and `RESEARCH_LINES.md` out of the default Graph View while retaining them unchanged as source workflow state;
-7. leave `showOrphans` enabled and use residual canonical-finding or prior-art orphans as validation failures, not as presentation problems.
+3. inventory every current `research/**/mind/intuition/MI-*.md` note and reconcile `research/graph/intuition-membership.md` to that exact inventory;
+4. inventory graph-visible canonical prior-art notes and reconcile the prior-art membership projection;
+5. verify that every current line hub and other graph-visible root/membership hub uses a semantic basename rather than a generic one;
+6. update graph-owned inbound wikilinks atomically when a hub path changes;
+7. keep `clues/` and `RESEARCH_LINES.md` out of the default Graph View while retaining them unchanged as source workflow state;
+8. leave `showOrphans` enabled and use residual canonical-finding, `MI-*`, or prior-art orphans as validation failures, not as presentation problems.
 
 These topology operations are derived maintenance, not mathematical claims. They do not require the semantic evidence gate that governs relation edges, but they remain subject to every ownership, hard-path, publication, source-authority, prior-art, clue, Atlas, and notification rule in `PROCEDURE.md`.
 
@@ -107,6 +126,8 @@ Before declaring graph curation successful, verify all of the following in addit
 - every canonical finding is structurally attached to its owning line through the hub/membership union;
 - no `*.review.md` sidecar appears in structural membership;
 - the structural finding membership set has neither stale nor unresolved targets;
+- `research/graph/intuition-membership.md` links the global graph and its MI target set exactly equals the current `research/**/mind/intuition/MI-*.md` inventory;
+- no `RESEARCH_LINES.md` or non-intuition mind file appears in durable-intuition structural membership;
 - every graph-visible canonical prior-art note is attached to the prior-art structural membership projection;
 - no graph-visible root/line/membership hub uses a generic `index`, `overview`, or `hub` basename;
 - no graph-owned inbound wikilink still points at an obsolete renamed hub path;
