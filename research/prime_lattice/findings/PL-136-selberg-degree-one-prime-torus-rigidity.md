@@ -42,11 +42,15 @@ Taking logarithms there gives
 
 `log F_omega(s)=sum_p sum_(k>=1) omega_p^k/(k p^(ks))`.
 
-Thus the Selberg Euler-product logarithmic coefficients are supported on prime powers and satisfy
+In Soundararajan's normalization of Selberg Axiom 4,
 
-`b(p^k)=omega_p^k/k`,
+`log F(s)=sum_(n>=2) b(n)n^(-s) Lambda(n)/log n`,
 
-so in particular `|b(p^k)|<=1`. The Ramanujan coefficient condition is also automatic because `|omega(n)|=1`.
+the factor `Lambda(p^k)/log(p^k)=1/k` is already explicit. Hence for the present product
+
+`b(p^k)=omega_p^k`,
+
+and `b(n)=0` off prime powers. Thus `|b(p^k)|=1`, satisfying the required `b(n) << n^vartheta` for any fixed `vartheta>0` (in particular for some `vartheta<1/2`). The Ramanujan coefficient condition is also automatic because `|omega(n)|=1`.
 
 Nothing in these local facts gives analytic continuation or a functional equation. This is exactly the distinction already exposed by the Helson-zeta controls: arbitrary prime phases can have highly flexible continuation and zero/pole geometry. The additional assumptions below are genuinely global.
 
