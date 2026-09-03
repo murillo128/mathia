@@ -56,7 +56,7 @@ B(x)
 \tag{3}
 \]
 
-The trivial cubic-energy scale is `T^{3+o(1)}` because the Riemann--von Mangoldt formula gives `O(T log T)=T^{1+o(1)}` zeros and `E_1(W)<=|W|^3`. Relative to that trivial exponent, (3) has the exact gap
+The trivial cubic-energy exponent is `3`: after the standard unit-separation reduction used in the zero-energy framework, `E_1(W)\ll |W|^3`, while the Riemann--von Mangoldt formula gives `|W|<=O(T log T)=T^{1+o(1)}`. Retaining zero multiplicities or bounded unit-interval clustering changes this only by polylogarithmic, hence `T^{o(1)}`, factors. Relative to that cubic exponent, (3) has the exact gap
 
 \[
 \boxed{
