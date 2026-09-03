@@ -10,42 +10,50 @@ based_on:
   - research/visual_exploration/findings/VIS-008-infinitesimal-zero-portraits-universal.md
   - research/visual_exploration/visualizations/critical-line-residual-gradient-baseline.md
   - research/visual_exploration/findings/VIS-009-reflection-fixed-zero-residual-gradient.md
+  - research/visual_exploration/visualizations/critical-line-residual-exact-reflection-parity.md
+  - research/visual_exploration/findings/VIS-011-taylor-normalized-residual-full-reflection-parity.md
 ---
 
 # Does the critical-strip geometry of zeta contain a nontrivial multiscale or fractal signature?
 
 ## Observation
 
-The visual-exploration mandate explicitly permits fractal, multiscale, complex-plane, phase, zero, and spectral representations, but visual self-similarity is also one of the easiest structures for a rendering choice or a generic analytic function to manufacture. The critical strip therefore offers a deliberately speculative but falsifiable target: nested views of mathematically intrinsic fields such as `log|zeta(s)|`, `arg zeta(s)`, `xi(s)`, or their level/phase sets around comparable zero configurations.
+The visual-exploration mandate permits fractal, multiscale, complex-plane, phase, zero, and spectral representations, but visual self-similarity is also easy for generic analytic structure or rendering choices to manufacture. The critical strip therefore remains a deliberately speculative but falsifiable target: nested views of intrinsic fields derived from `zeta` or `xi`, normalized by a mathematically meaningful local scale.
 
-Two tempting local regimes are now removed. `VIS-008` proves that after translation and leading-Taylor normalization, an arbitrarily deep zoom around any isolated analytic zero converges uniformly to the universal monomial `z^m`, where `m` is the zero multiplicity. `VIS-009` then shows that, for a zero fixed by the critical-line reflection, the **next first-order residual jet is also constrained for a generic symmetry reason**: the modulus residual has zero derivative normal to the critical line, while an off-line reflection-pair surrogate can acquire a strong horizontal term merely from pair splitting.
+Three tempting local signals are now removed. `VIS-008` proves that after translation and leading-Taylor normalization, an arbitrarily deep zoom around any isolated analytic zero converges to the universal multiplicity monomial. `VIS-009` showed that the next first-order residual jet at a reflection-fixed zero has a symmetry-forced axis constraint. `VIS-011` strengthens that control completely: after the zero monomial is divided out,
 
-Therefore neither the monomial portrait nor a first-order on-line/off-line residual-axis difference counts as the desired multiscale signal.
+`H(-conj(w))=conj(H(w))`,
+
+so the **entire** Taylor-normalized modulus residual is reflection-even in the normal coordinate. Left/right asymmetry around a critical-line zero is therefore an exact fixed-point baseline at finite radius, not merely a first-order confound.
 
 ## Research question
 
-After subtracting or matching both the universal local monomial and the reflection-forced first residual jet, do **mesoscopic** critical-strip views — at scales comparable to a non-negligible fraction of local mean zero spacing — exhibit stable scaling exponents, contour statistics, phase-boundary geometry, recurrence, or self-similarity that is not explained by generic isolated zeros, reflection fixing, coordinate choice, finite resolution, or known local zero statistics?
+After subtracting the universal local monomial and quotienting the full anti-holomorphic reflection parity, do **mesoscopic** critical-strip views — at scales comparable to a non-negligible fraction of local mean zero spacing — exhibit stable scaling exponents, contour statistics, recurrence, scale coupling, or self-similarity not explained by generic isolated zeros, exact reflection symmetry, coordinate choice, finite resolution, or known local zero statistics?
 
-In particular, is there any higher-order or finite-radius multiscale statistic that changes systematically when a matched reflection-symmetric surrogate zero configuration is perturbed away from the critical line while preserving the local Taylor data and as much of the obvious zero-counting structure as possible?
+In particular, does the reflection-even component of a normalized `xi` or `zeta` field contain a finite-radius multiscale statistic that changes systematically under carefully matched off-critical-line surrogate configurations after the obvious fixed-point classifier has been removed?
 
 ## Why it may matter
 
-A robust residual statistic would turn the vague intuition that zeta may have a "fractal-looking" organization into an exact object that can be compared across height, scale, representation, and surrogate worlds. `VIS-008` and `VIS-009` make the target substantially sharper: any useful signal must involve higher jets, interactions among zeros, or other ambient analytic structure rather than universal isolated-zero geometry or the trivial fixed-point signature of the functional-equation reflection.
+A robust residual statistic would turn the vague intuition that zeta may have a "fractal-looking" organization into an exact object comparable across height, scale, representation, and surrogate worlds. The three exact baselines now make the target substantially sharper: a useful signal must involve reflection-even higher structure, interactions among zeros, cross-scale organization, or other ambient analytic/arithmetic information rather than universal zero geometry or symmetry fixing.
 
-If such a statistic discriminated critical-line organization from carefully jet-matched off-line surrogates, it could suggest a new geometric consequence or reformulation relevant to RH. A clean failure would also be useful by showing that attractive self-similarity is generic complex-analytic or symmetry-induced texture.
+If such a statistic discriminated critical-line organization from controls after explicit symmetry quotienting, it could suggest a geometric consequence or reformulation relevant to RH. A clean failure would also be valuable by showing that attractive self-similarity is generic complex-analytic, symmetry-induced, or local-zero texture.
 
 ## Decisive test
 
-Choose one or more intrinsic scalar/phase fields derived from `zeta` or `xi`, normalize spatial scale by local mean zero spacing, and explicitly quotient the local information already known to be trivial: multiplicity/leading coefficient from `VIS-008` and the reflection-constrained first residual jet from `VIS-009`.
+Choose one or more intrinsic scalar/phase fields derived from `zeta` or `xi`, normalize spatial scale by local mean zero spacing, remove the multiplicity monomial, and then quotient the complete reflection baseline from `VIS-011`. For modulus fields, one canonical operation is to retain only
 
-Measure candidate multiscale quantities rather than judging resemblance by eye: for example contour-length scaling, wavelet/multiresolution spectra, phase-boundary recurrence, or another explicitly defined statistic appropriate to the representation. Repeat across separated height windows and nested **mesoscopic** scales.
+`A_even(x,y)=(A(x,y)+A(-x,y))/2`
 
-Compare against synthetic analytic controls whose zero density, reflection symmetry, local multiplicity, and first residual jet are matched, then introduce controlled off-critical-line perturbations without letting the split reflection partner become an easy local classifier. Kill the direction if the residual is unstable under reasonable reparameterization, is equally present in controls, or separates controls only through local Taylor data already identified by `VIS-008`/`VIS-009`.
+and explicitly discard the identically constrained antisymmetric component before defining any candidate statistic.
+
+Measure multiscale quantities rather than judging resemblance by eye: contour-length scaling, wavelet or multiresolution spectra, recurrence of reflection-even level geometry, interaction with neighboring-zero shells, or another explicitly defined finite-radius statistic. Repeat across separated height windows and nested mesoscopic scales.
+
+Compare with synthetic analytic controls whose zero density, multiplicity, coarse reflection symmetry, and local scale are matched. When introducing off-critical-line pairs, do not allow their unavoidable failure of fixed-point parity around an individual zero to become the classifier: symmetrize or otherwise quotient that channel first. Kill the direction if the surviving statistic is unstable under reasonable reparameterization, is equally present in controls, or separates controls only through local data already closed by `VIS-008`/`VIS-009`/`VIS-011`.
 
 ## Evidence boundary
 
-`VIS-008` establishes only the universal infinitesimal monomial baseline, and `VIS-009` establishes only the first residual reflection-axis constraint. No mesoscopic fractal structure, fractal dimension, RH criterion, or higher-order distinction between on-line and off-line zeros is established. Any statistic extracted from finite renderings remains exploratory until its mathematical dependence on zeta is justified independently of the picture.
+`VIS-008` establishes the universal infinitesimal monomial baseline. `VIS-009` identifies its first residual differential consequence under reflection fixing. `VIS-011` establishes the full finite-radius reflection parity of the Taylor-normalized residual. No mesoscopic fractal structure, fractal dimension, RH criterion, or reflection-even distinction between on-line and off-line configurations is established. Any statistic extracted from finite renderings remains exploratory until its mathematical dependence on zeta is justified independently of the picture.
 
 ## Research disposition
 
-Accepted in twice-narrowed form. The live question begins **beyond the universal monomial and the reflection-forced first residual jet**: look for a representation-stable mesoscopic residual that survives jet-matched analytic and off-line controls.
+Accepted in further narrowed form. The live question begins **beyond the universal monomial and the complete fixed-line reflection parity**: search only for representation-stable, reflection-quotiented mesoscopic structure that survives matched analytic and off-line controls.
