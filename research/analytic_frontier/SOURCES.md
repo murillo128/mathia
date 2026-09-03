@@ -39,6 +39,11 @@ This file records durable literature dependencies for `research/analytic_frontie
 
 - Hélder Lima, **On Müntz-type formulas related to the Riemann zeta function**, *Journal of Mathematical Analysis and Applications* 463:1 (2018), 398–411, DOI `10.1016/j.jmaa.2018.03.029`. Role: prior-art anchor for the classical Mellin/Dirichlet-series mechanism by which dilation sums acquire zeta factors; used in `ANF-014` to classify the general transform principle as classical, while the periodization-cost defect specialization is derived directly there.
 
+## Möbius summatory functions and oscillation
+
+- Paul T. Bateman and Harold G. Diamond, **Analytic Number Theory: An Introductory Course**, World Scientific, 2004, Chapter 11, *Oscillation Theorems*. Role: classical monograph anchor for Landau's oscillation theorem and the principle that eventual one-sign behavior of an arithmetic error term is incompatible with the relevant nonreal transform singularities; load-bearing prior art for the Mellin-sign argument in `ANF-015`.
+- D. R. Johnston and T. Trudgian, **A round of Pintz to celebrate oscillations in sums**, *Analysis Mathematica* (2026), published 10 August 2026, DOI `10.1007/s10476-026-00181-1`. Role: current open-access account of the Landau--Pintz oscillation mechanism, explicitly using the Riemann zeta function and Möbius sums as a prototype; modern prior-art boundary for `ANF-015`.
+
 ## Local ordered-gap and block certificates
 
 - `anthropics/zeta-23-lean`, Lean 4 companion development for arXiv:2608.13637. Role: formal source of the unconditional baseline `H = 3/2 - (1/sqrt(2)) cot(1/sqrt(2)) = 0.672500703679...` and the analytic/stability infrastructure consumed by later local-gap refinements.
