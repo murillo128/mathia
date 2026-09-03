@@ -21,3 +21,9 @@ This file records durable external literature dependencies used to support or de
 ## Riemann-zeta zero geometry
 
 - NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008` and `VIS-009`; neither local theorem depends on RH.
+
+## Hybrid prime/zero decompositions
+
+- S. M. Gonek, C. P. Hughes, and J. P. Keating, **A hybrid Euler-Hadamard product for the Riemann zeta function**, *Duke Mathematical Journal* 136:3 (2007), 507–549. DOI: `10.1215/S0012-7094-07-13634-2`. Role: establishes the unconditional smoothed representation `zeta(s) = P_X(s) Z_X(s) (1 + explicit error)` with a finite von-Mangoldt prime factor and a smoothed zero factor; canonical prior-art baseline for the critical-strip scale decomposition and quotient-control obstruction in `VIS-010` and the accepted prime-phase recursive-geometry clue.
+
+- S. M. Gonek, **Finite Euler products and the Riemann hypothesis**, *Transactions of the American Mathematical Society* 364:4 (2012), 2157–2191. DOI: `10.1090/S0002-9947-2011-05546-7`. Role: studies approximation of zeta by short finite Euler products in the critical strip and delineates the additional hypotheses/regimes under which prime truncations can approximate zeta; boundary against treating arbitrary raw partial Euler products as a convergent critical-strip recursion.
