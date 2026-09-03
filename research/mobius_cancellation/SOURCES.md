@@ -171,3 +171,15 @@ Role: strong-aperiodicity transfer used in `MC-039`. Definition 2.4 calls a mult
 Terence Tao and Joni Teräväinen, *The structure of logarithmically averaged correlations of multiplicative functions, with applications to the Chowla and Elliott conjectures*, Duke Mathematical Journal 168 (2019), no. 11, 1977–2027. DOI: https://doi.org/10.1215/00127094-2019-0002. arXiv: https://arxiv.org/abs/1708.02610.
 
 Role: primary higher-correlation theorem for `MC-040`. Corollary 1.6 states that logarithmically averaged correlations of fixed shifts of `1`-bounded multiplicative functions vanish when the pointwise product of the coefficient functions does not weakly pretend to any Dirichlet character; weak pretence is measured at prime-harmonic scale `o(log log x)`. The paper derives the odd-number-of-factors cases of logarithmically averaged Chowla as a special case. `MC-040` applies this product criterion to the explicit square-free-supported comparator family already constructed in `MC-005` and audited in `MC-039`.
+
+## MC-S29 — Guo, quantitative logarithmic Chowla over growing shifts
+
+Jizhou Guo, *Quantitative Logarithmic Chowla Correlations Uniformly over Growing Shifts*, arXiv:2608.23500 (submitted 24 August 2026; manuscript dated 26 August 2026). https://arxiv.org/abs/2608.23500.
+
+Role: recent preprint boundary for `MC-041`. Theorem 1.6 gives a fixed power-of-log saving for logarithmically weighted two-point Liouville correlations uniformly over every fixed polylogarithmic shift range. Theorem 1.3 gives maximal fixed-moment bounds over shift windows `H>=x^theta`, `theta>1/3`, and an arbitrarily fixed power-of-log saving for the harmonic tail above `n>H`. The paper explicitly notes that these logarithmically weighted results do not prove the ordinary Cesàro two-point Chowla conjecture. `MC-041` audits the exact Tauberian step required before such harmonic correlation estimates can enter an unweighted van der Corput bound.
+
+## MC-S30 — Sitaraman, logarithmic summability and Tauberian side conditions
+
+Y. Sitaraman, *A Note on Logarithmic Summability (L)*, Proceedings of the Edinburgh Mathematical Society 15 (1966), no. 1, 47–55. DOI: https://doi.org/10.1017/S0013091500013183.
+
+Role: classical summability-theory boundary for `MC-041`. The paper treats logarithmic summability and conditional Tauberian converses, making explicit that passage from logarithmic methods to stronger ordinary conclusions requires additional side conditions. `MC-041` does not import a specific theorem from this paper; it supplies its own exact summation-by-parts identity and dyadic correlation counterexample, using Sitaraman only to anchor the mechanism in established Tauberian prior art.
