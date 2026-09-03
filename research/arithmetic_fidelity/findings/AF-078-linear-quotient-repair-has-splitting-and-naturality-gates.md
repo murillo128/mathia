@@ -11,7 +11,7 @@ Let
 \tag{1}
 \]
 
-be a short exact sequence of real or complex Banach spaces and bounded linear maps, where `i` is an isomorphic embedding onto the closed subspace `i(K)=\ker q` and `q` is the corresponding quotient map. Identifying `K` with `i(K)\subseteq E`, call a bounded linear map
+be a short exact sequence of real or complex Banach spaces and bounded linear maps. Replacing the endpoint spaces by their canonically isomorphic range/quotient realizations, work in the normalized form in which `K=\ker q\subseteq E` carries the inherited norm, `i:K\hookrightarrow E` is the isometric inclusion, and `F=E/K` carries the quotient norm with `q:E\to E/K` the canonical quotient map. All quantitative norm identities and estimates below refer to this normalized realization. Call a bounded linear map
 
 \[
 r:E\to K
