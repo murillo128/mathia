@@ -203,7 +203,13 @@ J_{Np,q}J_{N,p}-J_{Nq,p}J_{N,q}=0.
 \tag{16}
 \]
 
-The same statement holds for the unnormalized incidences, with the obvious common scalar factor `sqrt((p-2)(q-2))`. It also extends from prime steps to arbitrary pairwise-coprime composite refinement factors. Hence the flatness is not a consequence of declaring a step to be prime; it is forced by CRT functoriality of the two-point reduced-residue fibers.
+The unnormalized downward incidences also compose exactly,
+
+\[
+R_{N,p}R_{Np,q}=R_{N,q}R_{Nq,p}=R_{N,pq}.
+\]
+
+Equivalently, their adjoint two-step pullbacks coincide and equal `sqrt((p-2)(q-2)) J_{N,pq}`. The same functoriality extends from prime steps to arbitrary pairwise-coprime composite refinement factors. Hence the flatness is not a consequence of declaring a step to be prime; it is forced by CRT functoriality of the two-point reduced-residue fibers.
 
 As a finite control, the matching dimensions and fiber sizes are
 
