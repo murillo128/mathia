@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime_lattice-quantitative-hamburger-phase-rigidity
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: prime_lattice
 based_on:
@@ -55,4 +55,13 @@ as a function of the altered prime, the window height, and the distance from `Re
 
 ## Evidence boundary
 
-Exact Hamburger rigidity is already established in `PL-126`; no quantitative stability statement is established here. `VIS-006` proves only that modulus-only critical-line diagnostics are structurally incapable of supplying such a statement. The existence, correct norm, and sharp scale dependence of a phase-sensitive stability theorem remain open research questions.
+At proposal time, exact Hamburger rigidity was established in `PL-126` but no quantitative stability statement was known here. The clue itself remains workflow metadata rather than mathematical evidence. `PL-127` now establishes a narrower Grosswald–Schnitzer-specific result: the critical-line reflection **phase slope at the self-dual point** is a positive additive defect, and integer discreteness turns it into a finite-scale certificate for agreement of low prime generators. It does not establish a general quantitative Hamburger theorem for arbitrary Dirichlet series.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-127-grosswald-schnitzer-phase-slope-rigidity.md]]
+
+The general stability problem for Hamburger's converse theorem remains open in this repository, but the decisive Grosswald–Schnitzer test motivating this clue is settled more directly: no strip norm is needed to detect integer deformations at finite scale; a single phase-sensitive derivative at `s=1/2` already provides a positive, noncancelling certificate.
