@@ -1,42 +1,41 @@
-# MI-001 — Visual structure becomes evidence only after exact symmetry, local-normal-form, moment, coordinate, and aggregation baselines
+# MI-001 — Visual structure becomes evidence only after exact coordinate, symmetry, local-moment, and Poisson baselines
 
 **Evidence level:** supported by exact artifact classifications and visualization-led theorem handoffs
 
 ## Core intuition
 
-A visually strong pattern can be imposed by coordinates, reflection symmetry, the universal Taylor normal form near a zero, a finite collection of classical zero moments, or a classical leading kernel. Even a genuine residual can disappear under the arithmetic aggregation or operator topology that matters.
+A visually strong pattern can be imposed by coordinates, reflection symmetry, the universal local normal form near a zero, finitely many reciprocal-zero moments, classical kernel asymptotics, or even harmonic continuation from one outer boundary profile. The newest boundary is stronger than a finite-jet warning: **inside a zero-free disk, an entire nested family of circular log-modulus portraits has no independent radial multiscale channel at all**.
 
-Visualization is therefore most useful as a **theorem generator and falsification instrument**. The durable object is the residual left after every exact baseline appropriate to the scale and representation has been removed.
+Visualization is therefore most useful as a theorem generator and falsification instrument. Durable evidence begins with the residual left after every exact baseline appropriate to the representation and scale has been removed.
 
 ## Strongest justified principle
 
-VIS-001 gives the coordinate control: a CRT-aligned survivor wheel can be exactly a rank-one tensor product. VIS-003 gives the asymptotic control: the Möbius endpoint kernel has a classical Watt sawtooth leading term, and downstream arithmetic aggregation can amplify the visually small correction.
+VIS-001 gives the coordinate control: CRT-aligned survivor patterns can be exact tensor products. VIS-003 gives the asymptotic control: a visually small correction to a classical leading kernel can still be the term amplified by the downstream arithmetic aggregate.
 
-VIS-006 adds a symmetry control that is especially important for RH imagery. For every Schwarz-symmetric input, the modulus-only functional-equation defect is forced to vanish on `Re(s)=1/2` even if the function does not satisfy the Riemann functional equation. The critical-line trench survives the trivial control `F=1`; it is a reflection/modulus artifact unless phase or another discriminator is retained.
+VIS-006 and VIS-011 give reflection controls. A modulus-only functional-equation trench vanishes on the critical line for every Schwarz-symmetric input, and the Taylor-normalized critical-line modulus residual is itself reflection-even. Critical-line visual symmetry is not a phase-sensitive discriminator.
 
-VIS-008 adds the infinitesimal scale control. After translation and Taylor normalization, every portrait around a zero of multiplicity `m` converges to the universal monomial `z^m`. VIS-011 strengthens the fixed-line control: after the local monomial is removed, the full normalized modulus residual at a critical-line zero is exactly reflection-even.
+VIS-008 gives the infinitesimal normal form: after translation and multiplicity normalization every isolated zero portrait tends to the universal monomial. VIS-012 closes all fixed finite log-residual jets of order at least two by identifying them exactly with reciprocal-power moments of the remaining zero set; the quadratic crowding quantity is already a classical Lehmer-pair statistic.
 
-VIS-012 closes the next natural local escape. Every finite log-residual jet of order at least two is exactly a reciprocal-power moment of the remaining zero set. The second normal curvature is the inverse-square crowding field, and for neighboring real zeros its gap-normalized average is an affine re-expression of the classical Csordas--Smith--Varga Lehmer-pair quantity. A finite Taylor-jet portrait can therefore be visually rich while containing no new information beyond classical zero positions and their finite reciprocal moments.
+VIS-013 closes the obvious radial multiscale escape inside one zero-free neighborhood. After removing the local zero monomial, `log|H_rho|` is harmonic. For any two radii below the nearest remaining zero, the inner circular shell is exactly the Poisson extension of the outer one, and Fourier mode `n` scales by `(r_1/r_2)^|n|`. Even infinitely many angular modes therefore gain no independent information merely by moving inward through a zero-free annulus.
 
-VIS-002 remains the constructive standard: a visual cusp-residual pattern was converted into an exact achievement-set theorem and then into the PF-165 reference-instability result. The image mattered because it generated a falsifiable theorem.
+VIS-002 remains the constructive standard: a visual Prime-Flute cusp-residual pattern became an exact achievement-set theorem and then a separate line finding. The image mattered because it generated a falsifiable statement not already fixed by the rendering coordinates.
 
 ## What remains possible
 
-Useful visual targets should retain phase when reflection phase is the discriminator and should move to finite-radius or cross-scale organization after the zero monomial, reflection parity, and a finite vector of zero moments are conditioned out. The candidate must compare against matched zero-statistical controls in the same norm/operator statistic used by the owning line. Average overlap and worst-direction/operator-norm behavior should be visualized separately when they encode different mathematical claims.
+A genuinely new local/mesoscopic visual carrier must cross a boundary where the exact baseline changes: a zero-entry event and its Poisson--Jensen term, a comparison across different centers/heights, a noncircular or jointly moving domain, phase-sensitive data, or a multi-zero reorganization at spacing scale. These candidates must still survive the owning line's matched controls and actual operator/statistical topology.
 
 ## Status / novelty
 
-The component baselines are classical identities or persisted exact reductions. The synthesis is methodological but mathematical: visual evidence is the representation-stable residual after the exact null model, not the conspicuous feature of the raw rendering.
+Taylor normal forms, Hadamard reciprocal moments, reflection symmetry, and Poisson harmonic extension are classical. The synthesis is methodological but exact: **nested zero-free radial coherence is analytic continuation, not independent multiscale evidence**.
 
 ## Falsification criterion
 
-Exhibit a residual that survives all applicable exact baselines but disappears under the owning line's actual invariant, or derive a source-specific finite-radius/cross-scale invariant from a pattern that remains nontrivial after symmetry, local-normal-form, finite-moment, coordinate, and matched-control tests.
+Exhibit two nested zero-free circular shells of the normalized local function that violate the Poisson transfer, or derive a source-specific invariant from a zero-entry/cross-center/noncircular residual that remains nontrivial after the exact baselines and matched controls.
 
 ## Lean-formalizable core
 
 - CRT tensor factorization.
-- Functional-equation modulus antisymmetry and fixed-line residual parity.
-- Taylor-normalized zero convergence to `z^m`.
-- Hadamard identity from finite log-residual jets to reciprocal-power zero moments.
+- Reflection-forced critical-line parity.
+- Taylor-normalized zero convergence and reciprocal-moment jet identities.
+- Poisson transfer of zero-free circular log-modulus shells.
 - Achievement-set interval criterion.
-- Exact aggregate/operator comparison of a retained residual.

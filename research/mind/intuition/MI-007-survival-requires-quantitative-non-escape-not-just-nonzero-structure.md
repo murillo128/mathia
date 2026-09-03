@@ -1,48 +1,43 @@
-# MI-007 — Survival requires quantitative non-escape after target rescaling, support growth, and global assembly
+# MI-007 — Survival requires quantitative non-escape across carrier change, target scale, and global assembly
 
-**Evidence level:** supported by exact cross-line compactness, conditioning, microscopic-scale, support-complexity, marked-tail, alias-amplitude, and spectral-localization results
+**Evidence level:** supported by exact compactness, conditioning, transfer, refinement, transversality, operator-domain, and mesoscopic-scale results
 
 ## Core intuition
 
-A structure can survive every finite cutoff in the weakest algebraic sense and still fail to define a stable arithmetic invariant in the limit. Finite injectivity can lose coercivity, witnesses can escape compact sets, a fixed-depth exponent gain can vanish at microscopic scale, a nonuniversal spectral sector can classicalize at every fixed support size, a forced harmonic can have no uniform amplitude, and infinitely many individually small defects can matter only through a collective global object.
+A signal can remain nonzero or exactly recoverable at every finite stage and still become useless in the target limit. It may require representatives outside the source range, lose polynomial strength when summability changes, classicalize in every fixed support or macroscopic refinement channel, survive only as a prime-blind sparse defect, or remain detectable at a norm endpoint where the required nonlocal operator is unbounded.
 
-The common missing resource is **quantitative non-escape in the category, normalization, support scale, and assembly used by the final claim**.
+The common resource is **quantitative non-escape after the actual carrier change and target normalization, not merely persistence of structure**.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity gives the abstract compactness model. AF-071--AF-075 show that excellent finite witnesses do not imply compact-target consequence; the exact gate is coherent/precompact witness realization, equivalently vanishing widths for bounded families. AF-090 adds a range warning: even exact no-loss metric globalization can naturally occur only after bidual relaxation, so remaining in the original source is itself a non-escape requirement.
+Arithmetic Fidelity gives the abstract model. Compact-target fidelity requires coherent/precompact witness families rather than unrelated finite witnesses. AF-092--AF-093 add a different non-escape variable: nonlinear quotient repair is exactly an operator-extension defect on the forgotten barycentric kernel. Existence does not provide a quantitative distance to extendability or source-natural section.
 
-Weil Inertia gives both conditioning and alias-amplitude models. Full row rank can coexist with asymptotically parallel kernels and vanishing lower singular value. More recently, exact mirror symmetry forces every fixed-period off-line screen to leak at some `alpha<=1/2`, but WI-124 is not uniform in growing period and the complete form-factor square allows external cancellation. Nonzero leakage is weaker than a coercive lower bound that survives assembly.
+Möbius Cancellation supplies a transfer-category model. Strong logarithmic decorrelation can coexist with near-linear ordinary sums, bounded harmonic primitives with linear ordinary correlations, and fixed Riesz smoothing with the same critical divisor burden. A power saving survives only if the carrier change includes a quantitative inverse theorem whose loss remains polynomial.
 
-Analytic Frontier and Xi Flow supply scale-collapse models. Fixed-horizontal-depth gains can reduce to constant-factor information when depth is `O(1/log T)`. Xi's absolute-gap budget reaches only `O(log^-2 T)` backward time, and XF-008 shows what survives at fixed time: a `Theta(log^2 T)`-gap Cauchy/half-Laplacian field with algebraic tails, driven by an `R-2` defect of only `O(log^-2 T)`. A theorem must therefore be evaluated after both spatial rescaling and signal-amplitude rescaling.
+Analytic Frontier supplies a complexity-collapse model. Ordered local relations matter, but within the current pressure carrier block size becomes deterministic and point-order headroom tends to zero. More finite states do not constitute non-escape when the carrier's discriminating margin vanishes with complexity.
 
-Prime Circle supplies the support-growth model. Arithmetic defect modes survive universal bulk convergence, yet short/growing chord windows recover the first projector scale, every fixed polynomial support stratum classicalizes to finite-tuple singular-series data, and PC-154 extends that conclusion to all-order `log det` resummation at every fixed connected support size. The possible residual has moved to support complexity growing with conductor or to cross-level/non-scalar assembly.
+Prime Circle supplies support, refinement, and sparse-defect controls. A genuine arithmetic defect subspace survives, yet every fixed support classicalizes; canonical cross-level channels converge to base-level models; and PC-158 shows that the one-hole puncture's order-one spectral-shift budget is bounded and prime-blind. A useful residual must retain coercive mass in a growing/provenance-sensitive sector not washed out by fixed-support, empirical, or matched composite limits.
 
-Prime Flute supplies the marked-tail assembly model. Complete marked tail length functions can approach an all-composite clone uniformly even for arbitrarily complicated tail words. Any separation must come from an infinite-orbit/operator assembly with a proved summability or amplification theorem, not from an individual defect that remains nonzero at each finite stage. Reference stability is an additional non-escape requirement when selected relative scalars can move under admissible reference changes.
+Prime Flute remains an assembly model. Complete marked tail geometries can approach all-composite controls uniformly; pointwise differences matter only if an infinite-orbit/operator assembly amplifies them with a proved summability theorem.
 
-Weil Positivity supplies a domain version. A distributional exact bridge can exist algebraically as point sampling while escaping the natural Hilbert graph topology so badly that it is nonclosable. Formal survival in a rigged/distributional category is not stable operator information unless a source-forced domain controls it.
+Visual Exploration gives a radial-information model. The entire zero-free nested circular shell family is one Poisson orbit; no inward scale refinement adds an independent channel until a zero-entry or domain/center change occurs.
+
+Weil Inertia now separates fixed-period non-escape from source non-escape. WI-125 gives a period-uniform aggregate alias packet, and WI-127 makes Lamzouri transversality extensive for fixed-period repetition. The remaining question is whether the margin survives growing period, root collisions, multiplicity, and arbitrary surrounding zeta zeros.
+
+Weil Positivity supplies domain and depth-law examples. Distributional bridges can exist formally while being nonclosable; anchored subtraction can make a statistic finite while destroying old-semigroup contractivity; repeated-prime coarse response is stationary while regular positive full-spectrum traces are extensive. The target needs a nonzero intensive prime-power birth, so both regular limits miss the required normalization in opposite directions.
+
+Xi Flow provides the clearest joint scale/amplitude tradeoff. Fixed-time memory lives on `Theta(log^2 T)` gaps with Cauchy `|D|` dynamics. Smooth fixed stencils see phase only at `log^-4 T`, while `W^{1,p}` local Lyapunovs control the fractional generator for `p>1` only after renormalization; the raw `p=1` scale is correct but strong `L^1` control fails.
 
 ## Program consequence
 
-For any growing or limiting construction, ask: after the natural target rescaling, is there a uniform coercive margin; do witnesses remain compactly and in-range representable; does support complexity grow in a controlled way rather than classicalize at every fixed level; does a forced alias retain quantitative mass; is the operator/domain closable in the intended category; is the signal stable under reference changes; and do local errors remain controlled after summing the complete global family?
+For every limiting mechanism, demand a uniform target margin in the intended category, a source-range/domain theorem, a controlled complexity/support growth law, a quantitative transfer across changes of summability or norm, and an assembly estimate showing that the residual remains coercive after the full operator/orbit/global sum is formed.
 
-This is stronger than ordinary “preserve information before compression.” The information may remain present while becoming arbitrarily weak, delocalized, support-escaping, gauge-dependent, nonclosable, or visible only through an uncontrolled infinite accumulation.
+This is stronger than information preservation. The data may be present while becoming unextendable, macroscopically universal, prime-blind, nonclosable, stationary/extensive in the wrong variable, or visible only through an endpoint that loses the needed operator bound.
 
 ## Status / novelty
 
-The component compactness, conditioning, rescaling, cluster-expansion, self-inversive, nonclosability, and bilipschitz facts are classical or persisted exact results. The synthesis is the common quantitative resource principle.
+The component compactness, operator-extension, Tauberian, support-growth, Bloch/spectral-shift, Poisson, transversality, Feshbach, and fractional-Sobolev results are classical or persisted exact findings. The synthesis is the common quantitative resource principle.
 
 ## Falsification criterion
 
-Produce a canonical construction whose apparent gain loses compactness, original range, amplitude, finite-support specificity, or domain control under the target rescaling yet still yields a stable source-specific limiting invariant without additional structure. Conversely, prove a uniform microscopic/coercive/support-growth/assembly bound from the arithmetic source.
-
-## Lean-formalizable core
-
-- Precompact witness and width criteria.
-- Lower singular-value stability.
-- Bidual versus original-range fidelity.
-- Mesoscopic rescaling and Cauchy-tail bounds.
-- Fixed-support cluster classicalization versus growing support.
-- Lower-half alias existence versus amplitude lower bounds.
-- Distributional existence versus operator closability.
-- Uniform marked-length comparison versus summation over infinite families.
+Produce a canonical construction whose signal loses range, transfer strength, source specificity, support-scale mass, domain control, or norm coercivity under the target limit yet still yields a stable source-specific invariant without additional structure. Conversely, derive the missing uniform margin from the arithmetic source in one of the live boundary categories.

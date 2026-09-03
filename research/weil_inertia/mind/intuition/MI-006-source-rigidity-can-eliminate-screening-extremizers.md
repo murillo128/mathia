@@ -1,44 +1,50 @@
-# MI-006 — Screening can hide in one marginal while mirror symmetry forces lower-band leakage; extraction is the real gate
+# MI-006 — Mirror symmetry and pre-scalar Hilbert geometry force quantitative leakage in fixed-period screens; source extraction remains the gate
 
-**Evidence level:** supported by WI-115--WI-124 and Fujii/form-factor input in the stated regimes
+**Evidence level:** supported by WI-115--WI-127, with exact quantitative fixed-period results and literature-backed zeta source inputs in the stated regimes
 
 ## Core intuition
 
-Matched controls and source constraints act on different observables. A screening configuration can be perfectly compensated in a counting or moving-edge marginal while necessarily leaking into a conjugate spectral harmonic. The actual zeta same-ordinate mirror symmetry makes that leakage stronger: an off-line finite-period compensator cannot postpone every deterministic alias to the support-one edge. Conversely, the existence of a leaked harmonic is not yet useful unless the final representation extracts enough of it without cancellation from the complement.
+Screening can erase one marginal while forced information survives in another. The recent results substantially strengthen this from qualitative alias existence. For mirror-symmetric periodic cells, off-line displacement forces a **period-uniform packet of lower-half reciprocal alias energy**; in Lamzouri's Hilbert-space formulation, off-real pairs also carry an exact nonnegative anti-invariant transversality remainder before scalar inequalities are applied; and fixed-period repetition makes that remainder extensive.
 
-Thus the durable distinction is **which information channel compensation can erase, where symmetry forces it to reappear, and whether the final observable has a quantitative localization/coercivity theorem for that channel**.
+The remaining problem is no longer whether a canonical fixed-period screen can hide everything. It is whether comparable coercivity survives **growing-period, aperiodic, source-admissible zeta configurations and the complete global assembly**.
 
 ## Strongest justified principle
 
-WI-115--WI-118 make the support-one screening obstruction structural. Universal termwise positivity forces endpoint taper, and Fejér averaging makes the canonical critical-lattice mirror-pair/double-zero statistic asymptotically blind. WI-120 restores a moving-edge response but leaves open cancellation by a surrounding screening background.
+WI-115--WI-122 establish the screening baseline. Support-one termwise positivity can be screened; Fujii moments rule out one long double-density extremizer at positive density; and finite compensated motifs show that bounded counting discrepancy and moving-edge cancellation can coexist with off-line mass.
 
-WI-121 adds independent source rigidity: Fujii short-interval moments rule out the canonical long exact double-density critical-lattice island as a positive-density model for the actual zeta zeros. This narrows one extremizer but does not repair the representation alias.
+WI-123--WI-124 then use conjugation and same-ordinate mirror symmetry to force reciprocal leakage. A genuinely off-line mirror-symmetric period-`P` cell cannot make all first `floor(P/2)` reciprocal power sums vanish; some alias must occur at `alpha<=1/2`.
 
-WI-122 shows why count rigidity alone is insufficient. A compensated finite motif can contain a positive density of off-line mirror pairs while keeping cumulative zero counts within bounded discrepancy of the critical control and cancelling the moving-edge quadratic signal down to lower order.
+WI-125 makes that leakage quantitative uniformly in `P`. If `p_m=C(m/P)` and `q=floor(P/2)`, the weighted first-half mass `sum_{m<=q}|p_m|/m` at or below `log 2` forces every reciprocal root onto the unit circle. Hence any off-line cell has strictly larger weighted mass and, by Cauchy--Schwarz, a period-uniform positive lower bound on total first-half squared alias energy. Growing period cannot make the entire selected-cell lower-half packet disappear in aggregate.
 
-WI-123 proves complementary finite-period rigidity: nonzero horizontal displacement plus aggregate functional-equation balance forces at least one nonzero subcritical reciprocal harmonic. Periodic repetition then gives coherent Bragg-scale mass there.
+WI-126 exposes a second, pre-scalar carrier inside Lamzouri's finite Hilbert inequality. Reconstructing the discarded terms gives an exact decomposition
 
-WI-124 uses the full same-ordinate mirror symmetry `b -> -b`. In reciprocal-cell variables the root multiset is self-inversive. If the first `floor(P/2)` power sums vanished, Newton--Girard plus reciprocal coefficient symmetry would kill every interior coefficient, forcing all roots onto the unit circle and hence every horizontal displacement to vanish. Therefore every genuinely off-line mirror-symmetric `P`-periodic cell has a nonzero alias at some `0<alpha<=1/2`. The finite-period escape of pushing all leakage into `alpha -> 1` is closed exactly.
+`Q-(2N-n)=R_B+R_U+R_M+R_H`,
+
+with every remainder nonnegative. The horizontal block satisfies
+
+`R_H >= 4 sum m_z dist(h_z,V)^2`,
+
+so off-real conjugate pairs carry a basis-independent transversality charge before the final scalar estimate. Finite equality is impossible in the presence of off-real mass, although asymptotic screening can still drive the charge small.
+
+WI-127 closes the fixed-period screening escape for that stronger carrier. Repeating a simple conjugation-symmetric cell with distinct reciprocal roots fiberizes the complete `g/h` system to an invertible Vandermonde matrix. Each omitted anti-invariant `h` direction stays a fixed positive distance from the even/real span, so the Lamzouri horizontal remainder grows linearly with the number of periods, uniformly along the smoothing family approaching the Montgomery--Taylor optimizer.
 
 ## Evidence synthesis and boundaries
 
-The lower-half alias theorem is qualitative in growing period: it does not provide a period-uniform lower bound on the leaked amplitude. Nor does a selected block's coherent mass automatically survive addition of the complementary zeta amplitude before the complete positive square is formed. Irregular, aperiodic, sparse, or growing-period compensators can therefore evade the fixed-cell conclusion quantitatively without contradicting it.
+These results do not yet improve the unconditional zeta proportion. The constants can degenerate when period grows, reciprocal roots approach collision, multiplicities appear, or the selected cell is embedded in a large irregular reservoir. WI-125 controls aggregate reciprocal alias energy of the selected periodic cell, while WI-126--WI-127 control Hilbert transversality for fixed-period repetition; neither yet proves that actual zeta off-line density forces an extensive remainder after arbitrary surrounding zeros are included.
 
-The supported program is two-stage. First convert horizontal defect into a quantitative aggregate of lower-half power-sum mass, or prove that every source-admissible compensator must leak such mass. Then prove an **extraction/localization inequality** preventing the surrounding zero configuration from cancelling that mass at the scale used by the unconditional form factor. Without both steps, leakage is diagnostic rather than coercive.
+The live theorem is therefore a source-transfer/coercivity statement: show that sustained off-line mass in the actual zeta zero process forces a quantitative lower bound on the Lamzouri horizontal remainder or another pre-scalar channel, using unconditional density/correlation inputs to exclude the remaining screening geometries.
 
 ## Status / novelty
 
-Fujii moments, Fejér analysis, self-inversive polynomials, Newton identities, and Bragg harmonics are classical. The persisted synthesis is the channel-transfer view sharpened by exact zeta mirror symmetry: finite-period compensation cannot hide solely at the support edge, but arithmetic use still depends on quantitative amplitude and extraction.
+Self-inversive polynomial criteria, Newton identities, Vandermonde conditioning, shift-invariant fiberization, and Hilbert/Bessel decompositions are classical. The persisted synthesis is the sharpened channel-transfer principle: **fixed-period compensation is quantitatively charged before scalarization; only source-valid global screening remains unresolved**.
 
 ## Falsification criterion
 
-Construct an exactly mirror-symmetric finite-period off-line motif whose reciprocal harmonics all vanish through `alpha=1/2`, contradicting WI-124; or construct a source-admissible growing-period/aperiodic family with quantitatively vanishing lower-half leakage that still performs the required screening. Conversely, a period-uniform defect-to-alias lower bound plus a coercive extraction inequality would materially strengthen the intuition.
+Construct a fixed-period simple mirror-symmetric off-line cell with vanishing first-half aggregate alias energy, or repeated fixed-period cells whose Lamzouri anti-invariant distance is sublinear despite the WI-127 hypotheses. A growing-period/aperiodic source-admissible family with vanishing global transversality would instead delimit the remaining boundary.
 
 ## Lean-formalizable core
 
-- Exact support-one screening identity.
-- Endpoint taper from universal termwise positivity.
-- Finite-motif bounded-discrepancy compensation.
-- Self-inversive coefficient symmetry from `b <-> -b` pairing.
-- Newton--Girard half-range extinction implication.
-- Periodic repetition and Bragg-harmonic amplification.
+- Self-inversive first-half coefficient/alias energy bound.
+- Exact Lamzouri slack decomposition.
+- Basis-independent horizontal transversality lower bound.
+- Fixed-period Vandermonde fiberization and extensive distance.

@@ -1,33 +1,43 @@
-# MI-002 — Finite support-one pair enrichment does not escape scalarization; the honest frontier is a signed profile with normalization slack
+# MI-002 — Universal affine scalar pair certificates collapse to signed support one; out-of-band gain requires a new counting carrier
 
-**Evidence level:** proved for the finite affine/convex support-one classes covered by ANF-003--ANF-005
+**Evidence level:** supported by ANF-003--ANF-005 and the exact out-of-band obstructions ANF-010--ANF-011
 
 ## Core intuition
 
-Adding finitely many pair-correlation channels can look like a move from a scalar statistic to a richer joint object. In the audited common-translation and convex-moment classes, however, affine separation collapses the claimed certificate back to one signed support-one profile. The apparent extra dimension is not retained information at the final decision layer.
+Finite enrichment does not create new pair information when all channels are ultimately compressed into one translation-invariant scalar affine counting functional. ANF-003--ANF-005 reduce that category to one signed support-one profile plus an explicit normalization slack. The newer all-frequency audit sharpens the boundary: the unconditional pair-correlation input has a useful nonnegative tail outside support one, but **no universal scalar affine pair-count certificate can exploit that tail by becoming negative there**.
 
-Allowing the profile to change sign creates a real new degree of freedom, but it is not free: universal validity on tiny zero configurations imposes an explicit normalization slack.
+The surviving out-of-band route must therefore change the zero-side carrier before scalar affine compression: matrix/inertia structure, a zeta-specific inequality, higher-order data, or another non-affine configuration functional.
 
 ## Strongest justified principle
 
-ANF-003 shows that vector features carrying one common translation character have a rank-one frequency dependence after the fixed PSD mixing is evaluated. ANF-004 shows that any affine certificate built from finitely many globally summed support-one pair observables is equivalent to a single signed support-one profile; finite convex optimization has a supporting affine witness of the same form.
+ANF-003 shows that common-translation vector features become one scalar Gram kernel after the common character is integrated out. ANF-004 extends this to finite convex families of already-global pair moments: affine separation yields one signed scalar dual witness. ANF-005 then exposes the unavoidable slack. For a universal certificate
 
-ANF-005 then identifies the unavoidable price of leaving the termwise-positive class. If a universal affine certificate is written with signed pair profile `F`, its normalization parameters must satisfy a nonnegative slack condition forced already by one- and two-point configurations. At zero slack the construction falls back into the nonnegative-kernel Montgomery--Taylor boundary. Any genuine improvement must therefore beat the old ceiling **after** paying the slack.
+`simple-real count >= A N - sum F(z-s)`,
 
-## Evidence synthesis and boundaries
+small configurations force `delta=1+F(0)-A >= 0`, lower bounds on real and imaginary translates, and copositivity constraints. At zero slack one returns to the classical termwise-nonnegative Montgomery--Taylor class.
 
-The result does not rule out infinite-dimensional families, support greater than one, matrix inequalities applied before scalarization, or genuinely higher-order correlations. It also does not solve the signed extremal problem. It says only that finite moment multiplication inside the stated support-one affine class is not an information increase.
+ANF-010 observes that the unconditional BGSST form factor is nonnegative for all real frequencies, so a negative Fourier tail beyond `|alpha|=1` would be analytically favorable if a compatible zero-side certificate existed. Positive scalar Gram kernels cannot do this by Bochner.
+
+ANF-011 closes the broader universal affine scalar escape. If a Fourier--Laplace-admissible scalar profile is nonpositive outside support one with any nontrivial negative tail, its imaginary-axis continuation diverges negatively. A single conjugate pair, however, imposes a universal lower barrier on that same imaginary-axis response. The two requirements are incompatible. Hence the unconditional out-of-band positivity cannot be harvested by merely allowing an indefinite scalar affine pair kernel.
+
+## What remains possible
+
+The signed support-one extremal problem with positive slack remains open. So do carriers that preserve structure before the final scalarization: matrix-valued Hilbert inequalities, inertia/signature identities, ordered local blocks, genuine higher correlations, or source-specific nonlinear counting inequalities. The point is categorical, not that pair correlation has no more information.
+
+Any proposed out-of-band improvement should first state which hypothesis of ANF-011 it leaves. If it remains universal, affine, scalar, translation invariant, and pairwise, the negative-tail escape is already closed.
 
 ## Status / novelty
 
-Convex duality and supporting hyperplanes are classical. The durable content is the exact stopping rule for this analytic branch: finite pair-feature proliferation must be reduced to its single signed witness before novelty or arithmetic power is assessed.
+Bochner positivity, Fourier support, affine duality, and entire Fourier--Laplace continuation are classical ingredients. The persisted synthesis is the exact information boundary: **global scalar pair enrichment stays inside a signed support-one affine class, and the unconditional out-of-band tail becomes usable only after leaving that class on the zero side**.
 
 ## Falsification criterion
 
-Produce a finite support-one construction whose final certificate cannot be represented by one affine signed pair profile under the admitted rules, or solve the signed-profile extremal problem with objective including the forced normalization slack and obtain a strict improvement.
+Construct a universal affine scalar pair-count certificate satisfying the ANF-005 finite-configuration constraints and carrying a nontrivial negative out-of-band tail without violating the ANF-011 conjugate-pair barrier. A positive result outside those hypotheses would evade rather than falsify the intuition.
 
 ## Lean-formalizable core
 
-- Common-character scalarization of PSD feature mixing.
-- Supporting-hyperplane reduction for finite convex moment sets.
-- Tiny-configuration derivation of the normalization slack.
+- Affine scalarization of finitely many pair channels.
+- Normalization-slack inequalities from finite configurations.
+- Bochner obstruction for positive scalar Gram kernels.
+- Imaginary-axis lower barrier from a conjugate pair.
+- Incompatibility of a nontrivial negative out-of-band scalar tail with the universal affine certificate.

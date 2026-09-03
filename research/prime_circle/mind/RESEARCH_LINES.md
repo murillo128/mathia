@@ -2,40 +2,34 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Preserve genuinely cross-level or growing-support information after finite-support scalar classicalization
+## Target the residual after fixed-support, canonical refinement, and one-hole puncture controls
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical` and `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
 
-The audited finite canonical sector now extends through vertexwise Hessians, finite tensor networks, coherent aggregation, scalar spectral moments, fixed Fourier windows, full-chord connected moments, and fixed-support nonpolynomial spectral determinants. PC-149--PC-153 reduce every fixed polynomial support stratum to Hardy--Littlewood tuple singular-series data, and PC-154 shows that resumming all moment orders inside a fixed connected vertex set via `log det` still yields the same finite-tuple arithmetic class.
+Every fixed connected scalar support is controlled by finite Hardy--Littlewood tuple data, including all-orders `log det` resummation. The canonical full-chord refinement carrier is constrained too: PC-155 makes new-prime coarse compression a commuting conjugacy polynomial, PC-156 reduces repeated-prime full fibers to one fixed quadratic pencil, PC-157 makes the new-prime normalized bulk converge to a fixed base-level Bloch law, and PC-158 proves that the one-missing-residue puncture has only a bounded positive spectral-shift budget reproduced by composite fiber sizes.
 
-At the same time the macroscopic defect subspace remains nontrivial. The live target is therefore a conductor-growing support organization, a simultaneous all-cluster resummation with uniform control, or a genuinely cross-level/non-scalar transport not determined by the fixed-support singular-series hierarchy.
+The live target is therefore a conductor-growing support organization, a microscopic fine-fiber residual beyond the one-hole geometry, a provenance-sensitive statistic, or a genuinely noncommuting/nonlinear cross-level coupling that survives all controls in the same topology.
 
 ## Distinguish average top-band capture from uniform subspace fidelity
 
 **Linked intuitions:** `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
 
-Gap-two and short-chord models capture the top band strongly on average, and bounded/growing chord windows recover its Mertens-scale projector, yet operator-norm leakage can remain bounded away from zero. A decisive spectral mechanism must state which topology of subspace recovery its arithmetic conclusion requires.
+Short-chord models recover the first top-band projector strongly in average/Mertens senses while operator-norm leakage can persist. A positive spectral mechanism must state which topology its arithmetic conclusion needs and show that the residual worst-direction subspace remains source-specific after the refinement and prime-blind puncture controls.
 
-A positive should identify a canonical nonlocal correction that closes the worst-angle gap or prove that the residual operator-norm direction carries source-specific information. Average trace/Frobenius locking alone is now a control.
-
-## Locate the first mechanism beyond canonical finite cyclotomic/collision spectralization
+## Locate the first carrier beyond canonical finite cyclotomic/collision spectralization
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`.
 
-Arbitrary finite networks, repeated shells, coincidence strata, fixed depth, Toeplitz/CMV constructions, scalar and projective resultants, full vertexwise collision response, normalized Hessian characteristic polynomials, and finite Hessian tensor networks all classicalize. A genuinely different carrier must be all-shell/provenance-sensitive, singular/domain-changing, or otherwise outside finite confluent collision algebra.
+Finite networks, repeated shells, coincidence strata, Toeplitz/CMV/resultant constructions, vertexwise Hessian collision response, and finite tensor networks all classicalize. A genuinely different carrier must be all-shell, provenance-sensitive, singular/domain-changing, or otherwise outside finite confluent collision algebra.
 
 ## Use compatible completion as a carrier, not as an automatic Hamiltonian
 
 **Linked intuitions:** `MI-004-compatible-completion-lacks-coercive-rh-scale`.
 
-The adelic solenoid preserves exact-order labels, but regular commuting calculi and broad scalar dilation covariances cannot have the desired compact-resolvent scale. Projective-height properization produces compactness but reduces to classical primitive-lattice zeta data.
-
-The live question is whether compatible geometry forces a non-scalar, one-sided, singular, or relative operator scale that is neither a scalar reparametrization of dilation nor a decoded projective height.
+The adelic solenoid preserves exact-order labels, while regular commuting calculi and broad scalar dilation covariances have the wrong compact-resolvent scale. A useful completion must force a non-scalar or relative operator that cannot be decoded as ordinary projective height or scalar dilation.
 
 ## Cross the Hardy boundary before the one-new-prime corrector becomes infinitesimal
 
 **Linked intuitions:** `MI-005-hardy-shell-core-is-universal`.
 
-The canonical Hardy escape is closed through two-scale, conductor, bounded-preconditioning, and scalar-zoom limits: normalized correctors become universal Ramanujan/Carleman data with zero-free Gaussian determinants, while divergent scalar zoom destroys determinant normality.
-
-The surviving boundary is genuinely non-scalar and pre-universalization. A viable Hardy mechanism must act before the one-new-prime split, use a jointly organized all-shell object, or derive an unbounded/domain-changing/nonlinear operation from the geometry itself.
+Canonical conductor limits, bounded preconditioning, and scalar zooms converge to universal Hilbert/Carleman/Gaussian behavior or destroy determinant normality. Any surviving Hardy mechanism must act before universalization, through a jointly organized all-shell object or a geometry-forced non-scalar singular operation.

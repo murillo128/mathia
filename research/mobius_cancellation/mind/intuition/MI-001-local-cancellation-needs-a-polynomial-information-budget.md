@@ -1,45 +1,37 @@
-# MI-001 — Local or qualitative cancellation needs a polynomial information budget to control a global square-root target
+# MI-001 — Fixed-complexity qualitative or logarithmic cancellation has no polynomial global budget; the summability carrier matters
 
-**Evidence level:** supported by MC-001, MC-004--MC-006, and current short-interval/correlation prior art
+**Evidence level:** supported by MC-001, MC-004--MC-006, and the matched-control/Tauberian classifications MC-039--MC-042
 
 ## Core intuition
 
-Very strong local, almost-everywhere, or qualitative pseudorandomness can still be quantitatively too weak for a uniform global square-root target. What matters is not only that most local sums or every fixed correlation eventually cancels, but whether the retained data control coherent exceptional mass and anchored bias at a **polynomial rate**.
+Very strong qualitative pseudorandomness can coexist with nearly linear anchored sums. The current controls now cover exact Möbius support, multiplicativity, strong aperiodicity, all qualitative logarithmic two-point Elliott tests, and every fixed odd-order logarithmic self-correlation. None supplies a fixed power saving. The newer Tauberian audit adds a second separation: even quantitatively small **harmonic** correlation primitives do not become comparably small ordinary correlations without an additional signed inverse mechanism.
 
-The new matched controls show that this is not merely a weakness of one short-interval theorem. Exact square-free support, full qualitative fixed-shift Chowla behavior, multiplicativity, or vanishing normalized mean can each coexist with global sums far above every fixed power saving when the quantitative coupling to the anchored sum is absent.
+The missing resource is therefore not “more fixed-order randomness” but a **polynomial information budget in the same summability/scale category used by the target, or a proved transfer between categories**.
 
 ## Strongest justified principle
 
-MC-001 proves the exact generic short-window transfer
+MC-001 and MC-006 give the generic transfer ceilings. Local-window control and van der Corput convert absolute local/correlation budgets into global cancellation only at the rate actually present in those budgets; logarithmic decay stays logarithmic.
 
-`|T(X)| <= eta X + B + 2H`
+MC-004--MC-005 provide matched controls with exact squarefree support, and then with multiplicativity, whose partial sums remain `x/(log x)^beta` despite strong qualitative cancellation properties.
 
-from relative local size `eta`, exceptional measure `B`, and boundedness. Current almost-all Möbius short-interval inputs therefore yield only logarithmic global saving through this black-box channel; an RH-scale conclusion would require the combined error budget itself to be polynomially small or an additional signed mechanism that avoids the `L^1` loss.
+MC-039 strengthens the multiplicative control: the explicit family is strongly aperiodic and satisfies Tao's complete qualitative logarithmic two-point Elliott conclusion against bounded multiplicative comparators while retaining near-linear anchored sums. MC-040 raises the correlation order: every fixed odd-order logarithmic self-correlation vanishes, yet the same partial-sum asymptotic survives. Increasing fixed qualitative correlation order therefore does not create a polynomial budget.
 
-MC-004 gives a stronger information control. There are deterministic `{-1,0,1}` sequences with exactly the Möbius square-free support and the full qualitative index-two Chowla property, yet with partial sums of order at least `X/log X` along an infinite subsequence. Qualitative fixed-shift cancellation is unchanged by a density-zero coherent overwrite and therefore has no uniform polynomial information budget by itself.
+MC-041 isolates the change-of-summability obstruction exactly. If `H_b(X)=sum_{n<=X}b_n/n`, discrete Abel summation gives
 
-MC-005 restores multiplicativity while keeping exact square-free support and normalized mean zero. Explicit multiplicative controls have
+`B_b(X)=X H_b(X)-sum_{m<X} H_b(m)`.
 
-`sum_{n<=x} a_q(n) ~ C_q x/(log x)^(2/(q-1))`,
+A bound on `sup |H_b|` loses an `X` factor in black-box conversion, and explicit sign sequences can have uniformly bounded harmonic prefixes but linear ordinary sums; the phenomenon can even be realized as a fixed-lag autocorrelation. Quantitative logarithmic Chowla thus needs a genuinely Tauberian/arithmetic bridge before ordinary van der Corput can yield a power saving.
 
-so multiplicativity plus one-point qualitative cancellation still permits arbitrarily slow logarithmic decay. The missing quantitative datum is localized at the prime-value distribution rather than at support or multiplicative consistency alone.
-
-MC-006 makes the correlation rate explicit. Van der Corput gives
-
-`|S(X)|/X << H^(-1/2) + R(X,H)^(1/2)`
-
-for the averaged absolute two-point correlation budget `R`. A fixed power saving requires polynomially long shift range and polynomially small averaged correlation. The current averaged Chowla theorem supplies only logarithmic decay, so its black-box consequence is only logarithmic and is weaker than the classical unconditional Mertens bound.
+MC-042 closes the obvious smoothing workaround. Every fixed-order Möbius Riesz mean has Mellin transform equal to `1/zeta(s)` times a zero-free Gamma quotient, so its `x^(1/2+epsilon)` bound is RH-equivalent for every fixed order. Fixed smoothing changes regularity but not the critical zero-information class. A distinct route must use scale-dependent smoothing, a nonlinear/multiscale carrier, or an independently weaker input together with a quantitative inverse theorem.
 
 ## What remains possible
 
-A useful advance must retain a datum that couples local or correlation information to the anchored sum at polynomial strength: signed overlap between windows, multiplicative prime-local constraints, multiscale compatibility of exceptional sets, bilinear/Type-I-II structure, or higher correlations with a quantitative range uniform enough to survive the transfer.
-
-The decisive object is a transfer inequality, not a randomness analogy. Full qualitative Chowla, exact support, or multiplicativity can remain important ingredients, but they count only when combined with a theorem that rules out the matched coherent controls at the required scale.
+Polynomially quantitative growing-shift correlations, ordinary rather than logarithmic correlations, a source-specific Tauberian identity preserving sign, scale-dependent Riesz laws, bilinear/Type-I-II structure, or higher-order information whose complexity itself grows with scale can lie outside these controls. The requirement is an explicit transfer inequality showing where the polynomial gain enters.
 
 ## Status / novelty
 
-The moving-window and van-der-Corput inequalities, Chowla framework, square-free support, and Selberg--Delange mechanisms are classical. The persisted Mathia synthesis is the quantitative information-budget gate: a statistic becomes RH-relevant only when it controls the anchored sum at polynomial strength or carries enough additional structure to beat the generic absolute-loss transfer.
+The correlation theorems, pretentiousness, Abel summation, Riesz/Mellin factors, and matched multiplicative controls use classical or literature-backed mechanisms. The synthesis is the information-budget boundary: **fixed qualitative complexity and fixed analytic smoothing do not manufacture the exponent needed by the ordinary anchored sum**.
 
 ## Falsification criterion
 
-Give a source-faithful local/correlation statistic claimed to beat the gate and construct compatible sequences with near-linear partial sums, or prove a transfer inequality with a strict polynomial gain after all exceptional-set, correlation-range, and endpoint losses are included.
+Derive a fixed power saving for the anchored sum from only the properties matched by MC-039--MC-040, or a power ordinary-correlation bound from harmonic-prefix magnitudes without additional structure, or show that a fixed-order Riesz critical bound is weaker than RH despite MC-042's zero-free Mellin multiplier.

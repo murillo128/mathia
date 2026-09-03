@@ -1,54 +1,43 @@
-# MI-006 — Classify the boundary model and its information budget before interpreting an escape as arithmetic
+# MI-006 — Classify the boundary carrier and its information budget before interpreting an escape as arithmetic
 
-**Evidence level:** supported by independent exact boundary classifications across Arithmetic Fidelity, Möbius Cancellation, Prime Circle, Prime Lattice, Prime Flute, Visual Exploration, Weil Inertia, Weil Positivity, and Xi Flow
+**Evidence level:** supported by independent exact boundary classifications across the active Mathia research lines
 
 ## Core intuition
 
-Many surviving Mathia routes appear only after an ordinary category fails: refine a representation, change repair range, pass to a mean-absolute target, add prime-power data, take a singular conductor limit, resum infinitely many moments, truncate a periodic model, subtract a relative background, use generalized eigenfunctions, or move to a mesoscopic hydrodynamic scale. The recurring danger is that **the boundary mechanism that revives the signal can itself be universal, classical, presentation-generated, or cancellation-destroying**. Arithmetic significance begins only after that boundary model and its information budget are identified and beaten by a matched control.
+Many plausible advances arise by leaving a category that has just failed: use a nonlinear quotient repair, add higher correlations, move outside Fourier support one, smooth a sum, let support grow, refine a conductor, pass to generalized eigenfunctions, renormalize a zero mode, inspect nested scales, or enter a mesoscopic limit. The recurring danger is that **the new carrier itself has a universal/classical boundary model**. More complexity inside that carrier can then look informative while adding no new source-specific mechanism.
+
+The correct order is: identify the carrier change, classify its complete null/control model, compute what information and scale survive, and only then credit the residual.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity now separates original-range repair from completed repair. Local Lipschitz quotient fidelity already forces same-constant globalization in the bidual and linear splitting after bidualization. If a claimed escape survives only because representatives leave the original source, that range change is part of the mathematical mechanism and must be source-forced.
+Arithmetic Fidelity now gives an exact nonlinear-repair classifier. AF-092 says a Banach extension is Lipschitz-splittable exactly when its class dies after pullback along the Lipschitz-free barycenter map; AF-093 identifies the killed defect as operators on the forgotten barycentric kernel modulo those extendable to the full free space. AF-091 closes the escape for ultrasummand kernels.
 
-Möbius Cancellation shows that changing the target can create a new boundary without simplifying its cancellation algebra. Mean-absolute size has an exact Tanaka decomposition, but periodic multiplicative controls make its natural pieces individually large; the useful object is their coupled signed residual. Accepted covariance clues remain leads rather than evidence until their matched-control statistic is evaluated.
+Analytic Frontier separates two carrier boundaries. Ordered local triples really do preserve information lost by global pair scalarization, but ANF-008--ANF-009 show that block-size tuning and unlimited point order inside the same pressure bridge saturate. Independently, ANF-010--ANF-011 show that the unconditional out-of-band pair-correlation tail cannot be exploited by any universal scalar affine pair certificate with a negative tail. Using that analytic region requires a new zero-side carrier.
 
-Prime Circle now has an unusually sharp support-complexity boundary. Fixed chord words, every fixed polynomial moment, and even the complete `log det` resummation on any fixed connected vertex support reduce after normalization to absolutely convergent Hardy--Littlewood tuple singular-series functionals. Nonpolynomial functional calculus is not an escape when support size stays fixed. The unclassified object is conductor-growing support or genuinely cross-level/non-scalar organization.
+Möbius Cancellation exposes a summability/carrier distinction. MC-039--MC-040 show that exact support, multiplicativity, strong aperiodicity, and every fixed odd-order qualitative logarithmic self-correlation still allow near-linear anchored sums. MC-041 proves that harmonic correlation primitives do not transfer polynomial strength to ordinary correlations without extra signed Tauberian structure. MC-042 closes fixed-order Riesz smoothing because every fixed order retains the same reciprocal-zeta divisor through a zero-free Gamma factor.
 
-Prime Flute supplies resolved relative-summation and marked-tail boundary models: selected threshold/background effects can be removed or matched without producing a zero selector, while complete marked-tail geometry can approach an all-composite control. Any surviving spectral mechanism must appear only after those controls are assembled globally.
+Prime Circle now classifies support, canonical refinement, and the first sparse puncture defect. Fixed connected scalar support reduces to finite-tuple singular-series data. PC-155--PC-157 reduce new-prime coarse transport, repeated-prime full fibers, and new-prime bulk to base-level conjugacy/pencil/Bloch models. PC-158 shows that the one-hole new-prime puncture is an explicit positive spectral shift with only `O(phi(d))` order-one displaced positions and, crucially, the same budget for composite fiber sizes. The most obvious sparse edge residue is prime-blind.
 
-Prime Lattice shows that even genuine zero sensitivity can be a scalar boundary model. Large energy-ball coherence can force zero clusters and prime-axis criteria can be RH-equivalent, yet broad finite-depth/mixed-coordinate constructions scalarize to classical zeta or prime-zeta data. Finite Boolean/Walsh modular enrichments similarly organize genuine arithmetic structure while importing the global analytic continuation from classical modular/Eisenstein theory.
+Prime Lattice supplies a source-rigidity control. PL-136 shows that the full degree-one Selberg global package collapses the unimodular prime torus to ordinary zeta, while PL-138 shows that power-sensitive prime/prime-power metrics are classical relative transfer geometries. Global analytic completion can identify the source; metric closeness can preserve cancellation; neither by itself supplies zero localization.
 
-Visual Exploration now has a complete finite-local-jet baseline at critical-line zeros. After the multiplicity monomial and reflection parity are removed, every fixed log-residual jet of order at least two is only a reciprocal-power moment of the remaining zero set; the quadratic pair statistic lands directly on classical Lehmer-pair crowding. A visual escape must therefore be finite-radius or cross-scale, not merely a higher local derivative rendered in a new coordinate.
+Visual Exploration closes another apparent multiscale carrier. VIS-013 shows that nested circular log-modulus shells inside a zero-free disk are exactly related by the Poisson semigroup. Even infinitely many angular modes gain no new radial information until a zero enters or the domain/center changes.
 
-Weil Inertia narrows periodic screening through source symmetry. Finite-period off-line compensation necessarily leaks into a reciprocal harmonic, and exact same-ordinate zeta mirror symmetry forces some leak already at `alpha<=1/2`. The remaining boundary is not support location but quantitative amplitude and extraction against the complementary zero field.
+Weil Inertia has moved from qualitative alias location to a pre-scalar coercive carrier. WI-125 gives a period-uniform lower-half alias-energy packet; WI-126 exposes an exact nonnegative Lamzouri horizontal transversality remainder; WI-127 makes that charge extensive under fixed-period repetition. The remaining boundary is growing-period/irregular source transfer.
 
-Weil Positivity closes both bounded and canonical distributional exact Gamma bridges. Pure-point/continuous spectral type kills bounded intertwiners; exact generalized-eigenfunction covariance reduces to point sampling/jets and is nonclosable in natural `L^2`, with critical prime-power sampling diverging already at the target half-weight. An anchored subtraction can regularize only by changing the operator to a new coupled geometry.
+Weil Positivity closes both inheritance and regular positive refinement routes. WP-133 proves anchored zero-mode subtraction cannot retain old Gamma heat contractivity unless the form vanishes. WP-134--WP-135 make repeated-prime coarse refinement stationary and reducing with zero self-energy, while WP-136 shows fixed continuous nonnegative full-fiber spectral traces are either zero or extensive in deck multiplicity. Regular positive assembly has the wrong depth law for a constant Mangoldt birth.
 
-Xi Flow identifies a universal fixed-time hydrodynamic boundary. The first perturbative scale carrying order-one heat-time memory is `Theta(log^2 T)` gaps, and after rescaling the universal lattice flow converges to a Cauchy half-Laplacian while its `R-2` driving defect is only `O(log^-2 T)`. Any Xi-specific theorem must beat that nonlocal, vanishing-signal matched control.
+Xi Flow makes the scale/category tradeoff explicit. XF-009--XF-010 show that fixed-radius translation averages lose mesoscopic phase, with smooth ones responding only at `h^4 k^2` while fixed-time flow is `h^2 |k|`. XF-011 gives a nonlinear local escape for `W^{1,p}`, `p>1`, after renormalization, but the scale-matched `p=1` endpoint loses strong fractional-generator control.
 
 ## Consequence for synthesis
 
-For any proposed boundary escape, compute three objects first:
+A proposed escape should be credited only after four objects are explicit: the carrier change, the complete universal/control model inside that carrier, the quantitative information budget after target rescaling, and the matched residual that survives the final assembly. Increasing point count, smoothing order, refinement depth, visual scale, or operator singularity is not evidence by itself.
 
-1. the **boundary control model** — quotient completion, fixed-support cluster expansion, local zero-moment germ, scalar transform, periodic alias, generalized-eigenfunction sampler, or mesoscopic universal flow that appears without the claimed source-specific theorem;
-2. the **information budget** — which distinctions, ranges, correlations, signs, support orders, spectral measures, domains, moments, and asymptotic orders survive;
-3. the **matched residual** — the first invariant left after a non-arithmetic/control construction reproduces the same boundary model in the same category.
-
-Only that residual is eligible for a novelty or RH-relevance claim.
+The strongest positive pattern is a source-forced carrier whose boundary model already contains a quantitative sign/coercivity mechanism. The strongest negative is a factorization showing the entire escape becomes universal, prime-blind, stationary/extensive in the wrong variable, or otherwise loses the target before the final theorem.
 
 ## Status / novelty
 
-The individual boundary mechanisms are persisted exact findings with classical ingredients. The boundary-model/information-budget rule is supported cross-line synthesis, not a theorem that every singular, limiting, nonlinear, or growing-support construction classicalizes.
+The component free-space, pressure, Fourier--Laplace, Tauberian, Riesz, Bloch, Selberg, Poisson, self-inversive, Hilbert-transversality, spectral-shift, Feshbach, and fractional-Sobolev mechanisms are classical or persisted exact results. The synthesis is a cross-line research discipline, not a universal theorem that every category change classicalizes.
 
 ## Falsification criterion
 
-Produce a canonical boundary transition whose leading model is intrinsically source-specific and survives a matched non-arithmetic control, or show that subtracting an identified control destroys a genuinely source-specific invariant present only in the full object.
-
-## Lean-formalizable core
-
-- Bidual/original-range repair separation.
-- Fixed-support determinant-cluster decomposition.
-- Local log-residual jet to reciprocal-zero-moment identity.
-- Self-inversive lower-half alias theorem.
-- Distributional Gamma level-set/closability classification.
-- Mesoscopic half-Laplacian scaling and Cauchy tail bound.
+Produce a source-forced carrier change whose leading boundary model is not reproducible by the applicable controls and whose residual remains quantitatively coercive in the final category, or show that one of the stated controls fails inside its exact hypotheses.

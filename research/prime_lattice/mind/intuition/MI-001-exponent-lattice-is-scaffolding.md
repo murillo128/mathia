@@ -1,43 +1,43 @@
-# MI-001 — The exponent lattice is scaffolding; functional equation and zero selection require extra global structure
+# MI-001 — The exponent lattice is scaffolding; global completion can select the arithmetic source but not the zero divisor
 
-**Evidence level:** supported
+**Evidence level:** supported by deformation controls, converse rigidity, and exact scalarization results
 
 ## Core intuition
 
-The prime-exponent lattice is an exact and useful representation of multiplication, but its abstract combinatorics and many natural scalar harmonic observables are too universal to determine Riemann zero geometry. What remains distinctive is not the free cone itself but the **rational-prime norm assignment together with a global additive/modular completion and an independently forced observable that cannot be scalarized to a pre-existing one-variable zeta/prime-zeta readout**.
+The prime-exponent lattice exactly represents multiplication, but its free combinatorics, local phase geometry, and many natural scalar observables are too universal to determine Riemann zero geometry. Strong global analytic structure can nevertheless be genuinely discriminating: in the degree-one Selberg category it collapses the entire unimodular prime-phase torus to ordinary zeta. That is **source identification**, not RH. The missing step remains an independently forced positivity/unitarity/polarization theorem on a zero-sensitive representation.
 
-Recent modular examples sharpen the point: finite Boolean prime cubes can participate in genuine modular-unit, cusp, Fricke, and Atkin--Lehner structure, but that analytic structure is an enrichment supplied from outside the bare exponent lattice. The lattice can organize a duality once given; it does not generate the Riemann functional equation merely from multiplication.
+This separates three layers that should not be conflated: multiplicative scaffolding, global analytic/source rigidity, and zero localization.
 
 ## Strongest justified principle
 
-PL-015 gives the decisive deformation control: Beurling generalized-prime systems can preserve the free exponent cone, square-free Boolean sector, Euler architecture, square-root-scale generalized-integer regularity, and arbitrarily long ordinary-prime prefixes while having different zero behavior. PL-022 and PL-032 show that ordinary topology and persistence classicalize, so RH remains cancellation rather than a new topological lifetime.
+PL-015 gives the deformation control. Beurling systems can preserve the free exponent cone, squarefree Boolean sector, Euler architecture, strong generalized-integer regularity, and arbitrarily long ordinary-prime prefixes while changing zero behavior. Bare exponent geometry is therefore not a zero selector.
 
-PL-014 identifies structure those controls need not preserve. The finite-idelic valuation quotient and product formula place the logarithmic norm inside Tate's completed additive/Fourier setting. PL-134 makes the separation theorem-like: under the Hilberdink--Lapidus hypotheses, a completed Beurling functional equation is equivalent to a **global reciprocal modular-inversion identity** for smoothed generalized-integer sums. Functional equation therefore belongs to a global summation/Fourier-duality layer, not to the local multiplicative cone alone.
+PL-014 and PL-134 identify the added global layer. Tate's finite-idelic/product-formula completion and Hilberdink--Lapidus reciprocal smoothed summation show that functional equation belongs to additive/Fourier/global reciprocal structure, not merely to the multiplicative cone. PL-135 gives a concrete finite-level control: Boolean/Walsh modular enrichment can be real and natural while the global zeta/Eisenstein analytic factor is imported from modular theory.
 
-PL-135 supplies a concrete positive control. At squarefree level, Walsh characters exactly diagonalize divisor complement and the tensor Ligozat matrix, and current prior art couples the same finite Boolean cube to eta units, cusps, Fricke and Atkin--Lehner actions. Yet its Dirichlet series factors as a finite Boolean Euler polynomial times the classical Eisenstein factor `zeta(u) zeta(u-1)`. The modular continuation is inherited from eta/Eisenstein theory in the modular variable; the finite cube does not localize Riemann zeros. This is a model example of **real enrichment without intrinsic zero selection**.
+PL-136 gives a much stronger positive rigidity benchmark. An arbitrary unimodular prime phase `omega_p` defines a Helson/Euler product in `Re(s)>1`. If that object satisfies the full global degree-one Selberg-class package, classical Kaczorowski--Perelli/Soundararajan classification forces the conductor-one unshifted case, hence `omega_p=1` for every prime and the function is exactly `zeta(s)`. The global analytic package can therefore select the distinguished prime-torus point completely.
 
-PL-106 adds a programmable-readout control: a finite `log n` Hamiltonian plus arbitrary diagonal phase produces the corresponding Dirichlet polynomial. The spectrum is a universal frequency carrier unless the coefficient observable is forced upstream. PL-108--PL-113 sharpen the harmonic boundary: scalar coherence can carry genuine zero information, but fixed-depth or symmetric mixed-coordinate couplings repeatedly reduce to zeta/prime-zeta data under Mellin/Fourier diagonalization.
+But this rigidity stops exactly where RH starts. It identifies zeta; it does not force its zeros to the critical line. The functional equation supplies the self-dual axis, while localization still requires a sign, Hodge, unitary, or equivalent coercive principle.
 
-## Evidence against overgeneralization
+PL-106 and PL-108--PL-113 give readout controls: programmable diagonal phases, fixed-depth full-lattice statistics, symmetric multi-coordinate couplings, and relative-log-prime pair kernels repeatedly scalarize to Dirichlet, zeta-ratio, or prime-zeta data. PL-138 adds a metric control. Power-sensitive prime/prime-power pretentious distances are classical and can transfer a known power cancellation exponent to a close comparator, but the reference cancellation is assumed rather than generated. Weighted prime-torus geometry is a stability mechanism, not a source of the half exponent by itself.
 
-This does not say mixed-prime geometry or modular enrichment can never matter. PL-112--PL-113 leave asymmetric, growing-degree, non-Fourier-Stieltjes, operator-valued, singular, or globally completed couplings outside scope. PL-135 also shows that finite exponent geometry can be a natural coordinate system for substantial arithmetic structure once a modular curve and eta/Eisenstein theory are supplied.
+## Evidence synthesis and boundaries
 
-Likewise Tate and reciprocal modular inversion explain continuation and the self-dual axis, not why every zero lies there.
+This does not rule out mixed-prime geometry, asymmetric growing-degree interactions, noncommutative completions, or a source-forced metric coupled to an independent positivity theorem. Nor does PL-136 apply to arbitrary weakened functional equations or generalized-prime frequency sets; its degree-one Selberg hypotheses are load-bearing.
+
+The test for a proposed lattice mechanism is therefore twofold: does the global completion genuinely distinguish ordinary rational-prime arithmetic from Beurling/Helson controls, and after that distinction is made, what theorem constrains the already-selected zeta zero divisor?
 
 ## Status / novelty
 
-The adelic identification, Beurling controls, Hilberdink--Lapidus converse, Boolean/Walsh theory, modular-unit prior art, zeta-ratio identities, prime-zeta theory, and Fourier diagonalization are classical or literature-backed. The synthesis is the supported discriminator: **multiplicative scaffolding can organize but does not by itself generate the global duality or the zero selector**.
+Tate theory, Beurling systems, Selberg-class degree-one classification, pretentious transfer, Boolean/Walsh modular theory, and scalar Fourier/Mellin reductions are classical or literature-backed. The synthesis is the layered boundary: **global analytic structure can rigidify the source completely while leaving zero selection untouched**.
 
 ## Falsification criterion
 
-Derive the completed Riemann functional equation from the bare exponent lattice and rational-prime norm without importing an equivalent global reciprocal/Fourier/modular identity, or produce a finite-level Boolean/Walsh modular observable whose zero-localizing content is not inherited from the supplied modular/Eisenstein analytic layer or reducible to finite Euler factors.
+Produce a nontrivial everywhere-unimodular prime-torus point satisfying the degree-one Selberg package, or derive RH localization from source identification alone without an additional sign/unitary/coercive input. A new completion category outside the stated controls would need its own matched deformation audit.
 
 ## Lean-formalizable core
 
-- Exponent-cone and square-free identities.
-- LogPrime `[b,2b)` persistence.
-- Boolean complement/Walsh diagonalization and tensor eigenvalues.
-- Universal diagonal Dirichlet-polynomial encoder.
-- Fixed-depth zeta-ratio scalarization.
-- Symmetric-depth Newton/prime-zeta reduction.
-- Relative-log-energy pair Fourier scalarization.
+- Exponent-cone and squarefree identities.
+- Degree-one Selberg specialization to the full unimodular prime torus.
+- Distinction between source identification and zero localization.
+- Fixed-depth/relative-log scalarization controls.
+- Pretentious metric transfer versus generation of cancellation.

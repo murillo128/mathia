@@ -2,56 +2,42 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Distinguish exact rational-prime completion and irreducible readouts from Beurling, axis-only, Galois-scalarization, and trace-formula controls
+## Separate source rigidity from zero localization
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, and `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
 
-The free cone, ordinary topology/persistence, generic local temperedness, and programmable `log n` readouts do not determine Riemann zeros. Full-lattice fixed-depth observables and relative-log-prime pair kernels scalarize to zeta ratios or prime-zeta spectra. PL-114--PL-117 show that fixed congruence/Galois, profinite class-function, and compatible `l`-adic labels do not automatically create an intrinsic cross-prime matrix frame. PL-124 adds a global control: Poisson--Newton already converts general Dirichlet frequency lattices into divisor trace formulas, while zeta's logarithmic coefficients collapse the full cone to prime-power rays.
+The bare exponent cone and broad scalar readouts remain flexible under Beurling/Helson controls, but PL-136 shows that the full degree-one Selberg analytic package rigidifies the entire unimodular prime-phase torus to ordinary zeta. The source-selection problem is therefore classically solvable in a sufficiently strong global category.
 
-A surviving lattice mechanism must therefore use rational-prime completion plus a readout that is independently forced, irreducibly global, and not already supplied by character scalarization or universal Dirichlet trace machinery.
+The live RH problem begins after that selection. A decisive mechanism must put a positive/unitary/Hodge-type structure on a zero-sensitive representation or derive an equivalent sign theorem; identifying the correct Euler product and functional equation is not enough.
+
+## Demand a source mechanism, not only a stability metric
+
+**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
+
+PL-138 shows that power-sensitive prime and prime-power pretentious metrics are established transfer geometries. They can preserve a cancellation exponent supplied by a reference function, but they do not create that reference cancellation or intrinsically select the half exponent.
+
+A surviving metric proposal must explain where the zeta-specific reference state, critical normalization, or positivity comes from. Reweighting prime coordinates or adding finitely many prime-power rays is not by itself a new RH mechanism.
 
 ## Target the arithmetic polarization rather than another spectral realization
 
-**Linked intuitions:** `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
+**Linked intuitions:** `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-Deninger identifies the Hodge/polarization mechanism that would force the half-axis; Meyer already realizes every zeta zero spectrally with an exact adelic trace formula; Suzuki already supplies an unconditional positive zeta-derived Hilbert norm. PL-125--PL-133 add a different achievement: the Grosswald--Schnitzer reflection phase can identify the arithmetic generator system even though the whole deformation class shares the same zero divisor.
+Meyer realizes the zeta divisor spectrally, Suzuki supplies positive zeta-derived Hilbert structure, Grosswald--Schnitzer phase can identify arithmetic generators inside a same-zero family, and PL-136 can select zeta in the degree-one Selberg category. The missing theorem is the arithmetic identification/polarization that makes the zero-sensitive object itself positive or unitary in the way required to exclude off-axis spectrum.
 
-The missing theorem is still the identification of the zero-sensitive representation/form with a positive or unitary structure strong enough to exclude off-line spectrum. Exact source recovery is not a substitute for that polarization.
-
-## Quantify the finite integer phase fingerprint rather than reopening its existence
+## Quantify finite integer phase fingerprints without mistaking them for zero selection
 
 **Linked intuitions:** `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-For real Grosswald--Schnitzer controls, every finite natural phase fingerprint has local aliases, while an accumulating exact phase set determines the full deformation. For integer controls, compactness turns phase-arc injectivity into a finite tail-uniform fingerprint for every fixed low-prime prefix.
+For integer Grosswald--Schnitzer controls, compactness yields finite tail-uniform fingerprints for every fixed low-prime prefix, whereas continuous controls have finite-data aliases. The open question is quantitative conditioning and canonical sample placement as the cutoff grows, not the existence of finite-prefix identifiability.
 
-The open question is now quantitative: estimate the separation margin and sample complexity as the cutoff grows, or identify an explicit canonical sampling set. This line concerns arithmetic fidelity/conditioning, not RH localization; the existence question itself is closed.
+## Resolve target-sensitive Nyman data and nontrivial prime-shift actions
 
-## Resolve the discrete Nyman defect with target-sensitive data
+**Linked intuitions:** `MI-003-nyman-obstruction-is-target-data` and `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`.
 
-**Linked intuitions:** `MI-003-nyman-obstruction-is-target-data`.
+Generator Gram geometry can miss the Nyman target, and ordinary prime-shift covariance is either too rigid or too automatic. A useful continuation must retain the distinguished target or derive a one-sided/ramified/noncompact action whose invariant is forced by the exact rational-prime completion.
 
-Generator Gram geometry cannot see a common off-line Blaschke factor, while the discrete Nyman problem is a target/model-space totality question. A useful advance must retain the distinguished target or equivalent divisibility/model-space data and prove a quantitative or structural converse.
+## Target residuals beyond coherent sampling, Poisson bulk, and completed-Weil scalar boundaries
 
-## Replace prime-shift covariance by a genuinely discriminating action
+**Linked intuitions:** `MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary`, `MI-006-second-scale-weil-signal-is-diagnostic-not-generative`, and `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
 
-**Linked intuitions:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`.
-
-Exact prime-shift covariance is too rigid, while weak resolvent/projective cocycle variants are too automatic. The live question is a target-relative, one-sided, ramified, or noncompact-reference action with a nontrivial invariant forced by the exact rational-prime completion.
-
-## Locate or rule out the remaining natural completed-Weil boundary regime
-
-**Linked intuitions:** `MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary`.
-
-Completion cancels the universal PNT rank-one mode; fixed smoothing, decompactification, broad moving bands, and natural fixed-depth bands are strongly constrained. A decisive positive topology must live at or beyond the remaining transition, be defined before inspecting zeros, and distinguish rational primes from Beurling controls.
-
-## Determine whether the second-scale boundedness criterion can be derived upstream rather than read from the zero expansion
-
-**Linked intuitions:** `MI-006-second-scale-weil-signal-is-diagnostic-not-generative`.
-
-On fixed smooth cross-end probes the critical second amplitude gives an almost-periodic zero signal whose boundedness can be RH-equivalent, but its dynamics and finite-horizon resonances are generic. The live route is to derive the needed bound directly from rational-prime/completion structure without reimporting the explicit zero expansion.
-
-## Target the residual after both coherent sampling and Poisson bulk controls
-
-**Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
-
-Deterministic prolate/Nyquist models and generic Poisson bulk already reproduce the ordinary growing Gram behavior through strong norms and log-determinant scale. The live target is the residual beyond both controls: microscopic/hard-edge correlations, target-relative Schur complements, singular growing tests, or a completed indefinite Weil observable that distinguishes rational primes from generalized-prime/Poisson models.
+Deterministic sampling models, Poisson bulk, fixed smoothing, and broad natural bands already reproduce much of the ordinary operator behavior. The live target is a microscopic/hard-edge, target-relative, singular, or completed indefinite residual that distinguishes rational primes from those controls and whose zero-sensitive bound is derived upstream rather than read from an explicit zero expansion.

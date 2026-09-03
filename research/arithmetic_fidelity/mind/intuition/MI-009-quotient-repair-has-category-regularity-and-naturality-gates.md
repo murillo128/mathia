@@ -1,42 +1,50 @@
-# MI-009 — Quotient repair is a category, compactness, range, regularity, and naturality problem
+# MI-009 — Lipschitz quotient repair is an exact operator-extension defect; range, regularity, and naturality remain separate gates
 
-**Evidence level:** supported by AF-078--AF-090; exact in the stated Banach, compact-fiber, bidual, and finite-dimensional models
+**Evidence level:** supported by AF-078--AF-093; exact in the Banach/Lipschitz-free category stated there
 
 ## Core intuition
 
-The statement that information can be recovered after a quotient is incomplete until the admissible category, gluing topology, and target range are named. Linear, continuous metric, globally Lipschitz, homogeneous, equivariant, order-compatible, differentiable, and locally conical repairs have different boundaries. Independently, local repairs globalize only when compatible choices cannot escape across finite subsets, and even exact globalization may land naturally in a completion rather than the original source.
+The question “can information be repaired after a quotient?” is category-relative, but in the Lipschitz Banach setting the nonlinear-versus-linear gap is now much more precise than a hierarchy of examples. For an extension `0 -> K -> E -> F -> 0`, Lipschitz repair exists exactly when its extension class dies after pullback along the barycenter map of the Lipschitz-free space. The killed obstruction is concretely **operator data on the forgotten barycentric kernel modulo data that extend to the full pre-compression free space**.
 
-Thus **existence with optimal fidelity, range fidelity, and naturality are separate gates**. A repair can globalize with no metric loss in the canonical bidual while still failing to provide an original-space linear section or a canonical arithmetic representative.
+Thus a category change helps exactly by making a previously nonextendable fiber datum extendable. It does not automatically provide quantitative stability, source naturality, equivariance, or a repair in a stricter category.
 
 ## Strongest justified principle
 
-AF-078 identifies the linear endpoint: a bounded linear repair exists exactly when the quotient splits, with noncanonical shear freedom unless extra structure selects one. AF-081 shows that uniformly convex geometry can choose a canonical continuous homogeneous minimum-norm representative even for an uncomplemented quotient, so nonlinear metric repair is a real escape.
+AF-078 identifies the linear endpoint: bounded linear repair is equivalent to splitting the quotient. AF-081 shows that nonlinear geometry can select canonical continuous homogeneous representatives even when linear splitting fails, while AF-082/AF-084 identify regularity thresholds that force linearity back.
 
-AF-082 and AF-084 locate rigidity thresholds: for separable Banach quotients, a global Lipschitz section forces linear splitting; for positive-homogeneous sections, a bounded-linear tangent at the apex forces global linearity. AF-083 and AF-085--AF-087 refine the surviving middle category by bounded-scale and tangent-cone moduli.
+AF-087--AF-090 clarify locality and range. A Lipschitz section on one nontrivial ball globalizes in the relevant category; bidual relaxation always yields strong linear structure, so “repair exists after completion” is weaker than original-range repair.
 
-AF-088--AF-089 add the compactness axis. Local finite-subset Lipschitz selections globalize with exactly the same constant when compatible fiber slices are compact and the metric constraints are closed. Reflexivity is only one way to obtain that compactness; weak-star compact dual fibers give the same exact globalization in nonreflexive settings.
+AF-091 closes a large part of that apparent escape. If the forgotten kernel `K` is an ultrasummand, any local Lipschitz quotient repair already forces the original exact sequence to split linearly. Hence a genuinely Lipschitz-but-not-linear example must simultaneously evade target-side separable linearization and kernel-side bidual descent.
 
-AF-090 identifies what remains when the original source lacks such compact fibers. Any local `L`-Lipschitz right inverse globalizes canonically at the level of existence to an `L`-Lipschitz section `F -> E**`. More strongly, the induced Lipschitz retraction onto the kernel forces local complementation, so `q**:E**->F**` has a bounded linear right inverse. The nonlinear local escape therefore cannot avoid linear structure indefinitely: after bidualization the exact sequence splits. The unresolved boundary is whether the required representatives stay inside `J_E(E)` with the desired quantitative fidelity and source naturality. The Aharoni--Lindenstrauss nonseparable control shows that original-space linear splitting cannot be inferred in full generality.
+AF-092 gives the exact homological classifier. If `xi in Ext(F,K)` is the extension class and `beta_F : F(F) -> F` is the Lipschitz-free barycenter map, then
+
+`Lipschitz repair <=> beta_F^*(xi)=0`,
+
+while linear repair is `xi=0`. The nonlinear defect is therefore `ker beta_F^*`, with the optimal Lipschitz constant equal to the optimal norm of the corresponding linear lift on the free space.
+
+AF-093 resolves that kernel into concrete fiber data. Writing `Z_F=ker beta_F`,
+
+`ker beta_F^* ~= L(Z_F,K) / {restrictions of bounded operators F(F)->K}`.
+
+A nonzero nonlinear-repair class is exactly a bounded operator on the forgotten barycentric fiber that does not extend linearly across the full free space. Target lifting property and ultrasummand coefficients are two independent mechanisms forcing every such operator to extend.
 
 ## Evidence synthesis and boundaries
 
-These results do not make quotient repair canonical. Compactness or bidualization proves existence of compatible representatives, but does not supply equivariance, uniqueness, provenance preservation, measurability in external parameters, or a preferred section. Those properties can be exactly the arithmetic content a proposed representation needs.
+This classification is algebraic/category-exact, not yet a quantitative stability theorem. The quotient of operator spaces need not have a closed range or canonical norm measuring distance to extendability. Nor does the free-space section automatically respect arithmetic provenance, group actions, positivity, locality, or a stricter admissible recovery class.
 
-Conversely, failure of original-space linear splitting is no longer evidence that local Lipschitz repair is an unconstrained nonlinear phenomenon. AF-090 forces local linear splitting of the kernel and full linear splitting after bidualization. A claimed escape must therefore name the range/category in which it genuinely survives.
+Discriminator-specific recovery can also require much less than a full quotient section. The exact extension model applies when complete representative recovery is the claimed task.
 
 ## Status / novelty
 
-Banach-space splitting, local complementation, Lipschitz retracts, compactness principles, minimum-norm selections, and the Aharoni--Lindenstrauss/Godefroy--Kalton boundaries are classical. The synthesis is the repair hierarchy together with the sharper rule: **compact or bidual compatibility can remove globalization loss while leaving original-range and naturality fidelity as independent arithmetic gates**.
+Lipschitz-free spaces, barycenter maps, Banach `Ext`, pushouts, operator extension, and ultrasummand theory are classical. The persisted synthesis is the fidelity interpretation: **nonlinear repair forgets precisely a class of nonextendable operators on the compression fiber**.
 
 ## Falsification criterion
 
-Exhibit a local Lipschitz quotient section covered by AF-090 whose kernel is not locally complemented or whose bidual quotient does not split linearly; or show that bidual splitting alone forces an original-space, source-natural repair in the unrestricted nonseparable setting. Alternatively, cross one of the stated regularity rigidity thresholds without inducing the corresponding split.
+Produce a Lipschitz-splittable extension whose class is not killed by `beta_F^*`, or a nonzero class in `ker beta_F^*` whose corresponding barycentric-kernel operator nevertheless extends. For an arithmetic application, a positive must additionally derive the required range, stability, and naturality from the source.
 
 ## Lean-formalizable core
 
-- Linear section/complemented-kernel equivalence.
-- Minimum-norm representative in strictly/uniformly convex spaces.
-- Lipschitz-section implication to linear splitting in the separable case.
-- Homogeneous-apex linearization rigidity.
-- Compact-fiber finite-intersection globalization with preservation of the Lipschitz constant.
-- Local Lipschitz patch `=>` Lipschitz kernel retraction `=>` local complementation `=>` bidual linear splitting.
+- Lipschitz section/free-space linearization equivalence.
+- Pullback splitting criterion `beta_F^*(xi)=0`.
+- Long-homology identification of the kernel with an operator-extension quotient.
+- Ultrasummand and target-lifting injectivity gates.

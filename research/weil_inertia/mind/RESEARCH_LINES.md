@@ -6,22 +6,18 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses`.
 
-Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Continue to audit the exact represented object before strengthening inequalities on it.
+Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Audit the complete represented object before strengthening inequalities on it.
 
-## Turn mirror-forced lower-band leakage into quantitative source coercivity
+## Extend fixed-period transversality to growing-period and source-admissible zeta screening
 
 **Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction` and `MI-006-source-rigidity-can-eliminate-screening-extremizers`.
 
-Universal termwise-positive support-one kernels remain screened, and bounded-discrepancy compensated motifs show that zero counts and the first moving-edge marginal are insufficient. But the finite-period escape is now much narrower. WI-123 forces some reciprocal leakage below support one, and WI-124 uses the actual same-ordinate functional-equation mirror symmetry to force a nonzero alias already at `0<alpha<=1/2`; exact finite-period compensation cannot store all of its leakage near the support-one edge.
+The finite-period branch is now quantitatively rigid. WI-125 gives a period-uniform first-half alias-energy floor for every off-line mirror-symmetric cell. WI-126 identifies an exact nonnegative Lamzouri horizontal remainder that charges anti-invariant off-real directions, and WI-127 proves that fixed-period repetition makes this charge extensive.
 
-The live theorem is quantitative and global. Derive a period-uniform lower bound, or another aggregate coercive estimate, converting horizontal defect into lower-half alias mass; then prove that a positive density of such mass cannot be cancelled by the complementary zeta amplitude before the complete unconditional form-factor square is formed. A growing-period/aperiodic construction with quantitatively negligible first-half aliases would be a decisive obstruction.
+The live theorem is no longer “find some leaked harmonic.” It is to prevent transversality from collapsing when the cell period grows, roots nearly collide, multiplicities appear, or the selected pattern is embedded in an arbitrary external zero reservoir. A decisive positive would derive an extensive lower bound from unconditional zeta source constraints; a decisive negative would build a source-admissible growing-period/aperiodic screen with vanishing normalized horizontal remainder.
 
 ## Move from residual rank to quantitative source coercivity
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`, `MI-004-w-conditioning-is-l2-compressible-but-l1-expensive`, and `MI-005-rank-restoration-is-not-quantitative-coercivity`.
 
-WI-094--WI-103 classify the pairwise residual branch far beyond a rank ceiling: positive-density defect energy is small, every free-cycle sector is phase-pure, admissible prime denominators are odd and gap-coprime, full packing collapses to a finite circle rotation, and the defect islands are exact triangles.
-
-WI-104 shows that two full-packed targets can restore full source row rank, but WI-105--WI-114 show that rank is not coercivity. Near-parallel kernels survive broad linear rescue schemes and quantitative near-nullity persists under increasingly strong distributional inputs.
-
-The surviving fourth-moment route must therefore prove **quantitative source coercivity** from information absent from the covered full-packed blocks: source coefficients, noninvertible/rectangular selection, genuinely cross-target processing, positive-slack regimes, cross-scale coupling, or a non-scalar object formed before Ramanujan reduction. Generic full rank or conditioning obtained only by a diverging whitening transform is no longer a distinct mechanism.
+The pairwise residual branch has been classified far beyond rank: full-packed blocks become rigid finite geometries, while multi-target rank restoration can still have collapsing singular values. A surviving fourth-moment route must prove a quantitative source lower bound from information absent in the covered full-packed blocks rather than relying on generic full rank or diverging whitening.

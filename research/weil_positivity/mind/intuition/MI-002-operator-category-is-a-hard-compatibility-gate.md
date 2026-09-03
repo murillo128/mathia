@@ -1,42 +1,43 @@
-# MI-002 — Operator category, spectral type, and closable domain are hard compatibility gates for cross-branch positivity
+# MI-002 — Operator category, spectral type, closable domain, and sign inheritance are hard compatibility gates
 
 **Evidence level:** proved for the audited Prime-Flute/Prime-Lattice and radial/solenoid comparisons; supported as a broader gate
 
 ## Core intuition
 
-Two constructions can carry closely related arithmetic-looking kernels or even the same scalar dispersion law and still be unable to represent the same positive operator. The audited bridges now expose four independent compatibility gates: operator ideal/category, positivity under the category-changing operation, spectral type, and the **domain/closability** of any singular intertwiner. Matching eigenvalue formulas on a dense sample is not an operator bridge when one carrier is pure point and the other continuous, and distributional generalized eigenvectors do not repair that mismatch inside the natural Hilbert geometry.
+Matching scalar kernels or dispersions does not identify positive operators. The audited bridges now expose distinct gates for operator ideal, positivity under category change, spectral type, closable domain, and **inheritance of a sign/contractivity theorem after renormalization**. A singular subtraction can make a previously divergent statistic finite while simultaneously destroying the dynamics from which its positivity was supposed to descend.
 
-A viable cross-branch identification must therefore transport not only a scalar symbol but the relevant spectral measure/type, a closable domain or alternative source-forced Hilbert structure, and the sign theorem needed at the destination.
+A viable bridge must therefore transport the entire analytic category needed by the final theorem, or else admit that a new operator has been created and prove its sign from scratch.
 
 ## Strongest justified principle
 
-WP-014 compares the canonical exact Prime-Flute Schiffer compression with the positive finite-Weil operator. The former is trace class; the latter lies in `S_q` exactly for `q>2` and is not Hilbert--Schmidt. Bounded coordinate changes, compressions, and congruences cannot cross that ideal boundary.
+WP-014 places the Prime-Flute Schiffer compression and the finite-Weil operator on opposite sides of a Schatten boundary. Bounded sandwiches and compressions cannot bridge trace class to the slower Weil tail.
 
-WP-015 tests the natural singular/boundary escape. Prime-Flute zero-energy DtN is positive, but spectral continuation loses self-adjoint positivity; on the critical scattering line the outgoing response is non-Hermitian because of universal cusp flux. A category-changing boundary operation therefore does not inherit a Weil-type sign theorem automatically.
+WP-015 shows that a natural boundary category change does not preserve sign automatically: zero-energy DtN is positive, while critical scattering continuation is non-Hermitian because of cusp flux.
 
-WP-130--WP-131 add the spectral-type obstruction. The canonical solenoid Gamma generator samples the same scalar Gamma dispersion on the rational character spectrum, while the radial/log-scale Gamma generator realizes that dispersion as a continuous Fourier multiplier. After bounded heat functional calculus, the solenoid operator has a complete pure-point eigenbasis and the radial operator has no nonzero `L^2` eigenvectors. Consequently every bounded exact intertwiner in either direction is zero.
+WP-130--WP-131 add spectral type. The solenoid Gamma generator is pure point on rational characters while the radial Gamma generator has continuous multiplier spectrum. Even after bounded heat functional calculus, every bounded exact intertwiner in either direction is zero.
 
-WP-132 closes the most immediate generalized-eigenfunction escape on the canonical Schwartz/character cores. Exact distributional intertwiners are forced coordinatewise onto Gamma level sets: away from zero they are weighted point evaluations at `±2π|q|`, and translation covariance reduces them to rational point samplers; the zero coordinate is at most a first jet. Every nonzero such sampler is nonclosable as an operator from natural radial `L^2`. Reverse exact intertwiners also vanish when they are closable and contain the finite-character core. At the critical Prime-Lattice amplitudes, reciprocal prime-power sampling fails even to be `ell^2`-valued at `sigma=1/2`, reproducing the independent WP-032 threshold.
+WP-132 closes the canonical exact distributional escape. Such intertwiners collapse to rational point samples/jets on Gamma level sets, are nonclosable from natural radial `L^2`, and at the critical prime-power amplitudes fail even the required `ell^2` summability.
+
+WP-133 closes the tempting claim that anchored zero-mode subtraction can regularize the critical sampler while retaining the old Gamma Markov sign. On every finite set of distinct positive Gamma frequencies, a positive quadratic form that kills constants and is contractive under one nontrivial Gamma heat step must vanish identically. The Vandermonde orbit of the constant vector fills the whole value space. Therefore any nontrivial anchored positive form necessarily abandons contractivity under the old semigroup.
 
 ## Evidence synthesis and boundaries
 
-The escape is not “no singular geometry exists.” A zero-mode subtraction makes the critical sampling energy finite, but WP-132 shows that this subtraction changes the exact diagonal Gamma covariance and introduces a triangular coupling. Likewise an altered Hilbert norm, a boundary trace, a domain-changing quotient, or a non-exact intertwining response can evade the theorem. Such moves are **new operators**, not hidden equivalences between the existing carriers, and must derive their domain and positivity from the arithmetic geometry itself.
+A new triangular generator, boundary response, altered Hilbert geometry, quotient, cohomological complex, or non-exact coupling can evade these theorems. But such a construction is not a hidden equivalence of the old carriers. Its domain, closability, critical scale, and sign theorem must be derived independently.
 
-The four gates are logically distinct. Crossing a Schatten boundary does not preserve sign; changing spectral type distributionally does not give a closable Hilbert operator; and square summability above the critical sampling threshold does not repair point-evaluation nonclosability.
+The gates are independent. Crossing an ideal boundary does not preserve sign; matching point spectra distributionally does not give a closable operator; square summability does not repair point evaluation; and making a form finite by anchoring does not preserve semigroup contractivity.
 
 ## Status / novelty
 
-Trace-ideal closure, boundary/Weyl theory, the spectral theorem, point-supported distribution theory, and normal-operator intertwining theory are standard. The project-specific synthesis is the exact placement of Mathia candidates on incompatible sides of Schatten class, critical-line positivity, pure-point/continuous spectral type, and natural-domain closability.
+Trace ideals, boundary/Weyl theory, spectral-type decomposition, distribution-supported intertwiners, and Lyapunov/contractivity arguments are classical. The project-specific synthesis is the exact placement of the Mathia candidates across these incompatible categories.
 
 ## Falsification criterion
 
-Construct a nonzero closable exact Gamma intertwiner on the canonical WP-132 cores, a bounded nonzero exact intertwiner from WP-131, or a bounded transformation of the PF-085 trace-class compression yielding the finite-Weil operator. A genuinely altered operator/Hilbert geometry with an independently proved sign theorem would evade rather than falsify the gate.
+Construct a nonzero bounded/closable exact Gamma intertwiner in the covered categories, or a nonzero positive constant-killing finite Gamma form satisfying the WP-133 heat contractivity inequality. A genuinely altered operator with its own sign theorem would evade rather than falsify the gate.
 
 ## Lean-formalizable core
 
-- Ideal property under bounded sandwiches and compressions.
-- Schatten criterion for the prime-power finite-Weil operator.
-- Loss of ordinary DtN positivity after positive-energy continuation.
-- Vanishing of bounded intertwiners across pure-point/continuous spectral type.
-- Distributional support on multiplier level sets and collapse to point samples/jets.
-- Nonclosability of nonzero point evaluation from `L^2`.
+- Schatten ideal invariance under bounded transformations.
+- Loss of DtN positivity under positive-energy continuation.
+- Vanishing bounded intertwiners across pure-point/continuous spectral type.
+- Nonclosability of point-evaluation intertwiners.
+- Vandermonde kernel propagation for anchored contractive forms.
