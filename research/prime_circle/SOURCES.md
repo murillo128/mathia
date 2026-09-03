@@ -169,3 +169,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Prime-pair singular-series averages and zeta zeros
 
 - D. A. Goldston and Ade Irma Suriajaya, **A singular series average and the zeros of the Riemann zeta-function**, *Acta Arithmetica* 200 (2021), 71–90. DOI: 10.4064/aa200821-24-2. arXiv:2007.16099. Role: equation (2.2) gives exactly the Hardy--Littlewood prime-pair singular-series Dirichlet generating function used in PC-151, with meromorphic continuation through `zeta(s) zeta(s+1) / zeta(2s+2)` and explicit zero-dependent Riesz-mean residues; primary prior-art anchor showing that the zeta-zero sensitivity of the full-chord spectral Mellin displacement is inherited classical singular-series structure rather than a new Prime-Circle zero mechanism.
+
+## Linked-cluster and forest expansions
+
+- Abdelmalek Abdesselam and Vincent Rivasseau, **Trees, forests and jungles: a botanical garden for cluster expansions**, in *Constructive Physics*, Lecture Notes in Physics 446, Springer (1995), 7–36. DOI: 10.1007/3-540-59190-7_20. arXiv:hep-th/9409094. Role: classical Brydges--Kennedy forest interpolation and linked-cluster tree expansions; prior-art anchor for the spanning-tree majorant and connected induced-subset log-determinant clusters in PC-154.
