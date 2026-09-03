@@ -8,13 +8,13 @@ This file holds the current mathematical lines of investigation suggested by the
 
 Global Fenchel coupling can remove artificial blockwise optimization loss, but no optimizer can reconstruct a discriminator already erased by the represented Gram/pressure data. Continue to audit the exact represented object before strengthening inequalities on it.
 
-## Treat screening as an information-bandwidth obstruction, then test the extremizer against source arithmetic
+## Turn mirror-forced lower-band leakage into quantitative source coercivity
 
 **Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction` and `MI-006-source-rigidity-can-eliminate-screening-extremizers`.
 
-Universal termwise-positive support-one pair kernels are forced into the endpoint-tapered screened class, so the compressed representation alone cannot distinguish the critical-lattice mirror-pair/double-zero control. But WI-121 shows that long exact double-density screening islands are arithmetically negligible at positive zero density by Fujii's unconditional number variance.
+Universal termwise-positive support-one kernels remain screened, and bounded-discrepancy compensated motifs show that zero counts and the first moving-edge marginal are insufficient. But the finite-period escape is now much narrower. WI-123 forces some reciprocal leakage below support one, and WI-124 uses the actual same-ordinate functional-equation mirror symmetry to force a nonzero alias already at `0<alpha<=1/2`; exact finite-period compensation cannot store all of its leakage near the support-one edge.
 
-The live question is therefore an extraction theorem: prove that cancellation of a positive density of moving-edge horizontal signal forces Fujii-controlled overcrowding or another independently bounded zeta statistic. The algebraic alias remains a control; source inadmissibility of one extremizer is not by itself a reconstruction theorem.
+The live theorem is quantitative and global. Derive a period-uniform lower bound, or another aggregate coercive estimate, converting horizontal defect into lower-half alias mass; then prove that a positive density of such mass cannot be cancelled by the complementary zeta amplitude before the complete unconditional form-factor square is formed. A growing-period/aperiodic construction with quantitatively negligible first-half aliases would be a decisive obstruction.
 
 ## Move from residual rank to quantitative source coercivity
 

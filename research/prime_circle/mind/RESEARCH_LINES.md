@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Preserve genuinely cross-level information after finite, Fourier, local-chord, and connected-moment classicalization
+## Preserve genuinely cross-level or growing-support information after finite-support scalar classicalization
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical` and `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
 
-The audited finite canonical sector extends through vertexwise Hessians, finite tensor networks, coherent aggregation, scalar spectral moments, fixed Fourier windows, and now local/full-chord low-order spectral corrections. PC-149--PC-152 identify the first full-chord layers as classical pair and triple Hardy--Littlewood singular-series functionals.
+The audited finite canonical sector now extends through vertexwise Hessians, finite tensor networks, coherent aggregation, scalar spectral moments, fixed Fourier windows, full-chord connected moments, and fixed-support nonpolynomial spectral determinants. PC-149--PC-153 reduce every fixed polynomial support stratum to Hardy--Littlewood tuple singular-series data, and PC-154 shows that resumming all moment orders inside a fixed connected vertex set via `log det` still yields the same finite-tuple arithmetic class.
 
-At the same time the macroscopic defect subspace remains nontrivial. The live target is therefore a cross-level or growing-support organization not determined by the finite-support singular-series hierarchy, rather than another fixed local network or low connected moment.
+At the same time the macroscopic defect subspace remains nontrivial. The live target is therefore a conductor-growing support organization, a simultaneous all-cluster resummation with uniform control, or a genuinely cross-level/non-scalar transport not determined by the fixed-support singular-series hierarchy.
 
 ## Distinguish average top-band capture from uniform subspace fidelity
 

@@ -46,13 +46,15 @@ Arbitrary dependent sources have an exact degree filtration given by fusion span
 
 A decisive theorem should compute both the source-dependent retained support and a global lower fusion-frame/closed-sum modulus for a mathematically forced family.
 
-## Make repair geometry intrinsic to the admitted representation and regularity category
+## Make repair geometry intrinsic to the admitted representation, range, and regularity category
 
 **Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision`, `MI-003-fidelity-endpoints-are-category-dependent`, and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-The finite-dimensional boundary remains geometry-dependent: strongly-convex contact order and polyhedral norming faces produce different safe-lift laws. AF-078--AF-087 add a second axis. Linear repair requires a split quotient and is noncanonical under shears; uniformly convex metric geometry can select a canonical continuous nonlinear representative beyond splitting; but global Lipschitz regularity or a bounded-linear tangent at the homogeneity apex collapses the escape back to linear splitting.
+The finite-dimensional boundary remains geometry-dependent: strongly-convex contact order and polyhedral norming faces produce different safe-lift laws. AF-078--AF-089 add category and compactness gates: linear repair requires splitting; uniformly convex geometry can select a canonical nonlinear representative; strong regularity can force linearity back; and compact compatible fibers can globalize local Lipschitz repair with no loss.
 
-A decisive positive must derive the repair category from the source rather than choose it after the fact, then prove the exact stability/naturality required there. A decisive negative is an admissible re-encoding that changes the contact modulus, a shear that destroys canonicity, or a rigidity theorem showing that the requested regularity already forces a forbidden split.
+AF-090 narrows the unrestricted nonreflexive escape further. A local Lipschitz right inverse already globalizes with the same constant after canonical bidual relaxation, forces local complementation of the kernel, and makes the full bidual quotient split linearly. The live issue is therefore **original-range and source-natural fidelity**: when does the mathematically forced category keep representatives inside `E` rather than only `E**`, with the required quantitative constant and provenance/equivariance?
+
+A decisive positive must derive that original-range/naturality mechanism from the source. A decisive negative is a source-admissible quotient for which every faithful repair must leave the original range, lose the required stability, or become noncanonical even though the bidual problem is completely solvable.
 
 ## Prove cross-scale compactness before promoting finite-resolution witnesses to compact-target fidelity
 
