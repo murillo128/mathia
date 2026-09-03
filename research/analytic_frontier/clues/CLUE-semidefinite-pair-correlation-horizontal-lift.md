@@ -19,6 +19,7 @@ based_on:
   - research/analytic_frontier/findings/ANF-013-duplicated-lattice-tests-periodization-barrier.md
   - research/analytic_frontier/findings/ANF-014-mellin-periodization-defect-budget.md
   - research/analytic_frontier/findings/ANF-015-mobius-oscillation-strictly-improves-mellin-lattice-floor.md
+  - research/analytic_frontier/findings/ANF-016-cubic-positive-spectrum-beats-thermodynamic-lattice-ratio.md
   - research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier.md
   - research/weil_inertia/findings/WI-118-termwise-positive-support-one-pair-kernels-are-screened.md
   - research/prior_art/montgomery-pair-correlation.md
@@ -28,106 +29,110 @@ based_on:
 
 ## Observation
 
-`ANF-002` shows that Lamzouri's conjugation-invariant Hilbert inequality extracts unconditional horizontal information from the BGSST complex-zero pair-correlation formula. `ANF-003` and `ANF-004` then show that common-translation vector features and finite convex lifts add no information if they are compressed to scalar global pair moments before the counting step. `ANF-005` isolates the remaining affine support-one problem: with normalization slack `delta`, any improvement over Montgomery--Taylor must satisfy
+`ANF-002` shows that Lamzouri's conjugation-invariant Hilbert inequality extracts unconditional horizontal information from the BGSST complex-zero pair-correlation formula. `ANF-003` and `ANF-004` show that common-translation vector features and finite convex lifts add no information if they are compressed to scalar global pair moments before the counting step. `ANF-005` isolates the residual universal affine support-one question.
+
+The sign freedoms in that scalar branch are now tightly constrained. `ANF-010` shows that BGSST's all-frequency positivity is analytically sufficient to discard a Cohn--Elkies negative outer tail, but a scalar PSD Gram kernel cannot carry such a tail. `ANF-011` removes the PSD assumption for the out-of-band route: a nontrivial negative Fourier--Laplace tail violates the universal conjugate-pair floor. `ANF-012` closes the analogous compact-band spectral-sign loophole: universality over conjugation-invariant multisets forces every continuous compact-band spectral profile `J` to satisfy `J>=0`. The only scalar sign freedom left is therefore **spatial** sign change of `F=widehat J`.
+
+`ANF-013`--`ANF-015` then tested that freedom on long real lattices. With
 
 \[
-M(F)+\delta<m_{\rm MT},
-\qquad
-m_{\rm MT}=0.3274992963\ldots .
+P_J(h)=\frac1h\sum_{k\in\mathbb Z}J(k/h),\qquad
+p(J)=\inf_hP_J(h),
 \]
 
-The scalar freedom is now much narrower than it first appeared. `ANF-010` identifies BGSST's unconditional all-frequency positivity as enough to discard a Cohn--Elkies negative outer tail on the analytic side, but shows that a scalar PSD Gram kernel cannot carry that tail. `ANF-011` removes the PSD assumption for the out-of-band route: a nontrivial negative Fourier--Laplace tail drives the scalar kernel to `-infinity` on the imaginary axis and violates the universal conjugate-pair floor. `ANF-012` closes the analogous compact-band loophole. For every continuous real-even compact-band profile `J`, universality over conjugation-invariant complex multisets forces `J>=0` by high-multiplicity conjugate binomial-comb tests. Thus a universal affine support-one scalar certificate is automatically positive-definite on the real line. Its remaining sign freedom is only **spatial** sign change of `F=widehat J`, paid for by `delta`; the spectral density itself cannot be signed.
-
-`ANF-013` adds a thermodynamic real-configuration filter to that residual branch. Long simple and duplicated arithmetic lattices force
+the long simple/duplicated lattice family gives the survival ratio `C(J)/p(J)<C_MT`. `ANF-014` rewrites this ratio as a positive Mellin defect above `1+3/pi^2`; `ANF-015` proves the first Mellin floor is strictly non-sharp and introduces the multiplicative packing dual
 
 \[
-A\le \min(1+P_J(h),2P_J(h)),
-\qquad
-P_J(h)=\frac1h\sum_{k\in\mathbb Z}J(k/h),
+\sum_{n\ge1}w(nt)\le t^{-2},\qquad
+D(w)=1+\int_1^\infty w(t)\left(1-\frac1t\right)dt.
 \]
 
-at every spacing. If `p(J)=inf_h P_J(h)` and `C(J)` is the BGSST pair cost, optimizing the amplitude of a fixed shape is capped by `max(0,2-C(J)/p(J))`. Therefore any scalar improvement over Montgomery--Taylor must first satisfy the scale-free survival condition `C(J)/p(J)<C_MT`.
-
-`ANF-014` shows that this ratio is itself rigid. The Mellin transform of the all-scale periodization gives
+`ANF-016` now resolves that thermodynamic subproblem in the opposite direction from a no-go theorem. The explicit cubic spectrum
 
 \[
-\frac{C(J)}p
-=1+\frac{3}{\pi^2}
-+\left(1-\frac{3}{\pi^2}\right)\left(\frac{J(0)}p-1\right)
-+\frac{6}{\pi^2}\int_1^\infty
-\left(\frac{P_J(h)}p-1\right)\frac{dh}{h^2}.
+J_*(x)=1-\frac38|x|-\frac74|x|^2+\frac98|x|^3
+\qquad(|x|\le1)
 \]
 
-Thus the lattice constraints alone force `C/p>=1+3/pi^2=1.3039635509...`, leaving only `Delta_MT=0.0235357454...` of total nonnegative defect below Montgomery--Taylor. Any survivor must have `J(0)/p<1.0338139554` and weighted periodization excess below `0.0387147494`.
-
-`ANF-015` then shows that the `ANF-014` floor is **strictly non-sharp**. The full family `P_J(h)>=p` has a multiplicative packing dual: every nonnegative weight `w` with `sum_n w(nt)<=t^{-2}` gives a lower bound for `C/p`, and `w_0(t)=6/(pi^2 t^2)` is exactly the saturated witness producing `1+3/pi^2`. Möbius inversion gives feasible compactly supported slack directions whose reduced cost is controlled by
+is nonnegative, has `p(J_*)=1`, and has exact cost
 
 \[
-m_1(x)=\sum_{n\le x}\frac{\mu(n)}n-\frac{M(x)}x.
+C(J_*)=\frac{53}{40}=1.325<C_{\rm MT}.
 \]
 
-Its Mellin transform is `1/(s(s-1)zeta(s))`; Landau oscillation therefore forces both signs, and any negative interval yields a strictly better dual witness. Hence there exists an unknown but fixed `delta_lat>0` with
+Moreover its spatial kernel satisfies
 
 \[
-\frac{C(J)}{p(J)}\ge1+\frac3{\pi^2}+\delta_{\rm lat}.
+\widehat J_*(m)=-\frac1{16\pi^2m^2}<0
+\qquad(m\in\mathbb Z\setminus\{0\}),
 \]
 
-The formal Möbius equality profile from `ANF-013`--`ANF-014` is consequently not admissible in the nonnegative spectral class. What remains unknown is quantitative: whether the optimized lattice dual can supply the entire `Delta_MT` gap and reach `C_MT`.
+so it realizes precisely the spatial-sign escape left open by `ANF-012`. Weak duality immediately gives `D(w)<=53/40` for every admissible `ANF-015` packing witness. Therefore **the optimized thermodynamic packing dual cannot reach Montgomery--Taylor**. The all-scale periodization stage is settled: finite-size, non-lattice or complex configuration information is genuinely required to close the remaining universal affine scalar route.
 
-The configuration-level branch behaves differently. `ANF-006` records a fully checked local ordered-gap certificate beating the Montgomery--Taylor baseline, proving that information preserved before global scalar compression can matter. `ANF-007` shows that two points are insufficient inside that bridge; `ANF-008` shows block size is forced once the finite certificate is fixed; and `ANF-009` shows that merely increasing point order in the unchanged pressure family has an envelope returning to the baseline. The demonstrated escape is therefore real, but the present local bridge also has a structural ceiling unless its information carrier changes.
+The configuration-level branch remains distinct. `ANF-006` records a fully checked local ordered-gap certificate beating the Montgomery--Taylor baseline, while `ANF-007`--`ANF-009` show that simply increasing block size or point order inside the same pressure architecture does not supply a durable asymptotic strategy. Its next escape must alter the information carrier or bridge itself.
 
 ## Research question
 
 Two distinct questions remain.
 
-First, in the **universal affine support-one scalar** class, let `J>=0` be continuous, real-even and supported in `[-1,1]`, put `F=widehat J`, and let `p=p(J)>0`. How large is the optimum of the multiplicative packing dual isolated in `ANF-015`, and do the lattice constraints alone force
+First, in the **universal affine support-one scalar** class, what is the next finite-configuration obstruction beyond thermodynamic periodization? For the explicit `J_*` of `ANF-016`, if
 
 \[
-\frac{C(J)}{p(J)}\ge C_{\rm MT}?
+F_*=\widehat J_*,
+\qquad
+L_n(h)=F_*(0)+2\sum_{k=1}^{n-1}
+\left(1-\frac{k}{n}\right)F_*(kh),
 \]
 
-Equivalently, can the strict but unquantified `delta_lat` be raised to at least `Delta_MT`, or can one construct a lattice-feasible profile that remains strictly below Montgomery--Taylor? If the latter survives, do the remaining universal complex-configuration constraints close the gap?
+do finite simple/duplicated arithmetic progressions already force the largest admissible intercept `A` back to
 
-Second, in the **configuration-level** class, what genuinely new local memory, nonlinear defect, matrix/inertia statistic, window accounting, or analytic bridge can retain a fixed gain after the `ANF-007`--`ANF-009` filters? Simply enlarging scalar block size or point count inside the existing `F/Phi_n` pressure architecture is already ruled out as a durable asymptotic strategy.
+\[
+A-C(J_*)\le2-C_{\rm MT}?
+\]
+
+If not, can a lattice-surviving positive spectrum pass all finite real configurations, and where do vertically displaced conjugate configurations first impose a stronger constraint?
+
+Second, in the **configuration-level** class, what genuinely new local memory, nonlinear defect, matrix/inertia statistic, window accounting or analytic bridge can retain a fixed gain after the `ANF-007`--`ANF-009` filters? Simply enlarging scalar blocks or point count inside the existing `F/Phi_n` pressure family remains ruled out as a durable asymptotic strategy.
 
 ## Why it may matter
 
-For the scalar branch, `ANF-015` converts the near-saturation question into a concrete dual optimization and proves that the first Mellin witness was not optimal. Reaching `C_MT` in that dual would close the entire thermodynamic-lattice survival stage before arbitrary complex configurations need to be tested. A dual optimum below `C_MT`, ideally paired with a near-matching primal profile, would identify exactly how much room remains for spatial sign changes.
+The scalar branch has crossed a useful boundary. Before `ANF-016`, it was still plausible that optimizing the infinite-lattice packing dual might close the entire residual route without inspecting finite configurations. That is now impossible: an exact primal witness lies below Montgomery--Taylor. Any complete scalar no-go theorem must identify information that the thermodynamic limit discards.
 
-The configuration-level branch is the known escape from scalar compression. Its next value lies in identifying exactly what extra pre-compression information survives the current local-pressure obstructions and can still be evaluated unconditionally for zeta zeros.
+Finite arithmetic progressions are the cheapest next layer because they retain explicit boundary corrections while staying exactly computable. If those corrections alone restore the Montgomery--Taylor ceiling, they would explain precisely why the thermodynamic cubic survivor is spurious. If they do not, the surviving candidate becomes a concrete probe for the first genuinely non-lattice or complex obstruction.
+
+The configuration-level branch is the known escape from scalar compression. Its value lies in identifying pre-compression information that survives current local-pressure obstructions and can still be evaluated unconditionally for zeta zeros.
 
 ## Decisive test
 
-For the scalar branch, first optimize or bound the `ANF-015` multiplicative packing dual
+For the scalar branch, begin with the exact finite-lattice energies
 
 \[
-\sum_{n\ge1}w(nt)\le t^{-2},
-\qquad
-w\ge0,
+L_n(h)=F_*(0)+2\sum_{k=1}^{n-1}
+\left(1-\frac{k}{n}\right)F_*(kh).
 \]
 
-with objective
+A simple `n`-site lattice gives an intercept constraint of the form `A<=1+L_n(h)`, while duplicating every site gives `A<=2L_n(h)`. Optimize these constraints over bounded `n` and `h`, first for `J_*` and then, only if necessary, for nearby positive-spectral perturbations.
+
+A rigorous pair `(n,h)` for which the duplicated/simple finite-volume constraint implies
 
 \[
-D(w)=1+\int_1^\infty w(t)\left(1-\frac1t\right)dt.
+A-C(J_*)\le2-C_{\rm MT}
 \]
 
-A rigorous witness with `D(w)>=C_MT` closes the lattice survival stage. A rigorous dual ceiling below `C_MT`, or a lattice-feasible primal profile with `C/p<C_MT`, would show that non-lattice or complex configurations are genuinely needed. Explicit negative intervals of the centered Möbius sum give certified improving perturbations of the Mellin witness and are the cheapest route to a quantitative lower bound on `delta_lat`.
+kills the cubic survivor and exposes a finite-size no-go mechanism worth generalizing. If every finite lattice test remains above the benchmark, move next to arbitrary finite real configurations and then conjugation-invariant complex multisets. A profile surviving these stages would still require a proof of the complete universal affine counting inequality before it could support any new zeta-zero proportion.
 
-Any primal candidate must still pass the `ANF-014` defect budget and, if it survives the lattice stage, the complete universal counting inequality including non-lattice real configurations and vertically displaced conjugate configurations.
+For any proposed out-of-band scalar construction, apply `ANF-011` before optimization. For any compact-band spectrally signed construction, apply `ANF-012`. Those branches remain closed unless the information carrier changes or the inequality becomes zeta-specific rather than universal.
 
-For any proposed out-of-band scalar affine construction, apply `ANF-011` before optimization. For any compact-band spectrally signed construction, apply `ANF-012`: the conjugate-comb tests already make it impossible under universal affine counting. A proposal survives these filters only by changing the information carrier or by proving a zeta-specific inequality that does not quantify over arbitrary conjugation-invariant multisets.
-
-For the configuration-level branch, first apply the exact block cap from `ANF-008` and the point-order envelope from `ANF-009`. A surviving proposal must alter the local functional or bridge itself and then provide an evidence-matched finite inequality plus a complete passage to zeta zeros at the claimed trust tier.
+For the configuration-level branch, first apply the exact block cap from `ANF-008` and the point-order envelope from `ANF-009`. A survivor must alter the local functional or bridge and then provide an evidence-matched finite inequality plus a complete passage to zeta zeros at the claimed trust tier.
 
 ## Evidence boundary
 
-No universal affine support-one improvement and no complete Montgomery--Taylor no-go theorem for the remaining positive-spectral/spatially-signed class is established. `ANF-012` proves spectral positivity under its continuity and compact-support hypotheses; it does not imply `F(x)>=0`. `ANF-013` supplies the exact long-lattice necessary ratio, `ANF-014` rewrites that ratio as a nonnegative Mellin defect, and `ANF-015` proves that the resulting floor `1+3/pi^2` is strictly non-sharp by constructing an abstract improving dual direction from Möbius sign oscillation. `ANF-015` does **not** quantify `delta_lat`, prove that the optimized lattice dual reaches `C_MT`, or prove that any profile below `C_MT` satisfies the universal affine inequality.
+`ANF-016` is an exact **thermodynamic survivor**, not a universal affine certificate and not a `67.5%` zeta-zero theorem. It proves only that positive spectral density plus all long-lattice periodization constraints permit `C/p<C_MT`, and therefore that the `ANF-015` packing dual has optimum strictly below `C_MT`. Finite-volume lattice constraints, non-lattice real configurations and complex conjugate configurations are not controlled by that result.
 
-`ANF-011` closes the useful negative out-of-band Fourier--Laplace tail only for the universal affine scalar template. Zeta-specific, non-affine, higher-order, matrix/inertia-before-compression and local ordered-configuration mechanisms remain outside that theorem.
+`ANF-011` and `ANF-012` still close useful negative out-of-band tails and compact-band spectral sign changes inside the universal affine scalar template. Zeta-specific, non-affine, higher-order, matrix/inertia-before-compression and ordered-configuration mechanisms remain outside those theorems.
 
-`ANF-006` establishes one verified local configuration-level gain, while `ANF-007`--`ANF-009` constrain only the registered pressure family. They are not ceilings for richer Bellman/coboundary, altered-window, multi-profile, matrix or otherwise modified pre-compression methods.
+`ANF-006` establishes one verified configuration-level gain, while `ANF-007`--`ANF-009` constrain only the registered pressure family. They are not ceilings for richer Bellman/coboundary, altered-window, multi-profile, matrix or otherwise modified pre-compression methods.
 
 ## Research disposition
 
-Accepted and narrowed. The scalar branch is now a **multiplicative packing-dual optimization problem** rather than merely a near-saturation ansatz: Möbius oscillation already proves a strict arithmetic stability gap above `1+3/pi^2`, and the decisive unresolved question is whether that gap can be quantified all the way to `C_MT`. Spectrally signed compact-band profiles and useful negative out-of-band scalar tails remain closed by `ANF-012` and `ANF-011`. The configuration-level branch remains open only through a genuine carrier or bridge change, not larger scalar blocks or point-count escalation in the existing pressure family.
+Accepted and narrowed. The thermodynamic multiplicative-packing stage is **resolved by counterexample**: `ANF-016` gives an explicit positive spectrum with `p=1` and `C=53/40<C_MT`, so no packing-dual optimization over the `ANF-015` constraints can recover Montgomery--Taylor. The live scalar question moves to finite-volume, non-lattice and complex universal configuration constraints. The configuration-level branch remains open only through a genuine carrier or bridge change.
