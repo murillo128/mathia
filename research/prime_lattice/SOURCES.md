@@ -293,3 +293,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 74. **Titus W. Hilberdink, Michel L. Lapidus**, “Beurling Zeta Functions, Generalised Primes, and Fractal Membranes,” *Acta Applicandae Mathematicae* **94**(1) (2006), 21–48. DOI: https://doi.org/10.1007/s10440-006-9063-0. arXiv: https://arxiv.org/abs/math/0410270.
     - Role: main prior-art anchor for `PL-134`. Proposition 3.1 derives the Mellin identity `G(s)zeta_P(s)=Mellin(F)(s)` first in the absolute-convergence strip and continues it from asymptotics of the smoothed generalized-integer sum. Theorem 3.2 characterizes generalized functional equations by the reciprocal modular relation `F_1(x)=x^(-1)F_2(1/x)+H(x)`, including the residual polar terms, and allows the two sides to come from different generalized-prime systems. This isolates global inversion data as the extra structure behind a Beurling zeta functional equation rather than an automatic consequence of the free exponent lattice or Euler product.
+
+## Pretentious prime-phase geometry and PNT-edge zero-free metrics
+
+75. **Andrew Granville, K. Soundararajan**, “Decay of Mean Values of Multiplicative Functions,” *Canadian Journal of Mathematics* **55**(6) (2003), 1191–1230. DOI: https://doi.org/10.4153/CJM-2003-047-0.
+    - Role: primary mean-value anchor for `PL-137`. States Halász's controlling parameter as the minimum over vertical characters of the prime sum `sum_(p<=x)(1-Re(f(p)p^(-iy)))/p` and gives an explicit normalized mean-value bound with principal factor `<<(1+M)e^(-M)`. In prime-torus coordinates this parameter is exactly the `1/p`-weighted chordal distance to the `log p` Kronecker orbit.
+
+76. **Dimitris Koukoulopoulos**, *The Distribution of Prime Numbers*, Graduate Studies in Mathematics **203**, American Mathematical Society, Providence, 2019.
+    - Role: systematic pretentious-number-theory anchor for `PL-137`. The metric formulation used in Theorem 8.3 is the source cited by the modern zero-free-region extension for recasting the Hadamard--de la Vallée Poussin/Mertens `3-4-1` argument as a triangle inequality between multiplicative phases.
+
+77. **Nawapan Wattanawanichkul**, “A metric approach to zero-free regions for L-functions,” *European Journal of Mathematics* **12** (2026), Article 30. DOI: https://doi.org/10.1007/s40879-026-00913-5. Published 6 July 2026.
+    - Role: current theorem-level anchor for `PL-137`. Defines a prime-power/logarithmic-derivative family of metrics for `sigma>1`, rewrites them using logarithmic derivatives of standard and Rankin--Selberg `L`-functions, recovers the Mertens `3-4-1` inequality in the zeta case, and proves classical zero-free regions under the paper's stated self-duality hypotheses. It confirms that prime-coordinate metric geometry has genuine zero-exclusion content at the PNT edge while remaining distinct from an RH/critical-line mechanism.
