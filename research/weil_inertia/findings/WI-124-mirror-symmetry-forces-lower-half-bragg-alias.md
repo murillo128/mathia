@@ -249,14 +249,19 @@ The result is **not quantitative uniformly in `P`**. For a sequence of growing-p
 
 The theorem also does not identify a nonzero reciprocal harmonic as uniquely off-line: an irregular all-critical periodic cell can have Bragg peaks too. The implication needed here is one-way. Off-line mass plus exact finite-period zeta symmetry forces a lower-half alias; absence of such aliases forces the cell into the on-line rotated-lattice equality class.
 
-For a period `P=P(T)=o(L)`, even the smallest possible forced frequency `1/P` lies far enough above the `alpha=0` diagonal spike scale that
+For a growing period, the `alpha=0` diagonal spike imposes an additional quantitative range condition. At the smallest possible forced frequency `1/P`, its size is
 
 \[
-(\log T)T^{-2/P}
-=(\log T)e^{-2L/P}=o(1).
+(\log T)T^{-2/P}=L e^{-2L/P}.
 \]
 
-Thus moving the alias toward zero does not create a new support-edge or diagonal-spike loophole in the arithmetic evaluation. What remains missing is amplitude/extraction control, not availability of the unconditional form-factor theorem.
+This tends to zero exactly when
+
+\[
+\boxed{\frac{2L}{P}-\log L\longrightarrow+\infty.}
+\]
+
+A simple sufficient regime is `P=o(L/log L)`. The weaker condition `P=o(L)` alone does not imply decay of the diagonal term. Within the displayed range the alias remains separated from the diagonal spike in the unconditional arithmetic evaluation. What remains missing is amplitude/extraction control, not availability of the form-factor theorem.
 
 ## 8. Prior-art audit and provenance
 
