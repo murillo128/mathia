@@ -13,6 +13,8 @@ based_on:
   - research/visual_exploration/findings/VIS-012-log-residual-jets-zero-moments.md
   - research/visual_exploration/visualizations/zero-free-shell-poisson-collapse.md
   - research/visual_exploration/findings/VIS-013-zero-free-shells-poisson-determined.md
+  - research/visual_exploration/visualizations/zero-entry-jensen-radial-collapse.md
+  - research/visual_exploration/findings/VIS-014-circular-zero-entry-logmeans-radial-only.md
 ---
 
 # Does the critical-strip geometry of zeta contain a nontrivial multiscale or fractal signature?
@@ -25,36 +27,42 @@ The visual-exploration mandate permits fractal, multiscale, complex-plane, phase
 
 `VIS-013` closes a stronger apparent multiscale escape. If the complete local zero monomial is removed and two concentric radii remain below the nearest additional zero, then `log|H_rho|` is harmonic on the whole outer disk. Every inner circular shell is therefore the exact Poisson extension of the outer shell, and angular Fourier mode `n` scales only by `(r_inner/r_outer)^|n|`. Smooth nested circular evolution inside one zero-free neighborhood is not an independent scale channel even when the whole shell, rather than finitely many Taylor coefficients, is retained.
 
+`VIS-014` now closes the simplest scalar zero-entry continuation. Once neighboring zeros enter, Jensen's formula gives the circular mean exactly as
+
+`J(r)=sum_{|rho'-rho|<r} m(rho') log(r/|rho'-rho|)`.
+
+In log-radius coordinates this is a sum of hinge functions whose slope is the enclosed-zero count. The whole radial-mean profile therefore contains only the centered zero-distance multiset and erases angular organization completely; an angle-scrambled configuration with identical entry radii has exactly the same profile.
+
 ## Research question
 
-After quotienting the universal zero monomial, fixed-line reflection parity, finite reciprocal-power moments, and the full zero-free Poisson-semigroup transfer, is there a **mesoscopic finite-radius geometry associated with zero-entry or multi-zero organization** that survives standard zero-statistical and analytic controls?
+After quotienting the universal zero monomial, fixed-line reflection parity, finite reciprocal-power moments, the zero-free Poisson-semigroup transfer, and the radial Jensen zero-entry profile, is there a **mesoscopic finite-radius geometry carried by angular or genuinely multi-zero organization** that survives standard zero-statistical and analytic controls?
 
-A useful candidate should depend on a genuine change of configuration across scale: for example a radius crossing one or more neighboring zeros, a statistic of how zero contributions enter a Poisson-Jensen decomposition, an interaction among several spacing-normalized zero shells, or a cross-zero comparison after the forced harmonic inward continuation has been removed. Merely observing coherent change among nested zero-free circles is no longer sufficient.
+A useful candidate should depend on information that is lost both by zero-free harmonic continuation and by radial averaging: for example nonzero angular modes after explicit zero-entry contributions are removed, an interaction among several angularly resolved entry events, a non-circular domain, or a cross-center comparison that cannot be reconstructed from the centered radial distance multiset.
 
 ## Why it may matter
 
-A surviving statistic would turn the vague intuition that zeta may have a fractal or multiscale organization into an exact object located beyond four strong analytic confounds: local zero normal form, reflection symmetry, finite zero moments, and zero-free harmonic continuation.
+A surviving statistic would turn the vague intuition that zeta may have a fractal or multiscale organization into an exact object located beyond five strong analytic confounds: local zero normal form, reflection symmetry, finite zero moments, zero-free harmonic continuation, and Jensen's radial zero-counting transform.
 
-The surviving frontier is also sharper geometrically. The nearest-neighbor radius is a real transition: below it the normalized log modulus evolves by a deterministic Poisson semigroup; at or beyond it, additional zeros enter and Poisson-Jensen bookkeeping changes. If any nontrivial scale geometry exists, zero-entry events and organization across several neighboring zeros are now more plausible places to look than smooth zooming inside an isolated-zero disk.
+The frontier is now specifically about information retained **before angular scalarization**. Zero-entry itself is not enough: the zeroth angular mode simply integrates radial zero counts. A useful mechanism must preserve angular, relational, or domain-shape information and then show that the retained structure is not reconstructed by standard zero statistics or classical Poisson-Jensen bookkeeping.
 
-A clean failure would be valuable by showing that visually compelling mesoscopic texture is exhausted by classical complex analysis plus the zero configuration and its standard statistics.
+A clean failure would be valuable by showing that visually compelling mesoscopic texture is exhausted by classical complex analysis plus the zero configuration and its standard radial/angular statistics.
 
 ## Decisive test
 
 Choose an intrinsic field derived from `xi` or `zeta`, center at verified zeros, remove the complete local monomial, normalize scale by a local spacing quantity, and quotient the reflection baseline from `VIS-011`.
 
-First enforce the `VIS-013` control. For every nested circular comparison whose outer radius is below the nearest additional zero, either analytically Poisson-normalize the inner shell to the outer shell or discard that comparison as a candidate multiscale signal. Likewise compare any fixed local jet against the reciprocal-power moments from `VIS-012`.
+First enforce the existing exact controls. Inside a zero-free disk, remove the `VIS-013` Poisson-semigroup transfer. Once zeros enter, discard the circular mean and every statistic reconstructible from the Jensen profile in `VIS-014`; those observables are already equivalent to the centered radial zero-distance multiset. Likewise compare fixed local jets against the reciprocal-power moments from `VIS-012`.
 
-Then study a genuinely nontrivial scale transition. A canonical first target is the sequence of radii at which neighboring zeros enter the disk. Use Poisson-Jensen or an equivalent exact decomposition to separate the explicit contribution of newly enclosed zeros from the zero-free harmonic remainder. Measure a statistic that couples multiple entry events, angular organization, or several neighboring shells and cannot be reconstructed from a small local moment vector, ordinary gap ratios, pair correlation, inverse-square crowding/Lehmer quantities, or the deterministic Poisson transfer.
+Then retain information that the radial quotient removes. A canonical next target is the **nonzero angular content created when one or more neighboring zeros cross the expanding boundary**. Use Poisson-Jensen, Blaschke factors, or an equivalent exact decomposition to subtract the explicit contribution of the entered zeros where possible, then test whether the residual angular coupling across several entry scales contains a stable statistic not determined by gap ratios, radial distance data, pair correlation, inverse-square crowding/Lehmer quantities, or the deterministic Poisson transfer.
 
-Repeat across separated height windows and compare with synthetic analytic controls whose zero density, reflection symmetry, local gaps/moments, and relevant entry radii are matched. Kill the direction if the statistic is unstable under reasonable reparameterization, is reproduced by matched controls, or separates only through known zero counts, gap/crowding data, fixed-line symmetry, or Poisson-Jensen terms that are algebraically forced by the chosen representation.
+Repeat across separated height windows and compare with synthetic analytic controls whose zero density, reflection symmetry, radial entry distances, local gaps/moments, and relevant low-order angular statistics are matched. Kill the direction if the statistic is unstable under reasonable reparameterization, is reproduced by matched controls, or separates only through known zero counts, gap/crowding data, fixed-line symmetry, Jensen/Poisson-Jensen terms, or rendering choices.
 
 ## Evidence boundary
 
-`VIS-008`, `VIS-011`, `VIS-012`, and `VIS-013` establish only negative controls and exact analytic reductions. They do not establish a mesoscopic fractal dimension, scale invariant, zero-entry law, RH criterion, or distinction between the exact zeta geometry and matched analytic zero configurations.
+`VIS-008`, `VIS-011`, `VIS-012`, `VIS-013`, and `VIS-014` establish only negative controls and exact analytic reductions. They do not establish a mesoscopic fractal dimension, angular scale invariant, zero-entry law beyond Jensen, RH criterion, or distinction between the exact zeta geometry and matched analytic zero configurations.
 
-The retained `zero-free-shell-poisson-collapse` visualization numerically illustrates `VIS-013`; it is not evidence for new mesoscopic structure. Any future finite rendering remains exploratory until its candidate statistic is stated independently of the image and survives the stated analytic and zero-statistical controls.
+The retained visualizations numerically illustrate the exact baselines; they are not evidence for new mesoscopic structure. Any future rendering remains exploratory until its candidate statistic is stated independently of the image and survives the stated analytic and zero-statistical controls.
 
 ## Research disposition
 
-Accepted in further narrowed form. The live question begins **at genuine zero-entry or multi-zero scale transitions, or after explicitly quotienting the zero-free Poisson semigroup**. Do not pursue smooth nested circular zooms inside one isolated-zero disk as an independent multiscale mechanism.
+Accepted in further narrowed form. The live question begins in **angular or non-circular information that survives after the zero-free Poisson transfer and the radial Jensen zero-entry quotient are both removed**. Do not pursue smooth zero-free zooms or radially averaged zero-entry staircases as independent multiscale mechanisms.

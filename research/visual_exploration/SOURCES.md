@@ -20,7 +20,7 @@ This file records durable external literature dependencies used to support or de
 
 ## Riemann-zeta zero geometry
 
-- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008`, `VIS-009`, `VIS-011`, `VIS-012`, and `VIS-013`; none of those local identities assumes RH unless explicitly stated as a conditional specialization.
+- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008`, `VIS-009`, `VIS-011`, `VIS-012`, `VIS-013`, and `VIS-014`; none of those local identities assumes RH unless explicitly stated as a conditional specialization.
 
 ## Hadamard zero moments and Lehmer pairs
 
@@ -30,6 +30,10 @@ This file records durable external literature dependencies used to support or de
 
 - **Encyclopedia of Mathematics**, *Poisson integral*, https://encyclopediaofmath.org/wiki/Poisson_integral. Role: standard reference for harmonic reconstruction in a disk from boundary data; prior-art boundary for `VIS-013`, which applies this classical Poisson-semigroup relation to zero-normalized `xi` log-modulus shells.
 - **Encyclopedia of Mathematics**, *Abel–Poisson summation method*, https://encyclopediaofmath.org/wiki/Abel%E2%80%93Poisson_summation_method. Role: standard Fourier-series form of Poisson extension, with radial multiplier `r^k` on angular mode `k`; supports the exact Fourier-mode scaling used in `VIS-013`.
+
+## Jensen zero-counting formula
+
+- Elias M. Stein and Rami Shakarchi, **Complex Analysis**, Princeton Lectures in Analysis II, Princeton University Press (2003), Chapter 5 §1, pp. 135–137. Role: standard Jensen formula relating the logarithmic circular mean of a holomorphic function to the moduli of the zeros inside the disk; prior-art boundary for `VIS-014`, which uses the formula to show that the circular-mean zero-entry profile is exactly a transform of centered radial zero distances.
 
 ## Hybrid prime/zero decompositions
 
