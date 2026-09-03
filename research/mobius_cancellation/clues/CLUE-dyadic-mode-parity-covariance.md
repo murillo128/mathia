@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-dyadic-mode-parity-covariance
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -46,3 +46,9 @@ Kill the visual lead if the alternating direction is ordinary under the exact jo
 ## Evidence boundary
 
 The `31/36` sign agreement and alignment ratios are finite, post-hoc descriptors of one fixed panel. No independence assumption, binomial p-value, Gaussian joint law, asymptotic dyadic parity law, novelty claim, Mertens estimate, or RH consequence is established. The covariance identity is an immediate cross-kernel consequence of the Walsh orthogonality already used in `MC-034`; what remains unknown is the value and explanatory power of that covariance for this specific fixed mode family and the deterministic Möbius point.
+
+## Research disposition
+
+Accepted for a bounded exact matched-control test. The mathematical premise is already grounded by `MC-034`: the six reciprocal kernels share the same square-free Walsh characters, so their covariance is the deterministic Gram matrix of the corresponding `W_(N,j)` vectors. The fixed panel and post-hoc template are frozen by issue #105 and the retained visualization, so the missing quantity can be evaluated without adding a new search degree of freedom.
+
+The unresolved question is only whether the fixed alternating direction remains unusual after normalization by its full matched-control covariance. That finite computation has been delegated as GitHub issue #107. Acceptance does not validate the visual pattern, assign it a p-value, or establish any asymptotic Möbius structure; a durable mathematical continuation would still require higher-moment or deterministic arithmetic control if the joint statistic survives.
