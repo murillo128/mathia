@@ -165,3 +165,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Schemmel totients and reduced-residue pair counts
 
 - Nittiya Pabhapote and Vichian Laohakosol, **Combinatorial Aspects of the Generalized Euler's Totient**, *International Journal of Mathematics and Mathematical Sciences* 2010, Article 648165. DOI: 10.1155/2010/648165. Role: classical multiplicative Schemmel/generalized-totient counts for simultaneous coprimality; prior-art anchor for the uniform `S_2(m)=m prod_{p|m}(1-2/p)` gap-two refinement fiber in PC-148.
+
+## Prime-pair singular-series averages and zeta zeros
+
+- D. A. Goldston and Ade Irma Suriajaya, **A singular series average and the zeros of the Riemann zeta-function**, *Acta Arithmetica* 200 (2021), 71–90. DOI: 10.4064/aa200821-24-2. arXiv:2007.16099. Role: equation (2.2) gives exactly the Hardy--Littlewood prime-pair singular-series Dirichlet generating function used in PC-151, with meromorphic continuation through `zeta(s) zeta(s+1) / zeta(2s+2)` and explicit zero-dependent Riesz-mean residues; primary prior-art anchor showing that the zeta-zero sensitivity of the full-chord spectral Mellin displacement is inherited classical singular-series structure rather than a new Prime-Circle zero mechanism.
