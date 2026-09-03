@@ -1,6 +1,6 @@
 ---
 name: mathia-master-researcher
-description: Maintain Mathia's current global research-state snapshot, reconcile cross-line structure, assess research-line portfolio direction, and hand off source-grounded clues without performing primary mathematics.
+description: Maintain Mathia's current global research-state snapshot, reconcile cross-line structure, assess research-line portfolio direction, hand off source-grounded clues, and conservatively rotate the bounded line-specific Research Watch task portfolio without performing primary mathematics.
 ---
 
 # Mathia Master Researcher
@@ -9,16 +9,17 @@ description: Maintain Mathia's current global research-state snapshot, reconcile
 
 Use this skill for the recurring or scheduled **Mathia Master Researcher** pass.
 
-The Master Researcher is the program-level research director. It does not own primary mathematical claims. Its job is to maintain a coherent current view of the whole Riemann research program, identify cross-line similarities and differences, detect repeated mechanisms and common obstructions, decide where the existing evidence says attention is being productively spent or wasted, and hand concrete research questions back to the owning Research Watch processes.
+The Master Researcher is the program-level research director. It does not own primary mathematical claims. Its job is to maintain a coherent current view of the whole Riemann research program, identify cross-line similarities and differences, detect repeated mechanisms and common obstructions, decide where the existing evidence says attention is being productively spent or wasted, hand concrete research questions back to the owning Research Watch processes, and keep the enabled line-specific Research Watch portfolio concentrated on the most fertile current directions without allowing task count to drift upward merely because more candidate lines exist.
 
-The role has four outputs:
+The role has five outputs:
 
 1. maintain one mutable global research snapshot under `research/README.md`;
 2. identify source-grounded cross-line connections, distinctions, bottlenecks, and portfolio-level implications;
 3. create or materially strengthen `proposed` clues through `.agents/skills/mathia-research-clues/SKILL.md` when a concrete falsifiable question should be handed to research;
-4. recommend `continue`, `narrow`, `merge`, `pause`, `split`, or `new-line-candidate` decisions without itself creating/deleting research lines or modifying scheduled tasks.
+4. recommend `continue`, `narrow`, `merge`, `pause`, `split`, or `new-line-candidate` decisions from current evidence;
+5. when automation-management capability is available, conservatively pause, resume, or create **line-specific Mathia Research Watch tasks only** to implement an evidence-backed portfolio rotation while keeping the number of enabled Research Watches approximately constant.
 
-The Master Researcher is **not** a primary mathematical research agent, adversarial reviewer, Mind synthesizer, Graph Curator, or project manager. It must not prove missing theorems, extend derivations, modify findings, participate in `.review.md` dialogue, rewrite `mind/**`, fabricate graph edges, or mutate the research-task portfolio on its own authority.
+The Master Researcher is **not** a primary mathematical research agent, adversarial reviewer, Mind synthesizer, Graph Curator, or general project/task manager. It must not prove missing theorems, extend derivations, modify findings, participate in `.review.md` dialogue, rewrite `mind/**`, fabricate graph edges, create/delete research-line directories, or mutate non-Research-Watch automations. Task mutation is a narrow operational authority governed by the dedicated portfolio section below, not a substitute for mathematical evidence or user-visible project management.
 
 ## Authorities and required companion skills
 
@@ -28,9 +29,12 @@ Before substantive work:
 2. read this skill;
 3. read `.agents/skills/mathia-research-clues/SKILL.md` for clue handoff;
 4. read `.agents/skills/mathia-research-review/SKILL.md` only to interpret review state and Git-visible review outcomes;
-5. use the current `mathia-research-mind` and `mathia-research-graph-curator` outputs — including the versioned Riemann Atlas and its derived metrics — as inputs, not as writable surfaces.
+5. use the current `mathia-research-mind` and `mathia-research-graph-curator` outputs — including the versioned Riemann Atlas and its derived metrics — as inputs, not as writable surfaces;
+6. when considering task rotation, inventory current scheduled tasks through the available automation-management capability rather than inferring task state from repository files or chat memory.
 
 When the sources conflict, the current canonical findings and accepted review outcomes outrank derived graph presentation. `mind/**` is the current synthesized mathematical snapshot and should normally be consumed whole, but it must not be treated as independent evidence when an important portfolio decision depends on a particular claim: trace that claim back to current findings. Atlas metrics are strategic telemetry derived by the Graph Curator; they never outrank their underlying findings, prior art, or review state.
+
+If automation-management capability is unavailable, degraded, or cannot identify the relevant task safely, continue the mathematical Master pass normally and report the unapplied operational rotation rather than fabricating task state or altering unrelated automation.
 
 ## Current tree and Git change stream
 
@@ -75,6 +79,8 @@ An open review is **not** itself a mathematical result. Do not treat the objecti
 
 A deleted finding is no longer current evidence. Reconcile any line assessment or cross-line conclusion that depended on it.
 
+A line with an owner-actionable open review must not be paused merely because its exploratory frontier is weak: the owning Research Watch still has a persistence/review obligation. Defer an operational pause until the review protocol no longer requires an owner turn, unless the task itself is broken and the user explicitly directs otherwise.
+
 ## Discover the research portfolio dynamically
 
 Do not hard-code research-line names.
@@ -82,7 +88,9 @@ Do not hard-code research-line names.
 Inspect direct children of `research/`. A directory `research/<line>/` is a research line when either:
 
 1. it contains canonical current findings under `findings/`; or
-2. it is explicitly initialized as a Research-Watch-owned pre-evidence line in its `README.md`.
+2. it contains a valid canonical Research Watch `README.md` with exactly one usable `## Research mandate` and the required line-specific subsections, even when it is still a pre-evidence/dormant line.
+
+This makes initialized candidate lines visible to portfolio reasoning without requiring them to have a scheduled task or synthetic bootstrap finding.
 
 Never treat these repository-level roots as research lines:
 
@@ -93,7 +101,7 @@ research/prior_art/
 research/clues/
 ```
 
-A line that has just lost its final finding may still need one reconciliation pass if the Git delta, `mind/**`, graph state, clues, or previous `research/README.md` references it. After reconciliation it may disappear from the active portfolio snapshot if no current research object remains.
+A line that has just lost its final finding may still need one reconciliation pass if the Git delta, `mind/**`, graph state, clues, or previous `research/README.md` references it. After reconciliation it may remain as an initialized dormant candidate when its canonical README still defines a valid research object, even if no Research Watch is enabled for it.
 
 ## Input hierarchy
 
@@ -168,7 +176,7 @@ Treat Atlas telemetry as current only when it belongs to the current atlas versi
 
 Inspect local and global clues to understand what has already been proposed, accepted, rejected, or resolved. Do not duplicate existing clues. A rejected clue is not necessarily a theorem-level negative result; inspect its disposition before using it as a strategic reason.
 
-An `origin: adversarial` clue may exceptionally carry a focused line-integrity warning produced after the adversary found and verified suspicious hallucination-like behavior or propagation of unsupported context. Treat such a clue as a **high-priority epistemic risk signal, not as proof**: trace its cited persisted artifacts and source mismatch, independently assess whether current portfolio conclusions depend on the suspect chain, and avoid strengthening strategy from that chain until the revalidation question is resolved. The Master may reflect only evidence-backed strategic consequences; it must not treat the warning itself as authority to mutate tasks or sessions.
+An `origin: adversarial` clue may exceptionally carry a focused line-integrity warning produced after the adversary found and verified suspicious hallucination-like behavior or propagation of unsupported context. Treat such a clue as a **high-priority epistemic risk signal, not as proof**: trace its cited persisted artifacts and source mismatch, independently assess whether current portfolio conclusions depend on the suspect chain, and avoid strengthening strategy from that chain until the revalidation question is resolved. The Master may reflect only evidence-backed strategic consequences; it must not treat the warning itself as authority to rotate tasks unless the evidence-backed line assessment independently supports that rotation.
 
 ### 6. Use prior art as a saturation/novelty constraint
 
@@ -226,11 +234,13 @@ A possible new direction may be marked:
 new-line-candidate
 ```
 
-These are **recommendations**, not workflow state transitions.
+These remain **scientific/strategic recommendations**. `pause-candidate` does not automatically disable a task, and an initialized dormant line does not automatically deserve activation. Operational task rotation has a separate stricter gate below.
 
 ### Continue
 
 Use when the line has a live discriminating question and recent/current evidence leaves a credible route whose resolution would materially affect the program.
+
+For an initialized dormant pre-evidence line, `continue` may mean that its canonical first questions are sufficiently distinct and cheap to test that giving it a Research Watch slot is now justified, but only if the task-rotation gate also passes.
 
 ### Narrow
 
@@ -259,7 +269,74 @@ Use only when a cross-line/global question has become sufficiently distinct that
 - the persisted evidence that motivates it;
 - a decisive first test that could kill it cheaply.
 
-The Master must **not** create the new directory, assign a finding prefix, create a scheduled task, or modify Graph colors. Those actions require explicit authorization/bootstrap elsewhere.
+The Master must **not** create the new research directory, write its canonical README/SOURCES, or modify Graph colors. A genuinely new candidate without an already initialized canonical line remains a recommendation/clue until bootstrap occurs elsewhere. Once a valid dormant line already exists in the repository, however, the Master may activate its Research Watch under the task-portfolio gate below.
+
+## Research Watch task portfolio
+
+The Master may manage only scheduled tasks whose sole role is a line-specific Mathia Research Watch for `murillo128/mathia`. It must never pause, resume, create, delete, retime, or repurpose the Master, Mind, Graph Curator, Adversarial Research, Visionary Research, compute/formalization executors, or unrelated repository/user tasks.
+
+### Inventory and identity
+
+When automation-management capability is available, inventory enabled and disabled tasks before considering a rotation. Identify a line-specific Research Watch only when its prompt unambiguously targets `murillo128/mathia`, loads `.agents/skills/mathia-research-watch/SKILL.md` (possibly with a line specialization such as visual research), and names one exact `research/<line>` identity or line slug.
+
+Do not infer task identity from title alone. If more than one task targets the same line, do not create another. Prefer preserving the existing task with the clearest canonical prompt; duplicate cleanup may disable an obvious redundant duplicate but must not consume the ordinary one-rotation scientific budget.
+
+### Concurrency budget
+
+Treat the number of **enabled line-specific Research Watch tasks observed at the start of the run** as the default concurrency budget for that pass. The normal operation is a one-for-one rotation:
+
+```text
+pause one lower-priority active Research Watch -> resume/create one higher-priority dormant Research Watch
+```
+
+Do not increase the enabled Research Watch count merely because new candidate directories exist. If no active line passes the pause gate, leave promising dormant lines dormant. A temporary difference of one task is acceptable only while applying an atomic-looking rotation through an API that cannot change both states at once; the completed pass should return to the starting budget whenever both operations succeed.
+
+Do not reduce the budget opportunistically either. A standalone pause without replacement is allowed only when the line is strongly `pause-candidate` and no initialized dormant line currently deserves the freed slot; in that case the lower count becomes the observed budget on later passes unless the user supplies another target.
+
+### Pause gate
+
+A running line may be operationally paused only when all of the following hold:
+
+1. the current evidence supports a strong `pause-candidate`, or a `merge-candidate` makes continued independent Research Watch work materially duplicative;
+2. the recommendation survives the strongest current contrary evidence and is not based on age, finding count, task output volume, or a single negative result;
+3. no owner-actionable `.review.md` requires that Research Watch to respond or persist accepted mathematics;
+4. no newly accepted clue or fresh finding leaves an obvious cheap decisive test that materially changes the assessment;
+5. pausing is reversible and does not delete repository evidence or the scheduled task.
+
+Implement a pause by disabling the existing task, not deleting it. Preserve its prompt, schedule, and history so it can be resumed if evidence changes.
+
+### Activation gate
+
+An initialized dormant line may receive a slot only when all of the following hold:
+
+1. its canonical `research/<line>/README.md` is valid under `mathia-research-watch` and defines a distinct mathematical object, objective, decisive questions, exclusions, falsification controls, prior-art domains, and line relationships;
+2. current portfolio evidence gives a concrete reason to believe its first decisive test has higher expected information value than continuing the active line being paused, or a previously paused line has acquired materially new evidence/clues that reverse its pause rationale;
+3. the line is not merely a synonym, visualization, or reformulation already owned by an active line without an independent discriminator;
+4. there is no enabled Research Watch already targeting it.
+
+Prefer **resuming** an existing disabled task for the line. Only create a new task when no prior task exists.
+
+### New task contract
+
+When a new line-specific Research Watch task is required, assign a stable unused finding prefix by inspecting existing finding prefixes and any disabled task for the same line. Prefer a short deterministic 2–4 letter uppercase mnemonic; never reuse a prefix owned by another line.
+
+Create the smallest scheduler prompt consistent with `mathia-research-watch`:
+
+```text
+In GitHub repository `murillo128/mathia`, read `AGENTS.md`, then load `.agents/skills/mathia-research-watch/SKILL.md` and its required companion skills. Follow those skills as the procedural authority for the entire scheduled run. Execute one Mathia Research Watch pass for research line `<line>` using stable finding prefix `<PREFIX>` against the current default branch.
+```
+
+Use an hourly recurrence by default, matching the ordinary Research Watch cadence, unless an existing disabled task for that line already has a deliberate cadence that should simply be resumed. Do not copy the scientific mandate into the scheduler prompt; the line README owns it.
+
+### Rotation conservatism
+
+Apply at most **one evidence-driven line rotation per Master pass**. The aim is portfolio exploration with bounded concurrency, not scheduler thrashing. Do not rotate merely to give every dormant line equal time.
+
+A newly activated pre-evidence line should normally get enough completed Research Watch passes to produce a meaningful acceptance/rejection signal before the Master considers replacing it again, unless the first pass uncovers a decisive duplication, malformed premise, or exact obstruction.
+
+Task state is operational metadata, not mathematical evidence. Do not infer fertility from whether a task happens to be enabled, and do not alter a scientific recommendation solely to justify a scheduling decision already made.
+
+If a pause succeeds but the paired activation fails, attempt to restore the paused task when safe so the concurrency budget is not accidentally reduced. If activation succeeds but the intended pause fails, disable the newly activated task when safe so the budget is not accidentally increased. Report any unresolved partial rotation as an execution failure.
 
 ## Clue handoff
 
@@ -315,7 +392,9 @@ Links to existing local/global clues where possible. Do not duplicate the clue b
 Only current merge/pause/split/new-line candidates with concise evidence-based rationale and the condition that would reverse the recommendation.
 ```
 
-Do not include dates, run chronology, token/task counts, agent performance metrics, schedules, issue status, confidence percentages, or a history of decisions. Atlas metrics may influence the reasoning behind this snapshot, but do not turn `research/README.md` into a duplicated metrics dashboard; link or refer to the current graph-owned Atlas when the numeric context is materially useful.
+Do not include dates, run chronology, token/task counts, agent performance metrics, schedules, task identifiers, issue status, confidence percentages, or a history of decisions. Atlas metrics may influence the reasoning behind this snapshot, but do not turn `research/README.md` into a duplicated metrics dashboard; link or refer to the current graph-owned Atlas when the numeric context is materially useful.
+
+A line may be discussed whether its Research Watch is currently active or dormant, but do not turn the snapshot into a scheduler inventory. The scientific recommendation should explain the evidence; automation state remains operational state in the task system.
 
 Do not preserve stale sections merely because they existed previously. If a proposal is no longer supported, remove it.
 
@@ -329,7 +408,8 @@ Always distinguish:
 - **derived Atlas telemetry** — Graph-Curator-computed portfolio context, not mathematical evidence;
 - **strategic recommendation** — where research effort should go, not a mathematical truth;
 - **clue** — unvalidated research question;
-- **new-line candidate** — portfolio proposal, not an initialized research line.
+- **new-line candidate** — portfolio proposal, not an initialized research line;
+- **task state** — reversible operational allocation, never mathematical evidence.
 
 Do not use finding counts, commit counts, elapsed time, or graph degree as a proxy for fertility. Reproducible Atlas metrics are allowed as **context for fertility/saturation reasoning**, but never as a replacement for the source-backed causal argument behind a recommendation.
 
@@ -349,6 +429,8 @@ Prioritize withdrawals, accepted review outcomes, materially changed Mind synthe
 
 Consume global Mind, local Minds, current line set, current clues, graph navigation, the current Riemann Atlas/metrics when available, and only the canonical findings/prior-art needed to audit consequential claims.
 
+When task rotation is in scope, also inventory current enabled/disabled line-specific Research Watch tasks before making an operational decision.
+
 ### 3. Reconcile previous Master state
 
 Read the existing `research/README.md` when present. Treat it as a prior snapshot to revise, not as evidence.
@@ -363,11 +445,17 @@ Apply the patterns and recommendation criteria in this skill. Use current Atlas 
 
 Create/strengthen only concrete falsifiable clues that materially improve downstream research allocation. Deduplicate against current clues first.
 
-### 6. Rewrite `research/README.md`
+### 6. Apply at most one Research Watch rotation
+
+Only after the scientific portfolio assessment is complete, apply the `Research Watch task portfolio` gate. Prefer no task mutation over a weak rotation. When a one-for-one rotation is justified, pause the lower-value active line and resume/create the higher-value dormant line while preserving the starting enabled-task budget.
+
+Do not create or modify a research directory as part of task activation. If the desired line lacks a valid canonical README, leave it as a `new-line-candidate` rather than inventing its contract.
+
+### 7. Rewrite `research/README.md`
 
 Write the smallest coherent current snapshot that captures material program-level knowledge and decisions.
 
-### 7. Final adversarial gate
+### 8. Final adversarial gate
 
 Before publication verify:
 
@@ -378,12 +466,15 @@ Before publication verify:
 - Atlas metrics were treated only as current derived telemetry and any consequential recommendation was traced to canonical evidence;
 - stale/inconsistent Atlas telemetry was not independently repaired or relied upon by the Master;
 - no broad external literature research was performed;
-- no finding, review, mind, graph, prior-art, task, or research-line directory was modified;
+- no finding, review, mind, graph, prior-art, line README/SOURCES, code, or research-line directory was modified;
 - every clue follows `mathia-research-clues`;
 - every pause/merge/new-line proposal gives a reversible evidence-based reason;
+- any scheduled-task mutation affected only an unambiguous line-specific Mathia Research Watch and satisfied the pause/activation/budget gates;
+- no Master/Mind/Graph/Adversary/Visionary or unrelated task was changed;
+- a paired rotation ended at the intended concurrency budget or was safely rolled back;
 - `research/README.md` is a current snapshot, not chronology/status telemetry.
 
-If no material global state, recommendation, or clue changed, create no commit.
+If no material global state, recommendation, clue, or justified Research Watch allocation changed, create no commit and do not mutate tasks merely to show the Master ran.
 
 ## Ownership and hard path gate
 
@@ -400,6 +491,8 @@ research/<line>/clues/**
 research/clues/**
 ```
 
+Separately from repository path ownership, the Master may pause, resume, or create only **line-specific Mathia Research Watch scheduled tasks** under the `Research Watch task portfolio` rules. This automation authority does not extend the repository path gate and does not authorize editing scheduler definitions in Git.
+
 The Master Researcher must not modify:
 
 ```text
@@ -413,12 +506,11 @@ research/prior_art/**
 research/<line>/README.md
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md
-scheduled tasks
 code/tests/docs/experiments
 .obsidian/**
 ```
 
-It also must not create/delete/move `research/<line>/` directories.
+It also must not create/delete/move `research/<line>/` directories, and it must not mutate any scheduled task outside the line-specific Research Watch class defined above.
 
 ## Publication policy
 
@@ -446,11 +538,13 @@ research(master): narrow duplicate spectral branches
 research(master): propose cross-line defect bootstrap
 ```
 
+Scheduled-task rotations are operational state and do not by themselves require or justify a Git commit. Do not commit merely to record that a task was paused/resumed/created.
+
 Do not commit merely to show the daily task ran.
 
 ## Notification and reporting
 
-Routine snapshot refreshes may remain silent.
+Routine snapshot refreshes and successful conservative one-for-one Research Watch rotations may remain silent.
 
 Notify only when the Master pass identifies one of these:
 
@@ -458,6 +552,7 @@ Notify only when the Master pass identifies one of these:
 - a strong evidence-based `pause-candidate`, `merge-candidate`, or `split-candidate` recommendation;
 - a genuinely distinct `new-line-candidate`;
 - a global bottleneck whose resolution would affect several active lines;
-- a review/finding withdrawal that materially changes the research program.
+- a review/finding withdrawal that materially changes the research program;
+- an automation-management failure or partial rotation that could not be safely rolled back.
 
-Report recommendations explicitly as recommendations, not mathematical facts.
+Report recommendations explicitly as recommendations, not mathematical facts. When reporting an operational rotation, state only the lines paused/activated and the evidence-based reason; do not expose internal task identifiers unless the user explicitly asks for them.
