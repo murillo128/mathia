@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-gap2-tail-eigenspace-locking
 type: research-clue
-status: accepted
+status: resolved
 origin: visual-researcher
 target_line: prime_circle
 based_on:
@@ -51,6 +51,12 @@ The near-locking is finite numerical evidence at three conductors, not a theorem
 
 ## Research disposition
 
-Accepted for continued investigation. [[research/prime_circle/findings/PC-142-gap-two-matching-has-an-exact-macroscopic-spectral-cliff]] resolves the spectral-count and separation half of the clue: for every level divisible by `6`, not only primorials, the gap-two matching contributes exactly all primitive-shell eigenvalues at or above `beta_N`, and the `E_N`th / `(E_N+1)`st gap is bounded below by a fixed positive multiple of `N^2`. The observed spectral cliff is therefore exact rather than a finite numerical pattern.
+Outcome: narrowed
 
-The unresolved question is now the **eigenspace geometry**. PC-142 does not prove that the top-`E_N` spectral projector converges to `P_{V_N}`; its period-six operator-norm domination is deliberately too coarse to control the principal angles sharply. Continue on the off-diagonal block `P_{V_N^perp}R_NP_{V_N}`, and distinguish normalized Frobenius/average locking from the worst principal angle. Acceptance is workflow triage only, not evidence of asymptotic locking, novelty, or an RH mechanism.
+Resolved by:
+- [[research/prime_circle/findings/PC-142-gap-two-matching-has-an-exact-macroscopic-spectral-cliff]]
+- [[research/prime_circle/findings/PC-143-gap-two-top-band-locks-on-average-but-not-in-operator-norm]]
+
+PC-142 resolves the spectral-count and separation half: for every level divisible by `6`, the gap-two matching contributes exactly all primitive-shell eigenvalues at or above `beta_N`, with a fixed positive `N^2`-scale cliff below them.
+
+PC-143 resolves the remaining eigenspace geometry along primorials. The normalized squared Frobenius overlap satisfies `tr(P_V P_top)/E -> 1`, so the top band asymptotically locks to the matching space **on average**. But `||P_V-P_top||` has an explicit positive liminf, produced by a CRT-constructible exceptional three-vertex constellation, so worst-principal-angle/operator-norm locking is false. The clue is therefore supported in density-average geometry and refuted in uniform geometry; sparse exceptional directions remain outside the resolved average statement.
