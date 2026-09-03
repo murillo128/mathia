@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime_lattice-grosswald-schnitzer-phase-fingerprint
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_lattice
 based_on:
@@ -48,3 +48,9 @@ The test should keep `X` finite first; compactness of a finite deformation set m
 ## Evidence boundary
 
 `PL-127` establishes only the positive scalar phase slope and its low-prefix certificate. `VIS-007` proves only that the one-step integer threshold decreases monotonically with prime scale. Neither result proves reconstruction of the complete deformation pattern from finitely many phase observables, and no such injectivity or collision theorem is asserted here.
+
+## Research disposition
+
+Accepted. The direction survives initial scope and prior-art checks only as a tail-uniform inverse problem. If the tail is frozen and only finitely many Euler factors vary, equality of reflection cocycles reduces after cross-multiplication to a finite exponential-polynomial identity, so a sufficiently long Taylor jet is separating by classical Vandermonde/Prony uniqueness. That finite-dimensional argument is not the target and gives no useful uniform separation in the presence of an arbitrary admissible tail.
+
+The remaining question is whether finitely many critical-line observables recover every generator below `X` uniformly over the full integer Grosswald–Schnitzer tail. The continuation to `Re(s)>0` uses paired factor differences, so simply returning to a finitely supported or absolutely convergent coefficient-inversion setting removes the hard part. A resolution must control tail contamination using the one-sided integer constraints or exhibit an exact admissible integer-tail collision.
