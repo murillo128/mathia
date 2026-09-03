@@ -1,41 +1,40 @@
-# MI-006 — Arithmetic can survive bulk spectral classicalization only in a mesoscopic organization that fixed windows still miss
+# MI-006 — Arithmetic survives the universal bulk, but its first spectral layers are increasingly local singular-series data
 
-**Evidence level:** supported by exact finite Hessian reductions, primorial asymptotics, and fixed-window controls
+**Evidence level:** supported by PC-135--PC-152 and the exact projector/window controls
 
 ## Core intuition
 
-A finite spectral model can have a universal bulk and even a universal top eigenpair while still retaining a macroscopically large arithmetic defect subspace. That survival is not enough by itself: scalar mass, trace, Wasserstein bulk discrepancy, and every fixed Fourier edge window can still collapse to classical totient/Artin/Murata/Nicolas data.
+Prime-Circle Hessian spectra retain a genuine nonuniversal defect sector even after the bulk and top mode classicalize. That survival is real, but recent results show that simply enlarging a local spectral window is not enough: the top-band projector is already controlled by short chord geometry to Mertens scale, and the first connected polynomial moments reduce to classical prime-pair and prime-triple singular-series functionals.
 
-The surviving target is therefore not "some nonuniversal eigenvalues exist" but the **growing-scale organization of those defect modes** before fixed-window or first-moment compression erases their provenance.
+The live object is therefore not “some arithmetic eigenvalues remain.” It is a **joint nonlocal organization beyond the finite-support singular-series hierarchy and beyond average projector locking**.
 
 ## Strongest justified principle
 
-PC-131--PC-134 close the finite Hessian algebra much further. Squarefree and nonsquarefree character coefficients reduce to Dirichlet--Bernoulli data, the resultant-normalized Hessian characteristic polynomial is integral, and arbitrary finite Hessian tensor networks collapse to confluent Cauchy algebra. Finite algebraic complexity does not open a new spectral field.
+PC-135--PC-141 establish the base separation. Coherent all-divisor aggregation gives the universal polygon Laplacian; bulk, trace, and fixed edge windows reduce to Nicolas/Artin/Murata-type data, while PC-139 proves a mesoscopic number of macroscopic defect eigenvalues survives.
 
-PC-135 gives the strongest coherent aggregation control: the all-divisor equal-weight Hessian aggregate is exactly the full regular-polygon inverse-square Laplacian with universal spectrum. PC-136 shows that the cross-shell-only primorial aggregate approaches the same universal bulk; its natural Wasserstein defect is governed by the squared primorial totient product. PC-137 identifies the resulting RH criterion exactly with Nicolas's classical criterion.
+PC-142--PC-147 sharpen the geometry of the top band. Gap-two matching captures a large average component, but operator-norm leakage persists; bounded and growing chord windows nevertheless recover the Mertens-scale top-band projector, and that projector is uniformly operator-local in chord radius. Thus “use a growing local window” is no longer a generic escape: average capture and worst-angle fidelity are different, while the first projector scale is still short-chord controlled.
 
-PC-138 adds an extreme-mode control: every even level has an exact universal top eigenpair. PC-140 shows that even the substantial primitive-shell trace classicalizes to an Artin constant times the same primorial totient factor, again reducing its RH-sensitive scalar criterion to Nicolas.
+PC-149--PC-151 identify the scalar arithmetic seen by that local geometry. Fixed chord words are exact translated-coprimality counts, fixed-radius spectral functions collapse to prime-pair singular-series laws, and the full-chord first Mertens spectral displacement remains a convergent pair singular-series functional.
 
-The important non-collapse is PC-139. The omitted within-shell defect contains a mesoscopic number of eigenvalues of macroscopic `N^2` scale, so bulk convergence does not imply operator-norm or high-rank disappearance. Yet PC-141 shows that any fixed-width Fourier edge window around the protected alternating mode asymptotically diagonalizes and classicalizes to a Murata-type product times the same Nicolas factor. Fixed local spectral zoom is still too small.
+PC-152 pushes one order further. After subtracting the same-edge pair stratum exactly, the three-vertex part of the second full-chord moment converges to an inverse-square weighted Hardy--Littlewood prime-triple singular-series functional. A genuine multi-edge term appears, but it is still classical local-density arithmetic rather than a new zeta-zero spectral mechanism.
 
 ## What remains possible
 
-A viable prime-circle spectral mechanism must therefore use a window or relational organization whose complexity grows with the level, or a non-Fourier localization that follows the defect subspace rather than a fixed protected mode. The observable must distinguish more than the total defect mass and more than any finite collection of edge eigenvalues.
+A surviving mechanism must use information not determined by any fixed support stratum of translated-coprimality counts or by the short-chord projector approximation. Candidates include coherent growth of support order, cross-level transport of defect subspaces, nonpolynomial spectral data whose connected expansion does not truncate to classical singular-series moments, or a provenance-sensitive phase relation between many chord scales.
 
-Natural tests include whether a growing band retains nontrivial off-diagonal mixing after the universal Laplacian is subtracted, whether its joint spectral measure carries provenance not determined by the totient product, and whether matched cyclotomic controls reproduce that organization.
+Such a mechanism must also survive the operator-norm leakage control: high average overlap with a local model is not a substitute for a uniform subspace identification.
 
 ## Status / novelty
 
-The finite Hessian identities, totient products, Artin/Murata constants, Nicolas criterion, and Fourier asymptotics are classical or persisted exact reductions. The synthesis is the scale separation: **bulk universality does not kill mesoscopic arithmetic, but fixed windows and scalar summaries can still classicalize it**.
+The singular series and graph-Laplacian moment identities are classical or exact persisted reductions. The synthesis is the current scale boundary: nonuniversal spectrum exists, but the first local and connected layers are classical pair/triple arithmetic.
 
 ## Falsification criterion
 
-Show that the PC-139 macroscopic defect subspace is completely determined, at growing rank, by the same classical totient/Dirichlet data as PC-136--PC-141; or exhibit a fixed-dimensional spectral window whose invariant provably retains information not reducible to those controls.
+Either show that the complete growing defect sector is asymptotically generated by the singular-series hierarchy and local projector model, or exhibit a canonical cross-level/nonlocal invariant whose value cannot be recovered from those controls and remains quantitatively stable.
 
 ## Lean-formalizable core
 
-- Universal all-divisor Hessian aggregation.
-- Exact universal top eigenpair.
-- Trace/Wasserstein reduction to primorial totient factors.
-- Lower bound on macroscopic defect-mode multiplicity.
-- Fixed Fourier-window asymptotic diagonalization.
+- Bulk/top-mode decomposition.
+- Average versus operator-norm projector comparison.
+- Local chord approximation of the top-band projector.
+- Support-stratified trace-moment decomposition into pair/triple incidence.

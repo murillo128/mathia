@@ -1,40 +1,39 @@
-# MI-001 — Visual structure becomes evidence only after exact coordinate and aggregation controls
+# MI-001 — Visual structure becomes evidence only after exact symmetry, local-normal-form, coordinate, and aggregation baselines
 
-**Evidence level:** supported by exact artifact classifications and one visualization-led theorem handoff
+**Evidence level:** supported by exact artifact classifications and visualization-led theorem handoffs
 
 ## Core intuition
 
-A visually strong pattern can be entirely imposed by coordinates, can be the leading asymptotic of a classical kernel, or can disappear when the displayed residual is tested in the arithmetic aggregation that actually matters. Visualization is therefore most useful as a **theorem generator and falsification instrument**, not as evidence by visual complexity alone.
+A visually strong pattern can be imposed by coordinates, by reflection symmetry, by the universal Taylor normal form near a zero, or by a classical leading kernel. Even a genuine residual can disappear under the arithmetic aggregation or operator topology that matters.
 
-The positive standard is equally important: a visual residual earns mathematical significance when it suggests a precise invariant that can be derived exactly, survives the obvious representation controls, and can be handed back to the owning research line as durable evidence.
+Visualization is therefore most useful as a **theorem generator and falsification instrument**. The durable object is the residual left after every exact baseline appropriate to the scale and representation has been removed.
 
 ## Strongest justified principle
 
-VIS-001 gives the clean coordinate-artifact control. A CRT-aligned wheel survivor mask is exactly a rank-one tensor product of one-dimensional unit indicators. Elaborate recursive-looking stripes or carpets can therefore encode no cross-factor coupling at all.
+VIS-001 gives the coordinate control: a CRT-aligned survivor wheel can be exactly a rank-one tensor product. VIS-003 gives the asymptotic control: the Möbius endpoint kernel has a classical Watt sawtooth leading term, and downstream arithmetic aggregation can amplify the visually small correction.
 
-VIS-003 gives a classicalization control. The centered harmonic endpoint kernel from Möbius Cancellation has Watt's sawtooth as its leading boundary model, with an explicit Bernoulli correction. The picture can reveal where the correction lives, but pointwise visual smallness does not imply that the corresponding Möbius bilinear form is small; MC-022 shows that arithmetic aggregation can amplify a correction through an RH-equivalent coarse mode.
+VIS-006 adds a symmetry control that is especially important for RH imagery. For every Schwarz-symmetric input, the modulus-only functional-equation defect is forced to vanish on `Re(s)=1/2` even if the function does not satisfy the Riemann functional equation. The critical-line trench survives the trivial control `F=1`; it is a reflection/modulus artifact unless phase or another discriminator is retained.
 
-VIS-004 gives an operator-level control. Midpoint centering genuinely creates negative pairwise Gamma-Schoenberg cross terms, so the visual sign geometry changes, yet the coherent shell norm retains the same `sigma=1` convergence threshold. Breaking an obvious local positivity pattern is not enough when the aggregate energy remains rigid.
+VIS-008 adds a scale control. After translation and Taylor normalization, every infinitesimal portrait around a zero of multiplicity `m` converges to `z^m`. Arbitrarily deep normalized zooms therefore cannot distinguish an on-line zeta zero from a hypothetical off-line zero of the same multiplicity. The potentially informative regime is mesoscopic or global, where neighboring zeros and nonlocal analytic structure enter.
 
-VIS-002 is the constructive counterexample to pure skepticism. The compact-reference cusp residual atoms suggested an achievement-set picture; exact derivation proves interval-filling tails. That theorem then feeds PF-165, where it rules out analytic scalar normalization of the relative cusp coefficient. The durable value came from the exact theorem, not from the picture itself.
+VIS-002 remains the constructive standard: a visual cusp-residual pattern was converted into an exact achievement-set theorem and then into the PF-165 reference-instability result. The image mattered because it generated a falsifiable theorem.
 
 ## What remains possible
 
-The best visual targets are residuals after a mathematically specified baseline has been removed: coordinate-product rank, classical leading kernel, universal bulk law, or known operator threshold. The next step should be to state the residual as a finite or asymptotic invariant and derive a decisive test before interpreting the image.
-
-A visualization is especially valuable when it exposes a candidate transition, support geometry, or low-rank defect whose exact formulation is not obvious from formulas alone. It should then hand off to the owning line only after the representation map and aggregation semantics are explicit.
+Useful visual targets should retain phase when reflection phase is the discriminator, work at mesoscopic scales after the monomial zero template is subtracted, and compare the residual in the same norm/operator statistic used by the owning line. Average overlap and worst-direction/operator-norm behavior should be visualized separately when they encode different mathematical claims.
 
 ## Status / novelty
 
-CRT factorization, Euler--Maclaurin/Watt asymptotics, Schoenberg geometry, and achievement sets are classical or direct. The synthesis is methodological but mathematical: **representation artifacts must be subtracted at the level of the exact map, and visual residuals must survive the downstream invariant actually used by the research claim**.
+The component baselines are classical identities or persisted exact reductions. The synthesis is methodological but mathematical: visual evidence is the representation-stable residual after the exact null model, not the conspicuous feature of the raw rendering.
 
 ## Falsification criterion
 
-Exhibit a claimed visual residual that survives the exact coordinate baseline but disappears under the owning line's relevant aggregation/operator test, or conversely a pattern dismissed as coordinate/classical that yields an exact source-specific invariant after the baseline is removed.
+Exhibit a residual that survives all applicable exact baselines but disappears under the owning line's actual invariant, or derive a source-specific invariant from a pattern that remains nontrivial under symmetry, local-normal-form, coordinate, and matched-control tests.
 
 ## Lean-formalizable core
 
-- CRT rank-one tensor factorization.
-- Harmonic-kernel/Watt leading asymptotic.
-- Achievement-set interval criterion for summable tails.
-- Exact midpoint-centering identities for the Gamma Schoenberg Gram.
+- CRT tensor factorization.
+- Functional-equation modulus antisymmetry.
+- Taylor-normalized zero convergence to `z^m`.
+- Achievement-set interval criterion.
+- Exact aggregate/operator comparison of a retained residual.

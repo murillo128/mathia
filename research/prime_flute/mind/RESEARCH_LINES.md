@@ -14,12 +14,14 @@ Finite graded chains show that a resolved local eigenvalue can retain a leading 
 
 PF-156--PF-161 explain the visible canonical separator boundaries: the matched products are zero-free through the relevant half-planes, the `1/4` threshold is one-ended propagation, and the bottom connected Ruelle product has a finite positive value with a logarithmic cusp at `s=0`.
 
-PF-162--PF-165 now add a decisive reference gate. The cusp coefficient changes under fixed odd shifts, the singularity order changes under dilation references, compactly supported reference changes alter the coefficient by arbitrary signed amounts, and the residual values fill an interval densely enough to rule out every nonconstant real-analytic scalar normalization. A surviving relative invariant must prove invariance under the admitted reference changes before it can be prime-specific.
+PF-162--PF-165 add the decisive reference gate. The cusp coefficient changes under fixed odd shifts, the singularity order changes under dilation references, compactly supported reference changes alter the coefficient by arbitrary signed amounts, and the residual values fill an interval densely enough to rule out every nonconstant real-analytic scalar normalization. A surviving relative invariant must prove invariance under the admitted reference changes before it can be prime-specific.
 
-## Close the global clone comparison, then test the first intrinsic nonlocal relative value
+## Test collective infinite-orbit or operator assembly beyond complete marked-tail equivalence
 
 **Linked intuitions:** `MI-004-coordinate-amplification-is-not-operator-amplification` and `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
 
-The exact prime flute and all-composite shift clone already share compact-resolvent class. The operator route asks for the global estimate `(H_++1)^(-2)-(H+1)^(-2) in S_1`, whose fixed short-collar analogue is known; the geometric route asks for the corresponding global weighted metric/interface assembly.
+PF-166 shows that the prime flute and exact all-composite shift clone have asymptotically identical **complete marked tail translation-length functions**, uniformly over words of arbitrary complexity. Choosing longer primitive words, more pants, or a different right limit cannot by itself restore primality specificity.
 
-If that closure succeeds, the remaining target is a **full-surface value theorem**, not another selected-sector regularization: relative spectral shift/scattering, resonance continuation, global primitive-word coupling, or another nonlocal invariant that separates the exact composite control and is stable under admissible compact reference modifications. Changing resolvent exponent, local heat coefficient, separator reference, or analytic normalization of the bottom cusp is no longer a distinct route.
+The remaining operator route asks whether the local squared-resolvent `S_1` budgets/global metric comparison assemble into a full trace-ideal or wave/scattering theorem. The remaining dynamical route asks whether the infinite multiplicity and interference of primitive orbits amplify individually vanishing length defects.
+
+A decisive positive must compute a full-surface nonlocal value — spectral shift/scattering, resonance continuation, collective primitive-word functional, or another intrinsic invariant — that separates the clone and is stable under compact reference changes. A decisive negative would prove that the global comparison identifies the relevant operator/scattering class.

@@ -46,13 +46,13 @@ Arbitrary dependent sources have an exact degree filtration given by fusion span
 
 A decisive theorem should compute both the source-dependent retained support and a global lower fusion-frame/closed-sum modulus for a mathematically forced family.
 
-## Make repair geometry intrinsic to the admitted smooth or nonsmooth representation category
+## Make repair geometry intrinsic to the admitted representation and regularity category
 
-**Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision` and `MI-003-fidelity-endpoints-are-category-dependent`.
+**Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision`, `MI-003-fidelity-endpoints-are-category-dependent`, and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-The finite-dimensional boundary is now structurally split. Strongly-convex Minkowski geometry restores the Euclidean powered-lift phase diagram, and on a hull boundary the support-contact profile controls the higher-order exponent. Polyhedral geometry behaves differently: norming faces preserve first-order provenance, the safe set is an exact finite cone hull, and all powers `p>1` share one dual-face coherence gate.
+The finite-dimensional boundary remains geometry-dependent: strongly-convex contact order and polyhedral norming faces produce different safe-lift laws. AF-078--AF-087 add a second axis. Linear repair requires a split quotient and is noncanonical under shears; uniformly convex metric geometry can select a canonical continuous nonlinear representative beyond splitting; but global Lipschitz regularity or a bounded-linear tangent at the homogeneity apex collapses the escape back to linear splitting.
 
-A decisive positive theorem must show that the smooth contact order or nonsmooth face structure used by an arithmetic application is invariant under its declared representation equivalences. A decisive negative is an admissible re-encoding that changes the contact exponent, the norming-face witness, or the resulting safe-lift classification.
+A decisive positive must derive the repair category from the source rather than choose it after the fact, then prove the exact stability/naturality required there. A decisive negative is an admissible re-encoding that changes the contact modulus, a shear that destroys canonicity, or a rigidity theorem showing that the requested regularity already forces a forbidden split.
 
 ## Prove cross-scale compactness before promoting finite-resolution witnesses to compact-target fidelity
 

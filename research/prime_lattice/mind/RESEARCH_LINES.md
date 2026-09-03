@@ -12,11 +12,19 @@ A surviving lattice mechanism must therefore use rational-prime completion plus 
 
 ## Target the arithmetic polarization rather than another spectral realization
 
-**Linked intuitions:** `MI-002-critical-line-is-boundary-not-selector` and `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
+**Linked intuitions:** `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-Deninger identifies the Hodge/polarization mechanism that would force the half-axis; Meyer already realizes every zeta zero spectrally with an exact adelic trace formula; Suzuki already supplies an unconditional positive zeta-derived Hilbert norm. The missing theorem is the identification of the zero-sensitive representation/form with a positive or unitary structure strong enough to exclude off-line spectrum.
+Deninger identifies the Hodge/polarization mechanism that would force the half-axis; Meyer already realizes every zeta zero spectrally with an exact adelic trace formula; Suzuki already supplies an unconditional positive zeta-derived Hilbert norm. PL-125--PL-133 add a different achievement: the Grosswald--Schnitzer reflection phase can identify the arithmetic generator system even though the whole deformation class shares the same zero divisor.
 
-A decisive positive should produce that pairing/metric/determinant relation from arithmetic completion itself. Another exact trace formula, another operator whose spectrum contains the zeros, or another auxiliary positive norm is not a new line unless it supplies the missing polarization identity.
+The missing theorem is still the identification of the zero-sensitive representation/form with a positive or unitary structure strong enough to exclude off-line spectrum. Exact source recovery is not a substitute for that polarization.
+
+## Quantify the finite integer phase fingerprint rather than reopening its existence
+
+**Linked intuitions:** `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
+
+For real Grosswald--Schnitzer controls, every finite natural phase fingerprint has local aliases, while an accumulating exact phase set determines the full deformation. For integer controls, compactness turns phase-arc injectivity into a finite tail-uniform fingerprint for every fixed low-prime prefix.
+
+The open question is now quantitative: estimate the separation margin and sample complexity as the cutoff grows, or identify an explicit canonical sampling set. This line concerns arithmetic fidelity/conditioning, not RH localization; the existence question itself is closed.
 
 ## Resolve the discrete Nyman defect with target-sensitive data
 

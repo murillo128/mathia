@@ -2,21 +2,21 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Preserve genuinely cross-level information before finite, Fourier, deformation, or finite-section spectral classicalization
+## Preserve genuinely cross-level information after finite, Fourier, local-chord, and connected-moment classicalization
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical` and `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
 
-The audited finite canonical sector now extends through vertexwise Hessians, normalized characteristic polynomials, finite Hessian tensor networks, coherent all-divisor aggregation, scalar spectral moments, and fixed Fourier edge windows. PC-131--PC-141 show repeated reduction to Dirichlet--Bernoulli, confluent-Cauchy, full-polygon, totient/Artin/Murata, or Nicolas data.
+The audited finite canonical sector extends through vertexwise Hessians, finite tensor networks, coherent aggregation, scalar spectral moments, fixed Fourier windows, and now local/full-chord low-order spectral corrections. PC-149--PC-152 identify the first full-chord layers as classical pair and triple Hardy--Littlewood singular-series functionals.
 
-At the same time PC-139 proves that universal bulk convergence does not erase every arithmetic mode: a mesoscopic family of macroscopic defect eigenvalues survives. The live target is therefore the **growing organization** of that defect subspace, not another fixed finite network or scalar summary.
+At the same time the macroscopic defect subspace remains nontrivial. The live target is therefore a cross-level or growing-support organization not determined by the finite-support singular-series hierarchy, rather than another fixed local network or low connected moment.
 
-## Determine whether a growing or provenance-adapted defect sector escapes the classical controls
+## Distinguish average top-band capture from uniform subspace fidelity
 
 **Linked intuitions:** `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`.
 
-A decisive positive should derive a growing spectral window, non-Fourier localization, or cross-level operator directly from the cyclotomic geometry and prove that its joint invariant is not determined by the squared primorial totient factor, Artin/Murata constants, or Nicolas's criterion. A decisive negative would show that the entire PC-139 macroscopic defect sector is asymptotically reconstructible from those classical scalar data.
+Gap-two and short-chord models capture the top band strongly on average, and bounded/growing chord windows recover its Mertens-scale projector, yet operator-norm leakage can remain bounded away from zero. A decisive spectral mechanism must state which topology of subspace recovery its arithmetic conclusion requires.
 
-Fixed-width edge windows, the universal top eigenpair, total trace, and Wasserstein bulk defect are now controls rather than candidate mechanisms.
+A positive should identify a canonical nonlocal correction that closes the worst-angle gap or prove that the residual operator-norm direction carries source-specific information. Average trace/Frobenius locking alone is now a control.
 
 ## Locate the first mechanism beyond canonical finite cyclotomic/collision spectralization
 

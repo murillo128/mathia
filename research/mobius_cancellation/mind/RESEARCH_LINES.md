@@ -14,7 +14,7 @@ Local qualitative randomness, fixed-pattern Chowla information, exact squarefree
 
 Separate Tanaka budgets fail on a completely multiplicative character control, while the excursion-square carrier is too strong even for a support-matched diffusive random-sign walk. Path energy preserves the desired amplitude but its coarse constant mode contains an RH-equivalent first Riesz sum.
 
-The live problem is therefore a signed, multiscale carrier that survives the character and random-sign controls **and** removes or independently controls the RH-equivalent coarse projection before taking a positive norm. A decisive theorem should derive its bound from Möbius arithmetic rather than from an already equivalent mean-absolute/Riesz estimate.
+The live problem is therefore a signed, multiscale carrier that survives the character and random-sign controls **and** removes or independently controls the RH-equivalent coarse projection before taking a positive norm. The recent Pintz source remains a theorem-level dependency under explicit contour audit, so it is not a substitute for such an upstream carrier.
 
 ## Keep prime-power fidelity distinct from the comparator theorem
 
@@ -22,16 +22,16 @@ The live problem is therefore a signed, multiscale carrier that survives the cha
 
 A comparator can share prime data and differ only on prime powers while still carrying an RH-equivalent summatory criterion because an analytic transfer factor is nonmasking in the critical region. The live question is to classify source-natural prime-power corrections whose nonmasking property is independently available and whose cancellation can actually be proved upstream.
 
-## Test whether retained cutoff-face information can make scale transfer exponent-improving
+## Turn the exact cutoff-face annulus into an iterable strict contraction without decoupling its coarse modes
 
 **Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
 
-The Huxley--Watt branch now has a sharp no-amplification control. Harmonic scale doubling exposes an RH-equivalent coarse mode; finite jets form an infinite triangular hierarchy; higher product degree transports exponents by convex averaging; and collapsing to unrestricted generalized Möbius convolutions preserves the same zero boundary.
+The current boundary is no longer “scale doubling is always exponent-neutral.” One-step product-size bookkeeping is neutral, but MC-027 shows that a strict normalized contraction can amplify under repeated squaring. The missing theorem is source-specific: the exact Huxley--Watt cutoff-face/product-annulus residual must deliver such a contraction with summable iteration losses and coverage beyond the square-scale tower.
 
-A genuine advance must keep signed cutoff-face or asymmetric auxiliary information that those scalarizations discard and prove an independent estimate strong enough to improve the exponent. Algebraic degree, differentiation, or passing from `N` to `N^2` is not itself a cancellation gain.
+MC-035--MC-036 make modewise scalarization a control. Log-radial zero and fixed Mellin modes already expose RH-equivalent coarse Mertens information if estimated separately. A decisive positive must retain coupled signed cancellation between coarse and oscillatory annular components rather than remove the mean and bound the remainder independently.
 
 ## Require every proposed global-cancellation statistic to expose its information budget and matched controls
 
 **Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`, and `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
 
-For any new norm, excursion statistic, correlation functional, nonlinear identity, or spectral representation, compute the exact support/coarse-mode information it uses and test it against periodic characters, support-matched random signs, qualitative-Chowla controls, and generalized-product collapse where applicable. A candidate survives only if the target estimate does not follow merely by projecting onto an already RH-equivalent quantity and is not substantially stronger than the desired cancellation on natural controls.
+For any new norm, excursion statistic, correlation functional, nonlinear identity, or spectral representation, compute the exact support/coarse-mode information it uses and test it against periodic characters, support-matched random signs, qualitative-Chowla controls, generalized-product collapse, and the annular coarse-mode identities where applicable. A candidate survives only if the target estimate does not follow merely by projecting onto an already RH-equivalent quantity and is not substantially stronger than the desired cancellation on natural controls.
