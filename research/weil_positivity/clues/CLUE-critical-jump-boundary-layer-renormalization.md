@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-critical-jump-boundary-layer-renormalization
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: weil_positivity
 based_on:
@@ -48,3 +48,12 @@ A decisive negative is a theorem that every nontrivial admissible limit either r
 ## Evidence boundary
 
 The visualization and Taylor expansion identify a quantitative boundary layer but do not produce a renormalized positive geometry. `WP-122` does not cover \(T\)-dependent concentrating measures, and such dependence may itself be the reason the apparent escape is illegitimate. No claim is made here that a derivative/Sobolev completion exists, is canonical, or avoids the critical divergence.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_positivity/findings/WP-123-finite-order-local-sobolev-renormalizations-amplify-critical-prime-shells.md]]
+
+`WP-123` proves that every fixed nontrivial finite-order local positive differential form on the canonical Gamma--Schoenberg channels, and every fixed finite positive endpoint-jet limit that actually sees those channels, fails the critical Cauchy test. Derivative order `r` strengthens the prime-shell lower bound to order \(X(\log X)^{2r}\) along a sequence. Exploiting the shrinking weak channel therefore requires either continuing to synchronize the geometry with the prime-shell frequency, which is not one fixed geometric completion, or leaving the finite-order local category. Genuinely nonlocal negative/fractional-order or independently forced infinite-order completions remain outside the resolved scope.
