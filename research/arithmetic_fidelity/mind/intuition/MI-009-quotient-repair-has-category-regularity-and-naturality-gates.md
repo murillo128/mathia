@@ -1,32 +1,34 @@
-# MI-009 — Quotient repair is a category, regularity, and naturality problem, not one yes/no question
+# MI-009 — Quotient repair is a category, compactness, regularity, and naturality problem
 
-**Evidence level:** supported by AF-078--AF-087; exact in the stated Banach and finite-dimensional models
+**Evidence level:** supported by AF-078--AF-089; exact in the stated Banach, compact-fiber, and finite-dimensional models
 
 ## Core intuition
 
-The statement that information can be recovered after a quotient is incomplete until the admissible category is named. Linear, continuous metric, globally Lipschitz, homogeneous, equivariant, order-compatible, differentiable, and locally conical repairs have genuinely different existence and stability boundaries.
+The statement that information can be recovered after a quotient is incomplete until both the admissible category and the gluing topology are named. Linear, continuous metric, globally Lipschitz, homogeneous, equivariant, order-compatible, differentiable, and locally conical repairs have different boundaries; independently, local repairs globalize only when their admissible fibers have enough compactness to prevent incompatible choices from escaping across finite subsets.
 
-In particular, nonlinear geometry can bypass algebraic splitting, but demanding enough regularity or a linear tangent can silently reintroduce the original linear obstruction.
+Thus **existence with optimal fidelity and naturality are separate gates**. A perfectly global repair may exist with the same local Lipschitz constant while still lacking a canonical, measurable, equivariant, or source-forced choice.
 
 ## Strongest justified principle
 
-AF-078 identifies the linear endpoint: a bounded linear repair exists exactly when the quotient splits, and the space of repairs has a noncanonical shear freedom unless extra structure selects one. AF-081 shows that uniformly convex geometry can choose a canonical continuous homogeneous minimum-norm representative even for an uncomplemented quotient, so nonlinear metric repair is a real escape rather than a formal restatement.
+AF-078 identifies the linear endpoint: a bounded linear repair exists exactly when the quotient splits, with noncanonical shear freedom unless extra structure selects one. AF-081 shows that uniformly convex geometry can choose a canonical continuous homogeneous minimum-norm representative even for an uncomplemented quotient, so nonlinear metric repair is a real escape.
 
-AF-082 and AF-084 locate two rigidity thresholds. For separable Banach quotients, a global Lipschitz section already forces linear splitting; for any positive-homogeneous section, a bounded-linear first-order tangent at the homogeneity apex forces the section itself to be globally linear. AF-083 and AF-085--AF-087 refine the surviving middle category by bounded-scale, local, and tangent-cone moduli rather than pretending one global stability notion fits all geometries.
+AF-082 and AF-084 locate rigidity thresholds: for separable Banach quotients, a global Lipschitz section forces linear splitting; for positive-homogeneous sections, a bounded-linear tangent at the apex forces global linearity. AF-083 and AF-085--AF-087 refine the surviving middle category by bounded-scale and tangent-cone moduli.
+
+AF-088--AF-089 add a different axis. Local finite-subset Lipschitz selections can globalize **with exactly the same constant** when the compatible fiber slices are compact and the distance constraints are closed. Reflexivity is only one way to obtain that compactness; weak-star compact dual fibers give the same exact globalization in nonreflexive settings. The decisive resource is compact admissible fiber compatibility, not reflexivity itself.
 
 ## Evidence synthesis and boundaries
 
-The conclusion is category-relative, not a preference for nonlinear repair. A source application may legitimately force linearity, order, equivariance, or differentiability; if so, the stronger obstruction is the correct one. Conversely, failure of linear splitting is not evidence that a canonical continuous metric representative is impossible.
+These results do not make quotient repair canonical. Compactness plus finite compatibility proves existence of a global selection, but does not by itself provide measurable dependence on external parameters, equivariance under source symmetries, uniqueness, or functoriality. Those properties can be exactly the arithmetic content a proposed representation needs.
 
-The arithmetic question is whether the chosen repair category is forced by the representation and preserves the target discriminator under its actual perturbations.
+Conversely, failure of linear splitting is not evidence that a continuous or optimally Lipschitz metric repair is impossible. The correct obstruction must be stated in the category actually forced by the arithmetic source.
 
 ## Status / novelty
 
-Banach-space splitting, Bartle--Graves/Godefroy--Kalton phenomena, and homogeneous differentiability are classical. The synthesis is the repair hierarchy and the requirement that an arithmetic application declare which rung it uses.
+Banach-space splitting, compactness principles, minimum-norm selections, and Lipschitz extension/selection theory are classical. The synthesis is the repair hierarchy together with the sharper local-to-global rule: **compact compatible fibers can remove globalization loss without removing the independent naturality gate**.
 
 ## Falsification criterion
 
-Show that two supposedly different repair categories in this hierarchy coincide under the exact hypotheses of the arithmetic application, or exhibit an intrinsic repair with the claimed stability/naturality that crosses one of the stated rigidity thresholds without inducing the corresponding split.
+Exhibit a system satisfying the AF-089 compact-fiber finite-compatibility hypotheses for which no global selection with the same Lipschitz constant exists, or show that those hypotheses alone force the equivariance/canonicity required by an arithmetic application. Alternatively, cross one of the stated regularity rigidity thresholds without inducing the corresponding split.
 
 ## Lean-formalizable core
 
@@ -34,3 +36,4 @@ Show that two supposedly different repair categories in this hierarchy coincide 
 - Minimum-norm representative in strictly/uniformly convex spaces.
 - Lipschitz-section implication to linear splitting in the separable case.
 - Homogeneous-apex linearization rigidity.
+- Compact-fiber finite-intersection globalization with preservation of the Lipschitz constant.
