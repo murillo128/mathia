@@ -84,6 +84,17 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/arithmetic_fidelity/findings/AF-068-finite-cone-hull-order-is-generator-cofinality|AF-068]]
 - [[research/arithmetic_fidelity/findings/AF-069-compact-targets-complete-filtered-cone-fidelity|AF-069]]
 - [[research/arithmetic_fidelity/findings/AF-070-compact-cone-consequence-is-zero-normalized-excess|AF-070]]
+- [[research/arithmetic_fidelity/findings/AF-071-normalized-excess-fidelity-characterizes-finite-dimensionality|AF-071]]
+- [[research/arithmetic_fidelity/findings/AF-072-compact-transversal-margin-is-exact-compact-target-fidelity|AF-072]]
+- [[research/arithmetic_fidelity/findings/AF-073-coherent-finite-approximants-characterize-compact-transversal-fidelity|AF-073]]
+- [[research/arithmetic_fidelity/findings/AF-074-precompact-finite-witness-pools-characterize-compact-fidelity|AF-074]]
+- [[research/arithmetic_fidelity/findings/AF-075-kolmogorov-width-decay-characterizes-compact-witness-fidelity|AF-075]]
+- [[research/arithmetic_fidelity/findings/AF-076-null-sequence-synthesis-characterizes-common-compact-witness-envelopes|AF-076]]
+- [[research/arithmetic_fidelity/findings/AF-077-canonical-compact-disk-is-minimal-functorial-witness-envelope|AF-077]]
+- [[research/arithmetic_fidelity/findings/AF-078-linear-quotient-repair-has-splitting-and-naturality-gates|AF-078]]
+- [[research/arithmetic_fidelity/findings/AF-079-equivariant-quotient-repair-is-g-splitting-plus-intertwiner-rigidity|AF-079]]
+- [[research/arithmetic_fidelity/findings/AF-080-order-compatible-quotient-repair-is-projection-band-canonicity|AF-080]]
+- [[research/arithmetic_fidelity/findings/AF-081-uniformly-convex-metric-quotient-repair-bypasses-linear-splitting|AF-081]]
 <!-- structural-membership:end -->
 
 ## Durable synthesis
@@ -95,6 +106,7 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/arithmetic_fidelity/mind/intuition/MI-005-test-family-fidelity-has-scale-and-dimension-gates|MI-005 — test-family fidelity has scale and dimension gates]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-006-interaction-support-governs-marginal-fidelity|MI-006 — interaction support governs marginal fidelity]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-007-stable-fidelity-is-distance-from-collision|MI-007 — stable fidelity is distance from collision]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-008-compact-fidelity-needs-cross-scale-witness-compactness|MI-008 — compact fidelity needs cross-scale witness compactness]]
 - [[research/arithmetic_fidelity/mind/RESEARCH_LINES|Arithmetic Fidelity research lines]]
 
 ## Derived relation nodes
@@ -106,6 +118,10 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/arithmetic_fidelity/graph/relations/finite-weil-test-fidelity-filtration|Weil-test scale and resolution fidelity]]
 - [[research/arithmetic_fidelity/graph/relations/interaction-support-and-collective-stability|Interaction support and collective stability]]
 - [[research/arithmetic_fidelity/graph/relations/stable-fidelity-distance-to-collision|Stable fidelity, target descent and safe repair envelopes]]
+
+## Current source frontier
+
+AF-071--AF-077 replace per-scale existence by a coherent compactness theory: compact transversals, precompact witness pools, width decay and a canonical compact disk characterize whether witnesses survive the limit. AF-078--AF-081 then split quotient repair by category: bounded linear, equivariant and order-compatible repairs have exact splitting/naturality gates, while uniformly convex metric repair gives a canonical nonlinear minimum-norm section even when linear splitting fails.
 
 ## Curation boundary
 

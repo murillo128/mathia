@@ -8,7 +8,7 @@ derived: true
 
 # Global research graph
 
-This is the derived root graph for Mathia research. Source findings and mind notes remain authoritative.
+This is the derived root graph for Mathia research. Canonical findings and mind notes remain authoritative.
 
 ## Materialized line hubs
 
@@ -37,6 +37,7 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/mind/intuition/MI-004-critical-axis-is-not-zero-selection|MI-004 — critical axis is not zero selection]]
 - [[research/mind/intuition/MI-005-topology-is-part-of-the-arithmetic-claim|MI-005 — topology is part of arithmetic claim]]
 - [[research/mind/intuition/MI-006-classify-the-boundary-model-before-calling-it-arithmetic|MI-006 — classify the boundary model before calling it arithmetic]]
+- [[research/mind/intuition/MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure|MI-007 — surviving structure needs quantitative non-escape]]
 - [[research/mind/RESEARCH_LINES|Global Mathia research lines]]
 
 ## Cross-line relation nodes
@@ -47,16 +48,15 @@ This is the derived root graph for Mathia research. Source findings and mind not
 - [[research/graph/relations/gamma2-scattering-is-shared-background|Gamma(2) scattering is shared background]]
 - [[research/graph/relations/operator-topology-is-part-of-arithmetic-claim|Operator topology is part of arithmetic claim]]
 - [[research/graph/relations/universal-boundary-models|Universal boundary models before arithmetic interpretation]]
+- [[research/graph/relations/quantitative-non-escape|Quantitative non-escape before treating finite structure as a mechanism]]
 
 ## Current integration boundary
 
-Eight source-backed research lines are represented: six RH-facing lines plus the transversal Arithmetic Fidelity and Visual Exploration lines. The source window materially expands existing frontiers but does not establish a new cross-line theorem or justify a new global relation node.
+Eight source-backed research lines are represented: six RH-facing lines plus Arithmetic Fidelity and Visual Exploration as transversal lines. The new global synthesis is quantitative rather than merely topological: exact finite-scale survival repeatedly needs a compactness, coercivity, reference-stability or comparable non-escape theorem in the final category before it can carry arithmetic significance.
 
-Arithmetic Fidelity extends exact robustness from safe-lift margins through dual-face coherence and filtered cone generation to a zero-normalized-excess characterization of compact consequence. Möbius Cancellation isolates a boundary-cancelled path-energy route and a sharper harmonic endpoint kernel; Visual Exploration identifies the leading harmonic boundary model with Watt's classical sawtooth term, so that geometric pattern is a prior-art redirect rather than a new arithmetic mechanism.
+Prime Circle now has a genuine mesoscopic survivor after extensive classicalization: a gap-two macroscopic spectral band locks at Mertens/Frobenius scale but not in operator norm. Weil Inertia reaches the complementary obstruction: algebraic full rank survives while quantitative coercivity collapses on polynomial-dimensional near-null sectors. Arithmetic Fidelity supplies the abstract compactness/repair language for this distinction, while Visual Exploration supplies matched controls that separate robust residuals from coordinate or symmetry artifacts.
 
-Prime Circle pushes the canonical Hessian/resultant program further into integral and confluent-Cauchy structure: coherent all-divisor aggregation collapses to the full polygon Laplacian, and even the cross-shell-only primorial aggregate has the same universal bulk law up to a Mertens-squared defect. Prime Flute shows that the connected Ruelle cusp is not reference-stable under natural dilation or compact/local comparison changes.
+Prime Flute makes the surviving selector requirement increasingly global and reference-stable; tail marked lengths are uniformly composite-blind. Prime Lattice now explicitly traverses de Bruijn–Newman heat flow, absolute-twistor geometry, Poisson–Newton trace formulas and Grosswald–Schnitzer controls; the phase-slope discriminator is positive, but stronger generic completion rigidity shows that zero-spectrum encoding still needs arithmetic polarization. Weil Positivity obtains a canonical Markov-positive Gamma/digamma symbol, yet direct finite/archimedean positive gluing remains divergent.
 
-Prime Lattice closes fixed profinite and compatible l-adic spectral escapes to scalar/gauge data, while Deninger's prime-orbit half-axis, Meyer's adelic zero spectrum, and Suzuki's unconditional positive screw-Hilbert norm are explicit prior-art redirects whose missing positivity, cohomology or metric-identification content remains the hard theorem. Weil Inertia identifies the residual prime rank-defect geometry with exact cyclic rotations and triangular islands. Weil Positivity closes Chentsov-natural, product-Wasserstein, finite-block correlated and Lévy/Dirichlet positive spectral repairs at the critical prime weights by divergent low-frequency cost.
-
-Riemann Atlas v1 remains an approach-space denominator, not a progress-to-proof score. No leaf state or mass changes in this pass; marginal frontier telemetry records the new extensions, prior-art collisions and barriers separately and never feeds Research Watch.
+Riemann Atlas v1 changes one leaf state: F3 de Bruijn–Newman/Pólya deformation moves from `unvisited` to `reproduced`. The denominator remains fixed; coverage rises because Mathia has now directly traversed that known mechanism, not because a proof frontier was promoted. Frontier telemetry separately records the latest marginal mix and does not feed Research Watch.
 <!-- graph:end -->

@@ -37,15 +37,26 @@ These links are a path-derived membership projection only: each target is a cano
 - [[research/mobius_cancellation/findings/MC-019-path-energy-coarse-riesz-rh-equivalence|MC-019]]
 - [[research/mobius_cancellation/findings/MC-020-huxley-watt-harmonic-coarse-mode-barrier|MC-020]]
 - [[research/mobius_cancellation/findings/MC-021-huxley-watt-harmonic-endpoint-bilinear-kernel|MC-021]]
+- [[research/mobius_cancellation/findings/MC-022-harmonic-watt-correction-weighted-coarse-mode|MC-022]]
+- [[research/mobius_cancellation/findings/MC-023-renormalized-huxley-watt-infinite-jet-hierarchy|MC-023]]
+- [[research/mobius_cancellation/findings/MC-025-higher-degree-huxley-watt-exponent-neutrality|MC-025]]
+- [[research/mobius_cancellation/findings/MC-026-generalized-mobius-product-collapse-zero-boundary|MC-026]]
+- [[research/mobius_cancellation/findings/MC-027-analytic-scale-doubling-iteration-threshold|MC-027]]
+- [[research/mobius_cancellation/findings/MC-028-huxley-watt-cutoff-defect-mobius-reflection|MC-028]]
+- [[research/mobius_cancellation/findings/MC-029-general-huxley-watt-product-collapse-reflection|MC-029]]
+- [[research/mobius_cancellation/findings/MC-030-huxley-watt-truncation-resolution-budget|MC-030]]
 <!-- structural-membership:end -->
 
 ## Current source frontier
 
-MC-017--MC-020 show that natural boundary-cancelled path energies and their coarse harmonic mode already carry an RH-scale burden rather than producing it. MC-021 leaves a narrower centered bilinear endpoint kernel as a genuine target; Visual Exploration independently identifies its leading boundary geometry with Watt's classical sawtooth model without supplying the missing Möbius bilinear estimate.
+MC-022--MC-029 close the most direct continuations of the harmonic endpoint route. Subtracting the Watt boundary term leaves a doubled-scale weighted Mertens mode with an RH-scale critical burden; finite analytic jets do not close the hierarchy; and higher-degree product collapse, reflection and iteration remain exponent-neutral without genuinely new signed information. MC-030 remains structurally present because it is canonical, but is deliberately not used as settled semantic support while its adversarial sidecar is open.
 
 - [[research/mobius_cancellation/mind/RESEARCH_LINES|Möbius Cancellation synthesis]]
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget|MI-001 — local cancellation needs a polynomial information budget]]
 - [[research/mobius_cancellation/mind/intuition/MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling|MI-002 — one-scale pretentiousness has a prime-harmonic ceiling]]
+- [[research/mobius_cancellation/mind/intuition/MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion|MI-003 — analytic nonmasking is weaker than absolute inversion]]
+- [[research/mobius_cancellation/mind/intuition/MI-004-mean-absolute-cancellation-needs-excursion-coupled-information|MI-004 — mean-absolute cancellation needs excursion-coupled information]]
+- [[research/mobius_cancellation/mind/intuition/MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information|MI-005 — scale doubling is exponent-neutral without new signed information]]
 
 ## Derived relation nodes
 

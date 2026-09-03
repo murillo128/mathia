@@ -3,7 +3,7 @@ id: RA-index
 type: riemann-atlas
 atlas_version: 1
 status: bootstrap
-source_revision: 48738f2546ad6a41418eead90569a795974c0ffa
+source_revision: 4bc527123c549c73b4ce4f04512cb291b342311d
 derived: true
 ---
 
@@ -15,22 +15,22 @@ This is Mathia's versioned map of the **currently identifiable Riemann-hypothesi
 
 | Metric | v1 current |
 | --- | ---: |
-| Atlas coverage | **74.5%** |
+| Atlas coverage | **77.5%** |
 | Live frontier | **46.8%** |
 | Hard-pruned | **11.2%** |
 | Soft-pruned | **3.0%** |
-| Reproduced / prior-art redirect | **13.5%** |
-| Unvisited | **25.5%** |
+| Reproduced / prior-art redirect | **16.5%** |
+| Unvisited | **22.5%** |
 | Macro-families | **10** |
 | Leaf territories | **37** |
 
-**Reading:** no v1 leaf changes state or mass in this source window. The Möbius summatory-error leaf A1 remains `active`; all new RH-facing findings refine already visited `open`, `active`, `hard-pruned` or `reproduced` territory. Visual Exploration and Arithmetic Fidelity remain transversal research lines and do not create new Atlas denominator mass by themselves. No new macrofamily, leaf mass, or Atlas version is justified.
+**Reading:** one v1 leaf changes state in this source window. [[research/graph/atlas/territories/RA-F3-de-bruijn-newman-deformations|F3 — de Bruijn–Newman / Pólya deformations]] moves from `unvisited` to `reproduced` because [[research/prime_lattice/findings/PL-121-de-bruijn-newman-rank-one-heat-coupling|PL-121]] directly traverses and classifies the established heat-flow mechanism. Its exponent-lattice realization is rank one, so the finding is a prior-art reproduction plus a line-specific obstruction, not a pruning of deformation methods in general. All v1 masses and macrofamilies stay fixed.
 
-The internal frontiers nevertheless move materially. Arithmetic Fidelity extends safe-repair structure to dual-face coherence, filtered cone generation and an exact zero-normalized-excess compact consequence criterion. Möbius Cancellation isolates both a path-energy barrier and a narrower harmonic endpoint kernel, while Visual Exploration shows that the kernel's leading sawtooth boundary model is classical prior art. Prime Circle's resultant-Hessian hierarchy continues to classicalize through integral characteristic data, confluent-Cauchy structure and universal primorial bulk behavior. Prime Flute makes the connected Ruelle cusp reference-dependent rather than an intrinsic divisor candidate.
+The source window materially narrows the internal frontier. Arithmetic Fidelity replaces isolated finite witnesses by compact/coherent cross-scale witness geometry and separates linear splitting from nonlinear metric quotient repair. Möbius Cancellation shows that the Huxley–Watt endpoint correction, finite analytic jets and higher-degree scale doubling recycle RH-scale cancellation rather than generating it. Prime Circle isolates an exact gap-two macroscopic spectral cliff: the top band locks in average/Frobenius scale and is recoverable from bounded chord windows at Mertens scale, but sparse worst-angle directions survive in operator norm. Prime Flute closes first-resolvent Schatten improvements below `S_2` and proves that all tail marked lengths are asymptotically blind to the all-composite shift clone, leaving only genuinely global nonlocal value mechanisms.
 
-Prime Lattice closes fixed profinite/l-adic spectral selectors to scalar or gauge data and redirects stronger geometries to Deninger, Meyer and Suzuki prior art: even a canonical unconditional positive screw-Hilbert norm does not bypass the RH-equivalent theorem identifying it with the Weil metric. Weil Inertia reduces the residual rank-defect regime to exact finite rotation and triangular-boundary geometry. Weil Positivity extends the critical divergence barrier from Fisher/Gibbs energy to Chentsov-natural metrics, product transport, finite-block correlations and the full nontrivial one-dimensional Lévy/Dirichlet multiplier cone.
+Prime Lattice now explicitly traverses de Bruijn–Newman, the absolute-twistor odd Frobenius face, Poisson–Newton trace universality and Sierra/Grosswald–Schnitzer controls. A critical-line reflection-phase slope gives a positive quantitative discriminator for integer prime deformations, while order-one Hadamard rigidity shows that stronger global completion assumptions can collapse the same controls without using the integer prime lattice. Weil Inertia separates exact rank restoration from quantitative coercivity and pushes polynomial-dimensional full-packed near-nullity beyond the square-root scale using published prime-distribution input; the corrected WI-114 range is used. Weil Positivity obtains a canonical Markov-positive Riemann Gamma/digamma symbol but proves that direct critical prime coupling and broad local/scale-free positive repairs still diverge.
 
-The current ±25% family-weight sensitivity band remains approximately **70.0%–78.4%**. This is not a statistical confidence interval. Marginal frontier episodes are tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] and do not alter the Atlas denominator.
+The current ±25% family-weight sensitivity band is approximately **72.7%–81.7%**. This is not a statistical confidence interval. Marginal frontier episodes are tracked separately in [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] and do not alter the Atlas denominator.
 
 ## Families
 
