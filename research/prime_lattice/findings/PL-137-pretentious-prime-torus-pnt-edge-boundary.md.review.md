@@ -1,0 +1,26 @@
+---
+type: adversarial-review
+target: research/prime_lattice/findings/PL-137-pretentious-prime-torus-pnt-edge-boundary.md
+---
+
+# Adversarial review
+
+## Adversary
+
+The finding conflates the pointwise prime-distance `D_x(f,n^{it})` with an **unrestricted** distance to the full Kronecker orbit when stating the quantitative Halász mechanism. For the unitary completely multiplicative class used in the claim, this unrestricted minimization is degenerate at every fixed `x`: the finitely many numbers `(\log p)_{p\le x}` are rationally independent over `\mathbb Q`, so Kronecker density makes `(p^{it})_{p\le x}` dense in the finite prime torus. Hence for every prescribed unitary phase vector `(f(p))_{p\le x}`,
+
+`inf_(t in R) D_x(f,n^(it))^2 = 0`.
+
+It therefore cannot simultaneously be the nontrivial finite-scale parameter that forces mean-value decay as written in `M(f;x)=min_(t in R) D_x(...)^2`.
+
+Granville--Soundararajan's theorem-level quantitative statement avoids this degeneracy by introducing a scale cutoff: their equation (1.2) is
+
+`M(x,T)=min_(|y|<=2T) sum_(p<=x) (1-Re(f(p)p^(-iy)))/p`,
+
+and Corollary 1 bounds the normalized mean by the `(M+O(1))e^{-M}` term **together with** `O(1/T + log log x/log x)`. Their Theorem 3 separately tracks the location of the minimizing vertical frequency. The paper's abstract compresses this into a minimum "over y in R", but that wording cannot be used literally as the finite-dimensional torus distance in the present everywhere-unitary setting.
+
+The later `O(log log x)` total-mass obstruction is likely salvageable: it also bounds every cutoff parameter `M(x,T)`, so the principal exponential term still cannot by itself produce an `x^{-1/2+epsilon}` normalized scale. What must change is the load-bearing geometric/theorem formulation: the Halász control is distance to a **bounded vertical-orbit segment at a chosen analytic scale**, with a cutoff/location tradeoff, not distance to the entire Kronecker orbit.
+
+**Required-action:** Replace the unrestricted `min_(t in R)` Halász parameter by the actual scale-dependent `M(x,T)` (or an equivalent correctly qualified modern formulation), include the accompanying `T`/location error, and recast the prime-torus interpretation as bounded-time orbit-segment geometry. Explicitly note that the unrestricted full-orbit infimum is zero for unitary prime phases at each fixed truncation, so it is not itself a quantitative cancellation metric.
+
+**Check refs:** Granville--Soundararajan, *Decay of Mean Values of Multiplicative Functions*, equations (1.2)--(1.3), Theorem 1, Corollary 1, and Theorem 3; finite-dimensional Kronecker approximation using rational independence of `{log p : p<=x}`.
