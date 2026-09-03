@@ -173,3 +173,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Linked-cluster and forest expansions
 
 - Abdelmalek Abdesselam and Vincent Rivasseau, **Trees, forests and jungles: a botanical garden for cluster expansions**, in *Constructive Physics*, Lecture Notes in Physics 446, Springer (1995), 7–36. DOI: 10.1007/3-540-59190-7_20. arXiv:hep-th/9409094. Role: classical Brydges--Kennedy forest interpolation and linked-cluster tree expansions; prior-art anchor for the spanning-tree majorant and connected induced-subset log-determinant clusters in PC-154.
+
+## Bloch time-reversal symmetry
+
+- Gianluca Panati, **Triviality of Bloch and Bloch-Dirac bundles**, *Annales Henri Poincaré* 8:5 (2007), 995–1011. DOI: 10.1007/s00023-007-0326-8. arXiv:math-ph/0601034. Role: standard periodic Bloch setting in which time-reversal symmetry pairs opposite quasimomenta; prior-art anchor for PC-159's classification of the exact `t <-> 1-t` Prime-Circle pencil symmetry as ordinary Bloch reality/time reversal rather than zeta-specific arithmetic structure.
