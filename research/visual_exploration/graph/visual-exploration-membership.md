@@ -13,3 +13,5 @@ This supplements the line hub's existing structural block with canonical finding
 
 - [[research/visual_exploration/findings/VIS-008-infinitesimal-zero-portraits-universal|VIS-008]]
 - [[research/visual_exploration/findings/VIS-009-reflection-fixed-zero-residual-gradient|VIS-009]]
+- [[research/visual_exploration/findings/VIS-010-hybrid-euler-hadamard-scale-transfer-tautology|VIS-010]]
+- [[research/visual_exploration/findings/VIS-011-taylor-normalized-residual-full-reflection-parity|VIS-011]]

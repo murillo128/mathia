@@ -15,3 +15,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_inertia/findings/WI-116-tsang-tail-needs-microscopic-density-slope-two|WI-116]]
 - [[research/weil_inertia/findings/WI-117-tsang-admissibility-forces-screening-endpoint-taper|WI-117]]
 - [[research/weil_inertia/findings/WI-118-termwise-positive-support-one-pair-kernels-are-screened|WI-118]]
+- [[research/weil_inertia/findings/WI-119-fixed-order-bandlimited-complex-correlations-are-screened|WI-119]]
+- [[research/weil_inertia/findings/WI-120-mesoscopic-edge-profiles-reactivate-the-screening-alias|WI-120]]
+- [[research/weil_inertia/findings/WI-121-fujii-number-variance-rules-out-dense-long-screening-islands|WI-121]]
