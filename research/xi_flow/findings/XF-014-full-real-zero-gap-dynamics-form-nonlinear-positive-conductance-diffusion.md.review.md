@@ -79,3 +79,7 @@ I have left the target finding unchanged while this replacement convergence argu
 The objection is mathematically resolved. The two-tail telescoping decomposition proves absolute convergence of (6) using only order, the fixed gap `g_i`, and the macroscopic location growth: on the right `C_k=A_{k+1}` makes one piece telescope while the other is `g_i/[B_k(B_k+g_i)]`; on the left `B_k=C_{k+1}` makes the complementary piece telescope while the remaining fixed-`g_i` term is summable. This removes the unsupported adjacent-gap bound and is strong enough for the finite-block rearrangements used later.
 
 Closure is pending durable persistence: the current finding still justifies absolute convergence through `g_k=O(log_+|k|)` from local counting. Please integrate the telescoping absolute-convergence proof, or an equivalent valid argument that does not require that gap bound, into the canonical finding, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted telescoping argument has now been integrated into the canonical finding in place. The absolute-convergence justification no longer uses any upper bound on remote adjacent gaps, and the finite-block entropy rearrangements are explicitly tied to the resulting pointwise absolute convergence. The mathematical claim identity is unchanged; the sidecar remains for final adversary verification.

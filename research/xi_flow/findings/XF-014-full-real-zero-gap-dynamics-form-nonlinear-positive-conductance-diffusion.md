@@ -85,15 +85,102 @@ g_i'
 \tag{6}
 \]
 
-Unlike (1), the differenced sum in (6) is absolutely convergent for the Xi zero set in the real-simple regime. For fixed `i`, Rodgers--Tao's macroscopic location estimates give `|x_k|\asymp |k|/\log_+|k|`, while their local counting estimates give the crude adjacent-gap bound `g_k=O(\log_+|k|)` that is already sufficient here. Thus the tail is
+Unlike (1), the differenced sum in (6) is absolutely convergent for the Xi zero set in the real-simple regime, and this does **not** require any uniform upper bound on the remote gaps. Fix `i` and write
 
 \[
-c_{ik}|g_k-g_i|
-\ll
-\frac{\log_+^3|k|}{k^2},
+T_{ik}:=
+\frac{1}{x_{i+1}-x_{k+1}}
+-
+\frac{1}{x_i-x_k}
+=c_{ik}(g_k-g_i).
 \]
 
-which is summable. Equation (6) is therefore an honest pointwise nonlinear diffusion identity after the principal-value velocities have been differenced.
+For `k>i`, put
+
+\[
+A_k=x_k-x_i,
+\qquad
+B_k=x_{k+1}-x_{i+1},
+\qquad
+C_k=x_{k+1}-x_i.
+\]
+
+Then `C_k=A_{k+1}=B_k+g_i` and `C_k>A_k,B_k`, so
+
+\[
+|T_{ik}|
+\le
+\left(\frac1{A_k}-\frac1{C_k}\right)
++
+\left(\frac1{B_k}-\frac1{C_k}\right).
+\tag{6a}
+\]
+
+The first series telescopes exactly:
+
+\[
+\sum_{k=i+1}^{\infty}
+\left(\frac1{A_k}-\frac1{A_{k+1}}\right)
+=
+\frac1{g_i}.
+\tag{6b}
+\]
+
+The second has the fixed numerator `g_i`,
+
+\[
+\frac1{B_k}-\frac1{B_k+g_i}
+=
+\frac{g_i}{B_k(B_k+g_i)},
+\tag{6c}
+\]
+
+and is summable because the macroscopic zero-location estimate gives `B_k\asymp k/\log k` for fixed `i` and `k\to+\infty`.
+
+For `k<i`, instead set
+
+\[
+A_k=x_i-x_k,
+\qquad
+B_k=x_{i+1}-x_{k+1},
+\qquad
+C_k=x_{i+1}-x_k=A_k+g_i.
+\]
+
+Now `B_k=C_{k+1}` and
+
+\[
+|T_{ik}|
+\le
+\left(\frac1{A_k}-\frac1{C_k}\right)
++
+\left(\frac1{B_k}-\frac1{C_k}\right).
+\tag{6d}
+\]
+
+The first term is `g_i/[A_k(A_k+g_i)]` and is summable from `A_k\asymp |k|/\log|k|`, while the second telescopes:
+
+\[
+\sum_{k=-\infty}^{i-1}
+\left(\frac1{C_{k+1}}-\frac1{C_k}\right)
+=
+\frac1{g_i}.
+\tag{6e}
+\]
+
+Therefore
+
+\[
+\boxed{
+\sum_{k\ne i}|T_{ik}|
+=
+\sum_{k\ne i}c_{ik}|g_k-g_i|
+<\infty
+}
+\tag{6f}
+\]
+
+for every fixed `i`. Equation (6) is thus an honest pointwise nonlinear diffusion identity after the principal-value velocities have been differenced. The same absolute convergence is enough for the finite-block entropy balances below: the internal block contains only finitely many pairs, and for each of its finitely many indices the external tail is absolutely summable by (6f).
 
 ## 2. The `R` field is exactly the nonlinear gap Laplacian
 
