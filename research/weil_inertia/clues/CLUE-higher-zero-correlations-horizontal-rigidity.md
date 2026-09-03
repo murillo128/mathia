@@ -1,13 +1,17 @@
 ---
 id: CLUE-weil-inertia-higher-zero-correlations-horizontal-rigidity
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier.md
   - research/weil_inertia/findings/WI-002-density-one-moment-tower-needs-audit.md
+  - research/weil_inertia/findings/WI-005-critical-lattice-screening-defeats-depth-only-negative-mass.md
+  - research/weil_inertia/findings/WI-006-critical-lattice-screening-is-matrix-equivalent-to-doubles.md
+  - research/weil_inertia/findings/WI-007-support-one-is-screening-threshold-for-cross-scale-depth.md
   - research/weil_inertia/findings/WI-043-maximal-pair-discrepancy-does-not-control-locked-four-point-covariance.md
+  - research/weil_inertia/findings/WI-115-tsang-pair-horizontal-signal-is-cancelled-by-critical-lattice-screening.md
   - research/prior_art/montgomery-pair-correlation.md
 ---
 
@@ -15,34 +19,34 @@ based_on:
 
 ## Observation
 
-`WI-001` isolates the present information barrier sharply: the first two trace moments with Fourier support one admit explicit extremizers and cannot push the simple-critical-line proportion anywhere near density one. The same finding records a qualitatively different escape route: sufficiently rich correlation information can distinguish on-line multiplicity from horizontal displacement, and the full pair-correlation conjecture in a formulation that does not assume RH would force asymptotically all zeros to be simple and on `Re s = 1/2`.
+`WI-001` isolates the first-two-moment support-one barrier, while `WI-005`--`WI-007` show a stronger horizontal-information obstruction: at critical vertical spacing, off-line mirror pairs can be matrix-equivalent to on-line doubles for every Alpöge--Furman-type compression of support at most one. `WI-043` separately shows that even strong pair-discrepancy control need not determine a locked four-point covariance. These facts leave open whether a different zero-correlation observable can retain horizontal information that survives the screening quotient.
 
-`WI-002` explores one way of supplying richer information, namely an all-order trace-moment tower, but its required arithmetic transport is not established. Independently, `WI-043` shows that even strong pair-discrepancy control need not determine a locked four-point covariance. Together these boundaries suggest looking on the zero side for observables richer than the current pairwise/second-moment compression, rather than only trying to manufacture higher trace moments from the prime side.
+`WI-115` materially narrows the question using the current v3 Baluyot--Goldston--Suriajaya--Turnage-Butterbaugh Tsang-kernel method. A complex **pair** statistic already detects horizontal displacement on a same-height mirror pair, so genuine `k>=3` information is not needed merely for local detectability. But on the WI critical screening lattice the complete support-one Tsang statistic cancels that same-height excess exactly; long natural finite blocks retain only `O(log M)=o(M)` discrepancy, and the unconditional Montgomery weight changes the block comparison only by `O(1)`. The horizontal power of the published box argument instead comes from a microscopic **termwise positivity** condition that allows the same-height sub-sum to be extracted before cross-height cancellation.
 
 ## Research question
 
-Can the non-RH pair-correlation framework be lifted to a finite hierarchy of weighted pair statistics, mixed moments, or genuine `k`-point zero correlations that retain information about the real parts `Re rho`, and can that horizontal information be fed into the Weil-inertia certificate to force a strictly larger proportion of zeros onto `Re s = 1/2`?
+Can one obtain an unconditional information carrier or inequality that quantitatively prevents the compensating cross-height cancellation identified in `WI-115`, and then feed that control into the Weil-inertia certificate to force a strictly larger proportion of zeros onto `Re s=1/2`?
 
-The target is not a generic higher-moment inequality. Seek an explicit statistic whose value changes when a positive-density population of zeros is moved horizontally off the critical line while keeping essentially the same ordinate statistics and first-two-moment Weil data. Then derive a quantitative implication of the form: control of that statistic bounds the admissible off-line mass or horizontal-depth distribution, and the resulting bound improves the current simple-critical-line inertia certificate.
+The first targets are now more specific than “try higher correlations.” Test whether the pairs outside the Tsang positivity strip can be bounded sharply enough from established zero-density or correlation theorems; whether another arithmetically accessible pair kernel has a horizontal signal that survives the WI screening lattice at density scale; or whether crossing support one yields a usable alias without paying an unavailable prime-pair input. Only if pair-level routes fail for a structural reason should the search escalate to mixed moments or genuine finite `k`-point statistics, which must themselves be checked against the same screening configuration.
 
 ## Why it may matter
 
-The present `weil_inertia` obstruction is partly an information-compression problem: shallow off-line pairs and multiple on-line zeros can be indistinguishable at first-two-moment resolution. A zero-correlation observable that is genuinely sensitive to horizontal displacement would attack exactly that degeneracy instead of postprocessing the same compressed matrix data.
+`WI-115` supplies both a positive and a negative lesson. Pair correlation does contain an exact horizontal-depth defect: under the BGSTB positivity hypothesis, retaining the quadratic remainder in `cosh` controls a same-height horizontal variance in addition to horizontal multiplicity. But support-one global summation can erase that signal at leading order. The useful research question is therefore no longer whether horizontal information exists, but whether available arithmetic can isolate it from the cross-height reservoir that screens it.
 
-This route is also distinct from the unverified density-one moment tower in `WI-002`. It could yield an intermediate unconditional gain from only a small amount of additional correlation information, or identify a precise correlation theorem whose proof would translate immediately into a stronger percentage on the critical line. Even a negative result would be useful if it proves that a broad class of higher zero statistics still collapses to the existing bandwidth-one information budget.
+A successful controller would attack the exceptional complement directly rather than squeezing the same first-two trace moments harder. A rigorous impossibility result would also be valuable if it shows that every support-one pair-level controller compatible with the unconditional Montgomery form factor is screenable, thereby justifying escalation to supercritical support or genuinely higher correlations.
 
 ## Decisive test
 
-Choose the lowest-complexity candidate beyond the present pairwise compression and carry out both directions of the audit.
+Start with the exact Tsang interface in `WI-115`. Derive a decomposition of the evaluated pair sum into the same-height horizontal-defect term and the complementary cross-height contribution. Using only established unconditional inputs, either prove a lower bound on that complement strong enough that the horizontal defect survives at order `N`, or construct a zeta-count-compatible screened configuration showing that the proposed controller remains `o(N)`-blind.
 
-First, construct two matched zero configurations with the same zero count, ordinate density, first two Weil trace moments, and all currently used pairwise data, but with different horizontal off-line mass. Test whether the proposed weighted pair or `k`-point statistic separates them at leading order. If it does not, kill that statistic as a horizontal discriminator.
-
-If it does separate them, derive an explicit deterministic inequality converting its deviation into a bound on off-line mass or horizontal depth and insert that bound into the existing inertia/rank certificate. The clue survives only if the resulting certified simple-critical-line proportion is strictly stronger than the current first-two-moment bound and the needed correlation input is not merely RH, density-one criticality, or an unproved all-order prime-correlation statement in disguise.
-
-A particularly valuable first success would be a finite-order statistic for which a known or realistically attackable unconditional correlation estimate already gives a numerical improvement.
+For any replacement pair or `k`-point statistic, repeat the same adversarial test against the WI-005/WI-006 lattice before investing in arithmetic evaluation. A route counts as a substantive success only if the surviving statistic yields an explicit deterministic bound on off-line mass/depth and that bound can be inserted into the existing inertia/rank certificate using proved, not conjectural, correlation information.
 
 ## Evidence boundary
 
-No such horizontal-sensitive statistic or stronger inertia inequality is established here. `WI-001` records that full correlation information can in principle force density one, while `WI-043` shows that pairwise information can fail to control a relevant four-point quantity; neither result proves that a useful finite-order intermediate statistic exists or that it is unconditionally evaluable.
+`WI-115` establishes local Tsang horizontal sensitivity, exact support-one lattice cancellation for the bare kernel, `O(log M)` finite-block blindness, and `O(1)` stability of that block comparison under the Montgomery weight. It does **not** prove that every pair statistic is blind, that all higher correlations collapse, or that no unconditional estimate can control the terms outside the Tsang positivity strip.
 
-The all-order trace-moment route of `WI-002` remains separately unverified and must not be treated as evidence for this clue. Any candidate whose evaluation silently requires RH, the desired critical-line conclusion, unsupported prime correlations beyond the available Fourier-support regime, or an equivalent restatement of the same missing theorem should be rejected rather than counted as progress.
+The BGSTB simple-critical proportions in a fixed narrow box remain conditional on their box/positivity hypothesis (or a suitably strong zero-density hypothesis). They are not unconditional improvements to the Mathia bound. The all-order trace-moment route in `WI-002` remains separately unverified and cannot be used as evidence for this clue.
+
+## Research disposition
+
+Accepted and narrowed by `WI-115`. Pair-level horizontal detectability is established, but the raw support-one Tsang/Montgomery pair statistic is screened at density scale. The live question is now whether one can **unconditionally control the compensating cross-height contribution** or construct a different finite-order observable whose horizontal signal survives the canonical screening extremizer and has an established arithmetic evaluation.
