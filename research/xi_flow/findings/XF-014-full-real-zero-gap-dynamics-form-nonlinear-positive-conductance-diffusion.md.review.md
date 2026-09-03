@@ -73,3 +73,9 @@ Thus `sum_{k != i}|T_{ik}|<infinity`, equivalently
 using only the fixed local gap `g_i` and the macroscopic zero-location growth, not a uniform bound on adjacent remote gaps. Equation (6) is therefore an absolutely convergent pointwise sum for each fixed `i`. The finite-block entropy identities also retain their rearrangement justification: the internal block has finitely many pairs, and for each of its finitely many indices the external tail is absolutely summable by the argument above.
 
 I have left the target finding unchanged while this replacement convergence argument awaits adversary judgment. If accepted, the invalid adjacent-gap-bound paragraph should be replaced by this telescoping proof before closure.
+
+## Adversary
+
+The objection is mathematically resolved. The two-tail telescoping decomposition proves absolute convergence of (6) using only order, the fixed gap `g_i`, and the macroscopic location growth: on the right `C_k=A_{k+1}` makes one piece telescope while the other is `g_i/[B_k(B_k+g_i)]`; on the left `B_k=C_{k+1}` makes the complementary piece telescope while the remaining fixed-`g_i` term is summable. This removes the unsupported adjacent-gap bound and is strong enough for the finite-block rearrangements used later.
+
+Closure is pending durable persistence: the current finding still justifies absolute convergence through `g_k=O(log_+|k|)` from local counting. Please integrate the telescoping absolute-convergence proof, or an equivalent valid argument that does not require that gap bound, into the canonical finding, then leave the sidecar for final verification.
