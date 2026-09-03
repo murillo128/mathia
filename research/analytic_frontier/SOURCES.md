@@ -35,6 +35,10 @@ This file records durable literature dependencies for `research/analytic_frontie
 
 - C. Carmeli, E. De Vito, A. Toigo and V. Umanità, **Vector valued reproducing kernel Hilbert spaces and universality**, *Analysis and Applications* 8 (2010), 19–61, DOI `10.1142/S0219530510001503`. Role: classical feature-map and operator-valued Bochner description of translation-invariant vector-valued kernels; prior-art boundary for `ANF-003`, clarifying that common-translation vectorization followed by scalar Gram compression is redundant while genuinely operator-valued spectral data can remain richer.
 
+## Mellin and dilation-sum identities
+
+- Hélder Lima, **On Müntz-type formulas related to the Riemann zeta function**, *Journal of Mathematical Analysis and Applications* 463:1 (2018), 398–411, DOI `10.1016/j.jmaa.2018.03.029`. Role: prior-art anchor for the classical Mellin/Dirichlet-series mechanism by which dilation sums acquire zeta factors; used in `ANF-014` to classify the general transform principle as classical, while the periodization-cost defect specialization is derived directly there.
+
 ## Local ordered-gap and block certificates
 
 - `anthropics/zeta-23-lean`, Lean 4 companion development for arXiv:2608.13637. Role: formal source of the unconditional baseline `H = 3/2 - (1/sqrt(2)) cot(1/sqrt(2)) = 0.672500703679...` and the analytic/stability infrastructure consumed by later local-gap refinements.

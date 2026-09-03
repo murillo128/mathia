@@ -17,6 +17,7 @@ based_on:
   - research/analytic_frontier/findings/ANF-011-negative-out-of-band-tails-violate-conjugate-pair-barrier.md
   - research/analytic_frontier/findings/ANF-012-conjugate-comb-tests-force-positive-band-spectrum.md
   - research/analytic_frontier/findings/ANF-013-duplicated-lattice-tests-periodization-barrier.md
+  - research/analytic_frontier/findings/ANF-014-mellin-periodization-defect-budget.md
   - research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier.md
   - research/weil_inertia/findings/WI-118-termwise-positive-support-one-pair-kernels-are-screened.md
   - research/prior_art/montgomery-pair-correlation.md
@@ -44,7 +45,19 @@ A\le \min(1+P_J(h),2P_J(h)),
 P_J(h)=\frac1h\sum_{k\in\mathbb Z}J(k/h),
 \]
 
-at every spacing. If `p(J)=inf_h P_J(h)` and `C(J)` is the BGSST pair cost, optimizing the amplitude of a fixed shape is capped by `max(0,2-C(J)/p(J))`. Therefore any scalar improvement over Montgomery--Taylor must first satisfy the scale-free survival condition `C(J)/p(J)<C_MT`. A deliberately stronger profile saturating every duplicated-lattice constraint has an exact Möbius-inversion formula, so the all-scale lattice boundary itself is arithmetically rigid rather than a free smooth optimization.
+at every spacing. If `p(J)=inf_h P_J(h)` and `C(J)` is the BGSST pair cost, optimizing the amplitude of a fixed shape is capped by `max(0,2-C(J)/p(J))`. Therefore any scalar improvement over Montgomery--Taylor must first satisfy the scale-free survival condition `C(J)/p(J)<C_MT`.
+
+`ANF-014` shows that this ratio is itself rigid. The Mellin transform of the all-scale periodization gives
+
+\[
+\frac{C(J)}p
+=1+\frac{3}{\pi^2}
++\left(1-\frac{3}{\pi^2}\right)\left(\frac{J(0)}p-1\right)
++\frac{6}{\pi^2}\int_1^\infty
+\left(\frac{P_J(h)}p-1\right)\frac{dh}{h^2}.
+\]
+
+Thus the lattice constraints alone force `C/p>=1+3/pi^2=1.3039635509...`, leaving only `Delta_MT=0.0235357454...` of total nonnegative defect below Montgomery--Taylor. Any survivor must have `J(0)/p<1.0338139554` and weighted periodization excess below `0.0387147494`. Equality in the new floor forces `J(0)=p` and `P_J(h)=p` at every `h>=1`, so the Möbius profile of `ANF-013` is the exact formal equality boundary rather than an arbitrary saturation ansatz.
 
 The configuration-level branch behaves differently. `ANF-006` records a fully checked local ordered-gap certificate beating the Montgomery--Taylor baseline, proving that information preserved before global scalar compression can matter. `ANF-007` shows that two points are insufficient inside that bridge; `ANF-008` shows block size is forced once the finite certificate is fixed; and `ANF-009` shows that merely increasing point order in the unchanged pressure family has an envelope returning to the baseline. The demonstrated escape is therefore real, but the present local bridge also has a structural ceiling unless its information carrier changes.
 
@@ -52,37 +65,35 @@ The configuration-level branch behaves differently. `ANF-006` records a fully ch
 
 Two distinct questions remain.
 
-First, in the **universal affine support-one scalar** class, let `J>=0` be continuous, real-even and supported in `[-1,1]`, put `F=widehat J`, and define
+First, in the **universal affine support-one scalar** class, let `J>=0` be continuous, real-even and supported in `[-1,1]`, put `F=widehat J`, and let `p=p(J)>0`. Do the remaining universal complex-configuration constraints, or even consistency of one nonnegative profile with its complete periodization family, force the defect
 
 \[
-p(J)=\inf_{h>0}\frac1h\sum_{k\in\mathbb Z}J(k/h).
+\left(1-\frac{3}{\pi^2}\right)\left(\frac{J(0)}p-1\right)
++\frac{6}{\pi^2}\int_1^\infty
+\left(\frac{P_J(h)}p-1\right)\frac{dh}{h^2}
 \]
 
-Can a profile satisfying the remaining universal complex-configuration constraints achieve
-
-\[
-\frac{C(J)}{p(J)}<C_{\rm MT},
-\]
-
-or do those constraints force `C(J)/p(J)>=C_MT`? `ANF-013` shows that this ratio test is logically prior to the earlier `M(F)+delta` optimization: any candidate failing it is already killed by real thermodynamic lattices. A candidate passing it has only survived a necessary subfamily and must still prove the complete affine counting inequality.
+to be at least `Delta_MT`? Equivalently, can any admissible profile remain close enough to all-scale lattice saturation to achieve `C(J)/p(J)<C_MT`? `ANF-014` makes this a quantitative stability question rather than a free functional optimization.
 
 Second, in the **configuration-level** class, what genuinely new local memory, nonlinear defect, matrix/inertia statistic, window accounting, or analytic bridge can retain a fixed gain after the `ANF-007`--`ANF-009` filters? Simply enlarging scalar block size or point count inside the existing `F/Phi_n` pressure architecture is already ruled out as a durable asymptotic strategy.
 
 ## Why it may matter
 
-A strict sub-Montgomery--Taylor ratio in the narrowed positive-spectral affine class would show that scalar global pair correlation still contains unused unconditional horizontal information after all currently known universal real-lattice obstructions. The gain would have to come from spatial sign in `F` while keeping every periodized lattice energy sufficiently large. Conversely, a rigorous `C(J)/p(J)>=C_MT` theorem under the remaining universal constraints would nearly exhaust the universal affine scalar support-one route before the full complex counting inequality is attempted.
+For the scalar branch, the remaining numerical room is now small and structurally localized. A proof that the nonnegative periodization defects must total at least `Delta_MT` would close the thermodynamic-lattice survival stage and strongly constrain any universal affine support-one improvement before the full complex inequality is attempted. Conversely, an explicit profile with total defect below `Delta_MT` would be a genuine stage-one survivor and would identify the near-saturation geometry that spatial sign changes must exploit.
 
-The configuration-level branch is the known escape from that compression ceiling. Its next value lies in identifying exactly what extra pre-compression information survives the current local-pressure obstructions and can still be evaluated unconditionally for zeta zeros.
+The configuration-level branch is the known escape from scalar compression. Its next value lies in identifying exactly what extra pre-compression information survives the current local-pressure obstructions and can still be evaluated unconditionally for zeta zeros.
 
 ## Decisive test
 
-For the scalar branch, apply `ANF-013` before any expensive universal-configuration search. Compute or bound the periodization floor `p(J)` for a nonnegative support-one spectral profile and reject the shape immediately unless
+For the scalar branch, apply the `ANF-014` defect identity before any expensive universal-configuration search. After normalizing `p(J)=1`, reject a profile unless
 
 \[
-C(J)/p(J)<C_{\rm MT}.
+\left(1-\frac{3}{\pi^2}\right)(J(0)-1)
++\frac{6}{\pi^2}\int_1^\infty(P_J(h)-1)\frac{dh}{h^2}
+<\Delta_{\rm MT}.
 \]
 
-A rigorous lower bound `C(J)/p(J)>=C_MT` throughout the admissible residual class rejects the universal affine support-one route. A strict counterexample is only a necessary-stage survivor; it must then satisfy the complete universal counting inequality, including non-lattice real configurations and vertically displaced conjugate configurations. The Möbius profile in `ANF-013` is only the exact boundary for simultaneous equality of all duplicated-lattice constraints, not an asserted extremizer.
+A rigorous lower bound by `Delta_MT` throughout the admissible residual class closes the `C/p<C_MT` lattice route. A strict counterexample is only a necessary-stage survivor; it must then satisfy the complete universal counting inequality, including non-lattice real configurations and vertically displaced conjugate configurations. The Möbius profile is the equality boundary for the weaker floor `1+3/pi^2`, not an asserted admissible extremizer.
 
 For any proposed out-of-band scalar affine construction, apply `ANF-011` before optimization. For any compact-band spectrally signed construction, apply `ANF-012`: the conjugate-comb tests already make it impossible under universal affine counting. A proposal survives these filters only by changing the information carrier or by proving a zeta-specific inequality that does not quantify over arbitrary conjugation-invariant multisets.
 
@@ -90,7 +101,7 @@ For the configuration-level branch, first apply the exact block cap from `ANF-00
 
 ## Evidence boundary
 
-No universal affine support-one improvement and no complete Montgomery--Taylor no-go theorem for the remaining positive-spectral/spatially-signed class is established. `ANF-012` proves spectral positivity under its continuity and compact-support hypotheses; it does not imply `F(x)>=0`. `ANF-013` adds an exact long-lattice necessary condition and scale-free ratio, but does not show that every profile with `C(J)/p(J)<C_MT` satisfies the universal affine inequality.
+No universal affine support-one improvement and no complete Montgomery--Taylor no-go theorem for the remaining positive-spectral/spatially-signed class is established. `ANF-012` proves spectral positivity under its continuity and compact-support hypotheses; it does not imply `F(x)>=0`. `ANF-013` supplies the exact long-lattice necessary ratio, while `ANF-014` rewrites that ratio as a nonnegative Mellin defect and quantifies the remaining margin. Neither finding proves that the defect is at least `Delta_MT`, that the lower floor `1+3/pi^2` is attainable, or that a profile below `C_MT` satisfies the universal affine inequality.
 
 `ANF-011` closes the useful negative out-of-band Fourier--Laplace tail only for the universal affine scalar template. Zeta-specific, non-affine, higher-order, matrix/inertia-before-compression and local ordered-configuration mechanisms remain outside that theorem.
 
@@ -98,4 +109,4 @@ No universal affine support-one improvement and no complete Montgomery--Taylor n
 
 ## Research disposition
 
-Accepted and narrowed. The scalar branch is now a **positive-spectral, potentially spatially signed periodization-ratio problem**: any survivor must first beat `C_MT` in `C(J)/p(J)`, then survive the full universal complex-configuration inequality. Spectrally signed compact-band profiles and useful negative out-of-band scalar tails remain closed by `ANF-012` and `ANF-011`. The configuration-level branch remains open only through a genuine carrier or bridge change, not larger scalar blocks or point-count escalation in the existing pressure family.
+Accepted and narrowed. The scalar branch is now a **near-saturation periodization stability problem**: a candidate must fit inside the exact `Delta_MT=0.0235357454...` Mellin defect budget before it is worth testing against the full universal complex-configuration inequality. Spectrally signed compact-band profiles and useful negative out-of-band scalar tails remain closed by `ANF-012` and `ANF-011`. The configuration-level branch remains open only through a genuine carrier or bridge change, not larger scalar blocks or point-count escalation in the existing pressure family.
