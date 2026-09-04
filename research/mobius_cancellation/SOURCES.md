@@ -225,3 +225,9 @@ Role: classical source for the `q ≡ 3 (mod 8)` branch of `MC-057` and historic
 H. M. Stark, *A complete determination of the complex quadratic fields of class-number one*, Michigan Mathematical Journal 14 (1967), 1–27. DOI: https://doi.org/10.1307/mmj/1028999653.
 
 Role: class-number-one finiteness input for `MC-057`. Stark's theorem completes the determination of imaginary quadratic fields of class number one. In the prime discriminant branch relevant here, only the familiar finite set can occur; hence for a prime modulus `q ≡ 3 (mod 8)` with `q>163`, the class number of `Q(sqrt(-q))` exceeds one and the Chowla–Cowles–Cowles `sqrt(q/3)` least-prime-residue bound applies.
+
+## MC-S38 — Munsch, character sums over squarefree and squarefull numbers
+
+Marc Munsch, *Character sums over squarefree and squarefull numbers*, Archiv der Mathematik 102 (2014), no. 6, 555–563. DOI: https://doi.org/10.1007/s00013-014-0658-9.
+
+Role: direct prior-art anchor for `MC-064`. Lemma 2.3 defines `S_free_chi(x)=sum_{n<=x} mu(n)^2 chi(n)` and proves the two elementary bounds `S_free_chi(x) << x^(1/2) q^(1/4) (log q)^(1/2)` and `S_free_chi(x) << x^(1/2) (log x) q^(3/16+epsilon)` for nonprincipal characters; Remark 2.4 notes that when `q` is prime the `q^epsilon` loss in the Burgess branch may be replaced by `(log q)^(1/2)`. The proof is exactly the square-divisor decomposition of `mu^2` followed by Pólya–Vinogradov or Burgess. This sharpens the cruder fixed-comparator certificate used in `MC-055` and supplies the classical analytic input for the defect/conductor transfer budget in `MC-064`.
