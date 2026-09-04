@@ -7,84 +7,56 @@ target_line: farey_discrepancy
 based_on:
   - research/visual_exploration/findings/VIS-026-gap-permutation-discrepancy-bridge-covariance.md
   - research/visual_exploration/findings/VIS-027-farey-reflection-dirichlet-mode-filter.md
+  - research/visual_exploration/findings/VIS-028-farey-endpoint-fan-forces-n-scale-spectrum.md
   - research/farey_discrepancy/README.md
 ---
 
-# Does Farey ordering suppress discrepancy through a genuinely multiscale mechanism beyond the fixed gap multiset and reflection symmetry?
+# Does Farey ordering suppress discrepancy beyond the fixed gap multiset, reflection symmetry, and deterministic endpoint fan?
 
 ## Observation
 
-`VIS-026` gives an exact matched control for any ordered point set: uniformly permuting a fixed gap multiset makes the cumulative grid discrepancy a finite-population bridge with covariance
+`VIS-026` gives an exact same-gap permutation control: uniformly permuting a fixed gap multiset makes the cumulative rank discrepancy a finite-population bridge with exact mean squared energy `sigma_g^2 N(N+1)/6`. At Farey order `n=100`, the actual energy is only about `0.0235` of that unrestricted null, so the finite suppression is genuinely tied to ordering rather than gap sizes alone.
 
-`Cov(D_k,D_l)=sigma_g^2 min(k,l)[N-max(k,l)]/(N-1)`
+`VIS-027` removes the first obvious spectral artifact. Farey reflection makes the discrepancy path antisymmetric, so all odd Dirichlet sine modes vanish identically. Conditioning the same-gap null on that exact reflection still leaves strong finite suppression: at `n=100` the actual energy is about `0.04698` of the reflection-preserving mean. The normalized cumulative even-mode profile `Phi_n(floor(xn))` also looked stable over the tested orders, while reflection-preserving shuffled controls stayed close to one.
 
-and exact mean squared energy `sigma_g^2 N(N+1)/6`.
+`VIS-028` now supplies a second exact control. The first `L_n=floor(n/2)+1` positive Farey fractions are the deterministic unit-fraction fan
 
-For Farey order `n=100`, the actual squared grid-discrepancy energy is only about `0.0235` of that unrestricted same-gap permutation mean. The same finite diagnostic stays below one across the tested orders `n=20,30,...,300`, with no asymptotic fit imposed. This holds every gap size fixed and therefore localizes the observed cancellation to ordering information.
+`1/n, 1/(n-1), ..., 1/ceil(n/2)`.
 
-`VIS-027` removes an important representation artifact from that comparison. Farey reflection `x_(N-k)=1-x_k` makes the gap vector palindromic and the discrepancy path antisymmetric, so every odd Dirichlet sine mode vanishes identically. A spectral picture of the missing odd modes is therefore forced symmetry, not arithmetic evidence.
+If only this fan and its reflected copy are retained, then for endpoint rank `k/n -> u`,
 
-Conditioning the same-gap permutation null on that exact reflection symmetry still gives an elementary finite baseline:
+`n D_k -> f(u)=1/(1-u)-(pi^2/3)u`,
 
-`E_sym[E_2] = sigma_g^2 N(N+2)/12`.
+and its squared discrepancy energy satisfies
 
-At `n=100`, the actual Farey energy is about `0.04698` of this stronger symmetry-preserving null. Across `n=20,30,40,60,80,100,120,150,200,250,300`, the corresponding finite ratios are approximately
+`n ||D^fan||_2^2 -> 2 integral_0^(1/2) f(u)^2 du = 0.3602210103...`.
 
-`0.30161, 0.18693, 0.12932, 0.08563, 0.06438, 0.04698, 0.03931, 0.03063, 0.02432, 0.01703, 0.01403`.
+More importantly for the previous visual lead, the even Dirichlet coefficient at `r=floor(xn)` satisfies `n d_(2r)^fan -> G(x)` for an explicit sine transform `G`. Hence the endpoint fan alone forces a spectral transition at `r=Theta(n)`. At accessible orders it is also quantitatively non-negligible: the two endpoint fans contain roughly `55–57%` of the complete finite Farey `L^2` discrepancy energy for `n=200,400,800,1600,2000` (diagnostic only; no limit is asserted).
 
-Thus exact reflection symmetry explains the obvious odd-mode deletion but does not exhaust the observed finite ordering suppression.
-
-The exact even-mode coordinates from `VIS-027` expose a more specific finite pattern. Write `m=2r`, let
-
-`V_n = 2M sigma_g^2/(M-1)`
-
-be the exact reflection-preserving null variance of each surviving normalized edge mode `a_(2r)`, and define cumulative actual and null Green energies
-
-`A_n(K) = sum_(r<=K) a_(2r)^2/lambda_(2r)`,
-
-`B_n(K) = V_n sum_(r<=K) 1/lambda_(2r)`.
-
-The normalized cumulative spectral shape
-
-`Phi_n(K) = [A_n(K)/E_2] / [B_n(K)/E_sym[E_2]]`
-
-removes the already-known total suppression and asks only where, by mode scale, the remaining Farey energy sits relative to the exact reflection null.
-
-Direct finite evaluation for Farey orders `n=100,150,200,300,400,600` gives a strikingly similar profile when `K` is scaled as `K ~= x n`. Across those six orders, `Phi_n(floor(x n))` lies approximately in the ranges
-
-- `0.44–0.51` at `x=0.25`;
-- `0.65–0.69` at `x=0.5`;
-- `0.79–0.82` at `x=1`;
-- `0.88–0.91` at `x=2`.
-
-Over the same orders the total ratio `E_2/E_sym[E_2]` changes substantially, from about `0.04698` at `n=100` to `0.00636` at `n=600`, so the displayed agreement concerns the **shape across surviving modes**, not a hidden normalization of the total energy.
-
-As a matched finite control, `150` uniform first-half gap permutations with exact mirroring at `n=200` keep the same gap multiset and reflection symmetry but destroy the Farey ordering. Their `10–90%` range for `Phi_n` is approximately `0.976–1.006` at `x=0.25`, `0.989–1.003` at `x=0.5`, and `0.995–1.002` at `x=1`, rather than the Farey values near `0.51`, `0.69`, and `0.82`. In the unaccumulated edge-mode power, the same finite data show depletion relative to the null at the lowest normalized modes and compensating excess at mesoscopic modes.
-
-Rogelio Tomás García's 2026 Farey-discrepancy work independently identifies gap ordering as important for `L^1` average local discrepancy and studies the same family of fixed-gap permutations. The exact unrestricted and reflection-conditioned controls sharpen the second-order baseline but do not explain the arithmetic ordering or the finite spectral-shape collapse.
+Therefore the **existence of an `r/n` spectral collapse scale is no longer a discriminating signal** for a deeper Farey mechanism. It is already generated by elementary classical endpoint geometry.
 
 ## Research question
 
-Can the Farey suppression relative to the **reflection-preserving same-gap** control be decomposed into an explicit multiscale or denominator-stratified ordering invariant that is not already determined by the classical Franel–Landau discrepancy, a familiar Möbius summatory quantity, or a bounded amount of local gap-adjacency data?
+After removing the exact unit-fraction endpoint fan — or, equivalently, comparing against a matched control that preserves it together with the gap multiset and reflection symmetry — does the residual Farey ordering still exhibit a stable multiscale spectral organization that cannot be reduced to the classical Franel–Landau scalar discrepancy, a familiar Möbius summatory quantity, or bounded local gap statistics?
 
-More specifically, is the finite collapse of `Phi_n(floor(x n))` evidence for a genuine mesoscopic spectral organization at even-mode index `r = O(n)` — equivalently rank-space wavelength of order `N/n` — that admits an exact denominator/mediant description? Or does that profile follow automatically from known Farey counting/discrepancy asymptotics, another asymptotically equivalent rescaling such as `r/sqrt(N)`, or a small collection of lower-order ordering statistics?
+If a residual profile survives, can it be described exactly by denominator strata, mediant/Farey-parent structure, long-range gap ordering, or another arithmetic invariant? If it disappears, the previous `r=O(n)` visual scale should be classified as an endpoint-boundary artifact rather than evidence for a new multiscale mechanism.
 
 ## Why it may matter
 
-The Farey mandate asks specifically whether geometric or multiscale information survives after the classical scalar discrepancy is formed. The permutation controls give two clean quotients. Gap sizes alone predict a much larger second-order discrepancy than the deterministic Farey order realizes, and exact left-right reflection removes only the easiest spectral artifact while leaving a large residual suppression at the tested orders.
+The Farey mandate asks whether geometric or multiscale information survives after the classical scalar discrepancy is formed. `VIS-026` and `VIS-027` already quotient out the one-point gap multiset and exact left-right symmetry. `VIS-028` shows that a large, analytically explicit boundary layer also has to be removed before interpreting the normalized modal scale.
 
-The normalized spectral-shape diagnostic now asks a different question from the total Franel scalar: after quotienting out the total energy itself, does the *distribution* of that energy across the surviving even scales approach a reproducible arithmetic profile? If so, the natural next target is not another norm of the same discrepancy path but an exact relation among mode bands, denominator strata, or mediant generations. If the profile is fixed by already-known scalar asymptotics or bounded local statistics, the apparent multiscale structure should instead be classified as another representation of existing information.
+This sharpens the question substantially. A surviving endpoint-stripped signal would isolate information in the interior ordering and would be a much better candidate for genuinely additional Farey structure. Failure after this control would close a visually attractive branch without conflating endpoint geometry with arithmetic organization.
 
 ## Decisive test
 
-Use the exact Dirichlet sine/Green decomposition from `VIS-027` as the primary fixed coordinate system. First reproduce the finite `Phi_n` profile over substantially larger Farey orders with the scaling rule fixed in advance, and compare it against the exact reflection-preserving same-gap ensemble rather than an unconstrained shuffle. Treat `r/n`, `r/sqrt(N)`, and any asymptotically equivalent reparameterization as the same candidate scale family unless an arithmetic derivation distinguishes one of them.
+Define `D^res=D-D^fan` using the exact endpoint fan from `VIS-028`, and form its even Dirichlet spectral measure in the fixed coordinates of `VIS-027`. Pre-fix the same `r/n` scale family used in the existing finite diagnostic and test substantially larger Farey orders without choosing windows after inspection.
 
-Then derive how much of the even-mode spectral measure is forced successively by additional admitted structure: adjacent gap-pair counts, bounded-depth local blocks, denominator strata, and mediant/Farey-parent relations. The useful theorem surface would be an exact or asymptotic formula for a nontrivial band mass, cross-band covariance, or rescaled spectral measure that is not algebraically determined by `E_2` alone and that survives the stronger matched controls.
+Compare the actual residual against a hierarchy of matched controls that preserve, at minimum, the complete gap multiset, reflection symmetry, and the exact endpoint fan. Only if a residual shape survives should stronger controls add adjacent gap-pair counts, bounded-depth blocks, denominator strata, and mediant/Farey-parent relations. The useful theorem surface would be an exact or asymptotic residual band mass, cross-band covariance, or rescaled spectral measure not algebraically determined by the total `E_2` and not forced by the endpoint fan.
 
-Do **not** count the vanished odd Dirichlet modes as a signal: they are deterministically forced by reflection. Also do not count finite curve collapse by itself as evidence of a new invariant. Keep the direction only if the surviving shape admits an exact arithmetic description not equivalent to the existing scalar discrepancy or a familiar Möbius estimate. Kill or hand off the route if the collapse is exhausted by known Farey asymptotics, reflection/local adjacency/stratum statistics, or a normalization identity.
+Kill the route if the residual collapse disappears, is fixed by those admitted controls, or reduces to known Farey/Möbius discrepancy asymptotics. Do not count the vanished odd modes or the raw `r=Theta(n)` scale as evidence; both now have exact non-novel explanations.
 
 ## Evidence boundary
 
-The unrestricted bridge covariance and permutation-mean `L^2` energy are established in `VIS-026`. The Dirichlet spectral decomposition, odd-mode reflection filter, and exact reflection-preserving permutation mean are established in `VIS-027`. The total Farey ratios and the `Phi_n` values above are reproducible **finite** evaluations; the reflection-null ranges are finite Monte Carlo controls inside the exact null ensemble.
+`VIS-026` establishes the unrestricted fixed-gap bridge control. `VIS-027` establishes the reflection parity filter and reflection-preserving same-gap baseline. `VIS-028` establishes the endpoint fan and its `r=Theta(n)` spectral scale independently of the full Farey interior.
 
-The normalization defining `Phi_n` deliberately divides out the total `E_2/E_sym[E_2]` amplitude. Therefore the observed curve agreement cannot by itself strengthen the Franel–Landau RH criterion, establish an asymptotic law, or show that `r/n` is a uniquely natural scale. It is a sharper falsifiable lead about where the already-small Farey discrepancy energy is distributed after exact symmetry control, and remains a clue rather than mathematical evidence.
+None of these results explains the complete Farey spectral profile or yields a stronger RH criterion. The earlier finite `Phi_n` collapse remains a reproducible lead, but after `VIS-028` only an **endpoint-stripped or endpoint-preserving matched residual** can support the proposed multiscale interpretation. This file remains a `status: proposed` clue, not mathematical evidence.
