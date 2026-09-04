@@ -2,25 +2,25 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Separate source rigidity, readout fidelity, native positivity, and completed zero selection
+## Separate source rigidity, completed scalar encoding, observation sufficiency, and zero selection
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, `MI-009-discrete-phase-fidelity-is-not-zero-selection`, and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
 The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic; completed screw/CND positivity is already RH-level.
 
-PL-145--PL-153 sharpen the completed boundary. Positive transport works only outward; the completed scalar reduces to prime-power checkpoints; an axis-only criterion is itself RH-equivalent; finite moments are already globally completed; recurrent recoveries are unconditional; terminal recovery drawdown vanishes; and even **one-sided boundedness of the checkpoint values is RH-equivalent**. The missing theorem is therefore a source mechanism for the cumulative completed event state, not another local interpolation, axis representation, or recurrence law. PL-154 is not promoted while its adversarial review remains open.
+PL-145--PL-157 now make the completed boundary especially sharp. The Suzuki scalar reduces to prime-power checkpoints; one-sided checkpoint boundedness is RH-equivalent; its one-sided growth exponent is the rightmost-zero frontier; completed screw positivity can already be tested on one fixed two-prime face; and the completed scalar tail can be sampled on the ordinary-prime basis or on broad non-prime sub-`3/4` meshes such as cubic integers. Observation-set sufficiency after completion is therefore not a prime-lattice mechanism. The missing theorem is a source mechanism for the cumulative completed state before generic sampling takes over.
 
 ## Force the completed arithmetic sign or one-sided coercivity upstream
 
 **Linked intuitions:** `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization` and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equivalent one-sided checkpoint bound, from exact rational-prime/global-completion structure without assuming a criterion of the same strength. The event carrier is exact; the unresolved object is the cumulative history that keeps it on one side.
+A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equivalent one-sided checkpoint bound/growth restriction, from exact rational-prime/global-completion structure without assuming a criterion of the same strength. The event and sampling carriers are exact; the unresolved object is the cumulative history that produces their values.
 
-## Demand a source mechanism, not only a stability metric
+## Demand a source mechanism, not only a complete sampling set or stability metric
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
 
-Power-sensitive metrics and finite phase fingerprints can measure real source differences, but they do not explain why the required reference state or completed sign is forced. Reweighting coordinates or accumulating more samples is not a zero-localization mechanism.
+Power-sensitive metrics and finite phase fingerprints can measure real source differences, but they do not explain why the required reference state or completed sign is forced. Likewise an RH-complete observation set can be generic once a zero-sensitive scalar has already been constructed. Reweighting coordinates, shrinking the sampling set, or accumulating more samples is not a zero-localization mechanism.
 
 ## Resolve target-sensitive Nyman data and genuinely nontrivial prime-shift actions
 
