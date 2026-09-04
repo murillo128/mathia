@@ -84,3 +84,7 @@ This file records durable external literature dependencies used to support or de
 - R. Tomás, **Partial Franel Sums**, *Journal of Integer Sequences* 25 (2022), Article 22.1.5. Stable locator: `https://cs.uwaterloo.ca/journals/JIS/VOL25/Tomas/tomas5.html`. Role: established prior art for Farey endpoint neighborhoods and partial Franel sums; bounds any interpretation of endpoint localization in `VIS-028` as new.
 
 - Rogelio Tomás García, **Farey Fractions with Equal Numerators and the Rank of Unit Fractions**, *Integers* 24 (2024), #A63. DOI: `10.5281/zenodo.12685697`; arXiv `2404.08283`. Role: established unit-fraction rank prior art for `VIS-028`; the Mathia finding uses the elementary initial unit-fraction fan only as a control for the observed Dirichlet spectral scale.
+
+## Euler-totient Riesz means
+
+- Shōta Inoue and Isao Kiuchi, **Riesz means of the Euler totient function**, *Functiones et Approximatio Commentarii Mathematici* 60:1 (2019), 31–40. DOI: `10.7169/facm/1650`. Role: explicit prior-art anchor showing that Riesz means built from Euler-totient arithmetic are an established analytic-number-theory object; bounds novelty for the Riesz interpretation in `VIS-030`. `VIS-030` derives its exact normalized-totient identities independently and does not import an error estimate or RH-equivalence statement from this source.
