@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Couple prime provenance before fixed-base puncture and Kron classicalization
+## Couple prime provenance before one-hole fixed-base elimination
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`, `MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization`, `MI-007-bloch-half-reflection-is-universal-time-reversal`, and `MI-008-nonlocal-fixed-base-repair-is-still-prime-blind`.
 
-PC-160 makes the intrinsic Bloch strip strictly accretive and zero-free. PC-161 then classifies the complete one-hole defect spectrum as a trace-class inverse-square star limit shared by every coprime fiber size. PC-162 closes the canonical nonlocal repair: Kron elimination produces an all-to-all star mesh, but its trace-norm limit and Fredholm determinant are fixed-base cyclotomic/hyperbolic data, again identical on prime and matched composite refinements.
+PC-161--PC-164 now classify the canonical one-hole chain unusually completely. The defect spectrum has a prime-blind coprime star limit; zero-energy Kron elimination remains trace-class and prime-blind; the full Kron pseudodeterminant factors through the fixed Bloch pencil and carries only a universal zero-mode logarithm; and the energy-dependent Feshbach determinant/self-energy remains a fixed-base Bloch/cyclotomic object with the same law for prime and matched composite refinements.
 
-A survivor must therefore couple the prime-shell background and defect before that limit, grow the base, use true multi-hole/cross-level structure, or introduce a genuinely noncommuting provenance-sensitive operation. Nonlocality after the prime-blind limit is too late.
+A survivor must therefore couple provenance before the one-hole quotient is formed, grow the base conductor, use genuine multi-hole/cross-level structure, or introduce a noncommuting operation whose input has not already identified the prime and composite fibers. More spectral parameters after elimination are too late.
 
 ## Distinguish average top-band capture from uniform subspace fidelity
 
@@ -16,11 +16,11 @@ A survivor must therefore couple the prime-shell background and defect before th
 
 Short-chord models recover strong average/Mertens top-band information while operator-norm leakage can persist. Any spectral conclusion must use the topology actually required by the final theorem.
 
-## Locate the first carrier beyond finite cyclotomic/collision/Bloch spectralization
+## Locate the first carrier beyond finite cyclotomic/collision/Bloch/Feshbach spectralization
 
 **Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`, `MI-007-bloch-half-reflection-is-universal-time-reversal`, and `MI-008-nonlocal-fixed-base-repair-is-still-prime-blind`.
 
-Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, and their canonical harmonic response now classicalize. A live carrier must be all-shell, growing-base, multi-hole, singular/domain-changing, or nonlinear/noncommuting across levels.
+Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, zero-energy harmonic response, full Kron determinants, and energy-dependent one-hole Feshbach families now classicalize. A live carrier must be all-shell, growing-base, genuinely multi-hole, singular/domain-changing across levels, or nonlinear/noncommuting before the fixed-base elimination.
 
 ## Use completion as a carrier, not an automatic Hamiltonian
 

@@ -1,51 +1,40 @@
-# MI-003 — Positive assembly can have the right sign or logarithm while its exact finite arithmetic birth remains absent
+# MI-003 — The right logarithm can be a normalization anomaly while canonical positive curvature removes it
 
-**Evidence level:** supported by exact positive selectors and repeated/new-prime refinement theorems through WP-139
+**Evidence level:** supported through WP-141 by exact positive refinement, singular determinant, and matched-composite controls
 
 ## Core intuition
 
-Positivity does not by itself erase arithmetic. Finite pointed covers and related operators can carry exact `log n` or prime-power information. The obstruction is the **assembly and scalarization law**: natural positive responses can have the wrong dependence on refinement depth even when they are canonical, nonzero, or singular.
+Positivity does not by itself erase arithmetic, but neither does obtaining the numerically correct `log m` coefficient prove that positivity generated it. The first regular and singular refinement responses already showed that generic cover geometry has the wrong depth law. The Kron near-miss sharpens this: a canonical positive one-hole response can produce exactly the missing logarithmic scale only because a determinant ratio compares spaces of different rank.
 
-The repeated/new-prime full-chord geometry now displays a nearly complete first-response taxonomy. Coarse repeated-prime response is stationary; regular full-fiber traces are extensive; regular new-prime puncture responses are uniformly bounded; repeated-prime Green response grows logarithmically only as generic cover-degree harmonic growth; and the minimal singular new-prime puncture finite part is again bounded and prime-blind. None yields the exact finite Mangoldt birth required by the Weil formula.
+That logarithm lives in a scale gauge. The most canonical positive geometry of the same determinant — its log-partition/Fisher Hessian — annihilates precisely that gauge direction. Thus the route cannot simultaneously treat the `log m` as a scale anomaly and inherit its sign from normalized positive curvature.
 
 ## Strongest justified principle
 
-WP-081--WP-106 establish that positive finite selectors exist but regular cover bulk/trace scalarizations classicalize, while exact `log n` sits at a singular endpoint requiring additional structure.
+WP-134--WP-139 classify the first refinement responses. Repeated-prime coarse response is stationary; regular full-fiber traces are zero or extensive; the repeated-prime Green trace gives generic harmonic/log-cover growth; regular one-hole new-prime responses are bounded; and the minimal puncture pseudodeterminant finite part is bounded and prime-blind after intrinsic normalization.
 
-WP-134--WP-136 classify regular repeated-prime full-chord assembly. The canonical coarse compression is exactly stationary, the coarse sector reduces so Feshbach self-energy vanishes, and every fixed continuous nonnegative trace over the full fiber spectrum is either zero or `I m+o(m)` in deck multiplicity. Along prime powers these give zero or extensive depth response, not `log p` per birth.
+WP-140 tests the nonlocal Kron repair at the minimal base. The positive star-mesh response has an exact singular determinant ratio
 
-WP-137 tests the repeated-prime singular escape. The positive Green trace has endpoint poles, and uniform deck sampling converts them into harmonic numbers. The residue-normalized response grows like `log m` and refinement `m->am` has asymptotic increment `log a` for every integer degree multiplier. At `d=2` the response is exactly `H_{m-1}`: it approaches the desired logarithm but is a generic cover law rather than an exact prime selector.
+`log(det' C_{2,m}/det Delta_{2,m}) = log m + log 48 + log(m/(m+1))`
 
-WP-138 supplies the regular new-prime control. The one-hole puncture defect is Loewner positive with uniformly bounded trace budget, so every fixed nondecreasing Lipschitz spectral response is `O_d(1)` as the new fiber degree grows. After critical half-weight normalization it misses `(log q)/sqrt(q)` by a factor tending to zero.
+under the native inverse-square normalization. This is a genuine near-miss at the critical half-weight. But a common positive rescaling `c_m` changes the same readout by `-log c_m`; with unnormalized geometry the leading coefficient is `-log m`, and arbitrary power rescaling changes it again. The logarithm is therefore the determinant-line effect of one missing nonzero mode, not a scale-invariant consequence of operator positivity. The formula also holds for every odd composite matched control.
 
-WP-139 closes the first singular new-prime loophole at the minimal conductor. For every odd `m`, prime or composite matched control,
+WP-141 applies the canonical positive rescue. By Matrix-Tree, the Kron pseudodeterminant is a spanning-tree partition function. In log-conductance coordinates its Hessian is the covariance/Fisher matrix of edge indicators and is positive semidefinite. Every spanning tree has fixed cardinality, however, so common conductance scaling is an exact null direction: the normalized tree law, Fisher metric, and Bregman divergence are unchanged. The positive curvature therefore quotients out the very scale gauge that manufactured the `log m` in WP-140.
 
-`det' M_{2,m}/det' A_{2,m}^{hole}=(m-1)/(16m)`.
+## What remains possible
 
-Thus the zero-shift log response splits into the universal nullity divergence `log(1/lambda)` plus the finite part
-
-`-log 16 + log(1-1/m)`,
-
-which is bounded, tends to `-log 16`, and is exactly prime-blind. The apparent logarithmic growth before normalization is only the scale dimension of the extra nonzero mode; intrinsic normalization removes it. Choosing `lambda` as a function of `m` would import a target-aware regularization rather than reveal a canonical birth coefficient.
-
-## Evidence synthesis and boundaries
-
-The message is not that singular or nonlinear positive observables are impossible. It is that the first regular and singular refinement responses are classified by generic cover geometry before rational-prime specificity enters.
-
-A viable finite--archimedean construction must therefore insert the arithmetic selector before or inside a genuinely new singular/global assembly, or derive a source-forced nonlinear/depth-dependent response whose finite coefficients are exact and whose sign survives completion. Subtracting harmonic asymptotics, tuning a cutoff, or reading a universal nullity pole after seeing `log p` is not a sign theorem.
+An equal-rank finite--archimedean determinant, a determinant-line metric not reduced to normalized spanning-tree information geometry, or a genuinely global/nonseparable construction may evade this no-go. It must fix its normalization independently, distinguish prime from matched composite refinement, and produce a sign theorem not borrowed from a gauge-dependent first derivative.
 
 ## Status / novelty
 
-Positive graph Laplacians, cyclic fibers, Green residues, harmonic sums, spectral monotonicity, pseudodeterminants, matrix-tree identities, and log-determinants are classical. The persisted synthesis is the selector/assembly boundary: **getting the right sign, a logarithmic divergence, or even an asymptotic logarithmic increment is weaker than producing the exact finite Weil prime-power weight from source-forced geometry**.
+Kron reduction, pseudodeterminants, Matrix-Tree, exponential-family Fisher geometry, and scale covariance are classical. The persisted synthesis is the sharper selector/sign boundary: **a correct logarithm may come from rank-normalization bookkeeping, while the canonical positive metric removes that bookkeeping rather than explaining its sign**.
 
 ## Falsification criterion
 
-Produce within the covered canonical geometry a fixed regular repeated-prime response with nonzero depth-independent increment, a fixed regular new-prime response growing like `log q`, show that the repeated-prime Green response equals the exact finite Mangoldt increment, or contradict the WP-139 normalized pseudodeterminant ratio at `d=2`.
+Produce within the covered Kron geometry a scale-invariant positive quadratic form whose finite response retains the exact new-prime `log m` coefficient and distinguishes matched composites, or derive an independently forced equal-rank normalization where the determinant-line logarithm survives as a genuine positive invariant.
 
 ## Lean-formalizable core
 
-- Repeated-prime coarse stationarity and reducing decomposition.
-- Zero-versus-extensive regular trace law.
-- Endpoint Green-pole to harmonic-sum calculation.
-- Uniform puncture trace budget for monotone Lipschitz functional calculus.
-- Exact minimal-conductor singular pseudodeterminant ratio and bounded finite part.
+- Exact Kron pseudodeterminant ratio.
+- Rank-difference scaling law.
+- Matrix-Tree log-partition Hessian as covariance.
+- Uniform-scale null direction of fixed-cardinality spanning trees.

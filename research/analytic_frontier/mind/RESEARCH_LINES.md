@@ -6,9 +6,9 @@ This file holds the current mathematical questions suggested by the durable anal
 
 **Linked intuitions:** `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile` and `MI-004-complete-scalar-control-is-diffraction-realizability`.
 
-ANF-018--ANF-019 identify the scalar floor with free-density finite-particle stability: a finite bound cluster can be replicated at arbitrarily large particle number, so fixed-density bulk optimality is not decisive. ANF-020 gives the exact dual problem: determine whether the convex diffraction body of finite real configurations meets the Montgomery--Taylor budget. ANF-021 shows that even a Pfaffian/symplectic candidate with the right local hyperuniform slope fails the full support-one domination.
+ANF-018--ANF-020 identify the scalar floor with free-density finite-particle stability and the exact convex diffraction-realizability problem. ANF-021 shows that correct local hyperuniform slope does not imply full-band domination. ANF-022--ANF-024 now eliminate three natural stochastic repairs: scale mixtures of lattices, iid positional cloaking, and the entire stationary iid-renewal class. Renewal mixtures are especially rigid: vanishing diffuse mass at zero forces deterministic gaps, reducing them back to the excluded lattice-mixture family.
 
-The decisive scalar result is therefore either a universal finite-cluster/diffraction theorem proving the ceiling, or one admissible separating spectrum/realizable diffraction witness that breaks it. More periodization, small-frequency slope matching, or thermodynamic optimization is not enough.
+The decisive scalar result is therefore either a universal theorem that the complete finite-configuration diffraction body misses the Montgomery--Taylor budget, or one admissible separating spectrum that lies inside it. A stochastic survivor must use genuinely correlated non-renewal structure; periodization, scale randomization, iid displacement, and iid gaps are no longer live escapes.
 
 ## Use unconditional out-of-band information only through a genuinely different zero-side carrier
 

@@ -6,9 +6,9 @@ This file holds the current mathematical questions suggested by the durable Möb
 
 **Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget` and `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`.
 
-MC-045--MC-047 separate ordinary endpoint blindness from strong power-aware detectability. MC-048 then shows that the older prime-only beta/Cauchy transfer pays a half-exponent loss and becomes nonuniform on the exact terminal-slab control. MC-049 rules out a broad fixed-completely-multiplicative shortcut: a globally Liouville-close comparator with the required power saving already forces the matching zeta zero-free region.
+MC-045--MC-048 separate ordinary endpoint blindness, power-aware detectability, and the half-exponent cost of prime-only Cauchy transfer. MC-049--MC-051 then close a much broader real-comparator escape: complete multiplicativity, exact signs, and even primewise extremality are not essential. A square-free-supported real comparator globally close to Möbius and independently power-cancellative already transfers essentially the same exponent back to Möbius and forces the corresponding zeta zero-free half-plane.
 
-The live route must therefore use signed/bilinear cancellation, a genuinely different comparator category, or another source-specific transfer whose assumptions are demonstrably weaker than the Mertens/RH-scale conclusion.
+MC-052 leaves a sharper complex boundary. Ordinary Möbius closeness still forces the correct simple boundary zero, but only an `L2` phase budget at weight `1/p`; exponent-preserving transfer at target `alpha` requires quadratic control near weight `n^{-(2 alpha-1)}`. The live route must therefore exploit genuinely complex signed/bilinear structure that upgrades this budget or avoids absolute/Cauchy inversion, with hypotheses demonstrably weaker than the target theorem.
 
 ## Change smoothing only with a quantitative endpoint-visibility theorem
 
@@ -26,4 +26,4 @@ Natural positive norms expose RH-equivalent coarse modes when pieces are bounded
 
 **Linked intuitions:** `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling` and `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`.
 
-A metric may faithfully detect a target-scale defect while every known absolute transfer either overpays it or moves the RH burden into the comparator theorem. Search for source-natural signed structure rather than another similarity scalar.
+A metric may faithfully detect a target-scale defect while every known absolute transfer either overpays it or moves the RH burden into the comparator theorem. Complex square-free phases are now the concrete test case: their ordinary boundary data are real mathematical information, but the missing power-weighted phase budget must come from the source rather than from a stronger similarity scalar chosen after the fact.

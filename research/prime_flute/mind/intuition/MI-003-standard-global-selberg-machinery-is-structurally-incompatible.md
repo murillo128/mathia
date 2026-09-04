@@ -1,42 +1,38 @@
-# MI-003 — Absolute Selberg theory fails, and selected relative cusp data remain reference artifacts
+# MI-003 — Absolute Selberg pathologies and selected relative cusp data are not prime selectors
 
-**Evidence level:** proved for the stated absolute/canonical-relative obstructions and compact-reference instability; supported for the surviving full-surface nonlocal program
+**Evidence level:** proved for the stated absolute/canonical-relative obstructions, compact-reference instability, and the PF-167 matched-control transfer; supported for the surviving full-surface nonlocal program
 
 ## Core intuition
 
-The prime flute is structurally outside the standard absolute Selberg/Ruelle/Fredholm regime, while its strongest canonical relative separator constructions increasingly decompose into universal propagation and reference-dependent boundary terms. Matching against an all-composite clone removes apparent arithmetic singularities, but the remaining bottom-Ruelle cusp coefficient and even its singularity order are not intrinsic to the prime surface: they vary under the chosen comparison reference, including finite compact changes.
+The prime flute is structurally outside the standard absolute Selberg/Ruelle/Fredholm regime, but that failure itself is not arithmetic evidence. The strongest visible absolute pathology — positive-window accumulation of primitive simple lengths and the resulting infinite finite-length primitive count — is inherited by the exact all-composite shift clone once complete marked-tail equivalence is taken into account.
 
-The surviving question is therefore not how to normalize that selected scalar more cleverly. It is whether a **full-surface nonlocal invariant** or a relative object with a mathematically canonical equivalence class retains prime-specific information after reference changes are quotiented correctly.
+Likewise, the strongest canonical relative separator constructions decompose into universal propagation and reference-dependent boundary terms. The surviving question is therefore narrower: whether a **full-surface nonlocal operator/orbit assembly**, stable under the correct reference category, amplifies the vanishing prime/clone tail defect into an intrinsic prime-specific invariant.
 
 ## Strongest justified principle
 
-For the ordinary `L^2` Laplacian, primitive lengths accumulate at zero and on positive compact intervals, recurrent finite tangents implant sub-quarter essential spectrum, and `Delta-s(1-s)` is non-Fredholm at infinitely many points tending to `s=1`. Standard absolute Selberg/Ruelle products and near-one meromorphic-Fredholm theory are therefore the wrong category.
+For the ordinary `L^2` Laplacian, primitive lengths accumulate at zero and on positive compact intervals, recurrent finite tangents implant sub-quarter essential spectrum, and `Delta-s(1-s)` is non-Fredholm at infinitely many points tending to `s=1`. Standard absolute Selberg/Ruelle products and ordinary prime-geodesic counting are therefore the wrong category.
 
-PF-104--PF-106 show that interpolation data, finite jets, projective tangents, and strong marked tail geometry can be matched by exact composite controls. PF-156--PF-160 then decompose the canonical separator products: the matched cocycles are zero-free in the relevant half-planes, the `1/4` boundary is one-ended propagation, and the only ordinary `s=0` obstruction lives in the bottom layer. PF-161 proves that the connected bottom-Ruelle product has a finite strictly positive value at zero with an `s log(1/s)` branch cusp, not a hidden zero or pole.
+PF-104--PF-106 and PF-125/PF-166 supply the decisive matched control: interpolation, finite jets, projective tangents, and eventually the complete marked tail translation-length function are asymptotically shared with the exact all-composite shift clone.
 
-The former review boundary on PF-162 is now resolved: its adversarial sidecar was removed while the finding remains. PF-162 shows that the connected cusp coefficient changes with the fixed odd-shift composite reference and grows with the shift. PF-163 is stronger: changing from shift to dilation references changes the logarithmic order itself, so even the singularity type of this selected relative scalar is not intrinsic.
+PF-167 composes this with PF-069. Every point of the positive primitive-separator accumulation interval of the prime flute is also an accumulation point of primitive simple separating lengths of the clone. Consequently the finite-length explosion behind PF-077 occurs in the clone as well. Non-discrete positive-window length spectrum is genuine flute geometry, but it does not recognize primality.
 
-PF-164 shows finite-support compact changes of the all-composite reference alter the cusp coefficient by an exact amount, unbounded in both signs. PF-165 then closes the natural scalar repair: after removing the obvious integer displacement, compact-reference residuals densely fill a nondegenerate interval, so no nonconstant real-analytic scalar normalization can make the coefficient compact-reference invariant.
+PF-156--PF-165 classify the selected relative separator route. The `1/4` boundary is one-ended propagation; the bottom Ruelle layer has a finite positive value with an `s log(1/s)` cusp; shift, dilation, and compact reference changes alter its coefficient or even its singularity order; and compact-reference residuals rule out nonconstant analytic scalar normalization.
 
 ## The surviving operator question
 
-The exact endpoint closeness still does not prove that the full prime/clone Laplacians have identical scattering or resonance data. PF-121--PF-155 leave a serious global assembly question for trace-ideal/wave comparison, and a full nonlocal relative invariant can in principle depend on correlations that no selected separator product sees.
-
-A surviving relative construction must therefore specify its reference category and prove invariance under the admissible compact/reference changes **before** arithmetic significance is claimed. Alternatively it must be an intrinsic full-surface object that requires no comparison reference.
+PF-166--PF-167 do not prove equality of full Laplace spectra, resonances, scattering, or collectively assembled orbit functionals. Infinite multiplicity can in principle amplify individually vanishing marked-length differences. A surviving construction must compute that collective effect and prove both prime/clone separation and invariance under the admitted reference changes.
 
 ## Status / novelty
 
-The absolute spectral obstructions, endpoint controls, separator decompositions, bottom-cusp asymptotics, and reference-dependence theorems are persisted findings. Selberg/Ruelle theory and the analytic mechanisms are classical. The synthesis is that the visible `1/4` and `0` boundaries, including the selected cusp coefficient, are controls or gauge/reference artifacts rather than zero selectors.
+Infinite-type Selberg/Ruelle theory, length-spectrum accumulation, bilipschitz marked-length comparison, and reference-dependent relative theory are classical contexts. The persisted synthesis is the arithmetic boundary: **both the absolute counting pathology and the selected relative cusp singularities fail as prime selectors under the strongest current controls**.
 
 ## Falsification criterion
 
-Produce an intrinsic prime-flute invariant whose divisor or value survives exact composite subtraction and all admissible compact reference changes, or prove a canonical reference-equivalence theorem for a full relative operator/scattering object that retains a prime-specific value. A scalar renormalization of the PF-161--PF-165 cusp coefficient does not qualify.
+Produce an intrinsic full-surface prime-flute invariant whose divisor/value separates the exact shift clone and survives admissible compact reference changes, or prove a full operator/scattering equivalence that transfers the current marked-tail control through global assembly.
 
 ## Lean-formalizable core
 
 - Essential-spectrum implies non-Fredholmness.
-- Exact one-ended cross-ratio factorization.
+- Marked-tail bilipschitz transfer of escaping separator sequences.
 - Bottom Selberg/Ruelle layer split.
-- Logarithmic cusp with finite nonzero product value.
-- Shift/dilation reference change of cusp asymptotics.
-- Compact-reference residual interval obstruction to analytic scalar normalization.
+- Compact-reference residual obstruction to scalar normalization.

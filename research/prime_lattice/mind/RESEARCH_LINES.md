@@ -8,13 +8,13 @@ This file holds the current mathematical lines of investigation suggested by the
 
 The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic and stays in the Euler/evaluation category; completed screw/CND/Lévy positivity is already RH-level.
 
-PL-145 adds a directional test: the canonical shifted screw family is a positivity-preserving Volterra semigroup only in the outward direction toward safer half-planes. The inverse flow required to return from the unconditional `omega=1/2` endpoint to the RH endpoint `omega=0` is not order preserving. Any positive mechanism must therefore supply source-specific control of that inward undamping, not merely invoke interpolation or semigroup positivity.
+PL-145 adds the directional gate: the canonical shifted screw family preserves positivity only outward toward safer half-planes. PL-146 then reduces the completed scalar sign to a strictly convex prime-power checkpoint process with two cumulative states and unit-drift jump dynamics. Mixed exponent vectors do not enter that scalar channel, and even under RH the checkpoint reserve has infimum zero. The missing theorem is therefore source-specific inward no-crossing with vanishing margins, not a generic positive interpolation or a uniform gap from zero.
 
 ## Force the completed arithmetic sign or polarization upstream
 
 **Linked intuitions:** `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
 
-The live theorem is to derive Suzuki's completed sign, or an equivalent arithmetic polarization on the zero-sensitive representation, from exact rational-prime/global-completion structure without assuming a zero-localization criterion of the same strength. Generic forward positive transport cannot replace this theorem.
+The live theorem is to derive Suzuki's completed sign, or an equivalent arithmetic polarization on the zero-sensitive representation, from exact rational-prime/global-completion structure without assuming a zero-localization criterion of the same strength. PL-146 gives a sharp target: prove nonnegativity of every prime-power checkpoint margin despite asymptotically vanishing reserves, or derive an equivalent source-forced invariant before the scalar axis compression occurs.
 
 ## Demand a source mechanism, not only a stability metric
 

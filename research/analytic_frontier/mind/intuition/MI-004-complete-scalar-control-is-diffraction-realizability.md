@@ -1,35 +1,38 @@
-# MI-004 — Complete scalar control is a finite-configuration and diffraction-realizability problem
+# MI-004 — Complete scalar control is a diffraction-realizability problem, not a local hyperuniformity test
 
-**Evidence level:** supported by ANF-018--ANF-021; the stability and convex-duality reductions are exact, while the random-matrix exclusions are literature-backed specializations
+**Evidence level:** supported through ANF-024 by exact finite-configuration duality and candidate-class exclusions
 
 ## Core intuition
 
-For the universal affine support-one scalar carrier, the decisive adversary is not one periodic lattice, one thermodynamic density, or the local slope of a structure factor. The complete control is the whole family of finite real configurations, equivalently its weak-* convex diffraction body on the supported frequency band.
+For the universal scalar pair-correlation carrier, matching the right small-frequency slope is far weaker than satisfying the full Montgomery--Taylor domination on the support-one band. After finite binding is included, the honest problem is a convex realizability question for complete diffraction measures of finite real configurations.
 
-A candidate scalar gain is meaningful only if it survives both **finite binding** and **full-band realizability**. Local hyperuniformity, a favorable small-frequency cusp, or success on a fixed-density bulk can all coexist with a finite or intermediate-frequency obstruction that restores the Montgomery--Taylor ceiling.
+The newest controls substantially narrow the stochastic escape. Smearing lattice scale, adding iid positional noise, or replacing lattice spacings by an iid renewal law does not create enough freedom: the target's vanishing long-wavelength diffuse budget forces renewal randomness to collapse back to deterministic lattices before the band test is even reached.
 
 ## Strongest justified principle
 
-ANF-018 identifies the exact finite-real floor `q_real(J)` with the classical stability constant of the pair potential `F=widehat J`. ANF-019 shows that this is genuinely a large-particle free-density problem: any finite bound cluster can be copied far apart, so its per-particle gain survives at arbitrarily large particle number. Fixed-density thermodynamic optimality therefore cannot replace the complete finite-configuration test.
+ANF-018--ANF-020 identify the exact scalar boundary. Free-density finite-particle stability survives dilute replication, and the whole support-one certificate dualizes to whether the convex diffraction body of finite configurations can fit under the Montgomery--Taylor measure.
 
-ANF-020 dualizes the remaining scalar ceiling. The statement `q_real(J)<=C(J)/C_MT` for every admissible nonnegative band profile is equivalent to existence of one measure in the weak-* closed convex hull of finite diffraction measures dominated by the Montgomery--Taylor budget. This converts the profile-by-profile problem into one exact realizability/separation question. Stationary translation-invariant determinantal processes cannot realize the required strict contraction; the sine process saturates the endpoint.
+ANF-021 shows that a symplectic/Pfaffian candidate can have the correct local hyperuniform behavior and still violate the full-band budget. ANF-022 then rules out every probability mixture of arithmetic lattice diffractions at the Montgomery--Taylor constant by an exact Möbius dilation certificate.
 
-ANF-021 closes a more subtle local escape. The symplectic/Pfaffian bulk has a small-frequency cusp compatible with the required local slope, but neither it nor convex scale mixtures satisfy the complete support-one domination. The obstruction appears at finite nonzero frequency. Thus the whole band, not only the origin, is load-bearing.
+ANF-023 closes the simplest disorder repair. An iid randomly displaced lattice retains a Bragg constraint and a diffuse floor that are incompatible with every contraction `a<1`; fixed-density mixtures of such displacement laws fail as well.
+
+ANF-024 closes the classical renewal/random-tiling enlargement. For a stationary renewal process, the exact diffraction density has zero-frequency floor at least the squared coefficient of variation of the gap law. Domination by `a|h|` therefore forces the gap distribution to be deterministic. Convex mixtures consequently reduce to the lattice scale-mixture class already excluded by ANF-022. A surviving stochastic scalar witness must use genuine inter-gap correlations or leave the renewal framework.
 
 ## What remains possible
 
-A scalar survivor must either construct a genuinely admissible diffraction measure inside the Montgomery--Taylor budget or produce an admissible spectrum separating the complete finite-configuration body from that budget. A different non-scalar carrier may evade this scalar convex body, but then it must retain information that does not dualize back to the same signed profile.
+The complete diffraction body is not yet classified. Correlated non-renewal hyperuniform processes, joint density/displacement mixtures outside the proved classes, or a direct finite-configuration separating witness remain logically possible. Any such candidate must be tested on the full band and against finite binding, not credited from a structure-factor slope or thermodynamic limit alone.
 
 ## Status / novelty
 
-Stability, Fekete subadditivity, diffraction, convex separation, determinantal/Pfaffian point processes, and hyperuniformity are classical. The Mathia synthesis is the completed control boundary: **finite clusters and full-band realizability are the exact scalar tests; local or thermodynamic success is insufficient**.
+Diffraction formulas, renewal theory, lattice perturbation spectra, Möbius inversion, and convex duality are classical or literature-backed. The durable synthesis is the control hierarchy: **local hyperuniformity, scale randomization, iid cloaking, and iid renewal randomness all fail before the complete scalar diffraction ceiling is broken**.
 
 ## Falsification criterion
 
-Produce an admissible scalar profile whose complete finite-real floor beats the Montgomery--Taylor threshold, or construct a measure in the finite-configuration diffraction body dominated by the target budget. Conversely, any proposed bulk/RMT witness is insufficient unless its complete band domination is proved.
+Produce a realizable finite-configuration diffraction measure below the Montgomery--Taylor budget, or a correlated stochastic process whose complete diffraction lies below it and is not reduced by the persisted rigidity arguments. Conversely, a proof that the full finite diffraction body misses the budget would close the universal scalar route.
 
 ## Lean-formalizable core
 
-- Subadditivity and free-density amplification of finite binding.
-- Convex separation equivalence for the diffraction body.
-- Logical distinction between local cusp control and full-band domination.
+- Finite binding/dilute-replication monotonicity.
+- Lattice scale-mixture dilation inequalities.
+- Perturbed-lattice atom/diffuse incompatibility.
+- Renewal zero-frequency floor and deterministic-gap rigidity.

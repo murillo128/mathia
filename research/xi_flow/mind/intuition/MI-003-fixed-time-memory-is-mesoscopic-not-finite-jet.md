@@ -1,38 +1,38 @@
-# MI-003 — Fixed-time Xi memory is mesoscopic; the live localization tradeoff is boundary capacity versus span control
+# MI-003 — Fixed-time Xi memory is mesoscopic; far-tail room is available, so the live bottleneck is near-boundary flux organization
 
-**Evidence level:** supported through XF-018; finite-jet and linearized-scale statements are exact in their stated regimes, XF-014's convergence repair has passed adversarial review, and the nonlinear localization identities are used only where the real-simple flow applies
+**Evidence level:** supported through XF-021; finite-jet and linearized-scale statements are exact in their stated regimes, and the localization identities are used only where the real-simple flow applies
 
 ## Core intuition
 
-Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. The Cauchy/`H^{1/2}` boundary model explains why a fixed-shape cutoff cannot make boundary leakage lower order, but the newer results show that this obstruction is not universal: a diverging capacitary buffer can reduce pure Cauchy leakage, and an uncentered localization renormalizes singular nonlinear conductances into a bounded cross-ratio kernel.
+Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. The Cauchy/`H^{1/2}` boundary model explains why a fixed-shape cutoff is scale critical, while capacitary and cross-ratio reorganizations show that the far exterior can be made genuinely small without pointwise lower-gap control.
 
-The remaining burden has moved. It is no longer simply “control every small gap.” A successful source theorem must control the **large-gap/cumulative-span geometry and endpoint span/flux** needed to remove the neutral mean mode while retaining the small capacitary boundary budget.
+The newest source audit changes the bottleneck again. Rodgers--Tao's global counting error already supplies super-mesoscopic buffers whose physical width is a diverging multiple of the `log T` core span, so lack of spatial room is not the obstruction. What remains is the near-buffer and neutral mean/span flux. A broad compact centered-convex entropy class cannot remove that difficulty source-free because compression-sensitive boundary sites generate positive collision poles.
 
 ## Strongest justified principle
 
-XF-006 rules out every robust finite collision jet as Xi-specific; XF-007--XF-013 identify the mesoscopic `log^2 T` scale and the endpoint `L log L`/Cauchy carrier. The repaired XF-014 is now admissible evidence: telescoping gives the exact real-simple adjacent-gap diffusion and supports the finite-block identities without a uniform remote-gap bound.
+XF-006 rules out every robust finite collision jet as Xi-specific; XF-007--XF-013 identify the mesoscopic `log^2 T` scale and endpoint Cauchy carrier. XF-014--XF-018 give the exact real-simple gap diffusion, finite-amplitude bulk coercivity in its stated regime, scalable capacitary cutoff, and collision-safe uncentered leakage weight `w_ik=c_ik g_i g_k` dominated by a cross-ratio/Cauchy kernel.
 
-XF-015 supplies finite-amplitude bulk coercivity under its stated envelope hypotheses. XF-016 shows that a fixed-ratio self-similar cutoff is scale critical: useful bulk and boundary leakage remain the same order.
+XF-019 aggregates that kernel before estimating it. For a core of physical span `S` separated from the far exterior by buffer width `D`, the entire tail interaction is bounded by `log(1+S/D)` on each side. Microscopic endpoint gaps disappear from this block estimate; vanishing far-tail leakage requires only `D/S->infinity`.
 
-XF-017 breaks that fixed-ratio no-go. A logarithmic capacitary taper whose outer/inner ratio `R` diverges has Cauchy localization cost `O(1/log R)`. Thus the correct boundary model must include the scalable ratio; a fixed-shape obstruction is not fundamental.
+XF-020 shows that this scale is source-compatible. Subtracting Rodgers--Tao's global zero-counting formula gives asymptotic counts on windows `D=R(T) log T` for any slowly diverging `R(T)` in the stated range. Such buffers contain `asymp R(T) log^2 T` zeros and make the aggregate far-tail cross-ratio leakage `O(1/R(T))`. The previous diagnosis that source-valid room was missing is therefore removed.
 
-XF-018 changes the nonlinear carrier again. Localizing the uncentered gap square gives leakage weight `w_ik=c_ik g_i g_k`, with `0<w_ik<=1`; for nonadjacent gaps it is a bounded cross-ratio function dominated by the exact Cauchy interaction of the physical gap intervals. Its far tails telescope to endpoint-gap/cumulative-span ratios without a lower bound on every remote gap. The price is the neutral constant-gap mode: subtracting the block mean introduces a span/endpoint term that still needs source control.
+XF-021 closes the obvious centered-entropy shortcut. For any differentiable convex single-gap entropy centered at a positive reference spacing, compact localization has an exact dichotomy: either the entropy is blind to compression below the reference, or a compressed boundary gap adjacent to an exterior collision produces an arbitrarily large **positive** flux. The uncentered square avoids that sign by keeping the gap factor positive, but then mean removal remains a nonlocal span/endpoint problem.
 
 ## What remains possible
 
-The live theorem should combine a slowly diverging capacitary buffer with Xi-specific control of endpoint gaps relative to cumulative spans and of the block-span/endpoint flux needed for centering. A positive would turn the existing bulk-minus-boundary identities into a fixed backward-time margin; a negative would exhibit source-compatible large-gap/span configurations that defeat every such assembly.
+The live theorem should organize the core--near-buffer interactions and the derivative of the block span/mean through a signed or multiblock identity, noncompact summable localization, or an Xi-specific exterior constraint. It must retain a fixed backward-time margin after the source-valid far buffer is installed and survive matched real-entire/log-repulsion controls.
 
 ## Status / novelty
 
-Fractional localization, capacity, cross-ratios, and Cauchy interactions are classical. The synthesis is the moving boundary gate: **fixed-time memory is mesoscopic, fixed-ratio leakage can be beaten, and the nonlinear collision singularity can be renormalized; source-level span/flux control is now the bottleneck**.
+Fractional localization, capacity, cross-ratios, convex entropy dissipation, and global zero counting are classical ingredients. The synthesis is the moving boundary gate: **far-tail capacity is now affordable; compact centered convexity is not a source-free repair; the unresolved information is near-boundary/mean flux at mesoscopic scale**.
 
 ## Falsification criterion
 
-Derive the required cumulative-span and endpoint-flux bounds from unconditional Xi data and close a fixed backward interval, or construct source-admissible real-simple configurations satisfying current mesoscopic constraints while violating those bounds strongly enough to erase the capacitary gain.
+Derive a source-forced signed/span identity that controls the near buffer and endpoint flux with a positive fixed-time margin, or construct source-admissible real-simple configurations satisfying the current counting/buffer constraints while making every such proposed assembly lose its margin.
 
 ## Lean-formalizable core
 
-- Mesoscopic `log^2 T` scale.
-- Capacitary `O(1/log R)` cutoff cost.
-- Bounded cross-ratio leakage identity and telescoping tails.
-- Block variance as uncentered square minus span mode.
+- Mesoscopic `log^2 T` memory scale.
+- Block cross-ratio tail bound `log(1+S/D)`.
+- Super-mesoscopic count from global counting error.
+- Compact centered-convex entropy collision-spike dichotomy.

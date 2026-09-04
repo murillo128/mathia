@@ -1,41 +1,40 @@
-# MI-004 — A canonical half-axis, exact reflection, native positivity, source fingerprint, or positive auxiliary space is not zero selection
+# MI-004 — A critical axis, source fingerprint, positive carrier, correct logarithm, or completed event encoding is not zero selection
 
 **Evidence level:** supported by exact/classical mechanisms in multiple branches
 
 ## Core intuition
 
-Mathia now has several constructions that produce something shaped like critical symmetry or positivity: Tate self-duality gives the half-weight; a Prime-Circle Bloch pencil has an exact `t<->1-t` reflection; native zeta kernels have strong unconditional positivity properties; Grosswald--Schnitzer phase can identify arithmetic generators; and completed zeta-derived positive Hilbert structures exist. These are different achievements, and none alone forces the Riemann zero divisor onto `Re(s)=1/2`.
+Mathia now contains several structures that look close to the target for different reasons: Tate self-duality gives the half-weight; Prime-Circle pencils can have exact half-reflection; arithmetic phase data can identify rational-prime generators; native and completed positive spaces exist; a Kron determinant can even produce the desired `log m` coefficient; and Suzuki's completed scalar sign admits an exact prime-power event dynamics. These achievements are not interchangeable.
 
-The missing step remains a **source-forced positive arithmetic identification on the zero-sensitive completed object itself** — a polarization, unitary structure, sign theorem, pole-sensitive theorem, or quantitative source estimate that excludes the off-axis alternative rather than merely reproducing its symmetry, positivity class, or source label.
+The missing step remains a **source-forced sign or polarization on the zero-sensitive completed object itself**. It must exclude the off-axis alternative without deriving its force from an RH-equivalent criterion, a normalization anomaly, or a carrier that has already compressed away the supposedly explanatory extra structure.
 
 ## Strongest justified principle
 
-Prime Lattice makes the separation exact. Tate duality places `Re(s)=1/2` at the Hermitian self-dual axis. Deninger's Hodge template explains what would turn this into localization: a positive arithmetic pairing making the centered flow skew-adjoint. Meyer already realizes the zeta divisor spectrally, while Suzuki supplies an unconditional positive zeta-derived Hilbert norm. The load-bearing theorem is the arithmetic polarization, not the existence of the axis, spectrum, or auxiliary norm.
+Prime Lattice separates the layers most sharply. Tate theory explains the Hermitian half-axis, while Deninger-style Hodge reasoning identifies the missing ingredient as a positive arithmetic pairing. Native HLS kernel positivity remains generic in the Euler region; after completion, Suzuki screw/CND/Lévy positivity is already RH-equivalent.
 
-PL-142--PL-144 sharpen the same lesson inside RKHS/probability geometry. The native HLS zeta kernel fails complete Pick on the first two-prime face, yet all positive powers of that kernel are positive definite and its logarithm gives a generic prime-power-axis compound-Poisson law in the Euler region. After completion, Suzuki screw positivity and Nakamura--Suzuki infinite divisibility are the same Schoenberg/CND structure and are RH-equivalent; for the actual completed zeta function Suzuki's scalar condition `Psi(t)>=0` is already equivalent to RH. Repackaging that completed sign as a matrix kernel or Lévy law adds no independent selector.
+PL-145 shows that the canonical positive Volterra transport moves only outward toward safer half-planes; the inverse direction needed for RH is not order preserving. PL-146 then compresses Suzuki's completed scalar criterion to a two-state prime-power event process: between consecutive prime powers the function is strictly convex, and one checkpoint minimum per interval decides the sign. Mixed exponent vectors are invisible to that scalar channel. Moreover, under RH the checkpoint margins have infimum zero, so a uniform positive reserve cannot be the missing theorem. What is needed is source-specific inward no-crossing with vanishing margins.
 
-Grosswald--Schnitzer phase and the Selberg-class rigidity results show that source identification can be strong while zero localization remains untouched. Möbius inverse-small-sum theory adds a divisor-orientation warning: a theorem may be source-sensitive and analytic while acting naturally on zeros of `1/zeta`, where the nontrivial Riemann zeros are poles.
+Prime Circle supplies a symmetry control. Its full-chord Bloch carrier can possess the formal half-reflection while the entire strip analogue is strictly accretive and zero-free. Exact reflection therefore does not imply a Riemann-like divisor.
 
-Prime Circle supplies the cleanest symmetry control. PC-159 proves that the full-chord pencil has exact half-reflection for every finite root subset. PC-160 strengthens this decisively: the whole formal analogue `0<Re(t)<1` is a strictly accretive zero-free resolvent region, and every polynomial eigenvalue lies on the real exterior intervals. The carrier produces the reflection and simultaneously excludes the Riemann-like zero geometry before primitive arithmetic is imposed.
+Weil Positivity supplies the normalization control. WP-140 finds the sharpest finite-place near-miss: a positive Kron response yields `+log m` in a singular determinant ratio at the native normalization. But unequal determinant ranks make that coefficient change under harmless common positive rescaling, and the same formula holds for matched composites. WP-141 shows that the canonical positive Fisher/Hessian geometry of the same spanning-tree determinant annihilates exactly this common-scale direction. The correct logarithm can therefore be bookkeeping that normalized positivity removes rather than explains.
 
-Weil Positivity reaches the boundary from exact scale. Positive finite selectors exist, but canonical regular refinement has stationary, extensive, or bounded response; generic singular Green assembly gives harmonic logarithms; and WP-139 shows that the minimal singular new-prime finite part is bounded and prime-blind after intrinsic normalization. Qualitative positivity, singularity, or even the right asymptotic logarithm is weaker than the exact arithmetic sign law required by the Weil formula.
+Grosswald--Schnitzer phase, Meyer-type spectral realizations, and other source/zero representations remain valuable, but they do not supply the missing completed sign by themselves.
 
 ## Evidence against overgeneralization
 
-Critical normalization, functional-equation-shaped symmetry, exact source recovery, native positive kernels, zero-spectrum models, and completed positive Hilbert spaces are mathematically valuable. The restriction concerns explanatory force: the final theorem must couple the arithmetic source to the zero-sensitive completed object in a way that generic matched controls cannot share.
+A critical normalization, exact source recovery, positive auxiliary geometry, correct asymptotic coefficient, or an exact event representation can be an important component of a proof. The restriction concerns explanatory force: the final localization theorem must be forced before or independently of the desired zero conclusion and must survive matched source/control changes.
 
 ## Status / novelty
 
-The component mechanisms are classical or exact persisted findings. Their separation into source identification, divisor orientation, native positivity, critical reflection, spectral realization, completed positivity, and arithmetic localization is cross-line synthesis.
+The component mechanisms are classical or exact persisted findings. Their separation into source fidelity, critical symmetry, normalization, transport direction, completed sign, and zero localization is cross-line synthesis.
 
 ## Falsification criterion
 
-Derive an unconditional source-forced positive/unitary structure on an exact zeta-zero representation that directly forces the centered generator to be skew-adjoint, or derive the completed scalar sign `Psi>=0` from upstream rational-prime structure without assuming an RH-equivalent positivity criterion. A stronger source fingerprint, another native positive kernel, or another universal half-reflection does not falsify the principle.
+Derive the completed zeta sign or an equivalent positive/skew-adjoint polarization from upstream rational-prime/global-completion structure without assuming an RH-equivalent criterion, and with normalization fixed independently of the target coefficient. Another source fingerprint, universal reflection, or gauge-dependent logarithm does not falsify the principle.
 
 ## Lean-formalizable core
 
-- Tate self-dual half-axis identity.
-- Hodge-pairing implication to skew-adjoint centered generator.
-- Universal antiunitary reflection plus strip accretivity control.
-- Native kernel positivity versus completed RH-equivalent sign.
-- Logical separation of zero and pole orientation for reciprocal series.
+- Tate half-axis identity and Hodge-pairing localization implication.
+- Outward Volterra cone preservation and inverse failure.
+- Prime-power checkpoint reduction with vanishing possible margins.
+- Rank-difference determinant scaling and Fisher scale-null direction.

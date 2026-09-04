@@ -1,46 +1,43 @@
-# MI-001 — Preserve discriminating structure, relational depth, finite conditioning, and global stability before compressing
+# MI-001 — Preserve discriminating structure, complete controls, bounded accessibility, and global stability before compressing
 
-**Evidence level:** supported by exact deterministic, analytic, statistical, interaction-kernel, fusion-frame, quotient-selection, finite-interpolation, and algebraic closure theorems
+**Evidence level:** supported by exact deterministic, analytic, statistical, interaction-kernel, quotient-selection, finite-interpolation, accessibility, and control-body theorems
 
 ## Core intuition
 
-Across Mathia, the recurring failure is applying a transformation whose induced indistinguishability relation already identifies states or models that the later arithmetic claim needs to distinguish. The current evidence adds two independent refinements. More channels of the same marginal order are not the same as greater relational depth, and exact recovery on every finite subsystem is not the same as a uniformly conditioned global recovery.
+Across Mathia, the recurring failure is applying a transformation whose induced indistinguishability relation already identifies states or models that the later arithmetic claim needs to distinguish. The current evidence adds two sharper warnings. A candidate can survive every obvious local or asymptotic control while failing on the complete finite/control body, and exact agreement on every finite subsystem can coexist with infinite cost for any coherent global realization.
 
-A useful pipeline must therefore audit the complete statistic, interaction/order support, admissible closure, finite interpolation costs, gluing compactness, target range, and stability modulus before optimization, spectralization, positivity, or completion.
+A useful pipeline must therefore audit the complete statistic and control family, interaction/order support, admissible morphism category, finite interpolation/accessibility budget, target range, and global stability before optimization, spectralization, positivity, or completion.
 
 ## Strongest current principle
 
-Arithmetic Fidelity gives the general information geometry. Scalar tests retain their closed span; complete marginals can forget joint coupling; Boolean and Hoeffding decompositions expose missing interaction faces; dependent sources replace coordinate degree by source-dependent fusion spans; and Friedrichs angles separate injectivity from stable inversion.
+Arithmetic Fidelity supplies the abstract hierarchy. Scalar tests retain closed spans; marginals can forget joint coupling; source-dependent fusion spans determine interaction depth; and Friedrichs angles separate injectivity from stable inversion. AF-097--AF-101 show that unbudgeted finite exactness is universal, while a fixed norm budget makes finite witnesses meaningful and original-range assembly remains a further tensor-norm gate.
 
-AF-088--AF-090 show that compatible local repairs can globalize under compactness or in the canonical bidual, but the target range and regularity category remain separate gates. AF-097--AF-098 sharpen the finite-information boundary. Every bounded fiber operator can be matched exactly on each finite-dimensional source subspace by some ambient operator, so even a norm-robust global defect can be invisible to all fixed finite pointwise tests. What restores a global theorem is a **uniform norm budget**: bounded finite interpolation costs compactify into one bidual-valued extension, and for `1`-complemented targets such as dual/reflexive spaces the finite and global optimal costs coincide.
+AF-102--AF-104 sharpen the middle category. The exact second-leg cost is the accessibility norm of the canonical bidual lift; genuine preadjoint provenance is invisible to every finite strong-operator test without a uniform norm bound; and Reinov's approximation-property example realizes infinite accessibility cost despite exact finite observational reproduction. Finite success is therefore not global fidelity unless the source forces a bounded coherent category.
 
-Analytic Frontier supplies two complementary arithmetic controls. Ordered local triple consistency can escape pair scalarization because it retains relational compatibility among adjacent gaps. But inside the universal affine scalar-pair carrier, ANF-016--ANF-018 show that even an apparently sharp thermodynamic profile can fail on a finite boundary-relaxed cluster; the complete finite-real certificate is governed by a pair-potential stability constant rather than lattice periodization alone.
+Analytic Frontier gives the complementary complete-control lesson. The universal scalar pair carrier dualizes to a convex diffraction-realizability problem only after finite binding is included. ANF-022--ANF-024 show that several plausible stochastic enlargements are already inside the control body: lattice scale mixtures, iid positional disorder, and stationary iid-renewal mixtures all fail before the Montgomery--Taylor budget is reached. In the renewal class, vanishing low-frequency diffuse mass itself rigidifies the process back to a lattice.
 
-The earlier programmable and matched controls remain essential. Infinite test families can be complete or sharply aliased depending on parameter geometry; source-tunable finite classes can locally program recovery and therefore do not prove intrinsic specificity. Prime Circle similarly shows that increasing finite topology, polynomial moment order, or Bloch/refinement complexity can remain inside universal complete-lift or bounded-support closures.
+Prime Circle, Prime Flute, Visual Exploration, and Xi Flow provide concrete post-processing analogues. Fixed-base one-hole Bloch/Kron/Feshbach response remains prime-blind after provenance has classicalized; complete prime-flute marked tails transfer even positive primitive-length accumulation to an all-composite clone; adjacent-pair-preserving three-gap data have an exact maximum-entropy closure; and a source-valid Xi far buffer can remove the remote tail while leaving a distinct near-boundary flux problem.
 
 ## Consequence for synthesis
 
 The correct order is
 
-`derive admissible category -> compute complete marginal/relational statistic -> compute source fiber -> quantify finite interpolation/stability -> prove compatible global gluing and range fidelity -> test complete matched controls -> only then optimize, spectralize, complete, or prove positivity`.
+`derive admissible category -> compute complete retained relation and matched controls -> quantify finite conditioning/accessibility -> prove coherent original-range assembly -> only then optimize, spectralize, complete, or prove positivity`.
 
-A canonical lift is useful only if it reduces the actual indistinguishability fiber and remains quantitatively usable in the limit. Perfect two-point information can miss an ordered three-point constraint; every finite restriction can be exactly solvable while the required global norms diverge; a bidual repair can exist while original-range recovery fails; and a thermodynamic control can miss a finite-cluster instability.
-
-Conversely, increasing graph rank, number of pair channels, derivative order, finite test count, polynomial moment degree, or numerical precision does not help when the complete retained relation or the conditioning class has not changed.
+More channels, more nonlocality, a larger finite test family, a stochastic mixture, or an exact finite reconstruction is not leverage if the complete control body has not changed or the required global norms escape. A positive construction must identify a residual outside the strongest admissible control family and carry it through a uniformly bounded source-forced realization.
 
 ## Status / novelty
 
-The component closed-span, Hoeffding, conditional-expectation, fusion-frame, compact-selection, finite-interpolation, Banach--Alaoglu, Friedrichs-angle, stability-constant, and Prime-Circle reductions use classical ingredients and persisted findings. Their synthesis as a complete-statistic-plus-relational-depth-plus-uniform-conditioning gate is supported rather than a universal theorem for every nonlinear observation category.
+The component closed-span, fusion-frame, finite-interpolation, approximation-property, diffraction, renewal, Schur/Feshbach, maximum-entropy, and localization results use classical ingredients and persisted findings. Their synthesis as a complete-control-plus-bounded-accessibility gate is supported rather than a universal theorem for every nonlinear category.
 
 ## Falsification criterion
 
-Find a pipeline where the target varies inside the complete admissible fiber, no later stage receives new relational information, yet the final invariant recovers it; or a category covered by AF-098 with uniformly bounded finite exact repairs but no corresponding bidual/global repair. Within the ANF scalar carrier, exhibit a complete finite-real certificate not governed by the persisted stability constant.
+Find a pipeline where the target varies inside the complete admissible control/fiber, no later stage receives new information, yet a stable target theorem follows; or a covered category with uniformly bounded finite exact repairs but no corresponding bounded global/bidual repair. A positive should instead exhibit the source-forced residual and the uniform assembly theorem together.
 
 ## Lean-formalizable core
 
 - Fiberwise factorization and post-processing monotonicity.
-- Closed-span and interaction-support kernels.
-- Ordered-three-point versus pair-scalarized information.
-- Pointwise finite interpolation versus norm closure.
+- Interaction-support kernels and maximum-entropy marginal closure.
+- Finite interpolation versus bounded accessibility.
+- Control-body/diffraction domination implications.
 - Uniform finite-cost compactness globalization.
-- Friedrichs-angle and finite-cluster stability criteria.

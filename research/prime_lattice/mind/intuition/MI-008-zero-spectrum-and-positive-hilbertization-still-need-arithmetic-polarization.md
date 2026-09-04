@@ -1,36 +1,40 @@
-# MI-008 — Native positivity and outward positive transport do not supply the completed arithmetic polarization
+# MI-008 — Completed positivity reduces to an axis-event sign problem; generic outward transport and mixed-lattice enrichment do not solve it
 
-**Evidence level:** supported by exact literature-backed spectral, RKHS, screw, explicit-formula, and Volterra constructions through PL-145
+**Evidence level:** supported by exact literature-backed kernel, screw, Volterra, and checkpoint reductions through PL-146
 
 ## Core intuition
 
-Prime-exponent geometry carries several genuine positive structures, but they lie on different sides of the completion boundary. Native Euler/Bohr positivity is unconditional and broadly universal. Completed screw/CND/Lévy positivity is zero-sensitive but already RH-equivalent. The newest deformation result adds a directional gate: the natural positive shift semigroup transports the completed datum **outward toward easier zero-free half-planes**, while the inverse direction needed for RH is not positivity preserving.
+Prime-exponent geometry carries genuine positive structures on both sides of the completion boundary, but the completed RH-sensitive scalar remains a sign problem that is already visible on the prime-power axis skeleton. Native Euler/Bohr positivity is generic; completed screw/CND positivity is RH-equivalent; outward Volterra transport preserves positivity only toward easier half-planes.
 
-Thus neither another native positive avatar nor generic positive interpolation can supply the missing theorem. The live object remains an arithmetic sign/polarization that controls inward return to the critical boundary for the special completed zeta datum.
+PL-146 adds a decisive compression statement: Suzuki's entire scalar criterion is piecewise strictly convex between ordered prime-power events and is summarized there by only two cumulative axis states. Mixed exponent vectors are invisible to this channel unless they supply an independent theorem constraining those axis events or the archimedean clock.
 
 ## Strongest justified principle
 
-PL-142--PL-143 classify the native HLS kernel: complete Pick fails on a finite two-prime face, while every positive kernel power remains positive and `log K` is a generic prime-power compound-Poisson carrier. This does not cross the Euler-product boundary.
+PL-142--PL-143 classify the native HLS kernel. Complete Pick fails on a finite two-prime face, while all positive kernel powers remain positive and `log K` is a generic prime-power compound-Poisson carrier. This does not cross the Euler-product boundary.
 
-PL-144 identifies the completed side. Suzuki screw positivity, Schoenberg negative type, and Nakamura--Suzuki Lévy/infinite-divisibility formulations collapse to the same zero-sensitive architecture; for the actual completed zeta function the scalar sign `Psi(t)>=0` is already equivalent to RH.
+PL-144 identifies the completed side. Suzuki screw positivity, Schoenberg negative type, and Nakamura--Suzuki Lévy/infinite-divisibility formulations collapse to the same zero-sensitive architecture; for the actual completed zeta function the scalar condition `Psi(t)>=0` is already equivalent to RH.
 
-PL-145 then exposes the exact shift geometry. Suzuki's family satisfies a Volterra semigroup law `T_eta T_delta=T_{eta+delta}`. For `eta>0`, `T_eta` preserves nonnegativity and damps high prime-axis energy while moving the zero-free boundary outward. But `T_{-eta}` is not order preserving; even `T_{-eta}1=1-eta t` changes sign. Starting from the unconditional positive endpoint `omega=1/2`, the direction required to reach `omega=0` is precisely this non-positive inverse.
+PL-145 exposes the directionality. The shifted screw family is a positivity-preserving Volterra semigroup only outward toward safer zero-free half-planes. Its inverse is not order preserving, so the route from the unconditional shifted endpoint back to the RH endpoint requires an extra zeta-specific theorem.
+
+PL-146 reduces that theorem to exact prime-power checkpoint dynamics. Between consecutive prime powers, `Psi(t)=R(t)-P_j t+Q_j` is strictly convex. The continuum condition is therefore equivalent to nonnegativity of one constrained minimum per interval, and under the clock `tau=R'(t)` the workload `Y=-Psi'` has unit negative drift with positive jumps `log p/p^{k/2}` at `q=p^k`. The whole finite-place history seen by this scalar channel is compressed to `(P_j,Q_j)` on the axis rays.
+
+The same finding also rules out a tempting strengthening. Under RH the zero expansion of `Psi` is recurrent enough that `liminf Psi(t)=0`, hence the checkpoint margins have infimum zero. A uniform positive reserve is not the missing theorem; the required statement is a no-crossing result with vanishing reserves.
 
 ## What remains possible
 
-A useful route must derive a zeta-specific inward estimate, completed arithmetic polarization, or coupling between finite prime-power and archimedean terms that controls `T_{-eta}` on the special trajectory. A generic semigroup/order argument cannot do it. Mixed exponent geometry matters only if it forces that completed sign rather than decorating an already RH-equivalent object.
+Mixed-prime geometry may still matter if it forces a completed arithmetic polarization or supplies a source-specific inequality on the axis-event stream that is not already RH-equivalent. It does not matter merely because it enriches a scalar criterion that has already discarded mixed support.
 
 ## Status / novelty
 
-All ambient kernel, screw, Schoenberg, and Volterra ingredients are prior art or exact persisted consequences. The synthesis is the directional completion gate: **known positivity flows toward safer half-planes; RH requires source-specific control in the opposite direction**.
+The HLS, screw, Schoenberg, Volterra, explicit-formula, convexity, and checkpoint ingredients are prior art or exact persisted consequences. The synthesis is the sharper completion gate: **the live completed sign is an inward, vanishing-margin prime-power event problem; generic positivity and unused mixed exponent coordinates do not solve it**.
 
 ## Falsification criterion
 
-Derive `Psi_0>=0` from the unconditional shifted positive endpoint using a source-forced estimate that is not itself an RH-equivalent assumption, or exhibit a native HLS positivity transition that survives the generic controls and genuinely constrains the completed divisor.
+Derive all checkpoint margins nonnegative from upstream rational-prime/global-completion structure without assuming an RH-equivalent sign criterion, or show that a canonical mixed-coordinate invariant changes the checkpoint dynamics in a source-forced way and supplies the missing inward control.
 
 ## Lean-formalizable core
 
-- Native complete-Pick obstruction and kernel-power positivity.
-- Screw/CND sign reduction.
-- Volterra semigroup composition.
-- Forward cone preservation and explicit failure of inverse positivity.
+- Native kernel positivity versus completed sign.
+- Volterra forward cone preservation and inverse failure.
+- Strict convexity between prime-power events.
+- Two-state checkpoint/event reduction and unit-drift normal form.
