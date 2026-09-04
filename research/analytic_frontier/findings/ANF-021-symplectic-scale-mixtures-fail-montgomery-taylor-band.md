@@ -1,6 +1,6 @@
 # ANF-021 — symplectic scale mixtures pass the local cusp gate but fail the Montgomery--Taylor band
 
-**Status:** `EXACT-DERIVED + PRIOR-ART-REDIRECT + NEGATIVE/OBSTRUCTION + NONDETERMINANTAL-FILTER`. `ANF-020` turns the remaining universal-affine scalar ceiling into an exact diffraction-realizability problem and shows that no stationary translation-invariant determinantal process can supply the required contracted sine-process envelope. The most natural classical escape from that DPP obstruction is the circular symplectic bulk process: the `beta=4` log gas is Pfaffian rather than determinantal, and its long-wavelength structure-factor slope is only one half of the sine-process slope. This genuinely passes the local atom/cusp obstruction at the Montgomery--Taylor contraction. Nevertheless the full support-one band kills it, and the failure survives **arbitrary convex mixtures of spatial scales**.
+**Status:** `EXACT-DERIVED + PRIOR-ART-REDIRECT + NEGATIVE/OBSTRUCTION + NONDETERMINANTAL-FILTER`. `ANF-020` turns the remaining universal-affine scalar ceiling into an exact diffraction-realizability problem and rules out stationary translation-invariant determinantal witnesses below contraction factor one. The natural classical escape is the circular symplectic bulk process: the `beta=4` log gas is Pfaffian, not determinantal, and its long-wavelength structure-factor slope is only one half of the sine-process slope. That improvement is real: it passes the local atom/cusp gate at the Montgomery--Taylor contraction. Nevertheless the **whole support-one band** rules it out, and the failure survives arbitrary convex mixtures of spatial scales.
 
 Let
 
@@ -8,11 +8,12 @@ Let
 C_{\rm MT}
 =\frac12+\frac1{\sqrt2}\cot\frac1{\sqrt2},
 \qquad
-a:=a_{\rm MT}=C_{\rm MT}^{-1}
+a:=C_{\rm MT}^{-1}
 =0.753296067856070\ldots .
+\tag{1}
 \]
 
-In unit-density bulk normalization, the `beta=4` circular symplectic ensemble has limiting structure factor
+In unit-density bulk normalization the circular `beta=4` structure factor is
 
 \[
 S_4(t)=
@@ -21,28 +22,30 @@ S_4(t)=
 \frac{|t|}{2}-\frac{|t|}{4}\log\bigl|1-|t|\bigr|,&0<|t|<2,\\[2mm]
 1,&|t|\ge2,
 \end{cases}
-\tag{1}
+\tag{2}
 \]
 
-with the logarithmic singularity at `|t|=1`. After dilation to intensity `rho>0`, its per-particle diffraction candidate is
+with the familiar logarithmic singularity at `|t|=1`. Dilation to intensity `rho>0` gives the per-particle diffraction candidate
 
 \[
 \mu_\rho
 =\rho\,\delta_0+S_4(\alpha/\rho)\,d\alpha.
-\tag{2}
+\tag{3}
 \]
 
-For any probability measure `pi` on positive scales, put
+For any probability measure `pi` on positive scales define
 
 \[
 \overline\mu
 :=\int\mu_\rho\,d\pi(\rho)
 =\overline\rho\,\delta_0+\overline S(\alpha)\,d\alpha,
-\quad
+\]
+
+\[
 \overline\rho:=\int\rho\,d\pi,
-\quad
-\overline S(h):=\int S_4(h/\rho)\,d\pi.
-\tag{3}
+\qquad
+\overline S(h):=\int S_4(h/\rho)\,d\pi(\rho).
+\tag{4}
 \]
 
 Then
@@ -53,42 +56,26 @@ Then
  a\bigl(\delta_0+|\alpha|\,d\alpha\bigr)
 \quad\text{on }(-1,1)
 }
-\tag{4}
+\tag{5}
 \]
 
-for every such scale mixture. In fact, if the atom constraint `\overline\rho\le a` holds, the diffuse domination already fails at the fixed interior frequency
+for every such scale mixture. More strongly, once the atom condition `\overline\rho\le a` holds, the diffuse density exceeds `a|h|` on an interval of positive length beginning at `h=1/5`.
 
-\[
-h_0=\frac15.
-\]
+## 1. Source normalization and the local cusp
 
-Thus convexifying scales does not repair the classical symplectic candidate. The important structural point is that this failure is **not visible from the slope at zero**: the local cusp test for `beta=4` has threshold only `a\ge1/\sqrt2`, and Montgomery--Taylor lies above that threshold. The obstruction has moved from local hyperuniformity to the finite-frequency shape of the whole band.
-
-## 1. Primary-source structure factor
-
-Forrester and Shen identify the circular `beta=4` ensemble with the circular symplectic ensemble and hence with a Pfaffian point process. Their exact finite-`N` spectral form factor and its bulk expansion give, in the unit-density scaling used here, the leading function (1). In particular, for `0<t<1`,
+Forrester and Shen identify the circular `beta=4` ensemble with the circular symplectic ensemble and hence a Pfaffian point process. Their exact finite-`N` spectral form factor and bulk expansion give (2). For `0<t<1`,
 
 \[
 S_4(t)
 =\frac t2-\frac t4\log(1-t)
-=\frac t2+\sum_{m=2}^{\infty}\frac{t^m}{4(m-1)}.
-\tag{5}
-\]
-
-The older log-gas structure-function analysis of Forrester--Jancovici--McAnally gives the general small-wave-number law; after converting their Fourier variable to the present `e^{2\pi i\alpha x}` normalization, the leading slope is `2/beta`, so `beta=4` gives the `1/2` in (5).
-
-If a stationary unit-density process is dilated so that its intensity becomes `rho`, the dimensionless structure factor rescales as
-
-\[
-S_{4,\rho}(h)=S_4(h/\rho),
+=\frac t2+
+\sum_{m=2}^{\infty}\frac{t^m}{4(m-1)}.
 \tag{6}
 \]
 
-while the forward diffraction atom becomes `rho delta_0`. This gives (2).
+The older log-gas analysis of Forrester--Jancovici--McAnally gives the general small-wave-number law; after converting to the present `e^{2\pi i\alpha x}` convention, its leading slope is `2/beta`, agreeing with the coefficient `1/2` in (6).
 
-## 2. The Pfaffian process escapes the DPP local obstruction
-
-Equation (5) gives
+A spatial dilation taking unit intensity to intensity `rho` sends the dimensionless structure factor to `S_4(h/rho)`, while the forward per-particle diffraction atom becomes `rho delta_0`, giving (3). From (6),
 
 \[
 S_4(t)=\frac t2+\frac{t^2}{4}+O(t^3)
@@ -96,7 +83,7 @@ S_4(t)=\frac t2+\frac{t^2}{4}+O(t^3)
 \tag{7}
 \]
 
-For a scale mixture, Fatou's lemma applied to the nonnegative quotients yields
+Fatou's lemma applied to the nonnegative quotients therefore yields
 
 \[
 \liminf_{h\downarrow0}\frac{\overline S(h)}h
@@ -105,20 +92,10 @@ For a scale mixture, Fatou's lemma applied to the nonnegative quotients yields
 \tag{8}
 \]
 
-Hence domination by the Montgomery--Taylor-type local envelope
-
-\[
-\overline\rho\le a,
-\qquad
-\overline S(h)\le a|h|+o(|h|)
-\tag{9}
-\]
-
-forces
+If a local target `\overline\rho\le a` and `\overline S(h)\le a|h|+o(|h|)` were possible, then
 
 \[
 \int\frac{d\pi(\rho)}{\rho}\le2a.
-\tag{10}
 \]
 
 Cauchy--Schwarz gives
@@ -128,101 +105,93 @@ Cauchy--Schwarz gives
 \le
 \left(\int\rho\,d\pi\right)
 \left(\int\frac{d\pi}{\rho}\right)
-\le2a^2.
-\tag{11}
+\le2a^2,
+\tag{9}
 \]
 
-Therefore the **local** atom/cusp obstruction for symplectic scale mixtures is only
+so the **local** symplectic atom/cusp threshold is only
 
 \[
 \boxed{a\ge\frac1{\sqrt2}=0.70710678\ldots .}
-\tag{12}
+\tag{10}
 \]
 
-This is strictly weaker than the determinantal threshold `a>=1` proved in `ANF-020`, and
-
-\[
-a_{\rm MT}=0.753296\ldots>\frac1{\sqrt2}.
-\tag{13}
-\]
-
-For a single scale this is already visible directly: the local constraints permit
+This is strictly weaker than the DPP threshold `a>=1` from `ANF-020`, and `a_MT=0.753296...` lies on the allowed side. For one fixed scale the same calculation says the local constraints permit
 
 \[
 \frac1{2a}\le\rho\le a,
+\tag{11}
+\]
+
+which is nonempty exactly when `a>=1/sqrt(2)`. Thus the Pfaffian candidate genuinely escapes the *local* DPP obstruction; it must be killed by finite-frequency information.
+
+## 2. A global affine minorant at moderate frequency
+
+Fix any `h>0` satisfying
+
+\[
+\frac ha\le\frac13,
+\tag{12}
+\]
+
+and define
+
+\[
+f_h(\rho):=S_4(h/\rho).
+\]
+
+For `rho>h`, equation (6) gives
+
+\[
+f_h(\rho)
+=\frac{h}{2\rho}
++\sum_{m=2}^{\infty}
+\frac{h^m}{4(m-1)\rho^m}.
+\tag{13}
+\]
+
+Every term `rho^{-m}` is decreasing and convex, so `f_h` is strictly decreasing and convex on `(h,\infty)`. Let `L_h` be its tangent line at `rho=a`:
+
+\[
+L_h(\rho)
+=f_h(a)+f_h'(a)(\rho-a).
 \tag{14}
 \]
 
-which is a nonempty interval exactly when `a>=1/sqrt(2)`. Thus the `beta=4` Pfaffian class is a genuine test that escapes the **local** DPP no-go. Any argument that looked only at intensity plus the coefficient of the linear hyperuniform cusp would incorrectly leave it alive at the Montgomery--Taylor constant.
+Then `f_h(rho)>=L_h(rho)` for `rho>h`.
 
-## 3. A fixed interior frequency kills every convex scale mixture
-
-Set
-
-\[
-h_0:=\frac15,
-\qquad
-f(\rho):=S_4(h_0/\rho).
-\tag{15}
-\]
-
-For `rho>h_0`, equation (5) applies with `t=h_0/rho<1` and gives
-
-\[
-f(\rho)
-=\frac{h_0}{2\rho}
-+\sum_{m=2}^{\infty}
-\frac{h_0^m}{4(m-1)\rho^m}.
-\tag{16}
-\]
-
-Every term `rho^{-m}` is decreasing and convex. Hence
-
-\[
-\boxed{f\text{ is strictly decreasing and convex on }(h_0,\infty).}
-\tag{17}
-\]
-
-Let `L` be the tangent line to `f` at `rho=a`:
-
-\[
-L(\rho)=f(a)+f'(a)(\rho-a).
-\tag{18}
-\]
-
-Convexity gives `f(rho)>=L(rho)` whenever `rho>h_0`.
-
-For `rho<=h_0`, put `t=h_0/rho>=1`. Formula (1) satisfies
+For `rho<=h`, put `t=h/rho>=1`. Formula (2) obeys
 
 \[
 S_4(t)\ge1
 \qquad(t\ge1).
-\tag{19}
+\tag{15}
 \]
 
-For `1<t<2`, write `u=t-1 in (0,1)` and use the elementary inequality
+Indeed, for `1<t<2`, writing `u=t-1` and using
 
 \[
--\log u\ge\frac{2(1-u)}{1+u};
-\tag{20}
+-\log u\ge\frac{2(1-u)}{1+u}
+\qquad(0<u<1)
+\tag{16}
 \]
 
-substitution into (1) gives (19), while for `t>=2` it is equality by definition.
+gives (15), while for `t>=2` equality holds.
 
-It remains only to check that the tangent line lies below this unit floor on the small-scale side. Put
+It remains to compare the tangent with this unit floor. Put `t_h=h/a<=1/3`. Since `f_h'(a)<0`, the maximum of `L_h` on `0<rho<=h` occurs at `rho=0`, where
 
 \[
-t_0:=\frac{h_0}{a}.
+L_h(0)=S_4(t_h)+t_hS_4'(t_h).
+\tag{17}
 \]
 
-The exact Montgomery--Taylor expression gives `0.75329<a<0.75330`, hence `t_0<1/3`. Since `f'(a)<0`, the maximum of `L` on `0<rho<=h_0` occurs at `rho=0`, and
+For `0<t<=1/3`,
 
 \[
-L(0)=S_4(t_0)+t_0S_4'(t_0).
-\tag{21}
+-\log(1-t)\le\frac{t}{1-t}\le\frac12,
 \]
 
-For `0<t<=1/3`, the elementary upper bound `-log(1-t)<=t/(1-t)<=1/2` gives
+hence
 
 \[
 S_4(t)\le\frac5{24},
@@ -230,121 +199,148 @@ S_4(t)\le\frac5{24},
 S_4'(t)\le\frac34,
 \]
 
-so
+and therefore
 
 \[
-L(0)\le\frac5{24}+\frac14=\frac{11}{24}<1.
+L_h(0)\le\frac5{24}+\frac14
+=\frac{11}{24}<1.
+\tag{18}
+\]
+
+Combining the two scale regimes gives the **global affine minorant**
+
+\[
+\boxed{
+S_4(h/\rho)\ge L_h(\rho)
+\qquad(\rho>0,\ 0<h\le a/3).
+}
+\tag{19}
+\]
+
+Averaging (19) against `pi`, and using `\overline rho<=a` together with `f_h'(a)<0`, gives
+
+\[
+\boxed{
+\overline S(h)
+\ge S_4(h/a)
+\qquad(0<h\le a/3).
+}
+\tag{20}
+\]
+
+Thus under the atom budget the single scale `rho=a` furnishes a universal lower envelope for the entire scale-mixture family over this initial portion of the Fourier band.
+
+## 3. The lower envelope crosses the Montgomery--Taylor budget on a positive-measure interval
+
+Write `t=h/a`. For `0<t<1`,
+
+\[
+S_4(t)>a h
+\quad\Longleftrightarrow\quad
+\frac12-\frac14\log(1-t)>a^2.
+\tag{21}
+\]
+
+The left side is strictly increasing in `t`. It therefore suffices to verify (21) at
+
+\[
+h_0:=\frac15,
+\qquad
+t_0:=\frac1{5a}.
 \tag{22}
 \]
 
-Combining (17)--(22) proves the global affine minorant
+The exact expression (1) gives the safe enclosure
 
 \[
-\boxed{S_4(h_0/\rho)\ge L(\rho)\qquad(\rho>0).}
+0.75329<a<0.75330.
 \tag{23}
 \]
 
-Average (23) against an arbitrary scale law `pi`. If the target atom bound holds, `\overline\rho<=a`, and because `f'(a)<0`,
-
-\[
-\begin{aligned}
-\overline S(h_0)
-&\ge
-f(a)+f'(a)(\overline\rho-a)\\
-&\ge f(a).
-\end{aligned}
-\tag{24}
-\]
-
-Thus the best possible scale mixture under the atom budget is already bounded below by the single scale `rho=a` at this frequency.
-
-## 4. The tangent lower bound crosses the Montgomery--Taylor envelope
-
-Because `t_0=h_0/a<1`,
-
-\[
-\frac{f(a)}{t_0}
-=\frac12-\frac14\log(1-t_0).
-\tag{25}
-\]
-
-The target value `a h_0` is `a^2 t_0`, so `f(a)>a h_0` is equivalent to
-
-\[
-\frac12-\frac14\log(1-t_0)>a^2.
-\tag{26}
-\]
-
-This inequality has a comfortable elementary margin. Using
+Using
 
 \[
 -\log(1-t)>t+\frac{t^2}{2}
-\qquad(0<t<1)
-\tag{27}
+\qquad(0<t<1),
+\tag{24}
 \]
 
-and the same enclosure `0.75329<a<0.75330`,
+we have
 
 \[
-t_0>\frac1{5(0.75330)}>0.26549,
+t_0>\frac1{5(0.75330)}>0.26549
 \]
 
-so the left side of (26) is larger than
+and hence
 
 \[
+\frac12-\frac14\log(1-t_0)
+>
 \frac12+\frac{t_0}{4}+\frac{t_0^2}{8}
 >0.57518,
-\tag{28}
+\tag{25}
 \]
 
 whereas
 
 \[
 a^2<(0.75330)^2=0.56746089.
-\tag{29}
+\tag{26}
 \]
 
-Therefore (26) follows without a delicate numerical comparison. For calibration, the actual values are
-
-\[
-f(a)=0.153230926741\ldots,
-\qquad
-a h_0=0.150659213571\ldots .
-\tag{30}
-\]
-
-Equations (24) and (30) give
+Thus (21) holds at `h_0`, and because its left side increases with `h`, it holds for every
 
 \[
 \boxed{
-\overline S(1/5)
->\frac a5
+\frac15\le h\le\frac a3.
 }
-\tag{31}
+\tag{27}
 \]
 
-for every convex scale mixture satisfying the atom condition `\overline rho<=a`. This contradicts the diffuse part of the desired domination and proves (4).
+This interval has positive length because `a/3>0.25109`. Combining (20) and (27),
 
-## 5. Why this is stronger than pointing at the CSE logarithmic singularity
+\[
+\boxed{
+\overline S(h)>a h
+\qquad
+\left(\frac15\le h\le\frac a3\right).
+}
+\tag{28}
+\]
 
-For a single intensity `rho<=a<1`, the logarithmic singularity of `S_4(h/rho)` occurs at `|h|=rho` inside the support-one band and already kills domination. But that observation is not stable under convexification: a non-atomic distribution of scales can smear the individual logarithmic singularities into a finite averaged profile.
+The contradiction is therefore genuinely **measure-level**, not a pointwise-density artifact: the absolutely continuous part of `\overline mu` exceeds the Montgomery--Taylor budget on a set of positive Lebesgue measure. For calibration only,
 
-The tangent argument above is deliberately stronger. It uses only the exact sub-singular branch `0<h/rho<1` plus the unit lower floor on the other branch, and it proves failure at the **same regular frequency `h_0=1/5` for every probability mixture of scales**. Thus the obstruction survives precisely the convexification that is natural after `ANF-020` replaced individual configurations by the convex diffraction body `K`.
+\[
+S_4\!\left(\frac1{5a}\right)
+=0.153230926741\ldots,
+\qquad
+\frac a5
+=0.150659213571\ldots .
+\tag{29}
+\]
 
-This is also why the local computation matters. The scale-mixture class is not being rejected for the same reason as DPPs. It genuinely improves the local cusp/atom tradeoff from `a>=1` to `a>=1/sqrt(2)`; the loss appears only when one asks for control over a nonzero fraction of the entire Fourier band.
+Equations (28)--(29) prove (5).
 
-## 6. Prior-art boundary
+## 4. Why the logarithmic CSE singularity is not the real proof
 
-The random-matrix/log-gas ingredients are classical or explicitly available in current literature. Forrester--Jancovici--McAnally derive the small-wave-number structure-function expansion and the `beta <-> 4/beta` duality for the one-dimensional log gas. Forrester--Shen give the explicit circular `beta=4` spectral form factor in the bulk normalization used here and identify the `beta=4` state as Pfaffian.
+For one intensity `rho<=a<1`, the logarithmic singularity of `S_4(h/rho)` occurs at `|h|=rho` inside the support-one band and already rules out domination. That observation is not stable under convexification: a non-atomic distribution of scales can smear individual logarithmic singularities into a finite averaged profile.
 
-A targeted search across circular/sine `beta` structure factors, hyperuniformity, Pfaffian processes, scale mixtures and Montgomery--Taylor pair-correlation bounds did not locate the specific convex-scale obstruction (23)--(31) or its application to the contracted Montgomery--Taylor diffraction target. No publication-level novelty claim is made. The new content here is the exact matching of the known symplectic structure factor to `ANF-020`'s budget, the local threshold (12), and the global tangent certificate at `h_0=1/5`.
+The affine-minorant argument is stronger. It uses only the regular branch `0<h/rho<1` plus the unit lower floor on the opposite side, and it forces excess over the target throughout the fixed interval (27) for **every** probability mixture of scales. This is precisely the kind of convexification allowed by the diffraction viewpoint of `ANF-020`.
 
-## 7. Evidence boundary and next filter
+The comparison with `ANF-020` is therefore structural. DPPs fail already because intensity and the infinitesimal cusp force `a>=1`. Symplectic Pfaffian statistics improve that local threshold to `1/sqrt(2)` and therefore survive the Montgomery--Taylor local test. They fail only when a nonzero fraction of the complete support-one band is enforced. Hyperuniform slope alone is not the right invariant for the remaining scalar problem.
 
-This finding does **not** prove that the order interval in `ANF-020` is disjoint from `K`, and therefore it does not close the universal-affine scalar branch. It excludes one large and natural non-determinantal construction class: arbitrary convex mixtures of spatially rescaled unit-density `beta=4` CSE bulk diffraction profiles.
+## 5. Prior-art boundary
 
-The argument also does not assert that every stationary CSE diffraction measure, or its arbitrary scale mixture, is automatically an element of the finite-configuration convex body `K`. That realizability passage is unnecessary for the negative result: even granting these point-process profiles as admissible candidate witnesses, they violate the required envelope.
+The random-matrix ingredients are classical or explicitly available in current literature. Forrester--Jancovici--McAnally derive the small-wave-number structure function and `beta <-> 4/beta` duality for the one-dimensional log gas. Forrester--Shen give the explicit circular `beta=4` spectral form factor in the bulk normalization used here and identify the `beta=4` state as Pfaffian.
 
-General `beta` log gases, non-scale mixtures of different correlation mechanisms, nonstationary limits, direct finite-cluster convexifications and separating-spectrum arguments remain open. In particular, a lower long-wavelength slope is not enough. A useful future candidate must be tested against the **whole support-one band**, and `h=1/5` is now a cheap exact falsification point for the entire symplectic scale-mixture family.
+A targeted search across circular/sine `beta` structure factors, hyperuniformity, Pfaffian processes, scale mixtures and Montgomery--Taylor pair-correlation bounds did not locate the specific convex-scale obstruction (19)--(28) or its application to the contracted Montgomery--Taylor diffraction target. No publication-level novelty claim is made. The derived content here is the exact matching of the known symplectic profile to `ANF-020`'s budget, the local threshold (10), and the positive-measure finite-frequency certificate (28).
+
+## 6. Evidence boundary and next filter
+
+This finding does **not** prove that the order interval in `ANF-020` is disjoint from the full convex diffraction body `K`, so it does not close the universal-affine scalar branch. It excludes one large and natural non-determinantal construction class: arbitrary convex mixtures of spatially rescaled unit-density `beta=4` CSE bulk diffraction profiles.
+
+Nor is it necessary here to prove that every stationary CSE expected diffraction measure, or every scale mixture of them, belongs to `K`. The conclusion is negative: even granting those point-process profiles as candidate admissible witnesses, they violate the required envelope.
+
+General `beta` log gases, mixtures of genuinely different correlation mechanisms, nonstationary limits, direct finite-cluster convexifications and separating-spectrum arguments remain open. The immediate falsification lesson is sharper than in `ANF-020`: a candidate can pass the atom and `|h|` cusp tests and still fail badly at moderate frequency. Future diffraction constructions should therefore be tested against a **band profile**, not only the hyperuniform exponent or its leading coefficient.
 
 The configuration-level branch of `ANF-006` remains outside this scalar diffraction duality and is unaffected.
