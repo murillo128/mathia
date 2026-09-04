@@ -1,44 +1,37 @@
-# MI-001 — Visual residuals must survive exact reconstruction, deterministic quotient, and matched statistical controls
+# MI-001 — Visual residuals must survive deterministic quotients, matched statistical closures, and interaction-orientation loss
 
-**Evidence level:** supported through VIS-022 by exact reconstruction identities, deterministic Gram-coordinate quotients, and literature-backed statistical baselines; the currently open review on VIS-023 is not used here
+**Evidence level:** supported through VIS-025 by exact reconstruction identities, accepted three-gap Markov geometry, and classical contingency/correspondence analysis
 
 ## Core intuition
 
-Visual complexity is not an independent arithmetic resource when it can be reconstructed from coordinates, divisor data, regular holomorphic continuation, phase gauge, or lower-order probability laws. The meaningful object is the residual after the strongest baseline that preserves the information already known to generate the picture.
+Visual complexity is not an independent arithmetic resource when it can be reconstructed from ordinary coordinates, divisor data, phase gauge, or a lower-order statistical closure. The meaningful object is the residual after the strongest deterministic and statistical baseline preserving the information already known to generate the picture.
 
-The Gram-point evidence adds an exact quotient hierarchy. Interval occupancy, the sampled zero-count discrepancy `S(g_n)`, and the zero-count staircase increments are the same discrete information up to an initial integer. Hardy-`Z` sign changes at Gram points are only the parity projection of that occupancy. A visual atlas should therefore count these as one information family, not as independent channels whose agreement strengthens a claim.
+The three-gap program now has an exact classical interpretation. Conditional mutual information is the likelihood-ratio statistic for first- versus second-order Markov structure; its local residual fibers are weighted contingency-table interaction spaces; and their singular values are correspondence-analysis invariants. This is useful geometry, but it is not automatically zeta-specific and its scalar singular spectrum forgets interaction orientation.
 
 ## Strongest justified principle
 
-VIS-013--VIS-018 classify complete circular modulus/phase data, connected overlap gluing, and winding as zero/divisor information plus harmonic boundary data and one global gauge.
+VIS-013--VIS-018 classify complete circular modulus/phase data, overlap gluing, and winding as ordinary analytic/divisor information plus gauge. VIS-021--VIS-022 show that Gram occupancy and sampled `S` are equivalent up to one initial count, while Hardy-`Z` signs retain only occupancy parity.
 
-VIS-019--VIS-020 establish the statistical control layer: finite-size CUE/arithmetic corrections are the baseline for adjacent gaps, and once two overlapping adjacent-pair marginals are fixed, the unique maximum-entropy three-gap completion is the first-order Markov closure with KL gap equal to conditional mutual information.
+VIS-019--VIS-020 identify the matched statistical closure from overlapping pair marginals. VIS-023, after adversarial acceptance, makes the test exact: for binned three-gap data, `2m I_hat` is the Markov-order likelihood-ratio statistic with the standard chi-square dimension, and the plug-in null has the corresponding `1/m` finite-sample floor.
 
-VIS-021 gives the deterministic Gram identity
-
-`C_n = 1 + S(g_{n+1}) - S(g_n)`.
-
-Thus interval occupancy and Gram-sampled `S` are invertible encodings once one initial count is supplied. VIS-022 then shows
-
-`sgn Z(g_{n+1}) / sgn Z(g_n) = (-1)^{C_n}`,
-
-without assuming RH: off-line reflected zeros contribute even multiplicity. Gram-sign data are therefore strictly coarser than occupancy, not a second zero statistic.
+VIS-024 resolves the residual fiber: after fixing the middle bin, the Pearson-whitened interaction has zero weighted row/column marginals and its quadratic norm is the second-order approximation to `2I`. VIS-025 identifies this fiber with correspondence analysis. Its singular values are invariant under orthonormal contrasts and relabeling and preserve total Pearson energy, but they are not lossless because left/right interaction orientation is discarded.
 
 ## What remains possible
 
-Higher-order or long-range residuals, deliberately incomplete measurements with quantified recovery defect, separated-region bridge observables, and non-holomorphic/multi-object representations remain live. Any visual comparison should first collapse exact deterministic equivalence classes and then construct matched statistical closures separately on zeta and control data.
+A zeta-specific higher-order residual must survive finite-sample calibration, partition/binning changes, CUE/arithmetic controls, and pair-marginal Markov closure. If orientation is load-bearing, the handoff must retain the relevant singular vectors or an invariant coupling between fibers rather than only CMI or singular values.
 
 ## Status / novelty
 
-Complex-analysis reconstruction, Gram counting identities, Hardy `Z`, finite-size random-matrix spacing theory, maximum entropy, and conditional mutual information are prior art or exact persisted derivations. The synthesis is the strengthened visual gate: **independent-looking renderings are not independent evidence when exact maps recover one from another**.
+Likelihood-ratio Markov tests, Pearson residuals, correspondence analysis, maximum entropy, and Gram identities are classical or exact persisted derivations. The synthesis is the visual gate: **a statistically significant residual becomes arithmetic evidence only after its classical interaction geometry and information losses are fully accounted for**.
 
 ## Falsification criterion
 
-Exhibit a visual/statistical channel outside the covered deterministic/reconstruction quotients that separates zeta from matched controls preserving the same retained information, with a statement stable under rendering and binning choices.
+Exhibit a three-gap or higher-order residual that remains stable across the stated controls and carries source information absent from the full matched Markov/contingency closure, with any orientation-dependent information retained explicitly.
 
 ## Lean-formalizable core
 
-- Argument-principle winding as divisor count.
-- Gram occupancy as discrete derivative of sampled `S`.
-- Hardy-`Z` Gram-sign transition as occupancy parity.
-- Maximum-entropy Markov completion from overlapping pair marginals.
+- Gram occupancy/S/parity quotient.
+- Markov maximum-entropy closure.
+- CMI likelihood-ratio identity.
+- Pearson interaction subspace.
+- Correspondence-analysis singular-value quotient.

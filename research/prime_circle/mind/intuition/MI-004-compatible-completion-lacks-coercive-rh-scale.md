@@ -1,34 +1,36 @@
-# MI-004 — Compatible all-level completion preserves labels but does not supply a coercive RH scale
+# MI-004 — Compatible all-level completion preserves labels, but its canonical radial geometry classicalizes to dilation half-density and flat log cylinders
 
-**Evidence level:** supported by exact/classical completion and operator obstructions
+**Evidence level:** supported by exact/classical completion, covariance, and local-metric obstructions through PC-166
 
 ## Core intuition
 
-Passing from individual Prime-Circle shells to the compatible inverse limit solves a real bookkeeping problem: exact-order labels, divisor filtrations, and rational characters survive canonically. But the natural regular Hilbert/operator structures on that completion are too soft, too classical, or too noncompact to turn those labels into an RH-selecting spectrum. The newest results also close the two most direct properization escapes: widening scalar dilation covariance still conflicts with compact resolvent, while projective height obtains compactness only by becoming a classical primitive-lattice zeta problem.
+Passing from Prime-Circle shells to the compatible inverse limit preserves exact-order labels, divisor filtrations, and rational characters. But the canonical regular geometries on that completion still do not turn those labels into an RH-selecting spectrum. The newest results identify the radial sector almost completely: compatible power refinement is ordinary dilation in logarithmic radius, its unitary normalization forces the classical half-density exponent, and every regular power-homogeneous local metric is a flat log-cylinder metric with continuous radial spectrum.
+
+Thus the half-weight can arise canonically here without selecting Riemann zeros. Label preservation, the critical half-density, proper spectral scale, and arithmetic polarization remain distinct gates.
 
 ## Strongest justified principle
 
-PC-055--PC-067 establish the carrier side: the compatible inverse limit is the adelic solenoid with dual `Q`; exact-order information survives, while natural leafwise and compatible transverse energies are noncoercive or have dense/noncompact spectral behavior. PC-068 then rules out compact resolvent for a broad regular commuting leaf/fiber functional calculus.
+PC-055--PC-074 establish the earlier boundary: the adelic solenoid preserves the rational label system, while broad commuting calculi and scalar dilation covariance fail compact resolvent; imposing a projective proper height recovers only a classical primitive-lattice zeta problem.
 
-The covariance no-go is now substantially stronger. PC-069--PC-070 exclude ordinary compact-resolvent Hamiltonians under exact scalar affine dilation covariance on the natural solenoid representation. PC-071 extends the obstruction to homeomorphic scalar reparametrizations, and PC-072--PC-073 show that natural outward or bounded-drift scalar relaxations still do not provide the missing proper spectral height. Merely changing the scalar function in the covariance law is therefore not a surviving mechanism.
+PC-165 makes the compatible radial action explicit. The completed punctured-plane power system splits as a logarithmic radial line times the solenoid. Haar `L^2` pullback is exactly the classical unitary dilation representation with exponent `-1/2+it`. A formal integer pullback sum can display `zeta(1/2-it)`, but the sum is unbounded/not strongly convergent and the radial generator has continuous spectrum. The half factor is representation theory, not a zero Hamiltonian.
 
-PC-074 tests the opposite escape: keep the decoded rational character `q=a/b` and impose a proper homogeneous projective height `N(a,b)`. This really does give compact resolvent, but its spectral zeta is forced into the classical primitive-lattice factorization `Z_N^{lat}/ζ`, up to the projective normalization. Compactness has been purchased by decoding a standard lattice height, not by deriving a new zero-selecting spectrum from Prime-Circle dynamics.
+PC-166 closes the most direct local-metric repair. Any continuous positive-definite local two-dimensional metric for which `z -> z^2` acts by homothety becomes a constant-coefficient metric in log-cylinder coordinates, including all radial-angular cross terms. Its Laplace-type spectrum retains the continuous radial channel and cannot produce a compact-resolvent Riemann zero divisor by local metric tuning.
 
 ## What remains possible
 
-A surviving operator may be genuinely non-scalar under dilation, one-sided rather than based on the invertible solenoid action, singular in conductor, nontranslation-invariant, or relative/noncompact rather than compact-resolvent. Its scale must be forced by Prime-Circle geometry rather than inserted as a decoded height, and it must carry information beyond the classical rational lattice package.
+A surviving completion operator must be nonlocal, singular/domain-changing, non-homogeneous, one-sided, relative, or genuinely coupled across radial and arithmetic sectors in a way not reducible to the flat log cylinder. Its half-weight, normalization, and source selector must be forced independently rather than inherited from ordinary unitary dilation.
 
 ## Status / novelty
 
-The solenoidal identifications, covariance obstructions, and primitive-height factorization are persisted exact or classical findings. Their common interpretation as a separation between **label preservation**, **proper spectral scale**, and **arithmetic zero selection** is a supported synthesis.
+Solenoids, logarithmic polar coordinates, unitary dilation half-densities, and flat homogeneous metrics are classical. The synthesis is the separation: **the compatible completion can canonically generate the critical half-density while still lacking zero selection and coercive arithmetic spectrum**.
 
 ## Falsification criterion
 
-Derive from the compatible geometry a canonical proper spectral scale that evades the scalar covariance no-go results without reducing to a chosen projective lattice height, and prove that its relative/spectral invariant passes matched classical controls and constrains more than functional-equation symmetry.
+Derive from the compatible geometry a source-forced nonlocal/singular operator with a discrete or relative zero-sensitive invariant that cannot be reduced to ordinary dilation, a chosen projective height, or a flat log-cylinder calculus.
 
 ## Lean-formalizable core
 
-- Exact-order projector and rational-character decomposition.
-- Noncompact-resolvent criteria for regular commuting calculi.
-- Compact-resolvent obstruction under scalar dilation covariance.
-- Primitive-lattice factorization of projective-height spectral zeta.
+- Radial/solenoidal product decomposition.
+- Half-density normalization of dilation.
+- Flatness of power-homogeneous local metrics in log coordinates.
+- Continuous radial-spectrum obstruction.

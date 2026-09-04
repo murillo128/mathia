@@ -1,40 +1,37 @@
-# MI-003 — The right logarithm can be a normalization anomaly while canonical positive curvature removes it
+# MI-003 — Arithmetic selection can live in a potential value while canonical positive curvature differentiates the selector away
 
-**Evidence level:** supported through WP-141 by exact positive refinement, singular determinant, and matched-composite controls
+**Evidence level:** supported through WP-145 by exact Kron, Fisher, resultant-Hessian, matched-composite, and real-place controls
 
 ## Core intuition
 
-Positivity does not by itself erase arithmetic, but neither does obtaining the numerically correct `log m` coefficient prove that positivity generated it. The first regular and singular refinement responses already showed that generic cover geometry has the wrong depth law. The Kron near-miss sharpens this: a canonical positive one-hole response can produce exactly the missing logarithmic scale only because a determinant ratio compares spaces of different rank.
+Positivity does not automatically erase arithmetic, but the operation that exposes an easy sign can act at a different derivative level from the operation carrying the arithmetic selector. A numerically correct logarithm may be a normalization anomaly; a genuinely arithmetic zero-order potential may become full-support and prime-blind after differentiation.
 
-That logarithm lives in a scale gauge. The most canonical positive geometry of the same determinant — its log-partition/Fisher Hessian — annihilates precisely that gauge direction. Thus the route cannot simultaneously treat the `log m` as a scale anomaly and inherit its sign from normalized positive curvature.
+The recurring gate is therefore not just “find positive curvature.” It is to prove that the **same source-selected information survives into the positive object** rather than being quotiented, differentiated, or normalized away before the sign theorem acts.
 
 ## Strongest justified principle
 
-WP-134--WP-139 classify the first refinement responses. Repeated-prime coarse response is stationary; regular full-fiber traces are zero or extensive; the repeated-prime Green trace gives generic harmonic/log-cover growth; regular one-hole new-prime responses are bounded; and the minimal puncture pseudodeterminant finite part is bounded and prime-blind after intrinsic normalization.
+WP-140--WP-141 isolate the scale-anomaly version. A positive Kron response can produce a `log m` determinant ratio because spaces of different rank scale differently, while the canonical spanning-tree Fisher Hessian kills common scale exactly. WP-142--WP-144 repair scale invariance with an equal-rank SPD relative determinant, but the resulting one-mode logarithm remains universal and matched by composites.
 
-WP-140 tests the nonlocal Kron repair at the minimal base. The positive star-mesh response has an exact singular determinant ratio
+WP-145 closes the natural multi-mode resultant-Hessian escape. The zero-order cyclotomic logarithmic resultant has the exact prime-power sparsity and `log p` weights used by the Prime-Circle finite Weil coefficients. Its canonical sign-flipped vertexwise Hessian is genuinely positive and maximal rank, but it couples **every** pair of distinct primitive shells, including controls with resultant `1`. Differentiation destroys the load-bearing prime-power support.
 
-`log(det' C_{2,m}/det Delta_{2,m}) = log m + log 48 + log(m/(m+1))`
-
-under the native inverse-square normalization. This is a genuine near-miss at the critical half-weight. But a common positive rescaling `c_m` changes the same readout by `-log c_m`; with unnormalized geometry the leading coefficient is `-log m`, and arbitrary power rescaling changes it again. The logarithm is therefore the determinant-line effect of one missing nonzero mode, not a scale-invariant consequence of operator positivity. The formula also holds for every odd composite matched control.
-
-WP-141 applies the canonical positive rescue. By Matrix-Tree, the Kron pseudodeterminant is a spanning-tree partition function. In log-conductance coordinates its Hessian is the covariance/Fisher matrix of edge indicators and is positive semidefinite. Every spanning tree has fixed cardinality, however, so common conductance scaling is an exact null direction: the normalized tree law, Fisher metric, and Bregman divergence are unchanged. The positive curvature therefore quotients out the very scale gauge that manufactured the `log m` in WP-140.
+The same collision potential also fails to supply a unified finite--archimedean curvature: its reciprocal radial continuation has opposite second-derivative signs in the `sinh` and `cosh` real-place channels and produces squared inverse-distance kernels rather than the Weil kernels themselves. Thus the selector and the easy positive curvature live in different objects.
 
 ## What remains possible
 
-An equal-rank finite--archimedean determinant, a determinant-line metric not reduced to normalized spanning-tree information geometry, or a genuinely global/nonseparable construction may evade this no-go. It must fix its normalization independently, distinguish prime from matched composite refinement, and produce a sign theorem not borrowed from a gauge-dependent first derivative.
+A surviving route must preserve prime-power provenance before positive completion: for example through a graded/cohomological sign, a nonlocal finite--archimedean coupling, a determinant-line object whose arithmetic support is not differentiated away, or another source-forced operation with its own sign theorem. The positive operation must be audited on matched shell pairs where the zero-order resultant vanishes.
 
 ## Status / novelty
 
-Kron reduction, pseudodeterminants, Matrix-Tree, exponential-family Fisher geometry, and scale covariance are classical. The persisted synthesis is the sharper selector/sign boundary: **a correct logarithm may come from rank-normalization bookkeeping, while the canonical positive metric removes that bookkeeping rather than explaining its sign**.
+Kron reduction, Matrix-Tree/Fisher geometry, cyclotomic resultants, graph Laplacian Hessians, and hyperbolic curvature formulas are classical. The synthesis is the derivative-level selector/sign boundary: **canonical positivity can be mathematically real while acting after the arithmetic support has already disappeared**.
 
 ## Falsification criterion
 
-Produce within the covered Kron geometry a scale-invariant positive quadratic form whose finite response retains the exact new-prime `log m` coefficient and distinguishes matched composites, or derive an independently forced equal-rank normalization where the determinant-line logarithm survives as a genuine positive invariant.
+Construct within the covered Kron/resultant geometry a canonical positive form whose finite response retains exact prime-power support and the required real-place contribution, or derive a new upstream sign mechanism that avoids differentiating the selector away.
 
 ## Lean-formalizable core
 
-- Exact Kron pseudodeterminant ratio.
-- Rank-difference scaling law.
-- Matrix-Tree log-partition Hessian as covariance.
-- Uniform-scale null direction of fixed-cardinality spanning trees.
+- Rank-scaling determinant anomaly and Fisher scale-null direction.
+- Cyclotomic resultant prime-power support.
+- Full-support positive resultant Hessian.
+- Matched-resultant-one control.
+- Opposite real-place curvature signs.

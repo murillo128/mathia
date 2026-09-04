@@ -12,18 +12,18 @@ Global Fenchel coupling can remove artificial blockwise optimization loss, but i
 
 **Linked intuitions:** `MI-006-source-rigidity-can-eliminate-screening-extremizers` and `MI-008-inertia-counts-offline-pairs-but-not-their-distance`.
 
-WI-138--WI-140 give the exact negative-index count, horizontal-subspace alignment, and quadratic confluence boundary. WI-141--WI-142 strengthen the no-go: the complete one-pair tensor converges in every Schatten norm, so fixed spectral moments are blind, and every preassigned finite family of continuous regularizers can be defeated by moving the off-line pair below its resolution scale.
+Exact negative index survives while every preassigned continuous regularization can lose quantitative charge at confluence. The decisive theorem must derive a zeta-source anti-confluence scale or justify a singular detector from independent source structure.
 
-The decisive theorem must therefore derive an unconditional zeta-source anti-confluence scale or justify a singular/discontinuous detector from independent source structure. Inertia count is exact, but no source-free continuous smoothing of it is uniformly coercive.
+## Escape the finite-test/Universal-Fourier-positivity squeeze with source-rigid joint information
 
-## Use genuinely joint or sign-indefinite information when importing out-of-band SDP gains
+**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction`, `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`, and `MI-009-scalar-universality-collapses-to-fourier-positivity`.
 
-**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction` and `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`.
+WI-145--WI-149 sharpen the scalar boundary. One off-line pair can violate a tempting scalar bound, but remote spectral mass can repair finite two-point tests. Requiring the scalar bound universally over compact or superexponential spectral classes instead forces Fourier positivity, while bounded-depth universality yields only Gaussian-smoothed positivity. Positive Hilbert multiwindow enrichment remains in the same cone.
 
-WI-143 shows that positive convex mixtures or direct sums of Lamzouri windows remain inside the Fourier-positive cone and cannot reproduce the negative spectral tail that gives the Chirre--Gonçalves--de Laat RH SDP improvement. A live bridge must use a genuinely joint/sign-indefinite zero-side inequality or new source information, not a larger positive mixture of the existing windows.
+A live bridge must therefore use independently justified source restrictions, genuinely joint multi-point constraints, or sign-indefinite/matrix/inertia information. Merely increasing the number or richness of source-free scalar windows moves between underdetermination and classical Fourier positivity.
 
 ## Move from residual rank to quantitative source coercivity
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`, `MI-004-w-conditioning-is-l2-compressible-but-l1-expensive`, and `MI-005-rank-restoration-is-not-quantitative-coercivity`.
 
-Full rank or restored dimension can coexist with collapsing singular values. Any fourth-moment or welding route must prove a quantitative source lower bound from information absent in the covered full-packed and confluence controls.
+Full rank or restored dimension can coexist with collapsing singular values. Any fourth-moment or welding route must prove a quantitative source lower bound from information absent in the covered full-packed, remote-repair, and confluence controls.

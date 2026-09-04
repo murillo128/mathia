@@ -1,37 +1,36 @@
-# MI-004 — A critical axis, RH-equivalent scalar, positive logarithm, moment lift, or recurrent event process is not zero selection
+# MI-004 — A critical axis, half-density, RH-complete event carrier, or positive local geometry is not zero selection
 
-**Evidence level:** supported by exact/classical mechanisms in multiple branches
+**Evidence level:** supported by exact/classical mechanisms across Prime Lattice, Prime Circle, and Weil Positivity
 
 ## Core intuition
 
-Mathia now contains structures that look close to the target for different reasons: Tate self-duality gives the half-weight; arithmetic phase data can identify rational-prime generators; completed positive spaces and RH-equivalent axis criteria exist; a scale-invariant Kron geometry produces a genuine positive logarithm; Suzuki's completed scalar admits both Hankel moments and an exact prime-power event dynamics. These achievements are not interchangeable.
+Mathia now contains several structures that reproduce pieces of the target exactly: Tate and compatible dilation give the half-weight, rational-prime phase data can identify the source, Suzuki's prime-power event sequence is RH-complete, and local geometric constructions produce genuine positive logarithms or Hessians. These achievements are not interchangeable.
 
-The missing step remains a **source-forced sign or polarization on the zero-sensitive completed object itself**. It must explain why the completion/critical normalization is forced and exclude the off-axis alternative without deriving its force from an already RH-equivalent scalar criterion, a universal local geometry, or a generic continuation phenomenon.
+The missing step remains a **source-forced sign or polarization on the zero-sensitive completed object itself**. It must exclude the off-axis alternative without deriving its force from an already RH-equivalent carrier, a classical representation normalization, or a positive object formed only after the arithmetic selector has disappeared.
 
 ## Strongest justified principle
 
-Prime Lattice now makes the distinction especially sharp. PL-145 shows positive Volterra transport works only outward. PL-146 compresses the completed sign to prime-power checkpoint minima with vanishing possible reserves. PL-147 adds an axis-supported weighted-Chebyshev criterion that is itself RH-equivalent, proving that axis-only logical sufficiency does not explain zero localization. PL-148 shows the natural Hankel/Stieltjes lift is a globally completed scalar jet; local prime-ray moments diverge separately. PL-149 shows checkpoint workload recovery occurs infinitely often unconditionally, so recurrence is not the missing sign theorem.
+Prime Lattice makes event encoding exact. PL-153 shows that either one-sided boundedness of Suzuki checkpoint values is already RH-equivalent, while PL-150 shows the terminal recovery drawdown vanishes. The event skeleton therefore carries the criterion, but the unresolved resource is cumulative completed history, not local checkpoint interpolation. PL-154 is not used while its review remains open.
 
-Weil Positivity strengthens the local-positive counterexample. WP-142 repairs the earlier determinant normalization anomaly with an equal-rank relative determinant `A/H>=1`; WP-143 identifies its logarithm as an intrinsic one-mode SPD distance; WP-144 shows every ordinary congruence-invariant SPD metric only rescales it. Yet the entire construction is prime-blind, composite-matched, and does not yield the Weil bilinear/global terms.
+Prime Circle supplies a complementary normalization control. PC-165 identifies the compatible radial half-density `-1/2+it` with ordinary unitary dilation on logarithmic radius; PC-166 shows regular homogeneous local metrics are flat log cylinders with continuous radial spectrum. A canonical half factor can therefore appear without a zero Hamiltonian.
 
-Prime Circle, Tate/Deninger, Meyer/Suzuki, and Grosswald--Schnitzer continue to separate symmetry, source fidelity, spectral realization, and positivity. None supplies the missing arithmetic polarization merely by representing the right axis, divisor, or scalar sign problem.
+Weil Positivity sharpens the selector/sign separation. WP-145 starts with a zero-order cyclotomic resultant having exact prime-power support, but its canonical positive Hessian couples every shell pair and the real-place curvature splits signs. Genuine positivity exists, yet it acts after the load-bearing arithmetic support has been differentiated away.
 
 ## Evidence against overgeneralization
 
-A critical normalization, exact source recovery, positive auxiliary geometry, correct logarithmic scale, completed moment sequence, or event representation can be an essential component. The restriction concerns explanatory force: the final localization theorem must be forced upstream and survive matched source/control changes.
+A critical normalization, exact event representation, or positive auxiliary geometry may be necessary. The restriction concerns explanatory force: the final localization theorem must be forced upstream and survive matched source/control changes in the same object on which the sign theorem acts.
 
 ## Status / novelty
 
-The component mechanisms are classical or exact persisted findings. Their separation into source fidelity, completion, local positivity, event encoding, and zero localization is cross-line synthesis.
+The component mechanisms are classical or persisted exact findings. Their separation into representation normalization, completed criterion encoding, arithmetic selection, and zero localization is cross-line synthesis.
 
 ## Falsification criterion
 
-Derive the completed zeta sign or an equivalent positive/skew-adjoint polarization from upstream rational-prime/global-completion structure without assuming an RH-equivalent criterion, with normalization and source selection fixed independently of the target conclusion.
+Derive the completed zeta sign or an equivalent positive/skew-adjoint polarization from upstream rational-prime/global-completion structure without assuming an RH-equivalent scalar criterion and without losing the arithmetic selector before positivity is applied.
 
 ## Lean-formalizable core
 
-- Tate half-axis versus Hodge-pairing localization.
-- Outward Volterra cone preservation and inverse failure.
-- Prime-power checkpoint reduction with vanishing margins.
-- Axis RH-equivalence versus completed moment divergence locally.
-- Equal-rank SPD logarithmic positivity versus matched-control failure.
+- Dilation half-density versus zero selection.
+- Prime-power one-sided-boundedness criterion.
+- Vanishing terminal recovery versus cumulative event state.
+- Zero-order selector versus positive-Hessian support loss.

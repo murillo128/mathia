@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Prove or break the complete finite-configuration/diffraction ceiling for the universal scalar carrier
+## Transfer the finite-real scalar separation to the genuine complex zero-side problem
 
-**Linked intuitions:** `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile` and `MI-004-complete-scalar-control-is-diffraction-realizability`.
+**Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`, and `MI-004-complete-scalar-control-is-diffraction-realizability`.
 
-ANF-018--ANF-020 identify the scalar floor with free-density finite-particle stability and the exact convex diffraction-realizability problem. ANF-021--ANF-024 eliminate favorable local slopes, lattice scale mixtures, iid positional cloaking, and stationary iid-renewal randomness. ANF-025--ANF-027 now eliminate the fractional-Brownian displaced-lattice family as well, including the singular `H->0` boundary and arbitrary moving scale mixtures: bounded scales recrystallize while dilute scales whiten.
+ANF-018--ANF-032 progressively classify the finite-real diffraction body and its sharp Montgomery--Taylor face. ANF-033 is the decisive boundary change: that body does **not** impose the Montgomery--Taylor ceiling. By exact duality there is a nonnegative support-one scalar test that separates all finite real controls more strongly than the classical constant.
 
-The decisive scalar result is therefore either a universal theorem that the complete finite-configuration diffraction body misses the Montgomery--Taylor budget, or one admissible separating spectrum that lies inside it. A stochastic survivor must use genuinely different correlated structure and pass the full-band finite-binding test rather than only a low-frequency or thermodynamic criterion.
+The live scalar question is now whether one can make that separation explicit and carry it through the full conjugation-invariant complex zero geometry and the actual affine zeta inequality. A failure there would identify the missing obstruction as genuinely complex/source-specific rather than finite-real diffraction.
 
 ## Use unconditional out-of-band information only through a genuinely different zero-side carrier
 

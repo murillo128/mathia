@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Target residuals only after deterministic equivalence classes and statistical closures are removed
+## Target higher-order residuals only after deterministic and Markov/contingency closures are removed
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-Complete circular modulus/phase data, connected overlap gauges, and contour winding are reconstructible from ordinary analytic/divisor data. VIS-021--VIS-022 add an exact Gram hierarchy: occupancy and Gram-sampled `S` are equivalent up to one initial count, while Hardy-`Z` Gram signs retain only occupancy parity. These views must be treated as one information family rather than multiple confirming observables.
+Complete circular data, Gram occupancy, sampled `S`, and Gram-sign parity have known deterministic quotient relations. VIS-023--VIS-025 now make the first genuine three-gap residual equally explicit: CMI is the Markov-order likelihood-ratio statistic, Pearson whitening gives the conditional interaction fiber, and correspondence-analysis SVD gives its canonical scalar geometry.
 
-For genuinely new statistics, VIS-019--VIS-020 still set the next control: construct the finite-size CUE/arithmetic baseline and the adjacent-pair-preserving maximum-entropy closure separately on both sides. A candidate residual must survive both the deterministic quotient and the matched statistical null.
+The next experiment must therefore compare zeta and matched CUE/arithmetic data after the same finite-sample, binning, occupancy, and first-order Markov closures. If a persistent residual depends on interaction orientation, retain the corresponding singular vectors/cross-fiber coupling rather than compressing to CMI or singular values.
 
 ## Explore incomplete/separated measurements only when the missing coupling is explicit
 
@@ -20,4 +20,4 @@ Sparse measurements or separated regions may retain a nontrivial bridge precisel
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, or scale-coupling statement independent of the rendering. Apparent agreement among deterministically related visualizations is not a promotion criterion.
+Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, orientation-coupling, or scale statement independent of rendering. Agreement among deterministically or statistically related visualizations is not a promotion criterion.
