@@ -1,40 +1,53 @@
-# MI-003 — Fixed-time Xi memory is mesoscopic; finite-range scale-invariant shape bulk has geometric-ramp null modes that source counting can only partially remove
+# MI-003 — Fixed-time Xi memory is mesoscopic; translated source counting turns borderline flux control into strong lattice rigidity
 
-**Evidence level:** supported through XF-034; finite-range null-mode and Xi nested-span statements are exact in their stated regimes
+**Evidence level:** supported through XF-037; finite-range null modes, translated counting, flux inversion, and variation-collapse statements are exact in their stated regimes
 
 ## Core intuition
 
-Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. The normalized-discriminant route localizes taper loss well, but its finite-range scale-invariant bulk cannot control every shape direction: affine profiles in log gaps, equivalently geometric gap ramps, are exact null modes.
+Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. Finite-range translation-invariant scale-invariant shape bulk has exact affine log-gap null modes, but the source-side picture is now sharper than simple nested-span rigidity: the full translated Xi counting law destroys macroscopic folded realizations already at the borderline inverse-buffer flux scale.
 
-This null family is universal algebraically but not fully source-admissible. Xi zero counting on super-mesoscopic nested buffers forces any exact or uniformly near-geometric ramp persisting across that scale to flatten. The remaining theorem is therefore a stability/coercivity bridge: show that small bulk force makes a general source-valid profile close enough to the geometric null family for counting rigidity to apply.
+Conditional on `M V_M=O(1)`, the source does not merely make geometric ramps flat. It forces the whole super-mesoscopic gap block to be uniformly lattice-like and collapses the total logarithmic gap variation. The missing theorem has therefore moved upstream to the **dynamical derivation of that borderline flux bound, with collision-safe taper sign**.
 
 ## Strongest justified principle
 
-XF-006--XF-031 establish the mesoscopic carrier, collision-safe normalized discriminants, positive overlap, exact nonlinear taper product rule, and the two-conductance bulk-alignment formulation.
+XF-006--XF-031 establish the mesoscopic carrier, collision-safe normalized discriminants, positive overlap, exact nonlinear taper product rule, and the two-conductance bulk-alignment formulation. XF-032--XF-033 then identify the exact universal null family: every finite-range sliding scale-invariant local shape assembly has zero interior first variation on an affine log-gap profile, equivalently a geometric gap ramp.
 
-XF-032 identifies the exact nonlinear kernel for the triple assembly. If the nearest-neighbor shape operator vanishes throughout a block, then `log g_j` is affine and `g_j=C r^j`; constant-weight bulk derivatives reduce to endpoint flux. The missing scalar is the mean logarithmic contrast, equivalently the endpoint gap ratio.
+XF-034 shows that an exact or uniformly near-geometric ramp persisting across a super-mesoscopic Xi buffer must flatten by nested zero-counting spans. XF-035 quantifies what is available if the source is compressed to only those two spans: `M V_M=o(1)` closes the stability bridge, while a fixed-amplitude tent with `V_M=Theta(1/M)` is a sharp static control for that reduced data package.
 
-XF-033 proves that this is structural rather than triple-specific. Every finite-range translation-invariant sliding assembly of a scale-invariant local shape observable has zero interior first variation on a geometric ramp; its coefficient is a discrete derivative of the taper. Increasing the fixed block size cannot create bulk sensitivity to the affine log-gap slope.
+XF-036 restores the full source information. Rodgers--Tao counting applies uniformly to every translated fixed-fraction subwindow inside the buffer. Combined with the borderline condition
 
-XF-034 then brings in source rigidity. On a super-mesoscopic Xi block `M=R(T)log^2 T`, nested span laws at `M` and `2M` force an exact geometric ramp to satisfy `r_T^M=1+o(1)`, and the same holds under uniformly vanishing multiplicative perturbations. Thus persistent source-valid geometric null modes become asymptotically arithmetic. This does not control arbitrary profiles with the same spans.
+`M V_M=O(1)`,
+
+this makes the log-gap profile equi-Lipschitz on the macroscopic index scale and forces
+
+`max_k |log(g_k/h_T)| = o(1)`.
+
+The XF-035 tent fails these translated averages by an order-one amount and is therefore not source-admissible.
+
+XF-037 extracts the first-order consequence. Under the same hypotheses,
+
+`sum_k |log(g_{k+1}/g_k)| = o(1)`,
+
+so order-`1/M` nonlattice contrasts can occupy only a vanishing fraction of the block. The triple-flux `ell^1` mass and reciprocal-gap total variation also vanish. What can still survive statically is a sparse sub-super-mesoscopic microfold with pointwise contrast `Theta(1/M)`.
 
 ## What remains possible
 
-A positive theorem should establish a quantitative near-kernel statement: small aggregate shape force or adverse bulk production must imply closeness to a geometric ramp in a norm strong enough to combine with XF-034. Alternatively, add a genuinely nonlocal/source-sensitive observable that sees mean logarithmic contrast directly.
+A positive continuation should derive `V_M=O(1/M)`, or a comparable compactness estimate, from the exact interaction between the local `L_lambda` shape force and the long-range `L_w` dynamics while retaining XF-028 collision-positive coverage. Once that source resource is available, the remaining task is to control the signed tapered derivative rather than to prove another static near-kernel theorem.
 
-A negative should construct source-compatible profiles with small finite-range shape force that stay far from every geometric ramp while retaining order-one adverse bulk effect across the growing buffer.
+A decisive negative must now be dynamically source-compatible. It should exhibit sparse/sub-super-mesoscopic misalignment that respects translated counting and the relevant zero-motion law, or show that the dynamics cannot supply the borderline flux-variation budget. Macroscopic tents and positive-density near-lattice waves no longer qualify.
 
 ## Status / novelty
 
-Patch-test/affine null modes, graph Laplacians, and zero-counting asymptotics are classical ingredients. The synthesis is the sharpened frontier: **the universal finite-range bulk has an exact affine-log-gap blind mode, while Xi counting kills only sufficiently coherent realizations of that mode; quantitative stability toward the null family is now the missing bridge**.
+Patch-test null modes, bounded-variation interpolation, and local-average rigidity are classical ingredients. The persisted synthesis is the frontier shift: **translated Xi counting converts a borderline `1/M` flux-variation resource into uniform and total-variation lattice rigidity; the unresolved mechanism is whether Xi dynamics supplies that resource with the required sign through collisions**.
 
 ## Falsification criterion
 
-Construct a super-mesoscopic exact/near-geometric Xi block violating the XF-034 flattening conclusion, or prove a source-valid coercive near-kernel theorem that turns small shape force into geometric-ramp proximity and closes the remaining alignment gate.
+Construct a source-valid super-mesoscopic Xi block satisfying translated counting and `M V_M=O(1)` but violating uniform gap flattening or vanishing total log-gap variation, contradicting XF-036/037. A dynamically derived `V_M=O(1/M)` estimate would close the current source-coercivity gate rather than falsify it.
 
 ## Lean-formalizable core
 
-- Geometric-ramp null classification.
-- Finite-range scale-invariant patch-test factorization.
-- Nested-span ratio for geometric ramps.
-- Source flattening `r_T^M=1+o(1)`.
+- Finite-range geometric-ramp null classification.
+- Inverse-Lipschitz triple-flux coordinate.
+- Translated super-mesoscopic span law.
+- Equi-Lipschitz plus translated-average uniform flattening.
+- Block interpolation from flux variation to vanishing total log-gap variation.

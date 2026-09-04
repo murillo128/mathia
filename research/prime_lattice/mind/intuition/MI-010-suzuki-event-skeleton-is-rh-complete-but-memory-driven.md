@@ -1,40 +1,47 @@
-# MI-010 — Suzuki's completed scalar is RH-complete on thin sets, but fixed-step sampling can alias off-line modes
+# MI-010 — Suzuki's completed scalar is RH-complete on fine sets; fixed-step sampling leaves only a phase-pinned frontier loophole
 
-**Evidence level:** supported by PL-150, PL-153--PL-158; the fixed-step matched control and sampling identities are exact in their stated models
+**Evidence level:** supported by PL-150 and PL-153--PL-161; exact for the sampled zero-series, recurrence, Cauchy-transform, and Pringsheim reductions in their stated models
 
 ## Core intuition
 
-Suzuki's completed scalar carries enough zero information that very thin observation sets can remain RH-complete, but observation-set sufficiency depends on the sampling geometry. Dense or asymptotically fine sets recover the continuous completed state; one fixed geometric ray does not.
+Suzuki's completed scalar carries enough zero information that thin observation sets can remain RH-complete, but fixed-step sampling has a genuine phase quotient. The quotient is now sharply asymmetric. Upper boundedness still has an exact resonant off-line control, whereas lower boundedness cannot be hidden by any attained horizontal frontier; any surviving failure of RH must use an unattained frontier whose near-edge zeros are pinned to the sampled phase identity.
 
-PL-158 supplies the missing adversarial boundary. Every fixed step admits an exact completed-polynomial off-line quartet whose Suzuki-type continuous screw has both signs, yet whose sampled sequence is one-signed because the oscillatory frequency is resonantly aliased. The horizontal displacement survives as radial growth, but the ordinate is observed only modulo the sampling frequency. Thus a single prime-power ray is not generically RH-complete merely because it samples a completed criterion.
+Thus fixed-step observation is not simply “incomplete.” Its remaining ambiguity has a precise zero-side geometry, and excluding that geometry would require source-specific information not supplied by sampling itself.
 
 ## Strongest justified principle
 
-PL-150 and PL-153--PL-154 show that the completed prime-power checkpoint state is extraordinarily informative: one-sided checkpoint boundedness is RH-equivalent, and the one-sided exponential growth exponents recover the rightmost-zero frontier.
+PL-150 and PL-153--PL-154 show that the completed prime-power checkpoint state is RH-complete: one-sided checkpoint boundedness is RH-equivalent and one-sided growth exponents recover the horizontal zero frontier. PL-155--PL-157 show that dense two-prime differences and asymptotically fine meshes inherit the continuous criterion by generic observation geometry.
 
-PL-155--PL-157 then separate completed-state information from sampling density. A fixed two-prime face has a dense difference group and therefore extends kernel positivity to the continuum; the ordinary-prime basis and broad exogenous meshes with sub-`3/4` gaps transfer one-sided boundedness and growth by interpolation. These facts are generic observation properties once the completed scalar/kernel already exists.
+PL-158 gives the fixed-step boundary. For every `h>0` an off-line quartet can be placed in exact resonance so that the continuous screw has both signs while the samples on `nh` are bounded above. This remains a decisive control against a generic upper-bounded fixed-ray criterion.
 
-PL-158 shows why the same conclusion cannot be pushed to one fixed step `h`. For every `h>0`, a symmetric completed polynomial with off-critical zeros can be chosen with ordinate `tau=2 pi m/h`. Its exact Suzuki-type screw satisfies the same finite logarithmic-derivative transform, but on `t=nh` the oscillatory phase freezes and the samples are nonpositive. In discrete generating-function language, the off-line mode is folded onto an allowed positive real boundary pole. A single prime ray `t=n log p` therefore has an exact aliasing control.
+PL-159 shows that the same finite alias cannot hide lower escape: finite torus recurrence returns the dominant phases to identity, where ordinary high-ordinate off-line quartets have a common negative leading sign. PL-160 removes finiteness and isolation. If the rightmost horizontal zero frontier is attained, even by infinitely many zeros and with arbitrarily close subedge lines, absolute zero-weight summability and uniform almost-periodicity force `Psi(nh)` to `-infinity` along a subsequence for every fixed `h`.
 
-This does not contradict the two-prime face: two incommensurable log-prime directions make the difference group dense, whereas one ray has the discrete group `Z log p`. Nor does it contradict the fine-mesh interpolation results, whose gaps tend to zero relative to the required scale.
+PL-161 identifies the exact surviving one-sided geometry. The sampled generating function has Taylor radius `exp(-(Theta-1/2)h)`, because no realized displacement circle can cancel completely after aliasing. If the samples are bounded on either side, a shift to nonnegative coefficients and the Vivanti--Pringsheim theorem force a singularity at the positive radial boundary. Hence there are near-frontier zeros with
+
+`exp(i T_j h) -> 1`.
+
+For lower boundedness, PL-160 adds that the frontier must be unattained, so the only remaining RH-failure alternative is an **unattained, phase-pinned frontier** with distinct ordinates tending to infinity.
 
 ## What remains possible
 
-A one-prime sampling theorem would need extra zeta-specific anti-aliasing information, a second incommensurable scale, or a source relation that excludes the resonant controls. Lower boundedness, two-sided boundedness, or other discrete functionals are not closed by PL-158 unless separately reduced to the same alias.
+A fixed-ray lower criterion would need to rule out that unattained phase-pinned frontier using information external to generic sampling: zero-density or ordinate-distribution constraints, a source relation coupling horizontal approach to phase, or a genuinely simultaneous multi-axis theorem. Separate boundedness statements on two incommensurable prime rays do not by themselves synchronize the near-frontier subsequences selected by Pringsheim.
+
+For upper boundedness, the exact resonant quartet remains a matched control unless additional zeta-specific anti-aliasing excludes it.
 
 The broader positive route remains upstream: derive the completed sign or one-sided growth restriction from rational-prime/global-completion structure before generic observation completeness takes over.
 
 ## Status / novelty
 
-Suzuki's screw representation is literature-backed and equispaced exponential aliasing is classical. The synthesis is the sampling boundary: **after completion, dense/fine observation sets can be RH-complete for generic reasons, while fixed-step rays have an exact off-line alias unless additional source information breaks the phase quotient**.
+Suzuki's screw representation, Kronecker recurrence, Cauchy transforms, and Vivanti--Pringsheim are classical or literature-backed. The synthesis is the sharpened sampling boundary: **fixed-step lower boundedness under RH failure requires an unattained frontier accumulating at sampled phase identity; upper boundedness still admits finite exact resonance**.
 
 ## Falsification criterion
 
-Show an algebraic failure in the PL-158 resonant quartet control, or prove a zeta-specific theorem that forbids the relevant fixed-step alias while using hypotheses genuinely weaker than the completed RH criterion. A two-scale or dense-difference construction evades rather than falsifies the one-step obstruction.
+Construct an attained off-line zeta frontier with `Psi(nh)` bounded below for some fixed `h`, contradicting PL-160, or a one-sided bounded fixed-step sequence whose near-frontier sampled pole support avoids the positive radial boundary, contradicting PL-161. A source theorem excluding the unattained phase-pinned alternative would close the remaining lower loophole rather than falsify the sampling analysis.
 
 ## Lean-formalizable core
 
-- Prime-power checkpoint one-sided criterion and growth frontier.
-- Dense two-prime-face continuity extension.
-- Fine-mesh interpolation transfer.
-- Fixed-step exponential aliasing and resonant quartet sample formula.
+- Fixed-step resonant quartet alias.
+- Finite and infinite attained-edge recurrence.
+- Absolute-summability removal of subedge modes.
+- Sampled Cauchy-transform radius equals horizontal frontier.
+- Pringsheim phase pinning of near-frontier zeros.

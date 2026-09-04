@@ -4,38 +4,44 @@
 
 ## Core intuition
 
-A prime- or zeta-labelled construction is not arithmetic evidence until its matched control preserves the entire information layer consumed by the final theorem. The newest results sharpen this in both directions: apparently richer complex, spectral, matrix, or local-shape effects can collapse to classical controls, while source theorems can also eliminate universal extremizers that are algebraically valid but not source-admissible.
+A prime- or zeta-labelled construction is not arithmetic evidence until its matched control preserves the entire information layer consumed by the final theorem. The current evidence sharpens this in both directions: destination controls can become much stronger than an obvious local surrogate, while source theorems can eliminate controls that are algebraically valid but inadmissible at the scale being claimed.
 
-The correct adversary must therefore match representation, sampling, symmetry, transfer budget, boundary geometry, operator category, and source constraints at the scale of the final claim.
+The strongest adversary must therefore match representation, sampling, symmetry, boundary geometry, transfer budget, operator category, regularity, and source constraints **without itself subtracting the arithmetic target**.
 
 ## Strongest justified principle
 
-Analytic Frontier now classifies the first one-pair five-point complex layer completely. ANF-037--ANF-039 reduce it to the curvature margin `m_5`; once that margin is nonnegative, every finite-height correction is favorable. A small central-notch separator can beat the finite-real control and still pass this whole layer. The next honest complex control is the coupled two-conjugate-pair geometry, not more real configurations or finite-height scanning.
+Analytic Frontier now closes all local cardinality-five complex geometry through the curvature gate `m_5>=0` using ANF-037--ANF-041. The remaining two-pair scalar obstruction is genuinely finite-height rather than an unclassified local complex effect.
 
-Visual Exploration adds a deterministic boundary control: VIS-028 proves that the classical Farey unit-fraction endpoint fan alone forces the observed `r=Theta(n)` Dirichlet scale. A modal collapse at `r/n` is therefore not arithmetic evidence until that fan is removed or matched.
+Visual Exploration strengthens deterministic Farey controls from the unit-fraction fan to every pre-fixed fixed-`nx` endpoint layer. VIS-030 simultaneously marks the stopping point: a growing endpoint subtraction is a totient Riesz/Möbius channel with Dirichlet series `zeta(s)/zeta(s+1)`, so the control ceases to be an arithmetic-free nuisance removal.
 
-Möbius Cancellation makes the transfer control resource-specific. MC-065--MC-067 show that signed feedback can remove an absolute conductor-zero penalty yet expose a stronger split-prime `p^{-theta}` budget. Siegel--Walfisz kills every polylogarithmic conductor while the classical near-critical comparator bound pushes toward subpolynomial conductors. A moving family must satisfy the exact transfer and feedback budgets simultaneously.
+Möbius Cancellation makes source admissibility increasingly selective. Positive quadratic feedback forces extreme terminal-prime bias; large-sieve sparsity leaves only `O(log X)` prime-conductor candidates below square-root scale, and Landau--Page theory reduces the quasi-subpower range to at most the unique exceptional primitive character.
 
-Prime Lattice supplies an aliasing control complementary to its fine-mesh completeness results. PL-158 constructs, for every fixed sampling step, a symmetric off-line completed model whose continuous Suzuki-type screw has both signs but whose samples are one-signed by exact resonance. Fixed-ray sufficiency therefore needs source-specific anti-aliasing; it cannot be inferred from completion alone.
+Prime Lattice makes fixed-step aliasing equally precise. Upper boundedness still admits a finite resonant off-line control, but PL-159--PL-161 show that lower boundedness under RH failure requires an unattained horizontal frontier whose near-edge zeros are phase-pinned to the sampled identity. This is a source-side geometry that generic fixed-step sampling alone neither forbids nor explains.
 
-Weil Inertia closes the support-one signed-scalar central-spike escape and its pointwise-PSD matrix analogue through the sharp Montgomery--Taylor/CCLM extremal. Weil Positivity closes another natural positive escape: the canonical resultant graph energy is short-circuited by spectator-prime parallel paths and has only constant finite-energy functions. Xi Flow gives the source-side qualification: universal geometric-ramp null modes exist for every finite-range scale-invariant shape assembly, but super-mesoscopic Xi counting forces coherent realizations of those ramps to flatten.
+Weil Inertia closes fixed and regular-changing support-one scalar/positive-matrix enlargements at the Montgomery--Taylor extremal. WI-158 identifies the honest remaining scalar boundary: the published pointwise form-factor error does not control singular near-extremizing test families at the needed dual norm, so a gain there would require new arithmetic error information.
+
+Weil Positivity now shows that even repairing a source-faithful sparse interaction can destroy it. The resultant graph is positive at finite cutoffs but globally short-circuited, and WP-150 proves that every vertex-local normalization restoring finite fixed-shell energy erases every fixed arithmetic edge.
+
+Xi Flow supplies the complementary source qualification. Geometric-ramp null modes are universal, but translated super-mesoscopic Xi counting plus the borderline flux resource `M V_M=O(1)` forces uniform lattice flattening and vanishing total log-gap variation. Macroscopic tent controls are therefore invalid once the complete source package is retained.
 
 ## Program consequence
 
-For each proposed mechanism, identify the strongest control that matches the actual destination category and then separately impose every known source restriction relevant at that scale. A positive residual must survive both layers quantitatively. A universal alias is decisive against representation-level identification; a source theorem may still rule out that alias as a dominant source model without repairing the lost representation information.
+For each proposed mechanism, first identify the strongest control matching the actual destination category, then impose every known source restriction at the scale of the claim, and finally audit whether the control itself removes target arithmetic. A positive residual must survive all three steps quantitatively.
+
+A universal alias remains decisive against representation-level identification even if the actual source later excludes its extremizer. Conversely, a source theorem excluding a control does not restore information already erased by the representation.
 
 ## Status / novelty
 
-The component controls are persisted findings or literature-backed specializations. Their hierarchy is synthesis, not a theorem that surviving all known controls proves arithmetic specificity.
+The component controls are persisted findings or literature-backed specializations. Their hierarchy is synthesis, not a theorem that survival of all current controls proves arithmetic specificity.
 
 ## Falsification criterion
 
-Produce a candidate whose claimed source-specific invariant survives only because a destination-relevant control was omitted, or conversely derive a source theorem that excludes every matched extremizer and leaves a quantitative residual in the exact final category.
+Produce a candidate whose claimed source-specific invariant survives only because a destination-relevant control or source restriction was omitted, or derive a source theorem that excludes every matched extremizer while leaving a quantitative residual in the exact final category without subtracting the target signal.
 
 ## Lean-formalizable core
 
 - Downstream invariance on maximal measured fibers.
-- Exact symmetry, boundary, and sampling controls.
-- Uniform-family transfer budgets.
-- Source-admissibility versus representation-nonidentifiability.
+- Exact symmetry, boundary, sampling, and regularity controls.
+- Uniform-family transfer and error budgets.
+- Source-admissibility versus representation nonidentifiability.
 - Post-processing monotonicity of lost provenance.

@@ -20,13 +20,15 @@ Short-chord models recover strong average/Mertens top-band information while ope
 
 Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, harmonic response, Kron determinants, and Feshbach families now classicalize. A live carrier must be all-shell, growing-base, genuinely multi-hole, singular/domain-changing, or nonlinear/noncommuting before fixed-base elimination.
 
-## Leave the local finite-order refinement category before seeking zero localization
+## Leave the fixed local/strong-refinement boundary category before seeking zero localization
 
 **Linked intuitions:** `MI-004-compatible-completion-lacks-coercive-rh-scale`.
 
-PC-165--PC-168 sharpen the compatible-completion boundary. Radial refinement is classical logarithmic dilation with the `-1/2+it` unitary half-density. Full refinement covariance forces every local metric to a radial power law and every finite-order differential coefficient to the corresponding homogeneous monomial; at second order the remaining scalar singularity is only inverse-square type. These local coefficients are reproduced by the naked refinement semigroup and carry no primitive-shell selector.
+PC-165--PC-168 classify full refinement at the coefficient level: logarithmic dilation forces the half-density and homogeneous local coefficients, with inverse-square as the canonical second-order scalar singularity. PC-169--PC-171 close the corresponding fixed-domain/Robin ladder: refinement-compatible inverse-square domains are universal scale fixed points or nonexistent; bounded nonlocal Robin corrections vanish; and a strongly covariant fixed self-adjoint unbounded Robin operator collapses to four universal first-order circle parameters.
 
-A useful completion must therefore be nonlocal, shell/level-dependent, cross-level, nonlinear/noncommuting, genuinely radial--arithmetic coupled, or use a singular domain/boundary condition independently forced by the root system. Choosing a power-law singularity or extension parameter after the coefficient classification is not arithmetic evidence.
+PC-172 closes the simplest singular point-supported continuation as well. Every finitely supported distributional multiplication coefficient with exact first-order power-refinement covariance is `c delta'_1`; finite atomic root weights vanish, reflection invariance kills the survivor, and nonzero `delta'_1` is not a semibounded perturbation of the canonical bulk form.
+
+A useful boundary/completion mechanism must therefore use data not fixed by the naked power semigroup: weaker form-covariant unbounded primitive-direction coefficients derived from old/new root incidence, shell- or level-dependent singular families, infinite-support transfer data, general renormalized boundary relations mixing trace and normal derivative, cross-level structure, or nonlinear/noncommuting radial--arithmetic coupling. The arithmetic dependence must be derived before choosing the domain or boundary relation.
 
 ## Cross the Hardy boundary before the one-new-prime corrector becomes universal
 

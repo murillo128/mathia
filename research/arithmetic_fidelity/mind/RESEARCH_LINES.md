@@ -14,16 +14,16 @@ Linear span, generated sigma-algebra, multiplicative closure, and source-depende
 
 Exact recovery can coexist with arbitrarily bad conditioning, and per-scale witnesses can escape every compact set. A concrete application must supply a source-natural stability modulus, coherent approximant tower, compact-transversal margin, or equivalent width decay.
 
-## Match multiscale description to the exact information budget and coherence demanded at the destination
+## Match the full multiscale information profile to the coherence and regularity demanded at the destination
 
-**Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`, `MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness`, and `MI-011-coherent-exact-description-has-an-entropy-atomicity-gate`.
+**Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`, `MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness`, `MI-011-coherent-exact-description-has-an-entropy-atomicity-gate`, and `MI-012-regular-recovery-orders-the-full-multiscale-information-profile`.
 
-AF-105--AF-116 separate assembly topology, Schatten resources, trace tightness, relative scale, finite `k`-scale repair, tolerance covering, worst-case labels, and average description cost. AF-117--AF-119 sharpen the last distinction: finite entropy is the exact one-shot mean-bit gate; the integrated logarithm of tolerance-rank complexity characterizes its finiteness; and a coherent generating refinement tower has bounded terminal entropy exactly for finite-entropy atomic sources.
+AF-105--AF-119 separate assembly topology, Schatten resources, relative scale, tolerance covering, average description cost, and coherent exact generation. Finite entropy is the one-shot mean-bit gate, and a nested generating hierarchy has bounded terminal entropy exactly in the finite-entropy atomic regime.
 
-A decisive application must therefore state whether it needs one-scale approximation, finite error at each scale, one coherent exact mark, or an exactly generating hierarchy. Per-tolerance finite codebooks cannot be silently assembled into a bounded-information exact representation.
+AF-120--AF-122 refine the unbounded side. Information dimension is only the Cesaro innovation slope and can vanish while exact information still diverges. Uniformly Lipschitz/Hölder or general uniform-modulus recovery orders the **entire conditional fine-quantization entropy profile** after the resolution change forced by the decoder modulus. A decisive application must therefore state whether it needs finite-tolerance approximation, regular recovery, one coherent exact mark, or exact generation, and prove that its source-forced representation has the corresponding profile budget.
 
 ## Keep repair category and target transport explicit
 
 **Linked intuitions:** `MI-004-prime-specificity-depends-on-the-retained-analytic-layer` and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-Linear, continuous homogeneous, Lipschitz, equivariant, and differentiable repairs have different existence and rigidity thresholds. Likewise a refinement may preserve the source exactly while changing the admissible target set. Applications must state which category and target transport are forced before claiming fidelity.
+Linear, continuous homogeneous, Lipschitz, equivariant, differentiable, and merely measurable repairs have different existence and rigidity thresholds. Likewise a refinement may preserve the source exactly while changing the admissible target set. Applications must state which category, modulus, and target transport are forced before claiming fidelity.

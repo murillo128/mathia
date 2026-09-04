@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Resolve the remaining coupled five-point complex geometry for the explicit separator
+## Resolve the finite-height two-pair five-point gate beyond the local curvature criterion
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`, and `MI-004-complete-scalar-control-is-diffraction-realizability`.
 
-ANF-034 gives an explicit support-one central-notch ray that beats the complete finite-real Montgomery--Taylor stability ratio. ANF-035--ANF-036 remove all conjugation-invariant configurations through four points. ANF-037--ANF-039 now remove the first five-point pattern as a separate finite-height problem: one conjugate pair plus three real anchors is controlled exactly by the curvature margin `m_5`, and both Montgomery--Taylor and a sufficiently small central-notch separator pass that whole layer at every height.
+ANF-034 gives an explicit support-one central-notch ray that beats the complete finite-real Montgomery--Taylor stability ratio. ANF-035--ANF-039 remove all conjugation-invariant configurations through four points and classify one conjugate pair plus three real anchors at every height. ANF-040--ANF-041 then close the local two-pair boundary, including `m_5=0`: nonnegative curvature margin is the exact small-height cardinality-five criterion.
 
-The cheapest unresolved scalar geometry is therefore two conjugate pairs plus one real point. Its vertical factors interact before the real-frequency average, so the independent-anchor reduction no longer applies. Derive its exact minimal criterion, including affine/multiplicity slack, and test the explicit separator there before enlarging the finite-real family or moving to higher cardinality.
+The remaining scalar question is genuinely finite-height. Analyze the full two-conjugate-pair-plus-one-real defect away from the local neighborhood, including affine/multiplicity slack, and test the explicit central-notch separator there. A decisive result is either an all-height extension of the curvature gate or an explicit finite-height two-pair witness. More finite-real configurations or another local expansion do not change this gate.
 
 ## Use unconditional out-of-band information only through a genuinely different zero-side carrier
 

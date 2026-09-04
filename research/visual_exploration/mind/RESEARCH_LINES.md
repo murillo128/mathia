@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Target residual Farey spectrum only after removing the exact endpoint fan and ordering/symmetry controls
+## Target residual Farey spectrum only after fixed endpoint controls are exhausted without subtracting the target arithmetic
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-026--VIS-027 show that same-gap permutation supplies an exact Brownian-bridge discrepancy baseline and reflection symmetry annihilates every odd Dirichlet mode. VIS-028 now shows that the classical unit-fraction endpoint fan independently forces an even-mode transition on the scale `r=Theta(n)` with an explicit continuum transform and non-negligible finite energy.
+VIS-026--VIS-027 give exact ordering and reflection controls. VIS-028 shows that the unit-fraction endpoint fan alone forces the `r=Theta(n)` modal scale, while VIS-029 proves that every pre-fixed fixed-`nx` endpoint window contains further bounded-numerator totient layers producing the same scale.
 
-The existence of an `r/n` modal collapse is therefore no longer a discriminating signal. Remove the exact endpoint fan, or preserve it in the matched ensemble, and only then test whether a stable even-mode/cross-band residual remains that requires denominator strata, mediant ancestry, long-range gap order, or another arithmetic mechanism beyond classical endpoint geometry.
+VIS-030 adds the control boundary: the full endpoint hierarchy is itself the Riesz/Cesaro mean of `phi(a)/a`, with exact summatory-totient, Möbius, and `zeta(s)/zeta(s+1)` descriptions. Therefore “subtract more endpoint layers until the residual stabilizes” is not automatically neutral. A decisive experiment should pre-register a finite collection of endpoint cutoffs and demand stability across them, or use a bulk statistic with a theorem making the complete fixed-`nx` endpoint contribution negligible without assuming the arithmetic cancellation under investigation.
 
 ## Target higher-order residuals only after deterministic and statistical closures are removed
 
