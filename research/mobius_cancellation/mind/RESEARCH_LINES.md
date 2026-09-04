@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Find a moving-comparator theorem whose uniform family budget is cheaper than the cancellation target
+## Find a moving-comparator theorem with power fidelity, transfer-compatible complexity, and coherent turnover
 
 **Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`, and `MI-008-moving-comparators-need-uniform-family-coherence`.
 
-Fixed real and complex comparator classes already transfer their cancellation exponent once the relevant global boundary relation is present. Moving characters can imitate Möbius at each finite scale, but MC-055--MC-061 show that this freedom is not free: exact and weighted prefix fidelity force conductor growth, distinct quadratic fits have quartic product-conductor repulsion, and one quadratic fit already makes the corresponding twisted-Möbius uniformity constant grow polynomially.
+Fixed real and complex comparator classes already transfer their cancellation exponent once the relevant global boundary relation is present. Moving characters can imitate Möbius at each finite scale, but MC-055--MC-061 show that this freedom consumes conductor and twisted-uniformity resources. MC-062--MC-063 further show that good subquadratic quadratic certificates cannot turn over freely: distinct identities are power-separated across scale.
 
-The live route is a source-forced moving family with one coherent theorem controlling cancellation constants, conductor/complexity growth, and inter-scale movement. Merely replacing a finite-prefix certificate at every scale cannot provide such a theorem.
+MC-064 adds the missing transfer calibration. Constant defect is not enough for a power saving; the weighted defect must decay polynomially, while the direct Burgess/square-divisor route has an `11/16` floor and imposes a conductor window tied to the desired exponent. The live route is therefore one source-forced family theorem that simultaneously supplies power-decaying fidelity, transfer-compatible conductor/complexity, and enough inter-scale persistence to cover the target range.
 
 ## Change smoothing only with a quantitative endpoint-visibility theorem
 
@@ -26,4 +26,4 @@ Natural positive norms expose RH-equivalent coarse modes when pieces are bounded
 
 **Linked intuitions:** `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`, `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`, and `MI-008-moving-comparators-need-uniform-family-coherence`.
 
-A metric may detect a target-scale defect while every known transfer overpays it. The character-prefix family makes the distinction explicit: finite coefficients can be nearly perfect while the boundary zero, global conductor, uniform cancellation constant, and cross-scale coherence remain invisible to the prefix.
+A metric may detect a target-scale defect while every known transfer overpays it. The character-prefix family makes the distinction explicit: finite coefficients can be nearly perfect while the boundary zero, global conductor, uniform cancellation constant, cross-scale coherence, and polynomial defect rate needed by the transfer remain invisible to the prefix.
