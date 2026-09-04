@@ -2,18 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Target source-specific zero-configuration or bridge residuals after complete disk and overlap reconstruction
+## Target higher-order or nonlocal residuals after analytic reconstruction and two-gap baselines
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-The regular local holomorphic-field channel now has exact controls on every obvious refinement. Zero-free nested circular shells are one Poisson orbit; the circular mean after zero entry is Jensen zero-counting; nonzero angular shell modes are exactly Poisson--Jensen angular moments of the same zero measure; and, after the zeros are supplied, full boundary modulus determines the disk field up to one global phase. Connected overlapping disk atlases do not add relative phase freedom: all local gauges glue to that same `U(1)` constant.
+Complete circular modulus/phase data, connected overlap gauges, and contour winding are already reconstructible from zeros, boundary data, and the argument principle. VIS-019 also makes raw adjacent-two-gap geometry a baseline: finite-size CUE plus known arithmetic corrections explain the dominant return-map and ratio structure.
 
-A decisive visual target must therefore carry information not reconstructible from the same complete zero/boundary data. Live possibilities include source-sensitive statistics of the zero configuration against matched point processes, separated-region bridge observables whose missing coupling is itself measurable, sparse/incomplete measurements with a nontrivial recovery theorem, non-holomorphic fields, or multi-object relations not reducible to analytic continuation of one underlying holomorphic function. More shells, angular modes, phase coloring, or connected overlapping centers are no longer independent leads.
+The next visual zero statistic must therefore be tested against a null that preserves the relevant lower-order laws. The existing proposed three-gap conditional-residual clue is an appropriate experiment because it removes both adjacent-pair marginals before comparing zeta with a matched finite-size RMT/arithmetic control. It remains a clue until such a residual is actually established.
+
+## Explore incomplete/separated measurements only when the missing coupling is explicit
+
+**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
+
+Sparse measurements or separated regions may retain a nontrivial bridge precisely because complete regular disk data reconstruct the field. Any such experiment must state what information was withheld and prove that the proposed bridge is not ordinary analytic continuation or divisor bookkeeping.
 
 ## Convert persistent visual residuals into exact handoff theorems
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-002 remains the model: a rendered Prime-Flute residual became an exact achievement-set theorem with a clear matched-control consequence. Future handoffs should similarly end in a support, rank, transition, conditioning, angular, cross-center, bridge, or scale-coupling theorem whose statement no longer depends on seeing the image.
-
-The gate is strict: apparent self-similarity, clustering, phase texture, finite jets, nested-shell coherence, zero-entry cusps, overlap alignment, or high average overlap are not durable evidence until the exact reconstruction baseline is removed and the owning research line's aggregate/operator statistic is proved to retain the residual.
+VIS-002 remains the model: a picture generated a theorem-grade support question and a clean handoff. Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, or scale-coupling statement independent of the rendering.

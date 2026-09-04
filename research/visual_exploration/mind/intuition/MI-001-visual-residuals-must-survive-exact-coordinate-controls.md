@@ -1,44 +1,35 @@
-# MI-001 — Visual residuals must survive exact coordinate, zero-source, boundary, phase, and gluing controls
+# MI-001 — Visual residuals must survive reconstruction and matched low-order statistical controls
 
-**Evidence level:** supported by exact artifact classifications and visualization-led theorem handoffs through VIS-017
+**Evidence level:** supported by exact artifact classifications through VIS-018 and literature-backed finite-size spacing baseline VIS-019
 
 ## Core intuition
 
-A visually strong pattern can be imposed by coordinates, reflection symmetry, the universal local normal form near a zero, reciprocal-zero moments, harmonic continuation, classical zero-counting, or reconstruction of the same holomorphic field in different gauges. The circular local program is now essentially closed as an independent information carrier: once the complete zero set and one boundary modulus are retained, the regular disk field is fixed up to one global phase, and connected overlapping disk atlases introduce no further phase degrees of freedom.
+Visual complexity is not an independent arithmetic resource when it can be reconstructed from coordinates, divisor data, regular holomorphic continuation, phase gauge, or established low-order zero statistics. The relevant object is always the residual after the strongest baseline that preserves the information already known to generate the picture.
 
-Visualization is therefore most useful as a theorem generator and falsification instrument. Durable evidence begins with the residual left after the exact representation and reconstruction baseline appropriate to the object has been quotiented out.
+The latest evidence moves that baseline beyond analytic reconstruction. Contour winding is exactly divisor count, and raw geometry of two consecutive unfolded gaps already belongs to finite-size random-matrix/arithmetic spacing theory. A visual candidate based on zero statistics must therefore preserve the relevant one- and two-gap laws before claiming a new higher-order pattern.
 
 ## Strongest justified principle
 
-VIS-001 gives the coordinate control: CRT-aligned survivor patterns can be exact tensor products. VIS-003 gives the asymptotic control: a visually small correction to a classical leading kernel can still be the term amplified by the downstream arithmetic aggregate. VIS-006 and VIS-011 show that critical-line modulus symmetries can be reflection-forced rather than arithmetic.
+VIS-013--VIS-017 classify complete circular modulus/phase data and connected overlap gluing as zero sources plus harmonic boundary data with one global `U(1)` gauge. VIS-018 closes the topological phase escape: argument-principle winding and local vortex charge are exactly enclosed zero/pole multiplicity.
 
-VIS-008 and VIS-012 close finite local-germ interpretations. After translation and multiplicity normalization every isolated zero portrait tends to a universal monomial, while fixed finite log-residual jets are reciprocal-power moments of the remaining zero set.
+VIS-019 adds the statistical control. Return maps of adjacent unfolded gaps, two-gap density plots, nearest-neighbor anti-correlation, and gap-ratio histograms have established finite-size CUE baselines; the literature even separates the leading finite-size correction from a smaller arithmetic correction in the ratio channel. Comparing such plots only with Poisson, shuffled gaps, or the infinite sine-kernel limit is therefore too weak.
 
-VIS-013--VIS-015 classify complete concentric log-modulus shells. Zero-free inner shells are one Poisson orbit; the circular mean after zero entry is Jensen's transform of centered zero distances; and every nonzero angular Fourier mode has an exact Poisson--Jensen source term equal to an angular moment of the entered zero measure. After those sources are removed, the remainder is harmonic boundary data. There is no additional circular-shell channel between the zero configuration and the boundary field.
-
-VIS-016 closes the corresponding phase escape. On a regular disk, the complete interior zero multiset plus full boundary modulus determines the holomorphic field up to one unimodular constant; the nonconstant phase modes of the zero-free factor are harmonic conjugates of the log modulus. VIS-017 then shows that an overlapping connected atlas collapses all local phase constants to one global `U(1)` gauge. Merely adding centers, shells, phase portraits, or overlap alignment reconstructs the same field rather than adding source information.
-
-VIS-002 remains the constructive standard: a Prime-Flute image generated an exact achievement-set theorem and a separate research-line handoff. The image mattered because it exposed a falsifiable residual not already determined by the rendering map.
+The proposed three-gap conditional-residual clue is correctly kept as a clue, not evidence: it asks whether anything remains after preserving both overlapping adjacent-pair marginals and the finite-size arithmetic/RMT baseline.
 
 ## What remains possible
 
-The live visual targets now lie outside complete reconstruction of one regular holomorphic field from local disk data. Candidates include source-sensitive statistics of the zero configuration tested against matched point processes, genuinely separated-region bridge data, deliberately incomplete or sparse measurements with a quantified recovery problem, non-holomorphic observables, higher-order relations among several objects, or representations whose residual survives the exact zero/boundary/gauge quotient.
-
-Cross-center structure remains interesting only when it is not merely a connected atlas of the same analytically reconstructed function.
+Higher-order or long-range zero statistics, deliberately incomplete measurements with a quantified recovery defect, separated-region bridge observables, and non-holomorphic/multi-object representations remain live. They earn promotion only after the lower-order reconstruction/statistical quotient is removed and a stable mathematical residual survives.
 
 ## Status / novelty
 
-Taylor normal forms, Hadamard moments, reflection symmetry, Poisson--Jensen, harmonic conjugacy, maximum-modulus uniqueness, and holomorphic gluing are classical. The synthesis is methodological but exact: **visual complexity of regular local disk portraits is not an independent arithmetic resource once zero-source, boundary, phase, and overlap reconstruction have been accounted for**.
+Complex-analysis reconstruction and finite-size random-matrix spacing theory are prior art. The synthesis is the strengthened visual gate: **match the complete generating baseline, including lower-order statistics, before interpreting residual geometry as arithmetic**.
 
 ## Falsification criterion
 
-Exhibit two holomorphic fields satisfying the VIS-016/017 hypotheses with the same complete local zero and boundary-modulus data on a connected overlap cover but differing by more than one global phase, or derive a source-specific visual invariant outside that complete reconstruction quotient that survives matched controls.
+Exhibit a visual invariant beyond the covered analytic reconstruction and two-gap baseline that separates zeta from controls preserving those same lower-order data, with a statement independent of rendering choices.
 
 ## Lean-formalizable core
 
-- CRT tensor factorization.
-- Reflection-forced critical-line parity.
-- Taylor-normalized reciprocal-moment identities.
-- Poisson--Jensen angular source decomposition.
-- Zero-set plus boundary-modulus uniqueness up to phase.
-- Collapse of local phase gauges along a connected overlap graph.
+- Argument-principle winding as divisor count.
+- Conditional/marginal information accounting for finite-order gap statistics.
+- Logical quotienting of reconstruction baselines before residual tests.

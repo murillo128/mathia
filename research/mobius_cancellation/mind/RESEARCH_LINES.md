@@ -2,38 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Find a polynomial ordinary-scale transfer mechanism rather than more qualitative decorrelation
+## Find a transfer theorem cheaper than the cancellation target
 
 **Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget` and `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`.
 
-Exact squarefree support, multiplicativity, strong aperiodicity, qualitative logarithmic correlations, and ordinary prime-harmonic pretentious closeness can coexist with large ordinary partial sums. MC-045--MC-046 make the endpoint failure explicit even across many later scales.
+MC-045--MC-047 separate ordinary endpoint blindness from strong power-aware detectability. MC-048 then shows that the older prime-only beta/Cauchy transfer pays a half-exponent loss and becomes nonuniform on the exact terminal-slab control. MC-049 rules out a broad fixed-completely-multiplicative shortcut: a globally Liouville-close comparator with the required power saving already forces the matching zeta zero-free region.
 
-MC-047 also closes an overgeneralization: the known strong power-aware pretentious carrier **does** detect that terminal-prime defect at the correct target normalization. The hard problem is therefore not to invent another distance that sees the control, but to obtain a strong power-aware relation to an independently cancellative arithmetic object, or a signed/bilinear transfer whose hypothesis is genuinely easier than the Mertens target.
+The live route must therefore use signed/bilinear cancellation, a genuinely different comparator category, or another source-specific transfer whose assumptions are demonstrably weaker than the Mertens/RH-scale conclusion.
 
-## Change smoothing with scale only with a quantitative endpoint-visibility theorem
+## Change smoothing only with a quantitative endpoint-visibility theorem
 
 **Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`, and `MI-007-growing-order-smoothing-can-hide-endpoint-information`.
 
-MC-042 proves that every fixed-order Riesz mean has the same critical divisor burden. MC-043--MC-044 show that growing order can manufacture a square-root-looking exponent through normalization and can suppress current endpoint blocks even after mass normalization.
+Growing-order Riesz smoothing can manufacture favorable exponents while delaying a terminal defect beyond the observed scale. Any changing-order carrier must prove when endpoint information re-enters or replace endpoint-vanishing smoothing by a source-faithful localization/inverse theorem.
 
-MC-046 turns the latter into an explicit multiscale law. For the exact-support terminal-prime control, order-`k` Riesz visibility begins only after the future-shift exponent crosses `beta_k^*=1-(alpha-1/2)/k`; with the current short-interval prime input, an entire bank of positive Riesz orders can remain subcritical throughout any fixed future window `X+X^beta` with `beta<14/15` after choosing the control appropriately.
+## Preserve signed cancellation in mean-absolute and scale-doubling arguments
 
-A viable changing-order carrier must therefore stay nonvacuous and either reach its source-dependent visibility horizon or replace endpoint-vanishing smoothing by localization, derivatives, translated kernels, or a source-specific inverse theorem. Formal invertibility of the full transform is not enough for a diagonal or short-window estimate.
+**Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information` and `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
 
-## Preserve cancellation while targeting mean-absolute Mertens size
+Natural positive norms expose RH-equivalent coarse modes when pieces are bounded separately. The Huxley--Watt annular residual remains live only as a coupled signed object capable of producing an iterable strict contraction with all losses controlled.
 
-**Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`.
-
-Separate Tanaka budgets fail on multiplicative character controls, while natural positive norms either become too strong or expose RH-equivalent coarse modes. The live object remains a signed multiscale carrier whose coarse projection is independently controlled rather than bounded separately after positivity has destroyed cancellation.
-
-## Turn the exact cutoff-face annulus into an iterable strict contraction without decoupling its coarse modes
-
-**Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`.
-
-Repeated squaring can amplify a true strict contraction, but the exact Huxley--Watt annular residual must supply that contraction with summable losses. Fixed Mellin modes and the radial zero mode expose RH-equivalent information when separated, so any useful iteration must retain coupled signed cancellation through the whole annulus.
-
-## Keep power-aware fidelity distinct from the comparator theorem
+## Keep power-aware fidelity distinct from comparator generation
 
 **Linked intuitions:** `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling` and `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`.
 
-Prime-power or sparse-prime corrections can preserve an RH-equivalent summatory criterion through absolutely summable convolution factors, and MC-047 shows that the strong power-aware carrier can faithfully measure a terminal defect. Neither fact supplies cancellation upstream. Classify source-natural corrections or comparators whose own power saving is independently available, and audit whether signed structure can beat the absolute convolution threshold rather than merely transport it.
+A metric may faithfully detect a target-scale defect while every known absolute transfer either overpays it or moves the RH burden into the comparator theorem. Search for source-natural signed structure rather than another similarity scalar.

@@ -1,44 +1,35 @@
-# MI-002 — Power-aware pretentiousness can repair endpoint blindness, but remains a transfer geometry rather than a cancellation source
+# MI-002 — Power-aware pretentiousness can detect endpoint defects, but transfer and comparator generation are separate RH-scale gates
 
-**Evidence level:** supported by MC-002--MC-003 and MC-045--MC-047 together with classical Halasz/Jung--Lemke Oliver theory
+**Evidence level:** supported by MC-002--MC-003 and MC-045--MC-049 together with classical Halasz, Jung--Lemke Oliver, and Aymone theory
 
 ## Core intuition
 
-The standard prime-harmonic pretentious scalar is too weak for power-scale cancellation: a coherent terminal prime slab can change a summatory function above square-root scale while remaining asymptotically invisible in the ordinary `1/p` metric, even when that metric is observed at many later scales.
+Ordinary prime-harmonic pretentiousness can be blind to a polynomial endpoint defect, while the stronger power-aware carrier can see the same terminal-prime perturbation at the correct normalization. That repairs detection, not cancellation.
 
-That blindness is not universal to pretentious methods. The strong power-aware convolution carrier weights changed primes at the target exponent and sees the same terminal slab at exactly the normalized endpoint-defect scale. The obstruction therefore moves from **detection** to **generation**: a metric can faithfully register a power-scale defect without supplying any independently cancellative comparator from which the desired bound follows.
+The next two findings make the separation sharper. Prime-only beta-pretentious transfer overpays the terminal slab through its Cauchy half-exponent loss, and a fixed completely multiplicative comparator that is globally Liouville-close and independently power-cancellative already forces the corresponding zeta zero-free region. **A stronger similarity metric or an apparently easier comparator is not leverage unless the transfer theorem is genuinely cheaper than the target.**
 
 ## Strongest justified principle
 
-MC-002 gives the basic ceiling: the ordinary Halasz/pretentious budget has only `O(log log x)` prime-harmonic mass and cannot generically generate a fixed polynomial saving. MC-003 shows that prime-power enrichment is real but reaches the canonical Möbius/Liouville square-convolution threshold exactly at `1/2`; absolute transfer preserves exponents only above that boundary.
+MC-045--MC-047 establish the detectability boundary. A terminal prime slab can make the ordinary partial sum polynomially too large while remaining invisible to the ordinary `1/p` metric; the strong prime-power convolution carrier detects it at target scale.
 
-MC-045--MC-046 strengthen the ordinary-metric control. An exact-support multiplicative sign twist on a terminal prime slab has a polynomially super-square-root partial-sum discrepancy throughout every sublinear future window, while its ordinary pretentious distance stays `o(1)` after the slab has entered. Repeating the same prime-harmonic quotient at more scales does not restore the missing endpoint information.
+MC-048 calibrates the classical prime-only beta route on that same matched control. To return exponent `1/2+epsilon`, its Cauchy transfer requires a much stronger prime weight and the corresponding weighted `L2` convolution norm becomes catastrophically nonuniform across the scale-dependent slab family. The strong carrier has the right information budget; the older transfer loses a half exponent.
 
-MC-047 then applies the Jung--Lemke Oliver strong `beta`-pretentious convolution quantity to the same control. For a slab with `P_X` changed primes near `X`,
-
-`H_beta(mu,nu_X) ~ 2 P_X / X^beta`,
-
-which is asymptotically the ordinary endpoint discrepancy divided by `X^beta`. A perturbation larger than the target power cannot remain strongly `beta`-close. Thus this stronger carrier repairs the specific information loss of MC-045.
-
-For a fixed sufficiently sparse prime-sign twist, the strong convolution kernels are absolutely summable throughout every half-plane `beta>1/2`, and RH-scale cancellation transfers both ways. Such a comparator inherits the same RH barrier rather than making it easier.
+MC-049 closes a different comparator escape. For a fixed real completely multiplicative `f` with power cancellation, finite global ordinary distance from Liouville forces `F(1)=0`; Aymone's theorem then yields a matching zeta zero-free half-plane. At RH scale, proving the comparator's cancellation under that global Liouville relation is already an RH-level theorem. Character controls show that cancellation alone is not the issue, and squarefree-supported/non-completely-multiplicative comparators remain outside this particular no-go.
 
 ## What remains possible
 
-A useful pretentious route must now find an independently controlled comparator or signed transfer mechanism whose strong power-aware relation to Möbius is provable without assuming an equally hard cancellation estimate. Localized, bilinear, or phase-sensitive structure beyond an absolute convolution norm may still matter.
-
-The terminal-slab control should continue to falsify ordinary prime-only metrics, but it should not be cited as evidence that all power-aware pretentious enrichments are blind.
+A live route must exploit signed convolution, bilinear structure, source-specific phase relations, or a comparator class whose cancellation theorem is independently weaker than the zeta conclusion. Power-aware fidelity can remain a diagnostic, but it must not be confused with the missing source of cancellation.
 
 ## Status / novelty
 
-Halasz theory, strong pretentiousness, sparse prime twists, Euler quotients, and convolution transfer are classical. The durable synthesis is the corrected boundary: **ordinary pretentiousness can lose endpoint power information; strong power-aware pretentiousness can retain it, but retention is still not an unconditional source of square-root cancellation**.
+The transfer theorems and zero-free implications are prior art; the terminal-slab calibrations are persisted exact controls. The synthesis is the detection/transfer separation: **seeing the right defect at the right scale is necessary but not sufficient; the downstream transfer budget must also be source-cheap**.
 
 ## Falsification criterion
 
-Construct a terminal-slab exact-support twist whose discrepancy is polynomially larger than `X^beta` while the MC-047 strong `beta` quantity stays uniformly small, or derive a power saving for Möbius from strong closeness to a comparator whose own required cancellation is not independently easier.
+Produce a source-natural comparator/transfer that is strongly close to Möbius at the target scale and whose independently proved cancellation does not already imply the same zero-free region, or a signed transfer that avoids the MC-048 absolute Cauchy cost on the terminal control.
 
 ## Lean-formalizable core
 
-- Ordinary prime-harmonic terminal-slab blindness.
-- Exact strong-convolution kernel for prime-sign twists.
-- Scale identity between `H_beta` and normalized endpoint discrepancy.
-- Two-sided sparse-twist power-cancellation transfer above the critical threshold.
+- Terminal-slab ordinary versus power-aware visibility.
+- Weighted `L2` Cauchy transfer exponent budget.
+- Euler-ratio implication from global Liouville distance to `F(1)=0` under power cancellation.

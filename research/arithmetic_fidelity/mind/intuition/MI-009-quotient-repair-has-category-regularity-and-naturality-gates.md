@@ -1,44 +1,38 @@
-# MI-009 — Quotient repair separates algebraic defect, finite visibility, uniform conditioning, bidual coherence, and coefficient-category survival
+# MI-009 — Quotient repair separates finite exactness, calibrated conditioning, bidual accessibility, and original-range assembly
 
-**Evidence level:** supported by AF-078--AF-098; exact in the stated Banach/Lipschitz-free categories
+**Evidence level:** supported by AF-078--AF-101; exact in the stated Banach/Lipschitz-free and tensor-norm categories
 
 ## Core intuition
 
-The question “can information be repaired after a quotient?” has several distinct levels even after the repair category is fixed. A defect may be algebraically nonrecoverable, positively separated from all recoverable data, invisible to every finite pointwise observation, recoverable on every finite subsystem only with diverging conditioning, or disappear after passing to a stronger coefficient category.
+Finite exact repair is a weak requirement. Once a source-forced norm budget is declared, finite scalar observations become complete witnesses of the interpolation cost; but even then the coherent object may live only in the bidual rather than the original target.
 
-The newer results identify the missing local-to-global resource precisely: **finite exact solvability is cheap; uniform finite conditioning is what can force coherent global recovery**. Compactness may first produce that recovery only in the canonical bidual, leaving original-range fidelity as a separate gate.
+The local-to-global problem is therefore quantitative and categorical: **budgeted finite visibility, bidual accessibility, and original-range realization are distinct gates**. A repair category or norm chosen after seeing the target can trivialize the defect and is not arithmetic fidelity.
 
 ## Strongest justified principle
 
-AF-093 identifies the Lipschitz-versus-linear defect as the operator quotient `L(Z_F,K)/ran R_{F,K}`. AF-094 shows that robust defect is distance to the norm closure of `ran R`; AF-095 identifies that margin with bounded annihilator witnesses. AF-096 then closes the tempting dual-coefficient escape: if `K=Y^*`, ultrasummand linearization makes the restriction map surjective and the complete defect vanishes.
+AF-093--AF-098 separate algebraic extension, norm-robust distance, finite pointwise invisibility, uniform finite interpolation cost, and bidual globalization. Every finite-dimensional restriction can be repaired exactly, while a uniform finite norm bound compactifies into a global `K**`-valued repair; for `1`-complemented targets the finite and original global optimal costs coincide.
 
-AF-097 adds a different topology. For every bounded `T:Z->K` and every finite-dimensional `E subset Z`, there is a global operator agreeing exactly with `T` on `E`. Hence extendable operators are pointwise/SOT/WOT dense even when they are not norm dense. A robust global defect can therefore be **exactly invisible at every fixed finite set of source points**.
+AF-099 makes the budget finitely observable. The uniform finite interpolation cost is exactly the supremum of finite matrix-coefficient polar ratios. Thus once the allowed norm is fixed, every failed budget has a finite scalar certificate even though unbudgeted finite value matching sees no defect.
 
-AF-098 restores a quantitative finite certificate. Let `e_E(T)` be the least ambient operator norm of an exact interpolant on `E`, let `lambda_fin=sup_E e_E(T)`, and let `lambda_**` and `lambda_K` be the optimal bidual- and target-valued global extension costs. Then
+AF-100 identifies the remaining range issue precisely. Bidual-optimal operators are weak-* accessible from genuine target-valued operators on finite data, but the original-target obstruction is measured by the bounded accessibility gauge, not by finite exactness. The gap is an exact range-accessibility defect.
 
-`lambda_** <= lambda_fin <= lambda_K`.
+AF-101 tensorizes that boundary. The genuine-target pair norm `alpha_{X,K}` lies between injective and projective tensor norms, while allowing bidual targets gives the projective norm exactly. Uniform finite accessibility for every bidual operator is equivalent to norm equivalence `alpha~pi`; the optimal constant is `sup pi/alpha`. If that constant is infinite, some bidual operator is genuinely inaccessible from the original target despite arbitrary finite weak-* approximation.
 
-Uniformly bounded finite repairs compactify into one `K**`-valued global repair. If `K` is `1`-complemented in `K**` — in particular if it is dual or reflexive — all three costs coincide. In that category, failure of a global extension is finitely detectable only after a norm budget is declared: the finite interpolation profile must diverge.
+## What remains possible
 
-## Evidence synthesis and boundaries
-
-Finite values alone do not see the defect; finite values plus a uniform conditioning budget can. Bidual coherence still need not imply original-range recovery for a general coefficient space, and none of these abstract extension theorems supplies arithmetic provenance, equivariance, positivity, locality, or a source-natural coefficient category.
-
-A positive arithmetic application must therefore specify the repair category, observation topology, coefficient category, allowed norm budget, and whether landing in a completion is acceptable. A family of unrelated finite witnesses is not evidence of a global repair unless its conditioning remains uniformly controlled.
+An arithmetic application should derive the coefficient space, repair category, and norm budget from the source, then prove a uniformly conditioned original-range assembly with the required naturality, order, positivity, locality, or equivariance. Landing in a completion can be legitimate only if the destination theorem actually lives there.
 
 ## Status / novelty
 
-Lipschitz-free spaces, Banach `Ext`, closed-range theory, Hahn--Banach, Banach--Alaoglu/Tychonoff compactness, biduals, and ultrasummands are classical. The persisted synthesis is the fidelity hierarchy: **algebraic defect, norm-robust defect, finite pointwise visibility, uniform finite conditioning, bidual coherence, and original-range recovery are genuinely different gates**.
+The functional analysis is classical. The durable synthesis is the exact hierarchy: **unbudgeted finite exactness is cheap; a calibrated budget makes finite scalar witnesses complete; global arithmetic fidelity still requires the correct range and natural assembly**.
 
 ## Falsification criterion
 
-Produce a target/category covered by AF-098 with uniformly bounded finite exact interpolation costs but no corresponding bidual extension, or a `1`-complemented target for which `lambda_fin` differs from the optimal global extension norm. An arithmetic application can evade the hierarchy only by justifying a different observation/repair category.
+Find a case covered by AF-099--AF-101 in which the finite polar formula misses the interpolation cost, or `alpha` and `pi` are uniformly equivalent while some bidual operator remains inaccessible at that constant. An arithmetic evasion must justify a different source-forced category.
 
 ## Lean-formalizable core
 
-- Operator-extension quotient and distance-to-range stability.
-- Pointwise finite interpolation of arbitrary bounded fiber operators.
-- SOT/WOT density versus norm closure.
-- `lambda_** <= lambda_fin <= lambda_K`.
-- Compactness globalization of uniformly bounded finite repairs.
-- Equality of finite and global costs for `1`-complemented bidual targets.
+- Finite interpolation polar duality.
+- Bidual accessibility gauge.
+- Tensor-norm sandwich `epsilon<=alpha<=pi`.
+- Equivalence between uniform accessibility and `alpha~pi`.

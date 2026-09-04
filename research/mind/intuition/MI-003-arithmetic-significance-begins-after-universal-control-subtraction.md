@@ -1,47 +1,42 @@
-# MI-003 — Arithmetic significance begins only after a control matches the claimed information layer and source regime
+# MI-003 — Arithmetic significance begins only after the complete destination control and source regime are matched
 
-**Evidence level:** supported
+**Evidence level:** supported across the current evidence-bearing lines
 
 ## Core intuition
 
-A critical exponent, positive kernel, resonance threshold, elegant spectrum, nonlinear coupling, exact selector, RH-equivalent criterion, or strong cancellation statistic is not arithmetic evidence merely because it arose from prime-labelled input. The control must match the same **measured quotient, interaction algebra, correlation/bulk layer, population normalization, operator ideal, functional calculus, topology, stability notion, cancellation budget, reference class, and source regime** used by the candidate.
+A prime-labelled construction is not arithmetic evidence until its matched control preserves the **entire information layer consumed by the final theorem**. Convenient bulk, local, asymptotic, or low-order controls can be too weak. The control must match the relevant finite configurations, boundary model, lower-order statistics, normalization, operator response, multiplicity quotient, transfer budget, and source constraints at the scale of the claim.
 
-There is now a second rule as important as strengthening a matched control: an abstract extremal control should also be tested against independent arithmetic constraints at the density and scale where it is meant to obstruct the real source.
+The recent evidence repeatedly turns an apparent survivor into a stronger control problem: finite clusters survive thermodynamic averaging, full-band diffraction defeats favorable local slopes, nonlocal Kron response can remain prime-blind, and low-order visual patterns require nulls preserving the same marginals that generated them.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity shows that the correct control is category-relative. Recent quotient-repair results sharpen this: a continuous homogeneous metric representative may exist beyond linear splitting, while global Lipschitz regularity or a bounded-linear tangent can force the split back. Matching “recoverability” without matching the regularity/naturality category is incomplete.
+Analytic Frontier now has an exact complete scalar control. ANF-018--ANF-020 replace long-lattice testing by the full finite-configuration stability/diffraction body; ANF-021 shows that even the locally favorable symplectic cusp fails at finite frequency. A control of the origin or thermodynamic bulk is not the complete destination control.
 
-Analytic Frontier adds an aggregation control. ANF-003--ANF-005 show that finite common-character pair-feature enrichments and convex moment lifts can collapse to one signed support-one profile, with a normalization slack forced by tiny configurations. The finite vector presentation is not a stronger information layer if the final affine certificate scalarizes.
+Arithmetic Fidelity adds calibration: after a source norm budget is fixed, finite matrix coefficients become complete witnesses of the interpolation cost, while original-range assembly remains a separate gate. Matching finite values without matching conditioning/category is incomplete.
 
-Prime Circle pushes the same test through local spectral complexity. PC-149--PC-152 identify pair and triple connected layers of the full chord operator with classical Hardy--Littlewood singular-series functionals. A nonlocal-looking spectral moment is still matched by a local-density control if its support strata factor that way.
+Prime Circle gives a post-processing control. PC-161--PC-162 show that a one-hole defect can become fully nonlocal after harmonic elimination while its entire fixed-base response remains identical along prime and matched composite refinements. Nonlocality does not restore provenance already erased by the input limit.
 
-Prime Flute has now resolved the reference boundary that was previously provisional. PF-162--PF-165 show that the selected bottom-Ruelle cusp coefficient and even its singularity order depend on the comparison reference, including compact changes, and no nonconstant analytic scalar normalization removes the residual interval. PF-166 further shows that the entire marked tail length function is asymptotically shared by an exact all-composite clone. Any surviving claim must live beyond both reference gauge and individual-orbit data.
+Visual Exploration extends matched controls to statistics. VIS-019 makes two-consecutive-gap geometry a finite-size RMT/arithmetic baseline; a higher-order claim must preserve those lower-order marginals rather than compare only with Poisson or shuffling.
 
-Prime Lattice gives a complementary positive control: PL-130--PL-132 show that arithmetic source identity can be recovered from reflection phase — even by finitely many samples for any fixed integer prefix — inside a Grosswald--Schnitzer family sharing the same zeta zero divisor. Source fidelity is real information but is not automatically zero selection.
+Weil Inertia sharpens source admissibility and quotient choice. Multiplicity-created zero modes are removed in WI-135, while WI-136 shows simple-real directions are charged by the full Lamzouri remainder and are not a free screen. The relevant control must match the corrected independent quotient, not a larger algebraic reservoir.
 
-Weil Inertia supplies the new source-admissibility lesson. Support-one screening remains an exact representation-level alias, yet WI-121 uses Fujii's unconditional number variance to rule out long exact double-density screening islands at positive zeta density. The alias still blocks reconstruction from the compressed matrix; what changes is the set of extremizers that actual zeta zeros can realize macroscopically.
+Xi Flow supplies a boundary-scale warning. XF-017 shows that a fixed-ratio localization obstruction disappears when the outer/inner capacity ratio grows; XF-018 changes the nonlinear leakage carrier to bounded cross-ratio/span data. The control must match the scalable boundary geometry actually used by the destination estimate.
 
-Weil Positivity continues the operator-category control: bulk-jump phase averaging and the later local/singular regularization results show that damping a visible endpoint does not remove the critical coherent prime-shell obstruction. A candidate must match the full positive geometry, not one asymptotic singularity.
+## Program consequence
 
-## A control ladder
-
-Controls should match the actual destination: admissible fibers; interaction closure; representation equivalences; source restrictions at the claimed density/scale; first- and higher-order stability; marking/provenance; finite/cumulative algebra; correlation support with weights and signs; deterministic/stochastic bulk; operator ideal/function; regularity/information geometry; quantitative transfer budget; reference orbit; and finally the sign, continuation, or zero theorem claimed.
-
-An abstract alias is decisive for nonidentifiability of the represented quotient. For claims about the actual source, also ask whether the extremal alias can satisfy independently known arithmetic constraints at the required frequency.
+For each proposal, identify the maximal admissible source fiber and then strengthen controls until they match the final finite/boundary/statistical/operator/transfer object. Separately test whether extremal controls are source-admissible at the claimed density and scale. A positive requires a residual that survives this complete family quantitatively; surviving a convenient subset is not evidence.
 
 ## Status / novelty
 
-The individual controls are rigorous persisted findings or literature-backed comparisons. Their hierarchy is synthesis, not a proof that surviving a control establishes arithmetic significance.
+The component controls are persisted findings or literature-backed specializations. Their hierarchy is synthesis, not a theorem that surviving all known controls proves arithmetic specificity.
 
 ## Falsification criterion
 
-For a concrete candidate, exhibit two systems matching every admissible input and exact readout layer on which the invariant depends and satisfying the same source-side constraints, but producing different claimed arithmetic behavior. Conversely, prove that an independently forced source theorem excludes all matched extremizers and converts the residual ambiguity into a quantitatively controlled exceptional set.
+Produce a candidate whose claimed source-specific invariant survives only because a known destination-relevant control was omitted, or conversely prove a source theorem that excludes every matched extremizer and leaves a quantitative residual in the exact final category.
 
 ## Lean-formalizable core
 
-- Equality on maximal admissible fibers implies equality of downstream invariants.
-- Scalarization/duality of finite feature families.
-- Reference-orbit invariance gates.
-- Logical separation of representation aliases from source-admissible extremizers.
-- Operator-functional-calculus and regularity-category controls.
+- Downstream invariance on maximal measured fibers.
+- Convex/control-family completion.
+- Post-processing monotonicity of lost provenance.
+- Conditional/marginal control matching.

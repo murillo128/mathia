@@ -1,47 +1,38 @@
-# MI-003 — Fixed-time Xi memory is mesoscopic and fractional, while ordinary self-similar localization is scale critical
+# MI-003 — Fixed-time Xi memory is mesoscopic; the live localization tradeoff is boundary capacity versus span control
 
-**Evidence level:** supported; finite-jet obstruction is proved under the simple double-collision hypothesis, mesoscopic scaling is exact for the linearized lattice model, nonlinear coercivity is used only through accepted findings in their stated regimes, and the self-similar localization obstruction is exact for the XF-016 cutoff class
+**Evidence level:** supported through XF-018; finite-jet and linearized-scale statements are exact in their stated regimes, XF-014's convergence repair has passed adversarial review, and the nonlinear localization identities are used only where the real-simple flow applies
 
 ## Core intuition
 
-Order-one heat-time memory at high Xi height lives on a growing mesoscopic field, not in a finite collision jet or bounded gap stencil. The universal linearized boundary model is a Cauchy/half-Laplacian flow, and `L log L` adjacent-gap data supply an endpoint carrier at the correct `h^2` amplitude without a diverging Hilbert-transform constant.
+Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. The Cauchy/`H^{1/2}` boundary model explains why a fixed-shape cutoff cannot make boundary leakage lower order, but the newer results show that this obstruction is not universal: a diverging capacitary buffer can reduce pure Cauchy leakage, and an uncentered localization renormalizes singular nonlinear conductances into a bounded cross-ratio kernel.
 
-The accepted nonlinear evidence shows that Cauchy-strength bulk coercivity can survive finite-amplitude gap deformation under an upper-gap envelope. But this does **not** make ordinary finite-window localization asymptotically exact. At the one-dimensional `H^{1/2}` endpoint, a fixed-shape self-similar cutoff has order-one boundary leakage on the same scale as the useful bulk term. The live problem is therefore source-specific control or cancellation of the exterior flux, or a genuinely non-self-similar localization architecture.
+The remaining burden has moved. It is no longer simply “control every small gap.” A successful source theorem must control the **large-gap/cumulative-span geometry and endpoint span/flux** needed to remove the neutral mean mode while retaining the small capacitary boundary budget.
 
 ## Strongest justified principle
 
-XF-006 rules out every robust finite collision jet as Xi-specific. XF-007--XF-010 identify the fixed-time scale: `Theta(log^2 T)` gaps, physical length `Theta(log T)`, Cauchy `|D|` dynamics, and failure of fixed-radius smooth stencils to retain the required phase at the `h^2` scale.
+XF-006 rules out every robust finite collision jet as Xi-specific; XF-007--XF-013 identify the mesoscopic `log^2 T` scale and the endpoint `L log L`/Cauchy carrier. The repaired XF-014 is now admissible evidence: telescoping gives the exact real-simple adjacent-gap diffusion and supports the finite-block identities without a uniform remote-gap bound.
 
-XF-011--XF-013 identify an endpoint carrier. Adjacent-gap `W^{1,p}` Lyapunovs approach the critical exponent with a logarithmic operator loss, while the Young function `Phi(s)=s log(e+s)` gives an exact Markov Lyapunov with raw `Theta(h^2)` scale and the Zygmund endpoint bound `H:L log L->L^1` controls the Cauchy driver with an `h`-independent constant.
+XF-015 supplies finite-amplitude bulk coercivity under its stated envelope hypotheses. XF-016 shows that a fixed-ratio self-similar cutoff is scale critical: useful bulk and boundary leakage remain the same order.
 
-XF-015 proves the accepted finite-amplitude bulk comparison in its stated envelope regime. Under `g_r<=Mh`, the relevant conductances dominate the inverse-square Cauchy conductances; small gaps cannot soften the controlled bulk. With two-sided envelopes the full inverse-square tail is quantitatively preserved.
+XF-017 breaks that fixed-ratio no-go. A logarithmic capacitary taper whose outer/inner ratio `R` diverges has Cauchy localization cost `O(1/log R)`. Thus the correct boundary model must include the scalable ratio; a fixed-shape obstruction is not fundamental.
 
-XF-016 closes the conventional cutoff escape and supplies the localization statement needed here directly. For a finitely supported weight `psi`, its exact localized gap identity splits into a positive quadratic bulk term plus the signed leakage
+XF-018 changes the nonlinear carrier again. Localizing the uncentered gap square gives leakage weight `w_ik=c_ik g_i g_k`, with `0<w_ik<=1`; for nonadjacent gaps it is a bounded cross-ratio function dominated by the exact Cauchy interaction of the physical gap intervals. Its far tails telescope to endpoint-gap/cumulative-span ratios without a lower bound on every remote gap. The price is the neutral constant-gap mode: subtracting the block mean introduces a span/endpoint term that still needs source control.
 
-`2 sum_{i<k} c_{ik}(psi_i-psi_k)^2 v_i v_k`.
+## What remains possible
 
-At the arithmetic-lattice linearization, sampling a fixed cutoff profile on an `N`-gap block sends both the useful quadratic term and this leakage to nonzero continuum `H^{1/2}` forms. There is no decaying power of `N`; weighted-mean centering still leaves nonzero leakage, and bounded gap envelopes give only an `O(1)` estimate rather than `o(1)`. At the fixed-time scale `N~log^2 T`, smooth self-similar tapering therefore cannot make the boundary lower order.
-
-The open adversarial sidecar on XF-014 is deliberately not used as accepted evidence here. Its challenged absolute-convergence justification remains outside this synthesis until that review is closed.
-
-## Evidence synthesis and boundaries
-
-The available bulk sign/coercivity mechanisms are universal matched controls. They do not constrain the de Bruijn--Newman constant without source information ensuring that the relevant Xi blocks have controlled large-gap excursions and that external interactions cancel or are quantitatively dominated.
-
-A viable localization may use a non-self-similar multiscale/capacitary taper with a diverging inner/outer scale ratio, source-specific signed correlation in the leakage term, overlapping windows with an exact cancellation identity, or a convergent renormalized global entropy. None is established by the current evidence.
+The live theorem should combine a slowly diverging capacitary buffer with Xi-specific control of endpoint gaps relative to cumulative spans and of the block-span/endpoint flux needed for centering. A positive would turn the existing bulk-minus-boundary identities into a fixed backward-time margin; a negative would exhibit source-compatible large-gap/span configurations that defeat every such assembly.
 
 ## Status / novelty
 
-Laguerre--Polya approximation, Cauchy semigroups, Zygmund endpoint bounds, Orlicz norms, fractional Poincare estimates, IMS-type localization, and `H^{1/2}` scale invariance are classical. The synthesis is the current scale-matching gate: **the endpoint carrier and accepted finite-amplitude bulk comparison exist, but fixed-shape localization cannot separate them from boundary leakage; source-specific or multiscale structure is still required**.
+Fractional localization, capacity, cross-ratios, and Cauchy interactions are classical. The synthesis is the moving boundary gate: **fixed-time memory is mesoscopic, fixed-ratio leakage can be beaten, and the nonlinear collision singularity can be renormalized; source-level span/flux control is now the bottleneck**.
 
 ## Falsification criterion
 
-Produce a fixed-shape self-similar cutoff in the XF-016 class whose boundary leakage is uniformly `o(1)` relative to the mesoscopic Cauchy scale under only the stated envelope/centering hypotheses, or derive an unconditional Xi-specific mesoscopic envelope/flux theorem strong enough to yield a fixed backward interval.
+Derive the required cumulative-span and endpoint-flux bounds from unconditional Xi data and close a fixed backward interval, or construct source-admissible real-simple configurations satisfying current mesoscopic constraints while violating those bounds strongly enough to erase the capacitary gain.
 
 ## Lean-formalizable core
 
-- Fixed-time `log^2 T` gap scaling.
-- `L log L` Markov contraction and endpoint Hilbert-transform transfer.
-- Bounded-envelope inverse-square bulk comparison in the accepted regime.
-- Exact XF-016 weighted localization identity.
-- `H^{1/2}` scale-critical cutoff cost.
+- Mesoscopic `log^2 T` scale.
+- Capacitary `O(1/log R)` cutoff cost.
+- Bounded cross-ratio leakage identity and telescoping tails.
+- Block variance as uncentered square minus span mode.

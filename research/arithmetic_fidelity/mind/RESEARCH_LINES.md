@@ -6,44 +6,36 @@ This file holds the current mathematical questions suggested by the durable arit
 
 **Linked intuitions:** `MI-001-fidelity-is-quotient-relative`.
 
-Given a compression and its mathematically forced observable class, determine the complete indistinguishability fiber and test whether the target discriminator is constant on it. Downstream optimization or spectralization cannot repair a target that varies inside that complete fiber unless genuinely new information is introduced.
+Determine the complete indistinguishability fiber induced by the source-forced observable class and test whether the target discriminator is constant on it. No downstream optimization can recover a target that varies inside that fiber without genuinely new information.
 
-## Characterize canonical relational lifts and their interaction support
+## Characterize canonical relational lifts and interaction support
 
 **Linked intuitions:** `MI-002-canonical-relational-lifts-can-restore-gauge` and `MI-006-interaction-support-governs-marginal-fidelity`.
 
-Determine when higher-order couplings, joint laws, compound-minor data, or other relational observables reduce the ambiguity exactly to the intended symmetry group. Complete low-order marginals remain a control: a target may live entirely in a missing interaction face even when every marginal is known.
+Determine when joint laws, higher-order couplings, compound minors, or other relational observables reduce ambiguity to the intended symmetry. Complete low-order marginals remain a control whenever the target lies in a missing interaction face.
 
-## Separate algebraic repair, finite visibility, conditioning, bidual coherence, and target-range recovery
+## Turn finite visibility into a source-calibrated original-range assembly theorem
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-007-stable-fidelity-is-distance-from-collision`, and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-AF-093--AF-096 classify the norm-level Lipschitz defect: algebraic nonextension, distance from the extendable range, bounded annihilator witnesses, and coefficient-category collapse are distinct. AF-097 adds a sharp observation-topology warning: every finite-dimensional restriction of an arbitrary bounded fiber operator has an exact ambient extension, so even a robust norm defect can be invisible to every finite pointwise test.
+AF-097--AF-101 now classify the interface sharply. Unbudgeted finite restrictions are always exactly repairable; after a norm budget is declared, finite matrix coefficients are complete polar witnesses for the interpolation cost. Uniform finite bounds produce bidual coherence, while original-range accessibility is an independent tensor-norm condition measured by the gap between the genuine-target norm `alpha` and the projective/bidual norm `pi`.
 
-AF-098 identifies the quantitative bridge. The worst finite exact interpolation cost dominates the optimal bidual extension cost and is dominated by the original-target extension cost. Uniformly bounded finite repairs therefore cohere, by compactness, into a global `K**`-valued repair; for dual/reflexive or more generally `1`-complemented targets the finite and global optimal costs coincide exactly.
+The live theorem is therefore not another finite observable. It is to derive the budget and category from the arithmetic source and prove `alpha~pi`, an equivalent uniformly conditioned assembly, or a robust source-natural obstruction. A completion-valued repair is insufficient when the destination requires the original range.
 
-A live arithmetic repair must therefore state what finite observations are available, what norm budget is source-forced, whether bidual landing is admissible, and how original-range, equivariance, order, positivity, or locality are retained. Per-cutoff exact solvability without a uniform conditioning theorem is not global fidelity.
-
-## Prove bridges between differential, average, formal, and zero-error fidelity only under explicit hypotheses
+## Keep fidelity endpoints category-explicit
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`.
 
-Determine when rank, conditional variance, statistical sufficiency, full jets, support confusability, and zero-error criteria imply one another after adding exact topological or quasianalytic assumptions. Category changes must be stated rather than inferred from analogy.
+Rank, conditional variance, statistical sufficiency, formal jets, support confusability, zero-error criteria, and Lipschitz/linear repair need not agree. Bridges between them require explicit topological or regularity hypotheses.
 
 ## Classify which analytic layer retains rational-prime norms
 
 **Linked intuitions:** `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`.
 
-The bare multiplicative monoid retains prime type but not rational-prime norms; stronger normalized analytic objects can recover more, while divisor/principal-part compression can forget zero-free factors. Compute the complete fiber at the exact destination used by a proposed mechanism and distinguish intrinsic completion data from constraints imposed after the target is known.
+Compute the complete fiber at the exact analytic destination and distinguish intrinsic rational-prime completion data from conditions introduced only after the target is known.
 
-## Determine which global test/source constraints make the measured span complete without programmable isolation
-
-**Linked intuitions:** `MI-005-test-family-fidelity-has-scale-and-dimension-gates`.
-
-For linear tests the exact retained object is the closed measured span and its annihilator. A positive must prove completeness in the actual source category without source-tuned programming; a negative is an admissible nonzero annihilator or alias.
-
-## Prove cross-scale compactness before promoting finite-resolution witnesses to compact-target fidelity
+## Prove cross-scale compactness for growing witness systems
 
 **Linked intuitions:** `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`.
 
-Compact-target consequence requires coherent nonescaping witnesses, not merely good finite witnesses at every cutoff. Derive precompact pooled witness families, vanishing widths, or an equivalent source-natural compactness theorem for any growing-window, increasing-degree, or refinement construction.
+Per-cutoff success is weaker than compact-target fidelity. Growing-window or increasing-degree constructions must derive precompact pooled witnesses, vanishing widths, or an equivalent source-natural compactness theorem.
