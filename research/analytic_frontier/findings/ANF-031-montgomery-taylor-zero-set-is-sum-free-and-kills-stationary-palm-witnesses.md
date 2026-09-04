@@ -1,6 +1,6 @@
 # ANF-031 — the Montgomery--Taylor zero set is sum-free and kills stationary Palm witnesses
 
-**Status:** `EXACT-DERIVED + ADDITIVE-RIGIDITY + DIFFRACTION-DUAL + NEGATIVE/OBSTRUCTION`. `ANF-030` shows that any normalized diffraction witness dominated by the sharp Montgomery--Taylor budget and possessing a positive Palm correlation measure must put all off-diagonal Palm pair mass on the real zero set `Z_MT` of the exact Montgomery--Taylor extremizer. The remaining stationary-process question in `ANF-030` can be closed exactly: the positive zero set is **strictly sum-free**. Consequently no real configuration with three distinct points can have all nonzero pair differences in `Z_MT`, and therefore no positive-intensity stationary point process can realize a diffraction measure dominated by the sharp budget.
+**Status:** `LITERATURE+DERIVED + EXACT-DERIVED + ADDITIVE-RIGIDITY + DIFFRACTION-DUAL + NEGATIVE/OBSTRUCTION`. `ANF-030` shows that any normalized diffraction witness dominated by the sharp Montgomery--Taylor budget and possessing a positive Palm correlation measure must put all off-diagonal Palm pair mass on the real zero set `Z_MT` of the exact Montgomery--Taylor extremizer. The remaining stationary-process question in `ANF-030` can be closed exactly: the positive zero set is **strictly sum-free**. Consequently no real configuration with three distinct points can have all nonzero pair differences in `Z_MT`, and therefore no positive-intensity stationary point process can realize a diffraction measure dominated by the sharp budget.
 
 Let
 
@@ -361,9 +361,17 @@ The surviving scalar problem has consequently become a **realizability/compactne
 
 ## 7. Prior-art and novelty boundary
 
-The load-bearing external input remains the exact Montgomery--Taylor / Carneiro--Chandee--Littmann--Milinovich extremizer already anchored in `SOURCES.md` and reconstructed in `ANF-030`. The present root classification and sum-free property are elementary consequences of its explicit formula (1), and the process contradiction uses only the standard Palm/Campbell interpretation already assumed in `ANF-030`.
+The load-bearing external input remains the exact Montgomery--Taylor / Carneiro--Chandee--Littmann--Milinovich extremizer already anchored in `SOURCES.md` and reconstructed in `ANF-030`. The root classification above is an exact derivation from its explicit formula, and the process contradiction uses only the standard Palm/Campbell interpretation already assumed in `ANF-030`.
 
-A targeted search around sine-type zero sets, roots of `x tan x = constant`, Fourier zero-set/difference-set constraints, spectral-set orthogonality, and point-process diffraction did not locate this exact additive exclusion for the Montgomery--Taylor extremizer. General sampling theory describes separated/asymptotically periodic zero sets, and spectral-set literature uses containments of the form `Lambda-Lambda subseteq Z(hat f) union {0}`, but neither supplies the strict sum-free property (5) for this zero set. No publication-level novelty claim is made, and no new external theorem is needed, so `SOURCES.md` is unchanged.
+The **sum-free conclusion itself is not new within the current public research-artifact prior art**. The repository `ainta/zeta-simple-zeros`, released as version `0.1.0` on 10 August 2026 and present at commit `040c5e899e658aed7b56a2a87f501798fe10761d` on 11 August 2026, derives the equivalent positive-zero equation
+
+\[
+x\tan(\pi x)=c>0
+\]
+
+for the optimized Montgomery--Taylor overlap kernel and proves directly by the tangent-addition formula that `x`, `y`, and `x+y` cannot all be positive zeros: otherwise one obtains `x^2+xy+y^2+c^2=0`. Its three-point certificate then uses the same bounded-triangle consequence to prove positivity of `k(u)^2+k(v)^2+k(u+v)^2` on `u,v>=0`, `u+v<=4`; a finite verifier supplies a quantitative lower bound. This artifact was already anchored in `SOURCES.md` as prior art for the consecutive-gap/block-defect mechanism.
+
+Accordingly, (5) should be classified as **public-artifact prior art plus an independent exact rederivation**, not as a Mathia novelty claim. What remains specific to the present finding is the complete branchwise root description (3)--(4), the monotone displacement proof (18)--(20), and especially the diffraction/Palm consequence (8), which turns the additive zero-set obstruction into a no-go for every positive-intensity stationary realization at the sharp Montgomery--Taylor budget. The Ainta repository describes itself as a research draft generated with GPT-5.6 Sol and invites independent verification; it is useful prior art, not peer review or an external correctness certificate for the present argument.
 
 ## 8. Decisive audit and next frontier
 
