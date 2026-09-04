@@ -177,3 +177,8 @@ This file records durable literature dependencies used to support or falsify fin
 ## Bloch time-reversal symmetry
 
 - Gianluca Panati, **Triviality of Bloch and Bloch-Dirac bundles**, *Annales Henri Poincaré* 8:5 (2007), 995–1011. DOI: 10.1007/s00023-007-0326-8. arXiv:math-ph/0601034. Role: standard periodic Bloch setting in which time-reversal symmetry pairs opposite quasimomenta; prior-art anchor for PC-159's classification of the exact `t <-> 1-t` Prime-Circle pencil symmetry as ordinary Bloch reality/time reversal rather than zeta-specific arithmetic structure.
+
+## Nonlocal Robin boundary operators and Dirichlet-to-Neumann spectra
+
+- Fritz Gesztesy and Marius Mitrea, **Nonlocal Robin Laplacians and some remarks on a paper by Filonov on eigenvalue inequalities**, *Journal of Differential Equations* 247:10 (2009), 2871–2896. DOI: 10.1016/j.jde.2009.07.007. arXiv:0812.2047. Role: standard self-adjoint local/nonlocal Robin boundary-operator framework on Lipschitz domains; primary prior-art anchor for the bounded generalized Robin class tested in PC-170.
+- Bruno Colbois, Alexandre Girouard, Carolyn Gordon and David Sher, **Some recent developments on the Steklov eigenvalue problem**, *Revista Matemática Complutense* 37 (2024), 1–161. DOI: 10.1007/s13163-023-00480-3. Role: standard Dirichlet-to-Neumann/Steklov framework and explicit unit-disk identity `D_B2 = sqrt(Delta_S1) = |D|`; prior-art anchor for the classical first-order unbounded boundary operator that saturates the refinement scaling in PC-170.
