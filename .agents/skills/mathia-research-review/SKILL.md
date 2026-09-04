@@ -290,6 +290,52 @@ A deleted finding is no longer part of the current research corpus even though r
 
 The current tree remains authoritative for whether a review is open.
 
+## Resumable adversarial scan batches
+
+Adversarial callers may checkpoint **scan coverage in Git commit messages** instead of creating a cursor file or other persistent run state. The checkpoint records repository history coverage, not a finding identity.
+
+At the start of a new/changed-finding scan:
+
+1. freeze the current default-branch commit as the immutable `scan target` for that pass; commits arriving after it belong to a later pass;
+2. find the most recent trustworthy adversarial coverage trailer, when one exists;
+3. inspect the Research-Watch-owned change stream after that coverage SHA through the frozen scan target in commit order;
+4. keep Owner replies waiting for adversary judgment at the higher priority defined by the calling adversarial skill, without confusing review-dialogue priority with scan coverage.
+
+Use exactly this trailer when persisting an advanced cursor:
+
+```text
+Adversarial-Reviewed-Through: <full-commit-sha>
+```
+
+The SHA is the **source/default-branch commit through which eligible research changes have been completely audited**. It is not the finding ID and it is not the adversarial commit's own SHA.
+
+The cursor may advance only across a **contiguous fully reviewed prefix** of the frozen history window. In particular:
+
+- every eligible new or materially changed canonical finding introduced by a source commit must be fully audited before the cursor may advance through that commit;
+- when one source commit changes several eligible findings, all of them must be audited before that commit can become the cursor;
+- never jump over a source commit containing an eligible finding that was only partially inspected or deferred;
+- if execution stops part-way through the eligible findings associated with one source commit, keep the cursor at the preceding fully covered commit;
+- commits after the frozen scan target never affect the truth of the cursor for the current pass; they are discovered in the next pass.
+
+### Batch publication
+
+Do **not** commit once per finding. Accumulate substantive sidecar/clue changes across several completed reviews or source commits and publish them as a small coherent batch. A batch boundary should be chosen when one of these is true:
+
+- several findings have been fully audited and there is material review state worth persisting;
+- a natural contiguous source-commit boundary has been completed;
+- the remaining execution budget is becoming too small to safely complete another finding plus refresh/publication gates;
+- an expensive next audit would put already completed material work at unnecessary risk of being lost.
+
+Before starting another finding, inspect the remaining execution/time/tool-call/token budget when the runtime exposes such a signal. Start another audit only when there is comfortable margin to finish its mathematical check, refresh the affected target, run the publication/path gates, and persist any resulting batch. When no explicit remaining-budget signal is available, use a conservative heuristic based on work already performed and the expected complexity of the next audit rather than continually starting one more finding.
+
+Before each batch commit, refresh every affected target and sidecar against the current default branch and re-run the ordinary turn, path, and publication gates. If a target changed after the frozen scan target, do not publish a stale objection unless it still applies to the current canonical target; the later source change itself remains outside the frozen window for the next pass.
+
+When a material batch also establishes new contiguous scan coverage, include `Adversarial-Reviewed-Through: <sha>` in that commit message using the furthest fully covered source commit. Multiple review transitions may therefore share one commit and one cursor advancement.
+
+Do **not** create an empty commit merely to persist scan progress. If a completed clean batch produces no repository change, commit nothing. A clean suffix may consequently be re-audited after interruption; this small amount of repeated computation is preferable to turning Git history into a run log. If the same run later accumulates a material batch, its trailer may advance across those previously completed clean commits as long as the whole prefix is genuinely covered.
+
+If no trailer exists yet, use the caller's existing legacy boundary rule for the transitional scan. The first later material batch that has a truthful contiguous coverage boundary may establish the trailer. Never infer or invent coverage for history that was not actually audited.
+
 ## Clues discovered during review
 
 A review may expose a valuable question or cross-connection that is **not itself the resolution of the reviewed claim**. Either participant may hand that off through `.agents/skills/mathia-research-clues/SKILL.md` when the caller has loaded that skill.
@@ -346,6 +392,8 @@ Before publishing any review-protocol change:
 5. verify any materially changed/replacement claim gets a new finding ID rather than `.v2` or silent repurposing;
 6. verify the diff contains no unauthorized mind, graph, prior-art, code, experiment, or unrelated changes;
 7. ensure every comment or persistence edit materially advances the mathematical dispute;
-8. ensure a convergence deletion follows the exact owner/adversary rules above.
+8. ensure a convergence deletion follows the exact owner/adversary rules above;
+9. when an adversarial commit carries `Adversarial-Reviewed-Through`, verify that the SHA is a truthful contiguous coverage boundary and that no eligible finding event through it remains partially reviewed or skipped;
+10. never create an empty commit solely to advance adversarial scan coverage.
 
 Review dialogue is not a run log. If nothing material changed, commit nothing.
