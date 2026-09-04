@@ -174,43 +174,114 @@ This yields the obstruction in a compact form:
 
 The theorem is one-sided in exactly the way a Lyapunov argument needs. A large *negative* boundary spike would only help an estimate of the form `E'<=0`; the obstruction is that every compression-sensitive centered convex entropy necessarily admits the opposite sign.
 
-## 4. Weighted-mean centering does not escape the obstruction
+## 4. Weighted-mean centering retains the obstruction for two broad explicit classes
 
-XF-016 observed that quadratic localization remains algebraically valid when the reference spacing is replaced by the weighted mean
+The fixed-reference theorem above does **not** by itself imply the same statement for an arbitrary family whose center moves with the weighted mean. If
 
 \[
 \mu_\alpha
-=\frac{\sum_i\alpha_i g_i}{\sum_i\alpha_i}.
+=\frac{\sum_i\alpha_i g_i}{A},
+\qquad
+A:=\sum_i\alpha_i,
 \tag{17}
 \]
 
-The present obstruction survives that normalization. Because `alpha_{r+1}=0`, changing the exterior gap `g_{r+1}=epsilon` does not change `mu_alpha`. Choose the finitely many interior gaps so that
+then differentiating an energy whose profile depends on `mu_alpha` produces an additional `mu_alpha'` term, and `mu_alpha'` can itself be of order `1/epsilon` in the boundary test. That term must be included rather than discarded. Two natural centered classes nevertheless retain the same positive collision obstruction exactly.
+
+First consider a translation-centered profile
 
 \[
-g_r=a<\mu_\alpha
+\Phi_h(g)=\varphi(g-h),
+\qquad
+\varphi\in C^1\text{ convex},
+\qquad
+\varphi'(0)=0,
 \tag{18}
 \]
 
-and use any differentiable convex centered profile whose derivative is negative at that compressed value. The additional derivative of the moving mean vanishes in the usual centered energy because the weighted deviations sum to zero, while the adjacent pair still contributes the same `+const/epsilon` spike.
-
-For the standard centered quadratic
+and set
 
 \[
-\Phi_h(g)=\frac12(g-h)^2,
+p_i:=\varphi'(g_i-\mu_\alpha),
 \qquad
-\Phi_h'(g)=g-h,
+\bar p:=\frac1A\sum_i\alpha_i p_i.
 \tag{19}
 \]
 
-any boundary gap `a<h` gives
+Choose the right support-edge gap `g_r=a`, hold all other supported gaps fixed, and let the first exterior gap `g_{r+1}=epsilon` tend to zero. From the exact conductance equation, the only singular supported-gap derivative is
 
 \[
-B_{r,r+1}(\epsilon)
-\sim\frac{2\alpha_r(h-a)}{\epsilon}>0.
+g_r'=-\frac{2}{\epsilon}+O(1),
+\qquad
+g_i'=O(1)\quad(i\ne r,\ \alpha_i>0),
 \tag{20}
 \]
 
-Thus the lower-gap/conductance concern in XF-016--XF-017 is not peculiar to the quadratic algebra or to a poor choice of fixed reference. It is forced by convex centering itself whenever compressed gaps are meant to carry positive entropy cost.
+so
+
+\[
+\mu_\alpha'=-\frac{2\alpha_r}{A\epsilon}+O(1).
+\tag{21}
+\]
+
+For
+
+\[
+E_\alpha=\sum_i\alpha_i\varphi(g_i-\mu_\alpha),
+\]
+
+exact differentiation therefore yields
+
+\[
+\boxed{
+E_\alpha'
+=\frac{2\alpha_r}{\epsilon}(\bar p-p_r)+O(1).
+}
+\tag{22}
+\]
+
+Thus the precise sign criterion is `bar p>p_r`. In particular, choose `g_r=a` as the smallest supported gap and choose every other supported gap larger than `mu_alpha`. If the compressed boundary value is genuinely detected so that
+
+\[
+p_r=\varphi'(a-\mu_\alpha)<0,
+\tag{23}
+\]
+
+then convexity and `varphi'(0)=0` give `p_i>=0>p_r` on the other supported gaps, hence `bar p-p_r>0`; the positive `1/epsilon` spike survives the moving-center correction.
+
+Second, let `f` be twice differentiable and convex and use the Bregman-centered profile
+
+\[
+\Phi_h(g)
+=f(g)-f(h)-f'(h)(g-h).
+\tag{24}
+\]
+
+Here
+
+\[
+\partial_h\Phi_h(g)=-f''(h)(g-h),
+\tag{25}
+\]
+
+so at `h=mu_alpha` the entire moving-center contribution cancels exactly:
+
+\[
+\sum_i\alpha_i\partial_h\Phi_h(g_i)
+=-f''(\mu_\alpha)\sum_i\alpha_i(g_i-\mu_\alpha)=0.
+\tag{26}
+\]
+
+Moreover
+
+\[
+\partial_g\Phi_h(g)=f'(g)-f'(h).
+\tag{27}
+\]
+
+Hence any support-edge value `a<mu_alpha` with `f'(a)<f'(mu_alpha)` has the same positive adjacent-collision pole as in the fixed-center argument. In particular, every `C^2` strictly convex generator has this property. The standard centered quadratic is the special case `f(g)=g^2/2`.
+
+So weighted-mean centering is **not** covered for an arbitrary differentiable `h`-dependent convex profile. What survives durably is the exact translation-centered sign criterion (22), together with the Bregman class in which the moving-center derivative cancels by the weighted-mean constraint. These classes are already broad enough to show that replacing the centered quadratic by a standard convex moving-center entropy does not automatically remove the boundary obstruction.
 
 ## 5. Why the uncentered carrier of XF-018 escapes the bad sign
 
@@ -220,28 +291,28 @@ The uncentered square deliberately violates the centering hypothesis. With
 \Phi(g)=\frac12g^2,
 \qquad
 \Phi'(g)=g>0,
-\tag{21}
+\tag{28}
 \]
 
 the same adjacent support-edge contribution is
 
 \[
 2\alpha_r\frac{\epsilon-a}{\epsilon},
-\tag{22}
+\tag{29}
 \]
 
 which tends to `-infinity` as `epsilon->0`. That singularity is harmless for an upper dissipation estimate. More importantly, XF-018 reorganizes the positive localization error so that the natural coefficient is
 
 \[
 w_{ik}=c_{ik}g_i g_k\le1,
-\tag{23}
+\tag{30}
 \]
 
 with the nonadjacent cross-ratio tails aggregated in XF-019 and made source-scale compatible in XF-020.
 
 Equation (16) therefore explains the carrier tradeoff structurally. **Centering before localization asks the entropy derivative to change sign below the equilibrium spacing; compact localization then converts that negative derivative into a positive collision pole.** Keeping the gap factor uncentered preserves the favorable sign and renormalizes the dangerous conductance, but leaves the neutral mean/span mode to be removed nonlocally.
 
-This strengthens the motivation for the XF-018--XF-020 route: the unresolved mean-removal problem is not an inconvenience that can obviously be bypassed by choosing a cleverer convex single-gap entropy. Within the compact convex class, the same collision obstruction reappears generically.
+This strengthens the motivation for the XF-018--XF-020 route: the unresolved mean-removal problem is not an inconvenience that can obviously be bypassed by choosing a cleverer convex single-gap entropy. Within the compact fixed-reference convex class, the collision obstruction is unavoidable; Section 4 shows that two broad standard moving-mean classes retain it as well.
 
 ## 6. Stress tests and exact boundary of the no-go
 

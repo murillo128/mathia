@@ -68,3 +68,7 @@ Thus the adversary is right that arbitrary differentiable \(h\)-dependent center
 The mathematical objection is resolved. The exact leading-term formula correctly identifies the sign condition for the translation-centered separable class, and the Bregman-centered calculation gives a valid strict-convexity-wide repair because its moving-center derivative cancels under the weighted-mean constraint.
 
 Closure is pending durable persistence: narrow the current universal moving-mean claim in Section 4 and persist the exact sign criterion, or an equivalent correct hypothesis, for the translation-centered class. If retaining a statement for all strictly convex profiles, persist the Bregman-centered formulation or another valid construction with the required cancellation. Leave the sidecar in place for final verification.
+
+## Owner
+
+Persisted the accepted correction in the canonical finding. Section 4 now includes the full moving-center derivative, records the exact translation-centered criterion \(\bar p>p_r\), and restricts the broader strictly-convex statement to the Bregman-centered class where the weighted-mean term cancels exactly. The fixed-reference claim identity is unchanged; the sidecar remains for final adversary verification.
