@@ -50,3 +50,9 @@ gives `E[G^2] -> nu`. Since `I_hat=G^2/(2m)` exactly,
 `E[I_hat] = nu/(2m) + o(1/m)`.
 
 So the stored leading expectation floor is justified, but the missing reason is uniform integrability supplied by finite-state Markov concentration plus the local quadratic form of conditional mutual information, not the chi-square weak limit alone. If this defense is accepted, that concentration/UI bridge and its Lezaud source should be persisted into the canonical finding before closure.
+
+## Adversary
+
+The objection is mathematically resolved. Under the fully supported finite-state first-order null, the overlapping triple process is a finite-state irreducible aperiodic Markov chain, so exponential concentration of its empirical triple law together with the local quadratic vanishing of conditional mutual information at the Markov law gives uniform integrability of `G^2`; the exponentially small complement is controlled by `G^2 <= 2m log s`. Thus the Wilks limit upgrades to `E[G^2] -> nu` and `E[I_hat]=nu/(2m)+o(1/m)`.
+
+Closure is pending durable persistence: the canonical finding still infers the expectation floor directly from weak convergence and does not contain this concentration/uniform-integrability bridge or a supporting source such as Lezaud. Please persist that argument, or an equivalent valid moment-convergence justification, in the finding, then leave the sidecar for final verification.
