@@ -1,6 +1,6 @@
 # WP-147 — Disjoint resultant chains force unbounded primitive two-sided inertia
 
-**Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE + PRIME-CIRCLE + CYCLOTOMIC-RESULTANT + CRITICAL-HALF-DENSITY + UNBOUNDED-PRIMITIVE-INERTIA + BOUNDED-CODIMENSION-OBSTRUCTION + FINITE-RANK-SCHUR-OBSTRUCTION + MATCHED-EQUAL-WEIGHT-CONTROL + PRIOR-ART-AUDITED` for attempts to repair the zero-order Prime-Circle resultant kernel of `WP-146` by a fixed number of global constraints or a fixed finite-dimensional auxiliary/archimedean sector.
+**Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE + PRIME-CIRCLE + CYCLOTOMIC-RESULTANT + CRITICAL-HALF-DENSITY + UNBOUNDED-PRIMITIVE-INERTIA + BOUNDED-CODIMENSION-OBSTRUCTION + FINITE-RANK-SCHUR-OBSTRUCTION + MATCHED-BLOCKWISE-EQUAL-WEIGHT-CONTROL + PRIOR-ART-AUDITED` for attempts to repair the zero-order Prime-Circle resultant kernel of `WP-146` by a fixed number of global constraints or a fixed finite-dimensional auxiliary/archimedean sector.
 
 `WP-146` exhibited one exact mixed-prime three-chain on which the normalized cyclotomic log-resultant kernel is indefinite after ordinary centering. That finite witness left a natural escape: perhaps a small global/cohomological constraint, or a finite-dimensional real-place sector coupled before the sign theorem, could remove the offending directions.
 
@@ -272,19 +272,30 @@ vanishes quadratically on `\mathbf1^\perp`. It therefore vanishes on the whole a
 
 This finding deliberately does **not** extend that conclusion to arbitrary diagonal corrections `d_m\delta_{mn}` or other full-rank modifications. Such terms act nontrivially on every block and can change (9); the sparse positive-completion problem for critical arithmetic data is a different route, already constrained elsewhere in this line by `WP-096`--`WP-107`. Nor does (20) cover corrections whose rank grows with the number of arithmetic shells.
 
-## 7. Matched control: equal edge weights do not generate the positive-index obstruction
+## 7. Matched control: equal edge weights remove the replicated blockwise positive directions
 
-The amplification is not caused merely by taking many disconnected three-node paths. Replace the arithmetic weights by a homogeneous control `x=y=w>0`. Then (9) has determinant zero and, equivalently, `WP-146` gives
+The amplification in Section 3 is not caused merely by taking many disconnected three-node paths. Replace the arithmetic weights **within each copy** by a homogeneous control `x=y=w>0`. On the same blockwise mean-zero space `U_r`, equation (9) then has determinant zero and `WP-146` gives
 
 \[
 a^TR_{w,w}a=-2w t^2\le0
-\qquad(a\perp\mathbf1).
+\qquad(a\in U_r).
 \tag{24}
 \]
 
-Every repeated control block is conditionally negative semidefinite, so their direct sum remains conditionally negative semidefinite. The unbounded **positive** primitive index in (14) appears only when the exact unequal prime labels `\log2/\sqrt2` and `\log3/\sqrt3` are restored.
+Therefore on the exact comparison subspace used in the amplification proof,
 
-The control therefore preserves block count, graph shape, centering, support sparsity, and replication mechanism while removing the arithmetic label asymmetry. It confirms that the two-sided primitive inertia is not a generic artifact of disconnected copies.
+\[
+\boxed{
+\left(\bigoplus_{j=1}^M R_{w,w}\right)\bigg|_{U_M}\preceq0,
+\qquad
+n_+\!\left(\left.\bigoplus_{j=1}^M R_{w,w}\right|_{U_M}\right)=0.
+}
+\tag{25}
+\]
+
+Restoring the unequal arithmetic labels `\log2/\sqrt2` and `\log3/\sqrt3` changes each block from seminegative on `U_r` to inertia `(1,1,0)`, producing the `M` independent positive directions used in (14). Thus the replicated positive-index lower bound is genuinely tied to the mixed-prime amplitude mismatch rather than block count alone.
+
+This control is deliberately **blockwise**, not a claim that a disconnected equal-weight kernel is CND on the entire global space `\mathbf1^\perp`. A globally mean-zero vector may have nonzero sum inside individual blocks, and zero cross-block coupling then leaves additional directions that are not tested by (24). The matched statement needed here is only that, on the same `U_M` which certifies (14), equalizing the arithmetic labels removes all of the replicated positive directions.
 
 ## 8. Novelty audit and relation to earlier Mathia no-go results
 
@@ -306,7 +317,7 @@ The surviving category is therefore narrower:
 \;\not\xrightarrow[\text{fixed finite global sector}]{\text{bounded constraints / finite-rank feedback}}
 \;\text{Weil-type geometric positivity}.
 }
-\tag{25}
+\tag{26}
 \]
 
 A viable continuation must change category before the sign theorem: for example, an intrinsically infinite-dimensional archimedean/cohomological sector, an unbounded-codimension but independently forced global quotient, or a nonseparable full-rank finite--archimedean modification that changes the resultant block itself while preserving its prime-power selector. Such a mechanism would still need to generate the Gamma/polar terms canonically and prove positivity independently of RH or inserted zero data.
