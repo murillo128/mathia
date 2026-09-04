@@ -1,36 +1,42 @@
-# MI-008 — Moving comparators need uniform family coherence, and character imitation pays conductor and twisted-uniformity costs
+# MI-008 — Moving comparators need coherent turnover and a transfer budget stronger than constant-defect imitation
 
-**Evidence level:** supported by MC-053--MC-061; the fixed-class transfers and Burgess/conductor barriers are theorem-level in their stated hypotheses
+**Evidence level:** supported by MC-053--MC-064; the fixed-class transfers, conductor repulsion, and Burgess/square-divisor transfer bounds are theorem-level in their stated hypotheses
 
 ## Core intuition
 
-Allowing a comparator to depend on observation scale is a real escape from fixed-comparator transfer theorems, but finite-prefix agreement plus a good exponent for each frozen object is too weak. The missing resource is a **uniform, scale-coherent cancellation certificate whose arithmetic complexity is cheaper than the Möbius estimate being sought**.
+Allowing a comparator to depend on observation scale is a real escape from fixed-comparator transfer theorems, but finite-prefix agreement plus a good exponent for each frozen object is too weak. The missing resource is a **uniform, scale-coherent cancellation certificate whose fidelity actually decays at the power rate required by the target transfer**.
 
-Dirichlet characters make this boundary increasingly rigid. They can imitate Möbius on a long prefix, but exact fidelity forces conductor growth, two competing quadratic certificates repel in conductor, and even one weighted quadratic fit transfers a large bias into a twisted Möbius sum.
+Quadratic characters make this boundary rigid in two independent ways. Good subquadratic fits cannot turn over freely from one nearby scale to the next, and the direct Burgess/square-divisor transfer itself has a method-specific exponent floor. Constant-defect imitation may force conductor geometry without yet transporting a power saving for Mertens.
 
 ## Strongest justified principle
 
-MC-053--MC-054 close broad fixed complex and completely multiplicative comparator classes by exponent transfer. MC-055--MC-056 show that moving quadratic characters can imitate a complete finite Möbius prefix while each frozen character has square-root cancellation, yet uniform constants and inter-scale replacement carry the hidden cost.
+MC-053--MC-061 establish the earlier family gate: fixed comparator classes transfer exponents; exact and weighted character imitation forces conductor growth; competing quadratic fits have product-conductor repulsion; and even one good quadratic fit forces a large twisted-Möbius uniformity cost.
 
-MC-057 makes exact quadratic interpolation quantitative: the conductor is eventually at least quadratic in the imitated prefix length. MC-058 shows that exact higher-order character imitation is much more expensive, with Burgess forcing conductor beyond `X^(4 sqrt(e)-o(1))` and in particular beyond `X^6` eventually in the stated regime. MC-059 proves that weighted approximate higher-order fidelity still retains a quartic conductor barrier.
+MC-062 converts pair repulsion into scale sparsity. For any fixed defect below one half and subquadratic conductor window `X<q<=X^kappa`, `kappa<2`, two good certificates at nearby bounded-ratio scales must use the same conductor. Thus a fresh good character cannot exist at every multiplicative scale.
 
-MC-060 adds pair repulsion: two weighted quadratic fits cannot both remain subquadratic when their aggregate defect is bounded away from one; their product conductor is `X^(4-o(1))` or larger. MC-061 supplies a different obstruction for a single comparator: weighted quadratic proximity to Möbius forces a linear Liouville-character bias and hence a polynomially growing twisted-Möbius uniformity constant for every fixed sublinear exponent.
+MC-063 strengthens this to power separation: distinct good certificates at scales `X<=Y` satisfy a lower bound of the form `Y >> X^(4/kappa-1-o(1))`. For `kappa<2` the turnover exponent is superlinear, so only very sparse fresh identities can occur along a long scale range.
+
+MC-064 adds the transfer audit. A weighted quadratic defect `A_X(chi)` gives
+
+`|M(X)| <= X A_X(chi) + X^(1/2) q^(3/16)`
+
+up to logarithmic factors in the stated squarefree setting. Because exact fidelity already forces `q>X`, this direct route cannot beat the method-specific exponent `11/16`; obtaining a target exponent `theta` additionally requires `A_X(chi)` to decay like `X^(theta-1)` and constrains the conductor accordingly. In the subquadratic regime needed below `7/8`, the MC-062--MC-063 turnover rigidity is therefore unavoidable.
 
 ## What remains possible
 
-A moving-comparator strategy must therefore be supported by a source-forced family theorem that simultaneously controls conductor growth, cancellation constants, and transitions between comparators. A family outside Dirichlet-character geometry may evade these exact barriers, but it must still expose an independently bounded complexity/uniformity resource rather than hide Mertens information in the moving certificate.
+A moving-comparator proof must derive a source-forced family whose defects decay at the required polynomial rate, whose conductors lie in the transfer-compatible window, and whose identities can remain coherent across the scales needed for the final Mertens estimate. A different comparator category may evade the character-specific exponents, but it must expose an independently bounded replacement/complexity resource rather than hide cancellation in the moving certificate.
 
 ## Status / novelty
 
-The transfer mechanisms, character interpolation, Burgess bounds, reciprocity, and square-divisor identities are classical or literature-backed. The synthesis is the uniformity gate: **prefix imitation consumes global family resources that per-object cancellation does not measure**.
+The transfer mechanisms, character interpolation, Burgess bounds, reciprocity, and square-divisor identities are classical or literature-backed. The synthesis is the two-resource gate: **moving fidelity must be strong enough for the transfer and coherent enough across scale; constant-defect per-scale approximation supplies neither conclusion by itself**.
 
 ## Falsification criterion
 
-Construct a scale-dependent comparator family with strong Möbius fidelity and a uniform complexity/cancellation budget provably weaker than the target Mertens bound, or show that one of the conductor/twisted-uniformity barriers fails under its stated hypotheses.
+Construct a scale-dependent comparator family with power-decaying Möbius defect, transfer-compatible complexity, and uniform inter-scale coverage whose total hypotheses are provably weaker than the Mertens exponent obtained, or invalidate one of the stated conductor/turnover/transfer bounds under its hypotheses.
 
 ## Lean-formalizable core
 
-- Exact/weighted character-prefix conductor lower bounds.
-- Product-conductor repulsion.
-- Prefix-fidelity lower bound on family constants.
-- Quadratic-fit implication for twisted Möbius bias.
+- Character-prefix conductor lower bounds.
+- Product-conductor and scale-turnover repulsion.
+- Quadratic defect to twisted/Mertens transfer inequality.
+- Separation between constant-defect sparsity and power-decaying transfer fidelity.
