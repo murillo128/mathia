@@ -64,7 +64,7 @@ A plot of `N(T)` against its Riemann–Siegel smooth phase baseline can be usefu
 
 This matters for a visual atlas because repeated structure across these views does not survive an independent representation change: it is forced by the counting identity. A candidate cross-view pattern must therefore use information not recoverable from this relation — for example modulus geometry away from the counting contour, local spacing data at a finer scale than Gram occupancy, or a prime/zero representation with an independently defined second channel.
 
-The result does **not** say that all Gram-point phenomena are equivalent to occupancy. Sign patterns of Hardy's `Z(g_n)`, magnitudes, local derivatives, and other analytic data can contain information not present in the occupancy count. The obstruction applies specifically to views determined by `N(g_n)`, `S(g_n)`, and their first differences.
+The result does **not** say that all Gram-point phenomena are equivalent to occupancy. VIS-022 sharpens this boundary by showing that the sampled sign pattern of Hardy's `Z(g_n)` is itself only a parity quotient of the occupancy sequence. Magnitudes, local derivatives, extrema, within-interval analytic shape, and other data not determined by occupancy remain potentially independent channels.
 
 ## Prior art and novelty assessment
 
@@ -84,4 +84,4 @@ A local inspection plot of the Gram discrepancy and exceptional occupancies was 
 
 ## Research consequence
 
-`CLUE-zeta-rh-canonical-visual-atlas` should remain live but with an explicit independence quotient: zero-counting staircase residuals, `S(T)` sampled at Gram points, and Gram-interval occupancy belong to one counting/argument family. A minimal canonical atlas should prefer representatives from mathematically non-recoverable families rather than count these as independent views.
+`CLUE-zeta-rh-canonical-visual-atlas` should remain live but with an explicit independence quotient: zero-counting staircase residuals, `S(T)` sampled at Gram points, and Gram-interval occupancy belong to one counting/argument family. VIS-022 further shows that Gram-sampled `Z` sign is a deterministic parity quotient of that family. A minimal canonical atlas should prefer representatives from mathematically non-recoverable families rather than count these as independent views.
