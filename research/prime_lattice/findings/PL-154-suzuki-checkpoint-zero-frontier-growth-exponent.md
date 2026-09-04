@@ -104,9 +104,9 @@ This part uses the zero-series and the completed logarithmic derivative, not an 
 
 ## Each sign separately has the same exponential order
 
-The stronger statement is that neither sign can have smaller exponential order than the full function.
+The stronger statement is that neither sign can have smaller exponential order than the full function. The zero-series estimate already gives both one-sided bounds with exponent `theta`, so it remains only to rule out a one-sided bound with exponent `delta<theta`.
 
-Assume for some `delta>=0` that
+Fix `0<=delta<theta`. Since `theta<=1/2`, necessarily `delta<1/2`. Assume first that
 
 `Psi(t) <= C exp(delta t)`
 
@@ -114,7 +114,7 @@ for all `t>=T`. Define the nonnegative tail
 
 `h_+(t) = (C exp(delta t)-Psi(t)) 1_[T,infinity)(t)`.
 
-For `Re(a)>1/2`, its Laplace transform is
+For `Re(a)>1/2`, this is an identity for the **actual Laplace transform** because both Suzuki's transform of `Psi` and the majorant integral converge there, the latter since `Re(a)>1/2>delta`:
 
 `H_+(a)`
 
@@ -124,29 +124,27 @@ For `Re(a)>1/2`, its Laplace transform is
 
 `  + integral_0^T Psi(t) exp(-a t) dt`.
 
-The finite integral is entire. The explicit meromorphic continuation has no real singularity to the right of `delta`: the only new majorant pole is at `a=delta`, while `xi` has no real zero with `s>1/2`; the removable/known completed singular behavior at `a=0` is also not to the right of `delta`.
+The finite integral is entire. The right-hand side gives a meromorphic continuation beyond the initial convergence half-plane and has no real singularity strictly to the right of `delta`: the only new majorant pole is at `a=delta`, while `xi` has no real zero with `s>1/2`; the removable/known completed singular behavior at `a=0` is also not to the right of `delta`.
 
-Let `sigma_c` be the abscissa of convergence of the nonnegative Laplace transform of `h_+`. If `sigma_c>delta`, Landau's boundary-singularity theorem says that the real point `a=sigma_c` must be a singularity of the analytic function represented by the transform. The displayed continuation is analytic there, contradiction. Thus
+Let `sigma_c` be the abscissa of convergence of the nonnegative Laplace transform of `h_+`. The genuine convergence just established gives `sigma_c<=1/2`. If `sigma_c>delta`, Landau's boundary-singularity theorem says that the real point `a=sigma_c` must be a singularity of the analytic function represented by the transform. But `sigma_c` is strictly to the right of `delta`, where the displayed continuation is analytic on the real axis, contradiction. Thus
 
 `sigma_c <= delta`.
 
-Consequently the actual nonnegative-tail transform is holomorphic throughout `Re(a)>delta`. If a zeta zero satisfied
+Consequently the actual nonnegative-tail transform is holomorphic throughout `Re(a)>delta`. Because `delta<theta`, by the definition of `theta` there is a zeta zero satisfying
 
-`Re(rho)-1/2 > delta`,
+`Re(rho)-1/2 > delta`.
 
-then `-F(a)` would contribute a genuine nonreal pole at `a=rho-1/2`; neither the exponential majorant term nor the finite initial integral can cancel it. Hence no such zero exists and
+At `a=rho-1/2`, the term `-F(a)` has a genuine nonreal logarithmic-derivative pole; neither the exponential majorant term nor the finite initial integral can cancel it. This contradicts holomorphy of the actual transform in `Re(a)>delta`. Therefore no eventual upper bound with exponent `delta<theta` exists.
 
-`theta <= delta`.
-
-Since the zero-series already gives the two-sided estimate `Psi(t)<<exp(theta t)`, the optimal upper one-sided exponent is exactly `theta`.
-
-The lower side is identical. If
+The lower side is identical. If for some `0<=delta<theta`
 
 `Psi(t) >= -C exp(delta t)`
 
-eventually, apply the same argument to
+eventually, then `delta<1/2` and the actual transform of
 
-`h_-(t)=(C exp(delta t)+Psi(t))1_[T,infinity)(t)`.
+`h_-(t)=(C exp(delta t)+Psi(t))1_[T,infinity)(t)`
+
+has the corresponding identity on the common genuine convergence half-plane `Re(a)>1/2`. The same Landau argument forces its abscissa of convergence to be at most `delta`, after which a zero with `Re(rho)-1/2>delta` produces the same impossible nonreal pole.
 
 Therefore
 
@@ -155,6 +153,8 @@ Therefore
 and
 
 `inf { delta>=0 : Psi(t) >= -C exp(delta t) eventually } = theta`.
+
+For exponents `delta>=theta` the inequality `theta<=delta` is of course already automatic; the Landau contradiction is needed only in the strict range `delta<theta`, which is why the initial transform identity never requires integrating `exp(delta t)` outside its convergence domain.
 
 This quantitatively strengthens the `delta=0` Landau argument in `PL-153`. If RH fails, the positive and negative parts cannot merely be unbounded: **each has exponential order exactly equal to the distance of the rightmost zero frontier from the critical line.**
 
@@ -259,6 +259,8 @@ That absence is not evidence of novelty. The continuous growth statement is a di
 6. **The half-axis is inserted by completion.** The equality measures displacement from `Re(s)=1/2`; it does not explain from the abstract exponent lattice why the completed normalization must be centered there.
 
 7. **The limsup formula concerns power-growth exponent, not a pointwise asymptotic.** It does not assert `E(q)` is comparable to `q^theta`, nor that a rightmost zero exists when `Theta` is only a supremum. It says every exponent below `theta` fails as a one-sided eventual bound, while exponent `theta` is sufficient.
+
+8. **The positive-transform identity is used only on its genuine convergence half-plane.** In the contradiction step one fixes `delta<theta<=1/2`, hence `delta<1/2`; therefore `Re(a)>1/2` is simultaneously inside Suzuki's initial transform domain and the majorant-transform domain `Re(a)>delta`. The continuation is invoked only after equality with the actual nonnegative Laplace transform has been established there.
 
 ## Consequence for the research line
 
