@@ -1,37 +1,38 @@
-# MI-001 — Visual residuals must survive deterministic quotients, matched statistical closures, and interaction-orientation loss
+# MI-001 — Visual residuals must survive deterministic quotients, matched statistical closures, and structure-preserving ordering controls
 
-**Evidence level:** supported through VIS-025 by exact reconstruction identities, accepted three-gap Markov geometry, and classical contingency/correspondence analysis
+**Evidence level:** supported through VIS-027 by exact reconstruction identities, classical Markov/contingency geometry, and finite-population discrepancy controls
 
 ## Core intuition
 
-Visual complexity is not an independent arithmetic resource when it can be reconstructed from ordinary coordinates, divisor data, phase gauge, or a lower-order statistical closure. The meaningful object is the residual after the strongest deterministic and statistical baseline preserving the information already known to generate the picture.
+Visual complexity is not an independent arithmetic resource when it can be reconstructed from ordinary coordinates, divisor data, phase gauge, a lower-order statistical closure, or a simple symmetry/order baseline. The meaningful object is the residual after the strongest deterministic and statistical control preserving the information already known to generate the picture.
 
-The three-gap program now has an exact classical interpretation. Conditional mutual information is the likelihood-ratio statistic for first- versus second-order Markov structure; its local residual fibers are weighted contingency-table interaction spaces; and their singular values are correspondence-analysis invariants. This is useful geometry, but it is not automatically zeta-specific and its scalar singular spectrum forgets interaction orientation.
+The recent discrepancy results add an especially clean principle: hold the **entire gap multiset fixed** and randomize only its order. If an observed cancellation survives that control, then it genuinely lives in ordering/coupling rather than in the one-gap distribution. Symmetries of the ordered set must then be conditioned as well before missing spectral modes are called arithmetic.
 
 ## Strongest justified principle
 
 VIS-013--VIS-018 classify complete circular modulus/phase data, overlap gluing, and winding as ordinary analytic/divisor information plus gauge. VIS-021--VIS-022 show that Gram occupancy and sampled `S` are equivalent up to one initial count, while Hardy-`Z` signs retain only occupancy parity.
 
-VIS-019--VIS-020 identify the matched statistical closure from overlapping pair marginals. VIS-023, after adversarial acceptance, makes the test exact: for binned three-gap data, `2m I_hat` is the Markov-order likelihood-ratio statistic with the standard chi-square dimension, and the plug-in null has the corresponding `1/m` finite-sample floor.
+VIS-019--VIS-025 classify the first three-gap residual. CMI is the Markov-order likelihood-ratio statistic; Pearson whitening gives the conditional interaction fiber; correspondence-analysis singular values give its canonical scalar geometry but discard interaction orientation. A source claim must therefore survive the matched pair-marginal closure and retain any orientation information it actually needs.
 
-VIS-024 resolves the residual fiber: after fixing the middle bin, the Pearson-whitened interaction has zero weighted row/column marginals and its quadratic norm is the second-order approximation to `2I`. VIS-025 identifies this fiber with correspondence analysis. Its singular values are invariant under orthonormal contrasts and relabeling and preserve total Pearson energy, but they are not lossless because left/right interaction orientation is discarded.
+VIS-026 supplies an orthogonal ordering control. For any fixed centered gap multiset, the discrepancy path under a uniform permutation has an exact Brownian-bridge covariance and an exact mean `L^2` energy determined only by the gap variance. Comparing the original energy to that baseline isolates ordering information without changing any individual gap.
+
+VIS-027 strengthens the control by conditioning on reflection symmetry. Reflection forces the discrepancy path antisymmetric and annihilates every odd Dirichlet sine mode exactly; that checkerboard spectral pattern is therefore a symmetry artifact. A reflection-preserving same-gap permutation has an exact baseline still much larger than the tested finite Farey energies, so the residual suppression survives this stronger null but is not yet mechanistically identified. The remaining information lies in even-mode/cross-scale ordering relations beyond gap multiset plus reflection.
 
 ## What remains possible
 
-A zeta-specific higher-order residual must survive finite-sample calibration, partition/binning changes, CUE/arithmetic controls, and pair-marginal Markov closure. If orientation is load-bearing, the handoff must retain the relevant singular vectors or an invariant coupling between fibers rather than only CMI or singular values.
+A source-specific higher-order residual must survive finite-sample calibration, partition/binning changes, CUE/arithmetic controls, pair-marginal Markov closure, same-gap permutation, and every exact symmetry admitted by the source. For Farey-type discrepancy, the next null should progressively preserve local adjacency and denominator/mediant structure while measuring only the residual even-mode or cross-scale coupling. If orientation is load-bearing in three-gap data, retain singular vectors or cross-fiber couplings rather than only scalar singular values.
 
 ## Status / novelty
 
-Likelihood-ratio Markov tests, Pearson residuals, correspondence analysis, maximum entropy, and Gram identities are classical or exact persisted derivations. The synthesis is the visual gate: **a statistically significant residual becomes arithmetic evidence only after its classical interaction geometry and information losses are fully accounted for**.
+Likelihood-ratio Markov tests, Pearson residuals, correspondence analysis, finite-population bridges, path Laplacians, and reflection parity are classical or exact persisted derivations. The synthesis is the visual gate: **a residual becomes arithmetic evidence only after deterministic recodings, lower-order statistics, full marginal distributions, ordering baselines, and exact symmetries have been conditioned away**.
 
 ## Falsification criterion
 
-Exhibit a three-gap or higher-order residual that remains stable across the stated controls and carries source information absent from the full matched Markov/contingency closure, with any orientation-dependent information retained explicitly.
+Exhibit a visual residual that remains stable across the stated controls and carries source information absent from the complete matched closure, or show that the apparent residual collapses once a stronger structure-preserving ordering/symmetry null is imposed.
 
 ## Lean-formalizable core
 
 - Gram occupancy/S/parity quotient.
-- Markov maximum-entropy closure.
-- CMI likelihood-ratio identity.
-- Pearson interaction subspace.
-- Correspondence-analysis singular-value quotient.
+- Markov maximum-entropy and Pearson interaction fiber.
+- Same-gap permutation Brownian-bridge covariance and `L^2` baseline.
+- Reflection parity filter and reflection-conditioned permutation baseline.
