@@ -1,40 +1,42 @@
-# MI-008 — Completed positivity reduces to an axis-event sign problem; generic outward transport and mixed-lattice enrichment do not solve it
+# MI-008 — Completed positivity reduces to an axis-event sign problem; scalar completions and recovery dynamics do not explain it
 
-**Evidence level:** supported by exact literature-backed kernel, screw, Volterra, and checkpoint reductions through PL-146
+**Evidence level:** supported by exact literature-backed kernel, screw, Volterra, checkpoint, weighted-Chebyshev, Hankel, and workload reductions through PL-149
 
 ## Core intuition
 
-Prime-exponent geometry carries genuine positive structures on both sides of the completion boundary, but the completed RH-sensitive scalar remains a sign problem that is already visible on the prime-power axis skeleton. Native Euler/Bohr positivity is generic; completed screw/CND positivity is RH-equivalent; outward Volterra transport preserves positivity only toward easier half-planes.
+Prime-exponent geometry carries genuine positive structures on both sides of the completion boundary, but the completed RH-sensitive content remains a sign problem already visible on the prime-power axis skeleton. Native Euler/Bohr positivity is generic; completed screw/CND positivity is RH-equivalent; outward Volterra transport points toward easier half-planes; and several stronger-looking scalar enrichments turn out to be alternative encodings of the same completed one-variable problem.
 
-PL-146 adds a decisive compression statement: Suzuki's entire scalar criterion is piecewise strictly convex between ordered prime-power events and is summarized there by only two cumulative axis states. Mixed exponent vectors are invisible to this channel unless they supply an independent theorem constraining those axis events or the archimedean clock.
+The new evidence closes three tempting interpretations. An axis-supported weighted-Chebyshev criterion can itself be RH-equivalent, so mixed-coordinate geometry is not required for logical equivalence. Suzuki's Hankel/Stieltjes moment route is a completed `s=1` jet whose raw prime-ray moments diverge before global cancellation. And the workload associated with the completed checkpoint process changes sign infinitely often unconditionally, so recurrent recovery events are continuation-generic rather than a zero-localization mechanism.
 
 ## Strongest justified principle
 
-PL-142--PL-143 classify the native HLS kernel. Complete Pick fails on a finite two-prime face, while all positive kernel powers remain positive and `log K` is a generic prime-power compound-Poisson carrier. This does not cross the Euler-product boundary.
+PL-142--PL-144 classify native versus completed positivity. The native HLS kernel remains in the Euler region, while Suzuki screw/Schoenberg/Lévy positivity on the completed scalar is already equivalent to RH.
 
-PL-144 identifies the completed side. Suzuki screw positivity, Schoenberg negative type, and Nakamura--Suzuki Lévy/infinite-divisibility formulations collapse to the same zero-sensitive architecture; for the actual completed zeta function the scalar condition `Psi(t)>=0` is already equivalent to RH.
+PL-145 gives the directional obstruction: the shifted screw family preserves positivity only outward toward safer half-planes, while the inverse direction needed for RH is not order preserving. PL-146 compresses the completed scalar to one strictly convex minimum per prime-power interval with two cumulative states and vanishing possible checkpoint reserves.
 
-PL-145 exposes the directionality. The shifted screw family is a positivity-preserving Volterra semigroup only outward toward safer zero-free half-planes. Its inverse is not order preserving, so the route from the unconditional shifted endpoint back to the RH endpoint requires an extra zeta-specific theorem.
+PL-147 shows that an RH-equivalent sign criterion can live entirely on the weighted prime-power axis. The critical half-weight and pole subtraction are already built into the scalar completion; axis support therefore demonstrates logical sufficiency, not an explanatory source of the half-axis or sign.
 
-PL-146 reduces that theorem to exact prime-power checkpoint dynamics. Between consecutive prime powers, `Psi(t)=R(t)-P_j t+Q_j` is strictly convex. The continuum condition is therefore equivalent to nonnegativity of one constrained minimum per interval, and under the clock `tau=R'(t)` the workload `Y=-Psi'` has unit negative drift with positive jumps `log p/p^{k/2}` at `q=p^k`. The whole finite-place history seen by this scalar channel is compressed to `(P_j,Q_j)` on the axis rays.
+PL-148 classicalizes the natural Hankel lift. The completed moments are derivatives of the same globally completed xi/log-derivative object near `s=1`, while termwise prime-ray moments and the leading archimedean piece diverge separately. Finite moment positivity exists only after the cancellation/completion that already contains the difficult analytic structure.
 
-The same finding also rules out a tempting strengthening. Under RH the zero expansion of `Psi` is recurrent enough that `liminf Psi(t)=0`, hence the checkpoint margins have infimum zero. A uniform positive reserve is not the missing theorem; the required statement is a no-crossing result with vanishing reserves.
+PL-149 separates event recurrence from event sign. The checkpoint workload has infinitely many sign changes unconditionally by a Landau/Mellin argument. What remains RH-sensitive is the value reached at the recurrent minima, not whether recoveries occur.
 
 ## What remains possible
 
-Mixed-prime geometry may still matter if it forces a completed arithmetic polarization or supplies a source-specific inequality on the axis-event stream that is not already RH-equivalent. It does not matter merely because it enriches a scalar criterion that has already discarded mixed support.
+Mixed-prime geometry may still matter if it forces an arithmetic polarization or an independently justified inequality on checkpoint minima before scalar compression. A useful theorem must explain the critical half-weight/completion and control the recovered minima with vanishing reserves; adding another axis criterion, completed moment sequence, or generic recovery law does not supply that force.
 
 ## Status / novelty
 
-The HLS, screw, Schoenberg, Volterra, explicit-formula, convexity, and checkpoint ingredients are prior art or exact persisted consequences. The synthesis is the sharper completion gate: **the live completed sign is an inward, vanishing-margin prime-power event problem; generic positivity and unused mixed exponent coordinates do not solve it**.
+The HLS, screw, Schoenberg, Volterra, Suzuki weighted-Chebyshev/Hankel, Mellin/Landau, and explicit-formula mechanisms are prior art or exact persisted consequences. The synthesis is the sharper gate: **axis-level RH equivalence, completed scalar moment positivity, and recurrent checkpoint recovery are all weaker than a source-forced completed sign mechanism**.
 
 ## Falsification criterion
 
-Derive all checkpoint margins nonnegative from upstream rational-prime/global-completion structure without assuming an RH-equivalent sign criterion, or show that a canonical mixed-coordinate invariant changes the checkpoint dynamics in a source-forced way and supplies the missing inward control.
+Derive all checkpoint minima nonnegative from upstream rational-prime/global-completion structure without assuming an RH-equivalent scalar criterion, or exhibit a canonical mixed-coordinate invariant that changes those minima through an independently forced polarization.
 
 ## Lean-formalizable core
 
-- Native kernel positivity versus completed sign.
+- Native positivity versus completed RH-equivalent sign.
 - Volterra forward cone preservation and inverse failure.
-- Strict convexity between prime-power events.
-- Two-state checkpoint/event reduction and unit-drift normal form.
+- Strict convexity/checkpoint reduction.
+- Weighted prime-power scalar criterion as axis compression.
+- Separation of divergent local moments from finite completed moments.
+- Workload recurrence versus minimum-value sign.

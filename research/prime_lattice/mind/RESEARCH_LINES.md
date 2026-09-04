@@ -8,13 +8,13 @@ This file holds the current mathematical lines of investigation suggested by the
 
 The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic and stays in the Euler/evaluation category; completed screw/CND/Lévy positivity is already RH-level.
 
-PL-145 adds the directional gate: the canonical shifted screw family preserves positivity only outward toward safer half-planes. PL-146 then reduces the completed scalar sign to a strictly convex prime-power checkpoint process with two cumulative states and unit-drift jump dynamics. Mixed exponent vectors do not enter that scalar channel, and even under RH the checkpoint reserve has infimum zero. The missing theorem is therefore source-specific inward no-crossing with vanishing margins, not a generic positive interpolation or a uniform gap from zero.
+PL-145--PL-149 sharpen the completed boundary. Positive transport works only outward; the completed scalar reduces to prime-power checkpoints; a weighted axis-only criterion is itself RH-equivalent; the natural Hankel moments are a globally completed scalar jet rather than positive local prime moments; and the associated workload recovers infinitely often unconditionally. The missing theorem is therefore not another axis representation, moment lift, or recurrence law but source-specific control of the recovered checkpoint minima with vanishing margins.
 
 ## Force the completed arithmetic sign or polarization upstream
 
 **Linked intuitions:** `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`.
 
-The live theorem is to derive Suzuki's completed sign, or an equivalent arithmetic polarization on the zero-sensitive representation, from exact rational-prime/global-completion structure without assuming a zero-localization criterion of the same strength. PL-146 gives a sharp target: prove nonnegativity of every prime-power checkpoint margin despite asymptotically vanishing reserves, or derive an equivalent source-forced invariant before the scalar axis compression occurs.
+A decisive theorem should derive Suzuki's completed sign, or an equivalent arithmetic polarization on the zero-sensitive representation, from exact rational-prime/global-completion structure without assuming a criterion of the same strength. It must explain why the critical half-weight and global cancellation are forced and then control every prime-power checkpoint minimum; PL-147--PL-149 show that axis sufficiency, finite completed moments, and recurrent recoveries do not do this by themselves.
 
 ## Demand a source mechanism, not only a stability metric
 

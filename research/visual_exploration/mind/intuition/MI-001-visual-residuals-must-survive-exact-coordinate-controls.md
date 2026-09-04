@@ -1,44 +1,44 @@
-# MI-001 — Visual residuals must survive reconstruction and matched maximum-entropy/statistical controls
+# MI-001 — Visual residuals must survive exact reconstruction, deterministic quotient, and matched statistical controls
 
-**Evidence level:** supported through VIS-020 by exact reconstruction identities, literature-backed finite-size spacing baselines, and an exact information-theoretic closure
+**Evidence level:** supported through VIS-022 by exact reconstruction identities, deterministic Gram-coordinate quotients, and literature-backed statistical baselines; the currently open review on VIS-023 is not used here
 
 ## Core intuition
 
 Visual complexity is not an independent arithmetic resource when it can be reconstructed from coordinates, divisor data, regular holomorphic continuation, phase gauge, or lower-order probability laws. The meaningful object is the residual after the strongest baseline that preserves the information already known to generate the picture.
 
-VIS-020 makes this precise for three consecutive gaps. Once the two overlapping adjacent-pair marginals are fixed, there is a unique maximum-entropy completion. Generic non-Markov dependence is therefore not an arithmetic signal; the zeta question begins only after comparing its departure from that closure with the corresponding departure of a matched finite-size random-matrix/arithmetic control.
+The Gram-point evidence adds an exact quotient hierarchy. Interval occupancy, the sampled zero-count discrepancy `S(g_n)`, and the zero-count staircase increments are the same discrete information up to an initial integer. Hardy-`Z` sign changes at Gram points are only the parity projection of that occupancy. A visual atlas should therefore count these as one information family, not as independent channels whose agreement strengthens a claim.
 
 ## Strongest justified principle
 
-VIS-013--VIS-017 classify complete circular modulus/phase data and connected overlap gluing as zero sources plus harmonic boundary data with one global `U(1)` gauge. VIS-018 closes the topological phase escape: argument-principle winding and local vortex charge are exactly enclosed zero/pole multiplicity.
+VIS-013--VIS-018 classify complete circular modulus/phase data, connected overlap gluing, and winding as zero/divisor information plus harmonic boundary data and one global gauge.
 
-VIS-019 adds the finite-size statistical control. Adjacent unfolded-gap return maps, two-gap densities, nearest-neighbor anti-correlation, and ratio histograms already have finite-size CUE baselines with known arithmetic corrections in the relevant channels.
+VIS-019--VIS-020 establish the statistical control layer: finite-size CUE/arithmetic corrections are the baseline for adjacent gaps, and once two overlapping adjacent-pair marginals are fixed, the unique maximum-entropy three-gap completion is the first-order Markov closure with KL gap equal to conditional mutual information.
 
-VIS-020 fixes the next information layer exactly. For finite-valued consecutive gaps `X,Y,Z`, the joint
+VIS-021 gives the deterministic Gram identity
 
-`Q(x,y,z)=P_XY(x,y) P_YZ(y,z)/P_Y(y)`
+`C_n = 1 + S(g_{n+1}) - S(g_n)`.
 
-is the unique maximum-entropy distribution with the prescribed adjacent-pair marginals, and
+Thus interval occupancy and Gram-sampled `S` are invertible encodings once one initial count is supplied. VIS-022 then shows
 
-`D(P||Q)=I(X;Z|Y)=H(Q)-H(P)`.
+`sgn Z(g_{n+1}) / sgn Z(g_n) = (-1)^{C_n}`,
 
-Thus `P-Q` localizes conditional dependence beyond the two pair marginals, while conditional mutual information is its canonical nonnegative scalar distance. But a determinantal CUE process is itself not first-order Markov, so positive conditional mutual information on zeta alone proves nothing. The live statistic is the **zeta-minus-matched-control residual after each side is projected against its own maximum-entropy closure**.
+without assuming RH: off-line reflected zeros contribute even multiplicity. Gram-sign data are therefore strictly coarser than occupancy, not a second zero statistic.
 
 ## What remains possible
 
-Higher-order or long-range residuals, deliberately incomplete measurements with quantified recovery defect, separated-region bridge observables, and non-holomorphic/multi-object representations remain live. They earn promotion only after the relevant reconstruction and lower-order statistical quotient is removed and the residual is stable across partition, height, finite-size, and rendering controls.
+Higher-order or long-range residuals, deliberately incomplete measurements with quantified recovery defect, separated-region bridge observables, and non-holomorphic/multi-object representations remain live. Any visual comparison should first collapse exact deterministic equivalence classes and then construct matched statistical closures separately on zeta and control data.
 
 ## Status / novelty
 
-Complex-analysis reconstruction, finite-size random-matrix spacing theory, maximum entropy, relative entropy, and conditional mutual information are prior art. The synthesis is the strengthened visual gate: **match the complete generating baseline, including the maximum-entropy closure of retained marginals, before interpreting residual geometry as arithmetic**.
+Complex-analysis reconstruction, Gram counting identities, Hardy `Z`, finite-size random-matrix spacing theory, maximum entropy, and conditional mutual information are prior art or exact persisted derivations. The synthesis is the strengthened visual gate: **independent-looking renderings are not independent evidence when exact maps recover one from another**.
 
 ## Falsification criterion
 
-Exhibit a visual/statistical invariant beyond the covered reconstruction and adjacent-pair maximum-entropy baseline that separates zeta from matched controls preserving the same lower-order data, with a statement independent of rendering choices.
+Exhibit a visual/statistical channel outside the covered deterministic/reconstruction quotients that separates zeta from matched controls preserving the same retained information, with a statement stable under rendering and binning choices.
 
 ## Lean-formalizable core
 
 - Argument-principle winding as divisor count.
-- Maximum-entropy Markov completion from two overlapping pair marginals.
-- `D(P||Q)=I(X;Z|Y)` for the fixed-marginal family.
-- Logical quotienting of reconstruction baselines before residual tests.
+- Gram occupancy as discrete derivative of sampled `S`.
+- Hardy-`Z` Gram-sign transition as occupancy parity.
+- Maximum-entropy Markov completion from overlapping pair marginals.

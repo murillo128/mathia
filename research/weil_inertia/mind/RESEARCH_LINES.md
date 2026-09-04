@@ -10,16 +10,20 @@ Global Fenchel coupling can remove artificial blockwise optimization loss, but i
 
 ## Convert exact off-line inertia into source coercivity away from confluence
 
-**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction`, `MI-006-source-rigidity-can-eliminate-screening-extremizers`, `MI-007-depth-weighted-schur-tail-is-screening-invariant`, and `MI-008-inertia-counts-offline-pairs-but-not-their-distance`.
+**Linked intuitions:** `MI-006-source-rigidity-can-eliminate-screening-extremizers` and `MI-008-inertia-counts-offline-pairs-but-not-their-distance`.
 
-WI-133--WI-136 replace one weak minimum mode by a corrected depth-weighted quotient and charge simple-real screening. WI-138 then adds an exact zero-type discriminator: the negative index of Lamzouri's finite tensor is precisely the number of distinct off-line conjugate pairs. WI-139 shows that near sharpness forces that negative eigenspace into the canonical horizontal quotient.
+WI-138--WI-140 give the exact negative-index count, horizontal-subspace alignment, and quadratic confluence boundary. WI-141--WI-142 strengthen the no-go: the complete one-pair tensor converges in every Schatten norm, so fixed spectral moments are blind, and every preassigned finite family of continuous regularizers can be defeated by moving the off-line pair below its resolution scale.
 
-WI-140 supplies the corresponding stability boundary. Off-line pairs can confluence continuously to critical-line doubles, with the negative index unchanged for every nonzero displacement while both negative eigenvalue magnitude and total finite deficit vanish quadratically. Even a fixed number of off-line pairs can therefore carry arbitrarily small abstract finite slack.
+The decisive theorem must therefore derive an unconditional zeta-source anti-confluence scale or justify a singular/discontinuous detector from independent source structure. Inertia count is exact, but no source-free continuous smoothing of it is uniformly coercive.
 
-The decisive theorem must use actual zeta-source information to keep a positive-density exceptional population quantitatively away from this confluence boundary, or charge it through an independent correlation/density statistic. Inertia count alone is exact but noncoercive.
+## Use genuinely joint or sign-indefinite information when importing out-of-band SDP gains
+
+**Linked intuitions:** `MI-001-screening-is-an-information-bandwidth-obstruction` and `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`.
+
+WI-143 shows that positive convex mixtures or direct sums of Lamzouri windows remain inside the Fourier-positive cone and cannot reproduce the negative spectral tail that gives the Chirre--Gonçalves--de Laat RH SDP improvement. A live bridge must use a genuinely joint/sign-indefinite zero-side inequality or new source information, not a larger positive mixture of the existing windows.
 
 ## Move from residual rank to quantitative source coercivity
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`, `MI-004-w-conditioning-is-l2-compressible-but-l1-expensive`, and `MI-005-rank-restoration-is-not-quantitative-coercivity`.
 
-Full rank or restored dimension can coexist with collapsing singular values. Any fourth-moment or welding route must prove a quantitative source lower bound from information absent in the covered full-packed controls. The new Lamzouri confluence example reinforces the same general warning in a different operator: exact sign/rank data do not provide a uniform magnitude gap without source separation from a collision boundary.
+Full rank or restored dimension can coexist with collapsing singular values. Any fourth-moment or welding route must prove a quantitative source lower bound from information absent in the covered full-packed and confluence controls.

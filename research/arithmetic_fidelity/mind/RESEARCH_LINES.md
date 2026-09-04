@@ -14,13 +14,13 @@ The first task for any compression is to identify the complete retained statisti
 
 Exact recovery can coexist with arbitrarily bad conditioning, and per-scale finite witnesses can escape every compact set. The live theorem in a concrete application must supply a source-natural stability modulus, compact-transversal margin, coherent approximant tower, or equivalent uniform width decay.
 
-## Turn finite visibility into bounded-accessible original-range assembly
+## Assemble in the exact topology and operator class required downstream
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`, and `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`.
 
-AF-097--AF-101 show that unbudgeted finite exactness is too weak, calibrated finite budgets determine bidual interpolation cost, and original-range recovery is a further tensor-norm gate. AF-102--AF-104 sharpen the missing middle step: the exact second-leg category is the finite-`beta` accessibility class; preadjoint provenance is invisible to every finite SOT test without a uniform norm budget; and Reinov's example realizes the extreme case where finite reproduction is ubiquitous but every coherent bounded accessibility scheme blows up.
+AF-097--AF-104 calibrate finite visibility, bounded accessibility, and original-range provenance. AF-105--AF-107 add the missing limit theorem hierarchy. Pointwise weakly compact repaired orbits can keep WOT limits in the original target; admissible identities survive only when their class is WOT closed; and compactness of the assembled operator requires collective norm compactness rather than merely compact operators at every stage or pointwise SOT convergence.
 
-A decisive positive must derive from the source that its required maps lie in the finite-accessibility category and then prove original-range gluing with all needed equivariance, positivity, locality, order, or regularity constraints. Finite exact matching or pointwise strong approximation alone is not evidence for that global theorem.
+A decisive positive must derive from the source the family-level non-escape appropriate to the destination category and then prove that all required equivariance, positivity, locality, order, compactness, or regularity constraints are closed under that exact assembly topology.
 
 ## Keep repair category and target transport explicit
 

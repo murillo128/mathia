@@ -1,30 +1,28 @@
-# MI-003 — Arithmetic significance begins only after the complete destination control and source regime are matched
+# MI-003 — Arithmetic significance begins only after the complete destination control, deterministic quotient, and source regime are matched
 
 **Evidence level:** supported across the current evidence-bearing lines
 
 ## Core intuition
 
-A prime-labelled construction is not arithmetic evidence until its matched control preserves the **entire information layer consumed by the final theorem**. Convenient bulk, local, asymptotic, or low-order controls can be too weak. The control must match the relevant finite configurations, boundary model, lower-order statistics, normalization, operator response, multiplicity quotient, transfer budget, and source constraints at the scale of the claim.
+A prime- or zeta-labelled construction is not arithmetic evidence until its matched control preserves the **entire information layer consumed by the final theorem**. Convenient bulk, local, asymptotic, low-order, or visually different controls can be too weak. The control must match the relevant finite configurations, deterministic recodings, boundary model, lower-order statistics, normalization, operator response, transfer budget, and source constraints at the scale of the claim.
 
-The recent evidence repeatedly turns an apparent survivor into a stronger control problem: finite clusters survive thermodynamic averaging, full-band diffraction defeats favorable local slopes, nonlocal Kron response can remain prime-blind, and low-order visual patterns require nulls preserving the same marginals that generated them.
+Recent evidence strengthens both sides of this rule. Natural correlated stochastic enlargements can still lie inside a closed control body; visually distinct Gram observables can be exact quotients of one another; and a genuinely positive geometric logarithm can remain universal and composite-matched. Conversely, moving comparators show that exact finite agreement can hide a global uniformity cost rather than prove source equivalence.
 
 ## Strongest justified principle
 
-Analytic Frontier now has an exact complete scalar control. ANF-018--ANF-020 replace long-lattice testing by the full finite-configuration stability/diffraction body; ANF-021 shows that even the locally favorable symplectic cusp fails at finite frequency. A control of the origin or thermodynamic bulk is not the complete destination control.
+Analytic Frontier now pushes the scalar diffraction control through fractional-Brownian lattice disorder and its singular zero-Hurst/dilution boundary. ANF-025--ANF-027 show that removing Bragg peaks is not enough: fixed Hurst exponents have the wrong low-frequency law, bounded zero-Hurst limits recrystallize, dilute limits whiten, and arbitrary moving mixtures cannot fit below the target budget.
 
-Arithmetic Fidelity adds calibration: after a source norm budget is fixed, finite matrix coefficients become complete witnesses of the interpolation cost, while original-range assembly remains a separate gate. Matching finite values without matching conditioning/category is incomplete.
+Visual Exploration adds an exact deterministic quotient. VIS-021 makes Gram occupancy the discrete derivative of sampled `S`, while VIS-022 makes Hardy-`Z` Gram-sign changes only occupancy parity. Agreement among these views is not independent evidence; the complete deterministic equivalence class must be collapsed before statistical residuals are counted.
 
-Prime Circle gives a post-processing control. PC-161--PC-162 show that a one-hole defect can become fully nonlocal after harmonic elimination while its entire fixed-base response remains identical along prime and matched composite refinements. Nonlocality does not restore provenance already erased by the input limit.
+Möbius Cancellation sharpens the source-regime side. MC-053--MC-054 close broad fixed complex comparators, while MC-055--MC-056 show that moving quadratic comparators can imitate every finite Möbius coefficient and still hide the burden in family-uniform cancellation constants and conductor coherence. A matched prefix is not a matched global transfer budget.
 
-Visual Exploration extends matched controls to statistics. VIS-019 makes two-consecutive-gap geometry a finite-size RMT/arithmetic baseline; a higher-order claim must preserve those lower-order marginals rather than compare only with Poisson or shuffling.
+Weil Inertia supplies a resolution control. Exact negative index survives confluence while every preassigned finite family of continuous spectral detectors can be made blind by taking smaller horizontal displacement. A smoother surrogate is not automatically a stronger destination control.
 
-Weil Inertia sharpens source admissibility and quotient choice. Multiplicity-created zero modes are removed in WI-135, while WI-136 shows simple-real directions are charged by the full Lamzouri remainder and are not a free screen. The relevant control must match the corrected independent quotient, not a larger algebraic reservoir.
-
-Xi Flow supplies a boundary-scale warning. XF-017 shows that a fixed-ratio localization obstruction disappears when the outer/inner capacity ratio grows; XF-018 changes the nonlinear leakage carrier to bounded cross-ratio/span data. The control must match the scalable boundary geometry actually used by the destination estimate.
+Weil Positivity supplies the strongest local-positive control so far. WP-142--WP-144 produce a scale-invariant, independently positive one-mode SPD logarithm, yet arbitrary positive conductance stars and matched composites reproduce it. Genuine local positivity is still not arithmetic selection.
 
 ## Program consequence
 
-For each proposal, identify the maximal admissible source fiber and then strengthen controls until they match the final finite/boundary/statistical/operator/transfer object. Separately test whether extremal controls are source-admissible at the claimed density and scale. A positive requires a residual that survives this complete family quantitatively; surviving a convenient subset is not evidence.
+For each proposal, identify the maximal admissible source fiber and then strengthen controls until they match the final finite, deterministic, stochastic, statistical, operator, transfer, singular, and resolution-sensitive object. Separately test whether extremal controls are source-admissible at the claimed density and scale. A positive requires a residual that survives this complete family quantitatively.
 
 ## Status / novelty
 
@@ -32,11 +30,12 @@ The component controls are persisted findings or literature-backed specializatio
 
 ## Falsification criterion
 
-Produce a candidate whose claimed source-specific invariant survives only because a known destination-relevant control was omitted, or conversely prove a source theorem that excludes every matched extremizer and leaves a quantitative residual in the exact final category.
+Produce a candidate whose claimed source-specific invariant survives only because a destination-relevant quotient/control was omitted, or conversely prove a source theorem that excludes every matched extremizer and leaves a quantitative residual in the exact final category.
 
 ## Lean-formalizable core
 
 - Downstream invariance on maximal measured fibers.
+- Deterministic quotienting before independence claims.
 - Convex/control-family completion.
+- Uniform-family transfer budgets.
 - Post-processing monotonicity of lost provenance.
-- Conditional/marginal control matching.

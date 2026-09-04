@@ -1,36 +1,36 @@
-# MI-008 — Inertia can identify off-line pairs exactly while every count-only norm charge collapses at confluence
+# MI-008 — Inertia identifies off-line pairs exactly, while every preassigned continuous spectral charge can collapse at confluence
 
-**Evidence level:** proved for Lamzouri's finite Hilbert-space model through WI-140; source-level quantitative exclusion remains open
+**Evidence level:** proved for Lamzouri's finite Hilbert-space model through WI-142; source-level quantitative exclusion remains open
 
 ## Core intuition
 
-Sign information and coercive magnitude are distinct. Lamzouri's finite tensor does something stronger than the earlier screening picture suggested: its negative index counts distinct off-line conjugate pairs exactly, and near extremality forces the negative eigenspace into the canonical horizontal-defect quotient. But the magnitude of those negative directions can collapse continuously as an off-line pair approaches a critical-line double.
+Sign information and coercive magnitude are distinct. Lamzouri's finite tensor has an exact discontinuous discriminator: its negative index counts distinct off-line conjugate pairs. But the magnitude of those negative directions can collapse continuously as an off-line pair approaches a critical-line double.
 
-Therefore exact inertia is a genuine zero-type discriminator, yet it cannot by itself produce a positive charge per off-line pair. Any defect-to-zero bootstrap must add source information that quantitatively separates actual zeta zeros from this confluence boundary.
+The newer result is stronger than failure of a count-only norm bound. Any finite package of continuous spectral statistics, and even any preassigned `N`-dependent family of continuous regularizations, can be defeated by choosing the horizontal displacement below that detector's continuity scale. Quantitative use of inertia therefore requires source information that separates actual zeta zeros from the confluence boundary, or a singular/discontinuous observable whose justification comes from the source rather than from post hoc tuning.
 
 ## Strongest justified principle
 
-WI-138 writes the canonical self-adjoint Lamzouri tensor as an invertible synthesis congruence of a diagonal signed form. Sylvester inertia then gives exactly one negative eigenvalue for every distinct non-real conjugate pair and none for repeated real points. Multiplicity changes eigenvalue sizes, not the inertia count.
+WI-138 gives the exact inertia theorem; WI-139 aligns near-sharp negative eigenspaces with the canonical horizontal defect quotient. WI-140 constructs explicit confluence controls: a simple off-line pair retains one negative eigenvalue for every nonzero displacement while its negative magnitude and total Lamzouri deficit vanish quadratically.
 
-WI-139 combines this with the complete finite slack. If `P_-` is the negative spectral projection and `P_H` the horizontal quotient projection, the same deficit controls both squared negative eigenvalue mass and the Hilbert--Schmidt distance `||P_--P_H||_HS^2`. A near-sharp configuration with many off-line pairs must therefore have many tiny negative eigenvalues whose eigenspace is nevertheless aligned with the specific odd/horizontal defect sector.
+WI-141 shows that the whole one-pair tensor converges in every Schatten norm to the critical-line double model. Consequently every fixed-order trace moment, continuous spectral functional, determinant minor, or similar finite continuous package loses the distinction even while inertia stays nonzero.
 
-WI-140 gives the decisive finite countercontrol. An isolated simple off-line pair `x+-iy` has one negative eigenvalue for every `y>0`, but as `y->0` it confluent-limits to a critical-line double with negative eigenvalue and full Lamzouri deficit both vanishing quadratically. For every fixed `k`, one can place `k` such pairs far apart and make the total finite deficit arbitrarily small. Hence no abstract inequality `Delta>=phi(k)>0` can hold in the finite Proposition 2.1 class.
+WI-142 removes the obvious regularization escape. For any preassigned finite family of continuous detectors at each size, including shrinking resolvent or smoothed-sign scales, the off-line depth can be chosen smaller still. One can retain positive-density negative index while making all chosen continuous diagnostics and the normalized finite deficit arbitrarily close to their confluent controls.
 
 ## What remains possible
 
-The confluence controls are deliberately not models of the full zeta source. A useful theorem may exploit local density, horizontal separation, additional correlation observables, multiplicity statistics, or another arithmetic constraint that prevents a positive-density population of nearly confluent off-line pairs. Such information must be genuinely independent of the finite deficit/inertia already used.
+The confluence controls are not asserted to model the full zeta source. A useful theorem may derive an unconditional anti-confluence scale from zero density, separation, multiplicity, horizontal displacement, or independent correlations. Alternatively it may justify a source-natural discontinuous/singular detector. What does not suffice is choosing a finer continuous smoothing after seeing the adversarial displacement.
 
 ## Status / novelty
 
-Sylvester inertia, projection perturbation, and confluence continuity are classical ingredients. The line-specific synthesis is the exact separation: **negative index identifies the exceptional zero type, while quantitative coercivity is entirely a source-distance-from-confluence problem**.
+Sylvester inertia, spectral continuity, Schatten convergence, and confluence are classical ingredients. The line-specific synthesis is exact: **negative index identifies the exceptional zero type, but every preassigned continuous coercive surrogate can lose its mass at the same boundary**.
 
 ## Falsification criterion
 
-Derive from unconditional zeta information a quantitative lower bound on the relevant horizontal displacement/eigenvalue mass for a positive density of off-line pairs, or construct source-admissible configurations satisfying all such inputs while retaining arbitrarily small per-pair Lamzouri deficit.
+Derive from unconditional zeta information a quantitative source scale that prevents positive-density off-line pairs from hiding below every admissible continuous detector, or construct source-admissible configurations satisfying those inputs while retaining the confluence escape.
 
 ## Lean-formalizable core
 
-- Congruence inertia count for the signed synthesis operator.
-- Negative-subspace alignment from Hilbert--Schmidt slack.
-- Explicit one-pair confluence eigenvalues and deficit.
-- Fixed-`k` no-go for positive count-only stability charge.
+- Congruence inertia count.
+- One-pair confluence eigenvalues and Schatten convergence.
+- Continuity defeat for finite detector families.
+- Separation of discontinuous index from continuous spectral mass.

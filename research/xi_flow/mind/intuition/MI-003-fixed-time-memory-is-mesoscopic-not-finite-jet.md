@@ -1,38 +1,36 @@
-# MI-003 — Fixed-time Xi memory is mesoscopic; far-tail room is available, so the live bottleneck is near-boundary flux organization
+# MI-003 — Fixed-time Xi memory is mesoscopic; the remaining mean-removal mechanism must be genuinely nonlocal or source-specific
 
-**Evidence level:** supported through XF-021; finite-jet and linearized-scale statements are exact in their stated regimes, and the localization identities are used only where the real-simple flow applies
+**Evidence level:** supported through XF-022; finite-jet, linearized-scale, and finite-range collision statements are exact in their stated regimes
 
 ## Core intuition
 
-Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. The Cauchy/`H^{1/2}` boundary model explains why a fixed-shape cutoff is scale critical, while capacitary and cross-ratio reorganizations show that the far exterior can be made genuinely small without pointwise lower-gap control.
+Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. Capacitary and cross-ratio reorganizations show that the far exterior can be made genuinely small using source-valid super-mesoscopic buffers, so lack of spatial room is no longer the principal obstruction.
 
-The newest source audit changes the bottleneck again. Rodgers--Tao's global counting error already supplies super-mesoscopic buffers whose physical width is a diverging multiple of the `log T` core span, so lack of spatial room is not the obstruction. What remains is the near-buffer and neutral mean/span flux. A broad compact centered-convex entropy class cannot remove that difficulty source-free because compression-sensitive boundary sites generate positive collision poles.
+The live bottleneck is mean/span removal near the boundary. XF-021 rules out compact compression-sensitive centered convex single-gap entropies. XF-022 now shows that simply overlapping local quadratic mean-removal blocks does not fix the problem: every nontrivial finite-range symmetric translation-invariant quadratic kernel annihilating constants has a positive collision-spike configuration. The remaining route must be genuinely global/projective/nonlinear or must use Xi-specific source information to exclude the adversarial local geometry.
 
 ## Strongest justified principle
 
-XF-006 rules out every robust finite collision jet as Xi-specific; XF-007--XF-013 identify the mesoscopic `log^2 T` scale and endpoint Cauchy carrier. XF-014--XF-018 give the exact real-simple gap diffusion, finite-amplitude bulk coercivity in its stated regime, scalable capacitary cutoff, and collision-safe uncentered leakage weight `w_ik=c_ik g_i g_k` dominated by a cross-ratio/Cauchy kernel.
+XF-006 rules out robust finite collision jets as Xi-specific; XF-007--XF-013 identify the mesoscopic `log^2 T` scale and the Cauchy/endpoint carrier. XF-014--XF-020 give exact positive-conductance gap diffusion, collision-safe uncentered cross-ratio localization, aggregate far-tail bounds, and source-valid buffers whose leakage is `o(1)`.
 
-XF-019 aggregates that kernel before estimating it. For a core of physical span `S` separated from the far exterior by buffer width `D`, the entire tail interaction is bounded by `log(1+S/D)` on each side. Microscopic endpoint gaps disappear from this block estimate; vanishing far-tail leakage requires only `D/S->infinity`.
+XF-021 proves the centered-convex boundary dichotomy: compression sensitivity below a positive reference creates an arbitrarily positive adjacent-collision flux under compact localization.
 
-XF-020 shows that this scale is source-compatible. Subtracting Rodgers--Tao's global zero-counting formula gives asymptotic counts on windows `D=R(T) log T` for any slowly diverging `R(T)` in the stated range. Such buffers contain `asymp R(T) log^2 T` zeros and make the aggregate far-tail cross-ratio leakage `O(1/R(T))`. The previous diagnosis that source-valid room was missing is therefore removed.
-
-XF-021 closes the obvious centered-entropy shortcut. For any differentiable convex single-gap entropy centered at a positive reference spacing, compact localization has an exact dichotomy: either the entropy is blind to compression below the reference, or a compressed boundary gap adjacent to an exterior collision produces an arbitrarily large **positive** flux. The uncentered square avoids that sign by keeping the gap factor positive, but then mean removal remains a nonlocal span/endpoint problem.
+XF-022 closes the most direct overlap repair. For a finite-range constant-annihilating quadratic kernel `L`, a collapsing gap probes `A L`, where `A` is the nearest-neighbor discrete Laplacian. Because `A L` has zero second moment, it cannot have the one-sided off-diagonal M-matrix sign unless it vanishes identically. Hence some positive local gap configuration forces `Q_L' -> +infinity`. Uniform sums of fixed-length overlapping block variances are a direct corollary.
 
 ## What remains possible
 
-The live theorem should organize the core--near-buffer interactions and the derivative of the block span/mean through a signed or multiblock identity, noncompact summable localization, or an Xi-specific exterior constraint. It must retain a fixed backward-time margin after the source-valid far buffer is installed and survive matched real-entire/log-repulsion controls.
+The live theorem should use an exact nonlocal span/endpoint-flux identity, a nondecaying or scale-dependent mean remover with controlled tails, a nonlinear/projective cross-ratio assembly, or an independent Xi source theorem that excludes the asymmetric collision patterns used by the no-go. Fixed-length centered stencils are closed unless they add such structure.
 
 ## Status / novelty
 
-Fractional localization, capacity, cross-ratios, convex entropy dissipation, and global zero counting are classical ingredients. The synthesis is the moving boundary gate: **far-tail capacity is now affordable; compact centered convexity is not a source-free repair; the unresolved information is near-boundary/mean flux at mesoscopic scale**.
+Fractional localization, discrete Laplacians, convex entropy, cross-ratios, and global zero counting are classical ingredients. The synthesis is the sharpened boundary: **far-tail capacity is affordable, but both compact pointwise centering and finite-range quadratic mean removal reintroduce collision-positive flux**.
 
 ## Falsification criterion
 
-Derive a source-forced signed/span identity that controls the near buffer and endpoint flux with a positive fixed-time margin, or construct source-admissible real-simple configurations satisfying the current counting/buffer constraints while making every such proposed assembly lose its margin.
+Derive a source-forced nonlocal/span identity that controls the near buffer with a positive fixed-time margin, or construct source-admissible Xi-like configurations that defeat every proposed global assembly while respecting the current counting/buffer constraints.
 
 ## Lean-formalizable core
 
 - Mesoscopic `log^2 T` memory scale.
-- Block cross-ratio tail bound `log(1+S/D)`.
-- Super-mesoscopic count from global counting error.
-- Compact centered-convex entropy collision-spike dichotomy.
+- Block cross-ratio tail bound and source-valid buffer scaling.
+- Centered-convex collision-spike dichotomy.
+- Finite-range `A L` second-moment sign obstruction.

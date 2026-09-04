@@ -6,56 +6,52 @@ This file holds genuinely cross-branch mathematical questions suggested by the d
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, and `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`.
 
-Analytic Frontier now shows how strong this requirement can become: the universal scalar route is a convex diffraction-realizability problem, and three natural stochastic enlargements fail before reaching the target. Lattice scale mixtures, iid displacement, and stationary iid-renewal mixtures are all absorbed by the complete control body; renewal randomness is actually forced to deterministic spacing by the low-frequency budget.
+Analytic Frontier now excludes lattice mixtures, iid displacement, renewals, and fractional-Brownian displaced lattices including the moving zero-Hurst/dilute boundary. Visual Exploration shows that several Gram-point views are exact deterministic quotients before any statistical null is applied. Weil Positivity reaches a genuinely positive scale-invariant SPD logarithm that nevertheless remains universal and composite-matched.
 
-Visual Exploration adds an exact statistical analogue: adjacent-pair-preserving three-gap data have a unique maximum-entropy Markov closure, so generic non-Markov dependence is itself part of the null. Prime Circle extends the post-processing control through the full fixed-base one-hole Bloch/Kron/Feshbach family, and Prime Flute shows that even positive primitive-length accumulation and finite-length count explosion are inherited by the all-composite clone.
+A decisive positive must identify the complete finite, deterministic, stochastic, marginal/statistical, quotient, singular, resolution, and operator control family consumed by its destination theorem and exhibit a quantitative residual outside that body.
 
-A decisive positive must identify the complete finite, stochastic, marginal/statistical, quotient, singular, and operator control family consumed by its destination theorem and exhibit a quantitative residual outside that body.
-
-## Separate source fidelity, completed sign, normalization, and transport direction
+## Separate source fidelity, completed sign, local positivity, and event encoding
 
 **Linked intuitions:** `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-004-critical-axis-is-not-zero-selection`, and `MI-005-topology-is-part-of-the-arithmetic-claim`.
 
-Prime Lattice now reduces Suzuki's completed scalar criterion to an exact prime-power checkpoint/event process. The continuum sign is one constrained convex minimum per prime-power interval; mixed exponent vectors are absent from this scalar channel, outward positive transport points toward easier half-planes, and even under RH the checkpoint reserve can approach zero. Source identification or generic positivity therefore does not supply the required inward no-crossing theorem.
+Prime Lattice now shows that axis-supported RH-equivalent criteria, completed Hankel moments, and recurrent prime-power workload recovery can all coexist without explaining the completed sign: the half-weight/global cancellation is already inserted or the recurrence is continuation-generic. Weil Positivity shows the complementary local near-miss: equal-rank Kron relaxation gives an intrinsic positive SPD logarithm, but it is prime-blind and has no global Weil polarization.
 
-Weil Positivity supplies the complementary normalization warning. A positive Kron response can yield the exact `+log m` leading scale through an unequal-rank determinant ratio, but the coefficient changes under common positive rescaling and is shared by composites. The canonical positive Fisher curvature of the same determinant then annihilates exactly that scale direction. A live sign mechanism must fix normalization and arithmetic selection upstream rather than infer them from a favorable coefficient.
+The live theorem is a source-forced arithmetic polarization or sign on the completed zero-sensitive object itself, with normalization and source selection fixed before the target conclusion.
 
-## Turn calibrated finite visibility into bounded-accessible original-range global assembly
+## Turn calibrated finite visibility into topology-matched original-range global assembly
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-005-topology-is-part-of-the-arithmetic-claim`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Arithmetic Fidelity now separates this hierarchy exactly. Finite matrix coefficients become quantitative only after a norm budget is declared; second-leg bounded accessibility has its own exact cost; genuine preadjoint provenance is invisible to every finite strong-operator test without that budget; and Reinov's classical example realizes finite exact reproduction with infinite coherent accessibility cost. Bidual accessibility and original-range recovery remain distinct after that.
+Arithmetic Fidelity now separates the limit hierarchy exactly. Bounded finite accessibility and original-range provenance remain distinct; pointwise weak compactness can keep WOT limits in the original target; algebraic/order constraints survive only when WOT closed; and compact operators require collective norm compactness to remain compact after assembly.
 
-A positive must derive the budget and morphism category from the arithmetic source and prove uniformly conditioned original-range gluing with every required equivariance, positivity, locality, or order constraint.
+A positive must derive the relevant family-level non-escape from the arithmetic source and prove closure of every downstream constraint in the exact topology used by the limit.
 
-## Find transfer theorems cheaper than the target they transport
+## Make moving comparator and transfer theorems uniform across scale
 
-**Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim` and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
+**Linked intuitions:** `MI-003-arithmetic-significance-begins-after-universal-control-subtraction` and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Möbius Cancellation has now closed the broad real square-free comparator escape: global Möbius closeness plus independently proved power cancellation transfers essentially the same exponent back to Möbius and the matching zeta zero-free half-plane, even without complete multiplicativity or extremal signs. Complex phases are the sharper surviving boundary. Ordinary closeness gives a simple boundary zero and only a quadratic `1/p` phase budget; exponent-preserving transfer requires much stronger power-weighted control.
+Möbius Cancellation has closed broad fixed real and complex comparator classes. Moving quadratic characters can nevertheless imitate the complete Möbius prefix at every finite scale while each frozen object has square-root cancellation. The obstruction moves into the family: uniform constants inherit target information, and distinct exact-prefix interpolants pay a Burgess product-conductor cost `X^{4-o(1)}`.
 
-The next useful transfer must exploit signed/bilinear/source-specific structure whose hypotheses are genuinely weaker than the conclusion. The same audit applies to determinant, scattering, positivity, and inverse-smoothing transfers in other lines.
+The live transfer must therefore control one source-forced moving family coherently, with hypotheses and constants genuinely cheaper than the Mertens exponent being transported.
 
 ## Convert exact exceptional-type information into source distance from degeneracy
 
 **Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim` and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Weil Inertia now has an exact finite discriminator: the negative index of Lamzouri's tensor counts distinct off-line pairs, and near sharpness aligns the negative eigenspace with the horizontal defect quotient. But off-line pairs can confluence to critical-line doubles while their negative eigenvalues and the complete finite deficit vanish quadratically; even a fixed number of pairs has no universal positive count-only charge.
+Weil Inertia's negative index counts off-line pairs exactly, but confluence can make the complete tensor arbitrarily close in every Schatten norm to a critical-line double model. WI-142 further shows that every preassigned finite family of continuous regularizers can be defeated by choosing smaller horizontal displacement.
 
-The live theorem is therefore source coercivity away from this confluence boundary: use unconditional zeta density, separation, multiplicity, or independent correlations to turn exact sign/type information into a quantitative spectral mass bound.
+The live theorem is therefore an unconditional zeta-source anti-confluence scale, multiplicity/separation constraint, or independently justified singular detector that turns the exact type count into quantitative mass.
 
 ## Couple provenance before universalization or classicalizing post-processing
 
 **Linked intuitions:** `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, `MI-005-topology-is-part-of-the-arithmetic-claim`, and `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`.
 
-Prime Circle's fixed-base one-hole defect remains prime-blind through zero-energy Kron reduction, its full pseudodeterminant, and energy-dependent Feshbach response. Prime Flute's complete marked tail is asymptotically shared with an all-composite clone strongly enough to transfer its positive primitive-length accumulation interval. These examples show that making an already classicalized carrier more nonlocal, spectral, or globally pathological cannot recreate provenance.
+Prime Circle and Prime Flute continue to show that making an already prime-blind carrier more nonlocal, spectral, or globally pathological cannot recreate provenance. Weil Positivity adds a positive analogue: even an intrinsic equal-rank SPD logarithm remains universal after the one-mode reduction. A live route must insert source-specific coupling before such universalization, or prove that a genuinely collective all-scale assembly retains information the strongest matched controls cannot reproduce.
 
-A live geometric/operator route must insert source-specific coupling before the universal limit, or prove that a genuinely collective all-scale assembly retains information that the strongest matched controls cannot reproduce.
-
-## Convert Xi's now-affordable far-tail localization into source-controlled near-boundary flux
+## Convert Xi's affordable far-tail localization into genuinely nonlocal/source-controlled mean removal
 
 **Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim`, `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Xi Flow has moved past the earlier spatial-room obstruction. Block cross-ratio tails are bounded by `log(1+S/D)`, and Rodgers--Tao's global counting error already supplies source-valid buffers `D=R(T)log T` with diverging `R`, making the far exterior `o(1)`. At the same time, compact centered convex single-gap entropies cannot solve the remaining boundary problem source-free: compression sensitivity forces an arbitrarily positive adjacent-collision flux.
+Xi Flow has source-valid buffers making the far exterior `o(1)`, but XF-021--XF-022 close two natural mean-removal repairs: compact compression-sensitive centered convex entropies and every nontrivial finite-range translation-invariant quadratic constant-mode remover can develop positive collision spikes.
 
-The live theorem is to organize the near-buffer and neutral span/endpoint flux through a signed, multiblock, or otherwise Xi-specific identity while retaining a positive fixed-backward-time margin on `Theta(log^2 T)` cores.
+The live theorem is a global/projective span identity, noncompact summable assembly, nonlinear cross-ratio mechanism, or Xi-specific source constraint that controls the near-buffer/mean flux while retaining a fixed-backward-time margin on `Theta(log^2 T)` cores.
