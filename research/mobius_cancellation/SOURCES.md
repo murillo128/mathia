@@ -207,3 +207,21 @@ Role: primary source for `MC-049`. Theorem 1.1 states that if a completely multi
 Enrique Treviño, *The Burgess inequality and the least k-th power non-residue*, International Journal of Number Theory 11 (2015), no. 5, 1653–1678. DOI: https://doi.org/10.1142/S1793042115400163. arXiv: https://arxiv.org/abs/1412.3062.
 
 Role: primary character-sum anchor for `MC-056`. The introduction states the classical Burgess estimate `|S_chi(M,N)| << N^(1-1/r) q^((r+1)/(4r^2)+epsilon)` for primitive characters, with arbitrary fixed `r>=1` when `q` is cubefree. Applied to the product of two distinct quadratic exact-prefix interpolants from `MC-055`, whose product character equals `1` on every integer through the observation scale, it yields the near-quartic product-conductor obstruction.
+
+## MC-S35 — Ramírez Viñas, least prime quadratic residue for moduli 5 mod 8
+
+Víctor Julio Ramírez Viñas, *The Least Prime Quadratic Residue*, author preprint (January 2022), public full text: https://www.researchgate.net/publication/357647227_THE_LEAST_PRIME_QUADRATIC_RESIDUE.
+
+Role: theorem-level source for `MC-057`. The manuscript proves that if `q` is prime, `q ≡ 5 (mod 8)`, and `q` is not in `{5,13,29,37,53,101,173,197,293,677}`, then the least prime quadratic residue `ell(q)` satisfies `ell(q) < (1/2)sqrt(q-1)`. The proof is short: it invokes Mollin's unconditional classification of Rabinowitsch polynomials, extracts a small prime divisor of a composite polynomial value, and uses quadratic reciprocity to show that divisor is a quadratic residue modulo `q`. The manuscript is not treated as peer-reviewed evidence; `MC-057` uses only the displayed theorem and audits its reduction to the published classification.
+
+## MC-S36 — Chowla, Cowles and Cowles, least prime quadratic residue and class number
+
+S. Chowla, J. Cowles and M. Cowles, *The least prime quadratic residue and the class number*, Journal of Number Theory 22 (1986), no. 1, 1–3. DOI: https://doi.org/10.1016/0022-314X(86)90026-0.
+
+Role: classical source for the `q ≡ 3 (mod 8)` branch of `MC-057` and historical boundary for the `q ≡ 5 (mod 8)` branch. For primes `q ≡ 3 (mod 8)`, the paper relates the least prime quadratic residue to the class number of `Q(sqrt(-q))`: when the class number exceeds one the least prime residue is below `sqrt(q/3)`, while in the class-number-one case it equals `(q+1)/4`. Ramírez also records the paper's earlier `q ≡ 5 (mod 8)` bound `ell(q) <= sqrt(q)`.
+
+## MC-S37 — Stark, imaginary quadratic class number one
+
+H. M. Stark, *A complete determination of the complex quadratic fields of class-number one*, Michigan Mathematical Journal 14 (1967), 1–27. DOI: https://doi.org/10.1307/mmj/1028999653.
+
+Role: class-number-one finiteness input for `MC-057`. Stark's theorem completes the determination of imaginary quadratic fields of class number one. In the prime discriminant branch relevant here, only the familiar finite set can occur; hence for a prime modulus `q ≡ 3 (mod 8)` with `q>163`, the class number of `Q(sqrt(-q))` exceeds one and the Chowla–Cowles–Cowles `sqrt(q/3)` least-prime-residue bound applies.
