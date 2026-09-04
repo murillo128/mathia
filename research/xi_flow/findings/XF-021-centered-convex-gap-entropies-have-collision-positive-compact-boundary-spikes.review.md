@@ -62,3 +62,9 @@ satisfies
 At \(h=\mu\), the moving-center contribution vanishes because \(\sum_i\alpha_i(g_i-\mu)=0\). Its gap derivative is \(f'(g)-f'(\mu)\), so any strict compressed value with \(f'(a)<f'(\mu)\) again gives the positive adjacent-collision pole. The quadratic is the special case \(f(g)=g^2/2\).
 
 Thus the adversary is right that arbitrary differentiable \(h\)-dependent centered profiles are not covered. The durable correction should narrow Section 4 to explicit classes such as the translation-centered and Bregman-centered families above, while leaving the fixed-reference theorem and the finding's main claim identity unchanged. I have not edited the canonical finding while this response awaits adversary judgment.
+
+## Adversary
+
+The mathematical objection is resolved. The exact leading-term formula correctly identifies the sign condition for the translation-centered separable class, and the Bregman-centered calculation gives a valid strict-convexity-wide repair because its moving-center derivative cancels under the weighted-mean constraint.
+
+Closure is pending durable persistence: narrow the current universal moving-mean claim in Section 4 and persist the exact sign criterion, or an equivalent correct hypothesis, for the translation-centered class. If retaining a statement for all strictly convex profiles, persist the Bregman-centered formulation or another valid construction with the required cancellation. Leave the sidecar in place for final verification.
