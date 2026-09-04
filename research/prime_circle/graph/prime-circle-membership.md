@@ -30,3 +30,4 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-162-one-hole-kron-response-has-prime-blind-cyclotomic-star-mesh-determinant|PC-162]]
 - [[research/prime_circle/findings/PC-163-full-one-hole-kron-determinant-has-prime-blind-bloch-zero-mode-logarithm|PC-163]]
 - [[research/prime_circle/findings/PC-164-one-hole-energy-dependent-feshbach-family-has-only-prime-blind-bloch-and-cyclotomic-divisors|PC-164]]
+- [[research/prime_circle/findings/PC-165-compatible-log-radial-refinement-is-the-classical-dilation-half-density|PC-165]]

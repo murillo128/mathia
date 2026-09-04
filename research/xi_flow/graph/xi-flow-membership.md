@@ -30,3 +30,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/xi_flow/findings/XF-019-block-cross-ratio-tails-reduce-to-a-super-mesoscopic-buffer|XF-019]]
 - [[research/xi_flow/findings/XF-020-global-counting-error-controls-super-mesoscopic-xi-buffers|XF-020]]
 - [[research/xi_flow/findings/XF-021-centered-convex-gap-entropies-have-collision-positive-compact-boundary-spikes|XF-021]]
+- [[research/xi_flow/findings/XF-022-finite-range-quadratic-mean-removal-has-unavoidable-collision-spikes|XF-022]]
+- [[research/xi_flow/findings/XF-023-summable-fixed-index-variance-tapers-have-collision-spikes|XF-023]]
+- [[research/xi_flow/findings/XF-024-span-normalized-finite-block-shape-energies-have-exterior-collision-spikes|XF-024]]
+- [[research/xi_flow/findings/XF-025-summable-translation-invariant-quadratic-mean-removal-has-collision-spikes|XF-025]]

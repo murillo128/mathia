@@ -24,3 +24,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-018-phase-winding-is-divisor-count|VIS-018]]
 - [[research/visual_exploration/findings/VIS-019-raw-adjacent-gap-geometry-finite-size-rmt-baseline|VIS-019]]
 - [[research/visual_exploration/findings/VIS-020-three-gap-markov-closure-maxent-information-baseline|VIS-020]]
+- [[research/visual_exploration/findings/VIS-021-gram-occupancy-is-discrete-S-increment|VIS-021]]
+- [[research/visual_exploration/findings/VIS-022-hardy-z-gram-sign-is-occupancy-parity|VIS-022]]
+- [[research/visual_exploration/findings/VIS-023-three-gap-cmi-markov-order-likelihood-ratio|VIS-023]]
+- [[research/visual_exploration/findings/VIS-024-three-gap-residual-interaction-pearson-geometry|VIS-024]]

@@ -49,6 +49,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information]]
 - [[research/mobius_cancellation/mind/intuition/MI-006-asymptotically-fixed-mellin-drift-is-information-neutral]]
 - [[research/mobius_cancellation/mind/intuition/MI-007-growing-order-smoothing-can-hide-endpoint-information]]
+- [[research/mobius_cancellation/mind/intuition/MI-008-moving-comparators-need-uniform-family-coherence]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -88,6 +89,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-005-rank-restoration-is-not-quantitative-coercivity]]
 - [[research/weil_inertia/mind/intuition/MI-006-source-rigidity-can-eliminate-screening-extremizers]]
 - [[research/weil_inertia/mind/intuition/MI-007-depth-weighted-schur-tail-is-screening-invariant]]
+- [[research/weil_inertia/mind/intuition/MI-008-inertia-counts-offline-pairs-but-not-their-distance]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]

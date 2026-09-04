@@ -29,3 +29,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-144-zeta-screw-levy-schoenberg-diagonal-collapse|PL-144]]
 - [[research/prime_lattice/findings/PL-145-suzuki-shifted-screw-positive-volterra-semigroup|PL-145]]
 - [[research/prime_lattice/findings/PL-146-suzuki-prime-power-checkpoint-dynamics|PL-146]]
+- [[research/prime_lattice/findings/PL-147-suzuki-weighted-chebyshev-axis-centering|PL-147]]
+- [[research/prime_lattice/findings/PL-148-suzuki-hankel-completed-s1-jet|PL-148]]
+- [[research/prime_lattice/findings/PL-149-completed-xi-workload-recurrence|PL-149]]
+- [[research/prime_lattice/findings/PL-150-prime-gap-recovery-drawdown|PL-150]]
+- [[research/prime_lattice/findings/PL-151-second-scale-weil-boundary-almost-periodicity|PL-151]]

@@ -26,3 +26,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-139-minimal-new-prime-puncture-singular-finite-part-is-bounded-and-prime-blind|WP-139]]
 - [[research/weil_positivity/findings/WP-140-minimal-kron-pseudodeterminant-log-is-a-normalization-anomaly|WP-140]]
 - [[research/weil_positivity/findings/WP-141-kron-logdet-fisher-positivity-annihilates-the-scale-anomaly|WP-141]]
+- [[research/weil_positivity/findings/WP-142-equal-rank-kron-relative-determinant-removes-scale-anomaly-but-remains-prime-blind|WP-142]]
+- [[research/weil_positivity/findings/WP-143-kron-relative-logdet-is-exactly-a-one-mode-affine-invariant-distance-but-not-a-weil-form|WP-143]]
+- [[research/weil_positivity/findings/WP-144-congruence-invariant-spd-metric-freedom-only-rescales-the-one-mode-kron-logarithm|WP-144]]
+- [[research/weil_positivity/findings/WP-145-resultant-hessian-positivity-loses-prime-power-support-and-splits-real-place-curvature|WP-145]]
