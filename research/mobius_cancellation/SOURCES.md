@@ -201,3 +201,9 @@ Role: primary short-interval prime-counting input for `MC-045`. Corollary 1.3 gi
 Marco Aymone, *On multiplicative functions that are small on average and zero-free regions for the Riemann zeta function*, Lithuanian Mathematical Journal 62 (2022), 146–149. DOI: https://doi.org/10.1007/s10986-022-09555-y. arXiv: https://arxiv.org/abs/2006.00827.
 
 Role: primary source for `MC-049`. Theorem 1.1 states that if a completely multiplicative `f:N->[-1,1]` satisfies `sum_{n<=x} f(n) << x^(1-delta)` for some `0<delta<1/2` and its Dirichlet series `F(s)` has `F(1)=0`, then `f` is Liouville-pretentious, the weighted prime discrepancy satisfies `sum_{p<=x}(1+f(p)) log p <<_epsilon x^(1-delta+epsilon)`, and zeta has no zeros in `Re(s)>1-delta`. `MC-049` adds only the elementary converse implication that, under the same power-cancellation hypothesis, global Liouville pretentiousness already forces `F(1)=0`; the zero-free conclusion itself is Aymone's theorem.
+
+## MC-S34 — Treviño, Burgess inequality for cubefree moduli
+
+Enrique Treviño, *The Burgess inequality and the least k-th power non-residue*, International Journal of Number Theory 11 (2015), no. 5, 1653–1678. DOI: https://doi.org/10.1142/S1793042115400163. arXiv: https://arxiv.org/abs/1412.3062.
+
+Role: primary character-sum anchor for `MC-056`. The introduction states the classical Burgess estimate `|S_chi(M,N)| << N^(1-1/r) q^((r+1)/(4r^2)+epsilon)` for primitive characters, with arbitrary fixed `r>=1` when `q` is cubefree. Applied to the product of two distinct quadratic exact-prefix interpolants from `MC-055`, whose product character equals `1` on every integer through the observation scale, it yields the near-quartic product-conductor obstruction.
