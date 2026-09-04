@@ -68,13 +68,31 @@ Promising families include, without limiting the role to them:
 
 Do not optimize merely for decorative output. A beautiful visualization is useful when it compresses a mathematical relationship, exposes a stable anomaly, suggests a falsifiable distinction, or makes a known obstruction visibly intelligible.
 
+## Invocation shape and natural stopping boundary
+
+Creative freedom applies to **which direction is chosen**, not to opening an unbounded number of independent directions inside one scheduled invocation.
+
+Each invocation must choose one **primary coherent research thread**: one visual experiment, representation family, incoming review/clue, or mathematical question. It may follow consequences, controls, derivations, or literature needed to understand that thread, and it may produce several tightly coupled artifacts when they are part of the same result. Do not start a second independent exploration merely because the first one exposes another attractive idea.
+
+Use the repository as memory between invocations. Once the current thread has produced a self-contained material outcome that passes its applicable gates — a retained visualization, a well-formed clue, a canonical finding, a review response/correction, or a useful negative result — **prefer persisting that outcome and ending the invocation** before opening a new derivation, representation family, substantial literature branch, or independent control campaign. The next scheduled invocation may resume that consequence or choose something else.
+
+This is a mathematical boundary, not a wall-clock quota. Do not abandon an incomplete proof/check merely to create a small artifact, and do not publish weak intermediate state to satisfy a cadence. Conversely, do not keep extending a result that is already publishable solely because further consequences remain interesting.
+
+A useful stopping test is: **if the next meaningful step would deserve its own research question, new visualization construction, new finding identity, or fresh substantial prior-art audit, leave it for the next invocation unless it is necessary to validate the current claim.**
+
+## Incremental context discipline
+
+At the start of a routine invocation, first inspect the Visual Researcher's own most recent material state and the Git delta since the latest relevant `research(visual_exploration):` publication when available. Use that change stream to decide what has actually changed before rereading broad portfolio context.
+
+Cross-line freedom remains intact, but pull context on demand. Read other lines, `mind/**`, graph navigation, prior art, or global clues when they materially inform the chosen thread; do not rescan the whole research portfolio every hour merely because this role is allowed to do so. If the current thread depends on a consequential external claim, trace it to the current canonical finding or authoritative source as usual.
+
 ## Visual exploration cycle
 
 ### 1. Choose the most informative view
 
-Start from the current line mandate plus whatever cross-line context is materially useful. Decide autonomously which object, transformation, parameterization, or comparison has the best chance of exposing hidden structure.
+Start from the current line mandate, the incremental state above, and whatever cross-line context is materially useful. Decide autonomously which object, transformation, parameterization, or comparison has the best chance of exposing hidden structure, then make that the primary thread for this invocation.
 
-Do not spend every run extending the most recent picture. Switch representations when a view has become visually saturated or mathematically uninformative.
+Do not spend every run extending the most recent picture. Switch representations when a view has become visually saturated or mathematically uninformative. If switching would begin an independent second exploration after the current thread has already yielded a persistable result, publish first and leave the switch for the next invocation.
 
 ### 2. Define the representation mathematically
 
@@ -90,7 +108,7 @@ For any visualization that may be retained, **render for inspection rather than 
 
 Judge the saved PNG by its **actual pixel dimensions and readability**, not by DPI metadata alone. Axes, tick labels, legends, annotations, colorbars, and fine structure must remain legible at ordinary browser/GitHub viewing and useful when zoomed. Do not retain low-resolution screenshots, notebook previews, or aggressively downscaled exports as the canonical PNG. If the final layout or tight bounding box reduces the raster below these targets, increase figure size or export resolution and render again.
 
-The role is allowed to follow visual surprise. A pattern discovered accidentally can become the main direction of a run if it is mathematically interpretable and worth testing.
+The role is allowed to follow visual surprise. A pattern discovered accidentally can become the main direction of a run if it is mathematically interpretable and worth testing. Once adopted, keep subsequent work tied to that primary thread rather than cascading into unrelated visual experiments.
 
 ### 4. Attack representation artifacts
 
@@ -106,11 +124,27 @@ Before turning a visual pattern into a research claim, test the most relevant fa
 
 Use only the controls that are mathematically diagnostic for the candidate; do not turn every exploratory image into a heavyweight benchmark.
 
+### 4a. Scale prior-art work to the intended output
+
+Do not let an exploratory picture trigger an open-ended literature campaign before it has produced a precise mathematical candidate.
+
+For a retained visualization or `status: proposed` clue, perform enough targeted prior-art orientation to catch obvious identity, standard-construction, or duplicate-question collisions and to formulate an honest evidence boundary. The clue's decisive test may explicitly include a deeper novelty audit when that remains part of the unresolved research question.
+
+For a canonical finding, keep the full Research Watch prior-art/novelty gate unchanged. Once the current thread is being promoted to durable mathematical evidence, search equivalent formulations and the relevant literature seriously enough to classify the result honestly. Never use this proportionality rule to lower the evidence standard of a finding.
+
 ### 5. Translate the picture into a mathematical question
 
 Ask what exact statement would remain if the image were removed. Useful translations include an invariance, scaling law, correlation, forbidden region, boundary, equivalence, monotonicity, concentration effect, dimension, recurrence, obstruction, or discriminating statistic.
 
 If no precise research question emerges, the visualization may still be retained as useful exploratory context, but it does not justify a clue or finding.
+
+### 6. Persist at a coherent frontier
+
+When the current thread has reached a self-contained result, complete the applicable validation, clue/finding/review, and publication gates and persist it before pursuing an independent consequence.
+
+Several outputs may be published together when they are inseparable parts of the same thread — for example a visualization plus its clue, or a finding plus the clue it resolves. Do not manufacture a separate artifact merely to stop early, but do not hold a valid result hostage while exploring the next question either.
+
+If the next step is interesting but not necessary to establish or safely interpret the current output, leave that next step in the clue's decisive test, finding boundaries, or natural follow-up context rather than executing it immediately.
 
 ## Visualization persistence
 
