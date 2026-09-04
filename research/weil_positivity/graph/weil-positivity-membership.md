@@ -30,3 +30,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-143-kron-relative-logdet-is-exactly-a-one-mode-affine-invariant-distance-but-not-a-weil-form|WP-143]]
 - [[research/weil_positivity/findings/WP-144-congruence-invariant-spd-metric-freedom-only-rescales-the-one-mode-kron-logarithm|WP-144]]
 - [[research/weil_positivity/findings/WP-145-resultant-hessian-positivity-loses-prime-power-support-and-splits-real-place-curvature|WP-145]]
+- [[research/weil_positivity/findings/WP-146-critical-resultant-kernel-is-conditionally-indefinite-on-mixed-prime-three-chain|WP-146]]
+- [[research/weil_positivity/findings/WP-147-disjoint-resultant-chains-force-unbounded-primitive-two-sided-inertia|WP-147]]
+- [[research/weil_positivity/findings/WP-148-canonical-resultant-graph-laplacian-has-infinite-critical-degree-and-trivial-l2-domain|WP-148]]
+- [[research/weil_positivity/findings/WP-149-spectator-prime-parallel-paths-collapse-resultant-resistance-and-energy-space|WP-149]]
+- [[research/weil_positivity/findings/WP-150-local-finite-energy-renormalizations-erase-resultant-arithmetic-edges|WP-150]]

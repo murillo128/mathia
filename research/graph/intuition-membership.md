@@ -40,6 +40,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-007-stable-fidelity-is-distance-from-collision]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-008-compact-fidelity-needs-cross-scale-witness-compactness]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-009-quotient-repair-has-category-regularity-and-naturality-gates]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-011-coherent-exact-description-has-an-entropy-atomicity-gate]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -77,6 +79,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-007-pointing-breaks-gauge-but-exposes-additive-correlations]]
 - [[research/prime_lattice/mind/intuition/MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization]]
 - [[research/prime_lattice/mind/intuition/MI-009-discrete-phase-fidelity-is-not-zero-selection]]
+- [[research/prime_lattice/mind/intuition/MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -90,6 +93,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-006-source-rigidity-can-eliminate-screening-extremizers]]
 - [[research/weil_inertia/mind/intuition/MI-007-depth-weighted-schur-tail-is-screening-invariant]]
 - [[research/weil_inertia/mind/intuition/MI-008-inertia-counts-offline-pairs-but-not-their-distance]]
+- [[research/weil_inertia/mind/intuition/MI-009-scalar-universality-collapses-to-fourier-positivity]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
