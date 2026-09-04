@@ -195,3 +195,9 @@ Role: primary prior-art anchor for `MC-042` and the order-one discussion in `MC-
 Larry Guth and James Maynard, *New large value estimates for Dirichlet polynomials*, Annals of Mathematics 203 (2026), no. 2, 623–675. DOI: https://doi.org/10.4007/annals.2026.203.2.6. arXiv: https://arxiv.org/abs/2405.20552.
 
 Role: primary short-interval prime-counting input for `MC-045`. Corollary 1.3 gives the uniform prime-number asymptotic in intervals of length `y` throughout `x^(17/30+epsilon) <= y <= x^0.99` for every fixed positive `epsilon`; equivalently `pi(x+y)-pi(x) ~ y/log x` in that range. This improves the previous `7/12` threshold and is used only to guarantee that a terminal prime slab of width `X^alpha`, `alpha>17/30`, contains `X^(alpha+o(1))` primes. No RH assumption enters this input.
+
+## MC-S33 — Aymone, small completely multiplicative sums and zeta zero-free regions
+
+Marco Aymone, *On multiplicative functions that are small on average and zero-free regions for the Riemann zeta function*, Lithuanian Mathematical Journal 62 (2022), 146–149. DOI: https://doi.org/10.1007/s10986-022-09555-y. arXiv: https://arxiv.org/abs/2006.00827.
+
+Role: primary source for `MC-049`. Theorem 1.1 states that if a completely multiplicative `f:N->[-1,1]` satisfies `sum_{n<=x} f(n) << x^(1-delta)` for some `0<delta<1/2` and its Dirichlet series `F(s)` has `F(1)=0`, then `f` is Liouville-pretentious, the weighted prime discrepancy satisfies `sum_{p<=x}(1+f(p)) log p <<_epsilon x^(1-delta+epsilon)`, and zeta has no zeros in `Re(s)>1-delta`. `MC-049` adds only the elementary converse implication that, under the same power-cancellation hypothesis, global Liouville pretentiousness already forces `F(1)=0`; the zero-free conclusion itself is Aymone's theorem.
