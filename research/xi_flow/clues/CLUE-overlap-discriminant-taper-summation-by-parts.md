@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-overlap-discriminant-taper-summation-by-parts
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: xi_flow
 based_on:
@@ -58,3 +58,9 @@ The counterexample test should increase the buffer width rather than use only on
 The convolution identity for `W_k` is elementary and exact, and `XF-027`/`XF-028` establish the blockwise production, affine cancellation, and near-collision pair-coverage asymptotic.
 
 No summation-by-parts formula for the full aggregate derivative has been established, no uniform Xi-flow flux bound is known here, and slow taper variation is not evidence of monotonicity. This clue proposes the missing derivation or falsifying counterexample; it does not assert that tapering closes the Xi-flow argument.
+
+## Research disposition
+
+Accepted for continued investigation. `XF-029` proves the desired localization mechanism at quadratic order around the arithmetic lattice for overlapping three-root discriminants: the weighted derivative splits into positive Cauchy production plus a commutator potential whose coefficient is `La`, and a width-`M` smooth taper has `||La||_infinity=O(1/M)`. Combined with the existing Xi memory and buffer scales, that perturbative loss is smaller than memory-scale Cauchy production by `O(1/R(T))` when the physical buffer is `R(T) log T`.
+
+This does **not** resolve the clue's finite-gap question. The remaining decisive test is an exact nonlinear analogue of the Cauchy commutator estimate, preserving the collision positivity of `XF-028` and the affine/cubic far-field cancellation of `XF-027`, or a growing-buffer counterexample showing that an order-one nonlinear defect survives even when taper variation tends to zero.
