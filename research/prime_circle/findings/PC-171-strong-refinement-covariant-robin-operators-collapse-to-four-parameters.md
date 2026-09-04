@@ -32,7 +32,7 @@ C_n e_k=e_{nk}.
 \tag{2}
 \]
 
-Let `A` be self-adjoint, or more generally symmetric on a common invariant trigonometric core containing every `e_k`, and suppose (1) holds on that core for **every** integer `n>=2`. Write
+Let `A` be self-adjoint with the trigonometric polynomials as a core, assume every `C_n` preserves that core, and suppose (1) holds there for **every** integer `n>=2`. The coefficient argument below in fact needs only symmetry on this core; the core assumption is what makes the resulting Fourier action determine the self-adjoint realization. Write
 
 \[
 a_{jk}=\langle e_j,Ae_k\rangle.
@@ -98,7 +98,13 @@ and therefore
 \tag{7}
 \]
 
-Equations (6)--(7) are the complete Fourier classification on the common trigonometric core. Conversely, every fixed Hermitian `M` defines such a first-order block operator and satisfies (1).
+Equations (6)--(7) are the complete Fourier classification on the trigonometric core. Since that core determines `A`, the self-adjoint realization is the direct-sum block multiplier with blocks `rM` and maximal graph domain
+
+\[
+\mathcal D(A)=\left\{v=(v_r)_{r\ge1}:\sum_{r\ge1}r^2\|Mv_r\|^2<\infty\right\}
+\]
+
+plus the free zero mode. Conversely, every fixed Hermitian `M` gives this self-adjoint block multiplier and satisfies (1) on the trigonometric core.
 
 ## 2. The four-parameter normal form
 
@@ -110,13 +116,13 @@ D=-i\partial_\theta,
 R e_k=e_{-k}.
 \]
 
-Then `R` is unitary and self-adjoint, `R D=-D R`, and `R` commutes with `|D|`. The four operators
+Then `R` is unitary and self-adjoint, `R D=-D R`, and `R` commutes with `|D|`. On trigonometric polynomials the four operators
 
 \[
 |D|,\qquad D,\qquad |D|R,\qquad iDR
 \]
 
-are self-adjoint on the standard first-order domain and each obeys (1), because
+are symmetric and each obeys (1), because
 
 \[
 D C_n=nC_nD,
@@ -137,7 +143,7 @@ a&c\\
 \end{pmatrix}
 \]
 
-has four real parameters. Writing them as `alpha,beta,gamma,delta` gives the equivalent operator normal form
+has four real parameters. Writing them as `alpha,beta,gamma,delta` gives, on the common core, the equivalent normal form
 
 \[
 \boxed{
@@ -148,7 +154,7 @@ A=\alpha|D|+\beta D+\gamma|D|R+\delta\,iDR,
 \tag{9}
 \]
 
-On `E_r`, the corresponding block is
+Its self-adjoint closure is exactly the block multiplier described above; when the block is singular, its maximal graph domain can be larger than the common `H^1` domain because the zero-eigenvalue channel carries no first-order growth. On `E_r`, the block is
 
 \[
 r
@@ -159,7 +165,7 @@ r
 \tag{10}
 \]
 
-If the Robin form is additionally required to be nonnegative, (10) merely restricts this fixed matrix to the positive-semidefinite cone; it does not restore any frequency-dependent arithmetic freedom. If reflection symmetry is imposed, the orientation-breaking terms disappear and the familiar symmetric branch reduces further toward the classical `|D|` family already identified in PC-170.
+If the Robin form is additionally required to be nonnegative, (10) merely restricts this fixed matrix to the positive-semidefinite cone; it does not restore any frequency-dependent arithmetic freedom. Reflection symmetry `RA=AR` forces `beta=delta=0`, leaving `A=alpha|D|+gamma|D|R`. If rotation invariance is imposed as well, `gamma=0`, and one recovers precisely the classical `alpha|D|` branch identified in PC-170.
 
 ## 3. Why strong covariance is much more rigid than the form relation
 
@@ -190,7 +196,7 @@ First, self-adjointness/symmetry is essential. Without it, (4) only constrains t
 
 Second, the **full** power semigroup is essential to the stated four-parameter result. If covariance is demanded only for one fixed refinement, such as `n=2`, independent dilation orbits remain and the classification is much larger.
 
-Third, the result assumes the natural trigonometric core is contained in the operator domain and is a core for the self-adjoint realization. This covers the standard first-order pseudodifferential/DtN-type operators relevant to the Robin continuation. Pathological self-adjoint realizations deliberately excluding the Fourier core are outside the statement.
+Third, the result assumes the trigonometric polynomials lie in the operator domain, are preserved by the covering maps, and form a core for the self-adjoint realization. This is the natural setting for the standard first-order Fourier/pseudodifferential/DtN operators relevant to the Robin continuation. Self-adjoint realizations for which this Fourier core is not available are outside the statement.
 
 Fourth, `A` is the same boundary operator transported through every refinement. Level-dependent or shell-dependent families `A_n`, singular point-supported boundary relations, nonlinear boundary maps, and weaker unbounded solutions of (11) are not ruled out.
 
