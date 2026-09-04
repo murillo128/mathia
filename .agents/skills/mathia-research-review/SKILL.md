@@ -307,9 +307,21 @@ Use exactly this trailer when persisting an advanced cursor:
 Adversarial-Reviewed-Through: <full-commit-sha>
 ```
 
-The cursor SHA is the **source/default-branch commit that introduced or last materially changed the final eligible research finding/event in the contiguous prefix that has been completely audited**. In other words, it identifies the source commit of the last fully covered research change, not a finding ID and not the adversarial checkpoint commit's own SHA.
+The cursor SHA is normally the **source/default-branch commit that introduced or last materially changed the final eligible research finding/event in the contiguous prefix that has been completely audited**. It identifies the source commit of the last fully covered research change, not a finding ID and not the adversarial checkpoint commit's own SHA.
 
-The cursor may advance only across a **contiguous fully reviewed prefix** of the frozen history window. In particular:
+### One-time bootstrap cursor
+
+When this checkpoint scheme is introduced into a repository that already has legacy adversarial history but **no existing `Adversarial-Reviewed-Through` trailer**, the first cursor may use one migration-only exception: initialize it from the source/default-branch commit containing the exact canonical finding version that was the target of the most recent completed adversarial review known from Git history.
+
+This first cursor is a **resume anchor**, not a retrospective assertion that every eligible finding before it was adversarially audited. Its purpose is to migrate the existing running process without re-reviewing the entire historical corpus. If the reviewed version is known initially by a finding/blob SHA, resolve that exact version to the default-branch commit that introduced or persisted it and store the **commit SHA** in `Adversarial-Reviewed-Through`; do not store a blob SHA in the trailer.
+
+The bootstrap exception is available **only while no coverage trailer exists**. Once the first trailer has been persisted, never bootstrap again: every later cursor advance must obey the normal contiguous-coverage rules below from that anchor forward. Older pre-bootstrap material may still be selected through the ordinary high-value unaudited-backlog path, but it does not block forward cursor progress.
+
+The first bootstrap cursor may be persisted in an otherwise empty adversarial checkpoint commit when there is no material sidecar/clue change to carry it.
+
+### Normal cursor advancement after bootstrap
+
+After a first cursor exists, the cursor may advance only across a **contiguous fully reviewed prefix** of the frozen history window starting after the persisted cursor. In particular:
 
 - every eligible new or materially changed canonical finding introduced by a source commit must be fully audited before the cursor may advance through that commit;
 - when one source commit changes several eligible findings, all of them must be audited before that commit can become the cursor;
@@ -347,15 +359,15 @@ Adversarial-Reviewed-Through: <full-source-commit-sha>
 
 The empty checkpoint is allowed only when all of the following hold:
 
-1. the trailer advances beyond the most recent trustworthy persisted coverage SHA;
-2. the new SHA is the source commit of the last fully reviewed research change in a contiguous covered prefix;
-3. every eligible finding event through that SHA has actually been audited;
-4. the batch covers meaningful progress rather than a single trivial finding when more work can safely be accumulated;
-5. the caller is stopping at a deliberate batch boundary, nearing its execution budget, about to enter a disproportionately expensive next audit, or has completed the frozen scan target cleanly.
+1. the trailer advances beyond the most recent trustworthy persisted coverage SHA, or establishes the one-time bootstrap cursor described above;
+2. after bootstrap, the new SHA is the source commit of the last fully reviewed research change in a contiguous covered prefix;
+3. after bootstrap, every eligible finding event through the newly advanced interval has actually been audited;
+4. the batch covers meaningful progress rather than a single trivial finding when more work can safely be accumulated, except for the one-time bootstrap checkpoint;
+5. the caller is stopping at a deliberate batch boundary, nearing its execution budget, about to enter a disproportionately expensive next audit, has completed the frozen scan target cleanly, or is establishing the one-time bootstrap cursor.
 
 Do not emit an empty checkpoint merely because a scheduled run occurred, when the cursor would not advance, or as a per-finding heartbeat. Prefer folding the trailer into the next material adversarial commit whenever that can be done without risking substantial repeated work.
 
-If no trailer exists yet, use the caller's existing legacy boundary rule for the transitional scan. As soon as a truthful contiguous prefix has been audited, either a material adversarial commit or an allowed empty coverage checkpoint may establish the first trailer. Never infer or invent coverage for history that was not actually audited.
+If no trailer exists yet, use the one-time bootstrap rule above rather than pretending that a legacy adversarial commit certifies contiguous historical coverage. After the first trailer exists, normal contiguous advancement is mandatory. Never infer or invent forward coverage that was not actually audited.
 
 ## Clues discovered during review
 
@@ -414,7 +426,8 @@ Before publishing any review-protocol change or empty coverage checkpoint:
 6. verify the diff contains no unauthorized mind, graph, prior-art, code, experiment, or unrelated changes;
 7. ensure every comment or persistence edit materially advances the mathematical dispute;
 8. ensure a convergence deletion follows the exact owner/adversary rules above;
-9. when an adversarial commit carries `Adversarial-Reviewed-Through`, verify that the SHA is the source commit of the last fully reviewed research change in a truthful contiguous coverage prefix and that no eligible finding event through it remains partially reviewed or skipped;
-10. for an empty coverage checkpoint, verify the tree is unchanged, the cursor genuinely advances, the completed batch represents meaningful progress, and the commit is not merely a run heartbeat.
+9. for the one-time bootstrap cursor, verify there is no prior `Adversarial-Reviewed-Through` trailer and that Git history identifies the exact reviewed finding version and its source/default-branch commit;
+10. after bootstrap, when an adversarial commit carries `Adversarial-Reviewed-Through`, verify that the SHA is the source commit of the last fully reviewed research change in a truthful contiguous coverage prefix from the prior cursor and that no eligible finding event in the advanced interval remains partially reviewed or skipped;
+11. for an empty coverage checkpoint, verify the tree is unchanged, the cursor genuinely advances or establishes the one-time bootstrap, and the commit is not merely a run heartbeat.
 
 Review dialogue is not a run log. Apart from the narrowly authorized empty coverage checkpoint above, if nothing material changed and no meaningful contiguous coverage progress needs durable checkpointing, commit nothing.
