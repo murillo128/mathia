@@ -20,13 +20,13 @@ Short-chord models recover strong average/Mertens top-band information while ope
 
 Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, harmonic response, Kron determinants, and Feshbach families now classicalize. A live carrier must be all-shell, growing-base, genuinely multi-hole, singular/domain-changing, or nonlinear/noncommuting before fixed-base elimination.
 
-## Treat the compatible completion as a labeled carrier, not a zero Hamiltonian
+## Leave the local finite-order refinement category before seeking zero localization
 
 **Linked intuitions:** `MI-004-compatible-completion-lacks-coercive-rh-scale`.
 
-PC-165--PC-166 sharpen the completion boundary. Compatible radial refinement is exactly classical logarithmic dilation with the `-1/2+it` unitary half-density, and every regular power-homogeneous local metric is a flat log cylinder with continuous radial spectrum. Neither cross-term metric tuning nor the canonical half-weight supplies zero localization.
+PC-165--PC-168 sharpen the compatible-completion boundary. Radial refinement is classical logarithmic dilation with the `-1/2+it` unitary half-density. Full refinement covariance forces every local metric to a radial power law and every finite-order differential coefficient to the corresponding homogeneous monomial; at second order the remaining scalar singularity is only inverse-square type. These local coefficients are reproduced by the naked refinement semigroup and carry no primitive-shell selector.
 
-A useful completion must therefore force a nonlocal, singular/domain-changing, non-homogeneous, or genuinely radial--arithmetic coupled operator whose source selector and sign theorem survive matched classical controls.
+A useful completion must therefore be nonlocal, shell/level-dependent, cross-level, nonlinear/noncommuting, genuinely radial--arithmetic coupled, or use a singular domain/boundary condition independently forced by the root system. Choosing a power-law singularity or extension parameter after the coefficient classification is not arithmetic evidence.
 
 ## Cross the Hardy boundary before the one-new-prime corrector becomes universal
 
