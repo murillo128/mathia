@@ -1,6 +1,6 @@
 ---
 name: mathia-research-review
-description: Shared sidecar protocol for adversarial review of Mathia research findings, with turn ownership, durable-math persistence, Git-visible convergence, clue handoff, and review-notification semantics.
+description: Shared sidecar protocol for adversarial review of Mathia research findings, with turn ownership, durable-math persistence, resumable Git coverage checkpoints, clue handoff, and review-notification semantics.
 ---
 
 # Mathia Research Review
@@ -307,24 +307,25 @@ Use exactly this trailer when persisting an advanced cursor:
 Adversarial-Reviewed-Through: <full-commit-sha>
 ```
 
-The SHA is the **source/default-branch commit through which eligible research changes have been completely audited**. It is not the finding ID and it is not the adversarial commit's own SHA.
+The cursor SHA is the **source/default-branch commit that introduced or last materially changed the final eligible research finding/event in the contiguous prefix that has been completely audited**. In other words, it identifies the source commit of the last fully covered research change, not a finding ID and not the adversarial checkpoint commit's own SHA.
 
 The cursor may advance only across a **contiguous fully reviewed prefix** of the frozen history window. In particular:
 
 - every eligible new or materially changed canonical finding introduced by a source commit must be fully audited before the cursor may advance through that commit;
 - when one source commit changes several eligible findings, all of them must be audited before that commit can become the cursor;
 - never jump over a source commit containing an eligible finding that was only partially inspected or deferred;
-- if execution stops part-way through the eligible findings associated with one source commit, keep the cursor at the preceding fully covered commit;
+- if execution stops part-way through the eligible findings associated with one source commit, keep the cursor at the preceding fully covered source commit;
 - commits after the frozen scan target never affect the truth of the cursor for the current pass; they are discovered in the next pass.
 
 ### Batch publication
 
-Do **not** commit once per finding. Accumulate substantive sidecar/clue changes across several completed reviews or source commits and publish them as a small coherent batch. A batch boundary should be chosen when one of these is true:
+Do **not** commit once per finding. Accumulate work across several completed audits or source commits and publish/checkpoint it as a small coherent batch. A batch boundary should be chosen when one of these is true:
 
 - several findings have been fully audited and there is material review state worth persisting;
+- several findings or source commits have been fully audited cleanly and persisting coverage would prevent substantial repeated work;
 - a natural contiguous source-commit boundary has been completed;
 - the remaining execution budget is becoming too small to safely complete another finding plus refresh/publication gates;
-- an expensive next audit would put already completed material work at unnecessary risk of being lost.
+- an expensive next audit would put already completed work at unnecessary risk of being lost.
 
 Before starting another finding, inspect the remaining execution/time/tool-call/token budget when the runtime exposes such a signal. Start another audit only when there is comfortable margin to finish its mathematical check, refresh the affected target, run the publication/path gates, and persist any resulting batch. When no explicit remaining-budget signal is available, use a conservative heuristic based on work already performed and the expected complexity of the next audit rather than continually starting one more finding.
 
@@ -332,9 +333,29 @@ Before each batch commit, refresh every affected target and sidecar against the 
 
 When a material batch also establishes new contiguous scan coverage, include `Adversarial-Reviewed-Through: <sha>` in that commit message using the furthest fully covered source commit. Multiple review transitions may therefore share one commit and one cursor advancement.
 
-Do **not** create an empty commit merely to persist scan progress. If a completed clean batch produces no repository change, commit nothing. A clean suffix may consequently be re-audited after interruption; this small amount of repeated computation is preferable to turning Git history into a run log. If the same run later accumulates a material batch, its trailer may advance across those previously completed clean commits as long as the whole prefix is genuinely covered.
+### Empty coverage checkpoints
 
-If no trailer exists yet, use the caller's existing legacy boundary rule for the transitional scan. The first later material batch that has a truthful contiguous coverage boundary may establish the trailer. Never infer or invent coverage for history that was not actually audited.
+An adversarial caller may create an **empty Git commit** whose tree is identical to its parent when a completed clean batch advances the truthful contiguous coverage cursor but produces no sidecar or clue change. This is an explicit exception to the ordinary no-churn rule and exists to prevent starvation loops where a long clean prefix is repeatedly re-audited because a later expensive finding repeatedly consumes or exceeds the execution budget.
+
+Use a compact commit message such as:
+
+```text
+research(adversarial): checkpoint reviewed research prefix
+
+Adversarial-Reviewed-Through: <full-source-commit-sha>
+```
+
+The empty checkpoint is allowed only when all of the following hold:
+
+1. the trailer advances beyond the most recent trustworthy persisted coverage SHA;
+2. the new SHA is the source commit of the last fully reviewed research change in a contiguous covered prefix;
+3. every eligible finding event through that SHA has actually been audited;
+4. the batch covers meaningful progress rather than a single trivial finding when more work can safely be accumulated;
+5. the caller is stopping at a deliberate batch boundary, nearing its execution budget, about to enter a disproportionately expensive next audit, or has completed the frozen scan target cleanly.
+
+Do not emit an empty checkpoint merely because a scheduled run occurred, when the cursor would not advance, or as a per-finding heartbeat. Prefer folding the trailer into the next material adversarial commit whenever that can be done without risking substantial repeated work.
+
+If no trailer exists yet, use the caller's existing legacy boundary rule for the transitional scan. As soon as a truthful contiguous prefix has been audited, either a material adversarial commit or an allowed empty coverage checkpoint may establish the first trailer. Never infer or invent coverage for history that was not actually audited.
 
 ## Clues discovered during review
 
@@ -383,7 +404,7 @@ Clue writes require `mathia-research-clues`; this skill does not independently g
 
 ## Publication gate
 
-Before publishing any review-protocol change:
+Before publishing any review-protocol change or empty coverage checkpoint:
 
 1. verify the target exists unless the owner is atomically withdrawing it;
 2. verify the sidecar name exactly matches the target;
@@ -393,7 +414,7 @@ Before publishing any review-protocol change:
 6. verify the diff contains no unauthorized mind, graph, prior-art, code, experiment, or unrelated changes;
 7. ensure every comment or persistence edit materially advances the mathematical dispute;
 8. ensure a convergence deletion follows the exact owner/adversary rules above;
-9. when an adversarial commit carries `Adversarial-Reviewed-Through`, verify that the SHA is a truthful contiguous coverage boundary and that no eligible finding event through it remains partially reviewed or skipped;
-10. never create an empty commit solely to advance adversarial scan coverage.
+9. when an adversarial commit carries `Adversarial-Reviewed-Through`, verify that the SHA is the source commit of the last fully reviewed research change in a truthful contiguous coverage prefix and that no eligible finding event through it remains partially reviewed or skipped;
+10. for an empty coverage checkpoint, verify the tree is unchanged, the cursor genuinely advances, the completed batch represents meaningful progress, and the commit is not merely a run heartbeat.
 
-Review dialogue is not a run log. If nothing material changed, commit nothing.
+Review dialogue is not a run log. Apart from the narrowly authorized empty coverage checkpoint above, if nothing material changed and no meaningful contiguous coverage progress needs durable checkpointing, commit nothing.
