@@ -1,6 +1,6 @@
 # PF-069 — prime-vector limit points force a positive interval of primitive length accumulation
 
-**Status:** `DECISIVE-NEGATIVE` for any attempt to rescue a global Selberg/wave-trace theory merely by removing the short-orbit sector; `EXACT-DERIVED` arithmetic-to-geometric consequence.
+**Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE/TRACE-LOCAL-FINITENESS + MATCHED-CONTROL-BLIND-AS-SELECTOR`. The arithmetic-to-geometric construction below is exact for the prime flute. PF-167, using PF-166, later shows that the same positive accumulation interval is inherited by the exact all-composite shift clone, so the resulting non-discrete primitive-length phenomenon is not a primality selector.
 
 ## 1. Exact prime-flute length from three consecutive gaps
 
@@ -194,6 +194,8 @@ I_L\subset
 
 The primitive separating lengths are therefore dense in a genuine positive-length interval.
 
+The separator blocks realizing any such accumulation sequence have indices tending to infinity, hence escape every fixed finite head. This localization is important for the later matched-control audit: PF-166's complete marked-tail comparison therefore applies to these same classes, and PF-167 proves that their marked images in the exact all-composite shift clone accumulate on the same interval `I_L`.
+
 ## 4. Stronger trace/zeta obstruction away from zero
 
 PF-020/PF-035/PF-036 established severe failures caused by primitive lengths accumulating at zero and by their iterates. PF-069 shows that this is **not merely a short-orbit pathology**.
@@ -222,6 +224,8 @@ Likewise, even after deleting all primitive geodesics shorter than any fixed cut
 
 Therefore a renormalization which merely subtracts/factors the \(L\to0\) sector cannot restore the standard trace/zeta architecture.
 
+PF-167 shows that this local-finiteness obstruction is itself matched-control-blind: the exact all-composite shift clone has the same positive interval of primitive simple accumulation and the same resulting infinite-count obstruction. The trace/zeta conclusion remains valid, but it cannot be interpreted as evidence that the geometry distinguishes prime labels from that control.
+
 ## 5. Relation to the distinguished cuffs
 
 The BFM vectors consist of prime-gap fluctuations at the natural \(\log p\) scale. The distinguished cuffs satisfy
@@ -239,7 +243,7 @@ along such subsequences. Thus the three normalized gaps, equivalently the relati
 
 which then gives the primitive geodesic length \(4\operatorname{arsinh}\sqrt\chi\).
 
-This is a genuinely multi-gap effect; it does not contradict the earlier negative results showing that a single cuff is spectrally universal locally.
+This is a genuinely multi-gap effect; it does not contradict the earlier negative results showing that a single cuff is spectrally universal locally. The later shift-clone control sharpens the interpretation: the relational gap geometry is genuinely retained by the hyperbolic construction, but retention is weaker than primality specificity.
 
 ## 6. Novelty / prior-art check
 
@@ -249,10 +253,11 @@ Known ingredients:
 2. Banks–Freiberg–Maynard (Proc. LMS 113 (2016), Theorem 1.3) prove the stronger finite hitting statement used above.
 3. Infinite-type hyperbolic surfaces can certainly have non-discrete length spectrum. Fanoni–Fisac (arXiv:2602.19670, 2026) explicitly contrast this with the discrete-length-spectrum regime and note easy constructions of non-discreteness.
 4. The relation between cross-ratios/traces and hyperbolic translation lengths is classical.
+5. Transfer of marked closed lengths under an asymptotically bilipschitz marking is classical; PF-166 audits the relevant infinite-type length-spectrum framework.
 
 Directed searches for combinations of `normalized prime gaps + cross-ratio`, `prime gaps + hyperbolic length spectrum`, and `primitive length spectrum + prime gaps` did not locate this composition. No novelty is claimed for any ingredient separately.
 
-The substantive new point for the present program is the composition
+The substantive project-specific point is the composition
 
 \[
 \boxed{
@@ -264,10 +269,10 @@ The substantive new point for the present program is the composition
 }
 \]
 
-This is much stronger than merely restating prime-gap statistics: the scalar map is forced by the exact orthogonal-circle/Fuchsian geometry, and the consequence is an intrinsic geometric obstruction to trace/zeta local finiteness.
+PF-167 supplies the later matched-control classification of that output. The scalar map is forced by the exact orthogonal-circle/Fuchsian geometry, so PF-069 is much stronger than merely restating prime-gap statistics; however, the resulting interval is not by itself an arithmetic selector because the exact all-composite shift clone inherits it.
 
 ## 7. Research consequence
 
 Do not spend further effort on a global Selberg/Ruelle/trace construction whose only proposed cure is to renormalize the primitive orbits accumulating at \(0\). Even after that sector is removed, the prime-flute has a positive compact length interval with infinitely dense primitive separating lengths and infinite primitive orbital mass in every subwindow.
 
-Any viable global object must therefore renormalize a **continuum-like positive-length accumulation sector** as well, or abandon global orbit summation in favor of spatially localized/tangent observables.
+The matched-control consequence is equally important: **that positive-window pathology cannot itself distinguish primes from the exact all-composite shift clone.** Any viable global object must therefore both handle the continuum-like positive-length accumulation sector and extract additional collective information not fixed by the asymptotic marked-length equivalence.
