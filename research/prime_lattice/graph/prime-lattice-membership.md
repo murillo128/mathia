@@ -27,3 +27,5 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-142-zeta-kernel-complete-pick-obstruction|PL-142]]
 - [[research/prime_lattice/findings/PL-143-zeta-kernel-levy-duality-completion-boundary|PL-143]]
 - [[research/prime_lattice/findings/PL-144-zeta-screw-levy-schoenberg-diagonal-collapse|PL-144]]
+- [[research/prime_lattice/findings/PL-145-suzuki-shifted-screw-positive-volterra-semigroup|PL-145]]
+- [[research/prime_lattice/findings/PL-146-suzuki-prime-power-checkpoint-dynamics|PL-146]]

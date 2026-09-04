@@ -25,3 +25,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/mobius_cancellation/findings/MC-045-prime-slab-multiplicative-one-scale-invisibility|MC-045]]
 - [[research/mobius_cancellation/findings/MC-046-future-window-endpoint-kernel-visibility-threshold|MC-046]]
 - [[research/mobius_cancellation/findings/MC-047-strong-pretentious-terminal-slab-detection|MC-047]]
+- [[research/mobius_cancellation/findings/MC-048-beta-pretentious-half-exponent-terminal-slab|MC-048]]
+- [[research/mobius_cancellation/findings/MC-049-global-liouville-pretentious-comparator-zero-free-barrier|MC-049]]
+- [[research/mobius_cancellation/findings/MC-050-global-mobius-close-squarefree-comparator-bootstrap|MC-050]]
+- [[research/mobius_cancellation/findings/MC-051-real-squarefree-amplitude-positivity-bootstrap|MC-051]]
+- [[research/mobius_cancellation/findings/MC-052-complex-squarefree-pretentious-phase-budget|MC-052]]

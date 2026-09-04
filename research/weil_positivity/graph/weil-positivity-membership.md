@@ -24,3 +24,5 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-137-repeated-prime-full-chord-green-trace-is-harmonic-logarithmic-not-exact-mangoldt|WP-137]]
 - [[research/weil_positivity/findings/WP-138-new-prime-puncture-regular-positive-spectral-responses-cannot-supply-critical-logarithmic-local-scale|WP-138]]
 - [[research/weil_positivity/findings/WP-139-minimal-new-prime-puncture-singular-finite-part-is-bounded-and-prime-blind|WP-139]]
+- [[research/weil_positivity/findings/WP-140-minimal-kron-pseudodeterminant-log-is-a-normalization-anomaly|WP-140]]
+- [[research/weil_positivity/findings/WP-141-kron-logdet-fisher-positivity-annihilates-the-scale-anomaly|WP-141]]

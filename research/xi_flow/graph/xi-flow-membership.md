@@ -25,3 +25,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/xi_flow/findings/XF-014-full-real-zero-gap-dynamics-form-nonlinear-positive-conductance-diffusion|XF-014]]
 - [[research/xi_flow/findings/XF-015-bounded-gap-envelopes-give-nonlinear-cauchy-coercivity|XF-015]]
 - [[research/xi_flow/findings/XF-016-self-similar-cutoffs-cannot-make-cauchy-boundary-leakage-lower-order|XF-016]]
+- [[research/xi_flow/findings/XF-017-logarithmic-capacitary-tapers-make-cauchy-leakage-vanish|XF-017]]
+- [[research/xi_flow/findings/XF-018-uncentered-gap-square-localization-has-bounded-cross-ratio-leakage|XF-018]]
+- [[research/xi_flow/findings/XF-019-block-cross-ratio-tails-reduce-to-a-super-mesoscopic-buffer|XF-019]]
+- [[research/xi_flow/findings/XF-020-global-counting-error-controls-super-mesoscopic-xi-buffers|XF-020]]
+- [[research/xi_flow/findings/XF-021-centered-convex-gap-entropies-have-collision-positive-compact-boundary-spikes|XF-021]]

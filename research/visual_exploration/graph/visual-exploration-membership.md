@@ -21,3 +21,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-015-nonzero-shell-modes-poisson-jensen-zero-sources|VIS-015]]
 - [[research/visual_exploration/findings/VIS-016-phase-modulus-boundary-uniqueness|VIS-016]]
 - [[research/visual_exploration/findings/VIS-017-overlap-connectivity-collapses-local-phase-freedom|VIS-017]]
+- [[research/visual_exploration/findings/VIS-018-phase-winding-is-divisor-count|VIS-018]]
+- [[research/visual_exploration/findings/VIS-019-raw-adjacent-gap-geometry-finite-size-rmt-baseline|VIS-019]]
+- [[research/visual_exploration/findings/VIS-020-three-gap-markov-closure-maxent-information-baseline|VIS-020]]

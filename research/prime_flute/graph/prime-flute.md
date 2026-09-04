@@ -162,7 +162,6 @@ Canonical findings and `mind/` remain authoritative. Membership links are struct
 [[PF-146-squared-short-collar-relative-resolvent-is-trace-class]]
 [[PF-147-square-resolvent-S1-forces-first-resolvent-S2]]
 [[PF-148-square-resolvent-S1-recovers-krein-scattering-phase]]
-[[PF-148-square-resolvent-S1-cannot-force-first-resolvent-Sr-below-2]]
 [[PF-149-natural-volume-identifications-are-asymptotically-equivalent]]
 [[PF-150-square-resolvent-S1-is-sharp-at-S2-without-geometry]]
 [[PF-151-critical-first-resolvent-residue-is-pants-area-only]]
@@ -181,6 +180,7 @@ Canonical findings and `mind/` remain authoritative. Membership links are struct
 [[PF-164-connected-ruelle-cusp-is-compact-reference-unstable]]
 [[PF-165-interval-filling-compact-reference-residuals-kill-analytic-scalar-normalization]]
 [[PF-166-all-tail-marked-lengths-are-asymptotically-composite-blind]]
+[[PF-167-positive-primitive-length-accumulation-is-inherited-by-shift-clone]]
 <!-- structural-membership:end -->
 
 ## Durable synthesis and relations
@@ -189,4 +189,4 @@ Canonical findings and `mind/` remain authoritative. Membership links are struct
 
 ## Current source frontier
 
-The abstract Schatten route stops sharply at `S_2`: squared-resolvent trace class cannot force the first relative resolvent below it without extra geometry. Compact-reference residuals are not intrinsic scalar normalizations, and PF-166 makes every tail marked length uniformly asymptotically blind to the all-composite shift clone. Any surviving selector must therefore be genuinely global/nonlocal and reference-stable rather than a tail-local marked-length or scalar-normalization invariant.
+Compact-reference residuals are not intrinsic scalar normalizations, and PF-166 makes every tail marked length uniformly asymptotically blind to the all-composite shift clone. PF-167 pushes the matched-control correction to positive primitive-length accumulation and finite-length counting: the same accumulation interval and counting explosion occur in the clone. Any surviving selector must therefore be genuinely global/nonlocal and reference-stable rather than a tail-local marked-length, primitive-counting, or scalar-normalization invariant.

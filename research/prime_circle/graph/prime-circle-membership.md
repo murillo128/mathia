@@ -26,3 +26,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-158-new-prime-puncture-is-a-prime-blind-positive-spectral-shift|PC-158]]
 - [[research/prime_circle/findings/PC-159-bloch-half-reflection-is-universal-time-reversal-not-zeta-functional-equation|PC-159]]
 - [[research/prime_circle/findings/PC-160-bloch-pencil-is-hyperbolic-and-zero-free-on-the-open-unit-strip|PC-160]]
+- [[research/prime_circle/findings/PC-161-one-hole-puncture-defect-has-prime-blind-trace-class-star-limit|PC-161]]
+- [[research/prime_circle/findings/PC-162-one-hole-kron-response-has-prime-blind-cyclotomic-star-mesh-determinant|PC-162]]
+- [[research/prime_circle/findings/PC-163-full-one-hole-kron-determinant-has-prime-blind-bloch-zero-mode-logarithm|PC-163]]
+- [[research/prime_circle/findings/PC-164-one-hole-energy-dependent-feshbach-family-has-only-prime-blind-bloch-and-cyclotomic-divisors|PC-164]]
