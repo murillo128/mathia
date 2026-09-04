@@ -10,10 +10,11 @@ based_on:
   - research/visual_exploration/findings/VIS-028-farey-endpoint-fan-forces-n-scale-spectrum.md
   - research/visual_exploration/findings/VIS-029-farey-fixed-nx-endpoint-totient-layers.md
   - research/visual_exploration/findings/VIS-030-farey-endpoint-profile-totient-riesz-remainder.md
+  - research/visual_exploration/findings/VIS-031-farey-fixed-endpoints-vanish-sublinear-bands.md
   - research/farey_discrepancy/README.md
 ---
 
-# Does Farey ordering suppress discrepancy beyond fixed gaps, reflection, and a non-circular endpoint control?
+# Does Farey ordering suppress discrepancy beyond fixed gaps, reflection, and endpoint geometry?
 
 ## Observation
 
@@ -21,7 +22,7 @@ based_on:
 
 `VIS-027` removes an exact symmetry artifact. Farey reflection makes the discrepancy path antisymmetric, annihilating every odd Dirichlet sine mode. Even after conditioning the same-gap permutation null on that reflection, the finite Farey energy remains strongly suppressed.
 
-`VIS-028` then shows that the deterministic unit-fraction endpoint fan already forces an `r=Theta(n)` even-mode spectral scale. `VIS-029` strengthens that control: the fan is only the first layer of a whole deterministic fixed-`nx` endpoint profile. For every fixed `Y`, the rank below `y/n` has the limit
+`VIS-028` shows that the deterministic unit-fraction endpoint fan already forces an `r=Theta(n)` even-mode spectral scale. `VIS-029` strengthens that control: the fan is only the first layer of a whole deterministic fixed-`nx` endpoint profile. For every fixed `Y`, the rank below `y/n` has the limit
 
 `R_n(y)/n -> K(y)=sum_(a<=y) phi(a)(1/a-1/y)`,
 
@@ -35,34 +36,46 @@ The reflected endpoint window through `Y/n` has `nE_(n,Y)->2 integral_1^Y H(y)^2
 
 `K(y)=sum_(a<=y) [phi(a)/a](1-a/y)`,
 
-a first-order Riesz mean of normalized totients, with Dirichlet series `zeta(s)/zeta(s+1)` and an exact finite Möbius decomposition. Hence **subtracting an ever-growing collection of endpoint layers is not automatically an arithmetic-free nuisance removal**. A fixed finite cutoff is a legitimate explicit boundary control; a growing cutoff progressively subtracts a zeta/Möbius-bearing arithmetic channel and must itself be audited.
+a first-order Riesz mean of normalized totients, with Dirichlet series `zeta(s)/zeta(s+1)` and an exact finite Möbius decomposition. Hence subtracting an ever-growing collection of endpoint layers is not automatically an arithmetic-free nuisance removal. A fixed finite cutoff is a legitimate explicit boundary control; a growing cutoff progressively subtracts a zeta/Möbius-bearing arithmetic channel and must itself be audited.
 
-The existence or persistence of an `r/n` modal collapse after subtracting only a bounded endpoint fan is therefore not a discriminating signal, while subtracting all increasingly distant endpoint layers without an information audit risks removing part of the arithmetic mechanism one hoped to detect.
+`VIS-031` supplies a non-circular way around that tension. For the reflected endpoint component from any **fixed** `Y`, its even Dirichlet coefficients satisfy
+
+`|d_(2r)^(Y)|=O_Y(r/n^2)`,
+
+so for every sublinear cutoff `q_n=o(n)`,
+
+`n sum_(r<=q_n)|d_(2r)^(Y)|^2 = O_Y((q_n/n)^3) -> 0`.
+
+Thus every fixed-`nx` endpoint hierarchy is asymptotically invisible in a sublinear even-mode band at this normalization. One can probe that regime without subtracting endpoint arithmetic at all.
 
 ## Research question
 
-After controlling a pre-fixed finite family of fixed-`nx` endpoint layers — or otherwise proving the endpoint contribution negligible without importing the target arithmetic cancellation — does the remaining Farey ordering exhibit a stable multiscale spectral organization that cannot be reduced to the classical Franel–Landau scalar discrepancy, familiar Möbius/totient Riesz quantities, fixed gap statistics, reflection symmetry, or bounded local structure?
+Does the complete Farey discrepancy retain a stable sublinear even-mode or cross-band organization, under a pre-registered cutoff `q_n=o(n)`, that survives reflection-preserving same-gap and stronger local-order controls and cannot be reduced to the classical Franel–Landau scalar discrepancy or familiar Möbius/totient quantities?
 
-If a residual survives, can it be localized to genuinely interior information such as denominator strata, mediant/Farey-parent ancestry, long-range gap order, or a cross-band coupling whose endpoint contribution is provably negligible?
+If a residual survives, can it be localized to genuinely interior information such as denominator strata, mediant/Farey-parent ancestry, long-range gap order, or a cross-band coupling whose fixed-endpoint contribution is already ruled out by `VIS-031`?
 
 ## Why it may matter
 
-The Farey mandate asks whether geometry or multiscale organization survives after classical scalar discrepancy information is accounted for. The visual branch has now removed four increasingly strong false positives/control failures: the gap multiset alone, exact reflection parity, the apparent `r/n` scale generated by deterministic endpoint geometry, and the assumption that arbitrarily enlarging the endpoint subtraction remains a neutral geometric null.
+The visual branch has now removed a sequence of increasingly strong false positives and control failures: the gap multiset alone, exact reflection parity, the apparent `r/n` scale generated by deterministic endpoint geometry, and the assumption that arbitrarily enlarging an endpoint subtraction remains a neutral geometric null.
 
-This raises the bar for a useful positive result but makes one much cleaner. A stable bulk signal should survive bounded pre-registered endpoint controls, or come with a theorem showing that the endpoint Riesz channel is negligible for the chosen statistic, before being interpreted as interior Farey organization.
+`VIS-031` then identifies a cleaner search window rather than another subtraction. A surviving sublinear-band signal would be automatically separated from **all fixed** endpoint layers, while preserving the original Farey data. That does not make such a signal arithmetic or RH-relevant, but it removes a substantial boundary mechanism before stronger interior controls are attempted.
 
 ## Decisive test
 
-Choose finite endpoint cutoffs `Y_1<...<Y_J` **before inspecting the residual spectra**, with the `Y_j` held fixed as Farey order grows. For each `Y_j`, remove the exact ranks with `x<=Y_j/n` and their Farey reflections, or use a matched ensemble that preserves those endpoints together with the complete gap multiset and reflection symmetry. Form the even Dirichlet spectral measure of the remaining discrepancy in the fixed coordinates of `VIS-027`.
+Pre-register at least two sublinear cutoffs with materially different growth, for example
 
-A candidate bulk signal must be stable across this pre-fixed cutoff family and across substantially larger Farey orders. Better still, derive a statistic or spectral band whose entire fixed-`nx` endpoint contribution is asymptotically negligible. If a proposed test instead requires `Y=Y(n)` growing with `n`, explicitly write the removed `K(Y)`/`H(Y)` contribution in its normalized-totient Riesz or Möbius form and prove that the subtraction does not assume, encode, or trivially force the claimed residual improvement.
+`q_n=floor(sqrt(n))` and `q_n=floor(n^(2/3))`,
 
-Only after that gate should stronger controls preserve adjacent gap pairs, bounded-depth blocks, denominator strata, and mediant/Farey-parent relations.
+before inspecting the larger-order residual spectra. For each Farey order, form the complete even Dirichlet coefficients in the fixed coordinates of `VIS-027` and measure the scaled cumulative energy and, where useful, a normalized within-band or cross-band statistic.
 
-Kill the route if the apparent `r/n` profile drifts materially with the bounded endpoint cutoff, is recreated by endpoint-preserving controls, collapses to known Farey/Möbius discrepancy asymptotics, is determined by admitted bounded local statistics, or appears only after a growing endpoint subtraction whose Riesz arithmetic already carries the relevant cancellation.
+Compare the same observables against the reflection-preserving same-gap ensemble from `VIS-027`. If a signal survives, strengthen the null progressively with adjacent-gap pairs, bounded-depth blocks, denominator strata, or mediant/Farey-parent relations without changing the pre-registered band after inspection.
+
+Use fixed endpoint cutoffs only as finite checks: `VIS-031` already proves that their contribution vanishes asymptotically in the chosen sublinear regime. If a proposed statistic instead needs modes on the `r=Theta(n)` scale or requires an endpoint cutoff `Y=Y(n)` growing with `n`, return to the `VIS-029`/`VIS-030` endpoint accounting and prove that the subtraction does not encode the cancellation being sought.
+
+Kill the route if the complete sublinear-band effect itself vanishes at the relevant normalization, is reproduced by the reflection-preserving same-gap or stronger local-order null, collapses to a known Franel–Landau/Möbius estimate, or only appears after moving the spectral cutoff in response to the data.
 
 ## Evidence boundary
 
-`VIS-026` establishes the fixed-gap bridge control. `VIS-027` establishes reflection parity and a reflection-preserving same-gap baseline. `VIS-028` establishes the first endpoint fan and its `r=Theta(n)` scale. `VIS-029` establishes that every fixed `nx` endpoint window contains further deterministic totient layers on the same scale. `VIS-030` establishes exact Riesz, summatory-totient, Möbius, and Dirichlet-series representations of the limiting endpoint profile.
+`VIS-026` establishes the fixed-gap bridge control. `VIS-027` establishes reflection parity and a reflection-preserving same-gap baseline. `VIS-028` establishes the first endpoint fan and its `r=Theta(n)` scale. `VIS-029` establishes that every fixed `nx` endpoint window contains further deterministic totient layers on the same scale. `VIS-030` establishes exact Riesz, summatory-totient, Möbius, and Dirichlet-series representations of the limiting endpoint profile. `VIS-031` proves that every fixed endpoint hierarchy contributes vanishing `n`-scaled energy to every sublinear even-mode band.
 
-None of these results explains the complete Farey spectral profile or yields a stronger RH criterion. In particular, `VIS-030` does not prove that a growing endpoint cutoff is invalid or RH-equivalent; it proves only that such a cutoff is no longer an arithmetic-free control and therefore needs its own information accounting. This file remains a `status: proposed` clue, not mathematical evidence.
+None of these results proves that the **complete** Farey discrepancy has a nonzero or universal sublinear spectral limit, identifies the mechanism behind its finite suppression, or yields a stronger RH criterion. `VIS-031` also says nothing about endpoint windows `Y=Y(n)` that grow with `n`. This file remains a `status: proposed` clue, not mathematical evidence.
