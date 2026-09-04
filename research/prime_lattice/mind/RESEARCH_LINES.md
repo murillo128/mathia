@@ -2,25 +2,27 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Separate source rigidity, completed scalar encoding, observation sufficiency, and zero selection
+## Separate source rigidity, completed encoding, observation sufficiency, aliasing, and zero selection
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, `MI-009-discrete-phase-fidelity-is-not-zero-selection`, and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
 The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic; completed screw/CND positivity is already RH-level.
 
-PL-145--PL-157 now make the completed boundary especially sharp. The Suzuki scalar reduces to prime-power checkpoints; one-sided checkpoint boundedness is RH-equivalent; its one-sided growth exponent is the rightmost-zero frontier; completed screw positivity can already be tested on one fixed two-prime face; and the completed scalar tail can be sampled on the ordinary-prime basis or on broad non-prime sub-`3/4` meshes such as cubic integers. Observation-set sufficiency after completion is therefore not a prime-lattice mechanism. The missing theorem is a source mechanism for the cumulative completed state before generic sampling takes over.
+PL-145--PL-157 show that after completion, prime-power checkpoints, a fixed two-prime face, the ordinary-prime basis, and broad non-prime fine meshes can all retain RH-equivalent information for different readouts. PL-158 adds the complementary obstruction: every fixed step admits an exact off-line resonant quartet whose sampled Suzuki-type sequence is one-signed. Thus thin observation is not one category; dense/fine sampling can be complete for generic reasons while a single discrete ray has an aliasing quotient.
+
+The missing theorem is upstream: a source mechanism for the completed cumulative state, or a zeta-specific anti-aliasing relation that is not already equivalent to the desired zero conclusion.
 
 ## Force the completed arithmetic sign or one-sided coercivity upstream
 
 **Linked intuitions:** `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization` and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equivalent one-sided checkpoint bound/growth restriction, from exact rational-prime/global-completion structure without assuming a criterion of the same strength. The event and sampling carriers are exact; the unresolved object is the cumulative history that produces their values.
+A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equivalent one-sided checkpoint bound/growth restriction, from exact rational-prime/global-completion structure without assuming a criterion of the same strength. The event and fine-sampling carriers are exact; the unresolved object is the cumulative history that produces their values.
 
-## Demand a source mechanism, not only a complete sampling set or stability metric
+## If using a fixed prime ray, prove source-specific anti-aliasing or add an incommensurable scale
 
-**Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding` and `MI-009-discrete-phase-fidelity-is-not-zero-selection`.
+**Linked intuitions:** `MI-009-discrete-phase-fidelity-is-not-zero-selection` and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-Power-sensitive metrics and finite phase fingerprints can measure real source differences, but they do not explain why the required reference state or completed sign is forced. Likewise an RH-complete observation set can be generic once a zero-sensitive scalar has already been constructed. Reweighting coordinates, shrinking the sampling set, or accumulating more samples is not a zero-localization mechanism.
+PL-158 kills the generic transfer from continuous Suzuki one-sidedness to one fixed geometric sampling step. A live fixed-ray theorem must use information absent from the resonant completed-polynomial control: for example a second incommensurable log-prime direction, an independently proved ordinate-distribution constraint, or another zeta-specific coupling. Merely sampling more points on the same ray does not change the alias class.
 
 ## Resolve target-sensitive Nyman data and genuinely nontrivial prime-shift actions
 

@@ -6,54 +6,54 @@ This file holds genuinely cross-branch mathematical questions suggested by the d
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, and `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`.
 
-Analytic Frontier now beats the complete finite-real diffraction control explicitly, and positivity alone postpones genuinely new conjugation-invariant geometry until five points. Visual Exploration shows the complementary direction: same-gap permutation and reflection-preserving permutation close apparent ordering and parity effects exactly. The right control is therefore neither the broadest synthetic family nor the most convenient local surrogate; it is the complete family matching the information and source constraints actually consumed by the destination theorem.
+Analytic Frontier now clears the complete one-pair-plus-three-real five-point layer by an exact curvature gate, leaving coupled two-pair geometry as the first unresolved five-point scalar control. Visual Exploration shows that the Farey endpoint fan alone forces the apparent `r=Theta(n)` spectral scale. Xi Flow supplies the complementary source qualification: universal geometric-ramp null modes exist locally, but super-mesoscopic Xi counting forces coherent ramps to flatten.
 
-A decisive result must identify that source-appropriate control family and leave a quantitative residual after all deterministic quotients, symmetries, observation meshes, and admissible source restrictions are matched.
+A decisive result must therefore match both the destination quotient and the source regime. Remove deterministic boundary/symmetry/sampling effects first, then use source theorems only to exclude controls that are genuinely inadmissible at the claimed scale.
 
-## Separate completed criterion encoding and observation sufficiency from arithmetic selection and positive localization
+## Separate completed criterion encoding, observation sufficiency, aliasing, and arithmetic selection
 
 **Linked intuitions:** `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-004-critical-axis-is-not-zero-selection`, and `MI-005-topology-is-part-of-the-arithmetic-claim`.
 
-Prime Lattice shows that once Suzuki's completed scalar/kernel has encoded the arithmetic, RH-equivalent information can survive on a fixed two-prime face, the ordinary-prime basis, or broad non-prime sub-`3/4` meshes. Observation-set completeness after completion is therefore not a source mechanism. Weil Positivity gives the complementary sign boundary: the zero-order resultant retains the exact prime-power selector but has extensive two-sided primitive inertia, while its canonical positive Hessian destroys the selector.
+Prime Lattice shows both sides. Fine/dense observation sets can retain RH-equivalent information once Suzuki's completed scalar/kernel already exists, while PL-158 gives an exact off-line alias for every fixed sampling step. Observation completeness is therefore geometry-dependent after completion and does not explain where the arithmetic sign came from.
 
-The live theorem is a source-forced arithmetic polarization/sign on the completed zero-sensitive object itself, with source construction, normalization, observation category, and positive operation fixed before the target conclusion.
+The live theorem is a source-forced arithmetic polarization/sign on the completed zero-sensitive object itself, or a source-specific anti-aliasing relation genuinely weaker than the target criterion.
 
-## Turn spectral visibility into topology-, ideal-, and multiscale-budget-matched assembly
+## Match infinite assembly to the exact information, ideal, and energy-domain budget
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-005-topology-is-part-of-the-arithmetic-claim`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Arithmetic Fidelity now separates WOT admissibility, Schatten resources, trace/determinant fidelity, one-scale relative tightness, finite `k`-scale repairability, tolerance-dependent covering, and weighted description cost. Failure of a single max-scale normalization or of every fixed `k` does not by itself determine whether the final observable has lost the spectrum.
+Arithmetic Fidelity now shows that per-tolerance finite repair does not imply a bounded-information coherent exact representation: generating hierarchies have bounded entropy only for finite-entropy atomic sources. Weil Positivity gives an operator analogue: the canonical resultant graph is positive at every finite cutoff, yet spectator-prime parallel paths short-circuit every edge and collapse the all-prime finite-energy space to constants.
 
-A positive must derive from the source the exact scale-description and ideal budget used downstream, rather than infer it from per-cutoff membership, a chosen normalization, or unweighted scale cardinality.
+A positive must derive from the source the exact description budget, topology, ideal, sampling geometry, and dense domain consumed downstream. Finite-stage positivity or approximation is not enough without a nontrivial coherent limit.
 
-## Make moving comparator theorems uniform in fidelity, transfer complexity, and turnover
+## Resolve the moving-comparator corridor with simultaneous transfer and feedback control
 
 **Linked intuitions:** `MI-003-arithmetic-significance-begins-after-universal-control-subtraction` and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-MC-062--MC-064 sharpen the character boundary. Good subquadratic quadratic certificates cannot be refreshed at nearby scales and distinct identities are power-separated; moreover constant defect does not transport a Mertens power saving. The fidelity must decay polynomially at the rate required by the transfer while the conductor remains in the compatible window.
+MC-065--MC-067 show that signed quadratic feedback removes one absolute conductor penalty but exposes a split-prime `p^{-theta}` budget. Siegel--Walfisz excludes every fixed polylogarithmic conductor, while the classical near-critical squarefree-character bound pushes toward subpolynomial conductors. The surviving classical corridor is super-polylogarithmic but subpolynomial and must also respect cross-scale turnover rigidity.
 
-The live transfer must therefore control one source-forced moving family coherently across scale with hypotheses genuinely cheaper than the Mertens exponent obtained.
+The live transfer must either construct one source-forced coherent family in that corridor with contractive signed feedback and near-critical comparator cancellation, or discover a genuinely signed remainder theorem that avoids the positive feedback budget.
 
-## Close the bounded-depth scalar central-spike escape or leave the scalar category
+## Leave support-one positive-compression universality if seeking an inertia gain beyond Montgomery--Taylor
 
 **Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim`, `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Finite scalar zero tests can be repaired by remote spectrum, while broad source-free universality forces Fourier positivity. WI-150--WI-152 now quantify the finite-depth middle: negative spectral mass is squeezed into a central layer with total budget `O(phi(0)/B)` at depth `B`, and fixed-radius negative mass is exponentially more expensive.
+WI-153 closes the bounded-depth signed-scalar central-spike escape at support one by the sharp CCLM/Montgomery--Taylor extremal. WI-154 extends the same ceiling to pointwise-PSD matrix kernels consumed in Loewner order or by positive states, with rigid scalar-channel equality.
 
-The live scalar theorem is a source bound on the central value relative to depth. Without it, a serious continuation must use independently justified source restrictions or genuinely joint, matrix, sign-indefinite, or inertia information.
+A live improvement must retain joint, sign-indefinite, nonlinear, source-restricted, higher-correlation, or support-greater-than-one information that cannot be reduced to positive scalar compressions.
 
-## Couple provenance before local refinement, positive differentiation, or finite-dimensional cleanup classicalizes it
+## Couple provenance before positive completion or all-prime replication classicalizes it
 
 **Linked intuitions:** `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, `MI-004-critical-axis-is-not-zero-selection`, and `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`.
 
-Prime Circle now classifies the full local finite-order refinement category: full power covariance forces homogeneous power-law coefficients and leaves singular domain choices as extra data. Weil Positivity shows both sides of the corresponding arithmetic problem: positive differentiation fills in the resultant's prime-power support, while preserving the zero-order selector creates unbounded mixed-prime inertia that no fixed finite-dimensional repair removes. Prime Flute continues to show that post-processing cannot recreate provenance after a prime-blind quotient.
+The zero-order cyclotomic resultant retains the prime-power selector, but fixed finite repair has unbounded mixed-prime inertia and its canonical positive graph completion is globally short-circuited by spectator primes. Prime Flute continues to show that post-processing cannot recreate provenance after a prime-blind quotient.
 
-A live route must insert source-specific coupling before those losses, or use a genuinely nonlocal, cross-level, growing/infinite-dimensional, or source-forced domain operation whose discriminator survives the strongest matched controls.
+A live route must change the source coupling before these losses, or use a genuinely nonlocal/cross-level/cohomological operation whose selector, domain, and sign survive the strongest controls.
 
-## Convert Xi triple-overlap localization into fixed-time source coercivity
+## Convert Xi near-null geometry into source coercivity at fixed heat time
 
 **Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim`, `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-XF-029--XF-031 move the active Xi route beyond an unspecified boundary-flux problem. Lattice-order taper loss is a small Cauchy commutator, the full triple discriminant has an exact signed cubic exterior flux, and the nonlinear tapered sum localizes explicit edge loss onto taper differences. The remaining bulk density compares two positive-conductance Laplacians acting on the same reciprocal-gap field and has no known aggregate sign.
+XF-032--XF-033 identify geometric gap ramps as exact bulk null modes for every finite-range translation-invariant scale-invariant shape assembly. XF-034 shows that coherent ramps persisting across super-mesoscopic Xi buffers must flatten. The missing theorem is a quantitative near-kernel result linking small shape force or adverse bulk production to proximity to that source-rigid null family.
 
-The live theorem is a mesoscopic coercive alignment estimate, spliced with collision-positive coverage and source-valid growing buffers. A decisive negative would exhibit source-compatible conductance misalignment that stays order one despite vanishing taper variation.
+A decisive positive would combine this with taper localization and collision-positive coverage to obtain a height-uniform backward-time margin; a decisive negative would construct source-compatible near-null profiles that stay far from geometric ramps and retain order-one adverse effect.

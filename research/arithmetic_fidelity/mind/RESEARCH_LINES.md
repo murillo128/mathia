@@ -14,13 +14,13 @@ Linear span, generated sigma-algebra, multiplicative closure, and source-depende
 
 Exact recovery can coexist with arbitrarily bad conditioning, and per-scale witnesses can escape every compact set. A concrete application must supply a source-natural stability modulus, coherent approximant tower, compact-transversal margin, or equivalent width decay.
 
-## Match assembly and multiscale description to the exact destination budget
+## Match multiscale description to the exact information budget and coherence demanded at the destination
 
-**Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`, `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`, and `MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness`.
+**Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`, `MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness`, and `MI-011-coherent-exact-description-has-an-entropy-atomicity-gate`.
 
-AF-105--AF-109 separate original-range assembly, WOT-closed admissibility, Schatten membership, bounded ideal resources, ideal-norm convergence, and trace tightness. AF-110--AF-113 then show that fixed analytic determinants can collapse to zero-free limits while a source-forced relative spectral profile survives.
+AF-105--AF-116 separate assembly topology, Schatten resources, trace tightness, relative scale, finite `k`-scale repair, tolerance covering, worst-case labels, and average description cost. AF-117--AF-119 sharpen the last distinction: finite entropy is the exact one-shot mean-bit gate; the integrated logarithm of tolerance-rank complexity characterizes its finiteness; and a coherent generating refinement tower has bounded terminal entropy exactly for finite-entropy atomic sources.
 
-AF-114--AF-116 make the relative-scale problem quantitative. One moving scalar normalization exists exactly when pairwise log-ratios are tight; `k` moving scale centers are characterized by absence of `(k+1)` mutually separated mass samples; and failure of every fixed `k` still does not determine complexity until one distinguishes tolerance covering, worst-case labels, entropy, and average description cost. A decisive application must state which of these resources its final invariant actually consumes and prove that budget from the source.
+A decisive application must therefore state whether it needs one-scale approximation, finite error at each scale, one coherent exact mark, or an exactly generating hierarchy. Per-tolerance finite codebooks cannot be silently assembled into a bounded-information exact representation.
 
 ## Keep repair category and target transport explicit
 

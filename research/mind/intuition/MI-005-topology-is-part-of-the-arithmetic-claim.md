@@ -1,40 +1,40 @@
-# MI-005 — Category, assembly topology, operator ideal, spectral type, scale complexity, and domain data are part of the arithmetic claim
+# MI-005 — Category, assembly topology, operator ideal, information budget, and domain data are part of the arithmetic claim
 
 **Evidence level:** supported by exact category-sensitive findings across the active Mathia lines
 
 ## Core intuition
 
-A source signal can be present yet unusable because it lives in the wrong range, requires unbounded conditioning, sits in an operator ideal with the wrong spectral density, has incompatible spectral type, transports only in the wrong direction, or collapses under the topology/scale used for final assembly. Even “multiscale” is not a single category: finite scale count, tolerance-dependent covering, worst-case labels, and average description cost can disagree.
+A source signal can be present yet unusable because it lives in the wrong range, requires unbounded conditioning, sits in the wrong operator ideal or spectral type, needs an information budget that diverges under coherent refinement, or collapses when the global energy/domain is assembled. Finite correctness at every cutoff or tolerance does not determine the infinite object.
 
-Likewise a singular local operator is not automatically a new category if symmetry rigidifies its coefficients to universal power laws. The coefficient class and the self-adjoint domain/boundary data must be separated explicitly.
+The recent evidence adds two particularly sharp gates. Exact multiscale description with bounded mean information is possible only in a finite-entropy atomic regime once one coherent hierarchy must generate the source. Separately, a positive finite-cutoff graph form can have no nontrivial global energy space at all when infinitely many source-forced parallel paths short-circuit its effective resistance.
 
 ## Strongest justified principle
 
-AF-105--AF-113 separate original-range assembly, WOT closure, uniform Schatten resources, ideal-norm fidelity, trace tightness, determinant fidelity, and relative spectral-profile tightness. AF-114--AF-116 then classify relative scale more sharply: one-scale repair is exactly pairwise log-ratio tightness; `k`-scale repair is controlled by `(k+1)`-point separation; and failure of every fixed `k` can coexist with finite tolerance covering or bounded mean description cost. The destination observable must declare which scale resource it actually charges.
+Arithmetic Fidelity separates assembly topology, Schatten/trace resources, relative scale, finite `k`-scale repair, tolerance covering, and description length. AF-117--AF-119 now classify coherent information cost: finite entropy is the one-shot mean-bit gate; integrated log tolerance-rank complexity characterizes its finiteness; and a nested generating quantizer hierarchy has bounded terminal entropy exactly for finite-entropy atomic sources. Independently optimized finite-tolerance codebooks are not a bounded-information exact representation.
 
-Prime Circle adds a local-covariance boundary. PC-165--PC-168 show that full refinement covariance produces the classical half-density and rigidifies every local metric and finite-order differential coefficient to homogeneous power laws. At second order the apparent singular freedom is only inverse-square type; any nontrivial extension parameter is domain data added beyond the coefficient field. Local singularity and arithmetic provenance are distinct categories.
+Prime Lattice shows that observation topology matters after completion: fine/dense sets can inherit RH-complete information, while PL-158 shows fixed-step sampling has an exact aliasing quotient. Sampling dimension or arithmetic appearance alone does not determine fidelity.
 
-Prime Lattice adds an observation-category warning. PL-155--PL-157 show that a completed zero-sensitive scalar can be RH-complete on a fixed two-prime face or on broad non-prime meshes. Dimensionality or arithmetic appearance of the sampling set is therefore not source fidelity once completion has already occurred.
+Weil Positivity adds a global-domain obstruction beyond finite rank. WP-148 gives a canonical positive graph Laplacian at every finite shell cutoff but infinite degree and trivial natural `ell^2` energy domain. WP-149 removes the measure-only escape: spectator-prime parallel paths force zero effective resistance across every edge, so the unchanged all-prime Dirichlet energy has only constants as finite-energy functions. Positivity of every finite matrix does not imply a nontrivial infinite positive operator/form in the intended category.
 
-Weil Positivity adds a repair-rank gate: WP-147 gives unbounded positive and negative primitive inertia for the faithful zero-order resultant, so fixed-rank or fixed finite-dimensional global feedback cannot change its sign category. Xi Flow adds a nonlinear localization category in which taper coefficients localize exactly but bulk coercivity remains an operator-alignment question.
+Xi Flow adds a local-to-global category warning: every finite-range translation-invariant scale-invariant shape assembly has affine log-gap null modes, while source counting controls only sufficiently coherent realizations of those modes. The topology/norm in which near-nullness implies source-rigid proximity is itself part of the theorem.
 
 ## Consequence for synthesis
 
-A useful realization must specify source/target range, uniform norm/ideal budget, assembly topology, spectral type, absolute versus relative scaling, scale-description resource, covariance class, and any singular domain/boundary data. It must prove that the required discriminator survives with a quantitative source-forced margin in exactly that category.
+A useful realization must specify source/target range, norm/ideal resource, assembly topology, sampling geometry, coherent information budget, and operator/form domain. If the final theorem needs exact generation, dense finite-energy vectors, or fixed-step anti-aliasing, those are load-bearing requirements and cannot be inferred from per-scale approximation, finite-cutoff positivity, or a visually complete sample set.
 
-Changing category can be a genuine advance, but naming a different topology, a moving normalization, a singular coefficient, or a sparse observation set after the target is visible is not enough. The new category must be forced upstream and support a theorem unavailable in the old one.
+Changing category can be a genuine advance, but the new category must be forced upstream and support a theorem unavailable in the old one. A new measure, normalization, codebook, singular domain, or sampling set chosen after the target appears is additional structure that must be justified.
 
 ## Status / novelty
 
-The component functional analysis, operator theory, scaling, and extension theory are classical. The synthesis is the compatibility gate: **finite correctness, relative spectral survival, singular local form, and sampling completeness all depend on the precise resource/domain category consumed by the final theorem**.
+The component coding theory, functional analysis, network theory, and sampling theory are classical. The synthesis is the compatibility gate: **the infinite arithmetic claim includes the resource and domain needed to assemble its finite pieces, not merely the pieces themselves**.
 
 ## Falsification criterion
 
-Construct a source-forced category crossing the current assembly/ideal/scale/covariance barriers while preserving target discrimination, or show that one of the stated distinctions collapses under the exact hypotheses of a concrete line.
+Construct a source-forced category crossing the current entropy/domain/sampling/ideal barriers while preserving target discrimination, or show that one of the stated distinctions collapses under the exact hypotheses of a concrete line.
 
 ## Lean-formalizable core
 
-- WOT/Schatten/trace fidelity hierarchy.
-- Pairwise and `(k+1)` multiscale tightness criteria.
-- Full-refinement homogeneity classification.
-- Fixed-rank inertia obstruction.
+- Entropy/tolerance-rank/coherent-generation hierarchy.
+- Sampling alias versus dense-mesh extension.
+- Finite graph positivity versus infinite energy-domain nontriviality.
+- Effective-resistance collapse from parallel conductance.

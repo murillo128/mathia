@@ -1,44 +1,43 @@
-# MI-009 — Full bounded-depth scalar universality squeezes signed spectrum into a vanishing central boundary layer
+# MI-009 — Support-one bounded-depth scalar and pointwise-PSD matrix universality collapse to the Montgomery--Taylor extremal
 
-**Evidence level:** proved for the scalar universality classes covered by WI-145--WI-152
+**Evidence level:** proved for the support-one scalar and pointwise-PSD matrix classes covered by WI-145--WI-154; extremal input is literature-backed
 
 ## Core intuition
 
-A scalar inequality can reject one isolated off-line pair without being a genuine universal inertia detector. Remote spectral mass can repair finitely many scalar tests. At the opposite extreme, sufficiently broad source-free universality classicalizes the profile toward Fourier positivity.
+The bounded-depth signed-scalar central spike is not a genuine support-one escape. Real two-point universality already forces the real-gap Fourier transform into the classical nonnegative one-delta admissible cone, and the sharp Montgomery--Taylor/CCLM extremal theorem fixes the final support-one cost without requiring the spectral profile itself to be nonnegative.
 
-The bounded-depth middle regime is now quantitative rather than merely smoothed. Full finite-multiset universality at strip depth `B` forces every negative spectral feature either into an `O(B^-1)` neighborhood of the origin with total mass `O(phi(0)/B)`, or to pay an exponentially large central value if it remains at fixed spectral radius. The remaining scalar escape is therefore a **source-justified central spike**, not arbitrary moving signed mass.
+A natural matrix enlargement does not help if positivity is retained pointwise on real gaps and the destination consumes the matrix in Loewner order or through positive states. Every quadratic compression is the same scalar extremal problem, and equality forces a fixed PSD channel factor times the scalar extremizer.
 
 ## Strongest justified principle
 
-WI-145 shows that one conjugate pair violates a tempting negative-tail scalar bound, while WI-146 supplies the adversarial repair: finite two-point constraints can be repaired by remote spectral mass. WI-147--WI-149 show the opposite boundary: universal compact/superexponential classes force Fourier positivity, and bounded depth initially yields Gaussian-smoothed positivity.
+WI-145--WI-152 locate the finite-test versus broad-universality boundary and show quantitatively that signed spectral mass at bounded strip depth is squeezed toward a central layer. Those results left open a central spike whose height grows with depth.
 
-WI-150 uses the full bounded-depth scalar census to obtain exact lattice-alias positivity. WI-151 strengthens this with phase-masked combs: for an even continuous spectral profile with the stated exponential moment,
+WI-153 closes that escape at the actual support-one arithmetic interface. The real two-point census gives `H(x)>=0` for every real gap. Fejer inversion places `H` in the CCLM one-delta class: integrable, nonnegative, normalized at zero, with Fourier support in `[-1,1]`. The sharp CCLM theorem then forces the support-one cost to be at least the Montgomery--Taylor constant. No bound on the central spike and no proof `phi>=0` are needed.
 
-`phi(a) >= -2 phi(0) sech^2(2 pi B a)`.
+WI-154 extends the same obstruction to continuous matrix kernels `R(x)` that are pointwise PSD on real gaps with entrywise Fourier support in `[-1,1]`. Applying the scalar extremal theorem to every quadratic compression gives the Loewner bound
 
-Thus fixed-radius negative dips collapse exponentially as the admissible depth grows unless the central value compensates.
+`M(R) >= m_MT R(0)`.
 
-WI-152 combines that phase-mask floor with the real two-point consequence `H>=0`. Fourier inversion then makes `phi` positive definite and gives `|phi(t)|<=phi(0)`. Integrating the two bounds yields
-
-`int phi_- <= [C_*/(pi B)] phi(0)`
-
-with the persisted explicit constant `C_*`. Negative mass outside a fixed positive radius is exponentially smaller. Hence if `B->infinity` and `phi(0)=o(B)`, the entire signed profile approaches the normalized nonnegative cone in `L^1`, not merely after Gaussian smoothing.
+Equality is rigid: `R(x)=R_MT(x)R(0)`. Thus noncommuting or varying channel structure cannot improve the constant inside this pointwise-PSD real-gap category, even when the Fourier-side matrix is indefinite.
 
 ## What remains possible
 
-The universal scalar hypothesis does not itself prove `phi(0)=o(B)`. A profile may attempt to survive by concentrating an increasingly tall central spike on a shrinking scale. The next scalar gate is therefore source-specific: derive from the actual admissible test-function/kernel class an upper bound on `phi(0)` relative to available strip depth. Alternatively leave the one-scalar category through matrix/joint/inertia information or restrict configurations using independent zeta-source theorems.
+The Weil-inertia program is not closed. A serious support-one escape must leave at least one load-bearing hypothesis: use sign-indefinite matrix/joint information not positive under every real-gap compression, a nonlinear configuration functional, source-restricted zeta classes, higher correlations, or a justified support-greater-than-one interface. Existing Gram/inertia constructions already retain information outside the collapsed scalar cost.
+
+The next question is therefore categorical, not a larger central spike: identify a source-forced joint or indefinite carrier whose final order theorem cannot be reduced to positive scalar compressions.
 
 ## Status / novelty
 
-Fourier positivity, Bochner theory, Fejer inversion, and hyperbolic-function bounds are classical. The synthesis is the bounded-depth squeeze: **finite scalar tests are repairable, broad universality classicalizes, and full finite-depth universality permits signed mass only through a quantitatively expensive central boundary layer**.
+The Montgomery--Taylor/CCLM extremal, Fourier inversion, and Loewner compression arguments are classical. The persisted synthesis is the closure: **support-one source-free universality cannot beat Montgomery--Taylor through either a signed scalar profile or a pointwise-PSD matrix lift consumed positively**.
 
 ## Falsification criterion
 
-Construct a profile satisfying the full WI-151/WI-152 finite-multiset hypothesis that violates the pointwise or integrated negative-mass bounds, or derive a zeta-source kernel family whose central value stays sublinear in depth and thereby closes the remaining scalar escape.
+Construct a scalar profile satisfying the WI-153 universal census with support-one cost below `C_MT`, or a pointwise-PSD matrix kernel satisfying WI-154 whose positive-state/Loewner cost beats the scalar extremal. A sign-indefinite or source-restricted matrix carrier lies outside the theorem.
 
 ## Lean-formalizable core
 
-- Remote repair of finite scalar constraints.
-- Phase-masked pointwise spectral floor.
-- Real two-point positivity to positive-definite spectral profile.
-- `O(phi(0)/B)` total negative-mass budget and tail localization.
+- Real two-point positivity of the real-gap kernel.
+- Reduction to the one-delta admissible cone.
+- Scalar Montgomery--Taylor lower bound.
+- Quadratic-compression proof of the matrix Loewner bound.
+- Equality rigidity to a fixed PSD channel factor.

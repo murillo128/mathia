@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Test the explicit finite-real separator at the first genuinely complex five-point layer
+## Resolve the remaining coupled five-point complex geometry for the explicit separator
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`, and `MI-004-complete-scalar-control-is-diffraction-realizability`.
 
-ANF-033 proves that the complete finite-real diffraction body does not impose the Montgomery--Taylor ceiling, and ANF-034 makes that separation explicit with a stable central-notch support-one ray. ANF-035--ANF-036 then remove broad low-cardinality complex controls: common vertical fibers collapse to real multiplicity tests, and every conjugation-invariant configuration of at most four points is dominated by its real-part collapse. Five points are sharp for positivity-alone complex separation.
+ANF-034 gives an explicit support-one central-notch ray that beats the complete finite-real Montgomery--Taylor stability ratio. ANF-035--ANF-036 remove all conjugation-invariant configurations through four points. ANF-037--ANF-039 now remove the first five-point pattern as a separate finite-height problem: one conjugate pair plus three real anchors is controlled exactly by the curvature margin `m_5`, and both Montgomery--Taylor and a sufficiently small central-notch separator pass that whole layer at every height.
 
-The live scalar question is therefore precise: test the ANF-034 family against the exact five-point horizontal--vertical coupling, multiplicity slack, and then the larger source-admissible complex census. A failure there identifies the missing obstruction as genuinely complex; survival moves the burden to zeta-specific source constraints rather than richer finite-real diffraction.
+The cheapest unresolved scalar geometry is therefore two conjugate pairs plus one real point. Its vertical factors interact before the real-frequency average, so the independent-anchor reduction no longer applies. Derive its exact minimal criterion, including affine/multiplicity slack, and test the explicit separator there before enlarging the finite-real family or moving to higher cardinality.
 
 ## Use unconditional out-of-band information only through a genuinely different zero-side carrier
 

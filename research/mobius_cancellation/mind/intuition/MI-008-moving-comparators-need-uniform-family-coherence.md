@@ -1,42 +1,49 @@
-# MI-008 — Moving comparators need coherent turnover and a transfer budget stronger than constant-defect imitation
+# MI-008 — Moving quadratic comparators are squeezed by fidelity, signed feedback, conductor distribution, and turnover
 
-**Evidence level:** supported by MC-053--MC-064; the fixed-class transfers, conductor repulsion, and Burgess/square-divisor transfer bounds are theorem-level in their stated hypotheses
+**Evidence level:** supported by MC-053--MC-067; exact for the stated convolution/feedback identities and literature-backed for Burgess/Munsch, reciprocity, and Siegel--Walfisz inputs
 
 ## Core intuition
 
-Allowing a comparator to depend on observation scale is a real escape from fixed-comparator transfer theorems, but finite-prefix agreement plus a good exponent for each frozen object is too weak. The missing resource is a **uniform, scale-coherent cancellation certificate whose fidelity actually decays at the power rate required by the target transfer**.
+Allowing the comparator to move with scale escapes fixed-comparator transfer theorems, but it does not remove the resource accounting. Absolute coefficient transfer, signed convolution feedback, conductor size, and inter-scale turnover impose different constraints, and improving one can expose another.
 
-Quadratic characters make this boundary rigid in two independent ways. Good subquadratic fits cannot turn over freely from one nearby scale to the next, and the direct Burgess/square-divisor transfer itself has a method-specific exponent floor. Constant-defect imitation may force conductor geometry without yet transporting a power saving for Mertens.
+The newest boundary is especially sharp for quadratic characters. Signed feedback genuinely removes the internal-conductor `L^1` penalty that produced the `11/19` absolute-transfer floor, but it replaces that penalty by a positive `p^{-theta}` budget over split primes. Uniform prime distribution then kills every polylogarithmic conductor for any fixed exponent below one, while the classical squarefree-character certificate near exponent `1/2` simultaneously forbids polynomially large conductors. The surviving classical corridor is super-polylogarithmic but subpolynomial, and existence of a coherent family there is completely open.
 
 ## Strongest justified principle
 
-MC-053--MC-061 establish the earlier family gate: fixed comparator classes transfer exponents; exact and weighted character imitation forces conductor growth; competing quadratic fits have product-conductor repulsion; and even one good quadratic fit forces a large twisted-Möbius uniformity cost.
+MC-053--MC-063 establish the family gate: fixed comparator classes transfer exponents; good character fits force conductor growth and twisted-uniformity costs; distinct subquadratic good fits cannot turn over freely and are power-separated across observation scales.
 
-MC-062 converts pair repulsion into scale sparsity. For any fixed defect below one half and subquadratic conductor window `X<q<=X^kappa`, `kappa<2`, two good certificates at nearby bounded-ratio scales must use the same conductor. Thus a fresh good character cannot exist at every multiplicative scale.
+MC-064--MC-065 calibrate absolute transfer. The direct squarefree-character route gives a Burgess/Munsch term together with weighted coefficient defect. Allowing `q<=X` lowers the absolute method floor from `11/16` to `11/19`, but the character zero at its own conductor creates a coefficientwise cost of size `X/q`. This is a method-specific floor, not a theorem about Mertens itself.
 
-MC-063 strengthens this to power separation: distinct good certificates at scales `X<=Y` satisfy a lower bound of the form `Y >> X^(4/kappa-1-o(1))`. For `kappa<2` the turnover exponent is superlinear, so only very sparse fresh identities can occur along a long scale range.
+MC-066 identifies the signed escape exactly. With `f_chi=mu^2 chi` and `h_chi=1*f_chi`, one has `f_chi=mu*h_chi` and
 
-MC-064 adds the transfer audit. A weighted quadratic defect `A_X(chi)` gives
+`h_chi(p^a)=0,2,1`
 
-`|M(X)| <= X A_X(chi) + X^(1/2) q^(3/16)`
+according as `chi(p)=-1,+1,0`. The bootstrap budget is
 
-up to logarithmic factors in the stated squarefree setting. Because exact fidelity already forces `q>X`, this direct route cannot beat the method-specific exponent `11/16`; obtaining a target exponent `theta` additionally requires `A_X(chi)` to decay like `X^(theta-1)` and constrains the conductor accordingly. In the subquadratic regime needed below `7/8`, the MC-062--MC-063 turnover rigidity is therefore unavoidable.
+`R_theta(X;chi)=sum_{2<=d<=X} h_chi(d)d^{-theta}`.
+
+The conductor zero contributes only a small prime-power factor, but every split prime contributes `2p^{-theta}`. Triangle-inequality contraction therefore demands a much stronger power-weighted sparsity of quadratic residues than ordinary prime-harmonic agreement.
+
+MC-067 closes slow conductor motion. Siegel--Walfisz implies `R_theta(X;chi) >> X^(1-theta)/log X` uniformly for every `q<=(log X)^B` and fixed `theta<=1-eta`, so no fixed polylogarithmic conductor can close the positive feedback bootstrap. Near the critical exponent, the displayed Munsch certificate requires `q=X^{o(1)}`. The method-specific search corridor is consequently `(log X)^{omega(1)} < q < X^{o(1)}`.
 
 ## What remains possible
 
-A moving-comparator proof must derive a source-forced family whose defects decay at the required polynomial rate, whose conductors lie in the transfer-compatible window, and whose identities can remain coherent across the scales needed for the final Mertens estimate. A different comparator category may evade the character-specific exponents, but it must expose an independently bounded replacement/complexity resource rather than hide cancellation in the moving certificate.
+A positive character route must derive a source-forced family in that intermediate conductor regime with three properties simultaneously: a near-critical squarefree-character estimate, a contractive signed feedback budget, and enough cross-scale coherence to cover the Mertens range despite the turnover repulsion of MC-062--MC-063. A signed analysis of the feedback remainder could evade the positive-kernel triangle budget, but it would need a new cancellation theorem rather than an accounting improvement.
+
+A different comparator class may evade the character-specific exponents, but it must expose its own complexity, uniformity, and turnover resources explicitly.
 
 ## Status / novelty
 
-The transfer mechanisms, character interpolation, Burgess bounds, reciprocity, and square-divisor identities are classical or literature-backed. The synthesis is the two-resource gate: **moving fidelity must be strong enough for the transfer and coherent enough across scale; constant-defect per-scale approximation supplies neither conclusion by itself**.
+The analytic inputs are classical. The synthesis is the four-way gate: **moving comparator fidelity, transfer strength, signed feedback, and conductor turnover cannot be optimized independently; the current quadratic architecture is squeezed into a narrow unproved intermediate regime**.
 
 ## Falsification criterion
 
-Construct a scale-dependent comparator family with power-decaying Möbius defect, transfer-compatible complexity, and uniform inter-scale coverage whose total hypotheses are provably weaker than the Mertens exponent obtained, or invalidate one of the stated conductor/turnover/transfer bounds under its hypotheses.
+Construct a polylogarithmic-conductor family satisfying the MC-066 positive-feedback contraction at a fixed `theta<1`, contradicting MC-067, or produce a coherent family in the surviving corridor whose total hypotheses are provably cheaper than the Mertens exponent it transfers.
 
 ## Lean-formalizable core
 
-- Character-prefix conductor lower bounds.
-- Product-conductor and scale-turnover repulsion.
-- Quadratic defect to twisted/Mertens transfer inequality.
-- Separation between constant-defect sparsity and power-decaying transfer fidelity.
+- Character-prefix conductor/turnover bounds.
+- Absolute-transfer `11/19` balance.
+- Exact signed convolution feedback identity.
+- Split-prime lower bound for `R_theta`.
+- Polylogarithmic-conductor exclusion.

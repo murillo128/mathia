@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Find a moving-comparator theorem with power fidelity, transfer-compatible complexity, and coherent turnover
+## Resolve the super-polylogarithmic/subpolynomial quadratic-comparator corridor or leave positive feedback
 
 **Linked intuitions:** `MI-001-local-cancellation-needs-a-polynomial-information-budget`, `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`, and `MI-008-moving-comparators-need-uniform-family-coherence`.
 
-Fixed real and complex comparator classes already transfer their cancellation exponent once the relevant global boundary relation is present. Moving characters can imitate Möbius at each finite scale, but MC-055--MC-061 show that this freedom consumes conductor and twisted-uniformity resources. MC-062--MC-063 further show that good subquadratic quadratic certificates cannot turn over freely: distinct identities are power-separated across scale.
+MC-064--MC-065 calibrate absolute transfer and show that moving the conductor inside the prefix lowers but does not remove its method-specific exponent floor. MC-066 then gives the exact signed convolution escape: the conductor-zero `L^1` charge disappears, but contraction requires the positive split-prime budget `R_theta(X;chi)` to stay below one. MC-067 proves uniformly that every fixed polylogarithmic conductor fails this requirement for fixed `theta<1`, while the classical near-critical Munsch certificate pushes from the other side toward `q=X^{o(1)}`.
 
-MC-064 adds the missing transfer calibration. Constant defect is not enough for a power saving; the weighted defect must decay polynomially, while the direct Burgess/square-divisor route has an `11/16` floor and imposes a conductor window tied to the desired exponent. The live route is therefore one source-forced family theorem that simultaneously supplies power-decaying fidelity, transfer-compatible conductor/complexity, and enough inter-scale persistence to cover the target range.
+The live character route is therefore precise: either prove a coherent family with `(log X)^{omega(1)}<q<X^{o(1)}` that simultaneously has near-critical squarefree-character cancellation, contractive signed feedback, and turnover compatible with MC-062--MC-063, or replace the positive triangle feedback by a genuinely signed cancellation theorem for its remainder.
 
 ## Change smoothing only with a quantitative endpoint-visibility theorem
 
@@ -26,4 +26,4 @@ Natural positive norms expose RH-equivalent coarse modes when pieces are bounded
 
 **Linked intuitions:** `MI-002-single-scale-pretentiousness-has-a-prime-harmonic-ceiling`, `MI-003-analytic-nonmasking-is-weaker-than-absolute-convolution-inversion`, and `MI-008-moving-comparators-need-uniform-family-coherence`.
 
-A metric may detect a target-scale defect while every known transfer overpays it. The character-prefix family makes the distinction explicit: finite coefficients can be nearly perfect while the boundary zero, global conductor, uniform cancellation constant, cross-scale coherence, and polynomial defect rate needed by the transfer remain invisible to the prefix.
+A metric may detect a target-scale defect while every known transfer overpays it. The quadratic-character branch now makes the distinction three-way: absolute fidelity, signed feedback, and comparator cancellation can have different optimal conductor regimes. A successful proof must control the exact resource consumed by the final transfer rather than infer it from prefix agreement alone.

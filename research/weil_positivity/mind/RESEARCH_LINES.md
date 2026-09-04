@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they discriminate among mathematically different mechanisms.
 
-## Couple arithmetic selection before positive differentiation or finite-dimensional repair
+## Change the resultant interaction before the all-prime positive completion short-circuits it
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, and `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`.
 
-WP-145 shows that the zero-order cyclotomic resultant carries exact prime-power support while its canonical positive Hessian fills in that support. WP-146--WP-147 close the simplest zero-order alternative: ordinary centering leaves a mixed-prime three-chain indefinite, and exact spectator-prime replication makes both primitive inertia indices unbounded. No fixed bounded-codimension constraint, fixed-rank correction, or fixed finite-dimensional auxiliary/archimedean Schur sector can repair the resulting kernel.
+WP-145--WP-147 show the original selector/sign conflict: the zero-order resultant retains prime-power support but has extensive mixed-prime inertia, while its canonical positive Hessian fills in the selector. WP-148--WP-149 now close the canonical conservative diagonal and measure-only escapes. The all-prime resultant graph has infinite degree at every shell, and exact spectator-prime parallel paths give zero effective resistance across every nonzero edge, forcing every finite-energy function to be constant.
 
-A decisive mechanism must therefore modify the arithmetic assembly **before** the sign theorem through a source-forced full-rank, growing-codimension, infinite-dimensional, or genuinely nonseparable finite--archimedean/cohomological coupling that still preserves the prime-power selector. Positive differentiation or finite-dimensional cleanup after provenance/sign conflict has formed is too late.
+A decisive continuation must therefore alter the interaction or assembly before this spectator network forms, while preserving the prime-power selector and deriving a nontrivial dense energy domain and sign theorem from the source. A new vertex measure, fixed finite-dimensional sector, or unchanged Dirichlet completion is insufficient.
 
 ## Change the operator before asking anchored or distributional Gamma carriers to inherit positivity
 
@@ -20,4 +20,4 @@ Bounded radial--solenoid Gamma intertwiners vanish by spectral type, exact distr
 
 **Linked intuitions:** `MI-005-cover-coinvariants-classicalize-or-collapse`, `MI-002-operator-category-is-a-hard-compatibility-gate`, and `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`.
 
-Zeroth cover coinvariants classicalize or collapse; local refinement responses have the wrong depth law; Kron/SPD positivity is universal; resultant-Hessian positivity destroys prime-power sparsity; and finite-dimensional centered resultant repair has extensive two-sided inertia. Any surviving category must change the architecture upstream and identify which source-specific information remains after its positive completion, with normalization and sign fixed independently.
+Zeroth cover coinvariants classicalize or collapse; local refinement responses have the wrong depth law; Kron/SPD positivity is universal; resultant-Hessian positivity destroys prime-power sparsity; finite-dimensional zero-order repair has extensive inertia; and the canonical all-prime resultant energy collapses to constants. Any surviving category must change the architecture upstream and identify which source-specific information remains after its positive completion, with normalization, domain, and sign fixed independently.
