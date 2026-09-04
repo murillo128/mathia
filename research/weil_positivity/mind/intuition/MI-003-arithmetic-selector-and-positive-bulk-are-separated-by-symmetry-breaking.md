@@ -1,37 +1,36 @@
-# MI-003 — Arithmetic selection can live in a potential value while canonical positive curvature differentiates the selector away
+# MI-003 — Arithmetic selection can survive at zero order while every simple positive completion misses or fights it
 
-**Evidence level:** supported through WP-145 by exact Kron, Fisher, resultant-Hessian, matched-composite, and real-place controls
+**Evidence level:** supported through WP-147 by exact Kron, Fisher, resultant-Hessian, conditional-sign, replication, and finite-rank controls
 
 ## Core intuition
 
-Positivity does not automatically erase arithmetic, but the operation that exposes an easy sign can act at a different derivative level from the operation carrying the arithmetic selector. A numerically correct logarithm may be a normalization anomaly; a genuinely arithmetic zero-order potential may become full-support and prime-blind after differentiation.
+Positivity does not automatically erase arithmetic, but the operation that exposes an easy sign can act at the wrong derivative or coupling level. The zero-order cyclotomic resultant is unusually faithful to the finite Weil arithmetic: it keeps prime-power support and the critical `log p/p^(k/2)` amplitudes. Yet differentiating it into canonical positive curvature fills in the missing support, while keeping it at zero order produces mixed-prime two-sided inertia that ordinary centering cannot repair.
 
-The recurring gate is therefore not just “find positive curvature.” It is to prove that the **same source-selected information survives into the positive object** rather than being quotiented, differentiated, or normalized away before the sign theorem acts.
+The gate is therefore stronger than “preserve provenance before differentiating.” A viable sign theorem must preserve the selector **and** alter its mixed-prime assembly through genuinely global structure; fixed finite-dimensional cleanup after the arithmetic block is formed is insufficient.
 
 ## Strongest justified principle
 
-WP-140--WP-141 isolate the scale-anomaly version. A positive Kron response can produce a `log m` determinant ratio because spaces of different rank scale differently, while the canonical spanning-tree Fisher Hessian kills common scale exactly. WP-142--WP-144 repair scale invariance with an equal-rank SPD relative determinant, but the resulting one-mode logarithm remains universal and matched by composites.
+WP-140--WP-144 isolate universal positive logarithms and scale anomalies: scale-invariant SPD/Kron responses can be independently positive while remaining composite-matched. WP-145 then shows that the exact cyclotomic log-resultant has the desired sparse prime-power amplitudes, but its sign-flipped vertex Hessian couples every primitive-shell pair, including resultant-one controls. The easy positive curvature differentiates the arithmetic support away and does not supply a unified finite--archimedean curvature.
 
-WP-145 closes the natural multi-mode resultant-Hessian escape. The zero-order cyclotomic logarithmic resultant has the exact prime-power sparsity and `log p` weights used by the Prime-Circle finite Weil coefficients. Its canonical sign-flipped vertexwise Hessian is genuinely positive and maximal rank, but it couples **every** pair of distinct primitive shells, including controls with resultant `1`. Differentiation destroys the load-bearing prime-power support.
+WP-146 tests the opposite strategy: keep the zero-order normalized resultant and seek positivity only after quotienting constants. The exact chain `6 -> 12 -> 36` retains the critical weights `log 2/sqrt 2` and `log 3/sqrt 3`, but their inequality makes the centered three-node form indefinite. An equal-weight path is conditionally negative, so the obstruction is tied to the arithmetic mismatch rather than path topology alone. Row-plus-column gauges and a separate unchanged global sector do not repair the witness.
 
-The same collision potential also fails to supply a unified finite--archimedean curvature: its reciprocal radial continuation has opposite second-derivative signs in the `sinh` and `cosh` real-place channels and produces squared inverse-distance kernels rather than the Weil kernels themselves. Thus the selector and the easy positive curvature live in different objects.
+WP-147 proves that this is extensive, not a one-block accident. Multiplying the chain by distinct spectator primes produces infinitely many exact resultant-orthogonal copies with identical bad weights. Both positive and negative primitive inertia indices therefore grow without bound. Any fixed bounded-codimension constraint, fixed-rank Hermitian correction, or fixed finite-dimensional auxiliary/archimedean sector eliminated by Schur complement leaves both signs once enough blocks are included.
 
 ## What remains possible
 
-A surviving route must preserve prime-power provenance before positive completion: for example through a graded/cohomological sign, a nonlocal finite--archimedean coupling, a determinant-line object whose arithmetic support is not differentiated away, or another source-forced operation with its own sign theorem. The positive operation must be audited on matched shell pairs where the zero-order resultant vanishes.
+A surviving resultant route must change the finite arithmetic block before the sign theorem by an operation whose rank/codimension grows with the arithmetic sector or is intrinsically infinite-dimensional/nonseparable. Possibilities include a genuinely coupled finite--archimedean/cohomological completion, full-rank nonlocal modification, or a source-forced infinite-dimensional quotient. Arbitrary diagonal or full-rank repair is not ruled out mathematically, but its canonicity and preservation of the prime-power selector must be derived independently.
 
 ## Status / novelty
 
-Kron reduction, Matrix-Tree/Fisher geometry, cyclotomic resultants, graph Laplacian Hessians, and hyperbolic curvature formulas are classical. The synthesis is the derivative-level selector/sign boundary: **canonical positivity can be mathematically real while acting after the arithmetic support has already disappeared**.
+Kron reduction, cyclotomic resultants, graph Laplacians, Schoenberg conditional kernels, inertia, and finite-rank perturbation theory are classical. The synthesis is the selector/sign boundary: **the faithful zero-order arithmetic kernel has extensive mixed-prime inertia, while its canonical positive derivative loses the selector; finite-dimensional after-the-fact repair closes neither gap**.
 
 ## Falsification criterion
 
-Construct within the covered Kron/resultant geometry a canonical positive form whose finite response retains exact prime-power support and the required real-place contribution, or derive a new upstream sign mechanism that avoids differentiating the selector away.
+Construct a fixed finite-dimensional or fixed-codimension completion contradicting the WP-147 inertia amplification, or derive a canonical growing/infinite completion that preserves exact prime-power amplitudes and supplies the required finite--archimedean sign without inserted zero data.
 
 ## Lean-formalizable core
 
-- Rank-scaling determinant anomaly and Fisher scale-null direction.
 - Cyclotomic resultant prime-power support.
 - Full-support positive resultant Hessian.
-- Matched-resultant-one control.
-- Opposite real-place curvature signs.
+- Three-chain centered indefiniteness.
+- Direct-sum inertia amplification and finite-rank/codimension obstruction.
