@@ -44,11 +44,11 @@ The derivative jumps do not create distributional delta masses because `Psi` its
 
 The apparent factor `1/a` is harmless at `a=0`. The completed function satisfies `xi(s)=xi(1-s)`, so `xi'/xi` is odd around `s=1/2`; moreover `xi(1/2)` is nonzero. Thus `(xi'/xi)(1/2+a)=O(a)` and `L_Y` has a removable singularity at the origin.
 
-Classically `xi` has no real zeros, while it has infinitely many nonreal zeros. Therefore the meromorphic continuation of `L_Y` has **no real poles at all**, but has genuine nonreal poles at
+Classically `xi` has no real zeros, while it has infinitely many nonreal zeros. Therefore the meromorphic continuation of `L_Y` has **no real poles at all**, but has a genuine nonreal pole at
 
 `a=rho-1/2`
 
-for every nontrivial zero `rho` of zeta, with the corresponding multiplicity. This is the only zero information needed below; no assumption on the real parts of those zeros enters.
+for every nontrivial zero `rho` of zeta. A multiple zero still produces a simple logarithmic-derivative pole, with nonzero residue. This is the only zero information needed below; no assumption on the real parts of those zeros enters.
 
 ## Landau one-sign obstruction
 
@@ -91,7 +91,7 @@ at the event. Thus `Y` can cross from positive to negative only during the deter
 Because the preceding section forces both signs arbitrarily far out, there must be infinitely many such cycles. In particular:
 
 - infinitely many prime-power events participate in negative-to-positive workload restarts;
-- infinitely many later prime-free intervals contain a recovery zero where `Y` crosses from positive to negative;
+- infinitely many later descending inter-event segments, possibly reaching zero at their right event endpoint before the upward jump, contain a recovery zero where `Y` passes from positive to nonpositive;
 - neither an eventually positive "terminal active episode" nor an eventually negative permanently idle state is possible.
 
 This is stronger than merely observing that a finite computation has found many recovery witnesses. It is an unconditional infinite-tail statement, but it controls only the **derivative/workload state**. It says nothing about whether the corresponding local minimum of `Psi` lies above or below zero.
@@ -122,9 +122,9 @@ The same argument exposes why this recurrence is not yet the rational-prime rigi
 
 `integral_0^infinity (-Psi_F'(t)) exp(-a t) dt = -C(a) F'/F(s_0+a)`
 
-in some right half-plane, where `C` is regular on the real axis after a symmetry-centered removable factor, `F` continues meromorphically, has no zeros on the corresponding real line, and has at least one nonreal zero. Then the identical Landau argument forbids eventual one-sign behavior of `-Psi_F'`.
+in some right half-plane, where the right-hand side has a meromorphic continuation, is regular on the real `a`-axis, and retains at least one genuine nonreal pole. Then the identical Landau argument forbids eventual one-sign behavior of `-Psi_F'`, provided the tail transform has the usual finite initial abscissa.
 
-Completed automorphic `L`-functions with analogous symmetry can therefore exhibit the same qualitative obstruction. What is special to the Riemann prime lattice in the Suzuki realization is the *forcing decomposition*: its jumps occur exactly at
+Any completed spectral function satisfying those hypotheses therefore gives the same qualitative obstruction. What is special to the Riemann prime lattice in the Suzuki realization is the *forcing decomposition*: its jumps occur exactly at
 
 `log(p^k)`
 
