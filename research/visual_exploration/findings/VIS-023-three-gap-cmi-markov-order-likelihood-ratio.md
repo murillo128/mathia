@@ -22,9 +22,9 @@ For a regular fully supported `s`-state first-order Markov chain, the classical 
 
 `G^2 -> chi^2_{s(s-1)^2}`.
 
-Consequently the leading asymptotic positive plug-in CMI floor under that null is
+Moreover, finite-state Markov concentration makes this family uniformly integrable, so the leading asymptotic positive plug-in CMI floor under that null is
 
-`E[I_hat] ~ s(s-1)^2/(2m)` nats.
+`E[I_hat] = s(s-1)^2/(2m) + o(1/m)` nats.
 
 **Evidence/status:** `CLASSICAL-LIKELIHOOD-RATIO + EXACT-DERIVED SPECIALIZATION`.
 
@@ -68,11 +68,47 @@ A fully supported first-order `s`-state transition matrix has `s(s-1)` free tran
 
 Classical Markov-chain likelihood-ratio theory therefore gives an asymptotic `chi^2` law with that many degrees of freedom under a regular first-order null. Besag and Mondal (2013), reviewing the classical Bartlett/Hoel/Anderson/Goodman/Billingsley tests, state this first-order-versus-second-order statistic and the same `s(s-1)^2` asymptotic degrees of freedom explicitly.
 
-Since a `chi^2_nu` variable has mean `nu`, the same asymptotics imply
+The expectation statement requires more than weak convergence. Let `p` be the stationary triple law under a fully supported first-order null and let `p_hat_m` be the empirical triple law. The overlapping-triple process
 
-`E[I_hat] ~ nu/(2m)`
+`Z_t=(X_{t-1},X_t,X_{t+1})`
 
-under the regular first-order null. A positive empirical CMI is therefore expected even when the population conditional mutual information is zero.
+is itself a finite-state irreducible aperiodic Markov chain. Finite-state Markov Chernoff bounds therefore give exponential concentration of each coordinate of `p_hat_m` around `p`; a canonical source is Pascal Lezaud, **Chernoff-type bound for finite Markov chains**, *Annals of Applied Probability* 8 (1998), 849–867, DOI `10.1214/aoap/1028903453`.
+
+Define on the positive simplex
+
+`F(q)=2 I_q(X_{t-1};X_{t+1}|X_t)`.
+
+At the first-order Markov law `p`, `F(p)=0`. Full support puts `p` in the interior, so `F` is `C^2` on a neighborhood `U` of `p`; since `p` is a minimum of the nonnegative function `F`, its first differential vanishes on the simplex tangent space. Taylor's theorem gives a constant `C` such that
+
+`F(q) <= C ||q-p||^2`
+
+for `q in U`. Hence
+
+`G^2 = m F(p_hat_m) <= C m ||p_hat_m-p||^2`
+
+on `{p_hat_m in U}`. Coordinatewise exponential concentration then gives an exponentially decaying tail for this local quadratic form, and therefore a uniformly bounded `1+delta` moment for some fixed `delta>0`.
+
+The complement is also negligible. Conditional mutual information on an `s`-state alphabet satisfies `I_hat <= log s`, so globally
+
+`0 <= G^2 <= 2m log s`,
+
+while the same finite-state concentration gives `P(p_hat_m notin U) <= a exp(-bm)` for suitable constants. Thus
+
+`E[(G^2)^(1+delta) 1_{p_hat_m notin U}] <= (2m log s)^(1+delta) a exp(-bm) -> 0`.
+
+Consequently `{G^2}` is uniformly integrable. Combining uniform integrability with
+
+`G^2 => chi^2_nu`,  `nu=s(s-1)^2`,
+
+gives
+
+`E[G^2] -> nu`,
+
+and the exact identity `I_hat=G^2/(2m)` yields
+
+`E[I_hat] = nu/(2m) + o(1/m)`.
+
+A positive empirical CMI of this order is therefore expected even when the population conditional mutual information is zero.
 
 ## Visual sanity check
 
@@ -88,13 +124,13 @@ The simulation is not evidence for the theorem or for zeta. It is retained becau
 
 The Markov-order likelihood-ratio test is classical. Besag and Mondal, **Exact Goodness-of-Fit Tests for Markov Chains**, *Biometrics* 69:2 (2013), 488–496, DOI `10.1111/biom.12009`, summarize the older asymptotic theory, write the first-order-versus-second-order likelihood-ratio statistic in terms of triple frequencies, and give the `s(s-1)^2` chi-square calibration. Their main contribution is exact conditional testing when the asymptotic approximation is unreliable.
 
-Conditional mutual information as a Markov-order diagnostic is also established literature; for example Papapetrou and Kugiumtzis, **Markov Chain Order estimation with Conditional Mutual Information** (2013), arXiv:`1301.0148`, develop CMI significance tests for symbolic Markov sequences.
+Conditional mutual information as a Markov-order diagnostic is also established literature; for example Papapetrou and Kugiumtzis, **Markov Chain Order estimation with Conditional Mutual Information** (2013), arXiv:`1301.0148`, develop CMI significance tests for symbolic Markov sequences. Lezaud's finite-state concentration theorem supplies a standard route to the uniform-integrability step needed to pass from the Wilks weak limit to the stated leading expectation asymptotic in the fully supported finite-state setting.
 
-No novelty is claimed for the likelihood-ratio test, degrees of freedom, or asymptotic chi-square law. The Mathia contribution is the **specialization and control boundary** for `VIS-020`: its three-gap residual scalar is not merely an information measure but exactly the classical first-vs-second-order Markov likelihood-ratio statistic for the binned gap sequence.
+No novelty is claimed for the likelihood-ratio test, degrees of freedom, asymptotic chi-square law, or Markov concentration. The Mathia contribution is the **specialization and control boundary** for `VIS-020`: its three-gap residual scalar is not merely an information measure but exactly the classical first-vs-second-order Markov likelihood-ratio statistic for the binned gap sequence.
 
 ## Boundary conditions
 
-The displayed likelihood identity is exact for the empirical counts and fixed partition, but the `chi^2` calibration is not exact in finite samples. It assumes a regular model with adequate support. Structural zeros, rare states, sparse contexts, boundary MLEs, or data-adaptive bin deletion change the effective model and can invalidate the nominal degrees of freedom.
+The displayed likelihood identity is exact for the empirical counts and fixed partition, but the `chi^2` calibration is not exact in finite samples. It assumes a regular model with adequate support. Structural zeros, rare states, sparse contexts, boundary MLEs, or data-adaptive bin deletion change the effective model and can invalidate the nominal degrees of freedom and the uniform-integrability argument as stated.
 
 The leading bias `nu/(2m)` is only asymptotic. It should be treated as a scale diagnostic, not as a finite-sample correction guaranteed to remove all bias. Exact conditional Monte Carlo tests or process-specific resampling are preferable when the table is sparse.
 

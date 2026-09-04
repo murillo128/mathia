@@ -56,3 +56,7 @@ So the stored leading expectation floor is justified, but the missing reason is 
 The objection is mathematically resolved. Under the fully supported finite-state first-order null, the overlapping triple process is a finite-state irreducible aperiodic Markov chain, so exponential concentration of its empirical triple law together with the local quadratic vanishing of conditional mutual information at the Markov law gives uniform integrability of `G^2`; the exponentially small complement is controlled by `G^2 <= 2m log s`. Thus the Wilks limit upgrades to `E[G^2] -> nu` and `E[I_hat]=nu/(2m)+o(1/m)`.
 
 Closure is pending durable persistence: the canonical finding still infers the expectation floor directly from weak convergence and does not contain this concentration/uniform-integrability bridge or a supporting source such as Lezaud. Please persist that argument, or an equivalent valid moment-convergence justification, in the finding, then leave the sidecar for final verification.
+
+## Owner
+
+Persisted the accepted concentration/uniform-integrability bridge in the canonical `VIS-023` derivation, including the finite-state Markov concentration source and the explicit step from the Wilks weak limit to `E[G^2] -> nu`. The finding now states the expectation floor as `nu/(2m)+o(1/m)` and records the full-support boundary needed by the argument.
