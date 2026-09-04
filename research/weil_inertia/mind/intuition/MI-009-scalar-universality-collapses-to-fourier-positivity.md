@@ -1,36 +1,44 @@
-# MI-009 — Scalar universality collapses to Fourier positivity; finite scalar tests can be repaired by remote spectrum
+# MI-009 — Full bounded-depth scalar universality squeezes signed spectrum into a vanishing central boundary layer
 
-**Evidence level:** proved for the compact-spectrum, superexponential, and bounded-depth scalar universality classes covered by WI-145--WI-149
+**Evidence level:** proved for the scalar universality classes covered by WI-145--WI-152
 
 ## Core intuition
 
-A scalar inequality can reject one isolated off-line pair without being a genuine universal inertia detector. Remote spectral mass can repair finitely many scalar tests. At the opposite extreme, requiring the scalar inequality to hold uniformly over a sufficiently rich spectral class forces the test back into ordinary Fourier positivity.
+A scalar inequality can reject one isolated off-line pair without being a genuine universal inertia detector. Remote spectral mass can repair finitely many scalar tests. At the opposite extreme, sufficiently broad source-free universality classicalizes the profile toward Fourier positivity.
 
-The useful regime is therefore neither a finite list of scalar probes nor source-free scalar universality. A zero-specific coercive theorem must exploit source restrictions or genuinely joint/sign-indefinite information that remote spectral repair and Fourier-positive classicalization cannot reproduce.
+The bounded-depth middle regime is now quantitative rather than merely smoothed. Full finite-multiset universality at strip depth `B` forces every negative spectral feature either into an `O(B^-1)` neighborhood of the origin with total mass `O(phi(0)/B)`, or to pay an exponentially large central value if it remains at fixed spectral radius. The remaining scalar escape is therefore a **source-justified central spike**, not arbitrary moving signed mass.
 
 ## Strongest justified principle
 
-WI-145 shows that a single conjugate pair already violates the proposed CGDL negative-tail scalar bound. WI-146 then supplies the adversarial control: a two-point Lamzouri-style test can be repaired by adding remote spectral mass, so finitely many isolated scalar constraints do not characterize the global zero configuration.
+WI-145 shows that one conjugate pair violates a tempting negative-tail scalar bound, while WI-146 supplies the adversarial repair: finite two-point constraints can be repaired by remote spectral mass. WI-147--WI-149 show the opposite boundary: universal compact/superexponential classes force Fourier positivity, and bounded depth initially yields Gaussian-smoothed positivity.
 
-WI-147 proves that if the same scalar bound is required universally over compact spectra, the test function must be Fourier positive. WI-148 extends the collapse to very broad superexponential scalar universality classes. WI-149 identifies the bounded-depth intermediate statement: finite depth forces only Gaussian-smoothed Fourier positivity at the corresponding resolution.
+WI-150 uses the full bounded-depth scalar census to obtain exact lattice-alias positivity. WI-151 strengthens this with phase-masked combs: for an even continuous spectral profile with the stated exponential moment,
 
-WI-144 is compatible with this boundary: coherent positive Hilbert multiwindow lifts also remain inside the Fourier-positive cone. Enlarging the positive scalar/Hilbert carrier does not manufacture the negative spectral tail needed by the SDP gain.
+`phi(a) >= -2 phi(0) sech^2(2 pi B a)`.
+
+Thus fixed-radius negative dips collapse exponentially as the admissible depth grows unless the central value compensates.
+
+WI-152 combines that phase-mask floor with the real two-point consequence `H>=0`. Fourier inversion then makes `phi` positive definite and gives `|phi(t)|<=phi(0)`. Integrating the two bounds yields
+
+`int phi_- <= [C_*/(pi B)] phi(0)`
+
+with the persisted explicit constant `C_*`. Negative mass outside a fixed positive radius is exponentially smaller. Hence if `B->infinity` and `phi(0)=o(B)`, the entire signed profile approaches the normalized nonnegative cone in `L^1`, not merely after Gaussian smoothing.
 
 ## What remains possible
 
-A live route can restrict the admissible spectra using independent zeta-source theorems, use coupled multi-point constraints that cannot be repaired by remote mass, or introduce sign-indefinite/matrix/inertia information. The source restriction must be explicit; otherwise universality itself classicalizes the desired detector.
+The universal scalar hypothesis does not itself prove `phi(0)=o(B)`. A profile may attempt to survive by concentrating an increasingly tall central spike on a shrinking scale. The next scalar gate is therefore source-specific: derive from the actual admissible test-function/kernel class an upper bound on `phi(0)` relative to available strip depth. Alternatively leave the one-scalar category through matrix/joint/inertia information or restrict configurations using independent zeta-source theorems.
 
 ## Status / novelty
 
-Fourier positivity, Gaussian smoothing, and spectral interpolation are classical tools. The synthesis is the scalar gate: **finite tests are underdetermined, while broad source-free universality becomes Fourier positivity**.
+Fourier positivity, Bochner theory, Fejer inversion, and hyperbolic-function bounds are classical. The synthesis is the bounded-depth squeeze: **finite scalar tests are repairable, broad universality classicalizes, and full finite-depth universality permits signed mass only through a quantitatively expensive central boundary layer**.
 
 ## Falsification criterion
 
-Construct a source-free scalar universal inequality in the covered classes that is not Fourier-positive at the corresponding resolution, or derive a zeta-source admissibility theorem that blocks remote repair and yields a genuinely stronger scalar conclusion.
+Construct a profile satisfying the full WI-151/WI-152 finite-multiset hypothesis that violates the pointwise or integrated negative-mass bounds, or derive a zeta-source kernel family whose central value stays sublinear in depth and thereby closes the remaining scalar escape.
 
 ## Lean-formalizable core
 
-- Remote spectral repair of finite scalar constraints.
-- Universal compact-spectrum implication to Fourier positivity.
-- Superexponential universality implication.
-- Bounded-depth implication to Gaussian-smoothed positivity.
+- Remote repair of finite scalar constraints.
+- Phase-masked pointwise spectral floor.
+- Real two-point positivity to positive-definite spectral profile.
+- `O(phi(0)/B)` total negative-mass budget and tail localization.
