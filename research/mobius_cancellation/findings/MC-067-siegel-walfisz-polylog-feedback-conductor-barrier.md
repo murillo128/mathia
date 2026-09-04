@@ -1,4 +1,4 @@
-# MC-067 — Siegel–Walfisz excludes every polylogarithmic conductor from the positive signed-feedback bootstrap
+# MC-067 — Page–Siegel extends the positive quadratic-feedback barrier to stretched-exponential conductors
 
 **Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `NEGATIVE/OBSTRUCTION`, `CLASSICAL-MECHANISM`, `NO-NOVELTY-CLAIM`.
 
@@ -36,241 +36,334 @@ R_\theta(X;\chi)
 \tag{2}
 \]
 
-Fix `B>0` and `eta>0`. Uniformly for prime conductors
+There is an absolute constant `b>0` with the following property. For every fixed `eta>0`, uniformly for odd prime conductors
 
 \[
-q\le (\log X)^B
+q\le \exp\!\bigl(b\sqrt{\log X}\bigr)
 \tag{3}
 \]
 
 and exponents
 
 \[
-0<\theta\le 1-\eta,
+0<\theta\le1-\eta,
 \tag{4}
 \]
 
-the Siegel–Walfisz theorem implies, for all sufficiently large `X` depending on `B` and `eta`,
+one has, for all sufficiently large `X`,
 
 \[
-\boxed{
-R_\theta(X;\chi)
-\gg_B
-\frac{X^{1-\theta}}{\log X}
-\ge
-\frac{X^\eta}{\log X}.
-}
+\boxed{R_\theta(X;\chi)>1.}
 \tag{5}
 \]
 
-In particular,
+More quantitatively, if `L(s,chi)` has no exceptional zero in the classical Page region, then
 
 \[
-\boxed{R_\theta(X;\chi)>1}
+R_\theta(X;\chi)
+\gg
+\frac{X^{1-\theta}}{\log X}.
 \tag{6}
 \]
 
-throughout the whole polylogarithmic-conductor regime once `X` is large enough. Therefore the positive-kernel triangle bootstrap isolated in `MC-066`, which requires `R_theta(X;chi)<1`, cannot use a conductor bounded by any fixed power of `log X` at any exponent separated from `1`.
-
-Equivalently, if a sequence of moving quadratic characters closes that bootstrap at a fixed `theta<1` for arbitrarily large `X`, then its conductors must eventually satisfy
+If it has an exceptional zero `beta`, then after choosing `b` sufficiently small relative to the effective constant in the classical Page prime-number theorem,
 
 \[
-\boxed{
-q(X)>(\log X)^B
-\quad\text{for every fixed }B>0.
-}
+R_\theta(X;\chi)
+\gg
+X^{1-\theta}\exp\!\left(-\frac b2\sqrt{\log X}\right).
 \tag{7}
 \]
 
-So the phrase "genuinely moving" in `MC-066` can be sharpened: the conductor must be **super-polylogarithmic**, not merely unbounded.
+Both lower bounds diverge for every fixed `theta<=1-eta`. Thus the positive-kernel triangle bootstrap from `MC-066`, which requires `R_theta(X;chi)<1`, cannot use **any** prime quadratic conductor up to stretched-exponential scale `(3)`, whether or not a Landau–Siegel zero is present.
 
-Coupling this with the classical Munsch/Burgess comparator certificate from `MC-064`--`MC-066` produces a narrow asymptotic corridor. If one tries to certify a near-critical family
+This strictly strengthens the original Siegel–Walfisz conclusion of this finding. The previous argument excluded every fixed polylogarithmic conductor. The exceptional-zero audit shows that the same architecture actually fails throughout
+
+\[
+q\le \exp\!\bigl(b\sqrt{\log X}\bigr).
+\tag{8}
+\]
+
+Combining `(8)` with the Munsch/Burgess squarefree-character certificate retained in `MC-064`--`MC-066`, a near-critical implementation satisfying
 
 \[
 |F_\chi(X)|=X^{1/2+o(1)}
 \]
 
-using only the displayed Munsch bound
-
-\[
-|F_\chi(X)|
-\ll
-X^{1/2}q^{3/16}(\log X)(\log q)^{1/2},
-\tag{8}
-\]
-
-then that certificate requires
-
-\[
-q=X^{o(1)}.
-\tag{9}
-\]
-
-Thus a near-critical implementation of this exact architecture can live only in the intermediate regime
+through the displayed classical bound still requires `q=X^{o(1)}`. Hence the method-specific surviving conductor window is narrowed to
 
 \[
 \boxed{
-(\log X)^{\omega(1)}<q<X^{o(1)}.
+\exp\!\bigl(b\sqrt{\log X}\bigr)<q<X^{o(1)}.
 }
+\tag{9}
+\]
+
+Equation `(9)` is only a necessary search corridor for this exact certificate package. It does not assert that suitable characters exist there, and no improved bound for `M(X)` is claimed.
+
+## 1. Terminal split primes are enough to break contraction
+
+Let
+
+\[
+\mathcal P_+(X;\chi)
+:=
+\{p:X/2<p\le X,\ \chi(p)=+1\}.
 \tag{10}
 \]
 
-Equation `(10)` is a **method-specific search corridor**, not an existence statement. It says that the two classical sides of the same proposed bootstrap squeeze the conductor from opposite directions: Siegel–Walfisz kills every fixed polylogarithmic scale through the feedback term, while the Munsch/Burgess certificate becomes non-critical when the conductor has a fixed positive power of `X`.
-
-No new estimate for `M(X)` is claimed.
-
-## 1. Split primes already force a large positive feedback term
-
-For every prime `p!=q` with `chi(p)=+1`, equation `(1)` gives
-
-\[
-h_\chi(p)=2.
-\]
-
-Since every term of `R_theta` is nonnegative,
+Every prime in this set contributes `h_chi(p)=2`. Positivity therefore gives
 
 \[
 R_\theta(X;\chi)
 \ge
-2\sum_{\substack{p\le X\\ \chi(p)=+1}}p^{-\theta}.
+2\sum_{p\in\mathcal P_+(X;\chi)}p^{-\theta}
+\ge
+2X^{-\theta}\#\mathcal P_+(X;\chi).
 \tag{11}
 \]
 
-The obstruction therefore needs only a lower bound for quadratic-residue primes in one terminal interval. It does not require an Euler-product approximation for the full kernel, estimates for composite `d`, or any inversion of the recurrence in `MC-066`.
-
-Put
+It is enough to prove that the terminal interval contains sufficiently many split primes. Put
 
 \[
-\vartheta_+(x;\chi)
-:=
-\sum_{\substack{p\le x\\ \chi(p)=+1}}\log p.
+\vartheta(x)=\sum_{p\le x}\log p,
+\qquad
+\vartheta(x,\chi)=\sum_{p\le x}\chi(p)\log p.
 \tag{12}
 \]
 
-There are exactly `(q-1)/2` reduced residue classes modulo the prime `q` on which the quadratic character equals `+1`. The Siegel–Walfisz theorem in `MC-S15` gives, for every fixed power `C>0`, uniformly for `q<=(log x)^C` and every reduced residue class `a mod q`,
+Except for the conductor prime itself,
 
 \[
-\vartheta(x;q,a)
+2\mathbf 1_{\chi(p)=1}=1+\chi(p)
+\]
+
+on primes. Hence
+
+\[
+2\sum_{p\in\mathcal P_+(X;\chi)}\log p
 =
-\frac{x}{q-1}
-+O_C\!\left(xe^{-c\sqrt{\log x}}\right),
+\bigl(\vartheta(X)-\vartheta(X/2)\bigr)
++
+\bigl(\vartheta(X,\chi)-\vartheta(X/2,\chi)\bigr)
++O(\log q).
 \tag{13}
 \]
 
-with the usual ineffective threshold coming from Siegel's theorem. Summing `(13)` over the `(q-1)/2` split classes yields
+The ordinary prime number theorem gives
 
 \[
-\vartheta_+(x;\chi)
+\vartheta(X)-\vartheta(X/2)
 =
-\frac{x}{2}
-+O_C\!\left(qx e^{-c\sqrt{\log x}}\right)
-=
-\frac{x}{2}+o_C(x)
+\frac X2+O\!\left(Xe^{-c\sqrt{\log X}}\right).
 \tag{14}
 \]
 
-uniformly when `q<=(log x)^C`.
+The only question is therefore how much the quadratic twist can cancel this terminal prime mass.
 
-If `(3)` holds at `X`, then for large `X` it also lies inside a Siegel–Walfisz range at `X/2` after increasing the fixed logarithmic exponent, for example from `B` to `B+1`. Hence `(14)` at `X` and `X/2` gives
+## 2. The non-exceptional case gives positive-density split mass
+
+`MC-S15`, Montgomery and Vaughan, Chapter 11, Theorem 11.16, gives an effective constant `c_1>0` such that for
 
 \[
-\sum_{\substack{X/2<p\le X\\ \chi(p)=+1}}\log p
-=
-\frac{X}{4}+o_B(X).
+q\le\exp\!\bigl(2c_1\sqrt{\log x}\bigr)
+\]
+
+a nonprincipal character with no exceptional zero satisfies
+
+\[
+\psi(x,\chi)
+\ll
+x e^{-c_1\sqrt{\log x}}.
 \tag{15}
 \]
 
-For all sufficiently large `X`, the left side is at least `X/5`. Since every prime in the interval has `log p<=log X`,
+Removing prime powers changes this by only `O(sqrt(x) log^2 x)`, which is negligible here. Taking `b<c_1` ensures that `(15)` applies at both `x=X` and `x=X/2` once `X` is large. Thus
 
 \[
-\#\{X/2<p\le X:\chi(p)=+1\}
-\ge
-\frac{X}{5\log X}.
+\vartheta(X,\chi)-\vartheta(X/2,\chi)
+=
+o(X).
 \tag{16}
 \]
 
-Every such prime also satisfies `p^{-theta}>=X^{-theta}`. Inserting `(16)` into `(11)` gives the explicit asymptotic lower bound
+Equations `(13)`--`(16)` imply
 
 \[
-R_\theta(X;\chi)
-\ge
-\frac{2}{5}\frac{X^{1-\theta}}{\log X},
+\sum_{p\in\mathcal P_+(X;\chi)}\log p
+\ge cX
 \tag{17}
 \]
 
-once `X` is large enough. Under `(4)`, this is at least `(2/5)X^eta/log X`, proving `(5)`--`(6)`.
-
-The key point is that the obstruction comes from **terminal split primes**. A small conductor has already entered the uniform prime-distribution regime by the time the feedback is evaluated at scale `X`, so the split-prime population cannot remain sparse enough for a positive `p^{-theta}` kernel to be contractive.
-
-## 2. Why this is stronger than the fixed-character observation in MC-066
-
-`MC-066` already noted that a fixed nonprincipal quadratic character cannot keep `R_theta(X;chi)` bounded for `theta<1`, because split primes occupy positive-density residue classes asymptotically. That statement by itself leaves open conductors that grow slowly with `X`: the asymptotic threshold for a different character at every scale could in principle move faster than the observation point.
-
-Siegel–Walfisz is exactly the uniformity needed to close that loophole for
+for an absolute `c>0`, and therefore
 
 \[
-q\le(\log X)^B
+\#\mathcal P_+(X;\chi)
+\gg \frac X{\log X}.
+\tag{18}
 \]
 
-with arbitrary fixed `B`. Equation `(17)` is uniform across every prime conductor in that range. Therefore neither a fixed character, a logarithmically growing conductor, nor any fixed polylogarithmic conductor can satisfy the positive-feedback contraction required by `(9)` of `MC-066`.
+Substitution into `(11)` proves `(6)`. This is the same mechanism as the former polylogarithmic Siegel–Walfisz argument, but the twisted Page estimate reaches the much larger range `(3)` without summing errors separately over residue classes.
 
-This does not extend automatically to `q=X^delta`. Siegel–Walfisz is deliberately a polylogarithmic-modulus theorem, and possible exceptional-zero effects are part of why uniform prime distribution at polynomially growing moduli is a different problem. The surviving corridor in `(10)` is therefore not an artifact to be erased by silently extrapolating `(13)` beyond its valid range.
+## 3. An exceptional zero cannot save a sufficiently small stretched-exponential conductor
 
-## 3. The Munsch side supplies the opposite pressure near the critical exponent
+Suppose now that `L(s,chi)` has an exceptional real zero `beta`, and write
 
-For prime `q`, `MC-S38` gives
+\[
+\delta:=1-\beta>0.
+\]
+
+In the same range, Theorem 11.16 gives
+
+\[
+\psi(x,\chi)
+=
+-\frac{x^\beta}{\beta}
++O\!\left(xe^{-c_1\sqrt{\log x}}\right).
+\tag{19}
+\]
+
+Thus the main part of `(13)` is no longer `X/2`: the exceptional term almost cancels it on residue classes with `chi=+1`. The exact remaining main mass is
+
+\[
+\frac X2-rac{X^\beta-(X/2)^\beta}{\beta}
+=
+\int_{X/2}^{X}\bigl(1-t^{-\delta}\bigr)\,dt.
+\tag{20}
+\]
+
+This identity isolates the only possible loophole. For `t in [X/2,X]`,
+
+\[
+1-t^{-\delta}
+=1-e^{-\delta\log t}
+\gg
+\min\{1,\delta\log X\},
+\tag{21}
+\]
+
+so
+
+\[
+\int_{X/2}^{X}(1-t^{-\delta})dt
+\gg
+X\min\{1,\delta\log X\}.
+\tag{22}
+\]
+
+The classical Siegel lower bound in `MC-S15`, Corollary 11.15, applied with `epsilon=1/2`, gives a positive constant `C` such that
+
+\[
+\delta\ge Cq^{-1/2}.
+\tag{23}
+\]
+
+For conductors satisfying `(3)`,
+
+\[
+\delta\log X
+\gg
+(\log X)\exp\!\left(-\frac b2\sqrt{\log X}\right).
+\tag{24}
+\]
+
+Choose `b>0` small enough that `b/2<c_1` and also small enough for Theorem 11.16 to apply at `X/2`. Then the lower bound in `(22)` dominates the error term in `(19)` and the prime-power error. Equations `(13)` and `(20)`--`(24)` yield
+
+\[
+\sum_{p\in\mathcal P_+(X;\chi)}\log p
+\gg
+X(\log X)\exp\!\left(-\frac b2\sqrt{\log X}\right).
+\tag{25}
+\]
+
+Consequently,
+
+\[
+\#\mathcal P_+(X;\chi)
+\gg
+X\exp\!\left(-\frac b2\sqrt{\log X}\right),
+\tag{26}
+\]
+
+and `(11)` gives `(7)`.
+
+For every fixed `eta>0` and `theta<=1-eta`,
+
+\[
+X^{1-\theta}e^{-(b/2)\sqrt{\log X}}
+\ge
+X^\eta e^{-(b/2)\sqrt{\log X}}
+\longrightarrow\infty,
+\]
+
+so even the strongest possible exceptional bias in this classical range cannot make the positive feedback contractive.
+
+The threshold is mathematically meaningful. Page's formula allows the split-prime main term to be almost annihilated by an exceptional zero; the reason it still beats the error in `(3)` is precisely that Siegel's `q^{-1/2}` lower bound on `1-beta` decays more slowly than the `e^{-c_1 sqrt(log X)}` Page error when `log q` is a sufficiently small multiple of `sqrt(log X)`.
+
+## 4. Coupling to the squarefree-character certificate
+
+`MC-S38`, Munsch's squarefree-character estimate, gives for prime `q`
 
 \[
 |F_\chi(X)|
 \ll
 X^{1/2}q^{3/16}(\log X)(\log q)^{1/2}.
-\tag{18}
+\tag{27}
 \]
 
-At a fixed target `theta=1/2+epsilon`, this displayed theorem can certify
+At a fixed target `theta=1/2+epsilon`, this theorem can certify
 
 \[
 |F_\chi(X)|\le X^{\theta+o(1)}
 \]
 
-only in the conductor range
+only while
 
 \[
 q\le X^{16\varepsilon/3+o(1)}.
-\tag{19}
+\tag{28}
 \]
 
-For a near-critical target whose excess exponent tends to zero, the same certificate therefore requires `q=X^{o(1)}`. Equation `(7)` simultaneously requires `q` to dominate every fixed power of `log X` if the positive feedback is to contract. This gives `(10)`.
+If the target exponent tends to `1/2`, the same certificate requires `q=X^{o(1)}`. The feedback side now simultaneously requires
 
-The word "requires" here is certificate-specific. A conductor larger than `(19)` might have an unusually small true squarefree character sum; Munsch's upper bound would simply no longer certify it at the desired exponent. Likewise a different squarefree-character theorem with better conductor dependence would alter the upper side of the corridor.
+\[
+q>\exp\!\bigl(b\sqrt{\log X}\bigr)
+\tag{29}
+\]
 
-The lower side is tied instead to the positive feedback architecture itself. Any replacement theorem that still closes `MC-066` by demanding `R_theta<1` must confront `(17)` in the Siegel–Walfisz range.
+for all sufficiently large `X`, producing `(9)`.
 
-## 4. Prior art and novelty boundary
+This remains a method-specific squeeze. A larger conductor may have a much smaller true squarefree character sum than `(27)` certifies, and a better comparator theorem would change the upper pressure. Conversely, `(29)` is tied to the positive-kernel triangle closure `R_theta<1`; a genuinely signed treatment of the feedback terms in
 
-The analytic input is classical. `MC-S15` anchors Montgomery and Vaughan, *Multiplicative Number Theory I: Classical Theory*, Chapters 4 and 11. Chapter 11 proves the Siegel–Walfisz theorem and its corresponding uniform estimates for `vartheta(x;q,a)` and `pi(x;q,a)` for `q<=(log x)^A`. No novelty is claimed for `(13)`--`(16)`, for the equidistribution of split prime residue classes, or for the fact that the theorem is ineffective at its uniform threshold.
+\[
+M(X)=F_\chi(X)-\sum_{2\le d\le X}h_\chi(d)M(X/d)
+\]
 
-`MC-S38` is Munsch's classical squarefree-character estimate and supplies `(18)`. The local identity `h_chi(p)=2` on split primes and the feedback recurrence are already persisted in `MC-066`.
+lies outside this obstruction.
 
-The retained line-specific content is the coupling of these two classical boundaries to the exact feedback carrier: uniform split-prime equidistribution turns the qualitative "moving character" escape of `MC-066` into the quantitative super-polylogarithmic lower bound `(7)`, and the Munsch certificate supplies the opposite near-critical subpolynomial pressure `(9)`. This is stored as a derived obstruction and search-space reduction, not as a new theorem of analytic number theory.
+## 5. Prior art and novelty boundary
 
-A targeted prior-art check around small prime quadratic residues, prime character sums, and uniform primes in arithmetic progressions found the expected Burgess/Linnik/Siegel–Walfisz literature. Those results do not justify extending `(17)` to general polynomial conductors. Conversely, least-prime-residue results alone are weaker than the terminal population estimate needed here; the useful input is uniform distribution of a positive proportion of split primes once the modulus is polylogarithmic in the observation scale.
+All analytic-number-theory ingredients are classical. `MC-S15` is the primary retained anchor: Chapter 11 contains Page's exceptional-zero prime-number theorem, the effective `q<=exp(c sqrt(log x))` twisted-prime range, the Siegel lower bound for real zeros, and the usual Siegel–Walfisz corollary. The displayed formulas `(15)` and `(19)` are direct specializations of Theorem 11.16. The passage from `psi` to `vartheta`, the terminal-interval identity `(13)`, and the elementary deficit identity `(20)` add no new theorem about Dirichlet `L`-functions.
 
-## 5. Boundaries and falsification tests
+`MC-S38` supplies the independent squarefree-character estimate used on the comparator side. A targeted audit against Page/Landau exceptional-character theory, Siegel–Walfisz, and squarefree character-sum literature gives no basis for a standalone novelty claim. The retained contribution is instead a line-specific obstruction: applying the classical exceptional-zero dichotomy to the exact positive feedback carrier from `MC-066` enlarges the excluded conductor region from every fixed polylogarithmic scale to a fixed stretched-exponential scale.
+
+The original polylogarithmic result remains true as an immediate subrange of `(3)`. Its former use of Siegel–Walfisz is therefore preserved conceptually but is no longer the strongest canonical statement.
+
+## 6. Boundaries and falsification tests
 
 The conclusion is deliberately restricted to the positive-kernel triangle bootstrap of `MC-066`.
 
-- `R_theta` is nonnegative, so the prime-only lower bound `(11)` is exact and cannot be repaired by cancellation among composite kernel coefficients. But a future argument that preserves the signs of the terms `h_chi(d) M(X/d)` instead of bounding them by `R_theta` lies outside this obstruction.
-- The uniform statement uses `theta<=1-eta`. It says nothing when `theta` approaches `1` so quickly that `X^(1-theta)/log X` stays bounded. This boundary is irrelevant to the intended Mertens/RH exponents near `1/2` but is mathematically real.
-- The threshold inherited from Siegel–Walfisz is ineffective. Equation `(5)` is asymptotic and is not a finite numerical exclusion for a specified `X` and `q`.
-- The conductor is prime and the character is the quadratic comparator used by `MC-064`--`MC-066`. The same argument extends to fixed-index character value classes when the relevant residue classes are uniformly equidistributed, but that generalization is not needed here.
-- Equation `(10)` is not a proof that useful conductors in the intermediate corridor exist. It is the intersection of two necessary search conditions for this specific classical certificate package.
-- No zero-free theorem for the Riemann zeta function, no RH-equivalent Mertens estimate, and no continuation of `1/zeta(s)` enters the derivation.
+- The proof uses only the prime terms of `R_theta`, so positive composite coefficients cannot repair the failure of contraction. A future argument that preserves signs of `h_chi(d)M(X/d)` rather than replacing them by `R_theta` is not covered.
+- The uniform conclusion assumes `theta<=1-eta` for fixed `eta>0`. It says nothing when `theta` approaches `1` so rapidly that the power gain no longer dominates the stretched-exponential loss. This boundary is irrelevant to the intended Mertens/RH exponents near `1/2` but is real.
+- The constant `b` is not optimized. It is chosen below the constants in the classical Page theorem so that `(19)` applies at both endpoints and the exceptional main deficit dominates the error.
+- The quadratic character is primitive because `q` is prime. Composite-conductor extensions would require tracking induction and conductor factors separately and are not asserted here.
+- No existence or nonexistence claim is made for characters in the surviving corridor `(9)`.
+- No Riemann-zeta zero-free region, RH-equivalent Mertens estimate, or continuation of `1/zeta(s)` is used in deriving `(5)`.
 
-A counterexample to the exact claim would need a sequence of prime moduli `q<=(log X)^B` for which the split-prime terminal interval violates the Siegel–Walfisz consequence `(15)`, or a failure of the local identity `h_chi(p)=2` on split primes. The classical theorem and the coefficient identity exclude those possibilities.
+The strengthened claim would fail if one could find arbitrarily large `X`, a prime `q<=exp(b sqrt(log X))`, and a quadratic character for which the terminal split-prime mass is smaller than the Page/Siegel formulas permit, or if the local coefficient identity `h_chi(p)=2` on split primes failed. The classical estimates and the exact convolution coefficient rule exclude those possibilities.
 
 ## Consequence for the active frontier
 
-The simplest signed quadratic-comparator escape is now squeezed more sharply. Moving the conductor below the prefix did remove the specific `X/q` absolute-fidelity floor of `MC-065`, but moving it **too far down** makes the positive feedback kernel noncontractive for a different reason: by the terminal scale, Siegel–Walfisz has forced roughly half the primes into the split classes, and their `p^{-theta}` mass alone already diverges polynomially.
+The absolute one-character transfer of `MC-065` had an `11/19` floor. `MC-066` correctly showed that signed convolution removes that particular conductor-zero floor, but replaces it with the positive split-prime feedback budget. The earlier version of this finding proved that merely making the conductor polylogarithmic could not solve that budget.
 
-A surviving near-critical character bootstrap must therefore either operate with conductors in the genuinely intermediate super-polylogarithmic/subpolynomial regime, obtain a comparator theorem stronger than the Munsch/Burgess certificate, or exploit signed cancellation among the feedback terms so that `R_theta<1` is no longer the closure mechanism. Merely choosing a very small moving conductor cannot close the gap.
+The stronger audit now closes a much larger escape: **even an exceptional quadratic character cannot make the positive feedback contractive while its conductor stays below `exp(b sqrt(log X))`**. A near-critical quadratic-comparator strategy using Munsch's certificate must therefore move into the narrower intermediate range `(9)`, improve the comparator theorem enough to alter that range, or abandon the positive triangle closure and exploit signed cancellation inside the feedback itself.
