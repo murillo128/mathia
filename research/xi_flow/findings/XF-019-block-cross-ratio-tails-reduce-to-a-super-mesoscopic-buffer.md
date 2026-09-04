@@ -20,9 +20,9 @@ For a core of physical span `S` separated from the exterior by a physical buffer
 \boxed{\log(1+S/D)}.
 \]
 
-Thus no pointwise upper or lower gap bound is needed to control the aggregate far exterior. To make that leakage `o(1)`, however, one needs `D/S\to\infty`. Combining this exact block reduction with XF-007 and Rodgers--Tao's source-valid zero-counting scale exposes a sharper obstruction: a fixed-heat-time Xi core already has `S\asymp\log T`, while the unconditional real-simple counting input used in the contradiction regime controls windows only of physical size `O(\log T)` with bounded scale factor. The present source package therefore supplies a **scale-matched buffer, not a super-mesoscopic one**.
+Thus no pointwise upper or lower gap bound is needed to control the aggregate far exterior. To make that leakage `o(1)` uniformly by this mechanism one needs `D/S\to\infty`. XF-020 corrects the source comparison in the original version of this finding: Rodgers--Tao's global zero-counting formula already supplies such super-mesoscopic buffers after subtraction. The exact geometric reduction here remains valid, but **availability of a diverging physical scale ratio is not itself the remaining Xi obstruction**.
 
-This replaces the pointwise large-gap concern in XF-018 by a more global and more precise requirement. The remaining far-tail problem is not that one must bound every gap individually; it is that a localization argument which wants vanishing aggregate exterior mass needs trustworthy zero geometry beyond the `\log T` fixed-time memory window by a diverging physical scale factor.
+The surviving problem is more local. The block estimate controls only interactions with the exterior beyond the buffer; it does not control the near-buffer part of the localized dynamics, nor the neutral mean/span mode exposed in XF-018. Those are now the source-facing obligations.
 
 ## 1. Exact aggregation over two contiguous blocks
 
@@ -57,13 +57,13 @@ Because the gap intervals tile their block unions up to endpoints of measure zer
 \tag{2}
 \]
 
-The integral is elementary. Writing
+Writing
 
 \[
 A_0=x_a,\quad B_0=x_{b+1},\quad C_0=x_c,\quad D_0=x_{d+1},
 \]
 
-with `A_0<B_0<C_0<D_0`,
+with `A_0<B_0<C_0<D_0`, direct integration gives
 
 \[
 \begin{aligned}
@@ -88,7 +88,7 @@ Hence
 \tag{4}
 \]
 
-The right side is itself the logarithm of the cross-ratio of the **four block endpoints**. Thus the cellwise projective kernel of XF-018 is stable under contiguous aggregation: microscopic gap ratios disappear from the upper bound and only the geometry of the two macroscopic intervals remains.
+The right side is the logarithm of the cross-ratio of the four block endpoints. Thus the cellwise projective kernel of XF-018 is stable under contiguous aggregation: microscopic gap ratios disappear from the upper bound and only the geometry of the two macroscopic intervals remains.
 
 Equation (4) is an inequality rather than an equality only because `w_{ik}=1-e^{-\ell_{ik}}\le\ell_{ik}` was used before summing. The logarithmic kernel itself aggregates exactly.
 
@@ -114,7 +114,7 @@ D_+:=x_c-x_{b+1}>0.
 \tag{6}
 \]
 
-Then (5) becomes the scale-free formula
+Then
 
 \[
 \boxed{
@@ -178,7 +178,7 @@ A large endpoint gap can make (11) order one even when many indices separate the
 
 Equations (7)--(8) do something different. They sum the logarithmic cell interactions **before** estimating them. Contiguous gap intervals then tile one physical interval, so all interior endpoints cancel at the integral level. The numerator becomes the total core span `S`, not a sum of uncontrolled pointwise ratios.
 
-The resulting condition is also sharp in scale. If `D_+=R S` with fixed `R`, the right side of (7) is the nonzero constant `log(1+1/R)`. To force the aggregate far-tail mass to vanish uniformly by this mechanism alone one needs
+The resulting geometric condition is sharp in scale. If `D_+=R S` with fixed `R`, the right side of (7) is the nonzero constant `log(1+1/R)`. To force the aggregate far-tail mass to vanish uniformly by this mechanism alone one needs
 
 \[
 \boxed{D_+/S\to\infty}
@@ -189,7 +189,7 @@ and similarly on the left. A fixed-ratio buffer cannot supply a small parameter.
 
 On an arithmetic lattice this requirement is visible directly: `w_{ik}=1/(i-k)^2`, and the interaction of a block of `N` sites with a tail beginning `RN` sites away approaches the same scale-free logarithmic profile. Thus the conclusion is not an artifact of irregular gaps.
 
-## 4. Comparison with the source-valid Xi scales
+## 4. The source-valid Xi scale is broader than the local corollary suggests
 
 XF-007 identified the fixed-heat-time memory scale near local equilibrium as
 
@@ -204,55 +204,65 @@ S_T\asymp \log T.
 \tag{13}
 \]
 
-Rodgers--Tao's Theorem 3.2 and Corollary 3.3 give, in the hypothetical real-simple regime `\Lambda<t\le0`, the source-valid mesoscopic counting law
+Rodgers--Tao also prove a precise local counting theorem on intervals `[T,T+\alpha\log T]` uniformly for bounded `\alpha`, together with the corresponding `O(\log^2T)`-gap spacing corollary. Read in isolation, that local statement does not permit `\alpha=\alpha(T)\to\infty`.
+
+However, their **global** counting estimate is stronger for the present super-mesoscopic purpose. In their notation,
 
 \[
-N_t([T,T+\alpha\log T])
-=
-\frac{\alpha\log^2T}{4\pi}+o(\log^2T)
+N_t([0,T])=\Psi(T)+O(\log^2T),
+\qquad
+\Psi(T)=\frac{T}{4\pi}\log\frac{T}{4\pi}-\frac{T}{4\pi},
 \tag{14}
 \]
 
-for bounded `\alpha`, uniformly in bounded `\alpha`, and equivalently
+throughout the hypothetical real-simple regime. Subtracting (14) at `T+D` and `T` gives, for `0<D\le T/2`,
 
 \[
-x_k(t)-x_j(t)
+N_t([T,T+D])
 =
-\frac{4\pi(k-j)}{\log \xi_j}+o(\log \xi_j)
+\frac{D}{4\pi}\log\frac{T}{4\pi}
++O\left(\log^2T+\frac{D^2}{T}\right).
 \tag{15}
 \]
 
-for `k-j\le \log^2\xi_j` in their stated normalization.
-
-This is exactly enough to resolve physical spans of order `\log T` with a **bounded** scale factor. It is not, as stated, a theorem uniform for `\alpha=\alpha(T)\to\infty`, nor does Corollary 3.3 extend (15) to `\omega(\log^2T)` index windows.
-
-Consequently the known counting input can provide a buffer comparable to the fixed-time core, but the purely geometric far-tail estimate (10) needs a buffer whose physical span is asymptotically larger than the core if its contribution is to become `o(1)`:
+XF-020 records the derivation and source audit in full. In particular, for
 
 \[
-\boxed{
-\text{fixed-time core }\asymp\log T
-\quad + \quad
-\text{vanishing block tail}
-\quad\Longrightarrow\quad
-\text{controlled buffer }=\omega(\log T).
-}
+D=R(T)\log T,
+\qquad
+R(T)\to\infty,
+\qquad
+R(T)=o(T/\log T),
 \tag{16}
 \]
 
-This is a source-boundary statement, not a theorem that such larger-scale control is impossible. It says only that the currently imported Rodgers--Tao counting theorem does not by itself supply the diverging scale ratio required by (10).
+one has
+
+\[
+\boxed{
+N_t([T,T+R(T)\log T])
+=
+\frac{R(T)\log^2T}{4\pi}(1+o(1)).
+}
+\tag{17}
+\]
+
+This reverses the earlier source diagnosis. The local theorem is needed when `D\asymp\log T`, because the `O(\log^2T)` global error is then as large as the main term. Once `D/\log T\to\infty`, the same global error becomes relatively negligible. The source therefore supplies exactly the diverging buffer ratio demanded by (12), provided the buffer remains `o(T)`.
 
 ## 5. Interaction with XF-017 and cutoff localization
 
 XF-017 showed that for the **centered** Cauchy leakage one can beat the fixed-ratio `H^{1/2}` barrier using a logarithmic taper over a diverging buffer ratio, with pure geometric cost `O(1/\log R)`. Its nonlinear application was blocked because absolute-value control of `c_{ik}(g_i-h)(g_k-h)` needs pair-level amplitude/conductance information across that broad buffer.
 
-XF-019 shows that the uncentered carrier of XF-018 has a complementary advantage. Once interactions are summed over contiguous physical blocks, the far exterior is already collision-safe and obeys the stronger scale estimate `O(1/R)` from (10), with **no pairwise gap envelope at all**. The remaining price is still a diverging buffer ratio and, separately, the neutral mean/span mode identified in XF-018.
+The uncentered carrier of XF-018 has a complementary advantage. Once interactions are summed over contiguous physical blocks, the far exterior is collision-safe and obeys the stronger scale estimate `O(1/R)` from (10), with **no pairwise gap envelope at all**. By (17), a source-valid buffer with `R(T)\to\infty` is available. Consequently the far-exterior piece can be made `o(1)` without postulating new pointwise gap bounds.
 
-Thus two previously entangled requirements should be kept separate:
+What is not controlled by this argument is the interaction with the buffer itself and the removal of the neutral mean. XF-018 writes the block variance as an uncentered square minus a span term; differentiating that span imports endpoint velocities and therefore exterior flux. A complete localization still needs a way to organize those near-buffer and endpoint terms without recreating the singular centered leakage.
 
-1. **far-tail geometry:** after uncentered renormalization and block aggregation, this needs only a super-core physical buffer, not pointwise gap control;
-2. **mean removal / near-buffer dynamics:** this is where endpoint span information, tapering, or an additional signed cancellation must still enter.
+Thus two requirements should be kept separate:
 
-The exact block estimate therefore removes one candidate obstruction rather than closing the localization argument.
+1. **far-tail geometry:** after uncentered renormalization and block aggregation, this is now compatible with existing source-valid super-mesoscopic counting;
+2. **mean removal / near-buffer dynamics:** this remains open and is where endpoint span information, overlapping blocks, tapering, or signed cancellation must enter.
+
+The exact block estimate removes one candidate obstruction rather than closing the localization argument.
 
 ## 6. Stress tests and failure modes
 
@@ -262,21 +272,18 @@ The separation condition matters. Adjacent gap pairs have `w_{i,i+1}=1`; they ar
 
 The estimate controls the **sum of kernel weights**, not a signed dynamical term with arbitrary additional amplitudes. It is directly suited to the uncentered localization carrier because `g_i g_k` has already been absorbed into `w_{ik}`. Reintroducing centered amplitudes would undo this renormalization and return to the conductance issue of XF-016--XF-017.
 
-Finally, the need for `D/S\to\infty` is a uniform geometric requirement. A particular Xi configuration may have additional cancellation or arithmetic structure allowing a smaller buffer. No such cancellation is supplied by the present argument.
+Finally, the source-valid long-window count from XF-020 does not itself control the near-buffer dynamical amplitudes or endpoint velocities. It establishes the spatial room required by (10), not the remaining flux estimate.
 
 ## 7. Prior art and novelty boundary
 
 The logarithmic cross-ratio identity for two separated intervals and its Möbius invariance are classical. The double-integral representation used here was already made explicit in XF-018. A targeted search around interval cross-ratios, fractional/Cauchy energies, log gases, and projective interval interactions found the underlying ingredients to be standard and did not identify a Xi-flow theorem packaging the cellwise leakage weights into the block estimate (4)--(10). Absence from that search is not treated as novelty evidence.
 
-Rodgers--Tao's Theorem 3.2 and Corollary 3.3 are established prior art and are already anchored in `SOURCES.md`; no new literature dependency is introduced here. The Mathia-specific contribution is the exact combination of the XF-018 carrier with contiguous aggregation and the fixed-time scale from XF-007, which turns the vague large-gap concern into the explicit source requirement `controlled buffer = omega(log T)` if one wants uniform vanishing of the uncentered far tail.
+Rodgers--Tao's zero-counting estimates are established prior art and are already anchored in `SOURCES.md`. XF-020 corrects how those estimates interact with the present scale: the bounded-`\alpha` local theorem is not the only available source input; subtraction of the global `O(\log^2T)` formula supplies the required super-mesoscopic window. No new external dependency is introduced here.
+
+The Mathia-specific contribution remains the exact combination of the XF-018 carrier with contiguous aggregation: a vague pointwise large-gap concern becomes the scale-free criterion `D/S\to\infty`. The new source audit shows that this criterion is satisfiable at the counting level, so it should no longer be reported as an obstruction.
 
 ## 8. Consequence for `xi_flow`
 
-The next localization question should no longer be phrased as “can every gap in a broad buffer be bounded away from zero and infinity?” That is stronger than the uncentered carrier needs for its far exterior. **Aggregate cross-ratio leakage only asks for enough trustworthy physical span between the `log T` core and the uncontrolled exterior.**
+The next localization question should no longer be phrased as whether unconditional Xi information reaches beyond the `\log T` fixed-time core by a diverging factor. XF-020 shows that the existing global count already reaches that scale with vanishing relative error.
 
-The sharp source-level test is now whether one can obtain, in the hypothetical real-simple regime and without circular RH input, either:
-
-- zero-counting/span control on windows `omega(log T)` while retaining errors strong enough for the energy argument; or
-- a multiscale/signed organization that cancels the residual fixed-ratio exterior contribution without requiring such a super-mesoscopic window.
-
-If neither is available, the remaining obstruction is not collision singularity and not pointwise gap irregularity. It is the absence of a **diverging spatial scale ratio beyond the fixed-time mesoscopic core**.
+The sharper frontier is now **inside the buffer**. One should ask whether the collision-safe uncentered identity can be combined with its span subtraction so that the near-buffer and endpoint-flux terms are either coercive, cancel across overlapping blocks, or are controlled by source-valid aggregate information. If such an organization exists, the far exterior can already be made negligible by choosing `D=R(T)\log T` with `R(T)\to\infty`; if it fails, the obstruction lies in mean removal and local flux, not in the availability of a super-mesoscopic spatial scale.
