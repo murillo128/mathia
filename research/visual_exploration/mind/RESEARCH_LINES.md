@@ -2,13 +2,15 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Target higher-order residuals only after deterministic and Markov/contingency closures are removed
+## Target higher-order residuals only after deterministic, statistical, ordering, and symmetry closures are removed
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-Complete circular data, Gram occupancy, sampled `S`, and Gram-sign parity have known deterministic quotient relations. VIS-023--VIS-025 now make the first genuine three-gap residual equally explicit: CMI is the Markov-order likelihood-ratio statistic, Pearson whitening gives the conditional interaction fiber, and correspondence-analysis SVD gives its canonical scalar geometry.
+Complete circular data, Gram occupancy, sampled `S`, and Gram-sign parity have known deterministic quotient relations. VIS-023--VIS-025 make the first genuine three-gap residual equally explicit through Markov likelihood, Pearson interaction, and correspondence-analysis geometry.
 
-The next experiment must therefore compare zeta and matched CUE/arithmetic data after the same finite-sample, binning, occupancy, and first-order Markov closures. If a persistent residual depends on interaction orientation, retain the corresponding singular vectors/cross-fiber coupling rather than compressing to CMI or singular values.
+VIS-026--VIS-027 add exact ordering nulls. Same-gap permutation holds the complete one-gap multiset fixed and gives a Brownian-bridge discrepancy baseline; conditioning the permutation on reflection symmetry removes the exact odd Dirichlet modes as a symmetry artifact. A persistent residual must now survive these stronger controls before being attributed to arithmetic organization.
+
+For Farey-type discrepancy the live question is the remaining even-mode/cross-scale suppression after fixing the gap multiset and reflection symmetry, then progressively preserving admitted local adjacency and denominator/mediant structure. For three-gap data, retain orientation whenever scalar CMI or singular values would quotient it away.
 
 ## Explore incomplete/separated measurements only when the missing coupling is explicit
 
@@ -20,4 +22,4 @@ Sparse measurements or separated regions may retain a nontrivial bridge precisel
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, orientation-coupling, or scale statement independent of rendering. Agreement among deterministically or statistically related visualizations is not a promotion criterion.
+Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, orientation-coupling, ordering, symmetry-conditioned, or scale statement independent of rendering. Agreement among deterministically or statistically related visualizations is not a promotion criterion.
