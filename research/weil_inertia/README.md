@@ -31,8 +31,6 @@ Improving the certified proportion is welcome as a way to learn where the argume
 - Combine independent unconditional information from simple-zero results, pair/higher correlations, mollifier methods, or zero-density estimates only when hypotheses and overlap with the inertia framework are explicit.
 - Search for monotone defect estimates or bootstrap inequalities that can feed improved bounds back into the argument.
 
-For block-cover improvements, first identify the exact relaxation being optimized. A sharp witness with independent nonnegative pair weights and gaps forces any escape to retain additional kernel, Gram/PSD, or arithmetic constraints that exclude that witness. Adaptive placement or pre-scalarization weights alone do not establish an escape; prove the new domination inequality under the retained constraints.
-
 ### Scope and exclusions
 
 Do not interpret the uncertified complement as exactly `1/3`, as entirely off the critical line, or as a homogeneous exceptional population.
@@ -50,8 +48,6 @@ For proposed improvements, test specifically:
 - what additional arithmetic information would be required if the route cannot improve the constant;
 - all functional-equation, conjugation, multiplicity, normalization, and block-signature constraints;
 - whether the matrix reformulation adds information or merely rewrites the same bound.
-
-In overlapping covers, account for each pair-energy and pressure contribution so that the same defect is not spent twice. State the exact cover class for any optimality claim. A finite matrix certificate and an external local inequality remain separate from their zeta instantiation and analytic limit; a checked component must not stand in for that full chain.
 
 ### Prior-art domains
 

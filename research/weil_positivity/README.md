@@ -27,8 +27,6 @@ For every candidate determine:
 - whether existing Prime Circle, Prime Flute, or Prime Lattice structures can supply the required form without importing the desired answer;
 - what extra intrinsic structure is missing when a candidate reproduces the explicit formula but does not explain positivity.
 
-When a candidate relies on mixed-place geometry, identify the source-forced incidence before forming a determinant or positive completion. Test whether the relation survives prime-primary decomposition and genuinely couples finite and archimedean data. Distinguish fixed algebraic torsion relations from growing-complexity or non-algebraic constructions, with a justified domain and limit for the latter.
-
 ### Scope and exclusions
 
 Positivity obtained only after assuming RH, placing the zeros on a self-adjoint spectrum by definition, importing the Weil functional as an unexplained kernel, or choosing a regularization specifically to force the desired sign is outside the target.
@@ -46,8 +44,6 @@ For candidate sign mechanisms, test specifically whether they survive:
 - comparison with known RH-equivalent positivity criteria and existing geometric/cohomological sign mechanisms.
 
 The decisive question is whether nonnegativity is forced before the arithmetic consequence is identified.
-
-Check character, CRT, torsion-coset, and rank-additive reductions under their exact hypotheses before treating a mixed coordinate term as additional structure. A nonzero finite interaction is only an incidence result: existence of the global form, the Weil normalization, and an independent sign theorem are separate obligations. A universal geometric sign theorem remains admissible if its arithmetic comparison is independently proved.
 
 ### Prior-art domains
 

@@ -62,10 +62,6 @@ For candidate mechanisms, test specifically for:
 - selected orbit sectors or truncated products whose apparent boundary disappears in the natural full object;
 - dependence on an arbitrary continuum interpolation rather than the exact discrete endpoint/Fuchsian data.
 
-The shift `p_n -> p_n+1` on odd primes has composite labels while preserving every ordered gap. It tests sensitivity to absolute labels; a no-go for a gap-based implication requires a control that actually changes its gap target while satisfying the argument's hypotheses. Separate universal cotangent corrections from the organization of those corrections along the prime sequence.
-
-Keep fixed-filter moving-tail equivalence, a fixed global operator comparison, and any rescaled spectral limit distinct. Summability of Dirichlet-decoupled pieces does not settle the uncut surface until the gluing terms are controlled.
-
 ### Prior-art domains
 
 - tight flutes and train surfaces;

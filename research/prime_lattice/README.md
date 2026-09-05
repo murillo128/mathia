@@ -67,10 +67,6 @@ For candidate mechanisms, compare specifically against:
 
 Identify which target-relevant information singles out the rational-prime application from broader multiplicative systems. A universal analytic estimate can contribute when an independent arithmetic input supplies that distinction; ambient lattice structure alone does not.
 
-Track the first signed trace through regularization explicitly. Distinguish a fixed-shift Dirichlet series from a moving finite-window average, logarithmic from ordinary means, and fixed aperture from an aperture growing with the observation scale. Test for strong convergence to zero or collapse to a summatory-function square before importing an averaged-correlation theorem, whose weights and error scale must match the surviving observable.
-
-For logarithmic shift spectra, check what is already fixed by two-point cancellation before claiming arithmetic sensitivity. Second-order spectral flatness does not identify the full process; a growing, concentrated, or higher-order filter needs its own uniform estimate and cannot inherit a fixed-filter theorem without justification.
-
 ### Prior-art domains
 
 - Bohr's theory of Dirichlet series;

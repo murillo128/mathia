@@ -16,7 +16,6 @@ Determine exactly which estimate, support range, moment, correlation, or uniform
 
 ### Priority questions
 
-- For finite-correlation test functions, can the exact multiset defect be certified on its whole admissible domain, including collision and noncompact boundaries, before optimizing further perturbations?
 - Can Guth--Maynard-type large-value bounds for Dirichlet polynomials be pushed, recombined, or transferred so that the resulting zero-density information controls a new RH-relevant regime rather than only improving a known exponent?
 - Which zero-detecting decompositions or mean-value estimates are currently load-bearing in the best zero-density bounds, and what precise stronger estimate would move the next barrier?
 - Can Levinson--Conrey-style arguments gain more from optimized combinations of zeta and its derivatives, twisted moments, or new auxiliary functions than from mollifier length alone?
@@ -35,8 +34,6 @@ Finite-height verification, a reformulation equivalent to RH, or a conditional t
 For every proposed gain, track the complete exponent and support budget through the zero detector rather than only the locally improved estimate. Check whether an apparent unconditional statement imports RH, Lindelof, a density hypothesis, Hardy--Littlewood correlations, or an unproved moment asymptotic at another step.
 
 When using Dirichlet-polynomial or moment estimates, separate diagonal control from off-diagonal correlations and verify the exact length, coefficient class, averaging range, and uniformity needed by the downstream zero statement. Test whether the same analytic input is compatible with matched zero configurations having materially different horizontal mass; if so, it is not yet a horizontal discriminator.
-
-For signed Fourier--Laplace perturbations, distinguish failure of a sufficient positivity envelope from an actual zero or negative value of the exact defect. Prove the common compact reduction or tail bounds, treat degeneracies separately, and propagate certified local margins through the perturbation and analytic error budget. An interval enclosure containing zero is inconclusive.
 
 ### Prior-art domains
 

@@ -22,8 +22,6 @@ The route to RH requires a new estimate or usable structure in the discrepancy p
 - Can exact reciprocity or Dedekind/Vasyunin-type correlations distinguish arithmetic Farey configurations from matched reduced-rational controls while contributing at the RH-critical scale?
 - Which visually compelling Farey patterns disappear after normalization or reduce exactly to known discrepancy identities?
 
-For spectral discrepancy decompositions, separate total-amplitude suppression from redistribution among modes. Ask whether an interior ordering or denominator/mediant relation contributes at a scale capable of controlling the full Franel--Landau norm after endpoint terms are accounted for.
-
 ### Scope and exclusions
 
 This line owns the Farey/Franel–Landau discrepancy representation and any genuinely additional structure intrinsic to it. It does not own generic Möbius cancellation once the Farey geometry has been eliminated, nor arbitrary Ford-circle or tessellation pictures without an exact quantitative bridge to the discrepancy criterion.
@@ -35,8 +33,6 @@ Do not count the classical RH equivalence, a new plot of Farey fractions, or a c
 For every proposed geometric invariant, derive its relation to the classical Farey discrepancy and Möbius summatory functions explicitly. Telescoping or recovery from the existing scalar criterion rules out a claimed additional information channel; it does not rule out a genuinely stronger estimate of that same quantity. A matched rational-point control must preserve the assumed Farey relations and change the transported target before equality can refute the proposed implication.
 
 Separate exact finite Farey identities from asymptotic statements at the RH-critical scale. If a claimed gain comes from a norm change, prove that the new norm is not simply equivalent to the old one with constants too weak to affect the critical exponent.
-
-Keep reflection parity, fixed endpoints, and interior gap order distinct in spectral controls. Preserving a gap multiset is weaker than preserving adjacency or denominator/mediant relations; stronger constrained ensembles need their own realizability and expectation calculations. A low-band residual only contributes to the RH criterion after the omitted modes and normalization losses are bounded.
 
 ### Prior-art domains
 

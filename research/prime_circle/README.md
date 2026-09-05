@@ -62,8 +62,6 @@ For candidate mechanisms, test specifically for:
 - reproduction by matched non-prime or non-arithmetic root configurations;
 - dependence on an arbitrary projective coordinate, interpolation, normalization, or externally chosen operator.
 
-Before extending a vertexwise Hessian or tensor construction, check its full coefficient algebra, CRT incidence, and Cauchy/cyclotomic reductions against existing local classifications. A nonzero mixed block in one basis need not carry new arithmetic information. If a finite interaction survives, closability, boundedness or domain control, and the relevant infinite-level limit remain separate obligations.
-
 ### Prior-art domains
 
 - cyclotomic polynomial and resultant theory;
