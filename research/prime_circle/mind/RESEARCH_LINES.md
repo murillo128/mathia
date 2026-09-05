@@ -20,15 +20,15 @@ Short-chord models recover strong average/Mertens top-band information while ope
 
 Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, harmonic response, Kron determinants, and Feshbach families now classicalize. A live carrier must be all-shell, growing-base, genuinely multi-hole, singular/domain-changing, or nonlinear/noncommuting before fixed-base elimination.
 
-## Leave the fixed local/strong-refinement boundary category before seeking zero localization
+## Leave the fixed refinement-covariant boundary category, or derive arithmetic inside its noncompact multiplicative-Toeplitz sector
 
 **Linked intuitions:** `MI-004-compatible-completion-lacks-coercive-rh-scale`.
 
-PC-165--PC-168 classify full refinement at the coefficient level: logarithmic dilation forces the half-density and homogeneous local coefficients, with inverse-square as the canonical second-order scalar singularity. PC-169--PC-171 close the corresponding fixed-domain/Robin ladder: refinement-compatible inverse-square domains are universal scale fixed points or nonexistent; bounded nonlocal Robin corrections vanish; and a strongly covariant fixed self-adjoint unbounded Robin operator collapses to four universal first-order circle parameters.
+PC-165--PC-171 classify full refinement at the coefficient, domain, and strong boundary-operator levels: logarithmic dilation forces the half-density and homogeneous local coefficients; refinement-compatible inverse-square domains are universal scale fixed points or nonexistent; bounded Robin corrections vanish; and strongly covariant fixed self-adjoint first-order operators collapse to four universal circle parameters.
 
-PC-172 closes the simplest singular point-supported continuation as well. Every finitely supported distributional multiplication coefficient with exact first-order power-refinement covariance is `c delta'_1`; finite atomic root weights vanish, reflection invariance kills the survivor, and nonzero `delta'_1` is not a semibounded perturbation of the canonical bulk form.
+PC-172--PC-173 close fixed distributional multiplication coefficients without a support loophole. Every arbitrary distribution with exact first-order covariance lies in `span{|D|delta_1,delta'_1}`; reflection leaves only the classical even DtN singularity, and nonzero Hermitian members are not semibounded bulk repairs.
 
-A useful boundary/completion mechanism must therefore use data not fixed by the naked power semigroup: weaker form-covariant unbounded primitive-direction coefficients derived from old/new root incidence, shell- or level-dependent singular families, infinite-support transfer data, general renormalized boundary relations mixing trace and normal derivative, cross-level structure, or nonlinear/noncommuting radial--arithmetic coupling. The arithmetic dependence must be derived before choosing the domain or boundary relation.
+PC-174 classifies the genuinely larger weak continuous first-order form relation. After `|D|^(1/2)` normalization it is exactly a matrix-valued multiplicative Toeplitz class on the rational frequency-ratio lattice, and every compact/Schatten member is zero. The remaining weak branch is therefore noncompact and classicalized at the carrier level. A useful theorem must derive a prime-provenance Toeplitz symbol and an independent domain/sign statement from old/new root incidence, or leave fixed forms through shell/level dependence, cross-level relations, renormalized trace/normal-derivative boundary data, or nonlinear/noncommuting radial--arithmetic coupling.
 
 ## Cross the Hardy boundary before the one-new-prime corrector becomes universal
 
