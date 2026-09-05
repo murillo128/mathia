@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-mixed-prime-offdiagonal-coupling
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_circle
 based_on:
@@ -51,3 +51,16 @@ Established source-side facts are limited to the following. `PC-177` proves the 
 WP-158 closes character-based couplings only under its fixed torus-character hypotheses. A non-character response, its bounded realization, and its arithmetic consequence remain separate unproved steps. A control that transports the same arithmetic target can diagnose invariance without falsifying that target implication; specify the target whenever a matched response is used as a no-go.
 
 Therefore the Prime-Circle transfer above is **only a proposed falsifiable test**. Do not treat additive structure, a nonzero mixed block, a new spectrum, or any RH consequence as established unless the destination-line calculation proves it from Prime-Circle geometry itself.
+
+## Research disposition
+
+Outcome: classical
+
+Resolved by:
+- [[research/prime_circle/findings/PC-128-vertexwise-resultant-hessian-is-bipartite-chord-laplacian.md]]
+- [[research/prime_circle/findings/PC-130-coprime-hessian-crt-incidence-is-fixed-dirichlet-L2-data.md]]
+- [[research/prime_circle/findings/PC-134-finite-hessian-tensor-networks-collapse-to-confluent-cauchy-algebra.md]]
+
+The clue's requested pre-scalarization object has already been classified on the Prime-Circle side. `PC-128` shows that the full vertexwise resultant Hessian is exactly the bipartite inverse-square chord Laplacian, with no irreducible many-edge Hessian term. For coprime shells—and therefore for distinct primes `p,q`—`PC-130` shows that the complete CRT incidence is a reshape of the product-shell anchor profile whose two-sided multiplicative Fourier coefficients are the classical fixed values `L(2,eta)` up to explicit phases and parity. `PC-134` further shows that fixed finite polynomial/tensor contractions of these Hessian edges remain in confluent Cauchy/cyclotomic endpoint algebra.
+
+Thus a nonzero vertex-basis cross block is real but does not supply the clue's sought genuinely new mixed-prime carrier: at fixed finite level its coefficient algebra classicalizes, and finite tensor composition does not restore an additional arithmetic interaction. Growing-level, infinite-depth, non-polynomial, or intrinsically non-Cauchy cross-level constructions remain separate questions outside this clue's decisive test.
