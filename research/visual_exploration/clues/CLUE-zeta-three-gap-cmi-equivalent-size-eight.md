@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-zeta-three-gap-cmi-equivalent-size-eight
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -85,3 +85,9 @@ Separate Monte Carlo precision of the CUE curve from uncertainty of a finite zet
 This is finite-sample numerical evidence from three public-data windows and exact finite-`N` CUE simulation, not a theorem, asymptotic law, RH criterion, novelty claim, or identification of zeta with `CUE_8`. “CMI-equivalent size” is only the smallest tested integer whose finite-sample central interval contains the selected statistic; it is not a new physical estimator or effective-size formula. The same curve's `CUE_64` end lies significantly below zeta, so finite-circle scale sufficiency does not establish an exact large-`N` CUE explanation or exclude the known arithmetic correction. The arithmetic kernel was not simulated because the persisted source still does not supply the required exact positive three-gap process.
 
 VIS-040 does not establish residual-direction agreement for these data. A discrepancy of directions would refute a stronger process-transfer interpretation while leaving a descriptive CMI crossing intact; no target result is inferred from either outcome alone.
+
+## Research disposition
+
+Accepted as a controlled transfer-calibration question, not as evidence that `N=8` is a physical effective size. The checked finite-size literature gives the right neighboring controls but does not settle this statistic: Nishigaki establishes the pair-derived `N_e(T)` comparison for two consecutive spacings and the distinct `O(N_e^-3)` arithmetic gap-ratio correction; Forrester--Shen establish even `1/N^2` finite-CUE expansions for general bulk correlations and spacing generating functions; and Bogomolny--Keating give a finite-height three-point universal-plus-arithmetic framework. None of those results proves that the pair-derived finite-CUE size transfers to this frozen-bin three-consecutive-gap CMI, nor that equality of the scalar CMI identifies the same irreducible conditional-dependence geometry.
+
+The live question is therefore exactly the pre-registered transfer test already stated above: on independent higher windows with materially larger pair-derived `N_e`, does the descriptive CMI bracket move coherently, and does a direction-sensitive Fisher-normal residual comparison move with it? `VIS-039` makes the observed even-power scalar trend non-discriminating by itself, while `VIS-040` shows that the leading scalar CMI retains normal-residual magnitude but discards direction. Keep the clue active until higher-window data or an exact Janossy/process calculation separates finite-circle transfer from arithmetic/process mismatch; do not promote the current `N=8` crossing into a process-identification claim.
