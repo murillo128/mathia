@@ -100,3 +100,7 @@ This file records durable external literature dependencies used to support or de
 ## Power-divergence and Pearson/LRT comparison
 
 - Noel Cressie and Timothy R. C. Read, **Multinomial Goodness-Of-Fit Tests**, *Journal of the Royal Statistical Society: Series B (Methodological)* 46:3 (1984), 440–464. DOI: `10.1111/j.2517-6161.1984.tb01318.x`. Role: classical power-divergence framework containing Pearson's `X^2` (`lambda=1`) and the log-likelihood-ratio statistic (`lambda=0`) as members of one family and analyzing their asymptotic differences; prior-art boundary for `VIS-037`, whose contribution is only an elementary explicit finite-table residual bound specialized to Mathia's active three-gap Markov-closure/CA representation.
+
+## Angle distortion between inner products
+
+- Minghua Lin and Gord Sinnamon, **The Generalized Wielandt Inequality in Inner Product Spaces**, *Eurasian Mathematical Journal* 3:1 (2012), 72–85. arXiv `1201.6294`. Role: Theorem 2.4 gives the sharp half-angle comparison for vector angles under two inner products in terms of the extreme norm ratios. This is the classical prior-art authority for `VIS-045`; that finding only specializes the theorem to common Fisher gauges on Mathia's residual interaction space and derives the elementary pointwise gauge-ratio/log-oscillation robustness corollaries.
