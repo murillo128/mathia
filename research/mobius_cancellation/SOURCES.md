@@ -231,3 +231,15 @@ Role: class-number-one finiteness input for `MC-057`. Stark's theorem completes 
 Marc Munsch, *Character sums over squarefree and squarefull numbers*, Archiv der Mathematik 102 (2014), no. 6, 555–563. DOI: https://doi.org/10.1007/s00013-014-0658-9.
 
 Role: direct prior-art anchor for `MC-064`. Lemma 2.3 defines `S_free_chi(x)=sum_{n<=x} mu(n)^2 chi(n)` and proves the two elementary bounds `S_free_chi(x) << x^(1/2) q^(1/4) (log q)^(1/2)` and `S_free_chi(x) << x^(1/2) (log x) q^(3/16+epsilon)` for nonprincipal characters; Remark 2.4 notes that when `q` is prime the `q^epsilon` loss in the Burgess branch may be replaced by `(log q)^(1/2)`. The proof is exactly the square-divisor decomposition of `mu^2` followed by Pólya–Vinogradov or Burgess. This sharpens the cruder fixed-comparator certificate used in `MC-055` and supplies the classical analytic input for the defect/conductor transfer budget in `MC-064`.
+
+## MC-S39 — Friedlander and Iwaniec, the sieve parity phenomenon
+
+John B. Friedlander and Henryk Iwaniec, *What is ... the parity phenomenon?*, Notices of the American Mathematical Society 56 (2009), no. 7, 817–818.
+
+Role: classical sieve-theory prior-art anchor for `MC-082`. The note explains the parity phenomenon: ordinary sieve axioms and local divisibility information can fail to distinguish integers according to the parity of the number of prime factors. `MC-082` supplies an exact Liouville-divisor-density specialization and treats the phenomenon as established prior art, not as a new obstruction theorem.
+
+## MC-S40 — Friedlander and Iwaniec, parity-sensitive sieve
+
+John B. Friedlander and Henryk Iwaniec, *Using a parity-sensitive sieve to count prime values of a polynomial*, Proceedings of the National Academy of Sciences of the United States of America 94 (1997), no. 4, 1054–1058. DOI: https://doi.org/10.1073/pnas.94.4.1054. Open full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC19742/.
+
+Role: prior-art boundary for `MC-082`. The paper develops a parity-sensitive sieve, combined with harmonic analysis of the special polynomial sequence, to obtain the prime-value result for `x^2+y^4`. It shows that the classical parity barrier is not an absolute impossibility theorem: additional arithmetic/bilinear/harmonic information can break the local-density blindness in special settings.
