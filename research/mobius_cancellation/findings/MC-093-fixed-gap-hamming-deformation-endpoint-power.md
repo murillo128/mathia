@@ -83,7 +83,7 @@ At the level of fixed powers of `N`, the hard endpoint and the supremum on every
 implies
 
 \[
-\mathcal Q_N(1)=N^{\gamma+o(1)}.
+\mathcal Q_N(1)=O(N^{\gamma+o(1)}).
 \tag{8}
 \]
 
