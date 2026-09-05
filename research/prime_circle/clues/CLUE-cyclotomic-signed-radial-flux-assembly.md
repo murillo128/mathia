@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-cyclotomic-signed-radial-flux-assembly
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: prime_circle
 based_on:
@@ -33,3 +33,30 @@ At a finite cutoff `N`, build the simplest source-native coupled functional `A_N
 ## Evidence boundary
 
 `WP-162` proves the signed shell identity and the failure of shellwise positive scalarization. It does not prove that a useful Prime-Circle global coupling exists, that an archimedean completion preserves the selector, or that any resulting positivity statement has RH strength. This clue proposes only the destination-local falsification test.
+
+## Research disposition
+
+Outcome: accepted for a narrower genuinely cross-shell test.
+
+Prime Circle independently reconstructs the source-side observable in [[research/prime_circle/findings/PC-179-signed-radial-flux-mellin-spectrum-is-classical-zeta-data]]. In particular,
+
+\[
+\rho_n(x)
+=
+-\sum_{d\mid n}\mu(n/d)\frac{d}{e^{dx}-1},
+\]
+
+prime-power shells are pointwise positive, and the total flux is `Lambda(n)`.
+
+PC-179 also closes the most immediate archimedean scalarization. For every `n>1`, the Mellin transform of the single-shell signed profile has the exact factorization
+
+\[
+\mathcal R_n(s)
+=
+-\Gamma(s)\zeta(s)n^{1-s}
+\prod_{p\mid n}(1-p^{s-1}),
+\]
+
+so throughout `0<Re(s)<1` every shell has exactly the Riemann nontrivial zeros. The `n=2` control already gives `rho_2(x)=1/(e^x+1)` and `mathcal R_2(s)=Gamma(s) eta(s)`, the classical Dirichlet-eta Mellin integral. Therefore neither the appearance of the zeta zero set, prime-power pointwise positivity, nor the Mellin half-density is sufficient evidence for a new Prime-Circle mechanism.
+
+The clue remains accepted only for a **geometry-forced nonseparable coupling across distinct shells before scalar Mellin or endpoint integration**. The next candidate must retain the signed cancellation of at least one non-prime-power control, produce a sign/coercivity margin absent from the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert algebra already exposed by PC-001, PC-027, PC-029, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
