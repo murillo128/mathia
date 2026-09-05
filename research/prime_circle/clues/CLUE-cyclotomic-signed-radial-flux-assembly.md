@@ -59,4 +59,18 @@ PC-179 also closes the most immediate archimedean scalarization. For every `n>1`
 
 so throughout `0<Re(s)<1` every shell has exactly the Riemann nontrivial zeros. The `n=2` control already gives `rho_2(x)=1/(e^x+1)` and `mathcal R_2(s)=Gamma(s) eta(s)`, the classical Dirichlet-eta Mellin integral. Therefore neither the appearance of the zeta zero set, prime-power pointwise positivity, nor the Mellin half-density is sufficient evidence for a new Prime-Circle mechanism.
 
-The clue remains accepted only for a **geometry-forced nonseparable coupling across distinct shells before scalar Mellin or endpoint integration**. The next candidate must retain the signed cancellation of at least one non-prime-power control, produce a sign/coercivity margin absent from the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert algebra already exposed by PC-001, PC-027, PC-029, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
+PC-180 closes the most direct first-order cross-shell repair. With `F_n(x)=log Phi_n(e^{-x})` and
+
+\[
+A_{mn}=\int_0^\infty \rho_m(x)F_n(x)\,dx,
+\]
+
+one has exactly
+
+\[
+\frac{A+A^{\mathsf T}}2=\frac12\Lambda\Lambda^{\mathsf T}.
+\]
+
+Hence every radial-coordinate-independent symmetric shell mixer collapses to `Lambda^T C Lambda/2`; all ordered interior information is confined to the antisymmetric part, which has zero real quadratic form by itself. This is persisted in [[research/prime_circle/findings/PC-180-symmetric-flux-potential-couplings-collapse-to-mangoldt-boundary]].
+
+The clue remains accepted only beyond both PC-179 and PC-180. A next candidate must use a **geometry-forced nonseparable operation that is not a constant self-adjoint first-order shell mixer**: for example an intrinsic radial-depth-dependent or nonlocal kernel, or a second noncommuting structure that can use the antisymmetric ordered sector. It must retain the signed cancellation of at least one non-prime-power control, produce a sign/coercivity margin absent from the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert algebra already exposed by PC-001, PC-027, PC-029, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
