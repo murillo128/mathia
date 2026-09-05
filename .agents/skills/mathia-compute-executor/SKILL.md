@@ -21,7 +21,7 @@ There is deliberately:
 
 - no implementation PR;
 - no independent reviewer requirement;
-- no durable compute branch;
+- no durable published compute branch;
 - no committed scripts, notebooks, generated datasets, result dumps, plots, or logs;
 - no direct canonical finding update.
 
@@ -47,11 +47,13 @@ If the issue is not self-contained enough to determine the mathematical object, 
 
 This workflow is intentionally not `spec-driven-codex-loop` implementation work.
 
-Do not create a feature branch or pull request. Use temporary/ignored local files, scripts, virtual environments, notebooks, Lean scratch files, generated data, caches, and logs as needed for the computation, but do not commit them.
+Do not create or publish a feature branch or pull request. Use temporary/ignored local files, scripts, virtual environments, notebooks, Lean scratch files, generated data, caches, and logs as needed for the computation, but do not commit them.
+
+When launched by `.github/workflows/codex-execute-ready.yml`, a local `codex/issue-N` worktree/branch already exists as **infrastructure isolation**. Adopt that worktree; do not create another one, do not switch it to `main`, and do not publish the issue branch. The branch may temporarily hold the single candidate clue commit needed to perform the direct-main publication gate below, but it is not a durable delivery branch.
 
 Keep scratch artifacts only as long as required to establish the result. Large or transient artifacts remain outside Git.
 
-The only permitted direct repository mutation from this role is the proposed clue described below.
+The only permitted repository mutation from this role is the proposed clue described below.
 
 ## Execute the frozen computational question
 
@@ -209,7 +211,21 @@ or, for genuinely global scope:
 research: propose compute-backed clue
 ```
 
-Before publishing, refresh `main` and re-check the clue path for concurrent creation/strengthening. Never overwrite another actor's clue changes.
+### Publication from an Action-created issue worktree
+
+If execution is already isolated on local branch `codex/issue-N`, do not `checkout main` and do not push that branch as a branch. Instead:
+
+1. fetch `origin/main` immediately before candidate publication;
+2. verify/reconcile any concurrent change to the target clue path or evidence that affects the clue;
+3. ensure the candidate commit is based on the current `origin/main` (rebasing the **unpublished local scratch branch** is allowed when safe; rerun any affected checks if the base movement changes relevant content);
+4. verify `git diff --name-only origin/main..HEAD` contains exactly the one authorized clue path and no scratch artifacts;
+5. verify `origin/main` is an ancestor of `HEAD` and the candidate is a fast-forward of current main;
+6. publish with a normal non-force ref update equivalent to `git push origin HEAD:main`;
+7. fetch and verify that `origin/main` now resolves to the published candidate commit.
+
+A non-fast-forward rejection is a concurrency signal, not permission to force-push. Refresh/reconcile and re-check the gate. The local `codex/issue-N` branch remains host scratch state and must not be published merely because it contains the accepted commit.
+
+Outside the Action-created worktree case, use the simplest safe direct-main mechanism consistent with `codex-github-operations` and the same path/concurrency gates.
 
 ## Issue completion
 
