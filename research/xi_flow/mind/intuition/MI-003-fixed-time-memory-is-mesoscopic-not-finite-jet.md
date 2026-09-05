@@ -1,43 +1,40 @@
-# MI-003 — Fixed-time Xi memory is mesoscopic; universal Cauchy smoothing localizes the remaining source problem to near-buffer forcing and logarithmic precision
+# MI-003 — Fixed-time Xi memory is mesoscopic; counting permits the slow wave but the endpoint explicit formula selects against it
 
-**Evidence level:** supported through XF-045; translated counting, cross-ratio rigidity, nonlinear periodic/finite-window Cauchy relaxation, and far-tail suppression are exact in their stated regimes. XF-046 is not used here while its canonical finding remains under open adversarial review.
+**Evidence level:** supported through XF-049; the source-compatible nonlinear memory-wave control, endpoint explicit-formula selector, and finite Volterra Fourier transport are exact in their stated regimes, while infinite localized propagation remains open
 
 ## Core intuition
 
-Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. Static translated counting can make a super-mesoscopic block extremely lattice-like once the borderline inverse-buffer flux budget is assumed, but static lattice-likeness alone does not recover that flux norm.
+Order-one heat-time memory at height `T` lives on about `log^2 T` gaps, not in a finite collision jet or bounded stencil. Universal Cauchy dynamics does not eliminate the slowest mode at the precision needed for the inverse-buffer flux gate: XF-047 gives an exact nonlinear memory wave that survives fixed heat time while satisfying the counting information previously consumed by the line.
 
-The dynamic picture is now sharper. Universal Cauchy interaction gives nonlinear spectral-gap damping on periodic blocks and input-to-state stability on finite windows; after centering, remote tails are quadratically suppressed by buffer distance. But at the full memory scale the slowest Cauchy mode relaxes only at order-one rate, so a fixed heat interval cannot manufacture the logarithmic precision needed for the flux threshold. The live source problem is therefore **near-buffer replenishment/modulation plus source-specific precision**, not generic far-tail forcing or another universal smoothing estimate.
+But this matched control is not source-complete. At the endpoint, the explicit formula gives the actual Xi zero measure a fixed prime-free low-frequency gap. The critical memory wave has a detectable Fourier coefficient inside that gap and is therefore excluded unless another low-frequency structure compensates it. The remaining problem is no longer to discover some unspecified source-specific cancellation; it is to **transport this endpoint low-frequency selector through the localized infinite heat flow**.
 
 ## Strongest justified principle
 
-XF-034--XF-040 establish the static/dynamic split. Conditional on `M V_M=O(1)`, translated Xi counting forces uniform gap flattening, vanishing total log-gap variation, and Cauchy-rigid cross-ratio conductances. XF-039 constructs a static alternating microcorrugation passing those controls while violating the inverse-buffer flux budget, whereas XF-040 shows that its exact two-gap periodic heat-flow realization is rapidly damped.
+XF-034--XF-046 establish the static/dynamic localization. Conditional on the inverse-buffer flux budget, translated counting forces lattice/Cauchy rigidity; short-period nonlinear modes are damped; finite windows are input-to-state stable; and remote forcing is suppressed quadratically by buffering. The memory-scale slow Cauchy mode nevertheless has only order-one relaxation on fixed heat time.
 
-XF-041 generalizes periodic damping nonlinearly. Every bounded-contrast `q`-periodic real-simple gap trajectory has a quantitative Cauchy spectral gap; periods `q=o(log T)` are driven through the inverse-buffer amplitude scale in vanishing heat time. Persistent microscopic obstruction therefore cannot be a coherent short-period pattern.
+XF-047 makes that obstruction nonlinear and source-count compatible. A `q~log^2 T` periodic gap wave with relative amplitude `kappa/q^2` evolves under the exact logarithmic-particle dynamics with memory-mode decay rate tending to `1/4`, while `M V_M` stays bounded away from zero for any fixed heat interval. Every local span differs from the corrected source lattice by far less than the counting tolerance. Thus counting plus universal repulsion cannot force the desired flux smallness.
 
-XF-042 removes periodicity from the internal mechanism. On a finite block the centered gap shape obeys an input-to-state inequality at the same Cauchy relaxation scale; only the **centered variation** of the exterior mismatch field can replenish shape, while uniform exterior coupling is dissipative.
+XF-048 adds the missing source selector at `t=0`. In the `H_0` zero coordinate, the explicit-formula arithmetic frequencies start at `log 2/2`, whereas the memory frequency is `Theta(1/log T)`. A Gaussian of physical width `Theta(log^3 T)` isolates that low frequency while its prime-power Fourier samples are exponentially suppressed. The actual endpoint zero statistic is `o(1)`; the coherent XF-047 wave gives a nonzero limiting response. Hence the exact wave cannot occur in the endpoint Xi source without compensating low-frequency structure.
 
-XF-043 first suppresses the far exterior with a super-mesoscopic physical buffer. XF-045 sharpens this using the zero-mean shape cancellation and positive diagonal sink: remote forcing is suppressed quadratically in the core-span/buffer ratio rather than linearly. Far zeros therefore cannot sustain an order-one memory-scale shape obstruction once the allowed diverging buffer is inserted.
-
-XF-044 supplies the obstruction to finishing by universal relaxation alone. The exact slow Cauchy Fourier mode has rate `rho~1/(q s^2)`; at `q~c log^2 T` and Xi spacing `s~4pi/log T`, that rate is only order one. A fixed heat-time interval gives a fixed contraction factor, not the vanishing factor needed to reach inverse-buffer precision from a generic memory-scale perturbation.
+XF-049 identifies the relevant transport architecture. For every finite real-simple polynomial heat flow, the positive-frequency zero characteristic sum satisfies an exact Volterra equation depending only on frequencies between `0` and the target frequency. Linearization about flat density reproduces exactly the XF-047 slow-mode rate. The missing step is to preserve this one-sided structure after renormalizing the infinite Xi zero measure and applying the `Theta(log^3 T)` spatial taper.
 
 ## What remains possible
 
-A positive continuation must use source information to control the **near-buffer forcing and slow memory-scale mode** beyond what universal Cauchy dissipation supplies. It may exploit translated counting with sharper local transport, modulation equations, a source-specific cancellation in the centered exterior field, or another mechanism that already provides logarithmic precision at memory scale.
+A positive continuation should prove an `o(1)` localized transport estimate for the prime-free memory coefficient over the fixed heat interval, controlling renormalization, taper commutators, and buffer errors. That would let the endpoint explicit formula exclude the critical coherent slow mode dynamically and could unlock the conditional Cauchy-rigidity/coercivity machinery.
 
-A decisive negative would construct a source-compatible near-buffer/slow-mode forcing that survives translated counting and quadratic remote-tail suppression while maintaining `M V_M>>1` for the relevant heat interval. More periodic short waves or undifferentiated far-tail estimates are no longer distinct obstructions.
+A decisive negative would construct a source-compatible localized Xi-like flow in which the endpoint low-frequency coefficient is small but the infinite/tapered dynamics generates the required compensating memory coefficient despite the finite Volterra triangularity. More counting estimates, periodic controls, or undifferentiated far-tail bounds no longer address the exact missing step.
 
 ## Status / novelty
 
-Cauchy fractional diffusion, spectral gaps, input-to-state estimates, buffer localization, and linearized slow-mode analysis are classical ingredients. The persisted synthesis is the frontier shift: **universal dynamics kills short-period microstructure and remote forcing, but its memory-scale slow mode is too slow to create the required logarithmic precision; the remaining burden is source-specific near-buffer control**.
+The explicit formula, complex Burgers/Calogero pole dynamics, Cauchy fractional relaxation, and Gaussian Fourier localization are classical ingredients. The persisted synthesis is the frontier shift: **the memory-scale wave survives the previously used source counts, but the actual endpoint explicit formula excludes it in a prime-free Fourier band; the unresolved burden is dynamic preservation of that source-selected band under the infinite localized Xi flow**.
 
 ## Falsification criterion
 
-Construct a bounded-contrast short-period or far-tail-forced control violating XF-041/XF-045 under their hypotheses, or show that the memory-scale derivative flow contracts every small perturbation asymptotically faster than the exact slow-mode rate of XF-044. A source-specific near-buffer mechanism that closes the flux budget would extend rather than falsify the synthesis.
+Construct an XF-047-scale coherent endpoint wave consistent with the XF-048 explicit-formula statistic, or show that the finite positive-frequency Volterra law admits direct high-to-low generation contradicting XF-049. A rigorous infinite localized transport theorem would extend and close the current frontier rather than falsify it.
 
 ## Lean-formalizable core
 
-- Nonlinear periodic Cauchy spectral-gap decay.
-- Finite-window centered input-to-state inequality.
-- Quadratic far-tail buffer suppression.
-- Exact linearized memory-scale slow-mode rate.
-- Separation between universal contraction and source-specific precision.
+- Source-compatible periodic memory-wave estimates.
+- Explicit prime-free Fourier-gap probe calculation.
+- Finite positive-frequency Volterra evolution identity.
+- Exact match between Burgers linearization and the memory slow-mode rate.

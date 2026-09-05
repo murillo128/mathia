@@ -20,15 +20,13 @@ Short-chord models recover strong average/Mertens top-band information while ope
 
 Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, harmonic response, Kron determinants, and Feshbach families now classicalize. A live carrier must be all-shell, growing-base, genuinely multi-hole, singular/domain-changing, or nonlinear/noncommuting before fixed-base elimination.
 
-## Derive a critical singular/domain-sensitive arithmetic operator, or leave the fixed refinement-covariant boundary category
+## Couple prime directions before closure, or leave the fixed refinement-covariant boundary category
 
 **Linked intuitions:** `MI-004-compatible-completion-lacks-coercive-rh-scale`.
 
-PC-165--PC-174 classify fixed refinement-covariant coefficients, domains, distributions, and weak forms: the strong/local layers are universal, while the largest continuous weak first-order class is multiplicative Toeplitz after canonical normalization and has no nonzero compact/Schatten member.
+PC-165--PC-177 squeeze fixed refinement-covariant coefficients, distributions, weak forms, and multiplicative-Toeplitz symbols into a singular unbounded corner. PC-178 now closes the prime-separable version of that escape. On every fixed prime-valuation axis the exact resultant symbol is the constant off-diagonal Toeplitz form; its natural finite-shell quadratic form is semibounded but nonclosable, and Abel damping approaches the raw coefficients while the corresponding self-adjoint operators converge only to a scalar limit.
 
-PC-175--PC-177 now squeeze the residual Toeplitz branch. Ordinary bounded ratio symbols have zero Euclidean mesh density and therefore cannot be nonzero regular functions. Symmetric valuation-length symbols are classical GCD operators, bounded only for `sigma>1`; the actual cyclotomic-resultant prime-power ratio symbol is arithmetically sparse but unbounded, and damping it to boundedness again requires `sigma>1`, where it decomposes into classical one-prime Toeplitz chains with continuous interval spectrum.
-
-The live fixed-category question is thus not merely to choose another symbol. One must derive from prime incidence a singular or unbounded operator together with its natural domain, closure and sign/relative spectral datum at critical scaling. Otherwise leave fixed forms through shell/level dependence, cross-level relations, renormalized trace/normal-derivative boundary data, or nonlinear/noncommuting radial--arithmetic coupling.
+A viable fixed-category mechanism can no longer close or regularize each prime axis independently and assemble afterward. It must derive mixed-prime domain/coupling data **before closure**, or introduce a source-forced non-Toeplitz renormalization whose domain and sign survive the critical limit. Otherwise leave the category through shell/level dependence, cross-level relations, renormalized boundary data, or nonlinear/noncommuting radial--arithmetic coupling.
 
 ## Cross the Hardy boundary before the one-new-prime corrector becomes universal
 

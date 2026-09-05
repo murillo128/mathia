@@ -1,40 +1,38 @@
-# MI-004 — The composite clone matches marked tails and tail Laplacians; only genuinely global nonlocal assembly can still separate it
+# MI-004 — Tail equivalence and central trace summability push Prime Flute to genuinely global transmission
 
-**Evidence level:** supported through PF-168; complete marked-tail asymptotic length equivalence and generalized norm-resolvent equivalence of matched Dirichlet tails are proved, while decisive global trace-ideal/scattering separation remains open
+**Evidence level:** supported through PF-169; complete marked-tail asymptotic length equivalence, generalized norm-resolvent tail equivalence, and trace summability of all Margulis-short central squared-resolvent blocks are proved, while full uncut trace-ideal/scattering separation remains open
 
 ## Core intuition
 
-The exact prime flute and the all-composite shift clone `q_n=p_n+1` are now indistinguishable not only in tail coordinates and marked lengths but also at the level of the natural tail Dirichlet Laplacian. The asymptotically bilipschitz marking makes every bounded `C_0` spectral filter on farther-out matched tails asymptotically identical in operator norm.
+The exact prime flute and the all-composite shift clone are asymptotically indistinguishable on complete marked tails and under every fixed bounded `C_0` spectral filter of farther-out matched Dirichlet tails. Infinite proliferation of the canonical short central collars does not rescue the difference: their squared relative resolvent blocks are absolutely trace-summable and their escaping trace-norm tail vanishes.
 
-A surviving spectral mechanism therefore cannot be obtained by amplifying ever smaller tail coordinate defects through a fixed bounded spectral observable. It must retain **global head--tail assembly, infinite multiplicity/interference, a stronger operator ideal, wave/scattering data, or another nonlocal invariant** not controlled by norm-resolvent equivalence after a moving Dirichlet cut.
+A surviving spectral mechanism must therefore live in **global transmission and assembly**, not in amplifying coordinate defects, adding more escaping primitive words, or summing independent central short-collar contributions. The unresolved data are the body/collar interfaces, localization commutators, outer collar pieces, head--tail coupling, wave/scattering structure, or another uncut invariant not controlled by the existing moving-Dirichlet comparisons.
 
 ## Strongest justified principle
 
-PF-121--PF-125 provide the operator/geometric baseline: a globally coherent asymptotically bilipschitz marking and compact first relative resolvent, hence equality of essential spectra. PF-126--PF-165 remove local heat, determinant, reference, cusp, and separator escape routes and isolate the sharp local/global assembly issue.
+PF-121--PF-165 establish the geometric/operator baseline and remove local heat, determinant, cusp, reference, and separator escape routes. PF-166 gives uniform marked-length equivalence on the complete escaping tail, and PF-167 transfers the positive primitive-length accumulation and finite-length primitive-count explosion to the clone.
 
-PF-166 upgrades the geometric matched control. On the tail after pant `N`, the marking has bilipschitz constant `K_N->1`, so every marked translation length on the complete escaping tail is uniformly asymptotic between the prime flute and exact composite clone, regardless of word complexity. PF-167 shows that even the positive primitive-length accumulation interval and finite-length primitive-count explosion transfer to the clone.
+PF-168 upgrades this to generalized norm-resolvent equivalence of matched Dirichlet tail Laplacians. Consequently every fixed bounded spectral filter `phi(Delta)` with `phi in C_0`, including positive-time heat operators, becomes asymptotically clone-blind on tails cut farther and farther out.
 
-PF-168 upgrades the operator matched control. After imposing matched Dirichlet boundaries farther and farther out, the two tail Laplacians are generalized norm-resolvent equivalent with error tending to zero with the bilipschitz defect. Consequently every fixed bounded spectral filter `phi(Delta)` with `phi in C_0([0,infinity))`, including positive-time heat operators, becomes asymptotically composite-blind on the tail.
-
-This does not settle global Schatten, wave, scattering, or resonance comparisons. A norm-small infinite-rank difference need not be trace class, and the moving Dirichlet cut deliberately discards the global head--tail interaction that a scattering invariant can retain. That distinction is now the precise operator frontier.
+PF-169 assembles all Margulis-short central collar blocks at the stronger squared-resolvent trace-class level. Using the local `O(P^-3 L^3)` trace norm and the `O(P^0.525)` multiplicity envelope, the orthogonal direct sum is in `S_1`, and its tail is `O(Q^-1.475)`. Thus a failure of full-surface squared-resolvent trace class cannot be attributed merely to infinitely many independently summed short central cores.
 
 ## What remains possible
 
-The decisive route is to prove or refute a global assembly theorem. One direction is to upgrade local squared-resolvent `S_1` budgets plus the global metric comparison to a full trace-ideal/spectral-shift/wave statement. The opposite direction is to show that infinite orbit or spectral multiplicity accumulates the individually vanishing defects into a canonical reference-stable value separating the clone.
+The decisive route is an uncut assembly theorem. One outcome would show that the body, outer collars, boundary transmission, and cutoff commutators also have a summable trace-ideal budget, leading toward spectral-shift or wave equivalence of the prime flute and clone. The opposite outcome would identify a canonical global interaction that accumulates despite local/tail smallness and yields a reference-stable scattering or resonance discriminator.
 
-Any proposed full-surface invariant must be tested directly against the exact composite clone. Tail eigenvalues, heat traces after moving Dirichlet cuts, individual primitive lengths, or any fixed bounded tail functional calculus are already below the discrimination threshold.
+Norm-small infinite-rank differences need not be trace class, and the moving Dirichlet cut removes head--tail interaction by construction. Those distinctions are now the exact remaining operator frontier.
 
 ## Status / novelty
 
-Bilipschitz spectral stability, generalized norm-resolvent convergence, functional calculus, and marked-length comparison are classical. The project-specific content is the exact prime/composite matched control. The synthesis is a narrowed boundary: **tail coordinate amplification, orbit complexity, and bounded tail spectral amplification all fail; only global nonlocal assembly can still carry primality specificity**.
+Bilipschitz spectral stability, generalized norm-resolvent convergence, functional calculus, collar theory, and Schatten direct-sum criteria are classical. The project-specific synthesis is the narrowed boundary: **bounded tail amplification fails and the complete short-core `S_1` budget converges; only uncut global transmission/assembly can still carry a spectral prime/clone difference**.
 
 ## Falsification criterion
 
-Produce a fixed bounded tail spectral filter whose matched prime/clone operator difference does not tend to zero under PF-168, or a marked tail class violating PF-166. A canonical global scattering/trace-ideal invariant separating the clone would evade rather than falsify the local/tail boundary.
+Produce a fixed bounded tail spectral filter violating PF-168, a non-summable family of PF-169 central blocks under its hypotheses, or prove a full uncut trace-ideal/wave equivalence that closes the remaining global route. A canonical scattering/transmission invariant separating the clone would extend rather than falsify the synthesis.
 
 ## Lean-formalizable core
 
-- Tail bilipschitz-to-form comparison.
-- Generalized norm-resolvent convergence under vanishing metric distortion.
+- Generalized norm-resolvent stability under vanishing metric distortion.
 - `C_0` functional-calculus stability.
-- Separation between operator-norm smallness and Schatten/global assembly.
+- Multiplicity-weighted `S_1` summability of central collar blocks.
+- Separation between decoupled trace-class blocks and uncut transmission terms.

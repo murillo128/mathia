@@ -10,13 +10,13 @@ VIS-028--VIS-032 isolate a clean Farey regime: fixed endpoint layers vanish at t
 
 VIS-034 sharpens interpretation of any observed low-band suppression. The suppression statistic factors into a total-discrepancy amplitude term and a spectral-reallocation term, so an apparently strong low-mode effect is not evidence of arithmetic redistribution until the overall discrepancy scale is controlled separately. A decisive continuation should pre-register `q_n->infinity`, `q_n=o(n)`, normalize against the exact null, factor amplitude from redistribution, and then challenge any residual by stronger local-order, denominator, mediant, and Franel--Landau/Mobius controls.
 
-## Target higher-order residuals only after deterministic and statistical quotient closures are removed
+## Compare higher-order residual direction only in one predeclared common gauge
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-035--VIS-039 close a broad apparent multiplicity in three-gap statistics. Correspondence-analysis singular values are the principal-inertia/maximal-correlation modes whose squared energy is Pearson interaction; the empirical energy has the exact Pearson null floor; likelihood-ratio/CMI and Pearson agree to quadratic order, with their first separation a cubic fitted-residual moment; and an observed `N^-2` CMI stabilization can arise from the generic even finite-size expansion.
+VIS-035--VIS-040 close a broad apparent multiplicity in three-gap statistics. CA singular values, Pearson interaction, LRT/CMI, and their local finite-size behavior largely measure the same conditional-interaction magnitude. Near Markov closure, scalar CMI is exactly one half of the Fisher-normal residual energy to second order, so it discards the normal direction carrying that dependence.
 
-Thus CA, Pearson, LRT/CMI, and their nearby finite-size behavior are not independent confirmations when they act on the same fitted three-gap residual. A live higher-order visual statistic must retain information explicitly quotiented by these power-divergence closures — orientation, non-Markov order, a distinct conditioning sigma-field, or another proved information loss — rather than repackage the same residual with a different score.
+VIS-041--VIS-042 show how orientation can be retained without pretending it is canonical. Whitening two residuals by one fixed positive Markov reference gives an exact Fisher angle; logarithmic pooling of a predeclared panel's Markov closures supplies one panel-wide common gauge and a positive-semidefinite residual-orientation Gram. The reference, panel, weights, support, and partition remain part of the representation contract. A live cross-process orientation claim must freeze that common gauge before inspection and show that the signal survives reasonable admissible gauge/control choices rather than comparing independently whitened or post-selected coordinates.
 
 ## Build an information-loss atlas rather than treating complete xi-field renderings as independent evidence
 

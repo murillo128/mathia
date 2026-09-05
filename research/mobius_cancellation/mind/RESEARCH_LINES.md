@@ -2,21 +2,21 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Find a source-forced coupled residual beyond exact Dirichlet-recovery gauge
+## Find a source-forced coupled residual that retains signed information without reconstructing Mertens at the target resolution
 
-**Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence` and `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`.
+**Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
 
-MC-066--MC-070 close the positive quadratic-feedback corridor throughout every fixed conductor range `q<=X^A`, `A<2`, and MC-071--MC-072 show that standalone control of the natural signed inverse or even its first reciprocal block already carries zero-free/Mertens-scale burden.
+MC-066--MC-081 close positive quadratic feedback, standalone inverse control, complete Dirichlet recovery, and broad factorization-gauge escapes. MC-082 now adds a sharper information test: local divisor-density data can be identical on classes with opposite Liouville parity content, so signed parity is genuinely missing from those unsigned surrogates.
 
-MC-073 changes the coupled-recovery frontier: the **complete** recovery `sum k(d)A(X/d)` for `a*k=mu` is identically `M(X)`, so preserving all coupling does not by itself create a proof mechanism. MC-074--MC-081 then show why many proposed splittings are gauge artifacts or classical allocations. Dirichlet factorizations form a convolution-unit torsor; symmetric and moving fractional gauges do not divide a fixed power saving; residue allocations and locally finite multiplicative splits reduce to classical Selberg--Delange/prime-partition structure; and regular prime-average factors conserve a total resonance exponent of `-1`.
+But MC-083--MC-085 show that merely restoring that sign or retaining a proper low-frequency source coupling is still insufficient. Constant-weight parity annuli, the exact source-coupled sawtooth annulus, and the low-frequency annular coupling at the resolution needed to control the omitted tail are all quantitatively Mertens-equivalent. A live residual must therefore preserve source-forced signed structure while discarding enough target information that its estimate is demonstrably weaker than reconstructing `M` itself.
 
-A decisive continuation must therefore derive the gauge from independent source structure and isolate a **strictly partial/non-tautological coupled residual** whose cancellation can be proved without assigning Mertens-equivalent estimates to a factor or reconstructing the target identically.
+## Derive an iterable strict contraction from a genuinely under-resolved signed annular residual
 
-## Derive an iterable strict contraction from the exact signed annular residual
+**Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
 
-**Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information` and `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`.
+Repeated scale doubling can amplify a genuine subunit contraction, but algebraic degree, parity sensitivity, and proper Fourier truncation do not supply one. MC-085 identifies the exact trap: choosing enough low modes that the published generic Fourier remainder falls below the desired Mertens scale already makes the coupled estimate an approximate coordinate system for the target.
 
-Repeated scale doubling can amplify a genuine subunit contraction, but the contraction is not supplied by algebraic degree or by refactoring `mu`. A positive theorem must control an exact annular/truncated coupled residual with summable iteration losses and global scale coverage while remaining outside the full Dirichlet-recovery tautology.
+A positive continuation must exploit an arithmetic estimate on the omitted complement, the annular aggregate alone, or another source-derived partial coupling that remains below reconstruction resolution while still feeding a uniform strict contraction with summable iteration losses and global scale coverage.
 
 ## Keep comparator turnover and scale coverage in any alternative moving-family theorem
 
@@ -26,6 +26,6 @@ The quadratic positive-feedback corridor is closed far beyond the earlier except
 
 ## Treat asymptotically fixed Mellin drift as information-neutral unless the residual coupling changes
 
-**Linked intuitions:** `MI-006-asymptotically-fixed-mellin-drift-is-information-neutral` and `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`.
+**Linked intuitions:** `MI-006-asymptotically-fixed-mellin-drift-is-information-neutral`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
 
 Small deterministic Mellin shifts, fractional zeta gauges, or slowly varying normalizations do not create new signed information when they only reallocate the fixed Dirichlet singularity. A useful deformation must alter the source-forced coupled residual rather than reparameterize the same scalar carrier.

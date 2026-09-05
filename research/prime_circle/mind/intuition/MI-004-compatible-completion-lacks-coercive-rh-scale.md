@@ -1,39 +1,38 @@
-# MI-004 — Full refinement covariance rigidifies fixed boundary data to universal, classical GCD, or sparse unbounded multiplicative-Toeplitz structure
+# MI-004 — Full refinement covariance leaves only mixed-prime domain data or a category change
 
-**Evidence level:** supported by exact/classical completion and refinement-covariance results through PC-177
+**Evidence level:** supported through PC-178 by exact/classical refinement-covariance classification, multiplicative-Toeplitz reductions, boundedness thresholds, nonclosability, and strong-resolvent regularization limits
 
 ## Core intuition
 
-The compatible Prime-Circle completion preserves exact-order labels and rational characters, but full power refinement is extremely rigid on fixed boundary geometry. Strong/local/distributional objects collapse to universal scale modes; continuous weak first-order forms become multiplicative Toeplitz after canonical `|D|^(1/2)` normalization; and the newest results show that the obvious ways of inserting arithmetic into that Toeplitz sector either vanish, classicalize, or become unbounded.
+Full power refinement is extremely rigid on fixed Prime-Circle boundary geometry. Strong/local/distributional objects collapse to universal scale modes; continuous weak first-order forms become multiplicative Toeplitz; regular bounded ratio symbols vanish; natural sparse symbols classicalize or become unbounded. PC-178 now shows that even treating the exact unbounded resultant one prime direction at a time does not produce a canonical self-adjoint escape.
 
-The fixed boundary category is therefore narrower than “find a prime-dependent Toeplitz symbol.” A viable arithmetic mechanism must derive a **source-forced singular/domain-sensitive sparse operator with its sign and domain**, or leave the fixed refinement-covariant category through shell dependence, cross-level relations, renormalized boundary data, or nonlinear/noncommuting coupling.
+The remaining fixed-category possibility is therefore genuinely **mixed-prime at the domain level**. Prime directions must interact before closure or renormalization, so that the source supplies a coupled domain, sign, or relative spectral invariant not obtainable by independently regularizing one-prime Toeplitz chains. Otherwise the mechanism must leave the fixed refinement-covariant category.
 
 ## Strongest justified principle
 
-PC-165--PC-174 classify fixed refinement at the coefficient, domain, distributional, and weak-form levels. Logarithmic dilation forces the half-density; local homogeneous coefficients and invariant inverse-square domains are universal; arbitrary fixed first-order covariant distributions lie in `span{|D|delta_1,delta'_1}`; and every continuous weak first-order form is a matrix-valued multiplicative Toeplitz operator on the rational frequency-ratio lattice. No nonzero member of that normalized weak class can be compact or Schatten.
+PC-165--PC-174 classify fixed refinement at coefficient, domain, distributional, and weak-form levels. Logarithmic dilation forces the half-density; local homogeneous coefficients and invariant inverse-square domains are universal; fixed first-order covariant distributions are two-dimensional; and continuous weak first-order forms are multiplicative Toeplitz after canonical normalization, with no nonzero compact/Schatten member.
 
-PC-175 removes ordinary bounded ratio symbols as an arithmetic escape. A bounded refinement-ratio symbol has zero Euclidean mesh density on ordinary ratio intervals, so no nonzero continuous, smooth, analytic, or Riemann-regular symbol can represent the required refinement data. Any surviving bounded symbol must be arithmetically sparse or singular.
+PC-175 rules out nonzero regular bounded ratio symbols. PC-176 shows that the natural symmetric valuation-length family is the classical GCD operator and is bounded only for `sigma>1`. PC-177 identifies the exact resultant prime-power ratio symbol as arithmetically sparse but unbounded; damping it into boundedness again moves to `sigma>1` and decomposes it into classical one-prime Toeplitz chains.
 
-PC-176 tests the most natural symmetric valuation-length sparse family and finds the classical GCD operator. Its boundedness threshold is the usual `sigma>1`, while the critical `sigma=1/2` regime is unbounded. PC-177 tests the actual cyclotomic-resultant prime-power ratio data: the raw symbol is likewise unbounded; damping restores boundedness only beyond `sigma>1`, where the operator decomposes into classical one-prime Toeplitz chains with continuous interval spectrum rather than an RH-scale selector.
+PC-178 tests the remaining prime-separable domain repair directly. On each prime axis the raw symbol is the constant off-diagonal Toeplitz form. After the sharp scalar shift it is the point-mass Toeplitz quadratic form, semibounded but nonclosable on the natural finite-shell domain. Hence no Friedrichs/Kato closure exists. Abel damping converges coefficientwise to the raw form, but its self-adjoint operators converge in strong resolvent sense only to a scalar multiple of the identity. The singular prime-axis interaction is therefore not recovered by removing damping one direction at a time.
 
 ## What remains possible
 
-The noncompact multiplicative-Toeplitz sector is not proved empty. What remains is a source-forced sparse operator whose natural domain, closure, sign/inertia, or relative spectral invariant survives at the critical arithmetic scaling. Simply damping a prime-power symbol until it becomes bounded moves it into a classical regular regime and is not enough.
+A surviving fixed refinement mechanism must derive a coupled multi-prime form/domain before closure, or an independently source-forced non-Toeplitz renormalization whose critical sign or relative spectrum remains meaningful. Merely summing, closing, damping, or taking limits of separate prime-axis forms is no longer a distinct escape.
 
-Other live categories leave fixed-form covariance altogether: level-dependent singular families, genuinely cross-level incidence, trace/normal-derivative relations, nonlinear/noncommuting radial--arithmetic coupling, or a source-forced renormalized operator topology.
+Other live categories leave fixed-form covariance: level-dependent singular families, genuinely cross-level incidence, trace/normal-derivative relations, nonlinear/noncommuting radial--arithmetic coupling, or another source-canonical renormalized topology.
 
 ## Status / novelty
 
-Solenoids, homogeneous operators, inverse-square extensions, multiplicative Toeplitz/GCD operators, and the Bohr lift are classical. The persisted synthesis is the refinement boundary: **regular bounded symbols vanish, natural symmetric sparse symbols classicalize, and the raw resultant symbol survives only as an unbounded object unless it is regularized past the arithmetic critical regime**.
+Homogeneous operators, multiplicative Toeplitz/GCD operators, point-mass Toeplitz nonclosability, and Abel regularization are classical ingredients. The persisted synthesis is the refinement boundary: **regular fixed symbols vanish or classicalize, the raw resultant is nonclosable primewise, and canonical one-prime regularization scalarizes; any critical fixed-category escape must couple prime directions before the domain is completed**.
 
 ## Falsification criterion
 
-Produce a nonzero regular bounded refinement-ratio symbol contradicting PC-175, a bounded critical valuation/resultant symbol contradicting PC-176/PC-177, or derive a source-canonical singular/domain-sensitive Toeplitz operator whose critical spectral invariant separates rational-prime provenance.
+Construct a closable self-adjoint realization of the exact PC-178 prime-axis finite-shell form contradicting its nonclosability, recover that raw form as the strong-resolvent Abel-removal limit, or derive a source-canonical mixed-prime domain whose critical invariant survives the covered prime-separable obstructions.
 
 ## Lean-formalizable core
 
-- Weak form normalization to `C_n^*BC_n=B`.
-- Multiplicative Toeplitz Fourier classification.
+- Weak-form refinement normalization and multiplicative Toeplitz classification.
 - Zero mesh-density theorem for regular bounded ratio symbols.
-- Valuation-length reduction to GCD matrices.
-- Prime-power resultant ratio decomposition and boundedness threshold.
+- Prime-axis constant off-diagonal form and nonclosability witness.
+- Abel Toeplitz inverse and scalar strong-resolvent limit.

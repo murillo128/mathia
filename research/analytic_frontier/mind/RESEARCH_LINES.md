@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Resolve the compact anti-phase two-pair five-point coherence tube
+## Resolve the unequal-height Montgomery--Taylor five-point zero-freeness problem
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`, and `MI-004-complete-scalar-control-is-diffraction-realizability`.
 
-ANF-034--ANF-043 reduce complete scalar cardinality-five stability to the two-pair defect under the exact local gate `m_5(J)>=0`, with a sharp self-energy floor and compact positive height window. ANF-044--ANF-051 now eliminate the remaining generic escape directions: large horizontal separation is positive on interior-height slabs, common translation reduces to a Hilbert coherence gap, amplitude variation and finite bandwidth give safe regions, negative defects require balanced heights, and the final unequal-height danger is confined to a near-anti-phase tube.
+ANF-034--ANF-053 reduce complete scalar cardinality-five stability to one compact two-pair defect problem. The central-notch perturbation is now understood sharply: on bounded windows its leading `eta^3` term universally decreases the defect, so a genuine zero of the Montgomery--Taylor base defect would make every sufficiently narrow notch fail, while base zero-freeness would make all sufficiently narrow notches positive.
 
-ANF-052 adds a perturbative asymmetry favorable to the central-notch separator: on bounded heights the notch changes the five-point defect only cubically, while the useful pair-functional gain appears at lower order. The live scalar question is therefore the minimum over the compact balanced-height, finite-separation, near-anti-phase tube, with the common frequency integration and affine/multiplicity slack retained. A decisive result is either a uniform nonnegativity theorem there or one explicit admissible finite witness.
+ANF-054 closes the entire equal-height diagonal for every nonzero continuous even nonnegative compactly supported kernel with `m_5(J)>=0`. ANF-055 then gives an explicit unequal-height stability tube around that diagonal. The live scalar frontier is therefore the compact **unequal-height** region outside the certified tube: prove that the Montgomery--Taylor two-pair defect has no genuine zero there, or exhibit one explicit admissible zero/witness. Equal-height anti-phase geometry is no longer a live escape.
 
 ## Use unconditional out-of-band information only through a genuinely different zero-side carrier
 

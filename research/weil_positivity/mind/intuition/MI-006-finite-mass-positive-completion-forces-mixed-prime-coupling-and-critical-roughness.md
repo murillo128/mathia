@@ -1,41 +1,40 @@
-# MI-006 — Positive completion needs mixed-prime coupling upstream; canonical cells, resultants, and separated determinant lines cannot manufacture it
+# MI-006 — Mixed-prime coupling must precede positivity; fixed algebraic torsion incidence and local radial curvature do not supply it
 
-**Evidence level:** supported through WP-157 by exact critical-completion, resultant-cell, determinant-factorization, and tensor-product calculations together with the earlier positive spectral/information/transport/Gamma coupling results
+**Evidence level:** supported through WP-161 by exact completion/resultant calculations, toric torsion rigidity, and the exact cyclotomic radial germ
 
 ## Core intuition
 
-The critical one-prime Weil rays can live inside a positive all-prime carrier only if genuinely mixed-prime information is present. Earlier results showed that local positive completion pays for this with low-frequency mixed mass and divergent critical roughness. The newer results locate an even earlier gate: **mixed-prime geometry must already be present in the source incidence/correspondence before canonical positive or determinant completion**.
+The critical one-prime Weil rays can live inside a positive all-prime carrier only if genuinely mixed-prime or finite--archimedean information is present **before** positive completion. Canonical filling, determinants, tensor products, and normalization cannot manufacture an interaction missing from the source incidence.
 
-Pairwise resultant data do not acquire the missing coupling by filling cells, taking block resultants, tensoring separated prime factors, or normalizing finite-mass cutoffs. These operations either remain prime-local/flat in mixed directions, factor through pairwise data, become rank-additive, or converge to universal boundary laws. Positive assembly cannot create a selector that the input incidence never contained.
+The newer results close two natural ways of adding that incidence. Any fixed finite-arity algebraic relation among torsion coordinates has scalable solutions only through torsion cosets, which split over prime-primary shells. A genuine real radial deformation escapes that algebraic category and even has the exact Mangoldt boundary value, but its local positive differential jet immediately changes to full-support Jordan-totient data. Thus neither fixed algebraic torsion geometry nor local radial curvature transports the selector into positivity.
 
 ## Strongest justified principle
 
-WP-096--WP-151 establish the first completion boundary. Exact sparse positivity needs mixed mass; broad local positive energies diverge at critical amplitudes; Gamma/local regularization does not repair the coherent shell; the all-prime resultant graph has infinite spectator degree; positive diagonal normalization erases every fixed edge; and the remaining normalized mass is exhaustion dependent.
+WP-096--WP-157 establish the original completion boundary. Exact sparse positivity needs mixed mass; broad local positive energies diverge at critical amplitudes; normalized all-prime/resultant data universalize; mixed resultant rectangles are flat; canonical cell filling preserves that flatness; and block/tensor determinant constructions factor or rank-add rather than generating irreducible higher-prime information.
 
-WP-152--WP-153 show that the natural shell-size cutoff does not recover hidden arithmetic from that escaped mass. Away from the root the normalized finite-core data collapse, while the root sector converges to a universal boundary layer/two-atom spectral law determined by generic regular-variation bookkeeping rather than prime interaction geometry.
+WP-158 tests group-law correspondences before completion. Fixed torus-character equations and torsion translates split prime by prime on distinct primary shells, while multiplication is the Chinese-remainder reparameterization of the same product structure. WP-159 shows that the first additive non-character relation `x+y=1` is rigid sixth-root geometry and its homogeneous version has only the fixed equilateral relative pattern.
 
-WP-154 identifies the exact curvature carried by the zero-order resultant. Along one prime axis the chord curvature is positive and recovers the Weil-ray boundary, but mixed-prime rectangles are flat; the natural chord-curvature vector is also non-`ell^2` because spectator primes replicate the same local edge. WP-155 shows that canonical flag/cartesian cell completions cannot repair this: if the mixed curvature is absent in the 1-skeleton incidence, standard positive filling does not create it.
+WP-160 invokes Laurent's toric Manin--Mumford theorem at the correct generality. The torsion points of any fixed finite-dimensional algebraic subvariety lie in finitely many torsion cosets up to Zariski closure. Therefore an unbounded torsion family from a fixed finite-arity Laurent system necessarily returns to translated character geometry, and hence to the primary splitting already audited. Only finitely many exceptional torsion configurations remain outside that scalable class.
 
-WP-156 moves to determinant algebra. Cyclotomic block log-determinants factor through discriminants and pairwise resultants, so larger univariate blocks still contain no irreducible higher-prime interaction. WP-157 closes the separated multivariate/tensor analogue: determinant lines are rank-additive, while product positivity creates generic mixed bulk that disappears again under normalized log determinant. Genuine mixed arithmetic requires coupled equations, correspondences, differentials, metrics, or boundary data that are not separated across prime factors.
+WP-161 then changes category by introducing the real radial parameter `s`. The centered cyclotomic potential has the exact boundary value `R_n(0)=Lambda(n)`, but its even local germ is `Lambda(n)+sum B_{2k}J_{2k}(n)s^{2k}/(2k(2k)!)`; in particular `R_n''(0)=J_2(n)/12>0` for every `n>1`. The first natural positive local response therefore loses the prime-power support carried by the boundary selector.
 
 ## What remains possible
 
-A surviving positive route must introduce mixed-prime structure **before** squaring, Hodge completion, determinant formation, or finite-mass normalization. The source should force an incidence/correspondence that already has nonzero mixed curvature or another signed higher interaction, ideally coupling finite primes to each other and to the real place.
+A surviving positive route must introduce source-forced coupling outside the covered fixed algebraic-torsion class and preserve its selector through the sign-producing operation. Live categories include source-varying or growing-arity incidence, genuinely nonalgebraic/metric/cohomological coupling, and nonlocal finite--archimedean transforms that retain the Mangoldt boundary information rather than replacing it by the universal local radial jet.
 
-The route must then prove that this upstream coupling has a canonical domain/topology and survives the earlier critical roughness, spectator, and exhaustion controls. Merely adding higher cells, larger cyclotomic blocks, tensor products, or a natural shell cutoff is no longer a distinct mechanism.
+The resulting object must still survive the earlier critical roughness, spectator-prime, domain, and exhaustion controls. Merely adding more algebraic equations, higher cells, determinant factors, or taking the radial Hessian is no longer a distinct mechanism.
 
 ## Status / novelty
 
-Resultants, discriminants, graph curvature/coboundaries, determinant lines, tensor-product determinant formulas, and finite-volume spectral limits are classical ingredients. The persisted synthesis is the source-ordering principle: **canonical completion preserves or universalizes the interaction already present; it does not manufacture the mixed-prime coupling needed for an arithmetic positive selector**.
+Resultants, discriminants, torus characters, toric Manin--Mumford, cyclotomic values, Jordan totients, and local curvature are classical ingredients. The persisted synthesis is the source-ordering principle: **scalable fixed algebraic torsion incidence primary-splits, while the canonical non-torsion radial deformation loses Mangoldt support as soon as local positivity is differentiated; the needed selector must survive a more genuinely coupled/nonlocal operation upstream of positivity**.
 
 ## Falsification criterion
 
-Produce nonzero mixed-prime curvature from the canonical pairwise-resultant cell completions covered by WP-155, an irreducible higher interaction in the block/tensor determinant classes of WP-156--WP-157, or a nonuniversal arithmetic root limit contradicting WP-152--WP-153. A source-forced coupled incidence outside those classes would evade rather than falsify the boundary.
+Produce a scalable mixed-prime torsion family from a fixed finite-arity algebraic incidence that is not contained in torsion-coset/primary-separable geometry, or derive a local positive radial differential form whose support still matches `Lambda(n)` rather than the Jordan-totient jet under WP-161's exact deformation.
 
 ## Lean-formalizable core
 
-- Prime-axis versus mixed-rectangle resultant curvature.
-- Flatness preservation under canonical cell completion.
-- Block resultant/discriminant factorization.
-- Tensor determinant rank-additivity.
-- Universal finite-mass root boundary limit.
+- Primary splitting of translated character equations.
+- Sixth-root rigidity for the three-term additive relation.
+- Reduction of scalable fixed algebraic torsion incidence to torsion cosets, assuming Laurent's theorem.
+- Cyclotomic radial expansion and `R_n''(0)=J_2(n)/12`.

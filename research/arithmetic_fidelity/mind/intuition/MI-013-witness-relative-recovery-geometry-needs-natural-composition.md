@@ -1,45 +1,42 @@
-# MI-013 — Approximate fidelity is witness-relative recovery geometry; composition needs quotient-compatible transport
+# MI-013 — Witness-relative recovery composes after minimal backward saturation, but the saturated witness class must still be source-natural
 
-**Evidence level:** supported through AF-133; exact for the finite statistical experiments, convex witness classes, Wasserstein recovery models, and composition bounds stated in AF-126--AF-133
+**Evidence level:** supported through AF-134 by exact quotient-seminorm recovery, counterexamples to naive defect composition, and the minimal backward witness-saturation theorem
 
 ## Core intuition
 
-Approximate fidelity is not one scalar property of a representation. It is the smallest recovery error seen by a declared class of downstream witnesses, so changing the witness class changes the quotient geometry being preserved. Full bounded decision tests recover Le Cam deficiency; convex restricted witnesses can ignore a nontrivial kernel; metric-local witnesses recover Wasserstein geometry.
+Approximate fidelity is always relative to what downstream tests can observe. Stagewise recovery errors therefore compose only after each upstream stage is tested against every witness that later stages can pull back to it. AF-134 makes this constructive: for a fixed chain, there is a unique minimal backward saturation of the witness families, obtained by repeatedly adjoining the pullbacks of downstream witnesses and taking the convex symmetric hull.
 
-Composition is stricter than stagewise recovery. A residual that is invisible to the downstream witness class can become visible after an upstream map, and scalar recovery errors then fail to compose. A useful multistage fidelity statement therefore needs a **source-forced transport law for witnesses/quotients**, such as a Lipschitz modulus or naturality condition, not only a small defect at each stage.
+This solves the abstract compatibility problem but not the scientific one. A saturated family can become much larger than the local tests originally proposed. A useful Mathia application must therefore derive the destination witnesses and their pullbacks from the mathematical task itself and show that the resulting saturation has controlled complexity, regularity, or geometry.
 
 ## Strongest justified principle
 
-AF-126 identifies one-sided Le Cam recovery deficiency as the operational approximate-fidelity cost of reconstructing an experiment for all bounded decisions. AF-127--AF-128 show that, in finite experiments, positive deficiency has exact bounded decision witnesses and optimal witnesses can be calibrated against the identity experiment. The defect is therefore not merely existential: it has a concrete reconstructive decision meaning.
+AF-126--AF-130 distinguish full bounded-decision recovery, restricted convex witness recovery, and metric-local/Wasserstein recovery. The same representation can be faithful for one witness class and lossy for another.
 
-AF-129 restricts the witness family and makes the quotient explicit. A convex class of observables induces a seminorm/pseudometric whose kernel is observationally invisible; recovery is faithful only modulo that kernel. AF-130 specializes this to metric-local `1`-Lipschitz witnesses, where the resulting recovery error is normalized Wasserstein-1 distance.
+AF-131--AF-133 prove that scalar recovery defects do not compose by themselves. An intermediate reconstruction can move a residual that is invisible to the downstream quotient into a direction visible upstream; composition needs a transport/naturality condition on the witness geometry.
 
-AF-131 shows why stagewise scalar errors are insufficient: Wasserstein recovery across changing metric spaces does not compose without controlling how the intermediate recovery transports Lipschitz witnesses. AF-132 gives the positive replacement. The optimal profile `Phi(t)=inf_R(e(R)+t kappa(R))` records recovery error together with transport regularity and obeys a functional composition bound.
+AF-134 gives the exact fixed-chain completion. If stage `i` has native witness body `A_i` and linear transition `L_i`, define recursively
 
-AF-133 generalizes the obstruction beyond metrics. Restricted-witness recovery composes only when the recovery maps are compatible with the induced observational quotients. If a residual killed by the downstream seminorm can be mapped into a direction visible upstream, the cross-stage transport coefficient is infinite even when both stagewise recovery defects vanish.
+`B_0=A_0` and `B_i=conv(A_i union L_i^* B_{i-1})`.
 
-## Evidence synthesis and boundaries
-
-The result does not say that one universal recovery category is preferred. The relevant witness class, quotient, and transport regularity must be imposed by the actual downstream use. Enlarging the witness family can strengthen fidelity but also change the problem; shrinking it can make recovery cheap by declaring distinctions irrelevant.
-
-This complements MI-009 and MI-012 rather than replacing them. MI-009 separates finite exactness from bounded categorical accessibility, while MI-012 tracks multiscale information cost. The new principle concerns the **operational quotient and its functorial transport across composed representations**.
+The induced seminorms satisfy the exact recursion `q_i=max(p_i,q_{i-1} o L_i)`, and `B_i` is minimal by inclusion among convex symmetric witness bodies making the chain compatible. Equivalently, the final blind subspace is the intersection of the native blind directions transported through all downstream stages. Thus there is no remaining ambiguity about the generic witness enlargement required for composition.
 
 ## What remains possible
 
-Concrete arithmetic applications should derive their admissible witness class and show that the proposed representation admits recovery maps that are natural or quantitatively regular for that class. A useful positive theorem would identify a source-forced quotient whose recovery profile composes across the actual pipeline. A useful negative would show that a proposed compression has zero stagewise error yet necessarily turns an invisible residual into a visible one at a later stage.
+The live question is application-specific naturality. A representation can pass the formal saturation theorem while the required `B_i` becomes so large or irregular that the claimed compression no longer buys anything. Positive results should derive a source-natural destination witness class, compute or bound its backward saturation, and prove that the resulting complexity or stability budget remains compatible with the intended approximation.
+
+For nonlinear or stochastic transitions the same idea may require a different pullback/transport notion; AF-134 should not be silently extrapolated beyond its fixed linear witness setting.
 
 ## Status / novelty
 
-Le Cam deficiency, integral probability metrics, Wasserstein distance, Lipschitz transport, and quotient seminorms are classical. The persisted synthesis is the categorical rule: **approximate fidelity is witness-relative, and stagewise small defects become compositional only when recovery respects the witness-induced quotient with quantitative transport regularity**.
+Dual seminorms, convex symmetric witness bodies, pullbacks, and exact linear composition are classical functional-analytic ingredients. The persisted synthesis is the operational boundary: **the generic composition repair is the minimal backward saturation of downstream observables; remaining difficulty lies in proving that this saturated observation geometry is mathematically natural and affordable for the source representation**.
 
 ## Falsification criterion
 
-Construct a multistage recovery satisfying the AF-131/AF-133 hypotheses in which the relevant quotient-transport coefficient is uncontrolled but a uniform composition bound depending only on the stagewise defects still holds; or violate the AF-132 profile composition inequality in its stated setting.
+Produce a fixed linear chain for which AF-134's recursive witness body is not minimal or does not yield the stated seminorm recursion, or exhibit a claimed Mathia compositional-fidelity theorem whose destination witnesses require a saturation outside the admitted source geometry.
 
 ## Lean-formalizable core
 
-- Finite one-sided deficiency and decision witnesses.
-- Witness-class pseudometric/quotient construction.
-- Kantorovich--Rubinstein specialization.
-- Recovery profile `Phi` and its composition inequality.
-- Quotient-compatibility obstruction to restricted-witness composition.
+- Recursive witness-body saturation.
+- Exact `max` seminorm recursion.
+- Minimality by inclusion.
+- Blind-subspace intersection under transported witnesses.

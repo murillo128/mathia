@@ -6,9 +6,7 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, `MI-009-discrete-phase-fidelity-is-not-zero-selection`, and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic; completed screw/CND positivity is already RH-level. PL-145--PL-163 separate complete encoding from sampling fidelity and reduce the fixed-step lower-bound escape to an unattained horizontally phase-pinned frontier.
-
-PL-164--PL-168 further close ordinary finite-prime phase enrichment. Positive fixed/growing-prime harmonic detectors face finite-dimensional and primorial-frequency caps before an order-one horizontal signal can appear; signed low-energy characters can instead alias on finite height windows; and low-support Rudnick--Sarnak correlations reduce exponent-lattice conservation to universal GUE pairings. More finite prime axes or low-support multiplicative phase statistics are therefore not a new zero-selection mechanism.
+The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic; completed screw/CND positivity is already RH-level. PL-145--PL-168 separate complete encoding from sampling fidelity and show that more finite prime axes or low-support multiplicative phase statistics do not create zero selection.
 
 ## Force the completed arithmetic sign or one-sided coercivity upstream
 
@@ -20,17 +18,15 @@ A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equiv
 
 **Linked intuitions:** `MI-009-discrete-phase-fidelity-is-not-zero-selection` and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-PL-158--PL-163 show that generic vertical recurrence, including simultaneous recurrence in every fixed finite prime torus, does not constrain the surviving off-line frontier. The classical Landau--Gonek first-moment channel couples horizontal displacement to prime phase, but positive full-strip Fejer kernels lose resolution at an interior frontier and narrowing the positivity boundary amplifies the explicit-formula error.
+PL-158--PL-168 show that generic vertical recurrence, finite-prime harmonic enrichment, signed low-energy characters, and low-support exponent-lattice correlations do not constrain the surviving off-line frontier. A live theorem must use source information conditioned near the hypothetical extremal abscissa, a sharper weighted explicit formula, higher/mixed moments, or sign-indefinite cancellation unavailable to the positive first-moment route.
 
-PL-164--PL-167 make simple finite-prime repairs still less plausible: positive harmonic mass is capped by finite-horizon comparison, while signed characters can trade frequency cost for aliasing. A live theorem must use source information conditioned near the hypothetical extremal abscissa, a sharper weighted explicit formula, higher/mixed moments, or sign-indefinite cancellation unavailable to the positive first-moment route.
-
-## Couple multiplicative provenance to additive correlations before affine traces classicalize
+## Preserve the additive arithmetic channel before regularization or logarithmic averaging classicalizes it
 
 **Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations` and `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`.
 
-PL-168 shows that the low-support multiplicative exponent-lattice channel collapses to universal pairings. PL-169 identifies the first explicit nonuniversal escape: ratios one-swap terms require additive shifted correlations `n` with `n+h`, which are not determined by exponent-lattice differences.
+PL-169 identifies ordinary addition as the first explicit information channel outside multiplicative exponent differences. PL-170--PL-171 show that naive affine traces telescope or remain behind absolute-convergence walls. PL-172--PL-175 now close several more canonical repairs: `det_2` crosses the Hilbert--Schmidt boundary only by deleting the original fixed-shift Chowla trace; uniform shift averaging vanishes or collapses to the classical Liouville summatory square; logarithmic second-order shift spectra are Haar-flat; and all fixed-shift Walsh sectors of odd degree plus degree two are theoremically Bernoulli-universal, making every three-sign nonlinear readout universal.
 
-The naive affine realization is not enough. PL-170 relative affine traces cancel the infinite zeta tail to a finite-head boundary, while PL-171 congruence projections recover classical Hurwitz/Dirichlet channels only in the absolutely convergent Schatten regime `q sigma>1`. A live mixed multiplicative-additive carrier must therefore retain shifted arithmetic before finite-head cancellation and must obtain its critical continuation/domain from the source rather than by formal trace manipulation.
+A live mixed multiplicative-additive carrier must preserve the unsmoothed source correlation before these quotients. Possibilities include ordinary fixed-shift Cesaro/analytic information, a source-forced exceptional or growing-shift regime, an even Walsh sector of degree at least four only when independently motivated, or coupling to completed/target-relative zeta structure before the logarithmic limit. Degree four is merely the first theorem-uncontrolled sector here, not evidence of fertility by itself.
 
 ## Resolve target-sensitive Nyman data and genuinely nontrivial prime-shift actions
 

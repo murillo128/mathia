@@ -4,29 +4,27 @@
 
 ## Core intuition
 
-Many plausible advances arise by leaving a category that has just failed: move the test, enlarge the boundary operator, follow escaping mass, add a new visualization, invert a positive kernel, or localize a source statistic. The enlarged carrier can still have a complete universal/classical control model, and the apparent escape can disappear once its natural limiting or conditioning rule is included.
+Many plausible advances arise by leaving a category that has just failed: enlarge the witness family, move to a singular operator, add an algebraic incidence, regularize into a larger ideal, follow escaping mass, or introduce a source-compatible dynamical mode. The enlarged carrier can still have a complete universal/classical control model, and the apparent escape can disappear once its natural limiting, conditioning, domain, or transport rule is included.
 
-The correct order is to identify the carrier change, classify its strongest admissible controls including singular/moving/exhaustion limits, compute the exact information quotient and quantitative budget, and only then credit a residual. A boundary model is complete only when it includes **how the object is assembled, sampled, conditioned, and regularized**, not merely its finite formula.
+The correct order is to identify the carrier change, classify its strongest admissible controls including singular/moving/exhaustion limits, compute the exact information quotient and quantitative budget, and only then credit a residual. A boundary model is complete only when it includes **how the object is assembled, sampled, conditioned, regularized, and transported**, not merely its finite formula.
 
 ## Strongest justified principle
 
-Analytic Frontier now localizes the last five-point scalar problem rather than merely enlarging the real control family. ANF-041--ANF-043 close the local and large-height two-pair boundaries under `m_5>=0`; the unresolved scalar carrier is a bounded-height cross-frequency coherence problem.
+Analytic Frontier now supplies a complete local geometric narrowing of the scalar five-point escape: equal heights are globally positive and an explicit unequal-height tube is safe, leaving only a compact base-kernel zero-freeness problem. Narrow central notches do not create an independent mechanism because their leading perturbation decreases the defect and therefore lives or dies with that base zero set.
 
-Möbius Cancellation shows that changing from positive feedback to signed inversion does not automatically create new information. MC-070 closes the positive quadratic corridor below near-square conductor, while MC-071--MC-072 show that standalone inverse or first-block cancellation already contains the zero-free burden. The only live signed escape is coupled across the complete recovery sum.
+Arithmetic Fidelity shows that a larger witness category itself has a canonical completion. AF-134 constructs the minimal backward saturation required for composition; an unsaturated stagewise quotient is not the full boundary model. AF-136 similarly shows that source Gram spectral magnitudes are gauge metadata unless a coefficient metric is part of the admitted category.
 
-Prime Circle gives a full fixed-boundary classification. Strong/local/distributional refinement-covariant data collapse to universal modes; weak continuous first-order forms become multiplicative Toeplitz after canonical normalization, and their compact/Schatten subbranch is zero. A larger operator class exists, but its arithmetic symbol and sign still have to be forced.
+Möbius Cancellation shows that changing from unsigned to signed information is not enough if the retained resolution reconstructs the target. MC-083--MC-085 make parity-sensitive, exact-source, and proper low-frequency annular carriers Mertens-equivalent at the tested resolution.
 
-Visual Exploration separates rendered variety from information variety. VIS-033 shows that complete exact xi-field visualizations all descend from the complete zero divisor. Conversely, VIS-031--VIS-032 identify a genuinely different Farey regime because the statistic is deliberately partial: fixed endpoint layers vanish while the same-gap/reflection null remains active.
+Prime Circle and Prime Flute classify opposite operator boundaries. PC-178 shows the singular raw prime-axis form is nonclosable and its natural Abel regularization scalarizes; the domain/closure rule is part of the control model. PF-169 shows that the entire family of short central squared-resolvent blocks is trace-summable, so any global obstruction must include the transmission pieces omitted by local Dirichlet cuts.
 
-Weil Inertia shows that generic structural enrichment of a singular scalar model is insufficient. WI-159 adds even entireness, finite type, global positivity, and exact square factorization without removing the BGSTB uniformity gap. The missing data must be source-specific.
+Weil Positivity broadens incidence classification. WP-160 uses toric Manin--Mumford to close all scalable fixed finite-arity algebraic torsion incidence, not just the first few equations. WP-161 then shows that a genuinely new real radial variable has Mangoldt boundary data but a universal full-support positive local jet. Escaping the algebraic category is real, yet its most canonical positive boundary model still erases the selector.
 
-Weil Positivity makes regularization itself part of the boundary model. WP-151 shows that normalized adjacency mass escaping every fixed coordinate can behave differently under star and Boolean-cube exhaustions of the same graph. An unspecified moving cutoff is therefore not a canonical residual.
-
-Xi Flow gives the dynamic analogue. XF-039 shows that strong static near-lattice/Cauchy controls do not imply the microscopic flux budget, while XF-040 shows that the simplest exact periodic realization of that missing flux is rapidly damped. The relevant boundary model must include finite-window forcing and time evolution, not just static geometry.
+Weil Inertia and Xi Flow give singular and dynamic versions. WI-164/WI-167 show that Schur normalization and quantized flag jumps are opposite but equally ineffective confluence repairs without new source funding. XF-047 gives a nonlinear memory wave passing the previous source-count controls, while XF-048 shows that the full endpoint source category has an additional prime-free Fourier constraint; XF-049 then identifies the transport boundary needed to use it dynamically.
 
 ## Consequence for synthesis
 
-A proposed escape should be credited only after the enlarged carrier, complete matched family, source conditioning, target-scale budget, and assembly/regularization rule are explicit. The strongest control can change direction: sometimes a larger control closes a route; sometimes it reveals that the remaining problem has moved to a narrower source-conditioned or noncompact sector.
+A proposed escape should be credited only after the enlarged carrier, complete matched family, source conditioning, target-scale budget, domain/regularization, and assembly/transport rule are explicit. The strongest control can change direction: sometimes it closes the route; sometimes it reveals that the remaining problem has moved to a narrower source-conditioned or noncompact sector.
 
 ## Status / novelty
 
@@ -34,4 +32,4 @@ The component mathematics is classical or persisted exact work. The synthesis is
 
 ## Falsification criterion
 
-Produce a source-forced carrier whose complete admissible control family, conditioning, and limiting rule still reproduces the claimed residual despite the proposed distinction, or derive a residual that remains quantitatively coercive after the strongest source-appropriate boundary model is applied.
+Produce a source-forced carrier whose complete admissible control family, conditioning, limiting/domain rule, and transport still reproduce the claimed residual despite the proposed distinction, or derive a residual that remains quantitatively coercive after the strongest source-appropriate boundary model is applied.
