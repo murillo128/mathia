@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-endpoint-selector-heat-transport
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -41,12 +41,15 @@ A mechanism based on opposite-frequency mixing, frequencies larger than the targ
 
 ## Evidence boundary
 
-XF-048 establishes the endpoint phase-sensitive exclusion. XF-050 establishes an exactly prime-free one-sided finite probe valid through complex roots and collisions. XF-051 establishes the canonical infinite one-sided carrier and its exact distributional Burgers/Volterra evolution. None of these results bounds the singular `xi downarrow 0` background strongly enough to show that the moving memory-band statistic remains `o(1)` for positive heat time.
+XF-054 now proves that the **matched compact carrier statistic itself** remains `o(1)` uniformly on every fixed positive heat interval. Its proof uses the exact height-independence of XF-051 with a moving line `a_T=A log T`, reflects that line by the Xi functional equation into an Euler-product half-plane, and shows that the remaining deterministic heat background is annihilated by the oscillatory XF-050 probe.
 
-No broadband exclusion, quantitative upper bound on `Lambda`, or RH consequence is asserted here. In particular, one-sided support forbids high-to-low down-conversion but still permits nonlinear transfer from lower positive frequencies into the memory band.
+This does not establish a broadband positive-time support gap, pointwise regularity of the carrier at `xi=0`, a transition-to-memory implication, a quantitative upper bound on `Lambda`, or RH. Infinite-order endpoint structure may still exist, but it cannot generate an order-one projection onto the specific memory statistic controlled by XF-054.
 
 ## Research disposition
 
-Accepted for continued investigation, now narrowed to **zero-frequency quantitative control**. The qualitative transport questions that originally motivated the clue are resolved by XF-049--XF-051: the relevant Fourier architecture survives finite collisions, complex roots, infinite-volume passage, and one-sided band localization when represented by the horizontal logarithmic derivative.
+Outcome: supported
 
-The unresolved theorem is the shrinking-band estimate at `xi=Theta(1/log T)`. The next useful result must either control the archimedean/background singularity and its Volterra coupling with the fluctuation to `o(1)` in the XF-050 probe, or construct an explicit source-compatible lower-band replenishment mechanism of order one. Repeating finite truncation, real-simple transport, or localization-commutator arguments would no longer address the remaining gate.
+Resolved by:
+- [[research/xi_flow/findings/XF-054-moving-high-line-makes-endpoint-memory-selector-uniform.md]]
+
+The decisive transport estimate is now available for the exact statistic requested by this clue. Choosing `a_T=A log T` preserves the shrinking memory frequency because `a_T omega=O(1)` while making the reflected arithmetic factor polynomially small in `T`; the deterministic background then contributes only `o(1)` by oscillatory cancellation. The remaining gate is downstream transition geometry: a positive-`Lambda` scenario must be connected to an order-one memory coefficient that this transported selector excludes. More fixed endpoint jets or qualitative Volterra localization no longer address the missing implication.
