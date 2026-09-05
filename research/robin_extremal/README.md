@@ -35,6 +35,8 @@ A useful result should reduce or constrain the infinite extremal search by a the
 - Can sensitivity of `R(n)` to adding/removing one prime power be expressed as a stable local criterion whose global accumulation is tractable?
 - Which geometric or numerical patterns of extremal exponent vectors disappear under matched synthetic prime sequences, thereby isolating genuinely prime-specific information?
 
+For local exponent exchanges, keep the exact variation of the full Robin functional, including its `log log n` denominator. Determine whether one- or two-prime moves yield an infinite restriction on admissible extremal profiles after the continuous relaxation, integer rounding, and prime-distribution errors are combined.
+
 ### Scope and exclusions
 
 This line owns Robin-type normalized divisor-sum extremality and the discrete geometry of its extremal integer families. It does not own generic prime-distribution estimates once detached from the divisor-sum objective, nor other RH-equivalent inequalities unless they provide an exact bridge to this extremal structure.
@@ -45,7 +47,9 @@ Do not count finite verification, rediscovery of superabundant/colossally abunda
 
 Verify every claimed reduction to an extremal subsequence with an exact theorem; numerical observation that maxima occur on a familiar sequence is insufficient. Distinguish continuous relaxations from integer exponent vectors and bound the rounding/discretization error rather than assuming it is negligible.
 
-Test candidate potentials against synthetic increasing prime-like sequences with comparable density. If the same monotonicity follows only from generic spacing and multiplicativity, it may not carry enough zeta-specific information. When importing prime-number-theorem error bounds, check whether the required strength is already RH-equivalent.
+Test candidate potentials against synthetic increasing prime-like sequences with comparable density, stating which extremal constraints and target values are preserved. A monotonicity theorem for a broader class can still help if independently justified prime information closes its Robin application. When importing prime-number-theorem error bounds, check whether the required strength is already RH-equivalent.
+
+Compare the total discretization error with the actual remaining margin to Robin's boundary. A favorable local move, a continuous optimum, or a finite family of extremal transitions does not settle the universal inequality until the justified extremal reduction and all sufficiently large transitions are controlled.
 
 ### Prior-art domains
 

@@ -47,6 +47,8 @@ Study in particular:
 - explicit-formula, trace, determinant, resonance, operator, or function-space mechanisms that preserve arithmetic information through continuation;
 - Fourier/spectral duality capable of distinguishing the exact rational-prime norm map from generic multiplicative frequency systems.
 
+For mixed additive/multiplicative candidates, derive the averaging weights and their scale dependence from a declared arithmetic operation. Seek an independently controlled signed correlation that survives the resulting operator or limiting construction; an affine shift or a Hilbert-space boundary alone does not supply cancellation.
+
 ### Scope and exclusions
 
 Treat the exponent-vector representation, square-free Boolean hypercube, Euler-product factorization, classical Möbius inversion, and classical Bohr lift as baseline prior art rather than discoveries.
@@ -63,7 +65,11 @@ For candidate mechanisms, compare specifically against:
 - regularizations that remove exactly the zero-sensitive term they are supposed to explain;
 - operators whose spectral behavior is universal or determined by a classical boundary singularity rather than by the Riemann zero divisor.
 
-The surviving mechanism must distinguish the exact rational-prime norm map from broader multiplicative systems sharing the same ambient lattice or coarse harmonic structure.
+Identify which target-relevant information singles out the rational-prime application from broader multiplicative systems. A universal analytic estimate can contribute when an independent arithmetic input supplies that distinction; ambient lattice structure alone does not.
+
+Track the first signed trace through regularization explicitly. Distinguish a fixed-shift Dirichlet series from a moving finite-window average, logarithmic from ordinary means, and fixed aperture from an aperture growing with the observation scale. Test for strong convergence to zero or collapse to a summatory-function square before importing an averaged-correlation theorem, whose weights and error scale must match the surviving observable.
+
+For logarithmic shift spectra, check what is already fixed by two-point cancellation before claiming arithmetic sensitivity. Second-order spectral flatness does not identify the full process; a growing, concentrated, or higher-order filter needs its own uniform estimate and cannot inherit a fixed-filter theorem without justification.
 
 ### Prior-art domains
 

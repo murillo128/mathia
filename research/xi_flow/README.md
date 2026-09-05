@@ -20,8 +20,11 @@ Find a source-faithful dynamical mechanism that constrains the transition time `
 
 Intermediate progress should explain why the actual xi-flow zero configuration cannot follow a candidate positive-`Lambda` collision scenario, rather than merely re-expressing the equivalence between RH and the sign of `Lambda`.
 
+Distinguish mechanisms proving a lower bound on `Lambda` from mechanisms proving an upper bound. A contradiction developed under `Lambda<0` can yield useful zero-dynamics mathematics, but its transfer to excluding `Lambda>0` is a separate question; strengthening the former does not automatically advance the latter.
+
 ### Priority questions
 
+- Can an explicit-formula constraint at `t=0` control the relevant filtered zero statistic over the time interval required by an upper-bound argument, including compensating phases, broadband forcing, and buffer errors?
 - Which exact zero-motion equations hold in the real-rooted regime, and do they admit monotone, convex, coercive, or conserved quantities that remain informative as `t` approaches `0`?
 - Can unconditional spacing, pair-correlation, or higher-correlation information rule out the local equilibrium or collision geometry required by a hypothetical `Lambda>0`?
 - Can Lehmer-type near-collisions be organized into a quantitative local-to-global statement about the transition, rather than used only as numerical evidence?
@@ -37,11 +40,13 @@ Do not extrapolate a zero-motion formula beyond the regime in which the relevant
 
 ### Line-specific falsification controls
 
-Any proposed dynamical invariant must be tested against matched even real-entire functions or synthetic zero systems whose heat deformation has a different transition time. If the invariant is shared by those controls, it is not a xi-specific selector.
+Test a proposed transition-time bound against matched even real-entire functions or synthetic zero systems satisfying its admitted hypotheses but violating the claimed bound. A shared invariant alone need not distinguish Xi; a universal estimate may still be useful when a separately justified Xi-specific input completes the argument.
 
 Track collision singularities explicitly: a quantity that is monotone only while all gaps stay uniformly positive cannot by itself cross the first-collision boundary. For truncated or finite-dimensional models, require a topology and error estimate strong enough to preserve the claimed sign, coercivity, or non-collision property in the infinite limit.
 
 When importing zero statistics, distinguish unconditional statements from RH-conditional versions and verify that the statistic remains meaningful for a hypothetical configuration containing nonreal zeros.
+
+An ordered real endpoint zero statistic must carry its real-rootedness hypothesis explicitly. Distinguish an endpoint exclusion of one coherent wave from uniform control of arbitrary superpositions and from transport through heat time. A localized control must satisfy the actual source constraints on the whole tested buffer; an artificial periodic continuation is not a substitute.
 
 ### Prior-art domains
 

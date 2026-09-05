@@ -42,6 +42,8 @@ multi-gap separators, cross-ratios, cusp structure, and marked endpoint geometry
 - determinants or other natural spectral invariants;
 - genuinely global or nonlocal mechanisms capable of retaining information erased by local or scalar reductions.
 
+For global spectral routes, isolate what is added when cut collars and finite cores are reassembled: boundary transmission, localization commutators, and tail summability must be controlled in the operator class actually needed by the proposed trace or scattering consequence. For ordered-gap routes, distinguish absolute endpoint position, gap multiset, and higher gap order before choosing the observable.
+
 ### Scope and exclusions
 
 This line covers only the derived hyperbolic prime-flute. Do not develop new prime-circle cyclotomic, root-of-unity, or potential-theory findings here.
@@ -59,6 +61,10 @@ For candidate mechanisms, test specifically for:
 - local or finite-jet effects reproducible by a smooth matched reference;
 - selected orbit sectors or truncated products whose apparent boundary disappears in the natural full object;
 - dependence on an arbitrary continuum interpolation rather than the exact discrete endpoint/Fuchsian data.
+
+The shift `p_n -> p_n+1` on odd primes has composite labels while preserving every ordered gap. It tests sensitivity to absolute labels; a no-go for a gap-based implication requires a control that actually changes its gap target while satisfying the argument's hypotheses. Separate universal cotangent corrections from the organization of those corrections along the prime sequence.
+
+Keep fixed-filter moving-tail equivalence, a fixed global operator comparison, and any rescaled spectral limit distinct. Summability of Dirichlet-decoupled pieces does not settle the uncut surface until the gluing terms are controlled.
 
 ### Prior-art domains
 

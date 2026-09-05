@@ -29,6 +29,8 @@ Explore representations that may reveal:
 
 These are opportunity classes rather than a fixed queue. The line is deliberately free to switch objects and representations when another visual experiment appears more informative.
 
+For zero-gap process comparisons, investigate signed conditional-residual geometry as well as scalar dependence magnitude. For Farey views, separate total discrepancy amplitude from its spectral allocation and distinguish boundary structure from interior order. These are examples of asking what mathematical information a compelling scalar or picture has omitted, not a restriction to those two objects.
+
 ### Scope and exclusions
 
 The line may inspect any current research line as context and may initiate an exploration without an incoming clue. It may also explore a mathematically motivated direction that does not yet belong to any existing line when there is a plausible connection to the broader Riemann program.
@@ -50,6 +52,8 @@ For visually suggested structure, test the failure modes most likely to be induc
 - selection effects caused by choosing only visually favorable parameters or windows.
 
 A candidate mechanism becomes more interesting when its mathematical content survives changes that should be irrelevant while failing on controls that remove the arithmetic structure it claims to expose.
+
+Equal entropy, conditional mutual information, or another residual norm need not identify equal point processes or residual directions. Use a common reference metric, support, and orientation when comparing such directions; separately fitted coordinates can create apparent differences. Consecutive gap triples overlap, so their sampling uncertainty must respect that dependence. A finite-size effective parameter fitted to one statistic needs its own transfer test before being used for another.
 
 ### Prior-art domains
 

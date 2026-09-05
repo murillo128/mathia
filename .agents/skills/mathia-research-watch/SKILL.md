@@ -220,9 +220,17 @@ A review discussion may expose a separate useful research direction. In that cas
 
 ## Research cycle
 
+The Riemann research program aims to resolve RH. Quantitative improvements, exact local results, and general theory are welcome as learning, validation, or reusable tools; they do not replace that objective. Choose a coherent mathematical question whose resolution would change a live implication, settle a meaningful obstruction, or expose useful mathematical structure. Reconstruct the short chain from the available input to the claimed consequence and identify the first unsupported step; avoid extending already-settled scaffolding around it. Keep this working analysis ephemeral, integrating only substantive mathematics into existing evidence formats.
+
+Allow exploratory analogies, alternative representations, and toy models before selecting a candidate. They need not arrive with a complete route to RH. Once a candidate is precise, choose the derivation or control that could change the decision to pursue it, and apply the gates below. Neither exploratory freedom nor a promising interpretation lowers the publication threshold.
+
+Close a coherent investigation when its decisive question is answered or its admitted inputs are shown insufficient. Reopen a closed mechanism only when a changed hypothesis, new input, or different target evades the actual obstruction. An unfinished hard problem is not a refutation, and a scheduled invocation need not produce a finding. Do not introduce campaign files, quotas, or new lifecycle metadata for this working discipline.
+
 ### 1. Reconstruct the exact object
 
 Start from the line's intrinsic mathematical construction and conventions. Check definitions, normalizations, indexing, domains, degeneracies, and which structure is genuinely present rather than imported by analogy.
+
+Before developing a candidate at length, check the exact local object and decisive test against existing findings and accepted/resolved/rejected clues, including equivalent formulations with different names. A proposed clue is not evidence that its question remains open. An existing classification should redirect the test to an uncovered hypothesis or limit, not be rediscovered under a new finding ID.
 
 Do not begin by wrapping a known zeta identity, generating function, operator, or transform around the data and calling the reformulation a mechanism.
 
@@ -275,6 +283,8 @@ Try to kill a candidate before promoting it. Check, when relevant:
 
 Apply the line-specific controls from its README in addition to these shared tests.
 
+Interpret matched controls relative to the exact target and all hypotheses of the proposed implication. Equal readouts obstruct recovering a target only when admissible controls differ in that target; a composite label, relabelling, or reversible re-encoding need not remove the relevant arithmetic information. For approximate equality, check the topology and quantitative stability needed by the conclusion. A universal inequality can remain useful when an independently proved arithmetic bridge supplies its application.
+
 Important negative results are first-class research results when they rule out a natural branch, expose hidden universality, or establish a reusable impossibility principle.
 
 This self-audit does not replace the independent `mathia-research-adversarial` process.
@@ -307,6 +317,10 @@ Use the line's established vocabulary when it is more specific. Common evidence 
 
 Labels may be combined when needed, but exactness, provenance, novelty, and remaining uncertainty must be unambiguous. Never silently upgrade evidence.
 
+Explain the mathematical delta where the existing finding format calls for significance or boundaries: what stronger conclusion, new admissible regime, reusable lemma, or eliminated possibility follows? A complete local result can be valuable without advancing RH; make the missing application explicit. Do not fragment immediate corollaries into a chain of purported advances when their substantive content is one result.
+
+For RH-facing claims, distinguish a bound on density or proportion from exclusion of every off-critical zero. Even asymptotic density one on the critical line leaves finite or zero-density exceptions possible. Simplicity is a separate property, not a requirement of RH.
+
 ### 5a. Hand off mature Lean formalization targets
 
 After the result has been reconstructed, stress-tested, checked against prior art, and classified, ask whether a canonical finding contains a **stable, bounded theorem surface** whose Lean formalization has material value for verification, reusable formal infrastructure, or **formalization fertility**.
@@ -323,6 +337,8 @@ Do **not** formalize prior art indiscriminately. Prefer fertility targets where 
 - the same bridge recurs across multiple findings and a minimal formal interface could clarify what is essential.
 
 Routine identities, bulk prior-art transcription, and targets expected to collapse to a direct library theorem with no live structural question should not be delegated merely to increase formal coverage.
+
+Prefer theorem boundaries whose verification tests a consequential hypothesis, limit, domain, sharpness claim, or repeatedly used bridge. If a finite certificate is selected, identify separately which arithmetic instantiation and analytic passage remain outside it. Ease of compilation or the number of formal lemmas is not a reason to prefer a peripheral target over a load-bearing one.
 
 A finding is ready for automatic formalization handoff only when all of the following hold:
 

@@ -23,6 +23,8 @@ A useful result should explain why the target can or cannot be approximated at a
 - Can a constructive approximation scheme expose a rate threshold equivalent to, weaker than, or stronger than familiar RH error terms?
 - Which apparent numerical convergence phenomena survive matched non-arithmetic generator controls?
 
+Start finite certificates from the Gram matrix together with its actual target pairings and target norm. Seek either explicit admissible approximants with norm-certified residuals or normed dual witnesses, then determine which estimates remain controlled as the arithmetic span grows.
+
 ### Scope and exclusions
 
 This line owns the Nyman–Beurling/Báez-Duarte approximation problem and its intrinsic Hilbert-space geometry. It does not own generic functional-analysis reformulations, unrelated approximation criteria, or Möbius cancellation once the primary object becomes a summatory Möbius estimate rather than the approximation space.
@@ -33,7 +35,9 @@ Do not count the closure equivalence itself, a finite numerical least-squares fi
 
 Track conditioning and topology explicitly: a small residual in a finite truncation is not evidence for closure unless the approximation family and limiting norm are controlled. Test whether coefficient patterns are basis artifacts by applying equivalent generator changes and orthogonalization.
 
-Compare against matched synthetic generator families with similar Gram spectra but no arithmetic provenance. Any claimed arithmetic mechanism should survive this control. When a proposed rate uses Möbius or zeta estimates, verify that the imported estimate is genuinely weaker than the desired RH conclusion rather than an equivalent criterion in disguise.
+Compare target distances, not just Gram spectra: an isometric change of all generators can preserve their Gram matrix while changing their position relative to a fixed target. A matched synthetic family refutes a Gram-only target claim only when its target distance differs under the admitted hypotheses. When a proposed rate uses Möbius or zeta estimates, verify that the imported estimate is genuinely weaker than the desired RH conclusion rather than an equivalent criterion in disguise.
+
+For spectral cutoffs, control the target mass discarded in small-eigenvalue directions under a declared coefficient geometry. Small unweighted pairing errors alone do not certify stable approximation in an ill-conditioned family. Keep a finite primal or dual certificate distinct from a uniform asymptotic rate and from closure of the full target space.
 
 ### Prior-art domains
 

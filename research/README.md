@@ -2,6 +2,8 @@
 
 ## Global picture
 
+The program's objective is to resolve the Riemann hypothesis. Proportion improvements, local certificates, numerical patterns, and general structural results are welcome as tools for learning and testing possible mechanisms. They are not substitute objectives: the strategic question is what they enable toward settling RH, including how a proposed route handles every possible off-critical zero rather than only its asymptotic density.
+
 Mathia has thirteen current research lines. Ten are evidence-bearing: `analytic_frontier`, `arithmetic_fidelity`, `mobius_cancellation`, `prime_circle`, `prime_flute`, `prime_lattice`, `visual_exploration`, `weil_inertia`, `weil_positivity`, and `xi_flow`. `farey_discrepancy`, `nyman_beurling`, and `robin_extremal` remain distinct pre-evidence scaffolds.
 
 The strongest common bottleneck is now a **source-forced pre-classicalization selector and transport gate**. Earlier work established that the source must fix the representation, gauge, topology, scale, and quantitative transport profile. The newest evidence adds a sharper warning: several natural operations that look like harmless completion, averaging, closure, or positive assembly are actually irreversible classicalization steps. Once the source-dependent interaction has been collapsed into a target-equivalent scalar, a vanishing average, a separable prime-axis operator, a character variety, or an already-scalarized positive bound, later analysis cannot reconstruct the missing arithmetic selector.

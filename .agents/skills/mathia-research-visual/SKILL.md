@@ -49,6 +49,8 @@ It may:
 
 Do not require every run or visualization to be attributable to an existing researcher. The point of this role is partly to expose questions nobody knew to ask.
 
+These thread-relevant cross-line reads are an explicit exception to the base Research Watch's line-local read boundary when this specialization is loaded. Ordinary line-specific watches retain that boundary.
+
 This autonomy does not authorize rewriting another line's README, findings, clue dispositions, review state, mind, graph, or prior-art claims.
 
 ## Visual search posture
@@ -123,6 +125,10 @@ Before turning a visual pattern into a research claim, test the most relevant fa
 - a known identity or symmetry merely being redrawn.
 
 Use only the controls that are mathematically diagnostic for the candidate; do not turn every exploratory image into a heavyweight benchmark.
+
+When an exploratory pattern becomes a quantitative comparison, freeze the statistic, normalization, windows, controls, and decision rule before inspecting confirmation data. Separate data used to choose the view from data used to assess it; if no untouched confirmation is available, keep the result exploratory. Describe these choices in the existing construction/robustness or clue/finding sections rather than introducing a registration file or schema.
+
+Match the null to the actual dependence structure and preserved constraints. A stronger null needs its own calibration and a realizable sample space; a control that fixes the original configuration is degenerate. Separate simulation precision from finite-source uncertainty, account for overlapping observations and jointly searched windows/parameters, and do not count algebraically equivalent statistics as independent confirmations. Use direction-sensitive comparisons when the claimed mechanism concerns a full residual or process that a scalar norm cannot identify.
 
 ### 4a. Scale prior-art work to the intended output
 

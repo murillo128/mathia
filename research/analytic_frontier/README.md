@@ -10,12 +10,13 @@ For zero-density questions write `N(sigma,T)` for the number of nontrivial zeros
 
 ### Objective
 
-Identify modern analytic estimates that genuinely enlarge the unconditional information available about zeta zeros, and determine whether that extra information can be converted into stronger zero-location consequences, sharper RH-adjacent partial results, or mathematically precise inputs for other Mathia research lines.
+Identify analytic information that could rule out every off-critical zeta zero and thereby resolve RH. Modern zero-density, correlation, and critical-line proportion estimates are tools for learning and testing such mechanisms; their quantitative improvement is welcome but does not replace the full zero-location objective.
 
-The emphasis is on mechanisms and information gains rather than isolated constant optimization: determine exactly which new estimate, support range, moment, correlation, or uniformity statement changes the available zero-information budget.
+Determine exactly which estimate, support range, moment, correlation, or uniformity statement changes the available zero-information budget and what additional step could eliminate the remaining exceptions. A certified constant improvement is useful when its complete analytic assembly is justified and exposes a reusable source of gain or a sharp limitation.
 
 ### Priority questions
 
+- For finite-correlation test functions, can the exact multiset defect be certified on its whole admissible domain, including collision and noncompact boundaries, before optimizing further perturbations?
 - Can Guth--Maynard-type large-value bounds for Dirichlet polynomials be pushed, recombined, or transferred so that the resulting zero-density information controls a new RH-relevant regime rather than only improving a known exponent?
 - Which zero-detecting decompositions or mean-value estimates are currently load-bearing in the best zero-density bounds, and what precise stronger estimate would move the next barrier?
 - Can Levinson--Conrey-style arguments gain more from optimized combinations of zeta and its derivatives, twisted moments, or new auxiliary functions than from mollifier length alone?
@@ -27,13 +28,15 @@ The emphasis is on mechanisms and information gains rather than isolated constan
 
 This line owns upstream analytic machinery and its direct quantitative consequences. It does not own the compressed Weil-form/rank-inertia construction itself, prime-circle/flute geometry, or a generic catalogue of RH equivalences.
 
-Finite-height verification, a reformulation equivalent to RH, or a conditional theorem whose hypothesis already contains essentially the desired zero-location conclusion is not a target result. Pure numerical improvement of a constant is low priority unless the derivation exposes a reusable mechanism or crosses a mathematically meaningful threshold.
+Finite-height verification, a reformulation equivalent to RH, or a conditional theorem whose hypothesis already contains essentially the desired zero-location conclusion is not a target result. Numerical optimization must lead to a certified admissible function and a complete zero-counting consequence to establish an improved bound.
 
 ### Line-specific falsification controls
 
 For every proposed gain, track the complete exponent and support budget through the zero detector rather than only the locally improved estimate. Check whether an apparent unconditional statement imports RH, Lindelof, a density hypothesis, Hardy--Littlewood correlations, or an unproved moment asymptotic at another step.
 
 When using Dirichlet-polynomial or moment estimates, separate diagonal control from off-diagonal correlations and verify the exact length, coefficient class, averaging range, and uniformity needed by the downstream zero statement. Test whether the same analytic input is compatible with matched zero configurations having materially different horizontal mass; if so, it is not yet a horizontal discriminator.
+
+For signed Fourier--Laplace perturbations, distinguish failure of a sufficient positivity envelope from an actual zero or negative value of the exact defect. Prove the common compact reduction or tail bounds, treat degeneracies separately, and propagate certified local margins through the perturbation and analytic error budget. An interval enclosure containing zero is inconclusive.
 
 ### Prior-art domains
 

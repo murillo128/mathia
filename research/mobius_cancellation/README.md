@@ -43,6 +43,8 @@ Study in particular:
 - Beurling/generalized-prime or randomized multiplicative models as controls for determining which mechanisms depend on the exact rational-prime system;
 - possible bootstrap inequalities in which a weak global bound improves the local/correlation input strongly enough to feed back into a strictly better global bound.
 
+For annular or multiscale decompositions, test whether a strict partial, source-forced Fourier or slab coupling retains useful sign information with an independently available estimate. Its omitted terms must remain controllable after recombination; choosing a proper subset is not itself a cancellation gain.
+
 ### Scope and exclusions
 
 This line owns arithmetic cancellation mechanisms centered on Möbius and closely related multiplicative functions. It does not own new geometric encodings of the primes, generic infinite-torus/Bohr representations, or general theories of information loss under compression.
@@ -65,6 +67,8 @@ For candidate mechanisms, test specifically whether:
 - a use of `1/zeta(s)`, Perron inversion, or contour shifting has imported the desired zero-free region or RH-scale estimate circularly;
 - an apparent square-root law is stable under removal of finite-range numerics and does not rely on random-walk independence that multiplicativity does not supply;
 - any proposed bootstrap has a strict quantitative gain after all exceptional sets, logarithmic losses, smoothing errors, and scale transitions are included.
+
+Before treating an annular estimate as a weaker input, derive both its forward implication and any reverse recovery of `M(x)` after restoring the source-prescribed counterterms. Constant weights and fully recombined weights can conceal the same global target. For a surviving partial statistic, track truncation, exceptional-set, iteration, and scale-coverage losses all the way to the claimed Mertens exponent.
 
 ### Prior-art domains
 

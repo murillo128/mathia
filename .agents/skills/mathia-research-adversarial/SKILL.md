@@ -80,9 +80,13 @@ Use this order unless a task-specific prompt gives a stronger reason otherwise:
 
 Do not create repository churn merely to mark a finding as reviewed. A clean audit with no material objection produces no sidecar.
 
+Within these review priorities, prefer claims whose failure would invalidate a consequential implication or several dependent results. Trace the actual mathematical dependency rather than using citation count as importance. A conditional theorem may be correct while a downstream use silently drops its condition; direct the objection to that unsupported use.
+
 ## Adversarial research method
 
 Try to falsify before trying to improve the claim. Reconstruct enough mathematics to make the objection independent of the original author's reasoning.
+
+For a load-bearing claim, first identify its quantifiers, hypotheses, intended consequence, and a plausible proof or counterexample from the statement and primary sources before following the author's proof narrative. Then compare with the actual derivation and inspect all evidence needed for a fair verdict. This is an independence check, not a requirement to reproduce the whole research line or an excuse to ignore a valid defense. Agreement among models or repeated synthesis is not independent mathematical confirmation.
 
 Check, when relevant:
 
@@ -93,7 +97,7 @@ Check, when relevant:
 - boundary cases, degenerate instances, counterexamples, and simple controls;
 - gauge, coordinate, parametrization, or representation dependence;
 - telescoping, coboundary, endpoint-only, quotient, or information-loss reductions;
-- whether the mechanism is universal background rather than specific to primes/the line's construction;
+- whether a matched control satisfies the implication's hypotheses and changes its target, or only re-encodes target-preserving data; a universal inequality may remain useful through an independently proved arithmetic bridge;
 - local-versus-global information loss;
 - whether a claimed implication actually follows from the derived identity;
 - whether a numerical pattern is being promoted beyond what the computation establishes;
@@ -102,6 +106,8 @@ Check, when relevant:
 - whether the evidence/status label is stronger than the stored proof/source bridge warrants.
 
 Important negative checks are useful only when they are precise. "This seems doubtful" is not an adversarial result.
+
+For empirical claims, separate a reproducible descriptive statistic from its proposed arithmetic or process interpretation. Check whether the confirming windows, contrasts, or controls were selected after inspecting the effect, and whether dependent samples or equivalent statistics are being counted as separate confirmations.
 
 ## Lightweight hallucination and line-integrity scan
 

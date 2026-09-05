@@ -44,6 +44,8 @@ Study, when they arise intrinsically from the construction:
 - spherical or projective representations and exact orthogonal-circle constructions;
 - genuinely two-dimensional or nonlocal operators that retain information lost by scalar evaluation.
 
+Prioritize the precise interaction or limiting operation not covered by the finite cyclotomic/resultant classification. For a growing-level, infinite-depth, or non-polynomial construction, identify the source-forced coupling and the topology in which it survives. Such constructions are candidates to test, not automatic escapes from a finite obstruction.
+
 ### Scope and exclusions
 
 This line covers only the original prime-circle / roots-of-unity geometry. Do not develop new hyperbolic cuff, cusp, scattering, or infinite-flute results here.
@@ -59,6 +61,8 @@ For candidate mechanisms, test specifically for:
 - loss of the relevant layer interaction under scalar evaluation;
 - reproduction by matched non-prime or non-arithmetic root configurations;
 - dependence on an arbitrary projective coordinate, interpolation, normalization, or externally chosen operator.
+
+Before extending a vertexwise Hessian or tensor construction, check its full coefficient algebra, CRT incidence, and Cauchy/cyclotomic reductions against existing local classifications. A nonzero mixed block in one basis need not carry new arithmetic information. If a finite interaction survives, closability, boundedness or domain control, and the relevant infinite-level limit remain separate obligations.
 
 ### Prior-art domains
 
