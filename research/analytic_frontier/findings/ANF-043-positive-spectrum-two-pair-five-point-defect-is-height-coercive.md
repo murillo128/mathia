@@ -78,7 +78,7 @@ For fixed frequency put
 \[
 c_j=\cosh(2\pi\alpha y_j),
 \qquad
-u_j:=c_j-1\ge0,
+a_j:=c_j-1\ge0,
 \qquad
 \theta_j:=2\pi\alpha t_j.
 \tag{5}
@@ -96,15 +96,15 @@ h_\alpha={}&(c_1^2-1)+(c_2^2-1)
 \tag{6}
 \]
 
-Substituting `c_j=1+nu_j` and grouping quadratic terms gives the exact identity
+Substituting `c_j=1+a_j` and grouping quadratic terms gives the exact identity
 
 \[
 \begin{aligned}
 h_\alpha
-={}&\nu_1\bigl(2+2\cos(\theta_1-\theta_2)+\cos\theta_1\bigr)\\
-&+\nu_2\bigl(2+2\cos(\theta_1-\theta_2)+\cos\theta_2\bigr)\\
-&+\nu_1^2+\nu_2^2
-+2\nu_1\nu_2\cos(\theta_1-\theta_2).
+={}&a_1\bigl(2+2\cos(\theta_1-\theta_2)+\cos\theta_1\bigr)\\
+&+a_2\bigl(2+2\cos(\theta_1-\theta_2)+\cos\theta_2\bigr)\\
+&+a_1^2+a_2^2
++2a_1a_2\cos(\theta_1-\theta_2).
 \end{aligned}
 \tag{7}
 \]
@@ -112,17 +112,17 @@ h_\alpha
 The last line is a squared modulus,
 
 \[
-\nu_1^2+\nu_2^2+2\nu_1\nu_2\cos(\theta_1-\theta_2)
+a_1^2+a_2^2+2a_1a_2\cos(\theta_1-\theta_2)
 =
-\left|\nu_1e^{i\theta_1}+\nu_2e^{i\theta_2}\right|^2,
+\left|a_1e^{i\theta_1}+a_2e^{i\theta_2}\right|^2,
 \tag{8}
 \]
 
 and also
 
 \[
-=(\nu_1-\nu_2)^2
-+4\nu_1\nu_2\cos^2(\pi\alpha d).
+=(a_1-a_2)^2
++4a_1a_2\cos^2(\pi\alpha d).
 \tag{9}
 \]
 
@@ -138,8 +138,8 @@ equations (7)--(9) give the global lower bound
 \boxed{
 h_\alpha
 \ge
-4\nu_1\nu_2\cos^2(\pi\alpha d)
--\nu_1-\nu_2.
+4a_1a_2\cos^2(\pi\alpha d)
+-a_1-a_2.
 }
 \tag{10}
 \]
@@ -149,7 +149,7 @@ This inequality is deliberately different from the universal `h_alpha>=-1/4` flo
 A second bound handles strongly unequal heights. Define
 
 \[
-q_\alpha:=|\nu_1-\nu_2|=|c_1-c_2|.
+q_\alpha:=|a_1-a_2|=|c_1-c_2|.
 \tag{11}
 \]
 
@@ -319,7 +319,7 @@ Thus, once `y` is large enough that (21) applies to both heights throughout `I`,
 where
 
 \[
-M_I:=\int_IJ(\alpha)\,d\alpha.
+M_I:=\int_I J(\alpha)\,d\alpha.
 \]
 
 Again use `h_alpha>=-1/4` outside `I`. From (20),
