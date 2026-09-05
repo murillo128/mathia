@@ -13,6 +13,8 @@ based_on:
   - research/visual_exploration/findings/VIS-036-three-gap-empirical-ca-pearson-null-floor.md
   - research/visual_exploration/findings/VIS-037-three-gap-lrt-pearson-local-equivalence-control.md
   - research/visual_exploration/findings/VIS-038-three-gap-lrt-pearson-cubic-residual-correction.md
+  - research/visual_exploration/findings/VIS-039-three-gap-cmi-even-finite-size-expansion.md
+  - research/visual_exploration/findings/VIS-040-markov-closure-fisher-normal-cmi-quadratic.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -56,6 +58,8 @@ No zeta table had a fitted expected count below five. Primary CUE tables had no 
 
 ## Research question
 
+VIS-039 and VIS-040 constrain how this crossing can be interpreted. A generic even finite-size correction in the cell law can produce an even correction in scalar CMI; at a strictly positive Markov limiting law, `P_epsilon=P+epsilon A+O(epsilon^2)` gives `I=(epsilon^2/2)||A-Pi_P A||_P^2+O(epsilon^3)`. This leading value records the norm of the normal residual and forgets its direction. Equal CMI can therefore coexist with different irreducible three-gap tensors. These population formulas are conditional on their stated smoothness/positivity assumptions and are not asserted to describe the actual zeta or CUE limiting law.
+
 Is the common descriptive `N=8` crossing the first evidence of a statistic-dependent finite-circle transfer scale for three-gap conditional dependence, or is it an accidental balance between the CUE circle constraint, the plug-in CMI estimator, and the unresolved arithmetic/local-process correction?
 
 More sharply: as the pair-derived effective size `N_e(T)` grows, does the CMI-equivalent bracket move systematically with it, or does a residual zeta-minus-CUE curve retain the signed `O(N_e^-3)` behavior expected from the arithmetic term? The present three windows span pair-derived sizes only from about `3.8` to `5.1`, so their common integer bracket cannot distinguish those mechanisms.
@@ -72,6 +76,12 @@ Predeclare independent zeta windows in the already cited higher regimes near pai
 
 Kill the proposed order-specific-scale reading if the bracket is unstable across those higher windows, partitions, or sample sizes, or if a matched arithmetic correction absorbs the crossing without a distinct finite-circle transfer.
 
+Before inspecting the new windows, also freeze one direction-sensitive comparison of the residual table `P-M(P)` using a common positive reference metric and identical support conventions. A fixed set of signed contrasts or the full tensor in common whitened coordinates is suitable; selecting singular vectors separately to maximize apparent agreement is not. Determine whether the CUE size bracket selected by scalar CMI also predicts that residual geometry on independent windows. If only the scalar norms match, retain the result as a scalar calibration rather than a transferred three-gap process law. This uses the full-residual question already owned by the accepted conditional-residual clue, without opening a duplicate experiment.
+
+Separate Monte Carlo precision of the CUE curve from uncertainty of a finite zeta window. Use independent windows and process-aware resampling/controls for the latter; overlapping triples are not independent observations. Fix sample sizes, reference partitions, sparse-cell treatment, and the joint comparison rule before the new data. Do not interpret three-bin agreement or CMI/Pearson agreement as independent confirmations, and do not infer an arithmetic `N_e^-3` law merely from a generic scalar Taylor expansion.
+
 ## Evidence boundary
 
 This is finite-sample numerical evidence from three public-data windows and exact finite-`N` CUE simulation, not a theorem, asymptotic law, RH criterion, novelty claim, or identification of zeta with `CUE_8`. “CMI-equivalent size” is only the smallest tested integer whose finite-sample central interval contains the selected statistic; it is not a new physical estimator or effective-size formula. The same curve's `CUE_64` end lies significantly below zeta, so finite-circle scale sufficiency does not establish an exact large-`N` CUE explanation or exclude the known arithmetic correction. The arithmetic kernel was not simulated because the persisted source still does not supply the required exact positive three-gap process.
+
+VIS-040 does not establish residual-direction agreement for these data. A discrepancy of directions would refute a stronger process-transfer interpretation while leaving a descriptive CMI crossing intact; no target result is inferred from either outcome alone.

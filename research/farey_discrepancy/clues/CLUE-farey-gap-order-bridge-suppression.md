@@ -13,6 +13,7 @@ based_on:
   - research/visual_exploration/findings/VIS-031-farey-fixed-endpoints-vanish-sublinear-bands.md
   - research/visual_exploration/findings/VIS-032-reflection-null-sublinear-band-saturates-green-energy.md
   - research/visual_exploration/findings/VIS-034-farey-low-band-suppression-factorization.md
+  - research/arithmetic_fidelity/findings/AF-133-restricted-witness-composition-requires-quotient-compatible-recovery.md
   - research/farey_discrepancy/README.md
 ---
 
@@ -84,6 +85,8 @@ For the finite values already tabulated in `VIS-032`, both effects are present. 
 
 ## Research question
 
+The next finite experiment should determine which ordering information is necessary for `S_q`, not accumulate more instances of small combined `Q_q`. The source facts needed from Visual Exploration are the exact factorization `Q_q=A S_q`, the reflection-conditioned Green baseline above, and invisibility of every fixed endpoint layer in a diverging sublinear band. None supplies an asymptotic law for the actual Farey residual.
+
 After separating global discrepancy suppression from spectral reallocation, does the complete Farey discrepancy retain a stable **spectral-allocation deficit `S_q<1`** in pre-registered sublinear even-mode bands after progressively preserving stronger local ordering information? Can any surviving `S_q` residual be shown not to reduce to the classical Franel–Landau scalar discrepancy or familiar Möbius/totient quantities?
 
 If a residual survives, can it be localized to genuinely interior information such as adjacent-gap blocks, denominator strata, mediant/Farey-parent ancestry, or long-range gap order, rather than to the fixed endpoint hierarchy already excluded in this band?
@@ -97,6 +100,14 @@ The selected sublinear bands simultaneously reject every fixed endpoint hierarch
 If stronger local-order controls drive `S_q` back to one while `A` remains small, the visual spectral branch collapses to a global discrepancy-ordering effect. If `S_q` remains nontrivial, the remaining information channel becomes much narrower and genuinely scale-sensitive.
 
 ## Decisive test
+
+Freeze a new larger-order panel and the two existing cutoffs before inspecting its residuals. A concrete candidate panel is `n in {2400,3200,4800}`, after checking that those outcomes have not already been used to tune this question. If they have, declare them exploratory and reserve a separate untouched confirmation panel. Retain the same normalization and report `(A,S_q)` separately at every order.
+
+Use the reflection/same-gap ensemble as the exact first control, then predeclare one stronger local-order control and one denominator/mediant control. For each, specify the realizable sample space, which relations are preserved, and how it is sampled. If the constraints determine the original order or prevent adequate sampling, that control is degenerate rather than evidence that the residual survives. Recompute its total and band expectations; do not transfer the weaker null's Green law to it.
+
+Calibrate the distribution of the actual chosen statistic under each null, including uncertainty in simulated expectations. In particular, a ratio of expected energies does not make `S_q` a random variable of null mean one. Use a joint predeclared rule across orders and bands rather than independent-looking marginal thresholds. The finite direction survives only if spectral allocation remains separated after global amplitude and the stronger realizable controls are accounted for; disappearance of `S_q` with surviving `A` redirects this candidate to scalar discrepancy. Neither outcome alone establishes an asymptotic rate.
+
+The transport warning from AF-133 is specific: changing the retained witness class can make a previously invisible residual visible unless recovery respects the quotient. Accordingly, any norm change or reconstruction used to connect a surviving band residual to the Franel--Landau target must have its stability and retained information proved, rather than inherited from an exact finite identity.
 
 Keep the two cutoffs pre-registered:
 
