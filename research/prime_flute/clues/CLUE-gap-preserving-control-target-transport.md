@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-flute-gap-preserving-control-target-transport
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: prime_flute
 based_on:
@@ -36,3 +36,9 @@ For any separation, identify its exact ordered-gap carrier and explain whether i
 ## Evidence boundary
 
 No new spectral separation, target difference, or RH implication is asserted. The new controls preserve only explicitly checked data. PF-168's fixed-filter moving-tail theorem remains intact; it is not a theorem about the full uncut surface or about every renormalized gap-sensitive statistic.
+
+## Research disposition
+
+Accepted. The affine-shift clone is an exact discriminator for whether a proposed finite-core construction factors only through the ordered gap sequence: any coefficients determined solely by those ordered gaps are unchanged under `p_n -> p_n+c`. Classical finite-Jacobi inverse spectral theory also shows why this control does not erase order sensitivity in general: under the standard Jacobi hypotheses, marked endpoint spectral/Weyl data can reconstruct the ordered coefficient path. The control therefore isolates the missing absolute anchor rather than proving loss of ordered multigap information.
+
+The live question is to construct a canonical nontrivial marked or mixed observable that adds the minimal anchor-sensitive information needed to distinguish the literal prime target while still satisfying the line's exclusion of direct primality selectors, then test it against both the affine clone and an ordering-destroying same-gap-multiset control.
