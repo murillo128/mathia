@@ -51,7 +51,7 @@ one has
 
 Hence every fixed positive heat-time interval gives only a fixed-factor local contraction at the memory scale. It cannot supply a multiplicative gain tending to zero with `T`.
 
-This becomes decisive when matched to the exact XF-035 triple-flux gate. On a `q`-periodic slow sinusoidal gap perturbation
+This becomes decisive when matched to the exact XF-035 triple-flux threshold. On a `q`-periodic slow sinusoidal gap perturbation
 
 \[
 g_j=s\left(1+\varepsilon\cos\frac{2\pi j}{q}\right),
@@ -92,40 +92,41 @@ Since
 \tag{9}
 \]
 
-this gives, for large `q` and many repeated periods,
+the exact linear-response coefficient
 
 \[
-\boxed{
-V_M
-=\left(24\pi+o(1)\right)
-\frac{M}{q^2}|\varepsilon|
-+o_{\varepsilon}(|\varepsilon|),
-}
+\mathcal L_{M,q}
+:=
+\lim_{\varepsilon\to0}
+\frac{M V_M}{|\varepsilon|}
 \tag{10}
 \]
 
-and therefore
+satisfies
 
 \[
 \boxed{
-M V_M
-=\left(24\pi+o(1)\right)
-\left(\frac{M}{q}\right)^2|\varepsilon|
-+o_{\varepsilon}\!\left(M|\varepsilon|\right).
+\mathcal L_{M,q}
+=
+24\pi\left(\frac{M}{q}\right)^2
+\left(1+O\!\left(\frac1q\right)
++O\!\left(\frac qM\right)\right).
 }
 \tag{11}
 \]
 
-For the source scale `M=R(T)\log^2T` and memory wavelength `q\asymp\log^2T`, equation (11) says that the XF-035 gate `M V_M=O(1)` requires slow-mode amplitude
+For the source scale `M=R(T)\log^2T` and memory wavelength `q\asymp\log^2T`, equation (11) says that the **borderline** inverse-buffer scale `M V_M=O(1)` corresponds in tangent response to
 
 \[
 \boxed{
-|\varepsilon|=O(R(T)^{-2}).
+|\varepsilon|=O(R(T)^{-2}),
 }
 \tag{12}
 \]
 
-By contrast, XF-043 suppresses the **remote** tail only to the natural relative-shape scale `O(R(T)^{-1})` on such a memory core. Thus a proof strategy that reaches an `O(1/R)` unresolved memory-scale mode and then relies on universal Cauchy relaxation still needs an additional multiplicative gain of order `1/R` before the exact triple-flux threshold is reached.
+while the positive XF-035 stability gate `M V_M=o(1)` requires `|epsilon|=o(R(T)^-2)` along this slow family.
+
+By contrast, XF-043 suppresses the **remote** tail only to the natural relative-shape scale `O(R(T)^{-1})` on such a memory core. Thus a proof strategy that reaches an `O(1/R)` unresolved memory-scale mode and then relies on universal Cauchy relaxation still needs an additional multiplicative gain of order `1/R` merely to reach the borderline flux scale, and a slightly stronger gain to enter the `o(1)` stability gate.
 
 The sharp local clock (1) shows that obtaining such a factor uniformly requires at least
 
@@ -151,7 +152,7 @@ At `q\sim c\log^2T`, this becomes
 
 which diverges because `R(T)\to\infty`. A fixed real-rooted heat-time interval therefore cannot close this precision gap by source-free memory-scale relaxation alone.
 
-This is not a statement that Xi actually realizes the slow sinusoidal perturbation or that the `O(1/R)` upper floor of XF-043 is attained. It is a sharp falsification of one possible bootstrap: **far-tail suppression to `O(1/R)` plus bounded-time universal Cauchy damping is not, by itself, a route to the inverse-buffer triple-flux gate at memory wavelength.** Closing the argument requires additional Xi-specific information that suppresses the slow modes, a stronger near-buffer cancellation that lands below the `R^-2` scale, or a different flux organization that avoids paying this precision clock.
+This is not a statement that Xi actually realizes the slow sinusoidal perturbation or that the `O(1/R)` upper floor of XF-043 is attained. It is a sharp falsification of one possible bootstrap: **far-tail suppression to `O(1/R)` plus bounded-time universal Cauchy damping is not, by itself, a route even to the borderline inverse-buffer triple-flux scale at memory wavelength.** Closing the argument requires additional Xi-specific information that suppresses the slow modes, a stronger near-buffer cancellation that lands below the `R^-2` scale, or a different flux organization that avoids paying this precision clock.
 
 ## 1. Linearizing the exact periodic gap flow
 
@@ -241,15 +242,22 @@ when `b_0/s\to1`, has the correct local exponent for every `q`. The Cauchy gap i
 
 ## 2. A local sharpness statement independent of the chosen norm
 
-Let `v_i=\cos(2\pi i/q)` and initialize
+Let
+
+\[
+v_i=\cos\frac{2\pi i}{q}
+\tag{23}
+\]
+
+and initialize
 
 \[
 g_i(0)=s(1+\varepsilon v_i),
 \qquad |\varepsilon|<1.
-\tag{23}
+\tag{24}
 \]
 
-For every fixed `q,s,\tau`, smooth dependence on initial data and (2) imply
+For every fixed `q,s,tau`, smooth dependence on initial data and (2) imply
 
 \[
 \boxed{
@@ -258,7 +266,7 @@ For every fixed `q,s,\tau`, smooth dependence on initial data and (2) imply
 +o(\varepsilon)
 \qquad(\varepsilon\to0),
 }
-\tag{24}
+\tag{25}
 \]
 
 uniformly in the finite index set. Therefore, in either `ell^2`, `ell^infinity`, or any fixed norm on the zero-mean period space,
@@ -270,7 +278,7 @@ uniformly in the finite index set. Therefore, in either `ell^2`, `ell^infinity`,
 {\|g(0)-s\mathbf1\|}
 =e^{-\rho_{q,s}\tau}.
 }
-\tag{25}
+\tag{26}
 \]
 
 In particular, suppose a proposed universal estimate on the periodic nonlinear gap flow has, in some neighborhood of the lattice,
@@ -280,7 +288,7 @@ In particular, suppose a proposed universal estimate on the periodic nonlinear g
 \le
 \kappa_{q,s}(\tau)
 \|g(0)-s\mathbf1\|.
-\tag{26}
+\tag{27}
 \]
 
 Then necessarily
@@ -290,7 +298,7 @@ Then necessarily
 \kappa_{q,s}(\tau)
 \ge e^{-\rho_{q,s}\tau}.
 }
-\tag{27}
+\tag{28}
 \]
 
 This is the exact sense in which (1) is a lower bound on **how fast a uniform proof can force contraction**, not only an upper bound obtained from one particular energy.
@@ -305,7 +313,7 @@ Insert the Xi source spacing (3) into (1):
 \frac{\log^2T}{4q}
 \left(1-\frac1q\right)
 (1+o(1)).
-\tag{28}
+\tag{29}
 \]
 
 Hence a period `q=c\log^2T(1+o(1))` has (5). More generally, obtaining a multiplicative improvement by a factor `R(T)` from the universal local flow requires
@@ -313,7 +321,7 @@ Hence a period `q=c\log^2T(1+o(1))` has (5). More generally, obtaining a multipl
 \[
 \rho_{q,s}\tau
 \ge\log R(T)+O(1),
-\tag{29}
+\tag{30}
 \]
 
 so
@@ -325,27 +333,25 @@ so
 \left(4+o(1)\right)
 \frac{q\log R(T)}{\log^2T}.
 }
-\tag{30}
+\tag{31}
 \]
 
 This produces a precision-adjusted scale separator. A factor-`R` improvement can occur in vanishing heat time by this mechanism only when
 
 \[
 q\log R(T)=o(\log^2T).
-\tag{31}
+\tag{32}
 \]
 
 At the full memory wavelength `q\asymp\log^2T`, the required time diverges like `log R`. The distinction is sharper than asking whether a mode merely loses a fixed fraction of its amplitude: fixed-factor memory and inverse-buffer precision live on different clocks.
 
-## 4. The slow mode has an explicit triple-flux cost
+## 4. The slow mode has an explicit triple-flux linear response
 
 For the sinusoidal profile (6), set
 
 \[
-v_j=\cos\frac{2\pi j}{q},
-\qquad
-\theta=\frac{2\pi}{q}.
-\tag{32}
+v_j=\cos\frac{2\pi j}{q}.
+\tag{33}
 \]
 
 The logarithmic contrast satisfies
@@ -353,14 +359,14 @@ The logarithmic contrast satisfies
 \[
 d_j
 =\varepsilon(v_{j+1}-v_j)+O(\varepsilon^2)
-\tag{33}
+\tag{34}
 \]
 
 for fixed `q`. XF-030 gives the exact odd flux law with
 
 \[
 F'(d)=-\frac32d+O(d^3).
-\tag{34}
+\tag{35}
 \]
 
 Therefore
@@ -370,7 +376,7 @@ Therefore
 =-\frac32\varepsilon
 (v_{j+2}-2v_{j+1}+v_j)
 +O(\varepsilon^2).
-\tag{35}
+\tag{36}
 \]
 
 The second difference is explicit:
@@ -379,7 +385,7 @@ The second difference is explicit:
 v_{j+2}-2v_{j+1}+v_j
 =-4\sin^2\!\left(\frac\pi q\right)
 \cos\!\left(\frac{2\pi(j+1)}q\right).
-\tag{36}
+\tag{37}
 \]
 
 Summing absolute values over one full period gives
@@ -393,7 +399,7 @@ Summing absolute values over one full period gives
 6\sin^2\!\left(\frac\pi q\right)
 C_q,
 }
-\tag{37}
+\tag{38}
 \]
 
 where
@@ -401,14 +407,14 @@ where
 \[
 C_q:=\sum_{j=0}^{q-1}
 \left|\cos\frac{2\pi j}{q}\right|.
-\tag{38}
+\tag{39}
 \]
 
 A Riemann sum gives
 
 \[
 C_q=\frac{2q}{\pi}+O(1),
-\tag{39}
+\tag{40}
 \]
 
 and hence
@@ -418,38 +424,38 @@ and hence
 6\sin^2\!\left(\frac\pi q\right)C_q
 =\frac{12\pi}{q}+O(q^{-2}).
 }
-\tag{40}
-\]
-
-Now repeat the period across `2M` gaps. The omission of at most two endpoint second differences changes the linear coefficient by only one-period boundary size. Thus (8)--(10) follow. The relevant point is the scale, not the constant:
-
-\[
-\boxed{
-M V_M
-\asymp
-\left(\frac{M}{q}\right)^2|\varepsilon|
-}
 \tag{41}
 \]
 
-at small amplitude.
+Now repeat the period across `2M` gaps. The omission of at most two endpoint second differences changes the linear coefficient by only `O(q/M)` relatively after multiplication by `M`. Combining (38)--(41) gives the exact tangent coefficient (11).
 
-This calculation is important because a long-wave mode is much cheaper in flux variation than the alternating microcorrugation of XF-039: two discrete derivatives appear before `V_M` is formed. Even after crediting that extra smoothness exactly, however, a memory-scale mode repeated across a super-mesoscopic source buffer still needs the `R^-2` amplitude scale in (12).
+The relevant point is the scale
 
-## 5. The XF-043 floor and the XF-035 gate are separated by one factor of `R`
+\[
+\boxed{
+\mathcal L_{M,q}
+\asymp
+\left(\frac{M}{q}\right)^2.
+}
+\tag{42}
+\]
+
+This calculation is important because a long-wave mode is much cheaper in flux variation than the alternating microcorrugation of XF-039: two discrete derivatives appear before `V_M` is formed. Even after crediting that extra smoothness exactly, however, a memory-scale mode repeated across a super-mesoscopic source buffer has borderline flux amplitude `R^-2`, one factor `R` below the natural `R^-1` remote-floor scale of XF-043.
+
+## 5. The XF-043 floor and the XF-035 threshold are separated by one factor of `R`
 
 Take a memory core with
 
 \[
 q\asymp N\asymp\log^2T
-\tag{42}
+\tag{43}
 \]
 
 and a source-valid physical buffer
 
 \[
 D=R(T)\log T.
-\tag{43}
+\tag{44}
 \]
 
 With `s\asymp1/\log T`, XF-043 gives the remote-tail relative-shape floor
@@ -457,37 +463,32 @@ With `s\asymp1/\log T`, XF-043 gives the remote-tail relative-shape floor
 \[
 A_{\rm far}\ll\frac{Ns}{D}
 \asymp\frac1{R(T)}.
-\tag{44}
+\tag{45}
 \]
 
 The same physical buffer contains
 
 \[
 M\asymp R(T)\log^2T
-\tag{45}
-\]
-
-gaps at source density, so `M/q\asymp R(T)`. Equation (41) then gives
-
-\[
-M V_M\asymp R(T)^2|\varepsilon|.
 \tag{46}
 \]
 
-Thus an unresolved slow mode of the natural far-tail scale `|epsilon|\asymp1/R` would still have
+gaps at source density, so `M/q\asymp R(T)`. Equation (11) becomes
 
 \[
-M V_M\asymp R(T)\to\infty,
+\boxed{
+\mathcal L_{M,q}\asymp R(T)^2.
+}
 \tag{47}
 \]
 
-whereas the XF-035 threshold requires `|epsilon|=O(R^-2)` along this family.
+Thus, in linear response, an unresolved slow-mode amplitude parameter of scale `|epsilon|\asymp1/R` lies a factor `R` above the borderline `M V_M=O(1)` scale, while the positive XF-035 gate requires moving slightly below that borderline to `o(R^-2)`.
 
-Again, (44) is only an **upper bound** on what the remote tail can sustain. The finding does not assert that Xi has a residual of size `1/R`. The conclusion is conditional on a proof architecture: if the multiscale reduction stops at that natural floor, the remaining factor `R` cannot be supplied uniformly by bounded-time source-free memory-scale Cauchy relaxation.
+Equation (45) is only an **upper bound** on what the remote tail can sustain. The finding does not assert that Xi has a residual of size `1/R`, nor does the tangent calculation assert a uniform finite-amplitude expansion for a simultaneous limit `epsilon=1/R(T)` without an additional nonlinear remainder estimate. The conclusion is instead about proof architecture: if a multiscale estimate leaves an unresolved memory-scale component at the natural `1/R` level and then asks for an amplitude-uniform bounded-time contraction theorem, the required extra factor `R` is ruled out by (28)--(31).
 
 ## 6. The same slow clock applies directly to the flux functional
 
-The obstruction is not an artifact of measuring gap amplitude first and then converting it to flux. Combining the flow expansion (24) with the linear flux expansion (35) gives, for every fixed `q,s,M,\tau`,
+The obstruction is not an artifact of measuring gap amplitude first and then converting it to flux. Combining the flow expansion (25) with the linear flux expansion (36) gives, for every fixed `q,s,M,tau`,
 
 \[
 \boxed{
@@ -499,7 +500,7 @@ The obstruction is not an artifact of measuring gap amplitude first and then con
 \tag{48}
 \]
 
-Therefore any near-lattice estimate that tries to contract `V_M` itself uniformly inherits the same lower bound (27). Changing from variance to the exact triple-discriminant flux does not remove the long-wave spectral clock at first order.
+Therefore any near-lattice estimate that tries to contract `V_M` itself uniformly inherits the same lower bound (28). Changing from variance to the exact triple-discriminant flux does not remove the long-wave spectral clock at first order.
 
 This is a useful separation from XF-039. Microscopic alternating flux variation is killed rapidly because its Fourier frequency is high. The present obstruction sits at the opposite end of the spectrum: its adjacent contrasts are tiny and its flux variation is correspondingly cheap, but the mode relaxes only on the memory-scale Cauchy clock.
 
@@ -507,13 +508,13 @@ This is a useful separation from XF-039. Microscopic alternating flux variation 
 
 The theorem is a **local linearized sharpness result** for the exact nonlinear periodic flow. It does not claim that a finite-amplitude sinusoidal profile remains a pure Fourier mode for times growing like `log R`; nonlinear mode coupling can matter on such intervals. Equation (14) is therefore a necessary clock for a contraction theorem uniform near the lattice, not a standalone nonlinear lower bound for one prescribed finite-amplitude trajectory over a growing time horizon.
 
-That limitation does not affect the bounded-time obstruction. Equations (25), (27), and (48) already show that on every fixed heat interval the best uniform local contraction factor at `q\asymp\log^2T` stays bounded away from zero. A proof requiring a factor `1/R(T)\to0` cannot come from the universal tangent dynamics alone.
+That limitation does not affect the bounded-time obstruction. Equations (26), (28), and (48) already show that on every fixed heat interval the best uniform local contraction factor at `q\asymp\log^2T` stays bounded away from zero. A proof requiring a factor `1/R(T)\to0` cannot come from the universal tangent dynamics alone.
 
 The mode is a periodic synthetic control, not a claim about actual Xi zero statistics. It satisfies the same exact universal gap dynamics used in XF-041 but does not encode the arithmetic source, translated zeta-zero correlations, or a de Bruijn--Newman transition. Those are precisely the kinds of extra information that could exclude or weaken the slow mode and therefore evade the obstruction.
 
 The result also does not contradict XF-041. That finding gives a nonlinear **upper** relaxation estimate; the present calculation identifies the tangent direction showing its exponential rate is sharp. Nor does it contradict XF-043: far-tail suppression remains valid and useful, but its `O(1/R)` scale is not automatically the final precision scale required by XF-035.
 
-Finally, the conclusion is specific to proof mechanisms that need the XF-035 `M V_M=O(1)` gate or an equivalent first-order flux control. A different source-specific identity that bypasses this gate could avoid the `R^-2` target entirely.
+Finally, the conclusion is specific to proof mechanisms that need the XF-035 inverse-buffer flux gate or an equivalent first-order flux control. A different source-specific identity that bypasses this gate could avoid the `R^-2` tangent target entirely.
 
 ## 8. Prior art and consequence for `xi_flow`
 
@@ -521,4 +522,4 @@ Fourier diagonalization of circulant inverse-square kernels, spectral relaxation
 
 The Mathia-local content is the scale matching that was not available before XF-043: the exact slow tangent mode of XF-041, the exact triple-flux linearization of XF-030/XF-035, the memory scale `q\asymp\log^2T`, and the super-mesoscopic far-tail floor `O(1/R)` together force the logarithmic precision clock (13)--(14).
 
-The next positive gate is therefore sharper than “iterate the buffer until the exterior is small.” A successful continuation must do at least one of the following: use Xi-specific source information to rule out or quantitatively suppress wavelengths `q\gtrsim\log^2T/\log R`; prove a near-buffer cancellation whose memory-scale residual is already `O(R^-2)` in the relevant flux coordinate; or find a different source-sensitive carrier that does not require the XF-035 inverse-buffer flux threshold. Merely combining XF-043 with more bounded-time universal Cauchy damping cannot close the remaining precision gap.
+The next positive gate is therefore sharper than “iterate the buffer until the exterior is small.” A successful continuation must do at least one of the following: use Xi-specific source information to rule out or quantitatively suppress wavelengths `q\gtrsim\log^2T/\log R`; prove a near-buffer cancellation whose memory-scale residual is already `o(R^-2)` in the relevant flux coordinate; or find a different source-sensitive carrier that does not require the XF-035 inverse-buffer flux threshold. Merely combining XF-043 with more bounded-time universal Cauchy damping cannot close the remaining precision gap.
