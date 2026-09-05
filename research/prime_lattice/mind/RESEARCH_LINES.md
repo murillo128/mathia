@@ -6,11 +6,9 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-001-exponent-lattice-is-scaffolding`, `MI-002-critical-line-is-boundary-not-selector`, `MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization`, `MI-009-discrete-phase-fidelity-is-not-zero-selection`, and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic; completed screw/CND positivity is already RH-level.
+The bare exponent cone and broad scalar readouts remain flexible under generalized-prime controls, while stronger phase data can identify the rational-prime source without selecting a zero divisor. Native HLS positivity is generic; completed screw/CND positivity is already RH-level. PL-145--PL-163 separate complete encoding from sampling fidelity and reduce the fixed-step lower-bound escape to an unattained horizontally phase-pinned frontier.
 
-PL-145--PL-163 show that after completion, prime-power checkpoints, a fixed two-prime face, fine meshes, and one fixed step have sharply different observation quotients. Fine/dense sets can be complete for generic reasons. A fixed step admits upper aliasing; on the lower side any surviving RH-failure frontier must be unattained and phase-pinned. PL-162 then shows that identity recurrence in any fixed finite prime torus is vertically generic for the complete zeta zero sequence, while PL-163 shows that the canonical positive Landau--Gonek first-moment channel loses resolution at an interior horizontal frontier.
-
-The missing theorem remains upstream: a source mechanism for the completed cumulative state, or a zeta-specific **horizontal-conditioned** anti-aliasing/source relation genuinely weaker than the desired zero conclusion.
+PL-164--PL-168 further close ordinary finite-prime phase enrichment. Positive fixed/growing-prime harmonic detectors face finite-dimensional and primorial-frequency caps before an order-one horizontal signal can appear; signed low-energy characters can instead alias on finite height windows; and low-support Rudnick--Sarnak correlations reduce exponent-lattice conservation to universal GUE pairings. More finite prime axes or low-support multiplicative phase statistics are therefore not a new zero-selection mechanism.
 
 ## Force the completed arithmetic sign or one-sided coercivity upstream
 
@@ -22,11 +20,17 @@ A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equiv
 
 **Linked intuitions:** `MI-009-discrete-phase-fidelity-is-not-zero-selection` and `MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven`.
 
-PL-158 leaves an exact upper-bounded resonant quartet on every fixed step. PL-159--PL-161 show that lower boundedness under RH failure requires an **unattained phase-pinned frontier**: near-rightmost zeros must satisfy `beta_j->Theta` and `exp(iT_jh)->1` with ordinates escaping to infinity.
+PL-158--PL-163 show that generic vertical recurrence, including simultaneous recurrence in every fixed finite prime torus, does not constrain the surviving off-line frontier. The classical Landau--Gonek first-moment channel couples horizontal displacement to prime phase, but positive full-strip Fejer kernels lose resolution at an interior frontier and narrowing the positivity boundary amplifies the explicit-formula error.
 
-PL-162 rules out the simplest anti-aliasing strategy. For all zeta ordinates, simultaneous recurrence to phase identity is unconditional and occurs in every prescribed finite prime torus; adding finitely many fixed prime axes without conditioning on horizontal displacement does not constrain the surviving frontier. PL-163 shows that the classical Landau--Gonek moments already provide the desired horizontal/phase coupling, but positive harmonic Fejer kernels face a sharp tradeoff: full-strip positivity damps an interior frontier, while moving the positivity boundary inward amplifies the published explicit-formula error exponentially.
+PL-164--PL-167 make simple finite-prime repairs still less plausible: positive harmonic mass is capped by finite-horizon comparison, while signed characters can trade frequency cost for aliasing. A live theorem must use source information conditioned near the hypothetical extremal abscissa, a sharper weighted explicit formula, higher/mixed moments, or sign-indefinite cancellation unavailable to the positive first-moment route.
 
-A live theorem must therefore control zeros **conditioned near the hypothetical extremal abscissa**, improve the weighted explicit-formula resolution, use higher/mixed moments or genuinely simultaneous source information, or exploit sign-indefinite cancellation unavailable to the positive full-strip first-moment route. Separate generic phase statements or more fixed axes are no longer distinct mechanisms.
+## Couple multiplicative provenance to additive correlations before affine traces classicalize
+
+**Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations` and `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`.
+
+PL-168 shows that the low-support multiplicative exponent-lattice channel collapses to universal pairings. PL-169 identifies the first explicit nonuniversal escape: ratios one-swap terms require additive shifted correlations `n` with `n+h`, which are not determined by exponent-lattice differences.
+
+The naive affine realization is not enough. PL-170 relative affine traces cancel the infinite zeta tail to a finite-head boundary, while PL-171 congruence projections recover classical Hurwitz/Dirichlet channels only in the absolutely convergent Schatten regime `q sigma>1`. A live mixed multiplicative-additive carrier must therefore retain shifted arithmetic before finite-head cancellation and must obtain its critical continuation/domain from the source rather than by formal trace manipulation.
 
 ## Resolve target-sensitive Nyman data and genuinely nontrivial prime-shift actions
 
@@ -38,4 +42,4 @@ A live continuation must retain the distinguished target or derive a one-sided/r
 
 **Linked intuitions:** `MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary`, `MI-006-second-scale-weil-signal-is-diagnostic-not-generative`, and `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
 
-Deterministic sampling, Poisson bulk, fixed smoothing, and broad natural bands reproduce much ordinary operator behavior. The live target is a microscopic, target-relative, singular, or completed indefinite residual that distinguishes rational primes and whose zero-sensitive bound is derived upstream.
+Deterministic sampling, Poisson bulk, fixed smoothing, broad natural bands, and low-support exponent-lattice pairings reproduce much ordinary operator behavior. The live target is a microscopic, target-relative, singular, additive-coupled, or completed indefinite residual that distinguishes rational primes and whose zero-sensitive bound is derived upstream.

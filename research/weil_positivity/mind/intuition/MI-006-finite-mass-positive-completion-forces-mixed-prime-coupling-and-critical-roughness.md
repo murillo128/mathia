@@ -1,41 +1,41 @@
-# MI-006 — Positive completion forces mixed-prime coupling and critical roughness that local regularization cannot remove
+# MI-006 — Positive completion needs mixed-prime coupling upstream; canonical cells, resultants, and separated determinant lines cannot manufacture it
 
-**Evidence level:** proved for the exact critical prime-torus completion class and the positive spectral/information/transport/Gamma coupling classes covered by WP-096--WP-130
+**Evidence level:** supported through WP-157 by exact critical-completion, resultant-cell, determinant-factorization, and tensor-product calculations together with the earlier positive spectral/information/transport/Gamma coupling results
 
 ## Core intuition
 
-The critical one-prime Weil rays can live inside a finite positive all-prime carrier, but positivity must be paid for with mixed-prime correlations. Those correlations create roughness at both ends of frequency space: compulsory prime axes obstruct broad local positive energies, while positivity forces mixed mass arbitrarily close to zero Kronecker frequency.
+The critical one-prime Weil rays can live inside a positive all-prime carrier only if genuinely mixed-prime information is present. Earlier results showed that local positive completion pays for this with low-frequency mixed mass and divergent critical roughness. The newer results locate an even earlier gate: **mixed-prime geometry must already be present in the source incidence/correspondence before canonical positive or determinant completion**.
 
-The newer results close a broad regularization hope. Damping the Gamma endpoint, allowing singular jump-local positive measures, applying finite-order local differential/Sobolev renormalization, or using canonical subordination does not make the critical coherent prime coupling finite. If scalar warps are made unrestricted enough to force convergence, the choice becomes a programmable tautology rather than source-derived geometry.
+Pairwise resultant data do not acquire the missing coupling by filling cells, taking block resultants, tensoring separated prime factors, or normalizing finite-mass cutoffs. These operations either remain prime-local/flat in mixed directions, factor through pairwise data, become rank-additive, or converge to universal boundary laws. Positive assembly cannot create a selector that the input incidence never contained.
 
 ## Strongest justified principle
 
-WP-096--WP-116 establish the completion boundary: sparse exact positivity needs infinite diagonal mass, mixed-prime coefficients repair positivity but force low-frequency accumulation, standard Fisher/KL/Wasserstein/Sobolev and every nontrivial Markov/Lévy scalar energy diverge at the critical amplitudes, and exact power covariance rules out a scale-free scalar band-pass escape.
+WP-096--WP-151 establish the first completion boundary. Exact sparse positivity needs mixed mass; broad local positive energies diverge at critical amplitudes; Gamma/local regularization does not repair the coherent shell; the all-prime resultant graph has infinite spectator degree; positive diagonal normalization erases every fixed edge; and the remaining normalized mass is exhaustion dependent.
 
-WP-117 supplies a genuine positive archimedean object: the Riemann Gamma digamma variation is a canonical Schoenberg/Markov symbol. WP-118--WP-120 show that scalar, shared-Hilbert, parity, and bounded jump-local matrix couplings retain the coherent divergence.
+WP-152--WP-153 show that the natural shell-size cutoff does not recover hidden arithmetic from that escaped mass. Away from the root the normalized finite-core data collapse, while the root sector converges to a universal boundary layer/two-atom spectral law determined by generic regular-variation bookkeeping rather than prime interaction geometry.
 
-WP-121 removes the endpoint loophole. Any nontrivial bounded positive matrix field on the Gamma jump channels has the same convergence threshold `sigma>1`, even if it vanishes or oscillates near zero: bulk-jump phase averaging on a compact interval away from the endpoint leaves a strictly positive shell energy.
+WP-154 identifies the exact curvature carried by the zero-order resultant. Along one prime axis the chord curvature is positive and recovers the Weil-ray boundary, but mixed-prime rectangles are flat; the natural chord-curvature vector is also non-`ell^2` because spectator primes replicate the same local edge. WP-155 shows that canonical flag/cartesian cell completions cannot repair this: if the mixed curvature is absent in the 1-skeleton incidence, standard positive filling does not create it.
 
-WP-122--WP-130 extend the boundary beyond bounded endpoint-local forms. Singular positive jump-local measures and finite-order local renormalizations do not restore the critical series; every fixed Kronecker band still faces the completion's mass constraints; canonical Gamma subordination/de-subordination does not manufacture a sharper source-selected radial calculus. The remaining freedom in arbitrary conditionally negative-definite warps is too unconstrained to count as a derived arithmetic mechanism.
+WP-156 moves to determinant algebra. Cyclotomic block log-determinants factor through discriminants and pairwise resultants, so larger univariate blocks still contain no irreducible higher-prime interaction. WP-157 closes the separated multivariate/tensor analogue: determinant lines are rank-additive, while product positivity creates generic mixed bulk that disappears again under normalized log determinant. Genuine mixed arithmetic requires coupled equations, correspondences, differentials, metrics, or boundary data that are not separated across prime factors.
 
 ## What remains possible
 
-A surviving positive route must change the architecture **before** the final local positive norm is formed. It must be genuinely nonlocal, frequency-coupled, cohomological/graded with sign forced before squaring, domain-changing, or relative with an independently canonical reference and normalization.
+A surviving positive route must introduce mixed-prime structure **before** squaring, Hodge completion, determinant formation, or finite-mass normalization. The source should force an incidence/correspondence that already has nonzero mixed curvature or another signed higher interaction, ideally coupling finite primes to each other and to the real place.
 
-Any escape must explain simultaneously how it handles the covariance-forced low-frequency mixed mass and the coherent prime-shell bulk response without deleting the exact prime moments by design.
+The route must then prove that this upstream coupling has a canonical domain/topology and survives the earlier critical roughness, spectator, and exhaustion controls. Merely adding higher cells, larger cyclotomic blocks, tensor products, or a natural shell cutoff is no longer a distinct mechanism.
 
 ## Status / novelty
 
-The harmonic analysis, Lévy--Khintchine/Schoenberg theory, Sobolev calculus, and Gamma identities are classical. The synthesis is the source-specific incompatibility between exact critical completion and broad local positive regularization.
+Resultants, discriminants, graph curvature/coboundaries, determinant lines, tensor-product determinant formulas, and finite-volume spectral limits are classical ingredients. The persisted synthesis is the source-ordering principle: **canonical completion preserves or universalizes the interaction already present; it does not manufacture the mixed-prime coupling needed for an arithmetic positive selector**.
 
 ## Falsification criterion
 
-Construct an exact critical positive completion/coupling with finite cost inside one of the covered local or subordinate categories, or derive a canonical nonlocal transformation whose sign and convergence are forced upstream and which survives the prime-shell and near-zero-mass controls.
+Produce nonzero mixed-prime curvature from the canonical pairwise-resultant cell completions covered by WP-155, an irreducible higher interaction in the block/tensor determinant classes of WP-156--WP-157, or a nonuniversal arithmetic root limit contradicting WP-152--WP-153. A source-forced coupled incidence outside those classes would evade rather than falsify the boundary.
 
 ## Lean-formalizable core
 
-- Prime-axis and mixed-frequency mass lower bounds.
-- Bulk-jump phase averaging for PSD matrix fields.
-- Local differential multiplier growth.
-- Subordination/functional-calculus comparison.
-- Separation between source-derived and programmable scalar warps.
+- Prime-axis versus mixed-rectangle resultant curvature.
+- Flatness preservation under canonical cell completion.
+- Block resultant/discriminant factorization.
+- Tensor determinant rank-additivity.
+- Universal finite-mass root boundary limit.

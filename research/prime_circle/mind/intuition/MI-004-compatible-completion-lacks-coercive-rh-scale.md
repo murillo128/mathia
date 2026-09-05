@@ -1,46 +1,39 @@
-# MI-004 — Full refinement covariance rigidifies fixed boundary data to universal or multiplicative-Toeplitz structure
+# MI-004 — Full refinement covariance rigidifies fixed boundary data to universal, classical GCD, or sparse unbounded multiplicative-Toeplitz structure
 
-**Evidence level:** supported by exact/classical completion and refinement-covariance results through PC-174
+**Evidence level:** supported by exact/classical completion and refinement-covariance results through PC-177
 
 ## Core intuition
 
-The compatible Prime-Circle completion preserves exact-order labels and rational characters, but full power refinement is extremely rigid on local and fixed boundary geometry. The rigidity now extends from coefficients and domains to **all fixed distributional multiplication coefficients and all continuous weak first-order forms**.
+The compatible Prime-Circle completion preserves exact-order labels and rational characters, but full power refinement is extremely rigid on fixed boundary geometry. Strong/local/distributional objects collapse to universal scale modes; continuous weak first-order forms become multiplicative Toeplitz after canonical `|D|^(1/2)` normalization; and the newest results show that the obvious ways of inserting arithmetic into that Toeplitz sector either vanish, classicalize, or become unbounded.
 
-The fixed boundary category therefore splits into two classical outcomes. Strong/local/distributional objects collapse to universal scale modes, while the genuinely larger weak form-covariant class becomes multiplicative Toeplitz after the canonical `|D|^(1/2)` normalization. Exact covariance then forbids any nonzero compact/Schatten defect inside that class. A viable arithmetic mechanism must either derive source-specific structure in the remaining noncompact ratio-lattice sector or leave the fixed-form category altogether.
+The fixed boundary category is therefore narrower than “find a prime-dependent Toeplitz symbol.” A viable arithmetic mechanism must derive a **source-forced singular/domain-sensitive sparse operator with its sign and domain**, or leave the fixed refinement-covariant category through shell dependence, cross-level relations, renormalized boundary data, or nonlinear/noncommuting coupling.
 
 ## Strongest justified principle
 
-PC-055--PC-074 establish that the adelic/solenoidal completion retains rational labels while broad commuting calculi fail to produce the desired discrete RH-scale spectrum. PC-165 identifies the compatible radial action as ordinary logarithmic dilation with the classical `-1/2+it` unitary half-density.
+PC-165--PC-174 classify fixed refinement at the coefficient, domain, distributional, and weak-form levels. Logarithmic dilation forces the half-density; local homogeneous coefficients and invariant inverse-square domains are universal; arbitrary fixed first-order covariant distributions lie in `span{|D|delta_1,delta'_1}`; and every continuous weak first-order form is a matrix-valued multiplicative Toeplitz operator on the rational frequency-ratio lattice. No nonzero member of that normalized weak class can be compact or Schatten.
 
-PC-166--PC-168 classify the local coefficient layer: full power-refinement covariance forces regular metrics to flat log-cylinder form and finite-order local coefficients to homogeneous monomials, with inverse-square as the canonical second-order scalar singularity. PC-169--PC-171 then close the fixed-domain/Robin ladder: refinement-compatible inverse-square domains are universal scale-fixed choices or nonexistent, bounded boundary corrections vanish, and strongly covariant fixed self-adjoint first-order operators collapse to four universal parameters.
+PC-175 removes ordinary bounded ratio symbols as an arithmetic escape. A bounded refinement-ratio symbol has zero Euclidean mesh density on ordinary ratio intervals, so no nonzero continuous, smooth, analytic, or Riemann-regular symbol can represent the required refinement data. Any surviving bounded symbol must be arithmetically sparse or singular.
 
-PC-172 treats finitely supported distributional multiplication forms and finds only the universal anchor derivative. PC-173 removes the support hypothesis completely. Every fixed distribution `u` satisfying first-order refinement covariance lies in
-
-`span{|D| delta_1, delta'_1}`.
-
-Reflection kills the odd `delta'` direction, while every nonzero Hermitian member of the two-dimensional family destroys semiboundedness of the canonical bulk-plus-boundary form. Infinite support therefore does not create a fixed prime-sensitive Robin coefficient.
-
-PC-174 closes the natural weak-form compact escape. A continuous Hermitian first-order form on `H^(1/2)` becomes, after the intrinsic `|D|^(1/2)` normalization, a bounded operator `B` satisfying `C_n^* B C_n=B`. Its Fourier matrix depends only on the rational ratio of absolute frequencies and the two orientation signs: it is exactly a matrix-valued multiplicative Toeplitz operator on the Bohr/infinite-polydisc model. If such a normalized operator is compact, then it is zero. Hence exact weak refinement admits no nonzero finite-rank, Hilbert--Schmidt, trace-class, Schatten, or ordinary Fredholm-determinant arithmetic defect.
+PC-176 tests the most natural symmetric valuation-length sparse family and finds the classical GCD operator. Its boundedness threshold is the usual `sigma>1`, while the critical `sigma=1/2` regime is unbounded. PC-177 tests the actual cyclotomic-resultant prime-power ratio data: the raw symbol is likewise unbounded; damping restores boundedness only beyond `sigma>1`, where the operator decomposes into classical one-prime Toeplitz chains with continuous interval spectrum rather than an RH-scale selector.
 
 ## What remains possible
 
-The weak noncompact multiplicative-Toeplitz sector is not proved useless; what is missing is a **source-forced prime-provenance symbol, domain, or sign theorem** that is not already generic ratio-lattice data. Other live categories leave fixed-form covariance more decisively: shell- or level-dependent singular families, genuinely cross-level relations, general renormalized boundary relations mixing trace and normal derivative, nonlinear/noncommuting couplings, or radial--arithmetic interaction before scalar/local reduction.
+The noncompact multiplicative-Toeplitz sector is not proved empty. What remains is a source-forced sparse operator whose natural domain, closure, sign/inertia, or relative spectral invariant survives at the critical arithmetic scaling. Simply damping a prime-power symbol until it becomes bounded moves it into a classical regular regime and is not enough.
 
-Choosing a Toeplitz symbol, inverse-square extension phase, singular anchor coefficient, or moving domain after inspecting the desired arithmetic is additional structure. The source must force the data before the refinement classification is applied.
+Other live categories leave fixed-form covariance altogether: level-dependent singular families, genuinely cross-level incidence, trace/normal-derivative relations, nonlinear/noncommuting radial--arithmetic coupling, or a source-forced renormalized operator topology.
 
 ## Status / novelty
 
-Solenoids, dilation representations, homogeneous operators, inverse-square extensions, Robin/DtN theory, distributions, multiplicative Toeplitz operators, and the Bohr lift are classical. The persisted synthesis is the completion boundary: **full refinement can generate the half-density and a large weak boundary algebra, but fixed covariant data are either universal or classical ratio-lattice structure, and the compact determinant subbranch is empty**.
+Solenoids, homogeneous operators, inverse-square extensions, multiplicative Toeplitz/GCD operators, and the Bohr lift are classical. The persisted synthesis is the refinement boundary: **regular bounded symbols vanish, natural symmetric sparse symbols classicalize, and the raw resultant symbol survives only as an unbounded object unless it is regularized past the arithmetic critical regime**.
 
 ## Falsification criterion
 
-Produce a fixed covariant distribution outside the PC-173 two-dimensional classification, or a nonzero compact normalized weak-covariant form contradicting PC-174. A shell-dependent, cross-level, noncompact source-forced Toeplitz, renormalized-relation, or nonlinear construction would evade rather than falsify the boundary.
+Produce a nonzero regular bounded refinement-ratio symbol contradicting PC-175, a bounded critical valuation/resultant symbol contradicting PC-176/PC-177, or derive a source-canonical singular/domain-sensitive Toeplitz operator whose critical spectral invariant separates rational-prime provenance.
 
 ## Lean-formalizable core
 
-- Radial/solenoidal product and half-density dilation.
-- Homogeneity and inverse-square domain classifications.
-- Arbitrary fixed covariant distribution classification.
 - Weak form normalization to `C_n^*BC_n=B`.
 - Multiplicative Toeplitz Fourier classification.
-- Compact fixed-point vanishing under refinement isometries.
+- Zero mesh-density theorem for regular bounded ratio symbols.
+- Valuation-length reduction to GCD matrices.
+- Prime-power resultant ratio decomposition and boundedness threshold.

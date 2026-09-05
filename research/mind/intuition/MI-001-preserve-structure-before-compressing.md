@@ -1,44 +1,46 @@
-# MI-001 — Preserve discriminating structure, complete controls, and source-accessible assembly before compression
+# MI-001 — Preserve discriminating structure, source-fixed gauge, and composable assembly before canonical compression
 
-**Evidence level:** supported by exact deterministic, analytic, statistical, interaction-kernel, quotient-selection, multiscale-recovery, accessibility, and complete-field reconstruction theorems
+**Evidence level:** supported by exact deterministic, analytic, statistical, interaction-kernel, quotient-selection, multiscale-recovery, factorization-gauge, operator-limit, and source-dynamics results across the current Mathia corpus
 
 ## Core intuition
 
-Across Mathia, the recurring failure is applying a transformation whose induced indistinguishability relation already identifies states or models that the later arithmetic claim needs to distinguish. The current evidence adds two sharper warnings. Exact agreement on finite or complete rendered data can be informationally redundant, while exact recovery can remain possible with radically nonuniform cost across retained states and scales.
+Across Mathia, the recurring failure is applying a transformation whose induced indistinguishability relation already identifies states, interactions, or models that the later arithmetic claim needs to distinguish. The newest evidence sharpens this beyond ordinary information loss: a representation may also retain the target only through an arbitrary **gauge**, a witness-relative quotient that does not compose, a noncanonical exhaustion/domain, or a universal completion that cannot manufacture missing mixed interaction.
 
-A useful pipeline must therefore audit the **complete retained relation, strongest matched control, information-loss map, fiberwise accessibility/regularity budget, and global assembly topology** before optimization, spectralization, positivity, or completion. More views or more accurate finite reconstructions do not help if they factor through the same sufficient statistic or require an uncontrolled limiting decoder.
+A useful pipeline must therefore derive the **source-fixed category and gauge**, compute the complete retained relation and strongest matched control, quantify recovery/conditioning in the actual downstream witness class, and prove a canonical non-escaping assembly before optimization, spectralization, positivity, determinant formation, or completion. New arithmetic structure has to enter upstream of the stage that would otherwise quotient or universalize it.
 
 ## Strongest current principle
 
-Arithmetic Fidelity supplies the abstract hierarchy. Closed spans, generated sigma-fields, multiplicative closure, and source-dependent fusion spans define different retained relations; Friedrichs angles and accessibility norms separate injectivity from stable/global recovery. AF-117--AF-125 add the multiscale endpoint: finite entropy governs bounded exact description, information dimension sees only the linear innovation slope, and regular recovery is controlled by a fiberwise resolution-depth/entropy budget. A worst-case modulus can be too strong, but merely measurable recovery can evade the profile order entirely.
+Arithmetic Fidelity makes the recovery side explicit. AF-126--AF-133 show that approximate fidelity is witness-relative: unrestricted decisions give Le Cam deficiency, restricted witnesses induce an observational quotient, and metric-local witnesses give Wasserstein recovery. Stagewise small defects do not compose unless recovery maps transport the witness quotient with controlled regularity/naturality. Thus even an apparently faithful multistage pipeline can create information by moving a previously invisible residual into a visible direction.
 
-Analytic Frontier supplies the complete-control analogue. Finite-real scalar stability is not certified by an obvious stochastic null; after the diffraction body is understood, conjugation geometry adds a genuinely stronger control layer. ANF-041--ANF-043 now localize the last five-point scalar issue to bounded interior heights, showing how an apparent asymptotic escape can disappear once the complete destination geometry is used.
+Möbius Cancellation supplies the gauge analogue. MC-073--MC-081 show that exact Dirichlet factorization/recovery has a large convolution-unit torsor: the full coupled recovery is the target identity itself, locally finite multiplicative splits rigidify to prime partitions, and regular analytic factorizations conserve the total Selberg--Delange resonance budget. Refactoring the inverse does not distribute the hard cancellation unless the source independently selects the gauge and leaves a non-tautological coupled residual.
 
-Visual Exploration gives the cleanest exact post-processing example. VIS-033 proves that the complete xi zero divisor, reflection symmetry, and one normalization determine the entire xi field. Complete domain coloring, modulus/phase portraits, critical-line traces, derivatives, and critical points are therefore one information channel despite looking unrelated. Useful visual independence must come from deliberately different losses or conditioning, not rendering diversity.
+Prime Circle, Prime Flute, and Weil Positivity sharpen the operator/completion gate. PC-175--PC-177 squeeze fixed refinement-covariant Toeplitz data between zero-density regular symbols, classical GCD operators, and sparse unbounded resultant symbols. PF-168 upgrades prime/composite tail indistinguishability to generalized norm-resolvent equivalence, so bounded tail spectral filters cannot amplify the vanishing coordinate defect. WP-154--WP-157 show that canonical cell completion, larger resultants, and separated determinant/tensor constructions cannot create mixed-prime curvature absent from the source incidence.
 
-Prime Circle, Prime Flute, Weil Positivity, and Xi Flow provide assembly versions of the same gate. Fixed refinement-covariant boundary data classicalize to universal or multiplicative-Toeplitz structure; complete prime-flute marked tails can transfer to prime-blind controls; normalized resultant mass can depend on exhaustion even after all fixed matrix coefficients vanish; and static Xi near-lattice rigidity need not recover the microscopic flux norm required dynamically.
+Prime Lattice identifies a concrete missing variable. PL-168 classicalizes low-support multiplicative exponent-lattice correlations, while PL-169 shows that the first ratios one-swap correction imports additive shifted correlations not contained in that quotient. Yet PL-170--PL-171 show that simply adjoining affine actions still classicalizes at finite-head or absolute-convergence trace boundaries. The missing relation must be retained in a category whose analytic continuation/domain is source-forced.
+
+The control/source distinction remains equally important. Analytic Frontier compresses the last scalar five-point search to a compact balanced anti-phase coherence tube; Visual Exploration shows that CA/Pearson/LRT/CMI variants can be the same residual channel to low order; Weil Inertia uses actual zeta mean-value structure to close sublinear support-edge families that generic pointwise controls could not; and Xi Flow localizes the dynamic gap to near-buffer forcing and a memory-scale slow mode after universal Cauchy smoothing kills short-period and remote-tail obstructions.
 
 ## Consequence for synthesis
 
-The correct order is
+The robust order is:
 
-`derive admissible source/destination category -> compute the complete retained relation and controls -> quantify fiberwise conditioning/information loss -> prove canonical non-escaping assembly -> only then optimize, spectralize, complete, or prove positivity`.
+`derive source-fixed category/gauge -> identify the complete retained quotient and matched controls -> quantify witness-relative recovery and transport -> introduce any missing interaction upstream -> prove canonical domain/topology/assembly -> only then optimize, spectralize, complete, or impose positivity`.
 
-A positive construction must identify a residual outside the strongest admissible control family and show that the source forces access to that residual in the exact category consumed downstream. A deterministic re-rendering, finite exact interpolation, high-probability approximation, or moving cutoff is not independent leverage unless its lost information and limiting budget are explicit.
+A proposed bridge should fail fast if its decisive relation is absent before a canonical completion, if its factorization has un-fixed gauge freedom, if its recovery errors are not composable in the downstream witness class, or if its apparent amplification disappears under the natural operator topology. Conversely, a genuinely new variable such as additive shifted correlation is valuable only after a source-canonical analytic carrier for it is established.
 
 ## Status / novelty
 
-The component closed-span, fusion-frame, entropy/profile, accessibility, diffraction, Hadamard, boundary-operator, graph-limit, and localization results use classical ingredients and persisted findings. Their synthesis as a complete-control-plus-source-accessibility gate is supported rather than a universal theorem for every nonlinear category.
+The component notions — statistical deficiency, quotient seminorms, Dirichlet convolution, Toeplitz/GCD operators, norm-resolvent convergence, determinant/resultant identities, affine semigroups, Cauchy relaxation, and classical pair-correlation controls — are largely classical. The persisted synthesis is program-level: **arithmetic leverage survives only when the source fixes the relation, gauge, and assembly before canonical processing can erase, universalize, or arbitrarily redistribute it**.
 
 ## Falsification criterion
 
-Find a pipeline where the target varies inside the complete admissible control/fiber, no later stage receives new information, yet a stable target theorem follows; or a covered recovery/assembly category whose stated quantitative budget fails while a uniformly source-forced decoder or limit still exists in the same category.
+Find a covered pipeline in which the target varies inside the complete retained quotient or gauge orbit, no later stage receives new source information, yet a stable target theorem follows; or a multistage recovery whose witness quotient is not transported naturally but whose error still composes uniformly under the stated hypotheses. A construction that introduces an independently source-forced new interaction before compression would evade rather than falsify the principle.
 
 ## Lean-formalizable core
 
-- Fiberwise factorization and post-processing monotonicity.
-- Interaction-support and complete-control kernels.
-- Fiberwise resolution-depth entropy bounds.
-- Finite interpolation versus bounded accessibility.
-- Complete divisor to xi-field uniqueness.
-- Canonical versus exhaustion-dependent assembly.
+- Quotient/post-processing monotonicity and witness-induced pseudometrics.
+- Composition obstruction from non-natural quotient transport.
+- Dirichlet factorization torsor and exact-recovery identity.
+- Fixed/refined operator-class vanishing or classicalization lemmas.
+- Norm-resolvent stability of bounded functional calculus.
+- Preservation of flat mixed curvature under canonical cell completion.

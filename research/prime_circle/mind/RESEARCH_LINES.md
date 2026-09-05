@@ -20,15 +20,15 @@ Short-chord models recover strong average/Mertens top-band information while ope
 
 Finite networks, standard cyclic spectralizations, the complete-lift Bloch pencil, one-hole defect spectra, harmonic response, Kron determinants, and Feshbach families now classicalize. A live carrier must be all-shell, growing-base, genuinely multi-hole, singular/domain-changing, or nonlinear/noncommuting before fixed-base elimination.
 
-## Leave the fixed refinement-covariant boundary category, or derive arithmetic inside its noncompact multiplicative-Toeplitz sector
+## Derive a critical singular/domain-sensitive arithmetic operator, or leave the fixed refinement-covariant boundary category
 
 **Linked intuitions:** `MI-004-compatible-completion-lacks-coercive-rh-scale`.
 
-PC-165--PC-171 classify full refinement at the coefficient, domain, and strong boundary-operator levels: logarithmic dilation forces the half-density and homogeneous local coefficients; refinement-compatible inverse-square domains are universal scale fixed points or nonexistent; bounded Robin corrections vanish; and strongly covariant fixed self-adjoint first-order operators collapse to four universal circle parameters.
+PC-165--PC-174 classify fixed refinement-covariant coefficients, domains, distributions, and weak forms: the strong/local layers are universal, while the largest continuous weak first-order class is multiplicative Toeplitz after canonical normalization and has no nonzero compact/Schatten member.
 
-PC-172--PC-173 close fixed distributional multiplication coefficients without a support loophole. Every arbitrary distribution with exact first-order covariance lies in `span{|D|delta_1,delta'_1}`; reflection leaves only the classical even DtN singularity, and nonzero Hermitian members are not semibounded bulk repairs.
+PC-175--PC-177 now squeeze the residual Toeplitz branch. Ordinary bounded ratio symbols have zero Euclidean mesh density and therefore cannot be nonzero regular functions. Symmetric valuation-length symbols are classical GCD operators, bounded only for `sigma>1`; the actual cyclotomic-resultant prime-power ratio symbol is arithmetically sparse but unbounded, and damping it to boundedness again requires `sigma>1`, where it decomposes into classical one-prime Toeplitz chains with continuous interval spectrum.
 
-PC-174 classifies the genuinely larger weak continuous first-order form relation. After `|D|^(1/2)` normalization it is exactly a matrix-valued multiplicative Toeplitz class on the rational frequency-ratio lattice, and every compact/Schatten member is zero. The remaining weak branch is therefore noncompact and classicalized at the carrier level. A useful theorem must derive a prime-provenance Toeplitz symbol and an independent domain/sign statement from old/new root incidence, or leave fixed forms through shell/level dependence, cross-level relations, renormalized trace/normal-derivative boundary data, or nonlinear/noncommuting radial--arithmetic coupling.
+The live fixed-category question is thus not merely to choose another symbol. One must derive from prime incidence a singular or unbounded operator together with its natural domain, closure and sign/relative spectral datum at critical scaling. Otherwise leave fixed forms through shell/level dependence, cross-level relations, renormalized trace/normal-derivative boundary data, or nonlinear/noncommuting radial--arithmetic coupling.
 
 ## Cross the Hardy boundary before the one-new-prime corrector becomes universal
 

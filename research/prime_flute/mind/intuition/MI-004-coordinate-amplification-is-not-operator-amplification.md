@@ -1,38 +1,40 @@
-# MI-004 — The composite clone now matches the entire marked tail; only collective nonlocal assembly can still separate it
+# MI-004 — The composite clone matches marked tails and tail Laplacians; only genuinely global nonlocal assembly can still separate it
 
-**Evidence level:** supported; compact relative resolvent and complete marked-tail asymptotic length equivalence are proved, while decisive global trace-class/wave closure and nonlocal value comparison remain open
+**Evidence level:** supported through PF-168; complete marked-tail asymptotic length equivalence and generalized norm-resolvent equivalence of matched Dirichlet tails are proved, while decisive global trace-ideal/scattering separation remains open
 
 ## Core intuition
 
-The exact prime flute and the all-composite shift clone `q_n=p_n+1` are now indistinguishable in a stronger sense than coordinate closeness. The prime/clone marking is asymptotically bilipschitz on the complete tail, so **every marked hyperbolic class carried far enough out has asymptotically the same length**, regardless of word complexity or how many pants it crosses.
+The exact prime flute and the all-composite shift clone `q_n=p_n+1` are now indistinguishable not only in tail coordinates and marked lengths but also at the level of the natural tail Dirichlet Laplacian. The asymptotically bilipschitz marking makes every bounded `C_0` spectral filter on farther-out matched tails asymptotically identical in operator norm.
 
-A surviving spectral mechanism cannot therefore hide in a clever choice of individual tail geodesics. It must exploit a genuinely collective infinite assembly — multiplicity, interference, a relative operator ideal, scattering/resonance phase, or another nonlocal value whose accumulation is not controlled by uniform pointwise length closeness.
+A surviving spectral mechanism therefore cannot be obtained by amplifying ever smaller tail coordinate defects through a fixed bounded spectral observable. It must retain **global head--tail assembly, infinite multiplicity/interference, a stronger operator ideal, wave/scattering data, or another nonlocal invariant** not controlled by norm-resolvent equivalence after a moving Dirichlet cut.
 
 ## Strongest justified principle
 
-PF-121--PF-125 provide the operator/geometric baseline: a globally coherent asymptotically bilipschitz marking and compact first relative resolvent, hence equality of essential spectra. PF-126--PF-155 remove several local escape routes: the relevant body/cusp/collar budgets are summable, local squared-resolvent differences reach trace class, the first relative resolvent has the sharp `S_2` boundary, local heat coefficients are constant-curvature area data, and natural determinant/regularization changes do not manufacture a new zero divisor.
+PF-121--PF-125 provide the operator/geometric baseline: a globally coherent asymptotically bilipschitz marking and compact first relative resolvent, hence equality of essential spectra. PF-126--PF-165 remove local heat, determinant, reference, cusp, and separator escape routes and isolate the sharp local/global assembly issue.
 
-PF-166 upgrades the marked-length control. On the tail after pant `N`, the global marking has bilipschitz constant `K_N -> 1`; because curve length adds across pants, errors do not multiply with word length. Consequently the complete marked tail translation-length function of the prime flute is uniformly asymptotic to that of the exact all-composite clone, even for primitive self-intersecting words crossing arbitrarily many pants.
+PF-166 upgrades the geometric matched control. On the tail after pant `N`, the marking has bilipschitz constant `K_N->1`, so every marked translation length on the complete escaping tail is uniformly asymptotic between the prime flute and exact composite clone, regardless of word complexity. PF-167 shows that even the positive primitive-length accumulation interval and finite-length primitive-count explosion transfer to the clone.
 
-This kills right-limit or individual-orbit proposals based only on increasingly complicated marked lengths. It does **not** imply convergence of a full relative Selberg/Ruelle product: infinitely many individually vanishing orbit defects may still accumulate, and PF-158 already shows this distinction in a controlled separator sector.
+PF-168 upgrades the operator matched control. After imposing matched Dirichlet boundaries farther and farther out, the two tail Laplacians are generalized norm-resolvent equivalent with error tending to zero with the bilipschitz defect. Consequently every fixed bounded spectral filter `phi(Delta)` with `phi in C_0([0,infinity))`, including positive-time heat operators, becomes asymptotically composite-blind on the tail.
+
+This does not settle global Schatten, wave, scattering, or resonance comparisons. A norm-small infinite-rank difference need not be trace class, and the moving Dirichlet cut deliberately discards the global head--tail interaction that a scattering invariant can retain. That distinction is now the precise operator frontier.
 
 ## What remains possible
 
-The decisive technical gate remains global assembly. One route is to globalize the local square-resolvent trace-class estimates or the compatible metric/interface criterion; another is to show that orbit multiplicity defeats every such ideal estimate.
+The decisive route is to prove or refute a global assembly theorem. One direction is to upgrade local squared-resolvent `S_1` budgets plus the global metric comparison to a full trace-ideal/spectral-shift/wave statement. The opposite direction is to show that infinite orbit or spectral multiplicity accumulates the individually vanishing defects into a canonical reference-stable value separating the clone.
 
-If a relative scattering/spectral-shift/resonance object exists, its mere existence is not arithmetic evidence. The value must distinguish the exact composite clone and be stable under the admissible compact/reference changes isolated by PF-162--PF-165.
+Any proposed full-surface invariant must be tested directly against the exact composite clone. Tail eigenvalues, heat traces after moving Dirichlet cuts, individual primitive lengths, or any fixed bounded tail functional calculus are already below the discrimination threshold.
 
 ## Status / novelty
 
-The bilipschitz-to-length implication and asymptotic length-spectrum language are classical. The project-specific content is the exact composite matched control and its uniformity over the whole tail. The synthesis is a narrowed boundary, not an isospectrality or RH theorem.
+Bilipschitz spectral stability, generalized norm-resolvent convergence, functional calculus, and marked-length comparison are classical. The project-specific content is the exact prime/composite matched control. The synthesis is a narrowed boundary: **tail coordinate amplification, orbit complexity, and bounded tail spectral amplification all fail; only global nonlocal assembly can still carry primality specificity**.
 
 ## Falsification criterion
 
-Produce a canonical full-surface invariant that separates the prime flute from the clone while remaining stable under admissible reference changes, or prove that the global prime/clone comparison is strong enough to identify that entire nonlocal invariant. An individual marked tail length, no matter how complicated the word, cannot serve as the separator.
+Produce a fixed bounded tail spectral filter whose matched prime/clone operator difference does not tend to zero under PF-168, or a marked tail class violating PF-166. A canonical global scattering/trace-ideal invariant separating the clone would evade rather than falsify the local/tail boundary.
 
 ## Lean-formalizable core
 
-- Tail supremum of pantwise bilipschitz constants.
-- Marked geodesic length comparison under a global bilipschitz map.
-- Separation between uniform orbitwise error and summability over infinitely many orbits.
-- Schatten/functional-calculus implications already isolated by the line.
+- Tail bilipschitz-to-form comparison.
+- Generalized norm-resolvent convergence under vanishing metric distortion.
+- `C_0` functional-calculus stability.
+- Separation between operator-norm smallness and Schatten/global assembly.

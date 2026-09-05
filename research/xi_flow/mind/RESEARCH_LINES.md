@@ -2,32 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable Xi-flow intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Derive the borderline `V_M=O(1/M)` flux budget from localized Xi dynamics
-
-**Linked intuitions:** `MI-001-collision-safe-coordinates-separate-singularity-from-source-information` and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
-
-XF-032--XF-037 identify geometric gap ramps as universal finite-range null modes and show that, conditional on `M V_M=O(1)`, translated super-mesoscopic Xi counting forces uniform gap flattening and vanishing total logarithmic gap variation. XF-038 then upgrades that static rigidity to the long-range operator: on memory-scale sub-buffers the complete cross-ratio conductance form becomes asymptotically the arithmetic-lattice Cauchy form.
-
-XF-039 proves the converse fails. Translated span laws, uniform flattening, `D_M=o(1)`, and Cauchy-network recovery can all coexist with an alternating microscopic corrugation for which `M V_M->infinity`. Thus the live resource is genuinely microscopic flux variation, not another static near-lattice norm.
-
-XF-040 shows that the simplest dynamic version of this obstruction is not persistent: an exact global two-gap-periodic backward-heat family damps the alternating amplitude at the microscopic rate `~log^2 T` and reaches the inverse-buffer flux threshold in vanishing heat time. A decisive theorem must localize that damping in a finite Xi window and bound replenishment by exterior forcing, modulation, and boundary transport. A decisive negative must produce a slower or externally sustained source-compatible mode rather than another static alternating block.
-
-## Convert source-rigid Cauchy geometry into a signed tapered derivative
-
-**Linked intuitions:** `MI-001-collision-safe-coordinates-separate-singularity-from-source-information`, `MI-002-scale-free-gap-dynamics-still-need-an-xi-specific-law`, and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
-
-Under the borderline flux budget, XF-036--XF-038 leave a uniformly lattice-like gap block and a Cauchy-rigid long-range conductance form on the mesoscopic carrier. A positive continuation must combine this with XF-028 collision-positive overlap and the exact nonlinear taper product rule to obtain a height-uniform favorable sign or coercive heat-time budget.
-
-The remaining difficulty is operator/sign alignment rather than geometric deformation of `L_w`. Pointwise operator values can still cancel even when quadratic forms converge, and the tapered cross-product must be controlled in the actual finite-window dynamics.
-
-## Add a nonlocal/source-sensitive observable only if localized dynamics cannot control the flux budget
+## Derive source-specific control of near-buffer forcing and the memory-scale slow Cauchy mode
 
 **Linked intuitions:** `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
 
-XF-033 closes the idea that increasing a fixed local block size repairs the affine log-gap blind mode, while XF-039 closes static recovery of flux variation from stronger span/Cauchy rigidity. If the localized `L_lambda`/`L_w` dynamics cannot deliver `V_M=O(1/M)`, any added observable must break finite-range locality, translation-invariant sliding, or common-scale invariance for a source-justified reason and still retain the `log^2 T` dynamical scale.
+XF-036--XF-040 show that translated Xi counting plus the borderline flux budget forces strong static lattice/Cauchy rigidity, that static rigidity does not imply the budget, and that the simplest exact periodic microscopic obstruction is dynamically damped in vanishing heat time.
 
-## Match analytic-frontier inputs to the mesoscopic carrier
+XF-041--XF-045 now turn this into a localized dynamic frontier. Bounded-contrast periodic gap controls have a nonlinear Cauchy spectral gap; arbitrary finite windows satisfy an input-to-state shape inequality driven only by centered exterior mismatch; super-mesoscopic buffering suppresses remote replenishment, with the sharp centered estimate quadratic in core-span/buffer ratio. Thus short-period microstructure and the far exterior cannot sustain the missing order-one shape obstruction.
+
+The remaining obstruction is at the actual memory scale `q~log^2 T`: XF-044 proves that the slow Cauchy mode has only order-one decay rate there, so fixed heat time cannot by universal smoothing alone produce the vanishing/logarithmic precision needed for `M V_M=O(1)`. A decisive theorem must use **source-specific near-buffer cancellation, modulation/transport, or stronger translated-counting information** to control that slow mode. A decisive negative must build a source-compatible near-buffer forcing that survives these localized controls.
+
+## Convert source-rigid Cauchy geometry into signed tapered derivative control
+
+**Linked intuitions:** `MI-001-collision-safe-coordinates-preserve-the-bulk-signal`, `MI-002-scale-free-gap-dynamics-need-xi-specific-law`, and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
+
+Once the memory-scale flux budget is obtained from the source rather than assumed, XF-038 gives asymptotic Cauchy conductances on the full active sub-buffer and the earlier collision-positive overlap/taper calculus becomes available. The next bridge must convert that source-rigid long-range geometry into the signed fixed-time coercive estimate needed by the zero-side argument without reintroducing a finite-jet or periodic surrogate.
+
+## Add a new nonlocal observable only if localized Xi dynamics cannot control the flux budget
 
 **Linked intuitions:** `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
 
-Any imported zero-statistics theorem must retain width `~log^2 T`, the relevant reciprocal-gap/conductance or flux-variation norm, translated-span information, and enough precision to interact with the `1/M` borderline resource. Fixed finite ordered-gap improvements are insufficient by themselves.
+The current obstruction has been localized to near-buffer forcing and the memory-scale slow mode. A new observable is justified only if this source-level dynamical question fails or proves structurally insufficient; adding more static near-lattice summaries would not address the missing norm.
+
+## Match analytic-frontier input to the mesoscopic carrier without collapsing its horizontal information
+
+**Linked intuitions:** `MI-001-collision-safe-coordinates-preserve-the-bulk-signal` and `MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet`.
+
+Any handoff from zero-side scalar/coherence information must survive the `log^2 T` memory window, collision-safe normalization, and long-range Cauchy coupling used by Xi flow. A local or fixed-scale certificate that disappears under this mesoscopic assembly is not a usable source term.

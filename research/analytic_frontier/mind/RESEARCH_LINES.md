@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Resolve the compact-height two-pair five-point coherence gate
+## Resolve the compact anti-phase two-pair five-point coherence tube
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`, and `MI-004-complete-scalar-control-is-diffraction-realizability`.
 
-ANF-034 gives an explicit support-one central-notch ray that beats the complete finite-real Montgomery--Taylor stability ratio. ANF-035--ANF-041 remove all conjugation-invariant configurations through four points, classify one conjugate pair plus three real anchors at every height, and close the local two-pair boundary: `m_5(J)>=0` is the exact small-height cardinality-five criterion.
+ANF-034--ANF-043 reduce complete scalar cardinality-five stability to the two-pair defect under the exact local gate `m_5(J)>=0`, with a sharp self-energy floor and compact positive height window. ANF-044--ANF-051 now eliminate the remaining generic escape directions: large horizontal separation is positive on interior-height slabs, common translation reduces to a Hilbert coherence gap, amplitude variation and finite bandwidth give safe regions, negative defects require balanced heights, and the final unequal-height danger is confined to a near-anti-phase tube.
 
-ANF-042 gives the exact two-pair pointwise defect and its sharp self-energy floor, while ANF-043 proves uniform height coercivity. For every spectrum with `m_5>=0`, any negative two-pair defect must have both conjugate heights inside a compact interior interval. The remaining scalar question is therefore the bounded-height cross-frequency coherence problem, including the common horizontal phase/separation and affine/multiplicity slack. A decisive result is either an all-configuration theorem on this compact-height region or an explicit finite-height two-pair witness for the central-notch separator or another admissible spectrum.
+ANF-052 adds a perturbative asymmetry favorable to the central-notch separator: on bounded heights the notch changes the five-point defect only cubically, while the useful pair-functional gain appears at lower order. The live scalar question is therefore the minimum over the compact balanced-height, finite-separation, near-anti-phase tube, with the common frequency integration and affine/multiplicity slack retained. A decisive result is either a uniform nonnegativity theorem there or one explicit admissible finite witness.
 
 ## Use unconditional out-of-band information only through a genuinely different zero-side carrier
 
