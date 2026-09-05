@@ -14,6 +14,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-085-low-frequency-annular-coupling-resolution-equivalence.md
   - research/mobius_cancellation/findings/MC-086-initial-reciprocal-slab-resolution-equivalence.md
   - research/mobius_cancellation/findings/MC-087-sparse-annular-omission-reconstruction-barrier.md
+  - research/mobius_cancellation/findings/MC-088-common-prime-supercritical-omission-scale-reduction.md
   - research/prime_lattice/findings/PL-172-hilbert-schmidt-affine-liouville-chowla-trace-removal.md
 ---
 
@@ -41,7 +42,7 @@ Then write the complete recurrence with exceptional ranges, truncation errors, a
 
 ## Evidence boundary
 
-No source-forced nonconstant statistic with an independently available power estimate is established here. Parity sensitivity alone proves no cancellation, and failure of one annular statistic would not rule out all bilinear or sieve methods. This question does not reopen the accepted local mean-absolute-transfer clue as a duplicate.
+No source-forced nonconstant retained statistic with an independently available sub-old-exponent estimate is established here. Parity sensitivity alone proves no cancellation, and failure of one annular statistic would not rule out all bilinear or sieve methods. This question does not reopen the accepted local mean-absolute-transfer clue as a duplicate.
 
 ## Research disposition
 
@@ -55,4 +56,6 @@ Accepted in further narrowed form. `MC-083` performs the first calibration: the 
 
 `MC-087` removes the initial-slab restriction for physical-space support selection. For an arbitrary omitted subset `E_N` of annular pairs, boundedness of the exact sawtooth gives `|T_N(E_N)|<=#E_N/2`; whenever `#E_N=O(N^(2 beta))`, the retained annulus plus the exact coarse counterterms is again equivalent to `M(x)=O(x^beta)`. Thus a selective or noninitial slab mask is not a weaker carrier merely because its omitted support is small enough to restore absolutely at the target scale.
 
-The unresolved question is now narrower than finding a proper or selective source-natural truncation. A physical-space survivor must omit **supercritical pair mass** and obtain genuinely arithmetic signed control of that complement, or estimate retained and omitted contributions jointly before absolute values. A Fourier or other weighted survivor must likewise control a genuinely information-losing coefficient complement rather than reconstruct the full residual at target resolution. A genuinely bilinear/joint coupling that avoids exact target recovery remains open. Any survivor must still close the full `MC-027` iteration and scale-coverage ledger.
+`MC-088` crosses that support-only boundary with a concrete arithmetic split. On the exact prime-power family `N=p^(L+1)`, omitting annular pairs for which both coordinates are divisible by `p` removes `N^(2L/(L+1)+o(1))` pairs, which is supercritical at RH resolution for every fixed `L>=2`. Yet finite Euler-factor deletion plus the arbitrary-cutoff Huxley--Watt identity reduce the entire signed omitted contribution to ordinary `M` and `H` values at horizons at most `N^(2L/(L+1))`. Under a prior exponent `beta`, the complement is therefore `O(N^(2 beta L/(L+1)))`, a strict power improvement. If the complementary retained statistic had an independent `O(N^(2 alpha))` estimate with `1/2<alpha<beta`, the next square scale would improve to `max(alpha,beta L/(L+1))<beta` before the separate scale-coverage step.
+
+The unresolved question is therefore sharper than obtaining arithmetic control of any supercritical omitted mass: `MC-088` supplies such a complement. The missing theorem is now an **independent sub-old-exponent estimate for the retained source-coupled statistic** (or a joint estimate that is quantitatively equivalent to one) without importing the inverse-zeta/Mertens target. A useful variant may change the arithmetic projection, combine several prime/gcd layers before absolute values, or use a genuinely bilinear/frequency coupling, but it must preserve the strict complement margin and close the full `MC-027` iteration plus scale-coverage ledger.
