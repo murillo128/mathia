@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-four-point-weighted-cover-assembly
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_inertia
 based_on:
@@ -36,3 +36,7 @@ First test a finite two-length family against arbitrary nonnegative pair weights
 ## Evidence boundary
 
 No better constant or global optimality theorem is claimed. Failure of a two-length test would not prove optimality over all covers. The external local certificate, finite assembly, analytic limit, and numerical evaluation remain separate obligations; this clue does not revive the resolved Schur-cancellation route.
+
+## Research disposition
+
+The first, post-collapse two-length branch is closed exactly by [[research/weil_inertia/findings/WI-165-positive-mixtures-of-fixed-block-bounds-cannot-beat-best-constituent.md]]: any fixed geometry-independent nonnegative combination of already-scalarized block inequalities is a convex combination of the constituent ratios and cannot beat the best constituent. The clue remains active because this obstruction does not cover placement or weighting chosen before scalar collapse. The surviving question is whether a geometry-aware positive cover can exploit complementary local Gram entries or span information while proving a new universal domination inequality that is not merely a positive sum of separately averaged block bounds.
