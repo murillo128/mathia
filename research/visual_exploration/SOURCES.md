@@ -88,3 +88,7 @@ This file records durable external literature dependencies used to support or de
 ## Euler-totient Riesz means
 
 - Shōta Inoue and Isao Kiuchi, **Riesz means of the Euler totient function**, *Functiones et Approximatio Commentarii Mathematici* 60:1 (2019), 31–40. DOI: `10.7169/facm/1650`. Role: explicit prior-art anchor showing that Riesz means built from Euler-totient arithmetic are an established analytic-number-theory object; bounds novelty for the Riesz interpretation in `VIS-030`. `VIS-030` derives its exact normalized-totient identities independently and does not import an error estimate or RH-equivalence statement from this source.
+
+## Global xi Hadamard factorization and divisor uniqueness
+
+- **Encyclopedia of Mathematics**, **Riemann xi-function**, https://encyclopediaofmath.org/wiki/Riemann_xi-function. Role: authoritative compact reference for the classical facts used in `VIS-033`: the Riemann `xi` function is entire of order one, satisfies `xi(s)=xi(1-s)`, and admits a Hadamard canonical product over its zeros. The uniqueness step in `VIS-033` is the elementary quotient consequence of this finite-order factorization plus reflection symmetry; no new Hadamard theorem is claimed. The entry cites the standard monographs H. M. Edwards, *Riemann's Zeta Function* (1974), and E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function* (2nd ed., 1986).
