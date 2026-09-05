@@ -1,6 +1,6 @@
 ---
 name: mathia-formalization-executor
-description: Execute one approved Mathia Lean formalization issue autonomously through adversarial Gate 0, proof engineering, Lean validation, fresh technical review, post-approval fertility review, and direct-main publication.
+description: Execute one approved Mathia Lean formalization issue autonomously through adversarial Gate 0, proof engineering, Lean validation, fresh technical review, iterative post-approval fertility review, and direct-main publication.
 ---
 
 # Mathia Lean Formalization Executor
@@ -178,9 +178,20 @@ When one formalization spans multiple modules, every principal/public module sho
 
 ## Formalization is an observation surface during execution
 
-During statement reconstruction, proof search, and debugging, notice mathematics rather than syntax. Material observations can include missing/unnecessary hypotheses, counterexamples, degenerate cases, stronger/weaker boundaries, hidden conventions, alternate invariants, normal forms, quotients, kernels/ranges, or genuinely different exact proof routes.
+During statement reconstruction, proof search, and debugging, notice mathematics rather than syntax. Material observations can include missing/unnecessary hypotheses, counterexamples, degenerate cases, stronger/weaker boundaries, hidden conventions, alternate invariants, normal forms, quotients, kernels/ranges, factorizations, source bridges, abstraction choices, or genuinely different exact proof routes.
 
-Do not let such observations disappear. Correctness challenges use the adversarial route above. Non-blocking observations may be retained as input context, but **the executor itself does not decide or write research clues**. Clue extraction belongs to the final independent fertility subagent after technical approval.
+Do not let such observations disappear. Correctness challenges use the adversarial route above. The executor itself does not decide or write research clues, but it must maintain a **compact ephemeral fertility handoff** for the later fresh reviewer.
+
+The handoff contains only explicit audit surfaces, never hidden chain-of-thought or conclusions to trust. Record as applicable:
+
+- the mathematical representation/reduction actually chosen for Lean;
+- source-side structure deliberately abstracted away or left as hypotheses;
+- hypotheses found unused or materially one-sided;
+- helper objects, decompositions, flags, quotients, kernels/ranges, factorizations, normal forms, or degenerate branches exposed during implementation;
+- alternative exact representations encountered during proof engineering;
+- concise non-blocking observations whose mathematical surface would otherwise be lost when a fresh subagent starts.
+
+This handoff is ephemeral process state only. Do not commit it, do not place it in the Lean file merely to preserve workflow state, and do not formulate it as proposed clues. The fertility reviewer must independently verify every item against the frozen Lean artifact and authoritative mathematics.
 
 ## Lean validation
 
@@ -223,18 +234,16 @@ This subagent must load:
 .agents/skills/mathia-research-clues/SKILL.md
 ```
 
-It must not inherit hidden reasoning from the executor, Gate reviewer, or final technical reviewer.
+It must not inherit hidden reasoning from the executor, Gate reviewer, or final technical reviewer. Pass the compact ephemeral fertility handoff only as **untrusted audit leads**; the reviewer must reconstruct them independently.
 
-Its task is not to approve the theorem again. It independently asks what the now-certified Lean formalization exposed that the finding did not preserve as first-class mathematics, including **unused formal structure and subproducts**.
+Its task is not to approve the theorem again. It must execute the fertility skill's complete procedure, including:
 
-In particular, it must inspect mathematically nontrivial definitions, equivalences, quotients, groups/subgroups, kernels/ranges, normal forms, factorizations, orbit spaces, order structures, and auxiliary invariants, and ask:
+1. a **formal-internal discovery pass** over nontrivial Lean objects, helpers, decompositions, quotients, normal forms, filtrations/flags, factorizations, and unused hypotheses;
+2. a separate **source-to-formal information-loss pass** reconstructing what mathematical relations were discarded before the theorem became the chosen Lean abstraction;
+3. bounded one-hop inspection of directly relevant upstream/downstream mathematics and clue deduplication;
+4. a mandatory kill/refinement round for every concrete candidate and at most one additional refinement round when the previous round exposed genuinely new mathematical structure with a falsifiable residual.
 
-- what structure the object carries;
-- what part the final theorem actually consumes;
-- what information is discarded when that object is compressed to a cardinality, rank, dimension, scalar, existence statement, or other endpoint;
-- whether that discarded structure, combined with the bounded immediate mathematical neighborhood of the finding, yields a distinct falsifiable research question.
-
-Target-specific fertility questions in the issue are **minimum probes, not an exhaustive checklist**. The fertility subagent is specifically expected to notice subproducts the issue designer and executor did not anticipate.
+The second discovery pass is mandatory even if the first pass finds nothing. Do not condition source-loss inspection on an earlier clue candidate.
 
 The subagent returns exactly one outcome under its skill:
 
@@ -244,7 +253,7 @@ PROPOSED_CLUE
 MATERIAL_CHALLENGE
 ```
 
-`NO_MATERIAL_FERTILITY_DELTA` is valid only after the subproduct audit has actually been performed; it cannot mean merely "Lean proves the intended theorem."
+`NO_MATERIAL_FERTILITY_DELTA` is valid only after both discovery lenses and the bounded candidate-kill procedure have actually been performed; it cannot mean merely "Lean proves the intended theorem."
 
 `PROPOSED_CLUE` may create or strengthen only `status: proposed` clues through `mathia-research-clues`, with exact formalization provenance and deduplication.
 
@@ -259,10 +268,10 @@ Publish directly to the repository default branch with **no PR** only when all o
 3. the final theorem is unchanged in mathematical meaning from the Gate-0 frozen boundary;
 4. repository-native Lean validation succeeds;
 5. the exact final candidate passed a fresh `codex-independent-review` technical subagent with `PASS` or `PASS_WITH_NOTES` and no material unresolved defect;
-6. the mandatory fresh post-approval fertility subagent completed with `NO_MATERIAL_FERTILITY_DELTA` or `PROPOSED_CLUE`;
+6. the mandatory fresh post-approval fertility subagent completed with `NO_MATERIAL_FERTILITY_DELTA` or `PROPOSED_CLUE` under the complete two-lens/refinement procedure;
 7. every principal Lean module satisfies the associated-finding/theorem-boundary comment contract;
 8. the only implementation diff is issue-authorized Lean source plus the smallest necessary Mathia Lean project wiring;
-9. no Gate report, technical-review report, fertility-review report, scratch script, generated log/data, or unrelated cleanup is included;
+9. no Gate report, technical-review report, fertility-review report, ephemeral handoff, scratch script, generated log/data, or unrelated cleanup is included;
 10. any research clue included was produced/strengthened by the post-approval fertility reviewer, remains `status: proposed`, and passes `mathia-research-clues` deduplication/path gates;
 11. any material finding challenge has already been routed through the adversarial-review protocol rather than hidden in implementation;
 12. `main` was refreshed immediately before publication and the relevant files were checked for concurrent changes.
