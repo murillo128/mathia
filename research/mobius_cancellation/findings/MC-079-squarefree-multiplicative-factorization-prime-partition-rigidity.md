@@ -52,7 +52,7 @@ f_j(n)=
 \tag{5}
 \]
 
-Thus **there is no prime-level sign freedom at all** inside a square-free-supported multiplicative convolution factorization of Möbius. Each rational prime carries the coefficient `-1` in exactly one factor and coefficient `0` in every other factor. Any attempt to obtain separate prime-sign cancellation in two or more factors must therefore abandon square-free support in at least one factor, abandon multiplicativity, or move to a genuinely coupled observable rather than separate factor sums.
+Thus **there is no prime-level sign freedom at all** inside a square-free-supported multiplicative convolution factorization of Möbius. Each rational prime carries the coefficient `-1` in exactly one factor and coefficient `0` in every other factor. `MC-080` sharpens the support boundary: even finitely many higher prime-power coefficients cannot create a nontrivial split. Any separate-factor route that keeps multiplicativity must therefore introduce a genuinely nonterminating prime-power tail at the primes where the split is nontrivial, or move to a genuinely coupled observable rather than separate factor sums.
 
 There is also a regular-density analytic corollary that strictly generalizes the fixed residue-class calculation in `MC-078`. Suppose each prime set `P_j` has a positive weighted density
 
@@ -253,7 +253,7 @@ The analytic ingredient is likewise classical. `MC-S14` gives the Landau--Selber
 
 The classification is exact, but its analytic corollary has deliberate boundaries.
 
-- **Square-free support is essential.** If a factor may have nonzero `p^2,p^3,...` coefficients, its local series is no longer linear, and higher local terms can cancel between factors. Fractional-zeta gauges from `MC-075` are examples outside the square-free-supported class.
+- **Square-free support is sufficient but not the sharp support boundary.** `MC-080` proves the same prime-partition classification whenever every prime-local Bell series is a polynomial, equivalently whenever each factor is eventually zero on powers of each fixed prime, with no uniform degree bound. Genuine local higher-power cancellation requires a nonterminating Bell series in at least one factor at a split prime; the fractional-zeta gauges of `MC-075` and the bounded rational-tail family in `MC-080` lie beyond this locally finite class.
 - **Multiplicativity is essential.** Nonmultiplicative convolution factors are not classified by independent prime-local polynomials.
 - The result treats a fixed finite number `r` of normalized factors. Infinite products of convolution factors are outside the claim.
 - The Landau--Selberg--Delange conclusion `(8)` requires the regular positive-density hypothesis `(7)`. Highly irregular prime partitions, zero-density sectors, or scale-dependent allocations are not ruled out by that corollary.
@@ -267,6 +267,6 @@ The exact classification is falsified if a square-free-supported multiplicative 
 
 `MC-078` left three conceptual escapes: introduce prime-level sign cancellation inside the factors, use a coupled observable, or use a scale-dependent/irregular arithmetic allocation. The present classification removes an ambiguity from the first option.
 
-**Prime-level sign cancellation cannot be introduced inside two or more factors while simultaneously retaining multiplicativity, square-free support, and exact convolution back to Möbius.** Under those three requirements, each prime is forced to belong wholly to one factor with coefficient `-1`, and every regular positive-density split has only logarithmic mean cancellation.
+**Prime-level sign cancellation cannot be introduced inside two or more factors while simultaneously retaining multiplicativity, square-free support, and exact convolution back to Möbius.** Under those three requirements, each prime is forced to belong wholly to one factor with coefficient `-1`, and every regular positive-density split has only logarithmic mean cancellation. `MC-080` strengthens the local obstruction: replacing square-free support by arbitrary finite prime-power tails still forces the same prime-partition normal form.
 
-A surviving factorization route must therefore pay a visible structural price: allow prime-power coefficients, abandon multiplicativity, exploit a coupled signed statistic before estimating the factors separately, or formulate a genuinely irregular/scale-dependent prime allocation with an independently justified selection rule and a uniform analytic advantage. Merely refining how square-free prime sectors are divided cannot distribute the RH-scale Mertens burden.
+A surviving factorization route must therefore pay a visible structural price: allow genuinely infinite prime-power tails, abandon multiplicativity, exploit a coupled signed statistic before estimating the factors separately, or formulate a genuinely irregular/scale-dependent prime allocation with an independently justified selection rule and a uniform analytic advantage. Merely refining how square-free prime sectors are divided, or adding finitely many higher prime-power coefficients, cannot distribute the RH-scale Mertens burden.
