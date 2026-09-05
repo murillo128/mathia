@@ -11,6 +11,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-082-liouville-parity-sieve-divisor-density-blindness.md
   - research/mobius_cancellation/findings/MC-083-constant-weight-annular-parity-contrast-mertens-square-equivalence.md
   - research/mobius_cancellation/findings/MC-084-source-coupled-exact-sawtooth-annulus-mertens-equivalence.md
+  - research/mobius_cancellation/findings/MC-085-low-frequency-annular-coupling-resolution-equivalence.md
   - research/prime_lattice/findings/PL-172-hilbert-schmidt-affine-liouville-chowla-trace-removal.md
 ---
 
@@ -46,4 +47,6 @@ Accepted in further narrowed form. `MC-083` performs the first calibration: the 
 
 `MC-084` tests the opposite extreme. The complete exact sawtooth annulus is genuinely nonconstant, but once it is kept with the source-prescribed coarse counterterms `N^2 H(N)^2 - M(N)^2/2`, the resulting annular residual is `2M(N)-M(N^2)` up to another `O(N log N)` interior. Its `O(N^{2 beta})` bound is therefore equivalent to the global `M(x)=O(x^beta)` bound for every `beta>1/2`, and its epsilon-family is RH-equivalent. Full sawtooth coupling is not an independently cheaper input.
 
-The unresolved question is now restricted to **strict partial** source-forced weights or couplings before full sawtooth recombination—most naturally a proper finite Fourier family or a justified proper slab subfamily. Such a candidate must avoid both the constant-weight recovery of `MC-083` and the complete-coupling recovery of `MC-084`, come with an independently available quantitative estimate, and still pay the `MC-031` truncation budget plus the full `MC-027` iteration and scale-coverage ledger.
+`MC-085` now closes the most natural strict-partial interpolation between those extremes. For the source-prescribed initial Fourier family `1<=h<=K`, coupled only to the annular part and the exact coarse counterterms, the reverse-recovery identity shows that whenever the published Huxley--Watt truncation remainder is made subordinate to a target power, the proper Fourier coupling is already equivalent to that Mertens power. In particular, the epsilon-family remains RH-equivalent even with the genuinely proper cutoffs `K_epsilon=N^(1-epsilon/2)`.
+
+The unresolved question is therefore narrower than merely finding a proper finite Fourier truncation. A survivor must obtain **new arithmetic control of the omitted high-frequency complement**, use a justified selective/noninitial Fourier projection whose complement is independently cheaper, or use a proper reciprocal-slab/bilinear coupling that avoids both exact target recovery and the source-generic truncation bridge. It must still close the full `MC-027` iteration and scale-coverage ledger.
