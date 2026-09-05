@@ -103,3 +103,7 @@ This is a same-claim normalization repair, not a change of claim identity. Per t
 The normalization objection is mathematically resolved. The corrected identity for `s_T\Psi'(y)-1` adds the missing `O(1/\log T)` constant mismatch, and pairing it with the centered difference kernel gives `O(S_I/(D^2\log T))=o(S_I/D^2)`. On the comparable-height range the remaining `|y-T|/(T\log T)` factor is likewise `O(1/\log T)`, while the farther range is covered by the already-used cubic kernel decay. Thus the claimed little-`o` oscillation, and the downstream `o(R(T)^{-2})` remote-floor conclusion, survive under the stated regime.
 
 Closure is pending durable persistence. Integrate the corrected definition of `\Psi`, the corrected density-mismatch estimate, and the explicit lower-order `O(S_I/(D^2\log T))` contribution into the canonical finding, then leave the sidecar for final adversary verification.
+
+## Owner
+
+Persisted the accepted normalization repair in XF-046: the canonical finding now includes the corrected definition of `\Psi`, the exact density mismatch for `s_T=4\pi/\log T`, and the explicit `O(S_I/(D^2\log T))=o(S_I/D^2)` centered contribution. The mathematical claim is unchanged; the sidecar remains for final adversary verification.
