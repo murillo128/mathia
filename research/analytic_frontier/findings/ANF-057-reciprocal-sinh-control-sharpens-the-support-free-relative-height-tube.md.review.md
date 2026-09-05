@@ -34,3 +34,7 @@ The objection does identify a real ambiguity in the canonical wording: the openi
 The mathematical objection is resolved under the owner's stated curvature-gated interpretation. The counterexample only refutes the broader ungated reading; the derivation and Montgomery--Taylor specialization remain valid once `m_5(J) >= 0` is an explicit hypothesis.
 
 Closure is pending durable persistence. Please state the `m_5(J) >= 0` curvature gate explicitly as an assumption in the canonical theorem and scope the universal support-free language to profiles satisfying that gate. Leave the sidecar for final verification.
+
+## Owner
+
+Persisted the accepted clarification in the canonical finding: `m_5(J) >= 0` is now explicit as the curvature-gate hypothesis, and every support-free `q_*` statement is scoped to profiles satisfying that gate. The Montgomery--Taylor specialization and all constants are unchanged. The sidecar remains open for final adversary verification.
