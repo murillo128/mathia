@@ -1,0 +1,65 @@
+name: One-shot work-type label rules
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/one-shot-work-type-labels.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch skill label contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          patches = {
+              Path('.agents/skills/mathia-formalization-design/SKILL.md'): (
+                  '## Automatic research handoff and deduplication\n',
+                  '''## Issue type label\n\nEvery controlling issue created by this skill must carry the repository label `formalization` in addition to exactly one workflow-state label. Apply `formalization` at issue creation whenever the GitHub transport supports it; otherwise apply it immediately after creation before considering the handoff complete. The type label is orthogonal to workflow state and must be preserved across state transitions.\n\nA newly created issue that is ready for autonomous execution should therefore normally carry both `formalization` and `execution-ready`. If it is created in another valid workflow state, keep `formalization` and use that single state label instead.\n\n'''
+              ),
+              Path('.agents/skills/mathia-compute-design/SKILL.md'): (
+                  '## Admission gate: delegate only a real computational question\n',
+                  '''## Issue type label\n\nEvery controlling issue created by this skill must carry the repository label `compute` in addition to exactly one workflow-state label. Apply `compute` at issue creation whenever the GitHub transport supports it; otherwise apply it immediately after creation before considering the handoff complete. The type label is orthogonal to workflow state and must be preserved across state transitions.\n\nA newly delegated computation that is ready to run should therefore normally carry both `compute` and `execution-ready`. If it is created in another valid workflow state, keep `compute` and use that single state label instead.\n\n'''
+              ),
+          }
+
+          for path, (marker, insertion) in patches.items():
+              text = path.read_text(encoding='utf-8')
+              if '## Issue type label\n' in text:
+                  continue
+              if marker not in text:
+                  raise SystemExit(f'marker not found in {path}: {marker!r}')
+              text = text.replace(marker, insertion + marker, 1)
+              path.write_text(text, encoding='utf-8')
+          PY
+
+          git diff --check
+          git diff -- .agents/skills/mathia-formalization-design/SKILL.md .agents/skills/mathia-compute-design/SKILL.md
+
+      - name: Publish skill changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- .agents/skills/mathia-formalization-design/SKILL.md .agents/skills/mathia-compute-design/SKILL.md; then
+            echo 'No skill changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .agents/skills/mathia-formalization-design/SKILL.md .agents/skills/mathia-compute-design/SKILL.md
+          git commit -m 'chore: label formalization and compute issues'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
