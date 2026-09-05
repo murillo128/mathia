@@ -55,3 +55,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_inertia/findings/WI-157-deweighted-finite-height-one-delta-has-only-log-squared-headroom|WI-157]]
 - [[research/weil_inertia/findings/WI-158-bgstb-pointwise-error-is-not-uniform-on-singular-near-extremizers|WI-158]]
 - [[research/weil_inertia/findings/WI-159-analytic-square-structure-does-not-repair-singular-bgstb-gap|WI-159]]
+- [[research/weil_inertia/findings/WI-161-prefix-subtraction-restores-split-dyadic-bgstb-error|WI-161]]
+- [[research/weil_inertia/findings/WI-162-source-level-mean-value-localizes-singular-scalar-escape-to-support-edge|WI-162]]
+- [[research/weil_inertia/findings/WI-163-source-level-integration-closes-sublinear-support-edge-loophole|WI-163]]

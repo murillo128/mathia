@@ -39,3 +39,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-033-complete-xi-field-visualizations-collapse-to-zero-divisor|VIS-033]]
 - [[research/visual_exploration/findings/VIS-034-farey-low-band-suppression-factorization|VIS-034]]
 - [[research/visual_exploration/findings/VIS-035-three-gap-ca-spectrum-maximal-correlation|VIS-035]]
+- [[research/visual_exploration/findings/VIS-036-three-gap-empirical-ca-pearson-null-floor|VIS-036]]
+- [[research/visual_exploration/findings/VIS-037-three-gap-lrt-pearson-local-equivalence-control|VIS-037]]
+- [[research/visual_exploration/findings/VIS-038-three-gap-lrt-pearson-cubic-residual-correction|VIS-038]]
+- [[research/visual_exploration/findings/VIS-039-three-gap-cmi-even-finite-size-expansion|VIS-039]]

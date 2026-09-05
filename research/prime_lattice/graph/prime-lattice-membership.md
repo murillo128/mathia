@@ -47,3 +47,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-164-fixed-finite-prime-positive-harmonic-cap|PL-164]]
 - [[research/prime_lattice/findings/PL-165-growing-prime-dimension-finite-phase-marginal-cap|PL-165]]
 - [[research/prime_lattice/findings/PL-166-fmz-primorial-frequency-horizon-barrier|PL-166]]
+- [[research/prime_lattice/findings/PL-167-signed-prime-log-finite-horizon-aliasing|PL-167]]
+- [[research/prime_lattice/findings/PL-168-rudnick-sarnak-lattice-pairing-universality|PL-168]]
+- [[research/prime_lattice/findings/PL-169-ratios-one-swap-additive-correlation|PL-169]]
+- [[research/prime_lattice/findings/PL-170-affine-tail-relative-trace-cancellation|PL-170]]
+- [[research/prime_lattice/findings/PL-171-affine-congruence-dirichlet-trace-barrier|PL-171]]

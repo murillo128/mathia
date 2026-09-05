@@ -41,3 +41,5 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-173-all-fixed-distributional-robin-coefficients-are-universal-dtn-anchor-modes|PC-173]]
 - [[research/prime_circle/findings/PC-174-weak-refinement-covariant-forms-are-multiplicative-toeplitz-with-no-compact-defect|PC-174]]
 - [[research/prime_circle/findings/PC-175-bounded-refinement-ratio-symbols-have-zero-euclidean-mesh-density|PC-175]]
+- [[research/prime_circle/findings/PC-176-symmetric-valuation-length-refinement-symbols-are-classical-gcd-operators|PC-176]]
+- [[research/prime_circle/findings/PC-177-resultant-prime-power-ratio-symbol-is-an-unbounded-prime-axis-toeplitz-sum|PC-177]]

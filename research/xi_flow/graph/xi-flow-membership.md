@@ -51,3 +51,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/xi_flow/findings/XF-040-exact-two-gap-periodic-controls-damp-microcorrugation-on-the-microscopic-heat-clock|XF-040]]
 - [[research/xi_flow/findings/XF-041-bounded-periodic-gap-controls-have-nonlinear-cauchy-spectral-gap-damping|XF-041]]
 - [[research/xi_flow/findings/XF-042-finite-window-cauchy-relaxation-is-input-to-state-stable-under-centered-exterior-mismatch|XF-042]]
+- [[research/xi_flow/findings/XF-043-super-mesoscopic-buffers-suppress-far-tail-gap-shape-replenishment|XF-043]]
+- [[research/xi_flow/findings/XF-044-cauchy-slow-mode-imposes-logarithmic-precision-clock-at-memory-scale|XF-044]]
+- [[research/xi_flow/findings/XF-045-centered-far-tail-shape-forcing-has-quadratic-buffer-suppression|XF-045]]
+- [[research/xi_flow/findings/XF-046-source-counting-makes-remote-memory-scale-forcing-little-o-at-critical-r2|XF-046]]

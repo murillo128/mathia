@@ -39,3 +39,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-152-natural-shell-size-cutoff-leaves-only-a-universal-root-boundary-layer|WP-152]]
 - [[research/weil_positivity/findings/WP-153-natural-cutoff-root-spectral-measure-is-a-universal-two-atom-boundary-law|WP-153]]
 - [[research/weil_positivity/findings/WP-154-resultant-chord-curvature-is-prime-local-and-flat-across-primes|WP-154]]
+- [[research/weil_positivity/findings/WP-155-canonical-resultant-cell-completions-cannot-create-mixed-prime-curvature|WP-155]]
+- [[research/weil_positivity/findings/WP-156-cyclotomic-block-log-determinant-lines-factor-through-pairwise-resultants|WP-156]]
+- [[research/weil_positivity/findings/WP-157-separated-cyclotomic-tensor-determinant-lines-are-rank-additive|WP-157]]

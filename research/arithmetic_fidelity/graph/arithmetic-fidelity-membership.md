@@ -58,3 +58,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/arithmetic_fidelity/findings/AF-126-le-cam-recovery-deficiency-quantifies-approximate-statistical-fidelity|AF-126]]
 - [[research/arithmetic_fidelity/findings/AF-127-finite-deficiency-has-exact-reconstructive-decision-witnesses|AF-127]]
 - [[research/arithmetic_fidelity/findings/AF-128-optimal-deficiency-witnesses-are-identity-calibrated|AF-128]]
+- [[research/arithmetic_fidelity/findings/AF-129-convex-restricted-witnesses-induce-quotient-recovery-geometry|AF-129]]
+- [[research/arithmetic_fidelity/findings/AF-130-metric-local-witnesses-induce-normalized-wasserstein-recovery|AF-130]]
+- [[research/arithmetic_fidelity/findings/AF-131-wasserstein-recovery-composition-needs-transport-regularity|AF-131]]
+- [[research/arithmetic_fidelity/findings/AF-132-wasserstein-recovery-profiles-obey-functional-composition-bound|AF-132]]
+- [[research/arithmetic_fidelity/findings/AF-133-restricted-witness-composition-requires-quotient-compatible-recovery|AF-133]]
