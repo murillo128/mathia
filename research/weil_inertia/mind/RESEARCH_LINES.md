@@ -8,6 +8,8 @@ This file holds the current mathematical lines of investigation suggested by the
 
 Global Fenchel coupling can remove artificial blockwise optimization loss, but it cannot recover a discriminator erased by the represented Gram/pressure data. Audit the complete represented quotient before strengthening inequalities on it.
 
+WI-165 and WI-166 now close positive mixing on both sides of scalar block collapse in the arbitrary-weight four-point relaxation. Post-collapse mixtures are convex averages, while pre-collapse coefficientwise covers are capped window-by-window by the unique third-neighbor chord; an exact abstract saturation witness attains the resulting scalar `E+P` budget. Do not spend further cycles on positive multi-length cover bookkeeping after discarding Montgomery--Taylor-kernel/PSD coupling. Revisit this mechanism only if the assembly retains that joint realizability or another invariant before scalarization.
+
 ## Convert exact off-line inertia into source coercivity away from confluence
 
 **Linked intuitions:** `MI-006-source-rigidity-can-eliminate-screening-extremizers` and `MI-008-inertia-counts-offline-pairs-but-not-their-distance`.

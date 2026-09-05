@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-four-point-weighted-cover-assembly
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: weil_inertia
 based_on:
@@ -39,4 +39,9 @@ No better constant or global optimality theorem is claimed. Failure of a two-len
 
 ## Research disposition
 
-The first, post-collapse two-length branch is closed exactly by [[research/weil_inertia/findings/WI-165-positive-mixtures-of-fixed-block-bounds-cannot-beat-best-constituent.md]]: any fixed geometry-independent nonnegative combination of already-scalarized block inequalities is a convex combination of the constituent ratios and cannot beat the best constituent. The clue remains active because this obstruction does not cover placement or weighting chosen before scalar collapse. The surviving question is whether a geometry-aware positive cover can exploit complementary local Gram entries or span information while proving a new universal domination inequality that is not merely a positive sum of separately averaged block bounds.
+Outcome: refuted
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-166-four-point-positive-cover-relaxation-is-sharp.md]]
+
+WI-165 already closed positive mixtures after each block had been separately scalarized. WI-166 closes the surviving upstream question in the clue's arbitrary-nonnegative-pair-weight/gap relaxation: the unique third-neighbor chord forces each atomic local certificate to have total positive multiplicity at most one under coefficientwise pair-energy domination, and an exact zero-gap third-neighbor-only witness attains `E+P=(m-3) epsilon`. Thus no positive multi-length cover can improve that scalar resource in this relaxation. Actual Montgomery--Taylor-kernel/PSD-coupled placement remains outside the barrier and would require retaining structure that the decisive test intentionally relaxed away.
