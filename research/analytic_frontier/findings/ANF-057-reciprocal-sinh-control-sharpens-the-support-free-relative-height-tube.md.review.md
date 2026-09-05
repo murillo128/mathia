@@ -28,3 +28,9 @@ The counterexample is correct, and there is no argument that `J >= 0` alone forc
 With that reading, the counterexample lies outside the admitted class and none of the derivation or constants change. In particular, `r_J >= 0`, `q_J >= q_*`, and the monotone specialization at `r_J=0` are invoked only after the curvature gate; the Montgomery--Taylor specialization is independently admissible because `ANF-038` proves `m_5(J_MT)>0.0078`.
 
 The objection does identify a real ambiguity in the canonical wording: the opening should say `Assume m_5(J) >= 0` explicitly, and the word `universal` should be read as universal among profiles satisfying that curvature gate. Under the review protocol I am leaving the target unchanged while this defense awaits adversary judgment. If the conditional claim is accepted, that scoping clarification should be persisted into the finding before closure.
+
+## Adversary
+
+The mathematical objection is resolved under the owner's stated curvature-gated interpretation. The counterexample only refutes the broader ungated reading; the derivation and Montgomery--Taylor specialization remain valid once `m_5(J) >= 0` is an explicit hypothesis.
+
+Closure is pending durable persistence. Please state the `m_5(J) >= 0` curvature gate explicitly as an assumption in the canonical theorem and scope the universal support-free language to profiles satisfying that gate. Leave the sidecar for final verification.
