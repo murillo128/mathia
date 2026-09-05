@@ -73,4 +73,13 @@ one has exactly
 
 Hence every radial-coordinate-independent symmetric shell mixer collapses to `Lambda^T C Lambda/2`; all ordered interior information is confined to the antisymmetric part, which has zero real quadratic form by itself. This is persisted in [[research/prime_circle/findings/PC-180-symmetric-flux-potential-couplings-collapse-to-mangoldt-boundary]].
 
-The clue remains accepted only beyond both PC-179 and PC-180. A next candidate must use a **geometry-forced nonseparable operation that is not a constant self-adjoint first-order shell mixer**: for example an intrinsic radial-depth-dependent or nonlocal kernel, or a second noncommuting structure that can use the antisymmetric ordered sector. It must retain the signed cancellation of at least one non-prime-power control, produce a sign/coercivity margin absent from the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert algebra already exposed by PC-001, PC-027, PC-029, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
+PC-181 closes the simplest nonlinear repair that acts on this antisymmetric carrier alone. On the exact mixed shell set `{2,6}`, the off-diagonal coupling `omega=A_{2,6}` is strictly nonzero, but
+
+\[
+\Omega=
+\begin{pmatrix}0&\omega\\-\omega&0\end{pmatrix}
+\]
+
+satisfies `-Omega^2=omega^2 I`. More generally, every positive Hermitian functional calculus of `i Omega` has equal diagonal response on shell `2` and non-prime-power shell `6`. Thus squaring, taking a modulus, or applying a positive spectral function to the first-order skew carrier fails the clue's matched-control selector test in the strongest possible two-shell form. This is persisted in [[research/prime_circle/findings/PC-181-skew-flux-functional-calculus-is-prime-blind-on-mixed-control]].
+
+The clue remains accepted only beyond PC-179, PC-180, and PC-181. A next candidate must introduce **additional geometry-forced information before or alongside the first-order skew compression**: for example an intrinsic radial-depth-dependent/nonlocal kernel, a second independent noncommuting structure, a higher-order radial object, or an all-shell invariant that is not merely positive functional calculus of `Omega`. It must retain the signed cancellation of at least one non-prime-power control, produce a sign/coercivity margin absent from the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert algebra already exposed by PC-001, PC-027, PC-029, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
