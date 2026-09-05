@@ -95,7 +95,7 @@ Do **not** duplicate shared Research Watch procedure in a README. In particular,
 - assess novelty by mathematical mechanism and equivalent formulation rather than wording;
 - prefer primary/authoritative literature;
 - generic matched-control, gauge, convergence, or boundary-case discipline already defined below;
-- the generic rule that other research lines are read-only context/evidence;
+- the generic line-local context-isolation procedure defined below;
 - evidence labels, finding-ID rules, file maps, persistence rules, publication rules, notification policy, or review protocol;
 - current findings, current branch status, research history, or a hand-maintained synthesis of the finding corpus.
 
@@ -105,7 +105,40 @@ If the README is missing, lacks the required structure, materially conflicts wit
 
 The entire README is **read-only to routine Research Watch runs**. Reorientation, restructuring, or maintenance of the canonical mandate is explicit repository maintenance outside the recurring research cycle.
 
-## Load context progressively
+## Hard line-local read boundary
+
+A Research Watch is deliberately **vertically isolated**. Cross-line synthesis and routing belong to the Master Researcher and Research Mind, not to line-specific watches.
+
+After loading repository-wide procedural authority (`AGENTS.md` and the required skills), the watch's mathematical repository context is restricted to its own line:
+
+```text
+research/<line>/README.md
+research/<line>/mind/**
+research/<line>/findings/**
+research/<line>/clues/**
+research/<line>/SOURCES.md
+```
+
+The local `mind/**` is the preferred compact synthesis of already-persisted line knowledge. It is read-only and is not independent evidence: when a live argument materially depends on one of its claims, trace that claim only to canonical findings or authoritative external literature needed for this line.
+
+Do **not** inspect, search, enumerate, or follow references into:
+
+```text
+research/<other-line>/**
+research/mind/**
+research/clues/**
+research/README.md
+research/graph/**
+research/prior_art/**
+```
+
+and do not use another line's README, findings, mind, clues, reviews, SOURCES, or graph state as context/evidence during a Research Watch run. Program-level deduplication, cross-line comparison, and transfer discovery are responsibilities of Master/Mind/Graph roles.
+
+Cross-line knowledge reaches a watch through a **local clue** under `research/<line>/clues/**`. A clue may cite another line's persisted artifact in `based_on` for provenance, but that citation is **not permission to traverse the source line**. Treat the transferred statement as unvalidated motivation and test the proposed analogue independently on the destination line's own object, using authoritative external literature when prior art is required. If the clue is not self-contained enough to perform its decisive test without opening another line, leave it `proposed` and let the Master/Mind strengthen the handoff rather than breaking isolation.
+
+This read boundary overrides any generic clue/review instruction that would otherwise cause a line-specific watch to follow a repository path into another research line. External literature searches remain allowed and required by the prior-art gate.
+
+## Load context progressively and incrementally
 
 Before substantive work:
 
@@ -113,16 +146,16 @@ Before substantive work:
 2. read this skill;
 3. read `.agents/skills/mathia-research-review/SKILL.md`;
 4. read `research/<line>/README.md` and verify that its canonical `## Research mandate` and required sections are present and usable;
-5. inventory filenames under `research/<line>/findings/`, distinguishing canonical findings from adjacent `*.review.md` sidecars;
-6. inspect every open sidecar whose last substantive speaker is `Adversary`; these form the owner's review inbox;
-7. inspect `research/<line>/clues/**` when present, using `mathia-research-clues` for their semantics;
-8. read `research/<line>/SOURCES.md` when relevant;
-9. use `research/<line>/graph/index.md` when present only as derived navigation, never as mathematical evidence;
-10. read only the individual findings and dependencies needed for the live review, candidate, clue, or duplication question.
+5. read the current local `research/<line>/mind/**` when present as the compact starting synthesis;
+6. discover the **local** review inbox and recent local evidence changes with targeted search/Git-delta methods; do not enumerate the complete findings corpus merely to establish context;
+7. inspect every open local sidecar whose last substantive speaker is `Adversary`; these form the owner's review inbox;
+8. inspect `research/<line>/clues/**` when present, using `mathia-research-clues` for their semantics;
+9. read `research/<line>/SOURCES.md` when relevant;
+10. read only the individual local findings and dependencies needed for the live review, candidate, clue, or local duplication question.
 
-Other Mathia research lines and `mind/` may be read as context or evidence, but are read-only for this role. A cross-line mathematical claim must be traced to canonical findings or authoritative sources; a relationship stated in one line's README does not by itself establish evidence in another line. Treat every `graph/` subtree as regenerable derived state and verify substantive claims against canonical findings or sources.
+Prefer **delta discovery over corpus inventory**. A directory listing that may return dozens or hundreds of findings is not an acceptable default context-loading strategy. Use filenames/search/commit history narrowly enough to identify the relevant current frontier, and open full findings only when they become mathematically load-bearing. Full filename inspection remains permitted when a publication gate genuinely requires it, such as allocating a new stable ID or validating a deletion/replacement.
 
-Do not preload all findings or complete repository history unless a dependency, deletion, review, or novelty question requires it.
+Do not preload all findings or complete repository history unless a local dependency, deletion, review, stable-ID, or novelty question genuinely requires it.
 
 When a previous processed revision is available, use Git as a change stream: added, modified, and deleted findings/reviews can all be meaningful events. In particular, `M <finding>.md` may represent newly accepted mathematics for the same claim identity.
 
@@ -134,7 +167,7 @@ For each sidecar whose last substantive speaker is `Adversary`:
 
 1. reconstruct the target claim and derivation independently;
 2. verify the objection rather than assuming either participant is right;
-3. inspect exact dependencies or sources needed to decide it;
+3. inspect exact local dependencies or authoritative external sources needed to decide it;
 4. determine whether this is an ordinary objection turn or an adversary **acceptance-pending-persistence** turn;
 5. follow `mathia-research-review` exactly.
 
@@ -430,11 +463,15 @@ Maintain literature anchors used to support or falsify stored findings. Record s
 
 When `research/<line>/clues/**` exists, use `mathia-research-clues` as the authority for triage and lifecycle.
 
+Research Watch consumes only its **local** clue inbox. It does not inspect `research/clues/**` or another line's clues. Master/Mind are responsible for routing any cross-line knowledge that should reach this watch into a destination-local `proposed` clue.
+
+For a local clue whose `based_on` includes another research line, keep that source path as provenance only. Do not open the source-line artifact. Validate or falsify the transferred mechanism independently against the destination line's own construction and authoritative external literature.
+
 Research Watch may create a clue when primary research or a review response exposes a promising question that is not yet a finding. Keep clues explicitly below the evidence threshold.
 
 A clue created by `mathia-compute-executor` is likewise only a proposed research lead. Reconstruct its computational claim independently, respect its exact/numerical/bounded-search evidence boundary, and apply the normal Research Watch derivation, adversarial stress test, and prior-art gate before changing its status or creating a finding.
 
-Global/cross-line clue creation is permitted only as defined by `mathia-research-clues` and should be genuinely cross-line.
+Global/cross-line clue **creation** is permitted only as defined by `mathia-research-clues` and should be genuinely cross-line. This output permission does not grant permission to read the global clue inbox or another research line.
 
 ## Ownership and hard path gate
 
