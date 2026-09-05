@@ -117,7 +117,7 @@ All nontrivial zeta zeros lie in the open critical strip, so each summand in `Z_
 Using the exact moment identity above,
 
 `Z_(p,K)(T)`
-` = N(T)
+` = N(T)`
 `   +2 sum_(1<=k<K)(1-k/K)/cosh(kA)`
 `       Re(p^(-k/2)S_k(T)).`
 
