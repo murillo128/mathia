@@ -204,7 +204,9 @@ Rodgers--Tao's global Riemann--von Mangoldt law is
 \[
 N_t([0,Y])=\Psi(Y)+O(\log^2Y),
 \qquad
-\Psi'(Y)=\frac{\log Y}{4\pi}.
+\Psi(Y):=\frac{Y}{4\pi}\log\frac{Y}{4\pi}-\frac{Y}{4\pi},
+\qquad
+\Psi'(Y)=\frac1{4\pi}\log\frac{Y}{4\pi}.
 \tag{20}
 \]
 
@@ -255,15 +257,42 @@ I_i:=\int_u^\infty f_i(y)\,dy
 \tag{23}
 \]
 
-First replace the slowly varying source density in (21) by the constant density `1/s_T`. On `u<=y<=2T`,
+First replace the slowly varying source density in (21) by the constant density `1/s_T`. With `s_T=4\pi/\log T` and the corrected source density in (20), the mismatch is exactly
 
 \[
  s_T\Psi'(y)-1
-=O\!\left(\frac{|y-T|}{T\log T}\right),
+=\frac{\log(y/T)-\log(4\pi)}{\log T}.
 \tag{24}
 \]
 
-while beyond `2T` the cubic difference kernel makes the tail integrable with room to spare. Combining (18) with (24) gives
+Hence on the comparable-height range `u<=y<=2T`,
+
+\[
+|s_T\Psi'(y)-1|
+\ll
+\frac1{\log T}
++
+\frac{|y-T|}{T\log T}.
+\]
+
+For `i,j\in I`, integrating (18) gives
+
+\[
+\int_u^\infty |f_i-f_j|(y)\,dy
+\ll
+\frac{S_I}{D^2}.
+\]
+
+The constant `O(1/\log T)` density mismatch therefore contributes explicitly
+
+\[
+O\!\left(\frac1{\log T}
+\int_u^\infty |f_i-f_j|(y)\,dy\right)
+=O\!\left(\frac{S_I}{D^2\log T}\right)
+=o\!\left(\frac{S_I}{D^2}\right).
+\]
+
+On the comparable-height range the `|y-T|/(T\log T)` part is likewise `O(1/\log T)` against the same integrable difference kernel, while beyond `2T` the cubic decay from (18) controls the remaining tail with room to spare. Thus
 
 \[
 \boxed{
@@ -311,7 +340,7 @@ while (6) gives
 \left(I_i-\frac1{p_i}\right)
 \ll
 \frac{b_*}{D^2}
-+rac{b_*S_I}{D^3}.
++\frac{b_*S_I}{D^3}.
 \tag{29}
 \]
 
