@@ -48,7 +48,7 @@ E_F(W)-E_F(R(W))\ge-F(0).
 
 For nonzero continuous `J`, equality in (4) is impossible, so in fact the inequality is strict for every fixed genuine configuration. Thus **a finite-height two-pair deformation can lower the pair energy relative to its real collapse by less than one self-energy unit, uniformly over all heights and horizontal placements**.
 
-More importantly, (3) comes with an exact danger criterion. Put
+More importantly, (3) comes with an exact nonzero-frequency danger criterion. Put
 
 \[
 a:=c_1-1,\qquad b:=c_2-1,
@@ -56,7 +56,7 @@ a:=c_1-1,\qquad b:=c_2-1,
 \tag{5}
 \]
 
-A negative value of `h_alpha` is possible for some horizontal phases at that frequency **if and only if**
+For every fixed `alpha!=0`, a negative value of `h_alpha` is possible for some horizontal phases at that frequency **if and only if**
 
 \[
 \boxed{|q|<1,}
@@ -72,7 +72,7 @@ that is,
 \tag{7}
 \]
 
-Hence unequal heights automatically make all sufficiently high frequencies pointwise safe. The unresolved global obstruction is therefore not unbounded vertical amplification; it is cross-frequency phase coherence inside a quantitatively localized danger band.
+At the degenerate central frequency `alpha=0`, all phases are forced to zero, `c_1=c_2=1`, and hence `h_0=0` identically; the iff criterion (6)--(7) is not asserted there. Thus unequal heights automatically make all sufficiently high frequencies pointwise safe. The unresolved global obstruction is therefore not unbounded vertical amplification; it is cross-frequency phase coherence inside a quantitatively localized danger band.
 
 ## 1. Exact phase-amplitude normal form
 
@@ -83,7 +83,7 @@ Write
 \qquad
 m:=\frac{\theta_1+\theta_2}{2},
 \qquad
-u:=\frac{\theta_1-\theta_2}{2}=\pi\alpha d,
+\nu:=\frac{\theta_1-\theta_2}{2}=\pi\alpha d,
 \]
 
 and abbreviate
@@ -127,7 +127,7 @@ Equivalently,
 \boxed{
 h_\alpha
 \ge
-\left(R-\frac12\right)^2-rac14+4pC^2.
+\left(R-\frac12\right)^2-\frac14+4pC^2.
 }
 \tag{12}
 \]
@@ -178,7 +178,7 @@ This converts any geometric localization of dangerous phases into a spectral-mas
 
 ## 3. Exact amplitude-mismatch barrier
 
-Equation (11) also gives a complete pointwise existence test. Since
+For every fixed nonzero frequency, equation (11) also gives a complete pointwise existence test because the horizontal map `(t_1,t_2) -> (theta_1,theta_2)` is surjective modulo `2 pi`. Since
 
 \[
 R^2=q^2+(p^2-q^2)C^2,
@@ -194,7 +194,7 @@ Conversely, if `0<|q|<1`, choose `C=0`. Then `R=|q|`, the positive `4pC^2` term 
 \tag{18}
 \]
 
-If `q=0`, choose any sufficiently small nonzero `|C|`. Then `R=p|C|` and
+If `q=0` and `alpha!=0`, choose any sufficiently small nonzero `|C|`. Then `R=p|C|` and
 
 \[
 \min_m h_\alpha
@@ -202,7 +202,7 @@ If `q=0`, choose any sufficiently small nonzero `|C|`. Then `R=p|C|` and
 \tag{19}
 \]
 
-whenever `0<|C|<1/(p+4)`. This proves the equivalence (6)--(7).
+whenever `0<|C|<1/(p+4)`. Because `alpha!=0`, such a phase difference is realizable by a horizontal separation. This proves the equivalence (6)--(7) on the nonzero-frequency slice. At `alpha=0`, instead, `p=q=0` but `theta_1=theta_2=0` is forced, so (2) gives `h_0=0`; the `q=0` construction (19) is unavailable there.
 
 For unequal heights, assume without loss of generality `y_1>y_2`. The mismatch
 
@@ -234,13 +234,13 @@ Thus increasing the disparity between the two squared heights squeezes all possi
 
 ## 4. Equal heights localize danger to anti-phase tubes
 
-When `y_1=y_2=y`, the amplitude mismatch vanishes identically, so (22) gives no information. But (19) becomes an exact phase criterion. Here
+When `y_1=y_2=y`, the amplitude mismatch vanishes identically, so (22) gives no information. But (19) becomes an exact phase criterion away from the central frequency. Here
 
 \[
 p=2\bigl(\cosh(2\pi\alpha y)-1\bigr),
 \]
 
-and a negative pointwise contribution is possible precisely when
+and for `alpha!=0` a negative pointwise contribution is possible precisely when
 
 \[
 0<|\cos(\pi\alpha d)|
@@ -249,7 +249,7 @@ and a negative pointwise contribution is possible precisely when
 \tag{23}
 \]
 
-Therefore at large equal height the dangerous frequencies are forced into narrow neighborhoods of the anti-phase loci
+At `alpha=0` the defect is again exactly zero. Therefore at large equal height the dangerous nonzero frequencies are forced into narrow neighborhoods of the anti-phase loci
 
 \[
 \pi\alpha d\equiv\frac\pi2\pmod\pi.
@@ -260,7 +260,7 @@ The two regimes are complementary. Unequal heights localize danger by **amplitud
 
 ## 5. What this changes in the five-point frontier
 
-`ANF-041` left two possibilities for the finite-height two-pair gate: lift the positive-definite coupling to the full hyperbolic transforms, or exhibit a genuine finite-height reversal. The present reduction rules out a third, simpler possibility: there is no frequencywise positivity proof to be had in general. Whenever (7) holds, a single frequency admits horizontal phases with negative defect. In particular, every genuine two-pair configuration has small frequencies where the amplitude condition alone permits negativity.
+`ANF-041` left two possibilities for the finite-height two-pair gate: lift the positive-definite coupling to the full hyperbolic transforms, or exhibit a genuine finite-height reversal. The present reduction rules out a third, simpler possibility: there is no frequencywise positivity proof to be had in general. At every nonzero frequency where (7) holds, some horizontal geometry admits a negative defect; in particular, arbitrarily small nonzero frequencies satisfy the amplitude condition. The central frequency itself is exceptional and automatically safe.
 
 At the same time, vertical amplification cannot create an arbitrarily deep local well. The total descent is bounded by one self-energy unit, and for unequal heights only the central spectral mass below `alpha_*` can participate at all. This makes the remaining problem a **coherence problem across frequencies**: can one pair of physical horizontal separations align enough of the danger region to make the `J`-weighted integral negative, or does positive-definite/Fourier coherence force compensating positive mass elsewhere?
 
@@ -272,7 +272,7 @@ The only generic ingredient in (9)--(12) is the classical harmonic-amplitude ide
 
 The result is exact but deliberately limited. It does **not** prove `G_{2,2,1;J}(y_1,y_2)>=0`, does not close the central-notch program, and does not extend the all-height one-pair theorem of `ANF-039` to two pairs. The lower bound (4) is a universal floor, not a sign theorem.
 
-The decisive audit is finite. Expanding (9) must reproduce the `ANF-040` integrand (2); minimizing its last two terms must give (11); completing the square must give (12). The sharpness test is the anti-phase configuration (13). The amplitude criterion is falsified by any example with `|a-b|>=1` and negative `h_alpha`, or by failure to construct negative phases when `|a-b|<1`; equations (18)--(19) settle both directions exactly.
+The decisive audit is finite. Expanding (9) must reproduce the `ANF-040` integrand (2); minimizing its last two terms must give (11); completing the square must give (12). The sharpness test is the anti-phase configuration (13). For nonzero frequencies, the amplitude criterion is falsified by any example with `|a-b|>=1` and negative `h_alpha`, or by failure to construct negative phases when `|a-b|<1`; equations (18)--(19) settle both directions exactly. At the central frequency the separate audit condition is `h_0=0` for every horizontal geometry.
 
 ## 7. Consequence for the next gate
 

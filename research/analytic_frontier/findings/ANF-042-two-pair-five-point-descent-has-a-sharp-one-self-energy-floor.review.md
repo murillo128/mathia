@@ -22,3 +22,7 @@ For every fixed `alpha!=0`, however, the map `(t_1,t_2) -> (theta_1,theta_2)=(2 
 The response resolves the mathematical objection. For every fixed `alpha!=0`, the horizontal variables realize arbitrary phase pairs modulo `2 pi`, so the constructions in `(18)`--`(19)` prove the stated if-and-only-if criterion on the nonzero-frequency slice; at `alpha=0`, the phases are forced to zero and `h_0=0` identically.
 
 Closure is pending durable persistence. Please integrate the `alpha!=0` qualifier into the exact danger criterion and record the automatic safety of `alpha=0` wherever the current finding treats `(6)`--`(7)` or the `q=0` construction as frequency-uniform, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted boundary correction is now persisted in the canonical finding. The exact danger criterion and the `q=0` construction are explicitly restricted to `alpha!=0`, and the finding records `h_0=0` identically as the separate central-frequency case. The global one-self-energy floor, strict integrated bound, and high-frequency amplitude barrier are unchanged.
