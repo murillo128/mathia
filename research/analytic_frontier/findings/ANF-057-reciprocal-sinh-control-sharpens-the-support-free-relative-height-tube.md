@@ -1,6 +1,6 @@
 # ANF-057 — reciprocal-sinh control sharpens the support-free relative-height tube
 
-**Status:** `EXACT-DERIVED + SUPPORT-FREE-HEIGHT-RATIO-TUBE + PROFILE-SPECIFIC-MARGIN-TRANSFER + MONTGOMERY-TAYLOR-RESIDUAL-SHRINKAGE + STRUCTURAL-REDUCTION`. `ANF-056` removes a fixed unequal-height neighborhood of the diagonal by retaining the positive quadratic mismatch block, but its elementary split loses part of the available diagonal margin. The exact mismatch loss admits a sharper global envelope once the relative height mismatch is above a small technical threshold. Combining that envelope with the diagonal margin of `ANF-054` enlarges the universal support-free tube and, using the strict Montgomery--Taylor curvature margin from `ANF-038`, enlarges it further for the live base-zero problem.
+**Status:** `EXACT-DERIVED + SUPPORT-FREE-HEIGHT-RATIO-TUBE + PROFILE-SPECIFIC-MARGIN-TRANSFER + MONTGOMERY-TAYLOR-RESIDUAL-SHRINKAGE + STRUCTURAL-REDUCTION`. `ANF-056` removes a fixed unequal-height neighborhood of the diagonal by retaining the positive quadratic mismatch block, but its elementary split loses part of the available diagonal margin. The exact mismatch loss admits a sharper global envelope once the relative height mismatch is above a small technical threshold. Combining that envelope with the diagonal margin of `ANF-054` enlarges the curvature-gated support-free tube and, using the strict Montgomery--Taylor curvature margin from `ANF-038`, enlarges it further for the live base-zero problem.
 
 Let `J` be nonzero, continuous, even and nonnegative with compact support. Put
 
@@ -11,7 +11,12 @@ K_J(t)=\int \alpha^2J(\alpha)\cos(2\pi\alpha t)\,d\alpha,
 
 \[
 m_5(J)=2K_0+3\inf_tK_J(t),
-\qquad m_5(J)\ge0.
+\]
+
+and assume the curvature gate
+
+\[
+\boxed{m_5(J)\ge0.}
 \tag{1}
 \]
 
@@ -57,7 +62,7 @@ is strictly safe for every horizontal placement:
 \tag{6}
 \]
 
-Since `q_J` is increasing in `r_J`, the curvature gate alone gives the universal support-free radius
+Since `q_J` is increasing in `r_J`, every profile satisfying the curvature gate (1) has the support-free radius
 
 \[
 \boxed{
@@ -68,7 +73,7 @@ q<q_*:=\frac13\left(1-\sqrt{\frac38}\right)
 \tag{7}
 \]
 
-Equivalently, every genuine zero or negative defect must satisfy
+Equivalently, every genuine zero or negative defect for a profile satisfying (1) must satisfy
 
 \[
 \boxed{
@@ -79,7 +84,7 @@ Equivalently, every genuine zero or negative defect must satisfy
 \tag{8}
 \]
 
-This replaces the universal `q_c=0.10616522...` and height-ratio `1.23754...` of `ANF-056` by `q_*=0.12920918...` and `1.29676...`, without using a support radius or a bounded-height hypothesis.
+Within the curvature-gated profile class, this replaces the `q_c=0.10616522...` and height-ratio `1.23754...` of `ANF-056` by `q_*=0.12920918...` and `1.29676...`, without using a support radius or a bounded-height hypothesis.
 
 For the exact Montgomery--Taylor profile, `ANF-038` certifies
 
@@ -282,7 +287,7 @@ H_J(y,y;t_1,t_2)
 \tag{25}
 \]
 
-`ANF-054` supplies the profile-dependent all-horizontal diagonal margin
+Under the explicit curvature-gate hypothesis (1), `ANF-054` supplies the profile-dependent all-horizontal diagonal margin
 
 \[
 H_J(y,y;t_1,t_2)
@@ -315,7 +320,7 @@ q\le q_c
 
 and `q_0<q_c`. Since `q_J>=q_*>q_c`, the two estimates join to prove (5)--(7) for the entire interval from the exact diagonal up to `q_J`.
 
-The function in (4) is increasing in `r_J>=0`, so its universal minimum is attained at `r_J=0`, yielding exactly (7).
+The function in (4) is increasing in `r_J>=0`, so its minimum over profiles satisfying (1) is attained at `r_J=0`, yielding exactly (7).
 
 ## 4. The new coefficient is small-height sharp for this horizontal-free route
 
@@ -368,4 +373,4 @@ The numerical Montgomery--Taylor specialization uses only the rigorous intervals
 
 A targeted prior-art check of current Montgomery--Taylor/pair-correlation work and the positive-definite-strip Fourier--Laplace literature recovered the same established extremal and representation frameworks already anchored in `SOURCES.md`, but did not identify an external theorem giving the two-pair mean-height mismatch inequality (13), the reciprocal-sinh transfer (23), or the resulting profile-dependent radius (4). The elementary inequality (15) is standard analysis; the durable derived content is its use inside the exact five-point mismatch normal form. No publication-level novelty claim is made and no new source anchor is load-bearing, so `SOURCES.md` is unchanged.
 
-This finding remains a sufficient positivity theorem. It does not decide the unequal-height Montgomery--Taylor region beyond (11), does not prove the full universal affine certificate, and does not address larger conjugation-invariant multisets. Its role is to shrink the exact decision problem accepted in `CLUE-central-notch-base-margin-certificate` before any interval or phase-aware certification is attempted.
+This finding remains a sufficient positivity theorem for profiles satisfying the curvature gate (1). It does not decide the unequal-height Montgomery--Taylor region beyond (11), does not prove the full universal affine certificate, and does not address larger conjugation-invariant multisets. Its role is to shrink the exact decision problem accepted in `CLUE-central-notch-base-margin-certificate` before any interval or phase-aware certification is attempted.
