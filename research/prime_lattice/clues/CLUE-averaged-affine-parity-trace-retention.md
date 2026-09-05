@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-averaged-affine-parity-trace-retention
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -35,3 +35,14 @@ Audit an actual unconditional averaged-correlation theorem with the same weights
 ## Evidence boundary
 
 No averaged bound, analytic continuation, or RH consequence is proposed as established. The direction does not reopen the failed fixed-shift `det_2` argument, nor claim that a usable shift average exists. It remains separate from the accepted abstract prime-action resolvent clue by fixing the affine parity carrier and its missing first trace.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-173-affine-liouville-averaging-collapse]]
+
+The two canonical source-forced averaging prescriptions fail in different exact ways. Uniformly averaging the translated Liouville diagonals gives a moving local Liouville average that converges strongly to zero as the shift aperture tends to infinity; if the aperture is held fixed, its first heat trace is only a finite combination of unresolved fixed-shift Chowla series. The theorem-level Matomaki--Radziwill--Tao averaged Chowla result becomes applicable only when the shift aperture grows with the observation scale and both endpoints are averaged, so it controls a moving finite-window mean-square observable rather than a fixed Dirichlet-series trace. Summing every admissible positive displacement once in a complete finite window collapses exactly to `[L(N)^2-N]/2`.
+
+A residual question survives only for a genuinely source-forced nonuniform weighting or comparison operation whose first-order signed carrier neither converges away nor reduces to a one-point summatory square, and for which an unconditional theorem controls the exact same weights.
