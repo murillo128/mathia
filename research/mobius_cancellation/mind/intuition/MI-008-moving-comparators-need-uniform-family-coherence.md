@@ -1,45 +1,46 @@
-# MI-008 — Moving quadratic comparators are squeezed to an exceptional-character frontier or a genuinely signed remainder
+# MI-008 — Quadratic comparator freedom collapses under positive feedback; the surviving route is genuinely coupled signed cancellation
 
-**Evidence level:** supported by MC-053--MC-069; exact for the convolution/feedback identities and literature-backed for Burgess/Munsch, Siegel--Walfisz, large-sieve, and Landau--Page inputs
+**Evidence level:** supported by MC-053--MC-072; exact for the convolution/inverse/block identities and literature-backed for Burgess/Munsch, Siegel--Walfisz, large-sieve, Landau--Page, and Siegel inputs
 
 ## Core intuition
 
-Allowing the comparator to move with scale escapes fixed-comparator transfer theorems, but the current positive quadratic-feedback architecture is now far narrower than a generic super-polylogarithmic/subpolynomial search corridor. The feedback condition forces an extreme negative terminal-prime twist; classical family and exceptional-character theory then says that ordinary nonexceptional quadratic characters are overwhelmingly unavailable.
+Allowing a quadratic comparator to move with scale does not leave a broad positive-feedback search corridor. The feedback condition forces an extreme arithmetic bias, and the current analysis now pushes the positive triangle architecture beyond the square-root conductor range at power scale. Even the possible Landau--Page exceptional character does not rescue it below `q=X^(2-o(1))`.
 
-The surviving issue is no longer “find many good moving characters.” It is either the possible moving Landau--Siegel exceptional character itself, a conductor range beyond the present pointwise uniform theorem, or a new argument that preserves signs inside the feedback sum instead of paying the positive triangle budget.
+The obvious signed escape is also sharply constrained. Inverting the feedback kernel is exact, but standalone cancellation of that inverse, or even of its first dyadic annulus, already carries the zeta and Dirichlet-`L` zero-free burden. The live mechanism is therefore **joint signed cancellation in the complete recovery sum**, not a better positive budget or an independently controlled inverse kernel.
 
 ## Strongest justified principle
 
-MC-053--MC-063 establish the family gate: good subquadratic fits require conductor growth and cannot turn over freely across scales. MC-064--MC-065 calibrate absolute transfer and its method-specific conductor penalty.
+MC-053--MC-065 establish the family/transfer gate: useful quadratic fits require conductor growth and pay explicit squarefree-character transfer costs. MC-066 identifies the exact positive feedback kernel `h_chi=1+mu^2 chi`; because `h_chi>=0`, triangle closure is controlled by the weighted mass `R_theta(X;chi)`.
 
-MC-066 gives the exact signed escape. For `f_chi=mu^2 chi` and `h_chi=1*f_chi`, positive triangle closure is controlled by
+MC-067--MC-069 show that this mass cannot be small for ordinary low conductors: polylogarithmic and stretched-exponential motion is excluded, the large sieve leaves only `O(log X)` prime-conductor candidates below square-root scale, and Landau--Page reduces the quasi-subpower range to at most one exceptional primitive character.
 
-`R_theta(X;chi)=sum_{2<=d<=X} h_chi(d)d^{-theta}`,
+MC-070 closes that exceptional positive corridor much further. The mean of `h_chi` is proportional to `L(1,chi)`, and Siegel's lower bound implies `R_theta>1` uniformly for every fixed `theta<=1-eta` and `q<=X^A`, `A<2`, once `X` is sufficiently large. Thus positive contraction requires `q>=X^(2-o(1))`. Combined with the Munsch/Burgess comparator estimate, the exact package cannot certify a fixed exponent below `theta=7/8`.
 
-where split primes contribute `2p^{-theta}`. MC-067 proves that every fixed polylogarithmic conductor, and in fact a fixed stretched-exponential range, fails this contraction uniformly for `theta` bounded away from one.
+MC-071 then computes the signed Dirichlet inverse `k_chi` exactly. Its Dirichlet series is
 
-MC-068 turns the same condition into a family theorem. `R_theta<1` forces a linear-size negative character correlation with primes in `(X/2,X]`; the multiplicative large sieve therefore permits only `O(log X)` prime quadratic conductors below square-root scale to pass the necessary feedback test.
+`K_chi(s)=L(2s,chi^2)/(zeta(s)L(s,chi))`.
 
-MC-069 sharpens the pointwise quasi-subpower range. Up to `Q<=exp(kappa log X/log log X)`, every nonexceptional primitive character has too much cancellation to support the required terminal bias. At most one prime conductor can survive, and it must be the unique Landau--Page exceptional primitive character at that level if such a character exists at all. Thus the positive-feedback corridor is stratified into an excluded low range, a singleton exceptional-character range, and only later a sparse family bound.
+A square-root-scale bound for its partial sums therefore implies RH for `zeta` and GRH for the comparator `L`-function; coefficientwise absolute inversion converges only for `Re(s)>1`. MC-072 shows that localization does not make this burden cheaper: the first reciprocal block is `K_chi(X)-K_chi(floor(X/2))`, and a power bound on those dyadic increments telescopes back to the same zero-free conclusion.
 
 ## What remains possible
 
-A positive continuation of this exact architecture must control the possible moving exceptional character coherently across scales, push pointwise arithmetic beyond the current quasi-subpower threshold, or prove cancellation in the signed feedback remainder itself. Merely searching a broad family of ordinary quadratic comparators below the pointwise threshold is closed.
+A continuation of this quadratic architecture must preserve cancellation **between** `k_chi(d)` and `F_chi(X/d)`, between reciprocal blocks, or in an equivalent coupled recurrence. It cannot first prove RH-scale control of `k_chi` or its leading annulus as an independent input. Positive triangle feedback is already methodically exhausted below near-square conductor, while the signed inverse is only useful if its cancellation is inseparable from the comparator values it weights.
 
-A different comparator class can evade the character-specific theorem, but it must expose its own transfer, feedback, complexity, and turnover resources explicitly.
+Alternative comparator classes remain logically possible, but each must expose its own transfer, feedback, complexity, turnover, and signed-coupling resources rather than inherit the quadratic conclusions by analogy.
 
 ## Status / novelty
 
-The character-sum, large-sieve, and exceptional-zero inputs are classical. The synthesis is the frontier reduction: **positive quadratic feedback turns moving-comparator freedom into an extreme prime-bias condition that is empty for ordinary low conductors, singleton-exceptional through a quasi-subpower range, and sparse farther out**.
+The character-sum, large-sieve, exceptional-zero, Siegel, Dirichlet-series, and dyadic-telescoping ingredients are classical. The synthesis is the frontier reduction: **moving quadratic comparators no longer offer an ordinary positive-feedback escape; the remaining information must live in a coupled signed recovery that cannot be factored into separately bounded pieces**.
 
 ## Falsification criterion
 
-Exhibit two distinct nonexceptional prime quadratic conductors in the MC-069 range satisfying `R_theta(X;q)<1` for a fixed gap from `theta=1`, or derive a source-forced signed feedback theorem that closes the recurrence without the positive budget `R_theta<1`.
+Exhibit a fixed `A<2`, `eta>0`, and arbitrarily large `X` with a prime quadratic comparator in `q<=X^A` satisfying the positive contraction `R_theta<1`, contradicting MC-070; or give a standalone subcritical power bound for the inverse kernel/first dyadic annulus without the corresponding zeta and Dirichlet-`L` zero-free consequence, contradicting MC-071/072.
 
 ## Lean-formalizable core
 
-- Exact signed convolution feedback identity.
-- Split-prime lower bound for `R_theta`.
-- Terminal-prime bias from contraction.
-- Large-sieve family sparsity.
-- Landau--Page singleton reduction in the quasi-subpower range.
+- Exact signed convolution feedback and inverse identities.
+- Positive feedback mass lower bound from the kernel mean.
+- Method-specific `7/8` certification floor.
+- Inverse-kernel Dirichlet-series factorization.
+- Dyadic-annulus telescoping to full inverse partial sums.
+- Logical distinction between standalone inverse control and coupled signed recovery.
