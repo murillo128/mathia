@@ -1,6 +1,6 @@
 # XF-041 — bounded periodic gap controls have nonlinear Cauchy spectral-gap damping
 
-**Status:** `EXACT-DERIVED` + `MATCHED-CONTROL` + `NONLINEAR-SPECTRAL-GAP` + `STRUCTURAL/DYNAMIC`. XF-040 shows that the exact two-gap periodic continuation of the XF-039 alternating microcorrugation is rapidly damped by the backward-heat zero dynamics. The two-gap solvability is not essential for that conclusion. On every real-simple `q`-periodic gap trajectory of the logarithmic zero-motion law, the exact nonlinear positive-conductance diffusion of XF-014 has a quantitative Cauchy spectral gap. If the gaps initially have bounded dynamic range, their variance around the period mean decays exponentially at rate `asymp 1/(q s^2)`, where `s` is the mean gap.
+**Status:** `EXACT-DERIVED` + `MATCHED-CONTROL` + `NONLINEAR-SPECTRAL-GAP` + `STRUCTURAL/DYNAMIC`. XF-040 shows that the exact two-gap periodic continuation of the XF-039 alternating microcorrugation is rapidly damped by the backward-heat zero dynamics. The two-gap solvability is not essential for that conclusion. On every real-simple `q`-periodic gap trajectory of the logarithmic zero-motion law, the exact nonlinear positive-conductance diffusion of XF-014 has a quantitative Cauchy spectral gap. If the initial maximum gap is bounded by a fixed multiple of the period mean, the variance around that mean decays exponentially at rate `asymp 1/(q s^2)`, where `s` is the mean gap; no lower-gap bound or small-perturbation hypothesis is required.
 
 More precisely, let `q>=2` and let an ordered real-simple zero trajectory satisfy
 
@@ -39,28 +39,36 @@ E(t_0)
 
 The coefficient is nonlinear and global: no small-perturbation assumption is used. Its `q`-dependence is the exact spectral gap of the periodized inverse-square/Cauchy kernel. For `q=2` and a small corrugation, the corresponding amplitude decay rate tends to `pi^2/s^2`, exactly the rate computed independently in XF-040.
 
-At the Xi source spacing `s=h_T~4pi/log T`, suppose the periodic control has `b_0<=C s` with fixed `C` and an initial relative amplitude of order `M^{-1-alpha}`, `0<alpha<1`, where `M=R(T)log^2 T` is the active source buffer. The bound (3) drives the whole period to relative amplitude `O(M^-2)` — a sufficient scale for `M V_M=O(1)` — after
+At the Xi source spacing `s=h_T~4pi/log T`, suppose only that the periodic control has `b_0<=C s` with fixed `C`. Positivity of the gaps and their mean `s` then already give a uniform initial-amplitude bound
+
+\[
+A_0:=\max_i\left|\frac{g_i(t_0)}s-1\right|
+\le A_C:=\max\{1,C-1\}.
+\]
+
+Thus (3) drives an **arbitrary finite-contrast** period to relative amplitude `O(M^-2)` — a sufficient scale for `M V_M=O(1)` — after a heat time `Delta t_*` satisfying
 
 \[
 \boxed{
-\Delta t
+\Delta t_*
 \le
 \frac{4C^2 q^2}{q-1}
-\frac{(1-\alpha)\log M+\frac12\log q+O(1)}{(\log T)^2}.
+\frac{2\log M+\frac12\log q+O_C(1)}{(\log T)^2}
+\bigl(1+o(1)\bigr).
 }
 \tag{4}
 \]
 
-Since the source regime has `log M=O(log T)`, every bounded-range periodic obstruction with
+Here `M=R(T)log^2 T` is the active source buffer. Since the source regime has `log M=O(log T)`, every such periodic obstruction with
 
 \[
 \boxed{q=o(\log T)}
 \tag{5}
 \]
 
-is therefore forced through the inverse-buffer amplitude scale in **vanishing heat time**. XF-040 is the `q=2` exactly solvable endpoint of a much broader nonlinear smoothing mechanism.
+is forced through the inverse-buffer amplitude scale in **vanishing heat time**, even when its initial relative contrast is order one. XF-040 is the `q=2` exactly solvable endpoint of a much broader nonlinear smoothing mechanism.
 
-This still does **not** prove the needed finite-window Xi estimate. Periodicity removes the exterior flux by identification, whereas a finite Xi window can be continually replenished from outside. The durable narrowing is that a source-compatible persistent obstruction cannot be explained by a coherent short-period microscopic pattern: it must exploit exterior forcing, nonperiodic transport, or wavelengths of at least order `log T` gaps, where the Cauchy relaxation clock ceases to vanish on an order-one heat interval.
+This still does **not** prove the needed finite-window Xi estimate. Periodicity removes the exterior flux by identification, whereas a finite Xi window can be continually replenished from outside. The durable narrowing is that a source-compatible persistent obstruction cannot be explained by a coherent short-period microscopic pattern merely by giving that pattern finite initial contrast: it must exploit exterior forcing, nonperiodic transport, or wavelengths of at least order `log T` gaps, where the Cauchy relaxation clock ceases to vanish on an order-one heat interval.
 
 ## 1. The periodic gap system closes to a finite positive-conductance diffusion
 
@@ -115,7 +123,7 @@ is constant. At an index realizing the period maximum, every term in (8) is nonp
 \tag{10}
 \]
 
-for all later real-simple times. Thus the bounded dynamic range can only improve.
+for all later real-simple times. Thus the bounded maximum-to-mean ratio can only improve, while the minimum gap cannot decrease.
 
 This is already a useful distinction from the finite-window problem. There is no boundary term in (8): all long-range interactions re-enter through the quotient conductances `C_ij`.
 
@@ -162,7 +170,7 @@ The elementary Mittag--Leffler identity gives
 
 \[
 \sum_{n\in\mathbb Z}\frac1{(r+nq)^2}
-=rac{\pi^2}{q^2}
+=\frac{\pi^2}{q^2}
 \csc^2\!\left(\frac{\pi r}{q}\right).
 \tag{15}
 \]
@@ -358,7 +366,7 @@ XF-040 independently derives the exact nonlinear scalar law and obtains precisel
 
 For large `q`, the slowest nonconstant period mode has rate `asymp 1/(q s^2)` rather than `1/s^2`. This identifies the expected transition from microscopic to longer-wave behavior without appealing to the lattice linearization: it is already forced by the exact nonlinear conductance lower bound.
 
-## 6. Source-scale consequence: all sub-`log T` periodic microstructure relaxes in vanishing time
+## 6. Source-scale consequence: finite contrast does not rescue sub-`log T` periodic microstructure
 
 Assume a matched periodic control is observed at the source mean gap
 
@@ -367,31 +375,33 @@ s=h_T\sim\frac{4\pi}{\log T}
 \tag{33}
 \]
 
-and has uniformly bounded dynamic range
+and has only the fixed maximum-to-mean bound
 
 \[
 b_0\le C s
 \tag{34}
 \]
 
-for a fixed `C`. Suppose its initial relative amplitude obeys the same static scale as the XF-039 obstruction,
+for a fixed `C`. Because all gaps are positive and their period mean is exactly `s`, every initial gap ratio lies in `(0,C]`. Hence
 
 \[
-A_0=O(M^{-1-\alpha}),
-\qquad 0<\alpha<1.
+\boxed{
+A_0:=\max_i\left|\frac{g_i(t_0)}s-1\right|
+\le A_C:=\max\{1,C-1\}.
+}
 \tag{35}
 \]
 
-Equation (30) implies `A(t_0+Delta t)=O(M^-2)` once
+This is the only initial-amplitude input needed. In particular, the `A_0=O(M^{-1-alpha})` scale of the XF-039 microcorrugation is not required. Equation (30) implies `A(t_0+Delta t)=O(M^-2)` once
 
 \[
 \frac{4\pi^2(q-1)}{q^2b_0^2}\Delta t
 \ge
-(1-\alpha)\log M+\frac12\log q+O(1).
+2\log M+\frac12\log q+O_C(1).
 \tag{36}
 \]
 
-Using (33)--(34) gives (4).
+Using (33)--(34) yields (4). This remains valid when some initial gaps are arbitrarily small compared with `s`: no lower-gap ratio enters the damping estimate, and the maximum principle prevents those gaps from shrinking further while the conductance lower bound only becomes stronger.
 
 Why is `M^-2` the relevant target? Once `A=O(M^-2)`, all adjacent logarithmic contrasts satisfy `d_j=O(M^-2)`. The exact compact flux law of XF-035 has `phi=F'(d)=O(d)` near zero, so over an `O(M)`-gap sample
 
@@ -412,8 +422,8 @@ An `o(M^-2)` amplitude gives the stronger `M V_M=o(1)` gate.
 For the source buffer `M=R(T)log^2T` with `R(T)=o(T/log T)`, one has `log M=O(log T)`. Hence (4) is
 
 \[
-\Delta t
-=O\!\left(\frac{q\log T+q\log q}{\log^2T}\right)
+\Delta t_*
+=O_C\!\left(\frac{q\log T+q\log q}{\log^2T}\right)
 \tag{39}
 \]
 
@@ -422,11 +432,11 @@ for large `q`, and in particular
 \[
 q=o(\log T)
 \quad\Longrightarrow\quad
-\Delta t=o(1).
+\Delta t_*=o(1).
 \tag{40}
 \]
 
-So a coherent periodic pattern on `o(log T)` gaps cannot sustain the XF-039 inverse-buffer defect over any fixed positive amount of real-rooted heat time. The borderline `q~log T` corresponds to a physical wavelength `q s=Theta(1)`, which is exactly where this simple vanishing-time conclusion stops.
+So a coherent periodic pattern on `o(log T)` gaps cannot sustain an inverse-buffer flux defect over any fixed positive amount of real-rooted heat time solely by starting at finite or order-one contrast. The borderline `q~log T` corresponds to a physical wavelength `q s=Theta(1)`, which is exactly where this simple vanishing-time conclusion stops.
 
 This is a scale separator, not an Xi proof. It says that the missing persistent mode cannot remain purely microscopic and periodic once a fixed heat-time depth is available.
 
@@ -434,12 +444,12 @@ This is a scale separator, not an Xi proof. It says that the missing persistent 
 
 The mechanism is deliberately universal. It uses only the exact ordered logarithmic-repulsion gap equation of XF-014, positivity of its conductances, and elementary periodized inverse-square identities. Any periodic synthetic log-particle control in the real-simple regime inherits it. Periodic/trigonometric backward heat flow is classical territory, and Kabluchko's backward-heat work is already anchored in `SOURCES.md`; Guillin--Le Bris--Monmarche is already anchored there as the broader one-dimensional positive-contraction prior-art boundary. No new source is load-bearing, and no claim of novelty is made for contraction of periodic repulsive particle systems or for the trigonometric identity (15).
 
-The Mathia-local content is the quantitative bridge between three previously separate pieces of this line: the exact nonlinear conductance diffusion of XF-014, the Cauchy `|theta|` spectral scaling of XF-007--XF-008, and the inverse-buffer flux threshold isolated by XF-035--XF-040. Equation (3) shows that these are not merely compatible pictures: the exact nonlinear dynamics dominate the periodized Cauchy generator with the correct `1/q` spectral gap.
+The Mathia-local content is the quantitative bridge between three previously separate pieces of this line: the exact nonlinear conductance diffusion of XF-014, the Cauchy `|theta|` spectral scaling of XF-007--XF-008, and the inverse-buffer flux threshold isolated by XF-035--XF-040. Equation (3) shows that these are not merely compatible pictures: the exact nonlinear dynamics dominate the periodized Cauchy generator with the correct `1/q` spectral gap. The finite-contrast strengthening in Section 6 is an immediate consequence of that same exact estimate plus positivity and the period-mean constraint; it introduces no additional external theorem.
 
 The line-specific falsification boundary remains finite-window forcing. A finite Xi block does not satisfy (8): its exterior cannot be quotiented away, and it can inject variation through the buffer. Nor does source counting by itself control heat-time depth from the collision boundary. Thus (40) cannot be applied to an arbitrary Xi block by periodically extending it; that would change the exterior dynamics whose control is precisely the missing theorem.
 
 ## 8. Consequence for `xi_flow`
 
-XF-039's static microcorrugation and XF-040's exact alternating control no longer leave open the possibility that the two-gap pattern was exceptionally benign. **Every bounded-range periodic microstructure with period `q=o(log T)` is nonlinearly damped through the inverse-buffer amplitude scale in vanishing source heat time.** A persistent negative continuation must therefore use one of two genuinely new resources: exterior replenishment/nonperiodic transport, or a wavelength at least `Theta(log T)` gaps (physical scale `Theta(1)`) where the relaxation time can remain order one.
+XF-039's static microcorrugation and XF-040's exact alternating control no longer leave open the possibility that the two-gap pattern was exceptionally benign. **Every periodic microstructure with fixed maximum-to-mean ratio and period `q=o(log T)` is nonlinearly damped through the inverse-buffer amplitude scale in vanishing source heat time, without any small initial-amplitude assumption.** A persistent negative continuation must therefore use one of two genuinely new resources: exterior replenishment/nonperiodic transport, or a wavelength at least `Theta(log T)` gaps (physical scale `Theta(1)`) where the relaxation time can remain order one.
 
-That gives a sharper target for the next positive step. Instead of trying to control all microscopic flux variation directly, decompose a finite Xi window into sub-`log T` oscillation and longer-wave content. The present finding supplies the exact nonlinear model estimate for why the short-period part should dissipate; translated Xi counting and the XF-036--XF-038 rigidity package are naturally aimed at the longer-wave part. What is still missing is a localized/time-integrated inequality that survives the exterior boundary flux and makes that frequency separation quantitative on the actual Xi flow.
+That gives a sharper target for the next positive step. Instead of trying to control all microscopic flux variation directly, decompose a finite Xi window into sub-`log T` oscillation and longer-wave content. The present finding supplies the exact nonlinear model estimate for why the short-period part should dissipate even at finite contrast; translated Xi counting and the XF-036--XF-038 rigidity package are naturally aimed at the longer-wave part. What is still missing is a localized/time-integrated inequality that survives the exterior boundary flux and makes that frequency separation quantitative on the actual Xi flow.
