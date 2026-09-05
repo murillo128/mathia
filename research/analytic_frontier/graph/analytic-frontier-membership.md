@@ -51,3 +51,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/analytic_frontier/findings/ANF-040-remaining-five-point-geometry-reuses-the-same-infinitesimal-curvature-gate|ANF-040]]
 - [[research/analytic_frontier/findings/ANF-041-curvature-gram-coupling-closes-the-zero-margin-five-point-boundary|ANF-041]]
 - [[research/analytic_frontier/findings/ANF-042-two-pair-five-point-descent-has-a-sharp-one-self-energy-floor|ANF-042]]
+- [[research/analytic_frontier/findings/ANF-043-positive-spectrum-two-pair-five-point-defect-is-height-coercive|ANF-043]]
+- [[research/analytic_frontier/findings/ANF-044-two-pair-five-point-negative-defects-compactify-after-curvature-gate|ANF-044]]
+- [[research/analytic_frontier/findings/ANF-045-two-pair-five-point-obstruction-scalarizes-to-a-strict-hilbert-coherence-gap|ANF-045]]
+- [[research/analytic_frontier/findings/ANF-046-central-notch-pair-functional-gain-dominates-exact-normalization-slack|ANF-046]]

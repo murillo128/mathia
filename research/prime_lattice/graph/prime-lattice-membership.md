@@ -42,3 +42,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-159-fixed-step-suzuki-lower-recurrence-frontier|PL-159]]
 - [[research/prime_lattice/findings/PL-160-attained-frontier-fixed-step-lower-escape|PL-160]]
 - [[research/prime_lattice/findings/PL-161-fixed-step-pringsheim-frontier-phase-pinning|PL-161]]
+- [[research/prime_lattice/findings/PL-162-finite-prime-phase-pinning-vertical-genericity|PL-162]]
+- [[research/prime_lattice/findings/PL-163-landau-gonek-fejer-frontier-resolution-barrier|PL-163]]
+- [[research/prime_lattice/findings/PL-164-fixed-finite-prime-positive-harmonic-cap|PL-164]]
+- [[research/prime_lattice/findings/PL-165-growing-prime-dimension-finite-phase-marginal-cap|PL-165]]
+- [[research/prime_lattice/findings/PL-166-fmz-primorial-frequency-horizon-barrier|PL-166]]

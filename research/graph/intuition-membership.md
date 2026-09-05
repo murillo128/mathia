@@ -42,6 +42,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-009-quotient-repair-has-category-regularity-and-naturality-gates]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-011-coherent-exact-description-has-an-entropy-atomicity-gate]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-012-regular-recovery-orders-the-full-multiscale-information-profile]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]

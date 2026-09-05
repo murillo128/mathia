@@ -46,3 +46,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/xi_flow/findings/XF-035-xi-counting-has-sharp-inverse-buffer-flux-variation-stability-threshold|XF-035]]
 - [[research/xi_flow/findings/XF-036-translated-xi-counting-closes-the-borderline-flux-fold|XF-036]]
 - [[research/xi_flow/findings/XF-037-borderline-flux-control-collapses-total-log-gap-variation|XF-037]]
+- [[research/xi_flow/findings/XF-038-vanishing-log-gap-variation-rigidifies-cross-ratio-network-to-cauchy-form|XF-038]]
+- [[research/xi_flow/findings/XF-039-source-counting-and-cauchy-rigidity-do-not-recover-inverse-buffer-flux-control|XF-039]]
+- [[research/xi_flow/findings/XF-040-exact-two-gap-periodic-controls-damp-microcorrugation-on-the-microscopic-heat-clock|XF-040]]
+- [[research/xi_flow/findings/XF-041-bounded-periodic-gap-controls-have-nonlinear-cauchy-spectral-gap-damping|XF-041]]
+- [[research/xi_flow/findings/XF-042-finite-window-cauchy-relaxation-is-input-to-state-stable-under-centered-exterior-mismatch|XF-042]]

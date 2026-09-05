@@ -14,35 +14,38 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `cec27ab2ab7e14ef1ef8e3849412abd6171bd574` → `2b7a9b6d8525663ee114e18eaee06419d6286f8a` contributes seventeen episodes:
+The newest source window `5bedbb75f42d68c3669a8e516609c5e51974583b` → `24510ce4ed500bcf8ef8cd7b533e6b7a770db23b` contributes fifteen episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `analytic_frontier` | 2 | 2 | 0 | 0 | 0 |
-| `arithmetic_fidelity` | 2 | 2 | 0 | 0 | 0 |
-| `mobius_cancellation` | 3 | 1 | 1 | 0 | 1 |
+| `analytic_frontier` | 1 | 1 | 0 | 0 | 0 |
+| `arithmetic_fidelity` | 2 | 1 | 1 | 0 | 0 |
+| `mobius_cancellation` | 2 | 0 | 1 | 0 | 1 |
 | `prime_circle` | 1 | 0 | 0 | 0 | 1 |
-| `prime_lattice` | 3 | 2 | 0 | 0 | 1 |
-| `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
-| `weil_inertia` | 2 | 0 | 0 | 0 | 2 |
+| `prime_flute` | 1 | 0 | 0 | 0 | 1 |
+| `prime_lattice` | 1 | 0 | 0 | 0 | 1 |
+| `visual_exploration` | 3 | 1 | 1 | 0 | 1 |
+| `weil_inertia` | 1 | 0 | 0 | 0 | 1 |
 | `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
 | `xi_flow` | 2 | 1 | 0 | 0 | 1 |
-| **Total** | **17** | **8** | **2** | **0** | **7** |
+| **Total** | **15** | **4** | **3** | **0** | **8** |
 
-The source delta is unusually bifurcated rather than uniformly narrowing. Analytic Frontier removes the finite-real Montgomery–Taylor ceiling and reduces the complex five-point burden to a precise finite-height phase-coherence problem. Arithmetic Fidelity expands the usable resource language from ideal/scale gates to entropy and full quantization profiles. Möbius Cancellation finds an exact signed-feedback escape but classical Page–Siegel/Landau–Page theory sharply constrains the positive-feedback conductor family. Prime Lattice simultaneously proves strong checkpoint sufficiency, exhibits exact fixed-step aliasing, and phase-pins the only remaining one-sided fixed-ray loophole.
+The source delta narrows several live mechanisms to explicit compact or source-conditioned gates. Analytic Frontier converts its last cardinality-five complex escape into a compact Hilbert-coherence test while the central-notch candidate survives the cheapest affine slack. Arithmetic Fidelity adds a genuinely useful fiberwise multiscale recovery profile, but its approximate-statistical branch is classical Le Cam theory. Möbius Cancellation closes positive quadratic feedback and decoupled inverse estimates while its factorization freedom classicalizes to a Dirichlet gauge.
 
-The negative side is equally concrete. Prime Circle's exact refinement category collapses to universal homogeneous/Robin models; Weil Inertia closes support-one scalar and positive-matrix universality and shows that the available pointwise form-factor error does not control singular near-extremizers; Weil Positivity loses its resultant selector under every local positive finite-energy renormalization; and finite-range Xi shape forces retain geometric-ramp null modes. Xi-specific counting plus borderline flux control nevertheless gives a live source-sensitive rigidity theorem. Visual Exploration contributes classicalized controls rather than a new independent channel.
+The structural-closure side is broad. Prime Circle removes ordinary regular-symbol freedom from fixed weak refinement forms, Prime Flute makes the whole bounded tail spectrum composite-blind, and Prime Lattice shows that finite or directly growing positive prime-phase localization cannot resolve an interior horizontal frontier. Weil Inertia still needs zeta-specific control at the singular BGSTB interface, while Weil Positivity loses its selector under both natural cutoff and direct local cohomological completion. Visual Exploration simultaneously gains a clean endpoint-safe Farey matched-control experiment and classifies full xi-field renderings and CA modes as recodings/classical controls rather than independent evidence.
+
+Xi Flow now cleanly separates static insufficiency from dynamical progress. Cauchy-rigid near-lattice geometry alone does not supply the inverse-buffer flux bound, but nonlinear periodic damping survives without a small-perturbation assumption and extends to a finite-window input-to-state estimate in which only centered exterior mismatch can replenish shape variance. This leaves a concrete source theorem about exterior forcing rather than an unspecified static rigidity gap.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **9 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **9 new barriers**. Therefore:
+Across the retained 20-episode window there are **5 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
 
-- `FrontierFertilityEpisodes = 45.0%`
-- `BarrierRate = 45.0%`
-- `PriorArtCollisionRate = 10.0%`
+- `FrontierFertilityEpisodes = 25.0%`
+- `BarrierRate = 60.0%`
+- `PriorArtCollisionRate = 15.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The retained window is balanced between viable movement and structural closure rather than dominated by one side. The live movement is concentrated in explicit scalar separation beyond finite-real tests, category-aware multiscale/entropy fidelity, signed Möbius feedback, source-sensitive Suzuki anti-aliasing, remote spectral repair, and Xi flux rigidity. The barriers increasingly rule out whole representation categories rather than isolated parameter choices. This describes only the recent mapped frontier: it is not a percentage of RH solved and does not imply saturation of unknown representations outside the current atlas.
+The recent mapped frontier is increasingly dominated by structural closure, but the viable remainder is more sharply localized: compact five-point coherence, fiberwise multiscale fidelity, endpoint-safe Farey residuals, and finite-window Xi damping. The barrier rate describes only the current represented search frontier; it is not a percentage of RH solved and does not imply saturation of unknown representations outside the Atlas.
 
 Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.

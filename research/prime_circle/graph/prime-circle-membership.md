@@ -37,3 +37,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-169-full-refinement-invariant-inverse-square-domains-are-universal-scale-fixed-points|PC-169]]
 - [[research/prime_circle/findings/PC-170-bounded-nonlocal-robin-repairs-are-incompatible-with-exact-power-refinement|PC-170]]
 - [[research/prime_circle/findings/PC-171-strong-refinement-covariant-robin-operators-collapse-to-four-parameters|PC-171]]
+- [[research/prime_circle/findings/PC-172-finite-support-singular-robin-forms-collapse-to-anchor-delta-prime|PC-172]]
+- [[research/prime_circle/findings/PC-173-all-fixed-distributional-robin-coefficients-are-universal-dtn-anchor-modes|PC-173]]
+- [[research/prime_circle/findings/PC-174-weak-refinement-covariant-forms-are-multiplicative-toeplitz-with-no-compact-defect|PC-174]]
+- [[research/prime_circle/findings/PC-175-bounded-refinement-ratio-symbols-have-zero-euclidean-mesh-density|PC-175]]

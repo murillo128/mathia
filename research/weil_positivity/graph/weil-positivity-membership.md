@@ -35,3 +35,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-148-canonical-resultant-graph-laplacian-has-infinite-critical-degree-and-trivial-l2-domain|WP-148]]
 - [[research/weil_positivity/findings/WP-149-spectator-prime-parallel-paths-collapse-resultant-resistance-and-energy-space|WP-149]]
 - [[research/weil_positivity/findings/WP-150-local-finite-energy-renormalizations-erase-resultant-arithmetic-edges|WP-150]]
+- [[research/weil_positivity/findings/WP-151-normalized-resultant-mass-escape-is-exhaustion-dependent|WP-151]]
+- [[research/weil_positivity/findings/WP-152-natural-shell-size-cutoff-leaves-only-a-universal-root-boundary-layer|WP-152]]
+- [[research/weil_positivity/findings/WP-153-natural-cutoff-root-spectral-measure-is-a-universal-two-atom-boundary-law|WP-153]]
+- [[research/weil_positivity/findings/WP-154-resultant-chord-curvature-is-prime-local-and-flat-across-primes|WP-154]]

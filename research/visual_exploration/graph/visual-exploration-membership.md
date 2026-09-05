@@ -34,3 +34,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-028-farey-endpoint-fan-forces-n-scale-spectrum|VIS-028]]
 - [[research/visual_exploration/findings/VIS-029-farey-fixed-nx-endpoint-totient-layers|VIS-029]]
 - [[research/visual_exploration/findings/VIS-030-farey-endpoint-profile-totient-riesz-remainder|VIS-030]]
+- [[research/visual_exploration/findings/VIS-031-farey-fixed-endpoints-vanish-sublinear-bands|VIS-031]]
+- [[research/visual_exploration/findings/VIS-032-reflection-null-sublinear-band-saturates-green-energy|VIS-032]]
+- [[research/visual_exploration/findings/VIS-033-complete-xi-field-visualizations-collapse-to-zero-divisor|VIS-033]]
+- [[research/visual_exploration/findings/VIS-034-farey-low-band-suppression-factorization|VIS-034]]
+- [[research/visual_exploration/findings/VIS-035-three-gap-ca-spectrum-maximal-correlation|VIS-035]]
