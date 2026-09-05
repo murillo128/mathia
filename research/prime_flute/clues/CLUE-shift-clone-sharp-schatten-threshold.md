@@ -13,6 +13,7 @@ based_on:
   - research/prime_flute/findings/PF-173-relative-central-recoupling-is-trace-summable.md
   - research/prime_flute/findings/PF-174-weighted-defect-controls-smoothed-schatten-scale.md
   - research/prime_flute/findings/PF-175-weighted-defect-gives-dual-resolvent-schatten-bridge.md
+  - research/prime_flute/findings/PF-176-boundary-moser-removes-only-the-volume-gauge-obstruction.md
 ---
 
 # Does the prime/shift relative resolvent have the sharp Schatten threshold `S_r`, `r>1`?
@@ -47,6 +48,8 @@ J^\vee=(I^{-1})^*.
 
 The same weighted input reaches the trivial and density-unitary identifications for `r>=2`. Thus the analytic bridge is no longer wholly open: the residual difficulty separates into **global weighted body/interface geometry** and, for the natural density-unitary comparison, the identification-sensitive strip `1<r<2`.
 
+PF-176 removes one purely qualitative ambiguity from that strip. On every compactly truncated matched one-cusp pant, Gauss--Bonnet plus PF-125's exact common deep-cusp normalization give equal source/target area, and Banyaga's boundary Moser theorem converts any smooth marked comparison into an area-preserving one without changing its boundary values. Therefore abstract existence of a boundary-compatible `rho=1` gauge is not the obstacle. The missing statement is quantitative: the corrections must glue smoothly and retain degeneration-uniform quasi-isometry and the inverse-unit-ball weighted metric budget.
+
 ## Research question
 
 For the common-manifold density-unitary Laplacians associated with a smooth globally coherent prime/shift marking, does
@@ -65,13 +68,13 @@ A\notin\mathcal S_1?
 }
 \]
 
-The negative endpoint is PF-112. For the positive side, PF-175 shows that no further abstract resolvent unsmoothing theorem is needed once the perturbation can be expressed in the dual-volume form: weighted `delta^r` control already gives `S_r` for all `r>1`. What remains is to obtain that weighted control for the **actual outer collar/body transmission and globally boundary-coherent marking**, and then either transfer the dual result to the density-unitary identification in `1<r<2` or choose a marking for which the identifications coincide.
+The negative endpoint is PF-112. For the positive side, PF-175 shows that no further abstract resolvent unsmoothing theorem is needed once the perturbation can be expressed in the dual-volume form: weighted `delta^r` control already gives `S_r` for all `r>1`. What remains is to obtain that weighted control for the **actual outer collar/body transmission and globally boundary-coherent marking**, and then either transfer the dual result to the density-unitary identification in `1<r<2` or realize PF-176's qualitative area-preserving gauge with the quantitative control required by PF-175.
 
 ## Why it may matter
 
 A positive answer would complete the natural operator-ideal classification between PF-112 and PF-125 and place the pair in every Schatten class strictly above the trace endpoint. It would still not be prime-specific: the exact all-composite shift clone shares the same classification.
 
-A negative answer for some `r>1` would now identify a genuinely global amplification mechanism. Such an obstruction cannot be attributed merely to zero systole, the complete fixed-central short-collar family, the central transmission zero mode, failure of Schatten interpolation for the heat factors, or absence of a first-resolvent factorization; those channels are controlled by PF-171, PF-173, PF-174, and PF-175.
+A negative answer for some `r>1` would now identify a genuinely global amplification mechanism. Such an obstruction cannot be attributed merely to zero systole, the complete fixed-central short-collar family, the central transmission zero mode, failure of Schatten interpolation for the heat factors, absence of a first-resolvent factorization, or mere topological nonexistence of an area-preserving pant marking; those channels are controlled by PF-171, PF-173, PF-174, PF-175, and PF-176.
 
 ## Decisive test
 
@@ -86,11 +89,13 @@ The first obligation is geometric. Construct or obstruct one smooth complete qua
 
 for the desired exponents. The already-controlled Margulis-short central collars must be removed from the uncertainty ledger rather than re-estimated. The live question is the actual outer interface trace, complementary body response, localization overlap, and repeated head-tail assembly.
 
-If that weighted geometric gate succeeds, PF-175 immediately supplies the dual-volume `S_r` comparison for every `r>1` and the density-unitary comparison for `r>=2`. The remaining sharp test is then the strip `1<r<2`. One concrete route is to ask whether the boundary-compatible marking can be chosen area preserving, `rho=1`, without losing the weighted metric budget. In that case `J^\vee=I=U`, so PF-175 would give the standard density-unitary result for every `r>1`. This is only a proposed geometric route; existence of such a marked area-preserving comparison is not established.
+If that weighted geometric gate succeeds, PF-175 immediately supplies the dual-volume `S_r` comparison for every `r>1` and the density-unitary comparison for `r>=2`. The remaining sharp test is then the strip `1<r<2`.
+
+The cleanest geometric route is no longer to ask whether an area-preserving pant marking exists: PF-176 answers that qualitative question on every compactly truncated matched pant. Instead, construct a **quantitative boundary-relative Moser correction** of the actual PF-125 tail such that the corrected maps have compatible boundary jets (or a common fixed collar model), remain uniformly `1+O(\varepsilon_n)` quasi-isometric, and add a summable inverse-unit-ball weighted `delta^r` cost. If this can be done, the glued global comparison has `rho=1`, hence `J^\vee=I=U`, and PF-175 gives the standard density-unitary result for every `r>1`.
 
 A second route is an operator estimate for the one-sided density correction in `1<r<2` that uses more structure than the `S_2`-to-operator interpolation of PF-175. Any such argument must preserve PF-112's endpoint obstruction: a method that also forces the standard first resolvent into `S_1` has erased a real high-frequency contribution.
 
-A decisive negative resolution must instead produce a singular-value lower bound in the unresolved body/interface/nonlocal channel, or show that every coherent marking necessarily violates the required weighted metric integrability. Concentration solely in the already-controlled central short collars or in the heat-factor step is no longer sufficient.
+A decisive negative resolution must instead produce a singular-value lower bound in the unresolved body/interface/nonlocal channel, prove that every smooth coherent marking necessarily violates the required weighted metric integrability, or show that any area-preserving boundary-relative correction with smooth tail gluing necessarily destroys that weighted budget. Concentration solely in the already-controlled central short collars or in the heat-factor step is no longer sufficient.
 
 ## Evidence boundary
 
@@ -98,10 +103,12 @@ PF-171 concerns the Dirichlet-decoupled fixed-central collar direct sum. PF-173 
 
 PF-174 proves the weighted short-collar input and heat-smoothed Schatten factorization, not the global body/interface estimate. PF-175 proves a conditional first-resolvent theorem from weighted metric deviation, but the strongest `r>1` statement uses `J^\vee=(I^{-1})^*`, not automatically the canonical density-unitary identification. PF-126 remains unweighted, while PF-130/PF-139 give strong unweighted body information without the complete inverse-unit-ball weighted assembly.
 
+PF-176 proves only qualitative, pant-local boundary-fixed volume correction. Banyaga's theorem does not supply degeneration-uniform derivative estimates, matching normal jets across the infinite cuff chain, or the weighted metric-deviation bound needed by PF-175. Area preservation controls the Jacobian determinant, not the full anisotropy of the transported metric.
+
 Accordingly, neither the desired density-unitary `S_r` conclusion for all `r>1` nor a counterexample for any `r>1` is established. The clue remains a research target rather than evidence.
 
 ## Research disposition
 
-The clue remains `accepted`, with two previous analytic subproblems now removed. Future work should not spend another cycle on central short-collar Schatten summation, Güneysu--Thalmaier multiplier interpolation, or a generic attempt to invert heat smoothing. PF-175 supplies the resolvent bridge once weighted geometry is available in the dual-volume gauge.
+The clue remains `accepted`, with three previous analytic/geometric subproblems now removed. Future work should not spend another cycle on central short-collar Schatten summation, Güneysu--Thalmaier multiplier interpolation, a generic attempt to invert heat smoothing, or qualitative existence of an area-preserving pant marking. PF-175 supplies the resolvent bridge once weighted geometry is available in the dual-volume gauge, and PF-176 shows that `rho=1` is qualitatively attainable pant by pant.
 
-The live frontier is now more precise: **close the global weighted outer/body/interface metric budget, then close the density-identification strip `1<r<2`**. The area-preserving-marking test is a particularly sharp geometric subquestion because it would make the dual, trivial, and density-unitary identifications coincide without inventing a new operator theorem. The clue resolves only when the full uncut density-unitary first relative resolvent is classified, or when a genuine global operator/geometric obstruction for some `r>1` is found.
+The live frontier is now more precise: **close the global weighted outer/body/interface metric budget, then either build a quantitatively controlled smooth area-preserving correction or close the density-identification strip `1<r<2` directly at operator level**. The clue resolves only when the full uncut density-unitary first relative resolvent is classified, or when a genuine global operator/geometric obstruction for some `r>1` is found.
