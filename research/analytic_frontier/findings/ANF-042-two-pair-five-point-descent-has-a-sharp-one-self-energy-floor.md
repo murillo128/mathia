@@ -83,7 +83,7 @@ Write
 \qquad
 m:=\frac{\theta_1+\theta_2}{2},
 \qquad
-\nu:=\frac{\theta_1-\theta_2}{2}=\pi\alpha d,
+nu:=\frac{\theta_1-\theta_2}{2}=\pi\alpha d,
 \]
 
 and abbreviate
