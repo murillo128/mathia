@@ -58,3 +58,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_inertia/findings/WI-161-prefix-subtraction-restores-split-dyadic-bgstb-error|WI-161]]
 - [[research/weil_inertia/findings/WI-162-source-level-mean-value-localizes-singular-scalar-escape-to-support-edge|WI-162]]
 - [[research/weil_inertia/findings/WI-163-source-level-integration-closes-sublinear-support-edge-loophole|WI-163]]
+- [[research/weil_inertia/findings/WI-164-schur-normalization-cancels-horizontal-collapse|WI-164]]
+- [[research/weil_inertia/findings/WI-165-positive-mixtures-of-fixed-block-bounds-cannot-beat-best-constituent|WI-165]]
+- [[research/weil_inertia/findings/WI-166-four-point-positive-cover-relaxation-is-sharp|WI-166]]
+- [[research/weil_inertia/findings/WI-167-quantized-flag-refinements-cannot-charge-lamzouri-confluence|WI-167]]
+- [[research/weil_inertia/findings/WI-168-same-deficit-quantized-flag-rank-is-at-most-four-delta|WI-168]]

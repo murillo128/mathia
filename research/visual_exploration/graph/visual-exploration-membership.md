@@ -43,3 +43,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-037-three-gap-lrt-pearson-local-equivalence-control|VIS-037]]
 - [[research/visual_exploration/findings/VIS-038-three-gap-lrt-pearson-cubic-residual-correction|VIS-038]]
 - [[research/visual_exploration/findings/VIS-039-three-gap-cmi-even-finite-size-expansion|VIS-039]]
+- [[research/visual_exploration/findings/VIS-040-markov-closure-fisher-normal-cmi-quadratic|VIS-040]]
+- [[research/visual_exploration/findings/VIS-041-common-reference-fisher-angle-three-gap-residuals|VIS-041]]
+- [[research/visual_exploration/findings/VIS-042-markov-logarithmic-pool-panel-residual-gauge|VIS-042]]
+- [[research/visual_exploration/findings/VIS-043-markov-log-pool-weighted-kl-barycenter|VIS-043]]
+- [[research/visual_exploration/findings/VIS-044-linear-pool-markov-covariance-residual|VIS-044]]

@@ -61,3 +61,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/analytic_frontier/findings/ANF-050-equal-height-five-point-danger-has-an-exact-height-dependent-bandwidth-radius|ANF-050]]
 - [[research/analytic_frontier/findings/ANF-051-two-pair-five-point-danger-has-an-exact-anti-phase-tube-and-fixed-height-bandwidth-radius|ANF-051]]
 - [[research/analytic_frontier/findings/ANF-052-central-notch-two-pair-five-point-perturbation-is-cubic-on-bounded-heights|ANF-052]]
+- [[research/analytic_frontier/findings/ANF-053-central-notch-five-point-survival-reduces-to-montgomery-taylor-zero-freeness|ANF-053]]
+- [[research/analytic_frontier/findings/ANF-054-curvature-gate-globally-closes-the-equal-height-two-pair-five-point-diagonal|ANF-054]]
+- [[research/analytic_frontier/findings/ANF-055-mean-height-decomposition-gives-an-explicit-unequal-height-stability-tube|ANF-055]]
+- [[research/analytic_frontier/findings/ANF-056-quadratic-mismatch-retention-gives-a-support-free-relative-height-stability-tube|ANF-056]]
+- [[research/analytic_frontier/findings/ANF-057-reciprocal-sinh-control-sharpens-the-support-free-relative-height-tube|ANF-057]]

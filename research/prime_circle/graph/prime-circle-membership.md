@@ -43,3 +43,4 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-175-bounded-refinement-ratio-symbols-have-zero-euclidean-mesh-density|PC-175]]
 - [[research/prime_circle/findings/PC-176-symmetric-valuation-length-refinement-symbols-are-classical-gcd-operators|PC-176]]
 - [[research/prime_circle/findings/PC-177-resultant-prime-power-ratio-symbol-is-an-unbounded-prime-axis-toeplitz-sum|PC-177]]
+- [[research/prime_circle/findings/PC-178-raw-resultant-prime-axis-form-is-nonclosable-and-abel-removal-scalarizes|PC-178]]

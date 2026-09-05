@@ -63,3 +63,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/arithmetic_fidelity/findings/AF-131-wasserstein-recovery-composition-needs-transport-regularity|AF-131]]
 - [[research/arithmetic_fidelity/findings/AF-132-wasserstein-recovery-profiles-obey-functional-composition-bound|AF-132]]
 - [[research/arithmetic_fidelity/findings/AF-133-restricted-witness-composition-requires-quotient-compatible-recovery|AF-133]]
+- [[research/arithmetic_fidelity/findings/AF-134-minimal-compositional-witness-saturation|AF-134]]
+- [[research/arithmetic_fidelity/findings/AF-135-whitened-target-tail-classifies-spectral-gram-fidelity|AF-135]]
+- [[research/arithmetic_fidelity/findings/AF-136-generator-congruence-reduces-target-relative-gram-fidelity-to-projection-geometry|AF-136]]
+- [[research/arithmetic_fidelity/findings/AF-137-symmetry-only-gram-metric-is-commutant-gauge|AF-137]]
+- [[research/arithmetic_fidelity/findings/AF-138-source-metric-restores-generalized-spectral-fidelity|AF-138]]

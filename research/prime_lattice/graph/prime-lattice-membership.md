@@ -52,3 +52,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-169-ratios-one-swap-additive-correlation|PL-169]]
 - [[research/prime_lattice/findings/PL-170-affine-tail-relative-trace-cancellation|PL-170]]
 - [[research/prime_lattice/findings/PL-171-affine-congruence-dirichlet-trace-barrier|PL-171]]
+- [[research/prime_lattice/findings/PL-172-hilbert-schmidt-affine-liouville-chowla-trace-removal|PL-172]]
+- [[research/prime_lattice/findings/PL-173-affine-liouville-averaging-collapse|PL-173]]
+- [[research/prime_lattice/findings/PL-174-logarithmic-affine-liouville-haar-flat|PL-174]]
+- [[research/prime_lattice/findings/PL-175-logarithmic-affine-liouville-walsh-collapse|PL-175]]
+- [[research/prime_lattice/findings/PL-176-liouville-additive-cube-gowers-flattening|PL-176]]

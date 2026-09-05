@@ -43,6 +43,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-011-coherent-exact-description-has-an-entropy-atomicity-gate]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-012-regular-recovery-orders-the-full-multiscale-information-profile]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-013-witness-relative-recovery-geometry-needs-natural-composition]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-014-target-relative-spectral-fidelity-is-projection-geometry]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -53,6 +55,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-006-asymptotically-fixed-mellin-drift-is-information-neutral]]
 - [[research/mobius_cancellation/mind/intuition/MI-007-growing-order-smoothing-can-hide-endpoint-information]]
 - [[research/mobius_cancellation/mind/intuition/MI-008-moving-comparators-need-uniform-family-coherence]]
+- [[research/mobius_cancellation/mind/intuition/MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation]]
+- [[research/mobius_cancellation/mind/intuition/MI-010-signed-retention-is-not-information-reduction]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -81,6 +85,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-008-zero-spectrum-and-positive-hilbertization-still-need-arithmetic-polarization]]
 - [[research/prime_lattice/mind/intuition/MI-009-discrete-phase-fidelity-is-not-zero-selection]]
 - [[research/prime_lattice/mind/intuition/MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven]]
+- [[research/prime_lattice/mind/intuition/MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -108,4 +113,5 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-001-collision-safe-coordinates-separate-singularity-from-source-information]]
 - [[research/xi_flow/mind/intuition/MI-002-scale-free-gap-dynamics-still-need-an-xi-specific-law]]
 - [[research/xi_flow/mind/intuition/MI-003-fixed-time-memory-is-mesoscopic-not-finite-jet]]
+- [[research/xi_flow/mind/intuition/MI-004-endpoint-prime-free-fourier-sector-is-volterra-triangular]]
 <!-- intuition-membership:end -->

@@ -42,3 +42,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-155-canonical-resultant-cell-completions-cannot-create-mixed-prime-curvature|WP-155]]
 - [[research/weil_positivity/findings/WP-156-cyclotomic-block-log-determinant-lines-factor-through-pairwise-resultants|WP-156]]
 - [[research/weil_positivity/findings/WP-157-separated-cyclotomic-tensor-determinant-lines-are-rank-additive|WP-157]]
+- [[research/weil_positivity/findings/WP-158-torus-character-correspondences-split-over-prime-primary-shells|WP-158]]
+- [[research/weil_positivity/findings/WP-159-unit-coefficient-three-term-additive-torsion-collapses-to-sixth-root-geometry|WP-159]]
+- [[research/weil_positivity/findings/WP-160-toric-manin-mumford-closes-fixed-algebraic-torsion-incidence|WP-160]]
+- [[research/weil_positivity/findings/WP-161-radial-cyclotomic-boundary-value-is-mangoldt-but-its-differential-jet-is-jordan-totient|WP-161]]
+- [[research/weil_positivity/findings/WP-162-cyclotomic-inward-radial-flux-is-positive-exactly-on-prime-powers|WP-162]]
