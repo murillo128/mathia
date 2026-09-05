@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-lamzouri-operator-schur-cancellation
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: weil_inertia
 based_on:
@@ -101,3 +101,11 @@ for the odd quotient Gram matrix, WI-138 uses Gram/Schur factorization for deter
 and WI-139 controls negative-eigenspace orientation, but none of those findings establishes this
 operator-level cancellation or a stronger slack lower bound from it.  No new zero proportion,
 uniform spectral gap, or novelty claim is established here.
+
+## Research disposition
+Outcome: refuted
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-164-schur-normalization-cancels-horizontal-collapse.md]]
+
+The Schur identity is exact, but the normalization cancels the horizontal singular scale: `A_VH(-A_HH)^(-1/2)` is unitarily equivalent to `K_V`, and the positive correction is exactly `K_V K_V^*`.  The isolated simple off-line pair from WI-140 has `K_V=0` identically while `A_HH` remains invertible for every nonzero depth and the full Lamzouri slack tends to zero under confluence.  Hence the proposed cross-block normalization is not an autonomous anti-collapse charge.  It could only become useful after adding an independent zeta-source lower bound on `K_V` or another invariant not algebraically cancelled by the normalization.
