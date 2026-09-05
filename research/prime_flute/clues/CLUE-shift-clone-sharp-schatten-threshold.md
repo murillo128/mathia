@@ -5,80 +5,50 @@ status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
-  - research/prime_flute/findings/PF-107-shift-clone-cuff-defect-is-l2-not-l1.md
-  - research/prime_flute/findings/PF-109-shift-clone-preserves-canonical-separator-pinching-multiplicatively.md
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
   - research/prime_flute/findings/PF-125-shift-clone-has-compact-relative-resolvent.md
   - research/prime_flute/findings/PF-126-shift-clone-metric-defect-is-Lp-above-one.md
-  - research/prime_flute/findings/PF-127-collapsing-canonical-collar-is-schatten-benign-above-trace-endpoint.md
   - research/prime_flute/findings/PF-130-lambert-shift-metric-defect-is-strong-L1-summable.md
-  - research/prime_flute/findings/PF-147-square-resolvent-S1-forces-first-resolvent-S2.md
-  - research/prime_flute/findings/PF-150-square-resolvent-S1-is-sharp-at-S2-without-geometry.md
-  - research/prime_flute/findings/PF-169-all-margulis-short-central-squared-resolvent-blocks-are-trace-summable.md
   - research/prime_flute/findings/PF-171-all-margulis-short-central-first-resolvent-blocks-have-sharp-Sr-threshold.md
-  - research/prime_flute/findings/PF-172-finite-collar-recoupling-is-trace-class-but-zero-mode-budget-does-not-collapse.md
   - research/prime_flute/findings/PF-173-relative-central-recoupling-is-trace-summable.md
+  - research/prime_flute/findings/PF-174-weighted-defect-controls-smoothed-schatten-scale.md
 ---
 
 # Does the prime/shift relative resolvent have the sharp Schatten threshold `S_r`, `r>1`?
 
 ## Observation
 
-PF-112 fixes the unavoidable local endpoint for any genuinely different two-dimensional metric pair: the first relative resolvent is locally of critical order `-2`, so `S_1` is impossible while every exponent `r>1` remains compatible with microlocal order. PF-125 proves global compact relative resolvent for the exact prime flute versus the exact all-composite shift clone, and PF-126 places the transported coefficient defect in weak `L^1` and every `L^r`, `r>1`.
+PF-112 fixes the unavoidable two-dimensional endpoint: the genuinely non-isometric prime/shift first relative resolvent is not trace class, while microlocal order remains compatible with `S_r` for every `r>1`. PF-125 proves global compact relative resolvent, but compactness does not determine the Schatten exponent. PF-126 supplies a global transported coefficient defect in every unweighted `L^r`, `r>1`, without a theorem converting that estimate directly into a relative-resolvent ideal bound.
 
-The closed-thin central geometry is now substantially exhausted as a possible obstruction. PF-127 proves on one fixed central Dirichlet collar that the first relative resolvent lies in every `S_r`, `r>1`, with
-
-\[
-\|A_{L,L_+}^{(R)}\|_{\mathcal S_r}^r
-\le C_{R,r}|\log(L_+/L)|^rL^{2r-1},
-\]
-
-while remaining outside `S_1` whenever `L_+ != L`. PF-169 sums the corresponding **squared** relative-resolvent blocks over every Margulis-short core and obtains trace class. PF-171 performs the sharper first-resolvent summation itself and proves
+The complete Margulis-short central sector is no longer the plausible obstruction. PF-171 proves that the direct sum of all fixed-central first-resolvent collar blocks has the sharp threshold
 
 \[
-\bigoplus_{\eta\in\mathcal S}A_\eta
-\in\mathcal S_r\quad\text{for every }r>1,
+\bigoplus_{\eta\in\mathcal S}A_\eta\in\mathcal S_r
+\quad(r>1),
 \qquad
 \bigoplus_{\eta\in\mathcal S}A_\eta\notin\mathcal S_1.
 \]
 
-PF-172 then separates local boundary order from infinite assembly. Restoring transmission across any finite smooth cut family is trace class in dimension two, but on an exact collapsing collar the **absolute** central recoupling trace norm has an `L`-independent zero-mode contribution. Thus one cannot prove the infinite result by separately summing prime and clone gluing norms.
+PF-173 then subtracts the matched prime/clone central-cut recoupling problems before taking norms and proves that the complete relative central recoupling correction is trace summable. The common angular zero mode that obstructs separate absolute gluing estimates cancels in the relative problem.
 
-PF-173 now carries out the relative cancellation that PF-172 left open on the exact central-cut model. If
-
-\[
-G_L=(\Delta_L+1)^{-1}-(\Delta_L^{\rm cut}+1)^{-1},
-\qquad L_+=e^tL,
-\]
-
-then
+PF-174 closes the next analytic subgate. The Güneysu--Thalmaier heat/gradient multiplier estimates interpolate from weighted `L^2 -> S_2` and `L^infinity -> S_infinity` to
 
 \[
-\boxed{
-G_{L_+}-G_L\in\mathcal S_1,
-\qquad
-\|G_{L_+}-G_L\|_1\le C_R|t|L^2.
-}
+L^q\!\left(\mu(B(\cdot,1))^{-1}d\mu\right)
+\longrightarrow \mathcal S_q,
+\qquad q\ge2.
 \]
 
-The common angular zero mode cancels exactly. Using PF-109's `t=O(P^{-3})` matching and PF-138's complete `O(P^{0.525})` short-core count, PF-173 further proves that the orthogonal direct sum of these **relative central-cut recoupling corrections over every Margulis-short tail core is trace class**.
+Because their metric comparison is factored through square-root deviation multipliers, weighted `delta^r` integrability gives the corresponding **heat-smoothed comparison product** in `S_r`. PF-174 also derives from PF-128 that every matched collapsing short collar satisfies the required weighted `L^r` estimate uniformly for all `r>=1`, and PF-138 makes those costs summable over the complete Margulis-short tail.
 
-Thus zero systole, short-core multiplicity, the complete central metric blocks, finite boundary pseudodifferential order, and the shrinking-core transmission zero mode are no longer candidates for an `S_r`, `r>1`, failure. The remaining operator burden is body-loaded and nonlocal.
-
-PF-130 independently shows that the isolated Lambert body comparison has summable strong-`L^1` metric/density mass. PF-147 says a future global squared-resolvent `S_1` result would force the full first relative resolvent into `S_2`, while PF-150 proves that this abstract implication cannot by itself cross below `2`. PF-171 is therefore informative precisely because actual collar geometry does cross below `2`; PF-173 shows that the corresponding central-cut transmission correction crosses all the way to `S_1` after source/clone cancellation.
-
-A targeted prior-art audit exposes a second possible analytic route that is narrower than importing a bounded-geometry pseudodifferential calculus. Güneysu--Marot, *A note on the scattering theory of Kato-Ricci manifolds* (arXiv:2411.03204, to appear in *Rocky Mountain Journal of Mathematics*), proves existence and completeness of wave operators for complete quasi-isometric Kato-Ricci metrics under an inverse-unit-ball-volume weighted `L^1` metric-deviation condition. Its proof reduces the scattering criterion to Hilbert--Schmidt estimates for metric-deviation-weighted heat and gradient-semigroup operators, using heat-kernel and gradient bounds rather than injectivity-radius control. This theorem is **not** a Schatten-resolvent theorem and does not replace PF-126's missing global ideal implication. It does, however, isolate a concrete question worth testing: whether the same heat-kernel factorization admits an `S_p` interpolation/ideal refinement at exponents above the two-dimensional trace endpoint. The underlying prime and clone metrics are hyperbolic and hence have Ricci bounded below; applying such a route after the PF-125 identification would still require a careful smooth/common-Hilbert-space implementation rather than ignoring its piecewise-smooth marking.
+This is useful but deliberately not the desired theorem. The heat regularization removes high-frequency order and cannot be inverted by a bounded operation. Indeed the short-tail smoothed comparison already reaches `S_1`, while PF-112 proves the full first relative resolvent cannot. Therefore Schatten interpolation of the heat factors is solved; the remaining problem is the **body/interface input and the resolvent-level bridge**.
 
 ## Research question
 
-For the common-manifold Laplacians associated with the PF-125 marking, does
+For the common-manifold Laplacians associated with the PF-125 prime/shift marking, does
 
 \[
-A
-:=
-(\Delta_{g_+}+1)^{-1}
--
-(\Delta_g+1)^{-1}
+A=(\Delta_{g_+}+1)^{-1}-(\Delta_g+1)^{-1}
 \]
 
 satisfy
@@ -91,48 +61,34 @@ A\notin\mathcal S_1?
 }
 \]
 
-PF-112 proves the second statement for the full non-isometric pair. The positive side is now localized more sharply than before: the complete decoupled central metric family already has the desired threshold by PF-171, and the complete relative central-**cut recoupling** family is even trace class by PF-173.
-
-What remains is not another isolated short-core calculation. It is whether the **actual outer collar/body transmission**, complementary body pieces, localization commutators, and repeated interactions created by removing the global Dirichlet decomposition preserve the `S_r`, `r>1`, threshold under one common prime/shift interface calculus.
+The negative endpoint is PF-112. The positive side now reduces to whether the **actual outer collar/body transmission, complementary body response, localization commutators, and repeated global interactions** preserve the `S_r`, `r>1`, scale when prime and clone are compared before norms are taken.
 
 ## Why it may matter
 
-A positive answer would finish the natural operator-ideal classification between PF-112 and PF-125 and show that even the sharp first-resolvent ideal scale is compatible with an exact all-composite control. It would also place the pair in the `S_2` regime relevant to regularized determinant and second-order spectral-shift machinery while ordinary trace-class first-resolvent constructions remain excluded. None of that would be prime-specific by itself.
+A positive answer would complete the natural operator-ideal classification between PF-112 and PF-125 and place the pair in the Hilbert--Schmidt regime relevant to regularized determinant and second-order spectral-shift machinery. It would still not be prime-specific: the exact all-composite shift clone shares the same classification.
 
-A negative answer for some `r>1` is now highly localized conceptually. It would have to identify a genuinely global amplification mechanism absent from every isolated and collectively summed central short-collar metric block and absent from the relative shrinking-core recoupling family. The obstruction must be carried by body-dependent boundary response, nonorthogonal overlap, repeated propagation, or another full-surface assembly channel.
+A negative answer for some `r>1` would now identify a genuinely global amplification mechanism. Such an obstruction cannot be attributed merely to zero systole, the complete fixed-central short-collar family, the central transmission zero mode, or failure of Schatten interpolation for the heat factors; all of those channels have already been controlled by PF-171, PF-173, and PF-174.
 
 ## Decisive test
 
-A positive resolution must control the **uncut full operator under one common prime/shift outer-interface calculus**. PF-172 and PF-173 show why the order of operations matters: separate absolute gluing norms retain an order-one zero-mode budget, whereas subtracting matched transmission problems first can expose trace-summable relative decay.
+There are two surviving routes, and both must retain the actual complementary-body information.
 
-The next useful calculation should therefore cut prime and clone along the same fixed outer collar/body interfaces, write compatible Krein/Schur-complement or Dirichlet-to-Neumann formulas, and subtract those formulas algebraically before taking Schatten norms. Unlike PF-173's central-cut model, the boundary operators must include the **actual complementary-body Dirichlet-to-Neumann response**. The required estimate must remain uniform across the complete zero-systole tail and through repeated head-tail interaction.
+The direct route is to cut prime and clone along the same outer collar/body interfaces, write compatible Krein/Schur-complement or Dirichlet-to-Neumann formulas for the **full** cut surfaces, and subtract source/clone formulas algebraically before taking Schatten norms. PF-173 shows why this order matters. The target estimate must include the complementary-body Dirichlet-to-Neumann maps and remain uniform through the complete zero-systole tail and repeated head-tail propagation.
 
-A schematic target is to control the source/clone difference of terms of the form
+The heat route should now start **after** PF-174 rather than repeating its interpolation. Derive weighted `L^r` metric deviation for the unresolved boundary-coherent body/interface comparison. If that succeeds, PF-174 places the heat-smoothed comparison operator in `S_r`. The remaining obligation is then an explicit common-Hilbert-space quadratic-form/resolvent factorization that transfers this information to the first relative resolvent without attempting to invert the heat semigroup. PF-112 is the endpoint control: any argument that also forces the full first resolvent into `S_1` has erased a real high-frequency obstruction.
 
-\[
-\mathcal P(z)\,\mathcal M(z)^{-1}\mathcal P(\bar z)^*,
-\]
-
-where `P` and `M` are the Poisson and boundary transmission operators for the full cut surface, not just the isolated collar. The central collar contributions supplied by PF-171 and PF-173 should appear as already-controlled pieces rather than being re-estimated from scratch.
-
-In parallel, test the **heat-kernel ideal route** suggested by Güneysu--Marot rather than assuming it works. First reproduce the exact deviation multipliers and Hilbert--Schmidt factorization used in their scattering proof. Then ask whether the heat and gradient kernel bounds, together with Schatten interpolation or an appropriate kernel-ideal theorem, give `S_p` bounds for the corresponding multiplier--semigroup factors under an explicitly derived weighted `L^p` condition. Insert only proved factor estimates into the common-Hilbert-space quadratic-form/resolvent identity and determine whether the product lands in `S_r` for every `r>1`. The exponent and volume weight must be derived, not guessed: PF-126's unweighted `L^r` coefficient estimate is not a substitute. The resulting condition should then be tested against the already-controlled body/cusp/collar sectors and, crucially, the actual outer collar/body interfaces. PF-112 supplies an immediate falsification control: any proposed endpoint estimate that would force the genuinely non-isometric full first relative resolvent into `S_1` has overreached.
-
-The squared-resolvent route remains complementary. Proving the global squared-resolvent difference is `S_1` would, through PF-147, settle `r>=2`; PF-150 shows that additional surface-specific estimates would still be required for `1<r<2`. A direct first-resolvent outer-transmission estimate, or a valid heat-kernel ideal factorization that controls the same body-loaded terms without explicit infinite DtN summation, is therefore the natural test of whether PF-171's sharp threshold survives the actual infinite assembly.
-
-A decisive negative resolution must produce an actual singular-value lower bound in a channel excluded from PF-171--PF-173. Concentration solely in fixed-central Margulis-short collars, finite-interface pseudodifferential order, the nondecaying **absolute** recoupling norm of one surface, or the matched central-cut transmission family is no longer enough.
+A decisive negative resolution must produce a singular-value lower bound in one of the remaining body/interface/nonlocal channels. Concentration solely in the already-controlled fixed-central Margulis-short collars, the absolute zero-mode budget of one surface, or the heat-factor interpolation step is no longer sufficient.
 
 ## Evidence boundary
 
-PF-171 is a theorem about the **Dirichlet-decoupled fixed-central collar direct sum**. It does not estimate the full uncut Laplacian, outer collar pieces, body terms, or the operators created when the outer Dirichlet interfaces are removed. PF-130 is likewise a coefficient estimate on an explicit body comparison rather than a global Schatten theorem.
+PF-171 concerns the Dirichlet-decoupled fixed-central collar direct sum. PF-173 concerns the matched **central-cut** recoupling family. Neither includes the complementary-body Dirichlet-to-Neumann response or restores the complete outer interfaces of the infinite flute.
 
-PF-172 proves finite transmission trace class and an absolute zero-mode lower bound for one exact collapsing-collar cut. PF-173 subtracts the two matched versions of that same **central-cut** problem and proves trace-class summability over the complete short-core family. Neither finding contains the actual complementary-body Dirichlet-to-Neumann maps or restores the collar's outer interfaces to the infinite flute. Consequently PF-173 is evidence that relative cancellation works in the canonical local transmission model, not a proof of full-surface trace-class transmission.
+PF-174 is a theorem about the weighted metric input and the **heat-smoothed** Schatten factorization. It is not a theorem about the first resolvent. PF-126 remains unweighted, while PF-130 gives strong unweighted `L^1` on independently compared Lambert bodies but does not control the inverse-unit-ball-volume weight under a globally boundary-coherent assembly.
 
-PF-147 remains conditional on the still-open full-surface squared-resolvent `S_1` gate, and PF-150 is only an abstract limitation of functional calculus. Standard compact/bounded-geometry pseudodifferential theorems cannot simply be globalized across this zero-systole infinite-type surface. The Güneysu--Thalmaier criterion is useful for wave operators but is not a Schatten theorem, while the Behrndt--Langer--Lotoreichik/Grubb boundary results control finite smooth boundary-condition changes rather than the infinite body-loaded prime/shift transmission difference.
-
-The Güneysu--Marot Kato-Ricci result does not change that evidence boundary. It proves a weighted `L^1` **wave-operator** criterion and uses Hilbert--Schmidt heat/gradient factors inside that proof; it does not state that an `L^r` metric defect gives an `S_r` relative resolvent, nor does it identify the correct Schatten exponent/weight for such a statement. The proposed interpolation/factorization above is therefore a research test, not imported evidence. Any implementation must also reconcile the theorem's smooth complete metrics with the particular PF-125 transported representative or replace that representative by an admissible smooth comparison without losing the required tail estimates.
+Accordingly, neither the desired `S_r`, `r>1`, conclusion nor a counterexample for any `r>1` is established. The clue remains a research target rather than evidence.
 
 ## Research disposition
 
-The clue remains `accepted`, but its live interface target is now **outer and body-loaded**. The entire closed-thin central metric sector already satisfies the conjectured sharp `S_r`, `r>1`, classification, and the complete matched central-cut recoupling family is trace class after source/clone cancellation.
+The clue remains `accepted`, now with the heat-factor interpolation subproblem closed by PF-174. Future work should not spend another cycle on central short-collar Schatten summation or on proving that the Güneysu--Thalmaier multiplier factors interpolate: those gates are settled.
 
-Future work should therefore not spend another cycle proving local central transmission smoothing. There are now two sharply stated routes to the same unresolved body-loaded gate. The direct route is the relative full-surface Krein/Schur-complement difference on common outer collar/body interfaces: retain the actual body response, cancel source/clone transmission before norms, and test whether the remaining nonlocal defect is `S_r`-summable for every `r>1`. The alternative route is to determine whether Kato-Ricci heat/gradient estimates support a genuine Schatten refinement of the deviation-weighted factorization; its first obligation is to derive the correct ideal exponent and weighted metric condition, not to assume PF-126 already supplies them. The clue will be resolved only when one of these routes controls the full uncut body-loaded terms, or when a genuine operator-level counterexample for some `r>1` is produced.
+The live frontier is **outer and body-loaded**. Either prove a common prime/shift outer-interface calculus whose relative transmission/body terms are `S_r` for every `r>1`, or establish the weighted body/interface hypotheses needed by PF-174 and then supply a valid resolvent-level bridge. The clue resolves only when the full uncut first relative resolvent is classified, or when a genuine global operator-level obstruction for some `r>1` is found.
