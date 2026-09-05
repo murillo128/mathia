@@ -1,47 +1,45 @@
-# MI-010 — Suzuki's completed scalar is RH-complete on fine sets; fixed-step sampling leaves only a phase-pinned frontier loophole
+# MI-010 — Suzuki's fixed-step loophole is horizontally conditioned phase pinning, not ordinary vertical anti-aliasing
 
-**Evidence level:** supported by PL-150 and PL-153--PL-161; exact for the sampled zero-series, recurrence, Cauchy-transform, and Pringsheim reductions in their stated models
+**Evidence level:** supported by PL-150 and PL-153--PL-163; exact for the sampled zero-series, recurrence, Cauchy-transform, prime-phase specialization, and positive harmonic-kernel reductions in their stated models
 
 ## Core intuition
 
-Suzuki's completed scalar carries enough zero information that thin observation sets can remain RH-complete, but fixed-step sampling has a genuine phase quotient. The quotient is now sharply asymmetric. Upper boundedness still has an exact resonant off-line control, whereas lower boundedness cannot be hidden by any attained horizontal frontier; any surviving failure of RH must use an unattained frontier whose near-edge zeros are pinned to the sampled phase identity.
+Suzuki's completed scalar carries enough zero information that fine observation sets can remain RH-complete, but fixed-step sampling has a genuine phase quotient. The surviving lower-boundedness loophole is now much narrower than generic phase recurrence: it requires an **unattained off-critical horizontal frontier whose near-edge zeros are simultaneously pinned to the sampled phase identity**.
 
-Thus fixed-step observation is not simply “incomplete.” Its remaining ambiguity has a precise zero-side geometry, and excluding that geometry would require source-specific information not supplied by sampling itself.
+Ordinary vertical arithmetic does not exclude that condition. Zeta zero ordinates are unconditionally recurrent near the identity in every fixed finite prime torus, and the classical Landau--Gonek moments already couple horizontal displacement to prime phase. The canonical positive first-moment way of exploiting those moments loses precisely the resolution needed at a hypothetical interior frontier. The missing theorem must therefore be horizontally conditioned source rigidity or a stronger carrier, not more unconditioned phase sampling.
 
 ## Strongest justified principle
 
 PL-150 and PL-153--PL-154 show that the completed prime-power checkpoint state is RH-complete: one-sided checkpoint boundedness is RH-equivalent and one-sided growth exponents recover the horizontal zero frontier. PL-155--PL-157 show that dense two-prime differences and asymptotically fine meshes inherit the continuous criterion by generic observation geometry.
 
-PL-158 gives the fixed-step boundary. For every `h>0` an off-line quartet can be placed in exact resonance so that the continuous screw has both signs while the samples on `nh` are bounded above. This remains a decisive control against a generic upper-bounded fixed-ray criterion.
+PL-158 gives the fixed-step upper boundary. For every `h>0` an off-line quartet can be placed in exact resonance so that the continuous screw has both signs while the samples on `nh` remain bounded above. PL-159--PL-160 show the lower side is stricter: finite recurrence and then infinite attained-edge almost-periodicity force negative escape whenever the rightmost horizontal frontier is attained.
 
-PL-159 shows that the same finite alias cannot hide lower escape: finite torus recurrence returns the dominant phases to identity, where ordinary high-ordinate off-line quartets have a common negative leading sign. PL-160 removes finiteness and isolation. If the rightmost horizontal zero frontier is attained, even by infinitely many zeros and with arbitrarily close subedge lines, absolute zero-weight summability and uniform almost-periodicity force `Psi(nh)` to `-infinity` along a subsequence for every fixed `h`.
+PL-161 identifies the exact surviving lower geometry. The sampled generating function has radius determined by the horizontal frontier; one-sided boundedness and Pringsheim force near-frontier poles toward the positive radial boundary. Thus under RH failure lower boundedness requires an **unattained phase-pinned frontier** with distinct ordinates tending to infinity.
 
-PL-161 identifies the exact surviving one-sided geometry. The sampled generating function has Taylor radius `exp(-(Theta-1/2)h)`, because no realized displacement circle can cancel completely after aliasing. If the samples are bounded on either side, a shift to nonnegative coefficients and the Vivanti--Pringsheim theorem force a singularity at the positive radial boundary. Hence there are near-frontier zeros with
+PL-162 shows why finite-prime vertical anti-aliasing cannot close that loophole. Ford--Meng--Zaharescu implies that for every fixed finite prime set `P`, the vectors `(gamma log p/(2pi))_(p in P)` of all zeta zero ordinates are Haar-equidistributed to leading order. Every identity neighborhood contains a positive asymptotic proportion of ordinates, and there are sequences with `p^(i gamma_j)->1` simultaneously for all `p in P`. The explicit prime-power discrepancy depletes the identity only at relative order `1/log T`; it does not exclude recurrence. The useful missing information is therefore the coupling to `beta_j->Theta`, not the vertical phase alone.
 
-`exp(i T_j h) -> 1`.
-
-For lower boundedness, PL-160 adds that the frontier must be unattained, so the only remaining RH-failure alternative is an **unattained, phase-pinned frontier** with distinct ordinates tending to infinity.
+PL-163 tests the most direct such coupling. Landau--Gonek prime-power moments exactly encode `cosh(k(beta-1/2)log p) cos(k gamma log p)`. Their positive harmonic Fejer combination is nonnegative on the full critical strip and has controlled explicit-formula errors, but harmonic extension from the trivial strip boundary exponentially damps all Fourier modes at an interior frontier `Theta<1`, so increasing degree cannot amplify sparse phase-pinned frontier zeros. Moving the positive boundary inward restores `K`-scale response but makes the published Landau--Gonek error grow exponentially like `p^(k(1-Theta))`. The canonical positive first-moment route therefore has an exact frontier-resolution tradeoff.
 
 ## What remains possible
 
-A fixed-ray lower criterion would need to rule out that unattained phase-pinned frontier using information external to generic sampling: zero-density or ordinate-distribution constraints, a source relation coupling horizontal approach to phase, or a genuinely simultaneous multi-axis theorem. Separate boundedness statements on two incommensurable prime rays do not by themselves synchronize the near-frontier subsequences selected by Pringsheim.
+A fixed-ray lower theorem must control the **horizontal-conditioned phase population** near a hypothetical extremal abscissa. Possible carriers include a stronger uniform weighted explicit formula, higher or mixed moments, genuinely simultaneous multi-prime information whose same zeros are coupled before taking limits, or a sign-indefinite cancellation argument that is not constrained by positive harmonic extension from `beta=0,1`.
 
-For upper boundedness, the exact resonant quartet remains a matched control unless additional zeta-specific anti-aliasing excludes it.
+Adding finitely many prime axes without horizontal conditioning is closed by PL-162. Repackaging the existing Landau--Gonek first moments into another positive full-strip harmonic kernel does not overcome the PL-163 resolution barrier. For upper boundedness, the finite resonant quartet remains a matched control unless additional zeta-specific source information excludes it.
 
 The broader positive route remains upstream: derive the completed sign or one-sided growth restriction from rational-prime/global-completion structure before generic observation completeness takes over.
 
 ## Status / novelty
 
-Suzuki's screw representation, Kronecker recurrence, Cauchy transforms, and Vivanti--Pringsheim are classical or literature-backed. The synthesis is the sharpened sampling boundary: **fixed-step lower boundedness under RH failure requires an unattained frontier accumulating at sampled phase identity; upper boundedness still admits finite exact resonance**.
+Suzuki's screw representation, Kronecker recurrence, Pringsheim, zeta-zero phase equidistribution, Landau--Gonek moments, and Fejer/harmonic positivity are classical or literature-backed. The synthesis is the sharpened sampling boundary: **the fixed-step lower loophole is not rare vertical phase recurrence but an off-critical horizontal/phase correlation living beyond the resolution of the canonical positive first-moment channel**.
 
 ## Falsification criterion
 
-Construct an attained off-line zeta frontier with `Psi(nh)` bounded below for some fixed `h`, contradicting PL-160, or a one-sided bounded fixed-step sequence whose near-frontier sampled pole support avoids the positive radial boundary, contradicting PL-161. A source theorem excluding the unattained phase-pinned alternative would close the remaining lower loophole rather than falsify the sampling analysis.
+Construct an attained off-line zeta frontier with `Psi(nh)` bounded below, contradicting PL-160; show that fixed finite prime-phase identity recurrence is absent from the complete zeta zero ordinates, contradicting PL-162; or obtain unbounded interior-frontier resolution from the PL-163 full-strip positive harmonic family without paying the stated error growth.
 
 ## Lean-formalizable core
 
 - Fixed-step resonant quartet alias.
-- Finite and infinite attained-edge recurrence.
-- Absolute-summability removal of subedge modes.
-- Sampled Cauchy-transform radius equals horizontal frontier.
-- Pringsheim phase pinning of near-frontier zeros.
+- Infinite attained-edge recurrence and Pringsheim phase pinning.
+- Finite-prime torus identity recurrence as an observation control.
+- Landau--Gonek horizontal/phase moment identity.
+- Full-strip harmonic positivity versus interior-frontier damping.
