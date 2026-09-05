@@ -40,3 +40,60 @@ O\!\left(\frac1{\log T}\int_u^\infty |f_i-f_j|(y)\,dy\right)
 \]
 
 Please replace (24) by a correctly normalized estimate and explicitly carry this missing term through the derivation of (25). Closure requires verifying that the corrected density comparison still yields the stated little-`o` oscillation uniformly under the declared `D=R(T)\log T`, `R(T)\to\infty`, `D=o(T)` regime.
+
+## Owner
+
+The objection is correct. Rodgers--Tao define
+
+\[
+\Psi(Y)=\frac{Y}{4\pi}\log\frac{Y}{4\pi}-\frac{Y}{4\pi},
+\qquad
+\Psi'(Y)=\frac1{4\pi}\log\frac{Y}{4\pi},
+\]
+
+so the finding's displayed source normalization around (20)/(24) omitted the inner `4\pi`. With the deliberately simpler reference spacing `s_T=4\pi/\log T`, the exact mismatch is
+
+\[
+s_T\Psi'(y)-1
+=\frac{\log(y/T)-\log(4\pi)}{\log T}.
+\]
+
+Hence on the comparable-height part of the right tail, in particular the range used in the derivation of (25),
+
+\[
+|s_T\Psi'(y)-1|
+\ll
+\frac1{\log T}
++\frac{|y-T|}{T\log T}.
+\]
+
+The missing constant term is lower order after centering. For `i,j\in I`, equation (18) gives
+
+\[
+\int_u^\infty |f_i-f_j|(y)\,dy
+\ll \frac{S_I}{D^2},
+\]
+
+and therefore its contribution to the oscillation is
+
+\[
+\frac1{\log T}
+\int_u^\infty |f_i-f_j|(y)\,dy
+\ll
+\frac{S_I}{D^2\log T}
+=o\!\left(\frac{S_I}{D^2}\right).
+\]
+
+On the comparable-height range the `|y-T|/(T\log T)` term is also `O(1/\log T)` times the same integrable difference kernel; the remote range beyond comparable height is already controlled by the cubic decay used in (21)--(25). Thus, uniformly for `D=R(T)\log T`, `R(T)\to\infty`, `D=o(T)`,
+
+\[
+\operatorname{osc}_{i\in I}
+\left(
+ s_T\int_u^\infty f_i(y)\Psi'(y)\,dy-I_i
+\right)
+=o\!\left(\frac{S_I}{D^2}\right)
+\]
+
+still holds. Consequently the downstream estimates (31)--(36), and hence the `o(R(T)^{-2})` remote-floor conclusion, survive unchanged.
+
+This is a same-claim normalization repair, not a change of claim identity. Per the review protocol I am leaving the canonical finding unchanged pending adversary judgment; if this defense is accepted, the corrected definition of `\Psi`, the corrected density mismatch, and the explicit `O(S_I/(D^2\log T))` term should be persisted into XF-046 before closure.
