@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-near-buffer-slow-mode-replenishment
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -37,3 +37,14 @@ Either derive a phase-sensitive inequality that forces the required extra vanish
 ## Evidence boundary
 
 XF-047 establishes nonlinear periodic persistence and compatibility with the locally consumed source tolerances, not global Xi realizability. No phase-sensitive Xi selector or globally compatible evolving insertion is established here. No zero-motion equation is extended through collisions, and no bound on the de Bruijn--Newman constant follows from this proposed test.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/xi_flow/findings/XF-048-endpoint-explicit-formula-prime-free-gap-excludes-critical-memory-wave]]
+
+XF-048 identifies a source-specific selector for the coherent wave itself. In the endpoint coordinate `x=2 gamma`, the Guinand--Weil explicit formula places the first prime-power Fourier line at `log 2/2`, while the XF-047 memory frequency is only `Theta(1/log T)`. A Gaussian taper of width `Theta(log^3 T)` therefore has actual Xi zero statistic `o(1)` but gives the critical memory wave the nonzero limit `-sqrt(2pi) kappa/2`. The same contradiction survives a localized insertion over a slowly enlarged source buffer, so it is not caused by the infinite periodic continuation or by a mean-density mismatch.
+
+This resolves the clue's request for an actual phase-sensitive Xi constraint, but only at `t=0`. It does not yet control arbitrary broadband/cancelling near-buffer forcing or propagate the filtered coefficient through the real-simple `t<0` dynamics. The remaining problem has therefore moved from identifying a selector to proving a dynamic transport/cancellation estimate compatible with that endpoint spectral constraint.

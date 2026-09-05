@@ -45,6 +45,11 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - [`research/prior_art/montgomery-pair-correlation.md`](../prior_art/montgomery-pair-correlation.md). Role: retained anchor for the zero-statistical input used to falsify overly rigid local-equilibrium behavior, with RH-conditional and conjectural regimes kept distinct.
 
+## Zeta explicit formula and prime-frequency rigidity
+
+- A. P. Guinand, **A summation formula in the theory of prime numbers**, *Proceedings of the London Mathematical Society* (2) 50 (1948), 107–119, DOI `10.1112/plms/s2-50.2.107`. Role: primary classical anchor for the symmetric zero/prime summation formula used in XF-048.
+- André Weil, **Sur les "formules explicites" de la théorie des nombres premiers**, *Communications du Séminaire Mathématique de l'Université de Lund*, Tome Supplémentaire (1952), 252–265. Role: primary anchor for the explicit-formula framework used in XF-048. In the `H_0` coordinate `x=2 gamma`, the prime-power Fourier samples occur at `±(log n)/2`; XF-048 combines this classical frequency structure with the Xi-flow memory scaling and does not claim the explicit formula itself as new.
+
 ## Mesoscopic zeta-zero statistics
 
 - Paul Bourgade, **Mesoscopic fluctuations of the zeta zeros**, *Probability Theory and Related Fields* 148:3–4 (2010), 479–500, DOI `10.1007/s00440-009-0237-3`. Role: primary anchor that mesoscopic zero fluctuations form a distinct analytic regime; XF-009 uses it only for prior-art calibration, not as a theorem already matching the Xi-flow `X=h^2 j` scale.
