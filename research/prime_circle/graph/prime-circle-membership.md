@@ -44,3 +44,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-176-symmetric-valuation-length-refinement-symbols-are-classical-gcd-operators|PC-176]]
 - [[research/prime_circle/findings/PC-177-resultant-prime-power-ratio-symbol-is-an-unbounded-prime-axis-toeplitz-sum|PC-177]]
 - [[research/prime_circle/findings/PC-178-raw-resultant-prime-axis-form-is-nonclosable-and-abel-removal-scalarizes|PC-178]]
+- [[research/prime_circle/findings/PC-179-signed-radial-flux-mellin-spectrum-is-classical-zeta-data|PC-179]]
+- [[research/prime_circle/findings/PC-180-symmetric-flux-potential-couplings-collapse-to-mangoldt-boundary|PC-180]]
+- [[research/prime_circle/findings/PC-181-skew-flux-functional-calculus-is-prime-blind-on-mixed-control|PC-181]]

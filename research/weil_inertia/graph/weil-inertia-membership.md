@@ -63,3 +63,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_inertia/findings/WI-166-four-point-positive-cover-relaxation-is-sharp|WI-166]]
 - [[research/weil_inertia/findings/WI-167-quantized-flag-refinements-cannot-charge-lamzouri-confluence|WI-167]]
 - [[research/weil_inertia/findings/WI-168-same-deficit-quantized-flag-rank-is-at-most-four-delta|WI-168]]
+- [[research/weil_inertia/findings/WI-169-positive-odd-flag-promotion-cancels-horizontal-charge|WI-169]]
+- [[research/weil_inertia/findings/WI-170-lamzouri-distinctness-slack-is-exact-offline-multiplicity-budget|WI-170]]
+- [[research/weil_inertia/findings/WI-171-four-point-saturation-witness-is-uniformly-gram-realizable|WI-171]]
+- [[research/weil_inertia/findings/WI-172-c2330-four-point-candidate-awaits-kernel-check|WI-172]]

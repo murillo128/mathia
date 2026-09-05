@@ -15,3 +15,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_flute/findings/PF-169-all-margulis-short-central-squared-resolvent-blocks-are-trace-summable|PF-169]]
 - [[research/prime_flute/findings/PF-170-exact-sinc-factorization-separates-anchor-and-order-controls|PF-170]]
 - [[research/prime_flute/findings/PF-171-all-margulis-short-central-first-resolvent-blocks-have-sharp-Sr-threshold|PF-171]]
+- [[research/prime_flute/findings/PF-172-finite-collar-recoupling-is-trace-class-but-zero-mode-budget-does-not-collapse|PF-172]]
+- [[research/prime_flute/findings/PF-173-relative-central-recoupling-is-trace-summable|PF-173]]
+- [[research/prime_flute/findings/PF-174-weighted-defect-controls-smoothed-schatten-scale|PF-174]]

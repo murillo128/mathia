@@ -67,6 +67,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-006-mesoscopic-defect-survives-bulk-but-not-fixed-window-classicalization]]
 - [[research/prime_circle/mind/intuition/MI-007-bloch-half-reflection-is-universal-time-reversal]]
 - [[research/prime_circle/mind/intuition/MI-008-nonlocal-fixed-base-repair-is-still-prime-blind]]
+- [[research/prime_circle/mind/intuition/MI-009-signed-radial-interior-survives-only-in-ordered-structure-before-mellin-or-self-adjoint-boundary-collapse]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]

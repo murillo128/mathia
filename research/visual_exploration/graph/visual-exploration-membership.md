@@ -48,3 +48,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-042-markov-logarithmic-pool-panel-residual-gauge|VIS-042]]
 - [[research/visual_exploration/findings/VIS-043-markov-log-pool-weighted-kl-barycenter|VIS-043]]
 - [[research/visual_exploration/findings/VIS-044-linear-pool-markov-covariance-residual|VIS-044]]
+- [[research/visual_exploration/findings/VIS-045-common-fisher-gauge-angle-stability|VIS-045]]
+- [[research/visual_exploration/findings/VIS-046-unrestricted-fisher-gauge-sign-cone|VIS-046]]
+- [[research/visual_exploration/findings/VIS-047-bounded-fisher-gauge-exact-sign-margin|VIS-047]]
+- [[research/visual_exploration/findings/VIS-048-exact-fisher-angle-gauge-invariance-degenerate|VIS-048]]
+- [[research/visual_exploration/findings/VIS-049-fisher-angle-first-order-flatness-two-ratio|VIS-049]]

@@ -47,3 +47,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-160-toric-manin-mumford-closes-fixed-algebraic-torsion-incidence|WP-160]]
 - [[research/weil_positivity/findings/WP-161-radial-cyclotomic-boundary-value-is-mangoldt-but-its-differential-jet-is-jordan-totient|WP-161]]
 - [[research/weil_positivity/findings/WP-162-cyclotomic-inward-radial-flux-is-positive-exactly-on-prime-powers|WP-162]]
+- [[research/weil_positivity/findings/WP-163-mellin-radial-readouts-have-a-unique-mangoldt-support-critical-exponent-at-alpha-one|WP-163]]
+- [[research/weil_positivity/findings/WP-164-positive-cyclotomic-radial-flux-is-never-a-positive-semigroup-coefficient|WP-164]]
+- [[research/weil_positivity/findings/WP-165-cyclotomic-radial-flux-is-pure-gauge-as-a-scalar-connection|WP-165]]
+- [[research/weil_positivity/findings/WP-166-off-diagonal-radial-incidence-is-still-pure-gauge-as-a-matrix-connection|WP-166]]

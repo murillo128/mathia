@@ -57,3 +57,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-174-logarithmic-affine-liouville-haar-flat|PL-174]]
 - [[research/prime_lattice/findings/PL-175-logarithmic-affine-liouville-walsh-collapse|PL-175]]
 - [[research/prime_lattice/findings/PL-176-liouville-additive-cube-gowers-flattening|PL-176]]
+- [[research/prime_lattice/findings/PL-177-prime-axis-affine-closure-flattening|PL-177]]
+- [[research/prime_lattice/findings/PL-178-prime-axis-single-average-shifted-prime-parity-boundary|PL-178]]
+- [[research/prime_lattice/findings/PL-179-oriented-prime-axis-phase-closure-shifted-prime-data|PL-179]]

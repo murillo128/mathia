@@ -66,3 +66,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/analytic_frontier/findings/ANF-055-mean-height-decomposition-gives-an-explicit-unequal-height-stability-tube|ANF-055]]
 - [[research/analytic_frontier/findings/ANF-056-quadratic-mismatch-retention-gives-a-support-free-relative-height-stability-tube|ANF-056]]
 - [[research/analytic_frontier/findings/ANF-057-reciprocal-sinh-control-sharpens-the-support-free-relative-height-tube|ANF-057]]
+- [[research/analytic_frontier/findings/ANF-058-curvature-correlation-retention-confines-montgomery-taylor-five-point-zeros-to-a-compact-separation-annulus|ANF-058]]
+- [[research/analytic_frontier/findings/ANF-059-exact-montgomery-taylor-curvature-transform-shrinks-the-five-point-separation-annulus|ANF-059]]
+- [[research/analytic_frontier/findings/ANF-060-height-balance-splice-makes-the-montgomery-taylor-five-point-zero-box-explicit|ANF-060]]
+- [[research/analytic_frontier/findings/ANF-061-quadratic-height-renormalization-closes-the-common-translation-escape|ANF-061]]
