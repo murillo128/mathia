@@ -1,34 +1,45 @@
 ---
 id: CLUE-weil-inertia-kernel-constrained-positive-cover-escape
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/clues/CLUE-four-point-weighted-cover-assembly.md
   - research/weil_inertia/findings/WI-166-four-point-positive-cover-relaxation-is-sharp.md
+  - research/weil_inertia/findings/WI-171-four-point-saturation-witness-is-uniformly-gram-realizable.md
 ---
 
 # Can a source-constrained cover evade the sharp positive-cover relaxation?
 
 ## Observation
 
-WI-166 closes the arbitrary nonnegative pair-weight/gap relaxation behind the four-point positive-cover program: coefficientwise pair-energy domination admits an exact witness that makes the relaxation sharp. The resolved cover clue explicitly leaves only escapes that retain structure discarded by that relaxation, such as the actual Montgomery--Taylor kernel, Gram/PSD coupling, or another source-derived arithmetic constraint.
+WI-166 closes the arbitrary nonnegative pair-weight/gap relaxation behind the four-point positive-cover program: coefficientwise pair-energy domination admits an exact witness that makes the relaxation sharp. WI-171 now closes the most immediate generic-matrix escape: that exact pair-weight witness is realized by uniformly well-conditioned positive-definite Toeplitz Gram matrices, so PSD, principal-minor, determinant, interlacing, conditioning, and generic stationary-Gram constraints alone do not exclude it. The surviving source information is the specific Montgomery--Taylor kernel-value relation tied to the same ordered gaps that fund the pressure, or genuinely additional arithmetic information.
 
 ## Research question
 
-Does the source problem impose a concrete kernel, Gram/PSD, placement, or arithmetic compatibility condition that excludes the WI-166 extremal witness and permits a strictly stronger domination or defect bound before scalarization?
+Does the actual source coupling
+
+\[
+w_{ij}=|K_{\rm MT}(y_j-y_i)|^2,
+\]
+
+together with ordered additive gap geometry and the common span-pressure ledger, force a strict surplus over the WI-166 saturation resource that survives the complete global assembly? Or can a source-realizable periodic/aperiodic family asymptotically saturate the same resource despite those couplings?
 
 ## Why it may matter
 
-This is the precise remaining question after the positive-cover optimization itself has been exhausted. A positive answer would identify the extra information needed for a genuine improvement; a negative answer would show that another cover parametrization cannot improve the RH-facing bound without stronger arithmetic input.
+This is the precise remaining question after the positive-cover optimization and the PSD-only escape have both been exhausted. A positive answer would identify genuinely source-specific information discarded by the arbitrary-weight relaxation; a negative answer would close another apparent matrix-refinement route and redirect attention toward independent profiles, the exceptional indefinite block, or stronger arithmetic observables.
 
 ## Decisive test
 
-Freeze the smallest exact constrained cover class inherited from the source rather than adding free weights. Prove the retained kernel/PSD/arithmetic constraints and test whether the WI-166 witness is realizable in that class. If it is not, derive an exact strengthened domination inequality or dual certificate and propagate the gain through the complete finite assembly. If it is realizable, or if the proposed constraint disappears under the normalization actually used by the zeta argument, close that escape.
+Freeze the smallest exact class that retains the **specific** Montgomery--Taylor kernel and uses the same gaps both in pair weights and in pressure. Determine the infimum of the resulting finite or periodic `E+P` resource. If it is strictly above the WI-166 relaxed value, derive an exact domination/dual certificate and propagate that surplus through the complete assembly without double spending. If a source-realizable family attains or asymptotically approaches the relaxed value, close the kernel-placement escape.
 
-Keep a finite matrix/semidefinite certificate separate from its zeta instantiation and analytic limit. Any claimed numerical improvement must account for every pair-energy and pressure contribution without double spending.
+Generic Gram or Toeplitz feasibility is no longer a valid decisive test: WI-171 already supplies those properties for the WI-166 witness. Any numerical experiment must preserve the fixed kernel-value relation and pressure coupling from the start.
 
 ## Evidence boundary
 
-No constrained improvement is established. WI-166 is sharp only for its stated relaxed class; this clue does not weaken that theorem. The existence of a Gram or kernel representation by itself is not extra information unless the source proves restrictions that exclude the sharp witness and survive the downstream assembly.
+No Montgomery--Taylor-kernel-constrained improvement is established. WI-166 remains sharp for its arbitrary nonnegative pair-weight/gap class, and WI-171 shows only that generic PSD/Gram/Toeplitz consistency cannot shrink that class at the saturation point. The actual MT translation kernel plus common gap/pressure coupling is still untested at the required exact level.
+
+## Research disposition
+
+Accepted after the first source-constraint triage. Outcome so far: **narrowed**. WI-171 refutes the PSD/Gram-only branch exactly; continued work is justified only on the specific kernel--placement--pressure coupling (or an independent arithmetic constraint) that WI-171 deliberately does not model.
