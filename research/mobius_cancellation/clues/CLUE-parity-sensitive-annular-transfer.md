@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-parity-sensitive-annular-transfer
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -9,6 +9,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-033-annular-product-fiber-sign-coherence.md
   - research/mobius_cancellation/findings/MC-071-signed-feedback-inverse-zero-free-barrier.md
   - research/mobius_cancellation/findings/MC-082-liouville-parity-sieve-divisor-density-blindness.md
+  - research/mobius_cancellation/findings/MC-083-constant-weight-annular-parity-contrast-mertens-square-equivalence.md
   - research/prime_lattice/findings/PL-172-hilbert-schmidt-affine-liouville-chowla-trace-removal.md
 ---
 
@@ -36,4 +37,10 @@ Then write the complete recurrence with exceptional ranges, truncation errors, a
 
 ## Evidence boundary
 
-No such statistic or arithmetic bound is established here. Parity sensitivity alone proves no cancellation, and failure of one annular statistic would not rule out all bilinear or sieve methods. This question does not reopen the accepted local mean-absolute-transfer clue as a duplicate.
+No source-forced nonconstant statistic with an independently available power estimate is established here. Parity sensitivity alone proves no cancellation, and failure of one annular statistic would not rule out all bilinear or sieve methods. This question does not reopen the accepted local mean-absolute-transfer clue as a duplicate.
+
+## Research disposition
+
+Accepted in narrowed form. `MC-083` performs the first calibration: the constant-weight complete product annulus is an exact square-free parity contrast, but for every exponent above `1/2` it is equivalent, up to an `O(N log N)` hyperbola interior, to the corresponding global Mertens bound; the RH epsilon-family is equivalent as well. Thus merely retaining parity is insufficient, and the constant-weight candidate is dead.
+
+The unresolved question is now restricted to genuinely nonconstant source-forced weights or couplings, especially the reciprocal sawtooth/Fourier annular weights retained in `MC-032`--`MC-033`. Such a candidate must both avoid the hyperbola-complement recovery of `MC-083` and come with an arithmetic estimate independently weaker than the Mertens target, after the full `MC-027` iteration and scale-coverage ledger is included.
