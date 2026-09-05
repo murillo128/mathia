@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-zeta-three-gap-cue-deficit-arithmetic-audit
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -49,4 +49,10 @@ Derive from the cited finite-height kernel expansion an explicitly positive, num
 
 ## Evidence boundary
 
-This is reproducible numerical evidence from three finite public-data windows, not a theorem, RH criterion, novelty claim, or arithmetic-specific discovery. The windows stop near height `3e10`, below the much higher Odlyzko regimes used in the cited literature. The directly cited arithmetic result supplies an asymptotic translation-invariant kernel through `O(N_e^-3)`, but not an exact positive finite sampler or three-gap Janossy distribution; inventing a global completion of that truncated kernel was outside issue #110 and no arithmetic-corrected baseline was evaluated. The very small effective CUE sizes make the finite circle's fixed total spacing a serious alternative explanation. The empirical probability resolution is limited to `2/601`, and residual-shape correlations are diagnostics rather than additional multiplicity-free tests. The result remains a proposed audit clue until Research Watch independently checks the arithmetic/process construction and prior art.
+This is reproducible numerical evidence from three finite public-data windows, not a theorem, RH criterion, novelty claim, or arithmetic-specific discovery. The windows stop near height `3e10`, below the much higher Odlyzko regimes used in the cited literature. The directly cited arithmetic result supplies an asymptotic translation-invariant kernel through `O(N_e^-3)`, but not an exact positive finite sampler or three-gap Janossy distribution; inventing a global completion of that truncated kernel was outside issue #110 and no arithmetic-corrected baseline was evaluated. The very small effective CUE sizes make the finite circle's fixed total spacing a serious alternative explanation. The empirical probability resolution is limited to `2/601`, and residual-shape correlations are diagnostics rather than additional multiplicity-free tests. The result remains an audit clue until Research Watch resolves the arithmetic/process construction and prior art.
+
+## Research disposition
+
+Accepted as a baseline-validity audit, not as evidence that the deficit is arithmetic. The published Nishigaki analysis sharpens the distinction: `N_e(T)` is fixed by matching the pair correlation; the displayed Riemann-zero kernel agrees with finite CUE through `O(N_e^-2)` and adds the prime-sum `O(N_e^-3)` term; and the paper empirically verifies the `O(N_e^-2)` transfer to the joint law of **two** consecutive spacings at very high `N_e≈11.30`. The checked literature does not establish that this pair-derived finite-CUE surrogate remains correct for three-gap/four-point Janossy statistics at the much smaller `N_e≈3.8–5.1` used here, while general Janossy-density machinery supplies a way to formulate such higher-order laws but does not remove that modeling question.
+
+The live question is therefore narrower than “zeta has extra three-gap dependence.” First separate two competing baseline failures: an exact small-`N` finite-circle effect in `CUE_N` that makes the pair-derived effective-size surrogate inappropriate at three-gap order, versus the arithmetic `O(N_e^-3)` correction represented by a mathematically valid positive local process. Do not simulate a truncated asymptotic kernel as though it were a probability model unless positivity, normalization, and the required Janossy law are established. The higher effective-size windows near `N_e≈7.74` and `11.30` remain the clean scaling control because the two explanations predict materially different decay behavior.
