@@ -10,6 +10,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-071-signed-feedback-inverse-zero-free-barrier.md
   - research/mobius_cancellation/findings/MC-082-liouville-parity-sieve-divisor-density-blindness.md
   - research/mobius_cancellation/findings/MC-083-constant-weight-annular-parity-contrast-mertens-square-equivalence.md
+  - research/mobius_cancellation/findings/MC-084-source-coupled-exact-sawtooth-annulus-mertens-equivalence.md
   - research/prime_lattice/findings/PL-172-hilbert-schmidt-affine-liouville-chowla-trace-removal.md
 ---
 
@@ -41,6 +42,8 @@ No source-forced nonconstant statistic with an independently available power est
 
 ## Research disposition
 
-Accepted in narrowed form. `MC-083` performs the first calibration: the constant-weight complete product annulus is an exact square-free parity contrast, but for every exponent above `1/2` it is equivalent, up to an `O(N log N)` hyperbola interior, to the corresponding global Mertens bound; the RH epsilon-family is equivalent as well. Thus merely retaining parity is insufficient, and the constant-weight candidate is dead.
+Accepted in further narrowed form. `MC-083` performs the first calibration: the constant-weight complete product annulus is an exact square-free parity contrast, but for every exponent above `1/2` it is equivalent, up to an `O(N log N)` hyperbola interior, to the corresponding global Mertens bound; the RH epsilon-family is equivalent as well. Thus merely retaining parity is insufficient, and the constant-weight candidate is dead.
 
-The unresolved question is now restricted to genuinely nonconstant source-forced weights or couplings, especially the reciprocal sawtooth/Fourier annular weights retained in `MC-032`--`MC-033`. Such a candidate must both avoid the hyperbola-complement recovery of `MC-083` and come with an arithmetic estimate independently weaker than the Mertens target, after the full `MC-027` iteration and scale-coverage ledger is included.
+`MC-084` tests the opposite extreme. The complete exact sawtooth annulus is genuinely nonconstant, but once it is kept with the source-prescribed coarse counterterms `N^2 H(N)^2 - M(N)^2/2`, the resulting annular residual is `2M(N)-M(N^2)` up to another `O(N log N)` interior. Its `O(N^{2 beta})` bound is therefore equivalent to the global `M(x)=O(x^beta)` bound for every `beta>1/2`, and its epsilon-family is RH-equivalent. Full sawtooth coupling is not an independently cheaper input.
+
+The unresolved question is now restricted to **strict partial** source-forced weights or couplings before full sawtooth recombination—most naturally a proper finite Fourier family or a justified proper slab subfamily. Such a candidate must avoid both the constant-weight recovery of `MC-083` and the complete-coupling recovery of `MC-084`, come with an independently available quantitative estimate, and still pay the `MC-031` truncation budget plus the full `MC-027` iteration and scale-coverage ledger.
