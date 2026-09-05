@@ -53,6 +53,31 @@ Do not preload every repository document, every skill, complete prior issue/PR h
 
 When sources materially conflict, document the conflict rather than silently choosing one.
 
+## Workflow state and remote Codex execution
+
+For non-trivial controlling issues that use Mathia's generic issue workflow, use exactly one current workflow-state label:
+
+- `execution-ready`
+- `in-progress`
+- `design-required`
+- `investigation-required`
+- `blocked`
+- `completed`
+
+The label is authoritative for current workflow state. An issue body's `Initial state` is historical context and does not override the current label. Preserve unrelated labels, but replace the previous workflow-state label instead of accumulating multiple state labels.
+
+Specialized control-plane issues are not generic controlling issues merely because they are GitHub issues. A campaign/watch/orchestration issue that explicitly owns another state machine may remain outside this label set unless its owning skill deliberately adopts the generic workflow. In particular, do not add `execution-ready` to a research-control issue simply to make its labels look uniform.
+
+Applying `execution-ready` is an **execution authorization boundary**. `.github/workflows/codex-execute-ready.yml` reacts only to a newly applied `execution-ready` label and launches or resumes the controlling issue through the repository-scoped `self-hosted, codex` runner and the Codex App Server already shared with Desktop Remote Control. Merely installing the workflow does not retroactively launch issues that already carried the label before the workflow existed.
+
+The Action does not choose or execute a repository skill by name. It prepares/reuses the persistent `codex/issue-N` worktree, starts the prompt `Execute GitHub issue #N according to AGENTS.md.`, and lets `AGENTS.md` plus the controlling issue select the procedural skill. Therefore an issue that explicitly names `mathia-compute-executor`, `mathia-formalization-executor`, or another specialized executor keeps that skill's semantics.
+
+The persistent issue worktree is infrastructure isolation, not a new publication contract. Ordinary PR-backed implementation uses it as the executor branch. Mathia's explicit no-PR compute/formalization workflows may use it as an execution workspace while still obeying their own narrow direct-main publication gates; they must not publish `codex/issue-N` merely because the launcher created it.
+
+GitHub Actions job success means that a Codex turn was launched and identified, not that the mathematical/implementation task succeeded. The long-running turn continues under the shared App Server after the Actions job exits. Runner provisioning and repair are owned by `.agents/skills/codex-local-runner/SKILL.md`.
+
+For generic PR-backed implementation, `completed` is post-acceptance/post-merge. The executor stops at ready-for-review. Mathia's explicit no-PR executor skills define their own valid completion transition because there is no PR/merge in those workflows.
+
 ## Active semantic/execution invariants
 
 These rules apply to the current `#29` research line unless its controlling issue explicitly records a later evidence-based revision.
@@ -250,7 +275,8 @@ Scaling is appropriate when evidence identifies a capacity/throughput limit rath
 Load repository skills lazily by role:
 
 - design authority: `.agents/skills/design-github-issue/SKILL.md`;
-- main executor: `.agents/skills/spec-driven-codex-loop/SKILL.md`;
+- main PR-backed executor: `.agents/skills/spec-driven-codex-loop/SKILL.md`;
+- optional repository-scoped Codex Remote Control runner provisioning/repair: `.agents/skills/codex-local-runner/SKILL.md`;
 - Mathia formalization issue design: `.agents/skills/mathia-formalization-design/SKILL.md` on top of `design-github-issue`;
 - Mathia formalization execution: `.agents/skills/mathia-formalization-executor/SKILL.md` as the autonomous no-PR Lean executor with fresh subagent Gate/final review;
 - recurring mathematical research watch: `.agents/skills/mathia-research-watch/SKILL.md`;
@@ -280,7 +306,7 @@ Never commit secrets, credentials, private data, or artifacts without redistribu
 - `.agents/skills/mathia-compute-executor/SKILL.md` is an explicit no-PR executor exception and may publish only the proposed-clue output authorized by that skill directly to the default branch.
 - `.agents/skills/mathia-formalization-executor/SKILL.md` is an explicit no-PR executor exception and may publish issue-authorized Lean source/minimal Lean wiring plus reviewer-produced `status: proposed` clues directly to the default branch only after its fresh Gate-0, Lean-validation, final-review, path, and concurrency gates pass.
 - Avoid unrelated formatting or cleanup.
-- Commit messages should describe one intentional outcome.
+- Commit messages should describe one intentional outcome; generic agent commits should follow the Conventional Commits convention in `codex-github-operations`, while specialized research skills retain their explicitly defined research commit formats.
 - Ordinary PR-backed executor workflows end at a ready-for-review pull request and handoff. The explicit no-PR executor exceptions above do not create or merge a PR.
 - Executors in PR-backed workflows must not merge or enable auto-merge on their own authority.
 - Merge of a PR-backed workflow requires explicit user authorization after review; CI success or independent-review `PASS` alone is not merge authorization.
