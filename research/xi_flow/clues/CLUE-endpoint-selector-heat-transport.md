@@ -1,12 +1,13 @@
 ---
 id: CLUE-xi-flow-endpoint-selector-heat-transport
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: xi_flow
 based_on:
   - research/xi_flow/clues/CLUE-near-buffer-slow-mode-replenishment.md
   - research/xi_flow/findings/XF-048-endpoint-explicit-formula-prime-free-gap-excludes-critical-memory-wave.md
+  - research/xi_flow/findings/XF-049-finite-heat-zero-fourier-flow-is-volterra-triangular.md
   - research/xi_flow/clues/CLUE-overlap-discriminant-taper-summation-by-parts.md
 ---
 
@@ -33,3 +34,11 @@ Either prove a quantitative transport inequality that preserves a contradiction-
 ## Evidence boundary
 
 XF-048 establishes the endpoint phase-sensitive exclusion only at `t=0`; it does not prove dynamic transport or an upper bound on `Lambda`. The accepted taper/discriminant clue controls a different localization mechanism and does not by itself propagate the explicit-formula selector. No broadband exclusion or RH consequence is asserted here.
+
+## Research disposition
+
+Accepted for continued investigation. XF-049 answers the first structural transport question positively in every finite real-simple heat-zero system: the positive-frequency zero spectrum obeys an exact Volterra-triangular evolution, so a memory-band coefficient cannot be rebuilt by direct high-positive/high-negative nonlinear down-conversion. Its flat-density linearization also reproduces exactly the critical `q\asymp\log^2 T` slow-mode decay rate already seen in XF-047, showing that the memory clock and the one-sided spectral transport are the same underlying Cauchy/Burgers mechanism rather than two unrelated approximations.
+
+The unresolved question is now narrower and Xi-specific. The raw infinite zero Fourier sum is not an ordinary convergent function, while the XF-048 selector is spatially localized on width `W\asymp\log^3 T`; therefore one must prove that the one-sided Volterra structure survives the actual Xi infinite-volume normalization and Gaussian localization with an `o(1)` contribution to the matched memory statistic over a fixed legitimate real-simple heat-time interval. Equivalently, a negative result should identify a concrete localization/near-buffer commutator that can rebuild an order-one endpoint-cancelling coefficient without relying on forbidden high-to-low mode mixing.
+
+Acceptance asserts only that this residual transport problem is mathematically well-posed, source-faithful, and worth pursuing. It does not upgrade the finite Volterra law to the infinite Xi flow, does not establish broadband exclusion, and does not imply an upper bound on `Lambda`.
