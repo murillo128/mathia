@@ -92,3 +92,7 @@ This file records durable external literature dependencies used to support or de
 ## Global xi Hadamard factorization and divisor uniqueness
 
 - **Encyclopedia of Mathematics**, **Riemann xi-function**, https://encyclopediaofmath.org/wiki/Riemann_xi-function. Role: authoritative compact reference for the classical facts used in `VIS-033`: the Riemann `xi` function is entire of order one, satisfies `xi(s)=xi(1-s)`, and admits a Hadamard canonical product over its zeros. The uniqueness step in `VIS-033` is the elementary quotient consequence of this finite-order factorization plus reflection symmetry; no new Hadamard theorem is claimed. The entry cites the standard monographs H. M. Edwards, *Riemann's Zeta Function* (1974), and E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function* (2nd ed., 1986).
+
+## Power-divergence and Pearson/LRT comparison
+
+- Noel Cressie and Timothy R. C. Read, **Multinomial Goodness-Of-Fit Tests**, *Journal of the Royal Statistical Society: Series B (Methodological)* 46:3 (1984), 440–464. DOI: `10.1111/j.2517-6161.1984.tb01318.x`. Role: classical power-divergence framework containing Pearson's `X^2` (`lambda=1`) and the log-likelihood-ratio statistic (`lambda=0`) as members of one family and analyzing their asymptotic differences; prior-art boundary for `VIS-037`, whose contribution is only an elementary explicit finite-table residual bound specialized to Mathia's active three-gap Markov-closure/CA representation.
