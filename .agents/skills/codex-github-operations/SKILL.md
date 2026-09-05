@@ -60,6 +60,12 @@ When the local runner supplied a persistent issue worktree/branch, preserve that
 
 For an explicit no-PR Mathia executor, the local `codex/issue-N` worktree is execution isolation only. Follow that executor's direct-main publication gate exactly and do not push the issue branch unless its controlling contract independently authorizes doing so.
 
+### Direct-main publication from an issue worktree
+
+When a no-PR Mathia skill has passed every gate and the accepted candidate currently lives on the **unpublished local** `codex/issue-N` branch, do not attempt to `checkout main` inside that worktree. Instead fetch `origin/main`, reconcile concurrent changes under the owning skill's rules, ensure the candidate commit is based on the current `origin/main`, and prove that the diff from `origin/main` contains only the paths authorized by that skill.
+
+Publish the accepted commit as a normal fast-forward update of the default branch, equivalent to `git push origin HEAD:main`, without publishing `codex/issue-N` as a remote branch. Verify immediately afterward that fetched `origin/main` resolves to the intended commit. A non-fast-forward rejection means main changed concurrently: refresh and re-run every gate affected by that movement. Never force-push. Rebasing the unpublished local scratch branch is allowed only before publication and only when doing so does not bypass any exact-target validation/review requirement owned by the calling skill.
+
 Publish and verify the remote ref. Use a full SHA only when another actor must inspect an exact target.
 
 ## Pull requests
