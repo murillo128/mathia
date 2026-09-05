@@ -51,6 +51,12 @@ A fertility target must satisfy the same statement fidelity and proof-integrity 
 
 When useful, state the motive concisely as `verification`, `fertility`, or `verification + fertility`. Any target-specific fertility question written into the issue is a **minimum probe, not an exhaustive discovery checklist** for the later independent fertility reviewer.
 
+## Issue type label
+
+Every controlling issue created by this skill must carry the repository label `formalization` in addition to exactly one workflow-state label. Apply `formalization` at issue creation whenever the GitHub transport supports it; otherwise apply it immediately after creation before considering the handoff complete. The type label is orthogonal to workflow state and must be preserved across state transitions.
+
+A newly created issue that is ready for autonomous execution should therefore normally carry both `formalization` and `execution-ready`. If it is created in another valid workflow state, keep `formalization` and use that single state label instead.
+
 ## Automatic research handoff and deduplication
 
 Before creating an issue from Research Watch:

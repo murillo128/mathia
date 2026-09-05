@@ -19,6 +19,12 @@ Load that skill as the generic issue-design authority. The originating Research 
 
 The Research Watch does **not** execute the computation, monitor it, maintain a compute queue in the repository, or keep polling the issue. Once the issue is created, return to ordinary research. Any mathematically useful result comes back later through the normal clue inbox.
 
+## Issue type label
+
+Every controlling issue created by this skill must carry the repository label `compute` in addition to exactly one workflow-state label. Apply `compute` at issue creation whenever the GitHub transport supports it; otherwise apply it immediately after creation before considering the handoff complete. The type label is orthogonal to workflow state and must be preserved across state transitions.
+
+A newly delegated computation that is ready to run should therefore normally carry both `compute` and `execution-ready`. If it is created in another valid workflow state, keep `compute` and use that single state label instead.
+
 ## Admission gate: delegate only a real computational question
 
 Create a compute issue only when all of the following are true:
