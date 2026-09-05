@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-central-notch-base-margin-certificate
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: analytic_frontier
 based_on:
@@ -38,3 +38,9 @@ Return either a complete proof of base zero-freeness, with exact inequalities or
 ## Evidence boundary
 
 No base margin, admissible numerical parameter choice, or complete five-point certificate is supplied here. Even a successful five-point certificate would leave larger multisets and the full zeta implication to be established. A failed sufficient phase-blind test is not a counterexample to the exact defect inequality.
+
+## Research disposition
+
+Accepted. ANF-053 makes this the exact current cardinality-five decision problem for the central-notch separator ray: the local canon already supplies the fixed Montgomery--Taylor profile, small- and large-height exclusion, horizontal compactification, phase-blind and anti-phase reductions, and the signed notch perturbation, but it does not decide whether the base defect has a genuine zero. The Montgomery--Taylor extremal theorem fixes `J_MT` but does not itself supply this two-pair Fourier--Laplace sign theorem, and the closest current block/semidefinite improvements use different finite-information carriers rather than resolving this exact defect.
+
+The unresolved target is therefore to certify `H_J_MT>0` throughout the genuine two-pair domain, with the noncompact boundary reductions kept explicit, or to produce one rigorous zero or negative witness. Failure of the sufficient `Q+P>=L` envelope remains inconclusive and must not be promoted to evidence of a zero.
