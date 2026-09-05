@@ -6,22 +6,18 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-001-relative-multigap-geometry-carries-the-spectral-signal` and `MI-002-localize-in-space-before-spectral-compression`.
 
-Finite graded chains show that a resolved local eigenvalue can retain a leading neck scale together with an upstream Feshbach correction, while scalar determinants erase that directed relation. PF-170 supplies a sharper finite-block control for the exact endpoint geometry: moving a different gap into the middle changes the projective tangent at leading order, whereas reversing only the two outer gaps preserves both the tangent and quartic projective defect and first appears at quintic order.
-
-Any claim that resolved spectral memory is arithmetic rather than generic ordered-gap geometry must therefore survive controls preserving the relevant gap multiset and, where appropriate, the tangent/quartic projective data. Determine which marked Weyl, Green, spectral-measure, or boundary data recover genuinely source-specific ordered information beyond these exact geometric baselines.
+Finite graded chains and PF-170 show that resolved local spectral data can retain directed neck order while scalar determinants erase it. Any arithmetic claim must survive controls preserving the relevant gap multiset and projective tangent/quartic data, and must identify a marked Weyl, Green, spectral-measure, or boundary observable that retains source-specific order beyond those geometric baselines.
 
 ## Require reference stability and prime/clone separation before assigning arithmetic meaning to global length or cusp data
 
 **Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
 
-PF-156--PF-170 classify visible relative/absolute separator boundaries. The `1/4` threshold is one-ended propagation, selected cusp data depend on admissible references, positive primitive-length accumulation and finite-length primitive-count explosion are inherited by the all-composite shift clone, and finite-core separator differences can arise from universal cotangent endpoint geometry.
+Visible separator, cusp, primitive-length, and finite-core effects can be inherited by matched shift controls or universal endpoint geometry. A surviving invariant must be intrinsic under the admitted reference category and separate prime from clone for a source-specific reason.
 
-A surviving invariant must therefore be intrinsic under the admitted reference category and separate prime from matched controls for a reason not already forced by universal endpoint geometry.
-
-## Push the relative transmission calculation from central short cores into the actual body/interface assembly
+## Push the weighted relative defect through the actual body/interface assembly
 
 **Linked intuitions:** `MI-004-coordinate-amplification-is-not-operator-amplification` and `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
 
-PF-166--PF-171 show that complete marked tails and complete short central Dirichlet sectors are already asymptotically benign at every `S_r`, `r>1`. PF-172 shows why absolute recoupling cannot be summed interface-by-interface: the collapsing collar has an order-one zero-mode trace budget. PF-173 then resolves that local transmission issue relatively: after matching source and shift collars the zero mode cancels, the central recoupling difference is `O(|t|L^2)` in trace norm, and the complete short-core family is trace-summable.
+PF-166--PF-173 isolate the correct relative operator category: absolute recoupling carries an order-one zero-mode trace budget, while matched prime/clone central recoupling cancels it and becomes trace-summable. PF-174 now gives the quantitative transfer expected from the next stage: a weighted geometric defect controls the smoothed Hilbert--Schmidt/Schatten scale. Coordinate amplification is therefore not the operator obstruction; the missing input is a source-level weighted defect decay strong enough to cross the relevant Schatten threshold and survive the full uncut assembly.
 
-The remaining operator burden is now outside the central core: outer collar/body transmission, global Dirichlet-to-Neumann response, localization commutators/overlap, and repeated head--tail interaction. Determine whether one common global interface calculus preserves the matched cancellation at the sharp `S_r`, `r>1`, level or exposes the first canonical prime/clone discriminator. Separate absolute bounds are no substitute for this relative calculation.
+The live burden is outer collar/body transmission, global Dirichlet-to-Neumann response, localization overlap, and repeated head--tail interaction. A decisive theorem should prove the required arithmetic weighted-defect rate and propagate it through one common relative interface calculus; separate absolute bounds do not test the same mechanism.

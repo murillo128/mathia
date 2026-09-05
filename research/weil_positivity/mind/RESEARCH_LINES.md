@@ -6,28 +6,24 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, and `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`.
 
-WP-145--WP-160 show that pairwise resultant data, canonical positive filling, larger univariate determinants, separated tensor products, natural finite-mass cutoffs, and fixed finite-arity algebraic torsion incidence cannot manufacture irreducible mixed-prime geometry absent upstream. A surviving source must vary with a forced parameter/arity, be genuinely nonalgebraic/nonlocal, or couple finite and archimedean data before positivity.
+Pairwise resultant data, canonical positive filling, larger univariate determinants, separated tensor products, finite-mass cutoffs, and fixed finite-arity algebraic incidence do not manufacture irreducible mixed-prime geometry absent upstream. A surviving source must carry a forced mixed relation before positivity.
+
+## Preserve signed cyclotomic radial incidence through an operation that is not one-dimensional gauge trivialization
+
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, and `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`.
+
+WP-161--WP-164 isolate a real prime-power radial selector but close shellwise Mellin and positive-semigroup interpretations. WP-165 shows that using the signed flux as a scalar radial connection is pure gauge. WP-166 closes the natural matrix/nonabelian upgrade as well: the canonical nonzero off-diagonal skew incidence from Prime Circle defines a finite-dimensional skew-Hermitian connection on a one-dimensional radial base, and its covariant energy is exactly free Dirichlet energy in a moving frame. Noncommutativity only changes the parallel transport; it cannot create curvature on an interval.
+
+The surviving finite--archimedean candidates must therefore use structure not absorbed into a one-dimensional connection: a source-forced zero-order/off-diagonal potential with its own sign theorem, a nontrivial boundary response, a genuinely higher-dimensional/cohomological geometry whose extra direction is itself canonical, or another global coupling that preserves mixed-prime cancellation before positivity. Compact holonomy or a nonzero carrier is not enough.
 
 ## Change the operator before asking anchored or distributional Gamma carriers to inherit positivity
 
 **Linked intuitions:** `MI-002-operator-category-is-a-hard-compatibility-gate` and `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`.
 
-Bounded radial--solenoid Gamma intertwiners vanish by spectral type, exact distributional intertwiners collapse to nonclosable point samplers, and critical sampling is not square summable. A surviving bridge must introduce a genuinely new coupled generator, domain, boundary response, or cohomological geometry and prove its own positivity/coercivity.
+Bounded radial--solenoid Gamma intertwiners vanish by spectral type, while exact distributional versions are nonclosable point samplers. A surviving bridge must introduce a genuinely new coupled generator, domain, boundary response, or cohomological geometry and prove its own coercivity.
 
-## Preserve signed cyclotomic radial flux through finite--archimedean assembly; shellwise positive repairs are now sharply closed
+## Classify genuinely coupled singular, nonlocal, nonlinear, boundary, or higher-cohomological alternatives beyond canonical quotients
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, and `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`.
+**Linked intuitions:** `MI-005-cover-coinvariants-classicalize-or-collapse`, `MI-002-operator-category-is-a-hard-compatibility-gate`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, and `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`.
 
-WP-161--WP-162 give the canonical radial selector: total inward flux is exactly `Lambda(n)`, and pointwise flux positivity holds exactly on prime powers. Mixed-prime zeros are produced by signed cancellation, so ordinary positive shellwise energies already lose the support.
-
-WP-163 closes the whole scalar Mellin-homogeneous family. The Mangoldt support occurs only at the critical exponent `alpha=1`; subcritical weights make every shell positive, while supercritical weights make every shell nonzero with parity sign. WP-164 closes the natural semigroup-positive interpretation: even on prime powers the everywhere-positive flux is not completely monotone and cannot be a positive self-adjoint semigroup coefficient; finite positive scale mixtures do not repair this.
-
-A live finite--archimedean route must therefore retain the **signed** flux family through a genuinely global/noncommuting coupling and prove positivity only after shell/real-place assembly. The decisive test is exact preservation of mixed-prime cancellation together with a new positive/coercive margin not inherited from a shellwise Mellin or Laplace representation.
-
-## Classify genuinely coupled singular, nonlocal, nonlinear, or higher-cohomological alternatives beyond canonical quotients
-
-**Linked intuitions:** `MI-005-cover-coinvariants-classicalize-or-collapse`, `MI-002-operator-category-is-a-hard-compatibility-gate`, and `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`.
-
-Zeroth cover coinvariants classicalize or collapse; local refinement responses have the wrong depth law; Kron/SPD positivity is universal; canonical all-prime energy collapses to constants; local normalization erases fixed arithmetic edges; cutoff root spectra universalize; block/separated determinants do not generate irreducible mixed-prime geometry; fixed algebraic torsion incidence classicalizes to torsion cosets; and shellwise Mellin/semigroup positivity loses or cannot represent the signed radial selector.
-
-Any surviving category must change the architecture upstream and identify which source-specific mixed or finite--archimedean signed information remains through positive completion, with normalization, domain, topology, and sign fixed independently.
+Any surviving category must change the architecture upstream and identify which source-specific signed/mixed finite--archimedean information remains through positive completion, with domain, topology, normalization, and sign fixed independently. Adding algebraic size, matrix dimension, or path ordering after the information has become gauge-trivial is not a new mechanism.

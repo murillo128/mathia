@@ -6,30 +6,24 @@ This file holds the current mathematical questions suggested by the durable visu
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-028--VIS-034 isolate a clean Farey regime: fixed endpoint layers vanish at the natural `n`-scaled energy in every diverging sublinear even band `q=o(n)`, while the reflection-preserving same-gap null places asymptotically all expected Green energy there and gives exact null mean one. Low-band suppression must also be factored into total discrepancy amplitude and spectral reallocation.
+VIS-028--VIS-034 isolate a clean Farey regime in which endpoint layers vanish at the natural scale while the reflection-preserving same-gap null supplies an exact comparator. Any residual must be normalized against that null and challenged by stronger local-order and arithmetic controls.
 
-A decisive continuation should pre-register the band, normalize against the exact null, separate amplitude from redistribution, and challenge any residual by stronger local-order, denominator, mediant, and Franel--Landau/Mobius controls.
+## Require information sensitivity after gauge invariance, not merely coordinate safety
 
-## Compare higher-order residual direction in one frozen gauge family and certify how much the sign can move
+**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls` and `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`.
 
-**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
+VIS-045--VIS-047 classify bounded Fisher-gauge distortion and give exact sign-margin certificates. VIS-048 then exposes a stricter failure mode: a Fisher-angle statistic can be exactly gauge invariant and still degenerate on a matched control family. VIS-049 shows first-order flatness of the same kind along a two-ratio perturbation. Coordinate invariance is therefore only an admission gate; it does not establish that the statistic responds to the arithmetic direction of interest.
 
-VIS-035--VIS-044 show that common three-gap scalar scores largely measure one conditional-interaction magnitude, that CMI discards Fisher-normal direction locally, and that direction comparison requires one predeclared common Markov gauge whose panel/pooling/KL construction is itself load-bearing.
-
-VIS-045--VIS-046 now close the generic gauge-sensitivity question. Inside a bounded positive gauge family, generalized Wielandt gives an exact half-angle distortion bound and a computable sign-stability certificate from the metric condition number or log likelihood-ratio spread. Across **all** positive diagonal Fisher gauges, sign invariance occurs exactly when the two fixed residual tensors agree or oppose cellwise; mixed signs can be reweighted through alignment, orthogonality, and opposition.
-
-A live zeta/CUE direction claim must therefore freeze its primary gauge and a scientifically justified alternative family before inspection, then report the corresponding robustness envelope. If the admissible family is unrestricted, coordinatewise sign compatibility is the only exact gauge-independent sign certificate.
+A live visual statistic must first freeze or classify its metric/gauge freedom and then prove a nonzero source-sensitive derivative, curvature, separation margin, or higher-order response against matched controls. Rendering an exactly invariant but information-flat scalar does not create evidence.
 
 ## Build an information-loss atlas rather than treating complete xi-field renderings as independent evidence
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-033 proves that the complete xi zero divisor, reflection symmetry, and one normalization determine the entire xi field. Complete domain coloring, modulus/phase portraits, critical-line traces, derivatives, critical points, and other exact full-field visualizations are deterministic re-renderings of one information channel.
+Complete xi-field views are deterministic re-renderings of one information channel. Useful independence must come from deliberately different losses, with each experiment stating what was discarded and proving that the bridge is not ordinary analytic continuation or statistical recoding.
 
-Useful independence must come from deliberately different losses: finite prime versus finite zero truncations, sparse samples, localized windows, low-frequency projections, or differently conditioned matched nulls. Each experiment should state what was discarded and prove that the proposed bridge is not ordinary analytic continuation, divisor bookkeeping, or an exact/statistical recoding of a retained channel.
+## Convert persistent residuals into exact handoff theorems
 
-## Convert persistent visual residuals into exact handoff theorems
+**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls` and `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`.
 
-**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
-
-Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, orientation-coupling, ordering, boundary-layer, symmetry-conditioned, gauge-robustness, or scale statement independent of rendering. Agreement among deterministically or statistically related visualizations is not a promotion criterion.
+Promotion should end in an exact support, rank, conditioning, information-distance, orientation, gauge-robustness, sensitivity, or scale statement independent of rendering. Agreement among related visualizations is not a promotion criterion.
