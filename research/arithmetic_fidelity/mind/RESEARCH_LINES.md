@@ -14,20 +14,20 @@ Linear span, generated sigma-algebra, multiplicative closure, and source-depende
 
 Exact recovery can coexist with arbitrarily bad conditioning, and per-scale witnesses can escape every compact set. A concrete application must supply a source-natural stability modulus, coherent approximant tower, compact-transversal margin, or equivalent width decay.
 
-## Match the stratified multiscale information budget to the coherence and regularity demanded at the destination
+## Derive the source metric/statistical category, then prove the relevant score or spectral mass survives compression
 
-**Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-008-compact-fidelity-needs-cross-scale-witness-compactness`, `MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness`, `MI-011-coherent-exact-description-has-an-entropy-atomicity-gate`, `MI-012-regular-recovery-orders-the-full-multiscale-information-profile`, and `MI-014-target-relative-spectral-fidelity-is-projection-geometry`.
+**Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-010-spectral-fidelity-needs-ideal-budget-and-relative-scale-tightness`, `MI-012-regular-recovery-orders-the-full-multiscale-information-profile`, and `MI-014-target-relative-spectral-fidelity-is-projection-geometry`.
 
-AF-105--AF-125 separate assembly topology, Schatten resources, relative scale, tolerance covering, average description cost, coherent exact generation, and fiberwise scale-transfer budgets. AF-135--AF-136 identify the full-generator-gauge endpoint: fixed-target fidelity is projection/principal-angle geometry, while raw source-Gram eigenvalue scales are coordinate-dependent.
+AF-135--AF-138 show that fixed-target fidelity under full generator gauge is projection geometry until an independently source-specified metric upgrades the invariant to the generalized pencil `(G,M)`. AF-139 closes the covariance-only choice: full affine naturality forces `M` to be proportional to `C^{-1}`, making the generalized spectrum exactly output PCA geometry and imposing a second-order information ceiling.
 
-AF-137--AF-138 now make the metric boundary exact. Compact symmetry reduces the metric ambiguity only to the positive cone of the commutant; unless the coefficient representation is irreducible that cone can arbitrarily rescale active positive Gram channels, while irreducibility makes the equivariant spectrum flat. Once the source independently supplies a positive metric `M`, however, the Hermitian-definite pencil `(G,M)` is invariant under simultaneous generator/metric transport, and target truncation is governed by the corresponding generalized Picard tail.
+AF-140 opens a strictly richer but category-sensitive route. A source-natural smooth translation law supplies the full-law Fisher metric `J`, with `J>=C^{-1}` and equality only at the Gaussian boundary. AF-141 then gives the exact downstream gate: under a parameter-independent observation the retained score is the conditional score and Fisher loss is `E[Cov(S|Y)]`.
 
-A decisive spectral application must therefore derive its coefficient metric from source-natural structure independently of the target, fix any absolute normalization required by the cutoff, and prove the generalized tail estimate in that metric. Symmetry, whitening, or matrix algebra alone cannot manufacture the missing geometry.
+A decisive arithmetic application must therefore derive its probability/statistical family from source structure rather than arbitrary smoothing, identify the tangent/score directions carrying the intended discriminator, and prove those directions survive the actual compression quantitatively. Metric canonicity without score non-escape is not fidelity.
 
 ## Construct the minimal witness saturation required for composition, then justify why that witness class is natural
 
 **Linked intuitions:** `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`, `MI-009-quotient-repair-has-category-regularity-and-naturality-gates`, and `MI-013-witness-relative-recovery-geometry-needs-natural-composition`.
 
-AF-126--AF-133 make approximate fidelity operationally witness-relative and show that small stagewise recovery defects do not compose when an intermediate map moves a downstream-invisible residual into an upstream-visible direction. AF-134 closes the abstract fixed-chain repair: backward witness saturation gives the minimal convex symmetric witness family that makes every stage visible to all downstream tests, with the resulting seminorm recursion and blind subspace determined exactly.
+AF-126--AF-134 make approximate fidelity witness-relative and show exactly why stagewise recovery need not compose. Backward witness saturation gives the minimal convex symmetric family making every stage visible to all downstream tests.
 
-The remaining burden is therefore not to invent a stronger generic composition theorem. For a concrete Mathia carrier, derive the destination witness body and its pullbacks from the source, and show that the resulting saturation remains tractable and natural rather than becoming an after-the-fact enlargement that simply encodes the desired answer.
+The remaining burden is concrete rather than abstract: derive the destination witness body and its pullbacks from the source and show the resulting saturation remains tractable and natural rather than becoming an after-the-fact encoding of the desired answer.

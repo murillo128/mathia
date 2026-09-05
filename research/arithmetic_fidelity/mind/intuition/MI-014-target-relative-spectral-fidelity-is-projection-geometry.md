@@ -1,39 +1,44 @@
-# MI-014 — Target-relative spectral fidelity is projection geometry until a source-canonical metric upgrades it to a generalized spectrum
+# MI-014 — Source-canonical spectral fidelity is category-relative, and Fisher retention is score-projection geometry
 
-**Evidence level:** supported through AF-138 by exact whitening, Moore--Penrose projection identities, complete fixed-target congruence invariants, commutant-gauge classification, and generalized Hermitian-definite spectral transport
+**Evidence level:** supported through AF-141 by exact projection identities, gauge classification, covariance naturality, Fisher information geometry, and score-projection loss
 
 ## Core intuition
 
-A raw source Gram matrix does not carry an intrinsic hierarchy of positive spectral magnitudes under arbitrary changes of generator coordinates. Without extra source geometry, target fidelity reduces to how target directions project onto the represented source subspace. Compact symmetry does not usually fix this: it leaves exactly the positive metric cone of the representation commutant, large enough to arbitrarily rescale active positive Gram channels.
+A spectral hierarchy is meaningful only relative to source geometry that survives the admitted reparameterization category. With no source metric, full generator gauge reduces fixed-target fidelity to projection geometry. A source metric can repair that gauge, but what information the metric retains depends on how the source supplies it: covariance gives a unique affine-natural second-order metric, while a source-natural smooth statistical family can supply a genuinely full-law Fisher metric.
 
-A genuine source metric changes the category. If the source independently supplies a positive-definite coefficient metric `M`, then the invariant spectral object is the generalized pencil `(G,M)`, equivalently the whitened operator `M^{-1/2}GM^{-1/2}`. Spectral scale is meaningful relative to that metric, not relative to an arbitrary coordinate identity.
+Canonicity still does not imply fidelity through compression. Once a statistical source is observed through a parameter-independent channel, the surviving Fisher geometry is exactly the geometry of the conditional score. The lost part is an `L^2` projection defect.
 
 ## Strongest justified principle
 
-AF-135 gives the exact fixed-target residual `dist(k,ran A)^2=kappa-b^*G^dagger b`; after whitening it is ordinary projection geometry. AF-136 extends this to a target family: the projection Gram `Q=C^*G^dagger C` together with `rank G` is a complete invariant under the full invertible generator gauge, while positive Gram eigenvalue magnitudes can be changed by congruence.
+AF-135--AF-138 give the metric boundary. Under arbitrary invertible changes of generator coordinates, raw positive Gram eigenvalue scales are not intrinsic; fixed-target information is projection/principal-angle geometry. With an independently source-specified positive metric `M`, the invariant object is the generalized pencil `(G,M)` and the corresponding generalized Picard measure.
 
-AF-137 asks whether symmetry alone supplies the missing metric. For a compact-group representation, every invariant coefficient metric is a positive self-adjoint operator in the commutant. On each multiplicity space this freedom acts by positive congruence and can prescribe all active positive Gram eigenvalues. The metric is unique up to scale only for an irreducible coefficient representation, exactly where equivariance also forces the Gram spectrum to be flat. Symmetry therefore cannot simultaneously provide a nontrivial canonical positive spectral hierarchy and its own metric.
+AF-139 classifies the covariance-only case under full affine naturality. If the source supplies only a positive-definite covariance `C`, every natural coefficient metric is `c C^{-1}`. After normalization, the generalized spectrum is exactly the nonzero output-covariance spectrum of `A C A^*`, and equal-covariance controls show that this entire repair has a strict second-order ceiling.
 
-AF-138 gives the exact conditional repair. With a source-specified `M>0`, the generalized eigenvalues of `Gx=lambda Mx` are invariant under `A->AR`, `G->R^*GR`, `M->R^*MR`; after whitening the change is unitary. The target-relative generalized Picard measure is invariant as well, and the excess truncation error is exactly its discarded low-generalized-eigenvalue mass. If `M` is canonical only up to scale, eigenvalue ratios/order survive but an absolute cutoff still needs a normalization.
+AF-140 shows that the ceiling belongs to the input category, not to affine naturality itself. For a source-intrinsic smooth translation family, location Fisher information `J` has the correct metric transport law, satisfies `J>=C^{-1}` with equality exactly at the Gaussian boundary, and can distinguish equal-covariance laws. Arbitrary smoothing or an imposed parametric family does not qualify as source geometry.
+
+AF-141 then separates metric canonicity from compression fidelity. For a parameter-independent Markov observation `X->Y`, the observed score is `E[S_X|Y]` and
+
+`I_X-I_Y = E[Cov(S_X|Y)] >= 0`.
+
+A tangent direction survives exactly when its score component is measurable from the retained observation. Along a Markov chain these Fisher defects add stage by stage.
 
 ## What remains possible
 
-A concrete spectral-fidelity theorem should derive `M` from source-natural measure, energy, probability, arithmetic weights, geometry, or another independently specified form, then prove the required generalized Picard-tail estimate. Choosing `M` from the target, desired cutoff, or Gram matrix itself merely moves the gauge choice into the metric.
+A concrete arithmetic spectral theorem must first derive the metric or statistical experiment from the source, independently of the desired target. If covariance is the only retained probabilistic structure, no higher-order discriminator can emerge downstream. If a full-law Fisher metric is used, the statistical family itself must be canonical and the arithmetic-relevant score directions must satisfy a quantitative non-escape theorem through the actual observation/compression.
 
-For sources without such a metric, use projection/principal-angle geometry rather than raw spectral scale. For sources with only symmetry, classify the residual commutant gauge before attributing meaning to eigenvalue magnitudes.
+For singular covariance, discrete sources, nondominated models, or nontranslation statistical categories, the corresponding source geometry must be derived separately rather than importing the smooth Fisher construction by arbitrary regularization.
 
 ## Status / novelty
 
-Gram matrices, pseudoinverses, compact-group commutants, generalized eigenvalue pencils, whitening, singular values, and Picard regularization are classical. The persisted synthesis is the category boundary: **projection geometry is intrinsic under full generator gauge; symmetry alone generally leaves a commutant metric gauge; a source-canonical metric repairs that gauge and makes the generalized spectrum, not the raw Gram spectrum, the meaningful object**.
+Projection geometry, Mahalanobis distance, affine equivariance, PCA, Fisher information, Cramér--Rao inequalities, score conditioning, and Fisher monotonicity are classical. The persisted synthesis is the category ladder: **projection geometry without a metric; unique second-order Mahalanobis geometry from covariance; potentially full-law Fisher geometry from a source-natural statistical family; and score-projection loss under downstream compression**.
 
 ## Falsification criterion
 
-Produce a nontrivial raw Gram spectral ordering invariant under the full admitted generator gauge without additional coefficient geometry, show that compact symmetry fixes a rich positive hierarchy despite the AF-137 commutant freedom, or find a simultaneously transported metric/source representation for which the generalized spectrum or generalized Picard tail changes.
+Produce an intrinsic raw Gram spectral scale under the full admitted generator gauge without additional coefficient geometry; a covariance-only affine-natural metric not proportional to `C^{-1}`; a regular source-natural Fisher metric violating its transport or information-loss identities; or a compressed statistical direction whose score is not retained but whose Fisher information is unchanged.
 
 ## Lean-formalizable core
 
-- Pseudoinverse projection identity and congruence invariance.
-- Positive commutant classification of invariant metrics.
-- Positive-congruence freedom on multiplicity blocks.
-- Generalized pencil invariance under metric transport.
-- Generalized Picard-tail identity for target truncation.
+- Fixed-target projection/pseudoinverse identities and generalized-pencil invariance.
+- Full-affine covariance metric uniqueness.
+- `J>=C^{-1}` and the Gaussian equality condition in a finite-dimensional regular model.
+- Conditional-score identity and positive Fisher projection defect.

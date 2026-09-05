@@ -1,40 +1,47 @@
-# MI-004 — The endpoint prime-free Fourier sector has an exact collision-safe infinite Volterra carrier
+# MI-004 — Endpoint prime-free Fourier transport is Volterra-triangular and the matched memory selector stays empty at fixed heat time
 
-**Evidence level:** supported through XF-051 by the Guinand--Weil explicit formula, collision-safe symmetric finite heat transport, de Bruijn strip control, horizontal logarithmic derivatives, and an exact distributional half-line Volterra law
+**Evidence level:** supported through XF-054 by the explicit endpoint normal form, convolution-ideal heat jets, and the moving-high-line uniform matched-statistic estimate
 
 ## Core intuition
 
-The actual Xi endpoint has a source-specific low-frequency sector that a generic source-compatible counting model does not. In the `H_0` zero coordinate, the explicit formula has no nonzero prime-power frequency below `log 2/2`, while the memory scale relevant to Xi flow is `Theta(1/log T)`.
+The positive-frequency Xi carrier has a genuine source-selected endpoint gap, and its one-sided heat evolution cannot import higher-frequency prime data downward by finite-order Volterra transport. More strongly, for the actual moving memory-band statistic, the apparent infinite-order endpoint escape can be suppressed uniformly over every fixed heat interval by evaluating the same height-independent carrier on a source-compatible high line.
 
-The required one-sided transport is no longer merely a finite real-root heuristic. Finite symmetric zero statistics satisfy the same Volterra law through complex roots and collisions, and the infinite Xi family has a canonical renormalized positive-frequency carrier obtained from the logarithmic derivative on a zero-free horizontal line. The remaining issue is quantitative control as the moving band approaches the singular endpoint `xi=0`, not existence, root reality, or high-to-low frequency leakage.
+The endpoint problem is therefore no longer an uncontrolled singular transport problem. The prime-free selector survives the exact matched statistic; the remaining bridge is to turn that source exclusion into transition-side signed coercivity.
 
 ## Strongest justified principle
 
-XF-048 constructs an endpoint probe whose actual zero response is `o(1)` while the coherent critical memory control has a nonzero limit. XF-050 strengthens this with a compactly bandlimited test: its Fourier support lies strictly between zero and the first prime-power line, so the prime contribution vanishes exactly, and the explicit formula remains meaningful for complex off-line zeros.
+XF-048--XF-051 establish the structural carrier. Below the first prime frequency `lambda_2=log 2/2` the endpoint selector can be made exactly prime-free; finite one-sided transport survives complex roots and collisions; and the infinite horizontal logarithmic derivative gives a canonical positive-frequency distribution with exact Burgers/Volterra evolution.
 
-XF-049's finite Volterra law extends in XF-050 to arbitrary complex roots and through collisions because the exponential zero sum is a symmetric analytic function of the polynomial coefficients. Individual root branches may be singular, but the low-positive-frequency field is not.
+XF-052 makes the endpoint datum explicit. On `0<xi<lambda_2`, the carrier equals the deterministic background
 
-XF-051 gives the infinite carrier. For any zero-free horizontal line `Im z=a>1`, the boundary logarithmic derivative `Q_a=H_t'/H_t` is a tempered upper-half-plane boundary value with Fourier support in `[0,infinity)`. Its Burgers equation becomes an exact distributional convolution law on that proper cone. After removing the auxiliary factor `e^{-a xi}`, the resulting distribution `mathcal Z_t` is independent of `a`, agrees with the finite zero characteristic sum on positive frequencies, and obeys the same Volterra-triangular equation.
+`B(xi)=e^xi+e^-xi-e^-xi/(1-e^-4xi)`,
 
-Thus the Xi source/transport pairing is now exact away from `xi=0`: the endpoint explicit formula selects the memory band, and the true infinite heat flow cannot replenish a positive frequency from larger or opposite frequencies.
+with singular normal form `-1/(4 xi)+7/4+O(xi)`. Arithmetic atoms begin only at `lambda_2`.
+
+XF-053 shows that the high-frequency arithmetic sector is a convolution ideal for the one-sided Burgers vector field. Every finite heat-time jet below `lambda_2` is therefore determined entirely by the background, and every fixed Taylor polynomial has `o(1)` pairing with the shrinking XF-050 memory probe. Any order-one replenishment would have to be genuinely nonperturbative in the moving endpoint limit.
+
+XF-054 closes that escape at the statistic level. Because the carrier is independent of the auxiliary zero-free height, choose `a_T=A log T`. Reflection moves the logarithmic derivative into a right half-plane where the Euler product makes the arithmetic factor polynomially small uniformly for `0<=t<=t_0`; the deterministic gamma/polar heat background varies only on the physical `T` scale and is killed by the probe's `W omega~log^2 T` oscillation. Hence
+
+`sup_{0<=t<=t_0} |S_T(t)| = o(1)`
+
+for every fixed `t_0`, without RH or real-root assumptions.
 
 ## What remains possible
 
-The memory center tends to zero like `1/log T`, so the Volterra simplex still includes the entire lower-positive interval down to the singular endpoint. A proof must separate the deterministic archimedean/background component of `mathcal Z_t` near zero from the fluctuation and bound the quadratic lower-band contribution to the moving probe by `o(1)` over the relevant heat interval.
+XF-054 does not give a pointwise endpoint regularity theorem and does not itself bound the de Bruijn--Newman constant. It proves exactly the non-escape property needed for the compact matched memory statistic. The live problem is now downstream: connect this uniform source selector to the Cauchy/flux rigidity developed near transition and derive the signed tapered estimate required by the zero-side coercive argument.
 
-A decisive obstruction would be an order-one term generated from the endpoint singularity or frequencies below the memory band. Loss of root reality, root collision, taper-induced opposite-frequency mixing, or nonexistence of the raw infinite characteristic sum no longer addresses the active carrier.
+A new endpoint observable is justified only if that source-to-transition bridge provably loses the selector. Reopening complex-root, collision, finite-jet, or raw infinite-sum objections would duplicate closed structural questions.
 
 ## Status / novelty
 
-Guinand--Weil, de Bruijn strip shrinking, Hadamard logarithmic derivatives, complex Burgers/Cole--Hopf structure, Paley--Wiener half-line support, and Volterra convolution are classical ingredients. The Mathia synthesis is the source/transport boundary: **the endpoint prime-free memory sector has a canonical collision-safe infinite one-sided transport; the sole remaining transport gate is quantitative control of the renormalized field as its positive-frequency band collapses toward zero**.
+The explicit formula, Mellin/Fourier transforms of gamma factors, one-sided convolution support, heat equation, Euler product, Stirling estimates, and integration by parts are classical. The persisted Xi-flow synthesis is the exact source-transport statement: **the prime-free endpoint quotient is triangular to all finite heat orders, and the actual shrinking memory statistic remains uniformly source-empty over fixed heat time after a height-independent high-line comparison**.
 
 ## Falsification criterion
 
-Find a prime-power contribution inside the compact XF-050 endpoint band, derive positive-frequency Xi evolution involving frequencies above the target or the negative half-axis, show that the horizontal carrier depends on the auxiliary height, or exhibit an unavoidable order-one `xi downarrow 0` contribution that refills the endpoint selector over the needed heat interval.
+Exhibit a prime-power contribution to the carrier below `lambda_2`, a finite heat jet that imports high-frequency arithmetic mass into that band, or a fixed heat interval and matched XF-050 probe for which the moving-high-line estimate fails to make `S_T(t)=o(1)`.
 
 ## Lean-formalizable core
 
-- Collision-safe Newton-sum/finite Volterra identity.
-- Compact band separation from the first prime-power frequency.
-- Horizontal-line height-cancellation identity for the positive-frequency carrier.
-- Abstract cone-support implication for Volterra triangularity, with analytic inputs assumed.
+- Support-ideal preservation for one-sided convolution and the finite jet recurrence.
+- Algebraic separation of the explicit prime-free endpoint background from the first arithmetic atom.
+- Finite-dimensional/analytic lemmas underlying the matched-statistic height-independence reduction.

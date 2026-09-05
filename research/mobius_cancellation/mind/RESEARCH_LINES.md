@@ -2,32 +2,32 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
 
-## Find a source-forced coupled residual that retains signed information without reconstructing Mertens at target resolution
+## Find a source-forced signed split that reduces the top Mertens mode, not only the omitted complement
 
 **Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
 
-MC-066--MC-081 close positive quadratic feedback, standalone inverse control, complete Dirichlet recovery, and broad factorization-gauge escapes. MC-082 adds the information test: local divisor-density data can be identical on classes with opposite Liouville parity content, so signed parity is genuinely missing from those unsigned surrogates.
+MC-082--MC-087 establish the first two gates: unsigned surrogates can lose parity, while many signed/proper/selective residuals remain Mertens-equivalent when their complement is generically restorable.
 
-MC-083--MC-087 now show that merely restoring sign or using a proper/selective source coupling is still insufficient whenever the omitted information is cheap enough to restore at the target scale. Constant-weight parity annuli, the exact source sawtooth annulus, sufficiently resolved Fourier truncation, initial reciprocal slabs, and in fact arbitrary physical-space omissions with `#E_N=O(N^{2 beta})` are quantitatively Mertens-equivalent at exponent `beta>1/2` under their generic complement bounds.
+MC-088--MC-089 show that the generic support threshold can be crossed genuinely. A common-prime omitted block has supercritical cardinality yet, by Euler-factor deletion, reduces uniformly to smaller Mertens scales and can be power-cheap on every large ambient scale. MC-090 then identifies the remaining obstruction: the complementary gcd-sieve retention still contains the unsifted top Huxley--Watt mode with coefficient one, so once lower-scale terms are subordinate, bounding the retained statistic below the old exponent is already the improved Mertens theorem.
 
-A live residual must therefore preserve source-forced signed structure while crossing the reconstruction boundary deliberately. In physical space this means omitting supercritical pair mass and proving genuine arithmetic cancellation in that complement, or using a joint coupling/recurrence that never restores the complement by an absolute support estimate.
+A live split must therefore alter or cancel the top target-bearing mode itself. The decisive test is an exact decomposition in which both the complement and the retained carrier are quantitatively weaker than `M(N^2)` under the old hypothesis, without assuming the desired new exponent.
 
-## Derive an iterable strict contraction from a genuinely under-resolved signed annular residual
+## Derive an iterable strict contraction from a jointly estimated signed recurrence
 
 **Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
 
-Repeated scale doubling can amplify a genuine subunit contraction, but algebraic degree, parity sensitivity, proper truncation, sparse omission, or selective geometry do not supply one. MC-085--MC-087 identify the exact trap in both Fourier and physical coordinates: once the omitted contribution is generically target-subordinate, the retained source-coupled statistic is already an approximate coordinate system for `M(N^2)`.
+MC-089 supplies a scale-complete lower-scale complement reduction, but MC-090 shows that separate absolute estimation of the retained gcd-sieve block cannot furnish the missing contraction. A positive continuation must estimate retained and omitted pieces jointly before target reconstruction, or derive another source-coupled recurrence whose top-scale coefficient is genuinely subunit and whose errors are summable under iteration.
 
-A positive continuation must exploit an arithmetic signed estimate on a deliberately information-losing complement, control retained and omitted pieces jointly before triangle inequalities, or produce another source-derived partial coupling that feeds a uniform strict contraction without target reconstruction, with summable iteration losses and global scale coverage.
+The contraction must be uniform over the moving family and cover all sufficiently large scales; per-scale existence or a sparse prime-power subsequence is insufficient.
 
 ## Keep comparator turnover and scale coverage in any alternative moving-family theorem
 
 **Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence`.
 
-The quadratic positive-feedback corridor is closed far beyond the earlier exceptional-character range, but alternative comparator families can still move with scale. Any such route must quantify how the chosen family persists or turns over, how transfer constants enter the exponent, and which signed coupling survives across the whole scale range. Per-scale existence remains insufficient.
+Alternative comparator families can move with scale. Any route must quantify persistence/turnover, transfer constants, and which signed coupling survives across the whole scale range. MC-089 closes scale coverage only for the common-prime complement; it does not supply the retained estimate.
 
 ## Treat asymptotically fixed Mellin drift as information-neutral unless the residual coupling changes
 
 **Linked intuitions:** `MI-006-asymptotically-fixed-mellin-drift-is-information-neutral`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
 
-Small deterministic Mellin shifts, fractional zeta gauges, or slowly varying normalizations do not create new signed information when they only reallocate the fixed Dirichlet singularity. A useful deformation must alter the source-forced coupled residual rather than reparameterize the same scalar carrier.
+Small deterministic Mellin shifts, fractional zeta gauges, or slowly varying normalizations do not create new signed information when they only reallocate the fixed Dirichlet singularity. A useful deformation must alter the source-forced coupled residual or its top-scale coefficient rather than reparameterize the same scalar carrier.

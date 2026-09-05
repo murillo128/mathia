@@ -6,19 +6,19 @@ This file holds the current mathematical questions suggested by the durable visu
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-028--VIS-032 isolate a clean Farey regime: fixed endpoint layers vanish at the natural `n`-scaled energy in every diverging sublinear even band `q=o(n)`, while the reflection-preserving same-gap null places asymptotically all expected Green energy there and gives an exact null mean one.
+VIS-028--VIS-034 isolate a clean Farey regime: fixed endpoint layers vanish at the natural `n`-scaled energy in every diverging sublinear even band `q=o(n)`, while the reflection-preserving same-gap null places asymptotically all expected Green energy there and gives exact null mean one. Low-band suppression must also be factored into total discrepancy amplitude and spectral reallocation.
 
-VIS-034 sharpens interpretation of any observed low-band suppression. The suppression statistic factors into a total-discrepancy amplitude term and a spectral-reallocation term, so an apparently strong low-mode effect is not evidence of arithmetic redistribution until the overall discrepancy scale is controlled separately. A decisive continuation should pre-register `q_n->infinity`, `q_n=o(n)`, normalize against the exact null, factor amplitude from redistribution, and then challenge any residual by stronger local-order, denominator, mediant, and Franel--Landau/Mobius controls.
+A decisive continuation should pre-register the band, normalize against the exact null, separate amplitude from redistribution, and challenge any residual by stronger local-order, denominator, mediant, and Franel--Landau/Mobius controls.
 
-## Compare higher-order residual direction only in one predeclared common gauge, and audit the gauge itself separately
+## Compare higher-order residual direction in one frozen gauge family and certify how much the sign can move
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-035--VIS-040 close a broad apparent multiplicity in three-gap statistics. CA singular values, Pearson interaction, LRT/CMI, and their local finite-size behavior largely measure the same conditional-interaction magnitude. Near Markov closure, scalar CMI is one half of the Fisher-normal residual energy to second order, so it discards the normal direction carrying that dependence.
+VIS-035--VIS-044 show that common three-gap scalar scores largely measure one conditional-interaction magnitude, that CMI discards Fisher-normal direction locally, and that direction comparison requires one predeclared common Markov gauge whose panel/pooling/KL construction is itself load-bearing.
 
-VIS-041--VIS-043 show how orientation can be retained without pretending the reference is canonical. Whitening residuals by one fixed positive Markov reference gives an exact Fisher angle; the weighted logarithmic pool of a predeclared panel's Markov closures remains Markov, is the unique minimizer of weighted `D_KL(gauge||closure)`, and supplies one common Fisher metric. Its dispersion `-log Z` decomposes entirely into the admitted lower-order Markov channels and is therefore a gauge-heterogeneity diagnostic, not residual agreement.
+VIS-045--VIS-046 now close the generic gauge-sensitivity question. Inside a bounded positive gauge family, generalized Wielandt gives an exact half-angle distortion bound and a computable sign-stability certificate from the metric condition number or log likelihood-ratio spread. Across **all** positive diagonal Fisher gauges, sign invariance occurs exactly when the two fixed residual tensors agree or oppose cellwise; mixed signs can be reweighted through alignment, orthogonality, and opposition.
 
-VIS-044 gives the dual warning. Reversing the KL direction selects the arithmetic pool, which need not remain Markov: its apparent three-way residual is exactly a cross-panel covariance of the lower-order left/right conditional channels, and projecting it back to the Markov family costs exactly the induced conditional mutual information. A live cross-process orientation claim must therefore freeze the panel, weights, support, partition, pooling rule, and KL direction before inspecting residuals, and must keep lower-order gauge heterogeneity separate from own-process higher-order interaction.
+A live zeta/CUE direction claim must therefore freeze its primary gauge and a scientifically justified alternative family before inspection, then report the corresponding robustness envelope. If the admissible family is unrestricted, coordinatewise sign compatibility is the only exact gauge-independent sign certificate.
 
 ## Build an information-loss atlas rather than treating complete xi-field renderings as independent evidence
 
@@ -32,4 +32,4 @@ Useful independence must come from deliberately different losses: finite prime v
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, orientation-coupling, ordering, boundary-layer, symmetry-conditioned, or scale statement independent of rendering. Agreement among deterministically or statistically related visualizations is not a promotion criterion.
+Future promotion should end in an exact support, rank, conditioning, correlation-order, bridge, information-distance, orientation-coupling, ordering, boundary-layer, symmetry-conditioned, gauge-robustness, or scale statement independent of rendering. Agreement among deterministically or statistically related visualizations is not a promotion criterion.

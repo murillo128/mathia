@@ -1,39 +1,41 @@
-# MI-004 — Complete scalar five-point control is now a residual unequal-height Montgomery--Taylor zero-freeness problem
+# MI-004 — Complete scalar five-point control is a curvature-correlation realizability problem
 
-**Evidence level:** supported through ANF-057 by exact defect reductions, compactness, perturbative notch asymptotics, a global equal-height curvature gate, and support-free unequal-height stability cones
+**Evidence level:** supported through ANF-059 by the exact five-point normal form, support-free mismatch bounds, phase-aware curvature-correlation gate, and profile-specific transform certificate
 
 ## Core intuition
 
-The complete scalar cardinality-five problem has narrowed from generic anti-phase coherence danger to one fixed base-kernel question on an intermediate mismatch region. A narrow central notch does not create the decisive positivity margin: its leading perturbation universally lowers the five-point defect. The notch family therefore survives exactly when the underlying Montgomery--Taylor two-pair defect is already zero-free on the residual obstruction set.
+Once conjugation symmetry reduces a cardinality-five Weil obstruction to one off-axis pair plus a critical-line point, the remaining scalar problem is not governed only by vertical mismatch. Horizontal separation survives through the curvature correlation of the chosen profile. Discarding that phase information creates the small-frequency barrier seen in the support-free estimates; retaining it converts part of the two-variable defect into an explicit one-dimensional signed correlation gate.
 
-The diagonal neighborhood is now substantially closed without support-dependent deterioration. Equal-height configurations are globally positive, and retaining the positive quadratic mismatch block gives a fixed relative-height tube at every mean height. A sharper reciprocal-sinh comparison pushes the universal support-free radius to `q_*=0.129209...`; the strict Montgomery--Taylor curvature margin pushes the profile-specific exclusion beyond `q=0.1409`, where `q=|y_1-y_2|/(y_1+y_2)`.
+For the fixed Montgomery--Taylor profile that gate is no longer a qualitative oscillation constraint. Its curvature transform has an exact rational--trigonometric form, so the surviving scalar problem has been compactified to a narrow, auditable separation/mismatch region.
 
 ## Strongest justified principle
 
-ANF-043--ANF-051 reduce scalar five-point negativity to a compact balanced-height, finite-separation, near-anti-phase regime. ANF-052--ANF-053 show that central-notch modifications are perturbatively small there and that their leading contribution has the wrong sign to repair a genuine base zero.
+ANF-054--ANF-057 show that, for a nonnegative even profile satisfying the explicit curvature gate `m_5(J)>=0`, equal heights are positive and a universal support-free tube excludes sufficiently small relative mismatch. For the Montgomery--Taylor profile this forces any remaining zero to have relative mismatch `q>0.1409`.
 
-ANF-054 proves a global equal-height curvature gate. ANF-055 obtains the first explicit unequal-height tube. ANF-056 improves the mechanism by retaining the positive quadratic mismatch block rather than paying a support-edge hyperbolic envelope, yielding a support-free fixed relative-height cone and an exact horizontal-free mismatch-loss functional.
+ANF-058 retains the positive horizontal phase term that the support-free comparison discarded. After integration, its contribution is exactly the canonical curvature correlation `K_J(d)`. If `K_J(d)>=-K_0/3`, the resulting quadratic lower bound is positive for every positive pair of heights. Hence any five-point zero must lie in a negative curvature-correlation lobe.
 
-ANF-057 sharpens that loss globally. For a nonnegative profile with `m_5(J)>=0`, every configuration with `q<q_J` is positive, with a universal minimum `q_*=0.1292091881...`. For the fixed Montgomery--Taylor profile, the already-certified strict diagonal margin gives `q_MT>0.1409`, so a genuine base zero must satisfy `y_max/y_min>1.3280`. The coefficient controlling this horizontal-free comparison is small-frequency sharp, so further widening requires genuinely new information rather than another scalar envelope optimization.
+ANF-059 evaluates that lobe for the fixed Montgomery--Taylor profile without numerical quadrature. The exact factorization `J_MT=g*g` gives `K_MT(t)=-F_MT''(t)/(4 pi^2)` as an explicit rational--trigonometric function. An outward-rounded mesh certificate plus a twice-integrated analytic tail proves the sharper necessary condition
+
+`0.545 < |t_1-t_2| < 1.01`.
+
+Combined with the previous height gate, every remaining Montgomery--Taylor five-point scalar zero must therefore satisfy both `q>0.1409` and this narrow horizontal-separation window. The surviving scalar frontier is an explicit compact two-parameter realizability problem, not an unconstrained support/notch optimization.
 
 ## What remains possible
 
-The direct scalar route is now a theorem about the fixed Montgomery--Taylor defect on the residual intermediate-mismatch set. Prove zero-freeness there or exhibit a genuine zero. The earlier scale-free height/separation restriction should be kept simultaneously rather than reopening regions already excluded.
+ANF-059 does not prove zero-freeness inside the residual compact set and does not extend the five-point result to larger conjugation-invariant multisets. The live scalar question is whether the exact Montgomery--Taylor five-point form, together with the remaining height/common-translation coherence terms, excludes that compact remainder.
 
-A sharper continuation may retain horizontal phase/separation information discarded by the present all-horizontal bound, use a stronger profile-specific diagonal estimate, or analyze the exact two-variable mismatch-loss integral for the Montgomery--Taylor profile. Matrix/inertia, higher-correlation, or non-scalar carriers remain outside this scalar reduction.
+A broader escape may retain additional horizontal or ordered information before scalarization, but it must survive the exact ANF-058--ANF-059 curvature controls rather than reintroduce a support-free coefficient already known to be sharp at small frequency.
 
 ## Status / novelty
 
-The Montgomery--Taylor kernel, Fourier positivity, hyperbolic inequalities, compactness, and curvature estimates use classical analytic ingredients. The persisted synthesis is the exact boundary: **equal heights and a fixed support-free relative-mismatch cone are closed globally; the remaining scalar question is genuine zero-freeness of the fixed Montgomery--Taylor defect on an intermediate unequal-height region, and the present horizontal-free coefficient is already sharp at small frequency**.
+The Fourier/cosine identities, hyperbolic inequalities, Cauchy estimates, moment bounds, bounded-variation control, and interval certification are classical tools. Persisted evidence makes the Mathia-specific synthesis exact at cardinality five. ANF-058--ANF-059 do not claim publication-level novelty for the resulting transfer or compactification.
 
 ## Falsification criterion
 
-Exhibit a Montgomery--Taylor two-pair zero with `q<=0.1409`, refute the ANF-054 diagonal margin or ANF-056/057 mismatch inequalities under their stated hypotheses, or prove that the residual region is zero-free. A stronger phase-aware theorem would extend rather than falsify the synthesis.
+Exhibit a valid Montgomery--Taylor five-point zero with `q<=0.1409`, with `|t_1-t_2|<=0.545`, or with `|t_1-t_2|>=1.01`; alternatively find an error in the retained phase term, its curvature-correlation reduction, or the outward-rounded transform certificate.
 
 ## Lean-formalizable core
 
-- Equal-height curvature lower bound.
-- Mean-height/half-mismatch decomposition and retained positive mismatch block.
-- Support-free reciprocal-sinh mismatch envelope.
-- Profile-dependent radius `q_J` and Montgomery--Taylor specialization.
-- Leading central-notch perturbation and zero-instability implication.
+- The phase-retaining five-point lower bound and discriminant gate.
+- The implication `K_J(d)>=-K_0/3 => H_J>0` under the stated curvature hypothesis.
+- The exact Montgomery--Taylor transform formula and finite interval inequalities yielding the sharpened separation window.

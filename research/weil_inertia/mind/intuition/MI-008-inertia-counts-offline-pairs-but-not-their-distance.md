@@ -1,42 +1,47 @@
-# MI-008 — Inertia counts off-line pairs exactly, while continuous charges and same-deficit singular repairs fail at confluence
+# MI-008 — Inertia counts off-line pairs exactly, while positive same-deficit repairs are anti-aligned at confluence
 
-**Evidence level:** proved for the Lamzouri finite Hilbert-space model through WI-168; source-level quantitative exclusion remains open
+**Evidence level:** proved for the Lamzouri finite Hilbert-space model through WI-169; source-level quantitative exclusion remains open
 
 ## Core intuition
 
 Sign information and coercive magnitude are distinct. Lamzouri's finite tensor has an exact discontinuous discriminator: its negative index counts distinct off-line conjugate pairs. But the magnitude of those directions and the complete source deficit can collapse continuously as an off-line pair approaches a critical-line double.
 
-The newer results show that neither smoothing nor the two most natural singular repairs solve this. Schur normalization cancels the collapsing horizontal scale instead of charging it. Adding integer-depth projection levels is quantized in the opposite direction: if those levels must be funded by the same Lamzouri deficit, their total rank and depth have an exact quadratic budget. A useful singular detector therefore needs independently source-determined information; discontinuity alone is not coercivity.
+The strongest current obstruction is not merely that autonomous positive flag depth has a norm floor. On the canonical horizontal odd quotient, the Lamzouri tensor itself is negative definite. Promoting that quotient to positive flag depth is therefore **anti-aligned with the source operator** and consumes, rather than exploits, the horizontal charge.
 
 ## Strongest justified principle
 
-WI-138 gives the exact inertia theorem; WI-139 aligns near-sharp negative eigenspaces with the canonical horizontal defect quotient. WI-140 constructs explicit confluence controls: a simple off-line pair retains one negative eigenvalue for every nonzero displacement while its negative magnitude and total Lamzouri deficit vanish quadratically. WI-141--WI-142 show that preassigned continuous spectral detector families can be defeated below their continuity scale.
+WI-138--WI-142 give exact inertia and confluence controls: negative index survives every nonzero off-line displacement while continuous spectral charges and the total deficit can vanish quadratically. Preassigned continuous detector families can therefore be defeated below their continuity scale.
 
-WI-164 tests Schur singularity. The inverse horizontal block cancels through a unitary polar factor, so no inverse power of the collapsing scale survives; an isolated off-line pair makes the correction vanish identically.
+WI-164 shows that Schur normalization does not rescue the collapsing scale: inverse horizontal factors cancel through a polar/unitary factor, and the isolated-pair correction can vanish identically.
 
-WI-167 shows that an autonomous nonzero quantized flag step has a Hilbert--Schmidt norm floor and cannot fit inside an arbitrarily shallow confluence deficit. WI-168 strengthens this globally. For any nested projection correction `J` controlled by the same deficit,
+WI-167--WI-168 show that same-deficit integer-depth repair is quantitatively expensive. Any nested projection correction funded by the same deficit satisfies `Delta >= ||J||_HS^2/4 >= rank(J)/4`, with quadratic depth cost.
 
-`Delta >= ||J||_HS^2/4 = (1/4) sum_q q^2 dim(E_q) >= rank(J)/4`.
+WI-169 uses the actual source orientation. On `H=W\ominus V`,
 
-Hence every depth-`q` direction costs at least `q^2/4`; no nonzero same-deficit extension exists when `Delta<1/4`; and `Delta=o(N)` forces added quantized rank `o(N)`. Near saturation a positive-density extra layer cannot be manufactured by redistributing the existing slack.
+`P_H A_F P_H = -2 C_H < 0`.
+
+For any nonzero positive projection `P_E` supported on `H`, moving the target from `D` to `D+P_E` increases squared distance by `dim(E)+4 H_E`. For the full odd quotient,
+
+`Delta = ||A_F-(D+P_H)||_HS^2 + 2B-k`.
+
+The horizontal transversality charge cancels exactly; a full positive odd layer is fundable only from the separate `B` budget, requiring `k<=2B`. In the isolated-pair confluence control this already fails once the odd mass is small enough.
 
 ## What remains possible
 
-The confluence controls are not asserted to model the full zeta source. A successful theorem may derive an anti-confluence scale from zero density, separation, multiplicity, horizontal displacement, correlations, or another explicit-formula input. Alternatively a multi-zero interaction may come with a genuinely new source identity or inequality that supplies an additional budget beyond `Delta`.
+The finite controls do not prove that the actual zeta source permits a macroscopic population to approach confluence with small `B`. A successful theorem may derive a source-level lower bound on separation, multiplicity/leakage, correlations, or another interaction budget that prevents that regime.
 
-A non-quantized observable whose natural scale shrinks with the horizontal defect may also remain possible, provided it is source-forced and not confluence-blind. What is closed is funding a substantial autonomous integer-depth layer from the existing WI-137 deficit.
+A surviving observable may also be signed/mixed rather than a positive odd-sector promotion, or have a natural scale that shrinks with the horizontal defect. What is closed is extracting positive coercive depth from the existing horizontal charge or redistributing the same deficit.
 
 ## Status / novelty
 
-Sylvester inertia, spectral continuity, Schur complements, polar decomposition, midpoint identities, and projection-rank norms are classical. The line-specific synthesis is exact: **negative index identifies the exceptional zero type, but continuous spectral mass, Schur normalization, and same-deficit quantized depth cannot turn that type into a macroscopic quantitative charge at confluence; a new source theorem must fund the scale or interaction**.
+Sylvester inertia, spectral continuity, Schur complements, polar decomposition, projection norms, and Hilbert-space compression are classical. The line-specific synthesis is exact: **the source records off-line type through negative inertia, but its natural odd directions have the wrong sign for a positive flag repair; quantitative coercivity requires new source-funded scale or a genuinely different signed/mixed observable**.
 
 ## Falsification criterion
 
-Derive from unconditional zeta information a quantitative source scale that prevents the relevant off-line population from hiding at confluence, construct a source-natural detector with a positive lower bound compatible with WI-140, or produce a same-deficit nested projection refinement violating the WI-168 depth/rank budget.
+Derive unconditional zeta information forcing a population-sized `B` or another source budget, construct a source-natural signed/mixed detector with a confluence-stable margin, or produce a positive odd-sector target violating the exact WI-169 distance/cancellation identities.
 
 ## Lean-formalizable core
 
 - Congruence inertia count and one-pair confluence eigenvalues.
-- Continuity defeat for detector families.
-- Schur normalization cancellation.
-- Midpoint identity and quantized flag depth/rank budget.
+- Same-deficit projection depth/rank budget.
+- Negative compression of the source tensor on `H` and the exact positive-promotion distance identity.
