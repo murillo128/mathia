@@ -18,10 +18,10 @@ PF-156--PF-167 classify the visible relative and absolute separator boundaries. 
 
 A surviving relative or absolute invariant must therefore be intrinsic under the admitted reference category and separate the prime flute from matched controls for a reason not already forced by universal endpoint geometry.
 
-## Prove or refute global trace-ideal, wave, scattering, or transmission assembly beyond tail norm-resolvent equivalence
+## Resolve uncut transmission after the complete short central sector reaches the sharp first-resolvent threshold
 
 **Linked intuitions:** `MI-004-coordinate-amplification-is-not-operator-amplification` and `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`.
 
-PF-166--PF-168 show that complete marked tails and matched Dirichlet tail Laplacians become asymptotically equivalent, so bounded tail functional calculus cannot restore primality specificity. PF-169 now removes one major infinite-multiplicity concern: the complete family of Margulis-short central squared-resolvent Dirichlet blocks is absolutely trace-summable, with an escaping trace-norm tail `O(Q^-1.475)`.
+PF-166--PF-168 show that complete marked tails and matched Dirichlet tail Laplacians become asymptotically equivalent, so bounded tail functional calculus cannot restore primality specificity. PF-169 removes the squared-resolvent multiplicity concern: all Margulis-short central Dirichlet blocks are trace-summable. PF-171 now reaches the sharper first-resolvent boundary on the **complete** short family: the orthogonal central direct sum lies in every `S_r`, `r>1`, has vanishing `S_r` tail, and is not trace class.
 
-The remaining operator burden is genuinely global rather than a sum of independent short cores. Determine whether the complementary body, outer collar regions, localization commutators, boundary transmission, and repeated head--tail interaction assemble into a full trace-class/spectral-shift/wave equivalence, or instead accumulate a canonical reference-stable scattering/resonance value that separates the clone. The moving Dirichlet cuts in the local results deliberately remove exactly this assembly data.
+Thus even the difficult interval `1<r<2` is already benign on all short central cores collectively; pinching and their `O(P^0.525)` multiplicity are not the missing obstruction. The remaining operator burden is precisely what the Dirichlet decomposition removes: body and outer-collar pieces, localization commutators, boundary transmission, and repeated head--tail interaction. Determine whether those uncut terms preserve the sharp `S_r`, `r>1`, threshold and lead to spectral-shift/wave equivalence, or whether one global assembly channel produces a canonical reference-stable prime/clone discriminator.

@@ -1,40 +1,38 @@
-# MI-010 — Retaining signed arithmetic is not enough when the retained resolution reconstructs the target
+# MI-010 — Signed retention is not information reduction when generic complement recovery reconstructs Mertens
 
-**Evidence level:** supported through MC-085 by exact parity controls, annular identities, source-coupled sawtooth recovery, and Fourier-resolution equivalences
+**Evidence level:** supported through MC-087 by exact parity controls, annular identities, Fourier/physical reconstruction equivalences, and arbitrary-subset support budgets
 
 ## Core intuition
 
-A useful Möbius carrier must pass two distinct gates. It must retain signed arithmetic that unsigned divisor-density surrogates erase, but it must also discard enough information that controlling the carrier is genuinely easier than controlling the Mertens target. Passing the first gate does not imply the second.
+A useful Möbius carrier must pass two distinct gates. It must retain signed arithmetic that unsigned divisor-density surrogates erase, and it must discard enough target information that controlling the carrier is genuinely easier than controlling Mertens. Passing the first gate does not imply the second, and neither proper truncation nor selective geometry proves under-resolution.
 
-The new annular results make this distinction exact. Liouville parity separates classes that look identical to broad local divisor statistics, so sign is a real missing variable. Yet several natural ways of restoring that sign — constant-weight parity contrast, the exact source sawtooth coupling, or a low-frequency truncation resolved finely enough to control its generic remainder — are already Mertens-equivalent.
+The annular results now make the second gate representation-independent across a broad class. If an omitted Fourier tail or physical-space complement can already be restored below the target power scale by a generic absolute estimate, then the retained source-coupled statistic remains quantitatively equivalent to the Mertens target.
 
 ## Strongest justified principle
 
-MC-082 constructs a decisive matched control for unsigned local information. Square-free integers with opposite Liouville parity can have the same fixed-depth local divisor-density main term even though one class contains no primes and the other contains all primes. Any argument based only on those density statistics is therefore blind to the sign channel needed for Möbius cancellation.
+MC-082 constructs a matched control showing that unsigned local divisor-density data can miss Liouville parity completely. MC-083--MC-084 then show that direct parity restoration and the exact Huxley--Watt sawtooth coupling retain the sign but reconstruct Mertens.
 
-MC-083 restores parity in the most direct annular contrast and proves that a power bound for this constant-weight same-versus-opposite parity observable is equivalent, at the relevant exponent, to a Mertens bound. The sign is present, but no difficulty has been removed.
+MC-085 proves the same for a proper low-frequency Fourier truncation once its generic omitted tail is below the desired target scale. MC-086 gives the physical-space analogue for initial reciprocal slabs with the same power threshold. MC-087 removes the geometry entirely: for any omitted annular subset `E_N`, if `#E_N=O(N^{2 beta})` then boundedness of the source sawtooth gives a target-subordinate complement and the retained coupled statistic is equivalent to `M(x)=O(x^beta)`.
 
-MC-084 gives the same verdict for the exact Huxley--Watt/source sawtooth annular decomposition after its coarse terms are kept: the full coupled source residual reconstructs the Mertens problem quantitatively. MC-085 then shows that merely making the coupling proper by truncating Fourier modes does not help when the cutoff is high enough that the generic omitted tail is already below the desired target scale; at that resolution the low-frequency observable remains Mertens-equivalent.
-
-The correct discriminator is therefore **signed information plus under-resolution**. A candidate becomes potentially useful only when it retains a source-forced cancellation mechanism while its omitted information is controlled by an estimate not already equivalent to the target.
+Thus the useful discriminator is **signed information plus genuine information deficit**. A selective mask or partial statistic becomes interesting only when its discarded contribution is too large to restore generically and a new arithmetic mechanism controls it, or when the coupled recurrence closes without reconstructing the complement at all.
 
 ## What remains possible
 
-A live annular route may use a much coarser signed statistic if the discarded high-frequency complement has independent arithmetic cancellation, or may exploit an aggregate coupling whose estimate is not invertible back to `M(X)`. Another possibility is an exact recurrence where the partial residual enters with a strict contraction while the omitted term is summable across scales.
+A live annular route may omit supercritical pair mass and prove signed Möbius cancellation in that complement from independently weaker input, use a sparse/source-forced family for which retained and omitted pieces are estimated jointly before absolute values, or derive a strict scale contraction that never restores the full Huxley--Watt residual.
 
-The evidence does not say that every signed partial statistic is Mertens-equivalent. It says that parity sensitivity, exact source origin, or the formal fact of being a proper truncation are not sufficient evidence of information reduction.
+The evidence does not say that every signed partial statistic is Mertens-equivalent. It says that parity sensitivity, exact source origin, properness, sparsity, and selectivity are not sufficient evidence of information reduction when a generic complement bound already restores the target at the claimed resolution.
 
 ## Status / novelty
 
-Liouville parity, sawtooth expansions, annular decompositions, and Fourier truncation are classical ingredients. The persisted synthesis is the information gate: **a Möbius residual is useful only if it both retains signed source structure and remains quantitatively below the resolution needed to reconstruct the target**.
+Liouville parity, sawtooth expansions, Fourier truncation, hyperbola counting, and support bounds are classical ingredients. The persisted synthesis is the information gate: **a Möbius residual is useful only if it retains signed source structure while crossing the resolution at which generic complement recovery reconstructs Mertens**.
 
 ## Falsification criterion
 
-Produce a bound in one of the MC-083--MC-085 covered observables at the stated resolution that yields a strictly weaker requirement than the corresponding Mertens bound, or construct a new source-forced signed residual whose omitted information is independently controlled while the residual itself drives a strict contraction.
+Produce a covered MC-083--MC-087 carrier at the stated generic-restoration resolution whose bound is strictly weaker than the corresponding Mertens bound, or construct a source-forced signed residual with supercritical omitted information whose complement is independently controlled or never reconstructed while a strict contraction closes.
 
 ## Lean-formalizable core
 
-- Liouville-parity matched-control identities.
-- Constant-weight annular Mertens equivalence.
-- Exact sawtooth annular recovery equivalence.
-- Low-frequency truncation plus remainder-resolution implication.
+- Liouville-parity matched controls.
+- Exact source-coupled annular recovery identities.
+- Fourier and reciprocal-slab reconstruction thresholds.
+- Arbitrary omitted-subset support bound and Mertens equivalence.

@@ -1,42 +1,40 @@
-# MI-004 — The endpoint prime-free Fourier sector is source-selected, and finite heat-zero transport is Volterra-triangular
+# MI-004 — The endpoint prime-free Fourier sector has an exact collision-safe infinite Volterra carrier
 
-**Evidence level:** supported through XF-049 by the Guinand--Weil explicit formula and an exact finite heat-zero Fourier evolution identity
+**Evidence level:** supported through XF-051 by the Guinand--Weil explicit formula, collision-safe symmetric finite heat transport, de Bruijn strip control, horizontal logarithmic derivatives, and an exact distributional half-line Volterra law
 
 ## Core intuition
 
-The actual Xi endpoint has a source-specific low-frequency sector that a generic source-compatible counting model does not. In the `H_0` zero coordinate, the explicit formula has only the archimedean zero mode until the first nonzero prime-power frequency `log 2/2`. The memory-scale frequency relevant to Xi flow is `Theta(1/log T)`, deep inside this prime-free interval.
+The actual Xi endpoint has a source-specific low-frequency sector that a generic source-compatible counting model does not. In the `H_0` zero coordinate, the explicit formula has no nonzero prime-power frequency below `log 2/2`, while the memory scale relevant to Xi flow is `Theta(1/log T)`.
 
-Finite heat-zero dynamics also respects a compatible one-sided frequency structure. Positive-frequency zero modes evolve by a Volterra convolution using only lower positive frequencies. This does not yet prove the corresponding infinite localized Xi theorem, but it identifies a precise mechanism by which the endpoint source selector could survive: the nonlinear flow has no direct generic high-positive/high-negative down-conversion into the memory band.
+The required one-sided transport is no longer merely a finite real-root heuristic. Finite symmetric zero statistics satisfy the same Volterra law through complex roots and collisions, and the infinite Xi family has a canonical renormalized positive-frequency carrier obtained from the logarithmic derivative on a zero-free horizontal line. The remaining issue is quantitative control as the moving band approaches the singular endpoint `xi=0`, not existence, root reality, or high-to-low frequency leakage.
 
 ## Strongest justified principle
 
-XF-048 applies a Gaussian probe of physical width `Theta(log^3 T)` and memory frequency `Theta(1/log T)`. Its Fourier transform is exponentially small at every prime-power sample in the explicit formula, the archimedean constant-density contribution is killed by oscillation, and the actual endpoint zero statistic is `o(1)`. The coherent critical memory wave of XF-047 instead contributes a nonzero constant. The endpoint source therefore distinguishes the exact mode that counting and universal Cauchy dynamics failed to exclude.
+XF-048 constructs an endpoint probe whose actual zero response is `o(1)` while the coherent critical memory control has a nonzero limit. XF-050 strengthens this with a compactly bandlimited test: its Fourier support lies strictly between zero and the first prime-power line, so the prime contribution vanishes exactly, and the explicit formula remains meaningful for complex off-line zeros.
 
-XF-049 proves that for every finite real-simple polynomial heat flow, with `Z_N(xi,t)=sum_j exp(-i xi x_j(t))`,
+XF-049's finite Volterra law extends in XF-050 to arbitrary complex roots and through collisions because the exponential zero sum is a symmetric analytic function of the polynomial coefficients. Individual root branches may be singular, but the low-positive-frequency field is not.
 
-`partial_t Z_N(xi)=xi^2 Z_N(xi)-xi integral_0^xi Z_N(eta)Z_N(xi-eta)deta`
+XF-051 gives the infinite carrier. For any zero-free horizontal line `Im z=a>1`, the boundary logarithmic derivative `Q_a=H_t'/H_t` is a tempered upper-half-plane boundary value with Fourier support in `[0,infinity)`. Its Burgers equation becomes an exact distributional convolution law on that proper cone. After removing the auxiliary factor `e^{-a xi}`, the resulting distribution `mathcal Z_t` is independent of `a`, agrees with the finite zero characteristic sum on positive frequencies, and obeys the same Volterra-triangular equation.
 
-for `xi>0`. The vector field at frequency `xi` depends only on `[0,xi]`. Linearization about a flat zero density has multiplier `xi^2-2 pi rho xi`; evaluated at the Xi memory frequency it reproduces exactly the periodic Cauchy slow-mode rate derived independently in XF-047.
-
-This agreement shows that the memory clock and the one-sided Fourier transport are two views of the same logarithmic-particle/Burgers geometry, while the absence of low endpoint arithmetic frequencies is specifically Xi source information.
+Thus the Xi source/transport pairing is now exact away from `xi=0`: the endpoint explicit formula selects the memory band, and the true infinite heat flow cannot replenish a positive frequency from larger or opposite frequencies.
 
 ## What remains possible
 
-The needed theorem is an infinite localized version of the finite Volterra law. One must define the renormalized low-frequency zero statistic for Xi, apply the `Theta(log^3 T)` taper used by the explicit-formula probe, and show that renormalization, boundary, and commutator terms are `o(1)` over the relevant fixed heat interval.
+The memory center tends to zero like `1/log T`, so the Volterra simplex still includes the entire lower-positive interval down to the singular endpoint. A proof must separate the deterministic archimedean/background component of `mathcal Z_t` near zero from the fluctuation and bound the quadratic lower-band contribution to the moving probe by `o(1)` over the relevant heat interval.
 
-The finite triangular law does not imply that low frequencies are freely specifiable or invariant: an entire characteristic sum couples frequency values analytically, and localization itself mixes frequencies. The claim is only that there is no direct unconstrained high-to-low quadratic convolution in the exact finite vector field.
+A decisive obstruction would be an order-one term generated from the endpoint singularity or frequencies below the memory band. Loss of root reality, root collision, taper-induced opposite-frequency mixing, or nonexistence of the raw infinite characteristic sum no longer addresses the active carrier.
 
 ## Status / novelty
 
-Guinand--Weil, complex Burgers/Cole--Hopf structure, Calogero pole dynamics, and Volterra convolutions are classical ingredients. The Mathia synthesis is the source/transport pairing: **the endpoint explicit formula creates a prime-free memory-frequency selector, and the finite heat-zero dynamics has exactly the one-sided Fourier architecture needed for that selector to plausibly propagate without high-frequency contamination**.
+Guinand--Weil, de Bruijn strip shrinking, Hadamard logarithmic derivatives, complex Burgers/Cole--Hopf structure, Paley--Wiener half-line support, and Volterra convolution are classical ingredients. The Mathia synthesis is the source/transport boundary: **the endpoint prime-free memory sector has a canonical collision-safe infinite one-sided transport; the sole remaining transport gate is quantitative control of the renormalized field as its positive-frequency band collapses toward zero**.
 
 ## Falsification criterion
 
-Find a prime-power contribution in the XF-048 memory-frequency window under its normalization, derive a finite heat-zero positive-frequency evolution involving frequencies outside `[0,xi]`, or show that localization necessarily creates an order-one low-frequency commutator that defeats any infinite Xi transport theorem at the required scale.
+Find a prime-power contribution inside the compact XF-050 endpoint band, derive positive-frequency Xi evolution involving frequencies above the target or the negative half-axis, show that the horizontal carrier depends on the auxiliary height, or exhibit an unavoidable order-one `xi downarrow 0` contribution that refills the endpoint selector over the needed heat interval.
 
 ## Lean-formalizable core
 
-- Finite zero characteristic-sum Volterra identity.
-- One-sided positive-frequency closure.
-- Flat-density multiplier and match to periodic slow-mode rate.
-- Gaussian frequency-separation inequalities, given the explicit-formula identity as an input.
+- Collision-safe Newton-sum/finite Volterra identity.
+- Compact band separation from the first prime-power frequency.
+- Horizontal-line height-cancellation identity for the positive-frequency carrier.
+- Abstract cone-support implication for Volterra triangularity, with analytic inputs assumed.

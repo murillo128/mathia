@@ -1,46 +1,39 @@
-# MI-014 — Target-relative spectral fidelity is projection geometry unless the coefficient metric is source-canonical
+# MI-014 — Target-relative spectral fidelity is projection geometry until a source-canonical metric upgrades it to a generalized spectrum
 
-**Evidence level:** supported through AF-136 by exact whitening, Moore--Penrose projection identities, and complete fixed-target congruence invariants
+**Evidence level:** supported through AF-138 by exact whitening, Moore--Penrose projection identities, complete fixed-target congruence invariants, commutant-gauge classification, and generalized Hermitian-definite spectral transport
 
 ## Core intuition
 
-A source Gram matrix does not carry an intrinsic hierarchy of spectral magnitudes under arbitrary changes of generator coordinates. Once the source representation is whitened, the information relevant to a declared target is simply how much of each target direction lies in the retained source subspace. The stable invariant is therefore projection/principal-angle geometry, not the raw eigenvalue scale of a coordinate-dependent Gram matrix.
+A raw source Gram matrix does not carry an intrinsic hierarchy of positive spectral magnitudes under arbitrary changes of generator coordinates. Without extra source geometry, target fidelity reduces to how target directions project onto the represented source subspace. Compact symmetry does not usually fix this: it leaves exactly the positive metric cone of the representation commutant, large enough to arbitrarily rescale active positive Gram channels.
 
-Spectral truncation becomes meaningful only after the source supplies an independent coefficient Hilbert structure, restricted gauge, or other normalization that makes singular values physically or mathematically comparable. Without that extra geometry, keeping the “largest eigenmodes” is a coordinate choice rather than an intrinsic fidelity statement.
+A genuine source metric changes the category. If the source independently supplies a positive-definite coefficient metric `M`, then the invariant spectral object is the generalized pencil `(G,M)`, equivalently the whitened operator `M^{-1/2}GM^{-1/2}`. Spectral scale is meaningful relative to that metric, not relative to an arbitrary coordinate identity.
 
 ## Strongest justified principle
 
-AF-135 considers a target vector `k` against a retained source system with Gram matrix `G` and cross-coordinate vector `b`. The exact squared residual after optimal reconstruction is
+AF-135 gives the exact fixed-target residual `dist(k,ran A)^2=kappa-b^*G^dagger b`; after whitening it is ordinary projection geometry. AF-136 extends this to a target family: the projection Gram `Q=C^*G^dagger C` together with `rank G` is a complete invariant under the full invertible generator gauge, while positive Gram eigenvalue magnitudes can be changed by congruence.
 
-`dist(k,ran A)^2 = kappa - b^* G^dagger b`.
+AF-137 asks whether symmetry alone supplies the missing metric. For a compact-group representation, every invariant coefficient metric is a positive self-adjoint operator in the commutant. On each multiplicity space this freedom acts by positive congruence and can prescribe all active positive Gram eigenvalues. The metric is unique up to scale only for an irreducible coefficient representation, exactly where equivariance also forces the Gram spectrum to be flat. Symmetry therefore cannot simultaneously provide a nontrivial canonical positive spectral hierarchy and its own metric.
 
-After whitening, this is exactly the norm of the target component orthogonal to the retained source span. The corresponding sensitivity is controlled by the whitened coordinate `G^{dagger/2} b`; source eigenvalues matter only through the declared coefficient metric used to define the whitening.
-
-AF-136 treats a whole target family. If `C` records source--target pairings, then
-
-`Q=C^* G^dagger C`
-
-is the target projection Gram, equivalently `U^* P_M U` after whitening. Under the full invertible generator gauge, `(rank G,Q)` is a complete fixed-target invariant. The positive eigenvalue magnitudes of `G` can be altered by congruence without changing the represented source subspace or `Q`.
-
-The best rank-`s` target approximation is correspondingly governed by the eigenvalues/principal angles of the target projection geometry; for the scoped result the optimal residual threshold is `lambda_{s+1}(Q)`. This is target-relative information, not a canonical ordering of the source coordinates themselves.
+AF-138 gives the exact conditional repair. With a source-specified `M>0`, the generalized eigenvalues of `Gx=lambda Mx` are invariant under `A->AR`, `G->R^*GR`, `M->R^*MR`; after whitening the change is unitary. The target-relative generalized Picard measure is invariant as well, and the excess truncation error is exactly its discarded low-generalized-eigenvalue mass. If `M` is canonical only up to scale, eigenvalue ratios/order survive but an absolute cutoff still needs a normalization.
 
 ## What remains possible
 
-A genuine spectral-fidelity theorem may still use singular values when the source construction provides a canonical coefficient metric, energy, probability law, operator ideal, or restricted transformation group. That additional structure must be stated and defended before a spectral cutoff is interpreted as information loss.
+A concrete spectral-fidelity theorem should derive `M` from source-natural measure, energy, probability, arithmetic weights, geometry, or another independently specified form, then prove the required generalized Picard-tail estimate. Choosing `M` from the target, desired cutoff, or Gram matrix itself merely moves the gauge choice into the metric.
 
-For Mathia carriers without such a metric, formulate fidelity in terms of subspace projection, principal angles, or the target projection Gram. If a proposed spectral scale changes under an admissible generator reparameterization while the target projection does not, the scale is representation metadata rather than intrinsic evidence.
+For sources without such a metric, use projection/principal-angle geometry rather than raw spectral scale. For sources with only symmetry, classify the residual commutant gauge before attributing meaning to eigenvalue magnitudes.
 
 ## Status / novelty
 
-Gram matrices, pseudoinverses, whitening, congruence, principal angles, and projection Grams are classical linear algebra. The persisted synthesis is the category boundary: **fixed-target spectral fidelity is intrinsically projection geometry; raw source spectral magnitudes require an independently justified coefficient geometry before they can carry mathematical meaning**.
+Gram matrices, pseudoinverses, compact-group commutants, generalized eigenvalue pencils, whitening, singular values, and Picard regularization are classical. The persisted synthesis is the category boundary: **projection geometry is intrinsic under full generator gauge; symmetry alone generally leaves a commutant metric gauge; a source-canonical metric repairs that gauge and makes the generalized spectrum, not the raw Gram spectrum, the meaningful object**.
 
 ## Falsification criterion
 
-Find two full-generator-gauge-equivalent source representations with the same target projection Gram but different fixed-target recoverability, or produce an intrinsic source spectral ordering invariant under the admitted full congruence gauge without adding extra coefficient geometry.
+Produce a nontrivial raw Gram spectral ordering invariant under the full admitted generator gauge without additional coefficient geometry, show that compact symmetry fixes a rich positive hierarchy despite the AF-137 commutant freedom, or find a simultaneously transported metric/source representation for which the generalized spectrum or generalized Picard tail changes.
 
 ## Lean-formalizable core
 
-- Pseudoinverse projection identity `C^*G^dagger C=U^*P_MU`.
-- Congruence invariance of the target projection Gram.
-- Completeness of `(rank G,Q)` for the fixed-target gauge.
-- Principal-angle/rank-`s` approximation characterization.
+- Pseudoinverse projection identity and congruence invariance.
+- Positive commutant classification of invariant metrics.
+- Positive-congruence freedom on multiplicity blocks.
+- Generalized pencil invariance under metric transport.
+- Generalized Picard-tail identity for target truncation.

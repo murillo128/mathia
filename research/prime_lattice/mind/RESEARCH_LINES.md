@@ -20,13 +20,15 @@ A decisive theorem should derive Suzuki's completed sign, or the weaker RH-equiv
 
 PL-158--PL-168 show that generic vertical recurrence, finite-prime harmonic enrichment, signed low-energy characters, and low-support exponent-lattice correlations do not constrain the surviving off-line frontier. A live theorem must use source information conditioned near the hypothetical extremal abscissa, a sharper weighted explicit formula, higher/mixed moments, or sign-indefinite cancellation unavailable to the positive first-moment route.
 
-## Preserve the additive arithmetic channel before regularization or logarithmic averaging classicalizes it
+## Preserve a source-forced additive pattern before regularization, logarithmic averaging, or diffuse cube averaging classicalizes it
 
 **Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations` and `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`.
 
-PL-169 identifies ordinary addition as the first explicit information channel outside multiplicative exponent differences. PL-170--PL-171 show that naive affine traces telescope or remain behind absolute-convergence walls. PL-172--PL-175 now close several more canonical repairs: `det_2` crosses the Hilbert--Schmidt boundary only by deleting the original fixed-shift Chowla trace; uniform shift averaging vanishes or collapses to the classical Liouville summatory square; logarithmic second-order shift spectra are Haar-flat; and all fixed-shift Walsh sectors of odd degree plus degree two are theoremically Bernoulli-universal, making every three-sign nonlinear readout universal.
+PL-169 identifies ordinary addition as the first explicit information channel outside multiplicative exponent differences. PL-170--PL-175 show that naive affine traces telescope or remain behind absolute-convergence walls, `det_2` deletes the hard first trace, uniform shift averaging collapses, and fixed logarithmic sectors through degree three are theoremically Bernoulli-universal.
 
-A live mixed multiplicative-additive carrier must preserve the unsmoothed source correlation before these quotients. Possibilities include ordinary fixed-shift Cesaro/analytic information, a source-forced exceptional or growing-shift regime, an even Walsh sector of degree at least four only when independently motivated, or coupling to completed/target-relative zeta structure before the logarithmic limit. Degree four is merely the first theorem-uncontrolled sector here, not evidence of fertility by itself.
+PL-176 now closes the most canonical degree-four escalation. Complete averaging of the Liouville four-sign parallelogram over both additive directions is exactly an additive Fourier fourth moment and is `o(N^3)` by the classical Davenport bound; modern higher-Gowers-uniformity results show that diffuse fixed-dimensional additive cubes are generic pseudorandomness phenomena for nonpretentious multiplicative functions, not a rational-prime selector.
+
+A live additive carrier must therefore be source-forced **before** averaging: a fixed or sparse pattern, a justified non-diffuse/growing family outside the standard uniformity regime, ordinary fixed-shift Cesaro/analytic information with a genuine continuation mechanism, or a completed/target-relative coupling that preserves additive information instead of converting it into Gowers averaging. Even degree four is no longer interesting merely because earlier fixed-shift logarithmic theorems did not cover it.
 
 ## Resolve target-sensitive Nyman data and genuinely nontrivial prime-shift actions
 
@@ -38,4 +40,4 @@ A live continuation must retain the distinguished target or derive a one-sided/r
 
 **Linked intuitions:** `MI-005-localized-weil-arithmetic-is-between-bulk-and-essential-boundary`, `MI-006-second-scale-weil-signal-is-diagnostic-not-generative`, and `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`.
 
-Deterministic sampling, Poisson bulk, fixed smoothing, broad natural bands, and low-support exponent-lattice pairings reproduce much ordinary operator behavior. The live target is a microscopic, target-relative, singular, additive-coupled, or completed indefinite residual that distinguishes rational primes and whose zero-sensitive bound is derived upstream.
+Deterministic sampling, Poisson bulk, fixed smoothing, broad natural bands, low-support exponent-lattice pairings, and diffuse additive-cube averages reproduce much ordinary operator or pseudorandom behavior. The live target is a microscopic, target-relative, singular, sparse additive-coupled, or completed indefinite residual that distinguishes rational primes and whose zero-sensitive bound is derived upstream.

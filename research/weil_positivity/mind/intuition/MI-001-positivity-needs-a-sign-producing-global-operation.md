@@ -1,44 +1,44 @@
-# MI-001 — Weil positivity needs a sign-producing global operation, not merely a genuine positive local logarithm
+# MI-001 — Weil positivity needs a sign-producing global operation that preserves the source selector before positive scalarization
 
-**Evidence level:** supported by several exact selectors, sign obstructions, and the Prime-Circle Kron/SPD near-miss through WP-144
+**Evidence level:** supported through WP-162 by exact selectors, sign obstructions, operator/category controls, algebraic-incidence exclusions, and the cyclotomic radial-flux classification
 
 ## Core intuition
 
-The Weil-positivity search repeatedly finds mathematically natural objects that are positive, self-dual, Hodge-theoretic, information-geometric, or locally logarithmic. The newest Prime-Circle evidence reaches a stronger near-miss than a normalization artifact: a canonical equal-rank Kron comparison has an independently forced nonnegative, scale-invariant logarithmic response and an intrinsic SPD distance interpretation.
+The Weil-positivity search repeatedly finds mathematically natural objects that are positive, self-dual, Hodge-theoretic, information-geometric, or locally logarithmic. The strongest current finite-shell object is sharper: the primitive cyclotomic radial path itself has an intrinsic signed flux whose total mass is exactly `Lambda(n)`, and the flux is pointwise positive for all radial times exactly on prime powers.
 
-That is still insufficient. The same response is universal for arbitrary positive conductance stars, holds on matched composites, lives in one relative mode, and does not assemble into the quadratic Weil form or its archimedean/global terms. The missing mechanism is therefore a **source-specific global sign operation after arithmetic selection**, not positivity or the `log p` scale separately.
+That still does not give a positive Weil form. Mixed-prime shells achieve the required Mangoldt zero by cancellation of positive and negative flux. Any ordinary shellwise positive size removes that cancellation and becomes positive on every shell. The missing mechanism is therefore a **source-specific global sign operation that retains signed finite data until finite--archimedean assembly**, not merely a local positive density or the `log p` scale.
 
 ## Strongest justified principle
 
-Earlier findings separate information from inherited sign. Exact finite Mangoldt selectors often live in signed supertraces, first variations, noncommuting insertions, or boundary asymmetries; positive bulk/Hodge/information-geometric completions either cancel them, diverge at the critical endpoint, or lose sign after continuation.
+WP-140--WP-144 show that even an intrinsic, scale-invariant positive `log m`-scale Kron/SPD response is insufficient when matched composite controls reproduce it and no global Weil polarization appears. WP-145--WP-160 then show that positive completion, determinant formation, separated tensoring, and fixed finite-arity algebraic torsion incidence cannot manufacture missing mixed-prime provenance after the source has already split.
 
-WP-140--WP-141 first exposed a normalization trap: an unequal-rank Kron pseudodeterminant can manufacture `+log m` from common scale, while the canonical Fisher/Hessian geometry removes that direction.
+WP-161 provides a genuine escape from the fixed torsion category: a real radial deformation of the primitive cyclotomic shell has boundary value `Lambda(n)`. But every derivative-independent positive local jet is Jordan-totient data with full shell support.
 
-WP-142 repairs that objection. On the common mean-zero space, the relative determinant is
+WP-162 uses the whole radial half-line and recovers the selector exactly. For `rho_n(s)=-d/ds log Phi_n(e^{-s})`,
 
-`R(g)=A(g)/H(g)>=1`,
+`int_0^infinity rho_n(s) ds = Lambda(n)`,
 
-so common positive scaling cancels exactly and the sign follows from Loewner/AM--HM positivity. For the Prime-Circle one-hole conductances, `log R_m = log m - log 6 + O(1/m)`.
+and `rho_n(s)>0` for all `s>0` exactly when `n` is a prime power. For non-prime-powers the zero total mass is a genuine sign cancellation. Consequently total variation, `L^q` size, squared flux, or any pointwise strictly positive energy is nonzero on every shell; even source-independent exponential damping destroys the exact mixed-prime zero in the first explicit control.
 
-WP-143 identifies this scalar with the exact affine-invariant SPD geodesic length of a rank-one relaxation: only one generalized eigenmode moves. WP-144 then exhausts the ordinary congruence-invariant Riemannian metric freedom and shows that every such metric merely rescales the same `log R`.
-
-These are genuine geometric successes, not fake positivity. Their failure is arithmetic/global: the formula is prime-blind, not the exact Mangoldt coefficient, its squared positive energy is proportional to `(log R)^2`, and no prime-power selector, Gamma term, pole counterterm, or global test-function polarization is produced.
+This identifies where positivity may still enter: after a signed nonlocal finite object has been coupled across shells and to the archimedean place, not by replacing that object with a positive shellwise norm.
 
 ## What remains possible
 
-A viable construction may use local positive logarithmic geometry, but it must couple provenance before the universal one-mode reduction, or add a source-forced multi-place/multimode operation whose completed polarization has an independent sign theorem. Changing among congruence-invariant SPD metrics cannot repair the current route.
+A viable construction may take the signed radial-flux family as input and assemble a global quadratic or operator object whose final polarization is positive for source-forced reasons. It may also use a genuinely nonlocal boundary response or cohomological coupling that preserves the net flux cancellation until the final finite--archimedean operation.
+
+What is not enough is choosing a positive local density, absolute value, damping, or norm because it looks geometrically canonical. Those operations erase exactly the cancellation carrying Mangoldt support on mixed-prime shells.
 
 ## Status / novelty
 
-Kron reduction, determinant inequalities, AM--HM positivity, and SPD geometry are classical. The synthesis is the stronger program gate: **even an intrinsic, scale-invariant, independently positive `log m`-scale geometry is not Weil positivity when matched controls reproduce it and the global bilinear assembly is absent**.
+Cyclotomic identities, logarithmic derivatives, Kron reduction, SPD geometry, positive energies, and radial integration are classical. The persisted synthesis is the stronger program gate: **even an exact prime-power positivity classifier does not become Weil positivity when the sparse selector is encoded in signed nonlocal cancellation; the final sign theorem must be produced only after that signed information has been assembled globally**.
 
 ## Falsification criterion
 
-Derive a source-specific prime-power/archimedean global Weil pairing from the canonical Kron/SPD structure before matched composite control erases provenance, or exhibit another independently forced local geometry whose complete assembly supplies both the selector and sign without importing the Weil functional.
+Construct a shellwise pointwise-positive scalarization of the WP-162 flux that still has exact Mangoldt support without importing the selector into the scalarization, or derive a source-specific finite--archimedean positive pairing from the signed flux family whose matched controls do not reproduce it.
 
 ## Lean-formalizable core
 
-- Equal-rank Kron relative determinant `A/H>=1`.
-- Rank-one relative spectrum and SPD log-distance.
-- Congruence-invariant metric family collapsing to a scalar rescaling.
-- Logical separation of local nonnegativity from global Weil polarization.
+- Cyclotomic boundary-to-origin flux identity.
+- Prime-power iff pointwise-positive flux classification.
+- Mixed-prime sign-cancellation/total-variation obstruction.
+- Logical separation of shell classifier from global Weil polarization.

@@ -10,13 +10,15 @@ VIS-028--VIS-032 isolate a clean Farey regime: fixed endpoint layers vanish at t
 
 VIS-034 sharpens interpretation of any observed low-band suppression. The suppression statistic factors into a total-discrepancy amplitude term and a spectral-reallocation term, so an apparently strong low-mode effect is not evidence of arithmetic redistribution until the overall discrepancy scale is controlled separately. A decisive continuation should pre-register `q_n->infinity`, `q_n=o(n)`, normalize against the exact null, factor amplitude from redistribution, and then challenge any residual by stronger local-order, denominator, mediant, and Franel--Landau/Mobius controls.
 
-## Compare higher-order residual direction only in one predeclared common gauge
+## Compare higher-order residual direction only in one predeclared common gauge, and audit the gauge itself separately
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`.
 
-VIS-035--VIS-040 close a broad apparent multiplicity in three-gap statistics. CA singular values, Pearson interaction, LRT/CMI, and their local finite-size behavior largely measure the same conditional-interaction magnitude. Near Markov closure, scalar CMI is exactly one half of the Fisher-normal residual energy to second order, so it discards the normal direction carrying that dependence.
+VIS-035--VIS-040 close a broad apparent multiplicity in three-gap statistics. CA singular values, Pearson interaction, LRT/CMI, and their local finite-size behavior largely measure the same conditional-interaction magnitude. Near Markov closure, scalar CMI is one half of the Fisher-normal residual energy to second order, so it discards the normal direction carrying that dependence.
 
-VIS-041--VIS-042 show how orientation can be retained without pretending it is canonical. Whitening two residuals by one fixed positive Markov reference gives an exact Fisher angle; logarithmic pooling of a predeclared panel's Markov closures supplies one panel-wide common gauge and a positive-semidefinite residual-orientation Gram. The reference, panel, weights, support, and partition remain part of the representation contract. A live cross-process orientation claim must freeze that common gauge before inspection and show that the signal survives reasonable admissible gauge/control choices rather than comparing independently whitened or post-selected coordinates.
+VIS-041--VIS-043 show how orientation can be retained without pretending the reference is canonical. Whitening residuals by one fixed positive Markov reference gives an exact Fisher angle; the weighted logarithmic pool of a predeclared panel's Markov closures remains Markov, is the unique minimizer of weighted `D_KL(gauge||closure)`, and supplies one common Fisher metric. Its dispersion `-log Z` decomposes entirely into the admitted lower-order Markov channels and is therefore a gauge-heterogeneity diagnostic, not residual agreement.
+
+VIS-044 gives the dual warning. Reversing the KL direction selects the arithmetic pool, which need not remain Markov: its apparent three-way residual is exactly a cross-panel covariance of the lower-order left/right conditional channels, and projecting it back to the Markov family costs exactly the induced conditional mutual information. A live cross-process orientation claim must therefore freeze the panel, weights, support, partition, pooling rule, and KL direction before inspecting residuals, and must keep lower-order gauge heterogeneity separate from own-process higher-order interaction.
 
 ## Build an information-loss atlas rather than treating complete xi-field renderings as independent evidence
 

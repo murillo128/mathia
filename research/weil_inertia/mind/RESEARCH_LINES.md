@@ -14,9 +14,11 @@ WI-165 and WI-166 close positive mixing on both sides of scalar block collapse i
 
 **Linked intuitions:** `MI-006-source-rigidity-can-eliminate-screening-extremizers` and `MI-008-inertia-counts-offline-pairs-but-not-their-distance`.
 
-Exact negative index survives while continuous spectral charges collapse at confluence. WI-164 and WI-167 now also close two naive singular repairs. Normalized Schur cancellation removes the collapsing horizontal singular values completely and measures only the retained vertical component `K_V`; an isolated off-line pair makes that correction identically zero. Conversely, adding a nonzero quantized flag-depth projection has a fixed Hilbert--Schmidt norm floor while the entire one-pair Lamzouri deficit tends to zero, so it overshoots the available source slack.
+Exact negative index survives while continuous spectral charges collapse at confluence. WI-164 and WI-167 close two naive singular repairs: normalized Schur cancellation removes the collapsing horizontal singular values, while any nonzero integer-depth flag correction has a fixed Hilbert--Schmidt floor that overshoots an arbitrarily small one-pair source deficit.
 
-A surviving coercive detector must therefore come with an independently evaluated zeta-source scale or multi-zero interaction. It must be inactive or quantitatively compatible on the isolated confluence control and become nontrivial only because a new source theorem funds it. Neither smoothing the inertia jump nor inserting a unit projection jump creates that information by itself.
+WI-168 globalizes the latter obstruction. If extra nested projection levels are required to be paid from the same Lamzouri deficit `Delta`, their depth operator `J` satisfies `Delta >= ||J||_HS^2/4 >= rank(J)/4`. Thus a nonzero same-deficit quantized refinement already needs `Delta>=1/4`, depth costs quadratically, and any family with `Delta=o(N)` can add only `o(N)` rank. A macroscopic interaction layer cannot be created by repartitioning the existing deficit.
+
+A surviving coercive detector must therefore identify an independently evaluated zeta-source scale or a genuinely new multi-zero interaction budget. Near saturation, the theorem funding that layer is the missing information; smoothing, inverse normalization, or autonomous projection depth cannot substitute for it.
 
 ## Cross the linear support-edge singularity threshold, or leave support-one scalar/positive-compression universality
 
@@ -32,4 +34,4 @@ A positive support-one theorem must justify at least linear deweighted singulari
 
 **Linked intuitions:** `MI-003-coupled-welding-uniformity-is-the-fourth-moment-gate`, `MI-004-w-conditioning-is-l2-compressible-but-l1-expensive`, and `MI-005-rank-restoration-is-not-quantitative-coercivity`.
 
-Full rank or restored dimension can coexist with collapsing singular values. Any fourth-moment or welding route must prove a quantitative source lower bound from information absent in the covered full-packed, remote-repair, confluence, support-one positive-compression, Schur-normalization, and quantized-flag controls.
+Full rank or restored dimension can coexist with collapsing singular values, and WI-168 now shows that even quantized extra rank has a precise cost when funded by the existing Lamzouri deficit. Any fourth-moment or welding route must prove a quantitative source lower bound from information absent in the covered full-packed, remote-repair, confluence, support-one positive-compression, Schur-normalization, and same-deficit flag controls.
