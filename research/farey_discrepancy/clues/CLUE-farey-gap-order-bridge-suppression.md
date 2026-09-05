@@ -12,6 +12,7 @@ based_on:
   - research/visual_exploration/findings/VIS-030-farey-endpoint-profile-totient-riesz-remainder.md
   - research/visual_exploration/findings/VIS-031-farey-fixed-endpoints-vanish-sublinear-bands.md
   - research/visual_exploration/findings/VIS-032-reflection-null-sublinear-band-saturates-green-energy.md
+  - research/visual_exploration/findings/VIS-034-farey-low-band-suppression-factorization.md
   - research/farey_discrepancy/README.md
 ---
 
@@ -23,9 +24,9 @@ based_on:
 
 `VIS-027` removes an exact symmetry artifact. Farey reflection makes the discrepancy path antisymmetric, annihilating every odd Dirichlet sine mode. Conditioning the same-gap permutation null on the exact reflection symmetry gives the stronger exact total baseline
 
-`E_sym[E_2]=sigma_g^2 N(N+2)/12`,
+`E_sym[E_tot]=sigma_g^2 N(N+2)/12`,
 
-and the finite Farey energy remains strongly suppressed relative to it.
+and the finite Farey total discrepancy energy remains strongly suppressed relative to it.
 
 `VIS-028` and `VIS-029` show that deterministic fixed-`nx` endpoint geometry generates an `r=Theta(n)` even-mode spectral scale. For every fixed endpoint cutoff `Y`, the rank profile is governed by
 
@@ -57,29 +58,43 @@ then exactly
 
 with `C_N=2M sigma_g^2/(M-1)` for `N=2M`. The expected null fraction in the band is
 
-`F_q(N)=[6/(N^2-4)] sum_(r<=q)csc^2(pi r/N)`.
+`F_null(q,N)=[6/(N^2-4)] sum_(r<=q)csc^2(pi r/N)`.
 
-Whenever `q->infinity` and `q=o(N)`, `F_q(N)->1`. For Farey, any `q->infinity` with `q=o(n)` therefore lies in a useful control sandwich: every fixed endpoint hierarchy vanishes there by `VIS-031`, while the reflection-same-gap null places asymptotically all of its expected Green energy there by `VIS-032`.
+Whenever `q->infinity` and `q=o(N)`, `F_null->1`. For Farey, any `q->infinity` with `q=o(n)` therefore lies in a useful control sandwich: every fixed endpoint hierarchy vanishes there by `VIS-031`, while the reflection-same-gap null places asymptotically all of its expected Green energy there by `VIS-032`.
 
-This also gives the exact-null normalized observable
+`VIS-034` removes one remaining interpretive confound. The first-null-normalized band statistic
 
-`Q_q=E_q/[E_sym[E_q]]`,
+`Q_q=E_q/E_sym[E_q]`
 
-whose null mean is exactly one. At the pre-registered cutoffs `q=floor(sqrt(n))` and `q=floor(n^(2/3))`, finite Farey evaluations through `n=1200` have `Q_q` far below one; for example at `n=1200`, the values are approximately `2.31e-4` and `6.77e-4`, respectively. These are finite diagnostics only, not an asymptotic claim.
+factors exactly as
+
+`Q_q=A S_q`,
+
+where
+
+`A=E_tot/E_sym[E_tot]`
+
+is the **global total-discrepancy suppression**, and
+
+`S_q=(E_q/E_tot)/(E_sym[E_q]/E_sym[E_tot])`
+
+is the **spectral-allocation suppression**. Thus a very small `Q_q` does not by itself identify a low-frequency mechanism: it can be small because the whole discrepancy path is small, because the remaining energy is shifted away from the null's low-mode profile, or both.
+
+For the finite values already tabulated in `VIS-032`, both effects are present. At `n=1200`, the common global factor is about `A~2.84e-3`, while the spectral factors are about `S_q~0.0813` for `q=floor(sqrt(n))` and `S_q~0.238` for `q=floor(n^(2/3))`. The reported `Q_q` values are their products. These are finite diagnostics only, not asymptotic claims.
 
 ## Research question
 
-Does the complete Farey discrepancy retain a stable sublinear even-mode or cross-band suppression, measured against the exact `Q_q` reflection-same-gap baseline, after progressively preserving stronger local ordering information, and can any surviving residual be shown not to reduce to the classical Franel–Landau scalar discrepancy or familiar Möbius/totient quantities?
+After separating global discrepancy suppression from spectral reallocation, does the complete Farey discrepancy retain a stable **spectral-allocation deficit `S_q<1`** in pre-registered sublinear even-mode bands after progressively preserving stronger local ordering information? Can any surviving `S_q` residual be shown not to reduce to the classical Franel–Landau scalar discrepancy or familiar Möbius/totient quantities?
 
 If a residual survives, can it be localized to genuinely interior information such as adjacent-gap blocks, denominator strata, mediant/Farey-parent ancestry, or long-range gap order, rather than to the fixed endpoint hierarchy already excluded in this band?
 
 ## Why it may matter
 
-The visual branch has successively removed several false positives and control failures: the raw gap multiset, exact reflection parity, deterministic endpoint spectral scale, and the assumption that arbitrarily enlarging endpoint subtraction remains a neutral geometric null.
+The visual branch has successively removed several false positives and control failures: the raw gap multiset, exact reflection parity, deterministic endpoint spectral scale, the assumption that arbitrarily enlarging endpoint subtraction remains a neutral geometric null, and now the conflation of **total amplitude** with **spectral shape**.
 
-`VIS-031` and `VIS-032` now make the first spectral test cleaner. The selected band simultaneously rejects every fixed endpoint hierarchy and retains essentially the full expected Green energy of the current matched null. A surviving difference therefore cannot be dismissed merely as endpoint localization or as choosing a band in which the null has negligible expected energy.
+The selected sublinear bands simultaneously reject every fixed endpoint hierarchy and retain essentially the full expected Green energy of the current matched null. `VIS-034` makes the next test sharper still: a genuinely spectral effect must survive in `S_q` after the scalar/global factor `A` is divided out.
 
-This still does not identify an arithmetic mechanism. Its value is to make the next stronger null genuinely discriminating: if suppression disappears once bounded local order or denominator/mediant structure is preserved, that closes the visual branch at a precise structural boundary; if it survives, the remaining information channel becomes much narrower.
+If stronger local-order controls drive `S_q` back to one while `A` remains small, the visual spectral branch collapses to a global discrepancy-ordering effect. If `S_q` remains nontrivial, the remaining information channel becomes much narrower and genuinely scale-sensitive.
 
 ## Decisive test
 
@@ -91,14 +106,26 @@ and
 
 `q_n=floor(n^(2/3))`.
 
-For substantially larger Farey orders, compute the complete even Dirichlet coefficients in the fixed coordinates of `VIS-027` and use `Q_q` as the primary first-null-normalized statistic. The reflection-preserving same-gap mean is exact from `VIS-032`; Monte Carlo is needed only if distributional quantiles or concentration under the null are required.
+For substantially larger Farey orders, compute the complete even Dirichlet coefficients in the fixed coordinates of `VIS-027`. For each matched null, report separately
 
-If the finite suppression persists, strengthen the null in a fixed order without changing the spectral bands after inspection: first preserve adjacent-gap pair information or bounded-depth gap blocks; then test denominator strata and mediant/Farey-parent relations when a mathematically well-defined matched ensemble is available. Recompute the same `Q_q`-type observable against each stronger null rather than introducing a new visual statistic after seeing the result.
+`A=E_tot/E_null[E_tot]`
 
-Kill the route if the sublinear-band suppression is reproduced by a stronger local-order null, collapses to a known Franel–Landau/Möbius estimate, disappears at larger orders, or requires changing the pre-registered band in response to the data. If a proposed test needs modes on the `r=Theta(n)` scale or an endpoint cutoff `Y=Y(n)` growing with `n`, return to the `VIS-029`/`VIS-030` endpoint accounting before interpreting it.
+and
+
+`S_q=(E_q/E_tot)/(E_null[E_q]/E_null[E_tot])`,
+
+with `Q_q=A S_q` only as the derived combined diagnostic. Do not interpret a tiny `Q_q` as specifically spectral unless the corresponding `S_q` is also suppressed.
+
+For the reflection-preserving same-gap null the needed expectations are exact from `VIS-027` and `VIS-032`; Monte Carlo is needed only for distributional quantiles/concentration or for stronger nulls without an analytic expectation.
+
+If the finite spectral-allocation suppression persists, strengthen the null in a fixed order without changing the bands after inspection: first preserve adjacent-gap pair information or bounded-depth gap blocks; then test denominator strata and mediant/Farey-parent relations when a mathematically well-defined matched ensemble is available. Recompute both `A` and `S_q` for each stronger null rather than carrying the same-gap normalization into a different ensemble.
+
+Kill the **spectral** route if `S_q` returns to one under a stronger local-order null, tends to one at larger orders, collapses to a known scalar discrepancy/Möbius estimate, or requires changing the pre-registered band in response to the data. A small `A` may remain mathematically interesting, but it belongs to the global discrepancy channel rather than to a new low-mode geometry.
+
+If a proposed test needs modes on the `r=Theta(n)` scale or an endpoint cutoff `Y=Y(n)` growing with `n`, return to the `VIS-029`/`VIS-030` endpoint accounting before interpreting it.
 
 ## Evidence boundary
 
-`VIS-026` establishes the fixed-gap bridge control. `VIS-027` establishes reflection parity and the exact reflection-preserving same-gap total baseline. `VIS-028` and `VIS-029` establish the deterministic endpoint hierarchy and its `r=Theta(n)` scale. `VIS-030` establishes the Riesz/Möbius arithmetic carried by progressively enlarged endpoint subtraction. `VIS-031` proves that every fixed endpoint hierarchy vanishes from every sublinear even-mode band at the stated normalization. `VIS-032` proves that any diverging sublinear band captures asymptotically all of the current matched-null Green expectation and provides the exact `Q_q` null mean.
+`VIS-026` establishes the fixed-gap bridge control. `VIS-027` establishes reflection parity and the exact reflection-preserving same-gap total baseline. `VIS-028` and `VIS-029` establish the deterministic endpoint hierarchy and its `r=Theta(n)` scale. `VIS-030` establishes the Riesz/Möbius arithmetic carried by progressively enlarged endpoint subtraction. `VIS-031` proves that every fixed endpoint hierarchy vanishes from every sublinear even-mode band at the stated normalization. `VIS-032` proves that any diverging sublinear band captures asymptotically all of the current matched-null Green expectation. `VIS-034` proves only the exact normalization factorization separating total-amplitude and spectral-allocation effects.
 
-None of these findings proves that the **actual** Farey `Q_q` has a limiting value, that the finite suppression is independent of stronger local-order structure, that a new non-scalar invariant exists, or that any restricted-band estimate strengthens the classical RH-equivalent discrepancy criterion. The finite values are exploratory diagnostics. This file remains a `status: proposed` clue, not mathematical evidence.
+None of these findings proves that the actual Farey `A`, `S_q`, or `Q_q` has a limiting value, that finite spectral reallocation is independent of stronger local-order structure, that a new non-scalar invariant exists, or that any restricted-band estimate strengthens the classical RH-equivalent discrepancy criterion. The finite values are exploratory diagnostics. This file remains a `status: proposed` clue, not mathematical evidence.
