@@ -82,4 +82,20 @@ PC-181 closes the simplest nonlinear repair that acts on this antisymmetric carr
 
 satisfies `-Omega^2=omega^2 I`. More generally, every positive Hermitian functional calculus of `i Omega` has equal diagonal response on shell `2` and non-prime-power shell `6`. Thus squaring, taking a modulus, or applying a positive spectral function to the first-order skew carrier fails the clue's matched-control selector test in the strongest possible two-shell form. This is persisted in [[research/prime_circle/findings/PC-181-skew-flux-functional-calculus-is-prime-blind-on-mixed-control]].
 
-The clue remains accepted only beyond PC-179, PC-180, and PC-181. A next candidate must introduce **additional geometry-forced information before or alongside the first-order skew compression**: for example an intrinsic radial-depth-dependent/nonlocal kernel, a second independent noncommuting structure, a higher-order radial object, or an all-shell invariant that is not merely positive functional calculus of `Omega`. It must retain the signed cancellation of at least one non-prime-power control, produce a sign/coercivity margin absent from the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert algebra already exposed by PC-001, PC-027, PC-029, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
+PC-182 closes the most canonical positive radial-depth/nonlocal repair left by those results. For an admissible scalar depth weight `w`, the weighted ordered matrix
+
+\[
+B^{(w)}_{mn}=\int_0^\infty w(x)\rho_m(x)F_n(x)\,dx
+\]
+
+has exact symmetric part
+
+\[
+\operatorname{Sym}B^{(w)}
+=\frac{w(0)}2\Lambda\Lambda^{\mathsf T}
++\frac12\left[\int_0^\infty w'(x)F_m(x)F_n(x)\,dx\right]_{m,n}.
+\]
+
+Thus `w'=0` returns to the classical Mangoldt boundary, while every genuinely monotone `w` with `w'>0` on a set of positive measure assigns strictly positive self-energy to every non-prime-power shell. For the canonical first log-radial moment `w(x)=x`, this positive Gram is equivalently the two-depth flux kernel `min(u,v)`, and its finite entries reduce to the same weight-three colored Tornheim/cyclotomic-polylogarithm class already exposed in PC-102. This is persisted in [[research/prime_circle/findings/PC-182-monotone-radial-depth-positivity-fills-the-mangoldt-nullspace]].
+
+The clue therefore remains accepted only beyond PC-179--PC-182. A next candidate must introduce **additional geometry-forced information before positive self-adjoint collapse**: a sign-changing/nonmonotone depth law forced by refinement, a genuinely two-depth kernel outside the positive Stieltjes `w(min)` class, a radially varying shell operator with intrinsic noncommuting eigenspaces, a second independent ordered/skew carrier, a higher-order radial object, or an all-shell invariant that is not positive functional calculus of the carriers already classified. It must retain the signed cancellation of at least one non-prime-power control, produce a sign or coercivity margin unavailable in the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert/Tornheim algebra already exposed by PC-001, PC-027, PC-029, PC-102, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
