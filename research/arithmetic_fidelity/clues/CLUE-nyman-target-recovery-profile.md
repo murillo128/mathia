@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-nyman-target-recovery-profile
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: arithmetic_fidelity
 based_on:
@@ -43,3 +43,12 @@ Use AF-133/AF-134 directly only if a legitimate finite statistical-channel model
 ## Evidence boundary
 
 The PL-020 identity and AF-133 quotient criterion are established only in their stated settings. Their quantitative transfer to compressed Nyman certificates is unproved. No norming constant, approximation rate, control of a hypothetical Blaschke factor, or RH consequence is assumed.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-135-whitened-target-tail-classifies-spectral-gram-fidelity.md]]
+
+AF-135 resolves the abstract deterministic recovery/stability question: `(G,b,||k||^2)` is exactly sufficient for finite target distance, spectral truncation loses exactly the discarded whitened target mass, and unweighted small pairing error has no uniform modulus when Gram eigenvalues approach zero. The remaining live question is arithmetic rather than generic fidelity theory: after fixing a canonical Nyman coefficient geometry, prove or refute a natural cutoff schedule whose whitened target tail tends to zero and determine whether the retained profile is materially smaller than carrying the full target pairings.
