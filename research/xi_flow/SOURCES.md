@@ -5,8 +5,13 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 ## De Bruijn–Newman deformation
 
 - [`research/prior_art/de-bruijn-newman-deformation.md`](../prior_art/de-bruijn-newman-deformation.md). Role: Mathia prior-art anchor for the heat-flow formulation, the threshold `Lambda`, the equivalence `RH <=> Lambda <= 0`, and the Rodgers–Tao lower bound.
+- N. G. de Bruijn, **The roots of trigonometric integrals**, *Duke Mathematical Journal* 17:3 (1950), 197–226, DOI `10.1215/S0012-7094-50-01720-0`. Role: primary classical anchor for the strip-shrinking theorem used in XF-051: a zero strip of half-width `y_0` at one heat time contracts at later times to half-width `sqrt(max(y_0^2-2 Delta t,0))`, giving a fixed zero-free horizontal half-plane for the Xi deformation from the unconditional critical strip.
 - Brad Rodgers and Terence Tao, **The de Bruijn–Newman constant is non-negative**, *Forum of Mathematics, Pi* 8 (2020), e6. Role: primary anchor for `Lambda >= 0`, the zero-dynamics contradiction mechanism, and its use of local zero statistics.
 - Charles M. Newman and Wei Wu, **Constants of de Bruijn–Newman type in analytic number theory and statistical physics**, *Bulletin of the American Mathematical Society* 57:4 (2020), 595–614. Role: authoritative historical/structural survey of the de Bruijn and Newman deformation framework and neighboring de Bruijn–Newman constants.
+
+## Half-plane Fourier–Laplace support
+
+- Marcus Carlsson and Jens Wittsten, **A Note on Holomorphic Functions and the Fourier–Laplace Transform**, *Mathematica Scandinavica* 120:2 (2017), 225–248, DOI `10.7146/math.scand.a-25612`. Role: peer-reviewed modern anchor for the distributional Paley–Wiener/Fourier–Laplace principle used in XF-051: polynomial-growth holomorphic boundary values on a half-plane correspond to distributions with one-sided Fourier support. XF-051 derives the Xi logarithmic-derivative Burgers equation independently and uses this theorem only for the half-line support step.
 
 ## Zero dynamics and Lehmer pairs
 
