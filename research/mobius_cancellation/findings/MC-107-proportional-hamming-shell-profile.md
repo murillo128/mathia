@@ -232,11 +232,7 @@ H_0(u,v)
 
 This is the exact local correction that was invisible in `MC-106`: when the degrees are `o(L)`, the saddle parameters tend to zero and common-prime defects are `o(1)`; at proportional degree they contribute a nontrivial Euler factor and must not be discarded.
 
-## 2. Two Cauchy saddles give the exact-degree rectangle law
-
-Koukoulopoulos, *The Distribution of Prime Numbers*, Theorem 16.2, proves the classical Sathe–Selberg formula uniformly for `1<=k<=C log log x` by combining a uniform Selberg–Delange moment estimate with Cauchy inversion on the saddle circle `|z|=(k-1)/log log x`. The proof localizes the Cauchy integral to an angular window of width `O(k^{-1/2})` around its positive saddle.
-
-The factorization `(19)` permits the same argument independently in the two Cauchy variables. Equivalently, one may first expand the normally convergent factor `H_b` as a two-variable Dirichlet convolution and apply the one-variable Selberg–Delange expansion in each coordinate; this is within the standard multivariable Dirichlet-series framework developed by de la Bretèche for multiple arithmetic sums.
+## 2. Coprimality inversion reduces the rectangle law to one-variable Sathe–Selberg
 
 Let
 
@@ -261,7 +257,107 @@ c=\frac{l-1}{\log\log x}.
 \tag{24}
 \]
 
-Then the double saddle gives, uniformly for `r,s in [delta,1]`,
+For square-free `c_0`, define
+
+\[
+A_m^{(c_0)}(X)
+:=\#\{n\le X:n\text{ square-free},\ (n,c_0)=1,\ \omega(n)=m\}.
+\]
+
+Möbius inversion of `1_{(d,e)=1}` gives the exact identity, with `X=rx`, `Y=sx`, and `h=\omega(q)`,
+
+\[
+P_{j,l}^{(b)}(x;r,s)
+=\sum_{\substack{q\ge1\\q\text{ square-free}\\(q,b)=1}}
+\mu(q)
+A_{j-h}^{(bq)}(X/q)
+A_{l-h}^{(bq)}(Y/q),
+\tag{R1}
+\]
+
+where a term is zero when one of the displayed indices is negative. Indeed, for square-free `d,e`, writing `d=qd'`, `e=qe'` after selecting `q|(d,e)` leaves the two residual variables independently square-free and coprime to `bq`; the remaining coupling is entirely in the `q`-sum.
+
+The one-variable square-free Sathe–Selberg theorem gives, for each fixed square-free `c_0`,
+
+\[
+A_m^{(c_0)}(X)
+\sim
+\frac{X}{\log X}\frac{(\log\log X)^{m-1}}{(m-1)!}
+\frac{G_{c_0}(\alpha)}{\Gamma(1+\alpha)},
+\qquad
+\alpha=\frac{m-1}{\log\log X},
+\tag{R2}
+\]
+
+uniformly when `alpha` ranges in a compact subset of `(0,infinity)`, where
+
+\[
+G_{c_0}(z)=G(z)\prod_{p\mid c_0}(1+z/p)^{-1},
+\qquad
+G(z)=\prod_p(1+z/p)(1-1/p)^z.
+\tag{R3}
+\]
+
+The finite-prime exclusion factor in `(R3)` follows directly from the square-free Euler product. For every fixed `q`, `log log(X/q)=log log x+o(1)` uniformly for `r in [delta,1]`, and if `h=\omega(q)` then
+
+\[
+\frac{L^{j-h-1}/(j-h-1)!}{L^{j-1}/(j-1)!}
+=\frac{(j-1)_h}{L^h}\longrightarrow a^h,
+\tag{R4}
+\]
+
+with the analogous limit `c^h` in the second coordinate. After normalizing `(R1)` by
+
+\[
+rs\frac{x^2}{(\log x)^2}
+\frac{L^{j+l-2}}{(j-1)!(l-1)!},
+\]
+
+the fixed-`q` summand therefore tends to
+
+\[
+\frac{\mu(q)(ac)^{\omega(q)}}{q^2}
+\frac{G_{bq}(a)G_{bq}(c)}{\Gamma(1+a)\Gamma(1+c)}.
+\tag{R5}
+\]
+
+No uniform-in-`q` Sathe–Selberg asymptotic is needed. Split the `q`-sum at `q=x^{1/2}`. For `q\le x^{1/2}`, the standard uniform Sathe–Selberg/Hardy–Ramanujan upper bound, `A_m^{(bq)}\le A_m^{(1)}`, and `(j-1)_h/L^h,(l-1)_h/L^h=O_K(C_K^h)` on compact saddle ranges give the summable normalized majorant
+
+\[
+\ll_K \frac{C_K^{\omega(q)}}{q^2},
+\qquad
+\sum_{q\ \mathrm{squarefree}}\frac{C_K^{\omega(q)}}{q^2}
+=\prod_p\left(1+\frac{C_K}{p^2}\right)<\infty.
+\tag{R6}
+\]
+
+For `q>x^{1/2}`, the crude pair count is
+
+\[
+\sum_{q>x^{1/2}}\frac{XY}{q^2}=O(x^{3/2}),
+\tag{R7}
+\]
+
+which is negligible against every fixed proportional Sathe–Selberg scale `x^2` times a fixed power of `log x`. The estimates are uniform for `r,s in [delta,1]`, so dominated convergence applies to `(R1)`.
+
+The resulting constant is exactly the `H_b` factor from `(21)`. Factoring out the primes dividing `b`,
+
+\[
+\sum_{\substack{q\text{ square-free}\\(q,b)=1}}
+\frac{\mu(q)(ac)^{\omega(q)}}{q^2}G_{bq}(a)G_{bq}(c)
+=G_b(a)G_b(c)
+\prod_{p\nmid b}
+\left(1-\frac{ac}{p^2(1+a/p)(1+c/p)}\right).
+\tag{R8}
+\]
+
+For `p\nmid b`, multiplying the local factors gives
+
+\[
+(1+a/p)(1+c/p)-ac/p^2=1+(a+c)/p,
+\]
+
+while for `p\mid b` only `(1-1/p)^{a+c}` remains. Hence `(R8)=H_b(1,1;a,c)`, and therefore, uniformly for `r,s in [delta,1]`,
 
 \[
 \boxed{
@@ -276,7 +372,7 @@ P_{j,l}^{(b)}(x;r,s)
 \tag{25}
 \]
 
-The Gamma factors in `(25)` are the exact-degree saddle factors, just as `G(alpha)/Gamma(alpha+1)` appears in the one-variable Sathe–Selberg theorem. The dependence on `r,s` is only the leading rectangle area because replacing `x` by a fixed multiple changes `log x` and `log log x` by lower-order amounts even when `j,l=Theta(log log x)`.
+Thus the load-bearing rectangle law needs only one-variable square-free Sathe–Selberg plus exact coprimality inversion; no unproved two-variable Cauchy extension is required.
 
 ## 3. The source sawtooth kernel retains the same positive integral `J`
 
@@ -336,7 +432,7 @@ J\frac{(N/b)^2}{(\log N)^2}
 \tag{30}
 \]
 
-The `b`-tail can be removed uniformly as in `MC-106`: `|z|<=1/2`, proportional Sathe–Selberg upper bounds give a summable `O(b^{-2})` majorant for `b<=sqrt(N)`, and the crude contribution from `b>sqrt(N)` is `O(N^{3/2+o(1)})`, negligible against the proportional shell scale.
+The `b`-tail is handled without any uniform-in-`b` asymptotic: first sum over fixed `b\le B`, then use the unrestricted proportional Sathe–Selberg upper bound to dominate the normalized remainder by a convergent tail `\sum_{b>B} C_K^{\omega(b)}/b^2`; the crude contribution from `b>\sqrt N` is `O(N^{3/2+o(1)})`. Sending `B\to\infty` justifies the passage from `(30)` to the Euler product below.
 
 ## 5. The common-factor sum collapses to one positive Euler product
 
@@ -410,8 +506,7 @@ Uniformly on any compact range ending at this `beta`, the backward ratios are ev
 \sum_{k=2}^{K}(-1)^kC_{k,N}
 \longrightarrow
 \sum_{r=0}^{\infty}(-\beta)^r
-=
-\frac1{1+\beta},
+=\frac1{1+\beta},
 \tag{37}
 \]
 
@@ -421,16 +516,16 @@ The argument deliberately stops at `beta=1`. At the turning scale the ratio tend
 
 ## 7. Prior art and novelty boundary
 
-The analytic engine is classical. Dimitris Koukoulopoulos, *The Distribution of Prime Numbers*, Graduate Studies in Mathematics 203, AMS (2019), Theorem 16.2, proves the Sathe–Selberg formula uniformly for `1<=k<=C log log x` and gives the exact saddle-point/Cauchy-inversion mechanism used above. The author-approved preliminary version is available at `https://dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf`; the theorem appears in Chapter 16 and cites Sathe (1953) and Selberg (1954).
+The analytic engine is classical. Dimitris Koukoulopoulos, *The Distribution of Prime Numbers*, Graduate Studies in Mathematics 203, AMS (2019), Theorem 16.2, proves Sathe–Selberg uniformly for `1<=k<=C log log x`; the square-free finite-prime-exclusion specialization used in `(R2)`--`(R3)` follows from the corresponding square-free Euler product. The author-approved preliminary version is available at `https://dms.umontreal.ca/~koukoulo/documents/publications/primes.pdf`; the theorem appears in Chapter 16 and cites Sathe (1953) and Selberg (1954).
 
-For the multivariable Dirichlet-series setting, Régis de la Bretèche, *Estimation de sommes multiples de fonctions arithmétiques*, Compositio Mathematica 128 (2001), 261–298, DOI `10.1023/A:1011803816545`, develops asymptotic tools for multiple arithmetic sums from their associated multivariable Dirichlet series. It is cited here as the established multivariable framework, not as a source for the exact Hamming-shell statement `(5)`.
+Régis de la Bretèche, *Estimation de sommes multiples de fonctions arithmétiques*, Compositio Mathematica 128 (2001), 261–298, DOI `10.1023/A:1011803816545`, remains relevant adjacent multivariable prior art, but it is **not** load-bearing for `(25)`: exact coprimality inversion reduces the needed rectangle asymptotic to a summable superposition of one-variable counts.
 
 A targeted search for Sathe–Selberg formulas on coprime pairs, square-free pair counts, sawtooth-weighted exact-prime-factor sums, Möbius Hamming shells, and symmetric-difference prime-factor distance did not identify `(5)`--`(14)` as a standard named theorem. **No novelty claim is made.** The durable content is the source-specific specialization: the exact pair kernel from the Möbius Hamming deformation has a positive proportional-degree profile with the explicit correction `(6)`, and this moves the already-established radial obstruction from `o(log log N)` to the turning scale `2 log log N`.
 
 ## 8. Boundaries and falsification tests
 
-- The two-variable saddle step must retain uniformity for complex Cauchy parameters on compact circles. The factorization `(19)`--`(22)` gives the required normally convergent remainder; an adversarial audit should attack this uniformity directly rather than infer it from the one-variable theorem by analogy alone.
-- The coprimality constraint is **not negligible** at proportional degree. It is retained exactly in `(18)` and is responsible, together with the common factor `b`, for the Euler correction `(6)`. Dropping it would give the wrong constant.
+- The load-bearing uniformity in `(25)` is now reduced to the one-variable square-free Sathe–Selberg estimate plus the dominated `q`-sum `(R1)`--`(R7)`. A future audit should attack the compact-parameter one-variable upper bound, the `q>x^{1/2}` normalization, or the fixed-truncation `b` tail rather than relying on a generic two-variable Cauchy analogy.
+- The coprimality constraint is **not negligible** at proportional degree. It is retained exactly in `(R1)` and is responsible, together with the common factor `b`, for the Euler correction `(6)`. Dropping it would give the wrong constant.
 - The source kernel is bounded but discontinuous. The rectangle law `(25)`, the zero-area hyperbola discontinuities, and the `O(delta)` axis mass are the required justification for replacing it by the integral `J`; pointwise equidistribution language alone is insufficient.
 - Formula `(5)` is a fixed-proportional-scale statement. It does not by itself give the fine local profile when `k-2L=o(L)`, although it identifies the unique turning scale and the positive arithmetic factor there.
 - Equation `(13)` requires `beta<1`. At `beta=1`, last-shell domination fails and no conclusion about the precise width or mechanism of the central alternating cancellation is made.

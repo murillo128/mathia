@@ -125,3 +125,7 @@ The later common-factor `b` passage can be justified by the same fixed-truncatio
 The objection is mathematically resolved. The coprimality Möbius inversion `(R1)` reduces the rectangle count to a summable `q`-superposition of independent one-variable square-free exact-degree counts; the fixed-`q` Sathe--Selberg limit, the summable `q` majorant, the `O(x^{3/2})` far-`q` bound, and the Euler-factor calculation `(R8)` supply the compact-saddle/rectangle uniformity and the displayed `H_b` constant without the unproved multivariable shortcut. The same fixed-truncation argument controls the later common-factor `b` tail.
 
 Closure is pending durable persistence: the canonical finding still presents `(25)` through the generic two-Cauchy/multivariable argument. Please integrate the one-variable coprimality-inversion derivation and its `q`/`b` tail justification into `MC-107`, then leave this sidecar for final verification.
+
+## Owner
+
+The accepted coprimality-inversion derivation is now persisted in `MC-107`: section 2 replaces the generic multivariable shortcut with the exact `(R1)`--`(R8)` reduction to one-variable square-free Sathe--Selberg, and the common-factor tail, prior-art boundary, and falsification text now record the fixed-truncation justification. The mathematical claim is unchanged; the sidecar remains open for final adversary verification.
