@@ -1,33 +1,35 @@
-# MI-009 — Weak, relation-valued, and ordinary Fredholm passive closure still cannot realize the exact Gamma response
+# MI-009 — Passive Gamma scalarization is either too rigid or too flexible unless a new coercive class is source-forced
 
-**Evidence level:** exact/literature-backed no-go chain through WP-177
+**Evidence level:** exact/literature-backed passive, Fredholm, modified-determinant, and dissipative controls through WP-180
 
 ## Core intuition
 
-The passive obstruction to the archimedean Gamma phase is now stable under weak boundary topology, ordinary Nevanlinna relation-valued enlargement, and trace-class Fredholm scalarization. Weakening convergence does not help while visible scalar responses remain uniformly contractive Hardy functions; relation-valuedness Cayleys back to operator-valued Schur; and an ordinary Fredholm determinant of a trace-class Schur defect remains inside the scalar Schur unit ball.
+The real-place Gamma obstruction is no longer merely a closure theorem for ordinary Schur scalarization. The regular passive hierarchy now has a sharp two-sided boundary. Lossless passivity is **too rigid** in the determinant channels that inherit its order: ordinary determinant and `det_2` have one-sided boundary phase motion and cannot reproduce the sign-changing Gamma phase. Higher modified determinants and genuinely dissipative Schur systems are **flexible enough** to change phase orientation, but exactly for that reason passivity no longer supplies the sign theorem.
 
-A viable escape must therefore leave the ordinary passive category in a load-bearing way. Regularized determinants can do that, but precisely because they no longer inherit the scalar Schur bound from operator passivity. Escaping the category removes the old no-go and the old positivity theorem at the same time.
+A viable escape must therefore define a smaller source-derived class and prove a replacement coercivity/order theorem after the category change. Matching the Gamma phase is not itself evidence of positivity.
 
 ## Strongest justified principle
 
-WP-171--WP-174 close regular matrix-Schur readouts, finite negative index, regular `J`-contractive/passive-Hilbert termination, and common-domain singular limits. WP-175 strengthens the closure theorem to the boundary: no sequence of scalar Schur traces can converge to the exact Gamma phase even distributionally on any nonempty open interval.
+WP-171--WP-177 close regular matrix-Schur readouts, finite negative index, regular `J`-contractive/passive-Hilbert termination, common-domain singular limits, weak boundary convergence, ordinary Nevanlinna relations, and analytic trace-class Fredholm scalarization. None creates a hidden Gamma-compatible passive scalar class.
 
-WP-176 closes the natural relation-valued repair. A Nevanlinna family of maximal dissipative relations has an everywhere-defined contractive Cayley transform, hence an operator-valued Schur family. Its multivalued subspace is independent of the spectral parameter and becomes a constant identity block. Normalized coefficients and finite-dimensional ordinary determinants remain scalar Schur.
+WP-178 identifies the first modified-determinant boundary. `det_2` can leave the scalar Schur modulus, but on a regular lossless Hilbert--Schmidt unitary path its boundary phase derivative is `Tr((I-Re U)Q_U)>=0`. The Gamma phase changes orientation, so escaping the modulus does not escape the passive phase sign.
 
-WP-177 extends the same closure to infinite-dimensional trace-class scalarization. If `S(z)` is operator-valued Schur and `S(z)-I` is trace-class analytically, then the ordinary Fredholm determinant `det_F S(z)` is scalar Schur. The estimate is dimension-free, so changing Hilbert spaces and taking weak boundary limits does not approach the Gamma phase either. A fixed unitary reference changes nothing.
+WP-179 classifies all higher modified determinants. For `det_m`, the phase derivative contains the functional-calculus factor `Re[(-1)^{m-1}(U-I)^{m-1}]`. It is positive for `m=1,2`, but its scalar symbol changes sign on the unit circle for every `m>=3`. A pure-delay inner function with constant positive delay therefore already produces both phase orientations after higher regularization. The counterterm, not new arithmetic geometry, manufactures the sign freedom.
 
-The matched `det_2` control identifies the true boundary. Modified determinants can have modulus larger than one even for a one-dimensional constant unitary contraction. Thus **regularization really changes analytic/sign category**; it is not a hidden consequence of passivity. Any regularized or renormalized proposal must derive its own sign/coercivity theorem including the counterterm.
+WP-180 tests the other obvious category change before any determinant is taken. The elementary passive one-port `S(s)=(s+a)/(s+b)`, `0<a<b`, is strictly Schur and has a positive-real resistor--inductor realization, yet its boundary phase derivative changes sign at `|omega|=sqrt(ab)`. That crossover can be placed arbitrarily by varying `a,b`. Dissipative passivity is therefore not a one-sided phase-order theorem.
+
+The durable category boundary is: **ordinary/lossless passive scalarization preserves an order incompatible with Gamma, while higher regularization or dissipation removes that order without replacing it.**
 
 ## What remains possible
 
-A genuinely degenerating domain or graph topology for which no ordinary Nevanlinna family survives, non-trace-class scalarization, a regularized determinant with an independently controlled counterterm, unbounded renormalization, infinite negative index, or a nonseparable finite--archimedean construction remains outside the no-go chain.
+A source-forced spectral-sector restriction could make a higher-determinant factor one-sided on the actual admissible spectrum. A dissipative construction could carry a positive kernel, storage inequality, Herglotz measure, de Branges-type norm, or coupled finite--archimedean quadratic form whose sign survives scalarization. Singular/domain-changing or indefinite/infinite-index constructions remain outside the tested classes.
 
-Each route loses the inherited passive sign exactly where it exits the closed category. It must therefore specify the new object and prove positivity/coercivity after the category change rather than cite passivity of the approximants. Ordinary Fredholm determinants should no longer be listed as an unresolved escape.
+Each possibility needs an independent theorem fixing the admissible class **before** the Gamma target is fitted. A counterterm, dissipation profile, reference, or spectral sector chosen because it reproduces the desired sign is a representation, not an explanation of Weil positivity.
 
 ## Status / novelty
 
-Hardy weak-* compactness, Luzin--Privalov uniqueness, Schur/Nevanlinna Cayley theory, trace-class Fredholm determinants, and modified determinants are classical. The durable synthesis is the category boundary: **neither weak convergence, relation-valuedness, nor ordinary trace-class Fredholm scalarization creates a hidden Gamma-compatible passive class; genuine regularization leaves that class and forfeits its automatic sign.**
+Schur/Nevanlinna theory, Fredholm and modified determinants, positive-real/passive realization, and phase behavior of inner/dissipative systems are classical. The durable Mathia synthesis is the two-sided coercivity boundary: **category escape either retains too much passive order or loses the order entirely; a successful route must introduce a new source-native positive structure.**
 
 ## Falsification criterion
 
-Produce uniformly contractive scalar Schur boundary traces converging distributionally to the Gamma phase, an ordinary Nevanlinna relation family whose canonical normalized Cayley readout escapes Schur, or an operator-valued Schur family with analytic trace-class defect whose Fredholm determinant leaves the scalar Schur unit ball. Otherwise a surviving real-place mechanism must genuinely change analytic/sign category or couple finite and archimedean data before passive scalarization.
+Produce a lossless passive `det_m`, `m=1` or `2`, whose phase violates the established one-sided law; prove a universal one-sided phase theorem for `det_m`, `m>=3`, despite the pure-delay controls; or prove that ordinary dissipative Schur passivity forces one phase orientation despite WP-180's positive-real counterexample. Any such result would change this category boundary.

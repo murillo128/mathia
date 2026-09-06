@@ -1,33 +1,35 @@
-# MI-005 — Short-collar assembly is quantitatively Sobolev, with fixed-germ confinement as the remaining entry gate
+# MI-005 — Short-collar assembly reaches endpoint energy; the remaining gate is the conservative splice
 
-**Evidence level:** exact geometric accounting and counterexample through PF-186, plus uniform qualitative Sobolev rigidity through PF-188
+**Evidence level:** exact geometric accounting, rigidity, weak-endpoint, and endpoint transport results through PF-191
 
 ## Core intuition
 
-Above the trace endpoint, short-collar multiplicity, annular flux, and the normalized Killing kernel are no longer the main obstruction. PF-186 shows that the remaining nonlinear gate cannot be phrased as a generic `C^1` chart-entry theorem: exact symplectic maps can have vanishing metric strain and displacement while carrying order-one microscopic rotations in their derivative.
+The Prime-Flute comparison has moved beyond the question of whether infinitely many thin pieces or the Lambert bodies have enough integrability. Above the endpoint, PF-183--PF-188 reduce short-collar multiplicity to one fixed-germ Sobolev localization problem and show why generic `C^1` branch selection is false. At the endpoint, PF-189--PF-191 now show that the central thin sector and the exact-area body transport both have substantially better budgets than the coarse global estimates suggest.
 
-PF-187 identifies the correct regularity scale after boundary normalization. PF-188 sharpens that conclusion: **boundary normalization is not intrinsically required for qualitative marked `W^{1,r}` rigidity**. On a fixed positive-side collar mapped into one fixed larger annular germ, vanishing strain and collar mismatch force convergence to the canonical inclusion for every `r>1`. The actual unresolved entry condition is fixed-germ confinement, not boundary-to-boundary normalization.
+The unresolved object is therefore the **uncut conservative reassembly**: turn the endpoint body/collar energy into a fixed-germ exact-area splice with a linear cost, and then decide whether the critical gradient factors yield true weak trace class or a genuine logarithmic loss.
 
 ## Strongest justified principle
 
-PF-183 makes the infinitely many true short collars harmless once one uniform local splice estimate is charged to the already summable body energy. PF-184 proves zero annular flux, and PF-185 proves uniform marked Korn coercivity plus an energy-local exact-area cutoff inside a fixed `C^1` generating chart.
+PF-183 makes infinitely many true short collars harmless once one uniform local splice estimate is charged to the body energy. PF-184--PF-185 remove annular flux and linearized Killing obstructions and provide an energy-local exact-area cutoff inside a fixed `C^1` chart. PF-186 proves that such a chart cannot be obtained from small strain alone: Hamiltonian microtwists can have vanishing metric defect and displacement while retaining order-one microscopic derivative rotation.
 
-PF-186 rules out deriving that chart hypothesis from generic energy/topological data. Reflection-equivariant Hamiltonian microtwists can have metric deviation tending to zero even in `L^infinity`, zero flux, boundary identity, and `C^0` convergence, while the derivative stays order-one away from the identity on shrinking disks. Metric strain does not select a pointwise derivative branch.
+PF-187--PF-188 identify the correct weaker entry mechanism. On one fixed larger marked collar, vanishing strain and collar mismatch force `W^{1,r}` convergence to the canonical inclusion for every `r>1`; boundary normalization is not intrinsically needed, but fixed-germ confinement remains load-bearing.
 
-PF-187 shows that this flexibility disappears qualitatively in finite Sobolev norm for boundary-normalized maps. PF-188 proves that the same branch selection already holds for maps from a fixed inner annulus into a fixed larger annulus. Riemannian Reshetnyak rigidity gives an orientation-preserving isometric immersion in the limit, and the reflection marking plus the fixed positive-side target germ forces that immersion to be the canonical inclusion, uniformly through `L=0`.
+PF-189 then proves that the complete decoupled central short-collar first-resolvent sector is already `S_{1,infinity}` with a summable weak-endpoint tail. PF-190 shows that a **global** two-sided weighted `L^1` metric budget would imply `S_r` norms growing like `(r-1)^{-2}` and hence the conditional singular-value envelope `O(log^2 n/n)`. The square logarithm comes from two critical gradient-resolvent half-factors and is not known sharp.
 
-The fixed-germ condition is load-bearing. At the cusp limit, if the image is allowed to run arbitrarily deeper toward `x=0`, higher-winding exact local isometries provide genuine escape branches. Thus qualitative rigidity has moved the boundary again: **normalization at the boundary is removable, but confinement to one controlled germ is not yet removable.**
+PF-191 closes a previously coarse geometric input at exactly this endpoint. The explicit PF-179 exact-area Lambert map has pointwise defect decaying across the body; integrating the actual cross-section yields `d/cosh(a)` at `r=1`, and the corner Moser correction is even smaller when measured relative to the outer isometry. For the prime/shift sequence these costs are summable, and the assembled-body `L^1` budget plus weighted thick-transition budget follows.
+
+Thus the body transport does not explain a possible endpoint failure. **Any remaining loss must be created by fixed-germ collar localization or by the operator reassembly itself.**
 
 ## What remains possible
 
-The low-regularity route is now precise: prove that the actual canonical PF relative germ stays inside one fixed larger collar with a cost controlled by PF-183's local body energy, strengthen qualitative `W^{1,r}` convergence to an energy-linear modulus, and construct an exact-area localization with comparable cost. No separate boundary-normalization theorem is required merely to select the Sobolev branch.
+The low-regularity route is now sharply stated: prove endpoint fixed-germ confinement and an energy-linear exact-area splice on the actual canonical collar/body germ. If that yields weak-`S_2` control for each critical gradient half-factor, the full relative resolvent may reach weak `S_1`; if not, a source-faithful counterexample may show that the logarithmic envelope reflects a genuine assembly effect.
 
-The alternative is source-specific `C^1` entry derived from the explicit PF-179--PF-184 construction rather than from strain. The trace endpoint `r=1` remains separate, and even a completed `S_r`, `r>1`, comparison still needs a marked spectral observable that separates the prime flute from its shift clone.
+A source-specific `C^1` entry theorem derived from the explicit exact-area construction remains a distinct route. Either way, no arithmetic significance follows until a marked spectral observable separates the prime flute from its all-composite shift clone.
 
 ## Status / novelty
 
-The collar geometry, flux calculation, Korn estimate, Hamiltonian microtwist, and fixed-germ classification are exact line evidence; Riemannian Reshetnyak rigidity is classical prior art. The durable synthesis is the regularity boundary: **the post-multiplicity splice problem is quantitatively Sobolev; generic `C^1` rigidity is false, qualitative marked `W^{1,r}` rigidity does not require boundary normalization, and fixed-germ confinement is the remaining geometric entry gate.**
+The collar geometry, exact-area transports, Sobolev rigidity, weak-Schatten estimates, and endpoint bookkeeping are persisted line evidence; the analytic tools behind them are classical or previously audited. The durable synthesis is the boundary relocation: **short-collar multiplicity and Lambert-body endpoint energy are controlled; the live geometric/operator gate is the endpoint conservative splice and its critical reassembly.**
 
 ## Falsification criterion
 
-Produce fixed-germ reflection-marked collar maps with strain and collar mismatch tending to zero but staying a fixed positive `W^{1,r}` distance from the inclusion, invalidate PF-188's isometric-immersion classification, or prove that the actual canonical germ cannot be confined to any fixed larger collar even under the available source geometry. Otherwise the remaining gate is quantitative fixed-germ Sobolev localization or genuinely canonical `C^1` control.
+Show that PF-191's exact-area endpoint estimate fails on the prime/shift Lambert bodies; produce a contribution from the complete decoupled central family worse than PF-189's weak `S_1` bound; or prove that the actual canonical collar germ cannot satisfy any fixed-germ endpoint localization compatible with the existing body energy. Any such result would reopen an earlier boundary.

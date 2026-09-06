@@ -1,31 +1,33 @@
-# MI-012 — Hamming endpoint cancellation is a signed cross-degree resource, not shell magnitude
+# MI-012 — Hamming endpoint cancellation survives only in signed cross-degree structure beyond fixed local filtering
 
-**Evidence level:** exact source decomposition plus classical Landau--Selberg--Delange/Sathe--Selberg input through MC-111
+**Evidence level:** exact source decomposition, proportional-shell asymptotics, and Chebyshev transfer obstruction through MC-113
 
 ## Core intuition
 
-The Hamming deformation now exposes the endpoint obstruction across the entire natural shell scale. The shell coefficients remain positive through fixed proportional degree and across the turning window near `2 log log N`; direct truncations retain a boundary-sized remainder rather than the tiny Möbius endpoint. Taking norms of the shell magnitudes loses exactly the cross-degree signs that produce the endpoint.
+The Hamming deformation makes the Möbius endpoint a signed cross-degree resource. Positive shell bulk persists through every fixed proportional Sathe--Selberg scale, and the endpoint is obtained only after cancellation among those large degrees. Taking magnitudes before that cancellation loses the decisive information.
 
-The first signed local repairs do not solve this. A fixed finite filter that preserves parity but only cancels the locally flat shell profile to first order still leaves almost-square filtered coefficients, so taking absolute values after that filter merely relocates the same loss. The surviving radial resource must retain **higher-order or genuinely nonlocal signed interaction between many degrees before absoluteization**.
+This failure is now complete for every **fixed finite local parity filter**, not merely first-order differences. MC-112 shows that any fixed transfer polynomial reappears with almost-square amplitude on some off-center proportional shell. MC-113 then quantifies the first growing-filter escape: uniformly suppressing a fixed proportional ratio band by a fixed power of `N` while retaining parity already costs `Theta(log N)` filter range at the ideal transfer level.
 
 ## Strongest justified principle
 
-MC-107 extends the positive shell cascade to every fixed proportional Sathe--Selberg scale and identifies its peak near `k=2 log log N`. MC-109 shows that even in the critical turning regime an alternating prefix is asymptotically a fixed fraction of its boundary shell, with the omitted tail forced to cancel it. The endpoint is therefore not localized by stopping near the peak.
+MC-107--MC-109 identify the positive shell cascade, its turning scale near `2 log log N`, and the failure of alternating truncation to isolate the small endpoint. MC-110 proves that every positive diagonal shell certificate with arbitrary Hölder weights is bounded below by an actual almost-square shell.
 
-MC-110 proves a stronger information-loss statement. Every positive diagonal `L^p`/Hölder certificate, with arbitrary shell weights, is bounded below by the actual central shell and therefore remains `N^{2-o(1)}`. Parseval and the shell square function display the same almost-square energy. The missing resource is not a better radial weight; it is cancellation between different degrees before magnitudes are taken.
+MC-111 tests local signed preprocessing. Its first-order central calculation left higher-order zeros at `z=1` formally open. MC-112 removes that boundary by moving away from the flat saddle: at `k~2 beta log log N`, fixed shifts satisfy `C_{k+j}/C_k -> beta^{-j}`, so a finite filter has asymptotic response `A(beta^{-1})`. A nonzero polynomial cannot vanish on the continuum of positive ratios, and one may choose a surviving ratio arbitrarily near the peak while `C_k=N^{2-o(1)}`. Absoluteizing after the filter therefore recreates the same endpoint loss for every fixed finite order.
 
-MC-111 tests the first non-diagonal escape. For a fixed finite filter `A`, `A(-1)` is exactly its parity transfer and `A(1)` its response to a locally flat positive shell profile. If `A(1) != 0`, the central bulk survives directly. If `A(1)=0` but `A'(1) != 0`, the filtered central coefficients are still of order `N^2/log log N`, and their absolute variation remains almost square. Thus adjacent even/odd pairing and every fixed first-order local difference fail as endpoint certificates once their outputs are absoluteized.
+MC-113 asks how much range an adaptive filter needs even before source-uniformity is addressed. The exact exterior Chebyshev problem with `P(-1)=1` gives minimax response `1/T_r(3)` on `[1/2,2]`. Hence `N^{-delta}` uniform attenuation requires `r=Theta(log N)` and `r=o(log N)` can buy only `N^{-o(1)}` suppression somewhere on the band.
+
+The durable principle is therefore sharper: **finite local differencing cannot expose Möbius cancellation after absoluteization, and a growing local design must already pay logarithmic range before it can even hope for fixed-power uniform attenuation.**
 
 ## What remains possible
 
-A fixed filter with a zero of order at least two at `z=1` and `A(-1) != 0` is not yet classified. Neither are filters whose order/range grows with `N`, signed recurrences that control the filtered sequence without absoluteization, or non-radial/product-fiber relations that never collapse to Hamming degree.
+MC-113 does not prove that a logarithmic-range filter works on the true shell sequence. Growing-shift Sathe--Selberg uniformity, coefficient conditioning, and signed endpoint reconstruction remain independent arithmetic obligations. A source-specific recurrence could avoid uniform transfer suppression entirely by exploiting exact relations among the `C_{k,N}`.
 
-These are materially different possibilities. A higher-order zero may simply take more derivatives of the same smooth central profile and still leave an almost-square floor; that must be proved rather than assumed. A genuinely nonlocal relation could instead couple enough of the critical shell profile to transport parity directly.
+Non-radial product-fiber or bilinear structure also remains open because it may preserve signs and prime couplings that one-dimensional Hamming degree forgets. Those routes should be judged by the exact signed relation they retain, not by the size of the representation.
 
 ## Status / novelty
 
-The analytic asymptotics and finite-difference background are classical; the persisted Mathia contribution is the source-specific sequence of no-go boundaries. The durable synthesis is now: **Möbius endpoint information is stored in signed cross-degree coherence across the critical shell profile, and neither direct truncation, positive diagonal shell norms, nor first-order fixed local filtering preserves enough of that resource after absoluteization.** No improved Mertens estimate or RH consequence is claimed.
+Sathe--Selberg asymptotics, finite-difference transfer functions, and Chebyshev minimax are classical mechanisms. The persisted Mathia synthesis is the source-specific boundary: **all fixed local radial filters are closed after absoluteization, and sublogarithmic growing filters cannot uniformly buy a polynomial gain even at the ideal transfer level.** No Mertens or RH estimate follows.
 
 ## Falsification criterion
 
-Produce a valid direct cutoff in the proportional/critical shell regime whose retained prefix is already at the Möbius endpoint scale; construct a positive diagonal shell certificate with fixed polynomial saving despite MC-110; or exhibit a fixed parity-preserving first-order local filter whose absoluteized reconstruction beats the MC-111 floor. Otherwise the next radial mechanism must be higher-order/growing/nonlocal and must keep signed cross-degree cancellation visible.
+Exhibit a fixed nonzero parity-preserving filter whose response is `o(C_{k,N})` on every proportional shell; invalidate the exact transfer limit in MC-112; or produce a parity-normalized degree-`r` polynomial with sup norm on `[1/2,2]` below `1/T_r(3)`. Any such result would reopen the corresponding boundary.

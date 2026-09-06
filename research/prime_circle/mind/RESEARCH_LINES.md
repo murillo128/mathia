@@ -2,21 +2,23 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave fixed local cyclotomic amplitudes and their canonical scalar completions
+## Leave fixed local cyclotomic amplitudes and their scalar Fourier-sign classifiers
 
-**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`, `MI-009-signed-radial-interior-survives-only-in-ordered-structure-before-mellin-or-self-adjoint-boundary-collapse`, and `MI-010-anchored-holomorphic-jets-have-one-mellin-carrier`.
+**Linked intuitions:** `MI-001-anchor-required-but-local-anchor-is-classical`, `MI-009-signed-radial-interior-survives-only-in-ordered-structure-before-mellin-or-self-adjoint-boundary-collapse`, `MI-010-anchored-holomorphic-jets-have-one-mellin-carrier`, and `MI-011-scalar-fourier-zero-existence-is-deformation-dependent`.
 
-PC-179--PC-189 show that finite anchored jets, source-native refinement, linear filters, and fixed finite polynomial nonlinearities remain one cyclotomic/Euler/Mellin source carrier. PC-190 closes the most natural infinite-Taylor loophole: fixed integer exponentials and Laurent polynomials of the cyclotomic amplitude reduce to eventual quasipolynomial coefficients and finite Hurwitz/Barnes data after one Mellin scalarization.
+PC-179--PC-190 show that finite anchored jets, source-native refinement, linear filters, fixed finite polynomial nonlinearities, and fixed integer exponential/Laurent nonlinearities remain one cyclotomic/Euler/Mellin source carrier. The canonical scalar completions are now more sharply classified.
 
-The canonical scalar inversion completions are also classified at the level of zero existence. PC-191 proves that the uniquely inversion-even half-growth completion of every positive-integer reciprocal amplitude has strictly positive real Fourier transform. PC-192 shows that subtracting the asymptotic constant goes to the opposite extreme: every non-prime-power control shell then acquires nonzero real Fourier zeros from the common endpoint/cusp mechanism. Thus neither “no Fourier zeros” nor “some Fourier zeros” in one fixed shell provides a prime-selective RH mechanism.
+PC-191 proves strict Fourier positivity for the uniquely inversion-even half-growth reciprocal completion. PC-192 shows that minimal asymptotic subtraction creates real Fourier zeros on every non-prime-power shell. PC-193 completes the exponent-one classification: the minimally renormalized reciprocal has strictly negative Fourier transform exactly on prime-power shells, so its zero-free/sign property repackages the classical prime-power support already visible at `Phi_n(1)`.
 
-The local frontier must therefore leave this scalar class through quantitative zero-location relations, conductor/refinement-dependent infinite depth, source-forced signed combinations across shells, genuinely nonlocal angular/radial coupling, shell-dependent operators, all-shell/global structure, singular boundary data, or a genuinely second carrier.
+PC-194 then shows that this spectral feature is not intrinsic to the shell. The classifier persists for `0<alpha<=1`, but at the canonical quadratic reciprocal power `alpha=2` sufficiently large **prime shells themselves acquire real Fourier zeros** through a mesoscopic endpoint/refinement boundary layer. Scalar real-zero existence can therefore be changed by a free exponent deformation without introducing new arithmetic information.
 
-## Demand a source-forced relation among spectral data, not zero existence
+The local frontier must leave this scalar family through a source-forced exponent/operator, quantitative relations among spectral locations stable under natural deformations, genuinely cross-shell signed structure, nonlocal angular/radial coupling, singular boundary data, or a genuinely second carrier.
 
-A surviving Fourier/spectral proposal must identify what distinguishes prime/prime-power structure from the non-prime-power controls of PC-192. Mere appearance of a real zero is anti-selective, while the raw reciprocal completion is positive-definite.
+## Demand a source-forced relation among spectral data, not a selectable zero/sign pattern
 
-Useful candidates include a rigid zero-location/multiplicity law, a cross-shell relation whose coefficients are forced by the geometry, or a matrix/operator observable that cannot be reduced to one scalar reciprocal amplitude. Each must survive the exact mixed-prime controls before any critical-line interpretation is assigned.
+A surviving Fourier or spectral proposal must explain why its readout is fixed by the Prime-Circle geometry rather than chosen from a flexible scalar family. Mere positivity, negativity, sign change, or real-zero existence is now classified as deformation/control behavior.
+
+Useful candidates include a rigid cross-shell zero-location or multiplicity relation, a source-forced matrix/operator observable, or a quantitative scaling law that survives the exact prime-power/non-prime-power controls and the exponent deformation of PC-194. A freely selected reciprocal power cannot be assigned critical-line meaning after the fact.
 
 ## Introduce genuinely nonlocal mixed-prime or multi-carrier structure before scalarization
 
