@@ -23,6 +23,7 @@ based_on:
   - research/prime_flute/findings/PF-185-reflection-marked-korn-coercivity-removes-linearized-collar-splice-kernel.md
   - research/prime_flute/findings/PF-186-small-exact-symplectic-collar-strain-does-not-force-c1-chart-entry.md
   - research/prime_flute/findings/PF-187-boundary-normalized-marked-collar-strain-is-uniformly-qualitatively-sobolev-rigid.md
+  - research/prime_flute/findings/PF-188-fixed-germ-marked-collar-strain-is-qualitatively-sobolev-rigid-without-boundary-normalization.md
 ---
 
 # Does the prime/shift relative resolvent have the sharp Schatten threshold `S_r`, `r>1`?
@@ -33,11 +34,11 @@ The operator-theoretic endpoints are already separated. PF-112 shows that the ca
 
 PF-177--PF-182 construct the exact-area body/collar ingredients and remove the volume, Lambert-body, artificial-split, cusp, and distinguished decomposition-cuff interfaces. PF-183 then shows that the complete family of true PF-138 short collars creates no additional multiplicity loss if each remaining splice is confined to its fixed thick slab and is charged to the **actual local body energy**. PF-184 removes annular flux: the canonical relative germ is exact symplectic. PF-185 removes the linearized/Killing-field kernel under the zero-twist reflection and proves the desired energy-local cutoff once the germ lies in one fixed `C^1` generating neighborhood.
 
-PF-186 rules out the tempting generic route to that final hypothesis. Even on the normalized PF-185 slab, exact symplectic reflection-equivariant boundary-fixed maps can have zero flux and metric deviation tending to zero in `L^infinity` while their derivative equals `-I` at reflected interior points. Hence neither local `L^r` energy nor even small pointwise metric strain selects the near-identity derivative branch in `C^1`.
+PF-186 rules out a generic shortcut to that final `C^1` hypothesis. Exact-symplectic reflection-equivariant boundary-fixed maps can have metric strain tending to zero even in `L^infinity` while their derivative retains the wrong branch on shrinking disks. PF-187 then shows that this is not a qualitative `W^{1,r}` obstruction after boundary normalization: Riemannian Reshetnyak compactness plus the PF-142 marking forces convergence to the identity uniformly through `L=0`.
 
-PF-187 now closes the corresponding **qualitative Sobolev** question after boundary normalization. Kupferman--Maor--Shachar's Riemannian Reshetnyak theorem, combined with compactness of the normalized metric family `g_L`, `0<=L<=mu_*`, gives a modulus uniform through the cusp limit: a boundary-preserving reflection-equivariant annulus diffeomorphism whose differential distortion and collar-parameter mismatch tend to zero must approach a global isometry in `W^{1,r}`. The only reflection-compatible orientation-preserving isometries are the identity and the half-turn, and the ordered PF-142 marking removes the half-turn. Thus PF-186's localized rotations are a `C^1` obstruction but not a qualitative `W^{1,r}` obstruction.
+PF-188 removes one more artificial prerequisite. Reshetnyak's basic conclusion is an isometric **immersion**, so the relative germ need not first be turned into a boundary-preserving self-map merely to obtain qualitative marked Sobolev rigidity. On nested fixed positive-side slabs `A=[1,5/4]xS^1` inside `B=[3/4,3/2]xS^1`, every reflection-marked limiting isometric immersion is the canonical inclusion. At `L>0` hyperbolic translation length fixes the winding; at `L=0` higher cusp windings have the form `(x,theta)->(x/k,k theta+c)` and leave the fixed target slab when `k>=2`. Thus the qualitative route now needs only **fixed-germ confinement**, not boundary-to-boundary normalization.
 
-This does **not** yet supply PF-183 equation (11). PF-187 is qualitative and assumes that the relative germ has already been normalized as a boundary-preserving self-map of the fixed annulus. It gives no linear estimate in the local strain, no controlled boundary-normalization step for the raw PF-179--PF-184 germ, and no exact-symplectic cutoff. Conti--Dolzmann--Müller's optimal quantitative rigidity theorem supplies the desired linear scaling modulo a global isometry on compact manifolds to themselves, but the audited theorem does not state the boundary version needed here.
+This still does **not** supply PF-183's energy-linear splice estimate. PF-188 gives no rate, does not prove the actual PF-179--PF-184 germ stays in one fixed larger target slab, and does not construct an exact-symplectic cutoff. Conti--Dolzmann--Müller's optimal quantitative rigidity theorem supplies the desired linear scaling modulo a global isometry on compact manifolds to themselves, but the audited theorem does not state the annulus-with-boundary/localization result needed here.
 
 ## Research question
 
@@ -50,7 +51,9 @@ Can one construct, for every `r>1`, one smooth complete area-preserving marking 
 
 while PF-112 keeps the endpoint outside `S_1`?
 
-After PF-184--PF-187, the low-regularity route is no longer blocked by a possible qualitative loss of Sobolev rigidity at the cusp limit. The precise missing local theorem is now an **energy-linear boundary-normalization and marked rigidity estimate**, followed by an **energy-linear exact-symplectic localization**. The alternative route remains to prove that the actual canonical PF-179--PF-184 germ has additional structure forcing entry into PF-185's fixed `C^1` generating chart.
+After PF-184--PF-188, the low-regularity route is no longer blocked by annular flux, a linearized Killing kernel, qualitative Sobolev degeneration at the cusp, or the need to boundary-normalize the germ before applying compactness. The precise missing local theorem is now an **energy-linear marked rigidity/localization estimate on a fixed nested germ**, followed by an **energy-linear exact-symplectic cutoff**. Before invoking that theorem for the canonical maps, one must also establish the weaker fixed-germ confinement required by PF-188, or another source-specific condition that rules out the cusp winding/drift escape.
+
+The alternative route remains to prove that the actual canonical PF-179--PF-184 germ has additional source-specific regularity forcing entry into PF-185's fixed `C^1` generating chart. PF-186 shows that such regularity cannot be inferred from strain, exactness, zero flux, and reflection alone.
 
 ## Why it may matter
 
@@ -63,11 +66,11 @@ A\in\mathcal S_r\ \text{for every }r>1,
 
 for the exact all-composite shift clone. That would be a strong negative arithmetic control: this entire relative-resolvent Schatten hierarchy would fail to distinguish literal primality, so any RH-relevant mechanism would have to live in finer data not fixed by the clone equivalence.
 
-A negative answer is now correspondingly constrained. It must expose a genuine quantitative localization obstruction, a boundary-normalization cost not absorbed by local body energy, a trace mode not absorbed by the marked Sobolev branch, or an operator-level amplification. It cannot be blamed on volume mismatch, global collar multiplicity, annular flux, the reflection-marked linearized kernel, qualitative Sobolev degeneration as `L->0`, or a supposed automatic implication from small strain to `C^1` chart entry.
+A negative answer is now correspondingly constrained. It must expose a genuine quantitative localization obstruction, failure of fixed-germ confinement for the canonical map, a trace mode not absorbed by the marked Sobolev branch, or an operator-level amplification. It cannot be blamed on volume mismatch, global collar multiplicity, annular flux, the reflection-marked linearized kernel, qualitative Sobolev degeneration as `L->0`, or boundary-to-boundary normalization as such.
 
 ## Decisive test
 
-Freeze PF-179--PF-187 rather than reopening their solved modules. Use PF-138 for the full tail family and PF-177's exact area coordinate. On PF-183's fixed thick slab, seek an exact-area interpolation joining the PF-177 core gauge to the canonical body germ with
+Freeze PF-179--PF-188 rather than reopening their solved modules. Use PF-138 for the full tail family and PF-177's exact area coordinate. On PF-183's fixed thick slab, seek an exact-area interpolation joining the PF-177 core gauge to the canonical body germ with
 
 \[
 E_r(\operatorname{splice}_\eta)
@@ -76,36 +79,38 @@ E_r(\operatorname{splice}_\eta)
 
 on both source and inverse/target sides.
 
-For the low-regularity route, separate three quantitative operations rather than treating rigidity as one black box.
+For the low-regularity route, separate the remaining operations instead of treating rigidity as one black box.
 
-First, take the raw canonical PF-184 annular germ and normalize it to a self-diffeomorphism of the fixed PF-183 slab carrying boundary to boundary, while proving that the normalization cost is bounded by the same local body-strain energy plus `|t|^r`. PF-187 must not be invoked before this boundary-normalization hypothesis is actually established.
+First, prove that the actual canonical PF-179--PF-184 relative germ on the PF-183 inner slab is contained, for all sufficiently short tail collars, in one fixed slightly larger positive-side target germ of the kind used in PF-188. An equivalent source-specific confinement condition that excludes the cusp power immersions is also acceptable. Do **not** spend local energy merely to force boundary to boundary unless a later construction genuinely needs it; PF-188 shows that Reshetnyak compactness itself does not.
 
-Second, prove, or decisively refute, a **linear** marked rigidity estimate on the boundary-normalized fixed annulus of the schematic form
+Second, prove or decisively refute a **linear** marked rigidity/localization estimate on that fixed nested germ, schematically
 
 \[
-\|H-\operatorname{id}\|_{W^{1,r}}
+\|H-\iota\|_{W^{1,r}(A)}
 \le
 C_r\left(
-\|\delta_{g_L,H^*g_{L^+}}\|_{L^r}+|t|
+\|\delta_{g_L,H^*g_{L^+}}\|_{L^r(A)}+|t|
 \right),
 \]
 
-with `C_r` uniform for `0<=L<=mu_*`. PF-187 supplies the qualitative compactness control and identity selection, so a counterexample to the desired linear estimate must exhibit a genuinely quantitative loss rather than merely a drifting isometry branch or a cusp-family degeneration. Conti--Dolzmann--Müller supplies the target optimal scaling in the boundaryless/global setting; the missing bridge is the marked annulus-with-boundary version with the required uniform constant.
+with `C_r` uniform for `0<=L<=mu_*`. PF-188 supplies the qualitative compactness control and identity selection without boundary normalization, so a counterexample to the desired linear estimate must exhibit a genuine **rate** loss or an escape from the fixed-germ hypothesis rather than a drifting isometry branch.
 
-Third, assuming that marked `W^{1,r}` estimate, construct an exact-symplectic cutoff between the core identity and outer canonical germ with the same linear `W^{1,r}` cost. This is the genuinely symplectic part of the low-regularity route; neither PF-187 nor a geometric-rigidity theorem by itself provides the Hamiltonian/exact-area interpolation.
+Third, from that marked `W^{1,r}` control, construct an exact-symplectic cutoff between the core identity and outer canonical germ with the same energy-linear cost. This is the genuinely symplectic part of the low-regularity route; neither PF-187/PF-188 nor a geometric-rigidity theorem provides the Hamiltonian/exact-area interpolation automatically.
 
-The alternative positive route remains **canonical `C^1` chart entry**: derive a uniform near-identity bound for the actual relative germs from the explicit PF-179--PF-182 assembly plus PF-142 marking/PF-184 exactness, not from metric strain alone; then PF-185's generating-function cutoff applies.
+The alternative positive route remains **canonical `C^1` chart entry**: derive derivative equicontinuity or another stronger estimate from the explicit PF-179--PF-182 assembly plus PF-142 marking/PF-184 exactness; combine it with the now boundary-free qualitative `W^{1,r}` control when useful; then PF-185's generating-function cutoff applies. The extra derivative control must be source-specific because PF-186 kills the generic implication.
 
-PF-143--PF-145 remain the interface falsifiers, PF-186 is the `C^1` chart-entry falsifier, and PF-187 is now the qualitative Sobolev falsification control. A claimed proof that begins with only `delta->0`, exactness, zero flux, and reflection and concludes `C^1` closeness is invalid. Conversely, a claimed low-regularity obstruction cannot consist only of a sequence whose strain tends to zero while its marked boundary-normalized `W^{1,r}` distance stays bounded away from zero: PF-187 rules that out. A decisive negative result must show an unavoidable **rate** loss or localization cost for the canonical germ.
+PF-143--PF-145 remain the interface falsifiers, PF-186 remains the generic `C^1` chart-entry falsifier, PF-187 is the boundary-normalized qualitative Sobolev control, and PF-188 is the nested-germ version that removes boundary normalization while exposing the exact cusp-winding escape if confinement is dropped. A claimed low-regularity obstruction cannot consist only of vanishing strain with marked `W^{1,r}` distance bounded away from the inclusion **while the maps remain in PF-188's fixed larger germ**. A decisive negative result must show an unavoidable rate/localization loss or prove that the canonical maps cannot satisfy the fixed-germ premise at the required scale.
 
 ## Evidence boundary
 
 No complete weighted area-preserving marking is established. PF-183 remains conditional on the local splice estimate. PF-184 proves exactness but no quantitative cutoff. PF-185 proves marked coercivity and the cutoff estimate only after fixed `C^1` chart entry. PF-186 proves that such entry is not a consequence of the generic energy/topology/marking hypotheses, but it does **not** show that the canonical prime/shift germ realizes its counterexample and does not refute a low-regularity splice theorem.
 
-PF-187 proves only a uniform **qualitative** `W^{1,r}` modulus for boundary-normalized marked annulus diffeomorphisms. It does not provide the per-collar linear estimate needed for summability and does not establish that the raw canonical germ satisfies the boundary-normalization hypothesis at controlled cost. Kupferman--Maor--Shachar therefore close the qualitative compactness question, not the quantitative PF-183 budget. Conti--Dolzmann--Müller give the desired optimal `W^{1,r}`-versus-strain scaling modulo isometries on compact manifolds to themselves, but the required boundary extension and the subsequent exact-symplectic localization remain unproved here.
+PF-187 proves only a uniform qualitative `W^{1,r}` modulus after boundary normalization. PF-188 strengthens the qualitative statement to maps of an inner slab into a fixed larger positive-side annulus, so boundary-to-boundary normalization is no longer part of the qualitative gate. But PF-188 deliberately retains fixed-germ confinement: at `L=0`, higher-winding exact cusp immersions escape toward `x=0` if that condition is removed. Neither finding provides the per-collar linear estimate needed for summability, and neither constructs the exact-symplectic localization.
+
+Kupferman--Maor--Shachar therefore close the relevant compactness question, not the quantitative PF-183 budget. Conti--Dolzmann--Müller give the desired optimal `W^{1,r}`-versus-strain scaling modulo isometries on compact manifolds to themselves, but the required local annulus/boundary bridge and the subsequent exact-symplectic localization remain unproved here.
 
 PF-175 therefore remains conditional, and neither `S_r` membership for all `r>1` nor a counterexample above the trace endpoint has been proved.
 
 ## Research disposition
 
-The clue remains `accepted`. The live problem is now factored more sharply into **energy-linear boundary normalization**, **uniform linear marked Sobolev rigidity**, and **energy-linear exact-symplectic localization**. PF-187 establishes that the normalized collar family itself has no qualitative Sobolev degeneration through `L=0`, so further work should target quantitative constants and the symplectic splice rather than another compactness argument. The canonical `C^1` route remains available if the explicit prime/shift assembly supplies stronger information. PF-183 handles the infinite collar family automatically once either local route yields the required estimate. The clue resolves only when those local splices assemble to the complete PF-175 hypothesis and yield the density-unitary `S_r`, `r>1`, classification, or when a genuine unavoidable obstruction to that local energy estimate is proved.
+The clue remains `accepted`. The live problem is now factored into **fixed-germ confinement**, **uniform energy-linear marked Sobolev rigidity/localization**, and **energy-linear exact-symplectic cutoff**. PF-188 removes controlled boundary normalization from the qualitative part of the gate and identifies the cusp power immersions as the exact escape that a confinement hypothesis must exclude. Further work should therefore attack the quantitative rate and symplectic splice, or extract stronger source-specific regularity from the canonical prime/shift construction. PF-183 handles the infinite collar family automatically once either local route yields the required estimate. The clue resolves only when those local splices assemble to the complete PF-175 hypothesis and yield the density-unitary `S_r`, `r>1`, classification, or when a genuine unavoidable obstruction to that local energy estimate is proved.
