@@ -32,7 +32,7 @@ P_k e^{i\xi_k r}.
 \tag{1}
 \]
 
-Since `supp chi subset (-1,1)` and
+Since `supp(chi) subset (-1,1)` and
 
 \[
 M(\xi_{k+1}-\xi_k)=\pi,
@@ -126,7 +126,7 @@ I_k
 \tag{8}
 \]
 
-The centers of consecutive sidebands have scaled separation `pi`, while each sideband has scaled radius one. Hence `I_k cap I_l` is empty for `k != l`. If `theta in I_k`, equation (1) collapses to
+The centers of consecutive sidebands have scaled separation `pi`, while each sideband has scaled radius one. Hence the `I_k` are pairwise disjoint. If `theta in I_k`, equation (1) collapses to
 
 \[
 \boxed{
@@ -216,8 +216,7 @@ Then the triangle inequality and (3) give the exact conditional transfer
 \sum_k|P_k^{\rm per}|^2
 \int_{U_{k,B}}(\pi k+u)^4|\chi(u)|^2du
 \right]^{1/2}
-\le
-\varepsilon_{\rm src}+arepsilon_{\rm int}.
+\le \varepsilon_{\rm src}+\varepsilon_{\rm int}.
 }
 \tag{15}
 \]
@@ -257,7 +256,7 @@ A genuine interface theorem is still missing. XF-073 controls a relative quotien
 
 ## 5. Stress tests and failure boundary
 
-The support separation is load-bearing. More generally, the argument works whenever the scaled support radius of `chi` is strictly below `pi/2`. If two neighboring translated supports overlap, equation (1) contains two or more center harmonics at the same `theta`; cross terms then depend on `r`, and center averaging becomes genuinely different from a single slice. The present Mathia window has the stronger fixed support `supp chi subset (-1,1)`, so it has a uniform separation margin.
+The support separation is load-bearing. More generally, the argument works whenever the scaled support radius of `chi` is strictly below `pi/2`. If two neighboring translated supports overlap, equation (1) contains two or more center harmonics at the same `theta`; cross terms then depend on `r`, and center averaging becomes genuinely different from a single slice. The present Mathia window has the stronger fixed support `supp(chi) subset (-1,1)`, so it has a uniform separation margin.
 
 The exact node formula (4) also uses `chi(0) != 0`, already part of the XF-069 admissible window. A clipped band `B` causes no difficulty for (3): it merely replaces the full sideband weight by `U_{k,B}` exactly as in XF-070.
 
