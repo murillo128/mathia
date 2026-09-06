@@ -305,11 +305,97 @@ of the observation window.
 Therefore the high-frequency branch now has a sharper information requirement. A candidate above the short-interval-PNT horizon cannot obtain new arithmetic content merely by integrating over a phase band whose normalized width diverges. To escape this finding it must retain at least one of the following genuinely different structures:
 
 - a prescribed or otherwise rigid **pointwise** high frequency;
-- a phase window of bounded effective width;
+- a phase window of bounded effective width with a sharply prescribed center;
 - coefficients or a target that themselves vary with the phase parameter in a justified arithmetic way;
 - a joint/nonlocal construction not reducible to a single normalized affine prime sum.
 
-The first two remain live. This finding does not bridge the unresolved pointwise range between current short-interval technology and genuinely ultra-oscillatory estimates.
+The first two remain live only as rigid observation problems. This finding does not bridge the unresolved pointwise range between current short-interval technology and genuinely ultra-oscillatory estimates.
+
+## 5a. Diffuse bounded-width center selection is also universally flat
+
+A bounded local width by itself is not enough to preserve arithmetic information if its center is selected diffusely over a growing frequency range. This follows exactly from the broad-window theorem above by a sliding-window/Fubini argument.
+
+Pass to the normalized affine phase coordinate
+
+\[
+u=\rho_X t,\qquad \rho_X=\frac{h_X}{X+h_X},
+\]
+
+and write
+
+\[
+\widetilde F_X(u)=F_{X,h_X,c}(u/\rho_X).
+\]
+
+For every interval `J` of normalized length `T`, the change of variables gives
+
+\[
+\frac1T\int_J|\widetilde F_X(u)|^2du
+=
+\frac1L\int_I|F_{X,h_X,c}(t)|^2dt,
+\qquad L=\frac{T}{\rho_X},
+\]
+
+so the effective width in the main theorem is exactly `Delta_X=T`.
+
+Fix `D<infinity`, let `0<delta_X<=D`, and define the normalized local-window energy at center `c` by
+
+\[
+A_X(c)=\frac1{\delta_X}
+\int_{c-\delta_X/2}^{c+\delta_X/2}
+|\widetilde F_X(u)|^2du.
+\]
+
+Let `J_X` be any center interval of length `T_X`, and enlarge it by half the local width:
+
+\[
+J_X^+=J_X+[-\delta_X/2,\delta_X/2],
+\qquad |J_X^+|=T_X+\delta_X.
+\]
+
+Tonelli/Fubini gives the exact domination
+
+\[
+\begin{aligned}
+\frac1{T_X}\int_{J_X}A_X(c)dc
+&=\frac1{T_X\delta_X}
+\int_{J_X^+}|\widetilde F_X(u)|^2
+\,\big|J_X\cap[u-\delta_X/2,u+\delta_X/2]\big|\,du\\
+&\le
+\frac1{T_X}\int_{J_X^+}|\widetilde F_X(u)|^2du\\
+&=\frac{T_X+\delta_X}{T_X}
+\frac1{T_X+\delta_X}
+\int_{J_X^+}|\widetilde F_X(u)|^2du.
+\end{aligned}
+\]
+
+Therefore the main theorem implies, uniformly in the location of `J_X`, in `h_X`, and in every bounded coefficient sequence,
+
+\[
+\boxed{
+T_X\to\infty,\quad 0<\delta_X\le D
+\quad\Longrightarrow\quad
+\frac1{T_X}\int_{J_X}A_X(c)dc\to0.
+}
+\]
+
+By Markov's inequality, for every fixed `epsilon>0`,
+
+\[
+\boxed{
+\frac1{T_X}
+\big|\{c\in J_X:A_X(c)>\epsilon\}\big|
+\longrightarrow0.
+}
+\]
+
+The interval `J_X` may be translated arbitrarily. In particular one may take `J_X=[R_X,R_X+T_X]` with `R_X\to\infty`. Thus **density one of the centers in every long escaping block have vanishing bounded-width local energy**, for every bounded target. A probabilistic or fuzzy center choice spread over a diverging normalized range consequently loses the target just as surely as one broad phase window.
+
+The simplest matched control is `c_q\equiv1`. Its zero-frequency coefficient mean is exactly `1` for every `X`, yet the preceding statement says that most centers in any sufficiently long, arbitrarily far-out block have arbitrarily small local `L^2` energy. Hence bounded-width flattening at a typical escaping center cannot, by ambient Fourier geometry alone, imply arithmetic cancellation at zero frequency.
+
+This does **not** rule out a center sequence chosen by a rigid arithmetic rule. Exceptional centers are permitted, just as the main mean-square theorem permits exceptional phase points. The surviving bounded-width route is therefore narrower than merely “let the center escape”: it needs a source-forced or otherwise canonical pinning mechanism that can select exceptional local coherence without averaging over a diverging family of possible centers.
+
+No novelty is claimed for the sliding-window estimate itself. It is an elementary Tonelli/Fubini corollary of the already-audited broad-window bound. The durable content is the line-specific information-loss boundary: center uncertainty over a diverging normalized range is enough to re-enter the universal flattening regime even when each observed window has fixed positive width.
 
 ## 6. Prior art and novelty audit
 
@@ -318,18 +404,19 @@ The ingredients are established and are not claimed as discoveries.
 - `PL-081` already derives and audits the required dimension-two prime-pair upper-bound sieve and the bounded-average local factor `mathfrak S_+(d)`, citing Halberstam--Richert and Green--Tao as standard sieve/harmonic-analysis anchors.
 - `PL-072` and `PL-077` already place finite-time mean squares of logarithmic frequency systems under the Montgomery--Vaughan/Gallagher nonharmonic-Fourier umbrella. The present calculation changes the frequency set to the **affine** values `log(1+h/q)` and tracks the exact scale `h/(X+h)` used by the current affine branch.
 - Green--Tao's Selberg-sieve restriction theory and the broad large-sieve literature are close prior art for the general principle that prime-supported exponential systems become controllable after suitable averaging. A targeted search did not locate a reason to regard the displayed affine-window estimate as a novel theorem; it is best classified as an exact line-specific synthesis of classical ingredients.
+- The diffuse-center corollary in Section 5a adds no external harmonic-analysis theorem: it is only Tonelli/Fubini, followed by Markov's inequality, applied to the preceding uniform mean-square estimate. It is stored because it closes a distinct observation loophole, not as a novelty claim.
 
 The important distinction from `PL-081` is the observable and therefore the threshold. `PL-081` studies the **whole prime Gram spectrum** and needs phase resolution beyond the mean prime-gap scale to force bulk diagonalization. Here the normalized scalar readout carries a factor `M_X^{-2}`; after summing the sieve-controlled pair kernel, every diverging affine phase width already forces its averaged `L^2` mass to zero. No statement about operator-norm Gram convergence follows.
 
 ## 7. Adversarial checks and failure modes
 
 - **Mean square is not pointwise cancellation.** The theorem permits exceptional phase values. Indeed, for an arbitrary chosen `t_0`, the programmable coefficients `c_q=e^{-it_0\lambda_h(q)}` make `F(t_0)=1`. Therefore no coefficient-blind pointwise theorem can be inferred from the window estimate.
-- **The interval width, not its center, is the control parameter.** Moving the entire window to arbitrarily large frequency changes only harmless phases in the kernel. A high center with bounded `Delta_X` is not covered by the asymptotic flattening conclusion.
+- **The interval width, not its center, is the primary broad-window control parameter.** Moving one fixed bounded-width window to arbitrarily large frequency does not by itself trigger the main asymptotic. Section 5a only says that such windows are flat for density one of the centers when the possible centers themselves range diffusely over a diverging normalized interval.
 - **Macroscopic-band localization is deliberate.** The derivative comparison is uniform on `aX<q<=bX`. A full `q<=X` statement can be assembled by dyadic decomposition plus control of the small-prime mass, but that adds no new arithmetic mechanism and is not needed for the falsification result.
 - **The pair-sieve input is upper-bound information only.** No Hardy--Littlewood prime-pair asymptotic, pair-correlation conjecture, or RH input is used.
 - **Bounded coefficients are essential to the stated uniformity.** Unbounded weights such as raw `Lambda(q)` require renormalization and can route back into the weighted correlation/explicit-formula channels audited elsewhere in the line.
 - **No continuation is present.** The entire argument is finite Fourier analysis plus an unconditional sieve estimate. It cannot by itself single out `Re(s)=1/2` or distinguish the rational zeta zero divisor from a matched sparse control with comparable pair-count bounds.
-- **No claim is made about bounded-width high-frequency windows.** Those are precisely where a pointwise or locally coherent arithmetic target could still survive this averaging obstruction.
+- **No coefficient-blind claim is made about a rigid prescribed bounded-width center.** Such a center can lie in the exceptional zero-density set left by Section 5a. Showing that an arithmetic rule pins a center there, or showing target cancellation on that local window, requires additional target-specific information.
 
 ## Consequence
 
@@ -344,4 +431,6 @@ The affine/Kronecker branch has now separated a pointwise arithmetic frontier fr
 }
 \]
 
-Accordingly, a surviving non-Haar mechanism should not spend further effort on broad high-frequency phase averages of a single affine prime sum. The live frequency questions are now **pointwise or bounded-width**, or must introduce a justified joint/completed coupling that changes the one-sum Fourier geometry before the averaging step.
+The same information loss reappears if one keeps the observed width bounded but then averages or fuzzes its center across a diverging normalized range: density one of those local windows flatten for every bounded target, including the matched control with coefficient mean `1`.
+
+Accordingly, a surviving non-Haar mechanism should not spend further effort on broad high-frequency phase averages or on diffusely selected moving centers of a single affine prime sum. The live frequency questions are now **pointwise or sharply pinned bounded-width**, or must introduce a justified joint/completed coupling that changes the one-sum Fourier geometry before the averaging step.
