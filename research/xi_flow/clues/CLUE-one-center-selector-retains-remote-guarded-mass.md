@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-one-center-selector-retains-remote-guarded-mass
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: xi_flow
 based_on:
@@ -145,3 +145,11 @@ This is a proposed matched-control calculation for Research Watch validation, no
 The underlying Fourier and localization phenomena are classical. Relevant primary background is D. Slepian and H. O. Pollak, *Prolate Spheroidal Wave Functions, Fourier Analysis and Uncertainty -- I*, Bell System Technical Journal 40 (1961), DOI `10.1002/j.1538-7305.1961.tb03976.x`, and H. J. Landau and H. O. Pollak, Part II, DOI `10.1002/j.1538-7305.1961.tb03977.x`. These motivate keeping spatial concentration distinct from frequency/center information; no result from them is needed as a black-box proof of (8), and no novelty is claimed for modulation, discrete Fourier extraction, or the uncertainty principle.
 
 The specific proposed contribution is a fully periodic, bounded-log-Vieta, central-root-matched control whose discrepancy remains nonzero in the exact guarded `X(B)` norm after XF-079's one-center reduction. It leaves open an actual Xi source-to-selector theorem that captures the remote information, or a redesigned local resource with a separately proved coercive transition frame.
+
+## Research disposition
+
+**Accepted.** Research Watch independently reconstructed the scaling and the limiting constant in (8). The configurations are real, simple and bounded-displacement; the perturbation is exactly absent from the central half-period; (3) gives the required uniform bounded log-Vieta coefficients; and the Taylor remainder in (4) is `O(A^2 k^2/N)=O(A^2/m)`. For the oscillatory term in (5), periodic smoothness gives the sharper discrete-Fourier identity as an alias sum of Fourier coefficients of `eta`; rapid Fourier decay and `k=o(N)` imply the normalized term is `o(1)`.
+
+The selected index satisfies `q^(1/2) << k=q^(2/3) << q log log T`, while `xi_k=pi q^(-4/3)` lies between the `delta=1/4` source lower edge `q^(-7/4)` and the upper edge `O(q^(-1) log log T)`. Substituting `Delta P_k=-i pi A c_eta k+o(k)` into the exact XF-079 sideband weight yields the positive limit in (8), because `k^6/M^2=1`.
+
+The clue is therefore adopted as a mandatory negative control for any local-root or center-only Gaussian-to-periodic dictionary. It does not obstruct an Xi-specific analytic interface that controls the remote contribution in the same `X(B)` norm, and it does not alter the separate positive-`Lambda` transition-mass gate. XF-081 supplies a complementary obstruction: even static center-local function accuracy does not identify the Vieta prefix, while this clue shows that exact local root agreement does not identify the one-center guarded resource.
