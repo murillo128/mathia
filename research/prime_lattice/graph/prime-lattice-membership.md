@@ -66,3 +66,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_lattice/findings/PL-183-smooth-target-weight-kronecker-flattening|PL-183]]
 - [[research/prime_lattice/findings/PL-184-bounded-variation-target-kronecker-flattening|PL-184]]
 - [[research/prime_lattice/findings/PL-185-siegel-walfisz-congruence-target-kronecker-flattening|PL-185]]
+- [[research/prime_lattice/findings/PL-186-shifted-prime-kubilius-mobius-tail-barrier|PL-186]]
+- [[research/prime_lattice/findings/PL-187-affine-prime-phase-window-l2-flattening|PL-187]]
+- [[research/prime_lattice/findings/PL-188-shifted-prime-tail-sieve-parity-barrier|PL-188]]
+- [[research/prime_lattice/findings/PL-189-bounded-effective-window-fourier-uniqueness|PL-189]]

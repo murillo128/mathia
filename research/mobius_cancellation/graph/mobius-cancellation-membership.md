@@ -82,3 +82,7 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/mobius_cancellation/findings/MC-102-diagonal-shell-closes-square-root-hamming-transition|MC-102]]
 - [[research/mobius_cancellation/findings/MC-103-shrinking-low-bias-linear-reconstruction-cost|MC-103]]
 - [[research/mobius_cancellation/findings/MC-104-moving-hamming-window-width-amplitude-tradeoff|MC-104]]
+- [[research/mobius_cancellation/findings/MC-105-fixed-degree-hamming-shell-cascade|MC-105]]
+- [[research/mobius_cancellation/findings/MC-106-sathe-selberg-shell-cascade-reaches-subloglog-degree|MC-106]]
+- [[research/mobius_cancellation/findings/MC-107-proportional-hamming-shell-profile|MC-107]]
+- [[research/mobius_cancellation/findings/MC-108-supercritical-hamming-tail-last-shell-law|MC-108]]

@@ -65,3 +65,6 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/visual_exploration/findings/VIS-059-overlap-collisions-are-periodic-cylinder-masses|VIS-059]]
 - [[research/visual_exploration/findings/VIS-060-fixed-window-control-only-fisher-certificate|VIS-060]]
 - [[research/visual_exploration/findings/VIS-061-independent-control-replicate-l1-radius|VIS-061]]
+- [[research/visual_exploration/findings/VIS-062-simplex-replicate-l1-dimension-penalty|VIS-062]]
+- [[research/visual_exploration/findings/VIS-063-quadratic-markov-witness-paired-control-certificate|VIS-063]]
+- [[research/visual_exploration/findings/VIS-064-hybrid-independent-scale-transfer-error-bound|VIS-064]]

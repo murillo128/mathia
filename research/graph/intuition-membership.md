@@ -101,6 +101,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
 - [[research/visual_exploration/mind/intuition/MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat]]
 - [[research/visual_exploration/mind/intuition/MI-003-overlap-uncertainty-must-be-separated-from-residual-geometry]]
+- [[research/visual_exploration/mind/intuition/MI-004-dimension-free-confirmation-comes-from-narrowing-the-destination-question]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]
@@ -115,6 +116,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-010-pair-correlation-slack-is-a-shared-exceptional-budget]]
 - [[research/weil_inertia/mind/intuition/MI-011-local-nonlinearity-is-lost-by-a-universal-scalar-tax]]
 - [[research/weil_inertia/mind/intuition/MI-012-affine-vector-retention-is-still-scalarization-at-the-witness]]
+- [[research/weil_inertia/mind/intuition/MI-013-exceptional-populations-have-finite-spectral-screening-rank]]
+- [[research/weil_inertia/mind/intuition/MI-014-source-coercivity-must-survive-confluence-and-drifting-bows]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
@@ -135,4 +138,5 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-005-pointwise-selector-control-is-not-time-frequency-coercivity]]
 - [[research/xi_flow/mind/intuition/MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow]]
 - [[research/xi_flow/mind/intuition/MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy]]
+- [[research/xi_flow/mind/intuition/MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global]]
 <!-- intuition-membership:end -->

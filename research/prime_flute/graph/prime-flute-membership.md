@@ -30,3 +30,5 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_flute/findings/PF-184-canonical-short-collar-relative-flux-vanishes|PF-184]]
 - [[research/prime_flute/findings/PF-185-reflection-marked-korn-coercivity-removes-linearized-collar-splice-kernel|PF-185]]
 - [[research/prime_flute/findings/PF-186-small-exact-symplectic-collar-strain-does-not-force-c1-chart-entry|PF-186]]
+- [[research/prime_flute/findings/PF-187-boundary-normalized-marked-collar-strain-is-uniformly-qualitatively-sobolev-rigid|PF-187]]
+- [[research/prime_flute/findings/PF-188-fixed-germ-marked-collar-strain-is-qualitatively-sobolev-rigid-without-boundary-normalization|PF-188]]

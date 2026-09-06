@@ -54,3 +54,5 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/prime_circle/findings/PC-186-radial-refinement-differences-have-zero-mixed-prime-curvature|PC-186]]
 - [[research/prime_circle/findings/PC-187-primitive-shell-weighted-refinement-holonomy-is-cyclotomic|PC-187]]
 - [[research/prime_circle/findings/PC-188-anchored-angular-radial-local-jets-have-one-mellin-carrier|PC-188]]
+- [[research/prime_circle/findings/PC-189-finite-polynomial-local-jets-mellinize-to-colored-tornheim-functions|PC-189]]
+- [[research/prime_circle/findings/PC-190-integer-exponential-cyclotomic-amplitudes-collapse-to-quasipolynomial-hurwitz-data|PC-190]]

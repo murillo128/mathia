@@ -80,3 +80,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/analytic_frontier/findings/ANF-069-one-pair-collapse-reversal-is-curvature-seeded-through-ten-points|ANF-069]]
 - [[research/analytic_frontier/findings/ANF-070-certified-spatial-floor-screens-complete-montgomery-taylor-one-pair-six-point-collapse-reversal|ANF-070]]
 - [[research/analytic_frontier/findings/ANF-071-central-notch-induced-six-point-reversal-is-confined-to-a-thin-curvature-height-layer|ANF-071]]
+- [[research/analytic_frontier/findings/ANF-072-central-notch-six-point-collapse-reversal-reduces-to-real-multiplicity|ANF-072]]
+- [[research/analytic_frontier/findings/ANF-073-two-doubled-real-sites-puncture-the-minimum-slack-central-notch-ray|ANF-073]]
+- [[research/analytic_frontier/findings/ANF-074-amplitude-reoptimization-absorbs-the-two-support-multiplicity-obstruction|ANF-074]]
+- [[research/analytic_frontier/findings/ANF-075-arbitrarily-narrow-central-notches-escape-every-fixed-real-support-cap|ANF-075]]
+- [[research/analytic_frontier/findings/ANF-076-finite-real-floor-exactly-closes-every-uniform-occupancy-multiplicity-class|ANF-076]]
