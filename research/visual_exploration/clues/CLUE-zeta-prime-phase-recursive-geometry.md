@@ -8,6 +8,7 @@ based_on:
   - research/visual_exploration/README.md
   - research/visual_exploration/findings/VIS-010-hybrid-euler-hadamard-scale-transfer-tautology.md
   - research/visual_exploration/findings/VIS-064-hybrid-independent-scale-transfer-error-bound.md
+  - research/visual_exploration/findings/VIS-065-hybrid-contrast-single-factor-residual-coordinate.md
 ---
 
 # Can prime-by-prime zeta approximants be organized as a meaningful recursive geometry?
@@ -15,45 +16,49 @@ based_on:
 ## Observation
 The Euler product gives `zeta` a literal multiplicative hierarchy indexed by primes in its domain of convergence, while finite prime products and smoothed prime sums can still be formed as finite exploratory objects elsewhere. The original question was whether this hierarchy could be continued toward the critical strip in a mathematically justified way rather than through raw partial products whose apparent attractors or self-similarity may be truncation artifacts.
 
-Prior-art audit supplies the correct baseline. Gonek, Hughes, and Keating prove an unconditional hybrid Euler–Hadamard representation in which a cutoff `X` mediates between a finite von-Mangoldt prime factor `P_X(s)` and an independently defined smoothed zero factor `Z_X(s)`, with explicit error. Gonek's later work further studies short finite-Euler-product approximation in the critical strip. Thus the existence of a legitimate prime/zero scale decomposition is classical rather than a new visual mechanism.
+Prior-art audit supplies the correct baseline. Gonek, Hughes, and Keating prove an unconditional hybrid Euler–Hadamard representation in which a cutoff `X` mediates between a finite von-Mangoldt prime factor `P_X(s)` and an independently defined smoothed zero factor `Z_X(s)`, with explicit error. Gonek's later work further studies short finite-Euler-product approximation in the critical strip. Subsequent work on the splitting conjecture treats statistical separation of the prime and zero factors as an explicit prior-art problem. Thus neither the existence of the decomposition nor generic prime/zero statistical splitting is a new visual mechanism.
 
-`VIS-010` adds an exact control: if the complementary channel is defined merely as `R_X = zeta/P_X`, then scale increments of `log|R_X|` are exactly the negatives of those of `log|P_X|`. Any apparent prime/residual transfer or anticorrelation produced that way is tautological.
+`VIS-010` gives the first exact control: if the complementary channel is defined merely as `R_X=zeta/P_X`, opposite scale increments are tautological. `VIS-064` closes the nearest escape by showing that for the independently defined hybrid factors the **sum** of prime and zero log-modulus scale increments is exactly the change in the explicit hybrid residual. Visually strong compensation is therefore expected whenever the hybrid approximation is accurate.
 
-`VIS-064` closes the nearest escape from that objection. For the independently defined hybrid factors, the **sum** of the prime and zero log-modulus scale increments is exactly the change in the explicit hybrid residual, with an analogous phase statement modulo `2 pi`. Therefore visually strong prime/zero compensation remains expected background whenever the hybrid product is accurate; moving from an artificial quotient residual to the genuine hybrid zero factor does not by itself make transfer anticorrelation informative.
+`VIS-065` now sharpens the remaining linear coordinate. If
 
-The remaining linear search direction is consequently a contrast rather than a sum. If
+`A_XY = log|P_Y/P_X|`, `B_XY = log|Z_Y/Z_X|`, `R_XY = A_XY+B_XY`,
 
-`A_XY = log|P_Y/P_X|` and `B_XY = log|Z_Y/Z_X|`,
+then the proposed contrast `C_XY=A_XY-B_XY` satisfies
 
-then `VIS-064` controls `A_XY+B_XY` through the hybrid residual. A natural candidate coordinate is the orthogonal contrast `A_XY-B_XY`, or its phase analogue, provided it is frozen before confirmation and shown not to be a smoothing/window artifact. This coordinate is only a candidate observable; no arithmetic significance is established by defining it.
+`C_XY=2A_XY-R_XY=R_XY-2B_XY`.
+
+So `(R,C)` is only an invertible reparameterization of `(A,B)`. Once the residual is controlled, the contrast contains the same remaining pointwise scalar information as either one factor increment. In an accurate-hybrid regime it is quantitatively close to `2A` and `-2B`. The contrast can still be useful, but its default interpretation is therefore **within-factor scale geometry after residual accounting**, not a new prime/zero interaction.
 
 ## Research question
-Using the hybrid Euler–Hadamard split, or another representation with equally explicit analytic justification, is there a **non-tautological cross-scale geometry** in the degrees of freedom left after the residual-controlled product direction has been removed?
+Does the justified hybrid Euler–Hadamard hierarchy contain a representation-stable scale statistic that carries arithmetic information beyond the product/residual identities and the established individual-factor baselines?
 
-Concretely, as `X` varies through an admissible intermediate regime, can a predeclared contrast or within-factor statistic of `P_X` and `Z_X` remain stable across smoothing and scale, respond systematically to zero configurations, and separate the arithmetic construction from matched prime-phase and zero-surrogate controls?
+The nearest admissible question is now deliberately weaker: after freezing the hybrid construction, smoothing, scale pair, and statistic, does a within-factor prime or zero scale observable separate the arithmetic object from matched controls in a way that survives height windows and modest representation perturbations? If the aim is genuinely joint prime/zero geometry, can one predeclare a non-pointwise statistic whose behavior is not reconstructible from one factor together with the measured hybrid residual?
 
-The target is no longer raw prime-by-prime recursion or prime/zero compensation. It is a quantitative invariant of an independently defined prime/zero scale split living outside the product-direction constraint identified by `VIS-064`.
+The target is no longer raw prime-by-prime recursion, prime/zero compensation, or a linear contrast interpreted as coupling. It is either a robust arithmetic statistic of one justified hybrid channel or a genuinely additional dependence structure that survives the exact reconstruction controls.
 
 ## Why it may matter
-The hybrid formula connects the user's recursive/fractal intuition to a genuine arithmetic hierarchy without importing an invalid Euler product into the critical strip. It also gives a natural multiscale parameter: increasing `X` changes the prime resolution and the complementary zero window together.
+The hybrid formula connects the recursive/fractal intuition to a genuine arithmetic hierarchy without importing an invalid Euler product into the critical strip. Increasing `X` changes prime resolution and the complementary zero window in a mathematically controlled way, so the representation remains a natural place to search for multiscale structure.
 
-`VIS-064` makes the next test sharper. Instead of rewarding a visually dramatic anticorrelation that the hybrid approximation already predicts, the experiment can explicitly quotient the constrained direction and ask whether any residual contrast has reproducible arithmetic organization. A clean failure would close a large class of scale-transfer pictures without closing within-factor or hybrid-error geometry more broadly.
+The successive negative controls make the next positive result more meaningful. A signal that survives them would not merely rediscover quotient algebra, hybrid approximation accuracy, or a coordinate rotation of one factor. Conversely, failure of a frozen within-factor statistic against matched controls would close a concrete visual route without claiming that the whole hybrid representation is uninformative.
 
 ## Decisive test
-Choose one admissible smoothing family and an `X` regime from the hybrid Euler–Hadamard theorem. Construct `P_X` and `Z_X` independently and evaluate the hybrid residual `E_X=zeta/(P_X Z_X)` at the same points. Before inspecting confirmation windows, freeze one statistic that is not determined by the product-direction sum. The simplest first candidate is a normalized modulus contrast based on
+Choose one admissible smoothing family and `X` regime from the hybrid Euler–Hadamard theorem. Construct `P_X`, `Z_X`, and the explicit residual `E_X=zeta/(P_X Z_X)` independently at the same evaluation points. Before inspecting confirmation windows, freeze one question and one statistic.
 
-`C_XY = [log|P_Y|-log|P_X|] - [log|Z_Y|-log|Z_X|]`,
+For the simplest first experiment, treat the modulus contrast only as a residual-corrected representation of a **single-factor** increment. Equivalently test
 
-with a phase contrast treated intrinsically on the circle if used. Do not count smallness of the corresponding **sum** as evidence; `VIS-064` already explains that through `E_X/E_Y`.
+`A_XY = log|P_Y/P_X|`
 
-Test the frozen contrast across separated height windows, several admissible scale pairs, and modest smoothing perturbations. Compare against randomized prime phases, shuffled/log-band prime controls, and reflection-symmetric surrogate zero configurations with matched local density. Keep the direction only if the same predeclared statistic separates the arithmetic construction from these controls without relying on post-hoc scale/window selection and without collapsing to the hybrid residual, deterministic zero-window entry/exit, or a generic local-zero statistic.
+against randomized-prime-phase and shuffled/log-band controls, while recording `R_XY=log|E_X/E_Y|`; using `C_XY=A_XY-B_XY` is acceptable only if the exact `C=2A-R` baseline is carried through. Require the same predeclared statistic to separate arithmetic data from controls across separated height windows, several admissible scale pairs, and modest smoothing perturbations without post-hoc window or statistic selection.
 
-If the simple contrast fails, that failure should be recorded before opening a different representation family. A later experiment may instead test within-factor geometry or a hybrid-error feature, but it should be treated as a new coherent thread rather than as rescue-by-statistic-search inside the same confirmation dataset.
+If the intended claim is genuinely about **joint** prime/zero organization, the test must go beyond this pointwise linear family. Predeclare a non-pointwise dependence statistic and first show that its null is not already determined by one factor plus the residual field. Compare it with the appropriate individual-factor, residual, and hybrid-splitting baselines before interpreting any cross-channel pattern.
+
+Kill the current simple-contrast route as a coupling claim if its apparent signal is reproduced by `2A-R` or `R-2B`, by matched individual-factor controls, by deterministic zero-window entry/exit, or by the known residual accuracy. A later within-factor or genuinely joint experiment is a new coherent thread rather than rescue-by-statistic-search on the same confirmation data.
 
 ## Evidence boundary
-The hybrid Euler–Hadamard representation and finite-Euler-product approximation theory are established prior art. `VIS-010` proves the exact quotient-transfer control, and `VIS-064` proves the residual-controlled sum constraint for independently defined hybrid factors. Neither finding establishes that the proposed contrast is informative, canonical, stable under smoothing, or arithmetically specific.
+The hybrid Euler–Hadamard representation and finite-Euler-product approximation theory are established prior art. `VIS-010` proves the exact quotient-transfer control, `VIS-064` proves the residual-controlled sum constraint for independently defined hybrid factors, and `VIS-065` proves that the simple modulus contrast is only the complementary linear coordinate to that sum and reduces to one factor once the residual is accounted for.
 
-No fractal attractor, new prime/zero invariant, scale-locking law, or RH consequence has been established. The contrast above is a predeclared experimental coordinate motivated by the surviving degree of freedom after the known product-direction control; it remains exploratory until it survives the stated controls and can be translated into a mathematical statement independent of the visualization.
+None of these findings establishes a useful within-factor scale law, a canonical hybrid invariant, statistical independence, a new prime/zero coupling, a fractal attractor, or an RH consequence. The next statistic remains exploratory until it is frozen before confirmation, survives the stated controls, and can be translated into a mathematical statement independent of the visualization.
 
 ## Research disposition
-Accepted in further narrowed form. Use the hybrid Euler–Hadamard decomposition as the canonical critical-strip recursive baseline; reject both exact quotient anticorrelation and residual-controlled prime/zero compensation as discoveries. The next admissible test is a frozen statistic outside that constrained product direction, with the modulus contrast above as the simplest first candidate and matched controls required before any interpretation.
+Accepted in further narrowed form. Use the hybrid Euler–Hadamard decomposition as the canonical critical-strip recursive baseline; reject quotient anticorrelation, residual-controlled compensation, and the raw linear contrast as independent coupling discoveries. The next admissible visual thread is a frozen within-factor statistic with explicit residual accounting, or a separately justified non-pointwise joint statistic that survives reconstruction from one factor plus the residual.
