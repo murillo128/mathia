@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Calibrate likelihood-ray geometry to the declared decision/recovery class and family complexity
+## Calibrate recovery through a recoverable reference and controlled likelihood complexity
 
 **Linked intuitions:** `MI-015-whole-experiment-fidelity-needs-a-common-recovery-profile`, `MI-016-shtarkov-rays-separate-radial-reset-from-full-experiment-loss`, and `MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale`.
 
-AF-149--AF-154 identify the source-selected Shtarkov envelope, distinguish propagated from recomputed centers, and expose the full max-normalized likelihood-ray geometry. AF-155 gives the radial Shtarkov contraction an exact decision-theoretic meaning: it is the Bayes defect for one envelope-winner decision problem, while full ray variance is the squared-error risk for reconstructing the whole likelihood ray and has exact zero set equal to sufficiency.
+AF-149--AF-156 separate exact sufficiency geometry, Shtarkov radial decision loss, full likelihood-ray reconstruction, and optimal common recovery. AF-157 replaces list-dependent aggregate ray loss by a convex-hull-invariant worst-member Shtarkov Pearson witness. AF-158 proves that this witness is two-sided calibrated to the Shtarkov-selected Bayes reverse, with an explicit source-complexity factor, but not automatically to the optimal common reverse.
 
-AF-156 then closes a tempting approximate interpretation. In growing private-label experiments the true worst-case recovery deficiency can vanish, and every individual Shtarkov-reference Pearson certificate can vanish, while the radial and unnormalized whole-ray aggregate defects stay order one or tend to one. Exact-zero completeness therefore does not supply a dimension-free approximate recovery modulus. The live question is to derive a source-natural representation together with a **destination-calibrated aggregation whose constants remain controlled at the effective experiment complexity**.
+AF-159 identifies a sufficient optimal-recovery interface. A barycentric reference is automatically recoverable whenever the whole declared family is recoverable, and a bounded likelihood domination factor turns its worst-member Pearson loss into a two-sided modulus for optimal Le Cam deficiency. The live source question is therefore to control the intrinsic barycentric domination radius, or another destination-appropriate complexity quantity, for the actual arithmetic families rather than search for another exact-zero invariant.
 
 ## Propagate one source reference, but measure only the loss the endpoint can consume
 
-A useful arithmetic certificate should keep one source-selected dominating reference through the compression chain while separately controlling the destination-relevant part of the loss. Local recanonicalization drift, full likelihood-ray dispersion, winner-label error, worst-case recovery deficiency, and endpoint transported covariance are different resources. A future theorem should state explicitly which decision class or discriminator is being preserved and prove the corresponding complexity-uniform transport modulus rather than infer it from a canonical center or exact sufficiency invariant.
+Reference choice and destination loss are separate. Shtarkov is source-natural and minimax for envelope domination; barycentric references make common recovery visible. A useful theorem should state which reverse channel or decision class the endpoint consumes, select a reference whose recoverability matches that claim, and prove that its likelihood complexity remains controlled under the compression chain.
 
 ## Classify retained interaction support before proposing repair
 
-Linear span, sigma-algebra, interaction depth, family recovery, center reset, radial conflict, tangential likelihood-ray loss, endpoint observability, and family-size calibration are distinct information layers. Repairs should target the first layer that fails instead of treating one canonical center, divergence, or aggregate geometry as a complete fidelity metric.
+Linear span, sigma-algebra, interaction depth, family recovery, center reset, radial conflict, tangential likelihood-ray loss, endpoint observability, and reference complexity are distinct information layers. Repairs should target the first layer that fails instead of treating one canonical center, divergence, or aggregate geometry as a complete fidelity metric.

@@ -2,13 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Close the notch-induced six-point boundary layer rather than reopen the base reversal branch
+## Solve the three-support real-multiplicity gate before reopening complex one-pair geometry
 
 **Linked intuitions:** `MI-004-complete-scalar-control-is-diffraction-realizability` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-062--ANF-069 classify the Montgomery--Taylor five-point scalar category and the first one-pair six-point collapse reversal. ANF-070 now closes the entire base-profile negative-curvature branch: a certified spatial floor dominates the full finite-height collapse defect and leaves a uniform positive affine margin, so the first six-point scalar reversal is not itself an affine obstruction.
+ANF-070 closes the complete base-profile six-point collapse-reversal branch by a positive affine floor. ANF-071 localizes any central-notch reversal to the collapsed boundary, and ANF-072 shows that vertical one-pair displacement cannot create a new affine obstruction there: a violating configuration would already violate after collapse to a real multiplicity multiset.
 
-ANF-071 isolates the only remaining one-pair/four-anchor central-notch mechanism on the base-nonreversing side. A notch-created reversal can occur only in the shrinking layer `0 <= D(T) < s b_eta eta^3`, with height `y=O(sqrt(s b_eta eta^3))`. The decisive next gate is therefore local near `D=0, y=0`: compare the collapsed real-multiplicity affine slack with the negative notched collapse defect and determine whether the first-order slack stays uniformly positive across that layer.
+ANF-073 then shows that the minimum-elementary-slack notch normalization fails an exact doubled-site gate, while ANF-074 proves that this is an amplitude problem rather than a shape obstruction. After amplitude reoptimization, every sufficiently small viable central-notch shape survives the entire positive-spectrum class supported on at most two distinct real sites; double/double is the strongest such configuration. The next scalar discriminator is therefore the **three-distinct-support real-multiplicity envelope**. Only after that is controlled should complex height be reopened.
 
 ## Use cardinality eleven as the first one-pair higher-order frontier
 
@@ -16,4 +16,4 @@ ANF-069 proves that with at most eight real anchors every finite-height one-pair
 
 ## Seek ordered or multi-pair information beyond the classified scalar categories
 
-The completed five-point theorem, the screened six-point base reversal, and the sharply localized notch layer should be used as transfer controls. A genuinely new route should change the information category -- ordered/multi-point structure, multiple nonreal pairs, another source profile, or a non-scalar carrier -- rather than repeatedly re-optimizing an already classified one-pair scalar mechanism.
+The completed five-point theorem, screened six-point base branch, collapsed real-multiplicity reduction, and two-support amplitude-normalized gate should be used as controls. A genuinely new route should change the information category -- ordered/multi-point structure, multiple nonreal pairs, another source profile, or a non-scalar carrier -- rather than repeatedly re-optimizing an already classified one-pair scalar mechanism.

@@ -1,31 +1,31 @@
-# MI-005 — Above the trace endpoint, short-collar assembly reduces to one nonlinear chart-entry theorem
+# MI-005 — Short-collar assembly is quantitatively Sobolev, not generically `C^1`
 
-**Evidence level:** exact geometric accounting, exact annular-flux cancellation, uniform marked Korn coercivity, and a conditional generating-function cutoff through PF-185
+**Evidence level:** exact geometric accounting and exact counterexample through PF-186, plus uniform qualitative Sobolev rigidity through PF-187
 
 ## Core intuition
 
-For `S_r`, `r>1`, the infinitely many true short collars are no longer an independent global obstruction. Their transition slabs are disjoint, uniformly thick in area coordinates, and already charged by summable body energy. The canonical body/collar mismatch also carries no annular flux, and the zero-twist reflection removes the only normalized-collar Killing mode. Once the relative germ is inside one fixed nonlinear generating chart, the exact-area splice can therefore be localized at a cost controlled by energy already present.
+Above the trace endpoint, short-collar multiplicity, annular flux, and the normalized Killing kernel are no longer the main obstruction. But PF-186 shows that the remaining nonlinear gate cannot be phrased as a generic `C^1` chart-entry theorem: exact symplectic maps can have vanishing metric strain and displacement while carrying order-one microscopic rotations in their derivative.
 
-The remaining issue is not multiplicity, topology, or linearized rigidity. It is a **uniform nonlinear chart-entry theorem for the actual canonical relative germs**.
+PF-187 identifies the correct regularity scale. Once a canonical collar germ is boundary-normalized on the fixed marked annulus, vanishing strain forces uniform qualitative `W^{1,r}` convergence to the marked identity for every `r>1`. The missing theorem is therefore quantitative and constructive: obtain an energy-linear Sobolev rigidity/boundary-normalization estimate and an exact-symplectic localization with the same cost, or derive stronger canonical structure that genuinely forces the `C^1` chart used by PF-185.
 
 ## Strongest justified principle
 
-PF-183 shows that fixed thick subslabs of all true short collars are pairwise disjoint, have uniformly bounded weights, and charge the assembled body metric energy only once. Thus a uniform energy-local splice estimate on one normalized annulus automatically sums globally for every `r>1`.
+PF-183 makes the infinitely many true short collars harmless once one uniform local splice estimate is charged to the already summable body energy. PF-184 proves zero annular flux, and PF-185 proves uniform marked Korn coercivity plus an energy-local exact-area cutoff inside a fixed `C^1` generating chart.
 
-PF-184 computes the relative annular action exactly. Each short separator bounds a finite cusp block of the same Gauss--Bonnet area in the prime and shift-clone surfaces; exact area and label preservation force the relative flux period to vanish. The canonical annular germ is therefore exact symplectic, so no separate flux correction is needed.
+PF-186 rules out deriving that chart hypothesis from the generic energy/topological data. Reflection-equivariant Hamiltonian microtwists can have metric deviation tending to zero even in `L^infinity`, zero flux, boundary identity, and `C^0` convergence, while `DH=-I` on shrinking disks. Metric strain does not select a pointwise derivative branch.
 
-PF-185 identifies and removes the remaining linearized kernel. On the normalized slab the metric family is uniformly elliptic through the cusp limit, its only periodic Killing field is angular translation, and the zero-twist reflection excludes that mode. Uniform Korn--Poincare coercivity follows. For an exact reflection-equivariant germ in a fixed `C^1` generating neighborhood, a radial cutoff of the generating function then gives the PF-183 energy-local exact-area splice bound on both source and target sides.
+PF-187 shows that this flexibility disappears qualitatively in finite Sobolev norm. Riemannian Reshetnyak rigidity, compactness of the normalized metric family through `L=0`, and the ordered reflection marking imply that boundary-preserving maps with vanishing strain and collar mismatch converge to the identity in `W^{1,r}`. The half-turn is the only residual reflection-compatible isometry and the marking removes it. What is not supplied is the linear modulus needed for collar-by-collar summation or the exact-symplectic cutoff itself.
 
 ## What remains possible
 
-The current corpus does not prove that every tail canonical relative germ `G_eta^{-1} o F_body` lies in one fixed `C^1` generating neighborhood. Finite global `L^r` strain and summability on disjoint slabs do not by themselves imply uniform `C^1` smallness. A source-specific regularity, compactness, elliptic, or explicit-module estimate must supply that chart entry, or a different conservative localization theorem must avoid the chart hypothesis altogether.
+The low-regularity route is now precise: boundary-normalize the actual canonical PF germ with controlled energy, prove a uniform estimate of `W^{1,r}` distance to the marked identity that is linear enough for PF-183, and construct an exact-area localization with comparable cost. Existing qualitative rigidity says this is not blocked by hidden Sobolev microtwists, but it does not prove the quantitative estimate.
 
-The trace endpoint `r=1` remains outside the summability argument. Even after the geometric comparison is completed, a separate marked spectral observable must still distinguish the prime flute from its all-composite shift clone before any arithmetic conclusion is justified.
+The alternative is source-specific `C^1` entry derived from the explicit PF-179--PF-184 construction rather than from strain. The trace endpoint `r=1` remains separate, and even a completed `S_r`, `r>1`, comparison would still need a marked spectral observable that separates the prime flute from its shift clone.
 
 ## Status / novelty
 
-The collar coordinates, finite-side area cancellation, annular cohomology, Korn coercivity, and local symplectic cutoff ingredients are exact or classical. The durable synthesis is the narrowing: **above the trace endpoint, global collar multiplicity, flux, and the normalized Killing kernel have all been removed; the geometric assembly now hinges on uniform nonlinear chart entry for one canonical local germ.**
+The collar geometry, flux calculation, Korn estimate, Hamiltonian microtwist, and compactness reduction are exact line evidence; Riemannian Reshetnyak rigidity is classical prior art. The durable synthesis is the regularity boundary: **the post-multiplicity splice problem is quantitatively Sobolev; generic `C^1` rigidity is false, while qualitative marked `W^{1,r}` rigidity is true.**
 
 ## Falsification criterion
 
-Show that the PF-183 slabs fail disjoint weighted summability, invalidate the PF-184 zero-flux calculation, produce a nonzero reflection-equivariant Killing mode or violate PF-185's uniform Korn estimate, or prove that the canonical relative germs cannot enter any fixed conservative localization chart with cost controlled by the persisted body energy.
+Produce boundary-normalized marked collar maps with strain and collar mismatch tending to zero but staying a fixed positive `W^{1,r}` distance from the identity, invalidate PF-187's isometry selection, or prove that no energy-linear exact-symplectic localization can exist even for the actual canonical germ. Otherwise the remaining gate is quantitative Sobolev localization or genuinely canonical `C^1` control, not generic chart entry.

@@ -2,42 +2,46 @@
 
 This file holds genuinely cross-line mathematical questions suggested by the durable Mathia intuitions. It is not a summary of the local minds, a roadmap, task queue, status page, or history.
 
-## Preserve source-specific relation through the exact consumption step that supplies the final theorem
+## Preserve source-specific complexity through the exact consumption step
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Prime Circle continues to close finite local refinements of one cyclotomic field: anchored holomorphic jets and source-native refinement/order corrections remain one Euler/Mellin carrier. Prime Lattice likewise shows that rough one-point targets and small-modulus arithmetic labels scalarize whenever the applicable equidistribution theorem sees only one moving prime at a time.
+Prime Circle now closes fixed finite polynomial local enrichment of one cyclotomic field: nonlinear jet products only move into classical colored Tornheim/conical depth. Prime Lattice shows that all subpower shifted-prime exponent coordinates can be probabilistically classical while full parity remains in the large tail, and that broad affine phase averaging erases even an arbitrary bounded hard target. Möbius Cancellation independently forces the endpoint cancellation beyond every `o(log log N)` radial truncation.
 
-Möbius Cancellation now closes both low-bias amplitude regularization and generic reconstruction. The degree-two shell gives way to a positive linear diagonal floor at the square-root transition, while Chebyshev extremality makes exact recovery from polynomially shrinking windows superpolynomially ill-conditioned on the full degree-bounded class. A useful transfer must exploit a source-specific signed relation, not merely smaller intermediate amplitudes.
+These results sharpen the common discriminator. Rich local storage, more nonlinear depth, more local coordinates, or more averaging is not useful unless the final theorem retains the **scale or relation where the source-specific information actually lives**: growing signed shell depth, parity-sensitive cross-tail coupling, nonlocal source interaction, pointwise phase coherence, or another carrier outside the classicalized quotient.
 
-Weil Inertia strengthens the same interface test. Arbitrary nonlinear scalar pressure is erased by a universal scalar tax, and WI-177 shows that even a finite-dimensional additive vector buys nothing if the final theorem consumes it only through affine/support-function dual directions on the same period-33 witness. The useful question is therefore **which joint relation survives the final Mellin, averaging, positive, reconstruction, or dual-consumption quotient**, not how rich the intermediate storage looks.
+## Calibrate the source resource and uncertainty to the exact destination claim
 
-## Calibrate information and uncertainty to the exact destination decision
+Arithmetic Fidelity now supplies a positive calibration theorem as well as a warning. A barycentric reference plus bounded likelihood domination gives a two-sided modulus between propagated Pearson loss and optimal common recovery; without the recoverable-reference/complexity hypotheses, exact sufficiency geometry does not determine approximate recovery scale.
 
-Arithmetic Fidelity now separates exact sufficiency geometry from approximate recovery scale. Shtarkov mass contraction is exactly the Bayes defect for one envelope decision problem, while full likelihood-ray variance has exact zero set equal to sufficiency. AF-156 nevertheless shows that in growing families both radial and unnormalized whole-ray aggregate defects can remain order one while worst-case recovery deficiency and every individual Shtarkov-reference Pearson certificate vanish. Source-natural coordinates therefore do not determine a family-uniform approximate metric by themselves.
+Visual Exploration gives the statistical analogue. Full-law control of arbitrary simplex-valued whole replicates genuinely costs `sqrt(K/B)`, while one frozen quadratic residual direction admits dimension-free `B^{-1/2}` calibration. The improvement comes from narrowing the destination question, not from obtaining the same full-law claim for free. Across both lines, topology, aggregation, and uncertainty must be chosen from the endpoint statement actually being certified.
 
-Visual Exploration supplies the statistical analogue. For a frozen finite zeta table, VIS-060 needs no zeta process model: a fresh matched-control confidence radius propagates to exact residual-distance and orientation intervals with probability only over the control simulation. Across-height inference is a separate layer requiring target-side replication/dependence control. In both lines, **the relevant topology, aggregation, and uncertainty budget must be chosen from what the destination claim actually consumes**.
+## Exploit genuinely joint constraints rather than larger affine state
 
-## Couple finite arithmetic to an intrinsic real-place object before genuinely changing passive analytic category
+Weil Inertia now has a concrete survivor beyond its scalar/affine-vector no-go results. The exceptional block has finite spectral screening rank: after exact projection accounting, each distinct exceptional element can screen at most one supercritical simple-real Gram mode. A source theorem forcing supercritical spectral multiplicity beyond that rank would create an unavoidable nonlinear tail penalty.
 
-Weil Positivity's finite selector and archimedean Gamma phase remain complementary, but the passive escape category is narrower again. Matrix Schur delay is semidefinite, finite Pontryagin defect cannot absorb the Gamma divisor, regular `J`-contractive/passive-Hilbert closure remains Schur, and WP-174 shows that a singular parameter limit still cannot reach Gamma on an interior uniqueness set while the visible approximants stay contractive on a common or exhausted analytic domain.
+This is the right shape of a cross-line lesson. Useful joint structure should constrain the feasible set of the final optimization or coupling itself, rather than merely add coordinates later consumed through affine/support-function directions. Scalar Gram defect remains insufficient; the missing source input is spectral shape.
 
-A surviving finite--archimedean architecture must therefore be nonseparable before passive scalarization or genuinely lose the closed Schur category through domain degeneration, weak/relation-valued closure, unbounded renormalization, infinite index, or another mechanism with its own coercivity theorem. Escaping the representation is not itself the sign theorem.
+## Couple finite arithmetic to an intrinsic real-place object before changing passive category
 
-## Finish the Prime-Flute comparison by proving uniform nonlinear chart entry
+Weil Positivity's passive escape category is narrower again. Weak boundary limits inside the Schur unit ball cannot reach the exact Gamma phase even distributionally, and ordinary Nevanlinna relation-valued families Cayley back to operator-valued Schur with a constant multivalued channel. Weak topology or relation-valuedness alone does not change the sign-producing category.
 
-Prime Flute has now removed the long-body, split, cusp, decomposition-cuff, infinite-collar-multiplicity, annular-flux, and normalized Killing-field obstructions for `S_r`, `r>1`. PF-185 gives the desired energy-local conservative cutoff once the canonical relative true-short-collar germ lies in one fixed `C^1` generating neighborhood.
+A surviving finite--archimedean architecture must therefore be nonseparable before passive scalarization or genuinely leave the Hardy/Nevanlinna category through a domain/graph degeneration, unbounded renormalization, infinite-index mechanism, or another construction with its own independently proved coercivity theorem.
 
-The remaining geometric gate is therefore a uniform chart-entry/regularity theorem for those actual canonical germs, not another global collar summation. After that, the separate arithmetic burden remains a marked spectral observable that distinguishes the prime flute from its all-composite shift clone. The trace endpoint remains a different category.
+## Finish the Prime-Flute comparison at quantitative Sobolev scale
 
-## Localize the exact periodic Xi diagonalization in a destination-weighted Vieta quotient
+Prime Flute has removed the global short-collar multiplicity, flux, and linearized Killing obstructions for `S_r`, `r>1`. PF-186 proves that generic strain does not imply `C^1` chart entry, while PF-187 proves uniform qualitative marked `W^{1,r}` rigidity after boundary normalization.
 
-Xi Flow has removed two algebraic conditioning concerns. XF-068 shows that the Newton map has only polynomial source loss after positive heat time, and XF-069 shows that translating the compact selector center recovers each source-visible periodic power sum exactly without a growing period penalty. The remaining localization error is a center-averaged Xi/periodic interface mismatch.
+The remaining geometric gate is quantitative: obtain energy-linear boundary normalization/rigidity plus exact-symplectic localization, or derive stronger source-specific canonical information that truly forces the PF-185 generating chart. The global collar sum is already handled once this local estimate exists. Arithmetic meaning still requires a marked spectral observable separating the prime flute from its shift clone.
 
-At the same time, XF-069 proves that fixed ultra-infrared Vieta modes can be source-unresolved and heat-undamped while contributing vanishing third-difference transition energy. The correct source-to-state theorem should therefore quotient or weight away destination-null low modes rather than demand raw control of every Vieta coordinate. The live cross-line interface is to feed source-specific horizontal information into the exact destination resource without manufacturing stronger source hypotheses than the transition observable needs.
+## Localize Xi into the destination-weighted quotient rather than reopen solved Vieta algebra
 
-## Use the localized six-point Analytic-Frontier boundary as a discriminator, not a reason to reopen closed scalar branches
+Xi Flow now has an exact selector-induced log-Vieta `H^3` quotient whose source-invisible infrared block is negligible and whose visible resource is stable under nonlinear periodic heat after a guard band. XF-072 shows that enlarging the period cannot make a generic seam negligible without diluting the local frame by the same factor.
 
-Analytic Frontier now closes the complete Montgomery--Taylor six-point base reversal branch: ANF-070's certified spatial floor leaves positive affine slack for every negative-curvature one-pair/four-anchor configuration at every height. ANF-071 shows that a central notch can create a new reversal from the base-nonreversing side only inside a shrinking layer near `D=0, y=0`.
+The remaining cross-line interface is therefore source-specific localization: transfer actual Xi moving-line information into this exact weighted resource, or develop a different interior-center localization theorem, and then show that a positive transition carries nontrivial mass there. Stronger raw low-mode hypotheses are not justified by the destination geometry.
 
-The useful six-point scalar test is therefore the affine slack inside that notch-induced boundary layer, while total cardinality eleven remains the first one-pair size where a higher-order reversal not seeded by negative curvature is no longer excluded. Ordered and multi-pair carriers remain genuinely different information categories.
+## Use amplitude-normalized three-support multiplicity as the next Analytic-Frontier scalar gate
+
+ANF-072 reduces the residual one-pair central-notch danger to collapsed real multiplicity. ANF-073 shows that a fixed minimum-slack amplitude fails the doubled-site gate, while ANF-074 proves that amplitude reoptimization rescues every viable small-notch shape against the complete two-support positive-spectrum class.
+
+The next scalar discriminator is therefore three distinct real support sites, while total cardinality eleven remains the first one-pair size where a higher-order reversal not seeded by negative curvature is no longer automatically excluded. Complex height, ordered carriers, and multi-pair geometry should not be conflated with this now-pure real-multiplicity question.

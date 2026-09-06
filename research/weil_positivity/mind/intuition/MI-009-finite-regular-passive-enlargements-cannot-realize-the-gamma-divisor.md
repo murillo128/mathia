@@ -1,31 +1,31 @@
-# MI-009 — Finite, regular, or fixed-domain passive limits cannot realize the exact Gamma response
+# MI-009 — Weak and relation-valued passive closure still cannot realize the exact Gamma response
 
-**Evidence level:** exact/literature-backed no-go chain through accepted WP-171, WP-173, and WP-174
+**Evidence level:** exact/literature-backed no-go chain through WP-176
 
 ## Core intuition
 
-The obstruction to treating the archimedean Gamma phase as a passive response is not merely scalarity or finite dimensionality. Finite channel mixing, finite Pontryagin defect, ordinary indefinite external ports followed by regular passive Hilbert termination, and even singular parameter limits whose visible responses stay Schur on a common analytic domain all preserve too much of the passive analytic category. The exact Gamma factor carries an infinite non-Blaschke divisor and a boundary phase reversal that this closed class cannot absorb.
+The passive obstruction to the archimedean Gamma phase is now topological as well as finite-dimensional. Weakening convergence to boundary distributions does not help while the visible responses remain uniformly contractive Hardy functions: weak-* compactness recreates a Schur cluster point, and boundary uniqueness forces that point to be the forbidden Gamma continuation. Replacing operators by ordinary Nevanlinna linear relations does not help either, because the canonical Cayley transform is again an operator-valued Schur function and the multivalued part contributes only a constant identity channel.
 
-A genuine escape must change the analytic/sign category itself, not merely drive a regular passive parameter to a singular value.
+A viable escape must therefore leave the ordinary passive Hardy/Nevanlinna category in a load-bearing way. Merely weakening the topology or allowing relation-valued boundary objects is not enough.
 
 ## Strongest justified principle
 
-WP-171 shows that at a regular lossless boundary point a matrix Schur transfer has a positive-semidefinite delay matrix, so every positive channel readout has one sign. A global matrix-inner realization therefore cannot reproduce the globally sign-changing Gamma velocity by positive scalarization.
+WP-171--WP-174 already close regular matrix-Schur readouts, finite negative index, regular `J`-contractive/passive-Hilbert termination, and common-domain singular limits. WP-175 strengthens the closure theorem to the boundary: no sequence of scalar Schur traces can converge to the exact Gamma phase even distributionally on any nonempty open interval. Weak-* `L^infinity`, weak `L^p`, local `L^1`, convergence in measure, and almost-everywhere convergence are therefore closed as ordinary passive escape routes under uniform contractivity.
 
-WP-172 uses Krein--Langer factorization to show that finite negative index supplies only a finite Blaschke/Blaschke--Potapov denominator. The analytic Gamma orientation has infinitely many upper-half-plane zeros violating Blaschke, while the inverse has infinitely many poles. No finite defect or finite matrix coefficient/determinant repairs that divisor.
+WP-176 closes the natural relation-valued repair. A Nevanlinna family of maximal dissipative relations has an everywhere-defined contractive Cayley transform, hence an operator-valued Schur family. Its multivalued subspace is independent of the spectral parameter and becomes a constant identity block. Normalized matrix coefficients, even with changing Hilbert-space dimension and changing unit vectors, remain scalar Schur; finite-dimensional unrenormalized determinants remain scalar Schur as well. The regular direct Weyl derivative also has one semidefinite sign and cannot match the Gamma phase-velocity reversal.
 
-WP-173 shows that a regular `J`-contractive block terminated by an ordinary Hilbert-Schur load maps back into the Schur class even with infinitely many channels. WP-174 then closes the simplest singular-limit escape: Schur functions on one common domain, or on domains exhausting it with a uniform contractive bound, form a normal family. Convergence on any interior uniqueness set to the analytic Gamma target would force a Schur limit equal to Gamma, contradicting WP-170. For continuous lossless passive boundary responses, uniform convergence across the Gamma phase-velocity reversal is independently impossible because monotone phase order is closed under uniform limits.
+Thus **ordinary passive closure is stable under both weak boundary limits and Nevanlinna relation-valued enlargement**. The exact Gamma response cannot be obtained by those operations while retaining passivity as the source of the sign.
 
 ## What remains possible
 
-A domain may genuinely degenerate so that no common analytic neighborhood survives; convergence may be weak or boundary-only in a topology that does not preserve the Schur class; an unbounded renormalization may leave the passive unit ball; or the limit may be an unbounded operator/linear relation with changing domain rather than a scalar holomorphic transfer. Infinite negative index or a nonseparable finite--archimedean construction also remains outside the chain.
+A genuinely degenerating domain or graph topology for which no ordinary Nevanlinna family survives, an unbounded or renormalized scalarization with a new coercivity theorem, regularized Fredholm determinants outside the Schur unit ball, infinite negative index, or a nonseparable finite--archimedean construction remains outside the no-go chain.
 
-Each escape loses the inherited passive sign mechanism at exactly the point where it leaves the closed class. It must therefore state the limiting object and prove a new source-forced coercivity/positivity theorem rather than cite passivity of the approximants.
+Each route loses the inherited passive sign exactly where it exits the closed category. It must therefore specify the new object and prove positivity/coercivity after the category change rather than cite passivity of the approximants.
 
 ## Status / novelty
 
-Matrix Schur kernels, Krein--Langer factorization, Pontryagin-space realization, `J`-contractive LFT theory, Vitali/Montel normal families, and monotone-limit arguments are classical. The durable synthesis is the category boundary: **the exact Gamma phase cannot be reached by finite/regular passive enlargements or by a fixed-domain singular limit that remains passive at every finite stage.**
+Hardy weak-* compactness, Luzin--Privalov uniqueness, Schur/Nevanlinna Cayley theory, multivalued decomposition, and boundary monotonicity are classical. The durable synthesis is the category boundary: **neither weak convergence nor relation-valuedness creates a hidden Gamma-compatible passive class.**
 
 ## Falsification criterion
 
-Construct a regular matrix-Schur positive readout reproducing the forbidden Gamma sign region, realize either Gamma orientation in a finite-index generalized-Schur class despite its divisor, give a regular `J`-contractive/passive-Hilbert LFT whose closed response is not Schur under WP-173's hypotheses, or produce a common-domain Schur sequence converging to the non-Schur Gamma response on an interior uniqueness set under WP-174's hypotheses.
+Produce uniformly contractive scalar Schur boundary traces converging distributionally to the Gamma phase on an open interval, exhibit an ordinary Nevanlinna relation family whose canonical normalized Cayley readout escapes the Schur class, or invalidate the constant multivalued-sector decomposition used by WP-176. Otherwise a surviving real-place mechanism must genuinely change analytic/sign category or couple finite and archimedean data before passive scalarization.

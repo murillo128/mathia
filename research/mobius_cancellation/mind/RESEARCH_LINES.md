@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Treat low-bias Hamming amplitude regularization and degree-only reconstruction as classified
+## Treat broad Hamming-window regularization and every sub-log-log radial truncation as classified
 
 **Linked intuitions:** `MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel` and `MI-012-hamming-regularization-is-degree-two-damping-before-the-square-root-transition`.
 
-MC-097--MC-101 show that fixed and mesoscopic low-bias amplitudes are dominated by a positive degree-two shell rather than by the signed cancellation governing the hard endpoint. MC-102 closes the apparent square-root transition: the exact degree-zero shell has a positive linear asymptotic, so the low-bias profile crosses from degree-two scale to a positive `c_0 N` floor instead of entering a new cancellation regime.
+MC-097--MC-103 show that low-bias amplitude regularization is governed by positive low shells and a positive diagonal floor, while generic exact recovery from shrinking intervals is Chebyshev-ill-conditioned. MC-104 extends the obstruction to moving windows: interval location does not create a broad low-amplitude escape, and a critical-scale uniform window would already need width about `(log N)^(-1/2)` or smaller.
 
-MC-103 then closes the generic reconstruction escape. Endpoint evaluation from a shrinking low-bias interval has the exact Chebyshev extrapolation norm, which is superpolynomial for polynomially shrinking windows at the available Hamming degree ceiling; the obstruction survives knowledge of any fixed number of low shells. Thus neither shrinking the amplitude toward zero nor black-box signed interpolation of degree-bounded polynomials transports the low-bias gain to the Möbius endpoint.
+MC-105--MC-106 then expose the source-specific shell geometry. Every fixed shell of degree at least two has a positive Landau main term, consecutive shells grow strongly, and the same positive cascade persists uniformly through every cutoff `K_N=o(log log N)`. The hard endpoint cancellation is therefore absent from every sub-log-log radial truncation. The first unresolved radial regime is `Theta(log log N)`, unless a genuinely non-radial source relation bypasses shell truncation.
 
-## Derive a source-specific signed relation that is not valid on the full degree-bounded class
+## Derive the signed relation at the first scale capable of carrying the endpoint
 
-A survivor must exploit arithmetic constraints among the actual Hamming coefficients, a signed cross-degree recurrence, a non-point observable, or a different source coupling. It must prove a reconstruction/contraction whose conditioning is funded by those source relations rather than by polynomial degree alone, and its gain must survive the exact positive diagonal floor and the known large signed shell cancellation.
+A survivor should either resolve the `Theta(log log N)` shell transition with enough uniform signed information to explain the endpoint, or identify a non-radial/cross-shell relation whose proof does not reduce to generic polynomial reconstruction. Fixed-order recurrences and finite Taylor data are now excluded by the shell cascade itself, not merely by conditioning.
 
 ## Keep comparator turnover and scale coverage explicit
 
-Moving interior windows or source-specific recurrences remain logically open, but per-scale witnesses do not form an iterable theorem unless their location, conditioning, and source relation stay controlled across the full scale range. Any proposed recurrence must preserve the signed coupling uniformly rather than pay back the gain through unstable extrapolation or a hidden endpoint estimate.
+Pointwise or narrow windows may still be useful when tied to a source-specific relation, but a per-scale witness is not an iterable theorem unless its location, conditioning, degree reach, and signed coupling remain controlled across the whole scale range. Any gain must survive both Chebyshev transfer cost and the positive shell cascade before it is credited as Möbius cancellation.

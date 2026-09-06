@@ -1,29 +1,35 @@
-# MI-017 — Exact sufficiency geometry does not fix the scale of approximate recovery
+# MI-017 — Approximate recovery needs a recoverable reference and bounded likelihood complexity
 
-**Evidence level:** exact finite-experiment and decision-theoretic results through AF-156
+**Evidence level:** exact finite-experiment and decision-theoretic results through AF-159
 
 ## Core intuition
 
-A representation can have the correct exact zero set and still be badly calibrated as an approximate fidelity metric. The Shtarkov likelihood ray is an exact sufficient coordinate: its full conditional variance vanishes exactly when the experiment is recoverable without loss. But when the experiment family grows, the natural Shtarkov aggregation can weight the union of many individually rare alternatives so strongly that its aggregate defect remains macroscopic while worst-case recovery deficiency tends to zero.
+Exact sufficiency geometry still does not determine a canonical approximate metric, but the missing calibration is now much sharper. A propagated common-reference Pearson defect becomes quantitatively equivalent to optimal common recovery once two conditions hold together: the reference is itself recoverable whenever the declared experiment is recoverable, and the family has uniformly bounded likelihood complexity relative to that reference.
 
-Approximate fidelity therefore needs two independent choices: a source-natural coordinate/reference and a destination-relevant aggregation whose normalization and constants match the decision or recovery class at the effective family complexity.
+Barycentric references provide exactly the first property. If `M` lies in the convex hull of the experiment members, every common approximate reverse that recovers those members also recovers `M`. A bounded domination radius then turns continuity of Pearson divergence into a two-sided modulus for the optimal Le Cam recovery deficiency.
 
 ## Strongest justified principle
 
-AF-155 identifies Shtarkov mass contraction exactly with the Bayes defect for the source-induced envelope decision problem. Its zero set says that each compressed fiber has a common envelope winner, which is strictly weaker than full experiment sufficiency. With a positive winner margin it calibrates winner-label recovery, while near ties show that no margin-free label interpretation is stable. The full Shtarkov likelihood-ray variance instead equals the Bayes squared-error risk for reconstructing the whole ray and vanishes exactly at sufficiency.
+AF-157 replaces list-dependent whole-ray aggregation by the convex-hull-invariant worst-member Shtarkov Pearson loss. It is an exact operator witness norm, has the right zero set, and lower-bounds optimal recovery deficiency. AF-158 shows that this same loss is two-sided calibrated to the Bayes reverse selected by the Shtarkov reference, with a source-complexity factor; it is not in general calibrated to the best common reverse.
 
-AF-156 supplies the quantitative obstruction. In the private-label family, the one-sided recovery deficiency is `rho(1-1/m)`, whereas both the radial defect and the normalized whole-ray aggregate equal `(m-1)rho/[1+(m-1)rho]`. Taking `rho -> 0` with `m rho` nonvanishing makes recovery asymptotically exact while the aggregate defect stays positive; with `rho=m^{-alpha}`, `1/2<alpha<1`, every individual Shtarkov-reference Pearson certificate also vanishes while the aggregate defects tend to one.
+AF-159 identifies the missing bridge. For a barycentric reference `M` with likelihood ceiling `L_M`,
 
-Thus **exact-zero sufficiency, coordinate-wise small loss, and family-uniform approximate recovery are three different properties**. The missing normalization is not determined by exact identifiability alone.
+`4 delta_rec^2 <= Gamma_M <= L_M(L_M+2) delta_rec`.
+
+The source-only barycentric domination radius `Lambda_bar` is convex-hull invariant and selects the best universal constant available inside the class of automatically recoverable references. Thus there is a real tradeoff between unrestricted domination optimization, exemplified by Shtarkov, and reference recoverability, guaranteed by barycentricity.
+
+The durable principle is therefore: **approximate fidelity is calibrated to the destination only after the reference-selection rule and its effective likelihood complexity are jointly controlled.** Exact-zero sufficiency alone remains insufficient, but the obstruction is no longer an unspecified family-size effect.
 
 ## What remains possible
 
-A source-specific arithmetic family may have bounded effective complexity, sparse likelihood-ray support, a canonical destination weighting, or another structural restriction that prevents the private-label accumulation mechanism. A target-relative projection or normalized aggregate may also control exactly the decision class needed downstream. Such a theorem must expose its complexity parameter and prove a uniform recovery/decision modulus from source structure rather than choose a normalization only to defeat one control example.
+A concrete arithmetic source family may have a uniformly bounded or slowly growing `Lambda_bar`, a canonical barycentric reference with better structure than the worst finite bound, or a destination decision class requiring less than full recovery. Conversely, an unrestricted source-optimal reference may remain preferable when the intended endpoint consumes its own Bayes reverse rather than optimal Le Cam recovery.
+
+The remaining source question is not to find another divergence with the same zero set. It is to prove the reference recoverability and complexity bound appropriate to the actual arithmetic family and destination claim.
 
 ## Status / novelty
 
-Shtarkov/NML geometry, Bayes decision theory, sufficiency, and Le Cam recovery are classical ingredients. The exact private-label phase diagram is persisted Mathia evidence with no publication-level novelty claim. The durable synthesis is the topology distinction: **an exact sufficient coordinate does not canonically determine the approximate metric in which a growing family is recoverable.**
+Sufficiency, Le Cam recovery, Pearson divergence, Bayes reversal, barycentric mixtures, and domination radii are classical ingredients. The line-specific synthesis is the calibration boundary: **recoverable reference plus bounded likelihood complexity is sufficient for a source-side divergence loss to track optimal recovery.**
 
 ## Falsification criterion
 
-Derive a dimension-free modulus forcing the AF-156 Shtarkov aggregate defects to zero whenever its recovery deficiency tends to zero under the stated general finite-experiment hypotheses, invalidate the private-label identities, or prove that the intended source class has an independent complexity bound that excludes the separating regime.
+Find a finite experiment and barycentric dominating reference satisfying the stated likelihood ceiling for which AF-159's two-sided recovery inequality fails, or exhibit a sequence with uniformly bounded barycentric domination radius where Pearson loss and optimal deficiency have different zero asymptotics. Such an example would invalidate the claimed calibration mechanism.

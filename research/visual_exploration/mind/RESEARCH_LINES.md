@@ -2,17 +2,17 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Test frozen zeta windows against fresh controls before paying for a zeta process model
+## Test frozen zeta windows at the weakest claim strength that still answers the question
 
-**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`, and `MI-003-overlap-uncertainty-must-be-separated-from-residual-geometry`.
+**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`, `MI-003-overlap-uncertainty-must-be-separated-from-residual-geometry`, and `MI-004-dimension-free-confirmation-comes-from-narrowing-the-destination-question`.
 
-VIS-048--VIS-059 classify the fixed-representation Fisher quotient, nonlinear Markov-residual perturbation, overlapping-block second moment, and exact short-lag periodic-cylinder channels. VIS-060 now separates two inferential questions that had been bundled together. For one predeclared finite zeta table, no stochastic law for the zeta window is needed: an independently justified control-law `L^1` radius propagates to an exact Fisher residual-distance and orientation interval with probability only over the control simulation.
+VIS-060 separates fixed-table comparison from a population claim about zeta zeros. VIS-061 supplies a rigorous whole-control-replicate `L^1` radius without assuming independence among overlapping triples inside each control matrix, and VIS-062 shows that its leading `sqrt(K/B)` support-dimension cost is unavoidable for generic simplex-valued replicates.
 
-The lower-assumption confirmation path is therefore to freeze the zeta window, partition, support, closure, Fisher reference, and target statistic; generate fresh matched controls; certify their population-law radius; and first ask whether the fixed zeta residual clears the resulting control ball or cone. Only if a stable finite-window separation exists is it worth adding replication or a zeta-side dependence model to claim across-height or population behavior.
+VIS-063 supplies a deliberately weaker confirmation geometry. One frozen quadratic direction of the denominator-free Markov residual can be estimated unbiasedly from paired independent whole-control replicates with a `B^{-1/2}` confidence radius independent of support dimension. This does not improve the full-law certificate; it asks one predeclared scalar question instead. The immediate empirical choice is therefore explicit: use the full residual ball when its `sqrt(K/B)` cost is affordable, or freeze a mathematically meaningful witness and test only that direction with fresh controls.
 
 ## Generalize only after separating overlap, long memory, and adaptive representation error
 
-A zeta-population claim still requires an honest source-side uncertainty model. VIS-058--VIS-059 show that deterministic overlap geometry, long-range dependence, nonlinear closure sensitivity, normalization conditioning, and adaptive partition/support/reference changes are separate channels. Do not convert a successful fixed-window comparison into a process theorem without controlling each additional layer.
+A zeta-population claim still requires an honest source-side uncertainty model. VIS-058--VIS-059 show that deterministic overlap geometry, long-range dependence, nonlinear closure sensitivity, normalization conditioning, and adaptive partition/support/reference changes are separate channels. Choosing a witness, partition, window, or gauge on confirmation controls invalidates the corresponding fixed-target radius unless the selection is covered explicitly.
 
 ## Test Farey residuals against endpoint-safe exact nulls
 
