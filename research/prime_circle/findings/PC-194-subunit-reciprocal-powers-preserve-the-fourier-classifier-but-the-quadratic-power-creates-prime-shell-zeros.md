@@ -93,7 +93,7 @@ using the exact factorization into the exponential kernel and the strip-Poisson 
 
 These two elementary bounds are enough to propagate the sign through all subunit reciprocal powers.
 
-## 2. Every `0<alpha<=1` is an absolutely positive power-series deformation of PC-193
+## 2. Every `0<alpha<=1` is a nonnegative power-series deformation of PC-193
 
 For `0<alpha<1`, set
 
@@ -113,14 +113,12 @@ c_m(\alpha)=(-1)^{m+1}\binom{\alpha}{m}>0.
 \tag{11}
 \]
 
-At `alpha=1`, only `c_1=1` remains. Since `R_p=1-H_p`,
+At `alpha=1`, only `c_1=1` remains. Since `R_p=1-H_p`, define
 
 \[
--H_{p,\alpha}^{\rm sign}:=G_{p,\alpha}
-\quad\Longleftrightarrow\quad
-H_{p,\alpha}:=-G_{p,\alpha}
-=1-R_p^\alpha
-=F_\alpha(H_p).
+H_{p,\alpha}(x):=-G_{p,\alpha}(x)
+=1-R_p(x)^\alpha
+=F_\alpha(H_p(x)).
 \tag{12}
 \]
 
