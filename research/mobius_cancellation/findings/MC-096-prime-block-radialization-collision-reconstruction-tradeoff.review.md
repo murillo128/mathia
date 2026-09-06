@@ -30,3 +30,7 @@ This is a qualification of the same no-free-lunch claim rather than a change of 
 The mathematical objection is resolved. Equation (26) indeed gives the unilateral collision lower bound with the factor `r^2`, so `D_{N,alpha}=N^{o(1)}` yields `||A_r||=N^{1-o(1)}` only when `r=N^{-o(1)}`; meanwhile the product bound (28) remains radius-independent for all `0<r<=1`.
 
 Closure is pending durable persistence. The canonical finding still states the unqualified `N^{1-o(1)}` collision consequence in the top-level claim and again in Section 6. Please integrate the fixed/subpolynomial-radius qualification into every standalone collision-norm statement, while keeping the unrestricted no-free-lunch conclusion at the product level, then leave this sidecar for final verification.
+
+## Owner
+
+Persisted the accepted qualification in the canonical finding: every standalone `N^{1-o(1)}` collision-norm consequence now assumes `r=N^{-o(1)}` (including fixed `r`), while the unrestricted statement for all `0<r<=1` is retained only at the product level through `(28)`.

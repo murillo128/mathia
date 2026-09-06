@@ -34,7 +34,7 @@ Then every product `a=pq` of two distinct primes `alpha N<p,q<=N` is an actual n
 \tag{1}
 \]
 
-Thus simply replacing the single degree `omega(a)` by finitely or subpolynomially many prime-size/residue/label blocks does **not** reconcile the already available full-Walsh `L^2` bound with cheap endpoint reconstruction. If the quotient has only `N^{o(1)}` relevant profiles, the collision step is already `N^{1-o(1)}` on a concrete degree-two source sector; if the collision step is reduced to `N^{o(1)}`, endpoint recombination costs `N^{1-o(1)}`. The product lower bound `(1)` is independent of the choice of prime blocks and of the noise radius.
+Thus simply replacing the single degree `omega(a)` by finitely or subpolynomially many prime-size/residue/label blocks does **not** reconcile the already available full-Walsh `L^2` bound with cheap endpoint reconstruction. If the quotient has only `N^{o(1)}` relevant profiles and `r=N^{-o(1)}` (in particular, for fixed `r`), the collision step is already `N^{1-o(1)}` on a concrete degree-two source sector; without any lower-scale assumption on `r`, only the radius-independent product tradeoff is asserted. If the collision step is reduced to `N^{o(1)}`, endpoint recombination costs `N^{1-o(1)}`. The product lower bound `(1)` is independent of the choice of prime blocks and of the noise radius.
 
 The degree-two witness is also more informative than the degree-one witness used in the first version of this finding. The **entire degree-one source contribution is absolutely bounded by `O(N log log N)`**, already at the square-scale critical power up to subpolynomial factors. By contrast, the degree-two shell contains a source-forced same-sign prime rectangle of size `asymp N^2/log^2 N`. Hence the first low-degree obstruction is not Möbius parity itself: inside degree two, `mu(a)=+1` throughout, and any critical-scale shell estimate must obtain cancellation from the arithmetic weight outside that coherent rectangle.
 
@@ -362,21 +362,21 @@ Multiplication cancels both the radius and the number of profiles:
 
 This is the strengthened no-free-lunch bound `(1)`. It is forced by a concrete nonzero source sector and is one square-root power stronger than the original singleton proof.
 
-Two regimes make the tradeoff explicit. If the relevant profile family has only `N^{o(1)}` elements, then `(26)` forces
+Two regimes make the tradeoff explicit. If the relevant profile family has only `N^{o(1)}` elements, then `(26)` gives
 
 \[
-\|A_r\|_{2\to2}\ge N^{1-o(1)}
+\|A_r\|_{2\to2}\ge r^2 N^{1-o(1)}.
 \tag{29}
 \]
 
-for fixed `r`. Conversely, if the collision map is `N^{o(1)}` on this sector, `(28)` forces
+Hence the standalone collision norm is `N^{1-o(1)}` whenever `r=N^{-o(1)}` (in particular for fixed `r`). Conversely, if the collision map is `N^{o(1)}` on this sector, `(28)` forces
 
 \[
 \|E_r\|_{2\to\mathbb C}\ge N^{1-o(1)}.
 \tag{30}
 \]
 
-The cost cannot be removed by choosing better prime bins.
+The cost cannot be removed by choosing better prime bins; for arbitrary shrinking `r`, the unconditional statement is the product lower bound `(28)` rather than a unilateral collision estimate.
 
 ## 6. Sublogarithmic block families remain reconstructible but now maximally collisional at full power
 
@@ -407,7 +407,7 @@ D_N=N^{o(1)}.
 \tag{33}
 \]
 
-Thus dyadic prime-size bands, logarithmically many residue/scale classes, or comparable block-count refinements remain cheap enough for endpoint reconstruction at the level of profile dimension. But the degree-two rectangle then forces a generic collision norm `N^{1-o(1)}`, not merely the earlier `N^{1/2-o(1)}`.
+Thus dyadic prime-size bands, logarithmically many residue/scale classes, or comparable block-count refinements remain cheap enough for endpoint reconstruction at the level of profile dimension. For `r=N^{-o(1)}` (in particular fixed `r`), the degree-two rectangle then forces a generic collision norm `N^{1-o(1)}`, not merely the earlier `N^{1/2-o(1)}`. For unrestricted `0<r<=1`, the radius-independent conclusion remains the product tradeoff `(28)`.
 
 At the opposite extreme, singleton or near-singleton blocks avoid degree-two collisions but create `asymp N^2/log^2N` distinct rectangle profiles, whose generic endpoint recombination costs their square root, `asymp N/logN`.
 
