@@ -1,37 +1,40 @@
-# MI-011 — Addition is a genuine missing variable, but diffuse and slowly weighted affine averages classicalize it
+# MI-011 — Addition is a genuine missing variable, but ordinary affine averaging either erases it or inherits the hard zero-frequency problem
 
-**Evidence level:** supported through PL-183 by exact affine identities and persisted short-interval/additive-uniformity inputs
+**Evidence level:** supported through PL-189 by exact affine identities, persisted prime-equidistribution inputs, and classical compact-support Fourier uniqueness
 
 ## Core intuition
 
-Ordinary addition is genuinely outside the multiplicative exponent-difference quotient: ratios, one-swap terms, and shifted correlations use relations `n` with `n+h`. But preserving addition in the definition is not enough. Canonical regularization, diffuse higher-order averaging, broad Kronecker averaging, and even slowly varying target weights can delete or universalize the source-specific relation.
+Ordinary addition is genuinely outside the multiplicative exponent-difference quotient: ratios, one-swap terms, and shifted correlations use relations `n` with `n+h`. But preserving addition in the definition is not enough. Canonical regularization, diffuse higher-order averaging, broad Kronecker averaging, slowly varying target weights, and now ordinary bounded positive-width phase averaging all fail to create an easier arithmetic channel.
 
-The live question is therefore not merely “add affine shifts,” “raise the correlation degree,” or “weight by the target,” but **retain a source-forced relational pattern through the exact analytic or limiting operation that is supposed to reach the critical regime**.
+There are two complementary failure modes. If the effective affine phase window grows, PL-187 shows that averaging erases every bounded target without learning its arithmetic mean. If the normalized window has fixed positive width and bounded center, PL-189 shows that uniform flattening is so rigid that it already forces the zero-frequency coefficient mean to cancel. The useful regime must therefore preserve a more singular/coherent observation or a genuinely joint source relation.
 
 ## Strongest justified principle
 
 PL-169--PL-176 establish the first boundary. Additive shifted correlation is absent from exponent differences, yet simple affine traces telescope or remain behind absolute-convergence walls; `det_2` deletes the first trace carrying fixed-shift Chowla data; fixed finite logarithmic sectors become Haar/Bernoulli under current theorems; and complete additive-cube averaging collapses to generic multiplicative pseudorandomness.
 
-PL-177--PL-182 then isolate a more direct prime-shift channel. An oriented nonselfadjoint phase can retain shifted-prime arithmetic, but broad Kronecker/vertical prime averages converge uniformly to deterministic one-point-density kernels throughout a large short-interval-PNT resolution band, even when the source shift and frequency grow within the exact resolution parameter.
+PL-177--PL-186 isolate the direct prime-shift channel and its information boundary. An oriented nonselfadjoint phase can retain shifted-prime arithmetic, but broad prime/Kronecker averages scalarize under continuum density, bounded slowly varying target weights do not stop that collapse, and every subpower local exponent block can remain classically distributed while full parity stays unresolved behind the sieve barrier.
 
-PL-183 removes the simplest target-relative escape. Multiplying the moving-prime phase by any bounded slowly varying target weight only adds its Lipschitz complexity to the same quadrature budget; below the resolution horizon the prime sum is still determined by continuum density, and a genuinely slower target amplitude cannot stop high-frequency cancellation. Target dependence is useful only when it changes a load-bearing hypothesis: thin/singular support, arithmetic conditioning, joint multi-prime dependence, phase-scale oscillation, or another non-diffuse structure.
+PL-187 proves universal erasure when the effective normalized phase width diverges. PL-189 then compactifies the complementary bounded-width, bounded-center regime: after removing a common phase, the normalized frequencies lie in one fixed compact interval, so any weak limit is a compactly supported complex measure. If its Fourier transform vanishes on a positive-length interval, analytic uniqueness forces it to vanish at zero. Thus bounded-window flattening of a hard target is not a spectral shortcut; it already contains the hard arithmetic cancellation at zero frequency.
+
+The durable principle is therefore: **addition supplies missing arithmetic information, but ordinary affine averaging has no easy middle regime. Broad windows erase the target universally, while fixed positive-width bounded-center windows can flatten only by already solving the signed zero-frequency problem.**
 
 ## What remains possible
 
-Ordinary fixed-shift Cesaro correlations remain outside the diffuse theorems, and source-forced sparse/completed additive relations may survive if the destination carrier preserves them. A target-relative construction must be relational enough that one-point prime density cannot determine it.
+Ordinary fixed-shift Cesaro correlations remain outside the diffuse theorems. Within affine phase space, isolated pointwise frequencies, shrinking normalized windows, or windows whose normalized centers escape to infinity are not covered by PL-189. More importantly, source-forced sparse/completed additive relations or genuinely joint multi-prime carriers may preserve parity-sensitive information that a one-point phase average cannot.
 
-Higher Walsh degree, larger source shift, or a smooth target weight by itself is not a reason to continue. The source must explain why a particular configuration is privileged and why the final analytic carrier preserves rather than averages away that relation.
+A target-relative construction must therefore change a load-bearing hypothesis: preserve a parity-sensitive cross-tail coupling, use singular/thin conditioning, remain pointwise enough to avoid generic erasure, or introduce a joint/completed operator whose final observation does not reduce to one compact-frequency Fourier transform.
 
 ## Status / novelty
 
-Shifted correlations, Chowla-type problems, regularized determinants, Furstenberg systems, Gowers uniformity, Kronecker phases, and short-interval prime equidistribution are classical/persisted inputs. The synthesis is the boundary: **addition supplies missing arithmetic information, but diffuse or slowly weighted one-point averaging can still classicalize it; fertility requires a source-forced relational carrier below the averaging quotient**.
+Shifted correlations, Chowla-type problems, regularized determinants, Furstenberg systems, Gowers uniformity, Kronecker phases, prime equidistribution, compactly supported Fourier transforms, and analytic uniqueness are classical/persisted inputs. The synthesis is the observation boundary: **addition supplies missing information, but neither diverging nor fixed positive-width bounded-center affine averaging creates an easier route to hard signed cancellation.**
 
 ## Falsification criterion
 
-Recover a covered fixed-shift first trace after the stated regularization without extra continuation, produce a non-Haar covered diffuse sector, or exhibit a bounded slowly varying target weight satisfying PL-183's hypotheses whose prime readout retains a nonvanishing rational-prime-specific residual beyond the continuum integral.
+Produce a covered diverging-width affine average retaining an arbitrary bounded hard target beyond the PL-187 estimate, or a bounded positive-width bounded-center sequence whose `L^2` transform vanishes while its zero-frequency mean stays bounded away from zero. Otherwise an affine survivor must lie in one of the explicitly uncovered singular/coherent regimes or carry genuinely joint source information.
 
 ## Lean-formalizable core
 
 - Affine operator and regularization deletion identities.
 - Uniform/all-shift averaging reductions.
-- Separation between one-point weighted density statistics and genuinely relational target dependence.
+- Compact-frequency reduction for bounded normalized phase windows.
+- Fourier-uniqueness implication from interval flattening to zero-frequency cancellation.

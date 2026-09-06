@@ -1,35 +1,39 @@
-# MI-017 — Approximate recovery needs a recoverable reference and bounded likelihood complexity
+# MI-017 — Approximate recovery complexity is reference- and provenance-dependent
 
-**Evidence level:** exact finite-experiment and decision-theoretic results through AF-159
+**Evidence level:** exact finite-experiment and decision-theoretic results through AF-162
 
 ## Core intuition
 
-Exact sufficiency geometry still does not determine a canonical approximate metric, but the missing calibration is now much sharper. A propagated common-reference Pearson defect becomes quantitatively equivalent to optimal common recovery once two conditions hold together: the reference is itself recoverable whenever the declared experiment is recoverable, and the family has uniformly bounded likelihood complexity relative to that reference.
+Exact sufficiency geometry still does not determine a canonical approximate metric, but the calibration boundary is now explicit. A propagated common-reference Pearson defect becomes quantitatively equivalent to optimal common recovery when the reference is automatically recoverable with the declared experiment and the family has controlled likelihood complexity relative to that reference.
 
-Barycentric references provide exactly the first property. If `M` lies in the convex hull of the experiment members, every common approximate reverse that recovers those members also recovers `M`. A bounded domination radius then turns continuity of Pearson divergence into a two-sided modulus for the optimal Le Cam recovery deficiency.
+AF-160 identifies that complexity exactly for the best barycentric reference. It is the unrestricted Shtarkov complexity multiplied by a one-sided convex-hull penalty: the order-infinity divergence from the Shtarkov center to the experiment convex hull. AF-161--AF-162 then show that the scaling of this source constant depends decisively on **how alternative identity propagates across observations**. Independent evidence is not itself the obstruction; independent recombination of the hidden alternative is.
 
 ## Strongest justified principle
 
-AF-157 replaces list-dependent whole-ray aggregation by the convex-hull-invariant worst-member Shtarkov Pearson loss. It is an exact operator witness norm, has the right zero set, and lower-bounds optimal recovery deficiency. AF-158 shows that this same loss is two-sided calibrated to the Bayes reverse selected by the Shtarkov reference, with a source-complexity factor; it is not in general calibrated to the best common reverse.
-
-AF-159 identifies the missing bridge. For a barycentric reference `M` with likelihood ceiling `L_M`,
+AF-157 replaces list-dependent whole-ray aggregation by the convex-hull-invariant worst-member Shtarkov Pearson loss. AF-158 calibrates that loss to the Shtarkov-selected Bayes reverse but not automatically to the best common reverse. AF-159 supplies the missing bridge: for a barycentric reference `M` with likelihood ceiling `L_M`,
 
 `4 delta_rec^2 <= Gamma_M <= L_M(L_M+2) delta_rec`.
 
-The source-only barycentric domination radius `Lambda_bar` is convex-hull invariant and selects the best universal constant available inside the class of automatically recoverable references. Thus there is a real tradeoff between unrestricted domination optimization, exemplified by Shtarkov, and reference recoverability, guaranteed by barycentricity.
+AF-160 sharpens the source constant to
 
-The durable principle is therefore: **approximate fidelity is calibrated to the destination only after the reference-selection rule and its effective likelihood complexity are jointly controlled.** Exact-zero sufficiency alone remains insufficient, but the obstruction is no longer an unspecified family-size effect.
+`Lambda_bar = C exp(d_infty(M_Sh, conv(E)))`.
+
+Thus the extra price of insisting on an automatically recoverable reference is exactly the convex-hull distance of the Shtarkov center. There is no barycentric price precisely when the Shtarkov center is already a mixture of experiment members.
+
+AF-161 proves exact multiplicativity for the full Cartesian product experiment. Consequently `Lambda_bar(E^{\otimes n})=Lambda_bar(E)^n`, so a nontrivial factor makes the whole-family calibration constant grow exponentially when each coordinate may choose its alternative independently.
+
+AF-162 isolates the opposite regime. For the shared-identity family `(P_i^{\otimes n})_i`, repeated observations make the fixed alternatives distinguishable; `Lambda_bar` stays bounded by the number of alternatives and converges to that finite value, while the normalized convex-hull penalty tends to one. The durable structural distinction is therefore: **repeated evidence can improve identification without creating an exponential recovery penalty when relational provenance keeps one common alternative identity across coordinates.**
 
 ## What remains possible
 
-A concrete arithmetic source family may have a uniformly bounded or slowly growing `Lambda_bar`, a canonical barycentric reference with better structure than the worst finite bound, or a destination decision class requiring less than full recovery. Conversely, an unrestricted source-optimal reference may remain preferable when the intended endpoint consumes its own Bayes reverse rather than optimal Le Cam recovery.
+A concrete arithmetic source may preserve one alternative identity across many scales, allow only constrained recombination, or require recovery of a destination-specific quotient rather than the full Cartesian family. Its useful complexity law may therefore be bounded, additive after logarithms, intermediate between the two exact controls, or irrelevant because the endpoint consumes a smaller witness class.
 
-The remaining source question is not to find another divergence with the same zero set. It is to prove the reference recoverability and complexity bound appropriate to the actual arithmetic family and destination claim.
+The remaining source question is not to invent another divergence with the same zero set. It is to specify the actual provenance/composition structure, choose a recoverable reference matched to the destination, and prove the resulting likelihood-complexity bound.
 
 ## Status / novelty
 
-Sufficiency, Le Cam recovery, Pearson divergence, Bayes reversal, barycentric mixtures, and domination radii are classical ingredients. The line-specific synthesis is the calibration boundary: **recoverable reference plus bounded likelihood complexity is sufficient for a source-side divergence loss to track optimal recovery.**
+Sufficiency, Le Cam recovery, Pearson and Rényi divergences, Bayes reversal, Shtarkov/NML centers, barycentric mixtures, tensor products, and hypothesis-testing bounds are classical ingredients. The line-specific synthesis is the calibration law: **recoverable reference plus controlled likelihood complexity is sufficient, and whether that complexity multiplies or saturates is determined by the source's identity/provenance structure.**
 
 ## Falsification criterion
 
-Find a finite experiment and barycentric dominating reference satisfying the stated likelihood ceiling for which AF-159's two-sided recovery inequality fails, or exhibit a sequence with uniformly bounded barycentric domination radius where Pearson loss and optimal deficiency have different zero asymptotics. Such an example would invalidate the claimed calibration mechanism.
+Find a finite experiment violating AF-159's two-sided recovery inequality for a barycentric dominating reference, invalidate AF-160's exact convex-hull decomposition, or construct a shared-identity tensor family for which `Lambda_bar` grows without the AF-162 finite bound. Any such example would break the claimed calibration/provenance mechanism.
