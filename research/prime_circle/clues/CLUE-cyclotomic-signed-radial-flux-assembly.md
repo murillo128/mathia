@@ -98,4 +98,24 @@ has exact symmetric part
 
 Thus `w'=0` returns to the classical Mangoldt boundary, while every genuinely monotone `w` with `w'>0` on a set of positive measure assigns strictly positive self-energy to every non-prime-power shell. For the canonical first log-radial moment `w(x)=x`, this positive Gram is equivalently the two-depth flux kernel `min(u,v)`, and its finite entries reduce to the same weight-three colored Tornheim/cyclotomic-polylogarithm class already exposed in PC-102. This is persisted in [[research/prime_circle/findings/PC-182-monotone-radial-depth-positivity-fills-the-mangoldt-nullspace]].
 
-The clue therefore remains accepted only beyond PC-179--PC-182. A next candidate must introduce **additional geometry-forced information before positive self-adjoint collapse**: a sign-changing/nonmonotone depth law forced by refinement, a genuinely two-depth kernel outside the positive Stieltjes `w(min)` class, a radially varying shell operator with intrinsic noncommuting eigenspaces, a second independent ordered/skew carrier, a higher-order radial object, or an all-shell invariant that is not positive functional calculus of the carriers already classified. It must retain the signed cancellation of at least one non-prime-power control, produce a sign or coercivity margin unavailable in the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert/Tornheim algebra already exposed by PC-001, PC-027, PC-029, PC-102, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
+PC-183 closes the next positive two-depth escape under the full refinement symmetry rather than only the Stieltjes `w(min)` subclass. For any continuous Hermitian positive-semidefinite kernel satisfying
+
+\[
+K(qu,qv)=a_qK(u,v)
+\qquad(q=2,3,\ldots),
+\]
+
+full integer refinement and continuity force `K` to be homogeneous. In log-depth coordinates Bochner/Mellin analysis then gives
+
+\[
+Q_K(n)
+=
+\int_{\mathbb R}
+\left|
+\mathcal R_n\!\left(1+\frac{\gamma}{2}+it\right)
+\right|^2d\mu(t).
+\]
+
+If `Q_K(pq)=0` for every pair of distinct primes while one prime-power response remains positive, the cyclotomic Euler factors force the effective Mellin support to `s=1`; the classical zero-free theorem on `Re(s)=1` removes every other positive spectral channel. Hence `K` is constant and `Q_K(n)=c Lambda(n)^2`. Any nonconstant positive refinement-covariant two-depth kernel therefore leaks to some mixed-prime shell. The same finding shows that a finite-anchor scalar law transforming affinely under every refinement must be `w(x)=w(0)+C x^alpha` with `alpha>0` unless constant, so its derivative cannot supply the sign-changing cancellation left open by PC-182. This is persisted in [[research/prime_circle/findings/PC-183-refinement-covariant-positive-two-depth-kernels-have-only-mangoldt-boundary-selector]].
+
+The clue therefore remains accepted only beyond PC-179--PC-183. A next candidate must introduce **additional geometry-forced information before positive self-adjoint collapse** outside the newly closed fixed scalar refinement-covariant classes: an indefinite/sign-changing genuinely two-depth kernel whose sign structure is itself forced by the roots/refinement geometry, a radially varying shell or matrix-valued operator with intrinsic noncommuting eigenspaces, a second independent ordered/skew carrier, a higher-order radial object, or an all-shell/cross-level invariant that is not positive functional calculus of the carriers already classified. Any remaining scalar oscillatory depth law must also break the finite-anchor affine refinement covariance classified in PC-183 rather than be chosen ad hoc. The candidate must retain the signed cancellation of at least one non-prime-power control, produce a sign or coercivity margin unavailable in the uncoupled `n=2`/prime-power controls, and avoid reducing to the Möbius/divisor/Lambert/Tornheim or common-zeta Mellin algebra already exposed by PC-001, PC-027, PC-029, PC-102, and PC-179. No such coupling, positivity theorem, or RH implication is established by this acceptance.
