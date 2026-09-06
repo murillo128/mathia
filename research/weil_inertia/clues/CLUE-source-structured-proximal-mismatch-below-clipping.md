@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-source-structured-proximal-mismatch-below-clipping
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: weil_inertia
 based_on:
@@ -74,3 +74,12 @@ The substantial test is to prove a lower bound in the admissible source class, o
 ## Evidence boundary
 
 The square completion is elementary candidate derivation in this clue; the finite quadrature checks are not interval-certified. No new source lower bound, percentage, proof of RH, or independent novelty claim is established. Generic positivity of `Gamma_e` is not the desired result. The required mathematical delta is a source-forced magnitude or a decisive source-compatible counterexample that survives all existing moment, multiplicity, support, and normalization constraints.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-182-confluence-near-extremizers-kill-extensive-source-proximal-mismatch]]
+
+WI-182 verifies the polar-coordinate square completion and proves `0 <= Gamma_e <= R`. WI-140's mixed confluence near-extremizers have any prescribed simple-real fraction, the matching scalar `Q/N -> 2-s` budget, a positive-density complement consisting entirely of simple off-line pairs, and `R/N -> 0`; hence they also force `Gamma_e/N -> 0`. The source-only extensive mismatch route is therefore closed. A strengthened mismatch theorem remains possible only after adding a genuinely new density, overlap, correlation, mixed-moment, or arithmetic hypothesis that excludes the WI-140 family.
