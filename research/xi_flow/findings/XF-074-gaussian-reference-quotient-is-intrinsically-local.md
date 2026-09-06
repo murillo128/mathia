@@ -12,10 +12,10 @@ That shortcut is false even for a zero-free exact heat solution. The periodized 
 
 \[
 \boxed{
- z_{r,n}
- =\left(r+\frac12\right)L
- +i(2n+1)\frac{\pi v}{L},
- \qquad r,n\in\mathbb Z,
+z_{r,n}
+=\left(r+\frac12\right)L
++i(2n+1)\frac{\pi v}{L},
+\qquad r,n\in\mathbb Z,
 }
 \tag{1}
 \]
@@ -40,9 +40,9 @@ the vertical seam spacing is
 \tag{2}
 \]
 
-Consequently every full-period horizontal contour comes within `pi v/L` of a reference zero at the seam. The interior half-period used by XF-073 remains completely safe because it stays a horizontal distance `L/4` from that seam, but no global periodic holomorphic strip of macroscopic width survives.
+Consequently every full-period horizontal contour comes within `pi v/L` of a reference zero at the seam. The interior half-period used by XF-073 remains safe because it stays a horizontal distance `L/4` from that seam, but no global periodic holomorphic strip of macroscopic width survives.
 
-This does **not** kill the Gaussian-reference route. It sharply specifies what the next bridge may and may not do: it must remain center-local, explicitly quotient a meromorphic divisor with seam-residue control, or first construct a finite entire trigonometric surrogate whose auxiliary reference divisor is separately neutralized. What is ruled out is the direct identification of `R_L` with the entire periodic zero carrier required by XF-067--XF-071.
+This does **not** kill the Gaussian-reference route. It specifies what the next bridge may and may not do: it must remain center-local, explicitly quotient a meromorphic divisor with seam-residue control, or first construct a finite entire trigonometric surrogate whose auxiliary reference divisor is separately neutralized. What is ruled out is the direct identification of `R_L` with the entire periodic zero carrier required by XF-067--XF-071.
 
 ## 1. The periodized Gaussian has an exact seam-zero lattice
 
