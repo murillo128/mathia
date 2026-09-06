@@ -59,3 +59,4 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_positivity/findings/WP-172-finite-pontryagin-defect-cannot-repair-exact-gamma-phase|WP-172]]
 - [[research/weil_positivity/findings/WP-173-passive-hilbert-termination-of-regular-j-contractive-channels-collapses-back-to-schur|WP-173]]
 - [[research/weil_positivity/findings/WP-174-fixed-domain-passive-limits-cannot-reach-Gamma-on-an-interior-uniqueness-set|WP-174]]
+- [[research/weil_positivity/findings/WP-175-weak-boundary-passive-limits-cannot-reach-gamma-even-distributionally|WP-175]]
