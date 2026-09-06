@@ -41,6 +41,24 @@ Let `I` be any fixed real interval of positive length. More generally, let `I_X`
 }
 \]
 
+In fact the same hypothesis forces the **entire signed macroscopic coefficient measure** to vanish weak-*:
+
+\[
+\boxed{
+\eta_X:=\frac1{M_X}\sum_{q\in\mathcal P_X}c_q\,\delta_{q/X}
+\overset{*}{\rightharpoonup}0
+\quad\text{on }[a,b].
+}
+\]
+
+Equivalently, for every fixed `w in C([a,b])`,
+
+\[
+\frac1{M_X}\sum_{q\in\mathcal P_X}c_q\,w(q/X)\longrightarrow0.
+\]
+
+Thus bounded-window flattening cannot merely hide a nonzero zero-frequency mean in another macroscopic part of the prime band: it forces cancellation against every continuous macroscopic localization. With the ordinary prime number theorem, the same conclusion extends to every fixed positive-width sub-band.
+
 The implication is uniform in the choice of `h_X` and coefficients in the following qualitative sense: for fixed `a,b` and a fixed compact family of positive-length observation intervals, every `epsilon>0` has a `delta>0` such that
 
 \[
@@ -49,15 +67,15 @@ The implication is uniform in the choice of `h_X` and coefficients in the follow
 |F_X(0)|<\epsilon.
 \]
 
-No arithmetic input is used. The result is a compact-support Fourier-uniqueness obstruction.
+No arithmetic input is used for the Fourier-uniqueness or weak-* conclusions. The extension from continuous weights to hard sub-band indicators uses only the ordinary prime number theorem.
 
-For the hard target `c_q=mu(q+h)` with fixed `h>0`, a theorem proving such bounded-normalized-window flattening on every macroscopic band would therefore already imply the folklore shifted-prime Möbius cancellation
+For the hard target `c_q=mu(q+h)` with fixed `h>0`, a theorem proving such bounded-normalized-window flattening on one macroscopic band would therefore already imply shifted-prime Möbius cancellation on every fixed positive-width sub-band inside it; proving the flattening on all macroscopic bands would in particular imply the folklore global cancellation
 
 \[
 \sum_{q\le X\atop q\ \mathrm{prime}}\mu(q+h)=o(\pi(X)).
 \]
 
-Thus a bounded positive-width affine phase average at bounded normalized center is **not an easier spectral bypass** around the parity barrier isolated by `PL-186` and `PL-188`. In contrast with the `Delta_X->infinity` regime of `PL-187`, where Fourier/sieve averaging erases every bounded coefficient sequence without learning its arithmetic mean, bounded normalized windows retain enough analytic rigidity that vanishing throughout the window propagates back to zero frequency.
+Thus a bounded positive-width affine phase average at bounded normalized center is **not an easier spectral bypass** around the parity barrier isolated by `PL-186` and `PL-188`. In contrast with the `Delta_X->infinity` regime of `PL-187`, where Fourier/sieve averaging erases every bounded coefficient sequence without learning its arithmetic mean, bounded normalized windows retain enough analytic rigidity that vanishing throughout the window propagates back to the full macroscopic signed coefficient distribution.
 
 **Evidence/status:** `EXACT-DERIVED + CLASSICAL-FOURIER-UNIQUENESS + NEGATIVE/OBSTRUCTION` for the route
 
@@ -68,7 +86,7 @@ Thus a bounded positive-width affine phase average at bounded normalized center 
 \text{an easier cancellation mechanism than the zero-frequency problem}.
 \]
 
-The Fourier uniqueness input is classical Paley--Wiener/identity-theorem material and is not claimed as new. The line-specific result is the exact normalization and compact-frequency reduction showing that the bounded-window escape left open by `PL-187` cannot be made universally flat without solving the underlying signed arithmetic mean. This does not cover windows whose normalized centers tend to infinity, isolated pointwise frequencies, shrinking windows, or genuinely joint/nonlocal operators.
+The Fourier uniqueness input is classical Paley--Wiener/identity-theorem material and is not claimed as new. The line-specific result is the exact normalization and compact-frequency reduction showing that the bounded-window escape left open by `PL-187` cannot be made universally flat without solving the underlying signed arithmetic cancellation, indeed its macroscopic weak-* localization. This does not cover windows whose normalized centers tend to infinity, isolated pointwise frequencies, shrinking windows, or genuinely joint/nonlocal operators.
 
 ## 1. The affine rescaling has uniformly compact frequency diameter
 
@@ -175,19 +193,19 @@ The transforms are uniformly equicontinuous on the real line because
 \le C_{a,b}|u-v|.
 \]
 
-Therefore convergence is uniform on every fixed compact real interval. If the observation intervals `I_X` have a positive lower length and bounded centers, pass again to a subsequence so their endpoints converge to a nondegenerate interval `I`. The assumption
+Therefore convergence is uniform on every fixed compact real interval. If the observation intervals `I_X` have a positive lower length and bounded centers, either their lengths have a bounded subsequence, in which case pass again so a nondegenerate subinterval converges, or their lengths tend to infinity, in which case choose a fixed positive-length subinterval around a convergent subsequence of centers. In either case the assumption
 
 \[
 \int_{I_X}|F_X(u)|^2du\to0
 \]
 
-then forces
+forces
 
 \[
 \widehat\nu(u)=0
 \]
 
-throughout `I`.
+throughout some nondegenerate real interval.
 
 Because `nu` has compact support, its Fourier--Laplace transform
 
@@ -202,21 +220,96 @@ is entire. Vanishing on a real interval therefore implies, by the identity theor
 \widehat\nu\equiv0.
 \]
 
-Uniqueness of the Fourier transform of finite measures gives `nu=0`. In particular,
+Uniqueness of the Fourier transform of finite measures gives `nu=0`. Since every subsequence has only the zero measure as a possible weak-* limit under the flattening assumption,
 
 \[
-\nu_{X_j}([0,C_{a,b}])	o0.
+\boxed{\nu_X\overset{*}{\rightharpoonup}0.}
 \]
 
-Since every subsequence has only the zero measure as a possible limit under the flattening assumption, the full sequence satisfies
+In particular,
 
 \[
 F_X(0)=\frac1{M_X}\sum_q c_q\to0.
 \]
 
-This proves the implication.
+This proves the original zero-frequency implication and records the stronger conclusion already implicit in the compactness argument.
 
 The qualitative `epsilon`--`delta` version follows from the same compactness argument. On the compact family of measures with total variation at most one and with `|nu([0,C])|>=epsilon`, the continuous functional `nu -> ||hat nu||_{L^2(I)}` cannot attain zero, because zero would contradict Fourier uniqueness. Hence it has a strictly positive minimum. No useful explicit modulus is claimed.
+
+### 2a. Pulling weak-* cancellation back to prime position
+
+The measure `nu_X` is the pushforward of the signed prime-position measure
+
+\[
+\eta_X=\frac1{M_X}\sum_{q\in\mathcal P_X}c_q\,\delta_{q/X}
+\]
+
+under the continuous map
+
+\[
+Y_\kappa(x)
+:=\frac{1+\kappa}{\kappa}
+\log\!\left(\frac{1+\kappa/x}{1+\kappa/b}\right),
+\qquad \kappa>0.
+\]
+
+This family extends continuously to `kappa=0` and `kappa=infinity` by
+
+\[
+Y_0(x)=\frac1x-\frac1b,
+\qquad
+Y_\infty(x)=\log\frac bx.
+\]
+
+For every `kappa in [0,infinity]`, `Y_kappa` is a strictly decreasing homeomorphism from `[a,b]` onto its image. Indeed, for finite positive `kappa`,
+
+\[
+Y_\kappa'(x)
+=-\frac{1+\kappa}{x(x+\kappa)},
+\]
+
+with endpoint limits `-1/x^2` and `-1/x`; on the compactified parameter family and `x in [a,b]`, the derivative magnitude stays bounded above and away from zero.
+
+Now take any subsequence of `eta_X`. After a further subsequence, compactness gives
+
+\[
+\eta_{X_j}\overset{*}{\rightharpoonup}\eta,
+\qquad
+\kappa_{X_j}=h_{X_j}/X_j\longrightarrow\kappa_*
+\in[0,\infty].
+\]
+
+The maps `Y_{kappa_{X_j}}` converge uniformly on `[a,b]` to `Y_{kappa_*}`. Therefore
+
+\[
+\nu_{X_j}
+=(Y_{\kappa_{X_j}})_*\eta_{X_j}
+\overset{*}{\rightharpoonup}
+(Y_{\kappa_*})_*\eta.
+\]
+
+But Section 2 already gives `nu_X -> 0` weak-*. Hence `(Y_{kappa_*})_* eta=0`. Since `Y_{kappa_*}` is a homeomorphism onto its image, this forces `eta=0`. Every subsequence has only the zero weak-* limit, so
+
+\[
+\boxed{
+\eta_X\overset{*}{\rightharpoonup}0.
+}
+\]
+
+Equivalently, for every fixed continuous macroscopic weight `w`,
+
+\[
+\frac1{M_X}\sum_{aX<q\le bX}c_q\,w(q/X)=o(1).
+\]
+
+This strengthening still uses no distribution theorem for the primes: primality only specifies the support points. If `a<a'<b'<b` are fixed, approximate the indicator of `[a',b']` by continuous weights whose transition regions have width `delta`. The prime number theorem bounds the normalized number of primes in those transition strips by `O_{a,b}(delta)` as `X->infinity`; letting `delta->0` yields
+
+\[
+\sum_{a'X<q\le b'X}c_q=o\!\left(\frac{X}{\log X}\right)
+=o\!\left(|\{q\text{ prime}:a'X<q\le b'X\}|\right).
+\]
+
+Thus flattening on one macroscopic carrier band forces cancellation on every fixed positive-width sub-band of that same carrier.
 
 ## 3. The boundary with `PL-187` is genuine
 
@@ -235,7 +328,7 @@ When `Delta_X->infinity`, the affine frequencies are resolved over an ever large
 
 for **every** bounded coefficient sequence. That is information erasure: the conclusion can hold even when the zero-frequency coefficient mean is unknown or deliberately nonzero at finite scale.
 
-The present result shows that this phenomenon cannot simply be pushed down to a fixed positive normalized width while keeping the normalized center bounded. The compact frequency support makes the transforms a normal analytic family. If their mass on one nondegenerate bounded interval tends to zero, the limiting transform must vanish identically, and its value at zero vanishes with it.
+The present result shows that this phenomenon cannot simply be pushed down to a fixed positive normalized width while keeping the normalized center bounded. The compact frequency support makes the transforms a normal analytic family. If their mass on one nondegenerate bounded interval tends to zero, the limiting transform must vanish identically, and the entire signed macroscopic coefficient measure must vanish weak-*.
 
 Thus the two regimes have opposite epistemic meanings:
 
@@ -285,13 +378,22 @@ The present theorem gives a complementary harmonic obstruction. Suppose an affin
 \right|^2du\to0
 \]
 
-on a fixed nondegenerate normalized interval `I`. Then the preceding argument immediately yields
+on a fixed nondegenerate normalized interval `I`. Then Section 2a gives, for every continuous `w in C([a,b])`,
 
 \[
-\sum_{aX<q\le bX}\mu(q+h)=o(M_X).
+\sum_{aX<q\le bX}\mu(q+h)w(q/X)=o(M_X),
 \]
 
-If this holds for every fixed `0<a<1` with `b=1`, then
+and in particular for every fixed `a<a'<b'<b`,
+
+\[
+\sum_{a'X<q\le b'X}\mu(q+h)
+=o\!\left(|\{q\text{ prime}:a'X<q\le b'X\}|\right).
+\]
+
+Thus the bounded-window estimate already contains **localized** fixed-shift Möbius cancellation throughout the carrier band, not merely cancellation of its total coefficient sum.
+
+If the same flattening statement is available on macroscopic bands approaching the origin, then
 
 \[
 \sum_{q\le X}\mu(q+h)=o(\pi(X)).
@@ -299,11 +401,11 @@ If this holds for every fixed `0<a<1` with `b=1`, then
 
 Indeed, the omitted primes `q<=aX` contribute at most `pi(aX)`, whose ratio to `pi(X)` tends to `a`; after taking `X->infinity`, let `a->0`.
 
-Therefore bounded-window `L^2` cancellation does not downgrade the arithmetic burden. It is at least strong enough to recover the zero-frequency fixed-shift cancellation that remains open.
+Therefore bounded-window `L^2` cancellation does not downgrade the arithmetic burden. It is at least strong enough to recover the fixed-shift cancellation that remains open, together with all of its continuous macroscopic localizations on the observed band.
 
 ## 5. Prior art and novelty audit
 
-The analytic mechanism is classical. Paley--Wiener theory states that the Fourier transform of compactly supported data extends to an entire function of controlled exponential type; for finite measures this also follows directly from differentiating the compact-support integral. The identity theorem and uniqueness of Fourier transforms then give the zero-on-an-interval implication. No novelty is claimed for any of those steps.
+The analytic mechanism is classical. Paley--Wiener theory states that the Fourier transform of compactly supported data extends to an entire function of controlled exponential type; for finite measures this also follows directly from differentiating the compact-support integral. The identity theorem and uniqueness of Fourier transforms then give the zero-on-an-interval implication. Weak-* compactness and continuous pushforward under a uniformly convergent family of homeomorphisms are standard measure theory. No novelty is claimed for any of those steps.
 
 Primary classical anchor:
 
@@ -313,7 +415,7 @@ Target-specific arithmetic anchor:
 
 - Jared Duker Lichtman, “Averages of the Möbius Function on Shifted Primes,” *The Quarterly Journal of Mathematics* **73**(2) (2022), 729--757, DOI `10.1093/qmath/haab054`, arXiv `2009.08969`. The paper states fixed-shift Möbius cancellation along primes as a folklore conjecture and proves it after averaging over shifts under the stated growth condition.
 
-A targeted literature search found the standard compact-support Fourier uniqueness machinery and the shifted-prime Möbius frontier, but no authoritative source treating this exact affine normalization as a distinct theorem. The durable content is therefore best viewed as a **line-specific exact reduction**, not as a new harmonic-analysis theorem: the natural effective-coordinate frequencies of the prime-lattice affine carrier have uniformly bounded diameter, so any bounded-center positive-width flattening theorem necessarily imports the hard zero-frequency cancellation.
+A targeted literature search found the standard compact-support Fourier uniqueness machinery and the shifted-prime Möbius frontier, but no authoritative source treating this exact affine normalization as a distinct theorem. The durable content is therefore best viewed as a **line-specific exact reduction**, not as a new harmonic-analysis theorem: the natural effective-coordinate frequencies of the prime-lattice affine carrier have uniformly bounded diameter, so any bounded-center positive-width flattening theorem necessarily imports the hard zero-frequency cancellation and, more strongly, annihilates the full macroscopic signed coefficient measure on the carrier band.
 
 ## 6. Adversarial boundaries and countercontrols
 
@@ -321,19 +423,20 @@ A targeted literature search found the standard compact-support Fourier uniquene
 - **A shrinking window is not covered.** Vanishing at a single moving phase, or on an interval whose effective width tends to zero, does not invoke analytic uniqueness and may occur by ordinary destructive interference.
 - **Pointwise high frequency remains live.** The result does not control a prescribed `u_X->infinity`; `PL-187` also leaves such pointwise values outside its broad-window conclusion.
 - **The result is scalar.** A joint operator, matrix-valued target, completed source/target coupling, or phase-dependent coefficient system may contain information not reducible to one Fourier transform `hat nu_X` and must be tested separately.
+- **The weak-* strengthening is macroscopic.** It controls fixed continuous weights in `q/X` and, using PNT, fixed positive-width sub-bands. It does not imply cancellation in shrinking prime intervals or for `X`-dependent weights whose variation scale tends to zero.
 - **No quantitative Möbius bound is supplied.** The compactness argument gives only a qualitative implication and deliberately avoids pretending that Fourier uniqueness provides an effective arithmetic estimate.
 - **No RH implication is obtained.** Fixed-shift Möbius cancellation on shifted primes is a hard parity statement, but this finding supplies no bridge from it to `Re(s)=1/2` or Weil positivity.
 - **The common-frequency subtraction is harmless.** It multiplies the readout by a unit-modulus factor and leaves both its modulus and its zero-frequency value unchanged; it cannot erase arithmetic coefficient information.
 
 ## Consequence for the research line
 
-The bounded-window escape left after `PL-187` is now narrower. A scalar affine/Kronecker construction cannot hope that averaging over a fixed positive effective-width window at bounded normalized phase will automatically regularize the large-prime Möbius/Liouville tail. Any proof of such flattening would already contain the signed cancellation that `PL-186` and `PL-188` identify as the hard arithmetic input.
+The bounded-window escape left after `PL-187` is now narrower. A scalar affine/Kronecker construction cannot hope that averaging over a fixed positive effective-width window at bounded normalized phase will automatically regularize the large-prime Möbius/Liouville tail. Any proof of such flattening would already contain the signed cancellation that `PL-186` and `PL-188` identify as the hard arithmetic input, and would in fact force the entire macroscopic signed coefficient measure on the carrier band to vanish weak-*.
 
-The remaining affine possibilities are therefore structurally different: a genuinely pointwise or diverging-center high-frequency observable, a shrinking effective window, a phase-dependent target justified by arithmetic rather than programming, or a joint/nonlocal/completed construction whose decisive matrix element is not just the Fourier transform of one compactly supported coefficient measure. For any proposed bounded-center scalar window, the audit question is immediate:
+The remaining affine possibilities are therefore structurally different: a genuinely pointwise or diverging-center high-frequency observable, a shrinking effective window, a phase-dependent target justified by arithmetic rather than programming, a genuinely shrinking/local target scale, or a joint/nonlocal/completed construction whose decisive matrix element is not just the Fourier transform of one compactly supported coefficient measure. For any proposed bounded-center scalar window, the audit question is immediate:
 
 \[
 \boxed{
-\text{does the claimed phase-window estimate already imply the zero-frequency arithmetic mean?}
+\text{does the claimed phase-window estimate already imply the macroscopic arithmetic cancellation it is meant to bypass?}
 }
 \]
 
