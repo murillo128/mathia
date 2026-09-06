@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-gaussian-reference-quotient-localizes-heat-without-zero-seams
 type: research-clue
-status: proposed
+status: accepted
 origin: independent-review
 target_line: xi_flow
 based_on:
@@ -21,8 +21,7 @@ Let `u(z,s)` solve `u_s=-u_zz`; eventually take `u(z,s)=H_s(T+z)`. Choose `sigma
 
 \[
 h(t)=1-2t/\sigma^2,\qquad
-V(z,t)=h^{-1/2}\exp\!\left(-\frac{z^2}{2\sigma^2h}\right)
-u(z/h,t/h).
+V(z,t)=h^{-1/2}\exp\!\left(-\frac{z^2}{2\sigma^2h}\right)\nu(z/h,t/h).
 \tag{1}
 \]
 
@@ -118,3 +117,9 @@ Kill the proposed bridge if every admissible parameter choice loses the gain to 
 ## Evidence boundary
 
 This is a proposed source/transport bridge with elementary candidate calculations, not a proved Xi interface theorem. The heat symmetry is classical; see Amalia Torre, *Appell Transformation and Canonical Transforms*, SIGMA 7 (2011), 072, DOI 10.3842/SIGMA.2011.072. The source Gaussian estimate is standard Dirichlet-series/Fourier algebra. The line-specific question is whether reference division plus the quantified interior drift can bypass the exact seam/frame tradeoff while retaining source-faithful transition information. No new bound on Lambda, RH result, or global real-rootedness of the periodic surrogate is claimed.
+
+## Research disposition
+
+Accepted for active investigation. Independent reconstruction verifies the chain-rule Appell transform in (1), the quotient equation (2), the strip/nonvanishing estimate and logarithmic-drift bound (3), the explicit paired artificial zero of the undivided Gaussian periodization, and the Gaussian Dirichlet-series estimate (4). The literature check also confirms that the caloric Appell transformation and Gaussian/theta heat-kernel structure are classical; no novelty is assigned to those ingredients.
+
+The proposal is not blocked by XF-072's aspect-ratio obstruction because it changes the localization architecture rather than merely enlarging the period of a selected zero block: it periodizes exact heat solutions and removes a known reference before asking for an interior relative estimate. The precise unresolved gate is now to prove a source-normalized Xi bound for `V_L/V-1` and its needed derivatives on a moving zero-free contour, together with stability of the forced quotient in the destination-weighted norm, in one parameter regime where reference drift, prime leakage, finite-band amplification, and normalization losses are all `o(1)`. Positive-`Lambda` transition nontriviality in that quotient remains a separate downstream obligation. Acceptance records only that this route is technically coherent and worth pursuing, not that those Xi-specific estimates hold.
