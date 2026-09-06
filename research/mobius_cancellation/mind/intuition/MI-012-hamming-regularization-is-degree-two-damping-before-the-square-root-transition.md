@@ -1,31 +1,31 @@
-# MI-012 — Hamming endpoint cancellation lives beyond every sub-log-log radial truncation
+# MI-012 — Hamming endpoint cancellation is a signed cross-degree resource, not shell magnitude
 
-**Evidence level:** exact source decomposition plus classical approximation/almost-prime input through MC-106
+**Evidence level:** exact source decomposition plus classical Landau--Selberg--Delange/Sathe--Selberg input through MC-111
 
 ## Core intuition
 
-The Hamming deformation does not hide its Möbius cancellation in a favorable low-bias window or in a finite collection of low radial shells. The known source spike propagates into every moving interval unless the interval is already very narrow, while every fixed Hamming shell above degree one has a positive Landau main term and the same positive cascade persists uniformly through all degrees `o(log log N)`.
+The Hamming deformation now exposes the endpoint obstruction across the entire natural shell scale. The shell coefficients remain positive through fixed proportional degree and across the turning window near `2 log log N`; direct truncations retain a boundary-sized remainder rather than the tiny Möbius endpoint. Taking norms of the shell magnitudes loses exactly the cross-degree signs that produce the endpoint.
 
-The hard endpoint is much smaller than those positive partial sums. Its cancellation must therefore be carried by degrees at least on the first `Theta(log log N)` scale, or by a non-radial relation that bypasses radial truncation altogether.
+The first signed local repairs do not solve this. A fixed finite filter that preserves parity but only cancels the locally flat shell profile to first order still leaves almost-square filtered coefficients, so taking absolute values after that filter merely relocates the same loss. The surviving radial resource must retain **higher-order or genuinely nonlocal signed interaction between many degrees before absoluteization**.
 
 ## Strongest justified principle
 
-MC-104 combines the source spike with the exact degree ceiling and Chebyshev extrapolation. Interval location is irrelevant at this level: a moving window of width `(log N)^(-A+o(1))` must contain amplitude at least `N^(2-2A-o(1))`, so a critical-scale uniform bound requires width at most `(log N)^(-1/2+o(1))`. Broad moving-window search is therefore not an escape from the low-bias obstruction.
+MC-107 extends the positive shell cascade to every fixed proportional Sathe--Selberg scale and identifies its peak near `k=2 log log N`. MC-109 shows that even in the critical turning regime an alternating prefix is asymptotically a fixed fraction of its boundary shell, with the omitted tail forced to cancel it. The endpoint is therefore not localized by stopping near the peak.
 
-MC-105 then identifies the source-specific shell structure. For every fixed `k>=2`, the radial coefficient `C_{k,N}` has a positive asymptotic proportional to `(2 log log N)^(k-2)/(k-2)!`, consecutive shells grow by `2 log log N/(k-1)`, and every fixed signed truncation is dominated by its last shell. Since the actual endpoint is logarithmically smaller, the tail beyond every fixed cutoff must cancel that partial sum.
+MC-110 proves a stronger information-loss statement. Every positive diagonal `L^p`/Hölder certificate, with arbitrary shell weights, is bounded below by the actual central shell and therefore remains `N^{2-o(1)}`. Parseval and the shell square function display the same almost-square energy. The missing resource is not a better radial weight; it is cancellation between different degrees before magnitudes are taken.
 
-MC-106 upgrades the statement uniformly to every moving cutoff `K_N=o(log log N)`. Hence **no radial mechanism that sees only sub-log-logarithmic Hamming degree can contain the endpoint cancellation**. The first genuinely unresolved radial regime is `k=Theta(log log N)`, where a uniform Sathe--Selberg-scale analysis of the signed source kernel would be needed.
+MC-111 tests the first non-diagonal escape. For a fixed finite filter `A`, `A(-1)` is exactly its parity transfer and `A(1)` its response to a locally flat positive shell profile. If `A(1) != 0`, the central bulk survives directly. If `A(1)=0` but `A'(1) != 0`, the filtered central coefficients are still of order `N^2/log log N`, and their absolute variation remains almost square. Thus adjacent even/odd pairing and every fixed first-order local difference fail as endpoint certificates once their outputs are absoluteized.
 
 ## What remains possible
 
-The central `Theta(log log N)` shell regime may contain a source-specific signed relation not visible in the fixed/sub-log-log asymptotics. A recurrence whose order grows with `N`, an observable coupling many shells at once, or a non-radial/product-fiber relation can also evade the truncation theorem.
+A fixed filter with a zero of order at least two at `z=1` and `A(-1) != 0` is not yet classified. Neither are filters whose order/range grows with `N`, signed recurrences that control the filtered sequence without absoluteization, or non-radial/product-fiber relations that never collapse to Hamming degree.
 
-A narrow or pointwise window remains useful only if it comes with such a source-specific signed relation. Width or favorable location alone no longer supplies evidence of endpoint cancellation.
+These are materially different possibilities. A higher-order zero may simply take more derivatives of the same smooth central profile and still leave an almost-square floor; that must be proved rather than assumed. A genuinely nonlocal relation could instead couple enough of the critical shell profile to transport parity directly.
 
 ## Status / novelty
 
-Chebyshev/Remez extrapolation, Landau almost-prime asymptotics, and Sathe--Selberg uniformity are classical. The durable line synthesis is the scale localization: **the actual signed endpoint cancellation is forced out of every `o(log log N)` radial truncation and cannot be recovered by broad moving-window amplitude control.**
+The analytic asymptotics and finite-difference background are classical; the persisted Mathia contribution is the source-specific sequence of no-go boundaries. The durable synthesis is now: **Möbius endpoint information is stored in signed cross-degree coherence across the critical shell profile, and neither direct truncation, positive diagonal shell norms, nor first-order fixed local filtering preserves enough of that resource after absoluteization.** No improved Mertens estimate or RH consequence is claimed.
 
 ## Falsification criterion
 
-Invalidate the moving-window Chebyshev transfer, exhibit a nonpositive shell within the claimed uniform `o(log log N)` regime, or produce an exact source-valid radial identity using only `o(log log N)` degrees that already reproduces the hard endpoint without importing an equivalent endpoint estimate. Otherwise the next radial analysis must enter the `Theta(log log N)` scale.
+Produce a valid direct cutoff in the proportional/critical shell regime whose retained prefix is already at the Möbius endpoint scale; construct a positive diagonal shell certificate with fixed polynomial saving despite MC-110; or exhibit a fixed parity-preserving first-order local filter whose absoluteized reconstruction beats the MC-111 floor. Otherwise the next radial mechanism must be higher-order/growing/nonlocal and must keep signed cross-degree cancellation visible.

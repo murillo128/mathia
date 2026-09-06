@@ -2,22 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Solve the support-uniform heterogeneous-multiplicity gate before reopening complex one-pair geometry
+## Force genuinely unbounded multiplicity-scale complexity before reopening complex one-pair geometry
 
 **Linked intuitions:** `MI-004-complete-scalar-control-is-diffraction-realizability` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-070--ANF-072 reduce the residual central-notch one-pair problem to collapsed real multiplicity. ANF-073 shows that the minimum-elementary-slack normalization fails a doubled-site test, while ANF-074 proves that amplitude reoptimization rescues every sufficiently small viable notch shape against the complete positive-spectrum class supported on at most two distinct real sites.
+ANF-072 reduces the residual one-pair central-notch danger to collapsed real multiplicity. ANF-075 shows that every fixed support cap can be defeated by narrowing the notch, while ANF-076 closes the unbounded uniform-occupancy class through the exact `q_real` statistic.
 
-ANF-075 removes fixed support cardinality as the next fundamental obstruction: for every prescribed support cap `R`, a sufficiently narrow notch survives all real multisets with at most `R` occupied sites after paying the corresponding deterministic normalization slack. ANF-076 simultaneously closes the unbounded-support **uniform-occupancy** class exactly through the finite-real floor `q_real`; one common optimized amplitude handles every replicated support geometry in that class.
+ANF-077 then decomposes heterogeneous multiplicity by superlevel sets and isolates an explicit amplitude penalty `P(k)` against heterogeneity. ANF-078 closes every fixed maximum-occupancy cap uniformly in support size by Bernoulli thinning. ANF-079 goes further: even unbounded multiplicities are harmless when the occupied multiplicities lie in only finitely many geometric bands. Thus neither support growth, nor large multiplicity, nor heterogeneity by itself is the remaining scalar obstruction.
 
-The remaining scalar real-multiplicity frontier is therefore **heterogeneous occupancy at support cardinality that grows as the notch narrows**. A useful obstruction must exploit nonuniform multiplicities in a support-uniform way; checking three sites, or any other fixed finite support count, cannot settle the shape family. Complex height should be reopened only after this real support-uniform gate is understood.
+The first unresolved real one-pair class must carry **unbounded multiplicative occupancy-scale complexity** as the notch narrows, together with enough support growth to prevent reduction to one of the closed bounded-complexity regimes. Complex height should not be reopened until this support-and-scale-uniform envelope is understood.
 
-## Use cardinality eleven as the first one-pair higher-order frontier
+## Separate multiplicity-scale complexity from higher-order carrier complexity
 
-ANF-069 proves that with at most eight real anchors every finite-height one-pair scalar reversal is seeded by negative quadratic curvature. The coefficient-sign argument first stops being automatic at nine real anchors, total cardinality eleven. Treat that as a boundary to test, not as evidence that a higher-order mechanism exists: derive an explicit coefficient obstruction or construct a genuine counterexample before promoting a new scalar branch.
+A candidate with many occupancy scales is still a scalar real-multiplicity problem. Ordered carriers, multi-pair geometry, or genuinely complex-height data introduce different information and should not be credited merely because the scalar envelope has become difficult.
 
-This cardinality frontier is distinct from the support-uniform multiplicity problem above: repeated-site multiplicity and higher-order finite-height reversal probe different mechanisms and should not be conflated merely because both require larger configurations.
+The next useful theorem should either derive a support-uniform certificate whose constants depend on an explicit multiplicity-scale complexity functional, or construct a matched scalar family whose required number of occupancy bands diverges and which survives every currently certified notch/thinning control. Failure of bounded scale complexity is a necessary frontier condition, not evidence that such a family exists.
 
-## Seek ordered or multi-pair information beyond the classified scalar categories
+## Keep diffraction realizability separate from scalar occupancy escape
 
-The completed five-point theorem, screened six-point base branch, collapse reduction, every fixed real-support cap, and the full unbounded uniform-occupancy class should be used as controls. A genuinely new route should change the information category -- ordered/multi-point structure, multiple nonreal pairs, another source profile, or a non-scalar carrier -- rather than repeatedly re-optimizing a scalar mechanism already known to survive all fixed support caps.
+The complete scalar control remains constrained by the realizability of the underlying positive-definite/diffraction data. Any proposed heterogeneous witness must therefore survive both the multiplicity-scale gate above and the original realizability/normalization constraints; a formal occupancy vector that cannot arise from the admissible scalar object is not a live counterexample.

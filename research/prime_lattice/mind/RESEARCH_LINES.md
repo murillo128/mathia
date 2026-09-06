@@ -6,19 +6,21 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`, `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, and `MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution`.
 
-PL-184--PL-185 show that bounded-variation targets and polylogarithmic residue labels scalarize under one-point prime equidistribution. PL-186 goes further: every bounded observable of the entire shifted-prime exponent vector below any subpower cutoff is asymptotically governed by Ford's independent Kubilius model. The full shifted Möbius/Liouville parity is therefore located in the large-prime tail or a coupling involving it.
+PL-184--PL-186 show that bounded-variation targets, polylogarithmic residue labels, and the whole shifted-prime exponent vector below any subpower cutoff are asymptotically controlled by classical one-point/Kubilius information. PL-188 identifies the boundary: strong local divisor/sieve information can coexist with completely wrong global Liouville parity. A live exponent-lattice mechanism must expose the exact large-prime-tail or bilinear coupling that is absent from those local marginals.
 
-PL-188 identifies the structural boundary of the obvious local-refinement strategy. Classical sieve/divisor information can remain extremely strong while global Liouville parity is completely wrong; breaking that barrier requires genuinely bilinear or otherwise parity-sensitive information. A live exponent-lattice mechanism should expose the exact cross-tail term that cannot be recovered from Type-I/local divisor marginals rather than merely enlarge the local coordinate block.
+Enlarging the local coordinate block without a parity-sensitive cross-tail relation is therefore not a new carrier. A decisive theorem must derive a relation that genuinely couples the hidden large-prime tail to the retained lattice data.
 
-## Do not treat any ordinary positive-width affine phase average as an easier parity bypass
+## Treat ordinary affine phase averaging as having no intermediate easy regime
 
-PL-187 shows that every affine phase window whose effective normalized width diverges erases an arbitrary bounded target in averaged `L^2`; high center frequency does not rescue the signal. PL-189 now closes the complementary bounded-width regime at bounded normalized center in the opposite direction. After the natural rescaling, all frequencies in a fixed macroscopic prime band have uniformly bounded diameter. Fourier compactness and analytic uniqueness imply that flattening on any fixed positive-length bounded normalized window already forces the zero-frequency arithmetic mean to vanish.
+PL-187 shows that affine phase windows with diverging effective normalized width erase every bounded target in averaged `L^2`. PL-189 proves the opposite rigidity for bounded-center windows of fixed positive normalized width: flattening already forces the zero-frequency arithmetic mean to vanish by Fourier compactness and analytic uniqueness.
 
-For the hard shifted Möbius target, such a bounded-window theorem would therefore already prove the corresponding shifted-prime cancellation. The surviving affine possibilities are narrower: isolated pointwise frequencies, shrinking normalized windows, windows whose normalized centers escape to infinity, or genuinely joint/nonlocal operators. None is automatically easier; each needs a source-specific mechanism rather than generic averaging.
+PL-190 closes the shrinking-width gap as a separate averaging mechanism. Because the dephased affine frequency diameter is uniformly bounded, an unnormalized shrinking-window integral is vacuous and the normalized mean square differs from the pointwise value at its moving center by `O(delta_X)`. This holds even when the center tends to infinity. Shrinking windows therefore reduce quantitatively to an isolated pointwise readout and supply no extra uniqueness or averaging gain.
+
+The surviving scalar affine regimes are now narrower: a genuinely arithmetic pointwise phase theorem, or a **positive-width** window whose normalized center escapes to infinity. Joint/nonlocal/completed operators remain separate possibilities. None is automatically easier than the original cancellation problem; each needs source-specific structure beyond generic Fourier geometry.
 
 ## Force completed arithmetic sign or one-sided coercivity upstream
 
-A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, or bounded-window Fourier uniqueness already contains the hard cancellation step.
+A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, pointwise phase, or positive-width Fourier uniqueness already contains the hard cancellation step.
 
 ## Resolve target-sensitive Nyman data and genuinely relational prime-shift actions
 
