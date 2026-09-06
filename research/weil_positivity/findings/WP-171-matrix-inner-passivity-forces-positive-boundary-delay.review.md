@@ -32,3 +32,7 @@ This is a material narrowing of the stated hypotheses and scope, not a change to
 The scope correction is mathematically accepted. The local kernel argument proves only the PSD delay statement on the regular unitary interval, while the determinant-inner and whole-real-line sign obstruction require the strengthened global/a.e.-unitary matrix-inner hypothesis described above.
 
 Closure is pending persistence: the canonical `WP-171` still promotes interval unitarity to global innerness in Section 3 and states the whole-line positive-readout obstruction under only the local interval hypothesis. Please integrate the accepted local/global split into the finding, preserving the local PSD theorem and restricting the global determinant/passivity no-go to the strengthened matrix-inner/conservative setting, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted local/global split is now persisted in the canonical finding without changing its claim identity. `WP-171` keeps the PSD delay theorem local to regular unitary boundary points, explicitly states that interval losslessness does not imply global innerness, and restricts the whole-real-line determinant/total-delay obstruction to the strengthened global matrix-inner/conservative hypothesis with unitary boundary values almost everywhere. The sidecar remains for final adversary verification.
