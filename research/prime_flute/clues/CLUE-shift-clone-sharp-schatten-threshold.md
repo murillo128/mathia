@@ -7,6 +7,7 @@ target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
   - research/prime_flute/findings/PF-125-shift-clone-has-compact-relative-resolvent.md
+  - research/prime_flute/findings/PF-142-zero-twist-reflection-removes-short-collar-phase-gauge.md
   - research/prime_flute/findings/PF-171-all-margulis-short-central-first-resolvent-blocks-have-sharp-Sr-threshold.md
   - research/prime_flute/findings/PF-173-relative-central-recoupling-is-trace-summable.md
   - research/prime_flute/findings/PF-174-weighted-defect-controls-smoothed-schatten-scale.md
@@ -33,6 +34,10 @@ PF-177--PF-182 construct the exact-area body/collar ingredients and remove the v
 
 PF-186 now rules out the tempting generic route to that final hypothesis. Even on the normalized PF-185 slab, exact symplectic reflection-equivariant boundary-fixed maps can have zero flux and metric deviation tending to zero in `L^infinity` while their derivative equals `-I` at reflected interior points. Hence neither local `L^r` energy nor even small pointwise metric strain selects the near-identity derivative branch. The canonical prime/shift construction must supply additional structure, or the splice must be localized directly below the `C^1` chart threshold.
 
+A targeted rigidity audit sharpens that second option. Kupferman--Maor--Shachar, *Reshetnyak rigidity for Riemannian manifolds* (Arch. Ration. Mech. Anal. 231 (2019), 367--408, DOI `10.1007/s00205-018-1282-9`, arXiv:1701.08892), work with compact oriented Riemannian manifolds **possibly with `C^1` boundary** and prove qualitative `W^{1,p}` rigidity: if the differential distance to the orientation-preserving isometries tends to zero in `L^p`, a subsequence converges to an isometric immersion; for diffeomorphisms carrying boundary to boundary between equal-volume manifolds, their proof identifies the limit as an isometry. Conti--Dolzmann--Müller, *Optimal Rigidity Estimates for Maps of a Compact Riemannian Manifold to Itself* (SIAM J. Math. Anal. 56 (2024), 8070--8095, DOI `10.1137/24M1650168`, arXiv:2402.06448), prove the optimal quantitative analogue for `1<p<infinity`, controlling `W^{1,p}` distance to a **single global isometry** by the `L^p` differential-distance energy.
+
+These results show that PF-186's localized rotations are not automatically a Sobolev-scale obstruction: geometric rigidity is designed precisely to couple locally varying rotation frames. But they do **not** yet supply PF-183 equation (11). The Conti--Dolzmann--Müller theorem does not state the quantitative boundary version needed for the normalized annulus, neither source supplies a constant already proved uniform over the compact metric family `g_L`, `0<=L<=mu_*`, and both formulate rigidity modulo a global isometry rather than directly modulo the PF-142 marked identity. The remaining exact-symplectic cutoff is a separate problem even after Sobolev rigidity is established.
+
 ## Research question
 
 Can one construct, for every `r>1`, one smooth complete area-preserving marking `F:X->X_+` whose true-short-collar transitions satisfy PF-183's uniform energy-local estimate and therefore give
@@ -44,7 +49,7 @@ Can one construct, for every `r>1`, one smooth complete area-preserving marking 
 
 while PF-112 keeps the endpoint outside `S_1`?
 
-After PF-184--PF-186 this has a sharper local form: on every normalized true-short-collar slab, either prove that the **actual PF-179--PF-184 relative germ** enters PF-185's fixed generating chart using explicit canonical information stronger than strain, or construct an exact-symplectic localization at Sobolev/energy regularity that does not require such chart entry.
+After PF-184--PF-186 and the rigidity audit, the local problem has a more precise intermediate gate. On every normalized true-short-collar slab, either prove that the **actual PF-179--PF-184 relative germ** enters PF-185's fixed generating chart using explicit canonical information stronger than strain, or establish a boundary-uniform marked geometric-rigidity estimate at `W^{1,r}` scale and then construct an exact-symplectic localization whose cost is linear in that Sobolev/strain energy.
 
 ## Why it may matter
 
@@ -70,16 +75,35 @@ E_r(\operatorname{splice}_\eta)
 
 on both source and inverse/target sides.
 
-There are now two admissible positive routes. The first is **canonical chart entry**: derive a uniform `C^1` near-identity bound for the actual relative germs from the explicit PF-179--PF-182 assembly plus PF-142 marking/PF-184 exactness, not from metric strain alone; then PF-185's generating-function cutoff applies. The second is **low-regularity exact localization**: prove the same energy estimate directly in a Sobolev/exact-symplectic framework that remains valid under localized rotational microstructure of the PF-186 type.
+For the low-regularity route, separate **rigidity** from **symplectic localization** instead of treating them as one black box. First prove, or decisively refute, a quantitative estimate on the fixed annulus of the schematic form
 
-PF-143--PF-145 remain the interface falsifiers, while PF-186 is now the chart-entry falsifier. A claimed proof that begins with only `delta->0`, exactness, zero flux, and reflection and concludes `C^1` closeness is invalid. A decisive negative result must instead show an unavoidable cost for the **canonical** germ or for every exact-area localization satisfying the required boundary values; failure of one chosen interpolation or existence of noncanonical microtwists is not enough.
+\[
+\inf_{\phi\in\mathcal I_L}
+\|H-\phi\|_{W^{1,r}}
+\le
+C_r\left(
+\|\delta_{g_L,H^*g_{L^+}}\|_{L^r}+|t|
+\right),
+\]
+
+with `C_r` uniform for `0<=L<=mu_*`, where `mathcal I_L` is the finite-dimensional/global isometry ambiguity compatible with the annular model. The PF-175 quasi-isometry regime makes the metric-deficit and differential-distance energies locally comparable, so the real missing theorem is the **quantitative boundary/uniform-family version**, not a pointwise choice of polar rotation. Kupferman--Maor--Shachar supply a qualitative boundary compactness/falsification control; Conti--Dolzmann--Müller supply the target optimal scaling in the boundaryless/global setting.
+
+Second, show that the canonical PF-142 marking and whatever additional canonical trace or `C^0` information is actually available select the identity component/isometry in a quantitatively stable way. Reflection alone is insufficient: PF-142 explicitly records the half-turn ambiguity before the ordered marking is imposed, and a Sobolev argument must not silently replace that discrete selection by the infinitesimal Korn statement of PF-185.
+
+Third, assuming the marked `W^{1,r}` estimate, construct an exact-symplectic cutoff between the core identity and outer canonical germ with the same linear `W^{1,r}` cost. This is the genuinely symplectic part of the low-regularity route; a geometric-rigidity theorem by itself does not provide the Hamiltonian/exact-area interpolation.
+
+The alternative positive route remains **canonical `C^1` chart entry**: derive a uniform near-identity bound for the actual relative germs from the explicit PF-179--PF-182 assembly plus PF-142 marking/PF-184 exactness, not from metric strain alone; then PF-185's generating-function cutoff applies.
+
+PF-143--PF-145 remain the interface falsifiers, while PF-186 is the chart-entry falsifier. A claimed proof that begins with only `delta->0`, exactness, zero flux, and reflection and concludes `C^1` closeness is invalid. A decisive negative result must instead show an unavoidable cost for the **canonical** germ or for every exact-area localization satisfying the required boundary values; failure of one chosen interpolation or existence of noncanonical microtwists is not enough.
 
 ## Evidence boundary
 
 No complete weighted area-preserving marking is established. PF-183 remains conditional on the local splice estimate. PF-184 proves exactness but no quantitative cutoff. PF-185 proves marked coercivity and the cutoff estimate only after fixed `C^1` chart entry. PF-186 proves that such entry is not a consequence of the generic energy/topology/marking hypotheses, but it does **not** show that the canonical prime/shift germ realizes its counterexample and does not refute a low-regularity splice theorem.
 
+The rigidity literature narrows the gap but does not close it. Kupferman--Maor--Shachar give qualitative convergence, not the per-collar linear estimate needed for summability. Conti--Dolzmann--Müller give the desired optimal `W^{1,r}`-versus-strain scaling modulo isometries, but the required annulus-with-boundary extension and uniformity through the `L=0` cusp limit have not been established here. Neither theorem supplies an exact-symplectic cutoff, and no claim is made that PF-142's marking alone gives the required quantitative isometry selection at Sobolev regularity.
+
 PF-175 therefore remains conditional, and neither `S_r` membership for all `r>1` nor a counterexample above the trace endpoint has been proved.
 
 ## Research disposition
 
-The clue remains `accepted`. The live problem is no longer a broad volume/gluing question. It is the **canonical nonlinear frame-selection/localization problem on one normalized true-short-collar slab**: either extract fixed-chart entry from the explicit assembled prime/shift germ, or bypass fixed-chart entry with an exact-area energy-local construction. PF-183 then handles the infinite family automatically. The clue resolves only when those local splices assemble to the complete PF-175 hypothesis and yield the density-unitary `S_r`, `r>1`, classification, or when a genuine unavoidable obstruction to that local energy estimate is proved.
+The clue remains `accepted`. The live problem is now factored into a more precise sequence: **uniform marked Sobolev rigidity on the normalized short-collar family**, followed by **energy-linear exact-symplectic localization**. The existing rigidity literature makes the first step plausible and provides a strong qualitative falsification control, while PF-186 explains why it must stop at Sobolev rather than `C^1` scale. The canonical `C^1` route remains available if the explicit prime/shift assembly supplies stronger information. PF-183 handles the infinite collar family automatically once either local route yields the required estimate. The clue resolves only when those local splices assemble to the complete PF-175 hypothesis and yield the density-unitary `S_r`, `r>1`, classification, or when a genuine unavoidable obstruction to that local energy estimate is proved.
