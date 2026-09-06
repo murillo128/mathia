@@ -104,3 +104,7 @@ This file records durable external literature dependencies used to support or de
 ## Angle distortion between inner products
 
 - Minghua Lin and Gord Sinnamon, **The Generalized Wielandt Inequality in Inner Product Spaces**, *Eurasian Mathematical Journal* 3:1 (2012), 72–85. arXiv `1201.6294`. Role: Theorem 2.4 gives the sharp half-angle comparison for vector angles under two inner products in terms of the extreme norm ratios. This is the classical prior-art authority for `VIS-045`; that finding only specializes the theorem to common Fisher gauges on Mathia's residual interaction space and derives the elementary pointwise gauge-ratio/log-oscillation robustness corollaries.
+
+## Bounded-differences concentration for independent control replicates
+
+- Colin McDiarmid, **On the method of bounded differences**, in *Surveys in Combinatorics, 1989*, London Mathematical Society Lecture Note Series 141, Cambridge University Press (1989), 148–188. DOI: `10.1017/CBO9781107359949.008`. Role: classical bounded-differences inequality used in `VIS-061` to turn independent simplex-valued control replicates into an explicit high-probability `L^1` radius. `VIS-061` does not claim a new concentration theorem; it specializes this standard result to whole-matrix empirical three-gap tables so that arbitrary within-matrix dependence can remain inside each independently generated control replicate.
