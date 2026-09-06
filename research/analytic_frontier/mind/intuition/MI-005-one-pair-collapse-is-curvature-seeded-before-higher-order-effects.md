@@ -1,27 +1,31 @@
-# MI-005 — One-pair collapse is curvature-seeded through ten points, but curvature is not the affine verdict
+# MI-005 — One-pair scalar reversal is curvature-seeded through ten points, and six-point danger is confined to a notch boundary layer
 
-**Evidence level:** exact and source-validated through ANF-069
+**Evidence level:** exact and source-validated through ANF-071, with the ANF-070 spatial floor supported by an explicit interval certificate plus analytic continuation of the bound
 
 ## Core intuition
 
-The first failure of the Montgomery--Taylor five-point real-collapse geometry occurs at six points, but the failure is more structured than a generic loss of positivity. For one conjugate pair with up to eight real anchors, every higher collapse coefficient has the favorable sign: a finite-height reversal can occur only when the quadratic curvature already points downward. At the same time, negative curvature is not itself an affine obstruction because the collapsed real configuration carries positive spatial slack.
+For a nonnegative one-pair spectrum with at most eight real anchors, finite-height collapse reversal is not an independent higher-order phenomenon: it can occur only when the quadratic curvature already points downward. In the Montgomery--Taylor six-point case even that full curvature-seeded descent is screened by positive spatial affine slack. A small central notch can create a new reversal only by perturbing a base configuration lying within a shrinking neighborhood of the curvature boundary `D=0`, and the corresponding height is forced toward zero.
+
+The conceptual separation is therefore sharper than “curvature is not the affine verdict.” **Base curvature decides whether the one-pair scalar energy wants to collapse; spatial slack screens the complete base reversal branch; and the only residual six-point notch problem is a singular perturbation layer where curvature, notch size, and affine multiplicity slack must be compared on their common shrinking scale.**
 
 ## Strongest justified principle
 
-ANF-067 proves that the quadratic curvature gate is positive for three real anchors and can become negative for four, locating the first infinitesimal reversal at total cardinality six. ANF-068 then shows that every such six-point negative-curvature configuration lies in a region where the collapsed affine term has a uniform positive reserve, screening sufficiently small heights and small admissible central-notch perturbations.
+ANF-069 gives the all-order one-pair coefficient theorem. Through eight real anchors, higher coefficients have the favorable sign, so a finite-height reversal is seeded by negative quadratic curvature and has at most one positive crossing.
 
-ANF-069 gives the all-order completion for the one-pair model. Through eight real anchors, the collapse defect divided by the height squared is strictly increasing whenever the quadratic coefficient is negative, so there is at most one positive crossing and no independent higher-order reversal. For the Montgomery--Taylor six-point case the reversing height is explicitly bounded. The first cardinality at which spectral positivity alone no longer forces this curvature-seeded picture is nine real anchors, total size eleven.
+ANF-070 then proves the missing Montgomery--Taylor spatial comparison. Its certified lower bound `F(t) >= r(t)/8`, with a strict surplus on the active-deficit region, forces a uniform positive six-point affine margin for every four-anchor configuration with `D(T)<0` at every height. Thus the complete base-profile reversal branch is affine-safe; sufficiently small admissible central notches also preserve a fixed margin on the branch where the base profile actually reverses.
 
-The conceptual separation is therefore **curvature decides whether the one-pair scalar energy initially wants to collapse, while affine slack decides whether that descent is actually dangerous for the target inequality**. Those are distinct gates and should not be conflated.
+ANF-071 treats the complementary base-nonreversing regime. If `D(T)>=0` but the notched profile reverses, then necessarily `0 <= D(T) < s b_eta eta^3`, the notched curvature defect is at most the same scale, and every reversing height satisfies the explicit `O(sqrt(s b_eta eta^3))` bound. Outside that strip the notched profile cannot reverse at any height.
 
 ## What remains possible
 
-A complete six-point scalar screening still requires a canonical proof that the spatial floor dominates the entire curvature-seeded branch, not only an infinitesimal neighborhood. At total cardinality eleven and above, higher-order coefficients may in principle create a new one-pair mechanism even when the quadratic gate is nonnegative. Multiple nonreal pairs, ordered carriers, and other source profiles remain outside the theorem.
+The complete one-pair six-point central-notch inequality is not yet proved. The remaining base-nonreversing branch is a local problem near `D=0, y=0`: the collapsed real-multiplicity affine slack must be compared against the small negative notch-induced collapse defect. A vanishing first-order slack on the curvature boundary could still expose a genuine notch obstruction.
+
+At total cardinality eleven and above, higher-order coefficients may in principle create a one-pair reversal not seeded by negative quadratic curvature. Multiple nonreal pairs, ordered carriers, other source profiles, and non-scalar information remain outside the one-pair theorem.
 
 ## Status / novelty
 
-The coefficient expansion and source-specific inequalities are exact persisted results; the analytic ingredients are classical. The durable synthesis is the cardinality-and-gate separation: **through ten points, one-pair scalar reversal is curvature-seeded, but negative curvature must still defeat an independent affine reserve before it becomes a genuine obstruction**.
+The coefficient expansion, curvature-strip reduction, and six-point affine screening are persisted exact results; the one-dimensional spatial-floor certificate has a documented computer-assisted finite step. The analytic ingredients are classical and no publication-level novelty claim is inferred. The durable synthesis is the gate structure: **through ten points the one-pair scalar dynamics are curvature-seeded; at six points the entire base reversal is already screened, leaving only a notch-induced boundary layer rather than a global finite-height search.**
 
 ## Falsification criterion
 
-Produce a one-pair configuration with at most eight real anchors whose collapse defect reverses at finite height while its quadratic coefficient is nonnegative, invalidate ANF-068's affine-slack screening for a negative-curvature six-point configuration, or find an error in the coefficient-sign/multiplicity argument of ANF-069.
+Produce a one-pair configuration with at most eight real anchors whose finite-height reversal occurs while its quadratic coefficient is nonnegative for the same nonnegative profile; invalidate ANF-070's certified spatial floor or its affine consequence; or produce a base-nonreversing six-point notch reversal outside ANF-071's curvature/height layer.

@@ -2,34 +2,42 @@
 
 This file holds genuinely cross-line mathematical questions suggested by the durable Mathia intuitions. It is not a summary of the local minds, a roadmap, task queue, status page, or history.
 
-## Preserve source-specific relation through the exact scalarization that supplies the final theorem
+## Preserve source-specific relation through the exact consumption step that supplies the final theorem
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Prime Circle now closes finite local angular/radial complexification in addition to radial refinement: holomorphic anchored jets are still one Euler/Mellin carrier. Möbius Cancellation gives the complementary signed warning: fixed bias intervals and the whole mesoscopic regime before square-root bias are dominated by a positive degree-two shell, while the hard endpoint requires large signed cross-degree cancellation. Prime Lattice shows that even discontinuous one-point targets and polylogarithmic congruence labels scalarize whenever an applicable equidistribution theorem sees them.
+Prime Circle continues to close finite local refinements of one cyclotomic field: anchored holomorphic jets and source-native refinement/order corrections remain one Euler/Mellin carrier. Prime Lattice likewise shows that rough one-point targets and small-modulus arithmetic labels scalarize whenever the applicable equidistribution theorem sees only one moving prime at a time.
 
-Weil Inertia makes the same bottleneck explicit at the global-assembly level. Arbitrary nonlinear/source-conditioned local pressure still buys nothing if the shifted-block proof retains it only as one universal scalar tax; the period-33 witness cancels the local sophistication. Across these lines the useful question is no longer whether an intermediate representation is richer, but **which relational component survives the final Mellin, averaging, positive, or scalar-tax quotient**.
+Möbius Cancellation now closes both low-bias amplitude regularization and generic reconstruction. The degree-two shell gives way to a positive linear diagonal floor at the square-root transition, while Chebyshev extremality makes exact recovery from polynomially shrinking windows superpolynomially ill-conditioned on the full degree-bounded class. A useful transfer must exploit a source-specific signed relation, not merely smaller intermediate amplitudes.
 
-## Separate canonical-reference reset, full information loss, and endpoint observability
+Weil Inertia strengthens the same interface test. Arbitrary nonlinear scalar pressure is erased by a universal scalar tax, and WI-177 shows that even a finite-dimensional additive vector buys nothing if the final theorem consumes it only through affine/support-function dual directions on the same period-33 witness. The useful question is therefore **which joint relation survives the final Mellin, averaging, positive, reconstruction, or dual-consumption quotient**, not how rich the intermediate storage looks.
 
-Arithmetic Fidelity now resolves the Shtarkov geometry beyond a scalar leakage budget. Local max-sum conflict exactly controls radial center reset, accumulated mismatch evolves by conditional averaging plus reset, and endpoint effect is a transported covariance with the declared discriminator. The full Shtarkov likelihood-ray variance is strictly richer: it vanishes exactly at sufficiency and can detect tangential information loss even when the canonical center commutes perfectly.
+## Calibrate information and uncertainty to the exact destination decision
 
-Visual Exploration supplies a parallel error-interface lesson. Fixed-partition raw-law error propagates through nonlinear Markov closure to Fisher orientation, while overlapping-block sampling decomposes into exact periodic-cylinder short-lag channels plus separately justified long-memory dependence. In both lines, **a canonical or normalized observable is useful only after the loss and uncertainty are measured in the topology and direction the destination actually consumes**.
+Arithmetic Fidelity now separates exact sufficiency geometry from approximate recovery scale. Shtarkov mass contraction is exactly the Bayes defect for one envelope decision problem, while full likelihood-ray variance has exact zero set equal to sufficiency. AF-156 nevertheless shows that in growing families both radial and unnormalized whole-ray aggregate defects can remain order one while worst-case recovery deficiency and every individual Shtarkov-reference Pearson certificate vanish. Source-natural coordinates therefore do not determine a family-uniform approximate metric by themselves.
 
-## Couple finite arithmetic to an intrinsic real-place object before regular passive closure
+Visual Exploration supplies the statistical analogue. For a frozen finite zeta table, VIS-060 needs no zeta process model: a fresh matched-control confidence radius propagates to exact residual-distance and orientation intervals with probability only over the control simulation. Across-height inference is a separate layer requiring target-side replication/dependence control. In both lines, **the relevant topology, aggregation, and uncertainty budget must be chosen from what the destination claim actually consumes**.
 
-Weil Positivity's finite selector and archimedean Gamma phase remain complementary, but the passive escape category is now much narrower. Matrix Schur delay is semidefinite, finite Pontryagin defect cannot absorb the Gamma phase's infinite non-Blaschke divisor, and regular `J`-contractive channels terminated by passive Hilbert feedback collapse back to the Schur class even with infinitely many ports.
+## Couple finite arithmetic to an intrinsic real-place object before genuinely changing passive analytic category
 
-A surviving finite--archimedean architecture must therefore be nonseparable before passive scalarization or genuinely change analytic category through an infinite/singular structure with its own coercivity theorem. Escaping an ordinary positive representation is not itself a sign mechanism.
+Weil Positivity's finite selector and archimedean Gamma phase remain complementary, but the passive escape category is narrower again. Matrix Schur delay is semidefinite, finite Pontryagin defect cannot absorb the Gamma divisor, regular `J`-contractive/passive-Hilbert closure remains Schur, and WP-174 shows that a singular parameter limit still cannot reach Gamma on an interior uniqueness set while the visible approximants stay contractive on a common or exhausted analytic domain.
 
-## Finish the Prime-Flute comparison through one energy-local collar theorem
+A surviving finite--archimedean architecture must therefore be nonseparable before passive scalarization or genuinely lose the closed Schur category through domain degeneration, weak/relation-valued closure, unbounded renormalization, infinite index, or another mechanism with its own coercivity theorem. Escaping the representation is not itself the sign theorem.
 
-Prime Flute has now removed the long-body, split, cusp, and decomposition-cuff interfaces from the `S_r`, `r>1`, budget. Disjoint uniformly thick slabs around the true short collars make the infinite family globally summable once one uniform exact-area energy-local splice estimate is proved. The unresolved geometric route is therefore one normalized local theorem plus the final source-specific prime/clone spectral discriminator; the trace endpoint remains separate.
+## Finish the Prime-Flute comparison by proving uniform nonlinear chart entry
 
-## Localize the exact periodic Xi diagonalization without losing source information
+Prime Flute has now removed the long-body, split, cusp, decomposition-cuff, infinite-collar-multiplicity, annular-flux, and normalized Killing-field obstructions for `S_r`, `r>1`. PF-185 gives the desired energy-local conservative cutoff once the canonical relative true-short-collar germ lies in one fixed `C^1` generating neighborhood.
 
-Xi Flow has progressed beyond a tangent-only bridge. Finite-displacement selector control is state-based, slow-band concentration has local finite-difference sufficient criteria, and periodic Vieta coordinates diagonalize the full nonlinear zero heat flow while remaining collision-safe. The live cross-line interface is now to feed source-specific horizontal information into those low Vieta/state coordinates and quantify localization from the periodic window to the real Xi transition.
+The remaining geometric gate is therefore a uniform chart-entry/regularity theorem for those actual canonical germs, not another global collar summation. After that, the separate arithmetic burden remains a marked spectral observable that distinguishes the prime flute from its all-composite shift clone. The trace endpoint remains a different category.
 
-## Use the first larger-cardinality Analytic-Frontier boundary as a discriminator, not a reason to reopen five points
+## Localize the exact periodic Xi diagonalization in a destination-weighted Vieta quotient
 
-Analytic Frontier keeps the Montgomery--Taylor five-point scalar category closed. At six points the first one-pair curvature reversal appears, but affine slack screens the infinitesimal descent; through total cardinality ten every finite-height one-pair reversal is still curvature-seeded. The useful next scalar tests are the complete six-point affine screening and the first higher-order frontier at total cardinality eleven, while ordered/multi-pair carriers remain genuinely different categories.
+Xi Flow has removed two algebraic conditioning concerns. XF-068 shows that the Newton map has only polynomial source loss after positive heat time, and XF-069 shows that translating the compact selector center recovers each source-visible periodic power sum exactly without a growing period penalty. The remaining localization error is a center-averaged Xi/periodic interface mismatch.
+
+At the same time, XF-069 proves that fixed ultra-infrared Vieta modes can be source-unresolved and heat-undamped while contributing vanishing third-difference transition energy. The correct source-to-state theorem should therefore quotient or weight away destination-null low modes rather than demand raw control of every Vieta coordinate. The live cross-line interface is to feed source-specific horizontal information into the exact destination resource without manufacturing stronger source hypotheses than the transition observable needs.
+
+## Use the localized six-point Analytic-Frontier boundary as a discriminator, not a reason to reopen closed scalar branches
+
+Analytic Frontier now closes the complete Montgomery--Taylor six-point base reversal branch: ANF-070's certified spatial floor leaves positive affine slack for every negative-curvature one-pair/four-anchor configuration at every height. ANF-071 shows that a central notch can create a new reversal from the base-nonreversing side only inside a shrinking layer near `D=0, y=0`.
+
+The useful six-point scalar test is therefore the affine slack inside that notch-induced boundary layer, while total cardinality eleven remains the first one-pair size where a higher-order reversal not seeded by negative curvature is no longer excluded. Ordered and multi-pair carriers remain genuinely different information categories.

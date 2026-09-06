@@ -1,27 +1,31 @@
-# MI-003 — Overlap uncertainty must be separated from residual geometry
+# MI-003 — Target uncertainty, control uncertainty, overlap geometry, and residual conditioning must stay separate
 
-**Evidence level:** exact fixed-partition geometry plus process-aware finite-sample identities through VIS-059
+**Evidence level:** exact fixed-representation geometry and process-aware/control-only finite-sample interfaces through VIS-060
 
 ## Core intuition
 
-A stable geometric residual is not yet a statistically stable observation of that residual. For overlapping gap blocks, the uncertainty layer should be decomposed explicitly: raw-law estimation error, nonlinear closure sensitivity, normalization conditioning, deterministic short-range overlap geometry, and genuine long-range process dependence are different quantities and should not be collapsed into one effective-sample-size heuristic.
+A stable geometric residual is not yet a statistically stable observation of that residual, and comparing two residuals does not require assigning the same stochastic semantics to both objects. For overlapping gap blocks, raw-law estimation error, nonlinear closure sensitivity, normalization conditioning, deterministic short-range overlap, genuine long-range dependence, target-side generalization, and control-side Monte Carlo uncertainty are different channels.
+
+For a frozen finite arithmetic table, the cleanest first question is conditional and finite-object: **hold the target fixed, randomize only the matched control, and ask whether the target residual lies outside a rigorously certified control-population ball or cone.** A process model for the target is needed only when the claim is generalized beyond that frozen table.
 
 ## Strongest justified principle
 
-VIS-057 proves that the adjacent-pair Markov completion is globally Lipschitz in finite-alphabet `L^1`, so a valid raw-law radius propagates through recomputed closure to the Fisher residual and its normalized orientation. The certificate correctly becomes weak when residual energy or the common-reference floor is too small.
+VIS-057 proves that adjacent-pair Markov completion is globally Lipschitz in finite-alphabet `L^1`, so any valid raw-law radius propagates deterministically to the Fisher residual and, away from zero residual energy, to normalized orientation.
 
-VIS-058 derives the exact second moment of an empirical overlapping-block law. The dependence correction is a sum of collision covariances, with the first overlap lags kept explicit and only separated blocks delegated to a justified mixing or other process envelope. VIS-059 then shows that those short lags are not generic dependence penalties: they are masses of finite periodic cylinders. In the active three-gap case they are exactly constant-run and period-two return channels.
+VIS-058 derives the exact second moment of an empirical overlapping-block law. Dependence enters through collision covariances, with overlap lags explicit and only separated blocks delegated to a justified mixing or other process envelope. VIS-059 identifies the exceptional short lags as finite periodic-cylinder masses; for three gaps they are the constant-run and period-two return channels.
 
-Thus the inferential chain is modular: **first characterize overlap geometry exactly, then supply an honest long-memory law, then convert the resulting raw-law radius through the already controlled residual map**. An image or Fisher angle should be interpreted only after this chain leaves a nontrivial orientation margin.
+VIS-060 adds the asymmetric inference interface. If the zeta table `Z` is frozen and only a random control estimator `P_hat` approximates a control population `P`, the same deterministic residual map gives exact intervals for `||Delta(Z)-Delta(P)||_H`, residual-energy differences, and signed orientation using only the control-side confidence event. No sampling semantics for `Z` are introduced. The probability statement remains entirely about the independently simulated control.
 
 ## What remains possible
 
-A sharper concentration theorem can replace the coarse second-moment radius without changing the downstream geometry. Higher-order block laws can sharpen periodic-cylinder ceilings. The major unresolved issue is source-specific: justify a population/uncertainty model for finite zeta and comparison data and separately control changes of partition, support, closure convention, and common reference.
+A fixed-window zeta/CUE experiment can therefore be tested with substantially fewer assumptions than a population statement about the zeta zeros. The representation and selected window must still be frozen before confirmation, or the confidence construction must cover the selection rule. If a finite-window separation survives fresh matched controls, replication across heights or a justified zeta-side dependence model can then ask whether it generalizes.
+
+Sharper control concentration can replace the coarse second-moment radius without changing the residual geometry. Higher-order block laws can sharpen periodic-cylinder ceilings. Adaptive partition, support, unfolding, closure, and Fisher-reference changes still require their own simultaneous or fresh-sample controls.
 
 ## Status / novelty
 
-Conditional-independence completion, empirical-measure covariance, mixing bounds, and word periodicity are classical. The durable synthesis is the error architecture for the active visual experiment: **overlap, long memory, closure nonlinearity, and residual conditioning are distinct uncertainty channels with exact interfaces between them**.
+Conditional-independence completion, empirical-measure covariance, mixing bounds, word periodicity, and Monte Carlo calibration are classical ingredients. The durable synthesis is the modular error architecture: **deterministic target geometry, control simulation uncertainty, target population uncertainty, overlap, long memory, and nonlinear residual conditioning have exact interfaces and should not be collapsed into one effective-sample-size story.**
 
 ## Falsification criterion
 
-Invalidate the Markov-completion perturbation bound, the exact collision-covariance second-moment identity, or the equivalence between overlapping-block equality and periodic-cylinder structure. A weak numerical certificate does not falsify the intuition; it indicates that the current data/model do not support a stable direction claim.
+Invalidate the Markov-completion perturbation bound, the collision-covariance identity, the periodic-cylinder characterization, or VIS-060's fixed-target/control-only residual and orientation intervals under their stated hypotheses. Failure of one finite-window comparison to separate from its control does not falsify the architecture; it means the declared data/representation lack a certified residual difference at that scale.

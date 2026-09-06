@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Carry non-scalar source information through the global assembly rather than retuning local pressure
+## Preserve genuinely joint source information beyond affine global consumption
 
-**Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses`, `MI-009-scalar-universality-collapses-to-fourier-positivity`, and `MI-011-local-nonlinearity-is-lost-by-a-universal-scalar-tax`.
+**Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses`, `MI-009-scalar-universality-collapses-to-fourier-positivity`, `MI-011-local-nonlinearity-is-lost-by-a-universal-scalar-tax`, and `MI-012-affine-vector-retention-is-still-scalarization-at-the-witness`.
 
-WI-172 proves that actual Montgomery--Taylor source placement beats the sharp arbitrary-positive relaxation, so source realizability matters. WI-174 shows that sharpening only the fixed four-point local constant has negligible theorem-level headroom, and WI-175 shows that every nonnegative linear gap-pressure vector is erased by the period-33 witness under the existing scalar shifted-block assembly.
+WI-172 proves that actual Montgomery--Taylor source placement beats the sharp arbitrary-positive relaxation, so source realizability matters. WI-174--WI-176 then close fixed-constant squeezing and arbitrary scalar local pressure whenever the shifted-block assembly retains only a universal scalar tax: the period-33 source witness cancels the local sophistication.
 
-WI-176 closes the obvious nonlinear repair. The local potential may be arbitrary, finite-range, nonlinear, and source-conditioned; if the global proof remembers it only through one universal scalar tax valid on the same witness class, phase averaging makes the witness pay exactly the same scalar average and the `67.3604%` ceiling survives. The live route must therefore retain a vector/state-resolved observable through the global assembly, couple several genuinely independent profiles without scalarizing them, use the exceptional block, or derive zeta-specific source information that excludes the periodic witness.
+WI-177 closes the first vector repair. An arbitrary finite-dimensional additive state can be retained through the local analysis, but if the final theorem consumes it through affine/support-function dual directions valid on the same deterministic source class, the period-33 rotation vector cancels every direction simultaneously. Positive LP/conic combinations reduce to the same obstruction. The live route must therefore preserve a **genuinely joint nonlinear source constraint** whose admissible set excludes the witness rotation point, couple information absent from the retained positive Montgomery--Taylor interface, use the exceptional block, or add a zeta-specific theorem that makes the witness inadmissible.
 
 ## Treat bounded-bandwidth confluence as a hard scalar information barrier
 
@@ -20,4 +20,4 @@ The exact joint pair-correlation budget still allows shallow off-line pairs and 
 
 ## Move from residual rank to quantitative source coercivity
 
-Full rank, PSD consistency, or a nonzero carrier remain admission gates only. Any matrix/welding route must prove a source-calibrated lower margin that survives confluence and the exact exceptional-population controls.
+Full rank, PSD consistency, a nonzero carrier, or a larger vector state remain admission gates only. Any matrix/welding route must prove a source-calibrated lower margin that survives confluence, the exact exceptional-population controls, and the period-33 joint-witness test.
