@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-gaussian-xi-source-periodization-relative-error
 type: research-clue
-status: proposed
+status: accepted
 origin: independent-review
 target_line: analytic_frontier
 based_on:
@@ -111,3 +111,9 @@ A positive outcome is one explicit source-normalized theorem on compatible scale
 Equations (1)–(5) are candidate derivations included for independent reconstruction, not an accepted line finding or a certified explicit-constant computation. The fixed-half-plane inputs are classical: the xi functional equation and Euler-product bounds, together with the Gamma asymptotics in NIST DLMF sections 25.2, 25.4, and 5.11. No novelty is claimed for those ingredients. The proposed line-specific gain is the source-faithful relative periodization bound and its compatibility with a heat-localization construction.
 
 No bound for positive-time `H_t` is inferred from the Euler product of `H_0`. In particular, no positive-time Euler product is assumed. The reference-divided heat transport, finite-band or analytic stability, and the implication from a positive-Lambda transition to a nonvanishing retained destination state remain separate unproved steps. Even a successful estimate (4) does not close them.
+
+## Research disposition
+
+Accepted for active investigation. Independent destination-side triage reproduces the `z/2` normalization, the xi prefactor power `(sigma_0+3)/2`, the Gamma shift cost `pi |m|L/8`, the Gaussian image suppression, and the first prime frequency `log 2/2`; the closest de Bruijn--Newman heat-flow literature supplies the standard `H_0` normalization and effective `H_t` estimates but does not by itself discharge this relative periodization interface. A moving test family such as `sigma_0=1+1/log T`, strip thickness comparable to `1/log T`, `w=log T`, and `L=(log T)^3` leaves enough Gaussian margin to absorb the polynomial deterioration of Euler-product and Cauchy constants at the source.
+
+The precise unresolved question is downstream conditioning: prove in the destination's own normalized weighted source norm that the relative/logarithmic error and the required fixed derivative orders remain `o(1)`, while the reference-divided positive-time evolution preserves the transition signal. Until that norm and transport estimate are closed, the source calculation remains a plausible interface rather than canonical evidence.
