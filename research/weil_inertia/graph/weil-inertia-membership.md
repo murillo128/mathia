@@ -67,3 +67,8 @@ This supplements the line hub's existing structural block with canonical finding
 - [[research/weil_inertia/findings/WI-170-lamzouri-distinctness-slack-is-exact-offline-multiplicity-budget|WI-170]]
 - [[research/weil_inertia/findings/WI-171-four-point-saturation-witness-is-uniformly-gram-realizable|WI-171]]
 - [[research/weil_inertia/findings/WI-172-c2330-four-point-candidate-awaits-kernel-check|WI-172]]
+- [[research/weil_inertia/findings/WI-173-fixed-bandwidth-lamzouri-adaptivity-is-uniformly-confluence-blind|WI-173]]
+- [[research/weil_inertia/findings/WI-174-fixed-p2500-four-point-constant-is-below-2343e-6|WI-174]]
+- [[research/weil_inertia/findings/WI-175-linear-gap-pressure-reweighting-is-periodic-witness-cancelled|WI-175]]
+- [[research/weil_inertia/findings/WI-176-scalar-local-pressure-is-periodic-witness-cancelled|WI-176]]
+- [[research/weil_inertia/findings/WI-177-affine-vector-assembly-is-periodic-witness-cancelled|WI-177]]
