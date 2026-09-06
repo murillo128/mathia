@@ -86,7 +86,7 @@ Thus the proposed notch loss is at most `80 s b_eta eta`; the displayed paramete
 
 ## Evidence boundary
 
-The new scalar evidence is an exhaustive rigorous Arb certificate, not dense sampling. The global floor inherits ANF-059's exterior certificate; the affine and notch consequences additionally use the persisted analytic reductions. The proposed clue has not undergone Research Watch acceptance, canonical derivation, or its prior-art gate. No optimal spatial constant or minimizer is claimed. The notch question covers only the base-profile reversing branch and does not establish the complete notched six-point inequality, configurations with multiple nonreal pairs, other spectra, a universal affine inequality, or RH.
+The new scalar evidence is an exhaustive rigorous Arb certificate, not dense sampling. The global floor inherits ANF-059's exterior certificate; the affine and notch consequences additionally use the persisted analytic reductions. Acceptance marks this as a research-worthy direction, not as canonical evidence: the finite certificate and its downstream splice still require Research Watch validation before promotion to a finding. No optimal spatial constant or minimizer is claimed. The notch question covers only the base-profile reversing branch and does not establish the complete notched six-point inequality, configurations with multiple nonreal pairs, other spectra, a universal affine inequality, or RH.
 
 ## Research disposition
 
