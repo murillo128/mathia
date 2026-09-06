@@ -123,7 +123,7 @@ This fixed-multivalued decomposition is important for the singular-feedback inte
 
 The collapse (7) combines directly with `WP-175`, and it sharpens one of that finding's deliberately conservative caveats.
 
-Let `M_m(z)` be Nevanlinna families on arbitrary Hilbert spaces `H_m`; the spaces may change with `m`. Let `u_m,v_m in H_m` be unit vectors and define
+Let `M_m(z)` be Nevanlinna families on arbitrary Hilbert spaces `H_m`; the spaces may change with `m`. Let \(u_m,v_m\in H_m\) be unit vectors and define
 
 \[
 s_m(z)
@@ -153,45 +153,52 @@ R_\infty
 \tag{14}
 \]
 
-The same observation closes plain finite-dimensional determinants even when the dimension varies. If `dim H_m=d_m<infinity`, then all singular values of `S_{M_m}(z)` are at most one, so
+The same observation closes plain finite-dimensional determinants even when the dimension varies. If `dim H_m=r_m<infinity`, then all singular values of `S_{M_m}(z)` are at most one, so
 
 \[
-d_m(z):=\det S_{M_m}(z)
+D_m(z):=\det S_{M_m}(z)
 \tag{15}
 \]
 
 is analytic and satisfies
 
 \[
-|d_m(z)|\le1.
+|D_m(z)|\le1.
 \tag{16}
 \]
 
-Thus `d_m` is again a scalar Schur function for every `m`, with no fixed-dimension hypothesis needed after scalarization. The identity block in (11) contributes determinant one and cannot hide the Gamma phase. Therefore changing finite boundary dimension alone does not evade `WP-175` through an **unrenormalized determinant**.
+Thus `D_m` is again a scalar Schur function for every `m`, with no fixed-dimension hypothesis needed after scalarization. The identity block in (11) contributes determinant one and cannot hide the Gamma phase. Therefore changing finite boundary dimension alone does not evade `WP-175` through an **unrenormalized determinant**.
 
 This does not justify a claim about Fredholm determinants, regularized determinants, dimension-dependent multiplicative counterterms, or scalarizations whose operator norm is allowed to diverge. Those operations need not remain in the scalar Schur unit ball and are genuinely outside (14)--(16). Precisely for that reason, however, their positivity cannot be inherited for free from the Nevanlinna relation: the renormalization itself becomes part of the proposed geometric mechanism.
 
-## 4. Direct Weyl readouts have the same sign rigidity on regular real intervals
+## 4. Regular direct Weyl readouts retain one sign
 
-One might avoid the Cayley phase and try to identify the Gamma logarithmic derivative directly with a Weyl derivative. Relation-valuedness does not rescue that regular route either.
+One might avoid the Cayley phase and try to identify the Gamma logarithmic derivative directly with a Weyl derivative. The following statement is intentionally restricted to the ordinary regular operator-valued subcase, so that no hidden domain claim is made about general unbounded relation families.
 
-For the active operator part `M_s`, the Nevanlinna kernel
+Suppose the active part is an operator-valued Nevanlinna function
+
+\[
+M_s(z)\in\mathcal B(H_s)
+\tag{17}
+\]
+
+and extends holomorphically through a real interval `J` with self-adjoint values there. Its Nevanlinna kernel
 
 \[
 K_M(z,w)
 :=
 \frac{M_s(z)-M_s(w)^*}{z-\overline w}
-\tag{17}
+\tag{18}
 \]
 
-is positive in the usual operator-kernel sense. Suppose `M_s` extends holomorphically through a real interval `J` with self-adjoint values there. Taking the diagonal boundary limit in (17) gives
+is positive. Taking the diagonal boundary limit gives
 
 \[
 \boxed{
 M_s'(t)\succeq0,
 \qquad t\in J.
 }
-\tag{18}
+\tag{19}
 \]
 
 The opposite Nevanlinna orientation reverses this fixed semidefinite sign. The exact Gamma phase velocity retained by `WP-169` is
@@ -200,12 +207,12 @@ The opposite Nevanlinna orientation reverses this fixed semidefinite sign. The e
 A_\infty(t)
 =
 \operatorname{Re}\psi\!\left(\frac14+\frac{it}{2}\right)-\log\pi,
-\tag{19}
+\tag{20}
 \]
 
-which is negative near the origin and positive after its unique positive zero. Therefore no positive scalar readout of (18), in either fixed orientation, can equal `A_infty(t)` on a real interval spanning both sign regions. The vertical block (9) has no varying operator derivative to contribute.
+which is negative near the origin and positive after its unique positive zero. Therefore no positive scalar readout of (19), in either fixed orientation, can equal `A_infty(t)` on a real interval spanning both sign regions. The vertical block (9) has no varying operator derivative to contribute.
 
-So the two most canonical ways to extract a visible passive response from a Nevanlinna boundary relation fail for complementary but equivalent reasons: its Cayley response remains Schur, while its regular self-adjoint Weyl derivative has one semidefinite orientation. The sign-changing archimedean term cannot be hidden in ordinary multivaluedness.
+So the two most canonical **regular** ways to extract a visible passive response from a Nevanlinna boundary relation fail for complementary but equivalent reasons: its Cayley response remains Schur, while a regular bounded self-adjoint Weyl branch has one semidefinite derivative orientation. The general singular/unbounded direct-Weyl case is not silently included in this derivative statement.
 
 ## 5. Aggressive falsification and matched controls
 
@@ -219,21 +226,28 @@ So the two most canonical ways to extract a visible passive response from a Neva
 
 **Nonseparable finite--archimedean assembly remains open.** The result assumes that the exact real-place Gamma data is extracted as a standalone Weyl/Cayley observable before the final global Weil form is established. It does not apply if finite-prime incidence and the archimedean sector are coupled first and `R_infty` appears only as a derived signed observable after a genuinely global positive theorem. That remains the branch's preferred structural escape.
 
-A matched positive control shows that the obstruction is not an artefact of relations. Let `H=H_0 direct_sum H_infty` and
+A matched positive control shows that the obstruction is not an artefact of relations. Let
+
+\[
+H=H_0\oplus H_\infty
+\tag{21}
+\]
+
+and
 
 \[
 M(z)=\operatorname{gr}(zI_{H_0})
 \oplus(\{0\}\times H_\infty).
-\tag{20}
+\tag{22}
 \]
 
-This is a perfectly valid Nevanlinna relation family. Its Cayley transform is
+This is a valid Nevanlinna relation family. Its Cayley transform is
 
 \[
 S_M(z)
 =
 \frac{z-i}{z+i}I_{H_0}\oplus I_{H_\infty},
-\tag{21}
+\tag{23}
 \]
 
 an ordinary passive Schur response with a nontrivial vertical sector. The relation formalism works exactly as intended; what it does **not** do is create a new sign-changing passive transfer class.
@@ -242,11 +256,11 @@ an ordinary passive Schur response with a nontrivial vertical sector. The relati
 
 The relation-valued machinery is classical. Vladimir Derkach, Seppo Hassi, Mark Malamud, and Henk de Snoo, *Boundary relations and their Weyl families*, Transactions of the American Mathematical Society 358 (2006), 5351--5400, DOI `10.1090/S0002-9947-06-04033-5`, introduced boundary relations and Weyl families and proved realization results for maximal-dissipative holomorphic families of linear relations. Their later *Boundary relations and generalized resolvents of symmetric operators*, Russian Journal of Mathematical Physics 16 (2009), 17--60, DOI `10.1134/S1061920809010026`, develops the same Nevanlinna-family framework in the Krein--Naimark generalized-resolvent setting.
 
-Jussi Behrndt, Seppo Hassi, and Henk de Snoo, *Boundary Relations, Unitary Colligations, and Functional Models*, Complex Analysis and Operator Theory 3 (2009), 57--98, DOI `10.1007/s11785-008-0064-z`, explicitly connects Nevanlinna/Weyl families with operator-valued Schur transfer functions and unitary colligations. Volodymyr Derkach, Seppo Hassi, and Mark Malamud, *Generalized boundary triples, I. Some classes of isometric and unitary boundary pairs and realization problems for subclasses of Nevanlinna functions*, Mathematische Nachrichten 293 (2020), no. 7, 1278--1327, records the generalized boundary-pair setting in which the Weyl objects are Nevanlinna functions or families. The standard decomposition of a Nevanlinna family into a `z`-independent multivalued part and an operator part is part of this literature.
+Jussi Behrndt, Seppo Hassi, and Henk de Snoo, *Boundary Relations, Unitary Colligations, and Functional Models*, Complex Analysis and Operator Theory 3 (2009), 57--98, DOI `10.1007/s11785-008-0064-z`, explicitly connects Nevanlinna/Weyl families with operator-valued Schur transfer functions and unitary colligations. Volodymyr Derkach, Seppo Hassi, and Mark Malamud, *Generalized boundary triples, I. Some classes of isometric and unitary boundary pairs and realization problems for subclasses of Nevanlinna functions*, Mathematische Nachrichten 293 (2020), no. 7, 1278--1327, records the generalized boundary-pair setting in which the Weyl objects are Nevanlinna functions or families. The standard decomposition of a Nevanlinna family into a `z`-independent multivalued part and an operator part belongs to this literature.
 
-Yury Arlinskiĭ and Seppo Hassi, *Stieltjes and inverse Stieltjes holomorphic families of linear relations and their representations*, Studia Mathematica (2019/2020), DOI `10.4064/sm180714-12-3`, gives explicit Cayley-transform connections from Nevanlinna families to operator-valued Schur functions in its representation theory. The maximal-dissipative-relation Cayley correspondence itself is standard linear-relation theory.
+Yury Arlinskiĭ and Seppo Hassi, *Stieltjes and inverse Stieltjes holomorphic families of linear relations and their representations*, Studia Mathematica, DOI `10.4064/sm180714-12-3`, gives explicit Cayley-transform connections from Nevanlinna families to operator-valued Schur functions in its representation theory. The maximal-dissipative-relation Cayley correspondence itself is standard linear-relation theory.
 
-No novelty is claimed for maximal dissipativity, Cayley transforms, the fixed multivalued decomposition, Nevanlinna kernels, boundary monotonicity, or Schur functional models. The substantive branch-specific statement is the combination of those classical facts with the exact Gamma obstruction of `WP-169`--`WP-175`:
+No novelty is claimed for maximal dissipativity, Cayley transforms, the fixed multivalued decomposition, Nevanlinna kernels, regular boundary monotonicity, or Schur functional models. The substantive branch-specific statement is the combination of those classical facts with the exact Gamma obstruction of `WP-169`--`WP-175`:
 
 \[
 \boxed{
@@ -255,7 +269,7 @@ No novelty is claimed for maximal dissipativity, Cayley transforms, the fixed mu
 \Longrightarrow
 \text{Schur/one-sign rigidity, not the Gamma channel}.
 }
-\tag{22}
+\tag{24}
 \]
 
 ## 7. Research consequence
