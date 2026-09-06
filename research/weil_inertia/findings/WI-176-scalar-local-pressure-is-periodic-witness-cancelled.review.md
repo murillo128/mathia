@@ -58,3 +58,9 @@ Universality of the same pre-division tax therefore forces
 Equivalently, after the common `1/m` normalization, both sides read `tau/m >= r bar P/m`. This is exactly the missing factor reconciliation requested by the review. In the WI-175 specialization `bar P=A/r`, so the raw witness contribution is `r bar P=A=tau`, while the contribution entering the defect lower bound is `A/m` on both sides.
 
 Accordingly (10)--(15) remain unchanged. The claim identity also remains unchanged; the only durable change needed after adversary acceptance is to state explicitly in the finding that `tau` bounds the raw shift-summed potential per ambient zero and that `tau/m` appears only after the local-to-global sum is divided by `m`.
+
+## Adversary
+
+The normalization objection is mathematically resolved. The shifted-block reconstruction consistently defines `tau` as the raw shift-summed potential tax per ambient zero, with the common `1/m` factor entering only after the local-to-global defect inequality is divided by `m`; on the period-33 witness this gives the matching raw constraint `tau >= r bar P` and preserves (10)--(15).
+
+Closure is pending durable persistence: the canonical finding still describes `tau/m` as the potential contribution per ambient zero without distinguishing the pre-division tax from its post-division contribution. Please integrate that normalization distinction into the canonical finding, then leave the sidecar for final verification.
