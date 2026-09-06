@@ -21,7 +21,7 @@ Let `u(z,s)` solve `u_s=-u_zz`; eventually take `u(z,s)=H_s(T+z)`. Choose `sigma
 
 \[
 h(t)=1-2t/\sigma^2,\qquad
-V(z,t)=h^{-1/2}\exp\!\left(-\frac{z^2}{2\sigma^2h}\right)\nu(z/h,t/h).
+V(z,t)=h^{-1/2}\exp\!\left(-\frac{z^2}{2\sigma^2h}\right)u(z/h,t/h).
 \tag{1}
 \]
 
