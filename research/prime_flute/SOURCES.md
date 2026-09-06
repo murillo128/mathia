@@ -326,6 +326,29 @@ Relevant finding: PF-147; relevant local clue: `CLUE-shift-clone-sharp-schatten-
 
 **Scope warning.** These are classical operator-theoretic results. They do not prove the open global prime/shift hypothesis `(Delta_+ + 1)^(-2) - (Delta + 1)^(-2) in S_1`, nor do they give boundary values, a scattering phase, resonances, or an RH mechanism for the prime flute. PF-147 is the project-specific conditional placement of that gate in the `S_2 \ S_1` first-resolvent hierarchy.
 
+## S19 — Riemannian geometric rigidity for the normalized collar route
+
+**R. Kupferman, C. Maor, A. Shachar**, *Reshetnyak Rigidity for Riemannian Manifolds*, Archive for Rational Mechanics and Analysis 231 (2019), 367–408. DOI: 10.1007/s00205-018-1282-9; arXiv:1701.08892.
+
+- https://arxiv.org/abs/1701.08892
+- https://doi.org/10.1007/s00205-018-1282-9
+
+**S. Conti, G. Dolzmann, S. Müller**, *Optimal Rigidity Estimates for Maps of a Compact Riemannian Manifold to Itself*, SIAM Journal on Mathematical Analysis 56 (2024), 8070–8095. DOI: 10.1137/24M1650168; arXiv:2402.06448.
+
+- https://arxiv.org/abs/2402.06448
+- https://doi.org/10.1137/24M1650168
+
+Used for:
+
+- Kupferman--Maor--Shachar's Riemannian Reshetnyak theorem on compact connected oriented manifolds, explicitly allowing `C^1` boundary: vanishing `L^p` differential distance to the orientation-preserving fiber isometries gives strong `W^{1,p}` subsequential convergence to a smooth isometric immersion;
+- their boundary-to-boundary/equal-volume clause, which upgrades the limit to an isometry and in particular applies to diffeomorphisms;
+- PF-187's compact-family specialization to the fixed normalized short-collar annulus, yielding a qualitative modulus uniform through the `L=0` cusp limit after boundary normalization and PF-142 marking;
+- Conti--Dolzmann--Müller as the closest quantitative prior art: optimal linear `W^{1,p}` rigidity modulo a global isometry on a compact Riemannian manifold to itself.
+
+Relevant finding: PF-187; relevant local clue: `CLUE-shift-clone-sharp-schatten-threshold.md`.
+
+**Scope warning.** Kupferman--Maor--Shachar give qualitative compactness, not the per-collar linear rate needed by PF-183. The Conti--Dolzmann--Müller theorem as audited here does not state the annulus-with-boundary version required by the prime-flute splice. Neither source boundary-normalizes the raw PF-179--PF-184 annular germ or supplies an energy-linear exact-symplectic cutoff. PF-187 therefore removes only a qualitative Sobolev-degeneration failure mode; the quantitative local splice gate remains open.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
