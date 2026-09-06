@@ -4,31 +4,35 @@
 
 ## Core intuition
 
-Detecting the right defect is not the same as being able to use it. A carrier may be nonzero, coordinate invariant, source-native, full rank, canonically centered, or separated by pointwise probes and still lose the information needed by the final theorem. The common requirement is a **quantitative non-escape theorem in the exact resource consumed by the destination assembly**.
+Detecting the right defect is not the same as being able to use it. A carrier may be nonzero, coordinate invariant, source-native, full rank, canonically centered, nonlinear, arithmetically labelled, or separated by pointwise probes and still lose the information needed by the final theorem. The common requirement is a **quantitative non-escape theorem in the exact resource consumed by the destination assembly**.
 
-That resource can be a family-wide reverse channel with coherent source-reference transport, a weighted relative operator ideal, an ordered non-coboundary interaction, a signed cross-degree cancellation budget, a source-calibrated local pressure not matched by a periodic witness, a perturbatively stable signed coordinate, or a positive-time selector frame that remains valid under nonlinear dynamics. Intermediate structure earns leverage only when the source supplies the uniform margin that survives every lossy operation downstream.
+That resource can be full likelihood-ray recovery rather than center drift, a weighted relative operator ideal, an ordered non-coboundary interaction, a signed cross-degree cancellation budget, a state-resolved global pressure rather than one scalar tax, a process-aware perturbation margin, or a collision-safe nonlinear Xi coordinate with controlled localization. Intermediate structure earns leverage only when the source supplies the uniform margin that survives every lossy operation downstream.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity sharpens the recovery gate. AF-142--AF-149 identify common recovery and a source-selected Shtarkov reference, while AF-150 shows that stagewise recanonicalization can drift even under approximate recoverability. The destination object is not merely “a good canonical center” but a coherent reverse channel/reference path with a controlled information-loss budget.
+Arithmetic Fidelity now separates three levels exactly. AF-151--AF-153 show that Shtarkov recanonicalization is a local conflict reset whose path composition and endpoint effect depend on conditional transport; AF-154 shows that this radial reset is only a projection of the full likelihood-ray conditional variance. A canonical center can therefore look stable while tangential experiment information is lost.
 
-Prime Flute supplies a successful geometric narrowing. PF-173--PF-181 progressively remove zero-mode, volume-gauge, long-body degeneration, artificial split, and full-cusp mismatch. The remaining non-escape theorem is now exactly the PF-175 inverse-unit-ball weighted metric budget on the compatible cuff/true-short-collar complete assembly.
+Prime Flute supplies a successful geometric narrowing. PF-182 removes decomposition seams, and PF-183 proves that above the trace endpoint the infinite true-short-collar family creates no independent multiplicity obstruction once a single energy-local exact-area splice estimate is available on a normalized thick slab. The remaining non-escape theorem is local but must still control the exact weighted metric resource used by PF-175.
 
-Weil Inertia shows how a genuine source gain can still hit a representation ceiling. WI-172 beats the arbitrary-positive relaxation, but WI-174 leaves negligible headroom in the fixed local constant and WI-175 proves every nonnegative linear pressure is erased to its total coefficient by the same period-33 witness under the existing assembly. A new margin must consume information absent from that witness.
+Weil Inertia makes scalarization explicit. WI-176 allows the local pressure to be arbitrarily nonlinear and source-conditioned, yet the period-33 witness erases it if the global assembly retains only one universal scalar tax. The new margin must remain state/vector resolved or exclude the witness by source information.
 
-Möbius Cancellation gives the signed-budget version. MC-097--MC-098 prove large degree-two and higher-degree masses cancel at the endpoint. Any positive shell resource necessarily misses the destination cancellation; the non-escape theorem must keep the signed cross-degree coupling itself.
+Möbius Cancellation gives the signed-budget version. MC-099--MC-101 show that fixed and mesoscopic Hamming amplitudes are large for source-forced reasons even while the endpoint is small through signed cross-degree cancellation. Before square-root bias, apparent regularization is just positive degree-two damping; a useful recurrence must preserve the cancellation relation itself.
 
-Visual Exploration separates exact survival, conditioning, and model drift. VIS-055 shows the exact Fisher quotient retains `|q|`, VIS-054 proves inverse sensitivity is only square-root at simple balance returns, and VIS-056 gives explicit Wasserstein-to-`C^1` control when the frozen class laws move. A usable empirical theorem needs the analogous bound for whatever partition/closure/sampling errors remain outside that model.
+Prime Circle and Prime Lattice show two other forms of information loss. PC-188 proves that finite local angular/radial complexification of one cyclotomic field is still one Mellin carrier. PL-184--PL-185 show that both low-variation and small-modulus arithmetic one-point targets flatten when the relevant prime equidistribution theorem applies. Rich local coordinates or labels are not enough when the downstream quotient is unchanged.
 
-Xi Flow provides the strongest recent repair. XF-061 proves static derivative-weighted slow-cone energy misses a sparse critical defect. XF-062 shows fixed positive tangent heat removes that support escape, and XF-063 proves the moving-line selectors then form a lower frame for every surviving bounded tangent flux. The destination-matched resource is now available in the tangent category; the missing non-escape theorem is the nonlinear transport that preserves the relevant defect until that category applies.
+Visual Exploration now has an explicit inferential chain. VIS-057--VIS-059 separate raw-law perturbation, nonlinear closure, residual conditioning, deterministic overlap geometry, and long-memory dependence. A geometric orientation becomes usable only if an honest process-aware uncertainty radius leaves a nontrivial normalized-direction margin.
 
-Analytic Frontier supplies a closed success case: ANF-066 proves two-sided near-extremizer stability and classifies all scalar five-point escape directions. Once every escape is quantitatively controlled, the category should be treated as a transfer theorem rather than a recurring search space.
+Weil Positivity tightens the operator-category boundary. WP-171--WP-173 show that matrix channels, finite negative index, and regular `J`-contractive ports with passive Hilbert termination still cannot realize the exact Gamma phase in the required analytic category. A successful category change must explain both the new infinite/singular structure and the later coercive sign.
+
+Xi Flow now provides an exact nonlinear periodic success case. XF-064--XF-066 lift the selector frame to finite states with local smoothness criteria, while XF-067 diagonalizes the full periodic zero heat flow in collision-safe Vieta coordinates. The remaining non-escape theorem is no longer periodic nonlinear dynamics itself, but source-to-Vieta conditioning and nonperiodic localization without losing the frame margin.
+
+Analytic Frontier sharpens the scale of a closed category. ANF-067--ANF-069 show that the first one-pair scalar curvature reversal occurs at six points, is initially screened by affine slack, and remains curvature-seeded through ten total points. A new scalar claim must cross the actual affine/higher-order gate rather than cite negative curvature alone.
 
 ## Program consequence
 
-For every candidate, identify four things explicitly: the source discriminator; the exact destination resource that must retain it; the theorem preventing escape, scalarization, recanonicalization, cancellation loss, conditioning failure, or frequency spreading; and the quantitative margin surviving the final assembly. Audit source/control differences before positive completion or norms whenever cancellation/order is the claimed resource.
+For every candidate, identify four things explicitly: the source discriminator; the exact destination resource that must retain it; the operation that can erase or scalarize it; and the theorem preventing that escape with a quantitative margin. Audit source/control differences before positive completion or averaging whenever cancellation/order is the claimed resource, and audit path transport/conditioning whenever a canonical or normalized state is the claimed resource.
 
-A new direction should not be credited merely because a carrier is exact, canonical, nonzero, or invariant. It should name the source theorem that blocks the strongest known escape **in the same category and scale as the final claim**.
+A new direction should not be credited merely because a carrier is exact, canonical, nonzero, nonlinear, noncommutative, arithmetic-looking, or invariant. It should name the source theorem that blocks the strongest known escape **in the same category and scale as the final claim**.
 
 ## Status / novelty
 
@@ -36,4 +40,4 @@ The component information-theoretic, statistical, spectral, operator, geometric,
 
 ## Falsification criterion
 
-Produce a stable source-specific theorem whose final coercive/recovery/sign conclusion survives despite failure of the claimed destination resource and without compensating information, or derive one of the currently missing source-calibrated margins in a live line.
+Produce a stable source-specific theorem whose final coercive/recovery/sign conclusion survives despite failure of the claimed destination resource and without compensating information, or derive one of the currently missing source-calibrated margins in a live line in a way that shows the stated non-escape resource was unnecessarily strong.

@@ -2,15 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Finish the cuff/true-short-collar assembly and final weighted operator budget
+## Prove one normalized energy-local short-collar splice above the trace endpoint
 
-**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible` and `MI-004-coordinate-amplification-is-not-operator-amplification`.
+**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, and `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`.
 
-PF-171--PF-178 remove the collapsing-central-sector, first-resolvent, and qualitative volume-gauge obstructions. PF-179 gives each long Lambert body an explicit exact area-preserving transport with degeneration-uniform `1+O(delta_n)` bilipschitz distortion, and PF-180 synchronizes the artificial split traces by exact area-preserving Hamiltonian corrections with summable metric cost.
+PF-171--PF-181 remove the collapsing-central-sector, first-resolvent, volume-gauge, long-body, artificial-split, and full-cusp obstructions. PF-182 closes the distinguished decomposition-cuff seams as well: their common zero-twist trace admits exact-area two-sided collar germs and arbitrarily thin symplectic pasting with summable weighted cost.
 
-PF-181 now closes the full-cusp handoff as well. Equal pant area forces an exact zero-flux condition in the flat cusp area coordinate, so a fixed-slab relative volume correction can preserve the lower germ, become the exact deep-cusp identity, and contribute a summable two-sided inverse-unit-ball weighted metric budget for every exponent needed by PF-175.
-
-The long body, artificial split, and full cusp are therefore no longer part of the quantitative `rho=1` obstruction. The live PF-175 gate is the compatible zero-twist cuff/true-short-collar assembly and the final complete-surface two-sided weighted metric estimate.
+PF-183 isolates the remaining `S_r`, `r>1`, geometry. Fixed thick subslabs of all PF-138 true short collars are pairwise disjoint, have uniformly bounded inverse-unit-ball weights, and charge the assembled body metric energy only once. Hence the infinite collar family creates no separate multiplicity loss if one proves a uniform exact-area splice on one normalized thick annulus whose `L^r` cost is bounded by the body energy already present there plus the small core-gauge defect. That local conservative splice estimate is now the live PF-175 gate. The trace endpoint `r=1` remains genuinely different because the body `O(p^{-1})` scale is not summable there.
 
 ## Resolve ordered multi-neck memory in marked spectral data
 

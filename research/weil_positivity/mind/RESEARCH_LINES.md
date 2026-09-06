@@ -2,18 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Couple the signed finite selector to the real-place phase before passive scalarization
+## Couple finite arithmetic to the real-place phase before any regular passive termination
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`, and `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`, `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`, and `MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor`.
 
-WP-161--WP-169 isolate a genuine cyclotomic Mangoldt selector and the complementary real-place boundary phase, while closing shellwise Mellin, one-dimensional connection, scalar radial-angular, and pointed-Gram upgrades. WP-170 now closes the most direct passive interpretation of the exact Gamma phase itself: although its boundary values are unimodular, its half-plane zero set violates the Blaschke condition and its phase velocity changes sign. The raw archimedean phase is therefore not an ordinary scalar Schur/inner lossless response.
+WP-161--WP-170 isolate a genuine cyclotomic Mangoldt selector and the complementary real-place Gamma phase while closing shellwise Mellin, one-dimensional connection, scalar radial-angular, pointed-Gram, and ordinary scalar passive interpretations. The accepted WP-171 revision proves the regular matrix-Schur boundary-delay obstruction with its correct local/global scope: positive Hilbert readouts are semidefinite and cannot reproduce the signed Gamma velocity across the required sign regions.
 
-The live architecture must make the finite-prime selector and real-place phase intrinsic to the same nonseparable source geometry before positive reduction, and its sign theorem must not reduce to scalar Herglotz/Schur passivity. Matrix/operator-valued, domain-changing, compressed, graded/indefinite-to-positive, or source-forced infinite compensation remain distinct categories only if they introduce a new coercive mechanism rather than repackage the scalar phase.
+WP-172 shows that finite Pontryagin/generalized-Schur defect is also too small. The exact Gamma phase has an infinite non-Blaschke zero/pole divisor, so no finite negative index or finite matrix mixing can realize either orientation as the transfer readout. WP-173 closes the next regular external-`J` repair: a pointwise `J`-contractive block terminated by an ordinary Hilbert-Schur load through a regular LFT collapses back to an ordinary Schur response, in any channel dimension.
+
+The live architecture must therefore be genuinely outside these regular finite/passive categories: infinite negative index with an independently justified positive termination, singular or domain-changing closure, boundary-only/nonanalytic geometry with its own sign theorem, or a nonseparable finite--archimedean construction in which the Gamma phase never appears as a separate passive transfer readout.
 
 ## Derive mixed-prime incidence before positivity erases it
 
 Pairwise resultants, scalar radial filling, fixed finite arity, refinement-positive kernels, and separated completions do not manufacture irreducible mixed-prime geometry absent upstream. A survivor must carry a source-forced mixed relation before the sign theorem.
 
-## Change the operator category with an explicit new positivity theorem
+## Change the operator category only with an explicit new coercivity theorem
 
-A viable alternative may use marked-boundary response, genuinely noncommuting matrix curvature, singular/domain-changing coupling, or nonseparable finite--archimedean/cohomological structure. It must prove its own coercivity and state which signed datum survives; scalar Dirichlet/Gram positivity, conformal reparametrization, or raw passive phase delay no longer count as an escape.
+Indefiniteness or singularity is not itself positivity. Any surviving matrix/operator construction must identify the signed arithmetic datum that persists and prove the new positive/coercive theorem after the category change, rather than infer usefulness from having escaped the Schur no-go results.

@@ -2,15 +2,13 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Separate exact quotient loss, conditioning, and model/support drift
+## Put a process-aware uncertainty budget around Fisher residual orientation before interpretation
 
-**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls` and `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`.
+**Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`, and `MI-003-overlap-uncertainty-must-be-separated-from-residual-geometry`.
 
-VIS-048--VIS-053 reduce the exact nondegenerate two-ratio Fisher geometry to one gauge contrast and classify its cumulant-controlled flatness and return multiplicity. VIS-054--VIS-055 sharpen the information diagnosis: the exact Fisher curve preserves the full magnitude `|q|` and forgets only one global orientation bit on a connected analytic gauge path, but the quotient is quadratically conditioned at balance and exponentially compressed near cosine saturation.
+VIS-048--VIS-056 classify the exact two-ratio Fisher quotient, its conditioning, and Wasserstein stability under fixed class laws. VIS-057 moves to the three-gap residual construction: on one fixed partition/support and common positive Fisher reference, raw-law `L^1` error propagates deterministically through recomputed nonlinear Markov closure to a residual-vector and signed-orientation error budget.
 
-VIS-056 supplies the first support-moving robustness theorem inside that exact model. Wasserstein-1 drift of the two bounded class laws gives explicit `C^1` control of the signed balance equation, forward control of the hidden contrast and Fisher angle, and linear stability of simple remote returns. This does not cover changes of the ratio partition, residual tensors, baseline geometry, closure, or sampling law.
-
-The next useful step is therefore empirical/model error rather than more exact two-ratio algebra: freeze a residual construction, retain an explicitly signed source-sensitive coordinate, and bound partition/closure/sampling error strongly enough that the exact quotient and Wasserstein class-law controls remain informative.
+VIS-058 supplies a process-aware sampling interface for overlapping triples. The exact empirical-law second moment is controlled by lagged triple-collision excesses, with long lags optionally bounded by a justified dependence envelope rather than an i.i.d. approximation. VIS-059 identifies the exceptional overlap lags as exact periodic-cylinder masses; for three gaps they are the `aaaa` and `ababa` channels, with safe ceilings already visible from the population triple law. The next missing ingredient is therefore not more Fisher algebra but a defensible uncertainty/dependence model for the actual higher-window data, together with separate controls for adaptive partition/support/reference changes.
 
 ## Test Farey residuals against endpoint-safe exact nulls
 
@@ -18,4 +16,4 @@ Endpoint-safe sublinear bands and reflection-preserving same-gap controls remain
 
 ## Build an information-loss atlas and promote only exact handoff theorems
 
-Related renderings of one field are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, orientation, sensitivity, transport, or scale statement that remains meaningful without the image.
+Related renderings of one field are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, orientation, sensitivity, transport, sampling-error, or scale statement that remains meaningful without the image.

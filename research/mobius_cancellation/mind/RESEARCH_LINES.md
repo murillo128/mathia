@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Preserve signed cross-degree cancellation before any radial shell norm
+## Treat fixed and mesoscopic Hamming amplitudes as classified before the square-root transition
 
-**Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, `MI-010-signed-retention-is-not-information-reduction`, and `MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel`.
+**Linked intuitions:** `MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel` and `MI-012-hamming-regularization-is-degree-two-damping-before-the-square-root-transition`.
 
-MC-091--MC-096 provide exact source-forced product/Walsh coordinates and a radius-independent collision--reconstruction product obstruction for radialization. MC-097--MC-098 make the failure source-level rather than merely adversarial: the complete degree-two radial shell has a positive main term `asymp N^2/log^2 N`, while the aggregate higher-degree tail is forced by the classical unconditional Mertens bound to carry the opposite main term. The endpoint is tiny only because these large radial degrees cancel before absolute values.
+MC-097--MC-098 show that the positive degree-two radial shell and the signed higher-degree tail each carry almost-full-square mass and cancel only after signs are recombined. MC-099 forces a large curvature sign reversal along the exact Hamming path, excluding convex/nonnegative-curvature energy interpretations. MC-100 then proves an explicit almost-square interior spike and propagates it to every fixed positive-length bias interval and stable Chebyshev sample family.
 
-Thus a positive shell norm, `ell_p` aggregation, or degreewise absolute estimate cannot be the decisive carrier even if its radius is tuned with `N`. A survivor must keep the alternating cross-degree coupling visible until the estimate that uses the cancellation, or leave the radial-shell quotient altogether.
+MC-101 classifies a broad shrinking regime as well. For `t=N^{-alpha}`, `0<alpha<1/2`, the deformation has the exact source power `N^{2-2alpha}/log^2 N`; the apparent regularization is precisely degree-two Hamming damping. The current low-bias argument loses control at the square-root scale, where the degree-two contribution reaches the diagonal `O(N)` scale.
 
-## Derive an iterable strict contraction from a jointly estimated signed recurrence
+## Derive an iterable signed contraction at or beyond the square-root transition
 
-The remaining deformation route must alter the target-bearing coefficient with a uniform subunit contraction and summable errors while retaining cancellation among degrees. Separate upper bounds on retained and omitted radial pieces are exponent-neutral once the source itself exhibits almost-full-square mass on both sides of the cancellation.
+A survivor must exploit relations among large deformation values or the signed cross-degree carrier itself, not individual amplitude smallness. It must either enter the `t`-scale where degree two no longer controls the source, prove a reconstruction/recurrence whose stability cost is strictly smaller than the known bias gain, or use a different source coupling. The required estimate must be independent of the hard endpoint rather than merely rewriting its Taylor remainder.
 
-## Keep comparator turnover and scale coverage in any moving-family theorem
+## Keep comparator turnover and scale coverage explicit
 
-Per-scale witnesses, deterministic Mellin drift, and factorization gauges remain information-neutral unless the same signed coupling persists uniformly over the full scale range. Any moving recurrence must control its comparator turnover without collapsing back to the hard endpoint it is meant to estimate.
+Per-scale negative-curvature witnesses, shrinking intervals, and moving sample families do not form an iterable theorem unless their location/condition number stays controlled across the full scale range. Any moving recurrence must preserve the signed coupling uniformly rather than pay back the gain through unstable reconstruction.

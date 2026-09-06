@@ -2,20 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Treat Montgomery--Taylor five-point scalar coercivity and near-extremizers as closed
+## Treat five-point scalar coercivity as closed and finish the six-point affine-screening question
 
-**Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-002-finite-pair-enrichment-dualizes-to-one-signed-profile`, and `MI-004-complete-scalar-control-is-diffraction-realizability`.
+**Linked intuitions:** `MI-004-complete-scalar-control-is-diffraction-realizability` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-062--ANF-064 prove strict positivity, the sharp quadratic floor, all-order positive height corrections, radial monotonicity, and a positive quartic remainder. ANF-065 restores the additive linkage among `t_h`, `t_l`, and `t_h-t_l`; ANF-066 then certifies that the curvature transform has exactly two nondegenerate global minimizers `±tau` and proves two-sided near-extremizer stability
+ANF-062--ANF-066 close the Montgomery--Taylor five-point scalar category through sharp coercivity and two-branch near-extremizer stability. ANF-067 identifies the first new one-pair scalar phenomenon at six points: with four real anchors the real-collapse defect can have negative quadratic curvature. ANF-068 then proves that this infinitesimal descent is screened by a fixed positive affine slack near zero height, so curvature reversal alone is not an affine failure.
 
-`E asymp S + r + D^2`
+ANF-069 sharpens the boundary. For one conjugate pair and at most eight real anchors, every coefficient above quadratic in the collapse defect is nonnegative; consequently finite-height reversal is possible exactly when the quadratic curvature is already negative, with a unique positive crossing. The remaining base-profile six-point scalar gate is therefore quantitative rather than qualitative: certify a spatial lower bound strong enough to show that the complete curvature-seeded descent cannot consume the affine slack, and then audit the corresponding admissible central-notch perturbation. The accepted local clue records one candidate certificate, but clue-level computation is not canonical evidence until Research Watch promotes it.
 
-for sufficiently small excess. Hence every near-extremizer collapses in total height, loses the smaller conjugate pair, and approaches one of the two classified horizontal boundary families. Reopening scalar five-point enclosure or near-extremizer compactification is no longer a live mechanism.
+## Use cardinality eleven as the first one-pair higher-order frontier
 
-## Transfer the completed scalar mechanism only where the source category genuinely changes
+The coefficient sign argument in ANF-069 stops being automatic when there are nine real anchors, i.e. total cardinality eleven. This is the first one-pair scalar size at which a finite-height reversal not seeded by negative quadratic curvature is no longer excluded by the current spectral-positivity argument. Treat that as a boundary to test, not as evidence that such a mechanism exists: derive an explicit coefficient obstruction or construct a genuine counterexample before promoting a new scalar branch.
 
-The useful residue of the five-point work is a structural theorem package: all-order moment positivity, additive incompatibility of low-curvature arguments, and strict one-dimensional curvature convexity. Test whether an analogue survives for larger conjugation-invariant configurations or another source-conditioned profile; do not repackage the same five-point scalar geometry.
+## Seek ordered or multi-pair information beyond the classified scalar categories
 
-## Seek ordered or multi-point information beyond the closed scalar category
-
-A new carrier must add information absent from the completed theorem: larger configurations, ordered horizontal consistency, cross-profile structure, or another non-scalar relation. Any such handoff must retain the horizontal phase and common-translation information that were load-bearing in the scalar classification.
+The completed five-point theorem and the sharply narrowed one-pair larger-cardinality analysis should be used as transfer controls. A genuinely new route should change the information category -- ordered/multi-point structure, multiple nonreal pairs, another source profile, or a non-scalar carrier -- rather than repeatedly re-optimizing the closed five-point scalar problem.
