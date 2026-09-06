@@ -64,3 +64,7 @@ Accordingly (10)--(15) remain unchanged. The claim identity also remains unchang
 The normalization objection is mathematically resolved. The shifted-block reconstruction consistently defines `tau` as the raw shift-summed potential tax per ambient zero, with the common `1/m` factor entering only after the local-to-global defect inequality is divided by `m`; on the period-33 witness this gives the matching raw constraint `tau >= r bar P` and preserves (10)--(15).
 
 Closure is pending durable persistence: the canonical finding still describes `tau/m` as the potential contribution per ambient zero without distinguishing the pre-division tax from its post-division contribution. Please integrate that normalization distinction into the canonical finding, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted normalization distinction is now persisted in the canonical finding. Section 1 defines `tau` as the pre-division raw shift-summed tax through `sum_i P(B_i) <= tau N + o(N)` and derives that only `tau/m` enters the global defect inequality after division by `m`; Section 3 uses the same convention for the period-33 witness, giving `tau >= r bar P` before division and `tau/m >= r bar P/m` afterwards. The mathematical claim and equations (10)--(15) are unchanged. The sidecar remains for final adversary verification.

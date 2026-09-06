@@ -34,9 +34,17 @@ R(C,\tau)=\frac{mH_{\rm MT}-\tau}{m-C},
 \tag{2}
 \]
 
-The normalization in (2) means that after averaging block positions, the total contribution of `P` per ambient zero is bounded above by `\tau/m`. The precise derivation of the tax is irrelevant here. What matters is universality: when the same accounting is evaluated on the admissible period-33 witness of density `r`, it must pay at least that witness's normalized scalar-potential average.
+Here `\tau` is the **pre-division** tax on the raw shift-summed potential: if `S` retained points generate the translated `m`-point blocks `B_i`, the accounting hypothesis is
 
-This includes WI-175 as the special case `P(B)=\sum_j\alpha_jg_j`, where the phase average is `\bar P=A/r` and the tax is `\tau=A`.
+\[
+\sum_i P(B_i)\le \tau N+o(N).
+\]
+
+Summing (1) gives `CS <= mD_glob + sum_i P(B_i)+o(N)`. Only after this local-to-global inequality is divided by `m` does the potential term enter the global defect bound as `\tau N/m`; thus `\tau/m` is the post-division contribution per ambient zero, not the raw shift-summed potential per ambient zero. This normalization is exactly the one that yields (2).
+
+What matters for the obstruction is universality: when the same pre-division accounting is evaluated on the admissible period-33 witness of density `r`, `\tau` must dominate that witness's own raw normalized shift-summed potential average.
+
+This includes WI-175 as the special case `P(B)=\sum_j\alpha_jg_j`, where the phase average is `\bar P=A/r` and the pre-division tax is `\tau=A`.
 
 ## 2. Period-33 phase average
 
@@ -103,20 +111,20 @@ No formula for `\bar P` is needed. This is the point at which linearity disappea
 
 ## 3. A universal scalar tax must pay the witness average
 
-Under the normalization of (2), one block of `m` retained points contributes one local scalar potential value before the complete shift average. The period-33 witness has retained-point density `r` relative to the ambient normalization. Therefore its potential contribution per ambient zero is
+Under the pre-division normalization of Section 1, one translated retained block contributes one raw local scalar-potential value to `\sum_i P(B_i)`. The period-33 witness has retained-point density `r` relative to the ambient normalization, and the phase average of one block potential is `\bar P`. Therefore the raw shifted sum satisfies
 
 \[
-r\bar P.
+\frac1N\sum_iP(B_i)\longrightarrow r\bar P.
 \]
 
-If `\tau` is a universal scalar upper tax for the same deterministic accounting class, it must satisfy
+If `\tau` is a universal pre-division scalar upper tax for the same deterministic accounting class, it must satisfy
 
 \[
 \boxed{\tau\ge r\bar P.}
 \tag{10}
 \]
 
-This is the exact general replacement for WI-175's identity `A=r(A/r)`. If the proposed global tax is obtained from a zeta-specific restriction that the period-33 configuration does not satisfy, then (10) need not hold and the present theorem does not apply; that is a genuine escape rather than a loophole in the calculation.
+Equivalently, after the common local-to-global division by `m`, both sides become `\tau/m >= r\bar P/m`. This is the normalization entering the defect bound and removes any factor-of-`m` ambiguity. If the proposed global tax is obtained from a zeta-specific restriction that the period-33 configuration does not satisfy, then (10) need not hold and the present theorem does not apply; that is a genuine escape rather than a loophole in the calculation.
 
 ## 4. Exact cancellation is independent of the shape of `P`
 
