@@ -1,27 +1,25 @@
-# MI-015 — Whole-experiment fidelity needs one common recovery profile
+# MI-015 — Whole-experiment fidelity needs one common recovery profile, with a separate calibration gate
 
-**Evidence level:** exact finite/classical counterexamples and recovery certificate through AF-142--AF-144
+**Evidence level:** exact finite/classical results through AF-148
 
 ## Core intuition
 
-Local tangent fidelity and pairwise distinguishability are weaker than experiment-level recoverability. A compression can be almost Fisher-isometric, globally identifiable, and retain a fixed fraction of every pairwise total-variation distance while still admitting no single reverse channel with small deficiency.
-
-The missing compatibility is family-wide: all parameter values must be recoverable through **one common reverse kernel**, not through pair-dependent witnesses or infinitesimal geometry.
+The right experiment-level object is one reverse channel shared by the whole family. But correctness/composition of that channel and numerical calibration of a divergence certificate are independent gates: an optimal reverse map can coexist with a raw common-reference loss that worsens with family complexity.
 
 ## Strongest justified principle
 
-AF-142 gives a smooth positive connected experiment with Fisher near-isometry but exact global aliasing. AF-143 removes that obvious defect: even with global identifiability and uniform pairwise TV retention, one-sided recovery deficiency stays bounded below.
+AF-142--AF-144 separate local/pairwise fidelity from common recovery. AF-145 proves that coherently propagated references make Bayes reverse kernels compose and chi-square losses telescope. AF-146--AF-147 show linear and logarithmic family-size dilution for Pearson and KL on the same private-label experiment.
 
-AF-144 supplies a positive finite certificate. Fix one full-support prior/reference mixture. The Bayes/Petz reverse kernel built from that common reference satisfies a quantitative recovery bound controlled by the loss of the corresponding chi-square profile, and zero loss is exactly sufficiency. Thus a common-reference divergence profile can certify one reverse channel in a way tangent and pairwise metrics cannot.
+AF-148 unifies those examples. For every Csiszar `f`-divergence, the optimized common-reference loss on the private-label collapse is exactly the AF-050 reverse-support penalty. Its ratio to exact recovery deficiency is uniformly bounded in family size precisely when the endpoint diameter `f(0)+f_infinity` is finite; infinite endpoint diameter permits vanishing recovery defect with order-one or infinite loss. This classification is a calibration theorem for the adversarial family, not a generic reverse-kernel theorem.
 
 ## What remains possible
 
-The AF-144 certificate is sufficient rather than necessary, finite/classical, and depends on an auxiliary full-support prior. A concrete arithmetic application must justify the reference from source structure, or derive another canonical family-wide compatibility object with comparable composition/recovery meaning.
+Source-natural arithmetic families may have bounded effective complexity or a canonical reference that gives sharper calibration. Another profile may also combine explicit recovery construction with finite-diameter robustness. Those properties must be derived from source structure.
 
 ## Status / novelty
 
-Fisher information, total variation, chi-square divergence, Blackwell sufficiency, and Bayes/Petz recovery are classical. The durable synthesis is the category boundary: **fidelity becomes composable only when the retained information is organized around one family-level reverse channel or an equivalent common recovery profile**.
+The statistical ingredients are classical. The durable synthesis is: **common recovery is the composable information object; divergence endpoint geometry governs a distinct certificate-calibration problem**.
 
 ## Falsification criterion
 
-Produce a source-natural class in which tangent plus pairwise fidelity alone forces small experiment deficiency, or show that the AF-144 common-reference loss fails to control the stated reverse kernel under its finite hypotheses.
+Invalidate AF-145's composition, AF-148's private-label `f`-divergence formula/endpoint classification, or derive a dimension-free converse for an infinite-endpoint profile under only the stated private-label hypotheses.

@@ -1,29 +1,21 @@
 # Weil-positivity research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
+This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive mixed-prime incidence before positive completion, determinant formation, or normalization erases the selector
+## Couple the signed finite selector to an intrinsic real-place phase before positive scalarization
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, and `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`, and `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`.
 
-Pairwise resultant data, canonical positive filling, larger univariate determinants, separated tensor products, finite-mass cutoffs, and fixed finite-arity algebraic incidence do not manufacture irreducible mixed-prime geometry absent upstream. A surviving source must carry a forced mixed relation before positivity.
+WP-161--WP-166 isolate a genuine cyclotomic Mangoldt selector but close shellwise Mellin and one-dimensional connection upgrades. WP-167 closes the canonical scalar radial-angular escape: the finite-cutoff Dirichlet Gram is positive, yet its boundary either has infinite self-energy or renormalizes to the negative classical resultant/discriminant kernel; full angular averaging also identifies prime `p` with mixed shell `2p`.
 
-## Preserve signed cyclotomic radial incidence through an operation that is not one-dimensional gauge trivialization
+WP-168--WP-169 expose the complementary real-place boundary. Forced critical half-density produces a canonical log-scale Gram with spectral density `|zeta(1/2+it)|^2/(1/4+t^2)`, exactly classical Nyman--Müntz modulus-square geometry. The phase discarded by that Gram is nevertheless exact: relative to the Nyman factor it is the archimedean Gamma/scattering multiplier, whose logarithmic phase derivative is the Weil digamma symbol. But the positive Gram does not select that phase, and the phase appears already in an all-degree control before Mangoldt support.
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, and `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`.
+The live architecture must therefore make a real-place phase/boundary operator intrinsic to the **same source geometry** that retains signed finite-prime information, and couple them before norm-square, angular averaging, or positive completion.
 
-WP-161--WP-164 isolate a real prime-power radial selector but close shellwise Mellin and positive-semigroup interpretations. WP-165 shows that using the signed flux as a scalar radial connection is pure gauge. WP-166 closes the natural matrix/nonabelian upgrade as well: the canonical nonzero off-diagonal skew incidence from Prime Circle defines a finite-dimensional skew-Hermitian connection on a one-dimensional radial base, and its covariant energy is exactly free Dirichlet energy in a moving frame. Noncommutativity only changes the parallel transport; it cannot create curvature on an interval.
+## Derive mixed-prime incidence before positivity erases it
 
-The surviving finite--archimedean candidates must therefore use structure not absorbed into a one-dimensional connection: a source-forced zero-order/off-diagonal potential with its own sign theorem, a nontrivial boundary response, a genuinely higher-dimensional/cohomological geometry whose extra direction is itself canonical, or another global coupling that preserves mixed-prime cancellation before positivity. Compact holonomy or a nonzero carrier is not enough.
+Pairwise resultants, scalar radial filling, fixed finite arity, refinement-positive kernels, and separated completions do not manufacture irreducible mixed-prime geometry absent upstream. A survivor must carry a source-forced mixed relation before the sign theorem.
 
-## Change the operator before asking anchored or distributional Gamma carriers to inherit positivity
+## Change the operator category rather than repackage scalar Gram positivity
 
-**Linked intuitions:** `MI-002-operator-category-is-a-hard-compatibility-gate` and `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`.
-
-Bounded radial--solenoid Gamma intertwiners vanish by spectral type, while exact distributional versions are nonclosable point samplers. A surviving bridge must introduce a genuinely new coupled generator, domain, boundary response, or cohomological geometry and prove its own coercivity.
-
-## Classify genuinely coupled singular, nonlocal, nonlinear, boundary, or higher-cohomological alternatives beyond canonical quotients
-
-**Linked intuitions:** `MI-005-cover-coinvariants-classicalize-or-collapse`, `MI-002-operator-category-is-a-hard-compatibility-gate`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, and `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`.
-
-Any surviving category must change the architecture upstream and identify which source-specific signed/mixed finite--archimedean information remains through positive completion, with domain, topology, normalization, and sign fixed independently. Adding algebraic size, matrix dimension, or path ordering after the information has become gauge-trivial is not a new mechanism.
+A viable alternative may use marked-boundary response, genuine matrix curvature with source-forced noncommuting directions, singular/domain-changing coupling, or nonseparable finite--archimedean/cohomological structure. It must prove its own coercivity; scalar Dirichlet/Gram positivity and conformal reparametrization no longer count as an escape.

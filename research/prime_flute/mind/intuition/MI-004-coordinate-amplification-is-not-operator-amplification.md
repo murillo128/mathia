@@ -1,41 +1,25 @@
-# MI-004 — Coordinate amplification is not operator amplification; relative transmission must cancel before Schatten norms
+# MI-004 — Relative cancellation must precede Schatten norms; the remaining obstruction is quantitative global assembly
 
-**Evidence level:** supported through PF-173 by exact collar Fourier models, boundary-ideal estimates, and trace-summable matched recoupling
+**Evidence level:** supported through PF-178
 
 ## Core intuition
 
-Large geometric multiplicity or a collapsing physical interface does not determine the operator burden by itself. Absolute single-surface recoupling can retain an order-one zero-mode cost even as a collar core shrinks, while the **relative** prime/clone transmission correction can be much smaller because the common zero mode cancels before any Schatten norm is taken.
-
-The correct scale is therefore set by the matched operator difference, not by coordinate size, interface length, or separate absolute resolvent estimates.
+Collapsing geometry and large interface multiplicity do not determine the relative operator burden. Prime/clone common modes can cancel before Schatten norms, and even the global volume-density mismatch can be removed exactly. What remains is not qualitative existence but whether the chosen global gauge can be made quantitatively tame enough for the weighted relative operator theorem.
 
 ## Strongest justified principle
 
-PF-166--PF-171 show that the complete Margulis-short central sector is already benign at the sharp first-resolvent threshold: the matched Dirichlet-decoupled relative blocks lie in every `S_r`, `r>1`, with vanishing tail, although the endpoint `S_1` fails for that central direct sum.
+PF-166--PF-173 show that absolute recoupling may stay order one under pinching while matched prime/clone recoupling is trace-summable because the common zero mode cancels first. PF-174--PF-175 convert a two-sided weighted metric defect into smoothed and first-resolvent Schatten control, with the strongest `r>1` statement in the dual-volume gauge.
 
-PF-172 tests whether transmission across the artificial central cut reintroduces the missing obstruction. For any fixed finite interface family, elliptic boundary theory makes the absolute first-resolvent recoupling trace class. But on a collapsing model collar its angular zero mode is independent of the core length, giving an order-one lower bound on the **absolute** trace norm. Summing separate source and clone recouplings therefore cannot use pinching as a small parameter.
-
-PF-173 performs the relative calculation instead. For matched core lengths `L` and `L'=e^t L`, the zero-mode block cancels exactly and the recoupling difference satisfies
-
-`||G_{L'}-G_L||_1 <= C |t| L^2`.
-
-Together with the prime/shift length asymptotics, these corrections are trace-summable over the complete short-core tail. The central transmission mode is therefore not the missing global Schatten obstruction.
+PF-176--PF-178 then isolate the density issue. PF-177 gives an exact short-collar gauge with `rho=1` on every collapsing core and summable residual forcing in uniformly thick rims. PF-178 proves that common area-preserving cuff/cusp germs plus support-controlled Moser correction glue to a smooth global area-preserving marking, so `rho=1` can be achieved globally. Classical support control does not give degeneration-uniform derivative estimates, so this does not yet verify PF-175's weighted metric hypothesis.
 
 ## What remains possible
 
-PF-173 is a fixed central-slab model, not the full uncut surface. Outer collar/body interfaces, global Dirichlet-to-Neumann response, localization commutators/overlap, and repeated head--tail interaction remain outside the theorem. The full relative resolvent also cannot become trace class in contradiction with the earlier non-isometry obstruction.
-
-A positive continuation must place prime and clone in one common global interface calculus and expose the source/clone defect **before** ideal norms or absolute summation. A failure must be genuinely body-loaded or nonlocal rather than attributed to short-core multiplicity or the central zero mode.
+A quantitative support-controlled construction may keep all volume redistribution in uniformly controlled thick regions and give the required quasi-isometry/weighted `delta^r` bounds. Alternatively the density-identification strip `1<r<2` may admit a direct operator argument. Any negative result must now identify a genuine body/interface/nonlocal amplification, not merely a collapsing-core or volume-gauge existence problem.
 
 ## Status / novelty
 
-Schatten ideals, Krein/boundary resolvent formulas, Fourier mode decomposition, and resolvent identities are classical. The line-specific synthesis is the operation-order principle: **absolute recoupling can stay order one under pinching, while matched recoupling is trace-summable because common transmission modes cancel before the norm**.
+The operator ideals and Moser machinery are classical. The durable synthesis is that **relative cancellation and gauge choice remove the obvious qualitative obstructions; the remaining Schatten frontier is a quantitative global-assembly estimate**.
 
 ## Falsification criterion
 
-Find a matched central collar family violating the `O(|t|L^2)` trace bound or retaining a nonzero relative zero-mode block, or show that a full-surface body/interface term is controlled by the same local cancellation and nevertheless produces a non-summable `S_r`, `r>1`, tail.
-
-## Lean-formalizable core
-
-- Zero-mode independence of collar length in the finite Fourier model.
-- Rank-one half-collar recoupling representation per nonzero angular mode.
-- Resolvent-difference factorization exposing `O(|t|q^{-2})` and the resulting trace sum.
+Show that no quantitatively controlled representative exists inside the PF-178 global `rho=1` class, or produce a body/interface term forcing failure of `S_r` for some `r>1` despite the PF-171--PF-178 controls.

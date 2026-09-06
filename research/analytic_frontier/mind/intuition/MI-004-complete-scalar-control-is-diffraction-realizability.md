@@ -1,41 +1,33 @@
-# MI-004 — Complete scalar five-point control is a curvature-correlation realizability problem
+# MI-004 — Complete scalar five-point control is sharp radial coercivity
 
-**Evidence level:** supported through ANF-059 by the exact five-point normal form, support-free mismatch bounds, phase-aware curvature-correlation gate, and profile-specific transform certificate
+**Evidence level:** exact and validated through ANF-064
 
 ## Core intuition
 
-Once conjugation symmetry reduces a cardinality-five Weil obstruction to one off-axis pair plus a critical-line point, the remaining scalar problem is not governed only by vertical mismatch. Horizontal separation survives through the curvature correlation of the chosen profile. Discarding that phase information creates the small-frequency barrier seen in the support-free estimates; retaining it converts part of the two-variable defect into an explicit one-dimensional signed correlation gate.
-
-For the fixed Montgomery--Taylor profile that gate is no longer a qualitative oscillation constraint. Its curvature transform has an exact rational--trigonometric form, so the surviving scalar problem has been compactified to a narrow, auditable separation/mismatch region.
+For the Montgomery--Taylor profile, the cardinality-five scalar problem is completely closed. Horizontal phase, relative height, and common translation first compactify the geometry; validated computation then proves the exact defect positive; the completed moment hierarchy further identifies a sharp quadratic coercive floor and strict radial monotonicity.
 
 ## Strongest justified principle
 
-ANF-054--ANF-057 show that, for a nonnegative even profile satisfying the explicit curvature gate `m_5(J)>=0`, equal heights are positive and a universal support-free tube excludes sufficiently small relative mismatch. For the Montgomery--Taylor profile this forces any remaining zero to have relative mismatch `q>0.1409`.
+ANF-062 proves strict positivity of the exact five-point defect on the entire genuine domain. ANF-063 proves the sufficient moment inequality for every `n>=9`; ANF-064 validates the remaining `n=2,...,8`, so every higher even-power coefficient in the height expansion is positive. Consequently
 
-ANF-058 retains the positive horizontal phase term that the support-free comparison discarded. After integration, its contribution is exactly the canonical curvature correlation `K_J(d)`. If `K_J(d)>=-K_0/3`, the resulting quadratic lower bound is positive for every positive pair of heights. Hence any five-point zero must lie in a negative curvature-correlation lobe.
+`H_MT >= 2 pi^2 m_5(J_MT) (y_1^2+y_2^2)`
 
-ANF-059 evaluates that lobe for the fixed Montgomery--Taylor profile without numerical quadrature. The exact factorization `J_MT=g*g` gives `K_MT(t)=-F_MT''(t)/(4 pi^2)` as an explicit rational--trigonometric function. An outward-rounded mesh certificate plus a twice-integrated analytic tail proves the sharper necessary condition
-
-`0.545 < |t_1-t_2| < 1.01`.
-
-Combined with the previous height gate, every remaining Montgomery--Taylor five-point scalar zero must therefore satisfy both `q>0.1409` and this narrow horizontal-separation window. The surviving scalar frontier is an explicit compact two-parameter realizability problem, not an unconstrained support/notch optimization.
+with the constant sharp as an infimum, and the normalized defect is strictly increasing under simultaneous positive height dilation. ANF-064 also gives a certified positive quartic remainder from the order-two margin.
 
 ## What remains possible
 
-ANF-059 does not prove zero-freeness inside the residual compact set and does not extend the five-point result to larger conjugation-invariant multisets. The live scalar question is whether the exact Montgomery--Taylor five-point form, together with the remaining height/common-translation coherence terms, excludes that compact remainder.
-
-A broader escape may retain additional horizontal or ordered information before scalarization, but it must survive the exact ANF-058--ANF-059 curvature controls rather than reintroduce a support-free coefficient already known to be sharp at small frequency.
+The theorem does not settle larger conjugation-invariant multisets or a profile-independent positivity theory. The live use of this scalar result is as a sharp source-conditioned base case for richer ordered/multi-point carriers or for identifying which hypotheses make an all-order moment argument transfer.
 
 ## Status / novelty
 
-The Fourier/cosine identities, hyperbolic inequalities, Cauchy estimates, moment bounds, bounded-variation control, and interval certification are classical tools. Persisted evidence makes the Mathia-specific synthesis exact at cardinality five. ANF-058--ANF-059 do not claim publication-level novelty for the resulting transfer or compactification.
+The analytic and interval tools are classical. The durable synthesis is Mathia-specific: **Montgomery--Taylor five-point scalar positivity is not merely zero-free but sharply coercive, so reopening its scalar enclosure is no longer a live research mechanism**.
 
 ## Falsification criterion
 
-Exhibit a valid Montgomery--Taylor five-point zero with `q<=0.1409`, with `|t_1-t_2|<=0.545`, or with `|t_1-t_2|>=1.01`; alternatively find an error in the retained phase term, its curvature-correlation reduction, or the outward-rounded transform certificate.
+Find a genuine five-point configuration violating ANF-064's sharp floor or radial monotonicity, or invalidate the validated finite-moment certificate or ANF-063 analytic tail.
 
 ## Lean-formalizable core
 
-- The phase-retaining five-point lower bound and discriminant gate.
-- The implication `K_J(d)>=-K_0/3 => H_J>0` under the stated curvature hypothesis.
-- The exact Montgomery--Taylor transform formula and finite interval inequalities yielding the sharpened separation window.
+- The coefficient decomposition from the all-order moment inequalities.
+- The sharp quadratic lower bound and radial monotonicity implication.
+- The finite validated inequalities for `n=2,...,8` as certificate interfaces.

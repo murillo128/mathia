@@ -1,25 +1,25 @@
-# MI-002 — Gauge-invariant visual geometry can still be information-flat
+# MI-002 — Gauge-invariant visual geometry can still be information-flat for structurally forced orders
 
-**Evidence level:** exact bounded-gauge and matched-control results through VIS-045--VIS-049
+**Evidence level:** exact through VIS-053
 
 ## Core intuition
 
-Coordinate safety is necessary but not sufficient. A statistic can be exactly invariant under an admissible Fisher gauge and still fail to respond to the arithmetic direction being visualized. Invariance removes one artifact class; it does not prove information sensitivity.
+Coordinate safety is necessary but not sufficient. After quotienting the admitted Fisher gauge, a statistic can remain insensitive to the source direction to arbitrarily high finite order, or even exactly, for reasons determined by the retained class distributions. Higher-order response is therefore not automatically evidence either; its order and return structure must be classified.
 
 ## Strongest justified principle
 
-VIS-045--VIS-047 quantify how residual directions move under bounded positive Fisher gauges and give exact sign-margin certificates. VIS-048 then shows that a Fisher-angle construction can be genuinely gauge invariant yet degenerate on a matched control family. VIS-049 strengthens the warning locally: along a two-ratio perturbation the invariant angle is first-order flat.
+VIS-048--VIS-049 establish exact gauge invariance with first-order flat matched controls. VIS-050 reduces the nondegenerate two-ratio geometry to one gauge coordinate. VIS-051 identifies its Taylor hierarchy with differences of class cumulants: if the first unmatched cumulant has order `r`, Fisher-angle variation starts at order `2r`, while equality of all cumulants for the finite class distributions gives exact degeneracy.
 
-A visual residual should therefore pass two independent gates: first classify/freeze the coordinate or metric freedom; then prove that the resulting invariant has nonzero source-sensitive derivative, curvature, separation, or another exact response against matched controls. Failure of the second gate makes an attractive invariant mathematically uninformative for the intended distinction.
+VIS-052--VIS-053 add a global control. The balance equation is an exponential polynomial whose real-root multiplicity is bounded by coefficient sign variation, with a parity constraint on total return multiplicity. Remote Fisher-angle touches can therefore be forced by representation and combinatorics rather than by an arithmetic event.
 
 ## What remains possible
 
-Higher-order response may survive when first-order sensitivity vanishes, and a different quotient-complete statistic may separate the same family. Either route must state its order of sensitivity and compare against a control preserving the already-classified gauge geometry.
+A statistic may still become useful when the first unmatched cumulant is source-specific and separated by a quantitative margin, or when a different quotient retains information lost by the two-ratio reduction. Any claim must audit the response order and the allowed return budget against matched controls.
 
 ## Status / novelty
 
-Fisher metrics, angles, condition-number distortion, and differential sensitivity are classical. The line-specific synthesis is methodological but exact: **quotienting an artifact does not guarantee that the quotient retains the signal**.
+Fisher geometry, cumulants, exponential polynomials, and Descartes-type variation bounds are classical. The durable synthesis is exact: **gauge invariance removes coordinate artifacts, but sensitivity and even the multiplicity/parity of visual returns can still be predetermined by the representation**.
 
 ## Falsification criterion
 
-Show that the VIS-048 invariant separates the stated degenerate control, that the VIS-049 first derivative is nonzero, or derive a general theorem under the admitted hypotheses that gauge invariance alone forces source discrimination.
+Exhibit a two-ratio Fisher-angle family violating the VIS-050 reduction, the cumulant-order rule of VIS-051, or the sign-variation/parity return bounds of VIS-052--VIS-053.

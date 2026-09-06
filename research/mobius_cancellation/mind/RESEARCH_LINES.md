@@ -1,29 +1,19 @@
 # Möbius-cancellation research lines
 
-This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history. Lines should survive only while they separate genuinely different mechanisms.
+This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Make the source-forced deformation reduce the top Mertens mode rather than merely factor it
+## Make the source-forced deformation reduce the top Mertens mode inside collision classes
 
 **Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, `MI-010-signed-retention-is-not-information-reduction`, and `MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel`.
 
-MC-088--MC-090 show that a common-prime complement can be genuinely lower-scale while the retained gcd-sieve carrier still contains the unsifted top Mertens mode. MC-091--MC-093 add a different source-forced structure: exclusive-prime symmetric-difference deformations have exact rectangular variation and fixed-gap Hamming interpolation, but the apparent many-prime family collapses algebraically to product/degree data and endpoint polynomial transport.
+MC-091--MC-095 provide exact source-forced product/Walsh coordinates and show the tension between full orthogonality and cheap endpoint reconstruction. MC-096 makes that tension quantitative for every prime-block count quotient: collision amplification times endpoint reconstruction is `N^{1-o(1)}`, with a concrete same-sign degree-two prime rectangle of size `asymp N^2/log^2 N`.
 
-The deformation is therefore non-arbitrary but not yet a cancellation theorem. A live route must obtain an arithmetic norm, orthogonality, signed cancellation, or jointly estimated recurrence in which the deformation changes the top target-bearing coefficient instead of only repackaging it.
+The surviving route is not a finer count partition by itself. It must prove source-specific cancellation **inside** the collision classes, retain relational/phase data beyond counts, or estimate a coupled signed recurrence before the Hilbert-space collision map.
 
 ## Derive an iterable strict contraction from a jointly estimated signed recurrence
 
-**Linked intuitions:** `MI-005-scale-doubling-is-exponent-neutral-without-new-signed-information`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel`.
-
-Separate absolute estimation of retained and omitted pieces cannot furnish the missing contraction. A positive continuation must estimate them jointly, or prove a source-coupled deformation norm whose top-scale coefficient is genuinely subunit and whose errors are summable under iteration. The contraction must be uniform over the moving family and all sufficiently large scales.
+Separate absolute estimates of retained and omitted pieces remain exponent-neutral. A positive continuation must alter the target-bearing coefficient with a uniform subunit contraction and summable errors across the moving family.
 
 ## Keep comparator turnover and scale coverage in any moving-family theorem
 
-**Linked intuitions:** `MI-008-moving-comparators-need-uniform-family-coherence`.
-
-Any moving family must quantify persistence, transfer constants, and which signed coupling survives over the whole scale range. Per-scale existence or a sparse subsequence is insufficient.
-
-## Treat deterministic Mellin drift and factorization gauges as information-neutral unless the residual coupling changes
-
-**Linked intuitions:** `MI-006-asymptotically-fixed-mellin-drift-is-information-neutral`, `MI-009-dirichlet-factorization-gauge-does-not-distribute-cancellation`, and `MI-010-signed-retention-is-not-information-reduction`.
-
-Small Mellin shifts, fractional zeta gauges, and exact prime-label factorizations do not create new cancellation when they only redistribute a fixed Dirichlet singularity or encode a product statistic. A useful deformation must change the source-forced coupled residual or its top-scale coefficient.
+Per-scale witnesses, deterministic Mellin drift, and factorization gauges remain information-neutral unless the same signed coupling persists uniformly over the full scale range.
