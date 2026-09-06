@@ -14,40 +14,44 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `40558948eaa50956749d9ecbba19f252c1f7a348` → `8ef2b89ab0619bb839137d6462f7b854d7895c79` contributes twelve episodes:
+The newest source window `e57e68ef4b711417ae8c5a05794b088a2d731e99` → `310317140f32ba403a2d03a75d07a3871ef784c7` contributes fourteen episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `analytic_frontier` | 1 | 1 | 0 | 0 | 0 |
-| `arithmetic_fidelity` | 1 | 0 | 1 | 0 | 0 |
-| `mobius_cancellation` | 2 | 1 | 0 | 0 | 1 |
+| `analytic_frontier` | 2 | 1 | 0 | 0 | 1 |
+| `arithmetic_fidelity` | 1 | 0 | 0 | 0 | 1 |
+| `mobius_cancellation` | 1 | 0 | 0 | 0 | 1 |
 | `prime_circle` | 1 | 0 | 0 | 0 | 1 |
-| `prime_flute` | 1 | 1 | 0 | 0 | 0 |
+| `prime_flute` | 2 | 1 | 0 | 0 | 1 |
 | `prime_lattice` | 1 | 0 | 1 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
-| `weil_inertia` | 1 | 0 | 0 | 0 | 1 |
+| `weil_inertia` | 2 | 1 | 0 | 0 | 1 |
 | `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
 | `xi_flow` | 2 | 1 | 0 | 0 | 1 |
-| **Total** | **12** | **5** | **2** | **0** | **5** |
+| **Total** | **14** | **5** | **1** | **0** | **8** |
 
-The window sharpens several frontiers without changing an Atlas state. Analytic Frontier turns the remaining Montgomery--Taylor five-point search into a bounded profile-specific certification problem: relative separation, height mismatch, total height and common translation are all quantitatively confined. Arithmetic Fidelity's new Fisher/recovery language is useful but classical: covariance naturality reaches the Mahalanobis ceiling, full-law Fisher loss is a conditional-score projection defect, and a common-reference chi-square loss gives one common reverse channel.
+Analytic Frontier closes the compact Montgomery--Taylor five-point scalar problem with a certified zero-free/coercive theorem and immediately uses it as a control for the first six-point boundary: the base one-pair collapse reversal is curvature-seeded and screened, leaving only a thin notch-induced curvature/height layer. Arithmetic Fidelity's Shtarkov construction gives a useful source-selected likelihood-ray geometry, but the private-label controls show that exact-zero sufficiency geometry still does not furnish a dimension-free approximate-recovery modulus.
 
-Möbius Cancellation now has both a genuine extension and a matching obstruction. Common-prime omission can be reduced uniformly to lower Mertens scales, but the retained gcd-sieve carrier keeps the top Huxley--Watt mode and fixed-gap Hamming deformations cannot hide a different endpoint power. Prime Circle's signed radial flux likewise survives only upstream: Mellinization is classical zeta data, symmetric flux--potential coupling collapses to the Mangoldt boundary, and positive functional calculus of the residual skew carrier is prime-blind on a mixed control.
+Möbius Cancellation closes the low-bias Hamming route at two levels: the apparent square-root transition is replaced by positive degree-two/degree-zero floors, and shrinking or moving bias windows incur an exact Chebyshev conditioning/width tradeoff before endpoint recovery. Prime Circle similarly exhausts the finite local cyclotomic refinement algebra: positive depth, radial jets, refinement differences and anchored angular/radial jets all reduce to one shell-dependent Mellin carrier.
 
-Prime Flute removes the central collapsing-collar zero mode relatively and reaches trace summability for the complete short-core recoupling; the heat-smoothed comparison is even trace class, leaving the unsmoothed first resolvent and global interface as the real operator burden. Prime Lattice's oriented affine phase reduces exactly to shifted-prime multiplicative data. Visual Exploration now has exact bounded-gauge sign margins and an explicit warning that first-order gauge flatness can still conceal second-order dependence.
+Prime Flute removes the volume, multiplicity, topological and linearized collar-splice obstructions above the trace endpoint, reducing the `r>1` geometry to nonlinear chart entry for the canonical relative germs; `PF-186` then proves that small exact symplectic strain alone cannot supply that entry. Prime Lattice's increasingly rough or arithmetic one-point target weights continue to scalarize through classical prime equidistribution, including bounded-variation targets and small-modulus residue labels.
 
-Weil Inertia closes positive odd-sector, shared-budget and generic Gram-repair escapes; `WI-172` is intentionally absent from classifiable telemetry because its proposed stronger four-point constant still awaits a complete Lean kernel check. Weil Positivity closes the one-dimensional radial positive-connection route: only the critical Mellin exponent preserves Mangoldt support, while positive-semigroup, scalar-connection and finite-dimensional matrix-connection repairs fail. Xi Flow extends the endpoint selector uniformly across the slow cone, but an explicit chirped critical-flux control proves that the family of pointwise selectors is not itself coercive.
+Visual Exploration now has a rigorous low-assumption confirmation interface: one frozen zeta table can be compared with an independently replicated control population using a control-only `L^1` radius propagated through the Fisher residual geometry, without treating overlapping triples within a control matrix as independent. This remains a fixed-table statement until a separate zeta-side population model is justified.
+
+Weil Inertia changes materially in both directions. The `c=2330/10^6` four-point source certificate is now fully kernel-checked and gives a strict exact surplus beyond the arbitrary-positive relaxation, establishing that genuine Montgomery--Taylor source coupling can matter. But fixed-bandwidth confluence and period-33 controls cancel scalar local pressure and every affine/support-function consumption of finite-dimensional additive state, so a scalable continuation must preserve genuinely joint nonlinear source information. Weil Positivity, meanwhile, closes the finite regular/passive escape around the real-place Gamma phase, including finite Pontryagin and fixed-domain passive-limit repairs.
+
+Xi Flow obtains a collision-safe periodic Vieta state: aggregated moving-line selectors frame the relevant slow band, the Vieta coordinates diagonalize the full zero heat flow, and the Newton/taper inversions have controlled conditioning. The remaining obstruction is now sharply localized to the ultra-infrared Vieta sector, which can be large while destination third-difference transition energy is negligible; the natural next object is therefore a destination-weighted or quotient Vieta state plus a center-averaged Xi/periodic interface theorem.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **8 viable extensions**, **4 known-prior-art collisions**, **0 internal duplicates**, and **8 new barriers**. Therefore:
+Across the retained 20-episode window there are **7 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **11 new barriers**. Therefore:
 
-- `FrontierFertilityEpisodes = 40.0%`
-- `BarrierRate = 40.0%`
-- `PriorArtCollisionRate = 20.0%`
+- `FrontierFertilityEpisodes = 35.0%`
+- `BarrierRate = 55.0%`
+- `PriorArtCollisionRate = 10.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The represented frontier is now evenly split between viable extensions and newly exposed barriers. The strongest surviving directions are a finite Montgomery--Taylor certification box, joint top-mode contraction after common-prime complement reduction, Prime Flute's global relative interface calculus, gauge-controlled visual residual comparison, and Xi's source-to-transition aggregation problem beyond pointwise slow-frequency selectors. These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas.
+The represented frontier has become more obstruction-heavy, but several surviving directions are now much more specific than in the previous window: the notch-local six-point boundary layer after five-point closure, source-calibrated rather than aggregate statistical fidelity, source-specific signed Hamming relations, Prime Flute nonlinear chart entry, fixed-window zeta/control confirmation, genuinely joint nonlinear Weil-Inertia assembly, and a destination-weighted Vieta bridge. These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas.
 
 Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.
