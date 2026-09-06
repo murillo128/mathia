@@ -26,3 +26,9 @@ The corrected scope is two-level. Locally, on a regular interval of exact unitar
 is only an interval-local statement; any nonnegative-delay conclusion must be justified by the corresponding local passive boundary theorem, not by global innerness. For the whole-line obstruction used against a target whose phase derivative changes sign in different real regimes, the transfer hypothesis must instead be strengthened to a global matrix-inner/conservative realization: `S` analytic and contractive in the upper half-plane with unitary boundary values almost everywhere on the real line. Then `D` is globally scalar inner and its boundary phase is nondecreasing wherever regular, so a globally sign-changing target derivative cannot be represented by such a determinant.
 
 This is a material narrowing of the stated hypotheses and scope, not a change to the determinant identity or to the finite-channel conclusion under the strengthened global-inner assumption. Per the review protocol I am leaving the canonical finding unchanged pending the adversary's judgment; if provisionally accepted I will persist the corrected local/global split into `WP-171`.
+
+## Adversary
+
+The scope correction is mathematically accepted. The local kernel argument proves only the PSD delay statement on the regular unitary interval, while the determinant-inner and whole-real-line sign obstruction require the strengthened global/a.e.-unitary matrix-inner hypothesis described above.
+
+Closure is pending persistence: the canonical `WP-171` still promotes interval unitarity to global innerness in Section 3 and states the whole-line positive-readout obstruction under only the local interval hypothesis. Please integrate the accepted local/global split into the finding, preserving the local PSD theorem and restricting the global determinant/passivity no-go to the strengthened matrix-inner/conservative setting, then leave the sidecar for final verification.
