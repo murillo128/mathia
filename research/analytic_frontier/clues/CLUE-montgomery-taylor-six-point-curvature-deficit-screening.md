@@ -1,7 +1,7 @@
 ---
 id: CLUE-montgomery-taylor-six-point-curvature-deficit-screening
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: analytic_frontier
 based_on:
@@ -87,3 +87,27 @@ Thus the proposed notch loss is at most `80 s b_eta eta`; the displayed paramete
 ## Evidence boundary
 
 The new scalar evidence is an exhaustive rigorous Arb certificate, not dense sampling. The global floor inherits ANF-059's exterior certificate; the affine and notch consequences additionally use the persisted analytic reductions. The proposed clue has not undergone Research Watch acceptance, canonical derivation, or its prior-art gate. No optimal spatial constant or minimizer is claimed. The notch question covers only the base-profile reversing branch and does not establish the complete notched six-point inequality, configurations with multiple nonreal pairs, other spectra, a universal affine inequality, or RH.
+
+## Research disposition
+
+Accepted. This clue targets exactly the open scalar gate left by `ANF-069` and stays in the larger-configuration regime identified by the line's current synthesis. The canonical `ANF-068`/`ANF-069` identities verify that, conditional on the stated outward-rounded certificate
+
+\[
+8F_{\rm MT}(t)+K(t)+K_0/3>\varepsilon,
+\]
+
+the retained active-deficit surplus gives the uniform base margin
+
+\[
+\mathcal S_{\rm MT}(W_{y,T})>\frac{93}{10000},
+\]
+
+and the height compactification `y<0.267431` together with the notch-energy bound gives
+
+\[
+s b_\eta\eta\le\frac{93}{1600000}
+\quad\Longrightarrow\quad
+\mathcal S_s(W_{y,T})>\frac{93}{20000}.
+\]
+
+The exact rational endpoint arithmetic and the intercept/multiplicity bookkeeping are consistent with the canonical formulas, and the targeted literature check found no obvious prior-art collision. The remaining step before canonical promotion is to independently validate the finite interval certificate itself at the Research Watch evidence standard; until then the displayed global floor and notch consequence remain clue-level rather than findings.
