@@ -17,6 +17,7 @@ based_on:
   - research/prime_flute/findings/PF-180-area-preserving-lambert-split-synchronization.md
   - research/prime_flute/findings/PF-181-area-preserving-cusp-handoff-has-summable-weighted-cost.md
   - research/prime_flute/findings/PF-182-area-preserving-decomposition-cuff-seams-can-be-smoothed-at-summable-weighted-cost.md
+  - research/prime_flute/findings/PF-183-disjoint-thick-collar-slabs-remove-multiplicity-from-schatten-splice-budget.md
 ---
 
 # Does the prime/shift relative resolvent have the sharp Schatten threshold `S_r`, `r>1`?
@@ -27,7 +28,9 @@ The two endpoints of the problem are already separated. PF-112 shows that the ge
 
 The geometric volume-gauge program has now been narrowed substantially. PF-177 gives an exact-area gauge on the collapsing core of every matched true short collar and pushes its unavoidable area mismatch into a uniformly thick rim. PF-178 gives qualitative global `rho=1` existence. PF-179 supplies exact area-preserving `1+O(delta_n)` Lambert-body transports; PF-180 synchronizes their artificial split by exact-area Hamiltonian corrections; PF-181 hands the resulting body map to the exact deep-cusp identity with summable two-sided weighted cost. PF-182 removes the distinguished **decomposition cuffs** as an additional obstruction: the common one-parameter cuff traces can be pasted to smooth two-sided exact-area germs in arbitrarily thin neighborhoods with summable source/target weighted cost.
 
-Thus the live geometric obstruction is no longer pant volume, Lambert transport, split synchronization, cusp handoff, or smoothing the canonical pant seams. It is the **true-short-collar/body overlap**. The PF-138 Margulis-short geodesics need not be decomposition cuffs. A single complete area-preserving marking must agree with the PF-177 optimized gauge on every collapsing core while remaining compatible with the already assembled PF-179--PF-182 body map outside those collars, and the remaining overlap/body contribution must satisfy the PF-175 weighted metric budget.
+PF-183 removes a further global bookkeeping concern. The unresolved true-short-collar splice can be confined to fixed thick subslabs of the PF-138 standard collars. Those slabs are pairwise disjoint and have uniformly bounded inverse-unit-ball weight, while the PF-179--PF-182 body stage already has finite global unweighted `L^r` metric energy for every `r>1`. Therefore a **uniform energy-local conservative splice estimate on one normalized thick annulus would sum automatically over the complete short-collar family**. The short-separator multiplicity must not be paid again by assigning each collar an independent worst-case `O(p^{-1})` fixed-area charge.
+
+Thus the live geometric obstruction is no longer pant volume, Lambert transport, split synchronization, cusp handoff, smoothing the canonical pant seams, or a separate infinite-family counting problem for a suitably energy-local transition. It is the **local true-short-collar/body splice theorem itself**. The PF-138 Margulis-short geodesics need not be decomposition cuffs. A single complete area-preserving marking must agree with the PF-177 optimized gauge on every collapsing core while remaining compatible with the already assembled PF-179--PF-182 body map outside those collars, and the local interpolation must preserve the existing `L^r` energy rather than introduce a new per-collar trace cost.
 
 ## Research question
 
@@ -42,7 +45,7 @@ Can one construct, for every desired `r>1`, one smooth complete area-preserving 
 
 with `F` equal to the PF-177 area-coordinate gauge on the collapsing core of every PF-138 true short collar and equal to the PF-179--PF-182 area-preserving body construction away from controlled collar-interface regions?
 
-Equivalently, after freezing all solved modules, can the true-short-collar gauges be spliced into the global body map at finite total weighted metric cost? If so, `rho=1` and PF-175 gives
+Equivalently, after freezing all solved modules, can the true-short-collar gauges be spliced into the global body map by an exact-area **energy-local** interpolation on the fixed thick slabs isolated by PF-183? If so, `rho=1` and PF-175 gives
 
 \[
 (\Delta_{g_+}+1)^{-1}F_*
@@ -53,7 +56,7 @@ Equivalently, after freezing all solved modules, can the true-short-collar gauge
 
 under the canonical density-unitary identification, while PF-112 keeps the endpoint outside `S_1`.
 
-A parallel analytic route remains logically possible: control the one-sided density-identification correction in `S_r` for `1<r<2` without imposing `rho=1`. The geometric route is now more sharply localized, however, because PF-177--PF-182 have removed the previously generic volume and canonical-interface obstructions.
+A parallel analytic route remains logically possible: control the one-sided density-identification correction in `S_r` for `1<r<2` without imposing `rho=1`. The geometric route is now more sharply localized, however, because PF-177--PF-183 have removed the previously generic volume, canonical-interface, and global transition-counting obstructions.
 
 ## Why it may matter
 
@@ -67,32 +70,35 @@ A\notin\mathcal S_1.
 
 It would also be a strong negative arithmetic control. The exact all-composite shift clone would share the same sharp first-resolvent Schatten hierarchy, so neither compactness nor any `S_r`, `r>1`, membership could certify literal endpoint primality or RH. Any surviving arithmetic mechanism would have to live in finer data not fixed by this relative-operator equivalence class.
 
-A negative answer is now more informative than before. It would have to expose a genuinely global true-short-collar/body interaction or nonlocal operator amplification. It could no longer be blamed on the central short-collar model, central recoupling, lack of a resolvent factorization, qualitative volume-gauge existence, Lambert-body transport, artificial-split mismatch, cusp normalization, or canonical decomposition-cuff smoothing.
+A negative answer is now more informative than before. It would have to expose a genuinely local conservative-splice obstruction, a true trace/action mode not controlled by local metric energy, or nonlocal operator amplification. It could no longer be blamed on the central short-collar model, central recoupling, lack of a resolvent factorization, qualitative volume-gauge existence, Lambert-body transport, artificial-split mismatch, cusp normalization, canonical decomposition-cuff smoothing, or merely the number of PF-138 collars.
 
 ## Decisive test
 
-Freeze PF-179--PF-182 rather than reopening their solved modules. Use PF-138 to enumerate the complete tail family of true Margulis-short separators and PF-177's area coordinate on each matched collar. On a fixed central region such as `|x|<=1`, retain the PF-177 map exactly, where `rho=1` and the weighted `delta^r` estimate is already proved.
+Freeze PF-179--PF-183 rather than reopening their solved modules. Use PF-138 for the complete tail family of true Margulis-short separators and PF-177's area coordinate on each matched collar. Retain the exact-area identity-coordinate gauge on a fixed central subcollar and use PF-183's universal thick transition slab, for example `1<=|x|<=5/4`, where the inverse-unit-ball weight is uniformly bounded and the slabs are pairwise disjoint.
 
-For each collar, compare the restriction of the already assembled area-preserving body map with the PF-177 gauge on a two-sided outer interface lying in the noncollapsed rim. The decisive positive construction must produce an exact-area interpolation on that overlap whose first-derivative metric cost is controlled by a summable quantity derived from the actual prime/shift body trace, not from an arbitrary interpolation. It must then prove simultaneously that:
+The decisive positive construction is now a **fixed-domain local theorem**. On each normalized transition annulus, compare the already assembled area-preserving body germ with the marked PF-177 area-coordinate germ and construct an exact-area interpolation that equals the collar gauge on the inner side and the body map on the outer side. Its source- and target-side metric energy must satisfy a uniform estimate of the PF-183 form
 
-1. the collar corrections can be chosen coherently when a true short geodesic crosses canonical pant seams;
-2. all modified maps remain globally quasi-isometric and preserve the zero-twist marking;
-3. the source- and target-side inverse-unit-ball weighted `delta^r` costs of the true-short cores, transition rims, and untouched body complement are summable;
-4. the corrections do not reintroduce a density defect, so `rho=1` remains exact;
-5. the resulting pieces form one smooth complete global marking before PF-175 is invoked.
+\[
+E_r(\operatorname{splice}_\eta)
+\le C_r\bigl(E_r^{\mathrm{body}}(T_\eta)+|t_\eta|^r\bigr),
+\]
 
-PF-177 already proves that the collapsing core itself is benign and that the unavoidable collar-area discrepancy lives in a thick rim. PF-182 shows that arbitrarily thin conservative seam smoothing need not create a weighted penalty merely because a canonical cuff is geometrically awkward. The missing estimate must therefore identify the **actual body-versus-true-collar trace/shear produced by the global area-preserving construction** and show that its transition budget sums over the PF-138 family.
+rather than a fresh fixed-area estimate based only on a worst-case pointwise body distortion. PF-183 then performs the infinite-family summation automatically.
 
-A decisive negative result must prove an unavoidable lower bound: for example, a nonsummable trace/shear mode on the PF-177 outer interfaces, a topological/flux incompatibility preventing simultaneous exact-area insertion, or a singular-value mechanism showing failure of `S_r` for some `r>1`. Failure of one chosen interpolation is not enough, because the solved modules leave substantial local Hamiltonian and support-width freedom.
+The local construction must also verify that the relative marked germ carries no topological/flux/action obstruction incompatible with compactly supported exact-area interpolation, remains uniformly quasi-isometric, preserves the zero-twist marking, and glues smoothly when a true short geodesic crosses canonical pant seams. PF-182 means the pant seam itself need not be treated as a separate singular interface; the collar splice may take precedence there and the decomposition-seam smoothing can remain outside the controlled collar region.
+
+PF-143--PF-145 remain the main falsifiers. A nonconstant angular or radial trace mode on a thick interface has an unsuppressed local `L^1` currency, so one cannot argue that every trace mismatch is cheap merely because the core collapses. The positive route must show that the **actual** prime/shift relative germ is controlled by the local `L^r` metric energy already counted by PF-183, or derive an equally strong summable quantity from its exact structure.
+
+A decisive negative result must prove an unavoidable lower bound not absorbed by that local energy: for example, a flux/action invariant of the relative annulus germ, a trace mode whose conservative extension has strictly larger nonsummable cost than the body strain, or a singular-value mechanism showing failure of `S_r` for some `r>1`. Failure of one chosen interpolation is not enough, because the solved modules leave substantial local Hamiltonian and support freedom.
 
 ## Evidence boundary
 
-No complete area-preserving weighted marking is currently established. PF-177 controls each optimized short-collar core but not its compatibility with the global body map. PF-179--PF-181 control the body, artificial split, and cusp; PF-182 controls only the **canonical decomposition-cuff pasting correction** and explicitly does not estimate the untouched body map in the PF-138 true-short-collar overlap.
+No complete area-preserving weighted marking is currently established. PF-177 controls each optimized short-collar core but not its compatibility with the global body map. PF-179--PF-181 control the body, artificial split, and cusp; PF-182 controls the canonical decomposition-cuff pasting correction. PF-183 proves only that **if** the remaining true-collar interpolation has a uniform energy-local estimate on the fixed thick slabs, its total `r>1` transition budget is automatically summable. It does not construct that interpolation or prove that flux/trace compatibility holds.
 
 PF-175 remains conditional on the complete two-sided weighted metric hypothesis. PF-112 remains the trace-endpoint obstruction. Therefore neither `S_r` membership for all `r>1` nor a counterexample at any exponent above one has been proved.
 
 ## Research disposition
 
-The clue remains `accepted`, but its geometric frontier is materially narrower after PF-182. Future work should not revisit pant-wise volume existence, Lambert-body area transport, artificial-split synchronization, full-cusp handoff, or smooth area-preserving gluing of the distinguished decomposition cuffs as generic obstructions.
+The clue remains `accepted`, but its geometric frontier is materially narrower after PF-183. Future work should not revisit pant-wise volume existence, Lambert-body area transport, artificial-split synchronization, full-cusp handoff, smooth area-preserving gluing of the distinguished decomposition cuffs, or a separate PF-138 multiplicity summation for an energy-local transition.
 
-The live problem is now the **PF-138/PF-177 true-short-collar insertion into the already assembled PF-179--PF-182 area-preserving body map**, followed by the final complete-surface two-sided weighted estimate. The clue resolves only when that construction yields the density-unitary `S_r` classification for every `r>1`, or when a genuine unavoidable obstruction in this remaining overlap/global channel is proved.
+The live problem is the **uniform exact-area local splice on one normalized true-short-collar transition annulus**: prove that the marked PF-177 core gauge can be joined to the PF-179--PF-182 body germ with source/target `L^r` cost controlled by the already present local body/collar energy. The clue resolves only when those local splices assemble to the complete PF-175 hypothesis and yield the density-unitary `S_r` classification for every `r>1`, or when a genuine unavoidable obstruction to that local energy estimate is proved.
