@@ -51,7 +51,7 @@ For every finite Blaschke product `B`,
 \tag{5}
 \]
 
-while, provided the inserted zeros do not cancel against a denominator because `B` is analytic and bounded in the disk, the zero divisor of `Bf` is the zero divisor of `f` plus the zero divisor of `B`, counted with multiplicity. In particular, taking the outer control `f=1`, arbitrary finite zero multisets can be inserted without changing the retained boundary modulus at all.
+while the zero divisor of `Bf` is the zero divisor of `f` plus the zero divisor of `B`, counted with multiplicity. In particular, taking the outer control `f=1`, arbitrary finite zero multisets can be inserted without changing the retained boundary modulus at all.
 
 Therefore any downstream observable of the form
 
@@ -259,7 +259,7 @@ All analytic ingredients are classical.
 
 - Peter L. Duren, *Theory of H^p Spaces*, Academic Press, 1970 (Dover reprint 2000), is a standard source for Hardy-space boundary theory, inner--outer/canonical factorization, Blaschke products, and outer functions.
 - John B. Conway, *Functions of One Complex Variable II*, Graduate Texts in Mathematics 159, Springer, 1995, DOI `10.1007/978-1-4612-0817-4`, Chapter 20, gives a standard treatment of Hardy spaces on the disk and factorization in the Nevanlinna/Hardy setting.
-- José Ángel Peláez and Jouni Rättyä's surrounding literature and, more directly for the definitions used here, José Ángel Peláez/Girela-style surveys are not needed for the proof; an accessible primary expository reference is Daniel Girela, **"Inner Functions in Lipschitz, Besov, and Sobolev Spaces,"** *Abstract and Applied Analysis* (2011), Article ID 626254, DOI `10.1155/2011/626254`, which explicitly recalls that Blaschke products have unimodular boundary values, carry the zero sequence, and that an inner function factors into Blaschke and singular inner pieces.
+- Daniel Girela, **"Inner Functions in Lipschitz, Besov, and Sobolev Spaces,"** *Abstract and Applied Analysis* (2011), Article ID 626254, DOI `10.1155/2011/626254`, explicitly recalls the facts used here that Blaschke products have unimodular boundary values, carry the zero sequence, and that an inner function factors into Blaschke and singular inner pieces.
 
 No novelty is claimed for inner--outer factorization, Blaschke products, the argument principle, or reconstruction of an outer factor from boundary modulus.
 
