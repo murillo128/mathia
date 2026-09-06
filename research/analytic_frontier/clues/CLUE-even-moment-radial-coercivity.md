@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-even-moment-radial-coercivity
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: analytic_frontier
 based_on:
@@ -9,13 +9,14 @@ based_on:
   - research/analytic_frontier/findings/ANF-057-reciprocal-sinh-control-sharpens-the-support-free-relative-height-tube.md
   - research/analytic_frontier/findings/ANF-059-exact-montgomery-taylor-curvature-transform-shrinks-the-five-point-separation-annulus.md
   - research/analytic_frontier/findings/ANF-061-quadratic-height-renormalization-closes-the-common-translation-escape.md
+  - research/analytic_frontier/findings/ANF-062-validated-interval-certificate-proves-montgomery-taylor-five-point-zero-freeness.md
 ---
 
 # Does an even-moment inequality give the sharp all-height five-point margin?
 
 ## Observation
 
-Independent compute execution of [issue #121](https://github.com/murillo128/mathia/issues/121) certified the fixed Montgomery–Taylor defect `H_MT>0`, conditional on the issue's canonical outer-domain exclusions and Arb/FLINT arithmetic. A complete rational interval cover inspected 804375 boxes at 128 bits, escalating unresolved boxes to 512 bits, and left no unresolved cells. On the residual enclosure it certified `H_MT/(y1²+y2²)>3.9e-6`; the separately validated small-height face and analytic common-translation tail complete the sign decision. The controlling issue records the computation provenance; no repository script or Lean artifact is claimed. The tiny interval margin is slack in a sufficient tail bound, not evidence of a nearly vanishing geometry.
+Independent compute execution of [issue #121](https://github.com/murillo128/mathia/issues/121) certified the fixed Montgomery–Taylor defect `H_MT>0`, conditional on the issue's canonical outer-domain exclusions and Arb/FLINT arithmetic. The result is now canonicalized in `ANF-062`. A complete rational interval cover inspected 804375 boxes at 128 bits, escalating unresolved boxes to 512 bits, and left no unresolved cells. On the residual enclosure it certified `H_MT/(y1²+y2²)>3.9e-6`; the separately validated small-height face and analytic common-translation tail complete the sign decision. The tiny interval margin is slack in a sufficient enclosure, not evidence of a nearly vanishing geometry.
 
 The computation's quadratic normalization exposes a stronger candidate. Put
 
@@ -45,7 +46,7 @@ The elementary bound `B_n≤2^(2n−1)A_n` shows that the proposed moment inequa
 
 ## Why it may matter
 
-This would strengthen a positive interval cover into a sharp coercivity theorem and explain why finite height adds a nonnegative remainder. The resulting spectral-moment criterion could distinguish spectra with this stronger property from profiles that merely pass the quadratic curvature gate. It is a different test from repeating base zero-freeness or selecting a notch parameter.
+This would strengthen the positive interval cover of `ANF-062` into a sharp coercivity theorem and explain why finite height adds a nonnegative remainder. The resulting spectral-moment criterion could distinguish spectra with this stronger property from profiles that merely pass the quadratic curvature gate. It is a different test from repeating base zero-freeness or selecting a notch parameter.
 
 ## Decisive test
 
@@ -53,4 +54,10 @@ Prove the moment bound uniformly in both `n` and `t`, using validated finite cas
 
 ## Evidence boundary
 
-The completed computer-assisted result concerns the issue's exact sign question; it does not prove the all-moment inequality, radial monotonicity, or the proposed sharp global constant. The additional searches cover only the stated finite orders and horizontal range and use ordinary numerical arithmetic. The elementary series bridge is a sufficient condition, not an equivalence. No uniqueness of boundary minimizers, notch choice, larger-multiset conclusion, external novelty, or RH consequence is asserted.
+`ANF-062` settles only the exact sign question. It does not prove the all-moment inequality, radial monotonicity, or the proposed sharp global constant. The additional searches cover only the stated finite orders and horizontal range and use ordinary numerical arithmetic. The elementary series bridge is a sufficient condition, not an equivalence. No uniqueness of boundary minimizers, notch choice, larger-multiset conclusion, external novelty, or RH consequence is asserted.
+
+## Research disposition
+
+Accepted as a **structural strengthening**, not as a prerequisite for the already closed five-point zero-freeness problem. Research Watch independently checked the series bridge: expanding the exact `ANF-045` integrand under `y_j=lambda f_j` gives the displayed coefficient, and for `n>=2` the proposed lower bound together with `B_n<=2^(2n-1)A_n` makes that coefficient nonnegative. For `n=1`, the canonical curvature combination gives the stated `2 pi^2 m5(f1^2+f2^2)` floor. Hence the proposed moment inequality would indeed make `H_MT/lambda^2` nondecreasing and upgrade `ANF-062` to the sharp boundary coercivity constant.
+
+The finite numerical checks are not evidence for the universal moment inequality. A targeted literature search found only the general positive-definite/characteristic-function framework and the established Montgomery--Taylor extremal setting, not this all-order moment lower bound. The accepted task is therefore narrow: prove the bound uniformly in `n,t`, or kill this sufficient route with one certified violating order. Even success would strengthen only the fixed five-point profile unless a separate argument exports the criterion to larger multisets.

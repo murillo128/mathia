@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-central-notch-base-margin-certificate
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: analytic_frontier
 based_on:
@@ -11,6 +11,7 @@ based_on:
   - research/analytic_frontier/findings/ANF-051-two-pair-five-point-danger-has-an-exact-anti-phase-tube-and-fixed-height-bandwidth-radius.md
   - research/analytic_frontier/findings/ANF-052-central-notch-two-pair-five-point-perturbation-is-cubic-on-bounded-heights.md
   - research/analytic_frontier/findings/ANF-053-central-notch-five-point-survival-reduces-to-montgomery-taylor-zero-freeness.md
+  - research/analytic_frontier/findings/ANF-062-validated-interval-certificate-proves-montgomery-taylor-five-point-zero-freeness.md
 ---
 
 # Does the fixed Montgomery--Taylor two-pair defect have any genuine zero?
@@ -19,7 +20,7 @@ based_on:
 
 ANF-052 bounds the two-pair defect perturbation for `J_s=J_MT-s b_eta(1-|alpha|/eta)_+` by `O_Y(s b_eta eta^3)` on bounded heights, uniformly in horizontal placements, and supplies a high-height ceiling uniform over sufficiently narrow notches. ANF-046's pair-functional gain is of order `s b_eta`, with elementary normalization cost of order `s b_eta eta`. ANF-047 supplies the sufficient phase-blind test `Q+P>=L`; ANF-051 further restricts where a negative shape can occur.
 
-ANF-053 now fixes the perturbation sign: on bounded geometry boxes the leading correction is `-(5/3) pi^2 s b_eta (y_1^2+y_2^2) eta^3`. Every genuine base zero is destabilized by a sufficiently narrow notch. Conversely, the source proves a common obstruction box and shows that absence of genuine base zeros implies positivity for all sufficiently narrow notches. This supersedes a search over progressively retuned notch parameters: the next decision concerns one fixed base profile.
+ANF-053 fixes the perturbation sign: on bounded geometry boxes the leading correction is `-(5/3) pi^2 s b_eta (y_1^2+y_2^2) eta^3`. Every genuine base zero is destabilized by a sufficiently narrow notch. Conversely, the source proves a common obstruction box and shows that absence of genuine base zeros implies positivity for all sufficiently narrow notches. This superseded a search over progressively retuned notch parameters: the decision concerned one fixed base profile.
 
 ## Research question
 
@@ -27,7 +28,7 @@ Can `H_J_MT(y_1,y_2;t_1,t_2)=0` be excluded for all `y_1,y_2>0`, or can one genu
 
 ## Why it may matter
 
-A complete sign decision would convert the recent reductions into a usable finite certificate or eliminate a concrete candidate. It would also identify whether the remaining difficulty is a genuine base zero set or merely certification precision.
+A complete sign decision converts the recent reductions into a usable finite certificate or eliminates a concrete candidate. It also identifies whether the remaining difficulty is a genuine base zero set or merely certification precision.
 
 ## Decisive test
 
@@ -37,10 +38,10 @@ Return either a complete proof of base zero-freeness, with exact inequalities or
 
 ## Evidence boundary
 
-No base margin, admissible numerical parameter choice, or complete five-point certificate is supplied here. Even a successful five-point certificate would leave larger multisets and the full zeta implication to be established. A failed sufficient phase-blind test is not a counterexample to the exact defect inequality.
+The original clue supplied no base margin, admissible numerical parameter choice, or complete five-point certificate. Even the successful five-point certificate leaves larger multisets and the full zeta implication to be established. A failed sufficient phase-blind test is not a counterexample to the exact defect inequality.
 
 ## Research disposition
 
-Accepted. ANF-053 makes this the exact current cardinality-five decision problem for the central-notch separator ray: the local canon already supplies the fixed Montgomery--Taylor profile, small- and large-height exclusion, horizontal compactification, phase-blind and anti-phase reductions, and the signed notch perturbation, but it does not decide whether the base defect has a genuine zero. The Montgomery--Taylor extremal theorem fixes `J_MT` but does not itself supply this two-pair Fourier--Laplace sign theorem, and the closest current block/semidefinite improvements use different finite-information carriers rather than resolving this exact defect.
+Resolved by `ANF-062`. Mathia issue #121 supplied a validated Arb/FLINT certificate for the exact fixed Montgomery--Taylor defect after the canonical outer-domain reductions: the residual rational cover inspected `804375` boxes, left no unresolved cells, certified `H_MT/(y1^2+y2^2)>3.91727782744812265709656e-6` on the residual enclosure, and separately covered the zero-height neighborhood and the common-translation half-line with analytic bounds. Research Watch reconstructed the cancellation-safe normalized integrand from `ANF-045` and verified that no load-bearing `analytic_frontier` finding changed between the compute source revision and canonicalization.
 
-The unresolved target is therefore to certify `H_J_MT>0` throughout the genuine two-pair domain, with the noncompact boundary reductions kept explicit, or to produce one rigorous zero or negative witness. Failure of the sufficient `Q+P>=L` envelope remains inconclusive and must not be promoted to evidence of a zero.
+Therefore `H_MT>0` on every genuine two-pair geometry. By the equivalence in `ANF-053`, every sufficiently narrow nontrivial central notch has positive five-point defect throughout the genuine two-pair domain. This resolves the clue's exact decision problem; it does not settle larger conjugation-invariant multisets or imply RH.
