@@ -2,7 +2,7 @@
 
 **Status:** `EXACT-DERIVED + REAL-MULTIPLICITY + BERNOULLI-THINNING + OCCUPANCY-CAP-UNIFORM + SUPPORT-UNBOUNDED + MIXED-ONE-TWO-CLOSED`. `ANF-077` reduces heterogeneous real multiplicity at the uniform-occupancy normalization to nested-set excess defects and identifies mixtures of singleton and double sites as the first zero-surplus class. That exact `A=2`, `t=q_real^{-1}` gate is not a shape-level obstruction. A small retreat in the affine intercept, combined with an explicit simple-support floor already implicit in the near-extremizer estimates of `ANF-034`, closes not only the mixed `1/2` class but **every prescribed finite cap on the maximum site multiplicity**, uniformly in the number and geometry of support sites.
 
-More precisely, fix an integer `K>=1`. There are central-notch parameters `eta>0`, `s>0`, a positive simple-support floor `q_0`, a spectral amplitude `t_K=q_0^{-1}`, and an affine intercept `A_K<2` such that every finite real multiset whose site multiplicities satisfy `1<=k_i<=K` obeys
+More precisely, fix an integer `K>=1`. There are central-notch parameters `eta>0`, `0<s<1`, a positive simple-support floor `q_0`, a spectral amplitude `t_K=q_0^{-1}`, and an affine intercept `A_K<=2` (strictly below `2` when `K>=2`) such that every finite real multiset whose site multiplicities satisfy `1<=k_i<=K` obeys
 
 \[
 \boxed{
@@ -387,7 +387,7 @@ For every fixed `K` one can choose `eta>0` sufficiently small and then `L` suffi
 
 Indeed `B_{eta,L}->0` when first `eta->0` and then `L->infinity`, while the first term in (28) tends to `1`.
 
-After fixing such `eta,L`, choose `s>0` small enough to satisfy (11), `q_0>0`, and
+After fixing such `eta,L`, choose `s>0` small enough to satisfy `s<1`, (11), `q_0>0`, and
 
 \[
 \boxed{
