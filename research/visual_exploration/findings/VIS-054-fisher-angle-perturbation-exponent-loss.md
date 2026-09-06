@@ -147,7 +147,8 @@ Assume first that `m=1` and choose an interval
 
 on which `|D'|>=gamma>0`. Because `D'` is continuous and never vanishes on the connected interval, it has one sign throughout `I`. The mean-value theorem therefore gives
 
-`|D(s_0+-rho)| >= gamma rho`
+`|D(s_0-rho)| >= gamma rho`,
+`|D(s_0+rho)| >= gamma rho`,
 
 with opposite signs at the two endpoints.
 
