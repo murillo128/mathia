@@ -7,108 +7,92 @@ target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
   - research/prime_flute/findings/PF-125-shift-clone-has-compact-relative-resolvent.md
-  - research/prime_flute/findings/PF-126-shift-clone-metric-defect-is-Lp-above-one.md
-  - research/prime_flute/findings/PF-130-lambert-shift-metric-defect-is-strong-L1-summable.md
   - research/prime_flute/findings/PF-171-all-margulis-short-central-first-resolvent-blocks-have-sharp-Sr-threshold.md
   - research/prime_flute/findings/PF-173-relative-central-recoupling-is-trace-summable.md
   - research/prime_flute/findings/PF-174-weighted-defect-controls-smoothed-schatten-scale.md
   - research/prime_flute/findings/PF-175-weighted-defect-gives-dual-resolvent-schatten-bridge.md
-  - research/prime_flute/findings/PF-176-boundary-moser-removes-only-the-volume-gauge-obstruction.md
   - research/prime_flute/findings/PF-177-collar-jacobian-defect-can-be-expelled-from-collapsing-core.md
   - research/prime_flute/findings/PF-178-support-controlled-moser-removes-global-volume-gauge-gluing-obstruction.md
   - research/prime_flute/findings/PF-179-lambert-area-transport-is-uniformly-near-isometric.md
   - research/prime_flute/findings/PF-180-area-preserving-lambert-split-synchronization.md
   - research/prime_flute/findings/PF-181-area-preserving-cusp-handoff-has-summable-weighted-cost.md
+  - research/prime_flute/findings/PF-182-area-preserving-decomposition-cuff-seams-can-be-smoothed-at-summable-weighted-cost.md
 ---
 
 # Does the prime/shift relative resolvent have the sharp Schatten threshold `S_r`, `r>1`?
 
 ## Observation
 
-PF-112 fixes the two-dimensional endpoint for the standard density-unitary comparison: the genuinely non-isometric prime/shift first relative resolvent is not trace class, while microlocal order remains compatible with `S_r` for every `r>1`. PF-125 proves global compact relative resolvent, but compactness does not determine the Schatten exponent.
+The two endpoints of the problem are already separated. PF-112 shows that the genuinely non-isometric prime/shift first relative resolvent is not trace class under the standard density-unitary comparison, while PF-125 gives compact relative resolvent. PF-171 and PF-173 remove the complete Margulis-short central block and its matched recoupling as stronger obstructions, and PF-174--PF-175 provide the analytic bridge: a complete quasi-isometric comparison with two-sided inverse-unit-ball weighted metric defect in `L^r`, `r>1`, yields an `S_r` first-resolvent comparison in the dual-volume gauge. When the comparison is exactly area preserving, the dual, trivial, and density-unitary identifications coincide, so the same bridge reaches the canonical density-unitary resolvent for every `r>1`.
 
-The complete Margulis-short central sector is no longer the plausible obstruction. PF-171 proves the sharp `S_r`, `r>1`, threshold for the direct sum of all fixed-central first-resolvent collar blocks, PF-173 makes the matched central-cut recoupling correction trace summable, and PF-174 proves the inverse-unit-ball weighted `delta^r` scale on those collapsing collars together with the corresponding heat-smoothed Schatten factorization.
+The geometric volume-gauge program has now been narrowed substantially. PF-177 gives an exact-area gauge on the collapsing core of every matched true short collar and pushes its unavoidable area mismatch into a uniformly thick rim. PF-178 gives qualitative global `rho=1` existence. PF-179 supplies exact area-preserving `1+O(delta_n)` Lambert-body transports; PF-180 synchronizes their artificial split by exact-area Hamiltonian corrections; PF-181 hands the resulting body map to the exact deep-cusp identity with summable two-sided weighted cost. PF-182 removes the distinguished **decomposition cuffs** as an additional obstruction: the common one-parameter cuff traces can be pasted to smooth two-sided exact-area germs in arbitrarily thin neighborhoods with summable source/target weighted cost.
 
-PF-175 closes the first-resolvent analytic bridge under a form-natural dual-volume identification. If one coherent prime/shift marking satisfies the global weighted metric condition at exponent `r>1`, then
-
-\[
-(\Delta_{g_+}+1)^{-1}J^\vee
--I(\Delta_g+1)^{-1}
-\in\mathcal S_r,
-\qquad
-J^\vee=(I^{-1})^*.
-\]
-
-The same input reaches the trivial and density-unitary identifications for `r>=2`. Thus the residual analytic strip `1<r<2` is identification-sensitive rather than a missing generic resolvent-unsmoothing theorem.
-
-PF-176--PF-178 remove the qualitative volume-gauge obstruction. Equal-area truncated pants admit boundary-preserving correction, dangerous collar Jacobian forcing can be expelled from collapsing cores, and support-controlled Moser plus common cuff/cusp germs gives a smooth global marked diffeomorphism with `rho=1` exactly. The remaining issue after PF-178 was quantitative: its interior Moser construction carries no degeneration-uniform metric estimate.
-
-PF-179--PF-181 now remove three major pieces of that quantitative body/interface problem without using a degenerating pant-wide Moser estimate. PF-179 gives explicit area-preserving `1+O(delta_n)` transports of each Lambert body and an unweighted `L^r` body budget for every `r>1`. PF-180 synchronizes the two area-preserving Lambert transports along their artificial split through the canonical cusp entry by Hamiltonian self-corrections which preserve area exactly and add only a summable strong-`L^1` metric cost. PF-181 then uses the exact area balance of the lower pant to show that its actual cusp trace has zero area flux, allowing a fixed nondegenerating slab to hand that complete area-preserving germ to the exact deep-cusp identity with a summable two-sided inverse-unit-ball weighted cost. Thus **Lambert-body area transport, internal split synchronization, and the full-cusp handoff in the area gauge are no longer live obstructions**.
+Thus the live geometric obstruction is no longer pant volume, Lambert transport, split synchronization, cusp handoff, or smoothing the canonical pant seams. It is the **true-short-collar/body overlap**. The PF-138 Margulis-short geodesics need not be decomposition cuffs. A single complete area-preserving marking must agree with the PF-177 optimized gauge on every collapsing core while remaining compatible with the already assembled PF-179--PF-182 body map outside those collars, and the remaining overlap/body contribution must satisfy the PF-175 weighted metric budget.
 
 ## Research question
 
-For the common-manifold density-unitary Laplacians associated with a quantitatively controlled smooth prime/shift marking, does
+Can one construct, for every desired `r>1`, one smooth complete area-preserving prime/shift marking `F:X->X_+` such that
 
 \[
-A=(\Delta_{g_+}+1)^{-1}-(\Delta_g+1)^{-1}
+\int_X W_g\,\delta_{g,F^*g_+}^{\,r}\,d\mu_g
++
+\int_{X_+}W_{g_+}\,\delta_{g_+,(F^{-1})^*g}^{\,r}\,d\mu_{g_+}
+<\infty,
 \]
 
-satisfy
+with `F` equal to the PF-177 area-coordinate gauge on the collapsing core of every PF-138 true short collar and equal to the PF-179--PF-182 area-preserving body construction away from controlled collar-interface regions?
+
+Equivalently, after freezing all solved modules, can the true-short-collar gauges be spliced into the global body map at finite total weighted metric cost? If so, `rho=1` and PF-175 gives
 
 \[
-\boxed{
-A\in\mathcal S_r\quad\text{for every }r>1,
-\qquad
-A\notin\mathcal S_1?
-}
+(\Delta_{g_+}+1)^{-1}F_*
+-F_*(\Delta_g+1)^{-1}
+\in\mathcal S_r
+\qquad\text{for every }r>1,
 \]
 
-The negative endpoint is PF-112. For the positive side, PF-175 shows that weighted `delta^r` control yields `S_r` for every `r>1` in the dual-volume gauge. PF-178 proves that a smooth global area-preserving gauge exists, while PF-179--PF-181 show that its **Lambert-body, artificial-split, and full-cusp sectors can be realized quantitatively with `rho=1`**. The live geometric route is therefore narrower: realize compatible quantitative zero-twist cuff germs, splice the resulting body/cuff map to every PF-177/PF-138 true short-collar gauge, and prove the final two-sided inverse-unit-ball weighted metric budget in one complete marking.
+under the canonical density-unitary identification, while PF-112 keeps the endpoint outside `S_1`.
 
-If that geometric route fails, the parallel operator question remains whether the one-sided density-identification correction can be controlled directly in `S_r` for `1<r<2` without imposing `rho=1`.
+A parallel analytic route remains logically possible: control the one-sided density-identification correction in `S_r` for `1<r<2` without imposing `rho=1`. The geometric route is now more sharply localized, however, because PF-177--PF-182 have removed the previously generic volume and canonical-interface obstructions.
 
 ## Why it may matter
 
-A positive answer would complete the natural operator-ideal classification between PF-112 and PF-125 and place the pair in every Schatten class strictly above the trace endpoint. It would still be a negative arithmetic control: the exact all-composite shift clone would share the same classification, so the ideal class itself could not certify primality or RH.
+A positive answer would complete the natural operator-ideal classification between compactness and the trace endpoint:
 
-A negative answer for some `r>1` would now identify a genuinely global closed-interface/nonlocal amplification mechanism. Such an obstruction cannot be attributed merely to zero systole, the complete central short-collar family, central transmission zero modes, the heat-factor Schatten step, absence of a first-resolvent factorization, qualitative area-preserving existence, Jacobian correction inside collapsed collar cores, Lambert-body volume redistribution, artificial-split synchronization, or the full cusp handoff. Those channels are controlled by PF-171, PF-173, PF-174, PF-175, PF-176, PF-177, PF-178, PF-179, PF-180, and PF-181.
+\[
+A\in\mathcal S_r\ \text{for every }r>1,
+\qquad
+A\notin\mathcal S_1.
+\]
+
+It would also be a strong negative arithmetic control. The exact all-composite shift clone would share the same sharp first-resolvent Schatten hierarchy, so neither compactness nor any `S_r`, `r>1`, membership could certify literal endpoint primality or RH. Any surviving arithmetic mechanism would have to live in finer data not fixed by this relative-operator equivalence class.
+
+A negative answer is now more informative than before. It would have to expose a genuinely global true-short-collar/body interaction or nonlocal operator amplification. It could no longer be blamed on the central short-collar model, central recoupling, lack of a resolvent factorization, qualitative volume-gauge existence, Lambert-body transport, artificial-split mismatch, cusp normalization, or canonical decomposition-cuff smoothing.
 
 ## Decisive test
 
-Freeze the solved body, cusp, and thin-core pieces rather than reopening them. Use PF-179's exact area-preserving Lambert transports, PF-180's area-preserving split synchronization, PF-181's exact-area deep-cusp handoff, and the PF-177 gauge on every PF-138 matched short collar so that `rho=1` on the entire potentially collapsing collar core and all unavoidable collar-area mismatch is deferred to uniformly thick rims.
+Freeze PF-179--PF-182 rather than reopening their solved modules. Use PF-138 to enumerate the complete tail family of true Margulis-short separators and PF-177's area coordinate on each matched collar. On a fixed central region such as `|x|<=1`, retain the PF-177 map exactly, where `rho=1` and the weighted `delta^r` estimate is already proved.
 
-The decisive task is to construct, or obstruct, **one complete smooth area-preserving prime/shift marking** which simultaneously:
+For each collar, compare the restriction of the already assembled area-preserving body map with the PF-177 gauge on a two-sided outer interface lying in the noncollapsed rim. The decisive positive construction must produce an exact-area interpolation on that overlap whose first-derivative metric cost is controlled by a summable quantity derived from the actual prime/shift body trace, not from an arbitrary interpolation. It must then prove simultaneously that:
 
-1. realizes compatible two-sided area-preserving zero-twist germs at the distinguished decomposition cuffs and splices the body map to the PF-177 true-short-collar gauges without reintroducing large metric strain;
-2. remains uniformly quasi-isometric on the tail;
-3. for every desired `r>1`, satisfies
-   \[
-   \int W_g\,\delta_{g,g_+}^{\,r}\,d\mu_g
-   +
-   \int W_{g_+}\,\delta_{g,g_+}^{\,r}\,d\mu_{g_+}
-   <\infty.
-   \]
+1. the collar corrections can be chosen coherently when a true short geodesic crosses canonical pant seams;
+2. all modified maps remain globally quasi-isometric and preserve the zero-twist marking;
+3. the source- and target-side inverse-unit-ball weighted `delta^r` costs of the true-short cores, transition rims, and untouched body complement are summable;
+4. the corrections do not reintroduce a density defect, so `rho=1` remains exact;
+5. the resulting pieces form one smooth complete global marking before PF-175 is invoked.
 
-The unresolved geometry is therefore a **closed-interface compatibility problem**, not a body-volume, split, or cusp-volume existence problem. Any remaining volume exchange should be confined to the controlled cuff/true-short-collar thick-rim regions identified by PF-177 rather than solved by an unconstrained pant-wide Moser correction.
+PF-177 already proves that the collapsing core itself is benign and that the unavoidable collar-area discrepancy lives in a thick rim. PF-182 shows that arbitrarily thin conservative seam smoothing need not create a weighted penalty merely because a canonical cuff is geometrically awkward. The missing estimate must therefore identify the **actual body-versus-true-collar trace/shear produced by the global area-preserving construction** and show that its transition budget sums over the PF-138 family.
 
-If such a controlled `rho=1` marking is obtained, `J^\vee=I=U` and PF-175 immediately gives the canonical density-unitary `S_r` conclusion for every `r>1`.
-
-The alternative operator route is to prove directly that the one-sided density correction in PF-175 belongs to `S_r` for `1<r<2` using structure beyond the `S_2`-to-operator interpolation currently available. Any such argument must preserve PF-112's endpoint obstruction: a method that also forces the standard first resolvent into `S_1` has erased a real high-frequency contribution.
-
-A decisive negative resolution must produce a singular-value lower bound in the unresolved closed-interface/nonlocal channel, prove that every quantitatively controlled global area-preserving assembly necessarily violates the weighted metric budget, or otherwise show that the `1<r<2` density-unitary transfer fails intrinsically. Failure of one arbitrary cuff/collar interpolation is not enough because PF-178 proves qualitative `rho=1` existence and PF-177/PF-179--PF-181 provide substantial quantitative gauge freedom on the collar core, body, split, and cusp sectors.
+A decisive negative result must prove an unavoidable lower bound: for example, a nonsummable trace/shear mode on the PF-177 outer interfaces, a topological/flux incompatibility preventing simultaneous exact-area insertion, or a singular-value mechanism showing failure of `S_r` for some `r>1`. Failure of one chosen interpolation is not enough, because the solved modules leave substantial local Hamiltonian and support-width freedom.
 
 ## Evidence boundary
 
-PF-171 concerns the Dirichlet-decoupled fixed-central collar direct sum, and PF-173 concerns the matched central-cut recoupling family. Neither includes the complementary-body Dirichlet-to-Neumann response or complete outer interfaces of the infinite flute.
+No complete area-preserving weighted marking is currently established. PF-177 controls each optimized short-collar core but not its compatibility with the global body map. PF-179--PF-181 control the body, artificial split, and cusp; PF-182 controls only the **canonical decomposition-cuff pasting correction** and explicitly does not estimate the untouched body map in the PF-138 true-short-collar overlap.
 
-PF-174 supplies weighted short-collar input and heat-smoothed Schatten factorization. PF-175 supplies a conditional first-resolvent theorem from weighted metric deviation, but its strongest `r>1` statement uses the dual-volume identification rather than automatically the canonical density-unitary map. PF-126 remains unweighted.
-
-PF-177 is an exact quantitative collar gauge but does not by itself glue those collars into the body. PF-178 proves smooth global area-preserving existence but not quantitative control. PF-179 proves exact area-preserving near-isometric transport on individual Lambert bodies, PF-180 proves exact area-preserving split synchronization with summable correction cost, and PF-181 proves a summable **weighted** exact-area handoff from that lower body to the deep-cusp identity. None of PF-179--PF-181 proves compatible quantitative gluing across all distinguished cuffs and PF-138 true short collars, and none proves the complete-surface PF-175 weighted hypothesis.
-
-Accordingly, neither the desired density-unitary `S_r` conclusion for all `r>1` nor a counterexample for any `r>1` is established. The clue remains a research target rather than evidence.
+PF-175 remains conditional on the complete two-sided weighted metric hypothesis. PF-112 remains the trace-endpoint obstruction. Therefore neither `S_r` membership for all `r>1` nor a counterexample at any exponent above one has been proved.
 
 ## Research disposition
 
-The clue remains `accepted`. PF-181 materially narrows the geometric frontier again: future work should not revisit pant-wise volume existence, Lambert-body area transport, artificial-split synchronization, or the full-cusp handoff as generic Moser problems.
+The clue remains `accepted`, but its geometric frontier is materially narrower after PF-182. Future work should not revisit pant-wise volume existence, Lambert-body area transport, artificial-split synchronization, full-cusp handoff, or smooth area-preserving gluing of the distinguished decomposition cuffs as generic obstructions.
 
-The live frontier is now **closed-interface quantitative assembly**: make the area-preserving decomposition-cuff germs and PF-177 true-short-collar gauges coexist with the controlled body map, prove the resulting two-sided weighted `delta^r` budget on the complete surface, and invoke PF-175. The only independent analytic alternative remains the density-identification strip `1<r<2`. The clue resolves only when the full uncut density-unitary first relative resolvent is classified, or when a genuine global operator/geometric obstruction for some `r>1` is found.
+The live problem is now the **PF-138/PF-177 true-short-collar insertion into the already assembled PF-179--PF-182 area-preserving body map**, followed by the final complete-surface two-sided weighted estimate. The clue resolves only when that construction yields the density-unitary `S_r` classification for every `r>1`, or when a genuine unavoidable obstruction in this remaining overlap/global channel is proved.
