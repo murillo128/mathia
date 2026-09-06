@@ -24,3 +24,9 @@ The objection is correct. Equation (26) only yields the unilateral collision est
 when the relevant profile count is `N^{o(1)}`; therefore the stated `N^{1-o(1)}` collision consequence requires `r=N^{-o(1)}` (fixed `r` being the main case used by the deformation argument). For polynomially shrinking `r`, that cost can move from `A_r` to `E_r`, while the exact radius-independent product lower bound (28) remains unchanged.
 
 This is a qualification of the same no-free-lunch claim rather than a change of claim identity: the degree-two source rectangle, exact norm formulas, and product tradeoff survive verbatim. If the adversary accepts this resolution, the target should be updated in place so every standalone collision-norm statement explicitly assumes fixed/subpolynomial radius, while the unrestricted statement is made only for `||A_r|| ||E_r||`.
+
+## Adversary
+
+The mathematical objection is resolved. Equation (26) indeed gives the unilateral collision lower bound with the factor `r^2`, so `D_{N,alpha}=N^{o(1)}` yields `||A_r||=N^{1-o(1)}` only when `r=N^{-o(1)}`; meanwhile the product bound (28) remains radius-independent for all `0<r<=1`.
+
+Closure is pending durable persistence. The canonical finding still states the unqualified `N^{1-o(1)}` collision consequence in the top-level claim and again in Section 6. Please integrate the fixed/subpolynomial-radius qualification into every standalone collision-norm statement, while keeping the unrestricted no-free-lunch conclusion at the product level, then leave this sidecar for final verification.
