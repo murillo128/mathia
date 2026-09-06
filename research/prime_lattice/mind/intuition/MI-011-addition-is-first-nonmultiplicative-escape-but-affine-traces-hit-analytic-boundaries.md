@@ -1,38 +1,37 @@
-# MI-011 — Addition is a genuine missing variable, but canonical regularization and diffuse additive averaging delete or universalize it
+# MI-011 — Addition is a genuine missing variable, but diffuse and slowly weighted affine averages classicalize it
 
-**Evidence level:** supported through PL-176 by exact affine operator identities, published logarithmic Chowla inputs, a Davenport fourth-moment bound, and higher Gowers-uniformity prior art
+**Evidence level:** supported through PL-183 by exact affine identities and persisted short-interval/additive-uniformity inputs
 
 ## Core intuition
 
-Ordinary addition is genuinely outside the multiplicative exponent-difference quotient: ratios, one-swap terms, and shifted Liouville correlations require relations `n` with `n+h`. But preserving addition in the definition is not enough. The first canonical analytic, statistical, and diffuse higher-order completions either delete the difficult correlation or average it into generic multiplicative pseudorandomness.
+Ordinary addition is genuinely outside the multiplicative exponent-difference quotient: ratios, one-swap terms, and shifted correlations use relations `n` with `n+h`. But preserving addition in the definition is not enough. Canonical regularization, diffuse higher-order averaging, broad Kronecker averaging, and even slowly varying target weights can delete or universalize the source-specific relation.
 
-The live question is therefore not “add affine shifts” or “raise the correlation degree” but **retain a source-forced additive pattern through the exact analytic/limiting operation that is supposed to reach the critical regime**. Standard Hilbert--Schmidt regularization, uniform/logarithmic averaging, and complete additive-cube averaging do not do this.
+The live question is therefore not merely “add affine shifts,” “raise the correlation degree,” or “weight by the target,” but **retain a source-forced relational pattern through the exact analytic or limiting operation that is supposed to reach the critical regime**.
 
 ## Strongest justified principle
 
-PL-169 identifies additive shifted correlations as information absent from pure multiplicative exponent differences. PL-170--PL-171 show that simple affine relative traces telescope to finite-head data or remain behind absolute-convergence walls.
+PL-169--PL-176 establish the first boundary. Additive shifted correlation is absent from exponent differences, yet simple affine traces telescope or remain behind absolute-convergence walls; `det_2` deletes the first trace carrying fixed-shift Chowla data; fixed finite logarithmic sectors become Haar/Bernoulli under current theorems; and complete additive-cube averaging collapses to generic multiplicative pseudorandomness.
 
-PL-172 gives the first non-telescoping affine parity operator, but `det_2` crosses into the Hilbert--Schmidt region only by removing the first trace carrying the fixed-shift Chowla series. PL-173 shows that uniform shift averaging either vanishes, remains a finite package of unresolved channels, or collapses to the classical Liouville summatory square. PL-174--PL-175 show that fixed finite logarithmic second-order spectra, all odd Walsh sectors, and degree two are already Bernoulli/Haar-universal; every three-sign nonlinear readout therefore classicalizes.
+PL-177--PL-182 then isolate a more direct prime-shift channel. An oriented nonselfadjoint phase can retain shifted-prime arithmetic, but broad Kronecker/vertical prime averages converge uniformly to deterministic one-point-density kernels throughout a large short-interval-PNT resolution band, even when the source shift and frequency grow within the exact resolution parameter.
 
-PL-176 closes the obvious degree-four escalation under complete direction averaging. The positive Liouville parallelogram sum is an exact Fourier fourth moment and is `o(N^3)` by the uniform Davenport exponential-sum estimate. Modern higher-uniformity theorems further show that standard Gowers cube averages flatten for Liouville and broad nonpretentious multiplicative classes. Degree four was only the first sector not covered by the earlier fixed-shift logarithmic inputs; once diffusely averaged it is not a new selector.
+PL-183 removes the simplest target-relative escape. Multiplying the moving-prime phase by any bounded slowly varying target weight only adds its Lipschitz complexity to the same quadrature budget; below the resolution horizon the prime sum is still determined by continuum density, and a genuinely slower target amplitude cannot stop high-frequency cancellation. Target dependence is useful only when it changes a load-bearing hypothesis: thin/singular support, arithmetic conditioning, joint multi-prime dependence, phase-scale oscillation, or another non-diffuse structure.
 
 ## What remains possible
 
-Ordinary fixed-shift Cesaro correlations remain outside these averaging theorems, but no critical continuation mechanism is supplied. A sparse, fixed, source-forced, or genuinely non-diffuse family of additive configurations may evade the exact PL-176 reduction. A completed/target-relative coupling may also survive if it incorporates additive information before regularization or averaging.
+Ordinary fixed-shift Cesaro correlations remain outside the diffuse theorems, and source-forced sparse/completed additive relations may survive if the destination carrier preserves them. A target-relative construction must be relational enough that one-point prime density cannot determine it.
 
-Higher even Walsh degree by itself is not a reason to continue. The source must explain why a particular configuration or weighting is privileged and why the final analytic carrier preserves rather than averages away that relation.
+Higher Walsh degree, larger source shift, or a smooth target weight by itself is not a reason to continue. The source must explain why a particular configuration is privileged and why the final analytic carrier preserves rather than averages away that relation.
 
 ## Status / novelty
 
-Shifted correlations, Chowla conjectures, Schatten ideals, regularized determinants, logarithmic Furstenberg systems, Fourier fourth moments, and Gowers uniformity are classical/prior-art ingredients. The persisted synthesis is the boundary: **addition supplies genuinely missing arithmetic information, but canonical affine completions and diffuse cube averages can erase or universalize it; fertility requires a source-forced non-diffuse additive relation that survives the destination carrier**.
+Shifted correlations, Chowla-type problems, regularized determinants, Furstenberg systems, Gowers uniformity, Kronecker phases, and short-interval prime equidistribution are classical/persisted inputs. The synthesis is the boundary: **addition supplies missing arithmetic information, but diffuse or slowly weighted one-point averaging can still classicalize it; fertility requires a source-forced relational carrier below the averaging quotient**.
 
 ## Falsification criterion
 
-Recover the PL-172 fixed-shift first trace from `det_2` in `Re(s)>1/2` without independently continuing the correlation, produce a non-Haar fixed finite logarithmic sector covered by PL-174/175, contradict the PL-176 parallelogram identity/Davenport bound, or derive a source-forced sparse/completed additive carrier whose critical behavior remains nonuniversal.
+Recover a covered fixed-shift first trace after the stated regularization without extra continuation, produce a non-Haar covered diffuse sector, or exhibit a bounded slowly varying target weight satisfying PL-183's hypotheses whose prime readout retains a nonvanishing rational-prime-specific residual beyond the continuum integral.
 
 ## Lean-formalizable core
 
-- Affine Liouville operator and `det_2` deletion of the first trace.
-- Uniform/all-shift averaging identities.
-- Walsh-sector reduction from logarithmic correlation inputs.
-- Additive-parallelogram fourth-moment identity and degenerate-face count.
+- Affine operator and regularization deletion identities.
+- Uniform/all-shift averaging reductions.
+- Separation between one-point weighted density statistics and genuinely relational target dependence.

@@ -1,30 +1,32 @@
 # MI-006 — Classify the complete boundary/control model before calling an escape arithmetic
 
-**Evidence level:** supported by independent exact boundary classifications across the active Mathia research lines
+**Evidence level:** supported by independent exact boundary classifications across the current Mathia research lines
 
 ## Core intuition
 
-Many plausible advances arise by leaving a category that has just failed: enlarge the witness family, move to a singular operator, add an algebraic incidence, regularize into a larger ideal, follow escaping mass, or introduce a source-compatible dynamical mode. The enlarged carrier can still have a complete universal/classical control model, and the apparent escape can disappear once its natural limiting, conditioning, domain, or transport rule is included.
+Many plausible advances arise by leaving a category that has just failed: enlarge the witness family, move to a singular operator, add an ordered refinement, choose a canonical center, follow heat transport, or introduce a boundary phase. The enlarged carrier can still have a complete classical/control model, and the apparent escape can disappear once its natural limiting, conditioning, domain, passivity, provenance, or transport rule is included.
 
-The correct order is to identify the carrier change, classify its strongest admissible controls including singular/moving/exhaustion limits, compute the exact information quotient and quantitative budget, and only then credit a residual. A boundary model is complete only when it includes **how the object is assembled, sampled, conditioned, regularized, and transported**, not merely its finite formula.
+The correct order is to identify the carrier change, classify its strongest admissible controls including singular/moving/exhaustion limits, compute the exact information quotient and quantitative budget, and only then credit a residual. A boundary model is complete only when it includes **how the object is assembled, sampled, conditioned, regularized, transported, and scalarized**, not merely its finite formula.
 
 ## Strongest justified principle
 
-Analytic Frontier now supplies a complete local geometric narrowing of the scalar five-point escape: equal heights are globally positive and an explicit unequal-height tube is safe, leaving only a compact base-kernel zero-freeness problem. Narrow central notches do not create an independent mechanism because their leading perturbation decreases the defect and therefore lives or dies with that base zero set.
+Analytic Frontier now supplies a completed scalar boundary classification rather than merely compactness. ANF-065--ANF-066 combine additive incompatibility with validated curvature convexity to classify the entire Montgomery--Taylor five-point near-extremizing boundary into two explicit families. The scalar escape is closed through its sharp boundary.
 
-Arithmetic Fidelity shows that a larger witness category itself has a canonical completion. AF-134 constructs the minimal backward saturation required for composition; an unsaturated stagewise quotient is not the full boundary model. AF-136 similarly shows that source Gram spectral magnitudes are gauge metadata unless a coefficient metric is part of the admitted category.
+Arithmetic Fidelity shows that canonicalization itself has a boundary model. AF-149 supplies the source-selected Shtarkov center, but AF-150 proves that recomputing it after compression is not functorial merely from approximate recovery; the missing control is maximal-leakage drop. The provenance/transport rule is part of the canonical object.
 
-Möbius Cancellation shows that changing from unsigned to signed information is not enough if the retained resolution reconstructs the target. MC-083--MC-085 make parity-sensitive, exact-source, and proper low-frequency annular carriers Mertens-equivalent at the tested resolution.
+Prime Circle classifies a source-native ordered enlargement. PC-186's exact refinement calculus is flat, while PC-187's first weighted holonomy is nonzero but cohomologically trivial and Mellin-classical. Noncommutativity must be tested against the full refinement algebra, not credited from a single commutator.
 
-Prime Circle and Prime Flute classify opposite operator boundaries. PC-178 shows the singular raw prime-axis form is nonclosable and its natural Abel regularization scalarizes; the domain/closure rule is part of the control model. PF-169 shows that the entire family of short central squared-resolvent blocks is trace-summable, so any global obstruction must include the transmission pieces omitted by local Dirichlet cuts.
+Prime Flute gives the opposite outcome: PF-179--PF-181 show that once the exact area coordinate, Hamiltonian split correction, and zero-flux cusp handoff are included, long-body degeneration, artificial split mismatch, and the full cusp are not genuine boundaries. The remaining obstruction has moved to compatible cuff/true-short-collar assembly and the final complete weighted operator budget.
 
-Weil Positivity broadens incidence classification. WP-160 uses toric Manin--Mumford to close all scalable fixed finite-arity algebraic torsion incidence, not just the first few equations. WP-161 then shows that a genuinely new real radial variable has Mangoldt boundary data but a universal full-support positive local jet. Escaping the algebraic category is real, yet its most canonical positive boundary model still erases the selector.
+Visual Exploration makes the perturbation boundary explicit. VIS-054--VIS-055 identify the exact Fisher quotient and its inverse conditioning, while VIS-056 shows class-law support motion inside the frozen outer geometry is controlled by Wasserstein distance. Changes of partition/closure remain outside that model and must be audited separately rather than hidden inside a generic noise term.
 
-Weil Inertia and Xi Flow give singular and dynamic versions. WI-164/WI-167 show that Schur normalization and quantized flag jumps are opposite but equally ineffective confluence repairs without new source funding. XF-047 gives a nonlinear memory wave passing the previous source-count controls, while XF-048 shows that the full endpoint source category has an additional prime-free Fourier constraint; XF-049 then identifies the transport boundary needed to use it dynamically.
+Weil Positivity adds analytic passivity to the checklist. WP-170 shows that the exact unimodular Gamma phase fails the half-plane Blaschke/Schur test and has sign-changing boundary phase velocity. Boundary unimodularity alone does not make a phase an ordinary passive response.
+
+Weil Inertia and Xi Flow show matched-control and dynamic boundaries. WI-174--WI-175 close constant/linear-pressure retuning inside one fixed scalar assembly by explicit upper witness and periodic averaging. XF-062--XF-063 show that a static sparse-defect obstruction disappears after positive tangent heat, where the source selector becomes a true lower frame; the remaining boundary is nonlinear transfer into that transported category.
 
 ## Consequence for synthesis
 
-A proposed escape should be credited only after the enlarged carrier, complete matched family, source conditioning, target-scale budget, domain/regularization, and assembly/transport rule are explicit. The strongest control can change direction: sometimes it closes the route; sometimes it reveals that the remaining problem has moved to a narrower source-conditioned or noncompact sector.
+A proposed escape should be credited only after the enlarged carrier, complete matched family, source conditioning, canonicalization/provenance rule, target-scale budget, domain/regularization, passivity class, and assembly/transport rule are explicit. The strongest control can close the route or relocate the live problem to a much narrower interface; both are valuable outcomes.
 
 ## Status / novelty
 
@@ -32,4 +34,4 @@ The component mathematics is classical or persisted exact work. The synthesis is
 
 ## Falsification criterion
 
-Produce a source-forced carrier whose complete admissible control family, conditioning, limiting/domain rule, and transport still reproduce the claimed residual despite the proposed distinction, or derive a residual that remains quantitatively coercive after the strongest source-appropriate boundary model is applied.
+Produce a source-forced carrier whose complete admissible control family, conditioning, limiting/domain/passivity rule, and transport still reproduce the claimed residual despite the proposed distinction, or derive a residual that remains quantitatively coercive after the strongest source-appropriate boundary model is applied.

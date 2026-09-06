@@ -1,47 +1,44 @@
-# MI-001 — Preserve discriminating structure, source-fixed gauge, and relative cancellation before canonical compression
+# MI-001 — Preserve discriminating structure, source-fixed provenance, and relative cancellation before canonical compression
 
-**Evidence level:** supported by exact deterministic, analytic, statistical, interaction-kernel, quotient-selection, multiscale-recovery, operator-limit, signed-cancellation, and source-dynamics results across the current Mathia corpus
+**Evidence level:** supported by exact deterministic, statistical, operator, quotient, signed-cancellation, refinement, and source-dynamics results across the current Mathia corpus
 
 ## Core intuition
 
-Across Mathia, the recurring failure is applying a transformation whose induced indistinguishability relation already identifies states, interactions, signs, scales, or models that the later arithmetic claim needs to distinguish. A representation may retain the target only through an arbitrary gauge, a witness-relative quotient that has not been saturated for composition, a noncanonical domain/exhaustion, a positive scalarization that deletes a cancellation-supported selector, or an absolute estimate that throws away the very source/control cancellation that makes an infinite assembly small.
+Across Mathia, the recurring failure is applying a transformation whose induced indistinguishability relation already identifies states, interactions, signs, scales, models, or provenance that the later arithmetic claim needs to distinguish. A representation may retain the target only through an arbitrary gauge, a stagewise canonicalization that forgets the source reference, a radial/refinement quotient that turns interaction into a coboundary, a positive scalarization that deletes cross-component cancellation, or an absolute estimate that throws away the common-mode cancellation making an infinite assembly small.
 
-A useful pipeline must therefore derive the **source-fixed category and gauge**, compute the complete retained relation and strongest matched control, preserve source-selected signed/nonseparable information through the analytic carrier, and take relative differences before norms/closure/positivity whenever common modes are meant to cancel.
+A useful pipeline must therefore derive the **source-fixed category, gauge, and provenance**, compute the retained relation and strongest matched control, preserve source-selected signed/nonseparable information through the analytic carrier, and expose relative cancellation before norms/closure/positivity whenever the destination uses that cancellation.
 
 ## Strongest current principle
 
-Arithmetic Fidelity now supplies a precise category ladder. AF-134 gives minimal backward witness saturation; AF-135--AF-138 reduce unfixed spectral scale to projection geometry and show how a source metric repairs it. AF-139 proves that covariance-only affine naturality forces Mahalanobis geometry and therefore a second-order ceiling. AF-140--AF-141 show both the escape and the next gate: a source-natural statistical family can supply full-law Fisher geometry, but downstream compression retains it only through the conditional score, with exact Fisher loss equal to a score-projection defect.
+Arithmetic Fidelity now makes provenance explicit. AF-142--AF-149 show that one propagated common reference can support a family-wide reverse channel and that a source-selected Shtarkov/NML center can escape mixture-reference dilution. AF-150 then shows that recomputing that canonical center after compression is a different operation: its drift is controlled by maximal-leakage loss and need not be small merely because the experiment is approximately recoverable. “Canonical at every stage” is not equivalent to “source-coherent through the chain.”
 
-Möbius Cancellation sharpens information deficit beyond support counting. MC-088--MC-089 show that a support-supercritical omitted block can be recursively cheap when Euler-factor structure reduces it to smaller scales. MC-090 then shows that this is not enough: the complementary gcd-sieve carrier still contains the unsifted top Mertens mode. A decomposition is useful only if the target-bearing retained mode itself is reduced, not merely the complement.
+Möbius Cancellation gives the sharpest signed-aggregation example. MC-097--MC-098 prove that the degree-two radial shell and the aggregate higher-degree tail each have order `N^2/log^2 N` mass with opposite signs, while the true endpoint is unconditionally much smaller. Positive shell norms erase cancellation already known to occur in the source.
 
-Prime Circle and Weil Positivity expose the same operation-order barrier for a source-native signed radial selector. PC-179 and WP-163 show that shellwise Mellinization is a classical zeta/Ramanujan transform and preserves Mangoldt support only at one critical scalarization. PC-180 shows that the simplest constant self-adjoint cross-shell flux coupling collapses to the endpoint `Lambda` vector, while WP-164 shows that pointwise-positive prime-power flux is not a positive self-adjoint semigroup coefficient. The surviving information is signed/ordered and must be coupled before scalarization or positivity.
+Prime Circle supplies the cohomological analogue. PC-186 shows that the exact linear child-shell refinement directions commute, and PC-187 shows that the first primitive-shell weighted order defect is a cyclotomic coboundary with the same Mellin carrier. Formal noncommutativity is not discriminating structure when the complete source algebra trivializes it.
 
-Prime Flute gives the operator-relative analogue. PF-172 shows that an absolute collar recoupling has an order-one zero-mode trace budget even as the interface pinches. PF-173 subtracts the matched prime/clone transmission first; the zero mode cancels exactly and the complete central recoupling tail becomes trace-summable. Absolute local control and relative assembled control are different mathematical objects.
+Prime Flute sharpens the relative-assembly success case. PF-179--PF-181 give exact area-preserving, degeneration-uniform long-body maps, split synchronization, and full-cusp handoff with summable weighted cost after earlier prime/clone zero-mode cancellation. The remaining operator burden has moved to the physical cuff/true-short-collar assembly rather than local degeneration or cusp geometry.
 
-Visual Exploration makes representation choice auditable. VIS-045 bounds Fisher-angle distortion inside a bounded gauge family, while VIS-046 proves that unrestricted positive diagonal reweighting can flip any mixed-sign residual orientation. Agreement under selected gauges is not intrinsic structure unless the admissible gauge family is fixed and quantitatively controlled.
+Visual Exploration shows that compression can be exact yet badly conditioned while still admitting a controlled model perturbation layer. VIS-055 proves the Fisher curve is only a global sign quotient of the hidden contrast, VIS-054 proves the quotient doubles return contact order, and VIS-056 gives Wasserstein control of class-law support drift inside the frozen outer geometry. Exact information, inverse conditioning, and model transport are distinct.
 
-Weil Inertia and Xi Flow show source-conditioned non-escape in two further forms. WI-169 proves that the natural odd quotient is negatively oriented relative to a positive flag promotion, so existing horizontal charge cannot fund that repair. XF-052--XF-054 make the endpoint memory selector exact and uniformly empty over fixed heat time at the matched-statistic level; the remaining problem has moved downstream into the source-to-coercivity bridge.
+Weil Positivity and Xi Flow give two operator/dynamical boundaries. WP-170 shows that the exact archimedean Gamma phase is not an ordinary scalar passive inner response despite unimodular boundary values. XF-062--XF-063 show that the static sparse-defect escape disappears after positive tangent heat and that the source selector then frames the surviving flux exactly; the missing information is now in the nonlinear transport into that category.
 
 ## Consequence for synthesis
 
-The robust order is:
+The robust order is: derive source-fixed category/gauge/provenance, identify the complete quotient and matched controls, preserve the missing signed/ordered relation, expose relative cancellation before positive aggregation, prove source-funded non-escape in the destination resource, and only then canonicalize, spectralize, average, complete, or impose positivity.
 
-`derive source-fixed category/gauge -> identify complete quotient and matched controls -> preserve missing signed/ordered relation -> expose relative cancellation before norm/closure -> prove source-funded non-escape through the destination assembly -> only then optimize, spectralize, complete, average, or impose positivity`.
-
-A proposed bridge should fail fast if its metric is unfixed, its statistic reconstructs the target through a hidden top mode, its positive completion erases signed support, its self-adjointization endpoint-collapses ordered data, its gauge family can be tuned freely, or its absolute norm estimate discards the matched cancellation required for summability.
+A proposed bridge should fail fast if it recanonicalizes away source provenance, represents known cancellation as separate positive masses, generates apparent interaction only through a coboundary, treats exact identifiability as stable observability, or invokes positivity in a boundary category that cannot carry the required signed response.
 
 ## Status / novelty
 
-The component notions — witness duality, generalized pencils, Fisher information, Euler-factor decomposition, Schatten ideals, cyclotomic/Ramanujan transforms, weighted inner products, and heat transport — are largely classical. The persisted synthesis is program-level: **arithmetic leverage survives only when source-fixed relation, sign, gauge, scale, and relative assembly remain visible until the operation that actually uses them**.
+The component notions are classical or persisted exact findings. The program-level synthesis is: **arithmetic leverage survives only when source-fixed relation, sign, gauge, provenance, and relative assembly remain visible until the operation that actually uses them**.
 
 ## Falsification criterion
 
-Find a covered pipeline in which the target varies inside the complete retained quotient/gauge orbit and no later stage receives new source information, yet a stable target theorem follows; or a pipeline where the decisive common-mode cancellation is discarded before the destination norm but the same quantitative assembled theorem still follows without an additional source estimate.
+Find a covered pipeline in which the target varies inside the complete retained quotient/provenance class and no later stage receives new source information, yet a stable target theorem follows; or a pipeline where decisive source cancellation is discarded before the destination norm but the same quantitative assembled theorem follows without an additional source estimate.
 
 ## Lean-formalizable core
 
 - Quotient/post-processing monotonicity and witness saturation.
-- Metric-gauge/generalized-pencil invariance and conditional-score Fisher loss.
-- Gcd-mask top-mode persistence and finite lower-scale decomposition.
-- Relative-versus-absolute direct-sum ideal lemmas in finite collar models.
-- Positive-weight gauge sign-cone classification.
+- Propagated-reference versus recanonicalized-center distinctions in finite experiments.
+- Abstract signed-cancellation versus positive-component norm lemmas.
+- Coboundary triviality as a no-new-carrier criterion in finite refinement models.

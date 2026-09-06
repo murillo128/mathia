@@ -2,13 +2,13 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Amplify the now-verified source-specific Montgomery--Taylor surplus
+## Leave the fixed single-profile linear-pressure architecture rather than retune it
 
 **Linked intuitions:** `MI-002-global-fenchel-dual-separates-losses` and `MI-009-scalar-universality-collapses-to-fourier-positivity`.
 
-WI-165--WI-171 close generic positive-weight and matrix-consistency repairs. WI-172 is no longer conditional: the pinned source certificate has been formally replayed and gives a strict four-point proportion improvement from the actual Montgomery--Taylor kernel/placement coupling. The gain is small, but it proves that source-specific structure can beat the sharp arbitrary-positive relaxation.
+WI-172 proves that the actual Montgomery--Taylor kernel/placement coupling beats the sharp arbitrary-positive relaxation, so source realizability matters. WI-174 then shows that sharpening only the exact fixed-`p=2500` four-point local constant has less than `8.65e-6` theorem-level headroom. WI-175 closes the obvious adjacent repair: for every nonnegative linear gap-pressure vector, the period-33 witness averages away the pressure shape and the local pressure credit cancels the same total global tax under the existing scalar shifted-block assembly.
 
-The live question is whether this surplus can be systematized or amplified without collapsing back to generic Fourier positivity. A useful theorem must expose which exact kernel/ordered-gap feature supplies the margin and how it scales.
+The live route must therefore change a load-bearing interface rather than optimize the same scalar architecture: use a source-dependent or nonlinear pressure, a different or multiple profile family, a genuinely different global Fenchel/Bellman assembly, the uncollapsed exceptional block, or new arithmetic information that excludes the periodic witness.
 
 ## Treat bounded-bandwidth confluence as a hard scalar information barrier
 

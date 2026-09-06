@@ -1,42 +1,37 @@
-# MI-002 — Realizability can improve a scalar envelope, but the realized single-profile architecture still has a ceiling
+# MI-002 — Realizability helps, but the fixed single-profile linear-pressure assembly has a matched ceiling
 
-**Evidence level:** supported by exact duality, geometric realizability gains, and explicit periodic countermodels
+**Evidence level:** supported by exact duality, source-specific realizability gains, formally checked local surplus, interval bounds, and explicit periodic countermodels through WI-175
 
 ## Core intuition
 
-The Weil-inertia program now separates three different losses. Fixed-window pinching loses feasible global witness coordinates; the scalar trace--energy envelope loses geometric information about which spectra are realizable by translation Gram blocks; and even after those two losses are repaired, a fixed **single-profile four-point pressure plus the same shifted assembly** still has matched periodic configurations that cap what that architecture can prove. “Better optimization” can help at the first two stages, but not once the full realized representation itself is matched by a countermodel.
+The Weil-inertia program separates optimization loss, realizability loss, and representation/assembly loss. Global optimization and actual source geometry can recover information discarded by a coarse scalar envelope, and WI-172 proves that this can yield a strict source-specific gain. But once the complete represented data are matched by a periodic countermodel, retuning constants or redistributing a linear pressure cannot create new information.
 
 ## Strongest justified principle
 
-The evidence now gives a hierarchy rather than one bottleneck.
+WI-012 establishes the global Fenchel improvement over fixed-window pinching. WI-020--WI-024 and WI-036 then show that abstract spectral envelopes omit translation-Gram realizability constraints, so span/packing geometry can improve the local scalar bound. WI-172 confirms the point on the actual Montgomery--Taylor source: the kernel/placement coupling gives a strict formally checked improvement beyond the sharp arbitrary-positive relaxation.
 
-1. **Optimization loss.** WI-012 proves the exact Fenchel representation of the collapsed defect and shows why block pinching is suboptimal: global coupling enlarges the feasible witness set without new arithmetic input.
-2. **Envelope realizability loss.** WI-020 proves that the scalar trace--energy envelope is sharp among abstract spectra at fixed energy, but WI-021--WI-024 and WI-036 show that actual translation Gram blocks obey additional span/packing geometry. Positive span pressure can therefore recover part or all of the four-point energy that the scalar envelope discarded. Exact sharpness in the abstract spectral class did not imply attainability by the realized arithmetic matrices.
-3. **Representation/assembly loss.** WI-025 computes the ceiling of the full-recovery-only four-point assembly, while WI-026 gives a period-33 witness that caps any universal same-pressure four-point block surplus passed through that same shifted assembly below the older target. This is now the genuine matched-representation obstruction for that architecture.
+WI-174 quantifies how little remains in the most literal continuation. The exact fixed-`p=2500` four-point constant lies below `2343/10^6`, so sharpening only that local constant can improve the certified bridge by less than `8.65e-6` after optimal block-size bookkeeping.
 
-The live lesson is precise: **first optimize globally, then impose realizability, then ask whether the realized representation is itself information-complete.** A countermodel at the last stage cannot be repaired by another inequality using only the same represented data.
+WI-175 closes the broader linear-pressure retuning class under the same single-profile shifted assembly. On the period-33 witness, averaging over starting phase sends every nonnegative linear gap-pressure vector to the same scalar total `A/r`; the local pressure credit is then cancelled exactly by the global pressure tax. The resulting ceiling is independent of how the coefficients are distributed. Hence “better coefficients” inside this architecture are not a new mechanism.
 
 ## Consequence
 
-A further support-one improvement must introduce information not matched by the period-33/same-pressure architecture: an uncollapsed exceptional block, multiple genuinely independent profiles and cross-profile matrices, a different local pressure sensitive to additional span geometry, horizontal/depth information, or another arithmetic observable whose unconditional control is explicit.
-
-This is compatible with MI-001. Screening is an upstream bandwidth obstruction; the realized single-profile ceiling is a downstream representation obstruction after substantial geometric information has already been retained.
+A further gain must change a load-bearing interface: nonlinear/source-dependent pressure, another or multiple independent profiles, a global assembly not reducible to the same scalar tax, the uncollapsed exceptional block, or new arithmetic information that excludes the periodic witness. The order remains: optimize globally, impose source realizability, then test the complete represented architecture against matched controls.
 
 ## Evidence against overgeneralization
 
-WI-025--WI-026 are not upper bounds on every support-one proof, every Gram-matrix argument, or the full zeta Weil matrix. They apply to the audited four-point/same-pressure shifted assembly. A different pressure, several profiles, a global Fenchel variable not factored through that architecture, or support beyond one can evade the periodic witness if it consumes genuinely new information.
+WI-174--WI-175 are route-specific. They do not bound every support-one argument, every Gram matrix, or every pressure concept. A changed profile, nonlinear pressure, multiple channels, different assembly, or stronger source theorem is genuinely outside the matched witness class.
 
 ## Status / novelty
 
-The Fenchel identity, scalar-envelope sharpness, span/packing improvements, assembly ceiling, and periodic witness are persisted findings. Their three-layer organization is a supported synthesis.
+Fenchel duality, translation-Gram realizability, interval optimization, and periodic averaging are classical/persisted ingredients. The durable synthesis is: **source realizability can beat a universal scalar relaxation, but once a matched periodic model sees the same single-profile linear-pressure data, further scalar retuning is information-neutral**.
 
 ## Falsification criterion
 
-Exceed the WI-026 architecture ceiling using exactly the same realized single-profile four-point pressure and shifted assembly, with no additional observable or hypothesis. That would contradict the matched witness. An improvement using new realized data would instead confirm the stated boundary.
+Exceed the WI-175 ceiling using exactly the same single Montgomery--Taylor profile, a nonnegative linear gap pressure, and the same scalar shifted-block accounting, without any additional observable or hypothesis. An improvement using new represented data would instead confirm the stated boundary.
 
 ## Lean-formalizable core
 
-- Exact Fenchel duality and block-feasible-set inclusion.
-- Distinction between abstract fixed-energy spectra and translation-Gram realizability.
-- Span-packing recovery inequalities.
-- Evaluation of the period-33 witness under the fixed four-point pressure/assembly.
+- Exact Fenchel and realizability inclusions.
+- Monotonic propagation of a local-constant cap through the fixed bridge.
+- Phase averaging of an arbitrary linear pressure and cancellation of local credit against global tax.

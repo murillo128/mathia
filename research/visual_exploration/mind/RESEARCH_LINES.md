@@ -2,13 +2,15 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Require information sensitivity after gauge invariance, with the full higher-order flatness budget audited
+## Separate exact quotient loss, conditioning, and model/support drift
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls` and `MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat`.
 
-VIS-048--VIS-053 turn the two-ratio Fisher-angle warning into an exact classification. The invariant geometry reduces to one gauge coordinate; its derivatives are cumulant differences between the two ratio classes. If the first unmatched cumulant has order `r`, the angle changes only at order `2r`, and finite-distribution equality of all cumulants gives exact gauge degeneracy. The number and parity of remote returns are further constrained by the sign-variation budget of the associated exponential polynomial.
+VIS-048--VIS-053 reduce the exact nondegenerate two-ratio Fisher geometry to one gauge contrast and classify its cumulant-controlled flatness and return multiplicity. VIS-054--VIS-055 sharpen the information diagnosis: the exact Fisher curve preserves the full magnitude `|q|` and forgets only one global orientation bit on a connected analytic gauge path, but the quotient is quadratically conditioned at balance and exponentially compressed near cosine saturation.
 
-A repeated visual touch or high-order flatness can therefore be representation-forced rather than arithmetic. A useful residual must freeze the gauge, identify the first source-sensitive cumulant/response order, and survive the exact sign-variation/return-parity controls.
+VIS-056 supplies the first support-moving robustness theorem inside that exact model. Wasserstein-1 drift of the two bounded class laws gives explicit `C^1` control of the signed balance equation, forward control of the hidden contrast and Fisher angle, and linear stability of simple remote returns. This does not cover changes of the ratio partition, residual tensors, baseline geometry, closure, or sampling law.
+
+The next useful step is therefore empirical/model error rather than more exact two-ratio algebra: freeze a residual construction, retain an explicitly signed source-sensitive coordinate, and bound partition/closure/sampling error strongly enough that the exact quotient and Wasserstein class-law controls remain informative.
 
 ## Test Farey residuals against endpoint-safe exact nulls
 
@@ -16,4 +18,4 @@ Endpoint-safe sublinear bands and reflection-preserving same-gap controls remain
 
 ## Build an information-loss atlas and promote only exact handoff theorems
 
-Related renderings of one field are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, orientation, sensitivity, or scale statement that remains meaningful without the image.
+Related renderings of one field are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, orientation, sensitivity, transport, or scale statement that remains meaningful without the image.

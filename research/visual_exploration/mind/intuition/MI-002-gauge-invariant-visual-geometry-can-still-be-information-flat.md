@@ -1,25 +1,29 @@
-# MI-002 — Gauge-invariant visual geometry can still be information-flat for structurally forced orders
+# MI-002 — Fisher-gauge geometry is a small exact quotient with separately controlled conditioning and class-law drift
 
-**Evidence level:** exact through VIS-053
+**Evidence level:** exact through VIS-056
 
 ## Core intuition
 
-Coordinate safety is necessary but not sufficient. After quotienting the admitted Fisher gauge, a statistic can remain insensitive to the source direction to arbitrarily high finite order, or even exactly, for reasons determined by the retained class distributions. Higher-order response is therefore not automatically evidence either; its order and return structure must be classified.
+Coordinate safety is necessary but not sufficient, and exact information loss should be distinguished from perturbative instability. On the nondegenerate two-ratio Fisher locus the invariant angle preserves the magnitude of the one-dimensional source contrast exactly and quotients only its orientation. The difficult regions are the quotient fixed point and saturation, where inverse conditioning is poor; support motion inside the fixed two-ratio model can nevertheless be controlled by a natural transport metric.
 
 ## Strongest justified principle
 
-VIS-048--VIS-049 establish exact gauge invariance with first-order flat matched controls. VIS-050 reduces the nondegenerate two-ratio geometry to one gauge coordinate. VIS-051 identifies its Taylor hierarchy with differences of class cumulants: if the first unmatched cumulant has order `r`, Fisher-angle variation starts at order `2r`, while equality of all cumulants for the finite class distributions gives exact degeneracy.
+VIS-048--VIS-053 establish exact gauge invariance, the one-coordinate reduction, the cumulant hierarchy, and the sign-variation/parity constraints on balance returns. If the first unmatched cumulant has order `r`, Fisher-angle variation starts at order `2r`; exact equality of all finite class cumulants gives true degeneracy.
 
-VIS-052--VIS-053 add a global control. The balance equation is an exponential polynomial whose real-root multiplicity is bounded by coefficient sign variation, with a parity constraint on total return multiplicity. Remote Fisher-angle touches can therefore be forced by representation and combinatorics rather than by an arithmetic event.
+VIS-054 turns the doubled contact order into a conditioning theorem. At a balance return of multiplicity `m`, signed-coordinate perturbations localize nearby roots at scale `eta^(1/m)`, while angle-only perturbations can do no better than `delta^(1/(2m))`; for a simple return this is linear versus square-root stability, and the weaker exponent is sharp.
+
+VIS-055 supplies the exact inversion: the Fisher cosine determines `|q|`, two analytic contrast paths with the same curve differ only by one global sign, and one signed nonbalance observation fixes the branch. The inverse is singular at balance and exponentially ill-conditioned near saturation.
+
+VIS-056 adds support-moving control without requiring identical atoms. For class laws supported in `[-H,H]`, Wasserstein-1 drift bounds the changes of the signed balance equation and its derivative, the hidden log-moment contrast, and the rendered Fisher angle. Simple remote balance roots are therefore linearly stable under sufficiently small class-law transport. This is a forward/model perturbation theorem inside the frozen outer two-ratio geometry, not a bound on changes of the partition, residual tensors, baseline `kappa`, closure, or empirical sampling process.
 
 ## What remains possible
 
-A statistic may still become useful when the first unmatched cumulant is source-specific and separated by a quantitative margin, or when a different quotient retains information lost by the two-ratio reduction. Any claim must audit the response order and the allowed return budget against matched controls.
+A useful empirical residual should retain one signed source-sensitive scalar alongside the invariant Fisher geometry and decompose its error budget into class-law transport, partition/closure model error, and sampling error. Another quotient may preserve orientation more robustly. Further exact algebra on the frozen two-ratio Fisher curve does not create a new signal by itself.
 
 ## Status / novelty
 
-Fisher geometry, cumulants, exponential polynomials, and Descartes-type variation bounds are classical. The durable synthesis is exact: **gauge invariance removes coordinate artifacts, but sensitivity and even the multiplicity/parity of visual returns can still be predetermined by the representation**.
+Fisher geometry, analytic uniqueness, root perturbation, inverse conditioning, and Kantorovich--Rubinstein transport bounds are classical. The durable synthesis is exact: **gauge invariance can reduce to a small symmetry quotient whose exact information, inverse conditioning, and model-transport stability must be audited as separate layers**.
 
 ## Falsification criterion
 
-Exhibit a two-ratio Fisher-angle family violating the VIS-050 reduction, the cumulant-order rule of VIS-051, or the sign-variation/parity return bounds of VIS-052--VIS-053.
+Exhibit a valid two-ratio configuration where different `|q|` values give the same exact Fisher cosine, two analytic contrast paths with the same curve that are not global sign reflections, violate the VIS-056 Wasserstein moment/derivative bounds, or produce a simple return satisfying its margins that is not stable under the stated class-law drift.

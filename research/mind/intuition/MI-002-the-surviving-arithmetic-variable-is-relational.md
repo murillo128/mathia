@@ -1,40 +1,40 @@
-# MI-002 — Relational fidelity can be exact, but coupling, source specificity, analytic survival, and realization remain separate gates
+# MI-002 — Relational fidelity is useful only when coupling survives the destination quotient
 
-**Evidence level:** supported by exact local-relational, marginal-interaction, additive-correlation, clone, incidence, and target-projection results across current Mathia lines
+**Evidence level:** supported by exact local-relational, additive, refinement, quotient-conditioning, support-transport, clone, and target-projection results across current Mathia lines
 
 ## Core intuition
 
-Mathia's strongest local mechanisms often emerge only after quotienting away an absolute scale: cross-ratios, cuff contrasts, target-relative projection data, additive shifts, and cross-boundary couplings survive where scalar summaries fail. But even complete knowledge of a relation is useful only if the **joint coupling among relations**, rational-prime/source specificity, analytic survival, and usable realization are all preserved.
+Mathia's strongest local mechanisms often emerge only after quotienting away absolute scale: cross-ratios, target-relative projection data, additive shifts, shell relations, and cross-boundary couplings survive where scalar summaries fail. But even complete knowledge of a relation is useful only if the **joint coupling among relations**, source specificity, analytic survival, realization, quantitative observability, and model transport are preserved.
 
-The newest evidence makes analytic survival a separate gate. Prime Lattice finds a relation genuinely absent from the multiplicative quotient — additive shifted correlation — yet standard regularization and logarithmic averaging can delete or universalize it. Weil Positivity finds a source-forced finite--archimedean radial relation with exact Mangoldt boundary value, yet local positive differentiation replaces the selector by full-support Jordan-totient geometry. A relation can therefore be real and source-motivated while the next canonical operation still erases what made it arithmetic.
+Recent evidence adds two sharp warnings. A relation can become cohomologically trivial inside its source algebra, as in Prime Circle's weighted refinement holonomy, or remain exactly recoverable while becoming badly conditioned, as in the Fisher sign quotient. “Relational” is therefore not itself an escape criterion.
 
 ## Strongest current principle
 
-Arithmetic Fidelity provides the exact joint-observation model. Marginal families determine only the interaction faces they retain, and AF-134 shows that multistage observation must be saturated by downstream pullbacks. AF-135--AF-136 further show that fixed-target spectral fidelity is projection/principal-angle geometry under full generator gauge; the relation to the declared target is intrinsic even when source-coordinate spectral scales are not.
+Arithmetic Fidelity provides the exact joint-observation model and now a provenance control: family-wide recovery requires one common reverse channel, while a canonical source center may drift if it is recomputed after compression. Joint fidelity and coherent transport are separate gates.
 
-Prime Flute and Prime Circle supply source-specificity and realization controls. PF-170 shows that several exact finite-core separator effects are universal ordered-gap/anchor geometry shared by nonprime controls, while PF-168--PF-169 push any spectral distinction into global transmission. PC-178 shows that the exact sparse prime-axis relation exists algebraically but its natural quadratic form is nonclosable; primewise Abel realization loses it in strong resolvent topology.
+Prime Circle gives the strongest refinement test. PC-186 proves the natural distinct-prime refinement directions commute, and PC-187 shows the first shell-weighted ordered holonomy is a cyclotomic coboundary with the same Mellin carrier. Nonzero order dependence does not count as a new relation when the complete source algebra expresses it in old coordinates.
 
-Prime Lattice supplies the cleanest missing-relation example. PL-169 proves that ratios one-swap information uses additive shifts absent from exponent differences. PL-172--PL-175 then show that canonical `S_2` regularization deletes the first-scale Chowla trace and fixed-shift logarithmic observables become Haar/Bernoulli in all currently theorem-controlled low-order sectors. The relation must therefore be coupled to a source-forced analytic carrier before those quotients.
+Prime Lattice gives the averaging test. PL-169 identifies addition as information genuinely absent from multiplicative exponent differences, but PL-177--PL-183 show that broad Kronecker prime averages, including bounded slowly varying target weights, reduce to one-point continuum density throughout the proven resolution band. A target-labelled statistic can still fail to retain a genuinely relational target interaction.
 
-Weil Positivity supplies the incidence/completion control. WP-158--WP-160 show that scalable fixed algebraic torsion relations reduce to primary-separable torsion cosets. WP-161 escapes that category with a real radial relation and recovers `Lambda(n)` exactly at the boundary, but the local positive jet is governed by `J_{2k}(n)` and loses prime-power support. Realization and sign can therefore be present while the selector fails to survive completion.
+Visual Exploration gives the exact quotient/conditioning/transport test. VIS-055 shows the two-ratio Fisher curve retains the entire contrast magnitude and forgets only one global orientation bit, VIS-054 shows the quotient doubles contact order at balance, and VIS-056 shows Wasserstein-small motion of the frozen class laws gives explicit `C^1` control of the signed balance equation. Exact relational completeness, stable inverse recovery, and robustness to model motion are distinct layers.
+
+Möbius Cancellation supplies the signed-coupling test. MC-097--MC-098 show that radial degree components are individually huge but cancel across degree at the endpoint. A relational coordinate system that separates those degrees and then takes a positive norm has preserved labels but lost the source interaction that matters.
 
 ## Consequence for synthesis
 
-A plausible relational mechanism should pass five explicit gates: **joint fidelity** of the required interaction, **source specificity** against the strongest matched control, **analytic survival** through regularization/averaging/continuation, **realization** in the required topology/domain, and **completion** preserving the discriminator while supplying the final sign or spectral theorem.
-
-Passing only joint fidelity gives a coordinate system. Passing specificity but failing analytic survival leaves a relation that is averaged away. Passing realization after the selector has been classicalized does not recover the arithmetic meaning.
+A plausible relational mechanism should pass six explicit gates: **joint fidelity**, **source specificity**, **analytic survival**, **realization**, **quantitative observability/model transport**, and **destination coupling**. The last gate asks whether the relation is still present in the operation that supplies the theorem, rather than having become a coboundary, a continuum one-point statistic, or separate positive masses before cancellation.
 
 ## Status / novelty
 
-The exact relational-lift, marginal-interaction, projection, shifted-correlation, torsion-incidence, clone, and operator-domain results are persisted evidence. Their five-gate interpretation is supported synthesis.
+The component relational-lift, projection, shifted-correlation, cyclotomic, statistical-angle, transport, and signed-cancellation results are persisted evidence. Their six-gate interpretation is supported synthesis.
 
 ## Falsification criterion
 
-Exhibit a canonical invariant depending only on relations already matched by the strongest control, or erased by the covered analytic quotient, yet forcing a Riemann-specific conclusion without additional source information. Alternatively recover a target interaction outside the exact observed/saturated witness support without adding new information.
+Exhibit a canonical invariant depending only on relations already trivialized by the complete source algebra or matched by the strongest control, yet forcing a source-specific conclusion without new information; or recover a target interaction after the exact covered averaging/positive quotient without retaining any additional coupling.
 
 ## Lean-formalizable core
 
 - Relational completeness modulo a symmetry group.
 - Joint-versus-marginal interaction kernel and witness saturation.
-- Target projection/principal-angle invariance.
-- Abstract separation of fidelity, specificity, analytic survival, realization, and completion.
+- Coboundary versus nontrivial relational carrier in finite semigroup models.
+- Separation of exact quotient identifiability from quantitative inverse conditioning and forward model transport.

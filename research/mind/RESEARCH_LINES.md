@@ -2,30 +2,34 @@
 
 This file holds genuinely cross-line mathematical questions suggested by the durable Mathia intuitions. It is not a summary of the local minds, a roadmap, task queue, status page, or history.
 
-## Preserve source-specific interaction before universal positive, radial, or averaging compression
+## Preserve source-specific coupling before universal positive, radial, or averaging compression
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Prime Circle now closes fixed refinement-equivariant radial filters all the way through arbitrary bounded nonlocal operators: they remain one Mellin carrier and positive readouts fill the arithmetic nullspace. Weil Positivity shows scalar radial-angular Dirichlet positivity loses the marked finite selector, while its critical pointed Gram classicalizes to Nyman modulus-square geometry. Prime Lattice shows broad Kronecker averages become deterministic one-point-density kernels even for growing sources. Möbius Cancellation proves count/radial quotients pay an `N^{1-o(1)}` collision--reconstruction tradeoff on a source-forced degree-two sector.
+Prime Circle now closes not only fixed refinement-equivariant radial filters but also the source-native linear refinement calculus and the first primitive-shell weighted ordered holonomy: the former is flat and the latter is a cyclotomic coboundary with the same Mellin carrier. Möbius Cancellation gives the complementary signed warning: its degree-two radial shell and aggregate higher-degree tail each have almost-full-square-scale mass, yet cancel at the endpoint. In both cases, richer coordinates are useless if the next quotient turns the needed relation into a coboundary or separates a cancellation into positive pieces.
 
-Weil Inertia supplies the important counterpoint: the formally verified WI-172 certificate gives a strict improvement specifically from the actual Montgomery--Taylor kernel/placement coupling beyond the sharp arbitrary-positive relaxation. The program-level discriminator is therefore whether **source-specific relational information survives until the exact operation that supplies the final sign/coercivity**, not whether an intermediate representation is merely richer or nonzero.
+Prime Lattice similarly shows that broad prime-shift/Kronecker averages, even with bounded slowly varying target weights, become continuum one-point-density statistics. Weil Inertia supplies the counterpoint that actual source placement can beat a universal positive relaxation, but WI-174--WI-175 then show that retuning the same fixed single-profile linear-pressure assembly has essentially no remaining leverage. The program-level discriminator is whether **new source interaction survives to the exact operation that supplies sign/coercivity**, not whether an intermediate representation is merely nonzero, noncommutative, or target-labelled.
 
-## Separate exact representation, recovery, and destination-calibrated quantitative control
+## Separate recovery, canonical-reference transport, and quantitative observability
 
-Arithmetic Fidelity now has exact coherent composition of common reverse kernels, while AF-148 classifies a separate calibration boundary: on the canonical family-collapse control, raw common-reference `f`-loss is dimension-free relative to recovery exactly in the finite-endpoint-diameter regime. Visual Exploration similarly shows that gauge invariance can coexist with structurally forced high-order flatness.
+Arithmetic Fidelity now has a source-selected Shtarkov/NML reference that escapes in-family mixture dilution and supplies the same common recovery inequality when propagated. But the recomputed canonical center can drift by an amount governed by maximal-leakage loss even when the declared experiment is approximately recoverable. Recovery existence, provenance of the reference, and divergence calibration are therefore separate resources.
 
-Xi Flow gives the operator/norm analogue in especially sharp form. Pointwise slow selectors, unweighted square aggregation, and derivative-weighted slow aggregation each fail on a different matched critical configuration; XF-061 shows even the derivative-matched norm misses a single-root defect because its information lies outside the shrinking slow cone. A useful bridge must therefore be calibrated to derivative order **and** spatial/spectral support, not merely be invariant or aggregate.
+Visual Exploration gives the geometric analogue with an explicit perturbation layer. The exact two-ratio Fisher curve preserves `|q|` and loses only one global orientation bit; finite angle error is quadratically amplified near balance, while VIS-056 shows Wasserstein-small motion of the frozen class laws gives controlled `C^1` drift of the signed balance equation. Exact identifiability, inverse conditioning, and model/support drift are distinct resources.
 
-## Couple finite arithmetic to an intrinsic real-place phase before Gram scalarization
+## Couple finite arithmetic to an intrinsic real-place phase before passive/Gram scalarization
 
-Weil Positivity's critical pointed-shell Gram has the classical Nyman `|zeta|^2` spectrum, while the phase discarded by that Gram is exactly the archimedean Gamma/scattering factor. The positive Gram neither selects that phase nor couples it to Mangoldt support; the phase already appears in all-degree controls.
+Weil Positivity's critical pointed-shell Gram has the classical Nyman `|zeta|^2` spectrum, while the discarded relative phase is exactly the archimedean Gamma/scattering factor. WP-170 now shows that this raw phase is not an ordinary scalar Schur/inner lossless response: its half-plane zeros violate Blaschke and its phase velocity changes sign.
 
-The live cross-line question is whether a source-native architecture can retain signed finite arithmetic and an intrinsically selected real-place phase in one nonseparable object before modulus-square/positive completion, with an independent sign theorem. Prime Circle's ordered/multi-carrier frontier is compatible with this requirement but does not yet establish the bridge.
+The live cross-line question is therefore narrower than “find the Gamma phase.” A source-native architecture must retain signed finite arithmetic and an intrinsically selected real-place phase in one nonseparable object before modulus-square/positive completion, and its sign theorem must use a genuinely different operator category or coupling rather than scalar passivity.
 
-## Finish quantitative global assembly where qualitative obstructions are already gone
+## Finish quantitative global assembly where local degeneration and cusp gates are gone
 
-Prime Flute now has a smooth global area-preserving prime/clone marking and exact control of the collapsing short-core sector. Its unresolved Schatten route is quantitative: obtain degeneration-uniform quasi-isometry and the weighted metric-defect budget inside that global gauge. The Arithmetic Fidelity distinction between recovery existence and certificate calibration is the same structural warning in a different category.
+Prime Flute now has explicit degeneration-uniform exact area-preserving transports on every long Lambert body, exact split synchronization, and a full-cusp handoff with summable two-sided weighted cost. Its unresolved Schatten route is concentrated in compatible zero-twist cuff/true-short-collar assembly and the final complete-surface inverse-unit-ball weighted metric budget. This is now a sharply localized physical-interface problem rather than a generic degeneration, volume-gauge, split, or cusp problem.
 
-## Use sharp closed scalar base cases as transfer theorems, not recurring targets
+## Lift repaired tangent coercivity to nonlinear Xi dynamics
 
-Analytic Frontier now proves more than Montgomery--Taylor five-point zero-freeness. ANF-064 completes the all-order moment inequalities, yields the sharp quadratic coercive floor, strict radial monotonicity, and a certified quartic remainder. The scalar five-point category should therefore serve as a closed source-conditioned base case for larger/ordered carriers rather than be repeatedly re-enclosed.
+Xi Flow now has a positive-time periodic tangent theorem: heat forces surviving critical triple flux into the source-controlled slow band, and the derivative-weighted moving-line selectors form a lower frame for that tangent flux. The earlier static sparse-defect obstruction is therefore not an all-time obstruction. The remaining bridge is nonlinear and dynamical: preserve a relevant transition defect until the tangent comparison is valid and extend the frame through finite amplitude, nonperiodicity, and collision/complex-root regimes.
+
+## Use completed scalar base cases as transfer theorems, not recurring targets
+
+Analytic Frontier now classifies the Montgomery--Taylor five-point scalar category through its sharp boundary: ANF-066 gives two-sided near-extremizer stability and exactly two horizontal boundary families. The five-point scalar problem should serve as a closed source-conditioned transfer theorem for larger/ordered carriers, not be repeatedly re-enclosed or re-optimized.

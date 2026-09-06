@@ -1,39 +1,35 @@
-# MI-010 — Signed retention needs genuine information reduction on both the omitted and retained sides
+# MI-010 — Signed retention requires cancellation to survive the information quotient
 
-**Evidence level:** supported through MC-090 by exact parity controls, reconstruction thresholds, common-prime scale reduction, and the unsifted top-mode obstruction
+**Evidence level:** supported through MC-098 by exact product-fiber identities, source shell asymptotics, and classical unconditional endpoint cancellation
 
 ## Core intuition
 
-A useful Möbius carrier must retain signed arithmetic and also reduce the target information budget. Earlier controls showed that sign, source origin, proper truncation, sparsity, and selective geometry are not enough when a discarded complement can be restored generically at the target scale. The common-prime results sharpen that principle in both directions: a support-supercritical complement can nevertheless be genuinely cheaper when arithmetic self-similarity reduces it to smaller Mertens scales, but that gain is useless if the retained statistic still contains the unsifted top-scale target mode with coefficient one.
+A useful Möbius carrier must retain sign and also preserve the coupling through which the source actually cancels. Support reduction, source origin, parity, radial organization, and even exact polynomial coordinates are not enough if the chosen positive norm separates components whose large source contributions cancel only after recombination.
 
-Information deficit is therefore not a support-counting property. It is an exact decomposition property of the whole retained/omitted split.
+Information deficit is therefore an exact property of the whole retained/omitted or degree decomposition, including the operation that aggregates it. A quotient can be algebraically faithful enough to reconstruct the endpoint and still be analytically useless because its norm destroys the cancellation before reconstruction.
 
 ## Strongest justified principle
 
-MC-082 shows that unsigned divisor-density information can erase Liouville parity. MC-083--MC-087 show that several signed, proper, and selective source carriers remain quantitatively Mertens-equivalent whenever their omitted contribution is generically target-subordinate.
+MC-082--MC-090 establish the earlier boundary: unsigned density can erase parity; several signed/proper carriers remain Mertens-equivalent; a support-supercritical complement can become recursively cheap through Euler-factor scale reduction; but that does not help when the retained statistic still contains the unsifted top Mertens mode.
 
-MC-088 crosses that generic support barrier. Omitting pairs sharing one prime gives a set of supercritical cardinality, yet finite Euler-factor deletion rewrites its signed contribution as a geometric stack of the same Huxley--Watt/Mertens forms at strictly smaller scales. Under a prior exponent `beta`, the complement costs only the smaller exponent `beta L/(L+1)`.
+MC-091--MC-096 then expose a source-forced polynomial/radial deformation with a radius-independent collision--reconstruction product tradeoff. The unilateral collision norm can trade against reconstruction when the radius shrinks, but the no-free-lunch product is stable.
 
-MC-089 removes the prime-power scale restriction. For a moving prime `p=N^{delta+o(1)}`, the same complement is uniformly `O(N^{2 beta(1-delta)})` on every sufficiently large scale; with suitable `delta<1/2` it is even below the existing `N log N` interior budget. Thus generic support size is not an intrinsic information threshold.
-
-MC-090 closes the naive contraction. The complementary gcd-sieve retention is exactly the unsifted top Huxley--Watt form minus lower-scale sifted corrections. More generally, any gcd mask with `w(1) != 0` retains the unsifted top block. Once the lower-scale correction is subordinate, a sub-old-exponent estimate for the retained statistic is equivalent to the improved Mertens estimate itself. Divisor-sieve recursion can cheapen the complement without cheapening the retained target mode.
+MC-097--MC-098 make the obstruction intrinsic to the actual source vector. The complete degree-two radial shell has a positive main term `c_2 N^2/log^2 N`, while the aggregate higher-degree alternating tail has the opposite main term because the full Möbius endpoint is unconditionally much smaller. Thus almost-full-square-scale radial mass is present on both sides and is cancelled before the endpoint. Any `ell_p`, absolute-value, or positive degreewise shell estimate taken first necessarily discards cancellation known to occur in the source itself.
 
 ## What remains possible
 
-A surviving signed residual must make both sides structurally cheaper than the target in the relevant direction: the discarded component must be controlled by source arithmetic rather than a target-resolution reconstruction, and the retained component must avoid carrying the same top-scale Mertens mode algebraically.
-
-Possible mechanisms remain a joint estimate in which retained and omitted pieces cancel before absolute values, a source-forced recurrence whose top coefficient is genuinely contractive, or a non-gcd coupling that changes the top-scale mode rather than adding independently bounded lower-scale corrections.
+A surviving deformation must estimate a signed coupling across degrees before positive aggregation, derive an iterable recurrence whose top target coefficient is genuinely contractive, or leave the radial-shell quotient for a relational carrier in which the source cancellation is not represented as cancellation between large positive components.
 
 ## Status / novelty
 
-Möbius inversion, Euler-factor deletion, Huxley--Watt identities, divisor bounds, and Mertens partial summation are classical. The persisted synthesis is the information criterion: **supercritical support can still be recursively cheap, but a useful decomposition must reduce the target-bearing mode itself, not merely its complement**.
+The Möbius/Huxley--Watt identities, PNT asymptotics, zero-free-region Mertens bounds, and norm inequalities are classical. The persisted synthesis is the information criterion: **a useful quotient must preserve not only the signed coordinates but also the source coupling that makes them small at the destination scale**.
 
 ## Falsification criterion
 
-Produce a covered gcd-sieve retention with nonzero unsifted coefficient that yields a strictly weaker bound than Mertens after the lower-scale terms are controlled, or construct a source-forced split whose omitted mass is supercritical yet recursively cheap and whose retained top target coefficient is genuinely reduced without assuming the improved Mertens estimate.
+Produce a positive degreewise/radial norm in the MC-097--MC-098 quotient that yields a critical endpoint gain without reintroducing signed cross-degree cancellation, or invalidate the degree-two main term or the forced higher-tail cancellation.
 
 ## Lean-formalizable core
 
-- Common-prime Euler-factor decomposition into lower scales.
-- Arbitrary-scale floor-mismatch error bound in the finite model.
-- Gcd-mask divisor-basis decomposition and persistence of the unsifted top coefficient.
+- Product-fiber/radial endpoint decomposition.
+- Radius-independent collision--reconstruction product inequality.
+- Abstract implication: two large opposite signed blocks plus a small endpoint cannot be controlled by separate positive norms without additional cancellation information.
