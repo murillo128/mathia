@@ -1,0 +1,162 @@
+# VIS-060 — a fixed zeta window can be compared to a random control with control-side uncertainty only
+
+## Claim
+
+Fix one finite three-gap representation: partition, declared support, Markov-closure convention, and strictly positive common Fisher reference law `H`. Let
+
+`Z`
+
+be **any fixed probability table** on that support. In the intended application `Z` may be the empirical three-gap law from one frozen finite Riemann-zero window; no stochastic law for that window is assumed in this finding.
+
+Let `P` be the population three-gap law of a random control construction and let `P_hat` be a random estimator of `P`. Assume that for some `0<rho<1` a separately justified control-side argument gives
+
+`Pr(||P_hat-P||_1 <= delta) >= 1-rho`.
+
+Write
+
+`Delta(R)=R-M(R)`
+
+for the adjacent-pair Markov residual from `VIS-057`, put
+
+`h_min=min_c H(c)>0`,
+`a=6 delta/sqrt(h_min)`,
+
+and define
+
+`R_Z=Delta(Z)`,
+`R=Delta(P)`,
+`R_hat=Delta(P_hat)`.
+
+Then with probability at least `1-rho`, where the probability is **only over the random control estimator**,
+
+`||R-R_hat||_H <= a`.
+
+Consequently the fixed-target residual distance
+
+`d = ||R_Z-R||_H`
+
+and its Monte Carlo approximation
+
+`d_hat = ||R_Z-R_hat||_H`
+
+satisfy the exact interval
+
+`|d-d_hat| <= a`.
+
+In particular, if `d_hat>a`, then the residual of the frozen table `Z` is rigorously separated from the control-population residual `R` on the stated representation, with probability at least `1-rho`, **without assigning sampling semantics to `Z`**.
+
+The same one-sided uncertainty principle applies to residual norms. If
+
+`e_Z=||R_Z||_H`, `e=||R||_H`, `e_hat=||R_hat||_H`,
+
+then
+
+`|e-e_hat| <= a`.
+
+Hence `|e_Z-e_hat|>a` certifies `e_Z != e` on the same control-side event.
+
+For signed Fisher orientation, assume `e_Z>0` and `e_hat>2a`. Then `R` is nonzero and
+
+`||R_hat/e_hat - R/e||_H <= 2a/(e_hat-a)`.
+
+Writing
+
+`kappa_hat = <R_Z/e_Z, R_hat/e_hat>_H`,
+`kappa = <R_Z/e_Z, R/e>_H`,
+
+one therefore has
+
+`|kappa-kappa_hat| <= epsilon`,
+`epsilon = min(2, 2a/(e_hat-a))`.
+
+Thus a fixed zeta-window orientation can be compared to a population control direction with a rigorous interval whose uncertainty is entirely inherited from the control simulation. For example, `|kappa_hat|>epsilon` fixes the sign of the population-control orientation, while `kappa_hat+epsilon<1` rules out exact directional equality with the control population.
+
+**Evidence/status:** `EXACT-DERIVED + FIXED-TARGET/CONTROL-MONTE-CARLO INTERFACE + REPRESENTATION CONTROL + NO-NOVELTY-CLAIM`.
+
+This is not a stochastic model for the Riemann zeros, not a population-level zeta inference, not an exact Monte Carlo significance test, and not evidence that any zeta/CUE residual separation actually exists.
+
+## 1. The control-side residual radius is inherited directly from VIS-057
+
+On the event
+
+`||P_hat-P||_1 <= delta`,
+
+`VIS-057` gives
+
+`||Delta(P_hat)-Delta(P)||_H <= 6 delta/sqrt(h_min)=a`.
+
+Nothing in that deterministic perturbation bound requires the other object in a later comparison to be random. Once `Z` has been frozen, `R_Z=Delta(Z)` is simply one fixed vector in the same Fisher space.
+
+The reverse triangle inequality therefore gives
+
+`| ||R_Z-R||_H - ||R_Z-R_hat||_H |`
+` <= ||R-R_hat||_H`
+` <= a`.
+
+This proves the distance interval. The residual-norm interval is the same argument with the fixed comparison point equal to zero.
+
+The conceptual distinction is important. Statistical uncertainty in the simulated control law is a property of the control estimator. It does not force a probability model onto a deterministic arithmetic table merely because both objects are being compared in one plot or one residual space.
+
+## 2. Only the control direction needs normalization stability
+
+Suppose `e_Z>0`. The zeta-side unit vector
+
+`u_Z=R_Z/e_Z`
+
+is then exactly defined from the frozen table. No sampling radius is needed to normalize it.
+
+For the random control side, the observed gate `e_hat>2a` is exactly the one-sided specialization of `VIS-058`. It implies
+
+`e >= e_hat-a > a > 0`,
+
+so the population control direction exists. The standard normalized-vector perturbation inequality gives
+
+`||R_hat/e_hat-R/e||_H <= 2a/(e_hat-a)`.
+
+Taking the inner product with the fixed unit vector `u_Z` and using Cauchy-Schwarz yields the displayed orientation interval. Compared with the two-random-process certificate in `VIS-058`, only one direction contributes uncertainty, so there is only one normalization-error term.
+
+This is a real reduction in the assumptions needed for the **fixed-window question**. It does not reduce the assumptions needed for a claim about a hypothetical zeta population or about typical windows at height `T`.
+
+## 3. What can be claimed without a zeta process model
+
+The certificate supports statements of the following precise form:
+
+> For this predeclared finite zeta table and this predeclared representation, the residual vector/direction lies outside a control-population uncertainty ball or cone generated by an independently simulated control ensemble.
+
+The probability qualifier refers only to the simulation used to estimate the control population. The frozen zeta table is conditioned on as a fixed mathematical object.
+
+This remains meaningful when the control is finite-size CUE. Independent CUE matrices can supply repeated control draws, and any valid finite-sample or concentration argument for their induced triple-law estimator may provide `delta`. The present theorem does not prescribe the sharpest such control-side radius; it only states how an available radius propagates to the active residual geometry.
+
+What this cannot establish is that another zeta window, a random zeta window, or the asymptotic zeta-zero process has the same discrepancy. Generalization across heights requires separate replication and/or a justified zeta-side process model. A fixed-table separation is therefore a finite-object comparison, not a population theorem about the zeros.
+
+## 4. Selection and representation gates remain essential
+
+Conditioning on a fixed zeta table does not make adaptive analysis harmless. The partition, support rule, unfolding, Markov closure, common Fisher reference `H`, selected zeta window, and target statistic must be frozen before the confirmation comparison to which the stated `1-rho` guarantee is attached, unless the control-side confidence construction explicitly covers the selection rule.
+
+If a favorable window, binning, mode, or gauge is chosen after inspecting the same control simulations, the simple event `||P_hat-P||_1<=delta` need not provide simultaneous coverage for the selected view. Fresh independent control simulations after selection, or a valid simultaneous bound over the predeclared family, restore the intended semantics.
+
+Likewise, a small `d_hat` does not prove agreement with CUE; it may simply mean that the control uncertainty radius is too large. A large `d_hat` is useful only if it clears `a`. For normalized orientation, the control residual must also clear the `e_hat>2a` gate.
+
+## 5. Prior art and novelty boundary
+
+Simulation-based null calibration and Monte Carlo significance testing are classical. A targeted audit includes Meyer Dwass, **Modified Randomization Tests for Nonparametric Hypotheses**, *Annals of Mathematical Statistics* 28:1 (1957), 181–187, DOI `10.1214/aoms/1177707045`, and Julian Besag and Peter Clifford, **Generalized Monte Carlo significance tests**, *Biometrika* 76:4 (1989), 633–642, DOI `10.1093/biomet/76.4.633`.
+
+No claim is made here to a new Monte Carlo testing principle, p-value construction, or concentration theorem. The displayed intervals are elementary consequences of a separately justified control-law confidence event plus the already-persisted Mathia-specific nonlinear residual perturbation map in `VIS-057`/`VIS-058`.
+
+The durable contribution for this line is the **inferential boundary**: the active three-gap experiment does not need to invent stochastic semantics for a fixed Riemann-zero table merely to compare that table with a random-matrix population. Control-side simulation uncertainty and zeta-side population generalization are distinct questions and can be tested separately.
+
+## 6. Falsification and boundaries
+
+Falsify the exact result by giving a frozen table `Z`, control laws `P,P_hat`, and a fixed positive `H` satisfying the `L^1` event and the hypotheses of `VIS-057` for which the residual-distance interval fails; or, under `e_Z>0` and `e_hat>2a`, by finding an orientation outside the displayed interval.
+
+The theorem inherits all fixed-representation assumptions of `VIS-057`: declared middle states must remain present, `H` is fixed and positive, and changing partition/support/reference is a different perturbation problem. The control-side probability statement is only as valid as the supplied radius `delta`; plugging in an unjustified i.i.d. law, an adaptively selected dependence envelope, or a corrupted simulation design invalidates the statistical guarantee without falsifying the deterministic geometry.
+
+The result also says nothing about arithmetic specificity. A fixed zeta table may differ from a finite-size CUE population for mundane finite-height, unfolding, or known arithmetic-correction reasons. Those baselines remain part of the accepted clue's decisive test.
+
+## Research consequence
+
+The accepted three-gap clue no longer has to choose between two bad options: either pretend a fixed zeta window is an i.i.d. sample, or abandon all quantitative comparison with a simulated CUE population.
+
+There are now two honest claim levels. A **fixed-window comparison** can freeze the zeta table, put all probability on an independent matched-control ensemble, and use the one-sided residual/orientation certificate above. A stronger **zeta-population or across-height inference** still requires replication and a defensible zeta-side uncertainty model.
+
+For the next empirical higher-window test, this suggests a lower-assumption confirmation path: predeclare one or more zeta windows and the full representation, generate fresh independent matched finite-size CUE controls, build a control-side raw-law radius, and ask first whether the fixed zeta residual clears the resulting population-control ball/cone. Only after such a separation exists is it worth paying the additional assumptions needed to generalize it across the zeta sequence.
