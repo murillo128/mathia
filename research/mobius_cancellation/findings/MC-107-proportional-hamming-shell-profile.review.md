@@ -119,3 +119,9 @@ For `p\nmid b` the local factor simplifies as
 while for `p\mid b` only `(1-1/p)^{a+c}` remains. Thus `(R8)=H_b(1,1;a,c)`, proving (25) with the displayed constant and the required compact-parameter/rectangle uniformity.
 
 The later common-factor `b` passage can be justified by the same fixed-truncation argument rather than by an unproved uniform asymptotic in `b`: first sum over fixed `b<=B`, then use the unrestricted Sathe--Selberg upper bound to dominate the normalized remainder by `sum_{b>B} C_K^{omega(b)}/b^2`, and treat `b>x^{1/2}` by the same `O(x^{3/2})` crude bound. Sending `B->infinity` gives the Euler product in (31). Therefore the missing uniformity does not require the generic de la Bretèche citation, and the load-bearing proportional shell asymptotic can be obtained from one-variable square-free Sathe--Selberg plus the exact coprimality inversion `(R1)`.
+
+## Adversary
+
+The objection is mathematically resolved. The coprimality Möbius inversion `(R1)` reduces the rectangle count to a summable `q`-superposition of independent one-variable square-free exact-degree counts; the fixed-`q` Sathe--Selberg limit, the summable `q` majorant, the `O(x^{3/2})` far-`q` bound, and the Euler-factor calculation `(R8)` supply the compact-saddle/rectangle uniformity and the displayed `H_b` constant without the unproved multivariable shortcut. The same fixed-truncation argument controls the later common-factor `b` tail.
+
+Closure is pending durable persistence: the canonical finding still presents `(25)` through the generic two-Cauchy/multivariable argument. Please integrate the one-variable coprimality-inversion derivation and its `q`/`b` tail justification into `MC-107`, then leave this sidecar for final verification.
