@@ -18,6 +18,7 @@ based_on:
   - research/visual_exploration/findings/VIS-059-overlap-collisions-are-periodic-cylinder-masses.md
   - research/visual_exploration/findings/VIS-060-fixed-window-control-only-fisher-certificate.md
   - research/visual_exploration/findings/VIS-061-independent-control-replicate-l1-radius.md
+  - research/visual_exploration/findings/VIS-062-simplex-replicate-l1-dimension-penalty.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -35,7 +36,9 @@ The later stability results separate representation geometry from observation un
 
 `VIS-060` sharpens the inferential boundary. A fixed finite zeta table does **not** need a stochastic process model merely to ask whether its residual vector or direction differs from the population residual of an independently simulated matched control. Once the zeta table and representation are frozen, a valid control-side raw-law radius alone yields a rigorous residual-distance/orientation interval whose probability is over the control simulation only. A zeta-side stochastic model is needed only for stronger claims that generalize beyond the frozen table or attach sampling semantics to the zeta sequence itself.
 
-`VIS-061` now supplies one conservative way to obtain that missing control-side radius without pretending the overlapping triples inside a CUE matrix are independent. If `B` independently generated control matrices each contribute their entire empirical triple table on a fixed `K`-cell support, their average table obeys an explicit bounded-differences `L^1` radius of order `[sqrt(K)+sqrt(log(1/rho))]/sqrt(B)`. Independence is used only across complete control replicates; all within-matrix dependence is absorbed into each simplex-valued table.
+`VIS-061` supplies a conservative way to obtain that missing control-side radius without pretending the overlapping triples inside a CUE matrix are independent. If `B` independently generated control matrices each contribute their entire empirical triple table on a fixed `K`-cell support, their average table obeys an explicit bounded-differences `L^1` radius with leading expectation scale `sqrt((K-1)/B)`. Independence is used only across complete control replicates; all within-matrix dependence is absorbed into each simplex-valued table.
+
+`VIS-062` closes the obvious generic escape route. Uniform one-hot simplex replicates already force expected `L^1` error at least `(1/2)sqrt((K-1)/B)` once the binomial variance is at least one, and classical discrete-distribution minimax theory has the same `sqrt(K/B)` scale. Therefore a materially tighter control radius must exploit additional CUE/internal structure, a coarser predeclared representation, a different propagated error geometry, or more independent matrices; a different distribution-free whole-replicate inequality cannot simply erase the support-size penalty.
 
 The candidate signal remains a reproducible **zeta-minus-matched finite-size/arithmetic-control difference in irreducible three-gap structure**, not nonzero dependence within zeta alone.
 
@@ -49,17 +52,17 @@ At the lowest-assumption claim level, can a frozen zeta window be shown to lie o
 
 This is one of the smallest channels beyond adjacent-gap geometry that is not algebraically determined by the one-gap and two-gap marginals. The current corpus now gives an unusually explicit audit chain from the raw triple table to information-theoretic and visual residual coordinates and from raw-law error to direction error.
 
-`VIS-060` avoids a false methodological dichotomy. The experiment need not pretend that a deterministic zeta window is an i.i.d. sample, but it need not remain purely qualitative either. `VIS-061` removes the analogous shortcut on the control side: independent CUE matrices provide genuine replication even when the overlapping triples within each matrix remain dependent. A fixed arithmetic object can therefore be compared quantitatively with a random control population while keeping the probability statement on the side where genuine replication exists.
+`VIS-060` avoids a false methodological dichotomy. The experiment need not pretend that a deterministic zeta window is an i.i.d. sample, but it need not remain purely qualitative either. `VIS-061` removes the analogous shortcut on the control side: independent CUE matrices provide genuine replication even when the overlapping triples within each matrix remain dependent. `VIS-062` then prevents the conservative replicate-level certificate from becoming an endless generic-inequality optimization problem: if it is too weak, the next improvement must buy real control-specific information.
 
 ## Decisive test
 
 Predeclare the zeta windows, unfolding, finite partition, declared support, Markov closure, common positive Fisher reference, scalar statistics, direction statistics, and any family-wise rule before confirmation. Generate fresh independent finite-size CUE controls at the effective matrix sizes appropriate to those heights; when a finite-height arithmetic correction is the intended baseline, include it explicitly rather than substituting infinite-size sine-kernel or shuffled-gap controls.
 
-For each fixed comparison panel, let every independent control matrix contribute its **whole** empirical three-gap table `X_b` under the frozen representation, and average those tables to `P_hat`. As a safe default that makes no within-matrix independence claim, use the `VIS-061` replicate-level radius
+For each fixed comparison panel, let every independent control matrix contribute its **whole** empirical three-gap table `X_b` under the frozen representation, and average those tables to `P_hat`. As the lowest-assumption baseline that makes no within-matrix independence claim, use the refined `VIS-061` replicate-level radius
 
-`delta_B(rho)=min(2,[sqrt(K)+sqrt(2 log(1/rho))]/sqrt(B))`.
+`delta_B(rho)=min(2,[sqrt(K-1)+sqrt(2 log(1/rho))]/sqrt(B))`.
 
-Propagate it through `VIS-057` to `a_B=6 delta_B/sqrt(h_min)`. If this generic radius is too loose, replace it only with a sharper CUE/control concentration argument that explicitly justifies the extra structure it uses; do not substitute the raw count of overlapping triples as an i.i.d. sample size.
+Propagate it through `VIS-057` to `a_B=6 delta_B/sqrt(h_min)`. If this generic radius is too loose, do not search for a distribution-free theorem that simply removes the `sqrt(K/B)` scale: `VIS-062` rules that out for the admitted simplex-replicate model. Instead either prove a sharper CUE/control concentration statement from genuine internal structure, reduce the predeclared support before confirmation, justify a different error geometry all the way through the residual map, or increase `B`.
 
 For each frozen zeta window `Z`, compute its residual `Delta(Z)` exactly on the declared table. Use `VIS-060` first: require the observed fixed-zeta/control residual distance to exceed the resulting Fisher radius, or require the observed orientation interval to exclude the null direction being claimed. This fixed-window statement needs no zeta sampling model.
 
@@ -69,12 +72,12 @@ Only if a predeclared fixed-window separation survives should the experiment ask
 
 ## Evidence boundary
 
-All current exact results concern the representation, its lower-order closure, its information/Pearson/CA geometry, and its perturbation/overlap controls. No canonical finding establishes an anomalous zeta three-gap residual.
+All current exact results concern the representation, its lower-order closure, its information/Pearson/CA geometry, and its perturbation/overlap/control-calibration boundaries. No canonical finding establishes an anomalous zeta three-gap residual.
 
-`VIS-060` proves only that **control-side probability is enough for a fixed-table versus control-population comparison**. `VIS-061` supplies a generic replicate-level radius for independent control matrices, but it is deliberately conservative: it ignores information available inside each matrix and can become uninformative for fine supports or small Fisher-reference cells. Neither result turns one zeta window into a random sample, makes a selected window representative of other heights, or supplies a p-value for a data-dependent visual search.
+`VIS-060` proves only that **control-side probability is enough for a fixed-table versus control-population comparison**. `VIS-061` supplies a generic replicate-level radius for independent control matrices, and `VIS-062` shows that its leading support-size scale is generically unavoidable. These results do not turn one zeta window into a random sample, make a selected window representative of other heights, supply a p-value for a data-dependent visual search, or prove that actual CUE whole-matrix tables attain the worst-case simplex geometry.
 
 Finite-size CUE corrections, higher-order spacing correlations, and finite-height arithmetic corrections are established prior art and remain mandatory baselines. Adaptive choices must be covered by fresh confirmation controls or a simultaneous construction. The clue therefore stays `accepted`, not `resolved`.
 
 ## Research disposition
 
-Accepted as a live empirical experiment with two explicitly separated claim levels. The immediate gate is the lower-assumption one: obtain the actual higher-window zeta tables, freeze the representation, choose an independent-control replicate budget using `VIS-061` as a safe baseline, and test the fixed zeta residual against the **control-population** uncertainty ball/cone supplied by `VIS-060`. A sharper CUE-specific uncertainty theorem is optional if the generic replicate-level radius is too conservative. A source-specific stochastic model for zeta is a later requirement only if the fixed-window effect survives and the claim is to generalize beyond those frozen windows.
+Accepted as a live empirical experiment with two explicitly separated claim levels. The immediate gate is the lower-assumption one: obtain the actual higher-window zeta tables, freeze the representation, and budget fresh independent control matrices with the `VIS-061` radius. `VIS-062` makes the fallback explicit if that radius is impractical: improvement must come from real CUE/internal structure, representation reduction fixed before confirmation, or additional independent replication, not from chasing a generic dimension-free `L^1` bound. A source-specific stochastic model for zeta remains a later requirement only if the fixed-window effect survives and the claim is to generalize beyond those frozen windows.
