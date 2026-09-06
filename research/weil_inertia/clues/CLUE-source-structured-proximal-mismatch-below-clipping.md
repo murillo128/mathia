@@ -5,7 +5,6 @@ status: proposed
 origin: independent-review
 target_line: weil_inertia
 based_on:
-  - research/weil_inertia/findings/WI-178-gram-defect-shares-the-exceptional-population-budget.md
   - research/weil_inertia/findings/WI-179-offline-pair-count-caps-proximal-cancellation-rank.md
   - research/weil_inertia/findings/WI-180-full-gram-tail-is-screened-by-distinct-exception-count.md
   - research/weil_inertia/findings/WI-181-unit-trace-budget-gates-full-gram-tail-activation.md
