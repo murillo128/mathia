@@ -18,7 +18,7 @@ Several other lines close ways of manufacturing apparent information after the s
 
 The program-level discriminator is therefore: **identify the source-admissible global family; prove that its identities and signed relations remain decodable at the required growing rate; transport them in the exact destination quotient, topology, and normalization; and extract the decisive witness before absoluteization, complementary cancellation, passive/classical completion, seam repair, or averaging can erase it.** More coordinates, more dimension, finer resolution, a locally exact representation, or preserved provenance alone are insufficient when the retained channel cannot discriminate the source family or the final assembly cannot isolate the signed relation.
 
-This snapshot reconciles canonical research evidence through source revision `b414db237cd8bdd5fac38be11dba5aeb12ebb1e5`. Atlas telemetry remains navigational only: the checked-in Atlas metrics are based on source revision `4bc527123c549c73b4ce4f04512cb291b342311d`, substantially behind the current evidence, so their numerical rates are not used for portfolio decisions.
+This snapshot reconciles canonical research evidence and materially strengthened clues through source revision `5e13217cc7bac9d698669a1ee2278a46674822bf`. Atlas telemetry remains navigational only: the checked-in Atlas metrics are based on source revision `4bc527123c549c73b4ce4f04512cb291b342311d`, substantially behind the current evidence, so their numerical rates are not used for portfolio decisions.
 
 ## Research-line portfolio
 
