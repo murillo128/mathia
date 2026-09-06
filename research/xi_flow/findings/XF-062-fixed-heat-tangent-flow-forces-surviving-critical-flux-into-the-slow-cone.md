@@ -1,6 +1,6 @@
 # XF-062 — fixed heat tangent flow forces surviving critical flux into the slow cone
 
-**Status:** `EXACT-DERIVED` + `SHARP-LINEARIZED-BAND-REDUCTION` + `MATCHED-CONTROL` + `STRUCTURAL/REPAIR`. XF-061 shows that the derivative-weighted XF-060 selector is not a static inverse norm on arbitrary source-compatible finite-gap geometry: a single `O(M^{-1})` root displacement carries order-one normalized triple-flux variation while placing vanishing energy in the whole shrinking slow cone. That obstruction is real, but it is also spectrally high-frequency. In the exact arithmetic-lattice tangent flow, a fixed positive amount of heat time removes precisely this escape.
+**Status:** `EXACT-DERIVED` + `LINEARIZED-BAND-REDUCTION` + `MATCHED-CONTROL` + `STRUCTURAL/REPAIR`. XF-061 shows that the derivative-weighted XF-060 selector is not a static inverse norm on arbitrary source-compatible finite-gap geometry: a single `O(M^{-1})` root displacement carries order-one normalized triple-flux variation while placing vanishing energy in the whole shrinking slow cone. That obstruction is real, but it is also spectrally high-frequency. In the exact arithmetic-lattice tangent flow, a fixed positive amount of heat time removes precisely this escape.
 
 Let
 
@@ -15,7 +15,7 @@ s=s_T=\frac{4\pi}{\log(T/4\pi)},
 \tag{1}
 \]
 
-and consider the exact `N`-periodic linearization of the real-zero gap flow at the arithmetic lattice of spacing `s`. Write a tangent root-displacement field in index units as `a_j(t)`, modulo its translation mode, and assume only the source-compatible bound
+and consider the exact `N`-periodic linearization of the real-zero gap flow at the arithmetic lattice of spacing `s`. Write a tangent root-displacement field in index units as `a_j(t)`, modulo its translation mode, and assume the matched source-compatible bound
 
 \[
 \|a(0)\|_{\ell^\infty(\mathbb Z/N\mathbb Z)}\le A_0
@@ -43,7 +43,7 @@ then, for each fixed `T`,
 
 \[
 M V_M(t)
-=\varepsilon\mathcal F_M^{\rm lin}(t;a)+O_T(\varepsilon^2)
+=|\varepsilon|\mathcal F_M^{\rm lin}(t;a)+O_T(\varepsilon^2)
 \qquad(\varepsilon\to0).
 \tag{5}
 \]
@@ -70,7 +70,7 @@ and define the tangent flux energy on a frequency set `B` by
 \tag{7}
 \]
 
-Fix any heat time `\tau>0`. Take the XF-059 selector cone with the concrete infrared exponent `\delta=1/2`,
+Fix any heat time `\tau>0`. Take the symmetric reflection of the XF-059 selector cone with the concrete infrared exponent `\delta=1/2`,
 
 \[
 \boxed{
@@ -112,7 +112,7 @@ Consequently, if a bounded source-compatible tangent family retains genuinely cr
 \tag{11}
 \]
 
-then the same family must retain order-one `H^3` Fourier energy **inside the exact XF-059 slow cone**:
+then the same family must retain order-one `H^3` Fourier energy **inside the XF-059 slow selector band**:
 
 \[
 \boxed{
@@ -214,7 +214,7 @@ Therefore
 \tag{21}
 \]
 
-Taking the one-sided derivative at `\varepsilon=0` gives (3)--(5). The third difference is important: it is one derivative from root displacement to gaps and two more from the XF-030 triple-flux variation. This is exactly why both the infrared and ultraviolet edges can be separated cleanly.
+Taking the derivative in `|\varepsilon|` at the origin gives (3)--(5). The third difference is important: it is one derivative from root displacement to gaps and two more from the XF-030 triple-flux variation. This is exactly why both the infrared and ultraviolet edges can be separated cleanly.
 
 For the full Fourier energy, Parseval gives
 
@@ -494,7 +494,7 @@ These boundaries prevent an RH upgrade. The result neither proves `Lambda\le0` n
 
 The exact periodic multiplier (14), its Cauchy/half-Laplacian scaling, and the de Bruijn--Newman zero ODE are already anchored in `SOURCES.md` through Rodgers--Tao and the nonlocal-diffusion literature used by XF-008/XF-044. Frequency splitting into a low observable sector and a high sector suppressed by a parabolic semigroup is a classical PDE/control principle; no novelty is claimed for that abstract idea, Parseval, or the `\ell^1`--`\ell^2` estimate.
 
-A targeted audit of de Bruijn--Newman zero dynamics, fractional-heat observability, Littlewood--Paley/Sobolev square functions, and heat-semigroup frequency splitting did not locate the line-specific scale conjunction proved here: the XF-030 third-difference tangent flux at `M=q^2`, the Xi spacing `s^{-2}\asymp q`, and the exact XF-059 band `[q^{-3/2},C\log\log T/q]`. No external theorem beyond the line's existing classical anchors is load-bearing, so `SOURCES.md` requires no change.
+A targeted audit of de Bruijn--Newman zero dynamics, fractional-heat observability, Littlewood--Paley/Sobolev square functions, and heat-semigroup frequency splitting did not locate the line-specific scale conjunction proved here: the XF-030 third-difference tangent flux at `M=q^2`, the Xi spacing `s^{-2}\asymp q`, and the XF-059 band `[q^{-3/2},C\log\log T/q]`. No external theorem beyond the line's existing classical anchors is load-bearing, so `SOURCES.md` requires no change.
 
 The durable Mathia-local content is the scale-matched reduction (9)--(12) and its consequence (47): once a bounded lattice tangent is allowed any fixed positive heat time, critical triple-flux geometry can survive only in the same slow band for which the actual Xi endpoint selector is already rapidly small.
 
