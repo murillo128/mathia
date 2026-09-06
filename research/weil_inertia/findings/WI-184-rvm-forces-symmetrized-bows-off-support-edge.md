@@ -6,13 +6,13 @@
 \boxed{c\ge 4\pi-o(1)}
 \]
 
-for any such symmetrized bow containing `m\gg\log T` right-half labels. If the bow plus its mirrors accounts for all but `o(m)` zeros in its vertical span, then necessarily
+for any such symmetrized bow containing `m\gg\log T` right-half labels. If the bow plus its mirrors accounts for all but `o(m)` of the zero count in its vertical span, including multiplicity, then necessarily
 
 \[
 \boxed{c=4\pi+o(1).}
 \]
 
-Consequently the first reciprocal frequency of a source-compatible symmetrized bow is at `alpha<=1/2`, not at the support-one endpoint `alpha=1`. At the count-saturating spacing `c=4π`, the mirror-pair contribution is exactly phase coherent at `alpha=1/2` even when the horizontal depth varies arbitrarily along the bow. Thus slow horizontal drift remains a genuine obstruction to the Maynard--Pratt local power-sum detector, but it does **not** by itself reproduce the endpoint Poisson screening geometry used in WI-115/WI-183. For the support-one Weil/form-factor route, the remaining obstruction is extraction against the complementary zeta amplitude.
+Consequently the first reciprocal frequency of a source-compatible symmetrized bow is at `alpha<=1/2`, not at the support-one endpoint `alpha=1`. At the count-saturating spacing `c=4π`, the mirror-pair contribution is exactly phase coherent at `alpha=1/2` even when the horizontal depth varies arbitrarily along the bow. Thus slow horizontal drift remains a genuine obstruction to the Maynard--Pratt local power-sum detector, but it does **not** by itself reproduce the endpoint Poisson screening geometry used in WI-115/WI-183. For the support-one Weil/form-factor route, the remaining obstruction is extraction against the rest of the zeta amplitude.
 
 ## 1. Primary-source bow and the compulsory mirror population
 
@@ -42,7 +42,7 @@ at the **same positive ordinate**. Therefore every off-line right-half label in 
 \tag{3}
 \]
 
-nontrivial zeros, counted with multiplicity, across the same vertical span.
+nontrivial zeros, counted with multiplicity, across the same vertical span. Any multiplicity greater than one can only increase this count.
 
 This observation does not assert that Maynard--Pratt claimed every value of `c` gives a globally admissible zeta configuration. Their bow is explicitly a potential/schematic obstruction. The correction is to WI-183's later use of the particular value `c=2π` as though it remained source-compatible after symmetrization.
 
@@ -99,23 +99,35 @@ hence
 
 For fixed `c`, every sufficiently long source-compatible symmetrized bow therefore has `c>=4π`.
 
-There is also a useful exact asymptotic bookkeeping statement. Let `R_I` be the number of zeros in the same interval that are **not** among the selected bow labels or their compulsory mirrors. Then (3)--(7) give
+The bookkeeping can be made precise without conflating other zeros with multiplicity. Let `r_c=O(1)` be the number of selected bow labels on the critical line, so one compulsory copy of the bow together with one copy of each distinct mirror contributes the baseline
+
+\[
+B_I=2m-r_c=2m+O(1).
+\]
+
+Define the **excess zero-count budget**
+
+\[
+E_I:=N_I-B_I\ge0,
+\]
+
+where `N_I` counts all zeta zeros in the bow interval with multiplicity. Thus `E_I` includes both extra multiplicity at selected bow/mirror points and all other zero labels in the interval. Equations (7)--(8) give
 
 \[
 \boxed{
-R_I
-=\left(\frac{c}{2\pi}-2+o(1)\right)m
+E_I
+=\left(\frac{c}{2\pi}-2+o(1)\right)m.
 }
 \tag{9}
 \]
 
-whenever only `O(1)` selected labels lie on the critical line. Thus the bow geometry has a sharp count dichotomy:
+This yields a sharp count dichotomy:
 
 - `c<4π`: impossible for a long symmetrized actual-zeta bow;
-- `c=4π+o(1)`: the bow and mirrors may asymptotically saturate the local zero count;
-- fixed `c>4π`: the interval necessarily contains a positive-density complementary zero population of size `(c/(2π)-2+o(1))m`.
+- `c=4π+o(1)`: the compulsory bow/mirror count may asymptotically saturate the local zero count, so `E_I=o(m)`;
+- fixed `c>4π`: there is a positive-density **excess zero-count budget** `(c/(2π)-2+o(1))m`.
 
-Equation (9) says nothing about the type of the complementary zeros: they may be critical-line zeros, multiple zeros, further off-line pairs, or a mixture. It is only a count constraint.
+The last case does **not** by itself force that excess to be a distinct complementary population. It may be realized by extra multiplicity at selected points, by additional critical-line zeros, by further off-line pairs, or by a mixture. If the selected bow and mirror points are simple, then (9) does become the asymptotic count of other zeros in the interval. This separation is essential for the `weil_inertia` mandate.
 
 ## 3. Count compatibility moves the reciprocal alias into the lower half of support
 
@@ -200,9 +212,9 @@ e^{2\pi i x_0\alpha_*}
 \tag{18}
 \]
 
-where any critical-line endpoint labels carry the same vertical phase. In particular, after fixing the harmless common phase, every mirror pair contributes a **positive real** amount. The depth sequence may ramp, plateau, or drift arbitrarily; no horizontal-depth variation can create internal phase cancellation at the reciprocal line.
+where any critical-line endpoint labels carry the same vertical phase. In particular, after fixing the harmless common phase, every mirror pair contributes a **positive real** amount. The depth sequence may ramp, plateau, or drift arbitrarily; no horizontal-depth variation can create internal phase cancellation at the reciprocal line. Extra multiplicity at one of these selected points merely repeats the same-phase contribution and therefore strengthens, rather than cancels, this selected amplitude.
 
-For `c=4π`, (18) is a coherent selected witness exactly at `alpha=1/2`. For fixed `c>4π`, the witness lies even deeper inside support, at `alpha_*<1/2`, but (9) simultaneously guarantees a positive-density complementary population that may participate in cancellation.
+For `c=4π`, (18) is a coherent selected witness exactly at `alpha=1/2`. For fixed `c>4π`, the witness lies even deeper inside support, at `alpha_*<1/2`, while (9) simultaneously requires a positive-density excess zero-count budget. Only the part of that excess represented by genuinely additional phases can act as a cancellation reservoir; multiplicity on the selected bow cannot.
 
 This directly matches the finite-period rigidity of WI-124: a density-one period-2 cell containing one same-ordinate mirror pair has its forced first-half Bragg alias at `alpha=1/2`. Equation (18) shows that exact periodicity of the horizontal depths is unnecessary for phase coherence along the vertical AP; slow bow drift changes amplitudes through `cosh`, not phases.
 
@@ -219,9 +231,9 @@ The result rules out a specific attempted identification:
 
 Accordingly, WI-183's `c=2π` endpoint-screening specialization must be read only as a formal one-sided local model before global zeta symmetry/count compatibility is imposed. The broader Maynard--Pratt conclusion survives: their short zero-detecting power sums can still be defeated by slowly drifting locally arithmetic chains, and no theorem here excludes bows from zeta.
 
-Nor does (18) by itself give a new unconditional simple-critical proportion or RH. WI-124 already isolates the load-bearing gap: the complete Baluyot--Goldston--Suriajaya--Turnage-Butterbaugh form factor is a square of the **full** zeta amplitude. A large coherent amplitude from a selected bow can be canceled by the complementary amplitude before the square is formed. Equation (9) sharpens that boundary. If `c>4π`, a complementary local population is mandated already by zero counting; if `c=4π`, no positive-density local complement is forced by count, but zeros outside the short bow interval can still enter a global form-factor amplitude unless one proves a localization/extraction theorem.
+Nor does (18) by itself give a new unconditional simple-critical proportion or RH. WI-124 already isolates the load-bearing gap: the complete Baluyot--Goldston--Suriajaya--Turnage-Butterbaugh form factor is a square of the **full** zeta amplitude. A large coherent amplitude from a selected bow can be canceled by the rest of the zeta amplitude before the square is formed. Equation (9) sharpens the local bookkeeping but does not solve extraction. If `c>4π`, a positive-density excess count is required, yet that excess need not consist of distinct cancelling zeros; if `c=4π`, no positive-density excess is forced by count, but zeros outside the short bow interval can still enter a global form-factor amplitude unless one proves a localization/extraction theorem.
 
-Thus slow horizontal drift is not the missing spectral detector by itself. Once symmetry and Riemann--von Mangoldt are imposed, the reciprocal witness is already present in the lower half of support. The remaining RH-facing task is to **extract** that selected witness, or to prove that any cancellation reservoir capable of neutralizing it incurs another independently source-controlled cost.
+Thus slow horizontal drift is not the missing spectral detector by itself. Once symmetry and Riemann--von Mangoldt are imposed, the reciprocal witness is already present in the lower half of support. The remaining RH-facing task is to **extract** that selected witness, or to prove that any genuinely phase-opposed cancellation reservoir capable of neutralizing it incurs another independently source-controlled cost.
 
 ## 6. Prior-art audit and provenance
 
@@ -235,7 +247,7 @@ A targeted search around Maynard--Pratt bows, functional-equation reflection, Ri
 
 ## 7. Research implication
 
-The source-control hierarchy should be revised as follows. Maynard--Pratt bows remain a canonical adversarial geometry for **local zero-detecting Dirichlet polynomials**, but they are not a new endpoint-screened adversary for the support-one Weil/form-factor interface once the actual zeta symmetries and mean count are enforced. A long symmetrized bow must either sit at essentially spacing `4π/log T`, where its selected mirror amplitude is coherent at `alpha=1/2`, or use a larger spacing and coexist with a positive-density complementary zero population.
+The source-control hierarchy should be revised as follows. Maynard--Pratt bows remain a canonical adversarial geometry for **local zero-detecting Dirichlet polynomials**, but they are not a new endpoint-screened adversary for the support-one Weil/form-factor interface once the actual zeta symmetries and mean count are enforced. A long symmetrized bow must either sit at essentially spacing `4π/log T`, where its selected mirror amplitude is coherent at `alpha=1/2`, or use a larger spacing and carry a positive-density excess zero-count budget. The latter budget must remain split into multiplicity versus genuinely additional zero labels; only the latter can supply new cancellation phases.
 
 This shifts the next decisive question from “which local observable sees slow horizontal drift?” to
 
@@ -243,9 +255,9 @@ This shifts the next decisive question from “which local observable sees slow 
 \boxed{
 \text{Can the lower-half reciprocal amplitude of a symmetrized bow be localized/extracted,}
 \\
-\text{or can every cancellation reservoir be charged by an independent zeta-source invariant?}
+\text{or can every genuinely cancelling reservoir be charged by an independent zeta-source invariant?}
 }
 \tag{20}
 \]
 
-That question is compatible with the canonical `weil_inertia` mandate: it separates the selected off-line block from proof slack and complementary populations, and it seeks a defect-to-zero mechanism rather than another percentage-only refinement.
+That question is compatible with the canonical `weil_inertia` mandate: it keeps multiplicity, distinct exceptional population, and proof slack separate, and it seeks a defect-to-zero mechanism rather than another percentage-only refinement.
