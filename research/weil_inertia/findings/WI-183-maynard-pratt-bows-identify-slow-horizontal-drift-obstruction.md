@@ -64,7 +64,7 @@ Equations (2)--(3) give, exactly on the rising ramp,
 \[
 x_{j+1}-x_j=\frac{c}{2\pi},
 \qquad
- a_{j+1}-a_j=rac{\log T}{2\pi T^\varepsilon}.
+ a_{j+1}-a_j=\frac{\log T}{2\pi T^\varepsilon}.
 \tag{6}
 \]
 
