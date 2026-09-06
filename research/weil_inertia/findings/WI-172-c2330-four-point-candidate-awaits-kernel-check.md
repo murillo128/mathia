@@ -1,43 +1,52 @@
-# WI-172 — The `c=2330/10^6` four-point candidate is a concrete kernel-checkable source improvement, not yet a theorem
+# WI-172 — The `c=2330/10^6` four-point source certificate is kernel-checked and gives a strict exact improvement
 
-**Status:** `LITERATURE+COMPUTATIONAL-CANDIDATE`, `EXACT-CONDITIONAL-DERIVED`, `PRIOR-ART-REDIRECT`, `NEEDS-KERNEL-CHECK`, `NO-NOVELTY-CLAIM`
+**Status:** `FORMALLY-CHECKED + EXACT-DERIVED + LITERATURE+DERIVED + STRICT-PROPORTION-IMPROVEMENT + SOURCE-SPECIFIC-ESCAPE + PRIOR-ART-REDIRECT + NO-NOVELTY-CLAIM`
 
 ## Claim
 
-The accepted source-constrained four-point question now has a much narrower first test than a new optimization campaign. A public `teal-sea/zeta-lab` artifact already contains a generated candidate proof for the genuine Montgomery--Taylor four-point functional at
+The previously conditional `teal-sea/zeta-lab` four-point candidate at
 
 \[
-n=4,\qquad c=\frac{2330}{10^6},\qquad p=2500,
+n=4,\qquad c=\frac{2330}{10^6},\qquad p=2500
 \]
 
-strictly above the established Lean-checked value
+has now passed an independent complete Lean kernel replay at the frozen source commit
 
-\[
-c_0=\frac{2310}{10^6}.
-\]
+`d28df5f992479cd32751cb90c8c88551550582a3`.
 
-The candidate is **not established evidence**: its complete Lean build was canceled before any candidate proof module ran. What is established from the public record is only that the exact-rational search reported closure and a separate emitted-source preflight reported zero coverage problems. The candidate therefore remains a bounded formal-verification target, not an unconditional zeta theorem.
-
-If the preserved generated proof at the pinned candidate commit passes a complete Lean kernel check with the repository's intended trust footprint, then the existing `n_point_bound` bridge at the valid block size `m=432` gives the exact conditional lower bound
+Research Watch independently rechecked the formal-to-mathematical correspondence of the frozen source. The certificate is for the actual Montgomery--Taylor overlap kernel used by the zeta bridge, with the same ordered-gap functional and pressure ledger consumed by `Zeta23Ext.Bridge.n_point_bound`. At the maximal admissible block size `m=432`, the checked downstream theorem therefore gives
 
 \[
 \boxed{
 \liminf_{T\to\infty}
 \frac{N_0^s(T,2T)}{N(T,2T)}
 \ge
+B_{2330}:=
 \frac{14400000H_{\rm MT}-17240}{14366681}
 }
 \tag{1}
 \]
 
-with numerical value
+where
 
 \[
-0.6728603588388666595002053005\ldots .
+H_{\rm MT}
+=
+\frac32-\frac1{\sqrt2}\cot\frac1{\sqrt2}.
+\]
+
+Numerically,
+
+\[
+\boxed{
+B_{2330}
+=
+0.6728603588388666595002053005\ldots
+}
 \tag{2}
 \]
 
-This would strictly exceed Mathia's current exact four-point bound from WI-036,
+This strictly exceeds WI-036's exact four-point bound
 
 \[
 B_{36}
@@ -48,187 +57,230 @@ B_{36}
 \tag{3}
 \]
 
-The comparison does not rely on decimal arithmetic. Exactly,
+The comparison is exact:
 
 \[
-\frac{14400000H-17240}{14366681}
--
-\frac{1609375H-1920}{1605679}
+B_{2330}-B_{36}
 =
-\frac{400365625H-97878440}{23068277981399}.
+\frac{400365625H_{\rm MT}-97878440}{23068277981399}.
 \tag{4}
 \]
 
-The numerator is positive already for
+Since `H_MT>2/3`, the numerator in (4) is bounded below by
 
 \[
-H>\frac{97878440}{400365625}=0.2444726\ldots ,
+400365625\cdot\frac23-97878440
+=
+\frac{507095930}{3}>0.
 \]
 
-so in particular it is positive for the established Montgomery--Taylor constant `H_MT>2/3`. At the actual value of `H_MT`, the conditional gain over WI-036 is
+Thus no decimal evaluation is needed for strictness. At the actual value of `H_MT` the gain is
 
 \[
-7.428717682339749\ldots\times10^{-6}.
+\boxed{
+B_{2330}-B_{36}
+=
+7.4287176823397490175\ldots\times10^{-6}.
+}
 \tag{5}
 \]
 
-Thus a successful kernel replay would not merely reproduce a weaker historical candidate: it would give a strict certified-proportion improvement over the current Mathia exact frontier using the actual MT source functional and no new prime-side moment.
+The improvement is quantitatively small, but it is structurally important for the line: the genuine Montgomery--Taylor kernel/gap coupling has a certified local surplus beyond the sharp arbitrary-positive-weight relaxation isolated by WI-166.
 
-## Evidence and proof provenance
+## 1. Exact source correspondence
 
-The load-bearing external artifacts are both in `teal-sea/zeta-lab`.
-
-1. The current archival record `hunts/four_point_pressure/RUNS.md` on main commit
-   `4d0d431d9da567b5967eca38085ebc94d9270cea` records the candidate parameters
-   `n=4`, `c=2330/10^6`, `p=2500`, `m=432`, the exact bridge expression in (1),
-   and the terminal verification status. It reports:
-
-   - exact search-tree closure;
-   - emitted-source preflight with `1516` cell lemmas, `11863` leaves, `220`
-     chunks, `13` boxes, `64` dispatch cases, and zero problems;
-   - GitHub Actions run `33987435968` at candidate commit
-     `d28df5f992479cd32751cb90c8c88551550582a3`;
-   - successful toolchain installation and Mathlib-cache steps, followed by
-     cancellation during the dependency build;
-   - every candidate proof step, including `FourPoint.Base`, generated cells,
-     chunks, `FourPoint.Main`, and the final axiom audit, **skipped**.
-
-   The archival record explicitly concludes that no new proved bound was
-   produced.
-
-2. The preserved generated source at commit
-   `d28df5f992479cd32751cb90c8c88551550582a3`,
-   `hunts/ainta_seven_point/lean-four-point/FourPoint/Main.lean`, contains the
-   intended declarations
-
-   \[
-   \texttt{four\_point\_cert}:
-   \frac{2330}{10^6}\le F_4(2500;g)
-   \quad(g_i\ge0),
-   \]
-
-   together with the exact `Phi_four` identity at `m=432` and the downstream
-   bound source. The existence of theorem-shaped Lean source is **not** a proof
-   that those declarations compile; the canceled build never reached them.
-
-The earlier `FOUR-POINT.md` in the same repository had already measured the
-`c=2330/10^6` frontier and tabulated the parameter. Therefore neither the
-constant nor the candidate is a Mathia discovery.
-
-## The block-size correction is load-bearing
-
-The current archival record uses `m=432`. This is forced by the side condition
-of the generic bridge,
+The frozen candidate's `lean/bridge/Zeta23Ext/Bridge/Defs.lean` defines
 
 \[
-c\bigl(m-(n-1)\bigr)\le1.
+K(x)
+=
+\int_{-1/2}^{1/2}
+\cos(\sqrt2\,t)\cos(2\pi xt)\,dt,
+\qquad
+k(x)=\frac{K(x)}{K(0)},
+\qquad
+w(x)=k(x)^2.
 \tag{6}
 \]
 
-For `n=4` and `c=2330/10^6`,
+It then defines the `n`-point functional on nonnegative consecutive gaps by
+
+\[
+F_{n,p}(g)
+=
+\frac1p\sum_i g_i
++
+\sum_{0\le i<j<n}
+\frac{2}{n-(j-i)}
+\,w(y_j-y_i),
+\tag{7}
+\]
+
+where `y_0=0` and the remaining `y_j` are the partial sums of the gaps.
+
+For `n=4`, the frozen `FourPoint/Main.lean` proves the exact unfolding
+
+\[
+\begin{aligned}
+F_{4,2500}(x,y,z)
+={}&
+\frac{x+y+z}{2500}
++\frac23\bigl(w(x)+w(y)+w(z)\bigr)\\
+&+w(x+y)+w(y+z)+2w(x+y+z),
+\end{aligned}
+\tag{8}
+\]
+
+and then proves
+
+\[
+\boxed{
+\forall x,y,z\ge0,\qquad
+\frac{2330}{10^6}
+\le
+F_{4,2500}(x,y,z).
+}
+\tag{9}
+\]
+
+This is the declaration `Zeta23Ext.Bridge.FourPoint.four_point_cert`.
+
+The bridge source `Zeta23Ext/Bridge/S11.lean` proves that summing exactly this window functional over consecutive retained zeros charges each pair-energy coefficient without overspending and charges every single gap at most `n-1` times. `S13.lean` transfers that source energy to the actual simple-critical-zero Gram block through the uniform Montgomery--Taylor kernel limit and the spectral defect. The assembled theorem `Zeta23Ext.Bridge.n_point_bound` states, with no conjectural zero hypothesis,
+
+\[
+(\Phi_n-\varepsilon)N(T,2T)\le N_0^s(T,2T)
+\]
+
+for every `epsilon>0` and all sufficiently large `T`, provided only the finite certificate and the explicit finite side conditions hold.
+
+The frozen `FourPoint/Main.lean` instantiates that theorem at
+
+\[
+(n,c,m,p)
+=
+\left(
+4,\frac{2330}{10^6},432,2500
+\right),
+\]
+
+proves the exact identity
+
+\[
+\Phi_4
+=
+\frac{14400000H_{\rm MT}-17240}{14366681},
+\tag{10}
+\]
+
+and exposes both `four_point_bound` and `four_point_bound_ratio`. The ratio theorem explicitly uses eventual positivity of `Ncount` before division, so its conclusion is literally about `N0simple/Ncount`, not an informal reinterpretation of a matrix quantity.
+
+Thus the checked finite source is connected end to end to the intended count of zeros that are both simple and on the critical line.
+
+## 2. The block-size correction remains load-bearing
+
+The generic bridge requires
+
+\[
+c\bigl(m-(n-1)\bigr)\le1.
+\tag{11}
+\]
+
+At the checked parameters,
 
 \[
 \frac{2330}{10^6}(432-3)
 =
 \frac{999570}{10^6}<1,
+\tag{12}
 \]
 
-whereas the older exploratory table's nearby `m=433` entry would give
+whereas the older exploratory `m=433` row would give
 
 \[
 \frac{2330}{10^6}(433-3)
 =
 \frac{1001900}{10^6}>1.
+\tag{13}
 \]
 
-So `m=433` cannot be used in the theorem bridge at this `c`; the exact
-conditional comparison in this finding uses only the corrected admissible
-`m=432` value from the archival record.
+Therefore `m=432` is the admissible block used in the theorem. The nearby historical `m=433` table entry must not be imported into any zeta bound at this `c`.
 
-## Relation to the source-constrained positive-cover frontier
+## 3. Independent kernel replay and trust footprint
 
-WI-166 proves sharpness only after relaxing the four-point problem to arbitrary
-nonnegative pair weights and a common pressure ledger at the established local
-constant `2310/10^6`. WI-171 then shows that generic PSD/Toeplitz/Gram
-realizability does not eliminate that relaxed saturation witness. The accepted
-`CLUE-kernel-constrained-positive-cover-escape` therefore isolates the actual
-Montgomery--Taylor kernel-value relation tied to ordered additive gaps as the
-remaining source-specific information.
+The public upstream state of record remains deliberately conservative. The archival [`hunts/four_point_pressure/RUNS.md`](https://github.com/teal-sea/zeta-lab/blob/main/hunts/four_point_pressure/RUNS.md) records that the upstream GitHub Actions attempt at the frozen candidate commit was canceled during dependency compilation, before any candidate proof module ran, and therefore did not register a new proved constant. The exact source replayed here is [`FourPoint/Main.lean`](https://github.com/teal-sea/zeta-lab/blob/d28df5f992479cd32751cb90c8c88551550582a3/hunts/ainta_seven_point/lean-four-point/FourPoint/Main.lean) at that frozen commit.
 
-The candidate here tests exactly that surviving interface: its local functional
-is the genuine `wfun`/Montgomery--Taylor four-point functional, not the arbitrary
-weight relaxation. If `four_point_cert` kernel-checks at `2330/10^6`, then the
-actual source functional has a strict uniform local margin of at least
+[Mathia issue #119](https://github.com/murillo128/mathia/issues/119) performed the bounded independent replay that WI-172 had identified as the decisive missing gate. The preserved preflight reproduced exactly
+
+- `1516` cell lemmas,
+- `11863` leaves,
+- `220` chunks,
+- `13` boxes,
+- `64` dispatch cases,
+- zero preflight problems.
+
+The replay used the frozen toolchain and dependencies: Lean `4.33.0-rc2`, Mathlib `51e6992efd06126df61a496bebf8f49482a4e129`, and Zeta23 `3635e74826a4c1fcece7d1cd2b6fa75e43a00510`. `lake exe cache get`, `lake build Zeta23Ext.Bridge.Main`, and `lake build FourPoint.Base` succeeded.
+
+Native Lake then encountered a package-resolution collision because the candidate package and `Zeta23Bridge` both expose a module named `FourPoint.Base`; this happened before cell elaboration. The replay did not edit source or package configuration. Instead it continued with the same pinned `lean` executable and explicit module setup maps retaining the already-successful Base compiler options, plugins, dynamic libraries and upstream import artifacts while selecting the candidate package's checked `FourPoint` modules.
+
+All 48 candidate source modules then compiled, through `Cells0`--`Cells25`, `Cells`, `Cover`, `Chunks0`--`Chunks15`, `Boxes`, `Main`, and the root `FourPoint` module. Original source, toolchain and manifest hashes remained unchanged. The forbidden-token audit passed all 48 candidate Lean files.
+
+Most importantly, the executed `#print axioms` reports for
+
+`F4_eq`, `cover1`, `four_point_cert`, `Phi_four`, `four_point_bound`, and `four_point_bound_ratio`
+
+were all exactly
 
 \[
-\frac{20}{10^6}=2\times10^{-5}
+[\texttt{propext},\ \texttt{Classical.choice},\ \texttt{Quot.sound}].
+\tag{14}
 \]
 
-above the WI-009/WI-166 certified constant. Because the generic bridge already
-propagates that stronger local certificate to (1), no new global assembly lemma
-is needed to turn this particular local surplus into a strict theorem-level
-proportion improvement.
+The floating-point screen in the source preflight is only diagnostic; equation (9), the bridge identity (10), and the downstream zeta statements are carried by the elaborated exact Lean proofs with the standard trust footprint (14).
 
-This would **not** resolve the larger accepted clue. It would establish one
-strict source-specific escape from the exact relaxed saturation point, but it
-would not determine the optimal MT-constrained infimum, show an extensive
-surplus for arbitrary positive-cover architectures, defeat WI-026's
-single-profile pressure-family ceiling, or constrain the exceptional off-line
-block strongly enough to imply RH.
+The remaining native-Lake name collision is therefore a packaging/tooling defect of that frozen candidate checkout, not a mathematical premise or an unchecked proof step.
 
-## Adversarial audit
+## 4. What the result says about the surviving source information
 
-Several weaker readings are excluded.
+WI-166 proves that the positive-cover relaxation is sharp when the four-point local problem is allowed arbitrary nonnegative pair weights under the shared coefficient budget. WI-171 then realizes the saturation witness by uniformly positive-definite Toeplitz Gram matrices, ruling out generic PSD, principal-minor, determinant, interlacing, conditioning, Toeplitz, or stationary-Gram constraints as an automatic escape.
 
-- **Generated Lean source is not formal verification.** The only attempted
-  complete build was canceled before the candidate modules ran. No theorem from
-  the `c=2330/10^6` source is imported as evidence here.
-- **Search closure is not kernel closure.** The preflight checks the emitted
-  exact-rational partition/coverage bookkeeping; it does not replace Lean's
-  elaboration, dependency checking, kernel checking, no-`sorry` audit, or axiom
-  inspection.
-- **The old `m=433` arithmetic is inadmissible.** Equation (6) rules it out
-  exactly; the corrected `m=432` is used throughout.
-- **A successful replay would improve only the certified simple-critical
-  proportion.** It does not identify the complementary mass as off-line zeros
-  and does not remove multiple critical-line zeros or pure proof slack.
-- **A failed build need not refute the mathematics.** A theorem/cell failure
-  after successful dependency setup is material evidence about the generated
-  candidate; timeout, cancellation, missing resources, or unrelated tooling
-  failure is only inconclusive execution evidence.
+The checked certificate here is different because its six pair weights are not free: they are the values of the single function `w` in (6) at the additive distances
 
-## Prior-art and novelty audit
+\[
+x,\ y,\ z,\ x+y,\ y+z,\ x+y+z,
+\]
 
-The `c=2330/10^6` parameter, its generated candidate proof tree, and the
-conditional decimal in (2) are public prior art in `teal-sea/zeta-lab`.
-Mathia makes no priority claim for them. The durable contribution of this
-finding is narrower: it classifies the current proof status correctly, checks
-the bridge side condition and the corrected `m=432` value, derives the exact
-conditional comparison with the stronger WI-036 bound rather than only the
-older registered four-point theorem, and identifies a bounded kernel replay as
-the first decisive test for the accepted source-constrained clue.
+while the same gaps simultaneously pay the pressure term `(x+y+z)/2500`. The certificate proves that this coupled source family cannot realize the relaxed WI-166 saturation value. Uniformly,
 
-A local duplication audit found no existing `weil_inertia` finding that records
-this current archival disposition or the exact comparison (4) against WI-036.
-WI-009 records the proved `2310/10^6` certificate; WI-025/WI-036 optimize its
-assembly; WI-166/WI-171 isolate the source-specific escape question. The
-present result is therefore a prior-art redirect and evidence-status finding,
-not a rediscovery of those results.
+\[
+\inf_{x,y,z\ge0}F_{4,2500}(x,y,z)
+\ge
+\frac{2330}{10^6}
+=
+\frac{2310}{10^6}
++\frac{20}{10^6}.
+\tag{15}
+\]
 
-## Decisive next test
+Hence the actual MT source coupling contributes at least a
 
-Run exactly one bounded replay of the preserved candidate at commit
-`d28df5f992479cd32751cb90c8c88551550582a3` in its pinned repository
-environment:
+\[
+\boxed{2\times10^{-5}}
+\]
 
-1. reproduce the existing emitted-source preflight and require the recorded
-   zero-problem counts;
-2. compile the complete relevant Lean package so the candidate proof modules
-   themselves run;
-3. inspect `four_point_cert`, `Phi_four`, the downstream bound declarations,
-   no-`sorry` status, and their axiom footprint;
-4. classify resource/cancellation failures separately from proof failures.
+local surplus over the already Lean-checked `2310/10^6` certificate used in the earlier four-point line.
 
-Do not sweep `c`, regenerate a new proof tree, or redesign the certificate
-before this replay. The candidate is already precise enough that the next
-information gain is formal verification, not another numerical search.
+This validates the first, bounded source-specific escape anticipated by `CLUE-kernel-constrained-positive-cover-escape`. It does **not** establish the optimal source-constrained local constant, an extensive surplus for every positive-cover architecture, or a mechanism that forces the exceptional off-line mass to vanish.
+
+## 5. Prior art, novelty, and scope
+
+The number `2330/10^6`, its generated proof tree, and the candidate bridge expression were already public in `teal-sea/zeta-lab`. The earlier `FOUR-POINT.md` had tabulated this floor, and the 5 September 2026 archival `RUNS.md` preserved the exact source and explicitly recorded the canceled upstream build. **No novelty or priority claim is made for the constant, certificate design, or bridge.**
+
+The durable Mathia contribution in this finding is evidence integration: independently replaying the frozen exact proof, checking its trust footprint, rechecking the formal correspondence to the actual Montgomery--Taylor kernel and simple-critical-zero bridge, retaining the corrected admissible `m=432`, and comparing the resulting exact theorem to the stronger WI-036 Mathia frontier rather than only to the older upstream registered four-point theorem.
+
+This result improves only the certified proportion of simple critical-line zeros. It does not identify the uncertified complement as off-line zeros; multiple critical-line zeros and proof slack remain separate. It does not defeat WI-026's broader single-profile pressure-family ceiling, and it does not provide the individual-exception coercivity required by the canonical RH objective.
+
+## Consequence for the research line
+
+The bounded verification question that previously occupied WI-172 is closed positively. The broader source-constrained clue remains live, but its first branch is no longer hypothetical: **specific MT kernel/gap coupling really does escape the sharp arbitrary-weight relaxation.**
+
+The next substantive question is therefore not another replay of `c=2330/10^6`. It is to characterize how much source-specific surplus survives at larger/global scale, or to construct an actual MT-kernel gap configuration approaching the relaxed saturation resource. Any such work must preserve the common kernel-value/additive-gap/pressure coupling from the start; generic Gram feasibility has already been shown insufficient.
