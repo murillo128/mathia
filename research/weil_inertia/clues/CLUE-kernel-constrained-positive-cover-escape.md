@@ -9,6 +9,7 @@ based_on:
   - research/weil_inertia/findings/WI-166-four-point-positive-cover-relaxation-is-sharp.md
   - research/weil_inertia/findings/WI-171-four-point-saturation-witness-is-uniformly-gram-realizable.md
   - research/weil_inertia/findings/WI-172-c2330-four-point-candidate-awaits-kernel-check.md
+  - research/weil_inertia/findings/WI-174-fixed-p2500-four-point-constant-is-below-2343e-6.md
 ---
 
 # Can a source-constrained cover evade the sharp positive-cover relaxation?
@@ -33,6 +34,20 @@ strictly above WI-036's `0.6728529301211843197...`.
 
 Therefore the actual source coupling does force at least one strict surplus over the WI-166 saturation resource. The open question is no longer whether *any* source-specific escape exists; it is how large and how global that escape can be.
 
+WI-174 now closes one tempting way of enlarging that surplus. At the explicit rational MT gap triple
+
+\[
+\left(\frac{1047}{1000},\frac{1981}{1000},\frac{1047}{1000}\right)
+\]
+
+an independent interval evaluation gives `F_{4,2500}<2343/10^6`. Since WI-172 already proves `F_{4,2500}>=2330/10^6`, less than `13e-6` of local constant remains in this exact fixed-`p=2500` functional. After optimizing the corrected bridge over every admissible integer block size, merely raising this same constant can improve the certified proportion by less than `8.64943e-6`, with absolute bridge output strictly below
+
+\[
+0.6728690082686776504\ldots .
+\]
+
+So further constant squeezing at fixed `p=2500` is no longer a priority. A material source-specific gain must change pressure, local profile/window, global placement/assembly, independent source observables, or the exceptional-block coupling.
+
 ## Research question
 
 How much strict surplus is forced by the actual source coupling
@@ -51,7 +66,7 @@ A uniform extensive source gap would create additional certified simple-critical
 
 ## Decisive test
 
-Do not repeat the `c=2330/10^6` verification or relax the kernel values back to arbitrary nonnegative pair weights. Preserve from the start the common variables
+Do not repeat the `c=2330/10^6` verification, spend effort tightening only the same `p=2500` four-point minimum, or relax the kernel values back to arbitrary nonnegative pair weights. Preserve from the start the common variables
 
 \[
 x,\ y,\ z,\ldots
@@ -59,16 +74,16 @@ x,\ y,\ z,\ldots
 
 that simultaneously determine every MT pair value through additive distances and fund the pressure term.
 
-The next bounded test should characterize the actual MT-constrained local/periodic infimum beyond the four-point floor. A successful positive route must produce an exact lower resource strictly stronger than the checked `2330/10^6` floor and show how it survives legitimate global accounting. A negative route should give an explicit source-realizable periodic/aperiodic gap family whose true MT kernel values approach the relaxed saturation resource closely enough to cap any such improvement.
+The next bounded test should characterize the actual MT-constrained local/periodic infimum beyond the fixed-`p=2500` constant-squeezing route, preferably by varying pressure/profile or by moving to a genuinely global source-placement problem. A successful positive route must produce an exact lower resource materially stronger than the checked `2330/10^6` floor and show how it survives legitimate global accounting. A negative route should give an explicit source-realizable periodic/aperiodic gap family whose true MT kernel values approach the relaxed saturation resource closely enough to cap any such improvement.
 
 Generic PSD, Toeplitz, determinant, principal-minor, interlacing, or conditioning constraints are not valid decisive tests: WI-171 already supplies them for the relaxed witness.
 
 ## Evidence boundary
 
-WI-172 establishes only a fixed four-point source surplus and its strict certified-proportion improvement. It does not determine the optimal MT-constrained cover, defeat WI-026's single-profile pressure-family ceiling, identify the exceptional complement, or imply RH.
+WI-172 establishes only a fixed four-point source surplus and its strict certified-proportion improvement. WI-174 additionally caps how much can be recovered by tightening the local constant of that exact `p=2500` functional. Neither result determines the optimal MT-constrained cover, defeats WI-026's single-profile pressure-family ceiling, identifies the exceptional complement, or implies RH.
 
 The canonical objective remains individual off-line-zero coercivity and defect elimination. Further proportion improvement is useful here only insofar as it reveals source information that can later interact with the exceptional block or expose a genuinely stronger invariant.
 
 ## Research disposition
 
-Accepted and **advanced past the formal-replay gate**. The finite source-specific escape is now established by WI-172. Continued work is restricted to quantifying or refuting an extensive kernel--placement--pressure surplus that survives the full assembly; no further candidate-status work on the already checked `c=2330/10^6` artifact is needed.
+Accepted and **advanced past the formal-replay and fixed-pressure constant-squeezing gates**. The finite source-specific escape is established by WI-172, while WI-174 shows that proving a slightly larger constant for that same `p=2500` local functional has less than `8.65e-6` theorem-level payoff left. Continued work is restricted to quantifying or refuting an extensive kernel--placement--pressure surplus through a genuinely changed source-aware architecture; no further candidate-status work on the already checked `c=2330/10^6` artifact is needed.
