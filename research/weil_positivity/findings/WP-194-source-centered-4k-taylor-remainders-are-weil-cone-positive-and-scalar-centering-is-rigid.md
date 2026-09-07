@@ -39,7 +39,15 @@ Hence the scalar higher-order spectral-shift density is exactly
 \tag{3}
 \]
 
-For `v<0` the reflected formula on `[c+v,c]` holds. No zeta data, zero divisor, or arithmetic coefficient enters this calculation.
+For `v=-a<0`, reversing the integration limits gives the exact reflected density
+
+\[
+\eta_{n,c,-a}(\lambda)
+=(-1)^n\frac{(\lambda-(c-a))^r}{r!}
+\mathbf 1_{[c-a,c]}(\lambda).
+\]
+
+Thus negative scalar shifts carry an additional factor `(-1)^n`; this distinction is immaterial at the even orders used below but reverses the centered density at odd order. No zeta data, zero divisor, or arithmetic coefficient enters this calculation.
 
 The question from `WP-193` is what happens to the even part
 
@@ -50,15 +58,15 @@ The question from `WP-193` is what happens to the even part
 
 under Fourier transform.
 
-## 2. At `H=0` the even density is a positive mixture of triangles
+## 2. At `H=0` the even density has an explicit signed triangle mixture
 
 Set `c=0` and write `a=|v|`. After changing the value at the single point `x=0`, which is immaterial in `L^1`, the continuous representative of the even density is
 
 \[
 \boxed{
-\phi_{n,a}(x)
+\phi_{n,a,v}(x)
 =\eta_{n,0,v}^{\rm ev}(x)
-=\frac{(a-|x|)_+^r}{2r!}.
+=\operatorname{sgn}(v)^n\frac{(a-|x|)_+^r}{2r!}.
 }
 \tag{5}
 \]
@@ -102,22 +110,17 @@ Combining (5)--(9), for `n>=3` and `\xi!=0`,
 
 \[
 \boxed{
-\widehat{\phi_{n,a}}(\xi)
-=\frac1{(n-3)!\,\xi^2}
+\widehat{\phi_{n,a,v}}(\xi)
+=\frac{\operatorname{sgn}(v)^n}{(n-3)!\,\xi^2}
 \int_0^a
-(1-\cos(t\xi))(a-t)^{n-3}\,dt>0.
+(1-\cos(t\xi))(a-t)^{n-3}\,dt.
 }
 \tag{10}
 \]
 
-At `\xi=0`, continuity gives
+At `\xi=0`, continuity gives the same overall factor `\operatorname{sgn}(v)^n` times a strictly positive integral.
 
-\[
-\widehat{\phi_{n,a}}(0)=\int\phi_{n,a}>0.
-\tag{11}
-\]
-
-Therefore every centered scalar density of order at least three has a **strictly positive Fourier transform after evenization**. This is a direct compact-support Pólya-type phenomenon; no novelty is claimed for positive definiteness of such truncated powers. The branch-specific point is what it does to the exact Weil autocorrelation gate in `WP-193`.
+Therefore every centered scalar density of **even** order `n>=4` has a strictly positive Fourier transform after evenization for either sign of `v`. At odd order the sign is `\operatorname{sgn}(v)`, so a negative scalar perturbation reverses the Fourier sign. This is a direct compact-support Pólya-type phenomenon; no novelty is claimed for positive definiteness of such truncated powers. The branch-specific point is what it does to the exact Weil autocorrelation gate in `WP-193`.
 
 ## 3. Exact sign on the full autocorrelation cone
 
