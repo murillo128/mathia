@@ -1,0 +1,253 @@
+# MC-116 — Subpower-dense mean-absolute checkpoints retain the RH endpoint
+
+**Status:** `EXACT-DERIVED`, `CLASSICAL-MECHANISM`, `TARGET-REDUCTION`, `NO-NOVELTY-CLAIM`.
+
+## Claim
+
+Let
+
+\[
+M(x)=\sum_{n\le x}\mu(n),
+\qquad
+D_M(X)=\frac1X\int_1^X |M(u)|\,du,
+\qquad
+A(X):=X D_M(X).
+\]
+
+The cumulative absolute mass `A(X)` is nondecreasing. This elementary fact substantially weakens the scale coverage required by the mean-absolute RH endpoint from `MC-115`.
+
+Let
+
+\[
+1<X_1<X_2<\cdots\to\infty
+\]
+
+and suppose
+
+\[
+q:=\limsup_{j\to\infty}
+\frac{\log X_{j+1}}{\log X_j}<\infty.
+\tag{1}
+\]
+
+Fix `alpha>=0`. If, for every `epsilon>0`,
+
+\[
+D_M(X_j)\ll_\varepsilon X_j^{\alpha+\varepsilon}
+\qquad(j\to\infty),
+\tag{2}
+\]
+
+uniformly along the checkpoint sequence, then for every `delta>0`,
+
+\[
+\boxed{
+D_M(x)
+\ll_\delta
+x^{\,q(\alpha+1)-1+\delta}
+\qquad(x\to\infty).
+}
+\tag{3}
+\]
+
+Consequently, whenever
+
+\[
+\beta:=q(\alpha+1)-1<1,
+\tag{4}
+\]
+
+`MC-115` gives the zero-free half-plane
+
+\[
+\boxed{
+\zeta(s)\ne0
+\qquad
+\left(\operatorname{Re}s>\beta\right).
+}
+\tag{5}
+\]
+
+The exponent-preserving case is especially useful. If
+
+\[
+\frac{\log X_{j+1}}{\log X_j}\longrightarrow1,
+\tag{6}
+\]
+
+then `(3)` has the same exponent `alpha` as the sampled bound. Thus for **any fixed checkpoint sequence** satisfying `(6)`,
+
+\[
+\boxed{
+\mathrm{RH}
+\iff
+D_M(X_j)=O_\varepsilon(X_j^{1/2+\varepsilon})
+\quad\text{for every }\varepsilon>0.
+}
+\tag{7}
+\]
+
+Condition `(6)` allows multiplicative gaps tending to infinity. For example,
+
+\[
+X_j=e^{j^2}
+\]
+
+has
+
+\[
+\frac{\log X_{j+1}}{\log X_j}
+=\frac{(j+1)^2}{j^2}\to1,
+\qquad
+\frac{X_{j+1}}{X_j}=e^{2j+1}\to\infty.
+\]
+
+Hence the RH-complete mean-absolute target need only be established at about `sqrt(log X)` such checkpoints up to size `X`; bounded multiplicative gaps are far from necessary.
+
+This does **not** produce the checkpoint estimate `(2)`. It only shows that a source-natural local, bilinear, or multiscale mechanism may aim for the RH-scale mean-absolute bound on a subpower-dense scale sequence rather than uniformly at every cutoff. The hard arithmetic production problem from the accepted mean-absolute clue remains intact.
+
+## 1. Monotone interpolation gives the exact scale-loss budget
+
+Fix `delta>0`. From `(1)`, for every `eta>0` and all sufficiently large `j`,
+
+\[
+X_{j+1}\le X_j^{q+\eta}.
+\tag{8}
+\]
+
+Take any `x` with
+
+\[
+X_j\le x\le X_{j+1}.
+\]
+
+Because `A` is nondecreasing,
+
+\[
+A(x)\le A(X_{j+1}).
+\tag{9}
+\]
+
+Apply `(2)` at the **next** checkpoint:
+
+\[
+A(X_{j+1})
+=X_{j+1}D_M(X_{j+1})
+\ll_\varepsilon
+X_{j+1}^{\alpha+1+\varepsilon}.
+\tag{10}
+\]
+
+Equations `(8)`--`(10)` and `X_j<=x` give
+
+\[
+\begin{aligned}
+D_M(x)
+&=\frac{A(x)}x\\
+&\ll_\varepsilon
+\frac{X_{j+1}^{\alpha+1+\varepsilon}}x\\
+&\le
+x^{(q+\eta)(\alpha+1+\varepsilon)-1}.
+\end{aligned}
+\tag{11}
+\]
+
+Choose `eta` and `epsilon` sufficiently small that
+
+\[
+(q+\eta)(\alpha+1+\varepsilon)-1
+\le
+q(\alpha+1)-1+\delta.
+\]
+
+This proves `(3)`.
+
+The proof uses no regularity of `M` beyond the positivity of `|M|` inside `A`. In particular, it does not reconstruct pointwise values of `M`, control sparse spikes, or assume cancellation between checkpoints. The next checkpoint simply caps the total absolute mass that could have accumulated before it.
+
+## 2. Zero-free consequence and the RH-complete sparse criterion
+
+Assume `(4)`. Equation `(3)` has the epsilon-family form required by `MC-115`, so the Mellin transform
+
+\[
+s\int_1^\infty M(x)x^{-s-1}\,dx
+\]
+
+converges absolutely and continues `1/\zeta(s)` throughout every half-plane strictly to the right of `beta`. Therefore `(5)` follows directly from the already-persisted Mellin argument; no new zero theorem enters here.
+
+For `(7)`, take `alpha=1/2` and `q=1`. The sampled estimate implies
+
+\[
+D_M(x)=O_\delta(x^{1/2+\delta})
+\]
+
+for every `delta>0`, and `MC-115` then implies RH. Conversely RH gives the classical pointwise Mertens bound
+
+\[
+M(x)=O_\varepsilon(x^{1/2+\varepsilon}),
+\]
+
+hence the corresponding mean-absolute bound at every `x`, and therefore at every checkpoint.
+
+So the sparsification occurs entirely in the **scale variable**. It is not a weakened exponent and not a density-one or liminf statement: every sufficiently large member of the chosen checkpoint sequence must satisfy the bound, but the checkpoints themselves may have unbounded multiplicative gaps as long as those gaps are only `X_j^{o(1)}`.
+
+## 3. Fixed power lacunarity pays an explicit exponent penalty
+
+The parameter `q` in `(1)` quantifies what the same monotone argument loses when checkpoints are genuinely power-lacunary. If
+
+\[
+X_{j+1}=X_j^{q+o(1)}
+\qquad(q>1),
+\]
+
+then a sampled exponent `alpha` transfers only to
+
+\[
+\beta=q(\alpha+1)-1.
+\tag{12}
+\]
+
+At the RH-scale sample exponent `alpha=1/2`,
+
+\[
+\beta=\frac{3q}{2}-1.
+\tag{13}
+\]
+
+Thus the exponent is preserved only as `q->1`. In particular, a sequence generated by repeated squaring has `q=2`; an RH-scale estimate for `D_M` known **only** at those checkpoints gives no useful RH conclusion through this interpolation mechanism.
+
+This is a falsification boundary, not an impossibility theorem. Additional source-specific information between the checkpoints could do better. What `(12)` rules out is silently treating an estimate on power-lacunary scales as though monotonicity alone filled the gaps at no polynomial cost.
+
+## Prior art and novelty boundary
+
+`MC-115` established the direct mean-absolute Mellin criterion and already noted that checkpoint control needs an interpolation argument when the sampled scales are sparse. The present result supplies that missing quantitative interpolation and shows that bounded multiplicative gaps are much stronger than necessary.
+
+The mechanism is elementary monotone interpolation followed by the classical Abel/Mellin continuation already audited in `MC-115`. A targeted search for a separately named sparse-checkpoint Mertens criterion did not identify a canonical theorem that would justify treating `(3)` or `(7)` as a new literature result. Absence of such a label is not evidence of novelty, and **no novelty claim is made**. The durable contribution is the exact scale-loss budget needed by this research line.
+
+The recent Fourier/Laplace smoothing literature does not change this conclusion. Local Fourier moment criteria recover the endpoint through bandwidth-based point-value inequalities, while the present statement concerns only how a positive cumulative first absolute moment can be sampled in the physical scale variable. It introduces no new smoothing transform.
+
+## Boundaries and falsification tests
+
+- The interpolation uses monotonicity of `A(X)=int_1^X |M(u)|du`. It does not apply to the signed quantity `M(X)` itself, whose checkpoint values can be small while intermediate values oscillate.
+- The hypothesis is uniform along all sufficiently large checkpoints. A bound on merely infinitely many favorable checkpoints or a liminf does not imply `(3)`.
+- Condition `(6)` is sufficient for exponent preservation by this argument, not claimed necessary once additional arithmetic information is available.
+- For `q>1`, equation `(12)` is the loss produced by this monotone bridge. The finding does not assert that a stronger source-specific interpolation theorem is impossible.
+- No off-critical zero data, contour shift, or zero-free region is inserted into the checkpoint hypothesis. Zero exclusion enters only downstream through the independently persisted `MC-115` Mellin theorem.
+- The result lowers the required **scale coverage**, not the required cancellation exponent. Proving `(2)` with `alpha=1/2` on any qualifying checkpoint sequence remains an RH-strength arithmetic task after the interpolation is accounted for.
+
+## Consequence for the active mean-absolute clue
+
+The accepted local-to-mean-absolute program can now target a strictly smaller output surface. It is enough to derive
+
+\[
+D_M(X_j)=O_\varepsilon(X_j^{1/2+\varepsilon})
+\]
+
+on one predetermined sequence with
+
+\[
+X_{j+1}=X_j^{1+o(1)}.
+\]
+
+This may matter for source-natural multiscale arguments that produce estimates only at selected resolutions. They do not need to solve a separate interpolation problem at every real cutoff if their scale mesh is subpower-dense.
+
+Conversely, any proposed recursive scheme whose only controlled checkpoints satisfy a fixed power gap `q>1` must explicitly pay the exponent loss `(12)` or supply additional signed/source information to bridge the gaps. This gives the active clue a quantitative scale-coverage gate in addition to its existing information-content and polynomial-margin gates.
