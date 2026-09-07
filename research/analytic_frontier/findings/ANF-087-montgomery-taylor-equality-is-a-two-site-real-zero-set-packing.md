@@ -165,20 +165,21 @@ A_U=2D_U.
 \tag{16}
 \]
 
-The stronger estimate used inside Lamzouri's proof is
+Keeping the simple-real projection term that is discarded in Lamzouri's lower bound, Parseval on `U` gives the exact identity
 
 \[
 \begin{aligned}
 A_U
-&=\sum_{x\in R_2}m_x
-+2\sum_{z}m_z
+={}&\sum_{x\in R_1}\|P_Uf_x\|_2^2
++\sum_{x\in R_2}m_x\\
+&+2\sum_{z}m_z
 \left(\|g_z\|_2^2-\|P_Uh_z\|_2^2\right)\\
-&\ge
+\ge{}&
 \sum_{x\in R_2}m_x
 +2\sum_zm_z
 \left(\|g_z\|_2^2-\|h_z\|_2^2\right)\\
-&=\sum_{x\in R_2}m_x+2\sum_zm_z\\
-&\ge2(r+k)\ge2D_U.
+={}&\sum_{x\in R_2}m_x+2\sum_zm_z\\
+\ge{}&2(r+k)\ge2D_U.
 \end{aligned}
 \tag{17}
 \]
