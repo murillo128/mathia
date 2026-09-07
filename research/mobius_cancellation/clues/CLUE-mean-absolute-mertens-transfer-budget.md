@@ -7,78 +7,71 @@ target_line: mobius_cancellation
 based_on:
   - research/mobius_cancellation/findings/MC-001-local-to-global-exceptional-mass-barrier.md
   - research/mobius_cancellation/findings/MC-006-averaged-chowla-vdc-logarithmic-ceiling.md
-  - research/mobius_cancellation/findings/MC-009-pintz-mean-absolute-zero-boundary.md
-  - research/mobius_cancellation/findings/MC-013-discrete-tanaka-l1-feedback-carrier.md
-  - research/mobius_cancellation/findings/MC-019-path-energy-coarse-riesz-rh-equivalence.md
-  - research/mobius_cancellation/findings/MC-044-growing-riesz-endpoint-visibility-delay.md
   - research/mobius_cancellation/findings/MC-115-mean-absolute-mertens-mellin-zero-free.md
-  - research/mobius_cancellation/findings/MC-116-subpower-dense-mean-absolute-checkpoints.md
   - research/mobius_cancellation/findings/MC-117-fractional-mertens-moment-transfer-ceiling.md
   - research/mobius_cancellation/findings/MC-118-balanced-prime-block-multiplicative-fractional-moment-barrier.md
   - research/mobius_cancellation/findings/MC-119-uniform-polynomial-window-fractional-moment-barrier.md
   - research/mobius_cancellation/findings/MC-120-fixed-function-lacunary-fractional-moment-barrier.md
   - research/mobius_cancellation/findings/MC-121-arbitrary-checkpoint-mean-absolute-rh-criterion.md
+  - research/mobius_cancellation/findings/MC-122-weighted-amplitude-feedback-quadratic-energy-collapse.md
+  - research/mobius_cancellation/findings/MC-123-state-local-feedback-tree-decomposition.md
+  - research/mobius_cancellation/findings/MC-124-fixed-memory-sign-odd-logarithmic-invisibility.md
+  - research/mobius_cancellation/findings/MC-125-local-factor-histogram-square-root-memory-barrier.md
 ---
 
-# Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
+# Can a source-natural statistic transfer polynomially to mean-absolute Mertens scale?
 
 ## Observation
-
-The current local and averaged inputs remain below the polynomial information budget needed for RH-scale Möbius cancellation. `MC-001` isolates the exceptional-mass loss in almost-all short intervals, while `MC-006` shows that the available averaged two-point Chowla input yields only logarithmic saving through the audited black-box van der Corput route.
 
 The useful endpoint is
 
 `D_M(X)=X^(-1) integral_1^X |M(x)| dx`.
 
-`MC-115` proves directly that an all-scale bound `D_M(X)=O_epsilon(X^(1/2+epsilon))` is equivalent to RH through absolute Mellin convergence. `MC-116` then showed that monotonicity can recover such an all-scale bound from a subpower-dense checkpoint sequence.
-
-`MC-121` materially shrinks the output requirement again. Pintz's 1987 Theorem A gives, for every off-critical zero `rho=beta+i gamma`,
-
-`D_M(Y) > Y^beta/gamma^5` for every `Y>gamma^5`.
-
-Therefore RH is already equivalent to the square-root-plus-epsilon bound for `D_M` along **any unbounded checkpoint sequence, with no density condition at all**. The subpower-density gate from `MC-116` belongs only to its monotone interpolation mechanism; it is not a gate for RH once Pintz's established zero-to-mean lower bound is used. Equivalently, RH is characterized by `liminf log D_M(Y)/log Y <= 1/2`.
-
-The source-side obstruction remains severe. `MC-117` proves that fixed fractional moments below `L^1` underweight rare coherent excursions sharply enough to miss the required first moment. `MC-118` shows generic multiplicativity plus exact square-free support does not repair that loss. `MC-119` makes the weak bound uniform through a polynomial scale window and still preserves a super-square-root first-absolute excursion. `MC-120` embeds infinitely many such bad windows in one fixed multiplicative function. Thus the missing ingredient is not endpoint scale density; it is a genuinely Möbius-specific mechanism that recovers first-moment amplitude from weaker source information.
-
-## Research question
-
-Can a source-natural signed local, bilinear, multiplicative, correlation, or multiscale **Möbius-specific** statistic force
+`MC-115` shows that RH-scale control of this first absolute mean is already RH-complete. `MC-121` then removes the final scale-density burden: Pintz's 1987 lower bound implies that
 
 `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))`
 
-on some rigorously produced unbounded sequence `X_j -> infinity`, without first proving a pointwise RH-scale bound for `M`, inserting an RH-equivalent coarse statistic into the hypotheses, or reconstructing Möbius tautologically from its complete prime law?
+for every `epsilon>0` along **any rigorously produced unbounded checkpoint sequence** already excludes every off-critical zero. The unresolved problem is therefore purely source-side: recover the first absolute excursion exponent from information genuinely weaker than an RH-equivalent Mertens observable.
 
-After `MC-117`--`MC-120`, a viable source condition must contain information absent from exact-support multiplicative comparators with balanced prime-block transport. Candidate information therefore has to be genuinely joint or arithmetic: quantitative correlation-plus-multiplicativity, an intermediate prime-local constraint weaker than exact specification, a bilinear identity with sign retained, or another Möbius-specific law that forbids coherent first-moment excursions.
+The obstruction surface has become much sharper. `MC-117`--`MC-120` show that sub-`L^1` information can miss rare coherent excursions even after exact square-free support, multiplicativity, polynomial scale windows, and one fixed multiplicative comparator are imposed. `MC-122` shows that deterministic amplitude weighting is exactly quadratic path energy after the square-free correction. `MC-123` classifies every scalar state-local one-step feedback as a potential plus unoriented occupation. `MC-124` then shows that every fixed-memory globally sign-odd Möbius cylinder observable lies inside the qualitative logarithmic fixed-correlation class.
 
-The downstream burden is now minimal in scale. Once the actual Möbius function satisfies the RH-scale `D_M` estimate on any unbounded sequence, `MC-121` closes RH directly. There is no remaining need to interpolate `D_M` between those output scales.
+`MC-125` closes the simplest growing-memory repair at the representation level. It constructs, for every memory exponent `alpha<1/2`, pairs of bounded-increment words with **identical complete factor histograms through length `N^(alpha+o(1))`** but mean-absolute excursion scales `N^(alpha+o(1))` and `N^(1-alpha+o(1))`. Thus merely collecting all local frequencies, even with growing sub-square-root memory, does not retain global excursion ordering. The controls are not multiplicative, so the surviving opportunity is precisely to exploit arithmetic/nonlocal structure that excludes this local-cycle-reordering ambiguity.
+
+## Research question
+
+Can a source-natural signed, bilinear, multiplicative, occupation, correlation, ordered-memory, or multiscale **Möbius-specific** statistic force
+
+`D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))`
+
+on some unbounded sequence `X_j -> infinity`, without first proving a pointwise RH-scale bound for `M`, inserting an RH-equivalent coarse statistic into the hypotheses, reconstructing Möbius tautologically from its complete prime law, or reducing the source information to a translation-invariant local histogram that is excursion-blind?
+
+After `MC-122`--`MC-125`, a viable source condition should identify where its information lives beyond fixed potentials, fixed cylinder correlations, and sub-square-root empirical memory. Candidate escapes include quantitatively controlled edge/loop occupation, ordered rather than histogrammed growing memory, prime-label or divisor coupling across distant positions, genuinely multiscale correlations, or another arithmetic law with an explicit polynomial information budget.
 
 ## Why it may matter
 
-Mean-absolute control is weaker than pointwise Mertens control but remains RH-complete. `MC-121` shows it is also extraordinarily sparse in the scale variable: even super-power-lacunary checkpoints suffice. A successful source-to-`D_M` transfer can therefore focus entirely on obtaining the right **amplitude exponent** where its arithmetic structure is strongest, rather than simultaneously solving a scale-coverage problem.
+Mean-absolute control is weaker than pointwise Mertens control but remains RH-complete, and `MC-121` says it may be established on arbitrarily sparse output scales. This allows a source mechanism to focus on the one hard issue that remains: **amplitude recovery**.
 
-This also sharpens what the comparator program must test. `MC-120` used lacunarity to construct one fixed multiplicative countermodel, but that lacunarity no longer protects a proposed theorem about the actual Möbius mean. A comparator only kills a candidate source statistic if it satisfies that statistic at the same claimed source strength while keeping `D_1` too large; it cannot appeal to generic scale-interpolation failure after the source statistic has already transferred to actual `D_M`.
+The newer obstructions also separate two notions that were easy to conflate. More local memory is not automatically more excursion information: `MC-125` shows that the full local empirical law may still forget the order in which closed local cycles are arranged. A successful route should therefore make explicit which arithmetic relation prevents the bad reorderings rather than assuming that enough local correlations must eventually recover the path.
 
 ## Decisive test
 
-Fix an explicit source-natural statistic and prove one of two outcomes:
+Fix one explicit source-natural statistic and prove one of two outcomes:
 
-1. derive a source-compatible implication from a quantitatively polynomial hypothesis on that statistic to `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))` on **any explicitly controlled unbounded sequence**; or
-2. construct a single fixed-function or equally source-faithful matched control satisfying the proposed source hypothesis at the claimed scales while its first-absolute partial-sum mean retains exponent `>1/2` there.
+1. derive a quantitatively polynomial implication from that statistic to `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))` on an explicitly controlled unbounded sequence; or
+2. construct a source-faithful matched control satisfying the proposed source hypothesis at the claimed strength while its first-absolute partial-sum mean retains exponent `>1/2`.
 
-A candidate fails if its input already contains an RH-equivalent fixed Riesz/coarse mode, if smoothing makes the controlled quantity normalization-vacuous, if inversion reintroduces the original partial-sum burden, if triangle inequality spends the polynomial gain on exceptional mass, if a sub-`L^1` compression discards rare coherent amplitude without a source-specific recovery theorem, if it relies only on generic multiplicativity or exact square-free support, or if exact agreement with `mu(p)=-1` at every prime is used as the supposed intermediate condition.
+Kill a candidate if its input already contains an RH-equivalent Mertens/Riesz/coarse mode, if inversion reintroduces the original partial-sum burden, if smoothing or a sub-`L^1` norm discards rare coherent amplitude without a recovery theorem, if deterministic weighting collapses by `MC-122`, if it remains state-local under `MC-123`, if it is only a fixed sign-odd cylinder under `MC-124`, or if its entire source data factor through a sub-square-root local factor histogram without an additional arithmetic constraint that rules out the `MC-125` cycle-reordering controls.
 
-Scale density of the **final `D_M` output** is no longer a failure criterion. If a candidate genuinely proves the RH-scale mean-absolute estimate for actual Möbius on an arbitrarily sparse unbounded sequence, `MC-121` says that is already enough.
+Scale density of the final `D_M` output is not a failure criterion. If actual Möbius satisfies the target estimate on any unbounded sequence, `MC-121` closes RH.
 
 ## Evidence boundary
 
-`MC-121` is a literature-backed target reduction based on Pintz's 1987 zero-to-mean theorem; it is not a source-natural cancellation mechanism. It does not make the square-root estimate easier in exponent and does not transfer any existing local/correlation theorem to `D_M`.
+`MC-121` is a target reduction, not a source-natural cancellation mechanism. `MC-117`--`MC-120` are multiplicative matched-control obstructions but do not preserve all quantitative Möbius correlation information. `MC-122`--`MC-124` close broad local feedback classes without controlling the surviving nonlocal information.
 
-`MC-116` remains valid as an interpolation theorem and still quantifies what sampled mean-absolute information implies at intermediate physical scales without invoking the Pintz zero theorem. Its subpower-density condition is simply no longer necessary for the narrower goal of proving RH.
+`MC-125` is deliberately generic: its binary words do not preserve Möbius multiplicativity, square-free support by integer position, prime values, or divisor relations. It therefore does **not** rule out a theorem combining local statistics with genuine arithmetic structure. Its contribution is to remove “complete local frequency information with growing sub-square-root memory” as a sufficient carrier by itself.
 
-`MC-117`--`MC-120` remain generic/comparator obstructions. Their constructions do not preserve all quantitative Möbius correlation information or the exact prime law, and they do not inherit Pintz's zeta-specific lower bound. They therefore do not rule out a theorem using genuinely Möbius-specific joint structure.
-
-The stronger 2026 Pintz claims in `MC-009` about the full limiting logarithmic exponent and terminal-window maxima remain audit-sensitive. `MC-121` does not depend on them; its scale reduction comes from the established 1987 theorem.
+No polynomial source-to-`D_M` transfer is currently established by these findings. The clue remains a research question rather than evidence.
 
 ## Research disposition
 
-**Accepted, narrowed through `MC-121`.** The active residual is now a pure information-recovery problem rather than an information-plus-scale-coverage problem. A surviving route must preserve enough signed Möbius-specific structure to upgrade weaker local, bilinear, multiplicative, or correlation control to the first absolute mean at square-root exponent. It may do so on any unbounded sequence of output scales. The clue remains accepted rather than resolved because no such polynomial source-to-`D_M` transfer is currently established.
+**Accepted, narrowed through `MC-121`--`MC-125`.** The active residual is now an order-sensitive arithmetic information-recovery problem. A surviving route must preserve enough Möbius-specific nonlocal or multiplicative structure to recover first-absolute excursion amplitude; increasing local memory or enriching a translation-invariant cylinder vocabulary alone is not enough.
