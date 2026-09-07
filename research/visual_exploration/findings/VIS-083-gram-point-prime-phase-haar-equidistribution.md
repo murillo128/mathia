@@ -20,9 +20,9 @@ converges to the Haar average of `F` on `T^r`.
 
 Therefore Gram-point sampling, although its anchor is defined independently through the gamma/theta factor, does **not** change the asymptotic population law of any observable depending continuously on a fixed finite set of prime phases. At this level it is reproduced exactly by the shared-phase Haar/random-initial-phase control already used in `VIS-071`.
 
-**Evidence/status:** `CLASSICAL-UNIFORM-DISTRIBUTION COROLLARY + EXACT-DERIVED + NEGATIVE/OBSTRUCTION + NO-NOVELTY-CLAIM`.
+**Evidence/status:** `LITERATURE+DERIVED + CLASSICAL-UNIFORM-DISTRIBUTION + NEGATIVE/OBSTRUCTION + NO-NOVELTY-CLAIM`.
 
-No quantitative discrepancy rate, short-block statement, growing-prime-support theorem, prime/zero independence theorem, or RH consequence is claimed.
+The prime-phase equidistribution itself is established prior art in the Gram-point discrete-universality literature; the derivation below records the elementary finite-dimensional specialization and its visual-control consequence. No quantitative discrepancy rate, short-block statement, growing-prime-support theorem, prime/zero independence theorem, or RH consequence is claimed.
 
 ## 1. The Gram inverse has the Fejér scale
 
@@ -104,11 +104,11 @@ This is an information boundary, not a statement that Gram points are useless. A
 
 ## Prior art and novelty assessment
 
-Uniform-distribution criteria of Fejér/van der Corput and Weyl's multidimensional criterion are classical; see, for example, L. Kuipers and H. Niederreiter, *Uniform Distribution of Sequences* (Wiley, 1974). The derivative criterion used above is the standard theorem that a differentiable `g` with eventually monotone `g'(x)->0` and `x|g'(x)|->infinity` produces a uniformly distributed sequence `g(n) mod 1`.
+Uniform-distribution criteria of Fejér/van der Corput and Weyl's criterion are classical; see, for example, L. Kuipers and H. Niederreiter, *Uniform Distribution of Sequences* (Wiley, 1974). The derivative criterion used above is the standard theorem that a differentiable `g` with eventually monotone `g'(x)->0` and `x|g'(x)|->infinity` produces a uniformly distributed sequence `g(n) mod 1`.
 
-Gram-point shifts are also established prior art in discrete universality. M. Korolev and A. Laurinčikas, **A new application of the Gram points**, *Aequationes Mathematicae* 93 (2019), 859–873, DOI `10.1007/s00010-019-00647-8`, studies zeta shifts along Gram points. A. Laurinčikas, **Joint Discrete Approximation of Analytic Functions by Shifts of the Riemann Zeta-Function Twisted by Gram Points**, *Mathematics* 11:3 (2023), 565, DOI `10.3390/math11030565`, likewise uses Gram-point sequences in a discrete weak-convergence/universality setting.
+More decisively, A. Laurinčikas, **Joint Discrete Approximation of Analytic Functions by Shifts of the Riemann Zeta-Function Twisted by Gram Points**, *Mathematics* 11:3 (2023), 565, DOI `10.3390/math11030565`, directly introduces empirical measures of the prime-phase coordinates `p^(-i t_k^alpha)` on the infinite prime torus and proves the weak-convergence input needed for its Gram-point universality theorem. Its uniform-distribution section states the Weyl criterion and the same monotone-derivative sufficient condition; the case `alpha=1` contains the fixed-prime phase law used here. Earlier Gram-point discrete-universality work includes M. Korolev and A. Laurinčikas, **A new application of the Gram points**, *Aequationes Mathematicae* 93 (2019), 859–873, DOI `10.1007/s00010-019-00647-8`.
 
-Accordingly, no new equidistribution theorem is claimed. The Mathia-specific contribution is the explicit **visual-control consequence**: a Gram-point anchor must not be counted as an independent fixed-finite-prime population channel against the shared-phase Haar null.
+Thus the displayed torus-equidistribution claim is not a new theorem. The durable Mathia result is its **visual-control specialization**: Gram-point anchoring must not be counted as an independent fixed-finite-prime population channel against the shared-phase Haar null.
 
 ## Boundary and falsification
 
@@ -116,7 +116,7 @@ The proof fixes `r` and the primes before `n -> infinity`. It gives no rate unif
 
 The conclusion applies to continuous observables of those fixed prime phases. It does not erase information carried by `theta(t_n)` itself, Gram occupancy, `Z(t_n)` magnitude/derivatives, nearby zero geometry, or a jointly defined prime-plus-zero observable unless that additional coordinate is shown to be a deterministic function of the admitted torus data.
 
-Falsify the argument by breaking one of its exact steps: the eventual inverse-derivative asymptotics for the Gram function, the Fejér uniform-distribution criterion, multiplicative independence of the selected primes, or the multidimensional Weyl reduction.
+Falsify the argument by breaking one of its exact steps: the eventual inverse-derivative asymptotics for the Gram function, the uniform-distribution criterion, multiplicative independence of the selected primes, or the multidimensional Weyl reduction. A source-level falsification would require showing that the cited Gram-point prime-phase weak-convergence result has materially different hypotheses from the `alpha=1`, fixed-prime specialization used here.
 
 ## Visual consequence
 
@@ -124,4 +124,4 @@ No canonical PNG is retained. A finite-height torus scatter would only illustrat
 
 ## Research consequence
 
-The accepted `CLUE-zeta-prime-phase-recursive-geometry` should be narrowed again: **Gram points are closed as a positive external anchor for fixed-finite-prime population statistics**. A surviving externally anchored route must either use an anchor whose induced prime-phase population is not already asymptotically Haar, make a genuinely quantitative finite-window/short-block claim, allow support to grow under a separately justified control, or include an independently informative coordinate rather than only the same finite prime torus sampled at different times.
+The accepted `CLUE-zeta-prime-phase-recursive-geometry` should remain narrowed as published: **Gram points are closed as a positive external anchor for fixed-finite-prime population statistics**. A surviving externally anchored route must either use an anchor whose induced prime-phase population is not already asymptotically Haar, make a genuinely quantitative finite-window/short-block claim, allow support to grow under a separately justified control, or include an independently informative coordinate rather than only the same finite prime torus sampled at different times.
