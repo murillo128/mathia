@@ -402,7 +402,7 @@ Its contribution to `(21)` is therefore
 Since
 
 \[
-1-rac{1+e^{-q\sigma\delta}}2
+1-\frac{1+e^{-q\sigma\delta}}2
 \le
 \frac{q\sigma\delta}{2}
 \tag{38}
@@ -443,7 +443,7 @@ Finally,
 \[
 2\sum_{k\ge2q}\frac{r^k}{k}
 =O\!\left(\frac{r^{2q}}q\right)
-=o\!left(\frac{r^q}q\right).
+=o\!\left(\frac{r^q}q\right).
 \tag{42}
 \]
 
