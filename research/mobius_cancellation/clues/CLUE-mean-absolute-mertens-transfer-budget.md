@@ -20,6 +20,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-126-finite-additive-state-feedback-endpoint-collapse.md
   - research/mobius_cancellation/findings/MC-127-growing-modular-transition-type-excursion-blindness.md
   - research/mobius_cancellation/findings/MC-128-sub-square-root-state-time-binning-excursion-blindness.md
+  - research/mobius_cancellation/findings/MC-129-joint-local-binned-modular-excursion-blindness.md
 ---
 
 # Can a source-natural statistic transfer polynomially to mean-absolute Mertens scale?
@@ -30,63 +31,45 @@ The useful endpoint is
 
 `D_M(X)=X^(-1) integral_1^X |M(x)| dx`.
 
-`MC-115` shows that RH-scale control of this first absolute mean is already RH-complete. `MC-121` then removes the final scale-density burden: Pintz's 1987 lower bound implies that
+`MC-115` shows that RH-scale control of this first absolute mean is RH-complete, while `MC-121` removes the final scale-density burden: such a bound for the **actual Möbius function** along any rigorously produced unbounded checkpoint sequence already excludes every off-critical zero. The unresolved problem is therefore source-side amplitude recovery, not endpoint interpolation.
 
-`D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))`
+The current obstruction surface rules out several increasingly rich but still order-forgetting summaries. `MC-117`--`MC-120` show that sub-`L^1` information can miss rare coherent excursions even with multiplicative controls. `MC-122`--`MC-124` close deterministic amplitude feedback, scalar state-local feedback, and fixed-memory sign-odd cylinder information. `MC-125`--`MC-128` then show that growing local histograms, additive modular state, complete modular transition types, and coarse time localization can all forget macroscopic lift order.
 
-for every `epsilon>0` along **any rigorously produced unbounded checkpoint sequence** already excludes every off-critical zero. The unresolved problem is therefore purely source-side: recover the first absolute excursion exponent from information genuinely weaker than an RH-equivalent Mertens observable.
-
-The obstruction surface has become much sharper. `MC-117`--`MC-120` show that sub-`L^1` information can miss rare coherent excursions even after exact square-free support, multiplicativity, polynomial scale windows, and one fixed multiplicative comparator are imposed. `MC-122` shows that deterministic amplitude weighting is exactly quadratic path energy after the square-free correction. `MC-123` classifies every scalar state-local one-step feedback as a potential plus unoriented occupation. `MC-124` then shows that every fixed-memory globally sign-odd Möbius cylinder observable lies inside the qualitative logarithmic fixed-correlation class.
-
-`MC-125` closes the simplest growing-memory repair at the representation level. It constructs, for every memory exponent `alpha<1/2`, pairs of bounded-increment words with **identical complete factor histograms through length `N^(alpha+o(1))`** but mean-absolute excursion scales `N^(alpha+o(1))` and `N^(1-alpha+o(1))`. Thus merely collecting all local frequencies, even with growing sub-square-root memory, does not retain global excursion ordering. The controls are not multiplicative, so the surviving opportunity is precisely to exploit arithmetic/nonlocal structure that excludes this local-cycle-reordering ambiguity.
-
-`MC-126` closes another superficially nonlocal repair: a fixed finite persistent state driven only by cumulative Möbius increments is a finite additive cycle. Every one-step observable on that state splits into a bounded periodic potential, one harmonic circulation proportional to `mu(n)`, and reversal-even transition/loop occupation. The unweighted harmonic contribution is therefore just a constant multiple of `M(N)`; deterministic weighting exposes an explicit weighted functional of the original Mertens path. Fixed modular memory such as `M mod q` can retain occupation information, but it does not create a new oriented excursion carrier.
-
-`MC-127` shows that simply letting the modular accumulator grow does not repair the occupation escape either. For every `q,m`, two zero-endpoint `+/-1` paths can have **identical counts of every directed transition `(S_{n-1} mod q, increment_n)`** while their first-absolute means are exactly `N/4` and `q/2`. Thus a polynomially growing state together with its complete aggregate first-order transition occupation can forget macroscopic excursion order.
-
-`MC-128` now quantifies how much coarse temporal ordering still fails. Even if the interval is split into `b` ordered time bins and the **complete modular transition histogram is retained separately inside every bin**, matched zero-endpoint paths can have `D_1=N/(4b)` and `D_1=q/2`. Hence when both the modulus `q` and the number of temporal bins `b` are sub-square-root, one binned state-time type can still contain representatives on opposite sides of square-root excursion scale. Merely attaching a coarse time label to each modular transition therefore does not recover the missing lift order.
+`MC-129` closes the simplest attempt to repair those failures by stacking the summaries. It gives exact bounded-increment controls that, **inside every coarse time bin**, have the same complete factor histogram through memory `k` and the same complete directed transition histogram modulo `q`, yet have first-absolute excursion means on opposite sides of square-root scale throughout an explicit joint sub-square-root regime. The remaining opportunity is therefore not “more coordinates of the same two quotients”; it must use information that couples or escapes them.
 
 ## Research question
 
-Can a source-natural signed, bilinear, multiplicative, occupation, correlation, fine-order, or multiscale **Möbius-specific** statistic force
+Can a source-natural **Möbius-specific** statistic force
 
 `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))`
 
-on some unbounded sequence `X_j -> infinity`, without first proving a pointwise RH-scale bound for `M`, inserting an RH-equivalent coarse statistic into the hypotheses, reconstructing Möbius tautologically from its complete prime law, or reducing the source information to a translation-invariant local histogram or coarse additive state-time transition type that is excursion-blind?
+on some controlled unbounded sequence `X_j -> infinity` without first proving an RH-equivalent Mertens bound, reconstructing Möbius tautologically from its complete prime law, or factoring through the excursion-blind local/state summaries already ruled out?
 
-After `MC-122`--`MC-128`, a viable source condition should identify where its information lives beyond fixed potentials, fixed cylinder correlations, sub-square-root empirical memory, aggregate additive-state transition occupations, and sub-square-root temporal binning of sub-square-root modular state. Candidate escapes include genuinely fine ordered occupation, prime-label or divisor coupling across distant positions, cross-scale/noncommutative correlations, non-additive persistent state, or another arithmetic law with an explicit polynomial information budget.
+After `MC-129`, especially interesting escapes are a genuine cross-coupling between local arithmetic pattern and persistent state, ordered or noncommutative cross-scale information, non-additive state, prime/divisor-labelled long-range relations, or another arithmetic law whose information budget can be bounded explicitly.
 
 ## Why it may matter
 
-Mean-absolute control is weaker than pointwise Mertens control but remains RH-complete, and `MC-121` says it may be established on arbitrarily sparse output scales. This allows a source mechanism to focus on the one hard issue that remains: **amplitude recovery**.
+The endpoint side is now unusually cheap: `MC-121` says the desired first-absolute bound need only be produced on an unbounded checkpoint sequence. That concentrates the research burden on one concrete question: **what source information retains macroscopic excursion amplitude?**
 
-The newer obstructions separate several notions that were easy to conflate. More local memory is not automatically more excursion information: `MC-125` shows that the full local empirical law may still forget the order in which closed local cycles are arranged. Persistent state is not automatically better: `MC-126` shows that fixed additive state remembers only a periodic position whose unique oriented circulation lifts to the ordinary endpoint; `MC-127` shows that increasing the number of modular states and retaining their full directed occupation histogram still does not recover integer winding order; and `MC-128` shows that coarse temporal localization of those histograms still leaves within-bin cycle order invisible. A successful route should therefore identify an arithmetic relation that retains macroscopic excursion amplitude rather than assuming that progressively richer histogram bookkeeping must eventually recover the path.
+The negative findings also make the next test sharper. A candidate cannot justify itself merely by combining local memory, modular occupation, and coarse time labels; `MC-129` matches all of those simultaneously. Any positive mechanism should identify the exact extra relation that forbids the common-cycle reorderings used by the matched controls, preferably through arithmetic structure that the controls deliberately lack.
 
 ## Decisive test
 
 Fix one explicit source-natural statistic and prove one of two outcomes:
 
-1. derive a quantitatively polynomial implication from that statistic to `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))` on an explicitly controlled unbounded sequence; or
+1. derive a quantitative implication from that statistic to `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))` on an explicitly controlled unbounded sequence for the actual Möbius function; or
 2. construct a source-faithful matched control satisfying the proposed source hypothesis at the claimed strength while its first-absolute partial-sum mean retains exponent `>1/2`.
 
-Kill a candidate if its input already contains an RH-equivalent Mertens/Riesz/coarse mode, if inversion reintroduces the original partial-sum burden, if smoothing or a sub-`L^1` norm discards rare coherent amplitude without a recovery theorem, if deterministic weighting collapses by `MC-122`, if it remains scalar state-local under `MC-123`, if it is only a fixed sign-odd cylinder under `MC-124`, if its entire source data factor through a sub-square-root local factor histogram without an additional arithmetic constraint that rules out the `MC-125` cycle-reordering controls, if its persistent oriented state is only a fixed additive finite accumulator covered by `MC-126`, if its growing additive-state information factors only through the aggregate directed transition type covered by `MC-127`, or if its only additional ordering information is a sub-square-root number of coarse time bins applied to a sub-square-root modular state as in `MC-128`.
+Kill a candidate if its input already contains an RH-equivalent Mertens/Riesz/coarse mode, if inversion reintroduces the original partial-sum burden, if its information factors through the local-histogram, additive-state, modular-transition, time-binned, or **separately stacked local-plus-modular** summaries covered by `MC-122`--`MC-129`, or if its apparent gain disappears after the exceptional-set, smoothing, weighting, and scale losses are restored.
 
-Scale density of the final `D_M` output is not a failure criterion. If actual Möbius satisfies the target estimate on any unbounded sequence, `MC-121` closes RH.
+A candidate survives this particular obstruction only if it uses additional information that `MC-129` does not match, such as the joint cross-tabulation of local pattern with contemporaneous modular/arithmetic state, finer transition order, non-additive memory, or an exact Möbius-specific constraint excluding the matched cycle reorderings.
 
 ## Evidence boundary
 
-`MC-121` is a target reduction, not a source-natural cancellation mechanism. `MC-117`--`MC-120` are multiplicative matched-control obstructions but do not preserve all quantitative Möbius correlation information. `MC-122`--`MC-124` close broad local feedback classes without controlling the surviving nonlocal information.
+`MC-121` is only an endpoint reduction; it supplies no source-natural upper bound. `MC-117`--`MC-129` are obstruction results, and several of their matched controls are generic bounded-increment words rather than multiplicative functions. They therefore do **not** prove that Möbius arithmetic cannot supply the missing relation.
 
-`MC-125` is deliberately generic: its binary words do not preserve Möbius multiplicativity, square-free support by integer position, prime values, or divisor relations. It therefore does **not** rule out a theorem combining local statistics with genuine arithmetic structure. Its contribution is to remove complete local frequency information with growing sub-square-root memory as a sufficient carrier by itself.
-
-`MC-126` is also a representation-level obstruction. It does not rule out growing state, non-additive automata, arithmetic-labelled transitions, multiscale state, or reversal-even occupation estimates. It says only that fixed finite state generated additively from the cumulative Möbius increments has no independent oriented circulation beyond the Mertens endpoint.
-
-`MC-127` remains representation-level as well. Its matched paths preserve the complete aggregate directed modular transition histogram but not Möbius multiplicativity, square-free placement, divisor relations, temporal transition order, or cross-modulus coupling. It therefore does not rule out arithmetic occupation theorems; it rules out treating a growing modular transition histogram by itself as an excursion-complete carrier.
-
-`MC-128` preserves more positional information than `MC-127`: complete directed transition counts are matched separately in every fixed time bin, with matched lifted bin endpoints. It still does not preserve within-bin transition order, arithmetic position labels, multiplicativity, divisor structure, or cross-scale couplings. Its square-root state/time boundary is a control-family obstruction, not a positive sufficiency theorem.
-
-No polynomial source-to-`D_M` transfer is currently established by these findings. The clue remains a research question rather than evidence.
+In particular, `MC-129` matches complete local factor counts and complete modular transition counts **as two separate bin-local summaries**. It does not match the finer cross-coupled tensor recording which local pattern occurs at which modular/arithmetic state, nor does it preserve Möbius multiplicativity, square-free placement, prime values, or divisor relations. Those are genuine remaining escape surfaces, not evidence that any one of them works.
 
 ## Research disposition
 
-**Accepted, narrowed through `MC-121`--`MC-128`.** The active residual is now a genuinely order-sensitive arithmetic information-recovery problem. A surviving route must preserve enough Möbius-specific nonlocal, fine-order, multiplicative, multiscale, non-additive, or otherwise arithmetic structure to recover first-absolute excursion amplitude; sub-square-root local memory, additive modular occupation, and sub-square-root coarse time binning of sub-square-root state are not enough by themselves.
+**Accepted, narrowed through `MC-129`.** The live residual is a source-to-amplitude theorem using genuinely cross-coupled, ordered, non-additive, or arithmetic information that does not factor through the common cycle-order kernel exposed by the current matched controls.
