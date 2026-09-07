@@ -8,22 +8,22 @@ This file holds the current mathematical lines of investigation suggested by the
 
 WI-172--WI-182 show that scalar pressure, finite additive vector storage, low-rank screening, unit-trace activation, and the natural source-proximal correction fail to produce a free extensive coercive gain. Multiplicity, distinct exceptional count, activation, source remainder, and theorem-scale visibility remain separate resources.
 
-## Treat count-saturating bows as a structured Atkinson/B-process arithmetic problem
+## Replace phase-only Atkinson transforms by arithmetic joint cancellation across the shift family
 
 **Linked intuition:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-183--WI-188 force the count-saturating bow to reciprocal frequency `alpha=1/2`, show that its selected principal form is globally subscale, close black-box local mean-value normalization, and reduce the source-specific escape to a signed chirped growing-shift von-Mangoldt covariance at prime length `sqrt(T)`.
+WI-183--WI-191 reduce the count-saturating bow to a von-Mangoldt-weighted deformation of the classical Atkinson transform. The phase/Jacobian geometry is classical and the source-specific difficulty sits in the hyperbolically aggregated shifted-prime coefficient.
 
-WI-189 shows that B-process dualization does not reduce complexity by tuning the original Dirichlet length: the total stationary-alias count over the natural shift family is controlled at scale `U/H^2`. WI-190 then shows why generic almost-all short-interval information is not enough: the entire deterministic stationary locus can fit inside the permitted exceptional population, and the live object is a structured hyperbolic `(h,k)` family rather than a generic pointwise interval.
+WI-192 closes the immediate one-dimensional phase continuation: a second pure B-process is involutive and returns the original logarithmic chirp. WI-193 then identifies the information scale across shifts. At `X=T^(1/2+o(1))`, `H=T^epsilon/log T`, even a hypothetical square-root bound for every individual shifted sum is insufficient after triangle-inequality assembly when `epsilon<1/4`; a joint square-root gain across the shift family would instead cross every fixed positive bow exponent.
 
-WI-191 identifies the geometric transform exactly. After grouping by `n=hk`, the stationary phase is the classical Atkinson phase, the square-root Jacobian is the Atkinson/Jutila amplitude, and the natural dual length is again `U/H^2`. This is a prior-art redirection, not a bound: all source-specific difficulty is pushed into the hyperbolically aggregated shifted-prime coefficient `B_n`.
+WI-194 closes the most immediate phase-only implementation of that joint strategy. The two-variable stationary transform of `A log(n/m)` is self-dual at the bow scale: it returns the same logarithmic-ratio phase on the dual lattice, preserves the diagonal-strip width and central scale, and does not reduce the `asymp XK` active phase-cell count. A bare two-dimensional Poisson/B transform therefore reparametrizes the same oscillation rather than supplying the missing dimensional gain.
 
-The live theorem should therefore control a **von-Mangoldt-weighted deformation of the Atkinson transform**, or exploit another source coupling. Arguments using only the dual phase/Jacobian are operating on classical geometry and must explain what new control they obtain over the arithmetic fiber coefficient.
+The live theorem must use the **arithmetic coefficients jointly**: dispersion, bilinear structure, large sieve, spectral decomposition, an A/differencing step, or another coupled method is relevant only if it gains across the `(h,m)`/hyperbolic family beyond what phase self-duality supplies.
 
-## Distinguish source signal, extractability, activation, visibility, resolution, alias structure, and error correlation
+## Distinguish source signal, extractability, activation, visibility, resolution, alias structure, and cross-shift cancellation
 
-A selected geometry may carry a coherent signal yet be cancelled by its complement, fail to activate under normalization, remain globally invisible, require an arithmetically unresolved local window, or concentrate on a structured alias family invisible to an almost-all theorem. Future inequalities must state which gate they cross and at what scale.
+A selected geometry may carry a coherent signal yet be cancelled by its complement, fail to activate under normalization, remain globally invisible, require an unresolved local window, concentrate on a structured alias family, or merely map self-dually under stationary phase. Future inequalities must state which gate they cross and at what scale.
 
 ## Keep off-line mass, multiplicity, distinct count, activation, visibility, resolution, alias geometry, and cancellation reservoirs separate
 
-None of these quantities may be substituted for another without a proved bridge. The newest Atkinson identification narrows the phase side of the problem but does not replace the shifted-prime coefficient by a divisor coefficient or turn classical short-interval zeta technology into the required source estimate.
+None of these quantities may be substituted for another without a proved bridge. The Atkinson identification and stationary self-duality narrow the phase side but do not replace the shifted-prime coefficient by a divisor coefficient. The quarter-bow barrier further shows that strong one-dimensional estimates can still have the wrong information shape for the required aggregate.

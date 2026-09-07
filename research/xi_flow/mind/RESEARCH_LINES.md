@@ -2,32 +2,32 @@
 
 This file holds the current mathematical questions suggested by the durable Xi-flow intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Extract the actual Xi visible-moment state and control the renormalized continuum-to-grid Volterra defect
+## Extract the actual Xi visible-moment state after source-fixed endpoint subtraction
 
 **Linked intuitions:** `MI-001-collision-safe-coordinates-separate-singularity-from-source-information`, `MI-005-pointwise-selector-control-is-not-time-frequency-coercivity`, `MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow`, `MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy`, `MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global`, `MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility`, and `MI-010-endpoint-renormalization-is-source-fixed-before-discretization`.
 
-XF-081--XF-083 separate unrestricted carrier nonidentifiability from stable real-divisor observation. XF-084--XF-086 replace generic root placement by the destination-visible moment problem: a guarded moment vector with `o(J^3)` resource automatically lies in a fixed positive cone and admits an exact degree-`N` equal-weight real-divisor realization at the Xi node budget.
+XF-087--XF-092 close the deterministic reference side of the continuum-to-grid comparison. The guarded low-mode heat dynamics is exactly the composite-trapezoid Volterra/Burgers discretization; the endpoint pole forces one logarithmic mesh counterterm whose coefficient is source-fixed through positive heat time; and after that frozen subtraction the full Polymath reference quadrature contributes only `o(1)` in the guarded resource.
 
-XF-087 shows that once the first `K` moments are realized, their exact periodic heat evolution is determined by that prefix alone and is exactly the composite-trapezoid frequency discretization of the canonical one-sided Volterra/Burgers equation. XF-088 then resolves the leading singular quadrature mismatch: the Xi endpoint pole `-1/(4 xi)` forces the mesh counterterm `(1/4) log Delta delta_0`; without it the vector-field defect grows like `log(1/Delta)`, while with it the guarded resource contribution is `o(1)` at the declared scales.
+XF-094 removes a further deterministic source floor. At `t=0` the raw Xi/Polymath quotient residual has a linear endpoint term `-xi/3`, which alone produces order-one guarded mass even under perfect sampling. Absorbing this first regular archimedean coefficient into the reference makes the residual `O(xi^2)` and restores `o(1)` source size on the full canonical band. No new singular renormalization is needed.
 
-XF-089 makes that renormalization dynamically stable. A Polymath15 high-line reference carries the complete positive-time degree-`-1` sector with residue `-1/4` for `0<=t<=1/2`, and the actual/reference residual acquires an exact factor of `xi`. The leading logarithmic lattice counterterm is therefore time-independent. The live bridge is now to bound the **lower-order reference-subtracted residual** in the guarded source norm strongly enough for the XF-087 discretization; the simple pole itself and its mesh counterterm are no longer open.
+The live source theorem is now to control the **corrected Xi-specific residual at mesh resolution** strongly enough to justify the visible moment state. The pole and the linear regular endpoint floor are deterministic reference sectors, not open arithmetic burdens.
+
+## Prove mesh-scale Fourier regularity rather than extrapolating from fixed-strip quotient accuracy
+
+XF-093 gives an exact matched obstruction to naive point sampling. A zero-free entire quotient can approach one on every fixed strip at an arbitrarily prescribed rate, together with any fixed number of derivatives, while one guarded mesh sample of the transformed residual stays macroscopically nonzero. Fixed-strip relative accuracy therefore does not imply the discrete source estimate.
+
+A sufficient route is the cellwise `H^1` sampling inequality isolated in XF-093, or an Xi-specific effective-bandwidth/exponential-type theorem that implies comparable anti-concentration. An alternative discretization is also admissible if its state is stable under the continuum norm actually available. The decisive test is mesh-scale spectral control, not another fixed-order strip estimate.
 
 ## Keep source extraction, renormalized continuum-to-grid consistency, and positive-transition coercivity separate
 
-Static equal-weight feasibility and low-mode periodic heat closure are established conditional on the target moment state. The leading endpoint singularity is also classified and renormalizable with a source-fixed counterterm. None of these proves that the actual Xi/reference residual yields the required guarded moment resource, that all lower-order sampling errors are negligible, or that a hypothetical positive-`Lambda` transition creates order-one guarded mass.
+Static equal-weight feasibility, low-mode periodic heat closure, the pole counterterm, full reference quadrature, and the first regular endpoint correction are distinct from the two remaining burdens: sampling the corrected Xi residual and proving that a hypothetical positive-`Lambda` transition creates order-one mass in the same guarded quotient.
 
-A useful theorem should state exactly which of these remaining gates it crosses. Generic root matching, high-mode completion, periodic heat compatibility, and fresh re-estimation of the `1/xi` pole at each heat time are no longer independent burdens in the live band.
+A useful theorem should state exactly which gate it crosses. Generic root matching, high-mode completion, periodic heat compatibility, fresh re-estimation of the pole, and the raw linear endpoint floor are no longer independent burdens in the live band.
 
-## Match the relative Xi source margin to guarded-resource extraction after dynamic reference subtraction
+## Match relative Xi source information to the corrected guarded selector
 
-Analytic Frontier supplies an unconditional moving-line relative Xi periodization with polynomial factors times `exp(-(log T)^4/8)`. The strengthened accepted clue `CLUE-relative-xi-source-to-guarded-selector-stability` isolates the residual task: derive the finite target moments and guarded resource from that source/reference description and control the lower-order Volterra residual after subtracting the deterministic endpoint reference.
-
-XF-088--XF-089 show why this subtraction must precede naive sampling. The universal pole has a mesh-dependent logarithmic counterterm, but its coefficient is source-fixed and unchanged by positive heat time. The next estimate should therefore act on the bounded-quotient/reference residual rather than repeatedly treating the raw endpoint as a new singular quadrature problem.
+Analytic Frontier supplies a moving-line relative Xi reconstruction with extremely small source error, but XF-093 shows why fixed-strip accuracy alone cannot be pushed directly onto the frequency mesh. The next bridge must combine that source description with a mesh-scale regularity theorem for the **reference-corrected** residual, rather than repeatedly treating deterministic endpoint terms as source error.
 
 ## Identify a positive-transition state that remains nontrivial in the same guarded quotient
 
-Even a complete source-to-grid theorem would not prove `Lambda<=0`. A positive-transition theorem must still show that a hypothetical `Lambda>0` configuration produces order-one mass in the same guarded weighted resource after all localization, quotienting, reference subtraction, and consistency errors.
-
-## Match upstream zero information without averaging away the center variable
-
-Any analytic-frontier input must retain the horizontal/local information consumed by the visible moment state and guarded selector. Bulk or low-frequency averages remain insufficient unless a theorem shows that they survive the exact source-to-destination map.
+Even a complete source-to-grid theorem would not prove `Lambda<=0`. A positive-transition theorem must still show that a hypothetical `Lambda>0` configuration produces order-one mass in the same guarded weighted resource after localization, quotienting, source-fixed reference subtraction, and continuum/discrete consistency errors.

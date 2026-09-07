@@ -2,36 +2,26 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Produce RH-scale mean-absolute Mertens control from information beyond fixed local feedback
+## Produce RH-scale mean-absolute Mertens control from genuinely excursion-coupled information
 
 **Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information` and `MI-012-hamming-regularization-is-degree-two-damping-before-the-square-root-transition`.
 
-MC-115 gives the exact downstream bridge: `X^{-1} integral_1^X |M(x)| dx = O_epsilon(X^(1/2+epsilon))` is equivalent to RH by Mellin continuation of `1/zeta(s)`. MC-121 materially reduces the endpoint coverage requirement: Pintz's 1987 theorem forces an off-critical zero to create excessive mean-absolute mass at every sufficiently large scale, so the RH-scale bound for the actual Möbius mean on any rigorously produced unbounded checkpoint sequence already implies RH.
+MC-115 and MC-121 leave the endpoint unusually sharp: RH-scale mean-absolute Mertens control for the actual Möbius function on any rigorously produced unbounded checkpoint sequence already implies RH. The missing theorem is therefore source-side, not checkpoint density.
 
-MC-117--MC-120 still show that sub-`L^1` information can miss rare coherent excursions even under exact square-free support, multiplicativity, polynomial windows, and one fixed multiplicative comparator. MC-122--MC-124 now close another large class of apparent source enrichments. Deterministically weighted amplitude feedback is exactly quadratic path energy after its square-free correction; every scalar state-local one-step feedback splits into a path potential plus unoriented occupation; and every fixed finite-memory observable odd under global Möbius sign reversal is a finite combination of fixed-shift `mu/mu^2` correlations that is logarithmically negligible by existing theory.
+MC-122--MC-129 increasingly close local and coarse-state substitutes for excursion information. Deterministic weighted feedback repackages quadratic path energy; fixed state-local and fixed-memory sign-odd observables collapse to potential/occupation or classical fixed-shift correlation information. MC-129 now gives a stronger exact matched control: inside every corresponding coarse time bin, two words have the same **full joint product-state transition tensor** coupling the preceding local context, modular partial-sum state, and next increment, and hence the same bounded local-factor counts, modular transition marginals, and every scalar one-step observable of that joint state, while their first-absolute excursion means differ.
 
-The live source question is therefore sharper: derive a **quantitative Möbius-specific mechanism outside fixed local cylinder information** that recovers first-absolute excursion amplitude on some unbounded family of scales. Candidate escapes include growing/state-coupled memory, multiscale or nonlocal correlations, quantitatively controlled occupation statistics, or another source law with an explicit polynomial information budget. Merely adding deterministic weights or a bounded amount of local history is no longer a new carrier.
+A viable source mechanism must therefore retain **order-sensitive information across occurrences, bins, or scales that is not determined by the full contemporaneous local-state transition law**, with a quantitative budget strong enough to control cumulative excursion amplitude. Merely enlarging a local context, modular state, their joint cross-tabulation, or a coarse time partition is not yet such a carrier.
 
-## Kill fixed state-local and fixed-memory feedback before treating it as new signed information
+## Kill product-state histogram enrichments before treating them as new signed information
 
-MC-122 gives the amplitude test: arbitrary deterministic weights on `mu_n M_{n-1}` reduce by summation by parts to weighted `M_n^2` energy plus the explicit square-free diagonal. MC-123 gives the structural reason on the scalar Mertens state graph: every reversal-odd one-step edge field is a potential, and all non-potential residue is unoriented edge/loop occupation.
+The exact matched controls should be applied before promoting a new finite-state or binned statistic. A proposal must identify what information it retains that is not invariant under the MC-125--MC-129 rearrangements, and then prove a quantitative transfer to `X^{-1} integral_1^X |M(x)| dx`.
 
-MC-124 shows that finite memory does create genuine cycle topology, but not a new logarithmic information class. Every fixed-window sign-odd cylinder observable expands into finitely many shifted products of `mu` and `mu^2`; the Tao--Teräväinen product criterion makes all such terms logarithmically invisible. A memory proposal should therefore identify exactly where it leaves the fixed-cylinder regime and why the resulting estimate is quantitatively stronger than qualitative fixed-shift correlation cancellation.
+The live exits are genuinely nonlocal or multiscale relations, path-order information beyond occupation/transition counts, state information whose resolution couples successive bins rather than merely labeling them, or an arithmetic theorem controlling excursions directly. Exiting the fixed-cylinder class syntactically is not sufficient.
 
 ## Leave one-sided radial filtering unless the boundary/source term is controlled explicitly
 
-Fixed finite parity filters followed by absoluteization are closed by MC-112--MC-113, and MC-114 closes the obvious growing-filter repair on the physical Hamming shells. Polynomial attenuation of a proportional transfer band requires range `Theta(log N)`, whereas the shell degree is only `O(log N/log log N)`, so the filter outruns the physical source support.
+Fixed finite parity filters followed by absoluteization and the obvious growing-filter repair are already closed by the radial controls. A surviving radial construction must derive a signed relation to displaced boundary/source terms, justify a genuinely two-sided or nonlocal extension from arithmetic, or leave radial scalarization for finer source information.
 
-A surviving radial construction must derive a signed relation to the displaced boundary/source terms, justify a genuinely two-sided or nonlocal extension from arithmetic, or leave radial scalarization for finer source information. Small one-sided filtered coefficients alone are a boundary artifact.
+## Preserve signed cross-degree, cross-scale, path-order, and excursion information through the final norm
 
-## Preserve signed cross-degree, cross-scale, occupation, and excursion information through the final norm
-
-The endpoint is carried by cancellation among large degree components and by the excursion geometry of `M(x)`, not by positive shell masses, low fractional moments, or a fixed local feedback vocabulary. MC-121 shows that once the actual Möbius first moment is recovered at the square-root exponent, no dense scale mesh is needed to reach RH; MC-122--MC-124 show that several tempting local mechanisms either repackage path energy or fall inside qualitative fixed-correlation theory.
-
-A useful carrier should therefore identify information that survives those reductions and actually controls first-moment amplitude for Möbius, without inserting `1/zeta`, a zero-free region, or an RH-equivalent coarse mode by definition.
-
-## Use the audited Pintz lower bound as an endpoint reduction, not as a source mechanism
-
-MC-121 relies on Pintz's 1987 theorem that every off-critical zero forces a quantitative lower bound for the actual mean-absolute Mertens function at every sufficiently large scale. This prior-art bridge legitimately removes the final checkpoint-density requirement, but it does not provide the missing arithmetic upper bound or local-to-global transfer.
-
-Stronger separate Pintz asymptotic claims retained in earlier findings keep their own audit status and are not needed for the arbitrary-checkpoint RH criterion.
+The endpoint is carried by cancellation among large components and by the excursion geometry of `M(x)`, not by positive shell masses, low fractional moments, or local summary statistics. A useful carrier must identify information surviving the exact product-state rearrangement controls and actually control first-moment amplitude for Möbius without inserting `1/zeta`, a zero-free region, or an RH-equivalent coarse mode by definition.
