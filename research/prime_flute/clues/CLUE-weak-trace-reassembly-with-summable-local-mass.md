@@ -17,100 +17,99 @@ based_on:
   - research/prime_flute/findings/PF-195-critical-one-sided-weak-S2-localization-is-not-controlled-by-endpoint-mass-alone.md
   - research/prime_flute/findings/PF-196-solomyak-orlicz-penalty-is-logarithmic-but-prime-summable.md
   - research/prime_flute/findings/PF-197-matrix-valued-critical-cwikel-theory-removes-local-vector-endpoint-gap.md
+  - research/prime_flute/findings/PF-198-finite-window-lambert-localization-preserves-critical-orlicz-budget.md
+  - research/prime_flute/findings/PF-199-two-sided-finite-color-localization-has-no-weak-trace-counting-loss.md
+  - research/prime_flute/findings/PF-200-regular-lambert-body-principal-cwikel-constants-are-uniform.md
+  - research/prime_flute/findings/PF-201-global-to-local-cwikel-factorization-removes-regular-body-off-diagonal-remainder.md
+  - research/prime_flute/findings/PF-202-decomposition-cuff-seams-have-arbitrarily-summable-critical-orlicz-budget.md
 ---
 
-# Can the weak-trace endpoint be recovered by localized reassembly rather than global exponent extrapolation?
+# Can the weak-trace endpoint be completed from the remaining interface and splice sectors?
 
 ## Observation
 
-PF-189 reaches the exact critical ideal `S_{1,infinity}` on the complete fixed-central short-collar sector, and PF-173 makes the matched central recoupling error trace class. PF-190, by contrast, obtains only the global envelope `s_n=O(log^2(n)/n)` when the PF-175 `S_r` estimate is extrapolated as `r->1`; PF-190 already identifies the two gradient half-factor time integrals as the source of the two logarithms.
+The endpoint problem has narrowed substantially. PF-189 proves weak `S_1` for the complete fixed-central short-collar sector and PF-173 makes its matched recoupling trace summable. PF-191 gives the exact-area Lambert/body comparison a summable strong-`L^1` defect, while PF-196 identifies the correct critical coefficient currency: the `L\log L` Luxemburg norm costs one geometric concentration logarithm but the exact prime/shift tail still pays every fixed polynomial Lambert-depth loss. PF-197 then supplies the matrix-valued critical Cwikel theorem needed for the localized two-dimensional gradient form.
 
-The endpoint geometry is now stronger than the version that originally motivated this clue. PF-191 sharpens PF-179's **exact area-preserving** Lambert transport from the coarse `O(d_n)` one-body `L^1` estimate to
-
-\[
-\int_{Q(a_n)}\delta\,d\mu
-\le C\frac{d_n}{\cosh a_n},
-\]
-
-and proves that these masses are summable for the exact prime/shift family. Combining that with the already summable endpoint corrections in PF-180--PF-182 upgrades PF-183's assembled body stage to finite unweighted `L^1` defect. PF-183's true-short-collar transition slabs are pairwise disjoint and uniformly thick, so their **weighted** body defect is also summable at `r=1`. Thus the earlier concern that exact area preservation itself destroys the Lambert `L^1` gain is removed.
-
-The geometric splice gate has nevertheless become sharper. PF-192 shows that generic strong-`L^1` geometric rigidity fails, and PF-194 shows that even exact Hamiltonian structure, zero flux, reflection marking, boundary identity, and small interior support do not restore a generic linear `L^1` Korn estimate. These are route boundaries rather than counterexamples to the canonical PF splice: an endpoint conservative interpolation must exploit structure beyond generic strong-`L^1` rigidity, or it must be formulated directly in a weak/Lorentz scale.
-
-A targeted prior-art audit of the critical Cwikel--Solomyak theory gives a parallel analytic warning and a more precise opening. Sukochev--Zanin's symmetrized critical theorem uses the homogeneous Luxemburg `L log L` norm, not the Orlicz modular. PF-196 therefore corrects the earlier shorthand that bounded coefficient `L^1` mass is quantitatively interchangeable with `L log L`: concentration on effective area `m` costs a factor `log(1/m)`. On the exact PF-191 Lambert transport the resulting coefficient norm has the sharp scale
+PF-198--PF-201 remove the main regular-body analytic uncertainties one by one. PF-198 shows that cutting the long Lambert body into fixed-width windows preserves the total prime-summable `L\log L` coefficient budget. PF-199 shows that genuine two-sided finite-color localization causes no weak-trace counting loss. PF-200 makes the local Cwikel constants uniform on the regular recentered Lambert-body family. PF-201 then improves the architecture further: coefficient-side localization plus an auxiliary Hilbert direct sum gives the exact factorization
 
 \[
-\|\delta_n\|_{L\log L}
-\asymp
-\frac{d_n(1+a_n)}{\cosh a_n},
+T_{\rm reg}=A_h^*DA_g\in\mathcal S_{1,\infty}
 \]
 
-rather than `d_n/cosh(a_n)`. Crucially, PF-196 also proves that this remains summable over the exact prime/shift tail, and in fact `sum d_n(1+a_n)^k/cosh(a_n)<infinity` for every fixed `k`. Thus a directly symmetrized endpoint argument need not be literally mass-linear to preserve the global PF budget: any fixed polynomial loss in **local Lambert depth** is still admissible.
+for the **entire regular Lambert-body principal cotangent coefficient sector**, with the global resolvents left uncut. The external off-diagonal remainder previously associated with that regular sector is therefore not a live obstruction and should not be recreated in future endpoint decompositions.
 
-PF-197 now removes a separate false gap in that direct route. Ponge's matrix-valued critical Cwikel theorem gives `Q u P in S_{1,infinity}` for `End(E)`-valued `u in L log L` and arbitrary `P,Q in Psi^{-n/2}`. In dimension two the localized PF-175 gradient-resolvent form is exactly of this critical order: after a finite block-bundle enlargement it is a scalar corner of `Q C P` with both smoothing factors of order `-1`. Ponge's compact-support local lemma is explicitly stated to continue to noncompact manifolds. Therefore the vector/matrix nature of the PF coefficient is no longer an endpoint-theorem obstruction. The unresolved analytic issue is **quantitative localization across the infinite PF family**: the Cwikel constants and off-diagonal/reassembly terms must remain uniform or grow only within a PF-196 prime-summable Lambert-depth envelope.
+PF-202 closes the coefficient-space part of one remaining exceptional family. PF-182's distinguished decomposition-cuff seam correction can be supported arbitrarily thinly with no inverse-width first-derivative penalty and with any prescribed summable weighted `L^1` budget. Combining that freedom with PF-196's Luxemburg estimate shows that the seam cotangent coefficients can have an arbitrarily prescribed summable tail `L\log L` budget. Exact area kills the local scalar density coefficient. What remains at those cuffs is **operator localization**, not coefficient concentration: shrinking support can still worsen higher derivatives, fixed-buffer elliptic constants, or pseudodifferential chart constants, so PF-201 cannot simply be copied to the seam family without a new quantitative argument.
 
-PF-195 still closes a tempting shortcut inside the alternative half-factor route. Levitina--Sukochev--Zanin prove that bare `L^2` coefficient control does not imply critical one-sided weak `S_2`; their positive weak-`S_2` theorem instead uses a logarithmically weighted local-`L^infinity` coefficient norm. When that standard sufficient norm is fed the PF-191 Lambert profile, it sees scale `O(d_n)` after multiplying the two half-factors rather than the summable `O(d_n/cosh a_n)` integrated mass. Thus a half-factor proof remains possible only through a **PF-specific mass-sensitive/nonconcentration estimate**; it cannot be justified from endpoint `L^1` mass by generic Cwikel theory alone.
+The geometric endpoint remains independent. PF-183 reduces the complete true-short-collar family to one energy-local conservative splice on disjoint normalized thick slabs. PF-184--PF-188 remove flux, the marked Killing mode, qualitative Sobolev degeneration, and boundary-normalization as generic qualitative obstructions, while PF-192/PF-194 show that a generic strong-`L^1` linear rigidity theorem cannot supply the endpoint. A successful endpoint splice must use additional canonical structure or a genuinely weak/critical formulation.
 
-The unresolved issue is therefore sharper: establish uniform or prime-summably controlled critical Cwikel localization for the actual PF-175 two-metric gradient form, prove the smoothing/off-diagonal pieces remain in a summable endpoint ideal, and reassemble without recreating a nonlocal logarithmic loss.
+Thus the accepted clue no longer asks whether ordinary regular Lambert localization or its external off-diagonal tails can be controlled. The live question is whether the **non-regular interface families plus the canonical true-short-collar splice** can be put into the same prime-summable weak endpoint without recreating a global logarithmic loss.
 
 ## Research question
 
-Can the exact prime/shift first relative resolvent be decomposed into finitely many families of localized body/interface operators whose members are orthogonal or bounded-overlap at the singular-value counting level, plus a trace-class or separately weak-`S_1` reassembly remainder, so that the PF-189/PF-191/PF-196/PF-197 endpoint budgets imply
+Can the exact prime/shift first relative resolvent be decomposed as
 
 \[
-(\Delta_{g_+}+1)^{-1}F_* - F_*(\Delta_g+1)^{-1}\in\mathcal S_{1,\infty}?
+T=T_{\rm reg}+T_{\rm central}+T_{\rm interface}+T_{\rm splice}+T_{\rm rem},
 \]
 
-The first geometric subgate is now an endpoint version of PF-183's still-missing conservative splice: on each normalized thick transition slab, can the exact-area collar/body interpolation be constructed with cost linear in the local `L^1` body strain plus the already summable core mismatch? PF-191 shows that such a local estimate would sum over the complete family; PF-192/PF-194 show that generic strong-`L^1` rigidity arguments do not prove it.
+where PF-201 controls `T_reg` in `S_{1,\infty}`, PF-189/PF-173 control the central sector and recoupling, and every remaining interface/splice/remainder term is trace class or weak `S_1` with a prime-summable counting budget, so that
 
-The second analytic subgate is no longer to invent a direct matrix-valued endpoint theorem. PF-197 supplies the correct local prior-art template: after compact localization, the gradient part of PF-175 is a critical `Q C P` operator and Ponge gives the weak-`S_1` bound in terms of `||C||_{L log L}`. The task is to prove that the actual PF localizations can be chosen so the corresponding pseudodifferential Cwikel constants are uniform or at worst `O((1+a_n)^m)` for one fixed `m`, while all off-diagonal and cutoff/reassembly pieces have a summable trace/weak-trace budget. PF-196 makes every such fixed polynomial Lambert-depth loss admissible. The separate weak-`S_2` half-factor route remains possible, but PF-195 requires an additional PF-specific nonconcentration theorem there.
+\[
+(\Delta_{g_+}+1)^{-1}F_*-F_*(\Delta_g+1)^{-1}
+\in\mathcal S_{1,\infty}?
+\]
+
+For the distinguished decomposition cuffs, PF-202 says the coefficient norm can be made arbitrarily summable. The precise analytic question is whether the corresponding localized resolvent/Cwikel constants can be kept uniform, can grow slowly enough to be absorbed by the support-budget freedom, or can be bypassed by a stronger trace-class interface estimate.
+
+For the true PF-138 short collars, the separate question is whether the canonical exact-area body/core interpolation admits an endpoint conservative splice whose local cost is summable in the correct strong-`L^1` or critical weak currency. No generic `L^1` Korn/rigidity theorem may be assumed after PF-192/PF-194.
 
 ## Why it may matter
 
-A positive answer would identify the natural global endpoint suggested independently by the local two-dimensional pseudodifferential obstruction and by PF-189's complete central sector: weak `S_1` but not `S_1`. It would also show that PF-190's `log^2(n)/n` envelope is an artifact of global strong-Schatten extrapolation rather than a genuine loss created by the full prime/shift geometry.
+A positive answer would establish the natural global endpoint suggested independently by the two-dimensional pseudodifferential order, PF-189's exact central calculation, and the critical Cwikel theory:
 
-A negative answer would be equally informative if it exhibits a specific geometric concentration, off-diagonal/interface mechanism, loss of quantitative Cwikel uniformity, or operator-localization cost that converts the prime-summable local critical budget into a larger global singular-value envelope. That would locate the first genuine endpoint obstruction beyond the already-solved central collars and prevent further attempts to remove PF-190's logarithms by interpolation bookkeeping alone.
+\[
+T\in\mathcal S_{1,\infty}
+\quad\text{while PF-112 gives}\quad
+T\notin\mathcal S_1.
+\]
+
+That would show that PF-190's `O(\log^2 n/n)` global singular-value envelope came from strong-Schatten extrapolation rather than from the regular Lambert geometry or coefficient fragmentation. More importantly for the canonical composite-shift control, it would sharply classify how much of the prime flute's first-resolvent operator structure survives a literal-primality-destroying comparison.
+
+A negative answer is useful only if it identifies a genuine remaining mechanism: a width-dependent interface operator constant that defeats arbitrary coefficient thinning, a canonical short-collar endpoint localization obstruction, or another explicitly derived global term that cannot be assigned a prime-summable weak-trace budget. Reintroducing already-closed regular-body window count, Cwikel-constant, or external off-diagonal concerns is not a decisive negative result.
 
 ## Decisive test
 
-First settle the geometric endpoint splice on PF-183's normalized thick slabs. Using PF-191's endpoint body budget, prove or refute a uniform exact-area estimate of the schematic form
+First isolate the **distinguished-cuff operator sector** using PF-202 rather than redoing its coefficient estimate. Let `K_n` denote the actual constant needed to convert the seam coefficient on `U_n` into a weak-`S_1` bound after whatever local chart/resolvent factorization is used. Determine how `K_n` depends on the shrinking support width, map regularity, cuff geometry, and the required source/target buffers. The seam route succeeds if the PF-182 support choice can be made so that
+
+\[
+\sum_n K_n\,
+\|C_n\|_{L\log L}<\infty,
+\]
+
+or if an alternative direct interface argument gives a summable trace/weak-trace norm. Because PF-202 allows the coefficient tail budget to be prescribed arbitrarily small, any **finite cuffwise constant known before the support choice** is potentially absorbable; what must be audited is whether shrinking the support itself makes `K_n` depend circularly on that choice too fast. Do not assume the fixed-width PF-200 constant applies to these shrinking seams.
+
+Second classify the other finitely-many-per-module exceptional windows that PF-200/PF-201 deliberately excluded: module ends, physical cuff/body transmission, corner/assembly corrections, and any remaining coefficient pieces outside the regular recentered family. For each infinite family, derive its actual coefficient scale and either place it in a uniform/prime-summable global-to-local critical factorization or prove a stronger summable remainder estimate. A fixed number of exceptional windows **per module** is still an infinite family and cannot be discarded as a finite head.
+
+Third settle the **true-short-collar endpoint splice**. On PF-183's disjoint normalized thick slabs, use PF-191's endpoint body budget and PF-184 exactness to construct or refute an exact-area marked interpolation with a cuffwise estimate schematically of the form
 
 \[
 E_1(\operatorname{splice}_\eta;T_\eta)
 \le
-C\left(E_1^{\mathrm{body}}(T_\eta)+|t_\eta|\right)
+C\bigl(E_1^{\rm body}(T_\eta)+|t_\eta|\bigr),
 \]
 
-on both source and inverse/target sides. PF-184--PF-188 provide exact flux and marked branch control, while PF-192--PF-194 rule out treating strong endpoint coercivity as generic background. A failed interpolation is not a negative result; a genuine obstruction must show that no admissible **canonical** marked exact-area splice can satisfy a linear endpoint budget, or identify precisely which stronger PF structure is still missing.
+or an explicitly identified critical Lorentz/Orlicz analogue sufficient for weak `S_1`. PF-192/PF-194 forbid justifying this by generic strong-`L^1` rigidity. A negative result must be canonical to the PF germ or prove that every admissible conservative interpolation incurs a non-summable endpoint cost.
 
-In parallel, implement PF-197's direct critical localization on the normalized modules rather than searching for another generic endpoint theorem. For a coefficient-supported cutoff `chi`, insert a slightly larger cutoff `chi'` and decompose the gradient-resolvent factor into its local pseudodifferential piece and off-diagonal remainder,
-
-\[
-\chi dR
-=\chi dR\chi' + \chi dR(1-\chi').
-\]
-
-Apply Ponge's matrix-valued `Q u P` theorem to the first piece after the PF-197 block-bundle embedding. Prove a quantitative family bound whose local cost has the form
-
-\[
-O\!\left(\frac{d_n(1+a_n)^k}{\cosh a_n}\right)
-\]
-
-for one fixed `k`; exact uniformity is sufficient but not necessary. PF-196 proves that every such fixed-depth polynomial envelope is summable. A proof that replaces this local-depth cost by `O(d_n)` has lost the effective-area mechanism and is insufficient.
-
-Then estimate every `dR(1-chi')` off-diagonal factor, cutoff commutator, density term, and source/target identification term. Each must be trace class with summable norm, weak `S_1` with summable counting quasi-norm, or explicitly absorbed into a finitely colored critical family. Ponge's local lemma does **not** establish these global terms and its constant must not simply be assumed uniform over the infinite PF family.
-
-A half-factor formulation remains decisive but has the additional burden from PF-195. If the two gradient-resolvent factors in PF-175 can each be placed uniformly in `S_{2,infinity}` with quasi-norm controlled by the square root of the local endpoint mass, the standard singular-value product inequality gives a weak-`S_1` gradient term without either logarithm. However, **do not infer this estimate from `L^2` coefficient mass alone**. The proof must identify and verify a PF-specific nonconcentration/localization property strong enough to defeat the critical one-sided Cwikel counterexample while retaining the `d_n/cosh(a_n)` Lambert gain. A local-sup criterion that charges the body at order `d_n` is insufficient for global summation.
-
-If either operator route supplies the local budget, use the disjoint PF-183 transition slabs and a finite-color localization of the remaining body pieces so that counting functions can be summed without a logarithmic overlap penalty. Derive the resolvent/IMS or Krein reassembly formula explicitly and prove every cross term satisfies the same endpoint budget. The route is killed if the localized Ponge constants/off-diagonal terms cannot be controlled by a prime-summable PF-196-type envelope or an unavoidable cross term reproduces a genuinely nonlocal logarithmic loss despite finite overlap.
+Finally write the global first-relative-resolvent form explicitly in the completed exact-area identification and verify that every term belongs to one of the proved sectors. In the exact-area gauge the density coefficient vanishes where that gauge is established, so do not manufacture a scalar density remainder there. Likewise do not insert external input/output cutoffs into the PF-201 regular sector merely to create off-diagonal terms that its exact `A_h^*DA_g` factorization already avoids.
 
 ## Evidence boundary
 
-No global weak-`S_1` theorem is established. PF-191 proves an exact-area **unweighted** `L^1` Lambert/body improvement and, through PF-183's thick-slab weight bound, an endpoint weighted budget on those transition slabs. It does not prove a globally finite inverse-unit-ball weighted defect away from the controlled modules and does not construct the endpoint conservative splice.
+No global weak-`S_1` theorem is established. PF-201 proves only the regular Lambert-body principal cotangent contribution. PF-202 proves only a critical **coefficient-space** budget for the distinguished decomposition-cuff correction; it does not control the shrinking-family local Cwikel constants or produce its weak-trace operator estimate. PF-189/PF-173 concern the central short-collar sector and recoupling, not the complete geometric comparison.
 
-PF-189 is an orthogonal central Dirichlet-sector statement, PF-173 treats only matched central recoupling, and PF-190 remains the best persisted full weighted-endpoint resolvent consequence. PF-195 does not prove failure of the actual PF half-factor; it proves only that its desired mass-linear weak-`S_2` bound is not a generic consequence of critical `L^2` coefficient control and that a standard positive local-sup Cwikel criterion loses the project-specific Lambert effective-area gain. PF-196 computes the actual critical Orlicz coefficient currency and proves that its Lambert-depth logarithm is prime-summable. PF-197 establishes that an appropriate **local matrix-valued** critical `Q u P` theorem already exists and matches the order/bundle structure of the PF-175 principal gradient form after localization. It does not prove uniform constants for the PF family, control nonlocal resolvent tails, or perform global reassembly. The finite-color decomposition, uniform/prime-summable localization constants, endpoint collar splice, and control of nonlocal cross terms are all open.
+The PF-183 true-short-collar endpoint conservative splice remains unproved. PF-191 supplies endpoint body mass, PF-184 exactness, and PF-185--PF-188 useful marked rigidity structure, but PF-192/PF-194 rule out promoting that structure to a generic strong-`L^1` linear theorem. PF-190 therefore remains the persisted full weighted-endpoint consequence until the interface and splice sectors are closed.
+
+The clue also makes no wave-operator, scattering-matrix, determinant, resonance, or RH claim. Weak `S_1` of the complete first relative resolvent, if eventually proved, would be an operator-ideal classification of the exact prime/shift control and must be interpreted with the line README's arithmetic-control discipline.
 
 ## Research disposition
 
-The clue remains `accepted`, but the analytic gate is materially narrower after PF-197. PF-191 removes the most immediate geometric-integrability objection to pursuing the weak endpoint in the exact-area gauge. PF-192/PF-194 show that the strong geometric conversion must be canonical rather than generic, and PF-195 shows the same for a one-sided weak-`S_2` analytic conversion. PF-196 calibrates the direct symmetrized coefficient currency, while PF-197 shows that the required matrix-valued critical weak-`S_1` mechanism is already available locally in the literature.
-
-The active test remains split into two gates: **canonical endpoint conservative geometry on the normalized PF-183 slabs**, followed by **quantitatively uniform critical localization and no-loss reassembly**. At the analytic gate, the preferred direct route is now concrete: localize PF-175 into Ponge-critical `Q C P` pieces, prove their constants stay within a fixed-polynomial Lambert-depth envelope, and show all off-diagonal/cutoff terms are summable in trace or weak-trace class. Separate weak-`S_2` half-factors still require a PF-specific nonconcentration theorem. Neither route may replace the effective-area gain by the divergent `O(d_n)` scale or hide a new logarithm in global block-counting/reassembly.
+The clue remains `accepted`, but its analytic frontier is materially narrower. **Regular Lambert-body critical localization is now closed through PF-201, and distinguished-cuff coefficient concentration is closed through PF-202.** The active work is: (1) operator control of the shrinking distinguished-cuff and other exceptional interface families, and (2) the canonical endpoint conservative splice on the true PF-138 short collars. Future work should attack those two gates directly rather than reopening regular-body window fragmentation, finite-color counting, local Cwikel uniformity, or its external off-diagonal remainder.
