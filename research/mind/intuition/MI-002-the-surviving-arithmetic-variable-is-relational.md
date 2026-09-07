@@ -1,40 +1,35 @@
-# MI-002 — Relational fidelity is useful only when coupling survives the destination quotient
+# MI-002 — Relational fidelity survives only outside gauge and closed-algebra quotients
 
-**Evidence level:** supported by exact local-relational, additive, refinement, quotient-conditioning, support-transport, clone, and target-projection results across current Mathia lines
+**Evidence level:** supported by exact local-relational, algebraic-closure, gauge, conditioning, signed-coupling, and projective-orientation results across current Mathia lines
 
 ## Core intuition
 
-Mathia's strongest local mechanisms often emerge only after quotienting away absolute scale: cross-ratios, target-relative projection data, additive shifts, shell relations, and cross-boundary couplings survive where scalar summaries fail. But even complete knowledge of a relation is useful only if the **joint coupling among relations**, source specificity, analytic survival, realization, quantitative observability, and model transport are preserved.
+Mathia's strongest candidates often become relational only after absolute scale is quotiented away, but “relational” is not itself an escape criterion. A relation can be completely present and still be useless because the source algebra already reduces it to old coordinates, because it is pure gauge, because the final positive quotient forgets its orientation, or because its coupled information is separated before the destination theorem reads it.
 
-Recent evidence adds two sharp warnings. A relation can become cohomologically trivial inside its source algebra, as in Prime Circle's weighted refinement holonomy, or remain exactly recoverable while becoming badly conditioned, as in the Fisher sign quotient. “Relational” is therefore not itself an escape criterion.
+The current synthesis is therefore stronger than “preserve relations”: preserve a **source-specific relation that survives algebraic closure, gauge, analytic transport, quantitative observation, and the final destination coupling**.
 
-## Strongest current principle
+## Strongest justified principle
 
-Arithmetic Fidelity provides the exact joint-observation model and now a provenance control: family-wide recovery requires one common reverse channel, while a canonical source center may drift if it is recomputed after compression. Joint fidelity and coherent transport are separate gates.
+Arithmetic Fidelity provides the quotient and conditioning controls: the maximal output gauge must be removed before measuring fidelity, and a complete representation can have radically different inverse behavior on different source strata. Möbius Cancellation supplies the signed-coupling test: positive shell or fractional-moment summaries can preserve labels while erasing the excursion/cross-degree interaction that the RH-complete endpoint consumes.
 
-Prime Circle gives the strongest refinement test. PC-186 proves the natural distinct-prime refinement directions commute, and PC-187 shows the first shell-weighted ordered holonomy is a cyclotomic coboundary with the same Mellin carrier. Nonzero order dependence does not count as a new relation when the complete source algebra expresses it in old coordinates.
+Prime Circle now supplies an exact closed-algebra test. PC-197--PC-200 show that character packets, finite holomorphic products, same-angle fusion, and the first intrinsic non-diagonal power-map correspondences remain inside classical Dirichlet packets or shellwise singularity data. Cross-shell structure is not new if the complete source algebra reduces it to one rational Fourier ray.
 
-Prime Lattice gives the averaging test. PL-169 identifies addition as information genuinely absent from multiplicative exponent differences, but PL-177--PL-183 show that broad Kronecker prime averages, including bounded slowly varying target weights, reduce to one-point continuum density throughout the proven resolution band. A target-labelled statistic can still fail to retain a genuinely relational target interaction.
+Prime Lattice supplies the gauge test. PL-193--PL-195 show that scalar phases, scalar weighted-resolvent cocycles, and arbitrary finite-fiber unitary cocycles over the one-dimensional prime shift are cumulative gauges. Noncommuting matrix values do not create holonomy without a loop or anchored obstruction.
 
-Visual Exploration gives the exact quotient/conditioning/transport test. VIS-055 shows the two-ratio Fisher curve retains the entire contrast magnitude and forgets only one global orientation bit, VIS-054 shows the quotient doubles contact order at balance, and VIS-056 shows Wasserstein-small motion of the frozen class laws gives explicit `C^1` control of the signed balance equation. Exact relational completeness, stable inverse recovery, and robustness to model motion are distinct layers.
-
-Möbius Cancellation supplies the signed-coupling test. MC-097--MC-098 show that radial degree components are individually huge but cancel across degree at the endpoint. A relational coordinate system that separates those degrees and then takes a positive norm has preserved labels but lost the source interaction that matters.
+Weil Positivity supplies the projective/orientation test. WP-183--WP-185 rule out finite bounded-characteristic projective recovery of the exact Gamma relative phase, while WP-186 shows that a universal positive-semidefinite projector can encode a phase pointwise yet lose the sign of its velocity in positive metric data.
 
 ## Consequence for synthesis
 
-A plausible relational mechanism should pass six explicit gates: **joint fidelity**, **source specificity**, **analytic survival**, **realization**, **quantitative observability/model transport**, and **destination coupling**. The last gate asks whether the relation is still present in the operation that supplies the theorem, rather than having become a coboundary, a continuum one-point statistic, or separate positive masses before cancellation.
+A plausible relational mechanism should pass at least these gates: **joint fidelity; source specificity; algebraic/gauge nontriviality; analytic/source-class survival; quantitative observability and transport; and destination coupling with the required orientation/sign**. Failure at any gate means that the relation is present only in a representation the final theorem cannot use.
 
-## Status / novelty
+## Counterevidence / boundary
 
-The component relational-lift, projection, shifted-correlation, cyclotomic, statistical-angle, transport, and signed-cancellation results are persisted evidence. Their six-gate interpretation is supported synthesis.
+The present closures are category-specific. Genuinely multi-directional or looped actions can carry holonomy; nonlinear or matrix-valued Prime-Circle mechanisms may retain several independent rays; infinite or singular analytic completions may escape the Weil finite-projective no-go; and a source-forced positive object may retain sign through a nonlocal orientation theorem.
+
+## Epistemic status
+
+The component mathematical facts are persisted exact or literature-backed findings. Their combined gate structure is supported synthesis, not an RH theorem.
 
 ## Falsification criterion
 
-Exhibit a canonical invariant depending only on relations already trivialized by the complete source algebra or matched by the strongest control, yet forcing a source-specific conclusion without new information; or recover a target interaction after the exact covered averaging/positive quotient without retaining any additional coupling.
-
-## Lean-formalizable core
-
-- Relational completeness modulo a symmetry group.
-- Joint-versus-marginal interaction kernel and witness saturation.
-- Coboundary versus nontrivial relational carrier in finite semigroup models.
-- Separation of exact quotient identifiability from quantitative inverse conditioning and forward model transport.
+Produce a source-specific theorem whose decisive relation lies entirely inside one of the currently closed gauge/algebraic/projective classes yet still forces the target conclusion without an additional coupling, orientation, or source constraint. Such a result would show that one of the declared quotient gates was too strong.

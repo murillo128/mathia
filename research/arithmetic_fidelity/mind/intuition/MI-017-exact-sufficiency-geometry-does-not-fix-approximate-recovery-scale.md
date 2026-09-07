@@ -1,33 +1,31 @@
 # MI-017 — Exact sufficiency does not fix the stable recovery scale
 
-**Evidence level:** proved on the finite Blaschke control families through AF-171
+**Evidence level:** proved on the finite Blaschke control families through AF-175
 
 ## Core intuition
 
-Endpoint-faithful information has three distinct layers: exact identifiability, quantitative inversion in the chosen data norm, and the asymptotic scale at which the endpoint itself is observed. AF-167--AF-168 show that an exactly sufficient witness can become singular at divisor collisions. AF-169--AF-170 show a different failure: even simple, uniformly regular divisors can become asymptotically indistinguishable because the forward representation contracts a source direction exponentially with degree.
+Endpoint-faithful information has several distinct layers: exact identifiability, the maximal output quotient, quantitative inversion on the admissible source class, and the asymptotic scale at which the endpoint is observed. AF-167--AF-174 show that an exactly sufficient complete representation can be singular through collisions, exponentially contract a regular source direction, or have only a sharp `1/n` worst-case inverse on unrestricted degree-`n` divisors. AF-175 supplies the positive counterpart: a uniform interpolation constant restores degree-independent local Lipschitz recovery.
 
-AF-171 supplies the positive counterpart. The same radial family is uniformly recoverable once the natural compressed coordinate and boundary-layer endpoint scale are used. Stable fidelity is therefore not determined by the abstract sufficiency geometry alone; it is a property of the **representation metric + admissible family + endpoint normalization**.
+Stable fidelity is therefore a property of the **representation metric + output quotient + source regularity class + endpoint normalization**, not of abstract completeness or degree alone.
 
 ## Strongest justified principle
 
-For a degree-`n` finite Blaschke divisor, AF-167 proves exact recovery from degree plus the first `n` phase-gradient moments, and AF-168 quantifies the collision singularity of that inverse. AF-169 then removes collisions from the explanation: regular simple divisors with radii `r` and `s` fixed inside the disk have a fixed bottleneck separation while their relevant moment data differ by only exponentially small terms. The Jacobian itself has exponentially small radial singular values.
+AF-169--AF-170 remove collisions from one negative example: simple regular radial divisors at fixed radii remain macroscopically apart while their complete finite Blaschke inner factors converge in `H^infinity`. AF-171 identifies the matching positive scale through the compressed coordinate `r^n` and its boundary-layer normalization.
 
-AF-170 strengthens the obstruction from a truncated witness to the complete finite inner function. For the symmetric radial family,
+AF-172 extends that geometry to a complex cyclic parameter, showing that the compressed coordinate can carry orientation as well as radius. AF-173 then removes the arbitrary output phase exactly: on the cyclic stratum the quotient `H^infinity` distance is `2 rho(a,b)`. AF-174 proves a general fixed-degree divisor bound with sharp exponent `1/n`, diagnosing the cost of unrestricted multiplicity splitting and clustering.
 
-`B_(n,r)(z)=(z^n-r^n)/(1-r^n z^n)`,
-
-the full `H^infinity` distance between fixed `r<s<1` tends to zero even though the divisors do not approach each other in the unscaled endpoint metric. Completeness of the analytic representation therefore does not imply degree-uniform fidelity.
-
-AF-171 identifies the exact compressed coordinate: the `H^infinity` distance is controlled by the pseudohyperbolic separation of `r^n` and `s^n`. On the boundary layer `u=-n log r`, `v=-n log s` with `u,v` in a fixed compact positive interval, this representation metric is uniformly bi-Lipschitz to `|u-v|`, while the correctly rescaled divisor distance has the same limit. The apparent information loss is repaired only after matching the endpoint scale to the coordinate actually retained.
+AF-175 isolates the missing source modulus. If the reference divisor has interpolation constant bounded below independently of degree, sufficiently small quotient `H^infinity` error places exactly one target zero in each disjoint pseudohyperbolic neighborhood and gives a degree-independent locally linear inverse. The earlier fixed-radius cyclic controls lose this interpolation constant, while the compact boundary-layer family retains it.
 
 ## Counterevidence / boundary
 
-The boundary-layer rescue is proved for a highly symmetric control family; it is not a universal prescription to multiply every endpoint distance by degree. General divisors can also suffer multiplicity, separation, or conditioning losses that require different normal forms. The correct scale must come from the representation and the downstream discriminator, not from retrospective renormalization.
+Uniform interpolation is a strong source-class assumption, not a generic consequence of degree or pairwise separation. Multiple zeros and increasingly clustered families exit the class and legitimately fall back to weaker recovery. The boundary-layer and cyclic comparisons are special control families; they do not prescribe a universal rescaling for arbitrary divisors.
+
+A larger output gauge than the one unimodular scalar treated by AF-173 could identify distinct divisors and would require a separate quotient audit.
 
 ## Epistemic status
 
-**Proved on the declared finite Blaschke families; supported as a general fidelity principle.** No claim is made that every complete representation admits a useful rescaling.
+**Proved on the declared finite Blaschke families; supported as a general fidelity principle.** No claim is made that every complete representation admits a useful regular source stratum.
 
 ## Falsification criterion
 
-Produce a degree-uniform recovery modulus from the fixed-interior `H^infinity` data to the unscaled radial divisor metric despite AF-170, or show that the AF-171 pseudohyperbolic/boundary-layer comparison fails on its stated compact regime. More generally, a source-forced downstream theorem that consumes the unscaled endpoint while remaining stable under the collapsing control would narrow this principle.
+Produce degree-uniform recovery on the unrestricted degree-`n` class despite AF-174's sharp root-splitting controls, or exhibit a uniformly interpolating family satisfying AF-175's small-error hypotheses whose divisor distance violates its modulus. More generally, a downstream theorem that remains uniformly stable after the declared quotient while the source regularity modulus degenerates would narrow this principle.

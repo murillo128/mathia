@@ -1,35 +1,27 @@
-# MI-005 — Fixed finite prime-phase geometry is exactly the prime-torus law
+# MI-005 — Prime-phase geometry is controlled by its signed Fourier support and finite-window sinc law
 
-**Evidence level:** exact finite-dimensional null law plus classical Kronecker equidistribution through VIS-071
+**Evidence level:** exact finite-dimensional null law, classical Kronecker equidistribution, and exact finite-window Fourier controls through VIS-075
 
 ## Core intuition
 
-Prime-phase randomization is no longer merely a convenient matched control for fixed finite visual fields. VIS-067--VIS-070 determine its complete finite-dimensional law from the retained prime-power coefficients, and VIS-071 proves that the deterministic vertical prime field has **the same Haar law in long-height average**. The control is therefore the asymptotic invariant law of the source's own finite Kronecker orbit.
+Prime-phase randomization is the source's own asymptotic law at fixed finite support, but finite windows require a finer classification. The relevant object is not “nonlinearity” or “mixed primes” in the abstract. It is the **actual signed Fourier support** of the observable and the sinc attenuation of its frequencies along vertical flow.
 
-A fixed-finite covariance ridge, higher cumulant, nonlinear shape, topological summary, or other bounded continuous statistic can be visually intricate and still contain no information beyond the prime torus itself. Long-height population separation from shared phases is not an available arithmetic signal at fixed support.
+Coordinate-separable additive fields, holomorphic positive-cone products, and signed mixed-coordinate observables can all look complicated while having fundamentally different finite-window obstructions. Only the last class necessarily admits cross-prime small divisors of the form `log(a/b)`.
 
 ## Strongest justified principle
 
-For a finite field
+VIS-067--VIS-070 determine the complete finite-dimensional shared-phase law from the retained prime-power coefficients, and VIS-071 proves that deterministic vertical prime flow has the same Haar law in long-height average. VIS-072 gives the exact length-`L` multiplier `sinc(L lambda/2)` for every Fourier character with frequency `lambda=sum_p m_p log p`.
 
-`A_alpha(theta)=Re sum_(p,k) c_(alpha,p,k) exp(i k theta_p)`,
-
-VIS-067 gives the exact coefficient-Gram covariance and VIS-068 gives the third-order same-prime resonance tensor. VIS-069 extends this to every finite joint cumulant via prime-local zero-frequency blocks and partition-lattice Möbius inversion. VIS-070 then removes the “non-cumulant” escape: the full joint characteristic function is a product of one-circle Haar integrals, with the first-harmonic case reducing to a Bessel product.
-
-VIS-071 uses integer linear independence of the logarithms of distinct primes. For every fixed finite support, the deterministic orbit `theta_p(t)=-t log p` is equidistributed on the same product torus. Hence every bounded continuous function of the finite coordinate field has the shared-phase Haar expectation as its long-height Cesaro limit.
-
-The durable rule is therefore stronger than “derive the null before interpreting the statistic”: **at fixed finite support the null is the source's own asymptotic vertical law.** An arithmetic residual must live at a boundary where that equivalence is not already the theorem.
+VIS-073 controls a general bounded-degree mixed Fourier box by its smallest possible frequencies. VIS-074 shows that additive prime harmonics are much better: every nonconstant frequency is `k log p`, so growing support creates coefficient mass but no cross-prime small divisor. VIS-075 makes the distinction structural. The raw holomorphic finite Euler product mixes primes but only with nonnegative exponent vectors, hence frequencies `log n>=log 2`; near-zero ratios arise only after signed mixing such as holomorphic-antiholomorphic products or ratios.
 
 ## Counterevidence / boundary
 
-VIS-071 is qualitative fixed-dimensional equidistribution. It gives no uniform rate when the number of primes, harmonics, or coordinates grows with the height window. It also does not say that finite-window discrepancies are absent; only that they can arise from slow deterministic torus filling and must be compared with frequency-preserving controls.
-
-The prime/residual pair from the hybrid formula includes an independently defined residual channel and is not reduced to the prime torus alone. Its joint law remains a separate admissible target.
+The current growing-support corridors are sufficient controls, not sharp universal thresholds. VIS-071 is qualitative at fixed dimension and does not supply a dimension-uniform rate. Adaptive or nonlinear path statistics must have their own Fourier/support or statistical audit, and the independently defined hybrid residual is not reduced to the prime torus merely by these results.
 
 ## Epistemic status
 
-**Proved for fixed finite support.** The product-torus harmonic analysis and Kronecker theorem are classical; the durable Visual Exploration conclusion is the exact identification of the control with the vertical source law.
+**Proved for the declared finite and growing-support control classes.** The Fourier, Dirichlet-series, and Kronecker ingredients are classical; the durable synthesis is the support-based classification of the active visual nulls.
 
 ## Falsification criterion
 
-Exhibit a fixed finite prime/harmonic field and bounded continuous statistic whose long-height vertical average differs from its shared-phase Haar expectation, or derive a quantitative growing-support/finite-window theorem whose residual survives the matching Kronecker-frequency control. The latter would define a genuine new visual frontier.
+Exhibit a coordinate-separable additive or raw holomorphic positive-cone prime observable with a genuine nonzero Fourier frequency tending to zero through cross-prime cancellation, or a fixed-finite bounded continuous statistic whose long-height source average differs from the shared-phase Haar law. A signed mixed-coordinate statistic surviving its own frequency-preserving control would instead define the intended new frontier.

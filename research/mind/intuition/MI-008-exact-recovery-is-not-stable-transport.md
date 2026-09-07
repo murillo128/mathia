@@ -1,37 +1,33 @@
-# MI-008 — Stable transport is relative to the destination scale and admissible source class
+# MI-008 — Stable transport is relative to quotient, scale, source class, degree regime, and continuum interface
 
-**Evidence level:** supported by exact asymptotic fidelity controls through AF-171 and exact Xi dictionary controls through XF-083
+**Evidence level:** supported by exact asymptotic fidelity controls through AF-175 and exact Xi static/discrete transport controls through XF-087
 
 ## Core intuition
 
-Exact recovery and tiny forward error remain insufficient by themselves, but the recent evidence makes the correction more precise. Stability is not a single condition number attached to an abstract representation. It depends on the **destination metric and scale actually consumed** and on the **source class in which inversion is performed**.
+Exact recovery and tiny forward error remain insufficient, but stability is now more structured than a single condition number. It depends on the **maximal destination quotient, asymptotic scale, admissible source class, degree regime, and the exact continuous/discrete transport interface**.
 
-Arithmetic Fidelity shows a complete analytic representation that collapses a regular endpoint direction at fixed interior scale yet becomes uniformly informative after passing to its natural boundary-layer coordinate. Xi Flow shows an unrestricted local surrogate class with a huge Vieta nullspace, yet the same center-local logarithmic data becomes exponentially Vieta-stable once the admissible divisor is constrained to be real. The correct bridge theorem must therefore identify both the scale and the class that remove its null directions for source-derived reasons.
+Arithmetic Fidelity shows that the same complete inner-function representation can collapse on one growing source stratum and become uniformly invertible on another after the correct quotient and regularity modulus are declared. Xi Flow shows the complementary phenomenon: after projecting to the guarded visible moments, the destination resource can force static real-divisor feasibility and uniquely determine the low-mode periodic heat trajectory; the unresolved instability is then concentrated in the actual-source continuum-to-grid Volterra comparison.
 
 ## Strongest justified principle
 
-AF-167--AF-168 separate exact finite sufficiency from collision conditioning. AF-169--AF-170 then show that collisions are not the only instability: simple regular radial divisors at fixed radii remain a fixed bottleneck distance apart while their complete finite Blaschke inner factors converge in `H^infinity`. The forward map itself contracts the radial coordinate exponentially with degree.
+AF-169--AF-170 show exponential contraction of a regular fixed-radius divisor direction even for the complete finite Blaschke factor. AF-171 restores a uniform boundary-layer scale through the compressed coordinate `r^n`. AF-172 carries the same principle into a complex cyclic parameter, and AF-173 identifies the intrinsic output metric after quotienting the arbitrary unimodular phase.
 
-AF-171 identifies the exact positive scale. The inner-function distance is the pseudohyperbolic distance of `r^n` and `s^n`; on the boundary layer `u=-n log r`, this is uniformly bi-Lipschitz to the correspondingly rescaled divisor distance. Stable recovery is restored because the downstream coordinate is matched to what the representation actually retains, not because exactness changed.
+AF-174 gives the global fixed-degree boundary: quotient `H^infinity` error controls the degree-`n` divisor only with a sharp `1/n` worst-case exponent. AF-175 then shows that this degree loss is not universal. A degree-independent interpolation constant excludes the clustering/multiplicity directions and yields a degree-independent local Lipschitz inverse. Stable recovery is therefore conditional on a quantitative source regularity modulus, not merely on known degree.
 
-Xi Flow gives the admissible-class analogue. XF-081--XF-082 construct exponentially invisible center-local perturbations, preserved under the exact periodic heat equation, that arbitrarily change a growing Vieta prefix. In the unrestricted carrier class, even dynamical compatibility does not identify the destination state. XF-083 then proves that for same-degree **real-divisor** carriers, the center-half-line logarithmic derivative is a one-sided Hardy generating function whose low power sums are exponentially stable throughout the guarded source range. The nullspace disappears after a mathematically meaningful source constraint is imposed.
-
-Together these lines give a sharper rule: **forward fidelity is useful only after the destination quotient/scale and the admissible inverse class have been specified, and both choices must be source- or theorem-forced rather than chosen to rescue a failing representation.**
+Xi Flow supplies the source-class and discretization analogue. XF-081--XF-083 show that generic local heat-compatible carriers are Vieta-nonidentifiable while the real-divisor class has a stable logarithmic inverse. XF-084--XF-086 project the problem to destination-visible moments and prove that bounded guarded resource forces exact static equal-weight realization. XF-087 then shows that this realization already fixes the first-`K` periodic heat trajectory, and that the exact grid vector field is the composite-trapezoid discretization of the canonical Volterra equation. The remaining transport modulus is therefore an endpoint-aware quadrature/source-sampling theorem, not a second root-dynamics existence problem.
 
 ## Program consequence
 
-For every source-to-destination bridge, declare the destination equivalence relation, norm, and asymptotic normalization; expose the exact compressed coordinate when one exists; characterize the source class on which inversion is attempted; and identify the singular/null directions outside that class. Then prove a recovery modulus on the actual asymptotic family.
-
-A collapsing unscaled metric does not prove total information loss if the theorem consumes a canonical rescaling. Conversely, imposing an artificial narrow class merely to make inversion stable is not progress unless the source itself is known to lie there. Stability is a theorem about the whole source--representation--destination triple.
+For every source-to-destination bridge, declare the destination equivalence relation and norm; asymptotic normalization; degree or complexity regime; source regularity/admissibility modulus; and any continuum/discrete consistency estimate required to connect the source evolution to the realized finite state. A restricted class, rescaling, or discretization is legitimate only when forced by the source or theorem.
 
 ## Counterevidence / boundary
 
-AF-171's boundary-layer rescue is family-specific, and XF-083's real-divisor stability is conditional on existence of an admissible real-rooted carrier. These examples do not imply that every ill-conditioned bridge has a canonical rescaling or source class that repairs it.
+AF-175's interpolation rescue is specific to uniformly interpolating Blaschke families. XF-086--XF-087 are specific to the guarded visible-moment interface and do not prove the source Xi endpoint regularity needed for a small trapezoid defect. These examples do not imply that every ill-conditioned representation has a canonical good stratum or every continuum problem has a stable source-forced discretization.
 
 ## Epistemic status
 
-The component statements are persisted exact mathematics built from classical conditioning, pseudohyperbolic, Hardy, and harmonic-measure mechanisms. The cross-line principle is supported synthesis, not a theorem about RH.
+The component statements are persisted exact/literature-backed mathematics. The cross-line principle is supported synthesis, not an RH theorem.
 
 ## Falsification criterion
 
-Produce a Mathia bridge whose declared destination metric collapses and whose inverse remains ill-conditioned on the source-forced admissible class, yet whose final theorem stays uniformly coercive without another quotient/scale theorem; or show that one of the AF-171/XF-083 stability restorations is not actually matched to its claimed destination resource. Either outcome would narrow this synthesis.
+Produce degree-uniform recovery on an AF source family whose interpolation modulus degenerates in the manner of the negative controls, or violate the exact XF static/grid statements in their proved regimes. More broadly, a source-forced theorem that remains uniformly stable without specifying quotient, scale, source class, degree regime, or the relevant continuum interface would narrow this synthesis.

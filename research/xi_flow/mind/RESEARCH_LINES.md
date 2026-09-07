@@ -2,34 +2,32 @@
 
 This file holds the current mathematical questions suggested by the durable Xi-flow intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Construct a real-divisor source bridge; generic local approximation is no longer the right interface
+## Extract the actual Xi visible-moment state and control the continuum-to-grid Volterra defect
 
-**Linked intuitions:** `MI-001-collision-safe-coordinates-separate-singularity-from-source-information`, `MI-005-pointwise-selector-control-is-not-time-frequency-coercivity`, `MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow`, `MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy`, and `MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global`.
+**Linked intuitions:** `MI-001-collision-safe-coordinates-separate-singularity-from-source-information`, `MI-005-pointwise-selector-control-is-not-time-frequency-coercivity`, `MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow`, `MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy`, `MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global`, and `MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility`.
 
-XF-073--XF-080 establish that the Gaussian/Appell quotient is superpolynomially accurate on the center geometry, locally compressible at the ordinary Vieta mode count, and sufficient at one center for the exact guarded selector, but that an arbitrary accurate trigonometric surrogate can be Vieta-ill-conditioned.
+XF-081--XF-083 separate unrestricted carrier nonidentifiability from stable real-divisor observation. XF-084--XF-086 then replace generic root placement by the destination-visible moment problem: a guarded moment vector with `o(J^3)` resource automatically lies in a fixed positive cone and admits an exact degree-`N` equal-weight real-divisor realization at the Xi node budget.
 
-XF-081--XF-082 strengthen that negative result. Exponentially invisible Chebyshev corrections can prescribe a long Vieta prefix while preserving center-local function accuracy, and the ambiguity survives the **exact same periodic backward heat equation** throughout every Xi-relevant fixed heat interval. Local approximation plus exact free-heat compatibility therefore does not define the divisor state.
+XF-087 closes a second apparent existence problem. Once the first `K` moments are realized, their exact periodic heat evolution is determined by that prefix alone and is **exactly the composite-trapezoid frequency discretization** of the canonical one-sided Volterra/Burgers equation. The flat-density endpoint half-weights reproduce the known Cauchy damping exactly; high periodic moments and root labels cannot change the guarded low-mode trajectory.
 
-XF-083 identifies the correct positive interface on real-rooted slices. For same-degree periodic carriers whose roots are all real modulo the period, exponentially accurate agreement of the center-half-line **logarithmic derivative** forces exponentially accurate agreement of every source-visible power sum and the full XF-079 guarded selector. The continuation cost is only `exp(O(m))`, harmless throughout the current `m=o(D)` mode range.
+The live bridge is therefore quantitative, not existential: extract the actual Xi target moments with controlled guarded resource, then prove that the continuum Volterra convolution and its exact periodic trapezoid discretization remain close in the guarded band after the singular endpoint/background contribution is renormalized source-faithfully.
 
-The live source bridge is now an existence/root-faithfulness theorem: place the transported actual Xi logarithmic data into the admissible real-divisor periodic class with `exp(-cD)` accuracy, or derive an equivalent direct selector map. The already persisted clue `CLUE-relative-xi-source-to-guarded-selector-stability` states this handoff precisely.
+## Keep source extraction, continuum-to-grid consistency, and positive-transition coercivity separate
 
-## Keep real-divisor identifiability separate from real-divisor existence
+Static equal-weight feasibility and low-mode periodic heat closure are now established conditional on the target moment state. They do not prove that the actual Xi source yields that state with `o(J^3)` resource, that the singular endpoint permits a small trapezoid defect, or that a hypothetical positive-`Lambda` transition creates order-one guarded mass.
 
-XF-083 removes the Chebyshev/Vieta nonidentifiability **conditional on two real-divisor carriers**. It does not construct such a carrier from Xi, prove that the relevant positive-time/reference transport stays in the real-rooted class, or cross a genuinely complex-root interval.
+A useful theorem should state exactly which of these three remaining gates it crosses. Generic root matching, high-mode completion, and periodic heat compatibility are no longer independent burdens in the live band.
 
-A useful theorem should therefore state the exact time slice, degree, normalization, contour, and logarithmic-derivative norm in which a real-rooted periodic carrier is produced. Root matching, simplicity, and a gap lower bound are not required by XF-083, so they should not be added unless the construction itself needs them.
+## Match the relative Xi source margin to guarded-resource extraction and endpoint quadrature
 
-## Match the relative Xi source margin to the guarded destination conditioning
+Analytic Frontier supplies an unconditional moving-line relative Xi periodization with polynomial factors times `exp(-(log T)^4/8)`. The strengthened accepted clue `CLUE-relative-xi-source-to-guarded-selector-stability` now isolates the residual task: derive the finite target moments and guarded resource from that source/reference description, and control the Volterra endpoint/background well enough that the trapezoid defect is negligible on `J<=m<=K`.
 
-Analytic Frontier now supplies an unconditional relative Xi periodization on a moving zero-free line with error of order polylogarithmic factors times `exp(-(log T)^4/8)`. XF-083 shows that such an exponential margin is ample for low Vieta recovery **once** the real-divisor hypothesis is satisfied.
-
-The remaining conditioning budget is therefore concentrated in the positive-time/reference transport and admissible-carrier construction, not in center-to-power-sum continuation. A bridge theorem should track that margin directly into the `X(B)` selector rather than stop at function approximation.
+For an ordinary smooth residual field the mesh `Delta~log^{-3}T` leaves enormous consistency margin, but XF-051 warns that the actual positive-frequency carrier has a singular endpoint. The needed estimate must address that source structure rather than assume a global `C^2` profile.
 
 ## Identify a positive-transition state that remains nontrivial in the same guarded quotient
 
-Even a perfect source dictionary would not prove `Lambda<=0`. A positive-transition theorem must still show that a hypothetical `Lambda>0` configuration produces order-one mass in the same guarded weighted resource after all localization and conditioning. Source accuracy and destination identifiability are prerequisites, not transition coercivity.
+Even a complete source-to-grid theorem would not prove `Lambda<=0`. A positive-transition theorem must still show that a hypothetical `Lambda>0` configuration produces order-one mass in the same guarded weighted resource after all localization, quotienting, and consistency errors.
 
 ## Match upstream zero information without averaging away the center variable
 
-Any analytic-frontier input must retain the horizontal/local information consumed by the real-divisor logarithmic interface and guarded selector. Bulk or low-frequency averages are insufficient unless a theorem shows that they survive the exact source-to-destination map.
+Any analytic-frontier input must retain the horizontal/local information consumed by the visible moment state and guarded selector. Bulk or low-frequency averages remain insufficient unless a theorem shows that they survive the exact source-to-destination map.

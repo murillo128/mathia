@@ -2,15 +2,15 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Measure genuinely nonseparable center-height geometry beyond the protected cones
+## Convert exact Montgomery--Taylor projection taxes into separable-cone stability
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-081 closes every finite real multiset for the fixed central-notch certificate. ANF-083 removes the apparent pair-count loss in the complex lift: an entrywise-nonnegative Montgomery--Taylor kernel gives one fixed positive-width height strip, independent of the number of nonreal pairs, horizontal positions, multiplicities, and collisions, on which the same affine certificate still improves Montgomery--Taylor.
+ANF-081 closes every finite real multiset, ANF-083 gives a fixed complex-height strip independent of pair count, and ANF-085 proves all-height safety for separable center-height occupation. ANF-086 then gives a fixed Hilbert tube around that separable cone: any configuration defeating the affine certificate must stay a definite distance from the cone while being Montgomery--Taylor near-extremal.
 
-ANF-085 then closes a second large class outside that strip. If the center-height occupation is separable -- every horizontal center carries the same finite symmetric vertical profile up to a nonnegative scalar -- the certificate holds at **all heights**. Large height, large multiplicity, and many nonreal pairs are therefore not independent escape resources.
+ANF-087 identifies the exact equality locus as a real at-most-two-site packing already inside the safe class. ANF-088 removes most of the remaining ambiguity in “near extremal.” The Montgomery--Taylor excess is an exact sum of nonnegative taxes: distance from a canonical `2/1/0` tensor signature, real projection leakage, multiplicity defects, nonreal antisymmetric projection leakage, and the negative spectral tail. Exact dimensions are always saturated, so there is no algebraic rank-loss escape.
 
-The surviving pairwise frontier is a genuinely **nonseparable center-height correlation** outside the protected strip. A useful next invariant should quantify departure from the positive/separable cone and prove either that a small defect remains controlled or that a specific rank-two-or-higher occupation pattern can defeat the certificate. Do not reopen real multiplicity or pair-count complexity without falsifying ANF-081/ANF-083.
+The surviving all-cardinality gate is therefore a **conditioning-to-geometry theorem**. Prove that the projection-collapse/Gram-Schur regime forced by small excess also drives the normalized destination distance `d_sep` to zero; or construct growing exponential systems whose Gram conditioning degenerates enough that every ANF-088 tax is small while `d_sep` remains bounded below. Generic pair count, height, multiplicity, and exact rank are no longer the frontier.
 
 ## Treat relative Xi source reconstruction as solved until destination conditioning fails
 
@@ -18,13 +18,13 @@ The surviving pairwise frontier is a genuinely **nonseparable center-height corr
 
 ANF-084 gives an unconditional moving-line relative periodization of the actual Xi source at `sigma_T=1+1/log T`, with Gaussian width `log T` and period `(log T)^3`. The function and fixed logarithmic derivatives are recovered with polynomial factors times `exp(-(log T)^4/8)`, while prime leakage is exponentially smaller on the relevant scale.
 
-This closes the obvious source-side objection that moving to a zero-free Euler-product line or differentiating the image necessarily destroys the available accuracy. The live cross-line question is whether the positive-time/reference transport and the eventual guarded selector have a normalized conditioning cost small enough to preserve that margin. The existing Xi clue `CLUE-relative-xi-source-to-guarded-selector-stability` owns the speculative handoff; this line should not duplicate it as a second claim.
+The live handoff is downstream: whether the source/reference transport reaches the finite guarded Xi state with enough quantitative margin. The existing Xi clue owns that cross-line question.
 
-## Separate pairwise nonseparability from genuinely higher-order carrier complexity
+## Introduce higher-order carriers only after the projection-conditioning gate fails
 
-ANF-083 and ANF-085 greatly enlarge the class controlled by the scalar pair energy, but they do not prove that every nonseparable high configuration is hard. Before introducing a higher-order carrier, test whether the remaining occupation matrix can be controlled by a quantitative defect from the separable cone, a positive-kernel factorization, or another source-faithful pairwise estimate.
+ANF-088 shows that a complex near-extremizer must make specific finite exponential Gram/Schur complements anomalously small; it cannot hide behind exact dimension loss. Before introducing a higher-order carrier, test separated subclasses with quantitative nonharmonic-Fourier/Riesz bounds and determine whether the unrestricted growing-cardinality regime admits a genuine ill-conditioned counterexample.
 
-A higher-order mechanism becomes justified only after a concrete nonseparable configuration survives the optimized pairwise certificate. The fact that a configuration is outside the current theorem is not itself evidence that higher-order information is required.
+A higher-order mechanism becomes justified only after a concrete family survives both the exact projection-tax controls and the separable-distance test.
 
 ## Keep diffraction realizability separate from the affine counting certificate
 

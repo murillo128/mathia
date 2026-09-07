@@ -2,50 +2,50 @@
 
 This file holds genuinely cross-line mathematical questions suggested by the durable Mathia intuitions. It is not a summary of the local minds, a roadmap, task queue, status page, or history.
 
-## Measure complexity only after the strongest destination quotient and universal control have been applied
+## Measure complexity only after quotient, gauge, algebraic closure, and universal control
 
 **Linked intuitions:** `MI-001-preserve-structure-before-compressing`, `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, and `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Several recent lines have removed quantities that looked like intrinsic complexity. Analytic Frontier now closes all real multiplicity, every fixed positive complex-height strip independently of pair count, and all-height **separable** center-height occupations; its scalar frontier begins only with genuinely nonseparable high center-height correlation. Möbius Cancellation shows that the long one-sided radial filter required for uniform attenuation outruns the entire physical shell support, turning apparent smallness into a boundary artifact. Prime Lattice places the remaining parity information beyond subpower local-factor data and also shows that arbitrary high phase is not a resource by itself.
+Several lines now remove complexity that looked intrinsic before the strongest control was applied. Analytic Frontier reduces its scalar near-extremizer to exact projection/conditioning taxes rather than pair count or exact rank. Prime Circle closes a finite cross-shell scalar algebra under character packets and rational Fourier rays. Prime Lattice shows that one-dimensional finite-fiber unitary cocycles are pure gauge. Visual Exploration separates additive, positive-cone, and signed Fourier support rather than treating all nonlinear prime mixing alike.
 
-The cross-line question is to identify the smallest source-specific variable that survives the best known quotient/control: a nonseparable center-height defect, signed boundary/tail coupling, parity-sensitive large-factor interaction, source-forced completed channel, or another relational resource. Complexity visible before the strongest certificate is proof complexity, not necessarily arithmetic complexity.
+The cross-line question is to identify the smallest source-specific variable that survives **all** relevant reductions: destination quotient, gauge, classical packet algebra, matched control, conditioning, and normalization. Complexity visible before those reductions is proof or representation complexity, not necessarily arithmetic complexity.
 
-## Separate retention, extractability, visibility, and source-class admission
+## Separate retention, static admission, discrete dynamics, continuum transport, visibility, resolution, and reassembly
 
-A resource can survive algebraically and still fail before the theorem consumes it. Weil Inertia already separates selected signal, complement cancellation, activation, global normalization, and source resolution. Prime Flute now has endpoint body energy and a weak-trace thin sector, but the local conservative splice still decides whether strong or weak/Lorentz geometry reaches the uncut operator. Xi Flow has enormous center-local source accuracy and a stable real-divisor logarithmic inverse, but it still has to **construct/admit** the actual transported source into that real-divisor class.
+A resource can survive algebraically and still fail before the final theorem consumes it. Xi Flow now demonstrates an unusually complete separation: guarded energy can force exact static equal-weight real-divisor realization, and the resulting low-mode periodic heat law is exactly the trapezoidal discretization of the canonical Volterra flow. The remaining source bridge is extraction of the actual Xi moments plus endpoint-sensitive continuum-to-grid consistency, not generic root or heat compatibility.
 
-A candidate should state which gate it crosses: retention in the representation, extraction in the required coordinates, admission of the actual source into the stable class, normalized visibility at theorem scale, and source-side resolvability. Passing one gate is not evidence for the next.
+Prime Flute has a prime-summable local `L log L` endpoint currency but still lacks the uniform hyperbolic operator estimate and lossless global reassembly. Weil Inertia has an exact classical Atkinson phase/Jacobian skeleton but still needs control of the shifted-prime fiber coefficient. Passing one gate is not evidence for the next.
 
-## Match stable inversion to both the destination scale and the admissible source class
+## Match stable inversion to the destination quotient, scale, source class, and degree regime
 
 **Linked intuition:** `MI-008-exact-recovery-is-not-stable-transport`.
 
-Arithmetic Fidelity and Xi Flow now give complementary exact controls. AF-169--AF-170 show that even the complete finite Blaschke inner function can collapse a regular radial divisor direction in `H^infinity` at fixed interior scale. AF-171 restores uniform fidelity on the source-natural boundary layer through the compressed coordinate `r^n`. XF-081--XF-082 show that arbitrary center-local heat-compatible carriers have a huge Vieta nullspace, whereas XF-083 proves exponential low-mode stability inside the real-divisor class when the logarithmic derivative is used.
+Arithmetic Fidelity now gives a sharp hierarchy. Quotienting the output phase exposes an intrinsic pseudohyperbolic metric; unrestricted degree-`n` divisor recovery has a sharp `1/n` worst-case exponent; a source-natural boundary layer restores the right scale; and a uniform interpolation constant restores degree-independent local Lipschitz recovery. Xi Flow supplies the complementary admission/dynamics example: an unrestricted local carrier class has a Vieta nullspace, while the destination-weighted guarded resource forces static feasibility and fixes the exact low-mode grid dynamics.
 
-The next bridge theorem must therefore declare the destination quotient, metric, normalization, and source class together. A rescaling or admissible-class restriction is legitimate only when the downstream theorem or source geometry forces it; otherwise it is another representation choice made after seeing the obstruction.
+The next bridge theorem must therefore declare its output quotient, destination norm/normalization, source regularity class, degree regime, and continuum/discrete interface together. A rescaling, quotient, restricted class, or discretization is legitimate only when the source or downstream theorem forces it.
 
-## Treat finite scalar/phase/visual structure as control geometry until a source-forced boundary is proved
+## Treat finite scalar, phase, packet, and visual enrichment as control geometry until a signed relational escape survives
 
-Prime Circle, Prime Lattice, and Visual Exploration now give a common warning at three scales. PC-195--PC-196 show that the attractive `p^(3/4)` reciprocal-shell zero scale is a singular `alpha=2` Fourier-tail cancellation and disappears under fixed `1<alpha<2` deformation. PL-191--PL-192 show that the same unweighted finite prime-band carrier can flatten at sub-PNT escaping centers and recur at arbitrarily remote centers. VIS-067--VIS-071 go further: the complete fixed-finite shared-prime-phase null is explicit, and deterministic vertical prime flow has exactly that Haar law in long-height average.
+Prime Circle, Prime Lattice, Visual Exploration, and Weil Positivity close several ways of adding apparent structure without adding a source-specific discriminator. Finite scalar cross-shell packet fusion remains classical Dirichlet data; finite unitary shift cocycles on a line are gauge; holomorphic mixed-prime products can remain in a positive frequency cone; and finite bounded projective completions cannot carry the exact Gamma relative phase.
 
-A spectral zero, high-phase feature, covariance ridge, nonlinear shape, or topological visual becomes interesting only at a source-forced boundary of these controls: a canonical deformation/center, a quantitative growing-support regime, a finite-window residual against frequency-preserving dynamics, or another relation not already generated by the same finite torus/boundary model.
+A surviving mechanism should identify the source-forced operation that leaves those closed classes and then show that the resulting signed or relational quantity survives the final quotient. “Matrix-valued,” “nonlinear,” “cross-shell,” or “positive” is not itself an escape criterion.
 
-## Match local-to-global transport to the exact endpoint topology
+## Match local-to-global transport to the exact endpoint topology and concentration currency
 
-Prime Flute and Xi Flow sharpen different sides of the same interface problem. PF-192--PF-193 show that generic strong `L^1` rigidity fails and even exact determinant one does not remove the laminate obstruction at matrix level; the line must either use additional PF-specific structure for a strong splice or work directly at weak/Lorentz endpoint and prove sufficient operator reassembly. Xi Flow shows that generic local accuracy is insufficient, but a real-divisor logarithmic interface is stable; its remaining bridge is the existence/transport theorem into that class.
+Prime Flute and Xi Flow sharpen complementary sides of this rule. PF-192--PF-196 show that strong `L^1`, one-sided weak-`S_2`, and symmetrized `L log L` endpoints charge the same local geometry differently; only the last currently has a proven prime-summable local cost, and global reassembly remains separate. XF-084--XF-087 show that the correct finite visible quotient can remove both static root-placement and low-mode heat ambiguity, leaving one explicit endpoint-sensitive Volterra quadrature error.
 
-A bridge should therefore be proved in the topology and admissible geometry actually consumed downstream. Stronger mismatched norms can fail for irrelevant reasons, while weaker ones can erase the discriminator. Endpoint topology, inverse conditioning, and source-class constraints are part of the mathematical statement.
+A bridge should therefore be proved in the topology, quotient, concentration currency, and discrete/continuum interface actually consumed downstream. Stronger mismatched norms can fail for irrelevant reasons, while weaker or positive ones can erase the discriminator.
 
-## Use completed relational positivity when scalar order is the wrong object, but derive the completion upstream
+## Use completed relational positivity only when it preserves source incidence and signed orientation
 
 **Linked intuition:** `MI-002-the-surviving-arithmetic-variable-is-relational`.
 
-Weil Positivity adds a constructive refinement to the category-escape principle. WP-181 shows that scalar de Branges--Rovnyak positivity at a dissipative boundary is exhausted by a divergent absorption pole, with sign-indefinite scalar phase in the finite part. WP-182 shows that a canonical Pythagorean defect channel can be retained before the limit so the **completed two-channel** kernel remains finite and positive while the scalar phase changes sign.
+Weil Positivity gives both a constructive control and a no-go boundary. A Pythagorean two-channel completion can restore finite positivity after scalar dissipation, but finite regular projective analytic completion cannot realize the exact Gamma relative phase, and a universal positive-semidefinite boundary projector loses the sign of phase velocity in its positive metric data.
 
-This demonstrates that useful coercivity may live on a completed relational object rather than on the target scalar alone. But the same completion exists for arithmetic-free passive controls. The global research question is therefore whether Mathia can derive the compensating channel and its finite--archimedean coupling from source geometry before fitting the target. Universal completion after scalarization is a control, not evidence.
+The global question is whether Mathia can derive a completed channel from source geometry in which finite-prime incidence, archimedean response, and signed orientation survive together. Universal completion or pointwise PSD encoding after scalarization is a control, not evidence.
 
 ## Demand replacement coercivity after every genuine category exit
 
-Recent evidence makes this rule more specific. Möbius Cancellation cannot leave local radial filtering merely by using a longer transform unless the displaced signed boundary/source term is reconstructed. Prime Flute cannot leave `r>1` rigidity merely by invoking incompressibility at `r=1`. Weil Positivity can leave scalar dissipative failure only because a completed positive kernel supplies a new ordered object. Xi Flow can leave generic Vieta nonidentifiability only after real-divisor Hardy structure supplies a new stable inverse.
+Leaving a no-go class only relocates the proof obligation. Möbius Cancellation must replace sub-`L1` moment control by dense-scale or correlation-coupled excursion information. Prime Lattice must replace one-dimensional cocycles by a source-forced gauge obstruction or another coercive category. Weil Inertia must control the prime-weighted Atkinson coefficient. Weil Positivity must provide a sign theorem in the new analytic category. Xi Flow must prove actual-source moment extraction and endpoint-aware continuum-to-grid consistency.
 
-“Not covered by the obstruction” is only a frontier condition. A successful category change names the replacement coercivity, reconstruction, stability, or source-class theorem **after** the change and proves that the actual source lies in its domain.
+“Not covered by the obstruction” remains only a frontier condition. A successful category change names and proves the replacement stability, reconstruction, coercivity, or source-admission theorem after the change.
