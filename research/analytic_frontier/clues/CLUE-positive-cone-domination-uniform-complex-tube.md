@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-positive-cone-domination-uniform-complex-tube
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: analytic_frontier
 based_on:
@@ -139,3 +139,9 @@ This is a proposed analytical handoff, not a canonical finding or an independent
 No theorem-level novelty is claimed for entrywise-nonnegative Gram forms, coefficient domination, or Hilbert-norm perturbation. Primary background is Carneiro--Chandee--Littmann--Milinovich, *Hilbert spaces and the pair correlation of zeros of the Riemann zeta-function*, arXiv:1406.5462, and Buescu--Paixao, *Positive-definiteness and integral representations for special functions*, arXiv:1801.09537. These anchor the kernel/Fourier-Laplace framework, not the specific uniform affine splice (B)--(F); no RH-conditional zero statistic from those works is imported.
 
 The construction retains `s<1`, compact spectral support, positive multiplicities, and conjugation symmetry. It does not prove monotonicity of energy under arbitrary vertical motion, cover heights above `h_*`, eliminate a genuinely positive-height obstruction, improve an unconditional zero proportion, or resolve RH. Success would specifically show that the `p^(-1/4)` loss was unnecessary for this fixed comparable-notch family.
+
+## Research disposition
+Outcome: supported
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-083-positive-cone-domination-removes-pair-count-loss.md]]
