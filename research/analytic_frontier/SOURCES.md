@@ -75,6 +75,12 @@ This file records durable literature dependencies for `research/analytic_frontie
 - Thomas Lince / `teal-sea/zeta-lab`, `hunts/family_wall/FAMILY-LIMIT.md`, inspected at repository commit `c140868c2780d19187134e0f8f9f5f00d8b72cb9` (2 September 2026). Role: public research-artifact prior art for `ANF-009`; independently studies the same `n_point_bound` pressure family, records its asymptotic return to `H`, and derives a stronger finite all-`n` numerical envelope after an adversarial repair. It is neither a Palomar theorem nor peer review and is used only to classify prior art and compare boundaries, not as proof of `ANF-009`.
 - Ainta, `ainta/zeta-simple-zeros`, seven-point local-gap refinement as audited and generalized by the `zeta-lab` bridge. Role: prior-art origin of the consecutive-gap/block-defect mechanism; its larger numerical certificate remains an external finite inequality rather than an unconditional Lean theorem in the bridge.
 
+## Bandlimited Poisson extremals and profile localization
+
+- Emanuel Carneiro, Andrés Chirre and Micah B. Milinovich, **Bandlimited approximations and estimates for the Riemann zeta-function**, *Publicacions Matemàtiques* 63:2 (2019), 601–661, DOI `10.5565/PUBLMAT6321906`; arXiv:1710.10362. Role: primary source for the extremal one-sided bandlimited Poisson-kernel functions used as the classical probe in `ANF-106`; Lemma 9 gives the relevant extremal functions and their compactly supported Fourier transforms.
+- Emanuel Carneiro and Micah B. Milinovich, **On Littlewood's estimate for the modulus of the zeta function on the critical line**, arXiv:2403.17803v1 (2024). Role: reproduces the Poisson extremals in Lemma 3 in the exact normalization used to identify the probe in `ANF-106`; its downstream zeta estimates assume RH, but no RH-conditional estimate is imported by `ANF-106`.
+- P.-L. Lions, **The concentration-compactness principle in the calculus of variations. The locally compact case, part 1**, *Annales de l'Institut Henri Poincaré C, Analyse non linéaire* 1:2 (1984), 109–145, DOI `10.1016/S0294-1449(16)30428-0`. Role: conceptual prior-art boundary for translation/dichotomy localization; no concentration--compactness theorem is load-bearing in the explicit finite estimates of `ANF-106`.
+
 ## Expansion rule
 
 Add a source here only when it becomes a durable dependency for a canonical finding or a repeated falsification boundary. Recent preprints should be anchored only after the line has identified the exact load-bearing theorem or estimate being used.

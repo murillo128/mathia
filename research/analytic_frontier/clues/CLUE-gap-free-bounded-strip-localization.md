@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-gap-free-bounded-strip-localization
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: analytic_frontier
 based_on:
@@ -245,3 +245,10 @@ P.-L. Lions, *The concentration-compactness principle in the calculus of variati
 Several distinctions must survive review. A real-axis nonnegative or positive-definite function need not have positive real part on a complex strip; (5) is a separate load-bearing proof. Signed coefficients would invalidate (7). A fixed unlucky grid may repeatedly cut closely spaced pairs, so only existence of a good shift is asserted. Spectral positivity does not justify deleting negative source cross terms. Source-negligible counting tails and source-negligible energy tails are not interchangeable.
 
 Finally, `H` is fixed before sending `R` to infinity, and (8) grows exponentially with `H`. The unrestricted envelope allows height to grow along near-extremizers, so it must not be replaced without proof by `sup_H beta_(eta,H)`. Nor do (16)--(17) supply one compact set for the zero-error limit: the witness bound grows as the desired localization error shrinks. Collisions change `sigma`, so any finite-box verification must preserve the real/nonreal and multiplicity strata instead of assuming continuity of the affine denominator. The unbounded-height source-heavy mechanism in ANF-103--ANF-104 remains open.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-106-gap-free-bounded-strip-localization-reduces-fixed-notch-exposure-to-finite-physical-boxes.md]]
