@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-relative-xi-source-to-guarded-selector-stability
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -58,6 +58,10 @@ This clue therefore transfers established source and destination theorems into o
 
 ## Research disposition
 
-Accepted for active investigation. The line-local evidence now removes the two generic reasons this handoff was previously too speculative. `XF-073` supplies a source-faithful relative Gaussian/Appell periodization inside `xi_flow`; `XF-083` gives identifiability inside the real-divisor class; `XF-085`--`XF-086` show that any finite target moment vector with the already-required guarded resource control has an exact degree-`N` equal-weight real-divisor realization; and `XF-087` shows that the resulting first-`K` periodic heat trajectory is not an arbitrary surrogate but the exact trapezoidal frequency discretization of the canonical XF-051 Volterra flow.
+Resolved by `XF-097`.
 
-The unresolved question is therefore precise: extract the actual Xi finite target moments with controlled guarded resource and prove continuum-to-grid Volterra consistency after the endpoint/background renormalization, on the `J<=m<=K` band and with the available source-relative error margin. The separate positive-`Lambda` transition-mass implication remains outside this clue. Acceptance records that this residual is now a plausible, falsifiable active direction; it does not validate the transferred cross-line premise, assert that the required endpoint estimate holds, or promote the clue to evidence.
+**Outcome:** narrowed. The cross-line relative-periodization handoff is no longer needed to close the middle bridge. `XF-097` works entirely inside `xi_flow`: the exact prime-free Xi endpoint formula of `XF-052` shows that the complete first-`K` sampled Volterra prefix has normalized `ell^1` mass `o(1)` at the existing `N=2q^2` node budget, so `XF-085` realizes that whole prefix exactly by an equal-weight real periodic divisor. Keeping the frozen endpoint counterterm of `XF-088`--`XF-092`, the residual cross-convolution is guarded-small, and a triangular stability estimate then shows that the exact `XF-087` periodic trajectory shadows the canonical Xi sampled trajectory by `o(1)` in the one-center guarded resource for the full fixed heat interval.
+
+Thus the substantive question this clue was carrying — source-faithful Xi data -> real periodic carrier -> guarded selector with dynamically compatible transport — now has a stronger direct line-local solution. The `ANF-084` relative Gaussian route remains a valid neighboring construction, but it is not load-bearing for this bridge and is not being asserted or revalidated here. The accepted remote-wave control also remains valid: the new carrier passes it by matching the complete first-`K` moment prefix rather than by matching nearby roots.
+
+The separate positive-`Lambda` transition-mass implication is untouched. Resolution of this clue records closure of the middle source/carrier/transport interface only; it is not evidence that a positive transition forces order-one guarded destination mass and is not an upper bound on `Lambda`.
