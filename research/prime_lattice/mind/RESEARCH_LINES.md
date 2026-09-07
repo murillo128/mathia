@@ -4,26 +4,28 @@ This file holds the current mathematical lines of investigation suggested by the
 
 ## Require a parity-sensitive large-tail coupling before assigning arithmetic meaning to the affine carrier
 
-**Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`, `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, and `MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution`.
+**Linked intuitions:** `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`, `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, `MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution`.
 
-PL-184--PL-188 show that bounded-variation targets, polylogarithmic residue labels, and the shifted-prime exponent vector below any subpower cutoff are asymptotically controlled by classical one-point information. The genuinely unresolved Möbius/Liouville information therefore lives in the large-prime tail or in a coupling that reaches it. A live exponent-lattice mechanism must expose a parity-sensitive cross-tail relation rather than merely enlarge the local coordinate block.
+PL-184--PL-188 show that bounded-variation targets, polylogarithmic residue labels, and shifted-prime exponent vectors below any subpower cutoff are controlled by classical one-point information. The genuinely unresolved Möbius/Liouville content lies in the large-prime tail or in a coupling that reaches it. A live exponent-lattice mechanism must expose a parity-sensitive cross-tail relation rather than merely enlarge the local coordinate block.
 
-## Treat scalar affine phase geometry as classified until a canonical center is supplied
-
-PL-187--PL-192 show that broad scalar phase geometry is controlled either by ordinary prime density, local readout, or almost-periodic recurrence. `center -> infinity` has no universal arithmetic meaning. Any surviving scalar theorem must prescribe its center from source structure and prove target-specific cancellation there.
-
-## Treat exactly commuting invertible prime multishifts as gauge/programming controls, including operator-valued nonunitary fibers
+## Treat exact same-parameter resolvent transport as either programmable at one point or trivial across the family
 
 **Linked intuition:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`.
 
-PL-193--PL-197 close scalar phase gauge and exact unitary state-dependent repairs: flat prime squares integrate to a global vertex gauge, while exact resolvent covariance can coexist with arbitrary programmed vertex information. PL-201 extends the collapse to nowhere-zero scalar nonunitary weights. PL-202 closes the simplest genuinely operator-valued invertible repair as well: exact commutation on an arbitrary Hilbert fiber integrates the edge field algebraically as `A_p(alpha)=G(alpha+e_p)G(alpha)^(-1)`, and exact self-adjoint resolvent covariance can carry an arbitrary uniformly bounded operator-valued spectral field while the prime action remains a bounded gauge of the canonical shifts.
+PL-193--PL-202 close scalar phase gauges, scalar nonunitary weights, state-dependent unitary flat connections, and invertible operator-valued fibers. PL-203 shows that even injective dense-range noninvertible edge weights can carry an arbitrary reducing spectral field: failure of bounded invertibility by itself is still programmable. PL-205 shows that bounded fiberwise exact covariance between self-adjoint resolvents forces every edge range to be dense, excluding proper closed range, cokernel, and isometric unilateral defects.
 
-Thus neither scalar moduli nor invertible operator-valued fiber dynamics create arithmetic curvature or rigidity by themselves. A source-relevant prime action must survive **flat-gauge removal and programmability controls** even after nonunitary operator-valued similarity is allowed. Live exits are now narrower: singular/noninvertible or domain-sensitive transport, approximate/ideal-valued covariance, genuinely noncommuting source actions, target-relative quotients/compressions where the cubical gauge argument fails, or a source-forced curvature with a replacement coercivity theorem.
+PL-206 closes the remaining fixed-edge interpretation at the level of a genuine resolvent family. If the **same bounded left edge** transports two distinct spectral parameters, the first resolvent identity forces that edge to be the identity and the neighboring operators to be equal. A nontrivial exact prime action across the resolvent set must therefore depend on the spectral parameter or move that parameter, as the canonical logarithmic shift does; a fixed same-parameter multiplier is not a viable Hamiltonian principle.
+
+The surviving operator route must now make arithmetic content load-bearing in a spectral-parameter-dependent transfer law, parameter shift, kernel/domain defect outside fixed-edge family transport, approximate/ideal-valued covariance, non-fiberwise coupling, or genuinely noncommuting source action. Each such exit still requires a programmability and coercivity audit.
+
+## Keep Nyman target sensitivity but reject arbitrary-inner model-space spectralization
+
+**Linked intuition:** `MI-003-nyman-obstruction-is-target-data`.
+
+The off-line Blaschke factor is genuine target/model-space information that generator Gram geometry cannot see. PL-204 tests the most canonical target-relative spectral repair: compress the exact prime semigroup to `K_B=H^2\ominus BH`. Zeros of `B` do become joint adjoint prime eigencharacters, but the construction works for an arbitrary Blaschke divisor, including a single freely chosen off-critical point.
+
+Thus zero sensitivity is not zero selection. A useful Nyman/prime-lattice construction must contain a source-forced relation unavailable for arbitrary inner functions and use it to derive a sign, coercivity, or localization theorem. Merely passing to the model space of the already-supplied divisor is a faithful encoding, not an RH mechanism.
 
 ## Force completed arithmetic sign or one-sided coercivity upstream
 
-A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, pointwise phase, moving-window geometry, or exactly commuting invertible covariance contains no nonprogrammable arithmetic coupling.
-
-## Resolve target-sensitive Nyman data and genuinely relational prime-shift actions
-
-Joint factor-range couplings, several shifted targets, completed source/target operators, and target-sensitive Nyman data remain live only when they preserve information beyond the local sieve/Kubilius sigma-algebra and survive the final observation regime. For prime-shift actions, state dependence, scalar nonunitarity, and invertible operator-valued fibers no longer suffice; the surviving relation must be forced by arithmetic rather than by a freely chosen vertex gauge or spectral field.
+A decisive theorem should derive an RH-level sign or checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical boundary, phase law, flat covariance, singular decoration, fixed resolvent transport, or inner divisor can be programmed independently of the Riemann source.

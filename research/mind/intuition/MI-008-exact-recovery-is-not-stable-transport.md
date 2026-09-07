@@ -1,39 +1,45 @@
-# MI-008 — Stable transport is relative to quotient, safe source geometry, scale, and continuum interface
+# MI-008 — Stable transport is jointly limited by source resolution, destination danger, and interface topology
 
-**Evidence level:** supported by exact asymptotic fidelity controls through AF-177, analytic-frontier safe-cone conditioning controls through ANF-090, and exact Xi static/discrete renormalization controls through XF-089
+**Evidence level:** supported by exact adaptive-fidelity controls through AF-186, physical near-extremizer reductions through ANF-101, and exact Prime-Flute/Xi interface reductions through PF-204 and XF-098
 
 ## Core intuition
 
-Exact recovery and tiny forward error remain insufficient, but stability is now more structured than a single condition number. It depends on the **maximal destination quotient, asymptotic scale, admissible source class, degree regime, safe/null directions of the destination geometry, and the exact continuous/discrete transport interface**.
+Exact recovery, small forward error, and even an exact source representation do not determine whether information reaches the final theorem stably. The correct transport problem has three distinct gates: **source resolution**, **destination danger geometry**, and the **analytic topology of the interface**. These gates can move independently, and closing one should not be confused with closing the next.
 
-Arithmetic Fidelity shows that the same complete inner-function representation can collapse on one growing source stratum and become uniformly invertible on another after the correct quotient and interpolation modulus are declared. ANF-090 supplies the complementary warning: a raw source condition number may diverge even on configurations that are exactly safe at the destination, so conditioning must itself be quotiented or calibrated to the dangerous geometry. Xi Flow shows that a discretization can become stable only after a source-fixed singular sector is removed with the correct mesh renormalization.
+Arithmetic Fidelity now quantifies source resolution for adaptive local complexity through a truncated associated function. Analytic Frontier shows that destination instability must be measured against the actual dangerous physical direction rather than a raw condition number. Prime Flute and Xi Flow show how interface topology can be progressively simplified until the residual burden is exposed in the category actually consumed downstream.
 
 ## Strongest justified principle
 
-AF-169--AF-170 show exponential contraction of a regular fixed-radius divisor direction even for the complete finite Blaschke factor. AF-171 restores a uniform boundary-layer scale, AF-172 extends it to a complex cyclic parameter, and AF-173 identifies the intrinsic output metric after quotienting arbitrary unimodular phase. AF-174 gives the sharp unrestricted fixed-degree `1/n` inverse exponent.
+AF-169--AF-177 show that after the correct output quotient, finite-Blaschke local inversion is governed by a separation/interpolation modulus. AF-180--AF-186 reveal a different family-wide obstruction: positive parity-split clusters remain exactly `W_1=delta` apart while higher cancellation order suppresses every observation allowed by a derivative budget. For general weights `M_m`, the optimized matched-control envelope is `exp[-Omega_(M,n_delta)(2/(A_delta delta))]`. Thus source-complexity growth and observation regularity must be declared together; exact sufficiency does not fix their resolution threshold.
 
-AF-175 then shows that a degree-independent interpolation constant restores degree-independent local Lipschitz recovery. AF-176--AF-177 prove the necessity side: cyclic perturbations and then universal Frostman shifts force local inverse slope `1/(2 delta(B))`, while AF-175 gives upper scale `1/delta(B)`. Thus for the declared metrics `delta(B)` is the intrinsic local source regularity modulus up to factor two.
+ANF-097--ANF-099 supply the destination-side correction. A raw source Gram condition number can be dominated by harmless separable near-null directions, and convexifying the safe set fills the physical cone. For one declared notch, the exact relevant scalar is instead the physical near-extremizer exposure `beta_eta`; improvement exists exactly when it remains below the target ratio. ANF-100--ANF-101 then localize the possible bad source geometries to a tight linear-scale bulk, a source-relevant sparse tail, or superlinear horizontal escape.
 
-Analytic Frontier shows why the modulus must match the destination null space. ANF-089 gives a valid bound from the raw cross-metric ratio `chi_s=b_s/a` to separable distance. ANF-090 constructs exactly separable product families with exponentially divergent raw `chi_s`. The small source Gram eigenvalue there measures finite-difference ill-conditioning of a comparator, not dangerous nonseparability. The next meaningful conditioning theorem must remove safe separable directions before interpreting a large condition number.
+PF-203--PF-204 give an interface example where the category itself changes the apparent burden. Form-level gluing removes an artificial cuff surface term, and the native two-Hilbert-space factorization keeps both resolvents smooth while isolating nonsmoothness in one bounded cotangent transport. The open theorem is the critical mixed transport estimate, not rough-resolvent regularity.
 
-Xi Flow supplies the source-class and discretization analogue. XF-084--XF-087 project the problem to destination-visible guarded moments, prove exact static equal-weight realization in the admissible cone, and identify the low-mode periodic heat vector field with the composite-trapezoid Volterra discretization. XF-088 shows that the raw endpoint pole invalidates a smooth quadrature comparison unless the forced `c log Delta delta_0` term is included. XF-089 proves that for Xi `c=1/4` is unchanged over positive heat time and that reference subtraction improves the residual by one Fourier factor. The remaining transport modulus is therefore a guarded estimate for that residual, not a new root-dynamics or leading-pole problem.
+Xi Flow supplies a case where the current source interface is actually closed. XF-095 source-fixes the positive-time endpoint cusp, XF-096 proves the Xi-specific mesh regularity, and XF-097 realizes the full endpoint prefix and proves guarded fixed-time shadowing by an exact real periodic carrier. Once that bridge is closed, the remaining theorem is destination coercivity. XF-098 demonstrates the distinction sharply: a genuine isolated collision transition can still remain guarded-small, so successful transport of the source does not imply that the chosen destination resource detects every transition.
 
 ## Program consequence
 
-For every source-to-destination bridge, declare the destination equivalence relation and norm; safe/null directions; asymptotic normalization; degree or complexity regime; source regularity/admissibility modulus; and any source-fixed counterterm or continuum/discrete consistency estimate required to connect the source evolution to the realized finite state. A restricted class, quotient, rescaling, or renormalization is legitimate only when forced by the source or downstream theorem.
+For each source-to-destination bridge, declare separately:
 
-Do not treat a large raw condition number as instability until its near-null direction is shown to retain destination mass, and do not treat a singular discretization error as source information until the deterministic singular sector has been removed in the canonical normalization.
+- the destination quotient, norm, safe directions, and dangerous direction;
+- the admissible source geometry and how its complexity may grow;
+- the observation regularity/bandwidth and resulting resolution scale;
+- the exact continuum/discrete, rough/smooth, or other interface topology;
+- the destination coercivity theorem required after transport is complete.
+
+Do not reopen a closed transport gate to explain a failure of destination coercivity, and do not infer destination stability from exact source recovery in a weaker metric.
 
 ## Counterevidence / boundary
 
-The factor-two Blaschke enclosure is local and metric-specific. ANF-090 does not yet construct a quotient-aware conditioning theorem, and the separable cone is nonlinear. XF-088--XF-089 classify only the leading endpoint singular sector; lower-order residual control remains open.
+AF-186 gives an exact obstruction envelope for one matched-control mechanism, not a converse theorem for every inverse problem. ANF-099 does not yet prove the decisive physical exposure inequality. PF-204 does not prove the mixed critical weak-`S_1` estimate. XF-097 is tied to the current guarded scales and fixed heat interval, while XF-098 shows that the remaining destination observable itself may need strengthening.
 
-These examples do not imply that every ill-conditioned representation has a canonical good quotient or every continuum problem has a stable renormalized discretization.
+These examples therefore support a modular transport discipline; they do not assert that every problem admits a canonical quotient, stable renormalization, or coercive destination variable.
 
 ## Epistemic status
 
-The component statements are persisted exact/literature-backed mathematics. The cross-line principle is supported synthesis, not an RH theorem.
+**Supported cross-line synthesis from exact component theorems; no RH implication is claimed.**
 
 ## Falsification criterion
 
-Produce uniform source-to-destination recovery while every destination-calibrated source modulus degenerates, show that ANF-090's safe family becomes dangerous after the exact destination quotient, or violate the XF endpoint counterterm/residue statements in their proved regimes. More broadly, a source-forced theorem that remains uniformly stable without specifying quotient, safe directions, scale, source class, degree regime, or the relevant continuum interface would narrow this synthesis.
+Produce a uniform source-to-destination theorem in one of the declared regimes while violating its exact source-resolution, destination-exposure, or interface constraints; or show that a supposedly closed interface still contributes a nonvanishing error in the exact downstream norm. Conversely, a source-forced theorem that crosses all three gates and supplies destination coercivity would narrow this synthesis.

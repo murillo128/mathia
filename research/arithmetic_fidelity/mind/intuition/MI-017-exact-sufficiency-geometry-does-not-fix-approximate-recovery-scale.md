@@ -1,35 +1,33 @@
-# MI-017 — Exact sufficiency does not fix the stable recovery scale
+# MI-017 — Stable recovery scale is set jointly by source complexity and observation regularity
 
-**Evidence level:** proved on the finite Blaschke control families through AF-177, with the local conditioning scale pinned within a universal factor two on the simple stratum
+**Evidence level:** supported by exact Blaschke conditioning and exact adaptive local-cluster obstructions through AF-186
 
 ## Core intuition
 
-Endpoint-faithful information has several distinct layers: exact identifiability, the maximal output quotient, quantitative inversion on the admissible source class, and the asymptotic scale at which the endpoint is observed. AF-167--AF-174 show that an exactly sufficient complete representation can be singular through collisions, exponentially contract a regular source direction, or have only a sharp `1/n` worst-case inverse on unrestricted degree-`n` divisors. AF-175 supplies the positive counterpart: a uniform interpolation constant restores degree-independent local Lipschitz recovery.
+Exact sufficiency does not determine stable recovery. The inverse scale is controlled jointly by the destination quotient/metric, the admissible source geometry, how source complexity may grow, and the regularity/bandwidth of the observation map.
 
-AF-176--AF-177 now show that this interpolation modulus is not merely sufficient. On the cyclic family and then at every finite simple Blaschke divisor, a canonical perturbation forces inverse slope `1/(2 delta(B))`, while AF-175 gives upper slope at most `1/delta(B)`. Stable fidelity is therefore controlled, up to a universal constant in these metrics, by the **representation metric + output quotient + source regularity modulus + endpoint normalization**, not by abstract completeness, simplicity, or degree alone.
+The finite-Blaschke results show one local axis: after quotienting harmless phase, the interpolation/separation modulus controls the inverse slope. AF-180--AF-186 expose another axis that survives even when every source pair remains geometrically close and positive. By increasing a local cancellation order while keeping the source separation exactly `W_1=delta`, one can drive the observed discrepancy below every fixed power whenever the derivative budget cannot resolve that order.
 
 ## Strongest justified principle
 
-AF-169--AF-170 remove collisions from one negative example: simple regular radial divisors at fixed radii remain macroscopically apart while their complete finite Blaschke inner factors converge in `H^infinity`. AF-171 identifies the matching positive scale through the compressed coordinate `r^n` and its boundary-layer normalization.
+For a derivative envelope `|K^(m)| <= C A_delta^m M_m`, locality allows cancellation only up to an order `n_delta` with `n_delta delta -> 0`. AF-186 proves that the parity-split finite-difference controls optimize this mechanism exactly through
 
-AF-172 extends that geometry to a complex cyclic parameter, showing that the compressed coordinate can carry orientation as well as radius. AF-173 removes the arbitrary output phase exactly: on the cyclic stratum the quotient `H^infinity` distance is `2 rho(a,b)`. AF-174 proves a general fixed-degree divisor bound with sharp exponent `1/n`, diagnosing unrestricted multiplicity splitting and clustering.
+`Omega_(M,n_delta)(t) = max_(1<=m<=n_delta) [m log t - log M_m]`, with `t=2/(A_delta delta)`.
 
-AF-175 isolates the source modulus: if the reference divisor has interpolation constant bounded below, sufficiently small quotient `H^infinity` error gives degree-independent local Lipschitz recovery. AF-176 shows on regular cyclic divisors that every local inverse estimate must pay at least `1/(2 delta)`. AF-177 then uses Frostman shifts to produce the same lower-bound direction at an arbitrary finite simple Blaschke product, yielding
+The resulting forward envelope is `2C exp[-Omega]`. If `Omega/log(1/delta) -> infinity`, the observation discrepancy is super-algebraically smaller than the exact source distance `delta`, so no uniform inverse Hölder estimate can hold on a class containing those controls.
 
-`1/(2 delta(B)) <= kappa_loc(B) <= 1/delta(B)`.
-
-The reciprocal interpolation constant is therefore an intrinsic local conditioning scale for the declared quotient and divisor metrics, up to factor two. The earlier fixed-radius controls lose it; compact boundary-layer families can retain it.
+AF-185 is the Gevrey specialization: `M_m=(m!)^q` converts the regularity order `q` into a logarithmic resolution penalty `[log(1/delta)]^q`. This explains why fixed-order moment tests can look stable while an adaptive family crosses a qualitatively different resolution boundary.
 
 ## Counterevidence / boundary
 
-The factor-two enclosure is local and specific to the quotient `H^infinity` output metric and pseudohyperbolic divisor bottleneck metric. It does not prove that `1/(2 delta)` is the exact condition number in every perturbation direction, and multiple zeros exit the simple stratum into the Hölder regime of AF-174.
+The associated-function envelope is exact for this matched-control construction and declared derivative bound, not a converse theorem for the full inverse problem. A source class may forbid high-order positive clusters, a kernel may contain additional algebraic structure not captured by the derivative envelope, or an independent lower bound may restore stability above the obstruction scale.
 
-Uniform interpolation is still a strong source-class condition. The point is not that every representation has such a modulus, but that any stable inversion claim must identify its analogous nondegeneracy quantity and show that the source actually preserves it.
+Likewise the Blaschke separation modulus and the adaptive-cluster associated function describe different source geometries; neither should be silently substituted for the other.
 
 ## Epistemic status
 
-**Proved on the declared finite Blaschke families; supported as a general fidelity principle.** No claim is made that every complete representation admits a useful regular source stratum or a factor-two conditioning classification.
+**Exact mechanism-level conditioning laws with an open source-specific converse problem.** The durable lesson is that stable recovery requires a declared complexity/regularity regime in addition to exact sufficiency.
 
 ## Falsification criterion
 
-Produce a simple finite Blaschke divisor for which the AF-177 Frostman direction fails to have local quotient/divisor ratio `1/(2 delta(B))`, or violate AF-175's local upper modulus on a uniformly interpolating family. More generally, a downstream theorem that remains uniformly stable after the declared quotient while every plausible source regularity modulus degenerates would narrow this principle.
+Produce a uniform inverse estimate on a source class containing the AF-186 adaptive controls in a regime where the truncated associated-function exponent dominates every logarithmic power, or invalidate the exact finite-difference/derivative-envelope optimization. A positive recovery theorem should instead identify the structural source restriction or observation lower bound that blocks those controls.

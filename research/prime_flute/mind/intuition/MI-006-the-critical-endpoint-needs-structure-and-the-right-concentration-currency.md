@@ -1,33 +1,31 @@
-# MI-006 — The critical endpoint needs both structural coercivity and the right concentration currency
+# MI-006 — The critical endpoint is now a transport problem in the correct `L log L` currency
 
-**Evidence level:** supported by exact geometric controls, literature-backed endpoint estimates, and coefficient-localization control through PF-198
+**Evidence level:** supported by exact geometry, literature-backed critical estimates, lossless localization/reassembly, and the native two-space factorization through PF-204
 
 ## Core intuition
 
-The Prime-Flute endpoint problem is not captured by a single statement such as “prove strong `L^1` rigidity.” The current evidence separates the analytic currency from the operator transport. Generic strong `L^1` geometric/Korn rigidity fails even after determinant-one Hamiltonian/reflection marking; one-sided weak-`S_2` localization can overcharge concentration; the symmetrized critical `L log L` currency charges the exact Lambert deformation at a prime-summable scale; and PF-197 shows that the localized matrix-valued vector-gradient form already has the appropriate critical weak-`S_1` theorem.
+The Prime-Flute endpoint is no longer blocked by choosing the coefficient currency, by fixed-scale localization, by regular-body pseudodifferential transport, or by smoothing decomposition cuffs. The exact Lambert deformation is prime-summable in the critical `L log L` scale, the local matrix-valued weak-`S_1` theorem is available, and the regular body reassembles without a weak-endpoint counting loss.
 
-PF-198 now shows that ordinary fixed-scale localization does not spend another Lambert-depth power. Splitting a body of longitudinal depth `O(a)` into `O(a)` windows preserves the total `L log L` budget at `O(d(1+a)/cosh a)` because the window count enters only logarithmically. The live burden is therefore no longer local theorem selection or coefficient fragmentation, but **uniform operator transport and weak-endpoint reassembly** across the actual module family. Canonical endpoint splice geometry remains a separate structural obligation.
+PF-203--PF-204 sharpen the remaining analytic category. The unsmoothed area-preserving pantwise identification is globally bi-Lipschitz and has no extra cuff surface term at form level. More importantly, the relative first-resolvent defect admits an exact two-Hilbert-space factorization using the two native smooth hyperbolic gradient resolvents; the nonsmoothness is isolated in one bounded piecewise cotangent transport. The remaining physical-cuff theorem is therefore a **critical mixed transport estimate**, not a rough-resolvent existence theorem.
 
 ## Strongest justified principle
 
-PF-192--PF-194 rule out deriving the desired strong endpoint from generic `r>1` rigidity by sending `r` to one, and show that determinant one plus Hamiltonian/reflection-compatible matrix structure does not by itself remove the Ornstein/laminate obstruction.
+PF-195 excludes the naive one-sided weak-`S_2` factorization. PF-196--PF-198 identify and preserve the `L log L` endpoint currency under ordinary localization. PF-199--PF-201 remove finite-color and regular-body reassembly losses. PF-202--PF-203 show that decomposition-cuff smoothing can be made cheap and is not required at form level.
 
-PF-195 shows that a generic one-sided critical Cwikel route is mismatched to the PF-191 endpoint currency. PF-196 identifies the compatible coefficient scale: the exact Lambert profile has `L log L` Luxemburg cost `d(1+a)/cosh(a)`, and the prime/shift tail remains summable after any fixed polynomial loss in Lambert depth. PF-197 closes the local vector theorem gap by placing the principal two-dimensional gradient term inside Ponge's matrix-valued critical `Q u P` estimate.
+PF-204 gives the exact identity
 
-PF-198 closes the coefficient-fragmentation gap. For a bounded-overlap fixed-width Fermi partition, concavity of `x log(e+B/x)` gives a sum of local Luxemburg norms bounded by the same global `O(d(1+a)/cosh a)` currency. The `O(a)` chart count contributes only `log O(a)`, already absorbed by the depth logarithm. Uniform cutoff derivative bounds are likewise available from translated fixed windows.
+`R_g U_0 - U_0 R_+ = (dR_g)^* M_(C_0) P_(F_0) dR_+`.
 
-What remains is genuinely operator-level: prove that the localized two-metric resolvent/parametrix factors have at most fixed-polynomial Lambert-depth constants; control pseudolocal off-diagonal tails, commutators, cuff/interface terms, and smoothing remainders; and justify finite-color/global assembly in weak `S_1` without discarding the effective-area gain.
+Both order-`-1` resolvent-gradient factors are native smooth objects. What remains is to show that the branchwise/piecewise order-zero transport can be incorporated with uniform or prime-summable critical constants without falling back to the one-sided endpoint loss. The genuine Margulis-short-collar conservative splice remains independent of this interface reduction.
 
 ## Counterevidence / boundary
 
-PF-198 is a coefficient statement. Weak `S_1` is an endpoint quasi-ideal, and finite overlap of coefficient supports does not by itself produce an orthogonal or lossless operator decomposition. Pseudodifferential factors remain nonlocal until the required remainder analysis is performed.
-
-Neither PF-197 nor PF-198 constructs the endpoint conservative splice, proves a global relative resolvent theorem, gives Kato--Rosenblum wave equivalence, or separates the prime flute from its matched composite shift clone. Failure of the remaining route must now be located in family constants, nonlocal reassembly, interface geometry, or arithmetic discrimination rather than in chart count or absence of a matrix-valued local Cwikel theorem.
+Boundedness of `P_(F_0)` alone does not imply weak `S_1`, and the ideal property does not allow it to be discarded. A proof that splits branches, smooths cutoffs, or extends maps across cuffs must track the resulting critical constants. PF-204 does not prove the short-collar splice, global trace class, scattering completeness, a determinant theorem, or prime/clone discrimination.
 
 ## Epistemic status
 
-**Supported endpoint synthesis with a literature-backed local weak-`S_1` mechanism and exact prime-summable coefficient/localization accounting; family-uniform operator localization, canonical splice geometry, and global reassembly remain open.**
+**Supported endpoint architecture with the regular body and rough-resolvent artifacts removed; piecewise critical transport and the true short-collar splice remain open.**
 
 ## Falsification criterion
 
-Show that PF-198's finite-overlap localization necessarily loses more than the claimed critical coefficient budget, or that the localized PF-175 principal form falls outside PF-197's critical theorem. At the positive boundary, a uniform/polynomial modulewise parametrix plus prime-summable control of every off-diagonal/reassembly term would move the frontier from endpoint operator transport to the remaining geometric/arithmetic discrimination step.
+Invalidate the PF-204 two-space factorization or show that the exact area-preserving identification cannot provide the declared bounded cotangent transport. At the positive boundary, prove a uniform/prime-summable critical estimate for `G_g^* M_C P_F G_+` across physical cuffs and separately control the true short-collar conservative splice.

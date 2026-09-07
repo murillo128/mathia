@@ -1,27 +1,25 @@
 # Analytic-frontier research lines
 
-This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical lines of investigation suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Solve the nonconvex anti-alignment selection problem for fatal near-extremizers
+## Bound fixed-notch near-extremizer exposure in the physical source tensor
 
-**Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
+**Linked intuitions:** `MI-001-separable-near-nullity-is-not-physical-instability`, `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-091--ANF-096 progressively remove raw and quotient-source conditioning as intrinsic explanations of failure near the Montgomery--Taylor extremal cone. Exact separable near-extremizers can be exponentially ill-conditioned even after Lamzouri Schur residualization, while the explicit bounded-height and arithmetic sparse-surgery families are forced back into the safe separable tube once their physical structure factors are used.
+ANF-097--ANF-098 show that dangerous destination defect cannot be read from a raw Gram condition number and that convexifying the separable comparator class destroys the distinction entirely. ANF-099 sharpens the fixed-direction question: for a declared notch `phi_eta`, improvement exists exactly when the limiting near-extremizer exposure `beta_eta` is strictly below the target ratio `B_eta`. The same exposure is recoverable from the physical source tensor up to an error controlled by the extremality defect.
 
-ANF-097 gives the quotient-aware replacement. For every compatible separable comparator `P`, the Montgomery--Taylor excess polarizes as the comparator excess, a nonnegative size correction, the full physical defect energy, and one signed source-interference term. The central-notch destination defect is dominated by that physical source norm. Therefore a configuration that is both near-extremal and macroscopically separated from the safe cone must arrange **macroscopic destructive source interference with every compatible separable carrier**.
+The live fixed-notch problem is therefore a scalar source-side concentration estimate, not the full nonconvex comparator-selection problem. Prove `beta_eta < B_eta` for a source-forced notch, or construct physical near-extremizers with exposure reaching `B_eta`.
 
-ANF-098 shows why this cannot be repaired by convex relaxation. The conic hull of separable center-height carriers already contains every physical conjugation-invariant configuration, and for even cardinality the same-cardinality convex hull contains every such structure factor while preserving the affine bookkeeping. Convexifying `Sep(W)` therefore makes the destination distance identically zero. Its canonical barycentric identity also averages the ANF-097 interference with the wrong sign. The equal-weight/nonconvex selection problem is load-bearing.
+## Classify the only remaining escape geometries for fixed-notch failure
 
-The live all-cardinality question is now precise: either prove a **nonconvex physical selection theorem** producing a compatible separable comparator whose destructive interference is too small to support a fatal defect, or construct a genuinely nonseparable near-extremizer that defeats every individual comparator. Conditioning bounds, convex projection, separating hyperplanes, remote surgery, and source-orthogonal perturbations are no longer independent escape routes.
+ANF-100 proves that any growing Montgomery--Taylor near-extremizer must have horizontal span linear in the source size; bounded and sublinear-width vertical stacks cannot saturate the ratio. ANF-101 then shows exponential vertical tightness whenever that horizontal span stays `O(N)`.
 
-## Treat relative Xi source reconstruction as solved until destination conditioning fails
+Consequently a fixed-notch obstruction can survive only through genuinely linear-scale microscopic organization of a vertically tight bulk, a source-relevant sparse high-height tail, or superlinear horizontal escape. Any proposed counterexample should identify which of these resources it uses rather than appealing to generic high-dimensional noncompactness.
 
-**Linked intuition:** `MI-006-relative-xi-source-reconstruction-moves-the-gate-to-destination-conditioning`.
+## Keep relative Xi reconstruction separate from destination conditioning
 
-ANF-084 gives an unconditional moving-line relative periodization of the actual Xi source at `sigma_T=1+1/log T`, with Gaussian width `log T` and period `(log T)^3`. The function and fixed logarithmic derivatives are recovered with polynomial factors times `exp(-(log T)^4/8)`, while prime leakage is exponentially smaller on the relevant scale.
+The relative Xi source reconstruction remains extremely accurate on its admitted moving lines, but that forward accuracy does not itself control a destination observable whose safe and dangerous directions differ. Use the exact destination quotient and source tensor before translating analytic approximation into coercivity.
 
-The live handoff is downstream: whether the source/reference transport reaches the finite guarded Xi state with enough quantitative margin. The existing Xi clue owns that cross-line question.
+## Treat diffraction realizability and source geometry as independent gates
 
-## Keep diffraction realizability separate from the affine counting certificate
-
-Any spectral or geometric reformulation still has to prove that the proposed object exists with the required positivity, support, normalization, and conjugation properties. A suggestive diffraction or operator picture is not evidence unless it reproduces the exact affine certificate and survives the same matched controls.
+A formally admissible positive or spectral profile is not automatically realized by the Montgomery source configuration. Whenever a proposed analytic carrier is defined through a transform, isolate the inverse/realizability constraint before interpreting its destination sign or near-extremal geometry.

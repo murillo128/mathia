@@ -1,48 +1,29 @@
-# MI-003 — The Nyman obstruction is target/model-space data, not generator spectral geometry
+# MI-003 — The Nyman obstruction is target data, but arbitrary-inner compression only reads it
 
-**Evidence level:** proved for the structural separations; the residual discrete classification is open
+**Evidence level:** proved structural separations and exact arbitrary-Blaschke programmability through PL-204; the residual discrete Nyman classification remains open
 
 ## Core intuition
 
-The prime-exponent semigroup already has a serious RH-equivalent Hilbert-space realization in Nyman--Beurling--Báez-Duarte theory. The difficult information is not hidden in a new spectrum of the commuting dilation generators. It lives in whether a **distinguished target** lies in the closed span, and in the model-space/divisibility defect that survives after the common arithmetic factors are accounted for.
+The prime-exponent semigroup already has a serious RH-equivalent Hilbert-space realization in Nyman--Beurling theory. The difficult information is target-relative: whether the distinguished target lies in the closed span and which inner/model-space defect remains after common arithmetic factors are removed. Generator-only Gram geometry cannot see that defect.
+
+PL-204 now closes the most canonical spectralization of the target defect. Compressing the exact prime multipliers to `K_B=H^2\ominus BH` makes each zero of `B` a joint eigencharacter of the adjoint prime tuple. This is faithful zero-sensitive data, but it is fully programmable: the same construction works for every admissible Blaschke divisor, including a one-point off-critical divisor. The model space therefore **reads a supplied zero divisor without constraining it**.
 
 ## Strongest justified principle
 
-PL-017 identifies the exact prime-exponent semigroup
+PL-017 identifies the prime dilation semigroup and its Mellin multipliers `n^(1/2-s)`. PL-019 locates the residual discrete completeness problem at Balazard's known frontier. PL-020 proves that multiplication by the off-line Blaschke factor is an inner isometry, leaving every generator Gram matrix unchanged while changing the target distance by a rigid model-space component.
 
-\[
-T_mT_n=T_{mn},\qquad T_m=\prod_pT_p^{v_p(m)},
-\]
-
-whose Mellin transform multiplies by `m^(1/2-s)`. On the critical boundary these are precisely the log-prime phases. Nevertheless RH is not an eigenvalue statement for `T_m`; it is the totality statement that the Nyman span contains the constant target.
-
-PL-019 then identifies the residual integer-semigroup classification with Balazard's classical open problem: after imposing the zero-divisibility constraints, is the sparse integer-generated closed span exactly the expected invariant subspace? The continuous real-dilation analogue is classifiable, but the one-sided times `{log n}` leave a genuine discrete completeness problem.
-
-PL-020 gives a decisive information-loss warning. If `B_Z` is the Blaschke product of hypothetical zeta zeros in `Re(s)>1/2` and `psi_n=B_Z phi_n`, then multiplication by the inner function is isometric, so every generator Gram matrix is unchanged:
-
-\[
-\langle\psi_m,\psi_n\rangle=\langle\phi_m,\phi_n\rangle.
-\]
-
-The finite approximation error instead splits orthogonally into a rigid model-space zero term plus a residual arithmetic approximation term. Thus eigenvalues, condition numbers, frame bounds, whitening, or any other **generator-Gram-only** statistic cannot detect precisely the off-line inner factor whose absence RH requires.
-
-PL-021 supplies a useful contrast: moving the Möbius orientation to the native Bohr coefficient `H^2` makes it cyclic unconditionally wherever the vector belongs to that space. The RH-sensitive analytic continuation has been discarded rather than solved.
+PL-204 keeps that lost target information explicitly. If `B(rho)=0`, the Hardy kernel `k_rho` lies in `K_B` and satisfies `(C_p^B)^* k_rho = p^(1/2-conj(rho)) k_rho` for every prime. The joint tuple therefore recovers the point `rho`, but an elementary Blaschke factor at any freely chosen `rho_0` produces exactly the same semigroup law and its chosen eigencharacter. For the zeta specialization, `RH iff B_Z=1 iff K_(B_Z)={0}` is an exact restatement, not a selection mechanism.
 
 ## What remains fertile
 
-The remaining Nyman question must retain target-relative data: cross-correlations with the reproducing-kernel target, model-space projections, multiplicity-sensitive divisibility, Vasyunin dual information, or another invariant that is not preserved under common inner multiplication. A quantitative theorem about the de-Blaschke discrete span could be valuable, but it must address Balazard's known classification frontier rather than merely rediscovering the semigroup formulation.
+A useful target-relative construction must add a **source-forced relation not functorially determined by an arbitrary inner function**: completed functional-equation structure, explicit-formula positivity, a canonical source/target coupling, a noncommuting relation, or another coercive boundary condition that fails on arbitrary-Blaschke controls.
 
-## Status / novelty
+The discrete Nyman span classification also remains open; PL-204 does not identify the greatest common inner divisor of the discrete generators or solve Balazard's problem.
 
-The semigroup, totality criterion, Balazard problem, Hardy inner-factor identities, and Bohr cyclicity are prior art or exact derived consequences. The synthesis is a supported route discriminator: **generator spectral beauty is orthogonal to the actual RH obstruction unless the target/model-space relation is retained**.
+## Epistemic status
+
+**Exact target-information boundary and exact programmability control; arithmetic selector still missing.**
 
 ## Falsification criterion
 
-Refute the narrow principle by deriving the off-line Blaschke factor, or its triviality, from generator Gram data alone despite the exact inner-isometry identity above, without supplying target evaluations or any other non-Gram information.
-
-## Lean-formalizable core
-
-- Prime factorization of the dilation semigroup.
-- Isometry of multiplication by an inner function and invariance of finite Gram matrices.
-- Orthogonal decomposition of distance to `B_Z A_M` into model-space and de-Blaschke approximation terms.
-- Abstract lemma distinguishing generator-only data from target-relative projection data.
+Derive a critical-line restriction from the compressed prime semigroup using only properties shared by every `K_B`, or show that an arbitrary one-point Blaschke factor cannot realize the displayed joint eigencharacter. A positive escape must identify the additional zeta-specific relation and prove that arbitrary inner controls fail it.

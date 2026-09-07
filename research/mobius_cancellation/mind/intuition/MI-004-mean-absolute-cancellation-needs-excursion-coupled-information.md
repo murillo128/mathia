@@ -1,37 +1,31 @@
-# MI-004 — Mean-absolute Mertens control needs excursion information beyond fixed local feedback
+# MI-004 — Mean-absolute Mertens control needs occurrence order, not richer finite summaries
 
-**Evidence level:** exact Mellin/checkpoint results, literature-backed Pintz lower bound, matched-control barriers, and fixed-local feedback classifications through MC-124
+**Evidence level:** exact endpoint reductions, literature-backed Mertens lower bounds, and matched-control obstructions through MC-132
 
 ## Core intuition
 
-The mean-absolute endpoint is RH-complete, but several natural weaker carriers forget exactly the information that endpoint consumes. MC-117--MC-120 show that sub-`L^1` moments can miss rare coherent amplitude even after square-free support, multiplicativity, polynomial windows, and one fixed multiplicative comparator are imposed. MC-121 separately shows that once the **actual Möbius** first absolute mean reaches the square-root exponent on any unbounded checkpoint sequence, dense output coverage is unnecessary.
+The mean-absolute endpoint is RH-complete, but the natural finite summaries tested so far forget exactly the information that endpoint consumes. The issue is no longer merely fixed local memory. MC-129--MC-132 show that increasingly rich descriptions can agree exactly while carrying radically different excursion amplitudes: full local/modular transition tensors, fixed finite-horizon path types, periodic clocks, and even polynomial timestamp moments of each transition state.
 
-MC-122--MC-124 now sharpen the source side. Deterministically weighted amplitude feedback is quadratic path energy in disguise; scalar state-local one-step feedback has only a potential part plus unoriented occupation; and adding any fixed amount of local Möbius memory does not create a new sign-odd logarithmic information channel, because every fixed cylinder observable reduces to classical fixed-shift `mu/mu^2` correlations.
-
-The surviving difficulty is therefore not to decorate a local feedback rule. A successful source theorem must recover first-absolute excursion amplitude from information that leaves the **fixed state/fixed-memory cylinder class** in a quantitative way: growing or state-coupled memory, multiscale/nonlocal structure, a genuinely arithmetic occupation theorem, or another source statistic with a polynomial information budget.
+The missing source information is therefore **ordered excursion structure**. A successful theorem must retain how signed increments are arranged across occurrences and scales, or use a Möbius-specific arithmetic law that forces that order strongly enough to recover first-absolute amplitude.
 
 ## Strongest justified principle
 
-MC-115 proves that square-root-scale mean-absolute Mertens control is equivalent to RH. MC-121 uses Pintz's every-large-scale lower bound to show that this control need only hold on an arbitrary unbounded sequence for the actual Möbius function. Thus scale density of the final endpoint is not the missing theorem.
+MC-122 identifies deterministic amplitude feedback with quadratic path energy. MC-123--MC-124 close scalar state-local and fixed finite-memory sign-odd channels. MC-129 constructs product-state controls with matched local context, modular height, increment, and coarse time information but different first-absolute excursion.
 
-For every `0<p<1`, MC-117--MC-120 quantify and realize the gap between weak moments and first-absolute amplitude even under increasingly strong generic multiplicative controls. MC-122 then proves for arbitrary deterministic weights
+MC-130 proves that any fixed finite horizon is only a larger product-state type. MC-131 shows that adjoining any fixed family of periodic clocks remains excursion-blind after taking the joint period. MC-132 then uses Prouhet--Thue--Morse macro-order controls to match, state by state, every polynomial timestamp moment through a declared degree while retaining a large excursion separation. The same obstruction survives a logarithmically growing moment degree below its explicit information threshold.
 
-`2 sum w_n mu_n M_{n-1} + sum w_n mu_n^2 = w_N M_N^2 + sum_{n<N}(w_n-w_{n+1})M_n^2`,
-
-so weighting the amplitude correlation does not create a new signed carrier. MC-123 classifies every `Psi(M_{n-1},mu_n)` as a potential increment plus reversal-even edge/loop occupation; no additional oriented one-step state-local degree of freedom exists on the scalar Mertens tree.
-
-MC-124 tests the first genuine topological escape. Finite memory creates cycles, but every fixed finite-window observable odd under simultaneous Möbius sign reversal expands exactly into fixed shifted products of `mu` and `mu^2`. The Tao--Teräväinen product criterion makes every such term `o(log x)` under logarithmic averaging. Fixed memory therefore escapes the tree topology without escaping the established fixed-correlation information class.
+Thus “add more finite state,” “remember a bounded path window,” and “add finitely many absolute-time moments” are no longer distinct escape routes. They remain compressions of occurrence order.
 
 ## Counterevidence / boundary
 
-None of MC-122--MC-124 says that occupation statistics, growing memory, or nonlocal correlations are useless. MC-123 explicitly leaves reversal-even occupations as potentially arithmetic, and MC-124 is qualitative/logarithmic and fixed-window only. A quantitative theorem for a growing/state-dependent observable could lie outside these no-go classes.
+The controls are generic bounded-increment words. They do not preserve Möbius multiplicativity, square-free zeros, prime values, divisor relations, or another arithmetic source law. They also do not match the complete ordered timestamp list, the full timestamp empirical measure, arbitrary adaptive/nonpolynomial weights, or an unbounded nested state whose information budget grows fast enough to reconstruct order.
 
-Likewise, logarithmic invisibility does not imply small ordinary partial sums. The existing multiplicative controls show that qualitative correlation cancellation can coexist with very large cumulative excursions. Any proposed escape must state the quantitative transfer to `D_M`, not merely a new nonzero cycle or correlation.
+Accordingly, the obstruction does not show that nonlocal or growing-memory arithmetic observables are useless. It says they must demonstrate information not already determined by the flattened finite/quasi-polynomial summaries.
 
 ## Epistemic status
 
-**Proved/literature-backed endpoint reduction and exact fixed-local feedback restrictions; open Möbius-specific quantitative source mechanism outside those classes.** No improved unconditional Mertens bound is asserted.
+**Exact generic information-loss boundary; open Möbius-specific theorem converting genuinely order-sensitive arithmetic information into RH-scale first-absolute control.**
 
 ## Falsification criterion
 
-Derive the RH-scale first absolute mean on some unbounded sequence from a source condition genuinely weaker than that conclusion and satisfied by Möbius, while showing why the MC-117--MC-124 controls cannot satisfy or neutralize it. Conversely, exhibit a fixed state-local or fixed finite-memory sign-odd observable that carries a quantitatively new oriented component contrary to the exact decompositions above.
+Exhibit a fixed finite-memory/path-type/periodic/polynomial-time summary contradicted by the exact MC-129--MC-132 controls, or derive first-absolute Mertens control from such a summary with a hypothesis satisfied by those controls. A positive escape should instead identify the ordered or arithmetic datum that the controls cannot match and prove its quantitative transfer to the endpoint.

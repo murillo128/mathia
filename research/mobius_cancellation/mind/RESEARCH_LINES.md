@@ -2,26 +2,24 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Produce RH-scale mean-absolute Mertens control from genuinely excursion-coupled information
+## Recover first-absolute excursion from genuinely order-sensitive arithmetic information
 
-**Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information` and `MI-012-hamming-regularization-is-degree-two-damping-before-the-square-root-transition`.
+**Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`, `MI-012-checkpoint-rh-completeness-does-not-remove-source-information-burden`.
 
-MC-115 and MC-121 leave the endpoint unusually sharp: RH-scale mean-absolute Mertens control for the actual Möbius function on any rigorously produced unbounded checkpoint sequence already implies RH. The missing theorem is therefore source-side, not checkpoint density.
+The endpoint is already sharp: square-root-scale first-absolute Mertens control on any unbounded checkpoint sequence is RH-complete. The source problem is therefore to derive that endpoint from information which actually retains excursion geometry.
 
-MC-122--MC-129 increasingly close local and coarse-state substitutes for excursion information. Deterministic weighted feedback repackages quadratic path energy; fixed state-local and fixed-memory sign-odd observables collapse to potential/occupation or classical fixed-shift correlation information. MC-129 now gives a stronger exact matched control: inside every corresponding coarse time bin, two words have the same **full joint product-state transition tensor** coupling the preceding local context, modular partial-sum state, and next increment, and hence the same bounded local-factor counts, modular transition marginals, and every scalar one-step observable of that joint state, while their first-absolute excursion means differ.
+MC-122--MC-129 close scalar local feedback, fixed finite memory, modular/product-state histograms, and coarse time bins. MC-130 shows that every fixed finite-horizon path-type histogram folds into a larger one-step product-state type. MC-131 adds arbitrary fixed periodic clocks without restoring order. MC-132 goes further: state-by-state polynomial timestamp moments through any fixed degree, and a controlled logarithmically growing degree range, can be matched exactly while first-absolute excursion lies on opposite sides of square-root scale.
 
-A viable source mechanism must therefore retain **order-sensitive information across occurrences, bins, or scales that is not determined by the full contemporaneous local-state transition law**, with a quantitative budget strong enough to control cumulative excursion amplitude. Merely enlarging a local context, modular state, their joint cross-tabulation, or a coarse time partition is not yet such a carrier.
+The surviving carrier must therefore preserve **occurrence order beyond finite/quasi-polynomial timestamp compression**: a raw ordered occurrence process, a nonflattenable nested/multiscale relation, an adaptive/nonpolynomial time statistic with a justified information budget, or a Möbius-specific arithmetic constraint that forbids the matched controls.
 
-## Kill product-state histogram enrichments before treating them as new signed information
+## Treat finite-state vocabulary growth as closed until it changes the order topology
 
-The exact matched controls should be applied before promoting a new finite-state or binned statistic. A proposal must identify what information it retains that is not invariant under the MC-125--MC-129 rearrangements, and then prove a quantitative transfer to `X^{-1} integral_1^X |M(x)| dx`.
+Adding context length, modular height, finitely many future steps, periodic phases, or finitely/moderately many polynomial timestamp moments enlarges the state description but still admits exact macro-cycle controls. A proposed local enrichment should first be tested for whether it factors through a finite product-state/path-type summary before any cancellation meaning is assigned to it.
 
-The live exits are genuinely nonlocal or multiscale relations, path-order information beyond occupation/transition counts, state information whose resolution couples successive bins rather than merely labeling them, or an arithmetic theorem controlling excursions directly. Exiting the fixed-cylinder class syntactically is not sufficient.
+## Require the source theorem to be Möbius-specific at the point where generic controls fail
 
-## Leave one-sided radial filtering unless the boundary/source term is controlled explicitly
+The matched controls are bounded increment words and do not satisfy Möbius multiplicativity, square-free support, prime values, or divisor identities. This is the remaining legitimate escape. A positive theorem should identify an arithmetic relation that prevents the order rearrangements used by MC-129--MC-132 and quantitatively transfers that restriction to first-absolute excursion.
 
-Fixed finite parity filters followed by absoluteization and the obvious growing-filter repair are already closed by the radial controls. A surviving radial construction must derive a signed relation to displaced boundary/source terms, justify a genuinely two-sided or nonlocal extension from arithmetic, or leave radial scalarization for finer source information.
+## Keep endpoint sparsity separate from source information
 
-## Preserve signed cross-degree, cross-scale, path-order, and excursion information through the final norm
-
-The endpoint is carried by cancellation among large components and by the excursion geometry of `M(x)`, not by positive shell masses, low fractional moments, or local summary statistics. A useful carrier must identify information surviving the exact product-state rearrangement controls and actually control first-moment amplitude for Möbius without inserting `1/zeta`, a zero-free region, or an RH-equivalent coarse mode by definition.
+Dense checkpoint coverage is not the missing theorem. Once actual Möbius reaches the square-root first-absolute bound on an unbounded sequence, the endpoint implication is already available. Additional scale density matters only if it is part of a source mechanism that produces the bound.

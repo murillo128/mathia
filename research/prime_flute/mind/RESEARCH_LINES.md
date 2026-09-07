@@ -2,21 +2,21 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove the critical endpoint on the rough physical cuff and true short-collar splice sectors
+## Prove the critical endpoint for piecewise cotangent transport and the true short-collar splice
 
-**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`, and `MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency`.
+**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`, `MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency`.
 
-PF-196--PF-203 substantially narrow the endpoint operator problem. The exact Lambert deformation has a prime-summable critical `L log L` budget; the matrix-valued local Cwikel theorem applies; fixed-width coefficient localization does not multiply that budget; two-sided finite-color localization has no weak-`S_1` counting loss; the regular Lambert body admits uniform principal Cwikel control; and the global-to-local factorization removes the regular-body off-diagonal remainder.
+PF-196--PF-203 establish the prime-summable critical `L log L` currency, matrix-valued local Cwikel control, lossless fixed-width/finite-color localization, regular Lambert-body reassembly, and form-level gluing across unsmoothed decomposition cuffs. PF-204 removes another artificial burden: the rough pulled resolvent is not algebraically required. The exact two-Hilbert-space identity uses the two **native smooth hyperbolic gradient resolvents**, with all nonsmooth identification data isolated in one bounded a.e. cotangent transport `P_(F_0)`.
 
-PF-202 shows that smooth decomposition-cuff seam corrections can be made arbitrarily cheap in the critical Orlicz currency, while PF-203 goes further: smoothing those cuffs is not needed at form level. The pantwise exact-area maps already glue to a globally bi-Lipschitz area-preserving piecewise-smooth identification, and the first relative-resolvent form has no extra cuff surface term. The unresolved cuff burden is therefore a **rough/transmission critical localization problem**, not a shrinking-seam coefficient-budget problem.
+The physical-cuff frontier is therefore the mixed critical product `G_g^* M_C P_(F_0) G_+`: prove a uniform/prime-summable branchwise or two-manifold critical estimate for the piecewise transport. Do not reopen rough-resolvent theory, chart-count losses, or seam smoothing unless a proof actually needs them.
 
-The live endpoint is now concentrated on physical cuff/interface transmission and the genuine PF-138 short-collar conservative splice, plus whatever remainder is intrinsic to those sectors. Re-proving regular-body localization, paying window-count losses, or smoothing decomposition cuffs is no longer the frontier.
+The PF-138/PF-183 genuinely short Margulis collars remain a separate geometric obligation: construct/control the canonical conservative body/core splice in the same endpoint currency.
 
-## Separate solved regular-body reassembly from unresolved interface geometry
+## Keep interface regularity and short-collar geometry as distinct gates
 
-PF-199 removes the feared singular-value counting loss for two-sided finite-color blocks, and PF-200--PF-201 remove the regular Lambert-body constant/off-diagonal gates. A decisive global theorem should therefore expose the remaining interface and splice terms explicitly and charge them in the same prime-summable endpoint currency.
+The decomposition cuffs contribute no extra surface term at the quadratic-form level, and PF-204 keeps both resolvents smooth. This does not by itself imply weak `S_1`: boundedness of the cotangent transport cannot simply be removed by the ideal property, and Ponge's smooth theorem cannot be applied across the jump without a quantitative localization/extension argument.
 
-A failure confined to rough coefficient jumps must not be rhetorically promoted to a failure of the whole local Cwikel architecture. Conversely, form-level gluing alone does not imply weak trace class; it changes the analytic category of the remaining estimate.
+Conversely, solving the physical-cuff transport estimate would not construct the true short-collar splice. A global relative-resolvent theorem must charge these two sectors separately.
 
 ## Resolve ordered multi-neck memory in marked spectral data
 
@@ -24,4 +24,4 @@ Finite graded chains retain directed neck order while scalar determinants erase 
 
 ## Require prime/clone separation before assigning arithmetic meaning
 
-The all-composite shift clone shares substantial geometric and operator structure. Area preservation, endpoint Orlicz summability, local weak-trace membership, finite-color reassembly, or rough form-level cuff gluing is not arithmetic evidence unless a source-specific observable separates the prime flute from its matched clone.
+The all-composite shift clone shares the area-preserving geometry, endpoint summability, local weak-trace architecture, and form-level interface structure. These are analytic infrastructure, not arithmetic evidence. A surviving observable must separate the prime flute from matched non-prime endpoint geometries.
