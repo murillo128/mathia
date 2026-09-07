@@ -22,6 +22,7 @@ based_on:
   - research/visual_exploration/findings/VIS-082-signed-euler-product-sharp-log-cutoff-threshold.md
   - research/visual_exploration/findings/VIS-083-gram-point-prime-phase-haar-equidistribution.md
   - research/visual_exploration/findings/VIS-084-gram-short-block-prime-phase-freezing.md
+  - research/visual_exploration/findings/VIS-085-gram-local-arc-growing-support-collapse.md
 ---
 
 # Can a zeta visual statistic leave the finite prime-torus information class?
@@ -42,42 +43,50 @@ and therefore the exact criterion
 
 `T_(X(L),L)->0  <=>  log X(L)/L->0`.
 
-`VIS-083` closes one natural externally anchored population route: for every fixed finite set of primes, Gram-point prime phases are Haar-equidistributed. `VIS-084` now supplies the complementary local control. If `H=o(log g_n)`, a consecutive block of `H` Gram points collapses to its starting fixed-prime phase vector with diameter `O(H/log g_n)`; for `H=O(log g_n)` the block follows a deterministic first-order torus arc induced by the Gram spacing. Thus neither global population sampling nor arbitrary tiny consecutive Gram windows provide an independent prime-phase information channel by themselves.
+`VIS-083` closes one natural externally anchored population route: for every fixed finite set of primes, Gram-point prime phases are Haar-equidistributed. `VIS-084` supplies the complementary local control: sublogarithmic consecutive Gram blocks freeze, while logarithmic-size blocks first trace a deterministic torus arc induced by Gram spacing.
+
+`VIS-085` now closes the obvious growing-support loophole at that local scale. After subtracting the exact first-order Gram arc `pi h/theta'(g_n)`, the coordinatewise residual over `H=O(log g_n)` obeys
+
+`max_(h<=H,p<=P) |R_(n,h)(p)-1| << H^2 log P/[g_n (log g_n)^3]`.
+
+Thus the residual still collapses for every growing support with `log P=o(g_n log g_n)`, including all polynomial supports. Increasing prime dimension inside a logarithmic Gram block does not by itself create an independent local anchor channel.
 
 ## Research question
 
-After these closures, does any **independently anchored** or **independently calibrated factor/residual** visual statistic expose information that is not already determined by the finite prime torus, its exact observation-window geometry, or an invertible coordinate change of the same underlying field?
+After these closures, does any **independently anchored** or **independently calibrated factor/residual** visual statistic expose information that is not already determined by the prime torus, its exact observation-window/sampling geometry, or an invertible coordinate change of the same underlying field?
 
-Two residual routes remain admissible, but the external-anchor route is narrower again.
+Two residual routes remain admissible, but the external-anchor route is now substantially narrower.
 
-First, an external anchor must do more than be defined independently. Its induced statistic must separate from the exact matched torus law at the actual claim strength. For Gram points, a generic appeal to “short blocks” is no longer sufficient: sublogarithmic fixed-prime blocks are forced to freeze, and logarithmic-size blocks first inherit a deterministic local arc. A surviving Gram route must therefore use a scale/statistic whose residual survives that explicit local sampling null, controlled growing support, or an additional independently informative coordinate.
+First, a surviving external anchor must change the relevant law rather than merely resample the same prime field. For Gram points, neither global fixed-prime population sampling, sublogarithmic clustering, the deterministic logarithmic local arc, nor its broad growing-support curvature residual qualifies. A surviving Gram route therefore needs genuinely longer blocks, an observable/source law not explained by the matched torus arc, or an additional independently informative Gram/zero coordinate.
 
 Second, a hybrid factor/residual statistic may be meaningful if it tests a joint law or dependence property that is not a deterministic consequence of the invertible factor/residual shear and is calibrated at the actual claim strength.
 
 ## Why it may matter
 
-The global and local Gram controls point in opposite visual directions but have the same information-accounting consequence. Over all Gram points a fixed finite prime field is Haar-equidistributed; over a sublogarithmic consecutive block the same field becomes an arbitrarily tight cluster. A visually striking cloud can therefore look either maximally spread or maximally concentrated purely because of the sampling scale, without any new arithmetic carrier appearing.
+The Gram controls now illustrate how strongly visual geometry can depend on sampling scale without adding information. Globally the fixed-prime cloud becomes Haar; on sublogarithmic blocks it freezes; on logarithmic blocks it traces a deterministic arc; and after that arc is removed even a very broad growing prime support has vanishing coordinatewise sampling residual.
 
-A surviving statistic would now have a much stronger interpretation: it would need an independently supplied reference coordinate that changes the relevant law, a residual after the exact local Gram arc has been removed, or a genuinely new joint-law statement rather than another rendering, nonlinear transformation, asymptotically Haar resampling, or deterministic short-block clustering of the same torus data.
+A surviving statistic would therefore have a much stronger interpretation: it would need an independently supplied reference coordinate that changes the relevant law, a genuinely larger-scale phenomenon beyond the local inverse-theta geometry, or a new joint-law statement rather than another rendering, nonlinear transformation, resampling schedule, dimension increase, or deterministic local correction of the same prime-torus data.
 
 ## Decisive test
 
-For an externally anchored route, define the anchor without using the prime-torus statistic being tested. Freeze the anchor rule, window, scale, normalization, witness, and comparison before confirmation. Then determine the **induced law and local sampling geometry of the admitted prime-phase field under that anchor** before interpreting a visual effect.
+For an externally anchored route, define the anchor without using the prime-torus statistic being tested. Freeze the anchor rule, window, scale, normalization, witness, and comparison before confirmation. Determine the **induced law and local sampling geometry of the admitted prime-phase field under that anchor** before interpreting a visual effect.
 
-For consecutive Gram windows with fixed prime support, first compare against the `VIS-084` local null. If the block length is `o(log g_n)`, kill any claim whose signal is only clustering or lack of phase exploration. At `H=O(log g_n)`, subtract or match the deterministic first-order torus arc before interpreting residual structure. `VIS-083` still kills a population-level claim when the fixed-dimensional induced law is merely Haar. A remaining positive route must therefore concern a quantitatively controlled larger-scale discrepancy, growing support with its own uniform analysis, or an added coordinate not determined by the fixed prime phases.
+For consecutive Gram windows, first compare against `VIS-084` and `VIS-085`. If `H=o(log g_n)`, kill any claim whose signal is only clustering or lack of phase exploration. At `H=O(log g_n)`, match the deterministic first-order torus arc. If the prime support is bounded by `P_n` with `H_n^2 log P_n=o(g_n(log g_n)^3)`, also kill any claim whose residual is only the remaining Gram-clock curvature, because `VIS-085` forces that coordinatewise residual to zero. A positive Gram route must therefore operate outside those scale/support corridors or add information not determined by the prime phases and their sampling clock.
+
+`VIS-083` still kills a population-level claim when the fixed-dimensional induced law is merely Haar. Do not infer a growing-dimensional Haar theorem from `VIS-085`: its conclusion is local arc-removal collapse, not global equidistribution.
 
 For a factor/residual route, construct the hybrid prime factor, zero factor, and explicit residual independently. Reduce deterministic recombinations using `VIS-064`--`VIS-066`, then state the remaining claim as a property of the joint `(factor,residual)` law that would still be nontrivial after an invertible coordinate change. Calibrate that property with the finite-window and control uncertainty appropriate to its actual dimensionality. Kill the route if the claimed effect is forced by the shear, by marginal rescaling, by overlap/search selection, or by a null that preserves the same admitted joint information.
 
-Do not reopen the signed `|P_X|^2` growing-support route merely by changing the cutoff law, plotting near-resonance density, or using a reciprocal-frequency certificate. `VIS-082` settles its vanishing threshold, and `VIS-080` explains persistence outside it by generic support crowding. Likewise, do not reopen fixed-prime population structure merely by resampling it at Gram points, and do not treat sublogarithmic Gram-block clustering as a residual: `VIS-083` and `VIS-084` give the corresponding global and local controls.
+Do not reopen the signed `|P_X|^2` growing-support route merely by changing the cutoff law, plotting near-resonance density, or using a reciprocal-frequency certificate. `VIS-082` settles its vanishing threshold, and `VIS-080` explains persistence outside it by generic support crowding. Likewise, do not reopen Gram sampling merely by increasing prime dimension inside logarithmic blocks when the support remains inside the `VIS-085` corridor.
 
 ## Evidence boundary
 
 The signed squared-Euler-product branch is **resolved negatively as a separator** by `VIS-080`--`VIS-082`: its normalized triangular energy vanishes exactly when `log X=o(L)`, and outside that corridor nonvanishing is already forced by ordinary reduced-ratio crowding.
 
-`VIS-083` resolves Gram-point anchoring only for continuous observables of a fixed finite prime-phase vector in the asymptotic population sense. `VIS-084` resolves the opposite short-block boundary only for fixed prime support: `H=o(log g_n)` freezes, while `H=O(log g_n)` admits a deterministic first-order local arc. Neither finding gives a theorem for much longer blocks, growing prime support, or observables that add independent zero/Gram analytic data.
+`VIS-083` resolves Gram-point anchoring only for continuous observables of a fixed finite prime-phase vector in the asymptotic population sense. `VIS-084` resolves the local raw geometry for fixed prime support, and `VIS-085` resolves the arc-removed Gram-clock residual for growing supports satisfying its explicit scale condition.
 
-No current finding proves that either remaining narrowed route separates from the admitted information class, yields a new prime/zero independence theorem, approximates zeta in a regime strong enough for the intended inference, or has an RH consequence.
+None of these findings proves global Haar behavior uniformly in growing prime dimension, classifies much longer Gram blocks, removes information carried by zeta/zero/Gram analytic coordinates, yields a new prime/zero independence theorem, or has an RH consequence.
 
 ## Research disposition
 
-Accepted in further narrowed form. The signed growing-support Euler-product route is closed; Gram points are closed as a positive anchor for fixed-finite-prime population statistics; and sublogarithmic consecutive Gram blocks are closed as a positive fixed-prime visual separator because their geometry is forced to freeze. Continue only through an external-anchor statistic whose induced law or residual after the correct local null genuinely escapes those controls, or through an independently calibrated factor/residual joint-law question that passes the decisive tests above.
+Accepted in further narrowed form. The signed growing-support Euler-product route is closed; Gram points are closed as a positive fixed-prime population anchor; sublogarithmic Gram blocks are closed as a positive visual separator; and logarithmic Gram blocks remain locally explained by their deterministic torus arc even under broad growing prime support after arc subtraction. Continue only through a genuinely longer-scale external-anchor statistic, an independently informative added coordinate/source law, or an independently calibrated factor/residual joint-law question that passes the decisive tests above.
