@@ -68,7 +68,7 @@ The factor `c_0` is uniformly sharp in the same sense.
 
 For Björner's divisor filtration, take vertices to be primes and `c(p)=p`, or equivalently `w(p)=log p`. Then `c_0=2`, and `(3)` recovers the exact factor-two null-homotopy of `MC-135`. More importantly, the argument shows that the prime `2` is not the essential mechanism: it is the specialization of the **minimum-weight vertex of a scalar threshold/quota complex**.
 
-Therefore a large apparent escape class left after `MC-135` is already closed. Replacing the product cutoff by any fixed scalar additive reweighting, exponentiating such a reweighting, or restricting to a fixed set of allowed prime vertices with a smallest retained prime still yields a finite coning horizon. For example, on a fixed prime subset whose smallest element is `q`, the product-threshold filtration is null-homotopic across every scale ratio at least `q`.
+Therefore a large apparent escape class left after `MC-135` is already closed. Replacing the product cutoff by any fixed scalar additive reweighting **whose positive minimum is attained**, exponentiating such a reweighting, or restricting to a fixed set of allowed prime vertices with a smallest retained prime still yields a finite coning horizon. For example, on a fixed prime subset whose smallest element is `q`, the product-threshold filtration is null-homotopic across every scale ratio at least `q`.
 
 ## 1. Minimum-weight coning is immediate
 
@@ -130,7 +130,7 @@ Primary source:
 
 Jonathan Pakianathan and Troy Winfree, *Threshold complexes and connections to number theory*, Turkish Journal of Mathematics 37 (2013), no. 3, 511--539, DOI `10.3906/mat-1112-14`, arXiv `1104.4324`. The relevant material is Definition 1.1, Proposition 2.2, Theorem 2.3, and Section 5 on `LogPrime`.
 
-This finding therefore makes **no novelty claim** for scalar quota complexes, minimum-weight-star topology, the `LogPrime` representation, or the resulting Mertens/RH reformulation. The durable Mathia delta is the prior-art redirect: the factor-two map collapse of `MC-135` is not an isolated prime-specific topological phenomenon but an instance of a generic scalar-threshold coning mechanism. Fixed scalar reweightings or fixed prime-subset variants cannot be treated as unexplored ways to restore long-range homotopy transport.
+This finding therefore makes **no novelty claim** for scalar quota complexes, minimum-weight-star topology, the `LogPrime` representation, or the resulting Mertens/RH reformulation. The durable Mathia delta is the prior-art redirect: the factor-two map collapse of `MC-135` is not an isolated prime-specific topological phenomenon but an instance of a generic scalar-threshold coning mechanism. Fixed scalar reweightings with an attained positive minimum, or fixed prime-subset variants, cannot be treated as unexplored ways to restore long-range homotopy transport.
 
 ## Boundaries and falsification tests
 
@@ -145,6 +145,6 @@ A counterexample to `(1)` would require a simplex `F` with `w(F)<=s` but `w(F un
 
 ## Consequence for the line
 
-`MC-135` left a genuinely different filtration as one possible topological residual. This finding sharpens the word **different**. Any fixed one-dimensional scalar quota/threshold filtration with a positive minimum vertex has a built-in finite homotopy horizon, and product-threshold prime filtrations inherit the corresponding fixed multiplicative horizon.
+`MC-135` left a genuinely different filtration as one possible topological residual. This finding sharpens the word **different**. Any fixed one-dimensional scalar quota/threshold filtration with an attained positive minimum vertex has a built-in finite homotopy horizon, and product-threshold prime filtrations inherit the corresponding fixed multiplicative horizon.
 
-The source-to-amplitude frontier should therefore stop spending effort on fixed scalar reweightings, deleting finitely many small primes, or equivalent threshold-coordinate changes as ways to create persistent long-range topology. A topological continuation must leave the scalar-quota class in a mathematically substantive way--for example through genuinely vector/multiparameter data, nonadditive or scale-dependent structure, or arithmetic-labelled chain information--and must still show that its retained statistic controls mean-absolute Mertens excursion more cheaply than reconstructing the target itself.
+The source-to-amplitude frontier should therefore stop spending effort on fixed scalar reweightings with an attained positive minimum, deleting finitely many small primes, or equivalent threshold-coordinate changes as ways to create persistent long-range topology. A topological continuation must leave the scalar-quota class in a mathematically substantive way--for example through genuinely vector/multiparameter data, nonadditive or scale-dependent structure, or arithmetic-labelled chain information--and must still show that its retained statistic controls mean-absolute Mertens excursion more cheaply than reconstructing the target itself.
