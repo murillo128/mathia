@@ -8,79 +8,62 @@ based_on:
   - research/mobius_cancellation/findings/MC-001-local-to-global-exceptional-mass-barrier.md
   - research/mobius_cancellation/findings/MC-006-averaged-chowla-vdc-logarithmic-ceiling.md
   - research/mobius_cancellation/findings/MC-009-pintz-mean-absolute-zero-boundary.md
-  - research/mobius_cancellation/findings/MC-010-pintz-endpoint-localization-audit.md
-  - research/mobius_cancellation/findings/MC-011-pintz-kernel-height-factor-repair.md
-  - research/mobius_cancellation/findings/MC-012-pintz-section7-window-parameter-repair.md
   - research/mobius_cancellation/findings/MC-013-discrete-tanaka-l1-feedback-carrier.md
-  - research/mobius_cancellation/findings/MC-014-character-control-tanaka-cancellation-excursion-square-budget.md
-  - research/mobius_cancellation/findings/MC-015-qualitative-chowla-excursion-square-obstruction.md
   - research/mobius_cancellation/findings/MC-016-random-walk-excursion-overconstraint-path-energy.md
-  - research/mobius_cancellation/findings/MC-017-boundary-cancelled-fourier-path-energy.md
-  - research/mobius_cancellation/findings/MC-018-anchor-free-local-filter-zero-frequency-obstruction.md
   - research/mobius_cancellation/findings/MC-019-path-energy-coarse-riesz-rh-equivalence.md
-  - research/mobius_cancellation/findings/MC-042-fixed-riesz-smoothing-rh-equivalence.md
-  - research/mobius_cancellation/findings/MC-043-growing-riesz-normalization-vacuity-threshold.md
   - research/mobius_cancellation/findings/MC-044-growing-riesz-endpoint-visibility-delay.md
+  - research/mobius_cancellation/findings/MC-115-mean-absolute-mertens-mellin-zero-free.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
 
 ## Observation
 
-The current local and averaged inputs remain below the polynomial information budget needed for RH-scale pointwise summatory control: `MC-001` isolates the exceptional-mass transfer barrier and `MC-006` shows that the available averaged two-point Chowla input yields only logarithmic saving through the audited van der Corput route. Separately, `MC-009` records a potentially weaker target in the mean-absolute Mertens quantity
+The current local and averaged inputs remain below the polynomial information budget needed for RH-scale summatory control. `MC-001` isolates the exceptional-mass barrier for almost-all short intervals, while `MC-006` shows that the available averaged two-point Chowla input yields only logarithmic saving through the audited black-box van der Corput route.
 
-`D_M(X)=X^{-1}\int_1^X |M(x)|dx`,
+The endpoint is now cleaner than when this clue was created. Define
 
-conditional on a recent external theorem whose proof is not yet fully audited. `MC-010`, `MC-011`, and `MC-012` repair specific endpoint, kernel-height, and Section-7 window defects but do not independently establish the full theorem.
+`D_M(X)=X^(-1) integral_1^X |M(x)| dx`.
+
+`MC-115` proves directly, without the fresh Pintz theorem, that
+
+`RH iff D_M(X)=O_epsilon(X^(1/2+epsilon)) for every epsilon>0`.
+
+The reason is absolute Mellin convergence: an RH-scale upper bound for the first absolute moment analytically continues `1/zeta(s)` into every half-plane `Re(s)>1/2+epsilon` and therefore excludes off-critical zeros. `MC-009` now has a narrower role: Pintz's still-audited theorem proposes the stronger full logarithmic-order identity tying `D_M`, a terminal-window maximum, and the rightmost zero boundary.
 
 ## Research question
 
-Can a source-natural signed local or multiscale Möbius statistic already compatible with this line control `D_M(X)` with a polynomial-gain transfer inequality strong enough to yield
+Can a source-natural signed local, bilinear, multiplicative, or multiscale Möbius statistic control `D_M(X)` with a genuine polynomial-gain transfer inequality strong enough to yield
 
 `D_M(X)=O_epsilon(X^(1/2+epsilon))`
 
-without first proving pointwise RH-scale bounds for `M(X)` or importing a zero-location theorem through the transfer input?
+without first proving a pointwise RH-scale bound for `M(X)` or inserting an equivalent global/coarse statistic into the hypotheses?
+
+The missing bridge is now entirely arithmetic: once the mean-absolute estimate is proved, zero exclusion is automatic by `MC-115`.
 
 ## Why it may matter
 
-A positive result would move the missing quantitative bridge to an endpoint potentially weaker than pointwise Mertens control. A negative matched control would show that the polynomial information-budget obstruction survives even after replacing the pointwise target by mean-absolute summatory size.
+Mean-absolute control is formally weaker than pointwise Mertens control and is insensitive to some sparse pointwise spikes. It is nevertheless RH-complete. A successful transfer to this endpoint could therefore avoid solving a needlessly strong uniform problem while still closing the RH implication exactly.
+
+Conversely, a matched control showing that the proposed local information coexists with mean-absolute exponent strictly above `1/2` would demonstrate that the local-to-global information budget remains insufficient even for this weaker endpoint.
 
 ## Decisive test
 
-Fix an explicit source-natural local or multiscale statistic and prove one of two outcomes: derive a source-compatible inequality from a polynomial-strength hypothesis on that statistic to RH-scale `D_M(X)`, with every exceptional-set, scale-transition, correlation-range, and coarse-mode loss explicit; or construct a source-compatible matched control satisfying the proposed local hypothesis while its mean-absolute summatory function retains an exponent strictly above `1/2`.
+Fix an explicit source-natural statistic and prove one of two outcomes:
+
+1. derive a source-compatible implication from a quantitatively polynomial hypothesis on that statistic to `D_M(X)=O_epsilon(X^(1/2+epsilon))`, with exceptional sets, scale transitions, correlation range, coarse modes, smoothing, and reconstruction losses explicit; or
+2. construct a source-compatible matched control satisfying the proposed local/multiscale hypothesis while its mean-absolute partial-sum process retains exponent `>1/2`.
+
+A candidate fails if the proposed transfer input already contains an RH-equivalent fixed Riesz/coarse mode, if smoothing makes the desired scale vacuous, if inversion reintroduces the original partial-sum burden, or if the only gain comes from a triangle inequality that spends the polynomial saving on exceptional mass.
 
 ## Evidence boundary
 
-This clue does not assert that the theorem recorded in `MC-009` is correct, that current local inputs imply an RH-scale mean-absolute bound, or that such a transfer exists. `MC-009` remains `NEEDS-AUDIT`; `MC-010`, `MC-011`, and `MC-012` provide only partial audits and repairs. Any use of the mean-absolute endpoint itself as an RH consequence must respect that evidence boundary. `MC-019` supplies a separate exact RH implication for the stronger path-energy target `V_M`; it does not validate the Pintz mean-absolute theorem.
+`MC-115` independently establishes the RH implication of the mean-absolute upper bound, so that implication no longer inherits the `NEEDS-AUDIT` status of `MC-009`. The stronger Pintz claims about the **full limiting logarithmic exponent** and the terminal-window maximum remain audit-sensitive and must not be treated as independently verified.
+
+No current local theorem in this line proves the required RH-scale bound for `D_M`. The direct Mellin bridge reduces the literature dependency of the endpoint; it does not reduce the upstream arithmetic difficulty of producing the bound.
 
 ## Research disposition
 
-Accepted in narrowed form after `MC-013` identified an exact candidate interface and `MC-014` stress-tested how that interface may be used. The discrete Tanaka decomposition gives a source-natural signed carrier `mu(n) * sgn(M(n-1))` plus a zero-departure local-time term, but `MC-014` shows with the completely multiplicative character modulo `3` that these two triangular components can each be quadratic while their sum has only linear size. Independent polynomial bounds for the two components are therefore not a cancellation-faithful generic route.
+**Accepted, sharpened by `MC-115`.** Earlier work eliminated several tempting but over-strong or information-losing carriers. The Tanaka/excursion branch showed that long excursions can coexist with diffusive mean-absolute behavior; the path-energy branch exposed an RH-equivalent first Riesz coarse mode; fixed-order Riesz smoothing remains RH-equivalent, while growing-order smoothing either becomes normalization-vacuous or delays endpoint visibility and requires a nontrivial inversion carrier.
 
-`MC-014` then isolated the excursion-length second moment `E_2(N)=sum_j ell_j^2` as an exact cancellation-respecting sufficient statistic, and `MC-015` showed that exact Möbius square-free support plus all qualitative fixed-shift Chowla limits can still give `E_2(N) >> N^2/log^2 N` and `D_a(N) >> N/log^2 N` along a subsequence. This killed qualitative Chowla as a black-box source for excursion-square control, but left open whether stronger growing-scale or multiplicative information might make long excursions sufficiently rare.
-
-`MC-016` then narrowed that residual further. In the exact-support independent-sign model, which is almost surely a qualitative Chowla sequence, the classical last-return arcsine law gives a macroscopic nonzero excursion with probability at least one half at the tested operational horizon. Intersecting this with the diffusive mean-absolute event yields deterministic realizations with `D_a(Y) <= 4 sqrt(Y)` but `E_2(Y) >= Y^2/16`. Thus small excursion-square mass is **not** a generic signature of square-root cancellation; a long low-amplitude excursion can be harmless. `E_2` remains a valid sufficient condition, but it should no longer be treated as the preferred randomness-derived transfer target unless a specifically Möbius-arithmetic mechanism forces it.
-
-The active residual became amplitude-sensitive through the quadratic path energy
-
-`V_M(N)=sum_{k<N} M(k)^2`,
-
-with the exact transfer `D_M(N)^2 <= V_M(N)/N` and the signed correlation identity recorded in `MC-016`. The support-matched independent-sign model has `E V_a(N) ~ (3/pi^2)N^2` and almost surely `V_a(N) <<_epsilon N^(2+epsilon)`, so this carrier has the expected diffusive polynomial scale while retaining amplitude.
-
-`MC-017` identifies the same carrier exactly in frequency space:
-
-`V_a(N) = int_0^1 |F_N(t)-A(N-1)e(Nt)|^2 / |1-e(t)|^2 dt`.
-
-This kills ordinary global Fourier `L^2` as a possible missing datum: actual Möbius, the all-positive square-free indicator, and every exact-support sign assignment all have the identical unweighted Parseval mass `sum_{n<N} mu(n)^2`, while the all-positive control has cubic path energy and the independent-sign control has quadratic expected path energy. The unresolved information therefore lives in **boundary-cancelled low-frequency phase organization with the inverse summation multiplier retained**, not in total Fourier energy.
-
-`MC-018` rules out a broad local-linear repair of that Fourier target. For every finite translation-invariant filter of the partial-sum process, eliminating dependence on the unknown local anchor forces the coefficients to sum to zero, hence forces a `(z-1)` factor. That factor cancels the inverse-summation multiplier from `MC-017`. After normalizing the filter coefficient mass, a support radius `R` has only `O(R)` gain on the increment polynomial at the critical `1/N` frequency, versus the `O(N)` gain of the primitive. Thus a genuinely local `R=o(N)` filter pays an explicit `R/N` low-frequency deficit even when signs are retained. The exact boundary-cancelled sliding-window identity in `MC-018` also shows why Gallagher/Selberg-style short-window control does not remove this burden: the boundary terms reintroduce the path-energy target itself.
-
-`MC-019` now sharpens the remaining coarse-mode escape. The constant coefficient of the Mertens prefix vector is `R_1(N)/sqrt(N)`, where `R_1(N)=sum_{k<N}M(k)` is the first Möbius Riesz sum, and `|R_1(N)|^2/N <= V_M(N)`. The exact Mellin identity `int_1^infinity R_1(x)x^(-s-2)dx = 1/(s(s+1)zeta(s))` shows that the target scale `R_1(x)=O_epsilon(x^(3/2+epsilon))` is RH-equivalent; consequently `V_M(N)=O_epsilon(N^(2+epsilon))` is itself RH-equivalent. This gives the path-energy branch a direct RH implication independent of the still-audited Pintz theorem, but it also kills a purely representational multiscale escape: retaining a top constant/scaling coefficient and assuming the required bound merely relocates the full RH burden into that scalar.
-
-`MC-042` closes the next obvious relaxation. For every fixed real Riesz order `tau>=0`, the critical estimate `M_tau(x)=O_epsilon(x^(1/2+epsilon))` is again RH-equivalent because its Mellin transform is `Gamma(s)/(Gamma(s+tau+1) zeta(s))`, and the Gamma multiplier is zero-free in `Re(s)>1/2`. Thus replacing the order-one coarse mode by any other fixed smoothing order, or by a finite fixed-order hierarchy, does not lower the zero-information burden.
-
-`MC-043` then bounds the genuinely variable-order escape from above. For arbitrary bounded coefficients the normalized Riesz mean already satisfies `|R_tau(x)| <= x/Gamma(tau+2)`, and the all-positive control saturates that kernel-mass scale. Once `tau(x)` reaches about `(1/2) log x/log log x` at the first power-exponent scale, a square-root-looking bound becomes trivial even without sign cancellation. A useful variable-order statistic must therefore stay below that normalization-vacuity regime, renormalize the kernel mass, or prove a signed gain beyond it.
-
-`MC-044` identifies a second obstruction that survives such renormalization. For the mass-normalized order-`k` kernel, changing an entire terminal block of length `L` changes the same-scale statistic by at most `2(L/X)^(k+1)`, while exact square-free-support controls can change the ordinary partial sum by order `L`. Moreover a coefficient at arithmetic scale `N` retains constant kernel weight only when the evaluation cutoff is pushed to `Omega(kN)`. The full fixed-order scale function remains exactly invertible, but the inverse requires logarithmic derivatives through order `k`; a diagonal magnitude estimate with order changing as `k=k(X)` does not supply that information automatically.
-
-The next decisive test is therefore no longer merely to choose a slowly growing Riesz order below the `MC-043` threshold. A surviving smoothing route must include an **explicit inversion carrier**: same-order control over a sufficiently rich neighboring/future scale range, a translated/localized kernel that keeps current-scale coefficients visible, a derivative/variation theorem coming from independently weaker Möbius arithmetic, or a genuinely nonlinear/multiplicative coupling. A matched exact-support or multiplicative comparator satisfying those proposed extra hypotheses while its recovered coarse mode remains too large would kill the candidate. The clue remains accepted rather than resolved because no such arithmetic production-and-inversion mechanism is currently established.
+The active residual is therefore narrower: find a statistic that is genuinely weaker than the target, preserves enough signed/multiscale information to control the **first absolute moment** of the Mertens path, and transfers with a strict polynomial margin. The endpoint itself needs no new zero theorem: `MC-115` closes that step exactly. The clue remains accepted rather than resolved because no such arithmetic production mechanism has yet been established.
