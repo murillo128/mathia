@@ -6,17 +6,17 @@ This file holds the current mathematical lines of investigation suggested by the
 
 **Linked intuitions:** `MI-007-provenance-must-survive-the-endpoint-quotient`, `MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale`.
 
-AF-169--AF-177 show that exact finite representation and stable inversion are different questions: after the correct output quotient, local recovery is governed by a source-separation/interpolation modulus rather than by representation completeness alone. AF-180--AF-185 then show a second conditioning axis. Positive local source clusters can agree on increasingly many moments while remaining exactly `W_1=delta` apart and becoming super-algebraically invisible when the observation derivatives cannot resolve the adaptive cancellation order.
+AF-169--AF-177 show that exact finite representation and stable inversion are different questions: after the correct output quotient, local recovery is governed by a source-separation/interpolation modulus rather than by representation completeness alone. AF-180--AF-186 add adaptive positive source clusters whose exact distance stays `W_1=delta` while bounded-band observations become super-algebraically invisible when the derivative budget cannot resolve the growing cancellation order.
 
-AF-185 makes the Gevrey boundary explicit: for derivative growth `(m!)^q`, the natural obstruction scale contains the logarithmic penalty `[log(1/delta)]^q`. AF-186 gives the general mechanism. For arbitrary derivative weights `M_m`, the best parity-split finite-difference envelope is governed by the **truncated associated function** `Omega_(M,n_delta)(2/(A_delta delta))`, with the cancellation order capped by the locality requirement `n_delta delta -> 0`.
+AF-187--AF-188 show that this obstruction is not monotone in cancellation order alone. For the actual Euler logarithm, reciprocal vertical bandwidth turns the same high-order parity cluster into a harmonic residue-class filter. Fixed positive `delta T` gives order-one visibility, while the logarithmic window `delta T log(1/delta) -> lambda` has an exact algebraic discrepancy exponent `pi sigma x/lambda` for the calibrated controls.
 
-A stable theorem must therefore specify the output quotient and metric together with the admissible source-complexity growth, derivative/regularity weight, locality cap, and observation bandwidth. Fixed derivative order, exact infinite-bandwidth sufficiency, or a single source stratum does not control the adaptive family-wide problem.
+A stable theorem must therefore specify the output quotient and metric together with admissible source-complexity growth, derivative/regularity weight, locality cap, observation bandwidth, and any algebraic/harmonic structure of the kernel. Neither exact infinite-bandwidth sufficiency nor a derivative envelope alone determines the inverse scale.
 
-## Use the truncated associated function as the mechanism-level resolution diagnostic
+## Compare the associated-function obstruction with kernel-specific harmonic recovery
 
-AF-186 identifies an exact optimization inside the parity-split matched-control mechanism: among all admissible local cancellation orders, the smallest forward upper envelope is `exp[-Omega_(M,n_delta)(2/(A_delta delta))]`. Super-algebraic invisibility occurs whenever this exponent dominates `log(1/delta)`.
+AF-186 identifies the exact optimized upper envelope for the parity-split finite-difference mechanism under a derivative budget: `exp[-Omega_(M,n_delta)(2/(A_delta delta))]`. It remains the correct first obstruction test when only regularity information is used.
 
-The live question is not to treat that upper envelope as a converse theorem. It is to determine, for source classes and kernels actually used by Mathia, whether independent lower bounds or structural restrictions prevent the adaptive controls from reaching the optimized regime. Any claimed recovery threshold should be compared against this local associated-function obstruction before being interpreted as intrinsic.
+AF-187--AF-188 provide the necessary counterweight. The Euler harmonic ladder can defeat that low-band invisibility once the band reaches reciprocal separation, and the intermediate logarithmic Rayleigh window carries a continuum of algebraic fidelity exponents rather than a binary visible/invisible transition. The live problem is to derive source-class lower bounds or kernel-specific converse estimates that match these exact controls, rather than promoting the associated-function upper envelope to a universal recovery law.
 
 ## Keep provenance and endpoint sufficiency separate from conditioning
 

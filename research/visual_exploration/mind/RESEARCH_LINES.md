@@ -2,15 +2,17 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Treat prime-phase population, local Gram motion, and corrected residual as separate nulls
+## Treat prime-phase population and finite-order Gram-clock motion as separate deterministic nulls
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-005-random-prime-phase-controls-have-deterministic-resonance-geometry`.
 
 VIS-083 shows that Gram-point sampling is Haar-equidistributed on every fixed finite prime torus. An independently defined sampling anchor therefore does not create a new fixed-dimensional population law merely by using Gram points.
 
-VIS-084 identifies the opposite local regime: every sublogarithmic consecutive Gram block freezes on fixed prime support, and logarithmic-size blocks first trace a deterministic one-parameter torus arc. VIS-085 removes the obvious growing-support escape inside that transition scale. After subtracting the first-order inverse-theta arc, the residual vanishes uniformly for `H=O(log g_n)` whenever `log P_n=o(g_n log g_n)`, including every polynomial prime cutoff.
+VIS-084 identifies the opposite local regime: short consecutive Gram blocks freeze on fixed prime support and logarithmic blocks first trace a deterministic one-parameter torus arc. The strengthened VIS-085 shows that subtracting the linear inverse-theta arc removes the Gram-clock residual much farther than that transition scale: for polynomial prime support it collapses uniformly throughout `H=o(sqrt(g_n) log g_n)`.
 
-A surviving Gram-based visual route must therefore use genuinely longer blocks, an observable/source law not determined by the matched prime-phase arc, or an independently informative Gram/zero coordinate. Fixed-prime population, short-block clustering, and ordinary growing support inside a logarithmic block are classified controls.
+VIS-086 closes the first apparent escape beyond that corridor. Subtracting the quadratic inverse-theta arc extends the deterministic coordinatewise null to `H=o(g_n^(2/3) log g_n)` for polynomial support, with the exact general condition `H^3 log P=o(g_n^2 (log g_n)^4)`. The boundary of a finite-order estimate is therefore not evidence of arithmetic structure; higher inverse-theta terms may extend the null again.
+
+A surviving Gram/prime-phase visual route must either establish a residual beyond the appropriate finite-order/nonlocal sampling null, or add an independently informative source coordinate such as zero geometry, `Z(g_n)`, derivatives, or another observable not determined by prime phases and the Gram clock. Fixed-prime population and ordinary finite-order clock curvature are classified controls.
 
 ## Treat the signed finite-Euler triangular witness as classified by `log X/L`
 
@@ -20,7 +22,7 @@ Further work on this witness is justified only if it asks for sharper asymptotic
 
 ## Test frozen zeta windows at the weakest claim strength that answers the question
 
-Fixed-table comparison, population claims, short-block residual claims, and full-law certification have different uncertainty and null-model costs. Choose the destination question first and calibrate the representation and statistical burden to it.
+Fixed-table comparison, population claims, local residual claims, and full-law certification have different uncertainty and null-model costs. Choose the destination question first and calibrate the representation and statistical burden to it.
 
 ## Treat the hybrid residual as a full coordinate, not an omitted nuisance
 
