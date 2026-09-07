@@ -19,6 +19,7 @@ based_on:
   - research/visual_exploration/findings/VIS-073-growing-prime-support-averaging-corridor.md
   - research/visual_exploration/findings/VIS-074-additive-log-euler-window-corridor.md
   - research/visual_exploration/findings/VIS-075-holomorphic-euler-product-positive-cone-window-law.md
+  - research/visual_exploration/findings/VIS-076-squared-euler-product-signed-mode-fixed-support-bound.md
 ---
 
 # Can prime-by-prime zeta approximants expose structure beyond the prime torus itself?
@@ -41,40 +42,50 @@ On the critical line the right-hand side is `(4+o(1)) sqrt(X)/(L (log X)^2)`.
 
 `P_X(sigma,t)=sum_(n in S_X) n^(-sigma-it)`.
 
-Its Fourier characters can mix many primes, but every exponent vector remains nonnegative and every nonconstant vertical frequency is `log n>=log 2`. Exponentiation therefore changes the coefficient mass without creating cross-prime near-zero frequencies. The exact window bound is
+Its Fourier characters can mix many primes, but every exponent vector remains nonnegative and every nonconstant vertical frequency is `log n>=log 2`. Exponentiation therefore changes the coefficient mass without creating cross-prime near-zero frequencies.
 
-`sup_h |(1/L) integral_h^(h+L) P_X(sigma,t) dt - 1|`
-` <= (2/L) sum_(n in S_X,n>=2) n^(-sigma)/log n`.
+`VIS-076` then crosses the signed-support boundary with the first natural example, `|P_X(sigma,t)|^2`. At fixed finite `X`, its exact Poisson-product Fourier series has coefficients
 
-Signed differences such as those in `|P_X|^2` are the first place where frequencies `log(a/b)` can re-enter.
+`P_X(2 sigma,0) prod_(p<=X) p^(-sigma |k_p|)`
+
+at signed frequencies `lambda_k=sum_(p<=X) k_p log p`. Genuine near-resonances `log(a/b)` occur, but classical fixed-set lower bounds for linear forms in logarithms make
+
+`B_(X,sigma)=sum_(k!=0) prod_(p<=X) p^(-sigma |k_p|)/|lambda_k|`
+
+finite. Consequently
+
+`sup_h |(1/L) integral_h^(h+L) |P_X(sigma,t)|^2 dt - P_X(2 sigma,0)|`
+` <= 2 P_X(2 sigma,0) B_(X,sigma)/L`.
+
+So signed modes alone do not create a fixed-support finite-window escape: the unresolved signed route begins only when the prime support itself grows, or when genuinely independent information enters.
 
 ## Research question
-After quotient/reconstruction controls, fixed-prime vertical equidistribution, the exact finite-window resonance null, the generic safe growing-support corridor, the additive log-Euler corridor, and the positive-cone holomorphic Euler-product law are accounted for, is there a representation-stable visual statistic in the hybrid hierarchy that genuinely leaves the prime-torus information class?
+After quotient/reconstruction controls, fixed-prime vertical equidistribution, the exact finite-window resonance null, the generic safe growing-support corridor, the additive log-Euler corridor, the positive-cone holomorphic Euler-product law, and the fixed-support signed `|P_X|^2` closure are accounted for, is there a representation-stable visual statistic in the hybrid hierarchy that genuinely leaves the prime-torus information class?
 
-The remaining admissible routes are now narrower: a growing-support witness whose **signed mixed-coordinate** Fourier complexity is essential and quantitatively controlled outside the sufficient corridors; an externally anchored finite window whose anchor contributes independent information and whose selection is controlled; or a factor/residual dependence statistic whose residual component is independently defined and whose joint null is explicitly calibrated.
+The remaining admissible routes are now narrower: a **growing-support signed mixed-coordinate** witness whose exact coefficient-weighted resonance geometry is quantitatively controlled as `X=X(L)` grows; an externally anchored finite window whose anchor contributes independent information and whose selection is controlled; or a factor/residual dependence statistic whose residual component is independently defined and whose joint null is explicitly calibrated.
 
 ## Why it may matter
-The prime-phase visual program has progressively removed increasingly sophisticated false positives: quotient algebra, residual-controlled compensation, coordinate recombination, covariance structure, all finite cumulants, the full fixed-finite phase law, finite-window population geometry driven by the same Kronecker frequencies, a generic bounded-degree growing-support corridor, additive log-Euler support growth, and now raw holomorphic Euler-product exponentiation.
+The prime-phase visual program has progressively removed increasingly sophisticated false positives: quotient algebra, residual-controlled compensation, coordinate recombination, covariance structure, all finite cumulants, the full fixed-finite phase law, finite-window population geometry driven by the same Kronecker frequencies, a generic bounded-degree growing-support corridor, additive log-Euler support growth, raw holomorphic Euler-product exponentiation, and now the first natural fixed-support signed Euler-product statistic.
 
-A surviving signal would therefore have to identify a real boundary of the prime-torus model rather than another rendering of its coefficient mass or small-divisor geometry. In particular, neither “use more primes” nor “exponentiate the additive prime field” is a meaningful escape by itself. The observable must introduce signed mode differences or genuinely independent information, and the resulting complexity must be controlled explicitly.
+A surviving signal would therefore have to identify a real boundary of the prime-torus model rather than another rendering of its coefficient mass or small-divisor geometry. In particular, neither the existence of signed `log(a/b)` frequencies nor striking fixed-cutoff beat patterns is enough: for `|P_X|^2`, exponential coefficient decay already defeats every fixed-dimensional small divisor in the moving-window mean. A live signed route must control the joint growth of support, coefficients, and resonances, or introduce genuinely independent information.
 
 ## Decisive test
-For a growing-support route, first classify the frozen witness by its **signed Fourier support**, not merely by whether it is nonlinear.
+For a prime-torus route, first classify the frozen witness by its **signed Fourier support**, not merely by whether it is nonlinear.
 
 If it is coordinate-separable, apply `VIS-074` directly; for the critical-line logarithmic Euler field, kill the window-average route whenever `L (log X)^2/sqrt(X) -> infinity`. If it is the raw holomorphic finite Euler product, apply `VIS-075`: all modes remain in the nonnegative exponent cone, and the relevant finite-window cost is coefficient mass rather than a `log(a/b)` small divisor.
 
-If both positive and negative prime-coordinate exponents genuinely occur, write down the exact prime cutoff `X`, Fourier/coordinate degree envelope `D_X`, window length `L`, and nonconstant Fourier mass. If `A_X exp(D_X vartheta(X))/L -> 0`, kill the pointwise window-average route by `VIS-073`; for an RMS claim, apply its corresponding `R_X` condition. Leaving any sufficient corridor is not evidence of arithmetic structure: it only means the elementary bound no longer decides the question.
+If the witness is the fixed-support squared modulus `|P_X|^2`, apply `VIS-076`: its signed small divisors are real, but the exact coefficient-weighted reciprocal-frequency sum is finite for every fixed `X`, forcing uniform `O_(X,sigma)(1/L)` collapse of the moving-window mean.
 
-Only after those gates, prove or import a quantitative equidistribution or small-divisor estimate uniform over the exact signed mixed-mode family needed by the witness. If the witness is nonlinear or a path functional, expand or approximate the actual Fourier support and account for the resulting approximation complexity, continuity modulus, coefficient mass, or selection cost rather than attributing visually strong beat patterns to new arithmetic information.
+For a genuinely growing signed route, write down the exact cutoff `X=X(L)`, signed Fourier coefficients, frequency set, and the coefficient-weighted resonance quantity needed by the chosen statistic. `VIS-073` remains a sufficient bounded-degree control when its hypotheses apply, but `VIS-076` shows that mere signed support at fixed dimension is not the frontier. A positive claim must prove or import a quantitative estimate uniform over the actual growing signed-mode family and account for approximation complexity, coefficient mass, and any adaptive search over windows or witnesses. Leaving a sufficient corridor is not evidence of arithmetic structure; it only means that corridor no longer decides the question.
 
 For an externally anchored finite-window route, define the anchor independently of the prime-torus statistic, freeze the window rule and witness before confirmation, and compare against the exact frequency-preserving random-initial-phase law from `VIS-072`. Account for any search over anchors, windows, scales, or witnesses. Kill the route if the anchor is reconstructible from the same finite prime field or if the effect is reproduced by the matched resonance null.
 
 For a factor/residual statistic, construct the hybrid prime factor, zero factor, and explicit residual independently, reduce deterministic prime/zero recombinations using `VIS-064`--`VIS-066`, and calibrate the joint `(factor,residual)` null at the actual claim strength. Apply `VIS-060`--`VIS-063` to separate exact null specification from finite-window/control uncertainty.
 
 ## Evidence boundary
-`VIS-067`--`VIS-070` determine the fixed finite shared-phase null, `VIS-071` proves that the deterministic vertical prime field has that same long-height Haar law, and `VIS-072` gives the exact fixed-window sinc spectrum. `VIS-073` supplies a sufficient bounded-degree growing-support corridor for general trigonometric window averages. `VIS-074` supplies a substantially stronger corridor for additive coordinate-separable prime harmonics. `VIS-075` shows that holomorphic Euler-product exponentiation introduces mixed-prime coefficient mass but still no signed small-divisor frequencies.
+`VIS-067`--`VIS-070` determine the fixed finite shared-phase null, `VIS-071` proves that the deterministic vertical prime field has that same long-height Haar law, and `VIS-072` gives the exact fixed-window sinc spectrum. `VIS-073` supplies a sufficient bounded-degree growing-support corridor for general trigonometric window averages. `VIS-074` supplies a substantially stronger corridor for additive coordinate-separable prime harmonics. `VIS-075` shows that holomorphic Euler-product exponentiation introduces mixed-prime coefficient mass but still no signed small-divisor frequencies. `VIS-076` shows that the first natural signed example, the moving-window mean of `|P_X|^2`, still collapses uniformly at every fixed finite prime support because its exponentially decaying Fourier coefficients make the weighted reciprocal-frequency sum finite.
 
-None of these findings gives a sharp threshold for genuinely signed growing-dimensional observables, proves that a witness outside the sufficient corridors separates from the torus null, handles arbitrary nonlinear growing-dimensional path functionals, proves that a particular externally anchored window is arithmetic-specific, gives a new prime/zero independence result, determines an unexpected factor/residual joint law, or implies RH.
+None of these findings gives a useful uniform asymptotic for the `VIS-076` resonance constant as `X->infinity`, a sharp threshold for genuinely signed growing-dimensional observables, proof that a witness outside the sufficient corridors separates from the torus null, control of arbitrary nonlinear growing-dimensional path functionals, proof that a particular externally anchored window is arithmetic-specific, a new prime/zero independence result, an unexpected factor/residual joint law, or an RH consequence.
 
 ## Research disposition
-Accepted in further narrowed form. Treat fixed-finite population separation, fixed-finite sliding-window separation, the `VIS-073` generic safe corridor, the `VIS-074` additive corridor, and the `VIS-075` raw holomorphic Euler-product positive-cone route as closed. Continue only through quantitatively controlled signed mixed-coordinate growth, an independently anchored and selection-audited window, or an independently calibrated factor/residual coordinate.
+Accepted in further narrowed form. Treat fixed-finite population separation, fixed-finite sliding-window separation, the `VIS-073` generic safe corridor, the `VIS-074` additive corridor, the `VIS-075` raw holomorphic Euler-product positive-cone route, and the `VIS-076` fixed-support squared-modulus signed route as closed. Continue only through quantitatively controlled **growing-support** signed mixing, an independently anchored and selection-audited window, or an independently calibrated factor/residual coordinate.
