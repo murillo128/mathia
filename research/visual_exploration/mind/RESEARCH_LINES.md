@@ -12,23 +12,23 @@ VIS-060--VIS-063 separate fixed-table comparison from population claims and the 
 
 VIS-064--VIS-066 show that the prime/zero increment field is an invertible shear of one factor plus the explicit hybrid residual. Deterministic nonlinear, lagged, multiscale, topological, or other post-processing cannot manufacture an additional prime/zero information channel once the residual is retained.
 
-## Classify finite-window prime-torus observables by signed support and coefficient-weighted resonance
+## Classify finite-window prime-torus observables by actual sinc-filtered spectral mass
 
-VIS-067--VIS-071 determine the fixed-finite shared-prime-phase null and identify it with the source's own long-height Kronecker law. VIS-072 gives the exact finite-window sinc multiplier for every torus Fourier character, so finite-window escape is a quantitative frequency-support question rather than an unspecified failure of equidistribution.
+VIS-067--VIS-071 determine the fixed-finite shared-prime-phase null and identify it with the source's own long-height Kronecker law. VIS-072 gives the exact finite-window sinc multiplier for every torus Fourier character, so finite-window escape is a quantitative support/weight/window question rather than an unspecified failure of equidistribution.
 
-VIS-073 gives a safe corridor for bounded-degree mixed Fourier boxes. VIS-074 proves that additive log-Euler harmonics have no cross-prime small divisors, and VIS-075 shows that holomorphic exponentiation alone does not restore them because the raw finite Euler product stays in the positive exponent cone.
+VIS-073 gives a safe corridor for bounded-degree mixed Fourier boxes. VIS-074 proves that additive log-Euler harmonics have no cross-prime small divisors, and VIS-075 shows that holomorphic exponentiation alone does not restore them because the raw finite Euler product stays in the positive exponent cone. VIS-076 crosses to signed support with `|P_X|^2`, but at fixed `X` exponential coefficient decay makes the `l^1` reciprocal-frequency norm finite and forces uniform `O(1/L)` collapse.
 
-VIS-076 now closes the first signed fixed-support repair. `|P_X(sigma,t)|^2` has genuine positive and negative exponent coordinates and arbitrarily small `log(a/b)` frequencies, but its Fourier weights decay exponentially. For each fixed `X`, Baker-type lower bounds make the weighted reciprocal-frequency constant
+VIS-077 shows that this `l^1` proof certificate cannot be dimension-uniform: neighboring primes alone make its critical-line constant grow at least on the `X/log X` scale after the Euler-product mean factor is restored. VIS-078 then supplies the crucial control. The exact long-height mean-square fluctuation is
 
-`B_(X,sigma)=sum_(k!=0) w_k/|sum_p k_p log p|`
+`A_X^2 sum_(k!=0) w_k^2 sinc^2(L lambda_k/2)`,
 
-finite, giving uniform moving-window collapse to the Haar mean at `O_(X,sigma)(1/L)`. **Signed support is therefore necessary for small divisors but not sufficient for persistent finite-window structure.**
+not the reciprocal-frequency certificate. The corresponding `l^2` certificate also grows, but the very neighboring-prime modes that force that growth contribute **vanishing actual sinc-filtered energy**, uniformly in `L`.
 
-The live quantitative question is growing support: determine how the exact coefficient-weighted resonance mass behaves when `X=X(L)` increases. A useful signed visual must state its support, coefficient law, observation window, and the dimension-dependent small-divisor estimate together.
+The live growing-support question is therefore the full exact spectral energy under a frozen joint law `X=X(L)`, or a direct growing-cutoff mean-value theorem for the same observable. Divergence of an `l^1` or reciprocal-frequency `l^2` certificate, visually dramatic beats, and tiny denominators are not evidence of persistent window mass by themselves.
 
-## Generalize only after separating overlap, long memory, moving support, coefficient mass, resonance weight, and null geometry
+## Generalize only after separating overlap, long memory, moving support, coefficient mass, resonance weight, actual energy, and null geometry
 
-Finite-window deviation from Haar can measure slow torus filling, positive-cone coefficient accumulation, or signed near resonance rather than arithmetic-specific structure. VIS-076 adds a further separation: the existence of arbitrarily small frequencies does not matter if their coefficient mass decays fast enough. Growing support changes the quantitative problem itself, while adaptive smoothing, partition, support, window, or witness selection creates a separate confirmation cost.
+Finite-window deviation from Haar can measure slow torus filling, positive-cone coefficient accumulation, signed near resonance, or simply a loose proof certificate rather than arithmetic-specific structure. VIS-078 sharpens the distinction: certificate-heavy modes can be energy-light. Growing support changes the quantitative problem itself, while adaptive smoothing, partition, support, window, or witness selection creates a separate confirmation cost.
 
 ## Test Farey residuals against endpoint-safe exact nulls
 
@@ -36,4 +36,4 @@ Endpoint-safe sublinear bands and reflection-preserving same-gap controls remain
 
 ## Build an information-loss atlas and promote only exact handoff theorems
 
-Related renderings or invertible coordinate changes of one field are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, orientation, sensitivity, transport, sampling-error, scale, resonance-weight, or reconstruction statement that remains meaningful without the image.
+Related renderings or invertible coordinate changes of one field are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, orientation, sensitivity, transport, sampling-error, scale, resonance-weight, **actual spectral-energy**, or reconstruction statement that remains meaningful without the image.

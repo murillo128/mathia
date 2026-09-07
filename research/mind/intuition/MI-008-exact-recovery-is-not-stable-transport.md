@@ -1,28 +1,34 @@
-# MI-008 — Stable transport is relative to quotient, scale, source class, degree regime, and continuum interface
+# MI-008 — Stable transport is relative to quotient, safe source geometry, scale, and continuum interface
 
-**Evidence level:** supported by exact asymptotic fidelity controls through AF-175 and exact Xi static/discrete transport controls through XF-087
+**Evidence level:** supported by exact asymptotic fidelity controls through AF-177, analytic-frontier safe-cone conditioning controls through ANF-090, and exact Xi static/discrete renormalization controls through XF-089
 
 ## Core intuition
 
-Exact recovery and tiny forward error remain insufficient, but stability is now more structured than a single condition number. It depends on the **maximal destination quotient, asymptotic scale, admissible source class, degree regime, and the exact continuous/discrete transport interface**.
+Exact recovery and tiny forward error remain insufficient, but stability is now more structured than a single condition number. It depends on the **maximal destination quotient, asymptotic scale, admissible source class, degree regime, safe/null directions of the destination geometry, and the exact continuous/discrete transport interface**.
 
-Arithmetic Fidelity shows that the same complete inner-function representation can collapse on one growing source stratum and become uniformly invertible on another after the correct quotient and regularity modulus are declared. Xi Flow shows the complementary phenomenon: after projecting to the guarded visible moments, the destination resource can force static real-divisor feasibility and uniquely determine the low-mode periodic heat trajectory; the unresolved instability is then concentrated in the actual-source continuum-to-grid Volterra comparison.
+Arithmetic Fidelity shows that the same complete inner-function representation can collapse on one growing source stratum and become uniformly invertible on another after the correct quotient and interpolation modulus are declared. ANF-090 supplies the complementary warning: a raw source condition number may diverge even on configurations that are exactly safe at the destination, so conditioning must itself be quotiented or calibrated to the dangerous geometry. Xi Flow shows that a discretization can become stable only after a source-fixed singular sector is removed with the correct mesh renormalization.
 
 ## Strongest justified principle
 
-AF-169--AF-170 show exponential contraction of a regular fixed-radius divisor direction even for the complete finite Blaschke factor. AF-171 restores a uniform boundary-layer scale through the compressed coordinate `r^n`. AF-172 carries the same principle into a complex cyclic parameter, and AF-173 identifies the intrinsic output metric after quotienting the arbitrary unimodular phase.
+AF-169--AF-170 show exponential contraction of a regular fixed-radius divisor direction even for the complete finite Blaschke factor. AF-171 restores a uniform boundary-layer scale, AF-172 extends it to a complex cyclic parameter, and AF-173 identifies the intrinsic output metric after quotienting arbitrary unimodular phase. AF-174 gives the sharp unrestricted fixed-degree `1/n` inverse exponent.
 
-AF-174 gives the global fixed-degree boundary: quotient `H^infinity` error controls the degree-`n` divisor only with a sharp `1/n` worst-case exponent. AF-175 then shows that this degree loss is not universal. A degree-independent interpolation constant excludes the clustering/multiplicity directions and yields a degree-independent local Lipschitz inverse. Stable recovery is therefore conditional on a quantitative source regularity modulus, not merely on known degree.
+AF-175 then shows that a degree-independent interpolation constant restores degree-independent local Lipschitz recovery. AF-176--AF-177 prove the necessity side: cyclic perturbations and then universal Frostman shifts force local inverse slope `1/(2 delta(B))`, while AF-175 gives upper scale `1/delta(B)`. Thus for the declared metrics `delta(B)` is the intrinsic local source regularity modulus up to factor two.
 
-Xi Flow supplies the source-class and discretization analogue. XF-081--XF-083 show that generic local heat-compatible carriers are Vieta-nonidentifiable while the real-divisor class has a stable logarithmic inverse. XF-084--XF-086 project the problem to destination-visible moments and prove that bounded guarded resource forces exact static equal-weight realization. XF-087 then shows that this realization already fixes the first-`K` periodic heat trajectory, and that the exact grid vector field is the composite-trapezoid discretization of the canonical Volterra equation. The remaining transport modulus is therefore an endpoint-aware quadrature/source-sampling theorem, not a second root-dynamics existence problem.
+Analytic Frontier shows why the modulus must match the destination null space. ANF-089 gives a valid bound from the raw cross-metric ratio `chi_s=b_s/a` to separable distance. ANF-090 constructs exactly separable product families with exponentially divergent raw `chi_s`. The small source Gram eigenvalue there measures finite-difference ill-conditioning of a comparator, not dangerous nonseparability. The next meaningful conditioning theorem must remove safe separable directions before interpreting a large condition number.
+
+Xi Flow supplies the source-class and discretization analogue. XF-084--XF-087 project the problem to destination-visible guarded moments, prove exact static equal-weight realization in the admissible cone, and identify the low-mode periodic heat vector field with the composite-trapezoid Volterra discretization. XF-088 shows that the raw endpoint pole invalidates a smooth quadrature comparison unless the forced `c log Delta delta_0` term is included. XF-089 proves that for Xi `c=1/4` is unchanged over positive heat time and that reference subtraction improves the residual by one Fourier factor. The remaining transport modulus is therefore a guarded estimate for that residual, not a new root-dynamics or leading-pole problem.
 
 ## Program consequence
 
-For every source-to-destination bridge, declare the destination equivalence relation and norm; asymptotic normalization; degree or complexity regime; source regularity/admissibility modulus; and any continuum/discrete consistency estimate required to connect the source evolution to the realized finite state. A restricted class, rescaling, or discretization is legitimate only when forced by the source or theorem.
+For every source-to-destination bridge, declare the destination equivalence relation and norm; safe/null directions; asymptotic normalization; degree or complexity regime; source regularity/admissibility modulus; and any source-fixed counterterm or continuum/discrete consistency estimate required to connect the source evolution to the realized finite state. A restricted class, quotient, rescaling, or renormalization is legitimate only when forced by the source or downstream theorem.
+
+Do not treat a large raw condition number as instability until its near-null direction is shown to retain destination mass, and do not treat a singular discretization error as source information until the deterministic singular sector has been removed in the canonical normalization.
 
 ## Counterevidence / boundary
 
-AF-175's interpolation rescue is specific to uniformly interpolating Blaschke families. XF-086--XF-087 are specific to the guarded visible-moment interface and do not prove the source Xi endpoint regularity needed for a small trapezoid defect. These examples do not imply that every ill-conditioned representation has a canonical good stratum or every continuum problem has a stable source-forced discretization.
+The factor-two Blaschke enclosure is local and metric-specific. ANF-090 does not yet construct a quotient-aware conditioning theorem, and the separable cone is nonlinear. XF-088--XF-089 classify only the leading endpoint singular sector; lower-order residual control remains open.
+
+These examples do not imply that every ill-conditioned representation has a canonical good quotient or every continuum problem has a stable renormalized discretization.
 
 ## Epistemic status
 
@@ -30,4 +36,4 @@ The component statements are persisted exact/literature-backed mathematics. The 
 
 ## Falsification criterion
 
-Produce degree-uniform recovery on an AF source family whose interpolation modulus degenerates in the manner of the negative controls, or violate the exact XF static/grid statements in their proved regimes. More broadly, a source-forced theorem that remains uniformly stable without specifying quotient, scale, source class, degree regime, or the relevant continuum interface would narrow this synthesis.
+Produce uniform source-to-destination recovery while every destination-calibrated source modulus degenerates, show that ANF-090's safe family becomes dangerous after the exact destination quotient, or violate the XF endpoint counterterm/residue statements in their proved regimes. More broadly, a source-forced theorem that remains uniformly stable without specifying quotient, safe directions, scale, source class, degree regime, or the relevant continuum interface would narrow this synthesis.

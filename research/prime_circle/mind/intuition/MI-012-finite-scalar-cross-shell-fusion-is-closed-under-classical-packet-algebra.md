@@ -1,31 +1,35 @@
 # MI-012 — Finite scalar cross-shell fusion is closed under classical packet algebra
 
-**Evidence level:** proved for the declared Cauchy--Poisson character fields, finite holomorphic products, sesquilinear/power-map correspondences, and fixed finite one-output Haar fusion through PC-201
+**Evidence level:** proved for the declared Cauchy--Poisson character fields, finite holomorphic products, power-map correspondences, and arbitrary fixed finite same-angle scalar Haar fusion through PC-202
 
 ## Core intuition
 
-Cross-shell coupling is not automatically new relational information, and the relevant classical closure is wider than a one-dimensional character packet. PC-201 crosses the first boundary left open by PC-200: fixed finite scalar Haar fusion can genuinely preserve several independent Fourier indices. But after independent radial Mellin transformation that higher-dimensional additive cone is exactly Mordell--Tornheim multiple `L`-data, with principal modes giving finite cyclotomic colored variants.
+Cross-shell coupling is not automatically new relational information, and the relevant classical closure is wider than a one-dimensional character packet or one-output additive cone. PC-201 showed that fixed finite scalar Haar fusion can preserve several independent Fourier indices while still reducing after Mellin transform to Mordell--Tornheim multiple `L`-data. PC-202 closes the remaining finite multi-output scalar loophole: balanced several-input/several-output fusion is a rational-cone lattice with periodic colors and remains inside classical conical/cyclotomic multiple Dirichlet data.
 
-The useful boundary is therefore no longer merely “leave the rational Fourier ray.” A new scalar mechanism must leave the **finite character/conical packet algebra after the complete source-forced contraction is performed**, or exploit the surviving multi-index data before scalar Haar/Mellin compression identifies it with a classical multiple-`L` family.
+The useful boundary is therefore no longer merely “leave the rational Fourier ray” or “retain more than one output index.” A new scalar mechanism must leave the **entire fixed finite character/conical packet algebra after the complete source-forced contraction**, or the construction must retain the multi-index degrees of freedom in a non-scalar object before Haar/Mellin compression destroys them.
 
 ## Strongest justified principle
 
 PC-197 identifies one Cauchy--Poisson character packet with ordinary Dirichlet `L`-data. PC-198 shows that finite holomorphic cross-shell multiplication mixes coefficients without creating genuinely mixed-root poles. PC-199 proves that the canonical same-angle sesquilinear pairing is exactly a composite-character packet, and PC-200 shows that intrinsic power-map pullbacks merely rotate the Fourier diagonal to a rational ray whose gcd reduction again yields one Dirichlet packet.
 
-PC-201 then proves that the first scalar repair which truly preserves several Fourier directions still remains classical. Fusing `r` holomorphic packets against one conjugate output imposes only `k_1+...+k_r=ell`, so the `k_j` remain independent. Mellin-transforming the independent radial variables produces, coefficient for coefficient, a Mordell--Tornheim multiple `L`-function up to explicit Gauss and gamma factors. Centered principal legs produce only finite root-of-unity-colored conical variants, and primitive composite conductors obey the same analytic law.
+PC-201 proves that one-output scalar fusion with `r` holomorphic legs still gives a classical Mordell--Tornheim hierarchy. PC-202 removes the output-asymmetry restriction. With arbitrary fixed finite `r,q>=1`, Haar orthogonality imposes only
 
-Thus two or more independent Fourier directions are sufficient to leave the one-Dirichlet-packet closure but **not** sufficient to leave classical analytic-number-theory packet algebra. Increasing fixed finite scalar valence raises the depth of a known additive-cone hierarchy rather than creating a Prime-Circle zero-selection mechanism.
+`k_1+...+k_r = ell_1+...+ell_q`.
+
+The surviving positive lattice is the integer part of a pointed rational polyhedral cone. Independent radial Mellin transforms give a colored rational-cone multiple Dirichlet series, and finite rational/unimodular subdivision converts every piece into products of affine integral linear forms with finite root-of-unity colors. The `r=q=2` case already has an explicit two-chamber three-variable decomposition. Principal Ramanujan modes and primitive composite conductors remain in the same periodic cone class.
+
+Thus increasing any fixed finite scalar valence can enlarge the support dimension without producing a Prime-Circle zero-selection principle. Finite-dimensional balanced support is representation complexity until a source-forced operation preserves it outside the scalar conical closure.
 
 ## Counterevidence / boundary
 
-The classification is still finite and scalar, and PC-201 treats one conjugate output Haar contraction. It does not classify source-forced kernels with several output legs, matrix/operator-valued couplings that retain the cone indices as degrees of freedom rather than summing them, shell-dependent non-Haar interactions forced by additional geometry, infinite refinement limits, non-scalar positivity, or global uniformization/monodromy.
+The classification remains scalar and fixed finite. It does not classify matrix/operator-valued couplings that keep cone indices as degrees of freedom before contraction, shell-dependent non-Haar kernels forced by source geometry, source-forced infinite refinement limits, non-scalar positivity constructions, nonlinear cocycles outside finite periodic cone algebra, or global uniformization/monodromy.
 
-Those categories remain live only if the additional structure survives the same cyclotomic/conical classicalization test. Merely exhibiting higher-dimensional Fourier support is no longer positive evidence by itself.
+Those categories remain live only if the additional structure survives the same classicalization and matched composite-conductor controls. Merely displaying a larger balanced cone or a more complicated special function is not positive evidence.
 
 ## Epistemic status
 
-**Proved for the declared finite scalar packet operations.** The Dirichlet and Mordell--Tornheim analytic families are classical; the durable Prime-Circle contribution is the exact source-to-classical-carrier identification and the resulting boundary on what can count as a new interaction.
+**Proved for the declared fixed finite scalar packet operations.** The Dirichlet, Mordell--Tornheim, rational-cone, and cyclotomic analytic mechanisms are classical; the durable Prime-Circle contribution is the exact closure boundary.
 
 ## Falsification criterion
 
-Within the declared fixed finite one-output scalar Haar class, exhibit a source-native fusion whose independent Mellin transform cannot be reduced to the corresponding Mordell--Tornheim/cyclotomic conical family. Outside that class, a successful mechanism must identify the source-forced operation that keeps genuinely usable multi-index information after the final scalar observation instead of merely moving it into another classical finite cone function.
+Within the declared fixed finite scalar same-angle Haar class, exhibit a source-native fusion whose independent Mellin transform cannot be reduced to finite periodic rational-cone Dirichlet data. Outside that class, a successful mechanism must identify the source-forced operation that keeps genuinely usable multi-index information after the final observation rather than merely moving it into another classical finite cone function.

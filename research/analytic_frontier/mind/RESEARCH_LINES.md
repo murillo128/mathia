@@ -2,15 +2,19 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert exact Montgomery--Taylor projection taxes into separable-cone stability
+## Convert Montgomery--Taylor projection taxes into separable-quotient stability
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-081 closes every finite real multiset, ANF-083 gives a fixed complex-height strip independent of pair count, and ANF-085 proves all-height safety for separable center-height occupation. ANF-086 then gives a fixed Hilbert tube around that separable cone: any configuration defeating the affine certificate must stay a definite distance from the cone while being Montgomery--Taylor near-extremal.
+ANF-081 closes every finite real multiset, ANF-083 gives a fixed complex-height strip independent of pair count, and ANF-085 proves all-height safety for separable center-height occupation. ANF-086 then gives a fixed Hilbert tube around that separable cone: any configuration defeating the affine certificate must stay a definite distance from the cone while being Montgomery--Taylor near-extremal. ANF-087--ANF-088 identify the exact extremizers and decompose near-extremal excess into explicit nonnegative projection, multiplicity, tensor-signature, and spectral-tail taxes.
 
-ANF-087 identifies the exact equality locus as a real at-most-two-site packing already inside the safe class. ANF-088 removes most of the remaining ambiguity in “near extremal.” The Montgomery--Taylor excess is an exact sum of nonnegative taxes: distance from a canonical `2/1/0` tensor signature, real projection leakage, multiplicity defects, nonreal antisymmetric projection leakage, and the negative spectral tail. Exact dimensions are always saturated, so there is no algebraic rank-loss escape.
+ANF-089 makes the conditioning-to-geometry step quantitative. With `chi_s(W)=b_s(W)/a(W)`, where `a` is the source exponential Gram minimum and `b_s` the destination pair-collapse defect Gram maximum,
 
-The surviving all-cardinality gate is therefore a **conditioning-to-geometry theorem**. Prove that the projection-collapse/Gram-Schur regime forced by small excess also drives the normalized destination distance `d_sep` to zero; or construct growing exponential systems whose Gram conditioning degenerates enough that every ANF-088 tax is small while `d_sep` remains bounded below. Generic pair count, height, multiplicity, and exact rank are no longer the frontier.
+`d_sep(W)^2 <= [chi_s(W)/(2 q_s)] Delta(W)/L(W)`.
+
+Thus bounded cross-metric conditioning closes every corresponding subclass. But ANF-090 supplies the decisive control: raw `chi_s` can diverge exponentially on product configurations that are themselves exactly separable and globally safe. The raw real-collapse condition number is therefore not an intrinsic measure of nonseparability and cannot be uniformly bounded on any broad class containing the safe cone.
+
+The surviving all-cardinality gate is now **separable-quotient conditioning**. Either derive a direct projection-tax-to-`d_sep` estimate after removing the nearest safe product directions, or construct a genuinely nonseparable near-extremal family whose source ill-conditioning retains destination mass after that quotient. Generic pair count, height, multiplicity, exact rank, and raw Gram singularity are no longer the frontier.
 
 ## Treat relative Xi source reconstruction as solved until destination conditioning fails
 
@@ -20,11 +24,11 @@ ANF-084 gives an unconditional moving-line relative periodization of the actual 
 
 The live handoff is downstream: whether the source/reference transport reaches the finite guarded Xi state with enough quantitative margin. The existing Xi clue owns that cross-line question.
 
-## Introduce higher-order carriers only after the projection-conditioning gate fails
+## Introduce higher-order carriers only after quotient-aware conditioning fails
 
-ANF-088 shows that a complex near-extremizer must make specific finite exponential Gram/Schur complements anomalously small; it cannot hide behind exact dimension loss. Before introducing a higher-order carrier, test separated subclasses with quantitative nonharmonic-Fourier/Riesz bounds and determine whether the unrestricted growing-cardinality regime admits a genuine ill-conditioned counterexample.
+ANF-088 shows that a complex near-extremizer must make specific finite exponential Gram/Schur complements anomalously small; ANF-089 converts one such conditioning ratio into a destination-distance estimate. ANF-090 then shows why raw source conditioning is too coarse: finite differences can make it arbitrarily bad inside the exact separable cone.
 
-A higher-order mechanism becomes justified only after a concrete family survives both the exact projection-tax controls and the separable-distance test.
+Before introducing a higher-order carrier, quotient away the already-safe separable directions and test whether the remaining near-extremal taxes can still support destination mass. A higher-order mechanism becomes justified only after a concrete **nonseparable** family survives both the exact projection-tax controls and a quotient-aware separable-distance test.
 
 ## Keep diffraction realizability separate from the affine counting certificate
 

@@ -1,29 +1,33 @@
-# MI-005 — The scalar pair frontier is conditioning-to-geometry, not pair complexity
+# MI-005 — The scalar pair frontier is quotient-aware conditioning, not raw Gram complexity
 
-**Evidence level:** proved exact projection-tax reduction through ANF-088; uniform conversion to destination separability remains open
+**Evidence level:** exact projection-tax and cross-metric reductions through ANF-090; a separable-quotient conversion to destination geometry remains open
 
 ## Core intuition
 
-The fixed central-notch scalar frontier has narrowed beyond generic nonseparability. ANF-081, ANF-083, and ANF-085 control every real finite multiset, a fixed complex-height strip independent of pair count, and all-height separable center-height occupations. ANF-086 adds a fixed destination-Hilbert tube around the separable cone. ANF-087 places every exact Montgomery--Taylor extremizer back inside that safe class.
+The fixed central-notch scalar frontier has narrowed beyond generic nonseparability and beyond raw exponential-system conditioning. ANF-081, ANF-083, and ANF-085 control every real finite multiset, a fixed complex-height strip independent of pair count, and all-height separable center-height occupations. ANF-086 adds a fixed destination-Hilbert tube around the separable cone, while ANF-087--ANF-088 identify the exact equality locus and decompose near extremality into explicit nonnegative projection and spectral taxes.
 
-ANF-088 now resolves the internal structure of near extremality: the excess is an exact sum of nonnegative Hilbert projection, multiplicity, tensor-signature, and spectral-tail taxes. The adapted dimensions never drop. A hypothetical fatal family must therefore exploit **quantitative ill-conditioning of finite exponential systems**, not hidden rank loss, multiplicity, height, or pair count.
+ANF-089 then quantifies the first conditioning-to-geometry bridge: a source Gram minimum `a(W)` and destination pair-collapse Gram maximum `b_s(W)` give `d_sep(W)^2 <= [b_s(W)/(2q_s a(W))] Delta(W)/L(W)`. But ANF-090 proves that this raw ratio can diverge exponentially on configurations that are themselves exactly separable. Ill-conditioning of a particular real-collapse comparison is therefore not the invariant obstruction.
+
+The surviving loophole is **conditioning after the already-safe separable directions have been quotiented out**. A fatal family must be nonseparable in the destination geometry and must concentrate its near-null source direction in a component that retains destination mass after the nearest safe product component is removed.
 
 ## Strongest justified principle
 
-ANF-086 shows that certificate failure requires both `d_sep(W)>=kappa_crit>0` and sufficiently small Montgomery--Taylor excess. ANF-088 decomposes that excess exactly and yields, as it tends to zero, convergence to the canonical `2/1/0` tensor signature, vanishing simple-real leakage, vanishing nonreal antisymmetric distance to the symmetric span, controlled multiplicity defects, and a small negative spectral tail.
+ANF-086 shows that certificate failure requires `d_sep(W)>=kappa_crit>0` together with sufficiently small Montgomery--Taylor excess. ANF-088 decomposes that excess exactly into nonnegative taxes and rules out hidden exact rank loss. ANF-089 proves that every uniformly bounded raw cross-metric ratio `chi_s=b_s/a` forces near extremizers toward the separable cone.
 
-Because the relevant exponential generators are always linearly independent, near equality cannot be explained by an exact dimension collapse. The only remaining continuous loophole is that the positive Gram determinants/Schur complements become arbitrarily small as cardinality or geometry degenerates. The decisive theorem is thus to convert ANF-088's projection-collapse regime into `d_sep(W)->0`, perhaps under successively weaker conditioning hypotheses, or to exhibit a growing ill-conditioned family for which that conversion fails.
+ANF-090 supplies the adversarial control that changes the interpretation of this estimate. Fixed-height, fixed-separation product families can have `chi_s(W_n)->infinity` exponentially while `d_sep(W_n)=0` identically. The small source Gram eigenvalue comes from high-order finite differences on the observation window, not from dangerous nonseparable geometry. Consequently a global theorem cannot use raw `chi_s` as an intrinsic distance-to-failure parameter.
+
+The decisive theorem is now either a direct estimate from the ANF-088 projection taxes to `d_sep` that projects away exact product-fiber directions, or a quotient-aware cross-metric condition number whose null directions are measured only after the safe cone is removed. Only a growing family that remains far from that quotient while keeping the exact taxes small would establish a genuine scalar escape.
 
 ## Counterevidence / boundary
 
-ANF-088's canonical tensor is basis-adapted and is not itself asserted to come from an actual separable multiset. Small relative excess also need not imply the absolute multiplicity threshold when cardinality grows. Classical Ingham/Riesz-sequence theory supplies lower frame bounds only under additional frequency-separation hypotheses, while the unrestricted Mathia gate permits growing cardinality and collapsing gaps.
+ANF-089 remains a valid one-sided estimate and is useful on subclasses where its raw conditioning ratio is controlled. ANF-090 does not construct a fatal configuration and does not show that quotient-aware conditioning diverges. It only proves that raw source Gram singularity can be completely benign.
 
-The result uses the strict interior positivity of the exact Montgomery--Taylor factor; a generic positive-semidefinite pair kernel need not share the same dimension/projection decomposition.
+The separable cone is nonlinear and may have collisions or several nearby product representatives, so “quotienting” cannot be replaced by an unsupported orthogonal projection without a precise theorem. Higher-order carriers are not justified merely because the raw ratio diverges; the divergence must survive the destination-safe quotient.
 
 ## Epistemic status
 
-**Proved exact near-equality reduction; conditioning-to-destination geometry open.** No RH consequence is asserted.
+**Proved exact near-equality reduction, proved raw cross-metric bound, and proved raw-conditioning false positive on the safe cone; quotient-aware conditioning-to-destination geometry remains open.** No RH consequence is asserted.
 
 ## Falsification criterion
 
-Construct a normalized sequence with Montgomery--Taylor excess tending to zero and `d_sep` bounded below, while satisfying the exact ANF-088 projection-tax identities. Such a family would isolate a genuine ill-conditioned scalar escape. Conversely, a uniform theorem converting those taxes to `d_sep->0` closes the remaining scalar pair frontier.
+Construct a normalized sequence with Montgomery--Taylor excess tending to zero and `d_sep` bounded below while satisfying the exact ANF-088 taxes, and show that the ill-conditioned direction retains destination mass after every admissible separable comparison. Conversely, a source-faithful quotient-aware estimate forcing `d_sep->0` from the near-extremal taxes would close the remaining scalar pair frontier.

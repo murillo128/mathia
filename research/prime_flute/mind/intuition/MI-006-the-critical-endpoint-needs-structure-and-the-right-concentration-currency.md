@@ -1,33 +1,33 @@
 # MI-006 — The critical endpoint needs both structural coercivity and the right concentration currency
 
-**Evidence level:** supported by exact geometric controls and literature-backed endpoint estimates through PF-197
+**Evidence level:** supported by exact geometric controls, literature-backed endpoint estimates, and coefficient-localization control through PF-198
 
 ## Core intuition
 
-The Prime-Flute endpoint problem is not captured by a single statement such as “prove strong `L^1` rigidity.” The current evidence separates four issues. Generic strong `L^1` geometric/Korn rigidity fails even after determinant-one Hamiltonian/reflection marking; one-sided weak-`S_2` localization can charge concentration much more strongly than endpoint mass; the symmetrized critical `L log L` currency charges the exact Lambert concentration by only a source-summable logarithmic loss; and PF-197 shows that the localized **matrix-valued vector-gradient form already has an appropriate critical weak-`S_1` theorem**.
+The Prime-Flute endpoint problem is not captured by a single statement such as “prove strong `L^1` rigidity.” The current evidence separates the analytic currency from the operator transport. Generic strong `L^1` geometric/Korn rigidity fails even after determinant-one Hamiltonian/reflection marking; one-sided weak-`S_2` localization can overcharge concentration; the symmetrized critical `L log L` currency charges the exact Lambert deformation at a prime-summable scale; and PF-197 shows that the localized matrix-valued vector-gradient form already has the appropriate critical weak-`S_1` theorem.
 
-The local theorem is therefore no longer the missing endpoint category. The live analytic burden is quantitative transport of that theorem across the actual module family: source-compatible localization, prime-summably controlled pseudodifferential constants, off-diagonal terms, and global reassembly must preserve the PF-196 effective-area budget. Canonical endpoint splice geometry remains a separate structural obligation.
+PF-198 now shows that ordinary fixed-scale localization does not spend another Lambert-depth power. Splitting a body of longitudinal depth `O(a)` into `O(a)` windows preserves the total `L log L` budget at `O(d(1+a)/cosh a)` because the window count enters only logarithmically. The live burden is therefore no longer local theorem selection or coefficient fragmentation, but **uniform operator transport and weak-endpoint reassembly** across the actual module family. Canonical endpoint splice geometry remains a separate structural obligation.
 
 ## Strongest justified principle
 
 PF-192--PF-194 rule out deriving the desired strong endpoint from generic `r>1` rigidity by sending `r` to one, and show that determinant one plus Hamiltonian/reflection-compatible matrix structure does not by itself remove the Ornstein/laminate obstruction.
 
-PF-195 shows that a generic one-sided critical Cwikel route is mismatched to the PF-191 endpoint currency: concentrated coefficients can have small `L^1` mass while the local-sup weak-`S_2` control remains too large. PF-196 identifies the compatible coefficient currency. For the exact Lambert profile the `L log L` Luxemburg cost has scale `d(1+a)/cosh(a)`, and the prime/shift tail remains summable after any fixed polynomial loss in Lambert depth.
+PF-195 shows that a generic one-sided critical Cwikel route is mismatched to the PF-191 endpoint currency. PF-196 identifies the compatible coefficient scale: the exact Lambert profile has `L log L` Luxemburg cost `d(1+a)/cosh(a)`, and the prime/shift tail remains summable after any fixed polynomial loss in Lambert depth. PF-197 closes the local vector theorem gap by placing the principal two-dimensional gradient term inside Ponge's matrix-valued critical `Q u P` estimate.
 
-PF-197 closes the remaining local vector-valued theorem gap. Ponge's matrix-valued critical Cwikel estimate applies in dimension two to localized order-`-1` gradient-resolvent factors with an `L log L` cotangent coefficient. After the finite block-bundle enlargement, the PF-175 principal gradient term is a corner of that critical `Q u P` form. The compact-support estimate also survives on a noncompact ambient manifold. Thus vector/matrix structure and local noncompactness are not independent endpoint obstructions.
+PF-198 closes the coefficient-fragmentation gap. For a bounded-overlap fixed-width Fermi partition, concavity of `x log(e+B/x)` gives a sum of local Luxemburg norms bounded by the same global `O(d(1+a)/cosh a)` currency. The `O(a)` chart count contributes only `log O(a)`, already absorbed by the depth logarithm. Uniform cutoff derivative bounds are likewise available from translated fixed windows.
 
-What remains is conditional and quantitative: if the modulewise Cwikel/localization constants have at most a fixed polynomial Lambert-depth envelope, PF-196 absorbs that loss. The unresolved step is to prove such a decomposition for the actual two-metric resolvent and to control pseudolocal off-diagonal, commutator, interface, and finite-color reassembly terms without losing the shrinking effective-area factor.
+What remains is genuinely operator-level: prove that the localized two-metric resolvent/parametrix factors have at most fixed-polynomial Lambert-depth constants; control pseudolocal off-diagonal tails, commutators, cuff/interface terms, and smoothing remainders; and justify finite-color/global assembly in weak `S_1` without discarding the effective-area gain.
 
 ## Counterevidence / boundary
 
-PF-197 is local. It does not prove a uniform or polynomially controlled constant across the infinite module family, does not identify the full global relative resolvent with the sum of localized critical pieces, and does not prove the off-diagonal/reassembly terms trace class or weak `S_1` with prime-summable cost. It also does not construct the endpoint conservative splice, imply ordinary Kato--Rosenblum wave equivalence, or separate the prime flute from its matched composite shift clone.
+PF-198 is a coefficient statement. Weak `S_1` is an endpoint quasi-ideal, and finite overlap of coefficient supports does not by itself produce an orthogonal or lossless operator decomposition. Pseudodifferential factors remain nonlocal until the required remainder analysis is performed.
 
-A PF-specific structural theorem stronger than the generic endpoint controls could still bypass the Orlicz route, but it must identify the source property that forbids the known determinant-one laminate mechanism. Conversely, failure of global weak-trace control must now be located in family constants, geometry, or reassembly rather than attributed to the absence of a matrix-valued critical Cwikel theorem.
+Neither PF-197 nor PF-198 constructs the endpoint conservative splice, proves a global relative resolvent theorem, gives Kato--Rosenblum wave equivalence, or separates the prime flute from its matched composite shift clone. Failure of the remaining route must now be located in family constants, nonlocal reassembly, interface geometry, or arithmetic discrimination rather than in chart count or absence of a matrix-valued local Cwikel theorem.
 
 ## Epistemic status
 
-**Supported endpoint synthesis with a literature-backed local weak-`S_1` mechanism and exact prime-summable coefficient accounting; family-uniform localization, canonical splice geometry, and global reassembly remain open.**
+**Supported endpoint synthesis with a literature-backed local weak-`S_1` mechanism and exact prime-summable coefficient/localization accounting; family-uniform operator localization, canonical splice geometry, and global reassembly remain open.**
 
 ## Falsification criterion
 
-Show that the localized PF-175 principal form does not satisfy the matrix-valued critical Cwikel hypotheses claimed in PF-197, or that every source-compatible localization necessarily incurs a loss larger than any fixed prime-summable polynomial in Lambert depth. At the positive boundary, a uniform/polynomial modulewise decomposition plus prime-summable control of all off-diagonal and reassembly terms would move the frontier from endpoint operator theory to the remaining geometric/arithmetic discrimination step.
+Show that PF-198's finite-overlap localization necessarily loses more than the claimed critical coefficient budget, or that the localized PF-175 principal form falls outside PF-197's critical theorem. At the positive boundary, a uniform/polynomial modulewise parametrix plus prime-summable control of every off-diagonal/reassembly term would move the frontier from endpoint operator transport to the remaining geometric/arithmetic discrimination step.

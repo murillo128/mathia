@@ -12,20 +12,20 @@ PL-184--PL-188 show that bounded-variation targets, polylogarithmic residue labe
 
 PL-187--PL-192 show that broad scalar phase geometry is controlled either by ordinary prime density, local readout, or almost-periodic recurrence. `center -> infinity` has no universal arithmetic meaning. Any surviving scalar theorem must prescribe its center from source structure and prove target-specific cancellation there.
 
-## Treat exact unitary pure-tensor prime-shift cocycles as trivial even at infinite multiplicity
+## Treat exactly commuting unitary prime multishifts as gauge/inert structure, even with state dependence
 
 **Linked intuition:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`.
 
-PL-193 shows that scalar prime-shift phase covariance is gauge, PL-194 extends this to arbitrary nonzero scalar weighted-resolvent cocycles, and PL-195 closes the finite-fiber unitary repair on a one-dimensional bilateral base by cumulative unitary gauge.
+PL-193 shows that scalar prime-shift phase covariance is gauge, PL-194 extends this to arbitrary nonzero scalar weighted-resolvent cocycles, PL-195 closes the finite-fiber unitary repair on a one-dimensional bilateral base, and PL-196 closes fixed pure-tensor unitary covariance with an arbitrary Hilbert fiber by forcing the prime unitaries to be trivial and the remaining spectrum into an inert factor.
 
-PL-196 now closes the infinite-fiber exact-unitary loophole in the one-sided self-adjoint-resolvent setting. For arbitrary Hilbert fiber `K`, exact covariance `R(S_p tensor I)=(S_p tensor U_p)R` forces every `U_p=I`; the resolvent and Hamiltonian then factor as `I tensor A` and `I tensor K_0`. Continuous or infinite internal spectrum can survive only as inert multiplicity independent of the exponent lattice.
+PL-197 now closes the most obvious relational repair. Even if the unitary on the `p`-edge depends arbitrarily on the entire exponent vector, exact commutation imposes the flat square relations and the connection integrates to a global diagonal vertex gauge. Moreover self-adjoint resolvent covariance does not canonically select that gauge: an arbitrary Boolean field on the exponent lattice can be programmed into a two-point self-adjoint model while preserving exact commuting covariance.
 
-A source-relevant prime action must therefore leave this exact pure-tensor unitary class: for example through genuinely relational multi-coordinate dependence, loops/branching with source-forced holonomy, target-relative or source-target coupling, covariance in a nontrivial operator ideal, or a nonunitary/nonnormal category with a replacement coercivity theorem. Merely increasing internal unitary dimension cannot encode arithmetic curvature or a Hilbert--Polya mechanism.
+A source-relevant prime action must therefore survive both **flat-gauge removal and programmability controls**. Nonzero curvature, target-relative topology/compression, covariance only modulo an operator ideal, or nonunitary/nonnormal transport remain category exits rather than evidence. In particular PL-036 already warns that arbitrary scalar projective curvature can itself be programmed on the bare free prime semigroup; a surviving curvature must be forced by arithmetic/global completion and accompanied by a replacement coercivity theorem.
 
 ## Force completed arithmetic sign or one-sided coercivity upstream
 
-A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, pointwise phase, moving-window geometry, or exact unitary covariance already contains no nontrivial arithmetic coupling.
+A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, pointwise phase, moving-window geometry, or exactly commuting unitary covariance already contains no nontrivial arithmetic coupling.
 
 ## Resolve target-sensitive Nyman data and genuinely relational prime-shift actions
 
-Joint factor-range couplings, several shifted targets, completed source/target operators, and target-sensitive Nyman data remain live only when they preserve information beyond the local sieve/Kubilius sigma-algebra and survive the final observation regime. A relational prime-shift action must also survive the exact gauge/inert-factor tests above; larger unitary fibers in a pure-tensor exact-covariance model do not suffice.
+Joint factor-range couplings, several shifted targets, completed source/target operators, and target-sensitive Nyman data remain live only when they preserve information beyond the local sieve/Kubilius sigma-algebra and survive the final observation regime. A relational prime-shift action must also survive the exact gauge/inert-factor and programmability tests above; state dependence in a flat exact-unitary model does not suffice.
