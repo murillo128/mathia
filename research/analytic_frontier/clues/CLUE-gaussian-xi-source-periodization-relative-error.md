@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-gaussian-xi-source-periodization-relative-error
 type: research-clue
-status: accepted
+status: resolved
 origin: independent-review
 target_line: analytic_frontier
 based_on:
@@ -114,6 +114,9 @@ No bound for positive-time `H_t` is inferred from the Euler product of `H_0`. In
 
 ## Research disposition
 
-Accepted for active investigation. Independent destination-side triage reproduces the `z/2` normalization, the xi prefactor power `(sigma_0+3)/2`, the Gamma shift cost `pi |m|L/8`, the Gaussian image suppression, and the first prime frequency `log 2/2`; the closest de Bruijn--Newman heat-flow literature supplies the standard `H_0` normalization and effective `H_t` estimates but does not by itself discharge this relative periodization interface. A moving test family such as `sigma_0=1+1/log T`, strip thickness comparable to `1/log T`, `w=log T`, and `L=(log T)^3` leaves enough Gaussian margin to absorb the polynomial deterioration of Euler-product and Cauchy constants at the source.
+Outcome: narrowed
 
-The precise unresolved question is downstream conditioning: prove in the destination's own normalized weighted source norm that the relative/logarithmic error and the required fixed derivative orders remain `o(1)`, while the reference-divided positive-time evolution preserves the transition signal. Until that norm and transport estimate are closed, the source calculation remains a plausible interface rather than canonical evidence.
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-084-moving-euler-product-line-gives-superpolynomial-relative-xi-periodization.md]]
+
+`ANF-084` closes the source-side part of the clue on the explicit moving family `sigma_0=1+1/log T`, strip thickness `asymp 1/log T`, `w=log T`, and `L=(log T)^3`: it proves normal convergence, a relative image error bounded by a polynomial factor times `exp(-(log T)^4/8)`, fixed-order derivative and logarithmic control by Cauchy, and Gaussian prime leakage of size `exp(-Theta((log T)^2))` up to polynomial factors. The remaining question is no longer an `analytic_frontier` source estimate. It is the destination-side conditioning and positive-time reference-divided transport needed to show that these source errors remain negligible in the actual normalized selector norm while retaining a nontrivial transition signal.
