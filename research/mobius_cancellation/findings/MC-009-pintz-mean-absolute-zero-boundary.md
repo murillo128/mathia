@@ -1,6 +1,6 @@
 # MC-009 — Pintz mean-absolute Möbius exponent recovers the rightmost zero boundary
 
-**Status:** `LITERATURE+DERIVED`, `NEEDS-AUDIT`.
+**Status:** `LITERATURE+DERIVED`, `NEEDS-AUDIT`, `CORRECTED-BY-MC-115`.
 
 ## Claim
 
@@ -10,7 +10,7 @@ Let
 \vartheta=\sup_{\rho:\zeta(\rho)=0}\operatorname{Re}\rho
 \]
 
-where the supremum runs over nontrivial zeros, and define the global mean-absolute and near-end maximal Mertens statistics
+where the supremum runs over nontrivial zeros, and define
 
 \[
 D_M(x)=\frac1x\int_0^x |M(u)|\,du,
@@ -20,7 +20,7 @@ S_{M,\delta}(x)=\max_{x^{1-\delta}\le u\le x}|M(u)|
 
 for fixed `delta>0`.
 
-A very recent preprint of Pintz (`MC-S19`) proves, in Theorem 2.2, that
+The current version of Pintz's very recent preprint (`MC-S19`, arXiv:2608.24878v2, 1 September 2026) states in Theorem 2.2 that
 
 \[
 \log D_M(x)\sim \log S_{M,\delta}(x)\sim \log Z(x),
@@ -30,12 +30,12 @@ A very recent preprint of Pintz (`MC-S19`) proves, in Theorem 2.2, that
 where
 
 \[
-Z(x)=\max_{\rho:\gamma>0}\frac{x^{\beta}}{\gamma},
+Z(x)=\max_{\rho:\gamma>0}\frac{x^\beta}{\gamma},
 \qquad \rho=\beta+i\gamma.
 \tag{2}
 \]
 
-Together with the zero-edge definition of `vartheta`, (1) yields the exact logarithmic exponents
+Together with the zero-edge definition of `vartheta`, `(1)` yields the full logarithmic-order statement
 
 \[
 \boxed{
@@ -46,34 +46,31 @@ Together with the zero-edge definition of `vartheta`, (1) yields the exact logar
 \tag{3}
 \]
 
-Consequently, conditional only on the correctness of the cited fresh preprint theorem,
+Conditional on the still-pending proof audit of Pintz's theorem, this says that global absolute averaging and a broad near-end maximum preserve not merely a limsup obstruction but the **entire power exponent** of the rightmost zeta-zero boundary.
+
+A correction to the original version of this finding is essential. The weaker equivalence
 
 \[
 \boxed{
 RH
 \iff
 D_M(x)=O_\varepsilon(x^{1/2+\varepsilon})
-\quad\text{for every }\varepsilon>0.}
+\quad\text{for every }\varepsilon>0
+}
 \tag{4}
 \]
 
-Equivalently,
+does **not** depend on Pintz. `MC-115` proves `(4)` directly: the mean-absolute bound makes
 
 \[
-RH
-\iff
-D_M(x)=x^{1/2+o(1)}
-\quad\text{in logarithmic order}. 
-\tag{5}
+s\int_1^\infty M(x)x^{-s-1}\,dx
 \]
 
-The important line-specific message is that **global absolute averaging does not erase the exponent of the rightmost zeta-zero boundary**. A hypothetical zero with real part `beta>1/2` forces the mean absolute size of `M` to have logarithmic exponent at least `beta`; it cannot be hidden merely by sign oscillation or by averaging `|M|` over `[0,x]`.
-
-This does not provide a new proof route by itself. Pintz's theorem is analytic zero-sensitive input, not an independently easier arithmetic estimate for `D_M`. But it changes the target hierarchy for this line: an RH-scale **mean-absolute** bound is already enough to recover RH, even though it is formally much weaker than a pointwise RH-scale bound for `M(x)`.
+absolutely convergent in `Re(s)>1/2+epsilon`, where it analytically continues the classical Dirichlet series `1/zeta(s)`. Any zero in that half-plane would contradict holomorphy. Pintz's contribution is therefore the stronger two-sided/full-limit fidelity `(1)`--`(3)` and the terminal-window comparison, not the bare RH implication of the mean-absolute upper bound.
 
 ## 1. The zero-edge exponent of `Z(x)` is exactly `vartheta`
 
-The deduction from Pintz's Theorem 2.2 to (3) is elementary and does not use an additional analytic theorem.
+The deduction from Pintz's Theorem 2.2 to `(3)` is elementary once `(1)` is granted.
 
 For every zero `rho=beta+i gamma` with `gamma>0`,
 
@@ -85,7 +82,7 @@ so
 
 \[
 \limsup_{x\to\infty}\frac{\log Z(x)}{\log x}\le\vartheta.
-\tag{6}
+\tag{5}
 \]
 
 Conversely, for any `eta>0`, the definition of the supremum supplies a fixed zero `rho_eta=beta_eta+i gamma_eta` with
@@ -100,134 +97,121 @@ Then
 Z(x)\ge\frac{x^{\beta_\eta}}{\gamma_\eta},
 \]
 
-hence
+and hence
 
 \[
-\liminf_{x\to\infty}\frac{\log Z(x)}{\log x}
-\ge \vartheta-\eta.
+\liminf_{x\to\infty}\frac{\log Z(x)}{\log x}\ge\vartheta-\eta.
 \]
 
 Letting `eta` tend to zero gives
 
 \[
 \frac{\log Z(x)}{\log x}\longrightarrow\vartheta.
-\tag{7}
+\tag{6}
 \]
 
-Combining (7) with (1) proves (3). Pintz records the analogous calculation for the prime-number-theorem error term earlier in the same paper; the present step simply applies his new Möbius theorem.
-
-Equation (3) is equivalent to the two-sided exponent statement that for every fixed `epsilon>0`, eventually
+Combining `(6)` with `(1)` proves `(3)`. Thus, if Pintz's theorem survives audit, for every fixed `epsilon>0` and all sufficiently large `x`,
 
 \[
 x^{\vartheta-\varepsilon}
 \le D_M(x)
 \le x^{\vartheta+\varepsilon},
-\tag{8}
+\tag{7}
 \]
 
-up to changing the threshold in `x`. Thus the mean-absolute statistic determines `vartheta` exactly at the power-law level.
+and the analogous logarithmic-order statement holds for `S_{M,delta}`.
 
-## 2. Why the mean-absolute criterion is genuinely weaker than the classical pointwise criterion
+## 2. What is elementary and what genuinely belongs to Pintz
 
-The classical Mertens RH criterion uses
+The classical pointwise Mertens RH criterion
 
 \[
 M(x)=O_\varepsilon(x^{1/2+\varepsilon})
-\quad\text{for every }\varepsilon>0.
-\tag{9}
+\quad\text{for every }\varepsilon>0
+\tag{8}
 \]
 
-Pointwise control (9) trivially implies the corresponding bound for `D_M`, so RH gives the forward implication in (4) without needing Pintz's new theorem.
+trivially implies the corresponding mean-absolute upper bound. The reverse implication in `(4)` is also classical-mechanism mathematics after `MC-115`: although an absolute mean does not generically recover pointwise values, it controls the weighted absolute integral strongly enough to continue the Möbius Mellin transform and exclude zeros.
 
-The reverse implication is where the new theorem matters. An estimate on
+Therefore the correct hierarchy is:
 
-\[
-\frac1x\int_0^x|M(u)|\,du
-\]
+- **mean-absolute RH-scale upper bound implies RH:** exact and independent of `MC-S19`, by `MC-115`;
+- **a zero at real part `beta` forces the limsup mean exponent to be at least `beta`:** also exact from the contrapositive of `MC-115`;
+- **the logarithmic exponent of `D_M(x)` actually converges to `vartheta`, with the same exponent for a terminal-window maximum:** the substantially stronger statement supplied by Pintz and still under audit here.
 
-places no generic pointwise bound of the same exponent on `M`; sparse spikes can be invisible to an average. Nevertheless (3) says that such spikes cannot carry an off-critical zero while leaving the **global mean exponent** below that zero's real part. If `D_M(x)=O_\varepsilon(x^{1/2+\varepsilon})` for all `epsilon`, then (3) forces `vartheta<=1/2`. Since functional-equation symmetry of the nontrivial zero set gives `vartheta>=1/2` and `vartheta=1/2` exactly when all nontrivial zeros lie on the critical line, RH follows.
-
-This is an information-fidelity statement specific to the Möbius/zero interface: absolute averaging destroys sign and location information but, according to the theorem, preserves the extremal zero **exponent**.
+Sparse spikes remain a valid reason why no generic real-variable pointwise recovery exists. They are simply irrelevant to the analytic implication `(4)`: zero exclusion comes from Mellin convergence, not from reconstructing `M(x)` pointwise.
 
 ## 3. Relation to the local-to-global obstruction chain
 
-This finding does not contradict `MC-001` or `MC-006`.
+This finding does not weaken the barriers in `MC-001` or `MC-006`. `MC-001` shows that almost-all short-interval magnitude plus exceptional-set measure, passed through triangle inequality, produces an error budget whose known logarithmic rates do not yield fixed-power global saving. `MC-006` similarly shows that the available averaged two-point Chowla rate gives only logarithmic saving through the audited black-box van der Corput route.
 
-`MC-001` proves that almost-all short-interval magnitude plus exceptional-set measure, used only through a triangle-inequality transfer, gives an error budget `eta X+B+H`; the currently proved logarithmic rates do not reach any fixed power saving. `MC-006` similarly shows that the current averaged two-point Chowla rate, fed through black-box van der Corput, gives only logarithmic global saving.
-
-The new literature result changes **what would be sufficient at the end of a successful transfer**, not the strength of the existing local inputs. A local/multiscale argument no longer needs to reconstruct the pointwise Mertens bound if it can instead prove
+What changes is only the endpoint that a successful arithmetic transfer must hit. A source-natural local, correlation, bilinear, or multiscale argument need not prove the pointwise estimate `(8)` if it can instead prove
 
 \[
 D_M(x)\ll_\varepsilon x^{1/2+\varepsilon}.
+\tag{9}
+\]
+
+Once `(9)` is available, `MC-115` supplies the exact zero-free implication with no dependency on the fresh Pintz theorem. The current local and averaged inputs still do not deliver `(9)` at polynomial strength.
+
+## 4. The stronger off-critical signature supplied by Pintz
+
+The README asks whether a hypothetical off-critical zero forces a detectable signature in Möbius observables beyond merely rewriting `1/zeta(s)`. `MC-115` already proves the robust one-sided statement
+
+\[
+\zeta(\rho)=0,\quad\operatorname{Re}\rho=\beta
+\Longrightarrow
+D_M(x)\ne O(x^\alpha)
+\quad(\alpha<\beta),
 \tag{10}
 \]
 
-But present almost-all and averaged-correlation theorems still do not provide the polynomial information needed to establish (10) by the black-box routes already audited.
+which is a limsup power obstruction.
 
-This suggests a narrower target for future local-to-global work: preserve enough **signed or multiscale organization** to control the first absolute moment of the global partial-sum process, rather than demanding uniform pointwise control. Whether this weaker target is materially more accessible is open; the Pintz theorem only certifies that it is sufficient.
-
-## 4. Off-critical zeros have a rigid averaged signature
-
-The README asks whether a hypothetical off-critical zero forces a detectable signature in Möbius observables beyond a tautological restatement of `1/zeta(s)`. Theorem 2.2 supplies such a signature at the level of a natural global statistic:
+Pintz's Theorem 2.2, if fully verified, is stronger:
 
 \[
-\vartheta>\frac12
-\quad\Longrightarrow\quad
 D_M(x)=x^{\vartheta+o(1)}
-\quad\text{in logarithmic order}.
+\quad\text{in logarithmic order},
 \tag{11}
 \]
 
-It simultaneously gives
+and simultaneously
 
 \[
-S_{M,\delta}(x)=x^{\vartheta+o(1)},
+S_{M,\delta}(x)=x^{\vartheta+o(1)}
+\quad\text{in logarithmic order}
 \tag{12}
 \]
 
-for every fixed positive `delta`. Thus the rightmost zero boundary controls both the average absolute Mertens size and the maximum occurring in the terminal multiplicative window `[x^{1-delta},x]`, to the same logarithmic exponent.
-
-This is stronger than merely saying that one off-critical zero gives an `Omega(x^{beta-epsilon})` sequence of exceptional values. It identifies the asymptotic power exponent of a global average and a broad near-end maximum with the extremal zero boundary.
-
-However, the mechanism remains explicitly analytic. Pintz's proof works through `1/zeta(s)`, zero-free information and complex-analytic estimates. It therefore does not satisfy the line's stronger ambition of deriving RH-scale cancellation from independently controlled arithmetic structure; it supplies a precise target and a fidelity theorem for such a route.
+for every fixed positive `delta`. It therefore rules out deep persistent downward exponent fluctuations and ties the global average to a broad terminal maximum. That full two-sided rigidity is the part of this finding that remains genuinely dependent on `MC-S19`.
 
 ## Prior art and novelty assessment
 
-`MC-S19` is the primary source and is unusually fresh: arXiv `2608.24878`, submitted 25 August 2026 and revised 26 August 2026. Its abstract states that the mean absolute order of `M(x)` agrees to high accuracy with the largest zero-driven term, and Theorems 2.1–2.2 give the precise asymptotic comparison used above.
+`MC-S19` is the primary source. The current arXiv metadata is `arXiv:2608.24878v2`, revised 1 September 2026. Theorems 2.1--2.2 state the asymptotic comparisons used in `(1)`--`(3)`. The paper traces its mean-absolute lower-bound program back to Pintz's 1982/83 work and presents the new theorem as the Möbius analogue of earlier sharp results for the prime-number-theorem error term.
 
-The paper itself traces the mean-absolute lower-bound program back to Pintz's 1982/83 work and presents the new theorem as the Möbius analogue of his earlier sharp results for the prime-number-theorem error term. No novelty is claimed here for Pintz's theorem, for the classical RH-equivalent pointwise Mertens bound, or for the definition of `vartheta`.
+No novelty is claimed here for Pintz's theorem, the classical Mertens criterion, the definition of `vartheta`, or the direct Mellin mechanism now separated into `MC-115`. The Mathia-derived content of this finding is the research-facing extraction of the full logarithmic zero-edge consequence and its audited dependency boundary.
 
-The Mathia-derived content is only the explicit research-facing extraction of (3)–(5) and its placement against the existing `MC-001`/`MC-006` information-budget obstructions. Because the source is a brand-new preprint and its long proof has not been independently reconstructed in this run, the finding is deliberately marked `NEEDS-AUDIT` rather than treating the theorem as independently verified mathematics.
+The v2 text still displays the three proof-presentation defects already isolated in the audit chain:
+
+- the signed denominator `gamma` in equation `(2.10)` although the positive `|gamma|` quantity is required;
+- the dropped shifted-height factor in the displayed kernel estimate `(6.23)`;
+- the `epsilon'=epsilon/9` cap in Section 7 being applied down to the wider `epsilon/8` window.
+
+`MC-010`, `MC-011`, and `MC-012` give explicit repairs for those defects, but the remaining Section 5 contour/nonvanishing input has not been reconstructed end-to-end. A newer arXiv version therefore does not by itself justify upgrading this finding beyond `NEEDS-AUDIT`.
 
 ## Boundaries and falsification tests
 
-This finding does **not** improve the unconditional upper bound for `M(x)` or `D_M(x)`. It does not show that the mean-absolute target (10) is easy, or even easier in practice than the pointwise target.
+This finding does **not** improve the unconditional upper bound for `M(x)` or `D_M(x)`, and it does not show that the mean-absolute target `(9)` is arithmetically easy.
 
-It also does not provide an elementary implication from a mean bound to pointwise cancellation. The reverse implication in (4) depends essentially on Pintz's theorem identifying the mean exponent with the zero boundary.
+The exact RH equivalence `(4)` is no longer part of the Pintz audit surface; falsifying Pintz's stronger theorem would not remove the Mellin implication in `MC-115`. What remains audit-sensitive here is the full-limit assertion `(3)` and the terminal-window equivalence `(12)`.
 
-Finite computations of `M(x)` cannot validate the asymptotic theorem. The decisive audit is theorem-level: independently reconstruct the hypotheses and proof of Pintz's Theorems 2.1–2.2, with particular attention to the `vartheta=1` case that the paper identifies as the difficult new regime, and confirm that no unstated simplicity, multiplicity, zero-density, or RH assumption enters the asymptotic comparison.
+Finite computations of `M(x)` cannot validate those asymptotic statements. The decisive remaining audit is theorem-level: reconstruct the load-bearing Section 5 upper-bound contour and the rest of the `vartheta=1` assembly under the precise parameter ranges, while preserving the repairs already recorded in `MC-010`--`MC-012`.
 
-If that audit fails, (3)–(5) must be withdrawn or narrowed. If it succeeds, the durable conclusion is not a new RH proof but a sharper target hierarchy:
-
-```text
-pointwise RH-scale Mertens bound
-        =>
-mean-absolute RH-scale Mertens bound
-        =>
-rightmost-zero boundary theta = 1/2
-        =>
-RH,
-```
-
-where the second implication is nontrivial literature input and the first is elementary.
+If that audit fails, `(1)`--`(3)` and `(11)`--`(12)` must be narrowed or withdrawn. `MC-115` and the mean-absolute RH criterion `(4)` would remain unaffected.
 
 ## Consequences for the line
 
-The local-to-global frontier should distinguish two endpoints:
+The line should now treat the mean-absolute endpoint in two layers. First, `D_M(x)=O_epsilon(x^(1/2+epsilon))` is an **exact RH-complete arithmetic target** by the direct transform argument of `MC-115`. Second, Pintz's fresh theorem proposes a much more rigid description of the entire mean-absolute growth profile and its near-end maxima, but that stronger statement remains under active proof audit.
 
-- the classical strong endpoint `M(x)=O_epsilon(x^(1/2+epsilon))`;
-- the weaker but still RH-complete endpoint `D_M(x)=O_epsilon(x^(1/2+epsilon))` supplied by `MC-S19`.
-
-A future short-interval, correlation, bilinear or multiscale mechanism should therefore be tested first against the mean-absolute endpoint. If it cannot deliver polynomial control even there, it cannot reach RH through this route. If it can, Pintz's theorem gives an exact analytic bridge from that weaker arithmetic target to the zero boundary.
-
-This is potentially a useful reduction in required output strength, but not a reduction in the currently proved input strength.
+A future arithmetic mechanism can therefore aim at the weaker mean-absolute upper bound without carrying the fresh-preprint dependency into the final zero-free step. The real unresolved burden is still upstream: obtain the polynomial mean-absolute cancellation from source-natural local, multiscale, bilinear, or multiplicative information that is independently weaker than the target itself.
