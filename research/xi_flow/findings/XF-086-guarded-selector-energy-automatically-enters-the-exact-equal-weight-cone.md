@@ -18,7 +18,7 @@ C_g:=\int_{-1}^{1}|\chi(u)|^2\,du>0,
 \tag{2}
 \]
 
-and let `S subset {J,...,K}`. Define the exact full-sideband resource of a prescribed raw moment vector `Q=(Q_m)_{m in S}` by
+and let `S` be any subset of `{J,...,K}`. Define the exact full-sideband resource of a prescribed raw moment vector `Q=(Q_m)_{m\in S}` by
 
 \[
 \boxed{
@@ -55,9 +55,9 @@ Hence the quantitative criterion
 \tag{5}
 \]
 
-In particular, `mathcal R_S(Q)=O(1)` is far stronger than necessary. At the canonical XF-071 source guard `J=q^{1/4}`, a bounded selector resource gives normalized moment mass `O(q^{-3/8})`; at the destination guard `J_+=q^{1/2}`, it gives `O(q^{-3/4})`.
+In particular, `\mathcal R_S(Q)=O(1)` is far stronger than necessary. At the canonical XF-071 source guard `J=q^{1/4}`, a bounded selector resource gives normalized moment mass `O(q^{-3/8})`; at the destination guard `J_+=q^{1/2}`, it gives `O(q^{-3/4})`.
 
-Combining (4) with XF-085 closes the **static** real-divisor realization gate throughout the resource regime already used by the Xi-flow transport. For any fixed `0<kappa<1`, every family with `mathcal R_S(Q)=o(J^3)` eventually satisfies (1). Since the Xi node budget has
+Combining (4) with XF-085 closes the **static** real-divisor realization gate throughout the resource regime already used by the Xi-flow transport. For any fixed `0<kappa<1`, every family with `\mathcal R_S(Q)=o(J^3)` eventually satisfies (1). Since the Xi node budget has
 
 \[
 N=2q^2,
@@ -68,7 +68,7 @@ K=O(q\log\log T)=o(N),
 
 XF-085 then supplies exactly `N` unit-circle nodes of equal weight whose raw moments equal the prescribed `Q_m` on every `m in S`, with the unconstrained modes up to `K` chosen as in its benign completion. No exponentially accurate center-local function approximation, root matching, or weight quantization is needed for this finite selector state.
 
-This does **not** finish the Xi-to-periodic bridge. One must still extract or transport a finite target moment vector from the actual Xi Gaussian/reference data with controlled `mathcal R_S`, and the resulting real divisor must still be connected to the heat-compatible state used downstream. Positive-`Lambda` transition mass also remains separate. What is removed is a distinct algebraic concern: once the target visible state is controlled in the same guarded `X(B)` resource already required by XF-070--XF-071, equal-weight real-divisor existence at the exact Xi node budget no longer imposes an additional `ell^1` hypothesis.
+This does **not** finish the Xi-to-periodic bridge. One must still extract or transport a finite target moment vector from the actual Xi Gaussian/reference data with controlled `\mathcal R_S`, and the resulting real divisor must still be connected to the heat-compatible state used downstream. Positive-`Lambda` transition mass also remains separate. What is removed is a distinct algebraic concern: once the target visible state is controlled in the same guarded `X(B)` resource already required by XF-070--XF-071, equal-weight real-divisor existence at the exact Xi node budget no longer imposes an additional `ell^1` hypothesis.
 
 ## 1. Exact dual norm of the guarded selector resource
 
@@ -126,7 +126,7 @@ C_g(\pi-1)^4m^4.
 \tag{11}
 \]
 
-Therefore, for `S subset {J,J+1,...}`,
+Therefore, for `S` contained in `{J,J+1,...}`,
 
 \[
 \sum_{m\in S}\frac1{I_m}
@@ -158,24 +158,24 @@ Equation (9) is the exact norm of the embedding from the diagonal weighted space
 \tag{14}
 \]
 
-On a full dyadic block `J<=m<=2J`, XF-070 gives `w_m asy_g m^4/M^2`, so
+On a full dyadic block `J<=m<=2J`, XF-070 gives `w_m\asymp_g m^4/M^2`, so
 
 \[
 \sum_{m=J}^{2J}w_m^{-1}
-asymp_g M^2J^{-3}.
+\asymp_g M^2J^{-3}.
 \tag{15}
 \]
 
-Thus the best possible normalized `ell^1` control from `mathcal R_S` alone has scale
+Thus the best possible normalized `ell^1` control from `\mathcal R_S` alone has scale
 
 \[
 \frac2N\|Q\|_{\ell^1}
-asymp_g
+\asymp_g
 J^{-3/2}\mathcal R_S(Q)^{1/2}.
 \tag{16}
 \]
 
-In particular, the boundary `mathcal R_S(Q) asy J^3` can genuinely carry order-one normalized `ell^1` mass. One may choose the Cauchy--Schwarz extremal on `J<=m<=2J`; after scaling to make `(2/N)sum|Q_m| asy 1`, its typical raw moment size is only `O(M/J)`, below the trivial real-divisor bound `|P_m|<=N` for growing `J`. Hence the exponent in (5) is not an artifact of allowing individually impossible moments.
+In particular, the boundary `\mathcal R_S(Q)\asymp J^3` can genuinely carry order-one normalized `ell^1` mass. One may choose the Cauchy--Schwarz extremal on `J<=m<=2J`; after scaling to make `(2/N)sum|Q_m|\asymp 1`, its typical raw moment size is only `O(M/J)`, below the trivial real-divisor bound `|P_m|<=N` for growing `J`. Hence the exponent in (5) is not an artifact of allowing individually impossible moments.
 
 The favorable conclusion therefore comes specifically from the Xi architecture: its source/destination state has `O(1)` or smaller guarded `H^3` resource while the guard index tends to infinity. That combination sits parametrically far below the intrinsic `J^3` loss threshold.
 
@@ -279,7 +279,7 @@ More generally, (5) allows the interface resource to grow as `o(q^{3/4})` at the
 
 The growing lower guard is load-bearing. If `J=O(1)`, equation (4) supplies no asymptotic gain; a bounded weighted selector resource can then have order-one normalized `ell^1` moment mass, and XF-085's fixed-margin hypothesis remains a genuine separate condition. This is consistent with XF-069--XF-071: the purpose of the infrared quotient and guard band is precisely to stop insisting on the unresolved fixed modes.
 
-Complete sidebands are used only to identify `mathcal R_S` with the exact XF-079 `X(B)` norm. The algebraic inequality (9) remains true for any abstract moment vector equipped with the same weights. Edge-clipped sidebands can be handled with their exact reduced weights, but no uniform lower bound is available if an edge clips almost all of a sideband; the clean statement therefore keeps the one-sideband margin already standard in XF-070.
+Complete sidebands are used only to identify `\mathcal R_S` with the exact XF-079 `X(B)` norm. The algebraic inequality (9) remains true for any abstract moment vector equipped with the same weights. Edge-clipped sidebands can be handled with their exact reduced weights, but no uniform lower bound is available if an edge clips almost all of a sideband; the clean statement therefore keeps the one-sideband margin already standard in XF-070.
 
 No root reality is assumed in deriving (4). Root reality enters only after XF-085 realizes the moment vector by an equal-weight unit-circle measure. Accordingly this finding is a **static existence theorem**, not a proof that the realized nodes evolve under the same periodic heat carrier demanded by XF-067--XF-071. It also does not show simplicity, preserve a particular ordering, or identify the real divisor with actual Xi zeros.
 
@@ -305,4 +305,4 @@ After XF-086, the real-divisor source bridge should no longer spend effort provi
 
 At the actual Xi-flow scales, any `O(1)` control in the destination-matched selector norm is already more than sufficient. XF-085 then realizes those visible moments exactly by an `N=2q^2` equal-weight real divisor.
 
-This narrows the live bridge to two genuinely Xi/dynamical questions rather than a third moment-geometry problem: first, carry the Gaussian/reference Xi data into the finite guarded moment state with controlled `mathcal R`; second, make the resulting real-divisor state heat-compatible through the interval needed by XF-071. The independent positive-`Lambda` transition-mass gate remains unchanged.
+This narrows the live bridge to two genuinely Xi/dynamical questions rather than a third moment-geometry problem: first, carry the Gaussian/reference Xi data into the finite guarded moment state with controlled `\mathcal R`; second, make the resulting real-divisor state heat-compatible through the interval needed by XF-071. The independent positive-`Lambda` transition-mass gate remains unchanged.
