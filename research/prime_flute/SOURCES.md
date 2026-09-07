@@ -349,6 +349,23 @@ Relevant finding: PF-187; relevant local clue: `CLUE-shift-clone-sharp-schatten-
 
 **Scope warning.** Kupferman--Maor--Shachar give qualitative compactness, not the per-collar linear rate needed by PF-183. The Conti--Dolzmann--Müller theorem as audited here does not state the annulus-with-boundary version required by the prime-flute splice. Neither source boundary-normalizes the raw PF-179--PF-184 annular germ or supplies an energy-linear exact-symplectic cutoff. PF-187 therefore removes only a qualitative Sobolev-degeneration failure mode; the quantitative local splice gate remains open.
 
+## S20 — matrix-valued critical Cwikel estimates
+
+**Raphaël Ponge**, *Weyl's Laws and Connes' Integration Formulas for Matrix-Valued `L log L`-Orlicz Potentials*, Mathematical Physics, Analysis and Geometry 25 (2022), article 10. DOI: 10.1007/s11040-022-09422-9; arXiv:2107.13605.
+
+- https://arxiv.org/abs/2107.13605
+- https://doi.org/10.1007/s11040-022-09422-9
+
+Used for:
+
+- Proposition 3.13: if `P,Q in Psi^{-n/2}(M,E)` on a closed `n`-manifold and `u in L log L(M,End(E))`, then `Q u P` is weak trace class with quasi-norm bounded linearly by the matrix-valued `L log L` norm;
+- Lemma 3.9 and Remark 3.11: the compact-support/local Cwikel estimate used in the proof continues to hold when the ambient manifold is noncompact;
+- PF-197's route sharpening: after a finite block-bundle enlargement, the localized two-dimensional PF-175 vector-gradient term is of the critical `Q u P` form, so the missing endpoint work is quantitative uniformity/localization and reassembly rather than absence of a matrix-valued weak-`S_1` theorem.
+
+Relevant finding: PF-197; relevant local clue: `CLUE-weak-trace-reassembly-with-summable-local-mass.md`.
+
+**Scope warning.** Ponge's global Proposition 3.13 is stated on a closed manifold. Its local lemma does not supply a uniform constant for the infinite prime-flute module family and does not control off-diagonal resolvent tails, IMS/commutator terms, finite-color reassembly, or the endpoint conservative splice. PF-197 keeps those as explicit open gates.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
