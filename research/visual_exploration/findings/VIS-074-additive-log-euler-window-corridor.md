@@ -76,7 +76,7 @@ For the present observable every nonzero mode is supported on exactly one prime 
 
 Since `p>=2` and `k!=0`, `|lambda_m|>=log 2`. More importantly, the exact denominator is known mode by mode; no cancellation between different prime logarithms can occur. Substituting the one-coordinate modes into the `VIS-072` sinc formula proves the displayed expansion and pointwise bound immediately.
 
-This distinction is structural rather than quantitative bookkeeping. Increasing the number of prime coordinates can increase coefficient mass, but it cannot manufacture a new near-zero frequency until the chosen witness itself multiplies or otherwise mixes coordinates.
+This distinction is structural rather than quantitative bookkeeping. Increasing the number of prime coordinates can increase coefficient mass, but it cannot manufacture a new near-zero frequency until the chosen witness itself mixes coordinates.
 
 ## 2. Haar RMS has the same weighted one-coordinate corridor
 
@@ -118,9 +118,9 @@ No new almost-periodic theorem, prime number theorem, or general quantitative eq
 
 ## 5. Boundary and falsification
 
-The theorem is about additive coordinate-separable prime harmonics and their continuous-time window averages. Exponentiating `E_X`, multiplying prime factors, taking nonlinear functions of several coordinates, or using a general path functional can create mixed Fourier modes and restore the `log(a/b)` small-divisor geometry of `VIS-072`--`VIS-073`.
+The theorem is about additive coordinate-separable prime harmonics and their continuous-time window averages. `VIS-075` sharpens the exponentiation boundary: exponentiating `E_X` into the raw holomorphic finite Euler product does create mixed-prime characters, but they remain in the nonnegative prime-exponent cone with frequencies `log n`, so exponentiation alone does not restore cross-prime small divisors.
 
-That reappearance does not by itself create new arithmetic information: it is still a deterministic function of the same prime torus. It does, however, change the finite-window quantitative problem, so the one-coordinate bound cannot be applied after such nonlinear mixing without expanding the actual Fourier support.
+Signed mixing can restore the `log(a/b)` geometry. Holomorphic-antiholomorphic products such as `|P_X|^2`, ratios, or nonlinear/path observables whose actual Fourier expansion contains both positive and negative prime-coordinate exponents can generate near-zero differences between distinct smooth-number frequencies. Their quantitative behavior must be analyzed from that signed Fourier support rather than inferred from nonlinearity alone.
 
 The result also says nothing about an independently defined zero factor or hybrid residual. Those remain separate information channels only to the extent established by their own construction and controls.
 
@@ -130,4 +130,4 @@ Falsify the exact inequalities by exhibiting a coordinate-separable Fourier coef
 
 The additive prime-field part of `CLUE-zeta-prime-phase-recursive-geometry` is closed much further than `VIS-073` alone suggests. **Growing the prime cutoff in the logarithmic Euler field cannot expose a new finite-window population merely through slow cross-prime torus filling**, because there are no mixed-prime frequencies to become near resonant.
 
-A genuine growing-support escape must therefore introduce and control mixed-coordinate complexity, an independently anchored selection rule, or an independently defined factor/residual coordinate. Simply plotting more additive prime harmonics, even on the critical line, remains inside the explicit weighted `1/L` averaging corridor above.
+A genuine growing-support escape must therefore introduce and control signed mixed-coordinate complexity, an independently anchored selection rule, or an independently defined factor/residual coordinate. Simply plotting more additive prime harmonics, even on the critical line, remains inside the explicit weighted `1/L` averaging corridor above.
