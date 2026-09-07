@@ -34,7 +34,7 @@ Let `u_X` be real with
 |u_X|\longrightarrow\infty
 \]
 
-and, for some fixed `eta>0`,
+and, for some fixed `eta` with `0<eta<13/15`,
 
 \[
 |u_X|\le X^{13/15-\eta}.
