@@ -14,6 +14,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-044-growing-riesz-endpoint-visibility-delay.md
   - research/mobius_cancellation/findings/MC-115-mean-absolute-mertens-mellin-zero-free.md
   - research/mobius_cancellation/findings/MC-116-subpower-dense-mean-absolute-checkpoints.md
+  - research/mobius_cancellation/findings/MC-117-fractional-mertens-moment-transfer-ceiling.md
 ---
 
 # Can a source-natural local statistic transfer polynomially to mean-absolute Mertens scale?
@@ -34,6 +35,8 @@ The reason is absolute Mellin convergence: an RH-scale upper bound for the first
 
 `MC-116` further reduces the required scale coverage. The RH-scale bound for `D_M` need not be proved at every cutoff: it is enough to prove it along any fixed checkpoint sequence with `log X_(j+1)/log X_j -> 1`. Monotonicity of the cumulative absolute mass fills the intervening scales without exponent loss, even when the multiplicative checkpoint gaps tend to infinity. Fixed power-lacunary checkpoints instead pay an explicit interpolation loss.
 
+`MC-117` closes another apparent weakening. For every `0<p<1`, bounded increments give a sharp transfer ceiling from the fractional time quasi-mean `P_p(X)=(X^(-1) integral_0^X |M(u)|^p du)^(1/p)` to the first absolute mean. At square-root scale the generic exponent lands at `1/(p+1)>1/2`. More strongly, an exact-square-free-support qualitative-Chowla control can satisfy `P_p(X_j)=O_epsilon(X_j^(1/2+epsilon))` on the subpower-dense mesh `X_j=floor(exp(j^2))` while its first absolute mean is `Omega(X_j^(1/(p+1)))`. Thus moving below `L^1` does not evade the source-to-endpoint burden unless additional genuinely multiplicative or growing-scale structure beats that sharp pathwise ceiling.
+
 ## Research question
 
 Can a source-natural signed local, bilinear, multiplicative, or multiscale Möbius statistic control `D_M(X)` with a genuine polynomial-gain transfer inequality strong enough to yield
@@ -50,6 +53,8 @@ Mean-absolute control is formally weaker than pointwise Mertens control and is i
 
 The checkpoint reduction makes the output surface smaller again: a source-natural argument that only produces estimates at selected resolutions can still be sufficient if consecutive checkpoint logarithms have ratio tending to one. Conversely, a matched control showing that the proposed local information coexists with mean-absolute exponent strictly above `1/2` would demonstrate that the local-to-global information budget remains insufficient even for this weaker endpoint.
 
+`MC-117` also shows that replacing the first absolute mean by a concave fractional moment is not automatically a useful relaxation. Any such route must explain what Möbius-specific information prevents rare coherent blocks from carrying little `p`-mass but too much `L^1` mass.
+
 ## Decisive test
 
 Fix an explicit source-natural statistic and prove one of two outcomes:
@@ -57,7 +62,7 @@ Fix an explicit source-natural statistic and prove one of two outcomes:
 1. derive a source-compatible implication from a quantitatively polynomial hypothesis on that statistic to `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))` on a predetermined sequence with `log X_(j+1)/log X_j -> 1`, with exceptional sets, scale transitions, correlation range, coarse modes, smoothing, reconstruction losses, and checkpoint coverage explicit; or
 2. construct a source-compatible matched control satisfying the proposed local/multiscale hypothesis while its mean-absolute partial-sum process retains exponent `>1/2`.
 
-A candidate fails if the proposed transfer input already contains an RH-equivalent fixed Riesz/coarse mode, if smoothing makes the desired scale vacuous, if inversion reintroduces the original partial-sum burden, if the only gain comes from a triangle inequality that spends the polynomial saving on exceptional mass, or if the controlled checkpoints are power-lacunary and no additional source-specific interpolation pays the resulting exponent gap.
+A candidate fails if the proposed transfer input already contains an RH-equivalent fixed Riesz/coarse mode, if smoothing makes the desired scale vacuous, if inversion reintroduces the original partial-sum burden, if the only gain comes from a triangle inequality that spends the polynomial saving on exceptional mass, if a sub-`L^1` compression discards rare coherent amplitude without a source-specific recovery mechanism, or if the controlled checkpoints are power-lacunary and no additional source-specific interpolation pays the resulting exponent gap.
 
 ## Evidence boundary
 
@@ -65,10 +70,12 @@ A candidate fails if the proposed transfer input already contains an RH-equivale
 
 `MC-116` is only an exact scale-interpolation reduction. It does not produce cancellation at any checkpoint and does not show that power-lacunary scale meshes are impossible when additional arithmetic information is available.
 
+`MC-117` is a sharp generic transfer obstruction plus a nonmultiplicative matched control. It does not show that the actual Möbius function's fractional moments cannot contain additional multiplicative information, and it does not rule out polynomially uniform growing-shift inputs.
+
 No current local theorem in this line proves the required RH-scale bound for `D_M` even on a qualifying checkpoint mesh. The Mellin and interpolation bridges reduce the downstream burden; they do not reduce the upstream arithmetic difficulty of producing the bound.
 
 ## Research disposition
 
-**Accepted, sharpened by `MC-115` and `MC-116`.** Earlier work eliminated several tempting but over-strong or information-losing carriers. The Tanaka/excursion branch showed that long excursions can coexist with diffusive mean-absolute behavior; the path-energy branch exposed an RH-equivalent first Riesz coarse mode; fixed-order Riesz smoothing remains RH-equivalent, while growing-order smoothing either becomes normalization-vacuous or delays endpoint visibility and requires a nontrivial inversion carrier.
+**Accepted, sharpened by `MC-115`--`MC-117`.** Earlier work eliminated several tempting but over-strong or information-losing carriers. The Tanaka/excursion branch showed that long excursions can coexist with diffusive mean-absolute behavior; the path-energy branch exposed an RH-equivalent first Riesz coarse mode; fixed-order Riesz smoothing remains RH-equivalent, while growing-order smoothing either becomes normalization-vacuous or delays endpoint visibility and requires a nontrivial inversion carrier. `MC-117` now also rules out sub-`L^1` time moments as a free relaxation: their sharp bounded-increment transfer loses a fixed power, and the loss survives exact square-free support, qualitative Chowla, and a subpower-dense checkpoint mesh.
 
-The active residual is therefore narrower: find a statistic that is genuinely weaker than the target, preserves enough signed/multiscale information to control the **first absolute moment** with a strict polynomial margin, and reaches at least a subpower-dense family of scales. The endpoint needs no new zero theorem and no all-cutoff interpolation theorem beyond the exact bridges already persisted. The clue remains accepted rather than resolved because no such arithmetic production mechanism has yet been established.
+The active residual is therefore narrower: find a statistic that is genuinely weaker than the target, preserves at least first-moment sensitivity to rare coherent amplitude or uses a specifically multiplicative mechanism to recover it, and reaches at least a subpower-dense family of scales. The endpoint needs no new zero theorem and no all-cutoff interpolation theorem beyond the exact bridges already persisted. The clue remains accepted rather than resolved because no such arithmetic production mechanism has yet been established.
