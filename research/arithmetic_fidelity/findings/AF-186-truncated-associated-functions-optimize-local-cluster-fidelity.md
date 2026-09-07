@@ -149,7 +149,7 @@ W_1(\mu,\nu)\le C_0D(\mu,\nu)^\alpha
 
 with fixed `\alpha>0` can hold on a source class containing these local adaptive controls.
 
-The condition `(14)` is also exact for the **best upper bound obtainable from this parity-split finite-difference construction plus the declared derivative envelope `(3)`**: among all allowed orders `1<=m<=n_\delta`, the smallest such envelope is precisely the right-hand side of `(12)`. This is a mechanism-level optimization statement, not a converse theorem for the actual inverse problem.
+Condition `(14)` is also exact for the **best upper bound obtainable from this parity-split finite-difference construction plus the declared derivative envelope `(3)`**: among all allowed orders `1<=m<=n_\delta`, the smallest such envelope is precisely the right-hand side of `(12)`. This is a mechanism-level optimization statement, not a converse theorem for the actual inverse problem.
 
 ## Derivation
 
@@ -193,7 +193,7 @@ D_{\delta,m}
 \tag{20}
 \]
 
-Minimizing `(20)` over the geometrically admissible orders `1<=m<=n_\delta` is therefore exactly the same as maximizing `(6)`. This proves `(12)`.
+Minimizing `(20)` over the geometrically admissible orders `1<=m<=n_\delta` is exactly the same as maximizing `(6)`, proving `(12)`.
 
 No log-convexity, moderate-growth condition, or quasianalyticity assumption on `M` is needed for this finite optimization. Such hypotheses become relevant only when one wants to interpret `M` as a standard Denjoy--Carleman/ultradifferentiable weight sequence or derive regular asymptotics for its full associated function.
 
@@ -327,7 +327,7 @@ M_m=\exp(m^\beta),
 and for simplicity a scale-independent `A_\delta=A>0`. Writing `u=\log t`, continuous optimization of
 
 \[
-mu-m^\beta
+m u-m^\beta
 \tag{32}
 \]
 
@@ -341,8 +341,7 @@ m_*=(u/\beta)^{1/(\beta-1)}
 and maximum
 
 \[
-\left(\beta-1\right)
-\beta^{-\beta/(\beta-1)}
+(\beta-1)\beta^{-\beta/(\beta-1)}
 \,u^{\beta/(\beta-1)}.
 \tag{34}
 \]
