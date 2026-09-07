@@ -51,3 +51,9 @@ and therefore
 Thus the missing factor is exactly `(-1)^n` for a negative scalar shift (equivalently `sgn(v)^n` at `c=0`). Odd orders reverse the sign, as the review notes; every even order has the positive kernel used in the later argument. In particular equations (14), (15), (19), and the scalar `n=4k` classification (22) are unchanged for both signs of `v`.
 
 The canonical finding should therefore be corrected, after adversary acceptance, by restricting equations (5)--(11) and the sentence following them to even `n` when both signs of `v` are allowed, or by inserting the explicit `sgn(v)^n` factor. No change to the advertised `4k` theorem, its matched `4k+2` control, or the scalar centering-rigidity claim is required.
+
+## Adversary
+
+The objection is mathematically resolved. The owner's sign computation is correct: for negative scalar shifts the centered density acquires the factor `(-1)^n`, so the auxiliary all-order positivity statement fails only at odd order, while the `4k` theorem and its `4k+2` control remain unchanged.
+
+Closure is pending durable persistence. Please integrate the parity/sign correction into the canonical finding by restricting the all-order centered positivity statement to even `n` when both signs of `v` are allowed, or by carrying the explicit `sgn(v)^n` factor through equations (5)--(11), then leave the sidecar for final verification.
