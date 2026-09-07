@@ -84,7 +84,7 @@ All coefficients in the atomic sector have the same sign and `psi>=0`, so the `n
 
 Thus this is not another prime-blind low-band state. It contains an explicit order-`Delta^{-1}` signature of the first prime-power atom, and similarly resolves every fixed finite collection of prime-power frequencies lying in the interior of the physical band.
 
-The construction is intentionally a **distribution-safe source interface**, not a claim that `mathcal Z_0(lambda_n)` exists pointwise. Equation (5) pairs the atomic part of XF-052 with a normalized bump of width `Delta`; the background is an ordinary analytic function and is sampled directly.
+The construction is intentionally a **distribution-safe source interface**, not a claim that `\mathcal Z_0(\lambda_n)` exists pointwise. Equation (5) pairs the atomic part of XF-052 with a normalized bump of width `Delta`; the background is an ordinary analytic function and is sampled directly.
 
 ## 2. A fixed physical prime band still costs only `o(N)` moment mass
 
@@ -196,13 +196,20 @@ D^+S
 \tag{17}
 \]
 
-Here the second line uses `xi_{i+j}=xi_i+xi_j`. Now `a=NDelta\asymp q^{1/2}->infinity`, while (13) gives `S(0)=o(1)`. Thus, for all sufficiently large `q`,
+Here the second line uses `xi_{i+j}=xi_i+xi_j`. Now
+
+\[
+a=N\Delta\asymp q^{1/2}\to\infty,
+\tag{18}
+\]
+
+while (13) gives `S(0)=o(1)`. Thus, for all sufficiently large `q`,
 
 \[
 a\ge2\Lambda_*,
 \qquad
 S(0)\le\frac18.
-\tag{18}
+\tag{19}
 \]
 
 At the barrier `S=1/8`, (17) is at most `-aD/4`. A standard first-crossing argument yields
@@ -212,10 +219,10 @@ At the barrier `S=1/8`, (17) is at most `-aD/4`. A standard first-crossing argum
 S(t)\le S(0)=o(1)
 \qquad\text{for every }0\le t\le\frac12.
 }
-\tag{19}
+\tag{20}
 \]
 
-This is stronger than the small-`KDelta` perturbative estimate that breaks in XF-100. It does **not** compare the periodic trajectory with the Xi continuum at prime scale; it says only that once a fixed physical-band target has an exact periodic realization, its normalized moment margin cannot blow up under the autonomous periodic heat system.
+This is stronger than the small-`K\Delta` perturbative estimate that breaks in XF-100. It does **not** compare the periodic trajectory with the Xi continuum at prime scale; it says only that once a fixed physical-band target has an exact periodic realization, its normalized moment margin cannot blow up under the autonomous periodic heat system.
 
 ## 4. The XF-101 collision implant survives all the way through the fixed prime band
 
@@ -223,7 +230,7 @@ Fix any
 
 \[
 0<\tau\le\frac12.
-\tag{20}
+\tag{21}
 \]
 
 Set
@@ -232,28 +239,28 @@ Set
 R:=K_*+1,
 \qquad
 n:=N-2R.
-\tag{21}
+\tag{22}
 \]
 
-Because `K_*=o(N)`, one has `n\sim N` and `n/K_*->infinity`. Equation (19) gives
+Because `K_*=o(N)`, one has `n\sim N` and `n/K_*->infinity`. Equation (20) gives
 
 \[
 \sum_{m=1}^{K_*}|P_m(\tau)|=o(N)=o(n).
-\tag{22}
+\tag{23}
 \]
 
 Hence XF-085 can be applied again, now with exactly `n` nodes, to realize the degree-`N` target prefix `P_m(tau)` on a unit-circle polynomial `A_tau` of degree `n`. Choose a phase `phi` avoiding the finite root set of `A_tau` and form the same high-symmetry collision crystal as XF-101,
 
 \[
 C_\phi(w):=(w^R-e^{i\phi})^2.
-\tag{23}
+\tag{24}
 \]
 
 Its first `K_*` power sums vanish exactly because `R>K_*`. Therefore
 
 \[
 F_\tau(w):=A_\tau(w)C_\phi(w)
-\tag{24}
+\tag{25}
 \]
 
 has total degree `N`, is unit-circle-rooted at `t=tau`, contains exact simple double collision sites, and satisfies
@@ -261,7 +268,7 @@ has total degree `N`, is unit-circle-rooted at `t=tau`, contains exact simple do
 \[
 P_m^{F}(\tau)=P_m(\tau),
 \qquad 1\le m\le K_*.
-\tag{25}
+\tag{26}
 \]
 
 The collision normal form XF-002 makes the roots nonreal immediately below `tau`, while the Pólya--Benz/Kabluchko real-zero-preserver input already used in XF-098 keeps them real from `tau` onward. Thus
@@ -270,10 +277,10 @@ The collision normal form XF-002 makes the roots nonreal immediately below `tau`
 \boxed{
 \Lambda_{\mathrm{per}}(F)=\tau.
 }
-\tag{26}
+\tag{27}
 \]
 
-Finally, both degree-`N` trajectories satisfy the same triangular system (16). Mode-by-mode uniqueness from the common data (25) gives
+Finally, both degree-`N` trajectories satisfy the same triangular system (16). Mode-by-mode uniqueness from the common data (26) gives
 
 \[
 \boxed{
@@ -281,7 +288,7 @@ P_m^F(t)=P_m(t)
 \quad
 (1\le m\le K_*,\ 0\le t\le1/2).
 }
-\tag{27}
+\tag{28}
 \]
 
 So for **every** fixed positive transition time in the observed interval there is a periodic control whose complete first-`K_*` time history is identical to a trajectory initialized from a source state that explicitly contains the first prime atom.
@@ -292,15 +299,15 @@ The fixed-physical-band assumption is load-bearing. If `Lambda_*` grows with `q`
 
 Mesh-scale regularization is also load-bearing only as a concrete legal extraction of the distributional endpoint data. The argument extends to any family of atomic tests whose total raw `ell^1` contribution over a fixed physical band is `o(N)` and whose prefix length is `o(N)`. It does not claim that (5) is the unique or optimal Xi source interface.
 
-Most importantly, there is **no prime-scale Xi-to-periodic shadow theorem here**. XF-100 already shows that the XF-097 continuum/trapezoid stability proof fails parametrically at `K_*asymp Delta^{-1}`. Equation (27) is an exact nonidentifiability statement inside the finite periodic state class after a distribution-safe prime-enriched endpoint extraction. An Xi-specific analytic condition that is not determined by this prefix may still reject the controls.
+Most importantly, there is **no prime-scale Xi-to-periodic shadow theorem here**. XF-100 already shows that the XF-097 continuum/trapezoid stability proof fails parametrically at `K_* \asymp \Delta^{-1}`. Equation (28) is an exact nonidentifiability statement inside the finite periodic state class after a distribution-safe prime-enriched endpoint extraction. An Xi-specific analytic condition that is not determined by this prefix may still reject the controls.
 
-The first-prime visibility check (8) prevents a vacuous interpretation: the negative result is not caused by smoothing the arithmetic atom away. Conversely, the vanishing normalized cost (13) shows why seeing a fixed number of atomic spectral lines is too cheap to exhaust a degree-`N` carrier with `Nasymp q^2`.
+The first-prime visibility check (8) prevents a vacuous interpretation: the negative result is not caused by smoothing the arithmetic atom away. Conversely, the vanishing normalized cost (13) shows why seeing a fixed number of atomic spectral lines is too cheap to exhaust a degree-`N` carrier with `N \asymp q^2`.
 
 ## 6. Prior art and novelty boundary
 
 The load-bearing external inputs are already recorded in `SOURCES.md`: the Guinand--Weil explicit-formula framework supplies the prime-power atomic spectrum used in XF-052; Gilboa--Peled supplies the exact prescribed-node-count equal-weight trigonometric quadrature used in XF-085; and the Pólya--Benz/Kabluchko real-zero-preserver input is already used in XF-098/XF-101. A targeted prior-art check found these standard components but no theorem combining mesh-regularized explicit-formula atoms, the Xi node scaling, triangular periodic heat, and a hidden roots-of-unity collision block to establish transition nonidentifiability. No new source is load-bearing, so `SOURCES.md` requires no update.
 
-The new line-specific step is the conjunction of three quantitative facts: a fixed physical explicit-formula band has only `O(Delta^{-1} log Delta^{-1})=o(N)` raw moment mass after mesh-scale atomic extraction; this normalized `ell^1` cone is forward-invariant under the exact periodic Vieta flow by (17); and `K_*asymp Delta^{-1}=o(N)` still leaves enough unused degree for the exact XF-101 collision implant.
+The new line-specific step is the conjunction of three quantitative facts: a fixed physical explicit-formula band has only `O(\Delta^{-1}\log\Delta^{-1})=o(N)` raw moment mass after mesh-scale atomic extraction; this normalized `ell^1` cone is forward-invariant under the exact periodic Vieta flow by (17); and `K_* \asymp \Delta^{-1}=o(N)` still leaves enough unused degree for the exact XF-101 collision implant.
 
 ## 7. Consequence for the live Xi-flow frontier
 
