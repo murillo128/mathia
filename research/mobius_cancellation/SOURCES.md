@@ -243,3 +243,9 @@ Role: classical sieve-theory prior-art anchor for `MC-082`. The note explains th
 John B. Friedlander and Henryk Iwaniec, *Using a parity-sensitive sieve to count prime values of a polynomial*, Proceedings of the National Academy of Sciences of the United States of America 94 (1997), no. 4, 1054–1058. DOI: https://doi.org/10.1073/pnas.94.4.1054. Open full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC19742/.
 
 Role: prior-art boundary for `MC-082`. The paper develops a parity-sensitive sieve, combined with harmonic analysis of the special polynomial sequence, to obtain the prime-value result for `x^2+y^4`. It shows that the classical parity barrier is not an absolute impossibility theorem: additional arithmetic/bilinear/harmonic information can break the local-density blindness in special settings.
+
+## MC-S41 — Jacquet, Knessl and Szpankowski, Markov types and balanced transition counts
+
+Philippe Jacquet, Charles Knessl and Wojciech Szpankowski, *Counting Markov Types*, Discrete Mathematics & Theoretical Computer Science, DMTCS Proceedings vol. AM, 21st International Meeting on Probabilistic, Combinatorial, and Asymptotic Methods in the Analysis of Algorithms (AofA 2010). DOI: https://doi.org/10.46298/dmtcs.2768.
+
+Role: classical transition-type prior-art anchor for `MC-127`. The paper identifies Markov types with balanced frequency matrices and balanced directed multigraphs, formalizing exactly the information retained by aggregate directed transition counts. `MC-127` uses that established language for an explicit residue-cycle type class and computes two integer lifts with identical complete directed transition histograms but radically different first-absolute excursions. No novelty is claimed for Markov types, balanced multigraphs, or cycle reordering.
