@@ -1,6 +1,6 @@
-# ANF-103 — source-negligible trimming makes superlinear escape a source-heavy-tail problem
+# ANF-103 — source-negligible trimming removes tail-driven superlinear escape
 
-**Status:** `EXACT-DERIVED + QUANTITATIVE-TRIMMING-STABILITY + CONCENTRATION-COMPACTNESS-REDUCTION + UNIVERSAL-SPARSE-TAIL-HEIGHT-THRESHOLD + NOTCH-ENVELOPE-NARROWING`. `ANF-099` reduces the fixed central-notch route to the exposure of physical Montgomery--Taylor near-extremizers. `ANF-100` forces every growing near-extremizer to have at least linear horizontal span, while `ANF-101` shows that the vertically weighted empirical bulk is tight whenever that span is at most linear. The remaining list there treats a source-relevant sparse height tail and superlinear horizontal escape as distinct possibilities. They are not independent. A superlinear diameter created by points whose Montgomery--Taylor source norm is negligible can be deleted without changing either near-extremality or the limiting notch exposure. Therefore superlinear escape is a genuinely new chamber only when the escaping tail is **source-heavy**.
+**Status:** `EXACT-DERIVED + QUANTITATIVE-TRIMMING-STABILITY + CONCENTRATION-COMPACTNESS-REDUCTION + UNIVERSAL-SPARSE-TAIL-HEIGHT-THRESHOLD + NOTCH-ENVELOPE-NARROWING`. `ANF-099` reduces the fixed central-notch route to the exposure of physical Montgomery--Taylor near-extremizers. `ANF-100` forces every growing near-extremizer to have at least linear horizontal span, while `ANF-101` shows that the vertically weighted empirical bulk is tight whenever that span is at most linear. The remaining superlinear regime contains an important false escape: a raw diameter can be made enormous by an asymptotically negligible set of remote points. If those points are also negligible in the Montgomery--Taylor source norm, they can be deleted without changing either near-extremality or the limiting notch exposure. Thus **tail-driven** superlinear escape is new only when the escaping tail is source-heavy. Genuinely diffuse superlinear bulk, where no `O(N)` interval captures `N-o(N)` points, remains a separate live regime.
 
 The same argument gives a universal quantitative threshold for an ultra-sparse source-heavy tail. Because the Montgomery--Taylor spectrum vanishes linearly at the endpoints of `[-1,1]`, a tail of `m` points below height `H` has source energy at most order
 
@@ -120,7 +120,7 @@ Since `h_eta(W)<=r(W)=1+e` and `L(A)=(1-mu)L(W)`, one obtains
 
 No spatial sign of the Montgomery--Taylor transform is used. Equations (1)--(2) are just Hilbert geometry plus the exact affine bookkeeping of a center-complete horizontal trimming.
 
-## 2. Superlinear diameter caused by a negligible tail is not a new escape
+## 2. Tail-driven superlinear diameter disappears under source-negligible trimming
 
 Let `W_n` be a growing physical near-extremizer,
 
@@ -150,7 +150,7 @@ h_\eta(A_n)-h_\eta(W_n)\to0.
 \tag{4}
 \]
 
-In particular, if `W_n` is a candidate witnessing the dangerous envelope in `ANF-099`, then `A_n` is an equally dangerous candidate asymptotically. A remote tail that is negligible in the actual Montgomery--Taylor source norm cannot be used to manufacture a new fixed-notch obstruction merely by making the raw diameter enormous.
+In particular, if `W_n` is a candidate witnessing the dangerous envelope in `ANF-099`, then `A_n` is an equally dangerous candidate asymptotically. A remote tail that is negligible in the actual Montgomery--Taylor source norm cannot manufacture a new fixed-notch obstruction merely by making the raw diameter enormous.
 
 Now assume additionally that the retained interval has only linear length,
 
@@ -159,9 +159,9 @@ Now assume additionally that the retained interval has only linear length,
 \tag{5}
 \]
 
-Since `|A_n|=N_n-o(N_n)`, the retained sequence satisfies `D_x(A_n)=O(|A_n|)`. Hence `ANF-101` applies directly to `A_n`: after horizontal recentering and scaling by `|A_n|`, its empirical vertical mass is exponentially tight. Therefore an apparent `D_x(W_n)/N_n->infinity` caused by deleting a source-negligible `o(N_n)` tail does **not** evade the linear-span chamber. It reduces back to it without changing the limiting exposure.
+Since `|A_n|=N_n-o(N_n)`, the retained sequence satisfies `D_x(A_n)=O(|A_n|)`. Hence `ANF-101` applies directly to `A_n`: after horizontal recentering and scaling by `|A_n|`, its empirical vertical mass is exponentially tight. Therefore an apparent `D_x(W_n)/N_n->infinity` caused by a source-negligible `o(N_n)` outlier set does **not** evade the linear-span chamber. It reduces back to it without changing the limiting exposure.
 
-This merges two of the escape labels left by `ANF-101`. Superlinear horizontal geometry matters only if every trimming that captures `N-o(N)` points inside an `O(N)` interval leaves a discarded component with source norm of order `sqrt(N)` rather than `o(sqrt(N))`. Such a component is precisely a **source-heavy sparse tail**.
+There is one essential boundary. The argument does not touch a genuinely diffuse superlinear sequence for which no interval of length `O(N_n)` contains `N_n-o(N_n)` points. Such a sequence has no sparse geometric tail to remove. Accordingly the superlinear branch splits cleanly into two subcases: **bulk superlinear dilution remains live; tail-driven superlinear diameter survives only if the tail is source-heavy**. This is the precise narrowing supplied by (1)--(5).
 
 ## 3. The explicit Montgomery--Taylor endpoint gives a universal tail budget
 
@@ -288,7 +288,7 @@ Equivalently, if
 \tag{11}
 \]
 
-then the tail is automatically source-negligible and can be removed by Section 1.
+then the tail is automatically source-negligible and can be removed by Section 1 whenever a linear-span core as in (5) exists.
 
 For a power-law tail `m_n=N_n^a` with fixed `a<1/2`, using `L_n\asymp N_n`, condition (10) reads
 
@@ -299,7 +299,7 @@ For a power-law tail `m_n=N_n^a` with fixed `a<1/2`, using `L_n\asymp N_n`, cond
 \tag{12}
 \]
 
-This is a universal necessary condition for such a tail to remain visible in the Montgomery--Taylor source norm. It says, for example, that a bounded-height `o(sqrt(N))` collection of geometric outliers is always removable, regardless of where its real parts are placed.
+This is a universal necessary condition for such a tail to remain visible in the Montgomery--Taylor source norm. It says, for example, that a bounded-height `o(sqrt(N))` collection of geometric outliers is always source-negligible, regardless of where its real parts are placed.
 
 ## 5. The ANF-095 critical scale is the universal endpoint scale
 
@@ -328,6 +328,6 @@ This also clarifies why the coarser `cosh(2 pi H)` estimate of `ANF-094` missed 
 
 The conceptual neighboring framework is concentration--compactness: minimizing or near-minimizing sequences on noncompact spaces can lose compactness through translation, vanishing, or splitting. A targeted check of that literature and generic profile-decomposition/stability results did not supply the line-specific statements (1)--(2) for the Montgomery--Taylor affine normalization, nor the explicit endpoint budget (7)--(10). No external theorem is load-bearing here. The trimming lemma is elementary Hilbert-space perturbation, and the sparse-tail threshold follows directly from the already-canonical explicit spectrum, so `SOURCES.md` is unchanged and no novelty claim is made for generic concentration--compactness principles.
 
-The bookkeeping assumptions are deliberate. Horizontal trimming is by complete real-part fibers, so conjugation is preserved and `L(W)=L(A)+L(B)` exactly; arbitrary deletion of only part of a repeated real site would require an `O(|B|)` correction but would not change the asymptotic conclusion. The notch estimate uses only `phi_eta<=J_0`, not positivity of any spatial transform. The tail upper bound allows arbitrary multiplicities, collisions, real locations, and horizontal phase coherence; replacing the true structure factor by its maximal pointwise modulus only makes the estimate safer. Finally, (10) is asserted only when `R_n->infinity`; a tail larger than square-root scale can be source-heavy at bounded height and requires a different argument.
+The bookkeeping assumptions are deliberate. Horizontal trimming is by complete real-part fibers, so conjugation is preserved and `L(W)=L(A)+L(B)` exactly; arbitrary deletion of only part of a repeated real site would require an `O(|B|)` correction but would not change the asymptotic conclusion. The notch estimate uses only `phi_eta<=J_0`, not positivity of any spatial transform. The tail upper bound allows arbitrary multiplicities, collisions, real locations, and horizontal phase coherence; replacing the true structure factor by its maximal pointwise modulus only makes the estimate safer. Equation (10) is asserted only when `R_n->infinity`; a tail larger than square-root scale can be source-heavy at bounded height and requires a different argument. Most importantly, (1)--(5) do not classify bulk superlinear dilution: the existence of a linear-size interval carrying `N-o(N)` points is an explicit hypothesis, not a consequence of near-extremality.
 
-The fixed-notch frontier is therefore narrower than the three-way list after `ANF-101`. A dangerous sequence can no longer invoke superlinear raw diameter by itself. After source-negligible trimming, either a linearly spanned near-extremal core remains, where `ANF-101` gives normalized vertical tightness, or the discarded `o(N)` component carries macroscopic Montgomery--Taylor source norm. In the sub-square-root regime that source-heavy component must furthermore cross the universal height threshold (10). The remaining obstruction is consequently concentrated in two coupled mechanisms: **nonconvex organization of a linearly scaled tight core, or a genuinely source-heavy sparse tail capable of the macroscopic anti-alignment required by `ANF-097`**. A merely remote or geometrically extreme tail is no longer an independent escape route.
+The fixed-notch frontier is therefore narrower but not collapsed. A dangerous sequence has three sharply separated possibilities after this screening. It may have a linearly spanned near-extremal core, where `ANF-101` gives normalized vertical tightness; it may have a genuinely diffuse superlinear bulk that cannot be reduced by sparse trimming; or it may have a linear core plus a source-heavy sparse tail. In the sub-square-root tail regime, the third case must cross the universal height threshold (10), and `ANF-097` then says any fatal realization must additionally arrange macroscopic destructive source interference with every compatible separable carrier. **Raw superlinear diameter generated by source-negligible outliers is no longer an independent escape mechanism.**
