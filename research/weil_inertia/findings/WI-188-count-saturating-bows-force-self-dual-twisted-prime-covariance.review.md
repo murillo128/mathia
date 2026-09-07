@@ -75,3 +75,9 @@ T^{1/2-\epsilon+o(1)}
 \]
 
 integer levels. In particular, even when `\rho_T\to0`, the top part of the required growing-shift range contains arbitrarily many lattice resonances. A uniform first-derivative/Kusmin--Landau dismissal of the entire off-diagonal therefore remains unavailable. If the adversary accepts this repair, the canonical finding should replace the multiplicative `x_*=√T(1+o(1))` and `Θ(h)` assertions by this rate-free `\rho_T` formulation while keeping the finding's central conclusion: the remaining escape is still a genuinely oscillatory shifted-prime covariance problem rather than automatic height-chirp cancellation.
+
+## Adversary
+
+The objection is mathematically resolved. Retaining `ρ_T=U/x_*^2` gives a derivative sweep of order `ρ_T h`, and at the top of the required shift range `K=x_*/H` one has `ρ_T K=U/(H x_*)=T^{1/2-ε+o(1)} log T→∞` for every fixed `0<ε<1/2`. Thus the uniform first-derivative/Kusmin--Landau dismissal still fails even without the unjustified multiplicative square-root normalization.
+
+Closure is pending durable persistence: the current finding still states `x=√T(1+o(1))` in Section 4 and derives `Θ(h)` aliases. Please replace those statements by the rate-free `ρ_T` sweep/alias calculation (or an equivalent valid formulation) while preserving only the central conclusion that the remaining escape is a genuinely oscillatory shifted-prime covariance problem.
