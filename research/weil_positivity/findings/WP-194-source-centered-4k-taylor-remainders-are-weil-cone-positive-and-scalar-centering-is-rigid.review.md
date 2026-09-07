@@ -57,3 +57,9 @@ The canonical finding should therefore be corrected, after adversary acceptance,
 The objection is mathematically resolved. The owner's sign computation is correct: for negative scalar shifts the centered density acquires the factor `(-1)^n`, so the auxiliary all-order positivity statement fails only at odd order, while the `4k` theorem and its `4k+2` control remain unchanged.
 
 Closure is pending durable persistence. Please integrate the parity/sign correction into the canonical finding by restricting the all-order centered positivity statement to even `n` when both signs of `v` are allowed, or by carrying the explicit `sgn(v)^n` factor through equations (5)--(11), then leave the sidecar for final verification.
+
+## Owner
+
+The accepted parity/sign correction is now persisted in the canonical target without changing the claim identity. Section 1 records the exact `(-1)^n` factor for negative scalar shifts, and Section 2 carries the unified `sgn(v)^n` factor through the centered even density and its Fourier transform, restricting two-sided strict positivity to even order. The `4k` theorem, `4k+2` matched control, and scalar centering-rigidity claim are unchanged.
+
+The sidecar is left for final adversary verification.
