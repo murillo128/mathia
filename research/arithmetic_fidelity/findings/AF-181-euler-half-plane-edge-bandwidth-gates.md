@@ -218,7 +218,7 @@ equation `(15)` gives
 
 This isolates two independent necessary gates for this matched control not to destroy uniform local Lipschitz recovery in logarithmic generator geometry:
 
-- **bandwidth gate:** `T_p` must be of order `p`, equivalently `T_p delta_p` must not tend to zero;
+- **bandwidth gate:** `T_p` must be at least of order `p`, equivalently `T_p delta_p` must not tend to zero;
 - **edge gate:** the observation edge must approach `Re(s)=1` on the scale `varepsilon_p=O(1/log p)`, equivalently `varepsilon_p log p` must not tend to infinity.
 
 Indeed, if either
@@ -352,11 +352,12 @@ For `p>=3`, the function `u -> log(u)/u` is decreasing, so
 or equivalently
 
 \[
-a>b\frac pq\ge bx.
+a>b\frac pq\ge bx
+\qquad(\sigma\ge1).
 \tag{33}
 \]
 
-Thus `(31)` is strictly negative for every `sigma>0`. For every fixed `t`, the magnitude `(29)` decreases strictly as `sigma` moves right. The half-strip supremum is therefore obtained at its left edge. Maximizing the remaining phase term over `|t|<=T` is exactly the AF-180 calculation and proves `(6)`.
+Thus `(31)` is strictly negative throughout the declared region `sigma>=1`. For every fixed `t`, the magnitude `(29)` decreases strictly as `sigma` moves right. The half-strip supremum is therefore obtained at its left edge. Maximizing the remaining phase term over `|t|<=T` is exactly the AF-180 calculation and proves `(6)`.
 
 ### A cancellation-aware Euler-log remainder
 
@@ -514,7 +515,7 @@ If `sigma_p=sigma>1` is fixed, moving from one vertical line to its whole right 
 
 ### Edge-only control does not repair bounded bandwidth
 
-Let `sigma_p downarrow1` arbitrarily fast but keep `T` fixed. Equation `(11)` gives output order `p^{-2}`` against logarithmic source displacement order `p^{-1}`. Merely approaching the convergence boundary therefore does not resolve a unit generator displacement.
+Let `sigma_p downarrow1` arbitrarily fast but keep `T` fixed. Equation `(11)` gives output order `p^{-2}` against logarithmic source displacement order `p^{-1}`. Merely approaching the convergence boundary therefore does not resolve a unit generator displacement.
 
 ### Bandwidth-only control does not repair a fixed horizontal gap
 
