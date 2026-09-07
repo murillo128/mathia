@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-relative-xi-source-to-guarded-selector-stability
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -10,6 +10,9 @@ based_on:
   - research/xi_flow/findings/XF-081-chebyshev-nullspace-makes-center-local-vieta-state-nonidentifiable.md
   - research/xi_flow/findings/XF-082-exact-heat-compatibility-does-not-remove-center-local-vieta-nullspace.md
   - research/xi_flow/findings/XF-083-real-rooted-carriers-make-center-local-logarithmic-data-vieta-stable.md
+  - research/xi_flow/findings/XF-085-gershgorin-benign-moments-have-exact-equal-weight-realization-at-the-xi-node-budget.md
+  - research/xi_flow/findings/XF-086-guarded-selector-energy-automatically-enters-the-exact-equal-weight-cone.md
+  - research/xi_flow/findings/XF-087-periodic-power-sum-heat-is-exact-volterra-trapezoid-discretization.md
   - research/xi_flow/clues/CLUE-one-center-selector-retains-remote-guarded-mass.md
 ---
 
@@ -52,3 +55,9 @@ Any positive construction must also pass the accepted remote-wave control. The p
 `ANF-084` proves the relative/logarithmic periodization estimate for the actual initial Xi source on a moving zero-free line. It does not prove positive-time quotient stability, entry into a real-rooted periodic carrier class, or transition mass. `XF-083` proves stability **conditional on two admissible real-rooted periodic carriers**; it does not construct such a carrier from Xi and does not apply across a genuinely complex-root slice. `XF-081`/`XF-082` and the remote-wave clue remain valid controls outside that real-divisor hypothesis.
 
 This clue therefore transfers established source and destination theorems into one falsifiable middle bridge: source-relative Xi data -> transported real-rooted carrier -> guarded selector. Success would close the dictionary/conditioning gate only; a separate theorem would still be required to show that every relevant positive-`Lambda` transition creates order-one mass in the same guarded resource.
+
+## Research disposition
+
+Accepted for active investigation. The line-local evidence now removes the two generic reasons this handoff was previously too speculative. `XF-073` supplies a source-faithful relative Gaussian/Appell periodization inside `xi_flow`; `XF-083` gives identifiability inside the real-divisor class; `XF-085`--`XF-086` show that any finite target moment vector with the already-required guarded resource control has an exact degree-`N` equal-weight real-divisor realization; and `XF-087` shows that the resulting first-`K` periodic heat trajectory is not an arbitrary surrogate but the exact trapezoidal frequency discretization of the canonical XF-051 Volterra flow.
+
+The unresolved question is therefore precise: extract the actual Xi finite target moments with controlled guarded resource and prove continuum-to-grid Volterra consistency after the endpoint/background renormalization, on the `J<=m<=K` band and with the available source-relative error margin. The separate positive-`Lambda` transition-mass implication remains outside this clue. Acceptance records that this residual is now a plausible, falsifiable active direction; it does not validate the transferred cross-line premise, assert that the required endpoint estimate holds, or promote the clue to evidence.
