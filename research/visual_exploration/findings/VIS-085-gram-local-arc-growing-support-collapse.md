@@ -10,12 +10,12 @@ up to the harmless conventional integer shift, and put
 
 `a_n = theta'(g_n)`.
 
-Let `H_n=O(log g_n)` and let `P_n>=2`. For each prime `p<=P_n` and `0<=h<=H_n`, define the phase after removing the exact first-order Gram arc at the block origin by
+Let `H_n>=0` be any integer sequence and let `P_n>=2`. For each prime `p<=P_n` and `0<=h<=H_n`, define the phase after removing the exact first-order Gram arc at the block origin by
 
 `R_(n,h)(p)`
 ` = exp(-i log p [g_(n+h)-g_n-pi h/a_n])`.
 
-Then uniformly over the whole block and all admitted primes,
+Then, for all sufficiently large `n`, uniformly over the whole block and all admitted primes,
 
 `max_(h<=H_n) max_(p<=P_n) |R_(n,h)(p)-1|`
 ` << H_n^2 log P_n / [g_n (log g_n)^3]`.
@@ -24,25 +24,27 @@ Consequently, whenever
 
 `H_n^2 log P_n = o(g_n (log g_n)^3)`,
 
-the arc-removed prime-phase field collapses uniformly to the identity. In the transition regime `H_n=O(log g_n)`, this reduces to the very broad condition
+the arc-removed prime-phase field collapses uniformly to the identity.
 
-`log P_n = o(g_n log g_n)`.
+This is substantially stronger than the original logarithmic-block formulation. For fixed prime support it covers every
 
-Thus allowing the prime support to grow does not by itself create a Gram-specific local residual after the deterministic first-order sampling arc has been matched. In particular, every polynomial support `P_n<=g_n^A` with fixed `A` lies far inside the collapsing regime.
+`H_n = o(sqrt(g_n) (log g_n)^(3/2))`,
+
+while for polynomial support `P_n<=g_n^A` with fixed `A` it covers every
+
+`H_n = o(sqrt(g_n) log g_n)`.
+
+Thus increasing the Gram-block length well beyond `log g_n`, or allowing the prime support to grow polynomially, still does not create a Gram-specific residual after the deterministic first-order sampling arc has been matched throughout this corridor.
 
 **Evidence/status:** `EXACT-DERIVED + CLASSICAL-GRAM-SPACING COROLLARY + NEGATIVE/CONTROL + NO-NOVELTY-CLAIM`.
 
-No short-block equidistribution theorem, zeta-approximation theorem, prime/zero independence statement, or RH consequence is claimed.
+No long-block equidistribution theorem, zeta-approximation theorem, prime/zero independence statement, or RH consequence is claimed.
 
-## 1. The inverse-theta curvature controls the arc error
+## 1. Monotonicity of the Gram clock removes the logarithmic-block restriction
 
 Write
 
 `Delta_(n,h) = g_(n+h)-g_n`.
-
-For `H_n=O(log g_n)`, `VIS-084` gives uniformly
-
-`Delta_(n,h)=O(H_n/log g_n)=O(1)`.
 
 The standard Riemann-Siegel theta asymptotics are
 
@@ -52,29 +54,39 @@ and
 
 `theta''(t) = 1/(2t) + O(t^(-3))`.
 
+Hence, for all sufficiently large `t`, `theta'(t)>0` and `theta''(t)>0`. In particular `theta'` is increasing on every interval beginning at a sufficiently large Gram point.
+
+For every `h>=0`, the mean-value identity and monotonicity give
+
+`pi h = theta(g_n+Delta_(n,h))-theta(g_n)`
+`     >= a_n Delta_(n,h)`,
+
+so
+
+`0 <= Delta_(n,h) <= pi h/a_n`.
+
+Unlike the earlier proof, this estimate does not require `Delta_(n,h)=O(1)` or `H_n=O(log g_n)`.
+
 Taylor's theorem in integral form gives
 
 `pi h`
-` = theta(g_n+Delta_(n,h))-theta(g_n)`
 ` = a_n Delta_(n,h)`
 `   + integral_0^Delta_(n,h) [Delta_(n,h)-u] theta''(g_n+u) du`.
 
-Because `Delta_(n,h)=O(1)`, uniformly over the block
+Because every point in the integration interval is at least `g_n`, the theta asymptotic yields the uniform bound
 
-`sup_(0<=u<=Delta_(n,h)) |theta''(g_n+u)| = O(1/g_n)`.
+`sup_(u>=0) |theta''(g_n+u)| << 1/g_n`.
 
-Therefore
+Therefore the Taylor remainder is nonnegative and
 
-`|Delta_(n,h)-pi h/a_n|`
-` <= [1/a_n] O(Delta_(n,h)^2/g_n)`
-` = O(h^2/[g_n a_n^3])`
-` = O(h^2/[g_n (log g_n)^3])`.
+`0 <= pi h/a_n - Delta_(n,h)`
+` << Delta_(n,h)^2/(g_n a_n)`
+` << h^2/(g_n a_n^3)`
+` << h^2/[g_n (log g_n)^3]`.
 
-This is the curvature correction left after subtracting the local linear inverse-theta model. For `h=O(log g_n)` its size is `O(1/[g_n log g_n])`.
+The key point is that the same inverse-theta curvature bound is valid for arbitrary block length; it merely becomes too weak to force collapse once `H_n` leaves the displayed square-root-scale corridor.
 
-The estimate is deliberately stated as a uniform bound rather than as a new Gram-spacing asymptotic. It needs only the classical first two theta derivatives and the already established logarithmic-block diameter.
-
-## 2. Growing prime support only multiplies the curvature error by `log P_n`
+## 2. Growing prime support multiplies only the clock remainder
 
 For any real `x`,
 
@@ -88,46 +100,52 @@ Hence for every `p<=P_n`,
 
 Taking the maxima over `h<=H_n` and the prime support proves the claim.
 
-Equivalently, let the arc-corrected block vector be
+Equivalently, let
 
 `r_(n,h) = (R_(n,h)(p))_(p<=P_n)`
 
-on the growing prime torus, equipped with the sup chord metric. Then
+be the arc-corrected block vector on the growing prime torus with the sup chord metric. Then
 
 `max_(h<=H_n) d_infty(r_(n,h),1)`
 ` << H_n^2 log P_n/[g_n (log g_n)^3]`.
 
-Thus the empirical distribution of the corrected vectors converges to a point mass whenever the displayed ratio tends to zero. This conclusion is dimension-free in the sup metric: the number of prime coordinates may grow, and only the largest logarithmic frequency enters the deterministic sampling-error bound.
+Thus the empirical distribution of corrected vectors converges to a point mass whenever the displayed ratio tends to zero. This coordinatewise statement is dimension-free: only the largest admitted logarithmic frequency enters the deterministic sampling-error bound.
 
-## 3. What this closes in the visual search space
+## 3. What the stronger corridor closes
 
-`VIS-084` left growing prime support as a separate local question because its raw phase-diameter estimate contains `max log p`. That caveat is real for the **unsubtracted** cloud: larger primes move faster along the deterministic Gram arc.
+`VIS-084` identifies `H=Theta(log g_n)` as the first fixed-prime scale on which the raw Gram phase cloud can move an order-one distance. The original version of this finding showed that, at that transition scale, subtracting the first-order inverse-theta arc kills its curvature residual even across enormous growing prime supports.
 
-But once the correct local null is the first-order arc itself, the relevant quantity is not the raw motion `Delta log p`; it is the inverse-theta curvature error
+The monotonicity argument above shows that the control is not confined to that local transition. For polynomial prime cutoff, the same first-order arc remains coordinatewise complete throughout every block with
 
-`[Delta-pi h/a_n] log p`.
+`H_n=o(sqrt(g_n) log g_n)`.
 
-That error is much smaller. At `H=O(log g_n)`, any support with `log P_n=o(g_n log g_n)` has vanishing arc-removed residual. Ordinary polynomial, polylogarithmic, and much larger subexponential-in-`g_n log g_n` supports therefore cannot produce a persistent local residual merely from nonuniform Gram spacing.
+For fixed prime support the corridor is larger by a factor `sqrt(log g_n)`. These blocks contain vastly more than logarithmically many consecutive Gram points, yet the only Gram-clock effect left after linear arc subtraction still vanishes uniformly.
 
-This does not say that a growing prime field is statistically equivalent to a fixed-dimensional Haar field. It says something narrower and local: **after matching the deterministic Gram sampling arc, the residual sampling geometry itself vanishes uniformly across an enormous growing-frequency range**. Any surviving effect must come from the observable/source law, a larger block scale, or an additional coordinate, not from the first curvature correction of the Gram clock.
+This does not say that the prime field is statistically Haar on those growing blocks, nor that every scalar statistic built from many coordinates vanishes. It says something narrower and stronger as a visual null: **the nonlinearity of the Gram sampling clock itself cannot supply a persistent coordinatewise residual anywhere inside the condition `H_n^2 log P_n=o(g_n(log g_n)^3)`**.
+
+A positive route inside this corridor must therefore use information in the observable/source law or an additional Gram/zero coordinate, not merely the curvature of the sampling schedule. A route based only on prime-phase motion must leave the corridor or replace the first-order arc by a different claim whose information content is independently justified.
 
 ## Prior art and novelty assessment
 
-The Riemann-Siegel theta asymptotics, Gram-point definition, and average Gram spacing are classical. `VIS-083` records the discrete-universality literature in which Gram-point prime phases are studied globally, including A. Laurinčikas, **Joint Discrete Approximation of Analytic Functions by Shifts of the Riemann Zeta-Function Twisted by Gram Points**, *Mathematics* 11:3 (2023), 565, DOI `10.3390/math11030565`, and the earlier M. Korolev–A. Laurinčikas Gram-point work.
+The Riemann-Siegel theta asymptotics, Gram-point definition, average Gram spacing, and inversion of the Gram clock are classical. `VIS-083` records the discrete-universality literature in which Gram-point prime phases are studied globally, including A. Laurinčikas, **Joint Discrete Approximation of Analytic Functions by Shifts of the Riemann Zeta-Function Twisted by Gram Points**, *Mathematics* 11:3 (2023), 565, DOI `10.3390/math11030565`, and the earlier M. Korolev–A. Laurinčikas Gram-point work.
 
-A targeted search around Gram-point short blocks and inverse-theta spacing did not identify a reason to present the uniform arc-remainder estimate as a new theorem. It is an elementary Taylor consequence of the classical theta derivatives. No novelty is claimed for that estimate.
+A targeted literature check around Gram-point spacing and inverse-theta descriptions did not identify a reason to present the displayed remainder estimate as a new theorem. The strengthened range is an elementary consequence of eventual monotonicity of `theta'`, the classical derivative asymptotics, Taylor's formula, and the phase chord inequality. No novelty is claimed for that analytic estimate.
 
-The durable Mathia contribution is the resulting **control boundary** for the visual search: the growing-support caveat left by `VIS-084` does not rescue logarithmic Gram blocks merely through sampling-clock curvature across any support satisfying the explicit uniform bound.
+The durable Mathia contribution is the **control boundary** for visual search: the first-order Gram arc remains a sufficient sampling-clock null on a much longer block corridor than the original logarithmic formulation recorded.
 
 ## Boundary and falsification
 
-The result assumes `H_n=O(log g_n)` so that the whole Gram block remains in an `O(1)` height interval and the theta-curvature bound is uniform in the simple form used above. Longer blocks require a separate analysis rather than extrapolating this estimate.
+The collapse conclusion requires
 
-The support bound controls only the Gram-clock residual. It does not prove global Haar equidistribution uniformly over growing prime dimension, and it does not remove arithmetic information carried by the prime coefficients themselves, `Z(g_n)`, Gram occupancy, derivatives, nearby-zero geometry, or another independently supplied coordinate.
+`H_n^2 log P_n=o(g_n(log g_n)^3)`.
+
+Outside this corridor the bound ceases to force a vanishing residual; that is an absence of control, not evidence of a positive mechanism. A higher-order inverse-theta subtraction may extend the null further, but that is a separate mathematical question and is not assumed here.
+
+The support bound controls only the Gram-clock residual. It does not prove Haar equidistribution uniformly over growing prime dimension, approximate zeta by the admitted prime support, or remove arithmetic information carried by the prime coefficients themselves, `Z(g_n)`, Gram occupancy, derivatives, nearby-zero geometry, or another independently supplied coordinate.
 
 The sup metric is intentional because it gives a coordinatewise visual-control statement independent of the number of admitted primes. Statistics whose Lipschitz constants grow rapidly with dimension need their own normalization before this coordinatewise collapse can be converted into a scalar error bound.
 
-Falsify the claim by breaking the classical theta derivative asymptotics, the logarithmic-block `Delta=O(1)` estimate, Taylor's remainder bound, or the elementary phase chord inequality. A proposed positive Gram residual must show either that its scale lies outside the displayed corridor or that its signal remains after this arc-removal error is accounted for.
+Falsify the claim by breaking the classical eventual theta derivative asymptotics, monotonicity of `theta'`, Taylor's remainder bound, or the elementary phase chord inequality. A proposed positive Gram residual inside the stated corridor must show that its signal uses information not accounted for by this arc-removal null.
 
 ## Visual consequence
 
@@ -135,6 +153,6 @@ No canonical PNG is retained. The exact uniform remainder bound is stronger than
 
 ## Research consequence
 
-The accepted `CLUE-zeta-prime-phase-recursive-geometry` should be narrowed again. For `H=O(log g_n)`, **controlled growing prime support is not a local Gram-anchor escape merely because the prime dimension grows**: after subtracting the deterministic first-order Gram arc, the entire coordinatewise residual vanishes whenever `log P_n=o(g_n log g_n)`.
+The accepted `CLUE-zeta-prime-phase-recursive-geometry` should be narrowed again. **Genuinely longer Gram blocks are not by themselves an escape from the deterministic sampling null.** For polynomial prime support, linear Gram-arc subtraction forces coordinatewise collapse all the way through `H_n=o(sqrt(g_n) log g_n)`; for fixed support the proved corridor is larger still.
 
-A surviving Gram-based route must therefore move to genuinely longer blocks, use an observable/source law with information not explained by the matched prime-torus arc, or add an independently informative Gram/zero coordinate. Merely increasing the number of prime phases inside a logarithmic Gram block no longer qualifies as an uncovered local mechanism.
+A surviving Gram-based route must therefore operate beyond the explicit `H_n^2 log P_n=o(g_n(log g_n)^3)` corridor, use an observable/source law with information not explained by the matched prime-torus arc, or add an independently informative Gram/zero coordinate. Whether higher-order inverse-theta correction closes still longer blocks is left as a separate follow-up rather than being folded into this finding.
