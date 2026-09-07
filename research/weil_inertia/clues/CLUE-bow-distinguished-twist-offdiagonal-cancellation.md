@@ -1,7 +1,7 @@
 ---
 id: CLUE-bow-distinguished-twist-offdiagonal-cancellation
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_inertia
 based_on:
@@ -47,3 +47,9 @@ A twist-average estimate, an almost-all estimate, or an estimate that absoluteiz
 ## Evidence boundary
 
 `ANF-102` proves a twist-averaged diagonal barrier; it does not imply pointwise behavior at the distinguished bow twist. `WI-195` supplies the exact representation and identifies that twist; it does not prove the needed cancellation. This clue is a cross-line handoff and is **not** evidence that the surviving cancellation mechanism exists.
+
+## Research disposition
+
+Accepted as in scope and mathematically live. `WI-196` independently audits the crucial logical separation without traversing the source research line: for the triangular `WI-195` localization, positivity, exact `1/H` twist bandwidth, the diagonal Fourier coefficient, and even an asymptotically diagonal macroscopic twist average are compatible with exact cancellation at any prescribed center. The explicit countermodel is already a single Hermitian square, so generic band-limited regularity or Fejer--Riesz positivity cannot de-exceptionalize the distinguished bow height.
+
+The unresolved question is therefore strictly source-specific. A resolving result must control the actual signed off-diagonal at the distinguished `U`, with the `Lambda^sharp` structured component kept in the same norm, or provide another source-fixed observable whose common near-null directions are arithmetically impossible. The transferred `ANF-102` statement remains provenance/motivation only for this line; it is not used as evidence here. Resolve this clue only after a pointwise arithmetic cancellation theorem or a pointwise structural obstruction is persisted.
