@@ -1,7 +1,7 @@
 ---
 id: CLUE-bost-connes-phase-sensitive-mobius-transfer
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -45,3 +45,12 @@ Keep the direction only if the actual orientation has a source-forced quantitati
 ## Evidence boundary
 
 `PL-211` proves the support/orientation threshold split for one canonical finite-prime observable. It does not prove that a useful phase-sensitive KMS statistic exists, nor that Bost--Connes dynamics controls Mertens excursion. This clue is a cross-line handoff and is not evidence for RH or for a new Möbius bound.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-138-bost-connes-diagonal-prime-independence-barrier.md]]
+
+The divisibility diagonal is an exact prime-product KMS system: centered observables on disjoint prime coordinates have zero covariance, and the natural unweighted Möbius-oriented fluctuation has variance of order `p^(-beta)`, hence coherence only for `beta>1`; the `beta=1/2` fluctuation threshold occurs only after phase information cancels to order `p^(-2 beta)`. This kills the proposed critical-half **diagonal covariance** route. A residual Bost--Connes question would have to use genuinely non-diagonal crossed-product data and separately prove an anchored Mertens transfer, so it is not kept open under this clue.
