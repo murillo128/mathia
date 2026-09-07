@@ -14,6 +14,11 @@ This file records durable literature dependencies for `research/analytic_frontie
 - D. R. Heath-Brown, **Zero Density Estimates for the Riemann Zeta-Function and Dirichlet L-Functions**, *Journal of the London Mathematical Society* (2) 19:2 (1979), 221–232. Role: classical near-critical fixed-`sigma` additive-energy bound retained as the current best ANTEDB entry on `1/2 <= sigma <= 2/3`; load-bearing input for `ANF-001`.
 - Tao--Trudgian--Yang / ANTEDB above. Role: current improved additive-energy bounds beginning at `sigma=7/10`, and the exact fixed-`sigma` definition of `A^*(sigma)` used to distinguish deep-strip improvements from microscopic near-line uniformity.
 
+## Short-interval major arcs and Dirichlet-polynomial mean values
+
+- Kaisa Matomäki, Maksym Radziwiłł, Xuancheng Shao, Terence Tao and Joni Teräväinen, **Higher uniformity of arithmetic functions in short intervals II. Almost all intervals**, *Inventiones Mathematicae* 244 (2026), 967–1091, DOI `10.1007/s00222-026-01408-6`; arXiv:2411.05770. Role: primary source for the exact `Lambda^sharp` approximant used in `ANF-102`, the polynomial-twist almost-all major-arc estimate of Theorem 3.1, and the Parseval-type short-interval variance framework of Lemma 3.3.
+- H. L. Montgomery and R. C. Vaughan, **Hilbert's Inequality**, *Journal of the London Mathematical Society* (2) 8:1 (1974), 73–82, DOI `10.1112/jlms/s2-8.1.73`. Role: classical Hilbert-inequality/Dirichlet-polynomial mean-value boundary for the diagonal/off-diagonal twist mechanism used in `ANF-102`; the finding rederives its needed logarithmic-frequency averaging directly.
+
 ## Critical-line proportions and mollifiers
 
 - [`research/prior_art/levinson-conrey-mollifier-method.md`](../prior_art/levinson-conrey-mollifier-method.md). Role: retained primary-source-backed anchor for the Levinson–Conrey method, longer mollifiers, mean-value asymptotics, Kloosterman control, and variational optimization.

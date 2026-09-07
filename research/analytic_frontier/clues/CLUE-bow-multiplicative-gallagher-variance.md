@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-bow-multiplicative-gallagher-variance
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: analytic_frontier
 based_on:
@@ -33,3 +33,12 @@ Write the smoothed `WI-195` variance as a Dirichlet-polynomial mean square and t
 ## Evidence boundary
 
 `WI-195` establishes the exact representation and proves only that the cited 2026 almost-all pointwise major-arc estimate is too weak as a black box, even under an all-interval strengthening with the same amplitude. It does not establish the variance bound above, does not prove such a bound impossible, and does not itself yield the Weil-Inertia coercive conclusion. This transfer to `analytic_frontier` is therefore a proposed research question, not evidence.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-102-twist-averaged-diagonal-barrier-forces-resonant-bow-cancellation]]
+
+`ANF-102` proves that the uniform target written above is false: averaging over any fixed `U` window `[A X^2,B X^2]` leaves a `(1+o(1))XK log X` prime diagonal, so some twist in every such window has diagonal-scale variance. The residual direction is therefore nonuniform and sign-sensitive. A viable bow transfer must pin the exact distinguished twist and normalization and prove macroscopic negative off-diagonal cancellation there, or subtract the unavoidable diagonal before asking for a vanishing variance.
