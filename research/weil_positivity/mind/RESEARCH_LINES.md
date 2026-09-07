@@ -2,28 +2,28 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Couple finite arithmetic to the real-place phase before scalar passive flexibility erases the sign theorem
+## Seek a source-forced completed channel, not a positive scalar phase
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-007-one-dimensional-connection-positivity-is-gauge-trivial`, `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`, and `MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`, and `MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor`.
 
-WP-161--WP-178 close shellwise Mellin, one-dimensional connection, scalar radial-angular, pointed-Gram, finite matrix-Schur, finite Pontryagin, regular `J`-contractive/passive-Hilbert realizations, weak boundary limits, ordinary Nevanlinna relation-valuedness, trace-class Fredholm scalarization, and the lossless Hilbert--Schmidt `det_2` escape for the exact Gamma response.
+WP-179--WP-181 classify the obvious scalar passive escapes. Lossless `det`/`det_2` inherit a one-sided phase order incompatible with the Gamma response; higher modified determinants or dissipative scalar Schur functions can change phase sign but no longer inherit the needed order. Even the canonical scalar de Branges--Rovnyak kernel does not repair this: at a dissipative boundary it is dominated by a positive absorption pole, while the finite phase term left after scalar subtraction is sign-indefinite.
 
-WP-179 classifies the whole modified-determinant phase-sign boundary. Ordinary `det` and `det_2` are exactly the orders whose lossless passive boundary phase inherits a universal sign from positive delay. For every `det_m`, `m>=3`, the regularization polynomial itself changes sign on a one-channel pure-delay control. Higher modified determinants can therefore mimic signed phase motion only after **losing** the positivity inheritance that motivated the route.
+WP-182 changes the live category in a useful way. A non-extreme scalar Schur response has a canonical outer Pythagorean mate. Completing `S` to the column `(S,A)` subtracts the **entire positive defect kernel before the boundary limit**, absorbs the dissipative pole, and leaves a finite positive boundary kernel. The sign theorem now controls the weighted phase balance of the completed two-channel object, not the scalar phase of `S`.
 
-WP-180 closes the opposite naive escape. Genuinely dissipative scalar Schur passivity is flexible enough to have a tunable sign-changing boundary-phase derivative even in an elementary resistor--inductor one-port. Dissipation removes the lossless Gamma-phase contradiction, but it does so by making phase orientation underdetermined. Ordinary Schur/bounded-real passivity alone is therefore not a replacement Weil positivity theorem.
+This is a genuine structural escape from the WP-181 scalar trilemma, but it is classical and occurs in arithmetic-free passive controls. The live problem is therefore to derive the companion/defect channel from Mathia's finite--archimedean geometry **before** selecting the target response. Positivity should belong to the assembled source-forced channel; manufacturing a Pythagorean mate after fitting Gamma is only universal function theory.
 
-The live finite--archimedean architecture must constrain a strictly smaller source-derived class before scalarization and prove an independent positive/coercive form there. Neither higher determinant regularization nor dissipation is positive evidence merely because it can reproduce the Gamma sign pattern.
+## Derive mixed-prime incidence inside the same positive completion
 
-## Derive mixed-prime incidence before positivity erases it
+Pairwise resultants, scalar radial filling, fixed finite arity, refinement-positive kernels, and separated completions do not manufacture irreducible mixed-prime geometry absent upstream. A survivor must carry a source-forced mixed relation before the sign theorem and show that the finite-prime and real-place/defect sectors enter one common coercive object.
 
-Pairwise resultants, scalar radial filling, fixed finite arity, refinement-positive kernels, and separated completions do not manufacture irreducible mixed-prime geometry absent upstream. A survivor must carry a source-forced mixed relation before the sign theorem and show that the finite-prime and real-place sectors enter one common coercive object.
+WP-182 makes the architectural requirement sharper: a compensating channel may be legitimate, but it must not be an after-the-fact spectral factor of an already chosen scalar response. Its coupling to the arithmetic channel must be independently generated by the same geometry that is supposed to explain Weil positivity.
 
-## Change the operator category only together with a replacement order theorem
+## Treat category changes as successful only when the replacement order survives the full completion
 
-The current boundary has two complementary failures. Lossless passive scalarizations are too rigid: their inherited phase orientation conflicts with the Gamma response through `det_2`. Higher modified determinants and dissipative Schur systems are flexible enough to change sign, but **too flexible for passivity alone to certify that sign**.
+The current passive boundary is no longer simply “rigid versus flexible.” A vector completion can restore positive order after scalar dissipation, but the resulting ordered quantity has changed. Every category escape should therefore state exactly **which completed object is positive, which component carries the signed target term, and what source theorem fixes the compensating channel**.
 
-A surviving category change must therefore state the new order structure explicitly: a source-derived spectral-sector restriction, positive kernel/storage form, Herglotz/de Branges-type measure, coupled finite--archimedean quadratic form, singular-domain theorem, or another intrinsic coercive mechanism. Analytic counterterms, dissipation parameters, spectral sectors, or references chosen because they fit Gamma are not derivations of positivity.
+Singular/domain-changing, matrix-valued, off-diagonal, distributional, or indefinite constructions remain live only with an explicit replacement coercivity theorem. Flexibility to mimic the Gamma sign pattern is not itself evidence.
 
-## Treat scalar phase matching as a control until the admissible class is source-forced
+## Treat scalar phase matching and universal defect completion as controls
 
-WP-179 and WP-180 supply arithmetic-free controls that can generate signed phase behavior: higher regularization on a pure delay and dissipative phase humps with freely tunable crossover. Therefore qualitative agreement with the real-place phase is weak evidence. The research target is not a scalar representation of Gamma, but a geometry whose admissible class forces the required sign before the target is inserted.
+Higher regularization, dissipative phase humps, scalar de Branges finite parts, and Pythagorean/Darlington completions all exist in arithmetic-free systems. Qualitative agreement with the real-place phase or the mere existence of a finite positive completion is therefore weak evidence. The target remains a geometry whose admissible completed class and finite-prime coupling are source-forced before the Riemann data are inserted.

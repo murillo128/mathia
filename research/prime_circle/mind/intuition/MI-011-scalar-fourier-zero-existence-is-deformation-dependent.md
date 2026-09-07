@@ -1,33 +1,31 @@
-# MI-011 — Scalar Fourier zero existence is a deformation-dependent shell classifier, not intrinsic spectrum
+# MI-011 — Scalar reciprocal-shell zero scales are deformation boundary effects, not intrinsic spectrum
 
-**Evidence level:** exact cyclotomic Fourier-sign classification and exponent deformation through PC-194
+**Evidence level:** exact/literature-backed shell asymptotics through PC-196
 
 ## Core intuition
 
-The minimally renormalized reciprocal cyclotomic amplitude does contain arithmetic information, but only at the level of a classical shell class and only within a restricted deformation range. At reciprocal exponent `alpha=1`, real Fourier sign exactly separates prime powers from non-prime-powers; PC-194 extends that classifier to every `0<alpha<=1`. The same family then loses zero-free prime behavior at `alpha=2`, where sufficiently large prime shells acquire real Fourier zeros from a mesoscopic boundary layer.
+Prime-Circle scalar Fourier zeros are now classified strongly enough to reject their most tempting quantitative interpretation. PC-193--PC-194 show that zero existence depends on the reciprocal exponent. PC-195--PC-196 show that the **location scale** is equally representation-dependent: the quadratic `p^(3/4)` first-zero law is a singular resonance at the even exponent `alpha=2`, while every fixed `1<alpha<2` has no zeros at any `o(p)` scale.
 
-Thus a scalar spectral zero is not an intrinsic Prime-Circle datum merely because one exponent produces a clean arithmetic classification. The readout must itself be source-forced and stable under the natural deformations that the geometry leaves free.
+The mesoscopic scale is therefore not evidence of a hidden Riemann spectrum. It is created when the leading outer Fourier tail vanishes exactly at the quadratic deformation, exposing a lower-order term that balances on a smaller scale.
 
 ## Strongest justified principle
 
-PC-193 proves the exponent-one dichotomy. Prime powers reduce by cyclotomic scaling to prime shells, and the prime-shell defect factors into two strictly Fourier-positive kernels; hence the minimally renormalized reciprocal has strictly negative Fourier transform at every real frequency. PC-192 supplies the converse: every non-prime-power shell changes sign and has a nonzero real Fourier zero.
+PC-195 derives two universal boundary regimes for `alpha=2`. The first prime-shell zero satisfies `tau_p~c_*p^(3/4)`, with `c_*` determined by fixed boundary moments, and later zeros occur on the `Theta(p)` boundary-layer scale governed by a universal limiting Fourier profile. Prime powers only dilate these laws.
 
-The arithmetic content of that theorem is bounded. The same prime-power/non-prime-power distinction already appears in the classical anchor value `Phi_n(1)`, so the global sign theorem rigidly propagates an existing classifier rather than introducing a second zero-sensitive carrier.
+PC-196 perturbs the exponent and shows that the leading tail reappears for every fixed `1<alpha<2`. It dominates throughout `t=o(p)`, excluding mesoscopic zeros entirely. For exponents sufficiently close to `2`, zeros still exist, but at `Theta(p)` rather than `p^(3/4)`. Thus the quadratic law is a codimension-one cancellation in the scalar representation, not a stable shell invariant.
 
-PC-194 tests whether the classification is robust under the reciprocal exponent. For `0<alpha<=1`, the prime-shell defect is a nonnegative power-series function of the `alpha=1` positive-definite kernel, so strict Fourier negativity survives. At `alpha=2`, however, the large-prime shell develops a negative mesoscopic Fourier region between positive zero-frequency and positive high-frequency behavior, forcing real zeros. The responsible scale `t~p^{3/4}` balances the outer `t^{-4}` tail against an exact refinement boundary layer of mass `p^{-3}`; no zeta-zero information enters.
+The durable conclusion is stronger than “zeros move under deformation”: **the very scale advertised as spectral information is selected by a special cancellation in the chosen reciprocal exponent.** A meaningful spectral claim must identify why the source forces that scalarization or must use a relation surviving the deformation family.
 
-The durable boundary is therefore: **scalar Fourier sign/zero existence in this reciprocal family is a deformation-class property, not an invariant arithmetic spectrum.**
+## Counterevidence / boundary
 
-## What remains possible
+PC-196 does not classify every exponent in `(1,2)` at the `Theta(p)` scale and does not rule out a source-forced operator whose natural exponent is exactly `2`. It does rule out treating the quadratic scale as self-authenticating evidence. Any exact exponent-selection theorem would have to precede the spectral interpretation.
 
-A source principle may select one exponent or one operator canonically and then force a quantitative relation among its spectral locations. Cross-shell coupling may also create information unavailable to one-shell scalarization. Those are materially different claims from choosing an exponent because its zeros look useful.
+Cross-shell, matrix-valued, nonlocal, or multi-carrier mechanisms remain outside this scalar control.
 
-The interval `1<alpha<2` remains mathematically unclassified, but resolving it is secondary unless the Prime-Circle construction itself forces an exponent in that range. Likewise exact first failure primes or zero locations are not automatically RH-relevant.
+## Epistemic status
 
-## Status / novelty
-
-Cyclotomic identities, strip-Poisson kernels, positive-definite closure, and the elementary boundary-layer analysis are exact persisted results built from classical mechanisms. The durable synthesis is the invariance test: **a spectral feature that disappears under a free source-compatible scalar deformation should be treated as representation behavior until a geometric principle selects it.** No RH consequence or novelty claim follows.
+**Proved for the reciprocal-shell family.** The underlying oscillatory asymptotics are classical in character; no claim is made that the deformation classification resolves RH.
 
 ## Falsification criterion
 
-Find a prime-power shell and `0<alpha<=1` whose minimally renormalized reciprocal transform is not strictly negative; invalidate the PC-194 quadratic boundary-layer sign change for sufficiently large primes; or prove that the Prime-Circle construction canonically forces a deformation for which the scalar spectral readout has an independent source-derived meaning. Any such result would change this boundary.
+Find a fixed `1<alpha<2` sequence of prime shells with a real zero at `t=o(p)` contradicting PC-196, invalidate the PC-195 quadratic asymptotic, or derive an independent source theorem that canonically forces `alpha=2` and a deformation-stable cross-shell consequence. The last outcome would reopen arithmetic interpretation without contradicting the scalar controls.

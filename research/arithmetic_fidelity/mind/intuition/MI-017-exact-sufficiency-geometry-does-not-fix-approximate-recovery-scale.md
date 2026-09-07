@@ -1,33 +1,33 @@
-# MI-017 — Endpoint recovery needs both a quotient-adequate witness and a stable inverse
+# MI-017 — Exact sufficiency does not fix the stable recovery scale
 
-**Evidence level:** exact finite-experiment, decision-theoretic, Hardy-factorization, moment-reconstruction, and root-stability results through AF-168
+**Evidence level:** proved on the finite Blaschke control families through AF-171
 
 ## Core intuition
 
-Exact sufficiency geometry does not determine quantitative recoverability. The destination first decides which source distinctions matter; only then can one ask for the smallest retained witness that separates those endpoint classes. Even after such a witness is exactly injective, a limiting arithmetic problem still needs its inverse to remain quantitatively usable on the admissible family.
+Endpoint-faithful information has three distinct layers: exact identifiability, quantitative inversion in the chosen data norm, and the asymptotic scale at which the endpoint itself is observed. AF-167--AF-168 show that an exactly sufficient witness can become singular at divisor collisions. AF-169--AF-170 show a different failure: even simple, uniformly regular divisors can become asymptotically indistinguishable because the forward representation contracts a source direction exponentially with degree.
 
-The durable hierarchy is therefore: **declare the endpoint quotient, identify an intrinsic endpoint-faithful witness, and then prove a recovery modulus at the relevant scale.** Exact recovery without a stable inverse can be mathematically correct and asymptotically useless.
+AF-171 supplies the positive counterpart. The same radial family is uniformly recoverable once the natural compressed coordinate and boundary-layer endpoint scale are used. Stable fidelity is therefore not determined by the abstract sufficiency geometry alone; it is a property of the **representation metric + admissible family + endpoint normalization**.
 
 ## Strongest justified principle
 
-AF-160--AF-165 calibrate the source side. A recoverable barycentric reference has an exact likelihood-complexity penalty, provenance composition depends on the admissible identity code, and whole-source recovery may be stronger than the endpoint requires. Endpoint entropy and cross-endpoint overlap, not hidden-source cardinality, are the intrinsic decision costs.
+For a degree-`n` finite Blaschke divisor, AF-167 proves exact recovery from degree plus the first `n` phase-gradient moments, and AF-168 quantifies the collision singularity of that inverse. AF-169 then removes collisions from the explanation: regular simple divisors with radii `r` and `s` fixed inside the disk have a fixed bottleneck separation while their relevant moment data differ by only exponentially small terms. The Jacobian itself has exponentially small radial singular values.
 
-AF-166 makes the quotient concrete in Hardy space. Boundary modulus determines the outer factor but is blind to the inner factor; finite Blaschke multiplication can alter the entire disk zero divisor while preserving the retained modulus. The correct repair depends on the endpoint: winding/phase degree can recover only zero count, Blaschke information is needed for the divisor, and full inner data are needed for the full analytic function.
+AF-170 strengthens the obstruction from a truncated witness to the complete finite inner function. For the symmetric radial family,
 
-AF-167 then shows that a full phase field is excessive for a finite divisor. For a degree-`n` finite Blaschke product, the phase-gradient mean gives `n` and the first `n` positive Fourier coefficients give the power sums; Newton--Girard reconstructs the divisor exactly, while `n-1` moments fail uniformly by a root-of-unity matched control.
+`B_(n,r)(z)=(z^n-r^n)/(1-r^n z^n)`,
 
-AF-168 supplies the missing quantitative boundary. The same moment map has a globally sharp `1/n`-Hölder inverse, a locally sharp `1/m` exponent at maximum multiplicity `m`, and a locally analytic/Lipschitz inverse only at simple separated divisors. The Vandermonde determinant locates the collision singularity, while its shrinking value warns that even simple-root families can lose uniform conditioning as separations collapse.
+the full `H^infinity` distance between fixed `r<s<1` tends to zero even though the divisors do not approach each other in the unscaled endpoint metric. Completeness of the analytic representation therefore does not imply degree-uniform fidelity.
 
-## What remains possible
+AF-171 identifies the exact compressed coordinate: the `H^infinity` distance is controlled by the pseudohyperbolic separation of `r^n` and `s^n`. On the boundary layer `u=-n log r`, `v=-n log s` with `u,v` in a fixed compact positive interval, this representation metric is uniformly bi-Lipschitz to `|u-v|`, while the correctly rescaled divisor distance has the same limit. The apparent information loss is repaired only after matching the endpoint scale to the coordinate actually retained.
 
-A concrete arithmetic endpoint may tolerate coarse zero location, quotient multiple roots, or use a witness whose inversion is better conditioned than raw power sums. Those are legitimate ways to reduce the stability burden, but they must be stated as changes in the endpoint or witness rather than inferred from exact injectivity.
+## Counterevidence / boundary
 
-Conversely, a growing-degree divisor problem cannot cite AF-167 alone. It must control the degree-dependent constants, multiplicities, separations, and the forward error with which phase moments are actually obtained, or replace the witness by one with a source-calibrated stable inverse.
+The boundary-layer rescue is proved for a highly symmetric control family; it is not a universal prescription to multiply every endpoint distance by degree. General divisors can also suffer multiplicity, separation, or conditioning losses that require different normal forms. The correct scale must come from the representation and the downstream discriminator, not from retrospective renormalization.
 
-## Status / novelty
+## Epistemic status
 
-Sufficiency, Le Cam recovery, Shtarkov/NML complexity, Hardy inner--outer factorization, Poisson phase derivatives, Newton identities, Vandermonde geometry, and root perturbation are classical ingredients. The durable Arithmetic Fidelity synthesis is the three-stage gate: **quotient correctness, exact witness sufficiency, and quantitative inverse stability are separate requirements.**
+**Proved on the declared finite Blaschke families; supported as a general fidelity principle.** No claim is made that every complete representation admits a useful rescaling.
 
 ## Falsification criterion
 
-Produce an endpoint for which distinctions inside a declared quotient fiber necessarily affect the endpoint; invalidate the finite-Blaschke `n`-moment reconstruction or its `n-1` collision control; or derive a uniform inverse exponent stronger than `1/n` on the full degree-`n` class despite the root-of-unity splitting family. Any such result would change the hierarchy above.
+Produce a degree-uniform recovery modulus from the fixed-interior `H^infinity` data to the unscaled radial divisor metric despite AF-170, or show that the AF-171 pseudohyperbolic/boundary-layer comparison fails on its stated compact regime. More generally, a source-forced downstream theorem that consumes the unscaled endpoint while remaining stable under the collapsing control would narrow this principle.

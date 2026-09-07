@@ -1,37 +1,33 @@
-# MI-008 — Gaussian-reference localization is accurate and bandwidth-sufficient locally, but Vieta conditioning is the live interface gate
+# MI-008 — The Xi dictionary is nonidentifiable generically but stable inside the real-divisor logarithmic class
 
-**Evidence level:** exact Xi/Appell, seam, center-local approximation, selector localization, and Vieta-conditioning analysis through XF-080
+**Evidence level:** exact center-local nullspace and heat-compatibility controls through XF-082, with exact positive real-divisor stability through XF-083
 
 ## Core intuition
 
-The Gaussian/Appell quotient is intrinsically local, but locality itself is no longer the main obstacle. XF-073--XF-074 establish super-polynomial Xi recovery on a safe center rectangle and a genuine global seam divisor. XF-078 then shows that the same matched quotient is **locally compressible at the ordinary Vieta mode count**, and XF-079 shows that the destination-matched weighted selector can be read at one center. The global seam bandwidth and full-center scan therefore do not block the center-local route.
+The Xi source-to-Vieta interface now has a sharp admissible-class boundary. Generic center-local function approximation is too weak: exponentially invisible changes can alter the entire guarded Vieta prefix, and exact periodic heat compatibility does not remove that ambiguity. But the ambiguity disappears when the candidate carrier has a **real periodic divisor** and the source is compared through its logarithmic derivative.
 
-The live obstruction is conditioning of the dictionary from an accurate local function to the normalized divisor/log-Vieta resource. XF-080 gives an exact matched control where exponentially accurate finite-band approximation produces a macroscopic first Vieta mode after outer normalization.
+The live problem is therefore no longer generic inverse conditioning. It is an **existence/root-faithfulness problem**: can the actual transported Xi source be placed in the real-divisor class at the available exponential accuracy on the relevant slice?
 
 ## Strongest justified principle
 
-XF-073 uses the exact Gaussian/Appell symmetry of backward heat, periodizes both Xi and a known Gaussian reference, and divides. On `|Re z|<=L/4` the noncentral images pay a quadratic Gaussian penalty, giving super-polynomial relative recovery with derivative control on the actual high-line geometry.
+XF-078--XF-080 show that local mode count and local function accuracy do not control normalized Vieta coordinates. XF-081 makes the failure structural: a Chebyshev nullspace is exponentially small on the actual center high-line geometry while allowing an arbitrarily long growing edge/Vieta prefix to be prescribed. XF-082 evolves both the original and repaired carriers by the exact same periodic backward heat equation and proves that they remain exponentially indistinguishable on every Xi-relevant fixed heat interval while their low Vieta states stay macroscopically different.
 
-XF-074 shows that the periodized reference has theta seam zeros and generic quotient poles, so the construction is not a global holomorphic zero carrier. XF-075--XF-077 rule out free exact global repairs and quantify the resulting full-period bandwidth cost.
+Thus neither static accuracy nor free-heat compatibility identifies the source state in the unrestricted polynomial class.
 
-XF-078 provides the crucial matched counterweight. Away from the seam the Gaussian quotient is a half-frequency wave plus Gaussian-small error, and an explicit integer-frequency trigonometric polynomial with `N+1` modes approximates it super-polynomially on the center rectangle. The global `Theta(L^2/v)` bandwidth is therefore a seam-crossing cost, not an intrinsic local information count.
+XF-083 supplies the positive constraint. If the periodic roots all lie on the unit circle, the centered logarithmic derivative is a one-sided Hardy generating function for the root power sums. A two-constants/harmonic-measure argument turns exponential agreement on only the center half-arc into coefficient bounds with loss `(2/r)^m`. At Xi scale the available error is `exp(-Theta(D))` or better, while every source-visible guarded mode has `m=o(D)`, so the whole low power-sum range and exact XF-079 selector are exponentially stable.
 
-XF-079 then uses the already chosen compact Fourier support to show exact sideband disjointness. At each physical frequency only one center harmonic is active, so the modulus and the weighted `X(B)` resource are independent of center. A single safe-center comparison is enough for the source norm.
+The Chebyshev controls therefore fail precisely because they leave the real-divisor class. Inside that class, one-center logarithmic data is quantitatively sufficient without root matching, simplicity, or a gap lower bound.
 
-XF-080 shows why those two repairs still do not complete the bridge. The explicit XF-078 Laurent polynomial has exponentially small outer coefficients; normalizing either edge to Vieta form yields `|P_1|=Theta(N)` and a non-unit terminal coefficient. Local function error does not control the normalized root/divisor coordinates because the inverse normalization is exponentially ill-conditioned.
+## Counterevidence / boundary
 
-Thus **mode sufficiency and center sufficiency do not imply Vieta-state sufficiency**. The interface must control the conditioning of the normalization that turns a finite trigonometric surrogate into the destination resource.
+XF-083 is conditional on two same-degree real-divisor periodic carriers. It does not construct one from Xi and does not apply through a genuinely complex-root interval. The positive-time/reference transport may fail to enter the class or may consume the source margin before the real-rooted slice is reached.
 
-## What remains possible
+The remote guarded-mass control remains valid for weaker interfaces based only on local root agreement. The strength of XF-083 is exactly that it controls the power sums through the logarithmic field rather than through local root matching.
 
-Construct a different center-local surrogate with a lower-bounded outer coefficient and bounded low log-Vieta modes while preserving the XF-073 source accuracy; or bypass root-polynomial normalization and derive the XF-079 selector/logarithmic resource directly from the Gaussian quotient. Either route must be measured in the exact weighted destination norm.
+## Epistemic status
 
-The positive-`Lambda` half remains independent: even a perfect conditioned source bridge must still show nontrivial guarded destination mass for a hypothetical transition state.
-
-## Status / novelty
-
-Appell transforms, Gaussian/theta periodization, local trigonometric approximation, no-aliasing sidebands, and Fourier-extension conditioning are classical mechanisms. The durable Xi synthesis is the sharpened bridge boundary: **the center-local route has enough bandwidth and does not require a center scan, but normalized Vieta/divisor conditioning can still destroy the usable source state.**
+**Proved nonidentifiability outside the class and proved stability inside the class; open source realization.** The current Xi clue `CLUE-relative-xi-source-to-guarded-selector-stability` owns the unproved source-to-class handoff.
 
 ## Falsification criterion
 
-Show that the XF-078 explicit surrogate can be normalized into a bounded-displacement real periodic Vieta carrier despite XF-080's exact coefficient ratios; invalidate the XF-079 one-center norm identity; or prove a uniform implication from the center-local approximation norm to bounded normalized Vieta coordinates. Any such result would remove the current interface gate.
+Construct two same-degree real-divisor carriers satisfying XF-083's exponentially close center-half-line logarithmic data but with macroscopically different guarded power sums, or construct the required real-rooted Xi carrier with the stated accuracy and track it into the guarded selector. The first would invalidate the positive interface; the second would close the present dictionary gate.

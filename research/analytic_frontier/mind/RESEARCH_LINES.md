@@ -2,27 +2,29 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Move the central-notch certificate from the complete real boundary into genuinely nonreal geometry
+## Measure genuinely nonseparable center-height geometry beyond the protected cones
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information` and `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-080 showed that bounded sorted-prefix variation was enough to close every bounded multiplicity-complexity class, but ANF-081 removes that apparent frontier completely. Two-level clipping plus the affine integer surplus produces one fixed central-notch spectrum whose certificate holds for **every finite real multiset**, with arbitrary support and arbitrary positive integer multiplicities, while still improving Montgomery--Taylor.
+ANF-081 closes every finite real multiset for the fixed central-notch certificate. ANF-083 removes the apparent pair-count loss in the complex lift: an entrywise-nonnegative Montgomery--Taylor kernel gives one fixed positive-width height strip, independent of the number of nonreal pairs, horizontal positions, multiplicities, and collisions, on which the same affine certificate still improves Montgomery--Taylor.
 
-The real scalar multiplicity problem is therefore closed for this shape family. Growing support, maximum occupancy, geometric-band count, and prefix variation are no longer admissible escape mechanisms; ANF-080's remaining scale complexity was a limitation of that intermediate proof, not an intrinsic obstruction.
+ANF-085 then closes a second large class outside that strip. If the center-height occupation is separable -- every horizontal center carries the same finite symmetric vertical profile up to a nonnegative scalar -- the certificate holds at **all heights**. Large height, large multiplicity, and many nonreal pairs are therefore not independent escape resources.
 
-The live obstruction must use information absent from real collapse: nonzero imaginary height, genuinely multi-pair conjugation geometry, phase-sensitive coupling, or a higher-order carrier.
+The surviving pairwise frontier is a genuinely **nonseparable center-height correlation** outside the protected strip. A useful next invariant should quantify departure from the positive/separable cone and prove either that a small defect remains controlled or that a specific rank-two-or-higher occupation pattern can defeat the certificate. Do not reopen real multiplicity or pair-count complexity without falsifying ANF-081/ANF-083.
 
-## Widen the protected complex tube or compactify its complement
+## Treat relative Xi source reconstruction as solved until destination conditioning fails
 
-ANF-082 lifts the all-real certificate to an explicit open neighborhood in the full conjugation-invariant configuration space. With `p` nonreal conjugate pairs, the same fixed spectrum still beats Montgomery--Taylor whenever every height is at most an explicit `h_p`, with `h_p asymp p^{-1/4}` in the elementary worst-case estimate. The theorem is uniform in horizontal positions, real multiplicities, total cardinality, and pair collisions.
+**Linked intuition:** `MI-006-relative-xi-source-reconstruction-moves-the-gate-to-destination-conditioning`.
 
-The next discriminating question is whether the `p` loss is merely the cost of phase-blind triangle inequality. A cancellation-sensitive Gram/structure-factor estimate could enlarge the tube, while a complementary large-height coercivity theorem could confine every possible counterexample to an explicit intermediate-height region. Either route must preserve the exact affine variable and the strict normalization margin rather than replace the problem by qualitative positivity.
+ANF-084 gives an unconditional moving-line relative periodization of the actual Xi source at `sigma_T=1+1/log T`, with Gaussian width `log T` and period `(log T)^3`. The function and fixed logarithmic derivatives are recovered with polynomial factors times `exp(-(log T)^4/8)`, while prime leakage is exponentially smaller on the relevant scale.
 
-## Separate complex-height geometry from higher-order carrier complexity
+This closes the obvious source-side objection that moving to a zero-free Euler-product line or differentiating the image necessarily destroys the available accuracy. The live cross-line question is whether the positive-time/reference transport and the eventual guarded selector have a normalized conditioning cost small enough to preserve that margin. The existing Xi clue `CLUE-relative-xi-source-to-guarded-selector-stability` owns the speculative handoff; this line should not duplicate it as a second claim.
 
-Failure outside the ANF-082 tube would not by itself show that support-one pair information is exhausted. The candidate obstruction may depend on coherent interaction among several nonreal pairs, on horizontal phase relations discarded by the worst-case norm estimate, or on an observable of higher order than the scalar pair energy.
+## Separate pairwise nonseparability from genuinely higher-order carrier complexity
 
-A useful theorem should identify which of those resources is actually needed. Do not reopen real multiplicity complexity unless a counterexample falsifies ANF-081; do not promote a higher-order carrier merely because the current pairwise tube shrinks with `p`.
+ANF-083 and ANF-085 greatly enlarge the class controlled by the scalar pair energy, but they do not prove that every nonseparable high configuration is hard. Before introducing a higher-order carrier, test whether the remaining occupation matrix can be controlled by a quantitative defect from the separable cone, a positive-kernel factorization, or another source-faithful pairwise estimate.
+
+A higher-order mechanism becomes justified only after a concrete nonseparable configuration survives the optimized pairwise certificate. The fact that a configuration is outside the current theorem is not itself evidence that higher-order information is required.
 
 ## Keep diffraction realizability separate from the affine counting certificate
 

@@ -1,31 +1,31 @@
-# MI-012 — Arithmetic survival requires a parity-sensitive large-tail coupling and phase coherence
+# MI-012 — Arithmetic survival needs both parity-sensitive tail coupling and a source-prescribed phase
 
-**Evidence level:** literature-backed exact reductions through PL-188
+**Evidence level:** literature-backed exact reductions and matched controls through PL-192
 
 ## Core intuition
 
-One-point arithmetic complexity now has two independent erasure mechanisms. First, every bounded statistic of the shifted-prime exponent vector below any subpower cutoff is asymptotically governed by a Kubilius independent-coordinate model. The genuinely unresolved Möbius/Liouville information therefore lives in the large-prime tail or in a coupling that reaches it. Second, even an arbitrarily hard bounded target is erased if the affine phase is averaged over any window of diverging effective width.
+The affine Prime-Lattice branch has two independent erasure mechanisms. Local exponent data below every subpower cutoff misses the large-prime parity tail, while scalar phase observation can erase or counterfeit cancellation even after a hard target is retained. The surviving mechanism must therefore preserve **nonlocal parity-sensitive factorization information** and evaluate it in a phase regime selected by the source rather than by generic window geometry.
 
-The surviving affine target must therefore retain both **parity-sensitive nonlocal factorization information** and **pointwise or bounded-width phase coherence**. Increasing local coordinate resolution or moving to a broad high-frequency average does not achieve either requirement.
+PL-191--PL-192 make the second requirement sharper. A fixed positive-width window whose normalized center escapes is neither intrinsically rigid nor intrinsically flat: ordinary prime density makes the unweighted control flat at many theorem-scale escaping centers, while finite-frequency Bohr recurrence forces the same control to return near its coherent profile at arbitrarily remote centers.
 
 ## Strongest justified principle
 
-PL-184--PL-185 already show that bounded-variation one-point targets and polylogarithmic residue labels scalarize under the relevant prime equidistribution theorems. PL-186 strengthens this from low-complexity observables to the entire subpower exponent-coordinate sigma-algebra: Ford's shifted-prime Kubilius theorem controls every bounded function of `(v_l(q+h))_{l<=y}` for `y=X^{o(1)}`. The truncated Möbius parity has an explicit vanishing independent-model mean, while the full fixed-shift Möbius average remains at the classical parity frontier.
+PL-184--PL-186 place every bounded statistic of the shifted-prime exponent vector below a subpower cutoff inside a Kubilius one-point model. PL-188 identifies the remaining parity boundary: strong Type-I/local-divisor information can coexist with the wrong Liouville parity, and breaking it requires an additional bilinear/parity-sensitive input.
 
-PL-188 explains why simply extending ordinary local divisor information is not the missing mechanism. Selberg's Liouville parity control satisfies very deep classical sieve remainder information while containing no primes; Friedlander--Iwaniec break that barrier only after adding a genuinely bilinear, parity-sensitive hypothesis. Thus the large-coordinate tail identified by PL-186 is structurally a **sieve parity boundary**, not merely the present cutoff of one theorem.
+PL-187 supplies broad-window erasure for every bounded coefficient sequence. PL-189 proves that a fixed positive-width window with bounded center is qualitatively different: compact Fourier support and analytic uniqueness force its zero-frequency mean to vanish if the whole window flattens. PL-190 reduces shrinking windows to a pointwise value.
 
-PL-187 supplies an orthogonal information-loss theorem. On a macroscopic prime band, every bounded coefficient sequence has averaged affine Fourier mass tending to zero whenever the normalized phase-window width diverges, independently of the window center. Hence even a hard full-tail target such as `mu(q+h)` becomes universally invisible after broad phase averaging without its pointwise arithmetic cancellation being solved.
+PL-191 then gives a canonical matched control for the remaining subresolution moving-window regime. On a macroscopic rational-prime band with coefficients identically one, fixed-width windows centered at any `u_X -> infinity` inside the current `X^(13/15-o(1))` phase range flatten uniformly even though `F_X(0)=1`. PL-192 proves that this does not extend to arbitrary large centers: Bohr almost periodicity gives `T_X>X` at which the same carrier has a fixed coherent core. Hence phase escape alone contains no coefficient-blind arithmetic information.
 
-## What remains possible
+The durable rule is: **a high phase is useful only when the arithmetic construction prescribes why that phase is sampled and why the target-specific coefficient coupling survives there.** Moving the window after seeing the carrier, or appealing to “very high frequency” in the abstract, is compatible with both universal flattening and universal recurrence.
 
-A live affine carrier can use a prescribed or bounded-width high frequency together with a bilinear factor-range coupling, signed Möbius/Chowla-type relation, joint large-factor statistic, or completed operator whose matrix elements provably depend on information unavailable from Type-I/local divisor marginals. Joint targets involving several moving primes may also change the information category.
+## Counterevidence / boundary
 
-Larger local moduli, more subpower coordinates, or a broader phase scan remain theorem-technology changes unless the proposed observable identifies the parity-sensitive cross-tail term that survives the final averaging.
+PL-191 uses the current short-interval-PNT resolution range and does not identify a sharp transition at exponent `13/15`. PL-192 supplies arbitrarily large recurrence centers but no useful upper bound for the first recurrence. A source-forced center may still evade both controls, and joint/nonlocal/completed observables are not reduced to this scalar finite-band model.
 
-## Status / novelty
+## Epistemic status
 
-Kubilius models, sieve parity, Type-I/Type-II separation, prime-pair upper-bound sieve, and nonharmonic mean-square estimates are classical. The durable synthesis is the double gate: **arithmetic survival in the affine branch requires nonlocal parity-sensitive tail information before scalarization and a final phase observation that does not average that information away.**
+**Proved matched-control boundary; open target-specific mechanism.** The density and almost-periodicity ingredients are classical, while their combination sharply classifies the remaining scalar window intuition.
 
 ## Falsification criterion
 
-Produce a bounded subpower-coordinate target contradicting the Kubilius total-variation consequence, recover full shifted Möbius/Liouville parity from classical local-divisor information without a parity-sensitive extra input, or find a bounded target whose normalized affine mean square stays nonzero on diverging effective phase windows under PL-187's hypotheses. Otherwise the next candidate must expose both a cross-tail term and a coherent observation regime.
+Produce a coefficient-blind asymptotic law valid for all escaping fixed-width centers despite the contradictory PL-191/PL-192 subsequences, or derive an independently source-prescribed phase together with a parity-sensitive target theorem that is not reproduced by the unweighted control. The latter would be a genuine escape rather than a contradiction.

@@ -1,33 +1,29 @@
 # Arithmetic-fidelity research lines
 
-This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical lines of investigation suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive the admissible provenance code before demanding scalable recovery
+## Derive the admissible provenance code only after the endpoint quotient is fixed
 
-**Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-015-whole-experiment-fidelity-needs-a-common-recovery-profile`, `MI-016-shtarkov-rays-separate-radial-reset-from-full-experiment-loss`, and `MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale`.
+**Linked intuitions:** `MI-001-recovery-has-a-source-relative-and-a-target-relative-layer`, `MI-015-endpoint-fidelity-is-a-quotient-problem-before-a-coding-problem`, and `MI-016-provenance-must-be-transported-coherently-not-recomputed-after-compression`.
 
-AF-160 separates Shtarkov source complexity from the convex-hull penalty of a recoverable barycentric reference. AF-161--AF-164 then show that composition depends on provenance: free Cartesian recombination is exponentially expensive, one shared identity stays bounded, blockwise shared identity scales with the number of independently recombinable blocks, and an arbitrary provenance constraint is intrinsically a codebook whose normalized Shtarkov mass is whole-word MAP success.
+Continue to measure retained information only modulo distinctions that the downstream theorem cannot see. Family-wide recovery still requires one common reverse channel, and a canonical source center or provenance code must be transported coherently rather than recomputed after compression without a separate stability theorem.
 
-The source question is therefore to derive the **actual admissible provenance code and its overlap/rate geometry**, not to impose a worst-case tensor or block model by default.
+## Declare the endpoint quotient, endpoint metric, and asymptotic scale together
 
-## Declare the endpoint quotient before charging provenance or reconstruction loss
+**Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision` and `MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale`.
 
-AF-165 shows that whole-provenance recovery can be much stronger than the downstream theorem needs. For an endpoint map, the exact envelope mass is Bayes success for the quotient variable, the overlap budget counts only cross-endpoint pairs, and the capacity obstruction applies to endpoint entropy rather than hidden-source cardinality.
+AF-167--AF-168 separate finite exact sufficiency from collision conditioning. AF-169--AF-170 add a different asymptotic obstruction: even regular simple divisors can remain a fixed endpoint distance apart while their complete finite Blaschke inner factors converge in the natural `H^infinity` norm. No multiplicity collision is needed; the forward map itself contracts the radial coordinate exponentially with degree.
 
-AF-166 gives an analytic matched control of the same principle. Boundary modulus can determine the outer Hardy factor while erasing the complete inner factor; its Blaschke component can change an arbitrary finite zero divisor without changing the modulus. A zero-count endpoint, a zero-divisor endpoint, and full-function recovery therefore require strictly different lifts.
+AF-171 identifies the corresponding positive scale. For the regular radial family, the exact `H^infinity` distance is the pseudohyperbolic distance between `r^n` and `s^n`. In boundary-layer coordinates `u=-n log r`, this metric is uniformly bi-Lipschitz to `|u-v|` on compact positive ranges, while `n` times the divisor bottleneck converges to the same scale.
 
-A recovery no-go is relevant only after the destination equivalence relation is declared. Distinctions inside one endpoint fiber are destination-null and should not be charged as lost fidelity.
+The next recovery theorem must therefore specify not only **what** endpoint is reconstructed but **at what normalization and in which data metric**. A degree-uniform inverse can fail for an unscaled endpoint and become well-conditioned on a source-forced boundary layer. The scale must be derived from the representation/downstream problem, not chosen after seeing the control.
 
-## After exact recovery, prove a quantitative inverse on the actual asymptotic family
+## Prove stable inversion in the exact metric consumed downstream
 
-AF-167 identifies a sharp finite witness for the finite-Blaschke divisor endpoint. The phase-gradient mean gives the degree, its first `n` positive Fourier coefficients are the power sums of the zeros, and the first `n` moments recover the full degree-`n` divisor by Newton--Girard; `n-1` moments fail by an exact root-of-unity matched control.
+Exact injectivity is only the first gate. For growing families, derive a recovery modulus with explicit dependence on degree, multiplicity, separation, forward attenuation, and the chosen endpoint normalization. Test both collision singularities and regular contraction examples before calling a representation faithful.
 
-AF-168 shows why exact sufficiency is not the final gate. In those same moment coordinates, divisor recovery is globally only `1/n`-Hölder in the worst case, locally `1/m`-Hölder at a root of multiplicity `m`, and locally Lipschitz only away from collisions. The Vandermonde singular locus identifies near-collision as the conditioning barrier.
+When an exact compressed coordinate is visible, as `r^n` is in AF-170--AF-171, prefer to expose it explicitly and compare the downstream endpoint to that coordinate. This separates genuine information loss from a mismatch between the natural representation scale and an arbitrarily stronger target metric.
 
-A scalable arithmetic application must therefore specify not only the smallest endpoint-faithful witness but also the degree, multiplicity, separation, noise, and normalization regime in which its inverse remains quantitatively useful. Exact injectivity with constants that collapse in the limit is not effective fidelity.
+## Match reference complexity, provenance transport, endpoint loss, and inverse conditioning
 
-## Match reference complexity, provenance geometry, endpoint loss, and inverse conditioning in one composition law
-
-Reference choice, admissible source identities, endpoint quotient, retained witness, and inverse stability are distinct axes. A useful theorem should choose a recoverable reference, quantify its likelihood/Shtarkov cost, derive the intrinsic provenance composition law, retain only the quotient consumed by the endpoint, and prove a recovery modulus in the asymptotic regime actually used.
-
-If full-family recovery is stronger than the destination needs, narrow the witness class. If the endpoint really distinguishes exponentially many identities, the channel/overlap geometry must carry that load. If the exact witness is ill-conditioned near the admissible family, representation changes alone do not repair the quantitative loss.
+A useful fidelity claim should state four separate costs: the information surviving the endpoint quotient, the source-relative reference/provenance code, the stability of transporting that code through compression, and the conditioning of the final inverse at the asymptotic scale actually used. None is implied by the others.

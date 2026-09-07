@@ -1,35 +1,35 @@
-# MI-005 — Random prime-phase controls have deterministic resonance geometry
+# MI-005 — Fixed finite prime-phase geometry is exactly the prime-torus law
 
-**Evidence level:** exact finite product-torus covariance and third-cumulant identities through VIS-068
+**Evidence level:** exact finite-dimensional null law plus classical Kronecker equidistribution through VIS-071
 
 ## Core intuition
 
-Randomizing prime phases does not create a featureless or Gaussian visual null when the same phase is shared by all powers of one prime. The deterministic coefficient system already forces structured second-order and third-order geometry. A covariance ridge, scale band, skewness pattern, or bispectral resonance can therefore survive prime-phase randomization for reasons completely determined by the chosen smoothing and prime-power harmonics.
+Prime-phase randomization is no longer merely a convenient matched control for fixed finite visual fields. VIS-067--VIS-070 determine its complete finite-dimensional law from the retained prime-power coefficients, and VIS-071 proves that the deterministic vertical prime field has **the same Haar law in long-height average**. The control is therefore the asymptotic invariant law of the source's own finite Kronecker orbit.
 
-The right null is not “random-looking.” It is the exact harmonic geometry implied by the randomized model itself.
+A fixed-finite covariance ridge, higher cumulant, nonlinear shape, topological summary, or other bounded continuous statistic can be visually intricate and still contain no information beyond the prime torus itself. Long-height population separation from shared phases is not an available arithmetic signal at fixed support.
 
 ## Strongest justified principle
 
-VIS-067 proves that for finite observables
+For a finite field
 
-`A_alpha = Re sum_{p,k} c_{alpha,p,k} exp(i k theta_p)`
+`A_alpha(theta)=Re sum_(p,k) c_(alpha,p,k) exp(i k theta_p)`,
 
-with independent uniform `theta_p`, the covariance is exactly one half of the real Gram matrix of the coefficient vectors. Shared scale support and deterministic height phases can therefore force covariance blocks, oscillatory bands, and anisotropy with no additional arithmetic organization. The baseline can be computed analytically; simulation is only needed for finite-control uncertainty or genuinely nonlinear distributional questions.
+VIS-067 gives the exact coefficient-Gram covariance and VIS-068 gives the third-order same-prime resonance tensor. VIS-069 extends this to every finite joint cumulant via prime-local zero-frequency blocks and partition-lattice Möbius inversion. VIS-070 then removes the “non-cumulant” escape: the full joint characteristic function is a product of one-circle Haar integrals, with the first-harmonic case reducing to a Bessel product.
 
-VIS-068 lifts the same product-torus orthogonality to third order. A third moment survives precisely when three same-prime harmonics satisfy an additive resonance `k+l=m`, giving an exact tensor built from products such as `c_k c_l conjugate(c_{k+l})`. With only the first harmonic the tensor vanishes, but ordinary Euler-factor logarithms retain prime powers and hence retain these resonances.
+VIS-071 uses integer linear independence of the logarithms of distinct primes. For every fixed finite support, the deterministic orbit `theta_p(t)=-t log p` is equidistributed on the same product torus. Hence every bounded continuous function of the finite coordinate field has the shared-phase Haar expectation as its long-height Cesaro limit.
 
-Thus **second-order Gram structure and third-order additive-harmonic structure are properties of the shared-prime-phase null itself**. Moving from covariance to skewness is not a new information channel unless the observed statistic is compared with the corresponding exact null tensor.
+The durable rule is therefore stronger than “derive the null before interpreting the statistic”: **at fixed finite support the null is the source's own asymptotic vertical law.** An arithmetic residual must live at a boundary where that equivalence is not already the theorem.
 
-## What remains possible
+## Counterevidence / boundary
 
-An arithmetic field may differ from the null in a frozen residual covariance, a higher cumulant after all lower-order deterministic resonance terms are removed, a tail/topological statistic, or a conditional law. Such a claim must preserve the same phase-sharing convention and calibrate its confirmation uncertainty at the declared claim strength.
+VIS-071 is qualitative fixed-dimensional equidistribution. It gives no uniform rate when the number of primes, harmonics, or coordinates grows with the height window. It also does not say that finite-window discrepancies are absent; only that they can arise from slow deterministic torus filling and must be compared with frequency-preserving controls.
 
-Higher-order null tensors may contain more complicated signed harmonic resonances. They should be derived when they become load-bearing rather than assumed Gaussian or generated post hoc from an attractive image.
+The prime/residual pair from the hybrid formula includes an independently defined residual channel and is not reduced to the prime torus alone. Its joint law remains a separate admissible target.
 
-## Status / novelty
+## Epistemic status
 
-Steinhaus random multiplicative functions and product-torus Fourier orthogonality are classical. The persisted Visual Exploration contribution is their exact specialization to the hybrid prime-phase control: **the randomized null carries computable multiscale geometry through deterministic coefficient overlaps and same-prime harmonic resonances.** No zeta or RH claim follows from those null features.
+**Proved for fixed finite support.** The product-torus harmonic analysis and Kronecker theorem are classical; the durable Visual Exploration conclusion is the exact identification of the control with the vertical source law.
 
 ## Falsification criterion
 
-Give a finite shared-prime-phase coefficient family whose covariance differs from VIS-067's Gram formula or whose third cumulant differs from VIS-068's additive-resonance tensor. Alternatively, demonstrate a proposed visual statistic whose null distribution is provably insensitive to both structures; that would justify a different confirmation target.
+Exhibit a fixed finite prime/harmonic field and bounded continuous statistic whose long-height vertical average differs from its shared-phase Haar expectation, or derive a quantitative growing-support/finite-window theorem whose residual survives the matching Kronecker-frequency control. The latter would define a genuine new visual frontier.
