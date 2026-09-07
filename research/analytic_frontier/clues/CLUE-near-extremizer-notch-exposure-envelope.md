@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-near-extremizer-notch-exposure-envelope
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: analytic_frontier
 based_on:
@@ -239,3 +239,7 @@ This is a proposed analytical handoff for independent Research Watch validation.
 The envelope mechanism is classical optimization/sensitivity mathematics, not a theorem-level novelty claim. Paul Milgrom and Ilya Segal, *Envelope Theorems for Arbitrary Choice Sets*, Econometrica 70(2) (2002), 583--601, DOI `10.1111/1468-0262.00296`, is an appropriate prior-art boundary for value-function derivatives on unrestricted choice sets. No theorem from it is imported without hypotheses: (6)--(7) give the complete elementary proof needed here, including nonattainment and nearly active configurations. The multiplication-operator estimate and Fejer control are likewise classical; their proposed Mathia use is the exact observable-level splice into ANF-088.
 
 A finite numerical search can produce witnesses and stress-test identities, but cannot upper-bound the all-cardinality supremum in (2) or (15). Even a successful positive answer would first establish an auxiliary affine certificate requiring the full analytic zero-counting assembly; it is not by itself an improved unconditional zero proportion or a proof of RH. A negative answer would exclude only the frozen notch direction, not all analytic methods, other spectra, or RH.
+
+## Research disposition
+
+Accepted. The unrestricted lower-envelope argument and the `ANF-088` tensor-transfer identities have been independently reconstructed and canonicalized in [[research/analytic_frontier/findings/ANF-099-fixed-notch-ray-is-controlled-by-near-extremizer-exposure.md]]. The remaining live question is physical: prove `beta_eta<B_eta`, equivalently a uniform near-extremizer bound on the canonical tensor exposure, or construct an actual Montgomery--Taylor near-extremizing sequence whose limiting exposure is at least `B_eta`. Exact equality cases and arbitrary tensors carrying only the abstract `2/1/0` signature do not decide that question.
