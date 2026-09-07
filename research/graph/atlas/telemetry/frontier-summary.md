@@ -14,7 +14,7 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `8d6235b355edb1d048ace18229ae33e3fdcc422a` → `3d7f5bf94e32a4d28043862739c92050e6869ad5` contributes thirteen episodes:
+The newest source window `908487da37abfccf8474e1036acfd32de5d65632` → `34e794cb0a52ebaac8510c1c2e105cf1145b8ab4` contributes ten episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -22,34 +22,34 @@ The newest source window `8d6235b355edb1d048ace18229ae33e3fdcc422a` → `3d7f5bf
 | `arithmetic_fidelity` | 1 | 1 | 0 | 0 | 0 |
 | `mobius_cancellation` | 1 | 0 | 0 | 0 | 1 |
 | `prime_circle` | 1 | 0 | 1 | 0 | 0 |
-| `prime_flute` | 1 | 1 | 0 | 0 | 0 |
+| `prime_flute` | 1 | 0 | 0 | 0 | 1 |
 | `prime_lattice` | 1 | 0 | 0 | 0 | 1 |
-| `visual_exploration` | 2 | 1 | 0 | 0 | 1 |
-| `weil_inertia` | 2 | 0 | 1 | 0 | 1 |
+| `visual_exploration` | 1 | 0 | 0 | 0 | 1 |
+| `weil_inertia` | 1 | 0 | 0 | 0 | 1 |
 | `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
-| `xi_flow` | 2 | 1 | 0 | 0 | 1 |
-| **Total** | **13** | **5** | **2** | **0** | **6** |
+| `xi_flow` | 1 | 1 | 0 | 0 | 0 |
+| **Total** | **10** | **3** | **1** | **0** | **6** |
 
-Analytic Frontier and Arithmetic Fidelity both sharpen rather than merely enlarge their surviving route. The former moves the Montgomery--Taylor real-control question from fixed support to a scale-growing heterogeneous-support theorem; the latter identifies independently recombinable provenance blocks as the exact complexity variable behind repeated-experiment recovery.
+Analytic Frontier closes the finite real-multiplicity family and then opens a source-specific complex/separable Hilbert tube, with the sharp Montgomery--Taylor equality class reduced to a two-site real zero-set packing. Arithmetic Fidelity similarly ends positively: once output gauge and pseudohyperbolic geometry are treated correctly, complete finite Blaschke products have a sharp fixed-degree divisor-recovery modulus.
 
-Möbius Cancellation extends the positive Hamming-shell obstruction uniformly through every sub-log-logarithmic degree. `MC-107` and the dependent part of `MC-108` are intentionally absent from this episode set because the adversarial persistence handshake remains open; they are structurally present in the graph but not treated as settled evidence. Prime Circle's finite polynomial and integer-exponential local nonlinearities both redirect to classical cyclotomic zeta classes. Prime Flute removes boundary normalization from the qualitative fixed-germ rigidity gate but still lacks the quantitative source-scale modulus needed downstream.
+Möbius Cancellation strengthens two negative boundaries at once: growing radial Hamming filters retain a critical shell floor, and sub-`L^1` fractional moments do not generically recover first-absolute-moment cancellation even when controlled throughout a polynomial scale window. The earlier `MC-107` review sidecar has disappeared while the finding survives, so the former review quarantine is no longer applied.
 
-Prime Lattice shows again that bounded effective Fourier windows do not recover the parity-sensitive global tail. Visual Exploration obtains a dimension-free whole-replicate certificate for a frozen quadratic Markov witness while separately closing hybrid prime/zero scale transfer as a residual-controlled observable rather than an independent coupling channel.
+Prime Circle's reciprocal Fourier construction sharply classifies prime-power shells, but the global character continuation classicalizes: the one-shell Cauchy--Poisson field is ordinary Dirichlet `L` data and the natural sesquilinear two-shell fusion is the composite-character packet. Prime Flute reaches weak trace class for the complete short-collar central sector but closes the generic endpoint shortcut because critical one-sided weak-`S_2` localization is not controlled by endpoint mass alone.
 
-Weil Inertia now has a finite spectral activation gate plus confluence near-extremizers that defeat the proposed source-proximal mismatch; the Maynard--Pratt bow supplies a prior-art slow-drift redirect, with the Riemann--von Mangoldt correction moving any long source-compatible symmetrized bow away from the support-one endpoint. Weil Positivity extends the passive Gamma obstruction through relation-valued Nevanlinna limits and trace-class Fredholm/Cayley realizations, which remain Schur.
+Prime Lattice closes scalar and fixed-finite-dimensional prime-covariance repairs for self-adjoint resolvents. Visual Exploration identifies exact shared-prime-phase resonance laws and then shows that coordinate-separable additive log-Euler windows have no cross-prime small-divisor barrier, forcing any useful visual coupling statistic toward genuinely mixed/nonlinear structure.
 
-Xi Flow is the clearest positive local transport update: Gaussian/Appell source-relative periodization reaches exponentially small relative error on the high-line local contour and heat interval. The matching barrier is topological/analytic rather than numerical: the quotient is local and meromorphic, and reference-only seam repair reconstructs the periodized numerator instead of producing a globally holomorphic destination carrier.
+Weil Inertia's count-saturating bow reduces to a structured B-process alias family that current almost-all prime-uniformity can legally miss in its exceptional set. Weil Positivity extends the Gamma no-go through bounded-characteristic projective coordinates and finite rational decoding. Xi Flow, by contrast, closes the static real-divisor realization gate positively: guarded selector energy automatically places the visible moment vector inside the exact equal-weight realization cone.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **8 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **10 new barriers**. Therefore:
+Across the retained 20-episode window there are **6 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **11 new barriers**. Therefore:
 
-- `FrontierFertilityEpisodes = 40.0%`
-- `BarrierRate = 50.0%`
-- `PriorArtCollisionRate = 10.0%`
+- `FrontierFertilityEpisodes = 30.0%`
+- `BarrierRate = 55.0%`
+- `PriorArtCollisionRate = 15.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The represented frontier remains obstruction-heavy, but its live directions are increasingly source-specific: growing-support real controls, provenance-aware recovery assembly, quantitative fixed-germ collar localization, narrow dimension-free visual confirmation, source-distribution coercivity beyond confluence, category-changing Weil positivity, and a Xi local-to-global quotient theorem that carries its divisor and seam data explicitly. These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas.
+The represented frontier remains obstruction-heavy. The strongest positive movement is now concentrated in source-constrained quantitative geometry: the Analytic Frontier complex tube, fixed-degree Blaschke divisor fidelity, and Xi's exact equal-weight selector realization. The negative movement is correspondingly more specific: sub-`L^1` transfer, classical character fusion, critical endpoint localization, finite-fiber covariance, additive prime-phase averaging, almost-all alias control, and bounded-characteristic Gamma completion are each closed only within their stated source classes.
 
-Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.
+These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas. Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.

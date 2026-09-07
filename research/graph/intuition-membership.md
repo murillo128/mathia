@@ -23,6 +23,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mind/intuition/MI-005-topology-is-part-of-the-arithmetic-claim]]
 - [[research/mind/intuition/MI-006-classify-the-boundary-model-before-calling-it-arithmetic]]
 - [[research/mind/intuition/MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure]]
+- [[research/mind/intuition/MI-008-exact-recovery-is-not-stable-transport]]
 
 ### Analytic Frontier
 - [[research/analytic_frontier/mind/intuition/MI-001-global-conjugation-geometry-carries-horizontal-information]]
@@ -30,6 +31,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/analytic_frontier/mind/intuition/MI-003-ordered-local-consistency-escapes-pair-scalarization]]
 - [[research/analytic_frontier/mind/intuition/MI-004-complete-scalar-control-is-diffraction-realizability]]
 - [[research/analytic_frontier/mind/intuition/MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects]]
+- [[research/analytic_frontier/mind/intuition/MI-006-relative-xi-source-reconstruction-moves-the-gate-to-destination-conditioning]]
 
 ### Arithmetic Fidelity
 - [[research/arithmetic_fidelity/mind/intuition/MI-001-fidelity-is-quotient-relative]]
@@ -75,6 +77,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-008-nonlocal-fixed-base-repair-is-still-prime-blind]]
 - [[research/prime_circle/mind/intuition/MI-009-signed-radial-interior-survives-only-in-ordered-structure-before-mellin-or-self-adjoint-boundary-collapse]]
 - [[research/prime_circle/mind/intuition/MI-010-anchored-holomorphic-jets-have-one-mellin-carrier]]
+- [[research/prime_circle/mind/intuition/MI-011-scalar-fourier-zero-existence-is-deformation-dependent]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]
@@ -102,6 +105,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-002-gauge-invariant-visual-geometry-can-still-be-information-flat]]
 - [[research/visual_exploration/mind/intuition/MI-003-overlap-uncertainty-must-be-separated-from-residual-geometry]]
 - [[research/visual_exploration/mind/intuition/MI-004-dimension-free-confirmation-comes-from-narrowing-the-destination-question]]
+- [[research/visual_exploration/mind/intuition/MI-005-random-prime-phase-controls-have-deterministic-resonance-geometry]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]
