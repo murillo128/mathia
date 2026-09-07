@@ -25,6 +25,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-131-periodic-clock-product-state-excursion-blindness.md
   - research/mobius_cancellation/findings/MC-132-polynomial-clock-moment-excursion-blindness.md
   - research/mobius_cancellation/findings/MC-133-divisibility-complex-betti-parity-mertens-annulus.md
+  - research/mobius_cancellation/findings/MC-134-divisor-filtration-persistence-dyadic-barcode.md
 ---
 
 # Can a source-natural statistic transfer polynomially to mean-absolute Mertens scale?
@@ -47,7 +48,9 @@ The current obstruction surface rules out several increasingly rich but still or
 
 `M(n)=sum_{n/2<m<=n, 2 does not divide m} mu(m)`,
 
-while the **unsigned** total Betti mass is `2n/pi^2+o(n)`. Thus basic static divisor topology does not supply a cheaper source statistic: forgetting parity leaves linear mass, while retaining parity reconstructs the Mertens target exactly. Because each complex is a wedge of spheres, its single-scale homotopy type is already exhausted by those Betti multiplicities. This closes the naive “exact divisor topology alone” escape without relying on a non-arithmetic matched control.
+while the **unsigned** total Betti mass is `2n/pi^2+o(n)`. Thus basic static divisor topology does not supply a cheaper source statistic: forgetting parity leaves linear mass, while retaining parity reconstructs the Mertens target exactly.
+
+`MC-134` now audits the inter-scale escape left open there. Over every field, the reduced persistent barcode of the actual filtration `Delta_1 subset Delta_2 subset ...` consists exactly of bars `[m,2m)` in degree `Omega(m)-1`, one for each odd squarefree `m>1`. Hence every reduced homology map across a factor-two scale gap is zero and every logarithmic lifetime is exactly `log 2`. Ordinary one-parameter persistence therefore adds no hidden long-range topological carrier: its transport structure is rigid, while its birth data still encode the same squarefree/parity information whose signed live-bar count equals `M(n)`.
 
 ## Research question
 
@@ -55,15 +58,15 @@ Can a source-natural **Möbius-specific** statistic force
 
 `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))`
 
-on some controlled unbounded sequence `X_j -> infinity` without first proving an RH-equivalent Mertens bound, reconstructing Möbius tautologically from its complete prime law, or factoring through the excursion-blind local/state/path/time summaries already ruled out?
+on some controlled unbounded sequence `X_j -> infinity` without first proving an RH-equivalent Mertens bound, reconstructing Möbius tautologically from its complete prime law, or factoring through the excursion-blind or representation-complete summaries already ruled out?
 
-After `MC-133`, the residual is narrower in both the timing and divisor directions. Especially interesting possibilities are raw occurrence order, essentially full-resolution or genuinely non-polynomial/adaptive temporal information, nested or noncommutative multiscale relations that cannot be flattened into a longer finite context or bounded moment family, critical-or-larger effective memory, genuinely non-additive state, **inter-scale** structure of the actual divisor filtration, prime/divisor-labelled relations not reducible to static Betti parity, exact multiplicative constraints, or another arithmetic law whose information budget can be bounded explicitly.
+After `MC-134`, the divisor-topology residual can no longer be ordinary single-parameter persistent homology of Björner's filtration. Especially interesting possibilities are raw occurrence order; essentially full-resolution or genuinely non-polynomial/adaptive temporal information; nested or noncommutative multiscale relations that cannot be flattened into a longer finite context or bounded moment family; critical-or-larger effective memory; genuinely non-additive state; chain-level or additionally labelled divisor relations not determined by the dyadic barcode; a genuinely different/multiparameter arithmetic filtration; exact multiplicative constraints; or another arithmetic law whose information budget can be bounded explicitly.
 
 ## Why it may matter
 
 The endpoint side is unusually cheap: `MC-121` says the desired first-absolute bound need only be produced on an unbounded checkpoint sequence. That concentrates the research burden on one concrete question: **what source information retains macroscopic excursion amplitude?**
 
-The negative findings now calibrate both generic and arithmetic representations. A candidate cannot justify itself merely by combining local memory, modular occupation, coarse time labels, finite-horizon empirical paths, periodic clocks, polynomial timestamp moments, or by replacing Möbius with the static homology of its exact squarefree divisibility complex. `MC-129`--`MC-132` match the former in explicit subcritical regimes; `MC-133` shows that the latter has a linear unsigned norm and an alternating projection equal to `M` itself. Any positive mechanism must identify the exact extra relation that forbids those collapses without merely storing the endpoint.
+The negative findings now calibrate both generic and exact arithmetic representations. A candidate cannot justify itself merely by combining local memory, modular occupation, coarse time labels, finite-horizon empirical paths, periodic clocks, polynomial timestamp moments, static divisor homology, or the ordinary persistent homology of that divisor filtration. `MC-129`--`MC-132` match the generic summaries in explicit subcritical regimes; `MC-133` shows static homology has linear unsigned mass and an alternating projection equal to `M`; `MC-134` shows the complete one-parameter persistence module is only the explicit dyadic barcode. Any positive mechanism must identify extra structure not already exhausted by these collapses without merely storing the endpoint.
 
 ## Decisive test
 
@@ -72,18 +75,18 @@ Fix one explicit source-natural statistic and prove one of two outcomes:
 1. derive a quantitative implication from that statistic to `D_M(X_j)=O_epsilon(X_j^(1/2+epsilon))` on an explicitly controlled unbounded sequence for the actual Möbius function; or
 2. construct a source-faithful matched control satisfying the proposed source hypothesis at the claimed strength while its first-absolute partial-sum mean retains exponent `>1/2`.
 
-Kill a candidate if its input already contains an RH-equivalent Mertens/Riesz/coarse mode, if inversion reintroduces the original partial-sum burden, if its information factors through the local-histogram, additive-state, modular-transition, time-binned, cross-coupled one-step, finite-horizon empirical path, periodic-clock, or polynomial/quasi-polynomial timestamp-moment summaries covered by `MC-122`--`MC-132`, **or if a proposed static divisor-topology invariant reduces to the Betti/Euler package calibrated in `MC-133`**. Also kill it if the apparent gain disappears after exceptional-set, smoothing, weighting, and scale losses are restored.
+Kill a candidate if its input already contains an RH-equivalent Mertens/Riesz/coarse mode; if inversion reintroduces the original partial-sum burden; if its information factors through the local-histogram, additive-state, modular-transition, time-binned, cross-coupled one-step, finite-horizon empirical path, periodic-clock, or polynomial/quasi-polynomial timestamp-moment summaries covered by `MC-122`--`MC-132`; if a static divisor-topology invariant reduces to the Betti/Euler package in `MC-133`; **or if an inter-scale topological proposal factors through the ordinary one-parameter persistence module explicitly classified in `MC-134`**. Also kill it if the apparent gain disappears after exceptional-set, smoothing, weighting, and scale losses are restored.
 
-A candidate survives this obstruction surface only if it uses information the current controls do not match: genuine occurrence order or near-full timing resolution rather than low-moment compression; a multiscale relation not reducible to one longer empirical context or bounded polynomial-moment family; effective memory at or above the unresolved critical scale; non-additive arithmetic state; inter-scale divisor/prime structure beyond static Betti parity; exact multiplicative constraints; or another proved Möbius-specific relation excluding the matched reorderings and exact reconstruction collapses.
+A candidate survives this obstruction surface only if it uses information the current controls do not match: genuine occurrence order or near-full timing resolution; a multiscale relation not reducible to one longer empirical context or bounded polynomial-moment family; effective memory at or above the unresolved critical scale; non-additive arithmetic state; divisor/prime structure beyond the static Betti vector and dyadic persistence barcode; exact multiplicative constraints; or another proved Möbius-specific relation excluding both the matched reorderings and exact reconstruction collapses.
 
 ## Evidence boundary
 
 `MC-121` is only an endpoint reduction; it supplies no source-natural upper bound. `MC-117`--`MC-132` are obstruction results, and several of their matched controls are generic bounded-increment words rather than multiplicative functions. They therefore do **not** prove that Möbius arithmetic cannot supply the missing relation.
 
-`MC-133` is an exact arithmetic prior-art audit, but its scope is also limited. It shows that Björner's **single-scale ordinary homology/homotopy type** does not create a cheaper Mertens carrier. It does not analyze the inclusion maps of the filtration `Delta_1 subset Delta_2 subset ...`, persistent or spectral information, chain-level arithmetic labels, or another genuinely inter-scale invariant. Those remain possible escape surfaces, not evidence that any one of them works.
+`MC-133` and `MC-134` are exact arithmetic/topological audits with deliberately limited scope. `MC-133` closes single-scale ordinary homology/homotopy. `MC-134` closes **ordinary one-parameter persistent homology over a field** by determining its full barcode and all factor-two transport maps. Neither finding analyzes chain-level arithmetic labels, additional algebraic operations, genuinely different or multiparameter filtrations, or another Möbius-specific inter-scale invariant not determined by that barcode. Those remain possible escape surfaces, not evidence that any one of them works.
 
 Likewise, `MC-130` matches empirical finite-horizon product-state path types, `MC-131` adds periodic timing, and `MC-132` matches polynomial timestamp moments of each clocked transition state through the declared degree. None matches the complete ordered trajectory or arbitrary adaptive temporal information.
 
 ## Research disposition
 
-**Accepted, further narrowed by `MC-133`.** The live residual is a source-to-amplitude theorem using genuinely occurrence-ordered or essentially full-resolution timing information, non-flattenable multiscale structure, non-additive or critical-memory state, or Möbius-specific arithmetic structure that survives both the generic order-forgetting controls and the static divisor-homology reconstruction barrier.
+**Accepted, further narrowed by `MC-134`.** The live residual is a source-to-amplitude theorem using genuinely occurrence-ordered or essentially full-resolution timing information, non-flattenable multiscale structure, non-additive or critical-memory state, or Möbius-specific arithmetic structure that survives the generic order-forgetting controls and is not exhausted by the static or one-parameter-persistent topology of the exact divisor filtration.
