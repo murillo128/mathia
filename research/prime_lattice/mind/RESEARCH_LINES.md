@@ -12,18 +12,20 @@ PL-184--PL-188 show that bounded-variation targets, polylogarithmic residue labe
 
 PL-187--PL-192 show that broad scalar phase geometry is controlled either by ordinary prime density, local readout, or almost-periodic recurrence. `center -> infinity` has no universal arithmetic meaning. Any surviving scalar theorem must prescribe its center from source structure and prove target-specific cancellation there.
 
-## Treat one-dimensional unitary prime-shift cocycles as pure gauge
+## Treat exact unitary pure-tensor prime-shift cocycles as trivial even at infinite multiplicity
 
 **Linked intuition:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`.
 
-PL-193 shows that scalar phase covariance under the prime shift is gauge. PL-194 extends this to arbitrary nonzero scalar weighted-resolvent cocycles. PL-195 closes the finite-fiber unitary repair: on the one-dimensional bilateral shift, every `U(d)` cocycle -- even with noncommuting matrix values -- is removed by a cumulative unitary gauge. The base has no loop on which holonomy can survive.
+PL-193 shows that scalar prime-shift phase covariance is gauge, PL-194 extends this to arbitrary nonzero scalar weighted-resolvent cocycles, and PL-195 closes the finite-fiber unitary repair on a one-dimensional bilateral base by cumulative unitary gauge.
 
-A source-relevant cocycle must therefore acquire a genuine gauge obstruction: loops or branching, several independent shift directions, an anchored comparison that prevents cumulative trivialization, or a nonunitary category equipped with a replacement coercivity theorem. Merely upgrading scalar phases to finite matrices does not create arithmetic curvature.
+PL-196 now closes the infinite-fiber exact-unitary loophole in the one-sided self-adjoint-resolvent setting. For arbitrary Hilbert fiber `K`, exact covariance `R(S_p tensor I)=(S_p tensor U_p)R` forces every `U_p=I`; the resolvent and Hamiltonian then factor as `I tensor A` and `I tensor K_0`. Continuous or infinite internal spectrum can survive only as inert multiplicity independent of the exponent lattice.
+
+A source-relevant prime action must therefore leave this exact pure-tensor unitary class: for example through genuinely relational multi-coordinate dependence, loops/branching with source-forced holonomy, target-relative or source-target coupling, covariance in a nontrivial operator ideal, or a nonunitary/nonnormal category with a replacement coercivity theorem. Merely increasing internal unitary dimension cannot encode arithmetic curvature or a Hilbert--Polya mechanism.
 
 ## Force completed arithmetic sign or one-sided coercivity upstream
 
-A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, pointwise phase, moving-window geometry, or one-dimensional gauge already contains the hard cancellation step.
+A decisive theorem should derive an RH-level sign or one-sided checkpoint from exact rational-prime/global-completion structure, not from a representation whose critical axis, local factorization law, continuum density limit, pointwise phase, moving-window geometry, or exact unitary covariance already contains no nontrivial arithmetic coupling.
 
 ## Resolve target-sensitive Nyman data and genuinely relational prime-shift actions
 
-Joint factor-range couplings, several shifted targets, completed source/target operators, and target-sensitive Nyman data remain live only when they preserve information beyond the local sieve/Kubilius sigma-algebra and survive the final observation regime. A relational prime-shift action must also survive the exact gauge test above; larger finite fibers on a one-dimensional base do not suffice.
+Joint factor-range couplings, several shifted targets, completed source/target operators, and target-sensitive Nyman data remain live only when they preserve information beyond the local sieve/Kubilius sigma-algebra and survive the final observation regime. A relational prime-shift action must also survive the exact gauge/inert-factor tests above; larger unitary fibers in a pure-tensor exact-covariance model do not suffice.
