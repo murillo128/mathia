@@ -56,6 +56,7 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - A. P. Guinand, **A summation formula in the theory of prime numbers**, *Proceedings of the London Mathematical Society* (2) 50 (1948), 107–119, DOI `10.1112/plms/s2-50.2.107`. Role: primary classical anchor for the symmetric zero/prime summation formula used in XF-048.
 - André Weil, **Sur les "formules explicites" de la théorie des nombres premiers**, *Communications du Séminaire Mathématique de l'Université de Lund*, Tome Supplémentaire (1952), 252–265. Role: primary anchor for the explicit-formula framework used in XF-048. In the `H_0` coordinate `x=2 gamma`, the prime-power Fourier samples occur at `±(log n)/2`; XF-048 combines this classical frequency structure with the Xi-flow memory scaling and does not claim the explicit formula itself as new.
+- NIST Digital Library of Mathematical Functions, **§25.16(i) Distribution of Primes** and **§27.12 Asymptotic Formulas: Primes**. Role: durable reference for the Chebyshev function `Psi(x)=sum_{n<=x} Lambda(n)`, the prime-number-theorem equivalence `Psi(x)=x+o(x)`, and the classical zero-free-region error `pi(x)-li(x)=O(x exp(-c sqrt(log x)))`. XF-108 uses partial summation to transfer that quantitative PNT error to `Psi` and then to the logarithmic prime-power test measure; the Toeplitz cancellation and mass-preserving mesh normalization are derived in XF-108.
 
 ## Mesoscopic zeta-zero statistics
 
