@@ -7,89 +7,68 @@ target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
   - research/prime_flute/findings/PF-183-disjoint-thick-collar-slabs-remove-multiplicity-from-schatten-splice-budget.md
-  - research/prime_flute/findings/PF-189-complete-short-collar-central-sector-is-weak-trace-class.md
-  - research/prime_flute/findings/PF-201-global-to-local-cwikel-factorization-removes-regular-body-off-diagonal-remainder.md
   - research/prime_flute/findings/PF-204-native-two-hilbert-factorization-removes-rough-resolvent.md
-  - research/prime_flute/findings/PF-205-natural-width-cuff-smoothing-is-C1-uniform-and-critical-orlicz-summable.md
-  - research/prime_flute/findings/PF-210-prime-density-makes-logarithmic-rank-low-modes-weak-trace-class.md
-  - research/prime_flute/findings/PF-211-energy-normalized-dtn-gluing-removes-exterior-amplification-from-low-mode-gate.md
   - research/prime_flute/findings/PF-212-thin-fermi-boundary-frequency-split-closes-local-high-mode-gate.md
-  - research/prime_flute/findings/PF-213-summable-schur-off-diagonal-decay-closes-smooth-interface-reassembly-gate.md
-  - research/prime_flute/findings/PF-214-simultaneous-seam-precision-is-block-jacobi-and-uniform-adjacent-hopping-would-force-exponential-schur-locality.md
-  - research/prime_flute/findings/PF-215-thin-pant-corridors-force-normalized-adjacent-hopping-to-diverge.md
-  - research/prime_flute/findings/PF-216-positive-shift-pant-compression-has-a-growing-mass-floor.md
-  - research/prime_flute/findings/PF-217-tangential-boundary-screening-erases-the-raw-pant-mass-floor-after-shorting.md
-  - research/prime_flute/findings/PF-218-raw-mass-damping-cannot-accompany-summable-low-schur-transport.md
-  - research/prime_flute/findings/PF-219-no-fixed-polylogarithmic-weakening-restores-damped-low-schur-transport.md
   - research/prime_flute/findings/PF-220-coefficient-adjacent-low-recoupling-is-weak-trace-without-schur-locality.md
   - research/prime_flute/findings/PF-221-coefficient-weight-transfer-reduces-to-a-reciprocal-prime-schur-commutator.md
   - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
   - research/prime_flute/findings/PF-223-qualitative-cut-smoothing-does-not-force-weak-trace-schur-transport.md
+  - research/prime_flute/findings/PF-225-one-seam-resolvent-dressing-saturates-raw-pant-hopping.md
+  - research/prime_flute/findings/PF-226-thin-pants-force-inverse-seam-saturated-channel-multiplicity.md
+  - research/prime_flute/findings/PF-227-fixed-physical-high-pass-does-not-remove-thin-pant-channel-multiplicity.md
+  - research/prime_flute/findings/PF-228-flat-corridor-dressing-makes-inverse-seam-multiplicity-weak-trace-compatible.md
+  - research/prime_flute/findings/PF-229-frozen-serial-schur-completion-preserves-flat-corridor-cut-scale.md
 ---
 
 # Can the exact first relative resolvent be completed at the weak-trace endpoint?
 
 ## Observation
 
-The first relative resolvent cannot be trace class by PF-112, while several exact sectors already sit at the natural two-dimensional weak endpoint. PF-189 controls the complete fixed-central short-collar sector. PF-196--PF-201 control the regular Lambert-body critical sector. PF-203/PF-204 provide an exact unsmoothed native factorization for decomposition interfaces, while PF-205--PF-213 develop a competing smooth boundary route through natural-width seams, prime-density low-mode counting, energy-normalized DtN gluing, high-frequency control, and a sufficient Schur-reassembly criterion.
-
-PF-214--PF-219 sharply constrain the smooth Schur route. The simultaneous exterior precision is block Jacobi, but its adjacent normalized hopping diverges. Raw constant-mode coercivity does not survive tangential shorting in a form that can produce summable scalar damping, and no fixed polylogarithmic weakening repairs that architecture. PF-220 then separates this negative scalar statement from the actual recoupling word: coefficient-adjacent low blocks already form a weak-trace family before nonlocal low compressions act, while a general source-weighted low/high leakage factor is weak `S_2`.
-
-PF-221 makes the remaining coefficient placement issue exact. With
+The first relative resolvent is not trace class by PF-112, while the remaining smooth decomposition-interface term has now been reduced to a much narrower operator. PF-220 closes coefficient-adjacent low sectors. PF-221 moves the physical reciprocal-prime envelope to the low endpoint except for
 
 \[
+P[D,\Omega]H
+\quad\text{and its adjoint},
+\qquad
 \Omega=\bigoplus_nP_n^{-1}I_{\mathcal B_n},
 \]
 
-module locality gives
-
-\[
-PDH\Omega=\Omega PDH+P[D,\Omega]H.
-\]
-
-The transferred first term is already weak trace because `\Omega P\in S_{1,\infty}`. Thus the remaining smooth coefficient-transfer cost is the Schur commutator `P[D,\Omega]H` and its adjoint, whose module kernel is charged by reciprocal-prime differences rather than absolute prime weights.
-
-PF-222 settles the first qualitative question about that remainder: it is compact. The reciprocal-prime weight has an exact norm-convergent prefix-cut decomposition, every fixed cut is decoupled by one smoothing pant DtN block, and therefore every `[D,E_j]` is trace class while `[D,\Omega]` is a norm limit of compact cut fluxes. Noncompactness is no longer a viable obstruction.
-
-PF-223 then shows why compactness is not yet an endpoint theorem. An exact abstract countermodel retains the reciprocal-prime weight, positive block-Jacobi precision, fixed-edge finite rank, finite-rank prefix commutators, and even rank-one low sectors on every module, while `[D,\Omega]` remains compact but `P[D,\Omega]H` fails weak trace class. The failure comes from uncontrolled effective transport multiplicity at successively smaller operator scales. Hence **qualitative** one-seam smoothing and low rank cannot close the gate; the actual PF geometry must supply a position-dependent singular-value/counting estimate, most plausibly by inserting PF-212's physical frequency decay or an equivalent weighted cut-flux bound.
-
-The smooth frontier is therefore narrower than “prove the commutator compact” and narrower than “find any Schatten estimate on each fixed cut.” It is a **quantitative reciprocal-prime cut-flux problem** for the actual thin-pant DtN geometry. The unsmoothed PF-204 route and the independent PF-183 true-short-collar route remain live alternatives.
-
-## Research question
-
-Can one write the exact prime/shift first relative resolvent as already controlled regular/central terms plus decomposition-interface and true-short-collar terms so that
-
-\[
-(\Delta_g+1)^{-1}U-U(\Delta_++1)^{-1}
-\in\mathcal S_{1,\infty},
-\]
-
-while PF-112 continues to exclude `\mathcal S_1`?
-
-For the smooth decomposition-interface route, can the exact norm-convergent flux expansion
+and PF-222 gives the exact norm-convergent prefix-flux expansion
 
 \[
 P[D,\Omega]H
 =
 \sum_{j\ge1}
-(P_j^{-1}-P_{j+1}^{-1})P[D,E_j]H
+\delta_j P[D,E_j]H,
+\qquad
+\delta_j=P_j^{-1}-P_{j+1}^{-1}>0.
 \]
 
-be placed in `\mathcal S_{1,\infty}` using **quantitative structure of the actual PF cut fluxes**? A successful estimate must couple the reciprocal-prime jump to singular-value decay/effective rank through the degenerating one-pant geometry. Fixed-edge compactness, fixed-edge membership in every `S_p`, rank-one/logarithmic low sectors, or operator-norm convergence of the series are not enough by PF-223.
+PF-223 proves that compactness, fixed-cut smoothing, finite-rank approximability, and qualitative low-rank information do not force the weak endpoint. PF-225 then supplies the exact dressed one-cut factorization and universal `1/2` cap, but PF-226 shows that the actual thin pant has order `s_j^{-1}` raw channels above a fixed threshold. PF-227 sharpens this: removing any fixed, or sufficiently slowly growing, physical-frequency sector does not remove that inverse-seam multiplicity. The endpoint therefore cannot be closed by raw channel counting or by declaring the dangerous band low frequency.
 
-For the competing unsmoothed route, can PF-204's exact native two-Hilbert factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
+PF-228 changes the scale of the positive target. In the exact straight-corridor control, Schur dressing suppresses the inverse-seam band from order-one raw transmission to
 
-## Why it may matter
+\[
+\rho_j:=\frac{\sqrt{w_jw_{j+1}}}{s_j},
+\]
 
-A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 rules out trace class while the accumulated endpoint machinery would place the full difference in `S_{1,\infty}`.
+with the quantitative envelope `rho_j z/sinh(z)` in the scaled tangential frequency `z`. At canonical PF scales this makes the reciprocal-weighted top singular scale at most order `P_j^{-2}` and the orthogonal control family weak trace class even with the full inverse-seam channel population.
 
-PF-217--PF-223 also make a future failure increasingly discriminating. Raw pant conductance, scalar low compression damping, fixed polylog relaxations, coefficient-adjacent low transport, absolute weight placement, and noncompactness of the reciprocal-prime commutator are all removed as explanations. PF-223 adds one more exclusion: an argument that uses only qualitative cut smoothing and small low rank cannot succeed. A negative result now has to survive the **actual** seam-frequency geometry and show that its quantitative singular-value accumulation is still too slow.
+PF-229 then removes a second false obstruction. Repeating one frozen PF-228 channel along a complete bi-infinite serial chain changes the isolated transmission by only a fixed factor: the full prefix-to-tail cut block retains the same `w/s` scale and frequency envelope. Thus **generic scalar global shorting is not what remains**. Any destruction of the PF-228 gain must use structure absent from that control: variable hyperbolic pant geometry and tangential mode mixing, noncommuting/inhomogeneous neighboring boundary-energy operators, the physical `P/H` split, or the final overlap of the nested prefix cuts.
 
-## Decisive test
+The smooth frontier is therefore a two-stage problem: first prove or refute a quantitative **actual-PF dressed cut-flux envelope** at the `w_j/s_j` scale; only after that, solve the genuinely nested weak-`S_1` reassembly. The unsmoothed PF-204 route and the independent PF-183 true-short-collar route remain live alternatives.
 
-Work with the exact PF-211/PF-212 simultaneous-cut expansion and the PF-222 prefix-flux identity. Keep the coefficient-adjacent `P/P` pieces and transferred `\Omega PDH/HDP\Omega` pieces outside the open gate because PF-220/PF-221 already control them.
+## Research question
 
-For the remaining commutator words, derive a quantitative estimate for the actual operators
+Can the exact prime/shift first relative resolvent be placed in
+
+\[
+\mathcal S_{1,\infty}
+\]
+
+while PF-112 continues to exclude `\mathcal S_1`?
+
+For the smooth decomposition-interface route, can the actual operators
 
 \[
 P[D,E_j]H
@@ -97,20 +76,44 @@ P[D,E_j]H
 H[D,E_j]P
 \]
 
-that uses the one-pant factorization behind PF-222 together with PF-212's low/high physical frequency split. An acceptable positive result could be a direct counting estimate for the full flux series, a weighted `S_1`/weak-`S_1` estimate whose `j`-dependence is summable after multiplication by `P_j^{-1}-P_{j+1}^{-1}`, or another factorization that prevents the large finite transport multiplicities exhibited by PF-223.
+be given a singular-value/counting envelope comparable to the PF-228/PF-229 corridor control after the real pant's tangential variation, mode mixing, neighboring-cell inhomogeneity, and global Schur inversion are retained? A useful target is any estimate with top scale `O(w_j/s_j)` on the inverse-seam band together with quantitative decay beyond that band strong enough to survive multiplication by `\delta_j`.
 
-Do not replace this test by showing again that every fixed pant crossing is smoothing, every fixed cut commutator belongs to all `S_p`, or the full commutator is compact: PF-222 and PF-223 together prove those facts are below the required threshold. Likewise, PF-215's divergent raw hopping is only a lower-bound obstruction to uniform precision locality and does not supply the needed upper estimate.
+If such a one-cut estimate holds, can the overlapping nested expansion
 
-A decisive negative continuation must be **PF-compatible in the stronger sense excluded from PF-223**: realize bad weak-`S_1` counting while respecting the genuine one-dimensional seam DtN singular-value decay, PF-212 physical frequency localization, and the actual prime-dependent thin-pant scales. An abstract block-Jacobi multiplicity construction alone no longer decides the line.
+\[
+\sum_j\delta_jP[D,E_j]H
+\]
+
+then be reassembled in weak trace class without replacing the cuts by an artificial orthogonal direct sum? If the one-cut estimate fails, what concrete PF geometric or noncommutative mechanism destroys the flat-corridor `w/s` gain?
+
+For the competing unsmoothed route, can PF-204's exact native two-Hilbert factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
+
+## Why it may matter
+
+A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 excludes trace class, while the accumulated sector estimates would place the full comparison at the natural two-dimensional weak endpoint.
+
+The recent cut-flux sequence also makes a negative answer substantially more informative. Raw pant conductance, qualitative compactness, the universal resolvent cap, fixed-frequency truncation, and generic scalar/global shorting have all been separated from the live obstruction. A failure now has to occur in the actual variable pant/mode-mixing comparison or in the nested reassembly of quantitatively controlled cuts.
+
+## Decisive test
+
+Start from the exact PF-222 one-seam decoupling identity and retain PF-212's physical low/high split in its actual noncommutative order. Do not return to raw `B_j` trace budgets: PF-225--PF-227 show why those budgets are too crude.
+
+The first gate is **actual one-cut dressing**. Compare the real one-cusp pant boundary problem with the PF-228 corridor at the level needed for the dressed cut operator, not merely by saying that the domains are bilipschitz or that fixed-cut DtN coupling is smoothing. The comparison must control the features that the frozen model suppresses: tangentially varying Fermi thickness, the nontrivial boundary correspondence, mixing between physical frequency sectors, and the fact that neighboring PF cells do not share one Fourier diagonalization. A positive estimate should retain both the `w_j/s_j` inverse-seam amplitude gain and enough high-frequency decay to control the full singular-value population. Nearby thin-waveguide/norm-resolvent and DtN asymptotics are useful prior art, but a generic thin-domain limit or qualitative smoothing theorem does not by itself supply this normalized boundary-to-boundary Schur estimate.
+
+A decisive negative result must exhibit the missing mechanism inside the canonical PF geometry. It is not enough to perturb an abstract positive matrix or to repeat PF-223's generic multiplicity countermodel. Show that actual tangential mixing, variable neighboring cells, or the physical `P/H` projections produce a dressed channel whose scale or counting law violates every corridor-comparable envelope relevant to the endpoint.
+
+If the actual one-cut envelope survives, attack the second gate separately: the PF-222 cuts are nested and overlap. Prove a direct Lorentz/weak-ideal estimate for the weighted flux series, exploit cancellation/commutator structure that is genuinely present, or derive another exact reassembly mechanism. PF-228's orthogonal direct-sum count and PF-229's single-cut serial theorem are controls, not a proof of this final step.
 
 As alternatives, attack PF-204's unsmoothed native factorization directly at weak `S_1`, or settle the PF-183 conservative true-short-collar splice. A complete success must ultimately use one coherent global identification and one exact first-relative-resolvent identity; incompatible smooth and unsmoothed architectures cannot simply be combined to cover missing terms.
 
 ## Evidence boundary
 
-No full weak-`S_1` theorem is established. PF-220 closes coefficient-adjacent low sectors. PF-221 isolates the reciprocal-prime Schur commutator. PF-222 proves that commutator is compact and gives its exact one-seam flux expansion. PF-223 proves only that the qualitative hypotheses underlying that compactness do not force weak trace class; its countermodel is not the canonical prime-flute DtN operator and intentionally omits the quantitative seam-frequency structure that may rescue the actual geometry.
+No full weak-`S_1` theorem is established. PF-228 proves the favorable `w/s` amplitude and frequency envelope only for an isolated straight-corridor control. PF-229 proves that the same envelope survives the full global cut only for a frozen scalar mode-preserving serial completion. Neither result compares that control with the actual variable hyperbolic pant, proves stability under tangential mode mixing, or reassembles the true nested PF-222 cut series.
 
-PF-213's sufficient unweighted Schur-decay route, PF-204's unsmoothed endpoint, and the PF-183 true-short-collar endpoint also remain unresolved. Clue acceptance means only that the sharp weak-trace classification remains a concrete, evidence-backed target. It does not imply wave-operator completeness, a scattering matrix, determinant/resonance control, prime/clone separation, or any RH consequence.
+Conversely, PF-226/PF-227 prove large raw channel multiplicity in the actual pant but do not show that those channels survive Schur dressing at order one. PF-225's universal `1/2` cap is an upper bound, not evidence that saturation is attained. The current clue therefore asserts only that the actual dressed cut-flux comparison and subsequent nested reassembly are precise, evidence-backed research targets.
+
+PF-204's unsmoothed endpoint and the PF-183 true-short-collar endpoint remain unresolved. Clue acceptance does not imply wave-operator completeness, scattering-matrix or determinant/resonance control, prime/clone separation, or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`. PF-222 removes noncompactness of the reciprocal-prime Schur commutator as an obstruction. PF-223 then rules out upgrading that result to weak trace class from qualitative cut smoothing, block-Jacobi support, and low-rank counting alone. The next smooth-route test is now specifically a **quantitative PF cut-flux singular-value estimate** that retains the PF-212 seam-frequency structure; PF-204 and PF-183 remain independent competing/complementary endpoint routes.
+The clue remains `accepted`, but its smooth-route gate is now materially sharper. PF-225--PF-227 show that raw saturated multiplicity and fixed high-pass truncation do not close the endpoint. PF-228 shows that exact local Schur dressing can nevertheless move the full inverse-seam population to the compatible `w/s` scale, and PF-229 shows that frozen serial global shorting preserves that gain. The next Research Watch step is therefore **not another generic scalar/global control**: it is an actual-PF variable-pant/mode-mixing comparison for the dressed cut flux. Nested weak-`S_1` reassembly remains a separate second gate after that comparison.
