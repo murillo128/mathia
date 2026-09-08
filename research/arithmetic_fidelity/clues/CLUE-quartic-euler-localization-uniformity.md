@@ -52,10 +52,22 @@ AF-201 resolves the observation-side localization topology on any two-sided boun
 
 is equivalent to that weak concentration and gives explicit tail bounds. This is strictly weaker as a topology than requiring convergence of the carrier first moment; AF-200's `Q W_1(beta,delta_x)->0` condition is therefore sufficient but not the intrinsic finite-band requirement.
 
-AF-202 now translates that observation topology exactly back to fixed-order minimal-support source geometry. By the classical Genocchi-Hermite/Dirichlet representation, the normalized Peano carrier is the law of a uniform-simplex convex combination of the knots. If `D=u_4-x` is the anchored five-knot diameter, then
+AF-202 translates that observation topology exactly back to fixed-order minimal-support source geometry. By the classical Genocchi-Hermite/Dirichlet representation, the normalized Peano carrier is the law of a uniform-simplex convex combination of the knots. If `D=u_4-x` is the anchored five-knot diameter, then
 
 `2^-4 c(D/2) <= Lambda_sigma(beta) <= c(D)`,
 
 so `Lambda_sigma(beta)->0`, weak carrier concentration, and `D->0` are equivalent. Compact gap-ratio control and bounded `D/W_1` are therefore stronger than the intrinsic localization requirement.
 
-The clue remains accepted rather than resolved. The live residual is now sharper: determine whether a natural unrestricted five-knot source condition or full-Euler sublevel theorem forces **both** bounded `Q` and `D->0`. In particular, test whether bounded `Q` together with `W_1->0` already forces diameter contraction through a projective properness inequality, or construct a counterexample and identify the weakest extra coercivity. Only after that source/sublevel compactness gate is established can the homogeneous optimizer be transferred to full-Euler minimizing shapes without importing the desired conclusion.
+AF-203 now closes the projective-properness test left open after AF-202. Every five-node quartic minimal-support source satisfies the exact nonsharp inequality
+
+`D <= 3 Q W_1`.
+
+Hence bounded `Q` together with `W_1->0` already forces `D->0`; no separate source-localization assumption is needed on a bounded-profile class. Combining the same inequality with the Peano derivative estimate gives the purely profile-scale sufficient gate
+
+`Q^2 W_1 -> 0`,
+
+which allows `Q` to grow and still yields uniform fixed-band transfer.
+
+The unrestricted normalized full-Euler objective does not generate this coercivity automatically: AF-200's escape family lies in vanishing normalized Euler sublevels while `Q->infinity` and the physical diameter escapes. Thus unrestricted full-Euler sublevel compactness, and with it unrestricted minimizer transfer to the homogeneous `Q`-optimizer, is ruled out by existing evidence.
+
+The clue remains accepted because the **weakest** varying-profile gate is still open. The live residual is now to characterize the sharp relation among `Q`, `D`, `W_1`, and the Peano/Euler localization defect that is necessary and sufficient for transfer, and to determine whether a mathematically natural constrained Euler problem supplies that relation. `Q=O(1)` is sufficient, and `Q^2W_1->0` is a weaker sufficient condition; neither is yet shown to be the intrinsic minimal condition.
