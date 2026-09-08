@@ -20,11 +20,15 @@ The current Weil-Positivity Bost--Connes fork leaves unbounded/distributional ob
 
 Prime Lattice has now classified several neighboring infinite-prime exits in the same Bost--Connes system. `PL-225` proves that in the standard positive-energy representation the prime-shift von Neumann closure is all of `B(ell^2(N))`, so mere weak membership or affiliation places no arithmetic restriction on an unbounded self-adjoint operator. `PL-226` shows that scalar renormalization of the canonical all-prime corners has no nonzero KMS-GNS vector limit. `PL-227` shows that normalized lcm conditioning collapses fixed probes to the profinite-zero gauge state, while the canonically rescaled moving corner simply recovers the original KMS state. `PL-228` gives the complementary coprimality conditioning: below and at the phase transition it converges to Haar on the profinite unit group, and above it recovers the classical symmetry-broken unit-boundary measure. None of these operations creates an RH-sensitive half-axis selector.
 
+The user has asked the affected researchers to challenge a provisional suggestion to consolidate the overlapping Bost--Connes work. The existing mathematical question remains the right place to assess that suggestion; this strengthening neither declares a merger nor asks the watch to agree with one.
+
 ## Research question
 
 Is there a **source-forced unbounded form/operator relation inside Bost--Connes** that is materially stronger than affiliation, scalar functional calculus, scalar corner renormalization, or the two canonical all-prime conditionings, and that can simultaneously retain the critical finite-prime Weil weights and support an independently forced sign theorem?
 
 The extra relation must be stated before the desired Weil coefficients are inserted. Plausible forms include a nontrivial modular/covariance equation, a source-forced form domain or commutator identity coupling the state Hamiltonian to the cyclotomic/semigroup sector, or another exact finite--archimedean compatibility condition. Merely choosing an affiliated operator with the desired spectrum, an interpolating `F(H)`, or a moving corner that reconstructs the original KMS data does not qualify.
+
+For the counterassessment, separate **selection of the arithmetic object** from **positivity of its completed Weil form**. Does the destination need a genuinely different theorem after the source relation is available, or are the two investigations currently asking for the same missing implication? An independent Weil-Positivity route outside this fork may also defeat the suggested consolidation and should be identified concretely rather than silently excluded.
 
 ## Why it may matter
 
@@ -38,8 +42,12 @@ Choose one concrete Bost--Connes candidate compatible with the current Weil-Posi
 
 Kill a proposed escape if its only nontrivial property is affiliation/weak membership, if its selector is supplied by arbitrary scalar interpolation on `Spec(H)`, or if its canonical all-prime state limit reduces to the profinite-zero/unit boundary or exact KMS corner self-similarity. A positive outcome requires an additional source-derived relation that fails on the generic programmable controls and yields a quantitative finite-prime/archimedean sign statement without inserting the target weights by hand.
 
+For the independence test, state an explicit input/output contract for each obligation. Identify which source-side lemma could be reused verbatim and which critical-weight, archimedean, domain, or sign step remains destination-specific. A model satisfying selection but failing the proposed sign condition, or an exact implication reducing both obligations to the same unresolved relation, would be informative. Shared terminology or absence of a completed proof is not enough to infer redundancy.
+
+In the normal research disposition, give a reasoned agreement, disagreement, or conditional assessment of consolidating this fork, including the strongest counterargument and one exact lemma or counterexample that would change the assessment. The Master can read this local disposition directly. Do not create a duplicate global reply solely to acknowledge the consultation or change tasks, mandates, or portfolio state through this clue.
+
 ## Evidence boundary
 
 The Prime-Lattice findings are category-specific controls, not a theorem that every Bost--Connes or noncommutative-geometric route fails. `PL-225` concerns the standard positive-energy representation and does not identify the high-temperature type-III KMS GNS factors with `B(ell^2(N))`. `PL-226` rules out scalar renormalization of one canonical corner tail, not operator-valued or relational renormalizations. `PL-227` and `PL-228` classify two natural all-prime conditionings, not every modular, adelic, distributional, or form-theoretic completion. `WP-215` shows programmability of scalar `F(H)`, not impossibility of a source-forced relation involving additional Bost--Connes structure.
 
-No such stronger relation or sign theorem is established here. This is a cross-line falsification gate for a surviving Weil-Positivity category exit, not evidence for positivity or RH.
+No such stronger relation or sign theorem is established here. This is a cross-line falsification gate for a surviving Weil-Positivity category exit, not evidence for positivity or RH. The consultation does not add an independent review verdict or establish that the two research lines are mathematically interchangeable.
