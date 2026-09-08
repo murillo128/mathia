@@ -18,54 +18,48 @@ based_on:
   - research/prime_flute/findings/PF-213-summable-schur-off-diagonal-decay-closes-smooth-interface-reassembly-gate.md
   - research/prime_flute/findings/PF-214-simultaneous-seam-precision-is-block-jacobi-and-uniform-adjacent-hopping-would-force-exponential-schur-locality.md
   - research/prime_flute/findings/PF-215-thin-pant-corridors-force-normalized-adjacent-hopping-to-diverge.md
+  - research/prime_flute/findings/PF-216-positive-shift-pant-compression-has-a-growing-mass-floor.md
 ---
 
 # Can the exact first relative resolvent be completed at the weak-trace endpoint?
 
 ## Observation
 
-The first relative resolvent cannot be trace class by PF-112, but a large part of the exact prime/shift comparison is now controlled at the natural two-dimensional weak endpoint. PF-189 closes the complete fixed-central short-collar sector, while PF-196--PF-201 close the regular Lambert-body principal critical sector, including matrix-valued `L\log L` control, localization, finite-color counting, uniform regular-body constants, and external off-diagonal reassembly.
+The first relative resolvent cannot be trace class by PF-112, while several exact sectors now sit at the natural two-dimensional weak endpoint. PF-189 controls the complete fixed-central short-collar sector. PF-196--PF-201 control the regular Lambert-body critical sector, including matrix-valued `L\log L` localization and off-diagonal reassembly. PF-203/PF-204 provide an exact unsmoothed two-native-resolvent factorization for the decomposition interfaces, while PF-205--PF-212 develop a competing smooth boundary route with natural-width strips, scale-matched commutators, low-mode counting, energy-normalized DtN gluing, and high-frequency control.
 
-The distinguished decomposition-cuff interface has also narrowed sharply. PF-203 shows that seam smoothing is optional at quadratic-form level, and PF-204 gives the exact unsmoothed native-resolvent factorization
-
-\[
-R_gU_0-U_0R_+
-=(dR_g)^*M_{C_0}P_{F_0}dR_+.
-\]
-
-Thus one remaining route is a direct critical estimate for this mixed two-native-resolvent word with its bounded piecewise cotangent transport.
-
-If the smooth route is used instead, PF-205 supplies the canonical seam width `w_n\asymp d_n` with uniform `C^1` geometry and summable critical coefficient mass. PF-207 restores the physical `w_n^2` scale at the whole Dirichlet critical-block level; PF-208 makes scale-matched cutoff commutators strongly trace-summable; PF-209 supplies the fixed-profile boundary order; PF-210 shows that `O(a_n)` low modes of size `O(d_n)` are globally weak trace class by prime-density counting; PF-211 removes exterior amplification from those low-mode norms by energy-normalized DtN gluing; and PF-212 proves the missing high-frequency/aspect-ratio estimates on the actual thin Fermi strip.
-
-PF-213 closes the **abstract reassembly implication**. If the simultaneous normalized exterior Schur complements have module blocks bounded by an envelope `eta_k` with
-
-\[
-\sum_{k\in\mathbb Z}\sqrt{(1+|k|)\eta_k}<\infty,
-\]
-
-then the low-containing and double-high boundary families are globally weak trace class and the high/Dirichlet families are trace class. PF-213 also gives an explicit positive-contraction counterexample in which infinitely many tail low modes are funneled into one fixed module, making the weighted operator noncompact.
-
-PF-214 closes the **topological support part** of that locality gate. Under the simultaneous PF-205 cut, the exterior is a disjoint chain of one-cusp pant cores, so after grouping the two seam boundaries of each cuff into one physical module the normalized exterior precision
+The remaining smooth-route issue has now become much more precise. PF-213 proves an abstract weak-trace reassembly theorem once the normalized Schur factors have a summable module-decay envelope. PF-214 shows that, for the simultaneous PF-205 seam cut, the normalized exterior precision
 
 \[
 K=\Lambda_Q^{-1/2}\Lambda_E\Lambda_Q^{-1/2}
 \]
 
-is exactly block Jacobi and the Schur factor is `D=(I+K)^{-1}`. PF-214 proves that uniformly bounded adjacent normalized blocks would force exponential decay of `D`.
+is exactly block Jacobi at the form/support level. PF-215 then rules out the simplest sufficient argument: its adjacent normalized blocks diverge on the low symmetric constant modes because the thin one-cusp pant corridor has conductance `\gtrsim s_n^{-1}`.
 
-PF-215 now shows that this **simple uniform-hopping branch is unavailable in the actual PF geometry**. Constant opposite data on the two finite boundaries of one thin pant core cost `\gtrsim s_n^{-1}` in positive-shift energy, where `s_n=(h_n+h_{n+1})/2` is the exact inter-cuff distance, whereas the two-sided symmetric constant mode on a PF-205 strip has normalization energy at most `2w_nL_n`. Consequently every bounded adjacent normalized block satisfies
+PF-216 shows that this divergent hopping is accompanied by the missing compensating scale. On a growing embedded Fermi corridor the positive-shift pant energy satisfies
 
 \[
-\|Q_{n+1}KQ_n\|
-\gtrsim
-\frac{1}{s_n\sqrt{w_nL_nw_{n+1}L_{n+1}}}
-\gtrsim
-\frac{P_n^{1.475}}{\log P_n},
+E_n(a,b)\ge c_0(a+b)^2+c_1s_n^{-1}(a-b)^2,
 \]
 
-so the adjacent hopping diverges on the whole tail. This does not determine the decay of `D`: the same narrow pant also contributes large diagonal energy, and a correlated variable-conductance inverse may behave much better than a bound based on raw hopping suggests.
+and the PF-205 strip normalization of the symmetric constant module is asymptotically
 
-The remaining smooth-interface gate is therefore **scale-sensitive inversion/reassembly**, not topology, local thin-strip estimates, or a uniform bound on `K`'s off-diagonal blocks. The true-short-collar endpoint remains independent. PF-183 reduces that family to disjoint normalized thick slabs, and later rigidity work rules out several naive generic `L^1` shortcuts, but the canonical exact-area endpoint splice has not been completed.
+\[
+q_n=2w_nL_n(1+O(w_n^2))\asymp\frac{\log P_n}{P_n}.
+\]
+
+Hence the raw low-symmetric form compression obeys
+
+\[
+\mathfrak k[f]
+\ge c\sum_nq_n^{-1}|x_n|^2
+\asymp c\sum_n\frac{P_n}{\log P_n}|x_n|^2.
+\]
+
+Equivalently, the large negative cross conductance from PF-215 comes with a comparably large diagonal-sum precision. The uniform-hopping failure is therefore not evidence that `D=(I+K)^{-1}` is nonlocal; the raw constant sector is increasingly coercive.
+
+The unresolved point is that this constant sector is not known to reduce the full pant DtN form. If `P` projects onto the low-symmetric module vectors and `Q=I-P`, the correct object is the effective low form obtained by minimizing the closed form of `I+K` over `Q`-data. That variational elimination can lower the raw low-sector energy and could erase part of the mass/conductance floor. The smooth-route frontier is now **high-mode Schur survival followed by scale-sensitive inverse locality**, not raw-hopping boundedness.
+
+The true-short-collar endpoint remains independent. PF-183 reduces it to disjoint normalized thick slabs, but the required conservative endpoint splice has not yet been completed. The unsmoothed PF-204 route also remains available and could bypass boundary Schur reassembly entirely.
 
 ## Research question
 
@@ -78,53 +72,43 @@ Can one write the exact prime/shift first relative resolvent as already controll
 
 while PF-112 continues to exclude `\mathcal S_1`?
 
-For the decomposition interfaces, either of two routes remains admissible:
-
-- **Unsmoothed/native:** prove a critical weak-trace estimate for PF-204's exact `(dR_g)^*M_{C_0}P_{F_0}dR_+` factorization without dropping or differentiating the piecewise cotangent transport.
-- **Smooth/boundary:** keep PF-205's natural-width Fermi strips and PF-214's exact block-Jacobi precision, but do not seek a uniform adjacent-hopping bound: PF-215 refutes it. Instead exploit the actual scale-dependent diagonal/cross structure to prove enough decay or weighted transport for `D=(I+K)^{-1}` to meet PF-213, or bypass blockwise inverse decay with another exact weighted-ideal factorization.
-
-Separately, prove or refute an endpoint conservative splice on PF-183's true-short-collar normalized slabs in a coefficient currency sufficient for weak `S_1`.
+For the smooth decomposition-interface route, does the growing PF-216 low-symmetric mass/conductance floor survive variational elimination of the higher tangential boundary modes strongly enough to force a PF-213-compatible decay or weighted-transport estimate for the effective inverse? For the competing unsmoothed route, can PF-204's exact `(dR_g)^*M_{C_0}P_{F_0}dR_+` factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
 
 ## Why it may matter
 
-A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 rules out trace class, while the accumulated endpoint machinery would place the full difference in `S_{1,\infty}`. It would also show that the large low-symmetric normalized conductances exposed by PF-215 are compatible with sufficient decay after the full Schur inversion.
+A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 rules out trace class while the accumulated endpoint machinery would place the full difference in `S_{1,\infty}`. PF-216 also changes the likely mechanism. The smooth route would no longer depend on uniform absolute hopping, but on whether a growing coercive low-sector form survives its coupling to high modes and yields locality after inversion.
 
-A negative result is equally discriminating now. On the smooth decomposition-cuff branch it must show that the **actual variable-conductance Schur inverse** fails every sufficiently strong locality budget, or expose another global term outside PF-207--PF-215. PF-214 rules out blaming an intrinsically nonlocal precision, while PF-215 rules out completing the argument with a uniform raw-hopping estimate.
+A negative answer is now more discriminating. On the smooth branch it must exhibit genuine high-mode variational cancellation or failure of the resulting effective inverse transport, rather than infer nonlocality from PF-215's divergent raw cross blocks. On the unsmoothed or true-short-collar branches it must identify a concrete operator-ideal obstruction not already covered by the persisted local estimates.
 
 ## Decisive test
 
-For the smooth interface route, use the canonical PF-205 simultaneous seam cut and PF-214's physical module decomposition. For each source/target metric let
+Let `\mathfrak a[f]=\|f\|^2+\mathfrak k[f]` be the closed positive form associated with `I+K`. For a finite-support low-symmetric vector `x\in P`, define
 
 \[
-K^{(r)}=\Lambda_{Q,r}^{-1/2}\Lambda_{E,r}\Lambda_{Q,r}^{-1/2},
-\qquad
-D^{(r)}=(I+K^{(r)})^{-1},
-\qquad r\in\{g,h\}.
+\mathfrak s_{\rm low}[x]
+:=\inf_{y\in Q\operatorname{Dom}(\mathfrak a)}\mathfrak a[x+y].
 \]
 
-The support identity `Q_mK^{(r)}Q_n=0` for `|m-n|>1` is established, while PF-215 shows the adjacent blocks cannot be uniformly bounded. The decisive smooth-route test is now to do one of the following:
+This form-level shorting is the decisive object and does not assume that unbounded raw blocks of `K` extend boundedly. Whenever a compatible operator-block realization exists it reduces to the usual Schur complement.
 
-1. isolate the low-symmetric compression of the one-pant DtN form and determine its diagonal and cross scales together, producing a variable-conductance Jacobi/Schur model that is quantitatively comparable to the actual normalized form;
-2. prove directly for that scale-dependent block-Jacobi form a weighted Combes--Thomas, Green-kernel, Agmon, or other inverse estimate whose resulting `D^{(r)}` blocks satisfy PF-213's offset budget after the physical `d_n` coefficient is kept on its module;
-3. if such a comparison fails, construct a source-backed lower bound/counterexample showing that the actual `D` violates the PF-213 transport budget, rather than inferring failure merely from the divergent `K` blocks;
-4. bypass blockwise inverse decay with another exact weighted-ideal factorization controlling the same cross-module transport.
+Use the PF-207--PF-212 scale/frequency estimates to prove a tail coercivity inequality
 
-The local analysis must retain the **two-sided symmetric strip sector** that drives PF-215. Bounding the pant DtN form in an unnormalized boundary `L^2` norm, using positivity alone, or estimating only high/antisymmetric modes cannot decide this gate. Equally, the divergent adjacent hopping is not itself evidence that `D` is nonlocal: diagonal/off-diagonal cancellation must be measured before drawing that conclusion.
+\[
+\mathfrak s_{\rm low}[x]\ge c\,\mathfrak m_{\rm PF216}[x]
+\]
 
-As an alternative, attack PF-204 directly and prove a critical theorem for the native two-Hilbert-space product with `P_{F_0}` present. A successful unsmoothed proof may bypass the boundary Schur-complement reassembly entirely.
+for some fixed `c>0`, where `\mathfrak m_{\rm PF216}` retains a quantitative fraction of PF-216's raw mass/conductance form. If this holds, derive a weighted Green-kernel, Agmon, Combes--Thomas, or equivalent inverse estimate for the resulting variable-coefficient effective chain and test its module transport directly against PF-213's summability envelope.
 
-Independently, settle the PF-183 true-short-collar endpoint splice on its disjoint normalized slabs. Generic endpoint rigidity cannot be assumed after PF-192/PF-194; the construction or obstruction must use the actual marked/collar structure and deliver a strong-`L^1`, Lorentz, Orlicz, or equivalent coefficient budget that genuinely feeds the weak operator endpoint.
+If the coercivity inequality fails, construct explicit high-mode boundary data whose minimizing contribution cancels an asymptotically non-negligible fraction of the raw PF-216 floor. Positivity alone, separate high-mode bounds without coupling information, or the size of individual raw blocks cannot decide this gate.
 
-Finally, write one complete first-relative-resolvent identity for a single chosen global identification and verify every term against a persisted sector theorem. Do not combine mutually incompatible smooth and unsmoothed architectures merely to cover missing pieces.
+As alternative work, attack PF-204's native two-Hilbert-space factorization directly at weak `S_1`, or settle the PF-183 conservative true-short-collar splice. A complete success must ultimately write one first-relative-resolvent identity for a single global identification and verify every term against persisted sector estimates; mutually incompatible smooth and unsmoothed architectures cannot simply be combined to cover gaps.
 
 ## Evidence boundary
 
-No full weak-`S_1` theorem is established. PF-213 proves the conditional abstract reassembly theorem; PF-214 proves that the canonical simultaneous exterior precision is nearest-neighbor; PF-215 proves that its simple uniform adjacent-hopping sufficient condition fails strongly on the low symmetric modes. PF-215 does **not** prove that the inverse Schur factor has slow decay or that PF-213's transport criterion fails. The relevant diagonal/cross cancellation and scale-dependent inverse remain uncomputed.
+No full weak-`S_1` theorem is established. PF-216 proves only a raw quadratic-form compression and explicitly does not prove that the low-symmetric sector reduces `K`. Variational elimination of high modes may weaken the growing floor, so PF-213's inverse-decay hypothesis remains open. PF-204's unsmoothed endpoint and PF-183's true-short-collar endpoint are also unresolved.
 
-The unsmoothed PF-204 cotangent-transport endpoint is also still unproved, and either interface route must ultimately be combined with the independent PF-183 true-short-collar endpoint splice.
-
-Clue acceptance therefore means only that the sharp weak-trace classification remains a concrete, evidence-backed research target. It does not imply wave-operator completeness, a scattering matrix, determinant/resonance control, prime/clone separation, or any RH consequence.
+Clue acceptance therefore means only that the sharp weak-trace classification remains a concrete, evidence-backed target. It does not imply wave-operator completeness, a scattering matrix, determinant/resonance control, prime/clone separation, or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`. **PF-215 closes the uniform normalized-hopping sub-branch negatively.** The smooth decomposition-cuff route should now analyze the actual large-conductance block-Jacobi inverse, including diagonal/off-diagonal cancellation, and test the resulting `D` directly against PF-213's weighted transport budget. PF-204 remains the competing unsmoothed route, and the PF-183 true-short-collar splice remains the independent second gate before the complete first relative resolvent can be classified.
+The clue remains `accepted`. PF-215 closed the uniform normalized-hopping sub-branch negatively; PF-216 closes the first compensating-scale question positively by showing a growing raw low-symmetric mass/conductance floor. The next smooth-route gate is now the survival of that floor under high-mode variational elimination, after which inverse locality can be tested at the actual variable scale. PF-204 and the PF-183 true-short-collar splice remain the two independent competing/complementary gates.
