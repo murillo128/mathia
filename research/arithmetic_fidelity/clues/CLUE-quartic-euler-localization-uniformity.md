@@ -46,4 +46,10 @@ AF-200 also rewrites the full normalized Euler discrepancy exactly through the A
 
 `delta (1+t)^11 (2t+1) / (t^3 (3t+1)^5) -> 0`.
 
-The clue is therefore accepted rather than resolved. The live residual is to characterize the weakest natural source-geometry/equicoercivity condition, beyond this sufficient symmetric-family bound, that prevents Peano-carrier escape and is strong enough to transfer the homogeneous quartic optimizer to the full Euler objective over the unrestricted five-node class.
+AF-201 now resolves the observation-side localization topology on any two-sided bounded homogeneous profile `0<q_-<=Q<=q_+<infinity`. For the normalized Peano probability carrier `beta`, uniform transfer of the full finite-band Euler transform to the quartic endpoint model is equivalent to weak concentration `beta => delta_x`. A single real-axis defect
+
+`Lambda_sigma(beta) = 1 - int F_sigma^(4) d beta / F_sigma^(4)(x)`
+
+is equivalent to that weak concentration and gives explicit tail bounds. This is strictly weaker as a topology than requiring convergence of the carrier first moment; AF-200's `Q W_1(beta,delta_x)->0` condition is therefore sufficient but not the intrinsic finite-band requirement.
+
+The clue remains accepted rather than resolved. The live residual has moved to the source side: characterize a natural unrestricted five-knot condition, preferably directly in projective knot geometry or full-Euler sublevel geometry, that forces both a bounded `Q` profile and `Lambda_sigma(beta)->0`. AF-200 shows that source `W_1` alone cannot provide this. Only after that source-side compactness gate is proved can the homogeneous optimizer be transferred to full-Euler minimizing shapes without importing the desired conclusion.
