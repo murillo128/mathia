@@ -2,21 +2,21 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Declare quotient, metric, source complexity, regularity, scale, and observation bandwidth together
+## Declare quotient, source complexity, observation algebra, and bandwidth together
 
-**Linked intuitions:** `MI-007-provenance-must-survive-the-endpoint-quotient`, `MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale`.
+**Linked intuitions:** `MI-007-stable-fidelity-is-distance-from-collision`, `MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale`.
 
-AF-169--AF-177 show that exact finite representation and stable inversion are different questions: after the correct output quotient, local recovery is governed by a source-separation/interpolation modulus rather than by representation completeness alone. AF-180--AF-186 add adaptive positive source clusters whose exact distance stays `W_1=delta` while bounded-band observations become super-algebraically invisible when the derivative budget cannot resolve the growing cancellation order.
+AF-169--AF-188 show that exact sufficiency and stable inversion are different questions. Adaptive positive source clusters can remain exactly separated while derivative-limited observations become super-algebraically close, yet the same controls become visible once the Euler harmonic ladder is resolved. The logarithmic Rayleigh window carries a continuum of algebraic fidelity exponents rather than a binary visible/invisible transition.
 
-AF-187--AF-188 show that this obstruction is not monotone in cancellation order alone. For the actual Euler logarithm, reciprocal vertical bandwidth turns the same high-order parity cluster into a harmonic residue-class filter. Fixed positive `delta T` gives order-one visibility, while the logarithmic window `delta T log(1/delta) -> lambda` has an exact algebraic discrepancy exponent `pi sigma x/lambda` for the calibrated controls.
+AF-189--AF-194 sharpen that scale dependence into an overlap/saddle hierarchy. The finite-overlap theta regime and the growing-overlap saddle agree logarithmically across a wider window than they agree multiplicatively, and AF-193 isolates the first correction parameter `q^4/m^3`: leading theta asymptotics become multiplicatively valid only beyond the sharper `m >> q^(4/3)` scale. A recovery theorem must therefore state not only a nominal resolution scale but the accuracy notion in which adjacent asymptotic descriptions are being identified.
 
-A stable theorem must therefore specify the output quotient and metric together with admissible source-complexity growth, derivative/regularity weight, locality cap, observation bandwidth, and any algebraic/harmonic structure of the kernel. Neither exact infinite-bandwidth sufficiency nor a derivative envelope alone determines the inverse scale.
+The live problem is a source-class lower recovery theorem or kernel-specific converse that matches these exact controls. Neither exact infinite-bandwidth sufficiency, a derivative envelope, nor one leading asymptotic profile determines the inverse scale by itself.
 
-## Compare the associated-function obstruction with kernel-specific harmonic recovery
+## Optimize the geometry of matched controls before treating one stencil as extremal
 
-AF-186 identifies the exact optimized upper envelope for the parity-split finite-difference mechanism under a derivative budget: `exp[-Omega_(M,n_delta)(2/(A_delta delta))]`. It remains the correct first obstruction test when only regularity information is used.
+AF-195 identifies the unique minimal-support signed control annihilating all polynomials below a prescribed order through divided-difference weights. AF-196 and AF-197 then show that the familiar equispaced parity geometry is not extremal once node locations are allowed to vary at fixed Wasserstein separation: already in the first free-node cubic case, and again in the mirror-symmetric quartic family, nonequispaced controls reduce the first surviving moment response.
 
-AF-187--AF-188 provide the necessary counterweight. The Euler harmonic ladder can defeat that low-band invisibility once the band reaches reciprocal separation, and the intermediate logarithmic Rayleigh window carries a continuum of algebraic fidelity exponents rather than a binary visible/invisible transition. The live problem is to derive source-class lower bounds or kernel-specific converse estimates that match these exact controls, rather than promoting the associated-function upper envelope to a universal recovery law.
+Thus moment cancellation order and support size do not determine the strongest recovery obstruction. The source geometry itself is an optimization variable. Future regularity-only lower bounds should either solve the relevant node/weight extremal problem on the admitted source class or state explicitly that the chosen stencil is only a witness, not a sharp barrier.
 
 ## Keep provenance and endpoint sufficiency separate from conditioning
 

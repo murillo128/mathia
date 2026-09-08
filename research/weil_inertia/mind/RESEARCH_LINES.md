@@ -2,30 +2,28 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove diagonal-scale `L^2` cancellation for the bow's actual shifted-prime source
+## Prove source-fixed diagonal-scale `L^2` cancellation for the bow, not an averaged surrogate
 
 **Linked intuition:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-183--WI-194 reduce the count-saturating bow to a von-Mangoldt-weighted Atkinson deformation and close phase-only escapes: the second B-process is involutive, fixed-shift square-root estimates are too weak after absolute assembly below the quarter-bow scale, and the two-variable stationary transform is self-dual without reducing active phase-cell count.
+WI-183--WI-195 reduce the count-saturating bow to an exact von-Mangoldt source problem. After the phase-transform routes are exhausted, WI-195 identifies the decisive representation: with triangular height localization, the full coupled covariance is exactly a multiplicative short-interval `L^2` norm. The hard bow requires cancellation at the diagonal variance scale, not merely a pointwise short-interval approximation.
 
-WI-195 gives a sharper source representation before any B-process. With a triangular height localizer, the full coupled covariance is **exactly a multiplicative short-interval `L^2` norm**. At the difficult bow scale the corresponding intervals are comfortably longer than the `X^(1/3+eta)` range of current almost-all major-arc technology and the Archimedean twist is also admissible. The obstruction is instead norm strength: even an all-interval pointwise bound of size `K log^{-A} X` squares to a scale larger than the required diagonal variance by a polynomial factor.
+WI-196 closes the natural averaging repair. Positivity, the exact height bandwidth, and even an asymptotically diagonal long twist average cannot give a positive lower bound at one distinguished source-fixed center; an explicit band-limited nonnegative square can have the correct long average and still vanish at any prescribed center through diagonal/off-diagonal cancellation. Deep cancellation may be atypical and still occur exactly where the bow asks for it.
 
-The live theorem is therefore a variance estimate of diagonal size, schematically
+WI-197 closes a second black-box repair. Even granting the strongest polynomial one-variable Dirichlet-polynomial input allowed by the published MRSTT Type-II lemma, its existing `W^(-3/10)` variance-transfer surface remains polynomially above the bow's required diagonal scale throughout the hard regime. Improving only the pointwise input and feeding it through the published Type-II module therefore cannot cross the norm gate.
 
-`integral_X^(2X) |sum_(x<n<=x+K) (Lambda(n)-Lambda^sharp(n)) n^(-iU)|^2 dx = o(X K log X)`,
+The live theorem must act on the **distinguished coupled norm itself**: a redesigned Type-II/dispersion/large-value estimate, or another source identity, must expose arithmetic negative off-diagonal correlation at the selected height strongly enough to beat the diagonal scale. Twist averaging and one-variable pointwise improvement are now classified insufficient information channels.
 
-with the actual smooth source weights restored and the structured `Lambda^sharp` contribution controlled in the same Gallagher/Fejér norm. Generic pointwise major-arc approximation is not enough.
+## Keep screening, activation, visibility, resolution, alias geometry, and norm strength separate
 
-## Keep screening, activation, visibility, resolution, alias geometry, and variance strength separate
+A theorem may match the interval length and twist range and still be unusable because its norm is one power of the short interval too large. Likewise a long-average theorem may certify typical behavior while leaving the distinguished source-selected center completely unconstrained.
 
-WI-172--WI-182 show that scalar pressure, finite additive storage, low-rank screening, and source-proximal corrections do not produce a free extensive coercive gain. WI-188--WI-195 then distinguish selected-bow signal, theorem-scale visibility, local stationary resolution, phase alias self-duality, one-dimensional versus joint cancellation, and finally the `L^2` strength required after exact coupling.
-
-A proposed estimate should state which resource it improves. A theorem may match the interval length and twist range and still be unusable because its norm is one power of `K` too large.
+Every proposed estimate should state which resource it improves and how it enters the exact WI-195 positive source identity. Do not infer source-fixed coercivity from average prevalence, phase-space resolution, or a stronger input estimate that is subsequently lost by the transference module.
 
 ## Use the Gallagher bridge before further phase transforms
 
-The exact multiplicative triangular identity is now the most source-faithful representation of the shift family tested so far. Further dispersion, bilinear, large-sieve, spectral, or differencing methods are relevant only if they act on this coupled norm and gain beyond the diagonal scale, not if they merely reparametrize the logarithmic phase.
+The exact multiplicative triangular identity remains the most source-faithful representation of the surviving bow problem. Further dispersion, bilinear, large-sieve, spectral, or differencing methods are relevant only if they act on this coupled norm and gain beyond the diagonal scale, not if they merely reparametrize the logarithmic phase.
 
 ## Keep off-line mass, multiplicity, distinct count, and arithmetic coefficient structure separate
 
-No improvement in one reservoir substitutes for another without a proved bridge. The Atkinson phase is classical; any genuinely new coercivity must come from the shifted von-Mangoldt coefficient and its joint variance or from an independent source relation.
+No improvement in one reservoir substitutes for another without a proved bridge. The Atkinson phase is classical; any genuinely new coercivity must come from the shifted von-Mangoldt coefficient and its joint source-fixed variance or from an independent source relation.
