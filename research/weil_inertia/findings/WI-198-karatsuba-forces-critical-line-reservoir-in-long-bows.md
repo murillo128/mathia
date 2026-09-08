@@ -42,9 +42,15 @@ odd-order critical-line zeros. Apart from the `O(1)` selected endpoint labels th
 \boxed{E_I\gg_\theta m.}
 \]
 
-Consequently a mirror-closed bow with exponent `theta>27/82` cannot be count-saturating in the sense `E_I=o(m)`. In particular the `c_T=4\pi+o(1)` count-saturating bow that drives WI-188--WI-197 is impossible throughout that exponent range.
+Consequently a mirror-closed bow with exponent `theta>27/82` cannot be count-saturating in the sense `E_I=o(m)`. More strongly, retaining the dependence on the bow length in Karatsuba's lower bound forces a **fixed positive spacing gap above `4\pi`**: for each fixed `theta>27/82`, any such source-compatible bounded-scale bow family must satisfy
 
-No simple-critical-zero proportion changes here and RH is not proved. The theorem does not rule out shorter bows, nor does it rule out longer bows accompanied by a positive-density local reservoir. Its durable effect is to identify part of that reservoir unconditionally: above `27/82`, it must contain linearly many odd-order critical-line zeros. Thus the distinguished source-covariance problem remains necessary for the count-saturating bow only in the fixed-power range `0<theta<=27/82`, with the endpoint unresolved by this argument.
+\[
+\boxed{\liminf_{T\to\infty} c_T\ge 4\pi+\delta_\theta}
+\]
+
+for some `\delta_\theta>0`; if Karatsuba's implicit constant is large enough, no bounded-scale family exists at all. In particular the `c_T=4\pi+o(1)` count-saturating bow that drives WI-188--WI-197 is impossible throughout that exponent range.
+
+No simple-critical-zero proportion changes here and RH is not proved. The theorem does not rule out shorter bows, nor does it rule out longer bows accompanied by a sufficiently large positive-density local reservoir. Its durable effect is to identify part of that reservoir unconditionally and quantitatively: above `27/82`, it must contain linearly many odd-order critical-line zeros, and their count prevents even near-saturation at the `4\pi` spacing scale. Thus the distinguished source-covariance problem remains necessary for the count-saturating bow only in the fixed-power range `0<theta<=27/82`, with the endpoint unresolved by this argument.
 
 ## 1. Primary-source theorem: every interval above the Karatsuba exponent contains many critical-line zeros
 
@@ -114,15 +120,15 @@ H_{\rm bow}
 \tag{5}
 \]
 
-The Riemann--von Mangoldt calculation in WI-184 gives
+The Riemann--von Mangoldt calculation in WI-184 gives, uniformly for bounded positive spacing scales,
 
 \[
 N_I
-=\left(\frac{c_T}{2\pi}+o(1)\right)m
+=\left(\frac{c_T}{2\pi}+o(1)\right)m.
 \tag{6}
 \]
 
-when `c_T` tends to a fixed positive scale. Hence source compatibility requires `c_T>=4\pi-o(1)`. If the bow plus mirrors accounts for all but `o(m)` of the local zero count, then
+Hence source compatibility requires `c_T>=4\pi-o(1)`. If the bow plus mirrors accounts for all but `o(m)` of the local zero count, then
 
 \[
 E_I:=N_I-B_I=o(m)
@@ -131,7 +137,7 @@ E_I:=N_I-B_I=o(m)
 
 and necessarily `c_T=4\pi+o(1)`.
 
-The new argument below does not initially assume (7). It first shows that every bow with `theta>27/82` and bounded positive spacing scale has `E_I\gg m` because of critical-line zeros. Count saturation is then an immediate contradiction.
+The new argument below does not initially assume (7). It first shows that every bow with `theta>27/82` and bounded positive spacing scale has `E_I\gg m` because of critical-line zeros. Count saturation is then an immediate contradiction, and retaining the factor `c_T` gives the stronger spacing-gap conclusion.
 
 ## 3. Pack the bow interval by Karatsuba intervals
 
@@ -216,7 +222,7 @@ Since `c_T\asymp1`, this is
 
 The logarithm in Karatsuba's lower bound is load-bearing here: it exactly compensates the `1/\log T` in the physical bow height. A single Karatsuba interval would contribute only `T^a\log T=o(m)`; the contradiction appears only after packing the entire bow span.
 
-## 4. These critical-line zeros are a forced complementary population
+## 4. These critical-line zeros force both excess mass and a spacing gap
 
 All but `O(1)` selected right-half bow labels are off the line, and their compulsory mirrors are off the line as well. Thus the mirror-closed selected bow contains only `O(1)` critical-line zero locations. Equation (14) therefore forces at least
 
@@ -249,6 +255,39 @@ If the bow were count-saturating, WI-184 gives `E_I=o(m)`. Equations (16) and (7
 
 The contradiction does not depend on a numerical lower bound for Karatsuba's constant `c_eta`; any fixed positive constant suffices against `o(m)`.
 
+There is a stronger quantitative consequence that was implicit in (13) but is lost if one immediately replaces `c_T` by `c_T\asymp1`. Fix `theta>27/82` and choose once and for all an `eta>0` with `27/82+eta<theta`. Because the packing covers a `1-o(1)` fraction of the bow and `c_T` stays in a fixed compact subinterval of `(0,\infty)`, Karatsuba's constant yields some `\kappa_\theta>0`, independent of `T`, such that the number `C_I` of complementary odd-order critical-line zero locations satisfies for all sufficiently large `T`
+
+\[
+C_I\ge \kappa_\theta c_T m.
+\]
+
+The mirror-closed selected bow already contributes `2m+O(1)` off-line zero labels. Hence
+
+\[
+N_I\ge 2m+\kappa_\theta c_Tm-o(m).
+\]
+
+Comparing with (6) and dividing by `m` gives
+
+\[
+\frac{c_T}{2\pi}\ge 2+\kappa_\theta c_T+o(1).
+\]
+
+If `\kappa_\theta\ge 1/(2\pi)`, this inequality is impossible for a bounded positive spacing scale once `T` is large, so no such bow family exists. Otherwise every such family obeys
+
+\[
+\boxed{
+\liminf_{T\to\infty}c_T
+\ge
+\frac{4\pi}{1-2\pi\kappa_\theta}
+=4\pi+\delta_\theta,
+\qquad \delta_\theta>0.
+}
+\tag{17a}
+\]
+
+Thus Karatsuba excludes not only exact count saturation but every sequence of long bows whose spacing approaches the Riemann--von Mangoldt mirror threshold `4\pi`. The implicit constant need not be made effective for this structural conclusion: its positivity alone produces a fixed positive gap for each fixed `theta>27/82`.
+
 ## 5. Boundary cases and falsification controls
 
 Several restrictions are essential.
@@ -261,13 +300,13 @@ H_{\rm bow}\asymp\frac{T^{27/82}}{\log T},
 
 which is shorter than `T^{27/82+eta}` for every fixed `eta>0`. No endpoint claim is imported by taking `eta` to zero after `T`.
 
-Second, a bow with fixed spacing `c>4\pi` already has a positive-density excess budget by WI-184. Karatsuba does not rule such a bow out; it says that, when `theta>27/82`, a positive-density part of the local reservoir must consist of odd-order critical-line zeros. This is a structural classification of the complement, not a contradiction unless one also assumes count saturation or another upper bound on the reservoir.
+Second, a bow with fixed spacing `c>4\pi` already has a positive-density excess budget by WI-184, but Karatsuba now imposes the stronger restriction (17a) when `theta>27/82`. Bows with spacing sufficiently above the resulting threshold are not ruled out by this argument; they must carry a positive-density reservoir in which odd-order critical-line zeros contribute a fixed positive fraction. This is a structural classification of the complement, not a contradiction once enough count slack is available.
 
 Third, the almost-all short-interval theorems of Karatsuba and later authors are not used. The argument requires the **every-interval** theorem (1), because the bow location is source-selected. This avoids exactly the exceptional-set problem isolated for other arithmetic inputs in WI-190 and WI-196.
 
-Fourth, the theorem says nothing about simple critical-line zeros specifically. An odd-order zero may have multiplicity greater than one. That distinction is harmless for (16), which needs only extra critical-line zero mass, but it must not be promoted to a simple-zero proportion.
+Fourth, the theorem says nothing about simple critical-line zeros specifically. An odd-order zero may have multiplicity greater than one. That distinction is harmless for (16) and (17a), which need only extra critical-line zero mass, but it must not be promoted to a simple-zero proportion.
 
-Finally, this is not a proof that no off-critical bow-like geometry can occur. It eliminates only the long, locally count-saturating realization that had been used as the hardest sparse cancellation model. Shorter bows and bows embedded in a substantial reservoir remain admissible targets.
+Finally, this is not a proof that no off-critical bow-like geometry can occur. It eliminates only the long, locally count-saturating or near-saturating realizations that had been used as the hardest sparse cancellation model. Shorter bows and bows embedded in a sufficiently substantial reservoir remain admissible targets.
 
 ## 6. Prior-art audit and research redirection
 
@@ -278,7 +317,7 @@ The primary sources checked for this deduction are:
 - Do Duc Tam, **On the zeros of the Riemann zeta function, lying in almost all short intervals of the critical line**, *Chebyshevskii Sbornik* 17:1 (2016), 71--89: secondary confirmation that Karatsuba's `27/82+eta` theorem is the every-interval result, distinct from later almost-all shorter-interval statements.
 - WI-184: line-local exact functional-equation mirror and Riemann--von Mangoldt bookkeeping that turns a one-sided schematic bow into an actual-zeta local count problem.
 
-A bounded search around Maynard--Pratt bows, Karatsuba's short-interval critical-line theorem, and the exponent `27/82` did not locate this particular combination. That absence is not evidence of priority and no priority claim is made. The new durable content is the exact packing implication (13)--(17) for the already-defined `weil_inertia` adversarial geometry.
+A bounded search around Maynard--Pratt bows, Karatsuba's short-interval critical-line theorem, the exponent `27/82`, and the induced spacing threshold did not locate this particular combination. That absence is not evidence of priority and no priority claim is made. The new durable content is the exact packing implication (13)--(17) and its quantitative count consequence (17a) for the already-defined `weil_inertia` adversarial geometry.
 
 This materially narrows several recent route analyses. WI-190's almost-all alias-locus dichotomy changes at `theta=1/3`, but
 
@@ -306,6 +345,6 @@ where a genuine uniform square-root fixed-shift theorem would already be scale-s
 
 ## Research consequence
 
-The bow program should no longer spend arithmetic effort on count-saturating exponents above `27/82`. Classical critical-line occupancy already forbids those configurations after the functional-equation mirror count is imposed. The live RH-facing problem is smaller and sharper: exclude count-saturating bows at exponent at most `27/82`, or prove that any shorter exceptional geometry must still carry a source-controlled critical-line/off-line/multiplicity reservoir that prevents negative inertia from surviving.
+The bow program should no longer spend arithmetic effort on count-saturating exponents above `27/82`, and it should not treat `c_T=4\pi+o(1)` as an admissible near-extremal limit there. Classical critical-line occupancy already forbids those configurations after the functional-equation mirror count is imposed. The live RH-facing problem is smaller and sharper: exclude count-saturating bows at exponent at most `27/82`, or prove that any shorter exceptional geometry must still carry a source-controlled critical-line/off-line/multiplicity reservoir that prevents negative inertia from surviving.
 
-For any future proposed bow countermodel, the first gate should therefore be local critical-line occupancy before the BGSTB prime covariance is opened. If its vertical span contains many Karatsuba-scale subintervals while its selected off-line labels already consume `1-o(1)` of the Riemann--von Mangoldt count, the model is internally inconsistent and should be killed at the zero-count level rather than sent through the more expensive source analysis.
+For any future proposed bow countermodel, the first gate should therefore be local critical-line occupancy before the BGSTB prime covariance is opened. If its vertical span contains many Karatsuba-scale subintervals while its selected off-line labels consume nearly all of the Riemann--von Mangoldt count, the model is internally inconsistent already at the zero-count level; quantitatively, (17a) specifies how much fixed spacing slack the critical-line reservoir must force before the more expensive source analysis is relevant.
