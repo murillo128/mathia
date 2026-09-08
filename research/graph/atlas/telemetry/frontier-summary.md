@@ -14,42 +14,46 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `4d5a26e650c91e898b542253a6f94d67025a2af8` → `b368ebfb1034d11495816c9333c22ef27e690bad` contributes ten episodes:
+The newest source window `70c1067b7f48de9f82c996a45b0f09a7aa59e07e` → `ddedc26dbe0ad29f35641c91e5bc2601f3449107` contributes ten episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `analytic_frontier` | 1 | 0 | 0 | 0 | 1 |
-| `arithmetic_fidelity` | 1 | 0 | 0 | 0 | 1 |
+| `analytic_frontier` | 1 | 1 | 0 | 0 | 0 |
+| `arithmetic_fidelity` | 1 | 1 | 0 | 0 | 0 |
 | `mobius_cancellation` | 1 | 0 | 0 | 0 | 1 |
 | `prime_circle` | 1 | 0 | 1 | 0 | 0 |
-| `prime_flute` | 1 | 0 | 0 | 0 | 1 |
+| `prime_flute` | 1 | 1 | 0 | 0 | 0 |
 | `prime_lattice` | 1 | 0 | 0 | 0 | 1 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |
 | `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
-| `xi_flow` | 1 | 1 | 0 | 0 | 0 |
-| **Total** | **10** | **2** | **2** | **0** | **6** |
+| `xi_flow` | 1 | 0 | 0 | 0 | 1 |
+| **Total** | **10** | **4** | **2** | **0** | **4** |
 
-Analytic Frontier extends the endpoint cascade but then finds a sharper obstruction: explicit source-unsaturated saddle packets survive, and `sqrt(A)` translation clouds defeat every fixed finite saddle-phase jet. Arithmetic Fidelity likewise turns the source optimization into exact Peano-spline geometry only to show that unrestricted quartic mass escape destroys every positive fixed-band Euler recovery modulus at fixed Wasserstein separation.
+Analytic Frontier materially repairs the finite-jet obstruction from the previous window. Uniform Gaussian-profile control now reaches the full same-saddle translation cloud; global near-extremal completion forces same-saddle mirrors into excision, while fixed-separated transverse mirrors require an exponential unsigned source budget. The cheap surviving chamber is correspondingly narrowed to coalescing saddles on the natural `A^{-1/2}` scale.
 
-Möbius Cancellation closes the obvious Bost--Connes topology/regularity continuum: rational-band continuous readouts stay profinite, unrestricted weak/strong closure is target-complete, and raw semigroup commutators are either universal or exclude Möbius under natural decay. Prime Circle instead lands in known classicalization at the first coefficient-transfer level: growing squarefree locality is real, but canonical root-value transport is an exact commuting coboundary.
+Arithmetic Fidelity also moves positively. Weak Peano concentration and its weighted localization defect become the exact fixed-band transfer currency, first for bounded/varying profiles and then for arbitrary fixed order; the larger positive source cone is the classical higher-convex order cone. The earlier quartic mass escape is therefore not merely an obstruction but a guide to the missing source-side coercivity condition.
 
-Prime Flute proves compactness of the exact reciprocal-prime Schur commutator but supplies a matched countermodel showing that qualitative smoothing plus compactness and low rank do not reach weak trace class. Prime Lattice strengthens the temperature-programmability control: even finite-prime positive contractions can approximate arbitrary continuous scalar KMS profiles below the Bost--Connes transition.
+Möbius Cancellation closes the unconditional-magnitude version of the intermediate Bost--Connes commutator route. A single linearly biased control can synchronize the full distinct-prime mixed-commutator hierarchy at common states and match every admissible weighted row magnitude, so a survivor must preserve signs, phases or another genuinely relational coefficient structure. Prime Circle is instead a prior-art/classicalization episode: metric spectrum, nullity, inertia, full transverse spectrum and all-lower-conductor Feshbach response all reduce to cyclotomic, Dirichlet and Ramanujan data.
 
-Visual Exploration is a viable methodological extension. Level-four delay signatures retain cycle order beyond the exact lower-level local-block boundary, and pre-registered finite quantization replaces the generically singleton continuous reassembly control by an exact parameter-free Markov-type conditional null on the quotient. Weil Inertia is classified as prior-art collision because audited published short-interval critical-line and zero-density theorems lower the long-bow cutoff to `1515/4816` without creating a new source mechanism.
+Prime Flute is a viable quantitative repair. Reciprocal-prime jumps and fixed physical high-pass do not remove the raw inverse-seam population, but exact corridor dressing converts it to the compatible `w/s` scale and a full frozen serial Schur inverse preserves that gain up to constants. Prime Lattice moves oppositely: bounded KMS, relative-modular, finite-prime and canonical cyclotomic-corner enlargements remain programmable, product-like or reducible to an lcm join and one-point KMS data.
 
-Weil Positivity closes the direct Gamma/Barnes cohomological repair: smooth calculus is too regular, fractional geometry leaves the order unselected, and Koszul cohomology recovers the Euler-Gamma divisor only by destroying the roughness needed for the reciprocal Fourier floor. Xi Flow is the strongest positive source-specific movement: exact cardinal aliasing and Vinogradov--Korobov control flatten the full `q`-scale Fejer circle for the actual Xi source, eliminating the matched fixed-depth Fejer-well mechanism at every mesh angle while leaving genuinely non-plane-wave Toeplitz concentration open.
+Visual Exploration turns the exact type-class machinery into a cleaner prospective experiment. The first binary and three-bin scalar fourth-order tests land in the conditional null, but the free-Lie calculation isolates a canonical basis-independent three-dimensional area--area commutator projection that can now be frozen before fresh confirmation material is examined. This is classified as methodological extension, not evidence of a zeta-specific effect.
+
+Weil Inertia is a literature-driven repair rather than a new mechanism. Primary-source checking withdraws the unsupported `1515/4816` ordinary-exponent-pair specialization, while a verified current ANTEDB pair yields the corrected and slightly lower source-safe cutoff `3943/12011`; normalized-depth screening still begins at `27/82`. Weil Positivity instead closes the most canonical bounded thermodynamic repairs: critical KMS midpoint, Euler/free-energy and Duhamel/BKM positivity cannot simultaneously preserve the half-density, Mangoldt mass and prime-power weighting/support required by the Weil side.
+
+Xi Flow makes strong positive static progress but the marginal episode is a sharper dynamic barrier. Full q-scale Toeplitz near-isometry is converted into exact Xi-budget equal-weight realization, yet invisible collision controls show that the complete autonomous q-scale prefix remains compatible with an arbitrary positive periodic transition time under only a fixed target-time Toeplitz frame. A surviving transition theorem must force approach to the moment-cone boundary, consume information outside that prefix, or move scale.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **5 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
+Across the retained 20-episode window there are **6 viable extensions**, **4 known-prior-art collisions**, **0 internal duplicates**, and **10 new barriers**. Therefore:
 
-- `FrontierFertilityEpisodes = 25.0%`
-- `BarrierRate = 60.0%`
-- `PriorArtCollisionRate = 15.0%`
+- `FrontierFertilityEpisodes = 30.0%`
+- `BarrierRate = 50.0%`
+- `PriorArtCollisionRate = 20.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The represented frontier remains obstruction-heavy, but the viable episodes are increasingly source- and scale-specific rather than merely broader representations: endpoint packet geometry in the retained prior window, optimized source controls, rough infinite-bath stabilization, and now a usable chronology null plus full-circle Xi Fejer flatness. The dominant negative pattern is that finite-state, scalar, smooth, topologically unrestricted or merely qualitative enrichments repeatedly become programmable controls or lose the arithmetic degree of freedom needed at the destination.
+The represented frontier remains obstruction-heavy, but this window has more genuinely quantitative positive movement than the previous one: full saddle-profile completion, exact Peano localization, dressed weak-trace-compatible corridor transport and a source-independent chronology projection. The dominant negative pattern is still that finite, bounded, scalar or unconditional enlargements become programmable or classical once the destination quotient is applied, while source-specific advances survive only when they preserve the exact scale and relational structure consumed downstream.
 
 These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas. Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.

@@ -29,3 +29,7 @@ derived: true
 - [[research/weil_positivity/findings/WP-205-fractional-extension-geometry-realizes-critical-gamma-bath-but-leaves-infinite-mod-four-ladder|WP-205]]
 - [[research/weil_positivity/findings/WP-206-geometric-oscillator-multiplicity-supplies-reciprocal-floor-but-euler-gamma-forces-dimension-one|WP-206]]
 - [[research/weil_positivity/findings/WP-207-koszul-cohomology-recovers-euler-gamma-only-by-collapsing-barnes-roughness|WP-207]]
+- [[research/weil_positivity/findings/WP-208-ray-singer-grading-of-the-koszul-oscillator-leaves-only-double-barnes-roughness|WP-208]]
+- [[research/weil_positivity/findings/WP-209-bost-connes-critical-kms-midpoint-forces-half-density-but-bounded-correlations-cannot-carry-mangoldt-mass|WP-209]]
+- [[research/weil_positivity/findings/WP-210-critical-kms-one-over-k-repair-is-euler-log-but-thermodynamic-convexity-misweights-prime-powers|WP-210]]
+- [[research/weil_positivity/findings/WP-211-kms-duhamel-canonical-correlation-erases-critical-half-density-and-still-needs-infinite-mangoldt-mass|WP-211]]

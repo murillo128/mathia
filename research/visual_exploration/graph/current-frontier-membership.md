@@ -33,3 +33,8 @@ derived: true
 - [[research/visual_exploration/findings/VIS-097-delay-signature-level-four-cycle-order|VIS-097]]
 - [[research/visual_exploration/findings/VIS-098-exact-local-block-null-degenerate-on-distinct-windows|VIS-098]]
 - [[research/visual_exploration/findings/VIS-099-quantized-local-block-markov-type-null|VIS-099]]
+- [[research/visual_exploration/findings/VIS-100-whittle-quantized-type-class-count-sampler|VIS-100]]
+- [[research/visual_exploration/findings/VIS-101-binary-median-gap-level-four-null|VIS-101]]
+- [[research/visual_exploration/findings/VIS-102-three-bin-training-quantile-gap-level-four-null|VIS-102]]
+- [[research/visual_exploration/findings/VIS-103-degree-four-logsignature-affine-null-equivalence|VIS-103]]
+- [[research/visual_exploration/findings/VIS-104-area-area-commutator-projection|VIS-104]]

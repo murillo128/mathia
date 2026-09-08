@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: b368ebfb1034d11495816c9333c22ef27e690bad
+source_revision: ddedc26dbe0ad29f35641c91e5bc2601f3449107
 derived: true
 ---
 
@@ -46,7 +46,7 @@ Hard-pruned mass remains concentrated in the same five scoped interfaces: ordina
 
 Largest live family masses remain B moments/inertia/statistics (**8.5%**), C explicit-formula/positivity (**8.5%**), H geometric/cohomological/adelic (**6.8%**), A classical analytic localization (**6.5%**), G arithmetic/harmonic (**5.0%**), F equivalent criteria (**4.0%**), and E scattering/dynamical (**3.5%**).
 
-The current source window is mostly a narrowing window. Analytic Frontier moves the sparse fixed-notch escape to a mesoscopic saddle-profile problem; Arithmetic Fidelity exposes unrestricted mass escape beyond local spline optimization; Möbius Cancellation and Prime Lattice close broad Bost--Connes scalar/regularity controls; Prime Flute separates compactness from the weak-trace endpoint; Prime Circle removes the first squarefree coefficient-holonomy mechanism; and Weil Positivity closes the standard Koszul repair of the Gamma/Barnes roughness conflict. Weil Inertia shrinks its hard bow range through audited short-interval literature. Positive movement is concentrated in a usable quantized chronology null for Visual Exploration and Xi-specific full-circle Fejer flatness.
+The current source window is mixed but remains obstruction-heavy. Analytic Frontier turns the prior finite-jet saddle obstruction into quantitative global-completion and transverse-source-budget control; Arithmetic Fidelity identifies the exact weighted Peano localization currency; Prime Flute proves that dressed `w/s` transport survives the first global serial Schur control; and Visual Exploration replaces post-hoc fourth-order coordinate search by a canonical area--area projection after two exact source nulls. Möbius Cancellation, Prime Lattice and Weil Positivity close broad bounded/magnitude/thermodynamic categories, while Xi Flow closes static q-scale admission only to expose a sharper target-time transition nonidentifiability barrier. Prime Circle and Weil Inertia are redirected by explicit classical/prior-art structure.
 
 ## Structural signals
 
@@ -58,13 +58,13 @@ The current source window is mostly a narrowing window. Analytic Frontier moves 
 
 ## Frontier fertility
 
-The newest classifiable source window is `4d5a26e650c91e898b542253a6f94d67025a2af8` → `b368ebfb1034d11495816c9333c22ef27e690bad` and contributes **10** episodes: **2 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **6 new barriers**.
+The newest classifiable source window is `70c1067b7f48de9f82c996a45b0f09a7aa59e07e` → `ddedc26dbe0ad29f35641c91e5bc2601f3449107` and contributes **10** episodes: **4 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **4 new barriers**.
 
-The canonical trailing prospective window in [[research/graph/atlas/telemetry/frontier-events.jsonl|frontier-events.jsonl]] contains **20** episodes: **5 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
+The canonical trailing prospective window in [[research/graph/atlas/telemetry/frontier-events.jsonl|frontier-events.jsonl]] contains **20** episodes: **6 viable extensions**, **4 known-prior-art collisions**, **0 internal duplicates**, and **10 new barriers**. Therefore:
 
-- **FrontierFertilityEpisodes = 25.0%**
-- **BarrierRate = 60.0%**
-- **PriorArtCollisionRate = 15.0%**
+- **FrontierFertilityEpisodes = 30.0%**
+- **BarrierRate = 50.0%**
+- **PriorArtCollisionRate = 20.0%**
 - **InternalDuplicateRate = 0.0%**
 - **InsufficientEvidence = 0**
 
