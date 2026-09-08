@@ -1,6 +1,6 @@
 ---
 name: mathia-visionary-researcher
-description: Run sparse ultra-effort program-level campaigns for genuinely new Riemann-hypothesis attack families, using constructive divergence and controlled mathematical mutation while keeping every scheduled invocation stateless with respect to prior session context.
+description: Run sparse ultra-effort program-level campaigns for new Riemann-hypothesis mechanisms, including new attack families and precise bridges or repairs of existing routes, while keeping every scheduled invocation stateless with respect to prior session context.
 ---
 
 # Mathia Visionary Researcher
@@ -9,12 +9,12 @@ description: Run sparse ultra-effort program-level campaigns for genuinely new R
 
 Use this skill for the recurring or scheduled **Mathia Visionary Researcher** campaign.
 
-The Visionary searches for mathematically precise Riemann-hypothesis attack families not already represented by active research lines, current clues, persisted Mathia knowledge, or known prior art. It is deliberately high-risk and ultra-selective. A successful campaign will normally produce **no repository change**.
+The Visionary searches for mathematically precise new mechanisms for the Riemann-hypothesis program: genuinely different attack families, but also new combinations, bridges, hypothesis repairs, or constructions that could unlock an existing route. Familiar objects or an already active research line do not disqualify a candidate; an already represented mechanism with the same hypotheses and decisive test does. It is deliberately high-risk and ultra-selective. A successful campaign will normally produce **no repository change**.
 
 Role separation is strict:
 
 - the **Master Researcher** maintains program-level synthesis and portfolio direction;
-- the **Visionary Researcher** searches for genuinely different representations, carriers, operations, invariants, proof obligations, or repaired residuals exposed by controlled mutation;
+- the **Visionary Researcher** searches for genuinely different representations, carriers, operations, invariants, proof obligations, or repaired residuals exposed by controlled mutation, including within existing routes;
 - a line-specific **Research Watch** owns primary mathematical findings and decides whether a handed-off clue deserves investigation;
 - **Adversarial Research** reviews persisted findings, not speculative Visionary candidates;
 - **Mind** synthesizes durable intuitions from persisted evidence, not Visionary scratch work.
@@ -32,7 +32,7 @@ Before substantive work, read only:
 
 Do **not** load the Master Researcher, Research Watch, Adversarial Research, or Mind procedural skills merely to understand their outputs. Their persisted repository artifacts are data for this role, not companion procedural authority.
 
-Load `.agents/skills/mathia-research-clues/SKILL.md` **only in phase 6 and only when a clue may actually be created or materially strengthened**. It is then the authority for clue schema, lifecycle, ownership, publication, and notification. The Visionary may create or materially strengthen only `status: proposed` clues with `origin: visionary-researcher`.
+Load `.agents/skills/mathia-research-clues/SKILL.md` **only in phase 6 and only when a clue may actually be created or materially strengthened**. It is then the authority for clue schema, lifecycle, ownership, publication, and notification. The Visionary may create or materially strengthen only `status: proposed` clues. New clues use `origin: visionary-researcher`; strengthening an existing proposed clue preserves its original origin and identity.
 
 ## Cross-invocation epistemic boundary
 
@@ -169,6 +169,18 @@ Phase 1 synchronizes the default branch once and pins `base_main_sha`. That SHA 
 
 Phases 2–5 continue against that frozen snapshot even if `main` advances. Only phase 6 synchronizes current `main` again for publication safety. New evidence may kill or duplicate a surviving candidate/handoff but does not retroactively rewrite phases 1–5.
 
+## Existing-route and complementary campaigns
+
+Free exploration remains legitimate. When a new campaign begins, the Visionary may instead select a precise live difficulty in an existing line, including a complementary investigation proposed in a Master clue. Adopt it only during phase 1, after verifying its canonical basis and unresolved boundary, and record the exact clue path and mathematical question in the existing phase-1 checkpoint. A proposal is optional input, not a dispatch order or evidence of promise.
+
+An active campaign must not be interrupted, retargeted, or have its frozen candidates rewritten to accommodate a later proposal. No additional campaign, task, schedule change, coordinator, or repository tracking artifact is introduced. Reconsider later proposals only when selecting a new campaign.
+
+A complementary approach should do different mathematical work on the same defined obstruction: for example, construct an alternative correction, seek an admissible counterexample to a proposed transfer, or replace a strong hypothesis by a verifiable weaker one. Do not merely duplicate the owning Research Watch's question in different terminology. Identify the candidate construction, exact defect, proposed improvement, and structure that must survive whenever a positive repair is claimed.
+
+Assess novelty at the load-bearing mathematical step, not at the age of the object or whether its line already exists. Combining established results is eligible only when the unresolved bridge, compatibility condition, or consequence is precise and not immediate prior art. An abstract counterexample excludes only implications whose full hypotheses it satisfies; realization in the destination's actual source/geometry remains a separate gate.
+
+The normal six phases, candidate-continuity rules, literature/adversarial gates, and zero-or-one-clue campaign limit remain unchanged. A successful output returns through an ordinary proposed clue; the owning Research Watch alone owns canonical findings and clue dispositions. Neither adoption of a proposal nor clue acceptance is a mathematical success, and an unfinished attempt is not a refutation.
+
 ## Phase 1 — reconstruct state
 
 Synchronize the default branch and reconstruct the current Riemann research state. This is the deliberate full-context exception to ordinary progressive loading.
@@ -191,17 +203,17 @@ For long phase-1 intake, persist a valid in-progress checkpoint before context/t
 
 ## Phase 2 — divergent generation
 
-Starting only from the completed phase-1 snapshot, generate several structurally distinct attack families internally. Use both constructive divergence and controlled mutation; do not elaborate only the first attractive analogy.
+Starting only from the completed phase-1 snapshot, generate several structurally distinct mechanisms internally: new attack families or complementary constructions/repairs for the selected existing-route question. Use both constructive divergence and controlled mutation; do not elaborate only the first attractive analogy.
 
 For controlled mutation, explicitly identify the invalid changed rule/hypothesis, locate the first precise failure, seek the minimal repair, and discard the raw mutation unless the repaired residual can be stated independently with a cheap decisive test. Controlled mutation must never fabricate citations, theorem statements, computations, formal checks, numerical observations, or prior-art claims.
 
-Retain normally 3–6 candidates. Each must specify its exact object/construction, retained information, potential RH-sensitive mechanism, persisted obstruction it aims to evade, cheap decisive test, likely owner/scope, and mutation provenance when applicable.
+Retain normally 3–6 candidates. Each must specify its exact object/construction, retained information, potential RH-sensitive mechanism or precise role in an existing route, persisted obstruction it aims to evade, cheap decisive test, likely owner/scope, and mutation provenance when applicable.
 
 ## Phase 3 — internal collision audit
 
 Attempt to kill phase-2 candidates using Mathia's persisted knowledge at `base_main_sha` before spending external-literature budget.
 
-Inspect only relevant frozen findings/reviews, Mind constraints, program state, clues, prior-art nodes, controls, and no-go results. Reject candidates already represented, already killed, classicalized, constant on a known destructive quotient, contradicted by accepted evidence, merely a rewording of an existing clue, or still dependent on an invalid mutation step.
+Inspect only relevant frozen findings/reviews, Mind constraints, program state, clues, prior-art nodes, controls, and no-go results. Reject candidates whose exact mechanism, hypotheses, and decisive test are already represented or answered, already killed, classicalized, constant on a known destructive quotient, contradicted by accepted evidence, merely a rewording of an existing clue, or still dependent on an invalid mutation step. Do not reject a genuinely new bridge or repair merely because its objects or destination route are already represented.
 
 Every kill needs an explicit mathematical dictionary. Open-review material is unsettled and cannot be used as settled evidence. After a precise kill, perform one bounded salvage check for a distinct falsifiable residual. Keep at most one campaign-level `handoff_question` and at most three candidates for phase 4.
 
@@ -227,7 +239,7 @@ Synchronize current `main` and perform a publication-safety audit against materi
 
 Load `.agents/skills/mathia-research-clues/SKILL.md` only if a clue may actually be created or materially strengthened.
 
-A survivor clue may be published only when the object/mechanism is reconstructible, current state does not already own the same question, literature did not classicalize it, it addresses or lies outside the strongest relevant obstruction, it has a cheap decisive test, it could materially redirect research, uncertainty is explicit, and any controlled false step has been fully quarantined from the valid residual.
+A survivor clue may be published only when the object/mechanism is reconstructible, current state does not already answer or duplicate the exact mechanism/hypotheses/test, literature did not classicalize it, it addresses or lies outside the strongest relevant obstruction, it has a cheap decisive test, it could materially redirect research, uncertainty is explicit, and any controlled false step has been fully quarantined from the valid residual. An existing-route repair uses this same gate. Materially strengthen an existing proposed clue when it owns the same question; do not edit accepted/rejected/resolved dispositions or create a duplicate merely because their owner is already investigating the route.
 
 Even with no survivor, one derived handoff clue may be published only when a killed/narrowed/mutated route exposed a mathematically distinct falsifiable question with clear destination and cheap decisive test. The parent kill remains valid and may not be rhetorically reopened.
 
@@ -239,7 +251,7 @@ Before final issue-body completion and before closing, run the exact write-targe
 
 For an existing line, use `research/<line>/clues/CLUE-<slug>.md`. For genuinely cross-line or possible new-line questions, use `research/clues/CLUE-<slug>.md`.
 
-Use only `origin: visionary-researcher` and `status: proposed`. The campaign issue is control-plane state and must not appear in `based_on` as mathematical evidence.
+Use `status: proposed` only. New clues use `origin: visionary-researcher`; a materially strengthened existing proposed clue keeps its original origin and identity. The campaign issue is control-plane state and must not appear in `based_on` as mathematical evidence.
 
 Repository writes are restricted to those proposed clue paths. The Visionary must not modify findings, reviews, Mind, graph, prior art, line READMEs/SOURCES, code/tests/docs/experiments, `.obsidian/**`, or scheduled tasks.
 
@@ -249,7 +261,7 @@ The Visionary may mutate only the **single exact campaign issue that passes the 
 
 A scheduled Visionary campaign may publish a clue directly to the default branch only in phase 6 when the Visionary gate and shared clue gates pass.
 
-Before publication, refresh current `main`, inspect the complete diff, verify every changed path is authorized, verify every clue remains proposed with Visionary origin, verify a concrete question/decisive test/evidence boundary, verify controlled false steps are quarantined to provenance, and remove unrelated churn.
+Before publication, refresh current `main`, inspect the complete diff, verify every changed path is authorized, verify every clue remains proposed and its origin is correct for creation versus strengthening, verify a concrete question/decisive test/evidence boundary, verify controlled false steps are quarantined to provenance, and remove unrelated churn.
 
 Use commit messages `research(visionary): propose <clue>` or `research(visionary): sharpen <clue>`. If no clue passes, create no commit.
 

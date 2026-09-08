@@ -11,7 +11,7 @@ Use this skill together with `mathia-research-mind`, `mathia-research-graph-cura
 
 A **clue is not a finding, intuition, theorem, novelty claim, review verdict, portfolio recommendation, or accepted research result**. It is a compact, falsifiable research lead suggested by already-persisted repository structure, synthesis, primary research, adversarial friction, formal-to-human proof reconstruction, or program-level cross-line analysis but still requiring the normal Research Watch derivation, stress test, literature check, and evidence gate.
 
-This skill is a narrow extension of the caller skill's path gate for clue files only. All other caller ownership restrictions remain unchanged.
+This skill is a narrow extension of the caller skill's path gate for clue files only, plus the explicit bounded source-reading exception below. All other caller ownership restrictions remain unchanged.
 
 The existing Mind, Graph Curator, Research Watch, Adversarial Research, Master Researcher, and Visionary Researcher clue behavior remains unchanged except where a producer-specific section below explicitly extends it; this skill additionally allows an Independent Reviewer of a Mathia formalization to persist clues exposed by formal-to-human correspondence work.
 
@@ -37,7 +37,7 @@ Do not create a clue directory merely to show that a run happened.
 
 ## Stable identity and deduplication
 
-Use a descriptive deterministic slug rather than a numeric sequence. Before creating a clue, search existing local and global clues for the same mathematical question.
+Use a descriptive deterministic slug rather than a numeric sequence. Before creating a clue, search existing local and global clues for the same mathematical question, within the caller's permitted read scope. A line-local Research Watch does not gain global-inbox access for deduplication; Master/Mind/Graph perform program-level deduplication under their own authority.
 
 Prefer strengthening an existing `proposed` clue with materially better persisted motivation over creating a near-duplicate. Do not merge two clues unless their research question and decisive test are genuinely the same.
 
@@ -81,6 +81,20 @@ What is explicitly NOT established yet and why this remains a clue rather than e
 ```
 
 Do not add dates, run logs, priorities, confidence percentages, owners, schedules, or speculative claims of novelty.
+
+## Bounded source reading and complementary investigation
+
+A local clue with `origin: master-researcher` or `origin: visionary-researcher` may explicitly authorize the destination Research Watch to inspect exact source findings in another line when their arguments are needed for a concrete transfer. `based_on` remains provenance, not an automatic read grant.
+
+Put the permission inside the existing `## Decisive test` as a clearly identified bounded-source-reading instruction. Name the exact source finding paths, any individually identified indispensable proof-dependency files, the mathematical purpose of each, and a source revision when identity is material. Include the corresponding current adjacent `.review.md` sidecars if present so the consumer can distinguish live evidence from unsettled claims. The producer must inspect the load-bearing source material before granting the handoff.
+
+No directory-wide grants, wildcard traversal, source-corpus inventory, recursive reference following, or access to other lines' Mind/graph/clue inboxes is allowed. Dependencies not individually authorized require a strengthened handoff; encountering a citation is not permission to open it. The grant is read-only, destination-specific, and limited to performing that clue's decisive test. It neither expands write ownership nor lets the consumer treat a source-side proof as a proved destination-side transfer.
+
+The consumer must reconstruct the source argument and its hypotheses independently, check current source/review status before relying on it, and state the mathematical dictionary to its own object. If the cited claim has changed, been withdrawn, or is under a material unresolved challenge, do not use the old statement as settled support. If the authorized packet is insufficient, leave a proposed clue proposed and ask for a precise strengthened handoff rather than expanding the scope. A historical revision supplies provenance, not immunity from later counterevidence.
+
+A Master clue may also propose a temporary complementary investigation of one existing-route question. Use the existing `Research question` and `Decisive test` sections to specify the same object, the exact unresolved implication, available hypotheses, and distinct mathematical approaches—for example a sufficient-condition proof versus an admissible counterexample or alternative construction. This is optional mathematical input to a future Visionary campaign and the owning Research Watch, not an assignment, schedule, priority, portfolio command, or new lifecycle. It must not interrupt an active frozen campaign. The Visionary's own skill controls whether to adopt it at the start of a new campaign.
+
+No new clue type, frontmatter field, campaign ledger, or coordinator is introduced. Findings remain with their owning Research Watch; Visionary output remains subject to its one-proposed-clue-per-campaign limit. A proved implication, admissible counterexample, or genuinely new testable reduction can change research; clue adoption/acceptance alone cannot, and an unfinished attempt is not a refutation.
 
 ## Status semantics
 
@@ -126,9 +140,9 @@ When loaded with `mathia-research-graph-curator`, the Curator may emit a clue on
 Examples:
 
 - two branches repeatedly touch the same canonical prior-art node but no finding proves a direct bridge;
+- the graph exposes an isolated frontier component whose missing connection is a precise mathematical question;
 - multiple independent obstruction chains terminate at the same unexplored representation;
-- a cluster of findings/intuitions suggests an untested cross-line equivalence or control;
-- the graph exposes an isolated frontier component whose missing connection is a precise mathematical question.
+- a cluster of findings/intuitions suggests an untested cross-line equivalence or control.
 
 Graph topology, semantic proximity, co-citation, or shared vocabulary alone are not enough. A clue needs explicit persisted source nodes and a falsifiable mathematical question.
 
@@ -149,7 +163,7 @@ Clues do not outrank the watch's own research judgment and do not force work eve
 For each clue actually triaged:
 
 1. verify it belongs to the watch's exact mathematical scope;
-2. reconstruct the question independently from authoritative findings/sources it cites;
+2. reconstruct the question independently from authoritative findings/sources it cites, respecting the caller's read boundary and any explicit bounded source-reading grant above;
 3. run the normal derivation, adversarial stress test, and serious prior-art/novelty check from `mathia-research-watch`;
 4. decide whether the direction deserves continued research;
 5. update only the clue's status/outcome consistently with this skill.
@@ -230,11 +244,12 @@ Good Master clues include:
 
 - an established mechanism in one line may transfer to another and needs an exact test;
 - several lines share one unresolved lemma/estimate/representation that can be attacked directly;
+- a source-grounded existing-route difficulty has distinct constructive and falsifying approaches worth a temporary complementary investigation;
 - an apparent cross-line redundancy needs an equivalence or counterexample before a merge recommendation is safe;
 - a possible `pause-candidate` has one precise unresolved escape route worth killing or validating first;
 - a `new-line-candidate` has a cheap decisive first test that no existing line can honestly own.
 
-The Master must not use clues as project-management commands or encode `continue`, `pause`, `merge`, `split`, or scheduling decisions inside them. A clue remains a mathematical research question.
+The Master must not use clues as project-management commands or encode `continue`, `pause`, `merge`, `split`, or scheduling decisions inside them. A clue remains a mathematical research question. The bounded source-reading and complementary-investigation section above defines the only additional transport permission; it is not authority to do primary mathematics or manage Visionary campaigns.
 
 It may create or materially strengthen only `proposed` clues. It must not change Research Watch disposition states.
 
@@ -246,29 +261,32 @@ When loaded with `mathia-visionary-researcher`, the Visionary may emit **at most
 
 ### Survivor clue
 
-A survivor clue comes from the final attack-family candidate after full current-state/prior-art intake, internal collision audit, broad external literature audit, adversarial kill, and current-main publication audit.
+A survivor clue comes from the final mechanism candidate—new attack family, bridge, combination, or existing-route repair—after full current-state/prior-art intake, internal collision audit, broad external literature audit, adversarial kill, and current-main publication audit.
 
 Good survivor clues include:
 
 - a precise new information carrier that evades a persisted quotient/compression obstruction;
 - an exact operation or dual proof obligation outside the hypotheses of the current no-go results;
 - a structurally faithful transfer from a neighboring field with a complete mathematical dictionary and a cheap decisive test;
+- a new compatibility lemma, hypothesis repair, or alternative construction for an existing route, with an unresolved mathematical step not already owned by the same test;
 - a genuinely distinct `new-line-candidate` whose first experiment can falsify the mechanism before a line is initialized.
+
+Known objects and existing research lines are not automatic duplicates. The exact mechanism, hypotheses, and decisive test determine duplication; immediate combinations of known theorems are not new mechanisms. Strengthen an existing proposed clue rather than duplicate its question, without modifying another producer's origin or any Research Watch disposition.
 
 ### Derived handoff clue
 
-A derived handoff clue may be emitted even when the campaign has **no final surviving attack-family candidate**. It must be a separate falsifiable question exposed by an internal collision, literature narrowing, or adversarial kill and useful to an existing Research Watch or the global program.
+A derived handoff clue may be emitted even when the campaign has **no final surviving mechanism candidate**. It must be a separate falsifiable question exposed by an internal collision, literature narrowing, or adversarial kill and useful to an existing Research Watch or the global program.
 
 A derived handoff clue is valid only when:
 
 - the parent route remains killed/narrowed and is not reopened or rhetorically rebranded;
-- the residual question is mathematically distinct from the failed attack-family claim;
+- the residual question is mathematically distinct from the failed mechanism claim;
 - it has a clear destination and a cheap decisive test/proof obligation;
 - the Visionary deduplicates it against current findings, Mind, Master state, prior-art nodes, and clues;
 - phase 6 performs a bounded targeted literature check sufficient to rule out an obvious known duplicate or immediate classicalization;
 - `## Evidence boundary` explicitly states the killed/narrowed parent boundary and that the handoff itself remains unvalidated.
 
-The derived-handoff gate is intentionally lower than the survivor attack-family gate because the owning Research Watch will perform the ordinary derivation, serious prior-art check, and accept/reject decision. It is **not** permission to persist brainstorm fragments, candidate backlogs, generic future-work sentences, or a weaker restatement of something the Visionary already killed.
+The derived-handoff gate is intentionally lower than the survivor mechanism gate because the owning Research Watch will perform the ordinary derivation, serious prior-art check, and accept/reject decision. It is **not** permission to persist brainstorm fragments, candidate backlogs, generic future-work sentences, or a weaker restatement of something the Visionary already killed.
 
 For either clue form, the Visionary must not persist brainstorming, candidate lists, literature-search logs, or claims of novelty. The clue must state a concrete question/construction, the strongest relevant Mathia obstruction, the exact unresolved residual, and a decisive first test. For survivor clues, include the closest authoritative external literature from the broad audit. For derived handoff clues, include the bounded literature comparison. `based_on` must contain only persisted mathematical/program evidence such as Master/Mind/findings/prior-art/clues; the campaign issue itself is control-plane state and must **not** be cited as evidence. The `Evidence boundary` may describe the parent candidate generically only to explain which failed route exposed the residual question, while grounding the actual mathematical boundary in persisted repository evidence.
 
@@ -362,7 +380,7 @@ research/clues/**
 
 It must not change Research Watch disposition states, create more than one clue in a campaign, persist null results or candidate backlogs, or modify a clue merely to record literature search.
 
-This exception does not grant access to any other caller-forbidden path.
+Apart from the explicit bounded source-reading exception above, this exception does not grant access to any other caller-forbidden path.
 
 ## Publication and no-churn gate
 
@@ -372,8 +390,9 @@ A clue change may share the caller's normal direct-main publication path when al
 - the clue is materially new, materially better grounded, or its Research Watch disposition changed;
 - any adversarial/review-sidecar-derived clue cites the persisted finding/review that motivated it;
 - any independent-review-derived clue cites the authoritative mathematical target and exact formalization/correspondence evidence that motivated it;
-- any Master-derived clue cites the current persisted findings/mind/graph/clues that motivated the cross-line question;
+- any Master-derived clue cites the current persisted findings/mind/graph/clues that motivated the cross-line or complementary question;
 - any Visionary-derived clue cites the current Master/Mind/finding/prior-art basis, states the relevant survivor or killed/narrowed-parent boundary, gives a bounded closest-literature comparison appropriate to the clue type, and includes a decisive first test;
+- any cross-line reading permission is explicit, exact-path, read-only, destination-specific, and necessary for the decisive test;
 - no timestamps/run logs/status noise were added;
 - the source revision remains coherent;
 - the caller's normal diff review and publication gates pass.

@@ -1,6 +1,6 @@
 ---
 name: mathia-master-researcher
-description: Maintain Mathia's current global research-state snapshot, reconcile cross-line structure, assess research-line portfolio direction, hand off source-grounded clues, and conservatively rotate the bounded line-specific Research Watch task portfolio without performing primary mathematics.
+description: Maintain Mathia's current global research-state snapshot, reconcile cross-line structure, assess research-line portfolio direction, hand off source-grounded clues and optional complementary investigations, and conservatively rotate the bounded line-specific Research Watch task portfolio without performing primary mathematics.
 ---
 
 # Mathia Master Researcher
@@ -11,13 +11,13 @@ Use this skill for the recurring or scheduled **Mathia Master Researcher** pass.
 
 The Master Researcher is the program-level research director. It does not own primary mathematical claims. Its job is to maintain a coherent current view of the whole Riemann research program, identify cross-line similarities and differences, detect repeated mechanisms and common obstructions, decide where the existing evidence says attention is being productively spent or wasted, hand concrete research questions back to the owning Research Watch processes, and keep the enabled line-specific Research Watch portfolio concentrated on the most fertile current directions without allowing task count to drift upward merely because more candidate lines exist.
 
-Line-specific Research Watches are intentionally **line-local and cross-line blind**. Consequently, the Master is a primary routing layer for knowledge that one line should learn from another. A useful cross-line observation is not fully handed off merely because it appears in `research/README.md`, Mind, or Graph: when it could materially change a destination line's research and can be stated as a concrete test, the Master should create or strengthen a destination-local `proposed` clue.
+Line-specific Research Watches are intentionally **line-local by default**, with only the explicit bounded source-reading exception carried by a local Master/Visionary clue. Consequently, the Master is a primary routing layer for knowledge that one line should learn from another. A useful cross-line observation is not fully handed off merely because it appears in `research/README.md`, Mind, or Graph: when it could materially change a destination line's research and can be stated as a concrete test, the Master should create or strengthen a destination-local `proposed` clue.
 
 The role has five outputs:
 
 1. maintain one mutable global research snapshot under `research/README.md`;
 2. identify source-grounded cross-line connections, distinctions, bottlenecks, and portfolio-level implications;
-3. **actively route actionable cross-line knowledge** by creating or materially strengthening `proposed` clues through `.agents/skills/mathia-research-clues/SKILL.md` whenever a destination line should test something learned elsewhere;
+3. **actively route actionable cross-line knowledge and optional complementary investigations** by creating or materially strengthening `proposed` clues through `.agents/skills/mathia-research-clues/SKILL.md` whenever a destination line should test something learned elsewhere or a live route merits a distinct constructive/falsifying approach;
 4. recommend `continue`, `narrow`, `merge`, `pause`, `split`, or `new-line-candidate` decisions from current evidence;
 5. when automation-management capability is available, conservatively pause, resume, or create **line-specific Mathia Research Watch tasks only** to implement an evidence-backed portfolio rotation while keeping the number of enabled Research Watches approximately constant.
 
@@ -216,18 +216,30 @@ Several independent obstructions may jointly imply a stronger program-level rest
 
 When an established mechanism, obstruction, invariant, control, theorem bridge, or useful negative result from one line could be tested precisely in another line, **emit or materially strengthen a targeted local clue for the destination line**. Do not assert the transfer before Research Watch validates it.
 
-This handoff is a core Master responsibility, not optional bookkeeping. Research Watches intentionally do not inspect other lines, so a destination line will otherwise never see the potentially relevant discovery. If the Master concludes that a line *should know* something learned elsewhere, mentioning it only in `research/README.md`, Mind, Graph, or the source line is insufficient.
+This handoff is a core Master responsibility, not optional bookkeeping. Research Watches do not browse other lines, so a destination line will otherwise never see the potentially relevant discovery. If the Master concludes that a line *should know* something learned elsewhere, mentioning it only in `research/README.md`, Mind, Graph, or the source line is insufficient.
 
-The clue must be self-contained enough for an isolated destination Research Watch to act without opening the source line. State:
+The clue must explain its motivation and decisive test without requiring general source-line browsing. State:
 
 - the exact established source-side mechanism or obstruction relevant to the transfer;
 - the destination-line analogue or question to test;
 - the cheapest decisive derivation/counterexample/control that would validate or kill the transfer;
 - the evidence boundary separating established source-side mathematics from the unvalidated destination-side hypothesis.
 
-Keep source-line artifact paths in `based_on` for provenance, but do not require the destination watch to traverse them. The Master has already verified the consequential source claim before creating the clue.
+Keep source-line artifact paths in `based_on` for provenance. When examination of the source proof would materially enable the test, add the explicit bounded source-reading instruction defined by `mathia-research-clues`: exact findings, individually named indispensable dependencies, corresponding current review sidecars, and their mathematical purpose. The Master must first inspect these load-bearing sources. Provenance alone never grants traversal, and the destination researcher must reconstruct the argument and validate the transfer independently.
 
 Do not spam clues for mere thematic resemblance. The threshold is **source-grounded + destination-relevant + falsifiable**. When several destination lines need genuinely different tests, use separate local clues; when one unresolved question is inherently shared and cannot honestly be assigned to one existing line, use a global clue.
+
+### Temporary complementary investigation
+
+When canonical evidence exposes a precise, consequential difficulty in an existing route, the Master may propose that the owning Research Watch and a future Visionary campaign explore complementary approaches to that same mathematical question. This is a concentration of mathematical attention through existing roles, not another role, task, schedule, or campaign control plane.
+
+Use one ordinary destination-local proposed clue, or materially strengthen an existing proposed clue with the same question. In its existing sections identify the exact object, first unsupported implication, available hypotheses, and distinct constructive/falsifying approaches. For example, the Research Watch could test a sufficient condition while the Visionary explores an alternative construction or the smallest admissible counterexample. Do not prescribe an unproved answer, fabricate a common bottleneck, or write a portfolio assignment into the clue.
+
+The proposal is optional input. The Visionary may adopt it only when beginning a new campaign under its own skill and freeze it in the normal phase-1 checkpoint; the Master must not edit an active campaign issue, retarget frozen candidates, interrupt a campaign, or claim work has started merely because a clue exists. Research Watch may investigate independently without waiting for the Visionary.
+
+Keep the current task set and frequencies unchanged for this mechanism. Any unrelated portfolio rotation remains subject to the separate task gates below; a complementary proposal never authorizes changing the Visionary or other non-Research-Watch automations. Do not create auxiliary queues, reports, coordinators, or outcome quotas.
+
+Evaluate returned mathematics, not handoff activity: a verified implication, admissible counterexample, or new reduction with an independently testable remaining hypothesis may change the route; adoption, acceptance, and another description of the same obstacle do not. An unfinished attempt is not a refutation. Canonical findings and clue dispositions remain with the owning Research Watch, and independent adversarial review is not replaced by complementary exploration.
 
 ## Research-line assessment
 
@@ -365,26 +377,27 @@ If a pause succeeds but the paired activation fails, attempt to restore the paus
 
 Load `mathia-research-clues` and use it for concrete research work generated by the Master pass.
 
-Before routing a clue, search the destination's canonical findings and clue outcomes for the same object, hypotheses, and decisive test, not just a similar title. If the answer already exists, use it in the synthesis; propose a follow-up only when a precise unresolved difference remains. When strengthening a proposed clue, recheck whether later destination evidence has already answered it. This check belongs here because isolated watches cannot repair a handoff by reading other lines.
+Before routing a clue, search the destination's canonical findings and clue outcomes for the same object, hypotheses, and decisive test, not just a similar title. If the answer already exists, use it in the synthesis; propose a follow-up only when a precise unresolved difference remains. When strengthening a proposed clue, recheck whether later destination evidence has already answered it. This check belongs here because the bounded reading exception does not make destination watches responsible for program-level deduplication.
 
-Because destination Research Watches are cross-line blind, **prefer an explicit clue over an implicit cross-line observation** whenever a source-backed discovery could materially inform another line. A statement in the Master snapshot or graph is program synthesis; it is not a delivery mechanism to the isolated Research Watch.
+Because destination Research Watches do not browse other lines, **prefer an explicit clue over an implicit cross-line observation** whenever a source-backed discovery could materially inform another line. A statement in the Master snapshot or graph is program synthesis; it is not a delivery mechanism to the isolated Research Watch.
 
 Create or materially strengthen a `proposed` clue when:
 
 - a cross-line transfer needs testing;
 - a finding/obstruction in one line changes what another line ought to try, avoid, or falsify;
 - a common bottleneck can be stated as a falsifiable mathematical question;
+- an existing-route difficulty has a source-grounded complementary constructive/falsifying test, under the temporary-investigation gate above;
 - a possible new line needs an initial discriminating test;
 - an apparent redundancy between lines requires an exact equivalence/counterexample before a merge recommendation is safe;
 - a pause recommendation hinges on one decisive unresolved escape route worth testing first.
 
 For every material cross-line connection discovered during a Master pass, ask the **destination-awareness test**:
 
-> If the destination Research Watch never reads the source line, does it still receive enough information to know that this test is worth running?
+> Without browsing the source line, does the destination Research Watch receive enough information to know which concrete test is worth running and, when necessary, exactly which source proof files it is permitted to inspect?
 
 If not, and the connection is source-grounded, destination-relevant, falsifiable, and not already deduplicated, create or strengthen the destination-local clue.
 
-Prefer local clues when an existing line clearly owns the question. Make cross-line local clues self-contained: summarize the exact source-side fact needed as motivation, identify the destination analogue, and give a decisive test. Keep source artifact paths in `based_on` for provenance, while the clue's `Evidence boundary` makes clear that the destination transfer is not established. Use `research/clues/**` only for genuinely cross-line or `new-line-candidate` questions that cannot honestly be assigned to one line.
+Prefer local clues when an existing line clearly owns the question. Make cross-line local clues self-contained in their question and motivation: summarize the exact source-side fact, identify the destination analogue, and give a decisive test. Keep source artifact paths in `based_on` for provenance; add only an explicit exact-path source-reading grant when the proof is needed. The clue's `Evidence boundary` must make clear that the destination transfer is not established. Use `research/clues/**` only for genuinely cross-line or `new-line-candidate` questions that cannot honestly be assigned to one line.
 
 The Master may not set clues to `accepted`, `rejected`, or `resolved`. Research Watch remains the consumer/owner of those dispositions.
 
@@ -477,7 +490,7 @@ Apply the patterns and recommendation criteria in this skill. Use current Atlas 
 
 ### 5. Emit research clues
 
-For every material cross-line connection, perform the destination-awareness test above. Create/strengthen concrete falsifiable clues whenever an isolated destination watch should receive the transfer, and deduplicate against current clues first. Do not suppress a useful handoff merely because the same connection has already been summarized in Master/Mind/Graph state.
+For every material cross-line connection, perform the destination-awareness test above. Create/strengthen concrete falsifiable clues whenever an isolated destination watch should receive the transfer, and deduplicate against current clues first. Do not suppress a useful handoff merely because the same connection has already been summarized in Master/Mind/Graph state. When a precise existing-route difficulty merits complementary work, use the optional temporary-investigation gate rather than creating a new task or retargeting an active Visionary campaign.
 
 ### 6. Apply at most one Research Watch rotation
 
@@ -503,7 +516,8 @@ Before publication verify:
 - no finding, review, mind, graph, prior-art, line README/SOURCES, code, or research-line directory was modified;
 - every clue follows `mathia-research-clues`;
 - every actionable cross-line transfer that an isolated destination watch should know is represented by a destination-local clue, a genuinely shared global clue, or an existing deduplicated clue already carrying the same decisive test;
-- every cross-line local clue is self-contained enough for the destination watch to act without reading the source line;
+- every cross-line local clue explains its question/test and any required source reading has an explicit bounded exact-path grant rather than general browsing permission;
+- any complementary-investigation proposal is mathematically specific and optional, introduces no new task or tracking artifact, and does not mutate or retarget an active Visionary campaign;
 - every pause/merge/new-line proposal gives a reversible evidence-based reason;
 - any scheduled-task mutation affected only an unambiguous line-specific Mathia Research Watch and satisfied the pause/activation/budget gates;
 - no Master/Mind/Graph/Adversary/Visionary or unrelated task was changed;

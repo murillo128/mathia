@@ -107,9 +107,9 @@ The entire README is **read-only to routine Research Watch runs**. Reorientation
 
 ## Hard line-local read boundary
 
-A Research Watch is deliberately **vertically isolated**. Cross-line synthesis and routing belong to the Master Researcher and Research Mind, not to line-specific watches.
+A Research Watch is deliberately **vertically isolated by default**. Program-level cross-line synthesis and routing remain outside line-specific watches. The only cross-line mathematical reading exception is an explicit bounded source-reading grant in a local Master or Visionary clue, governed by `mathia-research-clues` below.
 
-After loading repository-wide procedural authority (`AGENTS.md` and the required skills), the watch's mathematical repository context is restricted to its own line:
+After loading repository-wide procedural authority (`AGENTS.md` and the required skills), the watch's ordinary mathematical repository context is restricted to its own line:
 
 ```text
 research/<line>/README.md
@@ -121,7 +121,7 @@ research/<line>/SOURCES.md
 
 The local `mind/**` is the preferred compact synthesis of already-persisted line knowledge. It is read-only and is not independent evidence: when a live argument materially depends on one of its claims, trace that claim only to canonical findings or authoritative external literature needed for this line.
 
-Do **not** inspect, search, enumerate, or follow references into:
+Except for the exact source files authorized by the bounded exception, do **not** inspect, search, enumerate, or follow references into:
 
 ```text
 research/<other-line>/**
@@ -132,11 +132,13 @@ research/graph/**
 research/prior_art/**
 ```
 
-and do not use another line's README, findings, mind, clues, reviews, SOURCES, or graph state as context/evidence during a Research Watch run. Program-level deduplication, cross-line comparison, and transfer discovery are responsibilities of Master/Mind/Graph roles.
+Do not use another line's README, mind, clues, SOURCES, or graph state as general context. Program-level deduplication, cross-line comparison, and transfer discovery remain responsibilities of Master/Mind/Graph roles; Visionary may develop provisional combinations under its own skill.
 
-Cross-line knowledge reaches a watch through a **local clue** under `research/<line>/clues/**`. A clue may cite another line's persisted artifact in `based_on` for provenance, but that citation is **not permission to traverse the source line**. Treat the transferred statement as unvalidated motivation and test the proposed analogue independently on the destination line's own object, using authoritative external literature when prior art is required. If the clue is not self-contained enough to perform its decisive test without opening another line, leave it `proposed` and let the Master/Mind strengthen the handoff rather than breaking isolation.
+Cross-line knowledge reaches a watch through a **local clue** under `research/<line>/clues/**`. A clue may cite another line's persisted artifact in `based_on` for provenance, but that citation is **not permission to traverse the source line**. For a local clue with `origin: master-researcher` or `origin: visionary-researcher`, an explicit bounded-source-reading instruction in `## Decisive test` may authorize exact source findings, individually named indispensable proof dependencies, and their current adjacent review sidecars. Follow the shared clue skill's exact-path, purpose, current-status, and no-recursive-traversal gates. This is a read-only exception for that test, not general access or a change of research scope.
 
-This read boundary overrides any generic clue/review instruction that would otherwise cause a line-specific watch to follow a repository path into another research line. External literature searches remain allowed and required by the prior-art gate.
+Reconstruct the authorized source argument independently, identify its hypotheses and the dictionary to the destination object, and treat the transfer as unvalidated until it is proved or falsified locally. No source finding, summary, or clue substitutes for the destination proof. If the packet is insufficient, the grant is absent, or a material source claim has been withdrawn/challenged, do not widen access or use stale claims as settled support; leave a proposed clue proposed and request a precise strengthened handoff.
+
+This read boundary, including its explicit bounded exception, overrides any generic clue/review instruction that would otherwise cause unrestricted cross-line traversal. External literature searches remain allowed and required by the prior-art gate. No cross-line write ownership is granted.
 
 ## Load context progressively and incrementally
 
@@ -151,7 +153,7 @@ Before substantive work:
 7. inspect every open local sidecar whose last substantive speaker is `Adversary`; these form the owner's review inbox;
 8. inspect `research/<line>/clues/**` when present, using `mathia-research-clues` for their semantics;
 9. read `research/<line>/SOURCES.md` when relevant;
-10. read only the individual local findings and dependencies needed for the live review, candidate, clue, or local duplication question.
+10. read only the individual local findings and dependencies needed for the live review, candidate, clue, or local duplication question; open cross-line source files only when a local clue passes the bounded source-reading gate.
 
 Prefer **delta discovery over corpus inventory**. A directory listing that may return dozens or hundreds of findings is not an acceptable default context-loading strategy. Use filenames/search/commit history narrowly enough to identify the relevant current frontier, and open full findings only when they become mathematically load-bearing. Full filename inspection remains permitted when a publication gate genuinely requires it, such as allocating a new stable ID or validating a deletion/replacement.
 
@@ -479,15 +481,17 @@ Maintain literature anchors used to support or falsify stored findings. Record s
 
 When `research/<line>/clues/**` exists, use `mathia-research-clues` as the authority for triage and lifecycle.
 
-Research Watch consumes only its **local** clue inbox. It does not inspect `research/clues/**` or another line's clues. Master/Mind are responsible for routing any cross-line knowledge that should reach this watch into a destination-local `proposed` clue.
+Research Watch consumes only its **local** clue inbox. It does not inspect `research/clues/**` or another line's clues. Master/Mind are responsible for routing cross-line knowledge into destination-local clues; a Visionary clue may also provide a targeted transfer under its own publication gates.
 
-For a local clue whose `based_on` includes another research line, keep that source path as provenance only. Do not open the source-line artifact. Validate or falsify the transferred mechanism independently against the destination line's own construction and authoritative external literature.
+For a local clue whose `based_on` includes another research line, keep that path as provenance unless the clue has the explicit Master/Visionary bounded source-reading grant defined above and in `mathia-research-clues`. Open only the authorized findings, named indispensable dependencies, and current adjacent review sidecars for that decisive test. Validate or falsify the transfer independently against the destination line's own construction and authoritative external literature.
+
+A complementary-investigation proposal does not force work, replace the line mandate, or bypass review inbox precedence. The watch may pursue its own side of the stated mathematical question without waiting for or polling the Visionary; provisional results from the other approach return as clues and require normal independent triage. Canonical findings and local clue dispositions remain with this watch.
 
 Research Watch may create a clue when primary research or a review response exposes a promising question that is not yet a finding. Keep clues explicitly below the evidence threshold.
 
 A clue created by `mathia-compute-executor` is likewise only a proposed research lead. Reconstruct its computational claim independently, respect its exact/numerical/bounded-search evidence boundary, and apply the normal Research Watch derivation, adversarial stress test, and prior-art gate before changing its status or creating a finding.
 
-Global/cross-line clue **creation** is permitted only as defined by `mathia-research-clues` and should be genuinely cross-line. This output permission does not grant permission to read the global clue inbox or another research line.
+Global/cross-line clue **creation** is permitted only as defined by `mathia-research-clues` and should be genuinely cross-line. This output permission does not grant permission to read the global clue inbox or another research line beyond a separately valid bounded source-reading grant.
 
 ## Ownership and hard path gate
 
