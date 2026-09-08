@@ -1,0 +1,362 @@
+# MC-153 — Every fixed-depth mixed prime-commutator norm hierarchy is parity-blind
+
+**Status:** `EXACT-DERIVED`, `NEGATIVE/OBSTRUCTION`, `PRIOR-ART-AUDITED`, `NO-NOVELTY-CLAIM`.
+
+## Claim
+
+Continue in the canonical number-state representation of `MC-149`–`MC-152`,
+
+\[
+\mathcal H=\ell^2(\mathbb N),
+\qquad
+S_p\varepsilon_k=\varepsilon_{pk},
+\qquad
+D_a\varepsilon_k=a_k\varepsilon_k,
+\]
+
+with `p` prime and `a=(a_k)` bounded. `MC-152` showed that splitting the first commutator by the canonical divisibility projection `P_p=S_pS_p^*` still loses the iterated parity coherence of Möbius after separate operator norms are taken. The next source-forced repair is to retain several distinct prime dilations simultaneously before scalarization.
+
+For a nonempty finite set `F` of distinct primes, write
+
+\[
+P_F:=\prod_{p\in F}p
+\]
+
+and define the mixed commutator
+
+\[
+C_F(a):=\operatorname{ad}_{S_{p_r}}\cdots
+\operatorname{ad}_{S_{p_1}}(D_a),
+\qquad
+\operatorname{ad}_{S_p}(T):=[T,S_p],
+\tag{1}
+\]
+
+where `F={p_1,\ldots,p_r}`. Since the `S_p` commute, the operator is independent of the order chosen for `F`. It is exactly the mixed multiplicative finite difference
+
+\[
+C_F(a)\varepsilon_k
+=
+\Delta_F a(k)\,\varepsilon_{P_Fk},
+\tag{2}
+\]
+
+with
+
+\[
+\Delta_F a(k)
+=
+\sum_{E\subseteq F}
+(-1)^{|F|-|E|}
+ a\!\left(k\prod_{p\in E}p\right).
+\tag{3}
+\]
+
+Consequently
+
+\[
+\|C_F(a)\|
+=
+\sup_{k\ge1}|\Delta_F a(k)|
+\le 2^{|F|}\|a\|_\infty.
+\tag{4}
+\]
+
+For the Möbius function the anchored state `\varepsilon_1` saturates `(4)` in **every** distinct-prime direction:
+
+\[
+\Delta_F\mu(1)
+=(-1)^{|F|}2^{|F|},
+\qquad
+\boxed{\|C_F(\mu)\|=2^{|F|}.}
+\tag{5}
+\]
+
+The finite-depth hierarchy nevertheless does not select Möbius cancellation. Fix any integer `R\ge1` and define the support-matched parity-truncated sequence
+
+\[
+b_R(n)=
+\begin{cases}
+0,&n\text{ is not squarefree},\\
+(-1)^{\Omega(n)},&n\text{ is squarefree and }\Omega(n)\le R,\\
+(-1)^R,&n\text{ is squarefree and }\Omega(n)>R,
+\end{cases}
+\tag{6}
+\]
+
+where `\Omega(n)` denotes the number of prime factors for squarefree `n`. Thus `b_R` agrees with Möbius on every squarefree integer having at most `R` prime factors and then freezes the sign instead of continuing the parity alternation.
+
+For every `F` with `1\le |F|\le R`, all subset products appearing in `(3)` have at most `R` prime factors, so
+
+\[
+\Delta_F b_R(1)=\Delta_F\mu(1).
+\]
+
+Together with `(4)` this gives the exact matched norm identity
+
+\[
+\boxed{
+\|C_F(b_R)\|
+=
+\|C_F(\mu)\|
+=2^{|F|}
+\qquad(1\le |F|\le R).
+}
+\tag{7}
+\]
+
+More strongly, this matching survives **every scalar weighting and every external `\ell^q` aggregation of the complete depth-`R` family**. Let
+
+\[
+\mathfrak F_R=
+\{F\subset\mathbb P:1\le |F|\le R,\ F\text{ finite}\}
+\]
+
+and for arbitrary weights `(w_F)_{F\in\mathfrak F_R}` define
+
+\[
+\mathcal R_{R,w,q}(a)\xi
+=
+\bigl(w_F C_F(a)\xi\bigr)_{F\in\mathfrak F_R}
+\in
+\ell^q(\mathfrak F_R;\mathcal H),
+\qquad 1\le q\le\infty.
+\tag{8}
+\]
+
+Then, with the usual extended-value convention,
+
+\[
+\boxed{
+\|\mathcal R_{R,w,q}(\mu)\|
+=
+\|\mathcal R_{R,w,q}(b_R)\|
+=
+\left\|\bigl(2^{|F|}w_F\bigr)_{F\in\mathfrak F_R}\right\|_{\ell^q}.
+}
+\tag{9}
+\]
+
+Yet `b_R` has linear, not Mertens-scale, summatory bias. If
+
+\[
+B_R(x):=\sum_{n\le x}b_R(n),
+\qquad
+Q(x):=\sum_{n\le x}\mu(n)^2,
+\]
+
+then
+
+\[
+\boxed{
+B_R(x)
+=(-1)^R\frac{6}{\pi^2}x+o(x).
+}
+\tag{10}
+\]
+
+Thus **every fixed finite depth of canonical mixed prime commutators, even when all distinct-prime directions through that depth are retained before arbitrary scalar row weighting, is compatible with a support-matched sequence having linear mean**. The hierarchy can read the first `R` layers of the prime-factor parity ladder perfectly and still miss what happens after that depth.
+
+This closes the most direct finite-order cross-dilation repair left by `MC-152`. A surviving Bost--Connes/semigroup route must use genuinely unbounded-depth, state-relational, non-scalar, twisted, or otherwise nonlocal information; and it must still show that the retained structure is cheaper than reconstructing Möbius parity itself.
+
+## 1. Iterated commutators are mixed multiplicative finite differences
+
+For one prime, `MC-149` gives
+
+\[
+[D_a,S_p]\varepsilon_k=(a_{pk}-a_k)\varepsilon_{pk}.
+\tag{11}
+\]
+
+For distinct primes `p,q`, applying another commutator gives
+
+\[
+[[D_a,S_p],S_q]\varepsilon_k
+=
+(a_{pqk}-a_{pk}-a_{qk}+a_k)\varepsilon_{pqk}.
+\tag{12}
+\]
+
+Inductively, each additional commutator replaces the current coefficient `f(k)` by `f(pk)-f(k)`. Expanding those commuting difference operators gives `(2)`–`(3)`. Since the output map `k\mapsto P_Fk` is injective, the output basis vectors are orthogonal as `k` varies, so the operator norm is the coefficient supremum. The triangle inequality yields `(4)`.
+
+This is the exact operator analogue of a Boolean mixed finite difference on the multiplicative cube generated by the primes in `F`; no spectral interpretation is needed for the calculation.
+
+## 2. Möbius saturates every distinct-prime mixed direction at the anchor
+
+For every subset `E\subseteq F`, the squarefree product
+
+\[
+P_E:=\prod_{p\in E}p
+\]
+
+satisfies
+
+\[
+\mu(P_E)=(-1)^{|E|}.
+\]
+
+Substitution into `(3)` at `k=1` gives
+
+\[
+\begin{aligned}
+\Delta_F\mu(1)
+&=
+\sum_{E\subseteq F}
+(-1)^{|F|-|E|}(-1)^{|E|}\\
+&=
+(-1)^{|F|}\sum_{E\subseteq F}1\\
+&=
+(-1)^{|F|}2^{|F|}.
+\end{aligned}
+\tag{13}
+\]
+
+The universal bound `(4)` with `\|\mu\|_\infty=1` is therefore attained, proving `(5)`.
+
+The important point is simultaneous saturation. For a fixed depth budget `R`, the single state `\varepsilon_1` realizes the maximal coefficient for every `F\in\mathfrak F_R`. That makes arbitrary external weighting easy to classify exactly rather than only coordinatewise.
+
+## 3. A finite-depth parity truncation matches the whole hierarchy
+
+The control `(6)` has
+
+\[
+|b_R(n)|=\mu(n)^2
+\tag{14}
+\]
+
+and agrees with `\mu` on all squarefree `n` with `\Omega(n)\le R`. In particular it agrees at `1`, on every prime, and on every subset product `P_E` associated with a set `F` of size at most `R`.
+
+Hence for such `F`, the anchored mixed difference uses identical values term by term:
+
+\[
+\Delta_F b_R(1)=\Delta_F\mu(1)=(-1)^{|F|}2^{|F|}.
+\tag{15}
+\]
+
+Since `\|b_R\|_\infty=1`, equation `(4)` is also an upper bound for `b_R`, so `(15)` proves `(7)`.
+
+This generalizes the matched-control mechanism in `MC-152`. The control used there is exactly the depth-two case `b_2`: it agrees with Möbius at `1`, at primes, and at semiprime squarefree products, while all higher squarefree parity is flattened to `+1`. The present result shows that increasing the commutator depth to any **fixed** `R` merely pushes the same blindness boundary outward by `R` prime factors.
+
+## 4. Scalar row aggregation cannot recover what finite depth forgot
+
+For finite `q`, equation `(4)` gives for every bounded `a`
+
+\[
+\|\mathcal R_{R,w,q}(a)\xi\|^q
+\le
+\|a\|_\infty^q\|\xi\|_2^q
+\sum_{F\in\mathfrak F_R}2^{q|F|}|w_F|^q.
+\tag{16}
+\]
+
+The analogous supremum bound holds at `q=\infty`. Thus
+
+\[
+\|\mathcal R_{R,w,q}(a)\|
+\le
+\|a\|_\infty
+\left\|\bigl(2^{|F|}w_F\bigr)_F\right\|_q.
+\tag{17}
+\]
+
+For `a=\mu` or `a=b_R`, evaluate at `\varepsilon_1`. By `(13)` and `(15)`, every coordinate has norm `2^{|F|}|w_F|`, so the right-hand side of `(17)` is attained exactly. This proves `(9)` and also shows that boundedness of either row is governed solely by the externally selected scalar weight budget
+
+\[
+(2^{|F|}w_F)_{F\in\mathfrak F_R}\in\ell^q.
+\tag{18}
+\]
+
+No choice of scalar weights can repair the finite-depth loss once the operator family is reduced to this row norm.
+
+## 5. The matched control has linear summatory bias
+
+Away from squarefree integers with at most `R` prime factors, `(6)` is simply the constant-sign squarefree sequence
+
+\[
+b_R(n)=(-1)^R\mu(n)^2.
+\tag{19}
+\]
+
+It remains only to show that the exceptional set
+
+\[
+\mathcal E_R(x)=\{n\le x:n\text{ squarefree},\ \Omega(n)\le R\}
+\tag{20}
+\]
+
+has size `o(x)`. This can be proved without a Sathe--Selberg asymptotic.
+
+Fix `y` and let
+
+\[
+N_y(n)=\sum_{p\le y}\mathbf 1_{p\mid n}.
+\tag{21}
+\]
+
+For uniformly distributed `1\le n\le x`, with `y` fixed while `x\to\infty`, elementary divisibility counting gives
+
+\[
+\mathbb E N_y(n)\longrightarrow
+A_y:=\sum_{p\le y}\frac1p,
+\tag{22}
+\]
+
+and, because distinct fixed prime divisibility indicators asymptotically factor,
+
+\[
+\operatorname{Var}(N_y(n))
+\longrightarrow
+\sum_{p\le y}\left(\frac1p-\frac1{p^2}\right)
+\le A_y.
+\tag{23}
+\]
+
+Every `n` in `(20)` has `N_y(n)\le R`. For `A_y>R`, Chebyshev therefore gives
+
+\[
+\limsup_{x\to\infty}
+\frac{|\mathcal E_R(x)|}{x}
+\le
+\frac{A_y}{(A_y-R)^2}.
+\tag{24}
+\]
+
+The classical reciprocal-prime divergence `A_y\to\infty` (anchored in `MC-S6`) sends the right-hand side to zero. Hence
+
+\[
+|\mathcal E_R(x)|=o(x).
+\tag{25}
+\]
+
+The squarefree-counting asymptotic in `MC-S12` gives
+
+\[
+Q(x)=\frac6{\pi^2}x+o(x).
+\tag{26}
+\]
+
+Equations `(19)`, `(25)`, and `(26)` prove `(10)`. In particular the matched control does not merely miss an RH-scale exponent: its partial sums have nonzero linear density.
+
+## 6. Prior-art and novelty assessment
+
+The Bost--Connes system, the canonical number-state semigroup representation, and its prime isometries are established prior art already audited in `MC-138`–`MC-152`. `MC-149` also records the semigroup crossed-product boundary and the nearby twisted-spectral-triple literature. The present operator identity `(2)` is an elementary iterated-commutator/mixed-finite-difference calculation, not a claim that mixed differences themselves are new.
+
+A fresh targeted literature search for Bost--Connes iterated semigroup commutators, mixed prime finite differences, and Möbius did not locate an established result with the exact finite-depth matched-control classification `(7)`–`(10)`. That absence is **not** used as novelty evidence. The finding is retained because the exact calculation closes a live line-specific escape from `MC-152`, not because the underlying operator or finite-difference vocabulary is new.
+
+The only asymptotic ingredients in the matched-control bias are classical: divergence of the reciprocal-prime sum (`MC-S6`) and squarefree density (`MC-S12`). No zero-free region, analytic continuation of `1/\zeta`, or RH-equivalent input enters the obstruction.
+
+## Boundaries and falsification tests
+
+- **Fixed finite depth only.** For each `R` the control `b_R` depends on `R`. The theorem does not produce one fixed sequence matching the entire infinite hierarchy. A depth growing without bound with the arithmetic scale is outside the claim.
+- **Distinct-prime directions only.** The hierarchy uses squarefree prime subsets. Repeated-prime commutators probe squareful directions and require separate analysis; they cannot invalidate `(7)` for the distinct-prime family actually classified here.
+- **Norm scalarization matters.** The exact operator families for `\mu` and `b_R` need not coincide. Matrix coefficients, joint state distributions, products that preserve where extrema occur, or non-scalar kernels may distinguish them.
+- **The control is not multiplicative.** The result falsifies implications based only on the bounded-depth represented commutator-norm data. Exact squarefree support, prime value `-1`, and full multiplicativity already determine Möbius, so a mechanism invoking that full package must still demonstrate a non-tautological compression of the cancellation problem.
+- **Unbounded depth risks reconstruction.** Since the Möbius sign on a squarefree integer is exactly the parity of its number of prime factors, a proposed all-depth hierarchy must be audited for whether it has merely encoded the complete parity ladder rather than produced a cheaper source-to-amplitude theorem.
+- **No probabilistic assumption.** The control and all norm equalities are deterministic and exact; the linear bias follows from classical density estimates.
+- **No Mertens or RH consequence.** The theorem is an obstruction on one noncommutative representation-level selector. It supplies neither a new Mertens estimate nor evidence for or against RH.
+
+## Consequence for the line
+
+`MC-152` showed that one-prime state splitting followed by separate row norms sees some arithmetic structure but not iterated parity. The natural response — retain all mixed distinct-prime commutators up to a larger fixed order — now has an exact ceiling: **for every finite depth, a support-matched parity-truncated sequence reproduces the entire scalar-weighted norm hierarchy while having linear mean**.
+
+The Bost--Connes transverse frontier is therefore narrower. More finite-order norm tests are not useful merely because the order is larger. A surviving construction must either let the effective relational depth grow in a quantitatively controlled way, retain non-scalar/state-resolved information that the norms erase, introduce a genuinely twisted or crossed-product phase relation, or leave this representation family. Any such proposal still faces the line's central transfer question: why should the retained source information force first-absolute Mertens excursion below the square-root boundary without reconstructing the target itself?
