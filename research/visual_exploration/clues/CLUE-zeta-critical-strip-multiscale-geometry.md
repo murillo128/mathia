@@ -27,6 +27,7 @@ based_on:
   - research/visual_exploration/findings/VIS-102-three-bin-training-quantile-gap-level-four-null.md
   - research/visual_exploration/findings/VIS-103-degree-four-logsignature-affine-null-equivalence.md
   - research/visual_exploration/findings/VIS-104-area-area-commutator-projection.md
+  - research/visual_exploration/findings/VIS-105-next-block-area-area-commutator-null.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -38,64 +39,58 @@ The visual-exploration line has progressively closed several attractive channels
 
 The delay-geometry branch gives a sharper information hierarchy. `VIS-093` through `VIS-096` show that ordinary fixed-window persistence, static delay graphs, and unaugmented delay-path signatures through level three are determined by increasingly local block inventories; planar level four is also locally determined. `VIS-097` proves the first genuine escape: in three delay dimensions, level four can distinguish different Eulerian assemblies of the same length-four-block inventory through an exact area-area commutator. Thus level four can carry chronology in principle.
 
-`VIS-098` through `VIS-100` then make the source-specific null exact. Exact real-valued block reassembly is generically degenerate, but after a fixed finite quantization the complete quantized length-four-block table is an order-three Markov type. Conditional on that table and the initial triple, every compatible word has the same probability under every homogeneous order-three Markov chain. Whittle's formula gives the exact type-class cardinality and completion counts give exact uniform sampling.
+`VIS-098` through `VIS-100` make the source-specific null exact. Exact real-valued block reassembly is generically degenerate, but after a fixed finite quantization the complete quantized length-four-block table is an order-three Markov type. Conditional on that table and the initial triple, every compatible word has the same probability under every homogeneous order-three Markov chain. Whittle's formula gives the exact type-class cardinality and completion counts give exact uniform sampling.
 
-The first two frozen low-zero source tests are both negative. `VIS-101` uses a binary median quantizer trained on `g_1,...,g_70`, the untouched block `g_71,...,g_106`, and the pre-existing coordinate `S^4_(1,2,1,3)`; its exact conditional tail probability is `493/750`. `VIS-102` changes only the information carrier to three nearly balanced training-defined bins, producing an exact type class of size `1752`, yet the same coordinate is even more central: `p=209/219`.
+The first two low-zero source tests were negative on `g_71,...,g_106`: `VIS-101` gave exact `p=493/750` under a binary training-median quotient, and `VIS-102` gave `p=209/219` under a balanced ternary training-defined quotient for the same pre-existing word coordinate. `VIS-103` then proved that applying that same functional to degree-four log-signature instead of signature is only a fixed translation on each exact type class.
 
-`VIS-103` closes a representation-only rescue: on every exact Markov type, the local-block inventory fixes signature levels one through three, so degree-four log-signature is a fixed translation of degree-four signature. Applying the same functional before and after the tensor logarithm therefore cannot change a centered exact-null test.
-
-`VIS-104` now removes the open-ended coordinate-selection step. The area-area mechanism of `VIS-097` generates a canonical three-dimensional degree-four subspace `C_AA=[L_2,L_2]`. Its orthogonal projection `P_AA` is coordinate-covariant and its norm is invariant under orthogonal changes of the three-delay coordinates. The old `(1,2,1,3)` statistic sees only one component of this channel on the explicit `VIS-097` collision; the full projection is algebraically different from that scalar.
-
-The live issue is therefore no longer which fourth-order word coordinate to try. There is now a pre-registration-ready low-dimensional carrier directly selected by the exact chronology mechanism. The unresolved question is whether that carrier has nondegenerate variation under a fresh exact Markov-type null and, if so, whether a fresh zeta-zero block is unusual within it.
-
-## Research question
-
-On a new untouched zeta-zero confirmation window or height regime, does the pre-frozen area-area commutator projection from `VIS-104` retain chronology beyond the exact quantized order-three Markov-type null?
-
-Use the three-delay degree-four log-signature and the canonical orthogonal projector `P_AA` onto `C_AA=[L_2,L_2]`. The primary scalar statistic is fixed in advance as
+`VIS-104` removed the remaining open-ended coordinate search by selecting the canonical three-dimensional area-area subspace `C_AA=[L_2,L_2]`, its orthogonal projector `P_AA`, and the basis-independent squared statistic
 
 `T_AA(X)=||P_AA ell_4(X)-E_null[P_AA ell_4]||^2`.
 
-The next test must not reuse `g_71,...,g_106` as purported confirmation: the choice of this statistic is informed by `VIS-101`--`VIS-104`. It must move to fresh source material and freeze the source window or height regime, unfolding convention, delay coordinates, endpoint treatment, finite quantizer, and symbol embedding before inspecting the new residual.
+`VIS-105` has now executed the resulting fresh-source test on the deterministic next disjoint block `g_107,...,g_142`, keeping the ternary quantizer, embedding, delay construction, exact Markov-type null, and `T_AA` fixed. The fresh class is genuinely nondegenerate: `W=416` and `P_AA` takes `114` distinct projected values. Nevertheless the observed statistic has exact upper-tail probability
 
-If a residual survives, does it also survive independently fixed nearby representation choices and matched non-arithmetic source controls strongly enough to distinguish quotient-specific chronology from generic longer memory, nonstationarity, or finite-size random-matrix structure?
+`p=183/416=0.439903846...`.
 
-The broader visual question remains open: after the classified analytic, spacing, persistence, finite-memory, and low-signature quotients, is there any mesoscopic or nonlocal geometry of the zeta zero configuration that survives appropriately matched source controls in a statement meaningful without the rendering?
+Thus the first pre-frozen fresh-source area-area test is also negative. The chronology carrier exists mathematically and survives the exact local-block quotient, but it has not produced evidence that this zeta-zero block is unusual within that quotient.
+
+## Research question
+
+After the negative fresh `P_AA` test, is there any **predeclared source scale or materially different nonlocal information carrier** whose residual survives an exact lower-information null and then survives the appropriate non-arithmetic source controls?
+
+For the existing area-area route, the next admissible question is no longer “does another convenient window look unusual?”. If `P_AA` is pursued further, freeze a family of disjoint zero windows or a height regime, the quantizer/embedding, and a combined or family-wise decision rule before inspecting those new residuals. The purpose would be to test replication or scale behavior rather than perform sequential one-window search.
+
+A genuinely different visual/multiscale route remains admissible when its metric, filtration, transformation, or information carrier is specified independently and its apparent structure can be translated into a falsifiable statement beyond the lower-order objects already classified here.
 
 ## Why it may matter
 
-`VIS-097` identifies a real nonlocal degree of freedom: ordered interaction between nonparallel local area modes. `VIS-099` and `VIS-100` turn that degree of freedom into an exact finite conditional experiment after quantization, with no model-parameter fitting or approximate reassembly required.
+`VIS-097` through `VIS-105` now separate four questions that are easy to conflate: whether a representation can remember chronology in principle; whether that information survives a precisely stated local quotient; whether a frozen zeta source instance is unusual under the quotient; and whether any surviving residual is arithmetic-specific rather than generic spectral memory.
 
-`VIS-101` and `VIS-102` show that generic chronology capacity is not enough. `VIS-103` removes a same-functional signature-to-log-signature substitution as a distinct test. `VIS-104` then converts the surviving structural mechanism into one canonical three-dimensional projection, avoiding post-hoc search across fourth-order tensor coordinates. Its centered norm gives a single basis-independent scalar decision rule.
+The first two are answered positively for the area-area channel: level four can encode assembly order and the fresh ternary exact type class leaves `P_AA` nondegenerate. The third has so far answered negatively on the first clean fresh block. The fourth has therefore not yet been reached; finite-size CUE and finite-height arithmetic controls remain mandatory before any arithmetic interpretation of a future positive conditional residual.
 
-This keeps three notions separate: generic chronology capacity, chronology beyond a specified finite local quotient, and arithmetic/source specificity. A future separation from the conditioned Markov-type null would establish only the middle statement. Arithmetic interpretation would still require relevant non-arithmetic spectral/source controls.
+The broader visual question remains open because the line has classified many representation-induced textures without classifying every possible mesoscopic or nonlocal observable of the zero configuration. The useful frontier is increasingly an information-design problem: retain structure not forced by the chosen coordinates or local inventory, then demand a source-specific control that could actually falsify the interpretation.
 
 ## Decisive test
 
-Choose the next source design **before inspecting its confirmation residual**. Freeze the new source window or height regime, unfolding convention, delay coordinates, endpoint treatment, finite quantizer and symbol embedding. The degree-four statistic is already fixed by `VIS-104`: use `P_AA` and the exact-null centered squared norm `T_AA`; do not choose a component of `P_AA` after seeing the source.
+For a continued `P_AA` program, predeclare the next source panel before evaluating it: disjoint windows or height bands, unfolding convention, the already fixed ternary quantizer or an independently specified replacement, symbol embedding, delay coordinates, endpoint handling, `P_AA`, and the rule that combines evidence across the panel. Each window must first pass the exact Whittle nondegeneracy gate and the stronger `P_AA` nonconstancy gate.
 
-Build the quantized three-context transition multigraph and complete quantized length-four-block table. Compute the exact Whittle cardinality `W`; reject the representation if `W=1`. Before any source interpretation, also reject the candidate if `P_AA ell_4` is constant on the exact type class. Use exhaustive enumeration when feasible, otherwise the exact completion-count sampler with sampling uncertainty reported separately. Controls must preserve the initial quantized triple and every quantized length-four-block count exactly.
+Use exact enumeration whenever the type class is tractable and otherwise the exact completion-count sampler with its sampling uncertainty separated from the mathematical null. Do not select a favorable window, projected component, quantizer, or stopping point after looking at the residuals and then report the corresponding single-test tail as confirmation.
 
-If the projection is nondegenerate, compute the exact conditional tail probability of the frozen `T_AA`. `VIS-103` guarantees that the centered statistic is identical whether degree-four signature or log-signature is used, so the logarithm itself supplies no extra evidence.
+A replicated conditional separation would still establish only chronology beyond the admitted finite local quotient. Before calling it zeta-specific, compare with independently generated matched finite-size CUE or another source model appropriate to the chosen height and observable, including finite-height arithmetic corrections when they are known to matter.
 
-Keep the chronology route only if the frozen area-area residual survives fresh confirmation and reasonable independently fixed representation perturbations. A positive result rejects only the conditioned homogeneous order-three Markov explanation on that finite quotient. Before any arithmetic claim, compare against matched non-arithmetic source models, including finite-size random-matrix or other spectral controls appropriate to the observable.
-
-Kill or narrow the route if the type class or `P_AA` projection is degenerate, the effect disappears on fresh confirmation, a matched source control recreates it, or the separation depends on post-hoc quantizer/window selection. The binary and ternary `(1,2,1,3)` experiments on `g_71,...,g_106` are closed and must not be recycled as independent confirmation.
-
-For any alternative topological or multiscale route, state the metric/graph/path/filtration and information carrier explicitly, identify what lower information it preserves, and test the residual against a nondegenerate matched quotient rather than the visual texture.
+If a different multiscale or visual route is chosen instead, state exactly what information it preserves and forgets, construct a nondegenerate matched quotient or surrogate, and predeclare the statistic before confirmation. Kill the route when the signal is reproduced by that control, collapses to a known analytic identity, or depends on post-hoc representation/window selection.
 
 ## Evidence boundary
 
 `VIS-008` and `VIS-013` through `VIS-019` are analytic, topological, information-loss, or prior-art controls; they do not classify every possible nonlocal zero statistic. `VIS-092` through `VIS-096` bound several persistence, transition-graph, and low-signature constructions by local gap/block information. `VIS-097` proves only generic level-four chronology capacity in three delay dimensions.
 
-`VIS-098` proves an exact-real-valued reassembly uniqueness condition. `VIS-099` proves the exact conditional-uniform law only on a fixed finite-alphabet quotient. `VIS-100` supplies the classical exact type-class count and uniform completion sampler.
+`VIS-098` through `VIS-100` establish the exact finite conditional-null mechanics after quantization. `VIS-101` and `VIS-102` are finite negatives on one old block and one previously selected scalar coordinate. `VIS-103` is an affine representation-boundary theorem. `VIS-104` supplies a canonical area-area projection and exact admission rule. `VIS-105` is a finite negative on one new disjoint block: its class is nondegenerate, but `T_AA` is ordinary with exact `p=183/416`.
 
-`VIS-101` and `VIS-102` are finite negative statements for two training-defined quantizers, one low-zero training/target split, and the same pre-existing fourth-level coordinate. They do not show that every quantized chronology statistic is null, that higher zeros behave identically, or that the Markov-type null is a complete non-arithmetic source model. Conversely, those two inspected results prohibit treating further adaptive statistic/threshold search on the same confirmation block as independent evidence.
+None of these results proves that all zeta-zero chronology is null, that higher zeros behave identically, that the Markov-type quotient is a complete random-matrix/source null, or that no other visual/multiscale information carrier can work. Conversely, `VIS-105` prevents treating the mere existence and nondegeneracy of the area-area channel as evidence for a source-specific residual.
 
-`VIS-103` proves only the affine equivalence between degree-four signature and log-signature under the fixed lower-level null. `VIS-104` proves the algebraic structure, covariance, and exact admission rule for the area-area commutator projection. It does **not** prove that this projection is nondegenerate on a new source type class or that zeta is unusual under it.
-
-No finding in this chain establishes a mesoscopic fractal dimension, a new zeta-zero law, an RH criterion, or a distinction between zeta and a suitably matched higher-order point-process/control ensemble. This remains an accepted research direction, not evidence of such a distinction.
+No finding in this chain establishes a mesoscopic fractal dimension, a new zeta-zero law, a CUE/zeta separation at this statistic, or an RH criterion.
 
 ## Research disposition
 
-Accepted in further narrowed form. The next clean chronology experiment no longer requires searching for a new degree-four coordinate: `VIS-104` supplies the pre-frozen area-area commutator projection and basis-independent scalar `T_AA`. The next substantive step is a **fresh-source** exact conditional test, beginning with the nondegeneracy gate for `P_AA`, while preserving the existing Markov-type and source-control discipline.
+Accepted in further narrowed form. The pre-registration-ready area-area experiment proposed after `VIS-104` has now been executed once on fresh disjoint source material and is an exact negative. That single finite result does not close all chronology, but it closes the immediate one-window `P_AA` test.
+
+Further work should either predeclare a genuine replication/scale panel for the same area-area statistic or move to a materially different information carrier with untouched confirmation. Repeated adaptive window hunting with `P_AA` would not provide independent evidence. The broader critical-strip multiscale question remains live under those stricter controls.
