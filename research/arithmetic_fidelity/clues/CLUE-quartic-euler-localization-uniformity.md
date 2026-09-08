@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-quartic-euler-localization-uniformity
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -36,4 +36,14 @@ Kill stronger proposed conditions by exhibiting a strictly weaker one that still
 
 ## Evidence boundary
 
-Issue #131 certifies only the homogeneous quartic objective and does so computer-assistively. AF-197's remainder is fixed-shape, not uniform over degenerating projective shapes. No full-Euler minimizer, sharp localization condition, growing-band result, or RH consequence is established here. The degenerating family remains a compute-audit lead until independently derived and persisted through the normal Research Watch evidence gate.
+Issue #131 certifies only the homogeneous quartic objective and does so computer-assistively. AF-197's remainder is fixed-shape, not uniform over degenerating projective shapes. No full-Euler minimizer, sharp localization condition, growing-band result, or RH consequence is established here.
+
+## Research disposition
+
+`AF-200` independently verifies the clue's first decisive test and strengthens it: for every fixed positive `W_1=delta`, the fixed-band Euler discrepancy tends to zero along the symmetric degeneration `t downarrow 0`, so no positive recovery modulus depending only on `W_1` exists even before taking `delta -> 0`. The specific `t=delta^3` family satisfies `D_T ~ (M_0/2) delta^6`, hence `D_T/delta^4 -> 0`.
+
+AF-200 also rewrites the full normalized Euler discrepancy exactly through the AF-199 Peano B-spline carrier. Its barycentric displacement from the fixed endpoint is `(1+t)h`, and a uniform derivative estimate gives the explicit sufficient varying-shape gate
+
+`delta (1+t)^11 (2t+1) / (t^3 (3t+1)^5) -> 0`.
+
+The clue is therefore accepted rather than resolved. The live residual is to characterize the weakest natural source-geometry/equicoercivity condition, beyond this sufficient symmetric-family bound, that prevents Peano-carrier escape and is strong enough to transfer the homogeneous quartic optimizer to the full Euler objective over the unrestricted five-node class.
