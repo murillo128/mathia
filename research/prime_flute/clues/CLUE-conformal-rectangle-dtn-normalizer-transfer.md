@@ -1,15 +1,17 @@
 ---
 id: CLUE-prime-flute-conformal-rectangle-dtn-normalizer-transfer
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
-  - research/prime_flute/findings/PF-230-hyperbolic-corridor-has-pi-over-s-axis-inverse-width-budget.md
   - research/prime_flute/findings/PF-205-natural-width-cuff-smoothing-is-C1-uniform-and-critical-orlicz-summable.md
+  - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
   - research/prime_flute/findings/PF-228-flat-corridor-dressing-makes-inverse-seam-multiplicity-weak-trace-compatible.md
   - research/prime_flute/findings/PF-229-frozen-serial-schur-completion-preserves-flat-corridor-cut-scale.md
-  - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
+  - research/prime_flute/findings/PF-230-hyperbolic-corridor-has-pi-over-s-axis-inverse-width-budget.md
+  - research/prime_flute/findings/PF-231-ultraparallel-corridor-is-exactly-separable-in-logarithmic-coordinates.md
+  - research/prime_flute/findings/PF-232-hypercycle-straightening-shear-is-reciprocal-prime-form-small.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
 
@@ -17,118 +19,66 @@ based_on:
 
 ## Observation
 
-PF-230 proves that the axis corridor has the leading Fermi width `s cosh(t)`, even after natural-width trimming. This rules out calling that physical geometry an asymptotically constant-width strip. It does not rule out a different representation that separates the shifted energy exactly. The following explicit upper-half-plane calculation supplies a candidate reference operator; it does not identify that reference with the actual normalized pant cut.
+PF-231 establishes the exact logarithmic representation of the complete neighboring-axis corridor: after an isometry and `z=exp(x+i theta)`, the shifted energy is separable on `(0,s) x (0,pi)` with transverse operator `A=-partial_theta^2+csc^2(theta)` and exact two-axis energy DtN matrix `A^(1/2)[[coth(sA^(1/2)),-csch(sA^(1/2))],[-csch(sA^(1/2)),coth(sA^(1/2))]]`. It also gives the exact PF-205 inward hypercycle graphs and their fixed-domain form after straightening.
 
-Map the two complete ultraparallel cuff axes by a hyperbolic isometry to the concentric semicircles `|z|=1` and `|z|=exp(s)`, where `s` is their common-perpendicular distance. In logarithmic polar coordinates
+PF-232 removes a further apparent obstruction. Although the straightened differential expression contains `b/a=O(1)`, the natural thin-strip energy normalization turns the gradient part into `|P|^2+|Q-bP|^2`, where `|b|<=max(sinh rho_1,sinh rho_2)=max(w_1,w_2)`. For the canonical PF-205 supports this is `O(P_n^-1)`. Thus graph tilt is reciprocal-prime form-small; the independent width loss `(rho_1+rho_2)/s` remains uniformly controlled but can be order one relative to the corridor width.
 
-\[
-z=e^{q+i\theta},\qquad 0<q<s,\quad 0<\theta<\pi,
-\]
-
-the hyperbolic metric and positive-shift energy are exactly
+One useful variational handle from the original proposal remains unresolved rather than superseded. For the complete symmetric collar `|x|<f_rho(theta)` with `f_rho(theta)=arsinh(sinh(rho) sin(theta))`, define the symmetric pulled-back seam energy `Q_rho^{conf,+}` by minimizing the shifted energy with the same profile `f(theta)` on both boundary curves and dividing the minimum by two. The constant-in-`x` trial extension gives
 
 \[
-g=\frac{dq^2+d\theta^2}{\sin^2\theta},\qquad
-\mathcal E[u]=\int_0^s\!\int_0^\pi
-\left(|u_q|^2+|u_\theta|^2+\csc^2\theta\,|u|^2\right)d\theta\,dq.
+\langle f,Q_\rho^{conf,+}f\rangle
+\le
+\int_0^\pi f_\rho(\theta)
+\left(|f'(\theta)|^2+\csc^2\theta\,|f(\theta)|^2\right)d\theta
+\le
+\rho\langle f,Af\rangle.
 \]
 
-Here the nonnegative hyperbolic Laplacian is `-div grad`, so its `+1` equation becomes
+This is only an upper form comparison; it neither supplies the missing lower bound nor controls a normalized inverse cross block.
 
-\[
-(-\partial_q^2+A)u=0,\qquad
-A=-\partial_\theta^2+\csc^2\theta.
-\]
-
-Take the Friedrichs realization of `A` in `L^2((0,pi),dtheta)`, initially on compactly supported smooth functions, and put `B=A^{1/2}`. The complete-axis strip's two-boundary **energy** DtN form in the `dtheta` trace representation is
-
-\[
-\boxed{\Lambda_s^{\rm conf}=
-\begin{pmatrix}
-B\coth(sB)&-B\operatorname{csch}(sB)\\
--B\operatorname{csch}(sB)&B\coth(sB)
-\end{pmatrix}.}
-\]
-
-This follows by solving the scalar boundary problem in each `A`-eigenfunction; it is an exact separation of the bulk equation, not a flat-metric approximation. The reference modes are explicit: with `alpha=(1+sqrt(5))/2`, so `alpha(alpha-1)=1`,
-
-\[
-A\psi_n=(n+\alpha)^2\psi_n,\qquad
-\psi_n(\theta)=\sin^\alpha\theta\,C_n^\alpha(\cos\theta),\quad n\ge0,
-\]
-
-up to normalization. This is the classical symmetric trigonometric Pöschl–Teller/Gegenbauer problem. A precise literature anchor is A. Smirnov, *View on N-dimensional spherical harmonics from the quantum mechanical Pöschl-Teller potential well*, arXiv `1901.06711v1`, section 4, equations (4.4)–(4.9). Substitution into the Gegenbauer equation independently verifies the spectral formula; no novelty or arithmetic significance is claimed for it.
-
-Along the first axis, signed arclength can be chosen as `t=log tan(theta/2)`. Then `dt=dtheta/sin(theta)` and `sin(theta)=sech(t)`. The angular interval of length `pi` is compatible with PF-230's leading integral `integral sech(t) dt=pi`; it does not convert that geometric calibration into the physical operator's singular-value count.
-
-The actual constant-distance seam trimming also has an exact representation. Signed distance `d` from `q=0` satisfies `sinh d=sinh q/sin theta`. Define
-
-\[
-a_\rho(\theta)=\operatorname{arsinh}(\sinh\rho\,\sin\theta).
-\]
-
-The two pant-facing equidistant curves at distances `rho_1,rho_2` therefore become
-
-\[
-q=a_{\rho_1}(\theta),\qquad
-q=s-a_{\rho_2}(\theta),
-\]
-
-with conformal-coordinate width
-
-\[
-\boxed{s-a_{\rho_1}(\theta)-a_{\rho_2}(\theta)}.
-\]
-
-Since `0<=a_rho<=rho`, this width lies between `s-rho_1-rho_2` and `s`. PF-230's natural-width bound `(rho_1+rho_2)/s<=kappa+o(1)<1` thus gives a nondegenerate conformal rectangle perturbation. Smallness is governed by the offset-to-separation ratio, not by the false assertion `cosh(t)=1+o(1)` on a fixed Fermi window.
-
-There is a concrete seam-normalizer comparison to investigate rather than declaring it diagonal in `A`. For the complete symmetric collar `|q|<a_rho(theta)`, define `Q_rho^{conf,+}` by minimizing the shifted energy with equal pulled-back profiles `f(theta)` on its two boundaries and dividing that minimum by two. The admissible trial extension `u(q,theta)=f(theta)` yields, for `f` compactly supported in `(0,pi)`,
-
-\[
-\boxed{\langle f,Q_\rho^{\rm conf,+}f\rangle
-\le\int_0^\pi a_\rho(\theta)
-\left(|f'|^2+\csc^2\theta\,|f|^2\right)d\theta
-\le\rho\langle f,Af\rangle.}
-\]
-
-The factor of two is essential: this is one symmetric boundary branch, not the summed energy of two copies. This trial-form inequality supplies only an upper comparison; it does not establish a two-sided normalizer theorem or a dressed cross-block bound.
+The unresolved issue is therefore no longer generic bulk mode mixing from the variable Fermi profile. It is the transfer from this exact energy model to the **actual normalized local dressed block**, including the variable-width diagonal problem, real seam-energy normalizers, physical boundary representation and `P/H` projections, and finite one-cusp-pant completion.
 
 ## Research question
 
-Can this conformal energy representation, together with the exact offset curves and seam comparison, supply a faithful local dressed DtN/Poisson estimate at the PF-228 `sqrt(w_1 w_2)/s` scale for the real PF-205 trimmed pant? More precisely, can one localize the obstruction to the actual boundary-energy normalizer, end completion, and physical frequency projections, instead of attributing it to irreducible bulk mode mixing merely because the Fermi width varies?
+Can the PF-231/PF-232 conformal form comparison be upgraded to a faithful estimate for the actual PF-205 normalized one-seam dressed transmission with the PF-228 scale
 
-The natural comparison object is the operator-function DtN matrix above with the **actual pulled-back seam forms**, not an invented commuting normalizer `B tanh(wB)`. Seek a same-Hilbert-space factorization or controlled form-transfer theorem, with a spectral-band estimate strong enough to bound the dressed singular-value population. If it fails, identify the exact boundary/domain/completion term causing failure.
+\[
+\frac{\sqrt{w_nw_{n+1}}}{s_n}
+\]
+
+and sufficient high-mode decay to feed PF-222's weak-trace reassembly?
+
+Equivalently, after separating the now-controlled graph shear from the width coefficient, can one prove a same-boundary-space estimate for the real energy-normalized Schur cross block, or identify a specific normalizer/completion/projection mechanism that destroys the `w/s` gain?
 
 ## Why it may matter
 
-The exact bulk reference is fully separable and its mode scale is explicit, so a comparison need not start with an uncontrolled variable-width flat-strip approximation. A successful transfer could provide both inverse-seam damping and the high-mode decay needed before PF-222's global cut assembly. The elementary trial-form comparison also identifies a concrete starting inequality whose missing lower/domain information can be tested.
-
-This is different from the already accepted umbrella question: it proposes a specific coordinate map, transverse operator, boundary deformation, and variational normalizer bound. It is compatible with PF-230, which explicitly allows a transformation that makes its nonconstant physical profile harmless. None of the logarithmic-polar change, separation-of-variables formula, or classical transverse spectrum is presented as a new general theorem.
+PF-228 proves that exactly this amplitude scale makes even a pessimistic inverse-seam channel population weak-trace compatible. PF-231 supplies an exact hyperbolic bulk reference rather than a fictitious constant-width geometric approximation, and PF-232 shows that straightening its actual hypercycle boundaries introduces only reciprocal-prime relative form shear. A positive transfer would therefore close the main remaining local geometric gap before global nested-cut reassembly; a negative result would have to identify a much more specific obstruction than variable corridor fanout.
 
 ## Decisive test
 
-First verify the full representation on the complete-axis control, including domains at `theta=0,pi`. For the untrimmed axes, physical arclength is `dt=dtheta/sin(theta)`. The unitary `U:L^2(dt)->L^2(dtheta)` is `Uf=sin(theta)^{-1/2}f`; accordingly
+Work on the common pulled-back boundary trace space of the PF-231 fixed strip. Keep the exact variable-width diagonal form and the actual PF-205 seam-energy forms rather than replacing them by commuting functions of the Pöschl--Teller operator. Prove a two-sided normalizer comparison or a direct Schur-factor estimate strong enough to control the normalized cross block on the `s_n A^(1/2)=O(1)` population and to obtain exponential or otherwise summable decay above that band. The displayed trial inequality is a starting upper bound, not permission to invert the ordering.
+
+Carry the physical boundary-density unitary and the `P/H` projections in their correct order. For one trimmed hypercycle its exact arclength density in the `theta` parameter is
 
 \[
-U\Lambda_s^{\rm phys}U^{-1}
-=\sin(\theta)^{1/2}\Lambda_s^{\rm conf}\sin(\theta)^{1/2}
+\frac{d\sigma_\rho}{d\theta}
+=
+\frac{\cosh\rho}
+{\sin\theta\sqrt{1+\sinh^2\rho\sin^2\theta}}.
 \]
 
-in the corresponding form sense, with the multiplier on both boundary copies. These singular-endpoint multipliers are not uniformly bounded invertible changes of the unweighted trace norm. Pull back the seam form through the same transformation and, if useful, prove the correct polar/unitary equivalence of the energy-normalized operators. Do not cancel square roots of noncommuting forms by inspection.
+These singular endpoint weights are not uniformly bounded changes of the flat `dtheta` boundary norm. Loewner comparison of the full positive DtN form is likewise not enough: the decisive estimate must survive the boundary identification, normalization, and extraction of the cross block. Do not cancel square roots of noncommuting seam forms or infer inverse/off-diagonal monotonicity from PF-232's form inequalities.
 
-For a trimmed curve `q=a_rho(theta)`, use its exact arclength density
+Then account explicitly for the finite cuff arcs and the one-cusp-pant end completion. The complete-axis Friedrichs corridor may be used as a reference, but it cannot silently impose artificial boundary conditions at the pant ends. A useful positive outcome is the required dressed singular-value envelope for the actual local block; a useful negative outcome is an admissible boundary sequence showing precisely where the normalizer, width coefficient, projection, or completion defeats it.
 
-\[
-\frac{\sqrt{1+(a_\rho')^2}}{\sin\theta}
-=\frac{\cosh\rho}{\sin\theta\sqrt{1+\sinh^2\rho\sin^2\theta}}.
-\]
-
-Flatten the two offset graphs only at the level of the full shifted form, keeping the transformed potential and boundary trace maps. Establish which constants are uniform as `s` tends to zero with the PF-205 offset ratios. The trial inequality above is a starting test, not permission to infer that off-diagonal blocks of inverses are monotone under form ordering. Check the symmetric and antisymmetric seam branches separately before reconstructing the full physical module.
-
-Then distinguish the complete-axis covering strip from the finite cuff arcs and the remaining one-cusp pant. Identify the end/cusp boundary conditions and the exact extension or Schur elimination used to complete the central region. A complete-axis Friedrichs control cannot silently replace the pant or impose artificial vanishing on its ends. Carry the physical `P/H` projections in their correct transformed order. A useful positive result is a bound for the actual normalized local dressed block with the required amplitude and high-mode envelope; a useful negative result identifies an admissible sequence on which the boundary normalization or end completion defeats that bound.
-
-A constructive transfer argument and an endpoint-localized counterexample search are complementary uses of the same representation. Even if local transfer succeeds, variable neighboring-cell extension mass and PF-222's overlapping nested-cut sum remain separate gates; PF-229's frozen-chain comparison does not settle either.
+Even if this local transfer succeeds, neighboring-cell extension mass and PF-222's overlapping nested-cut sum remain separate global gates.
 
 ## Evidence boundary
 
-These explicit calculations describe reference energy forms and proposed comparison ingredients, not an accepted Mathia finding or a formal verification. No operator equality between the full pant and the complete-axis rectangle has been established. The discrete spectrum of `A` in `L^2(dtheta)` is not by itself a discrete physical boundary spectrum or an `O(1/s)` singular-value upper count: the original boundaries have infinite arclength, singular weights, different seam forms, and nontrivial completion. The normalizer upper bound alone gives neither an inverse comparison in the required off-diagonal norm nor a weak-Schatten theorem. No global mixed cut estimate, nested reassembly, prime/clone separation, or RH implication is claimed.
+The conformal rectangle, Pöschl--Teller separation, exact hypercycle graphs, and fixed-domain form are established by PF-231. The reciprocal-prime smallness of graph-straightening shear and the resulting **full energy-DtN form comparability** are established by PF-232. Neither finding proves an off-diagonal dressed block estimate, a two-sided theorem for the actual PF-205 seam normalizer, physical-`L^2` singular-value control, finite-pant completion, or weak `S_1` reassembly.
+
+The proposed `sqrt(w_nw_{n+1})/s_n` transfer for the real pant therefore remains unproved. This clue is accepted because the route is now exact enough to justify continued investigation, not because the desired transfer or any RH consequence has been established.
+
+## Research disposition
+
+The conformal route survives initial derivation, adversarial form scaling, and prior-art audit. Continue it with one precise residual target: **prove or refute the PF-228 `w/s` normalized cross-block envelope for the real PF-205 variable-width pant boundary problem after the PF-232 shear reduction**. Do not reopen generic variable-fanout or graph-tilt objections unless a concrete calculation invalidates PF-231 or PF-232.
