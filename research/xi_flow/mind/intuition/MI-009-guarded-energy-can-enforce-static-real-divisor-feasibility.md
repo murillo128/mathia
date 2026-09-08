@@ -1,31 +1,33 @@
-# MI-009 — Guarded energy fixes static feasibility and the low-mode periodic heat law
+# MI-009 — The q-scale Xi source has exact equal-weight real-divisor feasibility at its native node budget
 
-**Evidence level:** proved for the declared Xi visible-moment and periodic heat interfaces through XF-087
+**Evidence level:** proved for guarded low-mode feasibility through XF-087 and for the full natural q-scale moment prefix through XF-119
 
 ## Core intuition
 
-The destination-weighted guarded resource now removes two apparent source-class problems at once. First, bounded guarded energy forces the visible moment vector into a cone admitting an exact equal-weight real-divisor realization. Second, once those first `K` moments are fixed, their periodic heat trajectory is unique and is exactly the trapezoidal frequency discretization of the canonical one-sided Volterra flow. Neither arbitrary root placement nor high periodic moments remain free dynamic variables in the guarded band.
+Static real-divisor feasibility is no longer an open source-class issue at the natural q-scale. The earlier guarded argument showed that a small visible moment vector lies inside the equal-weight trigonometric moment cone. XF-118--XF-119 remove the need for that `ell^1` interior-margin mechanism on the actual mass-preserving Xi source: Toeplitz near-isometry gives a much stronger positive moment structure, and a controlled Poisson deconvolution turns it into an exact equal-weight realization at the **prescribed Xi degree budget**.
 
-The surviving difficulty is quantitative **continuum-to-grid transport of the actual Xi source**, especially the singular endpoint/background structure of the Volterra convolution.
+The remaining difficulty is therefore dynamical and destination-specific. The realized prefix must be transported through the endpoint-renormalized periodic Vieta flow and connected to a hypothetical positive de Bruijn--Newman transition. Static source admission cannot supply that implication by itself.
 
 ## Strongest justified principle
 
-XF-084 identifies a degree-`N` real-divisor carrier with an equal-weight `N`-atomic unit-circle measure and formulates the visible power sums as a positive trigonometric moment problem. XF-085 shows that a fixed normalized `ell^1` interior margin admits exactly `N` equal-weight nodes once the Xi node budget dominates the visible degree. XF-086 proves that the guarded selector norm supplies that margin automatically: `R(Q)=o(J^3)` forces the normalized visible moment mass to zero, so bounded guarded resource is more than enough.
+XF-084 formulates the real-divisor bridge as an equal-weight trigonometric moment problem. XF-085 proves exact equal-weight realization when the target moments admit a representing density with fixed positive upper/lower bounds, and XF-086 shows that bounded guarded energy supplies a sufficient interior margin for the earlier visible band. XF-087 then proves that the first `K` periodic power sums evolve uniquely by the exact triangular Vieta heat law once those moments are fixed.
 
-XF-087 then derives the exact power-sum heat ODE from the periodic Vieta system. For grid frequency `xi_m=m Delta`, its quadratic term is precisely the composite trapezoidal rule for the continuum Volterra convolution, including half-weight endpoints that reproduce the exact flat-density damping. The system is triangular for `m<=N`, so any two degree-`N` realizations with the same first `K` moments have the same first-`K` heat trajectory. Root collisions, labels, and high modes do not change that state.
+XF-118 establishes a stronger source property on the full natural q-scale prefix: the normalized Toeplitz moment matrix satisfies `||T_hat_K-I||_op -> 0`. This is full finite-section coercivity, not merely an `ell^1` coefficient bound.
 
-Thus the live bridge has become: obtain the actual Xi moment prefix with controlled guarded resource, and bound the difference between the source continuum Volterra field and this exact grid evolution after the endpoint/background normalization.
+XF-119 converts that near-isometry into the regular density needed for exact equal-weight quadrature. Inflate the first `K` moments by `r_K^{-m}` with `r_K=e^{-gamma/K}`. The backward-Poisson multiplier is uniformly bounded on the finite Toeplitz section, so positivity and near-isometry survive. Any representing measure for the inflated moments is forced by the near-isometry to have mass of order `1/K` on every arc of that scale. Forward Poisson convolution restores the original moments exactly and produces a density bounded above and below uniformly.
+
+Gilboa--Peled equal-weight quadrature then realizes the original first `K` moments for every sufficiently large `N>=C K`. At the Xi scale, `K asymp a^3 log a` while `N asymp a^4`, hence `N/K -> infinity`; the prescribed `N=2q^2` is eventually admissible. The source prefix therefore has an exact degree-`N` real-divisor realization with no RH assumption.
 
 ## Counterevidence / boundary
 
-XF-087 does not prove the required consistency estimate for the actual Xi carrier. A naive smooth trapezoid bound is only a calibration because XF-051's positive-frequency source has a singular endpoint. Nor do XF-084--XF-087 prove that a hypothetical positive-`Lambda` transition produces nontrivial guarded mass.
+Exact static realization does not imply that the corresponding real divisor follows the actual Xi heat flow beyond the controlled prefix, nor that a positive transition time creates a contradiction in the guarded norm. The high periodic moments remain unconstrained by the first-`K` moment problem, and the q-scale source lies below the first distributional prime atom.
 
-The exact periodic result is restricted to the nonwrapped range `K=o(N)`, which contains the current source-visible band. Nothing is asserted about arbitrary higher modes.
+The Poisson deconvolution uses the near-identity Toeplitz theorem and an inflation scale `1/K`; a fixed backward radius would not be controlled. A different destination moment matrix or prime-band observable needs a separate positivity/realization argument.
 
 ## Epistemic status
 
-**Proved static feasibility and exact low-mode discrete dynamics; source extraction, endpoint consistency, and transition coercivity open.**
+**Exact q-scale source positivity plus exact equal-weight degree-budget realization; source-to-transition coercivity remains open.**
 
 ## Falsification criterion
 
-Produce a guarded moment vector in the XF-086 regime that fails exact equal-weight realization, or two degree-`N` periodic carriers with the same first `K` moments whose first-`K` heat trajectories differ despite XF-087. More relevantly, an Xi-compatible endpoint profile whose trapezoidal Volterra defect stays order one in the guarded band would identify the intended remaining obstruction rather than falsify the static/discrete statements.
+Invalidate the XF-118 Toeplitz near-isometry, show that the XF-119 backward-Poisson Schur multiplier can destroy positivity at the declared `1/K` scale, or produce an unbounded sequence of Xi prefixes for which no exact equal-weight degree-`N` realization exists despite `N/K -> infinity`. A successful continuation should instead derive from a hypothetical `Lambda>0` transition a condition incompatible with the exact realized prefix after the declared endpoint/transport operations.

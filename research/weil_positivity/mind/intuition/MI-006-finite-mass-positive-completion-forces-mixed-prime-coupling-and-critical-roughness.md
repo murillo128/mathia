@@ -1,43 +1,33 @@
-# MI-006 — Mixed-prime coupling must precede positivity; shellwise radial scalarization and semigroup promotion do not preserve the selector
+# MI-006 — Mixed finite--archimedean structure must precede positivity, and bounded thermodynamic positivity does not preserve the selector
 
-**Evidence level:** supported through WP-164 by exact completion/resultant calculations, toric torsion rigidity, cyclotomic radial identities, Mellin classification, and complete-monotonicity obstruction
+**Evidence level:** supported by exact radial/Mellin controls, higher-order Gamma/Barnes/Koszul classifications, Ray--Singer grading, and bounded Bost--Connes KMS obstructions through WP-211
 
 ## Core intuition
 
-The critical one-prime Weil rays can live inside a positive all-prime carrier only if genuinely mixed-prime or finite--archimedean information is present **before** positive completion. Canonical filling, determinants, tensor products, normalization, and shellwise positive scalarization cannot manufacture an interaction missing from the source incidence.
+A Weil-positive carrier cannot be obtained by first scalarizing the finite-prime source and then asking a standard positive completion to recreate the arithmetic selector. The order of operations is load-bearing: the signed Mangoldt/finite--archimedean relation must survive **before** positivity, normalization, determinant formation, or thermodynamic averaging.
 
-The cyclotomic radial path sharpens this ordering principle. It carries the exact Mangoldt selector in signed form, but that selector is destroyed by every nearby positive Mellin homogeneity and cannot be reinterpreted, even on prime-power shells where the flux is pointwise positive, as a positive self-adjoint semigroup coefficient.
+The current evidence now shows two distinct ways standard positivity loses the selector. In the radial/higher-spectral-shift route, positive scalarization fills Mangoldt zeros or trades Euler-Gamma normalization against the rough multiplicity needed for the Fourier floor. In the Bost--Connes route, the critical KMS midpoint supplies the desired half-density, but bounded positive correlations have insufficient spectral mass; the canonical Duhamel/BKM positive form then averages away that midpoint geometry altogether.
 
 ## Strongest justified principle
 
-WP-096--WP-160 establish the algebraic/completion boundary: exact sparse positivity needs mixed mass; normalized all-prime/resultant data universalize; canonical cell filling preserves flatness; block/tensor determinant constructions factor; and any scalable fixed finite-arity algebraic torsion incidence returns to translated torus geometry and prime-primary splitting.
+WP-161--WP-164 expose the source-ordering rule directly. The radial flux has total mass `Lambda(n)` and is pointwise positive exactly on prime-power shells, but the mixed-prime zeros come from signed cancellation. Positive Mellin homogeneities away from the critical exponent fill those zeros, and the flux is not completely monotone even on prime powers, so no positive Laplace/semigroup coefficient realizes it.
 
-WP-161--WP-162 change category to a genuine real radial deformation. The centered potential has boundary value `Lambda(n)`, and its inward flux `rho_n(s)` has total mass `Lambda(n)` and is pointwise positive for all `s>0` exactly on prime powers. Mixed-prime Mangoldt zeros arise from cancellation of positive and negative radial flux, so shellwise positive norms/energies immediately lose the selector.
+WP-179--WP-207 transport the same tension into higher-order spectral shift. Positive infinite baths can supply a reciprocal high-frequency floor, but exact Euler-Gamma determinant provenance prefers one-dimensional multiplicity while the rough bath needs higher Barnes multiplicity. Koszul alternation recovers the Euler divisor intrinsically, yet positive cohomology collapses to the one-mode quotient and loses the roughness; keeping chain-level roughness requires a signed supertrace.
 
-WP-163 classifies the canonical dilation-homogeneous scalarizations. For `alpha>0`, the Mellin readout is
+WP-208 tests the canonical determinant-line escape. Ray--Singer degree weighting retains acyclic directions but only as a double-Barnes source, too smooth at every allowed Weil order. Higher grading moments can recover the critical Barnes order only when their degree grows with the externally chosen spectral-shift order, and the readout remains signed.
 
-`-Gamma(alpha) zeta(alpha) n^(1-alpha) prod_{p|n}(1-p^(alpha-1))`.
-
-The sparse Mangoldt support occurs **only at `alpha=1`**, through the critical pole-zero cancellation. For `0<alpha<1` every shell becomes positive; for `alpha>1` every shell is nonzero with parity sign. Positivity and sparse support cannot coexist inside this shellwise Mellin family.
-
-WP-164 closes the next operator-positive interpretation. Every `rho_n` fails complete monotonicity; already `rho_n'''(0+)=J_4(n)/120>0`. Hence no positive measure Laplace representation and no coefficient `<v,e^{-sA}v>` of a nonnegative self-adjoint semigroup can equal the flux. This remains true for finite positive mixtures of radial scales. The prime-power control `rho_2(s)=1/(e^s+1)>0` makes the distinction between pointwise and operator positivity explicit.
+WP-209--WP-211 give an independent thermodynamic classification. At the Bost--Connes critical inverse temperature, midpoint detailed balance provides the Weil half-density `q^{-1/2}` canonically. Exact Mangoldt matching by a bounded GNS correlation nevertheless requires divergent total spectral mass. The scalar free-energy route is just the Euler logarithm and its Hessian misweights prime powers. The canonical Duhamel/Bogoliubov--Kubo--Mori correlation restores a genuine positive quadratic form, but its logarithmic-mean multiplier erases the midpoint half-density and still cannot match the Weil coefficients with finite bounded-observable mass.
 
 ## What remains possible
 
-A surviving positive route must keep the signed flux through a genuinely coupled finite--archimedean or mixed-prime operation and impose positivity only after that coupling. Alternatively it must change the operator/category before positivity so that the new source object is not a shellwise scalar Mellin/Laplace readout of `rho_n`.
+A surviving positive route must retain the finite-prime selector and the archimedean normalization in one source-forced relation before the final sign theorem. Possible categories not ruled out include unbounded affiliated observables, distributional KMS vectors, closable quadratic forms, genuinely global boundary/cohomological assemblies, or noncommuting mixed finite--archimedean constructions whose sign is proved after assembly.
 
-Live categories include source-varying/growing-arity incidence, nonlocal or cohomological finite--archimedean coupling, and noncommuting signed assemblies. They must still survive the earlier critical roughness, spectator-prime, domain, and exhaustion controls.
+These are category exits, not evidence. The construction must simultaneously explain support, coefficient mass, Gamma normalization, critical roughness or its replacement, and the independent source of positivity without inserting the zero divisor or Mangoldt weights by hand.
 
 ## Status / novelty
 
-Resultants, toric Manin--Mumford, cyclotomic values, Jordan totients, Mellin/Bose integrals, complete monotonicity, and Bernstein--Widder theory are classical. The persisted synthesis is the source-ordering principle: **the radial selector is genuinely source-native, but shellwise attempts to make it positive either fill in its zeros or fail the operator-positive category; mixed signed coupling must precede positivity**.
+The component ingredients — cyclotomic/radial identities, Mellin and complete-monotonicity theory, Barnes/Gamma determinants, Koszul and Ray--Singer grading, KMS detailed balance, and Duhamel/BKM correlation — are classical or explicitly prior-art audited in the findings. The durable synthesis is an ordering principle: **standard positive completions preserve too little of the signed finite--archimedean selector; the selector-bearing coupling must be source-native before positivity is imposed.**
 
 ## Falsification criterion
 
-Produce a positive Mellin homogeneity `alpha!=1` retaining exact Mangoldt support, a positive-measure Laplace representation of a prime-power `rho_n`, or a source-forced coupled construction whose positivity is established only after assembly and whose mixed-prime cancellation survives the matched controls.
-
-## Lean-formalizable core
-
-- Mellin divisor-product formula and uniqueness of `alpha=1` for Mangoldt support.
-- Sign classification for `alpha<1` and `alpha>1`.
-- Boundary-jet complete-monotonicity obstruction and finite positive scale-mixture stability.
+Produce a bounded positive completion in one of the classified scalar/KMS categories that retains exact Mangoldt support and mass together with the required archimedean normalization, or invalidate the finite-mass/logarithmic-mean obstructions of WP-209--WP-211. A successful category exit should define the coupled source object independently, prove its sign without RH, and derive the full finite-plus-archimedean Weil form under an audited normalization.

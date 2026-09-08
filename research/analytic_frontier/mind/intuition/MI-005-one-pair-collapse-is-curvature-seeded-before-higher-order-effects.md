@@ -1,31 +1,33 @@
-# MI-005 — Fixed-notch success is controlled by non-excisable mesoscopic source exposure
+# MI-005 — Fixed-notch success is controlled by non-excisable mesoscopic source exposure and its forced companion
 
-**Evidence level:** supported by exact fixed-notch reduction, exact packet controls, and explicit global near-extremizer embeddings through ANF-117
+**Evidence level:** supported by exact fixed-notch reduction, full-profile Gaussian comparison, and global-completion constraints through ANF-120
 
 ## Core intuition
 
-The frozen-notch problem is not controlled by raw Gram conditioning, maximal packet height, or componentwise source mass. ANF-099 reduces the existence of an improving notch to the physical near-extremizer exposure `beta_eta < B_eta`; ANF-112--ANF-113 then show that sparse source-heavy components must be treated after aggregation and leave exponential source-unsaturation as a genuine escape.
+The frozen-notch problem is not controlled by raw Gram conditioning, maximal packet height, componentwise source mass, or finitely many saddle phases. The exact obstruction lives at the `A^(-1/2)` interior-saddle scale and must be evaluated **after the packet is embedded into a global near-extremizer**.
 
-ANF-115--ANF-117 identify the structure of that escape. Horizontal phase organization can move the packet source norm from the endpoint to an interior saddle `|alpha|=alpha_gamma`, and neither global near-extremality nor any fixed finite saddle-phase description removes it. The decisive object is the **mesoscopic modulation profile on the saddle width `A^(-1/2)`**, after excisable phase-balanced aggregates have been quotiented away.
+ANF-118 removes the need to approximate that scale by a finite jet: throughout its subexponential cloud envelope, one explicit Gaussian Gram form measures the complete same-saddle source profile. ANF-119--ANF-120 then show that a source-heavy off-notch profile cannot be completed arbitrarily. Near-extremality forces either excision, extra same-band polarization, or asymptotic profile mirroring; near maximal notch efficiency forces mirroring even in the bounded-mass branch.
+
+The surviving question is therefore whether the source permits a globally non-excisable **profile-plus-companion architecture** that cancels strongly off the notch while still generating the separate central-notch exposure required by a fatal near-extremizer.
 
 ## Strongest justified principle
 
-ANF-115 constructs distinct packets with `O(A)` horizontal span whose normalized capacity deficit stays linear in `A` and whose source spectrum concentrates at an interior saddle. These packets can remain fixed-notch invisible even when maximal height lies strictly beyond the notch-possibility threshold. The missing source capacity is therefore an interference effect, not slack in a pointwise height estimate.
+ANF-115 constructs distinct physical packets with `O(A)` horizontal span whose source spectrum concentrates at a stable interior saddle `|alpha|=a_gamma<1`, whose normalized capacity deficit remains linear in `A`, and which can remain invisible to a fixed central notch. ANF-116 shows that finitely many translates can phase-balance inside a genuine global near-extremizer and become excisable as an aggregate. ANF-117 proves that every fixed finite saddle jet can vanish while order-one source mass survives at the natural mesoscopic width.
 
-ANF-116 shows that a fixed finite family of real translates reduces at leading order to one phasor at the saddle. Three root-of-unity phases can supply the required pairwise negative polarization inside an actual global near-extremizer while their aggregate becomes source-negligible and hence notch-negligible. Componentwise anti-alignment is therefore not a contradiction; it can be recycled inside an excisable phase crystal.
+ANF-118 replaces all finite-jet bookkeeping by the full positive Gaussian Gram form. For positive translation clouds with `log(e+V_A)=o(A^(1/3))`, normalized source mass equals that Gram mass up to `o(1)` relative/additive error. Thus vanishing of the full mesoscopic profile, rather than vanishing of any finite list of derivatives, is the correct internal excision criterion in that envelope.
 
-ANF-117 sharpens the boundary from one phasor to every fixed finite jet. Because the saddle has Gaussian width `A^(-1/2)`, clouds with `r_A asymp sqrt(A)` resolve that width. For every fixed order `s`, positive physical translation clouds can have a zero of order `s` at both saddles while retaining a fixed positive fraction of the packet source norm. Finite-order saddle bookkeeping cannot close the route.
+ANF-119 supplies the external completion trichotomy. A source-negligible packet is removable; a bounded source-heavy packet is removable when the complement remains near-extremal and otherwise forces an overpolarized same-band companion; a diverging packet forces the complement to reproduce its localized profile with opposite phase. ANF-120 adds the fixed-notch efficiency constraint: for bounded packet mass, the off-notch remainder satisfies a two-sided mismatch corridor, and `h_eta/chi_eta -> 1` forces the packet and complement to mirror asymptotically in the saddle band.
 
 ## Counterevidence / boundary
 
-None of ANF-115--ANF-117 constructs a fatal sequence for `beta_eta`. The explicitly balanced clusters are excisable as aggregates and do not raise fixed-notch exposure. The higher-order clouds use positive multiplicities; a theorem exploiting stronger simplicity/distinctness or source-specific local occupancy would require a separate audit.
+None of ANF-118--ANF-120 constructs a fatal near-extremizer or proves `beta_eta<B_eta`. The ANF-118 comparison has a real scale boundary: exponentially large cloud weight can move the physical saddle and escape the fixed-saddle Gaussian proxy. ANF-120's strongest bounded-mass mirroring conclusion is conditional on approach to maximal notch efficiency; it is not a theorem that every bounded near-extremal completion mirrors.
 
-The remaining claim is also not that every fatal near-extremizer must look like a binomial/root cloud. These are matched controls proving that vertical capacity, componentwise global coupling, and fixed jets are insufficient information.
+The remaining architecture may also use source geometry outside the same-saddle positive-translation class. Such a category exit is not evidence by itself; it must still satisfy the exact global near-extremal and notch budgets.
 
 ## Epistemic status
 
-**Exact fixed-notch reduction plus exact matched controls through the mesoscopic saddle scale; the source-specific non-excisable exposure inequality remains open.**
+**Exact full-profile control and exact global-completion constraints; exclusion or construction of the final coupled non-excisable profile-plus-companion remains open.**
 
 ## Falsification criterion
 
-Either construct a non-excisable physical near-extremizer whose mesoscopic saddle profile survives global completion and reaches fixed-notch exposure `B_eta`, or prove a source theorem that forces every such profile to become excisable, leave the admissible geometry, or contribute enough notch mass to obtain `beta_eta < B_eta`. A proof depending only on finitely many saddle derivatives is falsified by ANF-117.
+Construct a physical global near-extremizer in which a non-excisable interior-saddle aggregate survives the ANF-118 full-profile test, satisfies the ANF-119/ANF-120 companion constraints, and reaches the fatal fixed-notch exposure. Conversely, prove that every such globally admissible profile-plus-companion configuration is excisable or loses enough central-notch exposure to force `beta_eta<B_eta`. A proof depending only on componentwise mass or finitely many saddle derivatives is already falsified by ANF-116--ANF-118.

@@ -1,31 +1,31 @@
-# MI-017 — Stable recovery scale needs source complexity, observation structure, and carrier localization
+# MI-017 — Stable recovery scale is controlled by profile-weighted carrier localization
 
-**Evidence level:** supported by exact Blaschke conditioning, adaptive Euler-cluster controls, overlap asymptotics, and the fixed-Wasserstein Peano escape through AF-200
+**Evidence level:** supported by exact Blaschke conditioning, adaptive Euler-cluster controls, overlap asymptotics, Peano-carrier escape, and the exact quartic weighted-localization calibration through AF-204
 
 ## Core intuition
 
-Exact sufficiency does not determine stable recovery. The inverse scale is controlled jointly by the destination quotient/metric, admissible source geometry and complexity, the regularity and bandwidth of the observation map, algebraic structure in the kernel, **and whether the source carrier remains localized where that observation is informative**.
+Exact sufficiency does not determine stable recovery. The inverse scale is controlled jointly by the destination quotient/metric, admissible source geometry and complexity, the regularity and bandwidth of the observation map, algebraic structure in the kernel, and **whether the source carrier stays localized where the surviving source profile can still be observed**.
 
-AF-180--AF-188 show the complexity/bandwidth interaction: increasing cancellation order can hide positive source pairs from derivative-limited observations, while the Euler harmonic ladder restores visibility once bandwidth reaches the reciprocal-separation scale. AF-200 adds a different failure that survives fixed cancellation order. At fixed positive `W_1`, a five-node quartic control can move its Peano carrier arbitrarily far into a region where every fixed vertical Euler band is exponentially insensitive, driving the discrepancy to zero.
+AF-200 made localization an unavoidable independent variable. AF-204 sharpens the statement: in the solved quartic five-node Euler class, localization is not merely a qualitative tightness condition. The exact transfer currency is the source profile multiplied by the observation-specific endpoint defect, `Q Lambda_sigma(beta)`, equivalently `Q D` in the source coordinates. A source may localize in an unweighted sense and still fail when its profile grows faster than the localization defect shrinks.
 
 ## Strongest justified principle
 
-For derivative-controlled kernels, AF-186 identifies an associated-function envelope governing how cancellation order and local source scale trade against available derivative growth. AF-187--AF-188 then show that this is not a kernel-independent law: the Euler harmonic structure produces super-algebraic invisibility, a continuum of algebraic exponents, and order-one visibility in different bandwidth regimes.
+AF-180--AF-188 show that cancellation complexity, local source scale, derivative growth, and Euler bandwidth create distinct visibility regimes. AF-189--AF-194 add an approximation-strength gate: neighboring finite-overlap and saddle descriptions can agree logarithmically while failing multiplicatively until the sharper correction parameter is small.
 
-AF-189--AF-194 add an approximation-strength gate. Adjacent finite-overlap and saddle descriptions can agree at logarithmic scale while failing multiplicatively until the sharper correction parameter is small. A declared asymptotic category is part of the recovery statement.
+AF-195--AF-199 identify minimal-support moment-flat controls with variable-knot Peano B-splines. AF-200 proves that `W_1` alone does not make this source class tight: at fixed positive `W_1`, a quartic five-node family can send its Peano carrier to infinity while the fixed-band Euler discrepancy vanishes.
 
-AF-195--AF-199 identify minimal-support moment-flat controls with variable-knot Peano B-splines. AF-200 proves that `W_1` alone does not make this source class tight: at fixed `W_1=delta`, the quartic mirror family can have `h~delta/t -> infinity`, while the fixed-band Euler discrepancy is `~(t^2/2)M_0 ->0`. The normalized Peano carrier has exact barycenter `x+(1+t)h` and `W_1(B,delta_x)=(1+t)h`, making localization the missing variable rather than a proof artifact.
+AF-201 identifies weak carrier concentration as the exact fixed-band transfer topology when the quartic profile `Q` is two-sided bounded. AF-203 gives the stronger varying-profile sufficient condition `Q^2 W_1 -> 0`. AF-204 then finds the intrinsic varying-profile gate. The full fixed vertical-band transfer error is two-sided comparable to `Q Lambda_sigma(beta)`, where `Lambda_sigma` is the positive real-axis Euler localization defect. Hence transfer occurs if and only if `Q Lambda_sigma(beta) -> 0`; within the five-node minimal-support class this is equivalent to `Q D -> 0`. The `Q^2 W_1` condition is therefore a convenient sufficient bound, not the governing topology.
 
 ## Counterevidence / boundary
 
-AF-200 is a decisive obstruction to a `W_1`-only fixed-band modulus, not a proof that compact support or the displayed barycenter condition is the weakest repair. Observation-specific cancellation may permit a weaker tightness notion. The exact escape is proved inside the mirror-symmetric five-node quartic family; that already kills a uniform theorem on the larger unrestricted class but does not classify every escaping shape.
+The exact `Q Lambda_sigma` / `Q D` equivalence is proved for the quartic five-node minimal-support class and a fixed Euler vertical band. It is not a universal formula for arbitrary cancellation order, arbitrary kernels, or unrestricted source measures. Observation-specific cancellation may produce a different weighted defect, and growing bandwidth can change the localization currency.
 
-Likewise, the harmonic and overlap results do not prove stable inversion for all generalized-prime sources. Source geometry, bandwidth, kernel algebra, and localization remain separate resources unless an exact theorem couples them.
+Likewise, AF-204 calibrates forward transfer to the endpoint profile; it does not by itself prove stable inversion of a larger arithmetic source class. Quotient structure, provenance, and source-complexity growth remain separate gates unless a theorem couples them.
 
 ## Epistemic status
 
-**Supported mechanism-level recovery principle from exact component theorems; no universal inverse theorem is claimed.**
+**Exact weighted-localization law in the solved quartic Euler class; supported general principle that stable recovery requires an observation- and profile-calibrated non-escape resource.**
 
 ## Falsification criterion
 
-Produce a positive fixed-band recovery modulus depending only on `W_1` for a source class containing the AF-200 escape, or invalidate its exact Peano-carrier representation. A positive source-class theorem should identify an intrinsic tightness/localization condition and prove a lower observation bound at the declared bandwidth without silently fixing source shape.
+Within the AF-204 source class, produce a sequence for which full fixed-band transfer holds while `Q Lambda_sigma(beta)` fails to vanish, or vice versa. Beyond that class, a recovery theorem whose uniform constant is independent of every observation-sensitive localization resource would narrow the general synthesis; the relevant comparison must allow source complexity/profile growth rather than silently fixing it.

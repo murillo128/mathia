@@ -2,31 +2,34 @@
 
 This file holds the current mathematical questions suggested by the durable Xi-flow intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Upgrade full-circle Fejer flatness to arbitrary q-scale Toeplitz coercivity
+## Use full q-scale Toeplitz coercivity and exact Xi-budget realization as established source theorems
 
 **Linked intuitions:** `MI-004-endpoint-prime-free-fourier-sector-is-volterra-triangular`, `MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow`, `MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy`, `MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global`, `MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility`, `MI-010-endpoint-renormalization-is-source-fixed-before-discretization`.
 
-XF-087--XF-100 close source extraction, endpoint renormalization, mesh sampling, full-prefix realization, and fixed-time periodic shadowing at the guarded low bandwidth, while showing that this entire prefix is prime-free. XF-101--XF-112 then move the sign question to the mass-preserving q-scale Toeplitz source and force every nonpositive witness to use broad coefficient support and macroscopic Fourier mass outside a PNT-flat central window.
+XF-087--XF-100 close source extraction, endpoint renormalization, mesh sampling, full-prefix realization, and fixed-time periodic shadowing at the guarded low bandwidth, while showing that this entire prefix is prime-free. XF-101--XF-113 then identify the mass-preserving q-scale Toeplitz source and progressively constrain hypothetical negative witnesses; coarse support, concentration, roughness, and bad-set controls alone still admit matched negatives.
 
-XF-113 proves that those coarse restrictions do not imply positivity: a matched Fejer-well control can satisfy the current `ell^1`/`ell^2`, support, flatness, concentration, and roughness gates while retaining a negative finite-section Rayleigh direction. XF-114 then supplies the first source-specific Fejer-scale repair. A triangular explicit-formula bridge plus Vinogradov--Korobov gives a fixed central mesh-angle arc on which the actual Xi Fejer average is uniformly positive.
+XF-114--XF-118 close the q-scale coercivity gap. Full-circle Fejer flatness is upgraded by a smooth-carrier/autocorrelation lift to
 
-XF-115 removes the remaining plane-wave sector completely. The XF-108 deposition is an exact translation-invariant cardinal kernel; Poisson alias decomposition reduces its entire discrete q-scale response to continuous Xi transforms plus rapidly decaying aliases. Vinogradov--Korobov controls polynomial-frequency aliases and smooth deposition kills the rest, yielding
-`sup_theta |A_a(theta)-1| -> 0` on the **whole Fejer circle**. Fixed-depth Fejer wells of the XF-113 type therefore cannot occur anywhere for the actual Xi source.
+`||T_hat_K-I||_op -> 0`, hence `lambda_min(T_hat_K)=1-o(1)>0`,
 
-The live theorem is now stronger and narrower: convert full-circle Fejer/plane-wave flatness into positivity of the full degree-`K` Toeplitz section, or identify the remaining non-plane-wave obstruction. A negative eigenvector may distribute its polynomial Fourier mass among multiple packets and need not be detected by one translated Fejer kernel. The next source theorem must control that arbitrary polynomial concentration, not search for another scalar well. Reaching the first prime atom remains a separate prime-band interface problem.
+for the entire natural degree-`K` Toeplitz section. Arbitrary q-scale polynomial witnesses are therefore controlled, not just plane waves.
 
-## Force Xi-specific symmetry breaking beyond plane-wave symbol tests
+XF-119 closes the remaining **static realization** gap at the actual Xi node budget. A backward Poisson factor at radius `r_K=e^{-gamma/K}` is a uniformly bounded Schur multiplier on the near-identity Toeplitz section. After representing the inflated moments and convolving forward with the Poisson kernel, one obtains the original first `K` Xi moments with a density uniformly bounded above and below. Equal-weight trigonometric quadrature then realizes those moments exactly for every sufficiently large node count `N>=C K`; since the Xi budget satisfies `N/K -> infinity`, the prescribed degree `N=2q^2` itself eventually works.
 
-XF-098--XF-100 show that even extensive collision participation can be invisible below the relevant symmetry frequency and that the current guarded trajectory can be shadowed by prime-free periodic data. XF-109--XF-113 show that generic q-scale negativity can survive coarse concentration gates. XF-114--XF-115 now distinguish the actual Xi source from the explicit fixed-well controls at every mesh angle, but this distinction is still only a family of plane-wave/Fejer tests rather than full Toeplitz coercivity.
+The low/q-scale source prefix is therefore not merely approximately admissible or positive: it has an **exact equal-weight real-divisor realization at the Xi degree budget**. The live problem starts after static source admission. A positive-`Lambda` contradiction must show that the exact transition/guarded-energy dynamics force a property incompatible with this source-faithful realized prefix, or identify a different scale where the transition sees information absent from the q-scale model.
 
-A positive-`Lambda` contradiction must therefore connect the actual Xi transition to a source-faithful observable that defeats both collision-invisible periodic controls and genuinely multi-packet q-scale negative witnesses. Collision count, density, bounded displacement, generic real-rooted heat flow, generic Toeplitz indefiniteness, vanishing bad-set measure, or one-angle symbol positivity remain insufficient by themselves.
+## Force Xi-specific transition coercivity beyond the now-solved q-scale source and realization gates
 
-## Decide the low/q-scale versus prime-band fork explicitly
+XF-098--XF-100 show that the guarded low-frequency trajectory can be shadowed by prime-free periodic data. XF-114--XF-119 now strengthen the source side dramatically: the actual Xi q-scale moment matrix is asymptotically identity and those moments admit exact equal-weight degree-`N` real-divisor realization with the correct node budget.
 
-Staying below the first prime atom requires an Xi-specific coercivity theorem from archimedean/endpoint data and the mass-preserving q-scale source constraints already present there, now using full-circle Fejer flatness as an input rather than as the endpoint. Moving to `xi=Theta(1)` beginning at `lambda_2` requires handling distributional prime-power atoms and replacing the current perturbative point-sampling/shadow estimate.
+Neither theorem is an upper bound on the de Bruijn--Newman transition time. The remaining bridge must connect a hypothetical `Lambda>0` transition to a forbidden sign, energy, collision, or transport condition for the **exact realized q-scale prefix** after endpoint renormalization and periodic Vieta evolution. If the transition theorem does not consume this q-scale resource, then the line should move scales rather than continue strengthening static feasibility that is already solved.
 
-The decisive test for either route is a matched periodic/source control at the exact bandwidth consumed by the destination theorem. Hidden high modes cannot be credited to a low-band argument, and q-scale plane-wave flatness cannot be transferred to a prime-band model without a new interface theorem.
+## Decide the q-scale versus prime-band fork explicitly
 
-## Keep transition coercivity separate from transport at each declared scale
+Staying below the first prime atom no longer lacks source-side positivity or real-divisor admission: XF-118--XF-119 supply both. The missing statement is a transition theorem showing that the declared positive-`Lambda` scenario cannot coexist with that exact source realization and its guarded evolution.
 
-A successful source-to-grid theorem does not imply `Lambda<=0`, and full-circle Fejer flatness does not by itself imply finite Toeplitz positivity. Future results should state explicitly whether they change source admission, transport stability, observable bandwidth, arbitrary-polynomial q-scale coercivity, or transition coercivity, and should not transfer conclusions across those gates without a theorem.
+Moving to `xi=Theta(1)` beginning at `lambda_2` remains a separate route. It must handle distributional prime-power atoms and replace the current perturbative point-sampling/shadow estimate. Q-scale Toeplitz coercivity and equal-weight realization must not be transferred to the prime band without a new interface theorem.
+
+## Keep source coercivity, exact realization, transport, and transition coercivity separate
+
+XF-118 and XF-119 are genuine unconditional source theorems: full-cone positivity followed by exact Xi-budget real-divisor realization. They do not imply `Lambda<=0`. Future results should state explicitly whether they change source admission, realization, transport stability, observable bandwidth, prime-band access, or the transition inequality. The now-closed q-scale positivity and static-realization gates should not be reopened unless a later destination theorem requires a materially different matrix, moment set, or scale.
