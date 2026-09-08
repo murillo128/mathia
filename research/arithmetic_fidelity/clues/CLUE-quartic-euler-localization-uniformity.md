@@ -58,7 +58,7 @@ AF-202 translates that observation topology exactly back to fixed-order minimal-
 
 so `Lambda_sigma(beta)->0`, weak carrier concentration, and `D->0` are equivalent. Compact gap-ratio control and bounded `D/W_1` are therefore stronger than the intrinsic localization requirement.
 
-AF-203 now closes the projective-properness test left open after AF-202. Every five-node quartic minimal-support source satisfies the exact nonsharp inequality
+AF-203 closes the projective-properness test left open after AF-202. Every five-node quartic minimal-support source satisfies the exact nonsharp inequality
 
 `D <= 3 Q W_1`.
 
@@ -68,6 +68,16 @@ Hence bounded `Q` together with `W_1->0` already forces `D->0`; no separate sour
 
 which allows `Q` to grow and still yields uniform fixed-band transfer.
 
-The unrestricted normalized full-Euler objective does not generate this coercivity automatically: AF-200's escape family lies in vanishing normalized Euler sublevels while `Q->infinity` and the physical diameter escapes. Thus unrestricted full-Euler sublevel compactness, and with it unrestricted minimizer transfer to the homogeneous `Q`-optimizer, is ruled out by existing evidence.
+AF-204 closes the remaining varying-profile **full-band transfer** question exactly. The real-axis localization defect quantitatively calibrates the whole fixed complex band:
 
-The clue remains accepted because the **weakest** varying-profile gate is still open. The live residual is now to characterize the sharp relation among `Q`, `D`, `W_1`, and the Peano/Euler localization defect that is necessary and sufficient for transfer, and to determine whether a mathematically natural constrained Euler problem supplies that relation. `Q=O(1)` is sufficient, and `Q^2W_1->0` is a weaker sufficient condition; neither is yet shown to be the intrinsic minimal condition.
+`full-band transfer error ~ Q Lambda_sigma(beta)`
+
+up to constants depending only on the fixed anchor, half-plane edge, and finite vertical band. In the exact five-node quartic minimal-support class, AF-202 and AF-203 then give the equivalent source criterion
+
+`Q D -> 0`.
+
+Thus `Q^2 W_1->0` is a convenient sufficient surrogate, not the intrinsic varying-profile gate. The retained quartic response amplitude and physical knot-localization scale have to vanish in product.
+
+The unrestricted normalized full-Euler objective still does not generate this coercivity automatically: AF-200's escape family lies in vanishing normalized Euler sublevels while `Q->infinity` and the physical diameter escapes. Therefore unrestricted full-Euler sublevel compactness, and with it unrestricted minimizer transfer to the homogeneous `Q`-optimizer, remains ruled out by existing evidence.
+
+The clue remains accepted rather than resolved because its optimizer-transfer component is still open. The live residual is now narrower: identify a mathematically natural constrained source class or Euler objective for which low scalar objective forces `QD->0` **and** enough projective compactness to transfer the unique homogeneous `Q`-optimizer to actual full-Euler minimizers, or prove that no natural such class exists. AF-204 concerns the full band profile; AF-201 already warns that convergence of a scalar band supremum alone need not imply profile convergence, so the minimizer step requires an additional argument rather than following formally from the exact transfer gate.
