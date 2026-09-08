@@ -43,3 +43,8 @@ derived: true
 - [[research/mobius_cancellation/findings/MC-153-finite-depth-mixed-semigroup-commutator-parity-blind|MC-153]]
 - [[research/mobius_cancellation/findings/MC-154-all-depth-mixed-commutator-sparse-witness-barrier|MC-154]]
 - [[research/mobius_cancellation/findings/MC-155-simultaneous-all-depth-commutator-row-norm-barrier|MC-155]]
+- [[research/mobius_cancellation/findings/MC-156-single-prime-signed-commutator-cubic-reconstruction|MC-156]]
+- [[research/mobius_cancellation/findings/MC-157-single-prime-commutator-spectral-filter-top-mode|MC-157]]
+- [[research/mobius_cancellation/findings/MC-158-arbitrary-scalar-commutator-filter-orientation-dichotomy|MC-158]]
+- [[research/mobius_cancellation/findings/MC-159-finite-joint-prime-commutator-scalarization-dichotomy|MC-159]]
+- [[research/mobius_cancellation/findings/MC-160-infinite-prime-linear-commutator-mertens-completeness|MC-160]]

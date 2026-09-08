@@ -33,3 +33,6 @@ derived: true
 - [[research/weil_positivity/findings/WP-209-bost-connes-critical-kms-midpoint-forces-half-density-but-bounded-correlations-cannot-carry-mangoldt-mass|WP-209]]
 - [[research/weil_positivity/findings/WP-210-critical-kms-one-over-k-repair-is-euler-log-but-thermodynamic-convexity-misweights-prime-powers|WP-210]]
 - [[research/weil_positivity/findings/WP-211-kms-duhamel-canonical-correlation-erases-critical-half-density-and-still-needs-infinite-mangoldt-mass|WP-211]]
+- [[research/weil_positivity/findings/WP-212-centered-inverse-kubo-mori-metric-suppresses-critical-half-density-and-worsens-mass-defect|WP-212]]
+- [[research/weil_positivity/findings/WP-214-continuous-bost-connes-liouville-grade-filters-cannot-create-prime-power-support|WP-214]]
+- [[research/weil_positivity/findings/WP-215-bost-connes-state-hamiltonian-filters-can-encode-prime-powers-but-critical-weil-weights-force-sharp-half-holder-threshold|WP-215]]

@@ -38,3 +38,8 @@ derived: true
 - [[research/visual_exploration/findings/VIS-102-three-bin-training-quantile-gap-level-four-null|VIS-102]]
 - [[research/visual_exploration/findings/VIS-103-degree-four-logsignature-affine-null-equivalence|VIS-103]]
 - [[research/visual_exploration/findings/VIS-104-area-area-commutator-projection|VIS-104]]
+- [[research/visual_exploration/findings/VIS-105-next-block-area-area-commutator-null|VIS-105]]
+- [[research/visual_exploration/findings/VIS-106-area-area-four-block-replication-panel-null|VIS-106]]
+- [[research/visual_exploration/findings/VIS-107-area-area-markov-type-affine-line-collapse|VIS-107]]
+- [[research/visual_exploration/findings/VIS-108-level-four-markov-pair-fourier-homometric|VIS-108]]
+- [[research/visual_exploration/findings/VIS-109-third-order-correlation-minimal-span-boundary|VIS-109]]

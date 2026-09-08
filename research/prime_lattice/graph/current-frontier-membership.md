@@ -36,3 +36,8 @@ derived: true
 - [[research/prime_lattice/findings/PL-222-bost-connes-finite-prime-kms-spectrum-programmability|PL-222]]
 - [[research/prime_lattice/findings/PL-223-bost-connes-finite-prime-toeplitz-factorization|PL-223]]
 - [[research/prime_lattice/findings/PL-224-bost-connes-cyclotomic-corner-lcm-collapse|PL-224]]
+- [[research/prime_lattice/findings/PL-225-bost-connes-weak-completion-full-bh|PL-225]]
+- [[research/prime_lattice/findings/PL-226-bost-connes-scalar-renormalization-gns-tail-obstruction|PL-226]]
+- [[research/prime_lattice/findings/PL-227-bost-connes-lcm-conditioned-state-collapse|PL-227]]
+- [[research/prime_lattice/findings/PL-228-bost-connes-coprimality-conditioned-unit-boundary|PL-228]]
+- [[research/prime_lattice/findings/PL-229-unit-haar-dirichlet-shifted-zeta-repackaging|PL-229]]

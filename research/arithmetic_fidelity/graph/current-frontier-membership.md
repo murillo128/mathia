@@ -39,3 +39,8 @@ derived: true
 - [[research/arithmetic_fidelity/findings/AF-204-weighted-euler-localization-exactly-calibrates-varying-profile-transfer|AF-204]]
 - [[research/arithmetic_fidelity/findings/AF-205-fixed-order-euler-transfer-is-weighted-saturated-knot-localization|AF-205]]
 - [[research/arithmetic_fidelity/findings/AF-206-higher-convex-order-is-the-positive-peano-cone-for-euler-transfer|AF-206]]
+- [[research/arithmetic_fidelity/findings/AF-207-signed-peano-carriers-defeat-fixed-band-euler-coercivity|AF-207]]
+- [[research/arithmetic_fidelity/findings/AF-208-fixed-compact-support-does-not-restore-signed-euler-coercivity|AF-208]]
+- [[research/arithmetic_fidelity/findings/AF-209-positive-width-euler-bands-are-injective-and-bv-complexity-restores-coercivity|AF-209]]
+- [[research/arithmetic_fidelity/findings/AF-210-precompact-source-complexity-turns-euler-bands-into-finite-norming-sets|AF-210]]
+- [[research/arithmetic_fidelity/findings/AF-211-bv-euler-coercivity-deteriorates-superalgebraically-with-complexity|AF-211]]

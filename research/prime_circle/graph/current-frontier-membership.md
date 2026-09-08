@@ -29,4 +29,5 @@ derived: true
 - [[research/prime_circle/findings/PC-219-full-transverse-mask-inertia-equals-cyclotomic-coefficient-sign-counts|PC-219]]
 - [[research/prime_circle/findings/PC-220-full-transverse-nonzero-spectrum-is-a-signed-ramanujan-projection-compression|PC-220]]
 - [[research/prime_circle/findings/PC-221-full-lower-conductor-feshbach-response-is-ramanujan-compressed-mask-data|PC-221]]
+- [[research/prime_circle/findings/PC-222-common-anchor-mangoldt-weighting-selects-only-prime-primary-axes|PC-222]]
 - [[research/prime_circle/mind/intuition/MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra|PC/MI-012]]

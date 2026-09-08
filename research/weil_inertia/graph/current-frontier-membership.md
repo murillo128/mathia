@@ -19,3 +19,5 @@ derived: true
 - [[research/weil_inertia/findings/WI-200-exponent-pair-short-interval-theorems-lower-long-bow-cutoff|WI-200]]
 - [[research/weil_inertia/findings/WI-201-bourgain-watt-does-not-supply-the-1515-4816-exponent-pair-input|WI-201]]
 - [[research/weil_inertia/findings/WI-202-current-antedb-exponent-pair-lowers-source-safe-bow-cutoff|WI-202]]
+- [[research/weil_inertia/findings/WI-203-exponent-pair-reservoir-has-a-quarter-floor|WI-203]]
+- [[research/weil_inertia/findings/WI-204-karatsuba-almost-all-exception-budget-cannot-prune-a-single-bow|WI-204]]
