@@ -78,6 +78,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-009-signed-radial-interior-survives-only-in-ordered-structure-before-mellin-or-self-adjoint-boundary-collapse]]
 - [[research/prime_circle/mind/intuition/MI-010-anchored-holomorphic-jets-have-one-mellin-carrier]]
 - [[research/prime_circle/mind/intuition/MI-011-scalar-fourier-zero-existence-is-deformation-dependent]]
+- [[research/prime_circle/mind/intuition/MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]
@@ -85,6 +86,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_flute/mind/intuition/MI-003-standard-global-selberg-machinery-is-structurally-incompatible]]
 - [[research/prime_flute/mind/intuition/MI-004-coordinate-amplification-is-not-operator-amplification]]
 - [[research/prime_flute/mind/intuition/MI-005-short-collar-multiplicity-reduces-to-one-local-splice]]
+- [[research/prime_flute/mind/intuition/MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency]]
 
 ### Prime Lattice
 - [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding]]
@@ -143,4 +145,6 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow]]
 - [[research/xi_flow/mind/intuition/MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy]]
 - [[research/xi_flow/mind/intuition/MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global]]
+- [[research/xi_flow/mind/intuition/MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility]]
+- [[research/xi_flow/mind/intuition/MI-010-endpoint-renormalization-is-source-fixed-before-discretization]]
 <!-- intuition-membership:end -->

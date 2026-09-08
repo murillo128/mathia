@@ -1,0 +1,33 @@
+---
+id: RG-prime-flute-current
+type: structural-membership
+scope: prime_flute
+derived: true
+---
+# Prime Flute current source window
+[[research/prime_flute/graph/prime-flute|Prime Flute research graph]]
+
+- [[research/prime_flute/findings/PF-196-solomyak-orlicz-penalty-is-logarithmic-but-prime-summable|PF-196]]
+- [[research/prime_flute/findings/PF-197-matrix-valued-critical-cwikel-theory-removes-local-vector-endpoint-gap|PF-197]]
+- [[research/prime_flute/findings/PF-198-finite-window-lambert-localization-preserves-critical-orlicz-budget|PF-198]]
+- [[research/prime_flute/findings/PF-199-two-sided-finite-color-localization-has-no-weak-trace-counting-loss|PF-199]]
+- [[research/prime_flute/findings/PF-200-regular-lambert-body-principal-cwikel-constants-are-uniform|PF-200]]
+- [[research/prime_flute/findings/PF-201-global-to-local-cwikel-factorization-removes-regular-body-off-diagonal-remainder|PF-201]]
+- [[research/prime_flute/findings/PF-202-decomposition-cuff-seams-have-arbitrarily-summable-critical-orlicz-budget|PF-202]]
+- [[research/prime_flute/findings/PF-203-piecewise-area-gluing-removes-cuff-smoothing-operator-gate|PF-203]]
+- [[research/prime_flute/findings/PF-204-native-two-hilbert-factorization-removes-rough-resolvent|PF-204]]
+- [[research/prime_flute/findings/PF-205-natural-width-cuff-smoothing-is-C1-uniform-and-critical-orlicz-summable|PF-205]]
+- [[research/prime_flute/findings/PF-206-isotropic-cuff-meshing-preserves-orlicz-budget-but-unit-normalization-erases-it|PF-206]]
+- [[research/prime_flute/findings/PF-207-dirichlet-block-dilation-restores-critical-seam-scale|PF-207]]
+- [[research/prime_flute/findings/PF-208-scale-matched-dirichlet-cutoff-commutators-are-trace-summable|PF-208]]
+- [[research/prime_flute/findings/PF-209-fixed-profile-boundary-recoupling-has-prime-summable-gradient-cost|PF-209]]
+- [[research/prime_flute/findings/PF-210-prime-density-makes-logarithmic-rank-low-modes-weak-trace-class|PF-210]]
+- [[research/prime_flute/findings/PF-211-energy-normalized-dtn-gluing-removes-exterior-amplification-from-low-mode-gate|PF-211]]
+- [[research/prime_flute/findings/PF-212-thin-fermi-boundary-frequency-split-closes-local-high-mode-gate|PF-212]]
+- [[research/prime_flute/findings/PF-213-summable-schur-off-diagonal-decay-closes-smooth-interface-reassembly-gate|PF-213]]
+- [[research/prime_flute/findings/PF-214-simultaneous-seam-precision-is-block-jacobi-and-uniform-adjacent-hopping-would-force-exponential-schur-locality|PF-214]]
+- [[research/prime_flute/findings/PF-215-thin-pant-corridors-force-normalized-adjacent-hopping-to-diverge|PF-215]]
+- [[research/prime_flute/findings/PF-216-positive-shift-pant-compression-has-a-growing-mass-floor|PF-216]]
+- [[research/prime_flute/findings/PF-217-tangential-boundary-screening-erases-the-raw-pant-mass-floor-after-shorting|PF-217]]
+- [[research/prime_flute/findings/PF-218-raw-mass-damping-cannot-accompany-summable-low-schur-transport|PF-218]]
+- [[research/prime_flute/mind/intuition/MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency|PF/MI-006]]

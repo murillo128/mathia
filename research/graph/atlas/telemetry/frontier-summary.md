@@ -14,7 +14,7 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `908487da37abfccf8474e1036acfd32de5d65632` → `34e794cb0a52ebaac8510c1c2e105cf1145b8ab4` contributes ten episodes:
+The newest source window `ea5d185aa84d6c855b5c79e08459349ab2eb5fa3` → `c878e793d550df0e6cb254af1f2031a4561bedba` contributes ten episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -26,30 +26,30 @@ The newest source window `908487da37abfccf8474e1036acfd32de5d65632` → `34e794c
 | `prime_lattice` | 1 | 0 | 0 | 0 | 1 |
 | `visual_exploration` | 1 | 0 | 0 | 0 | 1 |
 | `weil_inertia` | 1 | 0 | 0 | 0 | 1 |
-| `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
-| `xi_flow` | 1 | 1 | 0 | 0 | 0 |
+| `weil_positivity` | 1 | 1 | 0 | 0 | 0 |
+| `xi_flow` | 1 | 0 | 0 | 0 | 1 |
 | **Total** | **10** | **3** | **1** | **0** | **6** |
 
-Analytic Frontier closes the finite real-multiplicity family and then opens a source-specific complex/separable Hilbert tube, with the sharp Montgomery--Taylor equality class reduced to a two-site real zero-set packing. Arithmetic Fidelity similarly ends positively: once output gauge and pseudohyperbolic geometry are treated correctly, complete finite Blaschke products have a sharp fixed-degree divisor-recovery modulus.
+Analytic Frontier removes the pairwise recycling gate from the matched-critical sparse cascade: endpoint-localized packets are either excisable or force new disjoint high-layer source mass. Arithmetic Fidelity also advances positively by turning the source-side problem into an explicit divided-difference optimization and producing nonuniform cubic/quartic controls that beat the equispaced parity baseline at fixed Wasserstein scale.
 
-Möbius Cancellation strengthens two negative boundaries at once: growing radial Hamming filters retain a critical shell floor, and sub-`L^1` fractional moments do not generically recover first-absolute-moment cancellation even when controlled throughout a polynomial scale window. The earlier `MC-107` review sidecar has disappeared while the finding survives, so the former review quarantine is no longer applied.
+Möbius Cancellation closes a broad local-state/finite-character family: bounded memory, modular clocks and Bost--Connes character channels remain excursion-blind even after continuous coefficient freedom. Prime Circle's larger finite scalar fusion family instead lands directly in known classical packet algebra — Dirichlet characters, Mordell--Tornheim/rational-cone data and profinite prime-local refinement — so it is recorded as a prior-art collision rather than a new obstruction.
 
-Prime Circle's reciprocal Fourier construction sharply classifies prime-power shells, but the global character continuation classicalizes: the one-shell Cauchy--Poisson field is ordinary Dirichlet `L` data and the natural sesquilinear two-shell fusion is the composite-character packet. Prime Flute reaches weak trace class for the complete short-collar central sector but closes the generic endpoint shortcut because critical one-sided weak-`S_2` localization is not controlled by endpoint mass alone.
+Prime Flute reaches the Schur reassembly gate but normalized adjacent pant hopping diverges; boundary shorting screens the naive raw pant-mass floor, leaving screened off-diagonal locality as the actual obstruction. Prime Lattice similarly finds that wider nonunitary/operator-valued transports increase programmability rather than arithmetic rigidity, while the Bost--Connes continuation collapses finite high-temperature correlations and separates temperature sectors.
 
-Prime Lattice closes scalar and fixed-finite-dimensional prime-covariance repairs for self-adjoint resolvents. Visual Exploration identifies exact shared-prime-phase resonance laws and then shows that coordinate-separable additive log-Euler windows have no cross-prime small-divisor barrier, forcing any useful visual coupling statistic toward genuinely mixed/nonlinear structure.
+Visual Exploration extends its null models from Gram-clock finite-order observables to persistence and simple temporal-delay signatures, which retain too little global ordering to discriminate the arithmetic source. Weil Inertia identifies the decisive multiplicative Gallagher `L^2` gate and verifies that twist-averaged diagonal control plus the published Type-II module do not reach the bow scale required to close it.
 
-Weil Inertia's count-saturating bow reduces to a structured B-process alias family that current almost-all prime-uniformity can legally miss in its exceptional set. Weil Positivity extends the Gamma no-go through bounded-characteristic projective coordinates and finite rational decoding. Xi Flow, by contrast, closes the static real-divisor realization gate positively: guarded selector energy automatically places the visible moment vector inside the exact equal-weight realization cone.
+Weil Positivity is the other positive movement: rough infinite centered baths escape the finite regular positive-background no-go, universally stabilize finite positive `4k` payloads, and admit a sharp reciprocal-Fourier-floor characterization. Xi Flow, by contrast, pushes transition nonidentifiability to a fixed fraction of the `q` scale and shows that any surviving Toeplitz witness must be collective, `q`-scale and macroscopically rough because PNT flattening kills smooth witnesses.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **6 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **11 new barriers**. Therefore:
+Across the retained 20-episode window there are **6 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
 
 - `FrontierFertilityEpisodes = 30.0%`
-- `BarrierRate = 55.0%`
-- `PriorArtCollisionRate = 15.0%`
+- `BarrierRate = 60.0%`
+- `PriorArtCollisionRate = 10.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The represented frontier remains obstruction-heavy. The strongest positive movement is now concentrated in source-constrained quantitative geometry: the Analytic Frontier complex tube, fixed-degree Blaschke divisor fidelity, and Xi's exact equal-weight selector realization. The negative movement is correspondingly more specific: sub-`L^1` transfer, classical character fusion, critical endpoint localization, finite-fiber covariance, additive prime-phase averaging, almost-all alias control, and bounded-characteristic Gamma completion are each closed only within their stated source classes.
+The represented frontier remains obstruction-heavy, but the positive episodes have become more category-specific rather than merely broader: packet-level endpoint geometry, optimized nonuniform source controls, exact finite-divisor realization in the previous window, and now rough infinite-bath stabilization. The dominant negative pattern is that finite-state, scalar, smooth, regular or purely averaged enrichments repeatedly fail to preserve the source information required at the destination.
 
 These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas. Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.
