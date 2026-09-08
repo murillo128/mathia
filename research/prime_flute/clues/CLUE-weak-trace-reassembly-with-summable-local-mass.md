@@ -20,6 +20,7 @@ based_on:
   - research/prime_flute/findings/PF-215-thin-pant-corridors-force-normalized-adjacent-hopping-to-diverge.md
   - research/prime_flute/findings/PF-216-positive-shift-pant-compression-has-a-growing-mass-floor.md
   - research/prime_flute/findings/PF-217-tangential-boundary-screening-erases-the-raw-pant-mass-floor-after-shorting.md
+  - research/prime_flute/findings/PF-218-raw-mass-damping-cannot-accompany-summable-low-schur-transport.md
 ---
 
 # Can the exact first relative resolvent be completed at the weak-trace endpoint?
@@ -37,14 +38,23 @@ PF-217 closes the next proposed gate negatively. If `P` projects onto those low-
 =\inf_{y\in Q\operatorname{Dom}(\mathfrak a)}\mathfrak a[x+y]
 \]
 
-does not retain any fixed positive fraction of PF-216's raw mass currency. Tangentially localized boundary bumps preserve a macroscopic low-symmetric projection while avoiding the growing-corridor ends responsible for the positive-shift onsite floor; a slowly varying tail envelope makes the remaining conductance energy sublinear. Explicitly, PF-217 constructs finite-support `x^{(N)}` with
+does not retain any fixed positive fraction of PF-216's raw mass currency. Tangentially localized boundary bumps preserve a macroscopic low-symmetric projection while avoiding the growing-corridor ends responsible for the positive-shift onsite floor; a slowly varying tail envelope makes the remaining conductance energy sublinear.
+
+PF-218 now passes that obstruction through the **actual inverse**. If `S` is the operator represented by the shorted form, then
 
 \[
-\frac{\mathfrak s_{\rm low}[x^{(N)}]}
-{\sum_n|x_n^{(N)}|^2/q_n}\longrightarrow0.
+S^{-1}=P(I+K)^{-1}P=PDP.
 \]
 
-So the smooth branch must no longer try to prove `\mathfrak s_{\rm low}\gtrsim\mathfrak m_{\rm PF216}`. What remains open is whether the **screened effective form itself** still has enough weighted structure for PF-213-compatible inverse transport. The unsmoothed PF-204 route and PF-183 true-short-collar route remain independent alternatives.
+Writing `W\nu_n=q_n^{-1}\nu_n`, the PF-217 tail vectors force the finite-block norms of `W^{1/2}PDPW^{1/2}` to diverge. Therefore the screened inverse cannot satisfy any tail-uniform transport envelope of the form
+
+\[
+|\langle\nu_m,D\nu_n\rangle|
+\le C\sqrt{q_mq_n}\,\eta_{m-n},
+\qquad \eta\in\ell^1.
+\]
+
+So the smooth branch must no longer try either to prove `\mathfrak s_{\rm low}\gtrsim\mathfrak m_{\rm PF216}` or to recover the same raw `q_n` currency as endpoint damping of the inverse. What remains open is whether the **coefficient-weighted screened inverse** still has enough structure for PF-213-compatible reassembly once the physical `d_n` perturbation scale is retained. The unsmoothed PF-204 route and PF-183 true-short-collar route remain independent alternatives.
 
 ## Research question
 
@@ -57,13 +67,13 @@ Can one write the exact prime/shift first relative resolvent as already controll
 
 while PF-112 continues to exclude `\mathcal S_1`?
 
-For the smooth decomposition-interface route, what is the leading effective low form after the PF-217 tangential screening directions are actually minimized out, and does the inverse of that screened form satisfy a PF-213-compatible module transport estimate in the physical `d_n` coefficient currency? For the competing unsmoothed route, can PF-204's exact `(dR_g)^*M_{C_0}P_{F_0}dR_+` factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
+For the smooth decomposition-interface route, what is the leading effective low form after the PF-217 tangential screening directions are actually minimized out, and does the **physical-coefficient-weighted inverse** satisfy a PF-213-compatible module transport estimate? PF-218 shows that one cannot first demand a `q_n^{1/2}` damping factor from each endpoint of `PDP` and then attach the smaller `d_n` coefficient afterwards. For the competing unsmoothed route, can PF-204's exact `(dR_g)^*M_{C_0}P_{F_0}dR_+` factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
 
 ## Why it may matter
 
 A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 rules out trace class while the accumulated endpoint machinery would place the full difference in `S_{1,\infty}`.
 
-PF-217 makes the remaining smooth question more discriminating. Large raw pant conductance and raw onsite coercivity are both insufficient descriptions after Schur elimination. Any successful smooth proof must expose the genuinely screened variable-coefficient boundary chain and show that its inverse transports low module data weakly enough for the endpoint reassembly. Conversely, a failure of that actual effective transport would be a substantive obstruction rather than an artifact of the raw compression.
+PF-217 and PF-218 make the remaining smooth question more discriminating. Large raw pant conductance, raw onsite coercivity, and raw-`q` inverse damping are all insufficient descriptions after Schur elimination. Any successful smooth proof must expose the genuinely screened variable-coefficient boundary chain and estimate the inverse **in the same physical coefficient currency in which the relative-resolvent word is assembled**. Conversely, failure of that actual coefficient-weighted transport would be a substantive obstruction rather than an artifact of a raw compression or an overstrong endpoint normalization.
 
 ## Decisive test
 
@@ -80,18 +90,18 @@ and its low short
 =\inf_{y\in Q\operatorname{Dom}(\mathfrak a)}\mathfrak a[x+y].
 \]
 
-PF-217 has already falsified a fixed-fraction lower bound by the PF-216 raw mass floor. The next decisive calculation is therefore to identify upper and lower asymptotic weights for `\mathfrak s_{\rm low}` itself after tangential screening. In particular, determine whether it is comparable, in a form sense strong enough for inversion, to a variable-conductance chain or another explicit weighted form whose Green kernel can be estimated.
+PF-217 has already falsified a fixed-fraction lower bound by the PF-216 raw mass floor, and PF-218 has falsified the corresponding `q`-damped summable inverse-transport completion. The next decisive calculation is therefore to identify upper and lower asymptotic weights for `\mathfrak s_{\rm low}` itself after tangential screening **or** to bypass a standalone model for `D` and estimate the actual `d_n`-weighted recoupling blocks directly.
 
-Then test the resulting inverse blocks directly against PF-213's reassembly currency. A successful smooth result must control the actual effective inverse, not infer locality from raw `K` blocks or raw constant-mode coercivity. A negative result should exhibit a concrete family of low data whose screened Green response violates every candidate PF-213 transport envelope.
+If an explicit screened form is derived, estimate its Green kernel only in a weight that survives PF-218. A successful smooth result must control the actual effective inverse with the physical `d_n` coefficient present; it cannot infer locality from raw `K` blocks, raw constant-mode coercivity, or a hypothetical uniform `PDP\lesssim\operatorname{diag}(q_n)` bound. A negative result should exhibit a concrete family of low data whose **coefficient-weighted** screened Green response violates every candidate PF-213 transport envelope.
 
 As alternative work, attack PF-204's native two-Hilbert-space factorization directly at weak `S_1`, or settle the PF-183 conservative true-short-collar splice. A complete success must ultimately write one first-relative-resolvent identity for a single global identification and verify every term against persisted sector estimates; mutually incompatible smooth and unsmoothed architectures cannot simply be combined to cover gaps.
 
 ## Evidence boundary
 
-No full weak-`S_1` theorem is established. PF-217 proves only that PF-216's raw low-symmetric onsite floor is not stable under the variational elimination defining the correct low Schur form. It does not determine the screened effective form, prove slow inverse decay, refute PF-213 locality, or show that the smooth architecture fails. PF-204's unsmoothed endpoint and PF-183's true-short-collar endpoint are also unresolved.
+No full weak-`S_1` theorem is established. PF-217 proves only that PF-216's raw low-symmetric onsite floor is not stable under the variational elimination defining the correct low Schur form. PF-218 proves the exact inverse consequence that the low compression `PDP` cannot have a tail-uniform `q`-damped summable transport envelope. Neither result determines the screened effective form, proves slow unweighted inverse decay, refutes PF-213's sufficient locality criterion, or shows that the smooth architecture fails. PF-204's unsmoothed endpoint and PF-183's true-short-collar endpoint are also unresolved.
 
 Clue acceptance therefore means only that the sharp weak-trace classification remains a concrete, evidence-backed target. It does not imply wave-operator completeness, a scattering matrix, determinant/resonance control, prime/clone separation, or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`. PF-217 resolves the previous "survival of the PF-216 raw floor" test negatively and removes that completion strategy. The smooth branch now has one sharper gate: derive and invert the **screened** effective low boundary form in the module-weight currency required by PF-213. PF-204 and the PF-183 true-short-collar splice remain the two independent competing/complementary gates.
+The clue remains `accepted`. PF-217 resolves the previous "survival of the PF-216 raw floor" test negatively, and PF-218 removes the next raw-weight completion: the exact low Schur inverse cannot combine `q_n^{1/2}` endpoint damping with summable module transport. The smooth branch now has one sharper gate: derive and invert the **screened** effective boundary form in a weaker weight, or estimate the actual `d_n`-weighted recoupling operator directly. PF-204 and the PF-183 true-short-collar splice remain the two independent competing/complementary gates.
