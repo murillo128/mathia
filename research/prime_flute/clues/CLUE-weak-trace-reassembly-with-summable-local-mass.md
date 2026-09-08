@@ -21,6 +21,7 @@ based_on:
   - research/prime_flute/findings/PF-216-positive-shift-pant-compression-has-a-growing-mass-floor.md
   - research/prime_flute/findings/PF-217-tangential-boundary-screening-erases-the-raw-pant-mass-floor-after-shorting.md
   - research/prime_flute/findings/PF-218-raw-mass-damping-cannot-accompany-summable-low-schur-transport.md
+  - research/prime_flute/findings/PF-219-no-fixed-polylogarithmic-weakening-restores-damped-low-schur-transport.md
 ---
 
 # Can the exact first relative resolvent be completed at the weak-trace endpoint?
@@ -40,7 +41,7 @@ PF-217 closes the next proposed gate negatively. If `P` projects onto those low-
 
 does not retain any fixed positive fraction of PF-216's raw mass currency. Tangentially localized boundary bumps preserve a macroscopic low-symmetric projection while avoiding the growing-corridor ends responsible for the positive-shift onsite floor; a slowly varying tail envelope makes the remaining conductance energy sublinear.
 
-PF-218 now passes that obstruction through the **actual inverse**. If `S` is the operator represented by the shorted form, then
+PF-218 passes that obstruction through the **actual inverse**. If `S` is the operator represented by the shorted form, then
 
 \[
 S^{-1}=P(I+K)^{-1}P=PDP.
@@ -54,7 +55,9 @@ Writing `W\nu_n=q_n^{-1}\nu_n`, the PF-217 tail vectors force the finite-block n
 \qquad \eta\in\ell^1.
 \]
 
-So the smooth branch must no longer try either to prove `\mathfrak s_{\rm low}\gtrsim\mathfrak m_{\rm PF216}` or to recover the same raw `q_n` currency as endpoint damping of the inverse. What remains open is whether the **coefficient-weighted screened inverse** still has enough structure for PF-213-compatible reassembly once the physical `d_n` perturbation scale is retained. The unsmoothed PF-204 route and PF-183 true-short-collar route remain independent alternatives.
+PF-219 strengthens this from the exact raw scale to **every fixed polylogarithmic weakening**. For every fixed `a\ge0`, the same PF-217 vectors make the inverse unbounded after conjugation by `[q_n(1+L_n)^a]^{-1/2}`. In particular `q_n(1+L_n)\asymp q_n^2/d_n`, so even spending the full one-log separation between `q_n` and the physical seam coefficient `d_n` does not restore a summable scalar endpoint-damping envelope. Equivalently, a split coefficient cannot give an estimate `\sqrt{d_md_n}|\langle\nu_m,D\nu_n\rangle|\lesssim q_mq_n\eta_{m-n}` with `\eta\in\ell^1`.
+
+So the smooth branch must no longer try either to prove `\mathfrak s_{\rm low}\gtrsim\mathfrak m_{\rm PF216}`, to recover the same raw `q_n` currency as endpoint damping of the inverse, or to repair that scalar architecture by a fixed number of logarithmic losses. What remains open is whether the **actual coefficient-weighted recoupling operator**, with its physical `d_n` placement and low/high Poisson factors retained, still has enough structure for PF-213-compatible reassembly. The unsmoothed PF-204 route and PF-183 true-short-collar route remain independent alternatives.
 
 ## Research question
 
@@ -67,41 +70,37 @@ Can one write the exact prime/shift first relative resolvent as already controll
 
 while PF-112 continues to exclude `\mathcal S_1`?
 
-For the smooth decomposition-interface route, what is the leading effective low form after the PF-217 tangential screening directions are actually minimized out, and does the **physical-coefficient-weighted inverse** satisfy a PF-213-compatible module transport estimate? PF-218 shows that one cannot first demand a `q_n^{1/2}` damping factor from each endpoint of `PDP` and then attach the smaller `d_n` coefficient afterwards. For the competing unsmoothed route, can PF-204's exact `(dR_g)^*M_{C_0}P_{F_0}dR_+` factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
+For the smooth decomposition-interface route, can the **actual physical-coefficient-weighted recoupling words** satisfy a PF-213-compatible ideal/transport estimate once their noncommutative operator placement is retained? PF-218/PF-219 show that one cannot first assign a scalar endpoint damping to `PDP` at the raw `q_n` scale or at any fixed polylogarithmically weaker scale and then attach `d_n` afterwards. Thus a positive result must use structure lost by the scalar low compression: coefficient placement, low/high smoothing, or a genuinely different screened variable. For the competing unsmoothed route, can PF-204's exact `(dR_g)^*M_{C_0}P_{F_0}dR_+` factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
 
 ## Why it may matter
 
 A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 rules out trace class while the accumulated endpoint machinery would place the full difference in `S_{1,\infty}`.
 
-PF-217 and PF-218 make the remaining smooth question more discriminating. Large raw pant conductance, raw onsite coercivity, and raw-`q` inverse damping are all insufficient descriptions after Schur elimination. Any successful smooth proof must expose the genuinely screened variable-coefficient boundary chain and estimate the inverse **in the same physical coefficient currency in which the relative-resolvent word is assembled**. Conversely, failure of that actual coefficient-weighted transport would be a substantive obstruction rather than an artifact of a raw compression or an overstrong endpoint normalization.
+PF-217--PF-219 make the remaining smooth question more discriminating. Large raw pant conductance, raw onsite coercivity, raw-`q` inverse damping, and every fixed polylog relaxation of that scalar damping are all insufficient descriptions after Schur elimination. Any successful smooth proof must estimate the recoupling operator **in the same physical coefficient/operator currency in which the relative-resolvent word is assembled**. Conversely, failure of that actual operator-level coefficient-weighted transport would be a substantive obstruction rather than an artifact of raw compression or an overstrong endpoint normalization.
 
 ## Decisive test
 
-Work directly with the exact closed form
+Work with the exact PF-211/PF-212 recoupling expansion rather than a standalone scalar model for `D`. Keep the physical seam coefficient `d_n` in its real middle-module position and retain the low/high Poisson projections. Determine whether the resulting one-sided-low, mixed, and double-boundary words admit PF-213-compatible weak-ideal counting without extracting a fixed polylogarithmic diagonal weight from `PDP`.
+
+PF-217 has already falsified a fixed-fraction lower bound by the PF-216 raw mass floor. PF-218 falsifies `q`-damped summable inverse transport, and PF-219 falsifies every fixed polylogarithmic weakening, including the `q_n^2/d_n` scale. Therefore a proposed smooth completion that reduces again to
 
 \[
-\mathfrak a[f]=\|f\|^2+\mathfrak k[f]
+|\langle\nu_m,D\nu_n\rangle|
+\lesssim
+\sqrt{q_mq_n}\,(\log P_m\log P_n)^{O(1)}\eta_{m-n},
+\qquad \eta\in\ell^1,
 \]
 
-and its low short
-
-\[
-\mathfrak s_{\rm low}[x]
-=\inf_{y\in Q\operatorname{Dom}(\mathfrak a)}\mathfrak a[x+y].
-\]
-
-PF-217 has already falsified a fixed-fraction lower bound by the PF-216 raw mass floor, and PF-218 has falsified the corresponding `q`-damped summable inverse-transport completion. The next decisive calculation is therefore to identify upper and lower asymptotic weights for `\mathfrak s_{\rm low}` itself after tangential screening **or** to bypass a standalone model for `D` and estimate the actual `d_n`-weighted recoupling blocks directly.
-
-If an explicit screened form is derived, estimate its Green kernel only in a weight that survives PF-218. A successful smooth result must control the actual effective inverse with the physical `d_n` coefficient present; it cannot infer locality from raw `K` blocks, raw constant-mode coercivity, or a hypothetical uniform `PDP\lesssim\operatorname{diag}(q_n)` bound. A negative result should exhibit a concrete family of low data whose **coefficient-weighted** screened Green response violates every candidate PF-213 transport envelope.
+is already dead. A successful result must instead exploit additional operator structure; a negative result should exhibit a concrete family showing that even the **actual coefficient-placed recoupling word** violates the required weak-ideal/transport budget.
 
 As alternative work, attack PF-204's native two-Hilbert-space factorization directly at weak `S_1`, or settle the PF-183 conservative true-short-collar splice. A complete success must ultimately write one first-relative-resolvent identity for a single global identification and verify every term against persisted sector estimates; mutually incompatible smooth and unsmoothed architectures cannot simply be combined to cover gaps.
 
 ## Evidence boundary
 
-No full weak-`S_1` theorem is established. PF-217 proves only that PF-216's raw low-symmetric onsite floor is not stable under the variational elimination defining the correct low Schur form. PF-218 proves the exact inverse consequence that the low compression `PDP` cannot have a tail-uniform `q`-damped summable transport envelope. Neither result determines the screened effective form, proves slow unweighted inverse decay, refutes PF-213's sufficient locality criterion, or shows that the smooth architecture fails. PF-204's unsmoothed endpoint and PF-183's true-short-collar endpoint are also unresolved.
+No full weak-`S_1` theorem is established. PF-217 proves only that PF-216's raw low-symmetric onsite floor is not stable under variational elimination. PF-218 proves that `PDP` cannot have a tail-uniform `q`-damped summable transport envelope, and PF-219 extends this only to weights `q_n(1+L_n)^a` for each **fixed** `a`; it does not address growing exponents, nonsummable kernels, unweighted PF-213 locality, or the complete coefficient-placed recoupling operator. Neither result determines the screened effective form or shows that the smooth architecture fails. PF-204's unsmoothed endpoint and PF-183's true-short-collar endpoint are also unresolved.
 
 Clue acceptance therefore means only that the sharp weak-trace classification remains a concrete, evidence-backed target. It does not imply wave-operator completeness, a scattering matrix, determinant/resonance control, prime/clone separation, or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`. PF-217 resolves the previous "survival of the PF-216 raw floor" test negatively, and PF-218 removes the next raw-weight completion: the exact low Schur inverse cannot combine `q_n^{1/2}` endpoint damping with summable module transport. The smooth branch now has one sharper gate: derive and invert the **screened** effective boundary form in a weaker weight, or estimate the actual `d_n`-weighted recoupling operator directly. PF-204 and the PF-183 true-short-collar splice remain the two independent competing/complementary gates.
+The clue remains `accepted`. PF-217 removes raw-floor survival, PF-218 removes raw-`q` damped transport, and PF-219 shows that the failure is not repaired by any fixed logarithmic slack, including the first `q_n^2/d_n` scale. The smooth branch now has one sharper gate: estimate the **actual coefficient-placed low/high recoupling words** rather than recover scalar damping for `PDP`. PF-204 and the PF-183 true-short-collar splice remain the two independent competing/complementary gates.
