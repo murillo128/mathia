@@ -32,3 +32,8 @@ derived: true
 - [[research/mobius_cancellation/findings/MC-142-bost-connes-finite-character-polynomial-collapse|MC-142]]
 - [[research/mobius_cancellation/findings/MC-143-bost-connes-continuous-coefficient-mobius-obstruction|MC-143]]
 - [[research/mobius_cancellation/findings/MC-144-bost-connes-diagonal-readout-profinite-collapse|MC-144]]
+- [[research/mobius_cancellation/findings/MC-145-fixed-rational-bost-connes-band-profinite-collapse|MC-145]]
+- [[research/mobius_cancellation/findings/MC-146-full-rational-band-profile-continuous-decoder-collapse|MC-146]]
+- [[research/mobius_cancellation/findings/MC-147-bost-connes-von-neumann-closure-target-complete|MC-147]]
+- [[research/mobius_cancellation/findings/MC-148-bost-connes-time-flow-regularity-diagonal-blind|MC-148]]
+- [[research/mobius_cancellation/findings/MC-149-bost-connes-raw-semigroup-commutator-dichotomy|MC-149]]

@@ -30,3 +30,6 @@ derived: true
 - [[research/arithmetic_fidelity/findings/AF-195-minimal-moment-flat-stencils-are-divided-difference-controls|AF-195]]
 - [[research/arithmetic_fidelity/findings/AF-196-nonuniform-cubic-stencil-beats-equispaced-parity-at-fixed-wasserstein-scale|AF-196]]
 - [[research/arithmetic_fidelity/findings/AF-197-mirror-symmetric-quartic-stencils-beat-equispaced-parity|AF-197]]
+- [[research/arithmetic_fidelity/findings/AF-198-quartic-symmetric-stencil-is-strict-unrestricted-local-optimum|AF-198]]
+- [[research/arithmetic_fidelity/findings/AF-199-peano-spline-derivative-norm-source-geometry|AF-199]]
+- [[research/arithmetic_fidelity/findings/AF-200-fixed-band-euler-fidelity-collapses-under-quartic-mass-escape|AF-200]]

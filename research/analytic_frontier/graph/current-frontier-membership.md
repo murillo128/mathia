@@ -32,3 +32,8 @@ derived: true
 - [[research/analytic_frontier/findings/ANF-109-matched-critical-compensators-force-a-source-heavy-secondary-height-layer|ANF-109]]
 - [[research/analytic_frontier/findings/ANF-111-sublinear-source-heavy-layers-force-polarization-but-height-cascade-extraction-can-recycle-earlier-tails|ANF-111]]
 - [[research/analytic_frontier/findings/ANF-112-endpoint-localized-sparse-packets-are-either-excisable-or-force-new-disjoint-height-mass|ANF-112]]
+- [[research/analytic_frontier/findings/ANF-113-relative-endpoint-localization-makes-capacity-saturated-supercritical-tails-cascade|ANF-113]]
+- [[research/analytic_frontier/findings/ANF-114-effective-montgomery-taylor-triple-gap-forces-optimal-defect-to-span-exponent|ANF-114]]
+- [[research/analytic_frontier/findings/ANF-115-binomial-packets-realize-exponential-source-unsaturation-at-an-interior-spectral-saddle|ANF-115]]
+- [[research/analytic_frontier/findings/ANF-116-interior-saddle-translation-clusters-collapse-to-one-phasor-and-embed-harmlessly|ANF-116]]
+- [[research/analytic_frontier/findings/ANF-117-sqrt-a-translation-clouds-defeat-every-fixed-saddle-phase-jet|ANF-117]]

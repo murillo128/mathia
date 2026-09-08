@@ -22,4 +22,6 @@ derived: true
 - [[research/prime_circle/findings/PC-212-common-refinement-primitive-mask-gram-is-profinite-and-coprime-flat|PC-212]]
 - [[research/prime_circle/findings/PC-213-prime-power-mask-transverse-incidence-factorizes-prime-locally|PC-213]]
 - [[research/prime_circle/findings/PC-214-binary-mixed-composite-mask-transverse-compression-is-a-bounded-kronecker-sum-spectrum|PC-214]]
+- [[research/prime_circle/findings/PC-215-squarefree-mixed-mask-transverse-compression-has-exact-locality-omega-minus-one|PC-215]]
+- [[research/prime_circle/findings/PC-216-squarefree-root-value-transfer-is-divisor-cube-coboundary|PC-216]]
 - [[research/prime_circle/mind/intuition/MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra|PC/MI-012]]

@@ -27,3 +27,6 @@ derived: true
 - [[research/prime_lattice/findings/PL-213-bost-connes-type-iii1-modular-scale-collapse|PL-213]]
 - [[research/prime_lattice/findings/PL-214-bost-connes-high-temperature-algebraic-correlation-collapse|PL-214]]
 - [[research/prime_lattice/findings/PL-215-bost-connes-temperature-sector-disjointness|PL-215]]
+- [[research/prime_lattice/findings/PL-216-bost-connes-temperature-tangent-singularity|PL-216]]
+- [[research/prime_lattice/findings/PL-217-bost-connes-one-prime-temperature-profile-programmability|PL-217]]
+- [[research/prime_lattice/findings/PL-218-bost-connes-positive-contraction-temperature-programmability|PL-218]]

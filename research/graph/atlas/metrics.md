@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 4bc527123c549c73b4ce4f04512cb291b342311d
+source_revision: b368ebfb1034d11495816c9333c22ef27e690bad
 derived: true
 ---
 
@@ -28,7 +28,7 @@ Thus:
 - pruned share of visited mass = **18.3%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-One v1 leaf changes state: [[research/graph/atlas/territories/RA-F3-de-bruijn-newman-deformations|F3]] moves from `unvisited` to `reproduced` after [[research/prime_lattice/findings/PL-121-de-bruijn-newman-rank-one-heat-coupling|PL-121]] directly traverses the established de Bruijn–Newman heat-flow mechanism and identifies its prime-exponent quadratic coupling as rank one. This records a traversal of known deformation territory; it does not prune de Bruijn–Newman theory and does not alter the v1 denominator.
+No v1 territory changes state in the current source window. The denominator and all state masses remain unchanged; recent findings sharpen internal boundaries inside already represented territories rather than creating a source-backed state transition.
 
 ## Largest unvisited territories
 
@@ -46,28 +46,26 @@ Hard-pruned mass remains concentrated in the same five scoped interfaces: ordina
 
 Largest live family masses remain B moments/inertia/statistics (**8.5%**), C explicit-formula/positivity (**8.5%**), H geometric/cohomological/adelic (**6.8%**), A classical analytic localization (**6.5%**), G arithmetic/harmonic (**5.0%**), F equivalent criteria (**4.0%**), and E scattering/dynamical (**3.5%**).
 
-Arithmetic Fidelity now requires coherent compact witness geometry for cross-scale fidelity and distinguishes linear splitting from nonlinear metric quotient repair. Möbius Cancellation shows that Huxley–Watt endpoint corrections, finite jets and higher-degree scale doubling remain exponent-neutral without new signed information. Prime Circle isolates a gap-two macroscopic spectral cliff with average/Frobenius locking at exact Mertens scale but persistent sparse operator-norm leakage. Prime Flute closes natural first-resolvent Schatten and scalar-reference escapes while proving uniform tail marked-length blindness under the all-composite shift clone.
-
-Prime Lattice maps de Bruijn–Newman heat flow, absolute-twistor odd Frobenius geometry, Poisson–Newton trace universality and Sierra/Grosswald–Schnitzer controls. The Grosswald–Schnitzer phase slope is a genuine integer-lattice discriminator, while stronger completion assumptions can restore rigidity without using that lattice. Weil Inertia separates full rank from coercivity and, after the `4bc527` correction, still forces polynomial-dimensional near-nullity beyond square root with the stated `0<eta<10/21` range. Weil Positivity obtains a canonical Markov-positive Gamma/digamma symbol while direct critical prime coupling and broad local positive repairs remain divergent.
+The current source window is mostly a narrowing window. Analytic Frontier moves the sparse fixed-notch escape to a mesoscopic saddle-profile problem; Arithmetic Fidelity exposes unrestricted mass escape beyond local spline optimization; Möbius Cancellation and Prime Lattice close broad Bost--Connes scalar/regularity controls; Prime Flute separates compactness from the weak-trace endpoint; Prime Circle removes the first squarefree coefficient-holonomy mechanism; and Weil Positivity closes the standard Koszul repair of the Gamma/Barnes roughness conflict. Weil Inertia shrinks its hard bow range through audited short-interval literature. Positive movement is concentrated in a usable quantized chronology null for Visual Exploration and Xi-specific full-circle Fejer flatness.
 
 ## Structural signals
 
-- **8** current research lines are source-backed: six RH-facing lines plus Arithmetic Fidelity and Visual Exploration.
+- **13** current research-line hubs are materialized in the global graph.
 - Atlas v1 still has **10 macro-families and 37 leaf territories**; the denominator is unchanged.
-- Family F reaches **100% v1 traversal** because F3 moved to `reproduced`; this means taxonomy traversal, not exhaustion.
-- [[research/graph/relations/quantitative-non-escape|Quantitative non-escape]] materializes the new global MI-007 synthesis across source-backed lines.
-- `MC-030` is structurally linked but not used as settled semantic evidence while its adversarial sidecar remains open.
+- Durable intuition membership and canonical prior-art membership have no source-window additions or removals.
+- No new cross-line semantic relation is promoted in this window; structural line ownership is refreshed independently of semantic linking.
+- The default Obsidian Graph View remains compatible with the curator contract: canonical research/graph/prior-art surfaces are visible, `RESEARCH_LINES` and review sidecars are excluded, and orphans remain visible for audit.
 
 ## Frontier fertility
 
-The newest **classifiable** source window is `48738f2546ad6a41418eead90569a795974c0ffa` → `d2e15bd2140020958fc248888b85fc94217b51ed` and contributes **20** episodes: **5 viable extensions**, **5 known-prior-art collisions**, **1 internal duplicate**, and **9 new barriers**. The subsequent WI-114 correction at `4bc527123c549c73b4ce4f04512cb291b342311d` tightens a parameter range without changing that episode classification.
+The newest classifiable source window is `4d5a26e650c91e898b542253a6f94d67025a2af8` → `b368ebfb1034d11495816c9333c22ef27e690bad` and contributes **10** episodes: **2 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **6 new barriers**.
 
-The retained source-valid prospective series contains **45** episodes: **10 viable extensions**, **11 known-prior-art collisions**, **1 internal duplicate**, and **23 new barriers**. The latest 20 give:
+The canonical trailing prospective window in [[research/graph/atlas/telemetry/frontier-events.jsonl|frontier-events.jsonl]] contains **20** episodes: **5 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
 
 - **FrontierFertilityEpisodes = 25.0%**
-- **BarrierRate = 45.0%**
-- **PriorArtCollisionRate = 25.0%**
-- **InternalDuplicateRate = 5.0%**
+- **BarrierRate = 60.0%**
+- **PriorArtCollisionRate = 15.0%**
+- **InternalDuplicateRate = 0.0%**
 - **InsufficientEvidence = 0**
 
-Atlas state masses and marginal telemetry answer different questions; neither signal alone justifies changing the research portfolio.
+See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for episode-level provenance and interpretation. Atlas state masses and marginal telemetry answer different questions; neither signal alone justifies changing the research portfolio.

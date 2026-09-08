@@ -25,3 +25,7 @@ derived: true
 - [[research/weil_positivity/findings/WP-201-lacunary-rough-baths-have-fourier-valleys-and-fail-universal-stabilization|WP-201]]
 - [[research/weil_positivity/findings/WP-202-universal-centered-bath-stabilization-is-equivalent-to-a-reciprocal-fourier-floor|WP-202]]
 - [[research/weil_positivity/findings/WP-203-exact-gamma-determinant-does-not-fix-the-reciprocal-floor-geometry|WP-203]]
+- [[research/weil_positivity/findings/WP-204-smooth-gamma-resolvent-calculus-is-too-smooth-for-the-reciprocal-floor|WP-204]]
+- [[research/weil_positivity/findings/WP-205-fractional-extension-geometry-realizes-critical-gamma-bath-but-leaves-infinite-mod-four-ladder|WP-205]]
+- [[research/weil_positivity/findings/WP-206-geometric-oscillator-multiplicity-supplies-reciprocal-floor-but-euler-gamma-forces-dimension-one|WP-206]]
+- [[research/weil_positivity/findings/WP-207-koszul-cohomology-recovers-euler-gamma-only-by-collapsing-barnes-roughness|WP-207]]

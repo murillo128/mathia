@@ -14,42 +14,42 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `ea5d185aa84d6c855b5c79e08459349ab2eb5fa3` → `c878e793d550df0e6cb254af1f2031a4561bedba` contributes ten episodes:
+The newest source window `4d5a26e650c91e898b542253a6f94d67025a2af8` → `b368ebfb1034d11495816c9333c22ef27e690bad` contributes ten episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `analytic_frontier` | 1 | 1 | 0 | 0 | 0 |
-| `arithmetic_fidelity` | 1 | 1 | 0 | 0 | 0 |
+| `analytic_frontier` | 1 | 0 | 0 | 0 | 1 |
+| `arithmetic_fidelity` | 1 | 0 | 0 | 0 | 1 |
 | `mobius_cancellation` | 1 | 0 | 0 | 0 | 1 |
 | `prime_circle` | 1 | 0 | 1 | 0 | 0 |
 | `prime_flute` | 1 | 0 | 0 | 0 | 1 |
 | `prime_lattice` | 1 | 0 | 0 | 0 | 1 |
-| `visual_exploration` | 1 | 0 | 0 | 0 | 1 |
-| `weil_inertia` | 1 | 0 | 0 | 0 | 1 |
-| `weil_positivity` | 1 | 1 | 0 | 0 | 0 |
-| `xi_flow` | 1 | 0 | 0 | 0 | 1 |
-| **Total** | **10** | **3** | **1** | **0** | **6** |
+| `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
+| `weil_inertia` | 1 | 0 | 1 | 0 | 0 |
+| `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
+| `xi_flow` | 1 | 1 | 0 | 0 | 0 |
+| **Total** | **10** | **2** | **2** | **0** | **6** |
 
-Analytic Frontier removes the pairwise recycling gate from the matched-critical sparse cascade: endpoint-localized packets are either excisable or force new disjoint high-layer source mass. Arithmetic Fidelity also advances positively by turning the source-side problem into an explicit divided-difference optimization and producing nonuniform cubic/quartic controls that beat the equispaced parity baseline at fixed Wasserstein scale.
+Analytic Frontier extends the endpoint cascade but then finds a sharper obstruction: explicit source-unsaturated saddle packets survive, and `sqrt(A)` translation clouds defeat every fixed finite saddle-phase jet. Arithmetic Fidelity likewise turns the source optimization into exact Peano-spline geometry only to show that unrestricted quartic mass escape destroys every positive fixed-band Euler recovery modulus at fixed Wasserstein separation.
 
-Möbius Cancellation closes a broad local-state/finite-character family: bounded memory, modular clocks and Bost--Connes character channels remain excursion-blind even after continuous coefficient freedom. Prime Circle's larger finite scalar fusion family instead lands directly in known classical packet algebra — Dirichlet characters, Mordell--Tornheim/rational-cone data and profinite prime-local refinement — so it is recorded as a prior-art collision rather than a new obstruction.
+Möbius Cancellation closes the obvious Bost--Connes topology/regularity continuum: rational-band continuous readouts stay profinite, unrestricted weak/strong closure is target-complete, and raw semigroup commutators are either universal or exclude Möbius under natural decay. Prime Circle instead lands in known classicalization at the first coefficient-transfer level: growing squarefree locality is real, but canonical root-value transport is an exact commuting coboundary.
 
-Prime Flute reaches the Schur reassembly gate but normalized adjacent pant hopping diverges; boundary shorting screens the naive raw pant-mass floor, leaving screened off-diagonal locality as the actual obstruction. Prime Lattice similarly finds that wider nonunitary/operator-valued transports increase programmability rather than arithmetic rigidity, while the Bost--Connes continuation collapses finite high-temperature correlations and separates temperature sectors.
+Prime Flute proves compactness of the exact reciprocal-prime Schur commutator but supplies a matched countermodel showing that qualitative smoothing plus compactness and low rank do not reach weak trace class. Prime Lattice strengthens the temperature-programmability control: even finite-prime positive contractions can approximate arbitrary continuous scalar KMS profiles below the Bost--Connes transition.
 
-Visual Exploration extends its null models from Gram-clock finite-order observables to persistence and simple temporal-delay signatures, which retain too little global ordering to discriminate the arithmetic source. Weil Inertia identifies the decisive multiplicative Gallagher `L^2` gate and verifies that twist-averaged diagonal control plus the published Type-II module do not reach the bow scale required to close it.
+Visual Exploration is a viable methodological extension. Level-four delay signatures retain cycle order beyond the exact lower-level local-block boundary, and pre-registered finite quantization replaces the generically singleton continuous reassembly control by an exact parameter-free Markov-type conditional null on the quotient. Weil Inertia is classified as prior-art collision because audited published short-interval critical-line and zero-density theorems lower the long-bow cutoff to `1515/4816` without creating a new source mechanism.
 
-Weil Positivity is the other positive movement: rough infinite centered baths escape the finite regular positive-background no-go, universally stabilize finite positive `4k` payloads, and admit a sharp reciprocal-Fourier-floor characterization. Xi Flow, by contrast, pushes transition nonidentifiability to a fixed fraction of the `q` scale and shows that any surviving Toeplitz witness must be collective, `q`-scale and macroscopically rough because PNT flattening kills smooth witnesses.
+Weil Positivity closes the direct Gamma/Barnes cohomological repair: smooth calculus is too regular, fractional geometry leaves the order unselected, and Koszul cohomology recovers the Euler-Gamma divisor only by destroying the roughness needed for the reciprocal Fourier floor. Xi Flow is the strongest positive source-specific movement: exact cardinal aliasing and Vinogradov--Korobov control flatten the full `q`-scale Fejer circle for the actual Xi source, eliminating the matched fixed-depth Fejer-well mechanism at every mesh angle while leaving genuinely non-plane-wave Toeplitz concentration open.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **6 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
+Across the retained 20-episode window there are **5 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **12 new barriers**. Therefore:
 
-- `FrontierFertilityEpisodes = 30.0%`
+- `FrontierFertilityEpisodes = 25.0%`
 - `BarrierRate = 60.0%`
-- `PriorArtCollisionRate = 10.0%`
+- `PriorArtCollisionRate = 15.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The represented frontier remains obstruction-heavy, but the positive episodes have become more category-specific rather than merely broader: packet-level endpoint geometry, optimized nonuniform source controls, exact finite-divisor realization in the previous window, and now rough infinite-bath stabilization. The dominant negative pattern is that finite-state, scalar, smooth, regular or purely averaged enrichments repeatedly fail to preserve the source information required at the destination.
+The represented frontier remains obstruction-heavy, but the viable episodes are increasingly source- and scale-specific rather than merely broader representations: endpoint packet geometry in the retained prior window, optimized source controls, rough infinite-bath stabilization, and now a usable chronology null plus full-circle Xi Fejer flatness. The dominant negative pattern is that finite-state, scalar, smooth, topologically unrestricted or merely qualitative enrichments repeatedly become programmable controls or lose the arithmetic degree of freedom needed at the destination.
 
 These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas. Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.

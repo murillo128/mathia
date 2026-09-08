@@ -29,3 +29,7 @@ derived: true
 - [[research/visual_exploration/findings/VIS-093-sliding-window-persistence-forgets-window-order|VIS-093]]
 - [[research/visual_exploration/findings/VIS-094-static-temporal-edge-delay-graphs-add-one-block-order|VIS-094]]
 - [[research/visual_exploration/findings/VIS-095-step-two-delay-signature-local-block-boundary|VIS-095]]
+- [[research/visual_exploration/findings/VIS-096-delay-signatures-level-three-planar-four-local-edge-boundary|VIS-096]]
+- [[research/visual_exploration/findings/VIS-097-delay-signature-level-four-cycle-order|VIS-097]]
+- [[research/visual_exploration/findings/VIS-098-exact-local-block-null-degenerate-on-distinct-windows|VIS-098]]
+- [[research/visual_exploration/findings/VIS-099-quantized-local-block-markov-type-null|VIS-099]]
