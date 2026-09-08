@@ -1,33 +1,37 @@
-# MI-014 — Source coercivity is a joint short-interval variance problem, not a phase problem
+# MI-014 — Source coercivity is a joint short-interval variance problem after zero-reservoir pruning
 
-**Evidence level:** exact source-geometry, Atkinson/self-dual phase reductions, and exact multiplicative Gallagher reduction through WI-195
+**Evidence level:** exact source-geometry and Gallagher reduction through WI-197, strengthened by audited every-interval critical-line and density theorems through WI-200
 
 ## Core intuition
 
-The count-saturating Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem. The logarithmic stationary phase is classical and self-dual; changing B-process coordinates does not reduce the effective family. WI-195 shows that one can avoid that alias geometry altogether: before any stationary transform, a triangular height localizer writes the whole shifted covariance exactly as a positive multiplicative short-interval `L^2` norm of the prime Dirichlet polynomial.
+The hard Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem, but that expensive theorem should be attempted only after independent local zero reservoirs have pruned the adversarial geometry. The logarithmic stationary phase is classical and self-dual; WI-195 avoids that alias geometry altogether by writing the shifted covariance exactly as a positive multiplicative short-interval `L^2` norm of the prime Dirichlet polynomial.
 
-This representation identifies the missing resource more sharply than “joint cancellation across shifts.” The required scale is **diagonal-size variance** for the shifted von-Mangoldt source, with the structured major-arc component treated in the same norm. Pointwise short-interval approximation can be very strong and still be polynomially too weak after squaring.
+WI-198--WI-200 then show that a large range of long bows never reaches this covariance gate. Every-interval critical-line population and narrow-rectangle density theorems force extra zeros or eliminate deep off-line plateaux directly. The surviving source-coercivity problem is therefore the **shorter-bow remainder after reservoir pruning**, not the original full Maynard--Pratt parameter family.
 
 ## Strongest justified principle
 
-WI-191 identifies the B-process phase/Jacobian with the classical Atkinson transform; WI-192 shows the next pure B-process is involutive. WI-193 proves that even hypothetical square-root cancellation for every individual shift cannot cross the hard bow after triangle-inequality assembly, while a joint square-root gain could. WI-194 shows that a bare two-variable stationary transform is self-dual and preserves the active diagonal-strip complexity.
+WI-191--WI-195 identify the source-fixed coupled norm and show why pointwise or transform-only improvements are insufficient. A bound `|E_x| <= K log^{-A}X`, even on every interval, gives integrated square `X K^2 log^{-2A}X`, whereas the bow requires `o(X K log X)`. The missing gain is essentially square-root variance across the coupled interval family.
 
-WI-195 supplies the exact joint variable. For the triangular localizer, the covariance equals a multiplicative short-interval square. At the bow scale `K=X^(1-2 epsilon+o(1))`, current 2026 almost-all major-arc technology matches both the interval-length threshold and the Archimedean twist `U`, so the previous resolution/exceptional-locus issue is no longer the fundamental obstruction in this formulation.
+WI-196 proves that long twist averaging cannot supply a distinguished-center lower bound, and WI-197 shows that the current black-box one-variable Type-II route loses too much when transferred to the exact norm.
 
-The norm is. A bound `|E_x| <= K log^{-A}X`, even granted on every interval, gives integrated square `X K^2 log^{-2A}X`, whereas the bow requires `o(X K log X)`. The missing factor is essentially square-root variance across the coupled interval family.
+WI-198 first used an every-interval critical-line reservoir above exponent `27/82`. WI-199 adds local zero density in the same range: a positive-density long bow is exponentially tight in normalized depth `A=(beta-1/2)log T`, and a fixed physical-depth plateau has power-saving density. WI-200 audits exponent-pair versions of both resources. The current unconditional threshold for **count-saturation and fixed-physical-depth** exclusion is therefore `1515/4816`: above it, a fixed-power bounded-spacing Maynard--Pratt bow must acquire a linear complementary critical-line population and cannot retain the explicit deep plateau.
+
+This lower threshold does not inherit WI-199's stronger normalized-depth screening tail. The current evidence must keep those statements separate rather than treating `1515/4816` as a universal screening threshold.
 
 ## What remains possible
 
-A dispersion/bilinear/large-sieve/spectral argument may prove the required `L^2` variance directly; a source decomposition may show that `Lambda-Lambda^sharp` has enough cancellation in the exact twisted short-interval norm; or the structured `Lambda^sharp` term may combine with the residual before absoluteization. An independent bow--reservoir sign relation remains outside this reduction.
+For `0<vartheta<=1515/4816`, a dispersion/bilinear/large-sieve/spectral argument may prove the required `L^2` variance directly; a source decomposition may show that `Lambda-Lambda^sharp` has enough cancellation in the exact twisted short-interval norm; or the structured term may combine with the residual before absoluteization. A stronger every-interval zero theorem could instead reduce or eliminate part of this range before covariance is paid for.
 
 ## Counterevidence / boundary
 
-WI-195 is a target reduction, not the variance theorem. It also does not show that the structured major-arc contribution is harmless, and smooth source weights must be restored in a positive result. No unconditional zero proportion changes.
+The short-interval zero theorems do not improve the unconditional simple-critical-zero proportion, do not prove RH, and do not exclude every off-line population. Khayrulloev counts odd-order critical-line zeros, not simple zeros. Rakhmonov's lower-threshold density theorem gives the fixed-depth exclusion needed in WI-200 but not WI-199's full normalized-depth exponential tail.
+
+WI-195 remains a target reduction rather than the missing variance theorem. None of the reservoir results supplies diagonal-scale covariance inside the surviving exponent range.
 
 ## Epistemic status
 
-**Exact coupled-norm reduction with a quantitatively identified missing variance strength; arithmetic estimate open.**
+**Exact coupled-norm reduction plus decisive every-interval pruning of the long-bow parameter space; diagonal-scale source variance remains open only in the surviving range.**
 
 ## Falsification criterion
 
-Derive the required bow exclusion from a pointwise `K log^{-A}X` short-interval theorem without an additional variance gain, contradicting the exact scaling comparison, or invalidate the Gallagher identity/source normalization. A theorem reaching `o(XK log X)` in the actual weighted twisted norm would be the intended positive escape.
+Construct a count-saturating bounded-spacing bow with exponent `vartheta>1515/4816` compatible with the audited every-interval reservoir, or a positive-density fixed-depth plateau there compatible with the narrow-rectangle theorem. For the surviving range, derive the required bow exclusion from a pointwise `K log^{-A}X` theorem without an additional variance gain, or prove the intended `o(XK log X)` bound in the actual weighted coupled norm.

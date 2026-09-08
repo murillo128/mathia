@@ -2,23 +2,17 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Close the source-capacity-deficit escape in the fixed-notch packet cascade
+## Control the full mesoscopic saddle profile of non-excisable fixed-notch packets
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-097--ANF-111 reduce the fixed-notch problem to the physical exposure `beta_eta`, remove convexified/separable fake instability, and show why sparse layers must be aggregated before recursion: pairwise polarization can recycle inside previously extracted mass.
+ANF-097--ANF-113 reduce the frozen-notch problem to the physical near-extremizer exposure `beta_eta`, packet aggregation, and the source-capacity deficit `D=log_+(e^A/(R M A^2))`. The remaining sparse escape was exponential source-unsaturation relative to the available height.
 
-ANF-112 closes that recycling loophole at packet level. An endpoint-localized sublinear packet is either source-negligible and excisable, or its full source mass forces comparable endpoint energy into the unused remainder and hence a fresh disjoint source-heavy height layer. No upper bound on the packet source norm is needed. For sub-square-root packets, leading-critical height `4 pi H/log R -> 1` already forces the required endpoint localization even with additive `o(log R)` supercritical excess.
+ANF-115 proves that this chamber is physically realizable at packet level. Distinct conjugation-invariant binomial packets with only `O(A)` horizontal span can concentrate source mass at a stable interior spectral saddle `|alpha|=alpha_gamma<1`, satisfy `D/A -> 1-f_gamma>0`, and remain exponentially invisible to a fixed notch even after crossing the raw max-height visibility threshold. Cardinality, height, distinctness, and logarithmic span therefore do not force endpoint or notch mass.
 
-ANF-113 identifies the sharper invariant beyond that chamber. Relative endpoint localization with respect to the packet's own source norm is enough, and the universal height-capacity scale is `e^A/(R A^2)` with `A=4 pi H`. If the logarithmic capacity deficit
+ANF-116 removes componentwise global near-extremality as the repair: finitely many translated same-saddle packets reduce to a saddle phasor, and phase-balanced triples can occur inside genuine global near-extremizers while their aggregate is source- and notch-negligible. ANF-117 then identifies the sharp mesoscopic boundary. The saddle width is `A^(-1/2)`; translation clouds of size `asymp sqrt(A)` can retain macroscopic source mass despite an exact saddle zero, and for every fixed jet depth there are positive physical clouds whose entire finite saddle jet vanishes while the source norm stays order one.
 
-`D = log_+(e^A/(R M A^2))`
-
-satisfies `D=o(A)`, the cascade still restarts even at multiplicatively supercritical height. A surviving sparse packet must therefore approach square-root population, leave the sparse geometry, or become exponentially source-unsaturated relative to its available height.
-
-ANF-114 gives a complementary quantitative control on the distinct-real face: the Montgomery--Taylor triple gap satisfies `kappa_L asymp L^-4`, yielding the sharp real defect-to-span law `diam(X) >> N Delta^(-1/4)`. That modulus does not yet transfer to the complex conjugation-invariant packets responsible for the source-capacity-deficit escape.
-
-The live theorem is now precise: prove that physical Montgomery--Taylor near-extremality forbids exponential source-unsaturation, or prove a complex/conjugate analogue of the effective defect-to-span rigidity strong enough to close that chamber. Otherwise construct a physical near-extremizer in the surviving chamber whose fixed-notch exposure reaches the obstruction threshold. The objective remains `beta_eta < B_eta`, but the sparse escape set is substantially narrower.
+The live theorem must therefore act on the **full modulation profile** `u=sqrt(A)(alpha-alpha_gamma)` of a non-excisable aggregate, or on an equivalently strong physical invariant. A positive closure must show that such a mesoscopic profile cannot be completed into a fatal near-extremizer with exposure reaching `B_eta`, or must derive source geometry that forbids the root-cloud controls. A negative closure must build a genuinely non-excisable global completion that raises fixed-notch exposure. Fixed height, fixed phasors, and every fixed finite saddle jet are now classified insufficient.
 
 ## Treat a distinguished bow saving as source-forced signed cancellation, not averaged variance
 
