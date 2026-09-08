@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-transverse-mask-inertia-cyclotomic-sign-count
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: prime_circle
 based_on:
@@ -69,3 +69,17 @@ this inertia with that of the original Hilbert-space compression. PC-218 itself 
 inertia and the nonzero spectrum open. The displayed formula is therefore a proposed consequence
 for Research Watch to prove or refute, not an established finding, and it would not determine the
 nonzero eigenvalue magnitudes or any RH-facing behavior.
+
+## Research disposition
+
+Outcome: supported
+
+The all-`n` inertia formula is exact. The canonical range is the `D`-orthogonal complement of the
+constant vector; because `<1,D1> = Φₙ(1) > 0`, restricting the coefficient diagonal form removes
+exactly one positive square. Sylvester congruence then gives the claimed positive/negative counts,
+while PC-218 supplies the zero count. The result classicalizes inertia/signature to ordinary
+cyclotomic coefficient sign statistics; nonzero eigenvalue magnitudes and cross-level structure
+remain outside the conclusion.
+
+Resolved by:
+- [[research/prime_circle/findings/PC-219-full-transverse-mask-inertia-equals-cyclotomic-coefficient-sign-counts.md]]
