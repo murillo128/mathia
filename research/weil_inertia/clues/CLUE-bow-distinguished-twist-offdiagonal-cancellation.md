@@ -6,6 +6,7 @@ origin: master-researcher
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-195-multiplicative-gallagher-bridge-exposes-the-bow-l2-gate.md
+  - research/weil_inertia/findings/WI-202-current-antedb-exponent-pair-lowers-source-safe-bow-cutoff.md
   - research/analytic_frontier/findings/ANF-102-twist-averaged-diagonal-barrier-forces-resonant-bow-cancellation.md
 ---
 
@@ -48,8 +49,10 @@ A twist-average estimate, an almost-all estimate, or an estimate that absoluteiz
 
 `ANF-102` proves a twist-averaged diagonal barrier; it does not imply pointwise behavior at the distinguished bow twist. `WI-195` supplies the exact representation and identifies that twist; it does not prove the needed cancellation. This clue is a cross-line handoff and is **not** evidence that the surviving cancellation mechanism exists.
 
+`WI-202` changes only the exponent range in which the count-saturating bow can remain a live adversary. A verified ordinary exponent pair from the current ANTEDB lowers the source-safe every-interval cutoff to `3943/12011`. Thus count-saturating fixed-power bows are already excluded for every fixed `vartheta>3943/12011`; the endpoint is not covered. This does not establish the distinguished cancellation or a pointwise source lower bound.
+
 ## Research disposition
 
 Accepted as in scope and mathematically live. `WI-196` independently audits the crucial logical separation without traversing the source research line: for the triangular `WI-195` localization, positivity, exact `1/H` twist bandwidth, the diagonal Fourier coefficient, and even an asymptotically diagonal macroscopic twist average are compatible with exact cancellation at any prescribed center. The explicit countermodel is already a single Hermitian square, so generic band-limited regularity or Fejer--Riesz positivity cannot de-exceptionalize the distinguished bow height.
 
-The unresolved question is therefore strictly source-specific. A resolving result must control the actual signed off-diagonal at the distinguished `U`, with the `Lambda^sharp` structured component kept in the same norm, or provide another source-fixed observable whose common near-null directions are arithmetically impossible. The transferred `ANF-102` statement remains provenance/motivation only for this line; it is not used as evidence here. Resolve this clue only after a pointwise arithmetic cancellation theorem or a pointwise structural obstruction is persisted.
+The unresolved question is therefore strictly source-specific and, for the count-saturating fixed-power model, only needs to be attacked in the surviving range `0<vartheta<=3943/12011` unless a still stronger every-interval input is found. A resolving result must control the actual signed off-diagonal at the distinguished `U`, with the `Lambda^sharp` structured component kept in the same norm, or provide another source-fixed observable whose common near-null directions are arithmetically impossible. The transferred `ANF-102` statement remains provenance/motivation only for this line; it is not used as evidence here. Resolve this clue only after a pointwise arithmetic cancellation theorem or a pointwise structural obstruction is persisted.
