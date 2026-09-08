@@ -22,6 +22,7 @@ based_on:
   - research/visual_exploration/findings/VIS-097-delay-signature-level-four-cycle-order.md
   - research/visual_exploration/findings/VIS-098-exact-local-block-null-degenerate-on-distinct-windows.md
   - research/visual_exploration/findings/VIS-099-quantized-local-block-markov-type-null.md
+  - research/visual_exploration/findings/VIS-100-whittle-quantized-type-class-count-sampler.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -39,11 +40,13 @@ The delay-geometry branch gives a sharper information hierarchy. `VIS-093` shows
 
 `VIS-099` identifies one principled replacement rather than leaving “coarsening” underspecified. After a **fixed finite quantization**, the quantized length-four block table is an order-three Markov type. Conditional on that table and the initial quantized triple, every sequence in the type class has exactly the same probability under every homogeneous order-three Markov chain on the symbols. Uniform type-class reassembly is therefore a parameter-free exact conditional null on the quantized representation whenever the class is non-singleton.
 
-The live issue is now **source-specific chronology after an explicit finite local quotient**, not merely whether a higher signature can remember order or whether an arbitrary approximate null can be invented.
+`VIS-100` closes the remaining null mechanics. Whittle's cofactor-factorial formula computes the exact type-class cardinality from the transition table, so nondegeneracy is the explicit integer test `W>1`. The same completion counts give an exact sequential uniform sampler: at each step choose the next transition in proportion to the number of compatible completions. No graph-visual judgment, enumeration of all reassemblies, MCMC burn-in, or approximate mixing claim is needed.
+
+The live issue is now **source-specific chronology after an explicit finite local quotient**, with the admission and sampling law fully specified.
 
 ## Research question
 
-Does one pre-registered fourth-level or log-signature observable of a zeta-derived **quantized three-delay path** retain organization beyond its complete quantized length-four-block table, under the exact uniform Markov-type null from `VIS-099`?
+Does one pre-registered fourth-level or log-signature observable of a zeta-derived **quantized three-delay path** retain organization beyond its complete quantized length-four-block table, under the exact uniform Markov-type null from `VIS-099` and `VIS-100`?
 
 If such a residual survives, is it stable enough under independently fixed nearby quantizers/embeddings and appropriately matched higher-order spectral controls to justify interpreting it as source-specific rather than as a consequence of the chosen quotient, generic long memory, nonstationarity, or random-matrix structure?
 
@@ -51,9 +54,9 @@ The broader visual question remains open as well: after the classified analytic,
 
 ## Why it may matter
 
-`VIS-097` identifies an exact degree of freedom absent from the complete unordered local-four-block inventory: order-dependent interaction between nonparallel local area modes. `VIS-098` prevents the false next step of treating exact real-valued local-block preservation as automatically resampleable. `VIS-099` then supplies an exact conditional experiment after a finite quotient: the null has no fitted Markov transition parameters once the quantized block table is conditioned on.
+`VIS-097` identifies an exact degree of freedom absent from the complete unordered local-four-block inventory: order-dependent interaction between nonparallel local area modes. `VIS-098` prevents the false next step of treating exact real-valued local-block preservation as automatically resampleable. `VIS-099` supplies an exact conditional experiment after a finite quotient, and `VIS-100` makes its support size and uniform sampling constructive.
 
-This separates three notions that are easy to conflate visually: generic chronology capacity, chronology beyond a specified finite local quotient, and arithmetic/source specificity. A separation from the `VIS-099` null would establish the middle statement only. That is still useful because it turns the next step into a falsifiable residual test with an exact sample space rather than a loosely matched simulation. Stronger arithmetic interpretation requires surviving representation controls and relevant non-arithmetic spectral/source baselines.
+This separates three notions that are easy to conflate visually: generic chronology capacity, chronology beyond a specified finite local quotient, and arithmetic/source specificity. A separation from the conditioned Markov-type null would establish the middle statement only. That is still useful because the next step is now an actual falsifiable source experiment rather than further null-construction work. Stronger arithmetic interpretation requires surviving representation controls and relevant non-arithmetic spectral/source baselines.
 
 ## Decisive test
 
@@ -61,9 +64,9 @@ Use one coherent source-specificity experiment and freeze its choices before con
 
 First, fix the source representation: unfolding convention, finite observation window, three-delay coordinates, endpoint treatment, a finite quantizer `Q`, and a fixed numerical embedding of its symbols for the path statistic. Choose the quantizer using only exploratory/training material or an external rule; do not tune thresholds or alphabet size on confirmation residuals.
 
-Build the quantized three-context transition multigraph and its complete quantized length-four-block count table. Determine the corresponding Markov type-class size. Reject this quantizer for the chronology test if the class is singleton or too small to provide a meaningful conditional comparison; do not loosen the quantizer after looking at the target statistic merely to manufacture alternatives.
+Build the quantized three-context transition multigraph and its complete quantized length-four-block count table. Compute the exact Whittle cardinality `W` from `VIS-100`. Reject this representation for the chronology test if `W=1`; if `W>1`, use the recursive completion-count sampler from `VIS-100` to draw exact uniform type-class controls. A larger `W` does not by itself guarantee statistical power, so any stronger admission threshold must be fixed independently of confirmation residuals rather than inferred after seeing the target statistic.
 
-Before sampling controls, pre-register one direction-sensitive fourth-level tensor/log-signature coordinate, invariant, or low-dimensional projection. Evaluate it on the fixed numerical embedding of the quantized source path and on uniform reassemblies from the exact type class. The controls must preserve the initial quantized triple and all quantized length-four block counts exactly.
+Before sampling controls, pre-register one direction-sensitive fourth-level tensor/log-signature coordinate, invariant, or low-dimensional projection. Evaluate it on the fixed numerical embedding of the quantized source path and on exact uniform reassemblies. The controls must preserve the initial quantized triple and all quantized length-four block counts exactly.
 
 Treat the quantized quotient itself as part of the hypothesis. Check the chosen statistic under independently fixed nearby representation choices sufficient to expose obvious threshold/embedding artifacts, and record how much real-valued information the quantizer discards. Do not claim that the conditional null applies to a statistic evaluated on the original real-valued path: any within-bin reconstruction or dequantization introduces a new model and requires a separate leakage audit.
 
@@ -77,10 +80,10 @@ For any alternative topological or multiscale route, state the metric/graph/path
 
 `VIS-008` and `VIS-013` through `VIS-019` are analytic, topological, information-loss, or prior-art controls; they do not classify every possible nonlocal zero statistic. `VIS-092` through `VIS-096` exactly bound several persistence, transition-graph, and low-signature constructions by local gap/block information. `VIS-097` proves only that fixed three-delay signature level four can distinguish some alternative assemblies with the same local edge inventory; it does not establish source specificity, reconstruction, or a zeta effect.
 
-`VIS-098` proves a sufficient uniqueness condition for exact real-valued local-block reassembly and the corresponding almost-sure genericity statement under absolutely continuous finite-dimensional laws. It does not invalidate quantized controls. `VIS-099` proves the exact conditional-uniform Markov-type law **only on the fixed finite-alphabet quotient** and only supplies a nontrivial experiment when the observed type class contains alternatives. It does not prove that a useful quantizer exists, that the original continuous-valued statistic is matched, or that a departure from the null is arithmetic-specific.
+`VIS-098` proves a sufficient uniqueness condition for exact real-valued local-block reassembly and the corresponding almost-sure genericity statement under absolutely continuous finite-dimensional laws. It does not invalidate quantized controls. `VIS-099` proves the exact conditional-uniform Markov-type law **only on the fixed finite-alphabet quotient**. `VIS-100` supplies the classical exact type-class count and exact uniform completion sampler on that same quotient. Neither result proves that a useful quantizer exists, that the original continuous-valued statistic is matched, that the conditional experiment has useful power, or that a departure from the null is arithmetic-specific.
 
 No finding in this chain establishes a mesoscopic fractal dimension, a new zeta-zero statistic, an RH criterion, or a distinction between zeta and a suitably matched higher-order point-process/control ensemble. This remains an accepted research direction, not evidence of such a distinction.
 
 ## Research disposition
 
-Accepted in further narrowed form. The first concrete nondegenerate replacement null after `VIS-098` is now finite pre-registered quantization followed by the exact uniform Markov-type reassembly law from `VIS-099`. The next positive result must first show chronology beyond quantized four-block counts on untouched data, and only then ask whether that residual survives representation controls and matched non-arithmetic source models.
+Accepted in further narrowed form. The local-memory null mechanics are now closed at the finite-quotient level: finite pre-registered quantization gives the exact conditioned Markov type (`VIS-099`), and Whittle cardinality plus completion counting gives the exact support-size admission gate and exact uniform sampler (`VIS-100`). The next independent result must come from the pre-registered source-specific level-four experiment itself, not from another refinement of the same reassembly machinery.
