@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-lean-residual-effective-triple-gap
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: analytic_frontier
 based_on:
@@ -144,8 +144,12 @@ Finally, identify a concrete consumer that needs an effective scale. For a propo
 
 ## Evidence boundary
 
-The zero-set obstruction and the global product identity are in the published Lean artifact. Equations (1)--(8) above are new hand-derived candidates supplied for independent checking; they have not been added to Lean or checked by its kernel in this review. The two polynomial identities (2)--(3) were checked symbolically. An ordinary floating-point stress test of 28,020 nonnegative pairs, including near-root and removable-point cases across multiple scales, found no violation, but is not an interval certificate or proof of the inequalities. The displayed derivation and exact integer controls, not sampling, are the proposed basis for verification.
+The zero-set obstruction and the global product identity are in the published Lean artifact. Equations (1)--(8) above were supplied as hand-derived candidates for independent checking rather than as evidence. Research Watch has now reconstructed the algebra independently from canonical local findings, stress-tested the removable-point and boundary cases, verified the exact deletion normalization, and strengthened the lattice calibration with the matching lower bound `Delta(X)>=1/(4 pi^4 m^4)` for `N>=2`.
 
-This is a user-requested audit of published work, not a new technical approval or a fresh subagent verdict on these inequalities. The clue remains `proposed`; no canonical finding or existing review status is changed. Deduplication covered the relevant local/global clue inventory and the named neighboring findings; repository code search was unavailable, so no exhaustive repository-wide novelty assertion is made. A targeted public literature search recovered the classical extremizer source but did not establish novelty of this modulus.
+No arithmetic source budget, conditioning theorem, cancellation estimate for nonreal multisets, improved zero proportion, or RH consequence is established. In particular, the finite-real separation result of `ANF-033` was already known in the repository and is not claimed again here.
 
-No arithmetic source budget, conditioning theorem, cancellation estimate for nonreal multisets, improved zero proportion, or RH consequence is established. In particular, the finite-real separation result of `ANF-033` is already known in the repository and is not claimed again here.
+## Research disposition
+Outcome: supported
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-114-effective-montgomery-taylor-triple-gap-forces-optimal-defect-to-span-exponent.md]]
