@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-transverse-mask-pseudodeterminant-ramanujan-cofactor
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: prime_circle
 based_on:
@@ -77,3 +77,19 @@ finite matrix bridge. PC-219 proves only inertia/signature, and the generic rank
 is classical linear algebra. The displayed identity and the proposed cyclotomic classification of
 the sparse Ramanujan cofactor therefore remain an unvalidated research lead, not a theorem,
 novelty claim, full nonzero-spectrum classification, or RH-facing consequence.
+
+## Research disposition
+
+Outcome: classical
+
+Resolved by:
+- [[research/prime_circle/findings/PC-220-full-transverse-nonzero-spectrum-is-a-signed-ramanujan-projection-compression.md]]
+
+PC-220 proves the proposed pseudodeterminant factorization after transferring the nonzero spectrum
+to `D_n B_n`. Since `ker B_n = C a`, `adj(B_n) = gamma_n a a^*`; both the constant and leading
+cyclotomic coefficients equal `1`, so the principal cofactor deleting either index is the same
+`gamma_n = K_n`. The resulting signed product is exactly `alpha_n^k_n K_n Phi_n(1)` times the
+product of the nonzero cyclotomic coefficients. PC-220 further places the entire fixed-level
+characteristic polynomial in signed principal minors of the classical Ramanujan projection
+kernel. Thus the clue's magnitude-sensitive scalar survives exactly, but only as finite
+cyclotomic/Ramanujan data; it does not provide an independent RH-facing spectral mechanism.
