@@ -1,10 +1,16 @@
-# ANF-112 — endpoint-localized sparse packets are either excisable or force new disjoint height mass
+# ANF-112 — endpoint-localized sublinear packets are either excisable or force new disjoint height mass
 
-**Status:** `EXACT-DERIVED + PACKET-EXCISION-DICHOTOMY + ENDPOINT-POLARIZATION + RECYCLING-OBSTRUCTION-REMOVAL + CONDITIONAL-CASCADE-RESTART`. `ANF-111` corrects the naive recursive sparse-layer cascade: after extracting a secondary source-heavy layer `V`, the complement still contains the original tail `B`, so the negative polarization of `V` against that complement may be absorbed entirely by `B`. The proposed repair there was a pairwise non-recycling estimate such as `C_0(V,B)=o(L)`. That estimate is stronger than necessary. The correct object is the **aggregate packet** of all already extracted endpoint-localized sparse pieces.
+**Status:** `EXACT-DERIVED + PACKET-EXCISION-DICHOTOMY + UNBOUNDED-SOURCE-TRANSFER + ENDPOINT-POLARIZATION + RECYCLING-OBSTRUCTION-REMOVAL + LEADING-CRITICAL-CASCADE-RESTART + SUPERCRITICAL-CHAMBER-NARROWING`. `ANF-111` shows why a naive layer-by-layer cascade can recycle its negative polarization through previously extracted tails. The packet repair of the first version of this finding was correct, but its audit claimed that the auxiliary bound `E_0(P_n)=O(L_n)` was load-bearing. It is not. Normalizing by the packet's own source mass shows that **every** source-heavy endpoint-localized sublinear packet, even one with `E_0(P_n)/L_n -> infinity`, forces endpoint energy of comparable scale into the unused remainder and hence a new disjoint source-heavy height layer.
 
-If such a packet has negligible Montgomery--Taylor source norm, it can be deleted as a whole without changing near-extremality or fixed-notch exposure. If it retains macroscopic source norm, the global Montgomery--Taylor floor forces the packet to polarize negatively against the unused remainder; because the packet is already localized in a shrinking endpoint band, that negative interaction forces macroscopic endpoint energy into the unused remainder and hence a genuinely new, disjoint source-heavy height layer. Thus internal recycling among old layers has only two outcomes: it either makes the old packet removable, or it cannot prevent pressure from reaching unused mass.
+This removes a second apparent escape mechanism from the packet argument: source-norm blowup does not defeat endpoint transfer. Combined with the universal sparse endpoint estimate of `ANF-103`, it also extends the recursive chamber beyond the bounded matched-critical window. A sub-square-root source-heavy packet with
 
-The result is a packet-level replacement for the pairwise gate in `ANF-111`. It does **not** prove an infinite cascade automatically: to append each newly extracted layer to the packet and repeat, one still needs that layer to enter a sparse matched-critical regime giving endpoint localization and controlled source mass, or else one has reached the square-root/bulk or supercritical-height alternatives already identified in `ANF-109`--`ANF-111`.
+\[
+\frac{4\pi H_n}{\log R_n}\to1,
+\qquad
+R_n:=\frac{L_n}{|P_n|^2}\to\infty,
+\]
+
+is automatically localized in a shrinking endpoint band, even if its additive excess above `log R_n+2 log log R_n` diverges. Therefore such a packet still forces fresh height mass. A sparse supercritical branch can terminate this mechanism only after reaching **multiplicative** supercriticality, `4 pi H_n >= (1+c) log R_n` along a subsequence, or by leaving the sub-square-root regime.
 
 ## 1. Packet setup and affine bookkeeping
 
@@ -12,13 +18,12 @@ Retain the fixed-notch notation
 
 \[
 J_0=J_{\rm MT},\qquad
-E_0(X)=\int J_0(\alpha)|S_X(\alpha)|^2\,d\alpha,
+E_0(X)=\int_{-1}^{1}J_0(\alpha)|S_X(\alpha)|^2\,d\alpha,
 \]
 
 \[
-E_{\eta}(X)=\int \phi_\eta(\alpha)|S_X(\alpha)|^2\,d\alpha,
-\qquad
-0\le\phi_\eta\le J_0,
+E_\eta(X)=\int \phi_\eta(\alpha)|S_X(\alpha)|^2\,d\alpha,
+\qquad 0\le\phi_\eta\le J_0,
 \]
 
 and
@@ -45,154 +50,124 @@ W_n=P_n\sqcup U_n.
 \tag{2}
 \]
 
-Think of `P_n` as the union of all sparse layers already extracted and `U_n` as the as-yet unused remainder. Assume
+Assume only
 
 \[
-|P_n|=o(L_n),
-\qquad
-E_0(P_n)=O(L_n).
+|P_n|=o(L_n).
 \tag{3}
 \]
 
-No fiber-completeness assumption is needed. Let
+There is **no upper bound** on `E_0(P_n)`. With
 
 \[
-\kappa_n
-:=\sigma(P_n)+\sigma(U_n)-\sigma(W_n).
+\kappa_n:=\sigma(P_n)+\sigma(U_n)-\sigma(W_n),
 \]
 
-The affine defect identity of `ANF-111` gives
+`ANF-111` gives
 
 \[
 0\le\kappa_n\le2|P_n|=o(L_n),
+\qquad
+L(U_n)=L_n-L(P_n)-\kappa_n=L_n-o(L_n).
 \tag{4}
 \]
 
-and therefore
-
-\[
-L(U_n)=L_n-L(P_n)-\kappa_n
-=L_n-o(L_n).
-\tag{5}
-\]
-
-Assume in addition that the packet is concentrated in a shrinking Montgomery--Taylor endpoint layer. Thus there are `delta_n downarrow 0` for which
+Assume that the aggregate packet is localized in a shrinking Montgomery--Taylor endpoint layer: there are `delta_n downarrow 0` such that
 
 \[
 E_{\rm in,\delta_n}(P_n)
-:=
-\int_{|\alpha|\le1-\delta_n}
+:=\int_{|\alpha|\le1-\delta_n}
 J_0(\alpha)|S_{P_n}(\alpha)|^2\,d\alpha
 =o(L_n).
+\tag{5}
+\]
+
+This is an **absolute** `o(L_n)` condition, not merely a small fraction of the packet norm. It is the only localization hypothesis in the abstract packet theorem.
+
+## 2. Source-negligible packets are still removable
+
+If
+
+\[
+E_0(P_n)=o(L_n),
 \tag{6}
 \]
 
-This is the only localization input. It concerns the aggregate packet norm on the interior band and makes no assertion about pairwise interactions among the pieces inside `P_n`.
-
-## 2. If the packet cancels itself to source-negligibility, delete it
-
-Suppose first that
+then `S_{U_n}=S_{W_n}-S_{P_n}` and Hilbert geometry give
 
 \[
-E_0(P_n)=o(L_n).
-\tag{7}
-\]
-
-Because `S_{U_n}=S_{W_n}-S_{P_n}`, Hilbert geometry gives
-
-\[
-\bigl|E_0(U_n)-E_0(W_n)\bigr|
+|E_0(U_n)-E_0(W_n)|
 \le
 2\sqrt{E_0(W_n)E_0(P_n)}+E_0(P_n)
 =o(L_n).
+\]
+
+Together with (1) and (4),
+
+\[
+\boxed{\frac{E_0(U_n)}{L(U_n)}\to1.}
+\tag{7}
+\]
+
+Since multiplication by `sqrt(phi_eta/J_0)` is a contraction in the source Hilbert norm, the same estimate gives
+
+\[
+|E_\eta(U_n)-E_\eta(W_n)|=o(L_n),
+\qquad
+\boxed{h_\eta(U_n)-h_\eta(W_n)\to0.}
 \tag{8}
 \]
 
-Together with (1) and (5),
+Thus complete internal recycling has the benign outcome already identified in the first version: if the old packet cancels to source-negligibility, delete it as a whole. The residual configuration remains a physical near-extremizer with the same asymptotic fixed-notch exposure.
+
+## 3. A source-heavy packet polarizes at its own source scale
+
+Pass now to a subsequence on which the packet is source-heavy. Write
 
 \[
-\boxed{
-\frac{E_0(U_n)}{L(U_n)}\to1.
-}
+M_n:=\frac{E_0(P_n)}{L_n},
+\qquad
+M_n\ge\lambda>0.
 \tag{9}
 \]
 
-So the unused remainder is itself a physical near-extremizer. The fixed-notch observable is equally stable. Since `phi_eta<=J_0`,
-
-\[
-E_\eta(P_n)\le E_0(P_n)=o(L_n),
-\qquad
-E_\eta(W_n)\le E_0(W_n)=O(L_n).
-\]
-
-Hence
-
-\[
-|E_\eta(U_n)-E_\eta(W_n)|
-\le
-2\sqrt{E_\eta(W_n)E_\eta(P_n)}+E_\eta(P_n)
-=o(L_n),
-\tag{10}
-\]
-
-and (5) yields
-
-\[
-\boxed{
-h_\eta(U_n)-h_\eta(W_n)\to0.}
-\tag{11}
-\]
-
-Thus arbitrarily strong cancellation among individually source-heavy old layers is not an obstruction. If their **sum** becomes source-negligible, the whole recycled packet can be excised and the decisive `ANF-099` exposure is unchanged. This is the packet analogue of `ANF-103`, but it allows arbitrary internal splitting of real multiplicities because the resulting affine error is only `o(L_n)` by (4).
-
-## 3. A source-heavy endpoint packet must polarize against the unused remainder
-
-Now pass to a subsequence on which the opposite alternative holds: for some fixed `lambda>0`,
-
-\[
-E_0(P_n)\ge\lambda L_n.
-\tag{12}
-\]
-
-Write
+No boundedness of `M_n` is assumed. Let
 
 \[
 \mathcal C_0(P_n,U_n)
-:=
-\operatorname{Re}\int J_0
-S_{P_n}\overline{S_{U_n}}.
+:=\operatorname{Re}\int J_0S_{P_n}\overline{S_{U_n}}.
 \]
 
-The exact arbitrary-split identity from `ANF-111` is
+The arbitrary-split identity of `ANF-111` is
 
 \[
 \Delta(W_n)
 =
 \Delta(P_n)+\Delta(U_n)
 +2\mathcal C_0(P_n,U_n)-\kappa_n,
-\tag{13}
+\tag{10}
 \]
 
-where `Delta(X)=E_0(X)-L(X)>=0`. By (1), `Delta(W_n)=o(L_n)`. By (3)--(4), `L(P_n)=o(L_n)` and `kappa_n=o(L_n)`, while (12) gives
+where `Delta(X)=E_0(X)-L(X)>=0`. By (1), `Delta(W_n)=o(L_n)`; by (3)--(4), `L(P_n)=o(L_n)` and `kappa_n=o(L_n)`; and `Delta(U_n)>=0`. Hence
 
 \[
-\Delta(P_n)\ge\lambda L_n-o(L_n).
+2\mathcal C_0(P_n,U_n)
+\le
+-E_0(P_n)+o(L_n),
 \]
 
-Since `Delta(U_n)>=0`, (13) forces
+so, uniformly for `M_n>=lambda`,
 
 \[
 \boxed{
 \mathcal C_0(P_n,U_n)
 \le
--\frac\lambda2L_n+o(L_n).
+-\left(\frac12-o(1)\right)M_nL_n.
 }
-\tag{14}
+\tag{11}
 \]
 
-This is the key point: once the **aggregate** old packet retains macroscopic source mass, it must cancel macroscopically against the unused remainder regardless of how much cancellation occurs inside the packet.
-
-The remainder also has controlled source mass. From (1), (3), and the triangle inequality,
+The global near-extremizer has only source norm `asymp sqrt(L_n)`, so the remainder cannot have an unrelated arbitrarily larger norm. The triangle inequality gives
 
 \[
 \sqrt{E_0(U_n)}
@@ -200,82 +175,96 @@ The remainder also has controlled source mass. From (1), (3), and the triangle i
 \sqrt{E_0(W_n)}+\sqrt{E_0(P_n)},
 \]
 
-so
+and therefore
 
 \[
-E_0(U_n)=O(L_n).
-\tag{15}
+\boxed{
+E_0(U_n)
+\le
+L_n\bigl(\sqrt{M_n}+1+o(1)\bigr)^2.
+}
+\tag{12}
 \]
 
-## 4. Endpoint localization transfers the forced polarization to unused mass
+For bounded `M_n` this recovers the `O(L_n)` estimate used previously. For `M_n->infinity`, (11)--(12) express a stronger rigidity: packet and remainder must carry source norms of the same large order and cancel macroscopically.
 
-Decompose the source inner product into the interior band and the shrinking endpoint layer. By Cauchy--Schwarz, (6), and (15),
+## 4. Endpoint localization transfers that polarization without any source upper bound
+
+Split the cross term into the interior and endpoint bands. Put
 
 \[
-\left|
-\operatorname{Re}
-\int_{|\alpha|\le1-\delta_n}
-J_0S_{P_n}\overline{S_{U_n}}
-\right|
+\varepsilon_n:=\frac{E_{\rm in,\delta_n}(P_n)}{L_n}\to0.
+\]
+
+By Cauchy--Schwarz and (12), the interior interaction satisfies
+
+\[
+|\mathcal C_{\rm in,n}|
 \le
 \sqrt{E_{\rm in,\delta_n}(P_n)E_0(U_n)}
-=o(L_n).
-\tag{16}
+\le
+L_n\sqrt{\varepsilon_n}
+\bigl(\sqrt{M_n}+1+o(1)\bigr).
+\tag{13}
 \]
 
-Therefore (14) must be realized in the endpoint layer. If
+Because `M_n>=lambda`,
+
+\[
+\frac{|\mathcal C_{\rm in,n}|}{M_nL_n}
+\le
+\sqrt{\varepsilon_n}
+\left(\frac1{\sqrt\lambda}+\frac{2}{\lambda}\right)
+=o(1).
+\tag{14}
+\]
+
+Thus the negative interaction in (11) cannot disappear into the interior even when `M_n` diverges. If
 
 \[
 E_{\rm edge,\delta}(X)
-:=
-\int_{1-\delta\le|\alpha|\le1}
+:=\int_{1-\delta\le|\alpha|\le1}
 J_0(\alpha)|S_X(\alpha)|^2\,d\alpha,
 \]
 
 then
 
 \[
-\operatorname{Re}
-\int_{1-\delta_n\le|\alpha|\le1}
-J_0S_{P_n}\overline{S_{U_n}}
+\mathcal C_{\rm edge,n}
 \le
--\frac\lambda2L_n+o(L_n).
-\tag{17}
+-\left(\frac12-o(1)\right)M_nL_n.
+\tag{15}
 \]
 
-Since `E_edge,delta_n(P_n)<=E_0(P_n)=O(L_n)`, endpoint Cauchy--Schwarz gives a constant `c_lambda>0` such that
+Endpoint Cauchy--Schwarz and `E_edge(P_n)<=E_0(P_n)=M_nL_n` therefore give
 
 \[
 \boxed{
 E_{\rm edge,\delta_n}(U_n)
-\ge c_\lambda L_n
+\ge
+\left(\frac14-o(1)\right)M_nL_n.
 }
-\tag{18}
+\tag{16}
 \]
 
-for all sufficiently large `n` on this subsequence. Thus a source-heavy old packet cannot absorb its own polarization forever: after aggregate packetization, the global floor forces a macroscopic endpoint signal into points that were not in the packet.
+This corrects the earlier audit of this finding. The crude estimate `L_n^2/E_0(P_n)` loses the packet scale because it inserts only a fixed `Omega(L_n)` lower bound for the cross term. The affine floor actually supplies the stronger `Omega(E_0(P_n))` polarization in (11); after normalizing consistently by `M_n`, the apparent loss vanishes.
 
-Notice what was *not* used. There is no estimate of `C_0(B,V)`, no sign assumption on any pair of old layers, no horizontal gap, and no claim that the old components are separately near-extremal. The entire internal interaction graph has disappeared into the single vector `S_{P_n}`.
+## 5. Fresh high mass is forced at the same packet scale
 
-## 5. Endpoint pressure forces a genuinely new disjoint high layer
-
-The endpoint anti-concentration inequality of `ANF-108` says that any physical configuration `X` of height at most `H` obeys
+The endpoint anti-concentration estimate of `ANF-108` says that every physical configuration `X` of height at most `H` satisfies
 
 \[
 E_{\rm edge,\delta}(X)
 \le
 C_*(1+H)e^{4\pi H}\delta E_0(X).
-\tag{19}
+\tag{17}
 \]
 
-Fix `0<theta<1` and set
+Fix `0<theta<1` and define
 
 \[
-h_n
-:=
-\frac{1-\theta}{4\pi}
-\log\frac1{\delta_n}.
-\tag{20}
+h_n:=\frac{1-\theta}{4\pi}\log\frac1{\delta_n}.
+\tag{18}
 \]
 
 Split the unused remainder by height,
@@ -288,125 +277,185 @@ Q_n:=\{u\in U_n:|\operatorname{Im}u|\le h_n\},
 
 \[
 V_n:=\{u\in U_n:|\operatorname{Im}u|>h_n\}.
+\tag{19}
+\]
+
+Set
+
+\[
+a_n:=C_*(1+h_n)\delta_n^\theta\to0.
+\tag{20}
+\]
+
+Equation (17) gives `E_edge(Q_n)<=a_nE_0(Q_n)`. Normalize all norms by `sqrt(M_nL_n)` and put
+
+\[
+x_n:=\sqrt{\frac{E_0(V_n)}{M_nL_n}},
+\qquad
+q_n:=\sqrt{\frac{E_0(Q_n)}{M_nL_n}}.
+\]
+
+From (12) and `M_n>=lambda`, there is a constant `Z_lambda` such that
+
+\[
+\sqrt{\frac{E_0(U_n)}{M_nL_n}}\le Z_\lambda,
+\qquad
+q_n\le Z_\lambda+x_n.
 \tag{21}
 \]
 
-The layer `V_n` is automatically disjoint from every previously extracted component because `V_n subset U_n`.
-
-The same two-case argument as in `ANF-109` now applies with no reference to a particular original tail. From (15), choose `C_U` with `E_0(U_n)<=C_UL_n` eventually and fix `M>4C_U`. If `E_0(Q_n)>ML_n`, reverse triangle inequality gives
+On the other hand, (16), endpoint triangle inequality, and (20) imply for all sufficiently large `n`
 
 \[
-E_0(V_n)
-\ge
-\bigl(\sqrt M-\sqrt{C_U}\bigr)^2L_n.
+\frac13
+\le
+\sqrt{a_n}\,q_n+x_n
+\le
+\sqrt{a_n}(Z_\lambda+x_n)+x_n,
 \tag{22}
 \]
 
-Otherwise `E_0(Q_n)<=ML_n`, and (19)--(20) imply
-
-\[
-\frac{E_{\rm edge,\delta_n}(Q_n)}{L_n}
-\ll
-(1+h_n)e^{4\pi h_n}\delta_n
-=
-(1+h_n)\delta_n^\theta
-\longrightarrow0.
-\tag{23}
-\]
-
-Combining (18), (23), and the reverse triangle inequality in the endpoint seminorm gives
-
-\[
-E_0(V_n)
-\ge E_{\rm edge,\delta_n}(V_n)
-\ge c_{\lambda,\theta}L_n.
-\tag{24}
-\]
-
-The two cases therefore prove
+after harmlessly weakening the asymptotic constant in (16). Since `a_n->0`, (22) forces `x_n` to stay bounded away from zero. Consequently there is `c_{lambda,theta}>0` such that
 
 \[
 \boxed{
-\liminf_n\frac{E_0(V_n)}{L_n}>0,
-\qquad
-|\operatorname{Im}v|>
-\frac{1-\theta}{4\pi}\log\frac1{\delta_n}
-\quad(v\in V_n).
+E_0(V_n)
+\ge
+c_{\lambda,\theta}M_nL_n
+\ge
+c_{\lambda,\theta}\lambda L_n
 }
+\tag{23}
+\]
+
+for all sufficiently large `n` on the source-heavy subsequence, and every point of `V_n` satisfies
+
+\[
+\boxed{
+|\operatorname{Im}v|
+>
+\frac{1-\theta}{4\pi}\log\frac1{\delta_n}.
+}
+\tag{24}
+\]
+
+Thus endpoint pressure not only survives unbounded packet source mass: **source blowup propagates to genuinely new unused height mass at comparable scale**. The new layer is disjoint from the packet by construction.
+
+## 6. Finite packet recycling no longer needs controlled aggregate source norm
+
+Suppose finitely many already extracted conjugation-invariant layers have been combined into `P_n`, with total cardinality `o(L_n)`, and suppose their aggregate satisfies (5). Pairwise interactions inside the packet are unrestricted. Then there are only two asymptotic outcomes.
+
+If `E_0(P_n)=o(L_n)`, Sections 1--2 excise the entire packet while preserving near-extremality and fixed-notch exposure. Otherwise pass to a source-heavy subsequence. Sections 3--5 force a new disjoint layer in the unused remainder. This remains true whether `E_0(P_n)=O(L_n)` or `E_0(P_n)/L_n->infinity`.
+
+Accordingly the `E_0(P_n)=O(L_n)` hypothesis in the previous version was not a genuine state variable of the cascade. The only packet-level analytic input needed by the source-heavy branch is **absolute endpoint localization** (5). At a finite stage, internal recycling can make the packet removable, but it cannot hide a non-negligible endpoint-localized packet from the unused remainder by making its source norm large.
+
+## 7. Leading-critical sparse packets are automatically endpoint-localized
+
+The remaining question is when (5) follows from geometry rather than being assumed. Let
+
+\[
+m_n:=|P_n|,
+\qquad
+R_n:=\frac{L_n}{m_n^2}\to\infty,
+\qquad
+H_n:=\max_{p\in P_n}|\operatorname{Im}p|,
+\]
+
+so `m_n=o(sqrt(L_n))`. Assume the packet is source-heavy as in (9), and write
+
+\[
+A_n:=4\pi H_n.
+\]
+
+`ANF-103` gives the universal lower threshold
+
+\[
+A_n
+\ge
+\log R_n+2\log\log R_n+O(1).
 \tag{25}
 \]
 
-So any source-heavy endpoint-localized old packet forces a **new source-heavy layer in the unused remainder**, at the natural height scale `log(1/delta_n)`.
-
-## 6. Application to the ANF-111 recycling obstruction
-
-Return to the corrected two-generation picture of `ANF-111`. Let `B_n` be the original matched-critical sparse compensator and let `V_n` be the secondary source-heavy layer extracted by `ANF-109`. Suppose the recursive sparse branch is active: both have sub-square-root cardinality and each satisfies the matched source-critical upper bound needed by `ANF-108`. Write their sparsity ratios as
+Now impose only the leading-scale upper condition
 
 \[
-R_{B,n}=\frac{L_n}{|B_n|^2}\to\infty,
-\qquad
-R_{V,n}=\frac{L_n}{|V_n|^2}\to\infty.
-\]
-
-Each component then has controlled source norm `O(L_n)` and interior source energy `o(L_n)` outside its own endpoint layer of width
-
-\[
-\delta_{B,n}
-=4\frac{\log\log R_{B,n}}{\log R_{B,n}},
-\qquad
-\delta_{V,n}
-=4\frac{\log\log R_{V,n}}{\log R_{V,n}}.
+\boxed{
+\frac{A_n}{\log R_n}\to1.
+}
 \tag{26}
 \]
 
-Let
+This is much weaker than a bounded matched-critical window: the additive excess above `log R_n+2 log log R_n` may tend to `+infinity`, provided it is `o(log R_n)`.
+
+Define
 
 \[
-P_n:=B_n\sqcup V_n,
+d_n:=1+(A_n-\log R_n)_+,
 \qquad
-\delta_n:=\max\{\delta_{B,n},\delta_{V,n}\}.
+\delta_n:=8\frac{d_n}{\log R_n}.
 \tag{27}
 \]
 
-Because `delta_n->0`, the common interior band is contained in both individual interior bands. The triangle inequality in that restricted Hilbert norm gives
+By (25), `d_n->infinity`; by (26), `d_n=o(log R_n)`. Hence `delta_n->0`. For large `n`, (25) also gives `A_n>=(1/2)log R_n`, so
 
 \[
-E_{\rm in,\delta_n}(P_n)=o(L_n).
+\delta_nA_n\ge4d_n.
 \tag{28}
 \]
 
-Also `|P_n|=o(L_n)` and `E_0(P_n)=O(L_n)`. Hence Sections 2--5 apply with no condition whatsoever on `C_0(B_n,V_n)`.
-
-There are exactly two packet outcomes. If
+Using the endpoint bound from `ANF-103`, `J_0(alpha)<=G^2(1-|alpha|)`, and the trivial pointwise estimate `|S_{P_n}(alpha)|<=m_ne^{2 pi |alpha|H_n}`, one obtains
 
 \[
-E_0(B_n\sqcup V_n)=o(L_n),
+\frac{E_{\rm in,\delta_n}(P_n)}{L_n}
+\ll
+\frac1{R_n}
+\exp\bigl(A_n(1-\delta_n)\bigr).
+\tag{29}
 \]
 
-then the two individually source-heavy layers have recycled almost completely **into each other**, but that very cancellation makes their union removable by (9)--(11). If instead their union retains macroscopic source mass, it forces endpoint energy into
+Since `A_n-log R_n<=d_n`, equations (28)--(29) yield
 
 \[
-U_n=W_n\setminus(B_n\sqcup V_n)
+\frac{E_{\rm in,\delta_n}(P_n)}{L_n}
+\ll
+\exp(d_n-4d_n)
+=
+\exp(-3d_n)
+\longrightarrow0.
+\tag{30}
 \]
 
-and (25) extracts a third source-heavy height layer entirely inside that unused remainder. The pairwise sufficient condition proposed in `ANF-111`, `C_0(V_n,B_n)=o(L_n)`, is therefore not a genuine gate in this matched-critical sparse branch.
+Thus (5) is automatic. Applying Sections 3--5 gives a fresh disjoint source-heavy layer above
 
-This does not yet make the cascade unconditional. The newly extracted layer must still be classified. If it reaches square-root cardinality, the sparse recursion has terminated in the population alternative of `ANF-109`. If it is sparse but rises well above its source-critical height, it has entered the supercritical-height alternative. Only if it is again sparse and matched-critical does `ANF-108` endpoint-localize it, allowing it to be appended to the old packet and the packet argument restarted. The important correction is that **pairwise non-recycling estimates are not needed at any finite packet stage**; aggregate source norm is the sufficient state variable.
+\[
+\boxed{
+h_n
+=
+\frac{1-\theta}{4\pi}
+\log\frac{\log R_n}{8d_n}
+\longrightarrow\infty.}
+\tag{31}
+\]
 
-## 7. Adversarial checks and evidence boundary
+When `A_n=log R_n+2 log log R_n+O(1)`, this recovers the previous log--log cascade scale up to the harmless `log log log R_n` correction caused by choosing a robust common endpoint width. More importantly, (31) continues to diverge throughout the entire additive `o(log R_n)` supercritical chamber.
 
-The source upper bound `E_0(P_n)=O(L_n)` is load-bearing in the source-heavy branch. Without it, Cauchy--Schwarz in (17) would only force `E_edge(U_n)>=L_n^2/E_0(P_n)`, which could vanish relative to `L_n`. In the intended matched-critical application this upper bound is automatic from the individual `O(L_n)` bounds and the triangle inequality, but the abstract packet lemma states it explicitly.
+## 8. Frontier consequence and adversarial boundary
 
-The endpoint localization assumption (6) is also essential. Macroscopic negative packet--remainder interaction could otherwise be carried in the interior of `[-1,1]`, where bounded-height anti-concentration gives no reason for the unused remainder to grow a new high layer. The theorem is therefore not a generic statement about arbitrary source-heavy sublinear unions; it is specifically a statement about already endpoint-localized compensator packets.
+The packet frontier is therefore stricter than in the previous version. At any finite endpoint-localized sublinear stage, **unbounded aggregate source norm is not an escape**. For a sub-square-root source-heavy packet, even an unbounded additive height excess is not an escape while `4 pi H_n/log R_n -> 1`: the packet still endpoint-localizes and forces fresh unused height mass. If a sparse branch is to stop this mechanism because of height rather than population, then after passage to a subsequence it must enter a genuinely multiplicative chamber,
 
-A useful abstract stress test is maximal internal recycling. Two old vectors may each have norm `asymp sqrt(L_n)` while nearly cancelling, so their packet norm tends to zero. The theorem does not try to forbid this: it lands in Section 2 and deletes the packet. At the opposite extreme, if their sum retains norm `asymp sqrt(L_n)`, the Montgomery--Taylor affine floor applied to the physical packet/remainder split forces the negative external interaction (14). These two outcomes exhaust the Hilbert-space failure mode that invalidated the naive argument in `ANF-110`; no hidden assumption of pairwise orthogonality has been reintroduced.
+\[
+\boxed{
+4\pi H_n\ge(1+c)\log R_n
+}
+\tag{32}
+\]
 
-The extraction step does not assert that the new layer is itself near-extremal, sparse, matched-critical, or notch-visible. Those are precisely the next branch tests. Nor does packet excision prove `beta_eta<B_eta`; it only shows that a completely self-cancelled recycled packet cannot be responsible for a larger fixed-notch envelope because its removal preserves (11).
+for some fixed `c>0`. The other major escape remains the population transition `m_n not=o(sqrt(L_n))`, where `R_n` no longer diverges and the endpoint argument of `ANF-103` does not force a shrinking band.
 
-The nearest conceptual language is again concentration--compactness/profile decomposition: one groups previously detected profiles and asks whether the aggregate packet vanishes or remains coupled to the remainder. No external compactness theorem is used here. Equations (8)--(18) are finite Hilbert-space geometry plus the exact Montgomery--Taylor affine floor, while (19)--(25) use the already-canonical endpoint anti-concentration estimate of `ANF-108`. No new literature dependency is load-bearing and `SOURCES.md` requires no update.
+Several limitations remain explicit. The theorem does not say that the newly extracted `V_n` is itself near-extremal, sub-square-root, leading-critical, or notch-visible. Those are the next classification tests before another recursive step. Condition (5) is genuinely necessary for the abstract packet transfer: without absolute endpoint localization, the negative interaction may live in the interior and no height conclusion follows. The leading-critical corollary uses only `m_n=o(sqrt(L_n))`, source-heaviness, and the max-height condition (26); it does not address a multiplicatively supercritical sparse packet, nor a diffuse superlinear bulk.
 
-## 8. Frontier consequence
+The `M_n->infinity` stress test is now built into the proof rather than excluded. Equation (12) controls the remainder on the packet scale, (14) makes the interior cross term `o(M_nL_n)`, and (16) transfers `Omega(M_nL_n)` endpoint energy. Conversely, for bounded `M_n`, the argument reduces to the earlier `O(L_n)` packet proof. No sign assumption on pairwise old-layer interactions, no horizontal gap, no fiber-completeness, and no hidden positivity of the spatial transform is used.
 
-`ANF-111` correctly identifies recycling as the reason a pairwise recursive proof fails, but the obstruction can now be compressed. In the matched-critical sparse regime, maintain a single endpoint-localized packet `P` of all previously extracted layers. If its aggregate source norm collapses, excise the packet and continue with a near-extremizer having the same fixed-notch exposure. If its aggregate source norm stays macroscopic, its forced polarization pushes endpoint energy into the unused remainder and produces a new disjoint source-heavy height layer.
+A targeted prior-art check against concentration--compactness/profile-decomposition language and sparse Fourier concentration/extrapolation did not locate a theorem supplying this Montgomery--Taylor affine-floor transfer or the leading-critical packet criterion (26)--(31). No external theorem is load-bearing: the proof uses the canonical Montgomery--Taylor floor, the explicit endpoint zero already established in `ANF-103`, and the endpoint anti-concentration inequality of `ANF-108`. `SOURCES.md` therefore requires no update.
 
-The remaining escape routes are therefore more concrete: a newly produced layer can reach square-root/bulk cardinality; it can move above the matched source-critical window so endpoint localization no longer follows from the current estimate; or, after packet excision, the residual near-extremizer can reorganize into a different geometric branch such as diffuse superlinear bulk. What no longer needs to be controlled is the complete pairwise interaction graph among finitely many already endpoint-localized sparse layers. **Aggregate packet source mass is enough to neutralize the recycling ambiguity.**
+The fixed-notch objective remains open. What has changed is the shape of the escape set: pairwise recycling, aggregate source blowup, and additive sublogarithmic supercriticality are no longer independent obstructions. A surviving sparse obstruction must eventually pay either square-root population or a multiplicative vertical excess, while diffuse superlinear bulk remains a separate chamber. This is the narrower packet-level compactness/height-cascade dichotomy needed to continue attacking the envelope `beta_eta` of `ANF-099`.
