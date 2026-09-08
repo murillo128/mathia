@@ -29,6 +29,7 @@ based_on:
   - research/visual_exploration/findings/VIS-104-area-area-commutator-projection.md
   - research/visual_exploration/findings/VIS-105-next-block-area-area-commutator-null.md
   - research/visual_exploration/findings/VIS-106-area-area-four-block-replication-panel-null.md
+  - research/visual_exploration/findings/VIS-107-area-area-markov-type-affine-line-collapse.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -36,54 +37,38 @@ based_on:
 
 ## Observation
 
-The visual line has eliminated a sequence of representations that look richer than the information they actually carry. Local zero portraits reduce to analytic normal forms; concentric modulus shells to Poisson-Jensen data; phase winding to divisor count; raw gap geometry has strong finite-size random-matrix baselines; ordinary one-dimensional persistence forgets chronology; and delay signatures through low degree are largely controlled by local block inventories.
+The visual line has progressively removed representations whose apparent richness is already forced by lower-information structure: local zero portraits reduce to analytic normal forms; circular modulus shells to Poisson--Jensen data; phase winding to divisor count; raw gap geometry has strong finite-size random-matrix baselines; ordinary one-dimensional persistence forgets chronology; and low-degree delay signatures are largely fixed by local block inventories.
 
-`VIS-097` nevertheless proves that three-delay level four can retain assembly chronology, while `VIS-098`--`VIS-100` turn the lower-information null into an exact finite order-three Markov type after fixed quantization. The first source tests were then negative: `VIS-101` and `VIS-102` found no residual for a pre-existing raw fourth-level coordinate, and `VIS-103` showed that simply passing to degree-four log-signature does not change the centered exact null.
+The three-delay level-four branch did identify a genuine chronology carrier in principle. `VIS-097` showed that different Eulerian assemblies of the same local four-block inventory can differ through an area-area commutator, while `VIS-099`--`VIS-100` supplied an exact finite order-three Markov-type null after fixed quantization. Source tests were then negative: `VIS-101`, `VIS-102`, and `VIS-105` found no unusual conditional residual for their frozen statistics, and `VIS-106` completed a predeclared four-block replication panel with exact tail probabilities `7/11`, `20/21`, `13/20`, and `209/248`, all far above the Bonferroni threshold `1/80`.
 
-`VIS-104` selected the canonical area-area subspace `C_AA=[L_2,L_2]`, its projector `P_AA`, and the basis-independent statistic
+`VIS-107` now resolves the structural question exposed by that panel. For every exact order-three Markov type of the ordinary scalar three-delay path, the canonical area-area coordinates satisfy constant `q_2` and constant `q_1+q_3`. After centering, the nominal three-dimensional `P_AA` support is universally confined to the single direction `B_1-B_3`. The affine-line behavior seen in `VIS-105`--`VIS-106` was therefore structural, not a finite-class accident.
 
-`T_AA=||P_AA ell_4-E_null[P_AA ell_4]||^2`
-
-before moving to fresh source data. `VIS-105` tested the next disjoint 36-gap block and obtained exact `p=183/416`.
-
-`VIS-106` has now completed the four-block replication panel that was frozen before inspection. The four exact tail probabilities on `g_143,...,g_286` are
-
-`7/11`, `20/21`, `13/20`, and `209/248`.
-
-The predeclared Bonferroni rejection threshold was `1/80`; the minimum observed p-value is `7/11`. All four `P_AA` supports are nonconstant, although the `W=40` third class cannot attain the panel threshold on its exact p-value lattice. The panel therefore does not reject, and the frozen rule forbids extending it post hoc with more adjacent windows as though they belonged to the same confirmation experiment.
-
-A further exact feature appeared across the four panel classes and the earlier `VIS-105` class: within each complete type class, `q_2` and `q_1+q_3` are constant, so the centered `P_AA` support lies on a one-dimensional affine line. This is currently a repeated finite-class fact, not a proved universal property of the shifted-delay Markov-type quotient.
+The current frontier is no longer to search more area-area coordinates or append more adjacent low-zero windows. It is to identify a materially different nonlocal information carrier, or an independently justified source/height-scale hypothesis for the one surviving chronology direction, without selecting the representation from repeated inspection of the same source material.
 
 ## Research question
 
-After the negative predeclared `P_AA` panel, what nonlocal information carrier or independently motivated source scale can retain chronology beyond an exact lower-information null without being selected by repeated inspection of the same low-zero sequence?
+Is there a mathematically specified visual or multiscale carrier for zeta-zero structure that retains information beyond an explicit lower-information quotient and then shows a source-specific residual under fresh, predeclared confirmation material?
 
-There is also a sharper structural subquestion before more weight is placed on `P_AA`: does exact order-three Markov-type conditioning for the scalar three-delay construction universally force the observed affine-line reduction of the area-area projection, or is that collapse peculiar to the five tested source types?
+For any continuation of the existing area-area route, can an independently motivated source/height-scale hypothesis be stated before inspecting new data for the single surviving `B_1-B_3` direction? Otherwise, what different carrier preserves genuinely nonlocal chronology or arithmetic structure without collapsing to local block counts, known analytic identities, or representation-induced geometry?
 
 ## Why it may matter
 
-The area-area branch now distinguishes capacity from evidence unusually cleanly. Level four can encode order, the exact finite quotient leaves counterfactual assemblies, and `P_AA` is nonconstant, yet one clean fresh block plus a fully predeclared four-block replication panel all give ordinary source positions. This makes further adjacent-window search scientifically weak even though the carrier is algebraically genuine.
+`VIS-107` sharpens the information accounting. The area-area mechanism is algebraically real, but the exact local quotient removes two of its three nominal coordinates before source testing. Combined with the negative fresh block and negative predeclared panel, this makes another adaptive low-zero `P_AA` search a poor use of evidence even though higher-order chronology remains possible in principle.
 
-If the affine-line collapse is structural, the apparently three-dimensional canonical channel loses most of its degrees of freedom after the exact local quotient; proving that would be a useful information-boundary result and would clarify why another source test should change carrier rather than merely height. If the collapse is not structural, an explicit counterexample would identify which type-class geometry preserves additional area-area degrees of freedom.
+A useful next representation must therefore buy new information rather than merely more visual complexity. A positive result would be substantially more credible if the carrier is defined independently, its lower-information null is exact or tightly controlled, and the residual survives an appropriate finite-size CUE or other non-arithmetic source comparison.
 
 ## Decisive test
 
-First treat the observed `P_AA` affine-line behavior as a structural audit, not as a source search. Derive from the shifted three-delay path and fixed length-four-block inventory whether `q_2` and `q_1+q_3` are invariants of every exact order-three Markov type. A proof closes two nominal area-area directions under this quotient; an explicit feasible type class with varying `q_2` or `q_1+q_3` kills the universal-collapse hypothesis.
+Do not extend the `VIS-105`--`VIS-106` adjacent-window panel. If `P_AA` is reused, acknowledge `VIS-107`: after exact order-three Markov-type conditioning its centered support has only the `B_1-B_3` direction. Before looking at new source values, freeze a separately motivated height/source regime, window family, statistic, and combined decision rule. A positive conditional residual must then survive a matched finite-size CUE or otherwise appropriate non-arithmetic source control before being called zeta-specific.
 
-Do not use more adjacent zeta blocks to decide that algebraic question.
-
-After that audit, any new source-specific experiment must be predeclared independently of the already inspected `g_71,...,g_286`. Either specify a materially different nonlocal carrier and its exact lower-information null, or give a separately justified height/source-scale hypothesis whose window family and combined decision rule are fixed before source evaluation. A positive conditional residual must then survive a matched finite-size CUE or otherwise appropriate non-arithmetic source control before it is interpreted as zeta-specific.
-
-Kill a new route when its signal is determined by the admitted local inventory, collapses to a known analytic identity, is reproduced by the matched source control, or depends on post-hoc representation/window selection.
+For a new visual/multiscale carrier, state exactly what information the representation preserves and forgets, construct a matched quotient or surrogate that removes the admitted lower-order structure, and predeclare the discriminating statistic before confirmation. Kill the route if its signal is determined by the admitted local inventory, collapses to a known analytic identity, is reproduced by the matched source control, or depends on post-hoc representation/window selection.
 
 ## Evidence boundary
 
-`VIS-097` proves chronology capacity in principle, not source specificity. `VIS-098`--`VIS-100` establish exact conditional-null mechanics after quantization. `VIS-101`, `VIS-102`, and `VIS-105` are finite source negatives. `VIS-104` is an exact algebraic projection theorem. `VIS-106` is the complete result of a predeclared four-block family-wise panel and closes only that confirmation design.
+`VIS-097` proves chronology capacity in principle, not source specificity. `VIS-099`--`VIS-100` establish exact conditional-null mechanics after quantization. `VIS-101`, `VIS-102`, `VIS-105`, and `VIS-106` are finite source negatives under specific frozen statistics/designs. `VIS-104` gives the exact canonical area-area projection. `VIS-107` proves only that this projection has one assembly-sensitive centered direction under the exact order-three Markov-type quotient.
 
-The repeated affine-line property in `VIS-105`--`VIS-106` is exact on the enumerated finite type classes but has not been proved for arbitrary words/types. The current corpus therefore does not establish that all `P_AA` information is effectively one-dimensional, that all zeta chronology is null, that the Markov-type quotient is a complete random-matrix model, or that no other visual/multiscale carrier can work.
-
-No result in this chain establishes a new zeta-zero law, a CUE/zeta separation for this statistic, a fractal dimension, or an RH criterion.
+These results do not establish that all zeta-zero chronology is null, that higher signature levels or other nonlocal carriers collapse, that quantization preserves all relevant continuous information, that zeta and finite-size CUE agree for every such statistic, or that no useful multiscale geometry exists. No result in this chain establishes a new zeta-zero law, fractal dimension, or RH criterion.
 
 ## Research disposition
 
-Accepted in further narrowed form. The adjacent-block `P_AA` replication question is resolved negatively by `VIS-106` and must not be enlarged adaptively. The live frontier is now either the exact structural audit of the observed affine-line collapse or a genuinely different, independently specified information carrier/source-scale hypothesis with fresh confirmation material.
+Accepted in further narrowed form. The adjacent-block `P_AA` replication route is closed negatively by `VIS-106`, and the structural affine-line audit is resolved by `VIS-107`: the exact type-class quotient leaves only `B_1-B_3` as an area-area chronology direction. The live question is now a genuinely different information carrier or a separately justified fresh source/height-scale hypothesis that is fixed before new source inspection.
