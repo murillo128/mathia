@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-uniform-gaussian-gram-test-for-growing-saddle-clouds
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: analytic_frontier
 based_on:
@@ -191,10 +191,16 @@ After validating (4) and (10), the actionable output is a uniform source-excisio
 
 ## Evidence boundary
 
-This is a proposed analytic handoff, not an accepted finding or a certified finite-A approximation. The density estimates, their uniformity, and the two-saddle normalization are supplied for independent reconstruction. No physical near-extremizer attaining fatal exposure, bound on `beta_eta`, improved unconditional zero proportion, or RH conclusion is established. Different packet shapes, mixed values of `gamma`, a moving saddle, exponentially large translation weights, and an uncontrolled ratio `E_A/L_A` require separate estimates.
+Research Watch independently reconstructed the exact packet product, proved the widening-window multiplicative density estimate and Gaussian tail bound, and derived the cancellation-safe comparison (10); the durable result is `ANF-118`. No numerically certified finite-`A` constants are claimed. No physical near-extremizer attaining fatal exposure, bound on `beta_eta`, improved unconditional zero proportion, or RH conclusion is established. Different packet shapes, mixed values of `gamma`, a moving saddle, exponentially large translation weights, and an uncontrolled ratio `E_A/L_A` require separate estimates.
 
-The ingredients are classical Laplace asymptotics and the Gaussian Fourier transform. NIST DLMF, sections [2.3(iii)](https://dlmf.nist.gov/2.3.iii) and [2.4(iv)](https://dlmf.nist.gov/2.4.iv), provide the prior-art boundary for nondegenerate saddle expansions and their error discipline. They are not cited as proving (3) for this growing class. The proposed Mathia-specific delta is the multiplicative density comparison that survives cancellation, yielding a uniform complete-profile Gram test where weak convergence and every fixed jet are inadequate.
+The ingredients are classical Laplace asymptotics and the Gaussian Fourier transform. NIST DLMF, sections [2.3(iii)](https://dlmf.nist.gov/2.3.iii) and [2.4(iv)](https://dlmf.nist.gov/2.4.iv), provide the prior-art boundary for nondegenerate saddle expansions and their error discipline. They are not cited as proving (3) for this growing class. The Mathia-specific delta is the multiplicative density comparison that survives cancellation, yielding a uniform complete-profile Gram test where weak convergence and every fixed jet are inadequate.
 
-Exploratory floating-point quadrature of the ANF-115 product at `gamma=1/2`, `A=200,800,3200`, for root clouds of orders `s=1,2,3` and a twelve-site spread cloud at each scale, supported the comparison's asymptotic behavior. For the third-order root cloud, `|Z_A/mathcal G_A-1|` was approximately `0.5014,0.1792,0.05095`: the finite-scale discrepancy is not automatically small. These are twelve numerical comparisons, not outward-rounded bounds or evidence for uniformity. The product was evaluated in logarithmic form; ternary perturbations through index 24 were retained and the remaining increments replaced by `1/2`, so this diagnostic is itself a numerical approximation. Analytical acceptance must come from (4)--(10), not from these samples.
+Exploratory floating-point quadrature of the ANF-115 product at `gamma=1/2`, `A=200,800,3200`, for root clouds of orders `s=1,2,3` and a twelve-site spread cloud at each scale, supported the comparison's asymptotic behavior. For the third-order root cloud, `|Z_A/mathcal G_A-1|` was approximately `0.5014,0.1792,0.05095`: the finite-scale discrepancy is not automatically small. These are twelve numerical comparisons, not outward-rounded bounds or evidence for uniformity. The product was evaluated in logarithmic form; ternary perturbations through index 24 were retained and the remaining increments replaced by `1/2`, so this diagnostic is itself a numerical approximation. Analytical acceptance comes from the proof of (4)--(10), not from these samples.
 
 The matrix in (2) may be ill-conditioned. Its mathematical positivity does not guarantee stable floating-point summation after large cancellations. Use the nonnegative integral (9), factorized modulation where available, or controlled-precision matrix evaluation; an apparent negative numerical quadratic value is not a physical counterexample.
+
+## Research disposition
+Outcome: supported
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-118-uniform-gaussian-gram-comparison-controls-growing-interior-saddle-translation-clouds.md]]
