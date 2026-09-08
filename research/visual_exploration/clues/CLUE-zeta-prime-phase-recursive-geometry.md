@@ -28,6 +28,7 @@ based_on:
   - research/visual_exploration/findings/VIS-088-polynomial-sensitivity-observables-inherit-gram-clock-null.md
   - research/visual_exploration/findings/VIS-089-inverse-polynomial-decision-margins-inherit-gram-clock-null.md
   - research/visual_exploration/findings/VIS-090-consecutive-gram-superlog-prime-torus-haar.md
+  - research/visual_exploration/findings/VIS-091-gram-log-lag-increment-clock-collapse.md
 ---
 
 # Can a zeta visual statistic leave the prime-torus information class?
@@ -40,30 +41,17 @@ The prime-phase program has closed several increasingly sophisticated apparent e
 
 The nonlinear Euler-product branch is also sharply classified. `VIS-074` removes additive cross-prime small divisors, `VIS-075` shows that the raw holomorphic finite Euler product stays in the positive exponent cone, and `VIS-076` closes fixed-support signed beats for `|P_X|^2`. `VIS-078`--`VIS-079` replace misleading reciprocal-frequency certificates by the exact sinc-filtered energy and its one-variable triangular autocorrelation form. `VIS-080`--`VIS-082` then close the growing-support signed route: the normalized triangular energy tends to zero exactly when `log X/L -> 0`, while persistence outside that corridor is already forced by ordinary coprime-ratio support crowding.
 
-Gram sampling supplies complementary global and local controls. `VIS-083` proves Haar equidistribution for every fixed finite prime-phase vector over the full Gram population. `VIS-084` shows that consecutive sublogarithmic Gram blocks freeze and logarithmic blocks first trace a deterministic torus arc. `VIS-085` and `VIS-086` then show that subtracting the linear and quadratic inverse-theta clock terms extends coordinatewise collapse through the square-root and two-thirds-power corridors for polynomial prime support.
+Gram sampling supplies complementary global, local, and ordered controls. `VIS-083` proves Haar equidistribution for every fixed finite prime-phase vector over the full Gram population. `VIS-084` shows that consecutive sublogarithmic Gram blocks freeze and logarithmic blocks first trace a deterministic torus arc. `VIS-085`--`VIS-087` show that finite-order inverse-theta clock subtraction extends coordinatewise collapse through every fixed sublinear power scale for polynomial prime support. `VIS-088` and `VIS-089` lift that hierarchy to polynomial-sensitivity observables and inverse-polynomial-margin hard decisions.
 
-`VIS-087` closes the apparent finite-order loophole. If the degree-`m` Taylor polynomial of the inverse Gram clock is subtracted, then
-
-`max_(h<=H_n,p<=P_n) |R_(m,n,h)(p)-1|`
-` <<_m H_n^(m+1) log P_n/[g_n^m(log g_n)^(m+2)]`.
-
-For polynomial prime support this collapses whenever
-
-`H_n=o(g_n^(m/(m+1)) log g_n)`.
-
-Because `m/(m+1)->1`, every fixed sublinear power scale `H_n=O(g_n^alpha(log g_n)^B)` with `alpha<1` and fixed `B` is swallowed by some fixed finite-order deterministic sampling null.
-
-`VIS-088` lifts that coordinatewise hierarchy to every full-block observable with fixed-polynomial Lipschitz sensitivity. `VIS-089` closes the robust discontinuous counterpart: an arbitrary categorical or threshold readout is frozen whenever its decision margin around the deterministic clock-null block has an inverse-polynomial lower bound.
-
-`VIS-090` now closes the complementary long consecutive-block population loophole. For the empirical prime-phase measure on indices `N<=k<=N+M`, every fixed nontrivial prime-torus Fourier coefficient is `O_m(log N/M)`. Hence, whenever `M/log N->infinity` and `M<=N-1`, the entire infinite prime-torus empirical measure converges weakly to Haar. Together with `VIS-084`, raw fixed-prime consecutive blocks are therefore classified across the Gram-spacing scale: sublogarithmic blocks freeze, logarithmic blocks trace the deterministic local clock arc, and superlogarithmic blocks return to Haar at the population level.
+`VIS-090` closes the long consecutive-block population loophole: whenever `M/log N -> infinity` with `M<=N-1`, the empirical fixed-prime state population returns to Haar. `VIS-091` now closes the first naive ordered-path loophole inside that same regime. If a lag satisfies `ell/log N -> tau<infinity`, the lag-increment field `z_(k+ell) overline(z_k)` collapses uniformly to the deterministic clock point `(p^(-2 pi i tau))_p`; any fixed finite collection of such lags collapses jointly. Thus a long block may be Haar as an unordered population while local edges, fixed/logarithmic-lag autocorrelations, and finite delay embeddings remain completely organized by the Gram clock.
 
 ## Research question
 
-After these closures, does any **independently anchored**, **ordered/path-sensitive**, or **independently calibrated factor/residual** visual statistic expose information that is not already determined by the prime torus, its exact observation-window/sampling geometry, or an invertible coordinate change of the same underlying field?
+After these closures, does any **independently anchored**, **genuinely long-range ordered**, or **independently calibrated factor/residual** visual statistic expose information that is not already determined by the prime torus, its exact observation-window/sampling geometry, or an invertible coordinate change of the same underlying field?
 
 Three possibilities remain materially distinct.
 
-First, a Gram/prime-phase route must now use information that the raw consecutive-block empirical measure discards: a genuinely ordered or nonconsecutive sampling statistic, prime support or Fourier complexity growing with height under a uniform analysis, a quantitatively justified super-polynomial/vanishing-margin amplifier, or another sampling regime with its own theorem. Merely lengthening a consecutive fixed-prime block — even toward a nearly linear block — does not create a new population law, because `VIS-090` sends every superlogarithmic block back to Haar.
+First, a Gram/prime-phase route must use ordered information beyond the newly classified finite `O(log N)` lag geometry: genuinely superlogarithmic/nonlocal order, nonconsecutive sampling, prime support or Fourier complexity growing with height under a uniform analysis, a quantitatively justified super-polynomial/vanishing-margin amplifier, or a residual after explicitly quotienting the deterministic Gram-clock increment law. Merely lengthening a consecutive fixed-prime block, retaining sample order, drawing local edges, or using a finite delay embedding with `O(log N)` lags is no longer an escape route.
 
 Second, an externally anchored observable may add a source coordinate not determined by the prime phases and the Gram clock — for example a genuinely informative zero/Gram analytic quantity — and then test a joint law that survives the matched prime-phase sampling null.
 
@@ -71,9 +59,9 @@ Third, a hybrid factor/residual statistic may be meaningful if it tests a joint 
 
 ## Why it may matter
 
-The current sequence of controls shows how easily visual structure can be generated by representation and sampling alone. The same prime field is globally Haar on fixed support, locally frozen on very short Gram blocks, organized into a deterministic arc at the first motion scale, controlled by a hierarchy of deterministic inverse-theta clock corrections on fixed sublinear power-law blocks, stable under polynomial-sensitivity and robust-threshold readouts after sufficient correction, and again Haar as a raw population on every superlogarithmic consecutive block.
+The current sequence of controls shows how easily visual structure can be generated by representation and sampling alone. The same prime field is globally Haar on fixed support, locally frozen on very short Gram blocks, organized into a deterministic arc at the first motion scale, controlled by a hierarchy of deterministic inverse-theta clock corrections on fixed sublinear power-law blocks, stable under polynomial-sensitivity and robust-threshold readouts after sufficient correction, again Haar as a raw population on every superlogarithmic consecutive block, yet still deterministically coherent in every fixed finite family of `O(log N)` lag increments.
 
-A surviving statistic therefore needs a genuinely new source law, retained ordering information, growing-dimensional structure with uniform control, or a mathematically justified amplification mechanism rather than another rendering or ordinary population summary of the same Gram-sampled prime phases.
+A surviving statistic therefore needs a genuinely new source law, genuinely longer-range ordered information, growing-dimensional structure with uniform control, or a mathematically justified amplification mechanism rather than another rendering, ordinary population summary, or local delay geometry of the same Gram-sampled prime phases.
 
 ## Decisive test
 
@@ -81,18 +69,20 @@ For an externally anchored route, define the anchor without using the prime-toru
 
 For consecutive Gram windows, first classify which regime the proposed statistic actually uses. Fixed-prime raw population statistics are already controlled: `VIS-084` gives freezing for `H=o(log g_n)` and the deterministic arc at `H=Theta(log g_n)`, while `VIS-090` gives Haar population convergence when `H/log n->infinity` with `H<=n-1`.
 
+For ordered statistics, compare first against `VIS-091`. Any statistic built continuously from a fixed finite collection of lag increments with `ell_j/log N -> tau_j<infinity` inherits a deterministic clock input in the limit. A proposed ordered separator must therefore either subtract/match that clock law and prove a residual, or move to a genuinely superlogarithmic/nonlocal lag regime and derive its own sampling theorem. Do not interpret a Haar-looking cloud together with a smooth local path, strong fixed-lag autocorrelation, or structured finite delay embedding as two independent signals; `VIS-090` and `VIS-091` show that this combination is expected from the sampling clock alone.
+
 For growing-support fixed-sublinear power-law blocks, compare against `VIS-085`--`VIS-089`. If the complete readout is Lipschitz with fixed-polynomial sensitivity, a sufficiently high fixed clock order forces it to the null. If it is discontinuous, compute its metric decision margin; any inverse-polynomial lower margin is likewise swallowed. Do not treat increasing the correction order, block dimension, prime cutoff within polynomial support, polynomial aggregation sensitivity, or applying a robust hard threshold as confirmation.
 
-A proposed escape must therefore identify the missing information explicitly. For an ordered/path-sensitive route, state the order statistic and derive a null that preserves the already-classified empirical population law and Gram clock. For a growing-dimensional route, prove uniformity in the changing support/character class rather than invoking fixed-character Haar convergence. For a nonconsecutive route, derive the induced sampling law. For a vanishing-margin or super-polynomial amplifier, justify why the extreme sensitivity is stable and arithmetically meaningful rather than a magnifier of residual clock error.
+For a growing-dimensional route, prove uniformity in the changing support/character class rather than invoking fixed-character Haar convergence. For a nonconsecutive route, derive the induced sampling law. For a vanishing-margin or super-polynomial amplifier, justify why the extreme sensitivity is stable and arithmetically meaningful rather than a magnifier of residual clock error.
 
 For a factor/residual route, construct the hybrid prime factor, zero factor, and explicit residual independently. Reduce deterministic recombinations using `VIS-064`--`VIS-066`, then state the remaining claim as a property of the joint `(factor,residual)` law that would still be nontrivial after an invertible coordinate change. Calibrate that property with the finite-window and control uncertainty appropriate to its actual dimensionality.
 
 ## Evidence boundary
 
-The signed squared-Euler-product branch is resolved negatively as a separator by `VIS-080`--`VIS-082`. Gram-point anchoring is classified at several levels: `VIS-083` gives full-population fixed-prime Haar behavior; `VIS-084` gives raw short-block freezing and the first deterministic local arc; `VIS-085`--`VIS-087` give the finite-order corrected hierarchy through every fixed sublinear power scale for polynomial support; `VIS-088` and `VIS-089` lift that hierarchy to polynomial-sensitivity observables and inverse-polynomial-margin hard decisions; and `VIS-090` proves superlogarithmic consecutive-block Haar convergence at the empirical-population level.
+The signed squared-Euler-product branch is resolved negatively as a separator by `VIS-080`--`VIS-082`. Gram-point anchoring is classified at several levels: `VIS-083` gives full-population fixed-prime Haar behavior; `VIS-084` gives raw short-block freezing and the first deterministic local arc; `VIS-085`--`VIS-087` give the finite-order corrected hierarchy through every fixed sublinear power scale for polynomial support; `VIS-088` and `VIS-089` lift that hierarchy to polynomial-sensitivity observables and inverse-polynomial-margin hard decisions; `VIS-090` proves superlogarithmic consecutive-block Haar convergence at the empirical-population level; and `VIS-091` proves deterministic collapse of every fixed finite family of `O(log N)` lag increments.
 
-None of these findings establishes growing-dimensional Haar equidistribution uniform in a changing prime support, classifies arbitrary ordered/path-sensitive or nonconsecutive Gram statistics, proves that a super-polynomial or vanishing-margin amplifier is stable or arithmetically meaningful, approximates zeta strongly enough for the intended inference, proves independence of prime and zero data, or has an RH consequence. Fixed-character weak Haar convergence must not be silently upgraded to an `N`-dependent high-dimensional law.
+None of these findings establishes growing-dimensional Haar equidistribution uniform in a changing prime support, classifies genuinely superlogarithmic/nonlocal or nonconsecutive Gram order statistics, proves that a super-polynomial or vanishing-margin amplifier is stable or arithmetically meaningful, approximates zeta strongly enough for the intended inference, proves independence of prime and zero data, or has an RH consequence. Fixed-character weak Haar convergence and finite-log-lag clock collapse must not be silently upgraded to those stronger regimes.
 
 ## Research disposition
 
-Accepted in further narrowed form. Continue only through information that survives the complete consecutive-block population/clock controls: genuinely ordered or nonconsecutive sampling with its own null, growing support with a uniform theorem, a quantitatively justified super-polynomial or vanishing-margin mechanism, an independently informative added coordinate/source law, or an independently calibrated factor/residual joint-law question. Do not reopen raw fixed-prime consecutive Gram blocks by changing their length or rendering.
+Accepted in further narrowed form. Continue only through information that survives the complete consecutive-block population/clock controls: genuinely superlogarithmic or nonconsecutive order with its own null, a residual after explicit clock quotienting, growing support with a uniform theorem, a quantitatively justified super-polynomial or vanishing-margin mechanism, an independently informative added coordinate/source law, or an independently calibrated factor/residual joint-law question. Do not reopen raw fixed-prime consecutive Gram blocks through block length, rendering, local edges, fixed/logarithmic-lag autocorrelations, or finite `O(log N)` delay embeddings.
