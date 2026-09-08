@@ -10,13 +10,15 @@ The endpoint is already sharp: square-root-scale first-absolute Mertens control 
 
 The surviving source must therefore retain order or arithmetic relations that are neither finite/quasi-polynomial summaries nor a topological recoding whose signed observable is already `M`. A useful theorem must connect such a relation quantitatively to first-absolute excursion at a cost genuinely below the RH-complete endpoint.
 
-## Treat the Bost--Connes diagonal and continuous coefficient spectrum as classified for Möbius orientation
+## Treat bounded Bost--Connes scalar readouts as classified between two bad topology extremes
 
-MC-138 shows that the canonical Bost--Connes KMS diagonal is exactly product across distinct prime coordinates, so centered cross-prime covariances vanish rather than generating the required global signed coupling. MC-139--MC-142 test progressively more cyclotomic coefficient structure; finite symmetry-balanced primitive-character monomials collapse to a scalar Gauss factor times the divisibility/coprimality diagonal, while nontrivial net characters are killed by the unique high-temperature equilibrium.
+MC-138--MC-143 show that the canonical KMS diagonal is product across primes, finite cyclotomic coefficient structure collapses to divisibility/coprimality data, and norm-continuous coefficient observables cannot uniformly recover square-free Möbius orientation: `C^*(Q/Z)=C(hat Z)` has exact uniform error floor `1`.
 
-MC-143 closes the norm-completion loophole inside the commutative coefficient algebra. Since `C^*(Q/Z) = C(hat Z)` and primes and semiprimes of opposite Möbius sign can converge to the same profinite point, no continuous coefficient observable can realize the square-free Möbius sign, and the best uniform error on square-free integers is exactly `1`. Growing finite cyclotomic approximants therefore cannot recover orientation by a norm-convergent limit inside the coefficient algebra.
+MC-144--MC-146 extend that boundary through the bounded crossed product. Every canonical number-state diagonal of a bounded Bost--Connes observable is still profinite-continuous; every fixed rational off-diagonal band is just a shifted diagonal; and even the complete countable fixed-rational band profile remains profinite after any product-topology-continuous scalar decoder. Passing from one band to all bands therefore does not create the missing orientation while continuity is retained.
 
-This does not rule out the full crossed-product/semigroup part, non-equilibrium states, measurable or unbounded observables, or other genuinely noncommutative source relations. But any continuation must explain what cross-prime/order information those enlargements add that is absent from both the product KMS diagonal and the continuous profinite coefficient spectrum.
+MC-147 closes the opposite naive repair. In the canonical representation, the strong/weak closure of the coefficient algebra is all bounded diagonal sequences, and the strong/weak closure of the full represented Bost--Connes algebra is all of `B(l^2(N))`. Möbius can then be encoded, but so can every bounded target. Unrestricted von Neumann completion is target-complete rather than target-selective.
+
+The live Bost--Connes question is therefore an intermediate-category theorem: identify a source-forced regularity, complexity, state, dynamics, or relational restriction that is strictly richer than profinite-continuous scalarization but far smaller than arbitrary strong/weak closure, and then prove that it controls first-absolute excursion without simply storing `mu` or `M`. Off-diagonal or weak-completion language alone is no longer evidence of added arithmetic content.
 
 ## Treat finite-state vocabulary growth as closed until it changes order topology
 
@@ -24,6 +26,6 @@ Adding context length, modular height, finitely many future steps, periodic phas
 
 ## Require the source theorem to be Möbius-specific but not target-equivalent
 
-Generic matched controls need not satisfy Möbius multiplicativity, square-free support, prime values, or divisor identities, so exact arithmetic remains a legitimate escape. The converse warning is equally important: MC-133--MC-143 show that a representation can be fully Möbius-specific or cyclotomic and still store the hard sign only as an equivalent encoding or fail to store it continuously at all.
+Generic matched controls need not satisfy Möbius multiplicativity, square-free support, prime values, or divisor identities, so exact arithmetic remains a legitimate escape. The converse warning is equally important: MC-133--MC-147 show that a representation can be fully Möbius-specific or cyclotomic and still store the hard sign only as an equivalent encoding, lose it under a natural continuity quotient, or recover it only after enlarging the topology until arbitrary bounded targets are admitted.
 
-A positive theorem must identify an arithmetic relation that forbids the known rearrangement/product/profinite controls and yields an independently controlled quantity strictly cheaper than the Mertens endpoint.
+A positive theorem must identify an arithmetic relation that forbids the known rearrangement/product/profinite/target-complete controls and yields an independently controlled quantity strictly cheaper than the Mertens endpoint.

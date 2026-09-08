@@ -2,15 +2,23 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Turn fixed-notch escape into a packet-level compactness or height-cascade dichotomy
+## Close the source-capacity-deficit escape in the fixed-notch packet cascade
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-097--ANF-103 replace raw Gram conditioning by the physical fixed-notch exposure `beta_eta`, remove convexified/separable fake instability, and show that source-negligible sparse tails can be trimmed without changing the limiting exposure. ANF-104--ANF-109 then sharpen the source-heavy alternative: sparse matched-critical compensators cannot hide arbitrarily in the remote tail; they are driven into endpoint-localized height layers, with secondary layers forced at larger logarithmic/loglog scales when the first layer remains source-heavy.
+ANF-097--ANF-111 reduce the fixed-notch problem to the physical exposure `beta_eta`, remove convexified/separable fake instability, and show why sparse layers must be aggregated before recursion: pairwise polarization can recycle inside previously extracted mass.
 
-ANF-111 identifies the flaw in a naive layer-by-layer recursion: negative polarization of a newly extracted layer can recycle through old extracted mass. ANF-112 repairs exactly that bookkeeping at the aggregate level. For the packet `P_n` of all already extracted endpoint-localized sparse pieces, either its Montgomery--Taylor source norm is `o(L_n)` and the whole packet is excisable, or it retains macroscopic source norm and the global floor forces macroscopic endpoint energy into the unused remainder, producing genuinely new disjoint source-heavy height mass. Internal recycling among old layers no longer defeats the argument.
+ANF-112 closes that recycling loophole at packet level. An endpoint-localized sublinear packet is either source-negligible and excisable, or its full source mass forces comparable endpoint energy into the unused remainder and hence a fresh disjoint source-heavy height layer. No upper bound on the packet source norm is needed. For sub-square-root packets, leading-critical height `4 pi H/log R -> 1` already forces the required endpoint localization even with additive `o(log R)` supercritical excess.
 
-The remaining gap is therefore precise. The packet dichotomy does not by itself give an infinite contradiction: each new layer must again enter a sparse matched-critical regime, otherwise the configuration exits into the square-root/bulk or supercritical-height alternatives already isolated in ANF-109--ANF-112. The decisive theorem is to close all surviving chambers and prove `beta_eta < B_eta`, or construct a physical near-extremizer in one chamber whose exposure reaches `B_eta`.
+ANF-113 identifies the sharper invariant beyond that chamber. Relative endpoint localization with respect to the packet's own source norm is enough, and the universal height-capacity scale is `e^A/(R A^2)` with `A=4 pi H`. If the logarithmic capacity deficit
+
+`D = log_+(e^A/(R M A^2))`
+
+satisfies `D=o(A)`, the cascade still restarts even at multiplicatively supercritical height. A surviving sparse packet must therefore approach square-root population, leave the sparse geometry, or become exponentially source-unsaturated relative to its available height.
+
+ANF-114 gives a complementary quantitative control on the distinct-real face: the Montgomery--Taylor triple gap satisfies `kappa_L asymp L^-4`, yielding the sharp real defect-to-span law `diam(X) >> N Delta^(-1/4)`. That modulus does not yet transfer to the complex conjugation-invariant packets responsible for the source-capacity-deficit escape.
+
+The live theorem is now precise: prove that physical Montgomery--Taylor near-extremality forbids exponential source-unsaturation, or prove a complex/conjugate analogue of the effective defect-to-span rigidity strong enough to close that chamber. Otherwise construct a physical near-extremizer in the surviving chamber whose fixed-notch exposure reaches the obstruction threshold. The objective remains `beta_eta < B_eta`, but the sparse escape set is substantially narrower.
 
 ## Treat a distinguished bow saving as source-forced signed cancellation, not averaged variance
 

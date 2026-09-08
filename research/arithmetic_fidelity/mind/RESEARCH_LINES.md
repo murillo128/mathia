@@ -12,11 +12,17 @@ AF-189--AF-194 sharpen that scale dependence into an overlap/saddle hierarchy. T
 
 The live problem is a source-class lower recovery theorem or kernel-specific converse that matches these exact controls. Neither exact infinite-bandwidth sufficiency, a derivative envelope, nor one leading asymptotic profile determines the inverse scale by itself.
 
-## Optimize the geometry of matched controls before treating one stencil as extremal
+## Solve the Peano B-spline knot extremal before calling a moment-flat stencil sharp
 
-AF-195 identifies the unique minimal-support signed control annihilating all polynomials below a prescribed order through divided-difference weights. AF-196 and AF-197 then show that the familiar equispaced parity geometry is not extremal once node locations are allowed to vary at fixed Wasserstein separation: already in the first free-node cubic case, and again in the mirror-symmetric quartic family, nonequispaced controls reduce the first surviving moment response.
+AF-195 removes coefficient freedom on `m+1` distinct nodes: the unique minimal-support signed control annihilating degrees below `m` is the divided-difference functional. AF-196--AF-197 then show that equispaced parity geometry is not extremal at fixed `W_1`, and AF-198 closes the cheapest quartic escape: the mirror-symmetric five-node optimizer is a strict local minimum even under unrestricted asymmetric perturbations modulo scale. Any better five-node control must lie in a genuinely separate basin.
 
-Thus moment cancellation order and support size do not determine the strongest recovery obstruction. The source geometry itself is an optimization variable. Future regularity-only lower bounds should either solve the relevant node/weight extremal problem on the admitted source class or state explicitly that the chosen stencil is only a witness, not a sharp barrier.
+AF-199 identifies the general object behind those order-by-order rational optimizations. The normalized minimal-support control is the `m`th distributional derivative of one nonnegative Peano B-spline `B_u`, and its scale-free leading response is exactly
+
+`Q_m = (m!/2^(m-1)) ||D^m B_u||_TV^(m-1) / ||B_u^(m-1)||_1^m`.
+
+Thus the free-node source problem is a sharp variable-knot spline derivative-norm inequality. The equispaced/cardinal spline gives the baseline constant, but AF-196--AF-197 already prove that it is not the knot extremizer for `m=3,4`.
+
+The live theorem is to determine the sharp Peano-spline constant and its extremizing knot shapes, or to exhibit a nonlocal asymmetric competitor below the AF-198 quartic basin. A regularity-only recovery lower bound should not treat one convenient stencil as extremal until this restricted spline optimization has been solved or explicitly bounded.
 
 ## Keep provenance and endpoint sufficiency separate from conditioning
 

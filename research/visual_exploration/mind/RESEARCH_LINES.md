@@ -10,11 +10,15 @@ VIS-083--VIS-091 progressively separate fixed-prime population, local Gram-clock
 
 A surviving Gram/prime-phase route must therefore specify the null at the same support, window, and approximation order as the claimed signal, or add an independently informative source coordinate such as zero geometry, `Z(g_n)`, derivatives, or another observable not determined by prime phases and the Gram clock.
 
-## Treat low-complexity order summaries as local-block controls until they prove genuinely nonlocal memory
+## Admit level-four chronology only after proving the matched local-block null is nondegenerate
 
-VIS-092--VIS-095 audit several natural ways of restoring order to one-dimensional arithmetic sequences. Ordinary one-dimensional Rips persistence is determined by gap information; sliding-window persistence can forget the visitation order of its windows; adding temporal-edge/delay structure recovers only bounded local block information at fixed delay; and VIS-095 proves exactly that the complete unaugmented step-two signature of a fixed-delay polygonal path is determined by the first/last delay windows plus the unordered multiset of `(m+1)`-blocks.
+VIS-092--VIS-095 show that ordinary one-dimensional persistence, sliding-window persistence, fixed-delay temporal graphs, and the unaugmented step-two signature can all collapse to bounded local-block information. VIS-096 strengthens the exact boundary: for any piecewise-linear delay path, signature levels one through three are determined by the oriented edge multiset and boundary data; in delay dimension two the same is true through level four.
 
-Thus persistence, a delay embedding, or low signature depth is not automatically a nonlocal order channel. A live path/topological visualization must prove that its chosen enrichment escapes the corresponding local-block quotient—for example through higher or growing signature depth, a justified time/lead-lag augmentation, growing memory, or another invariant whose dependence on long visitation order can be stated independently of the rendering.
+VIS-097 shows that this boundary is sharp in dimension three. Two three-delay paths can have identical endpoint windows and identical unordered length-four-block inventories yet differ at signature level four, because the order of two closed cycles appears through an area-area commutator. Level four is therefore a genuine chronology carrier once the bivector geometry has enough dimension.
+
+VIS-098 adds the essential control-admission gate. If the delay windows are pairwise distinct, the exact local-block transition multigraph is a directed simple path and has a unique Eulerian traversal. For generic continuous data in the precise measure-theoretic sense, exact block-preserving reassembly is therefore almost surely a singleton. Repeated states are necessary for exact reassembly ambiguity, although not sufficient.
+
+The live source-specificity test is consequently not merely “compute a higher signature.” First construct a **nondegenerate, pre-registered matched null** that removes the admitted local information without fixing the whole path. Exact reassembly may work only when the actual quotient graph has multiple compatible traversals; otherwise any quantization, approximate block matching, or generative local model must be fixed in advance and audited for lower-level leakage. Only then can level-four or higher chronology be interpreted as a residual rather than an artifact of the control.
 
 ## Treat the signed finite-Euler triangular witness as classified by `log X/L`
 
@@ -24,4 +28,4 @@ Further work on this witness is justified only if it asks for sharper asymptotic
 
 ## Build an information-loss atlas and promote only exact handoff theorems
 
-Related renderings, invertible coordinate changes, and visually richer summaries are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, sampling-error, local-block, resonance-weight, energy, or reconstruction statement that remains meaningful without the image.
+Related renderings, invertible coordinate changes, and visually richer summaries are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, sampling-error, local-block, resonance-weight, energy, reconstruction, or null-nondegeneracy statement that remains meaningful without the image.
