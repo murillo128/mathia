@@ -25,6 +25,7 @@ based_on:
   - research/visual_exploration/findings/VIS-100-whittle-quantized-type-class-count-sampler.md
   - research/visual_exploration/findings/VIS-101-binary-median-gap-level-four-null.md
   - research/visual_exploration/findings/VIS-102-three-bin-training-quantile-gap-level-four-null.md
+  - research/visual_exploration/findings/VIS-103-degree-four-logsignature-affine-null-equivalence.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -40,13 +41,15 @@ The delay-geometry branch gives a sharper information hierarchy. `VIS-093` throu
 
 The first two frozen low-zero source tests are both negative. `VIS-101` uses a binary median quantizer trained on `g_1,...,g_70`, the untouched block `g_71,...,g_106`, and the pre-existing coordinate `S^4_(1,2,1,3)`; its exact conditional tail probability is `493/750`. `VIS-102` changes only the information carrier to three nearly balanced training-defined bins, producing an exact type class of size `1752`, yet the same coordinate is even more central: `p=209/219`.
 
-The live issue is therefore no longer whether level four retains chronology, nor whether a slightly richer coarse amplitude quotient on this same block rescues the fixed coordinate. Both questions now have answers. What remains is whether a **different independently justified chronology functional or a genuinely new source scale** retains organization beyond its complete finite local quotient without post-hoc search.
+`VIS-103` now closes another apparent degree of freedom before another source experiment is attempted. On every exact Markov type, the local-block inventory fixes signature levels one through three, so the homogeneous degree-four log-signature is just the homogeneous degree-four signature plus one fixed tensor determined by those lower levels. Applying the same linear functional before and after the tensor logarithm therefore gives identical centered null distributions and identical exact tail probabilities. Merely replacing `S^4_(1,2,1,3)` by the same tensor coordinate of `log S` is not a new test.
+
+The live issue is therefore narrower. A further chronology experiment must choose a **genuinely different degree-four direction** — such as an independently justified Lie-basis coordinate or projection motivated by the area-area commutator — or move to a genuinely new source scale. Changing only threshold granularity on the spent low-zero block or changing only `signature` to `log-signature` does not create an independent information carrier.
 
 ## Research question
 
-Can a pre-frozen direction-sensitive fourth-level or log-signature observable, evaluated on a **new untouched zeta-zero confirmation window or height regime**, separate the source from its exact quantized order-three Markov-type null after the representation and statistic have been fixed independently?
+Can a pre-frozen direction-sensitive **new degree-four functional** — preferably a mathematically justified free-Lie/log-signature coordinate or low-dimensional projection that is not the same linear functional already tested — evaluated on a new untouched zeta-zero confirmation window or height regime, separate the source from its exact quantized order-three Markov-type null after the representation and statistic have been fixed independently?
 
-The next test should not refine thresholds again on `g_71,...,g_106`; that block has already informed both binary and ternary results. If the next route changes the statistic, delay representation, quantizer, or scale in response to `VIS-101`/`VIS-102`, freeze the new design first and move to fresh confirmation material.
+The next test should not refine thresholds again on `g_71,...,g_106`; that block has already informed both binary and ternary results. It should also not repackage the same `(1,2,1,3)` linear functional through the tensor logarithm, because `VIS-103` proves that this produces only a deterministic shift inside the exact null. If the statistic, delay representation, quantizer, or scale is changed in response to `VIS-101`--`VIS-103`, freeze the new design first and move to fresh confirmation material.
 
 If a residual survives, does it also survive independently fixed nearby representation choices and matched non-arithmetic source controls strongly enough to distinguish quotient-specific chronology from generic longer memory, nonstationarity, or finite-size random-matrix structure?
 
@@ -56,19 +59,21 @@ The broader visual question remains open: after the classified analytic, spacing
 
 `VIS-097` identifies a real nonlocal degree of freedom: ordered interaction between nonparallel local area modes. `VIS-099` and `VIS-100` turn that degree of freedom into an exact finite conditional experiment after quantization, with no model-parameter fitting or approximate reassembly required.
 
-`VIS-101` and `VIS-102` show that generic chronology capacity is not enough. The same mathematically legitimate level-four coordinate is ordinary under two distinct training-defined finite quotients of the same low-zero block. This removes a simple rescue hypothesis — that the binary result failed only because two bins discarded too much coarse amplitude information — while leaving other independently chosen level-four/log-signature functionals and scales untested.
+`VIS-101` and `VIS-102` show that generic chronology capacity is not enough. The same mathematically legitimate level-four coordinate is ordinary under two distinct training-defined finite quotients of the same low-zero block. `VIS-103` then shows that a same-functional move from signature to log-signature cannot alter those exact conditional conclusions. Together these results remove two simple rescue hypotheses — insufficient threshold granularity and representation-only logarithmic reparameterization — while leaving genuinely different degree-four directions and fresh source scales untested.
 
 This keeps three notions separate: generic chronology capacity, chronology beyond a specified finite local quotient, and arithmetic/source specificity. A future separation from the conditioned Markov-type null would establish only the middle statement. Arithmetic interpretation would still require relevant non-arithmetic spectral/source controls.
 
 ## Decisive test
 
-Choose the next design **before inspecting its new confirmation residual**. Freeze the new source window or height regime, unfolding convention, delay coordinates, endpoint treatment, finite quantizer and symbol embedding, and one direction-sensitive fourth-level/log-signature statistic or low-dimensional projection. Because the old confirmation block has now been used twice, any design choice informed by those outcomes must be evaluated on fresh untouched source material.
+Choose the next design **before inspecting its new confirmation residual**. Freeze the new source window or height regime, unfolding convention, delay coordinates, endpoint treatment, finite quantizer and symbol embedding, and one direction-sensitive degree-four statistic or low-dimensional projection.
+
+The statistic must be materially new relative to `VIS-101`/`VIS-102`. If it is described as a log-signature statistic, write its Lie-basis or tensor-linear functional explicitly and verify using `VIS-103` that it is not merely the same `(1,2,1,3)` functional after the universal lower-level logarithmic correction. Prefer a direction with an independent structural motivation, such as isolating a bracket generated by nonparallel degree-two area modes, rather than searching coordinates on confirmation data.
 
 Build the quantized three-context transition multigraph and complete quantized length-four-block table. Compute the exact Whittle cardinality `W`; reject the representation if `W=1`. Use exhaustive enumeration when feasible, otherwise the exact completion-count sampler with sampling uncertainty reported separately. Controls must preserve the initial quantized triple and every quantized length-four-block count exactly.
 
 Keep a chronology route only if the frozen directional residual survives fresh confirmation and reasonable independently fixed representation perturbations. A positive result rejects only the conditioned homogeneous order-three Markov explanation on that finite quotient. Before any arithmetic claim, compare against matched non-arithmetic source models, including finite-size random-matrix or other spectral controls appropriate to the observable.
 
-Kill or narrow the route if the type class is degenerate, the effect disappears on fresh confirmation, a matched source control recreates it, or the separation depends on post-hoc threshold/statistic/window selection. The binary and ternary `(1,2,1,3)` experiments on `g_71,...,g_106` are closed and must not be recycled as purported fresh confirmation.
+Kill or narrow the route if the type class is degenerate, the effect disappears on fresh confirmation, a matched source control recreates it, the separation depends on post-hoc threshold/statistic/window selection, or the proposed new statistic is algebraically equivalent to an already tested functional under the fixed lower-level null. The binary and ternary `(1,2,1,3)` experiments on `g_71,...,g_106` are closed and must not be recycled as purported fresh confirmation.
 
 For any alternative topological or multiscale route, state the metric/graph/path/filtration and information carrier explicitly, identify what lower information it preserves, and test the residual against a nondegenerate matched quotient rather than the visual texture.
 
@@ -80,8 +85,10 @@ For any alternative topological or multiscale route, state the metric/graph/path
 
 `VIS-101` and `VIS-102` are finite negative statements for two training-defined quantizers, one low-zero training/target split, and the same pre-existing fourth-level coordinate. They do not show that every quantized chronology statistic is null, that higher zeros behave identically, or that the Markov-type null is a complete non-arithmetic source model. Conversely, those two inspected results prohibit treating further adaptive threshold/statistic search on the same confirmation block as independent evidence.
 
+`VIS-103` is an exact algebraic information-boundary result. It proves that on the exact type class, degree-four `log S` is a fixed translation of degree-four `S` because lower signature levels are fixed. It does **not** prove that all degree-four Lie coordinates are equivalent to `(1,2,1,3)`; a different Lie-basis coordinate is a different linear functional and remains a legitimate new hypothesis if fixed independently.
+
 No finding in this chain establishes a mesoscopic fractal dimension, a new zeta-zero law, an RH criterion, or a distinction between zeta and a suitably matched higher-order point-process/control ensemble. This remains an accepted research direction, not evidence of such a distinction.
 
 ## Research disposition
 
-Accepted in further narrowed form. Exact null mechanics are closed by `VIS-099` and `VIS-100`; the binary and balanced ternary source tests are both exact negatives. The next substantive chronology result must move to fresh confirmation material and change a more meaningful axis than threshold granularity alone — most naturally a pre-justified level-four/log-signature functional or source scale — while preserving the exact finite conditional-null discipline.
+Accepted in further narrowed form. Exact null mechanics are closed by `VIS-099` and `VIS-100`; the binary and balanced ternary source tests are exact negatives; and `VIS-103` removes same-functional signature-to-log-signature conversion as a distinct next test. The next substantive chronology experiment must use fresh confirmation material and a structurally motivated degree-four direction that is algebraically different from the tested coordinate, or move to a genuinely new source scale, while preserving the exact finite conditional-null discipline.
