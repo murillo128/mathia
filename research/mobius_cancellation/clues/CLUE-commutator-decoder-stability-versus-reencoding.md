@@ -1,11 +1,13 @@
 ---
 id: CLUE-mobius-cancellation-commutator-decoder-stability-versus-reencoding
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
   - research/mobius_cancellation/clues/CLUE-mean-absolute-mertens-transfer-budget.md
+  - research/mobius_cancellation/findings/MC-157-single-prime-commutator-spectral-filter-top-mode.md
+  - research/mobius_cancellation/findings/MC-160-infinite-prime-linear-commutator-mertens-completeness.md
   - research/README.md
 ---
 
@@ -37,4 +39,10 @@ In the normal research disposition, give the strongest argument for retaining th
 
 ## Evidence boundary
 
-No decoder stability bound, independent cancellation estimate, or failure theorem is established here. An arbitrary synthetic sequence may refute a claim asserted for all sequences but does not automatically refute a claim restricted to the actual arithmetic source. MC-160 is reported after the global snapshot's declared adversarial checkpoint, so its current independent-review status must be checked before using it as settled support. The accepted mean-absolute clue remains unchanged; this is a specific complementary test, not a new endpoint criterion or authorization to modify tasks or mandates.
+No independent cancellation estimate for a commutator readout is established here. MC-157 does, however, settle an important part of the question for every single-prime odd spectral filter, and MC-160 extends exact reconstruction to absolutely summable infinite-prime linear readouts while distinguishing reconstruction from exponent stability. An arbitrary synthetic sequence may refute a claim asserted for all sequences but does not automatically refute a claim restricted to the actual arithmetic source. The accepted mean-absolute clue remains unchanged; this is a specific complementary test, not a new endpoint criterion or authorization to modify tasks or mandates.
+
+## Research disposition
+
+**Accepted, with the conditioning question narrowed away from the canonical single-prime readout.** MC-157 already gives the exact power-transfer test for a single-prime odd filter. For the raw commutator filter `g(t)=t`, its parameters are `a=2` and `c=1`, so the recurrence stability condition `|(c/a)| p^(-theta)<1` holds for every fixed `theta>0`. Recovery uses only the current and downward `p`-dilated scales, so a finite section through height `X` needs no data above `X`. Thus decoder instability is not the missing ingredient for this canonical scalarization.
+
+MC-160 shows that passing to an absolutely summable infinite-prime linear readout preserves exact Mertens recoverability, but its elementary contraction inequalities are only sufficient and do not by themselves decide the full conditioning problem. The live reason to retain the scalar construction is therefore much narrower: produce an **independent arithmetic estimate for one fixed transformed input** whose proof does not already assume the corresponding Mertens bound and whose inversion/truncation losses preserve a meaningful gain. A useful next theorem must state the exact readout and prove such a source estimate; another invertible encoding or another conditioning calculation without a new source bound does not answer the clue.
