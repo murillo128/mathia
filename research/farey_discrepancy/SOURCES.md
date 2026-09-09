@@ -34,6 +34,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 ## Prime-density auxiliary input
 
 - Donald J. Newman, *Simple Analytic Proof of the Prime Number Theorem*, The American Mathematical Monthly **87**(9) (1980), 693--696, DOI `10.1080/00029890.1980.11995126`. Role: primary theorem anchor for the prime number theorem used in `FD-006` only to obtain the weighted dyadic-prime monomial Gram lower bound for a fixed family of Jordan-moment constraints. No quantitative zero-free estimate, RH, or RH-equivalent input is imported.
+- Ch.-J. de la Vallée Poussin, *Sur la fonction ζ(s) de Riemann et le nombre des nombres premiers inférieurs à une limite donnée*, Mémoires couronnés et autres mémoires publiés par l'Académie royale des sciences, des lettres et des beaux-arts de Belgique, Collection in-8°, **59** (1899), 1--74, DOI `10.3406/marb.1899.2449`. Role: primary source boundary for the classical quantitative prime-number-theorem error arising from the zero-free region. `FD-012` uses only an unconditional bound of the form `vartheta(x)=x+O(x exp(-c sqrt(log x)))` to make dyadic-prime polynomial sampling uniform while the Jordan-moment depth grows; no RH-strength prime-distribution input is imported.
 
 ## Ordered Farey index and nonconsecutive determinant algebra
 
