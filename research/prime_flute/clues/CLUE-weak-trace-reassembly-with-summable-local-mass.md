@@ -16,6 +16,7 @@ based_on:
   - research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer.md
   - research/prime_flute/findings/PF-239-reciprocal-prime-shear-makes-critical-band-leakage-absolutely-trace-summable.md
   - research/prime_flute/findings/PF-240-total-one-scaled-boundary-derivative-is-the-sharp-high-high-shear-trace-threshold.md
+  - research/prime_flute/findings/PF-241-scaled-tangential-blowup-turns-the-shear-interior-into-a-uniform-long-strip-family.md
 ---
 
 # Can the exact first relative resolvent be completed at the weak-trace endpoint?
@@ -34,7 +35,9 @@ PF-239 isolates the remaining shear risk. Every shear correction with at least o
 
 Only the high-high block survives this argument. PF-240 sharpens that gate again: the shear correction does **not** need to preserve the full exponential diagonal-corridor envelope. If its high-high block gains more than one total scaled boundary derivative across the two legs, then Schatten factorization and PF-233's one-dimensional scaled eigenvalue count already give trace norm `O(beta_n/s_n)`. Total smoothing order exactly one is the abstract critical threshold: it forces only weak trace class in the model case.
 
-The smooth local frontier is therefore a single quantitative PDE question: does the exact PF-232 hypercycle perturbation, after PF-238's actual seam normalization, satisfy a scaled-uniform high-high Sobolev estimate with total order `>1` and coefficient `O(beta_n)`? Only after that should the line spend effort on physical `P/H` recoupling, finite one-cusp pant completion, neighboring-cell coupling, and the genuinely nested PF-222 global reassembly.
+PF-241 removes one possible source of nonuniformity from that PDE gate. After PF-233's exact mass conjugation and the unitary blowup `Y=theta/s_n`, the full PF-232 sheared interior is a unit-width strip of length `pi/s_n` with uniformly strongly elliptic principal matrix, `O(beta_n)` smooth scaled shear coefficients, and a Hardy endpoint potential uniformly comparable to inverse squared scaled distance. The PF-233 operator `K_{a,n}` becomes exactly the natural first-order tangential operator of this long-strip form. Thus the shrinking factor `a(theta)~s_n` itself does not create a hidden loss in the PF-240 Sobolev currency.
+
+The smooth local frontier is therefore a more specific quantitative PDE question: does this **uniform long-strip family**, after PF-238's actual seam normalization, satisfy a high-high Sobolev estimate with total order `>1` and coefficient `O(beta_n)`? The growing tangential length, Hardy endpoints, and seam-normalized Schur map are the surviving sources of possible nonuniformity. Only after that should the line spend effort on physical `P/H` recoupling, finite one-cusp pant completion, neighboring-cell coupling, and the genuinely nested PF-222 global reassembly.
 
 The independent PF-204 unsmoothed native-factorization route remains available if the smooth route fails.
 
@@ -63,39 +66,47 @@ where `D_{n,1}` and `D_{n,0}` are the actual-seam-normalized sheared and diagona
 
 uniformly on the canonical tail?
 
+Equivalently by PF-241, after `Y=theta/s_n` the same question can be asked with the unitarily transported `\widetilde K_n` on `(0,1) x (0,pi/s_n)`. No extra power of `s_n` is created by this reformulation.
+
 If so, PF-240 makes the entire remaining shear correction an absolutely trace-summable error after the reciprocal-prime weight. The next questions are then whether physical `P/H` recoupling and finite-pant completion preserve the dressed local scale and whether the overlapping prefix-flux series from PF-222 can finally be reassembled in weak trace class without replacing its nested cuts by an artificial orthogonal direct sum.
 
 ## Why it may matter
 
 A positive answer to the high-high estimate would remove the last shear-specific obstruction without demanding an unnecessarily strong mode-by-mode analytic envelope. It would show that the exact hypercycle trim is perturbatively harmless at the trace-ideal level relevant to the global weak endpoint, leaving only physical recoupling and global reassembly.
 
-A negative answer would also be decisive. PF-239 has already removed all low-touch shear leakage, and PF-240 identifies the precise regularity threshold needed for the tail. Failure must therefore appear as a canonical loss of scaled Sobolev smoothing in the high-high block, not merely as generic mode mixing, fixed-domain smoothing constants, or the inverse-seam channel count already neutralized by Schur dressing.
+A negative answer would also be decisive. PF-239 has already removed all low-touch shear leakage, PF-240 identifies the precise regularity threshold needed for the tail, and PF-241 shows that ordinary thin-width loss of ellipticity is not the culprit in the relevant scaled norm. Failure must therefore be localized to a genuine long-strip/Hardy-end/seam-normalization loss of high-high boundary regularity.
 
 ## Decisive test
 
-Work directly with PF-232's exact straightened hypercycle quadratic form and PF-238's actual complete-lift seam normalization. Keep PF-233's `K_a` as the scaled transverse frequency operator and the same fixed high projector used in PF-239.
-
-The positive target is any uniform estimate
+Work with PF-241's exact scaled forms on
 
 \[
-\|K_a^{r_2}H_ZK_a^{r_1}\|\le C\beta,
-\qquad r_1+r_2>1.
+(0,1)_X\times(0,\pi/s)_Y,
 \]
 
-PF-240 then supplies the trace-class conclusion automatically; there is no need to re-prove an exponential `K csch(K)` envelope for the perturbation. A symmetric target `r_1=r_2=r>1/2` is sufficient.
+while retaining PF-238's actual complete-lift seam normalization and PF-233's unitarily transported `\widetilde K_s` as the tangential frequency operator. The principal coefficients are uniformly elliptic and the scaled shear coefficient is `O(beta)` in every fixed coefficient norm, so a proof should isolate which additional ingredient controls the growing tangential length and the Hardy endpoint form domain.
 
-The estimate must be **scaled-uniform** as `s->0` and must retain the perturbative factor `beta`. Qualitative `C^infty` smoothing for each fixed corridor is not enough. A decisive negative result should exhibit a canonical high-high sequence for which the relevant scaled Sobolev norm loses the `O(beta)` bound or fails for every total order above one.
+The positive target remains exactly
+
+\[
+\|\widetilde K_s^{r_2}\widetilde H_Z\widetilde K_s^{r_1}\|\le C\beta,
+\qquad r_1+r_2>1,
+\]
+
+with `C` independent of `s`; by unitary equivalence this is PF-240's original target. A symmetric target `r_1=r_2=r>1/2` is sufficient. A useful proof route may combine uniform local elliptic regularity with a separate Hardy-end estimate or produce a direct Poisson/Schur factorization whose constants do not depend on the long-strip length.
+
+The estimate must retain the perturbative factor `beta`. Qualitative `C^infty` smoothing for each fixed corridor, or even a uniform `O(1)` smoothing estimate without the `beta` factor, is not enough. A decisive negative result should exhibit a canonical high-high sequence for which the scaled norm loses `O(beta)` because of the growing length, endpoint singularity, or seam normalization.
 
 If the high-high gate closes positively, test physical `P/H` recoupling and one-cusp pant completion next, before attempting the PF-222 nested global sum. Keep those stages separate so that a later failure can be assigned to the correct mechanism.
 
 ## Evidence boundary
 
-No full weak-`S_1` theorem is established. PF-238 is an exact theorem only for the diagonal variable-width corridor with actual seam normalization. PF-239 proves trace summability only for shear corrections touching a fixed scaled band. PF-240 is a sharp **conditional operator-ideal reduction**: it proves what amount of high-high smoothing would suffice, not that the exact hypercycle PDE supplies that smoothing.
+No full weak-`S_1` theorem is established. PF-238 is an exact theorem only for the diagonal variable-width corridor with actual seam normalization. PF-239 proves trace summability only for shear corrections touching a fixed scaled band. PF-240 is a sharp **conditional operator-ideal reduction**: it proves what amount of high-high smoothing would suffice, not that the exact hypercycle PDE supplies that smoothing. PF-241 is another exact reduction: it proves that the interior family becomes uniformly strongly elliptic after the natural scaled blowup, not the required boundary smoothing theorem.
 
-Classical fixed-geometry Dirichlet-to-Neumann theory says that interaction between disjoint smooth boundary components is smoothing, but that does not supply the uniform collapsing-corridor constants or the `O(beta_n)` perturbative factor required here. The remaining local problem is therefore genuinely quantitative.
+Classical thin-domain rescaling, bounded-geometry elliptic regularity, and fixed-geometry Dirichlet-to-Neumann off-diagonal smoothing do not by themselves supply the required theorem for the growing PF long strip with Hardy endpoints, actual seam normalization, and `O(beta_n)` perturbative size. Those are now the explicit local uniformity gates.
 
 The physical `P/H` split, finite-pant completion, neighboring-cell extension, nested PF-222 reassembly, wave operators, determinants/resonances, prime/clone separation, zeta zeros, and RH remain unresolved. Clue acceptance records only that the weak-trace endpoint remains a research-worthy target.
 
 ## Research disposition
 
-The clue remains `accepted`. The immediate smooth-route task is now the PF-240 scaled high-high estimate with total smoothing order `>1`. If it holds, treat shear as an absolutely trace-summable local error and move to physical `P/H` recoupling and finite-pant completion; only then return to the nested global weak-`S_1` reassembly.
+The clue remains `accepted`. PF-241 refines the immediate smooth-route task to a uniform **long-strip** high-high boundary estimate in the exact scaled `K_a` currency. Shrinking-width ellipticity no longer needs to be treated as an independent obstruction; the proof or counterexample should now target growing tangential length, Hardy endpoints, and actual seam normalization. If that gate closes positively, treat shear as an absolutely trace-summable local error and move to physical `P/H` recoupling and finite-pant completion; only then return to the nested global weak-`S_1` reassembly.
