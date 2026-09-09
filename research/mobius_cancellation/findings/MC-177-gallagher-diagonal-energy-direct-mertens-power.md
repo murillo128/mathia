@@ -251,7 +251,7 @@ Cauchy--Schwarz on the fixed logarithmic shell, followed by `(16)`, therefore yi
 |M(2X)-M(X)|
 \ll_c
 T J_{\beta,T}(X)^{1/2}
-+rac XT+1.
++\frac XT+1.
 }
 \tag{19}
 \]
@@ -410,7 +410,7 @@ This gives an exact information threshold. For every fixed `eta>0` and `0<theta<
 \theta
 \]
 
-are strictly below `1`. Thus a uniform fixed-power variance improvement at any fixed polynomial local scale would already be a fixed-power global Mertens theorem. At square-root variance `eta=1`, the elementary boundary transfer is optimized at `theta=2/3`, where it would give `M(x)<=x^{2/3+o(1)}`. At the `MC-176` critical shell `theta=1/2`, the same generic transfer gives only `x^{3/4+o(1)`; the stronger `1/sqrt(2)` exponent from `(4)` uses the **full Gallagher target across shells** and optimizes at the different shell `c_tau=1/(2sqrt2)` when `tau=1/8`.
+are strictly below `1`. Thus a uniform fixed-power variance improvement at any fixed polynomial local scale would already be a fixed-power global Mertens theorem. At square-root variance `eta=1`, the elementary boundary transfer is optimized at `theta=2/3`, where it would give `M(x)<=x^{2/3+o(1)}`. At the `MC-176` critical shell `theta=1/2`, the same generic transfer gives only `x^{3/4+o(1)}`; the stronger `1/sqrt(2)` exponent from `(4)` uses the **full Gallagher target across shells** and optimizes at the different shell `c_tau=1/(2sqrt2)` when `tau=1/8`.
 
 This distinction is important: controlling one Good--Churchhouse-order shell is a necessary fragment of the Gallagher target, but it is not equivalent to controlling the full target.
 
