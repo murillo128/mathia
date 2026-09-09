@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-odd-dilated-annihilators-summable-slack
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: analytic_frontier
 based_on:
@@ -106,3 +106,12 @@ Calibrate with a single old maximum, where the neighboring crest is explicit, th
 ## Evidence boundary
 
 This is a proposed alternative construction and proof test, not an accepted slack theorem. It changes the minimal half-turn convention and must not be reported as a solution of the original canonical recurrence. Its finite-stage constants need not be effective or uniform in depth, and no fast depth law is claimed. The stagewise source estimates, activation thresholds, and diagonal passage still require independent checking. Fixed dark-notch width does not establish a fatal near-extremizer, a bound on the full exposure envelope, or an improved zero proportion.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-143-odd-dilations-make-positive-annihilator-slack-and-span-budgets-summable.md]]
+
+The compact phase-orbit recurrence gives the proposed `theta_ell=O_G(ell^-2)` bound for the actual first positive return. Choosing one finite odd dilation after each stage is frozen then makes both the slack spend and density-weighted translation span summable. Fixed-depth source comparison survives the dilation, and a slow physical diagonal absorbs activation and conditioning thresholds. The result does not determine the canonical minimal-shift recurrence or resolve the broader near-extremizer exposure question.
