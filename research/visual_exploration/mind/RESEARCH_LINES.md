@@ -10,15 +10,17 @@ VIS-083--VIS-091 progressively separate fixed-prime population, local Gram-clock
 
 A surviving Gram/prime-phase route must specify the null at the same support, window, and approximation order as the claimed signal, or add an independently informative source coordinate such as zero geometry, `Z(g_n)`, derivatives, or another observable not determined by prime phases and the Gram clock.
 
-## Move chronology tests beyond fixed-block information, not merely to richer coordinates
+## Separate growing-scale information admission from normalized effect size and source specificity
 
-VIS-092--VIS-102 establish the exact quantized Markov-type null and show that the first binary and ternary low-zero tests do not escape it. VIS-103 now closes a natural representation-only repair: at fixed lower signature levels, the degree-four logsignature is only an affine re-expression of the degree-four signature data, so changing from signature to logsignature does not create new information.
+**Linked intuition:** `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`.
 
-VIS-107--VIS-108 further classify the degree-four route. Exact order-three Markov type forces the area-area component onto an affine line, while explicit same-type controls can differ in degree-four signature yet have identical full one-dimensional Fourier magnitudes/autocorrelations. Neither one special area-area projection nor ordinary magnitude-spectrum information recovers the missing chronology.
+VIS-092--VIS-110 classify the fixed-block boundary. Exact Markov types absorb fixed local chronology, fixed lower signature data, ordinary Fourier magnitudes, and every bounded-lag higher-order correlation: any statistic with uniformly bounded lag span factors through a finite block inventory.
 
-VIS-109 identifies a sharper local boundary: third-order correlations/bispectra first separate the exhibited homometric pair only when the lag span exceeds the order-three block scale. VIS-110 then generalizes the warning exactly: every bounded-lag higher-order correlation is a function of a finite block inventory of bounded length. Increasing correlation order at fixed lag therefore remains a local-block refinement rather than a global source observable.
+VIS-111 supplies the first exact positive exit from that quotient. A third-order correlation with lags growing proportionally to the window distinguishes explicit words that agree on every fixed block length once the scale is large enough. Thus growing-scale higher-order information can genuinely retain assembly data that all fixed-memory summaries forget.
 
-A live nonlocal continuation must predeclare a **growing spatial/lag scale or genuinely global higher-order functional** and prove that it does not factor through any fixed block length. If the intended target is only finite-order local chronology, the exact Markov/block null should be used directly instead of assigning global arithmetic meaning to a visually richer transform. Any data-driven choice of a new statistic should use fresh confirmation material.
+VIS-112 adds an independent scale gate. On the same exact witness, the raw distinguishing count is only one, so empirical averaging dilutes the separation as `2/N`. Information non-factorization therefore does not imply a macroscopic normalized effect, and a shrinking effect is not automatically insignificant unless its null fluctuation scale is also known.
+
+The live continuation is now source-specific rather than representational. Predeclare a growing lag/global functional, the lower-information quotient it escapes, its normalization, and the matched finite-size null before new zeta material is inspected. A positive result must show a reproducible residual at the declared scale and survive finite-size CUE/non-arithmetic controls and known finite-height deterministic corrections. A stronger synthetic witness with extensive separation would refine the amplitude model but would still not establish arithmetic specificity.
 
 ## Treat the signed finite-Euler triangular witness as classified by `log X/L`
 
@@ -28,4 +30,4 @@ Further work on this witness is justified only if it asks for sharper asymptotic
 
 ## Build an information-loss atlas and promote only exact handoff theorems
 
-Related renderings, invertible coordinate changes, and visually richer summaries are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, sampling-error, local-block, resonance-weight, energy, reconstruction, or null-nondegeneracy statement that remains meaningful without the image.
+Related renderings, invertible coordinate changes, and visually richer summaries are not independent evidence. Promotion should terminate in an exact rank, support, conditioning, information-distance, sampling-error, local-block, resonance-weight, energy, reconstruction, null-nondegeneracy, or normalized-effect statement that remains meaningful without the image.

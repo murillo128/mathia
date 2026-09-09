@@ -1,39 +1,39 @@
-# MI-014 — Source coercivity is a joint short-interval variance problem after source-audited zero-reservoir pruning
+# MI-014 — Source coercivity is a collective short-interval variance problem after source-audited pruning
 
-**Evidence level:** exact source-geometry and Gallagher reduction through WI-197, with every-interval reservoir pruning through WI-199 and the WI-201 correction of the unsupported WI-200 numerical specialization
+**Evidence level:** exact source-geometry and Gallagher reduction through WI-197, audited every-interval and almost-all pruning through WI-204, and isolated-residue scale separation through WI-205
 
 ## Core intuition
 
-The hard Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem, but that expensive theorem should be attempted only after independent local zero reservoirs have pruned the adversarial geometry. The logarithmic stationary phase is classical and self-dual; WI-195 avoids that alias geometry altogether by writing the shifted covariance exactly as a positive multiplicative short-interval `L^2` norm of the prime Dirichlet polynomial.
+The hard Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem, but that expensive theorem should be attempted only after independent local zero reservoirs have pruned the adversarial geometry. The pruning theorem must match the exact source-selected quantifiers: ordinary exponent-pair reservoirs, almost-all interval results, and explicit-formula residues carry different exception and amplitude currencies.
 
-The reservoir step has its own evidence discipline. WI-198--WI-199 give a source-safe numerical pruning range above `27/82`. WI-200 attempted to lower that threshold using `1515/4816`, but WI-201 shows that the cited Bourgain--Watt result does not supply the ordinary exponent pair required by the Khayrulloev/Rakhmonov theorem surfaces. The stronger numerical cutoff is therefore withdrawn, while the generic exponent-pair deductions remain valid conditionally on a verified compatible pair.
+The current evidence now has two structural boundaries. First, the ordinary exponent-pair route has a universal floor at fixed bow exponent `1/4`; better exponent pairs cannot remove the regime at or below that scale through the existing every-interval interface. Second, inside the exact Gallagher norm, tuning to one hypothetical near-line zero does not by itself produce a diagonal-scale source defect: a bounded residue packet is polynomially subdiagonal. The surviving mechanism must therefore be genuinely collective or use a different observable/source theorem.
 
 ## Strongest justified principle
 
-WI-191--WI-195 identify the source-fixed coupled norm and show why pointwise or transform-only improvements are insufficient. A bound `|E_x| <= K log^{-A}X`, even on every interval, gives integrated square `X K^2 log^{-2A}X`, whereas the bow requires `o(X K log X)`. The missing gain is essentially square-root variance across the coupled interval family.
+WI-191--WI-197 identify the source-fixed coupled norm and show why pointwise or transform-only improvements are insufficient. A bound `|E_x| <= K log^{-A}X`, even on every interval, gives integrated square of order `X K^2 log^{-2A}X`, whereas the bow requires `o(X K log X)`. Long twist averaging cannot supply a distinguished-center lower bound, and the available black-box one-variable Type-II route loses too much when transferred to the exact norm.
 
-WI-196 proves that long twist averaging cannot supply a distinguished-center lower bound, and WI-197 shows that the current black-box one-variable Type-II route loses too much when transferred to the exact norm.
+WI-198--WI-202 audit the every-interval reservoir. The currently verified ordinary exponent pair gives fixed-physical-depth cutoff `3943/12011`; the normalized-depth Karatsuba screening statement remains a distinct theorem surface with its `27/82` frontier. WI-203 proves that every ordinary exponent pair yields interval exponent at least `1/4`, so even the exponent-pair conjecture cannot push the present architecture below that fixed-power boundary or reach the logarithmically lost endpoint.
 
-WI-198 uses Karatsuba's every-interval critical-line reservoir above exponent `27/82`. WI-199 adds local zero density in that same source-safe range: a positive-density long bow is exponentially tight in normalized depth `A=(beta-1/2)log T`, and a fixed physical-depth plateau has power-saving density.
+WI-204 shows why almost-all intervals do not automatically repair the gap. Even after thickening a count-saturating bow to all of its internal micro-window starts, the resulting bad-start set is smaller than the theorem's allowed exceptional set throughout the relevant range. Positive vertical length is not enough; the exception budget must dominate the actual source-selected family.
 
-WI-201 audits the later exponent-pair specialization. Khayrulloev's and Rakhmonov's generic theorem surfaces remain usable for any independently verified ordinary exponent pair `(kappa,lambda)` with cutoff `theta=(kappa+lambda)/(2kappa+2)`. What fails is the claim that Bourgain--Watt supplies `theta=1515/4816`; that number belongs to a different zeta mean-square analysis and cannot be imported by numerical resemblance. Pending a verified improvement, `27/82` is the strongest numerical cutoff established inside the line.
+WI-205 then tests the most direct zero-facing implementation of the Gallagher bridge. For a finite packet of zeros with real parts at most `1/2+delta_*`, its extracted residue contribution to the short-interval square is bounded by `M_F^2 K^2 X^{2delta_*}`. In normalized depth this is only `M_F^2 T^{-vartheta+o(1)}` of the raw diagonal. A bounded-multiplicity target zero, pair, or quadruple is therefore too small by itself; diagonal scale would require mesoscopic coherent multiplicity about `T^{vartheta/2+o(1)}` or a different coupling.
 
 ## What remains possible
 
-For `0<vartheta<=27/82`, a dispersion/bilinear/large-sieve/spectral argument may prove the required `L^2` variance directly; a source decomposition may show that `Lambda-Lambda^sharp` has enough cancellation in the exact twisted short-interval norm; or the structured term may combine with the residual before absoluteization. A stronger every-interval theorem or verified exponent pair could reduce this range before covariance is paid for.
+Above `3943/12011`, the audited every-interval reservoir already excludes the fixed-power count-saturating bow. Between `1/4` and that threshold, stronger verified ordinary exponent pairs may still narrow the range. At and below `1/4`, progress needs an every-interval theorem outside the current exponent-pair architecture, the source-fixed `Lambda-Lambda^sharp` covariance itself, or another source relation.
 
-The generic exponent-pair route is still mathematically live, but its input must be the exact theorem object required downstream. A circle/divisor exponent, zeta mean-square exponent, or short-interval threshold with the same numerical value is not interchangeable with an ordinary exponent pair.
+WI-205 does not rule out the covariance route. The full explicit formula contains all zero residues plus main/polar terms and signed cross interactions; a coherent population or a source-specific identity could amplify information that one isolated residue cannot. A different observable can also remain viable if it gives an individual off-line exception a response that is large relative to its own exact noise/diagonal scale.
 
 ## Counterevidence / boundary
 
-The short-interval zero theorems do not improve the unconditional simple-critical-zero proportion, prove RH, or exclude every off-line population. Khayrulloev counts odd-order critical-line zeros, not simple zeros. WI-199's normalized-depth screening is established only in its audited Karatsuba range.
+The residue bound is specific to the current Gallagher short-interval observable and the hard near-line regime. A zero at fixed horizontal depth, a packet whose multiplicity grows to the WI-205 threshold, or a different source-justified observable can evade it. Likewise the `1/4` floor applies to the declared ordinary exponent-pair/Khayrulloev--Rakhmonov interface, not to every possible zero reservoir theorem.
 
-WI-195 remains a target reduction rather than the missing variance theorem. None of the reservoir results supplies diagonal-scale covariance inside the surviving exponent range, and WI-201 does not claim `27/82` is optimal among all ordinary exponent pairs.
+None of the current pruning results proves the missing signed covariance estimate, excludes every off-line population, or proves RH. Their role is to remove theorem architectures whose quantifiers or amplitudes are demonstrably insufficient before expensive coercivity is attempted.
 
 ## Epistemic status
 
-**Exact coupled-norm reduction plus source-audited every-interval pruning above `27/82`; the stronger `1515/4816` specialization is withdrawn and diagonal-scale source variance remains open in the surviving range.**
+**Exact coupled-norm reduction; audited reservoir pruning with fixed-power floor `1/4`; and exact negative scale comparison for isolated near-line residue packets. The source-fixed collective variance theorem remains open.**
 
 ## Falsification criterion
 
-Construct a count-saturating bounded-spacing bow with exponent `vartheta>27/82` compatible with the audited WI-198/WI-199 reservoir, or validate a stronger ordinary exponent pair and propagate its exact `theta` through the generic WI-200 argument. For the surviving range, derive the required bow exclusion from a pointwise `K log^{-A}X` theorem without an additional variance gain, or prove the intended `o(XK log X)` bound in the actual weighted coupled norm.
+Produce a count-saturating fixed-power bow above the audited cutoff compatible with the corresponding every-interval theorem, derive a fixed-power exponent below `1/4` from the same ordinary exponent-pair interface, or exhibit a bounded near-line residue packet whose extracted WI-195 contribution reaches the `XK log X` diagonal in normalized depth. A positive continuation should instead prove the needed collective covariance, a stronger-matching reservoir theorem, or a different source observable with a verified larger exception response.

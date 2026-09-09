@@ -1,31 +1,39 @@
-# MI-012 — Fixed finite Fourier-leg retention is still classical separated operator data
+# MI-012 — Cross-shell richness remains classical when it factors through separated or thin conductor state
 
-**Evidence level:** proved for fixed finite scalar packet fusion, the total-mismatch regular lift, the full positive-leg Hardy lift, and its canonical zero-depth limit through PC-208
+**Evidence level:** proved for fixed finite scalar packet fusion, the total-mismatch regular lift, the full positive-leg Hardy lift, its canonical zero-depth limit, full lower-conductor leakage, scalar Mangoldt anchoring, and repeated Mangoldt-axis mask words through PC-223
 
 ## Core intuition
 
-Cross-shell coupling is not automatically new relational information. The classical closure now extends beyond scalar Haar/Mellin fusion and beyond the single total-mismatch coordinate. Even if every individual positive Fourier leg is retained as an operator coordinate, the source-native fixed-finite-valence construction separates exactly into one-variable periodic factors.
+Cross-shell coupling and noncommutativity are not automatically new relational information. The classical closure now extends beyond scalar Haar/Mellin fusion, beyond the single total-mismatch coordinate, and beyond fixed finite Fourier-leg retention. Even arbitrarily deep mask words can remain information-poor when every intermediate step factors through a fixed thin conductor state space.
 
-At positive depth, PC-207 identifies the full leg tuple with a tensor product of rational analytic Toeplitz multipliers. At zero depth, PC-208 shows that the only new singularity is the original primitive shell reappearing as reciprocal cyclotomic boundary poles; the maximal Hardy multiplier remains spectrally continuous, and natural renormalizations return zero or the primitive-shell measure. The missing arithmetic carrier must therefore be a relation that couples the legs before this separated reduction, not simply a more faithful finite coordinate list.
+PC-207--PC-208 show one failure mode: the fixed-valence source separates into one-variable rational Toeplitz factors, including at zero depth after the primitive-shell singularity is exposed. PC-221--PC-223 show a second: lower-conductor resolution and common-anchor Mangoldt recoupling can be noncommutative yet still sample only a sparse conductor support and factor through the prime-primary space `K_N`.
+
+The missing carrier must therefore preserve **mixed-conductor state before compression**, rather than merely enrich the final coordinates or repeat a noncommuting operation whose internal state has already discarded the middle conductor lattice.
 
 ## Strongest justified principle
 
 PC-197--PC-202 classify arbitrary fixed finite same-angle scalar fusion inside Dirichlet, Mordell--Tornheim, and periodic rational-cone data. PC-203--PC-206 close anchored scalar jets, self-similar scalar filters, fixed matrix filters, and the regular `ell^2(Z)` lift of total mismatch as one Laurent symbol.
 
-PC-207 then keeps the complete tuple `(k_1,...,k_r,ell_1,...,ell_q)` on `ell^2(N_0^d)`. The coefficient tensor already factorizes, so the canonical shifts give a separated rational polydisc multiplier; cross-coordinate commutators vanish even after adjoining adjoints, and the spectrum is a continuum. PC-208 removes the fixed-valence singular-depth caveat: after cancellation of removable roots, each zero-depth denominator is exactly `Phi_n`, with classical Gauss phases, while finite products remain coordinate-separated.
+PC-207 keeps the complete finite leg tuple on `ell^2(N_0^d)`, but the coefficient tensor already factorizes, so the canonical shifts give a separated rational polydisc multiplier. PC-208 removes the singular-depth caveat: the zero-depth denominators reduce to cyclotomic factors and the primitive-shell singularity remains classical source data rather than a new coupling.
 
-Thus fixed finite state richness does not escape classicalization unless the geometry supplies a **nonseparable operation before quotienting or multiplication**.
+PC-221 then shows that summing all proper conductor leakage at fixed level still factors through the cyclotomic coefficient/Ramanujan projector data. PC-222 proves that a common-anchor Mangoldt observable only selects the prime-primary axes. Most decisively, PC-223 considers the repeated noncommuting words left open by that result and obtains the exact factorization
+
+`W_{N,r}=J_N^* B_N^r J_N`.
+
+The operators `J_N` and `B_N` sample only conductor orders `N/p`, `N`, `1`, `p`, and `pq`, so no increase in `r` reaches middle conductors with `3<=omega(d)<=omega(N)-2`. A matched Fourier control can change those omitted sectors while preserving every repeated word. The same factorization bounds the rank by `sum_{p|N}(p-1)`, which becomes negligible relative to `phi(N)` along primorials.
+
+Thus state-space richness must be audited **before** interpreting operator depth: repeated noncommutativity inside a thin quotient can be as information-flat as scalarization.
 
 ## Counterevidence / boundary
 
-The closure is fixed-valence and source-separable. It does not classify a number of leg coordinates growing with refinement, a coupled distributional limit formed before tensor factorization, shell-dependent transfer, noncommuting incidence forced by the old/new-vertex geometry, or global uniformization/monodromy.
+PC-223 does not classify every cross-level or noncommutative construction. It specifically closes words that repeatedly return through the scalar common-anchor prime-primary selector. A refinement map that transports mixed exact-order sectors before that collapse, an intrinsic operator acting directly on the mixed-conductor lattice, a number of retained conductor states growing in a genuinely nonseparable way, or global uniformization/monodromy remains outside the theorem.
 
-Those are category exits, not positive evidence. They must still survive matched periodic/composite controls and show a target-relevant observable that does not collapse after the final contraction.
+Those are category exits, not positive evidence. They must still survive exact controls preserving the known coefficient/Ramanujan and prime-axis data and must produce a target-relevant observable after the final contraction.
 
 ## Epistemic status
 
-**Exact closure of the canonical fixed finite scalar and Fourier-leg operator architectures, including zero depth; source-forced nonseparable/growing structure remains open.**
+**Exact closure of canonical fixed finite separated architectures and of arbitrary-depth common-anchor prime-axis recoupling; source-forced mixed-conductor transport remains open.**
 
 ## Falsification criterion
 
-Within the declared fixed finite packet source, exhibit a canonical individual-leg lift whose coefficients do not separate into the rational Toeplitz tensor of PC-207, or a zero-depth limit whose primitive-shell singularity does not reduce as in PC-208. A successful escape must instead identify the source operation that couples coordinates before those reductions apply.
+Within the PC-223 word family, exhibit a depth whose response depends on a middle conductor outside the proved support set, or violate the factorization/rank bound. A successful escape should instead identify an intrinsic intermediate state or transport law that retains such a middle conductor before prime-axis compression and prove an exact information gain against a matched control.
