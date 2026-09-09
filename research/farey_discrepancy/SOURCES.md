@@ -35,6 +35,11 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - Donald J. Newman, *Simple Analytic Proof of the Prime Number Theorem*, The American Mathematical Monthly **87**(9) (1980), 693--696, DOI `10.1080/00029890.1980.11995126`. Role: primary theorem anchor for the prime number theorem used in `FD-006` only to obtain the weighted dyadic-prime monomial Gram lower bound for a fixed family of Jordan-moment constraints. No quantitative zero-free estimate, RH, or RH-equivalent input is imported.
 
+## Ordered Farey index and nonconsecutive determinant algebra
+
+- R. R. Hall and P. Shiu, *The index of a Farey sequence*, Michigan Mathematical Journal **51**(1) (2003), 209--223, DOI `10.1307/mmj/1049832901`. Role: primary source for the classical Farey index `nu=(q_(i-1)+q_(i+1))/q_i` and the exact first-moment identity `sum_i nu_i=3N(Q)-1`; `FD-011` uses these as the prior-art boundary for the raw nearest-neighbor increment Plücker field.
+- Alan K. Haynes, *Numerators of differences of nonconsecutive Farey fractions*, International Journal of Number Theory **6**(3) (2010), 655--666, DOI `10.1142/S1793042110003113`, arXiv `0907.0162`. Role: primary source for generalized Farey `k`-indices, their convergent-polynomial representation in finite windows of the ordinary index, and fixed-separation average asymptotics; `FD-011` uses it to classify fixed-lag raw increment minors as already inside the classical Farey-index algebra.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
