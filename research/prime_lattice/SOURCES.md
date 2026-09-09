@@ -317,3 +317,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 80. **Peter Stevenhagen**, “Rédei reciprocity, governing fields and negative Pell,” *Mathematical Proceedings of the Cambridge Philosophical Society* **172**(3) (2022), 627–654. DOI: https://doi.org/10.1017/S0305004121000335. arXiv: https://arxiv.org/abs/1806.06250.
     - Role: higher-reciprocity prior-art anchor for `PL-240`. Gives a modern treatment of the Rédei trilinear symbol and reciprocity, explains its role in 8-ranks of narrow class groups, and relates higher `2`-power class-group behavior to Frobenius conditions on the primes dividing the discriminant; this prevents a naive move from the pairwise Rédei matrix to a trilinear support tensor from being treated as automatically new.
+
+## Quadratic multiple Dirichlet series and reciprocity-driven Weyl symmetry
+
+81. **Valentin Blomer**, “Subconvexity for a double Dirichlet series,” *Compositio Mathematica* **147** (2011), 355–374. DOI: https://doi.org/10.1112/S0010437X10004926. arXiv: https://arxiv.org/abs/0907.4867.
+    - Role: main exact anchor for `PL-241`. Defines `Z(s,w)=zeta_2(2s+2w-1) sum_d L_2(s,chi_d psi)psi'(d)d^(-w)`, derives the reciprocity-based variable exchange and the one-variable-`L` functional equation, proves the resulting `D_12` functional-equation group and meromorphic continuation, gives the correction-factor representation with `zeta_2(2w)/L_2(s+2w,chi_d psi)`, and explicitly notes that the Weyl generator interchanges the scalar arguments `2s+2w-1` and `2w`.
+
+82. **Adrian Diaconu, Dorian Goldfeld, Jeffrey Hoffstein**, “Multiple Dirichlet Series and Moments of Zeta and L-Functions,” *Compositio Mathematica* **139**(3) (2003), 297–360. DOI: https://doi.org/10.1023/B:COMP.0000018137.38458.68. arXiv: https://arxiv.org/abs/math/0110092.
+    - Role: classical framework anchor for `PL-241`. Develops perfect multiple Dirichlet series attached to quadratic `L`-families, including correction factors, hidden functional equations from changing summation order, several-variable meromorphic continuation and polar divisors, and applications to moments of zeta and quadratic `L`-functions.
+
+83. **Gautam Chinta, Paul E. Gunnells**, “Weyl group multiple Dirichlet series constructed from quadratic characters,” *Inventiones Mathematicae* **167**(2) (2007), 327–353. DOI: https://doi.org/10.1007/s00222-006-0014-1. arXiv: https://arxiv.org/abs/math/0604449.
+    - Role: higher-rank prior-art anchor for `PL-241`. Constructs several-variable Dirichlet series whose coefficients involve quadratic residue symbols and proves analytic continuation with Weyl-group functional equations, showing that enlarging the rank of the quadratic-reciprocity coupling is established structure rather than a new prime-lattice mechanism.
