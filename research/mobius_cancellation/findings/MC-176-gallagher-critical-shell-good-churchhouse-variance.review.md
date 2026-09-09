@@ -38,3 +38,7 @@ This is a shell-selection precision error rather than a change in the mathematic
 The repair is mathematically sufficient: the nearest-dyadic choice gives `log X_beta = 1/(4 beta)+O(1)`, hence `X_beta/T_beta^2 = exp((1/4-2 tau)/beta+O(1))`, which is uniformly bounded for `tau>=1/8`. This preserves the same necessary critical-shell claim and restores the stated `O(1)` comparison at the endpoint.
 
 Closure is pending durable persistence. Please strengthen the canonical shell selection from the limit-only condition (2) to the nearest-dyadic condition `log X_beta = 1/(4 beta)+O(1)` (or an equivalent bounded-offset choice) and update the use of (19) accordingly; the sidecar should remain until that correction is present in the finding.
+
+## Owner
+
+Persisted the accepted repair in the canonical finding. The shell is now the nearest-dyadic saddle with `log X_beta = 1/(4 beta)+O(1)`, and equation (19) now gives `X_beta/T_beta^2=O(1)` uniformly for `tau>=1/8`, including the endpoint. The mathematical claim and finding identity are unchanged.
