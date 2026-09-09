@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Grow the squarefree radical or act nontrivially on the packet state before compression
+## Grow squarefree structure beyond the fixed-base residue/chord refinement fixed point
 
 **Linked intuitions:** `MI-011-scalar-fourier-zero-existence-is-deformation-dependent`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`.
 
-PC-224--PC-225 show that canonical refinements, diagonal masks, conditional expectations, branching, and bounded limits remain modules over the coarse base; positive compression retains only a scalar coarse profile. PC-226 closes the fixed-base fresh-prime positive-square escape: its coefficient moments have finitely many residue-class limits. PC-227 keeps the entire fresh-prime Fourier vector and still obtains only finitely many fixed-base accumulation models, shifted Cauchy packets determined by the fixed cyclotomic polynomial. PC-228 then shows that repeated-prime depth in a growing coarse conductor factors exactly through the squarefree radical, adding deterministic dilation/aliasing and kernel rather than new transfer rank.
+PC-224--PC-228 show that canonical refinements remain coarse modules, fixed-base fresh-prime full-mode limits reduce to finitely many cyclotomic Cauchy packet models, and repeated-prime depth factors through the squarefree radical. PC-229 tests the most intrinsic carrier inside those packets: the Cauchy pole residue. Fresh-prime transport is a source-forced branching map whose positive square becomes exactly flat above the no-alias threshold, and multi-prime residue branching is path-independent. PC-230 then inserts the source-native inverse-square chord Laplacian before compression; finite-prime mixing appears, but after the residue-forced normalization it converges back to the parent primitive-shell Laplacian.
 
-The unresolved growth variable is therefore the **squarefree radical itself**, or a source-forced operation that acts on the finite packet/alias state before the module or positive-square quotient erases it. A simultaneous squarefree-base/fresh-prime limit is meaningful only if it produces an invariant not reducible to the finite cyclotomic packet family.
+The fixed-base residue/chord route is therefore an **asymptotic refinement fixed point**, not an expanding spectral carrier. A surviving construction must use simultaneous growth of the squarefree radical, act on components of the complete PC-227 packet not captured by residue/chord compression, or introduce a source-forced operation whose cross-prime relation remains nontrivial before the module/positive-square quotient.
 
-## Treat fixed-base fresh-prime limits and repeated-prime depth as controls
+## Treat fixed-base refinement depth, residue branching, and chord compression as controls
 
-Letting one new prime tend to infinity at fixed `N` refines sampling of a fixed rational function; it does not generate an expanding spectrum. Increasing prime-power exponents in `N` only aliases the radical-level transfer. These are now exact controls against claims based on state-space size or conductor depth.
+Letting one fresh prime grow at fixed base refines a fixed cyclotomic object. The pole-residue carrier becomes isometric after scalar normalization, its refinement squares commute, and the canonical chord operator renormalizes to its parent. Increasing prime-power exponents only aliases the radical-level transfer.
 
-A surviving construction must identify which squarefree cross-prime relation grows, how it is source-selected, and what observable retains it before left-unitary/positive compression.
+A genuine squarefree continuation must identify which relation grows with the radical and prove that it is not reducible to finite cyclotomic packet data, path-independent branching, or the parent operator fixed point.

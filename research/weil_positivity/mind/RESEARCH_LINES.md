@@ -2,20 +2,22 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive the sign-changing category exit from the source before inspecting positivity
+## Derive an orientation-changing category exit that is not source-time-covariant damping
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`, `MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`.
 
-WP-216--WP-218 isolate the source-forced critical Poisson/GCD Gram and its wrong Weil orientation: the prime-axis defect has a sign-changing Toeplitz symbol with negative essential spectrum, so compact repairs cannot fix it. WP-219--WP-221 then close the natural invariant-subspace escape. Every nonzero source-shift-invariant Hardy submodule, including mixed-prime jointly invariant modules with passive multiplicity, retains both signs of the scalar symbol.
+WP-216--WP-222 isolate the source-forced critical Poisson/GCD Gram, prove its wrong essential Weil orientation, close invariant submodule restrictions, and show that arbitrary coinvariant model-space quotients can program either sign. The quotient therefore has to be source-selected before positivity is inspected.
 
-WP-222 shows that moving to the dual coinvariant category does evade that hereditary obstruction, but too freely. Finite Blaschke model-space quotients of the same source block can be made strictly positive or strictly negative by moving the quotient zero, while the untuned polynomial quotient remains indefinite. **Positivity of a quotient is therefore not evidence unless the quotient is source-selected before its sign is inspected.**
+WP-223--WP-225 now close the most canonical Bost--Connes source-selection/channel responses. Hamiltonian-diagonal spectral selection or positive diagonal congruence makes the hollow finite defect either zero or indefinite. Any UCP channel fixing the state-energy algebra has the same dichotomy. More strongly, **normal positivity plus covariance with the original source time evolution alone** preserves the absence of zero-Bohr-frequency mass, so even population-changing time-covariant channels cannot orient the defect positively without annihilating it.
 
-The live theorem must derive a canonical quotient/shorting from Bost--Connes/KMS/modular/global data, or actively change the essential finite-place operator through a noncompact mixed-prime/archimedean relation. It must then produce the Gamma/polar sectors and its own sign theorem.
+The live operation must therefore **break or enlarge the source time symmetry, change operator category, or form a noncompact mixed-prime/finite--archimedean interaction before the hollow finite-place defect is reduced**. Any quotient/channel/shorting must be derived from the source independently of the desired sign and must also produce the Gamma/polar sectors needed by the completed Weil form.
 
-## Treat invariant restrictions, compact repairs, and positivity-selected quotients as controls
+## Treat invariant restrictions, compact repairs, energy selectors, and time-covariant positive channels as controls
 
-Source covariance alone cannot hide the negative Weyl sequences; compact completion cannot move the essential sign; arbitrary coinvariant compression can program either sign. These three failures point in different directions but enforce one discipline: the operation that changes orientation must itself be mathematically forced.
+Source covariance cannot hide the negative Weyl sequences; compact completion cannot move the essential sign; arbitrary coinvariant compression can program sign; Hamiltonian diagonal selection and source-time-covariant positive maps can only preserve indefiniteness or erase the hollow defect.
+
+These failures enforce one discipline: the operation that changes orientation must itself introduce mathematically forced structure not already contained in the same scalar source dynamics.
 
 ## Keep mixed-prime incidence and archimedean completion load-bearing
 
-A survivor must explain how finite Mangoldt data, mixed-prime relations, the real place, and polar normalization enter one completed coercive structure. A local positive compression with no such source dictionary is not a Weil bridge.
+A survivor must explain how finite Mangoldt data, mixed-prime relations, the real place, and polar normalization enter one completed coercive structure. A local positive compression or positive channel with no such source dictionary is not a Weil bridge.

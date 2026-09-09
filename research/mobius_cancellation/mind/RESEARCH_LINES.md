@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Seek an intermediate signed cancellation currency outside the classified Bost--Connes channels
+## Price the Gallagher near-diagonal currency rather than merely finding an intermediate observable
 
 **Linked intuition:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`.
 
-MC-156--MC-166 close the finite raw and coefficient-decorated commutator `*`-algebras: they retain only a phase-free transport sector and the original Möbius orientation sector. MC-167--MC-168 show that the canonical modular twist does not create the missing middle layer either. Its absolute regularity is phase-blind, while its bounded twisted-Lipschitz condition is an exact local phase selector rather than a global cancellation measure.
+MC-156--MC-171 classify the earlier Bost--Connes channels: finite algebra/twist constructions are phase-blind or local selectors, the signed pointwise heat orbit reaches the RH-equivalent endpoint, and sufficiently long positive heat averages wash the phase out. MC-172 now identifies a genuine intermediate source-sensitive object: Gallagher localization converts finite-time heat energy into an exact near-diagonal signed Möbius energy whose Haar prime-phase baseline is the diagonal.
 
-MC-169--MC-171 classify the natural theta-heat completion. The signed small-heat pointwise statement is RH-equivalent, stationary mean-square/sup statistics erase the prime phase, and even moving mean-square windows become phase-blind once the horizon exceeds `exp((3/8+o(1))/beta)`.
+The difficult part is quantitative, not categorical. MC-173 shows that the current Doyle additive-autocorrelation transfer erases prime orientation before its strong square-free estimate is used. MC-174 proves that diagonal Gallagher heat type for `1/8<=tau<3/8` already forces a fixed zeta zero-free half-plane. MC-175 gives the exact power-law pricing: in the early useful range `1/8<=tau<=1/4`, every fixed variance exponent below square-root scaling is insufficient within the stated envelope; later horizons admit weaker powers, but any positive fixed saving at its first admissible horizon still has a fixed zero-free consequence.
 
-The live Bost--Connes route must therefore find a **source-forced statistic between local phase selection and target-equivalent signed recovery**. A moving sub-washout window is still admissible only if it yields a stable cancellation theorem cheaper than RH; otherwise the operation itself must change beyond the finite two-sector algebra and canonical twist.
+The live theorem is therefore to determine what **signed local second-moment exponent is actually accessible for Möbius** without importing an equivalently strong zero-free estimate. A useful intermediate result may be a graded improvement below the diagonal target, provided its spectral consequence and source assumptions are priced explicitly.
 
-## Treat coefficient insertions, canonical twist regularity, and long-window heat norms as controls
+## Treat phase-blind autocorrelation and long-window heat norms as controls
 
-Adding arithmetic diagonal coefficients does not create a third phase sector. Twisted commutator magnitude measures semigroup transport rather than Möbius cancellation. Long-time positive heat statistics forget orientation. These mechanisms should be used as matched nulls when testing any new signed observable.
+Support-only `ell^2` engines, additive autocorrelation that replaces `mu` by `mu^2`, stationary positive norms, and windows beyond the heat washout horizon do not measure the needed orientation. Conversely, demanding full diagonal type too early can silently ask for a major zero-free theorem.
 
-A survivor must state exactly where signed cross-scale interaction enters and why it cannot be reduced to the original `D_mu` factor, a local phase constraint, or an RH-equivalent scalar transform.
+A survivor must retain off-diagonal Möbius phase, state its short-interval variance currency, and quantify exactly what heat or zero-free information the achieved exponent buys.
