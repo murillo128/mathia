@@ -1,7 +1,7 @@
 ---
 id: CLUE-joint-squarefree-sign-and-divisor-compatibility
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -77,3 +77,12 @@ Compare the resulting question and proof with the existing FD-005--FD-007 statem
 ## Evidence boundary
 
 Sources were inspected through `8d3ded047405f07aa10140dd7baa7c036faa293b`; check their current claim and review state before use. No joint saturation construction, uniform gap, finite optimization, or improved estimate for the true Mobius sequence is supplied here. FD-006 and FD-007 must not be combined by intersection without this missing feasibility argument. Failure to construct a repair is not a refutation, and an exact feasible synthetic sign assignment is a control for this relaxation, not a counterexample to RH.
+
+## Research disposition
+
+Outcome: refuted
+
+Resolved by:
+- [[research/farey_discrepancy/findings/FD-008-joint-squarefree-sign-and-divisor-identity-still-does-not-improve-leading-dual-constant.md]]
+
+The possible persistent-gap branch is refuted. `FD-008` constructs exactly feasible squarefree-supported unit-sign sequences satisfying the single divisor identity while their induced GCD-energy coordinate quotient still approaches `zeta(2)`, with `0 <= zeta(2)-Theta_N^div << N^(-1/10)`. The decisive repair uses a zero-sum principal extremizer, a bounded four-dilate tail, and an exact `floor(N/n)=1` correction inside the top hyperbola interval. This resolves only the declared single-horizon joint relaxation; multiplicative Möbius sign correlation, growing-depth divisor compatibility, and ordered pre-cumulative Farey structure remain outside it.
