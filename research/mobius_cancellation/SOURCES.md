@@ -249,3 +249,21 @@ Role: prior-art boundary for `MC-082`. The paper develops a parity-sensitive sie
 Philippe Jacquet, Charles Knessl and Wojciech Szpankowski, *Counting Markov Types*, Discrete Mathematics & Theoretical Computer Science, DMTCS Proceedings vol. AM, 21st International Meeting on Probabilistic, Combinatorial, and Asymptotic Methods in the Analysis of Algorithms (AofA 2010). DOI: https://doi.org/10.46298/dmtcs.2768.
 
 Role: classical transition-type prior-art anchor for `MC-127`. The paper identifies Markov types with balanced frequency matrices and balanced directed multigraphs, formalizing exactly the information retained by aggregate directed transition counts. `MC-127` uses that established language for an explicit residue-cycle type class and computes two integer lifts with identical complete directed transition histograms but radically different first-absolute excursions. No novelty is claimed for Markov types, balanced multigraphs, or cycle reordering.
+
+## MC-S42 — Gallagher, exponential-sum mean square and Dirichlet localization
+
+P. X. Gallagher, *A large sieve density estimate near σ = 1*, Inventiones Mathematicae 11 (1970), 329–339. DOI: https://doi.org/10.1007/BF01403187.
+
+Role: original source of Gallagher's mean-square exponential-sum lemma used in `MC-172`. Its Dirichlet-series specialization controls a time-window `L^2` norm by a quadratic mean of coefficients in multiplicatively short intervals. `MC-172` specializes that classical inequality to the absolutely convergent Möbius θ-heat coefficients and independently expands the resulting local energy.
+
+## MC-S43 — Coppola and Laporta, weighted Gallagher lemma and Selberg-integral interpretation
+
+Giovanni Coppola and Maurizio Laporta, *A generalization of Gallagher's lemma for exponential sums*, Šiauliai Mathematical Seminar 10 (18) (2015), 29–47. arXiv: https://arxiv.org/abs/1411.1739.
+
+Role: explicit modern formulation used in `MC-172`. Equation (I) states the Dirichlet-series Gallagher inequality `||D||_(2,T)^2 << T^2 int |sum_(y<n<=y e^(1/T)) a_n|^2 dy/y`; the paper then develops weighted/Cesàro variants and identifies the right-hand quadratic means with Selberg-integral-type short-interval tools. No novelty is claimed for this transform or its triangular localization kernel.
+
+## MC-S44 — Keating and Rudnick, function-field Möbius short-interval variance
+
+Jonathan P. Keating and Zeev Rudnick, *Squarefree polynomials and Möbius values in short intervals and arithmetic progressions*, Algebra & Number Theory 10 (2016), no. 2, 375–420. DOI: https://doi.org/10.2140/ant.2016.10.375.
+
+Role: function-field prior-art analogue for `MC-172`. The paper calculates means and variances of Möbius sums in short intervals over `F_q[t]` in a large-`q` regime via unitary matrix integrals. It demonstrates that Möbius short-interval variance is a substantive established object in a proved analogue, but it supplies no unconditional integer estimate at the square-root local-variance scale required by the Gallagher-energy target in `MC-172`.
