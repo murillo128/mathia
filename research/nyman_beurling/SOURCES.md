@@ -15,6 +15,11 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 - Jean-François Burnol, *A lower bound in an approximation problem involving the zeros of the Riemann zeta function*, Adv. Math. 170 (2002), 56–70, DOI `10.1006/aima.2001.2066`, [arXiv:math/0103058](https://arxiv.org/abs/math/0103058). Role: zero-sensitive lower-bound boundary for claims about asymptotic Nyman approximation rates.
 - Sandro Bettin, J. Brian Conrey, David W. Farmer, *An optimal choice of Dirichlet polynomials for the Nyman-Beurling criterion*, [arXiv:1211.5191](https://arxiv.org/abs/1211.5191). Role: conditional optimal-constant boundary; the matching asymptotic requires RH plus an additional reciprocal-`ζ'` moment hypothesis, so finite target-aware identities do not by themselves supply the known deep rate.
 
+## Harmonic arithmetic and separated-frequency tools
+
+- Srinivasa Ramanujan, *On certain trigonometrical sums and their applications in the theory of numbers*, Trans. Cambridge Philos. Soc. 22 (1918), no. 13, 259–276, [original paper](https://ramanujan.sirinudi.org/Volumes/published/ram21.pdf). Role: classical prior-art boundary for the Ramanujan sums used to diagonalize finite divisibility contrasts in `NB-012`; the specific finite Nyman normal-equation transform is derived in the finding.
+- H. L. Montgomery and R. C. Vaughan, *Hilbert's Inequality*, J. London Math. Soc. (2) 8 (1974), 73–82, DOI `10.1112/jlms/s2-8.1.73`. Role: generalized Hilbert inequality for separated frequencies; `NB-012` uses its standard two-sided lower-frame corollary for reduced rational frequencies with denominator at most `L`.
+
 ## Expansion rule
 
 Add a primary source when a canonical finding depends on an exact quantitative approximation theorem, Gram asymptotic, dual formulation, or best-approximation bound. Do not turn `SOURCES.md` into a bibliography of every Nyman–Beurling paper.
