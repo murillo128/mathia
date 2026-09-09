@@ -1,7 +1,7 @@
 ---
 id: CLUE-coherent-dyadic-staircases-cannot-jointly-saturate-gcd-duality
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -129,3 +129,9 @@ Reviewed source snapshot: 1419fd4a827311a17696b125fd885fe0b8e2f312. Publication 
 Local sanity checks used exact rational inverse-column/diagonal formulas at H=8,16,32,64,101,128. Every fourth coordinate was exactly zero; double-precision multiplication K_H*u-e_1 had maximum residual below 2.3e-16. These checks support the algebra but do not replace the proof above or independent review. No repository test suite, Lean build, actual-prefix optimization, or asymptotic experiment was executed.
 
 The factorization and equality-case geometry are classical tools already in FD-003; literature novelty is not claimed. No new RH bound follows from the displayed constant alone. If the two-horizon lemma is already covered locally, close as duplicate; if it is false, record the exact failed identity or a coherent counterexample. If it survives but has no useful transport beyond a constant, retain that limited boundary and do not open another standalone line.
+
+## Research disposition
+
+Accepted. The two-horizon lemma survives independent reconstruction and is canonicalized in [[research/farey_discrepancy/findings/FD-014-coherent-dyadic-horizons-have-a-uniform-gcd-duality-saturation-gap.md]]. The same finding gives the legitimate repeated consequence: every adjacent dyadic pair has a uniform saturation deficit, and every even-length dyadic block has average normalized dual ratio strictly below `zeta(2)` by a fixed constant. This is additive block control, not a multiplicative contraction and not an RH-exponent improvement.
+
+The remaining live question is whether a **compressed growing hierarchy of coherent horizons** can turn this genuine source-coherence gap into a scale-sensitive Franel/Mertens estimate before the hierarchy becomes complete enough to hit the exact source-reconstruction boundary of `FD-009`. Optimizing the finite constant in the present two-horizon lemma is secondary unless it exposes such a transport mechanism.
