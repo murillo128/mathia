@@ -1,7 +1,7 @@
 ---
 id: CLUE-regular-ca-peaks-defeat-unconditional-workload-monotonicity
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: robin_extremal
 based_on:
@@ -48,7 +48,7 @@ The question is deliberately narrower than asking for monotone CA peak values. M
 
 ## Why it may matter
 
-This separates a correct exact representation from an incorrect universal sign expectation. It provides two small exact regression integers for proposed convex-order, cumulative-workload, and sign certificates. Any proposed universal nonpositive workload, or universal F >= 0 between all regular peaks, must fail this test.
+This separates a correct exact representation from an incorrect universal sign expectation. The displayed pair is a regression test for sign claims on all regular self-tangent states. Independent owner reconstruction in RE-005 supplies the stronger peak-level control needed to rule out universal monotonicity even after imposing genuine local maximality.
 
 This is a rejection of the proposed strengthening, not a rejection of RE-001, the Robin line, or a barrier-conditioned argument. It does not establish the existence of a Robin counterexample.
 
@@ -64,6 +64,12 @@ A separate exploratory enumeration at 50-digit working precision, retaining actu
 
 Owner: robin_extremal. Imported source: RE-001 at reviewed commit 16e9325e032fabb3b9a59664b7f7a15174a65ec2, for the source atoms, regular self-tangent definition, and exact workload identity. The integration-by-parts calculation and finite checks were produced during this extraordinary Master/Visionary audit.
 
-The local checks used mpmath interval arithmetic at 50 decimal digits, exact rational sigma(n)/n, and strict interval comparisons. They are not a formal proof, a repository test-suite execution, or an independent certification of every claim in RE-001. No scheduled Visionary campaign was changed. This new proposed clue still requires owner-side semantic deduplication against any concurrently added clues before acceptance.
+The local checks used mpmath interval arithmetic at 50 decimal digits, exact rational sigma(n)/n, and strict interval comparisons. They are not a formal proof, a repository test-suite execution, or an independent certification of every claim in RE-001. No scheduled Visionary campaign was changed.
 
-Stop/re-export criterion: if already covered by a prior source-specific monotonicity counterexample, link that result instead of creating another finding. Otherwise re-export only the independently verified kill test and the precise extra hypothesis required by a surviving barrier-conditioned argument.
+The original displayed pair does not consist of local Robin peaks: `720720` lies below its immediate CA predecessor `55440`, and `6983776800` lies below its immediate CA successor `160626866400`. This limits what that pair alone refutes. RE-005 independently repairs the gap with two genuine regular self-tangent local peaks having a positive peak-to-peak workload.
+
+## Research disposition
+
+Accepted, with the peak/self-tangent distinction corrected. [[research/robin_extremal/findings/RE-005-regular-self-tangent-ca-peak-values-are-not-globally-monotone.md]] proves a stronger finite control: `2021649740510400` and `1970992304700453905270400` are both strict regular self-tangent CA local peaks, both satisfy Robin's inequality with substantial margin, and the later peak has strictly larger `G`.
+
+The remaining question is asymptotic and source-conditioned. Determine whether the hypothetical counterexample peaks forced by RE-001 eventually satisfy a prime-layer restriction absent from these finite safe peaks, strong enough to force the workload sign or violate the local secant-clearance gate of RE-002. The finite obstruction does not rule out eventual monotonicity or a theorem conditioned on genuine approach to the Robin barrier.
