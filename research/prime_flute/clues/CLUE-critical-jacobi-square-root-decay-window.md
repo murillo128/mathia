@@ -6,6 +6,8 @@ origin: research-watch
 target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes.md
+  - research/prime_flute/findings/PF-248-parity-jacobi-tail-is-trace-class-but-first-moment-critical.md
+  - research/prime_flute/findings/PF-249-positive-separation-preserves-free-jacobi-square-root-threshold.md
   - research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing.md
   - research/prime_flute/clues/CLUE-robin-homotopy-separated-poisson-shear-estimate.md
 ---
@@ -52,30 +54,34 @@ More generally, if the actual fixed-axis scalar functional factor has edge expan
 
 Can the actual fixed-axis functional factor entering the PF-243 separated Robin-Poisson maps be identified near the zero edge of PF-247's relative Jacobi operator and shown to have enough edge regularity that its mode-mixing tail supports some uniform `K_a^R` gain with `R>1`?
 
-In particular, does the square-root-type `k^{-2}` calibration survive the passage from the bilateral constant Jacobi model to PF-247's half-line asymptotically constant parity chains and then through the actual seam-normalized source-to-bulk maps, leaving a genuine window such as `1<R<3/2`? Or does summation over output modes, the Hardy ends, the `T_a` replacement, or the `O(w^2)` hypercycle-coordinate defect consume the half-derivative margin and close that window?
+In particular, does the square-root-type calibration survive the passage from the constant half-line Jacobi model to PF-247's asymptotically constant parity chains and then through the actual seam-normalized source-to-bulk maps, leaving a genuine supercritical window? Or do the first-moment-critical coefficient tail, the Hardy ends, the `T_a` replacement, or the `O(w^2)` hypercycle-coordinate defect close it?
 
 ## Why it may matter
 
 PF-247 ends with "quantify functional-calculus decay" as a live route, while the accepted PF-243 clue asks only for one exponent `R>1`. The exact edge calculation turns those two statements into a sharp compatibility test. The critical Jacobi edge is not expected to give exponential locality for a square root, but it may still give just enough algebraic locality to cross the trace threshold.
 
-A positive transfer would identify a concrete exponent range and a specific mechanism for the missing separated smoothing estimate. A negative result would be equally useful: if the correct operator geometry converts the `k^{-2}` edge tail into a bound that cannot reach any `R>1`, then the fixed-axis Jacobi functional-calculus route can be closed without asking for unrealistically strong exponential decay.
+A positive transfer would identify a concrete exponent range and a specific mechanism for the missing separated smoothing estimate. A negative result would be equally useful: if the correct operator geometry converts the edge tail into a bound that cannot reach any `R>1`, then the fixed-axis Jacobi functional-calculus route can be closed without asking for unrealistically strong exponential decay.
 
 ## Decisive test
 
 First identify the exact scalar function or finite product of functions of the fixed-axis relative operator that occurs in the seam-normalized far-leg Poisson factor; do not assume that it is literally `J^{1/2}` merely because square roots occur in the normalization. Determine its leading non-smooth term at `\lambda=0`. For a model edge law `\lambda^\alpha`, derive the exact or sharp parity-chain matrix tail and verify the weighted high-to-low bound in the constant half-line Jacobi model, including the boundary correction rather than using only the bilateral Toeplitz kernel.
 
-Then replace the toy fixed-row check by the norm actually needed in PF-243: sum over the full far-leg output energy space and determine whether some `R>1` remains admissible. Only if that succeeds transfer the estimate to PF-247's variable Jacobi coefficients, whose deviations from the constant coefficients tend to zero, and finally test the two explicitly named geometric perturbations: the `T_a` versus `A` spectral replacement and the width-dependent hypercycle/axis coordinate defect. The actual PF-238 seam must remain fixed throughout.
+Then use the norm actually needed in PF-243: sum over the full far-leg output energy space and determine whether some `R>1` remains admissible. Only if that succeeds transfer the estimate to PF-247's variable Jacobi coefficients, whose deviations from the constant coefficients tend to zero, and finally test the two explicitly named geometric perturbations: the `T_a` versus `A` spectral replacement and the width-dependent hypercycle/axis coordinate defect. The actual PF-238 seam must remain fixed throughout.
 
 Kill this direction if the correct edge exponent is at most `1/4`, if the half-line/full-output accumulation closes every `R>1` window already in the constant model, or if one of the canonical perturbations produces a non-summable long-range tail. Support it only if a bound for the actual separated source maps survives uniformly on the canonical tail for at least one fixed `R>1`.
 
 ## Evidence boundary
 
-The Fourier series for `|sin(t/2)|` and its `k^{-2}` coefficient decay are exact classical calculations for PF-247's constant bilateral limit. The `1<R<3/2` interval is only the square-summability threshold of a fixed-output-mode toy calibration. Neither statement proves PF-243's four separated source-to-bulk estimates, transfers automatically to the half-line variable Jacobi operator, or controls the actual complete-lift seam.
+The Fourier series for `|sin(t/2)|` and its `k^{-2}` coefficient decay are exact classical calculations for PF-247's constant bilateral limit. PF-248 and PF-249 sharpen that calibration on the half-line and after positive-separation full-output summation, but neither proves PF-243's four separated source-to-bulk estimates, transfers automatically to the variable PF-247 Jacobi operator, or controls the actual complete-lift seam.
 
-No new theorem about discrete fractional Laplacians, Jacobi functional calculus, Robin maps, Schatten classes, zeta zeros, or RH is claimed. The clue isolates a falsifiable exponent-budget question suggested by PF-247 and remains proposed until the Prime Flute Research Watch reconstructs it in the exact corridor geometry.
+No new theorem about discrete fractional Laplacians, Jacobi functional calculus, Robin maps, Schatten classes, zeta zeros, or RH is claimed. This remains an accepted research clue rather than mathematical evidence; acceptance authorizes continued investigation only.
 
 ## Research disposition
 
 Accepted for continued investigation. PF-248 performs the clue's first missing half-line test and materially changes the toy exponent budget: the Dirichlet image term cancels the bilateral `n^{-2}` contribution in each fixed output row of the constant half-line square root, giving `n^{-3}` decay and the wider fixed-row threshold `R<5/2`.
 
-PF-248 also shows why this does not resolve the clue. The actual PF-247 parity coefficients differ from the constant chain by `O(j^{-2})`; this is trace class but has divergent first weighted moment, so standard first-moment Jost transfer is unavailable at the zero edge. The precise surviving question is whether the actual Robin scalar factor and full-output source map retain some `R>1` weighted decay across this first-moment-critical tail, before the later `T_a` and hypercycle-coordinate perturbations are introduced.
+PF-248 also shows why this does not resolve the clue. The actual PF-247 parity coefficients differ from the constant chain by `O(j^{-2})`; this is trace class but has divergent first weighted moment, so standard first-moment Jost transfer is unavailable at the zero edge.
+
+PF-249 completes the next **constant-model** test. If the free square-root conversion is followed by the exponential output damping supplied by any fixed positive separation, then the full-output operator `E_dJ_0^{1/2}N^R` is Hilbert--Schmidt exactly for `R<5/2` and unbounded for `R>=5/2`. Thus summing the whole separated output does not consume the half-line margin: the free proxy still leaves the full interval `1<R<5/2`.
+
+The precise surviving question is now narrower: identify the actual normalized Robin scalar factor and determine whether the specific first-moment-critical `O(j^{-2})` PF-247 chain preserves **any** separated weighted estimate with `R>1`. Only after that fixed-axis transfer succeeds should the route spend margin on `T_a` and the hypercycle-coordinate perturbation.
