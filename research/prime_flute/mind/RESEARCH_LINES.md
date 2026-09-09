@@ -2,28 +2,18 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Isolate the high-high shear tail, then propagate the dressed gain through physical recoupling and global reassembly
+## Prove actual-seam spectral locality sufficient for one-sided separated Poisson smoothing
 
 **Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`, `MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency`.
 
-PF-196--PF-227 isolate the weak-trace endpoint and prove that raw thin-pant crossing has order `s_n^{-1}` channel multiplicity, surviving fixed and slowly growing physical high-pass projections. Raw multiplicity is genuine geometry, so a successful endpoint theorem must win through the dressed singular-value amplitude rather than by deleting a small low sector.
+PF-228 and PF-233--PF-239 establish the dressed diagonal corridor baseline through the actual complete lifted seam and make every shear term touching a fixed scaled critical band strongly trace summable. PF-240 identifies the exact high-high threshold: more than one total scaled tangential derivative gives trace norm `O(beta/s)`, while order one is only weak-trace in the abstract model. PF-241 removes shrinking-width ellipticity loss by an exact long-strip blowup, and PF-242 shows the direct hypercycle shear multiplier is exponentially local in Pöschl--Teller mode index.
 
-PF-228 and PF-233--PF-236 establish the positive diagonal local model. The exact variable-width corridor, with an operator-matched seam normalizer, retains the PF-228 envelope `sqrt(w_1w_2)/s * F(sm)` with inverse-seam channel count and exponential high-mode decay. PF-237 exposes a real representation mismatch: the complete lifted actual seam has noncompact inverse while the matched seam has compact inverse, so no global two-sided relative-form comparison can identify them. PF-238 then proves the one-sided order actually needed by the normalized crossing and propagates it through the exact inverse corridor. The actual complete-lift diagonal crossing obeys the same envelope up to a uniform constant.
+PF-243 reduces the remaining high-high block to **one-sided separated Robin-Poisson smoothing of any order `R>1`** with the actual seam held fixed. PF-244 then proves that one-sided form domination of the seam, positivity, energy contraction, and spatial separation are insufficient: an abstract seam can leak sparse high modes into a fixed low mode before propagation.
 
-PF-239 now narrows the shear gate sharply. PF-232's sheared and diagonal corridor forms differ by relative size `beta_n=O(P_n^{-1})`. After normalization by the fixed actual seam form, the corresponding Schur factors differ by `O(beta_n)` in operator norm. Any part of that shear correction with at least one leg in a fixed PF-233 scaled transverse band has rank `O(s_n^{-1})`; after multiplication by the reciprocal-prime commutator weight its trace norm is `O(P_n^{-2})`, hence absolutely summable. Critical-band and low/high shear leakage therefore do **not** need to preserve the full `w/s` envelope.
+The next theorem must therefore use additional structure of the **actual complete-lift seam relative to the scaled tangential operator**: spectral/microlocal locality, commutator bounds, compatible pseudodifferential boundary calculus, or a finite physical trace realization that excludes the PF-244 high-to-low channel.
 
-The next local theorem is now only the **high-high shear block**, where neither transverse leg lies in a fixed scaled band. Prove separated-boundary/Poisson smoothing or another exact estimate that gives sufficient tail decay there, or exhibit a canonical high-high countermechanism. Once that tail is controlled, the frontier moves to physical `P/H` recoupling, finite one-cusp-pant completion, neighboring-cell extension, and PF-222 nested/global weak-`S_1` reassembly.
+## Keep local shear closure separate from physical and global reassembly
 
-## Keep diagonal dressing, high-high shear, physical projection, pant coupling, and global weak-trace reassembly distinct
+Thinness, direct far-mode jumps, low-touch shear, and the amount of required smoothing are no longer the unresolved issues. Once actual-seam locality yields the PF-243 estimate, the frontier moves to physical `P/H` recoupling, one-cusp-pant completion, neighboring-cell extension, and global weak-`S_1` reassembly.
 
-The diagonal corridor plus actual complete lifted seam is quantitatively controlled at the critical local scale, and all shear damage touching the fixed scaled critical population is already strongly trace summable after reciprocal-prime weighting. Neither fact controls the infinite-rank high-high shear block or the later physical trace maps.
-
-Any continuation should state the exact operator word being controlled, which part is baseline signal versus trace-class error, and how each later noncommuting factor acts on the singular-value envelope. Re-proving low-band `w/s` stability or treating generic critical-band shear mixing as the obstruction is now stale.
-
-## Resolve ordered multi-neck memory in marked spectral data
-
-Finite graded chains retain directed neck order while scalar determinants erase it. Any arithmetic claim must identify a marked Weyl/Green/spectral-measure or boundary observable that survives the exact gap-order controls and the localized endpoint comparison.
-
-## Require prime/clone separation before assigning arithmetic meaning
-
-The all-composite shift clone shares the area-preserving geometry, endpoint summability, local weak-trace architecture, and much of the corridor/seam control. A surviving observable must still separate the prime flute from matched non-prime endpoint geometries after the full dressed reassembly.
+The all-composite endpoint clone remains a required arithmetic control: preserving the analytic envelope is not yet prime specificity.

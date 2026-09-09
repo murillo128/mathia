@@ -1,31 +1,19 @@
 # Möbius-cancellation research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave the finite raw commutator algebra and require a genuinely new relational operation
+## Seek an intermediate signed cancellation currency outside the classified Bost--Connes channels
 
-**Linked intuitions:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`, `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`.
+**Linked intuition:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`.
 
-MC-122--MC-162 classify the scalar Bost--Connes commutator ladder. Fixed-depth and all-depth magnitudes are cancellation-blind, while signed scalar readouts either retain/reconstruct the Möbius orientation or, when an absolute transfer estimate is strong enough, collapse to same-exponent Mertens equivalence. Increasing scalar depth or changing the norm does not create an intermediate cancellation category.
+MC-156--MC-166 close the finite raw and coefficient-decorated commutator `*`-algebras: they retain only a phase-free transport sector and the original Möbius orientation sector. MC-167--MC-168 show that the canonical modular twist does not create the missing middle layer either. Its absolute regularity is phase-blind, while its bounded twisted-Lipschitz condition is an exact local phase selector rather than a global cancellation measure.
 
-MC-163--MC-165 now close the most direct finite noncommutative repair as well. Cross-prime Gram operators factor into separable one-prime phase factors times support-replacement partial isometries, and every closed Gram cycle has trivial phase holonomy. Raw adjoint-free words satisfy an exact degree-parity law: even degree loses the Möbius phase and odd degree carries it linearly. Most generally, on square-free inputs every finite word in the raw commutators and their adjoints, including repeated primes, has one global phase charge; at Möbius this reduces to parity. Hence every finite raw `*`-polynomial has the normal form
+MC-169--MC-171 classify the natural theta-heat completion. The signed small-heat pointwise statement is RH-equivalent, stationary mean-square/sup statistics erase the prime phase, and even moving mean-square windows become phase-blind once the horizon exceeds `exp((3/8+o(1))/beta)`.
 
-`A(C,C*) P_sf = T_0 P_sf + T_1 D_mu P_sf`,
+The live Bost--Connes route must therefore find a **source-forced statistic between local phase selection and target-equivalent signed recovery**. A moving sub-washout window is still admissible only if it yields a stable cancellation theorem cheaper than RH; otherwise the operation itself must change beyond the finite two-sector algebra and canonical twist.
 
-with phase-free local transport operators `T_0,T_1`. Finite noncommutative word complexity therefore does not manufacture a third relational phase class between support-only data and the original target orientation.
+## Treat coefficient insertions, canonical twist regularity, and long-window heat norms as controls
 
-The surviving Bost--Connes route must change the mathematical operation, not merely increase word length or add adjoints. Candidate exits include source-forced coefficient-algebra insertions, twists or modular operations that alter the phase-charge law, noncompact/infinite analytic completions with controlled topology, or another relational observable whose quantitative Mertens transfer is strictly cheaper than target reconstruction. Each must still survive matched biased controls and the excursion-transfer gate.
+Adding arithmetic diagonal coefficients does not create a third phase sector. Twisted commutator magnitude measures semigroup transport rather than Möbius cancellation. Long-time positive heat statistics forget orientation. These mechanisms should be used as matched nulls when testing any new signed observable.
 
-## Treat scalar and finite raw-word regularity as classified boundaries
-
-Prime-semigroup row weights, arbitrary `ell^q` aggregation, divisibility splitting, fixed-depth mixed differences, all-depth scalar magnitudes, signed scalar filters, cross-prime Gram transport, raw Lie brackets, repeated-prime words, and arbitrary finite commutator/adjoint polynomials now form a broad control catalogue. Rich operator notation is not evidence of a new arithmetic category when exact reduction shows only support transport plus a masked copy of `D_mu`.
-
-A continuation should first state which source operation escapes the finite raw `*`-algebra and why it is independently natural. If its only new effect is to reconstruct the Möbius sign table or to hide a same-exponent Mertens statement inside a richer functional calculus, it has not crossed the boundary.
-
-## Treat finite-state vocabulary growth and scalar prime-factor vocabulary as closed until they change order topology
-
-Adding context length, modular height, finitely many future steps, periodic phases, polynomial timestamp moments, scalar prime weights, any prescribed finite number of mixed prime-difference layers, the complete scalar norm hierarchy, or a linear tail-centered prime charge enlarges the description without establishing a cheaper excursion theorem. A local enrichment should first be tested for factorization through one of these classified summaries or for exact target reconstruction.
-
-## Require the source theorem to be Möbius-specific but not target-equivalent
-
-Generic controls need not satisfy Möbius multiplicativity, square-free support, prime values, or divisor identities, so exact arithmetic remains a legitimate escape. The converse warning is now stronger: arbitrarily deep local structure and the complete finite raw commutator algebra can still land on either support-only information or the original sign field. The desired theorem lies strictly between those extremes and must supply quantitative additive excursion control from a genuinely source-forced relation.
+A survivor must state exactly where signed cross-scale interaction enters and why it cannot be reduced to the original `D_mu` factor, a local phase constraint, or an RH-equivalent scalar transform.
