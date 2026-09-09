@@ -13,71 +13,88 @@ based_on:
   - research/prime_flute/findings/PF-251-exact-zero-edge-solutions-select-growing-inverse-square-jacobi-branch.md
   - research/prime_flute/findings/PF-252-zero-edge-ground-state-transform-has-bessel-four-scaling.md
   - research/prime_flute/findings/PF-253-bessel-four-jacobi-fractional-powers-have-sharp-separated-window.md
+  - research/prime_flute/findings/PF-254-normalized-noncommuting-robin-injection-splits-square-root-amplitude-from-polar-transport.md
   - research/prime_flute/clues/CLUE-robin-homotopy-separated-poisson-shear-estimate.md
 ---
 
-# Does the critical Jacobi edge leave a supercritical smoothing window for the actual Robin factor?
+# Can the actual relative seam and polar transport spend the Jacobi square-root margin?
 
 ## Observation
 
-PF-247 reduces the fixed-axis compactification to two asymptotically constant parity Jacobi chains. PF-248--PF-250 establish the free Dirichlet calibration: for `0<\sigma<1`, the half-line image term improves the fixed-row fractional-power tail to `n^{-2-2\sigma}`, and fixed positive output separation gives the sharp full-output threshold
-
-\[
-R<\frac32+2\sigma.
-\]
-
-PF-251 then shows why generic trace-class transfer is unavailable for the actual chain: the full half-line zero condition selects a positive solution growing like `j^{3/2}`, while the independent tail solution is `j^{-1/2}`. PF-252 converts that exact positive branch into a weighted nearest-neighbor operator with cubic mass and conductance and radial Bessel-four scaling.
-
-PF-253 now proves the previously conjectural fractional-kernel consequence for the **actual** PF-247 parity chains. In the separated cone,
+PF-247 reduces the fixed-axis compactification to two asymptotically constant parity Jacobi chains. PF-251--PF-253 identify the exact critical branch: the zero-edge positive solution grows like `j^{3/2}`, its ground-state transform has Bessel-four scaling, and for `0<\sigma<1` the actual parity chains satisfy
 
 \[
 \left|\langle e_i,J_\varepsilon^\sigma e_j\rangle\right|
 \asymp
-(i+1)^{3/2}(j+1)^{-5/2-2\sigma},
-\qquad j\ge2i+2,
+(i+1)^{3/2}(j+1)^{-5/2-2\sigma}
 \]
 
-and after any fixed positive output separation,
+in the separated cone, with the sharp fixed-output window
 
 \[
-\boxed{
 E_dJ_\varepsilon^\sigma N^R\in\mathcal S_2
-\iff R<2+2\sigma,
-}
+\iff R<2+2\sigma.
 \]
 
-with no bounded extension at or above the endpoint. Thus a literal square-root factor has the sharp actual-chain window `R<3`. The first-moment-critical inverse-square tail does not close PF-243's required `R>1` window; its exact Bessel-four geometry strengthens the free calibration by one half-power.
+In particular, a literal Jacobi square root has the proven window `R<3`, well above PF-243's required `R>1`.
+
+PF-254 now settles the first algebraic part of the Robin-factor question. For any bounded positive regularization of a transverse operator `K` and seam normalizer `Q`, with relative seam
+
+\[
+\mathcal R=K^{-1/2}QK^{-1/2},
+\]
+
+the normalized Robin injection factors exactly as
+
+\[
+(K+Q)^{-1}Q^{1/2}
+=K^{-1/2}h(\mathcal R)U,
+\qquad
+h(\lambda)=\frac{\sqrt\lambda}{1+\lambda},
+\]
+
+where `U` is the polar partial isometry of `K^{-1/2}Q^{1/2}`. Thus the positive relative amplitude **always** has a square-root zero edge. The live uncertainty is no longer the scalar edge exponent. It is whether the actual complete-lift relative seam `\mathcal R_w` is controlled by PF-247's `J_\varepsilon`, and whether the accompanying polar transport `U_w` preserves enough transverse locality before separated propagation begins.
 
 ## Research question
 
-What is the exact scalar function, operator mean, or finite functional-calculus expression in the fixed-axis relative operator `J_\varepsilon` that occurs in the **seam-normalized far-leg Robin-Poisson factor** from PF-243, and what is its leading non-smooth behavior at `\lambda=0`?
+For the actual fixed-axis complete-lift seam, what are the exact relative operator and polar transport
 
-Once that factor is identified, does its edge behavior reduce to positive fractional powers (or another explicitly controlled functional-calculus class) strongly enough that PF-253's proven `R>1` margin survives the actual `K_a=T_a^{1/2}` replacement, Hardy ends, and PF-235's `O(w^2)` hypercycle-to-axis coordinate defect?
+\[
+\mathcal R_w=K_a^{-1/2}Q_w^{\rm act}K_a^{-1/2},
+\qquad
+K_a^{-1/2}(Q_w^{\rm act})^{1/2}=\mathcal R_w^{1/2}U_w,
+\]
 
-The question is no longer whether the Bessel-four model fractional tail exists. PF-253 settles that subproblem. The live issue is whether the **operator actually consumed by the Robin source map** belongs to the favorable class and whether later geometric perturbations preserve enough of the now-quantified margin.
+in the correct form/spectral realization?
+
+Can `\mathcal R_w` be reduced to or compared with PF-247's parity Jacobi operator strongly enough that PF-253 controls `h(\mathcal R_w)`, and can the high-to-low blocks of `U_w` be bounded strongly enough that some separated exponent `R>1` survives? The target is not a general theorem for arbitrary noncommuting Robin data; it is the actual complete-lift seam after fixed-axis compactification.
 
 ## Why it may matter
 
-PF-243 reduces the remaining high-high shear gate to one-sided separated-Poisson smoothing of any fixed order `R>1`. PF-253 provides substantially more than that for every literal positive fractional edge power: its sharp threshold is `R<2+2\sigma`, and for the square root it is `R<3`.
+PF-243 reduces the remaining high-high shear gate to one-sided separated Robin-Poisson smoothing of any fixed order `R>1`. PF-254 removes a major ambiguity in that gate: Robin normalization itself does not introduce a worse positive edge than a square root. If the actual relative seam inherits the PF-247/PF-253 Jacobi edge and `U_w` is spectrally local enough, the available positive-amplitude budget is the sharp `R<3` square-root window, leaving substantial room for the later `K_a` replacement, Hardy ends, and PF-235 `O(w^2)` geometric defect.
 
-A positive identification of the actual Robin factor could therefore turn the endpoint problem from an unknown critical-Jacobi smoothing question into a finite exponent-budget transport problem. A negative identification would be equally decisive: if the exact factor has a zero-edge singularity not covered by positive fractional powers or otherwise creates a long-range mode tail beyond `R>1`, the fixed-axis functional-calculus route can be closed before spending effort on the later geometric perturbations.
+A negative result is equally decisive. PF-244 already proves that an uncontrolled noncommuting square root can rotate high input into low modes before propagation. PF-254 localizes that risk: if the actual `U_w` has sufficiently large high-to-low blocks, or if `\mathcal R_w` is not Jacobi-controlled at the relevant edge, the present fixed-axis transfer route fails even though PF-253 remains true.
 
 ## Decisive test
 
-Derive the fixed-axis seam-normalized Robin source-to-bulk factor from the PF-238/PF-243 variational construction without replacing the actual complete-lift seam by a commuting proxy. Express the resulting mode-conversion factor directly in terms of `J_\varepsilon` and the corridor weight, and determine its exact leading behavior as `\lambda\downarrow0`.
+Derive `(\mathcal R_w,U_w)` directly from the PF-238/PF-243 actual seam, without replacing it by the commuting matched seam. Work first on the canonical finite spectral/form regularizations where PF-254 is exact, then prove the uniform estimates needed to pass to the actual realization.
 
-If the leading nonlocal term is a positive fractional power `J_\varepsilon^\sigma`, or a finite combination for which PF-253 gives the load-bearing tail, propagate the sharp threshold `R<2+2\sigma` through the remaining fixed-axis factors and verify that some uniform `R>1` survives. Only after this succeeds should the route spend margin on the `T_a` replacement and the width-dependent hypercycle/axis deformation.
+Establish an explicit low-edge comparison between `\mathcal R_w` and `J_\varepsilon` and an off-diagonal/locality estimate for `U_w` sufficient to control
 
-Kill the route if the actual factor has a worse zero-edge singularity that defeats every `R>1` separated estimate, if a required functional-calculus operation reintroduces a non-summable high-to-low tail not controlled by PF-253, or if one of the canonical later perturbations consumes the entire proven margin. Do not reopen the generic first-moment perturbation question: PF-253 bypasses it using the exact ground-state geometry.
+\[
+E_d\,h(\mathcal R_w)U_wK_a^RP_Z
+\]
+
+for some uniform `R>1`. If the Jacobi comparison carries the square-root term, use PF-253's `R<3` window as the exponent budget and quantify what is consumed by all remaining fixed-axis factors before spending margin on geometric perturbations.
+
+Kill the route if the actual relative seam has a different low-edge mechanism that invalidates the PF-253 comparison, if `U_w` creates a non-summable high-to-low tail defeating every `R>1`, or if the required unbounded/form limit loses the finite-regularization estimate. Do not reopen the already settled question of whether literal `J_\varepsilon^{1/2}` has enough separated decay.
 
 ## Evidence boundary
 
-PF-253 is canonical evidence for literal powers `J_\varepsilon^\sigma`, `0<\sigma<1`: it proves the Bessel-four off-diagonal exponent and the sharp separated full-output threshold `R<2+2\sigma`. The earlier `n^{-5/2-2\sigma}` prediction and the square-root threshold `R<3` are no longer heuristic calibrations.
+PF-253 proves the actual parity-Jacobi fractional kernel and the sharp square-root window `R<3`. PF-254 proves, on bounded positive regularizations, that the positive normalized Robin injection is universally `h(\mathcal R)=\mathcal R^{1/2}(I+\mathcal R)^{-1}` followed by a polar transport `U`.
 
-PF-253 does **not** identify the normalized complete-lift Robin factor as `J_\varepsilon^\sigma`, does not prove a general theorem for arbitrary functions of `J_\varepsilon`, and does not control `T_a`, Hardy ends, hypercycle reparameterization, physical `P/H` recoupling, finite-pant completion, neighboring-module extension, or global weak-`S_1` reassembly. No new theorem about zeta zeros or RH is claimed.
+Neither finding proves that the actual complete-lift relative seam `\mathcal R_w` equals or is asymptotically equivalent to `J_\varepsilon`, nor that `U_w` is local, banded, pseudolocal, order zero, or harmless for high-to-low conversion. PF-254 also does not by itself justify the full unbounded form limit. No separated smoothing theorem for the actual PF-243 Poisson map, and no new theorem about zeta zeros or RH, is established yet.
 
 ## Research disposition
 
-Accepted for continued investigation. PF-248--PF-250 established the free half-line window; PF-251 identified the boundary-selected inverse-square threshold branch; PF-252 supplied the exact Bessel-four ground-state geometry; PF-253 now proves the corresponding actual-chain fractional kernel and sharp separated window.
-
-The surviving question is narrower and more structural: **identify the exact Robin functional factor and transport the proven Bessel-four exponent budget to the physical separated Poisson maps.** The clue remains accepted rather than resolved because that operator identification and transport are precisely the parts PF-243 ultimately needs.
+Accepted for continued investigation. The clue has narrowed materially: the positive Robin edge is now known to be square-root in the relative seam variable, so the unresolved work is the **actual relative-seam/Jacobi comparison plus polar-transport locality**. Resolution requires either a uniform `R>1` estimate for that combined factor in the complete-lift realization or an actual-seam obstruction showing that such an estimate cannot hold.
