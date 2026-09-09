@@ -23,9 +23,19 @@ and suppose the true Möbius phase satisfies the diagonal heat-type target
 \tag{1}
 \]
 
-Choose dyadic `X_beta=2^{k_beta}` so that
+Choose the canonical nearest-dyadic saddle
 
 \[
+k_\beta=\operatorname{round}\!\left(\frac1{4\beta\log2}\right),
+\qquad
+X_\beta=2^{k_\beta}.
+\]
+
+Then
+
+\[
+\log X_\beta=\frac1{4\beta}+O(1),
+\qquad
 \beta\log X_\beta\longrightarrow\frac14.
 \tag{2}
 \]
@@ -166,7 +176,7 @@ The location `beta log X=1/4` is also forced naturally by the diagonal term. It 
 X e^{-2\beta(\log X)^2},
 \]
 
-whose exponential type is `1/8`. This is exactly the `eta=1` saddle implicit in the phase diagram of `MC-175`.
+whose exponential type is `1/8`. This is exactly the `eta=1` saddle implicit in the phase diagram of `MC-175`. The nearest-dyadic choice in `(2)` keeps this saddle within a bounded logarithmic offset, which is stronger than the limit-only condition and is needed for the uniform endpoint comparison below.
 
 ## 2. The Gaussian and multiplicative-window decorations disappear at this scale
 
@@ -219,16 +229,19 @@ O\!\left(1+\frac{y}{T_\beta^2}\right)
 
 integer terms.
 
-On the critical shell,
+For the nearest-dyadic shell `(2)`,
 
 \[
-\beta\log\frac{X_\beta}{T_\beta^2}
-\longrightarrow
-\frac14-2\tau\le0
+\frac{X_\beta}{T_\beta^2}
+=
+\exp\!\left(
+\frac{1/4-2\tau}{\beta}+O(1)
+\right)
+=O(1)
 \tag{19}
 \]
 
-because `tau>=1/8`. Equations `(16)`–`(19)` prove `(5)`.
+because `tau>=1/8`; for `tau>1/8` it tends to zero. Since `y<=2X_beta`, equations `(16)`–`(19)` prove `(5)` uniformly, including the endpoint `tau=1/8`.
 
 By the `L^2(dy/y)` triangle inequality, `(5)` implies
 
@@ -245,7 +258,7 @@ J_\beta^{1/2}
 \tag{20}
 \]
 
-Since `tau<1/4`, the exponent `1/4-tau` is positive. Combining `(13)` and `(20)` therefore proves `(6).
+Since `tau<1/4`, the exponent `1/4-tau` is positive. Combining `(13)` and `(20)` therefore proves `(6)`.
 
 ## 3. Heat horizon becomes the ordinary interval-length exponent
 
@@ -295,16 +308,16 @@ This finding does not assert the asymptotic
 \sim\frac6{\pi^2}H
 \]
 
-for integers. It derives only the exponential-order upper bound `(8)` for the variable length `y/T_beta` along a heat-selected sequence of dyadic scales.
+for integers. It derives only the exponential-order upper bound `(8)` for the variable length `y/T_beta` along the canonical nearest-dyadic heat-selected shells `(2)`.
 
 The condition is necessary, not sufficient for `(1)`. Even if the critical shell has diagonal variance, other logarithmic shells can still make `mathcal G_mu` too large. Conversely, failure to prove `(8)` with current methods is not evidence that `(8)` is false.
 
-The restriction `tau>=1/8` is used only in the exact unweighting/additive-window comparison `(5)`, through `X_beta/T_beta^2=O(1)`. The positive-shell bound `(13)` itself exists for every fixed `tau`; below `1/8` an additional argument would be needed to identify it with an ordinary unweighted additive short sum at `O(1)` cost.
+The restriction `tau>=1/8` is used only in the exact unweighting/additive-window comparison `(5)`, through the boundedness in `(19)`. The positive-shell bound `(13)` itself exists for every fixed `tau`; below `1/8` an additional argument would be needed to identify it with an ordinary unweighted additive short sum at `O(1)` cost.
 
 No zero-free hypothesis, analytic continuation of `1/zeta`, random-walk independence, or Good–Churchhouse conjecture is used to derive `(5)`–`(8)`.
 
 ## Consequences for the live frontier
 
-The Gallagher branch can now be screened more sharply. For `1/8<=tau<1/4`, any proof of diagonal Gallagher type must in particular control the signed Möbius second moment on the critical shell `X~e^{1/(4beta)}` at interval length `H~X^{1-4tau}` down to diagonal exponential order.
+The Gallagher branch can now be screened more sharply. For `1/8<=tau<1/4`, any proof of diagonal Gallagher type must in particular control the signed Möbius second moment on the canonical critical shell `X~e^{1/(4beta)}` at interval length `H~X^{1-4tau}` down to diagonal exponential order.
 
 At the strongest currently priced horizon `tau=1/8`, this means a Good–Churchhouse-order upper bound at `H~X^{1/2}`. A proposed mechanism that does not touch this shell, or only supplies logarithmic relative cancellation there, cannot prove the Gallagher target. The next useful question is therefore whether existing Dirichlet-polynomial or correlation machinery can prove any **genuinely polynomial reduction of the critical-shell second moment itself**, rather than another almost-all pointwise estimate that remains exponentially coherent.
