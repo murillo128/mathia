@@ -1,7 +1,7 @@
 ---
 id: CLUE-residual-tail-average-witness-localization
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -73,3 +73,26 @@ Use both existing controls. NB-007's two-shell unit vectors have their sole nonz
 ## Evidence boundary
 
 Sources were inspected through `8d3ded047405f07aa10140dd7baa7c036faa293b`; the destination must check their current claim and review state before use. No witness-localization bound, finite observation-matrix computation, Mellin-bandwidth restriction, or improved approximation rate is established here. The displayed finite implication is a test specification based on NB-007, not a new finding. Failure of a sufficient bound on the larger augmented space does not refute a residual-specific theorem, and failure to prove either bound is not a counterexample. Keep the existing accepted target-aware clue and the settled infinite-defect result unchanged.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/nyman_beurling/findings/NB-008-finite-nyman-residuals-have-an-explicit-lcm-scale-tail-average-witness.md]]
+
+`NB-008` independently reconstructs the canonical harmonic-interval formula and proves the candidate with the explicit choices
+
+\[
+B_N=\operatorname{lcm}(2,3,\ldots,N)+1,
+\qquad
+\kappa_N=\frac1{4B_N^3}.
+\]
+
+It also uses the common-zero shell of the actual best residual to strengthen the finite witness to
+
+\[
+\Gamma_{B_N}(r_N)\ge\frac{1-d_N^2}{8B_N^3}.
+\]
+
+This resolves finite witness existence and location, but only at the lcm scale. Since `log lcm(1,...,N)=N+o(N)`, the guaranteed index budget is exponential and the resulting coefficient is exponentially small. The useful remaining question is therefore narrower: whether the projection normal equations or other source-specific target data force a **sub-lcm** witness at polynomial or otherwise asymptotically informative scale. No new approximation rate follows from the resolved clue.
