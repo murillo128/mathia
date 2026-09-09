@@ -1,32 +1,32 @@
-# MI-008 — Exact recovery can become easier while target transport remains critically unstable
+# MI-008 — Positive local models and exact recovery do not determine stable target transport
 
-**Evidence level:** cross-line exact transport and conditioning boundaries through NB-012, PF-251, AF-230, and XF-148
+**Evidence level:** supported cross-line synthesis from exact target-metric, enrichment, critical-kernel, polar-transport, and transition-conditioning boundaries through AF-233, NB-015, PF-254, and XF-151
 
 ## Core intuition
 
-Exact representation, exact recovery, or favorable free geometry do not determine whether the information needed by the final theorem is transported stably. The effective problem is controlled by the **source class, the quotient retained by the intermediate object, and the quantitative modulus of the final target functional**.
+Exact representation, exact state recovery, or even a sharp positive local smoothing theorem do not determine whether the information needed by the final theorem is transported stably. The effective problem is controlled by the **source class, the quotient retained by the intermediate object, and the quantitative modulus of the final target functional**.
 
-Several current lines now reach positive or saturated intermediate results while making the remaining transport gate sharper. Nyman can force early residual energy but linear normal-equation amplification is asymptotically saturated. Prime Flute has a favorable free weighted window but the exact threshold equation selects a growing zero-edge branch. Xi can identify the full state with arbitrarily local motion, yet transition visibility requires near-antipodal spatial reach for the current matched family. Arithmetic Fidelity can compress labels while retaining the same first-order information burden.
+The newest evidence makes this split constructive rather than merely negative. Prime Flute now has a sharp positive theorem for its actual critical Jacobi chain, but the normalized noncommuting Robin map isolates a separate polar transport that can still destroy the useful spectral orientation. Xi Flow goes the other way: radically enriching the observation class through complete derivative jets and shallow complex continuation still does not fix transition conditioning for the matched packet.
 
 ## Strongest justified principle
 
-Nyman--Beurling separates localization from coercion twice. NB-009--NB-011 bring source-selected residual witnesses and aggregate defect to polynomial depth; NB-012 proves that adding more linear normal equations cannot improve the logarithmic amplification order. The next gain must change norm or nonlinearity, not merely enlarge the linear probe family.
+Arithmetic Fidelity shows that transport cost depends on the declared target geometry. AF-231--AF-233 derive an exact first-order rate-distortion phase from target derivative scaling, and the same observable can have a different phase under relative rather than absolute fidelity. Source recovery and target reproduction are therefore distinct questions even before analytic conditioning enters.
 
-Prime Flute replaces an abstract endpoint risk with an exact critical model. PF-248--PF-250 leave a supercritical separated weighted window, while PF-251 identifies the actual growing inverse-square zero-energy branch. Positive free smoothing is therefore compatible with the desired exponent but does not settle stability of the exact low-energy channel or its physical reassembly.
+Nyman--Beurling separates witness existence from approximation decrement. NB-013 closes positive multichannel amplification beyond the linear ceiling, while NB-014--NB-015 express useful transport as scale-coupled visible defect through the genuinely new section. A fixed-scale visibility statement can already be closure-strength; the actual intermediate modulus is the accumulated visibility/frame budget along a growing path.
 
-Xi Flow makes the recovery/transport split geometric. XF-143--XF-144 give exact full-state recovery from extremely local real data. XF-145--XF-148 show that the transition functional can remain exponentially or superexponentially ill-conditioned through the complete future history unless polynomially normalized observation support reaches an `O(L sqrt(log N/N))` antipodal layer for the maximal-contact pair.
+Prime Flute now supplies a sharp positive local model. PF-252--PF-253 identify Bessel-four scaling of the actual zero-edge chain and prove a square-root separated window up to `R<3`. PF-254 shows why this still does not settle the Robin endpoint: the positive relative amplitude is universally favorable, but all noncommuting input orientation is carried by a polar partial isometry `U`. The missing transport theorem is control of that `U` for the actual source seam and then preservation through physical reassembly.
 
-Arithmetic Fidelity supplies the information-theoretic parallel: zero-error and stochastic localization preserve the same first-order source-information price even when the visible representation is changed.
+Xi Flow makes the recovery/conditioning split geometric. XF-143--XF-148 already gave exact state identification from very small observations while `Lambda_per` remained transition-blind away from an antipodal layer. XF-149--XF-151 extend the same obstruction through finite-order distributions, the complete normalized real jet, the infinite analytic jet, and shallow complex collars. More observables do not help when they occupy the wrong reach/normalization currency.
 
 ## Program consequence
 
-For every bridge, state separately: exact identifiability, source-selected localization, finite coercivity, information cost, and target-functional conditioning. Improvements in the first two are valuable only when a theorem converts them into the latter quantities in the exact destination norm.
+For every bridge, state separately: source sufficiency, exact identifiability, local smoothing/localization, orientation or visibility transport, and conditioning of the final functional. A positive theorem in an intermediate model should be followed immediately by the map that must preserve it; a negative matched control should make that missing map/modulus the next theorem surface.
 
-When a matched control or saturation result isolates the missing modulus, make that modulus the theorem surface rather than enlarging the representation further.
+Do not enlarge representations after the relevant transport coefficient has been isolated. Prove the coefficient, locality, visibility fraction, target distortion, or inverse modulus itself.
 
 ## Counterevidence / boundary
 
-These are category-specific boundaries. Nyman may admit a nonlinear coercive certificate; the prime-flute critical tail may preserve the free weighted window; Xi source restrictions or near-antipodal observables may evade the current matched packet; arithmetic-fidelity may factor through a cheaper target-specific sufficient statistic. None of those exits is ruled out.
+These boundaries are category-specific. Nyman may admit a nonlinear certificate outside the positive normal-equation closure; Prime Flute's actual polar transport may be sufficiently local; Xi may have source restrictions or deep/antipodal observables that evade the matched packet; Arithmetic Fidelity may identify a genuinely sufficient cheap target. None of those exits is ruled out.
 
 ## Epistemic status
 
@@ -34,4 +34,4 @@ These are category-specific boundaries. Nyman may admit a nonlinear coercive cer
 
 ## Falsification criterion
 
-Produce a uniform target theorem inside one of the declared matched/saturated regimes without adding the missing modulus—for example a stronger Nyman distance bound from further linear normal equations alone, a prime-flute endpoint estimate that ignores the exact threshold branch, or a polynomially conditioned Xi transition decoder from support staying outside the XF-148 visibility layer. A valid positive result that adds the missing transport mechanism should narrow this intuition instead.
+Produce a uniform target theorem inside one of the declared saturated/matched regimes without adding the missing transport modulus—for example a stronger Nyman bound from positive channel aggregation alone, a complete Prime-Flute endpoint theorem with uncontrolled polar transport, or a polynomially conditioned Xi transition decoder staying within the XF-151 blind reach regime. A valid result that adds the missing transport mechanism should narrow this intuition instead.

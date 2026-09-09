@@ -2,18 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert early residual witnesses into a coercive finite target certificate beyond saturated linear amplification
+## Prove scale-coupled source visibility in the genuinely new section
 
 **Linked intuition:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`.
 
-NB-001--NB-009 establish the target-information boundary: generic Gram/semigroup data can alias, the infinite harmonic defect is singular off the target line, and periodicity alone locates a witness only at exponential scale, while the actual best residual's `g_2` normal equation forces a polynomially visible witness by `O(d_N^{-2})` depth.
+NB-001--NB-012 separate generic Gram geometry from target-aware source optimality and show that prime normal equations already saturate the available linear Ramanujan amplification. NB-013 closes the obvious multichannel escape: arbitrary positive-semidefinite quadratic mixing of those channels obeys the same dimension-free ceiling.
 
-NB-010--NB-011 strengthen that source-selected signal. Parity cancellation front-loads truncated semigroup energy, and a prime-indexed ensemble of exact normal equations forces defect energy of order `d_N^4 log(1/d_N)` by polynomial depth. NB-012 then identifies the method ceiling: every linear combination of generator normal equations has an exact Ramanujan-sum diagonalization, with target-load efficiency controlled by `sum_{d<=L} Lambda(d)^2/phi(d)`. The prime ensemble of NB-011 already attains the leading logarithmic order; adding composite equations cannot buy another unbounded factor through the same linear/Cauchy--Schwarz interface.
+NB-014--NB-015 identify the remaining transport variable. Visible semigroup defect controls actual enrichment only through the compressed frame on `V_{MN}\ominus V_N`; fixed-depth positive visibility at arbitrarily large probe scales would already be closure-strength, while under a nonzero limiting residual every growing multiplicative section path must satisfy a **summable scale-coupled visibility budget**. The live theorem is to derive source-specific lower bounds on the visibility fraction together with upper bounds on the compressed frame cost whose weighted series violates that budget.
 
-The live theorem must therefore change the conversion mechanism rather than enlarge the linear ensemble. Promising forms are nonlinear use of the projection equations, a target-aware dual certificate in a different norm, or a source-specific upper estimate that converts the already forced finite defect into a new bound for the actual Nyman distance.
+## Do not seek generic frame improvement or fixed-scale visibility
 
-## Separate exact target identification, witness localization, linear defect amplification, and approximation-rate coercivity
+The full enrichment frame has exact norm `M-1` throughout the large lcm-overlap chamber, so a generic improvement of that denominator is impossible there. Likewise, a uniform positive visibility fraction at an unbounded collection of fixed scales is already strong enough to force the Nyman distance to zero.
 
-The full harmonic semigroup identifies the target exactly but is an extended-valued singular selector. Early source-selected witnesses and aggregate linear defect are genuine progress, but NB-012 shows that the current linear amplification channel is asymptotically saturated at its logarithmic order.
-
-A useful asymptotic theorem must improve the **finite quantitative transport from residual structure to target distance**. More linear normal equations, exact character identities, infinite divergence, or witness existence alone are controls unless a new relation converts them into stronger coercivity.
+A viable intermediate theorem must therefore be diagonal and source-coupled: exploit the actual residual, the new quotient section, and a controlled growth path. More normal equations, more positive channels, or full-frame estimates are controls unless they improve the accumulated source-visible transport budget.

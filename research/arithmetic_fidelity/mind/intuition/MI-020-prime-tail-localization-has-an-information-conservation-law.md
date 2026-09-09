@@ -1,31 +1,43 @@
-# MI-020 — Prime-tail localization obeys a first-order information conservation law
+# MI-020 — Prime-tail information cost is set by target geometry, not visible alphabet size
 
-**Evidence level:** exact finite-source zero-error entropy splitting and stochastic rate-distortion asymptotics through AF-230
+**Evidence level:** exact finite-source zero-error entropy splitting and target-relative stochastic rate-distortion asymptotics through AF-233
 
 ## Core intuition
 
-For the prime-tail proximity model, localization is not merely a matter of choosing enough labels. At fixed source law and geometric resolution there is a first-order information bill that survives deterministic and stochastic reformulations.
+Prime-tail localization carries a first-order information bill, but that bill belongs to the **target and distortion actually consumed by the theorem**, not to the source alphabet alone. AF-228--AF-230 show that merely relabeling or randomizing exact/approximate source localization does not remove the leading source-information cost. AF-231--AF-233 show the complementary possibility: a downstream observable can be genuinely cheaper when its geometry contracts source distinctions at the declared accuracy.
 
-The exact zero-error proximity graph makes the split especially transparent: separation information and localization information are complementary parts of the same source entropy. Allowing positive error replaces the combinatorial split by a rate-distortion problem, but the leading localization phase remains unchanged.
+The same arithmetic observable can therefore have different first-order information phases under different fidelity metrics. Power damping creates a free-resolution region for absolute error, while logarithmic/relative error restores the ordinary prime-resolution phase.
 
 ## Strongest justified principle
 
-AF-228 identifies the deterministic localization-entropy phase at resolution `r_Q \asymp Q^{-\beta}`. AF-229 proves exact finite-source entropy conservation for the perfect prime-tail proximity graph: the information needed to distinguish proximity classes plus the information needed to localize within them equals the source entropy. AF-230 shows that stochastic positive-error coding has the same first-order phase, so randomization supplies at most lower-order relief in this model.
+AF-229 gives exact finite-source separation/localization entropy conservation in the perfect prime-tail proximity model, and AF-230 shows that positive-error stochastic coding preserves the same first-order localization phase.
 
-This strengthens the earlier warning that alphabet cardinality is not information. Compression can reduce the number of visible labels while leaving essentially the same source-information burden.
+AF-231 then proves that a monotone target with `|f'(x)|\asymp x^{-a-1}` has absolute-error price `(1-delta) min{(beta-a)_+,1}` at tolerance `Q^{-beta+o(1)}`. AF-232 shows that scale-normalized relative/logarithmic error for the same power-decaying target has the unshifted phase `(1-delta) min{beta,1}`.
+
+AF-233 unifies these examples. Under its monotone `C^1` hypotheses, if
+
+`rho = 1 + lim log|f'(x)|/log x`
+
+and the absolute target tolerance has exponent `beta`, then
+
+`R_Q^f / log pi(Q) -> (1-delta)[rho+beta]_0^1`.
+
+Thus derivative scaling is an exact first-order target-geometry currency in the declared finite prime-source model.
 
 ## Program consequence
 
-A successful arithmetic-fidelity bridge should identify a mathematically justified **target quotient** before paying for localization. If the final theorem only needs a lower-dimensional relational statistic, prove that sufficiency and price its information directly. Otherwise the current proximity model says that coding ingenuity alone cannot remove the leading source-information cost.
+A proposed arithmetic compression should first identify the statistic the final theorem really needs and the error metric in which it needs it. Then price that target directly. A small alphabet, small amplitude, or stochastic encoder is not evidence of cheap information; conversely, full source localization need not be paid when a rigorously sufficient target quotient contracts irrelevant distinctions.
+
+The fertile escape is therefore a **target-specific sufficient statistic with a derived cheaper fidelity phase**, not a representation that merely hides prime identity.
 
 ## Counterevidence / boundary
 
-The conservation law belongs to the established prime-tail proximity/source model and its declared distortion. It is not a universal rate-distortion theorem for every arithmetic representation. A different source law, target-dependent distortion, or nonlocal sufficient statistic can change the phase, but that change must be derived rather than inferred from a smaller encoding.
+AF-228--AF-233 analyze explicit finite prime-source models and declared distortion metrics. They do not prove that RH factors through any monotone scalar target, nor that every arithmetic target admits a derivative-exponent phase law. Exact recovery of an injective target still retains full prime identity even when approximate absolute reproduction is cheap.
 
 ## Epistemic status
 
-**Exact information-budget boundary for the current proximity/localization model; no claim that RH requires full prime-tail reconstruction.**
+**Exact information-budget and target-geometry boundary for the current source models; no claim that the RH target has been compressed.**
 
 ## Falsification criterion
 
-Construct, within the AF-228--AF-230 source and distortion hypotheses, a deterministic or stochastic scheme with strictly smaller first-order localization information than the established phase. A positive escape should instead prove that the RH-facing target factors through a different sufficient statistic with a lower derived information rate.
+Within the hypotheses of AF-233, produce a target channel with a different first-order information phase, or within AF-230 beat the established localization phase by relabeling/randomization alone. A positive continuation should instead prove that an RH-facing target factors through a lower-information statistic and derive its actual distortion price.

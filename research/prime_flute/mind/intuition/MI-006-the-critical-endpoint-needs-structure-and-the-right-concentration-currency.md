@@ -1,31 +1,43 @@
-# MI-006 — The critical endpoint needs the exact threshold branch and the right concentration currency
+# MI-006 — The critical endpoint has a Bessel-four smoothing window; the remaining gate is polar transport in the actual seam
 
-**Evidence level:** exact Jacobi reduction, inverse-square edge asymptotics, weighted free-window bounds, and exact zero-edge branch selection through PF-251
+**Evidence level:** exact Jacobi reduction, zero-edge branch, ground-state transform, sharp actual-chain fractional kernels, and finite/Galerkin noncommutative Robin factorization through PF-254
 
 ## Core intuition
 
-The prime-flute endpoint cannot be settled by generic half-line smoothing alone. The threshold is controlled by a specific inverse-square Jacobi operator, and the relevant low-energy object must be derived from its **actual zero-edge branch** before weighted decay is translated into the physical concentration norm.
+The prime-flute endpoint is controlled by a specific inverse-square Jacobi edge, not by generic half-line perturbation theory. That local model is now substantially resolved. The actual positive zero mode generates a Bessel-four weighted chain, and its fractional powers have a sharp separated smoothing window that is stronger than the earlier free-chain calibration.
 
-The latest evidence corrects an important heuristic. The free/fractional edge analysis leaves a favorable separated weighted window, but PF-251 shows that the exact zero-energy equation selects the growing inverse-square Jacobi branch rather than a square-root-decaying solution. Any critical resolvent or kernel estimate must therefore be organized around that growing threshold state.
+The remaining local obstruction is no longer the positive square-root edge itself. For a noncommuting Robin seam, normalization separates a universal favorable positive amplitude from a polar transport operator that can rotate high input into cheap modes. **Orientation transport, not scalar amplitude, is now the load-bearing variable.**
 
 ## Strongest justified principle
 
-PF-247 decomposes the critical seam into parity Jacobi chains. PF-248--PF-250 identify the inverse-square tail and show that fractional edge powers retain a supercritical weighted window in the separated free model. This proves that the desired exponent is not automatically forbidden by the half-line geometry.
+PF-247--PF-251 identify the parity Jacobi chains and the actual growing inverse-square zero-energy branch. PF-252 uses that exact positive branch as a ground-state transform: the resulting weighted path has mass and conductance of order `j^3` and diffusive limit equal to the radial four-dimensional Laplacian scaled by `1/4`.
 
-PF-251 solves the exact zero-edge recurrence and identifies the load-bearing branch. The correct next object is the low-energy Green/Jost/kernel behavior relative to that branch, followed by stability under the specific inverse-square tail and finally the source-to-physical reassembly. A decay law belonging to the wrong threshold solution is not evidence for the endpoint.
+PF-253 proves the corresponding actual-chain fractional kernel. In the separated cone,
+
+`|<e_i,J^sigma e_j>| \asymp (i+1)^(3/2)(j+1)^(-5/2-2sigma)`,
+
+and the weighted separated window is sharply `R<2+2sigma`. In particular, the square-root channel admits `R<3`, so the inverse-square critical edge does not destroy the supercritical margin needed by the route.
+
+PF-254 gives the exact noncommutative algebraic split on finite/Galerkin regularizations. With relative seam `R=K^{-1/2}QK^{-1/2}`,
+
+`(K+Q)^(-1)Q^(1/2) = K^(-1/2) h(R) U`,
+
+where `h(lambda)=sqrt(lambda)/(1+lambda)` and `U` is the polar partial isometry of `K^{-1/2}Q^{1/2}`. The positive amplitude therefore always has a square-root edge; all unsmoothed input-orientation information is isolated in `U`.
 
 ## Program consequence
 
-Prove the required weighted low-energy estimate in the exact critical Jacobi model and express it in the same norm/concentration currency consumed by the prime-flute theorem. Only then test whether the source coupling and global reconstruction preserve the gain.
+The next theorem should identify the actual complete-lift relative seam with enough precision to import the PF-253 Bessel-four functional calculus and then prove that its polar transport `U` is sufficiently local, banded, weighted-bounded, or otherwise controlled in the `K_a`/corridor spectral basis. Only that result can convert the positive square-root amplitude into the PF-243 separated Robin-Poisson estimate.
+
+Afterward the established margin must still survive physical recoupling and global reassembly. A fixed-axis kernel theorem is not the final concentration theorem.
 
 ## Counterevidence / boundary
 
-The growing zero-energy branch does not by itself rule out smoothing at positive/fractional energy; PF-250 gives a positive free-model window. Conversely, the free window does not prove stability for the critical perturbation or the full physical observable.
+PF-253 is a fixed-axis fractional-power theorem, not a theorem for the complete normalized Robin source map. PF-254 is exact for bounded positive operators and finite/Galerkin regularizations; it deliberately does not claim the required full unbounded passage. A badly delocalized polar transport can still reproduce the PF-244 failure mode despite favorable singular values/output Gram geometry.
 
 ## Epistemic status
 
-**Exact threshold branch and positive separated-window controls are established; the critical low-energy stability and global reassembly remain open.**
+**Exact Bessel-four threshold model and sharp positive fractional smoothing are established; the noncommutative polar transport and physical/global reassembly remain open.**
 
 ## Falsification criterion
 
-Show that the exact PF-251 zero-edge recurrence selects the previously conjectured decaying branch, or prove the required physical endpoint estimate without controlling the actual critical threshold channel. A valid positive continuation should derive the low-energy estimate around the growing branch and transport it to the final norm.
+Refute the PF-252 ground-state/Bessel-four scaling, violate the PF-253 sharp separated window, or show that PF-254's polar factorization does not isolate the noncommuting input orientation. A valid continuation should prove source-specific control of the actual polar transport and carry the resulting margin into the final Robin/physical norm.

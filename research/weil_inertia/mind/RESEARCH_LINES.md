@@ -2,22 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert the fixed-band linear screen tariff into a source-constrained count theorem
+## Convert localized weighted source mass into an actual zero-count/source contradiction
 
 **Linked intuition:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-183--WI-217 reduce the count-saturating bow to a distinguished source-fixed von-Mangoldt covariance problem and progressively price finite, growing, and fixed-multiplicative-width screens. WI-218 closes the former logarithmic gap inside the free exponential-screen model: demanding the same screen remain subdiagonal across a fixed power-scale band forces positive-density channel complexity `Omega(M)`.
+WI-183--WI-220 show that fixed-band bow screening costs `Omega(M)` free channels, that this rank tariff is sharp in the relaxed class, and that support remoteness alone does not restore coercivity. WI-221--WI-223 now recover a genuine source price from remoteness. Super-bow remote cancellation forces superpolynomial weighted coefficient mass, and compact Gevrey/Denjoy--Carleman detectors localize any dyadic zero screen carrying order-`M` weighted source progressively down to polylogarithmic and iterated-log physical distance from the bow.
 
-WI-219 shows that this rank tariff is order-sharp analytically. A symmetry-respecting `Theta(M)` co-localized companion screen with the same bounded normalized depth can flatten the bow across the fixed band; it is rejected only after restoring the local zero-count/source constraint. WI-220 closes the qualitative remote-support escape: on any proper fixed band, arbitrarily remote Fourier tails remain complete in the relaxed arbitrary-coefficient screen class, so support separation alone has no coercive content.
+The fixed compact-detector architecture has a sharp uncertainty floor: a nonzero compact detector cannot have true exponential Fourier decay, so total-mass tail suppression cannot by itself reach `O(M)` physical radius, let alone the original `M/log T` bow scale. The live theorem must therefore convert the already localized radial-weighted source into an incompatible **local zero-count/multiplicity/radial budget**, or change architecture through `T`-dependent/coupled observables or the full signed source covariance.
 
-The live theorem is therefore no longer a larger free rank lower bound. It must convert screen complexity into **admissible zeta-zero/source complexity** by retaining term count together with coefficient norm, positive/integral multiplicity, functional-equation coupling, radial/source cost, local zero count, or the full signed `Lambda-Lambda^sharp` covariance.
+## Price rank, coefficient mass, radial weight, support reach, and zero count separately
 
-## Price observation scale, screen rank, coefficient cost, radial depth, support, and zero count separately
+Free rank, remote completeness, weighted source localization, and raw zero count are distinct currencies. WI-221 closes the cheapest super-bow remote escape, but WI-222--WI-223 still conclude weighted source mass rather than an impossible number of actual zeros.
 
-A fixed finite screen can fit selected samples yet fail on a natural continuum slab; a fixed band forces `Omega(M)` channels, but `Theta(M)` is attainable in the free linear class. Remote support does not restore localization when arbitrary coefficients and channel count are allowed.
-
-A useful theorem should state which additional **actual-source** currency rules out the relaxed screens. Channel rank, pair count, coefficient norm, physical depth, support distance, and local zero density are distinct and cannot be silently interchanged.
+A useful theorem should state exactly which source constraint turns weighted mass in the shrinking neighborhood into a count/coefficient contradiction. Repeating fixed compact-detector decay estimates past the Denjoy--Carleman/Ingham boundary is now a control.
 
 ## Retain the audited reservoir boundaries as controls
 
-The fixed-physical-depth exponent-pair frontier `3943/12011`, ordinary quarter-floor, normalized-depth screening frontier `27/82`, and subdiagonal isolated-residue scale remain distinct. The positive-density analytic screen tariff does not itself improve those boundaries or imply a positive-density off-line zero population.
+The fixed-physical-depth and normalized-depth exponent frontiers remain distinct from the screen-localization results. The newer source tariffs do not by themselves imply a positive-density off-line zero population or improve those reservoir bounds.

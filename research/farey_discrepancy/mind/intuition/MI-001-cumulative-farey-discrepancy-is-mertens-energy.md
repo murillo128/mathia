@@ -1,35 +1,35 @@
-# MI-001 — Cumulative Farey discrepancy is Mertens energy, with a narrow information boundary between weak constraints and source reconstruction
+# MI-001 — Cumulative Farey discrepancy is Mertens energy, and useful source coherence must be compressed but quantitatively persistent
 
-**Evidence level:** exact divisor/Mertens identities and sharp source-relaxation boundaries through FD-009
+**Evidence level:** exact divisor/Mertens identities, sharp source-relaxation boundaries, local-order controls, and coherent multi-horizon saturation gaps through FD-015
 
 ## Core intuition
 
-Once Farey discrepancy is accumulated by denominator shell, its linear Fourier data and natural quadratic Franel energy are exact transforms of Mertens data. The richer-looking harmonic/GCD geometry therefore does not create a new cancellation source by itself.
+Once Farey discrepancy is accumulated by denominator shell, its linear Fourier data and natural quadratic Franel energy are exact transforms of Mertens data. Richer harmonic/GCD geometry therefore does not create cancellation by itself. The live information boundary is narrower: weak summaries can leave the unrestricted GCD extremizers essentially intact, while a complete consecutive divisor-horizon hierarchy simply reconstructs Möbius.
 
-The newer findings sharpen what “use more Möbius structure” can mean. Several strong but finite-depth source constraints remain asymptotically noncoercive, while the complete consecutive divisor-horizon hierarchy is not an intermediate constraint at all: it recovers the Möbius prefix exactly. A useful cumulative theorem must live between those two extremes.
+The newest evidence shows that **coherence across horizons can genuinely restrict the extremizers without reconstructing the whole source**. The effect is real but, in the first squarefree-dilation implementation, only constant-level and quantitatively weakens as more multiplicative breadth is demanded.
 
 ## Strongest justified principle
 
-FD-001 makes every cumulative Fourier mode a finite divisor transform of Mertens values, FD-002 identifies Franel discrepancy with a weighted Mertens energy, and FD-003 factors that energy through the square-GCD form with an asymptotically sharp unrestricted scalar extraction constant.
+FD-001--FD-003 identify the cumulative Fourier/Franel quantities with Mertens data and the square-GCD form. FD-004--FD-008 show that several exact arithmetic restrictions remain asymptotically noncoercive at one horizon, while FD-009 proves that the full consecutive divisor-horizon hierarchy is triangular source recovery.
 
-FD-004--FD-006 show that exact floor blocks, the fixed-horizon divisor identity, and every fixed finite Jordan-moment hierarchy do not improve that leading constant. FD-007 adds exact squarefree support and unit ternary increments with free squarefree signs and still obtains the same asymptotic constant. FD-008 imposes the squarefree/sign restrictions together with one exact divisor-horizon identity and again leaves the leading constant unchanged.
+FD-012 extends the negative side: even a growing logarithmic-depth Jordan-moment hierarchy can leave the sharp dual constant unchanged. FD-013 independently closes first-order local ordering as a universal bridge: matched reflection, gap multiset, and adjacent transition counts can coexist with an unbounded discrepancy-energy separation.
 
-FD-009 gives the complementary information boundary. For a general increment sequence, the consecutive horizon values `H_a(m)` have discrete derivative `a*1`; Möbius inversion recovers `a_n` triangularly. Thus `H_a(m)=1` for every `m<=K` is exactly equivalent to `a_n=mu(n)` for every `n<=K`.
+FD-014 gives the complementary positive mechanism. Coherence of one cumulative sequence between `N` and `2N` is incompatible with simultaneous approach to the one-horizon equality ray, producing a uniform strict gap below `zeta(2)` at one of the two horizons. FD-015 extends this to squarefree dilations and shows that near-saturating horizons form a Sperner antichain. But the common explicit gap decays like a negative power of the total squarefree dilation, so this direct breadth amplification does not produce an exponent gain.
 
 ## Program consequence
 
-A cumulative continuation should seek a **compressed growing-depth relation**: enough correlated multiplicative/divisor information to restrict the GCD extremizers, but not a consecutive hierarchy that simply reveals the source. Sparse horizons, nonconsecutive summaries, nonlinear multiplicativity constraints, or another noninvertible growing statistic are legitimate questions only if their coercive effect is proved.
+The cumulative route should now seek a **compressed multi-horizon coherence law with a nonvanishing quantitative payoff**: enough coupled source information to keep extremizers away from the free equality geometry across scales, but not enough to invert the Möbius prefix. Sparse multiplicative horizons, nonlinear compatibility, or another noninvertible growing statistic are valuable only if the resulting gap accumulates at the destination Franel/Mertens scale.
 
-The separate escape is pre-cumulative Farey order/refinement information, which can carry chronology discarded by the Mertens shell transform.
+The separate pre-cumulative route must use order deeper than first-order gap transitions and demonstrate a coercive transport into cumulative discrepancy.
 
 ## Counterevidence / boundary
 
-FD-004--FD-008 do not classify every growing family of constraints, and FD-009 does not say that every sparse or compressed hierarchy reconstructs Möbius. Nor do these results rule out useful ordered Farey observables before shell collapse.
+FD-014--FD-015 do not improve the RH-critical exponent. Their gap is constant-level and the explicit common threshold deteriorates with breadth. FD-013 concerns matched generic rational grids, not every Farey-specific ancestry statistic. FD-009 does not imply that every sparse growing hierarchy reconstructs Möbius.
 
 ## Epistemic status
 
-**Exact information-boundary synthesis; no improved Mertens bound or RH consequence is established.**
+**Exact information-boundary synthesis with a genuine but currently too-weak multi-horizon coherence gain; no improved Mertens exponent or RH consequence is established.**
 
 ## Falsification criterion
 
-Exhibit a fixed-depth source restriction within the tested classes that creates a persistent improvement of the FD-003 scalar constant, or a non-Möbius prefix satisfying the full consecutive horizon identities through the same cutoff. A positive continuation should instead prove coercivity from a noninvertible growing source relation or from pre-cumulative order.
+Exhibit simultaneous near-saturation at coherent horizons contradicting FD-014/FD-015, or a first-order matched gap statistic that universally controls cumulative energy despite FD-013. A positive continuation should prove a compressed coherent relation whose accumulated non-saturation remains quantitatively significant without becoming source reconstruction.

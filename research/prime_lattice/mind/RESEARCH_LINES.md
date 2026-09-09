@@ -2,20 +2,18 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Require a mixed-prime relation that survives principal-channel extraction
+## Couple distinct rational-prime rows and keep that relation in the principal zeta channel
 
 **Linked intuitions:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`, `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`, `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, `MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution`, `MI-013-kms-offdiagonal-freedom-is-boundary-data-not-prime-coupling`, `MI-014-prime-exchangeability-erases-normal-arithmetic-equilibrium`, `MI-015-reciprocity-family-coupling-is-not-principal-zero-selection`.
 
-PL-230--PL-242 close ordinary affine KMS scalarization, generic exchangeability, local-gap spectralization, and the first quadratic-reciprocity completion. Quadratic reciprocity is genuine source-forced mixed-prime structure, but the classical family completion opens quadratic Dirichlet `L`-functions and the clean principal residue recovers zeta only after projecting to the trivial squarefree kernel.
+PL-240--PL-245 show that genuine reciprocity-family coupling is lost by the clean principal zeta residue, while polar/higher-rank affine channels and free null-root corrections remain scalar or selectable. PL-246 sharpens the affine boundary: an explicit extra symmetry canonically selects only a scalar Pochhammer correction, while the zero-bearing function-field block is centered using Weil purity as input.
 
-PL-243--PL-244 show that adding polar faces or finite higher-rank Weyl-group residue structure does not repair the loss: the tested polar channels scalarize and the surviving lower-rank residue remains separable into classical zeta-type factors. PL-245 closes the obvious affine-symmetry loophole. Imaginary-root corrections are one-variable freedom along the Weyl-invariant null-root coordinate until additional local-global axioms or extra functional equations select them; the mere existence of an affine correction is not mixed-variable rigidity.
+PL-247--PL-248 refine the apparent indefinite Kac--Moody escape. Indefinite type does give genuinely multivariable imaginary-root support, but that multivariance lives **inside one fixed rational-prime row**, among root/Dirichlet-variable columns. It is not by itself a coupling between distinct rational primes. Established cross-prime interaction instead enters through twisted multiplicativity/residue-symbol reciprocity—the mechanism already known to disappear in the straightforward principal Riemann extraction. The known canonical function-field selector adds local-to-global Verdier duality and cohomological purity beyond Weyl invariance.
 
-The live relation must therefore survive **the exact operation that exposes the principal Riemann divisor**. A plausible continuation needs a source-forced selector for the affine/null-root freedom or a non-polar/operator-valued construction acting before scalarization, followed by an independent positivity, self-adjointness, trace, determinant, or coupling law that constrains the same divisor.
+The live construction must therefore satisfy three gates simultaneously: source-derived coupling among distinct rational-prime rows, canonical global selection not inserted by hand, and survival of that relation in the same principal channel where an independently proved positivity, self-adjointness, purity, trace, or rigidity principle can localize the Riemann divisor.
 
-## Treat polar residues, affine null-root freedom, and principal scalarization as controls
+## Treat local Kac--Moody multivariance, affine correction factors, and imported purity as controls
 
-More rank, another polar face, or an affine correction factor is insufficient when the decisive readout remains a separable or freely selected one-variable scalar. A candidate must identify what forces the surviving factor and prove that the forcing relation remains visible in the target channel rather than merely allowing a complicated divisor to be inserted.
+Higher affine rank does not make the standard correction multivariable; indefinite imaginary support is local row complexity rather than mixed-rational-prime geometry; and a geometric selector whose dominance axiom is already cohomological purity does not derive ordinary critical-line localization by analogy.
 
-## Keep Nyman target sensitivity separate from programmable model-space spectralization
-
-Target sensitivity is not target selection. Any prime-lattice model-space, quotient, residue, affine selector, or twisted completion must derive its inner/quotient/coupling data from the source before inspecting a desired zero or sign, and must show that the source relation survives the final projection.
+A viable continuation must make the rational-prime row coupling and global selector part of one number-field/source-derived object. Otherwise additional root-system dimension is a programmable local container rather than a source-forced zero-selection mechanism.

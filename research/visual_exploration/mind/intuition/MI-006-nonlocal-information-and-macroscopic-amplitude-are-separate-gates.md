@@ -1,33 +1,35 @@
-# MI-006 — Nonlocal information, macroscopic amplitude, and source specificity are separate gates
+# MI-006 — Nonlocal information, macroscopic amplitude, and source specificity remain separate; the support-edge null now has exact deterministic components
 
-**Evidence level:** exact fixed-block factorization, growing-lag homometric witnesses, centered amplitude calibration, and independent-null variance through VIS-114
+**Evidence level:** exact fixed-block information boundaries, finite-CUE calibration, fresh-panel falsification, and support-edge weight/window/density controls through VIS-126
 
 ## Core intuition
 
-Escaping a finite-memory quotient is an information statement, not an effect-size or source-specificity theorem. The three questions must be separated: does the observable retain information lost by the lower quotient; does its normalized signal survive at scale; and is that signal exceptional relative to the correct source-matched null?
+Escaping a finite-memory quotient is an information statement, not an effect-size or source-specificity theorem. Visual Exploration now has exact examples where nonlocal information and macroscopic normalized amplitude coexist, but the first predeclared zeta panel failed fresh-source confirmation. The correct lesson is not to broaden the failed statistic post hoc; it is to make the source-specific null progressively exact before interpreting a residual.
 
-The later synthetic constructions show that the amplitude gate is not inherently negative. Growing-lag third-order information can evade every fixed block inventory, preserve complete two-point homometry, and still have a nonvanishing centered empirical contrast. What remains unproved is the arithmetic gate: whether a predeclared zeta observable shows a reproducible residual beyond CUE or another appropriate conditioned control.
+At the support edge, several effects live on precisely the scale that looks visually interesting. Montgomery's pair weight and a hard source window are deterministic Fourier smoothers, while smooth density drift admits a controlled mesoscopic regime and need not dominate the desired `1/log T` scale.
 
 ## Strongest justified principle
 
-VIS-099--VIS-110 show that exact order-`r` Markov type determines every bounded-lag higher-order correlation once the required block length is included. Increasing correlation order at fixed lag does not create global chronology.
+VIS-099--VIS-114 separate local information, growing-lag nonlocality, normalized amplitude, and elementary fluctuation scale. VIS-121 gives exact finite-window CUE calibration for the frozen collision-free triad panel; VIS-122 executes the untouched confirmation test and fails the predeclared gate. VIS-123 identifies the support edge as another place where finite-size/random-matrix structure must be modeled before arithmetic interpretation.
 
-VIS-111 constructs an exact growing-lag third-order separation inside one fixed-local type, proving a genuine information-category exit. VIS-112 then shows that its sparse witness has normalized contrast `2/N`, so non-factorization alone does not force macroscopic amplitude.
+VIS-124 gives an exact transform for Montgomery's pair weight. In unfolded coordinates its Fourier kernel is the unit-mass Laplace density `P_L(r)=L exp(-2L|r|)`, so the weighted null is a convolution rather than pointwise CUE evaluation. Applied to the universal ramp, this alone creates a negative edge rounding of height `1/(4L)` and width `O(1/L)`.
 
-VIS-113 proves the complementary existence theorem. For every `r`, two length-`29r` binary words have the same complete length-`(r+1)` block inventory and the same complete aperiodic autocorrelation/Fourier magnitude, yet their third-order average at lag fractions `2/29` and `8/29` differs by exactly `1/21`. VIS-114 shows that after centering by the common mean the contrast remains the nonzero constant `264/5887`.
+VIS-125 adds source-window geometry. A hard window contributes `Q_M(r)=M sinc^2(Mr)` and hence a second convolution. Its ramp-edge deficit is `(log M)/(2 pi^2 M)+O(1/M)`, while a taper with finite spectral first moment removes the logarithmic enhancement. VIS-126 shows that smooth Riemann--von Mangoldt density drift can simultaneously be made negligible: a broad mesoscopic corridor satisfies both the window and density-linearization gates.
 
-VIS-114 also supplies an exact elementary fluctuation calibration: for independent centered coordinates, a third-order lag average has variance `v^3/(N-b)`, and distinct lag-pair averages are exactly uncorrelated. The resulting `N^{-1/2}` scale is a sanity-check null, not a replacement for the finite-size CUE or source-conditioned covariance required by the actual zeta experiment.
+## Program consequence
+
+Any new support-edge experiment should freeze the statistic only after composing the pair-weight, window/taper, finite-size CUE, unfolding, diagonal, and covariance conventions into one matched null. Then test on untouched zero windows. A residual on the `1/log T` scale is interesting only after the universal Laplace rounding and window leakage are subtracted at that same scale.
+
+The next mathematical gain would be an exact finite-CUE/local-window transfer or covariance theorem, or a predeclared source residual surviving that transfer. Neither is supplied by the current deterministic controls.
 
 ## Counterevidence / boundary
 
-The constant-amplitude witnesses are synthetic. They do not select the lag fractions, quantization, centering, or statistic for zeta, and they do not imply that CUE or another non-arithmetic source has the independent-null variance. Exact fixed symbol counts, unfolding, eigenvalue repulsion, Markov conditioning, and sample centering can all change the null covariance.
-
-Conversely, a source residual smaller than `O(1)` need not be negligible if its matched null shrinks faster. Effect size must always be interpreted in the declared normalized null currency.
+VIS-124--VIS-126 do not establish the correct effective matrix size, finite-arc CUE law, nonstationary zero-window covariance, or an arithmetic edge term. The mesoscopic corridor is a feasibility result, not a detection. The failed VIS-122 panel remains failed and should not be revived by expanding its statistic after inspection.
 
 ## Epistemic status
 
-**Exact separation of information admission, normalized amplitude, and source specificity; the first two can coexist positively in controlled witnesses, while arithmetic source specificity remains open.**
+**Exact separation of information, amplitude, and source specificity with an increasingly exact deterministic support-edge null; no arithmetic residual is established.**
 
 ## Falsification criterion
 
-Refute the VIS-113 homometry/block-type identities or its constant third-order separation, refute the VIS-114 centered contrast or independent-null variance, or show that the proposed source statistic factors through the lower-information quotient after all. A source-positive continuation should predeclare the statistic and matched null, derive or estimate its finite-size covariance, and replicate a zeta-specific residual on untouched material.
+Show that the VIS-124/125 convolution identities do not match the declared weighted/windowed statistic, or that smooth density drift necessarily exceeds the VIS-126 bound in its stated regime. A source-positive continuation should predeclare the complete matched null and reproduce a residual on untouched material.

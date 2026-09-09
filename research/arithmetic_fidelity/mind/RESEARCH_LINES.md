@@ -6,18 +6,18 @@ This file holds the current mathematical questions suggested by the durable arit
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
-AF-215--AF-217 show that genuine prime support can sustain arbitrary Prouhet cancellation, exact `m`-moment cancellation forces at least `m` ordered sign changes, and the full Euler-log kernel is not totally nonnegative of all orders. AF-218--AF-220 supply the positive finite-order side: the kernel is globally strictly sign-regular through order three, and curvature plus coordinate separation certifies any prescribed finite order on compact interaction windows.
+AF-215--AF-220 show that exact moment cancellation forces ordered sign complexity while the Euler-log kernel is only finitely sign-regular on controlled windows. The remaining theorem is quantitative: relate the source-forced sign budget to an observation window whose separation/curvature modulus survives the shrinking prime-tail mesh at the resolution consumed by the target.
 
-The live theorem remains quantitative and scale-sensitive. Relate the source-forced sign budget to an observation window whose separation/curvature modulus survives the vanishing prime-tail mesh and the inverse problem at the scale required by the target.
-
-## Price translation repair in resolution, alphabet size, entropy, conditioning, or fidelity
+## Price the actual target metric before calling a representation compressed
 
 **Linked intuitions:** `MI-019-faithful-translation-lifts-are-affine`, `MI-020-prime-tail-localization-has-an-information-conservation-law`.
 
-AF-221--AF-227 close scalar, vector-valued, stable approximate, bounded-mark, and naive growing-mark escapes while separating alphabet cardinality from entropy. AF-228--AF-230 now price localization itself. In the perfect prime-tail proximity model, zero-error separation and localization split the source entropy exactly, and positive-error stochastic coding has the same first-order rate-distortion phase.
+AF-221--AF-230 show that translation/localization repair carries a real information bill even when visible alphabets are small or stochastic. AF-231--AF-233 sharpen that boundary: the first-order price can drop when the downstream observable contracts the prime tail, and for a monotone target with derivative exponent `rho` the absolute-error phase is exactly controlled by `rho` plus the requested accuracy exponent. The same observable can return to the unshifted source-localization phase under a relative/logarithmic metric.
 
-For `r_Q \asymp Q^{-\beta}`, the established source model gives normalized localization information `(1-delta) min{beta,1}` at first order. Randomization may change lower-order terms but does not remove this leading bill. A useful repair must therefore state which resource is genuinely reduced: alphabet count, information rate, decoder conditioning, representation error, source resolution, or a target-specific sufficient statistic.
+The live theorem is therefore not another coding trick. Identify an RH-facing statistic or quotient that is provably sufficient for the final argument, declare its fidelity metric, and derive that target's information price. A cheaper target-relative phase is useful only if the theorem really consumes that target rather than exact prime identity in disguise.
 
-## Separate combinatorial compression from target-relevant information compression
+## Separate target sufficiency from target contraction
 
-A small visible alphabet is not evidence of a cheap arithmetic channel, and stochastic encoding is not automatically an information escape. The live possibility is a mathematically justified quotient: prove that the RH-facing target depends only on a lower-information relational statistic, then price that statistic directly. Without such a sufficiency theorem, the current proximity/localization phase laws are matched controls against coding-only claims.
+A contracting scalar observable can be cheap at coarse absolute accuracy while remaining injective at exact accuracy. Conversely, relative normalization can erase the apparent damping advantage. AF-231--AF-233 are controls against inferring arithmetic compression from amplitude decay alone.
+
+A successful continuation must establish both sides: a lower-information target geometry and a source-to-target sufficiency theorem strong enough for the intended arithmetic conclusion.

@@ -2,20 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Exploit CA self-tangent selection inside the mixed prime race, rather than bound the race globally
+## Control the logarithmic-depth CA selector inside the mixed prime race
 
 **Linked intuition:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`.
 
-RE-001--RE-009 reduce sufficiently large clean Robin counterexample peaks to source-selected regular self-tangent CA states and then to the endpoint-subtracted Mertens remainder, whose normalized form is the classical mixed reciprocal/standard prime-race coordinate. The prior-art boundary remains decisive: a global one-sided bound for that race is already RH-equivalent.
+RE-001--RE-012 reduce clean hypothetical Robin counterexample peaks to CA-selected boundary primes and a classical mixed prime-race excursion, while showing that the local clean mixed-race jet supplies no independent degree of freedom once the selector and one value are fixed. RE-013 sharpens the source side: the selector itself cannot be resolved at its natural logarithmic scale from any fixed finite collection of prime-power layers.
 
-RE-010--RE-012 now close the local mixed-race jet more sharply. The clean self-tangent selector fixes a sharp peak-height threshold, forces a value--slope relation, and determines the clean prime-gap mixed-race profile from one value together with the selector. Additional local derivatives therefore do not supply an independent arithmetic degree of freedom in this chamber.
+The active layer depth grows like `log_2 X+log_2 log X`; beyond the ordinary `log_2 X` frontier the remaining selector mass becomes an exact quantized `2`-adic tail. A bounded-error selector therefore needs nearly the full active depth, and sub-`log 2` error forces exact recovery of that tail.
 
-The live theorem must use the **extra nonlocal CA selection of the boundary primes/events**: control which primes are selected, the spacing/concentration of self-tangent or half-mass opportunities, or another source relation governing how the global mixed race is sampled. More local jet data is now a control.
+The live theorem must exploit this **hierarchical nonlocal source selection** rather than add another local derivative or fixed-layer correction. A useful result could control the selected boundary-prime/event subsequence directly, derive a compressed statistic of the growing layer tower that remains sufficient for the mixed-race test, or show that counterexample selection must concentrate in the exceptional higher-layer/tied chamber.
 
-## Do not replace source selection by global workload or global prime-race bounds
+## Do not replace source selection by global race bounds or fixed-depth layer truncation
 
-Regular self-tangent local peaks can lie below the Robin barrier while increasing, so global peak monotonicity is false. Likewise, globally controlling the normalized mixed prime-race coordinate strongly enough in one direction already settles RH. The useful intermediate theorem must be conditional on the exact extremal selector and genuinely weaker than a global race bound.
+A global one-sided bound on the mixed prime-race coordinate is already RH-equivalent, while fixed-depth prime-power information cannot locate the clean selector at the resolution the counterexample condition consumes. The useful intermediate theorem must therefore be conditional on the exact CA selection law and genuinely weaker than global control.
 
-## Separate clean first-layer peaks from the sparse exceptional event process
-
-Prime-gap and mixed-race reductions apply only after proving that the relevant boundaries are clean first-layer events. A complete continuation must either control the selected mixed-race coordinate/event gaps in that chamber or establish a source-selection theorem ruling out concentration on higher prime-power/tied transitions. RE-012 closes further local differential refinement; it does not remove this exceptional-event alternative.
+Clean first-layer arguments also remain conditional on proving that the relevant events stay in that chamber. The logarithmic-depth selector boundary strengthens, rather than removes, the need to separate clean and exceptional event processes.
