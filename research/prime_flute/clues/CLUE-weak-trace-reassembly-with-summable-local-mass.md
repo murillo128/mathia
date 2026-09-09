@@ -6,91 +6,37 @@ origin: research-watch
 target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-112-first-relative-resolvent-is-not-trace-class.md
-  - research/prime_flute/findings/PF-183-disjoint-thick-collar-slabs-remove-multiplicity-from-schatten-splice-budget.md
   - research/prime_flute/findings/PF-204-native-two-hilbert-factorization-removes-rough-resolvent.md
-  - research/prime_flute/findings/PF-212-thin-fermi-boundary-frequency-split-closes-local-high-mode-gate.md
   - research/prime_flute/findings/PF-220-coefficient-adjacent-low-recoupling-is-weak-trace-without-schur-locality.md
   - research/prime_flute/findings/PF-221-coefficient-weight-transfer-reduces-to-a-reciprocal-prime-schur-commutator.md
   - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
-  - research/prime_flute/findings/PF-223-qualitative-cut-smoothing-does-not-force-weak-trace-schur-transport.md
-  - research/prime_flute/findings/PF-225-one-seam-resolvent-dressing-saturates-raw-pant-hopping.md
-  - research/prime_flute/findings/PF-226-thin-pants-force-inverse-seam-saturated-channel-multiplicity.md
-  - research/prime_flute/findings/PF-227-fixed-physical-high-pass-does-not-remove-thin-pant-channel-multiplicity.md
   - research/prime_flute/findings/PF-228-flat-corridor-dressing-makes-inverse-seam-multiplicity-weak-trace-compatible.md
-  - research/prime_flute/findings/PF-229-frozen-serial-schur-completion-preserves-flat-corridor-cut-scale.md
-  - research/prime_flute/findings/PF-230-hyperbolic-corridor-has-pi-over-s-axis-inverse-width-budget.md
-  - research/prime_flute/findings/PF-231-ultraparallel-corridor-is-exactly-separable-in-logarithmic-coordinates.md
+  - research/prime_flute/findings/PF-232-hypercycle-straightening-shear-is-reciprocal-prime-form-small.md
+  - research/prime_flute/findings/PF-233-variable-width-diagonal-corridor-has-exact-operator-valued-transfer-law.md
+  - research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer.md
+  - research/prime_flute/findings/PF-239-reciprocal-prime-shear-makes-critical-band-leakage-absolutely-trace-summable.md
+  - research/prime_flute/findings/PF-240-total-one-scaled-boundary-derivative-is-the-sharp-high-high-shear-trace-threshold.md
 ---
 
 # Can the exact first relative resolvent be completed at the weak-trace endpoint?
 
 ## Observation
 
-The first relative resolvent is not trace class by PF-112, while the remaining smooth decomposition-interface term has now been reduced to a much narrower operator. PF-220 closes coefficient-adjacent low sectors. PF-221 moves the physical reciprocal-prime envelope to the low endpoint except for
+PF-112 excludes trace class for the exact first relative resolvent, while the smooth decomposition-interface route has now been reduced much further than the original raw-channel formulation.
+
+PF-228 first showed in the straight-corridor control that Schur dressing suppresses the inverse-seam population to the favorable `sqrt(w_1w_2)/s` scale with the `z/sinh(z)` high-mode envelope. PF-232 then put the exact hypercycle trim on a fixed strip and proved that its shear is only `beta_n=O(P_n^-1)` in energy form. PF-233 solved the diagonal variable-width strip exactly at operator level, and PF-238 transferred its dressed crossing envelope to the **actual complete-lift seam normalization** using only one-sided seam domination.
+
+PF-239 isolates the remaining shear risk. Every shear correction with at least one leg in a fixed PF-233 scaled band has trace norm `O(beta_n/s_n)`, and the reciprocal-prime commutator weight makes the resulting family absolutely trace summable because
 
 \[
-P[D,\Omega]H
-\quad\text{and its adjoint},
-\qquad
-\Omega=\bigoplus_nP_n^{-1}I_{\mathcal B_n},
+\delta_n\frac{\beta_n}{s_n}\lesssim \frac1{P_nP_{n+1}}.
 \]
 
-and PF-222 gives the exact norm-convergent prefix-flux expansion
+Only the high-high block survives this argument. PF-240 sharpens that gate again: the shear correction does **not** need to preserve the full exponential diagonal-corridor envelope. If its high-high block gains more than one total scaled boundary derivative across the two legs, then Schatten factorization and PF-233's one-dimensional scaled eigenvalue count already give trace norm `O(beta_n/s_n)`. Total smoothing order exactly one is the abstract critical threshold: it forces only weak trace class in the model case.
 
-\[
-P[D,\Omega]H
-=
-\sum_{j\ge1}
-\delta_j P[D,E_j]H,
-\qquad
-\delta_j=P_j^{-1}-P_{j+1}^{-1}>0.
-\]
+The smooth local frontier is therefore a single quantitative PDE question: does the exact PF-232 hypercycle perturbation, after PF-238's actual seam normalization, satisfy a scaled-uniform high-high Sobolev estimate with total order `>1` and coefficient `O(beta_n)`? Only after that should the line spend effort on physical `P/H` recoupling, finite one-cusp pant completion, neighboring-cell coupling, and the genuinely nested PF-222 global reassembly.
 
-PF-223 proves that compactness, fixed-cut smoothing, finite-rank approximability, and qualitative low-rank information do not force the weak endpoint. PF-225 then supplies the exact dressed one-cut factorization and universal `1/2` cap, but PF-226 shows that the actual thin pant has order `s_j^{-1}` raw channels above a fixed threshold. PF-227 sharpens this: removing any fixed, or sufficiently slowly growing, physical-frequency sector does not remove that inverse-seam multiplicity. The endpoint therefore cannot be closed by raw channel counting or by declaring the dangerous band low frequency.
-
-PF-228 changes the scale of the positive target. In the exact straight-corridor control, Schur dressing suppresses the inverse-seam band from order-one raw transmission to
-
-\[
-\rho_j:=\frac{\sqrt{w_jw_{j+1}}}{s_j},
-\]
-
-with the quantitative envelope `rho_j z/sinh(z)` in the scaled tangential frequency `z`. At canonical PF scales this makes the reciprocal-weighted top singular scale at most order `P_j^{-2}` and the orthogonal control family weak trace class even with the full inverse-seam channel population.
-
-PF-229 removes generic scalar global shorting as the next obstruction: repeating a frozen PF-228 channel along a complete serial chain changes the isolated transmission by only a fixed factor, so the full prefix-to-tail cut block retains the same `w/s` scale and frequency envelope.
-
-PF-230 then makes the neighboring-axis geometry exact in Fermi coordinates. It proves the nonconstant `cosh(t)` scaled width, survives PF-205 trimming on fixed windows, and calibrates the untrimmed axis inverse-width integral as `(pi+o(1))/s`. That rules out a naive claim that the actual fixed-window geometry itself becomes a constant-width strip.
-
-PF-231 now removes the **axis fanout itself** from the list of candidate operator obstructions. The same complete ultraparallel corridor is exactly the logarithmic rectangle `(0,s) x (0,pi)` with metric `csc^2(theta)(dx^2+dtheta^2)`. For `-Delta+1`, its energy is exactly separable with transverse operator
-
-\[
-A=-\partial_\theta^2+\csc^2\theta,
-\qquad
-\sqrt{\lambda_m(A)}=m+\frac{1+\sqrt5}{2},
-\]
-
-and its form DtN matrix has the exact cylinder functional calculus
-
-\[
-K
-\begin{pmatrix}
-\coth(sK)&-\operatorname{csch}(sK)\\
--\operatorname{csch}(sK)&\coth(sK)
-\end{pmatrix}.
-\]
-
-Thus the untrimmed hyperbolic axis corridor already has the same scaled `z/sinh(z)` transfer shape and an exact `O(s^{-1})` critical population. More importantly for the actual PF-205 interfaces, PF-231 gives their **global** logarithmic-coordinate equations
-
-\[
-x=f_{\rho_1}(\theta),
-\qquad
-x=s-f_{\rho_2}(\theta),
-\qquad
-f_\rho(\theta)=\operatorname{arsinh}(\sinh\rho\sin\theta),
-\]
-
-with width uniformly comparable to `s` on the entire `0<theta<pi` interval and an exact fixed-domain energy after straightening. The remaining one-cut geometry is therefore no longer an unspecified variable hyperbolic pant. It is a concrete thin Euclidean graph strip with explicit hypercycle boundaries, a singular but fixed transverse potential, and order-one tangential/transverse coupling after rescaling.
-
-The smooth frontier remains two-stage, but the first stage is now sharper: prove or refute stability of PF-228's **normalized `w_j/s_j` Schur gain** under the explicit PF-205 hypercycle graph trim and real boundary-energy normalization; only after that solve the genuinely nested weak-`S_1` reassembly. The unsmoothed PF-204 route and the independent PF-183 true-short-collar route remain live alternatives.
+The independent PF-204 unsmoothed native-factorization route remains available if the smooth route fails.
 
 ## Research question
 
@@ -102,64 +48,54 @@ Can the exact prime/shift first relative resolvent be placed in
 
 while PF-112 continues to exclude `\mathcal S_1`?
 
-For the smooth decomposition-interface route, start from PF-231's exact logarithmic reduction rather than an abstract variable-width pant. Does replacing the separated axis boundaries by the explicit PF-205 hypercycle graphs preserve, after the real neighboring boundary-energy normalization, a dressed one-cut singular-value envelope with top scale `O(w_j/s_j)` on the inverse-seam band and sufficient decay beyond it? The comparison must be uniform through the critical tangential population `m=O(s_j^{-1})`, where the straightened coefficient `b_s/a_s` is only bounded, not small.
-
-If such a one-cut estimate holds, can the overlapping nested expansion
+For the current smooth route, let
 
 \[
-\sum_j\delta_jP[D,E_j]H
+H_{n,Z}=(I-\Pi_{n,Z})\,(D_{n,1}-D_{n,0})_{21}\,(I-\Pi_{n,Z}),
 \]
 
-then be reassembled in weak trace class without replacing the cuts by an artificial orthogonal direct sum? If the one-cut estimate fails, what concrete PF mechanism in the hypercycle trim, boundary normalizer, physical `P/H` split, neighboring-cell inhomogeneity, or global Schur inverse destroys the favorable dressed scale?
+where `D_{n,1}` and `D_{n,0}` are the actual-seam-normalized sheared and diagonal Schur factors and `Pi_{n,Z}=1_[0,Z](K_{a,n})`. Does there exist `r_1,r_2>0` with `r_1+r_2>1` such that
 
-For the competing unsmoothed route, can PF-204's exact native two-Hilbert factorization be placed directly at the critical weak endpoint without differentiating the piecewise cotangent transport? Independently, can the PF-183 true-short-collar normalized slabs be spliced in a coefficient currency sufficient for weak `S_1`?
+\[
+\left\|K_{a,n}^{r_2}H_{n,Z}K_{a,n}^{r_1}\right\|
+\le C_{Z,r_1,r_2}\,\beta_n
+\]
+
+uniformly on the canonical tail?
+
+If so, PF-240 makes the entire remaining shear correction an absolutely trace-summable error after the reciprocal-prime weight. The next questions are then whether physical `P/H` recoupling and finite-pant completion preserve the dressed local scale and whether the overlapping prefix-flux series from PF-222 can finally be reassembled in weak trace class without replacing its nested cuts by an artificial orthogonal direct sum.
 
 ## Why it may matter
 
-A positive answer would identify weak trace class as the sharp first-resolvent comparison level for the exact prime/shift geometry: PF-112 excludes trace class, while the accumulated sector estimates would place the full comparison at the natural two-dimensional weak endpoint.
+A positive answer to the high-high estimate would remove the last shear-specific obstruction without demanding an unnecessarily strong mode-by-mode analytic envelope. It would show that the exact hypercycle trim is perturbatively harmless at the trace-ideal level relevant to the global weak endpoint, leaving only physical recoupling and global reassembly.
 
-A negative answer is now more discriminating. Raw conductance, qualitative compactness, universal resolvent saturation, fixed-frequency truncation, generic scalar global shorting, and the apparent Fermi-coordinate fanout of the untrimmed hyperbolic axes have all been separated from the live obstruction. PF-231 shows that the complete axis corridor is exactly separable and that PF-205 trimming stays globally `O(s)`-thin without a hidden logarithmic width supply. Failure must therefore be traced to the actual normalized trimmed-boundary problem or to nested reassembly, rather than attributed generically to hyperbolic variable width.
+A negative answer would also be decisive. PF-239 has already removed all low-touch shear leakage, and PF-240 identifies the precise regularity threshold needed for the tail. Failure must therefore appear as a canonical loss of scaled Sobolev smoothing in the high-high block, not merely as generic mode mixing, fixed-domain smoothing constants, or the inverse-seam channel count already neutralized by Schur dressing.
 
 ## Decisive test
 
-Start from PF-222's exact one-seam decoupling identity and retain PF-212's physical low/high split in its actual noncommutative order. Do not return to raw `B_j` trace budgets: PF-225--PF-227 show why those budgets are too crude.
+Work directly with PF-232's exact straightened hypercycle quadratic form and PF-238's actual complete-lift seam normalization. Keep PF-233's `K_a` as the scaled transverse frequency operator and the same fixed high projector used in PF-239.
 
-For the first gate, use PF-231's logarithmic coordinates. The untrimmed axis problem is already diagonal in the Pöschl--Teller basis with exact cross-DtN factor `K csch(sK)`. Replace the axes by the actual PF-205 hypercycle graphs
-
-\[
-x=f_{\rho_j}(\theta),
-\qquad
-x=s_j-f_{\rho_{j+1}}(\theta),
-\]
-
-or equivalently use PF-231's fixed-domain quadratic form
+The positive target is any uniform estimate
 
 \[
-a_s^{-1}|v_X|^2
-+a_s\left|v_\theta-(b_s/a_s)v_X\right|^2
-+a_s\csc^2\theta|v|^2.
+\|K_a^{r_2}H_ZK_a^{r_1}\|\le C\beta,
+\qquad r_1+r_2>1.
 \]
 
-The decisive comparison is a **uniform boundary-to-boundary estimate at the critical band `m=O(1/s_j)`**. It must show either that the real normalized Schur block still pays the `w_j/s_j` factor with corridor-type high-mode decay, or identify a canonical coupling in this explicit form that creates a larger dressed population. Since `a_s\asymp s` but `b_s/a_s=O(1)` rather than `o(1)`, a small-coefficient perturbation argument is not enough. The correct theorem may instead use coercive form comparison, a variable-strip Poisson estimate, microlocal diagonalization in the Pöschl--Teller basis, or another mechanism that is uniform at scaled frequency one.
+PF-240 then supplies the trace-class conclusion automatically; there is no need to re-prove an exponential `K csch(K)` envelope for the perturbation. A symmetric target `r_1=r_2=r>1/2` is sufficient.
 
-PF-231 supplies two audit controls. First, the untrimmed problem already has exactly `O(s_j^{-1})` channels in each fixed scaled band, so an extra logarithmic multiplicity cannot be blamed on the axis fanout. Second, the trimmed logarithmic width satisfies `c s_j<=a_s(theta)<=s_j` globally. Neither statement by itself is a singular-value bound for the normalized trimmed operator.
+The estimate must be **scaled-uniform** as `s->0` and must retain the perturbative factor `beta`. Qualitative `C^infty` smoothing for each fixed corridor is not enough. A decisive negative result should exhibit a canonical high-high sequence for which the relevant scaled Sobolev norm loses the `O(beta)` bound or fails for every total order above one.
 
-A decisive negative result must exhibit the missing mechanism **inside this canonical PF geometry**. It is not enough to perturb an abstract positive matrix, repeat PF-223's generic multiplicity countermodel, or point again to PF-230's Fermi `cosh(t)` profile; PF-231 shows that profile is exactly conformally straightenable before the artificial trim.
-
-If the actual one-cut envelope survives, attack the second gate separately: the PF-222 cuts are nested and overlap. Prove a direct Lorentz/weak-ideal estimate for the weighted flux series, exploit cancellation/commutator structure genuinely present, or derive another exact reassembly mechanism. PF-228's orthogonal direct-sum count and PF-229's single-cut serial theorem remain controls, not a proof of this final step.
-
-As alternatives, attack PF-204's unsmoothed native factorization directly at weak `S_1`, or settle the PF-183 conservative true-short-collar splice. A complete success must ultimately use one coherent global identification and one exact first-relative-resolvent identity; incompatible smooth and unsmoothed architectures cannot simply be combined to cover missing terms.
+If the high-high gate closes positively, test physical `P/H` recoupling and one-cusp pant completion next, before attempting the PF-222 nested global sum. Keep those stages separate so that a later failure can be assigned to the correct mechanism.
 
 ## Evidence boundary
 
-No full weak-`S_1` theorem is established. PF-228 proves the favorable `w/s` amplitude and frequency envelope only for an isolated straight-corridor control. PF-229 proves that the same envelope survives the full global cut only for a frozen scalar mode-preserving serial completion. PF-230 proves exact Fermi fanout and geometric inverse-width calibration. PF-231 proves that the **untrimmed** ultraparallel `-Delta+1` corridor is exactly separable in logarithmic coordinates and gives exact global equations for the PF-205 hypercycle trims; it does not prove that the normalized trimmed DtN/Poisson operator retains the PF-228 `w/s` factor.
+No full weak-`S_1` theorem is established. PF-238 is an exact theorem only for the diagonal variable-width corridor with actual seam normalization. PF-239 proves trace summability only for shear corrections touching a fixed scaled band. PF-240 is a sharp **conditional operator-ideal reduction**: it proves what amount of high-high smoothing would suffice, not that the exact hypercycle PDE supplies that smoothing.
 
-In particular, PF-231's exact axis cross-DtN spectrum is stated in the conformal energy pairing and is not silently identified with the physical `P/H` boundary Hilbert spaces. Its trimmed fixed-domain form contains order-one tangential/transverse coupling at the critical scaled frequency, so exact axis separability does not remove the need for a genuine variable-boundary operator theorem.
+Classical fixed-geometry Dirichlet-to-Neumann theory says that interaction between disjoint smooth boundary components is smoothing, but that does not supply the uniform collapsing-corridor constants or the `O(beta_n)` perturbative factor required here. The remaining local problem is therefore genuinely quantitative.
 
-Conversely, PF-226/PF-227 prove large raw channel multiplicity in the actual pant but do not show that those channels survive Schur dressing at order one. PF-225's universal `1/2` cap is an upper bound, not evidence that saturation is attained. The current clue therefore asserts only that the explicit PF-205 hypercycle-normalized dressed cut comparison and subsequent nested reassembly are precise, evidence-backed targets.
-
-PF-204's unsmoothed endpoint and the PF-183 true-short-collar endpoint remain unresolved. Clue acceptance does not imply wave-operator completeness, scattering-matrix or determinant/resonance control, prime/clone separation, or any RH consequence.
+The physical `P/H` split, finite-pant completion, neighboring-cell extension, nested PF-222 reassembly, wave operators, determinants/resonances, prime/clone separation, zeta zeros, and RH remain unresolved. Clue acceptance records only that the weak-trace endpoint remains a research-worthy target.
 
 ## Research disposition
 
-The clue remains `accepted`, with the smooth one-cut gate narrowed from a generic variable-hyperbolic comparison to an explicit hypercycle-boundary problem. PF-231 shows that before PF-205 trimming the neighboring-axis corridor is exactly separable and already has the corridor `z/sinh(z)` transfer law with `O(s^{-1})` scaled channel count. The next Research Watch step is therefore to control the **PF-205 trimmed logarithmic graph strip plus its actual boundary normalizers** uniformly through `m=O(1/s)`, and decide whether PF-228's normalized `w/s` gain survives. Nested weak-`S_1` reassembly remains a separate second gate after that comparison.
+The clue remains `accepted`. The immediate smooth-route task is now the PF-240 scaled high-high estimate with total smoothing order `>1`. If it holds, treat shear as an absolutely trace-summable local error and move to physical `P/H` recoupling and finite-pant completion; only then return to the nested global weak-`S_1` reassembly.
