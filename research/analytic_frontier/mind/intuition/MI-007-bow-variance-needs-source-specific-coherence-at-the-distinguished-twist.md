@@ -1,33 +1,35 @@
-# MI-007 — Bow variance needs source-specific coherence at the distinguished twist
+# MI-007 — Bow variance is now a prime--Ramanujan coherence problem at the distinguished twist
 
-**Evidence level:** exact moving-window geometry plus literature-backed Dirichlet mean-value and source-specific norm-budget reductions through ANF-146
+**Evidence level:** exact moving-window controls and source-normal-form reductions through ANF-149
 
 ## Core intuition
 
-The analytic bow is no longer a generic localization or moving-window problem. Generic logarithmic-twist averaging localizes any robust exceptional cancellation to an `O(X)` neighborhood, but that scale is sharp. Inside it, the moving-window operator leaves a full factor-`K` phase-coherence freedom even when support, coefficient magnitudes, and diagonal energy are fixed.
+The analytic bow is no longer a generic localization, support, sparsity, or coefficient-magnitude problem. The full factor-`K` coherence freedom survives real coefficients, the exact logarithmic carrier, and even support on the actual prime locus. What remains source-specific is the coefficient law itself.
 
-The decisive information must therefore come from the arithmetic phase/sign organization of the distinguished residual at the distinguished twist, or from cancellation retained across arithmetic decomposition pieces. Geometry that sees only support, magnitudes, diagonal mass, or componentwise mean square cannot supply the missing factor.
+ANF-149 sharpens that law to a useful normal form: prime powers are negligible at bow scale, so the target is equivalent to the twisted moving-window variance of `vartheta-Lambda^sharp`, a positive prime field against a deterministic finite-Ramanujan rough counterterm. The decisive information must therefore live in their **joint arithmetic correlation before cancellation is separated into pieces**.
 
 ## Strongest justified principle
 
-ANF-144 gives the uniform mean-value law with relative error `O(X/L)` and shows that every super-`X` twist interval has diagonal-scale average. Its adjacent-term matched control proves that `X` is the coefficient-general localization boundary rather than a proof artifact.
+ANF-144 localizes robust exceptional cancellation to `O(X)` twist neighborhoods and shows that scale is coefficient-generally sharp. ANF-145 prices the current analytic gap as one full power of `K`, and ANF-146 identifies that factor with the exact top-versus-average coherence range of the moving-window operator.
 
-ANF-145 prices the source target: after normalization by the `x`-length the bow diagonal is `K log X`, while the available MRSTT componentwise type-II mean-square architecture remains at `K^2` times logarithmic savings. The gap is one full power of `K`, already before exceptional-set conversion.
+ANF-147 removes the objection that arbitrary complex coefficients caused the countermodel: three-site real balancing defeats coefficient-general coercivity for every prescribed unit-modulus carrier, including the exact Archimedean twist. ANF-148 places the construction on a positive fraction of the actual primes with `O(log X)` amplitudes and the correct prime diagonal, so prime location and sparsity still do not determine the variance.
 
-ANF-146 identifies that same factor as intrinsic moving-window coherence. The length-`K` box operator has average squared singular scale `K` and top squared scale `K^2`, and equal-magnitude plane waves attain both zero and the sharp `K D` endpoint. No source-blind refinement of the box geometry can determine where the arithmetic residual lies in this coherence range.
+ANF-149 finally removes prime powers and identifies `Lambda^sharp` with its exact finite Ramanujan expansion. Its complete-period two-point law already carries the truncated Hardy--Littlewood singular-series structure uniformly on the bow lags. The surviving source question is therefore not “prime versus composite support” but whether the exact prime field and the rough Ramanujan counterterm cancel coherently at the distinguished twist.
 
 ## Program consequence
 
-A positive bow theorem should expose a source-specific correlation, sign rule, decomposition-level cancellation, or another arithmetic invariant that controls the residual's projection onto the coherent moving-window modes at the distinguished twist. The theorem surface should quantify the required factor-`K` gain directly.
+A positive bow theorem should expand or otherwise control the combined correlation of `vartheta-Lambda^sharp` **before** applying absolute values or independent component bounds. The theorem surface should expose exactly where the arithmetic prime-pair/Ramanujan structure buys the missing factor `K`.
+
+Support-only estimates, realness, prime density, diagonal mass, exact twist geometry, and independent bounds for decomposition pieces are now controls unless they are coupled to a proved source relation.
 
 ## Counterevidence / boundary
 
-The findings do not prove that the distinguished bow twist exists or that the residual has coherent or incoherent phase. They only show that broad twist averaging and coefficient-general window geometry cannot decide the source-selected point.
+The current findings do not prove the required cancellation, do not establish the distinguished off-critical bow, and do not show that the finite Ramanujan model alone determines the prime field. ANF-149 is a source reduction, not a variance theorem.
 
 ## Epistemic status
 
-**Supported source-specific coherence boundary; no bow contradiction or RH consequence is established.**
+**Supported source-normal-form and coherence boundary; no bow contradiction or RH consequence is established.**
 
 ## Falsification criterion
 
-Derive the required `o(K log X)` normalized bow variance from support, coefficient magnitudes, diagonal mass, or another coefficient-general moving-window estimate alone. A successful continuation should instead identify and verify the arithmetic information that removes the factor-`K` coherence freedom.
+Derive the required `o(XK log X)` bow variance from the now-controlled source-blind data alone, or show that the prime-power reduction / finite-Ramanujan identity of ANF-149 fails in the stated bow regime. A successful continuation should instead prove a combined prime--Ramanujan correlation estimate at the distinguished twist.

@@ -1,39 +1,35 @@
-# MI-014 — Source coercivity is collective after reservoir pruning and positive-window residue no-gos
+# MI-014 — Weil-inertia coercivity is collective, and macroscopic observation charges almost full translation rank
 
-**Evidence level:** exact Gallagher reduction, audited reservoir pruning, isolated-residue scale separation, and window/multiwindow invariance through WI-207
+**Evidence level:** exact Gallagher reduction, audited reservoir pruning, screening no-gos, and quantitative screen-complexity laws through WI-217
 
 ## Core intuition
 
-The hard Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem, and the expensive theorem should be attempted only after independent zero reservoirs prune the adversarial geometry. The surviving source defect is now known to be collective in a stronger sense: a bounded packet of near-line zeros cannot be promoted to diagonal scale merely by tuning the twist, optimizing one physical window, or combining arbitrarily many linear windows through a positive quadratic form.
+The hard Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem after independent zero reservoirs and positive-window constructions have been pruned. The surviving defect is collective: bounded zero packets and fixed-rank screens cannot account for it on a continuum slab.
 
-The missing mechanism must therefore live in the signed covariance of the full source, in a source theorem forcing a sufficiently large coherent exceptional population, or in an observable whose response is not governed by the same positive local Hilbert quotient.
+The new quantitative synthesis is that **screen complexity must scale with observation width**. Small/fixed natural slabs rule out only bounded rank; a screen-sized widening has a logarithmic transition; a fixed multiplicative source window charges essentially one screen channel per available unit translate, reaching `M/log T`. The final gap is no longer “finite versus growing complexity” but whether source structure can close the remaining logarithm to a genuine count-level obstruction.
 
 ## Strongest justified principle
 
-WI-191--WI-197 identify the source-fixed coupled norm and show why pointwise or transform-only estimates are insufficient. The bow needs `o(XK log X)` control of a distinguished signed covariance, not merely a typical or absolute-value estimate.
+WI-191--WI-207 identify the source-fixed coupled norm, audit the ordinary exponent-pair reservoir, and prove that bounded near-line packets remain subdiagonal under arbitrary single-window and PSD multiwindow shaping. WI-208--WI-214 show that finitely many reciprocal-harmonic samples can be screened cheaply and that growing polylogarithmic screens can flatten fixed sampled/slab data, so pointwise finite-channel evidence is not coercive.
 
-WI-198--WI-204 audit the reservoir side. The current verified every-interval exponent-pair theorem removes fixed-power bows above `3943/12011`; the generic ordinary exponent-pair architecture has an exact floor `1/4`; and present almost-all interval theorems allow too large an exceptional set to control the source-selected bow.
+WI-215 gives the first continuum-rank obstruction: every fixed finite exponential screen leaves a nonzero natural-slab residue because the sinc bow has infinite translation rank. WI-216 makes the threshold quantitative. `O(log T)` channels cannot become subdiagonal on their own linearly widened slab, while `omega(log T)` channels suffice in the existing midpoint screen model.
 
-WI-205 shows that one bounded near-line residue packet contributes only `M_F^2 T^{-vartheta+o(1)}` of the raw Gallagher diagonal in normalized depth. WI-206 proves this scale is invariant under arbitrary single-window profile optimization on the same physical span: the residue is a Riesz functional whose norm is paired with the same `L^2` profile energy in the prime-square diagonal, and the box is asymptotically matched to one tuned zero.
+WI-217 uses the entire translating nullspace rather than one null vector. On fixed multiplicative width, if `q` translates are visible and the screen rank omits any fixed fraction of them, a fixed amount of target energy survives. Hence subdiagonal selected energy forces `n >= (1-o(1))q`, and at the largest controlled scale this costs `Omega(M/log T)` channels/pairs up to fixed factors.
 
-WI-207 proves the dimension-free extension. Any finite or growing family of linear windows with arbitrary positive-semidefinite cross-channel coupling factors through one Hilbert-valued profile and obeys the same visibility quotient. Positive multiwindow coherence cannot buy a factor of the number of channels.
+## Program consequence
 
-## What remains possible
+The next theorem must either raise the macroscopic screen tariff from `M/log T` to count scale `M`, prove that actual off-line zeros cannot realize the flexible exponential screen class at that tariff, or avoid adversarial screening by proving the full signed source covariance directly.
 
-Above `3943/12011`, the audited every-interval reservoir already excludes the fixed-power count-saturating bow. Between `1/4` and that threshold, stronger verified ordinary exponent pairs may still narrow the range. At and below `1/4`, progress needs an every-interval theorem outside that architecture, the source-fixed `Lambda-Lambda^sharp` covariance itself, or another source relation.
-
-The window no-gos do not rule out smoothing as a way to estimate the **full arithmetic off-diagonal** more effectively. Nor do they cover sign-indefinite/nonlinear multiwindow forms, nonlocal cross-translation couplings whose positivity is arithmetic rather than imposed by a PSD channel matrix, or a source theorem forcing a mesoscopic packet with multiplicity at the WI-205 threshold.
+Observation width, screen rank, radial depth, and zero count should be priced independently. A larger rank lower bound matters only if it can be converted to the actual exceptional-zero budget without hidden free multiplicity.
 
 ## Counterevidence / boundary
 
-All residue-amplitude statements concern the current local weighted von-Mangoldt observable and a bounded or explicitly counted packet. A zero at fixed horizontal depth, a growing coherent population, or a fundamentally different source observable can evade them. The `1/4` floor likewise belongs only to the declared ordinary exponent-pair/every-interval interface.
-
-None of the current pruning or no-go results proves the missing signed covariance estimate, excludes every off-line population, or proves RH. They identify theorem architectures whose quantifiers or amplitudes are insufficient before the hard collective coercivity problem is attacked.
+WI-217 still permits `o(M)` screen complexity and therefore does not prove positive-density exceptional zeros or RH. Its screens are an enlarged exponential model; an actual zero population has additional functional-equation and source constraints that may help, but those constraints have not yet been converted into a stronger rank tariff. Conversely, the midpoint construction shows that superlogarithmic screening really is possible in the declared countermodel on smaller widened slabs.
 
 ## Epistemic status
 
-**Exact coupled-norm reduction; audited reservoir pruning with ordinary exponent-pair floor `1/4`; and exact invariance of bounded-packet subdiagonal visibility under arbitrary single-window and PSD multiwindow linear shaping. The collective source-fixed variance theorem remains open.**
+**Exact collective-screening boundary with logarithmic and `M/log T` complexity thresholds; the full source-fixed covariance / positive-density bridge remains open.**
 
 ## Falsification criterion
 
-Produce a count-saturating fixed-power bow above the audited cutoff compatible with the matching every-interval theorem, derive a fixed-power exponent below `1/4` from the same ordinary exponent-pair interface, or exhibit a bounded near-line packet whose contribution reaches the diagonal after a WI-206/WI-207-admissible window optimization. A positive continuation should instead prove collective covariance, a stronger matching reservoir theorem, or a genuinely different source observable/coupling with a verified larger exception response.
+Construct an `o(M/log T)` exponential screen that makes the selected residue subdiagonal on a fixed multiplicative slab under the WI-217 hypotheses, or invalidate the WI-216 matching superlogarithmic construction on its declared scale. A positive continuation should close the count conversion or prove source restrictions absent from the free screen model.

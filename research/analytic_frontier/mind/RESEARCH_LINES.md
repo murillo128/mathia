@@ -10,16 +10,16 @@ ANF-134--ANF-143 progressively remove raw depth, span, slack-spend, coefficient-
 
 The live gate is therefore whether the resulting positive cascade is **fatal for the source near-extremizer rather than removable as negligible mass**. A useful theorem must quantify source energy/coherence carried by the late cloud or prove that the cloud can always be excised while preserving the source objective.
 
-## Resolve the bow through arithmetic coherence, not support-only moving-window geometry
+## Estimate the prime--Ramanujan bow correlation before componentwise absolute values
 
 **Linked intuition:** `MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist`.
 
-ANF-144 sharpens the generic twist-average scale to `X`: every super-`X` twist interval has diagonal-scale average, but matched controls show that `Theta(X)` cancellation windows remain possible. ANF-145 identifies the exact quantitative gap in the available MRSTT architecture: componentwise type-II mean square remains at `K^2` up to logarithms while the bow target is only `K log X`, leaving one full factor of `K`. ANF-146 proves that this missing factor is precisely the coherence freedom of the moving-window operator; identical coefficient magnitudes can realize the full range from zero to `K` times the diagonal.
+ANF-144--ANF-148 close successively stronger source-blind escapes. Generic twist averaging is sharp at scale `X`; the available componentwise type-II architecture misses one full factor `K`; arbitrary moving-window coherence spans the whole allowed range; and the same ambiguity survives real coefficients, the exact logarithmic carrier, actual prime support, prime density, coefficient size, and the correct diagonal scale.
 
-The next bow theorem must therefore use **arithmetic phase/sign structure at the distinguished source twist**, or preserve cancellation between arithmetic decomposition pieces instead of estimating them independently. Further support-only mean-value, diagonal, stable-rank, or coefficient-magnitude arguments are controls.
+ANF-149 then gives the current source normal form. Prime powers are negligible in the bow seminorm, so the target is equivalent to the variance of `vartheta-Lambda^sharp`. The rough term `Lambda^sharp` has an exact finite Ramanujan expansion whose complete-period two-point correlation already matches the truncated Hardy--Littlewood singular-series structure at bow lags. The live theorem must therefore retain the **combined twisted correlation error between the positive prime field and its deterministic small-prime Ramanujan counterterm** before triangle inequalities or componentwise mean square erase the cancellation.
 
-## Treat slack, span, finite-depth conditioning, and generic twist averaging as controlled currencies
+## Treat support, magnitude, reality, prime location, and generic twist geometry as controls
 
-Positive residual slack excludes a fixed positive exponential zero-pinching loss on active late layers, and slow diagonalization absorbs finite local conditioning costs. Separately, generic Dirichlet mean-value theory confines robust bow cancellation to `O(X)` twist neighborhoods but cannot eliminate it there.
+Positive residual slack excludes fixed exponential pinching losses, slow diagonalization absorbs finite local conditioning costs, and super-`X` twist averaging cannot decide the source-selected bow. ANF-147--ANF-148 add that reality and actual prime support do not restore coercivity when the coefficient law remains free.
 
-A new obstruction must attack actual source energy/coherence, excisability, or the arithmetic phase relation. Repackaging geometric conditioning or generic moving-window estimates does not cross the current frontier.
+A new bow estimate must use the actual arithmetic amplitude/sign law or an equivalent source relation. Repackaging support geometry, prime sparsity, coefficient magnitudes, or the exact carrier without exploiting the prime--rough inclusion--exclusion is now a matched control.

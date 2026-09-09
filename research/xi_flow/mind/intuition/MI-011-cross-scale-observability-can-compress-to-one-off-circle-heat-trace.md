@@ -1,29 +1,35 @@
-# MI-011 — Cross-scale collision observability can be algebraically tiny yet sublinear local jets remain exponentially ill-conditioned
+# MI-011 — Exact heat-trace identification can be arbitrarily local while transition transport remains superexponentially unstable
 
-**Evidence level:** exact one-channel reconstruction plus transition-sharp conditioning obstructions through XF-139
+**Evidence level:** exact state-identification and transition-conditioning boundaries through XF-145
 
 ## Core intuition
 
-The periodic divisor can be algebraically encoded in one off-circle heat trace, but local exterior access is not stably equivalent to that state. The obstruction survives far beyond a finite probe family: matched central packets can hide an order-one transition-time change from every sublinear logarithmic heat jet even while the observation point approaches the divisor at vanishing macroscopic height.
+The periodic polynomial state is algebraically easy to identify compared with the de Bruijn--Newman transition parameter. One off-circle trace, two nearby real traces, or even one arbitrarily short moving real scan can determine every coefficient exactly at fixed degree. This does not imply stable transport to `Lambda_per`.
 
-The remaining Xi problem is therefore not to collect more finite/sublinear derivatives of a target-complete trace. It is to find a source-accessible transition quotient whose modulus ignores the hidden directions, prove that the actual Xi source excludes them, or use information at a genuinely different scale.
+The decisive distinction is now quantitative: **state identifiability has essentially zero geometric threshold, while transition conditioning has a source-dependent time/scale threshold**. Central matched packets can hide an order-one transition shift superexponentially even from the complete root-spacing real observation tube over short heat windows.
 
 ## Strongest justified principle
 
-XF-130 gives exact one-channel periodic reconstruction. XF-131--XF-133 separate temporal delay, zero-delay state conditioning, and local spatial aperture. XF-134--XF-138 strengthen the zero-delay result through logarithmic jets and optimize the height/jet tradeoff. XF-139 completes the sublinear phase law: for any `K_N -> infinity` with `K_N=o(N)`, a transition-sharp matched control can make the complete raw logarithmic jet through `K_N` exponentially small at exterior height `Theta(K_N)` root spacings, whose physical height divided by the period tends to zero.
+XF-130 gives exact one-channel periodic reconstruction. XF-131--XF-140 progressively show that zero-delay exterior data and even full degree-order spatial jets can be exponentially transition-blind. XF-141 constructs maximal central packets with exact transition-time separation, and XF-142 proves that instantaneous time derivatives add no independent axis because the gauged local trace satisfies the ordinary heat equation.
+
+XF-143 shows that two real heat histories separated by only half a mean root spacing recover every Vieta coefficient for an arbitrary degree-`N` state; the reflected-pair inverse costs `O(N)`. XF-144 lowers the exact interface further: a single real probe moving at any nonzero speed makes all heat exponents distinct, so arbitrarily small total travel is injective. The elementary reflected-pair condition number is at least `Omega(L/D)` for travel `D`.
+
+XF-145 then restores the target distinction. For the transition-sharp central packet, the complete real tube `|x|<=CL/N`, `0<=s<=S_N` remains `e^{-omega(N)}`-close whenever `NaS_N->0`, despite an order-one difference in `Lambda_per`. For `S_N<=A/(aN^{1+epsilon})`, the inverse transition condition number is at least `exp(gamma_epsilon N log N-O(N))`. Restricting to any moving scan cannot improve this because it sees less than the whole tube.
 
 ## Program consequence
 
-Treat finite and sublinear local exterior jets as a conditioning control. A positive bridge should target `Lambda` directly, rather than reconstructing the full Vieta state, and should state the source norm and inverse modulus on the exact quotient used.
+Do not optimize exact coefficient recovery further unless it changes the transition modulus. The next useful observation must use an independent heat-time scale, a transition-adapted quotient, a nonlocal geometry, or a source theorem that rules out the matched central packets. State dimension and injectivity are no longer informative proxies.
+
+A proposed decoder should state its norm, observation window, source restriction, and quantitative inverse modulus for `Lambda_per` itself.
 
 ## Counterevidence / boundary
 
-XF-139 does not rule out linear-depth jets, nonlocal observation with different weighting, data taken on the divisor itself under additional regularity, or a source theorem forbidding the central matched packets. It also does not prove that every conceivable direct transition functional is ill-conditioned.
+XF-145 treats root-spacing spatial tubes and sub-inverse-degree heat windows. It does not rule out windows at scale `1/N` or larger, global/nonlocal observations, or source-specific constraints excluding the matched controls. Exact identification by moving probes remains true and may become useful if combined with such additional structure.
 
 ## Epistemic status
 
-**Exact algebraic identifiability together with exact exponential blindness of all sublinear local log-jet interfaces on matched controls; a stable source-to-transition observable remains open.**
+**Exact algebraic identifiability together with exact superexponential short-time transition blindness; a stable source-to-transition observable remains open.**
 
 ## Falsification criterion
 
-Produce a uniformly stable transition decoder from the XF-139 sublinear-jet data on the matched family, or invalidate the central-packet estimates. A positive continuation should prove a transition-adapted quotient/source restriction or an observation theorem outside the sublinear local-jet category.
+Produce a uniformly stable `Lambda_per` decoder on the XF-145 matched family from the stated short-time root-spacing tube, or invalidate its central-packet bound. A positive continuation should cross the time/geometry/source boundary rather than merely add another injective state representation.

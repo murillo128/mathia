@@ -1,33 +1,37 @@
-# MI-006 — Critical weak-trace transport is a dressed off-diagonal problem whose remaining local shear risk is high-high
+# MI-006 — Critical weak-trace transport reduces locally to stability of a sharp `R<5/2` half-line Jacobi window
 
-**Evidence level:** supported by exact weak-ideal architecture, canonical inverse-seam multiplicity, variable-corridor/actual-seam transfer, and trace-summable low-touch shear leakage through PF-239
+**Evidence level:** exact weak-ideal architecture and exact free/variable parity-Jacobi reductions through PF-249
 
 ## Core intuition
 
-The Prime-Flute endpoint is controlled neither by raw channel count nor by seam regularity in isolation. The relevant currency is the singular-value envelope of the **fully normalized off-diagonal transfer** after geometric multiplicity is dressed by seam and corridor energy. The latest shear result sharpens this further: not every perturbation of that envelope must itself satisfy the critical weak-ideal bound. An error carrying an extra reciprocal-prime factor can be harmless in strong trace class once its effective channel population is counted.
+The Prime-Flute endpoint is controlled by the singular-value envelope of the fully normalized off-diagonal transfer, not by raw channel count or qualitative seam regularity. Earlier work isolated the infinite-rank high-high shear block as the only local piece still needing genuine smoothing.
 
-The local frontier is therefore concentrated in the high-high transverse tail. The critical population, its interaction with high modes, and the actual complete-lift seam no longer provide plausible first failure mechanisms for the smooth route.
+PF-247--PF-249 now identify the fixed compactification problem sharply. The actual relative geometry is a mode-local half-line Jacobi operator with an inverse-square, first-moment-critical tail. Its free limit has a boundary cancellation strong enough that **full separated output retains exactly the smoothing window `R<5/2`**. Since the endpoint only needs some `R>1`, criticality and output accumulation are no longer generic reasons for failure; the remaining question is stability of that margin under the specific variable Jacobi and geometric perturbations.
 
 ## Strongest justified principle
 
-PF-196--PF-223 establish the critical `L log L`/weak-`S_1` architecture, localization and reassembly framework, reciprocal-prime Schur commutator, and the warning that qualitative compactness plus finite-rank fixed edges do not control endpoint multiplicity. PF-226--PF-227 realize that warning in the actual thin-pant geometry: order `s_n^{-1}` saturated channels remain after every fixed or suitably slowly growing physical high-pass.
+PF-196--PF-243 establish the critical weak-`S_1` architecture, exact channel multiplicity, dressed corridor envelope, actual-seam one-sided control, and reduction of the high-high block to separated Robin-Poisson smoothing of order `R>1`. PF-244 proves that generic form domination permits arbitrary high-to-low conversion; PF-245 rules out a uniform supercritical strip for the bare seam; PF-246 shows that exact commutation would smooth to all orders.
 
-PF-228 supplies the missing amplitude mechanism in the flat corridor. PF-233 transports the corridor to an exact variable-width transverse operator, and PF-236 proves that an operator-matched seam normalizer preserves the `sqrt(w_1w_2)/s * F(sm)` envelope. PF-237 shows that the complete lifted actual seam cannot be globally two-sided comparable to that matched seam, but PF-238 finds the correct one-sided domination and proves that the exact inverse corridor suppresses the endpoint escape automatically. The actual complete-lift diagonal crossing therefore retains the same critical envelope up to a uniform constant.
+PF-247 supplies the missing intermediate structure. In the Gegenbauer corridor basis the fixed compactified axis generator is exactly parity tridiagonal. The relative operator is two half-line Jacobi chains with coefficients tending to the constant free chain and essential spectrum `[0,1]`.
 
-PF-239 inserts the first part of PF-232's shear without demanding too much. Form comparison gives an `O(beta_n)` normalized resolvent perturbation with `beta_n=O(P_n^{-1})`. A fixed scaled transverse band has only `O(s_n^{-1})` modes, so every shear correction touching that band has trace norm `O(beta_n/s_n)`. After the reciprocal-prime commutator weight `delta_n`, the family is `O(P_n^{-2})` and absolutely trace summable. This includes critical-band and low/high mixing even if those errors lose the baseline `w/s` gain completely.
+PF-248 proves coefficient deviations `O(j^{-2})`: trace class but with divergent first weighted moment, so standard first-moment Jost theory cannot simply transfer free edge behavior. In the constant half-line model, the Dirichlet image cancels the bilateral `n^{-2}` square-root tail in fixed output rows, producing `n^{-3}` decay and a toy threshold `R<5/2`.
 
-Thus the only genuinely shear-specific local block still needing smoothing is the **high-high block**. If it is controlled, the next risks are physical `P/H` recoupling, finite-pant/neighbor completion, and nested global weak-trace reassembly rather than seam normalization or critical-band mode mixing.
+PF-249 upgrades that calibration to the norm actually relevant after positive separation. For every `d>0`, `E_dJ_0^{1/2}N^R` is Hilbert--Schmidt iff `R<5/2` and has no bounded extension for `R>=5/2`. Thus full-output summation plus separated propagation preserves the same sharp boundary; the free model leaves a robust supercritical interval `1<R<5/2`.
+
+## Program consequence
+
+The theorem surface is now a weighted functional-calculus / threshold-scattering estimate for the **specific first-moment-critical `O(j^{-2})` parity-Jacobi tail**, or for the exact normalized Robin scalar factor if it differs from `J^{1/2}`. It need only retain one fixed exponent `R>1`, not reproduce all-order smoothing.
+
+After that fixed-axis transfer succeeds, charge the `T_a` replacement and width-dependent hypercycle reparameterization against the remaining exponent margin. Do not reopen the already-positive free full-output calculation.
 
 ## Counterevidence / boundary
 
-PF-239 gives operator-norm stability plus finite-band trace-rank counting; it does not give a singular-value envelope for the infinite-rank high-high block. Form-smallness alone cannot make that tail trace class or weak trace class.
-
-The result is also local to the common boundary realization before physical `P/H` recoupling and does not prove that the global relative resolvent has already been decomposed into exactly these trace-summable pieces. Prime/clone separation remains independent.
+Trace-class perturbation alone does not preserve weighted square-root decay at a zero-energy threshold, and PF-248's formal `j^{-1/2}` subordinate branch is only a diagnostic. PF-249 concerns the constant proxy `J_0^{1/2}` after idealized positive separation; the scalar operator entering the actual normalized Robin map has not yet been proved identical to it. The actual variable-width seam remains a later perturbative step.
 
 ## Epistemic status
 
-**Exact raw multiplicity, exact actual-seam preservation of the baseline dressed envelope, and exact strong trace summability of all reciprocal-prime-weighted shear leakage touching a fixed scaled band; high-high shear and later global reassembly remain open.**
+**Exact mode-local Jacobi reduction and sharp positive free full-output window `R<5/2`; stability on the actual first-moment-critical chain and global reassembly remain open.**
 
 ## Falsification criterion
 
-Refute PF-238's actual-seam envelope or PF-239's `O(P_n^{-2})` low-touch shear summability, or exhibit a canonical high-high PF-232 shear mechanism that defeats every separated-boundary smoothing estimate required by the weak endpoint. A positive continuation should control that high-high tail and then propagate the remaining signal/error decomposition through physical and global recoupling.
+Show that the PF-247 variable Jacobi/actual normalized scalar factor necessarily loses every separated weighted exponent above `R=1`, or invalidate PF-249's sharp free threshold. A positive continuation should transfer some `1<R<5/2` margin through the variable chain and then through the canonical geometric perturbations.

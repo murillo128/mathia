@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Build target-aware multiscale control with a growing anti-aliasing budget
+## Convert early residual witnesses into a coercive finite target certificate
 
 **Linked intuition:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`.
 
-NB-001 proves that the complete finite generator Gram matrix does not determine distance to the fixed Nyman target; the missing datum is the target-pairing vector, and the exact finite residual is the augmented-Gram Schur complement. NB-002 makes the loss internal to the canonical family: multiplicative semigroup copies preserve the entire local Gram block while attenuating every global target pairing by `m^{-1/2}` and projection energy by `1/m`.
+NB-001--NB-006 establish the original target-information boundary: generator Gram geometry can be copied across multiplicative scale while losing the fixed target, fixed semigroup probes admit Mellin aliases, summable full-semigroup defect norms are noncoercive, and every finite harmonic cutoff can be defeated by scale-dependent aliases.
 
-NB-004--NB-006 now close the obvious finite-probe replacement for those pairings. Every fixed finite family of Bagchi adjoint-semigroup target-character tests admits target-orthogonal approximate Mellin aliases. The full integer semigroup identifies the target exactly, but remains noncoercive in every natural summable `ell^p`, `p>2`, defect norm. Even at the nonsummable harmonic boundary, the first `M` scales admit explicit aliases whose recurrence dimension is only `pi(M)`, forcing a quantitative scale-versus-Mellin-bandwidth problem and a superlogarithmic probe pressure against this witness family.
+NB-007--NB-009 sharply separate infinite identification from finite source-selected observability. The untruncated harmonic `ell^2` defect is singular off the target line, but this does not give uniform finite coercivity. Periodicity alone locates a finite residual witness only at the exponential `lcm(2,...,N)` scale. For the **actual best residual**, however, the single normal equation against `g_2` already forces a tail-average witness by index `O(d_N^{-2})`; with the known Nyman lower bound this is `O(log N)`, with polynomially visible amplitude.
 
-The live route must therefore track **where target mass sits across absolute multiplicative scale** with a scale family or norm strong enough to defeat Mellin aliasing on the source class actually produced by Nyman approximation. Exact character identification, finitely many covariance defects, or summable aggregation are not quantitative target certificates.
+The live theorem is now to turn this early source-forced witness into a finite semigroup/dual estimate that materially constrains the approximation distance rather than merely detecting non-target mass. Determine how much truncated harmonic energy, or which additional normal equations, are forced once a witness occurs at polylogarithmic scale.
 
-## Separate local approximation quality, exact target character, and global target capture
+## Separate exact target identification, witness localization, and approximation-rate coercivity
 
-A high-scale canonical block can approximate its normalized local target exactly as well as the base block while becoming nearly orthogonal to the fixed global target. Likewise, a family of vectors may satisfy many target-character covariance tests almost perfectly while remaining exactly target-orthogonal.
+The full harmonic semigroup identifies the target exactly but is an extended-valued singular selector. The lcm witness proves finite existence at a useless exponential scale. The parity normal equation proves much earlier localization, but it imports the known lower bound on `d_N` only to express the index/amplitude in `N`.
 
-A useful asymptotic theorem must control augmented target data, growing-scale anti-aliasing, or a normed dual witness tied to the actual residual. Gram spectra, fixed semigroup probes, and exact-but-noncoercive character identities are controls.
+A useful asymptotic theorem must improve the **finite quantitative transport from residual structure to target distance**. Exact character identities, infinite divergence, and the existence of one early witness are controls unless they yield a new coercive rate.

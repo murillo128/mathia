@@ -1,39 +1,35 @@
-# MI-002 — Relational fidelity survives only outside closed transport, scalarization, and essential-sign quotients
+# MI-002 — A surviving arithmetic relation must remain nontrivial in the final target-bearing quotient
 
-**Evidence level:** supported by exact algebraic-closure, coarse-module, KMS-scalarization, and essential-orientation results across current Mathia lines
+**Evidence level:** supported by exact packet-algebra, reciprocity-family, principal-residue, and critical-positive-completion boundaries
 
 ## Core intuition
 
-Mathia's strongest candidates often become relational only after absolute scale is quotiented away, but “relational,” “noncommutative,” or “higher-dimensional” is not itself an escape criterion. A relation can be completely present and still be useless because its source algebra transports only a carried target phase, because a refinement remains a module over a coarse scalar base, because equilibrium evaluation reduces channel freedom to boundary-state moments, or because the final positive carrier has the wrong sign in essential spectrum.
+“Relational,” “noncommutative,” “higher-dimensional,” or even “source-forced mixed-prime” is not itself an escape criterion. A relation can be genuine and mathematically rich yet become useless because the natural algebra closes classically, the final projection erases it, equilibrium turns it into boundary data, or positivity changes the coefficient law/sign before the target is read off.
 
-The current synthesis is therefore stronger than “preserve relations”: preserve a **source-specific relation that survives complete natural algebraic closure, the relevant module/gauge quotient, quantitative transport, and the final destination sign/orientation without becoming target reconstruction**.
+The strongest current rule is therefore: preserve a **source-specific relation that survives the complete natural algebraic closure and remains nontrivial in the same quotient/residue/state/operator that carries the target divisor or sign**. Recovering the target only after the relation disappears is reduction, not transfer.
 
 ## Strongest justified principle
 
-Möbius Cancellation now supplies a finite raw-algebra closure theorem. MC-163--MC-165 show that cross-prime Gram phases are separable and that every finite word in the canonical commutators and their adjoints has one global phase charge on square-free inputs. At Möbius this becomes degree parity, so every finite raw `*`-polynomial splits into a phase-free transport sector plus a sector carrying `D_mu` linearly. Noncommutativity is real, but it does not generate a third intermediate phase class.
+Prime Circle gives an exact algebraic-closure control. Coarse refinement networks remain module maps, and the full fresh-prime Cauchy packets are closed under canonical pointwise/convolution bilinearities. Even across squarefree conductors the shift state stays in classical squarefree cyclotomic torsion. More modes and nonlinear depth do not create a new relational carrier inside that algebra.
 
-Prime Circle supplies an independent module-closure theorem. PC-224--PC-225 show that even when all new-prime sectors and arbitrarily many refinement path labels are retained, canonical pullbacks, diagonal masks, and conditional expectations remain module maps over the original coarse coordinate. Their positive square is only one scalar profile per coarse fiber, and bounded depth limits preserve the same quotient. Codomain size and refinement depth therefore do not certify relational information.
+Prime Lattice gives the positive source-relation example and its failure mode. Quadratic reciprocity produces the classical Rédei mixed-prime matrix and genuine family-valued arithmetic. Quadratic multiple Dirichlet series preserve that relation globally enough to produce Weyl continuation and explicit zeta correction factors. But the canonical `s=1` residue that genuinely isolates `zeta_2(2w)` selects only the trivial squarefree kernel; every nontrivial quadratic character carrying the reciprocity relation has vanished. The target divisor survives exactly where the richer relation does not.
 
-Prime Lattice adds an equilibrium scalarization boundary. PL-230--PL-231 show that the canonical affine KMS diagonal is rigidly positive, while the low-temperature off-diagonal freedom is exactly a universal boundary Fourier profile replicated across multiplicative channels; distinct channels do not couple. Genuine state freedom can therefore live in isotropy/boundary data rather than in arithmetic interaction.
-
-Weil Positivity sharpens the destination-orientation gate. WP-216 source-forces the correct critical Poisson/GCD Gram magnitude; WP-217 identifies its canonical score exactly with the already-classified Poisson score; and WP-218 proves that the desired local Weil defect has negative essential spectrum stable under compact completion. Correct source geometry and correct magnitude can coexist with a sign obstruction that only a genuinely essential/global operation can change.
+Weil Positivity supplies the sign counterpart. The critical Bost--Connes Gram has correct source magnitude but wrong essential orientation. Source-time-covariant positive maps cannot orient it; self-pairing opposite modes becomes positive only after squaring the half-density and killing cross-prime resonance; a distinct frequency-matched positive sector carrying the unsquared amplitudes requires infinite ordinary trace. Relation survival must therefore be checked through the final positivity category, not before it.
 
 ## Consequence for synthesis
 
-A plausible relational mechanism should pass four distinct tests. First, its natural finite or completed source algebra must not reduce it to support data plus a carried target field. Second, its transport must not factor through a coarse module whose final invariant forgets internal orientation. Third, any state/expectation used to read it must not scalarize the relation to freely chosen boundary data. Fourth, the destination operation must preserve the required sign or orientation at the essential/global level rather than only after a compact or scalar repair.
+For every proposed bridge, ask three separate questions: what source relation is genuinely forced, what natural closure/quotient produces the target-bearing object, and what nontrivial part of the relation survives that exact operation. Only then ask whether the surviving relation yields positivity, spectral reality, coercivity, or another target theorem.
 
-Passing one gate does not compensate for failing another. The useful intermediate category must be lossy enough to avoid target reencoding, rigid enough to be source-forced, and rich enough to survive the exact destination quotient.
+A family generating function, zeta correction factor, principal residue, positive square, or large packet state is not sufficient unless the same object still carries the source relation that is supposed to do the mathematical work.
 
 ## Counterevidence / boundary
 
-The current closures are category-specific. Coefficient-algebra or modular insertions can escape the Möbius raw `*`-algebra; exact-order or coarse-mixing operators can escape the Prime-Circle module class; different dynamics or unbounded affiliated observables can escape ordinary affine KMS scalarization; and noncompact mixed-prime/archimedean couplings can escape the compact Weil-orientation no-go.
-
-Those exits remain possibilities, not evidence. Each must identify the exact invariant that survives its predecessor quotient and the replacement theorem preventing another algebraic closure, scalarization, conditioning collapse, or sign loss.
+These closures are category-specific. Nontranslation operators can leave the Prime-Circle packet algebra; other multiple-series residues/periods could retain nontrivial reciprocity while exposing a principal channel; singular/unbounded mixed sectors can leave the Weil finite-trace class. Those are open exits, not evidence.
 
 ## Epistemic status
 
-The component mathematical facts are persisted exact or literature-backed findings. Their combined gate structure is supported synthesis, not an RH theorem.
+**Supported cross-line relation-survival principle; no universal no-go theorem or RH implication is claimed.**
 
 ## Falsification criterion
 
-Produce a source-specific theorem whose decisive relation lies entirely inside one of the currently closed finite raw-algebra, coarse-module, ordinary KMS, or compact-completion categories yet still forces the target conclusion without an additional source coupling or orientation theorem. Such a result would show that one of the declared quotient gates was too strong.
+Produce a target theorem in one of the closed categories where the decisive source relation is provably absent from the final target-bearing object yet still supplies the conclusion without hidden reintroduction. A positive continuation should instead exhibit and verify the relation that survives the exact final quotient.

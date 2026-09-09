@@ -1,32 +1,32 @@
-# MI-008 — Stable transport is limited by the exact source and destination quotients, not by representation size
+# MI-008 — Exact recovery can become easier while target transport remains critically or superexponentially unstable
 
-**Evidence level:** cross-line exact transport/conditioning boundaries through AF-223, ANF-143, PF-244, and XF-139
+**Evidence level:** cross-line exact transport and conditioning boundaries through NB-009, PF-248, and XF-145
 
 ## Core intuition
 
-Exact representation, exact recovery, positive geometry, or a large state space do not determine whether the information needed by the final theorem is transported stably. The effective problem is controlled by the **source complexity actually admitted, the relation retained by intermediate quotients, physical/global dressing, and the condition number of the destination functional actually needed**.
+Exact representation, exact recovery, or positive geometry do not determine whether the information needed by the final theorem is transported stably. The effective problem is controlled by the **source class, the quotient retained by the intermediate object, and the quantitative modulus of the final target functional**.
 
-Recent evidence removes several generic warnings and replaces them with sharper gates. Same-profile analytic cascades can keep their geometry and finite conditioning under control; prime-flute high-high shear needs a very specific seam-locality theorem; faithful translation coordinates cannot nonlinearly stretch a dense source for free; and Xi local tomography remains exponentially blind even when one collects every sublinear logarithmic jet at vanishing macroscopic height.
+The newest evidence is especially diagnostic because several generic obstacles have become easier rather than harder. Nyman residual mismatch can be located much earlier than periodicity suggests; Prime-Flute fixed seam conversion is mode-local with a favorable free half-line smoothing window; Xi's full polynomial state can be identified by arbitrarily small moving real scans. Yet the respective target theorems remain open because localization is not coercivity, threshold stability is nontrivial, and state identification is not transition conditioning.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity now pairs a precise source sign-complexity currency with finite-order observation structure. AF-218--AF-220 give global strict sign regularity through order three and arbitrary prescribed finite order on separated-curvature windows, while AF-221--AF-223 show that faithful scalar/vector translation lifts are affinely rigid and stably so. The open issue is the tail-uniform modulus, not coordinate dimension.
+Nyman--Beurling separates identification from coercion. The full harmonic defect is singular off the target line, generic finite cutoffs alias, and periodicity gives only an exponential-scale witness. NB-009 uses one best-residual normal equation to force a witness at polylogarithmic index. This is genuine progress in transport, but it still does not improve the approximation distance until the witness is converted into aggregate finite energy or a dual bound.
 
-Analytic Frontier no longer has raw depth/slack/span or finite conditioning as its main transport risk. ANF-143 constructs exact same-profile cascades with positive residual slack, summable translated span, controlled support, and diagonalizable finite losses. The unresolved question is whether the late cloud is **non-excisably coupled to the source objective**.
+Prime Flute replaces an abstract spectral-mixing risk with an exact critical model. PF-247 gives two parity Jacobi chains; PF-248 shows an inverse-square trace-class tail at a first-moment threshold and a free half-line square-root kernel with fixed-row decay strong enough for every `R<5/2`. The desired `R>1` is therefore compatible with the free boundary, but stability under the specific critical tail and full-output norm remains the load-bearing modulus.
 
-Prime Flute identifies the needed local error modulus exactly. PF-240 says total scaled boundary gain greater than one is sufficient for strong trace class; PF-241--PF-243 reduce the geometry to one-sided separated Poisson smoothing; PF-244 proves that one-sided seam form domination and energy contraction cannot imply that smoothing because high-to-low spectral leakage may occur before propagation. The actual seam's spectral/microlocal locality is therefore the next load-bearing structure.
+Xi Flow makes the separation extreme. XF-143--XF-144 prove exact full-state recovery from two half-spacing real traces or one arbitrarily short moving real scan. XF-145 nevertheless constructs transition-separated matched states whose entire root-spacing real tube is superexponentially close on heat windows `o(1/N)`. For polynomially shorter windows, every `Lambda_per` decoder has condition number `exp(Omega(N log N))` even though the state map is injective.
 
-Xi Flow makes destination conditioning unavoidable. XF-130 gives exact one-channel state recovery, but XF-139 shows that for every sublinear jet depth `K_N=o(N)` there are transition-sharp matched controls whose entire zero-delay logarithmic jet is exponentially small at an observation height only `Theta(K_N)` root spacings from the divisor. Increasing local derivative depth sublinearly is not a stable replacement for a transition-specific quotient.
+Arithmetic Fidelity supplies a parallel representation warning: a shrinking-resolution marked representation can reduce alphabet cardinality without reducing information entropy. Representation economy is not target economy.
 
 ## Program consequence
 
-For every bridge, declare the source class/complexity, the exact intermediate quotient, the target functional, and the quantitative modulus connecting them. Remove a loss mechanism once an exact theorem closes it; do not continue paying for stale generic risks. Conversely, when an exact countermodel isolates a missing relation—source non-excisability, seam spectral locality, or target-specific conditioning—make that relation the theorem surface rather than reconstructing a larger state.
+For every bridge, state separately: exact identifiability, source-selected localization, finite coercivity, and target-functional conditioning. Improvements in the first two are valuable only when the next theorem converts them into the latter two.
 
-Also separate baseline-signal currency from error currency. A perturbation can be harmless because it is trace-class or otherwise summable without preserving the full signal envelope.
+When an exact matched control isolates the missing modulus—Nyman aggregate defect, Jacobi weighted square-root stability, Xi transition-time conditioning—make that modulus the theorem surface rather than enlarging the representation further.
 
 ## Counterevidence / boundary
 
-These are category-specific results, not one universal minimax theorem. ANF-143 does not prove fatality; AF-220 does not give a tail-uniform arbitrary-order modulus; PF-244 is an abstract seam countermodel rather than the canonical seam; XF-139 leaves linear-scale or source-restricted observations open.
+These are category-specific boundaries. NB-009 may yet aggregate efficiently; the PF critical Jacobi tail may preserve the free smoothing window; Xi observations at `1/N` heat scale or source-restricted classes may evade the short-time packet obstruction. None of the current negative results rules out those exits.
 
 ## Epistemic status
 
@@ -34,4 +34,4 @@ These are category-specific results, not one universal minimax theorem. ANF-143 
 
 ## Falsification criterion
 
-Produce a source-specific final theorem that remains uniform while violating the declared category boundaries—for example a non-affine faithful translation lift, a PF smoothing proof using only PF-244-level form data, or a uniformly stable decoder from XF-139 sublinear jets on the matched family. Positive results that add the missing source/seam/target relation should instead narrow this intuition.
+Produce a uniform target theorem inside one of the declared matched-control regimes—for example a new Nyman distance bound from witness existence alone, PF `R>1` smoothing without controlling the critical Jacobi tail, or a stable Xi transition decoder from the XF-145 short-time tube. A valid positive result that adds the missing modulus should instead narrow this intuition.

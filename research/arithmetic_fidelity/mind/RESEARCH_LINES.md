@@ -10,10 +10,16 @@ AF-215--AF-217 show that genuine prime support can sustain arbitrary Prouhet can
 
 The live theorem remains quantitative and scale-sensitive. Relate the source-forced sign budget to an observation window whose separation/curvature modulus survives the vanishing prime-tail mesh and the inverse problem at the scale required by the target.
 
-## Price every translation-coordinate repair in complexity, conditioning, or fidelity
+## Price translation repair in resolution, alphabet size, entropy, conditioning, or fidelity
 
 **Linked intuition:** `MI-019-faithful-translation-lifts-are-affine`.
 
-AF-221--AF-223 close scalar, vector-valued, and stable approximate attempts to stretch the dense prime log-log tail while preserving one faithful translation-difference profile: the representation is affine, or near-affine at the admitted error scale. AF-224 closes the simplest side-information escape as well. A fixed finite source mark alphabet cannot make the collapsing tail uniformly separated when the sample coordinate is shared and the mark-specific decoders remain uniformly resolvable; the required number of marks is bounded below by the local source density, which is infinite on every fixed prime-tail interval scale.
+AF-221--AF-224 close scalar, vector-valued, stable approximate, and bounded-mark attempts to stretch the dense prime log-log tail while preserving a faithful translation-difference profile. AF-225--AF-227 now quantify the first growing-mark escape exactly. On the one-dimensional source, the minimum proximity alphabet equals maximal local occupancy. For the prime tail, its normalized cardinality is governed by `r_Q log Q`, while the minimum **mark entropy** is governed by `log(1/r_Q)/log Q`.
 
-A useful escape must therefore pay explicitly through **growing source-specific mark complexity**, deteriorating inverse conditioning, nonvanishing representation error, mark-dependent sample geometry, or departure from the translation-difference category. Higher dimension, nonlinear coordinates, or a bounded label alphabet do not create separation for free.
+These are different currencies. A radius can shrink fast enough that the number of marks is `o(pi(Q))` while every valid marking still carries asymptotically the full prime identity in entropy. A useful repair must therefore state which resource is actually cheap: alphabet count, information rate, decoder conditioning, representation error, or source resolution. Merely allowing a growing alphabet does not establish compression.
+
+## Separate combinatorial compression from information compression
+
+At fixed positive source resolution, asymptotically one mark per prime is unavoidable. Sublinear alphabet size requires `r_Q log Q -> 0`, but sublinear normalized entropy requires the much stronger polynomial-scale collapse `log(1/r_Q)/log Q >= 1-o(1)`.
+
+A proposed tail representation should be tested against both phase laws whenever its labels are intended to carry source identity. Beating the cardinality bound while paying essentially full entropy is not a new low-complexity arithmetic channel.

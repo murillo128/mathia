@@ -2,18 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control spectral conversion of the actual seam relative to the corridor transverse operator
+## Transfer the free `R<5/2` separated Jacobi window to the actual critical parity chains
 
 **Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`, `MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency`.
 
-PF-228 and PF-233--PF-243 reduce the remaining high-high block to one-sided separated Robin-Poisson smoothing of order `R>1` with the actual complete-lift seam fixed. PF-244 proves that positivity, one-sided form domination, energy contraction, and spatial separation are insufficient because an abstract seam may convert arbitrarily high transverse input into a low mode before propagation.
+PF-228 and PF-233--PF-246 reduce the remaining high-high block to separated Robin-Poisson smoothing of order `R>1` and show why generic form domination, bare seam analyticity, or arbitrary seam mixing do not decide it. Exact commutation would give all-order smoothing but is stronger than the actual geometry.
 
-PF-245 shows that the actual seam removes arbitrary mixing in intrinsic complete-seam Fourier coordinates but still has no family-uniform supercritical analytic strip for its bare square root: branch points approach the critical distance `1`. PF-246 supplies the exact positive calibration on the other side. Whenever both seam normalizers are functions of the same transverse operator, separated normalized Robin source maps smooth to **all orders**, independently of seam size or coercivity.
+PF-247 identifies the fixed compactification in corridor modes as two parity Jacobi chains with nearest-neighbor coupling and essential spectrum `[0,1]`: coercivity fails critically but spectral conversion is mode-local rather than arbitrary. PF-248 sharpens the tail to `O(j^{-2})`, hence trace-class relative to the free half-line chain, while the first weighted moment diverges. The free half-line square-root kernel has boundary cancellation giving `n^{-3}` fixed-row decay.
 
-The live theorem is therefore not generic seam regularity or stronger scalar coercivity. It is quantitative control of **spectral conversion/noncommutation of the normalized actual seam relative to `K_a` after the fixed boundary compactification**. A successful bound may come from compatible pseudodifferential boundary calculus, an almost-commuting functional-calculus theorem, microlocal locality, or the finite physical trace realization.
+PF-249 closes the remaining **free-model full-output** ambiguity. After any fixed positive separation, the complete operator `E_d J_0^{1/2} N^R` is Hilbert--Schmidt exactly for `R<5/2` and is unbounded for `R>=5/2`. Summing all output modes therefore does not consume the free half-line margin: the entire interval `1<R<5/2` survives the exact norm geometry relevant to separated propagation.
 
-## Keep local shear closure separate from physical and global reassembly
+The live theorem is now narrower. Identify the actual normalized Robin scalar factor and prove that the specific first-moment-critical `O(j^{-2})` parity-Jacobi chains preserve **some** separated weighted gain `R>1`; only then spend that margin on the `T_a` replacement and hypercycle-coordinate perturbations.
 
-Thinness, direct far-mode jumps, low-touch shear, the amount of required smoothing, and commuting-seam calibrations are no longer unresolved. A uniform holomorphic strip for the raw seam square root is also unavailable and should not be charged as a hidden assumption.
+## Keep local Jacobi conversion separate from physical and global reassembly
 
-Once actual-seam spectral conversion yields the PF-243 estimate, the frontier moves to physical `P/H` recoupling, one-cusp-pant completion, neighboring-cell extension, and global weak-`S_1` reassembly. The all-composite endpoint clone remains a required arithmetic control.
+The constant half-line model, including full-output accumulation and positive separation, is now a calibrated positive control rather than an open risk. The unresolved local issue is variable critical-edge stability for the actual source map.
+
+If that estimate crosses the PF-243 threshold, the frontier moves to physical `P/H` recoupling, one-cusp-pant completion, neighboring-cell extension, and global weak-`S_1` reassembly. Low-touch shear terms remain strongly trace summable under the existing reciprocal-prime weight; the all-composite endpoint clone remains an independent arithmetic control.
