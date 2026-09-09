@@ -29,4 +29,4 @@ The proposed limit is a finite-area punctured-sphere surface `S_H` separated fro
 
 ## Later boundary
 
-The separate PF-015 many-cusp result shows that mere abundance of sub-`1/4` eigenvalues is topologically confounded even if the right-limit mechanism is completed. Exact locations or marked data remain a different question.
+The separate [[research/prime_flute/findings/PF-015-many-cusp-small-spectrum-is-topological|PF-015]] many-cusp result shows that mere abundance of sub-`1/4` eigenvalues is topologically confounded even if the right-limit mechanism is completed. Exact locations or marked data remain a different question.

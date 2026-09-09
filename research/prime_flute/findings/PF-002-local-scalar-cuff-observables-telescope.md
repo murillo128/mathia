@@ -12,7 +12,7 @@ If a local observable has a uniform small-mesh expansion
 F(h,z) = A(z) h + O(h^2),
 ```
 
-then PF-001 and `sum h_n^2<infinity` give
+then [[research/prime_flute/findings/PF-001-exact-cuff-coordinate|PF-001]] and `sum h_n^2<infinity` give
 
 ```text
 sum_{n=m}^N F(h_n,z)

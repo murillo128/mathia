@@ -12,7 +12,7 @@ Burger's small-eigenvalue degeneration theorem associates pinched separating geo
 lambda_j(surface)/lambda_j(graph) -> 1/pi.
 ```
 
-Combining this with PF-004 gives a canonical effective neck weight
+Combining this with [[research/prime_flute/findings/PF-004-four-prime-cross-ratio-geodesic-identity|PF-004]] gives a canonical effective neck weight
 
 ```text
 w(a,b,c,d)=L/pi

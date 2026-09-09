@@ -6,7 +6,7 @@
 
 ## Claim
 
-Pintz supplies arbitrarily large bounded clusters of consecutive primes preceded and followed by prime-free intervals whose lengths grow. For geometric exterior gaps `X,Z` and bounded internal span `Y`, PF-004 gives exactly
+Pintz supplies arbitrarily large bounded clusters of consecutive primes preceded and followed by prime-free intervals whose lengths grow. For geometric exterior gaps `X,Z` and bounded internal span `Y`, [[research/prime_flute/findings/PF-004-four-prime-cross-ratio-geodesic-identity|PF-004]] gives exactly
 
 ```text
 sinh(L/4)^2 = Y(1/X + 1/Z + Y/(XZ)).

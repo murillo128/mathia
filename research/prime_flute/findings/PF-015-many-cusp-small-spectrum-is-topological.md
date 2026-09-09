@@ -4,7 +4,7 @@
 
 ## Claim
 
-The abundance of Laplace eigenvalues below `1/4` on the finite-area punctured-sphere right limits proposed in PF-008 is not, by itself, a prime-specific spectral signature.
+The abundance of Laplace eigenvalues below `1/4` on the finite-area punctured-sphere right limits proposed in [[research/prime_flute/findings/PF-008-right-limit-islands-subquarter-essential-spectrum|PF-008]] is not, by itself, a prime-specific spectral signature.
 
 Let `S` be a finite-area hyperbolic surface of genus `g` with `n` cusps. Hide and Thomas prove that for every `a > 0` there is `b > 0` such that, whenever
 

@@ -6,7 +6,7 @@
 
 ## Claim
 
-Pintz supplies a three-gap subsequence on which the central gap is tiny relative to both neighbors. Applying PF-004 to four consecutive endpoint blocks gives asymptotically
+Pintz supplies a three-gap subsequence on which the central gap is tiny relative to both neighbors. Applying [[research/prime_flute/findings/PF-004-four-prime-cross-ratio-geodesic-identity|PF-004]] to four consecutive endpoint blocks gives asymptotically
 
 ```text
 chi_n ~ g_n/g_{n-1} + g_n/g_{n+1}
