@@ -13,6 +13,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - Srinivasa Ramanujan, *On Certain Trigonometrical Sums and Their Applications in the Theory of Numbers*, Transactions of the Cambridge Philosophical Society **22** (1918), 259--276. Role: classical source for Ramanujan sums and their divisor arithmetic used to derive the exact shell Fourier and Gram identities in `FD-001`.
 - Paolo Codecà and Alberto Perelli, *On the uniform distribution (mod 1) of the Farey fractions and l^p spaces*, Mathematische Annalen **279** (1988), 413--422, DOI `10.1007/BF01456278`. Role: neighboring harmonic-analysis prior-art boundary for Farey uniform distribution and RH-sensitive norm estimates; `FD-001` does not claim that harmonic analysis of Farey fractions is new.
 
+## Absolute-discrepancy endpoint barrier
+
+- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic.
+
 ## Empirical-distribution quadratic identity
 
 - Harald Cramér, *On the Composition of Elementary Errors: Second Paper: Statistical Applications*, Scandinavian Actuarial Journal **1928** (1928), 141--180, DOI `10.1080/03461238.1928.10416872`. Role: classical source boundary for the Cramér--von Mises integrated empirical-distribution quadratic statistic whose ordered-sample formula is specialized to the Farey endpoint grid in `FD-002`.
