@@ -15,7 +15,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Absolute-discrepancy endpoint barrier
 
-- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infinity` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic.
+- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic.
 
 ## Empirical-distribution quadratic identity
 
