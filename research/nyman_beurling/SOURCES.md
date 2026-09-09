@@ -20,6 +20,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 - Srinivasa Ramanujan, *On certain trigonometrical sums and their applications in the theory of numbers*, Trans. Cambridge Philos. Soc. 22 (1918), no. 13, 259–276, [original paper](https://ramanujan.sirinudi.org/Volumes/published/ram21.pdf). Role: classical prior-art boundary for the Ramanujan sums used to diagonalize finite divisibility contrasts in `NB-012`; the specific finite Nyman normal-equation transform is derived in the finding.
 - H. L. Montgomery and R. C. Vaughan, *Hilbert's Inequality*, J. London Math. Soc. (2) 8 (1974), 73–82, DOI `10.1112/jlms/s2-8.1.73`. Role: generalized Hilbert inequality for separated frequencies; `NB-012` uses its standard two-sided lower-frame corollary for reduced rational frequencies with denominator at most `L`.
 
+## Multiplication-table geometry
+
+- Kevin Ford, *The distribution of integers with a divisor in a given interval*, Ann. of Math. (2) 168 (2008), 367–433, DOI `10.4007/annals.2008.168.367`, [journal version](https://annals.math.princeton.edu/2008/168-2/p01), [arXiv:math/0401223](https://arxiv.org/abs/math/0401223). Role: Corollary 3 gives the order of magnitude of the number of distinct entries in an `N x N` multiplication table; `NB-016` uses it after an exact quotient-frame identification to quantify the rank sparsity of the compressed Nyman enrichment operator.
+
 ## Expansion rule
 
-Add a primary source when a canonical finding depends on an exact quantitative approximation theorem, Gram asymptotic, dual formulation, or best-approximation bound. Do not turn `SOURCES.md` into a bibliography of every Nyman–Beurling paper.
+Add a primary source when a canonical finding depends on an exact quantitative approximation theorem, Gram asymptotic, dual formulation, best-approximation bound, or other specialized external estimate. Do not turn `SOURCES.md` into a bibliography of every Nyman–Beurling paper.
