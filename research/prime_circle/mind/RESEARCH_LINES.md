@@ -2,19 +2,17 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Exploit growing squarefree mask locality only through cross-level structure beyond fixed-level Ramanujan compression
+## Require source-forced collective conductor geometry beyond Ramanujan-compressed fixed-level data
 
 **Linked intuitions:** `MI-011-scalar-fourier-zero-existence-is-deformation-dependent`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`.
 
-PC-197--PC-213 close the fixed finite scalar packet algebra, separated finite-valence Hardy lifts, the canonical weighted-cover shift, the scalar Haar-refinement star algebra, and prime-power/profinite mask incidence. Direct prime-power coupling before scalar contraction still leaves only classical anchored arithmetic or prime-local support geometry.
+PC-197--PC-220 classify the fixed-level scalar and spectral wrappers around the cyclotomic masks. Mixed squarefree masks retain genuine growing tensor locality, but phase transport is a coboundary, packet metrics classicalize to discriminant/Dirichlet data, and the full nonzero transverse spectrum is a signed compression of the standard Ramanujan/exact-order Fourier projector to cyclotomic coefficient support.
 
-PC-214--PC-215 show that mixed-composite masks change that conclusion in a precise but limited way. For `N=pq`, the exact-order transverse compression is a bounded-complexity Kronecker sum. For squarefree `N` with `k=omega(N)` distinct primes, however, the same canonical compression has exact tensor locality `k-1`: genuine growing multi-coordinate incidence survives and cannot be represented by uniformly bounded-valence tensor terms.
+PC-221 closes the most direct cross-sector repair at one conductor. The complete unweighted Feshbach/leakage response from the exact-order sector to all proper conductor sectors again factors through the coefficient data and Ramanujan projections; the total conductor-path resolution is complete but not a new arithmetic carrier. In particular, the mere presence of all lower-conductor sectors does not evade fixed-level compression.
 
-PC-216 kills the first phase-holonomic interpretation: every proper-divisor cyclotomic root value is an exact commuting multiplicative finite difference of a lower-conductor derivative potential, so prime-ordering curvature and coefficient holonomy vanish. PC-217 closes the packetwise metric repair: one reduced-conductor logarithmic modulus/singular-value packet is classical discriminant plus even Dirichlet `L(1,chi)` data.
+PC-222 also closes the canonical scalar source-weighting repair. Common-anchor Mangoldt weighting selects prime-primary axes, and scalar functional calculus of that anchor cannot create a genuinely collective mixed-conductor interaction. The remaining mixed squarefree information can only matter through an operation that is not determined by independent prime-axis scalar weights.
 
-PC-218--PC-219 classify nullity and inertia of the full transverse compression by the support and sign counts of the cyclotomic coefficients. PC-220 now closes the remaining **fixed-level nonzero spectral wrapper**. After the exact support-space reduction, the complete nonzero spectrum is that of `D_n C_n`, equivalently `C_n^(1/2) D_n C_n^(1/2)`, where `D_n` is the cyclotomic coefficient diagonal and `C_n(r,s)=c_n(r-s)` is the standard Ramanujan/exact-order Fourier projector compressed to coefficient support. Eigenvalue magnitudes and spacings may still be arithmetically complicated, but at one level they contain no hidden primitive-root phase channel beyond signed cyclotomic support placed inside a classical Ramanujan/gcd kernel.
-
-The live mixed-mask route is therefore **cross-level or genuinely collective before fixed-level compression**. A useful invariant must relate several conductors/refinement levels, exploit growing squarefree locality in a way not determined by the individual cyclotomic coefficient vectors and Ramanujan projection kernels, or introduce another source-forced non-Haar/non-coboundary operation before the PC-220 reduction. Fixed-level spectrum, inertia, packet metrics, and root-value phase transport are now boundary models rather than candidate selectors.
+The live route is therefore sharper than “cross-level.” It must exhibit a **source-forced selective conductor topology or repeated noncommuting mask-mediated operation** whose output depends on relative multi-axis geometry before it collapses to coefficient/Ramanujan data. Repeated mask words, principal-angle geometry among prime-primary sectors, or another collective refinement operation are admissible candidates only if an exact information-gain test separates them from matched controls preserving all one-axis and scalar quotient data. The current cross-level mixed-conductor clue states this gate explicitly.
 
 ## Leave one-shell reciprocal Fourier zeros unless the source selects the deformation
 
@@ -22,4 +20,4 @@ PC-193--PC-196 show that scalar reciprocal-shell Fourier sign, zero existence, a
 
 ## Keep topology and realization separate from cyclotomic/operator identities
 
-Potential-theoretic, geometric, old/new-fiber, nonabelian, non-Haar infinite-refinement, joint-algebra, or monodromy enlargements remain live only when the required object exists canonically and retains information beyond the classified packet/Toeplitz/Smirnov/Haar/profinite/Ramanujan-compression data. A larger state space is not a mechanism if a natural transform, support compression, coboundary, congruence, or refinement identity sends it back to universal operator structure.
+Potential-theoretic, geometric, old/new-fiber, nonabelian, non-Haar infinite-refinement, joint-algebra, or monodromy enlargements remain live only when the required object exists canonically and retains information beyond the classified coefficient, Ramanujan, conductor-resolution, and scalar-anchor data. A larger state space is not a mechanism if a natural compression sends it back to those controls.

@@ -2,32 +2,28 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Recover first-absolute excursion from information that survives divisor-topology and coefficient-algebra controls
+## Recover first-absolute excursion from information that survives both depth and scalarization controls
 
 **Linked intuition:** `MI-004-mean-absolute-cancellation-needs-excursion-coupled-information`.
 
-The endpoint is already sharp: square-root-scale first-absolute Mertens control on any unbounded checkpoint sequence is RH-complete. MC-122--MC-132 close broad finite-state, path-type, periodic-clock, and controlled moment summaries. MC-133--MC-137 then push the topological route further: the divisibility complex and its ordinary persistence already encode the hard Möbius sign in target-equivalent form, while the natural dyadic star/coning extensions do not manufacture a cheaper long-range excursion carrier.
+The endpoint remains sharp: square-root-scale first-absolute Mertens control on any unbounded checkpoint sequence is RH-complete. MC-122--MC-153 close broad finite-state, topological, scalar-weighted, and every fixed finite prime-factor-depth summary. The parity-truncated controls show that exact local multiplicative structure through any prescribed finite depth can coexist with linear summatory bias.
 
-The surviving source must therefore retain order or arithmetic relations that are neither finite/quasi-polynomial summaries nor a topological recoding whose signed observable is already `M`. A useful theorem must connect such a relation quantitatively to first-absolute excursion at a cost genuinely below the RH-complete endpoint.
+MC-154--MC-155 remove the simplest proposed escape from that theorem. Passing from every fixed depth to the **entire all-depth hierarchy of scalar commutator magnitudes, row norms, and standard scalar aggregations** still does not recover cancellation: one support-matched biased control reproduces the whole hierarchy. Unbounded depth is therefore not by itself a new information category.
 
-## Seek an unbounded-depth or genuinely relational Bost--Connes category
+MC-156--MC-160 classify the opposite signed scalar direction. A single-prime pulled-back signed commutator already reconstructs the Möbius diagonal by a cubic polynomial, and scalar spectral filters obey a support/orientation dichotomy: even data are cancellation-blind, while any nontrivial odd orientation component recovers Mertens information across dilated scales. Finite joint-prime and infinite-prime linear scalarizations retain the same basic failure mode. The signed scalar route is therefore either too weak or target-complete rather than an intermediate bridge.
 
-**Linked intuition:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`.
+The live source must be **genuinely relational and non-scalar**. It should retain an interaction among prime channels that survives the all-depth magnitude controls but does not permit exact reconstruction of the complete Möbius sign field or Mertens sums. The existing proposed decoder-stability clue captures the right falsification gate: a candidate should be stable under source-compatible reencoding and yield a quantitative excursion consequence strictly cheaper than reconstructing the target.
 
-MC-138--MC-149 classify the two topology extremes and the first canonical regularity repairs. Profinite-continuous scalarizations cannot uniformly recover Möbius orientation; unrestricted weak completion is target-complete; canonical energy regularity is blind to every bounded diagonal; and raw semigroup commutator boundedness is universal while compact/Schatten decay rejects Möbius itself.
+## Treat scalar Bost--Connes commutator regularity as a classified boundary
 
-MC-150--MC-151 close the simplest weighted repair. Prime-semigroup rows with arbitrary scalar weights and any external `ell^q` aggregation are controlled exactly by the chosen scalar weight budget; the apparent Dirichlet critical exponent moves with `q` and does not select Möbius. MC-152 shows that splitting first commutators by the canonical divisibility projections still loses the iterated parity coherence.
+Prime-semigroup row weights, arbitrary `ell^q` aggregation, divisibility splitting, fixed-depth mixed differences, all-depth scalar magnitudes, and signed scalar filters now form a nearly complete control ladder. Increasing depth, changing scalar norms, or preserving orientation in a one-dimensional readout does not create an intermediate arithmetic category.
 
-MC-153 then closes every **fixed finite depth** of canonical mixed prime commutators. Mixed commutators are multiplicative finite differences, and a parity-truncated squarefree control `b_R` matches the entire depth-`R` norm hierarchy — including arbitrary scalar row weights and `ell^q` aggregation — while its summatory function has linear bias. Finite-depth access can read the first `R` layers of prime-factor parity perfectly and still miss global Möbius cancellation.
+A useful Bost--Connes continuation must make its non-scalar relation explicit before assigning cancellation meaning to it: for example a source-forced joint state geometry, operator-valued correlation, noncommuting module relation, or another representation-sensitive object whose retained information can be compared against matched biased controls. Merely hiding a target-complete decoder in a richer operator notation does not qualify.
 
-The live Bost--Connes question is therefore narrower: identify a source-forced **unbounded-depth, state-relational, genuinely non-scalar/twisted, representation-sensitive, or otherwise nonlocal** transverse structure that still admits Möbius, excludes the parity-truncated controls, and yields a non-tautological quantitative bridge from multiplicative structure to anchored additive Mertens excursion. The retained information must also be demonstrably cheaper than reconstructing the complete Möbius parity field itself.
+## Treat finite-state vocabulary growth and scalar prime-factor vocabulary as closed until they change order topology
 
-## Treat finite-state vocabulary growth and fixed-depth prime-factor vocabulary as closed until they change order topology
-
-Adding context length, modular height, finitely many future steps, periodic phases, finitely/moderately many polynomial timestamp moments, scalar prime weights, or any fixed number of mixed prime-difference layers enlarges the description but still admits exact matched controls. A local enrichment should first be tested for whether it factors through a finite product/path/depth summary before cancellation meaning is assigned to it.
+Adding context length, modular height, finitely many future steps, periodic phases, polynomial timestamp moments, scalar prime weights, any prescribed finite number of mixed prime-difference layers, or the complete scalar norm hierarchy enlarges the description without establishing excursion information. A local enrichment should first be tested for factorization through one of these classified summaries.
 
 ## Require the source theorem to be Möbius-specific but not target-equivalent
 
-Generic matched controls need not satisfy Möbius multiplicativity, square-free support, prime values, or divisor identities, so exact arithmetic remains a legitimate escape. The converse warning is equally important: MC-133--MC-153 show that a representation can be fully Möbius-specific or cyclotomic and still store the hard sign only as an equivalent encoding, lose it under a natural continuity quotient, admit every bounded target after completion, reject Möbius under over-strong regularity, or capture every fixed prime-factor depth while missing the tail parity that drives global bias.
-
-A positive theorem must identify an arithmetic relation that forbids the known rearrangement/product/profinite/target-complete/scalar-row/fixed-depth controls and yields an independently controlled quantity strictly cheaper than the Mertens endpoint.
+Generic controls need not satisfy Möbius multiplicativity, square-free support, prime values, or divisor identities, so exact arithmetic remains a legitimate escape. The converse warning is now stronger: a representation can encode arbitrarily deep Möbius-local structure and still miss additive cancellation, while a signed scalar commutator can cross directly to complete target recovery. The desired theorem lies strictly between those extremes.

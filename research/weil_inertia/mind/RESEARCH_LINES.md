@@ -2,31 +2,25 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-fixed diagonal-scale `L^2` cancellation only below the current source-safe every-interval cutoff
+## Prove source-fixed diagonal-scale `L^2` cancellation in the regime that reservoir theorems cannot prune
 
 **Linked intuition:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-183--WI-195 reduce the count-saturating bow to an exact von-Mangoldt source problem. With triangular height localization, the full coupled covariance is exactly a multiplicative short-interval `L^2` norm. WI-196 closes the natural averaging repair: positivity, exact bandwidth, and an asymptotically diagonal long twist average cannot give a positive lower bound at one distinguished source-fixed center. WI-197 closes the black-box one-variable repair: even the strongest polynomial input admitted by the published MRSTT Type-II lemma remains polynomially above the bow's required diagonal scale after that transference module.
+WI-183--WI-197 reduce the count-saturating bow to an exact source-fixed von-Mangoldt covariance problem. Triangular height localization identifies the coupled multiplicative short-interval `L^2` norm, while long twist averaging and the available black-box one-variable Type-II input fail at the required diagonal scale. The hard quantity is distinguished cancellation, not typical variance.
 
-WI-198 used Karatsuba's every-interval critical-line theorem to exclude count-saturating fixed-power bows above `27/82`. WI-199 adds an independent local-density restriction in that range: bounded-spacing source-selected bows can contain only an exponentially small fraction of labels at fixed normalized horizontal depth and a power-saving fraction at fixed physical depth.
+WI-198--WI-202 use independent every-interval critical-line reservoirs to prune part of the bow family. After correcting the unsupported Bourgain--Watt specialization, the currently audited ordinary exponent-pair input gives the exact numerical threshold `3943/12011`; count-saturating fixed-power bows and the explicit fixed-physical-depth plateau are excluded for every fixed `vartheta` above that value. The normalized-depth screening statement remains a different theorem surface and retains its `27/82` source-safe frontier.
 
-WI-200 attempted to lower the count-saturation/fixed-physical-depth cutoff to `1515/4816` by inserting a purported Bourgain--Watt ordinary exponent pair into Khayrulloev's and Rakhmonov's generic exponent-pair theorems. WI-201 corrects that step after primary-source audit. The Bourgain--Watt value `1515/4816` belongs to a zeta mean-square/short-interval estimate and is **not** established there as an ordinary exponent-pair value; using it as such would imply a circle/divisor improvement the cited paper explicitly does not claim. The numerical `1515/4816` frontier is therefore withdrawn.
+WI-203 adds a structural endpoint to the entire generic exponent-pair route. For every ordinary exponent pair, the Khayrulloev--Rakhmonov interval exponent satisfies `theta >= 1/4`, with equality only at the conjectural `(0,1/2)` pair. Even the exponent-pair conjecture therefore cannot push this reservoir architecture below fixed bow exponent `1/4`, and the endpoint itself is missed because of the bow's logarithmic span loss.
 
-WI-202 supplies a valid modern replacement. The current ANTEDB records `(89/3478,15327/17390)` as an ordinary exponent pair; applying the standard `B`-process gives `(3316/8695,914/1739)`, hence the exact Khayrulloev--Rakhmonov threshold
+WI-204 closes the tempting almost-all replacement. Thickening one count-saturating bow to all internal Karatsuba micro-window starts still produces a bad-start set far smaller than the theorem's permitted exceptional set throughout `0<vartheta<1/2`. An almost-all theorem cannot control the source-selected bow merely because the bow has positive vertical length unless its exception budget is dramatically stronger.
 
-\[
-\theta=\frac{3943}{12011}=0.3282824077928565\ldots<\frac{27}{82}.
-\]
-
-As of the ANTEDB state audited on 8 September 2026, this is the minimum of `theta=(kappa+lambda)/(2kappa+2)` over its recorded convex hull of known exponent pairs. Therefore count-saturating fixed-power bows and the explicit fixed-physical-depth Maynard--Pratt plateau are removed for every fixed `vartheta>3943/12011`, while the endpoint remains open. The distinguished covariance obstruction is needed for the count-saturating fixed-power bow only in the surviving range `0<vartheta<=3943/12011` unless a stronger every-interval input is found.
-
-The normalized-depth screening statement is deliberately kept separate: WI-199's exponential tail in `A=(beta-1/2) log T` is still source-safe only above `27/82`. Rakhmonov's generic theorem transports the fixed-physical-depth exclusion below `27/82`, but its near-line exponent does not reproduce that screening tail.
+The current frontier has two layers. Better verified exponent pairs can still narrow the numerical interval between `1/4` and `3943/12011`, but **no ordinary exponent-pair improvement can remove `0<vartheta<=1/4` through the present every-interval interface**. In that structural hard regime, progress requires a source-fixed covariance theorem, an every-interval input outside the exponent-pair threshold architecture, or another source relation that directly forbids the distinguished bow.
 
 ## Keep screening, activation, visibility, resolution, alias geometry, norm strength, and zero-count reservoirs separate
 
-A theorem may match interval length and twist range and still be unusable because its norm is one power of the short interval too large. Likewise a long-average theorem may certify typical behavior while leaving the distinguished source-selected center unconstrained. WI-198--WI-202 add another discipline: a numerically stronger reservoir cutoff is usable only when the load-bearing analytic input has the exact theorem type required by the downstream argument.
+A theorem may match interval length and twist range and still be unusable because its norm is one power of the short interval too large. A long-average or almost-all theorem may certify typical behavior while leaving the distinguished source-selected center inside its exceptional set. A numerically stronger exponent is usable only when its theorem type matches the downstream reservoir argument.
 
-The current source-safe numerical every-interval/fixed-physical-depth frontier is `3943/12011`; the stronger normalized-depth screening frontier remains `27/82`. Khayrulloev's and Rakhmonov's generic exponent-pair surfaces can improve the former when supplied with a verified compatible exponent pair, but a numerically similar zeta mean-square or circle/divisor exponent cannot be substituted by value alone. Every proposed estimate should state exactly which reservoir or source norm it improves and preserve the primary-source provenance of its exponent.
+The audited current every-interval/fixed-physical-depth frontier is `3943/12011`; the generic exponent-pair architecture has the exact theoretical floor `1/4`; and the normalized-depth screening frontier remains `27/82`. These are different currencies and should not be substituted for one another.
 
 ## Use the Gallagher bridge before further phase transforms
 
@@ -34,4 +28,4 @@ The exact multiplicative triangular identity remains the most source-faithful re
 
 ## Keep off-line mass, multiplicity, distinct count, critical-line reservoir, and arithmetic coefficient structure separate
 
-No improvement in one reservoir substitutes for another without a proved bridge. The Atkinson phase is classical; any genuinely new coercivity in the surviving bow regime must come from the shifted von-Mangoldt coefficient and its joint source-fixed variance or from an independent source relation. Above the current source-safe count-saturation cutoff, count-saturating/deep-plateau models may be removed only by the audited reservoir theorem actually available; unsupported numerical specializations must not be used to narrow the covariance frontier.
+No improvement in one reservoir substitutes for another without a proved bridge. Above the current audited cutoff, zero reservoirs remove count-saturating models; below the structural quarter barrier the unresolved information is the shifted von-Mangoldt coefficient and its joint source-fixed variance unless a genuinely different source theorem is found.
