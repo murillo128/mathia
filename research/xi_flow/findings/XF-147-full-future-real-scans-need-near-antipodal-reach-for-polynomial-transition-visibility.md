@@ -276,7 +276,7 @@ Two witnesses give matching lower bounds in the two aperture regimes.
 First, XF-146 proves that at the center and at
 
 \[
-as_N=\frac{\log N}{N},
+a s_N=\frac{\log N}{N},
 \tag{27}
 \]
 
