@@ -18,6 +18,11 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - Harald Cramér, *On the Composition of Elementary Errors: Second Paper: Statistical Applications*, Scandinavian Actuarial Journal **1928** (1928), 141--180, DOI `10.1080/03461238.1928.10416872`. Role: classical source boundary for the Cramér--von Mises integrated empirical-distribution quadratic statistic whose ordered-sample formula is specialized to the Farey endpoint grid in `FD-002`.
 - Richard von Mises, *Wahrscheinlichkeit, Statistik und Wahrheit*, Springer, Berlin, 1928, DOI `10.1007/978-3-662-36230-3`. Role: classical source boundary for the same integrated-distribution quadratic criterion; `FD-002` proves its required Farey specialization directly and does not import statistical asymptotics.
 
+## GCD-matrix factorization and duality
+
+- H. J. S. Smith, *On the Value of a Certain Arithmetical Determinant*, Proceedings of the London Mathematical Society **s1-7** (1875), 208--213, DOI `10.1112/plms/s1-7.1.208`. Role: classical origin of GCD-matrix determinant factorization; `FD-003` specializes the Smith/Jordan divisor-incidence mechanism to the normalized square-GCD kernel arising from the Franel--Mertens energy.
+- Pentti Haukkanen, Wang Jun and Juha Sillanpää, *On Smith's determinant*, Linear Algebra and its Applications **258** (1997), 251--269. Role: modern generalized Smith-matrix factorization/inverse prior-art boundary. `FD-003` derives the required finite factorization directly and does not claim GCD-matrix inversion or meet-matrix algebra as new.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
