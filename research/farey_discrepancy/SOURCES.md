@@ -15,7 +15,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Absolute-discrepancy endpoint barrier
 
-- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic.
+- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infinity` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic.
 
 ## Empirical-distribution quadratic identity
 
@@ -46,6 +46,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - Volker Augustin, Florin P. Boca, Cristian Cobeli and Alexandru Zaharescu, *The h-spacing distribution between Farey points*, Mathematical Proceedings of the Cambridge Philosophical Society **131**(1) (2001), 23--38, DOI `10.1017/S0305004101005187`. Role: primary prior-art boundary for fixed-`h` local Farey spacing distributions. `FD-013` does not claim local Farey gap statistics are new; it isolates what a complete first-order local gap inventory cannot coerce about cumulative rank-grid discrepancy.
 - Philippe Jacquet, Charles Knessl and Wojciech Szpankowski, *Counting Markov Types*, DMTCS Proceedings vol. AM, AofA'10 (2010), DOI `10.46298/dmtcs.2768`. Role: prior-art boundary for first-order Markov-type terminology as exact adjacent-pair frequency data. `FD-013` derives its binary matched-control pair directly and does not import Markov-type enumeration estimates.
 - Rogelio Tomás García, *A General Lower Bound for Average Local Discrepancy and an Application to the Farey Sequence*, Mathematics **14** (2026), 2543, DOI `10.3390/math14142543`. Role: current prior-art boundary for the effect of gap ordering and same-gap permutation families on average local Farey discrepancy. `FD-013` studies a different exact quadratic control in which reflection and all adjacent ordered gap-pair counts are additionally fixed.
+
+## Extremal set-theory auxiliary input
+
+- Emanuel Sperner, *Ein Satz über Untermengen einer endlichen Menge*, Mathematische Zeitschrift **27** (1928), 544--548, EuDML `167993`. Role: primary source for Sperner's theorem that an antichain in the Boolean lattice has size at most the central binomial coefficient. `FD-015` applies this classical bound only after deriving a Farey--Mertens GCD-duality non-saturation relation on comparable squarefree divisor-lattice horizons.
 
 ## Expansion rule
 
