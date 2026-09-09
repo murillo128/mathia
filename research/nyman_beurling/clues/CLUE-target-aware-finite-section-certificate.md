@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-target-aware-finite-section-certificate
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -16,7 +16,7 @@ based_on:
 
 ## Observation
 
-The line currently has a mandate and literature anchors but no canonical finding. Two independent Mathia controls now sharpen its first theorem-shaped problem.
+The line began with a mandate and literature anchors but no canonical finding. Two independent Mathia controls sharpened its first theorem-shaped problem.
 
 Prime Lattice shows that multiplying every Hardy generator by the same inner function `B` preserves every generator Gram matrix while changing the distance to the fixed target `k_1=1/s` by the term `1-|B(1)|^2`. A Gram spectrum or condition number therefore does not settle the target problem.
 
@@ -45,3 +45,13 @@ Then compare the growing-section statistic with both controls: the common-inner-
 ## Evidence boundary
 
 No approximation rate or limiting dual obstruction is supplied here. WP-168 is a redirect from Weil Positivity, not evidence that the dormant Nyman line already has a new RH mechanism. The inner-factor control is a test of retained target information, not a construction of off-line zeta zeros. Standard projection and Mellin identities are baseline tools; the unresolved output is a stable target-relative arithmetic estimate or a scoped obstruction beyond them.
+
+## Research disposition
+
+Accepted. `NB-001` independently reconstructs the finite Hardy-space problem and proves the exact target-aware certificate
+
+`d_N^2 = 1 - b_N^* G_N^+ b_N`, with `(b_N)_k = -log(k)/k`.
+
+It also derives an explicit common-inner matched control: multiplication by `B_*(s)=(s-1)/s` preserves the **entire** generator Gram matrix while forcing the fixed target to be orthogonal to the twisted span. This validates the clue's central finite-section distinction without relying on cross-line source files. The cited cross-line statements remain transferred motivation rather than local evidence because this clue contains no bounded source-reading grant.
+
+The unresolved question is quantitative and asymptotic: control `b_N^*G_N^+b_N`, or an equivalent normed dual residual, uniformly through the small-eigenvalue/tail regime at a scale that is informative relative to the known zero-sensitive Nyman approximation bounds. Gram geometry alone is now excluded as a sufficient certificate, but no uniform target-relative rate has been established.
