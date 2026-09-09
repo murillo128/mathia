@@ -76,6 +76,7 @@ This file records durable sources that support or constrain findings in `researc
 - Adam J. Harper, **Simple Barban--Davenport--Halberstam type asymptotics for general sequences**, *J. London Math. Soc.* 112 (2025), e70293, DOI `10.1112/jlms.70293`. Role for WI-052: recent authoritative statement of the classical Barban--Davenport--Halberstam/Gallagher/Montgomery--Hooley formulas and their ranges; in particular it records that Gallagher's simpler `xQ log x` upper bound is stated for `x log^{-A}x <= Q <= x`, while Hooley's refined formula is available for all `Q<=x` with the `x^2/log^A x` small-modulus error.
 
 ## Long-shift prime-correlation input for the one-sided fourth-moment audit
+
 - Kaisa Matomäki, Maksym Radziwiłł and Terence Tao, **Correlations of the von Mangoldt and higher divisor functions I. Long shift ranges**, *Proc. London Math. Soc.* 118 (2019), 284--350; arXiv:1707.01315v3; DOI `10.1112/plms.12181`. Role for WI-034: primary source for Theorem 1.3(i), which gives the Hardy--Littlewood asymptotic for all but `O(H log^{-A} X)` shifts in `|h-h0|<=H` when `X^(8/33+epsilon)<=H<=X^(1-epsilon)`. WI-034 records that the `L^2` “variance form” printed by the Yang--Yang candidate is a derived good/bad-shift corollary rather than the literal theorem statement, and audits the subsequent divisor-multiplicity aggregation for structured shifts `h=qk`.
 
 ## Finite-complexity prime-pattern input for the welding audit
