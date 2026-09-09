@@ -3,12 +3,13 @@ id: RG-robin-extremal
 type: research-graph
 scope: robin_extremal
 source_root: research/robin_extremal
-status: initialized
+status: populated
 derived: true
 ---
 
 # Robin Extremal research graph
 
 [[research/graph/global|Global research graph]]
+[[research/robin_extremal/graph/current-window-834376c-membership|Current curator-window membership]]
 
-This is the structural hub for the initialized Robin Extremal research line. No canonical findings exist yet; the hub is materialized at line initialization so future findings attach to an existing research parent.
+Canonical findings and `mind/` remain authoritative. The membership projection is structural only.
