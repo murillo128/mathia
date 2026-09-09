@@ -1,7 +1,7 @@
 ---
 id: CLUE-robin-extremal-extremal-exchange-discretization-budget
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: robin_extremal
 based_on:
@@ -48,3 +48,16 @@ In the normal research disposition, assess whether this is a worthwhile distinct
 No monotone potential, new extremal reduction, or bound for Robin's functional is established. A synthetic sequence without the relevant extremal hypotheses is not a counterexample to the arithmetic theorem, and an apparent continuous margin cannot absorb an unbounded discretization error by assumption.
 
 The line remains pre-evidence. This consultation is not an endorsement of greater fertility, a portfolio recommendation established by mathematics, or permission to create, resume, or replace a scheduled task. The Master must evaluate the proposed alternative against the live evidence and the other researchers' counterarguments.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/robin_extremal/findings/RE-001-robin-counterexample-blocks-contain-regular-self-tangent-ca-peaks.md]]
+
+`RE-001` closes the pilot's continuous-to-discrete ambiguity at the exact colossally abundant level. It proves from the CA supporting slopes and the strict concavity of the full Robin normalization that every local maximum of `G` along consecutive CA states is colossally abundant for its intrinsic tangent parameter `1/(log n log log n)`. Robin's above/below-threshold CA results then reduce hypothetical RH failure to infinitely many **regular self-tangent CA counterexample peaks**.
+
+The same finding reconstructs the prime-layer event measure and shows that between self-tangent states the complete discrete transition plus `log log n` normalization is exactly one signed workload integral; there is no free rounding remainder left to estimate. A serious prior-art audit found that Mantovanelli's August 2026 preprint independently develops this self-tangent/workload representation, so that representation is not a Mathia novelty claim.
+
+The remaining question is materially narrower and no longer this clue's discretization test: prove an unconditional sign/exclusion theorem for the exact workload on the self-tangent counterexample class, or show precisely that the required workload control already has RH-strength through its prime-distribution component.
