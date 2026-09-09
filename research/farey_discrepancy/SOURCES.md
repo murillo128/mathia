@@ -23,6 +23,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - H. J. S. Smith, *On the Value of a Certain Arithmetical Determinant*, Proceedings of the London Mathematical Society **s1-7** (1875), 208--213, DOI `10.1112/plms/s1-7.1.208`. Role: classical origin of GCD-matrix determinant factorization; `FD-003` specializes the Smith/Jordan divisor-incidence mechanism to the normalized square-GCD kernel arising from the Franel--Mertens energy.
 - Pentti Haukkanen, Wang Jun and Juha Sillanpää, *On Smith's determinant*, Linear Algebra and its Applications **258** (1997), 251--269. Role: modern generalized Smith-matrix factorization/inverse prior-art boundary. `FD-003` derives the required finite factorization directly and does not claim GCD-matrix inversion or meet-matrix algebra as new.
 
+## Möbius floor-quotient recurrence
+
+- Marc Deléglise and Joël Rivat, *Computing the Summation of the Möbius Function*, Experimental Mathematics **5**(4) (1996), 291--295, DOI `10.1080/10586458.1996.10504594`. Role: primary computational prior-art boundary for the classical floor-quotient Möbius recurrence used to compute isolated Mertens values. `FD-005` derives the exact identity `sum_(d<=N) M(floor(N/d))=1` directly and uses it only as an affine compatibility constraint on the Franel--Mertens staircase.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
