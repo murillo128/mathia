@@ -15,89 +15,59 @@ based_on:
   - research/prime_flute/findings/PF-233-variable-width-diagonal-corridor-has-exact-operator-valued-transfer-law.md
   - research/prime_flute/findings/PF-234-pf205-symmetric-seam-normalizer-is-quadratically-flat-comparable.md
   - research/prime_flute/findings/PF-235-hypercycle-boundary-compactification-has-only-quadratic-prime-dependent-defect.md
+  - research/prime_flute/findings/PF-236-operator-matched-seam-normalizer-preserves-dressed-variable-corridor-transfer.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
 
-# Can conformal separation isolate the real boundary-normalization obstruction?
+# Can the actual seam replace the operator-matched seam without losing dressed transfer?
 
 ## Observation
 
-PF-231 establishes the exact logarithmic representation of the complete neighboring-axis corridor and identifies the PF-205 inward hypercycle graphs. PF-232 then shows that straightening those graphs creates only reciprocal-prime-small relative shear in the natural thin-strip energy norm; the independent width loss remains uniformly controlled but can be order one relative to the corridor width.
+PF-231--PF-235 progressively remove generic neighboring-corridor obstructions. The complete ultraparallel corridor has an exact logarithmic conformal representation; hypercycle straightening has only reciprocal-prime-small shear in the natural energy norm; the variable-width diagonal problem has PF-233's exact product factorization through `T_a`; the actual PF-205 symmetric seam normalizer is quadratically flat-comparable in its intrinsic coordinate; and the seam-dependent part of the hypercycle-to-axis boundary map is only `1+O(w^2)` with summable canonical defect. The fixed `tau=log tan(theta/2)` compactification and finite-pant realization remain nontrivial.
 
-PF-233 removes the next apparent obstruction without pretending that the variable width commutes with the Pöschl--Teller operator. For the exact PF-232 diagonal form with width `a(theta)`, the boundary-mass substitution `y=a(theta)^(-1/2)v` produces an exact product problem `-partial_X^2+T_a`. Its effective transverse operator satisfies `T_a asymp s^2 A` uniformly on the canonical tail, where `A=-partial_theta^2+csc^2(theta)`. Consequently the diagonal corridor's raw cross-DtN block is exactly
-
-\[
--a^{-1/2}\,T_a^{1/2}\operatorname{csch}(T_a^{1/2})\,a^{-1/2},
-\]
-
-has `O(s^{-1})` channels on each fixed scaled band, and retains exponential high-mode decay. Thus variable-width diagonal noncommutation itself cannot destroy the PF-228/PF-231 raw transfer envelope.
-
-PF-234 removes the apparent lower-coercivity gap in the **actual seam normalizer**. In PF-205's intrinsic signed Fermi-area coordinate, the exact seam energy is two-sided comparable to the flat strip energy with factors `(1+w^2)^{+-1}`. On the symmetric branch this gives all-frequency comparison with `M_L tanh(wM_L)` and relative `1+O(P_n^{-2})` accuracy for canonical widths.
-
-PF-235 now factors the remaining hypercycle boundary map itself. If `tau=log tan(theta/2)` is arclength on the untrimmed axis and `t` is the Fermi footpoint coordinate of the inward hypercycle at distance `rho`, `w=sinh rho`, then
+PF-236 now resolves the **full inverse-level cancellation inside the exact PF-233 variable-width diagonal operator** for the seam form naturally matched to that factorization. Writing
 
 \[
-t=\operatorname{arsinh}\left(\frac{\sinh\tau}{\cosh\rho}\right),
-\qquad
-\frac{dt}{d\tau}
-=\frac1{\sqrt{1+w^2\operatorname{sech}^2\tau}}.
+B=M_{a^{-1}},\qquad K=T_a^{1/2},\qquad r_i=w_i/s,
 \]
 
-Hence the entire endpoint singularity is the **fixed** compactification `d tau=csc(theta)dtheta`; the seam-dependent part is globally `1+O(w^2)`, has coordinate shift `log cosh rho=O(w^2)`, and has exact integrable Jacobian defect `log(1+w^2)`. For canonical PF widths these defects are `O(P_n^{-2})` and summable over seams. The inward-hypercycle identification itself therefore cannot supply a first-order reciprocal-prime or nonsummable loss.
+and
 
-The unresolved issue is narrower still: handle the fixed but singular axis compactification in the same Hilbert trace realization as PF-233, retain genuine noncommutation, and prove the **inverse-level** two-boundary cancellation responsible for PF-228's `w/s` scale. After that, control PF-232's shear at the off-diagonal inverse/DtN level and then the physical `P/H` projections plus finite one-cusp-pant completion.
+\[
+Q_i^{\rm mat}
+=B^{1/2}K\tanh(r_iK)B^{1/2},
+\]
+
+the `B`-congruence cancels by an exact boundary unitary before inversion. For
+
+\[
+D^{\rm mat}
+=\left(I+(Q^{\rm mat})^{-1/2}\Lambda_{\rm diag}(Q^{\rm mat})^{-1/2}\right)^{-1},
+\]
+
+PF-236 proves
+
+\[
+\boxed{
+s_{m+1}((D^{\rm mat})_{21})
+\le
+\frac{\sqrt{w_1w_2}}s
+\frac{\sqrt{c_0}s(m+\alpha)}
+{\sinh(\sqrt{c_0}s(m+\alpha))}.
+}
+\]
+
+Thus diagonal-width noncommutation, PF-233's mass conjugation, and the complete `2x2` inverse are no longer candidate mechanisms for losing PF-228's `w/s` gain. The residual normalization question is more precise: the **actual PF-205/PF-235 seam operator is not yet identified with `Q_i^{mat}`**, and ordinary two-sided form comparison does not automatically preserve an off-diagonal inverse singular-value estimate.
 
 ## Research question
 
-Can PF-234/PF-235's control of the actual seam-energy forms through the axis compactification be combined with PF-233's operator-valued corridor factorization to prove that the off-diagonal block of the full normalized inverse
+After transporting the actual PF-205 symmetric seam energy through PF-235's exact hypercycle-to-axis map and the fixed axis compactification into the same trace realization as PF-233, can it replace
 
 \[
-D_n=(I+K_n)^{-1},
-\qquad
-K_n=Q_n^{-1/2}\Lambda_nQ_n^{-1/2},
+Q_i^{\rm mat}=B^{1/2}K\tanh((w_i/s)K)B^{1/2}
 \]
 
-retains the PF-228 dressed scale
-
-\[
-\frac{\sqrt{w_nw_{n+1}}}{s_n}
-\]
-
-on the inverse-seam band, together with sufficient high-mode decay to feed PF-222's weak-trace reassembly? If not, which specific fixed compactification/noncommutation, shear-transfer, projection, or pant-completion mechanism destroys that inverse-level gain?
-
-## Why it may matter
-
-PF-228 proves that the `sqrt(w_nw_{n+1})/s_n` amplitude scale makes even a pessimistic inverse-seam channel population weak-trace compatible. PF-231--PF-233 show that the exact hyperbolic corridor has the correct raw channel scale and high-frequency damping; PF-234 shows that the real PF-205 seam branch has the correct normalizer scale; PF-235 shows that the **prime-dependent** part of the hypercycle-to-log boundary identification is only quadratic and strongly summable.
-
-A positive compatibility/completion theorem would therefore close most of the remaining local geometric gap before global nested-cut reassembly. A negative result can no longer be attributed generically to corridor fanout, graph tilt, diagonal width variation, seam-normalizer degeneration, or a first-order hypercycle coordinate distortion. It must expose a more specific failure in the fixed axis compactification, noncommuting full inverse, off-diagonal shear response, physical projection, or finite-pant completion.
-
-## Decisive test
-
-Work on one neighboring-cuff edge and put **both seam forms and the PF-233 two-boundary DtN form into one scalar `theta` trace variable without discarding density factors**. Use PF-235 to factor each seam-side map as the fixed axis compactification
-
-\[
-\tau=\log\tan(\theta/2)
-\]
-
-followed by a seam-dependent diffeomorphism whose form distortion is only `1+O(w_i^2)`. Preserve that perturbation honestly; form comparability alone does not authorize commuting it through later inverse blocks.
-
-Let
-
-\[
-Q=\operatorname{diag}(Q_1,Q_2)
-\]
-
-be the resulting actual seam-energy forms in the common trace realization and let `Lambda_diag` be PF-233's exact variable-width two-boundary DtN matrix. Form
-
-\[
-K=Q^{-1/2}\Lambda_{\rm diag}Q^{-1/2},
-\qquad
-D=(I+K)^{-1}.
-\]
-
-The primary target is **`D_21`**, not the raw normalized cross block `K_21=Q_2^{-1/2}C Q_1^{-1/2}`. PF-228's `w/s` factor is created by inversion of the complete positive `2x2` precision matrix: its diagonal and cross entries cancel at the relevant scale. The raw normalized cross block can be parametrically larger and therefore must not be assigned the PF-228 envelope by analogy.
-
-Prove, without assuming commutation of `Q_i` with `A`, `T_a`, `a`, or the corridor blocks, a singular-value/counting estimate of the form
+while preserving the PF-236 envelope
 
 \[
 s_j(D_{21})
@@ -105,28 +75,42 @@ s_j(D_{21})
 \frac{\sqrt{w_1w_2}}s\,\Phi(js)
 \]
 
-for a profile `Phi` with exponential or otherwise summable high-mode decay, or construct an admissible sequence that violates such an inverse-level bound. A useful proof may use Schur complements, Robin-to-Robin transfer, form-bounded congruences, or spectral splitting, but it must preserve the full matrix inversion rather than estimate only the cross entry before inversion.
+with summable high-mode decay? If not, what explicit boundary sequence or operator mechanism shows that the actual-seam/operator-matched-seam representation mismatch destroys the gain?
 
-Then quantify the passage from PF-233's diagonal form to PF-232's sheared form at the **off-diagonal inverse/DtN level**; full positive-form Loewner comparison alone is insufficient. Carry the physical boundary-density unitary and `P/H` projections in their correct order. PF-235 gives
+## Why it may matter
+
+PF-228 already shows that the `sqrt(w_nw_{n+1})/s_n` amplitude scale moves the reciprocal-prime weighted top singular scale to `O(P_n^{-2})`, enough for the intended weak-trace counting in the matched control. PF-236 proves that the exact PF-233 variable-width diagonal corridor has the same dressed scale once its seam energy is matched to its own transverse operator. A positive stability result for the **actual** seam would therefore close the main diagonal normalization gap rather than merely another raw-DtN estimate.
+
+A negative result is equally informative because the failure can no longer be blamed generically on corridor fanout, variable width, graph tilt, seam coercivity, seam-dependent hypercycle distortion, mass conjugation, or the algebra of the two-boundary inverse. It would identify the fixed compactification/representation mismatch itself as the first genuine local loss mechanism before shear, physical projection, and pant completion.
+
+## Decisive test
+
+Work on one neighboring-cuff edge in one common Hilbert trace realization. Let `Q_i^{act}` be the actual PF-205 symmetric seam form after the exact PF-235 boundary transport, including the fixed `tau<->theta` compactification and all density factors. Keep PF-233's exact diagonal corridor `Lambda_diag` unchanged, and retain
 
 \[
-\frac{d\sigma_\rho}{d\theta}
-=
-\frac{\cosh\rho}
-{\sin\theta\sqrt{1+\sinh^2\rho\sin^2\theta}}
-=\csc\theta\times(1+O(w^2))
+Q_i^{mat}=B^{1/2}K\tanh((w_i/s)K)B^{1/2}
 \]
 
-uniformly in the multiplicative seam-dependent factor, so the nonuniform endpoint weight to be treated exactly is the fixed `csc(theta)` baseline rather than a new prime-dependent singularity. Finally account explicitly for the finite cuff arcs and one-cusp-pant end completion; the complete-axis Friedrichs corridor cannot silently impose artificial conditions at the pant ends.
+as the reference normalized by PF-236.
 
-A useful positive outcome is the required dressed singular-value envelope for the actual local inverse block. A useful negative outcome is an admissible boundary sequence showing precisely where the fixed compactification, noncommuting inversion, shear perturbation, physical projection, or completion defeats it. Even if this succeeds, neighboring-cell extension mass and PF-222's overlapping nested-cut sum remain separate global gates.
+Do **not** try to prove only `Q_i^{act} asymp Q_i^{mat}` and then assert the inverse estimate. Instead prove a stability statement directly at the off-diagonal inverse level, for example by a resolvent identity, Schur complement, Robin-to-Robin map, or spectral splitting:
+
+\[
+D^{act}_{21}-D^{mat}_{21}
+\]
+
+must have singular values small enough that the PF-236 `rho F(js)` profile survives, where `rho=sqrt(w_1w_2)/s`. PF-234/PF-235 permit the seam-dependent geometric distortion to be charged at `O(w_i^2)`; the fixed compactification must be handled exactly rather than counted as a perturbation.
+
+If such stability is false, construct an admissible normalized boundary sequence for which `D^{act}_{21}` exceeds the PF-236 scale and identify which exact piece of the fixed compactification or transported seam calculus causes the excess. The counterexample must use the actual canonical trace structure, not an arbitrary noncommuting positive form unrelated to PF-205.
+
+Only after this normalization test succeeds should the route perturb PF-233's diagonal form to PF-232's sheared form at the **off-diagonal inverse/DtN level**, then carry the physical `P/H` projections and finite one-cusp-pant completion. Neighboring-cell extension mass and PF-222's overlapping nested-cut reassembly remain separate global gates.
 
 ## Evidence boundary
 
-The conformal rectangle, Pöschl--Teller separation, exact hypercycle graphs, and fixed-domain form are established by PF-231. Reciprocal-prime smallness of graph-straightening shear and full energy-DtN form comparability are established by PF-232. PF-233 establishes an exact operator-valued factorization and uniform raw cross-block channel/high-mode envelope for the **variable-width diagonal** corridor. PF-234 establishes a two-sided all-frequency theorem for the **actual PF-205 symmetric seam normalizer** in its intrinsic marked cuff coordinate. PF-235 establishes that the seam-dependent hypercycle-to-axis boundary identification is only `1+O(P_n^{-2})` and has a summable Jacobian defect, while explicitly leaving the fixed `tau<->theta` compactification and finite-pant completion open.
+PF-231 establishes the conformal rectangle and exact hypercycle graphs. PF-232 establishes reciprocal-prime form-small straightening shear but not off-diagonal inverse stability. PF-233 establishes the exact variable-width diagonal transfer and its `O(s^{-1})` channel/high-mode envelope. PF-234 establishes the actual intrinsic symmetric seam normalizer up to quadratic flat comparison. PF-235 establishes that the **seam-dependent** hypercycle-to-axis coordinate and density defects are quadratic and summable, while leaving the fixed compactification and finite-pant completion open. PF-236 establishes the full dressed inverse envelope only for the **operator-matched** seam forms `Q_i^{mat}`.
 
-None of these findings proves that the transported seam normalizer commutes with PF-233's `A`, `T_a`, multiplication by `a`, or the raw corridor blocks. More importantly, none proves that Loewner/form comparison survives as the specific **off-diagonal inverse** estimate required by PF-228. They also do not prove an off-diagonal perturbation theorem from the diagonal to the sheared problem, physical-`L^2`/`P-H` singular-value control, finite-pant completion, or the final normalized `sqrt(w_nw_{n+1})/s_n` dressed estimate. This clue remains accepted because successive exact reductions have removed several false local obstructions and left a narrower inverse/representation target, not because the desired transfer or any RH consequence has been established.
+No current finding proves that `Q_i^{act}` may replace `Q_i^{mat}` inside the off-diagonal inverse with the required singular-value control. No current finding proves the sheared, physical-`P/H`, finite-pant, global nested-cut, weak-`S_1`, scattering, determinant, zeta-zero, or RH conclusion. The clue remains `accepted` because PF-236 turns a broad noncommuting-inverse question into a concrete actual-versus-matched seam stability test; it does not resolve that test.
 
 ## Research disposition
 
-Continue the conformal route with one residual local target: **put the axis-reference seam forms and PF-233 corridor matrix in the same `theta` trace realization and prove or refute the PF-228 `w/s` envelope for the off-diagonal block of `D=(I+K)^{-1}`; then control PF-232 shear plus physical/pant completion**. Do not reopen generic variable-fanout, graph-tilt, diagonal-width, seam-coercivity, or first-order hypercycle-coordinate objections unless a concrete calculation invalidates PF-231--PF-235.
+Continue the conformal route at the **actual-seam versus operator-matched-seam stability gate**. Do not reopen generic variable-width diagonal noncommutation or full-inverse algebra unless a calculation invalidates PF-233/PF-236. A useful next result either transports the PF-236 singular-value profile to `Q_i^{act}` or gives an admissible canonical boundary sequence locating the first genuine loss in the fixed compactification/transported seam representation.
