@@ -17,7 +17,12 @@ This file records durable literature dependencies for `research/robin_extremal/`
 ## Square-root frontier boundaries
 
 - Jean-Louis Nicolas, *The sum of divisors function and the Riemann hypothesis*, The Ramanujan Journal **58** (2022), 1113-1157, DOI `10.1007/s11139-021-00491-y`. Role: prior-art boundary for Ramanujan's classical RH-conditional divisor-sum expansion containing the coefficient `2(sqrt(2)-1)/sqrt(log n)`. Mathia does not claim novelty for the appearance of `sqrt(2)-1`; `RE-007` instead isolates how that scale arises in the exact clean self-tangent prime-layer selector.
-- Runbo Li, *The number of primes in short intervals and numerical calculations for Harman's sieve*, arXiv:2308.04458, current preprint version. Role: current unconditional short-interval boundary showing primes in `[x-x^0.52,x]` for all sufficiently large `x`. This remains above the square-root scale and therefore does not close the `RE-007` clean-peak alternative requiring a source-selected gap of order `sqrt(p)`.
+- Runbo Li, *The number of primes in short intervals and numerical calculations for Harman's sieve*, arXiv:2308.04458, current preprint version. Role: current unconditional short-interval boundary showing primes in `[x-x^0.52,x]` for all sufficiently large `x`. This remains above the square-root scale and therefore does not close the `RE-007` clean-peak alternative requiring a source-selected gap of order `sqrt(p)`; `RE-008` uses only the much weaker consequence that the gap exponent is below `3/4`, making its small correction negligible at square-root scale.
+
+## Mertens-product boundaries
+
+- Harold G. Diamond and Janos Pintz, *Oscillation of Mertens' product formula*, Journal de Theorie des Nombres de Bordeaux **21** (2009), no. 3, 523-533, DOI `10.5802/jtnb.687`. Role: primary boundary showing that the ordinary Mertens prime product changes sign in both directions. `RE-008` therefore does not interpret the sign of the unmodified Mertens-product error as a new Robin mechanism.
+- Youness Lamzouri, *A bias in Mertens' product formula*, International Journal of Number Theory **12** (2016), no. 1, 97-109, DOI `10.1142/S1793042116500068`, arXiv:1410.3777. Role: primary boundary for the square-root-normalized explicit zero formula and the prime-square origin of the ordinary Mertens-product bias. `RE-008` does not import that zero formula; it studies the different source-selected endpoint-subtracted combination produced by splicing the clean CA selector into the exact Euler-product height.
 
 ## Expansion rule
 

@@ -1,7 +1,7 @@
 ---
 id: CLUE-clean-peak-selector-height-coupling
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: robin_extremal
 based_on:
@@ -73,3 +73,19 @@ Reproduce the two genuine local-peak controls from RE-005 when testing a univers
 ## Evidence boundary
 
 Sources were inspected through `8d3ded047405f07aa10140dd7baa7c036faa293b`; check their current claim and review state before relying on them. No new height estimate, conditional sign law, computation, or exclusion of an infinite family has been established here. This is a joint selector/height test, distinct from the accepted question about eventual workload monotonicity. A classical identity, a necessary peak selector, or a rewritten Robin inequality is not a solution; the potential gain must lie in a separately justified bound for the surviving signed source remainder.
+
+## Research disposition
+
+Accepted. The exact splice has now been reconstructed in [[research/robin_extremal/findings/RE-008-clean-robin-counterexamples-force-square-root-endpoint-subtracted-mertens-excursions.md]]. Partial summation of the Mertens product produces an endpoint term `(vartheta(p)-p)h(p)` which cancels **exactly** after inserting the RE-006 clean selector. The surviving quantity is the endpoint-subtracted Mertens remainder
+
+\[
+\mathcal M_*(p)=E(p)-(\vartheta(p)-p)h(p),
+\]
+
+and every unbounded clean Robin-counterexample sequence would have to satisfy
+
+\[
+\liminf \sqrt p\log p\,\mathcal M_*(p)\ge2\sqrt2.
+\]
+
+The unresolved question is now source-specific: can the boundary primes selected by clean self-tangent counterexample peaks realize this positive nonlocal Chebyshev/Mertens-tail excursion infinitely often, or can it be excluded by an unconditional estimate genuinely weaker than the Robin conclusion? Ordinary Mertens-product oscillation and the endpoint selector separately do not answer that question, and the exceptional higher-layer/tied chamber remains outside this clean test.
