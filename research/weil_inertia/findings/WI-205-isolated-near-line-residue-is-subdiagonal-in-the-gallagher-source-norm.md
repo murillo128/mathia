@@ -18,7 +18,7 @@ R_{\rho,U}(x,K)
 =-m_\rho\int_x^{x+K}y^{\rho-iU-1}\,dy.
 \]
 
-Hence, uniformly in the twist `U`, for `x in [X,2X]`, `0<K<=X`, and `1/2<=beta<=1`,
+Hence, uniformly in the twist `U`, for `x in [X,2X]`, `0<K<=X`, and `0<beta<=1`,
 
 \[
 \boxed{|R_{\rho,U}(x,K)|\le m_\rho K X^{\beta-1}}.
@@ -65,7 +65,7 @@ one has
 \tag{4}
 \]
 
-Thus a bounded-multiplicity isolated zero, functional-equation pair, or finite mirror/conjugation packet is polynomially below the Gallagher diagonal for every fixed `vartheta>0` in the normalized-depth regime. Even at the widest single dyadic scale `H asy 1`, the same bounded packet is only `O(1/log X)` of the diagonal. To reach diagonal scale from the extracted residues alone requires coherent packet multiplicity at least
+Thus a bounded-multiplicity isolated zero, functional-equation pair, or finite mirror/conjugation packet is polynomially below the Gallagher diagonal for every fixed `vartheta>0` in the normalized-depth regime. Even at the widest single dyadic scale `H` of constant order, the same bounded packet is only `O(1/log X)` of the diagonal. To reach diagonal scale from the extracted residues alone requires coherent packet multiplicity at least
 
 \[
 \boxed{
@@ -74,7 +74,7 @@ M_F\ \gtrsim\ \sqrt{H\log X}\,X^{-\delta_*}.
 \tag{5}
 \]
 
-which is `T^{vartheta/2+o(1)}` at bounded normalized depth. This is a mesoscopic population requirement, not an individual-zero detector.
+which is `T^(vartheta/2+o(1))` at bounded normalized depth. This is a mesoscopic population requirement, not an individual-zero detector.
 
 The conclusion is deliberately narrow. It does **not** give an upper or lower bound for the full WI-195 short-interval norm of `Lambda-Lambda^sharp`; other zero residues, the pole/main terms, the arithmetic approximant, and signed cross terms remain coupled. It does not prove the macroscopic off-diagonal cancellation asked for by `CLUE-bow-distinguished-twist-offdiagonal-cancellation`, nor does it refute such cancellation. What it rules out is the simpler mechanism in which the target off-line zero's own explicit-formula pole, after tuning to its ordinate, is already large enough by itself to force the needed diagonal-scale source defect.
 
@@ -150,7 +150,7 @@ For a hypothetical right-half zero with
 \beta=\frac12+\delta,
 \]
 
-the hard screened regime is precisely the one in which `delta log T=O(1)`. Since `X=T^{1/2+o(1)}`, one then has `X^{2delta}=O(1)`. Substituting WI-195's `H=T^vartheta/log T` yields (4).
+the hard screened regime is precisely the one in which `delta log T=O(1)`. Since `X=T^(1/2+o(1))`, one then has `X^(2delta)=O(1)`. Substituting WI-195's `H=T^vartheta/log T` yields (4).
 
 The same formula also records where the barrier stops. If `delta>0` is fixed rather than normalized-depth, then
 
@@ -164,7 +164,7 @@ so an isolated residue is no longer forced below diagonal once the horizontal de
 
 The canonical mandate asks whether an individual off-line pair or quadruple can force a detectable defect under a source-justified test family even when the exceptional set has zero density. The calculation above gives a negative answer for one particularly natural implementation of that idea: **extracting the target zero's own pole from the source-side `-zeta'/zeta` formula inside the current WI-195 quadratic observable is too weak at normalized depth.**
 
-This matters because the failure is not logarithmic bookkeeping. At any fixed bow exponent `vartheta>0`, a bounded packet loses the polynomial factor `T^{-vartheta+o(1)}` relative to the diagonal. Tuning `U` exactly to `gamma` cannot recover that factor. The current source-fixed program therefore needs genuinely collective information: a coercive identity involving the full zero/source configuration, a signed off-diagonal theorem, another source relation that couples the distinguished bow to a mesoscopic population, or a different observable whose individual-zero response is not diluted by the `XK log X` diagonal.
+This matters because the failure is not logarithmic bookkeeping. At any fixed bow exponent `vartheta>0`, a bounded packet loses the polynomial factor `T^(-vartheta+o(1))` relative to the diagonal. Tuning `U` exactly to `gamma` cannot recover that factor. The current source-fixed program therefore needs genuinely collective information: a coercive identity involving the full zero/source configuration, a signed off-diagonal theorem, another source relation that couples the distinguished bow to a mesoscopic population, or a different observable whose individual-zero response is not diluted by the `XK log X` diagonal.
 
 The accepted `CLUE-bow-distinguished-twist-offdiagonal-cancellation` remains unresolved. WI-205 narrows its target: any successful cancellation/coercivity theorem must exploit the coupled arithmetic covariance, not merely point to the explicit-formula residue of the distinguished zero.
 
@@ -172,9 +172,9 @@ The accepted `CLUE-bow-distinguished-twist-offdiagonal-cancellation` remains unr
 
 The classical explicit formula already contains (6), so no novelty is claimed for Perron inversion, the residue at `rho`, or the idea of tuning an Archimedean twist. The new exact statement is the scale comparison (2)--(5) after importing WI-195's source-fixed Gallagher normalization.
 
-Two nearby modern theorem surfaces do not supply the missing conclusion. Matomäki--Radziwill--Shao--Tao--Teravainen, *Higher uniformity of arithmetic functions in short intervals II. Almost all intervals*, Invent. Math. 244 (2026), 967--1091, DOI `10.1007/s00222-026-01408-6`, gives very strong almost-all short-interval decorrelation for `Lambda-Lambda^sharp`, but its exceptional-set quantifier does not control a source-selected distinguished bow. Guth--Maynard, *New large value estimates for Dirichlet polynomials*, Ann. of Math. 203 (2026), 623--675, DOI `10.4007/annals.2026.203.2.6`, supplies powerful large-value/zero-density consequences and primes in intervals of length `x^{17/30+o(1)}`, but not a pointwise source-fixed quadratic coercivity statement of the WI-195 type. These are theorem-type mismatches, not claims that their methods could never contribute after additional work.
+Two nearby modern theorem surfaces do not supply the missing conclusion. Matomäki--Radziwill--Shao--Tao--Teravainen, *Higher uniformity of arithmetic functions in short intervals II. Almost all intervals*, Invent. Math. 244 (2026), 967--1091, DOI `10.1007/s00222-026-01408-6`, gives very strong almost-all short-interval decorrelation for `Lambda-Lambda^sharp`, but its exceptional-set quantifier does not control a source-selected distinguished bow. Guth--Maynard, *New large value estimates for Dirichlet polynomials*, Ann. of Math. 203 (2026), 623--675, DOI `10.4007/annals.2026.203.2.6`, supplies powerful large-value/zero-density consequences and primes in intervals of length `x^(17/30+o(1))`, but not a pointwise source-fixed quadratic coercivity statement of the WI-195 type. These are theorem-type mismatches, not claims that their methods could never contribute after additional work.
 
-The decisive falsifiers for WI-205 are explicit. The finding would not apply if the relevant off-line contribution necessarily came in a packet whose total multiplicity satisfies (5), if the horizontal depth is fixed far enough from `1/2` that `X^{2delta}` offsets `H`, or if a different source-justified observable gives an individual zero a larger response than (6) inside its own noise/diagonal scale. It also makes no assertion about cancellation among the complete set of explicit-formula residues.
+The decisive falsifiers for WI-205 are explicit. The finding would not apply if the relevant off-line contribution necessarily came in a packet whose total multiplicity satisfies (5), if the horizontal depth is fixed far enough from `1/2` that `X^(2delta)` offsets `H`, or if a different source-justified observable gives an individual zero a larger response than (6) inside its own noise/diagonal scale. It also makes no assertion about cancellation among the complete set of explicit-formula residues.
 
 ## Research consequence
 
