@@ -54,11 +54,13 @@ Consequently the selected physical Gallagher energy on the corresponding `u`-sla
 More sharply, for every translate budget `q<=cM/L` whose associated slab is available, subdiagonal selected energy forces
 
 \[
-\boxed{\frac{n(T)}q\to1\quad\text{from below}.}
+\boxed{
+\liminf_{T\to\infty}\frac{n(T)}{q(T)}\ge1,
+}
 \tag{4}
 \]
 
-Since one off-line functional-equation pair contributes at most two complex exponential channels in the WI-214--WI-216 screen model, the same argument charges `Omega(M/log T)` such pairs up to that fixed factor. This is still `o(M)`, so it does **not** prove a positive-density exceptional-zero cost or RH. It is nevertheless a much stronger rigidity statement than WI-216: a fixed multiplicative source window forces essentially full finite-translation rank rather than merely superlogarithmic complexity.
+or equivalently `n(T)>=(1-o(1))q(T)`. Since one off-line functional-equation pair contributes at most two complex exponential channels in the WI-214--WI-216 screen model, the same argument charges `Omega(M/log T)` such pairs up to that fixed factor. This is still `o(M)`, so it does **not** prove a positive-density exceptional-zero cost or RH. It is nevertheless a much stronger rigidity statement than WI-216: a fixed multiplicative source window cannot leave out any fixed fraction of the finite-translation rank budget.
 
 ## 1. The limiting sinc target has a uniform `q`-dimensional lower frame bound
 
@@ -174,7 +176,7 @@ q e^{c/d}\frac{3C_k^2}{\pi^2R}.
 Since `r>=delta q`, choose once and for all
 
 \[
-R>\frac{6e^{c/d}3C_k^2}{\delta\pi^2c_0}.
+R>\frac{18e^{c/d}C_k^2}{\delta\pi^2c_0}.
 \tag{14}
 \]
 
@@ -348,7 +350,7 @@ a normalized width `Delta u = Theta(M/L)` corresponds to `Delta log x=Theta(1)`,
 
 ## 5. What this rules out, and what it still cannot rule out
 
-WI-216 left open the possibility that a source bootstrap might simply let the off-line screen grow a little faster than `log T`. WI-217 rules out that cheap route once the source observation reaches fixed multiplicative width: **every fixed fractional deficit in the available translation rank leaves a logarithmically superdiagonal residue**. The screen must spend order `M/log T` independent channels, and asymptotically almost all of the `q` translation degrees of freedom selected inside the slab.
+WI-216 left open the possibility that a source bootstrap might simply let the off-line screen grow a little faster than `log T`. WI-217 rules out that cheap route once the source observation reaches fixed multiplicative width: **every fixed fractional deficit in the available translation rank leaves a logarithmically superdiagonal residue**. The screen must spend order `M/log T` independent channels and cannot omit any fixed fraction of the `q` translation degrees of freedom selected inside the slab.
 
 This is a genuine rigidity condition on the uncertified complement, but it is not yet a defect-to-zero theorem. Because
 
@@ -372,4 +374,4 @@ The recent primary theorem remains Alpöge--Furman, arXiv:2608.13637, with Lamzo
 
 The structural claim can be falsified without touching zeta arithmetic. One would need an exponential screen satisfying (1) for which the exact normalized residue violates (2). The load-bearing checks are: the uniform sinc translate lower bound (5), the `q-n` translating nullspace (6), the tail/Bessel localization (11)--(15), the exact finite-bow factorization (16)--(18), and the aggregate perturbation estimate (20). In particular, a failure of the old WI-216 approximation `e^{eta_Mu}f_{M,k}(u)~f_k(u)` at `u~M/L` is **not** a counterexample: WI-217 does not make that approximation and instead carries the bounded exponential tilt through (7)--(8) and (19).
 
-The zeta-level implication can fail even if every displayed analytic estimate is correct, because the selected residue may be canceled in the full explicit formula. No unconditional simple-critical-zero proportion changes here, and no positive-density lower bound on off-line zeros is asserted. The substantive advance is narrower and rigid: **on fixed multiplicative source windows, finite-translation codimension forces an `Omega(M/log T)` exceptional-screen complexity cost, with asymptotically full rank relative to every admissible `q`-translate observation family.**
+The zeta-level implication can fail even if every displayed analytic estimate is correct, because the selected residue may be canceled in the full explicit formula. No unconditional simple-critical-zero proportion changes here, and no positive-density lower bound on off-line zeros is asserted. The substantive advance is narrower and rigid: **on fixed multiplicative source windows, finite-translation codimension forces an `Omega(M/log T)` exceptional-screen complexity cost, and every admissible `q`-translate observation family forces `n>=(1-o(1))q`.**
