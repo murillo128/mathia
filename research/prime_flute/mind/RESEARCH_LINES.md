@@ -2,23 +2,23 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove that the local dressed seam gain survives the full noncommuting global recoupling
+## Isolate the high-high shear tail, then propagate the dressed gain through physical recoupling and global reassembly
 
 **Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`, `MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency`.
 
-PF-196--PF-227 isolate the weak-trace endpoint and show that raw thin-pant crossing has order `s_n^{-1}` channel multiplicity which survives fixed or slowly growing physical high-pass projection. Raw multiplicity is therefore a genuine geometric control, but it is not yet the dressed endpoint operator.
+PF-196--PF-227 isolate the weak-trace endpoint and prove that raw thin-pant crossing has order `s_n^{-1}` channel multiplicity, surviving fixed and slowly growing physical high-pass projections. Raw multiplicity is genuine geometry, so a successful endpoint theorem must win through the dressed singular-value amplitude rather than by deleting a small low sector.
 
-PF-228 supplies the first decisive positive local transfer. In the flat corridor model the exact dressed off-diagonal factor is bounded by `rho z/sinh z`; at prime widths the reciprocal-prime jump times the geometric factor is `O(P_n^{-2})`. This is strong enough to make even logarithmically growing channel counts weak-trace compatible. The inverse-seam population is therefore not an obstruction once the correct width/seam dressing is actually present.
+PF-228 and PF-233--PF-236 establish the positive diagonal local model. The exact variable-width corridor, with an operator-matched seam normalizer, retains the PF-228 envelope `sqrt(w_1w_2)/s * F(sm)` with inverse-seam channel count and exponential high-mode decay. PF-237 exposes a real representation mismatch: the complete lifted actual seam has noncompact inverse while the matched seam has compact inverse, so no global two-sided relative-form comparison can identify them. PF-238 then proves the one-sided order actually needed by the normalized crossing and propagates it through the exact inverse corridor. The actual complete-lift diagonal crossing obeys the same envelope up to a uniform constant.
 
-PF-233--PF-235 show that this gain is not immediately destroyed by the next natural geometric refinements. The variable-width diagonal corridor has an exact operator-valued transfer law with the same inverse-seam channel envelope and exponential high-frequency decay. The actual symmetric seam normalizer from PF-205 is quadratically comparable to the flat model in Fermi-area coordinates, and the hypercycle boundary compactification contributes only a summable quadratic prime-dependent defect. Several previously plausible local normalization gaps are thus coordinate artifacts rather than endpoint losses.
+PF-239 now narrows the shear gate sharply. PF-232's sheared and diagonal corridor forms differ by relative size `beta_n=O(P_n^{-1})`. After normalization by the fixed actual seam form, the corresponding Schur factors differ by `O(beta_n)` in operator norm. Any part of that shear correction with at least one leg in a fixed PF-233 scaled transverse band has rank `O(s_n^{-1})`; after multiplication by the reciprocal-prime commutator weight its trace norm is `O(P_n^{-2})`, hence absolutely summable. Critical-band and low/high shear leakage therefore do **not** need to preserve the full `w/s` envelope.
 
-The live theorem is now a **global transport/reassembly statement**: carry the local `w/s`-type gain through the actual noncommuting seam normalizer, variable corridor, shear, `P/H` recoupling, finite pant block, and global Schur/reassembly architecture, then prove that the resulting reciprocal-prime cut flux lies in weak `S_1`. A negative result must locate a specific later operation that systematically destroys the local dressed gain. Recounting raw channels or re-proving flat local damping no longer addresses the frontier.
+The next local theorem is now only the **high-high shear block**, where neither transverse leg lies in a fixed scaled band. Prove separated-boundary/Poisson smoothing or another exact estimate that gives sufficient tail decay there, or exhibit a canonical high-high countermechanism. Once that tail is controlled, the frontier moves to physical `P/H` recoupling, finite one-cusp-pant completion, neighboring-cell extension, and PF-222 nested/global weak-`S_1` reassembly.
 
-## Keep local corridor control, shear, projection, pant coupling, and global weak-trace reassembly distinct
+## Keep diagonal dressing, high-high shear, physical projection, pant coupling, and global weak-trace reassembly distinct
 
-The current local geometry is substantially better controlled than before: natural-width smoothing, corridor transfer, seam normalization, and boundary compactification are compatible with the endpoint scale. None of those facts alone proves the full unsmoothed mixed transport or the final global weak-trace estimate because noncommuting recoupling can redistribute singular values.
+The diagonal corridor plus actual complete lifted seam is quantitatively controlled at the critical local scale, and all shear damage touching the fixed scaled critical population is already strongly trace summable after reciprocal-prime weighting. Neither fact controls the infinite-rank high-high shear block or the later physical trace maps.
 
-Any next theorem should state exactly which operator word it controls, where the `w/s` gain enters, which multiplicity it pays for, and whether the estimate is stable under the remaining shear/projection/pant factors.
+Any continuation should state the exact operator word being controlled, which part is baseline signal versus trace-class error, and how each later noncommuting factor acts on the singular-value envelope. Re-proving low-band `w/s` stability or treating generic critical-band shear mixing as the obstruction is now stale.
 
 ## Resolve ordered multi-neck memory in marked spectral data
 

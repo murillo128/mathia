@@ -1,31 +1,33 @@
-# MI-011 — Cross-scale collision observability can compress to one off-circle heat trace
+# MI-011 — Cross-scale collision observability can be algebraically tiny yet exponentially ill-conditioned
 
-**Evidence level:** exact upper-half reconstruction and one-point off-circle reconstruction for the periodic unit-circle model through XF-130
+**Evidence level:** exact periodic one-channel reconstruction plus delayed, zero-delay, and local-patch conditioning obstructions through XF-133
 
 ## Core intuition
 
-The periodic collision-identifiability barrier is not fundamentally a need for many scalar channels. What matters is mixing reflected Vieta shells in a way that breaks the `k <-> N-k` degeneracy. Once that relation is present, a very small observable can contain the whole divisor.
+The periodic collision-identifiability barrier is not fundamentally a need for many scalar channels. A single off-circle heat trace can mix reflected Vieta shells and determine the full divisor exactly. But **exact compression is not stable compression**: the heat spectrum contains central directions whose contribution to that trace is exponentially small in the degree even when observation begins at the target slice and spans a macroscopic local complex patch.
 
-The full upper half of proper harmonic heat histories is universally identifying, and one complex spatial heat trace off the unit circle compresses the same cross-scale information into a single channel. The remaining difficulty is therefore not periodic target observability but whether the actual Xi source can access such a relation with controlled interface error and conditioning.
+The remaining Xi problem is therefore not to obtain formal access to a target-complete observable. It is to find a source-accessible quotient whose conditioning is matched to transition geometry, or prove that the actual Xi source excludes the hidden central directions responsible for the worst-case tomography instability.
 
 ## Strongest justified principle
 
-XF-124--XF-128 show that sublinear proper-harmonic histories and even large terminal windows can be collision-blind. XF-129 proves the complementary positive boundary. Every proper harmonic history recovers the phase of its matching Vieta coefficient from its slowest heat tail; unit-circle self-inversivity reflects the upper half into the lower half. Thus all histories with `m>N/2` determine the divisor, modulo one even-degree central sign ambiguity that is only a rigid rotation and leaves collision geometry unchanged.
+XF-124--XF-129 establish the algebraic observability threshold. Sublinear histories and large terminal windows can be collision-blind, while the complete upper half of Vieta histories determines the periodic divisor. XF-130 compresses that identifying family into one scalar heat trace `Q_zeta(s)=E(zeta,s)` at any fixed `|zeta|!=1`; a one-root-spacing radial displacement gives only polynomial conditioning in the reflected-shell spatial inversion.
 
-XF-130 then groups a one-point trace `Q_zeta(s)=E(zeta,s)` by the known heat rates `delta_k=delta_{N-k}`. Each rate exposes the reflected pair through one complex amplitude. Self-inversivity supplies the second real relation, and `|zeta|!=1` makes the resulting `2x2` real-linear system invertible. Taking `|zeta_N|=exp(sigma/N)` gives only `O_sigma(N)` worst spatial amplification, so one root-spacing-scale displacement off the real circle is already sufficient for exact recovery.
+XF-131 identifies a separate temporal clock. The central Vieta shell supports an exact one-parameter family with prescribed periodic Newman transition time, but observation starting at delay `s_0` suppresses the distinguishing trace by `exp(-delta_M s_0)`, where `delta_M=pi^2N^2/L^2`. Stable transition discrimination therefore requires time resolution on the microscopic scale `L^2/N^2` for this family.
 
-This separates **channel count** from **information category**. A single scalar history can be globally identifying when its spatial evaluation couples all Vieta shells before the heat-rate degeneracy is quotiented.
+XF-132 shows that removing the delay does not make full-state tomography stable. Because the central heat rates are quadratically clustered, barycentric divided-difference packets can annihilate many temporal jets and keep the **entire future trace** exponentially small relative to an `O(1)` reflected-shell coefficient perturbation. These directions can be realized by arbitrarily small perturbations that remain simple and unit-circle rooted.
+
+XF-133 makes the obstruction spatially robust. The same kind of central packet can be chosen before the probe and remains exponentially hidden uniformly for all future heat times over a fixed macroscopic local complex patch. Thus increasing local probe count or replacing one trace by continuum local observation does not cure the worst-case Vieta-state inversion.
 
 ## Counterevidence / boundary
 
-The theorem is an exact periodic target-side statement. It does not prove that the real Xi source supplies `Q_zeta`, that the periodic surrogate remains accurate at a complex displacement of order one root spacing, or that recovering the divisor in this way yields a useful quantitative upper bound for the Newman transition.
+XF-132--XF-133 concern stable recovery of the full reflected-shell/Vieta state. They do not prove that the periodic Newman transition time itself has the same zero-delay exponential condition number. XF-131 is transition-sharp only for delayed observation. A direct transition functional may discard central state directions that are expensive for tomography.
 
-The inversion is polynomially conditioned in the spatial reflected-shell step, but extracting close heat exponents from finite/noisy time data is a separate conditioning problem. The exact full-history theorem should not be silently promoted to a finite-sample stability claim.
+The patch obstruction also does not cover arbitrarily large spatial apertures, observation norms with exponentially weighted high derivatives, or a source theorem restricting admissible Xi coefficient directions. Those are possible escapes if independently justified and quantitatively controlled.
 
 ## Epistemic status
 
-**Exact periodic collision observability with a sharp half-spectrum boundary and an exact one-channel compression; source accessibility and quantitative Xi transport remain open.**
+**Exact periodic one-channel identifiability together with exact exponential temporal/spatial conditioning barriers for full-state tomography; a stable source-to-transition observable remains open.**
 
 ## Falsification criterion
 
-Produce two non-rotationally-equivalent unit-circle divisors with identical upper-half histories, or two distinct unit-circle divisors with identical `Q_zeta(s)` for a declared `|zeta|!=1`. A source-positive continuation should instead derive or approximate the off-circle/cross-scale trace from the actual Xi source and bound every interface and conditioning loss needed by the transition theorem.
+Produce a uniformly stable inverse from the XF-130 local trace family to the full Vieta state contradicting XF-132--XF-133, or refute the XF-131 transition-sharp delayed family. A source-positive continuation should instead derive a transition-adapted observable with a quantitative modulus, or prove an Xi-specific structural law excluding the central hidden packets before transporting source error to `Lambda`.

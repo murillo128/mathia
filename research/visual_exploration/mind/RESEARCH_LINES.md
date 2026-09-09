@@ -10,17 +10,17 @@ VIS-083--VIS-091 progressively separate fixed-prime population, local Gram-clock
 
 A surviving Gram/prime-phase route must specify the null at the same support, window, and approximation order as the claimed signal, or add an independently informative source coordinate such as zero geometry, `Z(g_n)`, derivatives, or another observable not determined by prime phases and the Gram clock.
 
-## Separate growing-scale information admission from normalized effect size and source specificity
+## Separate information admission, normalized amplitude, and source specificity
 
 **Linked intuition:** `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`.
 
 VIS-092--VIS-110 classify the fixed-block boundary. Exact Markov types absorb fixed local chronology, fixed lower signature data, ordinary Fourier magnitudes, and every bounded-lag higher-order correlation: any statistic with uniformly bounded lag span factors through a finite block inventory.
 
-VIS-111 supplies the first exact positive exit from that quotient. A third-order correlation with lags growing proportionally to the window distinguishes explicit words that agree on every fixed block length once the scale is large enough. Thus growing-scale higher-order information can genuinely retain assembly data that all fixed-memory summaries forget.
+VIS-111 proves the first exact information-category exit: a third-order correlation with lags growing proportionally to the observation window distinguishes words that agree on every fixed block length. VIS-112 shows that its particular witness has only `O(1/N)` empirical amplitude, separating non-factorization from effect size.
 
-VIS-112 adds an independent scale gate. On the same exact witness, the raw distinguishing count is only one, so empirical averaging dilutes the separation as `2/N`. Information non-factorization therefore does not imply a macroscopic normalized effect, and a shrinking effect is not automatically insignificant unless its null fluctuation scale is also known.
+VIS-113 removes that dilution as a structural obstruction. A lifted homometric family has identical order-`r` Markov type and identical complete two-point autocorrelation/Fourier magnitude, yet a macroscopic third-order lag statistic differs by exactly `1/21` for every scale. VIS-114 shows the contrast survives mean centering, with exact value `264/5887`, and gives the independent centered null variance `v^3/(N-b)` together with zero cross-covariance for distinct lag pairs. Thus fixed-block escape and `O(1)` normalized synthetic amplitude can coexist, while the elementary independent-null fluctuation scale is `N^{-1/2}`.
 
-The live continuation is now source-specific rather than representational. Predeclare a growing lag/global functional, the lower-information quotient it escapes, its normalization, and the matched finite-size null before new zeta material is inspected. A positive result must show a reproducible residual at the declared scale and survive finite-size CUE/non-arithmetic controls and known finite-height deterministic corrections. A stronger synthetic witness with extensive separation would refine the amplitude model but would still not establish arithmetic specificity.
+The live continuation is now almost entirely **source specificity and matched-null calibration**. Predeclare the growing-lag/global functional, lower-information quotient, centering, normalization, and source-matched finite-size null before inspecting confirmation material. CUE or another source-preserving null may have covariance very different from the independent baseline. A synthetic constant-amplitude witness proves admissibility of the channel, not that zeta occupies it atypically.
 
 ## Treat the signed finite-Euler triangular witness as classified by `log X/L`
 

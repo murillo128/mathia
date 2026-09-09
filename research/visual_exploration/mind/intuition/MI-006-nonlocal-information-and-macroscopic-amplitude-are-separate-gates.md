@@ -1,31 +1,33 @@
-# MI-006 — Nonlocal information admission and macroscopic amplitude are separate gates
+# MI-006 — Nonlocal information, macroscopic amplitude, and source specificity are separate gates
 
-**Evidence level:** exact fixed-block factorization and explicit growing-lag/nonvanishing-information versus normalized-amplitude controls through VIS-112
+**Evidence level:** exact fixed-block factorization, growing-lag homometric witnesses, centered amplitude calibration, and independent-null variance through VIS-114
 
 ## Core intuition
 
-Escaping a finite-memory quotient is an information statement, not an effect-size theorem. A statistic can retain chronology that no fixed block inventory determines and still carry only a vanishing normalized separation as the observation window grows. Conversely, a shrinking absolute effect can remain statistically meaningful only if the matched null fluctuates on a still smaller scale.
+Escaping a finite-memory quotient is an information statement, not an effect-size or source-specificity theorem. The three questions must be separated: does the observable retain information lost by the lower quotient; does its normalized signal survive at scale; and is that signal exceptional relative to the correct source-matched null?
 
-The visual protocol therefore needs two independent scale audits before source interpretation: first prove that the chosen growing-scale observable does not factor through the lower-information control; then fix a normalization and show that the surviving effect is large relative to the predeclared source-matched null.
+The later synthetic constructions show that the amplitude gate is not inherently negative. Growing-lag third-order information can evade every fixed block inventory, preserve complete two-point homometry, and still have a nonvanishing centered empirical contrast. What remains unproved is the arithmetic gate: whether a predeclared zeta observable shows a reproducible residual beyond CUE or another appropriate conditioned control.
 
 ## Strongest justified principle
 
 VIS-099--VIS-110 show that exact order-`r` Markov type determines every bounded-lag higher-order correlation once the required block length is included. Increasing correlation order at fixed lag does not create global chronology.
 
-VIS-111 constructs, for every `r`, two binary words with the same complete length-`(r+1)` block inventory but different third-order correlation at lags asymptotic to one quarter and one half of the full window. Hence the family of growing-lag coefficients cannot factor through any uniformly fixed finite block inventory. This is a genuine information-category exit.
+VIS-111 constructs an exact growing-lag third-order separation inside one fixed-local type, proving a genuine information-category exit. VIS-112 then shows that its sparse witness has normalized contrast `2/N`, so non-factorization alone does not force macroscopic amplitude.
 
-VIS-112 then computes the natural empirical-average normalization of exactly that witness. The raw difference is one while the number of admissible starts is `N/2`, so the normalized separation is exactly `2/N -> 0`. The same witness is therefore simultaneously nonlocal in the information sense and asymptotically dilute in ordinary empirical amplitude.
+VIS-113 proves the complementary existence theorem. For every `r`, two length-`29r` binary words have the same complete length-`(r+1)` block inventory and the same complete aperiodic autocorrelation/Fourier magnitude, yet their third-order average at lag fractions `2/29` and `8/29` differs by exactly `1/21`. VIS-114 shows that after centering by the common mean the contrast remains the nonzero constant `264/5887`.
+
+VIS-114 also supplies an exact elementary fluctuation calibration: for independent centered coordinates, a third-order lag average has variance `v^3/(N-b)`, and distinct lag-pair averages are exactly uncorrelated. The resulting `N^{-1/2}` scale is a sanity-check null, not a replacement for the finite-size CUE or source-conditioned covariance required by the actual zeta experiment.
 
 ## Counterevidence / boundary
 
-These theorems concern a sparse synthetic binary family. They do not determine the correct normalization or fluctuation scale for zeta zeros, CUE, centered cumulants, bicoherence, or denser witness families. They also do not prove that every growing-lag statistic escapes fixed blocks, nor that a nonvanishing normalized effect is necessary for statistical detectability.
+The constant-amplitude witnesses are synthetic. They do not select the lag fractions, quantization, centering, or statistic for zeta, and they do not imply that CUE or another non-arithmetic source has the independent-null variance. Exact fixed symbol counts, unfolding, eigenvalue repulsion, Markov conditioning, and sample centering can all change the null covariance.
 
-Source specificity remains wholly open. A zeta/CUE separation chosen after looking at the target data would not become evidence merely because VIS-111 proves that its statistic is capable of carrying nonlocal information.
+Conversely, a source residual smaller than `O(1)` need not be negligible if its matched null shrinks faster. Effect size must always be interpreted in the declared normalized null currency.
 
 ## Epistemic status
 
-**Exact separation of information admission from normalized amplitude; no arithmetic source claim.**
+**Exact separation of information admission, normalized amplitude, and source specificity; the first two can coexist positively in controlled witnesses, while arithmetic source specificity remains open.**
 
 ## Falsification criterion
 
-Refute the VIS-111 exact Markov-type equality or its growing-lag third-order separation, or refute the VIS-112 identity giving empirical-average difference `2/N`. A source-positive continuation should instead predeclare the growing-scale statistic, lower-information quotient, normalization, and null, then demonstrate a replicated residual beyond all four controls.
+Refute the VIS-113 homometry/block-type identities or its constant third-order separation, refute the VIS-114 centered contrast or independent-null variance, or show that the proposed source statistic factors through the lower-information quotient after all. A source-positive continuation should predeclare the statistic and matched null, derive or estimate its finite-size covariance, and replicate a zeta-specific residual on untouched material.

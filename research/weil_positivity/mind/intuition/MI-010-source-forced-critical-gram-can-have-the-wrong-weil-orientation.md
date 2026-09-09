@@ -1,33 +1,31 @@
-# MI-010 — A source-forced critical Gram can have the wrong Weil orientation
+# MI-010 — A source-forced critical Gram can have the wrong Weil orientation in essential spectrum
 
-**Evidence level:** exact Bost--Connes divisibility/KMS conditioning and local Weil-defect comparison through WP-216
+**Evidence level:** exact Bost--Connes critical Gram, exact Poisson-score identification, and Toeplitz essential-spectrum obstruction through WP-218
 
 ## Core intuition
 
-Matching the critical half-density, the prime logarithmic scale, and a canonical positive geometry is still not enough for Weil positivity. The sign theorem depends on **orientation**, not only on magnitude or source naturality.
+Matching the critical half-density, the prime logarithmic scale, and a canonical positive source geometry is still not enough for Weil positivity. The sign theorem depends on **orientation**, and the current Bost--Connes candidate has the wrong orientation at the level of essential spectrum rather than merely through one isolated negative direction.
 
-Bost--Connes divisibility conditioning supplies a particularly sharp example. At the actual critical inverse temperature, source-defined range projections generate the positive GCD Gram whose prime-axis kernel has coefficients `p^{-|a-b|/2}`. Those are exactly the critical Weil magnitudes. Yet the desired local finite Weil Toeplitz ray is the defect `log p (I-G_p)`, and that defect is indefinite. The source has selected the right scale while positivity points in the opposite direction.
+This changes the completion requirement. A compact boundary repair cannot fix the source Gram while preserving its prime-axis bulk. A viable construction must change the essential operation itself, couple the prime axes noncompactly to additional source structure, or justify a test-space restriction that removes the negative Weyl sequences before the Weil consequence is identified.
 
 ## Strongest justified principle
 
-For the canonical range projections `E_n=mu_n mu_n^*`, the semilattice law `E_mE_n=E_lcm(m,n)` and the KMS identity `phi_beta(E_n)=n^{-beta}` give normalized vectors with Gram
+WP-216 proves that normalized Bost--Connes divisibility projections at `beta=1` generate the positive GCD Gram. On each prime axis its Toeplitz coefficients are exactly `p^{-|a-b|/2}`, and the source dynamics supplies the scale `log p`. The finite Weil target nevertheless has local ray `log p(I-G_p)`, which is indefinite.
 
-`G_beta(m,n)=(gcd(m,n)/sqrt(mn))^beta`.
+WP-217 identifies the canonical Bochner and temperature-score route exactly. The Gram's spectral probability measure is the Prime-Torus Poisson measure with `sigma=beta/2`; differentiating the log density at the source critical point cancels the prime-power repetition factor and reproduces the finite-prime Weil cosine comb. This is an exact redirect to the already-audited signed Poisson score, not a new positive orientation.
 
-At `beta=1`, the prime-axis restriction is the Poisson Toeplitz kernel with radius `p^{-1/2}`, and the Bost--Connes time evolution independently supplies the generator scale `log p`. No scalar `F(H)`, Borel prime-power projector, or inserted zero data is needed.
-
-WP-216 then identifies the exact sign mismatch. In the finite-Weil normalization, the nonzero Fourier coefficients are `-(log p)p^{-|k|/2}`, so the local target is `log p(I-G_p)`. Its symbol changes sign. The minimal scalar diagonal repair is the same local threshold previously isolated in WP-096, and the all-prime compensation diverges. Mixed-prime terms can make a larger kernel positive, but that positivity comes from an additional completion, not from the conditioned Gram itself.
+WP-218 shows that the sign defect is stable in the Calkin algebra. The prime-axis operator `W_p=log p(I-G_p)` is Toeplitz with a continuous sign-changing symbol, so its essential spectrum contains a nontrivial negative interval. Weyl invariance implies that every compact or relatively compact self-adjoint correction leaves that negative essential spectrum unchanged. Finite-dimensional baths, compact boundary variables, compact centering corrections, and finite-sector Schur complements therefore cannot turn the same bulk operator positive.
 
 ## Counterevidence / boundary
 
-This does not show that Bost--Connes geometry cannot contribute to a Weil proof. It shows only that the canonical critical conditional Gram is not itself the desired sign theorem. A non-scalar global operation, indefinite-to-positive completion, modular relation, or finite--archimedean coupling could still transform the source geometry in a canonical way.
+The obstruction is prime-axis and compact-perturbative. It does not rule out a genuinely noncompact mixed-prime coupling, a finite--archimedean completion that changes the essential symbol, an unbounded/domain-sensitive operation, or an independently justified restricted test space on which the negative Weyl sequences are absent.
 
-The result is local on prime axes for the orientation comparison. A successful global relation could use mixed-prime and archimedean structure in a way not visible from one axis, but it must derive rather than prescribe the needed sign change.
+Nor does WP-217 say that information geometry is useless in every completion. It says that the ordinary canonical score of the conditioned Gram is already the known Poisson-score route and therefore adds no new sign source by itself.
 
 ## Epistemic status
 
-**Exact source-forced critical magnitude and exact negative orientation test; the global sign-producing operation remains open.**
+**Exact source-forced critical magnitude, exact score classicalization, and exact negative essential-orientation obstruction stable under compact completion; a noncompact/global sign-producing operation remains open.**
 
 ## Falsification criterion
 
-Refute the divisibility/KMS Gram identity or the equality of the local Weil ray with `log p(I-G_p)`, or exhibit a positivity theorem for that defect without adding a source-external compensating structure. A positive continuation should instead identify the extra source-forced operation and prove that its completed form has the Weil orientation while retaining the exact prime and archimedean normalization.
+Refute the conditioned Gram/Poisson identification, the equality of the local Weil ray with `log p(I-G_p)`, or the negative essential-spectrum calculation. A positive continuation should identify a source-forced operation that changes the essential prime-axis orientation or legitimately removes its negative Weyl sequences while simultaneously producing the finite-prime, archimedean, and polar normalization needed by the completed Weil form.

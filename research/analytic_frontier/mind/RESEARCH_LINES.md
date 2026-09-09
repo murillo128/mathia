@@ -2,19 +2,17 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Make the same-profile completion problem depth-uniform before paying for genuinely transverse global structure
+## Prove local critical-cell conditioning after depth-uniform cascade geometry
 
 **Linked intuitions:** `MI-001-global-conjugation-geometry-carries-horizontal-information`, `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
 ANF-097--ANF-120 reduce the frozen-notch problem to the full mesoscopic saddle profile and its globally admissible companion. Positive translation clouds in the ANF-118 envelope are governed by one Gaussian Gram geometry, while ANF-119--ANF-120 show that a source-heavy off-notch packet cannot be treated in isolation: global near-extremality forces excision, overpolarized compensation, or profile mirroring.
 
-ANF-121 separates two scales that should no longer be conflated. The fatal triangular-notch slope is uniformly below the pointwise source-efficiency ceiling, so saturation of the latter does not itself force fatal-level mirroring. The remaining question is therefore not whether one can approach the local efficiency ceiling, but whether a globally admissible completion can preserve the central-notch exposure required by the fatal envelope.
+ANF-121--ANF-133 then separate the local efficiency ceiling from fatal notch exposure and construct same-profile positive annihilator cascades through every fixed finite depth. Finite skeleton annihilation is therefore not a no-go by itself: a positive-rate layer can retune to source criticality, evacuate the previous chambers, and preserve a subcritical copy-count rate.
 
-ANF-126 and ANF-129--ANF-132 close the subexponential/fixed-annihilator versions of the positive-translation repair. Subexponential unsigned source budget is excisable once cancellation holds through a widening saddle chamber. Critical exponential digit clouds can evacuate the original saddle, but finite positive annihilators remove the regenerated finite critical skeleton; repeating one uniformly conditioned annihilator only `m=o(A)` times gives suppression `exp[-m log(A/m)+O(m)]`, so fixed exponential suppression requires positive exponential copy rate.
+ANF-134--ANF-136 remove most of the obvious depth-uniform combinatorial failure modes. Positive copy-rate slack simultaneously protects a fixed dark notch and controls translation span; origin curvature prevents the slack from collapsing faster than factorial scale; and zero-cell recursion bounds critical-chamber proliferation by `exp(O(d^2 log d))`. In particular, depths with `d^2 log d=o(log A)` can retain an `A^{o(1)}` chamber/floor budget and `A^{1+o(1)}` physical span.
 
-ANF-133 then shows that this rate threshold is not itself a no-go. A positive-rate annihilator layer can be retuned to source criticality, superexponentially evacuate the previous critical chambers, preserve a strictly subcritical copy-count rate, and be iterated to every fixed finite depth. Thus **finite-depth same-profile critical completion remains viable** even though every fixed skeleton can be killed.
-
-The live same-profile theorem is now depth-uniform: determine whether the successive critical skeletons, notch widths, translation spans, and chamber counts can be controlled when the cascade depth `d=d(A)` grows, and whether such a globally assembled cascade can retain fatal central-notch exposure rather than merely a fixed dark neighborhood. A negative theorem must identify a quantity that necessarily degenerates with depth. A profile-transverse/macroscopic source component remains a genuine category exit, but it is no longer justified merely by finite-depth annihilation.
+The live same-profile theorem is therefore no longer generic depth control. It is **local conditioning inside the recursively selected critical cell**: prove a lower bound on cell width, Hessian/source integral, or another coercive quantity that prevents the chosen cell from approaching zeros of the inherited low-density factors too closely. A negative theorem must exhibit unavoidable local degeneration despite the now-controlled copy rate, span, chamber count, and discretization error. A profile-transverse/macroscopic source component remains a genuine category exit only if this local conditioning gate fails.
 
 ## Treat a distinguished bow saving as source-forced signed cancellation, not averaged variance
 
