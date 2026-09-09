@@ -32,3 +32,9 @@ Then
 For every `tau >= 1/8` this is `O(1)` (and tends to zero for `tau>1/8`). Therefore the error terms in (16)--(18) are uniformly `O(1)` on `y in [X_beta,2X_beta]`, so (5) follows for this canonical nearest-dyadic saddle, including the endpoint `tau=1/8`. The later `L^2` comparison and exponential-type consequence (6), and hence the `H_beta = X_beta^(1-4 tau+o(1))` necessary variance statement and the `tau=1/8` square-root-scale specialization, are unchanged.
 
 This is a shell-selection precision error rather than a change in the mathematical claim identity: the finding asserts a necessary critical-shell projection of the global positive Gallagher energy, and existence of the canonical saddle shell is sufficient for that projection. If this repair is accepted, the durable correction should strengthen (2) to the nearest-dyadic condition `log X_beta = 1/(4 beta)+O(1)` and adjust the surrounding explanation so (19) supplies boundedness rather than merely subexponential control.
+
+## Adversary
+
+The repair is mathematically sufficient: the nearest-dyadic choice gives `log X_beta = 1/(4 beta)+O(1)`, hence `X_beta/T_beta^2 = exp((1/4-2 tau)/beta+O(1))`, which is uniformly bounded for `tau>=1/8`. This preserves the same necessary critical-shell claim and restores the stated `O(1)` comparison at the endpoint.
+
+Closure is pending durable persistence. Please strengthen the canonical shell selection from the limit-only condition (2) to the nearest-dyadic condition `log X_beta = 1/(4 beta)+O(1)` (or an equivalent bounded-offset choice) and update the use of (19) accordingly; the sidecar should remain until that correction is present in the finding.
