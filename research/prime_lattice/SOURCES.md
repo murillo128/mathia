@@ -309,3 +309,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 78. **Junehyuk Jung, Robert J. Lemke Oliver**, “Pretentiously detecting power cancellation,” *Mathematical Proceedings of the Cambridge Philosophical Society* **154**(3) (2013), 481–498. DOI: https://doi.org/10.1017/S0305004112000655. arXiv: https://arxiv.org/abs/1111.1921.
     - Role: main theorem-level anchor for `PL-138`. Introduces the weighted prime distance `D_beta` and proves, for completely multiplicative functions, transfer of `S_f(x)<<x^alpha` to `S_g(x)<<x^max(alpha,(1+beta)/2)` together with an optimality obstruction for that metric/class. It also introduces a stronger prime-power distance and proves the finite-degree transfer `S_g(x)<<x^max(alpha,beta)`. In exponent-lattice language these are established radial prime-phase and axis-ray stability geometries; their logic is relative transfer from a comparator with known cancellation, not an independent source of zeta continuation or RH localization.
+
+## Rédei matrices and support-dependent quadratic reciprocity
+
+79. **Jianing Li, Chia-Fu Yu**, “The Chevalley–Gras formula over global fields,” *Journal de Théorie des Nombres de Bordeaux* **32**(2) (2020), 525–543. DOI: https://doi.org/10.5802/jtnb.1133.
+    - Role: main theorem-level anchor for `PL-240`. Example 2.6 defines the Rédei matrix of a quadratic field by local Hilbert symbols, identifies its off-diagonal entries with additive Kronecker symbols between the prime discriminants, derives the row-sum relation from the Hilbert-symbol product formula, and states the exact narrow-class-group identity `rank_4 Cl^+(K)=t-1-rank(R)`.
+
+80. **Peter Stevenhagen**, “Rédei reciprocity, governing fields and negative Pell,” *Mathematical Proceedings of the Cambridge Philosophical Society* **172**(3) (2022), 627–654. DOI: https://doi.org/10.1017/S0305004121000335. arXiv: https://arxiv.org/abs/1806.06250.
+    - Role: higher-reciprocity prior-art anchor for `PL-240`. Gives a modern treatment of the Rédei trilinear symbol and reciprocity, explains its role in 8-ranks of narrow class groups, and relates higher `2`-power class-group behavior to Frobenius conditions on the primes dividing the discriminant; this prevents a naive move from the pairwise Rédei matrix to a trilinear support tensor from being treated as automatically new.
