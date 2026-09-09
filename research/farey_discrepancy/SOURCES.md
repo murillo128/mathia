@@ -27,6 +27,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - Marc Deléglise and Joël Rivat, *Computing the Summation of the Möbius Function*, Experimental Mathematics **5**(4) (1996), 291--295, DOI `10.1080/10586458.1996.10504594`. Role: primary computational prior-art boundary for the classical floor-quotient Möbius recurrence used to compute isolated Mertens values. `FD-005` derives the exact identity `sum_(d<=N) M(floor(N/d))=1` directly and uses it only as an affine compatibility constraint on the Franel--Mertens staircase.
 
+## Prime-density auxiliary input
+
+- Donald J. Newman, *Simple Analytic Proof of the Prime Number Theorem*, The American Mathematical Monthly **87**(9) (1980), 693--696, DOI `10.1080/00029890.1980.11995126`. Role: primary theorem anchor for the prime number theorem used in `FD-006` only to obtain the weighted dyadic-prime monomial Gram lower bound for a fixed family of Jordan-moment constraints. No quantitative zero-free estimate, RH, or RH-equivalent input is imported.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
