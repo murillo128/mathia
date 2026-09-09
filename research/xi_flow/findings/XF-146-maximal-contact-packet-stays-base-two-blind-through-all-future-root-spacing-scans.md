@@ -1,6 +1,6 @@
 # XF-146 — maximal-contact packet stays base-two blind through all future root-spacing scans
 
-**Status:** `EXACT-DERIVED` + `DECISIVE-NEGATIVE/FULL-FUTURE-ROOT-SPACING-SCAN-CONDITIONING` + `MATCHED-CONTROL` + `UNIT-CIRCLE-ADMISSIBLE` + `REAL-AXIS-SCAN` + `TRANSITION-TIME` + `SHARP-EXPONENTIAL-RATE`. XF-145 shows that the maximal-contact XF-141 packet is superexponentially invisible on a root-spacing real tube while `NaS_N -> 0`, and leaves `s asymp 1/(aN)` as the first heat scale where that particular estimate stops forcing superexponential blindness. The same packet in fact remains exponentially transition-blind on the **entire future heat history** of that tube. Its sharp exponential visibility rate is base two: the complete tube difference is `exp[-(log 2)N+o(N)]`, and a signal of that exponential size is already attained near the later clock `as log N/N`.
+**Status:** `EXACT-DERIVED` + `DECISIVE-NEGATIVE/FULL-FUTURE-ROOT-SPACING-SCAN-CONDITIONING` + `MATCHED-CONTROL` + `UNIT-CIRCLE-ADMISSIBLE` + `REAL-AXIS-SCAN` + `TRANSITION-TIME` + `SHARP-EXPONENTIAL-RATE`. XF-145 shows that the maximal-contact XF-141 packet is superexponentially invisible on a root-spacing real tube while `NaS_N -> 0`, and leaves `s asymp 1/(aN)` as the first heat scale where that particular estimate stops forcing superexponential blindness. The same packet in fact remains exponentially transition-blind on the **entire future heat history** of that tube. Its sharp exponential visibility rate is base two: the complete tube difference is `exp[-(log 2)N+o(N)]`, and a signal of that exponential size is already attained near the later clock `a s \sim (\log N)/N`.
 
 ## Claim
 
@@ -121,7 +121,7 @@ Use the XF-145 coordinate
 \qquad
 y=\frac\beta N=-\frac{2\pi ix}{L},
 \qquad
-u:=as.
+u:=as,
 \tag{12}
 \]
 
