@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-source-selection-versus-weil-sign-independence
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -41,3 +41,20 @@ In the normal research disposition, give the strongest mathematical counterargum
 ## Evidence boundary
 
 This clue proves neither a new selector nor a sign theorem, and does not assert that Prime Lattice is exhausted or equivalent to Weil Positivity. PL-225 is representation-specific and must not be extended to the high-temperature type-III KMS factors by assertion. Exact reconstruction can be useful if it yields an independent analytic advantage; the objection concerns unsupported advantage, not invertibility itself. No lifecycle, mandate, or task-allocation change is authorized here.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-199-affine-semigroup-additive-prime-shift-classicalization.md]]
+- [[research/prime_lattice/findings/PL-200-affine-liouville-graded-trace.md]]
+- [[research/prime_lattice/findings/PL-225-bost-connes-weak-completion-full-bh.md]]
+
+There is a concrete source-side relation that separates the two obligations without inserting a Weil target: on the canonical affine-semigroup representation, the additive successor `S` and prime dilations `V_p` satisfy `V_p S = S^p V_p`, and the prime directions close with `S` to the classical semigroup `N \rtimes N^times`. This relation is fixed before any target coefficients are chosen. It is not defeated by PL-225, because PL-225 only says that membership or affiliation in the weak closure of the bare prime shifts is nonselective; the affine covariance is an additional equation involving a distinguished additive generator. It is also outside the summarized WP-215 scalar-interpolation control, because an arbitrary diagonal `F(H)` changes weights on energy eigenspaces but does not create or characterize the noncommuting relation between `S` and the `V_p`.
+
+The separation is nevertheless only partial, and it classicalizes rather than advances an RH mechanism. PL-199 identifies the affine relation with established Cuntz/Laca--Raeburn prior art and shows that its natural KMS thermodynamics is organized by the shifted pole at `beta=2`, not by a selector at the shifted critical line. PL-200 then supplies the stronger target-sensitivity control: every completely multiplicative unimodular phase `chi` extends through the same affine source law by `(a,m) -> chi(m)`. Thus the identical source relation admits the full Helson-type prime-phase family; the Liouville choice produces `zeta(2s)/zeta(s)` only as a particular graded scalar readout and does not acquire an operator continuation or positivity theorem in the RH-sensitive region. The raw source law therefore does not select the downstream sign.
+
+This is the strongest present counterargument to identifying the two research obligations merely because they can inhabit related operator-algebraic settings: **source selection can be mathematically meaningful and source-forced while the sign/localization theorem remains an additional target-sensitive obligation**. It is not a theorem that every future Prime-Lattice selector is independent of every Weil-positivity mechanism, so the clue is resolved as a narrowing rather than as a general logical-independence theorem.
+
+The next independently useful test is to classify the canonical gauge/KMS-compatible scalar functionals on the affine residue projections `S^k V_a V_a^* S^{*k}` under Chinese-remainder refinement. If every source-forced compatible readout is forced to remain a positive/local residue-probability functional (or an already-classical KMS transform), then the affine selector is exhausted as a route to a sign-indefinite Weil form without inserting target coefficients. A counterexample would materially change this assessment: it would need to produce a canonical signed functional from the affine source relations themselves, survive the arbitrary-prime-phase control of PL-200, and have a continuation or coercivity statement not reducible to a prescribed `F(H)` or to a scalar zeta repackaging.
