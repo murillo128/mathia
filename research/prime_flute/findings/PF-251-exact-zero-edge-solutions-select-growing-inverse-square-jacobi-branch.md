@@ -2,13 +2,13 @@
 
 **Status:** `EXACT-DERIVED + ZERO-EDGE-BOUNDARY-CLASSIFICATION + INVERSE-SQUARE-THRESHOLD + POSITIVE/ROUTE-NARROWING`.
 
-PF-247 identifies the fixed-axis relative operator
+[[research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes|PF-247]] identifies the fixed-axis relative operator
 
 \[
 J=A^{-1/2}LA^{-1/2}
 \]
 
-as two half-line parity Jacobi chains whose coefficients differ from the constant Dirichlet chain by `O(j^{-2})`. PF-248 shows that this perturbation is trace class but misses the first weighted moment and obtains the formal zero-edge exponents `-1/2` and `3/2`. PF-250 then proves a sharp fractional smoothing window for the **free** half-line model, while leaving its transfer to the actual first-moment-critical chains open.
+as two half-line parity Jacobi chains whose coefficients differ from the constant Dirichlet chain by `O(j^{-2})`. [[research/prime_flute/findings/PF-248-parity-jacobi-tail-is-trace-class-but-first-moment-critical|PF-248]] shows that this perturbation is trace class but misses the first weighted moment and obtains the formal zero-edge exponents `-1/2` and `3/2`. [[research/prime_flute/findings/PF-250-half-line-fractional-edge-powers-retain-supercritical-separated-window|PF-250]] then proves a sharp fractional smoothing window for the **free** half-line model, while leaving its transfer to the actual first-moment-critical chains open.
 
 The exact compactification already contains a stronger threshold statement. Because `L` is unitarily equivalent to `1-\partial_\tau^2`, its elementary zero solutions can be projected onto PF-247's exact Gegenbauer basis. The resulting coefficient sequences solve the **actual** parity-Jacobi zero recurrence, including the first half-line row, and grow like `j^{3/2}`. Discrete reduction of order then gives the independent tail solution `j^{-1/2}`.
 

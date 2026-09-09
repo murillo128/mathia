@@ -13,7 +13,7 @@ For the **direct shear multiplier itself**, that concern is false in a much stro
 
 where `beta=max(w_1,w_2)` is exactly PF-232's reciprocal-prime shear scale. On the canonical tail `beta_n=O(P_n^{-1})`, so a fixed separation in **scaled** tangential frequency corresponds to `d=Theta(s_n^{-1})` and the direct mode-jump amplitude is super-algebraically small.
 
-This does **not** yet prove PF-240's weighted high-high estimate for the full normalized Schur difference. The variable-width diagonal background, actual seam normalization, and nonlinear resolvent/Schur operations can mediate additional mode mixing. The result nevertheless removes a concrete failure mechanism: the PF-232 coefficient `b` itself cannot directly throw a high mode across a macroscopic scaled-frequency gap at merely `O(beta)` cost. Any obstruction to the smooth route must arise from near-diagonal high-frequency propagation or from failure to preserve this locality through the remaining operator operations.
+This does **not** yet prove [[research/prime_flute/findings/PF-240-total-one-scaled-boundary-derivative-is-the-sharp-high-high-shear-trace-threshold|PF-240]]'s weighted high-high estimate for the full normalized Schur difference. The variable-width diagonal background, actual seam normalization, and nonlinear resolvent/Schur operations can mediate additional mode mixing. The result nevertheless removes a concrete failure mechanism: the PF-232 coefficient `b` itself cannot directly throw a high mode across a macroscopic scaled-frequency gap at merely `O(beta)` cost. Any obstruction to the smooth route must arise from near-diagonal high-frequency propagation or from failure to preserve this locality through the remaining operator operations.
 
 ## Claim
 

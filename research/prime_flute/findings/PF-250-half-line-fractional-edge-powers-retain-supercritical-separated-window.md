@@ -2,7 +2,7 @@
 
 **Status:** `LITERATURE+DERIVED + SHARP-FREE-FRACTIONAL-THRESHOLD + FULL-OUTPUT-CALIBRATION + POSITIVE/ROUTE-NARROWING`.
 
-PF-248 and PF-249 treat the square-root edge law of PF-247's constant half-line Jacobi limit. They show that the Dirichlet image cancels the bilateral `n^{-2}` tail in every fixed output row and that positive separation preserves the resulting full-output threshold `R<5/2`. The accepted clue `CLUE-critical-jacobi-square-root-decay-window.md`, however, still contains an older bilateral calibration suggesting that a general edge law `lambda^sigma` would need `sigma>1/4` merely to leave a strict `R>1` window.
+[[research/prime_flute/findings/PF-248-parity-jacobi-tail-is-trace-class-but-first-moment-critical|PF-248]] and [[research/prime_flute/findings/PF-249-positive-separation-preserves-free-jacobi-square-root-threshold|PF-249]] treat the square-root edge law of [[research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes|PF-247]]'s constant half-line Jacobi limit. They show that the Dirichlet image cancels the bilateral `n^{-2}` tail in every fixed output row and that positive separation preserves the resulting full-output threshold `R<5/2`. The accepted clue `CLUE-critical-jacobi-square-root-decay-window.md`, however, still contains an older bilateral calibration suggesting that a general edge law `lambda^sigma` would need `sigma>1/4` merely to leave a strict `R>1` window.
 
 That criterion is not the correct half-line calibration. For every noninteger fractional exponent
 
@@ -24,7 +24,7 @@ Thus even a quarter-root edge law `sigma=1/4` leaves the genuine free separated 
 \boxed{1<R<2.}
 \]
 
-The square-root case `sigma=1/2` recovers PF-249's `R<5/2` exactly. Consequently, **a small positive fractional edge exponent is not by itself a free-model obstruction to PF-243**. The live difficulty is pushed back to the actual scalar factor and, especially, to whether PF-247's first-moment-critical variable parity chains preserve the half-line cancellation strongly enough.
+The square-root case `sigma=1/2` recovers PF-249's `R<5/2` exactly. Consequently, **a small positive fractional edge exponent is not by itself a free-model obstruction to [[research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing|PF-243]]**. The live difficulty is pushed back to the actual scalar factor and, especially, to whether PF-247's first-moment-critical variable parity chains preserve the half-line cancellation strongly enough.
 
 This is not a theorem about the actual Prime Flute seam. The exact half-line fractional kernel is classical prior art; the project-specific contribution here is the sharp separated weighted threshold and its use to remove the obsolete `sigma>1/4` free-model kill criterion.
 

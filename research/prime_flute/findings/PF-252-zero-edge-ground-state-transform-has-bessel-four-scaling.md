@@ -2,7 +2,7 @@
 
 **Status:** `EXACT-DERIVED + GROUND-STATE-REPRESENTATION + BESSEL-FOUR-SCALING + POSITIVE/ROUTE-NARROWING`.
 
-PF-251 identifies, in each parity sector of the fixed-axis relative Jacobi operator
+[[research/prime_flute/findings/PF-251-exact-zero-edge-solutions-select-growing-inverse-square-jacobi-branch|PF-251]] identifies, in each parity sector of the fixed-axis relative Jacobi operator
 \[
 J=A^{-1/2}LA^{-1/2},
 \]
@@ -16,7 +16,7 @@ That exact boundary solution can be used as a ground-state/Doob transform. The r
 \]
 the radial Laplacian in four Euclidean dimensions, scaled by \(1/4\).
 
-This gives a sharper interpretation of PF-248/PF-251's inverse-square threshold. The free Dirichlet chain used in PF-248--PF-250 has boundary zero mode \(j+1\) and the analogous ground-state transform has three-dimensional radial scaling. The actual PF-247 inverse-square tail therefore changes the threshold model from Bessel dimension three to Bessel dimension four. It does **not** merely add an arbitrary trace-class defect to the free edge.
+This gives a sharper interpretation of PF-248/PF-251's inverse-square threshold. The free Dirichlet chain used in PF-248--PF-250 has boundary zero mode \(j+1\) and the analogous ground-state transform has three-dimensional radial scaling. The actual [[research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes|PF-247]] inverse-square tail therefore changes the threshold model from Bessel dimension three to Bessel dimension four. It does **not** merely add an arbitrary trace-class defect to the free edge.
 
 The result does not yet prove the low-energy spectral density, fractional-power matrix decay, or the \(R>1\) separated Robin-Poisson estimate. It does, however, replace the generic perturbative picture by an exact positive weighted-chain model whose endpoint geometry can be attacked with Bessel/heat-kernel methods.
 

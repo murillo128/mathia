@@ -26,7 +26,7 @@ Single-shell roots-of-unity, Ramanujan/Fourier and divisor-harmonic readouts rep
 - [[research/prime_circle/findings/PC-125-relative-scale-resultant-spectralization-is-purely-cyclotomic|PC-125]]
 - [[research/prime_circle/findings/PC-126-global-mobius-shell-resultants-factor-into-collision-hyperplanes|PC-126]]
 - [[research/prime_circle/mind/RESEARCH_LINES|Prime-circle synthesis]]
-- [[research/prior_art/graph/index|Prior-art redirects]]
+- [[research/prior_art/graph/prior-art|Prior-art redirects]]
 
 The Hardy/Hilbert lift already strengthened the soft pruning from a nonlocal operator category: its noncompact core is universal Hilbert spectrum, relative traces return endpoint Mangoldt/radical data, and repeated-prime depth is finite tensor inflation.
 

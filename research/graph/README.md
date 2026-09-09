@@ -12,10 +12,10 @@ Procedural authority:
 
 ## Atlas
 
-Open [[research/graph/atlas/index|Riemann Atlas]] for the current versioned denominator, coverage/pruning metrics, and territory graph. Atlas coverage is coverage of the mapped known approach space, never a percentage of RH solved or of all possible mathematical ideas.
+Open [[research/graph/atlas/riemann-atlas|Riemann Atlas]] for the current versioned denominator, coverage/pruning metrics, and territory graph. Atlas coverage is coverage of the mapped known approach space, never a percentage of RH solved or of all possible mathematical ideas.
 
 ## Obsidian
 
-Open the repository root (`mathia/`) as an Obsidian vault and use the built-in **Graph View**. For a line-specific view, open that line's `graph/index.md` and use **Open local graph**.
+Open the repository root (`mathia/`) as an Obsidian vault and use the built-in **Graph View**. For a line-specific view, open that line's semantically named hub, `research/<line>/graph/<line-name>.md` and use **Open local graph**.
 
 No community plugin is required.

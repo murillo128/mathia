@@ -32,6 +32,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/analytic_frontier/mind/intuition/MI-004-complete-scalar-control-is-diffraction-realizability]]
 - [[research/analytic_frontier/mind/intuition/MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects]]
 - [[research/analytic_frontier/mind/intuition/MI-006-relative-xi-source-reconstruction-moves-the-gate-to-destination-conditioning]]
+- [[research/analytic_frontier/mind/intuition/MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist]]
 
 ### Arithmetic Fidelity
 - [[research/arithmetic_fidelity/mind/intuition/MI-001-fidelity-is-quotient-relative]]
@@ -52,6 +53,11 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-016-shtarkov-rays-separate-radial-reset-from-full-experiment-loss]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-018-signed-complexity-only-transfers-through-sign-regular-observations]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-019-faithful-translation-lifts-are-affine]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-020-prime-tail-localization-has-an-information-conservation-law]]
+
+### Farey Discrepancy
+- [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -66,6 +72,10 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-010-signed-retention-is-not-information-reduction]]
 - [[research/mobius_cancellation/mind/intuition/MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel]]
 - [[research/mobius_cancellation/mind/intuition/MI-012-hamming-regularization-is-degree-two-damping-before-the-square-root-transition]]
+- [[research/mobius_cancellation/mind/intuition/MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category]]
+
+### Nyman–Beurling
+- [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -103,6 +113,11 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries]]
 - [[research/prime_lattice/mind/intuition/MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution]]
 - [[research/prime_lattice/mind/intuition/MI-013-kms-offdiagonal-freedom-is-boundary-data-not-prime-coupling]]
+- [[research/prime_lattice/mind/intuition/MI-014-prime-exchangeability-erases-normal-arithmetic-equilibrium]]
+- [[research/prime_lattice/mind/intuition/MI-015-reciprocity-family-coupling-is-not-principal-zero-selection]]
+
+### Robin Extremal
+- [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]

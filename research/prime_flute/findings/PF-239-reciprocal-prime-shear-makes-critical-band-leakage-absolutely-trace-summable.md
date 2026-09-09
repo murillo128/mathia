@@ -10,7 +10,7 @@ PF-232 gives a multiplicative energy-form comparison between the sheared and dia
 \beta_n:=\max(\sinh\rho_n,\sinh\rho_{n+1})=O(P_n^{-1}).
 \]
 
-After congruence by **any fixed positive boundary seam normalizer**, in particular PF-238's actual complete-lift seam form, operator monotonicity of the resolvent implies that the corresponding normalized Schur factors differ in operator norm by at most `O(beta_n)`. PF-233 simultaneously gives only `O(s_n^{-1})` transverse modes in every fixed scaled band. Hence every part of the shear correction with at least one leg in such a band is finite rank with trace norm
+After congruence by **any fixed positive boundary seam normalizer**, in particular [[research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer|PF-238]]'s actual complete-lift seam form, operator monotonicity of the resolvent implies that the corresponding normalized Schur factors differ in operator norm by at most `O(beta_n)`. PF-233 simultaneously gives only `O(s_n^{-1})` transverse modes in every fixed scaled band. Hence every part of the shear correction with at least one leg in such a band is finite rank with trace norm
 
 \[
 O\!\left(\frac{\beta_n}{s_n}\right).

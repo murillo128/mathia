@@ -2,7 +2,7 @@
 
 **Status:** `EXACT-DERIVED + SHARP-CONDITIONAL-REDUCTION + TRACE-IDEAL-THRESHOLD + POSITIVE/ROUTE-NARROWING`.
 
-PF-239 reduces the hypercycle-straightening shear problem to the high-high block
+[[research/prime_flute/findings/PF-239-reciprocal-prime-shear-makes-critical-band-leakage-absolutely-trace-summable|PF-239]] reduces the hypercycle-straightening shear problem to the high-high block
 
 \[
 H_Z=(I-\Pi_Z)\Delta_{21}(I-\Pi_Z),
@@ -10,7 +10,7 @@ H_Z=(I-\Pi_Z)\Delta_{21}(I-\Pi_Z),
 
 where `Delta_21` is the difference between the actual-seam-normalized sheared and diagonal crossing blocks and `Pi_Z=1_[0,Z](K_a)` is the PF-233 fixed-scaled-band projector. PF-239 proves that everything touching `Pi_Z` is already absolutely trace summable after the reciprocal-prime weight, but leaves open what quantitative boundary-to-boundary smoothing is actually sufficient for `H_Z`.
 
-The required theorem is much weaker than preserving PF-238's full exponential `F(sm)=sm/sinh(sm)` envelope. Because the boundary is one-dimensional and PF-233 gives the exact scaled spectral law `k_m(K_a) asymp s(m+alpha)`, **any uniform high-high Sobolev gain of total order strictly larger than one closes the shear block in strong trace class at cost `O(beta/s)`**. The threshold is sharp for this abstract information: total order exactly one forces only weak trace class in the model case, and any smaller total order need not even be weak trace class.
+The required theorem is much weaker than preserving [[research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer|PF-238]]'s full exponential `F(sm)=sm/sinh(sm)` envelope. Because the boundary is one-dimensional and PF-233 gives the exact scaled spectral law `k_m(K_a) asymp s(m+alpha)`, **any uniform high-high Sobolev gain of total order strictly larger than one closes the shear block in strong trace class at cost `O(beta/s)`**. The threshold is sharp for this abstract information: total order exactly one forces only weak trace class in the model case, and any smaller total order need not even be weak trace class.
 
 Consequently the remaining PF shear PDE gate can be stated precisely. It is enough to prove, for some `r_1,r_2>0` with `r_1+r_2>1`, a canonical-tail estimate
 

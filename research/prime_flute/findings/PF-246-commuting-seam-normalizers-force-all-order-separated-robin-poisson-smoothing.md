@@ -8,7 +8,7 @@ There is nevertheless an exact positive calibration that sharply identifies what
 \frac{\sqrt q}{k+q}\le \frac1{2\sqrt k}.
 \]
 
-Thus neither a lower seam coercivity bound nor complex analyticity of `Q^{1/2}` is required in the commuting calibration. PF-236's operator-matched seams satisfy this hypothesis exactly, so the PF-243 separated smoothing estimate holds there for arbitrary order `R`. The actual PF seam does not commute with PF-233's `K_a` after the fixed boundary compactification, so this does **not** close PF-243. It localizes the live theorem much more tightly: the missing structure is quantitative control of **spectral conversion by the normalized actual Robin coupling relative to `K_a`**, not additional scalar seam coercivity and not a supercritical analytic strip for the bare seam square root.
+Thus neither a lower seam coercivity bound nor complex analyticity of `Q^{1/2}` is required in the commuting calibration. [[research/prime_flute/findings/PF-236-operator-matched-seam-normalizer-preserves-dressed-variable-corridor-transfer|PF-236]]'s operator-matched seams satisfy this hypothesis exactly, so the [[research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing|PF-243]] separated smoothing estimate holds there for arbitrary order `R`. The actual PF seam does not commute with PF-233's `K_a` after the fixed boundary compactification, so this does **not** close PF-243. It localizes the live theorem much more tightly: the missing structure is quantitative control of **spectral conversion by the normalized actual Robin coupling relative to `K_a`**, not additional scalar seam coercivity and not a supercritical analytic strip for the bare seam square root.
 
 ## Claim
 

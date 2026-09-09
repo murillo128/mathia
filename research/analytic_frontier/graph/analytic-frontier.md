@@ -13,9 +13,6 @@ derived: true
 
 This is the structural hub for the initialized Analytic Frontier research line. Canonical research remains authoritative; membership links below assert ownership only.
 
-<!-- structural-membership:start -->
 ## Canonical finding membership (structural)
 
-- [[research/analytic_frontier/findings/ANF-001-fixed-sigma-energy-bounds-collapse-at-screening-scale|ANF-001]]
-- [[research/analytic_frontier/findings/ANF-002-pair-correlation-hilbert-horizontal-information|ANF-002]]
-<!-- structural-membership:end -->
+[[research/analytic_frontier/graph/analytic-frontier-membership|Analytic Frontier structural membership]]

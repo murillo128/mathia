@@ -2,7 +2,7 @@
 
 **Status:** `EXACT-DERIVED + UNIFORM-ELLIPTIC-REDUCTION + POSITIVE/ROUTE-NARROWING`.
 
-PF-240 identifies the remaining hypercycle-shear gate: for the high-high actual-seam-normalized correction it is enough to prove more than one total `K_a` boundary derivative with an `O(beta)` constant, uniformly as the corridor scale `s->0`. A legitimate concern is that ordinary fixed-domain elliptic smoothing may become useless because the PF-232 straightened corridor is thin in its natural tangential energy scale.
+[[research/prime_flute/findings/PF-240-total-one-scaled-boundary-derivative-is-the-sharp-high-high-shear-trace-threshold|PF-240]] identifies the remaining hypercycle-shear gate: for the high-high actual-seam-normalized correction it is enough to prove more than one total `K_a` boundary derivative with an `O(beta)` constant, uniformly as the corridor scale `s->0`. A legitimate concern is that ordinary fixed-domain elliptic smoothing may become useless because the PF-232 straightened corridor is thin in its natural tangential energy scale.
 
 The apparent thinness can be removed exactly at the level relevant to PF-240. After PF-233's boundary-mass conjugation and the unitary tangential dilation
 

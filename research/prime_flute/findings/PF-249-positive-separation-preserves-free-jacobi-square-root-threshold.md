@@ -2,7 +2,7 @@
 
 **Status:** `EXACT-DERIVED + SHARP-FREE-SEPARATED-THRESHOLD + FULL-OUTPUT-CALIBRATION + POSITIVE/ROUTE-NARROWING`.
 
-PF-248 computes the square root of the constant half-line Jacobi limit from PF-247 and finds an `n^{-3}` fixed-output tail, giving the toy input-weight threshold `R<5/2`. PF-243, however, does not ask for one fixed output row: its far-leg estimate is a norm into the **full bulk energy space** after a fixed positive longitudinal separation. The local clue `CLUE-critical-jacobi-square-root-decay-window.md` therefore leaves open whether summing all output modes consumes the apparent `5/2` margin.
+[[research/prime_flute/findings/PF-248-parity-jacobi-tail-is-trace-class-but-first-moment-critical|PF-248]] computes the square root of the constant half-line Jacobi limit from [[research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes|PF-247]] and finds an `n^{-3}` fixed-output tail, giving the toy input-weight threshold `R<5/2`. [[research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing|PF-243]], however, does not ask for one fixed output row: its far-leg estimate is a norm into the **full bulk energy space** after a fixed positive longitudinal separation. The local clue `CLUE-critical-jacobi-square-root-decay-window.md` therefore leaves open whether summing all output modes consumes the apparent `5/2` margin.
 
 For the constant half-line square-root proxy, it does not. Positive separation exponentially damps the output mode, and that damping absorbs the polynomial growth of the row constants. More precisely, if `S=J_0^{1/2}` is PF-248's free half-line square root, `N e_n=(n+1)e_n`, and
 

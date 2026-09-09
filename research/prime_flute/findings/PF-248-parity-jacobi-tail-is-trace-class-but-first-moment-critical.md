@@ -2,7 +2,7 @@
 
 **Status:** `EXACT-DERIVED + TRACE-CLASS-RELATIVE-JACOBI + FIRST-MOMENT-CRITICAL + HALF-LINE-SQUARE-ROOT-CALIBRATION + POSITIVE/ROUTE-NARROWING`.
 
-PF-247 identifies the fixed-axis relative operator
+[[research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes|PF-247]] identifies the fixed-axis relative operator
 
 \[
 J=A^{-1/2}LA^{-1/2}
@@ -20,7 +20,7 @@ Second, the constant **half-line** model is better than the bilateral Toeplitz c
 R<\frac52,
 \]
 
-not merely `R<3/2`. The critical edge therefore does **not** by itself kill PF-243's required supercritical window. What remains is a sharper and genuinely nontrivial stability problem: whether this half-line cancellation and enough weighted matrix decay survive PF-247's specific `O(j^{-2})` first-moment-critical variable Jacobi tail, the full-output norm required by PF-243, and then the actual `T_a`/hypercycle perturbations.
+not merely `R<3/2`. The critical edge therefore does **not** by itself kill [[research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing|PF-243]]'s required supercritical window. What remains is a sharper and genuinely nontrivial stability problem: whether this half-line cancellation and enough weighted matrix decay survive PF-247's specific `O(j^{-2})` first-moment-critical variable Jacobi tail, the full-output norm required by PF-243, and then the actual `T_a`/hypercycle perturbations.
 
 ## 1. Exact coefficient tail from PF-247
 

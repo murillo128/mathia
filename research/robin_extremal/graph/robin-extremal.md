@@ -10,6 +10,6 @@ derived: true
 # Robin Extremal research graph
 
 [[research/graph/global|Global research graph]]
-[[research/robin_extremal/graph/current-window-834376c-membership|Current curator-window membership]]
+[[research/robin_extremal/graph/robin-extremal-membership|Robin Extremal structural membership]]
 
 Canonical findings and `mind/` remain authoritative. The membership projection is structural only.

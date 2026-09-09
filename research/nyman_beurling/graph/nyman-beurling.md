@@ -10,6 +10,6 @@ derived: true
 # Nyman–Beurling research graph
 
 [[research/graph/global|Global research graph]]
-[[research/nyman_beurling/graph/current-window-834376c-membership|Current curator-window membership]]
+[[research/nyman_beurling/graph/nyman-beurling-membership|Nyman–Beurling structural membership]]
 
 Canonical findings and `mind/` remain authoritative. The membership projection is structural only.

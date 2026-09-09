@@ -11,17 +11,9 @@ derived: true
 
 Visual Exploration is a source-backed transversal research line. Its PNG/Markdown renders are representations; only canonical findings and source-backed mind notes are mathematical evidence.
 
-<!-- structural-membership:start -->
 ## Canonical finding membership (structural)
 
-- [[research/visual_exploration/findings/VIS-001-crt-wheel-rank-one-artifact|VIS-001]]
-- [[research/visual_exploration/findings/VIS-002-compact-reference-residual-achievement-interval|VIS-002]]
-- [[research/visual_exploration/findings/VIS-003-harmonic-endpoint-watt-sawtooth-asymptotic|VIS-003]]
-- [[research/visual_exploration/findings/VIS-004-dyadic-midpoint-centering-keeps-sigma-one-threshold|VIS-004]]
-- [[research/visual_exploration/findings/VIS-005-gap-two-local-leakage-obstructs-uniform-eigenspace-locking|VIS-005]]
-- [[research/visual_exploration/findings/VIS-006-modulus-functional-equation-defect-forced-critical-line|VIS-006]]
-- [[research/visual_exploration/findings/VIS-007-grosswald-schnitzer-rigidity-profile-monotone|VIS-007]]
-<!-- structural-membership:end -->
+[[research/visual_exploration/graph/visual-exploration-membership|Visual Exploration structural membership]]
 
 ## Durable synthesis
 

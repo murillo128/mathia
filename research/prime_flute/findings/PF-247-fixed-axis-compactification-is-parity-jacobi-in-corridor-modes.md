@@ -2,9 +2,9 @@
 
 **Status:** `EXACT-DERIVED + MODE-LOCALITY + ASYMPTOTIC-JACOBI + CRITICAL-RELATIVE-SPECTRUM + POSITIVE/ROUTE-NARROWING`.
 
-PF-243 reduces the remaining high-high shear gate to separated Robin-Poisson smoothing of order `R>1`. PF-244 shows that one-sided seam form domination alone allows arbitrary high-to-low leakage, while PF-245 shows that the bare actual seam square root cannot obtain the required gain merely from a family-uniform supercritical Fourier strip. PF-246 gives the opposite calibration: if the seam normalizer commutes with the corridor transverse operator, separation gives smoothing of every order.
+[[research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing|PF-243]] reduces the remaining high-high shear gate to separated Robin-Poisson smoothing of order `R>1`. [[research/prime_flute/findings/PF-244-one-sided-seam-domination-does-not-imply-separated-poisson-smoothing|PF-244]] shows that one-sided seam form domination alone allows arbitrary high-to-low leakage, while [[research/prime_flute/findings/PF-245-actual-seam-square-root-has-no-uniform-supercritical-analytic-strip|PF-245]] shows that the bare actual seam square root cannot obtain the required gain merely from a family-uniform supercritical Fourier strip. [[research/prime_flute/findings/PF-246-commuting-seam-normalizers-force-all-order-separated-robin-poisson-smoothing|PF-246]] gives the opposite calibration: if the seam normalizer commutes with the corridor transverse operator, separation gives smoothing of every order.
 
-The fixed boundary compactification already present in PF-238 has substantially more structure than the abstract PF-244 countermodel. Let
+The fixed boundary compactification already present in [[research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer|PF-238]] has substantially more structure than the abstract PF-244 countermodel. Let
 
 \[
 A=-\partial_\theta^2+\csc^2\theta,

@@ -2,14 +2,14 @@
 
 **Status:** `EXACT-DERIVED + DECISIVE-NEGATIVE + SPECTRAL-TYPE-OBSTRUCTION + ROUTE-REORDERING`. PF-236 proves that the exact PF-233 variable-width corridor retains the decisive dressed `sqrt(w_1w_2)/s` crossing envelope when its two seam normalizers are built from the same effective transverse operator `K=T_a^{1/2}` as the corridor. The accepted conformal-transfer clue correctly warns that two-sided form comparison of the actual seam with that matched seam is not enough to control the off-diagonal inverse. There is a stronger reason not to pursue that comparison on the **complete lifted seam**: the two normalizers have different spectral type.
 
-For one fixed neighboring-cuff edge, PF-233 gives `K` compact resolvent, while PF-236 defines
+For one fixed neighboring-cuff edge, PF-233 gives `K` compact resolvent, while [[research/prime_flute/findings/PF-236-operator-matched-seam-normalizer-preserves-dressed-variable-corridor-transfer|PF-236]] defines
 
 \[
 Q_i^{\rm mat}
 =B^{1/2}K\tanh((w_i/s)K)B^{1/2}.
 \]
 
-Its inverse is compact. By contrast, PF-235's complete-axis seam control is form-comparable to
+Its inverse is compact. By contrast, [[research/prime_flute/findings/PF-235-hypercycle-boundary-compactification-has-only-quadratic-prime-dependent-defect|PF-235]]'s complete-axis seam control is form-comparable to
 
 \[
 Q_w^{\rm axis}

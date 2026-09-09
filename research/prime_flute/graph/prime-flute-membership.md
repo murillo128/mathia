@@ -263,3 +263,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-250-half-line-fractional-edge-powers-retain-supercritical-separated-window|PF-250]]
 - [[research/prime_flute/findings/PF-251-exact-zero-edge-solutions-select-growing-inverse-square-jacobi-branch|PF-251]]
 - [[research/prime_flute/findings/PF-252-zero-edge-ground-state-transform-has-bessel-four-scaling|PF-252]]
+- [[research/prime_flute/findings/PF-253-bessel-four-jacobi-fractional-powers-have-sharp-separated-window|PF-253]]

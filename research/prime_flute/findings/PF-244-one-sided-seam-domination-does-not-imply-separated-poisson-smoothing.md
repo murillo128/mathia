@@ -2,13 +2,13 @@
 
 **Status:** `EXACT-DERIVED + ABSTRACT-COUNTERMODEL + DECISIVE-NEGATIVE/PROOF-STRATEGY-OBSTRUCTION + ROUTE-NARROWING`.
 
-PF-243 reduces the high-high shear correction to a sharply localized question: does a seam-normalized Robin Poisson solution gain more than one scaled tangential derivative when it is observed a fixed positive `X`-distance from its forcing boundary? PF-238 supplies an important surviving fact about the actual complete-lift seam, namely one-sided form domination by the matched first-order seam. That fact is enough for the diagonal dressed crossing estimate, but it is **not enough by itself** for PF-243's separated Poisson smoothing.
+[[research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing|PF-243]] reduces the high-high shear correction to a sharply localized question: does a seam-normalized Robin Poisson solution gain more than one scaled tangential derivative when it is observed a fixed positive `X`-distance from its forcing boundary? [[research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer|PF-238]] supplies an important surviving fact about the actual complete-lift seam, namely one-sided form domination by the matched first-order seam. That fact is enough for the diagonal dressed crossing estimate, but it is **not enough by itself** for PF-243's separated Poisson smoothing.
 
 There is an explicit product half-strip model with all of the following features at once:
 
 - a positive compact-resolvent tangential operator `K`;
 - a positive invertible nonlocal seam `Q` satisfying the one-sided first-order form bound `Q <= C K`;
-- compact inverse for the matched seam `K` but noncompact inverse for `Q`, paralleling the soft-seam spectral-type mismatch isolated in PF-237;
+- compact inverse for the matched seam `K` but noncompact inverse for `Q`, paralleling the soft-seam spectral-type mismatch isolated in [[research/prime_flute/findings/PF-237-complete-lift-seam-spectral-type-blocks-direct-matched-normalizer-comparison|PF-237]];
 - the same normalized Robin variational energy contraction used in PF-243;
 - an exactly diagonal interior, so propagation by a fixed positive distance is exponentially smoothing in the `K` modes;
 

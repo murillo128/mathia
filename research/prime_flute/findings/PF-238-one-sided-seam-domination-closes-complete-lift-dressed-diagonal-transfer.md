@@ -18,7 +18,7 @@ q_i^{\rm mat}=K\tanh(r_iK),\qquad
 Q_i^{\rm mat}=B^{1/2}q_i^{\rm mat}B^{1/2}.
 \]
 
-Let `Q_i^{act}` denote the **complete lifted actual symmetric seam form** after PF-235's exact hypercycle transport and the density-corrected fixed `tau<->theta` compactification used in PF-237. Then
+Let `Q_i^{act}` denote the **complete lifted actual symmetric seam form** after [[research/prime_flute/findings/PF-235-hypercycle-boundary-compactification-has-only-quadratic-prime-dependent-defect|PF-235]]'s exact hypercycle transport and the density-corrected fixed `tau<->theta` compactification used in [[research/prime_flute/findings/PF-237-complete-lift-seam-spectral-type-blocks-direct-matched-normalizer-comparison|PF-237]]. Then
 
 \[
 \boxed{

@@ -27,8 +27,6 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 - [[research/xi_flow/graph/xi-flow|Xi Flow]]
 - [[research/prior_art/graph/prior-art|Prior-art redirects]]
 - [[research/graph/intuition-membership|Durable intuition membership]]
-- [[research/graph/frontier-membership|Current frontier structural membership]]
-- [[research/graph/frontier-membership-tail|Current frontier tail]]
 
 ## Riemann Atlas
 

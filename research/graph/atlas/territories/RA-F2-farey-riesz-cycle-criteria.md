@@ -17,4 +17,4 @@ Prime Circle has reproduced several known geometric RH reformulations and redire
 
 - [[research/prime_circle/findings/PC-007-cumulative-new-vertices-are-farey-rh-geometry-is-classical|PC-007]]
 - [[research/prime_circle/findings/PC-008-single-polygon-riesz-and-cycle-spectral-zeta-are-known-rh-reformulations|PC-008]]
-- [[research/prior_art/graph/index|Prior-art graph]]
+- [[research/prior_art/graph/prior-art|Prior-art graph]]
