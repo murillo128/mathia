@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-bost-connes-affiliation-conditioning-boundary
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_positivity
 based_on:
@@ -64,3 +64,9 @@ The strongest useful negative result would classify a broad natural completion f
 The Prime-Lattice findings in `based_on` remain category-specific controls, not a theorem that every Bost--Connes or noncommutative-geometric route fails. In particular, `PL-225` concerns the standard positive-energy representation and cannot be extended by assertion to all KMS GNS sectors. `PL-226`--`PL-228` classify specific canonical limits and conditionings, not every relational completion.
 
 No source-forced sign-reversing operation, archimedean completion, or positive Weil form is established here. This clue records the new falsification surface created by `WP-216`; it is not evidence for portfolio promotion, line consolidation, or an RH consequence.
+
+## Research disposition
+
+The clue is accepted, but its tractable completion classes have already narrowed materially. `WP-217` proves that the canonical temperature/log-density score of the critical conditioned Gram is exactly the previously audited Prime-Torus Poisson score, so that scalar score/Fisher geometry supplies the correct finite comb only as a signed tangent with divergent critical Fisher norm and no Gamma sector. `WP-218` proves a different obstruction: the prime-axis Weil defect has a nontrivial negative essential Toeplitz interval, so every compact self-adjoint correction—including finite-rank GNS/boundary corrections and bounded finite-sector Schur complements—leaves the wrong sign in essential spectrum.
+
+The unresolved question is therefore genuinely noncompact. A surviving construction must source-force a mixed-prime or finite--archimedean operation that changes the essential prime-ray geometry (or removes the negative Weyl sequences by a source-derived admissibility constraint), while also producing the Gamma and polar sectors and passing generalized-product controls. The clue remains active because `WP-217` and `WP-218` narrow, but do not resolve, that noncompact completion problem.
