@@ -4,7 +4,7 @@
 
 ## Claim
 
-PC-064 identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
+[[research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid|PC-064]] identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
 
 \[
 \Sigma_{\mathbb Q}\cong\widehat{\mathbb Q},
@@ -13,7 +13,7 @@ L^2(\Sigma_{\mathbb Q})
 =\overline{\operatorname{span}}\{\chi_q:q\in\mathbb Q\},
 \]
 
-and PC-069/PC-070 classify scalar **affine** covariance under the intrinsic power automorphism. For `m\ge2`, let
+and [[research/prime_circle/findings/PC-069-exact-solenoid-dilation-covariance-forbids-compact-resolvent|PC-069]]/[[research/prime_circle/findings/PC-070-additive-solenoid-dilation-covariance-also-forbids-compact-resolvent|PC-070]] classify scalar **affine** covariance under the intrinsic power automorphism. For `m\ge2`, let
 
 \[
 V_m\chi_q=\chi_{mq}

@@ -4,7 +4,7 @@
 
 ## Claim
 
-PC-064 identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
+[[research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid|PC-064]] identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
 
 \[
 \Sigma_{\mathbb Q}\cong\widehat{\mathbb Q},
@@ -19,7 +19,7 @@ and PC-069--PC-072 study the intrinsic Haar-Koopman power dilation
 V_m\chi_q=\chi_{mq},\qquad m\ge2.
 \]
 
-PC-071 rules out scalar homeomorphic covariance and PC-072 rules out non-bijective laws whose tails are eventually outward in absolute value. A natural remaining repair is a **translation-like but folding** scalar law: a non-injective `\Phi` with uniformly positive drift, so backward spectral chains escape toward `-\infty` rather than being trapped as in PC-072.
+[[research/prime_circle/findings/PC-071-homeomorphic-dilation-covariance-cannot-have-compact-resolvent|PC-071]] rules out scalar homeomorphic covariance and [[research/prime_circle/findings/PC-072-eventually-outward-scalar-dilation-covariance-cannot-have-compact-resolvent|PC-072]] rules out non-bijective laws whose tails are eventually outward in absolute value. A natural remaining repair is a **translation-like but folding** scalar law: a non-injective `\Phi` with uniformly positive drift, so backward spectral chains escape toward `-\infty` rather than being trapped as in PC-072.
 
 That repair also fails for the actual Prime-Circle dilation representation.
 
@@ -53,7 +53,7 @@ or the full `L^2(\Sigma_{\mathbb Q})` satisfying, as an equality of self-adjoint
 \boxed{V_m^*HV_m=\Phi(H).}
 \]
 
-The mechanism is not the bounded-backward-orbit argument of PC-072. Uniform bounded drift instead creates a **bounded spectral transversal**: every eigenspace of `H` is obtained from the finite-dimensional spectral band `E_H([0,M])` by finitely many powers of `V_m` and `V_m^*`. Hence a finite-dimensional subspace is cyclic for the unitary `V_m`. That forces finite unitary spectral multiplicity, contradicting the exact Prime-Circle decomposition of `V_m` into countably infinitely many bilateral rational-character orbits from PC-070.
+The mechanism is not the bounded-backward-orbit argument of PC-072. Uniform bounded drift instead creates a **bounded spectral transversal**: every eigenspace of `H` is obtained from the finite-dimensional spectral band `E_H([0,M])` by finitely many powers of `V_m` and `V_m^*`. Hence a finite-dimensional subspace is cyclic for the unitary `V_m`. That forces finite unitary spectral multiplicity, contradicting the exact Prime-Circle decomposition of `V_m` into countably infinitely many bilateral rational-character orbits from [[research/prime_circle/findings/PC-070-additive-solenoid-dilation-covariance-also-forbids-compact-resolvent|PC-070]].
 
 Thus even a regular non-injective scalar law that looks like translation plus bounded geometric folding cannot support an ordinary compact-resolvent Hilbert--Pólya operator while preserving the intrinsic two-sided solenoid dilation.
 

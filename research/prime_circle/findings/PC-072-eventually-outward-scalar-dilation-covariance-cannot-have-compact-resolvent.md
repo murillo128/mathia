@@ -4,7 +4,7 @@
 
 ## Claim
 
-PC-064 identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
+[[research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid|PC-064]] identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
 
 \[
 \Sigma_{\mathbb Q}\cong\widehat{\mathbb Q},
@@ -19,7 +19,7 @@ and PC-069--PC-071 study the Haar-Koopman dilation unitary
 V_m\chi_q=\chi_{mq},\qquad m\ge2.
 \]
 
-PC-071 rules out every scalar homeomorphic law
+[[research/prime_circle/findings/PC-071-homeomorphic-dilation-covariance-cannot-have-compact-resolvent|PC-071]] rules out every scalar homeomorphic law
 
 \[
 V_m^*HV_m=\Phi(H)

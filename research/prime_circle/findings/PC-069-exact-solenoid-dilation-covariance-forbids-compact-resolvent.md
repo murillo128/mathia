@@ -4,7 +4,7 @@
 
 ## Claim
 
-PC-064 identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
+[[research/prime_circle/findings/PC-064-compatible-circle-refinement-is-the-adelic-solenoid|PC-064]] identifies the compatible all-level Prime-Circle refinement with the arithmetic solenoid
 
 \[
 \Sigma_{\mathbb Q}\cong\widehat{\mathbb Q},

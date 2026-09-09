@@ -4,7 +4,7 @@
 
 ## Claim
 
-PC-069 proves that the intrinsic power automorphism
+[[research/prime_circle/findings/PC-069-exact-solenoid-dilation-covariance-forbids-compact-resolvent|PC-069]] proves that the intrinsic power automorphism
 
 \[
 D_m:\Sigma_{\mathbb Q}\to\Sigma_{\mathbb Q},
