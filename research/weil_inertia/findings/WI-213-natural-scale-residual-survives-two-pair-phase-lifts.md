@@ -2,219 +2,170 @@
 
 **Status:** `EXACT-DERIVED + CLASSICAL-IDENTITY + STRUCTURAL-RIGIDITY + LITERATURE-CONTEXT`.
 
-WI-211 constructs two additional off-line functional-equation pairs that cancel an equal-depth arithmetic bow exactly at the two reciprocal harmonics available when `2<d<3`, and WI-212 shows that every fixed finite reciprocal packet can likewise be screened by only finitely many deep off-line pairs. The remaining question in `CLUE-two-harmonic-screen-continuum-residual` is whether the exact WI-211 screen also cancels the coherent peak between those samples once the integer phase-lift freedom is retained and the frequency window is priced in the actual source variable.
+WI-211 constructs two additional off-line functional-equation pairs that cancel an equal-depth arithmetic bow exactly at the two reciprocal harmonics available when `2<d<3`, and WI-212 shows that every fixed finite reciprocal packet can likewise be screened by only finitely many deep off-line pairs. The remaining test in `CLUE-two-harmonic-screen-continuum-residual` is whether the exact WI-211 screen also cancels the coherent peak *between* those samples once integer phase lifts are retained and the `1/M` frequency window is priced in the actual source variable.
 
-It does not. For the WI-211 two-pair family, every admissible sequence of integer lifts whose normalized continuum energy remains bounded has, after passage to a subsequence, an explicit natural-scale profile
+It does not. Every admissible integer-lift family of the WI-211 two-pair screen with bounded normalized continuum energy has, after passage to a subsequence, the explicit natural-scale profile
 
 \[
 \boxed{
 F_{h,\kappa,q}(u)
 =2\cosh(2h)\frac{\sin(\pi u)}{\pi u}
 +e^{2\pi i\kappa u}
-\left[-2\cosh(2h)+\pi(3+4q)\cosh^2(h)\,u\right],
+\left[-2\cosh(2h)+\pi(3+4q)\cosh^2(h)u\right],
 }
 \tag{1}
 \]
 
-where `q` is an integer relative lift and `\kappa` is the limiting common lift divided by the bow length. Its derivative at the cancelled harmonic is
+where `q` is an integer relative lift and `\kappa` is the limiting common lift divided by the bow length. At the cancelled harmonic,
 
 \[
 \boxed{
 F'_{h,\kappa,q}(0)
-=\pi(3+4q)\cosh^2(h)-4\pi i\kappa\cosh(2h).
+=\pi(3+4q)\cosh^2(h)-4\pi i\kappa\cosh(2h),
 }
 \tag{2}
 \]
 
-Because `3+4q` is an odd integer congruent to `3 (mod 4)`, it never vanishes. Hence
+so, because `|3+4q|>=1` for every integer `q`,
 
 \[
-\boxed{|F'_{h,\kappa,q}(0)|\ge \pi\cosh^2 h>0.}
+\boxed{|F'_{h,\kappa,q}(0)|\ge\pi\cosh^2h>0.}
 \tag{3}
 \]
 
-The central representatives in the clue correspond to `(q,\kappa)=(0,0)` and recover its proposed slope `3\pi\cosh^2 h`. The best relative integer lift is instead `q=-1`, which reduces the leading slope by a factor `3` but cannot remove it. Thus the clue's central small-window energy coefficient is not lift-uniform: the optimal lifted leading coefficient is smaller by a factor `9`, but it remains strictly positive.
+The central representatives in the clue are `(q,\kappa)=(0,0)` and have slope `3\pi\cosh^2h`. The best relative lift is `q=-1`, which reduces the leading slope by a factor `3` and the leading small-window energy coefficient by a factor `9`, but cannot make the residual vanish. Relative lifts growing with `M` have divergent normalized continuum energy and therefore do not supply a low-energy escape.
 
-The frequency window also has an exact source dictionary. Put `L=\log T`, choose the bow-center twist `U`, and let
+The same profile has an exact source dictionary. Put `L=\log T`, twist at the bow center, and set
 
 \[
-X=T^{2/d},\qquad x_M(u)=T^{(2+u/M)/d}=X\exp\!\left(\frac{uL}{dM}\right).
+X=T^{2/d},\qquad
+x_M(u)=T^{(2+u/M)/d}
+=X\exp\!\left(\frac{uL}{dM}\right).
 \tag{4}
 \]
 
-Then the synthetic bow-plus-screen function is exactly the `x^{1/2}`-normalized selected zero-residue integrand of the twisted explicit formula at `x=x_M(u)`, up to the common harmless sign/phase. A window `u=O(1)` therefore has physical relative width
+Then the synthetic bow-plus-screen function is exactly the `x^{1/2}`-normalized selected zero-residue integrand of the twisted explicit formula at `x=x_M(u)`, up to a common harmless sign/phase. A fixed `u`-window therefore has physical relative width
 
 \[
-\boxed{\frac{\Delta x}{X}\asymp \frac{L}{dM},}
+\boxed{\Delta x/X\asymp L/(dM),}
 \tag{5}
 \]
 
-which is precisely the bow/Gallagher scale already isolated in WI-195 and WI-209. For every fixed lifted limit (1), choose fixed `c>0` and sufficiently small fixed `\lambda>0` so that
+which is precisely the bow/Gallagher scale isolated in WI-195 and WI-209. Integrating across a fixed short `u`-interval turns any nonzero profile (1) into selected residue energy of order `X^2L^3/(d^3M)`, while the raw-prime Gallagher diagonal at the matching short length is of order `X^2L^2/(d^2M)`. Hence the screened-bow residual remains `Omega(\log T)` superdiagonal in energy.
 
-\[
-J_{h,\kappa,q}(c,\lambda)
-:=\int_{-c}^{c-\lambda}
-\left|\int_s^{s+\lambda}F_{h,\kappa,q}(v)\,dv\right|^2ds>0.
-\tag{6}
-\]
+This is not an unconditional contradiction for zeta. The full explicit formula retains remote/complementary zeros and the structured source terms. WI-195 records that the needed diagonal-scale upper bound for the **full** source-fixed error in this Gallagher norm is not currently established. If such an upper bound were available, the complement would have to approximate the negative of the screened-bow residual to relative `O((\log T)^{-1/2})`, just as WI-209 derives for the unscreened bow. Thus the two-pair screen is ruled out as a continuum-flattening mechanism, but more general screen pairs and the full source complement remain open.
 
-The selected bow-plus-screen residue in the corresponding physical short interval then has energy
+## 1. Central profile from the exact WI-211 root
 
-\[
-\boxed{
-\int |Q_M(x)|^2dx
-=\left(J_{h,\kappa,q}(c,\lambda)+o(1)\right)
-\frac{X^2L^3}{d^3M},
-}
-\tag{7}
-\]
-
-whereas the raw-prime Gallagher diagonal at short length
-
-\[
-K\sim \lambda\frac{XL}{dM}
-\tag{8}
-\]
-
-is
-
-\[
-XK\log X
-\sim \frac{2\lambda X^2L^2}{d^2M}.
-\tag{9}
-\]
-
-Consequently the selected residual remains logarithmically superdiagonal:
-
-\[
-\boxed{
-\frac{\int |Q_M(x)|^2dx}{XK\log X}
-=\left(\frac{J_{h,\kappa,q}(c,\lambda)}{2\lambda d}+o(1)\right)L.
-}
-\tag{10}
-\]
-
-This is a source-scale statement about the selected zero residue, not an unconditional contradiction for zeta. WI-195 shows that the missing theorem is still a diagonal-scale upper bound for the **full** source-fixed error in this Gallagher norm. If such a bound were available, (10) would force the entire complementary source contribution to approximate the negative of the screened-bow residual to relative `O(L^{-1/2})`, exactly as WI-209 derived for the unscreened dense bow. No published theorem audited in this line currently supplies that source upper bound. Thus the two-pair screen is now ruled out as a continuum flattening mechanism, but remote zeros, additional off-line pairs, and the structured prime-side/source terms remain possible cancellation reservoirs.
-
-## 1. Exact central profile
-
-Let `M` be odd and use the clue/WI-211 notation
+Let `M` be odd and write
 
 \[
 D_M(t)=\frac{\sin(\pi Mt)}{\sin(\pi t)},
 \qquad
 B_M(t)=2\cosh(ht)D_M(t).
-\tag{11}
+\tag{6}
 \]
 
-Set
+Use WI-211's exact parameters
 
 \[
 A_M=\frac12M\cosh h,
 \qquad
 C_M=\frac12M\cosh(2h),
-\tag{12}
+\tag{7}
 \]
 
-and let `y_M` be the larger root of
+with `y_M` the larger root of
 
 \[
-2y^2-(4A_M^2+1+C_M)y+2A_M^2=0.
-\tag{13}
+2y^2-(4A_M^2+1+C_M)y+2A_M^2=0,
+\tag{8}
 \]
 
-Define
+and
 
 \[
 a_M=\operatorname{arcosh}\sqrt{y_M},
 \qquad
 \phi_M=\arccos\!\left(-\frac{A_M}{\sqrt{y_M}}\right).
-\tag{14}
+\tag{9}
 \]
 
-WI-211 already proves
+WI-211 gives
 
 \[
 y_M=\frac12M^2\cosh^2h+\frac14M\cosh(2h)+O_h(1),
-\tag{15}
+\tag{10}
 \]
 
-so
+hence
 
 \[
-\frac{\cosh(2a_M)}{M^2}\longrightarrow\cosh^2h,
+\frac{\cosh(2a_M)}{M^2}\to\cosh^2h,
 \qquad
-\phi_M\longrightarrow\frac{3\pi}{4},
+\phi_M\to\frac{3\pi}{4},
 \qquad
 a_M=\log M+O_h(1).
-\tag{16}
+\tag{11}
 \]
 
-At `t=2+u/M`, the Dirichlet kernel has the exact form
+At `t=2+u/M`,
 
 \[
-\frac{D_M(2+u/M)}{M}
-=\frac{\sin(\pi u)}{M\sin(\pi u/M)},
-\tag{17}
+\frac{D_M(2+u/M)}M
+=\frac{\sin(\pi u)}{M\sin(\pi u/M)}
+\longrightarrow\frac{\sin(\pi u)}{\pi u}
+\tag{12}
 \]
 
-hence uniformly for `u` in compact intervals
-
-\[
-\frac{B_M(2+u/M)}M
-\longrightarrow
-2\cosh(2h)\frac{\sin(\pi u)}{\pi u}.
-\tag{18}
-\]
-
-For the central screen
+uniformly for `u` in compact intervals. The central screen is
 
 \[
 S_M(t)=4\cosh(a_Mt)\cos(\phi_Mt),
-\tag{19}
+\tag{13}
 \]
 
-WI-211's root relation gives exactly
+and the root identity gives exactly
 
 \[
 S_M(2)=-2M\cosh(2h).
-\tag{20}
+\tag{14}
 \]
 
-Differentiation gives a depth term of size `O_h(M\log M)` and a phase term of size `M^2`; using (16),
+Differentiating (13), the depth derivative is `O_h(M\log M)` at `t=2`, while the phase derivative is of order `M^2`; (11) gives
 
 \[
-\frac{S_M'(2)}{M^2}\longrightarrow3\pi\cosh^2h.
-\tag{21}
+\frac{S_M'(2)}{M^2}\to3\pi\cosh^2h.
+\tag{15}
 \]
 
-For bounded `u`, `S_M''(2+\theta u/M)=O_{h,u}(M^2\log^2M)`, so Taylor's remainder divided by `M` is `O_{h,u}(\log^2M/M)`. Combining (18)--(21) proves the clue's central profile uniformly on every compact `u`-interval:
+On `t=2+u/M` with bounded `u`, the second derivative is `O_{h,u}(M^2\log^2M)`, so the Taylor remainder divided by `M` is `O_{h,u}(\log^2M/M)`. Combining (12)--(15), uniformly on compact `u`-intervals,
 
 \[
 \frac{B_M(2+u/M)+S_M(2+u/M)}M
 \to
 2\cosh(2h)\left(\frac{\sin(\pi u)}{\pi u}-1\right)
 +3\pi\cosh^2h\,u.
-\tag{22}
+\tag{16}
 \]
 
-The odd linear term is orthogonal on a symmetric interval to the even sinc-minus-one term, so the clue's central bound follows exactly:
+This proves the clue's proposed central profile. On a symmetric interval the sinc-minus-one term is even and the linear term is odd, so
 
 \[
 \int_{-c}^{c}|F_{h,0,0}(u)|^2du
 \ge6\pi^2c^3\cosh^4h.
-\tag{23}
+\tag{17}
 \]
 
 ## 2. Integer phase lifts cannot flatten the peak
 
-The two WI-211 phases are fixed only modulo `2\pi`. Write general integer lifts as
+Write general integer representatives of the two WI-211 phases as
 
 \[
 \theta_{+,M}=\phi_M+2\pi n_{+,M},
 \qquad
 \theta_{-,M}=-\phi_M+2\pi n_{-,M},
-\tag{24}
+\tag{18}
 \]
 
 and
@@ -223,21 +174,21 @@ and
 S_M^{\rm lift}(t)
 =2\cosh(a_Mt)
 \left(e^{i\theta_{+,M}t}+e^{i\theta_{-,M}t}\right).
-\tag{25}
+\tag{19}
 \]
 
-At both integer harmonics `t=1,2`, every lift has exactly the same values as the central screen. Put
+Every lift preserves the exact harmonic values at `t=1,2`. Put
 
 \[
 n_M=n_{-,M},\qquad q_M=n_{+,M}-n_{-,M}.
-\tag{26}
+\tag{20}
 \]
 
 Then
 
 \[
-S_M^{\rm lift}(t)=e^{2\pi i n_Mt}H_{M,q_M}(t),
-\tag{27}
+S_M^{\rm lift}(t)=e^{2\pi in_Mt}H_{M,q_M}(t),
+\tag{21}
 \]
 
 where
@@ -245,145 +196,177 @@ where
 \[
 H_{M,q}(t)=2\cosh(a_Mt)
 \left(e^{i(\phi_M+2\pi q)t}+e^{-i\phi_Mt}\right).
-\tag{28}
+\tag{22}
 \]
 
-For fixed integer `q`, (20) gives `H_{M,q}(2)=-2M\cosh(2h)`, while direct differentiation and (16) give
+For every fixed integer `q`,
+
+\[
+H_{M,q}(2)=-2M\cosh(2h)
+\tag{23}
+\]
+
+and direct differentiation with (11) gives
 
 \[
 \boxed{
 \frac{H_{M,q}'(2)}{M^2}
-\longrightarrow
-\pi(3+4q)\cosh^2h.
+\to\pi(3+4q)\cosh^2h.
 }
-\tag{29}
+\tag{24}
 \]
 
-If the lifts remain inside the `M`-cell bow interval, `n_M/M` is bounded (indeed it lies in `[-1/2,1/2]+o(1)` under the centered convention). Along any subsequence with
+If both lifted screen ordinates remain inside the centered `M`-cell bow, `n_M/M` is bounded (indeed in `[-1/2,1/2]+o(1)`). Along a subsequence with fixed `q_M=q` and `n_M/M\to\kappa`, the same Taylor estimate yields the profile (1).
 
-\[
-q_M=q\in\mathbb Z,
-\qquad
-\frac{n_M}{M}\to\kappa,
-\tag{30}
-\]
+A varying relative lift cannot lower the continuum energy. If `|q_M|/M` stays bounded away from zero along a subsequence, the relative factor `e^{2\pi iq_Mu/M}` is nontrivial on a positive-measure set while each individual screen term has normalized size `asymp M`; the normalized `L^2` energy diverges. If `q_M=o(M)` but `|q_M|\to\infty`, then for every fixed nonzero `u`, the relative phase displacement is `2\pi q_Mu/M=o(1)` but multiplied by the individual normalized screen amplitude `asymp M` it produces size `asymp |q_Mu|`; Fatou again gives divergent normalized `L^2` energy on any fixed nontrivial interval. Thus bounded normalized continuum energy forces `q_M=O(1)`, and the subsequential classification (1) is exhaustive for low-energy admissible lifts.
 
-the same uniform Taylor argument yields
-
-\[
-\frac{B_M(2+u/M)+S_M^{\rm lift}(2+u/M)}M
-\longrightarrow F_{h,\kappa,q}(u)
-\tag{31}
-\]
-
-with `F` given by (1).
-
-It remains to exclude a low-energy escape with varying relative lift. If `|q_M|/M` stays bounded away from zero along a subsequence, the relative factor `e^{2\pi iq_Mu/M}` fails to approach `1` on a positive-measure set of fixed `u`, while each individual screen term has normalized size `asymp M`; the normalized `L^2` energy therefore diverges. If instead `q_M=o(M)` but `|q_M|\to\infty`, then for every fixed nonzero `u` the relative phase difference is `2\pi q_Mu/M=o(1)` but its product with the individual normalized amplitude `asymp M` has magnitude `asymp |q_Mu|`; again the normalized energy diverges by Fatou on any fixed interval avoiding `u=0`. Hence any sequence of admissible lifts with bounded normalized continuum energy has `q_M=O(1)`, and after a subsequence (30) applies.
-
-Equation (2) follows by differentiating (1). Since
-
-\[
-|3+4q|\ge1\qquad(q\in\mathbb Z),
-\tag{32}
-\]
-
-we obtain (3). In particular no bounded-energy integer lift makes the limiting profile vanish identically. For small symmetric windows,
+Differentiating (1) gives (2)--(3). Therefore no admissible low-energy phase lift makes the limiting profile identically zero. In particular, for small symmetric windows,
 
 \[
 \int_{-c}^{c}|F_{h,\kappa,q}(u)|^2du
 =\frac23|F'_{h,\kappa,q}(0)|^2c^3+O_{h,\kappa,q}(c^4),
-\tag{33}
+\tag{25}
 \]
 
-and the smallest possible leading slope occurs at `q=-1`, `\kappa=0`, giving magnitude `\pi\cosh^2h`. Thus the central coefficient in (23) may drop by a factor `9` under an admissible relative lift, but it cannot drop to zero.
+and the smallest possible leading slope occurs at `q=-1`, `\kappa=0`, with magnitude `\pi\cosh^2h`.
 
-## 3. The continuum window is exactly a Gallagher-scale physical slab
+## 3. Exact source-coordinate dictionary
 
-Use the unfolded bow normalization from WI-209--WI-211,
+Use the WI-209--WI-211 unfolded bow normalization
 
 \[
 \frac{\gamma_jL}{2\pi}=x_0+dj,
 \qquad
 b_j=(\beta_j-\tfrac12)L=dh,
-\tag{34}
+\tag{26}
 \]
 
-and twist at the bow center `U=2\pi x_0/L`. For a source location `x=x_M(u)` from (4), put
+and twist at `U=2\pi x_0/L`. For `x=x_M(u)` from (4), define
 
 \[
 t=\frac{d\log x}{L}=2+\frac{u}{M}.
-\tag{35}
+\tag{27}
 \]
 
-Then for a selected bow mirror pair,
+A selected bow zero and its same-ordinate functional-equation mirror contribute
 
 \[
 x^{\beta_j-1/2}e^{i(\gamma_j-U)\log x}
 +x^{1/2-\beta_j}e^{i(\gamma_j-U)\log x}
 =2\cosh(ht)e^{2\pi ijt}.
-\tag{36}
+\tag{28}
 \]
 
-For either added screen pair, an unfolded phase lift by `dn` gives exactly
+Likewise each added screen pair with integer phase lift `n` contributes exactly
 
 \[
 2\cosh(a_Mt)e^{i(\pm\phi_M+2\pi n)t}.
-\tag{37}
+\tag{29}
 \]
 
-Thus `R_M(t)=B_M(t)+S_M^{lift}(t)` is not merely analogous to a source observable: after extracting the common factor `x^{-1/2}` and the common explicit-formula sign, it is exactly the selected zero-residue integrand.
+Thus `R_M(t)=B_M(t)+S_M^{lift}(t)` is exactly the selected zero-residue integrand after extracting the common `x^{-1/2}` factor and common explicit-formula sign.
 
-Let `Q_M(s,\lambda)` be the selected residue in the twisted short interval with endpoints `x_M(s)` and `x_M(s+\lambda)`. The classical integrated explicit-formula term is
+Let `Q_M(s,\lambda)` be the selected residue in the twisted short interval with endpoints `x_M(s)` and `x_M(s+\lambda)`. The classical integrated zero term is
 
 \[
 Q_M(s,\lambda)
 =-\int_{x_M(s)}^{x_M(s+\lambda)}x^{-1/2}R_M(t(x))\,dx.
-\tag{38}
+\tag{30}
 \]
 
 Since
 
 \[
 \frac{dx_M(v)}{dv}=x_M(v)\frac{L}{dM},
-\tag{39}
+\tag{31}
 \]
 
-(31) gives, uniformly for `s` in fixed compact intervals,
+profile convergence gives, uniformly for `s` in a fixed compact interval,
 
 \[
 \boxed{
 \frac{Q_M(s,\lambda)}{X^{1/2}L/d}
-\longrightarrow
--\int_s^{s+\lambda}F_{h,\kappa,q}(v)\,dv.
+\to-\int_s^{s+\lambda}F_{h,\kappa,q}(v)\,dv.
 }
-\tag{40}
+\tag{32}
 \]
 
-The physical short length is (8). Integrating the squared residue over a fixed `s`-window and using `dx_M/ds\sim XL/(dM)` yields (7). Since `\log X=(2/d)L`, comparison with the same raw-prime diagonal used in WI-195/WI-209 gives (10).
+Because `F` is continuous and nonzero by (3),
 
-The positivity of `J` in (6) is automatic for sufficiently small `\lambda`: if every short moving average vanished on an interval then differentiation would force the analytic profile `F` to vanish there, contradicting (3). Moreover the admissible common-lift parameter is compact and the only low-energy relative lifts are bounded integers, so the same compactness argument gives a positive infimum after restricting to any family with bounded normalized energy. Large relative lifts already have divergent normalized residual energy and are not an escape.
+\[
+\lambda^{-1}\int_s^{s+\lambda}F(v)\,dv\to F(s)
+\tag{33}
+\]
 
-## 4. What this does and does not rule out
+uniformly on compact `s`-intervals as `\lambda\downarrow0`. Hence, for every lifted limit (1), fixed `c>0` may be chosen and then a sufficiently small fixed `\lambda>0` chosen so that
 
-The exact two-pair WI-211 screen can therefore cancel the first two reciprocal **samples**, but it cannot cancel the natural coherent peak around the second sample, even after optimizing the integer representatives inside the bow. In source variables the leftover peak costs the same physical resolution `K\asymp XL/M` as the Gallagher bridge and its selected zero-residue energy is `Omega(L)` times the raw-prime diagonal. A sparse exact finite-moment screen is therefore not a sparse continuum screen.
+\[
+J_{h,\kappa,q}(c,\lambda)
+:=\int_{-c}^{c-\lambda}
+\left|\int_s^{s+\lambda}F_{h,\kappa,q}(v)\,dv\right|^2ds>0.
+\tag{34}
+\]
 
-This is still not a zeta-zero exclusion. The full explicit formula contains every complementary zero and the structured source terms. A source upper bound of the form
+The physical short length is
+
+\[
+K\sim\lambda\frac{XL}{dM}.
+\tag{35}
+\]
+
+Integrating (32) over the corresponding starting-point slab and using `dx_M/ds\sim XL/(dM)` gives
+
+\[
+\boxed{
+\int |Q_M(x)|^2dx
+=\left(J_{h,\kappa,q}(c,\lambda)+o(1)\right)
+\frac{X^2L^3}{d^3M}.
+}
+\tag{36}
+\]
+
+The raw-prime Gallagher diagonal from WI-195/WI-209 is
+
+\[
+XK\log X
+\sim\frac{2\lambda X^2L^2}{d^2M},
+\qquad \log X=\frac{2L}{d}.
+\tag{37}
+\]
+
+Therefore
+
+\[
+\boxed{
+\frac{\int |Q_M(x)|^2dx}{XK\log X}
+=\left(\frac{J_{h,\kappa,q}(c,\lambda)}{2\lambda d}+o(1)\right)L.
+}
+\tag{38}
+\]
+
+The natural continuum residual is thus not a free extra Fourier channel: it is a concrete physical short-interval observable at exactly the Gallagher scale, and the selected screened-bow residue is logarithmically superdiagonal there.
+
+## 4. Evidence boundary and source bottleneck
+
+Equation (38) concerns only the deliberately selected bow plus its WI-211 two-pair screen. The full source-fixed explicit formula also contains all complementary nontrivial zeros, pole/trivial terms, contour remainder, and the structured prime-side subtraction used in the WI-195 bridge. Accordingly no lower bound for the selected vector alone is an unconditional lower bound for the full source error.
+
+A theorem of the schematic strength
 
 \[
 \|E_{\rm src}\|_2^2\ll XK\log X
-\tag{41}
+\tag{39}
 \]
 
-on this distinguished slab would conflict with (10) unless those complementary terms form an asymptotically near-opposite vector. WI-195 records that no currently audited theorem supplies the required square-root-scale variance for the `\Lambda-\Lambda^\sharp` source error, and WI-209 already identifies the same cancellation burden for the unscreened bow. The present result shows that the exact WI-211 two-pair correction does not remove that burden.
+on this distinguished slab would, together with (38), force the complementary source vector to approximate `-Q_M` to relative `O(L^{-1/2})`. WI-195 shows that currently audited short-interval major-arc technology does not provide the required square-root-scale variance for the relevant `\Lambda-\Lambda^\sharp` source norm, even though its interval and Archimedean-twist ranges fit the bow. WI-209 derived the same near-opposite cancellation burden for the unscreened dense bow; the new point is that WI-211's exact sparse two-harmonic screen does not remove it.
 
-Nor does this argument yet rule out changing the two screen depths/phases away from the WI-211 equal-depth construction, using more than two added off-line pairs, or arranging cancellation by a remote/global zero population. WI-212's finite-packet algebraic obstruction therefore remains valid: finitely many discrete samples alone do not charge the sparse screen. What changes is that one natural continuum refinement survives all phase lifts of the explicit two-pair screen and lands at the correct source scale.
+This result does not rule out changing the two screen depths/phases away from WI-211's equal-depth construction, using more than two added off-line pairs, or arranging cancellation by remote/global zero populations. WI-212's finite-packet barrier therefore remains valid: finitely many discrete samples alone do not charge sparse screens. What is now excluded is the simplest and most dangerous escape suggested by WI-211, namely that its exact two-pair sample screen might remain low-energy throughout the natural coherent peak merely by choosing different integer phase representatives.
 
 ## 5. Prior-art and novelty audit
 
-The ingredients used here are separated by provenance. The identity (17) and its sinc scaling are classical Dirichlet-kernel/Fourier-series facts. The integrated zero residue (38) is the classical explicit-formula identity already used in WI-205/WI-209. The short-interval `L^2`/Gallagher scale and the currently missing source variance theorem were audited in WI-195; weighted Gallagher variants are classical prior art, e.g. Coppola--Laporta (2015). Truncated trigonometric and indefinite moment problems have a large classical/operator-theoretic literature, including Derkach--Hassi--de Snoo (2012), and remain the appropriate context for WI-210--WI-212's finite-sample screening phenomena.
+The ingredients are separated by provenance. The Dirichlet-kernel identity (12) and its local sinc limit are classical Fourier analysis. The integrated zero residue (30) is the classical explicit-formula identity already used in WI-205/WI-209. The short-interval `L^2`/Gallagher scale and its current arithmetic barrier were audited in WI-195; weighted Gallagher variants are classical prior art, including Coppola--Laporta (2015). Truncated trigonometric and indefinite moment interpolation have a broad classical/operator-theoretic literature, including Derkach--Hassi--de Snoo (2012), and provide context for WI-210--WI-212's finite-sample screening phenomena.
 
-A fresh search around Dirichlet-kernel local limits, Gallagher short-interval mean squares, trigonometric moment interpolation, and indefinite moment completion did not locate a literature statement matching the specific lifted WI-211 bow-screen profile (1)--(3) or its exact source-coordinate dictionary (34)--(40). This absence is not used as a priority claim. The mathematical claim here is only that the displayed consequences follow exactly from the already-audited WI-211 screen plus classical identities.
+A fresh prior-art search around Dirichlet-kernel local limits, Gallagher short-interval mean squares, trigonometric moment interpolation, and indefinite moment completion did not locate a statement matching the specific lifted WI-211 profile (1)--(3) or the source-coordinate conversion (26)--(38). That absence is not used as a priority claim. The durable mathematical claim is only the exact derivation above from the already-audited WI-211 screen and classical identities.
 
 ## Research consequence
 
-The `CLUE-two-harmonic-screen-continuum-residual` test is resolved in a narrowed form. Its central profile is correct; integer phase lifts reduce the best small-window coefficient by a factor `9` but cannot remove the residual; and the `1/M` frequency width is not a free synthetic channel but exactly a physical `XL/M` Gallagher-scale slab. The surviving bottleneck is therefore no longer the two-pair phase representative. It is the source-level complement: either prove a diagonal-scale bound for the full source-fixed error on this distinguished slab, or construct a more general off-line screen whose continuum residue cancels there as well.
+`CLUE-two-harmonic-screen-continuum-residual` is resolved in a narrowed form. Its central asymptotic is correct; optimizing integer phase lifts reduces the best leading small-window coefficient by a factor `9` but cannot erase it; and the `1/M` frequency width converts exactly to a physical `XL/M` Gallagher-scale slab whose selected residue remains `Omega(\log T)` superdiagonal in energy. The surviving bottleneck is therefore the source-level complement: either prove a diagonal-scale upper bound for the full source-fixed error on this distinguished slab, or construct a genuinely more general off-line screen whose continuum residue cancels there as well.
