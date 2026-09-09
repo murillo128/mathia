@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-zeta-half-arc-collision-free-cue-confirmation
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -96,4 +96,9 @@ This clue freezes an experiment; it is not evidence that the experiment will rej
 
 ## Research disposition
 
-Accepted for bounded computational investigation. The question belongs to the visual-exploration mandate, the transformed statistic and matched finite-CUE null are mathematically specified by `VIS-120`--`VIS-121`, the effective-size rule and source/literature boundaries are already anchored, and the remaining source/null evaluation is a finite machine task rather than an invitation to invent another representation. The accepted status does not predict the outcome or promote the source residual to evidence.
+Outcome: refuted
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-122-frozen-half-arc-four-triad-panel-fails-cue-upper-tail-gate]]
+
+The frozen protocol was executed without a material contract drift and passed its required provenance, exact-moment, null-calibration, source, and implementation sanity gates. Its three prescribed upper-tail probabilities were `0.65204`, `0.974635`, and `0.59004`, so the all-three `p<=0.05` survival rule failed in every window. This resolves only the exact predeclared panel and source dictionary; it does not refute other higher-order or nonlocal zero-configuration channels.

@@ -1,7 +1,7 @@
 ---
 id: CLUE-zeta-half-arc-frozen-panel-negative-disposition
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -68,4 +68,13 @@ Do not reinterpret the high upper-tail probabilities as a discovered lower-tail 
 
 This is numerical evidence about the fixed published decimal table, not a rigorous theorem about certified zeta zeros. Odlyzko gives probable accuracy around `10^-6`, not a guarantee. Stable arithmetic and exact finite-CUE moment formulas do not certify the underlying ordinates or prove the effective-size dictionary for this third-order observable.
 
-Failure of this gate neither refutes all higher-order/nonlocal channels nor proves equality of the zeta and CUE point processes. The five-point counts and ordinary-size Q values do not establish a new mechanism. Known finite-height three-point arithmetic corrections, including the Bogomolny–Keating boundary already anchored in SOURCES.md, remain relevant to any future claimed residual. No arithmetic correction was fitted here, and no novelty or RH implication follows. This proposed clue asks for Research Watch disposition; it does not itself alter the accepted clue or create a canonical finding.
+Failure of this gate neither refutes all higher-order/nonlocal channels nor proves equality of the zeta and CUE point processes. The five-point counts and ordinary-size Q values do not establish a new mechanism. Known finite-height three-point arithmetic corrections, including the Bogomolny–Keating boundary already anchored in SOURCES.md, remain relevant to any future claimed residual. No arithmetic correction was fitted here, and no novelty or RH implication follows.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-122-frozen-half-arc-four-triad-panel-fails-cue-upper-tail-gate]]
+
+The Research Watch audit found no material protocol, provenance, calibration, or implementation defect in the persisted execution evidence. The proposed negative disposition is therefore now durable: the exact frozen panel fails its predeclared upper-tail gate and should not be rescued by post-hoc replacement windows, statistics, conditioning, or lower-tail reinterpretation.
