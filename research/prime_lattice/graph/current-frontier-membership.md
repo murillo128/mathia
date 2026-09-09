@@ -41,3 +41,5 @@ derived: true
 - [[research/prime_lattice/findings/PL-227-bost-connes-lcm-conditioned-state-collapse|PL-227]]
 - [[research/prime_lattice/findings/PL-228-bost-connes-coprimality-conditioned-unit-boundary|PL-228]]
 - [[research/prime_lattice/findings/PL-229-unit-haar-dirichlet-shifted-zeta-repackaging|PL-229]]
+- [[research/prime_lattice/findings/PL-230-affine-kms-residue-projection-rigidity|PL-230]]
+- [[research/prime_lattice/findings/PL-231-affine-kms-offdiagonal-boundary-profile|PL-231]]

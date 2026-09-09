@@ -51,6 +51,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-015-whole-experiment-fidelity-needs-a-common-recovery-profile]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-016-shtarkov-rays-separate-radial-reset-from-full-experiment-loss]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-017-exact-sufficiency-geometry-does-not-fix-approximate-recovery-scale]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-018-signed-complexity-only-transfers-through-sign-regular-observations]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -101,6 +102,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-010-suzuki-event-skeleton-is-rh-complete-but-memory-driven]]
 - [[research/prime_lattice/mind/intuition/MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries]]
 - [[research/prime_lattice/mind/intuition/MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution]]
+- [[research/prime_lattice/mind/intuition/MI-013-kms-offdiagonal-freedom-is-boundary-data-not-prime-coupling]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -108,6 +110,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-003-overlap-uncertainty-must-be-separated-from-residual-geometry]]
 - [[research/visual_exploration/mind/intuition/MI-004-dimension-free-confirmation-comes-from-narrowing-the-destination-question]]
 - [[research/visual_exploration/mind/intuition/MI-005-random-prime-phase-controls-have-deterministic-resonance-geometry]]
+- [[research/visual_exploration/mind/intuition/MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]
@@ -135,6 +138,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_positivity/mind/intuition/MI-007-one-dimensional-connection-positivity-is-gauge-trivial]]
 - [[research/weil_positivity/mind/intuition/MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization]]
 - [[research/weil_positivity/mind/intuition/MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor]]
+- [[research/weil_positivity/mind/intuition/MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation]]
 
 ### Xi Flow
 - [[research/xi_flow/mind/intuition/MI-001-collision-safe-coordinates-separate-singularity-from-source-information]]
@@ -147,4 +151,5 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global]]
 - [[research/xi_flow/mind/intuition/MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility]]
 - [[research/xi_flow/mind/intuition/MI-010-endpoint-renormalization-is-source-fixed-before-discretization]]
+- [[research/xi_flow/mind/intuition/MI-011-cross-scale-observability-can-compress-to-one-off-circle-heat-trace]]
 <!-- intuition-membership:end -->

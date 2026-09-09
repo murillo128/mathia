@@ -14,44 +14,46 @@ The canonical event set is [[research/graph/atlas/telemetry/frontier-events.json
 
 ## Newest classifiable source window
 
-The newest source window `e633f509a1765383981713f02ca91d8a908768f5` → `222f59e2ed9db05752dcd5a3f573e14b7641b342` contributes ten episodes:
+The newest source window `d7a25f8316173aaf42e1a7a9c9cb86e5a0190030` → `71186d2dc0dca961b4a00130cd7b765610a5e1e3` contributes ten episodes:
 
 | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `analytic_frontier` | 1 | 0 | 0 | 0 | 1 |
+| `analytic_frontier` | 1 | 1 | 0 | 0 | 0 |
 | `arithmetic_fidelity` | 1 | 0 | 0 | 0 | 1 |
 | `mobius_cancellation` | 1 | 0 | 0 | 0 | 1 |
-| `prime_circle` | 1 | 0 | 1 | 0 | 0 |
+| `prime_circle` | 1 | 0 | 0 | 0 | 1 |
 | `prime_flute` | 1 | 1 | 0 | 0 | 0 |
 | `prime_lattice` | 1 | 0 | 1 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 0 | 0 | 1 |
 | `weil_positivity` | 1 | 0 | 0 | 0 | 1 |
-| `xi_flow` | 1 | 0 | 0 | 0 | 1 |
-| **Total** | **10** | **2** | **2** | **0** | **6** |
+| `xi_flow` | 1 | 1 | 0 | 0 | 0 |
+| **Total** | **10** | **4** | **1** | **0** | **5** |
 
-Analytic Frontier first finds a genuine critical exponential digit-cloud escape, but the completed fixed-`q` translation orbit is globally excisable by a finite positive annihilator. The cheap coalescing-saddle chamber is therefore not a completed countermechanism: macroscopic notch survival requires another exponential copy layer or a profile-transverse companion. Arithmetic Fidelity has a parallel stability boundary: fixed positive-width Euler bands are injective and coercive on every finite BV budget, yet the best coercivity constant decays super-algebraically as the admitted signed source complexity grows.
+Analytic Frontier turns the fixed-`q` saddle-annihilator construction into a genuine growing-depth route. Four-translate excision and the Gaussian entropy accounting lead to finite-depth cascades with controlled source mass; curvature and zero-cell recursion then keep copy-rate slack and chamber proliferation under control on a growing diagonal. The unresolved obstruction is no longer combinatorial proliferation but local critical-cell conditioning and the finite-`A` Laplace prefactor.
 
-Möbius Cancellation extends the earlier unconditional-magnitude no-go into signed linear readouts. Finite-prime filters either erase Möbius orientation or remain Mertens-complete, and absolutely summable infinite-prime scalarizations satisfy the same zero-or-complete dichotomy. Prime Circle is classified as known prior art/classicalization: the canonical common-anchor Mangoldt weighting only adds prime-primary exact-order axes and cannot distinguish mixed-prime sectors by scalar functional calculus.
+Arithmetic Fidelity moves in the opposite direction. Gevrey/BV and Hobby--Rice constructions strengthen the conditioning collapse, Prouhet clusters give arbitrary-order Euler flatness even on prime-supported realizations, and ordered sign complexity controls only a finite harmonic hierarchy. The full Euler-log kernel fails total nonnegativity of all orders, so sign complexity alone cannot supply a uniform all-order variation-diminishing bridge.
 
-Prime Flute supplies the strongest positive quantitative movement in this window. The actual hyperbolic corridor is reduced to controlled logarithmic/operator-valued transfer, its shear is reciprocal-prime small, and the true `PF-205` seam normalizer is uniformly flat-comparable with quadratic relative error. The remaining problem is noncommuting transfer compatibility plus physical pant completion. Prime Lattice instead reaches the canonical all-prime profinite-unit boundary only for its first order-collapsed Dirichlet transform to factor as a harmless Euler correction times shifted reciprocal zeta; that zero-sensitive transform is a classical repackaging, not an independent Bost--Connes mechanism.
+Möbius Cancellation finds that the raw commutators do carry the Möbius phase, but natural finite algebraic enrichments do not turn it into a cheaper statistic. Cross-prime Gram data factorize, finite commutator/adjoint words have only a two-sector phase grading, and bounded Bost--Connes coefficient insertions alter amplitudes without creating another global phase invariant. Prime Circle has a parallel scalarization: repeated Mangoldt words, fresh-prime conditional-variance channels and arbitrary fiber-preserving refinement networks remain coarse-fiber module maps whose positive square is scalar on the coarse level.
 
-Visual Exploration is the second viable extension. Additional area--area observables fall inside the exact local quotient, but an explicit Fourier-homometric Markov pair is separated by third-order correlation at the minimal lag span not fixed by that quotient. This validates a classical bispectral chronology carrier as an information-preserving next test without asserting a zeta effect.
+Prime Flute supplies a second viable extension. The complete-lift seam mismatch is bypassed by one-sided domination, restoring the dressed diagonal corridor estimate with the actual seam form; the reciprocal-prime hypercycle shear is then absolutely trace summable whenever at least one leg lies in the critical transverse band. The remaining geometric issue is confined to the high-high shear tail and subsequent physical pant/global reassembly. Prime Lattice instead classicalizes: published affine-semigroup KMS formulas make the shifted critical-temperature off-diagonal channel vanish, while the low-temperature family carries only one replicated boundary Fourier profile rather than cross-prime arithmetic coupling.
 
-Weil Inertia closes a tempting literature shortcut: a single count-saturating bow, even thickened to all internal Karatsuba micro-window starts, fits inside the allowed almost-all exceptional budget by a polynomial margin. Weil Positivity similarly closes scalar Bost--Connes filter repairs from both sides: Liouville continuity is too rigid to create prime-power support, whereas the discrete state Hamiltonian can smooth-interpolate arbitrary target data and exact critical weights force a sharp half-Hölder regularity boundary.
+Visual Exploration now has a better calibrated prospective carrier. Growing third-order lags escape every fixed local-block quotient, a homometric construction retains constant centered amplitude, the independent-null fluctuation scale is exact, and the fixed-multiset cyclic null has an exact skewness DC term that can be subtracted. The next meaningful test is therefore against a source-faithful finite-size control such as CUE, not against an uncalibrated heatmap or shuffle baseline.
 
-Xi Flow strengthens its negative dynamic result. q-scale flatness remains compatible with collision-saturated transitions through arbitrary positive times; proper harmonic histories are blind. The terminal harmonic tail does recover the first active Vieta shell, but a matched colliding/simple pair has exactly the same complete terminal history for all nonnegative times, so that full scalar history still cannot identify collision geometry.
+Weil Inertia closes positive channel multiplication as an amplification mechanism: one optimized window and arbitrary positive-semidefinite multiwindow couplings obey the same residue-to-prime-diagonal bound with no channel-count gain. Weil Positivity similarly strengthens its negative boundary: the source-forced critical Bost--Connes Gram has the wrong Weil orientation, its canonical score is the already-classical Poisson score, and the negative essential spectrum of the prime-axis defect survives every compact completion.
+
+Xi Flow is the fourth viable extension, but explicitly as an observability mechanism rather than a stable reconstruction theorem. A complete upper harmonic history identifies the divisor up to central rotation and one heat trace only a root-spacing off the circle already identifies the full unit-circle divisor. The same branch proves exponential ill-conditioning for central shells under temporal inversion and even macroscopic local spatial patches, isolating stability rather than identifiability as the next gate.
 
 ## Trailing prospective window
 
-Across the retained 20-episode window there are **6 viable extensions**, **4 known-prior-art collisions**, **0 internal duplicates**, and **10 new barriers**. Therefore:
+Across the retained 20-episode window there are **6 viable extensions**, **3 known-prior-art collisions**, **0 internal duplicates**, and **11 new barriers**. Therefore:
 
 - `FrontierFertilityEpisodes = 30.0%`
-- `BarrierRate = 50.0%`
-- `PriorArtCollisionRate = 20.0%`
+- `BarrierRate = 55.0%`
+- `PriorArtCollisionRate = 15.0%`
 - `InternalDuplicateRate = 0.0%`
 - `InsufficientEvidence = 0`
 
-The aggregate ratios are unchanged because the outgoing ten-episode window and the new one exchange classifications in offsetting proportions, but the newest slice is distinctly more obstruction-heavy: only Prime Flute and the bispectral Visual Exploration carrier count as viable extensions. The dominant boundary remains that scalar, bounded or completion-style enlargements either become target-programmable, reconstruct the original arithmetic object, or classicalize after the destination quotient.
+The current window is less obstruction-heavy than its predecessor because exact structural progress survives in Analytic Frontier, Prime Flute, Visual Exploration and Xi Flow. That positive movement is narrow: each route now has a better isolated next gate rather than a completed RH mechanism. The dominant negative pattern remains that bounded scalarizations, positive channel enrichments and fiber-preserving completions either classicalize, become target-complete, or preserve an information/conditioning obstruction through the destination quotient.
 
 These ratios describe only the retained represented search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas. Canonical findings, review outcomes, prior art and exact live questions remain the mathematical basis for portfolio judgment. This telemetry remains non-evidentiary and does not feed Research Watch.

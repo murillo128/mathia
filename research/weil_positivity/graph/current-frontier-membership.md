@@ -36,3 +36,6 @@ derived: true
 - [[research/weil_positivity/findings/WP-212-centered-inverse-kubo-mori-metric-suppresses-critical-half-density-and-worsens-mass-defect|WP-212]]
 - [[research/weil_positivity/findings/WP-214-continuous-bost-connes-liouville-grade-filters-cannot-create-prime-power-support|WP-214]]
 - [[research/weil_positivity/findings/WP-215-bost-connes-state-hamiltonian-filters-can-encode-prime-powers-but-critical-weil-weights-force-sharp-half-holder-threshold|WP-215]]
+- [[research/weil_positivity/findings/WP-216-bost-connes-critical-conditioning-forces-poisson-gcd-gram-but-weil-ray-is-indefinite-defect|WP-216]]
+- [[research/weil_positivity/findings/WP-217-bost-connes-conditioned-gram-score-is-exactly-the-prime-torus-poisson-score|WP-217]]
+- [[research/weil_positivity/findings/WP-218-bost-connes-weil-defect-has-negative-essential-spectrum-stable-under-compact-completion|WP-218]]

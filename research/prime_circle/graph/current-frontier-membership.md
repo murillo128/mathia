@@ -30,4 +30,7 @@ derived: true
 - [[research/prime_circle/findings/PC-220-full-transverse-nonzero-spectrum-is-a-signed-ramanujan-projection-compression|PC-220]]
 - [[research/prime_circle/findings/PC-221-full-lower-conductor-feshbach-response-is-ramanujan-compressed-mask-data|PC-221]]
 - [[research/prime_circle/findings/PC-222-common-anchor-mangoldt-weighting-selects-only-prime-primary-axes|PC-222]]
+- [[research/prime_circle/findings/PC-223-repeated-mangoldt-axis-words-are-blind-to-middle-conductor-data|PC-223]]
+- [[research/prime_circle/findings/PC-224-new-prime-coordinate-leakage-is-fiberwise-conditional-variance|PC-224]]
+- [[research/prime_circle/findings/PC-225-fiber-preserving-refinement-networks-have-only-coarse-scalar-singular-data|PC-225]]
 - [[research/prime_circle/mind/intuition/MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra|PC/MI-012]]

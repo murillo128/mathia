@@ -21,3 +21,6 @@ derived: true
 - [[research/weil_inertia/findings/WI-202-current-antedb-exponent-pair-lowers-source-safe-bow-cutoff|WI-202]]
 - [[research/weil_inertia/findings/WI-203-exponent-pair-reservoir-has-a-quarter-floor|WI-203]]
 - [[research/weil_inertia/findings/WI-204-karatsuba-almost-all-exception-budget-cannot-prune-a-single-bow|WI-204]]
+- [[research/weil_inertia/findings/WI-205-isolated-near-line-residue-is-subdiagonal-in-the-gallagher-source-norm|WI-205]]
+- [[research/weil_inertia/findings/WI-206-weighted-window-shaping-cannot-amplify-isolated-residues|WI-206]]
+- [[research/weil_inertia/findings/WI-207-positive-multiwindow-gallagher-lifts-do-not-amplify-isolated-residues|WI-207]]
