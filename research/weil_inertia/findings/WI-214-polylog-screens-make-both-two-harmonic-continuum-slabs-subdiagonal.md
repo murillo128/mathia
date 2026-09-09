@@ -48,7 +48,7 @@ B_M(2)=2M\cosh(2h).
 \tag{3}
 \]
 
-Let `J=J(M)` satisfy
+Let the screen size `J=J(M)` be even and satisfy
 
 \[
 J\to\infty,
@@ -65,13 +65,21 @@ Define the centered midpoint frequencies
 \tag{5}
 \]
 
-Choose integers `n_{j,M}` symmetrically so that
+For `1\le j\le J/2`, choose the negative-half lifts by flooring and define the reflected half by
+
+\[
+n_{j,M}=\lfloor M\kappa_j\rfloor,
+\qquad
+n_{J+1-j,M}=-n_{j,M}-1.
+\tag{6}
+\]
+
+If `e_j=n_{j,M}/M-\kappa_j`, then `-1/M<e_j\le0` on the chosen half and the reflected error is `-e_j-1/M\in[-1/M,0)`. Hence every lift satisfies
 
 \[
 \left|\frac{n_{j,M}}M-\kappa_j\right|\le\frac1M,
 \qquad
-n_{J+1-j,M}=-n_{j,M}.
-\tag{6}
+n_{J+1-j,M}=-n_{j,M}-1.
 \]
 
 Because the extreme midpoint is `1/2-1/(2J)` and `M/J->infinity`, all these phase lifts fit inside the centered `M`-cell bow with a margin tending to infinity.
@@ -349,7 +357,7 @@ Equations (31) and (35) are simultaneous: the same `4J` screening pairs flatten 
 
 ## 4. Phase geometry, strip depth, and count cost
 
-The midpoint set is symmetric, and the integer lifts in (6) can be chosen symmetrically. The first-layer phase set
+The midpoint targets satisfy `\kappa_{J+1-j}=-\kappa_j`, while (6) makes the integer-lift set invariant under `n\mapsto -n-1`. The first-layer phase set
 
 \[
 3\pi/4+2\pi n_{j,M},
@@ -358,7 +366,15 @@ The midpoint set is symmetric, and the integer lifts in (6) can be chosen symmet
 \tag{36}
 \]
 
-and the second-layer phase set
+is exactly closed under frequency negation because
+
+\[
+-(n+3/8)=(-n-1)+5/8,
+\qquad
+-(n+5/8)=(-n-1)+3/8.
+\]
+
+Likewise the second-layer phase set
 
 \[
 \pi/2+2\pi n_{j,M},
@@ -367,7 +383,15 @@ and the second-layer phase set
 \tag{37}
 \]
 
-are then closed under complex conjugation after `j` is reflected. Every displayed term already contains its same-ordinate functional-equation mirror. Global negative-height conjugates can be added in the usual way outside the positive-height local interval. Thus the countermodel does not evade the compulsory reciprocal/conjugation symmetry.
+is exactly closed under frequency negation because
+
+\[
+-(n+1/4)=(-n-1)+3/4,
+\qquad
+-(n+3/4)=(-n-1)+1/4.
+\]
+
+Thus both positive-height screen layers are intrinsically closed under complex conjugation after reflecting `j`. Every displayed term also contains its same-ordinate functional-equation mirror through the factor `2\cosh(a t)`. No separately added negative-height conjugates are needed for the local symmetry accounting, so the countermodel respects the compulsory functional-equation/conjugation symmetry without changing any of the selected source-fixed quantities used below.
 
 The two radial scales are explicit. From (10),
 
@@ -381,7 +405,8 @@ while (23) gives
 
 \[
 \boxed{
-a_{2,M}=\frac12\log(M/J)+O_h(1).}
+a_{2,M}=\frac12\log(M/J)+O_h(1).
+}
 \tag{39}
 \]
 
@@ -498,10 +523,13 @@ Consequently
 \tag{51}
 \]
 
-Now take the concrete polylogarithmic screen size
+Now take the concrete even polylogarithmic screen size
 
 \[
-\boxed{J=L^{2/3+o(1)}.}
+\boxed{
+J=2\left\lfloor\frac12 L^{2/3}\right\rfloor
+=L^{2/3+o(1)}.
+}
 \tag{52}
 \]
 
