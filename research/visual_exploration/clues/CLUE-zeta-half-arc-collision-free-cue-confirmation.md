@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-zeta-half-arc-collision-free-cue-confirmation
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -56,6 +56,8 @@ with the same literature-defined arithmetic constant `Lambda` and no refitting t
 
 `N_j = floor(N_e(T_j) + 1/2)`.
 
+Resolving these source-independent parameters with the literature value `Lambda=1.573151071...` gives `N_1=N_2=N_3=11`. This resolution used only the nominal indices and the frozen analytic formulas, not any `zeros5` ordinate. Treat `N_j=11` as part of the frozen protocol; if an independent high-precision recomputation of the formulas does not reproduce it, stop before source inspection rather than changing the null size.
+
 For source window `j`, select every `zeros5` ordinate `gamma` satisfying
 
 `n_j - N_j/4 <= Nbar(gamma) < n_j + N_j/4`.
@@ -70,20 +72,28 @@ Use exactly the unordered frequency panel
 
 and for every `(a,b)` compute the collision-free triad `F_(a,b)` of `VIS-120` in the compactified coordinates. Do not add frequencies after source inspection.
 
-The matched non-arithmetic null for window `j` is Haar `CUE_(N_j)` restricted to the deterministic half-circle arc `[0,pi)`, followed by the same linear compactification to `[0,2*pi)`. Compute the exact complex mean, Hermitian covariance, and pseudo-covariance of the four-triad panel by `VIS-121`, convert them to the real covariance of stacked real/imaginary parts, and whiten only on its exact support. Let `Z_j` be that whitened real residual vector and freeze the primary statistic
+The matched non-arithmetic null for every window is therefore Haar `CUE_11` restricted to the deterministic half-circle arc `[0,pi)`, followed by the same linear compactification to `[0,2*pi)`. Compute the exact complex mean, Hermitian covariance, and pseudo-covariance of the four-triad panel by `VIS-121`, convert them to the real covariance of stacked real/imaginary parts, and whiten only on its exact support. Let `Z_j` be that whitened real residual vector and freeze the primary statistic
 
 `Q_j = ||Z_j||^2`.
 
-The exact `VIS-121` moments determine centering and whitening; they do not determine the complete finite-CUE law of `Q_j`. Estimate only that remaining upper-tail law with exactly `200000` independent Haar-CUE samples per distinct `N_j`, applying the identical half-arc selection and collision-free statistic. Use PCG64 seeds `20260909`, `20260910`, and `20260911` for the three predeclared windows. Before reading any source ordinate, require the simulated panel means/covariances to agree with the exact `VIS-121` quantities within five Monte Carlo standard errors and reproduce the full-circle `VIS-120` boundary in a separate implementation sanity check. If those checks fail, stop without source inspection.
+The exact `VIS-121` moments determine centering and whitening; they do not determine the complete finite-CUE law of `Q_j`. Because all three predeclared windows resolve to the same `N_j=11` and use the same half-arc transformation, estimate that one remaining null law once with exactly `200000` independent Haar `CUE_11` samples using PCG64 seed `20260909`, and reuse the resulting empirical survival law for all three source windows. The previously reserved seeds `20260910` and `20260911` remain unused; do not average over them, retry with them, or select among null estimates after source inspection. This resolves the earlier seed/count ambiguity while preserving the predeclared rule of one simulation ensemble per distinct `N_j`.
 
-After all null calibration is frozen and validated, inspect the three `zeros5` windows exactly once. For each window report the complete panel, `Q_j`, and its one-sided finite-CUE upper-tail probability. The source-specific candidate survives this gate only if **all three** predeclared windows have `p_j <= 0.05`. This intersection rule is intentionally conservative and does not require independence between the three source windows: under valid marginal nulls its false-positive probability is at most `0.05` because the intersection is contained in each individual rejection event.
+Before reading any source ordinate, require the simulated panel means/covariances to agree with the exact `VIS-121` quantities within five Monte Carlo standard errors and reproduce the full-circle `VIS-120` boundary through the same exact moment implementation with arc length `2*pi`. If those checks fail, stop without source inspection.
 
-Do not replace a failed window, alter the `N_e` rule, change the unfolding, introduce a taper, enlarge the frequency panel, switch statistics, or choose another Odlyzko table after seeing the residuals. A failure of the all-three rule is a negative result for this frozen panel.
+After all null calibration is frozen and validated, inspect the official `zeros5` table exactly once. Record its source URL, SHA-256, declared index interval/base ordinate, parsed count, and monotonicity, and use sufficient precision that the large common ordinate does not destroy the small adjacent/window offsets. The published table states probable ordinate accuracy at roughly `10^-6`; treat the downloaded decimal table as the fixed finite object for the primary computation and report that source-precision boundary rather than silently upgrading it to certified zero data.
+
+For each window report the complete four-triad panel, `Q_j`, and the empirical one-sided finite-CUE upper-tail probability `p_j = #{Q_null >= Q_j}/200000` under the single frozen null ensemble. The source-specific candidate survives this gate only if **all three** predeclared windows have `p_j <= 0.05`. This intersection rule is intentionally conservative and does not require independence between the three source windows: under valid marginal nulls its false-positive probability is at most `0.05` because the intersection is contained in each individual rejection event.
+
+Do not replace a failed window, alter the `N_e` rule, change the unfolding, introduce a taper, enlarge the frequency panel, switch statistics, choose another Odlyzko table, or generate another CUE ensemble after seeing the residuals. A failure of the all-three rule is a negative result for this frozen panel.
 
 If all three windows pass, do not immediately promote the residual to a new arithmetic finding. First audit whether the same windowed third-order observable is predicted by established finite-height zeta three-point/arithmetic corrections, including the Bogomolny--Keating source family already anchored in `SOURCES.md`. That arithmetic interpretation is a separate thread and must not be fitted after inspecting the confirmation residuals.
 
 ## Evidence boundary
 
-This clue freezes an experiment; it is not evidence that the experiment will reject. No `zeros5` ordinate, source triad, source residual, or source p-value was inspected in constructing it, and no CUE simulation result is asserted here.
+This clue freezes an experiment; it is not evidence that the experiment will reject. No `zeros5` ordinate, source triad, source residual, or source p-value was inspected in constructing or accepting it, and no CUE simulation result is asserted here.
 
 `VIS-121` proves the exact hard-window CUE mean/covariance machinery, not that the effective-size rule `N_e(T)` derived from known finite-height spacing comparisons transfers without correction to this third-order global observable. The three-window test therefore evaluates a predeclared source dictionary as well as the source residual. A negative result does not rule out other higher-order carriers, while a positive result remains conditional on the subsequent finite-height arithmetic audit.
+
+## Research disposition
+
+Accepted for bounded computational investigation. The question belongs to the visual-exploration mandate, the transformed statistic and matched finite-CUE null are mathematically specified by `VIS-120`--`VIS-121`, the effective-size rule and source/literature boundaries are already anchored, and the remaining source/null evaluation is a finite machine task rather than an invitation to invent another representation. The accepted status does not predict the outcome or promote the source residual to evidence.
