@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-gcd-critical-counterterm-certificate
 type: research-clue
-status: proposed
+status: rejected
 origin: master-researcher
 target_line: weil_positivity
 based_on:
@@ -71,3 +71,18 @@ Owner: weil_positivity. Imports: FD-001 and WP-218 at reviewed commit 16e9325e03
 The normalized kernel is well defined at the entrywise critical limit; the underlying unnormalized energy is not. Positivity of D R_r D^* must not be confused with positivity of I-R_r. No actual source remainder, full prime limit, repository test suite, Lean proof, or global positivity certificate was verified in this audit.
 
 This proposed clue requires owner-side semantic deduplication against concurrently added clues. Stop/re-export criterion: re-export to farey_discrepancy only a verified new source-level compensation or a precise obstruction to the proposed compensation. If all that survives is the known Toeplitz no-go in different notation, close the bridge rather than opening a new line or promoting a finding.
+
+## Research disposition
+
+Rejected as a duplicate/re-expression rather than a new source-level route. The displayed unilateral identity was independently checked algebraically and on finite sections. At the critical value `r=p^{-1/2}`, its noncompact scalar coefficient is
+
+\[
+2(\log p)\frac{r}{1-r}
+=2(\log p)\sum_{k\ge1}p^{-k/2},
+\]
+
+which is exactly the one-prime degree/self-energy of the positive jump-Laplacian construction already isolated globally in `WP-009`. Subtracting that degree restores the zero-diagonal Weil interaction; `WP-218` proves that the resulting one-prime operator has a negative essential Toeplitz interval, while the displayed `E_r` is finite rank and therefore cannot alter it.
+
+Thus the Farey/GCD finite-difference formula does identify the same missing noncompact counterterm very cleanly, but it does not supply that counterterm from an independent Mathia geometry. The generic suggestion to add an archimedean/semilocal noncompact completion is also already inside the audited Connes--Consani trace/Sonin prior-art surface recorded in `SOURCES.md`; no concrete new source-fixed operator, domain, or normalization is specified here that would distinguish a Mathia mechanism from that class.
+
+A future handoff can reopen this direction only with a concrete source-derived noncompact finite--archimedean or mixed-prime operator whose action on the `WP-218` Weyl packets is specified before inspecting the target sign. No new `WP` finding is created from this clue because the durable mathematical content is already covered by `WP-009` and `WP-218`.
