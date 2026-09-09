@@ -198,9 +198,11 @@ Exact invertibility by itself would be less useful if it required a fixed radial
 
 \[
 |\zeta_N|=r_N=e^{\sigma/N},
-\qquad \sigma\ne0
+\qquad \sigma\ne0,
 \tag{21}
-\]\nwith `sigma` fixed. For `k<N/2`, write `h=N-2k>=1`. Then `(18)` becomes
+\]
+
+with `sigma` fixed. For `k<N/2`, write `h=N-2k>=1`. Then `(18)` becomes
 
 \[
 |D_k|
@@ -287,7 +289,7 @@ this is simply
 \tag{30}
 \]
 
-At the current Xi scaling `ell asy 1/log T`, the observation point is only `Theta(1/log T)` off the real line. No evaluation at a period seam or at imaginary height `Theta(L)` is needed.
+At the current Xi scaling \(\ell\asymp1/\log T\), the observation point is only `Theta(1/log T)` off the real line. No evaluation at a period seam or at imaginary height `Theta(L)` is needed.
 
 This gives the exact periodic meaning of the compression: instead of separately observing `Theta(N)` root harmonics as in XF-129, observe one normalized value of the periodic heat solution at one nearby complex point through heat time. The off-real displacement mixes all Vieta shells at once, while their distinct heat rates spectrally separate the reflected pairs.
 
