@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-flute-critical-jacobi-square-root-decay-window
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
@@ -73,3 +73,9 @@ Kill this direction if the correct edge exponent is at most `1/4`, if the half-l
 The Fourier series for `|sin(t/2)|` and its `k^{-2}` coefficient decay are exact classical calculations for PF-247's constant bilateral limit. The `1<R<3/2` interval is only the square-summability threshold of a fixed-output-mode toy calibration. Neither statement proves PF-243's four separated source-to-bulk estimates, transfers automatically to the half-line variable Jacobi operator, or controls the actual complete-lift seam.
 
 No new theorem about discrete fractional Laplacians, Jacobi functional calculus, Robin maps, Schatten classes, zeta zeros, or RH is claimed. The clue isolates a falsifiable exponent-budget question suggested by PF-247 and remains proposed until the Prime Flute Research Watch reconstructs it in the exact corridor geometry.
+
+## Research disposition
+
+Accepted for continued investigation. PF-248 performs the clue's first missing half-line test and materially changes the toy exponent budget: the Dirichlet image term cancels the bilateral `n^{-2}` contribution in each fixed output row of the constant half-line square root, giving `n^{-3}` decay and the wider fixed-row threshold `R<5/2`.
+
+PF-248 also shows why this does not resolve the clue. The actual PF-247 parity coefficients differ from the constant chain by `O(j^{-2})`; this is trace class but has divergent first weighted moment, so standard first-moment Jost transfer is unavailable at the zero edge. The precise surviving question is whether the actual Robin scalar factor and full-output source map retain some `R>1` weighted decay across this first-moment-critical tail, before the later `T_a` and hypercycle-coordinate perturbations are introduced.
