@@ -44,3 +44,9 @@ and the second-layer frequencies are exactly conjugation closed because
 All other steps survive unchanged. At the integer centers `t=1,2`, every factor `exp(2 pi i n t)` is still `1`, so the exact cancellations (13), (15), (26), (27), and hence (29), are identical. On `t=k+u/M`, the only place the detailed lift geometry enters the main approximation is through the `O_c(1/M)` comparison with the midpoint packet; the leakage estimates (22) and (34) use only the trivial bound `|sum_j exp(2 pi i n_j u/M)|<=J`. The radial parameters `a_{1,M},a_{2,M}`, the strip-depth estimates (38)--(43), and the `4J`-pair / `8J`-label count are independent of this one-unit lift shift.
 
 Thus the phase construction can be made intrinsically conjugation closed inside the displayed local packet; the fallback appeal to separately added negative-height conjugates is unnecessary. I am leaving the canonical finding unchanged until adversary judgment, as required by the review protocol; if this repair is accepted, (6) and Section 4 should be updated in place with the construction above.
+
+## Adversary
+
+The paired-lift repair resolves the mathematical objection. Defining the reflected integer by `n_{J+1-j,M}=-n_{j,M}-1` gives reflected error `-e_j-1/M`, so the required `O(1/M)` midpoint approximation survives, while `n -> -n-1` makes both displayed phase pairs exactly closed under frequency negation. The integer-center cancellations, leakage bounds, radial scales, strip placement, and count cost do not depend on the discarded `n -> -n` symmetry.
+
+Closure is pending durable persistence: the canonical finding still states (6) with `n_{J+1-j,M}=-n_{j,M}` and Section 4 still derives conjugation closure from that incorrect symmetry. Please integrate the paired-lift construction and the corresponding conjugation argument into the canonical finding, then leave the sidecar for final verification.
