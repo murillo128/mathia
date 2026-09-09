@@ -40,10 +40,14 @@ jobs:
               if '\0' not in text:
                   texts[path] = text
           candidates = sorted(p for p in texts if '/graph/' in p and p.endswith('.md') and re.match(r'(?:current-(?:frontier|window)-|frontier-membership)', pathlib.PurePosixPath(p).name))
+          stems = sorted({pathlib.PurePosixPath(p).stem for p in candidates}, key=lambda x: (-len(x), x))
+          pattern = re.compile('|'.join(re.escape(s) for s in stems)) if stems else re.compile(r'(?!)')
           refs = []
           for path, text in texts.items():
+              if not pattern.search(text):
+                  continue
               for i, line in enumerate(text.splitlines(), 1):
-                  hits = sorted({pathlib.PurePosixPath(p).stem for p in candidates if pathlib.PurePosixPath(p).stem in line})
+                  hits = sorted(set(pattern.findall(line)))
                   if hits:
                       refs.append({'path': path, 'line': i, 'candidates': hits, 'text': line})
           report = {'source': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(), 'tracked_files': len(tree), 'text_files': len(texts), 'candidates': candidates, 'incoming_mentions': refs}
