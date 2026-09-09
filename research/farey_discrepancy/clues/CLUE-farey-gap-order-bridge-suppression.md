@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-discrepancy-gap-order-bridge-suppression
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: farey_discrepancy
 based_on:
@@ -139,4 +139,8 @@ If a proposed test needs modes on the `r=Theta(n)` scale or an endpoint cutoff `
 
 `VIS-026` establishes the fixed-gap bridge control. `VIS-027` establishes reflection parity and the exact reflection-preserving same-gap total baseline. `VIS-028` and `VIS-029` establish the deterministic endpoint hierarchy and its `r=Theta(n)` scale. `VIS-030` establishes the Riesz/Möbius arithmetic carried by progressively enlarged endpoint subtraction. `VIS-031` proves that every fixed endpoint hierarchy vanishes from every sublinear even-mode band at the stated normalization. `VIS-032` proves that any diverging sublinear band captures asymptotically all of the current matched-null Green expectation. `VIS-034` proves only the exact normalization factorization separating total-amplitude and spectral-allocation effects.
 
-None of these findings proves that the actual Farey `A`, `S_q`, or `Q_q` has a limiting value, that finite spectral reallocation is independent of stronger local-order structure, that a new non-scalar invariant exists, or that any restricted-band estimate strengthens the classical RH-equivalent discrepancy criterion. The finite values are exploratory diagnostics. This file remains a `status: proposed` clue, not mathematical evidence.
+None of these findings proves that the actual Farey `A`, `S_q`, or `Q_q` has a limiting value, that finite spectral reallocation is independent of stronger local-order structure, that a new non-scalar invariant exists, or that any restricted-band estimate strengthens the classical RH-equivalent discrepancy criterion. The finite values are exploratory diagnostics.
+
+## Research disposition
+
+Accepted. `FD-013` proves that exact reflection, the full two-gap multiset, and the complete ordered adjacent-pair count matrix can still coexist with an unbounded factor in cumulative rank-grid quadratic discrepancy on symmetric rational controls. Thus preserving adjacent-gap pairs is not by itself a coercive explanation for the Farey suppression. The remaining live question is whether genuinely Farey-specific denominator/mediant ancestry or a local-block depth growing with the order produces a spectral-allocation effect that survives the scalar/global factorization and enters the Franel target through a new quantitative relation. Finite adjacent-pair matched-null diagnostics remain useful as controls, but not as a theorem-level bridge.

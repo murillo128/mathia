@@ -41,6 +41,12 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - R. R. Hall and P. Shiu, *The index of a Farey sequence*, Michigan Mathematical Journal **51**(1) (2003), 209--223, DOI `10.1307/mmj/1049832901`. Role: primary source for the classical Farey index `nu=(q_(i-1)+q_(i+1))/q_i` and the exact first-moment identity `sum_i nu_i=3N(Q)-1`; `FD-011` uses these as the prior-art boundary for the raw nearest-neighbor increment Plücker field.
 - Alan K. Haynes, *Numerators of differences of nonconsecutive Farey fractions*, International Journal of Number Theory **6**(3) (2010), 655--666, DOI `10.1142/S1793042110003113`, arXiv `0907.0162`. Role: primary source for generalized Farey `k`-indices, their convergent-polynomial representation in finite windows of the ordinary index, and fixed-separation average asymptotics; `FD-011` uses it to classify fixed-lag raw increment minors as already inside the classical Farey-index algebra.
 
+## Local gap-order and Markov-type controls
+
+- Volker Augustin, Florin P. Boca, Cristian Cobeli and Alexandru Zaharescu, *The h-spacing distribution between Farey points*, Mathematical Proceedings of the Cambridge Philosophical Society **131**(1) (2001), 23--38, DOI `10.1017/S0305004101005187`. Role: primary prior-art boundary for fixed-`h` local Farey spacing distributions. `FD-013` does not claim local Farey gap statistics are new; it isolates what a complete first-order local gap inventory cannot coerce about cumulative rank-grid discrepancy.
+- Philippe Jacquet, Charles Knessl and Wojciech Szpankowski, *Counting Markov Types*, DMTCS Proceedings vol. AM, AofA'10 (2010), DOI `10.46298/dmtcs.2768`. Role: prior-art boundary for first-order Markov-type terminology as exact adjacent-pair frequency data. `FD-013` derives its binary matched-control pair directly and does not import Markov-type enumeration estimates.
+- Rogelio Tomás García, *A General Lower Bound for Average Local Discrepancy and an Application to the Farey Sequence*, Mathematics **14** (2026), 2543, DOI `10.3390/math14142543`. Role: current prior-art boundary for the effect of gap ordering and same-gap permutation families on average local Farey discrepancy. `FD-013` studies a different exact quadratic control in which reflection and all adjacent ordered gap-pair counts are additionally fixed.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
