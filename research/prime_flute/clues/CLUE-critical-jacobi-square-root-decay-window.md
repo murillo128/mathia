@@ -5,113 +5,79 @@ status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
+  - research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing.md
   - research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes.md
   - research/prime_flute/findings/PF-248-parity-jacobi-tail-is-trace-class-but-first-moment-critical.md
   - research/prime_flute/findings/PF-249-positive-separation-preserves-free-jacobi-square-root-threshold.md
   - research/prime_flute/findings/PF-250-half-line-fractional-edge-powers-retain-supercritical-separated-window.md
   - research/prime_flute/findings/PF-251-exact-zero-edge-solutions-select-growing-inverse-square-jacobi-branch.md
   - research/prime_flute/findings/PF-252-zero-edge-ground-state-transform-has-bessel-four-scaling.md
-  - research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing.md
+  - research/prime_flute/findings/PF-253-bessel-four-jacobi-fractional-powers-have-sharp-separated-window.md
   - research/prime_flute/clues/CLUE-robin-homotopy-separated-poisson-shear-estimate.md
 ---
 
-# Does the critical Jacobi edge leave a narrow supercritical smoothing window?
+# Does the critical Jacobi edge leave a supercritical smoothing window for the actual Robin factor?
 
 ## Observation
 
-PF-247 turns the fixed axis compactification into two asymptotically constant parity-Jacobi chains. After the alternating sign normalization, the limiting relative operator has symbol
-\[
-j(t)=\frac12-\frac12\cos t=\sin^2(t/2),
-\]
-with spectral edge at zero. This makes the decay problem for non-polynomial functions quantitatively testable rather than merely qualitative.
+PF-247 reduces the fixed-axis compactification to two asymptotically constant parity Jacobi chains. PF-248--PF-250 establish the free Dirichlet calibration: for `0<\sigma<1`, the half-line image term improves the fixed-row fractional-power tail to `n^{-2-2\sigma}`, and fixed positive output separation gives the sharp full-output threshold
 
-For the square root, the limiting bilateral symbol is
 \[
-j(t)^{1/2}=|\sin(t/2)|
-=\frac{2}{\pi}-\frac{4}{\pi}\sum_{k\ge1}\frac{\cos(kt)}{4k^2-1}.
+R<\frac32+2\sigma.
 \]
-Hence the corresponding Toeplitz coefficients are exactly
-\[
-c_0=\frac{2}{\pi},\qquad
-c_k=-\frac{2}{\pi(4k^2-1)}\quad(k\ne0),
-\]
-so the off-diagonal tail is algebraic, `c_k\sim-1/(2\pi k^2)`, rather than exponential. This is the expected `s=1/2` discrete-fractional-Laplacian decay: Ciaurri--Roncal--Stinga--Torrea--Varona, *Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications*, Advances in Mathematics 330 (2018), 688--738, DOI `10.1016/j.aim.2018.03.023`, gives the classical discrete fractional kernel with `|k|^{-1-2s}` decay. General banded-matrix-function decay theory such as Benzi--Razouk, *Decay bounds and O(n) algorithms for approximating functions of sparse matrices*, ETNA 28 (2007), also makes clear why smooth/analytic functional calculus away from a spectral singularity is a different regime from the present square-root edge.
 
-The original bilateral fixed-output calibration gave only `R<3/2` for the square root and, more generally, `R<1/2+2\sigma` for a toy edge law `\lambda^\sigma`. PF-248--PF-250 show that this is too pessimistic for the **spectral Dirichlet half-line** operator actually relevant to each parity chain. The image term cancels the leading bilateral contribution in every fixed row. PF-250 proves for every `0<\sigma<1` that
-\[
-\langle e_m,J_0^\sigma e_n\rangle
-\asymp_m n^{-2-2\sigma}
-\]
-with a nonzero leading coefficient, and after any fixed positive output separation the sharp full-output weighted threshold is
-\[
-\boxed{R<\frac32+2\sigma.}
-\]
-Thus the square-root case leaves `R<5/2` and even a quarter-root edge law leaves `R<2`. A positive fractional edge exponent is therefore not, by itself, a free half-line obstruction to PF-243's strict `R>1` requirement.
+PF-251 then shows why generic trace-class transfer is unavailable for the actual chain: the full half-line zero condition selects a positive solution growing like `j^{3/2}`, while the independent tail solution is `j^{-1/2}`. PF-252 converts that exact positive branch into a weighted nearest-neighbor operator with cubic mass and conductance and radial Bessel-four scaling.
 
-PF-251 then identifies the actual zero-edge solutions of the variable PF-247 chains: the full half-line boundary condition selects a positive `j^{3/2}` solution, while the independent tail solution is `j^{-1/2}`. PF-252 uses that positive solution for an exact ground-state transform. The transformed mass and conductance both grow like `j^3`, and the diffusive scaling limit is
+PF-253 now proves the previously conjectural fractional-kernel consequence for the **actual** PF-247 parity chains. In the separated cone,
+
 \[
--\frac14\left(\partial_x^2+\frac3x\partial_x\right),
+\left|\langle e_i,J_\varepsilon^\sigma e_j\rangle\right|
+\asymp
+(i+1)^{3/2}(j+1)^{-5/2-2\sigma},
+\qquad j\ge2i+2,
 \]
-the radial Laplacian in four dimensions. By contrast, the free Dirichlet chain behind PF-250 has zero mode `j+1` and Bessel-three scaling. The actual inverse-square tail therefore changes the threshold geometry in a structured direction rather than acting as an arbitrary trace-class mixer.
+
+and after any fixed positive output separation,
+
+\[
+\boxed{
+E_dJ_\varepsilon^\sigma N^R\in\mathcal S_2
+\iff R<2+2\sigma,
+}
+\]
+
+with no bounded extension at or above the endpoint. Thus a literal square-root factor has the sharp actual-chain window `R<3`. The first-moment-critical inverse-square tail does not close PF-243's required `R>1` window; its exact Bessel-four geometry strengthens the free calibration by one half-power.
 
 ## Research question
 
-Can the actual fixed-axis functional factor entering the PF-243 separated Robin-Poisson maps be identified near the zero edge of PF-247's relative Jacobi operator and shown to have enough edge regularity that its mode-mixing tail supports some uniform `K_a^R` gain with `R>1`?
+What is the exact scalar function, operator mean, or finite functional-calculus expression in the fixed-axis relative operator `J_\varepsilon` that occurs in the **seam-normalized far-leg Robin-Poisson factor** from PF-243, and what is its leading non-smooth behavior at `\lambda=0`?
 
-More specifically, can PF-252's exact Bessel-four ground-state transform be upgraded to low-energy heat-kernel, Green-kernel, or fractional-functional-calculus estimates for the actual parity chains? Does that structure preserve or improve the half-line cancellation seen in the Bessel-three free model, and does enough of the resulting margin survive the actual seam-normalized source-to-bulk map, the `T_a` replacement, Hardy ends, and the `O(w^2)` hypercycle-coordinate defect?
+Once that factor is identified, does its edge behavior reduce to positive fractional powers (or another explicitly controlled functional-calculus class) strongly enough that PF-253's proven `R>1` margin survives the actual `K_a=T_a^{1/2}` replacement, Hardy ends, and PF-235's `O(w^2)` hypercycle-to-axis coordinate defect?
+
+The question is no longer whether the Bessel-four model fractional tail exists. PF-253 settles that subproblem. The live issue is whether the **operator actually consumed by the Robin source map** belongs to the favorable class and whether later geometric perturbations preserve enough of the now-quantified margin.
 
 ## Why it may matter
 
-PF-247 ends with "quantify functional-calculus decay" as a live route, while the accepted PF-243 clue asks only for one exponent `R>1`. PF-248--PF-250 give a sharp free half-line exponent budget rather than a bilateral analogy. PF-251--PF-252 now show that the variable chain has an exact threshold geometry of its own: after ground-state transform it is asymptotically a four-dimensional radial diffusion.
+PF-243 reduces the remaining high-high shear gate to one-sided separated-Poisson smoothing of any fixed order `R>1`. PF-253 provides substantially more than that for every literal positive fractional edge power: its sharp threshold is `R<2+2\sigma`, and for the square root it is `R<3`.
 
-A positive transfer would identify a concrete exponent range and a specific mechanism for the missing separated smoothing estimate. A negative result would be equally useful: if even the Bessel-four transformed chain cannot support any `R>1` weighted estimate for the correctly identified factor, then the fixed-axis Jacobi functional-calculus route can be closed before spending effort on the later geometric perturbations.
-
-There is also a precise **model prediction** worth testing, but it is not evidence. For a radial `d`-dimensional fractional-Laplacian calibration, a fixed-root counting-basis kernel scales dimensionally like
-\[
-n^{-(d+1)/2-2\sigma}.
-\]
-At `d=3` this reproduces PF-250's exact `n^{-2-2\sigma}` law. If the same Bessel scaling survives discretely at `d=4`, it predicts
-\[
-n^{-5/2-2\sigma}
-\]
-and a separated weighted threshold
-\[
-R<2+2\sigma,
-\]
-so the square-root model would allow `R<3`. This is deliberately a falsifiable calibration, not a promoted theorem.
+A positive identification of the actual Robin factor could therefore turn the endpoint problem from an unknown critical-Jacobi smoothing question into a finite exponent-budget transport problem. A negative identification would be equally decisive: if the exact factor has a zero-edge singularity not covered by positive fractional powers or otherwise creates a long-range mode tail beyond `R>1`, the fixed-axis functional-calculus route can be closed before spending effort on the later geometric perturbations.
 
 ## Decisive test
 
-First identify the exact scalar function, operator mean, or finite product of functions of the fixed-axis relative operator that actually occurs in the seam-normalized far-leg Poisson factor; do not assume that it is literally `J^{1/2}` merely because square roots occur in the normalization. Determine its leading non-smooth edge behavior at `\lambda=0`.
+Derive the fixed-axis seam-normalized Robin source-to-bulk factor from the PF-238/PF-243 variational construction without replacing the actual complete-lift seam by a commuting proxy. Express the resulting mode-conversion factor directly in terms of `J_\varepsilon` and the corridor weight, and determine its exact leading behavior as `\lambda\downarrow0`.
 
-For the variable parity chains, use PF-252's exact unitary ground-state transform rather than generic trace-class perturbation theory. Prove or disprove one of the following equivalent-enough routes to the needed endpoint control:
+If the leading nonlocal term is a positive fractional power `J_\varepsilon^\sigma`, or a finite combination for which PF-253 gives the load-bearing tail, propagate the sharp threshold `R<2+2\sigma` through the remaining fixed-axis factors and verify that some uniform `R>1` survives. Only after this succeeds should the route spend margin on the `T_a` replacement and the width-dependent hypercycle/axis deformation.
 
-- low-energy spectral-density/Green-kernel asymptotics with the Bessel-four exponent;
-- two-sided heat-kernel bounds for the cubic-mass/cubic-conductance transformed chain, followed by subordination for the relevant fractional edge factor;
-- or the separated weighted matrix estimate itself.
-
-Use PF-250's `d=3` free law as a calibration and explicitly test the `d=4` prediction `n^{-5/2-2\sigma}` / `R<2+2\sigma`; do not assume it. Only if some fixed `R>1` survives at the fixed-axis variable-chain level should the route spend margin on the `T_a` versus `A` replacement and the width-dependent hypercycle/axis coordinate defect. The actual PF-238 seam must remain fixed throughout.
-
-Kill this direction if the correctly identified actual factor has no nonlocal half-line smoothing mechanism capable of reaching `R>1`, if the exact Bessel-four transformed coefficients fail to yield any such weighted estimate, or if one of the later canonical perturbations produces a non-summable long-range tail. **Do not kill it merely because a fractional edge exponent is at most `1/4`**: PF-250 shows that the earlier bilateral threshold behind that criterion does not survive the Dirichlet half-line correction.
+Kill the route if the actual factor has a worse zero-edge singularity that defeats every `R>1` separated estimate, if a required functional-calculus operation reintroduces a non-summable high-to-low tail not controlled by PF-253, or if one of the canonical later perturbations consumes the entire proven margin. Do not reopen the generic first-moment perturbation question: PF-253 bypasses it using the exact ground-state geometry.
 
 ## Evidence boundary
 
-The full-line fractional-discrete kernel scale is classical. Das--de la Fuente-Fernandez (2026) records the exact gamma-ratio kernel for spectral fractional powers of the discrete Dirichlet half-line Laplacian, and PF-250 derives the sharp positive-separation weighted threshold needed here. PF-248 and PF-249 are the `\sigma=1/2` specialization.
+PF-253 is canonical evidence for literal powers `J_\varepsilon^\sigma`, `0<\sigma<1`: it proves the Bessel-four off-diagonal exponent and the sharp separated full-output threshold `R<2+2\sigma`. The earlier `n^{-5/2-2\sigma}` prediction and the square-root threshold `R<3` are no longer heuristic calibrations.
 
-PF-251's exact zero solutions and PF-252's ground-state representation/Bessel-four scaling are now canonical evidence for the **actual fixed-axis Jacobi chain**. They do not prove that the discrete spectral density is asymptotic to `C\lambda`, do not prove the model row law `n^{-5/2-2\sigma}`, and do not prove the predicted threshold `R<2+2\sigma`. Those statements remain the unvalidated part of this clue.
-
-Nothing here proves PF-243's four separated source-to-bulk estimates, identifies the actual complete-lift Robin factor, or controls the `T_a`/hypercycle perturbations. No new theorem about zeta zeros or RH is claimed. This remains an accepted research clue rather than mathematical evidence; acceptance authorizes continued investigation only.
+PF-253 does **not** identify the normalized complete-lift Robin factor as `J_\varepsilon^\sigma`, does not prove a general theorem for arbitrary functions of `J_\varepsilon`, and does not control `T_a`, Hardy ends, hypercycle reparameterization, physical `P/H` recoupling, finite-pant completion, neighboring-module extension, or global weak-`S_1` reassembly. No new theorem about zeta zeros or RH is claimed.
 
 ## Research disposition
 
-Accepted for continued investigation. PF-248 performs the first missing half-line test and materially changes the toy exponent budget: the Dirichlet image term cancels the bilateral `n^{-2}` contribution in each fixed output row of the constant half-line square root, giving `n^{-3}` decay and the wider fixed-row threshold `R<5/2`.
+Accepted for continued investigation. PF-248--PF-250 established the free half-line window; PF-251 identified the boundary-selected inverse-square threshold branch; PF-252 supplied the exact Bessel-four ground-state geometry; PF-253 now proves the corresponding actual-chain fractional kernel and sharp separated window.
 
-PF-248 also shows why this does not resolve the clue. The actual PF-247 parity coefficients differ from the constant chain by `O(j^{-2})`; this is trace class but has divergent first weighted moment, so standard first-moment Jost transfer is unavailable at the zero edge.
-
-PF-249 completes the next **constant square-root model** test. If the free square-root conversion is followed by the exponential output damping supplied by any fixed positive separation, then the full-output operator `E_dJ_0^{1/2}N^R` is Hilbert--Schmidt exactly for `R<5/2` and unbounded for `R>=5/2`. Thus summing the whole separated output does not consume the half-line margin.
-
-PF-250 removes the remaining artifact of the original bilateral calibration. For the spectral Dirichlet half-line power `J_0^\sigma`, `0<\sigma<1`, the image cancellation gives fixed-row decay `n^{-2-2\sigma}` and the sharp separated full-output threshold `R<3/2+2\sigma`. In particular, a quarter-root factor would still leave `1<R<2`; `\sigma<=1/4` is no longer a valid free-model kill criterion.
-
-PF-251 removes the formal-status ambiguity in PF-248's inverse-square exponents. The actual half-line zero solution grows like `j^{3/2}`, the independent tail solution decays like `j^{-1/2}`, and the origin boundary selects the growing branch. Generic trace-class transfer of the free edge is therefore not justified.
-
-PF-252 supplies the first replacement structure. The exact positive ground-state transform has cubic mass and conductance and converges diffusively to the radial four-dimensional Laplacian, whereas the free PF-250 calibration is radial dimension three. The surviving fixed-axis problem is now to prove or falsify the Bessel-four low-energy/fractional-kernel prediction for the exact discrete chain and determine whether **any** separated weighted estimate with `R>1` survives. Only after that should the route spend margin on `T_a` and the hypercycle-coordinate perturbation.
+The surviving question is narrower and more structural: **identify the exact Robin functional factor and transport the proven Bessel-four exponent budget to the physical separated Poisson maps.** The clue remains accepted rather than resolved because that operator identification and transport are precisely the parts PF-243 ultimately needs.
