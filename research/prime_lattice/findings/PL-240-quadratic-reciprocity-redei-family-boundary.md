@@ -34,7 +34,7 @@ The Hilbert-symbol product formula forces every row sum to vanish, so `R_S 1=0`.
 
 `rank_4 Cl^+(K_S)=t-1-rank_(F_2)(R_S)=dim_(F_2) ker(R_S)-1`.
 
-Thus the exponent lattice does possess a canonical **mixed-prime incidence geometry** that is richer than prime order, `log p`, fixed congruence colors, or a fixed Galois quotient: its zero modes are precisely the 4-rank of the narrow class group of the support-dependent quadratic field.
+Thus the exponent lattice does possess a canonical **mixed-prime incidence geometry** that is richer than prime order, `log p`, fixed congruence colors, or a fixed Galois quotient: after removing the forced row-sum zero mode, its additional null directions encode precisely the 4-rank of the narrow class group of the support-dependent quadratic field.
 
 This is nevertheless a prior-art redirect rather than a zeta spectral mechanism. After transposing the off-diagonal matrix, row `i` consists of samples of the primitive quadratic Dirichlet character
 
@@ -132,9 +132,9 @@ This distinction prevents an illegal shortcut: the finite `F_2` matrix contains 
 
 The support-level matrix and the 4-rank identity are classical Rédei/Reichardt genus theory. Li--Yu provide a modern peer-reviewed derivation with an explicit Hilbert-symbol matrix and the exact formula
 
-`rank_4 Cl^+(K)^+=t-1-rank R`
+`rank_4 Cl^+(K)=t-1-rank R`
 
-(in their notation, for the narrow class group of a quadratic field). Peter Stevenhagen's modern treatment of Rédei reciprocity goes further: higher Rédei symbols govern 8-rank phenomena and are controlled by Frobenius conditions on the prime divisors of the discriminant. Therefore even replacing pairwise Legendre symbols by the first natural higher reciprocity invariant is established arithmetic prior art and must not be presented as a new lattice construction.
+for the narrow class group of a quadratic field. Peter Stevenhagen's modern treatment of Rédei reciprocity goes further: higher Rédei symbols govern 8-rank phenomena and are controlled by Frobenius conditions on the prime divisors of the discriminant. Therefore even replacing pairwise Legendre symbols by the first natural higher reciprocity invariant is established arithmetic prior art and must not be presented as a new lattice construction.
 
 A targeted search for Rédei-matrix spectral formulations found classical graph/tournament interpretations and extensive class-group applications, but no theorem making the ordinary Rédei matrix a zeta-specific Hilbert--Pólya operator or deriving Riemann-zero localization from its spectrum. Absence from that search is **not** treated as evidence of nonexistence; the durable claim here is only the positive prior-art identification and the exact analytic-channel reduction above.
 
