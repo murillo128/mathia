@@ -1,6 +1,6 @@
-# WP-229 — Critical linear amplitudes fail Dixmier-style amplification; squaring restores trace scaling but erases repeated prime powers
+# WP-229 — Critical linear amplitudes are not singularly traceable; finite singular traces on the quadratic bath forget repeated prime powers
 
-**Status:** `EXACT-DERIVED + BOST-CONNES-CRITICAL-MODES + KY-FAN-ASYMPTOTIC + MATRIX-AMPLIFICATION-OBSTRUCTION + SLOW-VARIATION-BOUNDARY + QUADRATIC-COMPLETION + TRACE-CLASS-TAIL + PRIME-POWER-BLIND-SINGULAR-RESIDUE + MATCHED-CONTROL + DECISIVE-NARROWING + PRIOR-ART-CLASSICALIZATION + NOT-A-WEIL-BRIDGE`.
+**Status:** `EXACT-DERIVED + BOST-CONNES-CRITICAL-MODES + SINGULAR-VALUE-ASYMPTOTIC + ALL-SINGULAR-TRACE-OBSTRUCTION + MATRIX-AMPLIFICATION + ECCENTRICITY-CONTROL + QUADRATIC-COMPLETION + UNIVERSAL-PRIME-POWER-BLINDNESS + MATCHED-CONTROL + DECISIVE-NARROWING + PRIOR-ART-CLASSICALIZATION + NOT-A-WEIL-BRIDGE`.
 
 `WP-227` leaves the exact critical finite amplitudes in the matched cross channel
 
@@ -10,360 +10,396 @@ c_{p,k}=(\log p)p^{-k/2},
 \tag{1}
 \]
 
-and `WP-228` shows that the positive minimal companion
+and `WP-228` identifies the positive minimal companion
 
 \[
 B_{\min}=C^*C,
 \qquad
-b_{p,k}=(\log p)^2p^{-k},
+b_{p,k}=(\log p)^2p^{-k}.
 \tag{2}
 \]
 
-lies beyond the ordinary Dixmier ideal but has second-logarithmic Ky Fan growth. The natural remaining question is whether one can keep the **linear** critical amplitudes and assign them a source-forced singular mass before they are squared, or instead use the second-logarithmic singular mass of `B_min` as the missing geometric completion.
+The earlier version of this finding ruled out **Dixmier-style/Ky-Fan** scalar residues on the linear carrier and showed that the standard second-logarithmic residue of `B_min` forgets every repeated prime power. The same source asymptotics imply a strictly stronger statement that does not depend on choosing a Marcinkiewicz gauge or generalized limit.
 
-There is a sharp dichotomy.
-
-Let `A=|C|`, so its singular values are the numbers `c_{p,k}`. Then
+Let
 
 \[
-\boxed{
-K_N(A):=\sum_{n\le N}\mu_n(A)
-\sim 2\sqrt{N\log N}.
-}
+A:=|C|.
 \tag{3}
 \]
 
-Hence every asymptotically faithful Ky-Fan normalization for the **linear** amplitudes has regular-variation ratio
+Then the full decreasing singular-value sequences satisfy
 
 \[
-\frac{\psi(2N)}{\psi(N)}\longrightarrow\sqrt2.
+\boxed{
+\mu_n(A)\sim \sqrt{\frac{\log n}{n}},
+\qquad
+\mu_n(B_{\min})\sim\frac{\log n}{n}.
+}
 \tag{4}
 \]
 
-This is incompatible with trace additivity under orthogonal doubling. Indeed, for even rank,
+Consequently
 
 \[
-K_{2N}(A\oplus A)=2K_N(A),
+\mu_n(A\oplus A)
+=
+\mu_{\lceil n/2\rceil}(A)
+\sim \sqrt2\,\mu_n(A).
 \tag{5}
 \]
 
-so a generalized-limit residue normalized to give a finite nonzero value on `A` gives only a factor `\sqrt2` on `A\oplus A`, whereas every trace must give a factor `2`. Therefore **no nontrivial Dixmier-style/Ky-Fan singular normalization which is finite and nonzero on the exact linear critical channel can be additive under matrix amplification**.
-
-Squaring changes the scaling class. `WP-228` gives
+If `\tau` is **any positive singular trace** on an operator ideal containing `A` and `\tau(A)<\infty`, singularity kills finite-rank heads and positivity plus unitary invariance turn (5) into
 
 \[
-K_N(B_{\min})
-\sim \frac12(\log N)^2,
-\qquad
-\frac{K_{2N}(B_{\min})}{K_N(B_{\min})}\longrightarrow1.
+\tau(A\oplus A)=\sqrt2\,\tau(A).
 \tag{6}
 \]
 
-Thus the quadratic companion sits on the slowly varying side where generalized Marcinkiewicz/Dixmier trace scaling is compatible with additivity. But the price is exact arithmetic information loss. Split
+But trace additivity gives
 
 \[
-B_{\min}=B_1\oplus R,
+\tau(A\oplus A)=2\tau(A).
 \tag{7}
-\]
-
-where `B_1` is the `k=1` prime sector and `R` contains all repeated prime powers `k\ge2`. Then
-
-\[
-\boxed{
-\operatorname{Tr}R
-=
-\sum_p\sum_{k\ge2}(\log p)^2p^{-k}
-=
-\sum_p\frac{(\log p)^2}{p(p-1)}
-<\infty.
-}
-\tag{8}
-\]
-
-Consequently every second-logarithmic Ky-Fan residue of the standard generalized-limit form annihilates `R`. With the normalization `\psi(N)\sim(\log N)^2`, both the full bath and the primes-only matched control have the same generalized-limit-independent value
-
-\[
-\boxed{
-\lim_{N\to\infty}\frac{K_N(B_{\min})}{\psi(N)}
-=
-\lim_{N\to\infty}\frac{K_N(B_1)}{\psi(N)}
-=
-\frac12.
-}
-\tag{9}
-\]
-
-Thus the singular-weight fork has a precise tradeoff:
-
-\[
-\boxed{
-\text{retain the linear Weil amplitudes}
-\Longrightarrow
-\text{wrong amplification law for a Dixmier-style trace};
-}
-\tag{10}
-\]
-
-\[
-\boxed{
-\text{square into the positive companion}
-\Longrightarrow
-\text{trace-compatible slow variation, but repeated prime powers are singular-trace invisible}.
-}
-\tag{11}
-\]
-
-This does not rule out every singular, modular, semifinite, or distributional finite--archimedean geometry. It does rule out a much more specific and previously live shortcut: **the missing Weil-positive structure cannot be obtained merely by promoting either the linear critical mode list or its minimal quadratic bath to a scalar Dixmier/Marcinkiewicz-type singular residue.** A surviving construction must use additional relational structure before the final positive readout.
-
-## 1. The linear critical channel has square-root Ky Fan growth
-
-Write the prime-power mode space as the orthogonal union of exponent sectors `k=1,2,3,...`. For `k=1`, the singular values are
-
-\[
-a_p=\frac{\log p}{\sqrt p}.
-\tag{12}
-\]
-
-After finitely many terms this is decreasing in `p`. If `p_n` is the `n`-th prime, the prime number theorem gives
-
-\[
-p_n\sim n\log n,
-\qquad
-\log p_n\sim\log n,
-\tag{13}
-\]
-
-and therefore
-
-\[
-a_{p_n}
-\sim
-\sqrt{\frac{\log n}{n}}.
-\tag{14}
-\]
-
-The sequence on the right is regularly varying with index `-1/2`, hence summation (or a direct integral comparison) gives
-
-\[
-\sum_{n\le N}a_{p_n}
-\sim
-2\sqrt{N\log N}.
-\tag{15}
-\]
-
-The `k=2` sector is lower order. Its `n`-th prime value is
-
-\[
-\frac{\log p_n}{p_n}
-\sim\frac1n,
-\tag{16}
-\]
-
-so its first `N` terms have total `\sim\log N`. Every sector `k\ge3` is absolutely summable even after all primes are included:
-
-\[
-\sum_p\sum_{k\ge3}(\log p)p^{-k/2}
-=
-\sum_p
-\frac{(\log p)p^{-3/2}}{1-p^{-1/2}}
-<\infty.
-\tag{17}
-\]
-
-For a union of decreasing positive sequences, the sum of the `N` largest terms is bounded above by the sum of the first `N` terms from each component sequence. Hence the `k=2` and `k\ge3` sectors contribute only `O(\log N)` and `O(1)` to the upper bound, while the `k=1` sector alone supplies the lower bound (15). This proves (3).
-
-The result is not another statement that `C\notin S_2`; `WP-228` already has that. Equation (3) identifies the exact **additive scaling law** of the linear channel, which is what a Dixmier-style singular trace would have to respect.
-
-## 2. Orthogonal doubling falsifies a linear-amplitude Dixmier residue
-
-Let `\psi` be any positive normalization for which
-
-\[
-\frac{K_N(A)}{\psi(N)}\longrightarrow L,
-\qquad 0<L<\infty.
-\tag{18}
-\]
-
-By (3), necessarily
-
-\[
-\psi(N)\sim \frac{2}{L}\sqrt{N\log N},
-\tag{19}
-\]
-
-so
-
-\[
-\frac{\psi(2N)}{\psi(N)}\longrightarrow\sqrt2.
-\tag{20}
-\]
-
-Now duplicate the same source channel orthogonally. Because every singular value of `A` appears twice in `A\oplus A`, exactly
-
-\[
-K_{2N}(A\oplus A)=2K_N(A).
-\tag{21}
 \]
 
 Therefore
 
 \[
-\frac{K_{2N}(A\oplus A)}{\psi(2N)}
-\longrightarrow
-\frac{2L}{\sqrt2}
-=
-\sqrt2\,L.
-\tag{22}
+\boxed{\tau(A)=0}
+\tag{8}
 \]
 
-Any generalized limit applied to these already convergent normalized means gives the same value. But a trace `\tau` must satisfy matrix-amplification additivity
+for every singular trace finite on `A`. Equivalently, **the exact linear critical carrier is not singularly traceable**: no scalar singular trace of any kind can assign it a finite nonzero mass.
 
-\[
-\tau(A\oplus A)=2\tau(A)=2L.
-\tag{23}
-\]
-
-Since `\sqrt2 L\ne2L`, the Ky-Fan residue cannot be a trace.
-
-This also removes a normalization loophole. A normalization growing faster than (19) gives zero on `A`; one growing slower gives no finite value. Every normalization producing a finite nonzero source mass has the same `\sqrt2` doubling ratio and fails the same test.
-
-The calculation is the concrete source-specific manifestation of the classical slow-variation boundary in Marcinkiewicz/Dixmier trace theory. No novelty is claimed for that general operator-ideal theorem. What is new here is that the exact Bost--Connes critical linear mode carrier forced by `WP-216`/`WP-227` lands on the **wrong side** of that boundary.
-
-## 3. Squaring repairs amplification but removes the repeated-prime-power tail
-
-For `B_min=A^2`, `WP-228` proves
+Squaring moves to the opposite side of the singular-traceability boundary. From `WP-228`,
 
 \[
 K_N(B_{\min})
-\sim\frac12(\log N)^2.
+:=
+\sum_{n\le N}\mu_n(B_{\min})
+\sim \frac12(\log N)^2,
+\tag{9}
+\]
+
+so `K_{2N}/K_N\to1`; the classical eccentricity criterion therefore confirms that `B_min` *is* singularly traceable. But write
+
+\[
+B_{\min}=B_1\oplus R,
+\tag{10}
+\]
+
+where `B_1` contains only `k=1` prime modes and `R` contains all `k\ge2`. Then
+
+\[
+\operatorname{Tr}R
+=
+\sum_p\frac{(\log p)^2}{p(p-1)}
+<\infty,
+\tag{11}
+\]
+
+and, more sharply,
+
+\[
+\boxed{\mu_n(B_{\min})\sim\mu_n(B_1)\sim\frac{\log n}{n}.}
+\tag{12}
+\]
+
+For any singular trace `\tau` with `\tau(B_{\min})<\infty`, the same asymptotic-comparison argument gives
+
+\[
+\tau(B_{\min})=\tau(B_1).
+\tag{13}
+\]
+
+Since both blocks belong to the ideal generated by `B_min` and `B_{\min}=B_1\oplus R`, additivity now forces
+
+\[
+\boxed{\tau(R)=0.}
+\tag{14}
+\]
+
+Thus **every finite scalar singular trace on the source-forced quadratic bath is blind to the entire repeated-prime-power tower**, not only the standard second-logarithmic Dixmier/Marcinkiewicz residues considered previously.
+
+The fork is now exhaustive inside scalar singular-trace geometry:
+
+\[
+\boxed{
+\begin{array}{c}
+\text{linear critical amplitudes }(\log p)p^{-k/2}\\
+\Downarrow\\
+\text{no finite nonzero singular trace}
+\end{array}}
+\qquad
+\boxed{
+\begin{array}{c}
+\text{positive square }(\log p)^2p^{-k}\\
+\Downarrow\\
+\text{finite singular traces may exist, but all forget }k\ge2
+\end{array}}
+\tag{15}
+\]
+
+This is still not a Weil bridge. It closes the remaining **scalar singular-trace** shortcut left by `WP-228`/`WP-229`. A surviving construction must preserve relational finite-prime data before scalarization — for example through a genuinely nontracial/operator-valued modular weight, active finite--archimedean incidence, a distributional pairing, or another source-forced category change — and must still generate the Gamma and polar sectors and derive the final sign independently of RH or inserted zero data.
+
+## 1. Exact singular-value asymptotics of the linear carrier
+
+For the `k=1` prime sector,
+
+\[
+a_p=\frac{\log p}{\sqrt p}.
+\tag{16}
+\]
+
+If `p_n` is the `n`-th prime, the prime number theorem gives
+
+\[
+p_n\sim n\log n,
+\qquad
+a_{p_n}\sim\sqrt{\frac{\log n}{n}}.
+\tag{17}
+\]
+
+The `k=2` sector has `n`-th prime value
+
+\[
+\frac{\log p_n}{p_n}\sim\frac1n,
+\tag{18}
+\]
+
+which is smaller than the scale in (17). The union of all `k\ge3` sectors is absolutely summable:
+
+\[
+\sum_p\sum_{k\ge3}(\log p)p^{-k/2}<\infty.
+\tag{19}
+\]
+
+At the threshold `a_{p_n}\asymp\sqrt{\log n/n}`, the number of `k=2` values exceeding that threshold is `O(\sqrt{n/\log n})=o(n)`. For the decreasing rearrangement `z_m` of all `k\ge3` values, summability gives `m z_m\to0`; hence the number of those values exceeding the same threshold is also `o(n)`. Thus adding every higher-power sector inserts only `o(n)` entries above the `n`-th prime-mode scale.
+
+The prime-mode sequence in (17) is regularly varying with index `-1/2`, so an `o(n)` rank shift does not alter its asymptotic value. Therefore
+
+\[
+\boxed{
+\mu_n(A)\sim\sqrt{\frac{\log n}{n}}.
+}
+\tag{20}
+\]
+
+Summing (20) recovers the earlier Ky Fan result
+
+\[
+K_N(A)\sim2\sqrt{N\log N}.
+\tag{21}
+\]
+
+The stronger point needed here is the individual asymptotic (20), because it compares orthogonal matrix amplification directly at the operator level.
+
+## 2. Orthogonal doubling excludes every finite nonzero singular trace on `A`
+
+Let `D_A` be the diagonal operator with decreasing diagonal `\mu_n(A)`. By unitary invariance, every trace on an operator ideal has the same value on `A` and `D_A`.
+
+For the orthogonal double,
+
+\[
+\mu_n(A\oplus A)=\mu_{\lceil n/2\rceil}(A),
+\tag{22}
+\]
+
+and (20) yields
+
+\[
+\frac{\mu_n(A\oplus A)}{\mu_n(A)}
+\longrightarrow\sqrt2.
+\tag{23}
+\]
+
+Fix `\varepsilon>0`. After deleting finitely many entries,
+
+\[
+(\sqrt2-\varepsilon)D_A
+\preceq
+D_{A\oplus A}
+\preceq
+(\sqrt2+\varepsilon)D_A.
 \tag{24}
 \]
 
-The corresponding gauge is slowly varying:
+A singular trace vanishes on the deleted finite-rank heads. If it is finite on `A`, positivity and homogeneity therefore give
 
 \[
-\frac{(\log 2N)^2}{(\log N)^2}\longrightarrow1.
+(\sqrt2-\varepsilon)\tau(A)
+\le
+\tau(A\oplus A)
+\le
+(\sqrt2+\varepsilon)\tau(A).
 \tag{25}
 \]
 
-Accordingly, orthogonal doubling now has the trace-compatible leading law
+Letting `\varepsilon\downarrow0` proves (6). Trace additivity on the two orthogonal copies proves (7), hence (8).
+
+This direct argument is stronger than the previous generalized-limit calculation: it makes no assumption that `\tau` is Dixmier, fully symmetric, Marcinkiewicz-normalized, measurable, or generated by a particular gauge. The only inputs are positivity, the trace law, vanishing on finite rank, and the exact source singular-value asymptotic.
+
+As a classical cross-check, for a non-trace-class positive compact operator `T` define
 
 \[
-\frac{K_{2N}(B_{\min}\oplus B_{\min})}{(\log 2N)^2}
-=
-\frac{2K_N(B_{\min})}{(\log 2N)^2}
-\longrightarrow1
-=
-2\cdot\frac12.
+S_N(T)=\sum_{n\le N}\mu_n(T).
 \tag{26}
 \]
 
-So the problem identified in Section 2 really is removed by passing to the positive quadratic companion; it is not a generic objection to singular traces.
-
-However, the same squaring isolates the entire repeated-prime-power tower inside the trace-class remainder (8). For any standard second-logarithmic generalized-limit residue
+The singular-traceability/eccentricity theorem of Varga and Guido--Isola says that `T` admits a singular trace finite and nonzero on `T` exactly when there is a subsequence `N_j` with
 
 \[
-\tau_{\omega,\psi}(T)
-=
-\omega\!\left(
-\frac{K_N(T)}{\psi(N)}
-\right),
-\qquad
-\psi(N)\sim(\log N)^2,
+\frac{S_{2N_j}(T)}{S_{N_j}(T)}\to1.
 \tag{27}
 \]
 
-whenever the usual compatibility assumptions make this a trace, a positive trace-class operator `S` has
+Equation (21) instead gives
 
 \[
-0\le
-\frac{K_N(S)}{\psi(N)}
-\le
-\frac{\operatorname{Tr}S}{\psi(N)}
-\longrightarrow0.
+\frac{S_{2N}(A)}{S_N(A)}\to\sqrt2,
 \tag{28}
 \]
 
-Hence `\tau_{\omega,\psi}(R)=0`. Equations (24) and (8) then give (9) directly. The result is independent of the generalized limit because the normalized means already converge ordinarily.
+so the general theorem independently gives the same classification: `A` is not singularly traceable.
 
-This is stronger than saying the leading coefficient comes from prime density. It says the full `k\ge2` source tower is **exactly null in the singular quotient used by the second-logarithmic residue**.
+## 3. The quadratic bath is singularly traceable but its prime-power tail is asymptotically invisible
 
-## 4. Matched controls show what the singular residue forgets
-
-The first control deletes every repeated prime power while retaining all prime modes:
+For the prime-only block,
 
 \[
-B_{\mathrm{prime}}e_{p,1}
+B_1 e_{p,1}
 =
-\frac{(\log p)^2}{p}e_{p,1},
-\qquad
-B_{\mathrm{prime}}e_{p,k}=0\quad(k\ge2).
+\frac{(\log p)^2}{p}e_{p,1}.
 \tag{29}
 \]
 
-Then
+Again using `p_n\sim n\log n`,
 
 \[
-B_{\min}-B_{\mathrm{prime}}=R\in\mathcal S_1,
+\mu_n(B_1)
+=
+\frac{(\log p_n)^2}{p_n}
+\sim
+\frac{\log n}{n}.
 \tag{30}
 \]
 
-so every residue in (27) gives the same value to the exact source bath and the primes-only control.
-
-More generally, the entire `k\ge2` sector may be replaced by any other positive trace-class diagonal tail without changing the singular residue. Thus this functional cannot distinguish the actual Bost--Connes prime-power tower from infinitely many matched tails once their `k=1` sector is fixed.
-
-The same loss is visible in the source Hamiltonian cutoff of `WP-228`. If
+The repeated-prime-power block `R` in (10) is trace class by (11). If `r_m=\mu_m(R)` is decreasing, summability implies
 
 \[
-R(T)=\sum_{k\log p\le T}(\log p)^2p^{-k}
+m r_m\longrightarrow0.
 \tag{31}
 \]
 
-and `R_1(T)` keeps only `k=1`, then (8) gives
+At the threshold `\mu_n(B_1)\asymp\log n/n`, (31) implies that for every fixed `\varepsilon>0`,
 
 \[
-0\le R(T)-R_1(T)\le\operatorname{Tr}R=O(1),
+r_{\lfloor\varepsilon n\rfloor}
+=
+o(1/n)
+<
+\mu_n(B_1)
 \tag{32}
 \]
 
-while both have leading growth `T^2/2`. The prime-power blindness is therefore not an artifact of ordering eigenvalues by size.
+for large `n`. Hence only `o(n)` values from `R` can be inserted above the `n`-th prime-mode eigenvalue. Since `(\log n)/n` is regularly varying with index `-1`, this `o(n)` rank perturbation is asymptotically negligible, proving (12).
 
-This is a decisive matched control for the research mandate because the finite Weil explicit formula does distinguish every prime power through
+Now let `\tau` be any singular trace with `\tau(B_{\min})<\infty`. After arranging `B_min` and `B_1` diagonally in decreasing order, (12) gives for every `\varepsilon>0`, modulo finite rank,
+
+\[
+(1-\varepsilon)B_1
+\preceq
+B_{\min}
+\preceq
+(1+\varepsilon)B_1.
+\tag{33}
+\]
+
+Positivity, finite-rank singularity, and finiteness imply
+
+\[
+(1-\varepsilon)\tau(B_1)
+\le
+\tau(B_{\min})
+\le
+(1+\varepsilon)\tau(B_1).
+\tag{34}
+\]
+
+Letting `\varepsilon\downarrow0` proves (13), and block additivity gives (14).
+
+This point needs care: **singular traces need not vanish on every trace-class operator in complete generality**. What forces `\tau(R)=0` here is stronger and source-specific: `R` is asymptotically negligible relative to the non-trace-class prime block that already makes `\tau` finite. This is the standard asymptotic-invariance phenomenon for singular traces, here proved directly from (12).
+
+Finally, (9) gives
+
+\[
+\frac{K_{2N}(B_{\min})}{K_N(B_{\min})}\to1.
+\tag{35}
+\]
+
+So `B_min` is eccentric and classical singular-trace theory guarantees the existence of singular traces with
+
+\[
+0<\tau(B_{\min})<\infty.
+\tag{36}
+\]
+
+The blindness result is therefore not vacuous: scalar singular integration really is available on the positive bath, but every such finite integration identifies the exact source bath with its primes-only truncation.
+
+## 4. Matched controls
+
+The first matched control deletes every repeated prime power while leaving the prime modes unchanged. Equations (13)--(14) show that **every** singular trace finite on `B_min` gives exactly the same scalar value to this control.
+
+More generally, replace `R` by any positive trace-class diagonal tail `R'` on an orthogonal source sector and define
+
+\[
+B'=B_1\oplus R'.
+\tag{37}
+\]
+
+The decreasing singular values of `R'` satisfy `m\mu_m(R')\to0`, so the proof of (12) applies unchanged:
+
+\[
+\mu_n(B')\sim\mu_n(B_1)\sim\frac{\log n}{n}.
+\tag{38}
+\]
+
+Thus every singular trace finite on both operators gives
+
+\[
+\tau(B')=\tau(B_1)=\tau(B_{\min}).
+\tag{39}
+\]
+
+The scalar singular geometry therefore cannot distinguish the exact Bost--Connes prime-power tower from an arbitrary positive trace-class replacement once the prime sector is fixed.
+
+This is decisive for the research mandate because the finite Weil explicit formula distinguishes every prime power through
 
 \[
 \frac{\Lambda(p^k)}{\sqrt{p^k}}
 =
 (\log p)p^{-k/2},
 \qquad k\ge1.
-\tag{33}
+\tag{40}
 \]
 
-A scalar singular residue which is unchanged after deleting all `k\ge2` modes cannot itself be the structure that explains the full finite-place Weil term.
+A scalar positive functional that identifies the exact source with the primes-only or arbitrary-tail control cannot itself explain the full finite-place Weil term.
 
-## 5. What remains possible
+## 5. Prior-art and novelty boundary
 
-The theorem does **not** say that the full matched positive block of `WP-227` is useless. Its cross channel `C` still contains every exact coefficient (1). Nor does it exclude a geometry in which a singular weight is only one component of a larger finite--archimedean construction.
+The abstract singular-trace statements are classical. Daniele Guido and Tommaso Isola, *Singular Traces on Semifinite von Neumann Algebras*, Journal of Functional Analysis 134 (1995), 451--485, DOI `10.1006/jfan.1995.1153`, gives the eccentricity characterization in the semifinite setting. Their later *Dimensions and singular traces for spectral triples, with applications to fractals*, Journal of Functional Analysis 203 (2003), 362--400, DOI `10.1016/S0022-1236(03)00230-1`, records the singular-traceability criterion and the invariance of singular traces under asymptotically equivalent eigenvalue sequences. `WP-228` already anchors the broader Marcinkiewicz/Dixmier literature.
 
-The excluded shortcut is narrower and more useful: one cannot obtain the missing global mechanism by simply declaring a Ky-Fan/Marcinkiewicz singular residue of the source mode amplitudes to be the positive arithmetic integral. At the linear level, trace amplification fails. At the quadratic level, trace-compatible normalization is available but the residue has already quotiented out every repeated prime power and squared the desired amplitudes.
+A fresh bounded search around Bost--Connes systems, spectral triples, singular traceability, eccentric operators, Dixmier traces, and generalized Marcinkiewicz traces did not expose a published treatment of the exact critical carrier (1) or the source-specific dichotomy (15). The durable Mathia content is therefore **not** a new singular-trace theorem. It is the exact placement of the `WP-227` source-forced critical amplitudes on the classical boundary:
 
-A surviving route must therefore perform at least one genuinely additional operation **before** the final scalar positive readout: for example, an active finite--archimedean incidence coupling, a modular/semifinite form whose weight is not a Ky-Fan singular residue, a nontracial positive pairing, or a source-forced finite-part construction that retains the trace-class prime-power tail. Any finite part must itself be canonical and pass the sign, Gamma/polar, and matched-control gates; arbitrary subtraction of the leading singular mass is not evidence of Weil positivity.
+- the linear carrier has regular-variation exponent `-1/2`, so orthogonal doubling scales it by `\sqrt2` and every finite scalar singular trace vanishes on it;
+- squaring moves the carrier to the eccentric `(\log n)/n` class, where finite nonzero singular traces exist;
+- the same move makes every repeated-prime-power mode asymptotically negligible to every such finite scalar singular trace.
 
-## 6. Prior-art and novelty boundary
+This materially strengthens the earlier, gauge-specific version of `WP-229`. It remains a negative/narrowing finding and proves no part of RH.
 
-The general relation between Marcinkiewicz gauges, slow variation, fully symmetric functionals, and Dixmier traces is classical operator-ideal theory. `WP-228` already records that prior-art boundary and explicitly refuses to claim a new singular-trace theorem. The matrix-amplification contradiction in Section 2 is an elementary concrete version of the same classical phenomenon.
+## 6. Consequence for the active Bost--Connes completion direction
 
-The Bost--Connes system, its logarithmic Hamiltonian, spectral-triple variants, and noncommutative-geometric approaches to Weil positivity are likewise established prior art already anchored by this line. A bounded literature audit around Bost--Connes spectral triples, generalized Marcinkiewicz/Dixmier traces, and Connes--Consani quantized-calculus/Weil-positivity work did not expose the exact `WP-227` critical mode carrier or the dichotomy (10)--(11) as a published result.
+The scalar singular-weight branch is now closed at the level of arbitrary singular traces, not merely standard Dixmier/Marcinkiewicz residues. A viable Mathia-native completion must act **before** the prime-power relation is collapsed to a scalar singular asymptotic class.
 
-The durable Mathia-specific content is therefore the combination of three exact source facts:
-
-1. the **linear** matched critical channel has `K_N\sim2\sqrt{N\log N}` and fails the orthogonal-doubling law required by any finite nonzero Ky-Fan/Dixmier-style trace normalization;
-2. squaring to the minimal positive companion changes the gauge to the slowly varying `K_N\sim(1/2)(\log N)^2`, so the amplification obstruction disappears;
-3. the same squaring makes every repeated-prime-power contribution trace class, hence invisible to the resulting second-logarithmic singular residue.
-
-This is a negative/narrowing result, not a new global positive form. It proves no part of RH and supplies neither the Gamma factor nor the polar terms.
-
-## 7. Consequence for the active Bost--Connes completion clue
-
-The accepted Bost--Connes completion direction remains open, but its singular-weight branch is narrower than after `WP-228`. A viable source-forced completion cannot rely on a scalar Ky-Fan/Marcinkiewicz residue of `C` or `C^*C` alone. It must preserve the exact linear prime-power data through additional relational structure and only then obtain positivity from a theorem that also generates the archimedean and polar sectors.
-
-The next decisive test is therefore not to search for a different generalized limit on the same critical mode list. It is to exhibit a concrete nontracial/modular or finite--archimedean coupling whose defining law is source-forced before the Weil sign is evaluated, and to show on matched controls that it retains `k\ge2` arithmetic rather than collapsing to the prime-only singular quotient.
+The next live test is therefore a genuinely relational one: construct a source-forced nontracial/operator-valued modular weight, finite--archimedean incidence form, or other positive category change that still distinguishes the `k\ge2` tower under matched controls, and then ask whether that same structure produces the Gamma and polar terms and a global sign theorem. Merely changing the generalized limit, gauge, or scalar singular trace on `A` or `B_min` cannot do so.
