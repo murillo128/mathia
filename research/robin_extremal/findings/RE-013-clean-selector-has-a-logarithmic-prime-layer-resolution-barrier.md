@@ -1,6 +1,6 @@
 # RE-013 — clean selector has a logarithmic prime-layer resolution barrier
 
-**Status:** `LITERATURE+DERIVED + EXACT-DERIVED + FIXED-LAYER-FRONTIER-ASYMPTOTIC + FIXED-DEPTH-NONRESOLUTION + TWO-ADIC-DEPTH-BARRIER + LOGARITHMIC-RESOLUTION-SCALE + EXACT-MAXIMAL-LAYER-DEPTH + DEEP-TAIL-QUANTIZATION + ADDITIVE-UNIT-RESOLUTION + NEGATIVE/OBSTRUCTION + PRIOR-ART-BOUNDED`. `RE-006` shows that a clean regular self-tangent CA local peak is selected inside a prime gap by the exact higher-layer mass
+**Status:** `LITERATURE+DERIVED + EXACT-DERIVED + FIXED-LAYER-FRONTIER-ASYMPTOTIC + FIXED-DEPTH-NONRESOLUTION + TWO-ADIC-DEPTH-BARRIER + LOGARITHMIC-RESOLUTION-SCALE + EXACT-MAXIMAL-LAYER-DEPTH + DEEP-TAIL-QUANTIZATION + ADDITIVE-UNIT-RESOLUTION + LOG-DEPTH-PHASE-PROFILE + SMALL-PRIME-TOWER-DECOMPOSITION + NEGATIVE/OBSTRUCTION + PRIOR-ART-BOUNDED`. `RE-006` shows that a clean regular self-tangent CA local peak is selected inside a prime gap by the exact higher-layer mass
 
 \[
 \Phi_{\ge2}(X)
@@ -359,30 +359,177 @@ J_{\min,\varepsilon}(X)
 
 Here `X` is large enough that the right side exceeds `J_X`; for fixed `epsilon` this follows from `J_*(X)-J_X~log_2log X`. Thus `O(1)` additive accuracy costs the additional `log_2log X` layer depth hidden by the coarse `J_X` boundary. If `epsilon<log2`, (28) gives `J_min=J_*`, so the truncation is already exact. This proves (10)--(11).
 
-## 5. Why this matters after the local-jet closure
+## 5. Every logarithmic depth has a finite small-prime phase profile
+
+The transition from fixed depth to the `2`-adic endpoint is not diffuse. At any depth proportional to `log X`, the omitted selector mass is asymptotically carried by only finitely many fixed prime towers, and its leading coefficient can be written exactly.
+
+For each prime `r`, let
+
+\[
+L_r(X):=\max\{j\ge1:\eta_{r,j}\le X\},
+\]
+
+with `L_r(X)=0` when no layer of `r` is active. Put
+
+\[
+a_r(X):=\frac{\log r}{X\log X}.
+\]
+
+Using (25), the layer `j` is active if and only if
+
+\[
+r+r^2+\cdots+r^j
+\le\frac1{e^{a_r(X)}-1}.
+\]
+
+Since `r+...+r^j=r(r^j-1)/(r-1)`, this gives the exact per-prime depth
+
+\[
+\boxed{
+L_r(X)
+=
+\left\lfloor
+\log_r\!\left(
+1+\frac{r-1}{r\bigl(e^{a_r(X)}-1\bigr)}
+\right)
+\right\rfloor.
+}
+\tag{29}
+\]
+
+For `r=2`, (29) is exactly the formula for `J_*(X)` in (6). More generally, for every integer `J>=1`, counting the omitted active layers prime by prime gives the exact identity
+
+\[
+\boxed{
+R_J(X)
+=\sum_{r\ \mathrm{prime}}
+\bigl(L_r(X)-J\bigr)_+\log r.
+}
+\tag{30}
+\]
+
+For each fixed prime `r`, expansion of `1/(e^{a_r}-1)` in (29) yields
+
+\[
+\boxed{
+L_r(X)\log r
+=\log X+\log\log X+O_r(1).
+}
+\tag{31}
+\]
+
+Now fix a constant `c>0` and truncate at
+
+\[
+J_c(X):=\lfloor c\log X\rfloor.
+\]
+
+If a prime `r` contributes to `R_(J_c)`, then layer `J_c+1` is active, so (24) gives
+
+\[
+(J_c+1)\log r+\log\log r
+\le\log X+\log\log X.
+\]
+
+Hence every contributing prime satisfies
+
+\[
+\log r\le\frac1c+o(1).
+\]
+
+The support of (30) therefore stabilizes inside a **finite set of small primes** depending only on `c`. For each such fixed prime, (31) gives three cases: if `c log r<1`, its contribution is
+
+\[
+(1-c\log r)\log X+\log\log X+O_{c,r}(1);
+\]
+
+if `c log r=1`, its contribution is `log log X+O_r(1)`; and if `c log r>1`, it eventually contributes nothing.
+
+Define
+
+\[
+F(c):=\sum_{r\ \mathrm{prime}}(1-c\log r)_+,
+\qquad
+N(c):=\pi\!\left(e^{1/c}\right).
+\]
+
+The sum defining `F(c)` is finite. Summing the stabilized primewise contributions gives the full logarithmic-depth phase law
+
+\[
+\boxed{
+R_{J_c(X)}(X)
+=F(c)\log X+N(c)\log\log X+O_c(1).
+}
+\tag{32}
+\]
+
+In particular,
+
+\[
+\boxed{
+\frac{R_{J_c(X)}(X)}{\log X}
+\longrightarrow
+F(c).
+}
+\tag{33}
+\]
+
+The function `F` is piecewise linear with breakpoints `c=1/log r` at the primes. Since `2` is the smallest prime,
+
+\[
+F(c)=0
+\quad\Longleftrightarrow\quad
+c\ge\frac1{\log2}.
+\]
+
+For `c>1/log2`, the truncation is eventually deeper than every active layer and `R_(J_c)=0`. At the critical value `c=1/log2`, (32) gives
+
+\[
+R_{J_c}(X)=\log\log X+O(1),
+\]
+
+recovering (9). In the first subcritical phase,
+
+\[
+\boxed{
+\frac1{\log3}<c<\frac1{\log2}
+\quad\Longrightarrow\quad
+R_{J_c(X)}(X)
+=(1-c\log2)\log X+\log\log X+O_c(1),
+}
+\tag{34}
+\]
+
+so the earlier `2`-adic lower bound is actually the complete leading asymptotic there. As `c` decreases through `1/log3,1/log5,...`, one additional fixed prime tower enters the omitted-mass phase profile.
+
+No prime number theorem is used in (29)--(34). The phase law comes only from the exact CA threshold and the elementary active-layer bound (24). It complements, rather than strengthens, the fixed-layer polynomial asymptotics of Section 1.
+
+## 6. Why this matters after the local-jet closure
 
 `RE-012` proves that once the exact selector `(X,Phi_(>=2)(X))` is known, the entire smooth mixed-race profile inside the surrounding prime-free chamber is determined by one value `mathscr Y(X)` plus that selector. A natural compression attempt is therefore to replace the exact higher-layer mass by a finite layer expansion and hope that local value/slope data repairs the missing correction.
 
 Equations (4) and (21) rule this out at fixed or subcritical depth: the missing selector mass is at least as large as the complete logarithmic clean-peak window. Equation (9) gives the first useful positive boundary: depth `J_X~log_2X` reduces the error to `log log X+O(1)`, which is enough for some coarse mean-gap-scale questions but not for exact self-tangency.
 
+The phase law (32) makes the transition to that boundary exact. At depth `c log X`, the omitted logarithmic-scale mass is not spread over an expanding collection of medium or large primes; it is carried by the finite set `r<=e^(1/c)`, with each small-prime tower entering at its own breakpoint. Thus the obstruction to a shallow selector is specifically **deep small-prime exponent information**, not unresolved prime-frontier mass. This also shows that the threshold `c=1/log2` for `o(log X)` error is sharp from both sides, rather than only through the one-prime lower bound (22).
+
 The exact deep-tail law (8) closes the remaining additive-resolution ambiguity. To make the selector error bounded one must retain essentially all layers through the global maximum, missing only `O(1)` of them. To make the error `o(1)` one eventually cannot omit even one active deep layer. Thus a depth-truncated selector has no smoothly improving subunit regime: its final uncertainty arrives in indivisible quanta of `log2`.
 
 The second-layer normal form of `RE-007` remains useful at square-root scale, where all higher layers are lower order. The present result says only that the same finite-depth approximation cannot later be reused as though it were accurate on logarithmic or additive-unit selector scales.
 
-## 6. Prior art and novelty boundary
+## 7. Prior art and novelty boundary
 
-The individual ingredients are classical or already represented in this line's sources. Alaoglu--Erdos supplies the CA exponent-threshold framework; the exact event normalization and prime-layer workload are closest to Mantovanelli's August 2026 preprint; the prime number theorem converts a fixed layer's boundary prime into its weighted mass. No novelty is claimed for the existence of many exponent layers, for classical CA exponent asymptotics, or for the square-root prime frontier.
+The individual ingredients are classical or already represented in this line's sources. Alaoglu--Erdos supplies the CA exponent-threshold framework; in particular, their Theorem 10 already gives the exact prime exponent as a floor expression in the CA parameter. Equation (29) is the same threshold content rewritten in the present event coordinate `epsilon_X=1/(X log X)`, not a new exponent formula. The exact event normalization and prime-layer workload are closest to Mantovanelli's August 2026 preprint; the prime number theorem converts a fixed layer's boundary prime into its weighted mass. No novelty is claimed for the existence of many exponent layers, for classical CA exponent asymptotics, or for the square-root prime frontier.
 
-A targeted audit of the current CA/Robin source record and the public Mantovanelli companion did not identify the specific selector-resolution statements proved here: fixed depth cannot reach the logarithmic window; depth `J_X~log_2X` leaves exactly a `log log X+O(1)` deep tail; the prime `2` is the exact maximal active layer; and the remaining tail above `J_X` is quantized as (8), making sub-`log2` accuracy equivalent to exact depth recovery. These are elementary consequences once the exact event representation is admitted and should be read as Mathia-specific selector bookkeeping, not as a blanket novelty claim about colossally abundant numbers.
+A targeted audit of the current CA/Robin source record, Alaoglu--Erdos's exact exponent formula, and the public Mantovanelli companion did not identify the specific **selector truncation** statements proved here: fixed depth cannot reach the logarithmic window; logarithmic depth has the finite small-prime phase profile (32); depth `J_X~log_2X` leaves exactly a `log log X+O(1)` deep tail; the prime `2` is the exact maximal active layer; and the remaining tail above `J_X` is quantized as (8), making sub-`log2` accuracy equivalent to exact depth recovery. The public Mantovanelli companion describes finite prime-frontier decompositions and certificates, not an asymptotic depth-truncation theorem. These results are elementary consequences once the exact event representation is admitted and should be read as Mathia-specific selector bookkeeping, not as a blanket novelty claim about colossally abundant numbers.
 
-No new source anchor is required. All non-elementary inputs are already recorded in `SOURCES.md`; equations (25)--(28) are elementary consequences of the exact layer threshold.
+No new source anchor is required. All non-elementary inputs are already recorded in `SOURCES.md`; equations (25)--(34) are elementary consequences of the exact layer threshold, and the new logarithmic-depth phase law does not require the prime number theorem.
 
-## 7. Falsification boundaries and research consequence
+## 8. Falsification boundaries and research consequence
 
-Several quantifiers are load-bearing. Equation (3) is a fixed-layer asymptotic and must not be used with `j~log X`; the growing-depth results use only exact event inequalities. The exact tail formula (8) applies in the sufficiently deep regime `J>=J_X` and for sufficiently large `X`, after Section 3 has eliminated every prime `r>=3` from deeper layers. It does not say that prime `2` dominates the selector at shallow depths.
+Several quantifiers are load-bearing. Equation (3) is a fixed-layer asymptotic and must not be used with `j~log X`; the growing-depth results use only exact event inequalities. The phase law (32) holds for **fixed** `c>0`; its `O_c(1)` remainder is not asserted uniformly when `c=c(X)` moves through infinitely many prime breakpoints. The exact tail formula (8) applies in the sufficiently deep regime `J>=J_X` and for sufficiently large `X`, after Section 3 has eliminated every prime `r>=3` from deeper layers. It does not say that prime `2` dominates the selector at shallow depths.
 
 The additive quantization is specific to **layer-depth truncation**. It does not rule out a different compressed representation of the exact selector, nor an independent arithmetic theorem that controls discarded layers without enumerating them. Likewise, `o(1)` in (11) concerns selector mass, not the selected mixed-race value or the Robin height.
 
 Most importantly, this finding does not bound the selected mixed race `mathscr Y`, prove that high mixed-race values avoid self-tangent coordinates, or control the exceptional higher-layer/tied boundary chamber of `RE-004`. It therefore does not prove Robin's inequality or RH.
 
-Its durable effect is to close the finite-layer compression hierarchy after `RE-012`. The nonlocal CA selector is genuinely multiscale: fixed depth fails at logarithmic resolution, `Theta(log X)` depth reaches `o(log X)`, and additive-unit resolution requires the sharper depth `log_2X+log_2log X+O(1)`, with subunit accuracy collapsing to exact recovery. A future selected-race theorem may use a compressed selector only if it carries this growing-depth information or supplies an independent theorem controlling what was discarded.
+Its durable effect is to close the finite-layer compression hierarchy after `RE-012`. The nonlocal CA selector is genuinely multiscale: fixed depth fails at logarithmic resolution; every logarithmic depth has the explicit small-prime phase profile (32); the sharp threshold `c=1/log2` reaches `o(log X)`; and additive-unit resolution requires the sharper depth `log_2X+log_2log X+O(1)`, with subunit accuracy collapsing to exact recovery. A future selected-race theorem may use a compressed selector only if it carries this growing-depth information or supplies an independent theorem controlling what was discarded.
