@@ -102,7 +102,7 @@ For each fixed `n` the series is absolutely convergent, since its summand is `O(
 D=n+\sigma+\tau.
 \]
 
-When `D ne 0`, the exact partial fraction identity
+When `D != 0`, the exact partial fraction identity
 
 \[
 \frac1{(k+\sigma)(n-k+\tau)}
@@ -163,7 +163,7 @@ The only resonance is
 \qquad n=-1.
 \]
 
-For every `n ne -1`, equation (11) applies and its numerator vanishes because
+For every `n != -1`, equation (11) applies and its numerator vanishes because
 
 \[
 \cot(\pi(1-\sigma))=-\cot(\pi\sigma).
@@ -211,9 +211,51 @@ Both behaviors are universal shifted-Cauchy identities; neither depends on prima
 
 ## 5. The finite cyclic operation has the same local limit
 
-The convolution identity is relevant to an operation performed **before** taking the fixed-base packet limit, not only to an abstract operation introduced afterwards. PC-227 supplies `ell^2` convergence of the packet-identified finite vectors. For a fixed output offset `n`, the cyclic convolution coefficient is an `ell^2` pairing of one packet vector with a fixed translated/reflected copy of the other. After embedding the centered cyclic coordinate into `Z`, fixed translations converge to the bilateral translation; the wrap-around discrepancy lies in the `ell^2` tails, whose norm tends to zero.
+The convolution identity is relevant to an operation performed **before** taking the fixed-base packet limit, not only to an abstract operation introduced afterwards. The local packet coordinate is itself an affine coordinate on the fresh cyclic fiber. In the notation of PC-227, a packet around the primitive root `alpha_t=zeta_N^t` has
 
-Therefore, by Cauchy--Schwarz,
+\[
+z_{t,j}^{(q)}
+=\alpha_t\exp\!\left(\frac{2\pi i}{q}(j+\sigma)\right),
+\qquad
+\sigma=\frac{s}{N},
+\tag{16}
+\]
+
+while `z=zeta_{Nq}^{qu-k}`. Equating exponents gives the exact congruence
+
+\[
+\boxed{
+k_{t,j}^{(q)}
+\equiv
+q(u-t)-Nj-s
+\pmod{Nq}.
+}
+\tag{17}
+\]
+
+Thus within every packet sector, `j` is an affine coordinate on the `q`-fiber, with slope `-N`, a unit modulo the fresh prime `q`. If two packet sectors with integer shift numerators `s_1,s_2` are combined by cyclic convolution, their Fourier labels add as
+
+\[
+k_1+k_2
+\equiv
+q(u_1-t_1+u_2-t_2)
+-N(j_1+j_2)
+-(s_1+s_2)
+\pmod{Nq}.
+\tag{18}
+\]
+
+Writing
+
+\[
+s_1+s_2=s_0+cN,
+\qquad 0\le s_0<N,
+\tag{19}
+\]
+
+shows at finite `q` that the output packet coordinate is `j_1+j_2+c` and its fractional shift is exactly `s_0/N`. This is the finite cyclic origin of the shift-addition law modulo `1` in (11)--(13); no asymptotic coordinate choice inserts it by hand.
+
+PC-227 supplies `ell^2` convergence of the packet-identified finite vectors. For a fixed output offset `n`, the cyclic convolution coefficient on a fixed pair of sectors is an `ell^2` pairing of one packet vector with a fixed translated/reflected copy of the other. After embedding the centered cyclic coordinate into `Z`, fixed translations converge to bilateral translations; the wrap-around discrepancy lies in the `ell^2` tails, whose norm tends to zero. Therefore Cauchy--Schwarz gives
 
 \[
 \boxed{
@@ -221,12 +263,12 @@ Therefore, by Cauchy--Schwarz,
 \longrightarrow
 (x*y)(n)
 }
-\tag{16}
+\tag{20}
 \]
 
-on every fixed pair of packet sectors and every fixed local output coordinate. Since a PC-227 column has only finitely many packet sectors at fixed `N`, bilinearity leaves only finitely many pairwise sums of their rational shifts. The finite fresh-prime cyclic product thus has no hidden local limit beyond (11)--(13).
+for every fixed local output coordinate. Since a PC-227 column has only finitely many packet sectors at fixed `N`, bilinearity leaves only finitely many pairwise sums of their rational shifts. The finite fresh-prime cyclic product thus has no hidden local limit beyond (11)--(13).
 
-Equation (16) is intentionally a fixed-local-coordinate statement. No claim is made here that arbitrary nonlinear operation depth is uniformly bounded in a simultaneously growing conductor regime.
+Equation (20) is intentionally a fixed-local-coordinate statement. No claim is made here that arbitrary nonlinear operation depth is uniformly bounded in a simultaneously growing conductor regime.
 
 ## 6. Prior art and novelty boundary
 
