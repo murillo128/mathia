@@ -1,7 +1,7 @@
 ---
 id: CLUE-visible-semigroup-defect-controls-section-enrichment
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -147,3 +147,21 @@ Reviewed source snapshot: 1419fd4a827311a17696b125fd885fe0b8e2f312. Publication 
 The unscaled form of (1) was checked with exact rational fractional parts for m=2,...,8, j=2,...,12 and x=1/(n+1/3), n=1,...,70: all 5,390 checks agreed. The operator/projector argument (3)--(7) is supplied for independent verification. No actual residual Gram computation, visibility lower bound, improved frame bound, repository-wide test suite or Lean build was executed.
 
 No novelty claim is made for nested Galerkin projection, frame estimates, or the elementary dilation identity. The proposed delta is the source-faithful separation of total defect from the part that certifies actual section improvement after NB-013. If already covered by a local enrichment certificate, close as duplicate. If every proposed visibility estimate imports closure or loses all gain in the frame cost, record that precise failure and stop rather than introducing more positive channels under another name.
+
+## Research disposition
+
+Accepted. `NB-014` independently verifies the exact section-enrichment conversion and shows that the question is mathematically live but must be stated more carefully. For a fixed even probe depth `M`, any `N`-uniform positive visibility fraction
+
+\[
+\mathcal J_{N,M}\ge\eta_M\mathcal E_M(r_N),\qquad \eta_M>0,
+\]
+
+already forces the limiting distance to satisfy
+
+\[
+d_\infty\le\frac1{\sqrt M(\log2-1/M)}.
+\]
+
+Therefore such positive fixed-depth visibility bounds for an unbounded sequence of `M` values would imply `d_infinity=0`, hence RH. `NB-014` also proves that the full frame norm is exactly `M-1` whenever `lcm(2,...,M)<=N`, so the crude denominator cannot be generically improved by replacing it with `||F_(N,M)||`.
+
+The unresolved question is the genuinely scale-coupled one: prove or falsify an **N-dependent**, source-controlled visibility estimate together with the residual-relevant compressed frame cost on `V_(MN)\ominus V_N` at scales where `NB-010` or `NB-011` force semigroup defect. Such an estimate must yield a quantitative distance decrement without assuming density of the trial spaces. The clue is accepted because this remaining test is precise, lies outside `NB-013`'s fixed-section PSD obstruction, and now has explicit closure-strength and frame-overlap controls rather than an uncalibrated positive-fraction target.
