@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-cross-level-mixed-conductor-information-gain
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_circle
 based_on:
@@ -40,3 +40,14 @@ The global snapshot is producer-side motivation, not a new cross-line read grant
 ## Evidence boundary
 
 No new collective operation, normalized information gain, or RH implication is proved. This question is distinct from the already-resolved fixed-level Hessian clue and must not reopen that clue merely under new terminology. The proposed pause is not a settled assessment, and no lifecycle, mandate, or scheduled-task change is authorized by this handoff.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/prime_circle/findings/PC-223-repeated-mangoldt-axis-words-are-blind-to-middle-conductor-data.md]]
+
+The most canonical source-forced candidate left open by PC-222 was tested at the family level: alternate the cyclotomic mask with the common-anchor Mangoldt selector and allow arbitrary noncommuting depth before returning to the top exact-order sector. PC-223 proves that every such response factors through the prime-axis space `direct sum_{p|N} E_p`, samples only conductor orders `1`, `p`, `pq`, `N/p`, and `N`, and is exactly blind to the middle mixed-conductor sectors once `omega(N)>=5`. A norm-preserving matched control can change those omitted sectors while preserving every repeated response at every depth.
+
+Accordingly this repeated-Mangoldt family does not provide the requested information-gain survivor and does not supply evidence against the proposed pause. This is a proved family-level obstruction, not an exhaustive no-go for Prime Circle: genuinely cross-level maps that retain mixed-conductor intermediate sectors, rather than reprojecting through the scalar prime-primary selector after every mask, remain outside PC-223.
