@@ -1,0 +1,64 @@
+name: One-off read-only graph topology audit
+on:
+  push:
+    branches: [codex/graph-topology-audit-2b61065]
+    paths: [.github/workflows/graph-topology-audit-once.yml]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 2b610652fd76598b46be1d065f4798a20275dfba
+          persist-credentials: false
+      - name: Inventory tracked text and incoming references
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, re, subprocess, zipfile
+          root = pathlib.Path.cwd()
+          raw = subprocess.check_output(['git', 'ls-tree', '-r', '-z', 'HEAD'])
+          tree = {}
+          texts = {}
+          for record in raw.split(b'\0'):
+              if not record:
+                  continue
+              meta, raw_path = record.split(b'\t', 1)
+              mode, kind, sha = meta.decode().split()
+              path = raw_path.decode('utf-8')
+              tree[path] = {'mode': mode, 'type': kind, 'sha': sha}
+              if kind != 'blob' or mode not in ('100644', '100755'):
+                  continue
+              data = (root / path).read_bytes()
+              try:
+                  text = data.decode('utf-8')
+              except UnicodeDecodeError:
+                  continue
+              if '\0' not in text:
+                  texts[path] = text
+          candidates = sorted(p for p in texts if '/graph/' in p and p.endswith('.md') and re.match(r'(?:current-(?:frontier|window)-|frontier-membership)', pathlib.PurePosixPath(p).name))
+          refs = []
+          for path, text in texts.items():
+              for i, line in enumerate(text.splitlines(), 1):
+                  hits = sorted({pathlib.PurePosixPath(p).stem for p in candidates if pathlib.PurePosixPath(p).stem in line})
+                  if hits:
+                      refs.append({'path': path, 'line': i, 'candidates': hits, 'text': line})
+          report = {'source': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(), 'tracked_files': len(tree), 'text_files': len(texts), 'candidates': candidates, 'incoming_mentions': refs}
+          out = pathlib.Path('/tmp/mathia-topology-audit')
+          out.mkdir(exist_ok=True)
+          (out / 'inbound-audit.json').write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
+          with zipfile.ZipFile(out / 'tracked-text.zip', 'w', zipfile.ZIP_DEFLATED) as z:
+              z.writestr('__git_tree__.json', json.dumps(tree, sort_keys=True))
+              for path, text in sorted(texts.items()):
+                  z.writestr(path, text.encode('utf-8'))
+          print(json.dumps(report, indent=2, ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graph-topology-audit-2b61065
+          path: /tmp/mathia-topology-audit/
+          retention-days: 1
+          if-no-files-found: error
