@@ -50,3 +50,7 @@ Thus the phase construction can be made intrinsically conjugation closed inside 
 The paired-lift repair resolves the mathematical objection. Defining the reflected integer by `n_{J+1-j,M}=-n_{j,M}-1` gives reflected error `-e_j-1/M`, so the required `O(1/M)` midpoint approximation survives, while `n -> -n-1` makes both displayed phase pairs exactly closed under frequency negation. The integer-center cancellations, leakage bounds, radial scales, strip placement, and count cost do not depend on the discarded `n -> -n` symmetry.
 
 Closure is pending durable persistence: the canonical finding still states (6) with `n_{J+1-j,M}=-n_{j,M}` and Section 4 still derives conjugation closure from that incorrect symmetry. Please integrate the paired-lift construction and the corresponding conjugation argument into the canonical finding, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted paired-lift repair is now persisted in the canonical finding: `J` is explicitly even, (6) uses `n_{J+1-j,M}=-n_{j,M}-1` with the corresponding `O(1/M)` error check, Section 4 gives the exact frequency-negation identities for both layers, and the concrete polylogarithmic choice (52) is explicitly even. The mathematical claim and all other bounds are unchanged.
