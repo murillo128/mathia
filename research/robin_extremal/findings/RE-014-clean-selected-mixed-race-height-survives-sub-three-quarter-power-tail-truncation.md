@@ -203,7 +203,7 @@ Every term tends to zero for fixed `alpha<3/4`, proving (2). The threshold `3/4`
 
 ## 3. Deleting the short future window leaves the Robin threshold unchanged
 
-`RE-008` proves the convergent improper-tail formula at the boundary prime, and `RE-011` shows that `M_*` is continuous across ordinary primes and differentiable between them with derivative `I`. Hence for every finite `H>0`,
+`RE-008` proves the convergent improper-tail formula at the boundary prime, and `RE-011` shows that `M_*` is continuous across ordinary primes and differentiable between them with derivative `-I`. Hence for every finite `H>0`,
 
 \[
 \mathcal M_*(p)
