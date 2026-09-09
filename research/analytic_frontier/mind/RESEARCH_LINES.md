@@ -10,16 +10,14 @@ ANF-134--ANF-143 progressively remove raw depth, span, slack-spend, coefficient-
 
 The live gate is therefore whether the resulting positive cascade is **fatal for the source near-extremizer rather than removable as negligible mass**. A useful theorem must quantify source energy/coherence carried by the late cloud or prove that the cloud can always be excised while preserving the source objective.
 
-## Estimate the prime--Ramanujan bow correlation before componentwise absolute values
+## Prove source-specific near-nullspace alignment for the post-sieve bow innovation
 
 **Linked intuition:** `MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist`.
 
-ANF-144--ANF-148 close successively stronger source-blind escapes. Generic twist averaging is sharp at scale `X`; the available componentwise type-II architecture misses one full factor `K`; arbitrary moving-window coherence spans the whole allowed range; and the same ambiguity survives real coefficients, the exact logarithmic carrier, actual prime support, prime density, coefficient size, and the correct diagonal scale.
+ANF-144--ANF-149 reduce the bow to the source-selected twisted variance of `vartheta-Lambda^sharp` after support, reality, magnitude, prime-power, and generic coherence controls. ANF-150--ANF-151 then show that matched post-sieve controls can reproduce the finite Ramanujan pair profile, the correct conditional density, and even a growing truncated Hardy--Littlewood local hierarchy while the bow variance remains of diagonal order.
 
-ANF-149 then gives the current source normal form. Prime powers are negligible in the bow seminorm, so the target is equivalent to the variance of `vartheta-Lambda^sharp`. The rough term `Lambda^sharp` has an exact finite Ramanujan expansion whose complete-period two-point correlation already matches the truncated Hardy--Littlewood singular-series structure at bow lags. The live theorem must therefore retain the **combined twisted correlation error between the positive prime field and its deterministic small-prime Ramanujan counterterm** before triangle inequalities or componentwise mean square erase the cancellation.
+ANF-152 gives the exact destination-space formulation: the normalized post-sieve innovation must asymptotically concentrate in the near-nullspace of the moving-window Gram operator. Any fixed fraction of innovation energy retained above a positive spectral level leaves a diagonal-size residue. The live theorem is therefore a source-specific mechanism forcing this spectral alignment, or a quantitative delocalization theorem that closes the route.
 
-## Treat support, magnitude, reality, prime location, and generic twist geometry as controls
+## Treat local singular-series agreement and source-blind geometry as controls
 
-Positive residual slack excludes fixed exponential pinching losses, slow diagonalization absorbs finite local conditioning costs, and super-`X` twist averaging cannot decide the source-selected bow. ANF-147--ANF-148 add that reality and actual prime support do not restore coercivity when the coefficient law remains free.
-
-A new bow estimate must use the actual arithmetic amplitude/sign law or an equivalent source relation. Repackaging support geometry, prime sparsity, coefficient magnitudes, or the exact carrier without exploiting the prime--rough inclusion--exclusion is now a matched control.
+Support, coefficient magnitude, reality, actual prime location, generic twist geometry, finite Ramanujan matching, and a growing local Hardy--Littlewood hierarchy are all compatible with failure of the bow target in the current controls. A new estimate must use the signed distinguished-twist source relation in the destination quadratic form itself; componentwise absolute values or scalar local-variance surrogates erase the needed cancellation.

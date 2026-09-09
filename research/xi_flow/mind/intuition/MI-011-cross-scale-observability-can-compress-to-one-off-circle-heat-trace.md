@@ -1,35 +1,35 @@
-# MI-011 — Exact heat-trace identification can be arbitrarily local while transition transport remains superexponentially unstable
+# MI-011 — Exact heat-trace identification can be arbitrarily local while transition transport requires antipodal-scale visibility
 
-**Evidence level:** exact state-identification and transition-conditioning boundaries through XF-145
+**Evidence level:** exact state-identification and transition-conditioning boundaries through XF-148
 
 ## Core intuition
 
-The periodic polynomial state is algebraically easy to identify compared with the de Bruijn--Newman transition parameter. One off-circle trace, two nearby real traces, or even one arbitrarily short moving real scan can determine every coefficient exactly at fixed degree. This does not imply stable transport to `Lambda_per`.
+The periodic polynomial state is algebraically easy to identify compared with the de Bruijn--Newman transition parameter. One off-circle trace, two nearby real traces, or one arbitrarily short moving real scan can determine the state exactly. None of that controls the modulus of `Lambda_per`.
 
-The decisive distinction is now quantitative: **state identifiability has essentially zero geometric threshold, while transition conditioning has a source-dependent time/scale threshold**. Central matched packets can hide an order-one transition shift superexponentially even from the complete root-spacing real observation tube over short heat windows.
+The current matched family gives a geometric version of the distinction. Complete future observation on any fixed proper centered real aperture remains exponentially transition-blind. Even sparse or disconnected nonlocal linear sensing with polynomially bounded count and weight cannot aggregate away the loss unless its spatial support actually enters a shrinking neighborhood of the antipode.
 
 ## Strongest justified principle
 
-XF-130 gives exact one-channel periodic reconstruction. XF-131--XF-140 progressively show that zero-delay exterior data and even full degree-order spatial jets can be exponentially transition-blind. XF-141 constructs maximal central packets with exact transition-time separation, and XF-142 proves that instantaneous time derivatives add no independent axis because the gauged local trace satisfies the ordinary heat equation.
+XF-143--XF-144 prove essentially zero geometric threshold for exact state identifiability. XF-145 shows superexponential transition blindness on root-spacing tubes over short heat windows. XF-146 extends the central packet obstruction through the full future history of that tube.
 
-XF-143 shows that two real heat histories separated by only half a mean root spacing recover every Vieta coefficient for an arbitrary degree-`N` state; the reflected-pair inverse costs `O(N)`. XF-144 lowers the exact interface further: a single real probe moving at any nonzero speed makes all heat exponents distinct, so arbitrarily small total travel is injective. The elementary reflected-pair condition number is at least `Omega(L/D)` for travel `D`.
+XF-147 derives the fixed-aperture law: every centered interval omitting a nonzero antipodal neighborhood has an exponentially bad transition modulus for all future heat time. The obstruction stops forcing superpolynomial conditioning only when the unobserved antipodal gap shrinks to `O(L sqrt(log N/N))`.
 
-XF-145 then restores the target distinction. For the transition-sharp central packet, the complete real tube `|x|<=CL/N`, `0<=s<=S_N` remains `e^{-omega(N)}`-close whenever `NaS_N->0`, despite an order-one difference in `Lambda_per`. For `S_N<=A/(aN^{1+epsilon})`, the inverse transition condition number is at least `exp(gamma_epsilon N log N-O(N))`. Restricting to any moving scan cannot improve this because it sees less than the whole tube.
+XF-148 shows that this is a support-reach phenomenon, not a connected-scan artifact. Arbitrary predetermined sparse/disconnected space-time supports and polynomially normalized finite-measure sensors inherit the same exponential ceiling according to their nearest antipodal reach. For the matched pair the threshold is sharp at the raw-trace level when the initial slice is sampled.
 
 ## Program consequence
 
-Do not optimize exact coefficient recovery further unless it changes the transition modulus. The next useful observation must use an independent heat-time scale, a transition-adapted quotient, a nonlocal geometry, or a source theorem that rules out the matched central packets. State dimension and injectivity are no longer informative proxies.
+Do not optimize injective state recovery or add more sensors away from the visibility layer. The next target-side theorem must show source-faithful access to the near-antipodal layer with controlled normalization, or the source side must prove that Xi excludes the maximal-contact matched packet or an equivalent transition-sharp family.
 
-A proposed decoder should state its norm, observation window, source restriction, and quantitative inverse modulus for `Lambda_per` itself.
+A proposed decoder should state its observation support, sensor norm/normalization, source restriction, and inverse modulus for `Lambda_per` itself.
 
 ## Counterevidence / boundary
 
-XF-145 treats root-spacing spatial tubes and sub-inverse-degree heat windows. It does not rule out windows at scale `1/N` or larger, global/nonlocal observations, or source-specific constraints excluding the matched controls. Exact identification by moving probes remains true and may become useful if combined with such additional structure.
+Near-antipodal access is only the point where this adversary ceases to force superpolynomial instability; it is not a stable reconstruction theorem for `Lambda_per`. The results concern raw real heat traces and polynomially normalized finite-measure linear sensors. Derivative/distributional or data-adaptive observation models require separate analysis.
 
 ## Epistemic status
 
-**Exact algebraic identifiability together with exact superexponential short-time transition blindness; a stable source-to-transition observable remains open.**
+**Exact algebraic identifiability together with exact all-future geometric transition-conditioning barriers; a stable source-to-transition observable remains open.**
 
 ## Falsification criterion
 
-Produce a uniformly stable `Lambda_per` decoder on the XF-145 matched family from the stated short-time root-spacing tube, or invalidate its central-packet bound. A positive continuation should cross the time/geometry/source boundary rather than merely add another injective state representation.
+Construct a polynomially conditioned `Lambda_per` decoder for the XF-148 matched pair whose predetermined polynomially normalized support stays farther than `omega(L sqrt(log N/N))` from the antipode, or invalidate the exact pointwise envelope. A positive continuation should instead cross the derived support/source boundary.

@@ -1,35 +1,31 @@
-# MI-007 — Bow variance is now a prime--Ramanujan coherence problem at the distinguished twist
+# MI-007 — Bow cancellation requires source-specific near-nullspace alignment at the distinguished twist
 
-**Evidence level:** exact moving-window controls and source-normal-form reductions through ANF-149
+**Evidence level:** exact post-sieve normal forms, matched local-statistics controls, and Gram/Rayleigh reduction through ANF-152
 
 ## Core intuition
 
-The analytic bow is no longer a generic localization, support, sparsity, or coefficient-magnitude problem. The full factor-`K` coherence freedom survives real coefficients, the exact logarithmic carrier, and even support on the actual prime locus. What remains source-specific is the coefficient law itself.
+The analytic bow is no longer plausibly explained by generic prime randomness, correct local density, or a finite list of singular-series correlations. After the known local structure is conditioned away, the surviving arithmetic innovation must be organized relative to the **specific moving-window Gram geometry selected by the bow**.
 
-ANF-149 sharpens that law to a useful normal form: prime powers are negligible at bow scale, so the target is equivalent to the twisted moving-window variance of `vartheta-Lambda^sharp`, a positive prime field against a deterministic finite-Ramanujan rough counterterm. The decisive information must therefore live in their **joint arithmetic correlation before cancellation is separated into pieces**.
+The sharp formulation is spectral. Small bow energy requires the normalized post-sieve innovation to concentrate asymptotically in directions whose Gram eigenvalues collapse. Ordinary decorrelation leaves the innovation spread across positive-eigenvalue directions and therefore reproduces the diagonal rather than cancelling it.
 
 ## Strongest justified principle
 
-ANF-144 localizes robust exceptional cancellation to `O(X)` twist neighborhoods and shows that scale is coefficient-generally sharp. ANF-145 prices the current analytic gap as one full power of `K`, and ANF-146 identifies that factor with the exact top-versus-average coherence range of the moving-window operator.
+ANF-150 writes the residual after small-prime conditioning in an exact post-sieve form and constructs a sieved-Cramér matched control that reproduces the finite Ramanujan pair profile and conditional density while retaining diagonal bow variance. ANF-151 strengthens the control: even agreement with a growing truncated Hardy--Littlewood local hierarchy does not force the selected cancellation.
 
-ANF-147 removes the objection that arbitrary complex coefficients caused the countermodel: three-site real balancing defeats coefficient-general coercivity for every prescribed unit-modulus carrier, including the exact Archimedean twist. ANF-148 places the construction on a positive fraction of the actual primes with `O(log X)` amplitudes and the correct prime diagonal, so prime location and sparsity still do not determine the variance.
-
-ANF-149 finally removes prime powers and identifies `Lambda^sharp` with its exact finite Ramanujan expansion. Its complete-period two-point law already carries the truncated Hardy--Littlewood singular-series structure uniformly on the bow lags. The surviving source question is therefore not “prime versus composite support” but whether the exact prime field and the rough Ramanujan counterterm cancel coherently at the distinguished twist.
+ANF-152 converts the remaining target into a Rayleigh-quotient statement for the moving-window Gram operator. If a fixed fraction of the innovation energy remains in spectral directions bounded away from zero, the bow cannot become subdiagonal. The desired cancellation therefore demands near-nullspace alignment, not merely weak dependence or improved local tuple statistics.
 
 ## Program consequence
 
-A positive bow theorem should expand or otherwise control the combined correlation of `vartheta-Lambda^sharp` **before** applying absolute values or independent component bounds. The theorem surface should expose exactly where the arithmetic prime-pair/Ramanujan structure buys the missing factor `K`.
-
-Support-only estimates, realness, prime density, diagonal mass, exact twist geometry, and independent bounds for decomposition pieces are now controls unless they are coupled to a proved source relation.
+Search for a source theorem that couples the exact distinguished twist, the post-sieve innovation, and the Gram eigenstructure before any componentwise absolute-value estimate is taken. A useful theorem should either force concentration in the collapsing spectral sector or prove a quantitative delocalization lower bound that closes this route.
 
 ## Counterevidence / boundary
 
-The current findings do not prove the required cancellation, do not establish the distinguished off-critical bow, and do not show that the finite Ramanujan model alone determines the prime field. ANF-149 is a source reduction, not a variance theorem.
+The near-nullspace criterion is an exact reformulation of the selected quadratic target, not evidence that the actual primes satisfy it. The matched controls show only that increasingly rich local statistics do not imply the alignment. They do not rule out a genuinely global arithmetic relation that does.
 
 ## Epistemic status
 
-**Supported source-normal-form and coherence boundary; no bow contradiction or RH consequence is established.**
+**Exact destination-space reduction with strong matched controls; the source mechanism producing or forbidding the required alignment is open.**
 
 ## Falsification criterion
 
-Derive the required `o(XK log X)` bow variance from the now-controlled source-blind data alone, or show that the prime-power reduction / finite-Ramanujan identity of ANF-149 fails in the stated bow regime. A successful continuation should instead prove a combined prime--Ramanujan correlation estimate at the distinguished twist.
+Derive subdiagonal bow energy while a fixed positive fraction of the normalized post-sieve innovation remains uniformly above a positive Gram spectral threshold, or invalidate the ANF-152 Rayleigh reduction. A positive continuation should instead prove source-forced spectral concentration in the near-null sector.

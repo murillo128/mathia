@@ -1,37 +1,33 @@
-# MI-006 — Mixed finite--archimedean structure must precede positivity, and the critical completion lives beyond finite trace
+# MI-006 — Mixed finite--archimedean structure must precede positivity, and scalar singular residues are too coarse
 
-**Evidence level:** supported by exact finite--archimedean ordering obstructions and critical Bost--Connes mode-completion bounds through WP-227
+**Evidence level:** exact finite--archimedean ordering obstructions and critical Bost--Connes mode-completion/singular-ideal bounds through WP-229
 
 ## Core intuition
 
-A Weil-positive carrier cannot be obtained by scalarizing the finite-prime source and asking an ordinary positive completion to recreate the selector. The signed finite--archimedean relation must survive **before** positivity, normalization, determinant formation, or zero-frequency projection.
+A Weil-positive carrier cannot be obtained by scalarizing the finite-prime source and asking a positive completion to recreate the selector. The signed finite--archimedean relation must survive **before** positivity, normalization, determinant formation, fixed-point projection, or a final singular trace.
 
-The newest evidence sharpens the required category exit. Canonical opposite-frequency self-pairing does create positivity, but only by squaring the critical half-density and separating prime self-energies. Pairing the finite modes with a distinct auxiliary sector avoids that exact failure, yet positivity then forces infinite auxiliary trace at the critical amplitudes. The plausible completion is therefore not merely “larger”; it must be singular in the ordinary trace/Hilbert--Schmidt sense while remaining mathematically source-controlled.
+The category exit forced by the critical Bost--Connes amplitudes is now sharper than “leave finite trace.” The exact linear channel is too large in the wrong scaling sense for a finite nonzero Dixmier-style trace, while the natural positive quadratic companion lies in a trace-compatible slowly varying class only after it has erased the repeated-prime-power tower in the singular quotient.
 
 ## Strongest justified principle
 
-WP-161--WP-211 establish the earlier ordering boundary across radial flux, Gamma/Barnes/Koszul constructions, Ray--Singer grading, and Bost--Connes KMS correlations: standard positive scalarizations either fill Mangoldt zeros, smooth away critical roughness, or lose the midpoint selector.
+WP-226 shows that opposite-frequency self-pairing creates positivity by squaring `(log p)p^{-k/2}` into `(log p)^2p^{-k}`, separates primes by unique factorization, and does not generate the missing archimedean orientation. WP-227 proves that a distinct frequency-matched positive auxiliary sector carrying all exact critical amplitudes requires infinite ordinary trace.
 
-WP-216--WP-218 then produce the exact critical Bost--Connes Gram and show that the associated finite Weil defect has the wrong essential orientation, stable under compact repair. WP-223--WP-225 close increasingly general source-time-covariant positive selections/channels: the hollow nonzero-frequency defect can only remain indefinite or be annihilated.
+WP-228 classifies the minimal bath more precisely: it lies in every Schatten class above one but outside trace class, weak Schatten one, and the ordinary Dixmier/Macaev ideal; its Ky-Fan mass grows like one half of `(log N)^2`.
 
-WP-226 leaves linear covariance by pairing opposite Bohr modes before fixed-point projection. The conditional expectation of the square is positive and nonzero, but unique factorization removes cross-prime zero-frequency terms and the coefficient `(log p)p^{-k/2}` becomes `(log p)^2p^{-k}`. The critical KMS expectation diverges and no Gamma/polar orientation is created.
-
-WP-227 tests a genuinely different opposite-frequency sector. For every finite matched mode set, block positivity with bounded source diagonal forces the auxiliary trace to dominate the squared critical coefficients. Exhausting the prime powers gives `sum_p (log p)^2/(p-1)=infinity`. A minimal positive block still exists because the diagonal coupling is bounded and compact, but it is not Hilbert--Schmidt and its positive auxiliary square is not trace class.
+WP-229 tests the two obvious singular-readout options. For the unsquared linear amplitudes, Ky-Fan growth is `2 sqrt(N log N)`, so any finite nonzero normalization has the wrong orthogonal-doubling law for a trace. For the squared bath, second-logarithmic normalization is trace-compatible, but the entire `k>=2` prime-power sector is trace class and therefore invisible to that singular residue. The full source bath and a primes-only matched control receive the same scalar singular value.
 
 ## Program consequence
 
-A surviving positive route should define a source-forced **singular mixed finite--archimedean completion** whose natural energy is not ordinary finite trace. Candidate categories include unbounded affiliated observables, distributional KMS vectors, closable quadratic forms, continuous mode sectors, or singular traces/weights, but none is evidence until the finite Mangoldt selector, Gamma/polar terms, and an independent sign theorem are derived together.
-
-The key test is not whether positivity can be manufactured; WP-226 shows it can. The test is whether the source relation survives with the critical unsquared amplitude and nontrivial cross-prime/archimedean coupling at the final sign-bearing level.
+A surviving completion must retain relational information before the final positive readout: mixed-prime incidence, the exact prime-power tower, and the archimedean/polar sector must interact in a source-forced operator, form, modular weight, or distributional construction. A singular trace may be a terminal observable, but it cannot be the mechanism if the quotient taken to define it has already forgotten the selector.
 
 ## Counterevidence / boundary
 
-WP-227 treats a frequency-matched positive Gram class with a uniformly bounded source block and ordinary auxiliary trace. It does not rule out singular weights, continuous multiplicity, unbounded/domain-sensitive completions, or non-frequency-diagonal mixed interactions that change the source time symmetry. Those are category exits, not established constructions.
+WP-228--WP-229 do not rule out all singular, semifinite, modular, non-diagonal, or distributional geometries. They rule out scalar Ky-Fan/Dixmier-style promotion of the exact linear list and the minimal quadratic bath as self-sufficient completions. Additional relational structure can change both amplification and the quotient seen by the final weight.
 
 ## Epistemic status
 
-**Supported ordering principle with an exact infinite-trace critical boundary; no positive completed Weil form or RH implication is established.**
+**Supported ordering principle with exact finite-trace and scalar-singular-readout boundaries; no positive completed Weil form or RH implication is established.**
 
 ## Falsification criterion
 
-Produce a finite-trace positive frequency-matched completion satisfying the WP-227 hypotheses and carrying all exact critical amplitudes, or a self-pairing construction contradicting WP-226's primewise squared-energy decomposition. A positive category exit should preserve the unsquared selector, add the archimedean/polar sectors, and prove orientation without assuming RH.
+Construct a finite nonzero additive Dixmier-style residue on the exact linear critical channel with the WP-229 scaling, or a second-logarithmic scalar residue of the minimal bath that distinguishes the repeated-prime-power tail from its primes-only control. A positive category exit should instead preserve those source relations and derive Gamma/polar orientation before scalarization.

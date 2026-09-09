@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert early residual witnesses into a coercive finite target certificate
+## Convert early residual witnesses into a coercive finite target certificate beyond saturated linear amplification
 
 **Linked intuition:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`.
 
-NB-001--NB-006 establish the original target-information boundary: generator Gram geometry can be copied across multiplicative scale while losing the fixed target, fixed semigroup probes admit Mellin aliases, summable full-semigroup defect norms are noncoercive, and every finite harmonic cutoff can be defeated by scale-dependent aliases.
+NB-001--NB-009 establish the target-information boundary: generic Gram/semigroup data can alias, the infinite harmonic defect is singular off the target line, and periodicity alone locates a witness only at exponential scale, while the actual best residual's `g_2` normal equation forces a polynomially visible witness by `O(d_N^{-2})` depth.
 
-NB-007--NB-009 sharply separate infinite identification from finite source-selected observability. The untruncated harmonic `ell^2` defect is singular off the target line, but this does not give uniform finite coercivity. Periodicity alone locates a finite residual witness only at the exponential `lcm(2,...,N)` scale. For the **actual best residual**, however, the single normal equation against `g_2` already forces a tail-average witness by index `O(d_N^{-2})`; with the known Nyman lower bound this is `O(log N)`, with polynomially visible amplitude.
+NB-010--NB-011 strengthen that source-selected signal. Parity cancellation front-loads truncated semigroup energy, and a prime-indexed ensemble of exact normal equations forces defect energy of order `d_N^4 log(1/d_N)` by polynomial depth. NB-012 then identifies the method ceiling: every linear combination of generator normal equations has an exact Ramanujan-sum diagonalization, with target-load efficiency controlled by `sum_{d<=L} Lambda(d)^2/phi(d)`. The prime ensemble of NB-011 already attains the leading logarithmic order; adding composite equations cannot buy another unbounded factor through the same linear/Cauchy--Schwarz interface.
 
-The live theorem is now to turn this early source-forced witness into a finite semigroup/dual estimate that materially constrains the approximation distance rather than merely detecting non-target mass. Determine how much truncated harmonic energy, or which additional normal equations, are forced once a witness occurs at polylogarithmic scale.
+The live theorem must therefore change the conversion mechanism rather than enlarge the linear ensemble. Promising forms are nonlinear use of the projection equations, a target-aware dual certificate in a different norm, or a source-specific upper estimate that converts the already forced finite defect into a new bound for the actual Nyman distance.
 
-## Separate exact target identification, witness localization, and approximation-rate coercivity
+## Separate exact target identification, witness localization, linear defect amplification, and approximation-rate coercivity
 
-The full harmonic semigroup identifies the target exactly but is an extended-valued singular selector. The lcm witness proves finite existence at a useless exponential scale. The parity normal equation proves much earlier localization, but it imports the known lower bound on `d_N` only to express the index/amplitude in `N`.
+The full harmonic semigroup identifies the target exactly but is an extended-valued singular selector. Early source-selected witnesses and aggregate linear defect are genuine progress, but NB-012 shows that the current linear amplification channel is asymptotically saturated at its logarithmic order.
 
-A useful asymptotic theorem must improve the **finite quantitative transport from residual structure to target distance**. Exact character identities, infinite divergence, and the existence of one early witness are controls unless they yield a new coercive rate.
+A useful asymptotic theorem must improve the **finite quantitative transport from residual structure to target distance**. More linear normal equations, exact character identities, infinite divergence, or witness existence alone are controls unless a new relation converts them into stronger coercivity.

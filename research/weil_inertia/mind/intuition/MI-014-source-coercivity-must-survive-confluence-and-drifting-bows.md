@@ -1,35 +1,33 @@
-# MI-014 — Weil-inertia coercivity is collective, and macroscopic observation charges almost full translation rank
+# MI-014 — Weil-inertia coercivity must charge source admissibility, not free screen rank alone
 
-**Evidence level:** exact Gallagher reduction, audited reservoir pruning, screening no-gos, and quantitative screen-complexity laws through WI-217
+**Evidence level:** exact Gallagher reduction, audited reservoir pruning, fixed-band rank sharpness, and remote-support no-go through WI-220
 
 ## Core intuition
 
-The hard Weil-inertia bow has converted the missing source theorem into a coupled arithmetic variance problem after independent zero reservoirs and positive-window constructions have been pruned. The surviving defect is collective: bounded zero packets and fixed-rank screens cannot account for it on a continuum slab.
+The Weil-inertia bow has reached the limit of what free exponential-screen rank can prove. On a fixed power-scale band the target does force positive-density channel complexity, but that `Omega(M)` tariff is analytically sharp: a `Theta(M)` companion can flatten the bow inside the relaxed screen interface.
 
-The new quantitative synthesis is that **screen complexity must scale with observation width**. Small/fixed natural slabs rule out only bounded rank; a screen-sized widening has a logarithmic transition; a fixed multiplicative source window charges essentially one screen channel per available unit translate, reaching `M/log T`. The final gap is no longer “finite versus growing complexity” but whether source structure can close the remaining logarithm to a genuine count-level obstruction.
+The missing step is therefore a **source-admissibility theorem**. Actual zeta zeros do not supply arbitrary screen coefficients or arbitrary multiplicity, and their local count, functional-equation coupling, radial cost, and source covariance are constrained together. Those constraints must be retained in the same argument that prices cancellation.
 
 ## Strongest justified principle
 
-WI-191--WI-207 identify the source-fixed coupled norm, audit the ordinary exponent-pair reservoir, and prove that bounded near-line packets remain subdiagonal under arbitrary single-window and PSD multiwindow shaping. WI-208--WI-214 show that finitely many reciprocal-harmonic samples can be screened cheaply and that growing polylogarithmic screens can flatten fixed sampled/slab data, so pointwise finite-channel evidence is not coercive.
+WI-215--WI-217 grow the continuum-screen obstruction from fixed rank to `M/log T` on a fixed multiplicative slab. WI-218 stacks the source observation and removes the logarithmic slack: uniform subdiagonal screening across a fixed power-scale band costs `Omega(M)` exponential channels.
 
-WI-215 gives the first continuum-rank obstruction: every fixed finite exponential screen leaves a nonzero natural-slab residue because the sinc bow has infinite translation rank. WI-216 makes the threshold quantitative. `O(log T)` channels cannot become subdiagonal on their own linearly widened slab, while `omega(log T)` channels suffice in the existing midpoint screen model.
+WI-219 proves that this is the asymptotic ceiling of the free rank interface. An explicit symmetry-respecting same-depth `Theta(M)` companion leaves subdiagonal energy across the whole band; it fails as a zeta model because it is co-localized and violates the local zero-count budget.
 
-WI-217 uses the entire translating nullspace rather than one null vector. On fixed multiplicative width, if `q` translates are visible and the screen rank omits any fixed fraction of them, a fixed amount of target energy survives. Hence subdiagonal selected energy forces `n >= (1-o(1))q`, and at the largest controlled scale this costs `Omega(M/log T)` channels/pairs up to fixed factors.
+WI-220 then rules out qualitative support separation as a replacement. Cofinite Fourier tails are complete on every proper fixed interval, so arbitrarily remote frequencies can approximate the bow in the arbitrary-coefficient relaxation. A useful transport theorem must therefore charge count/coefficient norm, positive integral multiplicity, radial/source structure, or an equivalent coercive invariant; remoteness alone is not enough.
 
 ## Program consequence
 
-The next theorem must either raise the macroscopic screen tariff from `M/log T` to count scale `M`, prove that actual off-line zeros cannot realize the flexible exponential screen class at that tariff, or avoid adversarial screening by proving the full signed source covariance directly.
-
-Observation width, screen rank, radial depth, and zero count should be priced independently. A larger rank lower bound matters only if it can be converted to the actual exceptional-zero budget without hidden free multiplicity.
+Stop seeking a larger rank lower bound in the same relaxed screen class. Prove that every screen realizable by actual off-line zeros and capable of the required fixed-band cancellation must violate a source budget, or bypass the screen relaxation by controlling the full signed `Lambda-Lambda^sharp` covariance directly.
 
 ## Counterevidence / boundary
 
-WI-217 still permits `o(M)` screen complexity and therefore does not prove positive-density exceptional zeros or RH. Its screens are an enlarged exponential model; an actual zero population has additional functional-equation and source constraints that may help, but those constraints have not yet been converted into a stronger rank tariff. Conversely, the midpoint construction shows that superlogarithmic screening really is possible in the declared countermodel on smaller widened slabs.
+The `Theta(M)` companion and remote Fourier approximants are not zeta-zero configurations. Their role is to show exactly which source constraints the linear interface has discarded. Conversely, local zero count alone has not yet been converted into a general impossibility theorem for remote, coefficient-constrained screens.
 
 ## Epistemic status
 
-**Exact collective-screening boundary with logarithmic and `M/log T` complexity thresholds; the full source-fixed covariance / positive-density bridge remains open.**
+**Exact positive-density screen tariff with matching relaxed upper construction and support-only no-go; the source-to-zero-count coercivity bridge remains open.**
 
 ## Falsification criterion
 
-Construct an `o(M/log T)` exponential screen that makes the selected residue subdiagonal on a fixed multiplicative slab under the WI-217 hypotheses, or invalidate the WI-216 matching superlogarithmic construction on its declared scale. A positive continuation should close the count conversion or prove source restrictions absent from the free screen model.
+Produce an `o(M)` free exponential screen satisfying the WI-218 fixed-band target, or invalidate the WI-219 `Theta(M)` construction. A positive continuation should instead prove a quantitative obstruction for the actual zero/source coefficient class that the free constructions cannot satisfy.
