@@ -1,7 +1,7 @@
 ---
 id: CLUE-weighted-skeleton-target-data-without-full-section-oracle
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -62,3 +62,15 @@ A positive mathematical outcome requires a proved arithmetic tail estimate and t
 ## Evidence boundary
 
 The cited findings and local clue dispositions were inspected at 7797f89e198f582ef44b54596d2d379b8ee540fb. Check their current claims and any adjacent review sidecars before adoption. No reduced projector algorithm, tail enclosure, numerical experiment, improved approximation rate, or Lean proof is supplied here. Schur elimination and perturbation estimates are standard tools, not a novelty claim; the unresolved contribution would be source-specific control of the eliminated tail. The existing accepted and resolved clues remain unchanged. Close this handoff if its precise target-data construction test is already covered, rather than promoting another representation of the same certificate.
+
+## Research disposition
+
+Accepted. `NB-036` solves the source-coordinate half exactly: Vasyunin's classical finite-support duals together with the `NB-035` endpoint selector form a projector-free dual family for the `NB-034` weighted skeleton. It also identifies the entire remaining target-aware upper-section dependence as the dual-defect pair `(Z_{M,N}, eta_{M,N})`, through the exact identities
+
+\[
+H_{M,N}^{-1}=B_M^{-1}-Z_{M,N},
+\qquad
+c_{M,N}=u_M-\eta_{M,N}.
+\]
+
+The direction therefore survives and is substantially sharper. The precise unresolved question is whether arithmetic structure can bound this defect pair, for predeclared `M/log N -> infinity`, strongly enough to control the target quadratic form at `o(1/log N)` relative-distance precision **without** an `N`-scale projection solve or the unknown `d_N` as an oracle. Acceptance records that research target only; `NB-036` does not supply such a bound or an improved Nyman approximation rate.
