@@ -11,6 +11,8 @@ based_on:
   - research/visual_exploration/findings/VIS-124-montgomery-weight-laplace-smooths-cue-edge.md
   - research/visual_exploration/findings/VIS-125-hard-window-triangular-overlap-log-edge-leakage.md
   - research/visual_exploration/findings/VIS-126-rvm-density-drift-compatible-with-log-edge-resolution.md
+  - research/visual_exploration/findings/VIS-127-single-cue-circle-growing-hard-window-obstruction.md
+  - research/visual_exploration/findings/VIS-128-bounded-tent-taper-composed-edge-profile.md
   - research/visual_exploration/clues/CLUE-zeta-critical-strip-multiscale-geometry.md
   - research/visual_exploration/SOURCES.md
 ---
@@ -19,82 +21,68 @@ based_on:
 
 ## Observation
 
-`VIS-122` closes the frozen half-arc third-order confirmation route and requires any new zero-configuration thread to begin from an independent mathematical carrier. Montgomery's weighted pair-correlation transform supplies such a carrier, but the visually obvious support edge is shared by the CUE/GUE null and therefore cannot itself count as arithmetic structure.
+`VIS-122` closes the frozen half-arc third-order confirmation route and requires any new zero-configuration thread to begin from an independent mathematical carrier. Montgomery's weighted pair-correlation transform supplies such a carrier, but the visually obvious support edge is shared by the CUE/GUE null and cannot itself count as arithmetic structure.
 
-Four calibration layers are now exact in their stated regimes. `VIS-123` matches the Montgomery Fourier phase to full-circle CUE under the local unfolding `L_T=log(T/(2*pi))`: the finite-height edge is centered by
+The universal calibration is now considerably narrower. `VIS-123` fixes the phase dictionary and continuous finite-`N` CUE support-edge correction. `VIS-124` shows that Montgomery's pair weight is exactly the unit-mass Laplace convolution
 
-`v=(alpha-1)log(T)+log(2*pi)`,
+`P_L(r)=L exp(-2L|r|)`,
 
-with `k-N=(N/L_T)v`. It also shows from the exact all-real-time finite-`N` CUE form factor that a continuous ramp-centered edge contains a universal logarithmic finite-size ripple.
+so a ramp subtraction or an unweighted finite-CUE subtraction leaves a deterministic `1/L_T`-scale edge bump. `VIS-125` shows that a hard source window contributes an independent squared-sinc convolution and a larger `(log M)/M` ramp-edge leakage, while a taper with finite spectral first moment removes the logarithmic enhancement. `VIS-126` shows that smooth Riemann--von Mangoldt density drift is not by itself fatal: there is a broad asymptotic corridor in which center-density linearization is below `1/L_T`.
 
-`VIS-124` fixes the pair-weight layer. In unfolded difference coordinates Montgomery's weight becomes
+`VIS-127` then closes one apparent escape. If `N/L_T -> rho` with finite positive `rho`, a growing hard physical source window cannot simultaneously fit as one connected non-wrapping `CUE_N` arc and remain in the fixed-`tau` support-edge regime used by the current finite-CUE calibration. The hard-window condition that suppresses `(log M)/M` by sending `H->infinity` eventually exceeds one logarithmic-size CUE circumference.
 
-`W_L(x)=1/(1+(pi*x/L)^2)`,
+`VIS-128` supplies an explicit bounded-window replacement rather than leaving “use a smooth taper” abstract. For the centered tent taper `h(t)=(1-2|t|)_+`,
 
-whose Fourier transform is the unit-mass Laplace kernel
+`Q_M^tent(r)=(3M/4)sinc^4(Mr/2)`
 
-`P_L(r)=L exp(-2L|r|)`.
+and its spectral first moment is exactly `6 log(2)/pi^2`. The tent removes the hard-window logarithm, but at fixed physical support its universal edge effect remains of order `1/L_T`. When composed with Montgomery's weight at `M/L -> lambda`, the entire leading edge profile is
 
-Thus the full-circle weight-matched CUE null is not the pointwise real-time form factor but its exact convolution `P_L*K_N`. Even the infinite-CUE ramp acquires the universal centered residual
+`G_lambda = q_lambda * H`,
 
-`-(1/(4L_T)) exp(-2|v|)`
+not the sum of separate scalar corrections. The bounded tent fits a single finite-CUE arc with asymptotic margin when `H_src<2*pi*rho`, but it must be part of the exact matched null rather than treated as negligible preprocessing.
 
-at leading edge scale. A ramp subtraction, or an unweighted finite-CUE subtraction, therefore leaves a deterministic non-arithmetic bump.
-
-`VIS-125` adds the source-window layer for a locally stationary unfolded null. A hard interval of unfolded length `M` multiplies the pair-difference measure by the triangular overlap
-
-`A_M(x)=(1-|x|/M)_+`
-
-and therefore convolves the support-edge form factor with
-
-`Q_M(r)=M sinc^2(Mr)`.
-
-The stationary weighted hard-window null is consequently `P_L*Q_M*K`, not `P_L*K` alone. At the infinite-CUE ramp edge the hard window itself creates
-
-`1-(Q_M*K_infty)(1)=(log M)/(2*pi^2*M)+O(1/M)`.
-
-For a local physical height window `H`, where `M=H L_T/(2*pi)`, this is `log M/(pi H L_T)+O(1/(H L_T))`. A fixed-height rectangular source window is therefore not neutral on a proposed `1/L_T` residual scale. `VIS-125` also shows that a predeclared taper with finite spectral first moment reduces the generic ramp-window error to `O(1/M)` and removes the logarithmic penalty.
-
-`VIS-126` now separates smooth zero-density drift from the still-open nonstationary transfer. For the classical smooth Riemann--von Mangoldt main term, replacing exact smooth unfolding over `T+[-H,H]` by the frozen center density changes each bounded support-edge pair phase by `O(H^2/T)` and the naturally normalized Montgomery-weighted statistic by the conservative bound `O(L_T H^2/T)`. Thus
-
-`H^2 L_T^2/T -> 0`
-
-is sufficient to push this deterministic density-linearization error below `1/L_T`. This is compatible with the hard-window gate `H/log(H L_T)->infinity`; indeed any fixed polylogarithmic `H=L_T^A`, `A>0`, satisfies both asymptotically. Smooth Riemann--von Mangoldt density drift is therefore not an unavoidable blocker at the target edge scale.
-
-The remaining candidate is narrower: after phase centering, finite-`N` real-time correction, pair-weight convolution, source-window leakage, and smooth-density drift are all controlled, does the finite-height zeta statistic leave any reproducible residual whose sign or scale is predicted independently by arithmetic lower-order terms?
+The remaining candidate is therefore precise: after phase centering, finite-`N` correction, Montgomery-weight convolution, a predeclared capacity-compatible bounded taper, smooth-density drift, diagonal/arc conventions, counting fluctuations, and covariance are all matched, does the finite-height zeta statistic leave a reproducible residual whose sign and scale are predicted independently by arithmetic lower-order terms?
 
 ## Research question
 
-Can the actual finite-height Montgomery statistic be transferred to a finite-CUE control with the same predeclared source taper/window, smooth unfolding convention, pair weight, diagonal convention, effective-size rule, arc/compactification convention, and covariance structure, so that a low-dimensional support-edge residual can be tested without universal finite-size, smoothing, boundary-leakage, or smooth-density contamination?
+Can the actual finite-height Montgomery statistic be transferred to a finite-CUE control with the same predeclared bounded source taper, smooth unfolding convention, pair weight, diagonal convention, effective-size rule, arc/compactification convention, and covariance structure, so that a low-dimensional support-edge residual can be tested without universal finite-size, smoothing, boundary-leakage, or smooth-density contamination?
 
-If such a matched null exists, is there an amplitude normalization for the post-null residual that follows from the arithmetic lower-order formula rather than from inspecting zero data, and does the resulting statistic survive on untouched high-zero material?
+In the explicit tent family, can one first fix an independently justified ratio `rho=N/L_T` and a physical support `H_src<2*pi*rho`, then evaluate the finite-`N` composed null
+
+`P_L*Q_M^tent*K_N`
+
+in the same edge coordinates and derive its joint covariance before any fresh zero confirmation material is inspected?
+
+If such a matched null exists, is there an amplitude normalization for the post-null residual that follows from an arithmetic lower-order formula rather than from the observed zero residual itself?
 
 ## Why it may matter
 
-This route is source-motivated rather than a post-hoc repair of the failed third-order panel. Pair-correlation error terms are classically linked to prime-side fluctuation information, while the random-matrix support edge supplies a strong universal null. The exact controls in `VIS-123`--`VIS-126` progressively remove four attractive false positives or apparent blockers: continuous finite-CUE edge structure, Montgomery-weight rounding, observation-window leakage, and deterministic smooth-density drift.
+This route is source-motivated rather than a post-hoc repair of the failed third-order panel. Pair-correlation error terms are classically linked to prime-side fluctuation information, while the random-matrix support edge supplies a strong universal null. The current findings have progressively removed attractive false positives and implementation ambiguities: continuous finite-CUE edge structure, Montgomery-weight smoothing, hard-window leakage, smooth deterministic density drift, the incompatible growing-hard-window/single-circle construction, and the assumption that a smooth bounded taper is automatically negligible at the target scale.
 
-A positive result after those controls would still most likely organize known lower-order arithmetic rather than establish a new pair-correlation theorem. A negative result is equally useful: if the fully matched finite-height/CUE transfer absorbs the residual, the support edge should be treated as another closed visual control rather than an arithmetic carrier.
+The tent family now gives one concrete path on which the remaining finite-CUE transfer can be made fully auditable. A positive result after all controls would still most likely organize known lower-order arithmetic rather than establish a new pair-correlation theorem. A negative result is equally useful: if the complete finite-height/CUE null absorbs the residual, the support edge should be treated as another closed visual control rather than an arithmetic carrier.
 
 ## Decisive test
 
-Do not inspect fresh confirmation zeros yet. First freeze one exact finite-height statistic and its source-window family. Preserve the zero-height regime, smooth-density convention, Montgomery pair weight, diagonal treatment, edge coordinates, and low-dimensional decision statistic.
+Do not inspect fresh confirmation zeros yet. First freeze one exact finite-height statistic and its source taper family. Preserve the zero-height regime, smooth-density convention, Montgomery pair weight, diagonal treatment, edge coordinates, and low-dimensional decision statistic.
 
-Use `VIS-123` for the exact phase dictionary and finite-`N` continuous-time CUE edge correction. Use `VIS-124` to apply Montgomery's pair weight as the exact Laplace convolution `P_L*K_N`. Use `VIS-125` to control the source-window transform. Either choose a predeclared taper whose normalized spectral kernel has finite first moment, or, if a hard rectangular local window is retained for an intended `1/L_T` residual scale, require `H/log(H L_T)->infinity`. Simultaneously require the `VIS-126` smooth-density gate `H^2 L_T^2/T->0`; a predeclared polylogarithmic height family is one explicit common corridor.
+Use `VIS-123` for the phase dictionary and exact finite-`N` continuous-time CUE edge correction, `VIS-124` for Montgomery's Laplace kernel, and `VIS-126` for the smooth-density linearization gate. Treat `VIS-127` as excluding the literal “grow one hard window inside one logarithmic-size CUE circle” construction. Use `VIS-128` as one explicit admissible bounded-window family: choose `rho=N/L_T` and `H_src` without fresh-zero tuning, require `H_src<2*pi*rho` with a nonvanishing design margin, set `M=H_src L_T/(2*pi)`, and use the exact tent kernel `Q_M^tent`.
 
-Then derive or simulate the genuinely remaining transfer: the finite-CUE/arc geometry or matched ensemble, effective `N(T)`, any compactification or branch convention, diagonal normalization, the contribution of counting-function fluctuations beyond the smooth Riemann--von Mangoldt main term, and the joint covariance of all predeclared edge coordinates. The finite-CUE control must reproduce those choices so that null and source statistics live in the same representation. In the stationary approximation its transform must reduce to the combined convolution `P_L*Q_(M,h)*K_N`.
+Then derive the genuinely remaining null rather than adding asymptotic correction coefficients by hand. Evaluate the finite-`N` convolution `P_L*Q_M^tent*K_N` under one exact full-circle/arc convention and the same diagonal normalization as the source statistic. Determine the effective-size rule `N(T)`, how the bounded source taper is represented on the circle, the contribution of counting-function fluctuations beyond the smooth Riemann--von Mangoldt main term, and the joint covariance of every predeclared support-edge coordinate. The null and source statistic must live in the same representation.
 
-Only after that complete null is fixed should the arithmetic lower-order formula determine whether the post-null residual is expected at scale `1/log T`, `log log T/log T`, another scale, or no stable universal scale. The universal finite-`N` ripple from `VIS-123`, weight-induced `1/log T` rounding from `VIS-124`, source-window term from `VIS-125`, and finite-height smooth-density bound from `VIS-126` must all be accounted for before choosing the residual amplitude normalization.
+The `VIS-128` infinite-ramp profile `G_lambda` is a consistency check, not a substitute for this finite-`N` calculation. Kill any implementation whose finite-`N` null does not converge to that composed profile in the corresponding fixed-ratio regime, or whose capacity/arc convention silently periodizes the source window.
 
-Then test on untouched high-zero material using the frozen statistic and combined decision rule. Kill the route if the residual is reproduced by the fully matched finite-CUE/window null, disappears under exact diagonal/window/unfolding accounting, changes qualitatively under predeclared reasonable representations, or reduces entirely to established lower-order arithmetic with no residual question. Continue only if a predeclared residual survives and agrees with an arithmetic prediction made before confirmation data are inspected.
+Only after the complete null is frozen should an arithmetic lower-order formula determine whether the post-null residual is expected at scale `1/log T`, `log log T/log T`, another scale, or no stable universal scale. Then test the frozen statistic on untouched high-zero material with the predetermined combined decision rule. Kill the route if the residual is reproduced by the fully matched finite-CUE/taper null, disappears under exact diagonal/window/unfolding accounting, changes qualitatively under predeclared reasonable representations, or reduces entirely to established lower-order arithmetic with no residual question.
 
 ## Evidence boundary
 
-Montgomery's pair-correlation statistic and support boundary, CUE/GUE pair statistics, exact all-real-time finite-`N` CUE form factors, Fourier windowing, the Riemann--von Mangoldt smooth zero density, and the pair-correlation/short-interval arithmetic bridge are prior art. `VIS-123` establishes only the phase/edge calibration and one universal finite-CUE correction. `VIS-124` establishes only the exact Fourier-convolution effect of Montgomery's pair weight and the resulting universal ramp rounding. `VIS-125` establishes only the stationary source-window overlap transform, its rectangular-window `log M/M` edge leakage, and a finite-first-moment taper bound. `VIS-126` establishes only that the deterministic smooth-density linearization error has a broad asymptotic window corridor compatible with the `VIS-125` leakage gate.
+Montgomery's pair-correlation statistic and support boundary, CUE/GUE pair statistics, exact finite-`N` CUE form factors, Fourier windowing, triangular/tent tapers, the Riemann--von Mangoldt smooth zero density, and the pair-correlation/short-interval arithmetic bridge are prior art. `VIS-123`--`VIS-128` establish only the current control stack and its compatibility boundaries.
 
-The exact finite-height zeta-to-CUE transfer, the correct effective `N(T)`, the exact finite-CUE arc/window geometry, counting-function fluctuations beyond the smooth main term, the joint covariance after that transfer, the post-null arithmetic amplitude scale, and the existence of any reproducible arithmetic support-edge residual remain unproved. No fresh zero confirmation data have been inspected for the resulting design.
+In particular, `VIS-128` does not determine the correct `N(T)` or finite-CUE covariance and does not show that the bounded tent is uniquely or optimally matched to the zeta statistic. Its `1/L_T` edge profile is universal null structure, not evidence of an arithmetic residual.
+
+The exact finite-height zeta-to-CUE transfer, effective size, exact arc representation, counting-function fluctuations beyond the smooth main term, finite-`N` composed covariance, post-null arithmetic amplitude scale, and existence of any reproducible arithmetic support-edge residual remain unproved. No fresh zero confirmation material has been inspected for the resulting design.
 
 Even a successful test would not prove RH, Montgomery's full pair-correlation conjecture, Hardy--Littlewood prime-pair asymptotics, or a new zero-correlation theorem.
 
 ## Research disposition
 
-Accepted for continued investigation. Phase centering, pair-weight smoothing, stationary source-window leakage, and deterministic smooth-density drift are now calibrated enough to expose a common asymptotic design corridor. The next unresolved step is **finite-CUE effective-size/arc matching plus counting-fluctuation and covariance transfer inside a frozen admissible window/taper regime**, not further source inspection. Acceptance records that this bounded residual question remains worth testing, not that a nonzero arithmetic residual exists.
+Accepted for continued investigation. The generic source-window choice is now sufficiently narrowed to an explicit capacity-compatible bounded-taper family, and the leading infinite-ramp composition is known. The next unresolved step is **the exact finite-`N` composed tent+Montgomery CUE null, effective-size/arc transfer, counting-fluctuation accounting, and covariance**, all frozen before fresh source inspection. Acceptance records that this bounded residual question remains worth testing, not that a nonzero arithmetic residual exists.
