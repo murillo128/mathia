@@ -260,7 +260,13 @@ C_{Q-1}-\delta\le Z-g_Q.
 
 Letting `delta` tend to zero yields the first inequality in (8); the second is exactly the tail estimate for `C_R` proved in `FD-003`.
 
-For squarefree `Q`, this complements rather than contradicts `FD-015`. That finding supplies a positive two-horizon deficit at each adjacent pair, with an explicit conservative size of order `Q^{-4}`. The present result says that the **best possible universal deficit based only on unrestricted source coherence along a `Q`-geometric chain cannot exceed `Z-C_{Q-1}=O(1/Q)`**. There is a wide quantitative interval between these statements. What is ruled out here is the idea that simply having infinitely many sparse coherent horizons can amplify a local incompatibility into a fixed large gap independently of the source.
+For squarefree `Q`, this complements rather than contradicts `FD-015`. That finding supplies a positive two-horizon deficit at each adjacent pair. In its sharpened repeated-prime form, the explicit conservative deficit is of order
+
+\[
+\frac{1}{p_-(Q)^2Q^2},
+\]
+
+where `p_-(Q)` is the least prime factor; for prime `Q` this specializes to order `Q^{-4}`, while for composite squarefree dilations with a fixed small prime factor it is of order `Q^{-2}`. The present result says that the **best possible universal deficit based only on unrestricted source coherence along a `Q`-geometric chain cannot exceed `Z-C_{Q-1}=O(1/Q)`**. There remains a wide quantitative interval between these statements. What is ruled out here is the idea that simply having infinitely many sparse coherent horizons can amplify a local incompatibility into a fixed large gap independently of the source.
 
 ## 4. Relation to the Farey/Mertens problem
 
