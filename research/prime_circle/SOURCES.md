@@ -203,3 +203,8 @@ This file records durable literature dependencies used to support or falsify fin
 ## Discrete Hilbert one-parameter groups and shifted Cauchy packets
 
 - Laura De Carli and Gohin Shaikh Samad, **One-parameter Groups of Operators and Discrete Hilbert Transforms**, *Canadian Mathematical Bulletin* 59:3 (2016), 497–507. DOI: `10.4153/CMB-2016-028-7`. arXiv: `1506.03362`. Role: gives the exact isometric one-parameter group `T_t` with kernel `(sin(pi t)/pi)/(m-n+t)`; identifies the normalized PC-227 shifted Cauchy packet as `T_sigma delta_0` and supplies the classical discrete-Hilbert prior-art boundary used in PC-237.
+
+## Affine semigroup C*-algebras
+
+- Joachim Cuntz, **C*-algebras associated with the `ax+b`-semigroup over N**, in *K-Theory and Noncommutative Geometry*, EMS Series of Congress Reports (2008), 201–215. DOI: 10.4171/060-1/8. arXiv:math/0611541. Role: defines the natural addition-dilation C*-algebra for the affine semigroup over the natural numbers, explicitly states that it is obtained from the Bost–Connes algebra by adjoining one unitary generator corresponding to addition, and identifies its stabilization with an affine crossed product over the finite adeles; primary prior-art anchor for PC-241.
+- Nathan Brownlowe, Astrid an Huef, Marcelo Laca and Iain Raeburn, **Boundary quotients of the Toeplitz algebra of the affine semigroup over the natural numbers**, *Ergodic Theory and Dynamical Systems* 32 (2012), 35–62. DOI: 10.1017/S0143385710000830. Role: places Cuntz's `Q_N` in the Toeplitz/boundary-quotient framework for `N semidirect N^x`; supporting prior-art anchor for the established operator-algebraic status of the PC-241 addition-dilation relations.
