@@ -19,6 +19,10 @@ This file records durable literature dependencies for `research/robin_extremal/`
 - Jean-Louis Nicolas, *The sum of divisors function and the Riemann hypothesis*, The Ramanujan Journal **58** (2022), 1113-1157, DOI `10.1007/s11139-021-00491-y`. Role: prior-art boundary for Ramanujan's classical RH-conditional divisor-sum expansion containing the coefficient `2(sqrt(2)-1)/sqrt(log n)`. Mathia does not claim novelty for the appearance of `sqrt(2)-1`; `RE-007` instead isolates how that scale arises in the exact clean self-tangent prime-layer selector.
 - Runbo Li, *The number of primes in short intervals and numerical calculations for Harman's sieve*, arXiv:2308.04458, current preprint version. Role: current unconditional short-interval boundary showing primes in `[x-x^0.52,x]` for all sufficiently large `x`. This remains above the square-root scale and therefore does not close the `RE-007` clean-peak alternative requiring a source-selected gap of order `sqrt(p)`; `RE-008` uses only the much weaker consequence that the gap exponent is below `3/4`, making its small correction negligible at square-root scale.
 
+## Prime-number-theorem tail control
+
+- Chiara Bellotti, *A new zero-density estimate for zeta(s) and the error term in the prime number theorem*, Bulletin of the London Mathematical Society **58** (2026), Paper e70442, DOI `10.1112/blms.70442`, arXiv:2508.02041. Role: current sharp treatment of the Korobov--Vinogradov zero-free-region error term in the prime number theorem. `RE-015` uses only the standard unconditional consequence that, for some absolute `a>0`, `psi(x)-x << x exp(-a (log x)^(3/5) (log log x)^(-1/5))`; it transfers this elementarily to `theta` and does not depend on the best constant.
+
 ## Mertens-product boundaries
 
 - Harold G. Diamond and Janos Pintz, *Oscillation of Mertens' product formula*, Journal de Theorie des Nombres de Bordeaux **21** (2009), no. 3, 523-533, DOI `10.5802/jtnb.687`. Role: primary boundary showing that the ordinary Mertens prime product changes sign in both directions. `RE-008` therefore does not interpret the sign of the unmodified Mertens-product error as a new Robin mechanism.
