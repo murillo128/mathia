@@ -1,33 +1,33 @@
-# MI-011 — Transition visibility has a sharp one-sided complex reach threshold in the maximal-contact control
+# MI-011 — Initial and positive-heat transition visibility obey different outward barriers in the maximal-contact control
 
-**Evidence level:** exact state-identification barriers, full-jet bounds, and initial/all-future complex visibility threshold through XF-153
+**Evidence level:** exact state-identification barriers, corrected fundamental-domain initial threshold, near-antipodal future control, and positive-heat edge-mode exposure through XF-155
 
 ## Core intuition
 
-Exact state identification is much easier than stable recovery of the de Bruijn--Newman transition parameter. For the current maximal-contact matched family, this is no longer only an upper-bound heuristic about shallow collars: the required complex reach has an exact direction-sensitive exponential threshold, and positive heat evolution does not lower it.
+Exact state identification is much easier than stable recovery of the de Bruijn--Newman transition parameter, but there is not one universal complex-reach threshold for every future heat time. The maximal-contact matched family has a sharp **initial** outward visibility boundary, while positive heat can reveal a different spectral edge mechanism outside the near-antipodal regime.
 
-The target-side escape is therefore geometrically explicit. Either a source-faithful Xi observable reaches the necessary outward antipodal region at controlled cost, or the source must forbid the matched transition-sharp packet.
+The target-side obstruction is therefore direction- and observation-mechanism-specific. A source-faithful Xi route must price both complex reach and heat-time spectral selection instead of treating the initial slice as the entire future history.
 
 ## Strongest justified principle
 
-XF-143--XF-151 show that polynomially normalized real sensors, finite/infinite derivative jets and shallow complex collars can identify the state while remaining exponentially blind to `Lambda_per`. Near the antipode the previous certificate predicted a parabolic depth scale `d^2/L`.
+XF-143--XF-151 show that polynomially normalized real sensors, finite/infinite derivative jets and shallow complex collars can identify state while remaining exponentially blind to `Lambda_per`. Near the antipode they predict the parabolic depth scale `d^2/L`.
 
-XF-152 computes the initial complex trace exactly and gives a unique outward threshold `H_*(D)`, while inward continuation never achieves order-one exponential-rate separation at finite depth. Near the antipode this is `h_*(d)=(pi/2)d^2/L+O(d^4/L^3)`.
+The withdrawn XF-152 is not current evidence. XF-154 replaces its usable content with an exact initial-slice theorem on the physical fundamental domain `0<=D<=pi/2`. The outward rate `F_+(H,D)=H+(1/2)log(cos^2 D+sinh^2 H)` has a unique threshold `H_*(D)` for `D>0`, with `H_*(0)=0` and near-antipodal physical expansion `h_*(d)=(pi/2)d^2/L-(pi^3/24)d^4/L^3+...`.
 
-XF-153 proves that in the near-antipodal sector optimizing over all future heat times changes the matched signal by at most a factor two from the initial slice. The all-future exponential rate and threshold are therefore exactly the initial ones; positive heat cannot rescue observations below the parabolic boundary.
+XF-153 controls optimization over positive heat only in its near-antipodal sector, where future evolution changes the signal by at most a constant factor and preserves the initial exponential boundary. XF-155 finds a separate global lower bound on future visibility: choosing `u_N=c log N/N`, `c>2`, isolates the outward highest-frequency edge mode with rate `2H-log 2` uniformly in `D`. Hence the full future cannot remain exponentially blind for `H>(1/2)log 2`, even when the initial slice at that point is still below its own threshold.
 
 ## Program consequence
 
-Stop enlarging the same real/shallow observation class or optimizing future time. Derive a Xi-specific route to outward complex/antipodal access at or beyond the quantified threshold with a stable inverse modulus, or prove that the maximal-contact family cannot arise from the actual Xi source constraints.
+Derive a source-faithful Xi observation theorem that states explicitly which mechanism is used: initial outward continuation, near-antipodal future history, or positive-heat edge-mode selection. Prove controlled normalization and an inverse modulus in that channel, or derive Xi-specific source constraints excluding the matched packet. Do not extrapolate the near-antipodal XF-153 bound into a global all-future statement.
 
 ## Counterevidence / boundary
 
-Crossing the threshold is necessary only against this matched control and is not sufficient for stable recovery. The result does not establish that Xi realizes the packet, nor that all nonlinear/data-adaptive observations obey the same bound. Source restrictions remain a legitimate escape if independently derived.
+XF-155 gives an upper cap on any hidden full-future region, not an exact full-future threshold below `H=(1/2)log 2`. XF-154 is an initial-slice result; XF-153 remains valid only in its stated sector. None of these findings proves that Xi realizes the matched packet or that crossing a visibility barrier yields stable recovery.
 
 ## Epistemic status
 
-**Exact one-sided all-future visibility boundary for the current transition-sharp control; source realizability and a stable Xi decoder remain open.**
+**Exact initial outward threshold plus a distinct positive-heat edge-mode visibility mechanism; the complete full-future boundary and source realizability remain open.**
 
 ## Falsification criterion
 
-Construct a polynomially conditioned decoder for the matched family using observations strictly below the stated outward reach, or invalidate XF-153's all-future factor bound. A positive continuation should cross the threshold source-faithfully or exclude the matched packet.
+Invalidate XF-154's fundamental-domain initial rate/threshold, the sector assumptions of XF-153, or XF-155's edge-mode asymptotic. A positive continuation should derive the actual source-conditioned observation class and determine which barrier controls it.

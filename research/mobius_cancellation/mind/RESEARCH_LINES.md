@@ -2,14 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove fixed-power variance for the signed rough parity field
+## Cross the fixed-power barrier for the uncentered signed rough parity field
 
-**Linked intuition:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`.
 
-MC-178--MC-180 move the short-interval problem to a logarithmically rough squarefree Möbius block. MC-181 proves that this split is exponent-reversible on dilation-stable scale families: it reorganizes the proof but does not weaken the fixed-power target. MC-183 distinguishes ordinary rough-number support from the actual squarefree support, and MC-184 shows that for `theta<6/11` the unsigned pre-sieved squarefree support already has a strong classical variance bound.
+MC-178--MC-184 move the short-interval burden to a logarithmically rough squarefree Möbius block, show that the split is exponent-reversible, and control the correct unsigned pre-sieved squarefree support for `theta<6/11`. MC-185 then separates two remaining obligations. Centered variance can be interpolated across the finite-degree parity deformation with only subpower loss, but the uncentered target also contains a zero mode equal to a macroscopic rough Möbius increment.
 
-The live theorem is therefore phase-sensitive. With eligibility/support fluctuations controlled, obtain a fixed-power variance gain for the **signed prime-factor-parity orientation** on the rough squarefree block, or prove that this remaining parity field is as hard as the original short-interval cancellation target.
+MC-186 shows that current rough-sum technology makes this zero mode smaller than `X` by every fixed logarithmic power. MC-187 strengthens the boundary: exact convolution inversion transfers the classical Korobov--Vinogradov Mertens saving to the logarithmically rough sum. Yet this remains subpower, while any fixed-power variance gain requires one genuine fixed power in the zero mode.
 
-## Treat support smoothing and rough eligibility as controls
+The live theorem must therefore prove an uncentered phase-sensitive estimate that crosses this fixed-power boundary, or find a structural identity coupling the centered parity field to its mean strongly enough that the zero mode is no longer an independent obligation. Improving unsigned support or fixed-logarithmic rough cancellation alone cannot close the target.
 
-Unsigned rough counts can look substantially more regular while omitting exactly the squarefree/parity layers that carry Möbius sign. The logarithmic rough split does not buy an exponent by itself, and pre-sieving squarefree support removes another false bottleneck. Any continuation must preserve the sign orientation and quantify its contribution in the original fixed-power variance currency.
+## Treat centered parity interpolation and subpower zero-mode bounds as controls
+
+Polynomial interpolation in the parity parameter shows that passing from positive deformations to the centered `z=-1` endpoint is not where a fixed power is necessarily lost. Conversely, arbitrarily strong logarithmic or Korobov--Vinogradov cancellation of the global rough sum still does not satisfy the fixed-power local variance budget. Any continuation must track both pieces in the original uncentered currency.

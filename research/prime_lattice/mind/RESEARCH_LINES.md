@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force cross-character interaction that remains visible in the principal zeta block
+## Force a nonfactorizing global relation that constrains the principal zeta divisor
 
 **Linked intuitions:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`, `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`, `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, `MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution`, `MI-013-kms-offdiagonal-freedom-is-boundary-data-not-prime-coupling`, `MI-014-prime-exchangeability-erases-normal-arithmetic-equilibrium`, `MI-015-reciprocity-family-coupling-is-not-principal-zero-selection`.
 
-PL-240--PL-248 show that reciprocity-family coupling, affine/Kac--Moody multivariance and imported function-field purity do not automatically survive or explain the principal Riemann channel. PL-249 adds canonical adelic/class-field Frobenius monodromy and shows that the trivial Artin character producing `zeta_Q` erases it exactly.
+PL-240--PL-250 show that reciprocity families, affine/Kac--Moody multivariance, canonical Frobenius monodromy and full equivariant covers can retain rich arithmetic information while leaving the principal zeta block algebraically isolated. PL-251 closes a much larger nonlinear finite-dimensional class: for every finite Galois group, the invariant projector splits the trivial isotypic component canonically after tensor, dual, symmetric/exterior, Schur and other representation-ring functors, and Artin formalism factors the corresponding zeta power multiplicatively.
 
-PL-250 closes the direct linear escape “keep the full cover.” For a finite abelian cover the regular representation canonically splits into one-dimensional character blocks; every `G`-equivariant operator, trace or ordinary determinant respects that decomposition, and the trivial block remains exactly `zeta(s)` while the extra Frobenius information lives in the other Artin factors. Global retention without cross-block dynamics is therefore still target-decoupled.
+PL-252 then tests a genuinely global positive quadratic escape. Rankin--Selberg self-correlation has nonnegative Dirichlet coefficients, a positive integral for real `s>1`, a completed functional equation and the exact factor `zeta(s)L(s,sym^2 f)`. Nevertheless every possible off-critical Riemann zero is inherited unchanged. Positivity in the initial half-plane and global functional-equation symmetry therefore do not localize the principal divisor.
 
-The live construction must derive a **source-forced nonlinear or canonically non-equivariant cross-character relation**, or a global positivity/duality theorem that genuinely couples the blocks and has a demonstrable principal-zeta consequence. It must also supply an independent localization/sign principle in that same channel.
+The live construction must derive a **nonfactorizing** relation whose sign/spectral theorem already acts on a completed global object and whose conclusion genuinely constrains the trivial zeta factor rather than merely containing it. Candidates include source-forced relative trace/period/cohomological correspondences or global Hermitian positivity, but the coupling must be canonical, survive continuation, and have an explicit principal-zeta consequence.
 
-## Treat richer Artin families, full equivariant covers, and local root-system multivariance as controls
+## Treat finite representation functors and ordinary positive self-correlation as controls
 
-Keeping more character blocks is not the same as feeding them into the principal block. Arbitrary cross-character matrices are programmable unless arithmetic geometry forces them. A candidate must identify the exact coupling operation, why it is canonical, and how its consequence survives analytic continuation and extraction of the Riemann divisor.
+Creating invariant tensors, richer Artin factors, nonnegative coefficients or a positive Rankin--Selberg integral is insufficient when the principal factor still splits. A candidate must identify exactly what prevents factorization at the target readout and why the resulting order/localization principle survives into the critical strip.

@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave scalar single-fiber functional calculus through genuinely coupled source operations
+## Leave fixed-conductor coordinate calculus through genuinely noncommuting or simultaneous-scale structure
 
 **Linked intuitions:** `MI-011-scalar-fourier-zero-existence-is-deformation-dependent`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`.
 
-PC-224--PC-235 close finite scalar fusion, fixed Laurent mode mixing and finite tangent calculus inside classical cyclotomic/Cauchy-packet structure. PC-236 removes the growing-support escape: every uniformly bounded equicontinuous fresh-fiber observable, even with `O(q)` exact cyclic Fourier support, converges to ordinary continuous functional calculus `V(S)` in the commutative bilateral-shift algebra.
+PC-224--PC-237 close finite scalar fusion, growing equicontinuous fresh-fiber functional calculus, and the natural singular one-coordinate continuation inside classical shift/boundary-phase models. PC-238 now closes the most direct regular two-coordinate escape. At fixed coarse conductor `N`, the canonical quotient coordinates `z^q` and `z^N` form an exact CRT tensor product, so their joint bounded equicontinuous limit lies in the commutative cylinder `C(mu_N x T)`; even the coupled chord `|z^q-z^N|^2` is just ordinary regular-polygon spectrum and is prime-blind.
 
-PC-237 now closes the most natural singular scalar continuation at fixed coarse conductor. Each Cauchy packet has exactly Haar spectral measure for `S`; an unbounded scalar multiplier acts precisely when its symbol lies in `L^2(T)`. Inverse-chord powers cross the packet-domain threshold at `alpha=1/2`, and the canonical symmetric regularization above threshold collapses after normalization to a rank-at-most-two boundary-phase kernel. Singular weighting of one fresh coordinate therefore does not create an expanding arithmetic carrier either.
+PC-239 closes the source-forced original-coordinate winding escape at fixed `N`. The refined coordinate has a ballistic Bezout exponent in the fresh packet, but fixed packet-local modes either vanish weakly or reduce to the already classified fresh shift calculus; recentering the escaping channels returns them exactly to the commutative CRT algebra, and keeping all residue channels gives only another bilateral-shift model.
 
-A surviving construction must couple coarse and fresh coordinates before packet separation, retain several genuinely noncommuting source coordinates, take a simultaneous conductor/fresh-prime limit, or use global uniformization/accessory data. Any singular/domain choice must be source-forced and must survive the final contraction rather than merely selecting boundary phases.
+The live construction must therefore leave this fixed-conductor coordinate category: use genuinely noncommuting source operators before multiplication-functional calculus, a simultaneous `N,q->infinity` limit with a proved nonclassical carrier, deliberately scale-dependent modes with source-forced normalization, or global uniformization/accessory data. Any survivor must pass matched coprime-integer controls and show how the final contraction retains prime-specific information.
 
-## Treat regular or singular scalar dependence on one fresh coordinate as a control
+## Treat joint quotient coordinates, original-coordinate drift, and singular one-fiber weighting as controls
 
-Large cyclic degree, continuous functions of `S`, and the canonical inverse-chord regularization all remain classified one-coordinate phenomena. The open variable is a source-forced relation outside scalar functional calculus of a single packet shift, not roughness by itself.
+At fixed coarse conductor, regular coupling of the intrinsic quotient coordinates and source-forced Bezout winding remain classical and largely prime-blind. Large cyclic degree or ballistic packet escape is not a new carrier when exact recentering collapses it to shift calculus. The open variable is a source-forced relation outside the commutative fixed-conductor coordinate algebra, not roughness, winding, or more scalar coordinates by themselves.

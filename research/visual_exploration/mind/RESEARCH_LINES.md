@@ -2,14 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Finish the exact bounded-taper finite-CUE null before testing a new residual
+## Derive the projected off-diagonal finite-CUE covariance before testing an arithmetic edge residual
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`.
 
-VIS-124--VIS-126 derive deterministic pair-weight/window/density controls. VIS-127 shows that a growing hard source window cannot be represented by one logarithmic-size CUE circle while retaining the current fixed-edge asymptotic. VIS-128 replaces it with a bounded tent taper and derives its exact squared-sinc-squared kernel plus the leading composed Montgomery edge profile. VIS-129 then supplies a non-fitted pair-correlation effective-size candidate and exposes the remaining resolution gate: uncertainty of order `1/log L_T` in the ratio `N/L_T` can mimic the desired `1/L_T` residual.
+VIS-123--VIS-129 progressively isolate support-edge finite-size, Montgomery-weight, source-window, capacity and effective-size nuisance directions. VIS-130 corrects the finite-CUE source convention: a bounded physical taper must **replace**, not compound, the full-circle coordinate-overlap window already hidden in the continuous-time spectral form factor.
 
-The next source experiment should therefore freeze a bounded physical taper inside the single-circle capacity, evaluate the **exact finite-`N` weighted+tapered CUE null** using the predeclared effective-size rule and integerization, and propagate any theoretically unresolved transfer error in `N(T)` into the covariance. Only then should untouched zeta windows be used to test an arithmetic residual.
+VIS-131 then derives the exact bounded-tent edge mean. With fixed non-wrapping capacity, the deficit is a Poisson-sampled profile `Phi_(rho,kappa)(v)/L+O(L^-3)` and the mean depends regularly on the effective-size ratio, so an `O(1/log L)` uncertainty in `rho` now moves the null only by `O(1/(L log L))`; the previous same-order mean ambiguity is removed by the corrected windowing.
 
-## Treat hard-window growth and leading-order effective-size matching as controls
+VIS-132 identifies a remaining stochastic nuisance exactly. The realized tapered diagonal fluctuates at order `1/L`, the same scale as the candidate residual, but it is a common scalar across all edge coordinates and can be removed identically by samplewise diagonal subtraction or a predeclared zero-sum contrast. The unresolved gate is therefore the **joint off-diagonal covariance after that projection**, together with finite-height zeta-to-CUE transfer/unfolding uncertainty.
 
-Removing the hard-window logarithmic leakage by making the window grow breaks the literal finite-circle model. Replacing it by a taper fixes capacity but leaves an `O(1/L_T)` universal correction, while knowing only `N(T)~rho_*L_T` may still be too imprecise at that same scale. A residual is meaningful only after these nuisance directions are fixed or carried explicitly in the null.
+Derive that projected covariance under the exact finite-`N` tent/weight convention, determine its asymptotic scale and nuisance eigendirections, and freeze the complete mean-plus-covariance null before inspecting untouched zeta confirmation data. Only then is an independently predicted arithmetic `1/L` residual interpretable.
+
+## Treat full-circle compounding, effective-size mean drift, and realized diagonal noise as resolved controls
+
+The bounded-source mean null no longer inherits the logarithmically amplified effective-size sensitivity of the full-circle convention, while the diagonal `1/L` fluctuation is exactly removable. Neither result implies self-averaging of the off-diagonal quadratic statistic. Do not import ordinary full-circle spectral-form-factor covariance or infer independence from visually separated height windows.

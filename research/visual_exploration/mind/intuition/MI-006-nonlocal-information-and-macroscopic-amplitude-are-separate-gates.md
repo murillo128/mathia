@@ -1,31 +1,35 @@
-# MI-006 — Source specificity begins only after the finite-size, window, and calibration null is resolved at the same scale
+# MI-006 — Source specificity begins only after the finite-size mean and stochastic null are resolved at the target scale
 
-**Evidence level:** exact information/amplitude separation, failed fresh confirmation, and composed support-edge controls through VIS-129
+**Evidence level:** exact bounded-window finite-CUE mean calibration and realized-diagonal covariance control through VIS-132
 
 ## Core intuition
 
-Nonlocal information and visible amplitude are not enough to identify arithmetic structure. At the support edge, universal weighting, source-window geometry, finite-circle capacity and effective-size calibration all create deterministic effects at precisely the scale where an arithmetic residual would be tempting to interpret.
+Nonlocal information and visible amplitude are not enough to identify arithmetic structure. At the Montgomery support edge, finite-circle geometry, source-window convention, effective-size transfer and stochastic normalization can all create effects at the same `1/L` scale where an arithmetic residual would be tempting to interpret.
 
-The current null is now narrow enough to be constructive: use a bounded smooth-enough source taper and an explicit finite-CUE model, but demand calibration precision commensurate with the residual scale.
+The deterministic null is now substantially cleaner than before: using a bounded source taper as a replacement window removes the full-circle coordinate-overlap artifact and regularizes effective-size sensitivity. But this shifts the decisive burden from mean calibration to the covariance of the correctly projected off-diagonal statistic.
 
 ## Strongest justified principle
 
-VIS-121--VIS-123 separate a failed predeclared source panel from the next support-edge opportunity. VIS-124 shows Montgomery's pair weight is a Laplace convolution; VIS-125 adds the window convolution; VIS-126 controls smooth density drift in a compatible regime.
+VIS-123--VIS-129 separate the failed source panel from the support-edge opportunity and identify the full-circle finite-size, Montgomery-weight, window and capacity effects. VIS-130 corrects the source model: the continuous-time full-circle CUE statistic already contains a rectangular coordinate-overlap factor, so convolving a tent on top double-windows the source. The exact bounded-tent null must instead be built directly from the local CUE kernel with the tent overlap and Montgomery weight.
 
-VIS-127 proves that the growing-hard-window fix is geometrically inconsistent with a single `N=Theta(L_T)` CUE circle and the fixed-edge scaling. VIS-128 gives a concrete bounded tent alternative and its exact kernel, showing that pair-weight and taper corrections interact at leading `1/L_T` order. VIS-129 imports the classical pair-correlation effective-size candidate `N_e=rho_*L_T`, fixing a capacity scale, but proves that a generic `Theta(1/log L_T)` uncertainty in `rho` already shifts the null by `Theta(1/L_T)`.
+VIS-131 derives that corrected mean near `q=1`: `C=1-Phi_(rho,kappa)(v)/L+O(L^-3)` with a Poisson-sampled profile and an exact reflected identity. Under a fixed capacity margin, `Phi` is regular in `rho`; therefore `delta rho=O(1/log L)` induces only `O(1/(L log L))` mean error and integerizing `N` costs only `O(L^-2)`. The earlier generic `O(1/L)` effective-size mean ambiguity is not present in this convention.
+
+VIS-132 then computes the realized tent-diagonal contribution. Its mean is one, but its variance is `Theta(N^-2)`, so for `N=Theta(L)` it fluctuates at exactly `1/L`. This nuisance is a common mode across edge coordinates and is removable exactly by subtracting the realized diagonal or using a zero-sum coordinate contrast. The off-diagonal joint covariance after that projection is not determined by these results.
 
 ## Program consequence
 
-Before looking for a fresh source residual, compute the exact finite-`N` composed null for a predeclared bounded taper, effective-size transfer, diagonal/arc convention and covariance. Either justify the transfer of `rho` to `o(1/log L_T)` at the chosen coordinates or propagate the remaining uncertainty as a nuisance direction. Fresh data should only decide a residual after that model is frozen.
+Freeze the exact bounded-taper finite-CUE **mean plus projected covariance** before any fresh source test. Derive the off-diagonal covariance under the same finite-`N`, taper, weight and diagonal convention, identify its asymptotic eigen-directions and required averaging budget, and propagate finite-height unfolding/counting/effective-size uncertainty through the same frozen contrast.
+
+Only after those nuisance directions are controlled should an independently derived arithmetic lower-order term define a residual amplitude/direction for untouched zeta data.
 
 ## Counterevidence / boundary
 
-The pair-correlation effective size is a principled candidate, not a theorem that it transfers unchanged to the weighted tapered support-edge statistic. The exact finite-`N` covariance and any arithmetic lower-order term remain unknown. Special coordinates with vanishing first calibration derivative are not a safe post-hoc escape.
+VIS-131 does not prove the effective-size rule itself for the tapered statistic; it only prices perturbations once a rule is fixed. VIS-132 controls only the diagonal component. The off-diagonal quadratic statistic may have a nonvanishing stochastic floor, and ordinary full-circle SFF non-self-averaging is only a warning, not a theorem for this tapered model.
 
 ## Epistemic status
 
-**An increasingly exact deterministic null and calibration-resolution gate; no source-specific support-edge residual has been established.**
+**Exact deterministic bounded-taper mean null and exact removal of its realized diagonal `1/L` common mode; the projected off-diagonal covariance and source-transfer error remain open.**
 
 ## Falsification criterion
 
-Derive an exact matched null in which the stated window/capacity/effective-size effects disappear at the claimed scale, or show that admissible calibration uncertainty is provably smaller than the current bound. A positive continuation should freeze the complete null and then survive untouched confirmation.
+Show that the bounded-taper replacement formula or Poisson-sampled edge expansion is wrong, or that the realized diagonal is not a common mode with the stated variance scale. A positive continuation should derive the complete projected covariance/null and then survive predeclared untouched confirmation.

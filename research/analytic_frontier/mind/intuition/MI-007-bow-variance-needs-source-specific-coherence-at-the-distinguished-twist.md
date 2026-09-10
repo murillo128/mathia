@@ -1,31 +1,33 @@
-# MI-007 — Bow cancellation is source alignment inside a fixed spectral geometry
+# MI-007 — Bow cancellation is source alignment inside a Fejer-controlled fixed spectral geometry
 
-**Evidence level:** exact post-sieve normal forms, matched local-statistics controls, unitary-gauge reduction, and sharp box near-kernel scale through ANF-154
+**Evidence level:** exact post-sieve normal forms, unitary-gauge reduction, sharp near-kernel scale, spectral multiplicity, and positive finite-rank Fejer reduction through ANF-156
 
 ## Core intuition
 
-The distinguished bow twist does not create a distinguished Gram spectrum. After the exact gauge reduction, the moving-window operator is one fixed untwisted geometry and the arithmetic question is entirely in how the demodulated prime innovation sits inside its spectral decomposition.
+The distinguished bow twist does not create a distinguished Gram spectrum. After the exact gauge reduction, the moving-window operator has one fixed geometry and the arithmetic question is how the demodulated prime innovation sits inside its low singular sector.
 
-Small quadratic energy is therefore an alignment statement, but not automatically a periodicity statement. The positive spectrum itself collapses down to scale `K/N^2`, so substantial distance from the exact periodic kernel can coexist with very small normalized bow energy.
+That sector is neither thin nor geometrically mysterious. It contains a growing ladder of low positive directions, and after dualization its bulk is the classical Fejer Toeplitz finite section with only a positive `O(K)`-rank boundary correction. The hard step is therefore directional source alignment, not existence or scarcity of near-null directions.
 
 ## Strongest justified principle
 
-ANF-150--ANF-152 show that matched post-sieve controls can reproduce the available local prime statistics while retaining diagonal bow variance, and that any fixed amount of source energy above a positive Gram level prevents subdiagonal cancellation.
+ANF-150--ANF-152 show that matched post-sieve controls can reproduce available local prime statistics while retaining diagonal bow variance, and that fixed source mass above a positive Gram level obstructs subdiagonal cancellation. ANF-153 freezes the geometry by diagonal unitary gauge and ANF-154 places the first positive normalized scale at `Theta(K/N^2)` while showing that small energy need not imply closeness to the exact periodic kernel.
 
-ANF-153 proves that the logarithmic twist is a diagonal unitary gauge: normalized spectrum, rank and nullity are independent of the twist. Its exact kernel is the zero-mean `K`-periodic class after de-normalization. ANF-154 then gives the sharp quantitative boundary. The smallest positive normalized box scale is `Theta(K/N^2)` in the bow regime, and a one-quantum detuning of a kernel character has energy of that order while staying globally orthogonal to the exact kernel.
+ANF-155 strengthens the geometry on the cofinal family `N=mK`: detuned box-null Fourier characters span trial spaces giving `nu_+(4 pi^2 J^2 K/N^2) >= J(K-2)`. Thus already at the bottom scale there are `Omega(K)` positive directions, and by scale `1/K` there are `Omega(N)`.
+
+ANF-156 identifies the exact positive spectrum with the dual Gram `B=AD^{-1}A*` and decomposes it as the Fejer Toeplitz matrix `T_N(F_K)` plus a positive boundary correction `E` with `rank(E)<=2K-2` and `tr(E)=K-1`. Positive eigenvalue counts differ from the Toeplitz counts by at most `2K-2` at every threshold. Its quadratic-form formula further shows that a low dual mode must put Fourier mass near the nonzero box-filter nulls while simultaneously paying little nested prefix/suffix boundary energy.
 
 ## Program consequence
 
-Seek a source theorem for the actual demodulated post-sieve innovation that controls spectral mass relative to the fixed bow operator at the collapsing scale relevant to the target. Do not search for twist-specific eigenvalue effects, and do not replace the spectral problem by approximate periodicity unless the much stronger `q=o(K/N^2)` regime has independently been reached.
+Translate the actual demodulated source projection into this dual geometry. The next useful theorem should convert low-singular-sector mass into an explicit twisted prime/Ramanujan correlation statement, or prove that the source necessarily leaves a fixed fraction of its positive component either away from the Fejer null tubes or in the boundary tax. Geometry-only eigenvalue counting is no longer the missing step.
 
 ## Counterevidence / boundary
 
-The spectral reduction is exact but does not show that the primes align with the near-nullspace. The sharp box examples are matched geometric controls, not models of prime coefficients. A global arithmetic relation could still force the required alignment without making the source close to any exact periodic vector.
+The Fejer comparison is a counting statement, not projector convergence, and the rank-`O(K)` boundary correction can still control the very bottom `Omega(K)` directions. ANF-155 uses the cofinal divisibility model `N=mK`; ANF-156 removes that restriction only for bulk counting. None of these results shows that the actual prime source aligns with the true low eigenspaces.
 
 ## Epistemic status
 
-**Exact destination geometry and sharp near-kernel rigidity scale; the source mechanism producing or forbidding the required spectral alignment remains open.**
+**Exact fixed bow geometry with a thick low-spectrum ladder and a Fejer-plus-boundary description of its positive sector; source-specific spectral placement remains open.**
 
 ## Falsification criterion
 
-Invalidate the unitary-gauge reduction or the `K/N^2` near-kernel scale, or derive the required bow cancellation while retaining a quantitatively incompatible amount of source mass in the fixed positive spectral sector. A positive continuation should prove the source-specific spectral projection estimate itself.
+Invalidate the unitary-gauge reduction, the min--max multiplicity bound, or the dual Fejer-plus-positive-boundary decomposition; or derive the required bow cancellation while retaining quantitatively incompatible source mass in the positive sector. A positive continuation should prove the source-to-low-projector correlation estimate itself.

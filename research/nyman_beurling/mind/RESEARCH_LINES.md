@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-specific anchored energy on the multiplicative quotient graph
+## Prove source-specific visibility outside the rooted mixing-invisibility corridor
 
-**Linked intuition:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-002-small-shell-discrepancy-can-destroy-rooted-visibility`.
 
-NB-014--NB-015 reduce progress to a scale-coupled visibility/frame budget on the genuinely new section. NB-016 shows that at `M<=N` the compressed frame sees only multiplication-table directions and is asymptotically rank-sparse on the maximal diagonal. NB-017 removes the depth escape: for every `M`, the quotient channel is a rooted multiplicative incidence graph with exact reciprocal blind modes on unrooted rough-core components, so source-independent coercivity on the whole quotient is impossible at every depth.
+NB-014--NB-017 reduce progress to source-specific multiplicative graph energy and prove that exact reciprocal blind components prevent full-space quotient coercivity at every finite depth. NB-018 shows eventual fixed-section shell mixing but only through an exponentially large period. NB-019 replaces that lcm cost for the actual residual by the intrinsic coefficient/discrepancy budget `A_N`, giving effective mixing once the dilation dominates the target-selected coefficients.
 
-The live theorem must use the actual residual field `s_k=k<r_N,g_k>`. Prove a quantitative anchored Poincare/expansion or generalized-eigenspace estimate showing enough edge variation along a controlled growing path to violate the NB-015 summability budget, despite the exact reciprocal kernel.
+NB-020 then proves that this budget cannot be anomalously cheap: early-shell Möbius inversion forces a coefficient core close to `-mu(n)` and `A_N >= c min(N^2,d_N^{-2})`. NB-021 exposes the more important incompatibility. If the intrinsic shell discrepancy is `o(N)`, then throughout a growing rooted band up to `N/2` the mixed residual converges to zero, so under a hypothetical positive limiting Nyman distance the full semigroup defect grows while its projection back to the old section becomes asymptotically invisible.
 
-## Do not use very-deep fixed-section mixing as a diagonal substitute
+The live theorem must therefore obtain source-specific visibility before the mixing-invisibility band, exploit genuinely unrooted channels beyond the old normal-equation anchor, or prove that the canonical residual has the linear discrepancy needed to avoid NB-021 and then convert that structure into the NB-015 budget. Generic deep mixing by itself is no longer a plausible route.
 
-NB-018 solves the opposite limit `M->infinity` with fixed `N`: deep dilation averages the periodic shell residual to its arithmetic mean `mu_N`, giving exact logarithmic asymptotics for visible defect and frame cost. But resolving that period pays `Lambda_N=lcm(2,...,N)`, exponentially beyond the roughly polynomial diagonal corridor where the live transport budget is meant to operate.
+## Treat small discrepancy, cheap coefficient mixing, and generic frame coercivity as controls
 
-Thus neither generic frame improvement nor taking the depth arbitrarily large is the missing bridge. A useful estimate must be uniform in a scale-coupled regime and source-specific; fixed-section periodic mixing is a control on what eventually happens after the relevant geometry has already been left.
+A small consecutive-shell discrepancy improves averaging but simultaneously drives the rooted mixed scalar to zero. The target-selected coefficient budget also has an inverse-distance lower floor. Any proposed enrichment theorem must track **visible source energy**, not merely how rapidly the residual mixes or how many future frame directions exist.

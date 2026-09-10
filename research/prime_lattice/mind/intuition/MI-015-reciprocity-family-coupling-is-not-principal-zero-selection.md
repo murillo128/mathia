@@ -1,31 +1,33 @@
-# MI-015 — Canonical global prime data needs source-forced cross-block dynamics to constrain zeta
+# MI-015 — Canonical global arithmetic needs a nonfactorizing relation to constrain the principal zeta divisor
 
-**Evidence level:** literature-backed reciprocity/global-selector boundaries and exact adelic class-field character-block collapse through PL-250
+**Evidence level:** exact adelic/Artin block splitting, finite-dimensional representation-functor closure, and global Rankin--Selberg positive matched control through PL-252
 
 ## Core intuition
 
-Prime Lattice does not lack canonical global arithmetic data. The problem is that standard linear readouts decompose it into neighboring character channels, with Riemann zeta sitting in a trivial block that is algebraically protected from the richer Frobenius information.
+Prime Lattice does not lack canonical global arithmetic data, nonlinear representation operations, or positive global constructions. The recurring failure is more specific: the Riemann zeta contribution remains a factor or direct summand that the richer source structure does not constrain.
 
-Thus “keep the whole global object” is still insufficient when its canonical linearization is block diagonal. The missing mechanism is a source-forced relation that actually couples those blocks and remains meaningful in the principal target.
+Thus “couple more arithmetic data” is still too weak. The required mechanism must be **nonfactorizing at the target theorem**: its sign, duality, spectral, or geometric relation must act across the richer source in a way that yields an unavoidable statement about the principal zeta divisor itself.
 
 ## Strongest justified principle
 
-PL-240--PL-248 show that reciprocity families carry mixed-prime information but clean principal residues discard it, while affine/Kac--Moody corrections either stay row-local, retain free scalar choices, or obtain function-field localization only after extra purity input.
+PL-249--PL-250 supply canonical class-field/Frobenius geometry and then keep the full finite abelian cover. The regular representation still decomposes into character blocks, and the trivial character remains exactly the `zeta_Q` factor.
 
-PL-249 supplies canonical class-field geometry: finite abelian covers attach Frobenius monodromy to rational-prime orbits, but the trivial character sends every Frobenius to `1`, giving exactly `zeta_Q`. PL-250 keeps the full cover via the regular representation and still finds a canonical split. Finite Fourier transform decomposes `C[G]` into character lines, `G`-equivariant operators are block diagonal, and Artin determinants factor as `zeta_L= zeta_Q product_{chi≠1}L(s,chi)`. The principal block is not dynamically informed by the others.
+PL-251 removes the abelian/linear loophole for a large canonical class. For any finite Galois group and finite-dimensional complex representation `W`, the averaging projector splits `W=W^G direct-sum W_0`; ordinary Artin formalism therefore factors `L(s,W)=zeta(s)^{dim W^G}L(s,W_0)`. Tensor products, duals, tensor powers, symmetric/exterior powers and Schur functors may create invariant tensors, but those invariants still split as copies of the trivial representation before the Artin determinant is read out.
+
+PL-252 tests a different category: the canonical Rankin--Selberg self-correlation of a level-one Hecke form. Its completed self-convolution has nonnegative coefficients, a positive geometric integral for real `s>1`, analytic continuation and central functional-equation symmetry, yet factors as `zeta(s)L(s,sym^2 f)`. Since the companion is entire, every hypothetical off-line Riemann zero remains a zero of the positive global object. Positivity before continuation does not become critical-strip localization merely because zeta is a factor.
 
 ## Program consequence
 
-Seek a nonlinear invariant, canonically non-equivariant correspondence, or independently justified global positivity/duality relation that forces cross-character interaction and yields an actual statement about the trivial zeta block. The source must determine the coupling; inventing a mixing matrix does not count.
+Seek a source-forced global relation whose decisive theorem cannot be decomposed into an unconstrained principal zeta factor times companions. Relative trace/period formulas, cohomological correspondences, or genuinely global Hermitian positivity are relevant only if one can show where factorization is broken and how the resulting constraint survives analytic continuation into the principal divisor.
 
 ## Counterevidence / boundary
 
-PL-250 is finite abelian and linear/equivariant. It does not rule out nonabelian, nonlinear, cohomological, or genuinely global relations that couple factors. Nor does factorization prove that no theorem about the whole cover can constrain an individual factor; such a theorem simply has not been supplied by the standard Artin formalism.
+PL-251 concerns ordinary finite-dimensional representation-category functors and Artin `L`-readout; PL-252 concerns one canonical Rankin--Selberg self-correlation. Neither rules out infinite-dimensional dynamics, relative trace formulas, nonlinear geometric correspondences, or Weil-type global test-function positivity. Factorization also does not prove that no theorem about the whole object can constrain one factor; it proves that the standard positivity/functorial structure tested so far does not.
 
 ## Epistemic status
 
-**Exact principal-block isolation through both scalar projection and full abelian equivariant retention; source-forced cross-block dynamics remains open.**
+**Exact principal-factor isolation across finite representation functors plus a positive global automorphic matched control; a source-forced nonfactorizing critical-strip relation remains open.**
 
 ## Falsification criterion
 
-Exhibit a standard linear `G`-equivariant full-cover operation whose principal block depends nontrivially on other characters, or invalidate the Artin block decomposition used by PL-250. A positive continuation should derive a canonical coupling outside that class and prove its principal-zeta effect.
+Produce a construction inside the PL-251 or PL-252 classes whose established positivity/symmetry alone forces the inherited zeta divisor onto the critical line, or invalidate their exact factorization. A positive continuation should derive a canonical relation whose target consequence cannot leave `zeta(s)` as a freely inherited factor.

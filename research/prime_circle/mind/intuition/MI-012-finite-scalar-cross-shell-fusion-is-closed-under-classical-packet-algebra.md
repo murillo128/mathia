@@ -1,31 +1,33 @@
-# MI-012 — One-coordinate packet calculus remains classical even after natural singular weighting
+# MI-012 — Fixed-conductor coordinate richness collapses to classical shift/CRT calculus even under coupling and Bezout winding
 
-**Evidence level:** exact coarse-module, Cauchy-packet, equicontinuous functional-calculus, packet-domain, and singular boundary-phase closure through PC-237
+**Evidence level:** exact packet functional calculus, singular boundary-phase closure, CRT two-coordinate decomposition, and original-coordinate drift classification through PC-239
 
 ## Core intuition
 
-Cross-shell richness is not measured by Fourier degree or by making one scalar fiber observable singular. At fixed coarse conductor, the fresh coordinate has a remarkably complete one-coordinate boundary model: regular observables live in the bilateral-shift functional calculus, while the natural supercritical inverse-chord regularization collapses to only two boundary phases.
+At fixed coarse conductor, cross-shell richness is not measured by Fourier degree, singularity, the number of canonical quotient coordinates, or ballistic winding of the original refined coordinate. These operations can look increasingly global while remaining inside a classical commutative coordinate algebra or a recentered bilateral-shift model.
 
-The meaningful escape must therefore create a relation among distinct source coordinates or scales before scalar packet reduction, rather than amplify one fresh coordinate more aggressively.
+The meaningful escape must change the operator category or the scaling regime before coordinate functional calculus collapses the source relation.
 
 ## Strongest justified principle
 
-PC-224--PC-235 show that finite refinement/fusion, fixed Laurent mode mixing and smooth tangent operations stay inside rational-shift/Heisenberg packet calculus. PC-236 permits arbitrary growing exact cyclic support for uniformly bounded equicontinuous profiles and still obtains accumulation operators `V(S)` in `C*(S)`.
+PC-224--PC-236 show that finite refinement/fusion, fixed mode mixing and arbitrary growing exact cyclic support for uniformly bounded equicontinuous fresh profiles stay inside rational-shift or bilateral-shift functional calculus. PC-237 closes the natural one-coordinate singular continuation: inverse-chord powers cross the packet-domain threshold at `alpha=1/2`, while canonical supercritical regularization normalizes to a rank-at-most-two boundary-phase kernel rather than an expanding carrier.
 
-PC-237 handles the obvious singular continuation. The normalized Cauchy packets have exactly Haar spectral measure for `S`, so `V(S)` acts on them iff `V∈L^2(T)`. For `|1-S|^{-alpha}` the domain threshold is exactly `alpha<1/2`. At and above threshold, the canonical symmetric regularization concentrates on the two sides of the anchor and its normalized packet Gram tends to `cos(pi(tau-sigma))`, of rank at most two. The singularity adds boundary phase, not an expanding carrier.
+PC-238 retains the two intrinsic quotient coordinates jointly before packet separation. Exact CRT coordinates give `U=R_r tensor I` and `V=I tensor S_q`, so their bounded regular algebra tends to `C*(R_N,S) ~= C(mu_N x T)`, still commutative. The coupled quotient chord itself reduces to the spectrum of an ordinary regular `Nq`-gon and survives unchanged for matched coprime nonprimes.
+
+PC-239 then reconstructs the original refined coordinate. Its Bezout exponent is proportional to `q`, so fixed non-`N`-divisible modes escape packet-local windows ballistically, but exact recentering returns each moving channel to the same CRT algebra. Retaining all `N` residue channels produces the canonical `N`th-root companion of the bilateral shift, unitarily equivalent to an ordinary bilateral shift. The apparent extra winding is kinematic, not a second arithmetic spectral coordinate.
 
 ## Program consequence
 
-Test exits that change the source category rather than merely the scalar symbol: joint coarse/fresh dependence, multiple noncommuting refinement coordinates, simultaneous conductor growth, or global uniformization data. Then classify the resulting final carrier and domain before assigning arithmetic significance.
+Test exits that genuinely leave fixed-conductor multiplication/shift calculus: noncommuting source operations applied before diagonalization, simultaneous coarse/fresh conductor growth, source-forced `q`-dependent degrees whose normalization has a stable target meaning, or global uniformization/accessory structure. Classify the full limiting carrier and matched coprime controls before assigning arithmetic significance.
 
 ## Counterevidence / boundary
 
-PC-237 is fixed-base and concerns scalar functional calculus with its natural symmetric regularization. It does not cover multi-coordinate singular operators, simultaneous `N,q` growth, source-forced asymmetric domains, or global constructions. Those remain open but are not validated by escaping this theorem's hypotheses.
+PC-238--PC-239 are fixed-`N` results. They do not classify simultaneous `N,q` growth, singular multicoordinate domains, degrees scaling with `q`, or noncommuting operators introduced before coordinate functional calculus. Those remain genuine exits, but merely lying outside the theorem hypotheses is not evidence that they carry prime-specific information.
 
 ## Epistemic status
 
-**Exact closure of regular and natural singular one-fiber scalar calculus; genuinely coupled or global source structure remains open.**
+**Exact closure of a broad fixed-conductor coordinate category, including regular two-coordinate coupling and source-forced original-coordinate winding; noncommuting or simultaneous-scale source structure remains open.**
 
 ## Falsification criterion
 
-Produce a regular or canonically regularized one-coordinate packet observable inside the stated classes whose limiting carrier has more information than the classified shift/boundary-phase model. A positive continuation should instead derive a source-forced multi-coordinate or global operation and prove its target survival.
+Produce a fixed-conductor observable inside the stated coordinate classes whose limiting carrier is not reducible to the classified CRT/shift/boundary-phase models or whose matched coprime control fails. A positive continuation should derive a source-forced operation outside this category and prove that its prime-specific content survives the final contraction.
