@@ -164,17 +164,19 @@ The estimate also prices the obstruction directly. If for some `B`
 \tag{15}
 \]
 
-then along a subsequence
+choose a subsequence `n_k` on which `S_B(n_k)/n_k -> rho_B`. Then (12) gives
 
 \[
-\limsup_{n\to\infty}
-\frac1{n+1}\sum_{i=0}^{n}R_{H_i}
+\boxed{
+\limsup_{k\to\infty}
+\frac1{n_k+1}\sum_{i=0}^{n_k}R_{H_i}
 \le
-Z-\frac{\delta_B\rho_B}{2}
+Z-\frac{\delta_B\rho_B}{2}.
+}
 \tag{16}
 \]
 
-with the limsup understood along a subsequence realizing the transition-density limsup. No independence between the local pair obstructions is needed; the factor `2` is only the maximal edge incidence of a horizon in the transition chain.
+No independence between the local pair obstructions is needed; the factor `2` is only the maximal edge incidence of a horizon in the transition chain.
 
 ## 2. Zero density permits a slowly growing equality-ray depth
 
