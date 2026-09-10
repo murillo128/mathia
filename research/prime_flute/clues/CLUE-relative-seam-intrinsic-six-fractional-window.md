@@ -15,107 +15,105 @@ based_on:
   - research/prime_flute/findings/PF-264-fixed-mass-green-kernel-has-universal-two-index-leading-law.md
   - research/prime_flute/findings/PF-265-unbounded-gap-combes-thomas-makes-mass-mode-green-decay-uniform.md
   - research/prime_flute/findings/PF-266-diagonal-capacity-recovers-uniform-mass-mode-green-amplitude.md
+  - research/prime_flute/findings/PF-267-path-green-correlations-multiply-and-recover-uniform-amplitude-decay.md
 ---
 
 # Does the intrinsic-six thin-seam margin survive the exact finite-seam crossover?
 
 ## Observation
 
-PF-258--PF-260 show that the correctly normalized thin-seam tangent
+PF-258--PF-260 prove that the correctly normalized thin-seam tangent
 
 \[
 H=A^{-1/4}LA^{-1/4}
 \]
 
-retains the fixed-axis separated fractional window needed for every strict `1<R<2`. PF-261 then identifies the finite-seam crossover exactly: its off-diagonal Gegenbauer entries are an odd-mass sum of Green matrices
+retains the separated fractional window needed for every strict `1<R<2`. PF-261 then reduces the exact finite-seam off-diagonal crossover to the odd-mass Green sum
 
 \[
-G_{ij}^{(\varepsilon)}(a)
-=\langle e_i,(L_\varepsilon+a^2)^{-1}e_j\rangle,
+\langle e_i,\mathcal R_{s,r}^0e_j\rangle
+=-\frac{2}{rs^2\sqrt{\kappa_i\kappa_j}}
+\sum_{k\ge0}a_k^2G_{ij}(a_k),
 \qquad
 a_k=\frac{(2k+1)\pi}{2rs}.
 \]
 
-PF-264 gives the sharp fixed-mass law `G_{ij}\sim(2\mu\sqrt{ij})^{-1}(i/j)^\mu`. PF-265 makes the off-diagonal recession uniform in the coupled mass/mode regime through the metric
+PF-264 identifies the sharp fixed-mass two-index Green amplitude, PF-265 makes the mass/mode recession uniform, and PF-266 proves the full coupled diagonal scale
 
 \[
-\Phi_{ij}(\mu)
-=\sum_{m=i}^{j-1}\min\left(1,\frac{c_p\mu}{m+1}\right),
-\qquad \mu=\sqrt{1+a^2},
+G_{ii}(a)\asymp\frac1{\mu(i+1+\mu)},
+\qquad \mu=\sqrt{1+a^2}.
 \]
 
-but with the coarse all-mass prefactor `O(\mu^{-2})`.
-
-PF-266 now closes the separate diagonal-amplitude discriminator. Uniformly in parity, mass, and mode,
+PF-267 now closes the previously open **normalized-correlation** subgate. Exact path Green factorization plus the one-edge capacities inherited from PF-266 give
 
 \[
-G_{ii}^{(\varepsilon)}(a)
-\asymp\frac1{\mu(i+1+\mu)},
+\frac{G_{ij}(a)}{\sqrt{G_{ii}(a)G_{jj}(a)}}
+\le
+\exp\!\left[-c\sum_{m=i}^{j-1}
+\min\!\left(1,\frac{\mu}{m+1}\right)\right],
 \]
 
-and positive-resolvent Cauchy--Schwarz gives
+and therefore the sharp amplitude and a fixed positive distance-decay fraction occur in the same uniform estimate:
 
 \[
-|G_{ij}^{(\varepsilon)}(a)|
+G_{ij}(a)
 \lesssim
-\frac1{\mu\sqrt{(i+1+\mu)(j+1+\mu)}}.
+\frac{e^{-c\Psi_{ij}(\mu)}}
+{\mu\sqrt{(i+1+\mu)(j+1+\mu)}}.
 \]
 
-Thus the coupled transition has **no hidden diagonal amplitude blow-up**: when the modes dominate the mass this recovers the missing `1/(\mu\sqrt{ij})` factor uniformly, while the large-mass regime crosses automatically to `O(\mu^{-2})`. What remains is to keep enough of that amplitude correlated with PF-265's distance decay when the odd ladder is summed.
+For `\mu` larger than the output-mode scale, PF-267 also gives the stronger path product
+
+\[
+\frac{G_{ij}}{\sqrt{G_{ii}G_{jj}}}
+\lesssim
+\left(\frac{C(j+1)^2}{\mu^2}\right)^{j-i}.
+\]
+
+The fixed-axis uncertainty is therefore no longer whether amplitude and recession can be correlated. It is whether their **actual odd-mass sum**, with all PF-261 coefficients and endpoint weights retained, leaves a strict supercritical mode exponent.
 
 ## Research question
 
-Does the rigorous joint envelope
+After inserting PF-267's multiplicative Green estimate into the exact PF-261 odd ladder and performing the complete mass sum before any mode norm, does the resulting endpoint-weighted fixed-axis seam satisfy a uniform separated high-to-low estimate with some `R>1`?
 
-\[
-|G_{ij}^{(\varepsilon)}(a)|
-\le
-\min\left\{
-\frac{C}{\mu\sqrt{(i+1+\mu)(j+1+\mu)}},
-\frac4{\mu^2}e^{-\Phi_{ij}(\mu)}
-\right\}
-\]
-
-already suffice, after summing the **actual** PF-261 odd masses and inserting the outer `A^{-1/4}` endpoint weights, to retain a uniform separated high-to-low exponent `R>1`?
-
-If the minimum loses exactly the critical power, can one prove a normalized one-dimensional Green-correlation estimate
-
-\[
-\frac{|G_{ij}^{(\varepsilon)}(a)|}
-{\sqrt{G_{ii}^{(\varepsilon)}(a)G_{jj}^{(\varepsilon)}(a)}}
-\lesssim e^{-c\Phi_{ij}(\mu)}
-\]
-
-for some fixed `c>0`? Together with PF-266 this would place the sharp mode amplitude and a positive fraction of PF-265's recession in the same bound rather than interpolating between two unrelated estimates.
+If not, which precise coupled regime of `mu_k`, source mode, output mode, and seam scale consumes the margin? A negative answer should isolate that regime rather than reverting to the already-closed question of whether a normalized Green-correlation theorem exists.
 
 ## Why it may matter
 
-The fixed-axis obstruction has narrowed substantially. The tangent window is positive, the complete-lift finite-seam operator and polar-free Robin algebra are closed, the nonlinear crossover has an exact massive-resolvent expansion, resonance is harmless, the fixed-mass normalization is known, the mass-dependent decay metric is uniform, and the missing diagonal amplitude is now uniform as well.
+The fixed-axis route has now passed several formerly independent gates: the intrinsic-six tangent has strict `R>1` room; the finite seam has an exact positive massive-resolvent expansion; the complete-lift Robin algebra is bounded; mass-dependent recession is uniform; the diagonal normalization is uniform; and PF-267 couples normalization and recession multiplicatively using the exact Jacobi path structure.
 
-The remaining distinction is load-bearing rather than cosmetic. PF-261 needs the odd ladder summed **before** the weighted operator norm, and PF-243 ultimately requires a strict `R>1` margin. If the minimum envelope already sums with that margin, no stronger Green theorem is needed. If it lands exactly at the critical threshold, the normalized-correlation estimate isolates the smallest stronger theorem that can couple the two pieces already proved.
+This makes the odd ladder itself the smallest remaining fixed-axis discriminator. A positive summed estimate would move the route from Green analysis to the actual-corridor and Robin--Poisson transport already isolated by PF-256/PF-243. A critical or negative sum would identify a genuine finite-seam obstruction despite the positive pointwise Green structure.
 
 ## Decisive test
 
-Insert PF-265/PF-266's minimum envelope into PF-261's exact off-diagonal identity and split the odd masses only according to the regimes where the amplitude bound or the Combes--Thomas bound is smaller. Perform the complete `k`-sum first, then test the resulting separated matrix against the required weighted `R>1` norm. Do not replace the odd ladder by a fixed-mass asymptotic or interchange a nonuniform limit with the sum.
+Insert
 
-If this closes a strict margin, propagate only that surviving margin through the combined bounded source map
+\[
+G_{ij}(a_k)
+\lesssim
+\frac{e^{-c\Psi_{ij}(\mu_k)}}
+{\mu_k\sqrt{(i+1+\mu_k)(j+1+\mu_k)}}
+\]
+
+into PF-261's exact off-diagonal identity. Split the odd masses only according to the intrinsic scales `mu_k\lesssim i+1`, `i+1\lesssim mu_k\lesssim j+1`, and `mu_k\gtrsim j+1`, refining those cuts only if the algebra requires it. In the last regime use PF-267's stronger product bound rather than discarding path-length decay.
+
+Carry the factors `a_k^2`, `2/(rs^2)`, and `1/sqrt(kappa_i kappa_j)` throughout. Sum over `k` first and then test the resulting separated matrix against the exact weighted `R>1` norm required by PF-243. Do not replace the odd ladder by a fixed-mass asymptotic or exchange a nonuniform mode limit with the sum.
+
+If the fixed-axis sum closes with strict margin, propagate only the proven margin through the bounded normalized Robin source map
 
 \[
 B_{s,r}^0=X_{s,r}^0(I+(X_{s,r}^0)^*X_{s,r}^0)^{-1}
 \]
 
-and only afterwards through PF-256's actual corridor basis, the hypercycle transport, reflection factors, and PF-243 reassembly.
-
-If the minimum is critical, prove or refute the normalized-correlation estimate above using the one-dimensional parity recurrence, Weyl/Green factorization, a ground-state/Dirichlet-form argument, or a sharpened weighted resolvent conjugation. A weaker theorem is acceptable if its **summed** consequence still leaves some strict `R>1` room.
-
-Kill the fixed-axis route only if the actual summed Green kernel, or the combined Robin transform built from it, defeats every strict `R>1` bound. Failure to retain the full PF-264 exponent coefficient is not enough by itself.
+and then through PF-256's actual corridor basis/hypercycle transport and PF-243's localized reassembly. If the sum is critical, identify the exact term/range responsible before introducing any stronger theorem.
 
 ## Evidence boundary
 
-PF-266 proves the two-sided diagonal scale and the uniform Cauchy--Schwarz amplitude. PF-265 proves the independent all-mass/all-mode Combes--Thomas envelope. Neither finding proves that the sharp amplitude multiplies the distance factor, and simple interpolation between them necessarily spends part of one gain to retain part of the other.
+PF-267 proves the normalized path-correlation estimate and hence a genuine amplitude-times-decay Green bound uniformly in mass and mode. It does **not** perform PF-261's complete odd-mass sum or prove that the resulting fixed-axis seam has a strict `R>1` weighted operator bound.
 
-No persisted result yet sums the complete PF-261 odd ladder in the required weighted operator norm, proves strict `R>1` finite-seam smoothing, propagates such a bound through the combined Robin map, or transfers it to the actual `K_a` corridor and global flute reassembly. Nothing here establishes a scattering/determinant identity, a statement about zeta zeros, or RH.
+No persisted result yet propagates a summed finite-seam estimate through the combined Robin map, transfers it to the actual `K_a` corridor, closes global weak-`S_1` reassembly, constructs a scattering/determinant identity, or establishes any statement about zeta zeros or RH.
 
 ## Research disposition
 
-Accepted and narrowed. The diagonal amplitude transition is resolved positively by PF-266. The active discriminator is now **operator-level odd-mass summation of the rigorous PF-265/PF-266 joint envelope; only if that is critical should research strengthen it to a normalized Green-correlation estimate coupling amplitude and recession**.
+Accepted and narrowed. PF-267 resolves the normalized Green-correlation subproblem positively. The active fixed-axis discriminator is now **the exact odd-mass summation of the multiplicative PF-267 Green bound, including endpoint weights and seam-scale prefactors; only the margin surviving that sum is eligible for transport to the actual corridor and Robin--Poisson reassembly**.
