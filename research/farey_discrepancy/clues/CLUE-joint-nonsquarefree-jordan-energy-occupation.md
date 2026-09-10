@@ -1,7 +1,7 @@
 ---
 id: CLUE-joint-nonsquarefree-jordan-energy-occupation
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -83,3 +83,11 @@ If a bound survives, translate it into the precise normalized linear-prefix dual
 ## Evidence boundary
 
 The cited current findings and the two relevant local clue dispositions were inspected at 7797f89e198f582ef44b54596d2d379b8ee540fb. Check current source and adjacent review state before adoption. No weighted occupation theorem, physical vanishing subsequence, numerical experiment, or formal verification is supplied here. Grouping finite sums and Jordan orthogonality are baseline tools; the proposed contribution is a source-sensitive concentration test that is not implied by FD-035's abstract recurrence inputs. If already covered by an existing joint-row result, link that result and close this clue rather than creating another finding from the same decomposition.
+
+## Research disposition
+
+Accepted. `FD-036` supplies a pointwise projective bound of order `H^(-1/2)` but does not answer whether the nonsquarefree rows themselves retain a fixed fraction of the physical Schur energy. The direction therefore remains mathematically distinct and worth pursuing.
+
+[[research/farey_discrepancy/findings/FD-037-bounded-increments-localize-nonsquarefree-occupation-failure-to-a-cube-root-jordan-core.md]] proves the first source-specific reduction: if `U_(H,D)/E_(H,D)` tends to zero along an unbounded sequence, then asymptotically all of `E_(H,D)` must concentrate on Jordan rows `r=O(H^(1/3))`, equivalently quotient arguments of size at least order `H^(2/3)`. Outside that core, the exact one-Lipschitz law for `mathcal H` pairs every squarefree row with a bounded-distance nonsquarefree witness at total cost `O(H)`, which is negligible because `FD-033` gives `E_(H,D)/H -> infinity`.
+
+The precise unresolved question is now whether the actual quotient-shell source can exhibit this cube-root-core concentration. Excluding it by a fixed energy fraction would yield `U/E>=c_D>0` and hence a fixed projective linear-prefix gap. Ambient nonsquarefree density and bounded-increment control outside the core are not enough by themselves to settle that remaining concentration problem.
