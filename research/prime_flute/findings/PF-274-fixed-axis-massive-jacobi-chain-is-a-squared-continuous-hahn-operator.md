@@ -29,16 +29,27 @@ Those two descriptions fit a classical special-function transform exactly. After
 \tag{1}
 \]
 
-Consequently the full matrix of `L` in the corridor basis is unitarily equivalent to multiplication by `1+4x^2` in the continuous-Hahn spectral measure. Equivalently, if `\mathsf H_*` denotes the Jacobi operator for multiplication by `x` in the orthonormal continuous Hahn basis with parameters `(a_*,a_*,a_*,a_*)`, then
+Consequently the full matrix of `L` in the corridor basis is unitarily equivalent to multiplication by `1+4x^2` in the continuous-Hahn spectral measure. There is one essential phase convention at matrix level. Let `\mathsf H_*` denote the standard real Jacobi operator for multiplication by `x` in the orthonormal continuous Hahn basis with parameters `(a_*,a_*,a_*,a_*)`, and let
+
+\[
+D e_n=i^n e_n,
+\qquad
+\widetilde{\mathsf H}_*:=D^*\mathsf H_*D.
+\]
+
+Then the corridor transform carries this degree-dependent phase, and the exact matrix identity is
 
 \[
 \boxed{
-[L]_{\{e_n\}}=I+4\mathsf H_*^2.
+[L]_{\{e_n\}}
+=D^*(I+4\mathsf H_*^2)D
+=I+4D^*\mathsf H_*^2D
+=I+4\widetilde{\mathsf H}_*^2.
 }
 \tag{2}
 \]
 
-The PF even/odd massive Jacobi chains are therefore not merely asymptotically solvable half-line recurrences: they are the two parity restrictions of the square of one classical exactly diagonalized continuous-Hahn Jacobi operator.
+The PF even/odd massive Jacobi chains are therefore not merely asymptotically solvable half-line recurrences: they are the two parity restrictions of the square of one classical exactly diagonalized continuous-Hahn Jacobi operator, expressed in the corridor basis through the phase gauge `D`. In particular the `n\leftrightarrow n+2` entries acquire `i^{\pm2}=-1`, consistently with PF-247's negative same-parity off-diagonal sign.
 
 This gives an exact spectral integral for every bounded Borel function of `L`, including the massive Green kernels used in PF-261--PF-267 and, crucially, the square-root Robin source exposed by [[research/prime_flute/findings/PF-273-seam-square-root-is-a-complete-bernstein-green-continuum-with-mass-one-edge|PF-273]]. It does **not** by itself prove the required `R>1` low-output estimate for the normalized source. Its value is that the live small-mass boundary layer can now be attacked as a concrete continuous-Hahn coefficient problem rather than only through a parameter-uniform family of abstract Jacobi recurrences.
 
@@ -271,7 +282,7 @@ B(a_*+ix,a_*-ix)
 
 The `n`-dependent scalar in (8) is precisely the normalization inherited from the already orthonormal PF corridor modes.
 
-## 3. The PF parity chains are squares of one continuous-Hahn Jacobi operator
+## 3. The PF parity chains are phase-twisted squares of one continuous-Hahn Jacobi operator
 
 The map `U^*` is unitary and the Fourier transform (5) is Plancherel-unitary after multiplication by `(2\pi)^{-1/2}`. Therefore the family
 
@@ -287,9 +298,9 @@ is an orthonormal basis of `L^2(\mathbb R,d\xi)`. Under the same transform,
 \tag{25}
 \]
 
-Equations (13) and (25) prove (9). If one instead uses `x=\xi/2`, the multiplier is `1+4x^2`. Multiplication by `x` is the standard three-term Jacobi operator `\mathsf H_*` for the orthonormalized continuous Hahn family. Squaring it couples only degrees `n-2,n,n+2`, so (2) follows and its even/odd restrictions are exactly the parity chains of PF-247/PF-262.
+Equations (13) and (25) prove (9). If one instead uses `x=\xi/2`, the multiplier is `1+4x^2`. Let `\mathcal S` be the standard real continuous-Hahn spectral transform, so multiplication by `x` corresponds to the standard real Jacobi operator `\mathsf H_*`. Equation (7) shows that the actual corridor transform is `\mathcal T=\mathcal S D` with `D e_n=i^n e_n`. Hence multiplication by `x` in the transformed corridor basis is `D^*\mathsf H_*D`, and multiplication by `x^2` is `D^*\mathsf H_*^2D`. This proves (2). The factor `i^{\pm2}=-1` on the `n\leftrightarrow n+2` entries recovers the negative same-parity off-diagonal sign in PF-247.
 
-This supplies a structural explanation for two facts previously derived directly in the PF basis: exact parity tridiagonality and the complete spectrum `[1,\infty)` of the massive fixed-axis operator. More importantly for the current route, it identifies the **entire** mass family with one fixed classical spectral measure instead of treating each `L+a^2` recurrence as a separate asymptotic problem.
+Thus the even/odd restrictions of `L` are exactly the two parity restrictions of the square of the phase-twisted Jacobi operator `\widetilde{\mathsf H}_*=D^*\mathsf H_*D`. This supplies a structural explanation for two facts previously derived directly in the PF basis: exact parity tridiagonality and the complete spectrum `[1,\infty)` of the massive fixed-axis operator. More importantly for the current route, it identifies the **entire** mass family with one fixed classical spectral measure instead of treating each `L+a^2` recurrence as a separate asymptotic problem.
 
 Equation (10) is immediate from (9). It packages PF-262--PF-267's Green family into the Cauchy transform of the same continuous-Hahn measure, with the physical mass entering only through the pair of poles `\xi=\pm i\mu`.
 
@@ -384,7 +395,7 @@ The transform technology is classical and is **not** claimed as new.
 - NIST DLMF §18.19 records the standard continuous Hahn normalization, Gamma weight, and orthogonality used in (21)--(23).
 - D. Romik, *Orthogonal polynomial expansions for the Riemann xi function in the Hermite, Meixner-Pollaczek, and continuous Hahn bases*, Mathematika **65** (2019), 1104--1156; arXiv:`1902.06330`, independently uses the symmetric continuous Hahn family with parameters `(3/4,3/4,3/4,3/4)` in an expansion of `\Xi`. That is separate prior art and is **not** evidence for the Prime-Flute mechanism: the PF parameter is the different forced value (1), and no zeta information is imported into (2)--(32).
 
-A targeted repository search found no existing Prime-Flute finding identifying the fixed-axis basis with continuous Hahn polynomials, and the recent PF-262--PF-273 route treats the same object through Jacobi recurrence/Green estimates and Stieltjes mass resolution. No novelty is claimed for continuous Hahn polynomials, Fourier diagonalization of `1-\partial_\tau^2`, Parseval, or the generic Jacobi-to-continuous-Hahn transform. The project-specific result is the exact parameter matching forced by PF-238/PF-247, the squared-Jacobi identification (2), and the resulting direct representation (32) of the currently live square-root source.
+A targeted repository search found no existing Prime-Flute finding identifying the fixed-axis basis with continuous Hahn polynomials, and the recent PF-262--PF-273 route treats the same object through Jacobi recurrence/Green estimates and Stieltjes mass resolution. No novelty is claimed for continuous Hahn polynomials, Fourier diagonalization of `1-\partial_\tau^2`, Parseval, or the generic Jacobi-to-continuous-Hahn transform. The project-specific result is the exact parameter matching forced by PF-238/PF-247, the phase-corrected squared-Jacobi identification (2), and the resulting direct representation (32) of the currently live square-root source.
 
 ## 7. Boundaries and falsification
 
@@ -393,7 +404,7 @@ A targeted repository search found no existing Prime-Flute finding identifying t
 3. **Normalization remains open.** The operator `(I+\mathcal R_{s,r}^0)^{-1}` does not commute with the continuous-Hahn multiplier representation because of the corridor `A^{-1/4}` factors.
 4. **Fixed axis only.** No uniformity in shear, variable corridor scale, hypercycle transport, or the canonical tail follows from this transform.
 5. **No imported RH content.** The appearance of the same classical polynomial family in Romik's unrelated `\Xi` expansion supplies prior-art context only. It is not a bridge between the prime flute and zeta zeros.
-6. **Convention check.** Changing the Fourier sign or continuous-Hahn phase changes only the harmless phase `i^n` in (7); the spectral measure, equal-parameter identity, and functional-calculus formulas are unchanged.
+6. **Phase convention is harmless only spectrally.** Changing the Fourier sign or continuous-Hahn phase conjugates the standard Jacobi matrix by a diagonal unitary. The spectral measure and functional-calculus formulas (9)--(11) are unchanged, but the phase cannot be dropped from the corridor-basis matrix identity: it is exactly what produces PF-247's negative same-parity off-diagonal sign.
 
 The finding would fail if PF-238's unitary density were different, if PF-247's Gegenbauer exponent did not satisfy `2a_*=\alpha+1/2`, or if the hypergeometric parameters in (19) did not match (21). Equations (15), (19), and (20) make those three checks explicit.
 
