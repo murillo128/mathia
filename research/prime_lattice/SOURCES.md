@@ -336,3 +336,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 85. **Enrico Bombieri, Paul Garrett**, “Designed Pseudo-Laplacians,” arXiv:2002.07929 [math.NT] (2020). https://arxiv.org/abs/2002.07929. Authors' current manuscript: https://www-users.cse.umn.edu/~garrett/m/v/Bombieri-Garrett_current_version.pdf.
     - Role: main prior-art anchor for `PL-254`. Constructs self-adjoint Friedrichs extensions of distributionally restricted automorphic Laplacians; for Heegner distributions identifies the Eisenstein period with an explicit multiple of `zeta_k(s)/zeta(2s)`; proves that discrete eigenparameters satisfy a stricter resolvent/boundary selector and hence give only a selected subset of the L-zero divisor; analyzes the functional-equation correction that prevents a naive `s <-> 1-s` selector symmetry; proves interleaving and spacing constraints; and, assuming RH plus Montgomery pair correlation, deduces that at most `94%` of ordinary Riemann-zeta zeros can occur as eigenparameters of any one designed operator in the audited family.
+
+## Boundary relations, Weyl-family programmability, and zeta Weyl positivity
+
+86. **Vladimir Derkach, Seppo Hassi, Mark Malamud, Hendrik de Snoo**, “Boundary relations and their Weyl families,” *Transactions of the American Mathematical Society* **358**(12) (2006), 5351–5400. DOI: https://doi.org/10.1090/S0002-9947-06-04033-5.
+    - Role: main abstract realization anchor for `PL-256`; develops boundary relations and Weyl families and proves broad realization results for maximal-dissipative/Nevanlinna families, showing that abstract domain/Weyl existence is highly nonrigid and cannot by itself encode rational-prime arithmetic structure.
+
+87. **Masatoshi Suzuki**, “Aspects of the screw function corresponding to the Riemann zeta-function,” *Journal of the London Mathematical Society* **108**(4) (2023), 1448–1487. DOI: https://doi.org/10.1112/jlms.12785.
+    - Role: zeta-specific prior-art anchor for `PL-256`; records the Lagarias Nevanlinna criterion for `i xi'/xi`, gives screw-function/positivity equivalents to RH, and under RH identifies a Krein-string Titchmarsh–Weyl function whose spectral measure is supported at squared zero ordinates. Shows that the required zeta Weyl positivity is already the hard RH condition.
