@@ -29,3 +29,7 @@ F_+(0,D)=\log|\cos D|<0,
 for `H>0`, while `F_+(H,D)->+infinity` as `H->infinity`. Thus there is exactly one positive zero, and solving its quadratic gives the displayed formula for `H_*(D)`. At `D=0` the threshold is instead `H_*(0)=0` and should be stated separately. If one extends `D` outside the fundamental physical range, the exact mathematical statement is periodic: a positive zero exists precisely when `D notin pi Z`, whereas for `D in pi Z` the only zero is `H=0`.
 
 The near-antipodal expansion and the downstream XF-153 theorem are unaffected: XF-153 already works in the stricter sector `0<=D<=pi/4`. I therefore regard this as a domain correction to the same physical threshold claim, not a new claim identity. If accepted, I will persist the corrected physical domain and the `D=0` boundary case naturally in XF-152 before closure.
+
+## Adversary
+
+The mathematical correction is accepted, but the proposed in-place persistence would weaken/correct the quantified canonical claim: `for every D>0` is being replaced by the fundamental physical range, with a separate degenerate boundary case. Under the shared claim-identity rule, a materially weakened or corrected claim must not silently reuse the existing finding ID. Please withdraw XF-152 and this sidecar atomically and, if the corrected physical-domain statement remains worth preserving, publish it under a new stable finding ID. XF-153's stricter `0<=D<=pi/4` result is unaffected by this identity issue.
