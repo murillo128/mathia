@@ -2,18 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Upgrade the four-adic projective gap to a pointwise or cofinal linear-prefix gap
+## Upgrade multiscale projective rigidity to a pointwise linear-prefix gap
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-024--FD-030 show that squarefree ternary data and every unbounded sublinear prime-ancestry prefix can coexist with square-root GCD-duality saturation. FD-031 identifies the first genuinely different regime: at linear ancestry breadth, saturation is equivalent to projective alignment of the physical Mertens tail with one Schur-complement equality direction.
+FD-024--FD-034 show that sublinear ancestry can coexist with square-root GCD-duality saturation, while linear ancestry exposes a projective equality ray and square-divisor Jordan modes force a positive normalized defect on average along every complete `4`-adic chain. Absolute tail mismatch alone is not coercive because the physical Mertens energy is unconditionally superlinear.
 
-FD-032 finds an unconditional absolute obstruction: the equality ray vanishes on nonsquarefree coordinates while the physical tail is forced nonzero on a macroscopic terminal block, giving squared Schur distance `Omega(H)`. FD-033 shows why that alone does not yield a uniform angle gap. Critical-line zeros force the physical Schur-tail energy itself to be superlinear, so the absolute transverse defect may be diluted projectively; the tempting route `E=O(H)` is impossible.
+FD-035 proves that square-divisor renormalization by itself still cannot force a universal pointwise polynomial gap: sparse bad scales can hide between the forced multiplicative descendants. FD-036 identifies a sufficient missing regularity theorem. A quotient-shell Lipschitz bound propagates the multiscale defect strongly enough to force a pointwise half-power linear-prefix gap. FD-037 localizes a complementary occupation failure: with bounded increments, nonsquarefree escape is confined to a cube-root Jordan core.
 
-FD-034 then recovers a genuine normalized obstruction from the square-divisor Jordan modes. The projective residual at horizon `H` controls a scaled copy of the physical energy at `floor(H/4)`, and iteration forces a positive geometric/Cesaro lower bound for the normalized defect along every complete `4`-adic chain. In particular, half-linear ancestry has a strict average saturation gap even when a different admissible source is chosen at every horizon.
+The live theorem is therefore no longer another density estimate. Derive the required shell-to-shell regularity from the arithmetic source, or control the cube-root Jordan core strongly enough to prevent sparse occupation escape. Either route must convert the existing multiscale average obstruction into a cofinal/pointwise normalized defect without assuming the Mertens bound it is meant to help prove.
 
-The live theorem is now to upgrade this multiscale average rigidity. Prove a pointwise/cofinal lower bound on the normalized Schur defect, extend the square-divisor renormalization to enough multiplicative scales to prevent sparse escape, or combine it with endpoint reachability so that a saturating subsequence cannot hide between the forced `4`-adic defects.
+## Treat renormalization and local scale regularity as separate currencies
 
-## Treat absolute tail distance and superlinear energy as separate controls
-
-Linear-scale support mismatch is real, but absolute distance alone is not coercive because the physical Mertens energy is unconditionally superlinear. The useful invariant is normalized/projective defect. Conversely, FD-034 shows that this projective escape cannot persist densely along a full multiplicative chain. Future arguments should preserve that normalization rather than return to raw tail norms or sublinear ancestry counts.
+Multiplicative self-similarity creates forced bad descendants but does not by itself control the gaps between them. A pointwise theorem needs a second ingredient linking nearby horizons. Quotient-shell Lipschitz rigidity is one exact sufficient mechanism; bounded-increment localization of the remaining nonsquarefree mass is another. Future work should attack those source-side regularity currencies rather than strengthen raw square-divisor density alone.

@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive the post-calibration growing-window quartic source moment
+## Derive the post-calibration growing-window quartic source moment with moving-window control
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`, `MI-007-moment-null-packets-pay-an-order-matched-variation-gate`.
 
-VIS-130--VIS-144 reduce the restricted-support edge companion to a shrinking low-frequency packet and propose vanishing second moment as a way to cancel the universal finite-CUE quadratic response. VIS-145 closes the hoped-for quadratic selectivity: the same moment condition annihilates the quadratic response of **every** smooth finite-window source correction represented through the same centered-cosine transform. Any surviving deterministic distinction begins at quartic order or through a failure of that common representation/uniformity.
+VIS-145--VIS-147 reduce the restricted-support companion to a deterministic source-side quartic gate. Second-moment cancellation removes the quadratic response of every smooth finite-window correction in the common representation, unit quartic response costs `b^-4` total variation, and the familiar finite-height pair-correlation corrections are absorbed by effective finite-CUE calibration rather than supplying the required growing-window fourth moment.
 
-VIS-146 prices the resulting normalization exactly. A packet supported in `[-b,b]` has `|m_{2j}| <= b^(2j)||nu||_TV`; after `m_2=0`, unit quartic response costs at least `b^-4` total variation. Because theorem/transfer errors bounded in sup norm are amplified by the same variation, packet rescaling cannot improve the robust signal/error ratio. A quartic carrier requires the underlying error to beat `|A_4| b^4` before optimization matters.
+VIS-148 sharpens the transfer problem: a growing-window primitive cancellation estimate does not follow automatically from a derivative-level estimate because moving boundaries and kernel variation contribute at the same stage. VIS-149 supplies an exact matched control showing that lower-moment agreement can coexist with a deliberately isolated fourth-moment source error. Pair/second-order calibration therefore cannot certify the quartic channel.
 
-VIS-147 shows that the familiar finite-height pair-correlation corrections do not yet provide `A_4`. The displayed `rho_bar^-2` and `rho_bar^-3` terms are absorbed by the standard effective finite-CUE size/scale calibration, while the actual observable integrates over a source window of unfolded radius `Theta(L)`. Fixed-spacing `O(rho_bar^-4)` control gives no fourth-moment bound on that growing window.
+VIS-150 adds an independent clock control relevant to visual phase evidence. After removing the common Gram-lag rotation, lags below `log^2 N` can remain a single deterministic moving clock, the `log^2 N` scale produces a deterministic logarithmic torus curve, and even Haar behavior above that scale can arise from deterministic inverse-Gram shear. Apparent torus mixing is therefore not source evidence unless it survives this clock model.
 
-The live theorem is therefore source-side, not packet-design: derive the zeta-minus-calibrated-finite-CUE residual in the exact frozen bounded-source representation and control its weighted fourth moment together with an error envelope strong enough for the `VIS-146` gate. Only if that deterministic quartic channel survives should variance and four-level covariance become the next bottlenecks.
+The live theorem remains source-side: control the zeta-minus-calibrated finite-CUE residual in the exact growing-window representation, including the primitive boundary terms, and prove a weighted fourth-moment estimate strong enough for the total-variation gate. Phase-space diagnostics should be treated only as candidate evidence after subtracting the deterministic Gram-clock hierarchy.
 
-## Treat moment cancellation, rescaling, and effective-CUE lower-order terms as controls
+## Treat low moments, fixed-window transfer, and apparent phase mixing as controls
 
-Second-moment cancellation removes all common quadratic finite-window response, not just the null. Increasing packet weights amplifies total-variation-linear uncertainty at the same rate as the desired moment. And the standard first finite-height corrections are calibration directions rather than an already-isolated arithmetic residual. A viable companion must expose information after all three controls.
+Moment-null packets can hide fourth-order source error, derivative estimates can fail at moving boundaries, and Haar-looking Gram-lag fields can be deterministic clock shear. A viable visual companion must survive all three controls before its geometry is promoted to arithmetic structure.

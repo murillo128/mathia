@@ -8,16 +8,16 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the useful rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force a near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Exploit the weighted moving-tail quotient as a source-faithful conditioned skeleton
+## Use the weighted skeleton through its exact Möbius/Vasyunin dual oracle
 
 **Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-024--NB-032 show that unrestricted low Gram energy and adjacency are not enough, but moving-tail differences form a certified target-poor nuisance sector whose quotient preserves the Nyman distance. NB-033 makes that quotient source-faithful: every coefficient below the cutoff survives unchanged, the tail collapses to one endpoint scalar, and a deterministic polylogarithmic cutoff preserves the finite-section distance multiplicatively while retaining the inverse-distance Möbius core.
+NB-024--NB-034 isolate a weighted moving-tail quotient that preserves target distance, every head coefficient, and one weighted tail scalar while keeping conditioning polynomial in the retained dimension and independent of the discarded upper section. NB-035 shows that the retained tail scalar is not a free compressed coordinate: a bounded reciprocal-Möbius selector recovers it exactly, so the skeleton remains source-locked.
 
-NB-034 improves the metric geometry further. Weighted tail edges `n g_n-(n+1)g_{n+1}` are exactly the kernel of the first `M-1` harmonic-shell observations. Their orthogonal quotient has dimension `M-1`, preserves every head coefficient and one weighted tail sum, loses at most `1/M` in squared target distance, and has the explicit uniform bound `cond_2=O(M^2 (log M)^3)` independently of the upper section `N`. Thus a near-logarithmic-dimensional canonical skeleton can be both target-faithful and polynomially conditioned in its retained dimension.
+NB-036 sharpens this into an exact dual description. Vasyunin's classical biorthogonal defects give explicit readouts for every retained skeleton coordinate; the head coordinates are the original coefficients and the endpoint coordinate is the weighted tail sum. Their norms scale only linearly with the retained index, yielding inverse-distance prefix locking. Thus the missing “target oracle” is no longer an unknown projection computation, but it is also not cheap independent information: it is explicitly Möbius-bearing.
 
-The live theorem is now to use this explicit skeleton rather than merely certify it: prove that the Möbius-locked core or the retained weighted tail scalar obeys a quantitative constraint that forces the Nyman distance down, or enlarge the early-shell observation family while keeping target loss and conditioning controlled. The source theorem must act on the retained coordinates, not on discarded tail nuisance directions.
+The live theorem is to exploit this exact duality without circularity. Either derive a target-relevant aggregate of the Vasyunin defects that can be controlled strictly cheaper than the corresponding Möbius data, or prove that the weighted skeleton cannot yield an RH-scale gain without paying essentially the same source bill. Enlarging the quotient or computing its Gram matrix more accurately is secondary unless it changes that oracle complexity.
 
-## Treat raw low eigenvalues and unrestricted adjacency as controls
+## Treat finite-dimensional compression and source cost as separate gates
 
-Low Gram energy is abundant, raw Euclidean target loading can be misleading, and the full adjacent family spans the approximation space. The positive boundary is a quotient with a proved target-loss estimate, explicit source coordinates, and conditioning independent of the discarded upper tail.
+A quotient can be low-dimensional, target-faithful, and well-conditioned while its coordinates remain arithmetically expensive. The Vasyunin dual basis makes that distinction explicit. Future proposals should price the source theorem needed to populate the retained coordinates, not infer tractability from dimension or condition number alone.
