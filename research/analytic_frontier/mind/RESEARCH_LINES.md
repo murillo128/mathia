@@ -6,18 +6,16 @@ This file holds the current mathematical questions suggested by the durable anal
 
 **Linked intuition:** `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-134--ANF-143 progressively remove raw depth, span, slack-spend, coefficient-spread, and fixed exponential zero-pinching as existential obstructions to a same-profile cascade. ANF-143 goes further: source-chosen odd dilations can preserve exact annihilation while making residual slack positive, total translated span summable, support only `O(A)`, and all finite-depth conditioning costs absorbable by slow diagonalization.
+ANF-134--ANF-143 progressively remove raw depth, span, slack-spend, coefficient-spread, and fixed exponential zero-pinching as existential obstructions to a same-profile cascade. The live gate remains whether the positive late cloud carries source energy/coherence that is fatal for the near-extremizer or can always be excised as negligible mass while preserving the source objective.
 
-The live gate is therefore whether the resulting positive cascade is **fatal for the source near-extremizer rather than removable as negligible mass**. A useful theorem must quantify source energy/coherence carried by the late cloud or prove that the cloud can always be excised while preserving the source objective.
-
-## Prove source-specific near-nullspace alignment for the post-sieve bow innovation
+## Prove source-specific spectral alignment in the fixed bow geometry
 
 **Linked intuition:** `MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist`.
 
-ANF-144--ANF-149 reduce the bow to the source-selected twisted variance of `vartheta-Lambda^sharp` after support, reality, magnitude, prime-power, and generic coherence controls. ANF-150--ANF-151 then show that matched post-sieve controls can reproduce the finite Ramanujan pair profile, the correct conditional density, and even a growing truncated Hardy--Littlewood local hierarchy while the bow variance remains of diagonal order.
+ANF-150--ANF-152 show that increasingly rich post-sieve local controls do not force bow cancellation and reduce the target to near-nullspace alignment. ANF-153 then freezes the geometry: the distinguished logarithmic twist is a diagonal unitary gauge, so the normalized Gram spectrum is twist-independent and only the demodulated source moves. ANF-154 prices the exact-kernel analogy: the smallest positive normalized box scale is `Theta(K/N^2)`, and detuned characters attain that scale while remaining maximally far from the periodic kernel.
 
-ANF-152 gives the exact destination-space formulation: the normalized post-sieve innovation must asymptotically concentrate in the near-nullspace of the moving-window Gram operator. Any fixed fraction of innovation energy retained above a positive spectral level leaves a diagonal-size residue. The live theorem is therefore a source-specific mechanism forcing this spectral alignment, or a quantitative delocalization theorem that closes the route.
+The live theorem must therefore control the actual demodulated prime innovation against the **fixed** bow spectral decomposition. It should force enough mass into eigenvalues at the source-required collapsing scale, or prove quantitative delocalization that rules the route out. Ordinary `q=o(1)`, and even `qK=o(1)`, do not justify global approximate periodicity.
 
-## Treat local singular-series agreement and source-blind geometry as controls
+## Treat twist-dependent spectra, local singular-series agreement, and periodicity heuristics as controls
 
-Support, coefficient magnitude, reality, actual prime location, generic twist geometry, finite Ramanujan matching, and a growing local Hardy--Littlewood hierarchy are all compatible with failure of the bow target in the current controls. A new estimate must use the signed distinguished-twist source relation in the destination quadratic form itself; componentwise absolute values or scalar local-variance surrogates erase the needed cancellation.
+Support, magnitude, prime location, finite Ramanujan matching, growing local Hardy--Littlewood data, and the distinguished twist can all coexist with diagonal-size variance in matched controls. The twist changes source coordinates, not Gram eigenvalues. Exact periodic-kernel rigidity only becomes global at the much stronger `q=o(K/N^2)` scale, so the missing arithmetic content must be a source-specific spectral relation rather than a geometric or recurrence slogan.

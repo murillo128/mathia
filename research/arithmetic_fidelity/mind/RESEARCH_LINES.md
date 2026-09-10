@@ -6,18 +6,18 @@ This file holds the current mathematical questions suggested by the durable arit
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
-AF-215--AF-220 show that exact moment cancellation forces ordered sign complexity while the Euler-log kernel is only finitely sign-regular on controlled windows. The remaining theorem is quantitative: relate the source-forced sign budget to an observation window whose separation/curvature modulus survives the shrinking prime-tail mesh at the resolution consumed by the target.
+AF-215--AF-220 force ordered sign complexity but leave the quantitative transfer into the shrinking Euler-log observation window open. The next theorem must relate the source sign budget to a separation/curvature modulus at the resolution actually consumed by the target.
 
 ## Price the actual target metric before calling a representation compressed
 
 **Linked intuitions:** `MI-019-faithful-translation-lifts-are-affine`, `MI-020-prime-tail-localization-has-an-information-conservation-law`.
 
-AF-221--AF-230 show that translation/localization repair carries a real information bill even when visible alphabets are small or stochastic. AF-231--AF-233 sharpen that boundary: the first-order price can drop when the downstream observable contracts the prime tail, and for a monotone target with derivative exponent `rho` the absolute-error phase is exactly controlled by `rho` plus the requested accuracy exponent. The same observable can return to the unshifted source-localization phase under a relative/logarithmic metric.
+AF-221--AF-233 show that localization has a real information bill and that a genuinely contracting downstream statistic can lower that bill under an absolute metric while relative accuracy restores the source-scale phase. A useful compression claim still needs both a cheaper target geometry and a theorem that the final arithmetic argument consumes only that target.
 
-The live theorem is therefore not another coding trick. Identify an RH-facing statistic or quotient that is provably sufficient for the final argument, declare its fidelity metric, and derive that target's information price. A cheaper target-relative phase is useful only if the theorem really consumes that target rather than exact prime identity in disguise.
+## Find a source bridge into the Li root-rate quotient beyond sublinear zeta jets
 
-## Separate target sufficiency from target contraction
+**Linked intuitions:** `MI-020-prime-tail-localization-has-an-information-conservation-law`, `MI-021-coarse-rh-endpoints-can-still-require-deep-source-access`.
 
-A contracting scalar observable can be cheap at coarse absolute accuracy while remaining injective at exact accuracy. Conversely, relative normalization can erase the apparent damping advantage. AF-231--AF-233 are controls against inferring arithmetic compression from amplitude decay alone.
+AF-234--AF-235 identify two RH-sufficient Li quotients, culminating in the coarse root-rate criterion: subexponential additive errors cannot change whether the Li sequence has root rate at most one. AF-236 shows that this coarse endpoint is nevertheless invisible to every canonical local zeta jet of depth `K_n=o(n)` after the exact binomial reconstruction.
 
-A successful continuation must establish both sides: a lower-information target geometry and a source-to-target sufficiency theorem strong enough for the intended arithmetic conclusion.
+The live question is therefore not merely to tolerate larger output error. It is to derive a noncircular source-to-Li mechanism that reaches the deep coefficient range where root-rate information can live, or prove another RH-sufficient target whose source access is genuinely cheaper. No sublinear-jet truncation should be credited as a root-rate approximation simply because the quotient itself is coarse.

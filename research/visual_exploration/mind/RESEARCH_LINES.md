@@ -2,18 +2,14 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Build the next source residual against the exact composed support-edge null
+## Finish the exact bounded-taper finite-CUE null before testing a new residual
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`.
 
-VIS-111--VIS-123 separate nonlocal information, macroscopic amplitude, finite-CUE calibration, and fresh-source confirmation, with the frozen third-factorial panel failing its own confirmation gate. VIS-124--VIS-126 now resolve several deterministic support-edge effects that a new experiment must remove before arithmetic interpretation.
+VIS-124--VIS-126 derive deterministic pair-weight/window/density controls. VIS-127 shows that a growing hard source window cannot be represented by one logarithmic-size CUE circle while retaining the current fixed-edge asymptotic. VIS-128 replaces it with a bounded tent taper and derives its exact squared-sinc-squared kernel plus the leading composed Montgomery edge profile. VIS-129 then supplies a non-fitted pair-correlation effective-size candidate and exposes the remaining resolution gate: uncertainty of order `1/log L_T` in the ratio `N/L_T` can mimic the desired `1/L_T` residual.
 
-Montgomery's classical pair weight is exactly a Laplace convolution in support-edge frequency. A hard source window contributes an independent squared-sinc convolution whose ramp-edge leakage is logarithmically enhanced, while a sufficiently regular taper removes that log loss. Smooth Riemann--von Mangoldt density drift is not itself a fatal obstruction: there is a broad mesoscopic window regime in which both window leakage and center-density linearization are `o(1/log T)`.
+The next source experiment should therefore freeze a bounded physical taper inside the single-circle capacity, evaluate the **exact finite-`N` weighted+tapered CUE null** using the predeclared effective-size rule and integerization, and propagate any theoretically unresolved transfer error in `N(T)` into the covariance. Only then should untouched zeta windows be used to test an arithmetic residual.
 
-The next source thread should therefore predeclare a new statistic together with its **composed weighted/windowed finite-size null**, covariance/decision rule, and untouched confirmation material. The remaining transfer questions are effective finite-CUE size/arc matching, diagonal and compactification conventions, stochastic counting fluctuations beyond the smooth main term, and any genuinely arithmetic lower-order contribution.
+## Treat hard-window growth and leading-order effective-size matching as controls
 
-## Treat information admission, amplitude, and null matching as separate gates
-
-A statistic may carry information beyond fixed local quotients and still fail fresh-source confirmation. Likewise, a support-edge bump can have exactly the expected `1/log T` visual scale and still be produced deterministically by the pair weight or source window.
-
-A residual is promotable only after its coordinate map, pair weight, window/taper, finite-size null, covariance, and fresh-evidence gate are matched at the same transformation scale. Smooth density variation should be controlled quantitatively rather than used as a generic excuse to abandon the support-edge regime.
+Removing the hard-window logarithmic leakage by making the window grow breaks the literal finite-circle model. Replacing it by a taper fixes capacity but leaves an `O(1/L_T)` universal correction, while knowing only `N(T)~rho_*L_T` may still be too imprecise at that same scale. A residual is meaningful only after these nuisance directions are fixed or carried explicitly in the null.

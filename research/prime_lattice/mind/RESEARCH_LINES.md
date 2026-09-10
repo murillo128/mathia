@@ -2,18 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Couple distinct rational-prime rows and keep that relation in the principal zeta channel
+## Force cross-character interaction that remains visible in the principal zeta block
 
 **Linked intuitions:** `MI-004-prime-shift-symmetry-is-not-a-zero-hamiltonian-principle`, `MI-007-pointing-breaks-gauge-but-exposes-additive-correlations`, `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, `MI-012-one-point-target-complexity-still-scalarizes-under-equidistribution`, `MI-013-kms-offdiagonal-freedom-is-boundary-data-not-prime-coupling`, `MI-014-prime-exchangeability-erases-normal-arithmetic-equilibrium`, `MI-015-reciprocity-family-coupling-is-not-principal-zero-selection`.
 
-PL-240--PL-245 show that genuine reciprocity-family coupling is lost by the clean principal zeta residue, while polar/higher-rank affine channels and free null-root corrections remain scalar or selectable. PL-246 sharpens the affine boundary: an explicit extra symmetry canonically selects only a scalar Pochhammer correction, while the zero-bearing function-field block is centered using Weil purity as input.
+PL-240--PL-248 show that reciprocity-family coupling, affine/Kac--Moody multivariance and imported function-field purity do not automatically survive or explain the principal Riemann channel. PL-249 adds canonical adelic/class-field Frobenius monodromy and shows that the trivial Artin character producing `zeta_Q` erases it exactly.
 
-PL-247--PL-248 refine the apparent indefinite Kac--Moody escape. Indefinite type does give genuinely multivariable imaginary-root support, but that multivariance lives **inside one fixed rational-prime row**, among root/Dirichlet-variable columns. It is not by itself a coupling between distinct rational primes. Established cross-prime interaction instead enters through twisted multiplicativity/residue-symbol reciprocity—the mechanism already known to disappear in the straightforward principal Riemann extraction. The known canonical function-field selector adds local-to-global Verdier duality and cohomological purity beyond Weyl invariance.
+PL-250 closes the direct linear escape “keep the full cover.” For a finite abelian cover the regular representation canonically splits into one-dimensional character blocks; every `G`-equivariant operator, trace or ordinary determinant respects that decomposition, and the trivial block remains exactly `zeta(s)` while the extra Frobenius information lives in the other Artin factors. Global retention without cross-block dynamics is therefore still target-decoupled.
 
-The live construction must therefore satisfy three gates simultaneously: source-derived coupling among distinct rational-prime rows, canonical global selection not inserted by hand, and survival of that relation in the same principal channel where an independently proved positivity, self-adjointness, purity, trace, or rigidity principle can localize the Riemann divisor.
+The live construction must derive a **source-forced nonlinear or canonically non-equivariant cross-character relation**, or a global positivity/duality theorem that genuinely couples the blocks and has a demonstrable principal-zeta consequence. It must also supply an independent localization/sign principle in that same channel.
 
-## Treat local Kac--Moody multivariance, affine correction factors, and imported purity as controls
+## Treat richer Artin families, full equivariant covers, and local root-system multivariance as controls
 
-Higher affine rank does not make the standard correction multivariable; indefinite imaginary support is local row complexity rather than mixed-rational-prime geometry; and a geometric selector whose dominance axiom is already cohomological purity does not derive ordinary critical-line localization by analogy.
-
-A viable continuation must make the rational-prime row coupling and global selector part of one number-field/source-derived object. Otherwise additional root-system dimension is a programmable local container rather than a source-forced zero-selection mechanism.
+Keeping more character blocks is not the same as feeding them into the principal block. Arbitrary cross-character matrices are programmable unless arithmetic geometry forces them. A candidate must identify the exact coupling operation, why it is canonical, and how its consequence survives analytic continuation and extraction of the Riemann divisor.

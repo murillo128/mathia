@@ -1,35 +1,31 @@
-# MI-013 — Möbius cancellation has a signed near-diagonal middle category, and the logarithmic split isolates its rough parity price
+# MI-013 — The logarithmic rough split isolates Möbius parity rather than weakening the target
 
-**Evidence level:** exact finite-algebra, Gallagher-localization, variance-pricing, smooth-remainder, and logarithmic rough-factor results through MC-180
+**Evidence level:** exact convolution inversion, fixed-power exponent reversibility, and classical squarefree-support variance through MC-184
 
 ## Core intuition
 
-Gallagher localization supplies a genuine middle category between phase-blind support information and a global Mertens endpoint: its finite-time heat energy is an exact signed near-diagonal Möbius energy. The difficulty is quantitative. Strong local suppression has an explicit global price, and several familiar decomposition routes lose the needed power before they reach polynomial windows.
+A useful decomposition must move the difficulty into a sharper source variable rather than merely smooth it. The logarithmic rough split now passes that test in a precise sense: on the relevant scale families it is reversible at the fixed-power variance exponent, while the unsigned eligibility layers can be controlled separately.
 
-The newest source-specific result changes where the burden sits. Möbius squarefree support allows all primes above a logarithmic cutoff to be carried by one structured **rough parity block**, eliminating the dense smooth-support remainder without paying growing one-prime-at-a-time extraction depth. The missing theorem is now signed cancellation inside that rough block.
+What survives is not generic roughness or support density. It is the signed orientation supplied by squarefree prime-factor parity on the rough block.
 
 ## Strongest justified principle
 
-MC-172 derives the signed near-diagonal Gallagher energy; MC-173 shows that support-only autocorrelation can erase exactly the phase it needs. MC-174--MC-177 price local variance strength against zero-free/Mertens consequences, including the critical-shell and direct-transfer exponent budgets.
+MC-180 uses exact squarefree Möbius support to place the short-interval burden on one rough parity block. MC-181 proves the inverse kernel has only subpower cost at the logarithmic cutoff, so a fixed-power variance gain for the rough block transfers back and failure to gain cannot be blamed on an irreversible smoothing step.
 
-MC-178 shows that Chinis's published square-root mechanism and block extension remain only subpower better than coherent variance at fixed polynomial windows because a polynomial smooth cutoff leaves a positive-density smooth sector. MC-179 proves that lowering the terminal cutoff and continuing to discard that sector by support requires prime-by-prime extraction depth of order `log X/log log X` for a fixed-power gain.
-
-MC-180 bypasses that method barrier using the exact convolution `mu=f_y*g_y` at `y=c log X`. The small-prime squarefree factor has only subpowerly many divisor states and support below `X`, so the pure small-prime sector vanishes on the target interval. A uniform fixed-power variance bound for the resulting rough factor at the divisor-scaled windows transfers to full Möbius variance with the same exponent up to subpower loss.
+MC-183 shows that the usual unsigned rough indicator is not `|g_y|`: it forgets squarefreeness and parity. MC-184 then controls the correct unsigned pre-sieved squarefree support for `theta<6/11` at a much smaller variance scale. In that range, support fluctuations are no longer the obvious obstruction; the unpriced variable is the Möbius sign across eligible rough squarefree integers.
 
 ## Program consequence
 
-Treat the rough parity block as the current source-attainable candidate currency. Prove a phase-sensitive local second-moment gain for it, or identify an exact obstruction showing that its parity structure still costs the same as full Möbius cancellation. Keep the horizon, averaging measure, variance exponent, and induced global Mertens consequence explicit.
-
-The gain in MC-180 is architectural, not yet analytic: it removes the smooth-support/depth bookkeeping obstruction but does not supply rough-number cancellation.
+Target a phase-sensitive theorem for the rough squarefree parity field, retaining enough multiplicative ancestry to distinguish even from odd numbers of prime factors. Do not spend further effort improving unsigned rough counts unless the estimate demonstrably enters the signed variance conversion.
 
 ## Counterevidence / boundary
 
-MC-180 does not prove any new Möbius variance estimate. Its transfer requires uniform control across the scaled rough windows, and support density or roughness alone does not control the signed off-diagonal. Other signed local statistics may bypass the Gallagher interface, but they must still be priced in their final currency.
+The classical support bound is restricted to its stated window range and does not imply sign cancellation. Exponent reversibility says the decomposition is honest, not that the rough parity problem is easier. A source theorem may still require genuinely new arithmetic input.
 
 ## Epistemic status
 
-**Supported signed intermediate category with an exact source-specific rough-factor reduction and explicit quantitative pricing; no new Möbius variance theorem or RH consequence is established.**
+**Exact relocation of the fixed-power burden onto signed rough parity, with unsigned support controlled in a substantial range; no new Möbius cancellation exponent is established.**
 
 ## Falsification criterion
 
-Refute the MC-180 exact logarithmic split/variance transfer, or produce a support-only argument that controls the signed Gallagher energy despite the matched phase controls. A positive continuation should prove and price genuine cancellation in the rough parity block or another source-sensitive intermediate category.
+Show that the logarithmic split loses a fixed power on an admitted dilation-stable family, or that the pre-sieved squarefree support itself already forces the claimed signed variance gain without parity information. A positive continuation should estimate the signed parity field directly.

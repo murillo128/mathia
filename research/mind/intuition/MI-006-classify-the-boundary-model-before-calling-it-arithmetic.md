@@ -1,39 +1,27 @@
-# MI-006 — Classify the complete boundary/control model before calling an escape arithmetic
+# MI-006 — Classify the complete boundary model before crediting a category exit
 
-**Evidence level:** supported by independent exact boundary classifications across the current Mathia research lines
+**Evidence level:** supported by independent exact boundary classifications across current packet, multi-horizon, calibration, whitening, and source-selection constructions
 
 ## Core intuition
 
-Many plausible advances arise by leaving a category that has just failed: enlarge the witness family, preserve more Fourier directions, move to a singular operator, add an ordered refinement, choose a canonical center, follow heat transport, or introduce a positive boundary compression. The enlarged carrier can still have a complete classical/control model, and the apparent escape can disappear once its natural contraction, limiting, conditioning, domain, passivity, provenance, transport, or reassembly rule is included.
-
-The correct order is to identify the carrier change, classify its strongest admissible controls including singular/moving/exhaustion limits, compute the exact information quotient and quantitative budget, and only then credit a residual. A boundary model is complete only when it includes **how the object is assembled, sampled, conditioned, regularized, transported, contracted, and scalarized**, not merely its finite formula.
+Many candidate advances arise by enlarging a failed category: add more modes, more horizons, a noncommuting transform, a singular profile, a bigger observation window, or a canonical global object. The enlargement is meaningful only after its limiting, domain, overlap, calibration, contraction and final-readout behavior are included. Otherwise the apparent new degree of freedom may be a classical control in disguise.
 
 ## Strongest justified principle
 
-Analytic Frontier supplies a completed scalar boundary classification rather than merely compactness. Its current near-extremizer work reduces the live obstruction to explicit projection/conditioning and destination-geometry questions instead of treating large witness complexity as an escape.
+Prime Circle now closes both sides of the obvious one-coordinate boundary. PC-236 permits `O(q)` exact cyclic support, yet every bounded equicontinuous fresh-fiber profile accumulates inside the same commutative `C*(S)` packet algebra. PC-237 then allows the natural singular inverse-chord direction: below `alpha=1/2` it is ordinary `L^2` functional calculus, while at/above threshold canonical normalized regularization collapses to a rank-two boundary-phase kernel. Roughness alone is not a new carrier.
 
-Arithmetic Fidelity shows that canonicalization itself has a boundary model. A source-selected Shtarkov/NML center can be meaningful, but recomputing it after compression is a different operation whose drift needs its own leakage control. The provenance/transport rule is part of the canonical object.
+Farey Discrepancy shows that simply increasing the number of horizons can make the model weaker: FD-016--FD-017 allow joint near/full saturation once horizons are sufficiently sparse, so overlap geometry is part of the observation class. Visual Exploration similarly shows that a growing hard window breaks the literal logarithmic-size finite-CUE circle model; the bounded-taper replacement still needs effective-size calibration at the same `1/L_T` scale as the desired residual.
 
-Prime Circle now gives a particularly sharp contraction example. PC-197--PC-200 close ordinary character and rational-ray packet operations, while PC-201 genuinely preserves several independent Fourier directions before contraction. The escape still disappears after the complete scalar operation: independent Mellin transformation identifies the resulting additive cone exactly with classical Mordell--Tornheim multiple `L`-data. Higher-dimensional support must therefore be classified through its final carrier, not credited at the intermediate stage.
-
-Prime Flute gives the complementary local-to-global example. PF-196 identifies a prime-summable critical `L log L` concentration currency, and PF-197 shows that the localized matrix-valued vector-gradient form already falls under an existing weak-`S_1` Cwikel theorem. The boundary has moved again: the missing theorem is now module-uniform pseudodifferential localization plus off-diagonal/global reassembly with only source-summable losses, not existence of a local vector endpoint estimate.
-
-Visual Exploration makes the perturbation boundary explicit: exact quotient recovery, inverse conditioning, and model transport are distinct, so changes of partition/closure cannot be hidden inside a generic noise term.
-
-Weil Positivity now supplies both finite analytic and nonlocal positive boundary classifications. WP-183--WP-185 close finite bounded-projective recovery of the exact Gamma phase; WP-186 shows that pointwise PSD lifting loses signed orientation; and WP-187 shows that canonical Hardy compression produces two positive leakage defects but leaves orientation in an indefinite difference for smooth finite windows, while the exact phase is singular at the `H^{1/2}` trace threshold. “Nonlocal and positive” is therefore still only an intermediate category unless the full source-forced sign mechanism is classified.
-
-Weil Inertia and Xi Flow give matched-control and dynamic boundaries. Weil Inertia isolates a classical Atkinson phase/Jacobian skeleton from the remaining arithmetic fiber, while Xi Flow separates guarded static admission, discrete dynamics, and continuum transport. Passing one of those boundaries does not establish the next.
+Weil Positivity adds a noncommutative control. WP-232's canonical source whitener genuinely leaves the energy-diagonal category but only exposes a universal indefinite Jacobi normal form; positivity appears only after an unforced range choice. Prime Lattice adds a global one: retaining a complete abelian class-field cover still splits characterwise under every canonical linear equivariant readout.
 
 ## Consequence for synthesis
 
-A proposed escape should be credited only after the enlarged carrier, complete matched family, source conditioning, canonicalization/provenance rule, target-scale budget, domain/regularization, contraction/scalarization, passivity or positivity class, and assembly/transport rule are explicit. The strongest control can close the route or relocate the live problem to a much narrower interface; both are valuable outcomes.
-
-In particular, preserving more indices before scalar contraction, obtaining a valid local critical operator estimate before infinite reassembly, or decomposing a signed phase into positive nonlocal pieces are all **intermediate successes**. The arithmetic claim begins only at the residual that survives the completed boundary model.
+State the enlarged carrier together with its strongest matched family, source conditioning, asymptotic regime, domain, calibration uncertainty, contraction/scalarization and assembly rule. Credit only the residual that survives that complete model. If a control closes the route, use the resulting boundary to formulate the next smaller theorem surface.
 
 ## Status / novelty
 
-The component mathematics is classical or persisted exact work. The synthesis is a cross-line discipline, not a theorem that every enlargement classicalizes.
+This is cross-line synthesis of persisted exact/classical boundaries, not a theorem that every enlargement classicalizes.
 
 ## Falsification criterion
 
-Produce a source-forced carrier whose complete admissible control family, conditioning, limiting/domain/passivity rule, contraction, and transport still reproduce the claimed residual despite the proposed distinction, or derive a residual that remains quantitatively coercive after the strongest source-appropriate boundary model is applied.
+Exhibit one of the cited exits whose complete admitted boundary model still retains a source-specific target effect contrary to the stated closure, or a source-derived new category whose extra freedom survives all natural controls and final readout. Such a result should replace the corresponding control rather than be forced into this synthesis.

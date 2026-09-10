@@ -1,39 +1,35 @@
-# MI-007 — Quantitative non-escape must be priced in the source-selected complexity actually consumed by the theorem
+# MI-007 — Quantitative non-escape must be priced in the source complexity actually consumed by the theorem
 
-**Evidence level:** supported cross-line synthesis from current target-metric, visibility-budget, screen-localization, variance-pricing, and selector-depth evidence
+**Evidence level:** supported cross-line synthesis from current target quotients, graph visibility, parity isolation, spectral near-kernels, zero-source localization, and selected-annulus evidence
 
 ## Core intuition
 
-Detecting richer structure is not enough. The final theorem consumes a particular norm, count, entropy, sign, transition modulus, coefficient budget, selected subsequence, or approximation decrement, and information can escape before reaching that currency. The useful question is quantitative: **what source-selected complexity is forced at the required resolution, and how much of the destination theorem budget does it actually buy?**
+Detecting structure, rank or exact information is not enough. The final theorem consumes a particular rate, norm, count, sign, visibility decrement, selected event or transition modulus. The relevant question is how much **source-selected complexity survives into that exact currency at the required scale**.
 
-The newest evidence strengthens both directions. Some category changes genuinely move the burden into a better source currency; others only rename a complexity that is already saturated, too expensive, or invisible after the final readout.
+The newest evidence makes this strongly two-sided: some quotients are coarse but source-deep, while some rich relaxations are so expressive that only a sharper source variable can restore coercivity.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity now gives an exact target-relative accounting law. AF-228--AF-230 show that relabeling/randomizing prime-tail localization does not remove its leading source-information bill. AF-231--AF-233 show that the correct bill can nevertheless be smaller for a genuinely contracting downstream target: under their hypotheses the first-order rate is controlled by the target derivative exponent plus the requested fidelity exponent, and changing to a relative metric can restore the unshifted source phase.
+Arithmetic Fidelity's Li root-rate quotient is RH-sufficient modulo every subexponential additive error, yet AF-236 proves every sublinear canonical zeta jet is invisible in that quotient. Cheap output fidelity therefore does not imply cheap source access.
 
-Nyman--Beurling supplies the matching coercivity budget. NB-013 closes positive multichannel amplification beyond the Ramanujan linear ceiling. NB-014--NB-015 identify the actual scale-coupled currency: source-visible defect divided by compressed new-section frame cost. Under a nonzero limiting residual its `log M`-weighted accumulation must be summable, so any proposed visibility theorem can be priced directly against closure strength.
+Nyman--Beurling goes the other way. NB-016--NB-017 prove generic quotient coercivity impossible at every depth because exact multiplication/rough-core blind modes survive; useful transport must charge graph energy of the actual residual. NB-018 shows that very-deep fixed-section mixing eventually reduces to a shell mean only after paying an exponentially large period.
 
-Weil Inertia converts remoteness into source cost. WI-221 forces superpolynomial weighted mass for super-bow remote screens; WI-222--WI-223 localize order-`M` dyadic weighted source to progressively smaller polylogarithmic/iterated-log neighborhoods. But fixed compact-detector uncertainty prevents this architecture from reaching the bow scale, and weighted mass is still not raw zero count.
+Analytic Frontier prices near-null alignment at the sharp `K/N^2` box scale rather than by periodicity heuristics. Möbius Cancellation proves its logarithmic rough split exponent-reversible and controls unsigned squarefree support for `theta<6/11`, leaving signed parity as the live source currency. Weil Inertia reaches a sharp scalar detector scale `Theta(log T)` but still lacks conversion of weighted mass to a zero budget, while current generic short-interval proportions miss the surviving exponent range.
 
-Möbius Cancellation shows a productive category change rather than a no-go. MC-178--MC-179 price why smooth-support and bounded-depth extraction fail at polynomial windows, while MC-180 uses exact squarefree support to move the problem to a single rough parity block without losing the fixed-power variance exponent. The price has not disappeared; it has been isolated in a source-sensitive factor where a new theorem can act.
-
-Robin Extremal adds a selection currency. RE-013 shows that its clean selector has logarithmically growing prime-layer resolution and an exact deep `2`-adic tail. A finite local approximation can therefore be information-rich yet still too coarse for the event scale actually consumed by the counterexample condition.
+Robin Extremal adds a selected-event version: the event needs logarithmically deep source resolution, yet the decisive mixed-race contribution is localized to a broad finite annulus and the deterministic selected-event tax has a much simpler all-log expansion.
 
 ## Program consequence
 
-For every candidate, declare the source discriminator, resolution/observation scale, exact destination currency, and the conversion theorem between them. Separate visible alphabet from target distortion, channel count from admissible zero mass, frame size from actual enrichment, decomposition depth from signed parity cancellation, and local event descriptors from selector resolution.
-
-Once a free/linear/support model has a matching upper construction or a saturation theorem, stop asking that model for a stronger constant. A useful category exit must identify the new source-specific currency and prove how it enters the final budget.
+For every candidate, declare the source discriminator, source depth/overlap, observation scale, exact destination currency and conversion theorem. Once the free model has a matching construction or sharp lower bound, stop improving the same relaxation and identify the source-specific variable it discarded.
 
 ## Counterevidence / boundary
 
-These are different mathematical categories and do not form one universal information inequality. A future source theorem can exploit structure absent from the present coding, frame, screen, variance, or selector models. It must still state the replacement modulus and show quantitatively how it reaches the final conclusion.
+These are different categories, not one universal information inequality. A new representation may bypass a cited lower bound by retaining structure excluded from its hypotheses. It must still price that replacement structure in the final theorem's currency.
 
 ## Epistemic status
 
-**Supported cross-line synthesis from exact or literature-backed component results; no universal theorem and no RH implication are claimed.**
+**Supported cross-line synthesis from exact or literature-backed conversion and saturation boundaries; no universal theorem or RH implication is claimed.**
 
 ## Falsification criterion
 
-Exhibit a source-specific final theorem whose conclusion is uniform while its declared discriminator has vanishing mass/entropy/visibility in the exact destination budget and no compensating relation, or show that one of the current source-selected conversion laws is quantitatively irrelevant to its stated target. Either result should narrow this synthesis.
+Produce a uniform final theorem whose declared source discriminator has vanishing presence in the exact destination budget and no compensating relation, or show that a cited sharp/free boundary can be beaten without adding source information outside its hypotheses. Either result should narrow this synthesis.

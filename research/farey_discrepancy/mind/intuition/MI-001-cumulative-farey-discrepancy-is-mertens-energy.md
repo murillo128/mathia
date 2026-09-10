@@ -1,35 +1,31 @@
-# MI-001 — Cumulative Farey discrepancy is Mertens energy, and useful source coherence must be compressed but quantitatively persistent
+# MI-001 — Cumulative Farey discrepancy is Mertens energy, and useful multi-horizon coherence lives between reconstruction and interpolation
 
-**Evidence level:** exact divisor/Mertens identities, sharp source-relaxation boundaries, local-order controls, and coherent multi-horizon saturation gaps through FD-015
+**Evidence level:** exact Farey--Mertens identities, GCD-duality reductions, squarefree collision gaps, and sparse-horizon saturation through FD-017
 
 ## Core intuition
 
-Once Farey discrepancy is accumulated by denominator shell, its linear Fourier data and natural quadratic Franel energy are exact transforms of Mertens data. Richer harmonic/GCD geometry therefore does not create cancellation by itself. The live information boundary is narrower: weak summaries can leave the unrestricted GCD extremizers essentially intact, while a complete consecutive divisor-horizon hierarchy simply reconstructs Möbius.
+The cumulative Farey observable is a signed Möbius/Mertens energy, so the useful extra structure cannot be a generic one-horizon Hilbert inequality. Multi-horizon coupling can be real, but its strength depends critically on how the horizons overlap in multiplicative ancestry.
 
-The newest evidence shows that **coherence across horizons can genuinely restrict the extremizers without reconstructing the whole source**. The effect is real but, in the first squarefree-dilation implementation, only constant-level and quantitatively weakens as more multiplicative breadth is demanded.
+The current evidence exposes a two-sided geometry. Nearby coherent horizons share factorization coordinates and cannot all lie exactly on the GCD equality ray. Horizons separated too aggressively, however, acquire effectively independent fresh prefixes and an unrestricted source can make them all nearly saturate.
 
 ## Strongest justified principle
 
-FD-001--FD-003 identify the cumulative Fourier/Franel quantities with Mertens data and the square-GCD form. FD-004--FD-008 show that several exact arithmetic restrictions remain asymptotically noncoercive at one horizon, while FD-009 proves that the full consecutive divisor-horizon hierarchy is triangular source recovery.
+Earlier findings identify the cumulative discrepancy with the Mertens source and reduce one-horizon extremality to a classical GCD kernel. FD-014--FD-015 prove genuine two-horizon incompatibility for squarefree multiplicative relations; repeated-prime collisions sharpen the elementary deficit and force near-saturating horizon families toward an antichain structure.
 
-FD-012 extends the negative side: even a growing logarithmic-depth Jordan-moment hierarchy can leave the sharp dual constant unchanged. FD-013 independently closes first-order local ordering as a universal bridge: matched reflection, gap multiset, and adjacent transition counts can coexist with an unbounded discrepancy-energy separation.
-
-FD-014 gives the complementary positive mechanism. Coherence of one cumulative sequence between `N` and `2N` is incompatible with simultaneous approach to the one-horizon equality ray, producing a uniform strict gap below `zeta(2)` at one of the two horizons. FD-015 extends this to squarefree dilations and shows that near-saturating horizons form a Sperner antichain. But the common explicit gap decays like a negative power of the total squarefree dilation, so this direct breadth amplification does not produce an exponent gain.
+FD-016 constructs joint near-saturation on multiplicatively sparse families by assigning compatible finite equality-ray prefixes. FD-017 strengthens this to full asymptotic saturation for supermultiplicatively separated horizons. Thus common-source sampling is not coercive merely because many scales are observed.
 
 ## Program consequence
 
-The cumulative route should now seek a **compressed multi-horizon coherence law with a nonvanishing quantitative payoff**: enough coupled source information to keep extremizers away from the free equality geometry across scales, but not enough to invert the Möbius prefix. Sparse multiplicative horizons, nonlinear compatibility, or another noninvertible growing statistic are valuable only if the resulting gap accumulates at the destination Franel/Mertens scale.
-
-The separate pre-cumulative route must use order deeper than first-order gap transitions and demonstrate a coercive transport into cumulative discrepancy.
+Search for an intermediate horizon geometry whose overlaps recur often enough to accumulate a nonvanishing normalized gap but do not simply reconstruct the underlying source. The candidate theorem should quantify collision density/ancestry overlap and convert it into a common-source GCD-energy deficit at the Farey normalization.
 
 ## Counterevidence / boundary
 
-FD-014--FD-015 do not improve the RH-critical exponent. Their gap is constant-level and the explicit common threshold deteriorates with breadth. FD-013 concerns matched generic rational grids, not every Farey-specific ancestry statistic. FD-009 does not imply that every sparse growing hierarchy reconstructs Möbius.
+The present two-horizon gaps decay and are not themselves strong enough for RH-scale control. Sparse-horizon saturation is proved in an unrestricted source relaxation, not for the actual Möbius sequence; source-specific arithmetic could add further restrictions.
 
 ## Epistemic status
 
-**Exact information-boundary synthesis with a genuine but currently too-weak multi-horizon coherence gain; no improved Mertens exponent or RH consequence is established.**
+**Exact one-horizon reduction with a genuine but scale-sensitive multi-horizon coherence window; no RH-strength cumulative discrepancy bound is established.**
 
 ## Falsification criterion
 
-Exhibit simultaneous near-saturation at coherent horizons contradicting FD-014/FD-015, or a first-order matched gap statistic that universally controls cumulative energy despite FD-013. A positive continuation should prove a compressed coherent relation whose accumulated non-saturation remains quantitatively significant without becoming source reconstruction.
+Construct full common-source saturation in a proposed overlap regime satisfying its claimed recurrent collision hypotheses, or prove that the current collision gaps necessarily vanish too quickly under every nonreconstructive schedule. A positive continuation should identify and price a persistent intermediate overlap regime.
