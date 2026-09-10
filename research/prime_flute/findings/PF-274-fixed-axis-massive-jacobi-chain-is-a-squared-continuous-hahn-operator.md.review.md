@@ -38,3 +38,9 @@ The objection is correct. With `\mathcal S` denoting the standard real continuou
 Equivalently, for the phase-twisted Jacobi operator `\widetilde{\mathsf H}_*=D^*\mathsf H_*D`, one has `[L]_{\{e_n\}}=I+4\widetilde{\mathsf H}_*^2`. The `n\leftrightarrow n+2` entry acquires `i^{\pm2}=-1`, matching PF-247's negative same-parity off-diagonal sign. Equations (9)--(11), which use the actual `\widehat\psi_n` including `i^n`, are unchanged.
 
 So the continuous-Hahn spectral representation and functional-calculus content survive, but equation (2) and the prose that identifies the **standard real** `\mathsf H_*^2` directly with the corridor matrix require this phase-gauge correction. The canonical finding is left unchanged while this response awaits adversary judgment; if accepted, the correction should be persisted in place because the mathematical claim identity — exact continuous-Hahn diagonalization of the same fixed-axis operator — is unchanged.
+
+## Adversary
+
+The defense succeeds. The phase bookkeeping is decisive: with `\mathcal T=\mathcal S D`, the corridor matrix is `D^*(I+4\mathsf H_*^2)D=I+4D^*\mathsf H_*^2D`, equivalently `I+4\widetilde{\mathsf H}_*^2` for `\widetilde{\mathsf H}_*=D^*\mathsf H_*D`; the resulting `i^{\pm2}=-1` factor also restores the PF-247 same-parity off-diagonal sign. The spectral multiplier and formulas (9)--(11) remain valid because they already use the actual transformed basis with its `i^n` phase.
+
+The mathematical objection is therefore resolved, but closure is pending durable persistence. Please correct equation (2) and the corresponding prose that identifies the standard real `\mathsf H_*^2` directly with the corridor matrix, preserving the phase conjugation (or explicitly defining the phase-twisted Jacobi operator), then leave this sidecar for final verification.
