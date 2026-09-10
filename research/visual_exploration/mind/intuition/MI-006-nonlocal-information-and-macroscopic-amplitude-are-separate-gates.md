@@ -1,29 +1,31 @@
-# MI-006 — Source specificity begins after the one-window stochastic floor and cross-window dependence are both priced
+# MI-006 — Support-edge source specificity begins beyond the restricted-support four-level barrier
 
-**Evidence level:** exact finite-CUE mean/covariance reductions and point-process identifiability boundary through VIS-139
+**Evidence level:** exact finite-CUE covariance, four-level identifiability, and Rudnick--Sarnak support reductions through VIS-141
 
 ## Core intuition
 
-A correct finite-CUE mean is not enough to expose a shrinking arithmetic residual. The bounded support-edge statistic has a genuine one-window stochastic floor, so detection at scale `1/L` requires averaging across source windows. That immediately makes the cross-window dependence law part of the null model.
+A shrinking arithmetic residual at the Montgomery edge cannot be interpreted from one-window behavior. The fixed-window statistic has an order-one stochastic floor, so detection requires averaging across source windows, and the averaging law is a four-level dependence question.
+
+The obvious unconditional higher-correlation shortcut is now closed for this observable: the classical Rudnick--Sarnak support region cannot contain edge-edge covariance, and a simple support-safe redesign either removes the edge or collapses the companion frequency toward DC.
 
 ## Strongest justified principle
 
-VIS-130--VIS-132 correct the window convention and remove the samplewise diagonal mode. VIS-133 shows that bounded edge amplitudes retain order-one normalized covariance. VIS-134--VIS-135 identify the Wick contribution and prove a nondegenerate Gaussian terminal packet for fixed-window CUE, excluding self-averaging of any nontrivial fixed contrast.
+VIS-130--VIS-135 fix the window convention, remove the realized diagonal common mode, and prove a nondegenerate Gaussian terminal packet for the bounded CUE edge statistic. VIS-136--VIS-139 then show that the required number of source windows is determined by cross-window covariance and that, after lower-order contractions, disjoint quadratic covariance is a four-level functional not fixed by one-, two-, or three-level marginals.
 
-VIS-136 translates the covariance tail into the required averaging exponent, while VIS-137 shows that one fixed-ratio circle contains only finitely many disjoint translated windows. VIS-138 proves that identical one-window marginals can coexist with arbitrary cross-window dependence. VIS-139 makes the missing information order explicit for disjoint quadratic statistics: after contractions vanish, covariance depends on a four-level relation not fixed even by all three-level inclusion data.
+VIS-140 pulls the Rudnick--Sarnak zeta support condition `sum |xi_j|<2` onto the pair-pair plane `(q,-q,r,-r)`, giving exactly `|q|+|r|<1`. The edge-edge sector near `(1,1)` is therefore separated by an order-one support gap. VIS-141 proves the design corollary: identical-factor covariance inside that theorem requires support below `1/2`, while retaining one factor at `1-epsilon` forces the other bandwidth below `epsilon`.
 
 ## Program consequence
 
-Freeze the one-window CUE null, then move to the actual zeta source process and prove the multi-height covariance/mixing theorem needed by the declared averaging schedule. Pair correlation alone is not enough unless a rigorous closure principle reduces the required four-level term.
+Prioritize a direct zeta cross-height mixing/covariance estimate or genuinely wider-support four-level information for the exact moving-window family. An asymmetric edge--low-frequency or nonfactorized four-level statistic is admissible only after a separate derivation shows that it retains a source-specific arithmetic signal at the declared scale.
 
 ## Counterevidence / boundary
 
-The four-level requirement is a general identifiability statement, not a claim that zeta has pathological dependence. Determinantal/Gaussian closure or sufficiently strong n-level results might supply the needed estimate in the relevant support regime, but that transfer has not been established.
+The Rudnick--Sarnak obstruction is an applicability boundary, not evidence that the desired covariance law is false. Wider-support unconditional theorems, a direct explicit-formula covariance argument, or a carefully designed nonfactorized test may escape. A conjectural ratios formula can guide prediction but does not satisfy the rigorous gate.
 
 ## Epistemic status
 
-**The fixed-window stochastic null is nondegenerate and the cross-window gate is genuinely higher-order; the zeta-side dependence law remains open.**
+**Exact identification of the multi-window four-level requirement plus an exact support obstruction to the classical restricted-support shortcut; the required zeta-side dependence theorem remains open.**
 
 ## Falsification criterion
 
-Show that the declared disjoint quadratic statistic's covariance is determined by two- or three-level data under the exact source model without an additional closure theorem, or derive a direct zeta mixing bound strong enough to bypass the four-level expansion.
+Derive the frozen edge covariance from the classical restricted-support theorem without violating its support/localization hypotheses, or prove that a support-safe replacement retains the same arithmetic target while avoiding any new four-level or uniform-transfer obligation.

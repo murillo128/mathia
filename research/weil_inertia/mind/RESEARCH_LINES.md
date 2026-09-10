@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert the radial count-depth tariff for simple off-line mass into a local zero-budget contradiction
+## Force any surviving bow screen outside the density-matched local interval
 
 **Linked intuitions:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`, `MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass`.
 
-WI-218--WI-227 separate physical localization from radial depth and show that a screen avoiding bow-scale localization must pay macroscopic radial source weight. WI-228 proves that global fixed-slope zero-density estimates cannot close this deep branch because their `T log T` prefactor overwhelms the bow budget; the useful missing object is a **local bow-scale tail** rather than another global density theorem.
+WI-218--WI-231 reduce screening to an exact count--depth tariff: avoiding bow-scale localization requires enough radial source mass, and sparse local screens must pay exponentially in horizontal depth. Global zero-density, multiplicity, and current pair-support estimates do not supply the needed simple-zero local control.
 
-WI-229 shows that currently available short-interval pair support lies below the first-harmonic radial threshold in the sparse-screen regime. WI-230 removes multiplicity as an easy hiding place for repeated off-line mass but leaves simple off-line pairs essentially untouched. WI-231 packages the surviving geometry into an exact count-depth tariff: too few local screen zeros force exponentially expensive radial depth, with explicit first-harmonic lower bounds.
+WI-232 combines that tariff with the actual local Riemann--von Mangoldt density. For a density-matched bow of `m=T^{theta+o(1)}` selected off-line pairs with `theta<1/2`, the same vertical interval has only `O(log T)` excess zero labels. If that local population cancels the first radial harmonic, the tariff forces horizontal depth corresponding to `beta_max-1/2 >= 2theta-o(1)`. This is impossible for every fixed `theta>1/4`, and the calibrated `theta=1/4` endpoint is also excluded using the classical zero-free region.
 
-The live theorem must now constrain **simple off-line mass at bow scale** in the exact count-depth currency: a local tail bound, phase/covariance law, or source identity strong enough to contradict the WI-231 tariff. Global density, repeated-zero rigidity, and current pair-support theorems are matched controls below the needed threshold.
+The same-interval screen is therefore closed on the density-matched fixed-power range from the quarter scale upward. The live escapes are nonlocal screening in ordinate, a spacing surplus that leaves a larger local count reservoir, or cancellation supplied by the prime/source side rather than by a local complementary zero population. Each must be priced in the same count--depth currency.
 
-## Treat scalar localization and generic zero-density as controls
+## Treat local zero count and horizontal depth as one ledger
 
-The radial split is quantitatively sharp enough that further scalar cutoff optimization is secondary. What is missing is arithmetic placement of the actual zero source inside the count-depth ledger, especially for simple zeros.
+A screen cannot choose its number of labels and radial depth independently. Once the bow consumes the local mean density, the remaining count budget is logarithmic and forces macroscopic depth. Future source theorems should attack the surviving nonlocal/spacing-surplus alternatives rather than return to generic scalar localization.

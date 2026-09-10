@@ -1,31 +1,31 @@
-# MI-001 — Cumulative Farey discrepancy exposes a sharp square-root free-source boundary
+# MI-001 — The square-root free-model boundary survives sparse exact Möbius ancestry
 
-**Evidence level:** exact GCD-duality reductions and matched free-source constructions through FD-025
+**Evidence level:** exact sparse-horizon saturation controls through FD-028
 
 ## Core intuition
 
-The unrestricted multi-horizon relaxation is now quantitatively classified enough that generic horizon overlap is no longer the main mystery. Its decisive source currency is endpoint growth, with a sharp transition at the square-root scale.
+The GCD-duality/Farey route has a sharp free-source boundary at square-root endpoint growth, and the latest controls show that surprisingly much local Möbius structure still does not move it. Exact squarefree support, ternary values, every fixed finite collection of prime sign relations, and even infinitely many sufficiently sparse prime-direction ancestry rules can all be built into saturating controls.
 
-Below that scale, saturation is impossible for any sublinear source; above it, sufficiently sparse horizons admit explicit saturating controls. The remaining leverage must therefore come from Möbius-specific structure, not from a better generic growth argument.
+What is missing is therefore **quantitative breadth of coupled multiplicative information at the active scale**, not merely the presence of Möbius-looking local identities.
 
 ## Strongest justified principle
 
-FD-018--FD-020 classify pointwise and Cesaro saturation through recurrence of bounded squarefree horizon ratios. FD-021--FD-023 show that a polynomially bounded saturating source forces the horizon ratios to escape every bounded/exponential regime on average. FD-024 constructs saturating unrestricted sources with envelope `n^alpha` for every `alpha>1/2` along sufficiently fast supermultiplicative horizons. FD-025 proves the converse lower boundary: a sublinear source exhibiting saturation must be super-square-root on the saturating endpoints.
+FD-024--FD-025 establish the square-root saturation threshold for sparse-horizon GCD duality. FD-026 preserves saturation while imposing the exact squarefree zero set and ternary coefficient range of Möbius. FD-027 additionally enforces `a_{pn}=-a_n` along any prescribed finite prime set without losing the `1/2+epsilon` envelope.
 
-Together these results locate the free interpolation threshold at exponent one half rather than at a particular horizon geometry.
+FD-028 removes the cardinality loophole: the enforced prime-direction set may be infinite and contain any prescribed finite seed, yet if it is sparse enough the remaining squarefree signs still have enough freedom to saturate the same horizons. Thus “infinitely many exact Möbius relations” is not a meaningful rigidity threshold by itself.
 
 ## Program consequence
 
-Test source laws that distinguish Möbius from arbitrary real sequences at the square-root-plus frontier. A useful theorem should forbid the FD-024 construction mechanism using exact divisor, sign, parity, or multiplicative consistency and then translate the resulting deficit back into the cumulative Farey/Mertens normalization.
+Search for a scale-dependent source law: a lower bound on the number or mass of prime directions coupled below the active horizon, a divisor-complete compatibility relation, or another global constraint that cannot be satisfied by freely choosing signs outside a sparse ancestry set. The decisive test is whether that law destroys the FD-028 saturation construction at the square-root boundary.
 
 ## Counterevidence / boundary
 
-The half-power threshold belongs to the unrestricted relaxation. It is not itself a Mertens bound and does not show that the Möbius source saturates or fails to saturate any chosen horizon family. Sparse horizons remain a genuine escape for arbitrary sources above the threshold.
+The controls do not show that the actual Möbius function can saturate GCD duality. They exploit substantial residual sign freedom and leave open exactly the possibility that full multiplicativity or sufficiently broad prime ancestry is coercive. Nor do they determine the minimal breadth threshold.
 
 ## Epistemic status
 
-**Exact free-model boundary at square-root endpoint scale, leaving a source-specific Möbius rigidity problem rather than an overlap-classification problem.**
+**Exact negative boundary: sparse local multiplicative ancestry, even along infinitely many primes, does not distinguish Möbius from square-root-saturating free controls; the required rigidity must grow quantitatively with scale or be globally divisor-complete.**
 
 ## Falsification criterion
 
-Produce an unrestricted saturating source with `A(H)=O(sqrt(H))`, or invalidate the FD-024 construction above the half-power threshold. A positive continuation should derive a Möbius-specific restriction that survives in the residual super-square-root corridor.
+Prove that one of the FD-026--FD-028 control classes already violates a source condition previously claimed essential for Möbius, or show that a fixed/sparse set of prime ancestry relations alone forces sub-square-root GCD-duality behavior.

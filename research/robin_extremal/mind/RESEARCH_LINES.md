@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control the CA-selected mixed prime-race ray on an extremely sparse event set
+## Control the CA-selected mixed prime-race ray together with its directional event depth
 
 **Linked intuition:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`.
 
-RE-001--RE-019 reduce hypothetical Robin failure to CA-selected boundary events, a finite intermediate mixed-race annulus, and deep event-ladder coincidences. RE-020 sharpens bounded-envelope sparsity dramatically: linear-form estimates force power-scale jumps in the ladder coordinates, leaving only iterated-logarithmically many host collisions.
+RE-001--RE-023 reduce hypothetical Robin failure to self-tangent CA boundary events and then to a specific coupled Chebyshev/Mertens race ray. RE-024 shows that even slowly growing ordinary-prime envelopes `o(log log X)` leave only `(log Z)^{o(1)}` admissible hosts while preserving the same selected prime-race corner.
 
-RE-021--RE-022 remove the clean-boundary loophole. The self-tangent height threshold and finite-annulus mixed-race localization survive every sufficiently large regular CA boundary chamber. RE-023 then identifies the frontier displacement as an explicit prime-race coordinate: a counterexample must occupy a specific coupled Chebyshev/Mertens ray, with a square-root-scale gap dichotomy. RE-024 extends the sparse-host conclusion to slowly growing prime envelopes `G=o(log log X)`, still leaving only log-subpower many selected hosts.
+RE-025 removes another apparent independence. If `d=X-p` is the displacement from the last active first-layer prime inside a gap `g=q-p`, then `d` and `g-d` separately control the logarithmic mass and layer depth of the left and right adjacent CA transitions. The very coordinate that selects the prime-race position therefore also allocates how deep the neighboring prime-power events must be.
 
-The live theorem is now selection-sensitive rather than geometric. Control the sign or mass of the mixed prime race **at these CA-selected sparse event hosts**, or show that the required prime-race ray cannot recur on the event-ladder set. Global density or average race information is useful only if it transfers to this selected subsequence.
+The live theorem should exploit this **joint selected-event geometry**: prove that the required mixed prime-race corner cannot recur at hosts whose same displacement simultaneously forces one adjacent boundary into the corresponding deep small-prime ladder, or derive a sign/mass theorem directly on that selected sequence. Further sparsity alone is secondary unless it couples to this joint race/depth condition.
 
-## Keep event sparsity and race sign distinct
+## Keep host sparsity, race sign, and event depth logically distinct
 
-The host set is much thinner than before, but sparsity alone does not prove Robin. Conversely, the prime-race ray is a necessary local signature, not a contradiction. A final argument must couple these two facts with a theorem valid on the CA-selected sequence.
+The host set is extremely thin, and the race coordinate is now coupled to boundary depth, but none of those necessary conditions is a contradiction by itself. A final argument must prove an arithmetic incompatibility on the CA-selected sequence rather than multiply several rare-looking properties informally.

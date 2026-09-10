@@ -1,29 +1,31 @@
-# MI-015 — Radial depth and local screen count form one exact source tariff
+# MI-015 — Density matching turns the count--depth tariff into a same-interval screening obstruction
 
-**Evidence level:** exact radial split/count-depth inequalities and comparison with current zero-density inputs through WI-231
+**Evidence level:** exact count--depth inequalities plus local Riemann--von Mangoldt and zero-free-region comparison through WI-232
 
 ## Core intuition
 
-A Weil-inertia screen can avoid physical localization only by moving source mass radially outward, and that escape has a quantitative price. The useful variable is therefore not depth or zero count separately but their joint count-depth tariff at the bow scale.
+Radial depth and local screen count form one source ledger. When a bow is vertically spaced to consume the actual local mean zero density, there is almost no same-interval count reservoir left: only `O(log T)` excess labels remain. The WI-231 tariff then converts a fixed-power bow size directly into macroscopic horizontal depth.
+
+This closes a substantial local escape. Above the quarter-power scale, and at the calibrated quarter endpoint, the required same-interval depth is incompatible with the critical strip/zero-free region.
 
 ## Strongest justified principle
 
-WI-227 proves the qualitative dichotomy: bounded radial depth forces bow-scale physical localization, while avoiding sub-`M` localization requires macroscopic depth and a `cosh(ka)` tariff. WI-228 shows why global zero-density cannot pay that bill in the required normalization. WI-229 shows that known short-interval pair support is also below the sparse-screen first-harmonic threshold.
+WI-227--WI-231 establish the general tariff: a screen that avoids physical localization must move source mass radially outward, and first-harmonic cancellation requires `R cosh(a_max)` to carry order-`M` mass. Existing global density and pair/multiplicity inputs did not control the simple-zero branch in the needed local normalization.
 
-WI-230 charges repeated off-line mass but leaves the simple-zero branch open. WI-231 then gives the exact local ledger: if the screen count is small, the maximal radial depth must grow enough that `R cosh(a_max)` carries order-`M` mass, with explicit polynomial lower bounds in the sparse regime.
+WI-232 chooses the density-matched spacing `Delta=4pi/log(T_0/2pi)`. Riemann--von Mangoldt then gives `N(I)-2m=O(log T)` for `m=T^{theta+o(1)}`, `theta<1/2`, so any complementary same-interval screen has `R=O(log T)`. The tariff forces `a_max>=log m-log log T+O(1)`, equivalently `beta_max-1/2>=2theta-o(1)`. For every fixed `theta>1/4` this eventually leaves the critical strip; at `theta=1/4` with polylogarithmic precision, the Vinogradov--Korobov zero-free region excludes the required near-1 zero.
 
 ## Program consequence
 
-Target a source theorem for simple off-line zeros that is local on the bow scale and speaks directly to the WI-231 ledger. Useful forms include an exponential local depth tail, a phase-sensitive first-harmonic estimate, or a covariance/spacing law that prevents a few simple deep zeros from carrying the whole screen.
+Stop treating a density-matched local screen as a generic surviving loophole on the quarter-power-and-above range. Quantify the remaining alternatives: how far in ordinate a nonlocal screen must reach, how much spacing surplus is needed to create a usable count reservoir, or whether the explicit prime/source side can cancel the harmonic without introducing an equivalent mass bill.
 
 ## Counterevidence / boundary
 
-The tariff is a necessary geometric/source-budget condition, not a contradiction. Existing global zero-density estimates have the wrong prefactor, current pair-support results have insufficient horizontal exponent, and multiplicity statistics do not control simple pairs.
+WI-232 does not rule out bows below the quarter scale, arbitrary `T^{1/4+o(1)}` endpoint distortions, nonlocal screens, density-surplus spacings, or prime-side cancellation. It is a theorem about the same vertical interval under density matching, not a contradiction to all off-line configurations.
 
 ## Epistemic status
 
-**Exact quantitative count-depth trade for local screens, with the remaining escape concentrated on simple off-line mass; the required local arithmetic zero theorem is missing.**
+**Exact conversion of density matching into a local screening no-go for fixed powers above one quarter and a calibrated quarter endpoint; the remaining screening mechanisms are explicitly nonlocal or source-side.**
 
 ## Falsification criterion
 
-Construct an admissible sparse screen that violates the WI-231 count-depth bound, or show that an existing source theorem already implies the needed local tail in the exact bow normalization.
+Construct a same-interval density-matched screen in the stated range violating the WI-231/232 count--depth bound, or show that the local zero-count remainder can exceed `O(log T)` under the same hypotheses.

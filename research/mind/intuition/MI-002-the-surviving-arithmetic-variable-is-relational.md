@@ -1,35 +1,33 @@
-# MI-002 — A surviving arithmetic relation must remain nontrivial in the final target-bearing quotient
+# MI-002 — A surviving arithmetic relation must remain nontrivial before scalarization and in the final target-bearing quotient
 
-**Evidence level:** supported by exact packet-algebra, reciprocity-family, principal-residue, and critical-positive-completion boundaries
+**Evidence level:** supported by exact packet/path, scalar-normalizer, reciprocity, selector, and boundary-programmability controls
 
 ## Core intuition
 
-“Relational,” “noncommutative,” “higher-dimensional,” or even “source-forced mixed-prime” is not itself an escape criterion. A relation can be genuine and mathematically rich yet become useless because the natural algebra closes classically, the final projection erases it, equilibrium turns it into boundary data, or positivity changes the coefficient law/sign before the target is read off.
+“Relational,” “noncommutative,” “higher-dimensional,” or “spectral” is not itself an escape criterion. A genuine relation may become universal after natural algebraic closure, collapse to one scalar before the target is read, or be recreated by programmable boundary data whose positivity already encodes the desired divisor.
 
-The strongest current rule is therefore: preserve a **source-specific relation that survives the complete natural algebraic closure and remains nontrivial in the same quotient/residue/state/operator that carries the target divisor or sign**. Recovering the target only after the relation disappears is reduction, not transfer.
+The strongest current rule is therefore two-sided: the source relation must be generated **before** the relevant scalarization/classicalization, and a nontrivial part of it must survive in the same final object that carries the target sign or complete divisor.
 
 ## Strongest justified principle
 
-Prime Circle gives an exact algebraic-closure control. Coarse refinement networks remain module maps, and the full fresh-prime Cauchy packets are closed under canonical pointwise/convolution bilinearities. Even across squarefree conductors the shift state stays in classical squarefree cyclotomic torsion. More modes and nonlinear depth do not create a new relational carrier inside that algebra.
+Prime Circle gives the closure side. Its fixed-conductor refinement dynamics classicalize into packet/Cuntz/Bost--Connes structures, and PC-244 now shows that every finite scalar same-endpoint weighted-cover path defect becomes a universal pure-shift object after the path labels are combined. Real path interference can therefore disappear precisely at the scalar quotient.
 
-Prime Lattice gives the positive source-relation example and its failure mode. Quadratic reciprocity produces the classical Rédei mixed-prime matrix and genuine family-valued arithmetic. Quadratic multiple Dirichlet series preserve that relation globally enough to produce Weyl continuation and explicit zeta correction factors. But the canonical `s=1` residue that genuinely isolates `zeta_2(2w)` selects only the trivial squarefree kernel; every nontrivial quadratic character carrying the reciprocity relation has vanished. The target divisor survives exactly where the richer relation does not.
+Weil Positivity gives the scalarization side. WP-234--WP-236 show that no bounded order of positive prime marginals determines the global coupling. WP-237--WP-241 then show that, once arithmetic has become a central scalar normalizer, homogeneous geometry and fixed one-variable meromorphic postprocessing cannot selectively preserve its original divisor constituents: divisor-faithful scalar calculus collapses to monomials, while nonmonomials introduce level-set divisors or leave the meromorphic channel.
 
-Weil Positivity supplies the sign counterpart. The critical Bost--Connes Gram has correct source magnitude but wrong essential orientation. Source-time-covariant positive maps cannot orient it; self-pairing opposite modes becomes positive only after squaring the half-density and killing cross-prime resonance; a distinct frequency-matched positive sector carrying the unsquared amplitudes requires infinite ordinary trace. Relation survival must therefore be checked through the final positivity category, not before it.
+Prime Lattice gives the selector/programming side. Positive or self-adjoint ambient structure may leave the principal factor separated or select only a sub-divisor. PL-256 adds that generic boundary/Weyl data are broad enough to program a desired spectral condition; the natural zeta logarithmic derivative is Herglotz exactly under RH, so abstract realization of that Herglotz function does not derive the missing positivity.
 
 ## Consequence for synthesis
 
-For every proposed bridge, ask three separate questions: what source relation is genuinely forced, what natural closure/quotient produces the target-bearing object, and what nontrivial part of the relation survives that exact operation. Only then ask whether the surviving relation yields positivity, spectral reality, coercivity, or another target theorem.
-
-A family generating function, zeta correction factor, principal residue, positive square, or large packet state is not sufficient unless the same object still carries the source relation that is supposed to do the mathematical work.
+For every bridge, identify where the source relation first exists, which natural operation scalarizes or quotients it, what relation survives afterward, and whether the final target is complete. If the relation disappears before the target or the target is prescribed through free boundary data, the construction has not transferred arithmetic coercivity.
 
 ## Counterevidence / boundary
 
-These closures are category-specific. Nontranslation operators can leave the Prime-Circle packet algebra; other multiple-series residues/periods could retain nontrivial reciprocity while exposing a principal channel; singular/unbounded mixed sectors can leave the Weil finite-trace class. Those are open exits, not evidence.
+The controls are category-specific. Joint path-labelled or simultaneous-scale Prime-Circle algebras, matrix-valued/multi-cusp automorphic normalizers, and genuinely arithmetic boundary data may escape. Such exits are valuable precisely because they move the source relation to a stage before the closed scalar quotients.
 
 ## Epistemic status
 
-**Supported cross-line relation-survival principle; no universal no-go theorem or RH implication is claimed.**
+**Supported cross-line relation-survival principle strengthened by exact scalarization and programmability controls; no universal no-go theorem or RH implication is claimed.**
 
 ## Falsification criterion
 
-Produce a target theorem in one of the closed categories where the decisive source relation is provably absent from the final target-bearing object yet still supplies the conclusion without hidden reintroduction. A positive continuation should instead exhibit and verify the relation that survives the exact final quotient.
+Produce a target theorem in one of the closed categories where the decisive source relation is absent from the target-bearing object and is not reintroduced by prescribed boundary/scalar data, or exhibit a covered scalar postprocessor/path quotient that retains a nontrivial prime-specific relation contrary to the exact classifications.

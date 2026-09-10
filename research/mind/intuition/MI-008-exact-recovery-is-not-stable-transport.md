@@ -1,37 +1,35 @@
-# MI-008 — Stable target transport depends on the actual global map, not local recoverability or smoothing alone
+# MI-008 — Stable target transport depends on the actual composed map, not local recoverability or smoothing alone
 
-**Evidence level:** supported cross-line synthesis from cancellation-coherent source access, source-visible quotient geometry, corrected Robin transport, and direction-specific Xi observability boundaries
+**Evidence level:** supported cross-line synthesis from cancellation-coherent sampling, Nyman closure, finite-seam transport, and Xi observability/source boundaries
 
 ## Core intuition
 
-Exact representation, exact state recovery, local smoothing, or rapid averaging does not determine whether the final target is transported stably. The missing quantity often lives in the map between stages: which cancellation orbit is completed, which component remains visible, which weighted locality survives a changing scale, or which observation mechanism actually exposes the target.
+Exact representation, exact state recovery, local smoothing, or a favorable limiting operator does not determine whether the final target is transported stably. The missing quantity often lives in the composition between stages: cancellation may be broken, a quotient may erase the target, a positive component may impose a floor, or an observation map may be exponentially ill-conditioned.
 
-The current evidence makes this more precise. A locally favorable approximation can create a false global signal by breaking cancellation, while a locally favorable smoothing theorem can remain useful only if its margin survives the exact finite-scale physical map.
+A local theorem should therefore be trusted only after its gain survives the **actual finite/global map** that produces the target currency.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity provides the clearest cancellation example. AF-235 makes Li root rate a coarse RH-sufficient endpoint, but AF-236 shows sublinear canonical jets cannot affect it. AF-237--AF-238 then show that fixed positive linear prefixes are not automatically faithful: truncating either the ordinary or completed local logarithmic derivative can manufacture root rate above one from singularities whose contribution is harmless in the full Li transform. Stable transport therefore requires **cancellation coherence**, not merely more source depth.
+Arithmetic Fidelity makes cancellation coherence explicit. AF-237--AF-243 show that local source truncations can manufacture a false Li root rate by cutting a global cancellation orbit. AF-245--AF-247 then show that sparse output observability has its own phase-recurrence criterion; fewer faithful outputs do not make source construction cheaper.
 
-Nyman--Beurling gives an observation-map analogue. NB-019 replaces an exponential shell-period cost by a target-aware coefficient discrepancy, yet NB-021 shows that if intrinsic shell discrepancy is sublinear then an entire rooted dilation band mixes to zero in the old section. The residual may be well averaged while the destination-visible enrichment disappears.
+Nyman--Beurling gives the quotient analogue. NB-027 finds source-selected coefficient mass transverse to restricted adjacent matchings, but NB-028--NB-029 show that the unrestricted adjacent quotient collapses the signal and that all adjacent differences together span the full Nyman closure. A useful local nuisance direction cannot be extrapolated to an unrestricted quotient without checking the target-bearing closure.
 
-Prime Flute corrects the operator that must be transported. PF-258 shows that the physical thin-seam tangent is the intrinsic-six operator `H=A^{-1/4}LA^{-1/4}`, not the bounded Bessel-four `J`. PF-259--PF-260 nevertheless prove a full fixed-axis fractional smoothing window, with every strict `1<R<2` at square root. That positive result is only an input: the live theorem must preserve some of this margin uniformly through finite seam scale, the actual corridor, and the combined normalized Robin map.
+Prime Flute is now the cleanest smoothing counterexample. PF-258--PF-260 prove a genuine fixed-axis fractional window with `R>1`, and PF-261--PF-267 give strong finite-seam Green control. Yet PF-268 proves that the positive lowest mass pole alone makes the **bare finite-seam** separated operator unbounded for every `R>1`. The local smoothing margin survives only if the normalized Robin or spatial propagation map changes the obstruction before endpoint weighting.
 
-Xi Flow gives the direction/observation qualification. XF-154 establishes the exact initial outward complex threshold on the physical fundamental domain, while XF-153 preserves it under future heat only in the near-antipodal sector. XF-155 shows that positive heat has another mechanism: a vanishing heat time isolates an outward edge mode above universal depth `(1/2)log 2`. Initial visibility and full-future visibility are therefore distinct transport questions.
+Xi Flow supplies the conditioning version. XF-159 shows that even continuum blind-region data remain exponentially transition-insensitive under subexponentially conditioned decoders. XF-162 finds a true Xi-specific source-tail discriminator, but no theorem yet propagates that tail information through the heat/source map into transition visibility.
 
 ## Program consequence
 
-At every stage distinguish source sufficiency, cancellation coherence, local smoothing, visibility in the retained quotient, finite-scale transport, and conditioning of the final functional. Estimate the **actual composed map** that produces the target currency rather than upgrading a neighboring representation and assuming the gain survives composition.
-
-When a limiting/local theorem is used, identify the uniformity required to pass through the finite or growing regime where the target lives. When a transform relies on cancellation, bound the error after the relevant cancellation orbit has been assembled.
+Estimate the composed target map in its final normalization. For a limiting/local gain, prove the uniform finite-scale transport theorem; for a quotient, prove that target-bearing closure survives; for sparse output, separate observability from source cost; for source regularity, prove that the regularity enters the transition rather than only the far tail.
 
 ## Counterevidence / boundary
 
-These controls are category-specific. Arithmetic Fidelity may admit a non-prefix cancellation-coherent representation; Nyman may exploit early or unrooted channels; Prime Flute may preserve its fixed-axis margin; Xi may possess source restrictions or other observables. None is ruled out by this synthesis.
+The failures are category-specific. Prime Flute may recover a margin after the combined normalized Robin/spatial map; Nyman may isolate a genuinely target-poor low-energy subspace; Xi may have a source identity transporting tail rigidity inward. Those possibilities reinforce rather than weaken the need to analyze the exact composition.
 
 ## Epistemic status
 
-**Supported cross-line distinction between local correctness/recovery and stable transport through the actual target map; no universal theorem or RH implication is claimed.**
+**Supported distinction between local correctness and stable transport, strengthened by an exact case where a real fixed-axis smoothing gain fails after the bare finite-seam map.**
 
 ## Falsification criterion
 
-Produce a final theorem in one cited setting while bypassing the identified cancellation, visibility, or finite-scale transport modulus without adding new source structure, or invalidate an exact map/boundary on which the synthesis relies. A valid continuation should supply the missing composed transport theorem and thereby narrow this principle.
+Produce a final theorem in one cited setting while bypassing the identified cancellation, closure, finite-seam, or conditioning modulus without adding new source structure, or invalidate an exact map/boundary on which the synthesis relies.

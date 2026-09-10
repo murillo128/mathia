@@ -1,17 +1,17 @@
 # Farey-discrepancy research lines
 
-This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Add Möbius-specific rigidity at the sharp square-root free-model boundary
+## Find the quantitative prime breadth that turns Möbius ancestry into coercivity
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-014--FD-020 classify when unrestricted common sources can interpolate pointwise or Cesaro GCD-duality saturation across integer-ratio horizons. FD-021--FD-023 add a quantitative growth law: bounded-ratio or merely exponential horizon growth is incompatible with saturation by a polynomially bounded source, while Cesaro saturation forces increasingly large horizon ratios.
+FD-024--FD-025 pin the unrestricted sparse-horizon GCD-duality boundary at square-root endpoint growth. FD-026 shows that exact squarefree support, ternary `{-1,0,1}` values, and every `1/2+epsilon` envelope still permit saturation when the squarefree signs are free.
 
-FD-024 shows the complementary free construction. Once the endpoint envelope is any fixed power strictly above one half and the horizons grow supermultiplicatively, an unrestricted source can again saturate. FD-025 identifies the sharp horizon-free obstruction on the other side: any sublinear source that saturates must grow super-square-root along the saturating horizons.
+FD-027 adds exact Möbius ancestry `a_{pn}=-a_n` for any fixed finite set of prime directions and still constructs saturating controls. FD-028 strengthens this again: even exact ancestry along infinitely many prime directions can coexist with saturation when those directions are sufficiently sparse. The missing arithmetic input is therefore not the statement that multiplicative ancestry exists, but that enough of it is coupled at the active scale.
 
-The free relaxation is therefore pinned at the exponent `1/2`. The live theorem must use Möbius-specific information exactly where generic growth envelopes cease to coerce: sign/parity, divisor consistency, multiplicative ancestry, or another source law that rules out the square-root-plus interpolation controls.
+The live theorem is to identify a quantitative scale-growing prime breadth, divisor-complete law, or comparable global coherence condition that the actual Möbius source satisfies and the FD-028 controls cannot. Then prove that this condition breaks the square-root free-model saturation.
 
-## Treat horizon sparsity and polynomial growth above one half as controls
+## Treat support, ternary values, and sparse prime ancestry as controls
 
-Large or sparse horizon jumps can defeat overlap-based coercivity, and even a polynomial source envelope does not help once exponents above one half are allowed. Conversely, square-root-scale source control already forbids free saturation. Any RH-relevant continuation must show why the actual Möbius source cannot occupy the residual super-square-root interpolation corridor, not merely make the horizon schedule more exotic.
+Squarefree support, bounded ternary coefficients, polynomial growth, and even infinitely many exact prime-direction sign rules are not by themselves coercive at the GCD-duality boundary. A proposed Möbius-specific mechanism must explain how the active prime directions become sufficiently dense/coupled with scale, rather than count how many exact local rules hold in total.

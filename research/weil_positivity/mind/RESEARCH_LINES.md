@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive an all-orders mixed-prime coupling before scalar normalizer formation
+## Derive all-orders mixed-prime coupling before scalar normalizer formation
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`.
 
-WP-216--WP-234 show that critical prime-ray amplitudes and positivity do not determine the Weil orientation. WP-235 rules out the simplest Schoenberg/Hadamard repair of the Gamma--Bost--Connes metric defect. WP-236 strengthens the marginal obstruction to every fixed order: positive kernels can agree on all interactions involving at most `d` primes and still differ on a `(d+1)`-prime state. The missing dependence law is genuinely all-orders/global.
+WP-216--WP-236 show that correct critical prime amplitudes, positivity, and every bounded order of prime marginals still do not determine the Weil orientation. The missing dependence law is genuinely all-orders/global.
 
-WP-237--WP-239 test the strongest current automorphic handoff. Arthur-height variation cannot isolate the zeta explicit-formula block because the whole block is height-independent. After the scattering normalizer has factored as a central scalar, fixed channel projection, moving compression, and homogeneous Schur reduction all preserve that scalar factor intact. These post-normalizer operations may alter geometric remainders but cannot split zero, prime, Gamma, and polar constituents already combined in `m'/m`.
+WP-237--WP-239 show that once the automorphic arithmetic data have factored into a central scalar normalizer, Arthur-height variation, fixed/moving channel compression, and homogeneous Schur reduction retain the scalar explicit-formula block intact. WP-240--WP-241 now close the ordinary one-variable meromorphic scalar escape as well. A divisor-faithful rational postprocessor is necessarily a monomial and therefore preserves the whole block; a nonmonomial creates movable level-set divisors; a genuinely nonrational meromorphic postprocessor cannot continue through both zeros and poles of the scalar normalizer while remaining in the ordinary divisor/log-derivative category.
 
-The live construction must therefore enter **before scalarization** or use a genuinely non-homogeneous source-forced operation whose arithmetic dependence is independently justified: for example a matrix-valued/multi-cusp normalizer, a pre-normalizer finite--archimedean pairing, or another global relation that derives the all-orders prime coupling and sign together.
+The live construction must therefore act before scalarization, use genuinely matrix-valued/multi-cusp data, or introduce a new source-forced analytic category whose extra structure is independently justified. The same mechanism must derive both the global mixed-prime dependence and the sign/orientation consumed by Weil positivity.
 
-## Treat bounded marginals and post-normalizer projections as controls
+## Treat bounded marginals and scalar post-normalizer functional calculus as controls
 
-Matching any bounded order of prime marginals, adding positivity, moving the projection, or making the compression non-reducing does not recover the missing mixed-prime law once the arithmetic normalizer is scalar. A survivor must explain where the cross-prime information enters before that loss.
+Matching any bounded order of local prime data does not fix the global kernel. After central scalarization, neither homogeneous geometry nor fixed meromorphic one-variable postprocessing can selectively recover the original zero/prime/Gamma constituents while preserving the source divisor. A survivor must identify where the cross-prime information enters before that loss or prove a genuinely new non-scalar bridge.

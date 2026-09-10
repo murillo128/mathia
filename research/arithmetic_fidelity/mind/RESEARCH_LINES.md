@@ -18,14 +18,14 @@ AF-221--AF-233 show that localization has a real information bill and that contr
 
 **Linked intuitions:** `MI-021-coarse-rh-endpoints-can-still-require-deep-source-access`, `MI-022-prefix-truncation-must-respect-cancellation-orbits`.
 
-AF-234--AF-238 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. AF-239--AF-243 sharpen that boundary. Fixed damping buys a wider zero-free strip only by weakening the RH discriminator; moving damping can suppress each fixed critical orbit while preserving the RH root rate, but no damping with a nonvanishing source prefix repairs the unconditional linear-prefix artifact.
+AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. Fixed damping buys a wider zero-free strip only by weakening the discriminator, while moving damping does not repair an unconditional nonvanishing source prefix. The live bridge must therefore assemble the required cancellation orbit before the root-rate quotient is formed.
 
-The live source bridge must therefore be deep enough and cancellation-coherent before the root-rate quotient is formed. Damping is useful only after that structural requirement is met.
-
-## Characterize sparse output sampling separately from source compression
+## Characterize sparse output sampling by phase recurrence, not density
 
 **Linked intuition:** `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`.
 
-AF-244 shows that a zero-density set of Li indices can still preserve the exact finite-exponential root-rate discriminator when it contains arbitrarily long consecutive blocks. This is genuine output sparsification, not source compression: computing each retained Li coefficient still requires its original source depth.
+AF-244 shows that zero-density index sets can preserve finite-exponential root rate. AF-245--AF-246 replace thickness by the intrinsic phase condition: tail observability is governed by uniqueness on the Bohr limit set, and root-rate fidelity for a fixed finite exponential polynomial is equivalent to subexponential avoidance of its zero set on the phase-orbit closure. Positive-amplitude recurrence is sufficient but not necessary.
 
-The live question is to determine how far local completeness can be weakened while preserving the RH-equivalent root rate, and which sparse sampling geometries remain compatible with stable comparison, without confusing fewer output indices with cheaper arithmetic source access.
+AF-247 makes the algebraic subclass exact: when the finite modes are algebraic, universal root-rate observability collapses to periodic completeness, meaning every residue class modulo every modulus is visited infinitely often. The actual zeta zero phases are not known to lie in that algebraic class.
+
+The live question is therefore source-specific phase recurrence: characterize the orbit/zero-set approach rates of the finite families actually produced by the zeta/Li representation, while keeping this output-observability problem separate from the cost of computing each retained coefficient.

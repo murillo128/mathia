@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove the cross-height covariance law needed to average a support-edge residual
+## Prove cross-height covariance beyond the classical restricted-support barrier
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`.
 
-VIS-130--VIS-132 fix the bounded-source mean convention and remove the realized diagonal common mode exactly. VIS-133--VIS-135 then show that the remaining fixed-window off-diagonal statistic has an order-one normalized covariance and a Gaussian terminal packet with a strictly positive variance floor; a single matched CUE window does not self-average to the `1/L` arithmetic scale.
+VIS-130--VIS-139 establish the finite-window CUE null, a nondegenerate one-window fluctuation floor, and the need for genuinely four-level information to control covariance between disjoint quadratic source windows. A `1/L` arithmetic residual therefore requires a multi-window dependence theorem rather than another one-window calibration.
 
-VIS-136 identifies the missing currency: the covariance tail across source windows determines how many windows are required to average the residual. VIS-137 shows that translated fixed-ratio CUE windows provide only `O(1)` disjoint samples on one circle, so they cannot manufacture a growing independent pool. VIS-138 proves that exact single-window CUE marginals do not determine this cross-window averaging law.
+VIS-140 shows that the standard Rudnick--Sarnak `n`-level theorem does not supply that closure at the Montgomery support edge. Its zeta support condition pulls back on the pair-pair plane to `|q|+|r|<1`, whereas edge-edge covariance lives near `(1,1)`. VIS-141 sharpens the design obstruction: two copies of the same restricted-support pair statistic must stay below `|q|<1/2`; if one factor approaches the edge, every admissible independent companion band collapses toward zero frequency.
 
-VIS-139 sharpens the information requirement. For disjoint quadratic pair statistics, cross-window covariance is a four-level functional after lower-order contractions vanish; even exact one-, two-, and three-level marginals do not determine it in general. The live theorem must therefore provide a zeta-side four-level/structural-closure estimate or a direct cross-height mixing bound under the actual moving window geometry.
+The live routes are therefore genuinely different: prove a direct cross-height covariance/mixing theorem for the frozen edge statistic, obtain wider-support four-level zeta information with the required moving-window uniformity, or design a nonfactorized/asymmetric statistic and independently prove that it still retains the intended arithmetic signal. Merely trimming the same edge observable into the classical support region is closed.
 
-## Treat one-window CUE calibration and pair correlation as completed controls
+## Treat one-window CUE, pair correlation, and simple restricted-support redesigns as controls
 
-The finite-CUE mean and one-window stochastic null can be calibrated exactly, but neither pair correlation nor any collection of lower-order single-window marginals determines the cross-height averaging exponent. Arithmetic interpretation begins only after the required multi-window dependence law is proved and finite-height transfer is controlled.
+Exact finite-CUE calibration and lower-order zeta correlations do not determine the multi-window averaging exponent. Classical restricted support also cannot preserve two copies of the support-edge observable. Any replacement statistic must re-establish both its arithmetic amplitude and its finite-height transfer rather than inherit them by analogy.

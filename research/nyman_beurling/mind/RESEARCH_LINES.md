@@ -2,22 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert near-linear shell discrepancy into target-relevant source structure
+## Push the canonical shell discrepancy toward a near-linear scale
 
-**Linked intuition:** `MI-002-small-shell-discrepancy-can-destroy-rooted-visibility`.
+**Linked intuition:** `MI-002-rooted-shell-mixing-needs-near-linear-discrepancy`.
 
-NB-018--NB-022 show that small shell discrepancy is not benign mixing: after the rooted normal equation it compresses the residual back into old finite sections, now at all deeper dilations, and Fourier/Möbius inversion quantifies the loss. NB-023 combines this with the Burnol-scale lower bound and forces the canonical discrepancy close to linear on the relevant approximation scale.
+The shell decomposition still reduces the useful rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force a near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-The live theorem is no longer to seek visibility outside a finite rooted band. It is to exploit the forced near-linear discrepancy itself: convert it into a source-specific multiplicative energy, coefficient obstruction, or asymptotic law that is visible in the Nyman distance rather than merely proving that small discrepancy would have hidden the target.
+## Separate target-selected low Gram occupation from universal adjacent-difference closure
 
-## Isolate target-selected low Gram energy from the universal low-Rayleigh bulk
+**Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`.
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`.
+NB-024 shows that good canonical approximation selects a low-Rayleigh coefficient vector, while NB-025--NB-026 construct a large universal supply of target-poor adjacent-cancellation modes. NB-027 adds a genuine source signal: Möbius locking forces logarithmic normalized coefficient mass transverse to at least one disjoint adjacent matching.
 
-NB-024 proves that good canonical approximation drives its own coefficient vector into a normalized low-Rayleigh direction. NB-025--NB-026 supply the matched control: adjacent generator cancellations already create many low-Rayleigh directions with negligible target loading, in fact a macroscopic target-poor sector.
+The full adjacent family cannot simply be declared nuisance. NB-028 shows that the complete overlapping coefficient quotient collapses to one Mertens scalar, and NB-029 proves the stronger Hilbert-space fact that the successive differences `g_n-g_{n+1}` have exactly the same closed span as the entire canonical Nyman dictionary. Quotienting all adjacent differences would therefore quotient away the whole approximation space.
 
-The live spectral statement must therefore concern **where the target-selected coefficient vector sits** relative to that universal sector, not the existence or dimension of small eigenvalues. Seek a source-specific projection, angle, or mass theorem separating the canonical vector from target-poor adjacent cancellations.
+The live spectral question is narrower: identify the **low-Rayleigh target-poor part** of the adjacent-difference family and prove that the canonical target-selected vector has a quantitatively distinguished component relative to that energy-constrained sector. The relevant separator must be Gram-weighted/target-aware, not a topological quotient by all adjacent differences.
 
-## Treat generic deep mixing and small eigenvalues as controls
+## Treat small eigenvalues and unrestricted adjacent spans as controls
 
-Deep dilation mixing can erase the old-section signal, and abundant Gram ill-conditioning is available for purely geometric reasons. Neither phenomenon proves approximation. Any continuation must preserve absolute target coupling and identify a source-selected direction rather than count favorable geometry.
+Low Gram energy is generically abundant, while unrestricted adjacent differences are topologically complete. Neither small-eigenvalue counting nor removing the whole adjacent family can certify arithmetic approximation. A useful spectral invariant must simultaneously retain the Nyman closure and distinguish the target-selected coefficient geometry.

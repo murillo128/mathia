@@ -1,37 +1,37 @@
 # MI-009 — Locally correct pieces do not determine the global coherence consumed by the target
 
-**Evidence level:** supported cross-line synthesis from all-orders marginal, cancellation, interpolation, factorization, selector, and covariance boundaries
+**Evidence level:** supported cross-line synthesis from all-orders marginal, phase-recurrence, multiplicative-ancestry, scalarization, selector, and covariance boundaries
 
 ## Core intuition
 
-A construction can be exact on every local piece and still fail globally because the target depends on how those pieces are coupled, cancelled, selected, or jointly fluctuating. The latest evidence makes the boundary stronger: even **every bounded interaction order** may be correct while the first untested higher-order relation remains free.
+A construction can be exact on many local pieces and still fail globally because the target depends on how those pieces are coupled, cancelled, selected, or jointly fluctuating. The latest evidence strengthens two aspects simultaneously: every bounded interaction order can be correct while a higher relation remains free, and even infinitely many exact local arithmetic relations can be insufficient when they are too sparse at the active scale.
 
-The missing object is therefore a source-forced global compatibility law, not another collection of locally accurate marginals.
+The missing object is therefore a source-forced compatibility law whose **breadth and order scale with the target**, unless a theorem proves a finite closure principle.
 
 ## Strongest justified principle
 
-Weil Positivity supplies the sharpest hierarchy. WP-234 gives different positive global couplings with identical prime-ray marginals, and WP-236 extends underdetermination to every fixed prime-interaction order. WP-237--WP-239 show that once the arithmetic normalizer has scalarized, ordinary height variation and homogeneous channel/compression geometry cannot reconstruct its internal zero/prime/Gamma coupling.
+Weil Positivity provides the all-orders hierarchy. WP-234--WP-236 allow positive kernels to agree through every fixed prime-interaction order while a higher state remains free. WP-237--WP-241 add an irreversible scalarization boundary: once the global normalizer is one scalar, fixed meromorphic postprocessing cannot reconstruct its internal source decomposition while preserving the original divisor.
 
-Arithmetic Fidelity supplies cancellation coherence. AF-237--AF-243 show that exact local source coefficients and sophisticated damping still produce a false root rate when a prefix cuts a global binomial cancellation orbit. AF-244 then separates the opposite phenomenon: output indices may be globally sparse if they retain enough local consecutive structure, illustrating that the relevant compatibility law depends on the transform rather than density alone.
+Farey Discrepancy provides the breadth hierarchy. FD-026--FD-028 preserve square-root GCD-duality saturation under exact squarefree ternary constraints, under every fixed finite collection of Möbius prime-direction identities, and even under infinitely many such identities when the enforced prime directions are sparse. Cardinality of correct local rules is not the right measure; active-scale coverage is.
 
-Prime Lattice supplies factorization and selector completeness. PL-253 reaches the zero block inside a positive global Maaß--Selberg distribution but leaves a signed remainder; PL-254--PL-255 force selected spectral zeros onto the critical line without proving the selector sees the full divisor. Global correctness of the ambient object does not transfer automatically to the target component.
+Arithmetic Fidelity provides the observation counterpart. AF-245--AF-246 classify finite-mode root observability by the sampling orbit's approach to zero sets on the phase closure, not by density. AF-247 shows that a finite closure does occur in the algebraic subclass, where periodic completeness is enough; the actual zeta phases are not known to enjoy that reduction.
 
-Visual Exploration supplies the stochastic hierarchy. VIS-139 proves that covariance of disjoint quadratic window statistics is a four-level functional not determined even by matching all one-, two-, and three-level data. Pair correlation therefore cannot determine the averaging law without an additional closure theorem.
+Prime Lattice supplies factorization/selector completeness, and PL-256 adds boundary programmability: a self-adjoint or Herglotz model can encode only a selected/prescribed divisor unless source forcing and two-way completeness are proved.
 
-Farey Discrepancy and Prime Circle give complementary free-model controls. FD-024 constructs globally saturating square-root-plus sources on sparse horizons despite strong local constraints, while PC-240--PC-243 show that adding canonical noncommuting/refinement operators can still close inside classical packet algebras without a new relational invariant.
+Visual Exploration supplies the stochastic hierarchy. VIS-139 makes cross-window covariance a four-level functional; VIS-140--VIS-141 show that the classical restricted-support theorem cannot close the edge-edge sector, and a simple support-safe redesign changes the observable instead of supplying the missing dependence law.
 
 ## Program consequence
 
-Whenever a candidate is assembled from local pieces, state the compatibility object explicitly: all-orders dependence law, cancellation orbit, divisor-completeness condition, nonfactorizing sign transfer, or cross-window covariance. Either derive it from the source or prove the target is insensitive to the unresolved freedom.
+Whenever a candidate is assembled from locally correct pieces, state the compatibility object explicitly and ask how its required order/breadth grows with scale: all-orders mixed-prime coupling, cancellation orbit, phase recurrence, divisor completeness, or cross-window covariance. Either derive that law from the source or prove a closure theorem that makes the unresolved degrees of freedom irrelevant.
 
 ## Counterevidence / boundary
 
-The examples involve different notions of coherence and do not establish a universal gluing theorem. Some problems may admit a finite closure principle, and special determinantal, algebraic, or arithmetic structure can collapse a nominally higher-order hierarchy. That collapse itself must be proved in the target regime.
+The examples do not prove that every useful compatibility law is infinite-order. AF-247 is an explicit counterexample to that overstatement: special algebraic structure can collapse the requirement to periodic completeness. Determinantal, automorphic, or other source structure may similarly close a hierarchy, but that closure must itself be established in the target regime.
 
 ## Epistemic status
 
-**Supported cross-line principle that bounded/local correctness is insufficient whenever the target consumes an unresolved global compatibility law; no universal theorem or RH implication is claimed.**
+**Supported cross-line principle that local correctness, even at many or all fixed finite constraints, is insufficient when the target consumes scale-growing global coherence; finite closure is a theorem to prove, not an assumption.**
 
 ## Falsification criterion
 
-Show in one cited setting that all locally admissible configurations automatically have the same target-relevant global coherence, contrary to the persisted controls, or prove a source law that closes the hierarchy at a bounded order in the exact target regime.
+Show in one cited setting that the persisted free configurations cannot vary the target-relevant global coherence despite satisfying the stated local constraints, or derive a source-specific bounded-order/breadth closure theorem that fully determines the target in the exact regime.

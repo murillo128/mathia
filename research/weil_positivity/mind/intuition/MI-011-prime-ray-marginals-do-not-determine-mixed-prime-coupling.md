@@ -1,31 +1,33 @@
-# MI-011 — Weil orientation requires all-orders coupling before scalarization
+# MI-011 — Weil orientation requires all-orders coupling before scalarization; scalar meromorphic postprocessing is rigid
 
-**Evidence level:** exact positive-kernel matched controls and central-normalizer no-go results through WP-239
+**Evidence level:** exact all-orders positive-kernel controls and scalar-normalizer rigidity through WP-241
 
 ## Core intuition
 
-Correct prime marginals do not determine the global kernel, even when positivity is imposed. The newer evidence strengthens this from a one-prime warning to an all-orders one: every fixed interaction order can be matched while a higher mixed-prime state remains free.
+Correct prime marginals do not determine the global Weil kernel, even when positivity is imposed, and no bounded interaction order repairs that defect in general. A second information barrier appears after automorphic scalarization: once the arithmetic content is one central meromorphic scalar, ordinary one-variable postprocessing cannot recover its internal source decomposition without either preserving the whole divisor block or introducing new non-source divisor data.
 
-Automorphic scattering adds a second boundary. Once the arithmetic content has collapsed into a central scalar normalizer, ordinary post-normalizer geometry cannot recover its internal zero/prime/Gamma decomposition.
+Thus the dependence law and its sign must be generated while genuinely relational arithmetic information is still present.
 
 ## Strongest justified principle
 
-WP-234 identifies a continuum of positive Cauchy couplings with identical critical prime-ray marginals. WP-235 shows that the natural metric defect is not conditionally negative type even on a small two-prime fork, blocking a direct Schoenberg repair. WP-236 proves that no bounded marginal order suffices in general: agreement through `d` prime coordinates can coexist with disagreement on a `(d+1)`-prime interaction.
+WP-234--WP-236 show that positive kernels may agree on all interactions involving at most `d` primes and still differ on a `(d+1)`-prime state. No fixed marginal order is therefore a universal Weil-orientation principle.
 
-WP-237 shows that Arthur-height manipulation acts outside the entire height-independent explicit-formula block. WP-238 proves fixed scattering-channel projections cannot split the central scalar normalizer. WP-239 extends the obstruction to moving and non-reducing homogeneous compressions and zero-shift Schur reductions: the scalar factor survives whole.
+WP-237--WP-239 establish the post-normalizer barrier for Arthur-height variation, fixed and moving compressions, and homogeneous Schur/Feshbach operations: the central factor `m` survives whole. WP-240 classifies fixed rational scalar postprocessors. Divisor fidelity under constant matched rescaling forces `F(z)=cz^k`, giving only `k m'/m`; every nonmonomial rational transform creates finite nonzero level-set divisors `m(s)=a` that move while the original divisor stays fixed.
+
+WP-241 removes the transcendental-meromorphic loophole in the same divisor channel. If `m` has a zero and a pole and `F(m)` must continue meromorphically through both, then `F` extends meromorphically to `0` and `infinity`, hence is rational. A genuinely nonrational scalar transform must abandon the ordinary meromorphic divisor/logarithmic-derivative bridge and supply a new analytic positivity mechanism.
 
 ## Program consequence
 
-Search for the dependence law where it is still visible. Prefer constructions before scalar normalizer formation, matrix-valued/multi-cusp scattering, or genuinely non-homogeneous source-forced operations. Require the same mechanism to derive mixed-prime coupling and the sign/orientation consumed by Weil positivity.
+Prioritize pre-normalizer finite--archimedean coupling, matrix-valued/multi-cusp normalizers, or another source-forced operation in which the all-orders relation is present before scalar collapse. Treat any scalar postprocessor as suspect until it proves both divisor fidelity and a new sign theorem without encoding desired level sets by hand.
 
 ## Counterevidence / boundary
 
-WP-239 does not rule out non-homogeneous operations such as shifted resolvents or logarithmic generators, nor constructions whose geometry is itself source-forced by arithmetic data. Such routes must still prove that the new dependence is not inserted after inspecting the desired sign.
+WP-240--WP-241 do not rule out genuinely matrix-valued normalizers, source-dependent geometry, infinite-dimensional/non-scalar functional calculus, or a nonmeromorphic analytic bridge with its own independently proved positivity theorem. Those are new categories, not extensions of the closed scalar divisor calculus.
 
 ## Epistemic status
 
-**Exact all-orders marginal underdetermination plus a broad post-normalizer scalarization no-go; the remaining opportunity is pre-scalar or genuinely non-homogeneous global coupling.**
+**Exact all-orders marginal underdetermination plus an essentially complete rigidity classification for fixed meromorphic scalar postprocessing in the ordinary divisor channel; the remaining opportunity is pre-scalar or genuinely non-scalar/source-forced coupling.**
 
 ## Falsification criterion
 
-Show that bounded-order positive marginals uniquely determine the critical global coupling under the claimed source class, or exhibit a covered homogeneous post-normalizer reduction that separates the internal constituents of the central scalar factor without importing extra arithmetic information.
+Exhibit a fixed one-variable meromorphic scalar postprocessor that preserves the original normalizer divisor under matched controls, separates the internal Weil constituents, and is not monomial, or prove that bounded-order positive marginals uniquely fix the required orientation under the actual source class.

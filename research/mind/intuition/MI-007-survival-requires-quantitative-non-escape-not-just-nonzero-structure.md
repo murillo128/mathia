@@ -1,39 +1,39 @@
 # MI-007 — Quantitative non-escape must be priced in the source currency the theorem actually consumes
 
-**Evidence level:** supported cross-line synthesis from current endpoint-completion, source-depth, target-occupation, zero-mode, mass-ladder, count-depth, selected-event, and conditioning boundaries
+**Evidence level:** supported cross-line synthesis from current endpoint-completion, target-occupation, nonlinear-correlation, finite-seam, count-depth, selected-event, and Xi-source boundaries
 
 ## Core intuition
 
-The program repeatedly reaches a stage where useful geometry is already abundant: many low modes exist, localization is available after paying depth, positive or self-adjoint structures exist, exact state can be reconstructed, or individual transport kernels are controlled. None of that is enough if the actual arithmetic source can escape the precise norm, rate, sign, projection, or conditioning modulus consumed by the final theorem.
+The program repeatedly reaches favorable geometry and then discovers that the arithmetic source can still escape the exact norm, rate, sign, projection, or conditioning modulus consumed by the final theorem. The decisive question is not whether useful structure exists, but whether the actual source is forced to occupy it with enough quantitative mass after the full target map is applied.
 
-The decisive question is therefore quantitative: **how much source-selected information survives into the exact destination currency at the target scale?**
+The latest evidence makes this more concrete by closing several previously plausible escapes rather than merely weakening them.
 
 ## Strongest justified principle
 
-Analytic Frontier makes this literal. ANF-157 expresses bow variance as positive source Fejer energy minus an endpoint-completion square; ANF-158 localizes the threat to cumulative residual modes, while ANF-159--ANF-161 exclude bare-carrier resonance as a substitute. The missing theorem is coefficient-side.
+Analytic Frontier now prices its endpoint obstruction in a source-specific square-root currency. ANF-162 shows that target-sized completion forces `Omega(sqrt(X log X))` twisted residual accumulation across `Omega(sqrt X)` sites; the available local second moment cannot improve this cutoff by itself.
 
-Möbius Cancellation shows a protected source coordinate: MC-188--MC-194 repeatedly diagonalize transverse information away from the principal rough zero mode. Better dispersion in the wrong sectors cannot pay the fixed-power uncentered budget.
+Nyman--Beurling separates energy from topology. Universal adjacent modes can be low-Rayleigh and target-poor, yet NB-029 proves that the unrestricted adjacent-difference family spans the entire Nyman closure. The useful separator must therefore be target-selected **and** energy-constrained; quotienting all visible nuisance structure destroys the target space.
 
-Nyman--Beurling gives the target-selection version. NB-024 forces the canonical coefficient vector into a low-Rayleigh regime, but NB-025--NB-026 show a macroscopic target-poor low spectrum already exists for universal geometric reasons. Only target-selected occupation is informative.
+Möbius Cancellation prices nonlinear access. MC-195 makes pointwise cubic mixing Mertens-complete, while MC-196 obtains genuine principal-mode coupling only by exposing growing-modulus pair/triple polynomial-shift correlations. A nonlinear representation is useful only if its source bill is cheaper than the original cancellation problem.
 
-Prime Flute gives the transport version. PF-267 finally puts sharp massive Green amplitude and decay in the same path-correlated estimate; what remains is the collective odd-mass sum in the actual endpoint-weighted class. Weil Inertia similarly reduces screening to an exact local count-depth tariff, but current density/pair/multiplicity inputs miss the simple-zero bow-scale currency.
+Prime Flute supplies an exact transport failure: PF-268 shows that the positive lowest finite-seam pole alone makes every bare separated `R>1` weight unbounded. The fixed-axis smoothing margin becomes relevant only if normalization or spatial propagation is composed before the endpoint norm.
 
-Arithmetic Fidelity and Xi Flow show that cheap output is not cheap source. AF-244 permits zero-density output sampling while AF-243 leaves deep cancellation-coherent source access untouched. XF-159--XF-161 show that vast target sensing and generic positive analytic sources still do not beat the maximal-contact blind exponent; only a genuinely Xi-specific source law can now remove that control.
-
-Robin Extremal adds selected-event non-escape: the possible hosts are extremely sparse and lie on a prescribed race ray, but sparsity becomes useful only through a theorem controlling the race on that selected set.
+Weil Inertia converts its count--depth ledger into a no-go: WI-232 closes density-matched same-interval screening for fixed powers above one quarter and a calibrated quarter endpoint. Robin Extremal couples its sparse selected prime-race coordinate to one-sided event depth. Xi Flow, conversely, finds a genuine source discriminator: XF-162 separates the Xi theta-tail hazard from the strongest positive analytic controls, but the missing step is still to transport that far-tail rigidity into transition coercivity.
 
 ## Program consequence
 
-For every candidate, name the source discriminator, source depth, target-selected sector, transport/conditioning modulus, and exact destination currency. Once a free model has matched the geometry, stop improving the same relaxation and attack the source-specific non-escape statement it leaves open.
+For every candidate, name the source discriminator, source depth/correlation bill, target-selected sector, composed transport map, and final currency. Once a matched control pays the same geometry, attack the exact non-escape statement rather than adding more favorable structure in an orthogonal sector.
+
+A representation should be considered progress only if its exact source obligation is demonstrably cheaper or more structured than the theorem it aims to replace.
 
 ## Counterevidence / boundary
 
-These are different mathematical categories, not one universal inequality. A new representation can escape a cited control by retaining information excluded from its hypotheses. The synthesis does not assert that one modulus governs Fejer completion, rough parity, Gram occupation, radial depth, or heat visibility.
+These are different mathematical categories, not one universal inequality. New source identities, matrix-valued relations, or composed normalizations can escape a cited control by changing the load-bearing currency. The synthesis does not assert that one modulus governs all lines.
 
 ## Epistemic status
 
-**Supported cross-line principle that mature geometric reductions now fail mainly at source-selected quantitative non-escape, not at existence of favorable structure; no universal theorem or RH implication is claimed.**
+**Supported cross-line principle that the mature routes are limited mainly by quantitative source-selected non-escape through the actual target map, with several generic geometric/transport escapes now exactly closed.**
 
 ## Falsification criterion
 
-Prove a final theorem in one cited setting while the declared source discriminator has vanishing presence in the exact destination budget and no compensating relation, or beat one of the matched controls without importing source information outside its hypotheses.
+Prove a final theorem in one cited setting while the declared source discriminator has negligible presence in the exact destination budget and no compensating relation, or beat one of the exact matched controls without importing source information outside its hypotheses.

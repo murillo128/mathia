@@ -1,31 +1,31 @@
-# MI-006 — The finite seam is a mass-ladder summation problem after path correlation couples amplitude and decay
+# MI-006 — The lowest finite-seam pole kills every bare supercritical separated weight
 
-**Evidence level:** exact finite-seam mixture and uniform massive Green estimates through PF-267
+**Evidence level:** exact positive mass decomposition, Green asymptotics, and lowest-pole obstruction through PF-268
 
 ## Core intuition
 
-The corrected intrinsic-six seam retains enough fixed-axis smoothing margin, and the finite seam does not introduce a new mysterious local operator. It decomposes into a positive odd-mass family whose individual Green kernels are now controlled in the right joint amplitude-decay currency.
+The finite seam does not inherit the fixed-axis `R>1` smoothing margin in the bare separated endpoint norm. The reason is not a difficult high-mass summation: positivity makes the very first odd mass pole permanent, and its two-index Green asymptotic leaves an order `N^-2` floor on proportional separated blocks.
 
-The remaining question is collective: whether those modewise estimates sum uniformly in the endpoint-weighted norm with a strict supercritical margin.
+Therefore any successful endpoint argument must perform the normalized Robin/spatial operation before asking for a supercritical weight, so that the lowest-pole contribution is changed or cancelled in the actual composed map.
 
 ## Strongest justified principle
 
-PF-258--PF-260 establish the intrinsic-six tangent and its fixed-axis `R>1` window. PF-261 expresses the finite crossover as a bounded positive mixture of massive resolvents. PF-262--PF-264 derive the exact fixed-mass recession and two-index asymptotics. PF-265 and PF-266 separately obtain uniform decay and sharp diagonal amplitude.
+PF-258--PF-260 establish the intrinsic-six tangent and the fixed-axis fractional window. PF-261 expresses the finite seam as a positive odd-mass mixture, and PF-262--PF-267 obtain the fixed-mass asymptotics plus a path identity coupling sharp amplitude and decay uniformly.
 
-PF-267 uses the tridiagonal path identity to remove the missing correlation problem: normalized Green correlations multiply along the chain, so the sharp capacity amplitude and mass-uniform recession combine in one bound. The mass modes are therefore locally under control in the exact form needed for summation.
+PF-268 uses those results adversarially. Since all massive Green terms have the same sign, the lowest pole alone supplies a lower bound of order `N^-2` on large proportional separated blocks. After multiplying the input by `N^R`, a normalized block witness grows like `N^(R-1)`, so the separated bare finite-seam operator is unbounded for every `R>1`. The same holds with the physical `K_s^0` weight and any fixed high-mode cutoff.
 
 ## Program consequence
 
-Stop reopening fixed-mass asymptotics. Sum the odd-mass ladder with the actual PF-261 weights in the endpoint-weighted operator class, preserving `R>1`, and then test whether corridor/Robin transport spends that margin.
+Stop trying to recover a strict supercritical margin from the bare mass ladder. Estimate the combined normalized Robin map of PF-257 and the spatially separated Robin--Poisson transport of PF-243 before endpoint weighting. A viable mechanism must explain exactly how that composition removes, cancels, or redistributes the positive lowest-pole floor.
 
 ## Counterevidence / boundary
 
-PF-267 does not itself sum the complete mode family, and mode count/weight correlations may still consume the available margin. Nor does fixed-axis or finite-seam control automatically prove the global weak-`S_1` assembly.
+PF-268 does not rule out the combined normalized Robin transform, separated Poisson propagation, the exact endpoint `R=1`, or boundedness for `R<1`. The obstruction is specific to demanding `R>1` from the unnormalized finite-seam crossover on the separated cone.
 
 ## Epistemic status
 
-**The finite seam has been reduced to one explicit collective mass-summation gate; the main local amplitude-versus-decay obstruction is closed.**
+**Exact route closure for bare finite-seam supercritical weighting; the remaining opportunity lies in structure applied before the endpoint weight, not in sharper mass summation.**
 
 ## Falsification criterion
 
-Show that the PF-261 odd-mass weights make the PF-267 bound fail every strict `R>1` endpoint norm, or find a missing uniformity in the path correlation estimate that reopens the local gate.
+Produce a bounded `R>1` separated bare finite-seam operator under the same PF-268 definitions, or show that one of the positivity/asymptotic hypotheses used to obtain the lowest-pole block floor fails for the physical seam.
