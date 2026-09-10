@@ -16,6 +16,8 @@ based_on:
   - research/visual_exploration/findings/VIS-130-bounded-source-taper-replaces-full-circle-cue-coordinate-window.md
   - research/visual_exploration/findings/VIS-131-bounded-taper-cue-edge-profile-poisson-sampled.md
   - research/visual_exploration/findings/VIS-132-realized-tent-diagonal-one-over-l-common-mode.md
+  - research/visual_exploration/findings/VIS-133-bounded-tent-edge-amplitudes-retain-order-one-covariance.md
+  - research/visual_exploration/findings/VIS-134-edge-wick-term-forces-fourth-cumulant-cancellation.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -27,48 +29,62 @@ The support-edge thread has progressively removed universal and representation-i
 
 `VIS-131` derives the corrected bounded-tent **mean** edge profile. For `rho=N/L`, `kappa=M/L<rho`, and `q=1+v/L`,
 
-`C_(N,L,M)(1+v/L) = 1 - Phi_(rho,kappa)(v)/L + O(L^-3)`
+`C_(N,L,M)(1+v/L) = 1 - Phi_(rho,kappa)(v)/L + O(L^-3)`,
 
 with a Poisson-sampled profile `Phi`. Its reflected identity makes the leading rounding symmetric, and an effective-size ratio perturbation `delta rho=O(1/log L)` moves this bounded-source mean only by `O(1/(L log L))`. The earlier full-circle same-order mean ambiguity is therefore not inherited by the correctly replaced smooth bounded source window.
 
-`VIS-132` now resolves one piece of the stochastic covariance convention. The deterministic diagonal mean `1` in `C_(N,L,M)` corresponds in a single CUE realization to
+`VIS-132` isolates the realized diagonal fluctuation
 
 `D_(N,M)=(3/M) sum_j h_M(y_j)^2`.
 
-For fixed source ratio `M/N=alpha in (0,1)`, exact CUE trace covariance gives `Var(D_(N,M))=Theta(N^-2)`, and the CUE linear-statistic CLT makes `N(D_(N,M)-1)` asymptotically nondegenerate Gaussian. Thus in the support-edge scaling `N=Theta(L)` the **realized diagonal itself fluctuates at order `1/L`**. It is the same scalar at every edge coordinate, however: samplewise realized-diagonal subtraction or any zero-sum coordinate contrast removes it exactly. Subtracting only the ensemble mean `1` does not.
+It fluctuates at order `1/L` but is a common scalar across support-edge coordinates, so samplewise diagonal subtraction or a predeclared zero-sum coordinate contrast removes it exactly.
 
-The remaining residual question is consequently narrower. The bounded-tent mean null, first-order effective-size sensitivity, and realized diagonal common mode are controlled. The unresolved stochastic object is the **off-diagonal joint covariance after that exact common-mode projection**, together with finite-height zeta-to-CUE transfer/unfolding errors and any independently predicted arithmetic lower-order amplitude.
+`VIS-133` then shows that the normalized terminal edge amplitudes themselves remain strongly correlated: their covariance converges to an explicit strictly positive-definite kernel `R_(alpha,rho)(v-w)`. The Montgomery weight averages a **fixed** correlated band in the scaled edge coordinate rather than an increasing collection of decorrelated amplitudes.
+
+`VIS-134` identifies the exact remaining fourth-order obstruction. For the centered intensity field, the covariance decomposes into the positive Wick kernel `|R(v-w)|^2`, a vanishing pseudocovariance term, and one connected fourth cumulant. The Wick kernel remains strictly positive definite after both zero-sum common-mode projection and the fixed Laplace smoothing. Therefore any self-averaging of the projected quadratic statistic must come from a specific order-one connected fourth-cumulant cancellation; it cannot be attributed merely to diagonal subtraction, coordinate contrast, or Montgomery smoothing.
+
+The remaining CUE-side question is consequently no longer “what is the covariance?” in general. It is whether the **connected fourth cumulant of the terminal-frequency bounded-tent packet cancels the explicit Wick kernel**, partially cancels it, or leaves a positive residual quadratic form. Finite-height zeta-to-CUE transfer/unfolding uncertainty remains separate and downstream.
 
 ## Research question
 
-For one predeclared bounded physical tent width with nonvanishing single-circle capacity margin, one effective-size rule and integerization convention, and a small frozen set of nondegenerate edge coordinates `v`, what is the exact or asymptotically controlled joint covariance of the **samplewise diagonal-subtracted off-diagonal** finite-CUE statistics after the `VIS-131` mean profile is removed?
+For one predeclared bounded physical tent width with nonvanishing single-circle capacity margin, one effective-size rule and integerization convention, and a small frozen set of nondegenerate edge coordinates, what is the asymptotic connected fourth-cumulant kernel of the terminal-frequency bounded-tent CUE amplitudes after the exact `VIS-132` diagonal convention and `VIS-133` Montgomery/Laplace smoothing?
 
-Does that covariance have a nonzero large-`L` floor, decay like a power of `L`, or contain a lower-rank nuisance geometry that can itself be projected out without fitting to zeta data? How do the remaining finite-height counting/unfolding and effective-size transfer uncertainties propagate through the same frozen contrast?
+Does the resulting fourth-order term cancel the strictly positive Wick kernel from `VIS-134`, merely deform it, or leave a nonzero large-`L` covariance floor for every nontrivial frozen contrast? If a cancellation occurs, what exact CUE mechanism produces it and at what residual scale?
+
+Only after that CUE-side covariance is fixed should the remaining finite-height counting/unfolding and effective-size transfer uncertainties be propagated through the same frozen contrast, followed by an independently predicted arithmetic lower-order amplitude.
 
 ## Why it may matter
 
-A candidate arithmetic edge residual naturally lives at `O(1/L)`. `VIS-131` shows that the bounded-tent **mean** can be calibrated at that scale without the earlier logarithmically amplified effective-size ambiguity. `VIS-132` shows that a careless diagonal convention can nevertheless inject a stochastic `O(1/L)` common mode of exactly the same size.
+A candidate arithmetic support-edge residual naturally lives at `O(1/L)`. The mean-level nuisances that once lived at that scale have been progressively removed or quantified, but a single CUE realization can still have order-one quadratic fluctuations. `VIS-134` now shows exactly what would have to happen for those fluctuations to self-average: the connected fourth cumulant must cancel an explicitly known positive Wick term.
 
-That nuisance is removable without source fitting, so it is not a reason to abandon the route. The decisive issue is now the off-diagonal stochastic floor. Ordinary full-circle random-matrix spectral form factors are known to be non-self-averaging, so it would be unsafe to assume that the bounded-taper covariance shrinks merely because its mean has a `1/L` expansion. If the projected covariance stays `O(1)`, resolving an `O(1/L)` mean signal requires an explicit averaging budget over effectively independent source windows; if it decays, the rate determines how much confirmation data are needed.
+That turns an ambiguous numerical covariance problem into a sharply falsifiable random-matrix question. If the connected cumulant fails to cancel the Wick kernel, the route requires an explicit number and independence structure of source windows large enough to resolve an `O(1/L)` mean against an order-one per-window stochastic floor. If it does cancel, the residual rate and nuisance eigendirections determine the actual confirmation budget.
+
+Either outcome materially changes whether an arithmetic support-edge residual is measurable before any zeta data are inspected.
 
 ## Decisive test
 
-Do not inspect fresh confirmation zeros. Freeze the bounded tent width, effective-size rule and integerization, local unfolding, Montgomery weight, edge coordinates, and one combined decision statistic. Fix the diagonal convention **at the realized-statistic level**: either subtract `D_(N,M)` samplewise or use a predeclared zero-sum coordinate contrast so that the common mode from `VIS-132` cancels identically.
+Do not inspect fresh confirmation zeros. Keep frozen the bounded tent, effective-size rule and integerization, local unfolding convention, Montgomery weight, edge coordinates, and realized diagonal/common-mode projection.
 
-Starting from the exact `VIS-130` finite-CUE source-window statistic and `VIS-131` mean profile, derive the covariance matrix of the remaining off-diagonal coordinates under the same finite-`N` CUE/tent/weight convention. Do not import full-circle SFF covariance. Determine its large-`L` scale, eigen-directions, and any exact symmetry-induced degeneracies. A bounded CUE simulation may be used as a falsification/control check, but the durable covariance claim must be derived or otherwise justified under the normal finding gate.
+Starting from the exact finite-`N` CUE trace/determinantal representation behind `VIS-133`, compute or asymptotically control
 
-Then propagate the finite-height source-transfer uncertainties through that **same projected joint statistic**: residual admissible error in `N(T)`, smooth and stochastic unfolding/counting effects, and the exact connected/diagonal normalization. If the projected covariance has a nonzero limit, predeclare the number and independence structure of height windows needed to make the standard error smaller than the target `1/L` amplitude; do not infer independence from visual separation alone.
+`cum(X(v), overline{X(v)}, X(w), overline{X(w)})`
 
-Only after the complete projected mean-plus-covariance null and nuisance directions are frozen should an arithmetic lower-order formula determine the predicted residual amplitude and direction. Then test the frozen statistic on untouched high-zero material with the predetermined combined decision rule. Kill the route if the residual is reproduced by the matched finite-CUE/taper null, absorbed by justified transfer uncertainty, disappears under exact normalization/unfolding accounting, or reduces entirely to established lower-order arithmetic with no residual question.
+for the nearby terminal-frequency packet `k=N+O(1)`, and then propagate that connected kernel through the fixed Laplace average. Use exact CUE cumulant, determinantal, or Weingarten machinery. Do not delete the connected term by assuming a Gaussian field: the simple high-trace cumulant-vanishing condition of Soshnikov--Wu does not apply to nearby terminal modes because their differences are `O(1)<N`.
+
+Compare the resulting connected kernel directly against the explicit Wick kernel `|R(v-w)|^2` from `VIS-134`. Determine the limiting covariance quadratic form and its eigen-directions on the predeclared coordinate set. A bounded CUE simulation may falsify an algebraic derivation, but the durable covariance result must satisfy the normal finding gate.
+
+If the full projected covariance has a nonzero limit, derive the averaging requirement under an explicit independence/correlation model for source windows; do not infer independence from visual or height separation. If it decays, derive the rate. Only then propagate finite-height zeta-to-CUE transfer and unfolding/counting uncertainty through the same statistic, freeze an arithmetic lower-order prediction, and use untouched zeta confirmation data.
+
+Kill the route if the fully matched finite-CUE/taper fourth-order null absorbs the proposed residual, transfer uncertainty dominates it, or the purported arithmetic term reduces entirely to already-accounted lower-order structure with no residual question.
 
 ## Evidence boundary
 
-The CUE determinantal kernel, Fejer expansion, Poisson summation, Montgomery's pair statistic and weight, finite-size CUE models for Riemann zeros, CUE trace covariance/linear-statistic CLTs, and ordinary window/autocorrelation Fourier identities are prior art. `VIS-123`--`VIS-132` establish calibration and compatibility controls plus the corrected bounded-tent mean null, its leading support-edge profile, and the exact scale/cancellation of the realized diagonal common mode. They do not establish an arithmetic residual.
+The CUE determinantal kernel, trace covariance, moment-cumulant identities, high-trace cumulant methods, Montgomery's pair statistic and weight, finite-size CUE models for Riemann zeros, and ordinary Fourier/window identities are prior art.
 
-`VIS-132` does **not** determine the total bounded-tent covariance. In particular, the off-diagonal quadratic statistic can fluctuate more strongly and can correlate with the diagonal component. The known non-self-averaging of the ordinary full-circle SFF is only a warning against assuming self-averaging here, not a theorem about the bounded-taper statistic.
+`VIS-123`--`VIS-132` establish calibration, source-window, effective-size, mean-profile, and realized-diagonal controls. `VIS-133` establishes the explicit nonvanishing second-order terminal edge-amplitude covariance and fixed-width Laplace representation. `VIS-134` establishes only the exact decomposition of intensity covariance into a strictly positive Wick contribution plus the still-unknown connected fourth cumulant, together with the fact that zero-sum projection and fixed Laplace smoothing do not erase that Wick contribution.
 
-No exact finite-height zeta-to-CUE transfer, stochastic counting-function covariance, arithmetic lower-order amplitude, or fresh zero confirmation has yet been supplied. Even a later positive test would not prove RH, Montgomery's full pair-correlation conjecture, Hardy--Littlewood prime-pair asymptotics, or a new random-matrix theorem.
+Neither `VIS-133` nor `VIS-134` proves a positive variance floor for the complete quadratic statistic, because an order-one connected fourth-cumulant cancellation remains possible. No exact finite-height zeta-to-CUE transfer, stochastic counting-function covariance, arithmetic lower-order amplitude, or fresh zero confirmation has yet been supplied. Even a later positive test would not prove RH, Montgomery's full pair-correlation conjecture, Hardy--Littlewood prime-pair asymptotics, or a new general random-matrix theorem.
 
 ## Research disposition
 
-Accepted for continued investigation. `VIS-131` resolves the bounded-tent mean support-edge asymptotic and first-order effective-size sensitivity; `VIS-132` resolves the realized diagonal common-mode piece of the covariance convention and shows how to remove it exactly. The remaining gate is the **off-diagonal projected finite-CUE covariance plus finite-height transfer/nuisance propagation**, followed — only if that survives — by an independently predicted arithmetic amplitude and untouched source confirmation.
+Accepted for continued investigation. The CUE-side covariance gate is narrowed to the **connected fourth-cumulant kernel of the terminal bounded-tent packet after the fixed Laplace average**. The next material result should decide whether that term cancels the explicit Wick kernel from `VIS-134`; only after that should source-window averaging requirements, finite-height transfer, and untouched zeta confirmation be addressed.
