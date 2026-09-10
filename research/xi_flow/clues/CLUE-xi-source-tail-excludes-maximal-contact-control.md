@@ -1,13 +1,14 @@
 ---
 id: CLUE-xi-flow-source-tail-excludes-maximal-contact-control
 type: research-clue
-status: proposed
+status: accepted
 origin: mind
 target_line: xi_flow
 based_on:
   - research/xi_flow/findings/XF-159-uniform-full-field-blindness-survives-all-subexponentially-lipschitz-postprocessing.md
   - research/xi_flow/findings/XF-160-positive-fourier-sources-retain-maximal-contact-blindness-with-asymptotically-prescribed-transition-gaps.md
   - research/xi_flow/findings/XF-161-appell-smoothing-preserves-prescribed-transition-gaps-under-strictly-positive-analytic-fourier-sources.md
+  - research/xi_flow/findings/XF-162-xi-theta-tail-hazard-separates-the-source-from-appell-smoothed-maximal-contact-controls.md
 ---
 
 # Does the Xi theta-source law exclude maximal-contact controls beyond positivity and analytic smoothness?
@@ -36,6 +37,24 @@ Derive one candidate constraint directly from the explicit Xi theta kernel in a 
 
 Accept the direction only if the Xi source forces a uniform separation strong enough to exclude the control or improve the transition visibility exponent. Reject a candidate constraint if the matched sources satisfy it asymptotically, if its constants deteriorate exponentially at exactly the XF-159 margin, or if it is merely a restatement of positivity/analyticity already defeated by XF-160--XF-161.
 
+## Acceptance evidence
+
+XF-162 supplies the first quantitative discriminator. For the explicit Xi theta source,
+
+\[
+-e^{-4u}(\log\Phi)'(u)\longrightarrow4\pi,
+\]
+
+while every fixed-`sigma` Gaussian-mixture source produced by XF-161 has normalized log hazard tending to zero. The same separation persists directly on the maximal-contact scale `u=M+1`: the Xi quantity tends to `4pi`, whereas the XF-161 quantity is bounded by `sigma^2(2M+1)e^(-4(M+1))` and tends to zero.
+
+XF-162 also shows that Xi admits every positive quadratic heat multiplier, whereas an XF-161 Gaussian mixture has moment radius exactly `sigma^2/2`. The atomic XF-160 sources pass the all-time moment test but fail the positive-density prerequisite, so neither all-time admissibility nor smoothness alone is sufficient. Together these checks exclude the existing concrete controls from the Xi tail class by a scale-stable source invariant rather than by a qualitative label.
+
+This is enough to accept the research direction, but not to resolve it: no theorem yet couples the tail invariant to the transition strongly enough to improve the XF-159 visibility exponent.
+
+## Next decisive test
+
+Test whether the Xi hazard law is globally rigid or merely asymptotic. The positive route is to derive a theta identity or differential inequality coupling the far-tail hazard to finite/mesoscopic source mass strongly enough to forbid the folded-binomial maximal-contact packet. The adversarial route is to construct a strictly positive smooth all-time source with the same Xi-normalized tail hazard but a prescribed nonzero transition gap. Such a construction would show that tail hazard alone is still noncoercive and force the source-side search into finer theta-coefficient structure.
+
 ## Evidence boundary
 
-No current finding proves that superexponential theta tails, log-convexity, moment growth, or all-time compatibility excludes the maximal-contact family. XF-160--XF-161 prove only that weaker positive and analytic source classes remain noncoercive. This clue identifies the next source-side discriminator to test; it is not evidence that such a discriminator exists or that it would imply RH.
+XF-162 excludes the particular XF-160/XF-161 source realizations from the Xi tail-hazard class; it does **not** prove that every source with Xi-like superexponential tails excludes maximal contact, nor that the actual Xi transition is stably recoverable. Tail asymptotics may survive source modifications away from the far tail. The accepted clue therefore records a real discriminator and a concrete falsification test, not a route to RH by itself.
