@@ -344,3 +344,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 87. **Masatoshi Suzuki**, “Aspects of the screw function corresponding to the Riemann zeta-function,” *Journal of the London Mathematical Society* **108**(4) (2023), 1448–1487. DOI: https://doi.org/10.1112/jlms.12785.
     - Role: zeta-specific prior-art anchor for `PL-256`; records the Lagarias Nevanlinna criterion for `i xi'/xi`, gives screw-function/positivity equivalents to RH, and under RH identifies a Krein-string Titchmarsh–Weyl function whose spectral measure is supported at squared zero ordinates. Shows that the required zeta Weyl positivity is already the hard RH condition.
+
+## Farey transfer operators, complex temperature, and Riemann-zero parameter loci
+
+88. **Claudio Bonanno**, “On the Generalised Transfer Operators of the Farey Map with Complex Temperature,” *Mathematics* **11**(1) (2023), Article 134. DOI: https://doi.org/10.3390/math11010134.
+    - Role: main prior-art anchor for `PL-258`. Extends the Farey transfer-operator Hilbert/matrix method to complex temperature `q`; isolates the plus-branch admissibility problem whose solutions correspond to nontrivial Riemann-zeta zeros through `rho=2q`; and states the resulting RH-equivalent infinite-matrix criterion with Hilbert weights `Gamma(n+2 Re(q))/n!`. This supplies a canonical modular divisor-complete parameter family while leaving zero localization as a condition on the complex parameter locus rather than the spectrum of one fixed self-adjoint operator.
+
+89. **Claudio Bonanno, Sandro Graffi, Stefano Isola**, “Spectral analysis of transfer operators associated to Farey fractions,” *Atti Accad. Naz. Lincei Rend. Lincei Mat. Appl.* **19**(1) (2008), 1–23. DOI: https://doi.org/10.4171/RLM/505.
+    - Role: matched self-adjoint prior-art anchor for `PL-258`. Studies a one-parameter signed Farey transfer-operator family on a suitable Hilbert space of analytic functions and proves self-adjointness, absolutely continuous spectrum, and absence of nonzero point spectrum, showing that the established real-parameter self-adjoint theory is distinct from the complex-temperature parameter locus carrying the Riemann-zero criterion.
