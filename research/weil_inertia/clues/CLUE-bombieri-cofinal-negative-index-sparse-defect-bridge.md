@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-bombieri-cofinal-negative-index-sparse-defect-bridge
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: weil_inertia
 based_on:
@@ -53,3 +53,14 @@ Do not replace this test by normalized trace/Frobenius moments: `PL-259` already
 `PL-260` is classical-prior-art synthesis, not a Mathia proof of a new inertia theorem. It establishes eventual negative-index detection only under the hypothesis that the total off-line zero set is finite. `WI-232`--`WI-235` establish local count/amplitude/spacing tariffs for specific density-matched bow-screen configurations; they do not prove a general operator-norm or Schur-complement bound for Bombieri's truncations.
 
 No theorem currently identifies Bombieri's finite truncations with the Alpöge--Furman matrices or with the specific relaxed screens used in the WI findings, and no uniform persistence margin for an infinite sparse divisor is established. The clue is therefore only a proposed cross-line test. It becomes evidence only if the destination line derives and audits a precise bridge in the actual completed Weil form.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-236-bombieri-finite-inertia-is-already-complete-but-sparse-escape-is-through-zero-spectral-margin.md]]
+
+Primary-source reconstruction shows that the requested **finite negative-index completeness** is already classical and does not require a finite global off-line divisor: Bombieri's Theorem 8 computes the negative index of every finite symmetric `Gamma_N` exactly, so applying it cutoff by cutoff already detects an infinite sparse divisor at every finite scale. The finite-total hypothesis belongs to stabilization against the *total* defect and to the subsequent passage-to-limit argument, not to Theorem 8 itself.
+
+The surviving problem is therefore narrower and different from the original Schur/Rayleigh formulation. Bombieri's off-line matrix is complex symmetric rather than generally Hermitian, so ordinary principal-submatrix interlacing cannot be invoked. What can still fail is a **uniform negative spectral margin / eigenvector tightness** as `N -> infinity`: negative eigenvalues may approach zero, equivalently their reciprocal resolvent roots may escape to infinity, and normalized mass may escape to higher off-line coordinates. `WI-236` records this corrected boundary. No bridge from that spectral escape to the `WI-232`--`WI-235` screen tariffs is currently proved.
