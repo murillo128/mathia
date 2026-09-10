@@ -1,0 +1,434 @@
+name: Temporary Mathia Graph Curator
+
+on:
+  push:
+    branches:
+      - tmp/graph-curator-20260910-3686b87
+
+permissions:
+  contents: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconcile graph and publish atomically
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=d4c6804ab508dfdfa3be6024ce63127b573bb23c
+          git fetch origin main
+          git reset --hard origin/main
+          SOURCE_HEAD=$(git rev-parse HEAD)
+
+          if git log --format='%H %s' "$BASE..$SOURCE_HEAD" -- research/graph research/prior_art/graph | grep -qE 'research\((graph|prior-art)\):'; then
+            echo "A newer curator-owned publication exists after the selected baseline; refusing to double-count."
+            exit 42
+          fi
+
+          python3 - "$BASE" "$SOURCE_HEAD" <<'PY'
+          from __future__ import annotations
+          import json
+          import re
+          import subprocess
+          import sys
+          from collections import Counter
+          from pathlib import Path
+
+          BASE, SOURCE_HEAD = sys.argv[1:3]
+          ROOT = Path('.')
+
+          lines = {
+              'analytic_frontier': ('Analytic Frontier', 'analytic-frontier'),
+              'arithmetic_fidelity': ('Arithmetic Fidelity', 'arithmetic-fidelity'),
+              'farey_discrepancy': ('Farey Discrepancy', 'farey-discrepancy'),
+              'mobius_cancellation': ('Möbius Cancellation', 'mobius-cancellation'),
+              'nyman_beurling': ('Nyman–Beurling', 'nyman-beurling'),
+              'prime_circle': ('Prime Circle', 'prime-circle'),
+              'prime_flute': ('Prime Flute', 'prime-flute'),
+              'prime_lattice': ('Prime Lattice', 'prime-lattice'),
+              'robin_extremal': ('Robin Extremal', 'robin-extremal'),
+              'visual_exploration': ('Visual Exploration', 'visual-exploration'),
+              'weil_inertia': ('Weil Inertia', 'weil-inertia'),
+              'weil_positivity': ('Weil Positivity', 'weil-positivity'),
+              'xi_flow': ('Xi Flow', 'xi-flow'),
+          }
+
+          def rel(p: Path) -> str:
+              return p.as_posix()
+
+          def without_md(p: Path) -> str:
+              s = rel(p)
+              return s[:-3] if s.endswith('.md') else s
+
+          def replace_marked(text: str, start: str, end: str, body: str) -> str:
+              if start not in text or end not in text:
+                  raise RuntimeError(f'missing marker pair {start} / {end}')
+              a = text.index(start) + len(start)
+              b = text.index(end, a)
+              return text[:a] + '\n' + body.rstrip() + '\n' + text[b:]
+
+          # 1. Exact stable finding membership for every line.
+          finding_counts = {}
+          for line, (display, hub) in lines.items():
+              findings_dir = ROOT / 'research' / line / 'findings'
+              findings = sorted(p for p in findings_dir.glob('*.md') if p.name != '.gitkeep')
+              finding_counts[line] = len(findings)
+              membership = ROOT / 'research' / line / 'graph' / f'{hub}-membership.md'
+              membership.parent.mkdir(parents=True, exist_ok=True)
+              out = [
+                  '---',
+                  f'id: RG-{hub}-membership',
+                  'type: research-graph-membership',
+                  f'scope: {line}',
+                  'derived: true',
+                  '---',
+                  '',
+                  f'# {display} structural membership',
+                  '',
+                  f'[[research/{line}/graph/{hub}|{display} research graph]]',
+                  '',
+                  f'This stable projection inventories every current canonical {display} finding. Links assert line ownership only, not dependence, support, chronology, novelty, or endorsement. The source of membership is the current findings tree, not a curator window.',
+                  '',
+              ]
+              out.extend(f'- [[{without_md(p)}|{p.name.split("-", 2)[0]}-{p.name.split("-", 2)[1]}]]' for p in findings)
+              membership.write_text('\n'.join(out) + '\n', encoding='utf-8')
+
+          # 2. Exact durable-intuition membership.
+          intuition_file = ROOT / 'research/graph/intuition-membership.md'
+          intuition_text = intuition_file.read_text(encoding='utf-8')
+          sections = []
+
+          global_mis = sorted((ROOT / 'research/mind/intuition').glob('MI-*.md'))
+          sections.extend(['## Current durable intuitions', '', '### Global'])
+          sections.extend(f'- [[{without_md(p)}]]' for p in global_mis)
+
+          all_mis = list(global_mis)
+          for line, (display, _hub) in lines.items():
+              mis = sorted((ROOT / 'research' / line / 'mind' / 'intuition').glob('MI-*.md'))
+              all_mis.extend(mis)
+              sections.extend(['', f'### {display}'])
+              sections.extend(f'- [[{without_md(p)}]]' for p in mis)
+
+          intuition_text = replace_marked(
+              intuition_text,
+              '<!-- intuition-membership:start -->',
+              '<!-- intuition-membership:end -->',
+              '\n'.join(sections),
+          )
+          intuition_file.write_text(intuition_text, encoding='utf-8')
+
+          # 3. Incremental prior-art reconciliation: deduplicate by stable DOI before materializing.
+          def canonical_pa_files():
+              for p in (ROOT / 'research/prior_art').rglob('*.md'):
+                  rp = rel(p)
+                  if '/graph/' in rp or p.name in {'README.md', 'COVERAGE.md'}:
+                      continue
+                  yield p
+
+          def find_pa_by_token(token: str):
+              low = token.lower()
+              for p in canonical_pa_files():
+                  if low in p.read_text(encoding='utf-8', errors='replace').lower():
+                      return p
+              return None
+
+          inc = ROOT / 'research/prior_art/incremental'
+          inc.mkdir(parents=True, exist_ok=True)
+
+          all_intervals = find_pa_by_token('10.1017/fmp.2023.28')
+          if all_intervals is None:
+              all_intervals = inc / 'PA-all-interval-short-interval-nilsequence-uniformity.md'
+              all_intervals.write_text('''---
+id: PA-all-interval-short-interval-nilsequence-uniformity
+type: prior-art
+canonical_name: All-interval short-interval nilsequence uniformity for von Mangoldt
+aliases:
+  - Higher uniformity of arithmetic functions in short intervals I
+  - Matomäki–Shao–Tao–Teräväinen all-interval theorem
+kind: theorem
+topics:
+  - analytic-number-theory
+  - primes
+  - short-intervals
+  - nilsequences
+---
+
+# All-interval short-interval nilsequence uniformity for von Mangoldt
+
+## What it is
+
+The all-interval theorem of Matomäki, Shao, Tao and Teräväinen gives a uniform short-interval discorrelation statement for the von Mangoldt function after subtraction of its structured approximant, including fixed-complexity nilsequence/polynomial phases in the range used by the current Analytic Frontier source model.
+
+## Relation to RH / Mathia research
+
+[[research/analytic_frontier/findings/ANF-164-all-interval-discorrelation-repels-endpoint-energy-past-the-cubic-scale-below-epsilon-one-sixteenth|ANF-164]] imports this theorem to replace an almost-all interval input by an all-interval source bound. [[research/analytic_frontier/findings/ANF-165-fixed-cramer-granville-gauge-forces-super-polylogarithmic-endpoint-energy-migration|ANF-165]] then uses the resulting source control to force endpoint-completion energy beyond every fixed polylogarithmic multiple of the cubic onset under a fixed Cramér–Granville gauge.
+
+## Known scope and limits
+
+This is a source-side uniformity theorem, not an RH criterion. In Mathia it sharpens the endpoint bill but does not prove that the remaining source-heavy completion is impossible or that it creates the final coercivity needed for RH.
+
+## Related prior art
+
+The same `SOURCES.md` section records the companion almost-all-interval theorem used earlier in the Analytic Frontier chain.
+
+## Evidence and provenance
+
+- Kaisa Matomäki, Xuancheng Shao, Terence Tao and Joni Teräväinen, *Higher uniformity of arithmetic functions in short intervals I. All intervals*, Forum of Mathematics, Pi 11 (2023), e29. DOI `10.1017/fmp.2023.28`; arXiv:2204.03754.
+- Authoritative Mathia source anchor: [[research/analytic_frontier/SOURCES#Short-interval major arcs and Dirichlet-polynomial mean values]].
+- Triggering persisted finding: [[research/analytic_frontier/findings/ANF-164-all-interval-discorrelation-repels-endpoint-energy-past-the-cubic-scale-below-epsilon-one-sixteenth]].
+''', encoding='utf-8')
+
+          cuntz = find_pa_by_token('10.4171/060-1/8')
+          if cuntz is None:
+              cuntz = inc / 'PA-cuntz-ax-b-semigroup-c-star-algebra.md'
+              cuntz.write_text('''---
+id: PA-cuntz-ax-b-semigroup-c-star-algebra
+type: prior-art
+canonical_name: Cuntz ax+b semigroup C*-algebra over the natural numbers
+aliases:
+  - Cuntz Q_N
+  - affine semigroup C*-algebra over N
+kind: operator-algebra
+topics:
+  - noncommutative-geometry
+  - semigroup-cstar-algebras
+  - bost-connes
+  - adeles
+---
+
+# Cuntz ax+b semigroup C*-algebra over the natural numbers
+
+## What it is
+
+Cuntz's arithmetic C*-algebra is generated by the addition/dilation semigroup over the natural numbers. Its defining unitary/isometry relations extend the Bost–Connes algebra by the additive generator, and its stabilization has an affine crossed-product description over the finite adeles.
+
+## Relation to RH / Mathia research
+
+[[research/prime_circle/findings/PC-241-original-coordinate-refinement-noncommutativity-is-the-classical-cuntz-ax-b-system|PC-241]] identifies the canonical Prime-Circle coordinate together with all-scale power-map pullbacks with exactly these addition–dilation relations. This classicalizes the abstract noncommutative refinement carrier; any surviving Prime-Circle mechanism must use geometric/source data not fixed by the `ax+b` algebra itself.
+
+## Known scope and limits
+
+The classicalization concerns the operator algebra generated by coordinate, refinement pullbacks and their range projections. It does not exclude additional source-forced unbounded operators, primitive-shell geometry, off-circle fields, or other data outside those affine relations.
+
+## Related prior art
+
+- [[research/prior_art/bost-connes-system|Bost–Connes system]].
+
+## Evidence and provenance
+
+- Joachim Cuntz, *C*-algebras associated with the `ax+b`-semigroup over N*, in *K-Theory and Noncommutative Geometry* (2008), 201–215. DOI `10.4171/060-1/8`; arXiv:math/0611541.
+- Authoritative Mathia source anchor: [[research/prime_circle/SOURCES#Affine semigroup C*-algebras]].
+- Triggering persisted finding: [[research/prime_circle/findings/PC-241-original-coordinate-refinement-noncommutativity-is-the-classical-cuntz-ax-b-system]].
+''', encoding='utf-8')
+
+          # Extend the prior-art graph only with source-explicit current dependencies/classicalizations.
+          pa_graph = ROOT / 'research/prior_art/graph/prior-art.md'
+          pa_text = pa_graph.read_text(encoding='utf-8')
+          if 'ANF-164-all-interval-discorrelation' not in pa_text:
+              all_ref = without_md(all_intervals)
+              cuntz_ref = without_md(cuntz)
+              insert = f'''\n## Current incremental dependencies and classicalizations\n\n- [[research/analytic_frontier/findings/ANF-164-all-interval-discorrelation-repels-endpoint-energy-past-the-cubic-scale-below-epsilon-one-sixteenth|ANF-164]] and [[research/analytic_frontier/findings/ANF-165-fixed-cramer-granville-gauge-forces-super-polylogarithmic-endpoint-energy-migration|ANF-165]] use [[{all_ref}|all-interval short-interval nilsequence uniformity]] as a load-bearing source theorem.\n- [[research/arithmetic_fidelity/findings/AF-235-li-subexponential-quotient-is-rh-sufficient|AF-235]] works inside the classical [[research/prior_art/li-criterion|Li criterion]] / Keiper–Voros generating-function framework; the subexponential quotient is the Mathia-specific derived layer.\n- [[research/prime_circle/findings/PC-241-original-coordinate-refinement-noncommutativity-is-the-classical-cuntz-ax-b-system|PC-241]] identifies its noncommutative refinement carrier with the classical [[{cuntz_ref}|Cuntz ax+b semigroup C*-algebra]].\n- [[research/prime_circle/findings/PC-242-one-sided-hardy-refinement-hamiltonian-is-bost-connes|PC-242]] lands directly on the existing [[research/prior_art/bost-connes-system|Bost–Connes system]].\n'''
+              pa_text = pa_text.replace('<!-- graph:end -->', insert + '\n<!-- graph:end -->')
+              pa_graph.write_text(pa_text, encoding='utf-8')
+
+          # 4. Global integration boundary. Preserve current explicit cross-line relation inventory.
+          global_path = ROOT / 'research/graph/global.md'
+          global_text = global_path.read_text(encoding='utf-8')
+          old_block = global_text.split('<!-- graph:start -->', 1)[1].split('<!-- graph:end -->', 1)[0]
+          rel_match = re.search(r'## Cross-line relation nodes\n(.*?)(?=\n## Current integration boundary)', old_block, re.S)
+          if not rel_match:
+              raise RuntimeError('could not preserve cross-line relation inventory')
+          relation_body = rel_match.group(1).strip()
+
+          global_links = '\n'.join(f'- [[{without_md(p)}|{p.stem.split("-", 2)[0]}-{p.stem.split("-", 2)[1]} — {p.stem.split("-", 2)[2].replace("-", " ")}]]' for p in global_mis)
+
+          diff = subprocess.check_output(['git', 'diff', '--name-status', f'{BASE}..{SOURCE_HEAD}'], text=True)
+          added_findings = [ln.split('\t', 1)[1] for ln in diff.splitlines() if ln.startswith('A\t') and re.match(r'research/[^/]+/findings/[^/]+\.md$', ln.split('\t', 1)[1])]
+          deleted_findings = [ln for ln in diff.splitlines() if ln.startswith('D\t') and '/findings/' in ln]
+          added_mis = [ln.split('\t', 1)[1] for ln in diff.splitlines() if ln.startswith('A\t') and '/mind/intuition/MI-' in ln]
+          deleted_mis = [ln for ln in diff.splitlines() if ln.startswith('D\t') and '/mind/intuition/MI-' in ln]
+          if deleted_findings or deleted_mis:
+              raise RuntimeError('source deletion appeared after preflight and requires manual curator reconciliation')
+
+          integration = f'''## Current integration boundary\n\nThe current source window adds **{len(added_findings)} canonical findings across all thirteen research lines** and **{len(added_mis)} durable `MI-*` intuitions**. Incremental prior-art reconciliation adds the all-interval short-interval uniformity theorem and the Cuntz `ax+b` semigroup C*-algebra, while reusing the existing Li-criterion and Bost–Connes nodes. No new cross-line semantic relation is promoted, and the Riemann Atlas v1 denominator, territory masses, territory states and Graph View configuration remain unchanged.\n\n**Analytic Frontier** advances the positive endpoint-completion chain from a square-root source bill to a genuinely source-uniform obstruction. The distinguished twist can be gauged into a moving-window spectral problem; local source sparsity exposes the dangerous wavelength, and the all-interval Matomäki–Shao–Tao–Teräväinen theorem lets a fixed Cramér–Granville gauge push the required endpoint migration beyond every fixed polylogarithmic multiple of the cubic onset. This is a viable extension, but the remaining step is still to turn that source-heavy completion requirement into a contradiction or final coercivity statement.\n\n**Arithmetic Fidelity** identifies a surprisingly coarse RH-sufficient Li output geometry: subexponential additive error is invisible to the root-rate discriminator and even zero-density sampling can preserve a fixed finite exponential mode family. The negative side is equally sharp: source prefixes that break the binomial cancellation orbit create artificial root-rate behavior, and the actual zeta phase family still needs a quantitative recurrence theorem. Output compression has become cheap; source-faithful access has not.\n\n**Farey Discrepancy** shows that the Franel–Mertens GCD duality barrier survives much stronger source restrictions. Squarefree ternary models can remain saturating under fixed and even infinitely many sufficiently sparse Möbius-prime ancestry constraints; only quantitatively growing prime breadth begins to recover the actual Mertens tail angle. The frontier is therefore a new source-width barrier rather than a positivity or conditioning problem.\n\n**Möbius Cancellation** reaches the first genuine nonlinear zero-mode interaction and prices it exactly. One-site cubic closure collapses back to the Mertens mean, while residue-aggregated cubic mixing does create a principal component but imports same-residue pair/triple correlations at growing modulus. The representation has not yet made the cancellation theorem cheaper: any escape must cancel that correlation bill structurally or prove the corresponding uniform source estimates.\n\n**Nyman–Beurling** separates universal low Gram energy from target-bearing approximation. Adjacent differences supply abundant target-poor low-Rayleigh modes, yet their full closed span is the entire Nyman dictionary, so quotienting them globally destroys the approximation space. Moving-tail whitening can isolate target-poor sectors without losing target distance in the complement, but the surviving theorem must still quantify target-selected occupation relative to that energy-constrained nuisance sector.\n\n**Prime Circle** closes the most natural noncommutative refinement escape by prior-art classicalization. The original circle coordinate and power-map pullbacks satisfy Cuntz's `ax+b` relations, the one-sided Hardy/refinement Hamiltonian is the Bost–Connes system, and fixed finite synchronized prime-transfer nonlinearities remain finite character data. Noncommutativity alone therefore adds no new RH mechanism; a survivor must use embedded geometric or source data not determined by the affine/refinement algebra.\n\n**Prime Flute** gets a materially sharper surviving endpoint test. The positive lowest seam pole kills every bare separated `R>1` weight, so pre-propagation supercritical smoothing is too strong; after the far propagator is included, however, only high-input leakage into a sublinear output window is dangerous, and exponential separation reduces that window to logarithmic size. The route remains viable with a much narrower, directly testable low-output leakage criterion for the actual Robin/reflection conversion.\n\n**Prime Lattice** accumulates classical automorphic positivity but ends at a selector obstruction. Artin/Rankin–Selberg and Maaß–Selberg structure can supply positive pieces, yet designed pseudolaplacian boundary conditions and boundary-triple Weyl functions remain programmable enough to place spectral data unless arithmetic input selects the domain first. Boundary self-adjointness or positivity by itself is therefore not source-forced RH evidence.\n\n**Robin Extremal** materially strengthens its source-selected false-RH geometry. The same threshold-tangent colossally-abundant event coordinate now controls adjacent prime-power depth and forces, at the same real parameters, a negative Chebyshev error at the defect scale together with a positive logarithmic Mertens-product error at the complementary scale. This converts the earlier sparse-host picture into a concrete opposite-sign standard prime-race cone and leaves a sharper arithmetic incompatibility target.\n\n**Visual Exploration** keeps the support-edge carrier but loses the easy multi-window calibration. Moment cancellation and collision removal isolate the genuine higher factorial channel, while the restricted-support Rudnick–Sarnak regime cannot simultaneously resolve two edge windows at the needed scale. A rigorous `1/L` chronology interpretation therefore still needs direct zeta cross-height mixing, wider-support four-level input, or a rederived statistic rather than another CUE control subtraction.\n\n**Weil Inertia** turns finite-frequency screening into a count–depth tariff. Fixed reciprocal-harmonic packets can be neutralized by sufficiently deep off-line pairs, and gaining localization by radial depth spends source mass rather than creating it. A successful inertia bootstrap must make the number of tested frequencies grow with population or impose a source-specific restriction that prevents this finite-screening tradeoff.\n\n**Weil Positivity** sharpens the source-selection obstruction around Hardy/Bost–Connes compressions. Shift-invariant submodules retain both signs, finite coinvariant quotients can be programmed, and prime-ray marginals do not determine mixed-prime coupling. Positivity becomes informative only if the arithmetic/KMS/archimedean source selects the mixed object before its sign is observed.\n\n**Xi Flow** finally separates a genuinely Xi-specific theta-tail hazard from broad analytic heat-flow controls, but the separation is not yet coercive. Positive analytic Fourier sources and finite source jets can retain the same asymptotic tail data while soft splicing moves nonreal zeros or changes the heat origin beyond all recorded orders. The next theorem must transport the exact Xi tail identity into the transition, not merely distinguish Xi from a control class.\n\nAcross the portfolio, this source window contributes **three viable extensions** (Analytic Frontier, Prime Flute and Robin Extremal), **one known-prior-art classicalization** (Prime Circle), and **nine new barriers**. The three live extensions now have short, source-backed next gates; the remaining lines chiefly sharpen information-loss, source-width, selector or transport obstructions rather than supplying a cheaper bridge to RH.\n'''
+
+          new_block = f'''## Global durable intuitions\n\n{global_links}\n\n## Cross-line relation nodes\n\n{relation_body}\n\n{integration}'''
+          global_text = replace_marked(global_text, '<!-- graph:start -->', '<!-- graph:end -->', new_block)
+          global_path.write_text(global_text, encoding='utf-8')
+
+          # 5. Prospective frontier episodes, one coherent episode per line.
+          event_path = ROOT / 'research/graph/atlas/telemetry/frontier-events.jsonl'
+          events = [json.loads(x) for x in event_path.read_text(encoding='utf-8').splitlines() if x.strip()]
+          territory = {}
+          for e in events:
+              territory[e['line']] = e.get('atlas_territory')
+
+          def pick(line: str, ident: str) -> str:
+              matches = sorted((ROOT / 'research' / line / 'findings').glob(f'{ident}-*.md'))
+              if len(matches) != 1:
+                  raise RuntimeError(f'expected exactly one source for {line}/{ident}, got {matches}')
+              return rel(matches[0])
+
+          episode_specs = [
+              ('analytic_frontier', 'viable-extension', ['ANF-164', 'ANF-165'], 'All-interval source discorrelation plus a fixed Cramér–Granville gauge pushes the endpoint-completion bill beyond every fixed polylogarithmic multiple of the cubic onset, leaving a sharper source-heavy coercivity gate.'),
+              ('arithmetic_fidelity', 'new-barrier', ['AF-235', 'AF-244', 'AF-250'], 'The Li root-rate discriminator tolerates subexponential output error and sparse sampling, but source prefixes must preserve the full cancellation orbit and the actual zeta phase family still needs quantitative recurrence.'),
+              ('farey_discrepancy', 'new-barrier', ['FD-028', 'FD-031'], 'Sparse and even infinitely many Möbius-prime ancestry constraints can still saturate GCD duality; only growing prime breadth begins to expose the exact Mertens tail-angle defect.'),
+              ('mobius_cancellation', 'new-barrier', ['MC-195', 'MC-196', 'MC-199'], 'Pointwise cubic zero-mode access collapses to Mertens, while residue-aggregated cubic access imports growing-modulus pair/triple correlation costs and the final centered principal quotient remains blind.'),
+              ('nyman_beurling', 'new-barrier', ['NB-029', 'NB-031', 'NB-032'], 'Adjacent differences are simultaneously a large target-poor low-Rayleigh supply and topologically complete in the Nyman closure, forcing any useful quotient to be energy- and target-aware rather than structural.'),
+              ('prime_circle', 'known-prior-art', ['PC-241', 'PC-242', 'PC-248'], 'The noncommuting coordinate/refinement algebra lands on the classical Cuntz ax+b/Bost–Connes architecture, and finite synchronized prime-transfer nonlinearities remain finite character data.'),
+              ('prime_flute', 'viable-extension', ['PF-268', 'PF-271'], 'The lowest seam pole kills bare supercritical weighting, but separated propagation only requires decay of high-input leakage into sublinear, or logarithmic under exponential propagation, output windows.'),
+              ('prime_lattice', 'new-barrier', ['PL-256', 'PL-258'], 'Boundary-triple/Weyl and transfer parameterizations remain programmable enough to place spectral data unless the arithmetic source fixes the boundary/domain before positivity or localization is read off.'),
+              ('robin_extremal', 'viable-extension', ['RE-025', 'RE-029'], 'The same threshold-tangent CA selector now couples event depth to a forced opposite-sign Chebyshev/Mertens-product race cone at identical event parameters, giving a sharper source-selected contradiction target.'),
+              ('visual_exploration', 'new-barrier', ['VIS-139', 'VIS-144'], 'Collision-free support-edge chronology still requires cross-window four-level information beyond the standard restricted-support regime; control subtraction alone cannot reach the edge-edge covariance scale.'),
+              ('weil_inertia', 'new-barrier', ['WI-232', 'WI-234'], 'Finite reciprocal-harmonic screening can buy localization only by paying radial depth/source mass, so any successful bootstrap must grow frequency count or impose a source-specific anti-screening condition.'),
+              ('weil_positivity', 'new-barrier', ['WP-239', 'WP-241'], 'Invariant submodules retain both signs while programmable quotients and prime-ray marginals fail to determine mixed-prime coupling; the source must select the mixed object before positivity is inspected.'),
+              ('xi_flow', 'new-barrier', ['XF-162', 'XF-165'], 'The Xi theta tail is source-specific but finite jets plus beyond-all-orders tail agreement do not determine the heat origin, so source specificity has not yet become transition coercivity.'),
+          ]
+
+          short = SOURCE_HEAD[:7]
+          new_events = []
+          for line, classification, ids, basis in episode_specs:
+              new_events.append({
+                  'episode_id': f'FE-{short}-{line}',
+                  'mode': 'prospective',
+                  'source_window_base': BASE,
+                  'source_window_head': SOURCE_HEAD,
+                  'line': line,
+                  'atlas_territory': territory.get(line),
+                  'classification': classification,
+                  'source_paths': [pick(line, i) for i in ids],
+                  'basis': basis,
+              })
+
+          retained = (events[-7:] + new_events)[-20:]
+          event_path.write_text('\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':')) for e in retained) + '\n', encoding='utf-8')
+
+          # 6. Recompute summary from the canonical current event set.
+          newest = Counter(e['classification'] for e in new_events)
+          trailing = Counter(e['classification'] for e in retained)
+          def pct(n):
+              return 100.0 * n / len(retained) if retained else 0.0
+
+          table = [
+              '| Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |',
+              '| --- | ---: | ---: | ---: | ---: | ---: |',
+          ]
+          for line, classification, _ids, _basis in episode_specs:
+              table.append(f'| `{line}` | 1 | {int(classification == "viable-extension")} | {int(classification == "known-prior-art")} | {int(classification == "internal-duplicate")} | {int(classification == "new-barrier")} |')
+          table.append(f'| **Total** | **13** | **{newest["viable-extension"]}** | **{newest["known-prior-art"]}** | **{newest["internal-duplicate"]}** | **{newest["new-barrier"]}** |')
+
+          summary = f'''---
+id: RA-frontier-telemetry-v1
+type: riemann-atlas-frontier-telemetry
+atlas_version: 1
+prospective_source_cutoff: 6140afa5cce42e087bbf5378c02a967f1a0216a3
+derived: true
+---
+
+# Frontier fertility telemetry
+
+This is **derived strategic telemetry, not mathematical evidence**. Atlas territory mass measures the map; frontier episodes measure marginal research outcomes. Raw finding counts are deliberately not used and these ratios never feed Research Watch.
+
+The canonical event set is [[research/graph/atlas/telemetry/frontier-events.jsonl|frontier-events.jsonl]]. The file retains the fixed trailing global window of **20 classifiable prospective episodes** recommended by the curator procedure. Older episodes remain recoverable from Git history rather than being preserved as a run diary. Entries whose exact `source_paths` no longer resolve are not retained.
+
+## Newest classifiable source window
+
+The newest source window `{BASE}` → `{SOURCE_HEAD}` contributes thirteen episodes:
+
+{chr(10).join(table)}
+
+Analytic Frontier, Prime Flute and Robin Extremal remain the three viable extensions. Analytic Frontier converts all-interval prime uniformity into a super-polylogarithmic endpoint-migration bill; Prime Flute weakens its surviving endpoint theorem to low-output leakage after spatial propagation; Robin Extremal converts the same selected CA coordinate into an opposite-sign standard prime-race cone with coupled event depth.
+
+Prime Circle is the sole known-prior-art collision in this window: the natural noncommuting coordinate/refinement carrier is the classical Cuntz `ax+b`/Bost–Connes architecture, with finite synchronized nonlinearities still collapsing to character data. The other nine lines record source-backed barriers: cheap output fidelity without cheap source access, sparse-source saturation, nonlinear correlation bills, target-poor low-energy closure, programmable boundary selectors, unavailable support-edge multi-window calibration, count–depth screening, mixed-prime sign programmability and noncoercive Xi-tail specificity.
+
+No episode in this window changes a Riemann Atlas v1 territory state or mass. No new cross-line semantic relation or Master clue is promoted by the curator.
+
+## Trailing prospective window
+
+Across the retained 20-episode window there are **{trailing['viable-extension']} viable extensions**, **{trailing['known-prior-art']} known-prior-art collisions**, **{trailing['internal-duplicate']} internal duplicates**, and **{trailing['new-barrier']} new barriers**. Therefore:
+
+- `FrontierFertilityEpisodes = {pct(trailing['viable-extension']):.1f}%`
+- `BarrierRate = {pct(trailing['new-barrier'] + trailing['known-barrier']):.1f}%`
+- `PriorArtCollisionRate = {pct(trailing['known-prior-art']):.1f}%`
+- `InternalDuplicateRate = {pct(trailing['internal-duplicate']):.1f}%`
+- `InsufficientEvidence = {trailing['insufficient-evidence']}`
+
+These ratios describe only the retained represented search frontier. They are not percentages of RH solved and do not imply saturation of representations outside the current Atlas.
+'''
+          (ROOT / 'research/graph/atlas/telemetry/frontier-summary.md').write_text(summary, encoding='utf-8')
+
+          # 7. Validation: exact structural census, no retired stars, no dangling telemetry, unique PA ids.
+          for line, (_display, hub) in lines.items():
+              canonical = {without_md(p) for p in (ROOT / 'research' / line / 'findings').glob('*.md') if p.name != '.gitkeep'}
+              membership = (ROOT / 'research' / line / 'graph' / f'{hub}-membership.md').read_text(encoding='utf-8')
+              linked = set(re.findall(r'\[\[(research/' + re.escape(line) + r'/findings/[^|\]]+)', membership))
+              if canonical != linked:
+                  raise RuntimeError(f'membership mismatch for {line}: missing={sorted(canonical-linked)[:5]} extra={sorted(linked-canonical)[:5]}')
+
+          canonical_mis = {without_md(p) for p in all_mis}
+          linked_mis = set(re.findall(r'\[\[(research/(?:[^/]+/)?mind/intuition/MI-[^|\]]+)', intuition_file.read_text(encoding='utf-8')))
+          if canonical_mis != linked_mis:
+              raise RuntimeError(f'intuition membership mismatch: missing={sorted(canonical_mis-linked_mis)[:5]} extra={sorted(linked_mis-canonical_mis)[:5]}')
+
+          retired = list(ROOT.glob('research/*/graph/current-window-*-membership.md')) + list(ROOT.glob('research/*/graph/current-frontier-membership.md'))
+          if retired:
+              raise RuntimeError(f'retired structural stars reappeared: {retired}')
+
+          check_events = [json.loads(x) for x in event_path.read_text(encoding='utf-8').splitlines() if x.strip()]
+          if len(check_events) != 20:
+              raise RuntimeError(f'expected 20 telemetry episodes, got {len(check_events)}')
+          for e in check_events:
+              for p in e['source_paths']:
+                  if not (ROOT / p).is_file():
+                      raise RuntimeError(f'dangling telemetry source {p}')
+
+          pa_ids = {}
+          for p in canonical_pa_files():
+              txt = p.read_text(encoding='utf-8', errors='replace')
+              m = re.search(r'^id:\s*(PA-[^\s]+)', txt, re.M)
+              if not m:
+                  continue
+              ident = m.group(1)
+              if ident in pa_ids:
+                  raise RuntimeError(f'duplicate prior-art id {ident}: {pa_ids[ident]} and {p}')
+              pa_ids[ident] = p
+
+          total_findings = sum(finding_counts.values())
+          print(json.dumps({
+              'source_head': SOURCE_HEAD,
+              'source_window_added_findings': len(added_findings),
+              'canonical_findings': total_findings,
+              'source_window_added_intuitions': len(added_mis),
+              'canonical_intuitions': len(all_mis),
+              'canonical_prior_art': len(pa_ids),
+              'telemetry': dict(trailing),
+          }, sort_keys=True))
+          PY
+
+          # Ownership and atomicity guard. The helper workflow disappeared at reset and is not part of this diff.
+          mapfile -t CHANGED < <(git diff --name-only "$SOURCE_HEAD")
+          test "${#CHANGED[@]}" -gt 0
+          for p in "${CHANGED[@]}"; do
+            case "$p" in
+              research/graph/*|research/*/graph/*|research/prior_art/graph/*|research/prior_art/incremental/*) ;;
+              *) echo "Out-of-ownership path: $p"; exit 43 ;;
+            esac
+          done
+
+          git config user.name "mathia-graph-curator"
+          git config user.email "mathia-graph-curator@users.noreply.github.com"
+          git add research/graph research/*/graph research/prior_art/incremental
+          git diff --cached --check
+          git commit -m "research(graph): reconcile current frontier and memberships" -m "Rebuild stable finding and intuition memberships from the current canonical tree; reconcile source-explicit incremental prior art; refresh the global integration boundary and the fixed 20-episode frontier telemetry window. No source claims, Atlas masses/states, or graph-view settings are changed."
+          GRAPH_COMMIT=$(git rev-parse HEAD)
+
+          # Direct-main curator publication. Refuse to overwrite concurrent work.
+          git push origin HEAD:main
+          # Remove the temporary helper from the remote temporary branch as well.
+          git push --force-with-lease origin HEAD:${GITHUB_REF_NAME}
+          echo "Published $GRAPH_COMMIT over source head $SOURCE_HEAD"
