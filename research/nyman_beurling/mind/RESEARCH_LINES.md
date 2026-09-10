@@ -2,16 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-specific visibility outside the rooted mixing-invisibility corridor
+## Convert near-linear shell discrepancy into target-relevant source structure
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-002-small-shell-discrepancy-can-destroy-rooted-visibility`.
+**Linked intuition:** `MI-002-small-shell-discrepancy-can-destroy-rooted-visibility`.
 
-NB-014--NB-017 reduce progress to source-specific multiplicative graph energy and prove that exact reciprocal blind components prevent full-space quotient coercivity at every finite depth. NB-018 shows eventual fixed-section shell mixing but only through an exponentially large period. NB-019 replaces that lcm cost for the actual residual by the intrinsic coefficient/discrepancy budget `A_N`, giving effective mixing once the dilation dominates the target-selected coefficients.
+NB-018--NB-022 show that small shell discrepancy is not benign mixing: after the rooted normal equation it compresses the residual back into old finite sections, now at all deeper dilations, and Fourier/Möbius inversion quantifies the loss. NB-023 combines this with the Burnol-scale lower bound and forces the canonical discrepancy close to linear on the relevant approximation scale.
 
-NB-020 then proves that this budget cannot be anomalously cheap: early-shell Möbius inversion forces a coefficient core close to `-mu(n)` and `A_N >= c min(N^2,d_N^{-2})`. NB-021 exposes the more important incompatibility. If the intrinsic shell discrepancy is `o(N)`, then throughout a growing rooted band up to `N/2` the mixed residual converges to zero, so under a hypothetical positive limiting Nyman distance the full semigroup defect grows while its projection back to the old section becomes asymptotically invisible.
+The live theorem is no longer to seek visibility outside a finite rooted band. It is to exploit the forced near-linear discrepancy itself: convert it into a source-specific multiplicative energy, coefficient obstruction, or asymptotic law that is visible in the Nyman distance rather than merely proving that small discrepancy would have hidden the target.
 
-The live theorem must therefore obtain source-specific visibility before the mixing-invisibility band, exploit genuinely unrooted channels beyond the old normal-equation anchor, or prove that the canonical residual has the linear discrepancy needed to avoid NB-021 and then convert that structure into the NB-015 budget. Generic deep mixing by itself is no longer a plausible route.
+## Isolate target-selected low Gram energy from the universal low-Rayleigh bulk
 
-## Treat small discrepancy, cheap coefficient mixing, and generic frame coercivity as controls
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`.
 
-A small consecutive-shell discrepancy improves averaging but simultaneously drives the rooted mixed scalar to zero. The target-selected coefficient budget also has an inverse-distance lower floor. Any proposed enrichment theorem must track **visible source energy**, not merely how rapidly the residual mixes or how many future frame directions exist.
+NB-024 proves that good canonical approximation drives its own coefficient vector into a normalized low-Rayleigh direction. NB-025--NB-026 supply the matched control: adjacent generator cancellations already create many low-Rayleigh directions with negligible target loading, in fact a macroscopic target-poor sector.
+
+The live spectral statement must therefore concern **where the target-selected coefficient vector sits** relative to that universal sector, not the existence or dimension of small eigenvalues. Seek a source-specific projection, angle, or mass theorem separating the canonical vector from target-poor adjacent cancellations.
+
+## Treat generic deep mixing and small eigenvalues as controls
+
+Deep dilation mixing can erase the old-section signal, and abundant Gram ill-conditioning is available for purely geometric reasons. Neither phenomenon proves approximation. Any continuation must preserve absolute target coupling and identify a source-selected direction rather than count favorable geometry.

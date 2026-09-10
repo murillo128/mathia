@@ -1,17 +1,17 @@
 # Weil-inertia research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert the radial-depth/localization dichotomy into a zero-budget contradiction
+## Convert the radial count-depth tariff for simple off-line mass into a local zero-budget contradiction
 
 **Linked intuitions:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`, `MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass`.
 
-WI-218--WI-226 price free screening by rank and radial-weighted source mass, establish the sharp `Theta(log T)` cutoff for one global fixed-support scalar detector, and show that current generic short-interval simple/distinct-zero proportions do not reach the surviving count-saturating bow range.
+WI-218--WI-227 separate physical localization from radial depth and show that a screen avoiding bow-scale localization must pay macroscopic radial source weight. WI-228 proves that global fixed-slope zero-density estimates cannot close this deep branch because their `T log T` prefactor overwhelms the bow budget; the useful missing object is a **local bow-scale tail** rather than another global density theorem.
 
-WI-227 reveals that the `Theta(M)` physical localization scale is not intrinsic once radial depth is separated before the remote tail is paid. For any depth threshold `A`, either order-`M` weighted source mass lies beyond depth `A`, or order-`M` shallow mass is forced into physical radius `O((A+1)M/log T)`. Bounded-depth screens therefore localize at the original bow scale `M/log T`; screens avoiding every sub-`M` localization must pay macroscopic horizontal depth.
+WI-229 shows that currently available short-interval pair support lies below the first-harmonic radial threshold in the sparse-screen regime. WI-230 removes multiplicity as an easy hiding place for repeated off-line mass but leaves simple off-line pairs essentially untouched. WI-231 packages the surviving geometry into an exact count-depth tariff: too few local screen zeros force exponentially expensive radial depth, with explicit first-harmonic lower bounds.
 
-The live theorem should exploit **both branches**. Turn bow-scale shallow mass into an incompatible local zero count/multiplicity/coefficient budget, or show that the deep branch's required `cosh(k a)` source tariff is itself incompatible with the admissible zero population/source normalization. A source-fixed sign/phase/covariance statistic may be needed because scalar mass alone still permits concentration on a few expensive zeros.
+The live theorem must now constrain **simple off-line mass at bow scale** in the exact count-depth currency: a local tail bound, phase/covariance law, or source identity strong enough to contradict the WI-231 tariff. Global density, repeated-zero rigidity, and current pair-support theorems are matched controls below the needed threshold.
 
-## Treat global scalar-detector sharpness and generic pair proportions as controls
+## Treat scalar localization and generic zero-density as controls
 
-The Logvinenko--Sereda floor remains sharp for the architecture that charges one global mass budget before resolving depth, but WI-227 shows that this does not preclude stronger **conditional** localization after a radial split. Conversely, bow-scale localization is still not a count theorem. Any continuation must convert localized weighted mass or macroscopic depth into the actual finite zero budget rather than optimize another scalar cutoff.
+The radial split is quantitatively sharp enough that further scalar cutoff optimization is secondary. What is missing is arithmetic placement of the actual zero source inside the count-depth ledger, especially for simple zeros.

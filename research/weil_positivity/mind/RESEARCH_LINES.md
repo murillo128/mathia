@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive the mixed-prime dependence law before asking positivity for the Weil orientation
+## Derive an all-orders mixed-prime coupling before scalar normalizer formation
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-003-arithmetic-selector-and-positive-bulk-are-separated-by-symmetry-breaking`, `MI-006-finite-mass-positive-completion-forces-mixed-prime-coupling-and-critical-roughness`, `MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization`, `MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`.
 
-WP-216--WP-233 close a broad class of post-formation repairs of the critical Bost--Connes defect and identify an exact finite--archimedean prime-ray amplitude match whose naive positive completion still fails globally. WP-234 sharpens the remaining ambiguity. The Bost--Connes Gram and the one-dimensional Gamma/log kernel are both characteristic kernels of the same scale-`1/2` Cauchy law: BC uses independent prime coordinates, while the archimedean kernel uses one common latent coordinate.
+WP-216--WP-234 show that critical prime-ray amplitudes and positivity do not determine the Weil orientation. WP-235 rules out the simplest Schoenberg/Hadamard repair of the Gamma--Bost--Connes metric defect. WP-236 strengthens the marginal obstruction to every fixed order: positive kernels can agree on all interactions involving at most `d` primes and still differ on a `(d+1)`-prime state. The missing dependence law is genuinely all-orders/global.
 
-Every coupling of Cauchy coordinates with those fixed marginals gives a positive-definite kernel with exactly the same `p^{-k/2}` restriction on every prime ray. Hence critical half-density plus positivity fixes only the marginals, not the mixed-prime dependence law. There is already a continuum of globally different positive completions agreeing on all one-prime data.
+WP-237--WP-239 test the strongest current automorphic handoff. Arthur-height variation cannot isolate the zeta explicit-formula block because the whole block is height-independent. After the scattering normalizer has factored as a central scalar, fixed channel projection, moving compression, and homogeneous Schur reduction all preserve that scalar factor intact. These post-normalizer operations may alter geometric remainders but cannot split zero, prime, Gamma, and polar constituents already combined in `m'/m`.
 
-The live construction must derive the **cross-prime coupling itself** from one finite--archimedean source relation before local sampling, direct-sum completion or defect post-processing. Only after that dependence law is forced is it meaningful to ask whether the resulting global relation has the Weil sign/orientation and retains the full Mangoldt tower.
+The live construction must therefore enter **before scalarization** or use a genuinely non-homogeneous source-forced operation whose arithmetic dependence is independently justified: for example a matrix-valued/multi-cusp normalizer, a pre-normalizer finite--archimedean pairing, or another global relation that derives the all-orders prime coupling and sign together.
 
-## Treat source-diagonal weighting, whitening, positive completion, and prime-ray agreement as controls
+## Treat bounded marginals and post-normalizer projections as controls
 
-Post-formation congruence/whitening cannot repair the wrong orientation without support selection, and matching the Gamma jump amplitudes on every prime ray does not choose how different prime axes are coupled. A survivor must derive support, dependence, orientation, repeated-prime-power content and archimedean counterterms from one global construction rather than selecting among positive completions after the fact.
+Matching any bounded order of prime marginals, adding positivity, moving the projection, or making the compression non-reducing does not recover the missing mixed-prime law once the arithmetic normalizer is scalar. A survivor must explain where the cross-prime information enters before that loss.

@@ -1,35 +1,29 @@
-# MI-006 — Source specificity begins only after the finite-size mean and stochastic null are resolved at the target scale
+# MI-006 — Source specificity begins after the one-window stochastic floor and cross-window dependence are both priced
 
-**Evidence level:** exact bounded-window finite-CUE mean calibration and realized-diagonal covariance control through VIS-132
+**Evidence level:** exact finite-CUE mean/covariance reductions and point-process identifiability boundary through VIS-139
 
 ## Core intuition
 
-Nonlocal information and visible amplitude are not enough to identify arithmetic structure. At the Montgomery support edge, finite-circle geometry, source-window convention, effective-size transfer and stochastic normalization can all create effects at the same `1/L` scale where an arithmetic residual would be tempting to interpret.
-
-The deterministic null is now substantially cleaner than before: using a bounded source taper as a replacement window removes the full-circle coordinate-overlap artifact and regularizes effective-size sensitivity. But this shifts the decisive burden from mean calibration to the covariance of the correctly projected off-diagonal statistic.
+A correct finite-CUE mean is not enough to expose a shrinking arithmetic residual. The bounded support-edge statistic has a genuine one-window stochastic floor, so detection at scale `1/L` requires averaging across source windows. That immediately makes the cross-window dependence law part of the null model.
 
 ## Strongest justified principle
 
-VIS-123--VIS-129 separate the failed source panel from the support-edge opportunity and identify the full-circle finite-size, Montgomery-weight, window and capacity effects. VIS-130 corrects the source model: the continuous-time full-circle CUE statistic already contains a rectangular coordinate-overlap factor, so convolving a tent on top double-windows the source. The exact bounded-tent null must instead be built directly from the local CUE kernel with the tent overlap and Montgomery weight.
+VIS-130--VIS-132 correct the window convention and remove the samplewise diagonal mode. VIS-133 shows that bounded edge amplitudes retain order-one normalized covariance. VIS-134--VIS-135 identify the Wick contribution and prove a nondegenerate Gaussian terminal packet for fixed-window CUE, excluding self-averaging of any nontrivial fixed contrast.
 
-VIS-131 derives that corrected mean near `q=1`: `C=1-Phi_(rho,kappa)(v)/L+O(L^-3)` with a Poisson-sampled profile and an exact reflected identity. Under a fixed capacity margin, `Phi` is regular in `rho`; therefore `delta rho=O(1/log L)` induces only `O(1/(L log L))` mean error and integerizing `N` costs only `O(L^-2)`. The earlier generic `O(1/L)` effective-size mean ambiguity is not present in this convention.
-
-VIS-132 then computes the realized tent-diagonal contribution. Its mean is one, but its variance is `Theta(N^-2)`, so for `N=Theta(L)` it fluctuates at exactly `1/L`. This nuisance is a common mode across edge coordinates and is removable exactly by subtracting the realized diagonal or using a zero-sum coordinate contrast. The off-diagonal joint covariance after that projection is not determined by these results.
+VIS-136 translates the covariance tail into the required averaging exponent, while VIS-137 shows that one fixed-ratio circle contains only finitely many disjoint translated windows. VIS-138 proves that identical one-window marginals can coexist with arbitrary cross-window dependence. VIS-139 makes the missing information order explicit for disjoint quadratic statistics: after contractions vanish, covariance depends on a four-level relation not fixed even by all three-level inclusion data.
 
 ## Program consequence
 
-Freeze the exact bounded-taper finite-CUE **mean plus projected covariance** before any fresh source test. Derive the off-diagonal covariance under the same finite-`N`, taper, weight and diagonal convention, identify its asymptotic eigen-directions and required averaging budget, and propagate finite-height unfolding/counting/effective-size uncertainty through the same frozen contrast.
-
-Only after those nuisance directions are controlled should an independently derived arithmetic lower-order term define a residual amplitude/direction for untouched zeta data.
+Freeze the one-window CUE null, then move to the actual zeta source process and prove the multi-height covariance/mixing theorem needed by the declared averaging schedule. Pair correlation alone is not enough unless a rigorous closure principle reduces the required four-level term.
 
 ## Counterevidence / boundary
 
-VIS-131 does not prove the effective-size rule itself for the tapered statistic; it only prices perturbations once a rule is fixed. VIS-132 controls only the diagonal component. The off-diagonal quadratic statistic may have a nonvanishing stochastic floor, and ordinary full-circle SFF non-self-averaging is only a warning, not a theorem for this tapered model.
+The four-level requirement is a general identifiability statement, not a claim that zeta has pathological dependence. Determinantal/Gaussian closure or sufficiently strong n-level results might supply the needed estimate in the relevant support regime, but that transfer has not been established.
 
 ## Epistemic status
 
-**Exact deterministic bounded-taper mean null and exact removal of its realized diagonal `1/L` common mode; the projected off-diagonal covariance and source-transfer error remain open.**
+**The fixed-window stochastic null is nondegenerate and the cross-window gate is genuinely higher-order; the zeta-side dependence law remains open.**
 
 ## Falsification criterion
 
-Show that the bounded-taper replacement formula or Poisson-sampled edge expansion is wrong, or that the realized diagonal is not a common mode with the stated variance scale. A positive continuation should derive the complete projected covariance/null and then survive predeclared untouched confirmation.
+Show that the declared disjoint quadratic statistic's covariance is determined by two- or three-level data under the exact source model without an additional closure theorem, or derive a direct zeta mixing bound strong enough to bypass the four-level expansion.

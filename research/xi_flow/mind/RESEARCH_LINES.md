@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Xi-flow intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive source-faithful access beyond the corrected outward visibility barriers, or exclude the matched packet
+## Find a genuinely Xi-specific source law beyond positivity and finite-window analytic smoothness
 
-**Linked intuitions:** `MI-004-endpoint-prime-free-fourier-sector-is-volterra-triangular`, `MI-006-periodic-vieta-coordinates-diagonalize-the-nonlinear-heat-flow`, `MI-007-ultra-infrared-vieta-modes-should-be-quotiented-by-destination-energy`, `MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global`, `MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility`, `MI-010-endpoint-renormalization-is-source-fixed-before-discretization`, `MI-011-cross-scale-observability-can-compress-to-one-off-circle-heat-trace`.
+**Linked intuitions:** `MI-004-endpoint-prime-free-fourier-sector-is-volterra-triangular`, `MI-008-gaussian-reference-localization-is-relatively-exact-but-not-global`, `MI-011-cross-scale-observability-can-compress-to-one-off-circle-heat-trace`.
 
-XF-124--XF-151 show that exact state recovery, complete derivative jets and shallow complex continuation can all remain exponentially blind to the maximal-contact transition. The withdrawn XF-152 is not current evidence. XF-154 supplies the corrected exact initial-slice statement on the physical fundamental real-distance domain: the outward complex trace has a unique threshold `H_*(D)`, with near-antipodal scale `h_*(d)=(pi/2)d^2/L+O(d^4/L^3)`.
+XF-154--XF-156 now give the exact maximal-contact visibility phase diagram for the initial and full-future outward traces. XF-157 extends blindness to subexponentially many predetermined sensors, XF-158 closes every fixed inward cylinder, and XF-159 upgrades the control to the full blind spacetime field: any postprocessing with subexponential Lipschitz growth remains exponentially transition-blind.
 
-XF-153 still controls the near-antipodal positive-time optimization, but it must not be promoted to a global all-future threshold. XF-155 finds a distinct positive-heat escape outside that regime: with vanishing heat time `u_N=c log N/N`, the outward highest-frequency edge mode has exponential rate `2H-log 2`, uniformly in the real-distance coordinate. Therefore no matched-family blindness theorem can extend beyond the universal depth `H=(1/2)log 2` merely by citing the initial threshold.
+The source-side escape has also narrowed sharply. XF-160 realizes the same maximal-contact blindness with nonnegative even Fourier sources and asymptotically prescribed transition gaps. XF-161 smooths those controls into strictly positive real-analytic Gaussian-mixture source densities while preserving prescribed gaps on every fixed finite heat window. Positivity and ordinary analytic smoothness are therefore not Xi-specific enough to remove the control.
 
-The live target-side problem now has two observation mechanisms to price: the corrected initial/parabolic threshold and the positive-heat edge-mode channel. Progress must derive a source-faithful Xi observable whose outward reach/heat-time normalization crosses the relevant barrier stably, or prove a Xi-specific source restriction excluding the maximal-contact packet or its edge-mode realization.
+The live source theorem must use structure absent from XF-160--XF-161: the actual theta-series/arithmetic source law, its superexponential tail and coefficient organization, or a one-source all-time compatibility constraint strong enough to exclude the maximal-contact family quantitatively. Alternatively, an observable may leave the classified blind region, but its normalization/conditioning must be paid explicitly.
 
-## Keep initial visibility, future heat exposure, and source realizability separate
+## Treat target-side sensor enrichment and generic positive smooth sources as controls
 
-Outward and inward continuation are not interchangeable, and the initial threshold is not automatically the full-future threshold away from the near-antipodal sector. Positive heat can expose the outward edge mode above a universal depth while still leaving shallower regions unresolved. Crossing either matched-family threshold only removes that control; it is not a stable decoder theorem, and the packet remains target-side until source realizability is proved.
+More blind-region sensors, continuum access, or subexponentially conditioned postprocessing cannot recover the transition in the matched family. Nor can source positivity or finite-window analytic smoothing exclude it. The remaining distinction must be genuinely Xi-specific rather than another generic regularity property.

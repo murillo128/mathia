@@ -1,33 +1,29 @@
-# MI-015 — Canonical global arithmetic needs a nonfactorizing relation to constrain the principal zeta divisor
+# MI-015 — Global arithmetic structure must couple and completely select the principal divisor
 
-**Evidence level:** exact adelic/Artin block splitting, finite-dimensional representation-functor closure, and global Rankin--Selberg positive matched control through PL-252
+**Evidence level:** exact factorization controls, Maaß--Selberg sign gap, and pseudolaplacian selector results through PL-255
 
 ## Core intuition
 
-Prime Lattice does not lack canonical global arithmetic data, nonlinear representation operations, or positive global constructions. The recurring failure is more specific: the Riemann zeta contribution remains a factor or direct summand that the richer source structure does not constrain.
-
-Thus “couple more arithmetic data” is still too weak. The required mechanism must be **nonfactorizing at the target theorem**: its sign, duality, spectral, or geometric relation must act across the richer source in a way that yields an unavoidable statement about the principal zeta divisor itself.
+There are two independent ways for a beautiful global construction to miss RH. It may leave the principal zeta factor algebraically separated, or it may constrain only a selected subset of its zeros. Positivity or self-adjointness addresses neither defect automatically.
 
 ## Strongest justified principle
 
-PL-249--PL-250 supply canonical class-field/Frobenius geometry and then keep the full finite abelian cover. The regular representation still decomposes into character blocks, and the trivial character remains exactly the `zeta_Q` factor.
+PL-251 shows that a broad finite representation-ring closure still splits the trivial isotypic factor. PL-252 shows that even positive Rankin--Selberg self-correlation retains hypothetical off-line zeta zeros unchanged as a direct factor. PL-253 moves to genuine Maaß--Selberg/Arthur positivity and reaches the zeta explicit-formula block after continuation, but the zero functional appears only with a signed residual term.
 
-PL-251 removes the abelian/linear loophole for a large canonical class. For any finite Galois group and finite-dimensional complex representation `W`, the averaging projector splits `W=W^G direct-sum W_0`; ordinary Artin formalism therefore factors `L(s,W)=zeta(s)^{dim W^G}L(s,W_0)`. Tensor products, duals, tensor powers, symmetric/exterior powers and Schur functors may create invariant tensors, but those invariants still split as copies of the trivial representation before the Artin determinant is read out.
-
-PL-252 tests a different category: the canonical Rankin--Selberg self-correlation of a level-one Hecke form. Its completed self-convolution has nonnegative coefficients, a positive geometric integral for real `s>1`, analytic continuation and central functional-equation symmetry, yet factors as `zeta(s)L(s,sym^2 f)`. Since the companion is entire, every hypothetical off-line Riemann zero remains a zero of the positive global object. Positivity before continuation does not become critical-strip localization merely because zeta is a factor.
+PL-254 gives the selector analogue: designed self-adjoint pseudolaplacians can force every spectral zero they capture to the critical line, yet their secular/domain condition captures only a sub-divisor and need not be complete. PL-255 shows that a self-adjoint Dirac square with the same domain content cannot enlarge that selector by formal factorization alone.
 
 ## Program consequence
 
-Seek a source-forced global relation whose decisive theorem cannot be decomposed into an unconstrained principal zeta factor times companions. Relative trace/period formulas, cohomological correspondences, or genuinely global Hermitian positivity are relevant only if one can show where factorization is broken and how the resulting constraint survives analytic continuation into the principal divisor.
+Demand two proofs from the next global construction: a nonfactorization/sign transfer that genuinely constrains the principal zeta factor, and a completeness theorem showing that the relevant spectrum or functional sees the full divisor required by RH. Do not infer one from the other.
 
 ## Counterevidence / boundary
 
-PL-251 concerns ordinary finite-dimensional representation-category functors and Artin `L`-readout; PL-252 concerns one canonical Rankin--Selberg self-correlation. Neither rules out infinite-dimensional dynamics, relative trace formulas, nonlinear geometric correspondences, or Weil-type global test-function positivity. Factorization also does not prove that no theorem about the whole object can constrain one factor; it proves that the standard positivity/functorial structure tested so far does not.
+A matrix-valued or relative construction with a different domain/coupling may escape both controls. PL-253 also leaves open the possibility that its remainder has an independent canonical sign theorem. The current findings only rule out treating ambient positivity or selected spectral reality as sufficient.
 
 ## Epistemic status
 
-**Exact principal-factor isolation across finite representation functors plus a positive global automorphic matched control; a source-forced nonfactorizing critical-strip relation remains open.**
+**Exact separation of global coupling, sign inheritance, spectral reality, and divisor completeness; no construction yet supplies all four for the principal zeta divisor.**
 
 ## Falsification criterion
 
-Produce a construction inside the PL-251 or PL-252 classes whose established positivity/symmetry alone forces the inherited zeta divisor onto the critical line, or invalidate their exact factorization. A positive continuation should derive a canonical relation whose target consequence cannot leave `zeta(s)` as a freely inherited factor.
+Produce a covered factorizing or selector-only construction whose stated positivity/self-adjointness alone nevertheless forces every principal zeta zero to the critical line, or prove the missing remainder/completeness theorem without adding new source information.

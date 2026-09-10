@@ -1,39 +1,39 @@
-# MI-007 — Quantitative non-escape must be priced in the source complexity actually consumed by the theorem
+# MI-007 — Quantitative non-escape must be priced in the source currency the theorem actually consumes
 
-**Evidence level:** supported cross-line synthesis from current spectral, graph-visibility, rough-parity, radial-screen, horizon-coherence, and selected-event boundaries
+**Evidence level:** supported cross-line synthesis from current endpoint-completion, source-depth, target-occupation, zero-mode, mass-ladder, count-depth, selected-event, and conditioning boundaries
 
 ## Core intuition
 
-Detecting structure, rank, exact information, low-energy directions, or geometric localization is not enough. The final theorem consumes a particular rate, norm, count, sign, visibility decrement, selected event, or transition modulus. The relevant question is how much **source-selected complexity survives into that exact currency at the required scale**.
+The program repeatedly reaches a stage where useful geometry is already abundant: many low modes exist, localization is available after paying depth, positive or self-adjoint structures exist, exact state can be reconstructed, or individual transport kernels are controlled. None of that is enough if the actual arithmetic source can escape the precise norm, rate, sign, projection, or conditioning modulus consumed by the final theorem.
 
-The latest evidence sharpens this further: several relaxations are now close to structurally complete. Once their free geometry is classified or their low-energy sector is abundant, another geometric improvement cannot substitute for a theorem placing the actual arithmetic source in the useful part of that geometry.
+The decisive question is therefore quantitative: **how much source-selected information survives into the exact destination currency at the target scale?**
 
 ## Strongest justified principle
 
-Analytic Frontier freezes the bow geometry and now shows that the low positive spectrum is abundant rather than scarce. ANF-155 gives `Omega(K)` positive directions already at the sharp `K/N^2` scale, while ANF-156 identifies the positive spectrum with a Fejer Toeplitz finite section plus a positive `O(K)`-rank boundary correction. The missing information is the actual demodulated prime source's projection into those low projectors.
+Analytic Frontier makes this literal. ANF-157 expresses bow variance as positive source Fejer energy minus an endpoint-completion square; ANF-158 localizes the threat to cumulative residual modes, while ANF-159--ANF-161 exclude bare-carrier resonance as a substitute. The missing theorem is coefficient-side.
 
-Möbius Cancellation isolates a different source currency. MC-185 separates centered rough-parity variance from an independent scalar zero mode; MC-186--MC-187 push that zero mode to Korobov--Vinogradov-shaped subpower cancellation, still strictly short of the fixed power required by the live uncentered variance target. Better unsigned support or better logarithmic cancellation does not cross that boundary.
+Möbius Cancellation shows a protected source coordinate: MC-188--MC-194 repeatedly diagonalize transverse information away from the principal rough zero mode. Better dispersion in the wrong sectors cannot pay the fixed-power uncentered budget.
 
-Weil Inertia converts its global detector barrier into a depth/localization trade. WI-227 shows that shallow screening mass is forced back to bow-scale physical radius `O(M/log T)`, while avoiding sub-`M` localization requires macroscopic radial depth and its `cosh(k a)` source tariff. Neither branch is a contradiction until localized or deep weighted mass is converted into an actual zero count, multiplicity, or coefficient budget.
+Nyman--Beurling gives the target-selection version. NB-024 forces the canonical coefficient vector into a low-Rayleigh regime, but NB-025--NB-026 show a macroscopic target-poor low spectrum already exists for universal geometric reasons. Only target-selected occupation is informative.
 
-Nyman--Beurling supplies a visibility warning. NB-019 makes shell mixing target-aware, but NB-020 forces a Möbius-sized coefficient core and NB-021 shows that sublinear shell discrepancy can make a whole rooted mixed band converge to zero in the old section while the full defect remains large. Fast simplification is not useful if it erases the component the destination can see.
+Prime Flute gives the transport version. PF-267 finally puts sharp massive Green amplitude and decay in the same path-correlated estimate; what remains is the collective odd-mass sum in the actual endpoint-weighted class. Weil Inertia similarly reduces screening to an exact local count-depth tariff, but current density/pair/multiplicity inputs miss the simple-zero bow-scale currency.
 
-Farey Discrepancy and Robin Extremal give two selection/coherence boundaries. FD-018--FD-020 classify when unrestricted integer-ratio horizon families can still be jointly saturated; source-specific arithmetic must now defeat a free model whose transition boundary is known. RE-017--RE-019 force bounded-envelope Robin candidates onto increasingly deep, sparse fixed-base event-ladder near-collisions, but sparsity matters only if it controls the selected mixed-race contribution.
+Arithmetic Fidelity and Xi Flow show that cheap output is not cheap source. AF-244 permits zero-density output sampling while AF-243 leaves deep cancellation-coherent source access untouched. XF-159--XF-161 show that vast target sensing and generic positive analytic sources still do not beat the maximal-contact blind exponent; only a genuinely Xi-specific source law can now remove that control.
+
+Robin Extremal adds selected-event non-escape: the possible hosts are extremely sparse and lie on a prescribed race ray, but sparsity becomes useful only through a theorem controlling the race on that selected set.
 
 ## Program consequence
 
-For every candidate, declare the source discriminator, source depth/overlap, observation scale, exact destination currency, and conversion theorem. Once the free model has a matching construction, sharp counting law, or classified low-energy sector, stop improving the same relaxation and identify the source-specific variable it discarded.
-
-A positive local or geometric theorem becomes program progress only when the actual source is forced into its useful sector and that placement is converted into the final arithmetic budget.
+For every candidate, name the source discriminator, source depth, target-selected sector, transport/conditioning modulus, and exact destination currency. Once a free model has matched the geometry, stop improving the same relaxation and attack the source-specific non-escape statement it leaves open.
 
 ## Counterevidence / boundary
 
-These are different mathematical categories, not one universal information inequality. A new representation may bypass a cited lower bound by retaining structure excluded from its hypotheses. The source-specific conversions remain open in every example above, and no cross-line theorem asserts that the same quantitative modulus governs them all.
+These are different mathematical categories, not one universal inequality. A new representation can escape a cited control by retaining information excluded from its hypotheses. The synthesis does not assert that one modulus governs Fejer completion, rough parity, Gram occupation, radial depth, or heat visibility.
 
 ## Epistemic status
 
-**Supported cross-line synthesis from exact saturation, localization, spectral, and visibility boundaries; no universal theorem or RH implication is claimed.**
+**Supported cross-line principle that mature geometric reductions now fail mainly at source-selected quantitative non-escape, not at existence of favorable structure; no universal theorem or RH implication is claimed.**
 
 ## Falsification criterion
 
-Produce a uniform final theorem in one cited setting while the declared source discriminator has vanishing presence in the exact destination budget and no compensating relation, or beat one of the cited sharp/free boundaries without adding source information outside its hypotheses. Either result should narrow this synthesis.
+Prove a final theorem in one cited setting while the declared source discriminator has vanishing presence in the exact destination budget and no compensating relation, or beat one of the matched controls without importing source information outside its hypotheses.

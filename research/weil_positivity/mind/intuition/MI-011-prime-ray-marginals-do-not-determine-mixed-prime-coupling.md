@@ -1,33 +1,31 @@
-# MI-011 — Prime-ray marginals do not determine the mixed-prime coupling needed for Weil positivity
+# MI-011 — Weil orientation requires all-orders coupling before scalarization
 
-**Evidence level:** exact Bost--Connes/Gamma kernel comparison and Bochner-positive Cauchy coupling family through WP-234
+**Evidence level:** exact positive-kernel matched controls and central-normalizer no-go results through WP-239
 
 ## Core intuition
 
-Matching the critical half-density on every prime ray is only a **marginal** constraint. Even when positivity is imposed globally, those marginals do not determine how distinct prime coordinates are coupled, and the mixed-prime dependence is exactly where the Bost--Connes and archimedean geometries differ.
+Correct prime marginals do not determine the global kernel, even when positivity is imposed. The newer evidence strengthens this from a one-prime warning to an all-orders one: every fixed interaction order can be matched while a higher mixed-prime state remains free.
 
-Thus the missing finite--archimedean bridge is not another local amplitude identity. It is a source theorem selecting one cross-prime dependence law before the sign-bearing global relation is formed.
+Automorphic scattering adds a second boundary. Once the arithmetic content has collapsed into a central scalar normalizer, ordinary post-normalizer geometry cannot recover its internal zero/prime/Gamma decomposition.
 
 ## Strongest justified principle
 
-WP-233 shows that the adjacent Gamma jump density samples the Bost--Connes critical ray amplitudes exactly, but its ordinary positive completion gives the known divergent diagonal repair and one real log-distance does not reproduce the mixed-prime BC Gram.
+WP-234 identifies a continuum of positive Cauchy couplings with identical critical prime-ray marginals. WP-235 shows that the natural metric defect is not conditionally negative type even on a small two-prime fork, blocking a direct Schoenberg repair. WP-236 proves that no bounded marginal order suffices in general: agreement through `d` prime coordinates can coexist with disagreement on a `(d+1)`-prime interaction.
 
-WP-234 identifies the structural reason. Write logarithmic valuation differences as `Delta_p`. The BC kernel is `exp(-1/2 sum_p |Delta_p|)`, which is the characteristic kernel of **independent** scale-`1/2` Cauchy coordinates. The archimedean/log kernel is `exp(-1/2 |sum_p Delta_p|)`, which is the same characteristic law with one **common** latent Cauchy coordinate shared by all primes.
-
-More generally, every joint probability law with the same Cauchy coordinate marginals produces a normalized positive-definite kernel whose restriction to every one-prime ray is exactly `p^{-|a-b|/2}`. Convex interpolation between the independent and common couplings already gives a continuum of such matched positive controls. Prime-local critical data and positive-definiteness therefore cannot select the mixed-prime geometry.
+WP-237 shows that Arthur-height manipulation acts outside the entire height-independent explicit-formula block. WP-238 proves fixed scattering-channel projections cannot split the central scalar normalizer. WP-239 extends the obstruction to moving and non-reducing homogeneous compressions and zero-shift Schur reductions: the scalar factor survives whole.
 
 ## Program consequence
 
-Search for an algebraic, adelic, modular, distributional or finite--archimedean construction that **forces the dependence law** across prime coordinates rather than choosing a positive completion after local amplitudes are known. Then test whether that forced coupling produces the Weil-oriented defect and the required archimedean/polar counterterms without discarding repeated prime powers.
+Search for the dependence law where it is still visible. Prefer constructions before scalar normalizer formation, matrix-valued/multi-cusp scattering, or genuinely non-homogeneous source-forced operations. Require the same mechanism to derive mixed-prime coupling and the sign/orientation consumed by Weil positivity.
 
 ## Counterevidence / boundary
 
-WP-234 proves nonuniqueness among positive kernels with the prescribed ray marginals; it does not show that no additional canonical source condition can select the BC coupling or another useful coupling. Nor does it construct a Weil-positive relation. The Cauchy representation is a structural model of the current kernels, not a probabilistic claim about the primes.
+WP-239 does not rule out non-homogeneous operations such as shifted resolvents or logarithmic generators, nor constructions whose geometry is itself source-forced by arithmetic data. Such routes must still prove that the new dependence is not inserted after inspecting the desired sign.
 
 ## Epistemic status
 
-**Exact underdetermination of mixed-prime geometry by critical ray amplitudes plus positivity; the required source-selected cross-prime dependence remains open.**
+**Exact all-orders marginal underdetermination plus a broad post-normalizer scalarization no-go; the remaining opportunity is pre-scalar or genuinely non-homogeneous global coupling.**
 
 ## Falsification criterion
 
-Prove that the prescribed prime-ray marginals and positivity uniquely determine the BC kernel, contrary to the explicit WP-234 coupling family, or invalidate the Cauchy characteristic representations. A positive continuation should derive an additional source law that selects one coupling and then test its Weil orientation.
+Show that bounded-order positive marginals uniquely determine the critical global coupling under the claimed source class, or exhibit a covered homogeneous post-normalizer reduction that separates the internal constituents of the central scalar factor without importing extra arithmetic information.

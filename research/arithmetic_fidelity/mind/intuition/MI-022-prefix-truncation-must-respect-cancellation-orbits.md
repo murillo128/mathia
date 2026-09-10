@@ -1,35 +1,29 @@
-# MI-022 — Prefix truncation must respect the cancellation orbits of the destination transform
+# MI-022 — Prefix truncation must respect cancellation orbits before any damping is trusted
 
-**Evidence level:** exact Li-binomial truncation asymptotics and completed-germ obstruction through AF-238
+**Evidence level:** exact root-rate and damping analysis through AF-243
 
 ## Core intuition
 
-Source depth is not the only fidelity cost of a coarse target. If the destination is produced by a global transform with large internal cancellations, a locally accurate or linearly deep prefix can leave the target class entirely by interrupting those cancellation orbits.
-
-For the Li root-rate criterion this failure is exact: a truncation can manufacture exponential growth from singularities that are harmless in the full transform. Completion removes known trivial-zero contamination but does not repair the structural problem.
+A coarse RH-equivalent output exponent can tolerate substantial final error while remaining intolerant of source truncations that cut through an exact cancellation orbit. Smoothing the resulting output does not restore the information destroyed before the transform was completed.
 
 ## Strongest justified principle
 
-AF-235 shows that the full Li sequence is RH-sufficient at the coarse root-rate threshold `<=1` and is insensitive to subexponential additive perturbations. AF-236 shows that every sublinear initial zeta jet contributes only subexponentially, so decisive source information lies deeper than every `o(n)` prefix in that reconstruction.
+AF-234--AF-238 show that sublinear and even fixed linear prefixes of natural zeta/xi jets can create unconditional exponential root rates above one by interrupting contributions that should cancel. Completing away one known family of poles merely transfers the false signal to the nearest surviving critical-line zero pair.
 
-AF-237 studies the first linear regime `K_n=floor(alpha n)`. For `0<alpha<1/4`, truncating the ordinary local `eta` jet gives an unconditional root rate `exp(H(alpha))/3^alpha>1`, caused by the first trivial zero at `w=-3`; the full binomial transform cancels that artifact.
-
-AF-238 repeats the test after absorbing the entire gamma/completion structure into `xi'/xi`. The nearest singularities are then the first nontrivial zero pair, already known to lie on the critical line, yet for `0<alpha<1/(1+|rho_1-1|)` the completed initial jet again has root rate `exp(H(alpha))/|rho_1-1|^alpha>1`. A target-compatible zero is therefore turned into a false root-rate violation solely by stopping its binomial orbit early.
+AF-239 shows that fixed binomial damping avoids this only by changing the discriminator to a strictly stronger strip statement. AF-240--AF-242 prove that carefully moving damping can preserve the RH root rate and suppress fixed critical orbits. AF-243 then supplies the decisive control: if the underlying source access remains a nonvanishing linear prefix, that damping still preserves the false prefix artifact. The defect is therefore upstream of the damping layer.
 
 ## Program consequence
 
-Treat cancellation coherence as a separate representation invariant from source depth and output tolerance. A candidate source compression for a global transform should identify which singularity/orbit contributions must be completed together before truncation and prove that the discarded remainder is small **after** those cancellations, not coefficientwise before them.
-
-For the Li route, search for a blockwise/orbit-complete, contour-based, or otherwise non-prefix source representation whose approximation error is subexponential in the final Li sequence without assuming the zero location conclusion being tested.
+Demand cancellation-coherent source access first: completed blocks, whole orbits, contours, or another source-faithful representation in which the cancellations required by the root-rate quotient occur before truncation. Only then optimize damping or sparse output sampling.
 
 ## Counterevidence / boundary
 
-AF-237 and AF-238 concern canonical Taylor-prefix reconstructions and a specific binomial destination transform. They do not prove that every linear-depth or local representation is unfaithful, nor that a different grouping cannot preserve the root-rate class cheaply. The exact thresholds are sufficient artifact regimes, not universal minimum depths.
+These findings rule out broad prefix architectures, not every compressed representation. A non-prefix transform may preserve the necessary orbit information at lower cost. Moving damping is also mathematically useful once the source representation is faithful; the negative claim is only that it cannot repair an already broken prefix.
 
 ## Epistemic status
 
-**Exact demonstration that both uncompleted and completed local prefixes can create false exponential target signals by breaking global cancellation; a cancellation-coherent cheap source bridge remains open.**
+**Exact structural separation between source-side cancellation coherence and output-side damping; no cheap faithful source representation is yet proved.**
 
 ## Falsification criterion
 
-Produce a prefix scheme inside the stated regimes whose full contribution has root rate at most one despite the derived nearest-singularity asymptotics, or invalidate the Li-binomial transform used in AF-237/AF-238. A positive continuation should construct a source approximation with a proved subexponential error after the necessary cancellation orbits are completed.
+Construct a genuinely shallow source representation that provably yields the correct RH root-rate class without reconstructing the missing cancellation orbit, or show that AF-243's prefix artifact disappears under an admissible damping regime covered by its hypotheses.

@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Add Möbius-specific rigidity beyond the classified unrestricted integer-ratio relaxation
+## Add Möbius-specific rigidity at the sharp square-root free-model boundary
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-014--FD-017 establish the two competing mechanisms: squarefree multiplicative collisions obstruct simultaneous GCD-duality saturation, while sufficiently fresh horizon prefixes can be interpolated by an unrestricted common source. FD-018--FD-019 now classify this boundary for integer-ratio chains. Pointwise saturation is possible exactly when bounded squarefree transition ratios eventually disappear; fixed nonsquarefree transitions are interpolable because the equality ray vanishes on their collision coordinates.
+FD-014--FD-020 classify when unrestricted common sources can interpolate pointwise or Cesaro GCD-duality saturation across integer-ratio horizons. FD-021--FD-023 add a quantitative growth law: bounded-ratio or merely exponential horizon growth is incompatible with saturation by a polynomially bounded source, while Cesaro saturation forces increasingly large horizon ratios.
 
-FD-020 gives the averaged analogue. Cesaro saturation is possible exactly when every bounded family of squarefree transition ratios has density zero; positive density creates an additive common-source deficit. Thus the unrestricted multi-horizon problem is no longer an amorphous search for overlap. Its coercive currency is the recurrence density of bounded squarefree transitions.
+FD-024 shows the complementary free construction. Once the endpoint envelope is any fixed power strictly above one half and the horizons grow supermultiplicatively, an unrestricted source can again saturate. FD-025 identifies the sharp horizon-free obstruction on the other side: any sublinear source that saturates must grow super-square-root along the saturating horizons.
 
-The live theorem must now use information absent from the arbitrary-real-source relaxation: Möbius increments, divisor identities, sign/parity structure, or another source restriction that prevents the interpolation construction even when the transition schedule passes the unrestricted saturation criterion. Alternatively, find a nonreconstructive horizon family whose source-specific deficit survives at the cumulative Farey normalization.
+The free relaxation is therefore pinned at the exponent `1/2`. The live theorem must use Möbius-specific information exactly where generic growth envelopes cease to coerce: sign/parity, divisor consistency, multiplicative ancestry, or another source law that rules out the square-root-plus interpolation controls.
 
-## Treat isolated collision gaps and transition-density alone as controls
+## Treat horizon sparsity and polynomial growth above one half as controls
 
-A finite two-horizon gap is not RH-scale by itself, while sparse or nonsquarefree transition geometry can be saturated by a deliberately constructed unrestricted source. Even positive density of bounded squarefree transitions yields only the explicit GCD-relaxation deficit, not a Mertens bound. Any continuation must show where the actual Möbius source violates the free interpolation model or how the accumulated deficit enters the required normalization.
+Large or sparse horizon jumps can defeat overlap-based coercivity, and even a polynomial source envelope does not help once exponents above one half are allowed. Conversely, square-root-scale source control already forbids free saturation. Any RH-relevant continuation must show why the actual Möbius source cannot occupy the residual super-square-root interpolation corridor, not merely make the horizon schedule more exotic.

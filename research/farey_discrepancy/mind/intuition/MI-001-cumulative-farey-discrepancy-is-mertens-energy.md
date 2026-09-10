@@ -1,35 +1,31 @@
-# MI-001 — Cumulative Farey discrepancy is Mertens energy, and unrestricted horizon coherence is governed by squarefree-transition density
+# MI-001 — Cumulative Farey discrepancy exposes a sharp square-root free-source boundary
 
-**Evidence level:** exact Farey--Mertens identities, GCD-duality reductions, collision/interpolation constructions, and pointwise/Cesaro integer-ratio classifications through FD-020
+**Evidence level:** exact GCD-duality reductions and matched free-source constructions through FD-025
 
 ## Core intuition
 
-The cumulative Farey observable is a signed Möbius/Mertens energy, so useful extra structure cannot come from a generic one-horizon Hilbert inequality. Multi-horizon coupling is real, but in the unrestricted source relaxation its coercive content is now sharply classified by how often bounded **squarefree** multiplicative transitions recur.
+The unrestricted multi-horizon relaxation is now quantitatively classified enough that generic horizon overlap is no longer the main mystery. Its decisive source currency is endpoint growth, with a sharp transition at the square-root scale.
 
-This turns the previous qualitative reconstruction-versus-interpolation tension into an exact combinatorial boundary. The remaining opportunity is source-specific: the actual Möbius sequence may obey restrictions that the free interpolation construction deliberately ignores.
+Below that scale, saturation is impossible for any sublinear source; above it, sufficiently sparse horizons admit explicit saturating controls. The remaining leverage must therefore come from Möbius-specific structure, not from a better generic growth argument.
 
 ## Strongest justified principle
 
-Earlier findings identify the cumulative discrepancy with the Mertens source and reduce one-horizon extremality to a classical GCD kernel. FD-014--FD-015 prove strict incompatibility across squarefree multiplicative transitions, while FD-016--FD-017 construct joint saturation on sufficiently fresh sparse schedules.
+FD-018--FD-020 classify pointwise and Cesaro saturation through recurrence of bounded squarefree horizon ratios. FD-021--FD-023 show that a polynomially bounded saturating source forces the horizon ratios to escape every bounded/exponential regime on average. FD-024 constructs saturating unrestricted sources with envelope `n^alpha` for every `alpha>1/2` along sufficiently fast supermultiplicative horizons. FD-025 proves the converse lower boundary: a sublinear source exhibiting saturation must be super-square-root on the saturating endpoints.
 
-FD-018 shows that a fixed integer dilation has an exact dichotomy: squarefree dilations forbid asymptotic saturation, whereas nonsquarefree dilations permit it because the finite equality ray vanishes on every nonsquarefree collision coordinate. FD-019 extends this to variable integer-ratio chains: pointwise saturation is possible exactly when bounded squarefree transition ratios eventually disappear.
-
-FD-020 identifies the averaged threshold. Cesaro saturation is possible exactly when, for every fixed bound `B`, transitions with squarefree `q_j<=B` have density zero. If one such bounded family has positive density, its two-horizon gaps add to a nonvanishing average deficit.
+Together these results locate the free interpolation threshold at exponent one half rather than at a particular horizon geometry.
 
 ## Program consequence
 
-Stop treating generic overlap density as the missing theorem inside the unrestricted relaxation. Use the exact transition classification as a matched control and ask what the real Möbius source forbids beyond it: bounded increments, divisor consistency, squarefree/parity orientation, or another arithmetic constraint that prevents planting equality-ray prefixes.
-
-A useful next theorem should convert such a source restriction into a quantitative deficit on a schedule that the unrestricted model can still saturate, or show that no nonreconstructive schedule can reach the Farey normalization even after source specificity is imposed.
+Test source laws that distinguish Möbius from arbitrary real sequences at the square-root-plus frontier. A useful theorem should forbid the FD-024 construction mechanism using exact divisor, sign, parity, or multiplicative consistency and then translate the resulting deficit back into the cumulative Farey/Mertens normalization.
 
 ## Counterevidence / boundary
 
-The pointwise and Cesaro classifications are proved for integer-ratio horizon chains and arbitrary real sources. They do not describe general horizon schedules, and the interpolated sources need not resemble Mertens functions. The positive-density deficit also need not be large enough for RH-scale control.
+The half-power threshold belongs to the unrestricted relaxation. It is not itself a Mertens bound and does not show that the Möbius source saturates or fails to saturate any chosen horizon family. Sparse horizons remain a genuine escape for arbitrary sources above the threshold.
 
 ## Epistemic status
 
-**Exact classification of the unrestricted integer-ratio coherence boundary; the remaining leverage must come from Möbius-specific source structure or a genuinely different horizon geometry.**
+**Exact free-model boundary at square-root endpoint scale, leaving a source-specific Möbius rigidity problem rather than an overlap-classification problem.**
 
 ## Falsification criterion
 
-Construct an unrestricted source that violates the FD-019 or FD-020 classifications, or show that the equality-ray nonsquarefree vanishing used by the interpolation mechanism is false. A positive continuation should prove a source-specific obstruction beyond the classified free model.
+Produce an unrestricted saturating source with `A(H)=O(sqrt(H))`, or invalidate the FD-024 construction above the half-power threshold. A positive continuation should derive a Möbius-specific restriction that survives in the residual super-square-root corridor.

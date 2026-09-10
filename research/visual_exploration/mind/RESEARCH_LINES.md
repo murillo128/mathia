@@ -2,18 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive the projected off-diagonal finite-CUE covariance before testing an arithmetic edge residual
+## Prove the cross-height covariance law needed to average a support-edge residual
 
 **Linked intuitions:** `MI-001-visual-residuals-must-survive-exact-coordinate-controls`, `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`.
 
-VIS-123--VIS-129 progressively isolate support-edge finite-size, Montgomery-weight, source-window, capacity and effective-size nuisance directions. VIS-130 corrects the finite-CUE source convention: a bounded physical taper must **replace**, not compound, the full-circle coordinate-overlap window already hidden in the continuous-time spectral form factor.
+VIS-130--VIS-132 fix the bounded-source mean convention and remove the realized diagonal common mode exactly. VIS-133--VIS-135 then show that the remaining fixed-window off-diagonal statistic has an order-one normalized covariance and a Gaussian terminal packet with a strictly positive variance floor; a single matched CUE window does not self-average to the `1/L` arithmetic scale.
 
-VIS-131 then derives the exact bounded-tent edge mean. With fixed non-wrapping capacity, the deficit is a Poisson-sampled profile `Phi_(rho,kappa)(v)/L+O(L^-3)` and the mean depends regularly on the effective-size ratio, so an `O(1/log L)` uncertainty in `rho` now moves the null only by `O(1/(L log L))`; the previous same-order mean ambiguity is removed by the corrected windowing.
+VIS-136 identifies the missing currency: the covariance tail across source windows determines how many windows are required to average the residual. VIS-137 shows that translated fixed-ratio CUE windows provide only `O(1)` disjoint samples on one circle, so they cannot manufacture a growing independent pool. VIS-138 proves that exact single-window CUE marginals do not determine this cross-window averaging law.
 
-VIS-132 identifies a remaining stochastic nuisance exactly. The realized tapered diagonal fluctuates at order `1/L`, the same scale as the candidate residual, but it is a common scalar across all edge coordinates and can be removed identically by samplewise diagonal subtraction or a predeclared zero-sum contrast. The unresolved gate is therefore the **joint off-diagonal covariance after that projection**, together with finite-height zeta-to-CUE transfer/unfolding uncertainty.
+VIS-139 sharpens the information requirement. For disjoint quadratic pair statistics, cross-window covariance is a four-level functional after lower-order contractions vanish; even exact one-, two-, and three-level marginals do not determine it in general. The live theorem must therefore provide a zeta-side four-level/structural-closure estimate or a direct cross-height mixing bound under the actual moving window geometry.
 
-Derive that projected covariance under the exact finite-`N` tent/weight convention, determine its asymptotic scale and nuisance eigendirections, and freeze the complete mean-plus-covariance null before inspecting untouched zeta confirmation data. Only then is an independently predicted arithmetic `1/L` residual interpretable.
+## Treat one-window CUE calibration and pair correlation as completed controls
 
-## Treat full-circle compounding, effective-size mean drift, and realized diagonal noise as resolved controls
-
-The bounded-source mean null no longer inherits the logarithmically amplified effective-size sensitivity of the full-circle convention, while the diagonal `1/L` fluctuation is exactly removable. Neither result implies self-averaging of the off-diagonal quadratic statistic. Do not import ordinary full-circle spectral-form-factor covariance or infer independence from visually separated height windows.
+The finite-CUE mean and one-window stochastic null can be calibrated exactly, but neither pair correlation nor any collection of lower-order single-window marginals determines the cross-height averaging exponent. Arithmetic interpretation begins only after the required multi-window dependence law is proved and finite-height transfer is controlled.

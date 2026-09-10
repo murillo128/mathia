@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Cross the fixed-power barrier for the uncentered signed rough parity field
+## Cross the fixed-power barrier in the protected rough zero mode
 
 **Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`.
 
-MC-178--MC-184 move the short-interval burden to a logarithmically rough squarefree Möbius block, show that the split is exponent-reversible, and control the correct unsigned pre-sieved squarefree support for `theta<6/11`. MC-185 then separates two remaining obligations. Centered variance can be interpolated across the finite-degree parity deformation with only subpower loss, but the uncentered target also contains a zero mode equal to a macroscopic rough Möbius increment.
+MC-178--MC-187 reduce the uncentered short-interval burden to a signed logarithmically rough squarefree parity field and separate its centered variance from a macroscopic rough Möbius zero mode. Classical zero-free-region technology makes that mean subpower-small but not fixed-power-small.
 
-MC-186 shows that current rough-sum technology makes this zero mode smaller than `X` by every fixed logarithmic power. MC-187 strengthens the boundary: exact convolution inversion transfers the classical Korobov--Vinogradov Mertens saving to the logarithmically rough sum. Yet this remains subpower, while any fixed-power variance gain requires one genuine fixed power in the zero mode.
+MC-188--MC-194 now show that the separation is structural, not an artifact of one coordinate system. Smooth primorial dispersion controls transverse character sectors without the principal mode; function-field controls confirm that transverse mixing can coexist with an independently removed zero mode; unit-group-equivariant quadratic statistics and nested CRT transport remain sector-diagonal. Additive Fourier coordinates do not escape: divisor shells are Gauss/Ramanujan re-encodings of the same multiplicative sectors, and the full arithmetic additive image is multiplicity-free, so apparent copies of one character across shells are rigid scalar copies of one source coefficient.
 
-The live theorem must therefore prove an uncentered phase-sensitive estimate that crosses this fixed-power boundary, or find a structural identity coupling the centered parity field to its mean strongly enough that the zero mode is no longer an independent obligation. Improving unsigned support or fixed-logarithmic rough cancellation alone cannot close the target.
+The live theorem must therefore attack the rough principal mode directly with a fixed-power estimate, or derive a genuinely source-forced operation outside this equivariant multiplicity-free category that couples principal and transverse information without inserting the desired cancellation by hand.
 
-## Treat centered parity interpolation and subpower zero-mode bounds as controls
+## Treat transverse dispersion and coordinate changes as controls
 
-Polynomial interpolation in the parity parameter shows that passing from positive deformations to the centered `z=-1` endpoint is not where a fixed power is necessarily lost. Conversely, arbitrarily strong logarithmic or Korobov--Vinogradov cancellation of the global rough sum still does not satisfy the fixed-power local variance budget. Any continuation must track both pieces in the original uncentered currency.
+Strong nonprincipal dispersion, CRT refinement, additive Fourier mixing, and shell coupling can all look richer while leaving the principal rough mean untouched. Any proposed transfer from transverse cancellation to the uncentered target must identify an explicit non-diagonal source relation; representation richness by itself is no longer evidence of such a coupling.

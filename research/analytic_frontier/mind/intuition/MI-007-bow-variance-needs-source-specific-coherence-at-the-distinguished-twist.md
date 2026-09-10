@@ -1,33 +1,31 @@
-# MI-007 — Bow cancellation is source alignment inside a Fejer-controlled fixed spectral geometry
+# MI-007 — Bow variance is source Fejer energy minus an endpoint-completion obligation
 
-**Evidence level:** exact post-sieve normal forms, unitary-gauge reduction, sharp near-kernel scale, spectral multiplicity, and positive finite-rank Fejer reduction through ANF-156
+**Evidence level:** exact bow/Fejer identities and endpoint-completion reductions through ANF-161
 
 ## Core intuition
 
-The distinguished bow twist does not create a distinguished Gram spectrum. After the exact gauge reduction, the moving-window operator has one fixed geometry and the arithmetic question is how the demodulated prime innovation sits inside its low singular sector.
+The bow is no longer primarily a low-spectrum geometry problem. Its exact variance separates into positive Fejer energy carried by the arithmetic residual and a subtractive endpoint-completion square. Progress requires controlling both terms in the same source currency.
 
-That sector is neither thin nor geometrically mysterious. It contains a growing ladder of low positive directions, and after dualization its bulk is the classical Fejer Toeplitz finite section with only a positive `O(K)`-rank boundary correction. The hard step is therefore directional source alignment, not existence or scarcity of near-null directions.
+The endpoint threat is also narrower than it first appears. It lives in very low cumulative residual modes on a square-root physical window; bare carrier resonance cannot manufacture the needed spike by itself.
 
 ## Strongest justified principle
 
-ANF-150--ANF-152 show that matched post-sieve controls can reproduce available local prime statistics while retaining diagonal bow variance, and that fixed source mass above a positive Gram level obstructs subdiagonal cancellation. ANF-153 freezes the geometry by diagonal unitary gauge and ANF-154 places the first positive normalized scale at `Theta(K/N^2)` while showing that small energy need not imply closeness to the exact periodic kernel.
+ANF-150--ANF-156 identify the bow low spectrum, show that the distinguished twist is gauge, and prove that low positive directions are abundant. ANF-157 then gives the decisive refinement: the bow variance equals source Fejer energy minus an exact endpoint-completion square, so spectral abundance alone says nothing about whether the actual source survives the boundary subtraction.
 
-ANF-155 strengthens the geometry on the cofinal family `N=mK`: detuned box-null Fourier characters span trial spaces giving `nu_+(4 pi^2 J^2 K/N^2) >= J(K-2)`. Thus already at the bottom scale there are `Omega(K)` positive directions, and by scale `1/K` there are `Omega(N)`.
-
-ANF-156 identifies the exact positive spectrum with the dual Gram `B=AD^{-1}A*` and decomposes it as the Fejer Toeplitz matrix `T_N(F_K)` plus a positive boundary correction `E` with `rank(E)<=2K-2` and `tr(E)=K-1`. Positive eigenvalue counts differ from the Toeplitz counts by at most `2K-2` at every threshold. Its quadratic-form formula further shows that a low dual mode must put Fourier mass near the nonzero box-filter nulls while simultaneously paying little nested prefix/suffix boundary energy.
+ANF-158 converts target-scale completion into a large twisted prefix/suffix requirement across a square-root-size window. ANF-159--ANF-160 isolate the only sharp bare-carrier coherence regime as parity-quantized cubic resonance tubes, while ANF-161 proves uniform supercubic cancellation even there at the endpoint threat support. The carrier is therefore too small to be the missing source of target-scale completion.
 
 ## Program consequence
 
-Translate the actual demodulated source projection into this dual geometry. The next useful theorem should convert low-singular-sector mass into an explicit twisted prime/Ramanujan correlation statement, or prove that the source necessarily leaves a fixed fraction of its positive component either away from the Fejer null tubes or in the boundary tax. Geometry-only eigenvalue counting is no longer the missing step.
+Work directly with the residual coefficient field. Seek a source theorem controlling its low cumulative modes, or an identity forcing positive Fejer energy to dominate the completion square. Stop treating more low-eigenvalue counting or carrier-only resonance analysis as substitutes for this coefficient-side estimate.
 
 ## Counterevidence / boundary
 
-The Fejer comparison is a counting statement, not projector convergence, and the rank-`O(K)` boundary correction can still control the very bottom `Omega(K)` directions. ANF-155 uses the cofinal divisibility model `N=mK`; ANF-156 removes that restriction only for bulk counting. None of these results shows that the actual prime source aligns with the true low eigenspaces.
+The endpoint-completion square can in principle cancel much of the Fejer bulk, and current findings do not bound it for the actual prime source at the required scale. Carrier cancellation removes one mechanism for a large completion term; it does not prove the completion is small.
 
 ## Epistemic status
 
-**Exact fixed bow geometry with a thick low-spectrum ladder and a Fejer-plus-boundary description of its positive sector; source-specific spectral placement remains open.**
+**Exact reduction of the bow bottleneck to a source Fejer-versus-completion balance, with the bare-carrier endpoint route excluded at the threat scale; the arithmetic residual estimate remains open.**
 
 ## Falsification criterion
 
-Invalidate the unitary-gauge reduction, the min--max multiplicity bound, or the dual Fejer-plus-positive-boundary decomposition; or derive the required bow cancellation while retaining quantitatively incompatible source mass in the positive sector. A positive continuation should prove the source-to-low-projector correlation estimate itself.
+Exhibit an admitted source for which target-scale endpoint completion is generated without large residual cumulative modes, or invalidate the Fejer-minus-completion identity. A positive continuation should prove a quantitative source bound on the cumulative residual sector that is strong enough in the exact bow normalization.
