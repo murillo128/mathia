@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-flute-relative-seam-intrinsic-six-fractional-window
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
@@ -58,7 +58,7 @@ and hence a candidate Hilbert-Schmidt weight threshold near
 R<\frac32+\sigma.
 \]
 
-At `\sigma=1/2` this would leave the strict window `1<R<2`, enough in principle for PF-243 and intriguingly aligned with the independent two-derivative transport ceiling in PF-255/PF-256. Neither the exponent nor the threshold is currently proved and both must be derived or killed rather than assumed from dimension counting.
+At `\sigma=1/2` this would leave the strict window `1<R<2`, enough in principle for PF-243 and intriguingly aligned with the independent two-derivative transport ceiling in PF-255/PF-256. Neither the exponent nor the threshold is currently proved for the full fractional power and both must be derived or killed rather than assumed from dimension counting.
 
 ## Why it may matter
 
@@ -70,7 +70,7 @@ This also gives a sharper allocation rule for subsequent work. A positive `H` th
 
 First work only with the exact fixed-axis parity blocks from PF-258. Prove or refute volume doubling plus an appropriate scale-invariant Poincare/Sobolev theory in the intrinsic metric for the weighted birth-death form with `m_j\asymp j^2`, `c_j\asymp j^3`. Because the jump rates are unbounded, do not import PF-253's discrete-time Delmotte argument without checking its hypotheses. A rigorous comparison with a linearly growing discrete-Laguerre-type birth-death model is allowed as a calibration, but only an explicit unitary/comparison theorem may transfer a kernel estimate to the exact PF chain.
 
-If suitable two-sided heat-kernel control is obtained, pass to `H^\sigma` by a positive semigroup/Balakrishnan representation and derive the actual separated counting-basis kernel. Determine the maximal `R` for which the resulting high-to-low weighted block is bounded or Hilbert-Schmidt. Conversely, construct a normalized escaping packet if the proposed supercritical window fails.
+If suitable heat-kernel control is obtained, pass to `H^\sigma` by a positive semigroup/Balakrishnan representation and derive the actual separated counting-basis kernel. Determine the maximal `R` for which the resulting high-to-low weighted block is bounded or Hilbert-Schmidt. Conversely, construct a normalized escaping packet if the proposed supercritical window fails.
 
 Only after the fixed-axis test succeeds should the argument return to the finite-`s` relative seam
 
@@ -84,6 +84,10 @@ Kill the route if the exact `H^{1/2}` kernel has no strict `R>1` separated windo
 
 ## Evidence boundary
 
-PF-258 establishes the thin-seam tangent `H`, its linearly weighted Jacobi coefficients, the exact transformed zero mode, the `(m_j,c_j)\asymp(j^2,j^3)` reversible geometry, and the intrinsic `R^6` volume law. It does **not** establish Gaussian heat-kernel bounds, the displayed fractional-kernel exponent, the proposed threshold `R<3/2+\sigma`, or any uniform weighted estimate for finite `s`.
+PF-258 establishes the thin-seam tangent `H`, its linearly weighted Jacobi coefficients, the exact transformed zero mode, the `(m_j,c_j)\asymp(j^2,j^3)` reversible geometry, and the intrinsic `R^6` volume law. PF-259 now establishes the exact speed-measure time-change relation to PF-252, intrinsic Poincare and Sobolev control, a Keller--Rose anchored Gaussian upper bound for sufficiently large times, and the predicted separated `R<3/2+\sigma` window for the **large-time/low-energy Balakrishnan contribution only**. It does not establish the corresponding short-time/high-energy estimate, a full `H^\sigma` kernel theorem, sharpness, or any uniform weighted estimate for finite `s`.
 
 PF-253's Bessel-four theorem remains exact for `J` but cannot be treated as a theorem about `H`. PF-257's polar-free algebra remains exact on bounded regularizations but does not supply spectral locality by itself. Nothing in this clue proves PF-243's separated Robin-Poisson estimate, trace-class shear reassembly, finite-pant completion, scattering/determinant statements, a zeta-zero statement, or RH.
+
+## Research disposition
+
+Accepted. PF-259 verifies the first functional-analytic gate in the clue rather than merely supporting the dimension-six heuristic: the exact `H` chain has the required intrinsic large-scale geometry and its large-time fractional contribution already leaves the supercritical square-root window `1<R<2`. The precise unresolved test is now the `0<t<t_0` Balakrishnan contribution, equivalently short-time/high-energy off-diagonal locality for the unbounded-rate Jacobi chain. A full fixed-axis `H^{1/2}` conclusion must wait for that estimate, and the finite-`s` crossover remains a separate subsequent gate.
