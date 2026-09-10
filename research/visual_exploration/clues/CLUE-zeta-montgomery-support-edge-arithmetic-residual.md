@@ -14,6 +14,7 @@ based_on:
   - research/visual_exploration/findings/VIS-128-bounded-tent-taper-composed-edge-profile.md
   - research/visual_exploration/findings/VIS-129-pair-correlation-effective-size-fixes-tent-capacity-and-resolution.md
   - research/visual_exploration/findings/VIS-130-bounded-source-taper-replaces-full-circle-cue-coordinate-window.md
+  - research/visual_exploration/findings/VIS-131-bounded-taper-cue-edge-profile-poisson-sampled.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -23,43 +24,58 @@ based_on:
 
 The support-edge thread has progressively removed universal and representation-induced effects before any fresh zero confirmation. `VIS-123` fixes the phase dictionary and shows that the all-real-time full-circle finite-`N` CUE statistic has a logarithmic support-edge ripple. `VIS-124` identifies Montgomery's pair weight as an exact Laplace multiplier/convolution. `VIS-125`--`VIS-128` isolate source-window leakage, rule out a growing hard window inside one logarithmic-size CUE circle, and replace it by an explicit bounded tent taper whose pair-overlap kernel is known exactly. `VIS-129` supplies the classical pair-correlation effective-size candidate `N_e(T)=rho_* L_T`, with `rho_*=1/sqrt(12 Lambda)=0.230156986...`, so a single non-wrapping tent arc must satisfy `H_src<2*pi*rho_*=1.44611899...`.
 
-`VIS-130` corrects the remaining finite-`N` transfer. The continuous full-circle quantity `S_N(Nq)/N` is already the Fourier transform of a connected CUE pair kernel multiplied by the rectangular coordinate-overlap factor `R_N(x)=(1-|x|/N)_+`. Convolving that already-windowed object with the tent kernel would multiply the pair measure by both `R_N` and the tent overlap, thereby compounding two source-coordinate windows. For a bounded tent that is meant to replace the full-circle source window, the exact connected finite-CUE expectation is instead
+`VIS-130` corrects the finite-`N` transfer by showing that a bounded source taper must replace, rather than compound, the rectangular coordinate-overlap factor already built into the full-circle continuous-time spectral form factor. The exact connected bounded-tent CUE mean is
 
 `C_(N,L,M)(q)`
-` = 1 - integral_(-M)^M A_M(x) W_L(x) D_N(x)^2 exp(2*pi*i*q*x) dx`,
+` = 1 - integral_(-M)^M A_M(x) W_L(x) D_N(x)^2 exp(2*pi*i*q*x) dx`.
 
-with `D_N(x)=sin(pi x)/(N sin(pi x/N))`, `W_L(x)=1/(1+(pi*x/L)^2)`, and `A_M` the exact compact cubic tent-overlap profile from `VIS-130`.
+`VIS-131` now derives the support-edge mean asymptotic of this corrected object. For `rho=N/L`, `kappa=M/L<rho`, and `q=1+v/L`,
 
-The residual question is therefore narrower and cleaner. Before source confirmation, the exact bounded-arc null itself must be analyzed near the Montgomery support edge, including its finite-`N` asymptotic, effective-size sensitivity, diagonal convention, and joint covariance. The full-circle `VIS-123` logarithmic ripple and the `VIS-129` `delta_rho=Theta(1/log L_T)` calibration threshold remain valid for that full-circle statistic, but they cannot simply be transplanted to the bounded-tent null without re-deriving the dependence from `C_(N,L,M)`.
+`C_(N,L,M)(1+v/L)`
+` = 1 - Phi_(rho,kappa)(v)/L + O(L^-3)`,
+
+with an explicit Poisson-sampled profile
+
+`Phi_(rho,kappa)(v)=rho^-2 sum_(j>=1) j hat g_kappa(v+j/rho)`.
+
+The single-arc capacity condition makes the leading rounding alias-free and forces
+
+`Phi(-v)-Phi(v)=v`,
+
+so after subtracting the ideal ramp/plateau the leading finite-CUE rounding is symmetric across the edge. More importantly, the profile depends regularly on the effective-size ratio: a ratio perturbation `delta rho` changes the bounded-source mean only by `O(delta rho/L)`. Therefore the `delta rho=O(1/log L)` ambiguity that was dangerous for the full-circle real-time statistic is only `O(1/(L log L))` here and is no longer a same-order `1/L` mean obstruction.
+
+The remaining residual question has consequently moved again. The bounded-tent **mean** null and its first-order effective-size sensitivity are now controlled analytically, but the joint covariance of the frozen edge coordinates, stochastic finite-height transfer/unfolding effects, and any independently predicted arithmetic lower-order amplitude are still missing.
 
 ## Research question
 
-For the predeclared effective-size rule `N=N_e(T)` and a bounded physical tent width `H_src<1.44611899...` with nonvanishing capacity margin, what is the exact and asymptotic support-edge behavior of `C_(N,L_T,M)` when `M=H_src L_T/(2*pi)` and `q=1+v/L_T` at several fixed nondegenerate coordinates `v`?
+For one predeclared bounded physical tent width `H_src<1.44611899...` with nonvanishing capacity margin, one effective-size rule and integerization convention, and a small frozen set of nondegenerate edge coordinates `v`, what is the exact or asymptotically controlled **joint covariance** of the corresponding finite-CUE statistics after the `VIS-131` mean profile is subtracted?
 
-Can its joint covariance and sensitivity to theoretically admissible perturbations of `N(T)` be derived strongly enough that a later `1/L_T`, `log log T/log T`, or other proposed arithmetic residual cannot be mimicked by universal finite-CUE geometry, the source taper, Montgomery weighting, or effective-size uncertainty?
+Can the remaining finite-height zeta-to-CUE transfer uncertainties — including counting/unfolding fluctuations, diagonal convention, and any admissible error in `N(T)` beyond its now-subleading mean effect — be propagated through that covariance strongly enough that a later arithmetic residual has a genuinely predeclared amplitude, direction, and significance?
 
 ## Why it may matter
 
-The previous convolutional formulation risked manufacturing a false finite-size correction by applying a bounded source window on top of the rectangular coordinate window already implicit in the noninteger-time full-circle CUE transform. `VIS-130` removes that ambiguity at the measure level and gives a direct exact finite-`N` object whose source geometry matches the intended bounded taper.
+`VIS-131` removes a previously plausible identifiability obstruction rather than producing a positive arithmetic signal. A smooth bounded source taper does more than fit inside one effective CUE circle: it also removes the slow full-circle window tail responsible for the logarithmically amplified effective-size sensitivity. This makes an `O(1/L)` residual *in principle* distinguishable at the mean level even when the effective-size ratio is known only up to `O(1/log L)`.
 
-This is useful even if the route ultimately fails. If the exact bounded-arc null absorbs the apparent edge structure, the support edge becomes a closed visual control rather than an arithmetic carrier. If a residual survives only after all source/null choices are fixed independently of the zero data, its interpretation is substantially cleaner, although it would still need an independently derived arithmetic amplitude and fresh confirmation before carrying mathematical weight.
+That is useful only if covariance and source-side transfer do not reintroduce an equally large nuisance direction. A positive result after those controls would still most likely organize known arithmetic lower-order structure rather than establish a new pair-correlation theorem. A negative result would close the support-edge route cleanly by showing that the fully matched stochastic null absorbs it.
 
 ## Decisive test
 
-Do not inspect fresh confirmation zeros. Freeze one bounded physical tent width strictly below the `VIS-129` capacity ceiling, the effective-size rule and integerization convention, the local unfolding, Montgomery weight, diagonal/connected normalization, a small set of nondegenerate edge coordinates `v`, and the combined decision statistic.
+Do not inspect fresh confirmation zeros. Freeze the bounded tent width, the effective-size rule and integerization, local unfolding, Montgomery weight, diagonal/connected normalization, edge coordinates `v`, and one combined residual statistic.
 
-Use the exact `VIS-130` integral as the null, not `P_L*Q_M^tent*[S_N(N·)/N]`. First verify internal consistency by recovering the full-circle all-real-time `S_N(Nq)/N` when `A_M` is replaced by the exact full-circle overlap `R_N` and `W_L=1`. Then derive or tightly control the large-`L_T` fixed-ratio support-edge expansion of the bounded-tent integral and the joint covariance at the frozen coordinates.
+Use the exact `VIS-130` finite-CUE source-window statistic and the `VIS-131` Poisson-sampled mean profile as the null mean. Derive the covariance matrix of the frozen coordinates under the same finite-`N` CUE/tent/weight convention rather than importing full-circle covariance. Check that the covariance construction respects the same non-wrapping source geometry and determine its large-`L` scale.
 
-Recompute the effective-size sensitivity for this actual source-window representation. Propagate any unresolved transfer uncertainty in `N(T)` into the null/covariance rather than fitting `rho` to a residual. Kill a same-scale arithmetic interpretation if admissible effective-size variation, exact arc/window geometry, diagonal treatment, or the complete finite-CUE covariance can reproduce the candidate effect. Only after this null is frozen and its nuisance directions are controlled should an arithmetic lower-order formula set the expected residual scale and untouched zero material be examined.
+Propagate finite-height transfer uncertainty through the **joint** null. In particular, include the residual effect of theoretically admissible perturbations of `N(T)`, smooth and stochastic unfolding/counting errors, and the exact diagonal convention. The mean-level `delta rho=O(1/log L)` direction established in `VIS-131` should enter only at `O(1/(L log L))`; if a covariance or transfer term lifts it back to `O(1/L)`, that mechanism must be derived explicitly rather than inferred from the obsolete full-circle logarithmic ripple.
+
+Only after the complete mean-plus-covariance null and nuisance directions are frozen should an arithmetic lower-order formula determine the predicted residual amplitude/direction. Then test the frozen statistic on untouched high-zero material with the predetermined combined decision rule. Kill the route if the residual is reproduced by the fully matched finite-CUE/taper null, absorbed by justified source-transfer uncertainty, disappears under exact diagonal/window/unfolding accounting, or reduces entirely to established lower-order arithmetic with no residual question.
 
 ## Evidence boundary
 
-The CUE determinantal kernel, the all-real-time full-circle spectral form factor, Montgomery's pair statistic and weight, finite-size CUE models for Riemann zeros, and ordinary window/autocorrelation Fourier identities are prior art. `VIS-123`--`VIS-130` establish a sequence of calibration and compatibility controls plus the exact bounded-tent finite-CUE expectation under one coordinate convention; they do not establish any arithmetic residual.
+The CUE determinantal kernel, Fejer expansion, Poisson summation, Montgomery's pair statistic and weight, finite-size CUE models for Riemann zeros, and ordinary window/autocorrelation Fourier identities are prior art. `VIS-123`--`VIS-131` establish a sequence of calibration and compatibility controls plus the corrected bounded-tent mean null and its leading support-edge profile; they do not establish any arithmetic residual.
 
-In particular, `VIS-130` does not prove the bounded-arc support-edge asymptotic, its covariance, or the precision with which the pair-correlation effective size transfers to this observable. It also does not prove that the full-circle logarithmic ripple disappears; it proves only that the bounded-source null must be derived from the correctly replaced source window rather than by automatically multiplying the already-windowed full-circle statistic by another window factor.
+`VIS-131` is specifically a mean-null result. It does not derive the joint covariance, the exact finite-height zeta-to-CUE transfer, stochastic counting-function effects, or an arithmetic lower-order amplitude. Its regular effective-size sensitivity is conditional on a fixed positive single-arc capacity margin and the smooth bounded tent; harder windows or a taper approaching the circle capacity can have different edge behavior.
 
 No fresh zero confirmation has been inspected for this narrowed design. Even a positive later test would not prove RH, Montgomery's full pair-correlation conjecture, Hardy--Littlewood prime-pair asymptotics, or a new random-matrix theorem.
 
 ## Research disposition
 
-Accepted for continued investigation in corrected form. The next unresolved step is the **exact bounded-tent finite-CUE support-edge asymptotic, covariance, and effective-size sensitivity derived from `C_(N,L,M)`**, all frozen before fresh source inspection. The earlier full-circle convolution `P_L*Q_M^tent*K_N` is no longer treated as the exact bounded-source null unless an additional argument proves that its built-in rectangular overlap is intended or asymptotically negligible.
+Accepted for continued investigation. `VIS-131` resolves the bounded-tent **mean support-edge asymptotic and first-order effective-size sensitivity** portion of the previous decisive test. The remaining gate is the joint finite-CUE covariance plus finite-height transfer/nuisance propagation for the frozen edge coordinates, followed — only if that survives — by an independently predicted arithmetic amplitude and untouched source confirmation.
