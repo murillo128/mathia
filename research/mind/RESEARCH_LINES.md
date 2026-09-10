@@ -2,44 +2,42 @@
 
 This file holds the current cross-line mathematical questions synthesized from the local minds. It is not a roadmap, task queue, status page, or history.
 
-## Derive source coupling before the representation factorizes, scalarizes, or becomes programmable
+## Derive source coupling before the representation forgets, factorizes, or externalizes the target
 
 **Linked intuitions:** `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Prime Circle now classicalizes not only fixed-conductor refinement but every finite scalar same-endpoint weighted-cover defect into a universal shift model. Weil Positivity extends its central-normalizer no-go from homogeneous geometry to essentially all fixed meromorphic one-variable scalar postprocessing in the ordinary divisor channel. Prime Lattice adds the selector-side control: generic boundary/Weyl data are programmable, and prescribing the zeta logarithmic derivative as a Herglotz function packages an RH-equivalent positivity condition rather than deriving it.
+Prime Circle now closes every fixed finite synchronized nonlinear readout of its complete centered prime-transfer Gram packets into a finite CRT/Dirichlet-character algebra. Möbius Cancellation supplies the quotient analogue: after centering, the principal Möbius mode is not identifiable from the complete transverse residue profile by **any** postprocessing. Prime Lattice supplies the spectral analogue: ambient self-adjoint dilations and canonical divisor-complete operator families can still leave Riemann zeros as non-self-adjoint resonances or external complex parameters.
 
-The common live question is where the source relation is still present **before** these closures. A useful construction must force global mixed-prime/principal-divisor coupling there, derive sign or self-adjointness independently, and retain the complete target divisor after the final quotient.
+These are three forms of the same design boundary. A useful construction must retain the target-bearing source relation before finite residue compression or centering, and must make the zero-bearing variable itself subject to independently derived positivity/reality rather than move the target into a related parameter, compression, or programmable boundary condition.
 
-## Price source access and transport in the exact destination currency
+## Price transport only in the destination channel that actually survives
 
 **Linked intuitions:** `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`, `MI-008-exact-recovery-is-not-stable-transport`.
 
-Analytic Frontier now makes its endpoint bill square-root-scale and source-specific: a target completion forces `Omega(sqrt(X log X))` twisted residual accumulation on `Omega(sqrt X)` sites. Nyman--Beurling shows why the nuisance quotient itself must be priced: the full adjacent-difference family spans the entire Nyman closure even though many local adjacent modes are low-Rayleigh and target-poor. Prime Flute supplies a sharp transport failure: the fixed-axis `R>1` smoothing margin is destroyed by the positive lowest finite-seam pole before the normalized Robin/spatial map is applied.
+Analytic Frontier has moved its endpoint bill from the first square-root control to a Selberg-calibrated cubic total-variation scale and, with stronger source decorrelation, beyond every fixed polylogarithmic multiple of that scale. Prime Flute shows the complementary lesson: a local operator can fail every bare supercritical weight while the composed separated map only needs control of high-input leakage into a logarithmic/sublinear low-output window. Nyman--Beurling gives a positive quotient example: moving-tail adjacent differences are Gram-whitened target-poor and may be removed without changing the target distance, even though the unrestricted adjacent family spans the full approximation space.
 
-Weil Inertia turns a count--depth tariff into a same-interval no-go for density-matched fixed-power bows from the quarter scale upward, while Xi Flow finally exhibits an Xi-specific theta-tail hazard separating the strongest positive analytic controls but not yet a theorem transporting that source rigidity to the transition.
+The shared rule is to derive the exact composed destination functional before declaring a source structure useful or fatal. The right theorem may require a stronger power-scale source estimate, or a much narrower leakage estimate, depending on what survives the final map.
 
-The shared discipline is to state the exact source discriminator, the quotient/transport map, and the final norm/rate before treating favorable local structure as useful.
+## Turn classified free boundaries into source-selected quantitative defects
 
-## Convert nonlinear or geometric access into source-selected coercivity without paying the original problem again
+**Linked intuitions:** `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
+
+Farey Discrepancy now proves that **every sublinear** initial-prime Möbius ancestry prefix can coexist with square-root free-model saturation; the first distinct regime is linear breadth, where the remaining defect becomes an exact Mertens-tail angle in a Schur complement. Arithmetic Fidelity similarly shows that sparse root-rate observability is controlled not by density or periodic completeness in general but by exponential approach to destructive phase zeros; generic phases are safe, while structured transcendental phases can fail catastrophically.
+
+Robin Extremal has also reached a source-selected quantitative surface: hypothetical failure forces the standard Chebyshev and Mertens log-product errors into an opposite-sign cone at the same CA-selected parameter. These lines now need arithmetic theorems on the **selected defect** itself -- a linear-prefix angle gap, source-specific shrinking-target exclusion, or selected same-parameter race incompatibility -- rather than more generic structural constraints.
+
+## Convert amplitude and nonlinear access into a cheaper source theorem
 
 **Linked intuition:** `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Möbius Cancellation now shows both sides of the nonlinear boundary. Pointwise cubic mixing reaches the zero mode only by collapsing back to the Mertens mean, while residue-aggregated cubic mixing creates a genuine principal interaction but exposes polynomial-shift pair/triple correlations at the growing modulus. Analytic Frontier and Weil Inertia similarly have exact geometric ledgers whose remaining obligations are now source-side rather than geometric.
+Weil Inertia turns local screening into an amplitude-capacity ledger. Density matching leaves only logarithmically many complementary labels; selected radial depth multiplies the required first-harmonic mass, and published near-edge zero-density bounds cap the available same-window capacity through the calibrated quarter boundary. Möbius Cancellation shows the nonlinear counterpart: aggregated interactions can reach the principal mode before centering, but only by exposing explicit growing-modulus source correlations; after centering, recovery is impossible.
 
-The global question is whether any representation creates a target-bearing interaction whose required source theorem is **strictly cheaper** than the cancellation/coercivity statement it aims to prove. If the exact source expansion recreates an equivalent Mertens term, polynomial-shift barrier, endpoint spike, or count--depth bill, the representation has moved the obligation rather than reduced it.
+The global question is whether any representation creates a target-bearing interaction whose source obligation is strictly cheaper and more structured than the cancellation/coercivity theorem it aims to replace. If the construction merely converts the target into an equivalent amplitude, correlation, or information-recovery bill, it has classified the obstruction rather than crossed it.
 
-## Exploit classified free boundaries with quantitatively broad arithmetic coherence
-
-**Linked intuitions:** `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, `MI-009-local-correctness-does-not-determine-global-coherence`.
-
-Farey Discrepancy strengthens the square-root free-model control: squarefree ternary data can still saturate even after exact Möbius ancestry is imposed along any fixed set and even along infinitely many sufficiently sparse prime directions. The missing condition must therefore couple a quantitatively growing prime breadth or the full divisor law at the active scale.
-
-Robin Extremal simultaneously makes its selected boundary more structured: hypothetical failure lies on a sparse CA-selected prime-race ray, and the same frontier displacement now determines the one-sided depth/mass of adjacent prime-power events. The next step is not more generic sparsity but an arithmetic theorem on this joint selected race/depth configuration.
-
-## Close the support-edge multi-window null beyond restricted support
+## Use genuinely global source identities when finite summaries and restricted support are exhausted
 
 **Linked intuitions:** `MI-003-arithmetic-significance-begins-after-universal-control-subtraction`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Visual Exploration already requires four-level information for cross-window covariance of the frozen support-edge statistic. The standard Rudnick--Sarnak support region cannot reach edge-edge covariance: identical restricted-support pair factors must remain below frequency `1/2`, and keeping one factor near the Montgomery edge collapses the other toward DC.
+Xi Flow now gives the sharpest finite-information warning. The Xi theta tail is genuinely source-specific, yet Gaussian heat-origin shifts, beyond-all-orders analytic soft splices, and exact preservation of any fixed bank of local source jets can retain nonreal `t=0` zero geometry. The missing Xi rigidity must therefore be an exact global/nonlocal relation that fixes the heat origin and couples separated source scales; further tail asymptotics or finite local anchors cannot suffice.
 
-A rigorous `1/L` arithmetic interpretation therefore needs direct zeta cross-height mixing, genuinely wider-support four-level information with moving-window uniformity, or a new statistic whose arithmetic signal is rederived rather than inherited from the original edge observable.
+Visual Exploration reaches an analogous boundary in Fourier support. Restricted support forces an edge companion into a shrinking low-frequency channel; finite-window CUE response is quadratic there, and a signed second-moment-null packet can cancel the universal leading mean. The decisive test is whether the arithmetic correction occupies a different moment functional and survives with controlled total variation, variance, transfer error, and moving-family uniformity. Otherwise the remaining routes are direct cross-height covariance or genuinely wider-support four-level information.

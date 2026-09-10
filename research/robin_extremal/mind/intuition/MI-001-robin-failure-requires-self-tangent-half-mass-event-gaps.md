@@ -1,31 +1,31 @@
-# MI-001 — Robin failure is forced onto a sparse prime-race ray whose displacement also fixes boundary depth
+# MI-001 — Robin failure is forced into a same-parameter opposite-sign prime-race cone
 
-**Evidence level:** exact CA localization, Diophantine host sparsity, prime-race reduction, and directional depth coupling through RE-025
+**Evidence level:** exact CA localization, host sparsity, directional event depth, and quantitative same-parameter race reduction through RE-029
 
 ## Core intuition
 
-The Robin route has moved from a global inequality to a highly selected arithmetic event. A hypothetical counterexample must occur at self-tangent CA boundary states, lie on an exceptionally sparse prime-power event host set, and realize a prescribed mixed Chebyshev/Mertens race corner.
+The Robin route has moved from a global inequality to a sharply selected arithmetic event. A hypothetical counterexample must occur at self-tangent CA threshold states on an exceptionally sparse prime-power host set, and the same displacement that controls adjacent event depth now forces two standard prime-race errors into opposite signs at one common parameter.
 
-The latest result makes that selection more rigid: the frontier displacement that parametrizes the race is also the variable that allocates the allowable mass and layer depth on the two adjacent CA boundaries. Race position and event geometry are therefore not independent knobs.
+The current target is therefore a genuine arithmetic incompatibility, not an accumulation of rare-looking geometric conditions: the CA selector would have to support a negative Chebyshev excursion and a positive Mertens log-product excursion with quantitatively linked magnitudes.
 
 ## Strongest justified principle
 
-RE-017--RE-020 force bounded ordinary-prime envelopes into deep event ladders and use linear forms in logarithms to make repeated hosts extremely sparse. RE-021--RE-022 show that the self-tangent and finite-annulus reductions survive regular exceptional boundary chambers. RE-023 identifies the displacement `d=X-p` as the selected prime-race coordinate and obtains the square-root-scale race dichotomy.
+RE-017--RE-025 force bounded or slowly growing prime envelopes into sparse event ladders, identify the CA displacement as the relevant race coordinate, and couple that displacement to the one-sided depth/mass of the adjacent prime-power boundaries.
 
-RE-024 extends the host sparsity to slowly growing envelopes `o(log log X)` and shows that those hosts must still approach the same opposite-side race corner. RE-025 then splits the adjacent boundary mass: roughly `w_-<2d-1` and `w_+<2(g-d)+1`. Hence `d=o(log X)` forces the left boundary into `X^{o(1)}` prime bases with diverging layer depth even if the right side is wide, and the symmetric statement holds for `g-d` on the right.
+RE-026--RE-028 turn threshold failure into quantitative excursion and layer-depth requirements and expose an off-critical mixed-race signature. RE-029 removes the remaining parameter-relocation ambiguity. On the threshold-selected parameter `Z`, the Chebyshev error satisfies a forced negative displacement-scale asymptotic while the ordinary Mertens log-product error is positive on the corresponding power scale; their normalized errors diverge in opposite directions and obey a quantitative cone relation. Higher event layers are too small to account for this first-order signature.
 
 ## Program consequence
 
-Seek a theorem on the joint selected sequence, not on generic primes. The promising target is an incompatibility between the required prime-race corner and the one-sided deep-ladder condition determined by the same displacement, or a sign/large-deviation theorem conditioned on CA event hosts. Improvements in host counting matter only if they enter such a selected-event estimate.
+Attack the selected pair directly. Prove that the standard Chebyshev and Mertens log-product errors cannot occupy the RE-029 opposite-sign cone along the CA threshold sequence, or derive a source relation that transfers one error into the other with a sign/magnitude constraint strong enough to exclude that selected event. Generic prime-gap or prime-race oscillation results matter only if they survive conditioning on the CA selector.
 
 ## Counterevidence / boundary
 
-Sparse exceptional sets can support rare arithmetic events, and deep prime-power ladders do not determine the sign of the mixed race. RE-025 supplies a deterministic coupling of necessary coordinates, not a probabilistic independence argument or a Robin proof. Larger envelope regimes also remain.
+The two standard errors can oscillate in general, and sparsity of the selected host set does not itself forbid exceptional correlated events. RE-029 supplies a necessary same-parameter cone under the threshold-tangent failure scenario, not a theorem that this cone is empty. Larger envelope regimes and any loss in transporting generic analytic estimates to the selected sequence remain open.
 
 ## Epistemic status
 
-**Exact localization of hypothetical failure to a sparse CA-selected race/depth configuration in which the race displacement also controls adjacent event complexity; exclusion of that joint arithmetic event remains open.**
+**Exact localization of hypothetical Robin failure to a sparse CA-selected same-parameter cone with negative Chebyshev and positive Mertens log-product excursions of linked size; exclusion of that selected arithmetic cone remains open.**
 
 ## Falsification criterion
 
-Construct an admitted counterexample sequence violating the RE-023 race-coordinate or RE-025 directional depth identities, or prove that the selected race corner can recur freely along CA hosts despite the coupled deep-ladder constraints.
+Construct an admitted threshold-tangent Robin witness that violates the RE-029 same-parameter sign or magnitude relation, or prove that the selected CA sequence can realize the required opposite-sign cone indefinitely without contradicting any source constraint.

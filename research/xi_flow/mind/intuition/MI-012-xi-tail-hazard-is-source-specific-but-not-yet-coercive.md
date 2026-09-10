@@ -1,33 +1,33 @@
-# MI-012 — The Xi theta-tail hazard is source-specific but not yet coercive
+# MI-012 — Xi source rigidity must be global enough to fix the heat origin
 
-**Evidence level:** exact theta-source asymptotics and matched Gaussian-mixture separation through XF-162
+**Evidence level:** exact theta-tail discrimination, Gaussian heat-origin covariance, analytic beyond-all-orders splicing, and finite-jet non-identifiability through XF-165
 
 ## Core intuition
 
-The actual Xi Fourier source now has a quantitative invariant that the strongest positive analytic maximal-contact controls fail. Its tail is not merely smooth or rapidly decaying: after normalization by `e^{4u}`, the logarithmic action, hazard, and curvature approach fixed nonzero constants determined by the leading theta term.
+The Xi theta tail is genuinely distinctive, but asymptotic distinctiveness is not coercivity. The strongest current controls can preserve the Xi tail beyond every fixed theta-exponential scale and match any prescribed finite bank of exact local source jets while their bounded heat orbit approaches a negative-time Xi slice with nonreal zeros at the distinguished `t=0` time.
 
-This identifies genuine Xi-specific source information. It does **not** yet show that the information reaches the transition. Far-tail asymptotics may coexist with substantial freedom at the finite/mesoscopic scales where maximal contact is assembled.
+The missing source datum must therefore be global in a strict sense: an exact nonlocal relation must pin the physical heat origin and couple separated source scales in a way that cannot be preserved by local notching or soft splicing.
 
 ## Strongest justified principle
 
-XF-160 constructs nonnegative even source controls with prescribed asymptotic transition gaps, and XF-161 Appell-smooths them to strictly positive real-analytic Gaussian-mixture densities while preserving the gap on any fixed finite heat window. Positivity and ordinary analytic regularity are therefore insufficient.
+XF-160--XF-162 separate the actual Xi source from positive analytic maximal-contact controls by its normalized double-exponential tail action, hazard, curvature, and all-time heat admissibility. XF-163 then shows that those normalized tail quantities are invariant under the exact Gaussian source tilt `Phi -> e^(-tau u^2) Phi`, while the heat orbit is translated by `tau`. Any invariant blind to that gauge therefore cannot control absolute transition time.
 
-XF-162 computes the actual theta source asymptotics. With `T_rho(u)=-e^{-4u}log rho(u)` and `H_rho(u)=-e^{-4u}(log rho)'(u)`, Xi satisfies `T_Phi->pi`, `H_Phi->4pi`, and `-e^{-4u}(log Phi)''->16pi`. It also admits all positive quadratic exponential moments. The fixed-width Gaussian mixtures instead have normalized hazard/curvature tending to zero and moment radius exactly `sigma^2/2`; the hazard separation remains nonvanishing at the outer maximal-contact scale.
-
-The atomic controls pass the all-time moment test despite failing the positive-density condition, so moment admissibility alone is not the invariant. The robust distinction is the Xi-scale double-exponential tail law, possibly together with finer theta coefficient structure.
+XF-164 removes the obvious repair of keeping more tail terms. A strictly positive analytic source can agree with Xi beyond every fixed theta-exponential asymptotic scale yet converge on every bounded spacetime window to the shifted Xi orbit, so a nonreal negative-time zero persists at `t=0` by Rouche stability. XF-165 removes the next finite-dimensional repair: analytic notch factors can simultaneously preserve any fixed collection of Xi source jets exactly while leaving the same shifted-orbit limit and beyond-all-orders tail agreement. Finite local anchors plus arbitrarily accurate tail asymptotics still do not fix the heat origin.
 
 ## Program consequence
 
-Try to propagate the tail hazard inward. Derive an exact theta identity, differential inequality, or all-time compatibility law that couples the far-tail jet to mesoscopic source mass strongly enough to exclude the folded maximal-contact controls. In parallel, attack the intuition by attempting a positive smooth all-time source with the same normalized Xi hazard but a prescribed nonzero transition gap.
+Search only for source laws of a genuinely global type: exact theta/modular identities, coefficient relations, integral transforms, or other nonlocal constraints that link mesoscopic source mass to the far tail and transform nontrivially under Gaussian tilting. Every candidate should first be tested against the XF-163 gauge and the XF-164--XF-165 splice/notch constructions.
+
+A successful law must then be propagated into the collision/transition variable; being globally Xi-specific is necessary but not yet sufficient for RH.
 
 ## Counterevidence / boundary
 
-XF-162 only excludes the concrete XF-160/XF-161 source families from the Xi tail class. It does not prove that every Xi-hazard source is transition-rigid, and modifications on bounded or slowly growing source regions may preserve the same asymptotic hazard. The accepted source-tail clue therefore remains open.
+XF-163--XF-165 do not construct a second theta kernel or preserve the complete analytic germ of Xi at a point or on an open interval. Exact analytic/global identities can therefore escape the controls. The findings also do not prove that every finite-dimensional nonlocal functional is useless; they directly cover finite local jets plus asymptotic tail data and motivate, rather than prove, the need for a global coupling law.
 
 ## Epistemic status
 
-**Supported Xi-specific source discriminator with exact asymptotics, but no established implication from that discriminator to transition visibility or RH.**
+**Exact negative boundary: Xi tail asymptotics, even beyond all fixed theta scales and augmented by arbitrary finite local source jets, do not determine the distinguished heat origin; surviving coercivity must use an exact global source relation and still transport it to zero geometry.**
 
 ## Falsification criterion
 
-Construct a strictly positive smooth all-time source with the same normalized tail action/hazard/curvature limits as Xi and a prescribed maximal-contact transition gap, or prove that such a source is impossible by a source identity that does not assume the desired transition behavior.
+Produce a criterion built only from the covered tail data and finite local jet bank that forces real-rootedness at `t=0` despite the XF-164--XF-165 matched sources, or exhibit an exact global Xi identity that fails on those controls and quantitatively constrains the transition-forming mesoscopic mass.

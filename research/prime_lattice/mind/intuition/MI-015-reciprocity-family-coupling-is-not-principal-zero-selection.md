@@ -1,33 +1,31 @@
-# MI-015 — Global spectral structure must be source-forced, positive, and divisor-complete
+# MI-015 — Spectral reality must act on the complete zero-bearing variable itself
 
-**Evidence level:** exact factorization/selector controls and boundary-Weyl programmability through PL-256
+**Evidence level:** exact factorization/selector/programmability controls plus Lax--Phillips dilation and Farey transfer-family classifications through PL-258
 
 ## Core intuition
 
-There are three independent ways for a beautiful global spectral construction to miss RH. The principal zeta factor may remain algebraically separated; positivity/self-adjointness may constrain only a selected sub-divisor; or the desired full divisor may be inserted through programmable boundary/Weyl data whose positivity already assumes the target.
+There are now several independent ways for a canonical global spectral construction to contain all the right ingredients without forcing RH. The principal zeta factor may remain separated; a self-adjoint operator may see only a selected sub-divisor; broad boundary data may program the desired divisor; a self-adjoint dilation may coexist with complex resonances; or a canonical operator family may encode every Riemann zero only as an external complex parameter.
 
-A useful global construction must therefore couple the principal factor, force the sign/reality from source structure, and prove divisor completeness in the **same** operator or functional.
+The missing theorem must make **the complete zero-bearing variable itself** subject to source-forced spectral reality or positivity. Positivity elsewhere in the surrounding construction is not enough.
 
 ## Strongest justified principle
 
-PL-251--PL-253 show that representation-ring closure and positive Rankin--Selberg/Maaß--Selberg constructions can retain the principal zeta block without giving it the required sign in isolation. PL-254 constructs the selector analogue: self-adjoint pseudolaplacians put every selected spectral zero on the critical line while seeing only a sub-divisor. PL-255 shows that a Dirac square with the same domain content cannot enlarge that selector by formal factorization.
+PL-251--PL-256 separate source coupling, positivity/reality, and divisor completeness. Positive Rankin--Selberg/Maass--Selberg constructions can leave the principal block signed; self-adjoint pseudolaplacians can localize an intentionally selected zero set; and generalized Weyl data are broad enough to package a prescribed divisor. For zeta, taking the completed logarithmic derivative as a Herglotz function is already RH-equivalent rather than an independent positivity theorem.
 
-PL-256 confirms that changing the first-order domain is a real mathematical escape but not yet arithmetic rigidity. General boundary relations realize broad Nevanlinna/Weyl families, so a desired secular divisor can be programmed unless the boundary data are independently source-determined. The zeta control is sharp: `i xi'/xi(1/2-iz)` is Herglotz exactly when RH holds, and under RH a corresponding Krein-string Weyl model exists. Thus abstract Weyl realization packages the answer rather than producing its positivity.
-
-The exact parameter `lambda=s(1-s)` isolates the payoff: for a nonreal zero, `lambda` is real exactly when `Re(s)=1/2`. Hence a source-forced divisor-complete self-adjoint realization in this parameter would imply RH, but PL-256 supplies neither the source forcing nor the missing positivity.
+PL-257 adds the resonance control. Automorphic Lax--Phillips theory can place zeta scattering data inside an ambient unitary/self-adjoint dilation while the actual zero-bearing interaction generator is non-self-adjoint and may have complex resonances. PL-258 adds the parameter-family control. Farey/Gauss thermodynamic formalism gives a canonical divisor-complete eigenvalue-1 problem in a complex parameter `q`, and related real-temperature transfer operators are self-adjoint, but RH remains exactly the statement that the relevant complex parameter locus lies on the required vertical line. A determinant zero or family eigenvalue condition is not the spectrum of one fixed self-adjoint operator.
 
 ## Program consequence
 
-Demand three proofs from the next spectral proposal: arithmetic determination of the boundary/coupling data; positivity or self-adjointness derived independently of RH; and a two-way full-divisor theorem with multiplicities. Reject constructions that obtain one obligation by prescribing another.
+Demand a single target-bearing interface with three independent proofs: its coupling/boundary data are forced by rational-prime or global arithmetic structure; positivity/self-adjointness is derived without RH-equivalent input; and its spectral variable captures the full principal Riemann divisor with multiplicity. Audit explicitly what is fixed and what varies. If the zeros remain resonances of a compression or parameter values selecting members of an operator family, ambient spectral reality has not reached them.
 
 ## Counterevidence / boundary
 
-PL-256 does not rule out an arithmetic boundary construction, a genuinely matrix-valued/relative Weyl system, or another global relation whose boundary maps are forced by prime structure. The programmability result is an audit criterion for generic extension theory, not a no-go theorem for source-specific operators.
+PL-257--PL-258 do not rule out a new source-determined linearization of a canonical family, a matrix-valued/relative Weyl construction, or an arithmetic boundary relation whose zero-bearing operator is genuinely self-adjoint. Farey dynamics is canonical and divisor-complete in parameter space, so the problem is not generic programmability there; it is the missing transfer from parameter completeness to spectral reality.
 
 ## Epistemic status
 
-**Exact separation of coupling, positivity/reality, and divisor completeness, strengthened by a matched programmability control for the remaining boundary-domain escape; no source-forced full-divisor model is known here.**
+**Exact separation of source forcing, positivity, and divisor completeness, strengthened by controls showing that self-adjoint dilation and canonical divisor-complete parameter families still do not localize the Riemann zero variable.**
 
 ## Falsification criterion
 
-Produce a divisor-complete self-adjoint zeta model whose boundary/Weyl data are independently forced by the source and whose positivity does not use an RH-equivalent Herglotz assumption, or invalidate the claimed programmability/selector separation under the model's actual category.
+Produce a source-determined fixed self-adjoint/positive zeta relation whose own spectral variable is the centered Riemann zero parameter and whose spectrum is divisor-complete with multiplicity, without prescribing the zeros or assuming an RH-equivalent Herglotz property.

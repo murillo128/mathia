@@ -1,31 +1,33 @@
-# MI-007 — Bow variance is controlled by a square-root-scale source completion problem
+# MI-007 — Bow variance is a cubic-scale arithmetic endpoint-completion problem
 
-**Evidence level:** exact Fejer-minus-completion identity, carrier no-go, and prime-source local second-moment reduction through ANF-162
+**Evidence level:** exact Fejer-minus-completion identity, carrier no-go, Selberg-calibrated total-variation threshold, and all-interval source controls through ANF-165
 
 ## Core intuition
 
-The endpoint threat in the bow identity is no longer an unspecified low-frequency defect. For the actual prime-source residual, the available arithmetic second moment pins the dangerous cumulative mode to a physical wavelength of order `sqrt X`. A target-scale endpoint completion would therefore require coherent residual accumulation of size `Omega(sqrt(X log X))` across `Omega(sqrt X)` sites.
+The endpoint threat in the bow identity has moved well beyond the original square-root localization bound. Once the actual prime residual is combined with Selberg calibration, the first scale at which endpoint completion can carry target-sized mass is the cubic total-variation scale `R_TV=(X K log X)^(1/3)`.
 
-This is the source-specific quantity that must be controlled. The low positive spectrum and the distinguished cubic carrier are not scarce enough, or coherent enough at the endpoint scale, to supply the missing theorem by themselves.
+More importantly, the current source controls do not merely locate that onset. All-interval decorrelation and a fixed Cramer--Granville gauge force any dangerous endpoint energy beyond every fixed polylogarithmic multiple of `R_TV` in the `epsilon<1/16` regime. The live arithmetic obligation is therefore a power-scale one.
 
 ## Strongest justified principle
 
-ANF-157 writes the bow variance exactly as positive Fejer source energy minus an endpoint-completion square. ANF-158 translates a large completion into large twisted cumulative residual modes. ANF-159--ANF-161 then show that the most tempting parity-quantized carrier resonance cancels too strongly on the relevant endpoint windows to generate the required target-scale spike.
+ANF-157 writes bow variance exactly as positive Fejer source energy minus an endpoint-completion square. ANF-158 translates a large completion into large twisted cumulative residual modes, while ANF-159--ANF-161 rule out the tempting parity-quantized carrier as the source of the required spike. ANF-162 then gives the first source-specific local second-moment reduction and shows why square-root windows arise from those inputs alone.
 
-ANF-162 finally inserts the actual residual `r_X=\vartheta-Q_R`. Brun--Titchmarsh sparsity and the explicit counterterm give `sum_I |r_X|^2 << H log X` on intervals `H>=sqrt(X/log X)`. In the endpoint-completion argument this improves the cumulative rank bound to the `K/sqrt X` scale and makes the dangerous physical wavelength `asymp sqrt X`. Hence target-sized completion forces a twisted prefix or suffix of order `sqrt(X log X)` over a square-root-sized block.
+ANF-163 changes the natural normalization by inserting the Selberg-calibrated source budget: endpoint completion below `R_TV/omega` is negligible, while target-sized completion requires macroscopic correction at the cubic scale. ANF-164 shows that sufficiently uniform interval decorrelation repels this energy farther when `epsilon<1/16`. ANF-165 removes the remaining fixed polylogarithmic normalization loss with a global Cramer--Granville gauge, so every fixed polylog multiple of `R_TV` is still too small for the dangerous correction in that regime.
 
 ## Program consequence
 
-Attack the residual in exactly this currency: prove that its twisted cumulative sums on `sqrt X` windows are `o(sqrt(X log X))` in the bow normalization, or derive a source identity forcing the positive Fejer term to dominate completion. Do not spend further effort on spectral abundance or bare-carrier resonance unless a new argument changes the source coefficient law.
+Attack the actual residual at a genuinely larger scale. The useful targets are a power enlargement `R_TV X^delta`, a square-function/cancellation estimate that controls the same endpoint functional directly, or a positive combined Fejer/completion inequality. Repeating carrier resonance tests or sharpening logarithmic factors around the cubic threshold no longer changes the load-bearing obstruction.
+
+The `epsilon=1/16` activation boundary must be treated separately rather than hidden inside an extrapolation of the subcritical argument.
 
 ## Counterevidence / boundary
 
-ANF-162 does not itself make endpoint completion small. Its square-root cutoff is also essentially sharp if one uses only the stated local `L^2` bound and pointwise control, so a better conclusion needs genuinely stronger arithmetic information. Cancellation between the Fejer and completion terms remains possible.
+The current results do not prove endpoint completion is negligible at every power enlargement of `R_TV`, nor do they prove that the positive Fejer term dominates it. The all-interval decorrelation input is itself arithmetic and must be available in the exact family consumed by the bow identity. Cancellation at scales beyond the proved range remains possible.
 
 ## Epistemic status
 
-**Supported exact reduction of the remaining bow obstruction to square-root-scale twisted cumulative concentration of the actual prime residual; the required cancellation theorem is still open.**
+**Supported exact reduction of the surviving bow obstruction to source-specific endpoint completion beyond every fixed polylogarithmic multiple of the cubic total-variation scale in the current subcritical regime; the required power-scale cancellation theorem remains open.**
 
 ## Falsification criterion
 
-Construct admissible prime residual data satisfying the ANF-162 source bounds whose endpoint completion reaches the target scale without a square-root-window cumulative spike, or prove that the current local second-moment inputs alone already force the needed completion bound.
+Construct admissible prime residual data satisfying the ANF-163--ANF-165 source hypotheses whose endpoint completion reaches the target scale inside a fixed polylogarithmic multiple of `R_TV`, or prove that those same hypotheses already control a power enlargement without any additional arithmetic input.

@@ -1,31 +1,31 @@
-# MI-006 — Support-edge source specificity begins beyond the restricted-support four-level barrier
+# MI-006 — A support-safe edge companion is a renormalized moment-cancellation problem
 
-**Evidence level:** exact finite-CUE covariance, four-level identifiability, and Rudnick--Sarnak support reductions through VIS-141
+**Evidence level:** exact finite-CUE covariance/support reductions plus linear, quadratic, and moment-null companion controls through VIS-144
 
 ## Core intuition
 
-A shrinking arithmetic residual at the Montgomery edge cannot be interpreted from one-window behavior. The fixed-window statistic has an order-one stochastic floor, so detection requires averaging across source windows, and the averaging law is a four-level dependence question.
+The restricted-support escape from edge-edge covariance is not merely a frequency-placement problem. Once one factor approaches the Montgomery edge, the companion is forced into a shrinking low-frequency channel whose deterministic finite-CUE response also shrinks. The source must therefore pay a normalization bill at the same time that the available theorem support narrows.
 
-The obvious unconditional higher-correlation shortcut is now closed for this observable: the classical Rudnick--Sarnak support region cannot contain edge-edge covariance, and a simple support-safe redesign either removes the edge or collapses the companion frequency toward DC.
+Finite source windows reveal a useful extra degree of freedom: in the ultra-low-frequency regime the universal CUE-centered response is quadratic, and a signed packet can cancel that second-moment term exactly. The remaining question is whether arithmetic information occupies a different low-frequency functional and survives that cancellation at controlled variance and transfer cost.
 
 ## Strongest justified principle
 
-VIS-130--VIS-135 fix the window convention, remove the realized diagonal common mode, and prove a nondegenerate Gaussian terminal packet for the bounded CUE edge statistic. VIS-136--VIS-139 then show that the required number of source windows is determined by cross-window covariance and that, after lower-order contractions, disjoint quadratic covariance is a four-level functional not fixed by one-, two-, or three-level marginals.
+VIS-130--VIS-141 fix the finite-CUE null, identify the four-level cross-window requirement, and prove that classical Rudnick--Sarnak support cannot contain two edge factors. Retaining one edge factor forces an independent companion bandwidth `b` toward zero.
 
-VIS-140 pulls the Rudnick--Sarnak zeta support condition `sum |xi_j|<2` onto the pair-pair plane `(q,-q,r,-r)`, giving exactly `|q|+|r|<1`. The edge-edge sector near `(1,1)` is therefore separated by an order-one support gap. VIS-141 proves the design corollary: identical-factor covariance inside that theorem requires support below `1/2`, while retaining one factor at `1-epsilon` forces the other bandwidth below `epsilon`.
+VIS-142 shows that bounded-total-variation packets then have CUE-centered mean `O(b)` uniformly, so scalar rescue costs at least inverse bandwidth. VIS-143 keeps the finite source window and sharpens the ultra-low-frequency regime to `O(Mb^2)` when `Mb` is small. VIS-144 proves this quadratic scale is genuine under the natural bounded-aspect-ratio assumptions and identifies its coefficient with the finite kernel second moment. For signed packets, imposing `int q^2 dnu(q)=0` cancels the complete universal quadratic mean term while leaving Fourier support unchanged; only a quartic-order null remainder is forced by the current expansion.
 
 ## Program consequence
 
-Prioritize a direct zeta cross-height mixing/covariance estimate or genuinely wider-support four-level information for the exact moving-window family. An asymmetric edge--low-frequency or nonfactorized four-level statistic is admissible only after a separate derivation shows that it retains a source-specific arithmetic signal at the declared scale.
+Compute the corresponding low-frequency zeta/arithmetic expansion before designing more statistics. The decisive test is whether the arithmetic correction has a nonzero component not proportional to the same second-moment functional. If so, choose a moment-null signed packet and prove that its surviving arithmetic scale dominates the amplified CUE remainder, variance, finite-height transfer, and moving-family theorem error. If not, close this restricted-support redesign and return to direct covariance or wider-support four-level information.
 
 ## Counterevidence / boundary
 
-The Rudnick--Sarnak obstruction is an applicability boundary, not evidence that the desired covariance law is false. Wider-support unconditional theorems, a direct explicit-formula covariance argument, or a carefully designed nonfactorized test may escape. A conjectural ratios formula can guide prediction but does not satisfy the rigorous gate.
+Moment cancellation is only a deterministic null-mean fact. Signed weights can have large total variation and worsen stochastic noise; the zeta correction may share the same quadratic coefficient and be canceled with the null; and no required moving-window uniformity theorem has been proved. The original edge-edge route is unaffected by these low-frequency controls.
 
 ## Epistemic status
 
-**Exact identification of the multi-window four-level requirement plus an exact support obstruction to the classical restricted-support shortcut; the required zeta-side dependence theorem remains open.**
+**Exact restricted-support redesign boundary: shrinking companions have a finite-window quadratic CUE response whose leading moment can be canceled algebraically, but arithmetic selectivity and the full normalized error budget remain unproved.**
 
 ## Falsification criterion
 
-Derive the frozen edge covariance from the classical restricted-support theorem without violating its support/localization hypotheses, or prove that a support-safe replacement retains the same arithmetic target while avoiding any new four-level or uniform-transfer obligation.
+Show that the relevant zeta lower-order term is proportional to the same quadratic frequency moment through the required accuracy, or construct a moment-null packet for which the claimed universal CUE cancellation fails under the frozen finite-window definitions.

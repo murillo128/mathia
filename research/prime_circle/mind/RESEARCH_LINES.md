@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave the canonical fixed-conductor and fixed-endpoint path category through genuinely relational scale coupling
+## Leave every fixed finite residue-packet category through genuinely growing relational coupling
 
 **Linked intuitions:** `MI-011-simultaneous-scale-coupling-must-survive-coprime-controls`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`.
 
-PC-224--PC-240 show that scalar fusion, singular fibers, drift coordinates, and the first canonical noncommuting coordinate/projection pair close inside classical packet/shift matrix structure. PC-241--PC-243 identify the larger refinement dynamics with classical Cuntz `ax+b`, Bost--Connes, and compact shift models.
+PC-224--PC-244 show that scalar fusion, noncommuting refinements, drift coordinates, Cuntz/Bost--Connes structure, and finite same-endpoint path interference repeatedly close into classical packet or shift algebras. PC-245 extends the same closure to native weighted cover-star words through affine polyphase packets.
 
-PC-244 closes another apparent escape. Any finite scalar linear interference among weighted cover paths with the same endpoint reduces to a polynomial mask times one weighted cover, and every nonzero zero-sum path defect is unitarily equivalent, after normalization, to a universal pure unilateral shift of countable multiplicity. Pairwise commutators and direct-versus-factorized same-endpoint defects therefore do not create a prime-specific invariant merely by retaining path interference.
+PC-246--PC-248 now identify the information ceiling of the prime-prime transfer route at fixed finite scale. A complete centered transfer Gram packet at fixed lower prime depends only on one signed residue class of the upper prime. Any fixed finite synchronized family therefore factors through a finite CRT quotient, and **every fixed nonlinear readout of the complete packet tuple** is exactly finite Dirichlet-character data. Mixed nonlinear channels can create composite conductors, but only as ordinary CRT products of the local characters; prime aggregation remains a finite combination of classical Dirichlet prime-L data.
 
-The live construction must keep information that PC-244 intentionally discards: joint path labels before scalar combination, interleaved adjoints/transfer, matrix-valued couplings, simultaneous growth of endpoint and conductor family, or another genuinely multi-scale relation. It must then survive matched coprime controls and the classical packet/refinement closures already identified.
+The live construction must therefore make the state space itself grow or preserve relational information discarded before this finite quotient: growing lower moduli, several independent upper primes, the rectangular transfer operators before Gram compression, native composite masks, or another genuinely joint/infinite-dimensional scale limit. It must still survive matched coprime controls and show that the new relation is source-forced rather than a larger classical character package.
 
-## Treat canonical noncommutativity and finite same-endpoint interference as controls
+## Treat fixed finite packet enrichment and arbitrary nonlinear readout as controls
 
-Noncommuting refinement operators and finite path defects can be mathematically real while remaining universal after the natural scalar quotient. A candidate must state which relation survives beyond that quotient and why it depends on prime refinement rather than only on the weighted-cover semigroup.
+At fixed finite conductor family, neither noncommutativity nor nonlinear fusion creates information outside the finite residue quotient already present in the complete packets. A candidate must identify which variable escapes that quotient and why its growth carries arithmetic information not reducible to ordinary character distribution.

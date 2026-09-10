@@ -1,39 +1,39 @@
-# MI-007 — Quantitative non-escape must be priced in the source currency the theorem actually consumes
+# MI-007 — Quantitative non-escape must be measured after the final information and transport map
 
-**Evidence level:** supported cross-line synthesis from current endpoint-completion, target-occupation, nonlinear-correlation, finite-seam, count-depth, selected-event, and Xi-source boundaries
+**Evidence level:** supported cross-line synthesis from current endpoint-completion, quotient-identifiability, target-occupation, phase-recurrence, nonlinear-correlation, separated-transport, amplitude-capacity, selected-race, and Xi-source boundaries
 
 ## Core intuition
 
-The program repeatedly reaches favorable geometry and then discovers that the arithmetic source can still escape the exact norm, rate, sign, projection, or conditioning modulus consumed by the final theorem. The decisive question is not whether useful structure exists, but whether the actual source is forced to occupy it with enough quantitative mass after the full target map is applied.
+The mature Mathia routes increasingly fail or succeed at a more precise boundary than "use arithmetic structure." The source first passes through a quotient, representation, propagation, sampling, or spectral parameterization, and only the information that survives that map can contribute to the final RH-equivalent currency.
 
-The latest evidence makes this more concrete by closing several previously plausible escapes rather than merely weakening them.
+Recent evidence sharpens both sides. Some seemingly weak local structures become sufficient after the destination map removes the dangerous sector; other seemingly rich structures are provably useless because the relevant information was already discarded or moved into an unconstrained parameter.
 
 ## Strongest justified principle
 
-Analytic Frontier now prices its endpoint obstruction in a source-specific square-root currency. ANF-162 shows that target-sized completion forces `Omega(sqrt(X log X))` twisted residual accumulation across `Omega(sqrt X)` sites; the available local second moment cannot improve this cutoff by itself.
+Analytic Frontier now pushes dangerous bow endpoint completion beyond every fixed polylogarithmic multiple of a cubic total-variation scale under its strongest current source controls. The open obligation is a genuine power-scale arithmetic estimate, not another generic low-frequency refinement.
 
-Nyman--Beurling separates energy from topology. Universal adjacent modes can be low-Rayleigh and target-poor, yet NB-029 proves that the unrestricted adjacent-difference family spans the entire Nyman closure. The useful separator must therefore be target-selected **and** energy-constrained; quotienting all visible nuisance structure destroys the target space.
+Prime Flute shows that transport can reduce rather than increase the necessary source theorem: after separated exponential propagation, proportional high-high seam mass is paid automatically and only leakage into a logarithmic/sublinear low-output window remains dangerous. Nyman--Beurling provides the matching positive quotient theorem: the moving-tail adjacent sector is Gram-whitened target-poor and can be removed while preserving the full target distance, even though the unrestricted adjacent family cannot.
 
-Möbius Cancellation prices nonlinear access. MC-195 makes pointwise cubic mixing Mertens-complete, while MC-196 obtains genuine principal-mode coupling only by exposing growing-modulus pair/triple polynomial-shift correlations. A nonlinear representation is useful only if its source bill is cheaper than the original cancellation problem.
+Möbius Cancellation and Prime Circle expose hard information ceilings. A centered residue quotient cannot recover the discarded principal sum under arbitrary nonlinear postprocessing, while any fixed finite nonlinear readout of complete centered prime-transfer packets remains finite Dirichlet-character data. Prime Lattice gives the spectral form of the same warning: self-adjoint ambient dynamics or a divisor-complete parameter family does not force reality of the actual zero-bearing resonance/parameter.
 
-Prime Flute supplies an exact transport failure: PF-268 shows that the positive lowest finite-seam pole alone makes every bare separated `R>1` weight unbounded. The fixed-axis smoothing margin becomes relevant only if normalization or spatial propagation is composed before the endpoint norm.
+Farey Discrepancy, Arithmetic Fidelity, and Robin Extremal identify increasingly source-selected defects: a linear-prefix Mertens angle after all sublinear ancestry remains free, an exponential shrinking-target exponent for sparse phase sampling, and a same-parameter opposite-sign Chebyshev/Mertens cone selected by CA thresholds. Weil Inertia similarly upgrades zero count to a selected-amplitude capacity ledger. These are exact currencies on which a final arithmetic theorem can now be asked.
 
-Weil Inertia converts its count--depth ledger into a no-go: WI-232 closes density-matched same-interval screening for fixed powers above one quarter and a calibrated quarter endpoint. Robin Extremal couples its sparse selected prime-race coordinate to one-sided event depth. Xi Flow, conversely, finds a genuine source discriminator: XF-162 separates the Xi theta-tail hazard from the strongest positive analytic controls, but the missing step is still to transport that far-tail rigidity into transition coercivity.
+Xi Flow supplies the strongest warning against finite source summaries: beyond-all-orders Xi tail agreement plus any fixed local jet bank still does not fix the heat origin. The surviving source relation must be genuinely global/nonlocal. Visual Exploration adds a constructive counterpart: a signed moment-null packet can remove the universal quadratic CUE mean, but only a separately derived arithmetic component outside that moment functional would make the redesign useful.
 
 ## Program consequence
 
-For every candidate, name the source discriminator, source depth/correlation bill, target-selected sector, composed transport map, and final currency. Once a matched control pays the same geometry, attack the exact non-escape statement rather than adding more favorable structure in an orthogonal sector.
+For every candidate, name five objects explicitly: the source information retained before any quotient, the transformation/transport map, the exact destination sector that survives, the final norm/sign/rate/amplitude currency, and the source theorem still required there. Reject both overstrong demands on sectors that the destination map already kills and underpowered enrichments applied after the target information has been discarded.
 
-A representation should be considered progress only if its exact source obligation is demonstrably cheaper or more structured than the theorem it aims to replace.
+A representation counts as progress when it makes the surviving source obligation demonstrably narrower, more source-specific, or structurally cheaper than the original RH-equivalent statement -- not merely when it creates more geometry, nonlinearity, positivity, or spectral language.
 
 ## Counterevidence / boundary
 
-These are different mathematical categories, not one universal inequality. New source identities, matrix-valued relations, or composed normalizations can escape a cited control by changing the load-bearing currency. The synthesis does not assert that one modulus governs all lines.
+The cited lines use different mathematical categories and there is no single universal non-escape inequality. A new global identity, growing relational state, source-forced boundary law, or composed normalization may evade one control by changing the load-bearing information channel. Conversely, narrowing the destination obligation is useful only if the physical/source operator actually satisfies the resulting estimate.
 
 ## Epistemic status
 
-**Supported cross-line principle that the mature routes are limited mainly by quantitative source-selected non-escape through the actual target map, with several generic geometric/transport escapes now exactly closed.**
+**Supported cross-line principle that the central research task is now to preserve and control the exact source information surviving the full quotient/transport/parameter map, with several generic enrichments closed and several sharper destination currencies positively identified.**
 
 ## Falsification criterion
 
-Prove a final theorem in one cited setting while the declared source discriminator has negligible presence in the exact destination budget and no compensating relation, or beat one of the exact matched controls without importing source information outside its hypotheses.
+Produce a final theorem in one cited setting while the declared target-bearing information is absent from the exact destination channel and no compensating source relation exists, or show that one of the certified destination reductions discards information that is actually necessary for the corresponding RH-equivalent criterion.

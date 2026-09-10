@@ -1,33 +1,31 @@
-# MI-014 — The rough zero mode can be reached nonlinearly only by paying a source-correlation bill
+# MI-014 — Centered transverse data cannot recover a discarded principal Möbius mode
 
-**Evidence level:** exact sector protection and nonlinear source expansions through MC-196
+**Evidence level:** exact sector protection, nonlinear source expansions, and centered-profile non-identifiability through MC-199
 
 ## Core intuition
 
-The rough principal Möbius mean is protected from the canonical transverse coordinate systems tested so far, but nonlinear operations reveal a more precise boundary. Pointwise nonlinearities can formally mix frequencies back into the principal sector without creating new arithmetic information; genuinely aggregated nonlinearities can create principal/transverse coupling, but then expose explicit higher source correlations that must be controlled at the growing arithmetic scale.
+The rough principal Möbius mean is not merely hard to reach from the canonical transverse coordinates tested so far. Once the residue data are centered, the principal constant mode has been quotient out: two admissible ternary sources can have exactly the same centered profile and support while carrying different signed principal sums.
 
-Thus “nonlinear” is not itself the missing category. The useful question is whether a nonlinear relation reaches the principal mode **with a cheaper source obligation than the fixed-power cancellation one is trying to prove**.
+No subsequent nonlinear readout can manufacture information absent from its input. A successful nonlinear or multiscale route must therefore retain a source-sensitive principal coordinate before centering, or introduce an independently forced relation that couples such retained information to the transverse sector.
 
 ## Strongest justified principle
 
-MC-185--MC-194 separate centered fluctuations from the rough zero mode and show that characters, CRT transport, additive shells, and the full additive image of a residue vector preserve the relevant sector decomposition. The principal obligation survives those coordinate changes.
+MC-185--MC-194 show that characters, CRT transport, additive shells, and centered residue coordinates preserve the principal/transverse separation. MC-195 demonstrates that a pointwise cubic can algebraically return to frequency zero while remaining Mertens-complete because ternary one-site data have no independent higher polynomial content.
 
-MC-195 then uses `mu^3=mu`. Although the associated cubic transverse triad algebraically returns to frequency zero, the canonical cubic statistic reduces exactly to `m_N(1-3s_N+2m_N^2)` and is therefore Mertens-complete: its smallness is equivalent in scale to the original principal mean. More generally, every one-site function of ternary Möbius data is only quadratic in `1,mu,mu^2`.
-
-MC-196 aggregates before cubing and obtains a genuinely new principal-mode interaction. The exact expansion, however, introduces ordered same-residue pair and triple correlations. At primorial modulus `q=X^{c+o(1)}` these are polynomial-shift correlation sums; generic high-moment or almost-all Chowla information incurs a polynomial `q`-dependent restriction cost and does not automatically deliver the fixed power.
+MC-196--MC-198 show that aggregation before nonlinearity is genuinely richer: same-residue pair/triple interactions survive and centering does not automatically delete the top nonlinear interaction. But their exact source expansions expose growing-modulus correlation obligations. MC-199 then gives the more fundamental quotient theorem: centered profiles are invariant under constant shifts, and explicit matched controls prove the signed principal sum is not identifiable from the full centered data. This applies to arbitrary nonlinear processing, not only to the tested cubic statistics.
 
 ## Program consequence
 
-Admit nonlinear routes only after writing their exact source expansion. Prefer identities in which the dangerous pair/triple terms cancel by algebra, factorization, or cross-scale conservation. Otherwise the task is to prove the required same-residue correlations uniformly in the growing modulus, and that cost must be compared directly with the desired principal estimate.
+Reject any proposed principal-mode recovery whose entire input is a centered residue/transverse quotient. Instead identify the uncentered, inter-site, inter-scale, or factorization datum retained before that quotient, write its exact coupling to the principal sum, and compare its source bill directly with the fixed-power cancellation target. Nonlinearity helps only if it acts before irreversible information loss and does not reintroduce an equally hard correlation theorem.
 
 ## Counterevidence / boundary
 
-MC-196 does not prove that all nonlinear principal couplings are Mertens-complete or source-expensive. A different inter-site identity, a multiscale relation, or a factorization law could cancel the correlation bill. The current no-go applies to the tested pointwise and primorial-cubic mechanisms.
+MC-199 is not a no-go for nonlinear Möbius identities. It only says that the centered quotient alone is insufficient. A relation using uncentered residue masses, several coupled scales, multiplicative factorization, or another source-determined observable can distinguish the matched controls. MC-196--MC-198 also leave open the possibility that some aggregated source identity cancels its pair/triple bill structurally.
 
 ## Epistemic status
 
-**Exact protection of the principal mode under canonical linear coordinates, exact closure of pointwise cubic mixing, and a concrete nonlinear escape whose price is polynomial-shift source correlation; a cheaper source-forced coupling remains open.**
+**Exact information boundary: the rough principal mode is unrecoverable from the complete centered residue profile by any postprocessing; viable coupling must preserve or reintroduce source information before that quotient and still beat the resulting correlation cost.**
 
 ## Falsification criterion
 
-Exhibit a covered canonical linear operation that transfers transverse cancellation into the principal mean, or a nonlinear operation whose exact principal-mode expansion avoids both Mertens-equivalent terms and uncontrolled growing-modulus source correlations while remaining source-forced.
+Produce two sources with identical MC-199 centered data for which a functional of those same centered data nevertheless distinguishes their principal sums, or exhibit a source-forced pre-centering relation whose exact principal-mode expansion avoids both Mertens-equivalent terms and uncontrolled growing-modulus correlations.

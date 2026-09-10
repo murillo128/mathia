@@ -1,31 +1,31 @@
-# MI-006 — The lowest finite-seam pole kills every bare supercritical separated weight
+# MI-006 — Separated propagation changes the endpoint currency to low-output leakage
 
-**Evidence level:** exact positive mass decomposition, Green asymptotics, and lowest-pole obstruction through PF-268
+**Evidence level:** exact seam decomposition, lowest-pole control, and post-propagation leakage reduction through PF-271
 
 ## Core intuition
 
-The finite seam does not inherit the fixed-axis `R>1` smoothing margin in the bare separated endpoint norm. The reason is not a difficult high-mass summation: positivity makes the very first odd mass pole permanent, and its two-index Green asymptotic leaves an order `N^-2` floor on proportional separated blocks.
+The positive lowest finite-seam pole kills a bare supercritical separated weight, but that is not the correct final obstruction once the deterministic far propagation is composed first. Propagation can pay for high output modes exponentially; what it cannot pay for is source energy leaked from high input into output frequencies low enough to remain essentially undamped.
 
-Therefore any successful endpoint argument must perform the normalized Robin/spatial operation before asking for a supercritical weight, so that the lowest-pole contribution is changed or cancelled in the actual composed map.
+The endpoint theorem should therefore ask for one-sided high-to-low spectral leakage control, not global smoothing or graph-domain invariance of the conversion operator.
 
 ## Strongest justified principle
 
-PF-258--PF-260 establish the intrinsic-six tangent and the fixed-axis fractional window. PF-261 expresses the finite seam as a positive odd-mass mixture, and PF-262--PF-267 obtain the fixed-mass asymptotics plus a path identity coupling sharp amplitude and decay uniformly.
+PF-258--PF-268 establish the intrinsic-six tangent, fixed-axis fractional window, positive odd-mass ladder, and the `N^-2` proportional high-high floor from the lowest pole. That floor proves unboundedness if an `R>1` input weight is demanded directly from the bare seam.
 
-PF-268 uses those results adversarially. Since all massive Green terms have the same sign, the lowest pole alone supplies a lower bound of order `N^-2` on large proportional separated blocks. After multiplying the input by `N^R`, a normalized block witness grows like `N^(R-1)`, so the separated bare finite-seam operator is unbounded for every `R>1`. The same holds with the physical `K_s^0` weight and any fixed high-mode cutoff.
+PF-269 shows that this ordering is overstrong: spatial propagation may regularize the output before the endpoint norm is applied. PF-270 reduces the sufficient condition to one-sided graph locality of the conversion. PF-271 sharpens it again. With arbitrarily strong far-leg smoothing, only leakage from a high input block into a sublinear low-output block can survive the propagation penalty; with exponential propagation, the dangerous output window is only logarithmic in the input scale. The proportional high-high seam floor lies outside that window and is therefore not an obstruction to the composed separated map, whereas a high-to-fixed-low mixer remains fatal.
 
 ## Program consequence
 
-Stop trying to recover a strict supercritical margin from the bare mass ladder. Estimate the combined normalized Robin map of PF-257 and the spatially separated Robin--Poisson transport of PF-243 before endpoint weighting. A viable mechanism must explain exactly how that composition removes, cancels, or redistributes the positive lowest-pole floor.
+Estimate the physical Robin/reflection conversion directly in the composed geometry. Prove the required high-input to logarithmic/sublinear-low-output decay in the endpoint normalization, or identify an exact source cancellation that removes this leakage. Do not require full pre-propagation smoothing when the far leg already pays the corresponding modes.
 
 ## Counterevidence / boundary
 
-PF-268 does not rule out the combined normalized Robin transform, separated Poisson propagation, the exact endpoint `R=1`, or boundedness for `R<1`. The obstruction is specific to demanding `R>1` from the unnormalized finite-seam crossover on the separated cone.
+PF-271 is a reduction of the transport obligation, not a proof that the physical conversion satisfies it. Low-output leakage may still be too large. The exact dangerous window depends on the propagation law and endpoint weight, and a different far leg can change the required scale. PF-268 remains decisive for the bare seam problem even though its proportional high-high floor is no longer decisive after separation.
 
 ## Epistemic status
 
-**Exact route closure for bare finite-seam supercritical weighting; the remaining opportunity lies in structure applied before the endpoint weight, not in sharper mass summation.**
+**Exact transport refinement: after separated propagation, the supercritical endpoint problem is governed by high-to-low spectral leakage of the conversion operator, with logarithmic output windows under exponential damping; physical leakage control remains open.**
 
 ## Falsification criterion
 
-Produce a bounded `R>1` separated bare finite-seam operator under the same PF-268 definitions, or show that one of the positivity/asymptotic hypotheses used to obtain the lowest-pole block floor fails for the physical seam.
+Show that the composed PF-271 map can be unbounded while every stated high-to-low leakage bound holds, or prove that the physical Robin/reflection conversion necessarily violates the required logarithmic-window decay under the same separation geometry.
