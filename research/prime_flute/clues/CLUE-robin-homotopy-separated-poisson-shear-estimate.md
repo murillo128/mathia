@@ -19,6 +19,7 @@ based_on:
   - research/prime_flute/findings/PF-273-seam-square-root-is-a-complete-bernstein-green-continuum-with-mass-one-edge.md
   - research/prime_flute/findings/PF-274-fixed-axis-massive-jacobi-chain-is-a-squared-continuous-hahn-operator.md
   - research/prime_flute/findings/PF-275-mass-one-continuum-forbids-supercritical-raw-source-fixed-row-leakage.md
+  - research/prime_flute/findings/PF-276-robin-normalization-is-inverse-positive-and-cannot-zero-the-fixed-axis-threshold-moment.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
 
@@ -52,15 +53,21 @@ PF-275 turns that structural edge into an exact leakage obstruction without requ
 N^q\|P_iX_wE_N\|\to\infty.
 \]
 
-The proof chooses, after `q` is specified, one sufficiently small **fixed** positive mass slice from PF-273's continuum and uses Green positivity plus PF-262's fixed-source tail. Thus the raw square-root source already fails every supercritical PF-271 exponent, even on a fixed output row. A sharper `t\log N=O(1)` asymptotic may still determine the exact critical law, but it is no longer needed to decide whether `X_w` itself has an `R>1` margin.
-
-PF-257 identifies the actual fixed-axis injection as
+Thus the raw square-root source already fails every supercritical PF-271 exponent even on a fixed output row. PF-257 identifies the actual fixed-axis injection as
 
 \[
 B_w=(I+\mathcal R^0_{s,r})^{-1}X_w.
 \]
 
-Therefore the **entire** possible supercritical gain must now come from the noncommuting rational normalization. PF-274 supplies an exact continuous-Hahn transform for the underlying fixed-axis functional calculus, so the remaining question can be posed as a threshold-cancellation problem rather than as generic operator smoothing.
+PF-276 now removes the simplest possible normalization escape. In each parity chain `\mathcal R^0_{s,r}` is a positive operator with strictly negative off-diagonal corridor matrix entries, so `(I+\mathcal R^0_{s,r})^{-1}` is positivity preserving and its basis columns are strictly positive. Combining this with PF-251's exact generalized zero mode gives an exact conserved weighted mass for the normalized column. For
+
+\[
+z_i:=A^{-1/4}(I+\mathcal R^0_{s,r})^{-1}f_i,
+\]
+
+the zero-mode moment is finite and strictly nonzero; PF-274 identifies the corresponding absolutely convergent corridor-coefficient functional with nonzero values at both nearest branch points `\xi=\pm i`, up to the fixed odd-parity sign.
+
+Therefore the normalization cannot gain its missing exponent by manufacturing an **exact threshold zero through coefficient cancellation**. The remaining fixed-axis question is whether that nonzero threshold functional really controls the large-mode coefficient of `g_w(L)z_i` with the expected mass-one power, or whether some subtler analytic mechanism invalidates the naive branch-to-coefficient transfer.
 
 ## Research question
 
@@ -80,15 +87,15 @@ suppress the mass-one edge strongly enough that, for some fixed `\theta<1`, `R>1
 
 uniformly in the fixed-axis parameter range needed by the canonical tail? If the following separated propagation is exactly `e^{-dK}`, use PF-271's logarithmic output window.
 
-The key discriminator is now sharper than in PF-273. It is not enough for `(I+\mathcal R^0_{s,r})^{-1}` to be bounded, positive, or mildly local: PF-275 proves that `X_w` has no hidden strict exponent to preserve. The normalization must specifically remove or cancel the threshold contribution responsible for the fixed-row `q\downarrow1` obstruction.
+The possible mechanism is now narrower than before PF-276. PF-275 proves that `X_w` has no hidden strict exponent to preserve, and PF-276 proves that the normalized source vector does not acquire an exact zero in the natural mass-one threshold coefficient functional. Any surviving strict exponent must therefore come from a more subtle analytic cancellation in the continuous-Hahn coefficient asymptotics, not from ordinary sign cancellation of the normalized corridor coefficients.
 
 If the fixed-axis normalized source passes, only then transport the one-sided leakage estimate through PF-255/PF-256 to the actual corridor and use PF-254/PF-270 to keep reflection conversion on the propagated side of the factorization.
 
 ## Why it may matter
 
-A positive answer to (1) would identify a genuinely nontrivial Robin mechanism: the nonlinear normalization would create spectral locality that is absent from the raw square-root Dirichlet-to-Neumann source. The remaining work would then become geometric/uniform — transfer to the actual `K_a` corridor, control canonical-tail and homotopy constants, and pay later reflection/output derivatives with positive separation.
+A positive answer to (1) would identify a genuinely nontrivial Robin mechanism: despite a nonzero mass-one threshold moment, the full continuous-Hahn asymptotic would have to suppress the dangerous high-to-low channel by some structure not visible in the raw source or in coefficientwise positivity. The remaining work would then become geometric/uniform — transfer to the actual `K_a` corridor, control canonical-tail and homotopy constants, and pay later reflection/output derivatives with positive separation.
 
-A negative answer is equally decisive. PF-275 shows that the mass-one continuum is not merely suggestive; it already produces an exact fixed-row obstruction for `X_w`. If one nonzero threshold coefficient survives the normalization, the PF-271 route fails before sheared-coordinate, hypercycle-transport, or global reassembly issues enter.
+A negative answer is now especially plausible and equally decisive. PF-275 supplies the raw mass-one obstruction, while PF-276 shows that the Robin inverse cannot eliminate the natural threshold moment by sign cancellation. If the nonzero moment is the leading Darboux/Green coefficient, the PF-271 route fails before sheared-coordinate, hypercycle-transport, or global reassembly issues enter.
 
 ## Decisive test
 
@@ -102,25 +109,25 @@ z_i:=A^{-1/4}(I+\mathcal R^0_{s,r})^{-1}f_i.
 \tag{2}
 \]
 
-Use PF-274's continuous-Hahn representation, or an equivalent Green formulation, to identify the coefficient of the nearest `\xi=\pm i` / `\mu=1` threshold contribution for the special vector `z_i`. PF-275 shows that the corresponding coefficient is nonzero for an unnormalized basis row; the question is whether the Robin-normalized `z_i` acquires an exact zero or sufficient vanishing at that threshold.
+PF-276 proves that the absolutely convergent PF-274 threshold coefficient functional of `z_i` at `\xi=\pm i` is nonzero. The decisive task is therefore to establish, or refute, the analytic bridge from that nonzero functional to the large-degree continuous-Hahn coefficients of `g_w(L)z_i`.
 
-There are two decisive outcomes:
+Use PF-274's exact equal-parameter continuous-Hahn representation to prove a local analytic-continuation and Darboux/contour theorem around `\xi=\pm i`, or an equivalent Green/Tauberian statement, strong enough to determine the fixed-row leakage exponent. The useful outcomes are now:
 
-- **survival:** prove that the threshold coefficient is nonzero for at least one fixed row. Then a PF-275-type fixed-mass-slice lower bound should propagate through the normalization and forbid every PF-271-compatible `R>1` estimate;
-- **cancellation:** prove that the normalized source vector has a threshold zero of sufficient order, and convert that zero into a strict high-to-low block exponent on one PF-271 window.
+- **threshold transfer:** show that PF-276's nonzero coefficient functional produces a nonzero mass-one leading term, or at least a PF-275-style lower bound forbidding every fixed-row exponent `q>1`; this negatively resolves the fixed-axis PF-271 route;
+- **transfer failure:** prove that the nonzero threshold functional does not control the large-degree coefficient and identify the exact analytic reason. Any surviving strict exponent must then be traced to that mechanism rather than described as a threshold zero.
 
-Do not first spend effort deriving a sharp raw-`X_w` boundary-layer asymptotic merely to test supercritical smoothing; PF-275 has already ruled that out. Such an asymptotic is useful only if it is needed to quantify the normalized cancellation. Do not return to PF-268's proportional block or reprove PF-272's naked-seam estimate, and do not split off a polar partial isometry.
+Do not return to PF-268's proportional block, reprove PF-272's naked-seam estimate, or derive a sharper raw-`X_w` asymptotic unless it is needed inside the normalized branch-to-coefficient theorem. Do not split off a polar partial isometry.
 
 If the fixed-axis test passes, carry only the required one-sided leakage through PF-255/PF-256 and the exact PF-254 factor ordering. Track `s`, corridor index, and homotopy parameter explicitly rather than identifying fixed-axis and actual spectral projectors. Reflection cycles already containing positive longitudinal propagation belong to the paid side of the decomposition.
 
 ## Evidence boundary
 
-PF-243 certifies the fixed-seam variational derivative and the implication from separated source-to-bulk estimates to the local trace bound. PF-269--PF-271 reduce the necessary pre-propagation requirement to deep low-output leakage. PF-272 proves the naked fixed-axis relative seam has a strict sublinear exponent at every fixed finite seam scale. PF-273 proves that the square-root factor entering `X_w` is instead a positive complete-Bernstein Green continuum with support reaching the mass-one edge. PF-274 gives the exact continuous-Hahn spectral representation. PF-275 proves that the **raw source `X_w` itself fails every exponent `q>1` already on a fixed output row**.
+PF-243 certifies the fixed-seam variational derivative and the implication from separated source-to-bulk estimates to the local trace bound. PF-269--PF-271 reduce the necessary pre-propagation requirement to deep low-output leakage. PF-272 proves the naked fixed-axis relative seam has a strict sublinear exponent at every fixed finite seam scale. PF-273 proves that the square-root factor entering `X_w` is instead a positive complete-Bernstein Green continuum with support reaching the mass-one edge. PF-274 gives the exact continuous-Hahn spectral representation. PF-275 proves that the **raw source `X_w` itself fails every exponent `q>1` already on a fixed output row**. PF-276 proves that the Robin-normalized source column retains a finite strictly positive generalized zero-mode moment and a nonzero corridor-coefficient functional at `\xi=\pm i`; exact threshold cancellation by coefficient signs is therefore excluded.
 
-What is not established is any corresponding obstruction or positive estimate for `B_w`, any theorem forcing or excluding a threshold zero for `z_i`, uniformity in the canonical corridor parameters, preservation under actual `K_a` transport, or the final uniform far-leg elliptic estimate. PF-275 does not prove a sharp `N^{-1}` asymptotic and does not claim that the noncommuting normalization is incapable of cancellation.
+What is not established is the Darboux/contour or Green theorem converting that nonzero threshold functional into a sharp large-mode asymptotic for `g_w(L)z_i`, any corresponding obstruction or positive estimate for `B_w`, uniformity in the canonical corridor parameters, preservation under actual `K_a` transport, or the final uniform far-leg elliptic estimate. PF-276 does not claim that a nonzero branch-point coefficient functional automatically determines continuous-Hahn coefficient asymptotics.
 
 No full weak-trace theorem, physical `P/H` recoupling theorem, finite-pant theorem, neighboring-cell theorem, scattering/determinant result, prime/control separation, zeta-zero statement, or RH consequence is established by this clue.
 
 ## Research disposition
 
-The clue remains `accepted`, with a narrower and more falsifiable fixed-axis target. PF-275 removes raw square-root smoothing as a possible source of the required margin. The next discriminator is whether `(I+\mathcal R^0_{s,r})^{-1}` creates an exact threshold cancellation in the special normalized source vector (2); without such a mechanism, the mass-one fixed-row obstruction survives and the PF-271 route closes.
+The clue remains `accepted`, but its fixed-axis escape route is narrower. PF-275 removes raw square-root smoothing as a source of supercritical margin, and PF-276 removes an exact threshold zero generated by the noncommuting Robin inverse. The next discriminator is solely the analytic branch-to-coefficient transfer for `g_w(L)z_i`: if the nonzero PF-276 threshold functional survives as the mass-one leading term, the PF-271 route closes; if it does not, the failure mechanism must be identified explicitly before any positive smoothing claim is made.
