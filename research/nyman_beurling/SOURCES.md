@@ -28,6 +28,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Kaisa Matomäki, Maksym Radziwiłł, Terence Tao, *Sign patterns of the Liouville and Möbius functions*, Forum Math. Sigma 4 (2016), e14, DOI `10.1017/fms.2016.6`, [arXiv:1509.01545](https://arxiv.org/abs/1509.01545). Role: proves positive lower natural density for every two-term value pattern `(mu(n),mu(n+1))`; `NB-027` uses the resulting positive-density same-sign nonzero pairs to turn Möbius coefficient locking into logarithmic coefficient mass transverse to an adjacent-difference matching.
 
+## Classical Möbius summatory cancellation
+
+- Harold Davenport, *Multiplicative Number Theory*, 3rd ed., revised by Hugh L. Montgomery, Graduate Texts in Mathematics 74, Springer, 2000, ISBN `978-0-387-95097-6`. Role: standard classical source for prime-number-theorem consequences for the Möbius summatory function; `NB-028` uses only the unconditional consequence `M(x)=o(x)`, not an RH-strength Mertens bound.
+
 ## Expansion rule
 
 Add a primary source when a canonical finding depends on an exact quantitative approximation theorem, Gram asymptotic, dual formulation, best-approximation bound, or other specialized external estimate. Do not turn `SOURCES.md` into a bibliography of every Nyman–Beurling paper.
