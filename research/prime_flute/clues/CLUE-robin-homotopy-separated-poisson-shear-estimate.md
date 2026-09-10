@@ -12,6 +12,7 @@ based_on:
   - research/prime_flute/findings/PF-243-fixed-seam-robin-homotopy-reduces-high-high-shear-to-one-sided-separated-poisson-smoothing.md
   - research/prime_flute/findings/PF-269-pre-propagation-robin-smoothing-is-an-overstrong-gate.md
   - research/prime_flute/findings/PF-270-post-propagation-smoothing-needs-only-one-sided-graph-locality.md
+  - research/prime_flute/findings/PF-271-separated-propagation-only-needs-sublinear-low-output-leakage.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
 
@@ -19,110 +20,88 @@ based_on:
 
 ## Observation
 
-PF-240 needs more than one total scaled boundary derivative, with an `O(beta)` constant, for the actual-seam-normalized shear difference. PF-241 removes shrinking-width loss of interior ellipticity, but leaves the Hardy ends, growing strip length, and noncommuting seam normalization. PF-242 adds exact exponential locality for the direct hypercycle-shear multiplier in Pöschl--Teller mode index, but explicitly does not transfer that locality through the full Schur map.
+PF-243 reconstructs the fixed-seam shear homotopy at the form level. The normalized Schur derivative is an exact Alessandrini-type pairing with one explicit shear multiplier and two seam-normalized Robin Poisson solutions. Partitioning in the crossing coordinate `X` shows that, term by term, all Schatten regularity may be charged to the Poisson leg observed a fixed positive distance from its forcing boundary.
 
-PF-243 independently reconstructs the fixed-seam homotopy at the form level. The normalized Schur derivative is exactly an Alessandrini-type pairing with one explicit shear multiplier and two seam-normalized Robin Poisson solutions. An exact partition in the crossing coordinate `X` shows that the full high-high difference does not need a symmetric weighted estimate on both boundary legs at once: on each partition piece all Schatten regularity may be charged to the Poisson leg observed a fixed positive distance from its forcing boundary.
+PF-269 then removes the false requirement that the normalized Robin boundary injection smooth before propagation. PF-270 gives a useful sufficient replacement: if the complete conversion before positive separation obeys `K_a^{-q}BK_a^q\in\mathcal B` for some `q>1`, and the remaining far leg pays the same derivatives, then the composition supplies every `1<R\le q` required by PF-243.
 
-PF-269 then removes an overstrong intermediate interpretation of that target. The boundary injection itself need not gain a positive transverse derivative before propagation: the exact matched seam has energy-normalized injection `B=I/2`, so `BK^R` is unbounded for every `R>0`, while its separated Poisson leg is smoothing of every order.
-
-PF-270 sharpens the surviving requirement further. If the complete unsmoothed boundary conversion before the designated positive separation satisfies the one-sided graph estimate
+PF-271 now shows that even this full graph-domain condition is stronger than necessary. If the far leg pays arbitrary polynomial output derivatives, then for a target `R>1` it is enough to control high input near `\Lambda` only when it leaks into an output window below `\Lambda^\theta` for one `\theta<1`:
 
 \[
-K_a^{-q}B K_a^q\in\mathcal B
+\left\|
+\mathbf 1_{[\kappa,\Lambda^\theta]}(K_a)
+B_{\rm unsmoothed}
+\mathbf 1_{[\Lambda,2\Lambda)}(K_a)
+\right\|
+\lesssim \Lambda^{-R-\varepsilon}.
 \]
 
-for some `q>1`, and the remaining far propagation `P_far` satisfies `P_far K_a^q\in\mathcal B`, then
-
-\[
-P_{\rm far}BK_a^R
-=(P_{\rm far}K_a^q)(K_a^{-q}BK_a^q)K_a^{R-q}
-\]
-
-is bounded for every `1<R<=q`. Thus the live issue is now **high-input-to-low-output graph locality plus positive separation**, not standalone smoothing of the Robin conversion.
+When the remaining propagation contains an exact exponential spectral factor, the dangerous output window shrinks further to order `\log\Lambda`. PF-271 also proves the matching necessary low-window decay for an exact `e^{-dK_a}` composition. Thus proportional high-high conversion is no longer the live discriminator: only sufficiently deep high-to-low leakage can outrun the later separation.
 
 ## Research question
 
-With exactly the PF-238 actual complete-lift seam `Q=diag(Q_1,Q_2)`, let `Lambda_t` be the corridor Dirichlet-to-Neumann map obtained by replacing `b` with `t b`, for `0<=t<=1`, and set
+With exactly the PF-238 actual complete-lift seam `Q=diag(Q_1,Q_2)`, let `\Lambda_t` be the corridor Dirichlet-to-Neumann map obtained by replacing the shear coefficient `b` with `tb`, `0\le t\le1`, and set
 
 \[
-D_t=(I+Q^{-1/2}\Lambda_tQ^{-1/2})^{-1}
-    =Q^{1/2}(\Lambda_t+Q)^{-1}Q^{1/2}.
+D_t=Q^{1/2}(\Lambda_t+Q)^{-1}Q^{1/2}.
 \]
 
-PF-243 proves the fixed-seam variational derivative and the exact localized factorization. Can the four designated far source-to-bulk energy legs be factored or estimated so that **all spectral conversion before the paid positive separation** has a uniform one-sided graph-locality exponent `q>1`, while the separated remainder pays the same `q` transverse derivatives?
+PF-243 proves the fixed-seam variational derivative and its localized factorization. Can each of its four designated far source-to-bulk energy legs be cut **after the last unsmoothed operator capable of changing `K_a` scale** so that:
 
-A sufficient form, when an exact factorization `T_far=P_far B_unsmoothed` is available, is
+1. the remaining genuinely separated propagation pays arbitrarily high output derivatives uniformly in `s`, the corridor index, and `t`; and
+2. the complete preceding Robin/reflection/density/congruence conversion has `\Lambda^{-R-\varepsilon}` leakage from input shell `[\Lambda,2\Lambda)` into output below `\Lambda^\theta`, for some `R>1`, `\varepsilon>0`, and one fixed `\theta<1`?
 
-\[
-\sup_{s,t}\|K_a^{-q}B_{\rm unsmoothed}K_a^q\|<\infty,
-\qquad
-\sup_{s,t}\|P_{\rm far}K_a^q\|<\infty
-\]
+If the last factor after spectral conversion is an exact `e^{-dK_a}` propagator, replace the sublinear target by the sharper logarithmic window from PF-271. Full one-sided graph locality with `q>1` remains a valid sufficient route, but it is no longer the primary proof obligation.
 
-for one `q>1`. The especially natural target is `q=2`, because PF-255/PF-256 already prove two-derivative graph locality for the hypercycle/corridor coordinate transports. PF-270 then supplies any `1<R<2` needed by PF-243 without requiring `B_unsmoothed K_a^R` to be bounded by itself.
-
-Equivalently, after choosing `chi_L+chi_R=1` with `chi_L` separated from boundary 2 and `chi_R` separated from boundary 1, the final target remains the PF-243 estimates
+Equivalently, after choosing `\chi_L+\chi_R=1` as in PF-243, the final target remains
 
 \[
 \|X_{t,2}^{L}K_a^RP_Z\|+\|Y_{t,2}^{L}K_a^RP_Z\|
 +\|X_{t,1}^{R}K_a^RP_Z\|+\|Y_{t,1}^{R}K_a^RP_Z\|
-\le C_{R,Z},
+\le C_{R,Z}
 \]
 
-for `P_Z=1_(Z,infinity)(K_a)`, with `C_{R,Z}` independent of `s`, the corridor index, and `t`. PF-243 shows that this is sufficient for
-
-\[
-\|P_Z(D_1-D_0)_{21}P_Z\|_1
-\le C_{R,Z}\frac{\beta}{s}.
-\]
-
-The point of PF-270 is that these composed estimates need not be proved by assigning positive Sobolev gain to the boundary injection itself.
+for one `R>1`, with `C_{R,Z}` uniform on the canonical tail. PF-243 then gives the `O(\beta/s)` high-high trace bound. PF-271 changes only the intermediate currency by which those composed estimates should be attacked.
 
 ## Why it may matter
 
-A positive result would turn the entire remaining local shear correction into an absolutely trace-summable error after the reciprocal-prime weight, using PF-239 and PF-243. The immediate downstream test would then be physical `P/H` recoupling and finite-pant completion, not another generic coefficient or full-Schur regularity lemma.
+A positive result would close the remaining local high-high shear correction and hand the smooth route to physical `P/H` recoupling and finite-pant completion. More immediately, PF-271 avoids spending effort on spectral sectors that positive separation already controls.
 
-The graph-local formulation also makes the negative target sharper. PF-268's proportional high-high finite-seam tails do not by themselves kill the route, because output that remains at a comparable high transverse scale can still be paid for by positive longitudinal propagation. A decisive obstruction must instead exhibit **genuine high-to-low conversion before the separated leg**, strong enough that no one-sided graph exponent `q>1` survives uniformly.
+This matters because PF-268's exact finite-seam obstruction occurs on proportional blocks `i\asymp j\asymp N`. Such blocks lie above every sublinear output window `N^\theta` and therefore do not threaten the PF-271 criterion. By contrast, PF-244's abstract bad seam sends arbitrarily high input to a fixed low output mode and fails the necessary logarithmic/fixed-window leakage condition. The revised target separates these two geometries exactly.
+
+The fixed-axis Green chain PF-264--PF-267 is therefore relevant in a more favorable regime than before: as output/input ratio tends to zero. Its proportional-ray `N^{-2}` floor need not be repaired. What remains is to insert the **combined** Robin/reflection conversion honestly and quantify only its leakage into a strongly lower spectral sector.
 
 ## Decisive test
 
-Freeze PF-243's exact form identity rather than re-deriving a formal inverse derivative. Work in PF-241's long-strip coordinates with
+Freeze PF-243's exact form identity and work in PF-241's long-strip coordinates with the actual PF-238 seam fixed throughout. For each of the four far legs, inventory every Robin source factor, reflection, mass/unitary transport, density/congruence correction, or shear-dependent conversion that occurs before the designated positive source-to-observation separation.
+
+Place the factorization boundary immediately after the last such conversion. First prove arbitrary-order output smoothing for the remainder. Then, for dyadic input shells `E_\Lambda=\mathbf1_{[\Lambda,2\Lambda)}(K_a)`, estimate only
 
 \[
-\mathcal T_s=A_s(\partial_Y+C_s),
+F_{\Lambda,\theta}B_{\rm unsmoothed}E_\Lambda,
 \qquad
-q_t[u]=\int_{\Omega_s}
-\bigl(|u_X|^2+|\mathcal T_su-t\mathsf b_su_X|^2+V_s|u|^2\bigr),
+F_{\Lambda,\theta}=\mathbf1_{[\kappa,\Lambda^\theta]}(K_a),
 \]
 
-and keep the actual PF-238 seam fixed throughout. Use the exact normalized Robin Poisson solutions and the `X`-partition from PF-243.
+for one small fixed `\theta<1`. The target is operator-norm decay `O(\Lambda^{-R-\varepsilon})` for some `R>1`. If the remainder has exact exponential spectral damping, use `F_{\Lambda}=\mathbf1_{[\kappa,A\log\Lambda]}(K_a)` instead and calibrate `A` against the propagation distance as in PF-271.
 
-For each of the four far legs, identify every boundary conversion, reflection, density/congruence correction, or other operator that acts before the fixed positive source-to-observation separation. Do not test the naked Robin injection in isolation if later unsmoothed factors can still change transverse scale. Either package those operators into one `B_unsmoothed` and prove
+Use PF-264--PF-267 on the fixed-axis finite seam in this genuinely high-to-low regime before attempting a full graph conjugation. PF-255/PF-256's `q=2` graph locality for the coordinate transports remains available and can still be used where it is cheap; it need not be promoted into a global condition on the entire pre-separation Robin conversion.
 
-\[
-K_a^{-q}B_{\rm unsmoothed}K_a^q\in\mathcal B
-\]
+Carry the original boundary forcing through both the mass conjugation and unitary dilation. Do not replace the transported forcing by the square root of a congruent seam form. Keep low-frequency excursions generated inside the Poisson solution. The relevant orientation is always high input to low output.
 
-uniformly for some `q>1`, or prove an equivalent high-input-to-low-output block estimate directly for the complete pre-separation conversion. In parallel prove that the remaining far propagation pays `q` output derivatives, `P_far K_a^q\in\mathcal B`. The `q=2` case is the first target because it matches the already-established PF-255/PF-256 transport regularity.
+Calibrate against three exact cases. The matched seam of PF-269 shows that no standalone boundary smoothing is necessary. PF-244 must fail the revised leakage criterion because its high input reaches a fixed low mode. PF-268 must *not* count as a failure merely because proportional high-high blocks have an `N^{-2}` floor; those blocks are paid by the far leg under the PF-271 decomposition.
 
-Carry the original boundary forcing through both the mass conjugation and the unitary dilation. Square roots do not commute with a nonunitary congruence, and PF-238 supplies only one-sided seam domination. Do not replace the transported forcing by the square root of a congruent seam form without proving the correction.
+A route-level negative result must now exhibit a canonical sequence whose complete pre-separation conversion puts enough input-shell mass below `\Lambda^\theta` (or below the logarithmic window in the exponential case) to violate every possible `R>1` leakage estimate. Failure of full graph locality without such deep leakage is no longer decisive.
 
-Keep low-frequency excursions generated inside the Poisson solution. Projecting the boundary input high does not make the whole bulk solution high. The one-sided conjugation orientation matters: `K_a^{-q}BK_a^q` controls dangerous high-input-to-low-output conversion, while `K_a^qBK_a^{-q}` controls the wrong direction.
-
-Check `b=0` and the exactly separated diagonal corridor as calibrations. PF-242 should be used only where its exact hypothesis applies: it controls multiplication by the direct shear coefficient, not the Robin solution map. PF-269's matched seam `B=I/2` is the positive calibration for graph locality without standalone smoothing; PF-244 is the negative calibration whose high-to-fixed-low mixer violates every `q>0` one-sided graph bound.
-
-A meaningful obstruction is a canonical sequence of normalized high-frequency or endpoint-escaping boundary data whose pre-separation conversion retains order-one mass in sufficiently low `K_a` output channels that the subsequent fixed positive separation cannot absorb one `K_a^R` weight for any `R>1`.
-
-The method-level prior-art boundaries remain Isaev--Novikov, *Stability estimates for determination of potential from the impedance boundary map*, arXiv:1112.3728 (Robin-map integral identities), Große--Nistor, *Uniform Shapiro-Lopatinski conditions and boundary value problems on manifolds with bounded geometry*, Potential Analysis 53 (2020), 407--447, DOI `10.1007/s11118-019-09774-y`, arXiv:1703.07228 (uniform Robin boundary regularity), and the Davies--Gaffney/off-diagonal functional-calculus literature already audited in PF-260. None directly supplies the required actual-seam one-sided graph estimate in the growing long-strip/Hardy geometry.
+The method-level prior-art boundary includes Jaffard's and Gröchenig--Klotz's classical theories of globally localized/almost-diagonal matrices, as audited in PF-271, together with the Robin-map and Davies--Gaffney literature already audited in PF-243/PF-260. None supplies the actual Prime-Flute low-output leakage estimate or the required uniform sheared far-leg theorem.
 
 ## Evidence boundary
 
-PF-243 certifies the fixed-seam variational derivative, localized bulk factorization, and the implication from its four separated `R>1` estimates to an `O(beta/s)` trace bound. PF-269 proves that standalone positive-order smoothing of the normalized boundary injection is not necessary. PF-270 proves the abstract graph-locality/propagation factorization and the associated `(M/N)^q` high-to-low block bound.
+PF-243 certifies the fixed-seam variational derivative, localized bulk factorization, and the implication from four separated `R>1` estimates to an `O(\beta/s)` trace bound. PF-269 proves that standalone positive-order smoothing of the normalized boundary injection is unnecessary. PF-270 proves that one-sided graph locality plus matching far smoothing is sufficient. PF-271 proves a strictly weaker dyadic criterion: arbitrary-order far smoothing only needs control of sublinear low-output leakage, while exact exponential propagation reduces the dangerous window to logarithmic size and forces a corresponding necessary leakage bound.
 
-What is **not** established is that the actual PF-243 far legs admit a factorization with `q>1`, that the complete unsmoothed actual Robin/reflection conversion preserves `Dom(K_a^q)`, or that the separated sheared/Hardy propagation pays the same `q` uniformly. PF-241's strong ellipticity, PF-242's coefficient locality, and PF-238's one-sided seam domination separately do not prove those statements.
+What is **not** established is that the actual PF-243 conversion satisfies the PF-271 leakage estimate, that the fully sheared/Hardy far leg pays arbitrary output derivatives uniformly, or that the fixed-axis Green estimates survive the complete Robin/reflection algebra with the required uniform constants. No claim is made that full graph locality is false; it is simply no longer required if the weaker composition-adapted estimates can be proved.
 
 No full weak-trace theorem, finite-pant theorem, physical `P/H` recoupling theorem, neighboring-cell theorem, scattering statement, determinant/resonance result, prime/clone separation, zeta-zero statement, or RH consequence is established by accepting this clue.
 
 ## Research disposition
 
-The clue remains `accepted`. PF-243 reduced the shear problem to four one-sided far Robin-Poisson estimates; PF-269 removed the false requirement that the boundary injection itself gain derivatives; PF-270 now identifies a strictly weaker sufficient currency. The next load-bearing question is whether the **complete actual pre-separation boundary conversion** has uniform one-sided graph locality of some order `q>1`—preferably `q=2`—and whether the remaining far propagation pays the corresponding output derivatives. A positive answer would supply the required `R>1` range without proving any standalone Robin smoothing theorem.
+The clue remains `accepted`, but its next proof obligation is narrowed by PF-271. The preferred discriminator is now **deep high-to-low leakage after the last unsmoothed conversion**, measured only below a sublinear spectral window and paired with arbitrary-order smoothing of the genuinely separated remainder. Full `K_a^{-q}BK_a^q` graph locality remains a sufficient fallback, not the default target. A positive leakage/far-propagation pair for one `R>1` closes the PF-243 high-high shear gate; a meaningful negative must fail the weaker PF-271 criterion rather than merely exhibit proportional high-high tails or loss of global graph invariance.
