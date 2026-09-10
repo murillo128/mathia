@@ -24,6 +24,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Kevin Ford, *The distribution of integers with a divisor in a given interval*, Ann. of Math. (2) 168 (2008), 367–433, DOI `10.4007/annals.2008.168.367`, [journal version](https://annals.math.princeton.edu/2008/168-2/p01), [arXiv:math/0401223](https://arxiv.org/abs/math/0401223). Role: Corollary 3 gives the order of magnitude of the number of distinct entries in an `N x N` multiplication table; `NB-016` uses it after an exact quotient-frame identification to quantify the rank sparsity of the compressed Nyman enrichment operator.
 
+## Möbius local-pattern input
+
+- Kaisa Matomäki, Maksym Radziwiłł, Terence Tao, *Sign patterns of the Liouville and Möbius functions*, Forum Math. Sigma 4 (2016), e14, DOI `10.1017/fms.2016.6`, [arXiv:1509.01545](https://arxiv.org/abs/1509.01545). Role: proves positive lower natural density for every two-term value pattern `(mu(n),mu(n+1))`; `NB-027` uses the resulting positive-density same-sign nonzero pairs to turn Möbius coefficient locking into logarithmic coefficient mass transverse to an adjacent-difference matching.
+
 ## Expansion rule
 
 Add a primary source when a canonical finding depends on an exact quantitative approximation theorem, Gram asymptotic, dual formulation, best-approximation bound, or other specialized external estimate. Do not turn `SOURCES.md` into a bibliography of every Nyman–Beurling paper.
