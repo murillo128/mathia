@@ -1,0 +1,348 @@
+# NB-030 — low-Rayleigh full-adjacent directions can remain maximally target-bearing
+
+**Status:** `EXACT-DERIVED + TARGET-SELECTED-ADJACENT-PROJECTION + LOW-RAYLEIGH-CLOSURE-BRANCH + WHITENED-TARGET-LOADING + NEGATIVE/SPECTRAL-NUISANCE-BOUNDARY`. `NB-025`--`NB-026` show that local adjacent differences create a large universal supply of low-Rayleigh directions with small **Euclidean coefficient target loading**. `NB-029` then shows that the unrestricted adjacent family has the full Nyman closure. The remaining ambiguity is whether adding a low-Rayleigh restriction is enough to recover a genuinely target-poor nuisance sector. It is not, if the restriction uses only the Rayleigh quotient together with the raw coefficient target functional.
+
+Let
+
+\[
+V_N:=\operatorname{span}(g_2,\ldots,g_N),
+\qquad
+W_N:=\operatorname{span}(g_2-g_3,\ldots,g_{N-1}-g_N),
+\tag{1}
+\]
+
+and define the two best-approximation distances
+
+\[
+d_N:=\operatorname{dist}(e,V_N),
+\qquad
+\delta_N:=\operatorname{dist}(e,W_N).
+\tag{2}
+\]
+
+Write
+
+\[
+w_N:=P_{W_N}e
+=\sum_{n=2}^N c_{N,n}g_n.
+\tag{3}
+\]
+
+Because the adjacent path differences span exactly the coefficient hyperplane of zero total sum,
+
+\[
+\boxed{\sum_{n=2}^N c_{N,n}=0.}
+\tag{4}
+\]
+
+Let `s_n=||g_n||`, `phi_n=g_n/s_n`, let `widetilde G_N` be the normalized canonical Gram matrix, and put
+
+\[
+\eta_{N,n}:=c_{N,n}s_n,
+\qquad
+w_N=\sum_{n=2}^N\eta_{N,n}\phi_n.
+\tag{5}
+\]
+
+Then there are absolute constants `c,C>0` such that, with
+
+\[
+X_N:=\left\lfloor\min\left\{N,\frac{c}{\delta_N}\right\}\right\rfloor,
+\tag{6}
+\]
+
+whenever `X_N>=C`,
+
+\[
+\boxed{\|\eta_N\|_2^2\ge c\log X_N.}
+\tag{7}
+\]
+
+Since `w_N` is the orthogonal projection of the unit target onto `W_N`,
+
+\[
+\eta_N^*\widetilde G_N\eta_N
+=\|w_N\|^2
+=1-\delta_N^2.
+\tag{8}
+\]
+
+Hence its normalized-Gram Rayleigh quotient satisfies
+
+\[
+\boxed{
+\mathcal R_N^{\mathrm{adj}}
+:=\frac{\eta_N^*\widetilde G_N\eta_N}{\|\eta_N\|_2^2}
+\le\frac{C}{\log X_N}.
+}
+\tag{9}
+\]
+
+At the same time, if `u_N=eta_N/||eta_N||_2`, then the raw coefficient target loading tends to zero on every closure subsequence:
+
+\[
+\boxed{
+|\widetilde b_N^*u_N|
+=\frac{1-\delta_N^2}{\|\eta_N\|_2}
+\le\frac{C}{\sqrt{\log X_N}}.
+}
+\tag{10}
+\]
+
+Nevertheless the Hilbert-normalized image is strongly target-aligned. In fact the coordinate-invariant ratio
+
+\[
+\Theta_N(x)
+:=\frac{|\widetilde b_N^*x|^2}{x^*\widetilde G_Nx}
+=\frac{|\langle e,T_Nx\rangle|^2}{\|T_Nx\|^2},
+\tag{11}
+\]
+
+where `T_Nx=sum x_n phi_n`, satisfies the exact identity
+
+\[
+\boxed{\Theta_N(\eta_N)=1-\delta_N^2.}
+\tag{12}
+\]
+
+Thus, if the discrete Nyman closure holds, then `NB-029` gives `delta_N->0`, and therefore
+
+\[
+\boxed{
+\mathcal R_N^{\mathrm{adj}}\to0,
+\qquad
+|\widetilde b_N^*u_N|\to0,
+\qquad
+\Theta_N(\eta_N)\to1.
+}
+\tag{13}
+\]
+
+So on the desired closure branch the **full adjacent coefficient span itself contains a target-selected vector that is simultaneously low-Rayleigh, raw-target-poor in Euclidean coefficient normalization, and asymptotically maximally target-bearing after the only normalization that matters in Hilbert space.** Low Rayleigh plus small unwhitened target loading therefore cannot define the universal nuisance sector sought after `NB-024`--`NB-029`.
+
+The surviving spectral question must control target loading relative to Gram energy, for example through an estimate of the form
+
+\[
+|\widetilde b_N^*x|^2
+\le\varepsilon_N\,x^*\widetilde G_Nx
+\tag{14}
+\]
+
+on a genuinely restricted, source-independent adjacent sector with `epsilon_N->0`. Merely imposing a small Rayleigh quotient on the whole adjacent span is incompatible with closure.
+
+## 1. Same-section adjacent approximation loses asymptotically no Hilbert target mass
+
+`NB-029` proves
+
+\[
+\overline{\bigcup_NW_N}
+=
+\overline{\bigcup_NV_N}.
+\tag{15}
+\]
+
+Both finite-section families are nested and `W_N subset V_N`, so if
+
+\[
+d_\infty:=\operatorname{dist}\!\left(e,\overline{\bigcup_NV_N}\right),
+\]
+
+then
+
+\[
+d_N\downarrow d_\infty,
+\qquad
+\delta_N\downarrow d_\infty.
+\tag{16}
+\]
+
+Because `W_N subset V_N`, orthogonal projection gives the exact Pythagorean identity
+
+\[
+\boxed{
+\|P_{V_N}e-P_{W_N}e\|^2
+=\delta_N^2-d_N^2.
+}
+\tag{17}
+\]
+
+Consequently
+
+\[
+\boxed{
+\|P_{V_N}e-P_{W_N}e\|\longrightarrow0
+}
+\tag{18}
+\]
+
+**without assuming RH or closure of the target.** This is stronger than merely saying that the two infinite closures agree: at identical section index, the best adjacent projection and the best canonical projection become Hilbert-close.
+
+There is an exact finite Gram formula for the missing codimension-one channel. Let
+
+\[
+G_N=(\langle g_j,g_k\rangle)_{2\le j,k\le N},
+\qquad
+b_N=(\langle e,g_j\rangle)_{2\le j\le N},
+\]
+
+and let
+
+\[
+a_N=G_N^{-1}b_N,
+\qquad
+A_N={\bf1}^Ta_N,
+\qquad
+R_N={\bf1}^TG_N^{-1}{\bf1}.
+\tag{19}
+\]
+
+The coefficient image of `W_N` is exactly `{c:1^Tc=0}`. Its `G_N`-orthogonal complement is generated by `G_N^{-1}{\bf1}`. Therefore
+
+\[
+\boxed{
+\delta_N^2-d_N^2
+=\frac{|A_N|^2}{R_N}.
+}
+\tag{20}
+\]
+
+Equivalently, the unique same-section quotient direction has target cosine
+
+\[
+\frac{|A_N|}{\sqrt{R_N}}
+=\sqrt{\delta_N^2-d_N^2}
+\longrightarrow0.
+\tag{21}
+\]
+
+This complements `NB-028`. There the **Euclidean normalized-coefficient** quotient of the full adjacent path leaves the Mertens-controlled scalar `A_N`. Equation (20) shows that in the actual Hilbert metric the scalar must be divided by the intrinsic dual norm `sqrt(R_N)`, and that normalized quotient vanishes unconditionally because of the common closure.
+
+The dual norm already diverges at least polynomially. Indeed
+
+\[
+\frac1{R_N}
+=\min_{{\bf1}^Tc=1}c^*G_Nc.
+\tag{22}
+\]
+
+Taking the admissible vector supported only at index `N` and using `NB-027`'s canonical bound `||g_N||^2<=2/N` gives
+
+\[
+\boxed{R_N\ge\frac N2.}
+\tag{23}
+\]
+
+No useful upper bound for `R_N` is asserted; severe canonical Gram ill-conditioning may make it much larger.
+
+## 2. The adjacent best approximant inherits Möbius locking
+
+The coefficient lower bound (7) does not require `w_N` to be the best approximation in the larger space `V_N`. The load-bearing point is that `NB-020` proves its shell inversion and coefficient-stability estimate for **any** finite canonical combination.
+
+Applied to (3), whose residual has norm `delta_N`, it gives
+
+\[
+\boxed{
+|c_{N,n}+\mu(n)|\le2\delta_N\sigma(n),
+\qquad 2\le n\le N.
+}
+\tag{24}
+\]
+
+The weighted-density extraction used in `NB-020`--`NB-024` supplies absolute constants `C_0,c_0>0` and, on every sufficiently large scale `X`, a squarefree set `S(X)` with
+
+\[
+\sigma(n)\le C_0n
+\quad(n\in S(X)),
+\qquad
+\sum_{n\in S(X)}\frac1n\ge c_0\log X.
+\tag{25}
+\]
+
+Choose the absolute constant in (6) so that `2C_0c<=1/2`. Then for `n in S(X_N)`, (24) gives `|c_(N,n)+mu(n)|<=1/2`. Since those indices are squarefree,
+
+\[
+|c_{N,n}|\ge\frac12.
+\tag{26}
+\]
+
+The canonical generator lower bound from `NB-024`,
+
+\[
+s_n^2\ge\frac1{4n},
+\tag{27}
+\]
+
+therefore yields
+
+\[
+\|\eta_N\|_2^2
+=\sum_{n=2}^N|c_{N,n}|^2s_n^2
+\ge
+\frac1{16}\sum_{n\in S(X_N)}\frac1n
+\gg\log X_N,
+\tag{28}
+\]
+
+which proves (7).
+
+Thus Möbius locking is not destroyed by imposing the exact adjacent coefficient constraint (4). If closure holds, the constraint must instead be accommodated by a global adjustment of the Möbius-sized coefficient core. `NB-028` identifies one aspect of that adjustment through the partial coefficient sum; the present result shows that it does not prevent low normalized-Gram Rayleigh behavior.
+
+## 3. Raw target loading and Hilbert target angle separate in the weak Gram directions
+
+Because `w_N=P_(W_N)e`,
+
+\[
+\langle e,w_N\rangle=\|w_N\|^2=1-\delta_N^2.
+\tag{29}
+\]
+
+In normalized coefficient coordinates this is
+
+\[
+\widetilde b_N^*\eta_N=1-\delta_N^2,
+\qquad
+\eta_N^*\widetilde G_N\eta_N=1-\delta_N^2.
+\tag{30}
+\]
+
+Equations (7) and (30) prove (9)--(10). Dividing the square of the first equality in (30) by the second proves (12).
+
+This makes precise the warning already present in `NB-026`: a small target functional in **Euclidean coefficient norm** does not certify a small target angle after the Hilbert image is normalized. Here the failure is extreme. On a closure subsequence both the Rayleigh quotient and the raw unit-coefficient target loading go to zero, yet their ratio satisfies
+
+\[
+\frac{|\widetilde b_N^*u_N|^2}
+     {u_N^*\widetilde G_Nu_N}
+=1-\delta_N^2
+\longrightarrow1.
+\tag{31}
+\]
+
+Thus the relevant target statistic is the Gram-whitened ratio (11), not `|b^*u|` by itself.
+
+The same Rayleigh argument used in `NB-024` also implies that if `Pi_N` is the spectral projector of `widetilde G_N` onto eigenvalues at most `2 R_N^(adj)`, then
+
+\[
+\boxed{
+\|\Pi_N\eta_N\|_2^2
+\ge\frac12\|\eta_N\|_2^2.
+}
+\tag{32}
+\]
+
+This does **not** say that `Pi_N eta_N` remains in the adjacent coefficient hyperplane, because the global Gram spectral projector need not preserve that hyperplane. What is exact is that an adjacent-constrained, target-bearing vector itself has low global Rayleigh quotient and growing occupation of weak global Gram modes.
+
+## 4. Adversarial controls and prior-art boundary
+
+The theorem is conditional only where explicitly stated. Equations (17)--(23) are unconditional finite/same-section Hilbert geometry. Equations (7)--(12) are finite implications once `delta_N` is small enough for `X_N` to grow. The asymptotic conclusion (13) uses the desired closure branch; it is a **method obstruction**, not evidence that closure holds.
+
+The result does not show that the explicit local adjacent vectors of `NB-025`, or the disjoint Ritz sector of `NB-026`, have large Gram-whitened target angle. Those remain valid universal controls. What fails is the enlargement from those controlled local constructions to the entire adjacent span subject only to a Rayleigh cutoff. Long-range cooperation inside that span can be target-bearing even though individual high-index edges are target-poor.
+
+Likewise, (14) is a specification for a useful nuisance theorem, not a proved estimate. A viable source-independent sector may still be obtained by adding locality, an edge-coefficient budget, a multiscale restriction, or a projector built from a controlled family of adjacent modes. Such a sector must be proper enough not to contain the target-selected vectors above on the closure branch.
+
+The finite-dimensional identities (17), (20), and (11) are elementary Hilbert/Gram geometry and no novelty is claimed for those abstractions. A targeted literature check covered the classical Báez-Duarte discrete criterion, numerical finite Gram work, Ehm's 2024 Gram analysis, Carvill's 2025 multiscale Gram-compressibility work, and searches for successive/consecutive-difference Nyman bases. A 2026 paper of Jongho Yang, *A Friedrichs angle between the Nyman-Beurling spaces and the Riemann hypothesis* (J. Math. Anal. Appl. 560, 130494, DOI `10.1016/j.jmaa.2026.130494`), is a particularly relevant geometric boundary, but the accessible metadata does not identify the same canonical finite adjacent-difference sections or the Möbius-locked low-Rayleigh statement (7)--(13). Search absence is not a priority claim. No external theorem is load-bearing here, so `SOURCES.md` is unchanged.
+
+## 5. Research consequence
+
+The spectral program after `NB-029` can now exclude one more tempting definition of “universal adjacent nuisance.” The set of all adjacent-span vectors with small canonical normalized-Gram Rayleigh quotient is too broad: on the closure branch it contains the best adjacent approximation to the target, whose Hilbert target cosine tends to one. Adding the raw Euclidean coefficient target loading does not fix the problem, because that loading simultaneously tends to zero.
+
+The next separator must therefore be **Gram-relative and construction-aware**. Either prove a whitened target-angle estimate such as (14) on a proper target-independent local/multiscale adjacent sector, or identify a different invariant that survives canonical ill-conditioning while excluding the Möbius-locked adjacent best approximant. This leaves a genuinely narrower question than the one after `NB-029`: low spectrum is not enough, adjacency is not enough, and their unrestricted intersection is not enough. The missing ingredient is a quantitative restriction that distinguishes universal local cancellation from target-selected long-range cooperation without quotienting away the Nyman closure itself.
