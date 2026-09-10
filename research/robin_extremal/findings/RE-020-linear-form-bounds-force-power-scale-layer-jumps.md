@@ -1,11 +1,12 @@
-# RE-020 — linear-form bounds force power-scale jumps between bounded CA event-ladder collisions
+# RE-020 — linear-form bounds force event-scale power jumps between bounded CA event-ladder collisions
 
-**Status:** `LITERATURE+DERIVED + BAKER-AMPLIFIED-LAYER-JUMPS + POWER-SAVING-HOST-SPARSITY + DIOPHANTINE-REDUCTION + COUNTEREXAMPLE-NARROWING + PRIOR-ART-BOUNDED`. `RE-018` reduces every infinite family of regular self-tangent CA local Robin peaks in a fixed ordinary-prime envelope to repeated bounded additive near-collisions between two fixed distinct prime-power event ladders. `RE-019` then uses only integrality to show that successive such collisions require logarithmically growing jumps in at least one layer index. A classical lower bound for a nonzero linear form in two logarithms amplifies that spacing from logarithmic to a positive power of the current layer depth.
+**Status:** `LITERATURE+DERIVED + EXACT-EVENT-PARAMETER-CANCELLATION + EVENT-SCALE-POWER-JUMPS + ITERATED-LOG-HOST-SPARSITY + DIOPHANTINE-REDUCTION + COUNTEREXAMPLE-NARROWING + PRIOR-ART-BOUNDED`. `RE-018` reduces every infinite family of regular self-tangent CA local Robin peaks in a fixed ordinary-prime envelope to repeated bounded additive near-collisions between two fixed distinct prime-power event ladders. `RE-019` shows elementarily that successive such collisions require logarithmically growing layer jumps. The exact CA event parameter removes the slowly varying Lambert-`W` error that appears when one compares event coordinates directly: after taking two successive bounded collisions, the relevant prime-power increment ratio is actually `1+O(1/X)`, where `X` is the event coordinate. A classical lower bound for a nonzero linear form in two logarithms then forces a positive power of **event scale**, equivalently an exponential jump in the current layer depth.
 
-For a prime `r` and layer `j>=1`, retain the CA event notation
+For a prime `r` and layer `j>=1`, retain
 
 \[
-S_{r,j}=r+r^2+\cdots+r^j,\qquad
+S_{r,j}=r+r^2+\cdots+r^j,
+\qquad
 \lambda_{r,j}=\log(1+S_{r,j}^{-1}),
 \]
 
@@ -28,193 +29,253 @@ be an infinite sequence with both coordinates strictly increasing and
 \[
 0<\eta_{s,k_n}-\eta_{r,j_n}\le B,
 \qquad
-\eta_{r,j_n}\to\infty.
+x_n:=\eta_{r,j_n}\longrightarrow\infty.
 \tag{3}
 \]
 
 Put
 
 \[
-a_n:=j_{n+1}-j_n,\qquad
-b_n:=k_{n+1}-k_n,\qquad
+a_n:=j_{n+1}-j_n,
+\qquad
+b_n:=k_{n+1}-k_n,
+\qquad
 m_n:=\max(a_n,b_n).
 \tag{4}
 \]
 
-Then there are effectively computable constants `c_{r,s,B}>0` and `delta_{r,s}>0` such that, for all sufficiently large `n`,
+Then there are effectively computable constants `c_(r,s,B)>0` and `delta_(r,s)>0` such that, for all sufficiently large `n`,
 
 \[
 \boxed{
-m_n\ge c_{r,s,B}\,j_n^{\delta_{r,s}}.
+m_n\ge c_{r,s,B}\,x_n^{\delta_{r,s}}.
 }
 \tag{5}
 \]
 
-The exponent need not be optimized. It is enough that it is strictly positive and depends only on the fixed pair of prime bases.
-
-Consequently, if `C_{r,s,B}(Z)` counts pairs satisfying (3) with `eta_(r,j)<=Z`, then
+In particular, since `log x_n=j_n log r+O_r(log j_n)`, the jump is exponential in the current ladder depth:
 
 \[
 \boxed{
-C_{r,s,B}(Z)
-=
-O_{r,s,B}\!\left(
-(\log Z)^{1/(1+\delta_{r,s})}
-\right).
-}
+m_n\ge \exp(c'_{r,s}j_n)}
 \tag{6}
 \]
 
-Transferring this to the finite family of fixed base pairs supplied by `RE-018`, for every fixed `G>0` there is an effectively computable `kappa_G>0` such that the number `N_G(Z)` of sufficiently large regular self-tangent CA local peaks with `X=\log C<=Z` and ordinary-prime envelope gap `g(C)<=G` satisfies
+for a possibly smaller positive constant and all sufficiently large `n`.
+
+More strongly, the next collision coordinate satisfies
 
 \[
 \boxed{
-N_G(Z)=O_G\!\left((\log Z)^{1-\kappa_G}\right).
+\log x_{n+1}\ge c''_{r,s,B}\,x_n^{\delta_{r,s}}.
 }
 \tag{7}
 \]
 
-This is a genuine power saving over the `O_G(\log Z/\log\log Z)` host bound of `RE-019`. It still permits infinitely many candidate peaks and therefore does not prove Robin's inequality.
-
-## 1. Two successive bounded collisions expose a homogeneous logarithmic increment
-
-`RE-019` proves, for every fixed prime `r`,
+Thus fixed-base bounded CA event-ladder collisions, if infinite, are super-lacunary. If `C_(r,s,B)(Z)` counts sufficiently large collision pairs with `eta_(r,j)<=Z`, then
 
 \[
-\eta_{r,j}
-=
-\frac{r^{j+1}}{(r-1)j}
-\left(
-1+O_r\!\left(\frac{\log j}{j}\right)
-\right).
+\boxed{
+C_{r,s,B}(Z)=O_{r,s,B}\!\left(1+\log^*\log Z\right),
+}
 \tag{8}
 \]
 
-It also shows that bounded collisions synchronize the two depths:
+where `log^*` is the iterated logarithm, with the harmless additive convention depending only on the fixed starting threshold.
+
+Transferring this to the finite family of fixed base pairs supplied by `RE-018`, for every fixed `G>0`, if `N_G(Z)` counts sufficiently large regular self-tangent CA local peaks with `X=log C<=Z` and ordinary-prime envelope gap `g(C)<=G`, then
 
 \[
-k_n
-=
-\frac{\log r}{\log s}\,j_n
-+
-O_{r,s,B}(\log j_n),
+\boxed{
+N_G(Z)=O_G\!\left(1+\log^*\log Z\right).
+}
 \tag{9}
 \]
 
-so in particular `k_n\asymp_{r,s} j_n`.
+This is far thinner than the power-of-`log Z` host bound obtained from a direct Lambert-`W` asymptotic comparison. It still allows an infinite exceptional sequence and therefore does not prove Robin's inequality.
 
-Suppose first that
+## 1. A bounded event-coordinate collision is an `O(1/x)` collision of the exact CA parameter
+
+Let
 
 \[
-a_n\le \frac{j_n}{2},
-\qquad
-b_n\le \frac{k_n}{2}.
+f(t)=t\log t.
+\]
+
+At the `n`-th collision write
+
+\[
+y_n:=\eta_{s,k_n}=x_n+O_B(1).
+\]
+
+Because `A_(r,j_n)=f(x_n)` and `A_(s,k_n)=f(y_n)`, the mean-value theorem gives
+
+\[
+\frac{A_{s,k_n}}{A_{r,j_n}}
+=
+\frac{f(y_n)}{f(x_n)}
+=
+1+O_B(x_n^{-1}).
 \tag{10}
 \]
 
-The asymptotic (8), used at `j` and `j+a`, is then uniform enough to retain the slowly varying rational factor:
+The same estimate holds at `n+1`, and `x_(n+1)>=x_n`. Therefore
 
 \[
-\frac{\eta_{r,j+a}}{\eta_{r,j}}
+\frac{A_{r,j_n+a_n}/A_{r,j_n}}
+     {A_{s,k_n+b_n}/A_{s,k_n}}
 =
-r^a\frac{j}{j+a}
-\left(
-1+O_r\!\left(\frac{\log j}{j}\right)
-\right),
+\frac{A_{s,k_n}/A_{r,j_n}}
+     {A_{s,k_n+b_n}/A_{r,j_n+a_n}}
+=
+1+O_B(x_n^{-1}).
 \tag{11}
 \]
 
-and similarly
+This step is where the exact event coordinate matters. Comparing the `eta` ratios themselves introduces the slowly varying `1/j` and Lambert-`W` corrections. Comparing `A=eta log eta` instead preserves the `O(1/x)` accuracy of the bounded additive collision.
+
+## 2. Exact `lambda` ratios cancel the event normalization
+
+From (1),
 
 \[
-\frac{\eta_{s,k+b}}{\eta_{s,k}}
+A_{r,j}=\frac{\log r}{\lambda_{r,j}},
+\]
+
+so (11) is exactly
+
+\[
+\frac{\lambda_{r,j_n}}{\lambda_{r,j_n+a_n}}
+\frac{\lambda_{s,k_n+b_n}}{\lambda_{s,k_n}}
 =
-s^b\frac{k}{k+b}
-\left(
-1+O_s\!\left(\frac{\log k}{k}\right)
-\right).
+1+O_B(x_n^{-1}).
 \tag{12}
 \]
 
-Write
+For every integer `S>=1`,
 
 \[
-x_n:=\eta_{r,j_n},
-\qquad
-y_n:=\eta_{s,k_n}.
-\]
-
-From (3),
-
-\[
-\frac{y_n}{x_n}=1+O_B(x_n^{-1}),
-\]
-
-and therefore
-
-\[
-\frac{x_{n+1}/x_n}{y_{n+1}/y_n}
-=
-\frac{x_{n+1}}{y_{n+1}}\frac{y_n}{x_n}
-=
-1+O_B(x_n^{-1}).
+\frac1{S+1}\le \log(1+S^{-1})\le \frac1S.
 \tag{13}
 \]
 
-Combining (9), (11)--(13) gives
+Consequently the event equation gives the useful exact bracket
 
 \[
-\frac{r^{a_n}}{s^{b_n}}
-\frac{j_n}{j_n+a_n}
-\frac{k_n+b_n}{k_n}
-=
-1+O_{r,s,B}\!\left(\frac{\log j_n}{j_n}\right).
+\boxed{
+S_{r,j}
+\le
+\frac{\eta_{r,j}\log\eta_{r,j}}{\log r}
+\le
+S_{r,j}+1.
+}
 \tag{14}
 \]
 
-Taking logarithms produces the key cancellation of the fixed ladder normalizations:
+In particular, along (3),
 
 \[
-\boxed{
-\Lambda_n
-:=
-a_n\log r-b_n\log s
-=
-\log\!\left(1+\frac{a_n}{j_n}\right)
--
-\log\!\left(1+\frac{b_n}{k_n}\right)
-+
-O_{r,s,B}\!\left(\frac{\log j_n}{j_n}\right).
-}
+S_{r,j_n}\asymp_{r}x_n\log x_n,
+\qquad
+S_{s,k_n}\asymp_{s}x_n\log x_n.
 \tag{15}
 \]
 
-Hence
+Using
 
 \[
-\boxed{
-|\Lambda_n|
-\ll_{r,s,B}
-\frac{m_n+\log j_n}{j_n}.
-}
+\log(1+S^{-1})
+=
+S^{-1}\left(1+O(S^{-1})\right)
 \tag{16}
 \]
 
-If either inequality in (10) fails, then (9) already gives `m_n\gg_{r,s}j_n`, which is stronger than (5) for any exponent below one. Thus only the moderate-increment regime (10) needs Diophantine input.
+inside (12), with the old-layer errors dominating the new-layer errors, yields
 
-The distinction from a single CA event collision is essential. A single comparison of `eta_(r,j)` and `eta_(s,k)` contains fixed normalization terms involving the ladder constants and the slowly varying `j,k` factors. Passing to **two successive collisions** cancels those fixed normalizations and exposes the homogeneous form `a log r-b log s`.
+\[
+\frac{S_{r,j_n+a_n}S_{s,k_n}}
+     {S_{r,j_n}S_{s,k_n+b_n}}
+=
+1+O_B(x_n^{-1}).
+\tag{17}
+\]
 
-## 2. Matveev's theorem turns the homogeneous increment into a power jump
+No restriction on the sizes of `a_n,b_n` is needed here.
 
-Because `r` and `s` are distinct primes, they are multiplicatively independent. Thus
+Now use the exact geometric-sum formula
+
+\[
+S_{r,j}=\frac{r(r^j-1)}{r-1}.
+\tag{18}
+\]
+
+Equation (17) becomes
+
+\[
+\frac{r^{a_n}}{s^{b_n}}
+V_n
+=
+1+O_B(x_n^{-1}),
+\tag{19}
+\]
+
+where
+
+\[
+V_n=
+\frac{1-r^{-(j_n+a_n)}}{1-r^{-j_n}}
+\frac{1-s^{-k_n}}{1-s^{-(k_n+b_n)}}.
+\tag{20}
+\]
+
+From (15), (18), and the fact that `r,s` are fixed,
+
+\[
+r^{-j_n}+s^{-k_n}
+=O_{r,s,B}\!\left((x_n\log x_n)^{-1}\right),
+\]
+
+hence
+
+\[
+V_n=1+O_{r,s,B}\!\left((x_n\log x_n)^{-1}\right).
+\tag{21}
+\]
+
+Combining (19)--(21) gives the decisive increment-level approximation
+
+\[
+\boxed{
+\frac{r^{a_n}}{s^{b_n}}
+=
+1+O_{r,s,B}(x_n^{-1}).
+}
+\tag{22}
+\]
+
+Equivalently, for sufficiently large `n`,
+
+\[
+\boxed{
+\left|a_n\log r-b_n\log s\right|
+\ll_{r,s,B}x_n^{-1}.
+}
+\tag{23}
+\]
+
+The fixed ladder normalization, the `1/j` correction, and the Lambert-`W` transform have all disappeared. This is stronger than what follows from a direct asymptotic comparison of the event coordinates.
+
+## 3. Matveev turns `O(1/x)` synchronization into an event-scale power jump
+
+Since `r` and `s` are distinct primes, they are multiplicatively independent. Thus
 
 \[
 \Lambda=a\log r-b\log s
 \]
 
-is nonzero for every pair of positive integers `a,b`.
+is nonzero for positive integers `a,b`.
 
-A standard fixed-number consequence of Matveev's explicit lower bound for linear forms in logarithms of algebraic numbers is that there exist effectively computable constants
+A standard fixed-number consequence of Matveev's explicit lower bound for linear forms in logarithms of algebraic numbers gives effectively computable constants
 
 \[
 c_0=c_0(r,s)>0,
@@ -229,167 +290,123 @@ such that, with `m=max(a,b)>=2`,
 |a\log r-b\log s|
 \ge c_0\,m^{-C_0}.
 }
-\tag{17}
+\tag{24}
 \]
 
-Only this qualitative polynomial lower bound is used; no attempt is made to optimize `C_0`.
-
-Apply (17) to `a=a_n`, `b=b_n`. First, (16)--(17) rule out `m_n<=\log j_n` for all sufficiently large `n`, because that would give simultaneously
+Apply (24) to `(a_n,b_n)` and combine with (23). Then
 
 \[
-|\Lambda_n|
-\gg_{r,s}(\log j_n)^{-C_0}
+m_n^{C_0}\gg_{r,s,B}x_n,
 \]
 
-and
-
-\[
-|\Lambda_n|
-\ll_{r,s,B}\frac{\log j_n}{j_n},
-\]
-
-which are incompatible as `j_n\to\infty`. Hence eventually `m_n>\log j_n`, and (16) simplifies to
-
-\[
-|\Lambda_n|
-\ll_{r,s,B}\frac{m_n}{j_n}.
-\tag{18}
-\]
-
-Combining (17) and (18),
-
-\[
-m_n^{C_0+1}\gg_{r,s,B} j_n.
-\tag{19}
-\]
-
-Thus (5) holds with, for example,
+so (5) holds, for example, with
 
 \[
 \boxed{
-\delta_{r,s}:=\frac{1}{C_0(r,s)+1}>0.
+\delta_{r,s}=C_0(r,s)^{-1}>0.
 }
-\tag{20}
+\tag{25}
 \]
 
-This argument uses the logarithmic-form theorem at the **increment level**, not as a direct lower bound for one Lambert-`W` event gap. It therefore does not resolve the exact simultaneous-jump problem discussed by Alaoglu--Erdos and does not contradict the prior-art warning in `RE-018`.
-
-## 3. Power layer jumps give a power saving in the collision count
-
-Let
+The qualitative consequence is much more important than the numerical value of this exponent. From the fixed-ladder asymptotic already derived in `RE-019`,
 
 \[
-M=C_{r,s,B}(Z)
+\log x_n=j_n\log r+O_r(\log j_n),
+\tag{26}
 \]
 
-and order the collisions by their left coordinate. `RE-019` proves
+and therefore a positive power of `x_n` is exponential in `j_n`, giving (6).
+
+The logarithmic-form theorem is still used only at the **increment level between two successive collisions**. It is not a direct lower bound for a single Lambert-`W` event gap and does not solve the Alaoglu--Erdos exact simultaneous-jump problem.
+
+## 4. Event-scale jumps make the collision set iterated-logarithmically sparse
+
+Bounded collisions synchronize the two depths. As in `RE-019`, taking logarithms in the fixed-ladder growth law gives
 
 \[
-j_M+k_M=O_{r,s,B}(\log Z).
-\tag{21}
+k_n
+=
+\frac{\log r}{\log s}\,j_n
++O_{r,s,B}(\log j_n),
+\tag{27}
 \]
 
-After discarding finitely many initial collisions, (5) applies. Since the positive integer sequence `j_n` is strictly increasing, `j_n>=n` up to a harmless index shift. Therefore
+so `j_n` and `k_n` are comparable.
+
+If `m_n=a_n`, then `j_(n+1)>=m_n`. If `m_n=b_n`, then `k_(n+1)>=m_n`, and (27) at `n+1` again gives `j_(n+1)\gg_(r,s)m_n`. Thus (5) implies
 
 \[
-a_n+b_n
-\ge m_n
-\gg_{r,s,B}
-j_n^{\delta_{r,s}}
-\gg_{r,s,B}
-n^{\delta_{r,s}}.
-\tag{22}
+j_{n+1}\gg_{r,s,B}x_n^{\delta_{r,s}}.
+\tag{28}
 \]
 
-Summing (22) for `n<M` gives
+Using (26) at `n+1`, after increasing the starting threshold if necessary,
 
 \[
-j_M+k_M
-\gg_{r,s,B}
-M^{1+\delta_{r,s}}.
-\tag{23}
+\log x_{n+1}
+\gg_r j_{n+1}
+\gg_{r,s,B}x_n^{\delta_{r,s}},
 \]
 
-Together with (21),
+which is (7).
+
+Put `u_n=log x_n`. Then (7) reads
 
 \[
-M^{1+\delta_{r,s}}
-\ll_{r,s,B}\log Z,
+u_{n+1}\ge c\,e^{\delta u_n}.
+\tag{29}
 \]
 
-which proves (6).
+After discarding a fixed initial segment and rescaling by a constant depending only on `r,s,B`, (29) dominates
 
-The saving is structurally different from the `log log` factor in `RE-019`. Integrality alone says that near-collisions cannot recur after two simultaneously small exponential increments. The logarithmic-form lower bound says the increment pair itself cannot approximate the required ratio closely enough unless at least one layer jump grows like a fixed positive power of the current depth.
+\[
+v_{n+1}\ge e^{v_n}.
+\tag{30}
+\]
 
-## 4. Transfer to fixed ordinary-prime envelopes
+Therefore the number of terms with `u_n<=log Z` is at most an additive constant plus the number of logarithms required to descend from `log Z` to a fixed threshold. This proves (8).
+
+For the full set of collision pairs rather than a preselected subsequence, no hidden multiplicity changes the bound. A fixed event ladder has `eta_(r,j+1)/eta_(r,j)->r>1`, so its additive spacing eventually exceeds `B`. Hence, beyond a fixed threshold, a given left-ladder event has at most one right-ladder partner within distance `B`, and ordering all such pairs by the left coordinate also orders the right coordinate. The argument above therefore applies to the entire tail of the collision set.
+
+## 5. Transfer to bounded ordinary-prime envelopes
 
 Fix `G>0`. `RE-018` proves that every prime factor appearing at either boundary of a sufficiently large regular self-tangent CA local peak with `g(C)<=G` lies in the finite set
 
 \[
 \mathcal P_G
 =
-\{r\ {\rm prime}:r<e^{2G+3}\},
-\tag{24}
+\{r\text{ prime}:r<e^{2G+3}\},
+\tag{31}
 \]
 
-and the two adjacent transition coordinates are at distance below `G+1`. `RE-019` then partitions the peak hosts into finitely many ordered pairs of distinct bases `(r,s)` from `mathcal P_G`, with both selected layer indices increasing.
+and that the two adjacent transition coordinates differ by less than `G+1`.
 
-For each ordered pair use (6) with `B=G+1`. Since there are only finitely many pairs, define
+Choose one boundary atom deterministically at each side of each peak, as in `RE-019`. This partitions all sufficiently large peaks into finitely many ordered pairs of distinct bases `(r,s)` from `mathcal P_G`. For each pair, apply (8) with `B=G+1`. A peak with `X<=Z` has right boundary below `Z+G+1`, which does not alter an iterated-logarithm count. Summing over the finite set of ordered base pairs proves (9).
 
-\[
-\delta_G
-:=
-\min_{\substack{r,s\in\mathcal P_G\\r\ne s}}
-\delta_{r,s}>0
-\]
+Thus the fixed-envelope escape is now extremely rigid: an infinite family cannot merely hop through a sparse set of deep near-collisions. Successive synchronizations of the same two fixed prime-power ladders must be separated by a positive power of the **current event coordinate**, forcing tower-like growth of the candidate host coordinates.
 
-over the nonempty pair classes that can occur, and set
+## 6. Prior-art and novelty boundary
 
-\[
-\kappa_G
-:=
-\frac{\delta_G}{1+\delta_G}>0.
-\tag{25}
-\]
+The Diophantine input is classical. Matveev's theorem gives explicit lower bounds for nonzero integer linear forms in logarithms of fixed algebraic numbers, and (24) is its standard two-logarithm specialization to the multiplicatively independent rational integers `r` and `s`. No novelty is claimed for Baker's method, irrationality measures for `log r/log s`, or sparse intersections of exponential sequences.
 
-Summing the pairwise bounds gives
+The closest CA-specific obstruction remains Alaoglu--Erdos's discussion of simultaneous exponent jumps. Their theorem controls the prime-exponent thresholds and records the unresolved two-prime simultaneous-rationality issue behind exact ties. That problem concerns one event parameter and is not solved here.
 
-\[
-N_G(Z)
-=
-O_G\!\left(
-(\log Z)^{1/(1+\delta_G)}
-\right)
-=
-O_G\!\left(
-(\log Z)^{1-\kappa_G}
-\right),
-\]
-
-which is (7). The constants and the positive exponent are effective in principle because the logarithmic-form input is explicit, but their numerical values are not claimed to be useful.
-
-## 5. Prior-art and novelty boundary
-
-The Diophantine input is classical. Matveev's explicit theorem gives quantitative lower bounds for nonzero integer linear forms in logarithms of fixed algebraic numbers, and (17) is its standard two-logarithm specialization to the multiplicatively independent rational integers `r` and `s`. No novelty is claimed for Baker's method, for finite irrationality measures of logarithm ratios, or for using linear forms in logarithms to study exponential Diophantine approximation.
-
-The closest CA-specific obstruction remains Alaoglu--Erdos's simultaneous-jump discussion, already anchored in `SOURCES.md`. `RE-018` correctly notes that a **single** bounded CA event collision is not immediately a homogeneous two-logarithm problem because the Lambert-`W` event coordinates carry slowly varying and fixed normalization terms. The new point here is that `RE-019` supplies a second collision. Taking the ratio of the two ladder increments cancels the fixed normalizations and leaves exactly the homogeneous form in (15), where the classical theorem applies.
-
-A targeted search across colossally abundant transition literature and linear-forms-in-logarithms applications did not locate this successive-CA-event-ladder amplification. No blanket novelty claim is made for sparse intersections of lacunary sequences. The durable Mathia delta is the implication
+A targeted audit of current colossally abundant transition literature and searches combining CA transitions with linear forms in logarithms did not locate the successive-collision identity (22). The mathematical delta is narrower: the exact CA parameter `A=eta log eta=log r/lambda_(r,j)` lets two bounded event-coordinate collisions be divided **before** applying Lambert-`W` asymptotics. This cancels the fixed event normalization and leaves the homogeneous increment form with `O(1/x)` accuracy. Combined with the classical logarithmic-form lower bound, it yields
 
 \[
 \text{bounded CA event collisions}
 \Longrightarrow
-\text{power-scale layer jumps}
+\text{event-scale power layer jumps}
 \Longrightarrow
-\text{power-saving bounded-envelope host count}.
+\text{iterated-logarithmic bounded-envelope host count}.
 \]
 
-`SOURCES.md` records Matveev as the new load-bearing source.
+`SOURCES.md` already records Matveev as the load-bearing external theorem, so no additional source anchor is required.
 
-## 6. Boundaries and research consequence
+## 7. Boundaries and research consequence
 
-Equation (7) remains a **host-set restriction**, not an exclusion theorem. Every fixed positive power of `log Z` still diverges, so an infinite Robin-counterexample subsequence could in principle survive on the resulting set. The theorem applies only when the ordinary-prime envelope is bounded by a fixed `G`; it provides no uniform exponent when `g(C)` grows with `X`.
+Equation (9) is still a **host-set restriction**, not an exclusion theorem. `log^* log Z` is unbounded, however slowly, so an infinite Robin-counterexample subsequence is not logically excluded. The result also requires a fixed ordinary-envelope bound `G`; it gives no uniform separation when `g(C)` grows with `X` because both the allowed base set and the collision-width constant then vary.
 
-The result also does not control the selected mixed prime race on the finite intermediate annulus of `RE-014`--`RE-015`, and it does not show that sparse event-ladder hosts contribute negligibly to that race. It does not prove a lower bound forcing `|\eta_{r,j}-\eta_{s,k}|\to\infty` for one fixed pair of ladders, nor does it solve the Alaoglu--Erdos exact-tie problem. The numerical size of `delta_(r,s)` is not itself significant; only positivity is used.
+Nothing here controls the selected mixed prime race on the finite intermediate annulus of `RE-014`--`RE-015`. In particular, sparsity of candidate event hosts does not imply that the mixed-race value at those hosts has the sign needed for Robin. The theorem also gives no lower bound showing `|eta_(r,j)-eta_(s,k)|->infinity` for every single pair `(j,k)`, and it does not remove exact/tied higher-layer transitions.
 
-The bounded-envelope branch is nevertheless narrower than after `RE-019`: any infinite escape must synchronize two fixed deep prime-power ladders at bounded additive event distance while making **power-scale jumps in depth between successive synchronizations**. A genuine closure now requires either a stronger single-collision separation theorem, a way to convert this power sparsity into negligible CA-selected mixed-race mass, or a separate argument showing that hypothetical counterexample peaks cannot escape through growing ordinary-prime envelopes.
+The bounded-envelope branch is nevertheless reduced to an extremely sparse Diophantine escape. A genuine closure now needs one of three additional ingredients: a single-collision separation theorem ruling out all but finitely many bounded near-collisions for fixed bases; a source-specific argument showing that the CA-selected mixed-race threshold cannot recur on this super-lacunary host set; or an independent Robin-extremal argument forcing any hypothetical counterexample sequence into a bounded envelope and then excluding the remaining ladder synchronization. Growing envelopes remain a separate chamber.
