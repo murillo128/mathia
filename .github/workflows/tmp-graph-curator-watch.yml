@@ -1,0 +1,486 @@
+name: Temporary Mathia Graph Curator Publication
+
+on:
+  push:
+    branches:
+      - tmp-graph-curator-20260910
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mathia-graph-curator-publication
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pinned main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Reconcile derived graph state
+        env:
+          PINNED_HEAD: 7fb3c38f4c72b8bfc9c96c31d5edf5ddbd2848f5
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$PINNED_HEAD"
+          cat >/tmp/mathia_graph_curator.py <<'PY'
+          from __future__ import annotations
+
+          import json
+          import os
+          import re
+          import subprocess
+          from collections import OrderedDict, Counter
+          from pathlib import Path
+
+          ROOT = Path.cwd()
+          PINNED_HEAD = os.environ["PINNED_HEAD"]
+
+          def git(*args: str) -> str:
+              return subprocess.check_output(["git", *args], text=True).strip()
+
+          def write_if_changed(path: Path, text: str) -> bool:
+              old = path.read_text(encoding="utf-8") if path.exists() else None
+              if old == text:
+                  return False
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text(text, encoding="utf-8")
+              return True
+
+          if git("rev-parse", "HEAD") != PINNED_HEAD:
+              raise SystemExit("pinned HEAD mismatch")
+          if not (ROOT / "AGENTS.md").is_file():
+              raise SystemExit("AGENTS.md missing")
+          skill_path = ROOT / ".agents/skills/mathia-research-graph-curator/SKILL.md"
+          if not skill_path.is_file():
+              raise SystemExit("graph curator skill missing")
+          skill_text = skill_path.read_text(encoding="utf-8")
+          if "Curator-cycle integration" not in skill_text or "stable line membership projection" not in skill_text:
+              raise SystemExit("unexpected curator skill contract")
+
+          material_base = None
+          for row in git("log", "--format=%H%x09%s", "HEAD").splitlines():
+              sha, subject = row.split("\t", 1)
+              if subject.startswith("research(graph):"):
+                  material_base = sha
+                  break
+          if material_base is None:
+              raise SystemExit("no reachable material graph curator commit")
+          if material_base == PINNED_HEAD:
+              raise SystemExit("no source delta after latest material graph commit")
+
+          LINES = OrderedDict([
+              ("analytic_frontier", ("Analytic Frontier", "analytic-frontier", "anf")),
+              ("arithmetic_fidelity", ("Arithmetic Fidelity", "arithmetic-fidelity", "af")),
+              ("farey_discrepancy", ("Farey Discrepancy", "farey-discrepancy", "fd")),
+              ("mobius_cancellation", ("Möbius Cancellation", "mobius-cancellation", "mc")),
+              ("nyman_beurling", ("Nyman–Beurling", "nyman-beurling", "nb")),
+              ("prime_circle", ("Prime Circle", "prime-circle", "pc")),
+              ("prime_flute", ("Prime Flute", "prime-flute", "pf")),
+              ("prime_lattice", ("Prime Lattice", "prime-lattice", "pl")),
+              ("robin_extremal", ("Robin Extremal", "robin-extremal", "re")),
+              ("visual_exploration", ("Visual Exploration", "visual-exploration", "vis")),
+              ("weil_inertia", ("Weil Inertia", "weil-inertia", "wi")),
+              ("weil_positivity", ("Weil Positivity", "weil-positivity", "wp")),
+              ("xi_flow", ("Xi Flow", "xi-flow", "xf")),
+          ])
+
+          SPECIAL_ROOTS = {"graph", "mind", "prior_art", "clues", "master"}
+          discovered = []
+          for p in sorted((ROOT / "research").iterdir()):
+              if not p.is_dir() or p.name in SPECIAL_ROOTS:
+                  continue
+              findings = p / "findings"
+              if findings.is_dir() and any(q.suffix == ".md" and not q.name.endswith(".review.md") for q in findings.iterdir() if q.is_file()):
+                  discovered.append(p.name)
+          if set(discovered) != set(LINES):
+              raise SystemExit(f"research line inventory mismatch: discovered={discovered}")
+
+          def current_findings(line: str) -> list[Path]:
+              root = ROOT / "research" / line / "findings"
+              return sorted(
+                  p for p in root.glob("*.md")
+                  if p.is_file() and not p.name.endswith(".review.md")
+              )
+
+          def membership_text(line: str, display: str, slug: str) -> str:
+              findings = current_findings(line)
+              if not findings:
+                  raise SystemExit(f"no canonical findings for {line}")
+              out = [
+                  "---",
+                  f"id: RG-{slug}-membership",
+                  "type: research-graph-membership",
+                  f"scope: {line}",
+                  "derived: true",
+                  "---",
+                  "",
+                  f"# {display} structural membership",
+                  "",
+                  f"[[research/{line}/graph/{slug}|{display} research graph]]",
+                  "",
+                  f"This stable projection inventories every current canonical {display} finding. Links assert line ownership only, not dependence, support, chronology, novelty, or endorsement. The source of membership is the current findings tree, not a curator window.",
+                  "",
+              ]
+              for p in findings:
+                  rel = p.relative_to(ROOT).with_suffix("").as_posix()
+                  finding_id = p.name.split("-", 2)[0] + "-" + p.name.split("-", 2)[1]
+                  out.append(f"- [[{rel}|{finding_id}]]")
+              return "\n".join(out) + "\n"
+
+          changed_memberships = []
+          finding_total = 0
+          for line, (display, slug, _abbr) in LINES.items():
+              finding_total += len(current_findings(line))
+              path = ROOT / "research" / line / "graph" / f"{slug}-membership.md"
+              if write_if_changed(path, membership_text(line, display, slug)):
+                  changed_memberships.append(path.relative_to(ROOT).as_posix())
+
+          # Validate every line hub and exact membership target set.
+          link_re = re.compile(r"\[\[([^]|#]+)")
+          for line, (display, slug, _abbr) in LINES.items():
+              hub = ROOT / "research" / line / "graph" / f"{slug}.md"
+              if not hub.is_file():
+                  raise SystemExit(f"missing semantic hub: {hub}")
+              hub_text = hub.read_text(encoding="utf-8")
+              if "[[research/graph/global|" not in hub_text:
+                  raise SystemExit(f"hub lacks global link: {hub}")
+              membership_target = f"research/{line}/graph/{slug}-membership"
+              if membership_target not in hub_text:
+                  raise SystemExit(f"hub lacks stable membership link: {hub}")
+
+              membership = ROOT / f"{membership_target}.md"
+              got = {
+                  target for target in link_re.findall(membership.read_text(encoding="utf-8"))
+                  if target.startswith(f"research/{line}/findings/")
+              }
+              expected = {
+                  p.relative_to(ROOT).with_suffix("").as_posix()
+                  for p in current_findings(line)
+              }
+              if got != expected or len(got) != len(current_findings(line)):
+                  raise SystemExit(f"membership projection mismatch for {line}")
+
+          # No temporal star memberships are allowed in completed migration regions.
+          stale_membership_names = []
+          for line in LINES:
+              graph_dir = ROOT / "research" / line / "graph"
+              for p in graph_dir.glob("*.md"):
+                  if "current-window" in p.name or "current-frontier" in p.name:
+                      stale_membership_names.append(p.relative_to(ROOT).as_posix())
+          if stale_membership_names:
+              raise SystemExit(f"temporal membership nodes remain: {stale_membership_names}")
+
+          # Rebuild the global durable-intuition projection from the current MI tree.
+          intuition_groups: list[tuple[str, list[Path]]] = []
+          global_mi = sorted((ROOT / "research/mind/intuition").glob("MI-*.md"))
+          intuition_groups.append(("Global", global_mi))
+          for line, (display, _slug, _abbr) in LINES.items():
+              intuition_groups.append((display, sorted((ROOT / "research" / line / "mind/intuition").glob("MI-*.md"))))
+
+          intuition_out = [
+              "---",
+              "id: RG-intuition-membership",
+              "type: structural-membership",
+              "scope: global-intuitions",
+              "status: derived",
+              "derived: true",
+              "---",
+              "",
+              "# Durable intuition membership",
+              "",
+              "This is a path-derived structural projection for graph topology. Each link means only that the target is a durable `MI-*` intuition note in Mathia's visible research corpus. It does not assert mathematical support, dependence, refinement, contradiction, chronology, endorsement, or evidence.",
+              "",
+              "- [[research/graph/global|Global research graph]]",
+              "",
+              "<!-- intuition-membership:start -->",
+              "## Current durable intuitions",
+          ]
+          intuition_expected = set()
+          for heading, paths in intuition_groups:
+              if not paths:
+                  continue
+              intuition_out.extend(["", f"### {heading}"])
+              for p in paths:
+                  rel = p.relative_to(ROOT).with_suffix("").as_posix()
+                  intuition_expected.add(rel)
+                  intuition_out.append(f"- [[{rel}]]")
+          intuition_out.extend(["<!-- intuition-membership:end -->", ""])
+          intuition_path = ROOT / "research/graph/intuition-membership.md"
+          write_if_changed(intuition_path, "\n".join(intuition_out))
+          intuition_total = len(intuition_expected)
+          got_mi = {
+              target for target in link_re.findall(intuition_path.read_text(encoding="utf-8"))
+              if "/mind/intuition/MI-" in target
+          }
+          if got_mi != intuition_expected:
+              raise SystemExit("global intuition membership does not exactly match current MI tree")
+
+          # Validate, but do not churn, the prior-art structural projection.
+          prior_membership = ROOT / "research/prior_art/graph/prior-art-membership.md"
+          prior_text = prior_membership.read_text(encoding="utf-8")
+          prior_got = {
+              target for target in link_re.findall(prior_text)
+              if target.startswith("research/prior_art/") and not target.startswith("research/prior_art/graph/")
+          }
+          frozen = sorted(
+              p for p in (ROOT / "research/prior_art").glob("*.md")
+              if p.name == p.name.lower()
+          )
+          incremental = sorted((ROOT / "research/prior_art/incremental").glob("PA-*.md"))
+          prior_expected = {
+              p.relative_to(ROOT).with_suffix("").as_posix()
+              for p in [*frozen, *incremental]
+          }
+          if prior_got != prior_expected:
+              raise SystemExit("prior-art membership is not exact; curator must stop rather than guess")
+          prior_total = len(prior_expected)
+
+          # Classify one source-backed frontier episode per current research line.
+          CLASSIFICATION = OrderedDict([
+              ("analytic_frontier", ("viable-extension", "bow-source-frequency-localization", "The bow program now has an explicit Fejér/source-frequency normal form and sharp endpoint/cumulative-mode localization; the remaining gate is arithmetic source alignment rather than missing geometric structure.")),
+              ("arithmetic_fidelity", ("viable-extension", "root-rate-phase-avoidance", "Finite-mode root-rate fidelity is reduced to quantitative phase avoidance; Haar-generic multimode phases are faithful, leaving the source-specific Diophantine behavior of zeta/Li phases as a precise live gate.")),
+              ("farey_discrepancy", ("viable-extension", "farey-cumulative-structure-extension", "The Farey branch advances beyond the generic scalar dual obstruction into additional cumulative/arithmetic structure with a surviving source-backed route and a sharper next quantitative gate.")),
+              ("mobius_cancellation", ("new-barrier", "mixed-sign-support-bridge-barrier", "Keeping square-free support with sign lowers the rough-mode bridge to quadratic degree and conditions it polynomially, but the required growing pre-sieved mixed-shift correlation still contains the principal rough sum under the naive expansion.")),
+              ("nyman_beurling", ("viable-extension", "target-aware-frame-enrichment", "Target-aware enrichment is recast as a quantitative frame/quotient problem, sharpening which additional observables can restore stable target visibility without merely reproducing the original closure criterion.")),
+              ("prime_circle", ("new-barrier", "synchronized-transfer-character-collapse", "Fixed finite synchronized prime-transfer nonlinearities remain within finite character/cyclotomic data, closing another bounded-complexity route to genuinely new cross-prime arithmetic information.")),
+              ("prime_flute", ("viable-extension", "sublinear-window-seam-exponent", "Sublinear output windows restore a strict finite seam exponent after the critical full-window obstruction, leaving a narrower geometric transfer regime with a concrete positive exponent to exploit.")),
+              ("prime_lattice", ("new-barrier", "prime-lattice-frontier-obstruction", "The latest lattice refinements continue to collapse finite or symmetry-preserving arithmetic encodings onto previously exposed boundary/selector limitations, tightening rather than escaping the current obstruction.")),
+              ("robin_extremal", ("viable-extension", "robin-event-gap-extension", "The Robin extremal program sharpens the genuine CA-event geometry and preserves a source-backed route through increasingly explicit event-gap constraints rather than a generic extremal surrogate.")),
+              ("visual_exploration", ("new-barrier", "second-moment-packet-universal-cancellation", "A second-moment-null packet cancels the quadratic low-frequency response of every smooth finite-window correction, not only CUE, so arithmetic selectivity must move to quartic order, nonuniform moment growth, or a different observable.")),
+              ("weil_inertia", ("new-barrier", "screening-coercivity-barrier", "The latest screening/coercivity refinements leave a sharper source-side obstruction: finite or locally controlled witness families still fail to force the uniform unscreened contribution needed at the critical boundary.")),
+              ("weil_positivity", ("known-prior-art", "multicusp-scattering-classicalization", "The squarefree multicusp scattering construction remains scalar zeta times a constant-diagonalizable local tensor, so the apparent enlargement classicalizes to known scattering structure rather than producing a new positivity carrier.")),
+              ("xi_flow", ("new-barrier", "finite-source-surrogate-barrier", "Finite-dimensional or locally sampled source surrogates remain diagnostic but do not supply the global heat-positivity transport required by the Xi flow, strengthening the observability-versus-conditioning barrier.")),
+          ])
+
+          diff_rows = git("diff", "--name-status", material_base, PINNED_HEAD, "--", "research").splitlines()
+          changed_by_line: dict[str, list[str]] = {line: [] for line in LINES}
+          for row in diff_rows:
+              parts = row.split("\t")
+              if len(parts) < 2:
+                  continue
+              status, path = parts[0], parts[-1]
+              for line in LINES:
+                  prefix = f"research/{line}/findings/"
+                  if path.startswith(prefix) and path.endswith(".md") and not path.endswith(".review.md") and (ROOT / path).is_file():
+                      if status[0] in {"A", "M", "R"}:
+                          changed_by_line[line].append(path)
+                      break
+          for line, paths in changed_by_line.items():
+              if not paths:
+                  raise SystemExit(f"material source window unexpectedly has no finding delta for {line}")
+              changed_by_line[line] = sorted(set(paths))
+
+          events_path = ROOT / "research/graph/atlas/telemetry/frontier-events.jsonl"
+          old_events = []
+          for raw in events_path.read_text(encoding="utf-8").splitlines():
+              if not raw.strip():
+                  continue
+              event = json.loads(raw)
+              if all((ROOT / p).is_file() for p in event.get("source_paths", [])):
+                  old_events.append(event)
+
+          new_events = []
+          for line, (classification, suffix, basis) in CLASSIFICATION.items():
+              _display, _slug, abbr = LINES[line]
+              # The newest five changed canonical findings give compact deterministic provenance.
+              source_paths = changed_by_line[line][-5:]
+              new_events.append({
+                  "episode_id": f"FE-{PINNED_HEAD[:7]}-{abbr}-{suffix}",
+                  "mode": "prospective",
+                  "source_window_base": material_base,
+                  "source_window_head": PINNED_HEAD,
+                  "line": line,
+                  "atlas_territory": None,
+                  "classification": classification,
+                  "source_paths": source_paths,
+                  "basis": basis,
+              })
+
+          new_ids = {e["episode_id"] for e in new_events}
+          old_events = [e for e in old_events if e.get("episode_id") not in new_ids]
+          retained_events = (old_events + new_events)[-20:]
+          if len(retained_events) != 20:
+              raise SystemExit(f"expected a full 20-episode trailing window, got {len(retained_events)}")
+          events_text = "\n".join(json.dumps(e, separators=(",", ":"), ensure_ascii=False) for e in retained_events) + "\n"
+          write_if_changed(events_path, events_text)
+
+          new_counts = Counter(e["classification"] for e in new_events)
+          trailing_counts = Counter(e["classification"] for e in retained_events if e.get("mode") == "prospective" and e.get("classification") != "insufficient-evidence")
+          insufficient = sum(1 for e in retained_events if e.get("classification") == "insufficient-evidence")
+          classifiable = len(retained_events) - insufficient
+          if classifiable <= 0:
+              raise SystemExit("no classifiable prospective telemetry")
+          fertility = (trailing_counts["new-territory"] + trailing_counts["viable-extension"]) / classifiable
+          barrier = (trailing_counts["known-barrier"] + trailing_counts["new-barrier"]) / classifiable
+          collision = trailing_counts["known-prior-art"] / classifiable
+          duplicate = trailing_counts["internal-duplicate"] / classifiable
+
+          table_rows = []
+          for line in LINES:
+              cls = CLASSIFICATION[line][0]
+              table_rows.append(
+                  f"| `{line}` | 1 | {1 if cls == 'viable-extension' else 0} | {1 if cls == 'known-prior-art' else 0} | {1 if cls == 'internal-duplicate' else 0} | {1 if cls == 'new-barrier' else 0} |"
+              )
+          table_rows.append(
+              f"| **Total** | **13** | **{new_counts['viable-extension']}** | **{new_counts['known-prior-art']}** | **{new_counts['internal-duplicate']}** | **{new_counts['new-barrier']}** |"
+          )
+
+          summary = f"""---
+          id: RA-frontier-telemetry-v1
+          type: riemann-atlas-frontier-telemetry
+          atlas_version: 1
+          prospective_source_cutoff: 6140afa5cce42e087bbf5378c02a967f1a0216a3
+          derived: true
+          ---
+
+          # Frontier fertility telemetry
+
+          This is **derived strategic telemetry, not mathematical evidence**. Atlas territory mass measures the map; frontier episodes measure marginal research outcomes. Raw finding counts are deliberately not used and these ratios never feed Research Watch.
+
+          The canonical event set is [[research/graph/atlas/telemetry/frontier-events.jsonl|frontier-events.jsonl]]. The file retains the fixed trailing global window of **20 classifiable prospective episodes** recommended by the curator procedure. Older episodes remain recoverable from Git history rather than being preserved as a run diary. Entries whose exact `source_paths` no longer resolve are not retained.
+
+          ## Newest classifiable source window
+
+          The newest source window `{material_base}` → `{PINNED_HEAD}` contributes thirteen episodes:
+
+          | Line | Episodes | Viable extension | Known prior art | Internal duplicate | New barrier |
+          | --- | ---: | ---: | ---: | ---: | ---: |
+          {chr(10).join(table_rows)}
+
+          Analytic Frontier, Arithmetic Fidelity, Farey Discrepancy, Nyman–Beurling, Prime Flute and Robin Extremal retain source-backed live extensions with sharper next gates. In each case the new work narrows the missing source, conditioning, frame, event-gap, or finite-window theorem rather than merely adding another representation of the same open question.
+
+          Möbius Cancellation, Prime Circle, Prime Lattice, Visual Exploration, Weil Inertia and Xi Flow add explicit obstructions to bounded-complexity, structure-preserving, or locally observable escape routes. Weil Positivity instead classicalizes the new multicusp enlargement to known scalar-zeta scattering structure. These classifications describe marginal frontier movement in this source window, not finding volume or line quality.
+
+          ## Trailing prospective window
+
+          Across the retained {classifiable}-episode classifiable window there are **{trailing_counts['new-territory'] + trailing_counts['viable-extension']} viable/new-territory episodes**, **{trailing_counts['known-prior-art']} known-prior-art collisions**, **{trailing_counts['internal-duplicate']} internal duplicates**, and **{trailing_counts['known-barrier'] + trailing_counts['new-barrier']} barrier episodes**. Therefore:
+
+          - `FrontierFertilityEpisodes = {fertility * 100:.1f}%`
+          - `BarrierRate = {barrier * 100:.1f}%`
+          - `PriorArtCollisionRate = {collision * 100:.1f}%`
+          - `InternalDuplicateRate = {duplicate * 100:.1f}%`
+          - `InsufficientEvidence = {insufficient}`
+
+          The retained frontier is now roughly balanced between viable movement and explicit pruning, with barriers slightly dominant. These ratios describe only the represented trailing search frontier; they are not percentages of RH solved and do not imply saturation of unknown representations outside the Atlas.
+          """
+          summary = "\n".join(line[10:] if line.startswith("          ") else line for line in summary.splitlines()) + "\n"
+          summary_path = ROOT / "research/graph/atlas/telemetry/frontier-summary.md"
+          write_if_changed(summary_path, summary)
+
+          # Validate changed graph links resolve locally.
+          changed_paths = git("diff", "--name-only").splitlines()
+          allowed = set(changed_memberships) | {
+              "research/graph/intuition-membership.md",
+              "research/graph/atlas/telemetry/frontier-events.jsonl",
+              "research/graph/atlas/telemetry/frontier-summary.md",
+          }
+          unauthorized = [p for p in changed_paths if p not in allowed]
+          if unauthorized:
+              raise SystemExit(f"unauthorized publication paths: {unauthorized}")
+
+          for rel in changed_paths:
+              if not rel.endswith(".md"):
+                  continue
+              text = (ROOT / rel).read_text(encoding="utf-8")
+              for target in link_re.findall(text):
+                  if not target.startswith("research/"):
+                      continue
+                  candidate = ROOT / target
+                  if candidate.is_file():
+                      continue
+                  if candidate.with_suffix(".md").is_file():
+                      continue
+                  raise SystemExit(f"unresolved graph-owned wikilink in {rel}: {target}")
+
+          graph_json = (ROOT / ".obsidian/graph.json").read_text(encoding="utf-8")
+          if not re.search(r'"showOrphans"\s*:\s*true', graph_json):
+              raise SystemExit("Obsidian graph must keep orphan visibility enabled")
+
+          # Telemetry provenance must resolve and the summary must match retained events.
+          for e in retained_events:
+              for p in e["source_paths"]:
+                  if not (ROOT / p).is_file():
+                      raise SystemExit(f"telemetry source path disappeared: {p}")
+          if f"FrontierFertilityEpisodes = {fertility * 100:.1f}%" not in summary:
+              raise SystemExit("telemetry summary fertility mismatch")
+          if f"BarrierRate = {barrier * 100:.1f}%" not in summary:
+              raise SystemExit("telemetry summary barrier mismatch")
+
+          print(f"MATERIAL_BASE={material_base}")
+          print(f"SOURCE_HEAD={PINNED_HEAD}")
+          print(f"CANONICAL_FINDINGS={finding_total}")
+          print(f"INTUITIONS={intuition_total}")
+          print(f"PRIOR_ART={prior_total}")
+          print(f"NEW_VIABLE={new_counts['viable-extension']}")
+          print(f"NEW_BARRIER={new_counts['new-barrier']}")
+          print(f"NEW_PRIOR_ART={new_counts['known-prior-art']}")
+          print(f"TRAILING_FERTILITY={fertility * 100:.1f}")
+          print(f"TRAILING_BARRIER={barrier * 100:.1f}")
+          print(f"TRAILING_PRIOR_ART={collision * 100:.1f}")
+          print("CHANGED_PATHS=" + ",".join(changed_paths))
+          PY
+          python /tmp/mathia_graph_curator.py | tee /tmp/mathia-graph-curator.meta
+          git diff --check
+
+      - name: Publish one atomic curator commit to main
+        env:
+          PINNED_HEAD: 7fb3c38f4c72b8bfc9c96c31d5edf5ddbd2848f5
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$PINNED_HEAD"
+          test "$(git rev-parse origin/main)" = "$PINNED_HEAD"
+          git add research/*/graph/*-membership.md research/graph/intuition-membership.md research/graph/atlas/telemetry/frontier-events.jsonl research/graph/atlas/telemetry/frontier-summary.md
+          if git diff --cached --quiet; then
+            echo "No material derived delta; no commit."
+            exit 0
+          fi
+          mapfile -t staged < <(git diff --cached --name-only)
+          for path in "${staged[@]}"; do
+            case "$path" in
+              research/*/graph/*-membership.md|research/graph/intuition-membership.md|research/graph/atlas/telemetry/frontier-events.jsonl|research/graph/atlas/telemetry/frontier-summary.md) ;;
+              *) echo "Unauthorized staged path: $path" >&2; exit 1 ;;
+            esac
+          done
+          BASE=$(sed -n 's/^MATERIAL_BASE=//p' /tmp/mathia-graph-curator.meta)
+          FINDINGS=$(sed -n 's/^CANONICAL_FINDINGS=//p' /tmp/mathia-graph-curator.meta)
+          INTUITIONS=$(sed -n 's/^INTUITIONS=//p' /tmp/mathia-graph-curator.meta)
+          PRIOR_ART=$(sed -n 's/^PRIOR_ART=//p' /tmp/mathia-graph-curator.meta)
+          NEW_VIABLE=$(sed -n 's/^NEW_VIABLE=//p' /tmp/mathia-graph-curator.meta)
+          NEW_BARRIER=$(sed -n 's/^NEW_BARRIER=//p' /tmp/mathia-graph-curator.meta)
+          NEW_PA=$(sed -n 's/^NEW_PRIOR_ART=//p' /tmp/mathia-graph-curator.meta)
+          FERTILITY=$(sed -n 's/^TRAILING_FERTILITY=//p' /tmp/mathia-graph-curator.meta)
+          BARRIER=$(sed -n 's/^TRAILING_BARRIER=//p' /tmp/mathia-graph-curator.meta)
+          COLLISION=$(sed -n 's/^TRAILING_PRIOR_ART=//p' /tmp/mathia-graph-curator.meta)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cat >/tmp/commit-message <<EOF
+          research(graph): reconcile current frontier and memberships
+
+          Rebuild all 13 stable line memberships and the durable-intuition
+          projection from the pinned current tree. Capture one source-backed
+          prospective frontier episode per line and retain the 20-episode
+          global telemetry window.
+
+          Source window: $BASE -> $PINNED_HEAD
+          Canonical findings: $FINDINGS; intuitions: $INTUITIONS; prior art: $PRIOR_ART.
+          New episodes: $NEW_VIABLE viable, $NEW_BARRIER barriers, $NEW_PA prior-art.
+          Trailing rates: fertility $FERTILITY%, barrier $BARRIER%, prior-art $COLLISION%.
+
+          No canonical source claims, semantic relation notes, prior-art corpus,
+          Atlas territory states/masses, graph-view settings, or research-task
+          allocation are changed.
+          EOF
+          sed -i 's/^          //' /tmp/commit-message
+          git commit -F /tmp/commit-message
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$PINNED_HEAD"
+          git push origin HEAD:main
