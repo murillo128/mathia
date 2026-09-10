@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-maass-selberg-remainder-sign-interface
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_positivity
 based_on:
@@ -47,3 +47,7 @@ Reject the route if the only way to obtain the desired sign is to choose the tru
 `PL-253` is a prior-art redirect plus line-specific synthesis, not a Mathia proof of Weil positivity. It establishes that ordinary `SL(2)` Maaß–Selberg/Arthur truncation supplies an independently positive global distribution whose continued spectral decomposition contains the Weil zero sum, but only yields a lower bound with a signed complement. It does not establish a sign for that complement or a cancellation identity.
 
 `WP-235` and `WP-236` remain negative controls on local/marginal positive completions. They do not show that the automorphic remainder is uncontrollable, and the existence of the Maaß–Selberg global coupling does not show that it has the Weil orientation. This clue proposes only a concrete destination-side test of the remaining signed remainder; any positive result still requires the normal derivation, prior-art audit, adversarial review and normalization checks before it can become evidence.
+
+## Research disposition
+
+The direction survives initial triage, but its first canonical mechanism has been sharply narrowed. `WP-237` proves from Wong's exact zeta Maaß–Selberg decomposition that relative subtraction, averaging, differentiation, or any other linear operation acting only on the Arthur height cannot isolate the zero divisor: the entire `T`-independent explicit-formula block cancels or survives intact. Continued investigation is therefore restricted to genuinely internal source-defined operations, such as an orthogonal decomposition before scalarization or a finite–archimedean boundary pairing with an independent sign theorem.
