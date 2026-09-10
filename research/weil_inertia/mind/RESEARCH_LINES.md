@@ -2,16 +2,16 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force any surviving bow cancellation outside the same-window amplitude-capacity budget
+## Force surviving cancellation beyond both the same-window amplitude and spacing-surplus budgets
 
 **Linked intuitions:** `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`, `MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass`.
 
-WI-218--WI-231 reduce screening to an exact count--depth tariff: avoiding bow-scale localization requires enough radial source mass, and sparse local screens must pay exponentially in horizontal depth. WI-232 combines that tariff with the actual local Riemann--von Mangoldt density. A density-matched bow already consumes the local mean count, leaving only `O(log T)` complementary labels and ruling out same-window screening from the quarter-power scale upward in the calibrated fixed-power regime.
+WI-218--WI-234 reduce same-window screening to a count--depth and first-harmonic amplitude ledger. Density matching consumes the local mean zero count, selected radial depth increases the required cancellation mass, and Bellotti's near-edge zero-density bound caps the available same-window screen through the calibrated quarter boundary.
 
-WI-233--WI-234 sharpen the relevant conserved quantity from label count to **first-harmonic amplitude capacity**. Retaining the selected bow's average radial factor `A_T` strengthens the local tariff by the multiplicative mass `m A_T`; a positive-density selected depth contributes additively to the horizontal screen-depth bill. The published near-edge zero-density estimate then caps the entire same-window screen capacity at roughly `T^(1/4)` times a negative subpower factor, closing the equality boundary that the strip-width argument alone leaves delicate.
+WI-235 prices the main remaining local escape. A spacing surplus `epsilon_T` enlarges the same interval and creates additional labels, but once the selected amplitude `m A_T` exceeds the Bellotti near-edge capacity, the surplus cannot be an arbitrarily small perturbation. It must beat every fixed Korobov--Vinogradov subexponential correction to the natural power threshold. In the fixed-depth `beta=3/4` model with bow exponent `theta>1/8`, any same-window screen requires `epsilon_T` larger than `T^-1/8 exp(C S(T))` for every fixed `C` in the precise asymptotic sense of WI-235.
 
-The surviving routes are now explicit: cancellation must become nonlocal in ordinate, exploit a spacing surplus that restores a count reservoir, come from the prime/source side, or prevent a positive-density selected radial population from forming. The live bootstrap question is whether any surviving screen can be forced to carry enough population/coherence to re-enter the amplitude tariff, rather than only producing one exceptionally deep label.
+The local screening frontier is therefore narrower: a successful screen must use a genuinely larger power-scale/fixed spacing surplus, become nonlocal in ordinate, come from the prime/source side, or prevent a positive-density selected radial population from forming. The live bootstrap question is whether any of those escapes can itself be forced to carry enough source population/coherence to re-enter a quantitative amplitude ledger.
 
-## Treat local count, selected radial mass, and screen depth as one amplitude ledger
+## Treat count, radial mass, and spacing surplus as one constrained ledger
 
-A same-window screen cannot choose label count, radial depth, and selected amplitude independently. Once density matching saturates the count budget, selected radial defect increases the cancellation bill while published near-edge density limits the available screen capacity. Future source theorems should price the nonlocal/spacing/source-side escapes in this same amplitude currency rather than return to generic scalar localization.
+Density matching, selected depth, and spacing cannot be tuned independently. Small spacing surplus only adds a small label reservoir, and near-edge density turns that reservoir into a sharply bounded first-harmonic capacity. Future source theorems should price nonlocal or source-side escapes against the same amplitude scale rather than return to generic zero counts.

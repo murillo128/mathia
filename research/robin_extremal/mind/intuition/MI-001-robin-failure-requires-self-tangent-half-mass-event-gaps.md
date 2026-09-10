@@ -1,31 +1,37 @@
-# MI-001 — Robin failure is forced into a same-parameter opposite-sign prime-race cone
+# MI-001 — Robin failure is a selector problem after finite dominant-face cone compatibility
 
-**Evidence level:** exact CA localization, host sparsity, directional event depth, and quantitative same-parameter race reduction through RE-029
+**Evidence level:** exact CA localization, same-parameter prime-race cone, dominant-zero phase analysis, finite dominant-face recurrence, and additive-resolution budget through RE-032
 
 ## Core intuition
 
-The Robin route has moved from a global inequality to a sharply selected arithmetic event. A hypothetical counterexample must occur at self-tangent CA threshold states on an exceptionally sparse prime-power host set, and the same displacement that controls adjacent event depth now forces two standard prime-race errors into opposite signs at one common parameter.
+The Robin route can no longer hope that the standard and reciprocal zero coefficients make the threshold race cone intrinsically impossible. A single off-critical pair realizes the required signs near a suitable Chebyshev zero crossing, and the same phenomenon survives every nonzero finite packet of dominant modes on one off-critical vertical line.
 
-The current target is therefore a genuine arithmetic incompatibility, not an accumulation of rare-looking geometric conditions: the CA selector would have to support a negative Chebyshev excursion and a positive Mertens log-product excursion with quantitatively linked magnitudes.
+The exceptional object is therefore the **CA threshold selector**, not finite spectral coefficient geometry. It must repeatedly sample cone-compatible recurrent phase windows, and using the discreteness of CA events against those windows requires quantitative phase/additive resolution that the current asymptotics do not supply automatically.
 
 ## Strongest justified principle
 
-RE-017--RE-025 force bounded or slowly growing prime envelopes into sparse event ladders, identify the CA displacement as the relevant race coordinate, and couple that displacement to the one-sided depth/mass of the adjacent prime-power boundaries.
+RE-017--RE-029 localize hypothetical failure to self-tangent CA thresholds, couple event depth to the same frontier displacement, and force the standard Chebyshev and logarithmic Mertens-product errors into an opposite-sign quantitative cone at one common parameter `Z`.
 
-RE-026--RE-028 turn threshold failure into quantitative excursion and layer-depth requirements and expose an off-critical mixed-race signature. RE-029 removes the remaining parameter-relocation ambiguity. On the threshold-selected parameter `Z`, the Chebyshev error satisfies a forced negative displacement-scale asymptotic while the ordinary Mertens log-product error is positive on the corresponding power scale; their normalized errors diverge in opposite directions and obey a quantitative cone relation. Higher event layers are too small to account for this first-order signature.
+RE-030 tests the one-mode coefficient geometry and finds no contradiction: an off-critical pair realizes the cone near a reciprocal-positive standard-mode downcrossing. RE-031 converts that one-mode phase law to physical scale and shows that an event-spacing contradiction at additive scale `h(Z)` requires a relative source/spectral error `epsilon(Z)=o(h(Z)/(Z^(1-delta) log Z))`; square-root event resolution therefore needs a genuine power saving rather than any fixed logarithmic refinement.
+
+RE-032 then removes the possibility that finite multi-frequency interference restores an automatic sign obstruction. For every nonzero finite packet with common real part `beta>1/2`, the reciprocal packet is an exact stable-filter transform of the standard packet. Zero-mean recurrence forces a downcrossing with positive reciprocal value, and finite-frequency recurrence reproduces such neighborhoods infinitely often. For any threshold exponent in the admitted range, points exist where the standard packet has exactly the required small negative magnitude while the reciprocal packet remains uniformly positive before multiplication by the common power.
 
 ## Program consequence
 
-Attack the selected pair directly. Prove that the standard Chebyshev and Mertens log-product errors cannot occupy the RE-029 opposite-sign cone along the CA threshold sequence, or derive a source relation that transfers one error into the other with a sign/magnitude constraint strong enough to exclude that selected event. Generic prime-gap or prime-race oscillation results matter only if they survive conditioning on the CA selector.
+Target the selector-to-spectrum relation. Prove that the CA threshold sequence avoids the recurrent cone-compatible phase neighborhoods of the actual dominant spectral face, or obtain a power-saving approximation precise enough to combine the phase condition with CA event spacing. If the relevant zero contribution is not controlled by one finite vertical face, identify the genuinely infinite/multi-face structure and show how it changes the recurrence or sign geometry.
+
+Do not spend effort seeking a contradiction from the signs of finitely many dominant zero coefficients alone; RE-032 classifies that route as compatible.
 
 ## Counterevidence / boundary
 
-The two standard errors can oscillate in general, and sparsity of the selected host set does not itself forbid exceptional correlated events. RE-029 supplies a necessary same-parameter cone under the threshold-tangent failure scenario, not a theorem that this cone is empty. Larger envelope regimes and any loss in transporting generic analytic estimates to the selected sequence remain open.
+RE-032 concerns finite packets whose zeros share one real part and shows existence of cone-compatible phases, not that the CA selector visits them. It does not classify infinitely many comparable modes, several dominant real parts, truncation remainders, or the true arithmetic dependence between CA thresholds and spectral phases.
+
+RE-031's explicit additive-resolution formula is derived in the one-dominant-zero setting. Its qualitative lesson about needing selector precision remains relevant, but a general finite-packet spacing theorem would require its own quantitative transversality/remainder analysis.
 
 ## Epistemic status
 
-**Exact localization of hypothetical Robin failure to a sparse CA-selected same-parameter cone with negative Chebyshev and positive Mertens log-product excursions of linked size; exclusion of that selected arithmetic cone remains open.**
+**Exact finite-face negative boundary: the threshold cone is compatible with every nonzero finite packet on a dominant off-critical vertical line, while one-mode event-spacing exclusion requires power-saving resolution; the remaining obstruction must come from the CA selector, a stronger source relation, or genuinely non-finite spectral structure.**
 
 ## Falsification criterion
 
-Construct an admitted threshold-tangent Robin witness that violates the RE-029 same-parameter sign or magnitude relation, or prove that the selected CA sequence can realize the required opposite-sign cone indefinitely without contradicting any source constraint.
+Exhibit a nonzero finite same-real-part packet for which no arbitrarily large phase realizes the RE-032 threshold cone, or prove that finite dominant-mode coefficient geometry alone excludes the CA-selected cone without using selector information, remainder control, or additional source structure.

@@ -2,16 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove a linear-prefix Mertens-angle gap rather than merely broad prime ancestry
+## Upgrade the four-adic projective gap to a pointwise or cofinal linear-prefix gap
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-024--FD-026 pin the unrestricted sparse-horizon GCD-duality boundary at square-root endpoint growth and show that squarefree ternary data alone can saturate it. FD-027--FD-029 then add exact Möbius ancestry along increasingly broad initial prime sets and identify the remaining freedom as a rough-core source.
+FD-024--FD-030 show that squarefree ternary data and every unbounded sublinear prime-ancestry prefix can coexist with square-root GCD-duality saturation. FD-031 identifies the first genuinely different regime: at linear ancestry breadth, saturation is equivalent to projective alignment of the physical Mertens tail with one Schur-complement equality direction.
 
-FD-030 closes the scale-breadth ambiguity: every unbounded but sublinear prime prefix `Y_H=o(H)`, even one containing almost all primes below the horizon, still permits GCD-duality saturation. Thus the missing rigidity cannot be described as merely "many" active prime directions; it begins only when ancestry reaches a genuinely linear fraction of the active scale.
+FD-032 finds an unconditional absolute obstruction: the equality ray vanishes on nonsquarefree coordinates while the physical tail is forced nonzero on a macroscopic terminal block, giving squared Schur distance `Omega(H)`. FD-033 shows why that alone does not yield a uniform angle gap. Critical-line zeros force the physical Schur-tail energy itself to be superlinear, so the absolute transverse defect may be diluted projectively; the tempting route `E=O(H)` is impossible.
 
-FD-031 gives the correct linear-scale discriminator. After eliminating the ancestry-constrained variables, the relaxation deficit is exactly a Mertens-tail Schur-complement term proportional to the squared angle between the physical tail and one distinguished direction. The live theorem is therefore to prove a uniform positive angular defect, or an equivalent endpoint-reachability obstruction, for the actual Möbius tail at linear prime-prefix breadth. At `Y>=H/2`, the remaining rough-core geometry becomes especially rigid and should be treated as the first sharp test.
+FD-034 then recovers a genuine normalized obstruction from the square-divisor Jordan modes. The projective residual at horizon `H` controls a scaled copy of the physical energy at `floor(H/4)`, and iteration forces a positive geometric/Cesaro lower bound for the normalized defect along every complete `4`-adic chain. In particular, half-linear ancestry has a strict average saturation gap even when a different admissible source is chosen at every horizon.
 
-## Treat support, ternary values, and every sublinear ancestry prefix as controls
+The live theorem is now to upgrade this multiscale average rigidity. Prove a pointwise/cofinal lower bound on the normalized Schur defect, extend the square-divisor renormalization to enough multiplicative scales to prevent sparse escape, or combine it with endpoint reachability so that a saturating subsequence cannot hide between the forced `4`-adic defects.
 
-Squarefree support, bounded ternary coefficients, polynomial growth, fixed or sparse exact ancestry, and now **any sublinear growing initial-prime ancestry** can coexist with the free square-root saturation mechanism. A proposed Möbius-specific coercivity theorem must enter at linear scale or through an equally global divisor-complete relation, and must control the exact Mertens-tail direction exposed by the Schur reduction rather than count local identities.
+## Treat absolute tail distance and superlinear energy as separate controls
+
+Linear-scale support mismatch is real, but absolute distance alone is not coercive because the physical Mertens energy is unconditionally superlinear. The useful invariant is normalized/projective defect. Conversely, FD-034 shows that this projective escape cannot persist densely along a full multiplicative chain. Future arguments should preserve that normalization rather than return to raw tail norms or sublinear ancestry counts.

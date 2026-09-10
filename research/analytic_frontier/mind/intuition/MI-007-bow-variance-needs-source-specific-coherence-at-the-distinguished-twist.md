@@ -1,33 +1,37 @@
-# MI-007 — Bow variance is a cubic-scale arithmetic endpoint-completion problem
+# MI-007 — Bow variance is an absolute endpoint-charge problem after cubic-scale localization
 
-**Evidence level:** exact Fejer-minus-completion identity, carrier no-go, Selberg-calibrated total-variation threshold, and all-interval source controls through ANF-165
+**Evidence level:** exact Fejer-minus-completion identity, Selberg-calibrated localization, all-interval source controls, and matched endpoint-charge obstruction through ANF-166
 
 ## Core intuition
 
-The endpoint threat in the bow identity has moved well beyond the original square-root localization bound. Once the actual prime residual is combined with Selberg calibration, the first scale at which endpoint completion can carry target-sized mass is the cubic total-variation scale `R_TV=(X K log X)^(1/3)`.
+The bow endpoint problem is no longer primarily about finding stronger relative cancellation on long intervals. The strongest current source estimates already push dangerous completion beyond every fixed polylogarithmic enlargement of the cubic total-variation scale, yet a deterministic matched control shows that all such increment bounds can coexist with target-sized endpoint energy if the absolute primitive is charged once and then remains nearly constant.
 
-More importantly, the current source controls do not merely locate that onset. All-interval decorrelation and a fixed Cramer--Granville gauge force any dangerous endpoint energy beyond every fixed polylogarithmic multiple of `R_TV` in the `epsilon<1/16` regime. The live arithmetic obligation is therefore a power-scale one.
+The decisive currency is therefore the size and persistence of the **absolute endpoint primitive**, not the number of logarithms saved in later interval increments.
 
 ## Strongest justified principle
 
-ANF-157 writes bow variance exactly as positive Fejer source energy minus an endpoint-completion square. ANF-158 translates a large completion into large twisted cumulative residual modes, while ANF-159--ANF-161 rule out the tempting parity-quantized carrier as the source of the required spike. ANF-162 then gives the first source-specific local second-moment reduction and shows why square-root windows arise from those inputs alone.
+ANF-157 writes bow variance exactly as positive Fejer source energy minus an endpoint-completion square. ANF-158--ANF-165 progressively sharpen the source localization and show that, in the current subcritical regime, target-sized completion cannot occur inside any fixed polylogarithmic multiple of `R_TV=(X K log X)^(1/3)` under the available all-interval decorrelation and Cramer--Granville normalization.
 
-ANF-163 changes the natural normalization by inserting the Selberg-calibrated source budget: endpoint completion below `R_TV/omega` is negligible, while target-sized completion requires macroscopic correction at the cubic scale. ANF-164 shows that sufficiently uniform interval decorrelation repels this energy farther when `epsilon<1/16`. ANF-165 removes the remaining fixed polylogarithmic normalization loss with a global Cramer--Granville gauge, so every fixed polylog multiple of `R_TV` is still too small for the dangerous correction in that regime.
+ANF-166 then proves the missing information boundary. It constructs source-budget-matched data whose long-interval discrepancy is stronger than every fixed logarithmic saving above an activation length `H_0`, but whose prefix/suffix primitive reaches `asymp sqrt(X log X)` and stays there for a macroscopic fraction of the endpoint horizon. The resulting endpoint square remains a fixed fraction of `XK log X`.
+
+Consequently an estimate `|sum_I b_n| <= rho_X |I|` for `|I|>=H_0` cannot by itself imply negligible endpoint completion unless `rho_X H_0=o(sqrt(X log X))`. For the present `H_0=X^(5/8+eta)`, this requires `rho_X=o(X^(-1/8-eta)sqrt(log X))`: a true power-scale gain. Arbitrary fixed powers of `1/log X` are polynomially insufficient.
 
 ## Program consequence
 
-Attack the actual residual at a genuinely larger scale. The useful targets are a power enlargement `R_TV X^delta`, a square-function/cancellation estimate that controls the same endpoint functional directly, or a positive combined Fejer/completion inequality. Repeating carrier resonance tests or sharpening logarithmic factors around the cubic threshold no longer changes the load-bearing obstruction.
+Target one of the currencies that the matched control cannot fake: an absolute prefix/suffix anchor below `sqrt(X log X)`, cancellation beginning essentially at square-root physical length, a direct square-function bound for the endpoint primitive, or a source-faithful prime/rough constraint that rules out charge-and-hold behavior.
 
-The `epsilon=1/16` activation boundary must be treated separately rather than hidden inside an extrapolation of the subcritical argument.
+Do not treat another logarithmic improvement of all-interval discrepancy as progress unless it crosses the exact product gate `rho_X H_0=o(sqrt(X log X))`.
 
 ## Counterevidence / boundary
 
-The current results do not prove endpoint completion is negligible at every power enlargement of `R_TV`, nor do they prove that the positive Fejer term dominates it. The all-interval decorrelation input is itself arithmetic and must be available in the exact family consumed by the bow identity. Cancellation at scales beyond the proved range remains possible.
+ANF-166 is synthetic and is not asserted to equal the actual demodulated prime residual. It therefore does not prove the arithmetic endpoint square is large. It proves only that the aggregate source information extracted through ANF-165 is insufficient. A genuinely prime-specific support, sign, factorization, or multiscale law may forbid persistent charge even when generic interval bounds do not.
+
+The positive Fejer term may also dominate completion through a coupled inequality not visible from separate discrepancy estimates.
 
 ## Epistemic status
 
-**Supported exact reduction of the surviving bow obstruction to source-specific endpoint completion beyond every fixed polylogarithmic multiple of the cubic total-variation scale in the current subcritical regime; the required power-scale cancellation theorem remains open.**
+**Exact information boundary: current long-interval source controls, even strengthened beyond every fixed logarithmic saving, do not control bow completion unless they also force an absolute-prefix gain; the surviving theorem must rule out persistent endpoint charge in the actual arithmetic source.**
 
 ## Falsification criterion
 
-Construct admissible prime residual data satisfying the ANF-163--ANF-165 source hypotheses whose endpoint completion reaches the target scale inside a fixed polylogarithmic multiple of `R_TV`, or prove that those same hypotheses already control a power enlargement without any additional arithmetic input.
+Show that the ANF-166 matched control violates one of the source hypotheses actually used in the endpoint theorem, or prove from those same hypotheses alone that `rho_X H_0=o(sqrt(X log X))` or an equivalent primitive-square estimate already follows.
