@@ -59,7 +59,7 @@ For every unbounded `S\subset\mathbb N`, set
 \tag{6}
 \]
 
-Then there is a constant `\nu_F>0` such that
+Then there is a constant `\nu_F\ge1` such that
 
 \[
 \tau_F(S)
@@ -150,7 +150,7 @@ There exist constants `A>0` and `\nu>0` such that
 \tag{13}
 \]
 
-for `x` sufficiently close to `Z_F`; compactness lets the constant be adjusted so that, after truncating distance at one as in `(5)`,
+for `x` sufficiently close to `Z_F`. Increasing `\nu` if necessary lets us take `\nu\ge1`, and compactness lets the constant be adjusted so that, after truncating distance at one as in `(5)`,
 
 \[
 |P_U(x)|\ge A'\delta(x)^\nu
@@ -238,7 +238,7 @@ Let
 \qquad
 u=e^{2\pi i\alpha},
 \qquad
-F(n)=1-\nu^n.
+F(n)=1-u^n.
 \tag{22}
 \]
 
