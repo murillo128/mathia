@@ -69,6 +69,11 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - S. W. Graham and Grigori Kolesnik, **Van der Corput's Method of Exponential Sums**, London Mathematical Society Lecture Note Series 126, Cambridge University Press (1991), DOI `10.1017/CBO9780511661976`. Role: classical anchor for the second-derivative exponential-sum estimate used in XF-057. For a phase with curvature `|f''|\asymp\lambda`, the relevant bound is `O(N\lambda^{1/2}+\lambda^{-1/2})`; XF-057 applies it to quadratic chirp curvature `\lambda\asymp q^{-3}` and derives the Xi-flow scale consequences independently.
 
+## Theta/Poisson converse rigidity
+
+- H. Hamburger, **Über die Riemannsche Funktionalgleichung der ζ-Funktion (Erste Mitteilung)**, *Mathematische Zeitschrift* 10 (1921), 240–254; EuDML document `167643`. Role: primary classical anchor for the converse theorem characterizing the Riemann zeta function among suitably finite-order Dirichlet series by the Riemann functional equation. XF-168 uses this theorem after deriving the completed functional equation from exact Jacobi reciprocity on a weighted single square lattice.
+- Jerzy Kaczorowski, Giuseppe Molteni and Alberto Perelli, **A converse theorem for Dirichlet L-functions**, *Commentarii Mathematici Helvetici* 85:2 (2010), 463–483, DOI `10.4171/CMH/202`. Role: modern peer-reviewed statement of Hamburger's theorem with the exact hypotheses used in XF-168: absolute Dirichlet convergence for `Re(s)>1`, finite order after clearing the pole at `s=1`, and the completed Riemann functional equation imply `f=g=c zeta`. The introduction also records the classical connection with uniqueness properties of Poisson summation.
+
 ## Audited contemporary claims
 
 - Kevin Schatz, **Riemann Hypothesis: Backward Parabolic Positivity Barriers for the Xi Flow**, preprint dated 20 November 2025, DOI `10.5281/zenodo.17636625`. Role: source audited in XF-001. The manuscript claims a backward positivity barrier proving `Lambda=0`; XF-001 gives an exact backward-heat double-collision calculation showing that its Lemma C.1 holomorphic root-labelling step is false and that the speed-dependent endpoint Gronwall bridge is not justified as written. This source is retained as an audit target, not as established RH evidence.
