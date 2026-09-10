@@ -170,7 +170,7 @@ while coordinate evaluation satisfies
 Hence
 
 \[
-\left|\frac{m_d}{t}-v_d^{(H)}_d\right|
+\left|\frac{m_d}{t}-v_d^{(H)}\right|
 \le
 Z\sqrt{\frac1{R_H}-\frac1{C_H}}
 \le
