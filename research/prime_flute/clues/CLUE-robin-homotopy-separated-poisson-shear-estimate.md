@@ -17,6 +17,8 @@ based_on:
   - research/prime_flute/findings/PF-271-separated-propagation-only-needs-sublinear-low-output-leakage.md
   - research/prime_flute/findings/PF-272-sublinear-output-windows-restore-a-strict-finite-seam-exponent.md
   - research/prime_flute/findings/PF-273-seam-square-root-is-a-complete-bernstein-green-continuum-with-mass-one-edge.md
+  - research/prime_flute/findings/PF-274-fixed-axis-massive-jacobi-chain-is-a-squared-continuous-hahn-operator.md
+  - research/prime_flute/findings/PF-275-mass-one-continuum-forbids-supercritical-raw-source-fixed-row-leakage.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
 
@@ -32,104 +34,93 @@ PF-272 settles the naked fixed-axis relative seam positively. Its odd discrete G
 \mu_0=\sqrt{1+\pi^2/(4r^2s^2)}>1,
 \]
 
-and therefore a strict deep-block exponent for every fixed `0<\theta<1`:
-
-\[
-\|F_{N^\theta}\mathcal R^0_{s,r}E_N\|
-\asymp
-N^{-\alpha_s(\theta)},
-\qquad
-\alpha_s(\theta)=1+(1-\theta)(\mu_0-1/2)>1.
-\]
-
-PF-273 now shows why that exponent is **not** the right calibration for the square-root source. Writing `w=rs`,
-
-\[
-Q_w^{1/2}=g_w(L),
-\qquad
-g_w(\lambda)=\sqrt{\sqrt\lambda\tanh(w\sqrt\lambda)},
-\]
-
-`g_w` is a complete Bernstein function whose exact positive resolvent measure is absolutely continuous and reaches `t=0`; in the PF-264 Green variable `\mu(t)=\sqrt{1+t}`, the square-root continuum therefore reaches `\mu=1`. The raw seam's first-pole gap has been closed by the square root itself.
-
-At the same time, PF-273 makes the remaining fixed-axis object more concrete. If
+and therefore a strict deep-block exponent for every fixed `0<\theta<1`. PF-273 then shows why that exponent is not inherited by the square-root source: if
 
 \[
 X_w=s^{-1/2}A^{-1/4}g_w(L),
 \qquad
 \mathcal R^0_{s,r}=X_wX_w^*,
+\qquad
+w=rs,
 \]
 
-then PF-257's polar-free normalized injection is exactly
+then `g_w` is a complete Bernstein function whose positive resolvent measure reaches `t=0`, equivalently the Green threshold `\mu(t)=\sqrt{1+t}\downarrow1`.
+
+PF-275 turns that structural edge into an exact leakage obstruction without requiring a shrinking-mass asymptotic. For every fixed low parity row `P_i` and every `q>1`,
+
+\[
+N^q\|P_iX_wE_N\|\to\infty.
+\]
+
+The proof chooses, after `q` is specified, one sufficiently small **fixed** positive mass slice from PF-273's continuum and uses Green positivity plus PF-262's fixed-source tail. Thus the raw square-root source already fails every supercritical PF-271 exponent, even on a fixed output row. A sharper `t\log N=O(1)` asymptotic may still determine the exact critical law, but it is no longer needed to decide whether `X_w` itself has an `R>1` margin.
+
+PF-257 identifies the actual fixed-axis injection as
 
 \[
 B_w=(I+\mathcal R^0_{s,r})^{-1}X_w.
 \]
 
-PF-254 also places every nontrivial reflection cycle behind positive longitudinal propagation. Thus the first unsmoothed fixed-axis discriminator is `B_w` itself; reflection cycles should not be bundled into an artificial pre-propagation obstruction when their scale conversion is already propagation-dressed.
+Therefore the **entire** possible supercritical gain must now come from the noncommuting rational normalization. PF-274 supplies an exact continuous-Hahn transform for the underlying fixed-axis functional calculus, so the remaining question can be posed as a threshold-cancellation problem rather than as generic operator smoothing.
 
 ## Research question
 
-Can the **complete fixed-axis normalized source**
+Can the complete fixed-axis normalized source
 
 \[
 B_w=(I+\mathcal R^0_{s,r})^{-1}X_w
 \]
 
-suppress the mass-one edge of `X_w` strongly enough that, for some fixed `\theta<1`, `R>1`, and `\varepsilon>0`,
+suppress the mass-one edge strongly enough that, for some fixed `\theta<1`, `R>1`, and `\varepsilon>0`,
 
 \[
-\left\|
-F_{\Lambda,\theta}
-B_w
-E_\Lambda
-\right\|
-\lesssim
-\Lambda^{-R-\varepsilon},
+\left\|F_{\Lambda,\theta}B_wE_\Lambda\right\|
+\lesssim\Lambda^{-R-\varepsilon},
 \tag{1}
 \]
 
-uniformly in the fixed-axis parameter range needed by the canonical tail? Here `E_\Lambda` is the high input shell for `K_s^0` and `F_{\Lambda,\theta}` is the PF-271 sublinear low-output projector. If the following separated propagation is exactly `e^{-dK}`, use PF-271's sharper logarithmic output window.
+uniformly in the fixed-axis parameter range needed by the canonical tail? If the following separated propagation is exactly `e^{-dK}`, use PF-271's logarithmic output window.
 
-The central issue is no longer whether the raw seam has a strict first-pole exponent: PF-272 proves that it does. Nor is it whether the square-root source is an arbitrary polar mixer: PF-273 replaces it by a sign-coherent continuum of massive axis Green resolvents. The unresolved question is whether the **noncommuting rational normalization** `(I+\mathcal R^0_{s,r})^{-1}` removes enough of the continuum touching `\mu=1` to recover the strict margin required by PF-271.
+The key discriminator is now sharper than in PF-273. It is not enough for `(I+\mathcal R^0_{s,r})^{-1}` to be bounded, positive, or mildly local: PF-275 proves that `X_w` has no hidden strict exponent to preserve. The normalization must specifically remove or cancel the threshold contribution responsible for the fixed-row `q\downarrow1` obstruction.
 
 If the fixed-axis normalized source passes, only then transport the one-sided leakage estimate through PF-255/PF-256 to the actual corridor and use PF-254/PF-270 to keep reflection conversion on the propagated side of the factorization.
 
 ## Why it may matter
 
-A positive answer to (1) would close the last genuinely unsmoothed fixed-axis scale-conversion gate in the PF-243 high-high shear route. The remaining work would become geometric/uniform: transfer the estimate to the actual `K_a` corridor, keep constants uniform in the canonical tail and Robin homotopy, and pay later reflection/output derivatives with the positive separation already present in the exact factor ordering.
+A positive answer to (1) would identify a genuinely nontrivial Robin mechanism: the nonlinear normalization would create spectral locality that is absent from the raw square-root Dirichlet-to-Neumann source. The remaining work would then become geometric/uniform — transfer to the actual `K_a` corridor, control canonical-tail and homotopy constants, and pay later reflection/output derivatives with positive separation.
 
-A negative answer would also be decisive. PF-273 identifies a specific candidate obstruction rather than a generic failure of smoothing: the square-root Dirichlet-to-Neumann factor replaces PF-272's discrete mass gap by a continuum down to `\mu=1`. If that contribution survives `(I+\mathcal R^0_{s,r})^{-1}` with a stable lower bound, then the normalized source itself blocks the PF-271 route before any sheared-coordinate or hypercycle transport issue enters.
+A negative answer is equally decisive. PF-275 shows that the mass-one continuum is not merely suggestive; it already produces an exact fixed-row obstruction for `X_w`. If one nonzero threshold coefficient survives the normalization, the PF-271 route fails before sheared-coordinate, hypercycle-transport, or global reassembly issues enter.
 
 ## Decisive test
 
-Remain on the fixed axis and use PF-273's exact Stieltjes decomposition of `X_w`. Split its positive Green continuum into a small-mass sector and its complement. Near the lower edge,
+Work with a fixed output parity mode `f_i`. The normalized row has the exact adjoint form
 
 \[
-t\,d\nu_w(t)
-\sim
-\frac{\sqrt w}{\pi}t^{1/2}\,dt,
+B_w^*f_i
+=s^{-1/2}g_w(L)z_i,
+\qquad
+z_i:=A^{-1/4}(I+\mathcal R^0_{s,r})^{-1}f_i.
+\tag{2}
 \]
 
-while PF-264's fixed-mass Green law has `\mu(t)=\sqrt{1+t}`. The natural boundary layer is therefore `t\log(j/i)=O(1)`. First prove a small-mass Green estimate uniform enough to control that layer; do not integrate PF-264's fixed-`t` asymptotic without such uniformity.
+Use PF-274's continuous-Hahn representation, or an equivalent Green formulation, to identify the coefficient of the nearest `\xi=\pm i` / `\mu=1` threshold contribution for the special vector `z_i`. PF-275 shows that the corresponding coefficient is nonzero for an unnormalized basis row; the question is whether the Robin-normalized `z_i` acquires an exact zero or sufficient vanishing at that threshold.
 
-Then estimate the same high-to-low block after left multiplication by `(I+\mathcal R^0_{s,r})^{-1}`. There are two genuinely decisive outcomes:
+There are two decisive outcomes:
 
-- prove that the rational normalization converts the mass-one continuum into a strict `R>1` block on at least one sublinear output window (or on the logarithmic window for exact exponential propagation); or
-- prove a sign/size-stable lower bound showing that a mass-one contribution survives normalization strongly enough to forbid every PF-271-compatible `R>1` estimate.
+- **survival:** prove that the threshold coefficient is nonzero for at least one fixed row. Then a PF-275-type fixed-mass-slice lower bound should propagate through the normalization and forbid every PF-271-compatible `R>1` estimate;
+- **cancellation:** prove that the normalized source vector has a threshold zero of sufficient order, and convert that zero into a strict high-to-low block exponent on one PF-271 window.
 
-Do not return to PF-268's proportional block or reprove PF-272's naked-seam estimate: neither decides this question. Do not split off a polar partial isometry: PF-257 and PF-273 give the combined scalar/Green structure needed to attack the actual normalized source.
+Do not first spend effort deriving a sharp raw-`X_w` boundary-layer asymptotic merely to test supercritical smoothing; PF-275 has already ruled that out. Such an asymptotic is useful only if it is needed to quantify the normalized cancellation. Do not return to PF-268's proportional block or reprove PF-272's naked-seam estimate, and do not split off a polar partial isometry.
 
 If the fixed-axis test passes, carry only the required one-sided leakage through PF-255/PF-256 and the exact PF-254 factor ordering. Track `s`, corridor index, and homotopy parameter explicitly rather than identifying fixed-axis and actual spectral projectors. Reflection cycles already containing positive longitudinal propagation belong to the paid side of the decomposition.
 
 ## Evidence boundary
 
-PF-243 certifies the fixed-seam variational derivative and the implication from separated source-to-bulk estimates to the local trace bound. PF-269--PF-271 reduce the necessary pre-propagation requirement to deep low-output leakage. PF-272 proves the **naked fixed-axis relative seam** has a strict sublinear exponent at every fixed finite seam scale. PF-273 proves that the square-root factor entering `X_w` is instead a positive complete-Bernstein Green continuum with support reaching the mass-one edge, and identifies the exact polar-free normalized source `B_w=(I+\mathcal R^0_{s,r})^{-1}X_w`.
+PF-243 certifies the fixed-seam variational derivative and the implication from separated source-to-bulk estimates to the local trace bound. PF-269--PF-271 reduce the necessary pre-propagation requirement to deep low-output leakage. PF-272 proves the naked fixed-axis relative seam has a strict sublinear exponent at every fixed finite seam scale. PF-273 proves that the square-root factor entering `X_w` is instead a positive complete-Bernstein Green continuum with support reaching the mass-one edge. PF-274 gives the exact continuous-Hahn spectral representation. PF-275 proves that the **raw source `X_w` itself fails every exponent `q>1` already on a fixed output row**.
 
-What is not established is a sharp small-mass two-index asymptotic uniform in the shrinking boundary layer, the block estimate (1) for `B_w`, any obstruction theorem showing that (1) fails, uniformity in the canonical corridor parameters, preservation under actual `K_a` transport, or the final uniform far-leg elliptic estimate. The mass-one edge is an exact structural fact about the square-root representation; it is **not** by itself a proof of critical leakage for the normalized source.
+What is not established is any corresponding obstruction or positive estimate for `B_w`, any theorem forcing or excluding a threshold zero for `z_i`, uniformity in the canonical corridor parameters, preservation under actual `K_a` transport, or the final uniform far-leg elliptic estimate. PF-275 does not prove a sharp `N^{-1}` asymptotic and does not claim that the noncommuting normalization is incapable of cancellation.
 
 No full weak-trace theorem, physical `P/H` recoupling theorem, finite-pant theorem, neighboring-cell theorem, scattering/determinant result, prime/control separation, zeta-zero statement, or RH consequence is established by this clue.
 
 ## Research disposition
 
-The clue remains `accepted`, but its fixed-axis target is materially narrower. PF-272 removes the naked relative seam as the obstruction; PF-273 shows that the square-root source loses the same first-pole mass gap; and PF-254 places reflection cycles after positive propagation. The next discriminator is therefore the **complete polar-free normalized source** `(I+\mathcal R^0_{s,r})^{-1}X_w` acting on the mass-one Green continuum.
+The clue remains `accepted`, with a narrower and more falsifiable fixed-axis target. PF-275 removes raw square-root smoothing as a possible source of the required margin. The next discriminator is whether `(I+\mathcal R^0_{s,r})^{-1}` creates an exact threshold cancellation in the special normalized source vector (2); without such a mechanism, the mass-one fixed-row obstruction survives and the PF-271 route closes.
