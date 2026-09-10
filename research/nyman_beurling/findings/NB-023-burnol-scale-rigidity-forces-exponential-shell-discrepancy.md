@@ -1,8 +1,8 @@
 # NB-023 — Burnol scale rigidity forces exponential shell discrepancy
 
-**Status:** `LITERATURE+DERIVED + EXACT-DERIVED + BURNOL-SCALE-RIGIDITY + EXPONENTIAL-DISCREPANCY-FLOOR + NEAR-OPTIMAL-RATE-POWER-RIGIDITY + MIXING-SCALE-BOUNDARY`. `NB-022` turns the intrinsic consecutive shell discrepancy `\Delta_N` of the canonical best residual into an upper bound for how much approximation quality can be gained from high generator indices. Burnol's classical zero-sensitive lower bound supplies the missing estimate in the opposite direction: a substantially shorter Nyman section cannot already have the same very small distance unless the shell discrepancy of the larger section is correspondingly large.
+**Status:** `LITERATURE+DERIVED + EXACT-DERIVED + BURNOL-SCALE-RIGIDITY + EXPONENTIAL-DISCREPANCY-FLOOR + NEAR-OPTIMAL-RATE-POWER-RIGIDITY + MIXING-SCALE-BOUNDARY`. `NB-022` turns the intrinsic consecutive shell discrepancy `\Delta_N` of the canonical best residual into an upper bound for how much approximation quality can be gained from high generator indices. Burnol's classical zero-sensitive lower bound supplies the estimate in the opposite direction: a substantially shorter Nyman section cannot already have the same very small distance unless the shell discrepancy of the larger section is correspondingly large.
 
-The combination is much stronger than the polynomial discrepancy floor in `NB-022`. Let
+Let
 
 \[
 V_N=\operatorname{span}\{g_2,\ldots,g_N\},\qquad
@@ -10,38 +10,35 @@ r_N=e-P_Ne,\qquad d_N=\|r_N\|,
 \tag{1}
 \]
 
-and let `\Delta_N` denote the consecutive discrepancy of the periodic harmonic-shell sequence of `r_N`, as in `NB-019`--`NB-022`. Write
+and let `\Delta_N` be the consecutive discrepancy of the periodic harmonic-shell sequence of `r_N`, as in `NB-019`--`NB-022`. Define Burnol's critical-line constant
 
 \[
 \mathfrak B_\zeta
 :=
-\sum_{\Re\rho=1/2}
-\frac{m(\rho)^2}{|\rho|^2},
+\sum_{\Re\rho=1/2}\frac{m(\rho)^2}{|\rho|^2},
 \tag{2}
 \]
 
-where the sum is over the distinct non-trivial zeros on the critical line and `m(\rho)` is multiplicity. Burnol's bound, in the discrete Nyman--Báez-Duarte normalization used here, gives
+where the sum is over distinct non-trivial zeros on the critical line. In the discrete Nyman--Báez-Duarte normalization,
 
 \[
-\liminf_{K\to\infty} d_K^2\log K\ge \mathfrak B_\zeta.
+\liminf_{K\to\infty}d_K^2\log K\ge\mathfrak B_\zeta.
 \tag{3}
 \]
 
-Consequently, for every fixed `0<b<\mathfrak B_\zeta`, there is `K_b` such that for all integers `N>K\ge K_b`,
+Combining this with `NB-022` gives the finite cross-scale inequality: for every fixed `0<b<\mathfrak B_\zeta`, there is `K_b` such that for all integers `N>K\ge K_b`,
 
 \[
 \boxed{
 \Delta_N
 \ge
-\frac{K}{60}
-\left(\frac{b}{\log K}-d_N^2\right)_+^{1/2}.
+\frac K{60}
+\left(\frac b{\log K}-d_N^2\right)_+^{1/2}.
 }
 \tag{4}
 \]
 
-This is a finite cross-scale rigidity inequality. It says that whenever the `N`-section beats the Burnol floor appropriate to a shorter section `K`, the difference must be paid by shell discrepancy in the `N`-section.
-
-On the closure branch `d_N\to0`, (4) can be optimized without any assumed upper approximation rate. Fix `0<b<\mathfrak B_\zeta` and `0<\theta<1`. Then, for all sufficiently large `N`,
+On the closure branch `d_N\to0`, this can be optimized. For every fixed `0<b<\mathfrak B_\zeta` and `0<\theta<1`, all sufficiently large `N` satisfy
 
 \[
 \boxed{
@@ -50,57 +47,49 @@ On the closure branch `d_N\to0`, (4) can be optimized without any assumed upper 
 c_\theta d_N
 \exp\!\left(\frac{\theta b}{d_N^2}\right),
 \qquad
-c_\theta:=\frac1{120}\sqrt{\frac{1-\theta}{\theta}}.
+c_\theta=\frac1{120}\sqrt{\frac{1-\theta}{\theta}}.
 }
 \tag{5}
 \]
 
-Thus the intrinsic discrepancy is not merely forced to grow like a power of `d_N^{-1}`. Every successful sequence of best Nyman approximants must develop shell discrepancy at least **exponential in `1/d_N^2`**, with any exponent strictly below the Burnol constant available.
+Thus the intrinsic discrepancy is forced to grow at least exponentially in `1/d_N^2`, with every exponent strictly below the Burnol constant available. This is asymptotically much stronger than the polynomial floor `\Delta_N\gg d_N^{-3/2}` obtained in `NB-022` from the early Möbius coefficient core.
 
-There is a particularly transparent consequence at the conjecturally optimal distance scale. If
+At the conjecturally optimal distance scale the consequence becomes almost linear in section size. If
 
 \[
 d_N^2\log N\longrightarrow\mathfrak B_\zeta,
 \tag{6}
 \]
 
-then for every fixed `0<\alpha<1`, taking `K=\lfloor N^\alpha\rfloor` in (4) and then letting `b\uparrow\mathfrak B_\zeta` gives
+then for every fixed `0<\alpha<1`,
 
 \[
 \boxed{
 \Delta_N
 \ge
 \left(
-\frac1{60}
-\sqrt{\frac{\mathfrak B_\zeta(1-\alpha)}{\alpha}}
-+o(1)
+\frac1{60}\sqrt{\frac{\mathfrak B_\zeta(1-\alpha)}{\alpha}}
+-o(1)
 \right)
 \frac{N^\alpha}{\sqrt{\log N}}.
 }
 \tag{7}
 \]
 
-In particular
+Consequently
 
 \[
 \boxed{
-\Delta_N\ge N^{1-o(1)}
+\liminf_{N\to\infty}\frac{\log\Delta_N}{\log N}\ge1,
 }
 \tag{8}
 \]
 
-in the logarithmic-power sense: for every fixed `\alpha<1`, eventually `\Delta_N\ge N^\alpha` after absorbing the logarithmic factor. Bettin--Conrey--Farmer prove the saturation (6) under RH together with their reciprocal-`\zeta'` moment hypothesis, so under that established conditional model the canonical shell residual is forced to have almost linear discrepancy in power scale.
+or equivalently: for every fixed `\beta<1`, eventually `\Delta_N\ge N^\beta`. To obtain that last formulation from (7), choose any fixed `\alpha` with `\beta<\alpha<1`; the factor `N^{\alpha-\beta}/\sqrt{\log N}` then diverges. This corrects the tempting but invalid inference that the logarithmic factor in (7) could be absorbed while keeping the same exponent `\alpha`.
 
-This does not contradict the still-open alternative `\Delta_N=o(N)` from `NB-021`--`NB-022`; quantities such as `N/\log N` are both sublinear and `N^{1-o(1)}`. It does show that, near the expected optimal Nyman rate, any sublinear-discrepancy regime must be extremely close to the full section scale. In particular the intrinsic mixing certificate
+Bettin--Conrey--Farmer prove the saturation (6) under RH together with their reciprocal-`\zeta'` moment hypothesis. Under that established conditional model, the canonical shell residual is therefore forced to have almost linear discrepancy in power scale. This remains compatible with `\Delta_N=o(N)`; for example `N/\log N` has both properties.
 
-\[
-\|Q_mr_N-\mu_Ne\|_\infty\le\frac{2\Delta_N}{m}
-\tag{9}
-\]
-
-cannot become effective at a genuinely fixed power below `N` under (6). Any scale with `\Delta_N/m_N\to0` must satisfy `m_N\gg N^\alpha` for every fixed `\alpha<1` in that regime. This sharply narrows the idea that useful source transport might arise simply by waiting for shell mixing at an intermediate polynomial depth.
-
-## 1. Section compression converts every shorter-distance floor into a discrepancy lower bound
+## 1. A shorter-section distance floor becomes a discrepancy lower bound
 
 `NB-022` proves the exact section-compression estimate
 
@@ -108,220 +97,157 @@ cannot become effective at a genuinely fixed power below `N` under (6). Any scal
 0\le d_K^2-d_N^2
 \le\frac{3600\Delta_N^2}{K^2},
 \qquad 2\le K<N.
-\tag{10}
+\tag{9}
 \]
 
-Its proof is intrinsic to the canonical harmonic-shell model: shell Fourier inversion and finite Möbius inversion give
+It comes from the shell-Fourier/Möbius estimate
 
 \[
 \left(\sum_{n=2}^N n^2|a_{N,n}|^2\right)^{1/2}
-\le60\Delta_N,
-\tag{11}
+\le60\Delta_N
+\tag{10}
 \]
 
-which in turn controls the Hilbert norm of the high-index part of the actual `N`-section projection. No approximation-rate theorem is used in (10).
+for the actual optimal coefficient vector, followed by a Hilbert-norm bound for the high-index tail of the `N`-section projection.
 
-Burnol's result is the complementary source-independent distance floor. In the standard discrete Báez-Duarte formulation it implies (3). Equivalently, for every fixed `b<\mathfrak B_\zeta`,
+Burnol's bound (3) means that for every fixed `b<\mathfrak B_\zeta`,
 
 \[
 d_K^2\ge\frac b{\log K}
-\tag{12}
+\tag{11}
 \]
 
-for all sufficiently large `K`. This is exactly the form already used qualitatively in `NB-020` and `NB-022`, but retaining the scale `K` rather than replacing it by a coarse absolute constant is decisive here.
-
-Combining (10) and (12) gives
+for all sufficiently large `K`. Combining (9) and (11) gives
 
 \[
 \frac b{\log K}-d_N^2
-\le
-\frac{3600\Delta_N^2}{K^2}.
+\le\frac{3600\Delta_N^2}{K^2},
+\tag{12}
+\]
+
+and taking the positive part and square root proves (4). The positive part is essential: a comparison scale `K` gives information only when the larger `N`-section has actually crossed below the Burnol floor appropriate to `K`.
+
+This is not a restatement of Burnol. Burnol constrains each section separately; the new ingredient is `NB-022`'s source-specific compression bridge, which makes the floor at one section size constrain the harmonic-shell geometry of a longer best residual.
+
+## 2. The optimal comparison scale is exponential in inverse squared distance
+
+Assume `d_N\to0`, fix `b<\mathfrak B_\zeta` and `0<\theta<1`, and put
+
+\[
+X_N=\exp\!\left(\frac{\theta b}{d_N^2}\right),
+\qquad K_N=\lfloor X_N\rfloor.
 \tag{13}
 \]
 
-Taking the positive part and square root proves (4). The positive part is load-bearing: when the larger-section distance has not dropped below the Burnol floor at `K`, that particular comparison says nothing about discrepancy.
-
-Equation (4) is therefore not a reformulation of Burnol. Burnol constrains each section separately; `NB-022` supplies the new bridge that makes a short-section floor constrain the shell geometry of a longer section.
-
-## 2. Optimizing the comparison scale gives an exponential inverse-distance barrier
-
-Assume `d_N\to0`, fix `b<\mathfrak B_\zeta` and `0<\theta<1`, and define
-
-\[
-X_N:=
-\exp\!\left(\frac{\theta b}{d_N^2}\right),
-\qquad
-K_N:=\lfloor X_N\rfloor.
-\tag{14}
-\]
-
-For sufficiently large `N`, both the Burnol bound at `N` and at `K_N` are available. The bound at `N` gives
-
-\[
-d_N^2\ge\frac b{\log N},
-\tag{15}
-\]
-
-and hence
+For large `N`, Burnol at the section `N` gives `d_N^2\ge b/\log N`, hence
 
 \[
 X_N\le N^\theta.
-\tag{16}
+\tag{14}
 \]
 
-Therefore `K_N<N` eventually, while `d_N\to0` also gives `K_N\to\infty`, so this is an admissible comparison scale in (4).
-
-Since `K_N\le X_N`,
-
-\[
-\log K_N
-\le
-\frac{\theta b}{d_N^2},
-\tag{17}
-\]
-
-and therefore
+Therefore `K_N<N`, while `d_N\to0` gives `K_N\to\infty`, so (4) applies. Since `K_N\le X_N`,
 
 \[
 \frac b{\log K_N}-d_N^2
-\ge
-\left(\frac1\theta-1\right)d_N^2.
-\tag{18}
+\ge\left(\frac1\theta-1\right)d_N^2.
+\tag{15}
 \]
 
-For large `N`, `X_N\ge2`, so `K_N\ge X_N/2`. Substituting (18) into (4) yields
+Also `K_N\ge X_N/2` eventually. Substitution in (4) yields
 
 \[
 \Delta_N
 \ge
-\frac{K_Nd_N}{60}
-\sqrt{\frac{1-\theta}{\theta}}
-\ge
 \frac{d_N}{120}
 \sqrt{\frac{1-\theta}{\theta}}
 \exp\!\left(\frac{\theta b}{d_N^2}\right),
-\tag{19}
+\tag{16}
 \]
 
 which is (5).
 
-The use of `\theta<1` is not cosmetic. At the formal endpoint `\theta=1`, the comparison scale is where the Burnol floor and `d_N^2` can coincide, so (4) may have no positive gap. Any strict fraction of the Burnol exponent leaves a fixed relative gap and gives the exponential lower bound.
+The strict inequality `\theta<1` is load-bearing. At the formal endpoint `\theta=1`, the chosen comparison scale may sit exactly where the Burnol floor matches `d_N^2`, leaving no positive difference in (4). Any fixed strict fraction of the Burnol exponent leaves a definite relative gap.
 
-The earlier floor in `NB-022`,
+## 3. Burnol saturation forces power-scale non-compressibility
 
-\[
-\Delta_N\gg d_N^{-3/2},
-\tag{20}
-\]
-
-comes from forcing a Möbius-shaped coefficient core and then applying the shell Fourier estimate. Equation (5) is asymptotically stronger on the closure branch: it uses not just the local coefficient core but the impossibility, imposed by Burnol, of compressing a very accurate `N`-section approximant into an exponentially shorter section without paying a norm loss.
-
-## 3. Burnol saturation forces almost full power-scale shell complexity
-
-Assume (6), and fix `0<\alpha<1`. Let
-
-\[
-K_N=\lfloor N^\alpha\rfloor.
-\tag{21}
-\]
-
-For every fixed `b<\mathfrak B_\zeta`, Burnol gives
+Assume (6) and fix `0<\alpha<1`. Take `K_N=\lfloor N^\alpha\rfloor`. For every fixed `b<\mathfrak B_\zeta`,
 
 \[
 d_{K_N}^2
 \ge
 \frac b{\log K_N}
 =
-\frac{b/\alpha+o(1)}{\log N}.
-\tag{22}
+\frac{b/\alpha+o(1)}{\log N},
+\tag{17}
 \]
 
-Meanwhile (6) says
+whereas
 
 \[
-d_N^2
-=
-\frac{\mathfrak B_\zeta+o(1)}{\log N}.
-\tag{23}
+d_N^2=rac{\mathfrak B_\zeta+o(1)}{\log N}.
+\tag{18}
 \]
 
-Thus (10) implies
+Equation (9) therefore implies
 
 \[
 \frac{3600\Delta_N^2}{N^{2\alpha}}
 \ge
 \frac{b/\alpha-\mathfrak B_\zeta+o(1)}{\log N}.
-\tag{24}
+\tag{19}
 \]
 
-Choose `b` with
+Choose `b` with `\alpha\mathfrak B_\zeta<b<\mathfrak B_\zeta`, then let `b` approach `\mathfrak B_\zeta` after taking the asymptotic lower bound. This gives (7).
+
+The interpretation is a genuine non-compressibility statement for the **actual target-selected section**. If its distance is already at the Burnol leading scale at `N`, then no fixed-power sub-section `N^\alpha` can carry essentially the same approximation quality unless the `N`-residual has shell discrepancy at least `N^\alpha/\sqrt{\log N}`. Letting the fixed power approach one gives (8), but no linear bound `\Delta_N\gg N` follows: Burnol's liminf theorem has no remainder strong enough here to take `\alpha=1-o(1)` uniformly.
+
+## 4. Consequence for the live mixing/visibility route
+
+`NB-019` gives the intrinsic mixing certificate
 
 \[
-\alpha\mathfrak B_\zeta<b<\mathfrak B_\zeta.
-\tag{25}
+\|Q_mr_N-\mu_Ne\|_\infty
+\le\frac{2\Delta_N}{m}.
+\tag{20}
 \]
 
-The right side is then positive for large `N`. Letting `b` approach `\mathfrak B_\zeta` after the fixed-`\alpha` inequality gives exactly (7).
+`NB-021` then shows that once `m` dominates the discrepancy, deep visible semigroup channels collapse; `NB-022` simultaneously shows that high generator indices beyond the same transition add negligible approximation gain under `\Delta_N=o(N)`.
 
-Because `\alpha<1` was arbitrary, (7) implies (8). The statement is deliberately a **power-scale** conclusion rather than `\Delta_N\asymp N`: the available Burnol theorem is a liminf lower bound with no quantitative remainder strong enough to pass uniformly to `\alpha=1-o(1)`. Nothing here rules out `\Delta_N=N/L(N)` for a slowly growing `L`.
-
-Bettin--Conrey--Farmer show, assuming RH and
+Equation (5) now puts a much larger floor under that transition. If a sequence `m_N` is chosen so that the sufficient mixing error in (20) vanishes,
 
 \[
-\sum_{|\Im\rho|\le T}
-\frac1{|\zeta'(\rho)|^2}
-\ll T^{3/2-\delta},
-\tag{26}
+\frac{\Delta_N}{m_N}\to0,
+\tag{21}
 \]
 
-that the discrete Nyman distance has the Burnol-optimal leading constant. Under their assumptions (which in particular entail simple zeros in the form they use), (7)--(8) are therefore unconditional consequences of their approximation theorem plus `NB-022`'s exact finite geometry. This is a compatibility statement, not a new proof of their asymptotic or of RH.
-
-## 4. Consequence for the live visibility and mixing route
-
-The live `NB-015` program seeks a source-visible semigroup defect whose accumulated section decrements contradict a positive limiting Nyman distance. `NB-021` shows that if `\Delta_N=o(N)`, then after a discrepancy-dependent transition every deep channel mixes toward zero and its visible/full defect ratio collapses. `NB-022` adds that the same hypothesis makes high generator indices contribute negligibly once `K\gg\Delta_N`.
-
-Equation (5) now puts a source-scale floor under that transition. Any use of the intrinsic estimate (9) with a scale `m_N` satisfying
+then on the closure branch, for every fixed `b<\mathfrak B_\zeta` and `\theta<1`,
 
 \[
-\frac{\Delta_N}{m_N}\longrightarrow0
-\tag{27}
+\frac{m_N}{d_N\exp(\theta b/d_N^2)}\to\infty.
+\tag{22}
 \]
 
-must, on the closure branch, also satisfy for every fixed `b<\mathfrak B_\zeta` and `\theta<1`,
+Under Burnol saturation, (7) implies a simpler power statement. For every fixed `\beta<1`, choose `\alpha` with `\beta<\alpha<1`; then (7) gives `\Delta_N/N^\beta\to\infty`. Hence (21) forces
 
 \[
-\frac{m_N}
-{d_N\exp(\theta b/d_N^2)}
-\longrightarrow\infty
-\quad\text{up to the fixed factor }c_\theta.
-\tag{28}
+\boxed{
+\frac{m_N}{N^\beta}\to\infty
+\qquad\text{for every fixed }\beta<1.
+}
+\tag{23}
 \]
 
-Under Burnol saturation (6), equation (7) makes the geometric content simpler: (27) forces
+So near the expected optimal Nyman rate, the `\Delta_N=o(N)` branch cannot yield genuinely early fixed-power mixing. If that branch occurs at all, its transition is almost at full section scale in the logarithmic-power sense. The pre-mixing region in which the `NB-015` source-visible graph energy must be extracted correspondingly occupies essentially the whole polynomial hierarchy.
 
-\[
-m_N\gg N^\alpha
-\qquad\text{for every fixed }\alpha<1.
-\tag{29}
-\]
-
-Thus the apparently favorable branch `\Delta_N=o(N)` is not, near the expected optimal approximation rate, a route to early polynomial-depth mixing. Its transition can occur only at an almost-full-section power scale. The pre-mixing region in which useful source-visible energy would have to be extracted correspondingly occupies almost the whole polynomial hierarchy.
-
-This does not solve the visibility problem. A large `\Delta_N` is only cumulative shell variation; `NB-022` already warns that it need not become large `G_N^{-1}`-weighted multiplicative graph energy. The finding instead removes a plausible simplification: one cannot simultaneously have near-Burnol-optimal approximation, strongly compress the useful generator section to `N^\alpha` for fixed `\alpha<1`, and retain small intrinsic shell discrepancy.
+This still does not solve `NB-015`. Large consecutive discrepancy is cumulative one-dimensional shell variation, whereas visibility is a `G_N^{-1}`-weighted multiplicative edge energy. The remaining positive problem is precisely to convert some of the discrepancy forced by (4)--(5) into that graph energy before mixing destroys it, or to construct a source-faithful mechanism showing that even very large shell discrepancy can remain almost entirely invisible.
 
 ## 5. Prior-art boundary and falsification controls
 
-The external approximation-rate inputs are classical and already anchored in `research/nyman_beurling/SOURCES.md`. Burnol supplies the multiplicity-weighted lower constant (3). Bettin--Conrey--Farmer supply the conditional optimality statement used only to interpret the saturation regime (6). No new external estimate is required, so `SOURCES.md` is unchanged.
+The external approximation inputs are already anchored in `research/nyman_beurling/SOURCES.md`. Burnol supplies (3); Bettin--Conrey--Farmer supply the conditional optimality statement used only for interpreting (6). No new external theorem is load-bearing, so `SOURCES.md` is unchanged.
 
-A targeted literature audit covered Burnol-type lower bounds, optimal Nyman coefficients and Dirichlet polynomials, finite-section approximation, numerical Nyman studies, generalized polynomial criteria, and recent Gram/block-compressibility work. The located sources discuss individual distance lower bounds, conditional optimal approximants, Gram conditioning or basis compression, but no located source combined a shorter-section Burnol floor with the **consecutive shell discrepancy of the actual longer-section best residual** through an estimate equivalent to (4)--(5). Search absence is not a priority claim; the durable delta here is the exact implication obtained by combining the local section-compression theorem `NB-022` with the classical scale-dependent distance floor.
+A targeted literature audit covered Burnol-type lower bounds, optimal Nyman coefficients and Dirichlet polynomials, finite-section approximation, numerical Nyman studies, generalized polynomial criteria, and recent Gram/block-compressibility work. The located sources discuss individual distance lower bounds, conditional optimal approximants, Gram conditioning, or basis compression, but no located source combined a shorter-section Burnol floor with the **consecutive shell discrepancy of the actual longer-section best residual** through an estimate equivalent to (4)--(5). Search absence is not a priority claim; the durable delta is the exact cross-scale implication obtained by combining the local section-compression theorem `NB-022` with the classical distance floor.
 
-Several boundaries are essential:
+Several boundaries are load-bearing. The constant `60` is explicit but not optimized. Burnol supplies no upper approximation bound and does not imply `d_N\to0` or (6). The exponential estimate (5) is asserted only on the closure branch. The power-scale conclusion (8) is compatible with `\Delta_N=o(N)` and gives no positive linear fraction of `N`. Finally, large shell discrepancy does not itself lower-bound the `NB-015` visible fraction; no new approximation rate, zero-free region, or RH implication follows from this finding.
 
-- Equation (4) inherits the constant `60` from `NB-022`; it is explicit but not optimized. Improving that constant does not change the exponential mechanism.
-- Burnol gives a lower bound on best approximation distance. It supplies no upper bound and therefore does not by itself imply `d_N\to0` or the saturation hypothesis (6).
-- Equation (5) is asserted on the closure branch `d_N\to0`; it does not say that such a branch has been proved.
-- Equation (8) under saturation is compatible with `\Delta_N=o(N)`. It forces near-linear **power-scale** growth, not a positive linear fraction of `N`.
-- Large shell discrepancy does not imply useful section visibility. The missing `NB-015` quantity remains the source-aware `G_N^{-1}`-weighted multiplicative edge energy, not discrepancy alone.
-- The result does not improve the Burnol lower bound, the Nyman approximation rate, a zero-free region, or the RH criterion.
-
-The finding is falsified by a canonical finite residual violating the section-compression inequality (10), by a failure of Burnol's discrete lower bound (3) in the normalization used here, or by an `N,K` pair satisfying the hypotheses but violating the elementary combination (13). A positive continuation should now attack the remaining conversion at the pre-mixing scale: determine whether the discrepancy forced by (4)--(5) necessarily leaves a quantitatively visible component in the `NB-017` multiplicative graph energy, or construct a source-faithful residual mechanism showing that even exponentially large shell discrepancy can remain invisible to `NB-015`.
+The finding is falsified by a failure of `NB-022`'s section-compression inequality (9), by a failure of Burnol's discrete lower bound in this normalization, or by an `N,K` pair satisfying the stated hypotheses but violating the elementary combination (12). A useful continuation should attack the pre-mixing conversion: determine whether the cross-scale discrepancy forced here necessarily leaves a quantitatively visible component in the `NB-017` multiplicative graph energy.
