@@ -8,6 +8,9 @@ based_on:
   - research/robin_extremal/findings/RE-005-regular-self-tangent-ca-peak-values-are-not-globally-monotone.md
   - research/robin_extremal/findings/RE-006-clean-first-layer-peaks-force-an-exact-chebyshev-residual-window.md
   - research/robin_extremal/findings/RE-007-clean-peaks-force-a-square-root-prime-gap-or-chebyshev-excursion.md
+  - research/robin_extremal/findings/RE-008-clean-robin-counterexamples-force-square-root-endpoint-subtracted-mertens-excursions.md
+  - research/robin_extremal/findings/RE-021-self-tangent-robin-height-threshold-survives-exceptional-boundaries.md
+  - research/robin_extremal/findings/RE-022-self-tangent-mixed-race-height-localizes-to-a-finite-annulus-across-every-ca-boundary-chamber.md
 ---
 
 # Does the clean-peak selector constrain Robin height through a shared signed prime-error remainder?
@@ -66,26 +69,36 @@ Audit this combined expression against the line's existing Ramanujan/Nicolas and
 
 Then formulate one candidate inequality for the remaining source integral and exponent-tail term on an explicitly defined subfamily. Its hypotheses must be checkable without assuming the desired sign of `log G(C)-gamma`. Prove the candidate from weaker source input, or produce admissible controls defeating that particular implication. Replacing the claim by `E(p)<=T(C)-log(log p/log X)` without an independent estimate is simply Robin rewritten, not progress.
 
-Keep RE-007's small-gap/tuned-excursion and square-root-gap alternatives separate. A result in one does not eliminate the other; peaks touching higher-layer transitions remain outside this clean test. Likewise, RE-006 does not put every peak in a window of width `O(log p)`: the width depends on the actual gap. Use logarithmic-resolution claims only with the necessary additional gap restriction, and do not substitute RE-007's `o(sqrt p)` remainder where the exact smaller-scale selector is needed.
+Keep RE-007's small-gap/tuned-excursion and square-root-gap alternatives separate. A result in one does not eliminate the other. RE-021 and RE-022 now show, however, that higher-layer or tied **adjacent CA transitions do not create a separate height or tail-localization chamber**: every regular self-tangent state has a canonical last active first-layer prime, the same mixed-race height threshold, and the same finite-annulus localization. Exceptional transitions remain relevant to the local peak selector and event-ladder geometry, not to the asymptotic height decomposition itself.
+
+Likewise, RE-006 does not put every peak in a window of width `O(log p)`: the width depends on the actual gap. Use logarithmic-resolution claims only with the necessary additional gap restriction, and do not substitute RE-007's `o(sqrt p)` remainder where the exact smaller-scale selector is needed.
 
 Reproduce the two genuine local-peak controls from RE-005 when testing a universal strengthening, and classify their boundary transitions before applying a clean-only statement. The original `720720` and `6983776800` controls are self-tangent states, not local peaks. Finite safe examples can falsify an overstrong inequality but cannot establish an asymptotic sign law. Any synthetic prime-error control must preserve the exact hypotheses it purports to test; it is not a counterexample to the ordinary-prime theorem merely because it matches an endpoint.
 
 ## Evidence boundary
 
-Sources were inspected through `8d3ded047405f07aa10140dd7baa7c036faa293b`; check their current claim and review state before relying on them. No new height estimate, conditional sign law, computation, or exclusion of an infinite family has been established here. This is a joint selector/height test, distinct from the accepted question about eventual workload monotonicity. A classical identity, a necessary peak selector, or a rewritten Robin inequality is not a solution; the potential gain must lie in a separately justified bound for the surviving signed source remainder.
+The original clue was posed in the clean first-layer chamber. RE-008 established the exact endpoint cancellation there; RE-021 subsequently removed the clean-boundary hypothesis from the height dictionary and all-orders CA tax; RE-022 removes it from the two-sided finite-annulus localization as well. These are durable hypothesis removals, not an estimate excluding the remaining source excursion.
+
+No unconditional upper bound for the selected annular mixed-race integral, no conditional sign law usable under hypothetical RH failure, and no exclusion of an infinite counterexample family has been established. Global one-sided control of the mixed race is already RH-equivalent by RE-009, so the unresolved estimate must use the CA-selected host structure rather than restate Robin or impose an RH-strength global error bound.
 
 ## Research disposition
 
-Accepted. The exact splice has now been reconstructed in [[research/robin_extremal/findings/RE-008-clean-robin-counterexamples-force-square-root-endpoint-subtracted-mertens-excursions.md]]. Partial summation of the Mertens product produces an endpoint term `(vartheta(p)-p)h(p)` which cancels **exactly** after inserting the RE-006 clean selector. The surviving quantity is the endpoint-subtracted Mertens remainder
+Accepted, with scope generalized beyond the original clean chamber. RE-008 reconstructs the exact splice and shows that partial summation of the Mertens product produces an endpoint term `(vartheta(p)-p)h(p)` which cancels after inserting self-tangency. The surviving quantity is the endpoint-subtracted Mertens remainder
 
 \[
-\mathcal M_*(p)=E(p)-(\vartheta(p)-p)h(p),
+\mathcal M_*(p)=E(p)-(\vartheta(p)-p)h(p).
 \]
 
-and every unbounded clean Robin-counterexample sequence would have to satisfy
+RE-021 proves that the same height identity and the sharp `2sqrt(2)` threshold hold at **every** sufficiently large regular self-tangent CA state, regardless of higher-layer or tied adjacent boundaries. RE-022 further proves that, for every fixed `alpha<3/4` and every sufficiently large fixed PNT-inversion parameter `A`, any self-tangent counterexample would have to satisfy
 
 \[
-\liminf \sqrt p\log p\,\mathcal M_*(p)\ge2\sqrt2.
+\liminf
+\sqrt p\log p
+\int_{p+p^\alpha}^{U_A(p)}
+\left[
+(\vartheta(t)-t)h'(t)-(h(t)-k(t))
+\right]dt
+\ge2\sqrt2.
 \]
 
-The unresolved question is now source-specific: can the boundary primes selected by clean self-tangent counterexample peaks realize this positive nonlocal Chebyshev/Mertens-tail excursion infinitely often, or can it be excluded by an unconditional estimate genuinely weaker than the Robin conclusion? Ordinary Mertens-product oscillation and the endpoint selector separately do not answer that question, and the exceptional higher-layer/tied chamber remains outside this clean test.
+The unresolved question is therefore source-specific and now universal across transition chambers: can the CA-selected first-layer frontier primes of hypothetical self-tangent counterexamples realize this positive **finite-annulus** mixed Mertens--Chebyshev excursion infinitely often, or can the selector/event-host geometry exclude it by an unconditional estimate genuinely weaker than Robin? Clean adjacent transitions still provide extra local constraints through RE-006 and RE-007, while RE-017--RE-020 constrain exceptional hosts, but neither class currently controls the annular signed mass.
