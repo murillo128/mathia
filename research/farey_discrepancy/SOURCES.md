@@ -31,6 +31,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - Marc Deléglise and Joël Rivat, *Computing the Summation of the Möbius Function*, Experimental Mathematics **5**(4) (1996), 291--295, DOI `10.1080/10586458.1996.10504594`. Role: primary computational prior-art boundary for the classical floor-quotient Möbius recurrence used to compute isolated Mertens values. `FD-005` derives the exact identity `sum_(d<=N) M(floor(N/d))=1` directly and uses it only as an affine compatibility constraint on the Franel--Mertens staircase.
 
+## Möbius cancellation auxiliary input
+
+- H. Davenport, *On Some Infinite Series Involving Arithmetical Functions (II)*, The Quarterly Journal of Mathematics **os-8** (1937), 313--320, DOI `10.1093/qmath/os-8.1.313`. Role: primary source for the classical log-power saving in linear exponential sums weighted by `mu`; the zero-frequency specialization gives `M(x) <<_A x/log^A x` for every fixed `A`. `FD-030` uses only this unconditional cancellation, plus partial summation, to make the physical Mertens staircase negligible at scale `H/log^4 H` and to prove decay of a positive weighted lower-horizon Mertens combination in the square-GCD norm.
+
 ## Prime-density auxiliary input
 
 - Donald J. Newman, *Simple Analytic Proof of the Prime Number Theorem*, The American Mathematical Monthly **87**(9) (1980), 693--696, DOI `10.1080/00029890.1980.11995126`. Role: primary theorem anchor for the prime number theorem used in `FD-006` only to obtain the weighted dyadic-prime monomial Gram lower bound for a fixed family of Jordan-moment constraints. No quantitative zero-free estimate, RH, or RH-equivalent input is imported.
