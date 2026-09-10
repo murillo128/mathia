@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-flute-critical-jacobi-square-root-decay-window
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: prime_flute
 based_on:
@@ -17,6 +17,7 @@ based_on:
   - research/prime_flute/findings/PF-255-hypercycle-compactification-transport-is-a-parity-local-flow-with-a-two-derivative-leakage-bound.md
   - research/prime_flute/findings/PF-256-variable-corridor-graph-equivalence-transfers-two-derivative-locality-to-the-actual-transverse-scale.md
   - research/prime_flute/findings/PF-257-normalized-robin-injection-is-a-polar-free-resolvent-transform.md
+  - research/prime_flute/findings/PF-269-pre-propagation-robin-smoothing-is-an-overstrong-gate.md
   - research/prime_flute/clues/CLUE-robin-homotopy-separated-poisson-shear-estimate.md
 ---
 
@@ -24,124 +25,59 @@ based_on:
 
 ## Observation
 
-PF-247--PF-253 identify the critical fixed-axis parity-Jacobi edge and prove a sharp positive fractional-power window. For `0<\sigma<1`, the actual parity chains satisfy in the separated cone
-
-\[
-\left|\langle e_i,J_\varepsilon^\sigma e_j\rangle\right|
-\asymp
-(i+1)^{3/2}(j+1)^{-5/2-2\sigma},
-\]
-
-with
-
-\[
-E_dJ_\varepsilon^\sigma N^R\in\mathcal S_2
-\iff R<2+2\sigma.
-\]
-
-Thus a literal Jacobi square root has the proven window `R<3`, comfortably above PF-243's required `R>1`.
-
-PF-254 writes the energy-normalized noncommuting Robin injection as
-
-\[
-h(\mathcal R)U,
-\qquad
-h(\lambda)=\frac{\sqrt\lambda}{1+\lambda},
-\qquad
-\mathcal R=K^{-1/2}QK^{-1/2},
-\]
-
-where `U` is the polar partial isometry of `X=K^{-1/2}Q^{1/2}`. PF-255 and PF-256 then remove the width-dependent hypercycle transport and the variable-corridor `A\leftrightarrow T_a` basis change as independent sources of catastrophic high-to-low leakage: already graph-local factors retain a two-derivative window in the actual `K_a=T_a^{1/2}` modes.
-
-PF-257 changes how the remaining fixed-axis noncommutativity should be attacked. The physical Robin factor never contains the naked polar partial isometry. On every bounded regularization,
-
-\[
-\boxed{
-h(\mathcal R)U
-=(I+XX^*)^{-1}X
-=X(I+X^*X)^{-1}.}
-\]
-
-Equivalently it is an off-diagonal block of the regular rational transform
-
-\[
-F(\mathbb D_X),
-\qquad
-\mathbb D_X=
-\begin{pmatrix}0&X\\X^*&0\end{pmatrix},
-\qquad
-F(t)=\frac{t}{1+t^2}.
-\]
-
-The combined factor is norm-stable in `X` even when the auxiliary polar factor is unstable near a closing singular-value gap. Therefore **standalone locality of `U` is sufficient but not necessary**. The live question is whether the actual combined fixed-axis injection has enough high-to-low decay; splitting amplitude from orientation must not discard correlations that the Robin map retains.
-
-## Research question
-
-After removing the PF-255/PF-256-controlled hypercycle coordinate/density transport, derive the actual fixed-axis relative square-root map
-
-\[
-X_w:=K_a^{-1/2}(Q_w^{\rm act})^{1/2}
-\]
-
-in the correct finite/form realization and study the combined Robin transform
-
-\[
-\boxed{
-B_w:=X_w(I+X_w^*X_w)^{-1}
-=(I+X_wX_w^*)^{-1}X_w.
-}
-\]
-
-Can `B_w` be related to PF-247's parity-Jacobi structure, or controlled directly through the block operator `\mathbb D_{X_w}`, strongly enough that
-
-\[
-B_wK_a^RP_Z
-\]
-
-has a uniform bound for some `R>1` before separated longitudinal propagation?
-
-If the most efficient dictionary passes through `\mathcal R_w=X_wX_w^*`, can PF-253's square-root edge window be used **without separating off and independently estimating the polar factor**? Alternatively, can graph/locality information for `X_w` or `\mathbb D_{X_w}` be propagated through PF-257's resolvent formula directly?
-
-The two-boundary reflection factors from PF-254 are already polar-free rational functions `c(\mathcal R_w)=(I-\mathcal R_w)(I+\mathcal R_w)^{-1}`. They must still be controlled where reflection cycles matter, but no physical factor requires a theorem about the naked `U_w`.
-
-## Why it may matter
-
-PF-243 reduces the remaining high-high shear gate to one-sided separated Robin-Poisson smoothing of any fixed order `R>1`. PF-253 supplies a substantial square-root exponent budget, while PF-255/PF-256 protect a `1<R<2` window through the known geometric transports.
-
-PF-257 removes a potentially artificial proof obligation from the remaining fixed-axis stage. A polar partial isometry can look extremely nonlocal near a zero singular value even when the product actually appearing in the Robin source map is small there. If the route insists on proving `U_w` graph-local by itself, it can produce a false negative by throwing away exactly the singular-value weight that regularizes those directions.
-
-A positive result for `B_w` would connect the actual seam directly to PF-243 without first solving an unnecessarily strong polar-locality problem. A negative result remains decisive if the **combined** transform itself has a non-summable high-to-low tail. The clue therefore preserves PF-244's obstruction while making its relevant target more faithful to the physical operator.
-
-## Decisive test
-
-Work in the fixed-axis `L^2((0,\pi),d\theta)` representation and keep the actual complete-lift seam fixed. Factor out only the hypercycle coordinate/density operators already controlled by PF-255 and transfer those estimates to the actual `K_a` scale using PF-256.
-
-Then derive `X_w=K_a^{-1/2}(Q_w^{\rm act})^{1/2}` on canonical finite spectral/form regularizations. Test the separated blocks of
+PF-247--PF-253 establish a positive fractional-power window for the fixed-axis parity-Jacobi edge, while PF-254--PF-257 show that the physical normalized Robin source factor should be treated as the combined polar-free transform
 
 \[
 B_w=X_w(I+X_w^*X_w)^{-1}
+=(I+X_wX_w^*)^{-1}X_w,
 \]
 
-directly. There are two acceptable proof routes:
+rather than by estimating the naked polar partial isometry. This motivated asking whether the combined boundary factor itself could absorb a supercritical `K_a^R`, `R>1`, weight before any longitudinal propagation.
 
-1. identify `X_wX_w^*` with PF-247's `J_\varepsilon`, or with a controlled functional/graph perturbation of it, tightly enough that PF-253 supplies the load-bearing square-root decay while the exact PF-257 recombination keeps amplitude and orientation correlated; or
-2. derive graph-locality or resolvent off-diagonal estimates for the self-adjoint block `\mathbb D_{X_w}` and pass them through
-   \[
-   F(\mathbb D)=\frac12\bigl((\mathbb D-i)^{-1}+(\mathbb D+i)^{-1}\bigr).
-   \]
+PF-269 now shows that this standalone requirement is not a structurally valid gate for the PF-243 route. In the exact PF-246 commuting calibration with matched seam `Q=K`, one has `X=I` and therefore
 
-Account explicitly for reflection factors `c(\mathcal R_w)` and for every remaining conjugation. Use PF-256 only after the factor under consideration has actual graph-locality; form order or eigenvalue comparability alone does not transfer matrix decay.
+\[
+B=\frac12I,
+\]
 
-Kill the route if `B_w` itself has a high-to-low tail that defeats every uniform `R>1`, if a reflection factor creates an equally fatal tail, or if the full unbounded/form realization loses the finite-regularization transform. **Do not kill it merely because the auxiliary polar partial isometry `U_w` is nonlocal or lacks a stable limit.**
+so `BK^RP_Z` is unbounded for every `R>0` on unbounded high spectrum. Nevertheless the corresponding separated Robin-Poisson source-to-bulk map is smoothing of every order across any fixed positive longitudinal distance.
+
+## Research question
+
+The original question was whether the actual fixed-axis complete-lift factor `B_w` could itself satisfy a uniform bound
+
+\[
+B_wK_a^RP_Z\in\mathcal B(H)
+\qquad\text{for some }R>1
+\]
+
+before separated longitudinal propagation, perhaps by spending the parity-Jacobi fractional window of PF-253 while retaining the exact PF-257 amplitude/orientation correlation.
+
+PF-269 does not decide whether the actual `B_w` happens to have such additional decay. It decides the route-selection question: **that standalone bound is stronger than PF-243 needs and cannot be required as a generic intermediate theorem.**
+
+## Why it may matter
+
+The distinction prevents a false negative. Even the clean matched Robin model has no positive-order smoothing in `B` itself, yet the far Poisson leg gains arbitrary order because fixed positive separation contributes exponential transverse damping. Therefore failure of an isolated `B_wK_a^RP_Z` estimate would not kill the shear route.
+
+At the same time PF-244 remains load-bearing: a noncommuting source factor can convert high input into genuinely low output before propagation, and such low output is not rescued by high-frequency Poisson damping. The useful target is consequently the **composed conversion/propagation operator**, not the boundary factor in isolation and not an arbitrary bounded-source surrogate.
+
+## Decisive test
+
+PF-269 supplies the decisive calibration. Set `Q=K` in the PF-246 product corridor. Then the PF-257 transform gives `B=1/2 I`, which fails every positive-order pre-propagation weighted bound, while PF-246 simultaneously proves all-order separated Robin-Poisson smoothing for the same seam.
+
+For the actual seam, continue with the four source-to-bulk estimates of PF-243 and [[research/prime_flute/clues/CLUE-robin-homotopy-separated-poisson-shear-estimate|CLUE-robin-homotopy-separated-poisson-shear-estimate]]. A valid proof may still need localized/off-diagonal information about `B_w` or its block resolvent, but only insofar as it prevents dangerous high-to-low conversion inside the composed far-leg map.
 
 ## Evidence boundary
 
-PF-253 proves the actual parity-Jacobi fractional kernel and its sharp square-root window. PF-254 proves the noncommutative Robin factorization on bounded positive regularizations. PF-255 proves two-derivative graph locality for the canonical hypercycle coordinate/density transport, and PF-256 transfers that already-established locality to the actual variable-corridor scale.
+PF-269 does **not** prove that the actual complete-lift `B_w` fails or satisfies a positive-order standalone bound. It does not identify `X_wX_w^*` with the parity-Jacobi operator, control the noncommuting reflection factors, or prove PF-243's four actual-seam separated estimates.
 
-PF-257 proves only the exact polar-free recombination and its elementary bounded/resolvent stability. It does **not** prove that the actual fixed-axis `X_w`, `B_w`, `\mathbb D_{X_w}`, or reflection transforms are graph-local; it does not identify `X_wX_w^*` with `J_\varepsilon`; and it does not justify the full unbounded complete-lift domain/closure passage.
-
-Nothing here proves PF-243's separated source-to-bulk estimates, the high-high trace-class shear conclusion, global flute scattering/determinant statements, or any theorem about zeta zeros or RH. This remains an accepted research clue rather than mathematical evidence.
+The durable conclusion is narrower: standalone positive-order smoothing of the normalized Robin boundary factor is not a necessary intermediate condition for separated Robin-Poisson smoothing. The unresolved actual-seam problem remains the composed source-to-bulk estimate.
 
 ## Research disposition
 
-Accepted for continued investigation. The frontier is now the **combined fixed-axis Robin transform**, not the polar factor in isolation. The next material outcome must either prove a uniform `R>1` high-to-low bound for `B_w` (with the needed reflection factors and full realization) or exhibit an actual-seam counterexample for that combined physical operator. A standalone failure of `U_w` locality no longer resolves the clue.
+Outcome: narrowed
+
+Resolved by:
+- [[research/prime_flute/findings/PF-269-pre-propagation-robin-smoothing-is-an-overstrong-gate|PF-269]]
+
+The clue is resolved as a route-selection question. The literal pre-propagation `B_wK_a^RP_Z` gate is removed from the critical path; the surviving research obligation is the already-accepted composed Robin-Poisson estimate in [[research/prime_flute/clues/CLUE-robin-homotopy-separated-poisson-shear-estimate|CLUE-robin-homotopy-separated-poisson-shear-estimate]].
