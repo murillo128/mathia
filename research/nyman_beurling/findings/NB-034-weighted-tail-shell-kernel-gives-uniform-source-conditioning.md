@@ -87,7 +87,7 @@ B_M\preceq \widehat H_{M,N}\preceq G_M,
 where `G_M` is the full Gram matrix of `(g_2,\ldots,g_M)`, and the explicit elementary bound
 \[
 \boxed{
-\lambda_{\min}(B_M)\ge \frac1{49M^4}
+\lambda_{\min}(B_M)\ge \frac1{14M^2H_M^2}
 }
 \tag{8}
 \]
@@ -102,8 +102,8 @@ with `H_M` the harmonic number, the retained source-coordinate Gram matrix satis
 \[
 \boxed{
 \operatorname{cond}_2(\widehat H_{M,N})
-\le 98\,M^4(H_M-1)
-=O(M^4\log M),
+\le 28\,M^2H_M^2(H_M-1)
+=O(M^2(\log M)^3),
 }
 \tag{10}
 \]
@@ -125,8 +125,7 @@ d_N^2
 \widehat\kappa_{M,N}^2
 =
 d_N^2+\|P_{\widehat W_{M,N}}e\|^2
-\le
-d_N^2+\frac1M.
+\le d_N^2+\frac1M.
 }
 \tag{11}
 \]
@@ -307,70 +306,99 @@ The full Hilbert norm of `\sum c_j\widehat k_j` contains this early-shell energy
 \tag{28}
 \]
 
-To quantify the lower inequality, set `v_0=0`. Equation (27) gives the pointwise bound
+The inverse estimate can be made two powers of `M` sharper than a coordinatewise triangle bound. Set `v_0=0` and
 \[
-|v_t|\le\delta\sqrt{t(t+1)}.
+z_t:=\frac{v_t}{\sqrt{t(t+1)}}
+\qquad(1\le t<M),
+\qquad
+\|z\|_2=\delta.
 \tag{29}
 \]
-For `2<=n<M`, apply Möbius inversion to (17). The constant
-\[
-A=\sum_{j=2}^M c_j/j=v_1
-\]
-drops out for every `n>1`, leaving
+For `2<=n<M`, Möbius inversion of (17) gives
 \[
 c_n
-=
--\sum_{d\mid n}
+=-\sum_{d\mid n}
 \mu\!\left(\frac nd\right)(v_d-v_{d-1}).
 \tag{30}
 \]
-For `d>=2`,
+Regard `(c_2,\ldots,c_{M-1})=U_Mz`. The absolute row sum of the row indexed by `n` is at most
 \[
-|v_d|+|v_{d-1}|
-\le
-\delta\left(\sqrt{d(d+1)}+\sqrt{d(d-1)}\right)
-<2d\delta,
+\sum_{d\mid n}\sqrt{d(d+1)}
++
+\sum_{\substack{d\mid n\\d\ge2}}\sqrt{d(d-1)}
+\le \frac52\sigma(n)
+\le \frac52 M H_M.
 \]
-and the `d=1` term obeys the same weak bound. Hence
+For a fixed column `t`, divisibility by `t` or by `t+1` gives the absolute column-sum bound
+\[
+\sqrt{t(t+1)}
+\left(
+\left\lfloor\frac{M-1}{t}\right\rfloor
++
+\left\lfloor\frac{M-1}{t+1}\right\rfloor
+\right)
+\le 3M.
+\]
+The Schur test therefore yields
 \[
 \boxed{
-|c_n|\le2\delta\,\sigma(n)
-\qquad(2\le n<M).
+\|U_M\|_2^2
+\le \frac{15}{2}M^2H_M.
 }
 \tag{31}
 \]
 
-The final coefficient is recovered from the first shell:
+The endpoint coefficient has more cancellation than the direct estimate from the first shell reveals. Put `L=M-1` and
 \[
-c_M
+m(q):=\sum_{k\le q}\frac{\mu(k)}k,
+\qquad
+a_d:=\left\lfloor\frac Ld\right\rfloor.
+\]
+Substituting (30) into
+`c_M=M(v_1-\sum_{n=2}^{M-1}c_n/n)` and interchanging the finite divisor sums gives the exact identity
+\[
+\boxed{
+\frac{c_M}{M}
 =
-M\left(v_1-\sum_{n=2}^{M-1}\frac{c_n}{n}\right).
+\sum_{d=1}^{L}
+\frac{m(a_d)}d\,(v_d-v_{d-1}).
+}
 \tag{32}
 \]
-The elementary divisor sums, with `x=M-1`,
+This identity requires no cancellation theorem for Möbius. Let `q_d=m(a_d)/d`. Discrete summation by parts shows that the coefficient of `v_t` in (32) is `q_t-q_{t+1}` for `t<L`, and `q_L` at the endpoint. For `t<L`,
 \[
-\sum_{n<M}\sigma(n)\le x^2\le M^2,
-\qquad
-\sum_{n<M}\frac{\sigma(n)}n
+q_t-q_{t+1}
+=
+\frac{m(a_t)}{t(t+1)}
++
+\frac{m(a_t)-m(a_{t+1})}{t+1}.
+\]
+The trivial estimate `|m(a_t)|<=H_L` controls the first term in weighted square norm by `H_L^2`. For the second, the intervals `(a_{t+1},a_t]` are pairwise disjoint, so
+\[
+\sum_{t<L}|m(a_t)-m(a_{t+1})|^2
 \le
-x\sum_{d\le x}\frac1{d^2}
-<2M,
+\left(\sum_{k=2}^{L}\frac1k\right)^2
+\le H_L^2.
+\]
+Using `|u+w|^2<=2|u|^2+2|w|^2` and `q_L=1/L` therefore gives
+\[
+\boxed{
+\|\text{endpoint row}\|_2^2
+\le 6M^2H_M^2.
+}
 \tag{33}
 \]
-together with `|v_1|\le\sqrt2\delta`, give
+Combining (31) and (33), and using `H_M>=1`, gives
 \[
-\sum_{n=2}^{M-1}|c_n|
-\le2M^2\delta,
-\qquad
-|c_M|\le5M^2\delta.
+\boxed{
+\|c\|_2^2
+\le
+\left(\frac{15}{2}M^2H_M+6M^2H_M^2\right)\delta^2
+<14M^2H_M^2\delta^2.
+}
 \tag{34}
 \]
-Therefore
-\[
-\|c\|_2\le7M^2\delta,
-\tag{35}
-\]
-which proves (8). Nothing changes for complex coefficients: the inversion has real integer coefficients and the proof uses only absolute values and the triangle inequality.
+Since `\delta^2=c^*B_Mc`, equation (34) proves the sharpened bound (8). The argument is valid for complex coefficients as written: Möbius inversion has real coefficients, while the Schur and weighted-square estimates use absolute values only.
 
 For the upper spectral edge, split the norm of one canonical generator at `t=j`. The early part satisfies
 \[
@@ -392,7 +420,7 @@ Thus
 \]
 Equations (7)--(8) and (36) prove (9)--(10).
 
-The exponent `4` is a robust elementary bound, not a sharp conditioning law. Improving it would require a finer inverse estimate for the weighted shell observation matrix. No such improvement is needed for the `N`-uniform conclusion proved here.
+The `M^2 H_M^2` inverse bound is still not claimed sharp. Its logarithmic losses come from deliberately using only `|\mu(k)|<=1`, disjoint quotient blocks, and the Schur test; no zero-free-region or RH-strength cancellation is hidden in the estimate. Further sharpening of these factors may improve numerical stability, but by itself would not control the globally selected target data in the quotient.
 
 ## 4. Target loss drops from `log^2(M)/M` to `1/M`
 
@@ -446,12 +474,17 @@ Low retained dimension also does not imply a fast construction. Computing the or
 
 The weighted tail is genuinely different from the ordinary adjacent tail of `NB-029`--`NB-033`. Its edges do not merely rescale a basis inside the same nuisance subspace: they define the kernel of a different observation map and retain the harmonic scalar `M\sum_{n\ge M}a_n/n` rather than the ordinary coefficient sum. Thus `NB-029`'s statement that unrestricted ordinary adjacent differences have full Nyman closure does not collapse this construction back to the old quotient.
 
-A targeted literature audit covered the classical discrete Nyman/Báez-Duarte finite-section framework, numerical Gram work, generalized Gram structures, and recent Mellin-ladder Gram compressibility. In particular, Alouges--Darses--Hillion obtain special block-Hankel Gram structure for a generalized family, while Carvill obtains polynomial off-diagonal decay after Mellin smoothing on a `2`--`3` multiplicative ladder. Those are neighboring conditioning/compressibility mechanisms, not the canonical integer weighted-tail shell kernel (3), the quotient normal form (5), or the `N`-uniform bound (10). Search absence is not a priority claim.
+A refreshed targeted literature audit covered the classical discrete Nyman/Báez-Duarte finite-section framework, numerical Gram work, generalized Gram structures, and recent Mellin-ladder Gram compressibility. In particular, Alouges--Darses--Hillion obtain special block-Hankel Gram structure for a generalized family, while Carvill obtains polynomial off-diagonal decay after Mellin smoothing on a `2`--`3` multiplicative ladder. Those are neighboring conditioning/compressibility mechanisms, not the canonical integer weighted-tail shell kernel (3), the quotient normal form (5), or the elementary finite inverse estimate yielding (8)--(10). Search absence is not a priority claim.
 
 No new external theorem is load-bearing beyond the Bagchi/Báez-Duarte framework and Burnol lower bound already anchored in `SOURCES.md`, so no source-list expansion is required.
 
 ## 6. Research consequence
 
-`NB-033` showed that a polylogarithmic ordinary-tail skeleton can preserve relative target distance and the Möbius core, but explicitly left its quotient Gram conditioning uncontrolled. The weighted relation (1) resolves that specific metric defect: the retained quotient is exactly tied to the first `M-1` shell observations and has a polynomial condition bound depending only on `M`.
+`NB-033` showed that a polylogarithmic ordinary-tail skeleton can preserve relative target distance and the Möbius core, but explicitly left its quotient Gram conditioning uncontrolled. The weighted relation (1) resolves that specific metric defect: the retained quotient is exactly tied to the first `M-1` shell observations and now has the explicit bound
+\[
+\operatorname{cond}_2(\widehat H_{M,N})
+=O(M^2(\log M)^3)
+\]
+uniformly in `N`. This replaces the earlier elementary `O(M^4\log M)` estimate without importing any analytic cancellation theorem.
 
-The live obstruction therefore moves again. A near-logarithmic-dimensional skeleton with controlled source-coordinate Gram inversion now exists, but its target data can still depend globally on the full section through `P_{V_N}E_M`. The next useful theorem must exploit the exact shell-observation representation to control those retained target pairings or to construct the projector without reconstructing the full `N`-dimensional geometry. Merely improving the exponent in (8), or observing a smaller numerical condition number, would not by itself change the Nyman approximation problem.
+The live obstruction therefore remains target-side rather than metric. A near-logarithmic-dimensional skeleton with controlled source-coordinate Gram inversion exists, but its target data can still depend globally on the full section through `P_{V_N}E_M`. The next useful theorem must exploit the exact shell-observation representation to control those retained target pairings or to construct the projector without reconstructing the full `N`-dimensional geometry. Further conditioning improvements alone would not change the Nyman approximation problem.
