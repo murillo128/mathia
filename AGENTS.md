@@ -40,6 +40,8 @@ For non-trivial work, start with:
 
 `docs/CONCEPTUAL_MATH_DIRECTION.md` and `docs/WORKING_SYNTHESIS.md` preserve research motivation and current hypotheses. They are context, not implementation specifications.
 
+Before producing or consuming mathematical research artifacts, every research role must also read `.agents/skills/mathia-research-representation/SKILL.md`. This includes Research Watch and its specializations (including Visual), Master, Visionary, Adversary, Mind, Graph Curator, and mathematical compute/formalization designers, executors, and reviewers. This mandatory shared companion is part of repository-wide procedural authority even when a role's lazy-loading instructions otherwise say to read only its named skills. Load it before substantive mathematical work without preloading unrelated role skills.
+
 Do not preload every repository document, every skill, complete prior issue/PR history, or retired experiment artifacts. On resume, verify branch, source revision, worktree/PR state, and new material issue discussion since the last handoff.
 
 ## Source-of-truth hierarchy
@@ -274,6 +276,7 @@ Scaling is appropriate when evidence identifies a capacity/throughput limit rath
 
 Load repository skills lazily by role:
 
+- shared mathematical representation policy for all research producers and consumers: `.agents/skills/mathia-research-representation/SKILL.md`;
 - design authority: `.agents/skills/design-github-issue/SKILL.md`;
 - main PR-backed executor: `.agents/skills/spec-driven-codex-loop/SKILL.md`;
 - optional repository-scoped Codex Remote Control runner provisioning/repair: `.agents/skills/codex-local-runner/SKILL.md`;
