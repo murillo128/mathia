@@ -267,3 +267,9 @@ Role: explicit modern formulation used in `MC-172`. Equation (I) states the Diri
 Jonathan P. Keating and Zeev Rudnick, *Squarefree polynomials and Möbius values in short intervals and arithmetic progressions*, Algebra & Number Theory 10 (2016), no. 2, 375–420. DOI: https://doi.org/10.2140/ant.2016.10.375.
 
 Role: function-field prior-art analogue for `MC-172`. The paper calculates means and variances of Möbius sums in short intervals over `F_q[t]` in a large-`q` regime via unitary matrix integrals. It demonstrates that Möbius short-interval variance is a substantive established object in a proved analogue, but it supplies no unconditional integer estimate at the square-root local-variance scale required by the Gallagher-energy target in `MC-172`.
+
+## MC-S45 — Klurman, Mangerel and Teräväinen, multiplicative functions in short arithmetic progressions
+
+Oleksiy Klurman, Alexander P. Mangerel and Joni Teräväinen, *Multiplicative functions in short arithmetic progressions*, Proceedings of the London Mathematical Society 127 (2023), 366–446. DOI: https://doi.org/10.1112/plms.12546. arXiv: https://arxiv.org/abs/1909.12280.
+
+Role: primary smooth-modulus dispersion source for `MC-188`. Theorem 1.3 gives an unconditional residue-class variance estimate for any `1`-bounded multiplicative function at every modulus `q` that is sufficiently smooth and typical, with a single best-pretending character profile removed and no exceptional-modulus set. `MC-188` specializes this theorem to the logarithmic primorial `q_y=prod_{p<=c log X}p` and `f=mu`, proving that the theorem controls signed rough Möbius dispersion transverse to the principal character while leaving the rough global zero mode uncontrolled at fixed-power scale.
