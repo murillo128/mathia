@@ -19,6 +19,7 @@ based_on:
   - research/visual_exploration/findings/VIS-134-edge-wick-term-forces-fourth-cumulant-cancellation.md
   - research/visual_exploration/findings/VIS-135-bounded-cue-cumulants-force-gaussian-terminal-tent-packet.md
   - research/visual_exploration/findings/VIS-136-source-window-covariance-fixes-averaging-exponent.md
+  - research/visual_exploration/findings/VIS-137-fixed-ratio-cue-translated-windows-do-not-provide-growing-independent-pool.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -30,44 +31,44 @@ The support-edge thread has progressively removed universal and representation-i
 
 `VIS-133` shows that nearby normalized terminal edge amplitudes retain an explicit strictly positive-definite covariance kernel `R_(alpha,rho)`. `VIS-134` decomposes the corresponding intensity covariance into a positive Wick kernel plus a potentially cancelling connected fourth cumulant and proves that neither zero-sum projection nor fixed Laplace smoothing removes the Wick contribution. `VIS-135` closes the remaining single-window CUE loophole: higher normalized cumulants vanish, so the terminal packet is asymptotically proper complex Gaussian and its smoothed intensity field retains the positive order-one covariance floor.
 
-`VIS-136` now sharpens the cross-window averaging gate without assuming a zeta covariance model. For a stationary sequence of frozen per-window contrasts with covariance `gamma(h)`, the exact variance of the average is
+`VIS-136` sharpens the averaging gate. For a stationary sequence of frozen per-window contrasts with covariance `gamma(h)`, the exact variance of the average is
 
 `m^(-1)[gamma(0)+2 sum_(h<m)(1-h/m)gamma(h)]`.
 
-Thus the familiar `Theta(L^2)` window requirement for an `O(1/L)` mean shift is valid only in the short-memory regime with strictly positive long-run variance. A positive power-law tail `gamma(h)~c h^(-beta)`, `0<beta<1`, instead requires `Theta(L^(2/beta))` windows; a persistent positive common mode prevents averaging from resolving `1/L` at all. Faster-than-quadratic information accumulation is possible only through a separately proved low-frequency cancellation such as zero long-run variance.
+Thus the covariance tail fixes the information exponent: short memory with positive long-run variance gives the familiar quadratic `Theta(L^2)` requirement for an `O(1/L)` mean shift, positive long memory is worse, a persistent common mode blocks averaging, and faster decay requires separately proved low-frequency cancellation.
 
-The unresolved question has therefore narrowed from generic **effective averaging** to the actual **low-frequency covariance law of the predeclared zeta source-window statistic**, together with finite-height zeta-to-CUE transfer at the same `1/L` scale.
+`VIS-137` now closes a null-model ambiguity. Translating the same fixed-ratio tent around one CUE matrix gives a leading cross-window covariance equal to the Fourier transform of the actual overlap of the two source tents; pairwise-disjoint tents decorrelate at leading order. But each tent occupies a fixed angular fraction `alpha`, so at most `floor(1/alpha)` pairwise-disjoint supports fit on one circle. A single finite-CUE realization therefore cannot manufacture the required `m -> infinity` source-window pool merely by taking more translated windows. The unresolved dependence problem is genuinely **cross-height/cross-realization**, not a missing within-circle translation calculation.
 
 ## Research question
 
-Under a predeclared family of admissible zeta height/source windows using the exact bounded-tent, effective-size, unfolding, diagonal-subtraction, edge-coordinate, and Montgomery conventions already frozen by `VIS-123`--`VIS-136`, what covariance tail or low-frequency spectral law does the frozen per-window contrast obey under the matched null?
+For a predeclared sequence of actual zeta height windows using the exact bounded-tent, effective-size, unfolding, diagonal-subtraction, edge-coordinate, and Montgomery conventions frozen by `VIS-123`--`VIS-137`, what covariance tail or low-frequency spectral law does the resulting per-window contrast obey?
 
-Does that law place the statistic in the summable positive-long-run-variance regime, a power-law long-memory regime, a persistent-common-mode regime, or a genuinely degenerate zero-frequency regime with independently justified cancellation? In the surviving regime, can the available effective information make a predicted arithmetic mean displacement of order `1/L` distinguishable while finite-height counting/unfolding and effective-size transfer errors remain smaller than the same target scale?
+Can that law be justified directly for the zeta sequence, or through a multi-block/random-matrix surrogate with an explicit separation/dependence rule and a transfer argument accurate at order `1/L`? Does it place the statistic in the summable positive-long-run-variance regime, a power-law long-memory regime, a persistent-common-mode regime, or a genuinely degenerate zero-frequency regime with independently justified cancellation?
 
-Only after those quantities are controlled should an arithmetic lower-order formula determine a frozen residual amplitude/direction and untouched zeta confirmation data be inspected.
+Only after that dependence law and the finite-height transfer error are controlled should an arithmetic lower-order formula determine a frozen residual amplitude/direction and untouched zeta confirmation data be inspected.
 
 ## Why it may matter
 
-`VIS-136` removes an ambiguity in the previous feasibility language. Correlated windows do not have one generic "effective sample size": the covariance tail fixes the averaging exponent itself. Ordinary short memory preserves the quadratic `L^2` requirement up to a long-run-variance constant, positive long memory can make the requirement polynomially worse, and a common mode can make it impossible. Conversely, any claimed improvement over the quadratic law requires a real cancellation theorem rather than an optimistic independence or anti-correlation assumption.
+The current CUE null is now well constrained at the single-window level: its mean, common diagonal mode, terminal amplitude covariance, fourth-cumulant behavior, and fixed smoothing are all explicit. `VIS-136` shows that source-window dependence can change the asymptotic sample requirement itself, while `VIS-137` shows that the finite-CUE circle cannot supply a growing independent sample merely by translation.
 
-The route is therefore no longer blocked by an unknown finite-CUE fourth cumulant or by a vague sample-size heuristic. Its next bottleneck is a concrete source-window covariance/low-frequency calculation for the exact zeta statistic, followed independently by a quantitative zeta-to-finite-CUE transfer estimate precise enough to make a `1/L` lower-order signal observable rather than absorbed by stochastic or finite-height uncertainty.
+This removes an easy but invalid route to optimistic effective sample size. Independent CUE matrices remain useful for calibrating the per-window ensemble law, but independence between those matrices is imposed by construction and is not evidence that separated height windows in the single Riemann-zero sequence are independent. The next progress must therefore come from a genuine cross-height covariance theorem/model or from a decisive obstruction showing that the available information cannot resolve the `1/L` scale.
 
 ## Decisive test
 
-Do not inspect untouched confirmation zeros. First freeze the source-window spacing/overlap family and derive or justify the covariance sequence, or equivalently the low-frequency spectral mass, of the exact frozen support-edge contrast under the matched null. Include overlap, separation, local unfolding, effective-size estimation, and any common counting-function component.
+Do not inspect untouched confirmation zeros. First freeze a sequence of zeta source-window centers, widths, overlaps/separations, local unfolding rule, and effective-size rule. Derive or justify the covariance sequence, or equivalently the low-frequency spectral mass, of the exact frozen support-edge contrast across those windows. Account explicitly for shared zeros from overlap, counting-function components, local unfolding/effective-size estimation, and any dependence introduced by the centering procedure.
 
-Classify the resulting average using the `VIS-136` regimes rather than assuming independence. If covariance is summable, establish the long-run variance and whether it is strictly positive. If a positive power-law tail is present, determine its exponent and use the corresponding `L^(2/beta)` information requirement. If a common mode survives, treat that as an averaging obstruction. If the proposed route relies on faster-than-`1/m` variance decay, prove the low-frequency cancellation that makes the long-run variance degenerate instead of inferring it from finite data.
+Do not use translated windows from a single fixed-ratio CUE matrix as an asymptotically growing independent calibration pool: `VIS-137` proves that only `O(1)` pairwise-disjoint fixed-ratio tents fit. If a multi-CUE surrogate is used, state whether different blocks are independent or correlated and justify why that block model should approximate the chosen zeta height separation at the target scale rather than importing independence by fiat.
 
-In parallel, bound the finite-height zeta-to-CUE mismatch and nuisance propagation through the same statistic at the `1/L` scale. The test passes this gate only if the covariance-implied averaging error and transfer uncertainty can both be made smaller than a predeclared arithmetic amplitude without fitting the window selection or statistic to confirmation data.
+Classify the resulting average using the `VIS-136` regimes. If covariance is summable, establish the long-run variance and whether it is strictly positive. If a positive power-law tail is present, determine its exponent. If a common mode survives, treat that as an averaging obstruction. If faster-than-`1/m` variance decay is claimed, prove the low-frequency cancellation that makes the long-run variance degenerate instead of inferring it from finite data.
 
-If the required effective window count is unavailable, if long-range dependence or a common mode leaves too much noise, or if transfer/unfolding uncertainty is already `Omega(1/L)` with no independent correction, treat that as a feasibility obstruction and do not proceed to confirmation. If the gate survives, freeze an independently derived arithmetic residual prediction and only then test it on untouched high-zero material.
+Independently bound the finite-height zeta-to-null mismatch and nuisance propagation through the same statistic at order `1/L`. The gate passes only if covariance-implied averaging error and transfer uncertainty can both be made smaller than a predeclared arithmetic amplitude without fitting window selection, effective size, or statistic to confirmation data.
 
 ## Evidence boundary
 
-`VIS-135` is a matched finite-CUE single-window result. `VIS-136` is an exact stationary-covariance feasibility reduction. Neither establishes that zeta height windows are stationary, independent, short-memory, long-memory, or described by a specific covariance law, and neither establishes finite-height transfer to `o(1/L)` or the existence of an arithmetic residual.
+`VIS-135` is a matched finite-CUE single-window result. `VIS-136` is an exact stationary-covariance feasibility reduction. `VIS-137` gives the translated-window covariance geometry and fixed-ratio packing obstruction within one CUE realization. None establishes the covariance law of actual zeta height windows, stationarity or mixing of that sequence, a cross-height finite-CUE transfer theorem, or the existence of an arithmetic residual.
 
-The `Theta(L^2)` count is now justified only conditionally on summable covariance with positive long-run variance. The alternative long-memory and common-mode rates are control regimes, not empirical claims about Riemann zeros. No fresh confirmation-zero evidence has been used.
+The `Theta(L^2)` count remains conditional on summable covariance with positive long-run variance. Independent CUE realizations establish only an ensemble calibration under imposed independence. No fresh confirmation-zero evidence has been used.
 
 ## Research disposition
 
-Accepted for continued investigation. The single-window CUE covariance gate is resolved through `VIS-135`, and the generic averaging ambiguity is reduced by `VIS-136`. The next material gate is to **derive the covariance tail/zero-frequency mass of the exact frozen source-window statistic and independently control finite-height zeta-to-CUE transfer at order `1/L`**. Arithmetic-amplitude fitting and untouched confirmation remain downstream.
+Accepted for continued investigation. The single-window finite-CUE null and the within-circle translation loophole are controlled through `VIS-137`. The next material gate is to **define and derive the cross-height covariance/zero-frequency law of the exact frozen zeta source-window statistic and independently control finite-height transfer at order `1/L`**. Arithmetic-amplitude fitting and untouched confirmation remain downstream.
