@@ -10,6 +10,7 @@ based_on:
   - research/visual_exploration/findings/VIS-143-low-frequency-cue-companion-finite-window-quadratic-regime.md
   - research/visual_exploration/findings/VIS-144-low-frequency-cue-companion-two-sided-quadratic-response.md
   - research/visual_exploration/findings/VIS-145-second-moment-packet-cancels-all-finite-window-quadratic-responses.md
+  - research/visual_exploration/findings/VIS-146-shrinking-moment-null-total-variation-error-gate.md
 ---
 
 # Can a moment-cancelled low-frequency packet isolate a higher-order zeta arithmetic correction after universal quadratic cancellation?
@@ -18,18 +19,11 @@ based_on:
 
 `VIS-141` forces any Rudnick–Sarnak-safe companion to a near-edge pair factor into a shrinking low-frequency band. `VIS-142`--`VIS-144` then identify the finite-CUE null-side cost: in the ultra-low-frequency regime the centered response is genuinely quadratic, and a signed packet with `integral q^2 dnu_b(q)=0` cancels its leading CUE term.
 
-`VIS-145` closes the most optimistic interpretation of that cancellation. For **any** signed finite-window correction kernel `H` entering through the same centered-cosine transform,
+`VIS-145` closes the most optimistic interpretation of that cancellation. For any smooth finite-window correction entering through the same centered-cosine transform, the same packet also removes the quadratic source-specific response. The desired arithmetic residual, if present, must therefore survive at quartic-or-higher order, through nonuniform `L`-dependent moment growth, or through a genuinely different observable/information carrier.
 
-`Delta_H(q)=integral H(x)[1-cos(2*pi*q*x)]dx`,
+`VIS-146` adds the missing normalization gate. For every signed packet supported in `|q|<=b`, `|m_(2j)|<=b^(2j)||nu_b||_TV`. Hence a second-moment-null packet normalized by `|m_4|=1` necessarily has `||nu_b||_TV>=b^-4`; a fixed two-scale packet attains this exponent, so it cannot be improved by a more clever bounded-complexity rescaling. More strongly, if the surviving quartic source term is `A_4 q^4` and the theorem/transfer uncertainty is known only by `||e||_infinity<=epsilon`, then the best robust signal-to-error ratio permitted by those envelopes is at most `|A_4|b^4/epsilon`. Packet rescaling multiplies signal and total-variation-linear error together and cannot improve that ratio.
 
-the packet response satisfies
-
-`|integral Delta_H dnu_b - 2*pi^2 mu_2(H) integral q^2 dnu_b|`
-` <= (2/3)pi^4 M_4(H)b^4 ||nu_b||_TV`.
-
-Thus second-moment cancellation is not CUE-selective: it removes the quadratic response of the zeta-minus-CUE correction as well whenever that correction has the same smooth finite-window representation. The desired arithmetic residual, if present, must survive at quartic-or-higher order, through nonuniform `L`-dependent moment growth, or through a genuinely different observable/information carrier.
-
-Targeted prior-art orientation confirms that finite-height zeta pair-correlation models do contain source-specific arithmetic lower-order structure beyond the limiting CUE/GUE law. Conrey–Snaith derive lower-order `n`-correlation terms conditionally on the ratios conjecture, while Keating–Smith explicitly use asymptotically lower-order pair-correlation terms in a formal/heuristic Fourier inversion recovering prime-pair arithmetic. This makes an arithmetic carrier plausible, but neither result proves that the present shrinking support-safe packet retains it after the exact moment-null transform.
+Targeted prior-art orientation confirms that finite-height zeta pair-correlation models do contain source-specific arithmetic lower-order structure beyond the limiting CUE/GUE law. Conrey–Snaith derive lower-order `n`-correlation terms conditionally on the ratios conjecture, while Keating–Smith explicitly use asymptotically lower-order pair-correlation terms in a formal/heuristic Fourier inversion recovering prime-pair arithmetic. This makes an arithmetic carrier plausible, but neither result proves that the present shrinking support-safe packet retains it after the exact moment-null transform or that its coefficient beats the new `b^4` error gate.
 
 ## Research question
 
@@ -37,33 +31,37 @@ After expressing the strongest available finite-height **zeta-minus-finite-CUE**
 
 `integral q^2 dnu_(b_L)(q)=0`?
 
-Does a quartic-or-higher arithmetic coefficient, or a provably nonuniform `L`-dependent moment profile, remain large enough to dominate the theorem/transfer and stochastic error floors under the same shrinking support constraint? If not, is there a different support-safe asymmetric observable whose source-specific contribution is not annihilated by the same low-order moment projection?
+If that term is quartic, what is its exact coefficient `A_4(L)` and does
+
+`epsilon_L/(|A_4(L)| b_L^4) -> 0`
+
+hold for the strongest available theorem/transfer error envelope in the same coordinate and support regime? If not, no packet normalization can repair the deterministic deficit under total-variation control. If the ratio is favorable, does the same packet survive sixth-order Taylor remainder, stochastic variance, and cross-window covariance? A different observable remains admissible only if it carries source-specific information outside this common finite-window moment channel.
 
 ## Why it may matter
 
-The previous formulation hoped that CUE and zeta might simply have different quadratic coefficients, so a second-moment-null packet could remove the universal term while retaining the arithmetic one. `VIS-145` shows that this cannot happen within the same smooth finite-window centered-cosine representation: the packet projects every quadratic coefficient to zero.
+The previous formulation hoped that algebraic cancellation might remove the universal null without paying the scalar amplification cost of an ultra-low-frequency companion. `VIS-145` showed that the cancellation also removes every common quadratic source correction. `VIS-146` now shows that moving the signal to quartic order does not make normalization free: the shrinking support has only `O(b^4)` fourth-moment capacity per unit total variation, and any uncertainty controlled in the same norm scales with the weights in exactly the same way.
 
-That is a useful narrowing rather than a dead end. Known finite-height pair-correlation formulas indicate where arithmetic lower-order structure can enter, but the correct question is now whether that structure survives **after** the exact support-safe transform at a higher order and with favorable `L`-dependence. A positive answer would identify a genuinely discriminating companion; a negative answer would close the moment-cancellation escape without fitting confirmation zeros.
+The remaining question is therefore sharper and largely normalization-independent. A useful quartic arithmetic carrier must be intrinsically strong enough, through `A_4(L)` or controlled nonuniform moment growth, to beat the per-mode error before packet tuning matters. A positive answer would justify studying packet shape and covariance; a negative answer would close the current moment-cancelled support-edge design without trying additional signed filters that cannot change the deterministic ratio.
 
 ## Decisive test
 
 Do not inspect untouched confirmation-zero data. Freeze the source-window, unfolding, effective-size, diagonal-subtraction, edge-coordinate, support, packet-shape, and normalization conventions first.
 
-1. Derive an exact or controlled representation of the finite-height zeta-minus-finite-CUE mean through the same companion variable `q`. Do not identify the spacing-domain arithmetic factor in a pair-correlation formula with the frequency-domain packet coefficient without carrying out the Fourier/window transform.
-2. Apply a fixed bounded-complexity signed packet with `m_2=integral q^2 dnu_(b_L)=0` **before** taking the shrinking-band asymptotic.
-3. Compute or bound the first surviving term. Under a common smooth finite-window kernel this begins no earlier than the quartic remainder controlled by `VIS-145`; record its coefficient/moment growth in `L` rather than only its power of `b_L`.
-4. Propagate the exact packet total variation and any normalization through the available restricted-support theorem remainder, finite-height zeta-to-null transfer error, stochastic variance, and cross-window covariance.
+1. Derive an exact or controlled representation of the finite-height zeta-minus-finite-CUE mean through the same companion variable `q`. Do not identify a spacing-domain arithmetic factor with the frequency-domain packet coefficient without carrying out the Fourier/window transform.
+2. Expand that exact finite-window response through quartic order and identify `A_4(L)` after imposing `m_2=0`. Carry the sixth-order remainder with its actual `L`-dependent moment bound rather than only its formal power of `b_L`.
+3. Put the strongest available restricted-support theorem/transfer remainder into a per-mode envelope `epsilon_L` in the same frozen coordinate. Before optimizing any packet, test the necessary robust gate from `VIS-146`: `epsilon_L/(|A_4(L)|b_L^4) -> 0` for asymptotically strong quartic separation. If the available error has additional sign, orthogonality, oscillation, or norm structure that beats total variation, prove and use that stronger structure explicitly.
+4. Only if the deterministic gate survives, apply a fixed bounded-complexity `m_2=0` packet and propagate its exact total variation through stochastic variance and cross-window covariance. Packet rescaling is not evidence of improved separation.
 
-The route survives only if a source-specific post-cancellation term is nonzero and dominates all those error channels in one common `L`-dependent regime. Kill the current moment-null design if the first surviving arithmetic term is erased with the universal terms, if its required normalization amplifies errors to the same or larger scale, or if the needed uniform finite-height transform lies outside available support/control.
+Kill the current moment-null design if the quartic source coefficient vanishes, if its `L`-growth is too weak for the `b_L^4` support-capacity gate, if the sixth-order/nonuniform correction is uncontrolled at the required scale, or if stochastic/four-level error dominates after the deterministic gate passes.
 
-A different observable remains admissible only if its new information carrier is stated explicitly and does not merely rename the same finite-window centered-cosine functional.
+Do not proceed to an `m_4=0` sixth-order packet merely to cancel another universal term unless the sixth-order source coefficient and error budget are already identified; `VIS-146` shows that unit sixth-moment normalization then costs at least `b_L^-6` in total variation.
 
 ## Evidence boundary
 
-`VIS-144` establishes the finite-CUE quadratic response and its signed second-moment cancellation. `VIS-145` establishes the stronger generic obstruction: every smooth finite-window correction in the same centered-cosine representation loses its quadratic term under the same packet, with an explicit quartic remainder bound.
+`VIS-144` establishes the finite-CUE quadratic response and signed second-moment cancellation. `VIS-145` establishes the generic quadratic obstruction for every smooth finite-window correction in the same centered-cosine representation. `VIS-146` establishes the support-moment capacity bound, the explicit quartic expansion after `m_2=0`, and the normalization-invariant minimax gate for errors controlled only through total variation.
 
-The cited finite-height zeta pair-correlation literature supplies conditional/heuristic evidence that arithmetic lower-order terms exist in broader formulas; it does **not** establish the exact `L`-dependent kernel, uniformity, covariance law, or post-cancellation amplitude needed here. Nothing currently proves that a quartic arithmetic coefficient survives, that it is detectable, or that the necessary restricted-support family is uniform. No RH implication or confirmation-zero evidence is claimed.
+The cited finite-height zeta pair-correlation literature supplies conditional/heuristic evidence that arithmetic lower-order terms exist in broader formulas; it does **not** establish the exact `A_4(L)`, the required support-uniform transform, the theorem/transfer error `epsilon_L`, the covariance law, or post-cancellation detectability. Nothing currently proves that a quartic arithmetic coefficient survives strongly enough, that the deterministic gate is favorable, or that the necessary restricted-support family is uniform. No RH implication or confirmation-zero evidence is claimed.
 
 ## Research disposition
 
-Accepted in narrowed form. The quadratic-selectivity hypothesis is resolved negatively by `VIS-145`. Continued work should test only the remaining higher-order/nonuniform channel: derive the exact finite-height zeta-minus-CUE companion response, impose `m_2=0`, and determine the first surviving arithmetic term together with its full `L`-dependent error and covariance budget. If that term cannot beat the amplified error floor, reject the moment-cancelled companion rather than opening additional packet variants.
+Accepted in further narrowed form. The next work is no longer packet design. First identify the actual quartic-or-higher zeta-minus-CUE coefficient and compare it with the same-coordinate theorem/transfer error at the structural `b_L^(2j)` support-capacity scale. Only a favorable deterministic ratio justifies returning to signed packet shape, variance, or covariance. If the ratio is not favorable and no stronger error structure is available, reject the moment-cancelled companion rather than opening additional filter variants.
