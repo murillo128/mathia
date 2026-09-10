@@ -76,7 +76,6 @@ jobs:
               path = ROOT / 'research' / line / 'graph' / f'{kebab}-membership.md'
               path.write_text('\n'.join(out), encoding='utf-8')
 
-          # Rebuild the single stable durable-intuition projection.
           sections = [('research/mind/intuition', 'Global')]
           sections += [(f'research/{line}/mind/intuition', title) for line, _, title in lines]
           io = [
@@ -112,7 +111,6 @@ jobs:
           intuition_path = ROOT / 'research' / 'graph' / 'intuition-membership.md'
           intuition_path.write_text('\n'.join(io), encoding='utf-8')
 
-          # Exact structural completeness checks.
           for line, kebab, _ in lines:
               path = ROOT / 'research' / line / 'graph' / f'{kebab}-membership.md'
               text = path.read_text(encoding='utf-8')
@@ -124,7 +122,7 @@ jobs:
                   raise SystemExit(f'Membership mismatch for {line}: missing={missing[:5]} extra={extra[:5]}')
 
           itext = intuition_path.read_text(encoding='utf-8')
-          ilinked = set(re.findall(r'\[\[(research/[^|\]]+/mind/intuition/MI-[^|\]]+)\]\]', itext))
+          ilinked = set(re.findall(r'\[\[(research/(?:[^|\]]+/)?mind/intuition/MI-[^|\]]+)\]\]', itext))
           iexpected = set()
           for directory, _ in sections:
               d = ROOT / directory
@@ -133,7 +131,6 @@ jobs:
           if ilinked != iexpected:
               raise SystemExit(f'Intuition membership mismatch: missing={sorted(iexpected-ilinked)[:5]} extra={sorted(ilinked-iexpected)[:5]}')
 
-          # Audit graph-owned wiki targets against the checked-out source tree.
           graph_files = list((ROOT/'research'/'graph').rglob('*.md'))
           for line, _, _ in lines:
               graph_files += list((ROOT/'research'/line/'graph').rglob('*.md'))
