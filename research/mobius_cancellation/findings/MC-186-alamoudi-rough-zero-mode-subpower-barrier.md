@@ -150,7 +150,8 @@ M_{k,\omega}(x,y)
 \phi_{i,J}(y)
 \frac{\Gamma_{i,j}}{(\log x)^i}
 (\log\log x)^{J-j}{J\choose j}
-+arepsilon'''_{N,k-1}(x,y),
++
+\varepsilon'''_{N,k-1}(x,y),
 \tag{13}
 \]
 
@@ -272,6 +273,6 @@ The finding is falsified if the `k=1` base-case specialization of the current Th
 
 `MC-185` left three plausible ways to repair the parity-deformation route: control the signed zero mode independently, couple it to the fluctuating statistic before centering, or abandon that representation for a parity-sensitive Type-II/bilinear mechanism. The present source audit materially narrows the first option.
 
-The zero mode already enjoys **arbitrarily strong fixed-logarithmic cancellation** at `y=c log X`. Reproving another `X/log^A X` estimate, even for very large fixed `A`, does not buy the fixed-power currency needed by `MC-177`. A useful next theorem must instead explain one of two genuinely stronger transitions: either a growing-order uniformity mechanism on the scale `N about log X/log log X`, with all constants and contour errors controlled, or a source-side cancellation principle that produces a fixed power without passing through fixed-order asymptotic expansion.
+The zero mode already enjoys **arbitrarily strong fixed-logarithmic cancellation** at `y=c log X`. Reproving another `X/log^A X` estimate, even for very large fixed `A`, does not buy the fixed-power currency needed by `MC-177`. A useful next theorem must instead explain one of two genuinely stronger transitions: either a growing-order uniformity mechanism on the scale `N \asymp log X/log log X`, with all constants and contour errors controlled, or a source-side cancellation principle that produces a fixed power without passing through fixed-order asymptotic expansion.
 
 That is now the precise source-side frontier for the coarse rough mode. The remaining local-variance problem is harder still: even after the zero mode is upgraded, the off-diagonal rough parity field must retain enough signed coupling to satisfy the full variance target of `MC-180`.
