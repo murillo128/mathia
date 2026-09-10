@@ -61,7 +61,7 @@ and set
 
 \[
 a_k=\sum_{r\in\Gamma_{H,D}(k)}w(r),\qquad
-u_k=\sum_{\substack{r\in\Gamma_{H,D}(k)\\\mu(r)=0}}w(r).
+\nu_k=\sum_{\substack{r\in\Gamma_{H,D}(k)\\\mu(r)=0}}w(r).
 \]
 
 Check the finite identities E=sum_k a_k Hcal(k)^2 and U=sum_k u_k Hcal(k)^2, where Hcal denotes the displayed mathcal H. For nonempty blocks put theta_k=u_k/a_k. This converts the question into whether the physical energy can concentrate on blocks with small theta_k. Short or singleton blocks may have theta_k=0; a uniform lower bound on every block must not be assumed.
@@ -90,4 +90,6 @@ Accepted. `FD-036` supplies a pointwise projective bound of order `H^(-1/2)` but
 
 [[research/farey_discrepancy/findings/FD-037-bounded-increments-localize-nonsquarefree-occupation-failure-to-a-cube-root-jordan-core.md]] proves the first source-specific reduction: if `U_(H,D)/E_(H,D)` tends to zero along an unbounded sequence, then asymptotically all of `E_(H,D)` must concentrate on Jordan rows `r=O(H^(1/3))`, equivalently quotient arguments of size at least order `H^(2/3)`. Outside that core, the exact one-Lipschitz law for `mathcal H` pairs every squarefree row with a bounded-distance nonsquarefree witness at total cost `O(H)`, which is negligible because `FD-033` gives `E_(H,D)/H -> infinity`.
 
-The precise unresolved question is now whether the actual quotient-shell source can exhibit this cube-root-core concentration. Excluding it by a fixed energy fraction would yield `U/E>=c_D>0` and hence a fixed projective linear-prefix gap. Ambient nonsquarefree density and bounded-increment control outside the core are not enough by themselves to settle that remaining concentration problem.
+[[research/farey_discrepancy/findings/FD-038-terminal-quotient-blocks-have-universal-nonsquarefree-jordan-occupation.md]] proves a complementary source-independent bulk law. For every fixed `alpha<1/3`, the terminal quotient range `k<=H^alpha` has nonsquarefree Jordan-energy fraction tending to the explicit weighted-density constant `delta_ns=0.3558...`, uniformly over the nonnegative shell values. For the physical source this terminal region alone has energy `~H Q(H^alpha)/zeta(3)` and is superlinear. Consequently any sequence with `U/E->0` must satisfy `E/(H Q(H^alpha))->infinity` for every `alpha<1/3`, while `FD-037` simultaneously forces almost all energy into `r=O(H^(1/3))`.
+
+The precise unresolved question is therefore sharper than cube-root-core concentration alone: can the sparse hyperbola samples `mathcal H(floor(H/r))` with `r<=H^(1/3)` overwhelm by an unbounded factor every growing terminal critical-square prefix `H Q(H^alpha)`, `alpha<1/3`? Excluding that hyperbola-sampling amplification for one fixed `alpha<1/3` would yield `U/E>=c_D>0` and hence a fixed projective linear-prefix gap. Ambient nonsquarefree density is now known to be fully effective in the long terminal quotient blocks; the unresolved arithmetic lies in the thin low-row sample geometry.
