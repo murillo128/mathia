@@ -1,8 +1,8 @@
 # NB-037 — the early-shell Gram oracle has an unavoidable Burnol-scale defect
 
-**Status:** `EXACT-DERIVED + TARGET-CORRELATION-DEFECT-LOWER-BOUND + RELATIVE-GRAM-DEFECT-LOWER-BOUND + BURNOL-SCALE-OBSTRUCTION + NEGATIVE/BOUNDARY`. `NB-034` constructs the weighted-tail skeleton with an explicit early-shell lower Gram matrix `B_M`, while `NB-036` localizes all upper-section dependence to the positive defect matrix `Z_{M,N}` and target-correlation defect `eta_{M,N}`. Those defects are not merely bookkeeping terms that might both be negligible at the accuracy requested by the accepted weighted-skeleton target-data clue. The early-shell model itself forces them to be visible at least at the finite Nyman-distance scale.
+**Status:** `EXACT-DERIVED + TARGET-CORRELATION-DEFECT-LOWER-BOUND + RELATIVE-GRAM-DEFECT-LOWER-BOUND + BURNOL-SCALE-OBSTRUCTION + NEGATIVE/BOUNDARY`. `NB-034` gives the weighted-tail skeleton and its explicit early-shell lower Gram matrix `B_M`; `NB-036` localizes every remaining upper-section dependence to the positive defect matrix `Z_{M,N}` and target-correlation defect `eta_{M,N}`. Those defects cannot both be treated as asymptotically negligible at the accuracy requested by the accepted weighted-skeleton target-data clue.
 
-Use the notation of `NB-034` and `NB-036`. Thus, for `2 <= M <= N`, let
+For `2 <= M <= N`, abbreviate
 
 \[
 B:=B_M,
@@ -16,7 +16,7 @@ u:=u_M,
 Z:=Z_{M,N},
 \]
 
-and put
+and
 
 \[
 d:=d_N=\operatorname{dist}(e,V_N),
@@ -26,20 +26,18 @@ d:=d_N=\operatorname{dist}(e,V_N),
 \tag{1}
 \]
 
-Then the explicit source vector
+Here the source vector is
 
 \[
 u=
-\bigl(-\mu(2),\ldots,-\mu(M-1),\,M m(M-1)\bigr)^T
+\bigl(-\mu(2),\ldots,-\mu(M-1),\,M m(M-1)\bigr)^T.
 \tag{2}
 \]
 
-satisfies the exact early-shell identity
+Then
 
 \[
-\boxed{
-\nu^*B\nu=1-\frac1M.
-}
+\boxed{u^*Bu=1-\frac1M.}
 \tag{3}
 \]
 
@@ -53,7 +51,7 @@ Define
 \tag{4}
 \]
 
-The target-correlation defect from `NB-036` necessarily obeys
+The target-correlation defect necessarily satisfies
 
 \[
 \boxed{
@@ -64,19 +62,18 @@ The target-correlation defect from `NB-036` necessarily obeys
 \tag{5}
 \]
 
-Next put
+If
 
 \[
-S_{M,N}:=B^{1/2}ZB^{1/2}\succeq0.
+S_{M,N}:=B^{1/2}ZB^{1/2}\succeq0,
 \tag{6}
 \]
 
-For `d>0`, the positive defect relation `eta eta^* <= d^2 Z` of `NB-036` gives
+then, for `d>0`,
 
 \[
 \boxed{
-\|S_{M,N}\|_{
-\mathrm{op}}
+\|S_{M,N}\|_{\mathrm{op}}
 \ge
 \frac{\Delta_{M,N}^2}{d^2}
 \ge
@@ -85,35 +82,33 @@ For `d>0`, the positive defect relation `eta eta^* <= d^2 Z` of `NB-036` gives
 \tag{7}
 \]
 
-Moreover this is exactly the relative Gram error made by replacing the true retained Gram matrix by the explicit early-shell matrix:
+Moreover `S_{M,N}` is exactly the relative Gram error made by replacing the true retained Gram matrix by the explicit early-shell matrix:
 
 \[
 \boxed{
 \left\|
 H^{-1/2}(B-H)H^{-1/2}
-\right\|_{
-\mathrm{op}}
+\right\|_{\mathrm{op}}
 =
-\|S_{M,N}\|_{
-\mathrm{op}}.
+\|S_{M,N}\|_{\mathrm{op}}.
 }
 \tag{8}
 \]
 
-Consequently the candidate `H_tilde=B_M` cannot satisfy an `o(1/log N)` relative-metric error at any predeclared cutoff with
+Hence, for any predeclared cutoff with
 
 \[
-\frac{M}{\log N}\longrightarrow\infty.
+\frac{M}{\log N}\longrightarrow\infty,
 \tag{9}
 \]
 
-Indeed the unconditional Burnol lower bound already anchored for this line gives `d_N^2 \gg 1/log N`. Hence (9) implies `1/M=o(d_N^2)`, and (5)--(8) yield
+Burnol's unconditional lower bound `d_N^2 \gg 1/log N` gives `1/M=o(d_N^2)`, so
 
 \[
 \boxed{
 \|B_M^{1/2}\eta_{M,N}\|_2
-\ge \left(\frac12-o(1)\right)d_N^2
-\gg \frac1{\log N},
+\ge\left(\frac12-o(1)\right)d_N^2
+\gg\frac1{\log N},
 }
 \tag{10}
 \]
@@ -126,18 +121,16 @@ and
 \widehat H_{M,N}^{-1/2}
 (B_M-\widehat H_{M,N})
 \widehat H_{M,N}^{-1/2}
-\right\|_{
-\mathrm{op}}
-\ge
-\left(\frac14-o(1)\right)d_N^2
-\gg \frac1{\log N}.
+\right\|_{\mathrm{op}}
+\ge\left(\frac14-o(1)\right)d_N^2
+\gg\frac1{\log N}.
 }
 \tag{11}
 \]
 
-Thus the explicit early-shell geometry is an excellent conditioning certificate but **not** a sufficiently accurate target-data oracle at the Burnol scale. Any successful reduced construction must capture a leading part of the upper-section defect rather than discard `(Z,eta)`.
+Thus `B_M` is a useful conditioning certificate but cannot itself be an `o(1/log N)` target-data oracle in the moving-cutoff regime where `NB-034` preserves relative Nyman distance.
 
-## 1. The Möbius source vector exactly reconstructs the early-shell target
+## 1. Exact early-shell target norm
 
 Let
 
@@ -148,7 +141,7 @@ I_t=\left(\frac1{t+1},\frac1t\right].
 \tag{12}
 \]
 
-`NB-034` proves that the restrictions of `g_2,...,g_M` to the first `M-1` shells form a basis of `E_M`. `NB-036` constructs the dual basis
+`NB-034` proves that the restrictions of `g_2,...,g_M` to the first `M-1` shells form a basis of `E_M`. `NB-036` gives the corresponding dual basis
 
 \[
 \lambda_j^{(M)}=\xi_j\quad(j<M),
@@ -157,19 +150,19 @@ I_t=\left(\frac1{t+1},\frac1t\right].
 \tag{13}
 \]
 
-supported entirely in those same shells, and gives
+with
 
 \[
 \langle g_i,\lambda_j^{(M)}\rangle=\delta_{ij},
 \qquad
-\bigl(\langle e,\lambda_j^{(M)}\rangle\bigr)_{j=2}^M=\nu.
+\bigl(\langle e,\lambda_j^{(M)}\rangle\bigr)_{j=2}^M=u.
 \tag{14}
 \]
 
-Therefore `nu` is exactly the coefficient vector of the early-shell projection `P_{E_M}e` in the restricted generator basis. Since `B_M` is precisely the Gram matrix of those restrictions,
+Because the dual vectors are supported on those early shells, `u` is exactly the coefficient vector of `P_{E_M}e` in the restricted generator basis. Since `B_M` is the Gram matrix of those restrictions,
 
 \[
-\nu^*B\nu
+u^*Bu
 =\|P_{E_M}e\|^2
 =\sum_{t=1}^{M-1}|I_t|
 =\sum_{t=1}^{M-1}\frac1{t(t+1)}
@@ -177,157 +170,135 @@ Therefore `nu` is exactly the coefficient vector of the early-shell projection `
 \tag{15}
 \]
 
-which proves (3). Equivalently, the Möbius/Vasyunin source coordinates reconstruct the constant function exactly on every shell `I_t`, `t<M`; the only early-shell target mass not seen is the geometric tail of norm squared `1/M`.
+proving (3). Equivalently, the Möbius/Vasyunin coordinates reconstruct the constant target exactly on every shell `I_t`, `t<M`.
 
-This identity also calibrates the zero-defect model sharply. If one formally set `Z=0` and `eta=0` in the `NB-036` certificate, then `H=B` and the model would predict
+If one formally sets `Z=0` and `eta=0` in the `NB-036` certificate, then `H=B` and this zero-defect model predicts
 
 \[
-\kappa_0^2
-=1-\nu^*B\nu
-=\frac1M.
+\kappa_0^2=1-u^*Bu=\frac1M.
 \tag{16}
 \]
 
-For the near-logarithmic cutoffs relevant to the weighted-skeleton clue, the true finite distance is unconditionally much larger than this `1/M` floor. The discrepancy therefore has to re-enter through the upper-section defects.
+For the cutoffs in (9), the true finite Nyman distance is unconditionally larger than this scale, so the missing mass must re-enter through the upper-section defects.
 
 ## 2. The target defect is forced by the distance gap
 
-`NB-036` proves that the source coordinates of `P_{\widehat K_{M,N}}e` are
+`NB-036` gives the retained source coordinates and inverse Gram identity
 
 \[
-c=\nu-\eta,
+c=u-\eta,
+\qquad
+H^{-1}=B^{-1}-Z,
+\qquad
+Z\succeq0.
 \tag{17}
 \]
 
-and that
+The last two relations imply `H\succeq B`. Therefore
 
 \[
-H^{-1}=B^{-1}-Z,
-\qquad Z\succeq0.
+\|B^{1/2}(u-\eta)\|_2^2
+\le
+(u-\eta)^*H(u-\eta)
+=1-\kappa^2
+\le1-d^2,
 \tag{18}
 \]
 
-Since inversion reverses the positive-definite order, (18) gives `H >= B`. Therefore
+where the final inequality uses `\widehat K_{M,N}\subseteq V_N`. Together with (3), the reverse triangle inequality gives
 
 \[
-\|B^{1/2}(\nu-\eta)\|_2^2
-=(\nu-\eta)^*B(\nu-\eta)
-\le
-(\nu-\eta)^*H(\nu-\eta).
+\|B^{1/2}\eta\|_2
+\ge
+\sqrt{1-1/M}-\sqrt{1-d^2}
 \tag{19}
 \]
 
-The final quadratic form is the squared norm of the retained target projection, so
+whenever the right-hand side is positive, and otherwise the positive-part formulation in (5) is trivial. If `d^2>1/M`, rationalization yields
 
 \[
-(\nu-\eta)^*H(\nu-\eta)=1-\kappa^2.
-\tag{20}
-\]
-
-Because `\widehat K_{M,N}\subseteq V_N`, one has `\kappa>=d`; hence
-
-\[
-\|B^{1/2}(\nu-\eta)\|_2
-\le\sqrt{1-d^2}.
-\tag{21}
-\]
-
-On the other hand, (3) gives
-
-\[
-\|B^{1/2}\nu\|_2=\sqrt{1-1/M}.
-\tag{22}
-\]
-
-The reverse triangle inequality applied to (21)--(22) proves the first inequality in (5). When `d^2>1/M`, rationalization gives
-
-\[
-\Delta_{M,N}
+\sqrt{1-1/M}-\sqrt{1-d^2}
 =
 \frac{d^2-1/M}
 {\sqrt{1-1/M}+\sqrt{1-d^2}}
-\ge\frac{d^2-1/M}{2},
-\tag{23}
+\ge\frac{d^2-1/M}{2}.
+\tag{20}
 \]
 
-and if `d^2<=1/M` the positive-part version is trivial. This proves (5) for all `M,N`.
+This proves (5). In particular, if `d_N^2>1/M`, then `eta_{M,N}` cannot vanish: the early-shell source vector would otherwise reconstruct too much target mass to be compatible with the actual finite distance.
 
-A useful qualitative corollary is immediate: whenever `d_N^2>1/M`, the target-correlation defect `eta_{M,N}` **cannot vanish**. The explicit early-shell source vector is then too close to a perfect reconstruction of `e` to be compatible with the actual finite Nyman distance.
+## 3. Target correlation forces a metric defect
 
-## 3. Target correlation forces a relative metric defect as well
-
-The automatic PSD estimate from `NB-036` is
+The PSD estimate of `NB-036`,
 
 \[
-\eta\eta^*\preceq d^2Z.
-\tag{24}
+\eta\eta^*\preceq d^2Z,
+\tag{21}
 \]
 
-Conjugating by `B^{1/2}` gives
+becomes after conjugation by `B^{1/2}`
 
 \[
 (B^{1/2}\eta)(B^{1/2}\eta)^*
 \preceq d^2S_{M,N}.
-\tag{25}
+\tag{22}
 \]
 
-Taking operator norms and applying (5) yields (7).
+Taking operator norms and using (5) proves (7).
 
-The same `S_{M,N}` is the exact relative metric defect. From (18),
+Also, from (17),
 
 \[
 B^{1/2}H^{-1}B^{1/2}=I-S_{M,N}.
-\tag{26}
+\tag{23}
 \]
 
-The positive matrices `B^{1/2}H^{-1}B^{1/2}` and `H^{-1/2}BH^{-1/2}` have the same eigenvalues. Since (18) implies `0\prec I-S_{M,N}\preceq I`, the eigenvalues of
+The positive matrices `B^{1/2}H^{-1}B^{1/2}` and `H^{-1/2}BH^{-1/2}` have the same eigenvalues. Since `0\prec I-S_{M,N}\preceq I`, the eigenvalues of `I-H^{-1/2}BH^{-1/2}` are exactly those of `S_{M,N}`. Hence
 
 \[
-I-H^{-1/2}BH^{-1/2}
-\]
-
-are exactly the eigenvalues of `S_{M,N}`. Therefore
-
-\[
-\left\|H^{-1/2}(B-H)H^{-1/2}\right\|_{
-\mathrm{op}}
+\left\|H^{-1/2}(B-H)H^{-1/2}\right\|_{\mathrm{op}}
 =
-\left\|I-H^{-1/2}BH^{-1/2}\right\|_{
-\mathrm{op}}
-=\|S_{M,N}\|_{
-\mathrm{op}},
-\tag{27}
+\left\|I-H^{-1/2}BH^{-1/2}\right\|_{\mathrm{op}}
+=
+\|S_{M,N}\|_{\mathrm{op}},
+\tag{24}
 \]
 
-which proves (8).
+which is (8). This places the lower bound in exactly the relative metric used by the full-matrix sufficient condition in `CLUE-weighted-skeleton-target-data-without-full-section-oracle`.
 
-This is stronger than merely observing that `B<=H`: it quantifies the exact relative error in the same metric used by the full-matrix sufficient condition in `CLUE-weighted-skeleton-target-data-without-full-section-oracle`.
+## 4. Burnol-scale obstruction
 
-## 4. Burnol-scale obstruction for the accepted weighted-skeleton clue
-
-Burnol's classical lower-bound theorem, already recorded in this line's `SOURCES.md` and already used in `NB-034`, implies in particular
+Burnol's classical lower-bound theorem, already anchored in `SOURCES.md` and already used in `NB-034`, implies
 
 \[
 d_N^2\gg\frac1{\log N}.
-\tag{28}
+\tag{25}
 \]
 
-For any predeclared `M=M_N<=N` satisfying (9),
+Under (9),
 
 \[
 \frac{1/M}{d_N^2}
-\ll\frac{\log N}{M}\longrightarrow0.
-\tag{29}
+\ll\frac{\log N}{M}
+\longrightarrow0.
+\tag{26}
 \]
 
-Equations (5) and (7) now give (10)--(11). In particular, choosing `H_tilde=B_M` in the accepted clue's proposed relative-Gram criterion produces an error bounded **below**, rather than above, at order `1/log N`. The explicit early-shell matrix can therefore never by itself supply the clue's requested `o(1/log N)` metric accuracy in the regime where the quotient also preserves relative target distance.
+Substituting this into (5) and (7) gives (10)--(11). Therefore the concrete approximation `H_tilde=B_M` fails the accepted clue's proposed requirement
 
-If RH were false and `d_N` stayed bounded away from zero, the obstruction would be stronger: (5) forces a target defect bounded away from zero and (7) forces a nonvanishing relative metric defect. Thus no assumption on `d_N->0` is used in the finite inequalities; the Burnol theorem is needed only to convert them into the unconditional asymptotic statement at the clue's moving cutoffs.
+\[
+\left\|H^{-1/2}(H_{\rm tilde}-H)H^{-1/2}\right\|=o(1/\log N).
+\tag{27}
+\]
 
-## 5. Prior-art audit, boundaries, and consequence
+The failure is not an artifact of poor conditioning: it is forced by the gap between the exact early-shell target mass `1-1/M` and the nonzero finite Nyman distance.
 
-The external ingredients are already anchored for this line. Vasyunin's classical biorthogonal system supplies the dual coordinates used by `NB-036`; Burnol supplies the unconditional `1/log N` lower-bound scale. The identities (3), (5), and (7)--(8) are finite Hilbert-space consequences of those persisted structures. A targeted literature search across Nyman--Beurling finite-section Gram geometry, Vasyunin biorthogonality, Burnol distance bounds, and recent multiscale Gram-compressibility work did not locate this exact weighted-tail lower-bound synthesis. This is not a priority claim: the matrix-order and generalized-eigenvalue steps are standard linear algebra, and the substantive line-local point is their application to the exact `NB-036` defect normal form.
+If RH is false and `d_N` stays bounded away from zero, the same finite inequalities force a stronger, nonvanishing target and metric defect. No assumption `d_N->0` enters (3)--(8); Burnol is used only to convert those identities into the unconditional moving-cutoff obstruction.
 
-The result does **not** prove that `(Z_{M,N},eta_{M,N})` is expensive to compute, does not give a lower bound on algorithmic complexity, and does not rule out a source-defined approximation that captures their leading components without an `N`-scale projection. It also does not turn the Burnol lower bound into an upper bound or imply `d_N->0`. What it rules out is the natural zero-defect shortcut: the explicit early-shell matrix and Möbius/Vasyunin source vector cannot be promoted from a conditioning certificate to an RH-scale target-data oracle merely by arguing that the discarded upper section is asymptotically negligible.
+## 5. Prior-art and evidence boundary
 
-The accepted weighted-skeleton clue is therefore narrowed to a sharper requirement. Any successful reduced oracle at `M/log N -> infinity` must recover enough of the upper-section geometry to cancel a **provably Burnol-scale** relative Gram defect, and enough target information to account for the concomitant correlation defect in (5). The next useful theorem must control or reconstruct that leading defect from arithmetic data cheaper than the full finite-section solve; further refinement of `B_M` alone cannot cross the requested accuracy threshold.
+The external ingredients are already anchored for this line. Vasyunin's classical biorthogonal system supplies the finite dual coordinates used in `NB-036`; Burnol supplies the unconditional `1/log N` lower-bound scale. The exact norm identity (3) and defect lower bounds (5), (7), and (8) are finite Hilbert-space consequences of those persisted structures. A targeted literature search across Nyman--Beurling finite-section Gram geometry, Vasyunin biorthogonality, Burnol distance bounds, and recent multiscale Gram-compressibility work did not locate this exact weighted-tail lower-bound synthesis. This is not a priority claim: matrix order, reverse-triangle estimates, and generalized-eigenvalue algebra are standard.
+
+The result does **not** show that `(Z_{M,N},eta_{M,N})` is algorithmically expensive, does not rule out a source-defined approximation that captures their leading components without an `N`-scale projection, and does not imply `d_N->0`. It rules out the natural zero-defect shortcut: the explicit early-shell matrix and Möbius/Vasyunin source vector cannot be promoted from a conditioning certificate to an RH-scale target-data oracle by arguing that the upper-section defects are negligible.
+
+Accordingly, the accepted weighted-skeleton clue remains open but is narrowed. Any successful reduced oracle with `M/log N -> infinity` must recover enough upper-section information to account for a provably Burnol-scale relative Gram defect and the concomitant target-correlation defect. Refining `B_M` only as an early-shell object cannot cross the requested accuracy threshold.
