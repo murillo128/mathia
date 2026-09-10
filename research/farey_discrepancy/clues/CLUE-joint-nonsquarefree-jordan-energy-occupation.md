@@ -61,7 +61,7 @@ and set
 
 \[
 a_k=\sum_{r\in\Gamma_{H,D}(k)}w(r),\qquad
-\nu_k=\sum_{\substack{r\in\Gamma_{H,D}(k)\\\mu(r)=0}}w(r).
+u_k=\sum_{\substack{r\in\Gamma_{H,D}(k)\\\mu(r)=0}}w(r).
 \]
 
 Check the finite identities E=sum_k a_k Hcal(k)^2 and U=sum_k u_k Hcal(k)^2, where Hcal denotes the displayed mathcal H. For nonempty blocks put theta_k=u_k/a_k. This converts the question into whether the physical energy can concentrate on blocks with small theta_k. Short or singleton blocks may have theta_k=0; a uniform lower bound on every block must not be assumed.
