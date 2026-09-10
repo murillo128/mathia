@@ -313,7 +313,7 @@ A targeted search for Li/Keiper criteria formulated on Bohr-dense subsequences, 
 
 **Output compression remains distinct from source compression.** Even a zero-density Bohr-dense set can require arbitrarily large Li indices. AF-238--AF-243 show that forming those coefficients from truncated source data can still destroy or fabricate the relevant cancellation. AF-245 does not evade that obstruction.
 
-**Bohr density is sufficient, not the minimal topological condition.** The exact positive-amplitude condition is trigonometric-polynomial uniqueness of `K_S`; a proper closed subset of `b\mathbb Z` may still be a uniqueness set. Replacing Bohr density by the precise geometry of such proper uniqueness sets is a legitimate refinement, but it is not needed for `(8)`.
+**Bohr density is sufficient; minimality is not asserted.** The exact positive-amplitude condition is trigonometric-polynomial uniqueness of `K_S`. AF-245 does not classify which proper tail limit sets `K_S\subsetneq b\mathbb Z`, if any, can satisfy that uniqueness property, so no converse from finite-mode tail observability to Bohr density is claimed.
 
 **Periodic completeness is only a first audit.** Visiting every residue class modulo every integer rules out finite-order-character aliases but does not control irrational characters or their finite combinations.
 
@@ -332,6 +332,6 @@ AF-244's local-window condition can now be replaced by a clean hierarchy:
 \tag{26}
 \]
 
-The first implication is strict, and the second need not be an equivalence because proper trigonometric-polynomial uniqueness sets may exist. The important conceptual change is that **sampling fidelity is governed by the geometry seen by the discriminator's phase family, not by ordinary cardinal density or adjacency structure**.
+The first implication is strict. The second is intentionally stated only as an implication: the exact middle condition is uniqueness of `K_S`, and AF-245 does not determine whether that property forces `K_S=b\mathbb Z` for tail sets arising from subsets of `\mathbb N`. The important conceptual change is that **sampling fidelity is governed by the geometry seen by the discriminator's phase family, not by ordinary cardinal density or adjacency structure**.
 
 The remaining output-side problem is quantitative rather than merely topological: characterize sampling sets for which every relevant finite mode avoids its zero set at a subexponential rate, which would identify the exact boundary for `n`th-root fidelity rather than the stronger positive-amplitude condition proved here. Separately, the harder RH-facing bottleneck remains source access: finding a compression that forms enough globally cancelled Li information without paying essentially linear source depth.
