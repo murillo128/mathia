@@ -13,74 +13,83 @@ based_on:
   - research/visual_exploration/findings/VIS-146-shrinking-moment-null-total-variation-error-gate.md
   - research/visual_exploration/findings/VIS-147-effective-cue-calibration-growing-window-quartic-gate.md
   - research/visual_exploration/findings/VIS-148-growing-window-primitive-cancellation-transfer-gate.md
+  - research/visual_exploration/findings/VIS-149-moment-null-packet-source-error-fourth-moment-gate.md
 ---
 
 # Can a moment-cancelled low-frequency packet isolate a higher-order zeta arithmetic correction after universal quadratic cancellation?
 
 ## Observation
 
-`VIS-141` forces any Rudnick--Sarnak-safe companion to a near-edge pair factor into a shrinking low-frequency band. `VIS-142`--`VIS-144` then identify the finite-CUE null-side cost: in the ultra-low-frequency regime the centered response is quadratic, and a signed packet with `integral q^2 dnu_b(q)=0` cancels its leading CUE term.
+`VIS-141` forces any Rudnick--Sarnak-safe companion to a near-edge pair factor into a shrinking low-frequency band. `VIS-142`--`VIS-144` identify the finite-CUE null-side cost: in the ultra-low-frequency regime the centered response is quadratic, and a signed packet with `m_2(nu_b)=0` cancels its leading CUE term.
 
-`VIS-145` closes quadratic selectivity: the same moment-null packet removes the quadratic response of every smooth finite-window source correction entering through the same centered-cosine transform. `VIS-146` then shows that moving the signal to quartic order does not make normalization free. A quartic-normalized packet on `|q|<=b` costs at least `b^-4` in total variation, and a source term `A_4 q^4` cannot robustly beat a per-mode `L^infinity` error `epsilon` unless the intrinsic ratio `|A_4|b^4/epsilon` is favorable.
+`VIS-145` closes naive quadratic selectivity because that same packet removes the quadratic response of every smooth finite-window source correction entering through the common centered-cosine transform. `VIS-146` then shows that moving the retained signal to quartic order is not normalization-free: a quartic packet has `b^-4` total-variation capacity cost, and generic already-transformed `L^infinity` uncertainty cannot be beaten by scalar rescaling.
 
-`VIS-147` removes the next shortcut. The standard finite-height Riemann-zero two-point expansion through the displayed `rho_bar^-3` term is already absorbed, at fixed spacing, by the classical effective-CUE matrix-size correction plus a small coordinate stretch. Those terms therefore cannot be reused as a post-null arithmetic `A_4(L)`. More importantly, the remaining `O(rho_bar^-4)` statement is a fixed-spacing asymptotic, while the coefficient required by `VIS-146` is the fourth spatial moment of the zeta-minus-calibrated-finite-CUE residual over the `VIS-130` source window `M_L=Theta(L)`. Pointwise asymptotics do not control that growing-window moment.
+`VIS-147` removes the familiar fixed-spacing shortcut. The displayed standard `rho_bar^-2` and `rho_bar^-3` Riemann-zero corrections are already effective-CUE size/scale calibration directions, while the remaining fixed-spacing asymptotic does not control the fourth weighted source moment over the `VIS-130` growing window `M_L=Theta(L)`.
 
-`VIS-148` identifies a concrete escape from that nonuniformity obstruction without weakening the deterministic gate. If the post-calibration source-transfer error has a `k`-fold primitive with vanishing endpoint traces on the bounded `VIS-130` source window, repeated integration by parts gives a low-frequency error `O(b_L^k ||G_(k,L)||_1)`. The same certificate reduces the growing-window loss in the fourth spatial moment by one power of `M_L` per primitive; for `k>=5` the transfer error's quartic moment vanishes exactly. Thus the next source question is no longer merely "find a stronger norm": test whether the finite-height source carries four or more exact cumulative cancellations, or an equivalent oscillatory/orthogonality certificate, after the frozen finite-CUE calibration directions are removed.
+`VIS-148` supplies one concrete escape: sufficiently controlled repeated primitives of a source-coordinate transfer error turn cumulative cancellation into powers of the shrinking companion bandwidth. But `VIS-149` shows that this certificate is stronger than the frozen packeted observable actually requires. For an error `E_L` represented before the same centered-cosine transform, the zeroth Taylor coefficient is absent, odd source components are killed by the even cosine kernel, and the packet's own `m_2=0` condition removes the complete quadratic error response. The first source-error coefficient that survives packet integration is therefore `mu_4(E_L)`, with sixth-order remainder controlled by `M_6(E_L)b_L^2` after dividing by the quartic signal, up to the bounded packet condition number.
+
+The next source test should therefore use the weakest representation-faithful gate first: compare the fourth weighted moment of the post-calibration transfer error directly to the fourth moment of the retained carrier, and control the sixth absolute moment on the growing window. Repeated primitives remain an alternative when they are what the source naturally provides or when direct weighted-moment control is too weak.
 
 ## Research question
 
-Let `H_L(x)` be the actual zeta-minus-calibrated-finite-CUE correction after freezing the `VIS-130` bounded source taper, Montgomery weight, local unfolding, diagonal convention, effective-size rule, and any source-derived coordinate stretch. Can one derive, from the strongest available finite-height pair-correlation formula or theorem, a decomposition
+Let `H_L(x)` be the actual zeta-minus-calibrated-finite-CUE correction after freezing the `VIS-130` bounded source taper, Montgomery weight, local unfolding, diagonal convention, effective-size rule, source-derived coordinate stretch, edge coordinate, and shrinking packet family. Can one derive from the strongest available finite-height pair-correlation representation a decomposition
 
 `H_L = H_L^main + E_L`
 
-on the full `M_L=Theta(L)` source window such that the main term has a genuinely post-calibration quartic moment
+on the full `M_L=Theta(L)` source window such that `H_L^main` has a genuinely post-calibration nonzero fourth moment and controlled higher-order remainder, while the source-coordinate error satisfies the transform-adapted gates
 
-`mu_4(H_L^main)=integral x^4 H_L^main(x) dx`
+`|mu_4(E_L)|/|mu_4(H_L^main)| -> 0`
 
-with a controlled higher-order remainder, while `E_L` has four or more vanishing low moments together with a controlled compact-support primitive, or another source-side structure yielding an equivalent low-frequency gain?
+and, for a bounded-condition quartic packet,
 
-With
+`M_6(E_L)b_L^2/|mu_4(H_L^main)| -> 0`?
 
-`A_4(L)=-(2/3) pi^4 mu_4(H_L^main)`,
+Here `mu_4(F)=integral x^4F(x)dx`, `M_6(F)=integral |x|^6|F(x)|dx`, and the packet condition number is
 
-can the same source-side argument provide a theorem/transfer error `epsilon_L` in the companion coordinate for which
+`kappa_(b,L)=b_L^4 ||nu_(b,L)||_TV / |m_4(nu_(b,L))| >= 1`.
 
-`epsilon_L/(|A_4(L)| b_L^4) -> 0`
+If direct weighted-moment control cannot be justified, does the finite-height source instead provide a repeated-primitive, oscillatory, orthogonality, or other certificate strong enough to imply the same packet-level error ratio? With
 
-under one Rudnick--Sarnak-admissible shrinking-band regime? For a primitive certificate, `VIS-148` makes this explicit: a `k`-primitive transfer error contributes at most order `b_L^k ||G_(k,L)||_1`, so `k=4` must win through the norm ratio and `k>=5` can additionally gain a positive power of `b_L`.
+`A_4(L)=-(2/3)pi^4 mu_4(H_L^main)`,
+
+the final deterministic requirement remains that all theorem/transfer uncertainty after the frozen packet be `o(|A_4(L)m_4(nu_(b,L))|)` in one Rudnick--Sarnak-admissible shrinking-band regime.
 
 ## Why it may matter
 
-The route no longer has a packet-design ambiguity that can plausibly be solved by tuning weights. `VIS-145` and `VIS-146` show that the decisive issue is the source-side amplitude and error before packet optimization. `VIS-147` further shows that the familiar low-order zeta/CUE correction formulas do not directly supply that amplitude: their first displayed terms are calibration directions, and their residual estimate lacks the weighted growing-window uniformity the quartic companion needs.
+The route no longer has a plausible packet-design ambiguity. The decisive question is whether the finite-height arithmetic source survives effective-CUE calibration with enough controlled fourth-moment mass on the actual growing source window.
 
-`VIS-148` turns the previously vague possibility of "cancellation or a stronger norm" into a finite hierarchy that can be checked against the actual finite-height representation. This matters because a positive source theorem need not prove an implausibly strong uniform `O(L^-6)`-type pointwise residual if it instead preserves enough exact cumulative cancellation. Conversely, failure to obtain even the fourth-primitive-scale certificate, or an equivalent oscillatory estimate, would make the negative conclusion substantially sharper.
+`VIS-149` materially lowers the admission burden compared with interpreting `VIS-148` as a requirement for four or five raw vanishing moments. The frozen observable itself already quotients several directions. A positive result therefore need not prove an unnecessarily strong primitive theorem if it can directly show that the transfer-error fourth moment is negligible and its sixth absolute moment is compatible with the shrinking bandwidth. Conversely, failure of this weaker gate would be stronger evidence that the quartic companion is blocked by missing source information rather than by an overly demanding sufficient certificate.
 
-A positive result would identify an arithmetic carrier that survives all currently known null and normalization obstructions in one common representation. A negative result would close the moment-cancelled support-edge route for a precise reason — insufficient post-calibration information/control — without inspecting confirmation zeros or proliferating signed filters.
+A favorable deterministic gate would identify a post-calibration arithmetic carrier that survives all current mean-level nulls in one common representation. Only then would packet variance and four-level covariance become meaningful. An unfavorable gate should close the moment-cancelled support-edge route without inspecting untouched confirmation-zero data or proliferating further signed filters.
 
 ## Decisive test
 
-Do not inspect untouched confirmation-zero data and do not design another packet yet. Freeze the source window, unfolding, effective-size rule, coordinate stretch, diagonal subtraction, Montgomery weight, edge coordinate, and shrinking support family first.
+Do not inspect untouched confirmation-zero data and do not design another packet. Freeze the bounded source window, unfolding, effective-CUE size rule, source-derived stretch, diagonal subtraction, Montgomery weight, edge coordinate, and one bounded-condition `m_2=0`, `m_4!=0` shrinking packet family first.
 
-Start from a finite-height pair-correlation source that retains the arithmetic lower-order structure, such as the full diagonal/off-diagonal representation reviewed by Keating--Smith or a stronger rigorous substitute if available. Transport it into the exact `VIS-130` bounded-source coordinate **before** subtracting the calibrated finite-CUE null. The size correction and source-derived scale stretch identified by the classical Forrester--Mays matching must be treated as null/calibration directions rather than counted again as source residual.
+Start from a finite-height pair-correlation source retaining the arithmetic lower-order structure, such as the full diagonal/off-diagonal representation reviewed by Keating--Smith or a stronger rigorous substitute if available. Transport it into the exact `VIS-130` bounded-source coordinate before subtracting the calibrated finite-CUE null. Treat the size and stretch terms identified by Forrester--Mays as calibration directions, not as residual signal.
 
-Then test the source residual in this order. First isolate any candidate `H_L^main` that contributes a post-calibration fourth moment and control the sixth-order or exact-transform remainder required by `VIS-146`. Second, write the remaining transfer error `E_L` on the same bounded source interval and test its low algebraic moments. If four or more vanish, construct the canonical repeated primitive and bound its `L^1` or another useful norm; if they do not vanish, determine whether the source supplies a different exact oscillatory/orthogonality estimate with an equally explicit low-frequency power.
+Then isolate a candidate `H_L^main` and the residual `E_L` in that source coordinate. Before demanding repeated primitives, compute or bound the weighted quantities that the frozen packet actually sees. Use the exact `VIS-149` packet decomposition to test
 
-For a `k`-primitive certificate compare the actual quantity
+`|mu_4(E_L)|/|mu_4(H_L^main)|`
 
-`(2*pi)^k ||G_(k,L)||_1 b_L^(k-4) / |A_4(L)|`
+and
 
-to zero, together with every other theorem/transfer error in the same coordinate. A fourth-primitive certificate only matches quartic order and therefore still needs a favorable norm ratio. A fifth-or-higher certificate removes quartic contamination from that error and gains shrinking-band power, but it is useful only if its primitive norm does not grow fast enough to erase that gain.
+`kappa_(b,L) M_6(E_L)b_L^2/|mu_4(H_L^main)|`.
 
-If the deterministic ratio fails, if the main-term sixth-order remainder cannot be controlled, or if no justified growing-window cancellation/transfer structure exists, reject the current moment-null companion. Only a favorable deterministic gate justifies returning to packet variance and four-level covariance.
+Both must tend to zero, together with any additional theorem/transport error not representable as the same source kernel. If `mu_4(E_L)` vanishes exactly, the error begins at sixth order after packet integration; no separate vanishing conditions on `mu_0`, odd moments, or `mu_2` are needed for that packet-level conclusion.
+
+Only when these direct weighted-moment gates cannot be established should the source audit escalate to the `VIS-148` primitive hierarchy or an equivalent oscillatory/orthogonality estimate. A primitive certificate is useful if it actually yields a stronger growing-window bound; it is not an independent requirement once the weaker observable-adapted gate already passes.
+
+Reject the current companion if the post-calibration main fourth moment cannot be isolated, if the error fourth moment remains comparable to it, if the sixth absolute moment erases the `b_L^2` gain, or if the source-to-observable transport has an uncontrolled remainder outside this common-kernel representation. Only a favorable deterministic gate justifies returning to stochastic variance and four-level covariance.
 
 ## Evidence boundary
 
-`VIS-141`--`VIS-146` establish the support collapse, finite-window low-frequency expansion, universal quadratic cancellation, and total-variation moment-capacity gate. `VIS-147` establishes only an identifiability and uniformity obstruction: the displayed standard `rho_bar^-2`/`rho_bar^-3` corrections are effective-CUE calibration directions at fixed spacing, and the remaining fixed-spacing error does not determine the growing-window quartic moment.
+`VIS-141`--`VIS-146` establish the support collapse, finite-window low-frequency expansion, universal packet-side quadratic cancellation, and total-variation moment-capacity gate. `VIS-147` establishes an identifiability and growing-window uniformity obstruction for the familiar finite-height expansion. `VIS-148` establishes a valid sufficient primitive/cumulative-cancellation certificate but does not show that the zeta residual satisfies it.
 
-`VIS-148` is an exact classical-analysis transfer lemma, not evidence that the zeta residual satisfies its hypotheses. It proves what a `k`-primitive cancellation certificate would buy: a `b_L^k` low-frequency error factor and a graded reduction of quartic-moment window growth. It does not derive those cancellations from the Keating--Smith/finite-height source, identify `A_4(L)`, or control the retained carrier's absolute sixth moment.
+`VIS-149` is an exact representation audit of the already frozen packet architecture. It proves that when the transfer error is genuinely represented in the same pre-transform bounded source coordinate, the packeted mean first sees its fourth source moment and admits an explicit sixth-moment remainder bound. It does not derive `mu_4(E_L)`, `M_6(E_L)`, `mu_4(H_L^main)`, or any favorable asymptotic from the finite-height zeta source.
 
-The full finite-height pair-correlation literature contains arithmetic lower-order information, but it is heuristic/conditional in important forms and has not yet been transported into the exact frozen bounded-source companion with the required uniform or cumulative-cancellation error. Nothing currently proves that a detectable quartic arithmetic coefficient survives, that the `VIS-146` ratio is favorable, or that the necessary Rudnick--Sarnak family is uniform. No RH implication or confirmation-zero evidence is claimed.
+The finite-height pair-correlation literature contains arithmetic lower-order information, but the needed decomposition has not yet been transported with theorem-level control into this exact bounded-window, calibrated, packeted representation. Nothing currently proves that a detectable quartic arithmetic coefficient survives, that the transform-adapted ratios tend to zero, or that the remaining Rudnick--Sarnak and covariance requirements can be met. No RH implication or confirmation-zero evidence is claimed.
 
 ## Research disposition
 
-Accepted in further narrowed form. The next work is a source-to-observable cancellation test, not another packet-design pass: transport the post-calibration finite-height residual into the `VIS-130` bounded source representation, isolate any genuine quartic main carrier, and test whether the remaining transfer error has four or more exact vanishing moments with controlled repeated primitives, or an equivalent oscillatory certificate. Only after that deterministic source gate survives should packet variance and four-level covariance resume.
+Accepted in a weaker and more representation-faithful form. The next work is a source-to-observable weighted-moment test. Transport the calibrated finite-height residual into the `VIS-130` bounded source representation, isolate any genuine quartic main carrier, and test the `VIS-149` fourth-moment and sixth-absolute-moment ratios before demanding repeated primitives. Use `VIS-148` only as a stronger alternative certificate when the source naturally supplies cumulative cancellation or direct weighted-moment control is insufficient.
