@@ -28,7 +28,7 @@ R:=|a|\approx14.143565845726.
 
 The first nontrivial zero pair `rho_1, \bar rho_1` is rigorously known to be simple and on the critical line, and it is the unique nearest singularity pair of `Q` about `w=0`.
 
-Let `t_n>0` be any real sequence with
+Let `0<t_n<=1` be any real sequence with
 
 \[
 t_n\longrightarrow\tau\in(0,1],
@@ -96,7 +96,7 @@ For the endpoint-preserving schedules of AF-240--AF-242, `tau=1`, so
 \tag{9}
 \]
 
-In particular, the entire moving-damping family of AF-242, including
+In particular, the entire moving-damping family of AF-242, including, for all sufficiently large `n`,
 
 \[
 t_n=1-c n^{-\beta},
@@ -309,22 +309,22 @@ which proves `(8)`. This is the completed-and-damped analogue of the AF-236 subl
 
 ## The missing tail performs essential cancellation even for a known RH-compatible pair
 
-For one zero `rho`, the **full** damped binomial orbit is exactly
+For the pole corresponding to one zero `rho`, the **full** damped binomial orbit is exactly
 
 \[
 -\sum_{k=1}^n\binom nk
 \left(\frac{t_n}{\rho-1}\right)^k
 =
-1-\left(1-\frac{t_n}{\rho}\right)^n.
+1-\left(1+\frac{t_n}{\rho-1}\right)^n.
 \tag{28}
 \]
 
-For `rho=1/2+i gamma` and `0<t_n<=1`,
+Equivalently, after relabeling the symmetric zero set by `rho -> 1-rho`, the global zero sum may be written in the AF-239--AF-242 form `1-(1-t_n/rho)^n`. For a specific critical-line zero it is cleaner to keep the pole coordinate in `(28)`. If `rho=1/2+i gamma` and `0<t_n<=1`, then
 
 \[
-\left|1-\frac{t_n}{\rho}\right|^2
+\left|1+\frac{t_n}{\rho-1}\right|^2
 =
-1-\frac{t_n(1-t_n)}{|\rho|^2}
+1-\frac{t_n(1-t_n)}{|\rho-1|^2}
 \le1.
 \tag{29}
 \]
@@ -361,4 +361,4 @@ A targeted audit found the established full parameterized Li criteria and local 
 
 The Li source-access problem now has a sharper two-sided obstruction in the canonical local coordinate. Sublinear source depth is erased by the root-rate quotient, while a whole positive interval of fixed linear depths is contaminated by an exponentially large contribution from a known critical-line zero pair. A successful source reduction therefore cannot be justified merely by making `t_n` approach the Li endpoint smoothly.
 
-The next viable route must change **how source orders are grouped**, not just their scalar weights. Candidates should preserve complete cancellation orbits by construction—for example block/orbit completion, a contour/global transform, or another non-prefix aggregation—and then prove that the resulting source statistic is genuinely cheaper than carrying the full local jet while retaining the AF-235 root-rate discriminator. The first test for any such proposal is whether the known pair `rho_1,bar rho_1` remains root-rate neutral after the proposed compression.
+The next viable route must change **how source orders are grouped**, not just their scalar weights. Candidates should preserve complete cancellation orbits by construction—for example block/orbit completion, a contour/global transform, or another non-prefix aggregation—and then prove that the resulting source statistic is genuinely cheaper than carrying the full local jet while retaining the AF-235 root-rate discriminator. The first test for any such proposal is whether the known pair `rho_1,\bar rho_1` remains root-rate neutral after the proposed compression.
