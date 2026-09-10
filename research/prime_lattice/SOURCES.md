@@ -352,3 +352,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 89. **Claudio Bonanno, Sandro Graffi, Stefano Isola**, “Spectral analysis of transfer operators associated to Farey fractions,” *Atti Accad. Naz. Lincei Rend. Lincei Mat. Appl.* **19**(1) (2008), 1–23. DOI: https://doi.org/10.4171/RLM/505.
     - Role: matched self-adjoint prior-art anchor for `PL-258`. Studies a one-parameter signed Farey transfer-operator family on a suitable Hilbert space of analytic functions and proves self-adjointness, absolutely continuous spectrum, and absence of nonzero point spectrum, showing that the established real-parameter self-adjoint theory is distinct from the complex-temperature parameter locus carrying the Riemann-zero criterion.
+
+## Weil-form second moments and unconditional critical-line localization
+
+90. **Levent Alpöge, Ralph Furman**, “More than two thirds of the zeta zeros are simple and on the critical line,” arXiv:2608.13637v2 [math.NT] (submitted 13 August 2026; revised 19 August 2026), preprint. https://arxiv.org/abs/2608.13637.
+    - Role: main theorem-level anchor for `PL-259`. Proves unconditionally that at least `2/3-o(1)` of the nontrivial zeta zeros, counted with multiplicity, are simple and on the critical line and at least `5/6-o(1)` are distinct; the Montgomery--Taylor window improves the constants to about `0.6725` and `0.8362`. The proof uses a finite compression of Weil's Hermitian form, zero-side rank/inertia accounting for off-line functional-equation pairs, and unconditional prime-side first/second-moment evaluation. The paper explicitly records the sparse-exception limitation and provides a Lean 4 formalization of the main results.
+
+91. **Youness Lamzouri**, “A new proof that more than `2/3` of the zeros of the Riemann zeta function are simple and on the critical line,” arXiv:2609.02882 [math.NT] (submitted 2 September 2026), preprint. https://arxiv.org/abs/2609.02882.
+    - Role: matched control for `PL-259`. Reproves the optimized critical-line simplicity proportion with a direct Hilbert-space inequality and unconditional pair correlation, replacing the finite-matrix/rank--trace framework. This shows that the robust load-bearing input is the quadratic/second-moment pair-correlation structure rather than a unique spectral-matrix construction.
