@@ -1,10 +1,8 @@
 # FD-015 — squarefree dilation coherence forces a Sperner antichain of near-saturating horizons
 
-**Status:** `EXACT-DERIVED + SOURCE-COHERENCE + SQUAREFREE-DILATION-GAP + SPERNER-ANTICHAIN + MULTIHORIZON-BOUNDARY`. `FD-014` proves that one cumulative sequence cannot simultaneously approach the sharp square-GCD equality ray at horizons `N` and `2N`: the equality ray wants one shared coordinate near `-1/2` while a second shared coordinate is exactly zero. That mechanism is not peculiar to the prime `2`. For every squarefree dilation `q`, the normalized equality ray has its `q`-th coordinate asymptotic to `mu(q)/q` and its `q^2`-th coordinate exactly zero.
+**Status:** `EXACT-DERIVED + SOURCE-COHERENCE + SQUAREFREE-DILATION-GAP + REPEATED-PRIME-COLLISION + SPERNER-ANTICHAIN + MULTIHORIZON-BOUNDARY`. `FD-014` proves that one cumulative sequence cannot simultaneously approach the sharp square-GCD equality ray at horizons `N` and `2N`: the equality ray wants one shared coordinate near `-1/2` while a second shared coordinate is exactly zero. The same mechanism extends to every squarefree dilation, but the direct `q` versus `q^2` collision is not optimal when `q` is composite. If a prime `p` divides squarefree `q`, source coherence couples the `p`-coordinate at `H`, the `q`-coordinate at `qH`, and the `pq`-coordinate at `qH`; the equality ray wants the first two near `-1/p` and `mu(q)/q`, while the last is exactly zero because `pq` contains `p^2`.
 
-This gives a uniform two-horizon saturation gap for every fixed squarefree dilation. More importantly, putting many such dilations into one squarefree divisor lattice makes the set of simultaneously near-saturating horizons an antichain. Sperner's theorem then bounds how many horizons in that sparse multiplicative family can lie arbitrarily close to the unrestricted GCD-duality optimum.
-
-Let
+This repeated-prime collision gives a stronger two-horizon saturation gap. Let
 
 \[
 Z:=\zeta(2)=\frac{\pi^2}{6}.
@@ -26,18 +24,20 @@ R_H:=\frac{A(H)^2}{E_H}
 \tag{2}
 \]
 
-when `E_H>0`, with `R_H:=0` when the vector is zero. For every squarefree integer `q>=2`, put
+when `E_H>0`, with `R_H:=0` when the vector is zero.
+
+Let `q>=2` be squarefree and let `p|q` be prime. Put
 
 \[
-\epsilon_q:=\frac{2}{5q^2},
+\epsilon_{q,p}:=\frac{2}{5pq},
 \qquad
-\kappa_q:=
+\kappa_{q,p}:=
 \left(
-\frac1Z+\frac{\epsilon_q^2}{Z^2}
+\frac1Z+\frac{\epsilon_{q,p}^2}{Z^2}
 \right)^{-1}
 =
 \left(
-\frac1Z+\frac{4}{25q^4Z^2}
+\frac1Z+\frac{4}{25p^2q^2Z^2}
 \right)^{-1}.
 \tag{3}
 \]
@@ -46,77 +46,117 @@ Then
 
 \[
 \boxed{
-\min\{R_H,R_{qH}\}<\kappa_q<Z
+\min\{R_H,R_{qH}\}<\kappa_{q,p}<Z
 \qquad
-(q\ {\rm squarefree},\ q\ge2,\ H\ge400q^2).
+(q\ {\rm squarefree},\ p\mid q\ {\rm prime},\ H\ge400q^2).
 }
 \tag{4}
 \]
 
-For `q=2`, the threshold `kappa_2` is exactly the constant `kappa` of `FD-014`; the earlier finding has the better finite range `H>=101`, while (4) is a deliberately uniform squarefree-dilation statement.
+The strongest member of this family is obtained from the least prime factor `p_-(q)`. Write
 
-Now fix distinct primes `p_1,...,p_k`, let
+\[
+\kappa_q^\sharp:=\kappa_{q,p_-(q)}.
+\tag{5}
+\]
+
+For prime `q` this is exactly the `q`/`q^2` scale proved previously. For composite squarefree `q`, (4) is strictly stronger: its certified deficit from `Z` is of order `(p_-(q)^2q^2)^{-1}` rather than `q^{-4}`.
+
+The divisor-lattice consequence also sharpens. Fix distinct primes `p_1,...,p_k`, let
 
 \[
 P:=\prod_{i=1}^k p_i,
 \qquad
 d_S:=\prod_{i\in S}p_i
 \quad(S\subseteq\{1,\ldots,k\}),
-\tag{5}
+\tag{6}
 \]
 
-and assume `N>=400P^2`. Define the near-saturating subset family
+and define
 
 \[
-\mathcal A_N(P)
+B(P):=
+\max_{\substack{q\mid P\\q>1}}
+q\,p_-(q),
+\qquad
+\epsilon_P^\sharp:=\frac{2}{5B(P)},
+\qquad
+\kappa_P^\sharp:=
+\left(
+\frac1Z+\frac{4}{25B(P)^2Z^2}
+\right)^{-1}.
+\tag{7}
+\]
+
+Assume `N>=400P^2` and set
+
+\[
+\mathcal A_N^\sharp(P)
 :=
 \left\{
 S\subseteq\{1,\ldots,k\}:
-R_{Nd_S}\ge\kappa_P
+R_{Nd_S}\ge\kappa_P^\sharp
 \right\}.
-\tag{6}
+\tag{8}
 \]
 
 Then
 
 \[
-\boxed{\mathcal A_N(P)\ {\rm is\ an\ antichain}.}
-\tag{7}
+\boxed{\mathcal A_N^\sharp(P)\ {\rm is\ an\ antichain}.}
+\tag{9}
 \]
 
 Consequently Sperner's theorem gives
 
 \[
 \boxed{
-|\mathcal A_N(P)|
+|\mathcal A_N^\sharp(P)|
 \le
 \binom{k}{\lfloor k/2\rfloor}.
 }
-\tag{8}
+\tag{10}
 \]
 
 Thus at least
 
 \[
 2^k-\binom{k}{\lfloor k/2\rfloor}
-\tag{9}
+\tag{11}
 \]
 
-of the `2^k` coherent horizons `Nd_S` have `R_{Nd_S}<kappa_P`. The result is a genuine multi-horizon coherence restriction, but it also exposes a quantitative limitation: the explicit common threshold satisfies
+of the `2^k` coherent horizons `Nd_S` satisfy `R_{Nd_S}<kappa_P^sharp`. The common gap is
 
 \[
-0<Z-\kappa_P
+\boxed{
+0<Z-\kappa_P^\sharp
 =
-\frac{\frac{4Z}{25P^4}}
-{Z+\frac{4}{25P^4}}
+\frac{\frac{4Z}{25B(P)^2}}
+{Z+\frac{4}{25B(P)^2}}
 <
-\frac{4}{25P^4}.
-\tag{10}
+\frac{4}{25B(P)^2}.
+}
+\tag{12}
 \]
 
-So this direct squarefree-dilation/Sperner amplification does not bootstrap the constant-level `FD-014` gap into an RH-critical exponent estimate. Increasing the multiplicative breadth forces more horizons away from exact saturation, but the common certified distance from `Z` becomes rapidly smaller.
+In the natural case where `P` is the product of the first `k` primes, `B(P)=2P`, so
 
-## 1. Squarefree coordinates of the GCD equality ray
+\[
+\boxed{
+\kappa_P^\sharp
+=
+\left(
+\frac1Z+\frac{1}{25P^2Z^2}
+\right)^{-1},
+\qquad
+0<Z-\kappa_P^\sharp<\frac1{25P^2}.
+}
+\tag{13}
+\]
+
+The earlier direct all-dilation threshold decayed like `P^{-4}`. The repeated-prime compatibility therefore recovers two powers of multiplicative breadth for this family. This is a genuine quantitative strengthening, but it still does not bootstrap the constant-level coherence obstruction into an RH-critical exponent estimate.
+
+## 1. The GCD equality ray remembers the Möbius squarefree pattern coordinatewise
 
 Retain the inverse notation from `FD-003` and `FD-014`:
 
@@ -124,7 +164,7 @@ Retain the inverse notation from `FD-003` and `FD-014`:
 u^{(H)}:=K_H^{-1}e_1,\qquad
 C_H:=u_1^{(H)},\qquad
 v^{(H)}:=\frac{u^{(H)}}{C_H}.
-\tag{11}
+\tag{14}
 \]
 
 Those findings give
@@ -133,129 +173,134 @@ Those findings give
 1\le C_H\le Z,
 \qquad
 0\le Z-C_H\le\frac ZH,
-\tag{12}
+\tag{15}
 \]
 
 together with the exact inverse-column formula
 
 \[
-u_d^{(H)}
-=
-d\sum_{\substack{r\le H\\d\mid r}}
+ u_d^{(H)}
+=d\sum_{\substack{r\le H\\d\mid r}}
 \frac{\mu(r/d)\mu(r)}{J_2(r)}
-\tag{13}
+\tag{16}
 \]
 
 and the coordinate-evaluation bound
 
 \[
 (K_H^{-1})_{dd}\le Z^2.
-\tag{14}
+\tag{17}
 \]
 
-Let `q>=2` be squarefree. In (13), write `r=q\ell`. A nonzero term requires `ell` squarefree and coprime to `q`; then
+If `d` is squarefree, write `r=d\ell` in (16). Nonzero terms require `ell` squarefree and coprime to `d`, and then
 
 \[
-\mu(\ell)\mu(q\ell)=\mu(q)\mu(\ell)^2,
+\mu(\ell)\mu(d\ell)=\mu(d)\mu(\ell)^2,
 \qquad
-J_2(q\ell)=J_2(q)J_2(\ell).
+J_2(d\ell)=J_2(d)J_2(\ell).
 \]
 
 Hence
 
 \[
 \boxed{
-u_q^{(H)}
+ u_d^{(H)}
 =
-\frac{q\mu(q)}{J_2(q)}
-\sum_{\substack{\ell\le H/q\\(\ell,q)=1}}
+\frac{d\mu(d)}{J_2(d)}
+\sum_{\substack{\ell\le H/d\\(\ell,d)=1}}
 \frac{\mu(\ell)^2}{J_2(\ell)}.
 }
-\tag{15}
+\tag{18}
 \]
 
 The complete coprime Euler product is
 
 \[
-\begin{aligned}
-\sum_{\substack{\ell\ge1\\(\ell,q)=1}}
+\sum_{\substack{\ell\ge1\\(\ell,d)=1}}
 \frac{\mu(\ell)^2}{J_2(\ell)}
-&=
-\prod_{p\nmid q}
-\left(1+\frac1{p^2-1}\right)\\
-&=
-Z\prod_{p\mid q}(1-p^{-2})
 =
-Z\frac{J_2(q)}{q^2}.
-\end{aligned}
-\tag{16}
-\]
-
-Therefore
-
-\[
-\boxed{
-u_q^{(H)}\longrightarrow \frac{Z\mu(q)}q.
-}
-\tag{17}
-\]
-
-The convergence has a uniform elementary error sufficient here. Since `J_2(n)>=n^2/Z`, and since for `x>1`
-
-\[
-\sum_{\ell>x}\ell^{-2}\le\frac1{x-1},
-\]
-
-one obtains
-
-\[
-\begin{aligned}
-\left|
-u_q^{(H)}-\frac{Z\mu(q)}q
-\right|
-&\le
-\frac q{J_2(q)}
-Z\sum_{\ell>H/q}\frac1{\ell^2}\\
-&\le
-\frac{Zq^2}{J_2(q)(H-q)}
-\le
-\frac{Z^2}{H-q}.
-\end{aligned}
-\tag{18}
-\]
-
-Using (12) and `C_H>=1`, and now assuming `H>=400q^2`, gives the convenient uniform bound
-
-\[
-\boxed{
-\left|
-v_q^{(H)}-\frac{\mu(q)}q
-\right|
-\le
-\frac{Z^2}{H-q}+\frac{Z}{qH}
-<
-\frac4H.
-}
+\prod_{r\nmid d}
+\left(1+\frac1{r^2-1}\right)
+=
+Z\prod_{r\mid d}(1-r^{-2})
+=
+Z\frac{J_2(d)}{d^2},
 \tag{19}
 \]
 
-For the final inequality, use `Z<5/3`, `q>=2`, and `q/H<=1/800`; after multiplication by `H` the left-hand coefficient is at most
-`(25/9)(800/799)+5/6<4`.
-
-The complementary coordinate is exact rather than asymptotic:
+where the product index `r` in the middle expression ranges over primes. Therefore
 
 \[
 \boxed{
-u_{q^2}^{(H)}=v_{q^2}^{(H)}=0
+ u_d^{(H)}\longrightarrow \frac{Z\mu(d)}d,
+\qquad
+v_d^{(H)}\longrightarrow\frac{\mu(d)}d.
 }
 \tag{20}
 \]
 
-whenever `q^2<=H`, because every summation index in (13) is then divisible by a square and therefore has `mu(r)=0`.
+The convergence has a uniform elementary error sufficient here. Since `J_2(n)>=n^2/Z`,
 
-Equations (19)--(20) are the squarefree-dilation pattern behind the special coordinates `v_2~-1/2` and `v_4=0` used in `FD-014`.
+\[
+\left|
+ u_d^{(H)}-\frac{Z\mu(d)}d
+\right|
+\le
+\frac{Z^2}{H-d}.
+\tag{21}
+\]
 
-## 2. A uniform two-horizon gap for every squarefree dilation
+Using (15), if `H>=400d^2`, then
+
+\[
+\boxed{
+\left|
+v_d^{(H)}-\frac{\mu(d)}d
+\right|
+\le
+\frac{Z^2}{H-d}+\frac{Z}{dH}
+<\frac4H.
+}
+\tag{22}
+\]
+
+If instead `d` is nonsquarefree, every multiple of `d` is nonsquarefree, so `mu(r)=0` termwise in (16). Thus, whenever `d<=H`,
+
+\[
+\boxed{u_d^{(H)}=v_d^{(H)}=0.}
+\tag{23}
+\]
+
+Equations (20)--(23) identify the underlying compatibility rule. For fixed squarefree `q` and squarefree `d`, simultaneous equality-ray behavior at `H` and `qH` would ask source ratios to satisfy both
+
+\[
+\frac{A(\lfloor H/d\rfloor)}{A(H)}\approx\frac{\mu(d)}d,
+\qquad
+\frac{A(H)}{A(qH)}\approx\frac{\mu(q)}q,
+\tag{24}
+\]
+
+while the single `qd`-coordinate at `qH` asks
+
+\[
+\frac{A(\lfloor H/d\rfloor)}{A(qH)}
+\approx
+\frac{\mu(qd)}{qd}.
+\tag{25}
+\]
+
+The limiting compatibility defect is therefore
+
+\[
+\boxed{
+\frac{\mu(qd)-\mu(q)\mu(d)}{qd}.
+}
+\tag{26}
+\]
+
+For coprime squarefree `q,d`, Möbius multiplicativity makes (26) vanish. If `d=p` is a prime divisor of `q`, then `qp` is nonsquarefree and the absolute defect is exactly `1/(pq)`. The original `d=q` choice detects the same phenomenon with defect `1/q^2`; choosing a small repeated prime is stronger.
+
+## 2. Repeating one prime factor gives the stronger two-horizon gap
 
 For any nonzero horizon vector with first coordinate `t=m_1`, `FD-014` records the exact equality-ray projection identity
 
@@ -263,10 +308,10 @@ For any nonzero horizon vector with first coordinate `t=m_1`, `FD-014` records t
 \frac{\|m-tv^{(H)}\|_{K_H}^2}{t^2}
 =
 \frac1R-\frac1{C_H},
-\tag{21}
+\tag{27}
 \]
 
-where `R=t^2/(m^TK_Hm)`. By (14), coordinate evaluation gives
+where `R=t^2/(m^TK_Hm)`. By (17), coordinate evaluation gives
 
 \[
 \left|
@@ -274,77 +319,86 @@ where `R=t^2/(m^TK_Hm)`. By (14), coordinate evaluation gives
 \right|
 \le
 Z\sqrt{\frac1R-\frac1{C_H}}.
-\tag{22}
+\tag{28}
 \]
 
-If `R>=kappa_q`, then `C_H<=Z` and (3) imply
+If `R>=kappa_{q,p}`, then `C_H<=Z` and (3) imply
 
 \[
+\boxed{
 \left|
 \frac{m_d}{t}-v_d^{(H)}
 \right|
-\le\epsilon_q=\frac{2}{5q^2}.
-\tag{23}
+\le\epsilon_{q,p}=\frac{2}{5pq}.
+}
+\tag{29}
 \]
 
-Assume now that `H>=400q^2` and suppose for contradiction that
+Assume `H>=400q^2` and suppose for contradiction that
 
 \[
-R_H\ge\kappa_q,
+R_H\ge\kappa_{q,p},
 \qquad
-R_{qH}\ge\kappa_q.
-\tag{24}
+R_{qH}\ge\kappa_{q,p}.
+\tag{30}
 \]
 
-If `A(H)` or `A(qH)` is zero, its ratio is already zero, so both are nonzero under (24). Put
+If `A(H)` or `A(qH)` is zero, its ratio is already zero, so both are nonzero under (30). Put
 
 \[
 t:=A(H),\qquad
 T:=A(qH),\qquad
-s:=A(\lfloor H/q\rfloor).
-\tag{25}
+s:=A(\lfloor H/p\rfloor).
+\tag{31}
 \]
 
-The same cumulative sequence supplies the exact shared coordinates
+The same source sequence supplies the exact shared coordinates
 
 \[
-m_q^{(H)}=s,
+\boxed{
+ m_p^{(H)}=s,
 \qquad
 m_q^{(qH)}=t,
 \qquad
-m_{q^2}^{(qH)}=s.
-\tag{26}
+m_{pq}^{(qH)}=s.
+}
+\tag{32}
 \]
 
-By (19) and `H>=400q^2`,
+The first two equality-ray coordinates satisfy, by (22) and `H>=400q^2`,
 
 \[
-\left|
-v_q^{(H)}-\frac{\mu(q)}q
-\right|
-\le\frac1{100q^2},
-\qquad
-\left|
-v_q^{(qH)}-\frac{\mu(q)}q
-\right|
-\le\frac1{100q^2}.
-\tag{27}
+\left|v_p^{(H)}+\frac1p\right|
+\le\frac4H
+\le\frac1{100pq},
+\tag{33}
 \]
 
-Apply (23) to the `q` coordinate at both horizons. Since `q>=2`,
+and
+
+\[
+\left|v_q^{(qH)}-\frac{\mu(q)}q\right|
+\le\frac4{qH}
+\le\frac1{100pq}.
+\tag{34}
+\]
+
+Apply (29) to these two coordinates. Since `p,q>=2`,
 
 \[
 \begin{aligned}
-\left|\frac st\right|,
+\left|\frac st\right|
+&\ge
+\frac1p-\frac1{100pq}-\frac{2}{5pq}
+>
+\frac{3}{4p},\\
 \left|\frac tT\right|
 &\ge
-\frac1q-\frac1{100q^2}-\frac{2}{5q^2}\\
-&=
-\frac1q-\frac{41}{100q^2}
+\frac1q-\frac1{100pq}-\frac{2}{5pq}
 >
 \frac{3}{4q}.
 \end{aligned}
-\tag{28}
+\tag{35}
 \]
 
 Therefore
@@ -355,132 +409,178 @@ Therefore
 \left|\frac st\right|
 \left|\frac tT\right|
 >
-\frac9{16q^2}.
-\tag{29}
+\frac9{16pq}.
+\tag{36}
 \]
 
-But (20) and (23), now at coordinate `q^2` of the `qH` horizon, give
+But `pq` is nonsquarefree because `p|q`. Equation (23) and the same near-saturation bound (29), now at coordinate `pq` of the `qH` horizon, give
 
 \[
 \left|\frac sT\right|
 \le
-\frac{2}{5q^2}.
-\tag{30}
+\frac{2}{5pq}.
+\tag{37}
 \]
 
-Since `9/16>2/5`, (29)--(30) contradict each other. This proves (4).
+Since `9/16>2/5`, (36)--(37) contradict each other. This proves (4).
 
-The proof uses no multiplicativity, sign condition, integrality, or Möbius-specific input. It is a compatibility theorem for one cumulative sequence evaluated through the exact GCD-energy geometry. The squarefreeness of `q` is load-bearing: it produces the nonzero `mu(q)/q` equality coordinate while `q^2` lands exactly in the square-killed coordinate.
-
-## 3. Sparse squarefree horizon families have an antichain of near-saturators
-
-Take the squarefree product `P` and the divisor-indexed horizons from (5). The thresholds in (3) are monotone:
+The certified deficit is explicitly
 
 \[
-q\le P
-\quad\Longrightarrow\quad
-\kappa_q\le\kappa_P.
-\tag{31}
+\boxed{
+0<Z-\kappa_{q,p}
+=
+\frac{\frac{4Z}{25p^2q^2}}
+{Z+\frac{4}{25p^2q^2}}
+<
+\frac4{25p^2q^2}.
+}
+\tag{38}
 \]
 
-Suppose `S` is a proper subset of `T`. Then
+The theorem uses no multiplicativity, sign condition, integrality, or Möbius-specific hypothesis on the source `A`. Möbius enters only through the exact inverse geometry of the GCD matrix. The squarefreeness of `q` and the repeated prime `p|q` are load-bearing: they make the first two equality coordinates nonzero but force the product coordinate to the square-killed zero stratum.
+
+For `q=2`, choosing `p=2` recovers the same asymptotic defect scale as the dyadic argument, although `FD-014` keeps its sharper finite threshold `H>=101` and its original conservative constant.
+
+## 3. The stronger pair gap yields a stronger Sperner threshold
+
+Take the squarefree product `P` and divisor-indexed horizons from (6). Suppose `S` is a proper subset of `T` and put
 
 \[
-q:=\frac{d_T}{d_S}
-\tag{32}
+q:=\frac{d_T}{d_S}.
+\tag{39}
 \]
 
-is a squarefree integer at least two and at most `P`, while
-
-\[
-Nd_T=q(Nd_S).
-\tag{33}
-\]
-
-The base horizon satisfies
+Then `q` is a squarefree divisor of `P` with `q>=2`. Let `p=p_-(q)`. The base horizon obeys
 
 \[
 Nd_S\ge N\ge400P^2\ge400q^2.
-\tag{34}
+\tag{40}
 \]
 
-If both `S` and `T` belonged to `A_N(P)`, then both endpoint ratios would be at least `kappa_P`, hence at least `kappa_q`, contradicting (4). Thus no two members of `A_N(P)` are comparable, proving (7).
+Moreover, by definition of `B(P)`,
 
-For a Boolean lattice on `k` elements, Sperner's theorem says that every antichain has size at most the central binomial coefficient. This gives (8)--(9) immediately.
+\[
+qp\le B(P),
+\qquad
+\epsilon_{q,p}\ge\epsilon_P^\sharp,
+\qquad
+\kappa_{q,p}\le\kappa_P^\sharp.
+\tag{41}
+\]
 
-There is also a scalar average consequence. Since the unrestricted one-horizon bound gives `R_H<=Z` for every horizon,
+If both `S` and `T` belonged to `A_N^sharp(P)`, then both endpoint ratios would be at least `kappa_P^sharp`, hence at least `kappa_{q,p}`. Equation (4) applied at `H=Nd_S` would contradict this. Thus no two members of `A_N^sharp(P)` are comparable, proving (9). Sperner's theorem then gives (10)--(11).
+
+Since the unrestricted one-horizon bound gives `R_H<=Z`, there is also the scalar average consequence
 
 \[
 \boxed{
 \frac1{2^k}
 \sum_{S\subseteq[k]}R_{Nd_S}
 <
-\kappa_P+
-\beta_k(Z-\kappa_P),
+\kappa_P^\sharp+
+\beta_k(Z-\kappa_P^\sharp),
 \qquad
 \beta_k:=
 2^{-k}\binom{k}{\lfloor k/2\rfloor}.
 }
-\tag{35}
+\tag{42}
 \]
 
-This is an exact finite multihorizon bound. It should not be mistaken for a superior replacement of the dyadic average in `FD-014`. In particular, when the divisor family contains the prime `2`, pairing every divisor not containing `2` with twice that divisor already recovers the fixed `q=2` pair deficit on half the vertices. The Sperner statement contributes a different structural fact—only a central layer can remain above the common all-dilation threshold—but its common threshold `kappa_P` approaches `Z` as the breadth `P` increases.
+This is an exact finite multihorizon bound. It should not be mistaken for a superior replacement of the fixed dyadic average in `FD-014`: if the divisor family contains `2`, pairing vertices along the `2` direction already supplies a fixed pair deficit. The Sperner statement contributes a different structural restriction—near-saturators above one common all-comparability threshold must lie in a single antichain-type layer.
 
-Equation (10) quantifies that tradeoff explicitly. A naive strategy of adding more squarefree dilation directions and then applying one common near-saturation threshold therefore cannot manufacture an exponent gain from combinatorial breadth alone.
+For completeness, suppose now that
+
+\[
+P=p_1p_2\cdots p_k,
+\qquad
+2=p_1<p_2<\cdots<p_k
+\tag{43}
+\]
+
+is the product of the first `k` primes. If a divisor `q` has least prime factor `p_j`, then `q p_-(q)` is maximized by taking
+
+\[
+q=p_jp_{j+1}\cdots p_k,
+\]
+
+so the candidate maximum is
+
+\[
+B_j=p_j^2\prod_{i>j}p_i.
+\tag{44}
+\]
+
+Bertrand's postulate gives `p_{j+1}<2p_j<=p_j^2`, hence
+
+\[
+\frac{B_{j+1}}{B_j}=\frac{p_{j+1}}{p_j^2}<1.
+\tag{45}
+\]
+
+Thus the maximum occurs at `j=1` and
+
+\[
+\boxed{B(P)=2P.}
+\tag{46}
+\]
+
+Substitution into (7) proves (13). This improves the old common Boolean-lattice gap from order `P^{-4}` to order `P^{-2}`. It still tends to zero rapidly because the common threshold must handle arbitrarily broad comparable divisor ratios.
 
 ## 4. Transport back to the Farey/Franel normalization
 
-For the physical sequence `A=M`, the Mertens function, `FD-003` gives at every horizon
+For the physical sequence `A=\mathbf M`, the Mertens function, `FD-003` identifies at every horizon
 
 \[
 E_H
 =
 12\left(M_H\mathfrak F_H+\frac1{12}\right).
-\tag{36}
+\tag{47}
 \]
 
-Hence (4) says that for every squarefree `q>=2` and `H>=400q^2`, at least one `X in {H,qH}` satisfies
+Hence for every squarefree `q>=2`, every prime `p|q`, and every `H>=400q^2`, at least one `X in {H,qH}` satisfies
 
 \[
 \boxed{
 |\mathbf M(X)|^2
 <
-12\kappa_q
+12\kappa_{q,p}
 \left(
 M_X\mathfrak F_X+\frac1{12}
 \right).
 }
-\tag{37}
+\tag{48}
 \]
 
-Likewise, under `N>=400P^2`, at least the number of divisor-lattice horizons in (9) obey the same inequality with the common coefficient `12kappa_P`.
+Taking `p=p_-(q)` gives the strongest form `kappa_q^sharp`. Likewise, under `N>=400P^2`, at least the number of divisor-lattice horizons in (11) obey the same inequality with the common coefficient `12kappa_P^sharp`.
 
-This is a genuine restriction on coherent physical horizons that is invisible to separate one-horizon optimization. It is nevertheless still a **ratio** estimate: it does not bound the absolute size of the Franel energies on those horizons, and therefore does not imply `M(x)=O(x^{1/2+\varepsilon})`, an improved Franel exponent, or RH.
+This is a genuine restriction on coherent physical horizons that is invisible to separate one-horizon optimization. It is nevertheless still a **ratio** estimate: it does not bound the absolute size of the Franel energies on those horizons and therefore does not imply `M(x)=O(x^{1/2+\varepsilon})`, an improved Franel exponent, or RH.
 
-The result sharpens the location of the live cumulative question. A successful growing-depth program must do more than show that many coherent horizons fail to saturate the unrestricted scalar GCD constant. It must couple that nonsaturation to the **size or transport of the energies themselves**, or find a weighted/multiscale compatibility whose gain does not disappear as its dilation complexity grows.
+The stronger collision does sharpen the live cumulative question. A successful growing-depth program cannot merely count many horizons that fail exact saturation. It must couple cross-horizon nonsaturation to the **size or transport of the energies themselves**, or use arithmetic/source restrictions that prevent the interpolation mechanism of `FD-016`, while remaining compressed enough not to reconstruct the Möbius prefix as in `FD-009`.
 
 ## 5. Prior art, novelty boundary, and falsification controls
 
-The GCD-matrix factorization, inverse divisor-incidence formula, Jordan-totient identity, and unrestricted equality-ray geometry are the classical ingredients already sourced in `FD-003` and `SOURCES.md`. The antichain bound is Sperner's classical 1928 theorem. No novelty is claimed for either ingredient separately, nor for the elementary fact that divisors of a squarefree integer form a Boolean lattice.
+The GCD-matrix factorization, inverse divisor-incidence formula, Jordan-totient identity, and unrestricted equality-ray geometry are the classical ingredients already sourced in `FD-003` and `SOURCES.md`. The antichain bound is Sperner's classical 1928 theorem. The coordinate limit `v_d^(H)->mu(d)/d` is an immediate specialization of that existing inverse formula, not a new arithmetic theorem. A targeted search of the GCD-matrix and Farey-discrepancy literature did not identify a pre-existing theorem with this source-coherent repeated-prime horizon collision, but absence from that search is not a broad novelty claim.
 
-The Mathia-specific derived content is the exact compatibility chain
+The Mathia-specific derived content is the compatibility chain
 
 \[
-u_q^{(H)}\sim Z\mu(q)/q,\qquad
-u_{q^2}^{(H)}=0
+v_p^{(H)}\sim-1/p,
+\qquad
+v_q^{(qH)}\sim\mu(q)/q,
+\qquad
+v_{pq}^{(qH)}=0
 \quad\Longrightarrow\quad
-\min(R_H,R_{qH})<\kappa_q,
-\tag{38}
+\min(R_H,R_{qH})<\kappa_{q,p},
+\tag{49}
 \]
 
-and its application to the Franel--Mertens staircase across one coherent squarefree divisor family. A targeted literature search did not identify a pre-existing Farey-discrepancy theorem with this specific equality-ray/dilation formulation, but absence from that search is not a novelty claim.
+and its application to the Franel--Mertens staircase across one coherent squarefree divisor family. The general defect formula (26) explains why the collision is specifically a failure of Möbius multiplicativity after the two equality-ray demands attempt to reuse a prime factor.
 
-Several boundaries are load-bearing.
+Several boundaries are load-bearing. First, the finite threshold `H>=400q^2` and constants in (3) are conservative, not optimized. Better decimals matter only if they expose a new transport mechanism.
 
-First, the finite threshold `H>=400q^2` and the constant in (3) are conservative, not optimized. `FD-014` remains the sharper finite theorem for `q=2`. Better constants would matter only if they change the transport mechanism, not merely the decimal coefficient.
+Second, (4) is universal over real cumulative sources. It does not use exact Möbius floor identities or squarefree increments, so it remains safely below the source-reconstruction boundary of `FD-009`. Conversely, precisely because it is universal, it cannot supply the missing arithmetic cancellation by itself.
 
-Second, (4) is universal over real cumulative sequences. It does not use the exact Möbius floor identity or squarefree signs, so it stays safely below the source-reconstruction boundary of `FD-009`. Conversely, precisely because it is universal, it cannot by itself supply the missing arithmetic cancellation.
+Third, the earlier `q^{-4}` common-gap scale was an artifact of choosing the `q^2` square-killed coordinate. For composite `q`, the repeated-prime coordinate `p_-(q)q` gives the stronger scale `(p_-(q)^2q^2)^{-1}`. This removes two powers for first-prime divisor lattices but **does not remove decay with multiplicative breadth**. The sparse interpolation theorem `FD-016` remains a complementary obstruction: when horizons are separated enough to plant fresh equality-ray prefixes, common-source consistency alone cannot force a scale-independent deficit.
 
-Third, the `q^{-4}` scale in the certified saturation gap comes from needing `O(q^{-2})` control of the `q^2` coordinate in order to contradict a product naturally of size `q^{-2}`. The present proof therefore becomes weaker for large dilation even though the combinatorial antichain becomes stronger. A different norm, a weighted threshold, or additional arithmetic structure would need an independently proved stability gain before claiming that this decay has been overcome.
-
-Finally, (8) constrains only the set of horizons whose **normalized coordinate ratio** lies above `kappa_P`. It is not a bound on the values of `M`, on the Franel energies, or on a density of zeta zeros. The surviving target is a quantitative coupling between cross-horizon nonsaturation and energy size that remains compressed enough not to reconstruct the Möbius prefix as in `FD-009`.
+Finally, (10) constrains only the set of horizons whose normalized coordinate ratio lies above `kappa_P^sharp`. It is not a bound on Mertens values, Franel energies, or a density of zeta zeros. The surviving target is a quantitative coupling between cross-horizon nonsaturation and energy size, or a genuinely Farey-specific chronology/ancestry invariant, strong enough to affect the critical scale without becoming a disguised reconstruction of the Möbius source.
