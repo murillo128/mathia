@@ -21,7 +21,7 @@ There are absolute constants `A,c>0` such that, uniformly for `G>=1`,
 \boxed{
 N_G(Z)
 \ll
-\exp(4G+A)
+G\,\exp(2G+A)
 \left(
 G^2\log(2G)+1+\log^*\log Z
 \right),
@@ -58,12 +58,12 @@ then the same argument gives the crude but explicit calibration
 
 \[
 \boxed{
-N_H(Z)\le(\log Z)^{4c_0+o(1)}.
+N_H(Z)\le(\log Z)^{2c_0+o(1)}.
 }
 \tag{6}
 \]
 
-Thus the fixed-`G` hypothesis in the host-sparsity mechanism of `RE-020` is not a hard phase boundary. Envelopes may grow to infinity, even through arbitrary `o(log log X)` functions, while the admissible self-tangent peak hosts remain subpower in `log Z`.
+Thus the fixed-`G` hypothesis in the host-sparsity mechanism of `RE-020` is not a hard phase boundary. Envelopes may grow to infinity, even through arbitrary `o(log log X)` functions, while the admissible self-tangent peak hosts remain subpower in `log Z`. The coupled boundary-mass budget also halves the exponential coefficient in the quantitative `c_0 log log X` calibration compared with treating the two boundary bases independently.
 
 There is also a direct compatibility with the newer race geometry of `RE-023`. Since `H(X)=o(log log X)` is in particular `o(sqrt(X))`, and `p~X` for the last active first-layer prime, every hypothetical Robin-counterexample sequence inside (3) necessarily obeys
 
@@ -78,7 +78,7 @@ There is also a direct compatibility with the newer race geometry of `RE-023`. S
 
 So a slowly growing-envelope escape must satisfy **both** restrictions simultaneously: it lies on only `(log Z)^{o(1)}` admissible peak hosts up to event height `Z`, and those hosts must realize the same opposite-side selected prime-race corner as the entire sub-square-root envelope chamber. This remains a necessary-condition theorem, not an exclusion of Robin counterexamples.
 
-## 1. The envelope bound gives a growing but explicit base alphabet
+## 1. The envelope bound gives a coupled growing base alphabet
 
 `RE-017` proves that every prime factor `r` appearing at either adjacent CA boundary of a sufficiently large peak satisfies
 
@@ -94,21 +94,40 @@ Under (1), after one absolute initial range,
 \tag{9}
 \]
 
-Hence all boundary atoms use a prime base from an alphabet of cardinality at most
+The two bases selected from the opposite peak boundaries are much more tightly coupled than this individual bound suggests. At each peak choose one event atom deterministically from the left boundary and one from the right boundary; for a tied transition, choose for example the smaller prime base. Call the selected bases `r` and `s`. If `w_-` and `w_+` are the logarithmic masses of the two complete adjacent CA quotients, then
 
 \[
-R_G:=e^{2G+3}.
+\log r\le w_-,
+\qquad
+\log s\le w_+.
+\]
+
+The stronger total boundary-mass budget already proved in `RE-017` is
+
+\[
+w_-+w_+<2g(C)+2+o(1).
+\]
+
+Therefore, after enlarging the same absolute initial range,
+
+\[
+\boxed{rs<e^{2G+3}.}
 \tag{10}
 \]
 
-At each peak choose one event atom deterministically from the left boundary and one from the right boundary; for a tied transition, choose for example the smaller prime base. There are therefore fewer than
+Put `Y_G=e^(2G+3)`. Even if primality is discarded completely, the number of possible ordered selected base pairs is at most
 
 \[
-R_G^2=e^{4G+6}
+\boxed{
+\sum_{2\le m\le Y_G/2}
+\left\lfloor\frac{Y_G}{m}\right\rfloor
+\ll Y_G\log Y_G
+\ll G e^{2G+3}.
+}
 \tag{11}
 \]
 
-ordered base pairs to consider.
+Thus one does not pay two independent `e^(2G)` alphabet factors. The same peak-clearance inequality that compresses the individual boundary factors also couples the two choices through their product.
 
 The two chosen event coordinates `x<y` satisfy, again by `RE-017`,
 
@@ -162,7 +181,7 @@ Thus distinct events from the same base cannot form the two selected boundaries 
 
 ## 2. Two repeated collisions with variable bases still produce a uniform linear form
 
-Fix one ordered pair of distinct primes `(r,s)` satisfying (9), and order all selected boundary pairs using these bases by their left event coordinate:
+Fix one ordered pair of distinct primes `(r,s)` satisfying (10), and order all selected boundary pairs using these bases by their left event coordinate:
 
 \[
 x_n=\eta_{r,j_n},
@@ -261,10 +280,13 @@ nonzero for positive integers `a,b`. A standard two-logarithm specialization of 
 \tag{23}
 \]
 
-This is the same external theorem already anchored for `RE-020`, now used before freezing `r` and `s`. Equation (9) gives
+This is the same external theorem already anchored for `RE-020`, now used before freezing `r` and `s`. The coupled pair budget (10) gives `log r+log s<2G+3`, so arithmetic-geometric mean yields
 
 \[
-(\log r)(\log s)\le(2G+3)^2\ll G^2.
+(\log r)(\log s)
+\le\frac{(\log r+\log s)^2}{4}
+\le\left(G+\frac32\right)^2
+\ll G^2.
 \tag{24}
 \]
 
@@ -388,9 +410,9 @@ G^2\log(2G)+1+\log^*\log Z
 \tag{35}
 \]
 
-selected peak hosts. Multiplying by the crude pair count (11), and absorbing the low-coordinate same-base exceptions, proves (2).
+selected peak hosts. Multiplying by the coupled pair count (11), and absorbing the low-coordinate same-base exceptions, proves (2).
 
-No prime-number theorem is needed for this counting step; using all integers below `e^(2G+3)` rather than estimating the number of primes is deliberate, since the coarse exponential dependence is already enough for the applications below.
+No prime-number theorem is needed for this counting step. Deliberately counting all integer pairs with product at most `Y_G`, rather than estimating prime pairs, already removes the spurious second independent exponential alphabet factor and is enough for the applications below.
 
 ## 5. `o(log log X)` envelopes are subpower in `log Z`
 
@@ -411,7 +433,7 @@ Taking logarithms of its right side gives
 \[
 \log N_H(Z)
 \le
-4H(Z)
+2H(Z)
 +O\!\left(
 \log(2+H(Z))+\log(1+\log^*\log Z)
 \right).
@@ -420,15 +442,15 @@ Taking logarithms of its right side gives
 
 Under `H(Z)=o(log log Z)`, the right side is `o(log log Z)`. Exponentiating proves (4).
 
-If instead (5) holds, the exponential base-pair factor is
+If instead (5) holds, the leading exponential factor is
 
 \[
-e^{4H(Z)+O(1)}
+e^{2H(Z)+O(1)}
 \le
-(\log Z)^{4c_0+o(1)},
+(\log Z)^{2c_0+o(1)},
 \]
 
-while the remaining factors in (2) are `(log Z)^{o(1)}`. This proves (6).
+while the extra factor `H(Z)` and the remaining factors in (2) are `(log Z)^{o(1)}`. This proves (6).
 
 This is stronger than applying the generic deep-layer count of `RE-017` to the same regime. That result gives `Z^epsilon` for every fixed `epsilon>0` when `g=o(log X)`; here the stronger Diophantine synchronization inherited from `RE-020` reduces `o(log log X)` envelopes to **subpower sparsity in `log Z` itself**.
 
@@ -458,13 +480,13 @@ The external Diophantine input is classical. Matveev's 2000 theorem gives explic
 
 Alaoglu--Erdos remains the classical CA source for exponent thresholds, consecutive-CA quotient structure, and the unresolved exact two-prime simultaneous-jump obstruction. Mantovanelli's August 2026 work is the closest current prior art for the self-tangent prime-layer event representation. None of those sources is being credited with a growing-envelope host theorem here.
 
-A fresh targeted search of current CA transition work, Robin-extremal literature, and applications of linear forms in logarithms to CA prime-power transitions did not locate the two-parameter estimate (2) or its `H=o(log log X)` consequence (4). No novelty is claimed for Matveev's theorem, for generic sparse intersections of exponential sequences, or for the fixed-base result already proved in `RE-020`. The repository-level delta is the explicit bookkeeping of the **base-height dependence** in that argument, showing that the fixed-envelope mechanism survives a quantitatively growing alphabet.
+A fresh targeted search of current CA transition work, Robin-extremal literature, and applications of linear forms in logarithms to CA prime-power transitions did not locate the two-parameter estimate (2) or its `H=o(log log X)` consequence (4). No novelty is claimed for Matveev's theorem, for generic sparse intersections of exponential sequences, or for the fixed-base result already proved in `RE-020`. The repository-level delta is the explicit bookkeeping of the **base-height dependence** in that argument, together with the coupled product constraint (10) inherited from the peak-clearance budget. This shows that the fixed-envelope mechanism survives a quantitatively growing alphabet without paying for two independent boundary alphabets.
 
 No new source anchor is required.
 
 ## 8. Falsification boundaries and research consequence
 
-The `4G` in (2) is a crude alphabet-counting loss, not a predicted sharp constant. It comes from the elementary bound `r<e^(2G+3)` on each of two selected boundary bases. Better counting of admissible bases could improve (6) without changing the Diophantine core.
+The remaining `e^(2G)` scale in (2) is still a crude base-pair counting loss, not a predicted sharp constant. Treating the two selected boundary bases independently would give `r,s<e^(2G+3)` and waste another `e^(2G)` factor. The actual peak-clearance budget couples them through `rs<e^(2G+3)`, so counting even all integer pairs costs only `O(G e^(2G))`. Sharper counting of prime pairs may improve polynomial or logarithmic factors; removing the `e^(2G)` scale itself would require additional arithmetic or transition structure beyond this product budget.
 
 The local-peak hypothesis remains load-bearing because `RE-017` obtains the base compression from the secant-clearance condition. The theorem is not asserted for arbitrary regular self-tangent states. The envelope `g` is the consecutive ordinary-prime envelope containing the two actual adjacent CA transitions, not necessarily the actual CA gap.
 
