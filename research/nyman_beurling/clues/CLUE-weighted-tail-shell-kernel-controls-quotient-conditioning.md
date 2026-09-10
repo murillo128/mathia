@@ -1,7 +1,7 @@
 ---
 id: CLUE-weighted-tail-shell-kernel-controls-quotient-conditioning
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: nyman_beurling
 based_on:
@@ -104,8 +104,34 @@ Finally identify the construction with \(\widehat K_{M,N}=P_{V_N}E_M\), where \(
 
 ## Evidence boundary
 
-This remains a proposed source specialization and metric extension. The generic field quotient, independent-family basis, and projection identities are covered by Lean; applying them after nonzero rescaling is algebraically legitimate. Lean does not formalize fractional-part generators, their early-shell relation, the kernel identification with shell observations, (2), Burnol's bound, or any resulting asymptotic estimate. The displayed derivation leads require the owning Research Watch's independent verification and prior-art audit before becoming a finding.
+This clue originally proposed a source specialization and metric extension; its durable disposition is recorded below. The generic field quotient, independent-family basis, and projection identities are covered by Lean; applying them after nonzero rescaling is algebraically legitimate. The existing Lean artifact does not formalize fractional-part generators, their early-shell relation, the kernel identification with shell observations, (2), Burnol's bound, or any resulting asymptotic estimate, so those source-specific statements required independent Research Watch verification before becoming evidence.
 
 Exact rational finite checks for all \(2\le M\le N\le24\) confirmed early-shell annihilation, the required matrix ranks, retained-matrix invertibility, and the factor \(M/n\) in (1). They do not verify the infinite Hilbert Gram matrix or asymptotic claims. The bounded neighborhood and local/global clue checks did not identify this combined question. [Bagchi's primary paper](https://arxiv.org/abs/math/0607733) supplies the weighted sequence realization and classical totality/Gram context; the bounded comparison did not locate this specific weighted-tail conditioning statement. No priority claim follows from that search.
 
 NB-029 already explains the disappearance of the original unweighted endpoint in Hilbert closure, so that observation is not a separate clue. Its vanishing-generator telescope cannot simply be applied to the rescaled sequence \(ng_n\). The proposed quotient uses a different nuisance sector, and no improvement of \(d_N\), Gram-whitened Möbius occupation theorem, efficient projector algorithm, or evidence for RH is asserted.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/nyman_beurling/findings/NB-034-weighted-tail-shell-kernel-gives-uniform-source-conditioning.md]]
+
+`NB-034` independently proves the exact early-shell kernel, the harmonic weighted-tail quotient coordinate, and the Gram comparison proposed above. It makes the metric claim explicit:
+
+\[
+\lambda_{\min}(B_M)\ge \frac1{49M^4},
+\qquad
+\operatorname{cond}_2(\widehat H_{M,N})
+\le 98M^4(H_M-1),
+\]
+
+uniformly in `N`. It also proves the sharper target-loss bound
+
+\[
+\widehat\kappa_{M,N}^2-d_N^2
+=\|P_{\widehat W_{M,N}}e\|^2
+\le \frac1M,
+\]
+
+so any predeclared `M_N/log N -> infinity` preserves the finite-section distance relatively by the already-anchored Burnol floor, while all low-index Möbius-locked coefficients survive unchanged. The clue is therefore resolved as supported. The remaining boundary is not quotient conditioning: constructing or controlling the retained target data may still require the full section, and no improved Nyman approximation rate or RH implication follows.
