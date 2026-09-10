@@ -30,7 +30,7 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 ## Classical Möbius summatory cancellation
 
-- Harold Davenport, *Multiplicative Number Theory*, 3rd ed., revised by Hugh L. Montgomery, Graduate Texts in Mathematics 74, Springer, 2000, ISBN `978-0-387-95097-6`. Role: standard classical source for prime-number-theorem consequences for the Möbius summatory function; `NB-028` uses only the unconditional consequence `M(x)=o(x)`, not an RH-strength Mertens bound.
+- Harold Davenport, *Multiplicative Number Theory*, 3rd ed., revised by Hugh L. Montgomery, Graduate Texts in Mathematics 74, Springer, 2000, ISBN `978-0-387-95097-6`. Role: standard classical source for prime-number-theorem consequences for Möbius sums; `NB-028` uses only the unconditional consequence `M(x)=o(x)`, while `NB-035` uses the standard PNT consequence `sum_{n<=x} mu(n)/n -> 0` for its growing-cutoff corollary.
 
 ## Expansion rule
 
