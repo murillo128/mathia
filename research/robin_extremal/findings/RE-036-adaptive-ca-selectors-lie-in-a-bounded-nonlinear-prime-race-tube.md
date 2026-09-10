@@ -121,7 +121,7 @@ The tube in (11) is genuinely finer than the asymptotic ray. Since
 \qquad
 \Psi'_{b,\ell}(0)
 =
-\frac{1-b}{b}+rac1{b\ell},
+\frac{1-b}{b}+\frac1{b\ell},
 \tag{12}
 \]
 
@@ -131,7 +131,7 @@ and, uniformly for `|ell q|=o(1)`,
 \Psi_{b,\ell}(q)
 =
 \left(
-\frac{1-b}{b}+rac1{b\ell}
+\frac{1-b}{b}+\frac1{b\ell}
 \right)q
 +O_b(\ell q^2),
 \tag{13}
@@ -144,7 +144,7 @@ we obtain the corrected linear form
 V(Z)
 =
 \left(
-\frac{1-b}{b}+rac1{b\log Z}
+\frac{1-b}{b}+\frac1{b\log Z}
 \right)U(Z)
 +O_b\left(1+\frac{U(Z)^2}{\sqrt Z}\right).
 }
