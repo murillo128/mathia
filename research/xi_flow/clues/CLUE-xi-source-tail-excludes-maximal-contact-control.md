@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-source-tail-excludes-maximal-contact-control
 type: research-clue
-status: accepted
+status: resolved
 origin: mind
 target_line: xi_flow
 based_on:
@@ -9,6 +9,7 @@ based_on:
   - research/xi_flow/findings/XF-160-positive-fourier-sources-retain-maximal-contact-blindness-with-asymptotically-prescribed-transition-gaps.md
   - research/xi_flow/findings/XF-161-appell-smoothing-preserves-prescribed-transition-gaps-under-strictly-positive-analytic-fourier-sources.md
   - research/xi_flow/findings/XF-162-xi-theta-tail-hazard-separates-the-source-from-appell-smoothed-maximal-contact-controls.md
+  - research/xi_flow/findings/XF-163-gaussian-source-tilts-preserve-the-xi-tail-jet-while-translating-the-transition-constant.md
 ---
 
 # Does the Xi theta-source law exclude maximal-contact controls beyond positivity and analytic smoothness?
@@ -49,12 +50,17 @@ while every fixed-`sigma` Gaussian-mixture source produced by XF-161 has normali
 
 XF-162 also shows that Xi admits every positive quadratic heat multiplier, whereas an XF-161 Gaussian mixture has moment radius exactly `sigma^2/2`. The atomic XF-160 sources pass the all-time moment test but fail the positive-density prerequisite, so neither all-time admissibility nor smoothness alone is sufficient. Together these checks exclude the existing concrete controls from the Xi tail class by a scale-stable source invariant rather than by a qualitative label.
 
-This is enough to accept the research direction, but not to resolve it: no theorem yet couples the tail invariant to the transition strongly enough to improve the XF-159 visibility exponent.
+## Research disposition
 
-## Next decisive test
+Outcome: narrowed
 
-Test whether the Xi hazard law is globally rigid or merely asymptotic. The positive route is to derive a theta identity or differential inequality coupling the far-tail hazard to finite/mesoscopic source mass strongly enough to forbid the folded-binomial maximal-contact packet. The adversarial route is to construct a strictly positive smooth all-time source with the same Xi-normalized tail hazard but a prescribed nonzero transition gap. Such a construction would show that tail hazard alone is still noncoercive and force the source-side search into finer theta-coefficient structure.
+Resolved by:
+- [[research/xi_flow/findings/XF-163-gaussian-source-tilts-preserve-the-xi-tail-jet-while-translating-the-transition-constant]]
+
+XF-163 executes the clue's adversarial all-time test in a stronger form than a bespoke splice. For every `tau>0`, the source `Phi_tau(u)=e^(-tau u^2)Phi(u)` is strictly positive, smooth, and valid for all finite heat times; it has the same XF-162 normalized tail action, hazard, and curvature limits as Xi, yet its de Bruijn--Newman threshold is exactly `Lambda_Xi+tau`. Thus the tail jet and all-time moment admissibility are not globally coercive: they do not determine the absolute heat origin and cannot by themselves force an upper bound on `Lambda`.
+
+The broader Xi-source program is not refuted. The surviving route must use finer theta structure that is not invariant under Gaussian source tilting — for example a finite/mesoscopic identity or coefficient constraint that pins the distinguished `t=0` slice before trying to exclude maximal-contact behavior.
 
 ## Evidence boundary
 
-XF-162 excludes the particular XF-160/XF-161 source realizations from the Xi tail-hazard class; it does **not** prove that every source with Xi-like superexponential tails excludes maximal contact, nor that the actual Xi transition is stably recoverable. Tail asymptotics may survive source modifications away from the far tail. The accepted clue therefore records a real discriminator and a concrete falsification test, not a route to RH by itself.
+XF-163 does not construct the XF-160 folded-binomial packet with the exact Xi theta coefficients and does not show that every stronger theta identity is noncoercive. It resolves the present clue by narrowing the candidate source law: asymptotic tail action/hazard/curvature, positivity, smoothness, and all-time heat admissibility are insufficient as a package. Any subsequent source clue must add information that breaks the Gaussian heat-origin symmetry.
