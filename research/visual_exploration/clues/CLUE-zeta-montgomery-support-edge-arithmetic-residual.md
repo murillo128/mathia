@@ -15,6 +15,7 @@ based_on:
   - research/visual_exploration/findings/VIS-129-pair-correlation-effective-size-fixes-tent-capacity-and-resolution.md
   - research/visual_exploration/findings/VIS-130-bounded-source-taper-replaces-full-circle-cue-coordinate-window.md
   - research/visual_exploration/findings/VIS-131-bounded-taper-cue-edge-profile-poisson-sampled.md
+  - research/visual_exploration/findings/VIS-132-realized-tent-diagonal-one-over-l-common-mode.md
   - research/visual_exploration/SOURCES.md
 ---
 
@@ -22,60 +23,52 @@ based_on:
 
 ## Observation
 
-The support-edge thread has progressively removed universal and representation-induced effects before any fresh zero confirmation. `VIS-123` fixes the phase dictionary and shows that the all-real-time full-circle finite-`N` CUE statistic has a logarithmic support-edge ripple. `VIS-124` identifies Montgomery's pair weight as an exact Laplace multiplier/convolution. `VIS-125`--`VIS-128` isolate source-window leakage, rule out a growing hard window inside one logarithmic-size CUE circle, and replace it by an explicit bounded tent taper whose pair-overlap kernel is known exactly. `VIS-129` supplies the classical pair-correlation effective-size candidate `N_e(T)=rho_* L_T`, with `rho_*=1/sqrt(12 Lambda)=0.230156986...`, so a single non-wrapping tent arc must satisfy `H_src<2*pi*rho_*=1.44611899...`.
+The support-edge thread has progressively removed universal and representation-induced effects before any fresh zero confirmation. `VIS-123` fixes the phase dictionary and identifies the full-circle finite-`N` CUE support-edge ripple. `VIS-124`--`VIS-130` then separate Montgomery weighting, source-window leakage, single-circle capacity, effective-size matching, and the distinction between replacing and compounding the full-circle coordinate window.
 
-`VIS-130` corrects the finite-`N` transfer by showing that a bounded source taper must replace, rather than compound, the rectangular coordinate-overlap factor already built into the full-circle continuous-time spectral form factor. The exact connected bounded-tent CUE mean is
+`VIS-131` derives the corrected bounded-tent **mean** edge profile. For `rho=N/L`, `kappa=M/L<rho`, and `q=1+v/L`,
 
-`C_(N,L,M)(q)`
-` = 1 - integral_(-M)^M A_M(x) W_L(x) D_N(x)^2 exp(2*pi*i*q*x) dx`.
+`C_(N,L,M)(1+v/L) = 1 - Phi_(rho,kappa)(v)/L + O(L^-3)`
 
-`VIS-131` now derives the support-edge mean asymptotic of this corrected object. For `rho=N/L`, `kappa=M/L<rho`, and `q=1+v/L`,
+with a Poisson-sampled profile `Phi`. Its reflected identity makes the leading rounding symmetric, and an effective-size ratio perturbation `delta rho=O(1/log L)` moves this bounded-source mean only by `O(1/(L log L))`. The earlier full-circle same-order mean ambiguity is therefore not inherited by the correctly replaced smooth bounded source window.
 
-`C_(N,L,M)(1+v/L)`
-` = 1 - Phi_(rho,kappa)(v)/L + O(L^-3)`,
+`VIS-132` now resolves one piece of the stochastic covariance convention. The deterministic diagonal mean `1` in `C_(N,L,M)` corresponds in a single CUE realization to
 
-with an explicit Poisson-sampled profile
+`D_(N,M)=(3/M) sum_j h_M(y_j)^2`.
 
-`Phi_(rho,kappa)(v)=rho^-2 sum_(j>=1) j hat g_kappa(v+j/rho)`.
+For fixed source ratio `M/N=alpha in (0,1)`, exact CUE trace covariance gives `Var(D_(N,M))=Theta(N^-2)`, and the CUE linear-statistic CLT makes `N(D_(N,M)-1)` asymptotically nondegenerate Gaussian. Thus in the support-edge scaling `N=Theta(L)` the **realized diagonal itself fluctuates at order `1/L`**. It is the same scalar at every edge coordinate, however: samplewise realized-diagonal subtraction or any zero-sum coordinate contrast removes it exactly. Subtracting only the ensemble mean `1` does not.
 
-The single-arc capacity condition makes the leading rounding alias-free and forces
-
-`Phi(-v)-Phi(v)=v`,
-
-so after subtracting the ideal ramp/plateau the leading finite-CUE rounding is symmetric across the edge. More importantly, the profile depends regularly on the effective-size ratio: a ratio perturbation `delta rho` changes the bounded-source mean only by `O(delta rho/L)`. Therefore the `delta rho=O(1/log L)` ambiguity that was dangerous for the full-circle real-time statistic is only `O(1/(L log L))` here and is no longer a same-order `1/L` mean obstruction.
-
-The remaining residual question has consequently moved again. The bounded-tent **mean** null and its first-order effective-size sensitivity are now controlled analytically, but the joint covariance of the frozen edge coordinates, stochastic finite-height transfer/unfolding effects, and any independently predicted arithmetic lower-order amplitude are still missing.
+The remaining residual question is consequently narrower. The bounded-tent mean null, first-order effective-size sensitivity, and realized diagonal common mode are controlled. The unresolved stochastic object is the **off-diagonal joint covariance after that exact common-mode projection**, together with finite-height zeta-to-CUE transfer/unfolding errors and any independently predicted arithmetic lower-order amplitude.
 
 ## Research question
 
-For one predeclared bounded physical tent width `H_src<1.44611899...` with nonvanishing capacity margin, one effective-size rule and integerization convention, and a small frozen set of nondegenerate edge coordinates `v`, what is the exact or asymptotically controlled **joint covariance** of the corresponding finite-CUE statistics after the `VIS-131` mean profile is subtracted?
+For one predeclared bounded physical tent width with nonvanishing single-circle capacity margin, one effective-size rule and integerization convention, and a small frozen set of nondegenerate edge coordinates `v`, what is the exact or asymptotically controlled joint covariance of the **samplewise diagonal-subtracted off-diagonal** finite-CUE statistics after the `VIS-131` mean profile is removed?
 
-Can the remaining finite-height zeta-to-CUE transfer uncertainties — including counting/unfolding fluctuations, diagonal convention, and any admissible error in `N(T)` beyond its now-subleading mean effect — be propagated through that covariance strongly enough that a later arithmetic residual has a genuinely predeclared amplitude, direction, and significance?
+Does that covariance have a nonzero large-`L` floor, decay like a power of `L`, or contain a lower-rank nuisance geometry that can itself be projected out without fitting to zeta data? How do the remaining finite-height counting/unfolding and effective-size transfer uncertainties propagate through the same frozen contrast?
 
 ## Why it may matter
 
-`VIS-131` removes a previously plausible identifiability obstruction rather than producing a positive arithmetic signal. A smooth bounded source taper does more than fit inside one effective CUE circle: it also removes the slow full-circle window tail responsible for the logarithmically amplified effective-size sensitivity. This makes an `O(1/L)` residual *in principle* distinguishable at the mean level even when the effective-size ratio is known only up to `O(1/log L)`.
+A candidate arithmetic edge residual naturally lives at `O(1/L)`. `VIS-131` shows that the bounded-tent **mean** can be calibrated at that scale without the earlier logarithmically amplified effective-size ambiguity. `VIS-132` shows that a careless diagonal convention can nevertheless inject a stochastic `O(1/L)` common mode of exactly the same size.
 
-That is useful only if covariance and source-side transfer do not reintroduce an equally large nuisance direction. A positive result after those controls would still most likely organize known arithmetic lower-order structure rather than establish a new pair-correlation theorem. A negative result would close the support-edge route cleanly by showing that the fully matched stochastic null absorbs it.
+That nuisance is removable without source fitting, so it is not a reason to abandon the route. The decisive issue is now the off-diagonal stochastic floor. Ordinary full-circle random-matrix spectral form factors are known to be non-self-averaging, so it would be unsafe to assume that the bounded-taper covariance shrinks merely because its mean has a `1/L` expansion. If the projected covariance stays `O(1)`, resolving an `O(1/L)` mean signal requires an explicit averaging budget over effectively independent source windows; if it decays, the rate determines how much confirmation data are needed.
 
 ## Decisive test
 
-Do not inspect fresh confirmation zeros. Freeze the bounded tent width, the effective-size rule and integerization, local unfolding, Montgomery weight, diagonal/connected normalization, edge coordinates `v`, and one combined residual statistic.
+Do not inspect fresh confirmation zeros. Freeze the bounded tent width, effective-size rule and integerization, local unfolding, Montgomery weight, edge coordinates, and one combined decision statistic. Fix the diagonal convention **at the realized-statistic level**: either subtract `D_(N,M)` samplewise or use a predeclared zero-sum coordinate contrast so that the common mode from `VIS-132` cancels identically.
 
-Use the exact `VIS-130` finite-CUE source-window statistic and the `VIS-131` Poisson-sampled mean profile as the null mean. Derive the covariance matrix of the frozen coordinates under the same finite-`N` CUE/tent/weight convention rather than importing full-circle covariance. Check that the covariance construction respects the same non-wrapping source geometry and determine its large-`L` scale.
+Starting from the exact `VIS-130` finite-CUE source-window statistic and `VIS-131` mean profile, derive the covariance matrix of the remaining off-diagonal coordinates under the same finite-`N` CUE/tent/weight convention. Do not import full-circle SFF covariance. Determine its large-`L` scale, eigen-directions, and any exact symmetry-induced degeneracies. A bounded CUE simulation may be used as a falsification/control check, but the durable covariance claim must be derived or otherwise justified under the normal finding gate.
 
-Propagate finite-height transfer uncertainty through the **joint** null. In particular, include the residual effect of theoretically admissible perturbations of `N(T)`, smooth and stochastic unfolding/counting errors, and the exact diagonal convention. The mean-level `delta rho=O(1/log L)` direction established in `VIS-131` should enter only at `O(1/(L log L))`; if a covariance or transfer term lifts it back to `O(1/L)`, that mechanism must be derived explicitly rather than inferred from the obsolete full-circle logarithmic ripple.
+Then propagate the finite-height source-transfer uncertainties through that **same projected joint statistic**: residual admissible error in `N(T)`, smooth and stochastic unfolding/counting effects, and the exact connected/diagonal normalization. If the projected covariance has a nonzero limit, predeclare the number and independence structure of height windows needed to make the standard error smaller than the target `1/L` amplitude; do not infer independence from visual separation alone.
 
-Only after the complete mean-plus-covariance null and nuisance directions are frozen should an arithmetic lower-order formula determine the predicted residual amplitude/direction. Then test the frozen statistic on untouched high-zero material with the predetermined combined decision rule. Kill the route if the residual is reproduced by the fully matched finite-CUE/taper null, absorbed by justified source-transfer uncertainty, disappears under exact diagonal/window/unfolding accounting, or reduces entirely to established lower-order arithmetic with no residual question.
+Only after the complete projected mean-plus-covariance null and nuisance directions are frozen should an arithmetic lower-order formula determine the predicted residual amplitude and direction. Then test the frozen statistic on untouched high-zero material with the predetermined combined decision rule. Kill the route if the residual is reproduced by the matched finite-CUE/taper null, absorbed by justified transfer uncertainty, disappears under exact normalization/unfolding accounting, or reduces entirely to established lower-order arithmetic with no residual question.
 
 ## Evidence boundary
 
-The CUE determinantal kernel, Fejer expansion, Poisson summation, Montgomery's pair statistic and weight, finite-size CUE models for Riemann zeros, and ordinary window/autocorrelation Fourier identities are prior art. `VIS-123`--`VIS-131` establish a sequence of calibration and compatibility controls plus the corrected bounded-tent mean null and its leading support-edge profile; they do not establish any arithmetic residual.
+The CUE determinantal kernel, Fejer expansion, Poisson summation, Montgomery's pair statistic and weight, finite-size CUE models for Riemann zeros, CUE trace covariance/linear-statistic CLTs, and ordinary window/autocorrelation Fourier identities are prior art. `VIS-123`--`VIS-132` establish calibration and compatibility controls plus the corrected bounded-tent mean null, its leading support-edge profile, and the exact scale/cancellation of the realized diagonal common mode. They do not establish an arithmetic residual.
 
-`VIS-131` is specifically a mean-null result. It does not derive the joint covariance, the exact finite-height zeta-to-CUE transfer, stochastic counting-function effects, or an arithmetic lower-order amplitude. Its regular effective-size sensitivity is conditional on a fixed positive single-arc capacity margin and the smooth bounded tent; harder windows or a taper approaching the circle capacity can have different edge behavior.
+`VIS-132` does **not** determine the total bounded-tent covariance. In particular, the off-diagonal quadratic statistic can fluctuate more strongly and can correlate with the diagonal component. The known non-self-averaging of the ordinary full-circle SFF is only a warning against assuming self-averaging here, not a theorem about the bounded-taper statistic.
 
-No fresh zero confirmation has been inspected for this narrowed design. Even a positive later test would not prove RH, Montgomery's full pair-correlation conjecture, Hardy--Littlewood prime-pair asymptotics, or a new random-matrix theorem.
+No exact finite-height zeta-to-CUE transfer, stochastic counting-function covariance, arithmetic lower-order amplitude, or fresh zero confirmation has yet been supplied. Even a later positive test would not prove RH, Montgomery's full pair-correlation conjecture, Hardy--Littlewood prime-pair asymptotics, or a new random-matrix theorem.
 
 ## Research disposition
 
-Accepted for continued investigation. `VIS-131` resolves the bounded-tent **mean support-edge asymptotic and first-order effective-size sensitivity** portion of the previous decisive test. The remaining gate is the joint finite-CUE covariance plus finite-height transfer/nuisance propagation for the frozen edge coordinates, followed — only if that survives — by an independently predicted arithmetic amplitude and untouched source confirmation.
+Accepted for continued investigation. `VIS-131` resolves the bounded-tent mean support-edge asymptotic and first-order effective-size sensitivity; `VIS-132` resolves the realized diagonal common-mode piece of the covariance convention and shows how to remove it exactly. The remaining gate is the **off-diagonal projected finite-CUE covariance plus finite-height transfer/nuisance propagation**, followed — only if that survives — by an independently predicted arithmetic amplitude and untouched source confirmation.
