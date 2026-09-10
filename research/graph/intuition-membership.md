@@ -24,6 +24,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mind/intuition/MI-006-classify-the-boundary-model-before-calling-it-arithmetic]]
 - [[research/mind/intuition/MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure]]
 - [[research/mind/intuition/MI-008-exact-recovery-is-not-stable-transport]]
+- [[research/mind/intuition/MI-009-local-correctness-does-not-determine-global-coherence]]
 
 ### Analytic Frontier
 - [[research/analytic_frontier/mind/intuition/MI-001-global-conjugation-geometry-carries-horizontal-information]]
@@ -55,6 +56,9 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-018-signed-complexity-only-transfers-through-sign-regular-observations]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-019-faithful-translation-lifts-are-affine]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-020-prime-tail-localization-has-an-information-conservation-law]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-021-coarse-rh-endpoints-can-still-require-deep-source-access]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-022-prefix-truncation-must-respect-cancellation-orbits]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density]]
 
 ### Farey Discrepancy
 - [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]
@@ -73,9 +77,14 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-011-source-forced-prime-deformation-is-a-polynomial-information-channel]]
 - [[research/mobius_cancellation/mind/intuition/MI-012-hamming-regularization-is-degree-two-damping-before-the-square-root-transition]]
 - [[research/mobius_cancellation/mind/intuition/MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category]]
+- [[research/mobius_cancellation/mind/intuition/MI-014-centered-parity-and-zero-mode-are-separate-currencies]]
+- [[research/mobius_cancellation/mind/intuition/MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
+- [[research/nyman_beurling/mind/intuition/MI-002-small-shell-discrepancy-can-destroy-rooted-visibility]]
+- [[research/nyman_beurling/mind/intuition/MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal]]
+- [[research/nyman_beurling/mind/intuition/MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -98,6 +107,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_flute/mind/intuition/MI-004-coordinate-amplification-is-not-operator-amplification]]
 - [[research/prime_flute/mind/intuition/MI-005-short-collar-multiplicity-reduces-to-one-local-splice]]
 - [[research/prime_flute/mind/intuition/MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency]]
+- [[research/prime_flute/mind/intuition/MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap]]
 
 ### Prime Lattice
 - [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding]]
@@ -115,6 +125,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-013-kms-offdiagonal-freedom-is-boundary-data-not-prime-coupling]]
 - [[research/prime_lattice/mind/intuition/MI-014-prime-exchangeability-erases-normal-arithmetic-equilibrium]]
 - [[research/prime_lattice/mind/intuition/MI-015-reciprocity-family-coupling-is-not-principal-zero-selection]]
+- [[research/prime_lattice/mind/intuition/MI-016-weil-form-observability-is-stronger-than-moment-observability]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
@@ -126,6 +137,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-004-dimension-free-confirmation-comes-from-narrowing-the-destination-question]]
 - [[research/visual_exploration/mind/intuition/MI-005-random-prime-phase-controls-have-deterministic-resonance-geometry]]
 - [[research/visual_exploration/mind/intuition/MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates]]
+- [[research/visual_exploration/mind/intuition/MI-007-moment-null-packets-pay-an-order-matched-variation-gate]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]
@@ -142,6 +154,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-012-affine-vector-retention-is-still-scalarization-at-the-witness]]
 - [[research/weil_inertia/mind/intuition/MI-013-exceptional-populations-have-finite-spectral-screening-rank]]
 - [[research/weil_inertia/mind/intuition/MI-014-source-coercivity-must-survive-confluence-and-drifting-bows]]
+- [[research/weil_inertia/mind/intuition/MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
@@ -154,6 +167,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_positivity/mind/intuition/MI-008-critical-half-density-exposes-archimedean-phase-only-before-gram-scalarization]]
 - [[research/weil_positivity/mind/intuition/MI-009-finite-regular-passive-enlargements-cannot-realize-the-gamma-divisor]]
 - [[research/weil_positivity/mind/intuition/MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation]]
+- [[research/weil_positivity/mind/intuition/MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling]]
+- [[research/weil_positivity/mind/intuition/MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization]]
 
 ### Xi Flow
 - [[research/xi_flow/mind/intuition/MI-001-collision-safe-coordinates-separate-singularity-from-source-information]]
@@ -167,4 +182,6 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-009-guarded-energy-can-enforce-static-real-divisor-feasibility]]
 - [[research/xi_flow/mind/intuition/MI-010-endpoint-renormalization-is-source-fixed-before-discretization]]
 - [[research/xi_flow/mind/intuition/MI-011-cross-scale-observability-can-compress-to-one-off-circle-heat-trace]]
+- [[research/xi_flow/mind/intuition/MI-012-xi-tail-hazard-is-source-specific-but-not-yet-coercive]]
+
 <!-- intuition-membership:end -->
