@@ -102,7 +102,7 @@ The established zero-free region
 
 \[
 \beta
-<1-rac{1}{55.241(\log |\gamma|)^{2/3}(\log\log |\gamma|)^{1/3}}
+<1-\frac{1}{55.241(\log |\gamma|)^{2/3}(\log\log |\gamma|)^{1/3}}
 \tag{13}
 \]
 
@@ -251,7 +251,7 @@ Mossinghoff, Trudgian and Yang prove the explicit Vinogradov--Korobov region
 \zeta(\sigma+it)\ne0
 \quad\text{for}\quad
 \sigma\ge
-1-rac{1}{55.241(\log|t|)^{2/3}(\log\log|t|)^{1/3}},
+1-\frac{1}{55.241(\log|t|)^{2/3}(\log\log|t|)^{1/3}},
 \qquad |t|\ge3.
 \tag{28}
 \]
@@ -348,3 +348,105 @@ The fixed `\vartheta>1/4` contradiction can be audited by checking only three in
 The endpoint additionally requires the Vinogradov--Korobov region and a bow-size precision strong enough that deviations of `\log m` from `(1/4)\log T` are no larger than the zero-free width. Removing that precision would be an invalid strengthening.
 
 For the research program, this sharpens the geometry of the live simple-off-line complement. A count-saturating local bow cannot hide behind a large but shallow same-interval population: **its residual count reservoir is only logarithmic, so local cancellation forces one screen zero to move from the bow scale to real part `1/2+2\vartheta-o(1)`.** The remaining escape is now explicit: cancellation must become nonlocal/source-side, or the bow must open a genuine spacing/count surplus. This is a structural defect-to-depth implication, not a new simple-critical percentage.
+
+## 7. Published subquarter zero-free refinement and a near-edge reservoir candidate
+
+The endpoint discussion above can be sharpened asymptotically. Bellotti's published 2024 zero-free region gives, for sufficiently large ordinate,
+
+\[
+\zeta(\sigma+it)\ne0
+\quad\text{when}\quad
+\sigma\ge 1-A_0(\log|t|)^{-2/3}(\log\log|t|)^{-1/3},
+\qquad
+A_0:=\frac1{48.0718}.
+\tag{34}
+\]
+
+Put
+
+\[
+S(T):=\frac{(\log T)^{1/3}}{(\log\log T)^{1/3}}.
+\tag{35}
+\]
+
+For every same-interval screen zero in the density-matched setting, `|\gamma|\asymp T`, and (9) together with (34) gives the upper bound
+
+\[
+a_{\max}
+\le
+\frac{\ell_0}{4}
+-\left(\frac{A_0}{2}+o(1)\right)S(T).
+\tag{36}
+\]
+
+Combining (36) with the lower bound (25), any such screen must satisfy
+
+\[
+\boxed{
+\log m
+\le
+\frac14\log T
+-\left(\frac1{96.1436}+o(1)\right)S(T)
++\log\log T.
+}
+\tag{37}
+\]
+
+Equivalently, the same-interval screen is impossible whenever
+
+\[
+\boxed{
+\frac{m}{
+T^{1/4}\log T\,
+\exp\!\left(-S(T)/96.1436\right)}
+\longrightarrow\infty.
+}
+\tag{38}
+\]
+
+This is a genuine strengthening of the fixed-power statement: it excludes a subpower window **below** `T^{1/4}`, rather than only fixed exponents `\vartheta\ge1/4`. It uses no new screen inequality; the gain comes solely from retaining the asymptotic Bellotti zero-free width in the exact radial normalization.
+
+There is a further, currently lower-evidence refinement. Bellotti's 2025 preprint proves on its theorem surface that, for every fixed `A>A_0`,
+
+\[
+N\!\left(1-A(\log T)^{-2/3}(\log\log T)^{-1/3},T\right)=O_A(1).
+\tag{39}
+\]
+
+The multiplicity interface is material here. The preprint defines `N(\sigma,T)` as a count of zeros and, in the proof, bounds the number of zeros in each small disk through `\zeta'/\zeta`; repeated roots therefore enter the local logarithmic-derivative sum with their multiplicities. Representative occupied boxes are then converted back to `N(\sigma,T)` through that disk bound. Thus the theorem's proof architecture is compatible with multiplicity counting rather than merely distinct-zero counting.
+
+If (39) is accepted, split same-interval screen zeros at any fixed radial level `1-A(\log T)^{-2/3}(\log\log T)^{-1/3}` with `A>A_0`. Only `O_A(1)` zeros can lie on the deep side globally, while all remaining same-interval labels are still only `O(\log T)` by (6) and each has an extra factor `\exp(-(A-A_0)S(T)/2)` relative to the zero-free edge. Since
+
+\[
+\log T\,\exp\!\left(-\frac{A-A_0}{2}S(T)\right)=o(1),
+\tag{40}
+\]
+
+the entire same-interval first-harmonic screening capacity is then
+
+\[
+O_A\!\left(
+T^{1/4}
+\exp\!\left[-\left(\frac1{96.1436}+o(1)\right)S(T)\right]
+\right).
+\tag{41}
+\]
+
+Consequently the `\log T` factor in the established threshold (38) would disappear: under the 2025 theorem, same-interval screening is impossible whenever
+
+\[
+\boxed{
+\frac{m}{
+T^{1/4}\exp\!\left(-S(T)/96.1436\right)}
+\longrightarrow\infty.
+}
+\tag{42}
+\]
+
+More structurally, any screen operating near the limiting radial scale would have to draw its large weight from an `O_A(1)` global reservoir of zeros lying within a fixed multiple of the Vinogradov--Korobov edge. That is exactly the kind of count--depth bottleneck sought by the current research mandate.
+
+The evidence tiers must not be conflated. Equations (34)--(38) use Bellotti's peer-reviewed 2024 zero-free theorem and are `LITERATURE+DERIVED`. Equations (39)--(42) depend on arXiv:2508.02041v1 (4 Aug 2025), which is a recent unrefereed preprint; Mathia has audited the theorem statement and the multiplicity-sensitive counting interface, but not independently replayed its full analytic proof. The `O(1)` reservoir refinement is therefore recorded as `RECENT-PREPRINT + LITERATURE+DERIVED + NEEDS-INDEPENDENT-AUDIT`, not promoted to the established baseline.
+
+A bounded prior-art audit around Korobov--Vinogradov edge density, `N(\sigma,T)=O(1)`, local Riemann--von Mangoldt saturation, and Maynard--Pratt bow geometry located Bellotti's 2025 theorem as the first directly relevant near-edge count input. No source located states the screen-capacity deductions (37)--(42); absence of a search hit is not evidence of priority, and no priority claim is made.
+
+The boundary remains the same as for the rest of WI-232: this is a **same-interval** screen obstruction. It does not prevent cancellation by vertically remote zeros or by the distinguished prime-side source term, and it does not by itself exclude a bow with a genuine spacing surplus. What it does change is the local extremal picture: logarithmically many arbitrary screen labels are no longer the sharp radial model near the zero-free edge; published zero-free information already reaches below the quarter scale, and the recent near-edge density theorem, if independently validated, leaves only a finite deep reservoir.
