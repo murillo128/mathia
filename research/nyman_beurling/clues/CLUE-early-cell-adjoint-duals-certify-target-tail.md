@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-early-cell-adjoint-duals-certify-target-tail
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -82,3 +82,17 @@ A positive outcome is the certificate and its error bound, followed by the exact
 ## Evidence boundary
 
 No adjoint lift, target-tail rate for zeta, cheaper projector algorithm, or improved Nyman distance is established here. NB-056 proves the unit-outer calibration only. The annihilator argument is elementary Hilbert duality to be reconstructed by Research Watch; its unresolved content is constructing the dual and the approximation from the actual arithmetic source. An explicit tail rate alone is not a proof that the natural Nyman span is dense. Existing accepted/resolved clues and their dispositions remain unchanged; check current source findings and adjacent review sidecars before relying on them.
+
+## Research disposition
+
+Accepted. `NB-058` identifies the entire late quotient exactly as the closed range of the compressed integer-log shift `V_R=Q U_(log R)|_(A^perp)` and proves
+
+\[
+\mathcal A^\perp\cap\mathcal T_R^\perp
+=
+\mathcal A^\perp\cap\ker U_{\log R}^*.
+\]
+
+Under Paley--Wiener, the right side is precisely the set of actual arithmetic defect vectors supported in `[0,log R]`. Thus any successful `h_R` in this clue must itself be a compact-time defect; the weak adjoint/cell-moment proposal is one possible construction mechanism, not merely a formal annihilation trick. `NB-058` also proves that the collective target gain tends to zero exactly when the canonical defect can be approximated by such finite-time defect vectors, and recovers the `NB-056` cubic tail in the unit-outer control.
+
+The direction remains open because no source-controlled construction or density theorem for these compact-time arithmetic defects is known. The next decisive question is whether the zeta-deflated space `A^perp` contains enough finite Paley--Wiener-support vectors to approximate the canonical defect with a quantitative remainder, or whether arithmetic structure forces those localized sectors to be too small.
