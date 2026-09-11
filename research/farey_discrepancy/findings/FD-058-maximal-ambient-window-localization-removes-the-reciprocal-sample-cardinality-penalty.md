@@ -4,7 +4,7 @@
 
 `FD-057` proves a sharp statement about **pointwise-start cardinality**: if a reciprocal-floor transfer must itself start outside one common exceptional set, then the realizable sample has only `X/R_X` points and a schematic exceptional law `X R_X^{-c+o(1)}` beats that sample by cardinality only for `c>1`.
 
-That threshold is real for that proof paradigm, but it is not the correct threshold for a **maximal** short-interval theorem. The maximal truncation already present in Theorem 1.1(i) of Matomäki--Radziwiłł--Shao--Tao--Teräväinen allows the desired reciprocal-floor interval to sit as a subinterval of a larger nonexceptional ambient interval. A fixed realizable transfer interval of length `asymp R_X` has `asymp R_X` different ambient starts that contain it. Thus maximality restores corridor-scale localization even though the transfer endpoint itself lies in a sparse set.
+That threshold is real for that proof paradigm, but it is not the correct threshold for a **maximal** short-interval theorem. The maximal truncation already present in Theorem 1.1(i) of Matomäki--Radziwiłł--Shao--Tao--Teräväinen allows the desired reciprocal-floor interval to sit as a subinterval of a larger nonexceptional ambient interval. A fixed realizable transfer interval of length `asymp R_X` is contained in a real interval of ambient starts of length `asymp R_X`. Thus maximality restores corridor-scale localization even though the transfer endpoint itself lies in a sparse set.
 
 More precisely, let
 
@@ -52,20 +52,20 @@ h_q:=X-x_q
 Set the ambient length
 
 \[
-H_X:=4R_X.
+H_X:=4R_X
 \]
 
-Every integer start
+and the real containing-start interval
 
 \[
-y\in[X-H_X,x_q]
+J_X:=[X-H_X,x_q].
 \]
 
-produces an ambient interval `(y,y+H_X]` containing the entire desired transfer interval `(x_q,X]`. Since `h_q<= (2+o(1))R_X`, the number of such containing starts is at least
+Every real `y\in J_X` produces an ambient interval `(y,y+H_X]` containing the entire desired transfer interval `(x_q,X]`. Since `h_q<= (2+o(1))R_X`, its Lebesgue measure satisfies
 
 \[
 \boxed{
-H_X-h_q+O(1)
+m(J_X)=H_X-h_q
 \ge (2-o(1))R_X.
 }
 \tag{1}
@@ -80,14 +80,14 @@ Consequently, if a maximal source estimate of the form
 \tag{2}
 \]
 
-holds outside an exceptional set `\mathcal F_X` with
+holds outside a measurable exceptional set `\mathcal F_X` with
 
 \[
-|\mathcal F_X|=o(R_X),
+m(\mathcal F_X)=o(R_X),
 \tag{3}
 \]
 
-then **this one fixed reciprocal-floor transfer is already good**. Indeed (1)--(3) give a nonexceptional containing start `y`, and the consecutive interval `(x_q,X]` is one of the subintervals in (2), so
+then **this one fixed reciprocal-floor transfer is already good**. Indeed (1)--(3) imply that `J_X` cannot be contained in `\mathcal F_X`, so there is a nonexceptional real containing start `y`; the consecutive integer interval `(x_q,X]` is one of the subintervals in (2), hence
 
 \[
 \boxed{
@@ -101,7 +101,7 @@ No counting over the sparse set `\mathscr S_X` from `FD-057` is needed.
 For a schematic power-saving exceptional law
 
 \[
-|\mathcal F_X|
+m(\mathcal F_X)
 \ll X R_X^{-c+o(1)},
 \tag{5}
 \]
@@ -142,7 +142,7 @@ takes the supremum over arithmetic progressions contained in the ambient interva
 \tag{7}
 \]
 
-for every arithmetic progression `P` inside a nonexceptional ambient interval of length `H`, with exceptional measure
+for every arithmetic progression `P` inside a nonexceptional ambient interval of length `H`, outside a measurable set of real starts of Lebesgue measure
 
 \[
 O_{K',\varepsilon}
@@ -150,65 +150,104 @@ O_{K',\varepsilon}
 \tag{8}
 \]
 
-Fix an ambient source window `(y,y+H_X]` with `y\asymp X`, and let `I` be any consecutive integer subinterval of it. From the exact convolution,
+Let `J_X` be the real containing-start interval above and choose
+
+\[
+D=(\log X)^C
+\]
+
+with `C>B+2`. For every `d<=D`, put
+
+\[
+X_d:=\frac{X}{2d},
+\qquad
+H_d:=\frac{H_X}{d}.
+\]
+
+Since `H_X=o(X)`, for all sufficiently large `X` and every `y\in J_X`,
+
+\[
+\frac yd\in[X_d,2X_d].
+\]
+
+Choose a fixed `epsilon>0` below both `Theta-1/3` and `1-Theta`. Uniformly for polylogarithmic `d`, the lengths `H_d` lie in the range of (7), because `H_X=X^{\Theta+o(1)}` and `\log(X/d)\sim\log X`. Applying the theorem at scale `X_d` and length `H_d` gives a measurable exceptional set
+
+\[
+E_d\subset[X_d,2X_d],
+\qquad
+m(E_d)
+\ll_{K',\varepsilon}
+\frac{X/d}{(\log X)^{K'}}.
+\]
+
+Pull it back under the real scaling map by defining
+
+\[
+B_d:=\{y\in J_X:y/d\in E_d\}.
+\]
+
+Lebesgue scaling gives the exact Jacobian factor
+
+\[
+\boxed{
+m(B_d)
+=d\,m\!\left(E_d\cap(J_X/d)\right)
+\le d\,m(E_d)
+\ll_{K',\varepsilon}
+\frac X{(\log X)^{K'}}.
+}
+\tag{9}
+\]
+
+Hence the simultaneous bad set for all small divisors obeys
+
+\[
+\boxed{
+m\!\left(\bigcup_{d\le D}B_d\right)
+\ll
+\frac{DX}{(\log X)^{K'}}.
+}
+\tag{10}
+\]
+
+Now take a real `y\in J_X` outside this union and any consecutive integer subinterval `I\subset(y,y+H_X]`. From the exact convolution,
 
 \[
 \sum_{n\in I}c(n)
 =
 \sum_{d\le 2X}\frac1d
 \sum_{\substack{m:\ dm\in I}}\mu(m).
-\tag{9}
+\tag{11}
 \]
 
-Choose
+For each `d<=D`, the set
 
 \[
-D=(\log X)^C
+P_{d,I}:=\{m\in\mathbb Z:dm\in I\}
 \]
 
-with `C>B+2`. For every `d<=D`, the inner interval in (9) lies inside an ambient interval at scale `X/d` and length `H_X/d+O(1)`. Because `Theta>1/2` and `d` is only polylogarithmic, these lengths lie safely in the range of (7) for one fixed `epsilon>0`, after an inessential fixed-factor dyadic cover.
-
-For each `d`, pull the exceptional set in (8) back under `y -> floor(y/d)`. Every exceptional scaled start has at most `d` integer preimages, while the scaled exceptional set has size
+is itself a consecutive arithmetic progression contained exactly in
 
 \[
-O\!\left(
-\frac{X/d}{(\log X)^{K'}}
-\right).
+(y/d,(y+H_X)/d]\cap\mathbb Z.
 \]
 
-Hence the bad `y` contributed by one `d` are
-
-\[
-O\!\left(
-\frac X{(\log X)^{K'}}
-\right),
-\]
-
-and the union over `d<=D` has size
-
-\[
-O\!\left(
-\frac{DX}{(\log X)^{K'}}
-\right).
-\tag{10}
-\]
-
-Outside this union, the small-divisor contribution to (9) is uniformly, for **every** subinterval `I`,
+Therefore the maximal star norm controls every inner sum in (11) simultaneously for that same real `y`, with no discretization of the exceptional set and no endpoint-rounding argument. The small-divisor contribution is uniformly, for every such `I`,
 
 \[
 \begin{aligned}
 \sum_{d\le D}\frac1d
 \left|
-\sum_{dm\in I}\mu(m)
+\sum_{m\in P_{d,I}}\mu(m)
 \right|
 &\ll
 \sum_{d\le D}
 \frac1d
-\frac{H_X/d+O(1)}{(\log X)^{K'}}\\
+\frac{H_X/d}{(\log X)^{K'}}\\
 &\ll
-\frac{H_X}{(\log X)^{K'}}+O(1).
+\frac{H_X}{(\log X)^{K'}}.
 \end{aligned}
-\tag{11}
+\tag{12}
 \]
 
 For `d>D`, no cancellation is needed. Trivial counting gives
@@ -216,7 +255,7 @@ For `d>D`, no cancellation is needed. Trivial counting gives
 \[
 \begin{aligned}
 \sum_{d>D}\frac1d
-\#\{m:dm\in I\}
+\#P_{d,I}
 &\ll
 H_X\sum_{d>D}\frac1{d^2}
 +
@@ -224,10 +263,9 @@ H_X\sum_{d>D}\frac1{d^2}
 &\ll
 \frac{H_X}{D}+\log X.
 \end{aligned}
-\tag{12}
 \]
 
-Combining (9)--(12), and choosing `K'` larger than `C` by an arbitrary fixed amount, yields the source-level maximal statement: for every fixed `K>0`, outside a set of starts of size
+Combining these bounds and choosing `K'` larger than `C+K` yields the source-level maximal statement: for every fixed `K>0`, outside a measurable set of real starts of Lebesgue measure
 
 \[
 \boxed{
@@ -252,7 +290,7 @@ one has uniformly over all consecutive `I\subset(y,y+H_X]`
 \tag{14}
 \]
 
-after taking `C>B+2` and `K'>B+2`. Thus the exact `c=(n\mapsto1/n)*mu` convolution preserves the maximal character needed by the ambient-window argument, at only polylogarithmic exceptional-set cost.
+after taking `C>B+2` and `K'>B+2` as well. Thus the exact `c=(n\mapsto1/n)*mu` convolution preserves the maximal character needed by the ambient-window argument, at only polylogarithmic exceptional-measure cost.
 
 ## 2. Why the 2026 theorem still does not close the zero-frontier gap
 
@@ -266,7 +304,7 @@ X^{1-\Theta+o(1)}(\log X)^{-K-B}
 \tag{15}
 \]
 
-So the available exceptional budget can still cover the entire containing-start interval in (1). The published theorem therefore does **not** certify a good ambient window around a prescribed zero-frontier spike.
+So the available exceptional-measure budget can still cover the entire real containing-start interval `J_X` from (1). The published theorem therefore does **not** certify a good ambient window around a prescribed zero-frontier spike.
 
 What changes is the target for future quantitative almost-all input. A maximal theorem with an exceptional law of the schematic power form (5), and with enough analytic saving to make the maximal source error `o(A_X)`, would cross the localization barrier as soon as (6) holds. Near the critical line this still demands an exponent approaching one, but for every fixed `Theta>1/2` it is strictly weaker than the `c>1` point-sample requirement from `FD-057`.
 
@@ -274,17 +312,17 @@ This distinction matters because the strongest modern Möbius almost-all stateme
 
 ## 3. Adversarial checks and exact boundary
 
-There is no contradiction with `FD-057`. Its theorem is explicitly a cardinality statement for a common exceptional set of the represented starts themselves. Under that oracle, the sample really has only `X/R_X` points and `c>1` is sharp at the exponent level. `FD-058` changes the admissible use of the analytic input: maximality supplies `asymp R_X` alternative ambient starts for each fixed represented interval.
+There is no contradiction with `FD-057`. Its theorem is explicitly a cardinality statement for a common exceptional set of the represented starts themselves. Under that oracle, the sample really has only `X/R_X` points and `c>1` is sharp at the exponent level. `FD-058` changes the admissible use of the analytic input: maximality supplies a real interval of ambient starts of length `asymp R_X` for each fixed represented interval.
 
-The containment is one-sided and exact. If `y in [X-H_X,x_q]`, then `y<=x_q<X<=y+H_X`, so `(x_q,X]` is a consecutive arithmetic progression inside the ambient interval. This is precisely allowed by the `*`-norm definition in the 2026 theorem; no interpolation between starts or assumption about persistence of badness is used.
+The containment is one-sided and exact. If real `y\in[X-H_X,x_q]`, then `y<=x_q<X<=y+H_X`, so `(x_q,X]` is a consecutive arithmetic progression inside the ambient interval. This is precisely allowed by the `*`-norm definition in the 2026 theorem; no interpolation, discretization, or persistence-of-badness assumption is used.
 
-The convolution transfer does not silently union polynomially many exceptional sets. The large-`d` tail is handled trivially, so only `D=(log X)^C` scaled Möbius problems are needed. Their pulled-back exceptional sets cost only a polylogarithmic factor, absorbable because the literature theorem allows an arbitrary fixed logarithmic exponent. Endpoint rounding changes the scaled ambient intervals by `O(1)` and is absorbed by the maximal estimate and the `O(log X)` tail term.
+The convolution transfer does not silently union polynomially many exceptional sets. The large-`d` tail is handled trivially, so only `D=(log X)^C` scaled Möbius problems are needed. Their exceptional sets are pulled back under real scaling, each paying exactly the Jacobian factor `d`; after cancellation with the scale `X/d` in the theorem, every `B_d` costs `O(X/(log X)^{K'})` in Lebesgue measure. The simultaneous union therefore costs only the polylogarithmic factor `D`, absorbable because the literature theorem allows an arbitrary fixed logarithmic exponent.
 
 The fixed condition `Theta<1` is used only to keep `H_X=X^(Theta+o(1))` within a genuine short-interval range with one fixed margin. The near-critical regime `1/2<Theta<=0.55` targeted by `FD-055`--`FD-057` satisfies this automatically. The finding does not claim a power-saving exceptional estimate that is not presently known, nor does it prove positive nonsquarefree occupation.
 
 ## 4. Prior-art boundary and consequence for the live route
 
-The load-bearing external result remains Theorem 1.1(i) of Kaisa Matomäki, Maksym Radziwiłł, Xuancheng Shao, Terence Tao and Joni Teräväinen, *Higher uniformity of arithmetic functions in short intervals II. Almost all intervals*, Inventiones Mathematicae **244** (2026), 967--1091, DOI `10.1007/s00222-026-01408-6`, already anchored in `SOURCES.md`. Its maximal arithmetic-progression norm, interval range, and logarithmic exceptional estimate are used exactly as published. No novelty is claimed for Dirichlet convolution, divisor splitting, or maximal truncation themselves.
+The load-bearing external result remains Theorem 1.1(i) of Kaisa Matomäki, Maksym Radziwiłł, Xuancheng Shao, Terence Tao and Joni Teräväinen, *Higher uniformity of arithmetic functions in short intervals II. Almost all intervals*, Inventiones Mathematicae **244** (2026), 967--1091, DOI `10.1007/s00222-026-01408-6`, already anchored in `SOURCES.md`. Its maximal arithmetic-progression norm, interval range, and logarithmic exceptional-measure estimate are used exactly as published. No novelty is claimed for Dirichlet convolution, divisor splitting, real-variable pullback, or maximal truncation themselves.
 
 A targeted prior-art search around maximal Möbius short intervals, the Dirichlet series `zeta(s+1)/zeta(s)`, Farey discrepancy, and reciprocal/floor-selected starts did not locate the present ambient-window localization argument or its application to this adaptive Jordan transfer. No new external theorem is load-bearing, so `SOURCES.md` remains unchanged.
 

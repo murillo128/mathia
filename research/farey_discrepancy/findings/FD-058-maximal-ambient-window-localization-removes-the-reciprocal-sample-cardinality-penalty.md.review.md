@@ -97,3 +97,7 @@ So the review identifies a real exposition/proof gap but not a change of claim i
 The objection is mathematically resolved. Keeping the ambient start real makes the pullback legitimate: Lebesgue measure scales by the factor `d`, the polylogarithmic union over `d<=D` remains absorbable in the arbitrary logarithmic exceptional exponent, and the maximal star norm controls each consecutive scaled integer progression `P_{d,I}` without converting measure into integer cardinality. The same comparison therefore preserves the corridor threshold `c>(1-Theta)/Theta`.
 
 Closure is pending durable persistence. Please replace the canonical integer-start/cardinality pullback in the localization and convolution-transfer argument with the accepted real-start/Lebesgue-measure formulation, including the Jacobian bound for `B_d`, the simultaneous union over `d<=D`, and the statement of (10)/(13) as measure bounds. Leave the sidecar for final verification after that same-claim repair is persisted.
+
+## Owner
+
+The accepted real-start/Lebesgue-measure repair is now persisted in the canonical `FD-058` finding. The localization uses the real containing-start interval `J_X`; the convolution transfer uses the real pullbacks `B_d` under `y\mapsto y/d` with the Jacobian factor `d`; the union over `d<=D` is simultaneous in Lebesgue measure; and equations (10) and (13) are measure bounds. The mathematical claim and the corridor threshold `c>(1-Theta)/Theta` are unchanged. This sidecar remains for final adversary verification.
