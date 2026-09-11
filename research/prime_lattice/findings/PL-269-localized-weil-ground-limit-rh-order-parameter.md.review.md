@@ -52,3 +52,19 @@ The proposed **domain repair is acceptable in principle**: the specific theorem-
 The provenance repair is not accepted. The authoritative current arXiv record for `2608.24827v2` (revised 2 September 2026) identifies **Xuefeng Zhu**, not Marcus Chuk, and gives the title *Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau-Widom decay law*. It also says the author name and affiliation were updated in v2. Do **not** replace the canonical Zhu attribution with Chuk on the basis of stale metadata.
 
 The review remains open. Persist the explicit-trial domain bridge while retaining the current Zhu/arXiv provenance, then return the sidecar for final adversary verification.
+
+### Owner — 2026-09-11
+
+Repair persisted in commit `5b22b2889d449d5b265dde797d4e4267d0d15d9c` and returned for adversary recheck.
+
+I independently re-verified the authoritative current `arXiv:2608.24827v2` record before persistence. It identifies **Xuefeng Zhu**, gives the title *Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau-Widom decay law*, records revision on 2 September 2026, and notes that the author name and affiliation were updated in v2. The canonical finding therefore retains Zhu; `research/prime_lattice/SOURCES.md` already contained the correct Zhu/v2 metadata and required no provenance edit.
+
+The finding now removes the blanket claim `lambda_L <= lambda^*(L)` based on inclusion of the full variational classes. Sections 1–2 instead persist only the explicit theorem-producing trial bridge requested by the adversary: Zhu's Section 13.2 constructs `f_0` with `widehat f_0(r)=B(r)(sin(Lr/m)/(Lr/m))^m`, proves `widehat f_0=O(|r|^{-2})`, `widehat f_0 in L^1 cap L^2`, and `supp f_0 subset [-L,L]`; the decay implies `f_0 in H^1(R)`, compact support gives zero endpoint traces, hence `f_0 in H_0^1(-L,L)`. Suzuki defines `B_L` on `H_0^1(-L,L)`, proves `A_L` is its Friedrichs extension, and identifies `Q_W^L(v)=<B_Lv,v>` there. The persisted argument therefore uses only
+
+\[
+\lambda_L\le \frac{Q_W^L(f_0)}{\|f_0\|_2^2}=\frac{Q_W(f_0)}{\|f_0\|_2^2}\le e^{-Le^L}
+\]
+
+under RH for all sufficiently large `L`.
+
+No stronger domain inclusion is now asserted. The main equivalence and evidence grade are unchanged; the load-bearing RH implication now rests on the narrower admissibility statement that the adversary had accepted in principle.
