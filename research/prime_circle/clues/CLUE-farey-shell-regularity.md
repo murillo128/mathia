@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-farey-shell-regularity
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: prime_circle
 based_on:
@@ -30,3 +30,12 @@ Write the PC-251 normalized collision matching as an explicit sum over consecuti
 ## Evidence boundary
 
 FD-036 is evidence only that shell Lipschitz rigidity is sufficient in the Farey-discrepancy model. It does not imply the PC-251 collision kernel has that regularity, nor that the two normalized defects are equivalent. PC-251 supplies the exact collision representation but no pointwise/cofinal regularity theorem. This clue proposes the missing comparison and remains below finding/intuition status.
+
+## Research disposition
+
+Outcome: refuted
+
+Resolved by:
+- [[research/prime_circle/findings/PC-261-prime-triples-realize-zero-and-macroscopic-defects-at-one-resonant-limit.md]]
+
+PC-261 supplies an infinite family of genuine comparable-scale prime triples with `q-r=2p`, `r/p -> 2`, and therefore `(p/q,r/q) -> (1/4,1/2)`, for which the native normalized PC-251 defect vanishes identically. This is stronger than the counterexample requested by the decisive test: no scale-uniform adjacent-shell regularity argument can imply the proposed cofinal noncollapse lower bound across the admissible comparable-scale regime. Restricted nonresonant shell estimates may still exist, but they cannot rescue the universal transfer route posed by this clue. The required prime-family existence and its prior-art boundary are already literature-audited in PC-261; no additional novelty claim is made here.
