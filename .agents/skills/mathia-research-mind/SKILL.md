@@ -1,330 +1,181 @@
 ---
 name: mathia-research-mind
-description: Synthesize the current mutable Mathia mind from persisted research evidence, including Git-visible finding withdrawals and accepted adversarial-review outcomes, with strict mind-only ownership and direct-main publication gates.
+description: Maintain concrete, source-grounded mathematical key points for agent reuse, reconciling finding withdrawals and accepted reviews with strict mind-only ownership and direct-main publication gates.
 ---
 
 # Mathia Research Mind
 
 ## Responsibility
 
-Use this skill for the recurring or scheduled **Mathia Research Mind** synthesis pass.
+Use this skill for the recurring or scheduled **Mathia Research Mind** synthesis pass. Read `.agents/skills/mathia-research-representation/SKILL.md` before substantive mathematical work.
 
-The mind owns **durable mathematical synthesis**, not primary research evidence. Its job is to read already-persisted research findings and maintain the best current structural model of the program: principles, conjectural mechanisms, hidden equivalences, impossibility principles, reusable heuristics, cross-result deductions, and mathematically meaningful research lines.
+The mind owns **reusable mathematical key points**, not primary research evidence or a narrative about the program. Retain a specific mechanism, obstruction, reduction, simplification, counterexample, or connection that changes what a future researcher can infer or test. Generality is useful only when the objects, hypotheses and mathematical relation supporting it remain recoverable.
 
-The mind is deliberately a **mutable current snapshot**. It may revise, merge, weaken, refute, or delete its own intuitions when the underlying evidence changes. Git preserves the history; `mind/**` should represent what Mathia should believe and reason from now.
+The mind is a **mutable current snapshot**. Revise, merge, weaken, split or delete intuitions when evidence or their mathematical usefulness changes. Git preserves history; `mind/**` should contain what is worth loading into a fresh agent context now. There is no quota of intuitions, no minimum output per pass, and no requirement that every finding or line produce a note.
 
-Research-watch tasks own findings and source evidence. The adversarial process owns review sidecars under the shared review protocol. The graph curator owns derived graph views. The prior-art materializer owns `research/prior_art/`. This skill must not compete with those roles.
+Research Watch owns findings and source evidence. The adversarial process owns review sidecars. Graph Curator owns derived graph views. The prior-art materializer owns `research/prior_art/`. Mind must not compete with these roles.
 
-The mind may derive second-order or third-order conceptual consequences from persisted evidence, but it must not fabricate missing premises, silently strengthen a theorem, or treat a plausible mathematical connection as established evidence.
+A conjectural connection or second-order deduction is allowed, but must not fabricate premises, strengthen a theorem silently, or turn analogy into established evidence. An intuition need not contain a complete proof, experiment plan or Lean target. It is not another finding.
 
-When adversarial review is present, read `.agents/skills/mathia-research-review/SKILL.md` **only to interpret review-event semantics**. The Mind does not participate in the review dialogue and must not create, edit, or delete `.review.md` files.
+When review is present, read `.agents/skills/mathia-research-review/SKILL.md` only to interpret review-event semantics. Mind does not participate in review dialogue and must not create, edit or delete `.review.md` files.
 
 ## Current tree and Git change stream
 
-The **current repository tree is authoritative for current knowledge**. Git is the change stream that tells the Mind what changed since it last reconciled the snapshot.
+The **current repository tree is authoritative for current knowledge**. Git identifies changes since the last reconciliation.
 
-At the start of every run:
+At the start of every pass:
 
 1. synchronize the current default branch;
-2. locate the most recent reachable commit with prefix `research(mind):` when one exists;
-3. inspect the Git delta from that revision to current `HEAD` for relevant research paths, including **added, modified, and deleted** files;
-4. use the delta to prioritize reconciliation, but still consume the current mind/evidence state needed for a coherent full synthesis.
+2. locate the most recent reachable `research(mind):` commit, when one exists;
+3. inspect the delta to current `HEAD` for added, modified and deleted findings, review sidecars and affected mind files;
+4. prioritize that delta, while reading enough current evidence for coherent synthesis.
 
-If no previous `research(mind):` commit exists, reconstruct from the current tree without inventing a synthetic cursor.
+Without a previous Mind commit, reconstruct from the current tree; do not invent a cursor. A no-change pass needs no commit. Reprocessing the same events must be idempotent rather than create churn to advance a cursor.
 
-If a prior run processed a delta but produced no mind change and therefore no commit, a later run may see the same events again. That is acceptable: reprocessing must be idempotent and must not create churn merely to advance a cursor.
-
-Relevant change events include:
-
-```text
-A  research/<line>/findings/<finding>.md
-M  research/<line>/findings/<finding>.md
-D  research/<line>/findings/<finding>.md
-A  research/<line>/findings/<finding>.review.md
-M  research/<line>/findings/<finding>.review.md
-D  research/<line>/findings/<finding>.review.md
-```
-
-Review sidecars are workflow evidence, not mathematical evidence. Their only role here is to help interpret whether a finding withdrawal came from the accepted review protocol.
+Review sidecars are workflow evidence, not mathematical evidence. Use them only to interpret challenges and accepted withdrawals.
 
 ## Review outcome semantics
 
 Follow `mathia-research-review` exactly:
 
-- an **open** `.review.md` means the finding is challenged but the review has not converged;
-- deleting only `.review.md` while the finding remains means the adversary accepted the owner's defense and the finding remains current evidence;
-- deleting the finding and its `.review.md` together means the owner conceded the material objection and **withdrew the claim**;
-- a corrected/narrower replacement, when valuable, appears as a **new finding with a new stable ID** and must be evaluated as new evidence.
+- an open `.review.md` means the finding is challenged and review has not converged;
+- deletion of only the review while the finding survives means the adversary accepted the owner's defense;
+- deletion of the finding and its review together means the owner conceded the objection and withdrew the claim;
+- a corrected or narrower replacement is a new finding with a new stable ID and must be evaluated as new evidence.
 
-Do **not** mutate the mind merely because an objection is open. An unresolved adversarial comment is not itself an accepted mathematical result. It may prevent an unsupported *upgrade* during the current pass, but deletion or weakening of existing mind knowledge requires a change in the current evidence, a converged review outcome, or another persisted mathematical reason.
+An open objection is not an accepted mathematical result. It can prevent an unsupported upgrade, but weakening existing knowledge requires changed current evidence, a converged outcome or another persisted mathematical reason.
 
-### Deleted finding rule
+A deleted canonical finding is no longer current evidence. Treat its deletion as a high-priority reconciliation signal. Use history only to identify its claim and dependents; never cite it as positive current support. Inspect surviving evidence, revise or remove affected local intuitions and questions, then reconcile global dependents. Do not leave tombstone intuitions; Git already preserves history.
 
-A deleted canonical finding is no longer current evidence, even though Git can recover its historical contents.
-
-Treat every `D findings/<finding>.md` event as a **high-priority invalidation/reconciliation signal**:
-
-1. use history only to identify what the deleted finding claimed and which mind notes depended on it;
-2. never continue citing the deleted file as positive current evidence;
-3. inspect current surviving findings for independent support;
-4. revise, weaken, split, redirect, or delete affected local intuitions accordingly;
-5. propagate the consequences into local `RESEARCH_LINES.md`;
-6. then re-evaluate any global intuition or global research line that depended directly or transitively on the withdrawn claim.
-
-Do not leave tombstone intuitions merely to record that a belief used to exist. Git already records that history.
-
-### Deleted review rule
-
-A `D *.review.md` event **without deletion of its target finding** is not an invalidation signal. It means the dispute converged in favor of the claim under the protocol. The Mind should simply reason from the surviving current finding.
+Deleting only a review is not an invalidation signal. Reason from the surviving finding.
 
 ## Discover research lines dynamically
 
-Do not hard-code active research-line names.
+Inspect the direct children of `research/`; do not hard-code line names. A current local line contains canonical evidence under `research/<line>/findings/`. Exclude repository roots `research/prior_art/`, `research/graph/`, `research/mind/` and `research/clues/`.
 
-At the start of every run, inspect the direct children of `research/`.
+Include a line for reconciliation when the delta deletes a finding from it or it retains mind content potentially dependent on withdrawn evidence. Deleting a line's final finding must not hide its stale mind. Remove obsolete mind state rather than preserve empty directories for symmetry.
 
-A directory `research/<line>/` is a current local research line when it contains canonical durable research evidence under:
+Process lines deterministically, for example lexicographically; execution order is not scientific priority.
 
-```text
-research/<line>/findings/
-```
+## Read-only evidence
 
-Always exclude these repository-level roots:
-
-```text
-research/prior_art/
-research/graph/
-research/mind/
-research/clues/
-```
-
-Also include a line **for reconciliation only** when either:
-
-- the Git delta contains a deleted finding from that line; or
-- the line still has `mind/**` content that may depend on evidence deleted in the delta.
-
-This prevents the important edge case where deleting the final finding of a line would otherwise make the line disappear from discovery before its stale mind could be cleaned up.
-
-A reconciliation-only line may cease to be a current research line after its obsolete mind state has been removed. Do not preserve empty mind directories merely for symmetry.
-
-Process lines in a deterministic order, for example lexicographic path order. Do not infer scientific priority from execution order.
-
-## Read-only evidence for each local line
-
-For each discovered or reconciliation-only line, read only the material needed for coherent synthesis:
+For each affected line, load only what coherent synthesis requires:
 
 ```text
 research/<line>/README.md
 research/<line>/findings/**
 research/<line>/SOURCES.md
 research/<line>/LEAN_CANDIDATES.md
-research/<line>/mind/**            # current local snapshot to revise
+research/<line>/mind/**
 ```
 
-The individual current files under `findings/**` are canonical research evidence. Exclude `*.review.md` from the evidence set.
+Current finding files are canonical evidence; exclude `*.review.md` from that evidence set. Inspect the actual source claim and its assumptions when rewriting an intuition, not just its title or the existing summary. Read exact linked artifacts only when essential to the finding's claim.
 
-Do **not** use the line's `graph/**` directory as mathematical evidence. Graph content is derived presentation state.
+Do not use `graph/**` as mathematical evidence. Do not read `research/prior_art/**` for this pass or preload experiments, corpora, OpenAlex artifacts or unrelated data. Inherit prior-art status only when already persisted in findings.
 
-Do **not** read `research/prior_art/**` as an input to this skill. Prior-art and novelty statements may be inherited from findings that already persisted them, but this mind pass does not independently reconcile against the canonical prior-art projection.
+This is synthesis, not literature acquisition. Do not browse or conduct a new novelty search. If an external theorem or premise is inadequately persisted, preserve only the weaker supported statement or omit it and report the exact gap. Evidence acquisition belongs to the relevant research role.
 
-Do not use `experiments/**`, raw corpora, OpenAlex artifacts, or unrelated repository data merely to enlarge context. If a current finding points to a specific repository artifact essential to its exact claim, inspect only that exact dependency when necessary.
+## Local and global output
 
-## External research boundary
-
-The recurring mind pass is synthesis, not literature acquisition or novelty search.
-
-Do not browse the web or run a new literature search to justify an intuition. Novelty/prior-art status should come from persisted current research evidence.
-
-If a candidate intuition depends on an external theorem, novelty claim, or mathematical premise that is not adequately persisted, keep the intuition at the weaker supported level or omit it and report the missing evidence. Leave evidence acquisition to the appropriate research watch or prior-art process.
-
-## Local mind output
-
-Each current research line may own:
+Local output belongs to:
 
 ```text
-research/<line>/mind/
-├── RESEARCH_LINES.md
-└── intuition/
-    └── MI-xxx-<slug>.md
+research/<line>/mind/RESEARCH_LINES.md
+research/<line>/mind/intuition/MI-xxx-<slug>.md
 ```
 
-Create these paths only when there is substantive synthesis to persist. Do not create empty placeholders merely because a research line exists.
-
-Local minds describe what the **current surviving findings** of that line imply. Cross-line principles belong in the global mind instead of being duplicated into every local line.
-
-## Global mind output
-
-The program-level mind lives at:
+Global output belongs to:
 
 ```text
-research/mind/
-├── RESEARCH_LINES.md
-└── intuition/
-    └── MI-xxx-<slug>.md
+research/mind/RESEARCH_LINES.md
+research/mind/intuition/MI-xxx-<slug>.md
 ```
 
-The global mind is not a summary or concatenation of local minds. It should contain only genuinely cross-line principles, bridges, incompatibilities, common information-loss mechanisms, common preserved invariants, or constraints on the wider Mathia/Riemann program.
+Create files only for substantive content. Local notes preserve the useful mathematics of that line; global notes must add a concrete cross-line relation, transfer or obstruction, not concatenate local summaries. Similar vocabulary is not a bridge. Identify the actual correspondence and its hypotheses; mark analogies as analogies. Do not require each local insight to generalize across lines.
 
-Build the global synthesis **after** all affected local minds have been reconciled during the current run. The refreshed local minds and their current underlying findings are the inputs to the global pass.
+Reconcile affected local minds before global synthesis. Build global claims from refreshed local notes and their current underlying findings, not stale global narratives.
 
 ## What belongs in an intuition
 
-The purpose of an `MI-*` note is a durable mathematical idea useful to future reasoning.
+An `MI-*` note is internal mathematical working memory. Preserve the **point that matters**: what object or construction is involved, what mechanism acts under which conditions, and what follows or becomes worth testing. These are meaning requirements, not mandatory fields or headings.
 
-Prefer a compact set of coherent intuitions. Revise, merge, strengthen, weaken, split, refute, or remove existing intuitions instead of appending one note per run or one note per finding.
+Concrete content can be a decisive formula with its domain, a counterexample and the exact class it excludes, a sufficient condition weaker than the one previously pursued, a suspected cancellation term, or an explicit mapping between constructions. Keep parameter dependencies and the distinction between necessary and sufficient conditions. Do not invent a numerical rate, constant or theorem merely to make a note look precise.
 
-A durable intuition should include, where mathematically relevant:
+Reject generic methodological advice and elaborate restatements of the goal. Phrases such as "preserve structure", "need arithmetic coherence", "control the critical limit", or "prove the required estimate" are not standalone intuitions. State which term, map, norm, quantifier, coupling, factor or loss creates the issue and what has been learned beyond knowing that the problem is unsolved. If replacing the mathematical nouns leaves a note applicable to almost any problem, reconstruct it from sources or remove it.
 
-1. **Core intuition** — the structural idea in clear mathematical language.
-2. **Strongest justified claim** — theorem-like principle, conjectural mechanism, or impossibility statement at the actual evidence level.
-3. **Synthesis of evidence** — current findings and relationships that support it.
-4. **Counterevidence / boundary cases** — where it fails, what remains universal, conditional, or unresolved.
-5. **Epistemic status** — exact, asymptotic, heuristic, speculative, etc.
-6. **Novelty/prior-art status** — only as already supported by persisted evidence.
-7. **Falsification criterion** — a calculation, theorem, counterexample, or control that would materially refute or narrow it.
-8. **Lean-formalizable core** — when there is a natural finite formal statement.
-9. **Evidence level** — use the established scale:
+Examples of the distinction:
 
-```text
-speculative
-plausible
-supported
-proved
-refuted
-```
+- Instead of "separate geometric from arithmetic effects", retain the exact prime-to-integer control and which threshold it preserves; that threshold alone cannot distinguish the two inputs.
+- Instead of "local bounds do not ensure global coherence", retain the specific off-diagonal sum or family-dependent norm that the available blockwise bound does not control.
+- Instead of "exact recovery is not stable", retain the inverse or destination map and the stated loss, topology or parameter range in which transport fails.
 
-Never silently upgrade evidence. A synthesis can be valuable while remaining `supported` or `plausible`.
+Do not generalize a counterexample beyond the class it actually excludes. Conversely, a broader exclusion or a new connection is substantive only when the enlargement or correspondence is explicit.
 
-Do not keep a deleted finding in `Synthesis of evidence`, even as a historical citation. If the historical path matters to understanding a present idea, the surviving/current evidence must still independently justify the idea.
+### Representation and evidence
 
-Do not put TODOs, priorities, owners, schedules, implementation tasks, run dates, or a "next move" section inside an intuition note.
+The body has **no prescribed language, format, section order or length**. Equations, terse points, pseudocode, mixed languages, diagrams, derivations and task-local notation are all allowed. No human-facing introduction, translation, prose duplicate, nine-part template or named "core intuition" section is required. Use enough definitions for a fresh agent to recover the content; compression must not hide a premise.
+
+Preserve existing stable IDs and paths when the same idea survives, and retain machine-required metadata and valid source links. Do not recycle a deleted ID for a different idea. Link the current findings supporting the key claims and distinguish what is proved there from a conditional implication, plausible connection or speculation here. Sources are anchors, not a bibliography of everything inspected.
+
+Use the established evidence scale when a level is recorded: `speculative`, `plausible`, `supported`, `proved`, `refuted`. Never upgrade evidence through rewriting. A synthesis supported by proved components is not automatically a proved global theorem. Do not repeat novelty, evidence level or caveats under several headings when one precise qualification suffices.
+
+A falsification test is useful only if it can actually refute or narrow the stated conjecture or transfer. A check that merely confirms a warning is not its falsifier. Do not force a test onto an exact explanatory key point. Lean cores and prior-art notes are optional and belong only when they add mathematical information already supported by sources.
+
+No TODOs, owners, priorities, schedules, execution dates, status diaries or task lists belong inside intuitions. Mathematical implications and discriminating tests are welcome; implementation planning belongs elsewhere.
+
+### Reconstructing existing notes
+
+During reconciliation or an explicitly requested corpus cleanup, read each affected note against its current sources. Extract the actual mechanism and boundaries; do not merely shorten the old prose or preserve its headings. Keep already-useful representations. Recover a missing condition from the source rather than inventing one.
+
+Merge genuine duplicates, split only independently reusable ideas, and remove unsupported or purely generic notes. There is no target note count or compression ratio. Preserve a valid idea's ID/path when possible. Update dependent mind questions and links in the same publication. Search for incoming references before deleting or renaming; references outside Mind ownership are a handoff to their owner, not permission to edit those files during a scheduled pass. Do not leave misleading cross-line references after narrowing a claim.
 
 ## What belongs in RESEARCH_LINES.md
 
-Each local mind and the global mind maintain one compact `RESEARCH_LINES.md`.
+Each local/global mind may maintain one compact `RESEARCH_LINES.md` containing durable **mathematical questions**, not project status. Tie each retained question to current intuitions and name the decisive quantity, hypothesis, calculation, counterexample or matched control when known.
 
-A research line is a durable **mathematical question or discriminating mechanism**, not project status. It should state:
+Do not inflate "obtain the missing uniformity/cancellation" into a research line without specifying the object, family and relevant condition. A genuinely unknown mechanism may remain open; say exactly what is known and what is not rather than adding invented precision. Questions can be expressed in any recoverable representation and need no fixed template.
 
-- the mathematical question or candidate bridge;
-- links to the current intuition(s) that motivate it;
-- the decisive calculation, theorem, counterexample, matched control, or falsification test when known.
-
-Prefer revising, merging, redirecting, or removing research lines over accumulating them indefinitely.
-
-Do not include dates, owners, priorities, issue/task status, schedules, implementation plans, completion checklists, or daily/weekly history.
-
-A research line should be removed when withdrawal of its supporting evidence makes its mathematical premise obsolete and no current independent support remains. Git history preserves chronology.
+Revise, merge or remove questions as evidence changes. Remove a question whose premise lost all current support. Do not retain dates, owners, priorities, issue/task status, schedules, implementation plans, checklists or history.
 
 ## Synthesis discipline
 
-Actively look for nontrivial consequences across multiple current findings rather than merely restating them.
+Seek nontrivial consequences, not one new slogan per finding. Valuable synthesis includes an explicit invariant correspondence, a demonstrated larger exclusion class, an identity showing an observable is only a coordinate change, a weaker sufficient condition, or a specific information-loss calculation.
 
-High-value synthesis includes patterns such as:
+For a cross-line bridge, identify the objects on both sides and the relation that survives their different assumptions. Several notes requesting "coherence" or "conditioning" do not establish a shared mathematical obstruction. Where the comparison remains suggestive, mark it as a candidate analogy and state the missing identification.
 
-- several independent negative results implying one broader impossibility principle;
-- two constructions revealing the same invariant in different representations;
-- an exact identity proving that an apparently new observable is only a coordinate change;
-- a local-versus-global principle explaining repeated spectral failures;
-- a repeated quotient/telescoping mechanism showing where information is lost;
-- a mechanism showing which ordered or relational information survives localization, pinching, duality, lifting, or spectral compression;
-- a bridge between two or more independently discovered research lines;
-- apparently different branches imposing the same necessary condition on any credible RH mechanism.
-
-Do not promote an intuition merely because several files use similar language. The relationship must be mathematically supported by current persisted claims.
+Source-backed retrospective explanation is not evidence that an intuition improves downstream research. Do not report note count, length, connectivity, citations or linguistic novelty as discovery or measured utility.
 
 ## Adversarial synthesis gate
 
-Before creating or strengthening an intuition or research line, try to kill it using the current repository evidence.
+Before creating or strengthening a note or question, challenge it against current evidence. Check conditional or `NEEDS-AUDIT` premises, disappeared findings, later corrections, universal rather than prime-specific effects, information lost by transforms/quotients, analogy mistaken for equivalence, and differences in constants, normalizations, topology, domains, convergence, quantifiers or operator categories.
 
-Check, when applicable:
+Try the concrete counterexample or competing mechanism allowed by the sources. Check that removing generic advice leaves a mathematical point and that the claimed new content is not already present under another name. Keep a useful existing note unchanged when no substantive improvement exists.
 
-- whether one supporting finding is conditional or `NEEDS-AUDIT`;
-- whether a supporting finding has disappeared from the current tree;
-- whether a later current finding weakens, corrects, supersedes, or refutes an earlier surviving one;
-- whether the apparent mechanism is universal rather than prime-specific;
-- whether a transform, determinant, trace, spectrum, or quotient loses the claimed information;
-- whether a relationship is only analogy rather than an established bridge;
-- whether constants, normalizations, topology, domains, convergence hypotheses, or operator categories differ materially;
-- whether a supposed cross-line equivalence is only a shared classical coordinate system.
-
-Important negative findings and accepted withdrawals should prune or constrain the mind. Do not preserve an attractive intuition after its only supporting mechanism has been decisively invalidated or withdrawn.
+Negative results and accepted withdrawals must constrain the snapshot. Never retain an attractive claim after its sole mechanism has been withdrawn or invalidated.
 
 ## Missing-information rule
 
-Do not fill gaps by invention.
-
-If a candidate synthesis requires a premise that cannot be recovered from the current persisted evidence:
-
-1. do not strengthen or create the affected intuition as if the premise were established;
-2. preserve any weaker statement that is genuinely supported;
-3. report the exact missing evidence and relevant paths when it materially blocks synthesis.
-
-Continue unrelated local or global synthesis only when doing so cannot hide the ambiguity or produce an internally inconsistent mind.
+Do not fill gaps by invention. If a required premise is not recoverable from current persisted evidence, do not create or strengthen the claim as established. Preserve a genuinely supported weaker point and report the exact missing evidence and paths when it blocks synthesis. Continue unrelated work only when it cannot hide the ambiguity or make the snapshot inconsistent.
 
 ## Execution cycle
 
-### 1. Synchronize and inspect the change stream
-
-Start from the current default branch and a coherent repository revision. Determine the relevant `A/M/D` delta from the previous `research(mind):` commit when available.
-
-Process **deletions first**, because they can invalidate already-materialized mind knowledge. Then process modified/new evidence. Open reviews are advisory workflow state, not accepted evidence changes.
-
-If the default branch advances materially while the run is synthesizing, refresh affected inputs before publishing.
-
-### 2. Discover current and reconciliation-only lines
-
-Inspect `research/` and apply the structural and deletion-aware discovery rules. Do not rely on a task prompt listing active branches.
-
-### 3. Reconcile each local mind
-
-For each affected line, in deterministic order:
-
-1. identify deleted findings and current findings from the delta/tree;
-2. inspect current local mind if present;
-3. remove or rewrite dependencies on withdrawn evidence;
-4. resynthesize from surviving current evidence;
-5. refresh `RESEARCH_LINES.md` from the resulting intuition set;
-6. remove obsolete mind files rather than leaving tombstones;
-7. avoid churn when no substantive mathematical synthesis changed.
-
-### 4. Refresh the global mind
-
-After local reconciliation:
-
-1. inspect refreshed local minds and current persisted evidence needed to audit cross-line claims;
-2. identify genuinely program-level principles or bridges;
-3. revise `research/mind/intuition/**`;
-4. refresh `research/mind/RESEARCH_LINES.md`;
-5. remove or weaken global synthesis whose local/current support disappeared;
-6. do not duplicate local material merely to make the global mind look complete.
-
-### 5. Final adversarial and stale-reference review
-
-Before publication verify:
-
-- every substantive statement is grounded in **current** persisted research evidence;
-- no deleted finding remains cited as positive support;
-- no open review was mistaken for a converged mathematical result;
-- no finding was silently upgraded;
-- no prior-art statement was invented or refreshed from external research;
-- refuted/superseded/withdrawn evidence does not remain as positive support;
-- local intuitions remain local and global intuitions are genuinely cross-line;
-- research-line files contain mathematical questions, not project management;
-- no chronology/status diary or tombstone note was introduced;
-- the diff is entirely inside allowed mind paths.
-
-If unsupported synthesis survives, weaken or remove it before commit.
+1. **Synchronize.** Start from a coherent default-branch revision and inspect the delta from the previous Mind commit. Process deletions before modified/new evidence. Open reviews are advisory workflow state.
+2. **Discover.** Apply structural, deletion-aware line discovery; do not rely on a task's static line list.
+3. **Reconcile locally.** Read affected current notes and exact sources, remove withdrawn dependencies, reconstruct useful key points, and refresh their mathematical questions. Avoid churn and empty placeholders.
+4. **Reconcile globally.** Audit the actual cross-line relation against refreshed local notes and evidence. Remove or narrow unsupported connections; do not duplicate local content for completeness.
+5. **Review.** Check current support, evidence levels, quantifiers, valid references, useful concrete content, nonduplication and ownership. Verify that no deleted/refuted finding is positive support and no unresolved review is an accepted result.
+6. **Refresh before publishing.** If main advanced materially, refresh affected inputs and repeat affected gates. A no-change pass ends without a commit.
 
 ## Ownership and hard path gate
 
-This skill may write only to:
+This skill may write only:
 
 ```text
 research/mind/**
 research/<discovered-or-reconciliation-line>/mind/**
 ```
 
-It may **read** Git history and review sidecars to interpret events, but it must not modify:
+It may read Git history and review sidecars to interpret events, but must not modify:
 
 ```text
 research/prior_art/**
@@ -339,51 +190,26 @@ docs/**
 code/tests/prompts outside mind ownership
 ```
 
-Do not perform "minimal index/link updates" outside `mind/**`. The graph curator can discover and link mind output independently.
-
-If the required correction belongs in a finding, review, prior-art note, graph, source list, code artifact, or experiment, leave it to the owning process.
+Do not perform "minimal index/link updates" outside `mind/**`. Graph Curator can discover and link mind output independently. Corrections to findings, reviews, prior art, graphs, sources, code and experiments belong to their owning processes. This skill does not authorize editing itself or other skills during scheduled synthesis.
 
 ## Publication policy
 
-The scheduled Mathia Research Mind is the owner of mind synthesis and may publish substantive mind-only changes **directly to the repository default branch**.
-
-Commit only when at least one mathematical intuition or mathematical research line was materially added, strengthened, weakened, merged, split, redirected, refuted, or removed — including changes required because a reviewed finding was withdrawn.
-
-Do not commit merely to record that a delta was processed.
+The scheduled Mathia Research Mind owns mind synthesis and may publish substantive mind-only changes **directly to the default branch**. Commit only when a mathematical key point or question materially changes, including removal of generic/unsupported synthesis or reconciliation of a withdrawn source. Do not commit merely to record processing, impose a preferred language/template, or reformat an already-useful note.
 
 Before every commit:
 
 1. inspect the complete diff;
-2. verify every changed path passes the dynamic mind ownership gate;
-3. verify no `prior_art/`, `graph/`, finding, review sidecar, code, experiment, or unrelated file changed;
-4. verify no current mind note depends solely on a deleted finding;
-5. verify the source revision is coherent and not stale against newly landed research evidence/review resolutions;
-6. run the final adversarial review;
-7. remove unrelated formatting churn;
-8. use the commit prefix:
+2. verify the dynamic Mind path gate and exclude all unrelated changes;
+3. verify no note relies solely on deleted or withdrawn evidence;
+4. check coherence against newly landed findings and accepted review outcomes;
+5. run the final adversarial and stale-reference review;
+6. remove unrelated formatting churn;
+7. use `research(mind): <mathematical synthesis>`.
 
-```text
-research(mind): <mathematical synthesis>
-```
-
-Examples:
-
-```text
-research(mind): remove synthesis based on withdrawn flute claim
-research(mind): integrate prime-lattice information-loss constraints
-research(mind): merge common relational-memory intuitions
-research(mind): demote universal spectral threshold mechanism
-```
+Use the repository Git/GitHub operations skill for transport and concurrency safety. Never force-push. A concurrent main change requires refreshing affected sources and gates rather than overwriting it.
 
 ## Reporting
 
-At the end of a run, report only substantive mathematical synthesis:
+Report substantive changes to mathematical key points and questions, accepted withdrawals affecting the snapshot, and exact missing/contradictory evidence requiring another role. Distinguish corpus cleanup from new mathematical discovery. Do not report a project-status recap, chronological diary or list of everything inspected.
 
-- intuitions newly created, materially strengthened/weakened, merged, split, refuted, or removed;
-- research lines materially added, redirected, merged, or removed;
-- review-converged finding withdrawals that materially changed the current mind;
-- blockers caused by missing/contradictory current evidence that require an owning research process.
-
-If nothing changed materially, say so concisely or remain silent when the scheduled task's notification policy permits it.
-
-Do not produce a project-status recap, chronological summary, daily journal, or list of everything inspected.
+When nothing changed materially, say so concisely or remain silent when the task's notification policy permits it.

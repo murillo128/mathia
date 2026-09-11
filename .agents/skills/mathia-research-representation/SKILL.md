@@ -21,13 +21,21 @@ This applies to mathematical content in clues, findings, reviews, synthesis, gra
 
 ## Stable envelope, recoverable meaning
 
-Keep existing file formats, paths, stable IDs, frontmatter keys and enumerated values, required headings, links, citation/provenance identities, and workflow sentinels unchanged. Preserve the exact syntax required by tools, parsers, Lean, or other formal systems. Freedom inside mathematical content does not authorize redesigning its storage schema or editing source regions protected by another skill.
+Keep existing file formats, paths, stable IDs, frontmatter keys and enumerated values, genuinely required headings, links, citation/provenance identities, and workflow sentinels unchanged. Preserve the exact syntax required by tools, parsers, Lean, or other formal systems. Freedom inside mathematical content does not authorize redesigning its storage schema or editing source regions protected by another skill. An illustrative outline or a legacy note's headings are not a parser contract.
 
-When introducing nonstandard notation, persist the definitions or interpretation rules needed to recover its meaning. Prefer definitions inside the artifact's existing substantive sections; reuse a dependency only when it is already accessible under the producer's and intended consumer's read boundaries. A reference is not permission to traverse another line. Do not depend on an author's private session state, an unrecorded dictionary, or assumed shared model memory.
+When introducing nonstandard notation, persist the definitions or interpretation rules needed to recover its meaning. Prefer definitions inside the artifact's existing substantive content; reuse a dependency only when it is already accessible under the producer's and intended consumer's read boundaries. A reference is not permission to traverse another line. Do not depend on an author's private session state, an unrecorded dictionary, or assumed shared model memory.
 
 Keep objects, domains, quantifiers, hypotheses, parameter dependencies, implication direction, and evidence status distinguishable wherever relevant. An abbreviation must not hide a missing premise or conflate an analogy, definition, conjecture, conditional result, and proved statement. A clue may remain speculative or incomplete; its question and evidence boundary must still be recoverable. A finding must still satisfy its normal evidence gate.
 
 No full natural-language duplicate, new metadata field, mandatory translation sidecar, or global notation registry is required. Do not create a new persistence surface or widen path ownership to store a dictionary.
+
+## Internal intuition bodies have no template
+
+Mind intuitions are internal working memory for fresh-context agents, not human-facing essays. Under `mathia-research-mind`, their bodies have no mandatory language, headings, section order or length. A defined formula, compact mathematical points, pseudocode, a partial derivation, mixed-language notation or ordinary prose can each be sufficient. No parallel explanation for humans or translation is required.
+
+Preserve the stable identity, current source anchors, mathematical conditions and evidence boundary, not the legacy nine-part outline. Do not impose that outline again during synthesis, review, graph consumption or translation. Freedom of representation does not excuse vague content: the actual mechanism, obstruction, implication or conjecture must remain recoverable. Nor does it authorize invented precision or upgrading evidence.
+
+This exception concerns intuition bodies only. It does not remove required finding/review/clue metadata, formal-system syntax, frozen experiment interfaces or the ownership gates of any role.
 
 ## Consumer and reviewer discipline
 
@@ -39,6 +47,6 @@ Master, Mind, and Graph must not normalize everything back to English or merge c
 
 ## Scope and adoption
 
-Apply this policy prospectively during ordinary work. Do not rewrite the historical corpus for style, add language quotas or scheduled tasks, or create a new experiment harness merely to adopt it. Keep ephemeral exploration ephemeral under the caller's existing persistence rules.
+Apply this policy prospectively during ordinary work. Do not rewrite the historical corpus merely for style, add language quotas or scheduled tasks, or create a new experiment harness merely to adopt it. An explicitly authorized cleanup of the current mutable mind may reconstruct notes from their sources to remove generic content and restore concrete mathematical information; it is not a language conversion or a rewrite of canonical findings/history. Keep ephemeral exploration ephemeral under the caller's existing persistence rules.
 
 This policy changes controllable instructions and authored artifacts; it does not enable a latent-reasoning mode or demonstrate a change in model-internal language. Performance and research-diversity benefits remain hypotheses. Any later comparison should use matched tasks and budgets, count independently checked useful outcomes, and include consumer reconstruction and review cost rather than judging appearance alone.
