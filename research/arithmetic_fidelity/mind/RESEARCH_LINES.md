@@ -18,16 +18,18 @@ AF-221--AF-233 show that localization has a real information bill and that contr
 
 **Linked intuitions:** `MI-021-coarse-rh-endpoints-can-still-require-deep-source-access`, `MI-022-prefix-truncation-must-respect-cancellation-orbits`.
 
-AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. Fixed damping buys a wider zero-free strip only by weakening the discriminator, while moving damping does not repair an unconditional nonvanishing source prefix. The live bridge must therefore assemble the required cancellation orbit before the root-rate quotient is formed.
+AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. The live bridge must assemble the required cancellation orbit before the root-rate quotient is formed.
 
-## Find a zeta-source restriction stronger than metric proximity but weaker than assuming the answer
+## Separate exact source recurrence from divisor complexity and stable coefficient fidelity
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`, `MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage`.
 
-AF-244--AF-265 show that coverage, coarse Riemann symmetry, zero counting, finite endpoint jets, and compact-open control do not robustly constrain the dangerous Keiper phase. AF-266 initially strengthens the positive side: on every line `Re s=sigma>1`, a pure off-critical zero insertion has a fixed uniform logarithmic-derivative gap and can be separated using a finite prime-power prefix plus unbounded vertical reach.
+AF-244--AF-268 show that coarse symmetry, zero counting, finite endpoint jets, and compact-open or vertical metric proximity do not robustly constrain the dangerous zero geometry. Exact Bohr almost-periodicity excludes every nontrivial finite zero surgery even though count-preserving surgeries can approach the genuine vertical profile arbitrarily closely.
 
-AF-267 then removes that metric margin. Count-preserving signed zero surgery can preserve the full zero count while moving zeros off the critical line and make the complete vertical logarithmic-derivative profile arbitrarily close in sup norm to the genuine zeta profile. No positive robustness gap survives this control.
+AF-269 extends that exact exclusion to every paired zero transport of finite total displacement. AF-270 then proves the boundary is sharp: an infinite periodic transport can split a critical vertical zero lattice into symmetric off-critical lattices while preserving exact ordinate counts, reflection symmetry, Bohr periodicity, and even support on a single rational-prime-power frequency ray. Exact recurrence and prime-power spectral support therefore do not characterize critical geometry.
 
-AF-268 identifies a different exact boundary. The genuine vertical logarithmic derivative is Bohr almost periodic, whereas every nontrivial finite zero surgery adds a nonzero `C_0(R)` defect and therefore leaves the almost-periodic category exactly. Yet those defects can approach that category arbitrarily closely. Thus **exact source-category membership and quantitative metric separation are distinct currencies**.
+AF-271 identifies the information bill inside that periodic escape. If the periodic divisor has at most `r` distinct orbits, the first `r` prime-power coefficients detect every nontrivial divisor change exactly; without a complexity bound no fixed prefix suffices, and without geometric separation exact detection has no stable modulus. The live theorem must therefore use a genuinely zeta-specific restriction on the **coefficient law, divisor complexity, or cross-prime source coupling**, not merely exact almost-periodicity or prime-power frequency support.
 
-The live theorem is to make that categorical rigidity useful against the genuinely global alternatives that finite surgery does not cover: infinite or distributed zero rearrangements, compensating source changes, or another RH-violating entire-function control that remains in the exact Dirichlet/almost-periodic source class. A useful condition must be genuinely zeta-specific and height-uniform without merely restating the Euler product or RH itself.
+## Treat category membership, bounded-complexity identifiability, and quantitative stability as separate gates
+
+Finite-total transport leaves the exact source category; infinite periodic transport can stay inside it; bounded periodic divisor complexity is finitely identifiable; and stable finite-prefix fidelity additionally needs separation. Future source restrictions must state explicitly which of these currencies the downstream RH argument consumes.

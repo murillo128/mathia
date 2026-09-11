@@ -2,18 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the interruptions supporting nonzero fringe-prime bits
+## Combine forced fan complexity with the sparse base-two interruption channel
 
 **Linked intuition:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`.
 
-RE-017--RE-045 reduce hypothetical Robin failure to a same-block adaptive selector fan coupled to the standard/reciprocal prime race. Adjacent first-layer selectors have rigid half-logarithmic staggering, but the generating prime's first-order race jump cancels in the physical selected-residual increment. The only surviving first-prime-scale datum is whether the next ordinary prime has crossed the upper selector before its own CA event fires.
+RE-017--RE-048 reduce hypothetical Robin failure to an adaptive selector fan whose regular first-layer interior cannot carry an accumulating local fringe signal. A nonzero bit is forced to the right support edge and interrupts the clean chain.
 
-RE-046 shows that such a nonzero fringe bit cannot occur on an ordinary interior link of a long clean adjacent-first-layer chain: it forces a break before the immediate successor first-layer event can be exposed. RE-047 makes the break quantitative. The threshold cell entered at a nonzero fringe switch has only `O_J(p^(b_1-1)/log p)` room on its right, hence vanishingly little threshold width.
+RE-049 classifies those bits: every sufficiently late nonzero fringe forces a deep base-two outgoing event. The hosts are multiplicatively lacunary and their extracted first-prime residual increments are absolutely summable. RE-050 transfers the sparsity to threshold space: support-edge slacks are summable in every positive power and their recurrent limsup set has Hausdorff dimension zero.
 
-RE-048 strengthens this to the full physical CA support chamber. A nonzero fringe switch is asymptotically pinned to the **right edge** of the entered state's supporting-slope interval: only an `O(1/log p)` fraction of the chamber remains after the switch. This is independent of which later event actually terminates the fan cell.
+RE-051 supplies a different global constraint in the strongly off-critical regime. If the hypothetical rightmost zero satisfies `Theta>theta`, where `theta` is an available prime-in-short-interval exponent (currently `theta=0.52`), then every compact threshold interval `J subset (1-Theta,1-theta)` must be partitioned by a **polynomially growing number of exposed fan states**. A single-state or bounded-complexity adaptive fan is impossible there.
 
-The live theorem is therefore an interruption/edge-statistics problem. A persistent arithmetic signal must be carried by higher-layer or tied transitions, skipped states, boundary events, or another collective prime-power mechanism concentrated near support edges; clean first-layer interiors cannot accumulate the fringe bit. A useful result should quantify the frequency, sign bias, or aggregate contribution of these interruptions and compare it with the prime-race error floor.
+The remaining problem is to connect these two facts. In the strong off-critical chamber the fan must become increasingly complex, yet the specifically isolated nonzero-fringe/base-two channel is lacunary, summable, and threshold-negligible. A closing contradiction must show that the forced polynomial fan complexity cannot be supplied entirely by fringe-zero ordinary states, or identify additional interruption/common-source data whose aggregate scales with that complexity.
 
-## Treat clean fan interiors, support-edge fringe events, and exceptional CA transitions as separate currencies
+The near-critical chamber `1/2<Theta<=0.52` remains outside the RE-051 short-interval argument and needs a different source of fan-complexity growth.
 
-The ordinary fan geometry is now too rigid to carry the remaining signal: nonzero bits are expelled to vanishing support-edge layers and force exceptional transitions. Future work should count or aggregate those exceptional layers rather than further refine the already-settled generating-prime staggering.
+## Treat cell-complexity growth and fringe-bit capacity as separate currencies
+
+Many exposed adaptive states do not automatically mean many nonzero fringe events. Conversely the surviving base-two fringe events cannot accumulate enough by themselves. The useful theorem must couple fan complexity to a source-sensitive event statistic rather than infer arithmetic from either count alone.

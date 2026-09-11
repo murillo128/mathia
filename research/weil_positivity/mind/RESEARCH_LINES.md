@@ -2,16 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Build a native critical-sector global coupling rather than repairing transport thermodynamically
+## Build arithmetic thermodynamics outside the KMS-Morita class of the canonical gauge system
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`.
 
-WP-216--WP-250 show that correct critical amplitudes, higher-rank positivity, sector change, crossed-product implementation, and the canonical bilateral gauge dynamics do not generate the completed Weil orientation. The critical product state is genuinely disjoint from the spherical quasi-local sector, but making the automorphism inner adds no arithmetic sign, and the bilateral gauge flow has no proper nonzero-temperature KMS object at the unital C*-level.
+WP-216--WP-251 show that critical product-state amplitudes, algebraic implementation, bilateral gauge dynamics, and the natural one-sided Toeplitz repair do not generate the completed Weil orientation. The bilateral critical system has no proper nonzero-temperature KMS object, while the one-sided repair restores equilibrium by forcing the coefficient sector into a universal trace representation that erases the critical disjointness boundary.
 
-WP-251 closes the most natural one-sided repair. Passing to the Toeplitz-Pimsner algebra restores a unique nonzero-temperature KMS state, but equilibrium forces the unique trace on the coefficient UHF algebra. In that tracial representation every product automorphism is spatial, so the critical non-square-summable sector boundary disappears. The thermal mass is a universal geometric law in Fock degree, independent of prime amplitudes; only ordinary quasi-local trace correlations retain the local rotations.
+WP-252 rules out ordinary nonunital stabilization as an escape. Tensoring with compacts leaves the KMS-weight cone unchanged by full equivariant Hilbert-module Morita equivalence.
 
-Thus neither failure nor restoration of canonical KMS equilibrium produces the missing arithmetic. A viable construction must introduce **prime-dependent arithmetic energy/source data natively**—for example multiplicative/semigroup generators, a source-forced modular weight, non-quasi-local boundary state, Hilbert-module correspondence, unbounded cycle, or another finite--archimedean coupling—and must also generate the Gamma/polar completion with an independent sign theorem.
+WP-253 removes the invariant-corner loophole. An arbitrary spatial compact-factor Hamiltonian, even with purely continuous spectrum and no invariant rank-one projection, is still induced by a full equivariant module and has exactly the same forbidden nonzero-temperature KMS-weight cone.
 
-## Treat representation criticality, algebraic implementation, equilibrium existence, and arithmetic thermodynamics as separate gates
+WP-254 closes a much larger apparent interaction class. Strongly continuous unitary module cocycles can produce genuinely non-product finite--archimedean dynamics, including bounded interaction Hamiltonians, while remaining exterior-equivalent within the same full coefficient module. KMS-weight induction still transports the empty cone. Thus **non-product coupling alone is not a category change**.
 
-The bilateral system preserves criticality but has no canonical KMS equilibrium; the one-sided Toeplitz repair has equilibrium but thermalizes the coefficient sector into a trace that forgets the critical representation boundary. Future proposals should identify the exact source datum that makes temperature/weight depend on arithmetic energy rather than on universal iteration degree.
+The surviving thermodynamic route must genuinely leave this equivariant Morita/exterior-equivalence class: alter the coefficient dynamics, correspondence, algebra/category, or introduce unbounded/source-forced modular data whose equilibrium law depends on prime/multiplicative energies. It must then separately generate the gamma/polar completion and the correct Weil sign.
+
+## Treat nonunitality, spatial clocks, bounded interactions, and arithmetic thermodynamics as separate gates
+
+Stabilization, continuous-spectrum compact clocks, and bounded non-product module interactions can all look structurally richer while preserving exactly the same KMS obstruction. Future proposals should demonstrate the categorical invariant they actually change before interpreting new equilibrium structure as arithmetic.

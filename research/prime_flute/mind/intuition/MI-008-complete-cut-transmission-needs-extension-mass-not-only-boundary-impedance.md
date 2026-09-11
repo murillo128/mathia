@@ -1,43 +1,43 @@
-# MI-008 — Prime-Flute endpoint decay must come from relative angle on infinite heavy sectors
+# MI-008 — Prime-Flute endpoint decay is essential orthogonality, now testable by local form witnesses
 
-**Evidence level:** proved operator-theoretic boundary
+**Evidence level:** proved operator/form-theoretic boundary
 
 ## Core intuition
 
-Unprojected reservoir transmission, extension strength, and physical low/high leakage are different currencies. Energy normalization isolates the mixed operator
+Energy normalization isolates the mixed operator `T=F_P Gamma F_H`. The canonical strength factors stay heavy on infinite-dimensional tails, so compactness cannot come from them. PF-287 identifies the remaining angle exactly with a product of heavy extension-range projections, and PF-288--PF-289 make noncompactness testable using separated local physical vectors.
 
-`T = F_P Gamma F_H`,
-
-where the outer positive contractions record extension strength and `Gamma` records the relative low/high extension angle. The latest findings show that the canonical physical strengths are heavy on infinite-dimensional tails, so the desired weak-trace decay cannot come from compact outer factors. It must be created by the relative angle itself, or by a threshold-dependent interaction between angle and strength.
+The endpoint problem is therefore no longer merely “prove angular decay.” Its cheapest falsifier is a concrete **energy-normalized local low/high correlation**.
 
 ## Strongest justified claim
 
-PF-279 shows why an isolated corridor coefficient does not control an unprojected complete cut: exact Schur transmission also depends on endpoint-normalized reservoir extension masses. PF-280--PF-282 then match the invariant to the physical statistic. Positivity canonically defines the energy-normalized cross operator, and its singular-value class controls the mixed inverse block and reciprocal-prime commutator. On heavy sectors, the strength factors saturate and the singular values are governed by the compressed angle.
+PF-279--PF-286 separate unprojected transmission, extension strength, and relative angle. Weak trace class has a two-sided threshold-counting formulation; the convenient `tau^-1` sufficient count is stronger than the necessary endpoint envelope, while neither physical strength factor has finite weak-Schatten population decay.
 
-PF-283 provides a sufficient weak-trace route through heavy-angle counting. PF-284 proves the two-sided comparison and separates sufficient from necessary scales. In the symmetric thresholding, `N_(Gamma_tau)(2 tau)=O(tau^-1)` suffices, but weak trace class only implies `O(tau^-3)`. Hence an intermediate growth rate can defeat the convenient PF-283 proof without refuting the endpoint.
+PF-287 shows that the thresholded angle is the cross-Gram of isometric unit-energy extension maps. Its singular-value counting function agrees exactly with that of the product of the orthogonal projections onto the two heavy extension ranges. It also expresses the angle directly through the normalized physical precision form, eliminating the polar-decomposition mismatch.
 
-PF-285 shows abstractly that angle decay would be unnecessary if the two strengths had complementary weak-Schatten decay. PF-286 then excludes that cheaper mechanism in the physical Prime-Flute geometry: the low strength has infinitely many channels above every fixed threshold and the high strength is noncompact with an infinite heavy population. Neither outer factor belongs to any finite weak-Schatten class.
+PF-288 proves a local noncompactness criterion. For pairwise separated low/high local families, divergent diagonal Rayleigh quotients and a uniform lower bound on `|k[u_j,v_j]|/sqrt(k[u_j]k[v_j])` force noncompactness at every fixed heavy threshold.
+
+PF-289 observes that divergence is unnecessary for the basic endpoint falsifier. Uniform positive Rayleigh floors on both sides suffice after choosing small fixed thresholds. PF-216 already supplies a much stronger low floor and PF-227 supplies the required high floor. The only unresolved ingredient for this local obstruction is persistence of the normalized mixed correlation.
 
 ## Synthesis of evidence
 
-The endpoint problem is now genuinely about **relative geometry between two individually heavy infinite-dimensional extension ranges**. Same-sector mass cannot be ignored, but it also cannot solve the problem by decaying away. The useful statistic must count or otherwise control how much of those heavy ranges remains aligned across the physical split.
+The next calculation should be local before it is global. Pair the known PF-216 low-symmetric module vectors with the PF-227 physical-high singular witnesses and compute or bound their normalized mixed form correlation. A nonzero tail immediately kills compactness; systematic decay would remove the cheapest negative mechanism and justify returning to global heavy-range angle counts.
 
-This changes the order of attack. First distinguish a missed sufficient criterion from a true endpoint obstruction using the PF-284 necessary scale. Then seek a source/geometric theorem for the angle on the actual completed flute, including finite-pant and neighboring-cell coupling.
+This ordering avoids proving a sophisticated weak-trace estimate before checking whether the physical ranges are already visibly non-orthogonal at module scale.
 
 ## Counterevidence / boundary cases
 
-PF-286 does not prove `T` is noncompact. Two noncompact outer factors can still yield a compact or weak-trace product when the middle angle kills their common heavy directions. Conversely, PF-284's necessary `tau^-3` envelope is not sufficient by itself.
+PF-289 does not assert that a persistently correlated high family exists. The PF-227 high witnesses may be selectable only in directions whose cross form with the PF-216 low vectors decays. Failure of this particular local witness does not prove compactness or weak trace class.
 
-The heavy-angle statistic is threshold-dependent; a global weak-Schatten class for `Gamma` would be sufficient but may be unnecessarily strong. The physical theorem may use a finer joint strength-angle distribution.
+Likewise essential orthogonality at every fixed threshold is only compactness; the endpoint still needs the stronger quantitative distribution required for `S_(1,infinity)`.
 
 ## Epistemic status
 
-**Exact endpoint narrowing:** outer-factor population decay is unavailable in the canonical physical split, and the convenient heavy-angle count is only sufficient. The remaining endpoint currency is relative extension geometry on infinite heavy sectors.
+**Exact endpoint narrowing plus local falsifier:** heavy strength does not decay away, the angle equals heavy-range projection geometry, and persistent normalized local correlation with fixed Rayleigh floors is enough to disprove compactness.
 
 ## Novelty/prior-art status
 
-Schur complements, singular-value inequalities, weak Schatten ideals, and threshold counting retain their finding-level prior-art status. This note synthesizes their exact role in Prime Flute.
+Projection-product geometry, form methods, compactness, and weak Schatten theory retain their finding-level prior-art status. This intuition synthesizes the physical consequence of the new form-native reductions.
 
 ## Falsification criterion
 
-Show that one canonical physical strength factor is actually compact/finite weak-Schatten despite PF-286, or construct a physical endpoint proof whose mechanism is independent of relative angle and does not contradict the established factorization. Alternatively, prove divergence of the PF-284 necessary statistic on a canonical sequence; that would turn the surviving route into a genuine obstruction.
+Invalidate the PF-287 singular-value equivalence or produce a family satisfying PF-289's hypotheses while the heavy angle remains compact. Strategically, prove the relevant PF-216/PF-227 normalized correlations vanish with a quantitative law strong enough to feed the endpoint count; that would cross the current local gate.

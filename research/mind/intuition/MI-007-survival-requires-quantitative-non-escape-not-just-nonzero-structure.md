@@ -1,45 +1,33 @@
-# MI-007 — Quantitative non-escape must preserve the final decision statistic
+# MI-007 — Quantitative non-escape must target exceptional capacity, not another average law
 
 **Evidence level:** supported
 
 ## Core intuition
 
-The mature Mathia routes increasingly turn on a distinction between a mathematically rich proxy and the **exact statistic the final RH-equivalent criterion consumes**. Information can survive in a representation yet disappear from the primitive, signed correlation, sign, index, target distance, root-rate, or complete-cut norm after quotienting, averaging, normalization, or embedding. Conversely, a drastic compression can be legitimate when that decision statistic and its quantitative conditioning are proved to survive.
+Several mature Mathia lines now have the correct exponent, average density, local regularity, or finite observability and still leave a sparse route through which the target can escape. The decisive theorem must therefore control the **capacity of the exceptional configurations in the exact statistic consumed downstream**, not merely strengthen an already-favorable global estimate.
 
-The central non-escape question is therefore not whether some arithmetic structure remains visible, but whether the target-bearing state remains quantitatively observable after the full source-to-destination map.
+## Strongest justified principle
 
-## Strongest justified claim
+Analytic Frontier supplies the local-regularity control. ANF-175--ANF-179 construct prime-scale endpoint packets that retain target-sized signed memory while saturating every fixed local twist magnitude and naturally normalized derivative hierarchy. Another fixed Sobolev or finite-jet theorem does not attack the carrier-aligned exceptional geometry.
 
-Analytic Frontier now supplies an exact phase-loss example. Target-sized endpoint completion forces a large positive **real** dyadic shifted correlation. The positive moving-window energy `Q_H` is only a Cauchy--Schwarz relaxation: ANF-171 constructs a danger-scale packet with nearly maximal complex coherence and large `Q_H` while the real correlation is asymptotically killed by quarter-turn phase. The missing currency is the alignment factor multiplying the positive energy, not the energy alone.
+Farey Discrepancy makes the exceptional-set restriction quantitative. FD-049 rules out positive polynomial occupation loss beyond the zero-frontier exponent; FD-050 forces vanishing thresholds to occur on zero global logarithmic density; FD-051 gives universal positive terminal occupation through quotient depth `o(sqrt H)`. Any remaining collapse must be subpower, logarithmically sparse, and concentrated in low-row multiplicative placement.
 
-Nyman--Beurling supplies both a target-loss theorem and an oracle-cost boundary. Its weighted moving-tail quotient is source-faithful and polynomially conditioned, but NB-039 proves its target-energy loss is sharply `Theta(1/M)` and multiplicative preservation occurs exactly above the inverse-distance scale `M d_N^2 -> infinity`. Independently, NB-037--NB-038 show that the upper-section correction carries the original Burnol distance in an explicit source direction. Low dimension and conditioning therefore do not make either the target-loss floor or the target oracle disappear.
+Robin Extremal reveals a two-sided capacity constraint. RE-049--RE-050 force each surviving nonzero fringe bit onto a lacunary base-two host, make the extracted first-prime contributions absolutely summable, and give a recurrent threshold-edge set of Hausdorff dimension zero. RE-051 simultaneously shows that, in the sufficiently off-critical chamber, false RH forces polynomially many exposed fan states. The unresolved question is whether that required global fan complexity can avoid the tiny capacity of the known exceptional arithmetic channel.
 
-Prime Flute gives two operator versions. PF-278 closes the fixed-axis Robin route because the actual normalized source has sharp fixed-row leakage `N^-1(log N)^-3/2`; a logarithmic gain does not preserve the required supercritical exponent. PF-279 then shows that even a locally small isolated edge is not the complete-cut statistic: variable reservoirs can amplify endpoint-normalized harmonic extensions and erase the local attenuation. Boundary impedance without extension mass is an incomplete proxy.
-
-Prime Lattice and Weil Inertia sharpen the sign/index hierarchy. The semilocal Laurent core finitely detects every RH failure, while PL-264 shows that one prime edge's exact negative shock and higher singular jets are too universal to force the global unshifted Weil sign. WI-237 shows that local `L^2` span separation is also the wrong currency for Bombieri collapse: critical exponentials are complete but non-Bessel, so the relevant invariant is coefficient cost under the eigenvector `ell^2` budget, not ambient approximation distance. WI-238 provides a different decision object altogether, a finite-radius localized ground-state crossing.
-
-The same discipline appears in Arithmetic Fidelity, Farey Discrepancy, Möbius Cancellation, Robin Extremal, Visual Exploration, Weil Positivity, and Xi Flow. Periodic output coverage changes the exact Li root-rate obstruction from ambient approximation to profinite leakage; generic Farey shell energy can hide low-row hyperbola amplification; source-aligned Möbius shifts can collapse to sparse defects or a Mertens-equivalent completion; adaptive selector kinematics can be manufactured without arithmetic coupling; fixed-dimensional Gram-lag Haar appearance can be entirely deterministic clock shear; algebraic sector transport does not create Weil orientation; and exact Xi source identification remains noncoercive without the required resolution modulus.
+Weil Inertia gives a complementary “too-strong global theorem” warning. WI-243 shows subexponential growth of one natural signed odd discrepancy is already RH-equivalent, while WI-244--WI-245 expose a finite-radius `Theta(a^-2)` archimedean reserve that can be attacked without first controlling the full global discrepancy.
 
 ## Program consequence
 
-For each candidate, specify the source information, every quotient/normalization/transport/embedding step, the final decision statistic, and the quantitative modulus by which source perturbations affect that statistic. A claimed simplification is progress only if it proves one of two things: discarded information is genuinely target-null with controlled conditioning, or the surviving source theorem is strictly narrower/cheaper than the original RH-equivalent obligation.
-
-Prefer exact currencies such as signed endpoint correlation, primitive height, negative index, projective occupation, profinite root-rate exponent, target distance, complete-cut norm with extension mass, selector-conditioned arithmetic race, coefficient cost, or ground-state crossing over generic claims of richness, positivity, energy, cancellation, or spectral structure. Once a representation is proved complete for the decision statistic, stop optimizing completeness and attack the sign/coercivity/source theorem itself.
+Once an exponent/average/local law is proved, identify exactly what exceptional configurations still satisfy it and how much target capacity they possess. The next source theorem should rule out those configurations, couple them to a growing global obligation, or show they cannot carry enough target mass. Prefer low-row placement, support-edge hosts versus fan complexity, finite-radius tariffs, signed Fejer scale differences, or another exact residual variable over a stronger generic norm.
 
 ## Counterevidence / boundary cases
 
-There is no universal decision statistic across all lines. A new representation may change the correct target currency, and a global identity can couple information that appears lost when stages are analyzed separately. The principle therefore requires deriving the actual composed map, not imposing one preferred norm everywhere.
-
-A certified compression can still be mathematically useless if the retained source theorem is as hard as RH. Conversely, source identification or exact recoverability can be valuable infrastructure without being coercive. The claim is about what counts as progress toward the final theorem, not about intrinsic mathematical interest.
+Sparse exceptional sets can still determine an extremal or first-crossing theorem; small density is not negligible by itself. Likewise many fan states do not imply many nonzero fringe bits. The principle requires a quantitative bridge from exceptional-set capacity to the final target, not a probabilistic dismissal.
 
 ## Epistemic status
 
-**Supported cross-line principle:** current progress is controlled by preservation and conditioning of the exact final decision statistic. The latest results add sharp examples where positive energy loses the needed phase, local attenuation loses the complete-cut norm, ambient span loses coefficient budget, and a conditioned compression has an exact inverse-distance target-loss threshold while retaining the full target oracle cost.
-
-## Novelty/prior-art status
-
-This is a synthesis of persisted Mathia findings and their recorded prior-art boundaries. No independent novelty claim is made.
+**Supported exceptional-capacity principle:** several current routes have already won their global averages and still fail only through sharply localized residual configurations whose capacity must be compared with a separate target obligation.
 
 ## Falsification criterion
 
-Produce a valid final theorem in one cited setting while the stated decision statistic is not preserved or controlled by the source-to-destination map and no compensating source relation exists, or invalidate one of the exact information-loss/preservation boundaries on which this synthesis rests.
+Show that a cited route can be completed solely by strengthening the same global/average/local estimate without controlling its persisted exceptional set or capacity, or invalidate one of the exact sparsity/complexity boundaries above.

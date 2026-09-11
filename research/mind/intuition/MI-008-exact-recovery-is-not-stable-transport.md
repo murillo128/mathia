@@ -1,41 +1,33 @@
-# MI-008 — Exact recovery and good local coordinates do not imply stable target transport
+# MI-008 — Exact recovery and local conditioning do not determine stable target transport
 
 **Evidence level:** supported cross-line synthesis
 
 ## Core intuition
 
-A representation can be exactly identifying, admit a perfectly conditioned local inverse, or expose the relevant source signal at a very small scale and still fail to transport the final target stably. The irreducible cost often moves to another stage: acquisition of adaptive observables, global recurrence, target projection, relative angle, or cancellation across the actual composed map.
-
-The right question is therefore not “can the hidden state be recovered in principle?” but **what quantitative modulus survives the full map from source data to the target statistic?**
+A representation can identify the hidden state exactly, admit a condition-one local inverse, or expose the source signal at tiny scale while still failing to transport the final target. Conversely, a severe acquisition loss can disappear when the observation category is enlarged. The invariant cost is the **whole source-to-target composition**, including acquisition and the target projection actually consumed.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity gives an exact category/topology separation. AF-267 constructs RH-violating count-preserving zero surgeries whose full vertical logarithmic-derivative profiles approach the genuine one uniformly, eliminating a positive metric gap. AF-268 nevertheless excludes every nontrivial finite surgery from the exact Bohr almost-periodic source category. Exact membership does not provide robust separation.
+Arithmetic Fidelity separates exact category, finite-complexity recovery, and stability. AF-269 extends exact recurrence exclusion to finite-total transports; AF-270 gives an infinite periodic off-critical control inside the same recurrence/frequency category; AF-271 shows finite coefficient recovery depends on divisor complexity and stable recovery on separation.
 
-Visual Exploration gives the representation version. VIS-161 shows that two exact prime phases identify every real height, but their inverse on the dense torus orbit is nowhere continuous. VIS-162 proves that the optimal Lipschitz decoder constant for any observable is exactly its worst phase-collision quotient. Set-theoretic recovery can therefore be maximally ill-conditioned.
+Xi Flow gives both sides of the conditioning lesson. XF-181 makes the packet inverse locally isometric in adapted coordinates. XF-182 shows raw positive heat still sees higher packet modes with graded power loss. XF-183 removes that loss relatively only by dividing by exponentially small mass. XF-184 then uses mesoscopic complex Jacobi phase to obtain a uniformly conditioned **absolute** acquisition bank. The expensive stage can move or disappear when the acquisition category changes.
 
-Xi Flow shows that even bad finite-dimensional conditioning may be a coordinate artifact. XF-179 requires depth `m` to identify `m` moved atom pairs; XF-180's monomial inverse is exponentially ill-conditioned in `m`, but XF-181 constructs adapted cusp coordinates with an orthogonal Jacobian and remote-index-uniform local bi-Lipschitz control. What remains expensive is adaptive depth, support knowledge, nonlinear radius, and extraction of those observables from source/heat data.
+Visual Exploration provides a stable decoder calibration. Exact finite phases identify height, but an omitted prime already has no continuous fixed-support decoder and has quantitatively growing collision complexity. Stable recovery must be assessed against matched controls, not inferred from set-theoretic identity.
 
-Nyman--Beurling supplies the target-projection analogue. NB-047 localizes the Burnol-scale directional signal to a tiny deterministic prefix, while NB-048 approximates the unique target repair by a smaller-section projection with exact slack. Small source witness scale does not yet imply cheap geometric target repair.
-
-Prime Flute closes another possible shortcut. The physical outer extension-strength factors are noncompact and infinitely heavy, so weak-trace decay cannot come from their population decay. It must be supplied by relative angle on the common heavy sectors.
+Nyman--Beurling identifies the target oracle even more sharply. NB-050 expresses recursive repair slack as a finite continuous-grid enrichment gap; NB-051 shows its first-order two-scale limit can be the global natural-versus-continuous Nyman projection gap `Delta_*`, so mesh refinement does not automatically make the target repair cheap. Prime Flute similarly reduces compactness to relative angle between heavy extension ranges, with a local cross-form falsifier.
 
 ## Program consequence
 
-For every proposed compression or recovery theorem, separate four questions: what is exactly identifiable, in which topology is the inverse stable, which adaptive observables must be acquired, and how does the recovered quantity enter the final target projection/sign. A theorem at one layer should not be promoted across the next layer without an explicit modulus.
-
-This also changes how conditioning evidence should be interpreted. A large condition number may be removable by better coordinates; a small condition number may still be irrelevant if computing those coordinates already requires the target oracle. The invariant cost is the whole source-to-target composition.
+For every recovery result, separate exact identifiability, coordinate conditioning, observable acquisition, target projection/sign, and the matched control class. A good inverse is useful only when the required coordinates are obtainable in a source-faithful topology; a refined mesh is useful only if the target gap is proved to shrink; and a hard decoder is interesting only when the same hardness is absent from an appropriate null model.
 
 ## Counterevidence / boundary
 
-The cited lines do not imply that stable transport is impossible. XF-181 positively removes one local conditioning barrier; NB-048 provides a recursive approximation; VIS-162 gives an exact stability criterion; and Prime Flute leaves an angular route open. These advances sharpen where a successful theorem must act.
-
-Nor is one topology universally privileged. The relevant metric or regularity class is part of the downstream mathematical claim.
+Stable transport is not universally impossible. XF-184 is a positive example where a broader holomorphic observation removes a remote packet barrier. NB-051 is a negative warning that an apparently local discretization gap can converge to a global target component. The principle is a bookkeeping requirement: locate the cost in the full composition rather than attributing it prematurely to one stage.
 
 ## Epistemic status
 
-**Supported cross-line separation of identifiability, conditioning, acquisition, and target transport.** Recent findings strengthen the principle by showing both directions: exact recovery can be unstable, while apparently severe local ill-conditioning can disappear after adapted preconditioning without solving the global source problem.
+**Supported separation of identifiability, conditioning, acquisition, and target transport, strengthened by a positive acquisition-category escape and a closure-level target-gap normal form.**
 
 ## Falsification criterion
 
-In one cited setting, derive the final target theorem from exact identifiability or local conditioning alone while bypassing the identified acquisition/projection/recurrence modulus, under the same hypotheses. Alternatively, invalidate a load-bearing exact separation such as the VIS-162 collision criterion, XF-181 local isometry, or NB-048 repair identity.
+In one cited setting, derive the final target theorem from exact identification/local conditioning alone while bypassing the identified acquisition or target modulus under the same hypotheses, or invalidate a load-bearing separation such as AF-270/271, XF-184, VIS-163--165, NB-050/051, or PF-287.

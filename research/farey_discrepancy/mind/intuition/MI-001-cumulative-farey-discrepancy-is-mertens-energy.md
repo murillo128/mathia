@@ -1,43 +1,43 @@
-# MI-001 — Farey occupation is a multiplicative-placement problem, not a growth-exponent problem
+# MI-001 — Farey occupation is a sparse multiplicative-placement problem, not a growth-exponent problem
 
 **Evidence level:** supported
 
 ## Core intuition
 
-The projective Farey obstruction has been narrowed beyond generic regularity and beyond finite spectral complexity. The physical quotient-shell source already carries the full Mertens/zeta-zero power exponent on every fixed Jordan row, and nonsquarefree dilation forces positive average occupation along every complete multiplicative chain. A remaining failure can therefore only be **sparse in scale** and must exploit the arithmetic placement of large shell values, not a missing global exponent or ordinary short-interval roughness.
+The Farey obstruction has been narrowed from generic regularity to a very thin exceptional-set problem. The physical shell source already has the correct zeta-zero power exponent on every fixed row, terminal nonsquarefree occupation is uniformly positive through quotient depth `o(sqrt H)`, and exact dilation relations prevent very small occupation from persisting on a positive amount of logarithmic scale.
+
+A remaining failure must therefore be **subpower, logarithmically sparse, and concentrated in low-row multiplicative placement**. Ordinary smoothness or another average theorem is no longer the right currency.
 
 ## Strongest justified claim
 
-FD-031--FD-040 separate a universal favorable bulk from a possible low-row hyperbola-amplification escape. Terminal quotient blocks have fixed positive nonsquarefree density, while a synthetic one-Lipschitz shell profile can still concentrate enough energy on sparse low rows to drive the global occupation ratio to zero along a subsequence. Every fixed finite supercritical Mellin packet is nevertheless coercively sampled by nonsquarefree rows.
+FD-031--FD-048 establish the underlying hierarchy. Terminal quotient blocks have positive nonsquarefree density; the physical shell source and Mertens function are inverse floor transforms with the same zero-frontier exponent; fixed nonsquarefree dilation injects a lower-horizon copy of the full energy; and even strong short-interval smoothing does not by itself prevent sparse low-row escape.
 
-FD-041--FD-045 strengthen the physical side. Squarefree/nonsquarefree occupation is a dilation sieve of one energy curve, centering cancels the critical pole, and the weighted squarefree Euler product plus Walfisz cancellation controls growing packets through and slightly beyond the square-root frequency window. Merely increasing frequency to that scale is not an escape.
+FD-049 combines the lower-scale injection with the zero-frontier envelope. For fixed head dimension, if `nu_H` is nonsquarefree occupation and `epsilon_H` the normalized Schur defect, then neither can have a positive polynomial decay exponent beyond `2 Theta-1`. Under RH (`Theta=1/2`), `H^eta nu_H` and `H^eta epsilon_H` diverge for every `eta>0`. Any residual decay is necessarily subpower.
 
-FD-046 identifies the source exponent exactly. The physical shell source `H` and the Mertens function are inverse floor transforms, so their polynomial growth exponent is the same rightmost-zero exponent `Theta`. Every fixed row, and hence both total and nonsquarefree energies, has limsup exponent `2 Theta`. No global polynomial decay of nonsquarefree occupation is possible.
+FD-050 turns the same dilation identity into a global logarithmic entropy bound. In the natural `dH/H` measure, the average of `log(1/nu_H)` stays bounded by an explicit dilation constant. Consequently horizons where `nu_H` falls below any threshold tending to zero have vanishing logarithmic density. Sparse bad scales can wander between multiplicative chains, but they cannot occupy a macroscopic fraction of logarithmic scale.
 
-FD-047 turns square-divisor self-similarity into a pointwise lower-scale injection `U_H >= w(q) E_(floor(H/q))`. Along every `q`-adic chain this yields a positive geometric-mean/average occupation and forces the set of extremely small occupation values to have small logarithmic density.
-
-FD-048 then closes the generic smoothness response. Matomaki--Teravainen short-interval Möbius cancellation transfers to `H`, but a much smoother synthetic profile can still realize sparse occupation escape. What the control lacks is the exact multiplicative placement of the physical increments `Delta H(n)=mu(rad n) phi(rad n)/n`.
+FD-051 removes the earlier cube-root limitation on the source-independent terminal bulk. Finite prime-square sieves recover the full nonsquarefree density constant from below for arbitrary nonnegative shell profiles whenever the quotient depth is `o(sqrt H)`. The square-root block scale is sharp for such profile-independent reasoning because singleton squarefree blocks appear there.
 
 ## Synthesis of evidence
 
-The surviving difficulty is no longer “make the source regular enough” or “show nonsquarefree rows grow at the right rate.” Those are already controlled at the relevant levels. The problem is to prevent isolated horizons from arranging the physical increment pattern so that hyperbola sampling sends disproportionate energy into a few squarefree low rows while respecting all multiplicative-chain averages.
+The residual obstruction is now highly constrained. It cannot be a missing growth exponent, broad terminal loss, persistent multiplicative-chain deficit, positive-log-density phenomenon, or ordinary short-interval roughness. It must use rare horizons where energy is pushed into the low Jordan rows / long quotient arguments in a way compatible with the exact physical increment law.
 
-This suggests a theorem shaped around divisibility covariance, dilation consistency, or another source-specific relation coupling neighboring multiplicative scales. A successful estimate should target the exceptional-set geometry directly rather than strengthen an already-favorable limsup exponent or short-interval norm.
+A decisive theorem should therefore couple divisibility across neighboring scales, exploit the explicit increment formula, or otherwise show that the physical source cannot realize the remaining low-row exceptional geometry. Conversely, a physical-compatible construction with `nu_H -> 0` on a sparse subpower subsequence would show that even these multiplicative constraints do not suffice.
 
 ## Counterevidence / boundary cases
 
-FD-047 does not give a pointwise positive occupation fraction; geometric-mean and density statements permit sparse bad horizons. FD-048's smooth countermodel is not physical and does not satisfy the exact multiplicative increment law. FD-046 controls polynomial exponents only and is compatible with ratios tending to zero slower than every power.
+FD-049 permits inverse-logarithmic or other subpower occupation loss. FD-050 permits exceptional horizons of zero logarithmic density. FD-051 controls only the terminal quotient region and explicitly leaves low rows uncontrolled. These gaps overlap rather than disappear.
 
-Thus the synthesis does not assert that the physical occupation is positive pointwise. It identifies what any counterexample must still accomplish.
+The smooth synthetic controls used earlier do not satisfy the exact physical increment/divisibility law, so they do not demonstrate that the surviving exceptional regime is realizable by the Farey source.
 
 ## Epistemic status
 
-**Supported source-specific narrowing:** power growth, complete-chain average occupation, finite/growing packet coercivity, and ordinary short-interval regularity are all insufficient currencies for the final pointwise statement. The unresolved information is multiplicative placement across the hyperbola samples.
+**Supported exceptional-set narrowing:** any remaining occupation collapse must be subpower, globally logarithmically sparse, and carried by low-row arithmetic placement beyond the universal terminal bulk.
 
 ## Novelty/prior-art status
 
-No broad novelty claim is made beyond the finding-level audits. This note synthesizes the current exact Mathia boundaries.
+No broad novelty claim is made beyond the finding-level audits. This note synthesizes the exact zero-frontier, dilation, logarithmic-average, and finite-square-sieve consequences.
 
 ## Falsification criterion
 
-Construct a shell profile satisfying the exact physical increment/divisibility law and the established floor-transform relations while realizing a subsequence with `U/E -> 0`, or prove that those laws force a positive pointwise or sufficiently strong density lower bound. Either outcome would resolve the current diagnosis.
+Construct a source obeying the exact physical increment/floor-transform laws with occupation tending to zero on an unbounded subsequence while respecting FD-049--FD-051, or prove those laws force a positive pointwise lower bound. Either outcome resolves the current diagnosis.

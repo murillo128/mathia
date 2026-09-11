@@ -1,44 +1,37 @@
-# MI-005 — Category, assembly topology, information profile, operator ideal, source metric, and domain data are part of the arithmetic claim
+# MI-005 — Topology and acquisition category are part of the arithmetic claim
 
-**Evidence level:** supported by exact category-sensitive findings across the active Mathia lines
+**Evidence level:** supported by exact category-sensitive findings across active Mathia lines
 
 ## Core intuition
 
-A source signal can be present yet unusable because it lives in the wrong range, requires unstable conditioning, sits in the wrong operator ideal, aliases under the sampling geometry, collapses when finite pieces are assembled, or is measured in a coefficient geometry not fixed by the source. Finite correctness at every cutoff or tolerance does not determine the infinite object, and coordinate-invariant projection fidelity does not manufacture a canonical spectral scale.
-
-The current evidence sharpens both recovery and assembly. Recovery cost can be fiberwise and stratified; operator mass can vanish or diverge depending on the ideal and interfaces; a weak finite-core limit can hide incompatible strong behavior; and a symmetry-compatible metric can still carry a full commutant gauge. The category therefore includes **how information is measured, normalized, and identified across scale**, not only which finite values are retained.
+Exact information can be present yet unusable because it is measured in the wrong topology, requires an unbounded complexity budget, or is acquired through a restricted observation category. Conversely, an apparent instability may disappear when the representation or sampling category is changed. The arithmetic claim therefore includes **how information is measured, normalized, sampled, and transported**, not only which finite values are retained.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity separates coherent exact information from multiscale regular recovery and now fixes the spectral metric boundary. AF-123--AF-125 treat fiberwise scale/entropy profiles; AF-134 gives minimal witness saturation. AF-135--AF-136 show that full-generator-gauge target fidelity is projection geometry. AF-137 proves compact symmetry generally leaves a positive commutant cone of coefficient metrics, and AF-138 shows that once an independent source metric `M` is specified, the correct coordinate-invariant spectrum is the generalized pencil `(G,M)`. Absolute spectral thresholds require a normalization if `M` is only projectively canonical.
+Arithmetic Fidelity now gives a clean hierarchy inside one source category. Finite-total zero transport leaves exact Bohr recurrence, but AF-270 shows infinite periodic off-critical transport can remain in that category with one prime-power frequency ray. AF-271 then shows bounded divisor complexity is finitely identifiable while stable finite-prefix recovery needs geometric separation. Exact membership, complexity budget, and metric modulus are distinct.
 
-Prime Circle gives a domain/boundary analogue: refinement-compatible fixed categories can force universal/noncompact boundary operators, and the raw prime-axis resultant form is nonclosable while Abel regularization scalarizes. Prime Flute supplies the ideal/assembly counterpart. PF-169--PF-171 show that all short central blocks collectively have convergent squared-resolvent trace budget and sharp first-resolvent `S_r`, `r>1`, summability, so the unresolved category is the uncut interface/transmission assembly rather than the local pieces.
+Xi Flow gives an acquisition-category separation. XF-182 makes positive-real heat visibility deteriorate by powers of the remote index; XF-183 removes those powers by relative normalization only at exponential absolute-error cost; XF-184 removes the remote loss altogether with mesoscopic complex Jacobi samples. A positive-real no-go is therefore not a holomorphic-source no-go.
 
-Prime Lattice shows observation and averaging topology matter after a missing relation is introduced. Additive correlations are new information, but complete direction averaging converts the canonical degree-four cube into generic Fourier/Gowers uniformity. The weighting family is therefore part of the claim.
+Visual Exploration gives the decoder-class version. Exact prime phases identify height set-theoretically, while stable decoding is governed by collision geometry; an omitted prime already produces nowhere-continuous decoding, a dimension-coded heavy tail, and polynomial finite-window complexity. The retained support, metric, regularity class, and threshold-growth law are all part of the source claim.
 
-Weil Inertia gives the changing-target budget analogue. Same-deficit integer-depth refinement has `rank J<=4 Delta`; a proposed additional layer is not a free category change but must be paid by new source information. Weil Positivity gives a sign/topology analogue: the exact cyclotomic radial flux has Mangoldt support only through signed nonlocal cancellation, while shellwise positive norms change the information category and fill in mixed-prime support.
+Nyman--Beurling and Prime Flute show target topology can be equally decisive. Ambient dual norms in Nyman activate only after the relevant repair is unnecessary, while the exact repair is a finite continuous-grid distance gain. Prime Flute's local strengths remain heavy, so compactness is a relative-angle property of extension ranges, not an outer-factor norm statement.
 
-Xi Flow adds the distributional transport category. The infinite positive-frequency zero carrier exists canonically as a horizontal-log-derivative distribution and is Volterra-triangular, but the selected band approaches a singular endpoint. Distributional existence and the quantitative shrinking-band norm required by the final theorem are different resources.
+Weil Positivity supplies a categorical equilibrium control: changing unitality, compact-factor spectrum, or bounded product/non-product coupling does not change the KMS-weight cone while the dynamics remains in the same full-module Morita class.
 
 ## Consequence for synthesis
 
-A useful realization must specify source/target range, recovery regularity and fiberwise profile, coefficient metric and normalization, norm/operator ideal, sampling or averaging geometry, form domain, assembly/exhaustion topology, and the distributional/transport norm used at the destination. If the final theorem needs a dense energy domain, a source-canonical metric, a strong limiting operator, a non-diffuse additive family, an uncut interface estimate, or uniform control near a singular frequency endpoint, those are load-bearing requirements.
+A candidate theorem must specify the source and target spaces, complexity budget, metric/normalization, sampling geometry, operator ideal, domain, assembly topology, and equilibrium/representation category used downstream. A category change counts as progress only if it is forced upstream and supports a target theorem unavailable in the old category.
 
-Changing category can be a genuine advance, but the new category must be forced upstream and support a theorem unavailable in the old one. A measure, metric, normalization, cutoff, exhaustion, averaging family, domain, or singular subtraction chosen after the target appears is additional structure that must be justified.
+Do not divide by an exponentially small reference, choose a complex sampling bank, select a coefficient metric, change an operator ideal, or move to a new thermodynamic category without accounting for the information or analytic estimate needed to justify that move.
 
-## Status / novelty
+## Counterevidence / boundary
 
-The component coding theory, generalized spectral theory, representation theory, functional analysis, sampling, network theory, and distribution theory are classical. The synthesis is the compatibility gate: **the arithmetic claim includes the metric, resource, domain, ideal, averaging/assembly topology, and quantitative limiting identification needed to decode its finite pieces, not merely the pieces themselves**.
+No single topology is universally correct. XF-184 positively demonstrates that a broader observation category can remove a real positive-axis barrier. The principle is not “never change category,” but “make the category part of the theorem and pay for its acquisition.”
+
+## Epistemic status
+
+**Supported cross-line category principle:** exact membership, stable recovery, observation geometry, operator topology, and equilibrium category are separate resources whose compatibility must be proved.
 
 ## Falsification criterion
 
-Construct a source-forced category crossing the current metric/profile/domain/sampling/ideal/assembly barriers while preserving target discrimination, or show that one of these distinctions collapses under the exact hypotheses of a concrete line.
-
-## Lean-formalizable core
-
-- Fiberwise resolution-depth inequalities and witness saturation.
-- Metric transport/generalized spectrum invariance.
-- Sampling/averaging alias versus source-conditioned resolution.
-- Nonclosable versus regularized operator limits.
-- Direct-sum ideal membership versus uncut assembly.
-- Quantized rank budget under a fixed Hilbert-space deficit.
+In one cited setting, show that the downstream theorem is invariant under a category/metric/acquisition change that the current findings treat as load-bearing, or invalidate one of the exact boundary results on which the separation rests.

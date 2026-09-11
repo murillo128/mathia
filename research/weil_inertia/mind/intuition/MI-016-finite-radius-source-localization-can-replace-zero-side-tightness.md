@@ -1,45 +1,43 @@
-# MI-016 — Finite-radius Weil positivity requires cancellation-preserving source discrepancy, not a small PNT remainder
+# MI-016 — Finite-radius Weil positivity has an archimedean reserve that must be paid by signed arithmetic cancellation
 
-**Evidence level:** supported
+**Evidence level:** supported; exact finite-radius reserve proved, arithmetic exclusion open
 
 ## Core intuition
 
-Localized Weil theory moves a hypothetical RH failure to a finite source window, but the useful source term is not total prime mass or an absolutely small Prime Number Theorem remainder. The completed non-prime background is already indefinite, and the density-one part of the von Mangoldt measure cancels only a specific pole contribution. The missing positive branch requires an order-one **signed discrepancy charge** supplied by the actual arithmetic fluctuations.
+Localized Weil theory moves a hypothetical RH failure to a finite source window, but the relevant source term is a signed von Mangoldt discrepancy, not an absolutely small PNT remainder. The newest results add a crucial scale distinction: controlling one natural signed discrepancy globally even subexponentially is already RH-equivalent, while finite odd support creates a strictly positive archimedean reserve that is classical and quantitatively explicit.
 
-The latest result shows that taking absolute values destroys exactly the needed scale. The source theorem must preserve cancellation.
+The surviving route is therefore **finite-radius and first-crossing**, where one can demand an extra source tariff without first solving the global RH-scale discrepancy problem.
 
 ## Strongest justified claim
 
-WI-236--WI-237 show that Bombieri finite truncations detect off-line packets but may lose coercivity through coefficient cost and height escape. WI-238 therefore supplies an independent finite-radius source-side route via Suzuki's localized completed Weil form.
+WI-238--WI-242 show that the completed background without the true prime source remains indefinite, mean density cancels only a specific pole contribution, and ordinary absolute envelopes for `psi(x)-x` are on the wrong scale. Under RH the signed discrepancy supplies exactly the missing order-one charge.
 
-WI-239--WI-240 eliminate generic crossing explanations. The universal logarithmic core crosses zero on its own, and the full gamma-plus-pole form with the von Mangoldt contribution deleted develops unbounded odd negative index. Positivity, if true, must be produced by the arithmetic source rather than by abstract spectral geometry.
+WI-243 makes a tempting replacement impossible as an intermediate theorem. For a concrete odd autocorrelation, the source discrepancy is an exact dyadic finite difference of a weighted Chebyshev remainder, and its exponential growth rate bounds horizontal zero depth. Subexponential growth is equivalent to RH. A generic global signed-discrepancy theorem of that strength is therefore not a cheaper bridge.
 
-WI-241 replaces the von Mangoldt measure by its density-one continuum term and finds an exact cancellation of the pole into a bounded positive resolvent, but the remaining gamma-plus-resolvent background is still indefinite on slow odd modes. The full source burden becomes the signed discrepancy `Lambda-1` against those modes.
+WI-244 returns to finite radius. The archimedean mean multiplier has an exact positive-resolvent decomposition above its zero-frequency floor `M(0)`. Odd support in `[-a,a]` forces each resolvent to lose norm, giving a positive reserve and hence an explicit extra source charge required of every normalized odd zero witness.
 
-WI-242 derives the exact slow-dilate partial-summation formula. The relevant integral weights `E(x)=psi(x)-x` by `x^(-3/2)` with a smooth scale kernel. Substituting a pointwise envelope for `|E|` gives the wrong order: standard unconditional PNT errors produce an exponentially growing bound, while the usual RH estimate `O(sqrt(x) log^2 x)` still yields polynomial growth in the aperture. The kind of absolute square-root-plus-log saving that would make the envelope uniformly bounded is incompatible with Littlewood oscillation.
-
-Under RH, by contrast, the signed discrepancy converges to the exact finite constant required by the background. The order-one source charge is therefore a cancellation-sensitive RH-scale phenomenon.
+WI-245 computes that loss exactly through the Dirichlet--Robin spectrum of the exponential kernel. The total reserve `B_Robin(a)` satisfies `a^2 B_Robin(a) -> (pi^2/4) zeta(3,5/4)`, so the extra arithmetic tariff decays only quadratically with aperture. This is much stronger than the earlier exponential Schur reserve.
 
 ## Synthesis of evidence
 
-The finite-radius route has become a signed-correlation problem. A successful theorem should keep `d(psi-x)` inside the localized autocorrelation/Mellin pairing and exploit a relation that is destroyed by absolute values. Candidate mechanisms include an explicit-formula identity, a source-specific sign/covariance law, or a finite-prime invariant that controls the dangerous slow-mode family collectively.
+The useful source theorem should now be formulated at finite radius: show that the actual `Lambda-1` discrepancy on the dangerous odd family cannot meet the required `M(0)/2 + const/a^2` charge at the first zero crossing, or couple that tariff to another finite-radius invariant. This avoids asking for global subexponential discrepancy control, which WI-243 shows is already RH.
 
-This is stricter than “use a better PNT bound.” Even an RH-quality pointwise estimate is too weak after triangle inequality. The proof architecture itself must preserve the oscillation.
+The architecture matters. Keep cancellation inside the source pairing, retain odd support long enough to harvest the Robin spectral gap, and only then compare with the arithmetic term.
 
 ## Counterevidence / boundary cases
 
-WI-242 does not show that no pointwise information can ever be useful when combined with sign or spectral localization; it only rules out ordinary absolute-envelope arguments. The slow-dilate family is a diagnostic family, not a proof that every dangerous mode has identical structure.
+WI-244--WI-245 do not show that Suzuki's first crossing lies in the odd sector or that the arithmetic discrepancy fails the tariff. A positive reserve is a necessary condition for a zero witness, not an unconditional positivity proof.
 
-The RH limit for the discrepancy is conditional and does not provide an unconditional sign theorem. Suzuki's neighboring RH-equivalent weighted-prime criterion is prior-art guidance, not evidence that the present autocorrelation condition is equivalent to RH.
+The diagnostic discrepancy of WI-243 is one particular profile. Its RH equivalence blocks that global route but does not imply every weaker directional finite-radius statement is RH-complete.
 
 ## Epistemic status
 
-**Supported source-side narrowing:** mean density, generic completion, and absolute PNT-error magnitude cannot supply the required localized sign. The surviving currency is cancellation-preserving signed von-Mangoldt discrepancy against the dangerous mode geometry.
+**Supported finite-radius narrowing:** absolute PNT magnitude is insufficient, global subexponential control of a natural signed discrepancy is already RH-equivalent, and odd finite support creates an explicit `a^-2` archimedean reserve that the arithmetic source must pay.
 
 ## Novelty/prior-art status
 
-Suzuki localization, PNT error bounds, Littlewood oscillation, and partial summation retain their finding-level prior-art status. This intuition states their consequence for the current finite-radius program.
+Suzuki localization, weighted prime criteria, digamma expansions, exponential kernels, and Robin Sturm--Liouville theory retain their finding-level prior-art status. This intuition states the resulting finite-radius proof architecture.
 
 ## Falsification criterion
 
-Derive the required uniform order-one slow-mode compensation from a standard absolute envelope for `psi(x)-x` without using additional cancellation, or invalidate the exact WI-242 integration-by-parts scale. Strategically, prove a cancellation-preserving source identity that controls the signed discrepancy on the full dangerous family; that would cross the current gate.
+Invalidate the WI-243 growth equivalence, the positive-resolvent decomposition, or the exact Robin norm gap. Strategically, prove a finite-radius arithmetic bound showing that the required odd-sector tariff cannot be paid at a first crossing; that would cross the current gate.

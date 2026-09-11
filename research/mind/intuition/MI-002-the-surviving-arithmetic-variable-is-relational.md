@@ -1,33 +1,33 @@
-# MI-002 — A surviving arithmetic relation must remain nontrivial before scalarization and in the final target-bearing quotient
+# MI-002 — Arithmetic information survives only when the source relation survives the target-bearing quotient
 
-**Evidence level:** supported by exact packet/path, scalar-normalizer, reciprocity, selector, and boundary-programmability controls
+**Evidence level:** supported by exact gauge, projection, cocycle, order, and thermodynamic controls
 
 ## Core intuition
 
-“Relational,” “noncommutative,” “higher-dimensional,” or “spectral” is not itself an escape criterion. A genuine relation may become universal after natural algebraic closure, collapse to one scalar before the target is read, or be recreated by programmable boundary data whose positivity already encodes the desired divisor.
-
-The strongest current rule is therefore two-sided: the source relation must be generated **before** the relevant scalarization/classicalization, and a nontrivial part of it must survive in the same final object that carries the target sign or complete divisor.
+“Relational,” “noncommutative,” “higher-dimensional,” or “spectral” is not itself an escape criterion. A source relation can become gauge, decompose into repeated blocks, be reconstructed without preserving order, or survive in a dynamical system whose equilibrium category is unchanged. The useful relation must remain nontrivial in the **same final object that carries the target sign, coercivity, or divisor**.
 
 ## Strongest justified principle
 
-Prime Circle gives the closure side. Its fixed-conductor refinement dynamics classicalize into packet/Cuntz/Bost--Connes structures, and PC-244 now shows that every finite scalar same-endpoint weighted-cover path defect becomes a universal pure-shift object after the path labels are combined. Real path interference can therefore disappear precisely at the scalar quotient.
+Möbius Cancellation gives the sharpest gauge example. MC-215--MC-216 show that the selected residues `-q mod d^2` are one coherent inverse-limit point; a single compatible unit translation removes all explicit selected-character phases, even across moduli and CRT reductions. What remains source-sensitive is the integer lift and the deterministic cancellation between source degrees, not the gauge phase.
 
-Weil Positivity gives the scalarization side. WP-234--WP-236 show that no bounded order of positive prime marginals determines the global coupling. WP-237--WP-241 then show that, once arithmetic has become a central scalar normalizer, homogeneous geometry and fixed one-variable meromorphic postprocessing cannot selectively preserve its original divisor constituents: divisor-faithful scalar calculus collapses to monomials, while nonmonomials introduce level-set divisors or leave the meromorphic channel.
+Prime Circle gives a geometric scalarization control. The complete shared-upper defect is a fixed-width torus-return cocycle; PC-259 shows common integer refinement is exact direct-sum repetition, and PC-260 imposes reversal parity. Raw growth and duplicated forward/backward information disappear before any long-range arithmetic statistic is formed.
 
-Prime Lattice gives the selector/programming side. Positive or self-adjoint ambient structure may leave the principal factor separated or select only a sub-divisor. PL-256 adds that generic boundary/Weyl data are broad enough to program a desired spectral condition; the natural zeta logarithmic derivative is Herglotz exactly under RH, so abstract realization of that Herglotz function does not derive the missing positivity.
+Prime Lattice separates relation recovery from order. PL-271 recovers the source from the whole Galerkin tower, but PL-272--PL-273 prove the source-to-form map is not positive: every active interior atom is eventually indefinite. Exact projective identity does not transport the target sign.
+
+Weil Positivity supplies the category counterpart. WP-252--WP-254 show that nonunital stabilization, arbitrary spatial compact clocks, and bounded non-product module-cocycle interactions all remain equivariantly Morita/exterior equivalent to the same gauge system and inherit its empty nonzero-temperature KMS-weight cone. Visual dynamical richness is not a new arithmetic relation when the equilibrium category is unchanged.
 
 ## Consequence for synthesis
 
-For every bridge, identify where the source relation first exists, which natural operation scalarizes or quotients it, what relation survives afterward, and whether the final target is complete. If the relation disappears before the target or the target is prescribed through free boundary data, the construction has not transferred arithmetic coercivity.
+For every bridge, identify the earliest source relation, each quotient/gauge/projection/category change, and the exact target-bearing object. Then ask whether the relation remains nontrivial there and whether it constrains the required sign/coercivity. If it disappears, becomes a duplicated control, or is merely reconstructible without order, the bridge has not transferred arithmetic force.
 
 ## Counterevidence / boundary
 
-The controls are category-specific. Joint path-labelled or simultaneous-scale Prime-Circle algebras, matrix-valued/multi-cusp automorphic normalizers, and genuinely arithmetic boundary data may escape. Such exits are valuable precisely because they move the source relation to a stage before the closed scalar quotients.
+The controls are category-specific. Integer-lift observables in Möbius, primitive parity-sector cocycles in Prime Circle, collective completed source laws in Prime Lattice, and non-Morita-equivalent source-dependent thermodynamic systems in Weil Positivity remain legitimate escapes because they preserve or introduce relations outside the closed quotients.
 
 ## Epistemic status
 
-**Supported cross-line relation-survival principle strengthened by exact scalarization and programmability controls; no universal no-go theorem or RH implication is claimed.**
+**Supported cross-line relation-survival principle:** source identity is not enough; the relation must remain target-relevant after the full composed map.
 
 ## Falsification criterion
 
-Produce a target theorem in one of the closed categories where the decisive source relation is absent from the target-bearing object and is not reintroduced by prescribed boundary/scalar data, or exhibit a covered scalar postprocessor/path quotient that retains a nontrivial prime-specific relation contrary to the exact classifications.
+Produce a valid target theorem in one of the cited closed categories whose decisive source relation is absent from the target-bearing object and is not reintroduced by extra data, or invalidate one of the exact gauge/direct-sum/order/Morita classifications above.

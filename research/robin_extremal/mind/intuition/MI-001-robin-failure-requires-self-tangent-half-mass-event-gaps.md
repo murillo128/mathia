@@ -1,45 +1,43 @@
-# MI-001 — Robin's surviving prime signal is expelled to exceptional support-edge transitions
+# MI-001 — Robin failure needs growing fan complexity beyond a lacunary summable fringe channel
 
-**Evidence level:** supported
+**Evidence level:** supported under the false-RH common-block setup
 
 ## Core intuition
 
-The adaptive selector fan and the physical first-layer staggering are now too rigid to support a generic accumulating local contradiction. When two physically selected residuals are compared, the generating prime cancels to first order. The remaining binary fringe datum can be nonzero only near an exceptional right edge of the CA support geometry and cannot propagate through a clean chain of adjacent first-layer transitions.
+The ordinary adaptive fan is too rigid to accumulate a local Robin contradiction. The generating-prime term cancels in the consumed residual, nonzero fringe bits are expelled to support edges, and every sufficiently late surviving bit is tied to a deep base-two exit. Those hosts are lacunary and their isolated fringe contributions are summable.
 
-A hypothetical Robin failure must therefore concentrate its unresolved common-source information in **interruptions of the ordinary fan** rather than in its regular interior.
+At the same time, sufficiently strong off-critical failure forces the **number of exposed fan states to grow polynomially**. The unresolved information is therefore not a single local bit but a relation between growing fan complexity and the sparse exceptional event structure.
 
 ## Strongest justified claim
 
-RE-030--RE-044 construct the same-block adaptive fan, prove its translated standard/reciprocal race calibration uniformly on compact threshold intervals, and determine the first-layer selector geometry. Synthetic controls reproduce the fan/support geometry, while physical first-layer selectors straddle the generating prime with half-logarithmic displacement.
+RE-030--RE-048 construct the common-block adaptive fan and show that the first-prime fringe datum cannot propagate through a clean adjacent first-layer chain; every nonzero bit is forced into a vanishing right-edge layer.
 
-RE-045 compares the actual selected residuals and shows that the generating prime's `log p/sqrt p` contribution cancels. The normalized increment is asymptotically binary and records only whether the next ordinary prime has crossed the upper selector while its own CA first-layer event is still pending.
+RE-049 classifies the exit. Curvature and support geometry force `D/C=2`, so the nonzero-fringe hosts lie on the deep base-two CA ladder. Their event coordinates are multiplicatively lacunary, there are only `O(log X)` hosts below `X`, and the extracted `O(log p/sqrt p)` fringe increments are absolutely summable.
 
-RE-046 proves that a nonzero bit cannot be followed through the same exposed state by the immediate clean first-layer successor. Along any uninterrupted chain of adjacent unique first-layer switches, every nonterminal fringe bit is zero.
+RE-050 gives the threshold-space counterpart: right-edge slacks are summable in every positive power and the limsup set of thresholds recurrently covered by those exceptional layers has Hausdorff dimension zero.
 
-RE-047 quantifies the resulting interruption: if the bit is nonzero, the entered threshold cell has right width at most `O_J(p^(b_1-1)/log p)`, hence `o(p^-1/2)` in the monitored regime.
-
-RE-048 removes dependence on the next fan event. The same bit pins the switch to the final `O(1/log p)` fraction of the state's genuine CA supporting-slope interval. The exceptional signal is therefore intrinsically a support-edge phenomenon.
+RE-051 constrains the whole fan in a different direction. If RH is false with rightmost zero frontier `Theta>theta`, where every sufficiently large interval `[x-x^theta,x]` contains a prime, then on every compact `J subset (1-Theta,1-theta)` every exposed threshold cell has vanishing width and the number of exposed states grows at least polynomially. With the current `theta=0.52`, this applies whenever `Theta>0.52`.
 
 ## Synthesis of evidence
 
-The earlier goal “resolve the generating-prime jump more accurately” is no longer the right local target. That jump cancels in the consumed statistic. What survives is a sparse exceptional geometry: nonzero fringe information forces the fan to encounter a higher-layer/tied event, skip states, terminate, or otherwise leave the clean first-layer chain almost immediately.
+In the strongly off-critical chamber, false RH must generate many adaptive states while the known nonzero-fringe channel remains too sparse to carry that complexity or accumulate the required residual correction. A decisive theorem should couple cell changes to an arithmetic event invariant and show that a polynomially growing fan cannot consist almost entirely of fringe-zero ordinary transitions.
 
-A promising theorem should aggregate those interruptions. It could bound how often support-edge saturation occurs, determine which CA event types can terminate the chamber, or derive a signed bias in the corresponding race residuals. Any such statistic must retain the common prime-power source and beat the existing race-error scale.
+This is stronger than merely classifying exceptional exits. The source problem has become a **capacity mismatch question** between required fan complexity and the small capacity of the isolated base-two fringe channel.
 
 ## Counterevidence / boundary cases
 
-The findings do not show that nonzero fringe bits occur with positive density or any fixed sign. They only constrain where they may occur. A hypothetical counterexample could in principle encode all needed information in a sparse sequence of exceptional transitions.
+RE-051 does not imply that many exposed states produce many nonzero fringe bits. The fan can in principle grow through ordinary fringe-zero transitions. RE-049--RE-050 do not classify all information carried by the associated base-two events or other higher-layer/tied events.
 
-The support-edge estimates are conditional on the false-RH common-block/fan setup and on the stated adjacent first-layer switch hypotheses. Higher-layer/tied transitions remain deliberately unclassified.
+The fan-complexity theorem currently requires `Theta>theta` and therefore does not cover the near-critical chamber `1/2<Theta<=0.52` with the cited unconditional short-interval exponent.
 
 ## Epistemic status
 
-**Supported localization of the remaining signal:** ordinary adjacent first-layer interiors cannot accumulate the fringe datum; any nonzero bit is forced into a vanishing right-edge layer and triggers an interruption of the clean chain.
+**Supported capacity narrowing:** the isolated fringe bit is lacunary, summable, and threshold-negligible, while sufficiently strong off-critical failure forces polynomial fan complexity. The missing theorem must couple complexity to richer source information.
 
 ## Novelty/prior-art status
 
-This synthesis inherits the finding-level prior-art boundaries for CA event formulas, Robin's criterion, and prime-race normalizations. It makes no independent novelty claim.
+This synthesis inherits the finding-level boundaries for CA event formulas, Robin's criterion, prime short intervals, lacunarity, and Hausdorff covering. It makes no independent priority claim.
 
 ## Falsification criterion
 
-Exhibit a long clean adjacent-first-layer fan chain with a nonterminal nonzero fringe bit under the RE-046 hypotheses, or a nonzero fringe switch that remains a positive fraction away from the right edge of its CA support interval contrary to RE-048. Strategically, prove a quantitative law for the exceptional interruptions strong enough to change the false-RH block analysis.
+Produce a RE-051 block with bounded fan complexity in its stated regime, a nonzero-fringe host violating RE-049/RE-050 sparsity, or show that the forced polynomial fan can be proved harmless without any further source statistic. Strategically, an exact relation tying fan cell transitions to a non-summable arithmetic residual would cross the current gate.

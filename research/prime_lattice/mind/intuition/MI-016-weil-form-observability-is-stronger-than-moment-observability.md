@@ -1,45 +1,41 @@
-# MI-016 — Weil source identity is projectively recoverable, but positivity needs a cross-band arithmetic law
+# MI-016 — Weil source identity and cutoff coherence are recoverable, but neither is an order law
 
-**Evidence level:** supported by exact finite/projective identifiability theorems
+**Evidence level:** proved observability/order/transport boundary; global arithmetic positivity remains open
 
 ## Core intuition
 
-Finite-dimensionality is not the decisive obstruction in Weil-form approaches, but neither is exact source recovery the missing positivity theorem. A fixed finite Galerkin band forgets most of the detailed prime-power event stream and admits exact positive sparse aliases. The complete tower of bands removes that ambiguity and recovers the source modulo the zero-frequency endpoint. Yet this recovery is generic Fourier uniqueness and does not distinguish the rational-prime source by sign.
+Finite source loss is not the final obstruction in Weil-form approaches: the complete Galerkin/cutoff family can recover the source. But exact recovery and exact cutoff coherence are generic information properties, not sign principles. Every active interior source atom is eventually indefinite, and its cutoff motion is the same universal affine transport obeyed by an arbitrary log-source measure.
 
-The unresolved currency is therefore a **cross-band arithmetic compatibility law stronger than reconstruction** that forces positivity of the original completed localized Weil form.
+The missing sign must therefore come from a **von-Mangoldt-specific collective law plus the completed archimedean/pole structure**, not from reconstructing the source more faithfully.
 
 ## Strongest justified claim
 
-PL-259--PL-269 establish the observability/aperture hierarchy. Every RH failure is finitely visible; the CvS and Suzuki constructions evaluate the same localized completed Weil form; individual event jets are template-universal; the ground energy is strictly decreasing; and
+PL-259--PL-271 establish finite detectability, fixed-band aliasing, and full-tower source recovery. PL-272 separates recovery from order with the exact `delta_(1/2)` signature `diag(1,-1)`. PL-273 strengthens this to every interior frequency: beyond a frequency-dependent band, a positive atom has both a positive constant direction and a negative cosine direction. All active prime-power source atoms are therefore eventually indefinite.
 
-`RH <=> lambda_a -> 0`.
+PL-274 adds the cutoff parameter and shows that its apparent coherence is generic. Any locally finite log-source `eta` gives normalized measures `nu_L=(1-x/L)_*(eta|_(0,L])` satisfying one exact affine transport law between cutoffs. The complete `(L,N)` family identifies `eta` exactly, yet a single positive atom already satisfies this transport/projective coherence and still produces an indefinite source matrix.
 
-This gives an exact destination but no source-side sign selector.
-
-PL-270 shows how much one finite band forgets. Groskin's source calculus factors the prime contribution through `2N+1` real coordinates. Positive Caratheodory--Tchakaloff compression then reproduces the same entire level-`N` matrix with at most `2N+1` positively reweighted prime-power atoms selected from the active support. Finite-band eigenvalues, inertia, determinants, and all other matrix invariants inherit the same alias.
-
-PL-271 proves that this ambiguity is not coherent across all bands. If two finite signed source measures give the same source matrix for every `N`, their difference is a multiple of the zero-frequency atom `delta_0`. On any fixed support away from zero, sufficiently many bands recover all source masses exactly. Thus the full projective source tower is information-theoretically faithful.
+Thus source positivity, projective band coherence, all-cutoff affine coherence, and exact source identity can all hold without the target sign.
 
 ## Synthesis of evidence
 
-The source-positivity problem now has three distinct layers. **Finite observability** detects bad directions. **Projective identifiability** recovers the source that generated the finite matrices. **Arithmetic positivity** must explain why that recovered source, together with the archimedean/polar completion, keeps every finite-aperture ground energy positive.
+The useful next theorem must locate a relation absent from a generic positive log-source. Possibilities include arithmetic constraints among prime-power entry events and weights, a non-affine cross-cutoff identity using the completed explicit formula, or cancellation with pole/archimedean terms that is sign-relevant before it becomes a restatement of Weil positivity.
 
-This rules out two shortcuts at once. One fixed matrix cannot appeal to detailed event identity that it does not contain. Conversely, reconstructing the entire source from the tower is not enough, because generic finite measures enjoy the same uniqueness theorem. The useful next theorem must exploit a relation among bands/cutoffs that is special to the canonical von Mangoldt weights and sign-relevant before it becomes a restatement of Weil positivity.
+The source tower is now best viewed as lossless infrastructure. Its mathematical value is that any successful global law can be stated without ambiguity about which source generated the finite matrices; the tower itself does not create order.
 
 ## Counterevidence / boundary cases
 
-PL-270 aliases may change the canonical von Mangoldt weights and depend on `(c,N)`; they are not alternate zeta sources. PL-271 is exact but nonquantitative: it gives no useful band threshold, conditioning, or stability as prime-power frequencies cluster. Quantitative instability could be a real obstruction even after algebraic identifiability.
+PL-274 does not say all relations among cutoffs are generic. It classifies only the affine kinematics induced by normalizing one fixed log-source. The actual von Mangoldt support and weights may satisfy additional nonlocal laws, and the completed Weil form contains terms absent from the source matrices.
 
-The zero-frequency endpoint is genuinely invisible in the sine-source representation and must be handled by the completed formulation rather than wished away.
+Projective recovery may also be ill-conditioned. That matters for constructive estimates but cannot repair the exact atomwise sign failure.
 
 ## Epistemic status
 
-**Exact observability/identifiability boundary:** fixed bands are source-nonidentifying, the full tower is source-identifying modulo the null endpoint, and neither fact proves the missing sign. The live target is a source-specific cross-band positivity/rigidity law.
+**Exact observability/transport/order boundary:** the all-band/all-cutoff family can be source-lossless while every active source atom is indefinite and the cutoff motion is universal. The missing Weil sign is a genuinely collective arithmetic-completion phenomenon.
 
 ## Novelty/prior-art status
 
-The finite source quotient, Tchakaloff compression, Fourier uniqueness, and localized Weil results retain their finding-level prior-art classifications. This intuition synthesizes their role.
+The Groskin kernel, affine pushforward kinematics, localized Weil calculus, and Fourier arguments retain their finding-level prior-art classifications. This intuition records their combined information boundary.
 
 ## Falsification criterion
 
-Construct a nonzero source perturbation away from `omega=0` that leaves every Groskin band unchanged, or show that one fixed-band sign argument genuinely uses canonical source information not determined by that band's quotient. Strategically, prove a cross-band law of the canonical source that forces finite-aperture Weil positivity without simply reconstructing the explicit formula; that would cross the current gate.
+Construct an interior source atom that becomes positive semidefinite at all sufficiently large bands, or find a positive log-source violating the PL-274 affine transport identity. Strategically, a von-Mangoldt-specific cross-cutoff/completion law forcing the correct sign would cross the current gate.

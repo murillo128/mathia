@@ -6,24 +6,20 @@ This file holds the current mathematical questions suggested by the durable prim
 
 **Linked intuition:** `MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap`.
 
-PF-271--PF-278 show why separated propagation initially looked promising and why the fixed-axis route nevertheless closes at the critical continuum threshold. The fully Robin-normalized fixed-row shell leakage is `asymp N^(-1)(log N)^(-3/2)`: logarithmically improved, but not supercritical by any fixed power. The fixed-axis Robin-homotopy route is closed rather than merely unresolved.
+PF-271--PF-278 show that the fully Robin-normalized fixed-row shell leakage is only logarithmically improved at the critical continuum threshold. The fixed-axis Robin-homotopy route is closed.
 
-## Prove angular decay on genuinely infinite heavy sectors
+## Decide the endpoint by local energy-normalized low/high correlation on heavy extension ranges
 
 **Linked intuition:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`.
 
-PF-228--PF-283 reduce the physical low/high leakage to the bounded energy-normalized factorization `T=F_P Gamma F_H`. On heavy extension sectors the outer strengths saturate, so relative extension angle is the mixed-channel currency. PF-283 gives a sufficient weak-trace criterion through thresholded angle counting.
+PF-279--PF-286 reduce the physical mixed endpoint to `T=F_P Gamma F_H`, show that outer strength factors remain heavy on infinite tails, and separate sufficient from necessary heavy-angle counting laws. Endpoint decay must come from relative low/high geometry rather than compact outer factors.
 
-PF-284 makes the endpoint budget two-sided. For symmetric threshold `tau`,
+PF-287 makes that geometry form-native. Every fixed-threshold heavy angle is exactly the cross-Gram of two isometric unit-energy extension maps and has the same nonzero singular values as the product of the corresponding heavy-range projections. Compactness is therefore essential orthogonality of two infinite-dimensional physical extension ranges.
 
-`N_T(4 tau) <= N_(Gamma_tau)(2 tau) <= N_T(2 tau^3)`.
+PF-288 converts this global statement into a local falsifier: separated low/high local vectors with large Rayleigh quotients and nonvanishing normalized mixed form correlation force heavy-angle noncompactness. PF-289 weakens the high-side requirement further. Uniform positive Rayleigh floors suffice at suitably chosen fixed thresholds; PF-216 supplies the low family and PF-227 already supplies a high family with such a floor.
 
-Thus `O(tau^(-1))` is a sufficient heavy-angle count, whereas weak trace class itself forces only the much weaker `O(tau^(-3))` necessary envelope. Failure of the original sufficient count is not yet an endpoint obstruction; divergence of the corresponding `tau^3` statistic is.
+The cheapest decisive negative test is now concrete: determine whether the PF-227 high witnesses can be chosen so that their energy-normalized mixed correlation with the corresponding PF-216 low-symmetric vectors stays bounded away from zero on an infinite separated tail. If yes, `T` is noncompact. If every such local correlation vanishes, this falsifier fails and the positive problem returns to quantitative essential orthogonality/counting of the heavy ranges.
 
-PF-285 identifies an abstract cheaper route: complementary weak-Schatten decay of the two extension-strength factors would close the endpoint even with no angular decay. PF-286 rules that route out for the canonical physical split. The low strength factor has infinite rank above every positive threshold, and the high strength factor is noncompact with an infinite heavy population below a fixed threshold. No finite population exponents exist.
+## Treat local mixed correlation, heavy-range projection geometry, and weak-trace counting as separate gates
 
-The live theorem is therefore genuinely angular: compactness/weak-trace decay must come from the **relative low/high extension geometry on infinite-dimensional heavy sectors**, or from an equivalent threshold-dependent strength-angle relation. Raw reservoir size, population decay of the outer factors, and the original `tau^(-1)` sufficient statistic are now matched controls.
-
-## Treat sufficient angle counts, necessary endpoint counts, strength populations, and physical angle geometry as separate gates
-
-The energy-normalized factorization isolates the right channel, but several endpoint criteria have different logical strength. Future work should first test the genuine obstruction statistic supplied by PF-284 and then exploit the complete physical extension geometry; it should not infer endpoint failure from a missed sufficient count or hope that outer-factor compactness will supply the missing decay.
+A missed sufficient `tau^-1` count is not endpoint failure, and infinite heavy populations are not endpoint failure by themselves. The new local form criterion gives a cheaper genuine obstruction: persistent normalized low/high correlation already kills compactness.

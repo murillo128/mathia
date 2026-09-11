@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-side positivity from cross-band coherence, not one finite Weil quotient
+## Prove positivity from a genuinely von-Mangoldt-specific global completion law
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
-PL-259--PL-269 solve the main observability and aperture-geometry questions. Every RH failure is finitely visible, the CvS and Suzuki paths evaluate the same localized completed Weil form, the ground energy is strictly decreasing with a unique crossing off RH, and `lambda_a -> 0` is itself equivalent to RH. None of these facts explains why the rational-prime source selects the positive branch.
+PL-259--PL-271 solve the main observability and source-identifiability questions. Every RH failure is finitely visible; one fixed band forgets most source events; and the full projective tower recovers a finite source modulo the zero-frequency atom.
 
-PL-270 adds a sharp finite-band information-loss theorem. At fixed Galerkin band `N`, the prime source factors through only `2N+1` real source coordinates, and positive Caratheodory--Tchakaloff compression can replace all active prime-power atoms by at most `2N+1` reweighted survivors while leaving the entire finite matrix unchanged. One fixed matrix therefore cannot use detailed event identity to force its sign.
+PL-272--PL-273 close atomwise order. A positive atom at `omega=1/2` is already indefinite on two modes, and every interior source atom is eventually permanently indefinite as the band grows. Every active prime-power atom is interior, so higher resolution cannot turn source positivity into matrix positivity.
 
-PL-271 identifies the exact boundary of that obstruction. The full projective tower over all bands determines any finite signed source on `[0,1]` modulo the genuinely invisible zero-frequency atom; on a fixed nonzero finite support, some finite band eventually has full rank. Independent finite-band aliases cannot be made into one coherent all-band alternative source.
+PL-274 closes the simplest cross-cutoff coherence escape as well. For any locally finite log-source measure, normalized source atoms move between cutoffs by the same universal affine transport and new mass enters at `omega=0`; the complete band/cutoff family even identifies the underlying log-source exactly. A single positive source atom satisfies all this coherence yet still produces the PL-272 indefinite block. Cutoff transport plus full projective recovery is therefore generic kinematics, not arithmetic rigidity.
 
-The live theorem is therefore a **cross-band source-coherence positivity law**. It must exploit compatibility of the canonical von Mangoldt masses as band and cutoff grow, or another completed relation stronger than mere reconstruction of the source. Projective identifiability restores information but is generic Fourier uniqueness and does not by itself select positive Weil sign.
+The live theorem must exploit a relation that **distinguishes the von Mangoldt log-source from an arbitrary positive measure**, or use the pole/archimedean completion essentially. Candidate information must involve the prime-power event stream, its exact weights/couplings, or another cross-cutoff law stronger than universal affine transport.
 
-## Treat finite detectability, finite-band identifiability, projective source recovery, and source positivity as separate gates
+## Treat finite detectability, projective recovery, cutoff transport, atomwise order, and completed positivity as separate gates
 
-A finite core detects negative directions but forgets most source atoms; the full band tower recovers the source but remains sign-neutral. Future work should look for an arithmetic compatibility law across the recovered tower—monotonicity, positivity, rigidity, or another relation absent from matched generic sources—rather than infer the sign from observability or exact reconstruction alone.
+The complete `(cutoff, band)` family is source-lossless and still sign-neutral. Any surviving positivity mechanism must be collective and zeta-specific rather than a refinement of source reconstruction or generic cutoff coherence.

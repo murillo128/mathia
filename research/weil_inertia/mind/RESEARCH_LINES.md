@@ -6,20 +6,20 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 **Linked intuitions:** `MI-008-inertia-counts-offline-pairs-but-not-their-distance`, `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-231--WI-237 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows. The unconditional simple critical-line exponentials are complete in `L^2(E)` on every bounded positive-measure window and are not a Bessel family, so ordinary separation/Riesz arguments cannot exclude spectral collapse. The surviving Bombieri-side currency is the coefficient price of the eigenvector-selected approximation together with height tightness.
+WI-231--WI-237 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows. The unconditional simple critical-line exponentials are complete on every bounded positive-measure window and are not a Bessel family, so ordinary separation/Riesz arguments cannot exclude spectral collapse. The surviving Bombieri-side currency is coefficient price together with height tightness.
 
-## Make the finite-radius route a cancellation-preserving signed von-Mangoldt discrepancy theorem
+## Use finite-radius odd-sector reserve, not global discrepancy growth, on the localized source route
 
 **Linked intuition:** `MI-016-finite-radius-source-localization-can-replace-zero-side-tightness`.
 
-WI-238--WI-241 move the alternative route to Suzuki's localized Weil operator and isolate the source term. Generic first-crossing geometry, the prime-deleted completed background, and even the density-one continuum replacement all remain indefinite. The full odd form can be organized as a negative background plus a signed discrepancy of the actual von Mangoldt source from density one.
+WI-238--WI-242 isolate the signed `Lambda-1` discrepancy in Suzuki's localized odd Weil form and show that absolute PNT envelopes destroy the order-one cancellation needed at RH scale.
 
-WI-242 prices the obvious Prime Number Theorem route. For slow odd dilates the discrepancy has an exact integration-by-parts formula with critical weight `E(x)x^(-3/2)`, `E=psi-x`. Every standard absolute-envelope argument is on the wrong scale: unconditional PNT bounds give an exponentially growing majorant, and even the usual RH pointwise bound gives only polynomial growth in the aperture. Littlewood oscillation rules out the kind of uniformly stronger square-root envelope that triangle inequality would need.
+WI-243 proves that even a very weak global growth theorem for one natural dyadic odd discrepancy is already RH-equivalent: subexponential growth alone forces every zero to the critical line. The live route cannot simply replace absolute-value bounds by a generic global signed-discrepancy estimate; that target is already complete.
 
-Under RH the same slow-dilate discrepancy converges to the exact order-one constant required by the negative background. The missing source charge is therefore a **cancellation phenomenon at RH scale**, not a consequence of making `|psi(x)-x|` small.
+WI-244 then exploits finite radius before taking a global limit. The archimedean mean multiplier has its exact floor at zero frequency, and odd support in `[-a,a]` forces a positive reserve above that floor. Every finite-radius odd zero witness must therefore pay an explicit extra arithmetic source charge.
 
-The live theorem must preserve sign, Mellin structure, autocorrelation, or another cancellation mechanism in the `Lambda-1` discrepancy. A black-box pointwise PNT error bound followed by absolute values is now a matched control, not a plausible closure route.
+WI-245 sharpens the reserve using the exact Dirichlet--Robin spectrum of the exponential resolvent kernels. The extra tariff is not merely exponentially small: it has the asymptotic size `const/a^2`, with an explicit nonasymptotic lower bound. The missing theorem is now to show that the **actual signed von Mangoldt discrepancy cannot pay this finite-radius odd-sector tariff at the relevant first crossing**, or otherwise exploit that reserve without proving an RH-equivalent global discrepancy bound.
 
-## Treat finite inertia, mean-density completion, absolute PNT envelopes, and signed discrepancy cancellation as distinct objects
+## Treat global signed growth, finite-radius archimedean reserve, and arithmetic source charge as separate gates
 
-Finite negative index can lose quantitative coercivity; mean density cancels only part of the completion; absolute error envelopes destroy the needed order-one source charge. Future source-side arguments must keep the signed discrepancy inside the actual localized quadratic form long enough for its cancellation to act.
+Global subexponential control of a diagnostic discrepancy is already RH. Finite support, by contrast, creates a classical positive reserve of order `a^-2` that any odd zero mode must overcome arithmetically. Future work should keep the argument at finite radius/first crossing long enough to use that tariff.

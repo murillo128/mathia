@@ -1,43 +1,45 @@
-# MI-009 — Stable analytic information is measured by phase-collision geometry, not set-theoretic recoverability
+# MI-009 — Stable analytic novelty must beat the held-out-prime collision baseline
 
-**Evidence level:** proved representation criterion; source-sensitive applications remain open
+**Evidence level:** proved representation criterion plus quantitative matched null; zeta separation remains open
 
 ## Core intuition
 
-Exact prime phases can contain far more set-theoretic information than any stable representation can use. Two distinct prime phases already identify every real height, but the inverse map is nowhere continuous because the Kronecker orbit returns arbitrarily close to itself at arbitrarily distant heights. Hence “the analytic coordinate is not determined by the phases” is the wrong notion of independence at infinite precision.
+Exact finite prime phases contain set-theoretic height information that no stable decoder can necessarily use. The exact Lipschitz decoder cost is the phase-collision quotient, but the newest evidence shows that large or even polynomially growing collision complexity is not automatically zeta-specific: an ordinary omitted prime frequency already produces it.
 
-For Lipschitz recovery there is an exact replacement: the required decoder complexity is the worst ratio between observable separation and prime-phase separation over recurrent near-collisions.
+The meaningful source question is therefore **relative**. A zeta-facing coordinate must separate quantitatively from held-out-prime recurrence under the same representation budget.
 
 ## Strongest justified claim
 
-VIS-161 proves that for distinct primes `p,q`, the map `t -> (p^(-it),q^(-it))` is injective and dense in the two-torus, while its inverse on the orbit is nowhere continuous. Every same-height observable therefore factors set-theoretically through two exact phases, but a continuous torus decoder would have to be bounded and Bohr almost periodic.
-
-VIS-162 freezes a finite prime set `P` and the chordal torus metric. For an observable `A` on a height set `S`, define
+VIS-161 proves that two exact prime phases identify real height while the inverse on the dense torus orbit is nowhere continuous. VIS-162 shows that, for fixed support `P`, the optimal exact Lipschitz decoder constant for an observable `A` is exactly
 
 `Lambda_P(A;S)=sup_(t!=u) |A(t)-A(u)|/||Phi_P(t)-Phi_P(u)||`.
 
-Kirszbraun's theorem makes this quantity exactly the smallest Lipschitz constant of any exact torus decoder. For approximate decoding, every `L`-Lipschitz decoder with uniform error `epsilon` must pay at least half of the worst collision excess `(|Delta A|-L D_P)_+`.
+VIS-163 supplies a decisive null model. If `r` is a prime omitted from `P`, the phase `r^(-it)` has no continuous decoder from the retained torus, its orbit decoder is nowhere continuous, and its global Lipschitz collision quotient is infinite. Thus qualitative decoder failure can mean nothing more than frequency omission.
+
+VIS-164 anchors one retained phase exactly and computes the limiting collision law for the omitted prime. If `d=|P|-1`, fixed-threshold exceedances converge to a Haar law with tail `c_d L^(-d)`. The heavy-tail exponent is the retained support dimension, not a zero-side invariant.
+
+VIS-165 crosses the fixed-threshold limitation in a rigorous range. Linear-form lower bounds make the prime-log rotation finite Diophantine type; discrepancy theory then gives polynomial equidistribution error. Consequently the held-out-prime exceedance law remains valid for sufficiently slowly growing polynomial thresholds and forces positive-power growth of finite-window Lipschitz complexity.
 
 ## Synthesis of evidence
 
-Stable analytic novelty can be tested without searching over decoder architectures. Freeze the representation, metric, normalization, and height window; then study the collision profile `Lambda_P(A;T)`. Large values mean that distant heights recur close in phase while the observable remains separated, forcing any stable decoder to become increasingly ill-conditioned.
+The correct experimental/theoretical object is now a normalized comparison. Freeze retained support, anchor convention, torus metric, height window, observable normalization, and threshold law. Compare the zeta-facing collision profile with one or more held-out-prime controls matched in frequency/scale. Only an excess beyond the dimension-coded Haar/discrepancy baseline is evidence of additional analytic structure.
 
-The zeta-specific question is comparative rather than absolute. Generic recurrence can make many observables hard to decode. A useful source claim must show that a chosen normalized zeta-facing coordinate has collision-complexity growth not shared by matched deterministic phase/clock controls.
+Alternatively let the retained support grow and prove a uniform separation that survives changing torus dimension and recurrence scale. Simply increasing support without controlling that geometry does not remove the null.
 
 ## Counterevidence / boundary cases
 
-The exact criterion is metric- and decoder-class-specific. It concerns Lipschitz maps into a Hilbert target; other regularity classes need their own extension/complexity theorem. A globally unbounded observable trivially has no continuous decoder on a compact torus, so useful tests should use normalized observables or finite expanding windows.
+VIS-165 supplies only an existence exponent depending on the fixed prime set and a conservative threshold-growth regime, not an extreme-value law. A zeta observable could match the held-out-prime tail at fixed support yet separate in another regularity class, joint statistic, or growing-support regime.
 
-A large collision quotient is not automatically arithmetic. It may reflect generic Kronecker recurrence, an unfortunate normalization, or a deterministic observation clock.
+The criterion remains metric- and decoder-class-specific. Other stable representation classes require their own matched null and extension theorem.
 
 ## Epistemic status
 
-**Exact stable-representation boundary:** raw finite-prime phase information identifies height set-theoretically, while Lipschitz recoverability is characterized exactly by one pairwise collision quotient. Whether a specific zeta observable separates from matched controls remains an open source question.
+**Exact criterion plus quantitative omitted-source null:** stable decoder complexity is measurable directly from collisions, but fixed-support divergence and even some polynomial growth are already classical consequences of omitting one prime frequency. Source sensitivity requires quantitative separation from that baseline.
 
 ## Novelty/prior-art status
 
-Kronecker recurrence, almost-periodic pullbacks, and Kirszbraun extension are classical. The Mathia-specific content is the representation audit and its use as a precise visual-control criterion.
+Kronecker--Weyl theory, linear forms in logarithms, discrepancy bounds, and Lipschitz extension remain classical as recorded in the findings. This intuition synthesizes the resulting control standard for visual research.
 
 ## Falsification criterion
 
-Find a finite-prime phase orbit function satisfying all pairwise `L`-Lipschitz inequalities but admitting no `L`-Lipschitz torus extension, or prove that a proposed zeta collision profile is reproduced by an appropriate matched deterministic control. The former would contradict the stated criterion; the latter would invalidate the claimed source sensitivity.
+Construct a continuous finite-support decoder for an omitted prime, invalidate the Haar tail or polynomial discrepancy regime of VIS-164--VIS-165, or show that a proposed zeta separation disappears when compared under the same held-out-prime normalization. A robust excess over that matched baseline would cross the current gate.

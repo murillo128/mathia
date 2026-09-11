@@ -1,47 +1,49 @@
-# MI-004 — Nyman source information can localize far below the scale needed for geometric target repair
+# MI-004 — Nyman source information localizes before the closure-level target gap is controlled
 
-**Evidence level:** proved structural identities with an open bridge between them
+**Evidence level:** proved structural identities with an open source-to-target bridge
 
 ## Core intuition
 
-A useful Nyman compression can be well conditioned and source faithful while still hiding a target oracle. The current evidence now separates that oracle from source localization much more sharply: the Burnol-scale directional signal can be concentrated in a very small cutoff prefix, while the exact zero-loss repair is a target projection that is only approximately supplied by a recursively smaller Nyman section.
+A source-faithful quotient can expose the relevant directional mass while still hiding the target repair. The hidden quantity is now identified at two levels: finitely it is the gain from enriching the reciprocal-integer Nyman section by the parameters `M/n`; asymptotically it converges to a global projection gap between the natural and continuous Nyman closures.
 
-Thus “the source information is already visible at small scale” and “the target can be repaired cheaply” are different mathematical statements.
+Ambient norm control cannot reach the regime where this gap matters. The live problem is therefore a **source-to-target-orientation bridge**, not better conditioning or a vanishing-mesh argument.
 
 ## Strongest justified claim
 
-NB-031--NB-040 construct the weighted tail-shell quotient. It preserves the head source coordinates with polynomial conditioning, has an intrinsic `Theta(1/M)` source-only target-loss floor, and admits exact zero-loss repair by one unique target-selected line `span(P_W e)`.
+NB-031--NB-048 construct the weighted tail-shell quotient, localize the directional Burnol-scale signal, and approximate the unique target repair recursively. The recursive error is explicit but still target-selected.
 
-NB-041--NB-044 price the obvious ambient dual route. The logarithmic repair coordinate has an explicit shrinking Möbius dual, but any fixed power decay of its full norm already gives a zero-free strip, and the optimal exponent equals the zeta zero frontier. Ambient norm improvement is therefore not a cheap route to the target.
+NB-049 proves the ambient-norm threshold is misaligned with the repair corridor: `||Omega_M||/d_N -> 0` forces `M d_N^2 -> infinity`, precisely where the weighted skeleton is already relatively lossless. Critical/subcritical repair requires directional information stronger than Cauchy through the full norm.
 
-NB-045 identifies a directional alternative: bounded step-tail discrepancies reconstruct `d_N^2` through an exact positive logarithmic average. NB-046 shows a prefix with `log M >> sqrt(log N)` already captures asymptotically all that mass. NB-047 then transfers Vinogradov--Korobov cancellation to the dual and pushes a sufficient cutoff to doubly-logarithmic scale, for example `M=exp((log log N)^(5/3+epsilon))`.
+NB-050 gives the finite normal form. After Bagchi dilation the weighted tail is `C_(M,N)=span{rho_(M/n):M<n<=N}`, containing `V_K`, and
 
-NB-048 attacks the geometric oracle from another direction. The dilated best approximant from `V_K`, `K=floor(N/M)`, lies in the weighted tail and approximates the unique repair vector with exact squared error
+`widetilde d_(M,N)^2-d_N^2=(d_K^2-delta_(M,N)^2)/M`.
 
-`L_(M,N) - (1-d_K^2)/M`.
+NB-051 shows the numerator is not generically a mesh error. If both scales grow with `N/M -> infinity`, then `delta_(M,N)->d_cont`, `d_K->d_nat`, and
 
-The corresponding repaired skeleton has target-distance excess between zero and `d_K^2/M`. The oracle is therefore recursively approximable, but the approximation still consumes the smaller-section best projection.
+`M(tilde d_(M,N)^2-d_N^2) -> Delta_*:=d_nat^2-d_cont^2`.
+
+At fixed aspect ratio the finite enrichment can remain bounded away from zero. The recursive repair therefore misses a genuine target component in the extra continuous Nyman directions.
 
 ## Synthesis of evidence
 
-The line has exposed two exact compression mechanisms that do not yet meet. One localizes **directional source evidence** to a very small prefix. The other localizes **geometric target repair** to a smaller Nyman section. A genuinely new theorem would connect them: use the source-localized directional data to estimate the recursive repair slack or an equivalent target functional without first solving the smaller/full projection problem.
+The source and target sides are now exact but structurally different. One side is a localized directional flow; the other is a continuous-versus-natural projection gap. A new theorem must connect them, or prove that the relevant gap vanishes/has controlled sign under a source condition available before solving the Nyman target.
 
-This is stronger than seeking better matrix conditioning and weaker than controlling the ambient dual at an RH-equivalent power scale. It asks for a source-selected relation between two already-identified exact objects.
+This also kills a tempting simplification: refining the finite grid does not automatically make the recursive repair exact at first order. The limiting obstruction can survive refinement as `Delta_*`.
 
 ## Counterevidence / boundary cases
 
-NB-047's cutoff localization controls the aggregate directional identity, not the weighted-tail repair vector. NB-048's recursive vector is constructed from `P_(V_K)e`, so it is not source-only merely because `K<N`. No finding yet shows that the prefix discrepancies determine or tightly bound the repair slack.
+NB-051 does not determine whether `Delta_*` is positive, zero, or how it interacts with RH in the regime needed by the research program. It identifies the limiting target quantity; it does not provide source access to it.
 
-The condition `d_K^2/(M d_N^2)->0` is a sufficient preservation condition, not an unconditional estimate. Choosing `M` to make the prefix small does not automatically make that ratio favorable.
+NB-049 remains a method obstruction only. Directional correlations can beat ambient norm bounds, and such a relation is precisely the surviving possibility.
 
 ## Epistemic status
 
-**Exact separation plus open bridge:** directional Burnol-scale mass localizes unconditionally to a tiny prefix, and the target oracle admits an exact smaller-section approximation with explicit slack, but no persisted result converts the former into control of the latter.
+**Exact source/target separation with closure-level normal form:** ambient norms activate too late, finite repair slack is an enrichment gap, and its two-scale first-order limit is the natural-versus-continuous target projection gap.
 
 ## Novelty/prior-art status
 
-The source identities, Vinogradov--Korobov input, projection geometry, and dilation mechanism retain their finding-level prior-art boundaries. This intuition is a synthesis of their interaction.
+The Nyman family, Bagchi dilation, projection geometry, and closure arguments retain their finding-level prior-art boundaries. This intuition synthesizes the exact finite and limiting normal forms.
 
 ## Falsification criterion
 
-Show that the NB-046/NB-047 prefix data cannot distinguish two admissible finite-section states with materially different NB-048 repair slack under the same source constraints, or prove a quantitative inequality from those directional discrepancies to the repair slack at a scale sufficient for target preservation. Either would settle the proposed bridge.
+Invalidate the NB-050 repair identity or the NB-051 convergence to `Delta_*`, or show that ambient norm control reaches the critical corridor despite NB-049. Strategically, a source-side formula or inequality controlling the continuous-versus-natural target gap would cross the current gate.
