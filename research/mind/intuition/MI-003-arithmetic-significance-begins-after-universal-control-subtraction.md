@@ -1,17 +1,13 @@
-# MI-003 — The quarter threshold and coupled-chord spectrum survive matched nonprime inputs
+# MI-003 — Prime-Circle finite spectral labels, total rotation, and the flute quarter threshold survive matched controls
 
-**Evidence level:** supported by exact matched controls; no universal subtraction theorem.
+**Evidence level:** supported by exact matched controls and classical finite-component/oscillation classifications; no universal subtraction theorem is claimed.
 
-In [PF-088](../../prime_flute/findings/PF-088-quarter-threshold-is-one-dimensional-not-prime-specific.md), replace the prime endpoints by `x_n=n` while retaining `V(x)=pi cot(pi/x)`, the exact/reference comparison and the ordered zero-twist geometry. The integer-control scattering defect obeys
+In PF-088, replacing prime endpoints by `x_n=n` while retaining the same geometric map leaves the quarter trace/summability boundary unchanged. The exponent `1/4` is already supplied by one-dimensional propagation and squared summability; its appearance alone is not a prime-gap signature.
 
-\[
-D_{\mathbb Z}(s)\in\mathcal S_1\quad\text{for }\Re s>1/4,
-\qquad
-0<\Re s\le1/4\ \Longrightarrow\ \text{one row is not in }\ell^2.
-\]
+Prime Circle supplies the same warning at progressively finer levels. The coupled chord spectrum is reproduced by fresh coprime inputs; later nonresonant bulk laws, leading finite-patch edges, and fixed off-spectrum characteristic transforms are deterministic functions of the rational-torus/IDS control. PC-266--PC-267 add that connected-component simplicity, nodal ordering, and central reflection-parity interlacing are classical oscillatory-matrix consequences reproduced by matched collision patterns.
 
-The all-block relative Ruelle product has the same absolute-convergence boundary. The quarter exponent is already supplied by the one-dimensional propagation tail and its squared summability; its occurrence alone is not a prime-gap signature. Prime-dependent coefficients or finer terms are not excluded by this test.
+PC-268 closes the canonical total-winding reformulation. The cumulative focal/Schur/Pruefer/Maslov rotation of the native symmetric elimination is exactly the eigenvalue-counting function. Its leading nonresonant normalization is therefore exactly the same torus IDS distribution function already shared by admissible pairwise-coprime controls. Recasting the finite spectrum as a total projective index does not create a new arithmetic observable.
 
-At fixed coarse conductor `N`, the apparently two-scale chord in [PC-238](../../prime_circle/findings/PC-238-joint-coarse-fresh-quotient-calculus-is-a-commutative-crt-cylinder.md) has spectrum `{4 sin^2(pi k/(Nq))}` for every integer `q` coprime to `N`. Its limiting interval `[0,4]` therefore cannot distinguish a fresh prime from a fresh coprime composite. Primality is not used in the CRT/chord calculation.
+A Prime-Circle candidate must now live in information not fixed by those controls: microscopic/mesoscopic placement, shrinking-window counts, subleading winding fluctuations, individual matrix-valued phases, transfer-norm/Lyapunov growth, near-resonant scaling, or genuinely long source-dependent itineraries. For Prime Flute, likewise, a candidate must differ under the same nonprime geometric control rather than merely reproduce the universal quarter exponent.
 
-These controls keep the respective geometric map and readout fixed and change the arithmetic input. A new candidate based on either construction must exhibit a quantity that differs under that same control, rather than reinterpret the shared threshold or spectrum. This criterion does not require all nonprime models to agree, and passing it would establish discrimination, not an RH implication.
+Passing a matched control would establish discrimination, not an RH implication. Conversely, a shared threshold, finite spectrum, parity law, IDS transform, or leading total rotation should be classified as representation/background structure before being promoted to arithmetic evidence.

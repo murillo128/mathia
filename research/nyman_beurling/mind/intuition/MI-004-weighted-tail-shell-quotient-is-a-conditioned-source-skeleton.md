@@ -1,37 +1,60 @@
-# MI-004 — The Nyman repair defect survives only in collective or moderate-shift quotient geometry
+# MI-004 — The collective late Nyman quotient is exactly a finite-time defect problem
 
-**Evidence level:** proved structural identities with an open source-to-target bridge.
+**Evidence level:** proved structural identities in NB-049--NB-058; whether the arithmetic defect is exhausted by finite-time sectors remains open.
 
-After removing the common off-critical-zero Blaschke factor, the continuous-versus-natural Nyman gap is an **arithmetic enrichment defect inside the outer part**, not another zero-side obstruction. The successive large-ratio results now close both raw-amplitude and moving-canonical-residual escape routes.
-
-NB-049--NB-052 identify the finite repair slack as a distance gain from enriching the reciprocal-integer section and factor out the common Blaschke floor exactly. NB-053 shows that a fixed defect orthogonal to the deflated natural closure is blind on the integer-log semigroup and becomes vectorwise invisible to sufficiently late off-grid shifts.
-
-NB-055 corrects the earlier Hardy-domain tail argument: finite-grid raw quotient energy has only the near-critical `O_epsilon(R^(-1+epsilon))` envelope, not the withdrawn `o(R^-2)` claim. NB-056 supplies the matched control showing why this does not settle the target geometry: the same `R^-1` raw scale can coexist with stationary Brownian-bridge normalized cell geometry.
-
-NB-057 closes the remaining single-vector loophole for the **actual canonical finite-section residuals**. With nested projections,
+After removing the common off-critical Blaschke factor, the natural Nyman closure is `\mathcal A` and its defect space is
 
 \[
-h_N=h_*+a_N,\qquad \|a_N\|^2=\delta_N^2-\delta_*^2\to0.
+\mathcal D=\mathcal A^\perp.
 \]
 
-This forces
+NB-053--NB-057 show that raw late quotient columns shrink and that the actual canonical finite residual becomes invisible to every sufficiently late **individual** shifted block. NB-058 identifies what remains when all late directions are taken collectively.
+
+For `R>=2`, let
 
 \[
-\sup_{m\ge1}\|PU_{\log m}^*h_N\|
-\le\sqrt{\delta_N^2-\delta_*^2}\to0
+\mathcal T_R=
+\overline{\operatorname{span}}\{v_a:a\ge\log R\},
+\qquad
+V_R=Q U_{\log R}|_{\mathcal D}.
 \]
 
-and, jointly as section and shift grow,
+The late quotient tail is exactly
 
 \[
-\sup_{t\ge T}\|PU_t^*h_N\|
-\le \omega_{h_*}(\gamma_T)+\sqrt{\delta_N^2-\delta_*^2}\to0.
+\mathcal T_R=\overline{\operatorname{Ran}V_R}.
 \]
 
-So the canonical residual cannot keep a positive signal by moving to progressively later individual shifts while its continuity modulus changes with `N`. The finite residuals converge too strongly to the limiting defect for that escape.
+Its orthogonal complement inside the arithmetic defect is
 
-The remaining target information must therefore be encoded at bounded/moderate ratio or in **collective normalized geometry across many individually weak late directions**. Small projection onto every one-dimensional late block does not imply small projection onto their closed span, and NB-056 already shows that normalization can preserve nontrivial geometry after raw norms shrink.
+\[
+\mathcal K_R
+=\mathcal D\cap\mathcal T_R^\perp
+=\mathcal D\cap\ker U_{\log R}^*.
+\]
 
-A useful source theorem should now control target occupation, conditioning, or a dual certificate for that collective quotient span. Another one-column tail estimate cannot close the repair gap.
+Under the Paley--Wiener representation, this has the concrete meaning
 
-**Boundary.** NB-057 is not operator-norm decay on the whole orthogonal complement and does not show the full late quotient projector is small. It is specific to the canonical nested finite-section residuals. The repair distance itself remains unresolved.
+\[
+\mathcal K_R=
+\{h\in\mathcal D:
+\operatorname{supp}(\mathcal P^{-1}h)\subseteq[0,\log R]\}.
+\]
+
+So the surviving multichannel question is no longer vague “conditioning of many weak columns.” It is whether the **actual arithmetic defect space contains enough compact-time vectors**.
+
+For the canonical limiting residual `h_*=Qe`, the collective late target mass satisfies the exact dual identity
+
+\[
+\|P_{\mathcal T_R}h_*\|^2
+=
+\operatorname{dist}(h_*,\mathcal K_R)^2.
+\]
+
+Hence the late-tail contribution tends to zero iff `h_*` lies in the norm closure of defect vectors with finite Paley--Wiener support. The unit-outer control realizes this mechanism explicitly and gives its familiar `1/(36R^3)+O(R^{-4})` tail through finite-cell detail spaces.
+
+This sharply separates individual and collective disappearance. It is consistent with all current results that `\mathcal K_R={0}` for every finite `R`, in which case `\mathcal T_R=\mathcal D` for every cutoff even though every sufficiently late individual block has vanishing projection against the canonical moving residual.
+
+The next source theorem should therefore construct quantitative compact-time arithmetic defects approximating `h_*`, or prove that these localized sectors are too small. Another one-column estimate cannot decide the repair distance.
+
+**Boundary.** This reduction does not prove that finite-time defects are dense, that the collective tail vanishes, or that the flat cubic rate transfers to zeta. It identifies the exact source-specific object whose geometry decides those questions.

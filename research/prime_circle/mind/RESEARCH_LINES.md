@@ -2,20 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a resonance-sensitive invariant beyond classical finite-component spectrum and fixed IDS transforms
+## Find a source-sensitive invariant beyond classical finite spectrum, IDS transforms, and total rotation
 
 **Linked intuitions:** `MI-010-two-prime-resonance-needs-a-cross-prime-relation`, `MI-011-first-mixed-moment-can-still-be-pairwise-scalar`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`.
 
-PC-224--PC-260 close fixed-conductor packets, finite trace words, complete finite singular data, common-dilation growth, and independent backward-word information.
+PC-224--PC-260 close fixed-conductor packets, finite trace words, complete finite singular data, common-dilation growth, independent backward-word information, and establish the exact reflection symmetry of the shared-upper collision operator.
 
-PC-261 shows that resonant path dependence is real but can be purely classical congruence itinerary. PC-262--PC-263 show that nonresonant normalized bulk spectrum and positive log-volume converge to deterministic Haar torus-return laws reproduced by pairwise-coprime controls.
+PC-261--PC-265 show that bounded resonant path dependence can be classical congruence itinerary, while nonresonant bulk spectrum, positive log-volume, leading edge, and fixed off-spectrum determinant/resolvent data reduce to deterministic torus-return or IDS structure reproduced by matched controls.
 
-PC-264 closes the leading nonresonant spectral-edge escape: the top singular norm is a deterministic supremum of finite local-patch norms in the same torus-return hull, with source-uniform localization error. PC-265 closes fixed off-spectrum shifted determinants and normalized resolvent traces as deterministic transforms of the same limiting IDS.
+PC-266--PC-267 classicalize the obvious finite-component labels: connected components have simple oscillatory spectra, reflected noncentral components are paired isospectrally, and the central reflection sectors alternate in eigenvalue order. PC-268 then closes the canonical total projective-rotation escape. The cumulative Schur/Pruefer/Maslov crossing count is exactly the eigenvalue-counting function, so its leading nonresonant normalization is the same torus IDS already reproduced by the matched controls.
 
-PC-266 now classicalizes the internal finite-component spectral structure. After a common checkerboard gauge, every connected shared-upper collision component is an oscillatory matrix: its squared singular spectrum is positive and simple, and ordinary sign-variation/nodal ordering is classical. Exact multiplicity can arise only across disconnected components; reversal explains a forced reflected-component family. Internal degeneracy, exceptional-point collisions, and ordinary Sturm/Pruefer index are therefore not new arithmetic carriers.
+The surviving question must therefore live **below or beyond the total counting level**: fine spacing and parity-gap laws, shrinking energy windows, subleading rotation fluctuations, individual matrix-valued projective phases, subleading edge behavior, transfer-norm/Lyapunov growth, near-resonant scaling, or resonance itineraries whose complexity grows with the primitive source. Any candidate must be matched against controls with the same local collision pattern and relevant approach itinerary.
 
-The surviving question must live in the **quantitative placement/evolution of simple eigenvalues or genuinely long transfer data**: fine spacing, subleading edge fluctuations, near-spectrum/mesoscopic characteristic statistics, projective/rotation data, Lyapunov behavior, or resonance itineraries whose complexity grows with the primitive source. Any candidate must be matched against controls with the same local collision pattern and exact resonant approach itinerary.
+## Treat resonance, bulk universality, finite-patch edges, IDS transforms, oscillatory simplicity, reflection interlacing, and total winding as separate gates
 
-## Treat resonance, bulk universality, finite-patch edges, IDS transforms, and oscillatory simplicity as separate gates
-
-Common refinement only repeats blocks; nonresonant bulk laws are classical; the leading edge localizes to finite patches; fixed off-spectrum determinant/resolvent data are functions of the same classical IDS; resonant path dependence can itself be congruence structure; and connected finite collision components already have classical simple oscillatory spectra. A viable discriminator must survive all of these controls.
+Common refinement repeats blocks; nonresonant bulk laws are classical; the leading edge localizes to finite patches; fixed off-spectrum transforms depend on the same IDS; finite connected components have classical simple oscillatory spectra with forced reflection parity order; and the canonical total rotation is exactly the cumulative eigenvalue count. A viable discriminator must survive all of these reductions.

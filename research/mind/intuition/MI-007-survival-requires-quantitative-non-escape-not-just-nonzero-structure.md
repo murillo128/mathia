@@ -1,25 +1,33 @@
-# MI-007 — Weak disappearance can be drift, controlled escape, or canonical residual convergence
+# MI-007 — Weak disappearance can be drift, controlled escape, or a collective localization problem
 
-**Evidence level:** supported; the three mechanisms below are distinguished and no universal equivalence is claimed.
+**Evidence level:** supported by the cited line-specific mechanisms; no universal equivalence among them is claimed.
 
-For fixed `N` and `q` in the invertible residue class `r`, choose `1<=a<N` with `ar=1 mod N` and put `k_q=(aq-1)/N`. The original refined Prime-Circle coordinate is exactly
+Prime Circle gives **ballistic drift**: a refined coordinate can leave a fixed packet window while preserving its norm, and following the moving frame returns the channel to an already-classified quotient algebra. Weak invisibility there is relocation, not decay.
 
-\[
-Z_q=R_1\otimes S_q^{-k_q},\qquad k_q/q\to a/N.
-\]
+Prime Flute gives **quantitative escape exclusion**: the fixed physical high-pass spaces have a diverging local frequency floor, and the canonical synthesis has uniform positive-Sobolev control whenever its weighted source moment is bounded. A response with that family bound cannot maintain a local high-frequency witness.
 
-A fixed degree not divisible by `N` moves a localized packet by order `q` and is weakly invisible in the old packet window. Its norm has not been lost. Following the moving window returns the channel to the already-classified CRT quotient algebra, so this is **ballistic drift plus recentering**, not decay ([PC-239](../../prime_circle/findings/PC-239-original-coordinate-bezout-winding-is-ballistic-and-collapses-to-shift-calculus.md)).
+Nyman--Beurling supplies a third mechanism. NB-057 shows that the canonical nested finite residuals converge strongly enough that every sufficiently late **individual** shifted natural block becomes invisible, even when section and shift move together. NB-058 then identifies the collective loophole exactly rather than leaving it as generic conditioning.
 
-For the flute's fixed physical high-pass spaces, [PF-292](../../prime_flute/findings/PF-292-fixed-physical-high-pass-forces-diverging-local-frequency-floor.md) instead gives a quantitative high-pass inequality. Uniform positive-Sobolev control forces the high projection to vanish, and [PF-296](../../prime_flute/findings/PF-296-weighted-source-row-moment-controls-canonical-fixed-axis-superpositions.md) supplies that control for canonical source synthesis under a bounded weighted source moment. This is **escape exclusion by an explicit regularity budget**; growing row count alone is insufficient.
-
-Nyman--Beurling supplies a third mechanism. For the canonical nested finite-section residuals, [NB-057](../../nyman_beurling/findings/NB-057-canonical-finite-residuals-cannot-sustain-large-shift-semigroup-leakage.md) gives
+If `D=A^perp` is the deflated arithmetic defect space and
 
 \[
-h_N=h_*+a_N,\qquad \|a_N\|^2=\delta_N^2-\delta_*^2\to0.
+T_R=\overline{\operatorname{span}}\{v_a:a\ge\log R\},
 \]
 
-The limiting defect is exactly blind on the integer-log grid and vectorwise blind at late off-grid shifts; the strong convergence of the *canonical* residual sequence upgrades this to joint large-section/large-shift decay. Thus no choice `t_N->infinity` can preserve a positive single-shift projection merely by exploiting nonuniform continuity on the unit sphere. This is **canonical residual convergence**, not a uniform operator-norm theorem.
+then
 
-These mechanisms have different conclusions. In Prime Circle the mass survives but is located by recentering and then classicalized. In Prime Flute an explicit family bound excludes high-frequency escape. In Nyman--Beurling every late individual shifted block becomes invisible to the canonical moving residual, while the closed span of many individually weak late directions can still remain target-bearing.
+\[
+T_R=\overline{\operatorname{Ran}(Q U_{\log R}|_D)},
+\]
 
-The reusable rule is quantitative: a weak limit by itself says little. One must identify the permitted moving frame, the family norm/regularity budget, or the canonical convergence law of the actual target residual. Even then, one-column disappearance does not imply collective-span disappearance.
+and
+
+\[
+D\cap T_R^\perp
+=
+\{h\in D:\operatorname{supp}(\mathcal P^{-1}h)\subseteq[0,\log R]\}.
+\]
+
+For the canonical limiting residual `h_*`, collective late-tail mass is exactly its distance from this finite-time defect sector. Thus “every late column is weak” and “the whole late span is irrelevant” are separated by a concrete localization question: are finite-Paley--Wiener-support arithmetic defects dense enough to approximate `h_*`?
+
+The reusable rule is therefore sharper than “weak limits can hide mass.” One must identify which mechanism applies: a permitted moving frame, a quantitative family norm that forbids escape, or a collective closed-span problem whose dual localization space can be stated explicitly. Pointwise or one-column disappearance does not settle the third case.

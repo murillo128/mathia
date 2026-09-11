@@ -1,45 +1,50 @@
-# MI-017 — The first square-defect shell contains a source-forced CRT common mode
+# MI-017 — The first square-defect shell localizes its hard source coupling below quarter incidence
 
-**Evidence level:** supported by the exact intersection identity and power-budget analysis of MC-228; no new Möbius cancellation estimate is claimed.
+**Evidence level:** supported by the exact CRT intersection and incidence-tail bounds in MC-228--MC-229; no new Möbius cancellation estimate is claimed.
 
-The first square-defect shell is not a family of unrelated progression tests. With `y=c log X`, primorial `P`, shell primes `d in (y,2y]`, and
+For `y=c\log X`, primorial `P`, shell primes `d in (y,2y]`, and
 
 \[
 \mathcal R_d=\{n\le X-P:(n,P)=1,\ n\equiv-P\pmod{d^2}\},
 \]
 
-put `Q_y=prod_d d^2`. The source-selected residues have the exact simultaneous intersection
+the source-selected shell has real overlap structure: the same integer can feed many coordinates. MC-228 identifies the extreme full-shell common block and shows that estimating it separately has the target-power transition `c=1/4`.
+
+MC-229 extends that calculation to every mesoscopic incidence level. Put
 
 \[
-\bigcap_d\mathcal R_d
-=\{kQ_y-P:1\le k\le X/Q_y,\ (k,P)=1\}.
+r_y(n)=\#\{d:d^2\mid n+P\},
+\qquad
+E_{\ge\alpha}=\left\{n:r_y(n)\ge
+\alpha\frac{\log X}{\log\log X}\right\}.
 \]
 
-Since `Q_y=X^{2c+o(1)}`, this common block has
+Every `r`-fold intersection is one CRT progression with modulus `\prod_{d\in S}d^2`, and the number of possible shell subsets contributes only `X^{o(1)}`. Consequently, for fixed `0<\alpha<c`,
 
 \[
-|\cap_d\mathcal R_d|=X^{1-2c+o(1)}/\log y.
+|E_{\ge\alpha}|\le X^{1-2\alpha+o(1)},
 \]
 
-For `c<1/4`, almost all of these common points are square-free, so the overlap carries polynomially many actual Möbius signs rather than merely unsigned rough support.
-
-Writing the signed common sum as
+and the separately controlled weighted shell energy from this tail satisfies
 
 \[
-C_y=\sum_{n\in\cap_d\mathcal R_d}\mu(n),
+W_y^{\ge\alpha}\le X^{2-4\alpha+o(1)}.
 \]
 
-every shell coordinate decomposes exactly as `A_d=C_y+B_d`. If the common component is controlled separately, its weighted shell energy is bounded only by
+The diagonal target is `X^{1+o(1)}`, so the support-only transition is exactly
 
 \[
-H_y|C_y|^2\le X^{2-4c+o(1)},
-\qquad H_y=\sum_d d=X^{o(1)}.
+\alpha=\frac14.
 \]
 
-Thus separate absolute control has a sharp power boundary at `c=1/4`: for `c>=1/4` the common block is target-scale harmless by support alone; for `c<1/4` the same route is super-diagonal and needs genuine signed cancellation in `C_y` or coherent interference with the residual vectors `B_d`.
+Thus for every `c>1/4`, **all sufficiently high-incidence points are already harmless without using Möbius signs**. The full CRT common mode is only the top level of this tail. Any fixed-power excess must come from incidence
 
-The matched independent prime-sign control is important. Its expected common-mode energy is only `X^{1-2c+o(1)}`, below the target scale. The obstruction is therefore not common incidence by itself; it is the deterministic parity coherence of the Möbius source, or the way that common component interferes with the rest of the source-selected shell.
+\[
+r_y(n)<\left(\frac14+o(1)\right)\frac{\log X}{\log\log X},
+\]
 
-This sharpens the meaning of “source-coupled cancellation.” Generic characterwise, large-sieve, or fiberwise estimates can lose the exact integer intersection copied into every shell coordinate. The next useful theorem should act on that coupled decomposition before taking magnitudes.
+or from coherent interference among those lower/mesoscopic pieces.
 
-**Boundary.** The `c=1/4` threshold concerns a proof that estimates the common block independently. It does not prove that `|C_y|<=X^{1/2+o(1)}` is necessary for the full shell energy, because the residual terms may anti-align with `C_y`. Nor does the identity itself improve Mertens bounds or imply anything about zeta zeros.
+This changes where “source-coupled cancellation” has to act. The difficult region is not the largest overlaps. It is the broad collection of partial intersections that are individually too dense for support bounds but remain coupled through the deterministic Möbius source. A useful decomposition must preserve signed cross-slice interference there; generic characterwise, fiberwise, or magnitude-only estimates can discard exactly that information.
+
+**Boundary.** The quarter threshold calibrates the square-modulus shell and its quadratic weighted energy. It is not a bound for the full shell energy, does not say cancellation between high and low incidence is irrelevant, and changes if the divisor power, shell width, or energy weight changes.

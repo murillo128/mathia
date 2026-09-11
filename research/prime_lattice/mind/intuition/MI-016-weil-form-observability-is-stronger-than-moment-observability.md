@@ -1,41 +1,27 @@
-# MI-016 — Weil source recovery and compact completion still do not create order
+# MI-016 — Weil source recovery, completion, and threshold activation still do not create order
 
-**Evidence level:** proved observability/order/transport boundary; completed arithmetic positivity remains open
+**Evidence level:** proved observability/order/transport boundary through PL-279; completed arithmetic positivity remains open.
 
-## Core intuition
+The complete Galerkin/cutoff family can recover the source, but exact recovery and exact cutoff coherence are generic information properties rather than sign principles. PL-272--PL-276 show that every nonzero finite positive interior source is eventually sign-indefinite and no fixed compact self-adjoint correction repairs that high-frequency Morse defect.
 
-The complete Galerkin/cutoff family can recover the source, but exact recovery and exact cutoff coherence are generic information properties rather than sign principles. The current evidence closes two stronger escapes: **no nonzero finite positive aggregate of interior source atoms becomes positive at high resolution, and no fixed compact correction can repair that sign oscillation**.
+PL-278 then identifies what the canonical noncompact completion does buy. The localized completed Weil operator has compact resolvent and only finitely many negative eigenvalues, and eventual positivity of the high spectral tail survives arbitrary finite signed source replacement. Noncompact completion therefore repairs the ultraviolet sign defect **generically**; eventual completed positivity is not itself a rational-prime discriminator. The RH-facing information is confined to the finite residual negative sector.
 
-The missing sign must therefore use an essentially noncompact completed/global channel or a genuinely signed relation outside the finite positive source block.
+PL-279 removes a tempting way for that finite sector to inherit arithmetic rigidity from individual prime-power thresholds. In the canonical `H_0^1(-a,a)` Weil/Suzuki form, a newly active shift `h=log q` with overlap width
 
-## Strongest justified claim
+\[
+\delta=2a-h>0
+\]
 
-PL-259--PL-271 establish finite detectability, fixed-band aliasing, and full-tower source recovery. PL-272--PL-273 separate recovery from order: every active interior atom is eventually indefinite. PL-274 adds all cutoffs and shows that normalized cutoff transport is the same affine kinematics for any locally finite log-source, even though the full family identifies that source exactly.
+has symmetric source contribution bounded by
 
-PL-275 upgrades atomwise indefiniteness to every nonzero finite positive interior atomic measure. A compact-torus sign argument supplies arbitrarily high positive and negative diagonal modes, so every fixed positive prime-power source cutoff is eventually indefinite.
+\[
+\frac{\pi}{4}\frac{\Lambda(q)}{\sqrt q}\,\delta^2\,\|v'\|_2^2.
+\]
 
-PL-276 makes the obstruction stable. The positive and negative witness modes occur with positive lower density, while every compact operator has vanishing diagonal matrix elements along the Fourier basis. Hence adding **any fixed self-adjoint compact correction** leaves the finite positive source eventually indefinite. In particular, the pole contribution at fixed aperture is finite rank and cannot repair the sign.
+So an isolated prime-power activation is **quadratically soft** in the natural Sobolev form topology. The order-one edge shock seen after cutoff-dependent finite-dimensional rescaling is not an intrinsic singularity of the canonical form.
 
-## Synthesis of evidence
+The surviving source-specific information must therefore be more global than exact recovery, generic tail positivity, or a single threshold event. A viable mechanism should constrain the finite low/mesoscopic negative sector through coherent accumulation of many active prime-power shifts, interaction among them, or the cross-aperture evolution of the residual index/eigenvalues across genuine activation events.
 
-The finite source tower is lossless infrastructure, not an order mechanism. Atomwise weights, finite positive aggregation, projective recovery, affine cutoff coherence, and compact completion can all coexist with persistent sign oscillation.
+This separates four currencies: source observability, high-frequency sign repair, local threshold amplitude, and finite residual order. The first three are now largely controlled or generic; only the last can still encode an RH-facing distinction in this realization.
 
-A surviving theorem must therefore use an essentially noncompact completion channel—naturally the archimedean/scalar sector in the standard decomposition—or another noncompact signed coupling whose arithmetic structure is absent from arbitrary finite positive measures.
-
-## Counterevidence / boundary cases
-
-PL-276 does not say the archimedean term has the needed sign, nor does it rule out a noncompact completed cancellation. It only proves that finite positive source plus compact correction cannot be the mechanism.
-
-Conditioning of source recovery remains irrelevant to this exact sign obstruction.
-
-## Epistemic status
-
-**Exact finite-source/compact-completion boundary:** full source recovery is possible, every finite positive aggregate is sign-indefinite, and compact completion cannot repair it. Any successful Weil positivity law must use noncompact completed/global structure or a genuinely signed source relation.
-
-## Novelty/prior-art status
-
-The Groskin kernel, compact-torus character argument, affine transport, compact-operator diagonals, and Fourier methods retain their finding-level classifications.
-
-## Falsification criterion
-
-Construct a nonzero finite positive interior source plus a fixed compact self-adjoint correction whose Galerkin compressions become positive semidefinite at all sufficiently high bands, or invalidate the PL-274 transport law. Strategically, derive a noncompact completed von-Mangoldt-specific law forcing the correct sign.
+**Boundary.** PL-279 does not prove eigenvalue differentiability, monotonicity, or small cumulative motion, and PL-278 does not prove the residual negative index vanishes for the zeta source. Several individually soft source events can still combine into a substantial finite-sector effect.

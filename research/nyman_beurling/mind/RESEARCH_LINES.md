@@ -8,18 +8,22 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Isolate arithmetic structure in collective normalized quotient geometry
+## Decide whether finite-time arithmetic defects exhaust the canonical residual
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-049--NB-053 identify the finite repair gap, remove the common off-critical Blaschke factor, and reduce the remaining defect to arithmetic enrichment inside the outer Hardy geometry.
+NB-049--NB-057 identify the finite repair gap, remove the common off-critical Blaschke factor, calibrate the raw large-ratio scale against the unit-outer control, and close the moving-single-shift escape for the canonical residual.
 
-NB-055 replaces the withdrawn stronger tail estimate: finite-grid raw quotient energy has only the near-critical `O_epsilon(R^(-1+epsilon))` envelope. NB-056 shows that the same raw scale occurs in a unit-outer matched control while normalized logarithmic-cell Gram geometry remains stationary, so shrinking columns do not imply target irrelevance.
+NB-058 identifies the complete collective late quotient exactly. For integer `R`, its closed span is the range of the compressed natural shift `V_R=Q U_(log R)|_D`, and its orthogonal complement inside the arithmetic defect `D=A^perp` consists precisely of defect vectors whose Paley--Wiener representatives are supported in `[0,log R]`.
 
-NB-057 now closes the moving-single-shift escape for the canonical finite residuals. Nested projection gives `h_N=h_*+a_N` with `||a_N||^2=delta_N^2-delta_*^2->0`, which makes the residual uniformly blind on the whole integer-log grid and jointly invisible to every sufficiently late individual off-grid shift as `N,T->infinity`.
+For the canonical limiting defect `h_*`,
 
-The surviving bridge is therefore genuinely multichannel or moderate-shift. One must show what the arithmetic outer factor changes in the normalized span/conditioning of many late quotient directions, or isolate a bounded-ratio target sector carrying the enrichment. A single late block cannot retain the canonical residual merely by moving with the section.
+\[
+\|P_{T_R}h_*\|^2=\operatorname{dist}(h_*,K_R)^2.
+\]
 
-## Treat raw quotient mass, single-shift leakage, and collective target occupation as separate gates
+Thus collective late-tail target mass vanishes exactly when `h_*` can be approximated by finite-time arithmetic defect vectors. The live theorem is to construct those localized defects with a quantitative remainder, or prove that the localized sectors are too small. This is now a source-specific localization question in `A^perp`, not a generic conditioning question about many small columns.
 
-Large-ratio raw columns become small, and even the moving canonical finite residual has vanishing projection onto every sufficiently late individual shifted natural block. Neither statement controls the closed span of many normalized late directions. Future work must prove arithmetic directional collapse/separation, conditioning, or target occupation for that collective geometry rather than infer it from one-column estimates.
+## Treat raw quotient mass, individual-shift leakage, and collective finite-time defect density as separate gates
+
+Large-ratio raw columns can be small, and the canonical finite residual is uniformly blind to sufficiently late individual shifts. Neither statement controls the collective closed span. The exact remaining dual object is the growth of `K_R=D cap ker U_(log R)^*`; future work should attack that geometry directly rather than infer collective decay from one-dimensional angles.

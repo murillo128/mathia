@@ -1,26 +1,15 @@
-# MI-008 — Inverse separation, cadence, acquisition horizon and operator order are different quantitative losses
+# MI-008 — Inverse separation, channel coupling, cadence, horizon, and operator order are different quantitative losses
 
-**Evidence level:** supported by the specified inverse, sampling and propagation models; no common universal condition number is claimed.
+**Evidence level:** supported by the specified inverse, sampling, and propagation models; no common universal condition number is claimed.
 
-For a finite Blaschke product `B` of fixed degree with simple zeros `a_j`, put `delta(B)=min_j product_(k!=j) rho(a_j,a_k)`, where `rho` is pseudohyperbolic distance. With output distance `Delta(B,C)=inf_(|lambda|=1)||B-lambda C||_Hinf` and bottleneck pseudohyperbolic zero matching, [AF-178](../../arithmetic_fidelity/findings/AF-178-simple-blaschke-local-condition-number-is-exactly-reciprocal-double-separation.md) gives
+For a finite simple Blaschke product, AF-178 gives a local inverse constant proportional to the reciprocal zero-separation product. Exact recovery survives while conditioning diverges as zeros collide. This is a metric/local-degree statement, not a generic source-recovery law.
 
-\[
-\kappa_{\rm loc}(B)=\frac1{2\delta(B)}.
-\]
+Dirichlet recovery has several different acquisition losses. AF-278 shows that continuous vertical averaging at fixed real part recovers each declared coefficient by paying phase-time breadth and noise amplification. AF-279 shows that regular vertical sampling first quotients frequencies through `lambda -> e^{-ih lambda}`: rational resonance can create exact aliases even with the full bilateral lattice, while a nonresonant cadence restores infinite-data injectivity without giving a uniform finite-window inverse modulus.
 
-Exact zero recovery survives throughout the simple stratum, while its local inverse cost diverges when this separation product tends to zero. The result is local at fixed degree and metrics; neither another metric nor an unrestricted growing-degree family inherits a uniform bound.
+AF-280 adds a distinct **channel-coupling** gate. A finite family of regular lattices is injective on the unrestricted weighted `ell^1` ordinary-Dirichlet source class iff at least one cadence is already nonresonant. If every cadence has a rational alias, an explicit finite group-algebra interaction lies in the common kernel. Even when the tuple of phase labels is injective, keeping the complete one-coordinate lattice sequences separately can lose a mixed interaction that a genuinely joint phase observable would retain.
 
-Dirichlet recovery has two different acquisition losses. For `F(s)=sum_n a_n n^-s`, `B_c=sum_n |a_n|n^-c<infinity`, continuous vertical averaging on `c+it`, `|t|<=T`, yields, for `N>=2`,
+Finite cadence diversity also does not cure finite-horizon instability: simultaneous torus recurrence makes a remote logarithmic frequency approach the target phase in every fixed cadence window while the target coefficient changes by order one. Therefore exact separation, retention of joint coupling, and finite-acquisition stability are genuinely different properties.
 
-\[
-|\widehat a_N^{\eta}(T)-a_N|
-\le N^c\left(\frac{B_c}{T\log(1+1/N)}+\varepsilon_T\right).
-\]
+Prime Flute supplies a separate composition lesson. Exponential far propagation can change the frequency window in which a leakage estimate is needed; one cannot simply multiply local condition numbers. PF-297 adds that a finite-section contraction can itself be a truncation artifact: the canonical Robin factors are strict `ell^1(q)` contractions at finite depth but their norms tend to one, while the complete map preserves positive `q`-mass.
 
-This replaces unbounded real-depth coefficient peeling by fixed-real-part observation at the cost of time breadth and noise amplification ([AF-278](../../arithmetic_fidelity/findings/AF-278-vertical-bohr-means-trade-real-depth-for-phase-time-breadth.md)). Exact recovery at each fixed `N` does not give uniform finite-`T` recovery over all `N`.
-
-Regular vertical sampling adds a different loss before finite-horizon conditioning. [AF-279](../../arithmetic_fidelity/findings/AF-279-discrete-vertical-sampling-is-phase-pushforward-fidelity.md) shows that all bilateral samples `F(c+ikh)` determine only the pushed measure under `lambda -> e^{-ih lambda}`. A resonant cadence can therefore create exact aliases even with infinitely many samples. For ordinary Dirichlet frequencies, a nonresonant cadence makes the infinite map injective, yet every fixed window `|k|<=K` still lacks a uniform inverse modulus on the unrestricted weighted `ell^1` source ball because remote logarithmic frequencies recur arbitrarily close in wrapped phase. Exact injectivity, cadence aliasing, and finite-horizon stability are three separate statements.
-
-Operator composition can change which estimate is needed rather than merely multiply old losses. With exponential far propagation `e^-dK`, [PF-271](../../prime_flute/findings/PF-271-separated-propagation-only-needs-sublinear-low-output-leakage.md) reduces `PBK^R` boundedness to leakage from input `[Lambda,2Lambda)` into output `[kappa,A log Lambda]`, with `A>R/d` and decay `Lambda^(-R-epsilon)`. The normalized fixed-axis source actually fails the supercritical fixed-row bound by [PF-278](../../prime_flute/findings/PF-278-mass-one-branch-forces-critical-normalized-fixed-row-leakage.md).
-
-Keep the relevant separation, cadence fibers, observation horizon, source norm and composed frequency window explicit. None is supplied merely by exact uniqueness at an earlier stage, and there is no established theorem identifying their condition numbers across these models.
+Keep the relevant separation metric, source category, channel coupling, cadence fibers, observation horizon, forcing/escape balance, and composed frequency window explicit. None is supplied merely by exact uniqueness or strictness at an earlier finite stage, and there is no established theorem identifying their condition numbers across these models.

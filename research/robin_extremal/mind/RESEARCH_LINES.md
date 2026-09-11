@@ -1,19 +1,19 @@
 # Robin-extremal research lines
 
-This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Use global coherence among genuine prime coordinates beyond the sharp gap-capacity threshold
+## Use cross-cell coherence among genuine prime coordinates beyond the sharp gap-capacity threshold
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`.
 
 RE-049--RE-053 show that fringe capacity is negligible, metric prime-gap capacity is decisive only above its sharp exponent threshold, and PNT-dense generalized labels can reproduce the near-critical one-cell fan below that threshold.
 
-RE-054 adds a real source constraint: one ordinary prime generates synchronized events in every fixed CA layer, so one threshold cell forces linked prime-free intervals at scales `Y,(2Y)^(1/2),(3Y)^(1/3),...`. RE-055--RE-056 show that synchronization alone can still be faked by one PNT-dense label source, even with distinct positive integer labels.
+RE-054--RE-058 progressively tighten source fidelity. One prime generates synchronized fixed-layer events; synchronization and integer labels can still be faked; but an ordinary composite cannot realize the prime-form `sigma(n)/n` increment because its internal prime divisors move the first event to square-root scale. Thus an all-layer matched control preserving ordinary `sigma` is forced back to genuine prime coordinates.
 
-RE-057--RE-058 now separate **integrality** from the actual ordinary-divisor-sum source category. A composite label cannot realize the prime-form CA increment: its internal prime divisors move the first event to square-root scale, and the same half-power collapse persists at every fixed layer. Prime squares show the exponent is sharp. Thus an all-layer matched control that must preserve ordinary `sigma(n)/n` cannot use composite integers as substitute prime atoms.
+RE-059 now shows that **one genuine threshold cell still contains only finite source information**. While one CA state remains selected, the endpoint-corrected standard and reciprocal prime sums are exactly frozen; the raw pair differs only by at most one binary fringe-prime update. The continuum of tangent parameters inside the cell is therefore a deterministic reparameterization, not a continuum of independent prime-source observations.
 
-The synthetic-label escape has therefore narrowed back to the genuine prime coordinates. The live near-critical theorem must exploit a **global relation among actual primes** that local prime-layer fidelity does not already encode: accumulated CA mass, Euler-product height, standard/reciprocal race coupling, ordering across simultaneous prime-coordinate events, or another source-forced multiplicative constraint strong enough to beat the sharp gap-capacity barrier.
+The live near-critical theorem must consequently be cross-cell. It must exploit a global relation among actual prime-coordinate updates: accumulated CA/Euler-product mass, ordering and type of successive events, standard/reciprocal race coupling across state changes, or another multiplicative constraint strong enough to beat the sharp gap-capacity barrier. Re-sampling one fixed chamber at many thresholds cannot supply that missing information.
 
-## Treat metric capacity, synchronization, integrality, local sigma fidelity, and global prime coherence as separate currencies
+## Treat metric capacity, synchronization, integrality, local sigma fidelity, within-cell source dimension, and cross-cell coherence as separate currencies
 
-Gap geometry, common-source event towers, and even integer labels can be reproduced by controls. RE-058 shows that requiring the ordinary divisor-sum response eliminates composite fake atoms locally at every fixed depth, but that still does not constrain the global distribution of the surviving primes. Any remaining proof must use a relation among genuine prime coordinates rather than another relabeling of the same event fan.
+Gap geometry, common-source event towers, and integer labels can be reproduced by controls. Ordinary `sigma` removes composite fake atoms locally, but genuine primality alone does not make a fixed chamber information-rich: after endpoint correction its source is frozen. Any remaining proof must use the evolution among genuine prime cells rather than another relabeling or continuum amplification inside one cell.

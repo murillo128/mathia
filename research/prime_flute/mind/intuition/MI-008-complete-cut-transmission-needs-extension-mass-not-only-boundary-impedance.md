@@ -1,23 +1,15 @@
-# MI-008 — A local mixed-response obstruction needs unbounded source moment or an uncontrolled residual map
+# MI-008 — The flute mixed-response gate is a source/escape balance, not a Robin contraction gap
 
-**Evidence level:** proved operator boundaries; the factorization of the complete physical mixed response remains open.
+**Evidence level:** proved local operator and source-space boundaries; the factorization of the complete physical mixed response remains open.
 
-For the fixed physical window `I=(-T,T)` and cutoff `kappa`, let `E_n` span the restrictions of `exp(2pi i k t/L_n)` with `|2pi k/L_n|<=kappa`, where `L_n -> infinity`, and put `V_n=E_n^perp`. [PF-292](../../findings/PF-292-fixed-physical-high-pass-forces-diverging-local-frequency-floor.md) proves that the constrained Dirichlet frequency floor `inf_{phi in V_n cap H_0^1, ||phi||_2=1}||phi'||_2` diverges. There are `R_n -> infinity` and `epsilon_n -> 0` such that, with `K_D=(-partial_t^2)_D^{1/2}`,
+For the fixed physical high-pass spaces, PF-292 gives a diverging local frequency floor. PF-296 then proves that the canonical fixed-axis synthesis is uniformly bounded from the explicit weighted source space `ell^1(q)` into positive Sobolev regularity, with `q_i asymp i+1`. Thus a complete normalized response with uniformly bounded `sum_i q_i|a_i|`, controlled transport, and negligible residual cannot sustain the PF-290 local high-band shorting deficit.
 
-\[
-\|P_{V_n}g_n\|_2\le\varepsilon_n\|g_n\|_2
-+R_n^{-\sigma}\|K_D^\sigma g_n\|_2\quad(\sigma>0).
-\]
+PF-297 now identifies the exact behavior of one repeated local factor. Every fixed-axis Robin inverse is nonexpansive in the **same** `ell^1(q)` currency. Finite Galerkin sections are strictly contractive because `q`-mass leaks into omitted rows, but that loss is a truncation effect: for each fixed source row the retained mass tends back to the full value, the finite-section norms tend to one, and the complete positive inverse preserves `q`-mass exactly.
 
-Thus a uniformly bounded positive-Sobolev response cannot have a persistent high projection. No quantitative rate for `R_n` follows from this argument. The optimized mixed low/high correlation is the shorting deficit `delta=1-inf_h k[ell+h]/k[ell]` in the admissible high space ([PF-290](../../findings/PF-290-optimized-local-low-high-correlation-is-an-exact-high-band-shorting-deficit.md)); persistent positive deficits on separated coercive local witnesses obstruct compactness.
+So repeated Robin normalization cannot amplify the PF-296 source budget, but it also cannot provide a depth-uniform geometric discount for a return resolvent. A proof based on “every finite section has norm < 1” is therefore invalid in the infinite-depth limit.
 
-For the canonical fixed-axis component, [PF-296](../../findings/PF-296-weighted-source-row-moment-controls-canonical-fixed-axis-superpositions.md) supplies more than a fixed-row bound. If `y_(s,r)^(i)` is its normalized source column and `q_i=kappa_i^(1/2)c_i asymp kappa_i`, then uniformly for `s>0`, `0<r<=r_*`,
+The remaining gate is the **actual normalized mixed return/reassembly map**. Starting from the PF-290 `P/H`-split mixed functional, one must derive the real coefficient equation and locate where source mass can leave the repeated subsystem. A sufficient positive-majorant route is a uniformly summable excessive vector `h` for the physical forcing: after conjugating by `q`, if `K>=0`, `Kh<=h`, and `xi<=h-Kh`, then the Green potential `sum_m K^m xi` is bounded without any spectral gap. A direct signed estimate is equally admissible if absolute values destroy the useful cancellation.
 
-\[
-\|U^*\sum_i a_i y_{s,r}^{(i)}\|_{H^{1/2}(\mathbb R)}
-\le C_{r_*}\sum_i q_i|a_i|.
-\]
+This makes the source budget more concrete. Unbounded row count is not by itself an escape, Robin inversion is not an amplifier, and local finite-section loss is not a uniform return discount. A surviving obstruction must come from forcing that is too large for the available escape, from the physical `P/H` split or Schur/reassembly maps changing the `q` currency, or from an explicit residual operator outside the canonical synthesis.
 
-The canonical tail already has bounded seam ratio. Therefore a complete response of the form `G_n=T_n Y_n(a_n)`, with the already-controlled positive-Sobolev transport `T_n` and `sup_n sum_i q_i|a_(n,i)|<infinity`, has vanishing local high projection and cannot sustain that deficit. Growing row count alone is not an escape: its weighted first moment must become unbounded along a subsequence, or the actual response must contain a residual mixed/reassembly operator outside this factorization.
-
-This does not prove the factorization or bound its coefficients. Nor does absence of this local witness imply global compactness or weak trace class; the global heavy-range projection product and its singular-value counts remain separate objects.
+**Boundary.** PF-297 concerns only the fixed-axis Robin factor. It does not derive the complete return operator, prove a source-adapted potential bound, imply global compactness, or control the separate heavy-range singular-value problem.

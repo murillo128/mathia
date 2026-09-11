@@ -1,43 +1,37 @@
-# MI-001 — Farey occupation is a low-row placement problem with a sharp additive-transfer threshold
+# MI-001 — Farey occupation is now a maximal-localization problem at the zero frontier
 
-**Evidence level:** supported by exact source and occupation bounds
+**Evidence level:** supported by the current FD-049--FD-058 source/occupation reductions; no positive occupation theorem is claimed.
 
-## Core intuition
+The cumulative Farey obstruction has been narrowed from generic regularity to a quantitative localization problem for the physical shell source
 
-The Farey obstruction has been narrowed from generic regularity to a thin low-row placement problem. Correct zero-frontier exponents, positive terminal bulk, and logarithmic-density control do not force pointwise occupation. The newest evidence separates two very different source probes: **signed multiplicative rays can self-cancel**, even for moving hosts near the square-root boundary, while quadratic occupation can be transferred to a nearby nonsquarefree row once the host is large enough relative to the source spike.
+\[
+c(n)=\Delta\mathcal H(n)=\sum_{dm=n}\frac{\mu(m)}d.
+\]
 
-The remaining escape is therefore not simply “rare horizons.” It is rare low-row geometry below an explicit zero-frontier-dependent additive-transfer threshold.
+Signed multiplicative rays are not coercive: FD-052--FD-053 show squarefree Jordan-ray self-cancellation even for moving hosts near the geometric frontier. Quadratic occupation behaves differently. FD-054 gives a local additive twin mechanism, and FD-055 pushes it through strong short-interval Möbius cancellation wherever the zero frontier is sufficiently far right.
 
-## Strongest justified claim
+FD-056--FD-058 identify the remaining near-critical geometry more sharply. If a false-RH spike has size
 
-FD-049--FD-051 show that positive polynomial occupation loss is limited by the rightmost zero frontier, vanishing occupation can occur only on zero global logarithmic density, and the terminal nonsquarefree bulk is uniformly positive through quotient depth `o(sqrt H)`.
+\[
+A_X=|\mathcal H(X)|=X^{\Theta+o(1)},\qquad R_X=A_X(\log X)^B,
+\]
 
-FD-052 identifies a source-specific but noncoercive multiplicative law. Jordan-weighted dilation rays cancel the `1/zeta(s)` pole structure exactly; under false RH, a large squarefree-row spike can be balanced to leading order by other squarefree rows, so the nonsquarefree **signed first moment** need not carry the spike.
+a reciprocal-floor host produces a desired transfer interval `(x_q,X]` of length `\asymp R_X`. A theorem that insists the **represented start itself** avoid a common exceptional set pays the sparse-sample cardinality barrier of FD-057 and needs a schematic exponent `c>1`.
 
-FD-053 makes that obstruction robust for moving hosts. The same squarefree self-cancellation persists whenever the host cost `P_sigma(q)=o(log X)`, including primorial hosts reaching the geometric square-root-row regime. A one-dimensional multiplicative first-moment argument is therefore insufficient even at the frontier isolated by FD-051.
+Maximal short-interval control changes the geometry. The fixed transfer interval lies inside every ambient interval `(y,y+4R_X]` with `y` in a real interval `J_X` of length `\asymp R_X`. Therefore a maximal source theorem with exceptional **Lebesgue measure** `o(R_X)` already supplies one good containing start. For a schematic exceptional law
 
-FD-054 shows that quadratic occupation behaves differently. For a squarefree host `q`, the nearest multiple of four lies only `O(1)` rows away. If `q |Hcal(X)|/X -> infinity`, the one-Lipschitz source law transports the spike to that nonsquarefree neighbor with relative error `o(1)`, forcing a comparable nonsquarefree quadratic-energy contribution. Along a zero-frontier spike `|Hcal(X)| >= X^(Theta-delta)`, this mechanism activates once `q` is above the scale `X^(1-Theta+delta)`.
+\[
+m(\mathcal F_X)\ll X R_X^{-c+o(1)},
+\]
 
-## Synthesis of evidence
+the threshold is only
 
-Signed dilation coherence is now a matched negative control rather than the missing theorem. The promising currency is **additive physical adjacency plus quadratic occupation**, but it only works above a host-scale threshold. The unresolved region is the low-row side at or below the zero-frontier threshold, where a large source value can change by an amount comparable to itself across an `O(1)` row move.
+\[
+c>\frac{1-\Theta}{\Theta}.
+\]
 
-A closing theorem must either push additive/quadratic transference below that threshold using extra arithmetic structure, or show that the remaining low-row hosts cannot contain enough total energy to realize pointwise occupation collapse.
+The current maximal Möbius theorem transfers to the physical convolution source through real-scaled pullbacks `y -> y/d`, but its exceptional measure is only `O_K(X/(\log X)^K)`. Since `R_X=X^{\Theta+o(1)}`, that set can still cover the whole containing-start corridor. So maximality removes the **reciprocal-sample cardinality penalty**, not the quantitative exceptional-measure barrier.
 
-## Counterevidence / boundary cases
+The next useful theorem is therefore precise: obtain a maximal source estimate at the zero-frontier scale with exceptional measure `o(R_X)` and source error `o(A_X)`, or find a different source-coupled mechanism that bypasses this localization requirement. Generic density-zero statements, signed-ray cancellation, and pointwise-start counting are now the wrong currencies.
 
-FD-054 is a sufficient transference criterion, not a pointwise lower bound for every row. It leaves hosts with `q |Hcal(X)|/X=O(1)` uncontrolled. Under RH-scale source size this is precisely a square-root-type transition, so the surviving region can still overlap the difficult geometric boundary.
-
-The multiplicative self-cancellation results concern signed first moments and do not contradict the quadratic twin mechanism.
-
-## Epistemic status
-
-**Supported source-geometry boundary:** multiplicative signed rays can self-cancel through moving square-root-scale hosts, whereas sufficiently large squarefree hosts force a nearby nonsquarefree quadratic twin. Any residual occupation escape must live below the additive-transfer threshold or exploit geometry not seen by that local comparison.
-
-## Novelty/prior-art status
-
-No broad novelty claim is made beyond finding-level audits. This note synthesizes the exact zero-frontier, Jordan-ray, and additive occupation consequences.
-
-## Falsification criterion
-
-Invalidate the Jordan-ray cancellation, the moving-host bound, or the FD-054 additive twin estimate. Strategically, construct a physical-compatible low-row escape below the threshold, or prove a source law that transfers comparable quadratic energy there as well.
+**Boundary.** FD-058 does not prove the required power-saving exceptional estimate or positive nonsquarefree occupation. It distinguishes two proof paradigms: pointwise-start theorems pay the inverse-length sample penalty; maximal ambient-window theorems pay the corridor-scale measure threshold.
