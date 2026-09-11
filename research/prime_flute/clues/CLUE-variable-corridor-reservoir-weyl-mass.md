@@ -16,6 +16,7 @@ based_on:
   - research/prime_flute/findings/PF-285-complementary-weak-schatten-extension-strengths-close-the-weak-trace-endpoint-without-angle-decay.md
   - research/prime_flute/findings/PF-286-physical-extension-strengths-are-not-compact.md
   - research/prime_flute/findings/PF-287-heavy-extension-angle-is-exactly-a-product-of-heavy-range-projections.md
+  - research/prime_flute/findings/PF-288-diverging-local-form-witnesses-force-heavy-angle-noncompactness.md
   - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
@@ -71,7 +72,7 @@ PF-227 forces the physical high strength to be noncompact, so there is `\tau_H>0
 
 Thus no finite `p_P,p_H` exist for PF-285's population-only criterion. The surviving endpoint question is genuinely angular: can `\Gamma_{PF}` turn two infinite-dimensional heavy sectors into a compact/weak-trace cross operator with the required thresholded singular-value decay?
 
-PF-287 now removes one additional abstraction from that question. For arbitrary positive thresholds define the isometric unit-energy extension maps
+PF-287 removes one abstraction from that question. For arbitrary positive thresholds define the isometric unit-energy extension maps
 
 \[
 W_P^\alpha=V_PQ_P^\alpha,
@@ -101,7 +102,9 @@ Moreover the same operator can be computed directly from the physical precision 
 k\!\left[|R_P|^{-1}x,\ |R_H|^{-1}y\right].
 \]
 
-The live theorem is therefore a quantitative essential-orthogonality theorem for the **unit-energy physical low/high extension ranges**, not a problem of estimating polar maps or strength populations separately.
+PF-288 now makes the cheapest **negative** test local. Because the simultaneous PF precision is block-Jacobi, pairwise separated local low/high form vectors are exactly energy-orthogonal across different windows. If both diagonal Rayleigh quotients diverge and their same-window normalized mixed correlation stays bounded below, their unit-energy images asymptotically enter every fixed heavy spectral sector. A sparse-subsequence argument then gives an infinite-dimensional heavy cross-Gram operator bounded below, so `T` is noncompact. No explicit construction of global heavy spectral vectors is needed.
+
+PF-216 already provides the diverging local physical-low Rayleigh sequence. Therefore the current local falsifier has only two genuinely new geometric obligations: construct a pairwise separated **physical-high** local family with diverging diagonal Rayleigh quotient, and decide whether its normalized mixed form correlation with the PF-216 low channel vanishes.
 
 ## Research question
 
@@ -135,7 +138,7 @@ N_{\Pi_P^{\alpha_k}\Pi_H^{\beta_k}}(a_k)
 
 stays uniformly bounded, or prove that the corresponding necessary budget diverges along a canonical sequence.
 
-Because PF-286 shows that both physical sides contain infinite heavy populations, mere rank truncation can no longer help. The relevant theorem must establish actual transversality/compactness of the low-fed and high-fed pant extension ranges.
+Because PF-286 shows that both physical sides contain infinite heavy populations, mere rank truncation can no longer help. The relevant positive theorem must establish actual transversality/compactness of the low-fed and high-fed pant extension ranges. For a negative theorem, PF-288 says to test the local form first rather than diagonalizing the heavy spectral projections.
 
 ## Why it may matter
 
@@ -143,33 +146,35 @@ PF-281 proves that `T\in\mathcal S_{1,\infty}` closes the mixed Schur/reciprocal
 
 PF-287 makes the surviving geometry directly testable. Fixed-threshold compactness is equivalent to compactness of the product of the two heavy-range projections. This is the classical essential-orthogonality condition for those physical extension ranges, while the weak-trace endpoint asks for a quantitative thresholded refinement. The project no longer needs to infer the angle indirectly from the polar decomposition: it can estimate the unshifted energy-normalized cross form itself.
 
-A positive heavy-range theorem would show that the actual pant extension separates physical low and high directions strongly enough to overcome infinite saturated strength on both sides. A negative theorem can now be cheaper than a full endpoint asymptotic: one fixed pair of thresholds supporting arbitrarily large uniformly correlated unit-energy low/high families already makes the heavy projection product noncompact and, by PF-284, makes `T` noncompact.
+PF-288 makes the fixed-threshold **falsification** side substantially cheaper. The spectral projection may remain global; one can work on repeated local pant windows. Diverging diagonal form energy automatically pushes the corresponding unit-energy vectors into each fixed heavy sector, and block-Jacobi locality keeps distinct windows orthogonal. Thus a persistent local normalized low/high correlation would already kill compactness before any small-threshold counting asymptotic is attempted.
+
+A positive heavy-range theorem would show that the actual pant extension separates physical low and high directions strongly enough to overcome infinite saturated strength on both sides. A negative theorem can now be obtained from one local channel pattern repeated sparsely at infinity if it carries the PF-288 high-energy correlation.
 
 ## Decisive test
 
-Work with the actual simultaneous pant-extension form and keep the physical PF-212 `P/H` projectors fixed before any simplifying coordinate change. Do **not** begin by constructing the polar maps `V_P,V_H`. For chosen fixed thresholds `\alpha,\beta`, use PF-287 to pass directly to unit-energy heavy inputs:
+Start with the PF-288 local falsifier, because it avoids global spectral-vector construction. Take a sparse sequence of pant/module windows so different windows are separated by more than the block-Jacobi interaction range. On the low side use the explicit PF-216 tangentially constant module vector `\ell_n`, for which
 
 \[
-u=|R_P|^{-1}x,
+\frac{k[\ell_n]}{\|\ell_n\|^2}
+\gtrsim\frac{P_n}{\log P_n}\to\infty.
+\]
+
+On the same windows construct a physical-high vector `h_n` (or uniformly finite-dimensional physical-high family) and test the two quantities
+
+\[
+\frac{k[h_n]}{\|h_n\|^2},
 \qquad
-v=|R_H|^{-1}y,
+\frac{|k[\ell_n,h_n]|}
+{\sqrt{k[\ell_n]k[h_n]}}.
 \]
 
-with `x\in\operatorname{Ran}Q_P^\alpha`, `y\in\operatorname{Ran}Q_H^\beta`. Estimate the physical cross energy `k[u,v]` and therefore the product `\Pi_P^\alpha\Pi_H^\beta`.
+If the first tends to infinity while the second stays bounded below along a subsequence, PF-288 implies that every fixed positive heavy-angle compression is noncompact, hence `T` is noncompact and the weak-trace endpoint fails. This is now the cheapest decisive negative test.
 
-The cheapest decisive negative test comes first. Try to construct, at one fixed positive pair `\alpha,\beta`, arbitrarily large orthonormal heavy families `x_1,\ldots,x_m` and `y_1,\ldots,y_m` such that the cross-energy matrices
+A large raw high/high pant crossing is not enough. PF-227 supplies many raw physical-high channels but does not establish either the local high-Rayleigh divergence needed by PF-288 or a persistent **low/high** normalized cross correlation. Those must be computed for the actual fixed physical `P/H` split.
 
-\[
-G_m(i,j)
-=
-k\!\left[|R_P|^{-1}x_i,\ |R_H|^{-1}y_j\right]
-\]
+If the PF-288 local obstruction is absent, return to PF-287's positive compactness criterion: every unit-energy orthonormal high-heavy extension family must have correlation with the entire low-heavy extension range tending to zero. Only after fixed-threshold compactness survives should effort move to the finer small-threshold count needed for weak trace class, preferably the PF-283 `O(\tau^{-1})` sufficient law or an asymmetric PF-284-compatible replacement.
 
-have smallest singular value bounded below independently of `m`. PF-287 then gives a noncompact heavy projection product, and PF-284 gives noncompact `T`; the endpoint is genuinely dead.
-
-If every fixed-threshold obstruction of this kind can be excluded, prove compactness by the orthonormal-sequence criterion from PF-287: every unit-energy orthonormal high-heavy extension family must have correlation with the entire low-heavy extension range tending to zero. Only after fixed-threshold compactness survives should effort move to the finer small-threshold count needed for weak trace class, preferably the PF-283 `O(\tau^{-1})` sufficient law or an asymmetric PF-284-compatible replacement.
-
-PF-231's exactly separable untrimmed corridor may be used as a calibration, but it does not settle the physical projection product. Its hypercycle trim, physical projectors, neighboring-cell inhomogeneity, and global Schur completion remain possible sources of low/high range overlap.
+PF-231's exactly separable untrimmed corridor may be used as a calibration, but it does not settle the physical projection product. Its hypercycle trim, physical projectors, neighboring-cell inhomogeneity, and global Schur completion remain possible sources of low/high range overlap. In particular, separability may make the leading local model low/high orthogonal, so any persistent PF-288 correlation has to be derived rather than inferred from raw corridor multiplicity.
 
 Do not replace the physical angle by scalar same-mode reservoirs, raw high/high multiplicity alone, or a coordinate-mode angle that changes the fixed `P/H` split. PF-286 already uses those raw low/high estimates only to establish that the outer factors are heavy; the remaining question concerns their **common unit-energy range geometry**.
 
@@ -177,10 +182,10 @@ Do not replace the physical angle by scalar same-mode reservoirs, raw high/high 
 
 PF-282 establishes the exact strength-angle factorization and fixed-heavy-sector ideal equivalence. PF-283 establishes one sufficient symmetric heavy-angle count. PF-284 establishes the reverse comparison and the corresponding necessary weighted budget. PF-285 establishes an abstract population-only sufficient route, while PF-286 proves that this route does not apply to the canonical physical strength factors because both are noncompact with infinite heavy populations.
 
-PF-287 establishes that each thresholded heavy angle has exactly the same nonzero singular-value distribution as the product of the corresponding heavy extension-range projections, and gives the direct unshifted energy-normalized cross-form formula. The underlying two-subspace/projection geometry is classical; PF-287's contribution is the exact identification with the physical Prime-Flute endpoint object.
+PF-287 establishes that each thresholded heavy angle has exactly the same nonzero singular-value distribution as the product of the corresponding heavy extension-range projections, and gives the direct unshifted energy-normalized cross-form formula. PF-288 establishes a sufficient **local-form noncompactness certificate**: pairwise separated local low/high vectors with divergent diagonal Rayleigh quotients and persistent normalized mixed correlation force noncompactness at every fixed heavy threshold. The underlying compactness, spectral-projection, and two-subspace geometry is classical; PF-288's useful specialization is the bridge from exact PF block-Jacobi locality and local Rayleigh growth to the PF-287 heavy witness.
 
-None of PF-286/PF-287 shows that the physical projection product is compact or noncompact, or that `T` does or does not belong to weak trace class. No physical principal-angle counting law has yet been proved, and no wave-operator, trace-formula, prime/clone separation, zeta-zero, or RH consequence follows.
+PF-216 supplies only the low-side divergent local Rayleigh channel. Neither PF-227 nor PF-286 proves the remaining high-side local divergence plus mixed low/high correlation. Therefore PF-288 does not yet decide whether the physical projection product is compact or noncompact, or whether `T` does or does not belong to weak trace class. No physical principal-angle counting law has yet been proved, and no wave-operator, trace-formula, prime/clone separation, zeta-zero, or RH consequence follows.
 
 ## Research disposition
 
-The clue remains `accepted`. The strength-population route is closed by PF-286, while PF-287 converts the surviving angular target into an explicit physical object: the product of the unit-energy heavy extension-range projections, equivalently the unshifted diagonal-energy-normalized low/high cross form. Test fixed-threshold essential orthogonality first using PF-287's finite-witness/orthonormal-sequence criteria; if it survives, measure the thresholded projection-product count using PF-283 as a clean sufficient endpoint and PF-284 as the genuine necessary boundary.
+The clue remains `accepted`. The strength-population route is closed by PF-286, PF-287 identifies the surviving object as the product of unit-energy heavy extension-range projections, and PF-288 localizes the cheapest noncompactness test. First test whether the PF-216 low channel can be paired with a separated physical-high local family having diverging diagonal energy and nonvanishing normalized mixed correlation. If that obstruction fails, attack fixed-threshold essential orthogonality via PF-287; only after compactness survives should the research spend effort on the PF-283/PF-284 quantitative threshold counts.
