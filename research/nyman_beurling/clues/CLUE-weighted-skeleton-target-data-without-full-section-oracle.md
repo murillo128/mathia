@@ -66,7 +66,7 @@ A positive mathematical outcome requires a proved arithmetic tail estimate and t
 
 ## Evidence boundary
 
-The cited findings and local clue dispositions were inspected at 7797f89e198f582ef44b54596d2d379b8ee540fb. Check their current claims and any adjacent review sidecars before adoption. No reduced projector algorithm, tail enclosure, numerical experiment, improved approximation rate, or Lean proof is supplied here. Schur elimination and perturbation estimates are standard tools, not a novelty claim; the unresolved contribution would be source-specific control of the eliminated tail. The existing accepted and resolved clues remain unchanged. Close this handoff if its precise target-data construction test is already covered, rather than promoting another representation of the same certificate.
+The current Research Watch disposition relies on the canonical findings listed in `based_on`; check their current claims and any adjacent review sidecars before adoption. No reduced projector algorithm, tail enclosure, numerical experiment, improved approximation rate, or Lean proof is supplied here. Schur elimination, projector compression, principal-angle language, and perturbation estimates are standard tools, not novelty claims; the unresolved contribution would be source-specific control of the eliminated tail. The existing accepted and resolved clues remain unchanged. Close this handoff if its precise target-data construction test is already covered, rather than promoting another representation of the same certificate.
 
 ## Research disposition
 
