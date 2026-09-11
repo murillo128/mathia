@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-localized-tail-flow-controls-recursive-repair
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: nyman_beurling
 based_on:
@@ -56,3 +56,12 @@ with `E_(M,N)=o(d_N^2)` under explicitly source-checkable hypotheses. The decisi
 ## Evidence boundary
 
 NB-047 establishes localization of one exact directional aggregate; NB-048 establishes a recursive approximation of the unique target repair. Neither finding proves that the localized discrepancies determine, estimate, or even correlate with the repair slack. This clue does not assert a new Nyman approximation rate and does not change the status of the existing accepted target-oracle clues. It isolates a new bridge between two later exact reductions that still requires ordinary Research Watch derivation, adversarial testing, and prior-art audit.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/nyman_beurling/findings/NB-049-ambient-dual-localization-turns-on-only-beyond-the-weighted-repair-threshold]]
+
+`NB-049` shows that the clue's first proposed test scale is asymptotically non-discriminating. Any localization proof that closes through the ambient norm `||Omega_M||/d_N -> 0` necessarily forces `M d_N^2 -> infinity`, exactly the regime where `NB-039` says the unrepaired weighted skeleton already preserves the target distance and `NB-048` makes the recursive repair slack relatively negligible. The unresolved bridge therefore survives only in the critical/subcritical regime `M d_N^2=O(1)`, where a useful argument must exploit directional cancellation or another relation stronger than ambient Cauchy control.
