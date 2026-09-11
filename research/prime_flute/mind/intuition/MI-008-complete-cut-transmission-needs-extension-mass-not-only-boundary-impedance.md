@@ -1,43 +1,23 @@
-# MI-008 — Prime-Flute compactness requires genuinely diverging local response frequency
+# MI-008 — A local mixed-response obstruction needs unbounded source moment or an uncontrolled residual map
 
-**Evidence level:** proved operator/form-theoretic boundary
+**Evidence level:** proved operator boundaries; the factorization of the complete physical mixed response remains open.
 
-## Core intuition
+For the fixed physical window `I=(-T,T)` and cutoff `kappa`, let `E_n` span the restrictions of `exp(2pi i k t/L_n)` with `|2pi k/L_n|<=kappa`, where `L_n -> infinity`, and put `V_n=E_n^perp`. [PF-292](../../findings/PF-292-fixed-physical-high-pass-forces-diverging-local-frequency-floor.md) proves that the constrained Dirichlet frequency floor `inf_{phi in V_n cap H_0^1, ||phi||_2=1}||phi'||_2` diverges. There are `R_n -> infinity` and `epsilon_n -> 0` such that, with `K_D=(-partial_t^2)_D^{1/2}`,
 
-Energy normalization reduces the endpoint to the relative geometry of heavy low/high extension ranges. The cheapest noncompactness witness is an exact scalar **high-band shorting deficit**, but fixed-window response profiles cannot keep it positive unless their local complexity itself diverges.
+\[
+\|P_{V_n}g_n\|_2\le\varepsilon_n\|g_n\|_2
++R_n^{-\sigma}\|K_D^\sigma g_n\|_2\quad(\sigma>0).
+\]
 
-The physical cutoff is fixed globally, yet the dense low-frequency grid forces every admissible high profile on a fixed pant window to move to arbitrarily high **local** Sobolev frequency. A persistent local heavy angle therefore requires the normalized mixed-response Riesz representatives to develop high-frequency mass or lose uniform amplitude/regularity control.
+Thus a uniformly bounded positive-Sobolev response cannot have a persistent high projection. No quantitative rate for `R_n` follows from this argument. The optimized mixed low/high correlation is the shorting deficit `delta=1-inf_h k[ell+h]/k[ell]` in the admissible high space ([PF-290](../../findings/PF-290-optimized-local-low-high-correlation-is-an-exact-high-band-shorting-deficit.md)); persistent positive deficits on separated coercive local witnesses obstruct compactness.
 
-## Strongest justified claim
+For the canonical fixed-axis component, [PF-296](../../findings/PF-296-weighted-source-row-moment-controls-canonical-fixed-axis-superpositions.md) supplies more than a fixed-row bound. If `y_(s,r)^(i)` is its normalized source column and `q_i=kappa_i^(1/2)c_i asymp kappa_i`, then uniformly for `s>0`, `0<r<=r_*`,
 
-PF-279--PF-289 show that the strength factors remain heavy, the thresholded angle is exactly a product of heavy-range projections, and separated local vectors with positive Rayleigh floors and persistent normalized mixed correlation force noncompactness.
+\[
+\|U^*\sum_i a_i y_{s,r}^{(i)}\|_{H^{1/2}(\mathbb R)}
+\le C_{r_*}\sum_i q_i|a_i|.
+\]
 
-PF-290 optimizes the high-vector choice exactly: the squared optimal mixed correlation equals the variational energy drop `delta=1-inf_h k[ell+h]/k[ell]`, equivalently a projection energy and Schur complement. A positive limsup of these deficits on a separated tail kills compactness.
+The canonical tail already has bounded seam ratio. Therefore a complete response of the form `G_n=T_n Y_n(a_n)`, with the already-controlled positive-Sobolev transport `T_n` and `sup_n sum_i q_i|a_(n,i)|<infinity`, has vanishing local high projection and cannot sustain that deficit. Growing row count alone is not an escape: its weighted first moment must become unbounded along a subsequence, or the actual response must contain a residual mixed/reassembly operator outside this factorization.
 
-PF-291 shows that the physical low-frequency grid becomes complete on every fixed window, so every precompact family of fixed-window response profiles has vanishing optimized pairing with the high-pass space. Scalar reciprocal-width profiles are therefore insufficient.
-
-PF-292 sharpens this from compactness to frequency. The constrained local Dirichlet frequency floor `omega_n` of the high-pass space diverges. More generally there is a moving cutoff `R_n->infinity` below which the high projection becomes asymptotically blind. Hence any uniformly `L^2`-bounded response family with a fixed positive fractional Sobolev bound has vanishing high-pass projection and cannot sustain the PF-290 local obstruction.
-
-## Synthesis of evidence
-
-The next local test is now quantitative: can the **genuine mixed DtN response** generate nonvanishing mass above a diverging local tangential frequency scale, or force its normalized amplitude/regularity to blow up? Merely invoking a two-dimensional response, variable width, or another bounded smooth profile is no longer enough.
-
-If a uniform positive Sobolev estimate can be proved for the actual normalized response family, the PF-290 local noncompactness route closes and the positive endpoint problem must return to global heavy-range projection counts.
-
-## Counterevidence / boundary cases
-
-PF-292 gives no rate for `omega_n` beyond divergence and does not prove a uniform Sobolev bound for the true mixed response. The physical high witnesses do exist, so some local frequency scale reaches at least up to the thin-corridor scale.
-
-Failure of the local falsifier still does not prove weak trace class.
-
-## Epistemic status
-
-**Exact local frequency boundary:** persistent local shorting requires genuinely escaping tangential frequency or regularity; every uniformly positive-Sobolev response family is asymptotically annihilated by the fixed physical high-pass.
-
-## Novelty/prior-art status
-
-Shorted forms, Schur complements, Fourier completeness, Rellich compactness, and Sobolev spectral tails retain their finding-level classifications.
-
-## Falsification criterion
-
-Invalidate the PF-290 shorting identity, PF-291 strong high-pass annihilation, or PF-292 diverging frequency floor. Strategically, prove or disprove a uniform fractional-Sobolev bound for the genuine normalized mixed DtN response.
+This does not prove the factorization or bound its coefficients. Nor does absence of this local witness imply global compactness or weak trace class; the global heavy-range projection product and its singular-value counts remain separate objects.

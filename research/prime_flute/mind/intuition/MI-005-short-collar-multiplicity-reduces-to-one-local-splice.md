@@ -1,29 +1,13 @@
-# MI-005 — Endpoint assembly bifurcates into PF-specific strong rigidity or a weak/Lorentz splice
+# MI-005 — Conservative marking does not restore an L1 rigidity estimate
 
-**Evidence level:** exact geometric/operator endpoint accounting through PF-191 plus literature-backed strong-`L^1` route boundaries through PF-193
+**Evidence level:** proved route boundary; a splice using the particular canonical boundary germ is not refuted.
 
-## Core intuition
+The tempting endpoint extension of marked `W^{1,r}` collar rigidity (`r>1`) is false even with the usual conservative constraints. On the fixed PF-185 collar slab, [PF-194](../../findings/PF-194-hamiltonian-reflection-marked-korn-still-fails-in-L1.md) constructs, for every `K>0`, a smooth Hamiltonian reflection-equivariant field with
 
-Prime-Flute has already paid the global endpoint energy cost. The exact-area body transport and true-short-collar transition budget are summable at `L^1`, while the decoupled central spectral sector is weak trace class. The remaining problem is the local conservative reassembly, but PF-192--PF-193 show that its strong endpoint cannot be justified by generic rigidity or by `det dH=1` alone.
+\[
+\|\nabla u\|_1>K\|\operatorname{Def}u\|_1.
+\]
 
-The live geometry therefore bifurcates. Either the **specific PF germ** has enough marking/exactness/boundary structure to exclude the generic endpoint laminate mechanism and yield an energy-linear strong splice, or the correct endpoint is weak/Lorentz and the operator proof must be rebuilt to consume that weaker geometry without adding logarithmic loss.
+Short Hamiltonian flows give exact-area, zero-flux diffeomorphisms `H`, equal to the identity near the boundary and arbitrarily `C^1`-close to it, with `||H-id||_{W^{1,1}}>K||delta_{g,H^*g}||_1`. Thus determinant one, zero flux, reflection marking, boundary identity and near-identity size together still do not imply an energy-linear strong endpoint estimate. This is a map-level obstruction, not only the earlier determinant-one laminate obstruction.
 
-## Strongest justified principle
-
-PF-183--PF-188 reduce infinitely many short collars to one local splice and establish marked `W^{1,r}` rigidity for every `r>1`. PF-189--PF-191 then show that the complete thin sector, body transport, and thick transitions already have endpoint-compatible budgets.
-
-PF-192 imports the Conti--Faraco--Maggi endpoint boundary: generic strong `L^1` geometric rigidity fails, so the `r>1` theorem cannot simply be continued to `r=1`. PF-193 removes a tempting PF-specific shortcut at matrix level. An explicit product-of-shears map sends the CFM finite-order staircase into `SL(2,R)`, preserves every rank-one split and barycenter, and retains an arbitrarily large strong-rigidity ratio even arbitrarily close to the identity. Exact determinant one therefore does not eliminate the bad laminate geometry.
-
-PF-193 stops at laminates, not admissible annulus maps. This is precisely where PF-specific structure may still matter: reflection marking, exact zero flux beyond pointwise determinant, fixed boundary/germ constraints, or canonical regularity may forbid realization of those laminates. Conversely, a determinant-preserving map-level realization preserving the bad ratio would strongly favor the weak endpoint route.
-
-## Counterevidence / boundary
-
-No current finding proves that the actual PF-179--PF-184 canonical map class violates strong `W^{1,1}` rigidity. Nor does weak-`L^1` geometric control by itself imply a weak-`S_1` global resolvent theorem. The strong and weak routes remain genuinely open at the local splice/reassembly interface.
-
-## Epistemic status
-
-**Proved endpoint budgets; literature-backed/generic strong-endpoint obstruction; open PF-specific splice.** The synthesis relocates the live gate without claiming that either endpoint route succeeds.
-
-## Falsification criterion
-
-Prove a PF-specific energy-linear strong endpoint splice using a hypothesis that demonstrably excludes the PF-193 laminate mechanism; realize the determinant-one staircase by globally admissible PF-style maps with the bad ratio intact; or prove a weak/Lorentz conservative splice whose operator reassembly reaches weak `S_1` without the conditional logarithmic loss. Any outcome would resolve the present bifurcation.
+The source of failure is an interior Hamiltonian oscillation. A construction required only to match the canonical PF-179--PF-184 outer germ could discard that oscillation; the counterexample does not show that every such splice has a large cost. The unresolved distinction is therefore generic rigidity of a supplied map versus existence of a better representative matching a prescribed germ. A weak/Lorentz splice would also need an operator estimate that actually consumes its weaker norm; it is not automatically a weak-trace theorem.
