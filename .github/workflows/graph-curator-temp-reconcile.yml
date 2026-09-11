@@ -1,0 +1,70 @@
+name: Temporary graph curator reconciliation
+on:
+  push:
+    branches: [tmp/graph-curator-20260911-a21202]
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Rebuild and validate stable memberships
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          R=Path('.')
+          L=[('analytic_frontier','analytic-frontier','Analytic Frontier'),('arithmetic_fidelity','arithmetic-fidelity','Arithmetic Fidelity'),('farey_discrepancy','farey-discrepancy','Farey Discrepancy'),('mobius_cancellation','mobius-cancellation','Möbius Cancellation'),('nyman_beurling','nyman-beurling','Nyman–Beurling'),('prime_circle','prime-circle','Prime Circle'),('prime_flute','prime-flute','Prime Flute'),('prime_lattice','prime-lattice','Prime Lattice'),('robin_extremal','robin-extremal','Robin Extremal'),('visual_exploration','visual-exploration','Visual Exploration'),('weil_inertia','weil-inertia','Weil Inertia'),('weil_positivity','weil-positivity','Weil Positivity'),('xi_flow','xi-flow','Xi Flow')]
+          def ff(line): return sorted(p for p in (R/'research'/line/'findings').glob('*.md') if not p.name.endswith('.review.md'))
+          n=0
+          for line,k,title in L:
+              fs=ff(line); n+=len(fs)
+              out=['---',f'id: RG-{k}-membership','type: research-graph-membership',f'scope: {line}','derived: true','---','',f'# {title} structural membership','',f'[[research/{line}/graph/{k}|{title} research graph]]','',f'This stable projection inventories every current canonical {title} finding. Links assert line ownership only, not dependence, support, chronology, novelty, or endorsement. The source of membership is the current findings tree, not a curator window.','']
+              for p in fs:
+                  a=p.stem.split('-',2)
+                  if len(a)<3 or not a[1].isdigit(): raise SystemExit(f'Unexpected finding filename: {p}')
+                  out.append(f'- [[{p.with_suffix("").as_posix()}|{a[0]}-{a[1]}]]')
+              out.append('')
+              (R/'research'/line/'graph'/f'{k}-membership.md').write_text('\n'.join(out),encoding='utf-8')
+          S=[('research/mind/intuition','Global')]+[(f'research/{line}/mind/intuition',title) for line,_,title in L]
+          io=['---','id: RG-intuition-membership','type: structural-membership','scope: global-intuitions','status: derived','derived: true','---','','# Durable intuition membership','',"This is a path-derived structural projection for graph topology. Each link means only that the target is a durable `MI-*` intuition note in Mathia's visible research corpus. It does not assert mathematical support, dependence, refinement, contradiction, chronology, endorsement, or evidence.",'','- [[research/graph/global|Global research graph]]','','<!-- intuition-membership:start -->','## Current durable intuitions','']
+          ni=0
+          for d,title in S:
+              p=R/d; fs=sorted(x for x in p.glob('MI-*.md') if not x.name.endswith('.review.md')) if p.exists() else []
+              if fs: ni+=len(fs); io+=[f'### {title}']+[f'- [[{x.with_suffix("").as_posix()}]]' for x in fs]+['']
+          io+=['<!-- intuition-membership:end -->','']
+          ip=R/'research/graph/intuition-membership.md'; ip.write_text('\n'.join(io),encoding='utf-8')
+          for line,k,_ in L:
+              t=(R/'research'/line/'graph'/f'{k}-membership.md').read_text()
+              got=set(re.findall(r'\[\[(research/[^|\]]+/findings/[^|\]]+)\|',t)); exp={p.with_suffix('').as_posix() for p in ff(line)}
+              if got!=exp: raise SystemExit(f'Membership mismatch {line}: missing={sorted(exp-got)[:5]} extra={sorted(got-exp)[:5]}')
+          t=ip.read_text(); got=set(re.findall(r'\[\[(research/(?:[^|\]]+/)?mind/intuition/MI-[^|\]]+)\]\]',t)); exp=set()
+          for d,_ in S:
+              p=R/d
+              if p.exists(): exp|={x.with_suffix('').as_posix() for x in p.glob('MI-*.md') if not x.name.endswith('.review.md')}
+          if got!=exp: raise SystemExit(f'Intuition mismatch: missing={sorted(exp-got)[:5]} extra={sorted(got-exp)[:5]}')
+          unresolved=[]
+          gf=list((R/'research/graph').rglob('*.md'))
+          for line,_,_ in L: gf+=list((R/'research'/line/'graph').rglob('*.md'))
+          for p in gf:
+              for raw in re.findall(r'\[\[([^\]]+)\]\]',p.read_text()):
+                  q=raw.split('|',1)[0].split('#',1)[0].strip()
+                  if q.startswith('research/') and not (R/q).exists() and not (R/q).with_suffix('.md').exists(): unresolved.append((p.as_posix(),q))
+          if unresolved: raise SystemExit('Unresolved graph-owned wikilinks: '+repr(unresolved[:20]))
+          print(f'canonical_findings={n}'); print(f'durable_intuitions={ni}')
+          PY
+          git diff --check
+          git status --short
+      - name: Commit reconciled derived graph
+        shell: bash
+        run: |
+          if git diff --quiet -- research/*/graph/*-membership.md research/graph/intuition-membership.md; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/*/graph/*-membership.md research/graph/intuition-membership.md
+          git commit -m "research(graph): reconcile stable memberships on temporary branch"
+          git push origin HEAD:tmp/graph-curator-20260911-a21202
