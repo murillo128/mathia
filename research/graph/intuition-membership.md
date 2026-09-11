@@ -59,6 +59,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-021-coarse-rh-endpoints-can-still-require-deep-source-access]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-022-prefix-truncation-must-respect-cancellation-orbits]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-025-regular-sampling-separates-aliasing-from-finite-window-stability]]
 
 ### Farey Discrepancy
 - [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]
@@ -79,6 +81,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category]]
 - [[research/mobius_cancellation/mind/intuition/MI-014-centered-parity-and-zero-mode-are-separate-currencies]]
 - [[research/mobius_cancellation/mind/intuition/MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge]]
+- [[research/mobius_cancellation/mind/intuition/MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy]]
+- [[research/mobius_cancellation/mind/intuition/MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
@@ -99,6 +103,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-010-anchored-holomorphic-jets-have-one-mellin-carrier]]
 - [[research/prime_circle/mind/intuition/MI-011-scalar-fourier-zero-existence-is-deformation-dependent]]
 - [[research/prime_circle/mind/intuition/MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra]]
+- [[research/prime_circle/mind/intuition/MI-013-growing-collision-geometry-can-still-be-classical]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]
@@ -108,6 +113,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_flute/mind/intuition/MI-005-short-collar-multiplicity-reduces-to-one-local-splice]]
 - [[research/prime_flute/mind/intuition/MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency]]
 - [[research/prime_flute/mind/intuition/MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap]]
+- [[research/prime_flute/mind/intuition/MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance]]
 
 ### Prime Lattice
 - [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding]]
@@ -129,6 +135,7 @@ This is a path-derived structural projection for graph topology. Each link means
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
+- [[research/robin_extremal/mind/intuition/MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -138,6 +145,9 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-005-random-prime-phase-controls-have-deterministic-resonance-geometry]]
 - [[research/visual_exploration/mind/intuition/MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates]]
 - [[research/visual_exploration/mind/intuition/MI-007-moment-null-packets-pay-an-order-matched-variation-gate]]
+- [[research/visual_exploration/mind/intuition/MI-008-fixed-dimensional-gram-lags-are-a-newton-clock-null]]
+- [[research/visual_exploration/mind/intuition/MI-009-stable-decoding-is-a-collision-geometry-question]]
+- [[research/visual_exploration/mind/intuition/MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]
@@ -155,6 +165,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-013-exceptional-populations-have-finite-spectral-screening-rank]]
 - [[research/weil_inertia/mind/intuition/MI-014-source-coercivity-must-survive-confluence-and-drifting-bows]]
 - [[research/weil_inertia/mind/intuition/MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass]]
+- [[research/weil_inertia/mind/intuition/MI-016-finite-radius-source-localization-can-replace-zero-side-tightness]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
@@ -169,6 +180,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_positivity/mind/intuition/MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation]]
 - [[research/weil_positivity/mind/intuition/MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling]]
 - [[research/weil_positivity/mind/intuition/MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization]]
+- [[research/weil_positivity/mind/intuition/MI-013-critical-sector-transport-needs-new-global-arithmetic-structure]]
 
 ### Xi Flow
 - [[research/xi_flow/mind/intuition/MI-001-collision-safe-coordinates-separate-singularity-from-source-information]]
@@ -183,5 +195,6 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-010-endpoint-renormalization-is-source-fixed-before-discretization]]
 - [[research/xi_flow/mind/intuition/MI-011-cross-scale-observability-can-compress-to-one-off-circle-heat-trace]]
 - [[research/xi_flow/mind/intuition/MI-012-xi-tail-hazard-is-source-specific-but-not-yet-coercive]]
+- [[research/xi_flow/mind/intuition/MI-013-adapted-cusp-coordinates-separate-depth-from-conditioning]]
 
 <!-- intuition-membership:end -->
