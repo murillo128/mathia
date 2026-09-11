@@ -1,35 +1,41 @@
-# MI-008 — Stable target transport depends on the actual composed map, not local recoverability or smoothing alone
+# MI-008 — Exact recovery and good local coordinates do not imply stable target transport
 
-**Evidence level:** supported cross-line synthesis from cancellation-coherent sampling, Nyman closure, finite-seam transport, and Xi observability/source boundaries
+**Evidence level:** supported cross-line synthesis
 
 ## Core intuition
 
-Exact representation, exact state recovery, local smoothing, or a favorable limiting operator does not determine whether the final target is transported stably. The missing quantity often lives in the composition between stages: cancellation may be broken, a quotient may erase the target, a positive component may impose a floor, or an observation map may be exponentially ill-conditioned.
+A representation can be exactly identifying, admit a perfectly conditioned local inverse, or expose the relevant source signal at a very small scale and still fail to transport the final target stably. The irreducible cost often moves to another stage: acquisition of adaptive observables, global recurrence, target projection, relative angle, or cancellation across the actual composed map.
 
-A local theorem should therefore be trusted only after its gain survives the **actual finite/global map** that produces the target currency.
+The right question is therefore not “can the hidden state be recovered in principle?” but **what quantitative modulus survives the full map from source data to the target statistic?**
 
 ## Strongest justified principle
 
-Arithmetic Fidelity makes cancellation coherence explicit. AF-237--AF-243 show that local source truncations can manufacture a false Li root rate by cutting a global cancellation orbit. AF-245--AF-247 then show that sparse output observability has its own phase-recurrence criterion; fewer faithful outputs do not make source construction cheaper.
+Arithmetic Fidelity gives an exact category/topology separation. AF-267 constructs RH-violating count-preserving zero surgeries whose full vertical logarithmic-derivative profiles approach the genuine one uniformly, eliminating a positive metric gap. AF-268 nevertheless excludes every nontrivial finite surgery from the exact Bohr almost-periodic source category. Exact membership does not provide robust separation.
 
-Nyman--Beurling gives the quotient analogue. NB-027 finds source-selected coefficient mass transverse to restricted adjacent matchings, but NB-028--NB-029 show that the unrestricted adjacent quotient collapses the signal and that all adjacent differences together span the full Nyman closure. A useful local nuisance direction cannot be extrapolated to an unrestricted quotient without checking the target-bearing closure.
+Visual Exploration gives the representation version. VIS-161 shows that two exact prime phases identify every real height, but their inverse on the dense torus orbit is nowhere continuous. VIS-162 proves that the optimal Lipschitz decoder constant for any observable is exactly its worst phase-collision quotient. Set-theoretic recovery can therefore be maximally ill-conditioned.
 
-Prime Flute is now the cleanest smoothing counterexample. PF-258--PF-260 prove a genuine fixed-axis fractional window with `R>1`, and PF-261--PF-267 give strong finite-seam Green control. Yet PF-268 proves that the positive lowest mass pole alone makes the **bare finite-seam** separated operator unbounded for every `R>1`. The local smoothing margin survives only if the normalized Robin or spatial propagation map changes the obstruction before endpoint weighting.
+Xi Flow shows that even bad finite-dimensional conditioning may be a coordinate artifact. XF-179 requires depth `m` to identify `m` moved atom pairs; XF-180's monomial inverse is exponentially ill-conditioned in `m`, but XF-181 constructs adapted cusp coordinates with an orthogonal Jacobian and remote-index-uniform local bi-Lipschitz control. What remains expensive is adaptive depth, support knowledge, nonlinear radius, and extraction of those observables from source/heat data.
 
-Xi Flow supplies the conditioning version. XF-159 shows that even continuum blind-region data remain exponentially transition-insensitive under subexponentially conditioned decoders. XF-162 finds a true Xi-specific source-tail discriminator, but no theorem yet propagates that tail information through the heat/source map into transition visibility.
+Nyman--Beurling supplies the target-projection analogue. NB-047 localizes the Burnol-scale directional signal to a tiny deterministic prefix, while NB-048 approximates the unique target repair by a smaller-section projection with exact slack. Small source witness scale does not yet imply cheap geometric target repair.
+
+Prime Flute closes another possible shortcut. The physical outer extension-strength factors are noncompact and infinitely heavy, so weak-trace decay cannot come from their population decay. It must be supplied by relative angle on the common heavy sectors.
 
 ## Program consequence
 
-Estimate the composed target map in its final normalization. For a limiting/local gain, prove the uniform finite-scale transport theorem; for a quotient, prove that target-bearing closure survives; for sparse output, separate observability from source cost; for source regularity, prove that the regularity enters the transition rather than only the far tail.
+For every proposed compression or recovery theorem, separate four questions: what is exactly identifiable, in which topology is the inverse stable, which adaptive observables must be acquired, and how does the recovered quantity enter the final target projection/sign. A theorem at one layer should not be promoted across the next layer without an explicit modulus.
+
+This also changes how conditioning evidence should be interpreted. A large condition number may be removable by better coordinates; a small condition number may still be irrelevant if computing those coordinates already requires the target oracle. The invariant cost is the whole source-to-target composition.
 
 ## Counterevidence / boundary
 
-The failures are category-specific. Prime Flute may recover a margin after the combined normalized Robin/spatial map; Nyman may isolate a genuinely target-poor low-energy subspace; Xi may have a source identity transporting tail rigidity inward. Those possibilities reinforce rather than weaken the need to analyze the exact composition.
+The cited lines do not imply that stable transport is impossible. XF-181 positively removes one local conditioning barrier; NB-048 provides a recursive approximation; VIS-162 gives an exact stability criterion; and Prime Flute leaves an angular route open. These advances sharpen where a successful theorem must act.
+
+Nor is one topology universally privileged. The relevant metric or regularity class is part of the downstream mathematical claim.
 
 ## Epistemic status
 
-**Supported distinction between local correctness and stable transport, strengthened by an exact case where a real fixed-axis smoothing gain fails after the bare finite-seam map.**
+**Supported cross-line separation of identifiability, conditioning, acquisition, and target transport.** Recent findings strengthen the principle by showing both directions: exact recovery can be unstable, while apparently severe local ill-conditioning can disappear after adapted preconditioning without solving the global source problem.
 
 ## Falsification criterion
 
-Produce a final theorem in one cited setting while bypassing the identified cancellation, closure, finite-seam, or conditioning modulus without adding new source structure, or invalidate an exact map/boundary on which the synthesis relies.
+In one cited setting, derive the final target theorem from exact identifiability or local conditioning alone while bypassing the identified acquisition/projection/recurrence modulus, under the same hypotheses. Alternatively, invalidate a load-bearing exact separation such as the VIS-162 collision criterion, XF-181 local isometry, or NB-048 repair identity.

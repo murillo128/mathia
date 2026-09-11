@@ -1,49 +1,45 @@
-# MI-016 — Weil-form observability is exact, but source positivity is the unresolved currency
+# MI-016 — Weil source identity is projectively recoverable, but positivity needs a cross-band arithmetic law
 
-**Evidence level:** supported
+**Evidence level:** supported by exact finite/projective identifiability theorems
 
 ## Core intuition
 
-Finite-dimensionality is not the decisive information loss in Weil-form approaches. A canonical finite semilocal core detects every RH failure, and the finite CvS path is already a Galerkin representation of the same localized completed Weil form studied by Suzuki. The remaining theorem is not another bridge or observability result: derive the **global unshifted Weil sign** from the rational-prime source.
+Finite-dimensionality is not the decisive obstruction in Weil-form approaches, but neither is exact source recovery the missing positivity theorem. A fixed finite Galerkin band forgets most of the detailed prime-power event stream and admits exact positive sparse aliases. The complete tower of bands removes that ambiguity and recovers the source modulo the zero-frequency endpoint. Yet this recovery is generic Fourier uniqueness and does not distinguish the rational-prime source by sign.
 
-Local event sign, strict aperture geometry, and an exact scalar RH order parameter all organize the problem without selecting the positive branch. The source-side theorem must couple the von Mangoldt event stream to the archimedean/polar completion in the original form.
+The unresolved currency is therefore a **cross-band arithmetic compatibility law stronger than reconstruction** that forces positivity of the original completed localized Weil form.
 
 ## Strongest justified claim
 
-PL-259--PL-261 establish the observability hierarchy: bulk moment information can miss sparse defects, exact finite inertia detects them, and the Connes--Consani semilocal Laurent core eventually detects every negative direction of the localized Weil form. PL-262--PL-263 show that expanding-window stability and the orientation of the original unshifted form remain separate gates.
+PL-259--PL-269 establish the observability/aperture hierarchy. Every RH failure is finitely visible; the CvS and Suzuki constructions evaluate the same localized completed Weil form; individual event jets are template-universal; the ground energy is strictly decreasing; and
 
-PL-264 examines individual prime-power thresholds. Each event has a negative rank-one derivative shock and a universal higher singular jet up to its von Mangoldt scalar and location. One-edge interlacing and resolvent geometry therefore contain no additional Riemann-specific selector.
+`RH <=> lambda_a -> 0`.
 
-PL-265 resolves the previously proposed multi-edge bridge: after the parameter identification `c=e^(2a)`, the finite CvS path and Suzuki localization are evaluations of the **same completed localized Weil quadratic form**. No extra Schur complement or spectral shift is needed to compare their signs.
+This gives an exact destination but no source-side sign selector.
 
-PL-266--PL-268 give the exact aperture geometry. The ground energy `lambda_a` is strictly decreasing in `a`; nested finite compressions recover the onset of strict negativity from pointwise convergence; and translation symmetry excludes zero plateaus. Thus under RH every finite `lambda_a` is strictly positive, while off RH there is one finite zero crossing and permanent negativity afterward.
+PL-270 shows how much one finite band forgets. Groskin's source calculus factors the prime contribution through `2N+1` real coordinates. Positive Caratheodory--Tchakaloff compression then reproduces the same entire level-`N` matrix with at most `2N+1` positively reweighted prime-power atoms selected from the active support. Finite-band eigenvalues, inertia, determinants, and all other matrix invariants inherit the same alias.
 
-PL-269 adds the asymptotic endpoint:
-
-`RH  <=>  lim_(a->infinity) lambda_a = 0`.
-
-Under RH the finite-radius margin stays positive but collapses to zero; off RH it is eventually bounded on the negative side. An unconditional theorem `lambda_a->0` is therefore already RH, not a weaker spectral surrogate.
+PL-271 proves that this ambiguity is not coherent across all bands. If two finite signed source measures give the same source matrix for every `N`, their difference is a multiple of the zero-frequency atom `delta_0`. On any fixed support away from zero, sufficiently many bands recover all source masses exactly. Thus the full projective source tower is information-theoretically faithful.
 
 ## Synthesis of evidence
 
-The line now separates three currencies. **Observability** is solved: failures are finitely visible. **Geometric organization** is solved sharply: the localized ground-energy profile has strict monotonicity and a single-crossing/zero-limit dichotomy. **Source positivity** remains open: why does the specific completed von Mangoldt source stay on the positive branch for every finite radius?
+The source-positivity problem now has three distinct layers. **Finite observability** detects bad directions. **Projective identifiability** recovers the source that generated the finite matrices. **Arithmetic positivity** must explain why that recovered source, together with the archimedean/polar completion, keeps every finite-aperture ground energy positive.
 
-This makes event-local refinements and representation bridges strategically secondary. A useful advance must exploit a nonlocal relation among many prime-power events and completion terms, or another source identity that forces the original Weil orientation without assuming positivity.
+This rules out two shortcuts at once. One fixed matrix cannot appeal to detailed event identity that it does not contain. Conversely, reconstructing the entire source from the tower is not enough, because generic finite measures enjoy the same uniqueness theorem. The useful next theorem must exploit a relation among bands/cutoffs that is special to the canonical von Mangoldt weights and sign-relevant before it becomes a restatement of Weil positivity.
 
 ## Counterevidence / boundary cases
 
-PL-265 does not prove equality of every operator realization on every domain; the safe statement is equality of the localized quadratic form on the identified test/Galerkin family and its closed-form completion. PL-269 uses Zhu's conditional upper bound only on the RH branch and does not supply an unconditional decay rate.
+PL-270 aliases may change the canonical von Mangoldt weights and depend on `(c,N)`; they are not alternate zeta sources. PL-271 is exact but nonquantitative: it gives no useful band threshold, conditioning, or stability as prime-power frequencies cluster. Quantitative instability could be a real obstruction even after algebraic identifiability.
 
-The order-parameter equivalence does not make RH easier. Proving the zero limit or finite-radius positivity by a disguised Weil criterion would only rename the target.
+The zero-frequency endpoint is genuinely invisible in the sine-source representation and must be handled by the completed formulation rather than wished away.
 
 ## Epistemic status
 
-**Exact observability and aperture-geometry boundary:** every RH failure is finitely detectable, the CvS and Suzuki constructions share the same localized Weil form, the ground energy is strictly decreasing with a unique crossing off RH, and its large-aperture limit is zero exactly on RH. The missing content is a source-forced positivity theorem.
+**Exact observability/identifiability boundary:** fixed bands are source-nonidentifying, the full tower is source-identifying modulo the null endpoint, and neither fact proves the missing sign. The live target is a source-specific cross-band positivity/rigidity law.
 
 ## Novelty/prior-art status
 
-The CvS/Suzuki identification, localized spectral results, and cited compact-window bounds retain the finding-level prior-art boundaries. This intuition is a synthesis and makes no independent originality claim.
+The finite source quotient, Tchakaloff compression, Fourier uniqueness, and localized Weil results retain their finding-level prior-art classifications. This intuition synthesizes their role.
 
 ## Falsification criterion
 
-Invalidate the common-form identification, strict domain monotonicity, finite-threshold convergence, or the large-aperture RH equivalence under their stated hypotheses. Strategically, derive the unshifted Weil positivity directly from the accumulated prime-event path with a stable source theorem; that would solve the stated missing gate rather than falsify the hierarchy.
+Construct a nonzero source perturbation away from `omega=0` that leaves every Groskin band unchanged, or show that one fixed-band sign argument genuinely uses canonical source information not determined by that band's quotient. Strategically, prove a cross-band law of the canonical source that forces finite-aperture Weil positivity without simply reconstructing the explicit formula; that would cross the current gate.

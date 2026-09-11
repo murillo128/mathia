@@ -1,47 +1,45 @@
-# MI-016 — Finite-radius localization makes the missing source term explicit
+# MI-016 — Finite-radius Weil positivity requires cancellation-preserving source discrepancy, not a small PNT remainder
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Bombieri's finite negative matrices are not the only exact way a hypothetical off-line zero can become finitely visible. Localized Weil theory moves the obstruction to the source side: RH failure forces a finite support radius where the completed Weil operator crosses zero, with only finitely many von Mangoldt coefficients entering at that radius.
+Localized Weil theory moves a hypothetical RH failure to a finite source window, but the useful source term is not total prime mass or an absolutely small Prime Number Theorem remainder. The completed non-prime background is already indefinite, and the density-one part of the von Mangoldt measure cancels only a specific pole contribution. The missing positive branch requires an order-one **signed discrepancy charge** supplied by the actual arithmetic fluctuations.
 
-The later controls show that the value of this localization is not generic first-crossing geometry. The universal logarithmic core crosses zero by itself, and even the full gamma-plus-pole form with the prime source deleted develops unbounded negative index. The missing finite-radius theorem is therefore specifically about **von-Mangoldt compensation in the completed form**.
+The latest result shows that taking absolute values destroys exactly the needed scale. The source theorem must preserve cancellation.
 
 ## Strongest justified claim
 
-WI-236 shows that Bombieri finite truncations detect finite off-line packets but a cofinal negative eigensequence may collapse toward zero and lose height tightness. WI-237 shows that generic interval-exponential separation cannot prevent this: simple critical-line exponentials are complete and non-Bessel on bounded windows, leaving an eigenvector-specific coefficient-budget problem.
+WI-236--WI-237 show that Bombieri finite truncations detect off-line packets but may lose coercivity through coefficient cost and height escape. WI-238 therefore supplies an independent finite-radius source-side route via Suzuki's localized completed Weil form.
 
-WI-238 supplies an independent source-side route. At every radius `a`, Suzuki's localized completed Weil form is represented by a discrete-spectrum self-adjoint operator and uses prime data only up to `n<=exp(2a)`. RH failure therefore yields a finite-radius zero/negative mode without taking a zero-side eigenvector limit.
+WI-239--WI-240 eliminate generic crossing explanations. The universal logarithmic core crosses zero on its own, and the full gamma-plus-pole form with the von Mangoldt contribution deleted develops unbounded odd negative index. Positivity, if true, must be produced by the arithmetic source rather than by abstract spectral geometry.
 
-WI-239 shows that continuity, support nesting, compact resolvent, parity, the universal logarithmic singularity, and even an attained simple first zero mode are not enough. For the pure logarithmic core, dilation gives the exact spectral law
+WI-241 replaces the von Mangoldt measure by its density-one continuum term and finds an exact cancellation of the pole into a bounded positive resolvent, but the remaining gamma-plus-resolvent background is still indefinite on slow odd modes. The full source burden becomes the signed discrepancy `Lambda-1` against those modes.
 
-`lambda_{0,k}(a)=mu_k-1-log a`,
+WI-242 derives the exact slow-dilate partial-summation formula. The relevant integral weights `E(x)=psi(x)-x` by `x^(-3/2)` with a smooth scale kernel. Substituting a pointwise envelope for `|E|` gives the wrong order: standard unconditional PNT errors produce an exponentially growing bound, while the usual RH estimate `O(sqrt(x) log^2 x)` still yields polynomial growth in the aperture. The kind of absolute square-root-plus-log saving that would make the envelope uniformly bounded is incompatible with Littlewood oscillation.
 
-so every eigenvalue crosses zero at a finite radius.
-
-WI-240 restores all non-prime zeta terms while deleting only the von Mangoldt contribution. In the odd sector the gamma-plus-pole form has negative index tending to infinity with the radius. The pole part is nonpositive there, and scaled finite-dimensional odd spaces see the negative zero-frequency gamma multiplier. Hence the prime term is not a perturbative decoration: if the full form is nonnegative, its signed contribution must compensate an increasingly large negative non-prime sector.
+Under RH, by contrast, the signed discrepancy converges to the exact finite constant required by the background. The order-one source charge is therefore a cancellation-sensitive RH-scale phenomenon.
 
 ## Synthesis of evidence
 
-The two main routes now expose sharply different currencies. Bombieri starts from the zero divisor and needs coefficient cost/tightness. Suzuki localization starts from a finite source window and avoids that passage to the limit, but WI-239--WI-240 eliminate generic spectral geometry as the reason positivity might hold. The source-side problem has been reduced to the actual arithmetic prime term relative to a strongly indefinite completed background.
+The finite-radius route has become a signed-correlation problem. A successful theorem should keep `d(psi-x)` inside the localized autocorrelation/Mellin pairing and exploit a relation that is destroyed by absolute values. Candidate mechanisms include an explicit-formula identity, a source-specific sign/covariance law, or a finite-prime invariant that controls the dangerous slow-mode family collectively.
 
-A useful finite-radius advance should therefore identify how the finite collection of von Mangoldt translation/autocorrelation terms controls the dangerous negative subspaces, or derive a prime-specific nondegeneracy invariant. Proving another abstract property shared by the prime-deleted countermodel cannot close the gate.
+This is stricter than “use a better PNT bound.” Even an RH-quality pointwise estimate is too weak after triangle inequality. The proof architecture itself must preserve the oscillation.
 
 ## Counterevidence / boundary cases
 
-WI-240 does not say the von Mangoldt term is positive semidefinite, nor that its compensation can be checked event by event. The full sign may depend on interference among many prime-power translations and the background completion.
+WI-242 does not show that no pointwise information can ever be useful when combined with sign or spectral localization; it only rules out ordinary absolute-envelope arguments. The slow-dilate family is a diagnostic family, not a proof that every dangerous mode has identical structure.
 
-Suzuki's all-radius nondegeneracy remains RH-equivalent. Finite-prime locality narrows the input, but the localized operator remains analytically infinite-dimensional. The Bombieri coefficient-budget route also remains logically independent and may still be useful.
+The RH limit for the discrepancy is conditional and does not provide an unconditional sign theorem. Suzuki's neighboring RH-equivalent weighted-prime criterion is prior-art guidance, not evidence that the present autocorrelation condition is equivalent to RH.
 
 ## Epistemic status
 
-**Supported structural redirect plus decisive matched controls:** RH failure has a finite-radius source-side manifestation, but the logarithmic core and the complete prime-deleted non-prime form already exhibit the generic crossing/negative-inertia phenomena. The missing finite-radius currency is zeta-specific von-Mangoldt compensation.
+**Supported source-side narrowing:** mean density, generic completion, and absolute PNT-error magnitude cannot supply the required localized sign. The surviving currency is cancellation-preserving signed von-Mangoldt discrepancy against the dangerous mode geometry.
 
 ## Novelty/prior-art status
 
-Suzuki/Yoshida localization, logarithmic-form structure, gamma/pole formulas, and related operator ingredients retain the prior-art boundaries recorded in WI-238--WI-240. This intuition is a synthesis.
+Suzuki localization, PNT error bounds, Littlewood oscillation, and partial summation retain their finding-level prior-art status. This intuition states their consequence for the current finite-radius program.
 
 ## Falsification criterion
 
-Show that the prime-deleted form of WI-240 does not have the stated unbounded odd negative index, or that the finite-radius full operator requires prime data beyond `exp(2a)`. Strategically, derive full localized positivity/nondegeneracy from a property also satisfied by the WI-239/WI-240 countermodels; that would show the present claim that von-Mangoldt-specific structure is necessary is too strong.
+Derive the required uniform order-one slow-mode compensation from a standard absolute envelope for `psi(x)-x` without using additional cancellation, or invalidate the exact WI-242 integration-by-parts scale. Strategically, prove a cancellation-preserving source identity that controls the signed discrepancy on the full dangerous family; that would cross the current gate.

@@ -1,43 +1,41 @@
-# MI-008 — Fixed finite commensurate Gram geometry is a deterministic clock null
+# MI-008 — All fixed finite-order Gram-phase mixing can be a deterministic clock null
 
 **Evidence level:** proved
 
 ## Core intuition
 
-A fixed finite collection of Gram-point prime-phase lags can display coherence, deterministic curves, Haar marginals, or full joint Haar behavior without introducing new arithmetic randomness. The exact inverse Gram clock generates all of these regimes. This remains true after replacing equal-step lags by any fixed finite commensurate integer-node geometry and after restricting the starting Gram indices to any fixed arithmetic progression.
+A finite collection of Gram-point prime-phase samples can display coherence, Haar marginals, or full joint Haar behavior without introducing new arithmetic randomness. This remains true for fixed irregular lags, affine index thinning, polynomial and noninteger-power sparse selectors, and even for one deterministic selector whose complexity grows so that **every fixed finite-order finite-prime Haar test eventually passes**.
 
-Visual complexity in such a finite delay embedding is therefore not evidence of a new prime-phase source unless it survives the deterministic clock quotient appropriate to its node set and sampling stride.
+The useful discriminator is therefore not high finite-order mixing. It is quantitative control when test complexity grows jointly with height, or information living outside the admitted deterministic phase/clock representation.
 
 ## Strongest justified claim
 
-VIS-150--VIS-153 classify consecutive equal-step lag vectors. Every fixed joint character has a first nonzero lag moment of order at most the dimension; the deepest finite difference determines the transition `h^r ~ N^(r-1)(log N)^2`. At critical scaling, an exact integer change of coordinates produces Haar in the first `r-1` directions and one deterministic top clock curve.
+VIS-150--VIS-156 classify fixed commensurate lag geometries through finite differences/Vandermonde moments of the inverse Gram clock. Critical laws are Haar on fibers of an exact deterministic quotient; fixed affine subsampling changes constants but not the hierarchy.
 
-VIS-154 extends the threshold to every fixed set of distinct positive integer lag ratios `b_1,...,b_r`. The Vandermonde moment matrix is nonsingular, so every nontrivial character has a first surviving moment of order at most `r`, and a primitive Lagrange/Vandermonde character realizes the deepest order. The threshold exponent is unchanged.
+VIS-157--VIS-159 extend this to nonlinear sparse selectors. Degree-`d` polynomial sampling is Haar through `d` fixed samples and fails at `d+1` through an exact higher-difference character. The analogous threshold for `floor(n^alpha)` is `ceil(alpha)`.
 
-VIS-155 resolves the irregular critical window. The primitive deepest character defines a canonical quotient; the limiting law is Haar on its codimension-one fibers and deterministic on the quotient curve. Equal-step Newton coordinates are only one special basis for this general finite-node structure.
-
-VIS-156 then fixes a nonconsecutive sampling control. For every fixed affine index subsequence `a+q n`, the finite-prime population remains Haar and the same fixed-node lag hierarchy survives. The fixed stride changes only deterministic clock constants, including the critical quotient winding.
+VIS-160 diagonalizes these controls. By using increasingly high polynomial degrees on increasingly long stages, one deterministic increasing selector can make every fixed finite-prime, fixed-offset, fixed-order character average tend to zero. Stage boundaries have zero density, so all fixed finite-dimensional Haar tests pass simultaneously in the eventual sense.
 
 ## Synthesis of evidence
 
-The deterministic-null family now includes fixed equal-step and irregular commensurate node sets, their subcritical/critical/supercritical regimes, and fixed arithmetic-progression thinning of the starting indices. Adding finite irregularity, choosing a critical scale, or selecting one fixed congruence class does not create a new source; it only changes the finite-difference/Vandermonde coordinates of the same smooth inverse clock.
+“Let the selector become more complicated with height” is not by itself an escape. Complexity can grow adversarially while remaining entirely deterministic and while defeating every fixed test one at a time. A meaningful sampling theorem must freeze a **joint growth regime**: sample order, offsets, prime support, character complexity, required accuracy, and selector complexity must be controlled together.
 
-A credible residual must leave this class by changing a genuine asymptotic hypothesis: growing dimension/node geometry/prime or Fourier support, a stride changing with `N`, genuinely non-affine or data-dependent sampling, noncommensurate real-time offsets, or an independently informative analytic coordinate such as Hardy `Z`, derivatives, or zero occupancy.
+This moves the line from qualitative equidistribution to quantitative uniformity. A natural pre-specified selector may still exhibit genuinely source-sensitive behavior, but the evidence must show that it outperforms the diagonal clock control in the same growing test class.
 
 ## Counterevidence / boundary cases
 
-All current theorems fix the delay dimension, node set, sampling stride, prime support, and tested character as `N->infinity`. They do not give quantitative uniformity when any of these complexities grow.
+VIS-160 is existential and diagonal. It supplies no useful rate for its stage boundaries and does not classify a natural explicit growing-degree selector. It also does not treat tests whose complexity grows with the observation height.
 
-Fixed affine subsampling is not a theorem for arbitrary sparse or selected Gram subsequences. Fixed integer-node lags are not a theorem for genuinely noncommensurate continuous-time offsets. Haar convergence is deterministic fixed-character equidistribution, not stochastic independence.
+The theorem concerns finite prime-phase observables. Adding a separately normalized analytic coordinate may leave the clock null, but VIS-161--VIS-162 show that “not obviously a phase function” is not enough; stable decoder complexity must be tested separately.
 
 ## Epistemic status
 
-**Exact fixed-finite clock classification:** fixed commensurate lag geometries, including irregular integer nodes and fixed affine Gram-index sampling, are governed by the inverse Gram clock with coherent, Haar-fiber critical, and Haar regimes determined by the corresponding Vandermonde shear scale.
+**Exact fixed-test control:** every predetermined finite collection—and indeed every fixed finite-order test in a countable family—can be asymptotically passed by a deterministic growing-complexity Gram selector. Only jointly growing tests or a different information category remain viable.
 
 ## Novelty/prior-art status
 
-The findings use classical Gram asymptotics, uniform-distribution/exponential-sum tools, Vandermonde interpolation, and compact-group Fourier criteria and make no broad novelty claim. This intuition records their role as a Mathia control family.
+The construction uses classical Weyl criteria, polynomial clock laws, diagonalization, and the broader deterministic completely-uniform-distribution phenomenon. Finding-level prior-art boundaries apply.
 
 ## Falsification criterion
 
-Exhibit a fixed finite commensurate node set or fixed affine Gram-index subsequence satisfying the stated hypotheses whose fixed-character limiting behavior is not captured by VIS-154--VIS-156. Alternatively, show that the primitive critical quotient or Haar-fiber law fails for an admissible character.
+Produce a fixed finite-dimensional prime-phase character test that the VIS-160 selector construction cannot include, or find a positive-density stage-boundary obstruction. Strategically, prove a quantitative growing-complexity law for a natural source-defined selector that separates it from all such deterministic controls.

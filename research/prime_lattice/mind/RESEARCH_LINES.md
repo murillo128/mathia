@@ -2,22 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-side positivity of the common localized Weil form, not a bridge between representations
+## Prove source-side positivity from cross-band coherence, not one finite Weil quotient
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
-PL-259--PL-264 separate finite observability from global sign. Every RH failure is visible in a finite semilocal core and every prime-power event has a canonical local negative shock, but the complete one-edge singular jet is template-universal apart from its von Mangoldt weight and location. Event-local spectral geometry cannot create the missing Riemann-specific orientation.
+PL-259--PL-269 solve the main observability and aperture-geometry questions. Every RH failure is finitely visible, the CvS and Suzuki paths evaluate the same localized completed Weil form, the ground energy is strictly decreasing with a unique crossing off RH, and `lambda_a -> 0` is itself equivalent to RH. None of these facts explains why the rational-prime source selects the positive branch.
 
-PL-265 resolves the proposed CvS-to-Suzuki bridge by prior art and exact parameter matching: the finite Connes--van Suijlekom path and Suzuki localization evaluate the **same unshifted completed localized Weil form**. There is no separate transform whose sign preservation remains to be proved.
+PL-270 adds a sharp finite-band information-loss theorem. At fixed Galerkin band `N`, the prime source factors through only `2N+1` real source coordinates, and positive Caratheodory--Tchakaloff compression can replace all active prime-power atoms by at most `2N+1` reweighted survivors while leaving the entire finite matrix unchanged. One fixed matrix therefore cannot use detailed event identity to force its sign.
 
-PL-266--PL-268 then organize the aperture dependence sharply. The ground energy `lambda_a` is strictly decreasing with support radius; finite Laurent compressions recover the onset of strict negativity without uniform-in-radius convergence; and translation symmetry rules out zero plateaus. Under RH every finite-radius ground energy is strictly positive, while off RH there is a unique finite zero crossing.
+PL-271 identifies the exact boundary of that obstruction. The full projective tower over all bands determines any finite signed source on `[0,1]` modulo the genuinely invisible zero-frequency atom; on a fixed nonzero finite support, some finite band eventually has full rank. Independent finite-band aliases cannot be made into one coherent all-band alternative source.
 
-PL-269 adds the large-aperture endpoint:
+The live theorem is therefore a **cross-band source-coherence positivity law**. It must exploit compatibility of the canonical von Mangoldt masses as band and cutoff grow, or another completed relation stronger than mere reconstruction of the source. Projective identifiability restores information but is generic Fourier uniqueness and does not by itself select positive Weil sign.
 
-`RH  <=>  lambda_a -> 0 as a -> infinity`.
+## Treat finite detectability, finite-band identifiability, projective source recovery, and source positivity as separate gates
 
-This scalar is therefore an exact RH order parameter, not a cheaper surrogate. Proving its unconditional zero limit would already prove RH. The live theorem remains the original one in a cleaner form: explain from the completed rational-prime source why `lambda_a` stays positive for every finite aperture. Any useful finite-event argument must couple many prime-power atoms and the archimedean/polar completion in the original unshifted form; monotonicity, Galerkin detectability, or the order-parameter equivalence by themselves do not supply that sign.
-
-## Treat finite detectability, strict aperture geometry, and source positivity as separate gates
-
-Finite compressions detect every negative continuum direction. The aperture profile has a rigid single-crossing geometry and an exact RH limit characterization. Neither fact selects the positive branch. Future work should use these results as exact destination and falsification structure while keeping the missing arithmetic sign theorem explicit.
+A finite core detects negative directions but forgets most source atoms; the full band tower recovers the source but remains sign-neutral. Future work should look for an arithmetic compatibility law across the recovered tower—monotonicity, positivity, rigidity, or another relation absent from matched generic sources—rather than infer the sign from observability or exact reconstruction alone.

@@ -1,49 +1,47 @@
-# MI-004 — A conditioned source-faithful skeleton can still hide an RH-critical target oracle
+# MI-004 — Nyman source information can localize far below the scale needed for geometric target repair
 
-**Evidence level:** proved
+**Evidence level:** proved structural identities with an open bridge between them
 
 ## Core intuition
 
-A useful Nyman compression can quotient a large moving-tail nuisance sector while preserving source coordinates and quantitative conditioning. But representation quality, target loss, scalar source access, projected target geometry, and oracle cost are distinct mathematical gates.
+A useful Nyman compression can be well conditioned and source faithful while still hiding a target oracle. The current evidence now separates that oracle from source localization much more sharply: the Burnol-scale directional signal can be concentrated in a very small cutoff prefix, while the exact zero-loss repair is a target projection that is only approximately supplied by a recursively smaller Nyman section.
 
-The weighted tail-shell skeleton makes the separation sharp. Its source-faithful quotient has an intrinsic `Theta(1/M)` target-loss floor; one extra target-selected direction removes that loss exactly; the corresponding scalar coordinate has an explicit shrinking Möbius dual; but pushing that dual to its natural square-root norm floor is already RH-equivalent.
+Thus “the source information is already visible at small scale” and “the target can be repaired cheaply” are different mathematical statements.
 
 ## Strongest justified claim
 
-NB-031--NB-034 construct the weighted tail-shell quotient. It preserves low canonical coefficients, compresses the ordinary tail to one weighted scalar, and has polynomial conditioning uniformly in the original section size `N`. NB-037--NB-038 show that its upper-section correction is forced at order `d_N^2` and carries a multiplicatively accurate copy of the original distance in an explicit Möbius/Vasyunin direction.
+NB-031--NB-040 construct the weighted tail-shell quotient. It preserves the head source coordinates with polynomial conditioning, has an intrinsic `Theta(1/M)` source-only target-loss floor, and admits exact zero-loss repair by one unique target-selected line `span(P_W e)`.
 
-NB-039 proves that the target loss is sharply `Theta(1/M)` for `N>=2M`, with multiplicative preservation exactly above the inverse-distance scale `M d_N^2 -> infinity`.
+NB-041--NB-044 price the obvious ambient dual route. The logarithmic repair coordinate has an explicit shrinking Möbius dual, but any fixed power decay of its full norm already gives a zero-free strip, and the optimal exponent equals the zeta zero frontier. Ambient norm improvement is therefore not a cheap route to the target.
 
-NB-040 shows that this loss is not a dimension lower bound. Retaining one additional direction gives an exactly zero-loss `M`-dimensional quotient with `N`-uniform polynomial conditioning. The unique repair direction is precisely `P_W e`, the weighted-tail projection of the target. Exact compression therefore isolates the target oracle into one rank-one geometry rather than eliminating it.
+NB-045 identifies a directional alternative: bounded step-tail discrepancies reconstruct `d_N^2` through an exact positive logarithmic average. NB-046 shows a prefix with `log M >> sqrt(log N)` already captures asymptotically all that mass. NB-047 then transfers Vinogradov--Korobov cancellation to the dual and pushes a sufficient cutoff to doubly-logarithmic scale, for example `M=exp((log log N)^(5/3+epsilon))`.
 
-NB-041 separates the scalar and geometric parts of that oracle. It constructs an explicit ambient Möbius dual `Omega_M` whose pairings recover the logarithmic tail coordinate and whose norm satisfies `||Omega_M||=O(1/log M)`. For the optimal coefficients the scalar is source-locked up to `O(d_N/log M)`, uniformly in `N`. Yet projecting `Omega_M` onto the tail reproduces the same target-selected line `P_W e`.
+NB-048 attacks the geometric oracle from another direction. The dilated best approximant from `V_K`, `K=floor(N/M)`, lies in the weighted tail and approximates the unique repair vector with exact squared error
 
-NB-042 identifies the sharp endpoint of the norm route:
+`L_(M,N) - (1-d_K^2)/M`.
 
-`RH  <=>  ||Omega_M||=O_epsilon(M^(-1/2+epsilon)) for every epsilon>0`.
-
-The unavoidable support contribution `M^(-1/2)` is therefore the RH-critical exponent. Improving the ambient dual all the way to that floor is not a cheaper estimate hidden behind better PNT constants. A norm-only argument at this scale also fails to give `o(1/log N)` uniformly for every cutoff with merely `M/log N -> infinity`.
+The corresponding repaired skeleton has target-distance excess between zero and `d_K^2/M`. The oracle is therefore recursively approximable, but the approximation still consumes the smaller-section best projection.
 
 ## Synthesis of evidence
 
-The weighted skeleton succeeds as a representation theorem precisely because it exposes where the original difficulty returns. The discarded tail recursively contains the Nyman problem, the reduced Gram correction carries `d_N^2`, exact target repair is a target projection, and the most natural explicit dual has an RH-equivalent critical norm scale.
+The line has exposed two exact compression mechanisms that do not yet meet. One localizes **directional source evidence** to a very small prefix. The other localizes **geometric target repair** to a smaller Nyman section. A genuinely new theorem would connect them: use the source-localized directional data to estimate the recursive repair slack or an equivalent target functional without first solving the smaller/full projection problem.
 
-The remaining opening is directional rather than ambient: an arithmetic identity might estimate the particular projected repair direction or one-sided target functional more cheaply than controlling the whole dual norm or the full Nyman distance. A materially different quotient could also change the target-loss floor. Better conditioning of the same skeleton cannot.
+This is stronger than seeking better matrix conditioning and weaker than controlling the ambient dual at an RH-equivalent power scale. It asks for a source-selected relation between two already-identified exact objects.
 
 ## Counterevidence / boundary cases
 
-NB-039--NB-042 are specific to the current weighted quotient and its explicit logarithmic dual. They do not prove circularity of every possible target certificate or every alternative nuisance subspace.
+NB-047's cutoff localization controls the aggregate directional identity, not the weighted-tail repair vector. NB-048's recursive vector is constructed from `P_(V_K)e`, so it is not source-only merely because `K<N`. No finding yet shows that the prefix discrepancies determine or tightly bound the repair slack.
 
-The RH equivalence concerns near-square-root decay of the **full ambient norm** `||Omega_M||`. It does not rule out a cheaper directional correlation estimate sufficient for one target quadratic form. Likewise the exact rank-one repair of NB-040 is target-aware; it is not a source-only construction.
+The condition `d_K^2/(M d_N^2)->0` is a sufficient preservation condition, not an unconditional estimate. Choosing `M` to make the prefix small does not automatically make that ratio favorable.
 
 ## Epistemic status
 
-**Exact compression/oracle boundary:** the weighted source skeleton is conditioned, its source-only target loss is sharply `Theta(1/M)`, exact repair is uniquely target-selected, its logarithmic scalar admits an explicit shrinking source dual, and near-square-root decay of that dual is RH-equivalent.
+**Exact separation plus open bridge:** directional Burnol-scale mass localizes unconditionally to a tiny prefix, and the target oracle admits an exact smaller-section approximation with explicit slack, but no persisted result converts the former into control of the latter.
 
 ## Novelty/prior-art status
 
-No broad novelty claim is made beyond the finding-level audits. Vasyunin, Burnol, Bagchi, classical Möbius criteria, and Mellin-transform ingredients retain their recorded prior-art status.
+The source identities, Vinogradov--Korobov input, projection geometry, and dilation mechanism retain their finding-level prior-art boundaries. This intuition is a synthesis of their interaction.
 
 ## Falsification criterion
 
-Invalidate the sharp dilation loss of NB-039, the rank-one uniqueness statement of NB-040, the dual identities of NB-041, or the RH equivalence of NB-042. Strategically, construct a source-derived projected repair or one-sided target certificate at the required accuracy whose proof neither assumes an RH-equivalent estimate nor reconstructs equivalent finite-distance information; that would materially improve the current boundary without falsifying its existing exact statements.
+Show that the NB-046/NB-047 prefix data cannot distinguish two admissible finite-section states with materially different NB-048 repair slack under the same source constraints, or prove a quantitative inequality from those directional discrepancies to the repair slack at a scale sufficient for target preservation. Either would settle the proposed bridge.

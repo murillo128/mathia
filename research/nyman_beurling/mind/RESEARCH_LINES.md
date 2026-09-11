@@ -8,22 +8,24 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the useful rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force a near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Use directional tail identities without paying the ambient RH-equivalent norm price
+## Connect localized directional mass to recursive target repair without paying an ambient RH norm
 
 **Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-024--NB-040 construct a source-faithful weighted tail quotient with polynomial conditioning and a sharp `Theta(1/M)` target-loss floor. One target-selected retained direction removes that loss exactly, showing that compression and exact target repair are distinct gates.
+NB-024--NB-045 separate source-faithful compression, exact target repair, ambient-dual hardness, and directional occupation. The weighted skeleton has polynomial conditioning and a sharp `Theta(1/M)` source-only target-loss floor; one target-selected line repairs it exactly. Polynomial ambient decay of the natural logarithmic dual measures the zeta zero frontier, but the complete bounded step-tail family reconstructs the finite distance through a positive logarithmic average.
 
-NB-041--NB-044 make the ambient-dual boundary exact. The logarithmic tail scalar has an explicit Möbius dual, but any polynomial norm decay already forces a fixed zero-free strip, and the optimal power exponent equals `1-Theta_zeta`, the zeta zero frontier. Near-square-root decay is therefore not merely difficult; ambient norm improvement directly measures the zero problem one is trying to solve.
+NB-046--NB-047 make that directional information much more local. The partial-flow identity shows that an initial cutoff prefix already carries `(1+o(1)) d_N^2`. Using the classical Vinogradov--Korobov Mertens estimate moves a sufficient deterministic cutoff down to
 
-NB-045 supplies a different kind of source information. The complete family of bounded step-tail discrepancies satisfies the exact logarithmic identity
+`M_N = exp((log log N)^(5/3+epsilon))`,
 
-`sum_(L<N) log((L+1)/L) D_(L,N) = d_N^2 - Theta(N)`.
+up to the stated flexibility. Thus the Burnol-scale source signal is concentrated in a doubly-logarithmic-size directional prefix without requiring a polynomial ambient-dual estimate.
 
-Burnol's lower bound and the classical Möbius remainder force a positive discrepancy of order at least `1/log^2 N`, with a nontrivial logarithmic occupation lower bound across cutoffs. Thus the finite Nyman distance already decomposes into many explicit **directional** source-selected witnesses even though the ambient dual norm remains RH-hard.
+NB-048 supplies an independent recursive geometry. Dilating the best approximant from the smaller section `V_floor(N/M)` gives an explicit vector in the weighted tail whose squared error from the unique exact repair is exactly the slack in the recursive target-loss bound, and the resulting repaired skeleton satisfies
 
-The live theorem is to convert this multiscale directional occupation into the projected repair geometry, a one-sided target certificate, or the near-linear shell discrepancy at the required scale without reconstructing `d_N` through an RH-equivalent norm estimate. A materially different quotient remains possible, but simply improving the same ambient dual is now fully priced.
+`0 <= d_tilde_(M,N)^2-d_N^2 <= d_floor(N/M)^2/M`.
 
-## Treat compression, exact repair, ambient dual decay, and multiscale directional occupation as separate gates
+The live bridge is now precise: determine whether the localized directional prefix can control this recursive repair slack, or an equivalent one-sided target certificate, **without reconstructing the full finite-section oracle or invoking an RH-equivalent ambient norm**. The directional localization and recursive repair are both exact, but their quantitative relation is not yet established.
 
-The weighted skeleton is conditioned but loses target energy; rank-one target repair is exact but target-selected; ambient dual power decay measures the zero frontier; and step-tail discrepancies nevertheless reconstruct the finite distance through a positive logarithmic average. Future arguments should exploit the last directional structure without silently upgrading it into an ambient norm theorem.
+## Treat source localization, target repair, ambient norm, and oracle recursion as separate gates
+
+A small directional prefix can carry the full Burnol-scale aggregate while the exact geometric repair remains target-selected. A smaller-section projection can approximate that repair with explicit error, but it is itself an oracle unless its needed data are source-accessible more cheaply. Future arguments should preserve these distinctions rather than identify “few directional witnesses” with “cheap target reconstruction.”

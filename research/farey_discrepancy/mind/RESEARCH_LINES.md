@@ -2,18 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prevent physical hyperbola-sampling amplification with source-specific energy regularity or coercivity
+## Convert multiplicative-chain coercivity into pointwise physical occupation
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-024--FD-040 show that terminal nonsquarefree occupation is universally positive and every fixed finite supercritical Mellin packet is coercively sampled, while generic bounded-increment shell profiles can still evade by concentrating energy on sparse low rows. FD-041 then makes the scalar split exact: squarefree versus nonsquarefree occupation is a powerful-number dilation sieve of one total-energy curve, so regular multiplicative scaling already forces a positive nonsquarefree fraction.
+FD-024--FD-045 show that terminal nonsquarefree occupation is universally positive, regular scalar scaling is favorable, and centered Euler-product cancellation controls fixed and growing Mellin packets through and slightly beyond the square-root frequency window. Generic one-Lipschitz shell profiles can nevertheless escape by concentrating energy on sparse low rows.
 
-FD-042--FD-044 sharpen the critical spectral side. Centering by the natural density cancels the critical pole, and the centered finite Jordan kernel factors through zeta with only the classical zero-free-region logarithmic cost. Well-conditioned growing packets remain controlled through frequency diameter below the square-root scale; close frequencies by themselves do not create an inverse-gap escape.
+FD-046 removes one possible explanation for that escape: the physical shell source and the Mertens function are exact inverse floor transforms, so every fixed Jordan row already carries the full zeta-zero polynomial growth exponent. Total and nonsquarefree energies therefore have the same limsup power exponent `2 Theta`; a vanishing occupation ratio cannot come from a smaller nonsquarefree growth exponent.
 
-FD-045 pushes the source control farther. The weighted squarefree coefficient has the classical `zeta(s)/zeta(2s)` factorization, and Walfisz cancellation carries the centered kernel estimate through frequencies of size `R^(1/2) exp(c Lambda(R))`. Thus merely reaching the square-root frequency window is not a physical escape either.
+FD-047 adds an exact multiplicative-chain constraint. Every fixed nonsquarefree dilation injects a lower-horizon copy of the full energy into the nonsquarefree part. Along every complete `q`-adic chain this forces a positive geometric-mean occupation and a quantitative upper bound on the logarithmic density of very small occupation. Sparse bad horizons remain possible, but a whole multiplicative tail cannot be bad.
 
-The live theorem must now explain how the actual quotient-shell source could evade all three controls at once: regular scalar scaling, centered Euler-product cancellation, and finite/growing packet coercivity. A viable escape needs genuinely larger effective complexity, bad coefficient conditioning, a non-negligible truncation/remainder, or source-specific multiplicative irregularity; another generic density, Lipschitz, or square-root-frequency argument is below the frontier.
+FD-048 shows that ordinary source smoothness does not close the remaining gap. Known short-interval Möbius cancellation transfers to the physical shell source, yet even an abstract profile with almost half-power pointwise smoothing can still have occupation tending to zero on a subsequence. The live theorem must therefore use the **multiplicative placement and divisibility structure of the actual increments**, not only their short-interval magnitude or cancellation.
 
-## Treat terminal density, scalar scaling, centered Euler cancellation, and packet coercivity as matched controls
+A decisive advance would turn the exact increment law, the floor-transform inversion, and the dilation injections into a pointwise or sufficiently dense occupation theorem, or construct a physical-compatible sparse escape showing that even those multiplicative constraints are insufficient.
 
-Terminal Jordan blocks, regular multiplicative total-energy growth, fixed critical packets, and well-conditioned growing packets through and slightly beyond the square-root window all force positive nonsquarefree occupation. Generic shell regularity alone does not. Any proposed physical escape or proof must identify which exact source mechanism defeats or enforces these controls rather than infer pointwise rigidity from one proxy in isolation.
+## Treat power exponent, multiplicative-chain average, short-interval regularity, and pointwise occupation as separate gates
+
+Every fixed row sees the full zero-frontier exponent; nonsquarefree dilations force positive average occupation along complete multiplicative chains; and the physical source has genuine short-interval cancellation. None of these facts alone rules out sparse hyperbola-sampling amplification. Future arguments should identify exactly which arithmetic placement law forbids—or permits—the remaining exceptional horizons.

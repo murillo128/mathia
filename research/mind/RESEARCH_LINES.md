@@ -2,48 +2,56 @@
 
 This file holds the current cross-line mathematical questions synthesized from the local minds. It is not a roadmap, task queue, status page, or history.
 
-## Derive source coupling before compression, centering, completion, or fixed-depth tracing erases it
+## Form the source relation before quotienting, gauging, or finite projection erases it
 
 **Linked intuitions:** `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Prime Circle now closes not only fixed finite packets but every fixed-depth multi-upper trace word: growing collision rank, orientation, determinant volume, and finitely many noncommutative moments can all reduce to classical modular-lattice and finite-shift correlations. The remaining carrier must survive untraced/full-spectrum or depth-growing contraction.
+Möbius Cancellation now shows that even a visibly source-selected character phase can be gauge: residue translation absorbs `chi(-q)` while preserving all invariant moments and magnitude spectra. The live quantity is the signed principal/transverse covariance at the distinguished source coordinate or an equivalent lifted relation.
 
-Möbius Cancellation reaches the same boundary from a different direction. Centering projects away a principal residue mode that is Mertens-complete, while aggregate principal-energy stability is itself already RH-hard. The surviving extra information is source-selected **principal-centered phase coherence**, not separate control of the two components.
+Prime Lattice reaches the analogous information boundary through finite projection. One fixed Weil Galerkin band admits exact positive sparse aliases of the prime source, while the full projective tower recovers the source modulo the zero-frequency endpoint. Exact recovery returns only after cross-band coherence is restored; positivity still needs an additional rational-prime law.
 
-Weil Positivity supplies the category-level analogue: representation enlargement and canonical transport can preserve formal structure while remaining arithmetic-blind. Across the three lines, the live question is where a source-defined relation can be formed before quotienting, centering, completion, determinant compression, fixed-depth tracing, or category transport removes the coupling consumed by the final sign.
+Prime Circle and Weil Positivity supply two category-level controls. The complete shared-upper spectrum reduces to a fixed-width torus-return transfer chain, so only genuinely long cocycle information survives. Canonical Toeplitz KMS repair restores equilibrium but thermalizes the critical product deformation into a universal trace sector. Across these lines, the promising variable is not local size or representation richness but a **source-forced relation that survives the relevant quotient/category change**.
 
-## Match coercivity to the exact signed, projected, or adaptive-complexity statistic consumed downstream
+## Separate exact source membership, adaptive identifiability, and stable target transport
 
-**Linked intuitions:** `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`, `MI-008-exact-recovery-is-not-stable-transport`.
+**Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim`, `MI-008-exact-recovery-is-not-stable-transport`.
 
-Analytic Frontier pins dangerous endpoint loading to the square-root scale: target-sized memory can be carried by packets invisible to the available all-interval regime above `X^(5/8+eta)`. The missing theorem is therefore a source-specific absolute discrepancy or signed Fejer scale-slope estimate near `sqrt(X log X)`, not another relative-uniformity statement at a longer scale.
+Arithmetic Fidelity gives the clean categorical example. Count-preserving off-critical zero surgery can approach the genuine vertical logarithmic derivative arbitrarily closely in sup norm, so no positive metric gap survives; nevertheless every nontrivial finite surgery leaves the exact Bohr almost-periodic source category. Exact exclusion and robust separation are different currencies.
 
-Nyman--Beurling shows that ambient norm coercivity can be too expensive even when useful directional information is explicit. Any polynomial decay of the logarithmic-tail dual already encodes a zero-free strip and its optimal exponent equals the zeta zero frontier, yet the full family of bounded step-tail discrepancies reconstructs the finite Nyman distance through a positive logarithmic average and carries a Burnol-scale directional occupation signal. The promising currency is directional/projected structure rather than a stronger ambient norm.
+Xi Flow gives the adaptive inverse analogue. `m` moved atom pairs require exactly depth `m` for identification, but after orthogonalized packet-adapted preconditioning the local inverse can be isometric and independent of remote index. The irreducible cost moves from coordinate conditioning to adaptive depth, support knowledge, nonlinear radius, and source-to-observable acquisition.
 
-Prime Flute similarly reduces the endpoint to the energy-normalized low/high extension angle. Reservoir strength saturates on heavy sectors, and weak-trace control follows from a Weyl-count bound for the compressed angle operator. Xi Flow gives the stability analogue: exact Jacobi reciprocity can rigidly identify the square lattice, while moment-balanced remote packets defeat every fixed power-weighted real-axis topology. Quantitative transport must therefore use the **exact downstream projection and an adaptive complexity scale**, not exact uniqueness or a fixed ambient norm by itself.
+Visual Exploration makes stable representation explicit: exact finite prime phases already identify height set-theoretically, while Lipschitz recoverability is exactly controlled by the phase-collision quotient. Nyman--Beurling similarly localizes the Burnol directional signal to a tiny prefix while its geometric repair remains a target oracle approximated by a smaller section. Prime Flute has noncompact heavy strength factors, so endpoint decay must arise from relative angle rather than outer-factor compactness.
 
-## Replace generic coverage, coarse symmetry, or threshold size by source-specific arithmetic laws
+The common live theorem shape is therefore: **identify the exact downstream statistic, then prove a quantitative transport/acquisition theorem in its own topology**. Exact uniqueness, category membership, or a favorable local coordinate system is not enough.
 
-**Linked intuitions:** `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, `MI-009-local-correctness-does-not-determine-global-coherence`.
+## Control sparse exceptional escape rather than strengthening already-correct average laws
 
-Arithmetic Fidelity makes this especially sharp. Periodic completeness reduces the sparse Li obstruction to finite congruence states, but arbitrary irrational phases realize every obstruction level. Later controls show that even order-one Riemann symmetry, coarse zero counts, finite endpoint jets, and compact-open closeness can coexist with arbitrarily dangerous Keiper phase. The missing restriction must be nonlocal and height-uniform in the actual zeta source.
+**Linked intuition:** `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Farey Discrepancy moves in the opposite direction: genuine source Euler-product cancellation is strong enough to control centered growing Mellin packets through and slightly beyond the square-root frequency window. “Large frequency” is therefore not itself an escape; any physical failure must pay in dimension, conditioning, remainder size, or multiplicative energy irregularity.
+Analytic Frontier has already pinned the dangerous endpoint packet to target size near the square-root activation boundary and shown that generic local-twist magnitude bounds saturate there. The missing estimate is a source-specific signed scale-slope or absolute discrepancy law, not another longer-scale relative theorem.
 
-Robin Extremal closes the simplest local event route. Adjacent physical selectors straddle the generating prime and have tightly quantized half-log geometry, but the generating prime's first-order race jump cancels when the two selected residuals are compared. Only an unfired upper-fringe prime survives at that scale. The next arithmetic discriminator must control the occurrence/aggregation of that fringe mismatch or a more global prime-power common-source statistic.
+Farey Discrepancy now proves that every fixed row carries the full zero-frontier exponent and that nonsquarefree occupation has positive geometric-mean density along every multiplicative chain. Short-interval Möbius cancellation also transfers to the shell source. Yet sparse bad horizons remain compatible with all of these controls. The missing information is the multiplicative placement of the actual increments.
 
-## Make localized Weil positivity a signed prime-discrepancy compensation theorem
+Robin Extremal exhibits the same pattern in threshold space. A nonzero fringe bit cannot propagate through a clean adjacent-first-layer chain; it is forced into a vanishing right-edge layer of the CA support chamber and triggers an exceptional transition. The remaining signal is concentrated on interruptions, not regular fan interiors.
+
+Across the three lines, strengthening a global exponent, average density, or generic smoothness estimate is unlikely to close the final gap. The decisive object is the source-specific law governing the **exceptional set where the target-sized mass can still escape**.
+
+## Make localized Weil positivity a cancellation-preserving prime-discrepancy theorem
 
 **Linked intuitions:** `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Weil Inertia now identifies the source currency more precisely than “prime contribution.” Replacing the von Mangoldt measure by its density-one continuum term cancels the pole part into a bounded positive resolvent, but the resulting gamma-plus-resolvent background is still indefinite on slow odd modes. Thus mean prime density and the non-prime completion do not select the positive branch.
+Weil Inertia isolates the finite-radius source currency. Mean density cancels the pole into a positive resolvent but leaves an indefinite gamma background; the actual `Lambda-1` discrepancy must provide an order-one compensating charge on dangerous slow modes.
 
-The remaining theorem must use the signed discrepancy `Lambda-1`: if the completed localized Weil form is nonnegative, that discrepancy must compensate an order-one negative background across every dangerous finite-dimensional slow-mode family. A viable finite-radius proof should therefore control source-specific signed prime discrepancy/correlation, not total prime mass, generic first-crossing geometry, or representation-level positivity.
+The new scale audit rules out the obvious magnitude route. For slow dilates, partial summation weights `psi(x)-x` at the critical `x^(-3/2)` scale. Standard unconditional PNT envelopes blow up after absolute values, and even the usual RH pointwise bound yields only a growing estimate. Under RH the signed discrepancy nevertheless converges to the exact required constant. The missing theorem must preserve cancellation, Mellin structure, or another signed source relation; a better absolute error bar is not the right object.
 
-## Move beyond fixed-complexity sampling geometries already classified as deterministic controls
+Prime Lattice gives the complementary finite/projection warning: a single finite Weil matrix forgets detailed prime events, while the all-band tower restores source identity without restoring sign. A useful source-side proof may therefore need both **cross-band coherence and signed discrepancy structure**.
+
+## Demand jointly growing tests or stable decoder separation beyond deterministic clock controls
 
 **Linked intuitions:** `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Visual Exploration now reaches nonlinear sparse Gram-index selectors. Integer-polynomial selectors of degree `d` can be Haar through `d` fixed samples and fail only at `d+1`; power-law selectors `floor(n^alpha)` have the analogous threshold `ceil(alpha)`. By choosing a larger but still fixed selector complexity, deterministic inverse-clock geometry can imitate arbitrarily high finite orders of mixing.
+Visual Exploration now closes all fixed finite-order Gram-phase mixing tests as source evidence. Polynomial and power selectors can mimic arbitrarily high fixed orders, and one deterministic growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A surviving sampling theorem needs a predeclared joint growth regime for test complexity and height.
 
-A visual escape must therefore make complexity grow with height with quantitative control, use a genuinely source-defined non-power/data-dependent selector, or add an independently anchored analytic coordinate such as zeta values, derivatives, or zero geometry. Passing any predetermined finite collection of Haar/mixing tests is not source evidence unless the residual survives the corresponding exact clock character.
+The alternative “add an analytic coordinate” must also be stated stably. Two exact prime phases already encode height through a nowhere-continuous inverse, and the optimal Lipschitz decoder constant is the phase-collision quotient. A zeta-facing coordinate is informative only if its normalized collision-complexity growth separates from matched deterministic phase/clock controls.
+
+Prime Circle supplies a natural neighboring test case: its entire local shared-upper collision word is a rational-torus return coding, while only the long fixed-width transfer product remains open. Depth-growing cocycle statistics should therefore be compared explicitly with the same kind of deterministic torus/clock controls before being called new arithmetic.

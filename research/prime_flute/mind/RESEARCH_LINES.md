@@ -8,22 +8,22 @@ This file holds the current mathematical questions suggested by the durable prim
 
 PF-271--PF-278 show why separated propagation initially looked promising and why the fixed-axis route nevertheless closes at the critical continuum threshold. The fully Robin-normalized fixed-row shell leakage is `asymp N^(-1)(log N)^(-3/2)`: logarithmically improved, but not supercritical by any fixed power. The fixed-axis Robin-homotopy route is closed rather than merely unresolved.
 
-## Prove a heavy-angle counting law for the physical energy-normalized low/high cross form
+## Prove angular decay on genuinely infinite heavy sectors
 
 **Linked intuition:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`.
 
-PF-228--PF-281 separate unprojected reservoir transmission from the actual physical low/high leakage. Positivity canonically defines the bounded energy-normalized cross operator `T=A^(-1/2) B C^(-1/2)`, and membership of `T` in the required symmetric ideal passes to the mixed inverse block and reciprocal-prime commutator. Same-sector reservoir amplification is therefore not itself an obstruction to the projected route, while positivity alone does not force compactness.
+PF-228--PF-283 reduce the physical low/high leakage to the bounded energy-normalized factorization `T=F_P Gamma F_H`. On heavy extension sectors the outer strengths saturate, so relative extension angle is the mixed-channel currency. PF-283 gives a sufficient weak-trace criterion through thresholded angle counting.
 
-PF-282 identifies the remaining invariant. After polar normalization,
+PF-284 makes the endpoint budget two-sided. For symmetric threshold `tau`,
 
-`T = f(|R_P|) Gamma f(|R_H|)`
+`N_T(4 tau) <= N_(Gamma_tau)(2 tau) <= N_T(2 tau^3)`.
 
-with `f(t)=t/sqrt(1+t^2)` and `Gamma` the relative low/high extension-angle operator. On sectors where extension mass is already large, the singular values of `T` are equivalent to those of `Gamma`; reservoir strength saturates and persistent angular overlap is the real obstruction.
+Thus `O(tau^(-1))` is a sufficient heavy-angle count, whereas weak trace class itself forces only the much weaker `O(tau^(-3))` necessary envelope. Failure of the original sufficient count is not yet an endpoint obstruction; divergence of the corresponding `tau^3` statistic is.
 
-PF-283 converts the weak-trace endpoint into a counting problem. Thresholding the heavy extension sectors gives `||T-T_tau||<=2 tau` and reduces singular-value control to the Weyl count of the compressed angle operator. In particular, a uniform bound of the form `sup_tau tau N_(Gamma_tau)(2 tau)<infinity` is sufficient for the required weak-trace class.
+PF-285 identifies an abstract cheaper route: complementary weak-Schatten decay of the two extension-strength factors would close the endpoint even with no angular decay. PF-286 rules that route out for the canonical physical split. The low strength factor has infinite rank above every positive threshold, and the high strength factor is noncompact with an infinite heavy population below a fixed threshold. No finite population exponents exist.
 
-The live theorem is therefore concrete: prove a **heavy-angle counting estimate for the complete physical low/high extension geometry**, including finite-pant completion and neighboring-cell coupling. Unprojected cut norms and raw extension mass are matched controls; what matters after energy normalization is how many heavy directions retain a large low/high angle.
+The live theorem is therefore genuinely angular: compactness/weak-trace decay must come from the **relative low/high extension geometry on infinite-dimensional heavy sectors**, or from an equivalent threshold-dependent strength-angle relation. Raw reservoir size, population decay of the outer factors, and the original `tau^(-1)` sufficient statistic are now matched controls.
 
-## Treat branch singularity, reservoir strength, and extension angle as distinct currencies
+## Treat sufficient angle counts, necessary endpoint counts, strength populations, and physical angle geometry as separate gates
 
-The fixed-axis source fails through a threshold branch. Variable same-sector reservoirs can erase an isolated unprojected seam gain. After energy normalization their magnitude saturates, leaving the relative extension angle as the mixed-channel currency. A new Prime-Flute argument must control the angle count at the endpoint ideal scale rather than transfer conclusions from either of the first two mechanisms.
+The energy-normalized factorization isolates the right channel, but several endpoint criteria have different logical strength. Future work should first test the genuine obstruction statistic supplied by PF-284 and then exploit the complete physical extension geometry; it should not infer endpoint failure from a missed sufficient count or hope that outer-factor compactness will supply the missing decay.

@@ -1,49 +1,43 @@
-# MI-008 — Complete-cut transmission needs the invariant matched to the consumed projection
+# MI-008 — Prime-Flute endpoint decay must come from relative angle on infinite heavy sectors
 
-**Evidence level:** proved
+**Evidence level:** proved operator-theoretic boundary
 
 ## Core intuition
 
-Local corridor attenuation does not determine **unprojected** transmission after embedding in variable reservoirs. The exact scalar Schur invariant includes endpoint-normalized extension mass as well as boundary impedance, and that mass can erase an isolated edge gain.
+Unprojected reservoir transmission, extension strength, and physical low/high leakage are different currencies. Energy normalization isolates the mixed operator
 
-For the physical Prime-Flute low/high leakage, however, same-sector reservoir amplification is not automatically the relevant invariant. After the `P/H` split, the mixed inverse block is controlled by the cross-frequency form itself. The correct source-side target is the energy-normalized cross operator, not an unprojected scalar cut norm.
+`T = F_P Gamma F_H`,
+
+where the outer positive contractions record extension strength and `Gamma` records the relative low/high extension angle. The latest findings show that the canonical physical strengths are heavy on infinite-dimensional tails, so the desired weak-trace decay cannot come from compact outer factors. It must be created by the relative angle itself, or by a threshold-dependent interaction between angle and strength.
 
 ## Strongest justified claim
 
-PF-228 computes the isolated corridor attenuation and PF-229 shows that a translation-invariant scalar serial completion preserves it up to a fixed factor. PF-279 gives the exact general two-reservoir formula: complete-cut norm depends on boundary impedances and their spectral derivatives, equivalently the squared norms of endpoint-normalized harmonic extensions. A positive variable scalar family can make the isolated transmission small while the complete unprojected cut remains bounded away from zero.
+PF-279 shows why an isolated corridor coefficient does not control an unprojected complete cut: exact Schur transmission also depends on endpoint-normalized reservoir extension masses. PF-280--PF-282 then match the invariant to the physical statistic. Positivity canonically defines the energy-normalized cross operator, and its singular-value class controls the mixed inverse block and reciprocal-prime commutator. On heavy sectors, the strength factors saturate and the singular values are governed by the compressed angle.
 
-PF-280 then separates the mixed physical-frequency quantity. If the boundary space splits as `P+H`, the exact block resolvent identities give
+PF-283 provides a sufficient weak-trace route through heavy-angle counting. PF-284 proves the two-sided comparison and separates sufficient from necessary scales. In the symmetric thresholding, `N_(Gamma_tau)(2 tau)=O(tau^-1)` suffices, but weak trace class only implies `O(tau^-3)`. Hence an intermediate growth rate can defeat the convenient PF-283 proof without refuting the endpoint.
 
-`PDH=-A^(-1) B (HDH)=-(PDP) B C^(-1)`.
-
-The outer full-resolvent blocks are contractions, so same-sector reservoir completion cannot worsen the symmetric-ideal class of either one-sided decoupled `P/H` transfer. A PF-279 amplifier confined to one frequency sector therefore contributes no mixed block by itself.
-
-PF-281 removes the assumption that the raw cross block `B` is bounded. Positivity of the closed form defines the canonical energy-normalized cross operator
-
-`T=A^(-1/2) B C^(-1/2)`, with `||T||<=1`.
-
-If `T` lies in a compact symmetric ideal `J`, then `||T||<1` and the mixed inverse block factors through `T`, hence `PDH in J`; the reciprocal-prime commutator inherits the same ideal membership. Conversely positivity alone does not force compactness: valid positive block examples can have `T_j->1` and noncompact mixed inverse.
+PF-285 shows abstractly that angle decay would be unnecessary if the two strengths had complementary weak-Schatten decay. PF-286 then excludes that cheaper mechanism in the physical Prime-Flute geometry: the low strength has infinitely many channels above every fixed threshold and the high strength is noncompact with an infinite heavy population. Neither outer factor belongs to any finite weak-Schatten class.
 
 ## Synthesis of evidence
 
-PF-279 remains the exact warning against extrapolating a local seam coefficient to an unprojected complete cut. PF-280--PF-281 show why that warning must be matched to the statistic actually consumed downstream. For the coefficient-transfer route, the unresolved invariant is the singular-value decay of the **physical energy-normalized cross form `T`**. Same-sector extension mass matters only insofar as it feeds that mixed channel.
+The endpoint problem is now genuinely about **relative geometry between two individually heavy infinite-dimensional extension ranges**. Same-sector mass cannot be ignored, but it also cannot solve the problem by decaying away. The useful statistic must count or otherwise control how much of those heavy ranges remains aligned across the physical split.
 
-This is a more precise reservoir theorem than “bound all extension norms.” One may prove weak-trace or stronger ideal decay of `T` directly in the physical energy spaces, including finite-pant and neighboring-cell completion, even if some unprojected same-sector cut norms are large.
+This changes the order of attack. First distinguish a missed sufficient criterion from a true endpoint obstruction using the PF-284 necessary scale. Then seek a source/geometric theorem for the angle on the actual completed flute, including finite-pant and neighboring-cell coupling.
 
 ## Counterevidence / boundary cases
 
-PF-279 is a scalar matched control, not the physical flute. PF-280 assumes the physical split is compatible with the stated block structure, and PF-281 gives only a sufficient ideal criterion; no finding yet proves the actual Prime-Flute `T` is weak trace class.
+PF-286 does not prove `T` is noncompact. Two noncompact outer factors can still yield a compact or weak-trace product when the middle angle kills their common heavy directions. Conversely, PF-284's necessary `tau^-3` envelope is not sufficient by itself.
 
-Energy normalization is not automatically compactifying. The positive block counterexample in PF-281 shows that a genuine low/high conversion channel may survive with order-one strength.
+The heavy-angle statistic is threshold-dependent; a global weak-Schatten class for `Gamma` would be sufficient but may be unnecessarily strong. The physical theorem may use a finer joint strength-angle distribution.
 
 ## Epistemic status
 
-**Exact operator-theoretic boundary:** unprojected complete-cut transmission needs extension mass, while the projected physical route is controlled by an energy-normalized cross-frequency operator whose ideal decay is stable under same-sector reservoir completion but is not automatic from positivity.
+**Exact endpoint narrowing:** outer-factor population decay is unavailable in the canonical physical split, and the convenient heavy-angle count is only sufficient. The remaining endpoint currency is relative extension geometry on infinite heavy sectors.
 
 ## Novelty/prior-art status
 
-Schur complements, block resolvent identities, form normalization, and symmetric ideals are standard operator theory as recorded in PF-279--PF-281. This intuition records their exact role in the Prime-Flute frontier.
+Schur complements, singular-value inequalities, weak Schatten ideals, and threshold counting retain their finding-level prior-art status. This note synthesizes their exact role in Prime Flute.
 
 ## Falsification criterion
 
-Show that the PF-280/PF-281 factorization fails for the actual form domain/split, or construct a same-sector reservoir completion that preserves the hypotheses yet worsens the ideal class of `PDH` beyond that of `T`. Conversely, proving the physical `T` belongs to the required weak-trace ideal would close the present gate.
+Show that one canonical physical strength factor is actually compact/finite weak-Schatten despite PF-286, or construct a physical endpoint proof whose mechanism is independent of relative angle and does not contradict the established factorization. Alternatively, prove divergence of the PF-284 necessary statistic on a canonical sequence; that would turn the surviving route into a genuine obstruction.

@@ -1,43 +1,43 @@
-# MI-001 — Projective Farey rigidity now depends on excluding source-specific hyperbola amplification
+# MI-001 — Farey occupation is a multiplicative-placement problem, not a growth-exponent problem
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Linear Möbius ancestry does expose a genuine normalized projective defect, but generic local regularity cannot make that defect pointwise. The remaining escape has become much more specific: sparse low Jordan rows may sample anomalously large quotient-shell values and overwhelm the universal positive occupation carried by the terminal bulk.
-
-This is not an arbitrary free-model loophole. Terminal quotient blocks already have a fixed nonsquarefree Jordan density, and every finite supercritical Mellin packet is coercively sampled by nonsquarefree rows. A physical failure must therefore use genuinely source-specific hyperbola amplification, growing/infinite spectral complexity, or another mechanism outside both controls.
+The projective Farey obstruction has been narrowed beyond generic regularity and beyond finite spectral complexity. The physical quotient-shell source already carries the full Mertens/zeta-zero power exponent on every fixed Jordan row, and nonsquarefree dilation forces positive average occupation along every complete multiplicative chain. A remaining failure can therefore only be **sparse in scale** and must exploit the arithmetic placement of large shell values, not a missing global exponent or ordinary short-interval roughness.
 
 ## Strongest justified claim
 
-FD-031 reduces linear-prefix saturation to alignment with one distinguished Schur direction. FD-032--FD-034 show that the physical tail has macroscopic nonsquarefree mismatch and that square-divisor self-similarity forces a positive geometric/Cesaro projective defect along every complete `4`-adic chain, while FD-033 proves that absolute energy is the wrong currency because the physical Schur tail is superlinear.
+FD-031--FD-040 separate a universal favorable bulk from a possible low-row hyperbola-amplification escape. Terminal quotient blocks have fixed positive nonsquarefree density, while a synthetic one-Lipschitz shell profile can still concentrate enough energy on sparse low rows to drive the global occupation ratio to zero along a subsequence. Every fixed finite supercritical Mellin packet is nevertheless coercively sampled by nonsquarefree rows.
 
-FD-035--FD-037 show why this does not automatically become pointwise: multiplicative descendants leave gaps, and bounded increments only localize a possible occupation failure toward low Jordan rows. FD-038 then proves a universal terminal-block theorem. For every fixed `alpha<1/3`, the range `k<=H^alpha` carries a fixed positive nonsquarefree Jordan fraction independently of the nonnegative shell profile, and the physical terminal energy is already superlinear.
+FD-041--FD-045 strengthen the physical side. Squarefree/nonsquarefree occupation is a dilation sieve of one energy curve, centering cancels the critical pole, and the weighted squarefree Euler product plus Walfisz cancellation controls growing packets through and slightly beyond the square-root frequency window. Merely increasing frequency to that scale is not an escape.
 
-FD-039 is the decisive generic countercontrol. One can construct a one-Lipschitz shell profile with divergent critical energy for which sparse low-row hyperbola samples dominate the terminal bulk and drive the global nonsquarefree occupation ratio to zero along a subsequence. Thus bounded increments, exact hyperbola geometry, and divergent energy are insufficient.
+FD-046 identifies the source exponent exactly. The physical shell source `H` and the Mertens function are inverse floor transforms, so their polynomial growth exponent is the same rightmost-zero exponent `Theta`. Every fixed row, and hence both total and nonsquarefree energies, has limsup exponent `2 Theta`. No global polynomial decay of nonsquarefree occupation is possible.
 
-FD-040 narrows the escape again. Nonsquarefree rows form a positive frame on every finite Mellin-frequency span at fixed `beta>1/2`; consequently any finite supercritical Mellin asymptotic has a uniform positive occupation fraction. The FD-039 spike mechanism cannot be reproduced by finitely many fixed logarithmic frequencies.
+FD-047 turns square-divisor self-similarity into a pointwise lower-scale injection `U_H >= w(q) E_(floor(H/q))`. Along every `q`-adic chain this yields a positive geometric-mean/average occupation and forces the set of extremely small occupation values to have small logarithmic density.
+
+FD-048 then closes the generic smoothness response. Matomaki--Teravainen short-interval Möbius cancellation transfers to `H`, but a much smoother synthetic profile can still realize sparse occupation escape. What the control lacks is the exact multiplicative placement of the physical increments `Delta H(n)=mu(rad n) phi(rad n)/n`.
 
 ## Synthesis of evidence
 
-The projective problem has separated into a universal bulk and a source-specific amplification channel. The universal bulk is already favorable; the free-model counterexample must concentrate outside it. Finite spectral models are also favorable. The missing theorem therefore lies between them: control the complexity with which the physical quotient-shell source can place large values on the sparse hyperbola samples corresponding to low Jordan rows.
+The surviving difficulty is no longer “make the source regular enough” or “show nonsquarefree rows grow at the right rate.” Those are already controlled at the relevant levels. The problem is to prevent isolated horizons from arranging the physical increment pattern so that hyperbola sampling sends disproportionate energy into a few squarefree low rows while respecting all multiplicative-chain averages.
 
-The exact coefficient identity for the physical shell increments is the most concrete surviving source distinction. A spectral alternative would need uniform frame constants as the Mellin packet grows or loses a rightmost gap.
+This suggests a theorem shaped around divisibility covariance, dilation consistency, or another source-specific relation coupling neighboring multiplicative scales. A successful estimate should target the exceptional-set geometry directly rather than strengthen an already-favorable limsup exponent or short-interval norm.
 
 ## Counterevidence / boundary cases
 
-FD-040 is conditional when transferred to the physical source: it assumes a finite dominant Mellin packet with fixed supercritical real exponent. It does not control infinitely many comparable poles, a growing packet, a critical accumulation, or cancellations that destroy any fixed spectral gap.
+FD-047 does not give a pointwise positive occupation fraction; geometric-mean and density statements permit sparse bad horizons. FD-048's smooth countermodel is not physical and does not satisfy the exact multiplicative increment law. FD-046 controls polynomial exponents only and is compatible with ratios tending to zero slower than every power.
 
-FD-039 is synthetic and does not satisfy the physical multiplicative increment law. It proves only that generic smoothness/energy arguments cannot close the problem.
+Thus the synthesis does not assert that the physical occupation is positive pointwise. It identifies what any counterexample must still accomplish.
 
 ## Epistemic status
 
-**Supported source-specific narrowing:** normalized Farey rigidity is unconditional on average and terminal nonsquarefree occupation is universal; generic one-Lipschitz sources can still evade globally, but every fixed finite supercritical Mellin packet is coerced. The unresolved burden is physical hyperbola-sampling amplification in the genuinely infinite/growing spectral regime or an equivalent use of the exact arithmetic increment law.
+**Supported source-specific narrowing:** power growth, complete-chain average occupation, finite/growing packet coercivity, and ordinary short-interval regularity are all insufficient currencies for the final pointwise statement. The unresolved information is multiplicative placement across the hyperbola samples.
 
 ## Novelty/prior-art status
 
-No broad novelty claim is made beyond the persisted finding-level audits. This note synthesizes the exact Mathia boundaries FD-031--FD-040.
+No broad novelty claim is made beyond the finding-level audits. This note synthesizes the current exact Mathia boundaries.
 
 ## Falsification criterion
 
-Construct a physical-compatible shell profile obeying the exact arithmetic increment law that realizes the FD-039 low-row amplification while remaining compatible with the surviving Farey geometry, or prove that a finite-packet coercivity constant can collapse under a physically admissible growing packet in a way that reproduces the same escape. Either would narrow or refute the current source-specific diagnosis.
+Construct a shell profile satisfying the exact physical increment/divisibility law and the established floor-transform relations while realizing a subsequence with `U/E -> 0`, or prove that those laws force a positive pointwise or sufficiently strong density lower bound. Either outcome would resolve the current diagnosis.

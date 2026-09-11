@@ -10,16 +10,24 @@ VIS-130--VIS-150 show that one edge factor forces any support-safe companion int
 
 The decisive evidence must come from the source-side lower-order term, not from a visually striking residual after universal control subtraction.
 
-## Treat fixed-complexity Gram-index sampling as a deterministic clock control
+## Treat every fixed finite-order Gram-phase mixing test as a deterministic clock control
 
 **Linked intuition:** `MI-008-fixed-dimensional-gram-lags-are-a-newton-clock-null`.
 
-VIS-150--VIS-156 classify fixed finite commensurate lag geometries and fixed affine index sampling through the inverse Gram clock. Coherence, critical Haar fibers, and joint Haar populations can all be deterministic finite-difference/Vandermonde phenomena.
+VIS-150--VIS-159 classify fixed affine, polynomial, and power-law Gram-index sampling. A selector of degree `d` can be Haar through `d` fixed samples and fail at the next order; increasing fixed complexity can therefore mimic arbitrarily high finite orders of mixing.
 
-VIS-157--VIS-159 extend the null from affine starts to nonlinear sparse index selectors. Quadratic sampling is pairwise Haar but fails at three samples through an exact second-difference character. More generally, an integer polynomial of degree `d` is Haar through `d` fixed samples and fails at `d+1`; for `floor(n^alpha)` with noninteger `alpha>1`, the threshold is `ceil(alpha)`. By increasing a fixed selector degree/exponent, deterministic clock geometry can therefore imitate arbitrarily high **finite** orders of mixing before the next moment-null character exposes the clock.
+VIS-160 closes the naive “let selector complexity grow” escape. A deterministic diagonal selector with stage degree tending to infinity can pass **every fixed finite-order finite-prime Haar character test**. The missing discriminator must have complexity that grows jointly with height under a predeclared quantitative law, or use source information outside the sampled phase/clock state. Merely passing all fixed tests is not arithmetic evidence.
 
-The live visual escape must change a genuine asymptotic hypothesis: let sampling complexity grow with height with quantitative uniformity, use a non-power/data-dependent selector justified by source structure, or add an independently anchored analytic coordinate such as `Z`, derivatives, or zero geometry whose joint information is not determined by the clock. Passing any predetermined finite collection of Haar tests is now explicitly a deterministic control.
+## Measure analytic-coordinate novelty by stable decoder complexity, not raw information
 
-## Keep source quartic structure separate from clock-generated phase geometry
+**Linked intuition:** `MI-009-stable-decoding-is-a-collision-geometry-question`.
 
-The finite-CUE/moment-null branch asks whether a source-specific arithmetic correction survives universal low-frequency cancellation. The Gram-index branch now shows that fixed-complexity selectors can fake Haar behavior to any prescribed finite order. Do not use high finite-order phase mixing as evidence for arithmetic randomness unless the same statistic survives the exact selector-specific clock character and appropriate random controls.
+VIS-161 corrects the other obvious escape. Two exact prime phases already identify every real height set-theoretically, so any same-height analytic observable can be written as a function on that dense phase orbit. The inverse is nowhere continuous; raw information content is therefore the wrong notion of independence.
+
+VIS-162 makes the Lipschitz version exact. For a finite prime set, the minimal Lipschitz constant of any exact torus decoder for an observable is precisely its worst **phase-collision quotient**. Stable recoverability is thus a pairwise recurrence geometry problem, not a search over decoder architectures.
+
+The live source-sensitive test is quantitative: freeze the observable, normalization, prime support, metric, and height window, then determine whether its collision-complexity growth exceeds matched deterministic phase/clock controls. Hardy `Z`, derivatives, zero occupancy, or nearby-zero geometry are interesting only if such a stable separation is proved.
+
+## Keep source quartic structure, deterministic clock mixing, and decoder regularity separate
+
+Finite-CUE moment-null controls attack source corrections; Gram selectors attack apparent phase mixing; phase-collision quotients attack stable recoverability of extra analytic coordinates. None can substitute for another. A useful visual clue must survive the matched control in the exact representation category actually consumed downstream.

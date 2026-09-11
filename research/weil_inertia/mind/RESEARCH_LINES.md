@@ -8,20 +8,18 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 WI-231--WI-237 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows. The unconditional simple critical-line exponentials are complete in `L^2(E)` on every bounded positive-measure window and are not a Bessel family, so ordinary separation/Riesz arguments cannot exclude spectral collapse. The surviving Bombieri-side currency is the coefficient price of the eigenvector-selected approximation together with height tightness.
 
-## Make the finite-radius route a signed von-Mangoldt discrepancy-compensation theorem
+## Make the finite-radius route a cancellation-preserving signed von-Mangoldt discrepancy theorem
 
 **Linked intuition:** `MI-016-finite-radius-source-localization-can-replace-zero-side-tightness`.
 
-WI-238--WI-240 move the alternative route to Suzuki's localized Weil operator and close the generic first-crossing explanation. The universal logarithmic core crosses zero on its own, and the complete gamma-plus-pole form with the von Mangoldt term deleted has unbounded odd negative index. Generic spectral crossing and non-prime completion therefore cannot select the RH branch.
+WI-238--WI-241 move the alternative route to Suzuki's localized Weil operator and isolate the source term. Generic first-crossing geometry, the prime-deleted completed background, and even the density-one continuum replacement all remain indefinite. The full odd form can be organized as a negative background plus a signed discrepancy of the actual von Mangoldt source from density one.
 
-WI-241 identifies the arithmetic quantity more sharply. Replacing the von Mangoldt measure by its density-one continuum term cancels the pole contribution exactly into a bounded positive resolvent, yet the remaining gamma-plus-resolvent background is still indefinite on slow odd modes. The full odd form can be written schematically as
+WI-242 prices the obvious Prime Number Theorem route. For slow odd dilates the discrepancy has an exact integration-by-parts formula with critical weight `E(x)x^(-3/2)`, `E=psi-x`. Every standard absolute-envelope argument is on the wrong scale: unconditional PNT bounds give an exponentially growing majorant, and even the usual RH pointwise bound gives only polynomial growth in the aperture. Littlewood oscillation rules out the kind of uniformly stronger square-root envelope that triangle inequality would need.
 
-`Q_W^odd = Q_gamma + R - 2 Delta_Lambda^odd`,
+Under RH the same slow-dilate discrepancy converges to the exact order-one constant required by the negative background. The missing source charge is therefore a **cancellation phenomenon at RH scale**, not a consequence of making `|psi(x)-x|` small.
 
-where `Delta_Lambda` is the signed discrepancy of the actual von Mangoldt source from density one. If localized Weil positivity holds, this discrepancy must supply an order-one compensating contribution across every fixed-dimensional family of dangerous slow modes.
+The live theorem must preserve sign, Mellin structure, autocorrelation, or another cancellation mechanism in the `Lambda-1` discrepancy. A black-box pointwise PNT error bound followed by absolute values is now a matched control, not a plausible closure route.
 
-The live theorem is therefore not about total prime mass or generic positivity of the prime term. It must control the **signed finite-radius `Lambda-1` discrepancy against the negative background**, or identify a finite-prime invariant that forces exactly that compensation. Mean density is now a matched control and is insufficient by itself.
+## Treat finite inertia, mean-density completion, absolute PNT envelopes, and signed discrepancy cancellation as distinct objects
 
-## Treat finite inertia, mean-density completion, and signed discrepancy compensation as distinct objects
-
-Finite negative index counts zero-side defects but may lose quantitative coercivity. Localized source operators avoid that limit, but the prime-deleted and mean-density models remain strongly indefinite. Future arguments must retain the signed arithmetic discrepancy of the actual von Mangoldt event stream rather than replace it by prime abundance, density, or a generic crossing theorem.
+Finite negative index can lose quantitative coercivity; mean density cancels only part of the completion; absolute error envelopes destroy the needed order-one source charge. Future source-side arguments must keep the signed discrepancy inside the actual localized quadratic form long enough for its cancellation to act.
