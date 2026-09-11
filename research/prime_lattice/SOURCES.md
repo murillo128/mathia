@@ -365,3 +365,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 92. **Yaoming Shi**, “Construction of Finite Hilbert--Pólya Matrices from Weil's Explicit Formula,” arXiv:2609.04908v1 [math.GM] (submitted 4 September 2026), preprint. https://arxiv.org/abs/2609.04908.
     - Role: main current-literature anchor for `PL-263`. Constructs finite Prime–Weil matrices from pole, archimedean, and finite prime-power terms of Weil's explicit formula; proves exact zero-side reconstruction by a contrast pencil; shows that a hypothetical off-critical conjugate pair yields the full nonreal quartet in the unshifted indefinite interpolation pencil; and proves that subtracting the algebraically smallest eigenvalue instead creates a positive Hermitian-definite pencil with real sign-paired spectrum, explicitly emphasizing that this is a different spectral problem. The prime-to-zero moving-dimension relative perturbation theorem remains open, so the source supports the negative gate against treating shifted spectral reality as an RH-localization mechanism, not a proof of convergence or RH.
+
+## Finite Weil source quotients and positive discrete compression
+
+93. **Akiva Groskin**, “A finite Guinand–Weil dictionary and archimedean tail order for the truncated Weil quadratic form,” arXiv:2607.02828v3 [math.NT] (submitted 2 July 2026; revised 14 August 2026), preprint. https://arxiv.org/abs/2607.02828.
+    - Role: main exact source-calculus anchor for `PL-270`. Lemma 2.3 and Corollary 2.4 prove that the level-`N` finite source-to-form map factors through an injective quotient of exactly `2N+1` source coordinates; Theorem 2.5 identifies the resulting finite quadratic values with exact Guinand–Weil zero sums.
+
+94. **Federico Piazzon, Alvise Sommariva, Marco Vianello**, “Caratheodory-Tchakaloff Subsampling,” *Dolomites Research Notes on Approximation* **10**(1) (2017), 5–14. DOI: https://doi.org/10.14658/PUPJ-DRNA-2017-1-2. arXiv: https://arxiv.org/abs/1611.02065.
+    - Role: classical compression anchor for `PL-270`. Theorem 1 gives the discrete Carathéodory–Tchakaloff theorem for an arbitrary finite-dimensional function space: a positive finite discrete measure can be replaced exactly, on that function space, by positive weights on at most the restricted dimension many nodes selected from its original support.
