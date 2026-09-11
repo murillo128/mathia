@@ -1,35 +1,53 @@
-# MI-004 — Weighted tail-shell quotient is a conditioned source-faithful skeleton
+# MI-004 — A conditioned source-faithful skeleton can still hide the full target oracle cost
 
-**Evidence level:** exact quotient identities, relative-distance preservation, Möbius-core retention, and N-uniform Gram conditioning through NB-034
+**Evidence level:** proved
 
 ## Core intuition
 
-A useful Nyman compression need not preserve the whole canonical dictionary. It can quotient a large moving-tail nuisance sector provided three facts are proved simultaneously: the discarded sector is target-poor, the retained coordinates preserve the source-locked arithmetic core, and the retained geometry remains quantitatively conditioned independently of how far the original section extends.
+A useful Nyman compression can quotient a large moving-tail nuisance sector while preserving source coordinates and quantitative conditioning. But those certificates do not imply either that the target loss is arbitrarily reducible or that the compressed target geometry is cheap to evaluate. The weighted tail-shell skeleton makes both distinctions exact.
 
-Weighted tail adjacency realizes exactly this combination. It converts the large tail into one source-defined scalar while keeping the low canonical coefficients unchanged.
+Its target loss has an intrinsic inverse-cutoff floor, and its upper-section correction carries the original Burnol distance in an explicit source direction. Compression quality, target-loss scale, and **oracle cost** are separate mathematical gates.
 
-## Strongest justified principle
+## Strongest justified claim
 
-NB-031--NB-032 identify moving-tail adjacency as a Gram-whitened target-poor sector and show that removing it preserves the limiting target distance. NB-033 upgrades this to an explicit finite-dimensional source statement: a polylogarithmic cutoff preserves the finite-section distance multiplicatively, every head coefficient survives unchanged, and the whole ordinary tail collapses to one endpoint quotient scalar while the forced Möbius core remains present.
+NB-031--NB-034 construct the weighted tail-shell quotient. It preserves the low canonical coefficients, compresses the ordinary tail to one weighted scalar, loses at most `1/M` target energy, and has polynomial conditioning uniformly in the original section size `N`. NB-035--NB-036 give exact Vasyunin/Möbius dual readouts for the retained coordinates.
 
-NB-034 replaces ordinary adjacency by weighted edges `n g_n-(n+1)g_{n+1}`. Their span is exactly the kernel of the first `M-1` shell observations. The quotient therefore has a concrete early-shell meaning, dimension `M-1`, unchanged head coefficients, and one weighted tail sum `M sum_{n>=M} a_n/n`. Its Gram matrix is squeezed between an explicit early-shell matrix and the original finite Gram matrix, with `lambda_min >= 1/(14 M^2 H_M^2)` and condition number `O(M^2 (log M)^3)` uniformly in `N`. The target-distance loss is at most `1/M`, so any cutoff `M/log N -> infinity` preserves the finite-section distance relatively.
+NB-037--NB-038 show that the upper-section correction cannot be ignored at the final scale. The relative Gram and target-correlation defects are forced at order `d_N^2`, and for the explicit direction `a=B_M^(1/2)u_M`,
 
-## Program consequence
+`a* S_(M,N) a = (1+o(1)) d_N^2`
 
-Work inside the conditioned skeleton. The next arithmetic theorem should constrain the retained Möbius-locked head or weighted tail scalar strongly enough to change the Nyman distance. Because conditioning no longer deteriorates with `N`, failures can be attributed more cleanly to missing source structure rather than to an uncontrolled quotient metric.
+in the stated regime. The missing correction therefore contains a multiplicatively accurate copy of the original distance in a direction fixed by the retained arithmetic data.
 
-A larger nuisance quotient is worthwhile only if it keeps the same three certificates: explicit source coordinates, quantitative target preservation, and controlled conditioning.
+NB-039 then proves that the `1/M` target loss is itself sharp rather than a crude upper estimate. The weighted nuisance tail contains the dilation `A_M V_floor(N/M)`, giving
 
-## Counterevidence / boundary
+`(1-d_floor(N/M)^2)/M <= kappa_hat_(M,N)^2-d_N^2 <= 1/M`.
 
-The quotient does not itself prove the Báez-Duarte/Nyman approximation rate or RH. Polynomial conditioning in `M` can still be expensive when `M` grows, and the retained weighted tail scalar may hide hard Möbius cancellation. The theorem certifies a representation, not the source estimate needed on that representation.
+For `N>=2M`, the loss is uniformly between `log 2/M` and `1/M`. Hence multiplicative target preservation for this quotient is equivalent to
 
-The early-shell kernel is tailored to the canonical generators and target; it is not a generic principle that arbitrary weighted differences are harmless.
+`M d_N^2 -> infinity`.
+
+The same dilation argument also sharpens the explicit-direction approximation: seeing the Burnol/source defect only requires the adaptive condition `M d_N^2/d_floor(N/M)^2 -> infinity`, which can be much weaker than superlogarithmic compression away from the closure-scale alternative.
+
+## Synthesis of evidence
+
+The weighted skeleton succeeds as a representation theorem and exposes why it cannot be a free compression theorem. The discarded weighted tail recursively contains a smaller copy of the original Nyman problem, so the `1/M` loss has a structural source. Meanwhile the target/Gram correction re-enters exactly through a known source direction at the original distance scale.
+
+The next question is therefore a source-cost question: can that explicit directional correction be computed or bounded from arithmetic information strictly cheaper than controlling `d_N` itself? Improving the same quotient's conditioning cannot change the exact inverse-distance threshold.
+
+## Counterevidence / boundary cases
+
+NB-039 is specific to this weighted quotient. A materially different nuisance subspace may have a different target-loss floor. It also does not prove circularity of every theorem controlling the explicit Burnol-scale defect; a new arithmetic identity may still estimate that direction cheaply.
+
+The order-necessity of the familiar superlogarithmic cutoff uses the expected `d_N^2 asymp 1/log N`; the exact unconditional criterion is `M d_N^2 -> infinity`.
 
 ## Epistemic status
 
-**Exact positive representation theorem: a near-logarithmic-dimensional weighted tail-shell quotient preserves the target distance and Möbius core while remaining polynomially conditioned, now at `O(M^2 (log M)^3)`, independently of the discarded upper section; the unresolved burden is an arithmetic constraint on the retained source coordinates.**
+**Exact representation and compression boundary:** the weighted quotient is source-faithful and conditioned, its target loss is sharply `Theta(1/M)` and multiplicative preservation occurs exactly above the inverse-distance scale, while its upper-section correction carries `d_N^2` in an explicit source direction.
+
+## Novelty/prior-art status
+
+No broad novelty claim is made beyond the finding-level audits. Vasyunin, Burnol, and Bagchi dilation ingredients are prior art; this note records their exact role in the persisted weighted-skeleton construction.
 
 ## Falsification criterion
 
-Exhibit an admitted `M,N` for which the weighted-edge span is not the early-shell kernel, the target-loss bound or uniform Gram lower bound fails, or show that the forced Möbius core disappears from the retained coordinates under the stated quotient.
+Invalidate the dilation inclusion or the two-sided target-loss identity of NB-039, derive an admitted sequence violating the criterion `kappa_hat/d_N ->1 iff M d_N^2->infinity`, or construct a source estimate for the explicit directional correction that is demonstrably cheaper than the Nyman distance. Any of these would materially revise the present boundary.

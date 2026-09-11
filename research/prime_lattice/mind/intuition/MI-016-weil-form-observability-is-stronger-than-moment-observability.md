@@ -1,37 +1,41 @@
-# MI-016 — Weil-form observability is stronger than moment observability, and a semilocal core is already complete
+# MI-016 — Weil-form observability is stronger than moment observability, but event-local sign is still too universal
 
-**Evidence level:** literature-backed positive-proportion localization, classical finite-defect inertia, and semilocal Laurent-core finite detectability through PL-261
+**Evidence level:** supported
 
 ## Core intuition
 
-Finite-dimensionality is not the decisive information loss in Weil-form approaches. A finite Hermitian compression can already turn prime-power explicit-formula data into unconditional critical-line localization, while the same broad form information may lose sparse exceptional structure if it is compressed further to a few normalized moments. More strongly, one canonical nested finite Weil family is already complete enough that **every** RH failure eventually creates a finite negative direction.
+Finite-dimensionality is not the decisive information loss in Weil-form approaches. A canonical finite semilocal core already detects every RH failure, and individual prime-power events enter finite source paths with exact sign. The missing theorem is stricter: derive the **global unshifted Weil sign** from arithmetic relations among events and completion data.
 
-The unresolved problem is therefore not how to make the finite observations complete. It is how to force their **sign** from source-side arithmetic without importing the RH-equivalent positivity conclusion.
+PL-264 shows why local sign is not enough. Every prime edge has the same singular matrix geometry up to its inserted von Mangoldt scalar. Eventwise negativity, interlacing, and higher local jets therefore read the source atom correctly but do not create a Riemann-specific global selector.
 
-## Strongest justified principle
+## Strongest justified claim
 
-PL-259 records the Alpöge--Furman theorem: a source-determined finite compression of Weil's Hermitian form, together with first and second arithmetic moments, forces more than two thirds of zeros in a window to be simple and on `Re(s)=1/2`, with optimized proportion about `0.6725`. Lamzouri's parallel proof shows that the durable input is the Weil/pair-correlation moment structure rather than one matrix realization. Those aggregate inputs are nevertheless insensitive to `o(N)` off-line populations.
+PL-259 records the unconditional positive-proportion localization obtainable from finite Weil/moment data. PL-260 shows that exact finite inertia retains sparse off-line defects that normalized moments can average away. PL-261 goes further: the Connes--Consani semilocal Laurent spaces form a core whose finite compressions eventually become negative whenever the corresponding closed Weil form has negative lower bound. Every RH failure is therefore finitely observable in that family.
 
-PL-260 prevents that limitation from being attributed to finite forms themselves. Bombieri's classical theorem says that if only finitely many zeros are off line, the negative index of his finite Weil truncations eventually stabilizes at half their number. Exact sign structure retains a sparse integer defect that normalized moments can average away.
+PL-262 shows fixed-window source control does not automatically survive the growing-window limit required by the final criterion. PL-263 supplies a matched warning: subtracting the least eigenvalue can manufacture a positive metric and real generalized spectrum even for explicitly off-line zero quartets, so positivity of a modified proxy is not positivity of the original Weil form.
 
-PL-261 closes the remaining existential sparse-infinite observability concern for the Connes--Consani semilocal family. Laurent polynomials are a form core for `QW_lambda`, and the lower bound of the closed form is the limit of the smallest eigenvalues on the nested spaces `E_N=span{U^k: |k|<=N}`. Since positivity of all semilocal forms implies RH, any RH failure yields some `lambda` with negative lower bound and therefore a finite `N_0` after which every `E_N` compression has a negative eigenvalue. No finiteness or density assumption on the off-line divisor is needed.
+PL-264 examines the finite Connes--van Suijlekom prime-edge path. At a prime power `q`, the derivative jump is `-a_q 11^T` with `a_q>0`; every higher singular jet is `Lambda(q)/sqrt(q)` times a matrix universal in the derivative order, Galerkin level, and edge location. Thus the complete singular jet of one edge contains no additional arithmetic variable beyond the source atom already inserted. Local spectral velocity interlacing and Weyl-resolvent transformations are consequences of this same rank-one template.
 
-## Program consequence
+## Synthesis of evidence
 
-Stop treating finite Galerkin completeness as the missing bridge for this semilocal route. The next theorem must constrain the sign of the finite source-forced forms themselves, preferably through arithmetic structure demonstrably cheaper than the full Weil criterion. A new finite basis, more moments, or another completeness proof is not progress unless it provides such a sign mechanism.
+The line now separates three currencies. **Observability** asks whether a hypothetical failure becomes visible in a finite form; PL-261 answers yes. **Local source sign** asks whether individual prime events enter canonically; PL-264 answers yes, but universally. **Global coercivity** asks whether the accumulated source plus archimedean/polar completion has the original Weil sign on growing cores; this remains open.
 
-Mixed-prime exponent geometry must likewise earn its role by producing a sign/rigidity principle beyond the prime-power axis explicit formula; PL-261 already obtains finite detectability without using the interior exponent lattice.
+A useful source theorem must therefore be nonlocal in event space: a matrix inequality coupling distinct prime-power thresholds, a completion identity with the correct orientation, or a growing-core transfer whose constants remain stable. Refining the singular geometry of one prime edge cannot cross the gate.
 
-## Counterevidence / boundary
+## Counterevidence / boundary cases
 
-The Connes--Consani result is existential in both the semilocal scale and the finite dimension and applies to its specific nested Laurent core. It does not give effective bounds for where a hypothetical RH failure becomes visible, Bombieri-style exact negative-index counting, or automatic conclusions for other truncation families.
+PL-264 does not say that the full event stream is arithmetically universal. The ordered collection of all von Mangoldt atoms is the prime source itself, and nonlocal interference among events or coupling to completion can carry genuine information. The finding closes only mechanisms determined by one edge's local singular jet.
 
-Most importantly, detectability is not positivity. The core theorem gives no unconditional reason that the finite eigenvalues are nonnegative. Proving all required signs may remain essentially as hard as Weil positivity unless additional source structure is found.
+Finite detectability also remains existential in scale and dimension; it does not provide an effective source-side sign bound.
 
 ## Epistemic status
 
-**Supported observability hierarchy with the existential gap closed in one canonical family: bulk moments force a positive critical-line proportion but can miss sparse defects; exact finite-form inertia detects finite defects; the Connes--Consani semilocal Laurent core finitely detects every RH failure. The live burden is source-side sign coercivity, not completeness.**
+**Supported observability/sign hierarchy:** every RH failure is finitely detectable in a canonical semilocal core, but single-prime-edge spectral geometry is template-universal and cannot by itself force the missing global unshifted Weil positivity.
+
+## Novelty/prior-art status
+
+The finite CvS event formulas and their rigidity are prior art as recorded in PL-264. This intuition only synthesizes them with PL-259--PL-263 and makes no independent novelty claim.
 
 ## Falsification criterion
 
-Produce an RH-failing configuration compatible with the semilocal Weil criterion for which every finite Laurent compression remains nonnegative, contrary to the form-core/lower-bound deduction, or show that the PL-261 use of the Connes--Consani core theorem does not imply eventual finite negativity at a scale with negative closed-form lower bound.
+Exhibit a one-edge invariant of the same finite CvS singular jet that is not determined by the edge location, source scalar, and universal jet matrices and that yields a zeta-specific sign statement without assuming ambient positivity. Alternatively, prove that the accumulated local shocks alone imply the unshifted finite Weil sign with a stable growing-core bound; that would show the current separation between local sign and global coercivity is too strong.

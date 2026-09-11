@@ -1,37 +1,43 @@
-# MI-001 — Robin failure is a selector problem after finite dominant-face cone compatibility
+# MI-001 — Robin failure requires arithmetic coupling across the adaptive selector family
 
-**Evidence level:** exact CA localization, same-parameter prime-race cone, dominant-zero phase analysis, finite dominant-face recurrence, and additive-resolution budget through RE-032
+**Evidence level:** supported
 
 ## Core intuition
 
-The Robin route can no longer hope that the standard and reciprocal zero coefficients make the threshold race cone intrinsically impossible. A single off-critical pair realizes the required signs near a suitable Chebyshev zero crossing, and the same phenomenon survives every nonzero finite packet of dominant modes on one off-critical vertical line.
+Finite spectral sign geometry and adaptive selector geometry have both been tested as standalone obstructions, and neither is selective enough. A hypothetical Robin failure must satisfy an arithmetic standard/reciprocal race relation at the selected CA states, but finite dominant packets can realize each fixed-threshold sign cone. The same-block selector fan is stronger bookkeeping, yet its convex-envelope geometry is itself algebraically universal.
 
-The exceptional object is therefore the **CA threshold selector**, not finite spectral coefficient geometry. It must repeatedly sample cone-compatible recurrent phase windows, and using the discreteness of CA events against those windows requires quantitative phase/additive resolution that the current asymptotics do not supply automatically.
+The surviving discriminator is their **joint coupling**: one genuine counterexample block must carry an entire adaptive selector family whose states simultaneously satisfy the increasingly precise arithmetic race law.
 
-## Strongest justified principle
+## Strongest justified claim
 
-RE-017--RE-029 localize hypothetical failure to self-tangent CA thresholds, couple event depth to the same frontier displacement, and force the standard Chebyshev and logarithmic Mertens-product errors into an opposite-sign quantitative cone at one common parameter `Z`.
+RE-030--RE-032 show that every nonzero finite packet on one dominant off-critical vertical line has recurrent phases realizing the required fixed-threshold cone. Coefficient signs alone therefore cannot exclude the branch. RE-031 also shows that combining phase geometry with CA event spacing requires a genuine power-saving source/spectral approximation.
 
-RE-030 tests the one-mode coefficient geometry and finds no contradiction: an off-critical pair realizes the cone near a reciprocal-positive standard-mode downcrossing. RE-031 converts that one-mode phase law to physical scale and shows that an event-spacing contradiction at additive scale `h(Z)` requires a relative source/spectral error `epsilon(Z)=o(h(Z)/(Z^(1-delta) log Z))`; square-root event resolution therefore needs a genuine power saving rather than any fixed logarithmic refinement.
+RE-034--RE-037 introduce the adaptive selector and derive an exact nonlinear standard/reciprocal relation for each fixed admissible exponent `b`. RE-037 sharpens the earlier bounded tube: after normalization the selected state converges to one explicitly translated nonlinear race curve, with a universal second-layer offset. The one-parameter arithmetic relation is therefore much tighter than mere sign compatibility.
 
-RE-032 then removes the possibility that finite multi-frequency interference restores an automatic sign obstruction. For every nonzero finite packet with common real part `beta>1/2`, the reciprocal packet is an exact stable-filter transform of the standard packet. Zero-mean recurrence forces a downcrossing with positive reciprocal value, and finite-frequency recurrence reproduces such neighborhoods infinitely often. For any threshold exponent in the admitted range, points exist where the standard packet has exactly the required small negative magnitude while the reciprocal packet remains uniformly positive before multiplication by the common power.
+RE-038 proves that the selectors for different exponents can be realized on the same finite counterexample block. The rightmost maximizer is monotone in `b`, selected states form the upper convex envelope of finitely many affine functions, and switches obey exact secant/power laws.
 
-## Program consequence
+RE-039 then removes the temptation to regard that convex-envelope fan itself as arithmetic rigidity. For any prescribed finite ordered breakpoint pattern and increasing intrinsic coordinates, one can choose positive synthetic Robin excesses that realize exactly the same rightmost-maximizer fan, secant identities, small-positive-height regime, logarithmic spacing, and inherited quantitative left-endpoint witness. No prime or zero information is needed for this construction.
 
-Target the selector-to-spectrum relation. Prove that the CA threshold sequence avoids the recurrent cone-compatible phase neighborhoods of the actual dominant spectral face, or obtain a power-saving approximation precise enough to combine the phase condition with CA event spacing. If the relevant zero contribution is not controlled by one finite vertical face, identify the genuinely infinite/multi-face structure and show how it changes the recurrence or sign geometry.
+## Synthesis of evidence
 
-Do not spend effort seeking a contradiction from the signs of finitely many dominant zero coefficients alone; RE-032 classifies that route as compatible.
+The two strongest surviving structures live on different axes. RE-037 supplies a source/spectral arithmetic constraint but currently one threshold exponent at a time. RE-038 supplies cross-threshold same-block coherence, while RE-039 proves the purely optimization-theoretic part of that coherence is universal. The untested object is the **uniform arithmetic realization of the fan**.
 
-## Counterevidence / boundary
+A credible exclusion theorem should therefore retain the threshold parameter through the source-to-spectrum transfer and constrain the joint values of the standard and reciprocal races at all selected vertices on one block. Counting switches, bounding the block stretch, or using the secant law without the arithmetic race values cannot suffice.
 
-RE-032 concerns finite packets whose zeros share one real part and shows existence of cone-compatible phases, not that the CA selector visits them. It does not classify infinitely many comparable modes, several dominant real parts, truncation remainders, or the true arithmetic dependence between CA thresholds and spectral phases.
+## Counterevidence / boundary cases
 
-RE-031's explicit additive-resolution formula is derived in the one-dominant-zero setting. Its qualitative lesson about needing selector precision remains relevant, but a general finite-packet spacing theorem would require its own quantitative transversality/remainder analysis.
+RE-039 is synthetic. It does not show that arbitrary selector fans can also satisfy the RE-037 translated prime-race relation for actual zero-generated races. Conversely, RE-037 has not yet been made uniform over a whole same-block interval of `b`; that is exactly the missing bridge.
+
+An infinite or sufficiently rich spectral tail might still realize the full coupled family. The current evidence closes only fixed-packet sign contradictions and selector-kinematic contradictions taken separately.
 
 ## Epistemic status
 
-**Exact finite-face negative boundary: the threshold cone is compatible with every nonzero finite packet on a dominant off-critical vertical line, while one-mode event-spacing exclusion requires power-saving resolution; the remaining obstruction must come from the CA selector, a stronger source relation, or genuinely non-finite spectral structure.**
+**Supported joint-coupling boundary:** fixed-threshold spectral cones are realizable and same-block selector fans are algebraically universal; a Robin contradiction must use arithmetic coupling between the selected fan and the standard/reciprocal race across threshold exponents, or another source relation of comparable strength.
+
+## Novelty/prior-art status
+
+This synthesis inherits the prior-art boundaries recorded in RE-030--RE-039 and makes no independent novelty claim.
 
 ## Falsification criterion
 
-Exhibit a nonzero finite same-real-part packet for which no arbitrarily large phase realizes the RE-032 threshold cone, or prove that finite dominant-mode coefficient geometry alone excludes the CA-selected cone without using selector information, remainder control, or additional source structure.
+Construct a synthetic or finite dominant spectral model satisfying, on one growing block, both an arbitrary RE-039-style selector fan and the RE-037 translated race normal form uniformly on a nontrivial interval of `b` with the required remainder control. That would show the proposed joint coupling is still too weak to discriminate RH failure.

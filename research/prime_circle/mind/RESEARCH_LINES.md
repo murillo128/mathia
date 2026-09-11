@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave every fixed finite residue-packet category through genuinely growing relational coupling
+## Find a growing relational carrier that does not classicalize into modular-lattice path geometry
 
-**Linked intuitions:** `MI-011-simultaneous-scale-coupling-must-survive-coprime-controls`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`.
+**Linked intuitions:** `MI-010-two-prime-resonance-needs-a-cross-prime-relation`, `MI-011-first-mixed-moment-can-still-be-pairwise-scalar`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`.
 
-PC-224--PC-249 show that scalar fusion, nonlinear refinements, native weighted packets, and pairwise shared-upper rectangular cross-Grams repeatedly close into classical finite packet, CRT, or character algebra at fixed lower scales.
+PC-224--PC-249 close the main fixed-conductor packet, character, refinement, and pairwise common-row escapes: for a fixed finite lower family, complete transfer packets and mixed cross-Grams reduce to finite classical lower-level data once the upper prime is large enough.
 
-PC-250 closes a tempting higher-order variant: the three-prime transfer defect can have full algebraic rank while its information still collapses to pairwise residue data. PC-251 identifies a genuinely different growing regime. When the lower levels themselves grow, the shared-upper defect becomes a weighted Farey collision matching, so the surviving variable is no longer a fixed finite-conductor packet. PC-252 marks the opposite boundary: fixed-base row-local rectangular nonlinearities remain affine periodic residue data and therefore do not create asymptotic cross-prime transport.
+PC-250--PC-252 move to the genuinely comparable-scale regime where shared-upper collisions survive with growing rank. PC-253 identifies that rank exactly as an oriented congruence-lattice point count in a rational triangle. The orientation retains information erased by centered pairwise singular spectra, but the carrier is still classical modular geometry. PC-254 then closes its determinant/log-volume compression: the pseudodeterminant factors into the product of the already-classical collision weights and elementary path-run factors. Even a growing matching and its global volume can therefore classicalize without producing a new RH variable.
 
-The live construction should therefore attack the growing-lower collision kernel itself. Determine whether its normalized shell variation, collision multiplicity, or another source-aligned statistic has a cofinal regularity law not reducible to finite CRT data. Any proposed nonlinear enrichment should first pass the fixed-base periodicity and pairwise-residue collapse controls.
+The live question is whether the **remaining ordered spectral distribution or a genuinely multi-upper/multilinear coupling** contains information not reconstructible from oriented modular-triangle discrepancies and selected-path Gram data. Merely increasing collision rank, retaining orientation, or taking determinant-like global compressions is no longer enough. A successful carrier must exhibit a relation whose asymptotic information survives after the exact lattice-count and path-run controls are removed.
 
-## Treat algebraic rank and nonlinear packet size as controls
+## Treat dimension growth, orientation, and determinant volume as separate controls
 
-More rank, more primes, or nonlinear row processing do not imply more arithmetic information. At fixed conductor these can still be coordinate-rich presentations of pairwise residue data. A survivor must exhibit a relation whose state space genuinely grows with the lower arithmetic scales and whose decisive statistic cannot be reconstructed from finitely many residue packets.
+Dimension growth is necessary to escape the fixed-finite CRT closure, but PC-253 shows it can still reduce to a classical congruence-lattice discrepancy. Orientation is a real surviving datum, yet PC-254 shows that one natural global spectral compression of the ordered matching is elementary. Future proposals should test the full nonzero singular distribution, higher-order incidence structure, or several upper variables against these controls before calling the growing carrier arithmetically new.

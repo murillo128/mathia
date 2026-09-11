@@ -1,17 +1,25 @@
 # Weil-inertia research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert exact finite inertia into a nonescaping negative full-Weil witness
+## If using Bombieri truncations, control coefficient cost and height tightness rather than raw span separation
 
-**Linked intuitions:** `MI-008-inertia-counts-offline-pairs-but-not-their-distance`, `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`, `MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass`.
+**Linked intuitions:** `MI-008-inertia-counts-offline-pairs-but-not-their-distance`, `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-218--WI-235 quantify how local screening of a macroscopic off-line bow must pay count, radial-amplitude, and spacing-surplus tariffs. Those estimates narrow same-window escape but do not by themselves connect to the finite eigenvectors of Bombieri's Weil matrices.
+WI-231--WI-236 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows: negative eigenvalues may approach zero and normalized eigenvector mass may escape. WI-237 closes the tempting raw-Hilbert-space repair. The unconditional simple critical-line exponentials are complete in `L^2(E)` on every bounded positive-measure window, while their density prevents them from forming a Bessel family. Ordinary positive-angle, Riesz, or blanket linear-independence arguments therefore cannot exclude the collapse alternative.
 
-WI-236 corrects the finite-inertia diagnosis. Bombieri's Theorem 8 already computes the exact negative index for every finite symmetric zero multiset, so canonical height truncations detect every finite off-line packet even when the full off-line divisor is infinite. The missing theorem is not cofinal persistence of the integer index. Negative eigenvalues may collapse to zero while normalized eigenvector mass escapes to higher coordinates; in the reciprocal Fredholm variable this is escape of determinant zeros to infinity.
+The surviving Bombieri-side currency is the **coefficient price** of approximating a finite off-line packet by critical-line exponentials under the normalized `ell^2` budget inherited from the finite negative eigenvectors, plus height tightness when the off-line divisor is infinite. A useful theorem must distinguish these eigenvector-selected relations from arbitrary complete-span approximation.
 
-The live theorem is therefore a coercive passage-to-limit statement. Prove a uniform negative spectral margin together with height-tightness of a suitable negative eigensequence, or exclude the limiting zero-eigenvalue linear relations that arise when the margin collapses. Only after an exact bridge is derived may the local bow-screening tariffs be used to price this escape.
+## Use finite-radius source nondegeneracy as an alternative to zero-side passage-to-limit
 
-## Treat finite detectability, spectral margin, and coefficient tightness as separate obligations
+**Linked intuition:** `MI-016-finite-radius-source-localization-can-replace-zero-side-tightness`.
 
-Exact finite negative index is already complete enough to see sparse off-line packets. It carries neither a quantitative distance from zero nor compactness of the negative eigensector. Future work should target those two nonescape currencies directly and must not import ordinary Hermitian interlacing into Bombieri's complex-symmetric truncation without an explicit equivalent Hermitian/congruence model.
+WI-238 integrates Suzuki's localized Weil theory with the sparse-defect diagnosis. RH failure forces a finite first support radius `a_*` at which the localized self-adjoint Weil operator has a nonzero zero mode. The lowest eigenvalue is continuous and nonincreasing in the radius, so the obstruction appears as a genuine finite crossing rather than only as a cofinal zero-side limit.
+
+For fixed `a`, the source kernel uses only von Mangoldt data `Lambda(n)` with `n<=exp(2a)` plus explicit archimedean terms. Thus an off-critical zero anywhere in the global divisor forces a **finite-prime, finite-support, source-side zero mode**. This does not make RH easy—the all-radius nondegeneracy criterion is itself RH-equivalent—but it removes Bombieri coefficient tightness as a logically mandatory bridge.
+
+The live alternative is to exploit the first-crossing structure or prove source-side nondegeneracy of the localized operator from its finite-prime kernel in a way cheaper than reasserting Weil positivity. This branch should be compared against the Bombieri coefficient-budget route rather than conflated with it.
+
+## Treat finite inertia, ambient completeness, and localized source nondegeneracy as distinct objects
+
+Finite negative index counts defects but does not quantify their distance from the critical line. Raw critical exponentials can approximate every local target but may require unbounded coefficient cost. Suzuki localization moves the decision to a different finite-support source operator whose zero crossing is exact but infinite-dimensional. Future arguments should state which of these three currencies they control and should not transfer coercivity claims between them without an explicit theorem.

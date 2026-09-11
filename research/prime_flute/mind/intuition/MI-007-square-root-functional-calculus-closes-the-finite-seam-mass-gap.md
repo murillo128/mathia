@@ -1,37 +1,45 @@
-# MI-007 — Square-root functional calculus closes the finite-seam mass gap
+# MI-007 — The square-root source closes the seam mass gap and fixes the leakage at the critical exponent
 
-**Evidence level:** exact sublinear seam asymptotics, complete-Bernstein/Stieltjes analysis of the square-root source, and exact continuous-Hahn diagonalization through PF-274
+**Evidence level:** proved
 
 ## Core intuition
 
-Separated propagation genuinely changes the Prime-Flute endpoint problem to low-output leakage, and the naked finite seam satisfies a strict sublinear leakage exponent because its positive Green representation begins at a nonzero mass. But the physical normalized Robin source applies a square root to that seam operator. The square root preserves complete-Bernstein positivity while changing the representing spectrum qualitatively: its Green measure reaches zero mass.
+The naked finite seam has supercritical low-output decay because its positive Green representation starts at nonzero mass. The physical Robin-normalized source applies a square root that moves the representing continuum down to the mass-one threshold. That threshold is not removed by normalization: the normalized source is analytic across the relevant Fourier points and has a nonzero branch coefficient there.
 
-A spectral gap in one operator therefore cannot be inherited through nonlinear functional calculus without computing the transformed measure. Here the gap closes exactly to the critical `mu=1` edge, but the fixed-axis operator is now explicitly diagonalizable, so the remaining question can be attacked in a concrete spectral basis rather than through abstract recurrence estimates alone.
+The consequence is now exact rather than diagnostic. The fixed-axis normalized leakage is critical up to logarithms, so no `q>1` low-output exponent can be recovered from this architecture.
 
-## Strongest justified principle
+## Strongest justified claim
 
-PF-272 proves that for fixed seam parameters the naked relative seam maps an input block near `N` into an output window `N^theta`, `theta<1`, with norm `asymp N^{-alpha_s(theta)}` and `alpha_s(theta)>1`; for logarithmic output the exponent approaches `mu_0+1/2>1`. This validates the PF-271 post-propagation strategy at the raw seam level.
+PF-272 proves strict supercritical sublinear leakage for the naked finite seam. PF-273 shows that the square-root source factor replaces the positive lowest Green mass by an absolutely continuous measure reaching `t=0`, hence `mu=1`. PF-274 diagonalizes the fixed-axis scalar functional calculus in the symmetric continuous-Hahn representation.
 
-PF-273 writes the raw symbol `f_w(lambda)=sqrt(lambda)tanh(w sqrt(lambda))` as an atomic complete-Bernstein mixture with lowest mass `a_0^2>0`. For the source factor `g_w=sqrt(f_w)`, complete-Bernstein closure still holds, but Stieltjes inversion gives an absolutely continuous positive measure supported on alternating intervals beginning at `t=0`, with density `~ sqrt(w)/(pi sqrt(t))` at the lower edge. In Green coordinates the support therefore reaches `mu=sqrt(1+t)=1`, eliminating the discrete first-pole margin responsible for PF-272's strict exponent.
+PF-276 proves the Robin normalization is inverse-positive and leaves a strictly positive threshold moment. PF-277 upgrades this to a genuine Fourier statement: the normalized source transform is holomorphic on `|Im xi|<2` and nonzero at `xi=±i`; multiplication by the square-root seam symbol therefore creates a nonremovable mass-one branch germ.
 
-PF-274 identifies the underlying fixed-axis operator exactly. After the complete-axis unitary map and Fourier transform, the corridor Gegenbauer basis becomes the equal-parameter symmetric continuous-Hahn family, and the matrix of `L` is `I+4 H_*^2`. Hence every bounded `H(L)`, including massive resolvents and `g_w(L)`, has an exact continuous-Hahn spectral integral for its corridor matrix coefficients. This reframes the live low-mass boundary as a specific asymptotic transform problem without claiming that diagonalization itself supplies the needed decay.
+PF-278 transfers that branch through the exact corridor basis. For every fixed output row,
 
-## Program consequence
+`||P_i B_w E_N|| asymp N^(-1) (log N)^(-3/2)`,
 
-Estimate the full normalized source/conversion, not `Q_w^(1/2)` or the naked seam in isolation. Use the continuous-Hahn representation to determine whether `(I+XX*)^-1`, Robin reflections, or the exact composed source geometry suppresses the `mu=1` continuum enough to restore a strict high-to-low exponent in the PF-271 window. Only after that fixed-axis gate is settled should shear/corridor uniformity be charged.
+with an explicit nonzero constant. Hence `N^q ||P_iB_wE_N|| -> infinity` for every `q>1`. Any polynomial, logarithmic, or fixed low-output window containing that row fails the supercritical PF-271 bound.
 
-Whenever a future route uses a nonlinear operator function, compute how its spectral/Green measure transforms and then evaluate the resulting matrix coefficients in the representation actually consumed by the endpoint map.
+## Synthesis of evidence
 
-## Counterevidence / boundary
+The earlier open question—whether noncommuting Robin normalization might suppress the mass-one continuum strongly enough to restore a fixed power—has been resolved negatively. The logarithmic factor is real but does not create a polynomial margin. The fixed-axis functional-calculus problem is therefore no longer a place to search for the missing exponent.
 
-PF-273--PF-274 do not prove that the full normalized conversion fails or satisfies the required leakage bound. Exact continuous-Hahn diagonalization controls the scalar functional calculus of `L`, but the complete source composition may contain additional noncommuting factors. The results are fixed-axis and do not settle parameter uniformity, shear, density corrections, or the full corridor.
+This also clarifies what a future modification must change. It must alter the source/propagation architecture before the mass-one branch reaches the destination, or replace the decision statistic with one for which critical leakage is sufficient. Merely refining the same continuous-Hahn asymptotic cannot cross the `q>1` gate.
 
-PF-272 remains a genuine positive result for the naked relative seam; the new boundary is specifically the invalid inheritance of its mass gap through the square root.
+## Counterevidence / boundary cases
+
+PF-278 is fixed-axis and fixed-row. It does not classify every sheared or variable-corridor architecture, nor does it rule out cancellations created by a materially different coupled source. It closes the accepted fixed-axis Robin-homotopy route because that route already demands the failed fixed-row estimate.
+
+The naked seam result PF-272 remains valid; what fails is inheritance of its mass gap through the physical square-root normalization.
 
 ## Epistemic status
 
-**Exact functional-calculus boundary with an exact spectral representation: the raw finite seam has supercritical sublinear leakage because of a positive lowest Green mass, its square-root source factor replaces that ladder by a continuum reaching zero mass, and the resulting fixed-axis matrix coefficients are explicitly continuous-Hahn transforms; the physical leakage theorem remains open for the full normalized conversion.**
+**Exact route closure:** the physical fixed-axis Robin-normalized source has a nonzero mass-one branch and sharp leakage `N^-1(log N)^-3/2`, so the supercritical fixed-row gate fails for every `q>1`.
+
+## Novelty/prior-art status
+
+No broad novelty claim is made beyond the persisted PF-273--PF-278 audits. This note records the completed internal implication.
 
 ## Falsification criterion
 
-Show that the complete-Bernstein measure of `sqrt(f_w)` retains a positive lower mass gap contrary to PF-273, invalidate the continuous-Hahn representation in PF-274, or prove that the PF-272 exponent transfers to the complete normalized source without any mechanism that suppresses the newly exposed `t downarrow 0` continuum.
+Invalidate the nonzero threshold value or branch-to-coefficient transfer in PF-277--PF-278, or exhibit within the same fixed-axis normalized operator a cancellation that changes the fixed-row asymptotic while preserving its hypotheses. Either would reopen the route.

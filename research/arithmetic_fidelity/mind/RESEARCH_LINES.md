@@ -20,12 +20,20 @@ AF-221--AF-233 show that localization has a real information bill and that contr
 
 AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. Fixed damping buys a wider zero-free strip only by weakening the discriminator, while moving damping does not repair an unconditional nonvanishing source prefix. The live bridge must therefore assemble the required cancellation orbit before the root-rate quotient is formed.
 
-## Prove source-specific avoidance of the zero-coordinate resonance set at the radial margin
+## Prove source-specific avoidance of zero-coordinate resonance at the radial margin
 
 **Linked intuition:** `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`.
 
-AF-244--AF-253 identify exponential approach to the zero set of a finite trigonometric mode as the intrinsic sparse root-rate currency and classify homogeneous/torsion-affine constraints by the decay of the restricted fiber norm. AF-254 sharpens the warning: exponential fiber collapse can be Baire-generic while remaining Haar-null and Hausdorff-thin, so topology, genericity, or random-phase sampling cannot certify the actual zeta source orbit.
+AF-244--AF-256 identify exponential approach to the zero set of a finite trigonometric mode as the intrinsic sparse root-rate currency and pull the required scale back to explicit zero-coordinate resonance curves. Ambient genericity, Haar-small exceptional sets, or Hausdorff codimension do not settle whether the actual zeta orbit avoids those curves at the zero-dependent radial margin.
 
-AF-255--AF-256 then pull the cancellation scale back to the zero coordinates themselves. For an off-critical zero `rho=beta+i gamma`, the radial margin is of order `(beta-1/2)/gamma^2`, while the angular mode is of order `1/gamma`; destructive cancellation lies on explicit resonance curves in `(beta,gamma)`. Root-rate survival therefore asks whether the actual zero-coordinate orbit avoids those resonances at an exponentially fine scale comparable to its radial margin, not merely whether the ambient torus exceptional set is small.
+The multi-mode theorem remains source-specific: identify the actual Li/zeta phase constraints and prove a lower bound on the restricted fiber norm at the radial margin as the mode family grows.
 
-The live theorem is source-specific and quantitative: identify the actual Li/zeta phase constraints and prove uniform resonance avoidance, or an equivalent lower bound on the restricted fiber norm, at the zero-dependent radial margin as the mode family grows. A proof based only on Haar measure, Baire category, or ambient Hausdorff codimension is not enough.
+## Use output-coverage constraints to replace ambient Liouville avoidance by profinite leakage control
+
+**Linked intuition:** `MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage`.
+
+AF-257 gives the exact two-mode worst-case exponent over arbitrary unbounded samplers: half-integer cancellation is governed by parity-filtered continued-fraction jumps with even convergent denominators. AF-258 shows that periodically complete samplers have a different exact obstruction, the profinite exponent `K_pc`, obtained from the weakest congruence cylinder. One safe cylinder already forces full two-mode root-rate fidelity even when the ambient half-integer approximation exponent is infinite.
+
+AF-259 converts each congruence-cylinder exponent into an odd-multiplier continued-fraction law. Dangerous principal convergents can move between residue classes only through odd multipliers, and the same multiplier dilutes their exponential strength. At every fixed positive detectability margin this reduces the obstruction to finitely many multiplier classes.
+
+The live two-mode source theorem is therefore substantially weaker than global Diophantine regularity: for the actual Keiper phase, prove that the dangerous even-denominator convergents cannot remain exponentially strong in every profinite cylinder, or at least that `K_pc` stays below the radial margin. Any extension to several comparable modes must preserve this distinction between arbitrary sparse sampling and samplers constrained to retain finite-congruence coverage.

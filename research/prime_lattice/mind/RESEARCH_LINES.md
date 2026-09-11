@@ -1,19 +1,17 @@
 # Prime-lattice research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-side positivity of a finite Weil core without manufacturing the sign
+## Prove source-side sign through nonlocal prime-event coupling, not event-local spectral geometry
 
-**Linked intuitions:** `MI-011-addition-is-first-nonmultiplicative-escape-but-affine-traces-hit-analytic-boundaries`, `MI-015-reciprocity-family-coupling-is-not-principal-zero-selection`, `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
+**Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
-PL-259--PL-261 separate moment observability from finite-form detectability. First/second moments force a positive proportion of simple critical zeros, while Bombieri and the Connes--Consani Laurent core show that finite Weil forms can detect finite or even arbitrary RH failure existentially. The missing theorem is the source-side sign, not another completeness argument.
+PL-259--PL-261 establish an observability hierarchy: bulk moment information forces a positive critical-line proportion, exact finite inertia detects finite off-line defects, and the semilocal Laurent core finitely detects every RH failure. PL-262--PL-263 then show that fixed-window sign does not automatically survive the expanding limit and that adding a spectral shift can manufacture real spectrum without preserving the original Weil sign.
 
-PL-262 adds a transfer gate that becomes decisive when the Weil window grows: fixed-support Floquet/Fourier control does not automatically survive expanding support. Any lattice-to-Weil argument needs a uniform Fourier stability theorem at the same growing window consumed by the final form.
+PL-264 sharpens the source-side boundary. At every prime-power threshold in the finite Connes--van Suijlekom path, the first derivative shock is a negative rank-one multiple of one universal matrix direction, and all higher singular jets are universal apart from the inserted von Mangoldt scalar and edge location. Single-edge interlacing, Weyl-resolvent identities, or higher local jet geometry therefore cannot be the missing Riemann-specific sign selector: once the local source atom is supplied, those structures are template-universal.
 
-PL-263 supplies an adversarial sign control. In a finite Prime--Weil zero-side model, subtracting the least eigenvalue creates a positive metric and a Hermitian-definite pencil with real spectrum even when the inserted zero data contain off-line quartets. Thus real spectrum after a positivity-enforcing scalar shift is not RH-localizing evidence; the unshifted inertia/sign information is exactly what the shift can erase.
+The live theorem must couple **several** prime-power events or tie their accumulated path to the pole/archimedean completion with the original unshifted Weil orientation. Any finite-source transfer must also remain stable on the expanding Fourier cores required by PL-262. A local negative shock is useful source data, but its sign cannot be promoted to global Weil positivity without a nonlocal accumulation theorem.
 
-The live theorem must therefore preserve the unshifted Weil sign through a source-computable growing-window transfer. Either prove nonnegativity of the canonical finite forms directly from prime-power data, or derive a uniform transfer theorem that retains the RH-sensitive indefinite structure rather than imposing positivity before localization is established.
+## Treat finite detectability, local event sign, and global unshifted positivity as separate gates
 
-## Treat fixed-window stability and created positivity as matched controls
-
-A complete finite basis can still lack uniformity as its window expands, and a real generalized spectrum can be automatic after a ground-state shift. Future spectral proposals should certify both the growing-window transfer and preservation of the original decision statistic -- sign/inertia -- before treating spectral reality or positivity as evidence.
+Every RH failure is visible in a finite semilocal compression, and every prime edge has a canonical local negative shock. Neither fact supplies the missing global sign. Future finite-path proposals should state explicitly what cross-event or completion identity converts these local observations into positivity of the original, unshifted decision form rather than a shifted or conditionally positive proxy.

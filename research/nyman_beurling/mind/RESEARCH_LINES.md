@@ -8,16 +8,20 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the useful rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force a near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Use the weighted skeleton through its exact Möbius/Vasyunin dual oracle
+## Control the explicit Burnol-scale skeleton defect rather than treating the early-shell model as an oracle
 
 **Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-024--NB-034 isolate a weighted moving-tail quotient that preserves target distance, every head coefficient, and one weighted tail scalar while keeping conditioning polynomial in the retained dimension and independent of the discarded upper section. NB-035 shows that the retained tail scalar is not a free compressed coordinate: a bounded reciprocal-Möbius selector recovers it exactly, so the skeleton remains source-locked.
+NB-024--NB-036 build a weighted moving-tail quotient that preserves source coordinates and has polynomial conditioning independent of the discarded upper section. NB-037--NB-038 show that the true retained Gram and target-correlation corrections are forced at the Burnol scale `d_N^2`, with one explicit Möbius/Vasyunin direction already carrying a multiplicatively accurate copy of the original distance.
 
-NB-036 sharpens this into an exact dual description. Vasyunin's classical biorthogonal defects give explicit readouts for every retained skeleton coordinate; the head coordinates are the original coefficients and the endpoint coordinate is the weighted tail sum. Their norms scale only linearly with the retained index, yielding inverse-distance prefix locking. Thus the missing “target oracle” is no longer an unknown projection computation, but it is also not cheap independent information: it is explicitly Möbius-bearing.
+NB-039 makes the compression threshold itself sharp. The nuisance tail contains a dilated copy of a smaller canonical Nyman section, giving
 
-The live theorem is to exploit this exact duality without circularity. Either derive a target-relevant aggregate of the Vasyunin defects that can be controlled strictly cheaper than the corresponding Möbius data, or prove that the weighted skeleton cannot yield an RH-scale gain without paying essentially the same source bill. Enlarging the quotient or computing its Gram matrix more accurately is secondary unless it changes that oracle complexity.
+`(1-d_floor(N/M)^2)/M <= kappa_hat_(M,N)^2-d_N^2 <= 1/M`.
 
-## Treat finite-dimensional compression and source cost as separate gates
+For `N>=2M` the additive loss is therefore `asymp 1/M`, and multiplicative preservation holds exactly when `M d_N^2 -> infinity`. The familiar superlogarithmic cutoff is an unconditional sufficient condition and, under the expected `d_N^2 asymp 1/log N`, order-necessary for this quotient. At the same time, the explicit Burnol/source defect can already be seen under the weaker adaptive condition involving `d_floor(N/M)`.
 
-A quotient can be low-dimensional, target-faithful, and well-conditioned while its coordinates remain arithmetically expensive. The Vasyunin dual basis makes that distinction explicit. Future proposals should price the source theorem needed to populate the retained coordinates, not infer tractability from dimension or condition number alone.
+The live theorem is thus not to improve conditioning or pretend the `1/M` loss can be squeezed away inside this skeleton. It is to control the explicit Burnol-scale directional defect from source information genuinely cheaper than the Nyman distance itself, or to construct a materially different quotient whose target-loss floor changes for a mathematical reason rather than by reparameterization.
+
+## Treat representation compression, target-loss floor, and oracle cost as separate gates
+
+The weighted skeleton is a good representation: source-faithful and conditioned. Its target loss is nevertheless intrinsically `Theta(1/M)`, and the correction needed to recover the true geometry carries the original distance scale. Future compression claims should price all three quantities separately rather than infer source progress from low dimension or conditioning alone.

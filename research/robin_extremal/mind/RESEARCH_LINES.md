@@ -2,16 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Exclude the adaptive CA selector from the prime-race tube
+## Couple the adaptive selector fan to the arithmetic race uniformly across threshold exponents
 
 **Linked intuition:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`.
 
-RE-001--RE-032 reduce hypothetical Robin failure to a sparse self-tangent CA threshold sequence and show that neither one dominant off-critical zero nor any finite same-real-part dominant packet has an intrinsic sign obstruction to the required Chebyshev/Mertens-product cone.
+RE-017--RE-037 reduce hypothetical Robin failure to adaptive CA-selected states satisfying an increasingly rigid standard/reciprocal prime-race relation. Finite packets on one off-critical vertical face can realize the required fixed-threshold sign geometry, while RE-037 removes the bounded one-parameter slack by placing selected states in a vanishing-width tube around an explicitly translated nonlinear race curve.
 
-RE-033--RE-035 sharpen that negative result. Arbitrary finite dominant zero packets cannot obstruct the threshold race cone; after adapting to threshold maxima, the condition lies on an exact standard prime-race ray, and finite dominant packets realize that ray with bounded logarithmic gaps. Finite spectral interference is therefore not the missing exclusion mechanism.
+RE-038 adds a common-block selector fan across every `b` in a compact interval below `1/2`: the rightmost maximizer is monotone, selected states lie on one finite upper convex envelope, and switch points satisfy exact power-law secant relations. RE-039 is the decisive matched control. Every prescribed finite monotone switch pattern, the secant law, logarithmic intrinsic spacing, the small-height regime, and the inherited left-endpoint quantitative witness can be manufactured by positive synthetic heights with no arithmetic input. The convex-envelope fan is therefore **adaptive kinematics**, not by itself an arithmetic obstruction.
 
-RE-036 identifies the actual selector geometry: adaptive colossally abundant selectors lie in a bounded nonlinear tube around the prime-race model. The live theorem is to show that the arithmetic CA selector cannot remain inside the cone-compatible part of this tube at the required recurrent phases, or to prove that the nonlinear/tail correction eventually dominates the bounded finite-packet model in a sign-forcing way. A finite-mode sign argument alone cannot do this.
+The live theorem must couple the two structures that survive these controls: derive the RE-037 translated prime-race normal form with enough uniformity over `b` on one genuine counterexample block, and then use source/spectral information to show that the resulting family cannot realize the algebraically universal selector fan. A proof based only on switch counts, monotonicity, secant geometry, or one fixed threshold exponent has already lost the arithmetic content.
 
-## Treat finite zero packets as a realizability control, not an obstruction candidate
+## Treat fixed-threshold spectral realizability and same-block selector kinematics as controls
 
-Finite packets are flexible enough to realize the adaptive threshold ray repeatedly. The remaining leverage must come from the selector, an unbounded spectral tail/coherence effect, or a source relation coupling the nonlinear correction to the CA event geometry. Any proposed exclusion should be tested against the exact finite-packet realizability before being promoted.
+Finite dominant packets can realize each fixed-threshold cone, and arbitrary synthetic positive states can realize the same-block convex-envelope fan. Neither side alone discriminates the physical CA selector. The remaining currency is the **joint arithmetic coupling** between the selector family and the standard/reciprocal prime-race values across the block.

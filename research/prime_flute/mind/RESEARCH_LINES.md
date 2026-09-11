@@ -1,17 +1,27 @@
 # Prime-flute research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable prime-flute intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control the full normalized Robin source at the mass-one leakage edge
+## Stop using the fixed-axis Robin normalization as a supercritical low-output escape
 
-**Linked intuitions:** `MI-003-standard-global-selberg-machinery-is-structurally-incompatible`, `MI-004-coordinate-amplification-is-not-operator-amplification`, `MI-005-short-collar-multiplicity-reduces-to-one-local-splice`, `MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency`, `MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap`.
+**Linked intuition:** `MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap`.
 
-PF-269--PF-274 reduce the fixed-axis problem to an exact continuous-Hahn spectral representation. The naked finite seam has sublinear leakage room, but square-root functional calculus replaces its discrete first-pole gap by a positive continuum reaching zero mass, so the physical source must be estimated with that critical edge present.
+PF-271--PF-274 show why separated propagation initially looked promising: the naked finite seam has a positive Green mass gap and supercritical sublinear leakage, while the physical square-root source closes that gap to the critical mass-one continuum and admits exact continuous-Hahn diagonalization. PF-275--PF-277 then show that the fixed-axis normalized source reaches that threshold with a nonzero analytic branch germ rather than accidentally cancelling it.
 
-PF-275 adds a normalization-level obstruction. In the mass-one continuum regime, a supercritical raw-source fixed-row leakage cannot simply disappear under the normalized conversion: the continuum normalization preserves enough total mass that such leakage would remain visible. PF-276 closes the most direct Robin-normalization cancellation escape. The relevant fixed-axis normalization is inverse-positive, so it cannot annihilate the positive threshold moment by sign cancellation.
+PF-278 completes the transfer. The mass-one branch forces the fully Robin-normalized fixed-row shell leakage
 
-The live theorem is therefore sharply quantitative: evaluate the full normalized source `(I+XX*)^-1 X` in the continuous-Hahn representation at the `t downarrow 0` mass-one edge and prove the exact high-input to logarithmic/sublinear-low-output decay needed by the endpoint argument. Any surviving escape must come from genuine matrix/shear/corridor structure, not from scalar Robin normalization zeroing the fixed-axis threshold moment.
+`||P_i B_w E_N|| asymp N^(-1) (log N)^(-3/2)`.
 
-## Treat raw seam leakage, scalar diagonalization, and normalization cancellation as separate controls
+The logarithm is a genuine improvement over the bare critical envelope, but no fixed exponent `q>1` survives. The PF-271 supercritical low-output gate therefore fails already on one fixed row, before shear, corridor transport, or canonical-tail uniformity enter. The fixed-axis Robin-homotopy route is closed rather than merely unresolved.
 
-Sublinear propagation rescues the naked seam, exact diagonalization makes the critical continuum explicit, and inverse-positive Robin normalization rules out one sign-cancellation trick. None by itself proves the full source leakage bound. Future work should preserve the mass-one edge through the composed normalized operator and identify any cancellation before positive scalar reduction rather than assume it appears afterward.
+## Control reservoir extension mass before extrapolating local corridor attenuation to a complete cut
+
+**Linked intuition:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`.
+
+PF-228--PF-229 show that an isolated scalar seam and translation-invariant serial completion preserve the local corridor gain up to a fixed factor. PF-279 proves that positivity and scalarity do not extend this conclusion to variable reservoirs. The exact two-reservoir Schur formula contains not only the boundary impedances `beta_L,beta_R` but their spectral derivatives, equivalently the squared norms of endpoint-normalized harmonic extensions. A positive variable Jacobi family can make the isolated edge transmission `O(w/s)` while the complete half-chain cut stays bounded away from zero because the extension mass diverges.
+
+The live nested-cut theorem must therefore control the physical left/right extension Gram forms, or prove that the actual low/high projections suppress their amplification. Any continuation through shear or a variable flute should carry this invariant explicitly. Local edge attenuation, scalar positivity, and boundary impedance are controls, not substitutes for the complete-cut estimate.
+
+## Treat branch singularity and reservoir amplification as independent failure modes
+
+The fixed-axis source already fails the desired supercritical exponent through a nonremovable threshold branch. Separately, even a locally favorable scalar edge can lose its attenuation after embedding in variable reservoirs. A new Prime-Flute architecture must avoid both obstructions rather than repairing one and assuming the other remains harmless.
