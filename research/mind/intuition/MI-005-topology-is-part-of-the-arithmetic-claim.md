@@ -1,39 +1,15 @@
-# MI-005 — Topology, complexity budget, and acquisition category are part of the arithmetic claim
+# MI-005 — Finite degree bounds local depth, not the number of prime locations
 
-**Evidence level:** supported by exact category-sensitive findings across active Mathia lines
+**Evidence level:** supported; exact identification statements are relative to the declared source class and observation map.
 
-## Core intuition
+For a normalized local Euler factor `E(z)=product_(j<=r)(1-alpha_j z)^-1`, `r<=d`, the first `d` power sums `c_k=sum_j alpha_j^k` determine the factor by Newton identities. The bound is sharp: `(1-(Az)^d)^-1` and `(1-(Bz)^d)^-1` agree through `d-1` but differ at `d` when `A^d!=B^d`. Consequently a fixed degree bound requires only `d` coefficients per prime, but still data at every prime ([AF-274](../../arithmetic_fidelity/findings/AF-274-fixed-local-euler-degree-gives-sharp-finite-depth-fidelity.md)).
 
-Exact information can be present yet unusable because it is measured in the wrong topology, requires an unbounded complexity budget, or is acquired through a restricted observation category. Conversely, an apparent instability may disappear when the representation or sampling category is changed. The arithmetic claim therefore includes **what is measured, at what complexity, in which metric, and through which acquisition/target category**.
+Finite global analytic samples do not evade that breadth in the same category. With `M=sum_j(r_j+1)` finite real right-half-plane jet conditions and any cutoff `P_0`, [AF-276](../../arithmetic_fidelity/findings/AF-276-finite-right-half-plane-jets-leave-exact-far-prime-euler-fibers.md) selects `M+1` primes beyond `P_0` so that
 
-The newest evidence repeatedly separates raw information from the geometry in which the target consumes it.
+\[
+Z_a(s)=\zeta(s)\prod_\ell\frac{1-q_\ell^{-s}}{1-a_\ell q_\ell^{-s}}
+\]
 
-## Strongest justified principle
+has a nontrivial one-dimensional local fiber preserving every sampled jet. The modified local factors remain degree one. This is nonidentifiability with exact observations, not numerical conditioning and not a construction satisfying every completed-zeta axiom.
 
-Arithmetic Fidelity now splits local depth from global breadth. AF-272 ties finite-prefix recovery to the cancelled quotient complexity; AF-273 shows reflection-symmetric controls can hide arbitrarily long prefixes by paying unbounded local degree; AF-274 proves that fixed local Euler degree `d` collapses the necessary prime-power depth sharply to `d`, while global fidelity still requires information at infinitely many prime locations. Local depth and prime breadth are different resources.
-
-Xi Flow gives the acquisition counterpart. XF-185 extends holomorphic packet observability to growing known complexity: `m<=N` consecutive remote atoms are uniformly visible with `O(m)` complex Jacobi samples. Growing packet complexity therefore costs sample count rather than remote condition number in that category. The remaining difficulty is unknown support/nonlinearity, not fixed conditioning.
-
-Visual Exploration adds the statistical budget. VIS-166--VIS-168 show that held-out-prime collision moments and growing-support tails are dimension-driven, while increasing support can suppress the null simply by making its population mass unobservable. A representation change is useful only inside a sample regime where the matched control still has measurable mass.
-
-Nyman--Beurling and Prime Flute show why raw norm or smoothness can be misleading on the target side. NB-054 makes large-ratio raw quotient columns uniformly tiny without eliminating their possible normalized directional span. PF-292 shows that a fixed physical high-pass forces a diverging **local** frequency floor; any uniformly positive-Sobolev response family is therefore invisible to the local obstruction even though the global cutoff is fixed.
-
-Weil Positivity separates category change from target orientation. WP-256 shows that a semifinite free-prime category can canonically source `Lambda(n)/sqrt(n)` as a positive diagonal operator; WP-257 shows normalized Fock equilibrium selects a different temperature. Changing category solved coefficient sourcing but not normalized thermodynamic selection or the completed Weil pairing.
-
-## Consequence for synthesis
-
-A candidate theorem must state the source/target spaces, complexity budget, local depth versus global breadth, metric/normalization, sample geometry, regularity class, operator topology, and equilibrium category actually consumed downstream. A category change counts as progress only when the upstream cost is explicit and the new category supports a target statement unavailable in the old one.
-
-Do not infer target force from exact recoverability, small raw quotient norms, a large support dimension, a smooth response family, or a new thermodynamic realization without checking the precise topology and complexity in which the final theorem lives.
-
-## Counterevidence / boundary
-
-No single topology is universally correct. Xi Flow positively demonstrates that widening from positive-real to holomorphic acquisition removes a real barrier; WP-256 positively demonstrates that moving from normalized states to semifinite weights can recover a missing arithmetic carrier. The principle is not “never change category,” but “price the change and keep target orientation separate.”
-
-## Epistemic status
-
-**Supported cross-line category principle:** exact membership, local complexity, global breadth, stable recovery, sample mass, operator regularity, and equilibrium/target category are distinct resources whose compatibility must be proved.
-
-## Falsification criterion
-
-In one cited setting, show that the target theorem is invariant under a category/metric/complexity change that the current findings prove load-bearing, or invalidate one of the exact boundary results on which the separation rests.
+A contrasting quantifier occurs in [PF-292](../../prime_flute/findings/PF-292-fixed-physical-high-pass-forces-diverging-local-frequency-floor.md): restricting an increasingly dense set of frequencies from one fixed physical band to a fixed window produces a growing observation space whose orthogonal complement has a diverging Dirichlet frequency floor. A fixed bandwidth there is not a fixed finite test family. Comparing that annihilation result with AF's finite-jet obstruction while ignoring the growing number of tests would reverse the conclusion for the wrong reason.

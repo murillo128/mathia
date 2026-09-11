@@ -1,31 +1,15 @@
-# MI-001 — Preserve discriminating coupling through the exact target extraction
+# MI-001 — Locate the first lossy readout, not merely a faithful intermediate object
 
-**Evidence level:** supported by exact quotient, principal-factor, coordinate-calculus, mixed-prime-coupling, operator, cancellation, and calibration boundaries across the current Mathia corpus
+**Evidence level:** supported; the identities below hold in their stated models, not for arbitrary spectral constructions.
 
-## Core intuition
+For the weighted `N`-vertex path, [PF-089](../../prime_flute/findings/PF-089-low-energy-determinant-cancels-hierarchical-interscale-memory.md) gives the exact identity
 
-Across Mathia, failure repeatedly occurs when the operation that makes the target readable also factors, identifies or erases the relation needed to prove something about it. The decisive question is not whether rich arithmetic structure exists upstream, but whether its sign, provenance, dependence law or orientation survives **the exact residue, quotient, character factor, functional calculus, positive completion, normalization or observation map used by the theorem**.
+\[
+\operatorname{pdet}G=N\prod_{j=1}^{N-1}w_j.
+\]
 
-The latest evidence strengthens this from “preserve more structure” to “preserve the right coupling.” Local marginals, globally positive companions and even canonical nonlinear source operations can all be genuine while the target factor remains unconstrained.
+In the prime hierarchy `w_j=4 sqrt(d_j/d_(j+1))(1+o(1))`, the leading product telescopes to `4^(N-1) sqrt(d_1/d_N)`. Intermediate gaps disappear from that leading scalar, although individual low eigenvalues retain successive gap ratios and, in the resolved window of [PF-091](../../prime_flute/findings/PF-091-graded-multiscale-burger-window-resolves-an-upstream-memory-ladder.md), an upstream `w_j^2/w_(j-1)` correction. Multiplying the eigenvalues is the destructive step; further manipulation of that same scalar cannot reconstruct its eliminated dependence. This does not exclude information in other spectral readouts or uncontrolled higher-order surface corrections.
 
-## Strongest current principle
+Prime Circle gives a different placement of the loss. At fixed `N` and `(N,q)=1`, `z -> (z^q,z^N)` on `mu_(Nq)` is bijective, and the joint multiplication algebra retains the full finite coordinate data. Nevertheless the coupled chord `|z^q-z^N|^2` has exactly the regular-polygon spectrum `4 sin^2(pi k/(Nq))`; its spectrum cannot distinguish prime from coprime composite `q` ([PC-238](../../prime_circle/findings/PC-238-joint-coarse-fresh-quotient-calculus-is-a-commutative-crt-cylinder.md)). Calling the intermediate CRT representation faithful therefore does not certify the final spectral statistic.
 
-Prime Circle gives a fixed-conductor algebraic closure. PC-238 keeps the canonical coarse and fresh quotient coordinates jointly, but exact CRT turns them into a commutative finite-cycle/bilateral-shift cylinder. PC-239 then restores the original refined coordinate with its growing Bezout winding; packet-local mass escapes ballistically, yet exact recentering returns every fixed moving channel to the same CRT algebra. More coordinate information is present, but no new arithmetic carrier survives the limiting calculus.
-
-Prime Lattice gives the principal-factor version. PL-251 extends the earlier Artin block obstruction beyond finite abelian linear retention: the canonical invariant projector splits the trivial isotypic component after standard finite-dimensional representation functors, and ordinary Artin `L`-readout factors the corresponding zeta power. PL-252 shows that even a canonical global positive Rankin--Selberg self-correlation with nonnegative coefficients and a functional equation can inherit every possible Riemann zero as a direct `zeta(s)` factor without localizing it.
-
-Weil Positivity gives the dependence-law version. WP-234 identifies the critical Bost--Connes and Gamma/log kernels as independent-versus-common Cauchy couplings. They agree exactly on every prime ray and are both positive definite, while an entire continuum of other couplings shares those same marginals. The missing source datum is therefore the mixed-prime dependence law itself, not another local half-density match.
-
-## Consequence for synthesis
-
-For every proposed bridge, write the source relation, the exact target-extraction operation, the coupling/factorization class that survives it, and the independent theorem expected to act afterward. If the relation becomes a free factor, commutative coordinate shadow, arbitrary coupling or programmed support choice, move the interaction earlier or change the final carrier.
-
-A source-rich global object is useful only when the target theorem cannot factor away the very relation supposed to constrain it.
-
-## Status / novelty
-
-The component mathematics is classical or persisted exact work. The synthesis is a program-level discipline: **source richness matters only when the target-facing map retains a source-forced coupling in a quantitatively usable, nonfactorizing form**.
-
-## Falsification criterion
-
-Produce a covered pipeline where the target theorem uniformly constrains an otherwise free principal factor/coupling after the decisive relation has provably disappeared, without hidden reintroduction of source information; or show that one of the cited CRT, Artin, Rankin--Selberg or Cauchy-coupling closures actually retains the missing target constraint. A successful new bridge should narrow this intuition by exhibiting the explicit surviving coupling.
+The reusable comparison is between two specified maps: resolved spectrum to product, and marked coordinate algebra to one unmarked spectrum. Before transferring a fidelity claim between constructions, identify which of those readouts the proposed arithmetic quantity actually uses. No equivalence between the two geometries is asserted.

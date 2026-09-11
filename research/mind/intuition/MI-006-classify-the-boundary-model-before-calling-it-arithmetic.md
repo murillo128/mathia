@@ -1,27 +1,22 @@
-# MI-006 — Classify the complete boundary model before crediting a category exit
+# MI-006 — Singular fresh-fiber normalization yields at most two boundary phases
 
-**Evidence level:** supported by independent exact boundary classifications across current packet, multi-horizon, calibration, whitening, and source-selection constructions
+**Evidence level:** supported; the endpoint statement is for the specified symmetric regularization and fixed packet sectors.
 
-## Core intuition
+For `0<sigma<1`, set `g_sigma(j)=sin(pi sigma)/(pi(j+sigma))` in `ell^2(Z)` and let `S` be the bilateral shift. [PC-237](../../prime_circle/findings/PC-237-singular-fresh-fiber-weighting-collapses-to-two-sided-boundary-phase-data.md) proves that every `g_sigma` has exactly Haar spectral measure for `S`. Hence
 
-Many candidate advances arise by enlarging a failed category: add more modes, more horizons, a noncommuting transform, a singular profile, a bigger observation window, or a canonical global object. The enlargement is meaningful only after its limiting, domain, overlap, calibration, contraction and final-readout behavior are included. Otherwise the apparent new degree of freedom may be a classical control in disguise.
+\[
+g_\sigma\in\operatorname{Dom}V(S)\iff V\in L^2(\mathbb T),
+\qquad
+|1-S|^{-\alpha}g_\sigma\in\ell^2\iff\alpha<1/2.
+\]
 
-## Strongest justified principle
+For `V_(alpha,epsilon)(e^(i theta))=(4 sin^2(theta/2)+epsilon^2)^(-alpha/2)` and normalized weighted packets `h_(sigma,epsilon)`, every `alpha>=1/2` has
 
-Prime Circle now closes both sides of the obvious one-coordinate boundary. PC-236 permits `O(q)` exact cyclic support, yet every bounded equicontinuous fresh-fiber profile accumulates inside the same commutative `C*(S)` packet algebra. PC-237 then allows the natural singular inverse-chord direction: below `alpha=1/2` it is ordinary `L^2` functional calculus, while at/above threshold canonical normalized regularization collapses to a rank-two boundary-phase kernel. Roughness alone is not a new carrier.
+\[
+\lim_{\varepsilon\downarrow0}\langle h_{\sigma,\varepsilon},h_{\tau,\varepsilon}\rangle
+=\cos\bigl(\pi(\tau-\sigma)\bigr).
+\]
 
-Farey Discrepancy shows that simply increasing the number of horizons can make the model weaker: FD-016--FD-017 allow joint near/full saturation once horizons are sufficiently sparse, so overlap geometry is part of the observation class. Visual Exploration similarly shows that a growing hard window breaks the literal logarithmic-size finite-CUE circle model; the bounded-taper replacement still needs effective-size calibration at the same `1/L_T` scale as the desired residual.
+This kernel has rank at most two. At fixed finite sector count, increasing the singular power does not create an expanding spectral carrier; the normalized limit retains only the two one-sided boundary phases. This does not classify growing-sector, noncommuting or differently regularized constructions.
 
-Weil Positivity adds a noncommutative control. WP-232's canonical source whitener genuinely leaves the energy-diagonal category but only exposes a universal indefinite Jacobi normal form; positivity appears only after an unforced range choice. Prime Lattice adds a global one: retaining a complete abelian class-field cover still splits characterwise under every canonical linear equivariant readout.
-
-## Consequence for synthesis
-
-State the enlarged carrier together with its strongest matched family, source conditioning, asymptotic regime, domain, calibration uncertainty, contraction/scalarization and assembly rule. Credit only the residual that survives that complete model. If a control closes the route, use the resulting boundary to formulate the next smaller theorem surface.
-
-## Status / novelty
-
-This is cross-line synthesis of persisted exact/classical boundaries, not a theorem that every enlargement classicalizes.
-
-## Falsification criterion
-
-Exhibit one of the cited exits whose complete admitted boundary model still retains a source-specific target effect contrary to the stated closure, or a source-derived new category whose extra freedom survives all natural controls and final readout. Such a result should replace the corresponding control rather than be forced into this synthesis.
+The corresponding calculation must be redone, not transferred by analogy, for a different singularity. In the flute's normalized Robin source, [PF-278](../../prime_flute/findings/PF-278-mass-one-branch-forces-critical-normalized-fixed-row-leakage.md) instead retains a nonremovable square-root branch and produces fixed-row leakage `N^-1(log N)^-3/2`. That is an infinite-tail obstruction to a supercritical estimate, not a rank-two collapse. Both are concrete limits of a normalization, but their output categories and consequences differ.

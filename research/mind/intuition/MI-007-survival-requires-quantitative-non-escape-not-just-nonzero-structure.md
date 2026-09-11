@@ -1,33 +1,21 @@
-# MI-007 — Quantitative non-escape must target the sharp residual capacity, not another average law
+# MI-007 — Weak disappearance can be packet drift; uniform Sobolev control rules out a different escape
 
-**Evidence level:** supported
+**Evidence level:** supported; the two mechanisms below are distinguished, not asserted equivalent.
 
-## Core intuition
+For fixed `N` and `q` in the invertible residue class `r`, choose `1<=a<N` with `ar=1 mod N` and put `k_q=(aq-1)/N`. The original refined coordinate is exactly
 
-Several mature Mathia lines now have the correct exponent, average density, local regularity, or finite observability and still leave a sharply localized route through which the target can escape. The next theorem must control the **capacity of that residual configuration in the exact statistic consumed downstream**, and current findings increasingly identify sharp thresholds beyond which the same information class cannot be pushed.
+\[
+Z_q=R_1\otimes S_q^{-k_q},\qquad k_q/q\to a/N.
+\]
 
-## Strongest justified principle
+A fixed degree not divisible by `N` therefore moves a localized packet by order `q` and is weakly invisible in the old packet window. Its norm has not been lost. But following the moving window gives `V_q^(d k_q+h) Z_q^d=U_q^(ad)V_q^h`, back in the already-classified CRT quotient algebra; retaining all `N` residue windows yields an ordinary bilateral-shift model, not a new coordinate ([PC-239](../../prime_circle/findings/PC-239-original-coordinate-bezout-winding-is-ballistic-and-collapses-to-shift-calculus.md)).
 
-Analytic Frontier now has a complexity threshold, not merely a fixed-regularity warning. ANF-180--ANF-182 show that fixed finite local tomography and every derivative hierarchy with `r_X a_X/K->0` can be flattened by matched endpoint packets, while `K/a_X` is the sharp transition scale for that control architecture. A source theorem must cross an absolute memory/complexity boundary rather than add another subcritical local norm.
+For the flute's fixed physical high-pass spaces `V_n`, [PF-292](../../prime_flute/findings/PF-292-fixed-physical-high-pass-forces-diverging-local-frequency-floor.md) instead provides `R_n -> infinity`, `epsilon_n -> 0` with
 
-Farey Discrepancy separates signed and quadratic capacity. FD-052--FD-053 show that signed Jordan dilation rays can self-cancel through moving hosts near the square-root boundary. FD-054 shows that quadratic occupation nevertheless transfers to a nearby nonsquarefree row once `q |Hcal(X)|/X` is large. The residual escape is now below a zero-frontier-dependent row threshold, not throughout the whole low-row region.
+\[
+\|P_{V_n}g_n\|_2\le\varepsilon_n\|g_n\|_2+R_n^{-\sigma}\|K_D^\sigma g_n\|_2.
+\]
 
-Robin Extremal makes a different threshold sharp. RE-052 converts every exposed fan cell into proportional prime-gap capacity. RE-053 then constructs matched generalized-prime controls showing that support geometry + first-layer laws + a short-interval exponent `theta` cannot penetrate the chamber `Theta<=theta`. Near-critical progress requires new ordinary-prime source information, not a rearrangement of the same capacity estimate.
+Uniform positive-Sobolev control forces the high projection to vanish. [PF-296](../../prime_flute/findings/PF-296-weighted-source-row-moment-controls-canonical-fixed-axis-superpositions.md) supplies that control for the canonical source synthesis when `sum_i q_i|a_(n,i)|` is uniformly bounded and `q_i asymp kappa_i`. Persistent normalized mixed-response witnesses therefore require an unbounded weighted source moment along a subsequence or a residual map outside the controlled factorization; growing row count alone is insufficient.
 
-Weil Inertia calibrates the finite-radius tariff. WI-246 shows that jointly optimizing all positive digamma resolvents gives a strictly larger finite-aperture reserve but cannot improve the leading `a^-2` coefficient. Stronger leading coercivity must come from the signed arithmetic source or another invariant, not mean-side reoptimization.
-
-## Program consequence
-
-Once an exponent/average/local law is proved, identify the **sharp surviving capacity threshold** and ask what extra source information can cross it. The relevant questions are now concrete: source placement versus the `K/a_X` endpoint scale, low-row occupation below the additive-transfer threshold, actual-prime structure beyond the short-interval exponent barrier, or signed arithmetic inability to pay the optimal finite-radius tariff.
-
-## Counterevidence / boundary cases
-
-Sparse or near-threshold configurations can still determine an extremal theorem; small density is never negligible by itself. A sharp matched-control boundary also does not prove the source sits on the safe side. It only states what information must be added.
-
-## Epistemic status
-
-**Supported sharp-residual-capacity principle:** several routes have exhausted their generic regularity/average machinery and now face explicit complexity, row-scale, prime-gap, or finite-radius thresholds that require qualitatively new source information.
-
-## Falsification criterion
-
-Show that a cited route can be completed by strengthening the same subcritical information class beyond the persisted sharp control, or invalidate one of the exact threshold results above.
+In the first construction the specified recentering locates the escaped mass and classicalizes it. In the second, the norm inequality excludes escape for an explicitly bounded family. A weak limit alone supplies neither conclusion. The flute estimate has no rate for `R_n` and does not establish the missing factorization of the complete physical response.

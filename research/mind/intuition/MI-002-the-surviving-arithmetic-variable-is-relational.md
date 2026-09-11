@@ -1,33 +1,16 @@
-# MI-002 — Arithmetic information survives only when the source relation survives the target-bearing quotient
+# MI-002 — A compatibility equation can reduce independent phase freedom to one symmetry
 
-**Evidence level:** supported by exact gauge, projection, cocycle, order, and thermodynamic controls
+**Evidence level:** supported; the recovery model is classical and its transfer to another source requires an explicit identification.
 
-## Core intuition
+For a signal on a finite abelian group with every Fourier coefficient nonzero, retain `P_f(chi)=|fhat(chi)|^2` and
 
-“Relational,” “noncommutative,” “higher-dimensional,” or “spectral” is not itself an escape criterion. A source relation can become gauge, decompose into repeated blocks, be reconstructed without preserving order, or survive in a dynamical system whose equilibrium category is unchanged. The useful relation must remain nontrivial in the **same final object that carries the target sign, coercivity, or divisor**.
+\[
+B_f(\chi,\psi)=\widehat f(\chi)\widehat f(\psi)
+\overline{\widehat f(\chi\psi)}.
+\]
 
-## Strongest justified principle
+If two signals have the same `P` and `B`, their Fourier ratio `r=ghat/fhat` satisfies `|r(chi)|=1` and `r(chi psi)=r(chi)r(psi)`. Thus `r` is one character, i.e. the two signals differ only by translation. Magnitudes alone leave many nontranslation phase assignments. The operative datum is the multiplication compatibility equation, not an injunction to retain more information ([AF-004](../../arithmetic_fidelity/findings/AF-004-third-order-coupling-repairs-quadratic-phase-loss.md)). Nonvanishing is essential to this argument; it supplies no uniform inverse bound near zero coefficients.
 
-Möbius Cancellation gives the sharpest gauge example. MC-215--MC-216 show that the selected residues `-q mod d^2` are one coherent inverse-limit point; a single compatible unit translation removes all explicit selected-character phases, even across moduli and CRT reductions. What remains source-sensitive is the integer lift and the deterministic cancellation between source degrees, not the gauge phase.
+In the prime-ray Gram problem the missing relation is different. For logarithmic valuation differences `Delta_p`, independent Cauchy coordinates give `exp(-sum_p|Delta_p|/2)`, whereas one common Cauchy coordinate gives `exp(-|sum_p Delta_p|/2)`. Both have the same one-coordinate laws. Independence is an all-coordinate factorization identity, not a consequence of those marginal laws or of positivity ([WP-234](../../weil_positivity/findings/WP-234-gamma-and-bost-connes-critical-grams-are-common-versus-independent-cauchy-couplings.md)).
 
-Prime Circle gives a geometric scalarization control. The complete shared-upper defect is a fixed-width torus-return cocycle; PC-259 shows common integer refinement is exact direct-sum repetition, and PC-260 imposes reversal parity. Raw growth and duplicated forward/backward information disappear before any long-range arithmetic statistic is formed.
-
-Prime Lattice separates relation recovery from order. PL-271 recovers the source from the whole Galerkin tower, but PL-272--PL-273 prove the source-to-form map is not positive: every active interior atom is eventually indefinite. Exact projective identity does not transport the target sign.
-
-Weil Positivity supplies the category counterpart. WP-252--WP-254 show that nonunital stabilization, arbitrary spatial compact clocks, and bounded non-product module-cocycle interactions all remain equivariantly Morita/exterior equivalent to the same gauge system and inherit its empty nonzero-temperature KMS-weight cone. Visual dynamical richness is not a new arithmetic relation when the equilibrium category is unchanged.
-
-## Consequence for synthesis
-
-For every bridge, identify the earliest source relation, each quotient/gauge/projection/category change, and the exact target-bearing object. Then ask whether the relation remains nontrivial there and whether it constrains the required sign/coercivity. If it disappears, becomes a duplicated control, or is merely reconstructible without order, the bridge has not transferred arithmetic force.
-
-## Counterevidence / boundary
-
-The controls are category-specific. Integer-lift observables in Möbius, primitive parity-sector cocycles in Prime Circle, collective completed source laws in Prime Lattice, and non-Morita-equivalent source-dependent thermodynamic systems in Weil Positivity remain legitimate escapes because they preserve or introduce relations outside the closed quotients.
-
-## Epistemic status
-
-**Supported cross-line relation-survival principle:** source identity is not enough; the relation must remain target-relevant after the full composed map.
-
-## Falsification criterion
-
-Produce a valid target theorem in one of the cited closed categories whose decisive source relation is absent from the target-bearing object and is not reintroduced by extra data, or invalidate one of the exact gauge/direct-sum/order/Morita classifications above.
+The concrete question transferable between these models is which source identity couples the retained coordinates and removes their residual freedom. The bispectral character equation answers it in AF-004; it has not been identified with an arithmetic factorization law in the Weil problem. In particular, AF-004 is not evidence that three-prime tests suffice: [MI-009](MI-009-local-correctness-does-not-determine-global-coherence.md) contains explicit obstructions to every fixed marginal order.

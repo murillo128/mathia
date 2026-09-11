@@ -1,41 +1,24 @@
-# MI-009 — Global coherence must change the target category, not merely recover or aggregate the source
+# MI-009 — A product of centered coordinate functions hides from every proper marginal
 
-**Evidence level:** supported
+**Evidence level:** supported; this is an explicit shared construction in the Boolean and prime-Cauchy models, not a statement about every restricted arithmetic source.
 
-## Core intuition
+On `{-1,+1}^r`, all marginals of order at most `d` retain exactly the Walsh moments of degree at most `d`. Their missing linear space is `span{chi_S:|S|>d}`. The positive laws `2^-r(1 +/- theta chi_S)` with `0<theta<=1` collide under those marginals whenever `|S|>d` ([AF-032](../../arithmetic_fidelity/findings/AF-032-k-way-marginals-retain-exactly-low-degree-walsh-interactions.md)). This identifies the unobserved sector, not just an example of ambiguous data.
 
-Finite views can alias the source while compatible families recover it; local windows can be classical while a long product remains open; and richer dynamical categories can recover coefficients while still missing the target sign. The newest evidence strengthens the warning: **perfect source recovery, finite positive aggregation, compact completion, and even canonical coefficient sourcing can all fail to determine the global target orientation**.
+The same centered-product mechanism occurs in the prime Gram problem. For a finite set `P` of `r=d+1` primes, let `mu` be Cauchy of scale `1/2`, set `h_p(x)=cos((log p)x)-p^-1/2`, and take
 
-The global law that matters is therefore a relation whose breadth/depth/category scales with the final sign or coercivity obligation, not coherence for its own sake.
+\[
+d\pi_\varepsilon=\left(1+\varepsilon\prod_{p\in P}h_p\right)\,d\mu^{\otimes P},
+\quad
+0<|\varepsilon|\le\prod_{p\in P}(1+p^{-1/2})^{-1}.
+\]
 
-## Strongest justified claim
+Each `h_p` has zero mean, so integrating out any one coordinate removes the perturbation. The induced characteristic kernel stays normalized and positive and agrees with the Bost-Connes kernel on every valuation difference supported on at most `d` primes. Nevertheless, at `N_P=product_(p in P)p`,
 
-Prime Lattice is the clearest order counterexample. The full band/cutoff family identifies the log-source exactly and its cutoff motion is explicit. PL-275 shows every nonzero finite positive interior source aggregate is eventually indefinite; PL-276 shows the sign oscillation survives every fixed compact correction. The missing Weil sign must use an essentially noncompact completed/global channel or a genuinely signed source relation.
+\[
+K_\varepsilon(N_P,1)-G_{\rm BC}(N_P,1)
+=\varepsilon\,2^{-r}\prod_{p\in P}(1-p^{-1})\ne0.
+\]
 
-Prime Circle supplies the long-depth analogue. PC-262--PC-263 classicalize the complete nonresonant bulk singular law and positive log-volume, while PC-261 shows resonant approach can remain path-dependent even at identical limiting ratios. A global cocycle statistic is meaningful only after matching both local torus law and resonance itinerary.
+This extends consistently with independent coordinates on the other primes ([WP-236](../../weil_positivity/findings/WP-236-bounded-order-prime-marginals-do-not-determine-critical-cauchy-coupling.md)). Thus adding any fixed number of prime-marginal orders cannot identify the joint kernel in that ambient positive class.
 
-Weil Positivity gives a constructive category example. WP-256 canonically sources the exact finite Mangoldt half-density in a semifinite free-prime system, yet it is only diagonal positivity; WP-257 separates the `beta=1` one-particle boundary from normalized Fock equilibrium. Source-forced coefficients still need a source-forced global correspondence that produces the completed Weil orientation.
-
-Möbius Cancellation shows how breadth must grow with the source decomposition. MC-219--MC-221 rule out every fixed Hamming-degree truncation and reduce the target to moving-degree parity balance across a huge unsigned population. Local/fixed-degree correctness cannot substitute for a source relation spanning the degree window where the mass actually lives.
-
-## Program consequence
-
-Whenever a candidate uses one band, cutoff, fixed degree, local window, or coefficient carrier, identify the compatible family actually consumed by the target and then ask whether the family imposes the target sign/coercivity or merely reconstructs source identity.
-
-Projective recovery and coefficient generation are infrastructure. The decisive theorem is the source-specific relation **among** recovered pieces—or the noncompact/global correspondence—that the target cannot ignore.
-
-## Counterevidence / boundary cases
-
-Not every theorem needs an infinite hierarchy; a finite closure can suffice when it is proved directly in the exact target category. Nor do PL-276 or WP-257 rule out the completed archimedean/noncompact mechanisms they isolate as remaining possibilities.
-
-## Epistemic status
-
-**Supported global-coherence principle strengthened by finite-aggregate, compact-completion, resonance, and coefficient-carrier counterexamples:** recovering or generating the source does not determine target orientation.
-
-## Novelty/prior-art status
-
-This note synthesizes persisted Mathia findings and their recorded prior-art boundaries. It makes no independent novelty claim.
-
-## Falsification criterion
-
-Show in one cited setting that the target-relevant global law is already forced by the bounded/local information that the current findings separate from it, or invalidate one of the exact recovery/order/category boundaries above.
+The exact correspondence is `chi_S` versus `product h_p`: both vanish under every projection omitting one participating coordinate. To obtain lower-order identification in a smaller source class, one must exclude these collision directions by a source identity, not by positivity alone. Full independence does exclude them; whether the desired arithmetic pairing satisfies an appropriate source-forced identity is a separate question.
