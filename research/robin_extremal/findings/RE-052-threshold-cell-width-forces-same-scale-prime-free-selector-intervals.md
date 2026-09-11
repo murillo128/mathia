@@ -1,6 +1,8 @@
 # RE-052 — threshold-cell width forces same-scale prime-free selector intervals
 
-**Status:** `EXACT-DERIVED + QUANTITATIVE-RH-FAILURE + PRIME-EVENT-COUPLING + PRIME-FREE-SELECTOR-CAPACITY + CELL-WIDTH/GAP-TRADEOFF + FULL-OFF-CRITICAL-CHAMBER + COUNTEREXAMPLE-NARROWING + PRIOR-ART-BOUNDED`. `RE-051` uses an unconditional prime-in-short-interval theorem to show that, when the hypothetical rightmost zero frontier lies beyond the available short-interval exponent, every exposed adaptive threshold cell must be small. The argument can be factored one level earlier, before inserting any external prime-gap bound. The exact first-layer staggering and the adaptive selector speed imply a source-specific local law: **a wide threshold cell itself creates a long ordinary-prime-free interval at the same physical scale.**
+**Status:** `EXACT-DERIVED + QUANTITATIVE-RH-FAILURE + PRIME-EVENT-COUPLING + PROPORTIONAL-PRIME-FREE-SELECTOR-CAPACITY + AGGREGATE-GAP-BUDGET + CELL-WIDTH/GAP-TRADEOFF + FULL-OFF-CRITICAL-CHAMBER + COUNTEREXAMPLE-NARROWING + PRIOR-ART-BOUNDED`. `RE-051` uses an unconditional prime-in-short-interval theorem to show that, when the hypothetical rightmost zero frontier lies beyond the available short-interval exponent, every exposed adaptive threshold cell must be small. The argument can be factored one level earlier, before inserting any external prime-gap bound. The exact first-layer staggering and the adaptive selector speed imply a source-specific local law: **every positive-width threshold cell creates a proportionally long ordinary-prime-free interval at the same physical scale.**
+
+The proportional form strengthens the earlier additive version of this finding. The genuine CA support chamber is prime-free except possibly in its final half-unit. Since that exceptional piece has length less than one, the entire selector image contains at most one ordinary prime. Removing one point can split an interval into at most two prime-free components, so one component retains at least half of the selector length. The previous additive loss `P_C+1/2 >= |S_C|` is therefore unnecessary for the existence of one long prime-free interval.
 
 Assume RH is false and write
 
@@ -52,7 +54,7 @@ S_C:=Z_C(I_C^\circ).
 \tag{6}
 \]
 
-Let `xi_-(C)<xi_+(C)` be the adjacent genuine CA event coordinates supporting `C`. Then `S_C` is an interval contained in the open support chamber `(xi_-,xi_+)`, and uniformly over every exposed positive-width cell,
+Let `\xi_-(C)<\xi_+(C)` be the adjacent genuine CA event coordinates supporting `C`. Then `S_C` is an interval contained in the open support chamber `(\xi_-,\xi_+)`, and uniformly over every exposed positive-width cell,
 
 \[
 \boxed{
@@ -63,7 +65,7 @@ Let `xi_-(C)<xi_+(C)` be the adjacent genuine CA event coordinates supporting `C
 \tag{7}
 \]
 
-The same support chamber has a prime-free core. For every sufficiently late state,
+The same support chamber has the exact first-layer exclusion
 
 \[
 \boxed{
@@ -73,78 +75,70 @@ The same support chamber has a prime-free core. For every sufficiently late stat
 \tag{8}
 \]
 
-Consequently `S_C` contains an ordinary-prime-free subinterval of length `P_C` satisfying
+Consequently the whole selector image contains at most one ordinary prime:
 
 \[
 \boxed{
-P_C+\frac12
-\ge |S_C|
-\gg_J
-|I_C|\,Y^{1-b_1}\log Y.
+\#\bigl(S_C\cap\mathbb P\bigr)\le1.
 }
 \tag{9}
 \]
 
-Equations (7)--(9) are the local capacity law. They require no theorem about how small prime gaps actually are. They say instead that the false-RH adaptive fan must **pay for threshold width with genuine prime-free physical length**.
-
-A macroscopic threshold cell therefore has a strong arithmetic consequence. If along an escaping block sequence one has
+Let `P_C` denote the length of the longest connected ordinary-prime-free subinterval of `S_C`. Then
 
 \[
-|I_C|\ge\delta>0,
+\boxed{
+P_C
+\ge\frac12|S_C|
+\gg_J
+|I_C|\,Y^{1-b_1}\log Y.
+}
 \tag{10}
 \]
 
-then, since `b_1<1/2`,
+This is the sharpened local capacity law. It has **no additive half-unit loophole**, so it remains informative even when the false-RH fan fragments `J` into arbitrarily thin threshold cells.
+
+If `\mathcal E(\mathcal B,J)` is the exposed-state set of a late block and
 
 \[
-\boxed{
-P_C\gg_{J,\delta}Y^{1-b_1}\log Y,
-\qquad
-\frac{P_C}{\sqrt Y}\longrightarrow\infty.
-}
+X_{\mathcal B}:=
+\min_{C\in\mathcal E(\mathcal B,J)}Y_C,
 \tag{11}
 \]
 
-Because `RE-040` gives `Z_C(b)/Y->1` uniformly, this is a **same-scale** prime-free interval: it lies at ordinates `(1+o_J(1))Y`, not at some unrelated later scale. Hence it is contained in an ordinary consecutive-prime gap of at least the same length.
-
-This immediately turns the bounded-complexity escape left open by `RE-038`--`RE-041` into a prime-gap alternative valid throughout the entire false-RH chamber. If the number of exposed cells on `J` is bounded by one fixed `K` on infinitely many common blocks, then one cell on each such block has width at least `|J|/K`, and therefore there are infinitely many ordinary prime gaps at selected scales `x` satisfying
+then the selector images of distinct exposed states lie in distinct open CA support chambers and are pairwise disjoint. Choosing one interval of length `P_C` inside each image therefore gives pairwise disjoint prime-free intervals. Since the cells partition `J` up to endpoints and `Y^{1-b_1}\log Y` is increasing for large `Y`, (10) yields the aggregate blockwise burden
 
 \[
 \boxed{
-p_{n+1}-p_n
-\gg_J x^{1-b_1}\log x.
+\sum_{C\in\mathcal E(\mathcal B,J)}P_C
+\gg_J
+X_{\mathcal B}^{\,1-b_1}\log X_{\mathcal B}.
 }
 \tag{12}
 \]
 
-Given any `epsilon>0`, `J` may be chosen with
-
-\[
-1-\Theta<b_0<b_1<1-\Theta+\epsilon,
-\tag{13}
-\]
-
-so bounded fan complexity would force infinitely many gaps
+Equivalently, the whole fan satisfies the normalized prime-gap capacity budget
 
 \[
 \boxed{
-p_{n+1}-p_n
-\gg_{J,\epsilon}p_n^{\Theta-\epsilon}}
-\tag{14}
+|J|
+\ll_J
+\sum_{C\in\mathcal E(\mathcal B,J)}
+\frac{P_C}{Y_C^{\,1-b_1}\log Y_C}.
+}
+\tag{13}
 \]
 
-(up to the harmless stronger logarithmic factor before converting scales). Thus a bounded coherent false-RH fan can survive only by transferring the off-critical zero frontier almost directly into the ordinary prime-gap exponent.
+Thus fragmentation can replace one huge gap by many smaller selected gaps, but it cannot make the **total prime-free selector demand** disappear.
 
-This clarifies the near-critical chamber left open by `RE-051`. With the current unconditional short-interval exponent `0.52`, the case `Theta>0.52` cannot sustain bounded cells and `RE-051` gives the stronger polynomial cell-count theorem. When `1/2<Theta<=0.52`, the bounded-fan escape is no longer featureless: it requires source-selected prime gaps at exponents arbitrarily close below `Theta`, hence strictly beyond the square-root scale. Present unconditional technology does not exclude those gaps.
-
-## 1. The selector image expands at speed `a Y log Y`
+## 1. The selector image expands at speed `aY log Y`
 
 For a fixed exposed state `C`, the quantities `Y`, `h`, and `a` do not vary while `b` moves inside `I_C`. Differentiate the exact selector equation (5). Since
 
 \[
 g'(x)
 =-\frac{\log x+1}{x^2(\log x)^2},
-\tag{15}
+\tag{14}
 \]
 
 implicit differentiation gives
@@ -159,14 +153,14 @@ Z_C'(b)
 {Y(\log Z_C(b)+1)}
 >0.
 }
-\tag{16}
+\tag{15}
 \]
 
 `RE-040` proves uniformly on the whole compact fan that
 
 \[
 \frac{Z_C(b)}Y\longrightarrow1.
-\tag{17}
+\tag{16}
 \]
 
 Therefore
@@ -176,24 +170,24 @@ Therefore
 Z_C'(b)
 =(1+o_J(1))aY\log Y.
 }
-\tag{18}
+\tag{17}
 \]
 
 The quantitative false-RH inheritance on the common blocks gives one constant `c_0>0` such that every selected state satisfies
 
 \[
 A_b(C)=Y^b(e^h-1)\ge c_0.
-\tag{19}
+\tag{18}
 \]
 
-Put `R=e^h-1`. Since `b<=b_1`,
+Put `R=e^h-1`. Since `b\le b_1`,
 
 \[
 R\ge c_0Y^{-b_1}.
-\tag{20}
+\tag{19}
 \]
 
-The uniform small-height regime gives `R->0`, and
+The uniform small-height regime gives `R\to0`, and
 
 \[
 a=\frac R{1+R},
@@ -203,207 +197,196 @@ so eventually
 
 \[
 \boxed{a\gg_JY^{-b_1}.}
-\tag{21}
+\tag{20}
 \]
 
-Combining (18)--(21),
+Combining (17)--(20),
 
 \[
 Z_C'(b)
 \gg_J
 Y^{1-b_1}\log Y
-\tag{22}
+\tag{21}
 \]
 
-throughout the interior of the cell. Since `Z_C` is increasing, integrating over `I_C` proves (7):
+throughout the interior of the cell. Since `Z_C` is increasing,
 
 \[
 |S_C|
 =
 \int_{I_C^\circ}Z_C'(b)\,db
 \gg_J
-|I_C|Y^{1-b_1}\log Y.
-\tag{23}
+|I_C|Y^{1-b_1}\log Y,
+\tag{22}
 \]
 
-Breakpoint endpoints have zero measure and do not affect the identity. Degenerate zero-width cells contribute nothing.
+which proves (7). Breakpoint endpoints have zero measure and do not affect the identity. Degenerate zero-width cells contribute nothing.
 
-The point of (23) is different from the support-width upper bound used in `RE-051`. Here the false-RH amplitude is used in the forward direction: a given amount of threshold occupancy forces a minimum amount of physical selector travel.
+## 2. Every selector image contains at most one ordinary prime
 
-## 2. A genuine CA support chamber is prime-free except possibly in its final half unit
-
-By the simultaneous regularity theorem of `RE-040`, for every `b in I_C^circ` the selector lies strictly inside the genuine CA support chamber,
+By the simultaneous regularity theorem of `RE-040`, for every `b\in I_C^\circ` the selector lies strictly inside the genuine CA support chamber,
 
 \[
 \xi_-<Z_C(b)<\xi_+.
-\tag{24}
+\tag{23}
 \]
 
-We now use the exact first-layer source coupling from `RE-042`. For every sufficiently large ordinary prime `q`, its first-layer CA event coordinate satisfies
+`RE-042` gives, for every sufficiently large ordinary prime `q`, the exact first-layer staggering
 
 \[
 \boxed{q<\eta_q<q+\frac12.}
-\tag{25}
+\tag{24}
 \]
 
-Suppose, toward a contradiction, that an ordinary prime lies in the nonterminal part of the chamber:
+Suppose an ordinary prime lies in the nonterminal part of the chamber,
 
 \[
 \xi_-<q\le\xi_+-\frac12.
-\tag{26}
-\]
-
-Then (25) gives
-
-\[
-\xi_-<q<\eta_q<q+\frac12\le\xi_+.
-\tag{27}
-\]
-
-But `eta_q` is itself a genuine first-layer CA event coordinate. Equation (27) would place a CA event strictly between the two adjacent support events `xi_-` and `xi_+`, impossible by definition of the chamber. This proves (8).
-
-No assumption is made that either support boundary is first-layer. Higher-layer and tied events are allowed. Nor is the Alaoglu--Erdos conjecture on consecutive CA quotients used. The argument needs only that every ordinary prime has its own first-layer event less than one half-unit to its right.
-
-Since `S_C` is an interval inside `(xi_-,xi_+)`, removing the terminal half-unit `(xi_+-1/2,xi_+)` deletes length at most `1/2`. What remains is an interval contained in the prime-free core (8). If its length is denoted by `P_C`, then
-
-\[
-P_C\ge(|S_C|-1/2)_+,
-\tag{28}
-\]
-
-or equivalently
-
-\[
-P_C+\frac12\ge|S_C|.
-\tag{29}
-\]
-
-Combining (29) with (23) proves the capacity law (9).
-
-The half-unit loss is real at the present level of information. `RE-044`--`RE-049` show exactly why: an ordinary prime can occur in the final half-unit while its associated first-layer event still lies beyond the selected point. Removing that fringe uniformly is therefore not justified.
-
-## 3. Bounded fan complexity transfers the zero frontier into ordinary prime gaps
-
-Assume that on infinitely many late common blocks the fan on fixed `J` exposes at most `K` states. The rightmost-maximizer cells partition `J` up to endpoints, so on each block at least one state `C` satisfies
-
-\[
-|I_C|\ge\frac{|J|}{K}.
-\tag{30}
-\]
-
-Applying (9),
-
-\[
-P_C
-\gg_{J,K}
-Y^{1-b_1}\log Y.
-\tag{31}
-\]
-
-The selected blocks escape to infinity, hence so do these `Y`. The prime-free interval lies inside `S_C`, and the uniform relation (17) places all of `S_C` in an `o(Y)` neighborhood of `Y`. In particular `P_C=o(Y)`. Let `p_n<p_{n+1}` be the consecutive ordinary primes bracketing this prime-free interval. The prime number theorem implies consecutive-prime ratios tend to one, so these bracketing primes are `(1+o(1))Y`. Therefore
-
-\[
-p_{n+1}-p_n\ge P_C
-\gg_{J,K}
-p_n^{1-b_1}\log p_n,
-\tag{32}
-\]
-
-which is (12).
-
-Now fix `epsilon>0`. Because `J` may be any compact subinterval of `(1-Theta,1/2)`, choose its right endpoint so that
-
-\[
-1-\Theta<b_1<\min\left(\frac12,1-\Theta+\epsilon\right).
-\tag{33}
+\tag{25}
 \]
 
 Then
 
 \[
-1-b_1>\Theta-\epsilon.
+\xi_-<q<\eta_q<q+\frac12\le\xi_+,
+\tag{26}
+\]
+
+placing the genuine first-layer CA event `\eta_q` strictly between the two adjacent support events `\xi_-` and `\xi_+`, which is impossible. This proves (8).
+
+All ordinary primes in the support chamber are therefore confined to the terminal interval `(\xi_+-1/2,\xi_+)`. That interval has length `1/2`, hence contains at most one integer and in particular at most one ordinary prime. Since `S_C\subset(\xi_-,\xi_+)`, equation (9) follows.
+
+If `S_C` contains no prime, take all of `S_C`. If it contains one prime `q`, deleting that single point splits `S_C` into at most two prime-free intervals whose lengths sum to `|S_C|`; one has length at least `|S_C|/2`. This proves (10).
+
+This distinction matters. The terminal half-unit cannot be declared uniformly prime-free: `RE-044`--`RE-049` show that a prime can legitimately occur there before its associated first-layer event fires. But the existence of that one possible point does **not** cost a fixed half-unit when the objective is to extract one long prime-free interval. The correct universal loss is multiplicative by at most `1/2`.
+
+## 3. Fragmentation still forces aggregate prime-free length
+
+For distinct exposed CA states `C\ne D`, the open support chambers are disjoint. Equivalently, the exact event selector `\Phi(Z)` cannot choose two distinct regular states at the same non-event coordinate. Hence their selector images `S_C` and `S_D` are disjoint, and the chosen prime-free intervals of lengths `P_C` can also be taken disjoint.
+
+Summing (10) and using the partition identity
+
+\[
+\sum_{C\in\mathcal E(\mathcal B,J)}|I_C|=|J|
+\tag{27}
+\]
+
+up to finitely many zero-measure breakpoint endpoints gives
+
+\[
+\begin{aligned}
+\sum_C P_C
+&\gg_J
+\sum_C |I_C|Y_C^{1-b_1}\log Y_C\\
+&\ge
+X_{\mathcal B}^{1-b_1}\log X_{\mathcal B}
+\sum_C|I_C|,
+\end{aligned}
+\tag{28}
+\]
+
+which is (12). Dividing the cellwise estimate (10) by its physical scale and summing gives (13).
+
+Because `b_1<1/2`, the exponent `1-b_1` is strictly larger than `1/2`. Thus every sufficiently late false-RH common block must carry a **super-square-root total amount of pairwise disjoint prime-free selector length**, even if no individual threshold cell is macroscopic.
+
+This statement is aggregate, not a hidden large-gap theorem. The intervals can be split among many ordinary prime gaps, and several disjoint chosen intervals may sit inside the same larger prime gap if skipped CA chambers separate their selector images. Equation (12) measures physical prime-free length, not the number of distinct ordinary gaps.
+
+## 4. The cell-count/prime-gap tradeoff now has no thin-cell exception
+
+Extend each chosen prime-free interval to the consecutive ordinary-prime gap containing it and let `G_C` denote that gap length. The bracketing primes are `(1+o_J(1))Y_C`: the selector image lies at scale `Z\sim Y_C`, and the prime number theorem gives consecutive-prime ratios tending to one. Therefore
+
+\[
+\boxed{
+G_C
+\gg_J
+|I_C|Y_C^{1-b_1}\log Y_C
+}
+\tag{29}
+\]
+
+for **every** exposed positive-width cell.
+
+If a block exposes `N_{\mathcal B}` cells, at least one has width `|J|/N_{\mathcal B}`. Hence
+
+\[
+\boxed{
+\max_C
+\frac{G_C}{Y_C^{1-b_1}\log Y_C}
+\gg_J
+\frac1{N_{\mathcal B}}.
+}
+\tag{30}
+\]
+
+In particular, bounded fan complexity recovers the previous strong alternative: if `N_{\mathcal B}\le K` along infinitely many blocks, then one obtains infinitely many same-scale gaps
+
+\[
+G_C\gg_{J,K}Y_C^{1-b_1}\log Y_C.
+\tag{31}
+\]
+
+Given any `\varepsilon>0`, choose `b_1` with
+
+\[
+1-\Theta<b_1<\min\!\left(\frac12,1-\Theta+\varepsilon\right).
+\tag{32}
+\]
+
+Then `1-b_1>\Theta-\varepsilon`, so a bounded coherent false-RH fan would force infinitely many selected prime gaps
+
+\[
+\boxed{
+G_C
+\gg_{J,K,\varepsilon}
+Y_C^{\Theta-\varepsilon}
+}
+\tag{33}
+\]
+
+with the stronger logarithmic factor retained before the exponent-only simplification.
+
+The gain over the previous version is not in the bounded-complexity corollary, where the additive `1/2` was already negligible. It is that (29) remains nonvacuous for arbitrarily thin cells. Fragmenting `J` into many cells no longer creates cells whose prime-gap consequence disappears below a fixed additive error.
+
+## 5. `RE-051` is exactly the insertion of an external gap-capacity bound
+
+Suppose `\theta\in(1/2,1)` has the property that every sufficiently large interval `[x-x^\theta,x]` contains a prime. At selector scale `Z\sim Y`, every consecutive prime gap satisfies
+
+\[
+G_C\ll Y_C^\theta.
 \tag{34}
 \]
 
-Equation (32) therefore implies (14). This is not a theorem that false RH itself forces such gaps: the conclusion is conditional on **bounded exposed fan complexity**. Its role is to identify the exact arithmetic price of that escape.
-
-There is also a useful local formulation with no bounded-complexity hypothesis. If a sequence of exposed cells satisfies
-
-\[
-|I_C|Y^{1/2-b_1}\log Y\longrightarrow\infty,
-\tag{35}
-\]
-
-then (9) yields
-
-\[
-\boxed{P_C/\sqrt Y\longrightarrow\infty.}
-\tag{36}
-\]
-
-Thus any threshold cell wider than the scale
-
-\[
-Y^{b_1-1/2}/\log Y
-\tag{37}
-\]
-
-by a divergent factor necessarily produces a same-scale prime-free interval beyond square-root length.
-
-## 4. `RE-051` is recovered by inserting a prime-gap capacity theorem
-
-The new law is deliberately prior to any short-interval theorem. Suppose one has an exponent `theta in (1/2,1)` such that every sufficiently large interval `[x-x^theta,x]` contains a prime. At selector scale `Z~Y`, this gives a uniform upper bound
-
-\[
-P_C\ll Y^\theta
-\tag{38}
-\]
-
-for the prime-free interval in (9). Hence
-
-\[
-|I_C|Y^{1-b_1}\log Y
-\ll_J
-Y^\theta+1,
-\]
-
-and therefore
+Combining with (29) gives for every exposed cell
 
 \[
 \boxed{
 |I_C|
 \ll_J
-\frac{Y^{b_1+\theta-1}}{\log Y}.
+\frac{Y_C^{b_1+\theta-1}}{\log Y_C}.
 }
-\tag{39}
+\tag{35}
 \]
 
-This is exactly the cell-width estimate underlying `RE-051`. When `b_1<1-theta`, summing the cells over the fixed interval `J` gives its polynomial fan-complexity lower bound.
+This is the cell-width estimate underlying `RE-051`, now obtained with no additive term at any cell scale. When `b_1<1-\theta`, the exponent in (35) is negative; summing the cells over fixed `J` gives the polynomial fan-complexity lower bound of `RE-051`.
 
-Thus `RE-051` can be read as the strong-off-critical consequence of the more primitive source law (9). The exponent barrier is now transparent. With Runbo Li's current unconditional `theta=0.52`, prime-gap capacity rules out a macroscopic cell whenever `b_1<0.48`. If `Theta<=0.52`, every admissible `J` begins at `1-Theta>=0.48`, so this external capacity theorem no longer beats the lower physical travel forced by (9). The remaining near-critical escape is precisely the possibility of ordinary gaps between square-root size and the current `x^0.52` frontier at the CA-selected scales.
+With Runbo Li's current unconditional `\theta=0.52`, this closes the bounded-cell escape when `\Theta>0.52` and `J\Subset(1-\Theta,0.48)`. When `1/2<\Theta\le0.52`, present unconditional technology still does not dominate the required selected gap scale. The strengthened result nevertheless removes a bookkeeping loophole there: **every cell, however thin, has a proportional same-scale prime-gap cost, and the total disjoint prime-free cost over the block is super-square-root by (12).**
 
-## 5. Stress tests and exact boundary
+## 6. Stress tests and exact boundary
 
-This result does not prove that the fan has bounded complexity, nor does it prove that the near-critical prime gaps required by a bounded fan exist. It is a deterministic alternative: **threshold occupancy and ordinary prime-free capacity cannot both be small.** A fan may avoid long gaps by fragmenting `J` into many sufficiently thin cells, including skipped-state, higher-layer, or tied transitions.
+This finding does not prove that the near-critical selected gaps are impossible, and it does not turn the aggregate lower bound (12) into one prime gap of comparable size. A fan may still escape by using many thin cells and distributing the required prime-free length across many physical locations.
 
-The theorem is independent of the nonzero-fringe channel of `RE-045`--`RE-050`. It does not show that many exposed states generate many `chi_p=1` bits. Instead it supplies a second source-sensitive currency for the full fan: every cell has a prime-free-capacity cost even when all fringe bits vanish. This is why it directly addresses the separation recorded in `MI-001` between cell complexity and sparse base-two interruptions without falsely identifying the two counts.
+The aggregate intervals in (12) are pairwise disjoint as subsets of selector space, but they are not asserted to belong to distinct ordinary consecutive-prime gaps. Therefore one must not combine (12) with a prime-gap counting theorem by simply treating the summands as independent gaps.
 
-The prime-free interval is obtained from the **selector image** of one cell, not from the whole CA support chamber. This distinction is essential: the fan may use only a tiny portion of a large chamber, and support width alone does not imply threshold occupancy. Conversely, (7) uses amplitude maximality through the false-RH lower bound on `a`; an arbitrary synthetic staircase such as the controls of `RE-041` is not forced to satisfy the same ordinary-prime/event coupling (25).
+The result also remains logically separate from the nonzero-fringe channel of `RE-045`--`RE-050`. A selector image containing one ordinary prime does not by itself identify an adjacent first-layer fan switch or a nonzero `\chi_p`. The present argument uses only the universal first-layer event attached to each ordinary prime and the genuine support chamber of the exposed state.
 
-Equation (14) should not be read as an unconditional lower bound for maximal prime gaps. It is conditional on false RH plus a bounded coherent fan. Nor does a prime-free interval by itself locate a special first-layer switch or a nonzero fringe bit. The only source label needed is the universal first-layer event attached to every ordinary prime.
+No Alaoglu--Erdos consecutive-quotient conjecture is used. The support boundaries may be first-layer, higher-layer, or tied events; intervening higher-layer events only shorten a chamber. Nor is any probabilistic or typical-gap hypothesis used. The proportional extraction in (10) is deterministic.
 
-Finally, the terminal `1/2` loss cannot currently be sharpened to zero uniformly. The exact first-layer stagger is `eta_q-q=1/2+o(1)` from below, and the endpoint-fringe configurations of `RE-044`--`RE-049` show that a prime may legitimately occupy that last half-unit before its CA event fires.
+The half-unit staggering remains sharp at its own level: `\eta_q-q=1/2+o(1)` from below. What has changed is only the correct way to spend that fact. A possible terminal prime is a **point obstruction**, not a half-unit loss, when extracting one prime-free connected component.
 
-## 6. Prior-art boundary and consequence
+## 7. Prior-art boundary and consequence
 
-The CA supporting-slope/event chambers are classical Alaoglu--Erdos structure and are represented explicitly in Mantovanelli's 2026 prime-layer workload framework. Zimov's 2025 preprint studies restrictions from consecutive CA quotients near a hypothetical Robin exception. Runbo Li supplies the current `0.52` short-interval theorem used only when deriving the `RE-051` corollary. All are already anchored in `SOURCES.md`.
+The CA supporting-slope/event chambers are classical Alaoglu--Erdos structure and are represented explicitly in Mantovanelli's 2026 prime-layer workload framework. Zimov's 2025 preprint studies restrictions from consecutive CA quotients near a hypothetical Robin exception. Runbo Li supplies the current `0.52` short-interval theorem used only for the `RE-051` corollary. All are already anchored in `SOURCES.md`.
 
-A targeted current literature search of Robin/CA counterexamples, consecutive CA transitions, prime gaps, and the 2026 prime-layer event framework found no result coupling the **width of an adaptive false-RH threshold cell** to a same-scale ordinary-prime-free selector interval as in (9), nor the bounded-fan transfer (14). No new external theorem is load-bearing for (7)--(14), so `SOURCES.md` needs no new dependency.
+A targeted current search of Robin/CA counterexamples, consecutive CA transitions, prime gaps, adaptive threshold envelopes, and the 2026 prime-layer event framework found no result coupling the width of a **false-RH adaptive threshold cell** to a proportional same-scale prime-free interval as in (10), nor the aggregate blockwise budget (12)--(13). The observation that an interval containing at most one prime has a prime-free component of at least half its length is elementary and is not itself a novelty claim. No new external theorem is load-bearing, so `SOURCES.md` needs no new dependency.
 
-The mathematical delta is the factorization of the fan-capacity problem into two exact currencies. `RE-051` says a sufficiently strong external prime-gap upper bound forces many cells. `RE-052` identifies the prior source law valid without that upper bound: a cell of threshold width `w` must consume at least order
-
-\[
-wY^{1-b_1}\log Y
-\]
-
-of physical selector length, and all but at most one half-unit of that length is ordinary-prime-free. In the near-critical chamber this converts the old bounded-fan escape into a concrete arithmetic demand for prime gaps approaching the hypothetical zero-frontier exponent, rather than leaving bounded fan complexity as an abstract convex-envelope possibility.
+The mathematical delta is the removal of the only additive defect in the `RE-052` capacity law. Previously a highly fragmented fan could make `|S_C|<1/2` and render the individual bound `P_C\ge(|S_C|-1/2)_+` vacuous. The exact same CA source geometry actually gives `P_C\ge|S_C|/2` for every positive-width cell. This upgrades the local law into the aggregate requirement (12): regardless of fragmentation, a false-RH common block must realize a super-square-root total amount of pairwise disjoint prime-free selector length, while any external upper bound on individual prime gaps converts the same law back into a lower bound on fan complexity.
