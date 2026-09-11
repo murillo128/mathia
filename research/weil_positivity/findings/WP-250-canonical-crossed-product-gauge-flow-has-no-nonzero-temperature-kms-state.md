@@ -1,16 +1,16 @@
 # WP-250 — Canonical crossed-product gauge flow has no nonzero-temperature KMS state
 
-**Status:** `EXACT-DERIVED + CROSSED-PRODUCT-DUAL-GAUGE + KMS-NO-GO + EIGENUNITARY-OBSTRUCTION + BILATERAL-VERSUS-SEMIGROUP-DICHOTOMY + MATCHED-CONTROLS + DECISIVE-NARROWING + PRIOR-ART-CLASSICALIZATION + NOT-A-WEIL-BRIDGE`.
+**Status:** `EXACT-DERIVED + CROSSED-PRODUCT-DUAL-GAUGE + KMS-NO-GO + PROPER-KMS-WEIGHT-COLLAPSE + EIGENUNITARY-OBSTRUCTION + CSTAR-VERSUS-VON-NEUMANN-BOUNDARY + BILATERAL-VERSUS-SEMIGROUP-DICHOTOMY + MATCHED-CONTROLS + DECISIVE-NARROWING + PRIOR-ART-CLASSICALIZATION + NOT-A-WEIL-BRIDGE`.
 
-`WP-248` shows that the critical all-prime deformation is disjoint from the spherical quasi-local representation, and `WP-249` tests the most direct category enlargement: adjoin a unitary implementing the critical product automorphism by forming the crossed product
+`WP-248` shows that the critical all-prime deformation is disjoint from the spherical quasi-local representation, and `WP-249` tests the most direct category enlargement: adjoin a unitary implementing the critical product automorphism by forming
 
 \[
 \mathcal B=\mathcal A\rtimes_\alpha\mathbb Z.
 \]
 
-The bare crossed-product positive core is too universal: its shift energy is arithmetic-blind and finite Fourier positive squares remain finite-prime local. `WP-249` therefore leaves a more structured possibility open: perhaps the enlarged algebra has a **canonical KMS/modular weight** whose thermodynamic positivity supplies the missing critical half-density and eventually a global Weil form.
+The bare crossed-product positive core is too universal: its shift energy is arithmetic-blind and finite Fourier positive squares remain finite-prime local. A more structured possibility is that the enlarged algebra carries a canonical KMS/modular object whose thermodynamic positivity supplies the missing critical half-density and eventually a global Weil form.
 
-For the canonical dual gauge dynamics, that route fails before any delicate arithmetic question appears. Let `u` be the implementing unitary and lift the dual circle action to a real flow
+For the canonical dual gauge dynamics, that route fails already at the C*-algebraic level. Let `u` be the implementing unitary and lift the dual circle action to
 
 \[
 \gamma_t(a)=a\quad(a\in\mathcal A),
@@ -23,40 +23,15 @@ Then
 
 \[
 \boxed{
-(\mathcal B,\gamma)\text{ has no }\beta\text{-KMS state for any }\beta\ne0.
+(\mathcal B,\gamma)
+\text{ has neither a }\beta\text{-KMS state nor a proper }\beta\text{-KMS C*\!-weight for any }\beta\ne0.
 }
 \tag{2}
 \]
 
-The proof is one line of the KMS identity. The generator `u` is an entire analytic **unitary eigenoperator** for `gamma`, so at imaginary time
+The state obstruction is the eigenunitary identity from the original derivation. The stronger weight statement follows from an elementary but decisive fact: **every proper weight on a unital C*-algebra is automatically finite on the unit and therefore bounded.** Hence a proper KMS weight on `B` can be normalized to a KMS state, and the same contradiction applies.
 
-\[
-\gamma_{i\beta}(u)=e^{-\beta}u.
-\tag{3}
-\]
-
-If `phi` were a normalized `beta`-KMS state and we use the convention
-
-\[
-\phi(xy)=\phi\!\left(y\gamma_{i\beta}(x)\right)
-\tag{4}
-\]
-
-for analytic `x`, then taking `x=u`, `y=u^*` gives
-
-\[
-1=\phi(uu^*)
-=\phi\!\left(u^*\gamma_{i\beta}(u)\right)
-=e^{-\beta}\phi(u^*u)
-=e^{-\beta}.
-\tag{5}
-\]
-
-Hence `beta=0`. The same argument survives every nonzero constant rescaling `gamma_t(u)=e^{i lambda t}u`: it gives `1=e^{-beta lambda}`. Thus the canonical gauge direction cannot have a finite thermal equilibrium state at the critical inverse temperature, or at any other nonzero temperature scale.
-
-This is more informative than another generic statement that the crossed product is arithmetic-blind. It identifies the structural reason why the immediate crossed-product continuation cannot reproduce the Bost--Connes thermodynamic mechanism that previously supplied Mathia with the exact critical `p^{-1/2}` scale. **Bilateralizing the transport replaces the semigroup isometries by a unitary. The KMS defect that produced nontrivial range-projection masses then collapses into the impossible identity `1=e^{-beta lambda}`.**
-
-The result does not rule out KMS **weights** infinite on the unit, a different arithmetic time evolution, a semigroup/Toeplitz crossed product, a nonunital corner, a Hilbert-module correspondence, or a genuinely global modular flow. It closes only the most canonical thermal continuation of `WP-249`: use the dual gauge flow of `A rtimes_alpha Z` itself as the source of a normalized critical KMS geometry.
+This removes an apparent escape left by the earlier formulation of this finding. An infinite-on-the-unit **von Neumann** KMS weight may still exist after passing to a represented weak closure, and nonunital/stabilized/semigroup categories can support genuine unbounded C*-weights, but those are category changes. They are not hidden thermodynamic structure already present as a proper C*-weight on the unital crossed product itself.
 
 ## 1. Exact crossed-product object and canonical gauge flow
 
@@ -67,21 +42,21 @@ Use the quasi-local algebra and product automorphism of `WP-248`--`WP-249`,
 =\overline{\bigcup_{F\Subset\mathbb P}\mathcal A_F},
 \qquad
 \alpha=\bigotimes_p\alpha_p,
-\tag{6}
+\tag{3}
 \]
 
 and form
 
 \[
 \mathcal B=\mathcal A\rtimes_\alpha\mathbb Z.
-\tag{7}
+\tag{4}
 \]
 
 The canonical unitary `u` satisfies
 
 \[
 uau^*=\alpha(a).
-\tag{8}
+\tag{5}
 \]
 
 Because the acting group is `Z`, its Pontryagin dual is the circle. The crossed product therefore has the canonical dual action
@@ -91,19 +66,17 @@ Because the acting group is `Z`, its Pontryagin dual is the circle. The crossed 
 \qquad
 \widehat\alpha_z(u)=zu,
 \qquad z\in\mathbb T.
-\tag{9}
+\tag{6}
 \]
 
-Composing `z=e^{it}` gives the periodic one-parameter flow (1). This flow requires no extra source choice: once the `Z`-crossed product has been formed, it is part of the standard crossed-product structure.
-
-The finite Fourier algebra
+Composing `z=e^{it}` gives (1). The finite Fourier algebra
 
 \[
 \mathcal B_{\mathrm{fin}}
 =\left\{
 \sum_{n=-N}^{N}a_nu^n
 \right\}
-\tag{10}
+\tag{7}
 \]
 
 consists of entire analytic elements for `gamma`, with
@@ -111,173 +84,251 @@ consists of entire analytic elements for `gamma`, with
 \[
 \gamma_z(a_nu^n)=e^{inz}a_nu^n,
 \qquad z\in\mathbb C.
-\tag{11}
+\tag{8}
 \]
 
-In particular the implementing unitary itself is entire and has gauge frequency `+1`. No domain or analytic-continuation subtlety is needed for the KMS test below.
+In particular `u` is an entire analytic unitary eigenoperator of gauge frequency `+1`. No domain or analytic-continuation subtlety is needed for the first obstruction.
 
 ## 2. An eigenunitary forbids every nonzero-temperature KMS state
 
-The obstruction is not special to crossed products. Let `(C,sigma)` be a unital C*-dynamical system and suppose there is an entire analytic unitary `v in C` with
+Let `(C,sigma)` be a unital C*-dynamical system and suppose there is an entire analytic unitary `v\in C` with
 
 \[
 \sigma_t(v)=e^{i\lambda t}v,
 \qquad \lambda\ne0.
-\tag{12}
+\tag{9}
 \]
 
 Then
 
 \[
 \sigma_{i\beta}(v)=e^{-\beta\lambda}v.
-\tag{13}
+\tag{10}
 \]
 
-For a normalized `beta`-KMS state `phi`, (4) with `x=v`, `y=v^*` gives
+For a normalized `beta`-KMS state `phi`, use the convention
+
+\[
+\phi(xy)=\phi\!\left(y\sigma_{i\beta}(x)\right)
+\tag{11}
+\]
+
+for analytic `x`. Taking `x=v`, `y=v^*` gives
 
 \[
 1
 =\phi(vv^*)
 =e^{-\beta\lambda}\phi(v^*v)
 =e^{-\beta\lambda}.
-\tag{14}
+\tag{12}
 \]
 
 Therefore
 
 \[
-\boxed{
-\beta\lambda=0.
-}
+\boxed{\beta\lambda=0.}
+\tag{13}
+\]
+
+Applying the lemma with `v=u` and `lambda=1` proves the state part of (2). The conclusion is independent of the automorphism `alpha`, independent of whether `alpha` is spatial in a chosen representation, and independent of the critical prime amplitudes used to define its local factors.
+
+The same calculation survives every nonzero constant rescaling `gamma_t(u)=e^{ict}u`: every KMS state still requires `beta c=0`. Choosing `c=0` makes the gauge flow trivial rather than arithmetic; choosing `c\ne0` restores the obstruction.
+
+At `beta=0`, the KMS identity degenerates to traciality on the analytic algebra. Whether `B` admits a trace depends on `A` and `alpha`; no existence claim is needed here. The point is that the only temperature compatible with the eigenunitary loses the nonzero thermal parameter entirely.
+
+## 3. Proper weights on a unital C*-algebra are bounded
+
+The stronger weight statement is elementary but closes the main apparent loophole.
+
+Let `Phi` be a proper C*-weight on a unital C*-algebra `C`. In the standard Kustermans/Combes terminology, proper means nonzero, lower semicontinuous, and densely defined. Equivalently, its square-integrable left ideal
+
+\[
+\mathcal N_\Phi
+=\{x\in C:\Phi(x^*x)<\infty\}
+\tag{14}
+\]
+
+is norm dense in `C`.
+
+Choose `x\in\mathcal N_\Phi` with
+
+\[
+\|x-1\|<\varepsilon<1.
 \tag{15}
 \]
 
-Since `lambda != 0`, no nonzero-`beta` KMS state exists.
-
-Applying the lemma with `v=u` and `lambda=1` proves (2). The conclusion is independent of the automorphism `alpha`, independent of whether `alpha` is spatial in a chosen representation, and independent of the critical prime amplitudes used to define its local factors.
-
-The same calculation also shows why a mere change of gauge speed cannot encode the critical scale. If one replaces (1) by
+Then `x` is invertible and
 
 \[
-\gamma_t^{(c)}(u)=e^{ict}u,
+x^*x\succeq (1-\varepsilon)^2 1.
 \tag{16}
 \]
 
-then every `beta`-KMS state still requires `beta c=0`. Choosing `c=0` makes the gauge flow trivial rather than arithmetic; choosing `c != 0` restores the obstruction. A scalar time reparameterization therefore supplies no thermal degree of freedom.
+By monotonicity of a weight,
 
-At `beta=0`, the KMS identity degenerates to traciality on the analytic algebra. Whether `B` admits a trace depends on `A` and `alpha`; no existence claim is needed here. The point is that the only temperature compatible with the eigenunitary loses the nonzero thermal parameter entirely and therefore cannot source the critical half-density through this gauge direction.
+\[
+\Phi(1)
+\le (1-\varepsilon)^{-2}\Phi(x^*x)
+<\infty.
+\tag{17}
+\]
 
-## 3. Why Bost--Connes does not suffer the contradiction
+For every `a\in C_+`,
 
-This distinction is the decisive structural control. In the Bost--Connes system, the multiplicative generators `mu_n` are isometries, not unitaries:
+\[
+0\le a\le \|a\|1,
+\]
+
+so
+
+\[
+\Phi(a)\le \|a\|\Phi(1)<\infty.
+\tag{18}
+\]
+
+Thus `Phi` is finite everywhere on `C_+` and extends to a bounded positive functional with norm `Phi(1)`. Since `Phi` is nonzero, `Phi(1)>0`, and
+
+\[
+\phi=\frac{\Phi}{\Phi(1)}
+\tag{19}
+\]
+
+is a state.
+
+Consequently,
+
+\[
+\boxed{
+\text{proper KMS weight on a unital C*\!-algebra}
+\Longrightarrow
+\text{bounded KMS functional}
+\Longrightarrow
+\text{KMS state after normalization}.
+}
+\tag{20}
+\]
+
+Combining (20) with the eigenunitary obstruction proves the second half of (2): the canonical dual gauge flow on the unital crossed product has **no proper nonzero-temperature KMS C*-weight**.
+
+This is stronger than the original statement that only weights finite on the unit are excluded. Under the standard C*-weight definition, norm-dense properness itself forces finiteness on the unit in the unital category.
+
+## 4. Why infinite von Neumann weights are not a counterexample
+
+The distinction between C*-weights and von Neumann weights is structural, not terminological.
+
+For a C*-algebra, dense definition is a **norm-density** requirement. That is what drives (15)--(17). By contrast, a normal semifinite weight on a von Neumann algebra is required to have a finite domain dense in a weak/operator topology, not in operator norm. The usual trace on `B(\ell^2)` is the standard example: it is normal and semifinite, has
+
+\[
+\operatorname{Tr}(1)=\infty,
+\tag{21}
+\]
+
+and its finite-rank ideal is weakly dense but not norm dense in `B(\ell^2)`.
+
+Therefore an infinite-on-the-unit modular/KMS weight can reappear only after changing category, for example by passing to a represented von Neumann closure, a nonunital ideal/corner, a stabilization, or another algebra whose finite-weight domain can be dense in the relevant topology without approximating the unit in norm.
+
+That is a legitimate surviving research direction, but it is additional mathematical structure. A future Weil bridge must specify the representation or nonunital algebra, prove the weight is canonical there, identify a finite quadratic-form domain, and show that the finite-prime and archimedean/polar terms arise from the same source. Merely saying "use a KMS weight instead of a state" no longer evades `WP-250` inside the original unital crossed product.
+
+## 5. Why Bost--Connes does not suffer the contradiction
+
+In the Bost--Connes system, the multiplicative generators `mu_n` are isometries, not unitaries:
 
 \[
 \mu_n^*\mu_n=1,
 \qquad
 \mu_n\mu_n^*=E_n<1,
-\tag{17}
+\tag{22}
 \]
 
 and the source time evolution satisfies
 
 \[
 \sigma_t(\mu_n)=n^{it}\mu_n.
-\tag{18}
+\tag{23}
 \]
 
-Applying the KMS identity to `x=mu_n`, `y=mu_n^*` does **not** yield `1=n^{-beta}`. Instead it gives the nontrivial projection mass
+Applying the KMS identity to `x=mu_n`, `y=mu_n^*` gives the nontrivial range-projection mass
 
 \[
 \phi_\beta(E_n)
 =\phi_\beta(\mu_n\mu_n^*)
 =n^{-\beta}\phi_\beta(\mu_n^*\mu_n)
-=n^{-\beta}.
-\tag{19}
+=n^{-\beta},
+\tag{24}
 \]
 
-At `beta=1`, these range-projection masses are exactly the source of the divisibility Gram used in `WP-216`, whose normalized overlaps carry the half-density `p^{-|a-b|/2}`.
+rather than the impossible identity `1=n^{-beta}`.
 
-Equation (19) therefore identifies what is lost when the `WP-248` product automorphism is made inner by crossing with the **group** `Z`. The bilateral group generator is invertible on both sides,
+At `beta=1`, these masses are exactly the source of the divisibility Gram used in `WP-216`, whose normalized overlaps carry the half-density `p^{-|a-b|/2}`. Bilateral group completion replaces the one-sided range defect by
 
 \[
 u^*u=uu^*=1,
-\tag{20}
+\tag{25}
 \]
 
-so there is no proper range projection on which the KMS factor can land. The same KMS calculation that gives a meaningful mass law for an isometry becomes a contradiction for a nonzero-frequency unitary.
+and the thermodynamic defect collapses.
 
-This is not an argument that semigroup crossed products automatically solve Weil positivity. The existing Bost--Connes chain `WP-209`--`WP-236` shows that source-forcing the critical finite amplitudes still leaves the Weil orientation, global completion, and Gamma/polar sectors unsupported. The present result makes a narrower point: **the canonical group-crossed-product gauge flow cannot even reproduce the thermodynamic selection mechanism that made the Bost--Connes starting point nontrivial.**
+This does not imply that semigroup crossed products solve Weil positivity. The existing Bost--Connes chain shows that source-forcing the critical finite amplitudes still leaves the Weil orientation, global completion, and Gamma/polar sectors unsupported. The narrower point is that the canonical group-crossed-product gauge flow cannot even reproduce the nontrivial equilibrium mass mechanism of the one-sided system.
 
-## 4. Bilateral Gibbs control: the regular gauge generator has two-sided spectrum
+## 6. Bilateral Gibbs control
 
-There is a complementary representation-level picture. In the regular covariant representation of `A rtimes_alpha Z`, the gauge action is implemented on the `ell^2(Z)` coordinate by the number operator
+In the regular covariant representation of `A\rtimes_\alpha Z`, the gauge action is implemented on the `ell^2(Z)` coordinate by the number operator
 
 \[
 N\delta_k=k\delta_k,
 \qquad k\in\mathbb Z.
-\tag{21}
+\tag{26}
 \]
 
-A formal Gibbs factor for the pure gauge direction would be
+A formal Gibbs factor is
 
 \[
 e^{-\beta N}.
-\tag{22}
+\tag{27}
 \]
 
-Even before including any multiplicity from the `A` representation,
+Even before including multiplicity from the `A` representation,
 
 \[
 \operatorname{Tr}_{\ell^2(\mathbb Z)}e^{-\beta N}
 =\sum_{k\in\mathbb Z}e^{-\beta k}
 =\infty
-\tag{23}
+\tag{28}
 \]
 
-for every real `beta`: for positive `beta` the negative tail diverges, for negative `beta` the positive tail diverges, and for `beta=0` both tails have infinite counting mass.
+for every real `beta`. This is not the proof of (2); it is a representation-level explanation of why the bilateral gauge coordinate has no finite Gibbs equilibrium. It also shows why moving to a von Neumann weight is genuinely a different infinite-mass category rather than a hidden finite equilibrium on the original unital C*-algebra.
 
-Equation (23) is not used to prove the C*-algebraic no-KMS theorem; (5) already does that without choosing a representation. It is a matched geometric explanation. The canonical transport coordinate created by crossing with `Z` is **bilateral** and has no thermodynamic ground direction. A semigroup/isometric construction has a one-sided defect/range structure on which nontrivial equilibrium weights may live; the group completion erases that asymmetry.
+Declaring `N` or `|N|` to be the missing Hamiltonian does not help. `N` is not positive, `|N|` forgets the orientation of the dual action, and any positive function of `N` is a universal Fourier-degree construction independent of the prime rotations `alpha_p`.
 
-This observation also prevents a false rescue by declaring `N` itself to be the missing positive Hamiltonian. `N` is not positive, `|N|` forgets the orientation of the dual action, and any positive function of `N` is a universal Fourier-degree construction independent of the prime rotations `alpha_p`. The arithmetic would have to enter through additional coefficient, cocycle, state, boundary, or module data.
+## 7. Matched controls and surviving escapes
 
-## 5. Matched controls and aggressive falsification
+**Automorphism control.** Replace the critical prime rotation `alpha` by any automorphism of any unital C*-algebra. The implementing unitary and the dual gauge eigenrelation remain, so both the KMS-state and proper-KMS-weight obstructions are unchanged. The theorem is category-theoretic, not Riemann-specific.
 
-**Automorphism control.** Replace the critical prime rotation `alpha` by any automorphism of any unital C*-algebra. The crossed-product implementing unitary still obeys (8), the dual gauge flow still obeys (1), and the KMS contradiction (5) is unchanged. Thus the obstruction is intrinsic to the proposed category, not a hidden Riemann identity.
+**Subcritical and finite-support controls.** Make the product deformation square-summable, spatial, or supported at finitely many primes. The same unital crossed product and eigenunitary argument still exclude every nonzero-temperature proper gauge-KMS weight. The obstruction therefore does not detect critical representation disjointness by itself.
 
-**Subcritical control.** Replace the critical nonspatial deformation by a square-summable deformation for which `WP-248` places the product state back in the spherical quasi-equivalence class. The crossed product still has the same eigenunitary and still has no nonzero-temperature KMS state for the canonical gauge flow. Hence the gauge thermodynamics does not detect the critical representation transition.
+**Generalized-product control.** Randomize local angles, replace primes by arbitrary labels, or remove arithmetic. Nothing changes. This is appropriate for a negative classification theorem: canonical dual-gauge equilibrium cannot be the missing source-specific positivity mechanism.
 
-**Finite-support control.** If `alpha` differs from the identity at only finitely many primes and is implemented by an ordinary finite tensor unitary, (5) remains unchanged. The no-KMS statement is not caused by an infinite tail or by representation disjointness.
+**Arithmetic-time escape.** A different flow whose action contains prime-dependent cocycles, Hamiltonians, or modular data is outside (1). It may evade the eigenunitary theorem if `u` is no longer a nonzero-frequency analytic eigenunitary for the relevant dynamics. The new flow then becomes a source-selection obligation and must be derived independently rather than chosen to reproduce the target coefficients.
 
-**Generalized-product control.** Randomize the local angles, replace primes by arbitrary labels, or remove arithmetic entirely. The conclusion persists. This is appropriate for a negative classification theorem: it says that canonical dual-gauge equilibrium cannot be the missing source-specific positivity mechanism.
+**Nonunital/von-Neumann escape.** A nonunital corner, ideal, stabilization, Hilbert-module algebra, or represented von Neumann closure can carry genuine unbounded weights. This is now the correct weight escape. It must come with a canonical domain and a finite-form extraction theorem; otherwise infinite mass merely moves the regularization problem.
 
-**Arithmetic-time escape.** One can define another flow on `B` whose action on `A` or `u` contains prime-dependent cocycles, Hamiltonians, or modular data. That is outside (1) and can evade (5) if the implementing generator is no longer a nonzero-frequency unitary eigenoperator in the relevant sense. But the new dynamics then becomes a new source-selection obligation. It must be derived independently from the Mathia/global geometry, not chosen because its KMS weights reproduce `Lambda(n)/sqrt(n)` or the desired Weil sign.
+**Semigroup/Toeplitz escape.** Replacing the bilateral group crossed product by an endomorphism/semigroup or Toeplitz-type construction remains outside the theorem. Proper range projections let the KMS factor appear as a nontrivial mass as in (24). Such a move must still pass the extensive Bost--Connes controls already recorded by this line.
 
-**KMS-weight escape.** The proof excludes normalized KMS states, and more generally every nonzero KMS weight that is finite on the unit: such a weight could be normalized and would contradict (5). It does **not** exclude lower-semicontinuous semifinite KMS weights with
+## 8. Prior-art and novelty audit
 
-\[
-\Phi(1)=\infty.
-\tag{24}
-\]
+The KMS condition and the eigenoperator calculation are classical. The standard boundary relation goes back to Haag, Hugenholtz, and Winnink, *On the equilibrium states in quantum statistical mechanics*, Communications in Mathematical Physics **5** (1967), 215--236.
 
-Such weights are a genuine surviving category. They cannot be counted as a solution merely because they evade normalization: a Weil bridge would have to specify their domain, show how a finite quadratic form is extracted without arbitrary subtraction, derive the finite-prime and archimedean terms from the same source, and prove positivity independently of the target.
+The weight terminology used above is standard. Johan Kustermans, *KMS-weights on C*-algebras*, arXiv:`funct-an/9704008` (1997), develops the proper lower-semicontinuous densely defined C*-weight framework and proves equivalence with the Combes formulation. Klaus Erik Thomsen, *An introduction to KMS weights*, arXiv:`2204.01125` (2022), gives a modern account and emphasizes the role of stabilization/nonunital categories in relating KMS weights to KMS states. The implication "proper weight on a unital C*-algebra is bounded" used here is an elementary consequence of the standard norm-density definition, not a new operator-algebra theorem.
 
-**Semigroup/Toeplitz escape.** Replacing the bilateral group crossed product by an endomorphism/semigroup or Toeplitz-type construction is also outside the theorem. Equation (19) explains why this is mathematically meaningful rather than a technical loophole: proper range projections let the KMS factor appear as a nontrivial mass rather than forcing an impossible equality of two units. Such a move must still pass the extensive Bost--Connes controls already recorded by this line.
+The crossed-product contrast is also prior art. Ruy Exel, *Crossed-Products by Finite Index Endomorphisms and KMS states*, Journal of Functional Analysis **199** (2003), 153--188, DOI `10.1016/S0022-1236(02)00023-X`, studies gauge actions and KMS states in the one-sided endomorphism/transfer-operator setting. Gauge-KMS phenomena for Toeplitz--Cuntz--Krieger and higher-rank graph algebras likewise rely on proper isometric generators and Perron--Frobenius mass relations rather than a bilateral eigenunitary; see an Huef--Laca--Raeburn--Sims, *KMS states on C*-algebras associated to higher-rank graphs*, Journal of Functional Analysis **266** (2014), 265--283.
 
-## 6. Prior-art and novelty audit
+The arithmetic comparison remains Bost--Connes, *Hecke algebras, type III factors and phase transitions with spontaneous symmetry breaking in number theory*, Selecta Mathematica **1** (1995), 411--457. Its one-sided multiplicative isometries yield the projection masses already used by `WP-216`.
 
-The KMS condition and the eigenoperator calculation are classical. The standard KMS boundary relation goes back to Haag, Hugenholtz, and Winnink, *On the equilibrium states in quantum statistical mechanics*, Communications in Mathematical Physics **5** (1967), 215--236. No novelty is claimed for (4), for the fact that the dual action of `T` exists on `A rtimes_alpha Z`, or for the observation that an analytic eigenunitary of nonzero frequency is incompatible with a normalized nonzero-temperature KMS state.
+A bounded literature search across KMS weights, unital C*-algebras, crossed-product dual actions, semigroup crossed products, stabilization, and Bost--Connes thermodynamics confirms that the functional-analytic ingredients are standard. No novelty is claimed for them. The durable Mathia contribution is the route classification: **the apparent infinite-weight escape in the unital crossed-product C*-category is not an escape at all; genuine infinite equilibrium weights require a different topology/category.**
 
-The relevant crossed-product contrast is also established prior art. Ruy Exel, *Crossed-Products by Finite Index Endomorphisms and KMS states*, Journal of Functional Analysis **199** (2003), 153--188, DOI `10.1016/S0022-1236(02)00023-X`, studies gauge actions and KMS states for crossed products by injective endomorphisms/transfer operators. The endomorphism/isometry setting is precisely the kind of one-sided structure in which range projections need not equal the unit and nontrivial KMS weights can occur.
+## 9. Consequence for the Weil-positivity mandate
 
-Gauge-KMS phenomena for Toeplitz--Cuntz--Krieger and Cuntz--Krieger algebras likewise rely on proper isometric generators and Perron--Frobenius mass relations rather than on a bilateral unitary eigenoperator; see Astrid an Huef, Marcelo Laca, Iain Raeburn, and Aidan Sims, *KMS states on C*-algebras associated to higher-rank graphs*, Journal of Functional Analysis **266** (2014), 265--283, DOI `10.1016/j.jfa.2013.09.016`.
-
-The arithmetic comparison is the original Bost--Connes system: Jean-Benoit Bost and Alain Connes, *Hecke algebras, type III factors and phase transitions with spontaneous symmetry breaking in number theory*, Selecta Mathematica (N.S.) **1** (1995), 411--457, DOI `10.1007/BF01589495`. Its multiplicative isometries and logarithmic time evolution yield the projection masses in (19), which are already the source anchor of `WP-216`.
-
-A bounded search across `Z`-crossed products, dual/gauge actions, KMS states, endomorphism crossed products, graph-algebra gauge KMS states, and Bost--Connes thermodynamics found the general ingredients to be standard but did not locate a source applying the eigenunitary obstruction to the exact critical sector-transport continuation isolated by `WP-248`--`WP-249`. No novelty is claimed for the operator-algebra theorem. The durable Mathia delta is the **route classification**: the canonical thermal structure naturally attached to the new `Z` transport coordinate cannot provide a normalized critical equilibrium state at all, and the reason is exactly the unitary bilateralization that distinguishes this continuation from the successful finite-weight selection step in Bost--Connes.
-
-## 7. Consequence for the Weil-positivity mandate
-
-The immediate critical-sector chain is now
+The critical-sector chain is now
 
 \[
 \text{critical product deformation}
@@ -287,29 +338,22 @@ The immediate critical-sector chain is now
 \text{algebraically implemented transport}
 \xrightarrow{\text{WP-249}}
 \text{arithmetic-blind/local positive core},
-\tag{25}
+\tag{29}
 \]
 
-and `WP-250` adds
+and `WP-250` strengthens the thermal obstruction to
 
 \[
 \boxed{
-\text{canonical dual-gauge thermodynamics}
+\text{canonical dual-gauge thermodynamics on the unital crossed product}
 \not\Rightarrow
-\text{critical KMS state},
+\text{nonzero-temperature state or proper C*\!-KMS weight}.
 }
-\tag{26}
+\tag{30}
 \]
 
-because the new transport generator is a nonzero-frequency unitary.
+Thus a source-forced modular continuation is not eliminated in general, but it must cross an explicit categorical boundary: retain one-sided semigroup defects, pass to a source-forced nonunital/stabilized algebra, or derive a represented von Neumann modular object with a canonical finite-form domain. Alternatively it must introduce a genuinely arithmetic time evolution or abandon thermal scalarization for a correspondence, boundary state, unbounded cycle, or active finite--archimedean coupling.
 
-Thus a source-forced KMS/modular continuation is not eliminated in general, but it must contain **additional asymmetric structure** beyond the bare `Z` crossed product and its dual action. The most concrete surviving choices are now sharply separated:
+Each surviving choice is new mathematical data. It must explain the exact finite prime-power coefficients, the Gamma and polar terms, and the global sign from the same construction, and it must survive matched generalized-product controls. None of those obligations follows from the crossed-product gauge structure itself.
 
-- retain a one-sided semigroup/isometric defect rather than bilateralizing it;
-- use a non-normalized KMS weight and prove a canonical finite-part/domain theorem;
-- introduce a genuinely arithmetic/modular time evolution rather than the universal gauge flow;
-- or abandon thermal scalarization in favor of a source-forced correspondence, boundary state, unbounded cycle, or finite--archimedean coupling.
-
-Each choice is new mathematical data. It must explain the exact finite prime-power coefficients, the Gamma and polar terms, and the global sign from the same construction, and it must survive matched generalized-product controls. None of those obligations follows from the crossed-product gauge structure itself.
-
-The result therefore passes the substantive-finding gate as a decisive negative narrowing rather than as a Weil bridge. It closes a specifically named escape left by `WP-249` and exposes a useful structural lesson for future candidates: **the thermodynamic half-density in Bost--Connes is tied to one-sided range defects; an invertible bilateral transport generator cannot inherit that mechanism merely by being placed in a crossed product.**
+The substantive narrowing is therefore sharper than the original version: **bilateralization kills not only normalized KMS states but every proper KMS weight in the original unital C*-category. Infinite thermal mass becomes available only after a genuine category change, which must itself be justified by the Mathia/global geometry.**
