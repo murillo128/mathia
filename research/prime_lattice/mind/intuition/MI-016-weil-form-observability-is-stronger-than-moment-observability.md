@@ -1,41 +1,41 @@
-# MI-016 — Weil source identity and cutoff coherence are recoverable, but neither is an order law
+# MI-016 — Weil source recovery and compact completion still do not create order
 
-**Evidence level:** proved observability/order/transport boundary; global arithmetic positivity remains open
+**Evidence level:** proved observability/order/transport boundary; completed arithmetic positivity remains open
 
 ## Core intuition
 
-Finite source loss is not the final obstruction in Weil-form approaches: the complete Galerkin/cutoff family can recover the source. But exact recovery and exact cutoff coherence are generic information properties, not sign principles. Every active interior source atom is eventually indefinite, and its cutoff motion is the same universal affine transport obeyed by an arbitrary log-source measure.
+The complete Galerkin/cutoff family can recover the source, but exact recovery and exact cutoff coherence are generic information properties rather than sign principles. The current evidence closes two stronger escapes: **no nonzero finite positive aggregate of interior source atoms becomes positive at high resolution, and no fixed compact correction can repair that sign oscillation**.
 
-The missing sign must therefore come from a **von-Mangoldt-specific collective law plus the completed archimedean/pole structure**, not from reconstructing the source more faithfully.
+The missing sign must therefore use an essentially noncompact completed/global channel or a genuinely signed relation outside the finite positive source block.
 
 ## Strongest justified claim
 
-PL-259--PL-271 establish finite detectability, fixed-band aliasing, and full-tower source recovery. PL-272 separates recovery from order with the exact `delta_(1/2)` signature `diag(1,-1)`. PL-273 strengthens this to every interior frequency: beyond a frequency-dependent band, a positive atom has both a positive constant direction and a negative cosine direction. All active prime-power source atoms are therefore eventually indefinite.
+PL-259--PL-271 establish finite detectability, fixed-band aliasing, and full-tower source recovery. PL-272--PL-273 separate recovery from order: every active interior atom is eventually indefinite. PL-274 adds all cutoffs and shows that normalized cutoff transport is the same affine kinematics for any locally finite log-source, even though the full family identifies that source exactly.
 
-PL-274 adds the cutoff parameter and shows that its apparent coherence is generic. Any locally finite log-source `eta` gives normalized measures `nu_L=(1-x/L)_*(eta|_(0,L])` satisfying one exact affine transport law between cutoffs. The complete `(L,N)` family identifies `eta` exactly, yet a single positive atom already satisfies this transport/projective coherence and still produces an indefinite source matrix.
+PL-275 upgrades atomwise indefiniteness to every nonzero finite positive interior atomic measure. A compact-torus sign argument supplies arbitrarily high positive and negative diagonal modes, so every fixed positive prime-power source cutoff is eventually indefinite.
 
-Thus source positivity, projective band coherence, all-cutoff affine coherence, and exact source identity can all hold without the target sign.
+PL-276 makes the obstruction stable. The positive and negative witness modes occur with positive lower density, while every compact operator has vanishing diagonal matrix elements along the Fourier basis. Hence adding **any fixed self-adjoint compact correction** leaves the finite positive source eventually indefinite. In particular, the pole contribution at fixed aperture is finite rank and cannot repair the sign.
 
 ## Synthesis of evidence
 
-The useful next theorem must locate a relation absent from a generic positive log-source. Possibilities include arithmetic constraints among prime-power entry events and weights, a non-affine cross-cutoff identity using the completed explicit formula, or cancellation with pole/archimedean terms that is sign-relevant before it becomes a restatement of Weil positivity.
+The finite source tower is lossless infrastructure, not an order mechanism. Atomwise weights, finite positive aggregation, projective recovery, affine cutoff coherence, and compact completion can all coexist with persistent sign oscillation.
 
-The source tower is now best viewed as lossless infrastructure. Its mathematical value is that any successful global law can be stated without ambiguity about which source generated the finite matrices; the tower itself does not create order.
+A surviving theorem must therefore use an essentially noncompact completion channel—naturally the archimedean/scalar sector in the standard decomposition—or another noncompact signed coupling whose arithmetic structure is absent from arbitrary finite positive measures.
 
 ## Counterevidence / boundary cases
 
-PL-274 does not say all relations among cutoffs are generic. It classifies only the affine kinematics induced by normalizing one fixed log-source. The actual von Mangoldt support and weights may satisfy additional nonlocal laws, and the completed Weil form contains terms absent from the source matrices.
+PL-276 does not say the archimedean term has the needed sign, nor does it rule out a noncompact completed cancellation. It only proves that finite positive source plus compact correction cannot be the mechanism.
 
-Projective recovery may also be ill-conditioned. That matters for constructive estimates but cannot repair the exact atomwise sign failure.
+Conditioning of source recovery remains irrelevant to this exact sign obstruction.
 
 ## Epistemic status
 
-**Exact observability/transport/order boundary:** the all-band/all-cutoff family can be source-lossless while every active source atom is indefinite and the cutoff motion is universal. The missing Weil sign is a genuinely collective arithmetic-completion phenomenon.
+**Exact finite-source/compact-completion boundary:** full source recovery is possible, every finite positive aggregate is sign-indefinite, and compact completion cannot repair it. Any successful Weil positivity law must use noncompact completed/global structure or a genuinely signed source relation.
 
 ## Novelty/prior-art status
 
-The Groskin kernel, affine pushforward kinematics, localized Weil calculus, and Fourier arguments retain their finding-level prior-art classifications. This intuition records their combined information boundary.
+The Groskin kernel, compact-torus character argument, affine transport, compact-operator diagonals, and Fourier methods retain their finding-level classifications.
 
 ## Falsification criterion
 
-Construct an interior source atom that becomes positive semidefinite at all sufficiently large bands, or find a positive log-source violating the PL-274 affine transport identity. Strategically, a von-Mangoldt-specific cross-cutoff/completion law forcing the correct sign would cross the current gate.
+Construct a nonzero finite positive interior source plus a fixed compact self-adjoint correction whose Galerkin compressions become positive semidefinite at all sufficiently high bands, or invalidate the PL-274 transport law. Strategically, derive a noncompact completed von-Mangoldt-specific law forcing the correct sign.

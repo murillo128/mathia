@@ -1,43 +1,43 @@
-# MI-008 — Prime-Flute endpoint decay is essential orthogonality, now testable by local form witnesses
+# MI-008 — Prime-Flute compactness requires genuinely diverging local response frequency
 
 **Evidence level:** proved operator/form-theoretic boundary
 
 ## Core intuition
 
-Energy normalization isolates the mixed operator `T=F_P Gamma F_H`. The canonical strength factors stay heavy on infinite-dimensional tails, so compactness cannot come from them. PF-287 identifies the remaining angle exactly with a product of heavy extension-range projections, and PF-288--PF-289 make noncompactness testable using separated local physical vectors.
+Energy normalization reduces the endpoint to the relative geometry of heavy low/high extension ranges. The cheapest noncompactness witness is an exact scalar **high-band shorting deficit**, but fixed-window response profiles cannot keep it positive unless their local complexity itself diverges.
 
-The endpoint problem is therefore no longer merely “prove angular decay.” Its cheapest falsifier is a concrete **energy-normalized local low/high correlation**.
+The physical cutoff is fixed globally, yet the dense low-frequency grid forces every admissible high profile on a fixed pant window to move to arbitrarily high **local** Sobolev frequency. A persistent local heavy angle therefore requires the normalized mixed-response Riesz representatives to develop high-frequency mass or lose uniform amplitude/regularity control.
 
 ## Strongest justified claim
 
-PF-279--PF-286 separate unprojected transmission, extension strength, and relative angle. Weak trace class has a two-sided threshold-counting formulation; the convenient `tau^-1` sufficient count is stronger than the necessary endpoint envelope, while neither physical strength factor has finite weak-Schatten population decay.
+PF-279--PF-289 show that the strength factors remain heavy, the thresholded angle is exactly a product of heavy-range projections, and separated local vectors with positive Rayleigh floors and persistent normalized mixed correlation force noncompactness.
 
-PF-287 shows that the thresholded angle is the cross-Gram of isometric unit-energy extension maps. Its singular-value counting function agrees exactly with that of the product of the orthogonal projections onto the two heavy extension ranges. It also expresses the angle directly through the normalized physical precision form, eliminating the polar-decomposition mismatch.
+PF-290 optimizes the high-vector choice exactly: the squared optimal mixed correlation equals the variational energy drop `delta=1-inf_h k[ell+h]/k[ell]`, equivalently a projection energy and Schur complement. A positive limsup of these deficits on a separated tail kills compactness.
 
-PF-288 proves a local noncompactness criterion. For pairwise separated low/high local families, divergent diagonal Rayleigh quotients and a uniform lower bound on `|k[u_j,v_j]|/sqrt(k[u_j]k[v_j])` force noncompactness at every fixed heavy threshold.
+PF-291 shows that the physical low-frequency grid becomes complete on every fixed window, so every precompact family of fixed-window response profiles has vanishing optimized pairing with the high-pass space. Scalar reciprocal-width profiles are therefore insufficient.
 
-PF-289 observes that divergence is unnecessary for the basic endpoint falsifier. Uniform positive Rayleigh floors on both sides suffice after choosing small fixed thresholds. PF-216 already supplies a much stronger low floor and PF-227 supplies the required high floor. The only unresolved ingredient for this local obstruction is persistence of the normalized mixed correlation.
+PF-292 sharpens this from compactness to frequency. The constrained local Dirichlet frequency floor `omega_n` of the high-pass space diverges. More generally there is a moving cutoff `R_n->infinity` below which the high projection becomes asymptotically blind. Hence any uniformly `L^2`-bounded response family with a fixed positive fractional Sobolev bound has vanishing high-pass projection and cannot sustain the PF-290 local obstruction.
 
 ## Synthesis of evidence
 
-The next calculation should be local before it is global. Pair the known PF-216 low-symmetric module vectors with the PF-227 physical-high singular witnesses and compute or bound their normalized mixed form correlation. A nonzero tail immediately kills compactness; systematic decay would remove the cheapest negative mechanism and justify returning to global heavy-range angle counts.
+The next local test is now quantitative: can the **genuine mixed DtN response** generate nonvanishing mass above a diverging local tangential frequency scale, or force its normalized amplitude/regularity to blow up? Merely invoking a two-dimensional response, variable width, or another bounded smooth profile is no longer enough.
 
-This ordering avoids proving a sophisticated weak-trace estimate before checking whether the physical ranges are already visibly non-orthogonal at module scale.
+If a uniform positive Sobolev estimate can be proved for the actual normalized response family, the PF-290 local noncompactness route closes and the positive endpoint problem must return to global heavy-range projection counts.
 
 ## Counterevidence / boundary cases
 
-PF-289 does not assert that a persistently correlated high family exists. The PF-227 high witnesses may be selectable only in directions whose cross form with the PF-216 low vectors decays. Failure of this particular local witness does not prove compactness or weak trace class.
+PF-292 gives no rate for `omega_n` beyond divergence and does not prove a uniform Sobolev bound for the true mixed response. The physical high witnesses do exist, so some local frequency scale reaches at least up to the thin-corridor scale.
 
-Likewise essential orthogonality at every fixed threshold is only compactness; the endpoint still needs the stronger quantitative distribution required for `S_(1,infinity)`.
+Failure of the local falsifier still does not prove weak trace class.
 
 ## Epistemic status
 
-**Exact endpoint narrowing plus local falsifier:** heavy strength does not decay away, the angle equals heavy-range projection geometry, and persistent normalized local correlation with fixed Rayleigh floors is enough to disprove compactness.
+**Exact local frequency boundary:** persistent local shorting requires genuinely escaping tangential frequency or regularity; every uniformly positive-Sobolev response family is asymptotically annihilated by the fixed physical high-pass.
 
 ## Novelty/prior-art status
 
-Projection-product geometry, form methods, compactness, and weak Schatten theory retain their finding-level prior-art status. This intuition synthesizes the physical consequence of the new form-native reductions.
+Shorted forms, Schur complements, Fourier completeness, Rellich compactness, and Sobolev spectral tails retain their finding-level classifications.
 
 ## Falsification criterion
 
-Invalidate the PF-287 singular-value equivalence or produce a family satisfying PF-289's hypotheses while the heavy angle remains compact. Strategically, prove the relevant PF-216/PF-227 normalized correlations vanish with a quantitative law strong enough to feed the endpoint count; that would cross the current local gate.
+Invalidate the PF-290 shorting identity, PF-291 strong high-pass annihilation, or PF-292 diverging frequency floor. Strategically, prove or disprove a uniform fractional-Sobolev bound for the genuine normalized mixed DtN response.

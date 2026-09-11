@@ -1,33 +1,33 @@
-# MI-007 — Quantitative non-escape must target exceptional capacity, not another average law
+# MI-007 — Quantitative non-escape must target the sharp residual capacity, not another average law
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Several mature Mathia lines now have the correct exponent, average density, local regularity, or finite observability and still leave a sparse route through which the target can escape. The decisive theorem must therefore control the **capacity of the exceptional configurations in the exact statistic consumed downstream**, not merely strengthen an already-favorable global estimate.
+Several mature Mathia lines now have the correct exponent, average density, local regularity, or finite observability and still leave a sharply localized route through which the target can escape. The next theorem must control the **capacity of that residual configuration in the exact statistic consumed downstream**, and current findings increasingly identify sharp thresholds beyond which the same information class cannot be pushed.
 
 ## Strongest justified principle
 
-Analytic Frontier supplies the local-regularity control. ANF-175--ANF-179 construct prime-scale endpoint packets that retain target-sized signed memory while saturating every fixed local twist magnitude and naturally normalized derivative hierarchy. Another fixed Sobolev or finite-jet theorem does not attack the carrier-aligned exceptional geometry.
+Analytic Frontier now has a complexity threshold, not merely a fixed-regularity warning. ANF-180--ANF-182 show that fixed finite local tomography and every derivative hierarchy with `r_X a_X/K->0` can be flattened by matched endpoint packets, while `K/a_X` is the sharp transition scale for that control architecture. A source theorem must cross an absolute memory/complexity boundary rather than add another subcritical local norm.
 
-Farey Discrepancy makes the exceptional-set restriction quantitative. FD-049 rules out positive polynomial occupation loss beyond the zero-frontier exponent; FD-050 forces vanishing thresholds to occur on zero global logarithmic density; FD-051 gives universal positive terminal occupation through quotient depth `o(sqrt H)`. Any remaining collapse must be subpower, logarithmically sparse, and concentrated in low-row multiplicative placement.
+Farey Discrepancy separates signed and quadratic capacity. FD-052--FD-053 show that signed Jordan dilation rays can self-cancel through moving hosts near the square-root boundary. FD-054 shows that quadratic occupation nevertheless transfers to a nearby nonsquarefree row once `q |Hcal(X)|/X` is large. The residual escape is now below a zero-frontier-dependent row threshold, not throughout the whole low-row region.
 
-Robin Extremal reveals a two-sided capacity constraint. RE-049--RE-050 force each surviving nonzero fringe bit onto a lacunary base-two host, make the extracted first-prime contributions absolutely summable, and give a recurrent threshold-edge set of Hausdorff dimension zero. RE-051 simultaneously shows that, in the sufficiently off-critical chamber, false RH forces polynomially many exposed fan states. The unresolved question is whether that required global fan complexity can avoid the tiny capacity of the known exceptional arithmetic channel.
+Robin Extremal makes a different threshold sharp. RE-052 converts every exposed fan cell into proportional prime-gap capacity. RE-053 then constructs matched generalized-prime controls showing that support geometry + first-layer laws + a short-interval exponent `theta` cannot penetrate the chamber `Theta<=theta`. Near-critical progress requires new ordinary-prime source information, not a rearrangement of the same capacity estimate.
 
-Weil Inertia gives a complementary “too-strong global theorem” warning. WI-243 shows subexponential growth of one natural signed odd discrepancy is already RH-equivalent, while WI-244--WI-245 expose a finite-radius `Theta(a^-2)` archimedean reserve that can be attacked without first controlling the full global discrepancy.
+Weil Inertia calibrates the finite-radius tariff. WI-246 shows that jointly optimizing all positive digamma resolvents gives a strictly larger finite-aperture reserve but cannot improve the leading `a^-2` coefficient. Stronger leading coercivity must come from the signed arithmetic source or another invariant, not mean-side reoptimization.
 
 ## Program consequence
 
-Once an exponent/average/local law is proved, identify exactly what exceptional configurations still satisfy it and how much target capacity they possess. The next source theorem should rule out those configurations, couple them to a growing global obligation, or show they cannot carry enough target mass. Prefer low-row placement, support-edge hosts versus fan complexity, finite-radius tariffs, signed Fejer scale differences, or another exact residual variable over a stronger generic norm.
+Once an exponent/average/local law is proved, identify the **sharp surviving capacity threshold** and ask what extra source information can cross it. The relevant questions are now concrete: source placement versus the `K/a_X` endpoint scale, low-row occupation below the additive-transfer threshold, actual-prime structure beyond the short-interval exponent barrier, or signed arithmetic inability to pay the optimal finite-radius tariff.
 
 ## Counterevidence / boundary cases
 
-Sparse exceptional sets can still determine an extremal or first-crossing theorem; small density is not negligible by itself. Likewise many fan states do not imply many nonzero fringe bits. The principle requires a quantitative bridge from exceptional-set capacity to the final target, not a probabilistic dismissal.
+Sparse or near-threshold configurations can still determine an extremal theorem; small density is never negligible by itself. A sharp matched-control boundary also does not prove the source sits on the safe side. It only states what information must be added.
 
 ## Epistemic status
 
-**Supported exceptional-capacity principle:** several current routes have already won their global averages and still fail only through sharply localized residual configurations whose capacity must be compared with a separate target obligation.
+**Supported sharp-residual-capacity principle:** several routes have exhausted their generic regularity/average machinery and now face explicit complexity, row-scale, prime-gap, or finite-radius thresholds that require qualitatively new source information.
 
 ## Falsification criterion
 
-Show that a cited route can be completed solely by strengthening the same global/average/local estimate without controlling its persisted exceptional set or capacity, or invalidate one of the exact sparsity/complexity boundaries above.
+Show that a cited route can be completed by strengthening the same subcritical information class beyond the persisted sharp control, or invalidate one of the exact threshold results above.

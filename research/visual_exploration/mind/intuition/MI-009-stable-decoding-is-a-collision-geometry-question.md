@@ -1,45 +1,43 @@
-# MI-009 — Stable analytic novelty must beat the held-out-prime collision baseline
+# MI-009 — Stable analytic novelty must beat the dimension-dependent held-out-prime collision budget
 
 **Evidence level:** proved representation criterion plus quantitative matched null; zeta separation remains open
 
 ## Core intuition
 
-Exact finite prime phases contain set-theoretic height information that no stable decoder can necessarily use. The exact Lipschitz decoder cost is the phase-collision quotient, but the newest evidence shows that large or even polynomially growing collision complexity is not automatically zeta-specific: an ordinary omitted prime frequency already produces it.
+Exact finite prime phases can identify height while stable decoding remains impossible. More importantly, large collision complexity, divergent moments, and even some polynomial finite-window growth are already produced by an ordinary omitted prime. With growing support there is a second control: high dimension makes the matched collision event itself exponentially scarce.
 
-The meaningful source question is therefore **relative**. A zeta-facing coordinate must separate quantitatively from held-out-prime recurrence under the same representation budget.
+A meaningful zeta-facing statistic must therefore beat the held-out-prime null **while remaining in a population regime with enough matched mass to measure**.
 
 ## Strongest justified claim
 
-VIS-161 proves that two exact prime phases identify real height while the inverse on the dense torus orbit is nowhere continuous. VIS-162 shows that, for fixed support `P`, the optimal exact Lipschitz decoder constant for an observable `A` is exactly
+VIS-161--VIS-165 identify the exact collision quotient for stable decoding and give the fixed-support omitted-prime null: anchored exceedance tails are `c_d L^(-d)` and finite Diophantine type transfers that law to a polynomially growing threshold range.
 
-`Lambda_P(A;S)=sup_(t!=u) |A(t)-A(u)|/||Phi_P(t)-Phi_P(u)||`.
+VIS-166 gives the corresponding moment classification. For retained dimension `d`, the Haar collision moment `E[C^s]` is finite exactly for `s<d`; at `s=d` capped moments grow logarithmically and above `d` polynomially. Divergent high moments are therefore a dimension singularity of the null, not evidence of zeta structure.
 
-VIS-163 supplies a decisive null model. If `r` is a prime omitted from `P`, the phase `r^(-it)` has no continuous decoder from the retained torus, its orbit decoder is nowhere continuous, and its global Lipschitz collision quotient is infinite. Thus qualitative decoder failure can mean nothing more than frequency omission.
+VIS-167 transfers these capped-moment asymptotics to the deterministic prime-log orbit for explicit polynomial cap ranges. The generic control already reproduces critical and supercritical moment growth.
 
-VIS-164 anchors one retained phase exactly and computes the limiting collision law for the omitted prime. If `d=|P|-1`, fixed-threshold exceedances converge to a Haar law with tail `c_d L^(-d)`. The heavy-tail exponent is the retained support dimension, not a zero-side invariant.
-
-VIS-165 crosses the fixed-threshold limitation in a rigorous range. Linear-form lower bounds make the prime-log rotation finite Diophantine type; discrepancy theory then gives polynomial equidistribution error. Consequently the held-out-prime exceedance law remains valid for sufficiently slowly growing polynomial thresholds and forces positive-power growth of finite-window Lipschitz complexity.
+VIS-168 adds the growing-support population gate. Uniformly for `L>=1`, `log mu_d(L)=-(d/2)log d-d log L+O(d)`. With `Q` anchored samples, fixed positive-power thresholds `L=Q^gamma` have vanishing expected null exceedance mass as soon as `d->infinity`. At fixed threshold and `d~c log Q/loglog Q`, the population transition occurs at `c=2` up to lower-order terms.
 
 ## Synthesis of evidence
 
-The correct experimental/theoretical object is now a normalized comparison. Freeze retained support, anchor convention, torus metric, height window, observable normalization, and threshold law. Compare the zeta-facing collision profile with one or more held-out-prime controls matched in frequency/scale. Only an excess beyond the dimension-coded Haar/discrepancy baseline is evidence of additional analytic structure.
+Growing support is not a free way to suppress the null. It changes the experiment's sample-complexity budget. A valid source separation should predeclare `d(Q)` and `L(Q)`, verify that `Q mu_d(L)` remains nonnegligible in the matched control, and then show a zeta statistic exceeds or structurally differs from that dimension-coded law.
 
-Alternatively let the retained support grow and prove a uniform separation that survives changing torus dimension and recurrence scale. Simply increasing support without controlling that geometry does not remove the null.
+Equivalently, if one wants a positive-power threshold while `d` grows, the exponent must shrink roughly on the `1/d` scale, with an additional high-dimensional volume penalty near `log Q/loglog Q`.
 
 ## Counterevidence / boundary cases
 
-VIS-165 supplies only an existence exponent depending on the fixed prime set and a conservative threshold-growth regime, not an extreme-value law. A zeta observable could match the held-out-prime tail at fixed support yet separate in another regularity class, joint statistic, or growing-support regime.
+VIS-168 is a Haar population theorem, not a growing-dimensional discrepancy theorem for the deterministic prime-log orbit. Even when `Q mu_d(L)` is large, uniform equidistribution in growing dimension still needs proof.
 
-The criterion remains metric- and decoder-class-specific. Other stable representation classes require their own matched null and extension theorem.
+A zeta observable could separate in another representation or regularity class, but that class needs its own matched null and population budget.
 
 ## Epistemic status
 
-**Exact criterion plus quantitative omitted-source null:** stable decoder complexity is measurable directly from collisions, but fixed-support divergence and even some polynomial growth are already classical consequences of omitting one prime frequency. Source sensitivity requires quantitative separation from that baseline.
+**Exact matched-null/sample-budget boundary:** fixed-support collision tails and moments are dimension-driven; growing support suppresses the null only by also suppressing observable population mass. Source sensitivity requires separation in a jointly feasible dimension/threshold/sample regime.
 
 ## Novelty/prior-art status
 
-Kronecker--Weyl theory, linear forms in logarithms, discrepancy bounds, and Lipschitz extension remain classical as recorded in the findings. This intuition synthesizes the resulting control standard for visual research.
+Kronecker--Weyl, linear forms in logarithms, discrepancy, layer-cake moments, and high-dimensional ball-volume estimates retain their finding-level classifications.
 
 ## Falsification criterion
 
-Construct a continuous finite-support decoder for an omitted prime, invalidate the Haar tail or polynomial discrepancy regime of VIS-164--VIS-165, or show that a proposed zeta separation disappears when compared under the same held-out-prime normalization. A robust excess over that matched baseline would cross the current gate.
+Invalidate the fixed-support Haar tail/moment laws, the VIS-167 transfer regime, or the VIS-168 two-sided population bounds. Strategically, exhibit a zeta-facing collision law separated from the matched null in a regime with controlled growing-dimensional discrepancy and nonvanishing matched sample mass.

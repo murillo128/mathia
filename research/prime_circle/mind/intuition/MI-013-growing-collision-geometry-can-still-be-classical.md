@@ -1,45 +1,43 @@
-# MI-013 — Prime-Circle complexity survives only in a primitive parity-reduced long torus cocycle
+# MI-013 — Prime-Circle information survives only in resonance-sensitive global cocycle data
 
 **Evidence level:** proved structural boundary
 
 ## Core intuition
 
-Growing collision geometry is not enough. In the shared-upper construction, rank, orientation, determinant volume, full finite singular spectrum, and every fixed local window are classicalizable. The surviving fixed-width torus-return cocycle has now lost two further apparent sources of complexity: common dilation produces exact block repetition, and reflection makes the collision word exactly palindromic.
+Growing collision geometry is not enough. Common dilation is exact repetition, reversal halves the independent word, and in the nonresonant regime even the **entire bulk singular spectrum and normalized positive log-volume** converge to deterministic classical torus-return limits shared by nonprime controls.
 
-Any arithmetic information must therefore live in a **primitive, parity-reduced, depth-growing invariant** of the return cocycle.
+At the same time, limiting ratios alone are not a complete invariant at resonant points: genuine prime triples can approach the same torus point through different bounded congruence resonances and exhibit zero versus macroscopic defect. The surviving information is therefore a **primitive, parity-reduced, resonance-sensitive global transfer invariant**, not ordinary bulk spectral data.
 
 ## Strongest justified claim
 
-PC-253--PC-258 reduce the complete shared-upper defect to a pathwidth-two transfer recursion whose local coefficients are rational-torus return observables. Growing rank increases word length but not interaction width, and every fixed local window has the corresponding classical return law.
+PC-253--PC-260 reduce the shared-upper defect to a fixed-width rational-torus transfer cocycle, show common integer dilation gives exact direct-sum repetition, and establish exact reversal parity.
 
-PC-259 proves an exact dilation identity: after simultaneous integer refinement the normalized defect is `I_m tensor Delta`. The complete normalized spectrum and block transfer dynamics are copied `m` times. Common conductor growth therefore does not create new cocycle depth.
+PC-261 proves a sharp failure of ratio-only asymptotics at resonance. Two infinite all-prime families approach `(p/q,r/q)->(1/4,1/2)`; one congruence sector has identically zero defect while another retains macroscopic normalized defect. The missing datum is the exact bounded integer resonance by which the rational orbit approaches the limiting point.
 
-PC-260 proves exact reversal symmetry. Collision weights and adjacency bits are palindromic; the operator commutes with reversal; and the squared-singular-value problem splits into even and odd sectors. Since the collision count is even, one half-word together with the parity boundary condition determines the other half.
+PC-262 gives the complementary nonresonant theorem. If `1,alpha,beta` are rationally independent, the complete normalized bulk singular-square empirical measure converges to a deterministic Haar torus-return law, reproduced by pairwise-coprime classical controls.
+
+PC-263 closes the most natural zero-energy logarithmic-volume escape: the normalized positive pseudodeterminant also has a deterministic torus limit, despite the logarithmic singularity near zero.
 
 ## Synthesis of evidence
 
-The live discriminator has become highly specific. First reduce a conductor triple to its primitive ratio data; then quotient the exact reversal symmetry; only after these controls ask whether the remaining growing transfer product has an asymptotic not determined by ordinary rational-torus dynamics.
+Any remaining Prime-Circle carrier must live outside nonresonant bulk IDS and positive log-volume. Plausible currencies are spectral edges/outliers, top Lyapunov behavior, shifted determinants, fine spacing, or explicit resonance-path data whose depth grows with the primitive denominator.
 
-Candidates include parity-sector Lyapunov rates, rare-return resonances, or another statistic whose observation depth grows with the primitive denominator. Another fixed-depth trace, common refinement limit, or forward/backward comparison cannot escape the established closure.
+Such a statistic must be tested against matched rational-torus controls with the **same resonance itinerary**, not only the same limiting ratios. Otherwise PC-261 shows that a macroscopic discrepancy can be an ordinary bounded congruence effect rather than new prime arithmetic.
 
 ## Counterevidence / boundary cases
 
-PC-259 concerns common integer dilation, not arbitrary sequences of primitive prime triples. PC-260 halves the independent input but does not make the long product finite or prove its two parity sectors universal. Rational torus returns at prime-linked denominators may still have nonlocal arithmetic correlations.
+PC-262--PC-263 do not classify edge statistics, shifted spectral parameters, Lyapunov exponents, or fine spacing. PC-261 shows sensitivity to resonant approach but the two prime families come from classical finite-complexity prime patterns; their distinction is not itself an RH mechanism.
 
-Thus the remaining branch is not closed; it is stripped of two misleading notions of growth.
+The long cocycle branch remains open only after these controls are imposed.
 
 ## Epistemic status
 
-**Exact primitive/parity boundary:** full finite spectral data are fixed-width torus-coded, common refinement is exact direct-sum repetition, and reflection removes independent backward-word information. Only primitive parity-reduced long-range cocycle behavior remains unclassified.
+**Exact bulk/resonance boundary:** nonresonant bulk spectrum and positive log-volume are classical torus limits, while resonant limits can retain path-dependent macroscopic behavior. Only primitive parity-reduced global data beyond those observables remain plausible carriers.
 
 ## Novelty/prior-art status
 
-The lattice, transfer, mechanical-word, direct-sum, and reflection ingredients retain their finding-level classifications. This intuition records their joint information boundary.
+The transfer, torus-equidistribution, prime-pattern, determinant, and reflection ingredients retain their finding-level classifications.
 
 ## Falsification criterion
 
-Find a normalized common-dilation family that changes a block-normalized transfer invariant despite PC-259, or a collision word violating the exact reversal parity of PC-260. Strategically, prove that every primitive parity-sector depth-growing invariant is determined by classical torus-return data; that would close the surviving branch.
-
-## Lean-formalizable core
-
-The direct-sum dilation identity, reflection of the collision coding, and parity decomposition are finite combinatorial linear-algebra targets.
+Produce a nonresonant prime sequence whose bulk singular law or positive log-volume differs from the matched torus limit, or show that PC-261's two resonant prime families have the same normalized defect. Strategically, identify a global cocycle statistic that separates prime-linked sequences from controls matched in both limiting ratios and resonance itinerary.

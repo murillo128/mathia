@@ -1,47 +1,39 @@
-# MI-013 — Adaptive Xi recovery separates depth, inverse conditioning, and the acquisition category
+# MI-013 — Xi packet complexity costs samples, not remote conditioning, in the holomorphic acquisition category
 
-**Evidence level:** proved local finite-packet geometry and holomorphic linearized acquisition; global source coercivity remains open
+**Evidence level:** proved local growing-packet linearized acquisition; global nonlinear source coercivity remains open
 
 ## Core intuition
 
-Remote packet location is not a fundamental instability of the finite Xi inverse. For fixed packet complexity, adapted cusp coordinates make the exact local inverse well conditioned. Positive-real heat acquisition does have a sharp graded visibility loss, and relative normalization removes it only at exponential absolute cost. But the holomorphic Jacobi source has another degree of freedom: complex phase can resolve the packet without attenuating its remote carrier.
+Remote packet location is not a fundamental instability of the Xi inverse. Adapted coordinates remove inverse conditioning, and mesoscopic complex Jacobi phase removes the positive-real acquisition loss. The newest result shows that this remains true when packet complexity itself grows through the natural lattice-scale regime: a packet of `m<=N` consecutive remote atoms can be observed with uniform conditioning using only `O(m)` complex samples.
 
-The durable separation is now fourfold: **adaptive depth, inverse coordinates, acquisition category, and global source control**.
+The durable separation is now between **model complexity/sample count** and **conditioning**. The remaining obstacle is global source uncertainty—unknown support, nonlinear deformation, and analytic control of the actual Xi/Jacobi object—not deterioration of the known-packet linear acquisition matrix.
 
 ## Strongest justified claim
 
-XF-177--XF-182 show that fixed real-axis topologies can miss sufficiently complex remote surgery, that `m` moved atom pairs require exactly cusp depth `m`, and that orthogonal packet-adapted coordinates remove remote-index conditioning from the exact inverse. On raw positive heat, however, the adapted modes appear with visibility `N^-1,...,N^-m`.
+XF-177--XF-184 show that depth `m` is necessary for `m` moved atom pairs, packet-adapted coordinates remove remote inverse conditioning, positive-real acquisition has a graded/exponential visibility cost, and fixed-complexity complex Jacobi sampling turns the local linearized map into a DFT-like uniformly conditioned system.
 
-XF-183 proves this ladder belongs to the acquisition normalization rather than the packet inverse. At packet-width real scale, division by the positive reference packet heat mass cancels the common remote factor and leaves a uniformly conditioned relative map. The price is explicit: the reference mass itself is `exp(-Theta(N))`, so an additive absolute estimate would need exponentially small error to recover the relative observable.
-
-XF-184 changes the information model instead of renormalizing. Choose complex samples with `Re x~N^-2` and `Im x~N^-1`. The real part keeps the Gaussian carrier at fixed modulus while the imaginary part gives order-one relative phases across the packet. A boundedly normalized finite acquisition bank converges to the DFT and has condition number tending to one, uniformly in the remote index; the reciprocal Jacobi image is exponentially negligible.
-
-Thus the positive-real polynomial/exponential tradeoff is not an information-theoretic obstruction for the holomorphic Jacobi source.
+XF-185 removes the fixed-`m` caveat on the natural lattice scale. For a known consecutive packet of `m` atoms beginning near `N` with `2<=m<=N`, an explicit Fejer-overcomplete bank of at most `6m-1` anisotropic complex Jacobi samples has linearized singular values comparable to `sqrt(m)` with constants independent of both `N` and `m`. Reciprocal-image contamination remains exponentially small even across the full bank, and the row normalization is uniformly bounded, so the raw complex samples already contain the same lower visibility.
 
 ## Synthesis of evidence
 
-For fixed `m`, local linear acquisition of a known remote packet is now essentially solved in the complex domain. The next theorem should not seek another preconditioner. It should transport this local mechanism into the actual infinite/source problem: unknown support, nonlinear displacement, growing packet complexity, and the analytic bounds needed to sample the physical Xi/Jacobi object at the required mesoscopic complex points.
+Growing packet width no longer creates an intrinsic local conditioning barrier as long as sample count is allowed to scale linearly with complexity. A no-go based only on remote location or growing `m` is therefore too weak in the holomorphic category.
 
-A future obstruction must also be category-aware. Showing instability on the positive real axis no longer rules out the holomorphic source. Conversely, complex samples are useful only if the downstream theorem can control them without importing zero information equivalent to the target.
+The live theorem must handle **support discovery and nonlinear/global assembly**: show that the true Xi/Jacobi source supplies a feasible multiscale complex-sampling family from which unknown packets of varying location/width can be identified and controlled without importing zero data equivalent to the target.
 
 ## Counterevidence / boundary cases
 
-XF-184 is linearized, finite-packet, and packet-adapted. The sampling bank depends on the packet scale and does not solve support discovery or a global infinite deformation. Nonlinear neighborhoods may shrink with complexity, and uniformity as `m` grows is not established.
+XF-185 is linearized and assumes a known consecutive packet. It does not solve sparse support search among many possible locations, interaction between multiple packets, nonlinear displacement radius, or analytic bounds needed to evaluate the true source at all required complex sample points.
 
-Allowing complex Jacobi samples may make analytic control substantially harder. Uniform conditioning of the finite acquisition matrix does not itself supply bounds for the true source at those points.
+The `O(m)` sample cost is real; the result removes condition-number growth, not information-theoretic complexity.
 
 ## Epistemic status
 
-**Exact local acquisition boundary:** depth `m` remains sharp, the exact inverse can be well conditioned, positive-real acquisition has a graded/exponential tradeoff, and mesoscopic complex Jacobi phase removes that remote packet loss for fixed complexity. The remaining problem is global source coercivity and complexity growth.
+**Exact local complexity boundary:** for known lattice-scale packets, growing complexity costs linearly many holomorphic samples but does not worsen remote conditioning. The remaining problem is nonlinear unknown-support source coercivity and global acquisition.
 
 ## Novelty/prior-art status
 
-Moment inversion, orthogonal preconditioning, Fourier/DFT resolution, and holomorphic heat kernels are classical mechanisms. The persisted findings record their exact Xi/Jacobi specialization; this intuition synthesizes the category boundary.
+Fourier frames, Fejer kernels, Jacobi transforms, and finite-dimensional conditioning retain their finding-level boundaries.
 
 ## Falsification criterion
 
-Invalidate the XF-184 uniform singular-value bounds or show that the reciprocal Jacobi image reintroduces a remote loss at the stated complex samples. Strategically, prove a nonlinear growing-complexity source theorem using the complex acquisition bank; that would cross the current gate.
-
-## Lean-formalizable core
-
-For fixed finite packets, the adapted-coordinate identities and the asymptotic DFT acquisition matrix reduce to finite linear algebra plus elementary exponential estimates.
+Invalidate the XF-185 uniform frame bounds or show reciprocal Jacobi contamination grows enough across the bank to destroy the stated lower singular-value bound. Strategically, prove a support-unknown nonlinear source theorem using such banks.

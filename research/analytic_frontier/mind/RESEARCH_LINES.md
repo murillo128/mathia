@@ -8,16 +8,16 @@ This file holds the current mathematical questions suggested by the durable anal
 
 ANF-134--ANF-143 remove raw depth, span, slack-spend, coefficient-spread, and fixed exponential zero-pinching as existential obstructions to a same-profile cascade. The live gate remains whether the positive late cloud carries source energy/coherence that is fatal for the near-extremizer or can always be excised as negligible mass while preserving the source objective.
 
-## Control the endpoint Fejer scale-slope defect with the actual prime/rough placement law
+## Cross the sharp endpoint-memory complexity threshold with source information
 
 **Linked intuition:** `MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist`.
 
-ANF-150--ANF-172 reduce bow variance to a phase-sensitive endpoint problem: target completion forces a large positive real dyadic shifted correlation, equivalently an adjacent-scale defect of a positive Fejer family. ANF-173--ANF-176 then show that fixed-log long-interval cancellation, bounded-test decorrelation, fixed-order Gowers control, coefficient quantization, sparse/nonnegative prime-sized atoms, and any activation-saving profile whose first absolute error remains above `sqrt(X log X)` can all coexist with target-sized stored memory.
+ANF-150--ANF-179 reduce bow variance to a phase-sensitive endpoint problem and show that target-sized memory can survive fixed-log cancellation, prime-scale sparse loading, the full local coherence window, every fixed magnitude norm, and every fixed derivative hierarchy.
 
-ANF-177--ANF-179 close the obvious local-twist regularity escape. The matched prime-scale packet stays target-sized throughout its natural coherence window, saturates every fixed local `L^p` magnitude statistic, and—after removing the common carrier—has every naturally normalized derivative of every fixed order at the same critical scale. Thus fixed Sobolev order, finite twist jets, and generic band-limited smoothness do not see more than magnitude.
+ANF-180--ANF-182 sharpen the generic no-go quantitatively. Every fixed finite continuous local-probe family can collapse to rank one, and exact log-frequency centering defeats all derivative jets with `r_X a_X/K -> 0`. For the sector-aligned matched-control class, `r_X ~ K/a_X` is the sharp geometric transition: sufficiently large critical-order differentiation must see an `Omega(a_X)` discrepancy.
 
-The remaining theorem must therefore be source-specific in a stronger sense: constrain the **joint placement of the actual prime/rough residual relative to the distinguished carrier**, directly control the signed Fejer scale difference at absolute error `o(sqrt(X log X))`, or use a genuinely nonlocal/growing-complexity twist statistic whose strength comes from arithmetic rather than generic smoothness.
+The remaining theorem must therefore use the actual prime/rough placement law, directly control the signed Fejer scale difference at absolute error `o(sqrt(X log X))`, or obtain a source-accessible nonlocal/growing-complexity statistic at least as strong as the critical `K/a_X` resolution scale. The matched-control sharpness theorem does not itself make such a critical-order observable available for the arithmetic source.
 
-## Treat fixed local twist regularity as a matched control
+## Treat subcritical local-twist complexity as a matched control
 
-Low-spectrum abundance, carrier resonance, polylogarithmic discrepancy, phase-blind uniformity, amplitude quantization, generic local-twist magnitudes, and every fixed normalized local derivative hierarchy are now controls. A viable source theorem must cross the absolute endpoint-memory scale or exploit arithmetic placement/nonlocal structure that the ANF-175--ANF-179 controls do not preserve.
+Low-spectrum abundance, carrier resonance, phase-blind uniformity, coefficient quantization, generic local-twist magnitudes, fixed finite tomography, and derivative depth `o(K/a_X)` are now controls. A viable source theorem must cross the absolute endpoint-memory scale or exploit arithmetic placement/nonlocal structure that those controls cannot preserve.

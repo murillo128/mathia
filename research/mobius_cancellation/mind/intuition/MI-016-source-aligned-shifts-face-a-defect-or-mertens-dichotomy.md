@@ -1,43 +1,43 @@
-# MI-016 — The surviving Möbius currency is lifted cross-degree cancellation, not residue phase
+# MI-016 — Möbius cancellation must be a moving-degree parity-balance law
 
-**Evidence level:** supported
+**Evidence level:** supported by exact shell decompositions and asymptotic calibrations
 
 ## Core intuition
 
-Preserving source order is necessary but not sufficient. The audited square-defect route eliminates sparse-support shortcuts, principal completion, fixed high-moment upgrades, and now both single- and cross-modulus selected-character phases as cheap information carriers. The selected residue is one coherent inverse-limit gauge point.
+Residue phase is no longer a viable carrier: the selected congruence classes form one coherent inverse-limit gauge point. Nor can the missing cancellation be assigned to any fixed finite collection of square-free Hamming degrees. On the first active square-defect shell, each fixed degree is larger than the previous one by an asymptotic factor of order `loglog X/k`, so every fixed truncation is dominated by its last retained degree.
 
-The new calibration also shows that generic multiplicative randomness is not the right model of the missing cancellation. Actual Möbius has a macroscopically coherent prime layer. The surviving source information is therefore a **gauge-invariant cancellation relation between Hamming degrees inside the lifted constraint `n+q=d^2m`**.
+The surviving source information is therefore a **moving-degree parity-balance relation** inside the lifted constraint `n+q=d^2m`, strong enough to cancel an unsigned square-free population of almost quadratic energy down to the diagonal target scale.
 
 ## Strongest justified claim
 
-MC-206--MC-214 reduce the branch to raw prescribed-residue energy plus a signed principal/transverse interaction. Completion can reconstruct Mertens, while fixed higher moments approach selected-coordinate control only by becoming RH-complete.
+MC-215--MC-216 show that selected-character phases, even across square moduli, are removable by one coherent unit translation. MC-217 gives a matched random-multiplicative source with identical square-free support and incidences whose shell energy already sits at the diagonal scale, showing that the power target is combinatorially possible.
 
-MC-215 gauges the visible phase `chi(-q)` away at one modulus. MC-216 proves the normalization is coherent over the full square-modulus inverse system: reductions, CRT maps, and canonical pushforwards/pullbacks commute with one global translation. Any translation-invariant mixed-character scalar lies in the neutral sector, where the selected-residue phase is identically trivial.
+MC-218 exposes why actual Möbius is different: its coherent degree-one prime layer has weighted energy polynomially above the target. MC-219 shows degree two does not cancel it; the semiprime layer overcompensates by a factor `L_X ~ loglog X`.
 
-MC-217 gives an exact matched random-multiplicative control. Keeping square-free support, multiplicativity, the primorial pre-sieve, and every incidence `d^2 | n+q` while randomizing prime signs puts each raw shell at diagonal scale in expectation. Thus the target power scale is compatible with a source having the same unsigned combinatorics.
+MC-220 extends this cascade to every fixed degree. For fixed `k`, the degree-`k` population is asymptotic to a Poisson-like factor `L_X^(k-1)/(k-1)!` times the prime population, so `B_(k+1)/B_k ~ L_X/k`. Any fixed signed truncation alternates sign and is dominated by its final term. Required cancellation must therefore involve degrees growing with `X`.
 
-MC-218 then exposes the decisive mismatch. In actual Möbius the prime terms all have sign `-1`; on the first active square-defect shell their weighted energy is of order `X^2/(log X)^4 loglog X`, polynomially above the desired `X^(1+o(1))`. The randomized source cancels those primes among themselves. Hence deterministic diagonal-scale energy requires the composite square-free remainder to reproduce and cancel the coherent prime vector to relative weighted `L^2` error `X^(-1/2+o(1))`.
+MC-221 identifies the full scale of the burden. The selected residue classes have unsigned square-free energy `X^(2-o(1))`, while the desired signed Möbius energy is at most `X^(1+o(1))`. Writing `A_d=E_d-O_d` and `N_d=E_d+O_d`, the target is an extremely small parity bias across the complete square-free population, not cancellation of one or two low-degree layers.
 
 ## Synthesis of evidence
 
-The live problem is no longer “find more pseudorandomness” or “couple more moduli.” A successful argument must explain an extraordinarily accurate deterministic cancellation **between source degrees**, using arithmetic retained by the integer lift and ordering but erased by residue gauge.
+The natural live variable is the distribution of `omega(n)` conditioned simultaneously on `(n,q)=1` and `n ≡ -q (mod d^2)`, with its alternating parity evaluated across the moving degree window where most mass lies. A useful theorem must prove square-root-scale parity cancellation **uniformly enough across the first shell** while retaining the lift and interval order erased by character gauge.
 
-This also sharpens the principal/transverse language: the needed covariance should be derived from the decomposition of the actual Möbius source, not assumed as a generic norm inequality. Random multiplicative controls are useful only as a scale calibration, not as evidence for the mechanism.
+Generic multiplicative randomness remains only a matched scale control. The deterministic theorem must explain why the actual all-prime sign pattern produces the required moving-degree anti-alignment.
 
 ## Counterevidence / boundary cases
 
-MC-218 proves a necessary cancellation condition for the first shell; it does not show that the required higher-degree cancellation fails or succeeds. The decomposition into prime and composite square-free layers is not by itself a new analytic tool.
+MC-219--MC-221 do not prove that the needed moving-degree cancellation fails. Fixed-degree asymptotics cannot be extrapolated automatically through the central `omega(n)` range, and that is precisely where a new uniform Sathe--Selberg/sieve-level statement would have to operate.
 
-The global gauge no-go applies to operations equivariant under the coherent unit translation. An observable retaining integer representatives, interval endpoints, or the lift relation can escape it and remains precisely where source information may live.
+The gauge no-go still leaves observables that retain integer representatives, endpoints, and the lift relation.
 
 ## Epistemic status
 
-**Supported route narrowing:** canonical residue phases are gauge even across moduli, generic randomized multiplicativity reaches the desired energy scale for a mechanism unavailable to Möbius, and the deterministic target forces near-perfect cross-degree cancellation of a coherent prime layer.
+**Supported moving-degree boundary:** every fixed Hamming-degree truncation misses the deterministic cancellation, and the full target is equivalent to a square-root-scale parity-balance theorem on a large unsigned population.
 
 ## Novelty/prior-art status
 
-The inverse-limit gauge, Walsh/random-multiplicative orthogonality, Siegel--Walfisz calibration, and moment machinery retain their finding-level audits. This intuition states their joint programmatic consequence.
+The inverse-limit gauge, random-multiplicative orthogonality, sieve/Sathe--Selberg mechanisms, and shell asymptotics retain their finding-level audits.
 
 ## Falsification criterion
 
-Exhibit a translation-invariant cross-modulus scalar whose arithmetic content depends on the selected `chi(-q)` phases after the MC-216 normalization, or show that the MC-218 prime-layer energy can reach diagonal scale without cancellation from higher source degrees. Strategically, an exact lifted identity forcing the required cross-degree anti-alignment would cross the current gate.
+Invalidate the fixed-degree cascade or the unsigned-energy/parity decomposition. Strategically, prove a uniform moving-degree parity theorem on the selected square-defect shell strong enough to reduce `E_d-O_d` to the target scale.

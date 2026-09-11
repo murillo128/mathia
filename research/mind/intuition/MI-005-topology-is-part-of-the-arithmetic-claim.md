@@ -1,37 +1,39 @@
-# MI-005 — Topology and acquisition category are part of the arithmetic claim
+# MI-005 — Topology, complexity budget, and acquisition category are part of the arithmetic claim
 
 **Evidence level:** supported by exact category-sensitive findings across active Mathia lines
 
 ## Core intuition
 
-Exact information can be present yet unusable because it is measured in the wrong topology, requires an unbounded complexity budget, or is acquired through a restricted observation category. Conversely, an apparent instability may disappear when the representation or sampling category is changed. The arithmetic claim therefore includes **how information is measured, normalized, sampled, and transported**, not only which finite values are retained.
+Exact information can be present yet unusable because it is measured in the wrong topology, requires an unbounded complexity budget, or is acquired through a restricted observation category. Conversely, an apparent instability may disappear when the representation or sampling category is changed. The arithmetic claim therefore includes **what is measured, at what complexity, in which metric, and through which acquisition/target category**.
+
+The newest evidence repeatedly separates raw information from the geometry in which the target consumes it.
 
 ## Strongest justified principle
 
-Arithmetic Fidelity now gives a clean hierarchy inside one source category. Finite-total zero transport leaves exact Bohr recurrence, but AF-270 shows infinite periodic off-critical transport can remain in that category with one prime-power frequency ray. AF-271 then shows bounded divisor complexity is finitely identifiable while stable finite-prefix recovery needs geometric separation. Exact membership, complexity budget, and metric modulus are distinct.
+Arithmetic Fidelity now splits local depth from global breadth. AF-272 ties finite-prefix recovery to the cancelled quotient complexity; AF-273 shows reflection-symmetric controls can hide arbitrarily long prefixes by paying unbounded local degree; AF-274 proves that fixed local Euler degree `d` collapses the necessary prime-power depth sharply to `d`, while global fidelity still requires information at infinitely many prime locations. Local depth and prime breadth are different resources.
 
-Xi Flow gives an acquisition-category separation. XF-182 makes positive-real heat visibility deteriorate by powers of the remote index; XF-183 removes those powers by relative normalization only at exponential absolute-error cost; XF-184 removes the remote loss altogether with mesoscopic complex Jacobi samples. A positive-real no-go is therefore not a holomorphic-source no-go.
+Xi Flow gives the acquisition counterpart. XF-185 extends holomorphic packet observability to growing known complexity: `m<=N` consecutive remote atoms are uniformly visible with `O(m)` complex Jacobi samples. Growing packet complexity therefore costs sample count rather than remote condition number in that category. The remaining difficulty is unknown support/nonlinearity, not fixed conditioning.
 
-Visual Exploration gives the decoder-class version. Exact prime phases identify height set-theoretically, while stable decoding is governed by collision geometry; an omitted prime already produces nowhere-continuous decoding, a dimension-coded heavy tail, and polynomial finite-window complexity. The retained support, metric, regularity class, and threshold-growth law are all part of the source claim.
+Visual Exploration adds the statistical budget. VIS-166--VIS-168 show that held-out-prime collision moments and growing-support tails are dimension-driven, while increasing support can suppress the null simply by making its population mass unobservable. A representation change is useful only inside a sample regime where the matched control still has measurable mass.
 
-Nyman--Beurling and Prime Flute show target topology can be equally decisive. Ambient dual norms in Nyman activate only after the relevant repair is unnecessary, while the exact repair is a finite continuous-grid distance gain. Prime Flute's local strengths remain heavy, so compactness is a relative-angle property of extension ranges, not an outer-factor norm statement.
+Nyman--Beurling and Prime Flute show why raw norm or smoothness can be misleading on the target side. NB-054 makes large-ratio raw quotient columns uniformly tiny without eliminating their possible normalized directional span. PF-292 shows that a fixed physical high-pass forces a diverging **local** frequency floor; any uniformly positive-Sobolev response family is therefore invisible to the local obstruction even though the global cutoff is fixed.
 
-Weil Positivity supplies a categorical equilibrium control: changing unitality, compact-factor spectrum, or bounded product/non-product coupling does not change the KMS-weight cone while the dynamics remains in the same full-module Morita class.
+Weil Positivity separates category change from target orientation. WP-256 shows that a semifinite free-prime category can canonically source `Lambda(n)/sqrt(n)` as a positive diagonal operator; WP-257 shows normalized Fock equilibrium selects a different temperature. Changing category solved coefficient sourcing but not normalized thermodynamic selection or the completed Weil pairing.
 
 ## Consequence for synthesis
 
-A candidate theorem must specify the source and target spaces, complexity budget, metric/normalization, sampling geometry, operator ideal, domain, assembly topology, and equilibrium/representation category used downstream. A category change counts as progress only if it is forced upstream and supports a target theorem unavailable in the old category.
+A candidate theorem must state the source/target spaces, complexity budget, local depth versus global breadth, metric/normalization, sample geometry, regularity class, operator topology, and equilibrium category actually consumed downstream. A category change counts as progress only when the upstream cost is explicit and the new category supports a target statement unavailable in the old one.
 
-Do not divide by an exponentially small reference, choose a complex sampling bank, select a coefficient metric, change an operator ideal, or move to a new thermodynamic category without accounting for the information or analytic estimate needed to justify that move.
+Do not infer target force from exact recoverability, small raw quotient norms, a large support dimension, a smooth response family, or a new thermodynamic realization without checking the precise topology and complexity in which the final theorem lives.
 
 ## Counterevidence / boundary
 
-No single topology is universally correct. XF-184 positively demonstrates that a broader observation category can remove a real positive-axis barrier. The principle is not “never change category,” but “make the category part of the theorem and pay for its acquisition.”
+No single topology is universally correct. Xi Flow positively demonstrates that widening from positive-real to holomorphic acquisition removes a real barrier; WP-256 positively demonstrates that moving from normalized states to semifinite weights can recover a missing arithmetic carrier. The principle is not “never change category,” but “price the change and keep target orientation separate.”
 
 ## Epistemic status
 
-**Supported cross-line category principle:** exact membership, stable recovery, observation geometry, operator topology, and equilibrium category are separate resources whose compatibility must be proved.
+**Supported cross-line category principle:** exact membership, local complexity, global breadth, stable recovery, sample mass, operator regularity, and equilibrium/target category are distinct resources whose compatibility must be proved.
 
 ## Falsification criterion
 
-In one cited setting, show that the downstream theorem is invariant under a category/metric/acquisition change that the current findings treat as load-bearing, or invalidate one of the exact boundary results on which the separation rests.
+In one cited setting, show that the target theorem is invariant under a category/metric/complexity change that the current findings prove load-bearing, or invalidate one of the exact boundary results on which the separation rests.

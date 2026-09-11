@@ -2,20 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert multiplicative placement into pointwise physical occupation
+## Push quadratic occupation below the zero-frontier additive-transfer threshold
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-024--FD-048 separate a universal favorable bulk from a possible low-row hyperbola-sampling escape. Every fixed Jordan row carries the full zeta-zero growth exponent; nonsquarefree dilations inject lower-horizon energy; and ordinary short-interval Möbius cancellation is still insufficient to rule out sparse bad horizons.
+FD-049--FD-051 already force any residual collapse to be subpower, zero-log-density, and low-row, with universal terminal occupation through `o(sqrt H)` quotient depth.
 
-FD-049 removes polynomial-rate pointwise escape. If `Theta` is the rightmost zero frontier, the nonsquarefree occupation and Schur projective defect cannot decay faster than exponent `2 Theta-1`; under RH neither can decay at any positive polynomial rate. Subpower exceptional loss remains possible.
+FD-052--FD-053 close a tempting source-specific route: fixed and moving Jordan-weighted multiplicative rays can cancel a false-RH spike almost entirely inside their squarefree branch, even for primorial hosts reaching the square-root boundary. Signed dilation first moments are therefore not coercive enough.
 
-FD-050 upgrades the dilation constraint from separate multiplicative chains to the whole logarithmic scale. Averaging the exact scale difference in `dH/H` gives a bounded logarithmic entropy of occupation loss: thresholds tending to zero can occur only on a set of vanishing global logarithmic density. Cross-chain wandering therefore remains possible only as a genuinely sparse exceptional phenomenon.
+FD-054 gives the first positive local transfer in the quadratic statistic actually consumed by occupation. A squarefree host `q` with `q |Hcal(X)|/X -> infinity` has a nonsquarefree row only `O(1)` away carrying the same source value to first order and hence comparable quadratic energy. On a zero-frontier spike this turns on above the host scale `X^(1-Theta+delta)`.
 
-FD-051 strengthens the universal terminal bulk. Finite square sieves give the full nonsquarefree density constant from below for every quotient depth `K_H=o(sqrt H)`, uniformly over arbitrary nonnegative shell profiles. The old cube-root restriction was a counting-artifact for exact density, not a barrier to positive terminal occupation. The square-root block scale is the genuine source-independent boundary.
+The live theorem is to cross the remaining **low-row threshold**: either extend additive/quadratic transference to hosts at or below `X/|Hcal(X)|`, or prove that the total energy capable of hiding there is too small to support pointwise occupation collapse.
 
-The live theorem is now sharply localized: either use the **exact multiplicative placement/divisibility law of the physical low-row increments** to eliminate the residual subpower, zero-log-density exceptional horizons, or construct a physical-compatible escape concentrated in the low-row / square-root-boundary regime.
+## Treat signed multiplicative cancellation and quadratic physical occupation as different currencies
 
-## Treat terminal bulk, zero-frontier exponent, logarithmic density, and pointwise occupation as separate gates
-
-Terminal nonsquarefree occupation is uniformly positive through `o(sqrt H)` quotient depth; polynomial decay is ruled out by the zero frontier; and vanishing occupation cannot persist on positive logarithmic density. None of these facts alone gives a pointwise positive constant. Future arguments should target the remaining exceptional low-row placement directly rather than strengthen already-correct average laws.
+A complete Jordan ray may be almost perfectly signed-cancelled while one adjacent nonsquarefree row still carries comparable quadratic energy. Future arguments should be formulated in the target quadratic statistic and use the exact row-placement law rather than infer occupation from a signed first moment.

@@ -2,20 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Build arithmetic thermodynamics outside the KMS-Morita class of the canonical gauge system
+## Transport the canonically sourced half-density into the completed Weil pairing
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`.
 
-WP-216--WP-251 show that critical product-state amplitudes, algebraic implementation, bilateral gauge dynamics, and the natural one-sided Toeplitz repair do not generate the completed Weil orientation. The bilateral critical system has no proper nonzero-temperature KMS object, while the one-sided repair restores equilibrium by forcing the coefficient sector into a universal trace representation that erases the critical disjointness boundary.
+WP-216--WP-254 show that the canonical gauge/Toeplitz/Morita family either lacks the critical equilibrium sector or restores it in a category that erases the needed Weil orientation.
 
-WP-252 rules out ordinary nonunital stabilization as an escape. Tensoring with compacts leaves the KMS-weight cone unchanged by full equivariant Hilbert-module Morita equivalence.
+WP-255 proves that independent orthogonal prime channels cannot carry a normalized `KMS_1` state: their forced masses `1/p` do not pack into finite total state mass.
 
-WP-253 removes the invariant-corner loophole. An arbitrary spatial compact-factor Hamiltonian, even with purely continuous spectrum and no invariant rank-one projection, is still induced by a full equivariant module and has exactly the same forbidden nonzero-temperature KMS-weight cone.
+WP-256 crosses that normalization barrier semifinitely and gives a substantive positive intermediate result. Free-prime Fock spectral multiplicity plus word length and arithmetic energy canonically produce the exact diagonal operator with coefficients `Lambda(n)/sqrt(n)`. The finite Weil coefficients can therefore be source-forced without being inserted by hand.
 
-WP-254 closes a much larger apparent interaction class. Strongly continuous unitary module cocycles can produce genuinely non-product finite--archimedean dynamics, including bounded interaction Hamiltonians, while remaining exterior-equivalent within the same full coefficient module. KMS-weight induction still transports the empty cone. Thus **non-product coupling alone is not a category change**.
+WP-257 separates this coefficient scale from normalized free-Fock equilibrium. `beta=1` is the one-particle prime-zeta convergence boundary, while normalized Fock equilibrium turns on only at `beta_*>1` with `P(beta_*)=1`. The Weil half-density is canonical in the semifinite arithmetic spectral boundary, not selected by the normalized Fock phase transition.
 
-The surviving thermodynamic route must genuinely leave this equivariant Morita/exterior-equivalence class: alter the coefficient dynamics, correspondence, algebra/category, or introduce unbounded/source-forced modular data whose equilibrium law depends on prime/multiplicative energies. It must then separately generate the gamma/polar completion and the correct Weil sign.
+The live theorem is now to build a **source-forced global pairing/correspondence** that transports this diagonal half-density into the correct finite Weil autocorrelation sign and simultaneously supplies the gamma/polar completion. Passive transport and the canonical Bost--Connes overlap remain matched wrong-sign controls.
 
-## Treat nonunitality, spatial clocks, bounded interactions, and arithmetic thermodynamics as separate gates
+## Treat coefficient sourcing, equilibrium normalization, and Weil orientation as separate gates
 
-Stabilization, continuous-spectrum compact clocks, and bounded non-product module interactions can all look structurally richer while preserving exactly the same KMS obstruction. Future proposals should demonstrate the categorical invariant they actually change before interpreting new equilibrium structure as arithmetic.
+Semifinite free-Fock geometry solves a coefficient-carrier problem that the earlier KMS no-go left open. It does not solve normalized thermodynamic selection or the completed pairing. Future proposals should state explicitly which of these three structures they generate.

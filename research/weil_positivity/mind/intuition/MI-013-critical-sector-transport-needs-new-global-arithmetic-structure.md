@@ -1,43 +1,43 @@
-# MI-013 — Thermodynamic repair must leave the canonical KMS-Morita class to become arithmetic
+# MI-013 — Semifinite arithmetic thermodynamics can source the Weil coefficients but not their orientation
 
-**Evidence level:** proved category/thermodynamic boundary
+**Evidence level:** proved category/thermodynamic and coefficient-carrier boundary
 
 ## Core intuition
 
-Crossing the critical all-prime tensor boundary is a genuine representation change, but equilibrium existence is controlled by a coarser categorical invariant. The bilateral gauge system has no nonzero-temperature KMS object; the one-sided Toeplitz repair restores equilibrium by thermalizing into a universal trace; and the newest results show that ordinary stabilization, arbitrary spatial compact clocks, and even bounded non-product module interactions do not escape the same KMS-weight class.
+Leaving the canonical KMS-Morita class is necessary but not sufficient. The newest free-prime Fock construction does cross the normalized-state obstruction and, in the semifinite regime, canonically produces the exact positive Mangoldt half-density from spectral multiplicity, word length, and arithmetic energy. This is genuine progress in **coefficient sourcing**.
 
-A viable thermodynamic construction must therefore change more than unitality, product structure, or an auxiliary Hamiltonian. It must introduce **source-forced arithmetic dynamics outside the existing equivariant Morita/exterior-equivalence class**.
+It still does not produce the Weil pairing. Moreover, normalized free-Fock equilibrium selects a different inverse temperature `beta_*>1`; the Weil exponent `1/2` comes from the one-particle prime-zeta convergence boundary `beta=1`, inside the semifinite nonstate regime. Coefficient canonicity, equilibrium normalization, and target orientation are three separate gates.
 
 ## Strongest justified claim
 
-WP-247--WP-251 separate critical representation access, algebraic implementation, and equilibrium. Critical product states are disjoint from the spherical sector; the crossed product makes the automorphism inner without creating arithmetic; the bilateral gauge flow has no proper nonzero-temperature KMS weight; and the one-sided Toeplitz system has a unique KMS state whose coefficient restriction is the universal trace, erasing the critical representation boundary.
+WP-252--WP-254 show that compact stabilization, arbitrary spatial compact clocks, and bounded non-product module cocycles stay in the same equivariant Morita/exterior-equivalence class and preserve the forbidden KMS-weight cone.
 
-WP-252 proves that nonunital stabilization `K tensor B` with the inherited gauge flow has exactly the same KMS-weight cone by full equivariant Hilbert-module induction. The missing equilibrium cannot be created merely by adding compact operators.
+WP-255 tests the most direct independent-prime one-sided repair. KMS forces orthogonal prime-range masses `p^(-beta)`; at `beta=1` the sum over primes diverges, so no normalized critical KMS state can carry independent orthogonal prime channels. Bost--Connes overlap avoids this packing obstruction but returns the indefinite Weil defect.
 
-WP-253 allows an arbitrary spatial compact-factor unitary flow, including purely continuous spectrum with no invariant finite corner. The induced dynamics is still a full equivariant-module flow, so the KMS-weight cone is unchanged. Removing easy invariant-corner proofs does not remove the obstruction.
+WP-256 shows the semifinite boundary is real. On free prime Fock space, the critical Gibbs functional is a faithful semifinite KMS weight. Simple spectral multiplicity singles out prime powers intrinsically, and `P_simp H N^(-1)e^(-H/2)` has exact diagonal eigenvalues `Lambda(n)/sqrt(n)`. The finite Mangoldt half-density is therefore source-forced as a positive compact operator without inserting `Lambda` as an external scalar law.
 
-WP-254 goes further. Any compatible unitary module cocycle yields a generally non-product exterior perturbation of the compact-algebra dynamics, including bounded finite--archimedean interaction Hamiltonians. Nevertheless it remains a full module over the same coefficient dynamics, and KMS induction again identifies its equilibrium-weight cone with the forbidden original one.
+WP-257 corrects the thermodynamic interpretation. The one-particle prime-zeta boundary is `beta=1`, but the normalized Fock partition function becomes finite only after the unique `beta_*>1` with `P(beta_*)=1`. Normalized free-Fock equilibrium would select `Lambda(n)n^(-beta_*/2)`, not the Weil half-density. Thus `beta=1` is canonical as an arithmetic spectral boundary, not as the free-Fock normalization transition.
 
 ## Synthesis of evidence
 
-The relevant discriminator is categorical rather than visual dynamical complexity. A proposed Hamiltonian may mix finite and archimedean degrees strongly and still be thermodynamically trivial if it is only a module cocycle over the same coefficient system.
+The missing object is now sharper: a **source-forced global pairing/correspondence** that transports the canonically sourced diagonal coefficients into Weil test geometry with the correct orientation, while also supplying the gamma/polar completion. Passive translation energy and the canonical Bost--Connes Gram have already returned the wrong sign.
 
-The surviving routes must alter the coefficient thermodynamics or the correspondence itself: multiplicative/semigroup generators, genuinely source-dependent unbounded modular operators, a non-Morita-equivalent boundary algebra, a different Hilbert-module correspondence, or another category where the arithmetic energy is intrinsic. Even then, existence of a KMS object is only one gate; the construction must still produce the completed Weil orientation.
+A viable construction must explain both why the one-particle `beta=1` boundary is the relevant coefficient scale and how the target pairing is produced independently of simply inserting the explicit formula.
 
 ## Counterevidence / boundary cases
 
-WP-252--WP-254 do not classify arbitrary nonunital or von Neumann completions, unbounded perturbations outside the module-cocycle class, source-dependent correspondences, or changes of coefficient dynamics. Those remain genuine category changes.
+WP-256 is diagonal positivity on word labels, not a Weil form. Semifiniteness alone does not solve orientation or completion. WP-257 does not retract the half-density identity; it blocks the stronger claim that normalized free-Fock thermodynamics independently selects it.
 
-Nor do the no-go results prove that every Bost--Connes-like or semigroup model fails. They only require such a model to identify exactly which categorical data make its equilibrium law arithmetically different.
+Other non-Morita-equivalent correspondences or von Neumann categories remain open.
 
 ## Epistemic status
 
-**Exact KMS-Morita boundary:** unitality repair, compact stabilization, arbitrary spatial compact clocks, and bounded/non-product exterior-equivalent module couplings cannot create the missing nonzero-temperature equilibrium sector. Arithmetic thermodynamics must leave that class.
+**Exact coefficient/orientation boundary:** the finite Mangoldt half-density can be generated canonically in a semifinite free-prime system, but normalized equilibrium chooses another temperature and no source-derived transport to completed Weil positivity is known.
 
 ## Novelty/prior-art status
 
-Hilbert-module Morita equivalence, KMS-weight induction, spatial compact dynamics, and cocycle perturbations retain their finding-level prior-art classifications. This intuition synthesizes their consequence for the Weil architecture.
+KMS packing, Toeplitz--Cuntz/Fock thermodynamics, prime zeta, spectral multiplicity, and Hilbert-module mechanisms retain their finding-level audits.
 
 ## Falsification criterion
 
-Exhibit a nonzero-temperature KMS weight in one of the WP-252--WP-254 full-module systems despite the induction correspondence, or show that a bounded module cocycle changes the KMS-weight cone. Strategically, construct a source-dependent non-Morita-equivalent thermodynamic system whose equilibrium data generate the completed Weil sign; that would cross the current gate.
+Invalidate the WP-255 packing inequality, the WP-256 simple-spectrum half-density identity, or the WP-257 separation between `beta=1` and `beta_*`. Strategically, construct a source-forced correspondence carrying the WP-256 coefficients into the completed Weil pairing with a positivity theorem.

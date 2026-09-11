@@ -14,16 +14,14 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Compare stable decoder complexity against held-out-prime recurrence, not against zero
+## Separate zeta collision geometry from the growing-support null at measurable mass
 
 **Linked intuition:** `MI-009-stable-decoding-is-a-collision-geometry-question`.
 
-VIS-161--VIS-162 show that finite prime phases identify height set-theoretically while stable Lipschitz recovery is exactly the phase-collision quotient. VIS-163 supplies the missing matched null: a single omitted prime phase already has no continuous decoder from a fixed finite retained support and has infinite global Lipschitz collision complexity.
+VIS-161--VIS-165 establish the held-out-prime fixed-support baseline. VIS-166--VIS-167 sharpen it to a full moment threshold at retained dimension `d` and transfer capped critical/supercritical moment growth to explicit polynomial cap ranges.
 
-VIS-164 makes that null quantitative on exact anchor returns. With `d=|P|-1` unanchored retained phases, the held-out-prime collision score has a Haar exceedance tail `mu_d(L)~c_d L^(-d)`. VIS-165 then uses finite Diophantine type of prime-log rotations to obtain polynomial discrepancy and a genuine jointly growing threshold regime, giving positive-power lower bounds for the finite-window held-out-prime Lipschitz complexity.
+VIS-168 gives the growing-support population barrier: `log mu_d(L)=-(d/2)log d-d log L+O(d)`. With only `Q` anchored samples, increasing support can make the matched null disappear simply because its expected exceedance count `Q mu_d(L)` tends to zero. A source-sensitive experiment must therefore choose `d(Q),L(Q)` in a regime with enough matched null mass and then prove quantitative separation; positive-power thresholds with fixed exponent are not meaningful once `d->infinity`.
 
-A zeta-facing analytic coordinate is therefore interesting only if its normalized collision statistics **separate from this dimension-coded omitted-source baseline under the same support, metric, window, and threshold-growth law**, or if a growing-support theorem removes ordinary frequency omission as the explanation.
+## Keep source corrections, deterministic clock mixing, and collision sample complexity separate
 
-## Keep source corrections, deterministic clock mixing, and omitted-source decoder instability separate
-
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; held-out primes calibrate stable decoder failure. A useful visual clue must survive the matched control in the exact representation category consumed downstream.
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; held-out primes calibrate stable decoder failure. Growing support adds a population/sample-complexity gate that must be passed before any residual difference can be interpreted as arithmetic.
