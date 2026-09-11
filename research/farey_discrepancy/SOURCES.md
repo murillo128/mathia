@@ -34,6 +34,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 ## Möbius cancellation auxiliary input
 
 - H. Davenport, *On Some Infinite Series Involving Arithmetical Functions (II)*, The Quarterly Journal of Mathematics **os-8** (1937), 313--320, DOI `10.1093/qmath/os-8.1.313`. Role: primary source for the classical log-power saving in linear exponential sums weighted by `mu`; the zero-frequency specialization gives `M(x) <<_A x/log^A x` for every fixed `A`. `FD-030` uses only this unconditional cancellation, plus partial summation, to make the physical Mertens staircase negligible at scale `H/log^4 H` and to prove decay of a positive weighted lower-horizon Mertens combination in the square-GCD norm.
+- Kaisa Matomäki and Joni Teräväinen, *On the Möbius function in all short intervals*, Journal of the European Mathematical Society **25**(4) (2023), 1207--1225, DOI `10.4171/JEMS/1205`. Role: primary source for the uniform short-interval estimate `sum_(x<n<=x+H) mu(n) << H/(log x)^(1/3-epsilon)` for every fixed interval exponent `theta>0.55` and `H>=x^theta`. `FD-048` transfers this estimate through the exact coefficient convolution `Delta mathcal H=(n -> 1/n)*mu`, then shows by a near-half-power-smooth matched control that short-interval endpoint cancellation alone still does not force positive joint nonsquarefree Jordan occupation.
 
 ## Mertens growth and zeta-zero frontier
 
