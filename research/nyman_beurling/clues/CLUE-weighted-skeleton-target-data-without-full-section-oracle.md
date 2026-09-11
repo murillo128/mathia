@@ -7,6 +7,9 @@ target_line: nyman_beurling
 based_on:
   - research/nyman_beurling/findings/NB-034-weighted-tail-shell-kernel-gives-uniform-source-conditioning.md
   - research/nyman_beurling/findings/NB-035-weighted-tail-scalar-is-uniformly-mobius-locked.md
+  - research/nyman_beurling/findings/NB-036-vasyunin-dual-defects-are-the-exact-weighted-skeleton-oracle.md
+  - research/nyman_beurling/findings/NB-037-early-shell-gram-oracle-has-an-unavoidable-burnol-scale-defect.md
+  - research/nyman_beurling/findings/NB-038-explicit-source-direction-carries-the-burnol-scale-defect.md
   - research/nyman_beurling/clues/CLUE-weighted-tail-shell-kernel-controls-quotient-conditioning.md
   - research/nyman_beurling/clues/CLUE-target-aware-finite-section-certificate.md
 ---
@@ -57,6 +60,8 @@ On small independently specified sections, compare the proposed construction wit
 
 Use NB-035 as a compatibility check on reconstructed coefficients, not as an oracle assumption: supplying its 7 d_N error allowance already requires controlling d_N. Likewise, any claimed approach of the quotient to its early-shell matrix must be proved without assuming density of the Nyman span. If the proposed tail closure is equivalent to the desired distance estimate, expose that equivalence and stop describing it as a cheaper input.
 
+NB-037 and NB-038 now add a mandatory source-aligned test. After whitening the explicit Vasyunin duals, put S=B_M^{1/2} Z_{M,N} B_M^{1/2} and a=B_M^{1/2}u_M. Any proposed full-metric approximation must reproduce the correction seen by the explicit Rayleigh quotient a^*Sa/||a||^2. For every predeclared M/log N -> infinity, NB-038 proves that this quotient is `(1+o(1)) d_N^2`. A claimed cheap oracle must therefore explain how it obtains this directional correction without taking d_N, the full residual, or an equivalent full-section solve as input. This does not exclude a genuinely cheaper one-sided target certificate that bypasses full-metric reconstruction.
+
 A positive mathematical outcome requires a proved arithmetic tail estimate and the resulting certified distance bound or data-access reduction. A negative outcome should identify an exact missing source quantity or invalidate a specified reduced construction. An arbitrary positive-matrix counterexample only refutes the corresponding abstract assumptions, not the actual Nyman source.
 
 ## Evidence boundary
@@ -65,12 +70,16 @@ The cited findings and local clue dispositions were inspected at 7797f89e198f582
 
 ## Research disposition
 
-Accepted. `NB-036` solves the source-coordinate half exactly: Vasyunin's classical finite-support duals together with the `NB-035` endpoint selector form a projector-free dual family for the `NB-034` weighted skeleton. It also identifies the entire remaining target-aware upper-section dependence as the dual-defect pair `(Z_{M,N}, eta_{M,N})`, through the exact identities
+Accepted. `NB-036` solves the source-coordinate half exactly: Vasyunin's classical finite-support duals together with the `NB-035` endpoint selector form a projector-free dual family for the `NB-034` weighted skeleton, and the entire remaining upper-section dependence is the dual-defect pair `(Z_{M,N}, eta_{M,N})`.
+
+`NB-037` rules out the natural zero-defect approximation `H_tilde=B_M` at the requested Burnol scale. `NB-038` then localizes the obstruction further: after whitening, `S=B_M^{1/2}Z_{M,N}B_M^{1/2}` is exactly the compression of `P_{V_N^perp}` to the early-shell space, and the explicit source direction `a=B_M^{1/2}u_M` satisfies
 
 \[
-H_{M,N}^{-1}=B_M^{-1}-Z_{M,N},
+\frac{a^*Sa}{\|a\|^2}=(1+o(1))d_N^2,
 \qquad
-c_{M,N}=u_M-\eta_{M,N}.
+ a^*B_M^{1/2}\eta_{M,N}=(1+o(1))d_N^2
 \]
 
-The direction therefore survives and is substantially sharper. The precise unresolved question is whether arithmetic structure can bound this defect pair, for predeclared `M/log N -> infinity`, strongly enough to control the target quadratic form at `o(1/log N)` relative-distance precision **without** an `N`-scale projection solve or the unknown `d_N` as an oracle. Acceptance records that research target only; `NB-036` does not supply such a bound or an improved Nyman approximation rate.
+whenever `M/log N -> infinity`. Thus the missing correction is not hidden only in an unknown bad spectral direction: one canonical Möbius/Vasyunin direction already contains a multiplicatively accurate copy of the finite Nyman distance.
+
+The direction remains open because this is an information-localization theorem, not an algorithmic lower bound. The precise unresolved question is whether arithmetic structure can obtain a useful one-sided target certificate or the necessary source-aligned defect correction **strictly more cheaply** than recovering equivalent finite-distance information, without an `N`-scale projection solve or `d_N` as an oracle.
