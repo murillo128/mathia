@@ -10,6 +10,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 - Luis Báez-Duarte, *A strengthening of the Nyman-Beurling criterion for the Riemann Hypothesis*, Rend. Lincei Mat. Appl. 14 (2003), 5–11, [arXiv:math/0202141](https://arxiv.org/abs/math/0202141). Role: primary source for the integer-dilation strengthening used by the canonical discrete family.
 - Bhaskar Bagchi, *On Nyman, Beurling and Baez-Duarte's Hilbert space reformulation of the Riemann hypothesis*, Proc. Indian Acad. Sci. Math. Sci. 116 (2006), 137–146, DOI `10.1007/BF02829783`, [arXiv:math/0607733](https://arxiv.org/abs/math/0607733). Role: authoritative Hardy-space/Mellin formulation used in `NB-001`, including the target, discrete generators, boundary norm, and inner-multiplier isometries.
 
+## Zero-free-region approximation boundary
+
+- Eva A. Gallardo-Gutiérrez and Daniel Seco, *Zero-Free Regions of the Riemann Zeta Function and Approximation in Weighted Dirichlet Spaces*, Complex Analysis and Operator Theory 19 (2025), article 38, DOI `10.1007/s11785-025-01661-2`. Role: contemporary prior-art boundary for deriving zeta zero-free half-planes from Nyman--Beurling-type approximation in weighted spaces. `NB-043` does not claim the generic approximation-to-zero-free mechanism as new; its line-local contribution is the quantitative realization through the explicit logarithmic tail dual `Omega_M`.
+
 ## Quantitative approximation boundary
 
 - Jean-François Burnol, *A lower bound in an approximation problem involving the zeros of the Riemann zeta function*, Adv. Math. 170 (2002), 56–70, DOI `10.1006/aima.2001.2066`, [arXiv:math/0103058](https://arxiv.org/abs/math/0103058). Role: zero-sensitive lower-bound boundary for claims about asymptotic Nyman approximation rates.
