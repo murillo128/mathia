@@ -28,6 +28,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Kaisa Matomäki, Maksym Radziwiłł, Terence Tao, *Sign patterns of the Liouville and Möbius functions*, Forum Math. Sigma 4 (2016), e14, DOI `10.1017/fms.2016.6`, [arXiv:1509.01545](https://arxiv.org/abs/1509.01545). Role: proves positive lower natural density for every two-term value pattern `(mu(n),mu(n+1))`; `NB-027` uses the resulting positive-density same-sign nonzero pairs to turn Möbius coefficient locking into logarithmic coefficient mass transverse to an adjacent-difference matching.
 
+## Subspace-angle prior art
+
+- Jongho Yang, *A Friedrichs angle between the Nyman-Beurling spaces and the Riemann hypothesis*, J. Math. Anal. Appl. 560 (2026), 130494, DOI `10.1016/j.jmaa.2026.130494`. Role: contemporary prior-art boundary for using Friedrichs/subspace-angle geometry inside Nyman–Beurling spaces. `NB-038` does not claim angle language as novel; its line-local contribution is the exact finite early-shell projector compression and the explicit Möbius/Vasyunin direction carrying an asymptotic `d_N^2` defect.
+
 ## Explicit biorthogonal system
 
 - V. I. Vasyunin, *On a biorthogonal system associated with the Riemann hypothesis*, Algebra i Analiz 7:3 (1995), 118–135; English translation St. Petersburg Math. J. 7:3 (1996), 405–419, [MathNet](https://www.mathnet.ru/eng/aa557). Role: Theorem 7 gives the classical finite-support biorthogonal family for the canonical Nyman step functions. `NB-036` uses this result after converting Vasyunin's floor-function sign convention to the fractional-part convention of this line, then derives the weighted-skeleton dual-defect reduction.
