@@ -2,32 +2,24 @@
 
 **Status:** `EXACT-DERIVED + PRIME-SYMMETRIC-FOCK + COMPRESSED-FREE-SHIFT + BOUNDARY-GRAM + EXACT-MANGOLDT-HALF-DENSITY-DIAGONAL + CROSS-PRIME-COHERENT-COLLAPSE + FINITE-DIMENSIONAL-NONCLOSABILITY + SHARP-SIGMA-THRESHOLD + ORTHOGONAL-LABEL-CONTROL + DRURY-ARVESON-CLASSICALIZATION + DECISIVE-NARROWING + NOT-A-WEIL-BRIDGE`.
 
-`WP-259` leaves a precise positive finite-place carrier on the permutation-fixed prime Fock sector,
+`WP-259` leaves the exact positive prime-power carrier
 
 \[
 T_{\rm sym}e_{p^k}^{\rm sym}
 =(\log p)p^{-k/2}e_{p^k}^{\rm sym},
 \]
 
-while `WP-260` shows that the canonical bosonic Gibbs/Fisher Hessian cannot turn that carrier into the Weil pairing: the Hessian inserts an extra occupation factor and remains prime-factorized.
+while `WP-260` shows that the canonical bosonic Gibbs/Fisher Hessian cannot turn it into the Weil pairing: the Hessian inserts an extra occupation factor and remains prime-factorized.
 
-There is a more geometric way to try to create the missing coupling before positivity. The symmetric sector is the Drury--Arveson/symmetric-Fock compression of the free prime shifts. Its canonical compressed backward shifts erase one prime letter. On a prime-power axis they move
+The symmetric Fock sector nevertheless contains a natural operation that does create cross-prime interaction before positivity. Compress the free prime creation operators to the permutation-fixed sector and use their adjoints as one-step backward incidence maps. Every prime state then lands at the same vacuum. Combining that common boundary with the `WP-259` mean-energy factor and half-density damping gives a positive algebraic Gram form whose diagonal is exactly `Lambda(p^k)/sqrt(p^k)` at the Weil exponent and whose first prime layer has nonzero cross-prime entries.
 
-\[
-e_{p^k}^{\rm sym}\longmapsto e_{p^{k-1}}^{\rm sym},
-\]
+The finite truncations are genuinely positive and their off-diagonal entries are forced by the common vacuum rather than chosen as a kernel. But the all-prime form is nonclosable for every `0<sigma<=1`, in particular at `sigma=1/2`. More generally, **no finite-dimensional boundary Hilbert space can coherently receive the exact prime-layer squared norms `(log p)p^{-sigma}` through a closable operator in that regime**. The threshold is sharp: the same coherent boundary map is bounded for `sigma>1`.
 
-and, crucially, **all prime states `e_p` land at the same vacuum**. Combining this boundary incidence with the mean-energy factor and critical damping from `WP-259` produces an algebraic Gram form whose diagonal is exactly the Mangoldt half-density and whose prime layer has genuine cross-prime entries.
+Thus finite-dimensional coherent boundary collapse cannot be the missing global Weil geometry. Keeping an orthogonal prime label restores boundedness and the exact Mangoldt diagonal, but also restores prime separability. A surviving Fock route therefore needs a source-forced **infinite-dimensional** correlation/correspondence whose Gram remains closable at half density and whose off-diagonal structure supplies Weil orientation together with the Gamma and polar sectors.
 
-The finite truncations are positive and require no hand-picked off-diagonal kernel. Nevertheless the all-prime form is nonclosable at every `0<sigma<=1`, in particular at the Weil value `sigma=1/2`. More generally, no finite-dimensional boundary space can receive the exact prime-layer norms through a closable operator in that regime. The obstruction is sharp: for `sigma>1` the same coherent boundary map is bounded.
+## 1. Symmetric-Fock backward incidence
 
-Thus the first natural symmetric-Fock operation that actually creates cross-prime interaction before positivity fails for a structural reason stronger than the coefficient mismatch of `WP-260`: **critical Mangoldt boundary norms cannot be coherently collapsed into any fixed finite-dimensional boundary Hilbert space without losing closability.** Retaining an orthogonal prime label restores boundedness and the exact diagonal, but then returns to the separable carrier.
-
-This is a decisive narrowing, not a Weil bridge. It does not rule out a source-forced **infinite-dimensional** correlated boundary/correspondence whose Gram is Bessel/closable and whose off-diagonal structure supplies the Weil orientation together with the Gamma and polar sectors.
-
-## 1. Compressed free shifts on the permutation-fixed sector
-
-Retain the full prime Fock space of `WP-256`,
+Retain the prime Fock space of `WP-256`,
 
 \[
 \mathcal F
@@ -36,40 +28,20 @@ Retain the full prime Fock space of `WP-256`,
 \mathcal K=\ell^2(\mathbb P),
 \]
 
-with left creation isometries `L_p`, and let
+and let `P_sym` project onto the permutation-fixed sector `F_sym`. If `alpha=(alpha_q)` is an occupation vector with `|alpha|=m`, write `e_alpha` for its normalized symmetric basis vector. For the free left creation operators `L_p`, set
 
 \[
-\mathcal F_{\rm sym}=P_{\rm sym}\mathcal F
+S_p=P_{\rm sym}L_p|_{\mathcal F_{\rm sym}}.
 \]
 
-be the permutation-fixed sector of `WP-259`.
-
-For an occupation vector
-
-\[
-\alpha=(\alpha_q)_{q\in\mathbb P},
-\qquad
-|\alpha|=m,
-\]
-
-write `e_alpha` for the normalized symmetric occupation vector. The compressed creation operators
-
-\[
-S_p:=P_{\rm sym}L_p|_{\mathcal F_{\rm sym}}
-\tag{1}
-\]
-
-are the standard symmetric-Fock/Drury--Arveson weighted shifts. Directly from normalized symmetrization,
+These are the standard symmetric-Fock/Drury--Arveson weighted shifts. Direct normalized symmetrization gives
 
 \[
 S_pe_\alpha
-=
-\sqrt{\frac{\alpha_p+1}{m+1}}
-\,e_{\alpha+e_p},
-\tag{2}
+=\sqrt{\frac{\alpha_p+1}{m+1}}\,e_{\alpha+e_p},
 \]
 
-and hence, when `m>=1`,
+and therefore
 
 \[
 S_p^*e_\alpha
@@ -78,69 +50,49 @@ S_p^*e_\alpha
 \sqrt{\alpha_p/m}\,e_{\alpha-e_p},&\alpha_p>0,\\
 0,&\alpha_p=0.
 \end{cases}
-\tag{3}
 \]
 
 Let
 
 \[
-P_{\rm ax}:=P_{\rm sym}P_{\rm simp}=P_{\rm simp}P_{\rm sym}
-\tag{4}
+P_{\rm ax}=P_{\rm sym}P_{\rm simp}
 \]
 
-be the `WP-259` prime-power axis projection. Its range is exactly
-
-\[
-\mathcal A
-:=\overline{\operatorname{span}}
-\{e_{p^k}^{\rm sym}:p\in\mathbb P,\ k\ge1\}.
-\tag{5}
-\]
-
-On a prime-power state all `k` bosons occupy the same mode, so equation (3) simplifies to
+be the `WP-259` prime-power axis projection. On its basis vectors all bosons occupy one prime mode, so
 
 \[
 S_q^*e_{p^k}^{\rm sym}
 =\delta_{pq}e_{p^{k-1}}^{\rm sym},
-\qquad
-k\ge1,
-\tag{6}
+\qquad k\ge1,
 \]
 
-where `e_{p^0}^{sym}:=Omega`.
+with `e_{p^0}^{sym}=Omega`.
 
 On the algebraic finite-support prime-power span define
 
 \[
-R_0
-:=\sum_p S_p^*P_{\rm ax}.
-\tag{7}
+R_0=\sum_p S_p^*P_{\rm ax}.
 \]
 
-The sum is algebraically well-defined there: every basis vector has only one nonzero summand. Equation (6) gives
+The sum is algebraically well-defined because each basis vector has only one nonzero summand, and
 
 \[
-\boxed{
-R_0e_{p^k}^{\rm sym}=e_{p^{k-1}}^{\rm sym}.
-}
-\tag{8}
+\boxed{R_0e_{p^k}^{\rm sym}=e_{p^{k-1}}^{\rm sym}.}
 \]
 
-Thus the symmetric compression contains a canonical one-step backward incidence relation on every prime-power tower. Crucially, the bottom edges of **all** towers land at the same vacuum.
+This is the relevant source-native incidence relation: every prime-power tower steps downward, while the bottom edges of **all** prime towers meet at the common vacuum.
 
-## 2. The coherent boundary Gram has the exact Mangoldt half-density diagonal
+## 2. The boundary Gram has the exact Mangoldt half-density diagonal
 
-On `mathcal A`, the commuting diagonal operators of `WP-259` satisfy
+On the prime-power axis the `WP-259` Hamiltonian and number operator satisfy
 
 \[
-He_{p^k}^{\rm sym}
-=k\log p\,e_{p^k}^{\rm sym},
+He_{p^k}^{\rm sym}=k\log p\,e_{p^k}^{\rm sym},
 \qquad
-Ne_{p^k}^{\rm sym}
-=k e_{p^k}^{\rm sym},
+Ne_{p^k}^{\rm sym}=k e_{p^k}^{\rm sym},
 \]
 
-so
+hence
 
 \[
 (HN^{-1})^{1/2}e_{p^k}^{\rm sym}
@@ -151,280 +103,194 @@ For `sigma>0` define the algebraic boundary operator
 
 \[
 C_\sigma
-:=
-R_0(HN^{-1})^{1/2}e^{-\sigma H/2}P_{\rm ax}.
-\tag{9}
+=R_0(HN^{-1})^{1/2}e^{-\sigma H/2}P_{\rm ax}.
 \]
 
-Every factor in (9) is source-derived from the `WP-256`/`WP-259` construction: `P_ax` is the ambient simple-spectrum selector, `HN^{-1}` is the mean prime energy on a word, `e^{-\sigma H/2}` is the half-density damping, and `R_0` is the backward incidence supplied by the compressed free shifts.
-
-Equation (8) yields the exact basis action
+Its exact basis action is
 
 \[
 \boxed{
 C_\sigma e_{p^k}^{\rm sym}
-=\sqrt{\log p}\,p^{-k\sigma/2}
- e_{p^{k-1}}^{\rm sym}.
+=\sqrt{\log p}\,p^{-k\sigma/2}e_{p^{k-1}}^{\rm sym}.
 }
-\tag{10}
 \]
 
 Therefore the algebraic Gram form
 
 \[
-q_\sigma(x,y)
-:=\langle C_\sigma x,C_\sigma y\rangle
-\tag{11}
+q_\sigma(x,y)=\langle C_\sigma x,C_\sigma y\rangle
 \]
 
-is positive semidefinite on its algebraic domain, and its diagonal is
+is positive semidefinite and has diagonal
 
 \[
 \boxed{
 q_\sigma(e_{p^k}^{\rm sym},e_{p^k}^{\rm sym})
 =(\log p)p^{-k\sigma}.
 }
-\tag{12}
 \]
 
-At the Weil exponent `sigma=1/2`,
+At the Weil exponent,
 
 \[
 \boxed{
 q_{1/2}(e_{p^k}^{\rm sym},e_{p^k}^{\rm sym})
-=
-\frac{\Lambda(p^k)}{\sqrt{p^k}}.
+=\frac{\Lambda(p^k)}{\sqrt{p^k}}.
 }
-\tag{13}
 \]
 
-Thus the exact finite coefficient from `WP-259` appears here not merely as a diagonal operator eigenvalue but as a **squared boundary norm**.
+Thus the exact finite coefficient from `WP-259` appears here as a **squared boundary norm**, not merely as a diagonal eigenvalue.
 
-The form is not prime-factorized. For distinct primes `p!=q`, equation (10) at `k=1` gives
-
-\[
-C_\sigma e_p
-=\sqrt{\log p}\,p^{-\sigma/2}\Omega,
-\qquad
-C_\sigma e_q
-=\sqrt{\log q}\,q^{-\sigma/2}\Omega,
-\]
-
-and hence
+The form is also genuinely nonseparable on the first prime layer. For `p!=q`, both states land at the vacuum and
 
 \[
 \boxed{
 q_\sigma(e_p,e_q)
-=
-\sqrt{\log p\log q}\,(pq)^{-\sigma/2}.
+=\sqrt{\log p\,\log q}\,(pq)^{-\sigma/2}.
 }
-\tag{14}
 \]
 
-For a finite prime set `F`, the prime-layer Gram is therefore the rank-one matrix
+For a finite prime set `F`, this block is
 
 \[
 G_F^{(\sigma)}
 =u_F^{(\sigma)}(u_F^{(\sigma)})^*,
 \qquad
-u_p^{(\sigma)}
-:=\sqrt{\log p}\,p^{-\sigma/2}.
-\tag{15}
+u_p^{(\sigma)}:=\sqrt{\log p}\,p^{-\sigma/2},
 \]
 
-The off-diagonal entries were not selected separately; they are forced by the common vacuum endpoint of the source-derived backward incidence.
+where the symbol on the right is the `p`-component of `u_F^{(sigma)}`. Equivalently, and avoiding any component-label ambiguity,
 
-For `k>=2`, different prime towers remain orthogonal after one backward step. Hence the only new cross-prime interaction in this minimal construction is the bottom-boundary block (14). That limitation will matter below: even if the form were globally admissible, it would not yet reproduce the full Weil translation/autocorrelation geometry.
+\[
+(G_F^{(\sigma)})_{pq}
+=\sqrt{\log p\,\log q}\,(pq)^{-\sigma/2}.
+\]
 
-## 3. The all-prime coherent boundary form is nonclosable for `sigma<=1`
+The off-diagonal entries are therefore forced by the common boundary endpoint. For `k>=2`, different prime towers remain orthogonal after one backward step, so this minimal construction only mixes the bottom prime layer; it does not yet reproduce the full Weil translation/autocorrelation geometry.
 
-The prime-layer row in (10) is the linear functional
+## 3. Exact nonclosability threshold
+
+On the first prime layer, `C_sigma` contains the scalar functional
 
 \[
 \ell_\sigma(x)
 =
-\sum_p
-\sqrt{\log p}\,p^{-\sigma/2}x_p,
-\tag{16}
+\sum_p\sqrt{\log p}\,p^{-\sigma/2}x_p.
 \]
 
-initially on `c_00(P)`. It is bounded on `ell^2(P)` exactly when
+It is bounded on `ell^2(P)` exactly when
 
 \[
 \sum_p\frac{\log p}{p^\sigma}<\infty.
-\tag{17}
 \]
 
-The series in (17) is `-P'(sigma)` in the prime-zeta half-plane and converges for `sigma>1`. It diverges for every `0<sigma<=1`; at `sigma=1` this follows, for example, from the standard divergence of the logarithmic prime harmonic sum, and for smaller `sigma` by comparison.
+This is `-P'(sigma)` in the prime-zeta half-plane. It converges for `sigma>1` and diverges for every `0<sigma<=1`.
 
-Hence the coherent prime-layer functional is unbounded throughout `0<sigma<=1`. More is true: it is **not closable** there.
-
-Choose pairwise disjoint finite prime sets `F_j` such that
+The divergent regime is not merely unbounded: it is nonclosable. Choose pairwise disjoint finite prime sets `F_j` with
 
 \[
-A_j
-:=\sum_{p\in F_j}\frac{\log p}{p^\sigma}
-\longrightarrow\infty.
-\tag{18}
+A_j:=\sum_{p\in F_j}\frac{\log p}{p^\sigma}\longrightarrow\infty
 \]
 
-This is possible because (17) diverges. Define
+and define
 
 \[
 x_j
-:=
-\frac1{A_j}
-\sum_{p\in F_j}
-\sqrt{\log p}\,p^{-\sigma/2}e_p.
-\tag{19}
+=\frac1{A_j}
+\sum_{p\in F_j}\sqrt{\log p}\,p^{-\sigma/2}e_p.
 \]
 
 Then
 
 \[
-\|x_j\|^2
-=\frac1{A_j}
-\longrightarrow0,
-\tag{20}
-\]
-
-while
-
-\[
-C_\sigma x_j
-=\Omega
-\qquad\text{for every }j.
-\tag{21}
-\]
-
-Consequently
-
-\[
-x_j\to0,
+\|x_j\|^2=A_j^{-1}\longrightarrow0,
 \qquad
-C_\sigma x_j\to\Omega\ne0,
-\tag{22}
+C_\sigma x_j=\Omega.
 \]
 
-which is exactly the failure of closability. Equivalently, for `j!=l`,
+Hence
 
 \[
-C_\sigma(x_j-x_l)=0,
+x_j\to0
+\quad\text{but}\quad
+C_\sigma x_j\to\Omega\ne0,
 \]
 
-so the graph limit contains both `(0,0)` and `(0,Omega)`.
-
-Therefore
+which proves
 
 \[
 \boxed{
 C_\sigma\text{ and }q_\sigma
 \text{ are nonclosable for every }0<\sigma\le1.
 }
-\tag{23}
 \]
 
-In particular,
+In particular, the positive algebraic form with the exact Weil half-density diagonal does **not** define a closed Hilbert-space quadratic form.
 
-\[
-\boxed{
-q_{1/2}
-\text{ has the exact Mangoldt half-density diagonal but no closed Hilbert-space form.}
-}
-\tag{24}
-\]
-
-The threshold is sharp. When `sigma>1`, the first-layer row (16) is bounded because (17) converges. On every higher layer equation (10) is an orthogonal weighted backward shift with coefficients
-
-\[
-\sqrt{\log p}\,p^{-k\sigma/2},
-\qquad k\ge2,
-\]
-
-whose supremum is finite. The vacuum row and the orthogonal higher-layer blocks therefore combine to a bounded operator. Thus
+The threshold is sharp. For `sigma>1`, the vacuum row is bounded by the convergent prime sum. On every higher layer, the images are orthogonal and the coefficients `sqrt(log p) p^{-k sigma/2}` have finite supremum. Therefore
 
 \[
 \boxed{
 C_\sigma\in\mathcal B(\mathcal A,\mathcal F_{\rm sym})
-\quad\Longleftrightarrow\quad
-\sigma>1.
+\quad\Longleftrightarrow\quad\sigma>1.
 }
-\tag{25}
 \]
 
-The singularity at the Weil value is not a minor endpoint effect: `1/2` lies strictly inside the entire nonclosable regime.
+The Weil exponent `1/2` thus lies strictly inside the nonclosable regime rather than at a delicate endpoint.
 
-## 4. Finite-dimensional boundary spaces are ruled out, not only the common vacuum
+## 4. Any finite-dimensional boundary has the same obstruction
 
-The previous witness used the one-dimensional vacuum boundary. The obstruction is actually independent of that particular identification.
-
-Let `K` be any finite-dimensional Hilbert space and let
+The vacuum witness is only the one-dimensional instance of a general finite-dimensional no-go. Let `K` be any finite-dimensional Hilbert space and
 
 \[
 B_\sigma:c_{00}(\mathbb P)\to K
-\tag{26}
 \]
 
-be a densely defined algebraic operator with the exact prime-layer diagonal norms
+be an algebraic map satisfying the exact prime-layer norms
 
 \[
 \boxed{
-\|B_\sigma e_p\|^2
-=\frac{\log p}{p^\sigma}
-\qquad(p\in\mathbb P).
+\|B_\sigma e_p\|^2=\frac{\log p}{p^\sigma}.
 }
-\tag{27}
 \]
 
-Suppose `B_sigma` were closable. Because `K` is finite-dimensional, every coordinate functional of `B_sigma` would then be a closable densely defined scalar functional. A closable scalar functional on a Hilbert space is represented by an ambient Hilbert vector, so all coordinates extend boundedly. Hence the closure of `B_sigma` extends to a bounded operator on all of `ell^2(P)`.
+If `B_sigma` were closable, each scalar coordinate functional would be closable. A densely defined closable scalar functional on a Hilbert space is represented by an ambient Hilbert vector, so the finitely many coordinates extend boundedly and `B_sigma` extends to a bounded operator on all of `ell^2(P)`.
 
-A bounded operator from a Hilbert space into a finite-dimensional space has finite rank and is Hilbert--Schmidt. Therefore, for the prime orthonormal basis,
+Every bounded operator into a finite-dimensional Hilbert space is finite-rank and Hilbert--Schmidt. Consequently
 
 \[
-\sum_p\|B_\sigma e_p\|^2
-<\infty.
-\tag{28}
+\sum_p\|B_\sigma e_p\|^2<\infty,
 \]
 
-Using (27), this requires
+which here requires
 
 \[
 \sum_p\frac{\log p}{p^\sigma}<\infty.
-\tag{29}
 \]
 
-Thus
+Therefore
 
 \[
 \boxed{
 0<\sigma\le1
-\quad\Longrightarrow\quad
-\text{no finite-dimensional boundary map satisfying (27) is closable.}
+\Longrightarrow
+\text{no finite-dimensional boundary map with the exact prime norms is closable.}
 }
-\tag{30}
 \]
 
-At the target exponent this says that no fixed finite-dimensional archimedean/global boundary can coherently receive every first-prime mode with squared norm
+At `sigma=1/2`, no fixed finite-dimensional archimedean/global boundary can coherently receive every prime mode with squared norm `(log p)/sqrt(p)` through an ordinary closed Hilbert-space operator.
 
-\[
-\frac{\log p}{\sqrt p}
-\tag{31}
-\]
+A bounded finite-dimensional correction applied afterward cannot repair this. For the explicit witness above, any bounded correction sends `x_j` to zero while the bad boundary component tends to a nonzero vector. Repair must therefore change the boundary category or source map **before** the singular coherent collapse.
 
-through an ordinary closed Hilbert-space operator.
+## 5. Matched control: keep the prime label
 
-This conclusion is stable under any bounded finite-dimensional correction applied afterward. If `D` is bounded on the source and has finite-dimensional range, then for the witness (19), `Dx_j->0`; it cannot cancel the nonzero graph limit `C_sigma x_j->Omega`. Repairing (23) therefore requires changing the boundary category or the source map before the singular collapse, not appending an ordinary bounded counterterm.
-
-## 5. Matched control: retaining the prime label is bounded but loses the coupling
-
-The divergence is caused by coherent identification, not by the diagonal Mangoldt norms themselves. Keep an orthogonal copy of the prime label in the codomain and define
+The divergence comes from coherent identification, not from the Mangoldt diagonal itself. Retain an orthogonal prime label and define
 
 \[
 \widehat C_\sigma e_{p^k}^{\rm sym}
-:=
+=
 \sqrt{\log p}\,p^{-k\sigma/2}
-\bigl(e_p\otimes e_{p^{k-1}}^{\rm sym}\bigr).
-\tag{32}
+(e_p\otimes e_{p^{k-1}}^{\rm sym}).
 \]
 
 Distinct `(p,k)` basis vectors now have orthogonal images. Since
@@ -432,135 +298,96 @@ Distinct `(p,k)` basis vectors now have orthogonal images. Since
 \[
 \sup_{p,k\ge1}(\log p)p^{-k\sigma}<\infty
 \qquad(\sigma>0),
-\tag{33}
 \]
 
-`widehat C_sigma` is bounded for every positive `sigma`.
-
-Its Gram is exactly diagonal:
+`widehat C_sigma` is bounded for every positive `sigma`, with
 
 \[
 \widehat C_\sigma^*\widehat C_\sigma e_{p^k}^{\rm sym}
 =(\log p)p^{-k\sigma}e_{p^k}^{\rm sym}.
-\tag{34}
 \]
 
-At `sigma=1/2`,
+Hence at the target value
 
 \[
 \boxed{
-\widehat C_{1/2}^*\widehat C_{1/2}
-=T_{\rm sym}
-\quad\text{on }\mathcal A.
+\widehat C_{1/2}^*\widehat C_{1/2}=T_{\rm sym}
+\quad\text{on the prime-power axis}.
 }
-\tag{35}
 \]
 
-Thus the exact positive carrier from `WP-259` has a perfectly regular boundary-factorization once prime labels are kept orthogonal. What fails is precisely the finite-dimensional coherent collapse that tries to turn those labels into cross-prime Gram entries.
-
-This gives a sharp matched control:
+This gives the exact dichotomy:
 
 \[
 \boxed{
 \begin{array}{ll}
-\text{retain prime boundary label}
+\text{retain the prime boundary label}
 &\Rightarrow\text{ bounded exact Mangoldt carrier, prime-separable};\\[2mm]
-\text{collapse prime labels coherently in fixed finite dimension}
-&\Rightarrow\text{ cross-prime coupling, but nonclosable for }\sigma\le1.
+\text{collapse all prime labels into fixed finite dimension}
+&\Rightarrow\text{ cross-prime coherence, nonclosable for }\sigma\le1.
 \end{array}
 }
-\tag{36}
 \]
 
-This is more specific than the Fisher-factorization failure in `WP-260`. The symmetric Fock geometry **does** contain a canonical operation that begins to mix prime channels: the common lower boundary of the compressed backward shifts. What fails is the Hilbert-space admissibility of that mixing when the exact critical diagonal is retained.
+So `WP-260` did not exhaust the symmetric-Fock geometry: the compressed shifts do provide a natural operation that begins to mix prime channels. What fails is the Hilbert-space admissibility of finite-dimensional coherent mixing while the exact critical diagonal is retained.
 
-## 6. Finite truncations are positive but have no unrenormalized global limit
+## 6. Finite truncations do not define the global form
 
-For a finite prime set `F`, the coherent prime block (15) is positive rank one with unique nonzero eigenvalue
+For a finite prime set `F`, the coherent prime block is positive rank one and its unique nonzero eigenvalue is
 
 \[
 \lambda_F(\sigma)
-=\|u_F^{(\sigma)}\|^2
-=
-\sum_{p\in F}\frac{\log p}{p^\sigma}.
-\tag{37}
+=\sum_{p\in F}\frac{\log p}{p^\sigma}.
 \]
 
-At `sigma=1/2`,
+At `sigma=1/2`, this diverges as `F` exhausts the primes. Normalizing by `lambda_F(1/2)^{-1}` keeps the block norm bounded but sends every fixed diagonal coefficient to zero:
 
 \[
-\lambda_F(1/2)\longrightarrow\infty
-\tag{38}
+\frac{(\log p)p^{-1/2}}{\lambda_F(1/2)}\longrightarrow0.
 \]
 
-as the truncation exhausts the primes. Therefore finite positivity is not evidence for a global closed form.
-
-One can normalize the coherent block by `lambda_F(sigma)^{-1}` to keep its norm bounded, but then the diagonal at each fixed prime becomes
-
-\[
-\frac{(\log p)p^{-\sigma}}
-{\lambda_F(\sigma)}
-\longrightarrow0.
-\tag{39}
-\]
-
-That normalization destroys the exact Mangoldt coefficient it was meant to transport. Subtracting a divergent scalar/rank-one counterterm instead would no longer be positivity forced by the original Gram and would require a separately justified renormalized category.
+So normalized finite positivity does not converge to the desired global carrier. Subtracting an ad hoc divergent rank-one counterterm would leave the geometry-forced Gram category and would require a separately justified renormalized theory.
 
 ## 7. Prior art and novelty boundary
 
-The identification of symmetric Fock space with Drury--Arveson space, and of its coordinate multipliers/d-shift with the symmetric compression of free creation operators, is classical multivariable operator theory. A standard survey is Michael Hartz and Orr Moshe Shalit, *Operator Theory and Function Theory in Drury--Arveson Space and Its Quotients*, arXiv:`1308.1081`, with updated Springer reference versions. The weighted-shift formulas (2)--(3) are standard consequences of the normalized monomial/occupation basis.
+The identification of symmetric Fock space with Drury--Arveson space, and of its coordinate multipliers with the symmetric compression of free creation operators, is classical multivariable operator theory. A standard survey is Michael Hartz and Orr Moshe Shalit, *Operator Theory and Function Theory in Drury--Arveson Space and Its Quotients*, arXiv:`1308.1081`. The weighted-shift formulas above are standard consequences of the normalized occupation basis.
 
-The prime zeta function
+The prime zeta function `P(s)=sum_p p^{-s}` and the identity `P'(s)=-sum_p (log p)p^{-s}` in its half-plane of convergence are classical; see C.-E. Fröberg, *On the prime zeta function*, BIT 8 (1968), 187--202, DOI `10.1007/BF01933420`. The functional-analytic facts about closable scalar functionals and finite-rank Hilbert--Schmidt operators are also standard.
 
-\[
-P(s)=\sum_p p^{-s}
-\]
+No novelty is claimed for those ingredients. A bounded search across symmetric-Fock/Drury--Arveson operator theory and prime/Riemann-gas literature found the standard pieces but not this exact Mathia compatibility obstruction. The Mathia-specific content is their forced combination after `WP-256`--`WP-259`: the prime-power selector and mean-energy factor fix the diagonal boundary norm, while the most direct compressed-shift incidence that creates cross-prime interaction identifies the prime layer in a common finite-dimensional boundary. The exact prime-sum threshold then kills closability at and well beyond the Weil exponent.
 
-and its derivative
+This is also **not** a restatement of `WP-227`. There the target numbers
 
-\[
-P'(s)=-\sum_p(\log p)p^{-s}
-\]
-
-in the half-plane of convergence are classical; see C.-E. Fröberg, *On the prime zeta function*, BIT 8 (1968), 187--202, DOI `10.1007/BF01933420`.
-
-The facts about closable operators, bounded functionals on Hilbert space, and finite-rank operators being Hilbert--Schmidt are standard functional analysis. No novelty is claimed for any of those ingredients, for the Drury--Arveson shift itself, or for prime-zeta convergence.
-
-A bounded search across Drury--Arveson/symmetric-Fock operator theory and prime/Riemann-gas literature found the standard ingredients but not a theorem identifying this exact Mathia compatibility obstruction. The durable Mathia-specific result is the combination forced by `WP-256`--`WP-259`: the source-derived prime-power selector and mean-energy square root fix the diagonal boundary norm to `Lambda(p^k)p^{-k sigma}`, while the most direct compressed-shift operation that creates cross-prime interaction identifies the prime layer in finite dimension. Equations (25), (30), and (35) then show that this interaction is nonclosable throughout `sigma<=1`, including the required Weil value `1/2`.
-
-This is a negative compatibility theorem, not a claim that finite-dimensional boundary responses are absent from classical operator theory.
-
-The normalization is also importantly different from `WP-227`. There the Weil numbers
 \[
 c_{p,k}=(\log p)p^{-k/2}
 \]
-are imposed as **cross-block amplitudes** of a positive completion, so positivity charges the squared Hilbert--Schmidt budget
+
+are cross-block amplitudes of a positive completion, so positivity charges the squared budget
+
 \[
 \sum_{p,k}c_{p,k}^2
 =\sum_p\frac{(\log p)^2}{p-1}.
 \]
-Here the same target coefficient is instead the **Gram diagonal / squared boundary norm**
+
+Here the same target coefficient is the **Gram diagonal / squared boundary norm**,
+
 \[
 \|C_{1/2}e_{p^k}\|^2=c_{p,k},
 \]
-so a finite-dimensional coherent boundary would have to carry amplitudes `sqrt(c_{p,k})`. Its first prime layer already costs
+
+so finite-dimensional coherent collapse must carry amplitudes `sqrt(c_{p,k})`. Its first layer already demands
+
 \[
 \sum_p c_{p,1}
 =\sum_p\frac{\log p}{\sqrt p}
 =+\infty.
 \]
-Thus the present obstruction is not a rediscovery of the `WP-227` trace bound: it is a stronger finite-dimensional **closability** obstruction for the source-native symmetric-Fock boundary scalarization that only becomes available after `WP-259`.
 
-## 8. Consequence for the Weil-positivity mandate
+`WP-227` is therefore an auxiliary-trace obstruction for a different normalization; `WP-261` is a finite-dimensional **closability** obstruction for the source-native symmetric-Fock boundary scalarization.
 
-`WP-260` left open a nonseparable source-forced pairing because the canonical Gibbs/Fisher metric was too local. The compressed symmetric shifts provide a natural next candidate and sharpen what "nonseparable" must mean.
+## 8. Consequence and remaining escape
 
-The candidate succeeds at two nontrivial finite-side requirements:
-
-1. its squared boundary norms reproduce the exact Mangoldt half-density without inserting `Lambda` by hand;
-2. its coherent bottom boundary creates genuine cross-prime Gram terms before positivity.
-
-But those two successes are incompatible with a closed all-prime form when the boundary has fixed finite dimension. Therefore
+The candidate succeeds at two nontrivial finite-side requirements: its squared boundary norms reproduce the exact Mangoldt half-density without inserting `Lambda` by hand, and its common bottom boundary generates genuine cross-prime Gram terms before positivity. Those successes are incompatible with a closed all-prime form in fixed finite boundary dimension:
 
 \[
 \boxed{
@@ -570,9 +397,8 @@ But those two successes are incompatible with a closed all-prime form when the b
 \not\Rightarrow
 \text{a closable positive global pairing}.
 }
-\tag{40}
 \]
 
-This does **not** rule out all nonseparable Fock/correspondence mechanisms. An infinite-dimensional boundary can preserve the critical norms, and a bounded Bessel family can have nonzero cross-prime correlations. What remains missing is precisely a **source-forced infinite-dimensional correlation kernel or correspondence** whose Gram is closable at `sigma=1/2`, is not merely the orthogonal label-preserving carrier (34), produces the Weil translation/autocorrelation orientation rather than an arbitrary positive completion, and simultaneously supplies the Gamma and polar sectors.
+This does **not** rule out every nonseparable Fock/correspondence mechanism. An infinite-dimensional boundary can preserve the critical norms, and a bounded Bessel family can have nonzero cross-prime correlations. What remains open is a **source-forced infinite-dimensional correlation kernel or correspondence** whose Gram is closable at `sigma=1/2`, is not merely the orthogonal label-preserving carrier, produces the oriented Weil translation/autocorrelation structure rather than an arbitrary positive completion, and simultaneously supplies the Gamma and polar sectors.
 
-The finite-dimensional archimedean shortcut is therefore closed. Any surviving Fock-interface route must explain why its infinite-dimensional boundary correlation is canonical and arithmetic, rather than choosing a kernel to regularize the divergence.
+The finite-dimensional archimedean shortcut is therefore closed. Any surviving Fock-interface route must explain why its infinite-dimensional boundary correlation is canonical and arithmetic, rather than choosing a kernel only to regularize the divergence.
