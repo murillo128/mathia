@@ -44,6 +44,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - G. H. Hardy, *Sur les zéros de la fonction ζ(s) de Riemann*, Comptes rendus hebdomadaires des séances de l'Académie des sciences **158** (1914), 1012--1014. Role: primary source for Hardy's theorem that infinitely many nontrivial zeros of `zeta(s)` lie on `Re(s)=1/2`. `FD-033` uses only the existence of one such zero to force divergence of the critical Mellin square norm attached to the coefficient summatory function with Dirichlet series `zeta(s+1)/zeta(s)`; no RH assumption or zero-density input is used.
 
+## Zeta one-line frequency auxiliary input
+
+- Kevin Ford, *Vinogradov's Integral and Bounds for the Riemann Zeta Function*, Proceedings of the London Mathematical Society **85**(3) (2002), 565--633, DOI `10.1112/S0024611502013655`. Role: primary source for the Vinogradov--Korobov bound `|zeta(sigma+it)| << |t|^(B(1-sigma)^(3/2)) log^(2/3)|t|`; `FD-044` uses only its `sigma=1` specialization after exact cancellation of the centered Jordan-density pole, obtaining a `log^(2/3)` frequency cost for sub-square-root finite-row windows. No RH, zero-density, or zero-spacing input is imported.
+
 ## Ordered Farey index and nonconsecutive determinant algebra
 
 - R. R. Hall and P. Shiu, *The index of a Farey sequence*, Michigan Mathematical Journal **51**(1) (2003), 209--223, DOI `10.1307/mmj/1049832901`. Role: primary source for the classical Farey index `nu=(q_(i-1)+q_(i+1))/q_i` and the exact first-moment identity `sum_i nu_i=3N(Q)-1`; `FD-011` uses these as the prior-art boundary for the raw nearest-neighbor increment Plücker field.
