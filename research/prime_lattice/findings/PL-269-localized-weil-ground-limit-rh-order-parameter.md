@@ -26,7 +26,7 @@ Then
 
 More precisely, the two alternatives are separated sharply:
 
-- under RH, `PL-268` gives `lambda_a>0` for every finite `a`, `PL-266`/`PL-268` give strict decrease in `a`, and Xuefeng Zhu's 2026 conditional compact-window upper bound implies
+- under RH, `PL-268` gives `lambda_a>0` for every finite `a`; `PL-266` gives monotonicity and `PL-268` sharpens it to strict decrease; Xuefeng Zhu's 2026 conditional compact-window upper bound implies
 
 \[
 0<\lambda_a\le \lambda^*(a)
