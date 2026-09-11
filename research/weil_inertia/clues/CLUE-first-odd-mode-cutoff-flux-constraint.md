@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-first-odd-mode-cutoff-flux-constraint
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: weil_inertia
 based_on:
@@ -85,3 +85,17 @@ A meaningful positive outcome is a quantitative source/collar inequality beyond 
 ## Evidence boundary
 
 No collar estimate, prime-phase exclusion, first-mode contradiction, or RH consequence is supplied. The standard localization algebra is a proposed diagnostic, not a new positivity mechanism. WI-247 provides the candidate class and smaller-window positivity; WI-249 provides the adversarial calibration, not a first-zero-mode counterexample. Suzuki's localized-form framework is the existing primary-source anchor, arXiv:2606.09096; its form-domain and normalization statements must be checked when reconstructing the test. Check current findings and adjacent review sidecars before relying on either input.
+
+## Research disposition
+
+`WI-250-first-odd-mode-cutoff-flux-has-an-explicit-nonlocal-ims-budget.md` validates the candidate localization formula on the closed form domain, fixes the source sign and factor, and computes the mean-sector error exactly from the positive exponential-resolvent expansion. For every first odd zero mode and every even cutoff supported in `(-b,b)`, it obtains
+
+\[
+\int_0^{2a}D_\chi(v;h)\,d\nu_a(h)
+\ge
+\lambda_b^-\|\chi v\|_2^2
+-
+\frac14\zeta\!\left(3,\frac54\right)\|\chi'\|_\infty^2.
+\]
+
+The clue is therefore **accepted** as a viable first-mode-specific route, but not resolved. The exact IMS/source budget is now established; the unresolved gate is quantitative coercivity. Current results do not lower-bound the product `lambda_b^- ||chi v||_2^2` at a useful scale, do not force enough interior mass, and do not upper-bound the signed source flux on the actual zero-mode class. Future work should target those quantities, or a compatibility theorem for several nested cutoffs, rather than re-derive the localization identity or return to a uniform all-odd discrepancy bound.
