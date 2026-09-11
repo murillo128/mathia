@@ -12,6 +12,7 @@ based_on:
   - research/nyman_beurling/findings/NB-038-explicit-source-direction-carries-the-burnol-scale-defect.md
   - research/nyman_beurling/findings/NB-039-weighted-tail-dilation-copies-make-the-inverse-distance-compression-threshold-sharp.md
   - research/nyman_beurling/findings/NB-040-zero-loss-weighted-skeleton-repair-is-uniquely-target-oracular.md
+  - research/nyman_beurling/findings/NB-041-logarithmic-zero-loss-tail-coordinate-has-a-shrinking-mobius-dual-selector.md
   - research/nyman_beurling/clues/CLUE-weighted-tail-shell-kernel-controls-quotient-conditioning.md
   - research/nyman_beurling/clues/CLUE-target-aware-finite-section-certificate.md
 ---
@@ -64,19 +65,37 @@ Use NB-035 as a compatibility check on reconstructed coefficients, not as an ora
 
 NB-037 and NB-038 add a mandatory source-aligned test. After whitening the explicit Vasyunin duals, put S=B_M^{1/2} Z_{M,N} B_M^{1/2} and a=B_M^{1/2}u_M. Any proposed full-metric approximation must reproduce the correction seen by the explicit Rayleigh quotient a^*Sa/||a||^2. For every predeclared M/log N -> infinity, NB-038 proves that this quotient is `(1+o(1)) d_N^2`. A claimed cheap oracle must therefore explain how it obtains this directional correction without taking d_N, the full residual, or an equivalent full-section solve as input. This does not exclude a genuinely cheaper one-sided target certificate that bypasses full-metric reconstruction.
 
-NB-039 and NB-040 add a second mandatory test. NB-039 proves that the source-faithful `(M-1)`-dimensional quotient necessarily loses `Theta(1/M)` target energy for `N>=2M`; this is not an artifact of a crude estimate. NB-040 shows that one additional target-aware dimension removes that loss exactly and still leaves an `N`-uniform polynomially conditioned `M`-dimensional skeleton. But the unique extra retained line is `span(P_W e)`, equivalently the projected Riesz representer of the target functional, and the corresponding coefficient quotient adds the logarithmic tail moment
+NB-039 and NB-040 add a second mandatory test. NB-039 proves that the source-faithful `(M-1)`-dimensional quotient necessarily loses `Theta(1/M)` target energy for `N>=2M`; this is not an artifact of a crude estimate. NB-040 shows that one additional target-aware dimension removes that loss exactly and still leaves an `N`-uniform polynomially conditioned `M`-dimensional skeleton. The unique extra retained line is `span(P_W e)`, equivalently the projected Riesz representer of the target functional, and the corresponding coefficient quotient adds the logarithmic tail moment
 
 \[
 \sigma_{M,N}=\sum_{n=M}^N\frac{a_n}{n}\log\frac nM.
 \]
 
-For the optimal coefficients this coordinate participates in the exact identity containing `1-d_N^2`. Therefore a proposed zero-loss repair must show how to obtain this direction or an equivalent target scalar from source arithmetic without simply reconstructing the full target projection. Merely adjoining the target functional and then orthogonalizing it is now known to repackage the oracle rather than remove it.
+NB-041 now shows that this scalar is not wholly uncontrolled. It constructs an explicit source-defined ambient dual `Omega_M`, independent of `N`, with
+
+\[
+\langle g_n,\Omega_M\rangle=
+\begin{cases}
+0,&n\le M,\\
+\log(n/M)/n,&n>M,
+\end{cases}
+\]
+
+and proves
+
+\[
+\sigma_{M,N}(a_N)=\Theta(M)+O\!\left(\frac{d_N}{\log M}\right),
+\qquad
+\sup_{N\ge M}|\sigma_{M,N}(a_N)|\ll\frac1{\log M},
+\]
+
+where `Theta(M)=1-sum_{n<=M} mu(n) log(M/n)/n` is source arithmetic. Therefore the next construction should use this as the scalar baseline rather than treating `sigma` as a free oracle. The decisive obstruction still survives: `P_W Omega_M=P_W e`, so obtaining the unique geometric repair line still requires the same weighted-tail target projection, and `O(1/log M)` does not by itself meet `o(1/log N)` for every merely superlogarithmic cutoff.
 
 A positive mathematical outcome requires a proved arithmetic tail estimate and the resulting certified distance bound or data-access reduction. A negative outcome should identify an exact missing source quantity or invalidate a specified reduced construction. An arbitrary positive-matrix counterexample only refutes the corresponding abstract assumptions, not the actual Nyman source.
 
 ## Evidence boundary
 
-The current Research Watch disposition relies on the canonical findings listed in `based_on`; check their current claims and any adjacent review sidecars before adoption. No reduced projector algorithm, tail enclosure, numerical experiment, improved approximation rate, or Lean proof is supplied here. Schur elimination, projector compression, principal-angle language, target-orthogonalization, and perturbation estimates are standard tools, not novelty claims; the unresolved contribution would be source-specific control of the eliminated tail. The existing accepted and resolved clues remain unchanged.
+The current Research Watch disposition relies on the canonical findings listed in `based_on`; check their current claims and any adjacent review sidecars before adoption. No reduced projector algorithm, full target-tail enclosure, improved Nyman approximation rate, or Lean proof is supplied here. Schur elimination, projector compression, principal-angle language, target-orthogonalization, and perturbation estimates are standard tools, not novelty claims; the unresolved contribution would be source-specific control of the eliminated tail. The existing accepted and resolved clues remain unchanged.
 
 ## Research disposition
 
@@ -92,6 +111,8 @@ Accepted. `NB-036` solves the source-coordinate half exactly: Vasyunin's classic
 
 whenever `M/log N -> infinity`. Thus the missing correction is not hidden only in an unknown bad spectral direction: one canonical Möbius/Vasyunin direction already contains a multiplicatively accurate copy of the finite Nyman distance.
 
-`NB-039` sharpens the compression boundary: the additive target loss is intrinsically of order `1/M` for this quotient, and relative preservation occurs exactly when `M d_N^2 -> infinity` (for `N>=2M`). `NB-040` then shows that exact preservation can be recovered with only one additional dimension and polynomial conditioning, but uniquely by retaining the target projection line `span(P_W e)`. The corresponding target-augmented quotient has an explicit extra logarithmic tail coordinate; for the optimal vector its value is tied directly to `1-d_N^2`. Hence dimension and conditioning are no longer plausible explanations for the missing information: the unresolved gate is source access to that one target-selected degree of freedom.
+`NB-039` sharpens the compression boundary: the additive target loss is intrinsically of order `1/M` for this quotient, and relative preservation occurs exactly when `M d_N^2 -> infinity` (for `N>=2M`). `NB-040` then shows that exact preservation can be recovered with only one additional dimension and polynomial conditioning, but uniquely by retaining the target projection line `span(P_W e)`.
 
-The direction remains open because these are information-localization and method-boundary theorems, not algorithmic lower bounds. The precise unresolved question is whether arithmetic structure can obtain a useful one-sided target certificate, the necessary source-aligned defect correction, or the logarithmic tail coordinate **strictly more cheaply** than recovering equivalent finite-distance information, without an `N`-scale projection solve or `d_N` as an oracle.
+`NB-041` removes the coarse absolute uncertainty of the associated logarithmic coefficient scalar. Its explicit cumulative Möbius/Vasyunin dual has norm `O(1/log M)` and forces the optimal `sigma_{M,N}` into a source-defined `O(1/log M)` window uniformly in `N`. This is a genuine data-access reduction, but not yet the requested Burnol-scale reduction: the scalar estimate is too coarse for arbitrary `M/log N -> infinity`, and projecting the explicit dual onto the weighted tail reproduces exactly the same target-selected line as `NB-040`.
+
+The direction therefore remains open. The precise unresolved question is now narrower: can arithmetic structure obtain the projected repair geometry, the source-aligned defect correction of `NB-038`, or an equivalent one-sided target certificate at `o(1/log N)` accuracy **strictly more cheaply** than recovering equivalent finite-distance information, without an `N`-scale projection solve or `d_N` as an oracle?
