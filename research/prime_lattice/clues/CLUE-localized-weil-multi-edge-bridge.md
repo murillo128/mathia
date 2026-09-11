@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-localized-weil-multi-edge-bridge
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: prime_lattice
 based_on:
@@ -40,4 +40,25 @@ As a matched control, replace the von Mangoldt weights while keeping the same un
 
 ## Evidence boundary
 
-No comparison between the CvS path and Suzuki's localized operator is currently established. PL-264 proves only the insufficiency of single-edge singular geometry. WI-238 supplies the finite-radius zero-mode consequence and finite-prime locality, not an identification with Prime Lattice's finite path. The clue asks for that missing bridge and must not be cited as evidence that the two operator families are equivalent or that either yields RH positivity unconditionally.
+At proposal time, PL-264 established only the insufficiency of single-edge singular geometry and the clue treated the relation to Suzuki's localized operator as missing. `PL-265` now resolves that bridge question by identifying both constructions with the same localized completed Weil form under the standard parameter map. This resolution does **not** establish RH positivity, convergence of zeta-zero spectra, or a uniform finite-dimensional theorem for the first crossing radius. Those remain outside the evidence of the clue.
+
+## Research disposition
+
+Outcome: prior-art redirect; bridge question resolved, sign problem remains open.
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-265-cvs-suzuki-common-localized-weil-form.md]]
+
+The decisive test has a stronger answer than the clue anticipated. Under the standard normalizations, the accumulated CvS path and Suzuki localization are not distinct completed quadratic forms requiring a new transform. Connes--Consani--Moscovici use the multiplicative semilocal interval `[lambda^-1,lambda]` with prime horizon `x=lambda^2`; Suzuki explicitly rewrites the same closed localized Weil form on `[-a,a]` with `a=log lambda`. Hence
+
+\[
+c=x=\lambda^2=e^{2a},\qquad L=\log c=2a,
+\]
+
+so the CvS interval `[-L/2,L/2]` and Suzuki interval `[-a,a]` agree. Suzuki's screw kernel gives the same source horizon directly: on that interval the difference variable has `|x-y|<=2a`, and its von-Mangoldt sum contains only `q<=e^{2a}`.
+
+Accordingly, on the defining finite Galerkin family, the CvS matrix already evaluates the same **unshifted localized Weil quadratic form** represented in the continuum by Suzuki's canonical self-adjoint operator `A_a`. The sign comparison on the common test subspace is therefore exact; it is not a new Schur complement or spectral shift.
+
+This does not resolve the RH-facing motivation. The identity supplies no reason that the specific zeta Weil form is nonnegative. Nor does fixed-radius Galerkin completeness automatically give uniform control of the *first crossing radius* as the finite dimension grows. `PL-261` already gives form-core detectability at fixed semilocal scale, while `PL-262` warns that expanding-window analytic conclusions require quantitative stability. The live target is therefore a source-forced sign theorem or a quantitative moving-radius/large-window limit for the **common** form, not a bridge between CvS and Suzuki.
+
+The matched-control test also survives in the narrower form expected from `PL-264`: changing the source weights while retaining the same one-edge templates still leaves the representation bridge intact. What changes is the global signed arithmetic content. Therefore the existence of the bridge itself is template geometry; any future advance must use a zeta-specific global relation that forces the original Weil orientation rather than merely repackaging the accumulated prime-power events.
