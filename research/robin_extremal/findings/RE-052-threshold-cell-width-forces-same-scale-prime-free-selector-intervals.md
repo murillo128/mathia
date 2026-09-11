@@ -300,7 +300,7 @@ Y^{1-b_1}\log Y.
 \tag{31}
 \]
 
-The selected blocks escape to infinity, hence so do these `Y`. The prime-free interval lies inside `S_C`, and (17) places all of `S_C` at `(1+o_J(1))Y`. Let `p_n<p_{n+1}` be the consecutive ordinary primes bracketing this prime-free interval. Since `P_C=o(Y)` at the exponent displayed in (31) and the interval itself is at scale `Y`, both bracketing primes are also `(1+o_J(1))Y` after harmlessly shortening the interval if necessary. Thus
+The selected blocks escape to infinity, hence so do these `Y`. The prime-free interval lies inside `S_C`, and the uniform relation (17) places all of `S_C` in an `o(Y)` neighborhood of `Y`. In particular `P_C=o(Y)`. Let `p_n<p_{n+1}` be the consecutive ordinary primes bracketing this prime-free interval. The prime number theorem implies consecutive-prime ratios tend to one, so these bracketing primes are `(1+o(1))Y`. Therefore
 
 \[
 p_{n+1}-p_n\ge P_C
