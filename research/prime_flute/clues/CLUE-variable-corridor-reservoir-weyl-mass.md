@@ -12,6 +12,7 @@ based_on:
   - research/prime_flute/findings/PF-281-energy-normalized-cross-form-removes-bounded-frequency-coupling-gate.md
   - research/prime_flute/findings/PF-282-energy-normalized-cross-form-is-a-saturated-extension-angle.md
   - research/prime_flute/findings/PF-283-heavy-angle-counting-criterion-for-weak-trace-endpoint.md
+  - research/prime_flute/findings/PF-284-two-sided-heavy-angle-counting-sandwich.md
   - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
@@ -31,7 +32,7 @@ f(t)=\frac{t}{\sqrt{1+t^2}},
 
 where the bounded factors `F_P,F_H` record extension strength and `\Gamma_{PF}=V_P^*V_H` records the relative angle of the low-fed and high-fed extension ranges.
 
-PF-283 sharpens the remaining weak-trace problem to one scale-coupled count. For `0<\tau<1`, let
+PF-283 isolates a clean sufficient endpoint estimate. For `0<\tau<1`, let
 
 \[
 Q_P^\tau=\mathbf1_{[\tau,1]}(F_P),
@@ -47,26 +48,60 @@ Then
 N_T(4\tau)\le N_{\Gamma_{PF,\tau}}(2\tau),
 \]
 
-so the concrete sufficient endpoint estimate is
+so
 
 \[
 \boxed{
 \sup_{0<\tau<\tau_0}
-\tau\,N_{\Gamma_{PF,\tau}}(2\tau)<\infty.}
+\tau\,N_{\Gamma_{PF,\tau}}(2\tau)<\infty
+}
 \]
 
-This is weaker than demanding `\Gamma_{PF}\in\mathcal S_{1,\infty}` and more precise than separately asking for “uniform heavy-channel decay” plus an unspecified weak-strength population estimate. It allows the two mechanisms to trade exactly at the scale relevant to `T`.
+is sufficient for `T\in\mathcal S_{1,\infty}`.
+
+PF-284 now supplies the reverse heavy-sector comparison and changes how a negative geometric result must be interpreted. In the same symmetric scaling,
+
+\[
+N_T(4\tau)
+\le N_{\Gamma_{PF,\tau}}(2\tau)
+\le N_T(2\tau^3).
+\]
+
+Hence weak trace class itself implies only
+
+\[
+N_{\Gamma_{PF,\tau}}(2\tau)=O(\tau^{-3}).
+\]
+
+The interval between the `\tau^{-1}` sufficient scale and the `\tau^{-3}` necessary scale is therefore real. A dense reservoir may defeat the convenient PF-283 Weyl law without yet disproving the endpoint.
+
+PF-284 also permits asymmetric strength thresholds. With
+
+\[
+\Gamma_{PF,\alpha,\beta}
+=Q_P^\alpha\Gamma_{PF}Q_H^\beta,
+\]
+
+weak trace class necessarily bounds
+
+\[
+\alpha\beta a\,
+N_{\Gamma_{PF,\alpha,\beta}}(a).
+\]
+
+This gives the variable-corridor problem both a positive closure target and a genuine falsification target.
 
 ## Research question
 
-For the canonical simultaneous prime-flute pant extension, does the physical heavy-angle compression satisfy
+For the canonical simultaneous prime-flute pant extension, which heavy-angle regime does the physical reservoir geometry enforce?
+
+Can one prove the strong sufficient law
 
 \[
-\tau\,N_{\Gamma_{PF,\tau}}(2\tau)=O(1)
-\qquad(\tau\downarrow0)?
+N_{\Gamma_{PF,\tau}}(2\tau)=O(\tau^{-1}),
 \]
 
-Can this be proved from a Weyl/counting law for the heavy extension-strength populations alone,
+perhaps first from
 
 \[
 \min\{\operatorname{rank}Q_P^\tau,
@@ -74,15 +109,29 @@ Can this be proved from a Weyl/counting law for the heavy extension-strength pop
 =O(\tau^{-1}),
 \]
 
-or, if those populations are denser, does the actual one-cusp-pant geometry force enough principal-angle decay that only `O(\tau^{-1})` singular directions of `\Gamma_{PF,\tau}` remain above scale `2\tau`?
+or otherwise from principal-angle decay inside a denser heavy population?
 
-A useful negative result should likewise be physical and quantitative: exhibit a canonical sequence `\tau_k\downarrow0` on which the heavy extension reservoir retains too many low/high overlap directions above the matching angular scale.
+If that strong law fails, determine whether the resulting growth is merely intermediate and still compatible with weak trace, or whether the canonical geometry actually violates the necessary PF-284 budget. In symmetric form a true obstruction requires
+
+\[
+\sup_{0<\tau<\tau_0}
+\tau^3N_{\Gamma_{PF,\tau}}(2\tau)=\infty.
+\]
+
+More generally, seek physically adapted thresholds `\alpha_k,\beta_k,a_k` for which
+
+\[
+\alpha_k\beta_k a_k\,
+N_{\Gamma_{PF,\alpha_k,\beta_k}}(a_k)
+\]
+
+can be proved uniformly bounded or forced to diverge.
 
 ## Why it may matter
 
-PF-281 shows that `T\in\mathcal S_{1,\infty}` closes the mixed Schur/reciprocal-prime commutator gate. PF-283 shows that the displayed heavy-angle counting law is sufficient for exactly that endpoint. The remaining question is therefore no longer an abstract choice of operator ideal: it is a concrete geometric/spectral Weyl problem for the simultaneous pant-extension ranges.
+PF-281 shows that `T\in\mathcal S_{1,\infty}` closes the mixed Schur/reciprocal-prime commutator gate. PF-283 gives an efficient sufficient theorem surface, while PF-284 prevents overinterpreting failure of that theorem surface as endpoint failure.
 
-This also gives a diagnostic split. If heavy-strength population is already `O(\tau^{-1})`, no additional angular theorem is needed. If it grows faster, the exact amount of missing cancellation is visible in the singular-value count of `\Gamma_{PF,\tau}` rather than hidden in an unnormalized reservoir norm.
+The geometric task is therefore sharper than “prove or refute an `O(\tau^{-1})` count.” It must distinguish three outcomes: a count strong enough to close the endpoint, an intermediate reservoir law that only invalidates the current sufficient route, or a weighted-count violation strong enough to rule out weak trace class itself. The asymmetric PF-284 test is especially relevant because the physical low-fed and high-fed extension-strength populations need not have comparable scales.
 
 ## Decisive test
 
@@ -94,20 +143,22 @@ K_{PF}=\Lambda_Q^{-1/2}\Lambda_E\Lambda_Q^{-1/2}
 
 with the physical `P/H` projectors fixed before any simplifying coordinate change. Form `R_P,R_H`, their bounded strength factors `F_P,F_H`, and the angle `\Gamma_{PF}=V_P^*V_H`.
 
-First derive a corridor-dependent counting law for the spectral projections `Q_P^\tau,Q_H^\tau`. If their smaller rank is `O(\tau^{-1})`, PF-283 already proves the endpoint. Otherwise estimate the singular-value counting function of the heavy angle directly and test
+First derive corridor-dependent counting laws for the spectral projections `Q_P^\alpha,Q_H^\beta`. If the smaller symmetric heavy rank is `O(\tau^{-1})`, PF-283 already proves the endpoint. Otherwise estimate the actual singular-value count of `\Gamma_{PF,\alpha,\beta}` rather than replacing it by rank alone.
 
-\[
-N_{\Gamma_{PF,\tau}}(2\tau)=O(\tau^{-1}).
-\]
+Classify the resulting geometry against both PF-283 and PF-284:
 
-Retain the physical split throughout. Scalar same-mode reservoirs, raw high/high multiplicity, and fixed-threshold compactness do not decide this scale-coupled endpoint count.
+- a bound `N_{\Gamma_{PF,\tau}}(2\tau)=O(\tau^{-1})` proves the sufficient endpoint criterion;
+- growth faster than `\tau^{-1}` but still within every necessary weighted PF-284 budget kills only this sufficient route;
+- any canonical sequence with `\alpha\beta a\,N_{\Gamma_{PF,\alpha,\beta}}(a)\to\infty` is a genuine obstruction to `T\in\mathcal S_{1,\infty}`.
+
+Retain the physical split throughout. Scalar same-mode reservoirs, raw high/high multiplicity, and fixed-threshold compactness do not decide these scale-coupled counts.
 
 ## Evidence boundary
 
-PF-282 establishes the exact strength-angle factorization and fixed-threshold ideal equivalence. PF-283 establishes only the **sufficient reduction** from the desired weak-trace endpoint to the scale-coupled heavy-angle count above.
+PF-282 establishes the exact strength-angle factorization. PF-283 establishes the `O(\tau^{-1})` symmetric heavy-angle count as a **sufficient** endpoint criterion. PF-284 establishes the reverse heavy-sector comparison and therefore the necessary weighted budget, including the symmetric `O(\tau^{-3})` upper envelope under weak trace class.
 
-No current result proves the required `O(\tau^{-1})` count for the canonical prime flute, proves a heavy-population Weyl law, or constructs a physical sequence violating it. Failure of this sufficient criterion would not by itself prove `T\notin\mathcal S_{1,\infty}`. No wave-operator, trace-formula, prime/clone separation, or RH consequence follows yet.
+No current result proves any of these asymptotic counts for the canonical prime flute, proves a heavy-population Weyl law, or constructs a physical sequence violating the necessary PF-284 budget. Failure of the PF-283 sufficient criterion still does not prove `T\notin\mathcal S_{1,\infty}`. No wave-operator, trace-formula, prime/clone separation, or RH consequence follows yet.
 
 ## Research disposition
 
-The clue remains `accepted`. Its live target is now precise: prove or refute the scale-coupled heavy-angle Weyl estimate `\tau N_{\Gamma_{PF,\tau}}(2\tau)=O(1)` from the complete one-cusp-pant extension geometry.
+The clue remains `accepted`. Its live target is now two-sided: use complete one-cusp-pant extension geometry either to obtain a sufficient heavy-angle Weyl estimate closing the endpoint, or to cross the PF-284 necessary weighted-count boundary and thereby obtain a genuine endpoint obstruction. Intermediate growth must be recorded only as failure of the current sufficient route.
