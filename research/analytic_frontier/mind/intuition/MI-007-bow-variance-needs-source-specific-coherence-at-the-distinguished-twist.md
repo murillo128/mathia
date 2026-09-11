@@ -4,9 +4,9 @@
 
 ## Core intuition
 
-The bow endpoint obstruction is not determined by moving-window energy or by qualitative relative uniformity. Target-sized completion forces a large **positive real** dyadic shifted correlation at the distinguished logarithmic twist. That signed shell can be represented exactly as a dyadic scale-slope defect of a positive endpoint Fejer family, but controlling the individual positive energies or ordinary relative correlations is not enough.
+The bow endpoint obstruction is not determined by moving-window energy, qualitative relative uniformity, coefficient quantization, or support sparsity. Target-sized completion forces a large **positive real** dyadic shifted correlation at the distinguished logarithmic twist. That signed shell can be represented exactly as a dyadic scale-slope defect of a positive endpoint Fejer family, but controlling the individual positive energies or ordinary relative correlations is not enough.
 
-A small coherent carrier-aligned drift can accumulate target-scale charge and the endpoint primitive can remember it after the drift stops. The final theorem therefore needs absolute precision in the signed/scale-difference statistic actually consumed downstream, or source amplitude/placement information that forbids such charging.
+A coherent carrier-aligned drift can be implemented either by tiny amplitudes on many sites or by fixed unit amplitudes on a sparse carrier-selected set. In both cases the endpoint primitive can accumulate charge `asymp sqrt(X log X)` and remember it after charging stops. The final theorem therefore needs absolute precision in the signed/scale-difference statistic actually consumed downstream, or source information that constrains where prime/rough residual mass may occur relative to the carrier.
 
 ## Strongest justified claim
 
@@ -18,19 +18,23 @@ ANF-172 restores phase information without abandoning positivity. For the endpoi
 
 Thus the decision statistic is an adjacent-scale slope defect of positive short-window residual energies, not one energy value in isolation.
 
-ANF-173 then removes the earlier upper-range artifact in exact-twist discorrelation. By choosing a sufficiently high but fixed Taylor degree, arbitrary fixed-log exact-twist cancellation extends over the full endpoint range `X^(5/8+eta) <= H <= K`. This still does not control completion. An adaptive carrier-faithful construction with amplitudes bounded by `rho_X` can store charge `asymp sqrt(X log X)` while every bounded-test correlation and every fixed-order normalized Gowers norm is at most `rho_X`, whenever `sqrt(X log X)/K=o(rho_X)`.
+ANF-173 removes the earlier upper-range artifact in exact-twist discorrelation. By choosing a sufficiently high but fixed Taylor degree, arbitrary fixed-log exact-twist cancellation extends over the full endpoint range `X^(5/8+eta) <= H <= K`. It also constructs a carrier-faithful dangerous charge using amplitudes bounded by `rho_X`, proving that bounded-test relative decorrelation and every fixed-order Gowers norm can be at most `rho_X` while completion remains target-sized whenever `sqrt(X log X)/K=o(rho_X)`.
 
-Hence a relative-uniformity-only architecture would need the genuinely power-scale tolerance `rho_X K=o(sqrt(X log X))`. Otherwise it must use additional physical source information, naturally the prime/rough amplitude and placement law.
+ANF-174 shows that continuously tunable small amplitudes are not needed. Choose a coarse grid spacing `q->infinity` with `q sqrt(X log X)=o(K)`, partition the exact carrier rays on its first `O(sqrt(X log X))` sites into six sectors, and retain the sites in one populated sector. With amplitudes only in `{0,1}`, the selected rays already accumulate critical charge. The support is a subset of `q Z`, so every bounded-test relative correlation on intervals of length `H` is at most `q^{-1}+H^{-1}`, while every fixed-order Gowers norm is `O_s((q^{-1}+H^{-1})^{1/2^s})`. Taking `q=X^gamma` gives power decay for both classes of generic uniformity statistics, yet the endpoint completion and Fejer scale-slope defect remain target-sized.
+
+Hence neither a nonzero amplitude floor, a finite alphabet, nonnegative amplitudes, nor vanishing support density closes the information gap. The surviving missing input is the **joint arithmetic placement law** of the physical residual `r_X=vartheta-Q_R` relative to the distinguished carrier, or a theorem that directly controls the equivalent signed dyadic/Fejer statistic at the required absolute scale.
 
 ## Synthesis of evidence
 
-The sequence ANF-169--ANF-173 separates signed endpoint correlation, complex coherence, one-scale positive energy, coupled positive scale variation, and relative pseudorandomness. The first is consumed by the endpoint. The second and third can be large with the wrong phase. The fourth is an exact positive representation of the signed statistic. The fifth can hold over the complete endpoint horizon while a tiny coherent drift still builds dangerous memory.
+The sequence ANF-169--ANF-174 separates signed endpoint correlation, complex coherence, one-scale positive energy, coupled positive scale variation, relative pseudorandomness, and coefficient/occupancy rigidity. The endpoint consumes the first. The second and third can be large with the wrong phase. The fourth exactly recovers the signed statistic from positive energies. The fifth can hold over the complete endpoint horizon while a small coherent drift builds dangerous memory. The sixth still does not help abstractly, because sparse unit occupancy can emulate that drift with power-small long-interval statistics.
 
-For the physical residual `r_X=vartheta-Q_R`, the durable target is therefore either a source-faithful signed dyadic estimate, a coupled Fejer/Selberg scale-increment theorem at the required absolute scale, or a structural theorem preventing the adaptive charging mechanism. Stronger fixed-log or fixed-order uniformity without that scale conversion is no longer a plausible closure step.
+For the physical residual, the durable target is therefore either a source-faithful signed dyadic estimate, a coupled Fejer/Selberg scale-increment theorem at the required absolute scale, or a structural theorem forbidding carrier-sector-biased placement of prime/rough residual mass. Stronger fixed-log or fixed-order uniformity, amplitude discretization, and sparsity without that placement information are no longer plausible closure steps.
 
 ## Counterevidence / boundary cases
 
-ANF-171 and ANF-173 use matched synthetic packets/drifts, not the actual prime/rough residual. They prove that phase-blind energy and relative-uniformity hypotheses are insufficient abstractly, not that the physical source realizes the bad configurations.
+ANF-171, ANF-173, and ANF-174 use matched synthetic packets rather than the actual prime/rough residual. They prove that phase-blind energy, relative-uniformity hypotheses, and generic amplitude/sparsity restrictions are insufficient abstractly; they do **not** show that the physical source realizes the bad configurations.
+
+ANF-174's sparse support is selected adversarially after inspecting the exact carrier phase. This is precisely the freedom the next source theorem is expected to remove. The result therefore sharpens the frontier toward placement arithmetic rather than arguing against such a theorem.
 
 ANF-172 is an exact reorganization, not evidence that the positive scale-increment formulation is analytically easier. Estimating `F_H` and `F_{2H}` separately with errors large relative to their difference can still lose the endpoint signal.
 
@@ -38,12 +42,12 @@ The lower activation boundary of the available all-interval theorem is not remov
 
 ## Epistemic status
 
-**Exact information boundary through ANF-173:** bow completion is controlled by a phase-sensitive absolute endpoint-memory statistic. It is exactly recoverable as a positive Fejer scale-slope defect, while single-scale energy and full-range fixed-order relative uniformity can both miss target-sized completion.
+**Exact information boundary through ANF-174:** bow completion is controlled by a phase-sensitive absolute endpoint-memory statistic. It is exactly recoverable as a positive Fejer scale-slope defect, while single-scale energy, full-range fixed-order relative uniformity, amplitude quantization, nonnegative unit coefficients, and vanishing support density can all miss target-sized completion. The remaining generic freedom is carrier-adapted placement; the physical source must be distinguished there.
 
 ## Novelty/prior-art status
 
-No independent novelty claim is made here. This intuition synthesizes persisted Mathia reductions and matched controls. Fejer/autocorrelation identities, polynomial-phase approximation, Gowers norms, and nilsequence discorrelation are treated according to the finding-level prior-art audits.
+No independent novelty claim is made here. This intuition synthesizes persisted Mathia reductions and matched controls. Fejer/autocorrelation identities, polynomial-phase approximation, Gowers norms, nilsequence discorrelation, and sparse-support estimates are treated according to the finding-level prior-art audits.
 
 ## Falsification criterion
 
-Show that the ANF-172 scale-slope identity fails for the endpoint weights, or that ANF-173's carrier-faithful charging construction violates one of its stated relative-uniformity bounds. Strategically, a source theorem deriving `rho_X K=o(sqrt(X log X))` or directly controlling the scale-slope defect from existing prime/rough information would not falsify the intuition, but would close its stated missing gate.
+Show that the ANF-172 scale-slope identity fails for the endpoint weights, that ANF-173's adaptive charging construction violates one of its stated relative-uniformity bounds, or that ANF-174's sparse `{0,1}` construction violates its interval-count/Gowers estimates. Strategically, a source theorem that rules out carrier-sector-biased placement for `vartheta-Q_R`, or directly proves the required absolute scale-slope bound, would not falsify the intuition; it would close its stated missing gate.
