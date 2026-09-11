@@ -10,16 +10,16 @@ VIS-130--VIS-150 show that one edge factor forces any support-safe companion int
 
 The decisive evidence must come from the source-side lower-order term, not from a visually striking residual after universal control subtraction.
 
-## Treat every fixed finite commensurate Gram-lag geometry and fixed affine index sample as a deterministic clock control
+## Treat fixed-complexity Gram-index sampling as a deterministic clock control
 
 **Linked intuition:** `MI-008-fixed-dimensional-gram-lags-are-a-newton-clock-null`.
 
-VIS-150--VIS-153 classify the complete fixed-dimensional equal-step Gram-lag hierarchy: subcritical coherence, critical Haar fibers over one deterministic inverse-clock curve, and supercritical Haar population all arise from finite differences of the Gram clock.
+VIS-150--VIS-156 classify fixed finite commensurate lag geometries and fixed affine index sampling through the inverse Gram clock. Coherence, critical Haar fibers, and joint Haar populations can all be deterministic finite-difference/Vandermonde phenomena.
 
-VIS-154--VIS-155 show that fixed irregular commensurate lag nodes do not escape this null. A Vandermonde/Lagrange character provides the deepest moment cancellation, with the same order-`r` threshold, and the critical law is again Haar on transverse fibers over one deterministic quotient curve. VIS-156 further shows that restricting the starting Gram indices to any fixed arithmetic progression `a+q n` merely reparameterizes the same clock: fixed-prime populations remain Haar and the full fixed-node lag classification survives with stride-dependent constants.
+VIS-157--VIS-159 extend the null from affine starts to nonlinear sparse index selectors. Quadratic sampling is pairwise Haar but fails at three samples through an exact second-difference character. More generally, an integer polynomial of degree `d` is Haar through `d` fixed samples and fails at `d+1`; for `floor(n^alpha)` with noninteger `alpha>1`, the threshold is `ceil(alpha)`. By increasing a fixed selector degree/exponent, deterministic clock geometry can therefore imitate arbitrarily high **finite** orders of mixing before the next moment-null character exposes the clock.
 
-The live visual escape must therefore change a genuine hypothesis: growing delay dimension, lag geometry, prime/Fourier support, or sampling stride with quantitative uniformity; a genuinely non-affine/data-dependent or noncommensurate sampling law with its own null; or an independently anchored analytic coordinate such as `Z`, derivatives, or zero geometry whose joint information is not determined by the prime-phase/clock state. Fixed finite irregularity or fixed congruence-class thinning is now a control, not an escape.
+The live visual escape must change a genuine asymptotic hypothesis: let sampling complexity grow with height with quantitative uniformity, use a non-power/data-dependent selector justified by source structure, or add an independently anchored analytic coordinate such as `Z`, derivatives, or zero geometry whose joint information is not determined by the clock. Passing any predetermined finite collection of Haar tests is now explicitly a deterministic control.
 
 ## Keep source quartic structure separate from clock-generated phase geometry
 
-The finite-CUE/moment-null branch asks whether a source-specific arithmetic correction survives universal low-frequency cancellation. The Gram-lag branch classifies deterministic sampling geometry over a substantially larger fixed finite family than before. Do not use clock-generated Haar appearance as evidence for arithmetic mixing, and do not use a source-sensitive moment residual unless the same statistic survives the exact clock and random-control baselines appropriate to its sampling scheme.
+The finite-CUE/moment-null branch asks whether a source-specific arithmetic correction survives universal low-frequency cancellation. The Gram-index branch now shows that fixed-complexity selectors can fake Haar behavior to any prescribed finite order. Do not use high finite-order phase mixing as evidence for arithmetic randomness unless the same statistic survives the exact selector-specific clock character and appropriate random controls.

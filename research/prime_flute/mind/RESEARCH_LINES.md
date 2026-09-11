@@ -8,18 +8,22 @@ This file holds the current mathematical questions suggested by the durable prim
 
 PF-271--PF-278 show why separated propagation initially looked promising and why the fixed-axis route nevertheless closes at the critical continuum threshold. The fully Robin-normalized fixed-row shell leakage is `asymp N^(-1)(log N)^(-3/2)`: logarithmically improved, but not supercritical by any fixed power. The fixed-axis Robin-homotopy route is closed rather than merely unresolved.
 
-## Estimate the physical energy-normalized low/high cross form, not the unprojected cut
+## Prove a heavy-angle counting law for the physical energy-normalized low/high cross form
 
 **Linked intuition:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`.
 
-PF-228--PF-279 show that local corridor attenuation does not control an **unprojected** complete cut in a variable scalar reservoir. The exact Schur invariant includes endpoint-extension mass, and a positive reservoir can amplify that mass enough to erase the isolated edge gain.
+PF-228--PF-281 separate unprojected reservoir transmission from the actual physical low/high leakage. Positivity canonically defines the bounded energy-normalized cross operator `T=A^(-1/2) B C^(-1/2)`, and membership of `T` in the required symmetric ideal passes to the mixed inverse block and reciprocal-prime commutator. Same-sector reservoir amplification is therefore not itself an obstruction to the projected route, while positivity alone does not force compactness.
 
-PF-280 separates this matched control from the actual physical low/high leakage. For a genuine `P/H` frequency split, same-sector reservoir completion cannot worsen the symmetric-ideal class of a one-sided decoupled cross transfer: the mixed inverse block factors through contractions. The scalar PF-279 amplifier, when it remains inside one sector, is therefore not by itself a counterexample to the mixed physical-frequency commutator.
+PF-282 identifies the remaining invariant. After polar normalization,
 
-PF-281 removes the remaining raw-operator-domain artifact. The positive quadratic form canonically defines the bounded energy-normalized cross operator `T=A^(-1/2) B C^(-1/2)` even when the raw block `B` is unbounded. If `T` lies in the required symmetric ideal, then the full mixed inverse block and the reciprocal-prime commutator inherit that ideal membership. Positivity alone is insufficient: `T` can approach unit norm and the mixed inverse can remain noncompact.
+`T = f(|R_P|) Gamma f(|R_H|)`
 
-The live theorem is now concrete: estimate the **complete physical energy-normalized `P/H` cross form `T`**, including finite-pant completion and neighboring-cell coupling, in the weak-trace or stronger ideal consumed by the coefficient-transfer endpoint. Reservoir extension mass remains a mandatory control for unprojected statements, but it should not be imported as an obstruction to the projected route without proving that it survives energy normalization and the physical frequency split.
+with `f(t)=t/sqrt(1+t^2)` and `Gamma` the relative low/high extension-angle operator. On sectors where extension mass is already large, the singular values of `T` are equivalent to those of `Gamma`; reservoir strength saturates and persistent angular overlap is the real obstruction.
 
-## Treat branch singularity, same-sector reservoir amplification, and cross-frequency conversion as distinct failure modes
+PF-283 converts the weak-trace endpoint into a counting problem. Thresholding the heavy extension sectors gives `||T-T_tau||<=2 tau` and reduces singular-value control to the Weyl count of the compressed angle operator. In particular, a uniform bound of the form `sup_tau tau N_(Gamma_tau)(2 tau)<infinity` is sufficient for the required weak-trace class.
 
-The fixed-axis source fails supercritical decay through a threshold branch. Variable same-sector reservoirs can erase an isolated unprojected seam gain. A genuine mixed low/high conversion channel can independently fail compactness even after energy normalization. A new Prime-Flute architecture must state which of these three mechanisms it controls rather than transfer conclusions from one to another.
+The live theorem is therefore concrete: prove a **heavy-angle counting estimate for the complete physical low/high extension geometry**, including finite-pant completion and neighboring-cell coupling. Unprojected cut norms and raw extension mass are matched controls; what matters after energy normalization is how many heavy directions retain a large low/high angle.
+
+## Treat branch singularity, reservoir strength, and extension angle as distinct currencies
+
+The fixed-axis source fails through a threshold branch. Variable same-sector reservoirs can erase an isolated unprojected seam gain. After energy normalization their magnitude saturates, leaving the relative extension angle as the mixed-channel currency. A new Prime-Flute argument must control the angle count at the endpoint ideal scale rather than transfer conclusions from either of the first two mechanisms.

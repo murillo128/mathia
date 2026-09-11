@@ -2,16 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a growing relational carrier that does not classicalize into modular-lattice path geometry
+## Find a growing relational carrier that survives fixed-depth classicalization
 
 **Linked intuitions:** `MI-010-two-prime-resonance-needs-a-cross-prime-relation`, `MI-011-first-mixed-moment-can-still-be-pairwise-scalar`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`.
 
 PC-224--PC-249 close the main fixed-conductor packet, character, refinement, and pairwise common-row escapes: for a fixed finite lower family, complete transfer packets and mixed cross-Grams reduce to finite classical lower-level data once the upper prime is large enough.
 
-PC-250--PC-252 move to the genuinely comparable-scale regime where shared-upper collisions survive with growing rank. PC-253 identifies that rank exactly as an oriented congruence-lattice point count in a rational triangle. The orientation retains information erased by centered pairwise singular spectra, but the carrier is still classical modular geometry. PC-254 then closes its determinant/log-volume compression: the pseudodeterminant factors into the product of the already-classical collision weights and elementary path-run factors. Even a growing matching and its global volume can therefore classicalize without producing a new RH variable.
+PC-250--PC-254 move to comparable scales where shared-upper collisions survive with growing rank. Their rank is an oriented congruence-lattice count in a rational triangle, and the pseudodeterminant factors into classical collision weights and elementary path-run factors. Growing dimension, orientation, and determinant volume therefore still classicalize.
 
-The live question is whether the **remaining ordered spectral distribution or a genuinely multi-upper/multilinear coupling** contains information not reconstructible from oriented modular-triangle discrepancies and selected-path Gram data. Merely increasing collision rank, retaining orientation, or taking determinant-like global compressions is no longer enough. A successful carrier must exhibit a relation whose asymptotic information survives after the exact lattice-count and path-run controls are removed.
+PC-255--PC-256 close the next obvious multi-upper extension. The first quadratic multi-upper Gram reduces exactly to a finite seven-shift Dedekind/Rademacher correlation, and every fixed-depth even multi-upper trace word reduces to finitely many shifted scalar collision correlations. Fixed spectral moments and fixed-depth noncommutative traces therefore remain inside classical finite-shift arithmetic even when several upper variables are present.
 
-## Treat dimension growth, orientation, and determinant volume as separate controls
+The live question is now narrower: does the **full untraced matrix-valued coupling, the complete non-polynomial spectrum, or depth growing with collision rank** retain information not reconstructible from oriented modular-triangle geometry and finite-shift correlation packets? Merely adding another upper variable or another fixed trace moment is no longer an escape.
 
-Dimension growth is necessary to escape the fixed-finite CRT closure, but PC-253 shows it can still reduce to a classical congruence-lattice discrepancy. Orientation is a real surviving datum, yet PC-254 shows that one natural global spectral compression of the ordered matching is elementary. Future proposals should test the full nonzero singular distribution, higher-order incidence structure, or several upper variables against these controls before calling the growing carrier arithmetically new.
+## Treat dimension growth, orientation, determinant volume, and fixed trace depth as separate controls
+
+Dimension growth is necessary to escape the fixed-finite CRT closure but can reduce to classical lattice discrepancy. Orientation is genuine surviving data, determinant-like compression is elementary, and fixed-depth multi-upper words reduce to finite scalar shifts. A credible new carrier must survive all four controls before it is treated as new arithmetic information.

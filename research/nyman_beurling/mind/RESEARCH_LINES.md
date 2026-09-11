@@ -8,18 +8,22 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the useful rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force a near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Control the target-selected repair geometry without rebuilding the Nyman oracle
+## Use directional tail identities without paying the ambient RH-equivalent norm price
 
 **Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-024--NB-039 build a weighted moving-tail quotient that preserves source coordinates, has polynomial conditioning independent of the discarded upper section, and has a sharp target-loss floor `Theta(1/M)`. Its upper-section correction carries a multiplicatively accurate copy of the original distance in an explicit Möbius/Vasyunin direction. Representation compression, target preservation, and oracle cost are therefore separate gates.
+NB-024--NB-040 construct a source-faithful weighted tail quotient with polynomial conditioning and a sharp `Theta(1/M)` target-loss floor. One target-selected retained direction removes that loss exactly, showing that compression and exact target repair are distinct gates.
 
-NB-040 shows that the target-loss floor is not dimensional. One additional retained direction gives an exactly zero-loss, still polynomially conditioned skeleton, but that unique direction is precisely the weighted-tail target projection `P_W e`. Exact repair therefore isolates rather than removes the target oracle.
+NB-041--NB-044 make the ambient-dual boundary exact. The logarithmic tail scalar has an explicit Möbius dual, but any polynomial norm decay already forces a fixed zero-free strip, and the optimal power exponent equals `1-Theta_zeta`, the zeta zero frontier. Near-square-root decay is therefore not merely difficult; ambient norm improvement directly measures the zero problem one is trying to solve.
 
-NB-041 gives a nontrivial source reduction for the associated logarithmic tail scalar. An explicit Möbius dual `Omega_M`, independent of the upper section, predicts that scalar with stability norm `O(1/log M)`. NB-042 then identifies the sharp endpoint of this norm route: near-square-root decay `||Omega_M||=O_epsilon(M^(-1/2+epsilon))` for every `epsilon>0` is **equivalent to RH**. Pushing the ambient dual all the way to its geometric support floor is therefore not a cheap explicit-estimate improvement.
+NB-045 supplies a different kind of source information. The complete family of bounded step-tail discrepancies satisfies the exact logarithmic identity
 
-The live theorem is narrower. Obtain the projected repair geometry, the explicit Burnol-scale directional correction, or a one-sided target certificate at the required accuracy **without** proving an RH-equivalent norm estimate or solving an `N`-scale projection problem. Directional correlation may still be cheaper than ambient norm control; alternatively a materially different quotient could change the target-loss/oracle boundary for a structural reason.
+`sum_(L<N) log((L+1)/L) D_(L,N) = d_N^2 - Theta(N)`.
 
-## Treat compression, exact repair, scalar source access, and critical norm decay as separate gates
+Burnol's lower bound and the classical Möbius remainder force a positive discrepancy of order at least `1/log^2 N`, with a nontrivial logarithmic occupation lower bound across cutoffs. Thus the finite Nyman distance already decomposes into many explicit **directional** source-selected witnesses even though the ambient dual norm remains RH-hard.
 
-The weighted skeleton is a good source representation but loses `Theta(1/M)` target energy. A rank-one target-selected repair removes that loss exactly. Its scalar coefficient has a source-defined shrinking dual, yet driving that dual to near-square-root norm decay is already RH-equivalent and still does not by itself give the required uniform Burnol-scale accuracy for every merely superlogarithmic cutoff. Future claims should price these four facts separately rather than infer cheap target access from low dimension or a shrinking scalar error.
+The live theorem is to convert this multiscale directional occupation into the projected repair geometry, a one-sided target certificate, or the near-linear shell discrepancy at the required scale without reconstructing `d_N` through an RH-equivalent norm estimate. A materially different quotient remains possible, but simply improving the same ambient dual is now fully priced.
+
+## Treat compression, exact repair, ambient dual decay, and multiscale directional occupation as separate gates
+
+The weighted skeleton is conditioned but loses target energy; rank-one target repair is exact but target-selected; ambient dual power decay measures the zero frontier; and step-tail discrepancies nevertheless reconstruct the finite distance through a positive logarithmic average. Future arguments should exploit the last directional structure without silently upgrading it into an ambient norm theorem.
