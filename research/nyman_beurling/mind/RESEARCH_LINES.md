@@ -8,18 +8,18 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Isolate arithmetic structure in the normalized Blaschke-deflated quotient directions
+## Isolate arithmetic structure in collective normalized quotient geometry
 
-**Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-049--NB-053 identify the finite repair gap, remove the common off-critical Blaschke factor, and show that the remaining defect is an off-grid semigroup-leakage phenomenon. The corrected NB-053 is only vectorwise at large shift; it does not give operator-norm decay.
+NB-049--NB-053 identify the finite repair gap, remove the common off-critical Blaschke factor, and reduce the remaining defect to arithmetic enrichment inside the outer Hardy geometry.
 
-NB-055 replaces the withdrawn NB-054 argument in the correct Hardy domain. The regularized orbit is absorbed asymptotically and finite-grid raw quotient energy has only the near-critical uniform tail `O_epsilon(R^(-1+epsilon))`; the former `o(R^-2)` claim is withdrawn.
+NB-055 replaces the withdrawn stronger tail estimate: finite-grid raw quotient energy has only the near-critical `O_epsilon(R^(-1+epsilon))` envelope. NB-056 shows that the same raw scale occurs in a unit-outer matched control while normalized logarithmic-cell Gram geometry remains stationary, so shrinking columns do not imply target irrelevance.
 
-NB-056 shows why that raw decay cannot settle the repair gap. A unit-outer matched control has the same `R^-1` scale while every large logarithmic cell retains a stationary Brownian-bridge normalized Gram geometry. Shrinking column norms can coexist with non-collapsing quotient directions.
+NB-057 now closes the moving-single-shift escape for the canonical finite residuals. Nested projection gives `h_N=h_*+a_N` with `||a_N||^2=delta_N^2-delta_*^2->0`, which makes the residual uniformly blind on the whole integer-log grid and jointly invisible to every sufficiently late individual off-grid shift as `N,T->infinity`.
 
-The live bridge is therefore to identify what the **arithmetic outer factor changes in normalized direction/conditioning**, or to isolate a bounded/moderate-ratio sector carrying the enrichment. Raw tail mass or logarithmic sampling geometry alone is now a matched control.
+The surviving bridge is therefore genuinely multichannel or moderate-shift. One must show what the arithmetic outer factor changes in the normalized span/conditioning of many late quotient directions, or isolate a bounded-ratio target sector carrying the enrichment. A single late block cannot retain the canonical residual merely by moving with the section.
 
-## Treat raw quotient mass and normalized target geometry as separate gates
+## Treat raw quotient mass, single-shift leakage, and collective target occupation as separate gates
 
-Large-ratio raw columns become uniformly negligible after the corrected Hardy regularization, but normalized cell geometry need not become trivial. Future work must prove arithmetic directional collapse/separation, Gram conditioning, or target occupation directly rather than infer target irrelevance from small norms.
+Large-ratio raw columns become small, and even the moving canonical finite residual has vanishing projection onto every sufficiently late individual shifted natural block. Neither statement controls the closed span of many normalized late directions. Future work must prove arithmetic directional collapse/separation, conditioning, or target occupation for that collective geometry rather than infer it from one-column estimates.
