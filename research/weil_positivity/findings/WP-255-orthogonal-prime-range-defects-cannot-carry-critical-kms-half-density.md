@@ -1,0 +1,259 @@
+# WP-255 — Orthogonal prime range defects cannot carry the critical KMS half-density
+
+**Status:** `EXACT-DERIVED + ONE-SIDED-KMS-NO-GO + ORTHOGONAL-RANGE-PACKING + PRIME-ENERGY-CONTROL + CRITICAL-DIVERGENCE + BOST-CONNES-OVERLAP-DICTIONARY + DECISIVE-NARROWING + PRIOR-ART-CLASSICALIZATION + NOT-A-WEIL-BRIDGE`.
+
+`WP-251` shows that replacing the critical bilateral automorphism by one global Toeplitz isometry restores finite-temperature equilibrium but gives only a universal Fock-degree law, not prime-dependent arithmetic masses. The most direct repair is therefore to use **one one-sided channel per prime** and give that channel the intrinsic arithmetic energy `log p`.
+
+For the standard independent-channel realization this fails exactly at the critical point. Suppose a unital C*-dynamical system contains isometries `s_p`, one for every prime, with mutually orthogonal ranges,
+
+\[
+s_p^*s_q=\delta_{p,q}1,
+\tag{1}
+\]
+
+and quasi-free arithmetic dynamics
+
+\[
+\sigma_t(s_p)=p^{it}s_p.
+\tag{2}
+\]
+
+Then every `KMS_\beta` state would have to satisfy
+
+\[
+\phi_\beta(s_ps_p^*)=p^{-\beta}.
+\tag{3}
+\]
+
+But the range projections are orthogonal, so for every finite prime set `F`,
+
+\[
+\sum_{p\in F}p^{-\beta}
+=\phi_\beta\!\left(\sum_{p\in F}s_ps_p^*\right)
+\le \phi_\beta(1)=1.
+\tag{4}
+\]
+
+At the Bost--Connes/Weil critical inverse temperature `\beta=1`, Euler's divergence
+
+\[
+\sum_p\frac1p=+\infty
+\tag{5}
+\]
+
+contradicts (4). Hence
+
+\[
+\boxed{
+\text{independent orthogonal prime isometries with energies }\log p
+\text{ admit no }KMS_1\text{ state.}
+}
+\tag{6}
+\]
+
+The same obstruction holds a fortiori if one introduces separate orthogonal generators for all prime powers with energies `k log p`. Thus the obvious one-sided repair cannot simultaneously have independent prime channels, source-forced arithmetic energies, and a normalized critical KMS state.
+
+This identifies why the Bost--Connes divisibility geometry of `WP-216` is structurally different. Its prime range projections are **not orthogonal**. They overlap according to
+
+\[
+E_mE_n=E_{\operatorname{lcm}(m,n)},
+\tag{7}
+\]
+
+so the critical masses `\phi_1(E_p)=1/p` can coexist inside one normalized state. Those overlaps are exactly what produce the GCD/Poisson Gram. Therefore nontrivial multiplicative overlap is not decorative structure: at critical arithmetic energies it is already forced by finite-mass equilibrium if one wants infinitely many prime channels. Unfortunately `WP-216` then shows that the finite Weil ray is the indefinite defect `\log p(I-G_{1,p})`, so escaping the packing obstruction returns directly to the unresolved sign problem.
+
+## 1. KMS fixes every orthogonal range mass
+
+Let `\phi_\beta` be a `KMS_\beta` state for (2). Each `s_p` is entire analytic and
+
+\[
+\sigma_{i\beta}(s_p)=p^{-\beta}s_p.
+\tag{8}
+\]
+
+Using the KMS identity with `x=s_p` and `y=s_p^*`,
+
+\[
+\begin{aligned}
+\phi_\beta(s_ps_p^*)
+&=\phi_\beta\!\left(s_p^*\sigma_{i\beta}(s_p)\right)\\
+&=p^{-\beta}\phi_\beta(s_p^*s_p)\\
+&=p^{-\beta}.
+\end{aligned}
+\tag{9}
+\]
+
+No arithmetic input beyond the energy law is used. Equation (9) is the attractive part of the construction: at `\beta=1`, the square root of the projection mass is exactly the Weil half-density `p^{-1/2}`. The failure occurs not in the local magnitude but in **global packing**.
+
+By (1), the projections
+
+\[
+Q_p:=s_ps_p^*
+\tag{10}
+\]
+
+are pairwise orthogonal. Hence for every finite `F`,
+
+\[
+0\le \sum_{p\in F}Q_p\le1.
+\tag{11}
+\]
+
+Applying the positive state and using (9) gives (4). Therefore a necessary condition for any normalized KMS state is
+
+\[
+\sum_p p^{-\beta}\le1.
+\tag{12}
+\]
+
+At `\beta=1` the left side diverges, proving (6). In fact the obstruction persists throughout every inverse temperature for which the prime partition sum exceeds one; the exact high-temperature phase boundary of a particular Toeplitz--Cuntz model is classical and is not the novelty claimed here.
+
+The argument is stable under an arbitrary coefficient algebra or additional observables. If the same normalized analytic isometries remain present with (1)--(2), no coefficient correlations, auxiliary finite sector, or later compression can undo the finite-set inequality (4). To escape, the source must already change the initial/range relations or the arithmetic eigenoperator law before the KMS state is formed.
+
+## 2. Prime-power channels and free Fock words only make the obstruction stronger
+
+A tempting refinement is to assign a separate one-sided generator `s_{p,k}` to every prime power and use
+
+\[
+\sigma_t(s_{p,k})=p^{ikt}s_{p,k}.
+\tag{13}
+\]
+
+If the ranges are mutually orthogonal and every generator is an isometry, KMS forces
+
+\[
+\phi_1(s_{p,k}s_{p,k}^*)=p^{-k}.
+\tag{14}
+\]
+
+For finite subsets `F` of prime powers,
+
+\[
+\sum_{(p,k)\in F}p^{-k}\le1.
+\tag{15}
+\]
+
+But already the `k=1` subfamily diverges, so no `KMS_1` state exists. Equivalently,
+
+\[
+\sum_{p,k\ge1}p^{-k}
+=\sum_p\frac1{p-1}=+\infty.
+\tag{16}
+\]
+
+Nor does taking the free Fock semigroup generated by the prime channels help. Formally, if
+
+\[
+P(\beta):=\sum_pp^{-\beta},
+\tag{17}
+\]
+
+then the total weight of words of length `n` is `P(\beta)^n`. Whenever the standard Fock Gibbs picture is finite, its partition sum is therefore
+
+\[
+\sum_{n\ge0}P(\beta)^n,
+\tag{18}
+\]
+
+which requires `P(\beta)<1`. At `\beta=1`, `P(1)=+\infty`. This Fock calculation is only a matched picture; the decisive state obstruction is already the finite projection inequality (4), which needs no trace formula or partition-function representation.
+
+Thus adding more independent one-sided arithmetic channels does not repair `WP-251`. It changes the universal single-isometry degree law into the desired prime energies, but normalization fails before a critical state exists.
+
+## 3. The obstruction isolates overlap as necessary source structure
+
+The important comparison is not merely "Toeplitz bad, Bost--Connes good." It is the exact projection geometry.
+
+For orthogonal prime channels,
+
+\[
+Q_pQ_q=0\qquad(p\ne q),
+\tag{19}
+\]
+
+so the KMS masses add. Critical masses `1/p` cannot fit into total mass one.
+
+For Bost--Connes,
+
+\[
+E_pE_q=E_{pq}\ne0
+\qquad(p\ne q),
+\tag{20}
+\]
+
+and more generally (7). The same critical marginal masses therefore need not add as disjoint events. The normalized conditional vectors have overlap
+
+\[
+\langle\xi_m^{(1)},\xi_n^{(1)}\rangle
+=\frac{\gcd(m,n)}{\sqrt{mn}},
+\tag{21}
+\]
+
+which is exactly the `WP-216` critical Gram.
+
+This gives a useful local-to-global necessity statement:
+
+\[
+\boxed{
+\text{critical prime KMS masses }1/p
++\text{ infinitely many normalized channels}
+\Longrightarrow
+\text{the channels cannot be mutually orthogonal.}
+}
+\tag{22}
+\]
+
+The source must provide overlaps, smaller initial supports, a non-normalized semifinite weight, or some other relation that invalidates (11). Merely assigning the correct energies to independent Toeplitz generators is mathematically inconsistent with a normalized critical equilibrium.
+
+Bost--Connes supplies one canonical overlap law, but `WP-216` proves that its positive Gram has the wrong Weil orientation. Hence (22) does not solve the positivity problem. It says that any successful one-sided route must confront a **relational mixed-prime geometry before positivity is taken**; independent prime Fock channels cannot be the missing geometry.
+
+## 4. Matched controls and aggressive falsification
+
+**General energy control.** Nothing in the proof uses primality except (5). For any countable orthogonal family of analytic isometries with energies `E_j`, a normalized `KMS_\beta` state requires
+
+\[
+\sum_j e^{-\beta E_j}\le1.
+\tag{23}
+\]
+
+The theorem is therefore a generic equilibrium-packing obstruction. That is appropriate for a negative classification result: it proves that this operator category cannot distinguish a Riemann-specific sign because it fails earlier, at normalization.
+
+**Finite-prime control.** For a fixed finite set of primes, (4) may hold and a Toeplitz KMS model can exist. The failure is genuinely an all-prime critical phenomenon, exactly where the proposed route was meant to extract global arithmetic structure.
+
+**Subcritical control.** At sufficiently large `\beta`, the prime partition sum can fall below one and independent-channel finite-type KMS states become possible. Thus the obstruction does not say that prime-energy Toeplitz systems never thermalize; it singles out the critical regime relevant to the half-density.
+
+**Coefficient-algebra control.** A nontrivial coefficient algebra, including the UHF algebra used in `WP-248`--`WP-251`, cannot fix (4) while the `s_p` remain normalized orthogonal isometries. The state sees their range projections before any coefficient correlation is evaluated.
+
+**Auxiliary/archimedean control.** Tensoring with, or adjoining, an auxiliary finite-mass sector cannot change the inequality for the surviving `Q_p`. An interaction that destroys the eigen-isometry relation or orthogonality is outside the theorem and is a genuine category change, not a counterexample.
+
+**Nonunital/semifinite control.** A nonunital algebra with a canonical semifinite KMS weight may permit infinite total critical mass. This finding does not rule that out. It does show that such a route has abandoned normalized equilibrium: along any orthogonal prime approximate family the critical mass grows like `\sum_{p\in F}1/p`. A viable semifinite construction must therefore supply a canonical finite quadratic-form domain or a source-derived renormalization; the normalized KMS-state argument cannot be reused unchanged.
+
+**Smaller initial supports.** If the prime channels are partial isometries with `s_p^*s_p=e_p<1`, then KMS gives
+
+\[
+\phi_1(s_ps_p^*)=p^{-1}\phi_1(e_p).
+\tag{24}
+\]
+
+Sufficient decay of `\phi_1(e_p)` can evade the divergence. But that decay is extra source data. Choosing it to make the sum finite is exactly a new selection problem and must be derived independently of the target Weil coefficients.
+
+These boundaries prevent overstatement. The no-go is for **independent normalized prime channels**; it deliberately leaves overlapping multiplicative semigroups, nontrivial initial supports, genuinely semifinite categories, and other source-forced range relations open.
+
+## 5. Prior-art and novelty audit
+
+The operator-algebraic mechanism is classical. Laca and Neshveyev, *KMS states of quasi-free dynamics on Pimsner algebras*, Journal of Functional Analysis **211** (2004), 457--482, arXiv:`math/0304435`, characterize Toeplitz--Pimsner KMS states by trace inequalities on the coefficient algebra. For an orthonormal family of correspondence vectors, the finite-frame inequality specializes to the same Boltzmann-mass packing condition used in (4).
+
+Exel and Laca, *Partial Dynamical Systems and the KMS Condition*, Communications in Mathematical Physics **232** (2003), 223--277, arXiv:`math/0006169`, study Toeplitz extensions of infinite Cuntz--Krieger systems with quasi-free dynamics `\sigma_t(s_x)=N_x^{it}s_x`; their phase structure is governed by convergence of the associated Dirichlet series. This is direct prior art for the fact that an infinite orthogonal one-sided alphabet is constrained by its Boltzmann partition sums.
+
+More generally, modern KMS theory for Nica--Toeplitz algebras of product systems over right-LCM monoids formulates equilibrium existence through positivity inequalities on finite families; for example Gazdag--Laca--Larsen, arXiv:`2205.10786`. None of those general theorems is new here.
+
+The Mathia-specific content is the exact application to the live escape left after `WP-251`--`WP-254`: assigning `log p` to independent one-sided prime channels would indeed make their critical KMS projection amplitudes equal `p^{-1/2}`, but the same KMS relation forces a divergent family of orthogonal range masses, so no normalized `KMS_1` state exists. The comparison with `WP-216` then identifies **nonorthogonal multiplicative overlap as necessary rather than optional** if infinitely many critical prime channels are to coexist in one state.
+
+A bounded literature audit found the KMS/Pimsner and infinite-alphabet phase-transition mechanisms to be standard prior art. No novelty is claimed for (23), Euler's divergence, or the general Toeplitz--Cuntz equilibrium condition. The durable contribution is the classification/narrowing of this specific Weil-positivity escape and the exact dictionary to the Bost--Connes overlap geometry already present in the line.
+
+## 6. Consequence for the Weil-positivity mandate
+
+The one-sided route now has a sharper fork. `WP-251` says that one global isometry thermalizes but has no arithmetic prime energies. `WP-255` says that replacing it by independent orthogonal prime isometries with the correct energies makes the critical normalized KMS state impossible. To keep both arithmetic energies and finite equilibrium, the source must introduce nontrivial prime-channel overlap or attenuated initial supports before equilibrium is taken.
+
+The canonical known overlap is precisely Bost--Connes divisibility, and `WP-216` already computes what it gives: the exact critical GCD/Poisson Gram together with the logarithmic prime scale, but the finite Weil form is the indefinite defect of that positive Gram. Therefore the route does not bypass the current bottleneck; it explains **why the bottleneck is relational**.
+
+A surviving construction must now do more than choose a better one-sided alphabet. It must derive a nonorthogonal or semifinite mixed-prime geometry from the source, preserve the critical half-density without target-coded normalization, reverse the finite Weil orientation through an independent sign theorem, and simultaneously produce the archimedean Gamma and polar sectors. `WP-255` supplies no such completion; it removes the natural independent-prime Fock realization from the search.
