@@ -6,20 +6,20 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 **Linked intuitions:** `MI-008-inertia-counts-offline-pairs-but-not-their-distance`, `MI-014-source-coercivity-must-survive-confluence-and-drifting-bows`.
 
-WI-231--WI-236 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows: negative eigenvalues may approach zero and normalized eigenvector mass may escape. WI-237 closes the tempting raw-Hilbert-space repair. The unconditional simple critical-line exponentials are complete in `L^2(E)` on every bounded positive-measure window, while their density prevents them from forming a Bessel family. Ordinary positive-angle, Riesz, or blanket linear-independence arguments therefore cannot exclude the collapse alternative.
+WI-231--WI-237 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows. The unconditional simple critical-line exponentials are complete in `L^2(E)` on every bounded positive-measure window and are not a Bessel family, so ordinary separation/Riesz arguments cannot exclude spectral collapse. The surviving Bombieri-side currency is the coefficient price of the eigenvector-selected approximation together with height tightness.
 
-The surviving Bombieri-side currency is the **coefficient price** of approximating a finite off-line packet by critical-line exponentials under the normalized `ell^2` budget inherited from the finite negative eigenvectors, plus height tightness when the off-line divisor is infinite. A useful theorem must distinguish these eigenvector-selected relations from arbitrary complete-span approximation.
-
-## Use finite-radius source nondegeneracy as an alternative to zero-side passage-to-limit
+## Make the finite-radius route a von-Mangoldt compensation theorem, not a generic first-crossing argument
 
 **Linked intuition:** `MI-016-finite-radius-source-localization-can-replace-zero-side-tightness`.
 
-WI-238 integrates Suzuki's localized Weil theory with the sparse-defect diagnosis. RH failure forces a finite first support radius `a_*` at which the localized self-adjoint Weil operator has a nonzero zero mode. The lowest eigenvalue is continuous and nonincreasing in the radius, so the obstruction appears as a genuine finite crossing rather than only as a cofinal zero-side limit.
+WI-238 moves the alternative route to Suzuki's localized Weil operator: RH failure produces a finite support radius with a zero/negative mode using only finitely many von Mangoldt coefficients plus explicit non-prime completion data.
 
-For fixed `a`, the source kernel uses only von Mangoldt data `Lambda(n)` with `n<=exp(2a)` plus explicit archimedean terms. Thus an off-critical zero anywhere in the global divisor forces a **finite-prime, finite-support, source-side zero mode**. This does not make RH easy—the all-radius nondegeneracy criterion is itself RH-equivalent—but it removes Bombieri coefficient tightness as a logically mandatory bridge.
+WI-239 closes the abstract first-crossing escape. The universal logarithmic core alone has an exactly translated spectrum `lambda_{0,k}(a)=mu_k-1-log a`, hence a genuine finite first zero mode with simple positive even ground state. Nesting, compact resolvent, parity, the logarithmic singularity, and an attained first crossing are therefore not coercive.
 
-The live alternative is to exploit the first-crossing structure or prove source-side nondegeneracy of the localized operator from its finite-prime kernel in a way cheaper than reasserting Weil positivity. This branch should be compared against the Bombieri coefficient-budget route rather than conflated with it.
+WI-240 goes further. After deleting only the von Mangoldt term and retaining the full gamma and pole contributions, the odd negative index tends to infinity with support radius. Thus the non-prime completion cannot by itself select the positive branch. If the full zeta Weil form remains nonnegative, the signed prime contribution must compensate increasingly many negative directions. This does **not** say that the prime term is sign-definite; it identifies its indispensable role.
 
-## Treat finite inertia, ambient completeness, and localized source nondegeneracy as distinct objects
+The live finite-radius theorem is consequently source-specific: prove nondegeneracy/positivity by exploiting the actual von Mangoldt translation/correlation term against the negative non-prime background, or identify a finite-prime invariant that forces such compensation. Generic crossing geometry is now a matched control, not a route to contradiction.
 
-Finite negative index counts defects but does not quantify their distance from the critical line. Raw critical exponentials can approximate every local target but may require unbounded coefficient cost. Suzuki localization moves the decision to a different finite-support source operator whose zero crossing is exact but infinite-dimensional. Future arguments should state which of these three currencies they control and should not transfer coercivity claims between them without an explicit theorem.
+## Treat finite inertia, ambient completeness, and prime-compensated localized positivity as distinct objects
+
+Finite negative index counts zero-side defects but may lose quantitative coercivity. Ambient critical exponentials can approximate local targets with uncontrolled coefficient cost. Localized source operators avoid that limit but, after WI-239--WI-240, their decisive currency is explicitly the zeta prime contribution relative to a non-prime form that is itself strongly indefinite. Future arguments should state which of these currencies they control and not transfer coercivity between them without a theorem.

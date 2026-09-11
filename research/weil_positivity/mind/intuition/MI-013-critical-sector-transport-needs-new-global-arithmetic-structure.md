@@ -1,4 +1,4 @@
-# MI-013 — Critical-sector transport needs new global arithmetic structure
+# MI-013 — Critical-sector transport and canonical gauge thermodynamics do not create arithmetic positivity
 
 **Evidence level:** proved
 
@@ -6,36 +6,38 @@
 
 Crossing the critical all-prime tensor boundary is a genuine representation change, not a harmless choice of reference vector. Once the critical product state is disjoint from the spherical quasi-local representation, canonical spherical positivity cannot be transferred by a bounded identity-observable intertwiner.
 
-Making the sector-changing automorphism algebraically inner in a crossed product repairs transport but not arithmetic. The canonical positive core of that enlargement is universal or finite-support local. A viable critical-sector construction must therefore add genuinely global arithmetic state/weight/correspondence data and the archimedean completion, not merely a larger algebra in which the local rotations can be implemented.
+Making the sector-changing automorphism algebraically inner repairs transport but not arithmetic, and the canonical crossed-product gauge dynamics does not supply the missing thermodynamic object either: at nonzero temperature it has neither a KMS state nor a proper KMS C*-weight. A viable critical-sector construction must add genuinely global source data and the archimedean completion, not merely enlarge the algebra or invoke its canonical gauge flow.
 
 ## Strongest justified claim
 
-WP-247 proves that the critical `p^{-1/2}` and `(log p)/sqrt(p)` all-prime deformations lie beyond the spherical-reference incomplete tensor sector because their local amplitudes are not square summable.
+WP-247 identifies the critical `p^(-1/2)` and `(log p)/sqrt(p)` all-prime deformations as beyond the spherical-reference incomplete tensor sector because their local amplitudes are not square summable.
 
-WP-248 strengthens this from a vector-level boundary to a representation theorem. On the quasi-local two-plane prime algebra, the spherical and critical product states are quasi-equivalent exactly when the deformation amplitudes are square summable. At critical half-density they are disjoint. Hence every bounded operator intertwining the same quasi-local observables between the two GNS sectors is zero. The abstract product automorphism rotating the spherical local lines to the critical ones still exists, but it is nonspatial in the spherical representation.
+WP-248 strengthens this to a representation theorem. On the quasi-local prime algebra, spherical and critical product states are disjoint at critical half-density. Every bounded intertwiner implementing the same observable algebra between their GNS sectors is therefore zero, although the abstract product automorphism still exists.
 
-WP-249 forms the crossed product by that automorphism. The implementing unitary supplies positive expressions such as `(1-u)^*(1-u)`, but this shift geometry is independent of the arithmetic local rotations. If a Fourier polynomial has coefficients supported on a finite prime set `S`, then its canonical expected positive square remains inside the same finite subsystem `A_S`. Thus the bare crossed-product positive core neither generates an all-prime finite-place distribution nor supplies the Gamma/polar terms of the completed Weil form.
+WP-249 forms the crossed product by that automorphism. The implementing unitary makes the transport algebraically inner and gives universal positive expressions, but the bare positive core is arithmetic-blind: its shift geometry does not encode the local prime rotations, and canonical expectation of finite Fourier positive squares remains inside finite-prime subsystems. It does not generate the all-prime von Mangoldt distribution or the Gamma/polar completion.
+
+WP-250 tests the canonical dual gauge thermodynamics. The implementing unitary is an entire analytic eigenunitary of nonzero gauge frequency, so the KMS identity rules out every `beta!=0` KMS state. A proper weight on a unital C*-algebra is automatically finite on the unit and bounded; hence a proper nonzero-temperature KMS C*-weight would normalize to a forbidden state. Infinite-on-the-unit von Neumann weights, nonunital/stabilized C*-systems, semigroup systems, or different dynamics remain possible only after a substantive category/dynamics change.
 
 ## Synthesis of evidence
 
-The two findings separate **representation access** from **sign-producing arithmetic structure**. WP-248 shows that the canonical spherical representation cannot host the critical product deformation through bounded transport. WP-249 shows that adjoining an abstract transport coordinate does not recover the missing arithmetic coupling automatically.
+The findings separate **representation access**, **algebraic implementation**, **canonical thermodynamics**, and **sign-producing arithmetic structure**. The first three can all be changed without producing the completed Weil orientation. At the present boundary, a new construction must specify what global state/weight/correspondence/cycle contains the rational-prime source, how the archimedean/polar terms enter, and why the resulting positive form has the correct sign for reasons not shared by arbitrary product automorphisms.
 
-This narrows the category-changing escape. A future noncommutative construction must identify additional global data—such as a source-forced modular/KMS weight, boundary state, correspondence, or unbounded cycle—and prove that its positivity has the Weil orientation for reasons not shared by arbitrary product automorphisms or finite-support controls.
+A KMS/modular proposal is therefore meaningful only if its dynamics or weight is source-forced rather than the canonical bilateral crossed-product gauge flow already ruled out. Passing to a von Neumann closure or a nonunital/semigroup category is not an automatic loophole; it creates a new object whose arithmetic meaning and domain theorem must be established.
 
 ## Counterevidence / boundary cases
 
-WP-249 is not a no-go for Bost--Connes systems, KMS states, Hilbert modules, spectral triples, non-quasi-local states, or nonlocal/unbounded coefficients. Those constructions may contain exactly the extra arithmetic and archimedean structure absent from the bare crossed product.
+WP-250 is not a no-go for Bost--Connes systems, KMS weights on nonunital or von Neumann algebras, one-sided semigroup crossed products, Hilbert modules, spectral triples, non-quasi-local states, or source-dependent modular flows. Those systems change hypotheses that are load-bearing in the eigenunitary obstruction.
 
-The disjointness statement concerns the chosen quasi-local finite-prime observable algebra. Enlarging the observable category can alter the comparison problem, but any such enlargement must justify its domains and source meaning independently.
+The disjointness statement concerns the chosen quasi-local finite-prime observable algebra. Enlarging the observable category can alter the representation comparison, but no positivity transfer follows without a new theorem.
 
 ## Epistemic status
 
-**Exact category boundary and exact bare-transport no-go:** the critical all-prime product state is disjoint from the spherical quasi-local sector, and making its product automorphism inner through the canonical crossed product does not itself create global arithmetic positivity.
+**Exact category/transport/thermodynamic boundary:** the critical product sector is disjoint from the spherical quasi-local sector; the canonical crossed product repairs algebraic transport without adding completed arithmetic; and its dual gauge flow has no proper nonzero-temperature KMS object at the unital C*-level.
 
 ## Novelty/prior-art status
 
-The product-state equivalence criteria and crossed-product/conditional-expectation machinery are classical as recorded in WP-248--WP-249. This intuition makes no broad operator-algebra novelty claim; it records the consequence for the current Weil-positivity architecture.
+Product-state equivalence criteria, crossed products, KMS identities, proper-weight facts, and conditional expectations are classical as recorded in WP-248--WP-250. This intuition states their consequence for the current Weil-positivity architecture.
 
 ## Falsification criterion
 
-Construct within the bare crossed product, without adding a new state/weight/correspondence or nonlocal arithmetic coefficient, a canonical positive form that intrinsically recovers the all-prime von Mangoldt coefficients together with the archimedean/polar completion and distinguishes the Riemann critical automorphism from matched product-automorphism controls. Such a construction would refute the claimed arithmetic blindness of the transport core.
+Construct, within the same unital crossed product and the same canonical dual gauge flow, a nonzero-temperature KMS state or proper KMS C*-weight, or a bounded spherical-to-critical identity-observable intertwiner. Alternatively, derive the completed Weil arithmetic from the bare crossed-product positive core without adding source-dependent global data. Any such result would invalidate a load-bearing part of the current boundary.

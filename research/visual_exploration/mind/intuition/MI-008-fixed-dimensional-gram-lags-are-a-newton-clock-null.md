@@ -1,51 +1,43 @@
-# MI-008 — Fixed-dimensional Gram lags are a Newton-clock null
+# MI-008 — Fixed finite commensurate Gram geometry is a deterministic clock null
 
 **Evidence level:** proved
 
 ## Core intuition
 
-A fixed-dimensional vector of consecutive Gram-point prime-phase lags can display coherence, deterministic curves, marginal Haar behavior, or full joint Haar behavior without introducing any new arithmetic randomness. The exact inverse Gram clock already generates all of these regimes. The natural coordinates are successive Newton finite differences of that clock.
+A fixed finite collection of Gram-point prime-phase lags can display coherence, deterministic curves, Haar marginals, or full joint Haar behavior without introducing new arithmetic randomness. The exact inverse Gram clock generates all of these regimes. This remains true after replacing equal-step lags by any fixed finite commensurate integer-node geometry and after restricting the starting Gram indices to any fixed arithmetic progression.
 
-Visual complexity in a finite delay embedding is therefore not evidence of a new prime-phase source unless it survives this deterministic clock quotient.
+Visual complexity in such a finite delay embedding is therefore not evidence of a new prime-phase source unless it survives the deterministic clock quotient appropriate to its node set and sampling stride.
 
 ## Strongest justified claim
 
-VIS-150 identifies the single-lag transition near `h~log^2 N`. Below that scale a dephased lag cloud collapses, at critical scale it traces a deterministic logarithmic torus curve, and above it clock shear begins to create Haar-looking marginals.
+VIS-150--VIS-153 classify consecutive equal-step lag vectors. Every fixed joint character has a first nonzero lag moment of order at most the dimension; the deepest finite difference determines the transition `h^r ~ N^(r-1)(log N)^2`. At critical scaling, an exact integer change of coordinates produces Haar in the first `r-1` directions and one deterministic top clock curve.
 
-VIS-151 removes the upper-range restriction caused by the earlier Taylor approximation. For any well-sampled lag satisfying `h M_N/(N log^2 N)->infinity`, every fixed finite-support torus character cancels by an exact first-derivative estimate. Thus even macroscopic single lags have Haar population for deterministic clock reasons.
+VIS-154 extends the threshold to every fixed set of distinct positive integer lag ratios `b_1,...,b_r`. The Vandermonde moment matrix is nonsingular, so every nontrivial character has a first surviving moment of order at most `r`, and a primitive Lagrange/Vandermonde character realizes the deepest order. The threshold exponent is unchanged.
 
-VIS-152 treats an equal-step `r`-lag vector. Every joint character has a first nonzero lag moment of some order `q<=r`; the deepest possible cancellation is the `r`-th finite difference. The supercritical joint-Haar threshold is exactly controlled by
+VIS-155 resolves the irregular critical window. The primitive deepest character defines a canonical quotient; the limiting law is Haar on its codimension-one fibers and deterministic on the quotient curve. Equal-step Newton coordinates are only one special basis for this general finite-node structure.
 
-`M_N h^r/(N^r log^2 N)`,
-
-while below the corresponding scale an explicit order-`r` character retains modulus-one coherence. For `h=o(N)`, the transition is `h^r ~ N^(r-1) log^2 N`.
-
-VIS-153 resolves the critical window. A triangular integer automorphism sends ordinary lag coordinates to successive Newton differences. At order-`r` critical scaling, the first `r-1` coordinates converge jointly to Haar and the top coordinate converges to an explicit one-parameter deterministic prime-torus curve. No information is discarded by the transform.
+VIS-156 then fixes a nonconsecutive sampling control. For every fixed affine index subsequence `a+q n`, the finite-prime population remains Haar and the same fixed-node lag hierarchy survives. The fixed stride changes only deterministic clock constants, including the critical quotient winding.
 
 ## Synthesis of evidence
 
-The entire fixed-dimensional equal-step phase portrait is classified by the derivative hierarchy of the inverse Riemann--Siegel clock. Adding finitely many delays buys a higher order of clock cancellation, not a new source. Random-looking lower differences and the surviving critical top curve are two faces of the same deterministic mechanism.
+The deterministic-null family now includes fixed equal-step and irregular commensurate node sets, their subcritical/critical/supercritical regimes, and fixed arithmetic-progression thinning of the starting indices. Adding finite irregularity, choosing a critical scale, or selecting one fixed congruence class does not create a new source; it only changes the finite-difference/Vandermonde coordinates of the same smooth inverse clock.
 
-This sharply narrows visually motivated prime-phase research. A credible residual must use structure outside the fixed-dimensional consecutive delay algebra: growing dimension/support, irregular sampling that breaks the finite-difference clock model, or an independently informative analytic coordinate.
+A credible residual must leave this class by changing a genuine asymptotic hypothesis: growing dimension/node geometry/prime or Fourier support, a stride changing with `N`, genuinely non-affine or data-dependent sampling, noncommensurate real-time offsets, or an independently informative analytic coordinate such as Hardy `Z`, derivatives, or zero occupancy.
 
 ## Counterevidence / boundary cases
 
-The theorems fix the delay dimension and character support. They do not control `r=r(N)`, prime characters whose support/coefficients grow with `N`, irregular lag sets, nonconsecutive Gram indices, or joint statistics with zeta values, derivatives, zeros, or other analytic coordinates.
+All current theorems fix the delay dimension, node set, sampling stride, prime support, and tested character as `N->infinity`. They do not give quantitative uniformity when any of these complexities grow.
 
-Haar convergence here is weak fixed-character convergence, not a stochastic independence theorem. The interpretation is a deterministic null, not a claim that Gram phases are genuinely random.
+Fixed affine subsampling is not a theorem for arbitrary sparse or selected Gram subsequences. Fixed integer-node lags are not a theorem for genuinely noncommensurate continuous-time offsets. Haar convergence is deterministic fixed-character equidistribution, not stochastic independence.
 
 ## Epistemic status
 
-**Exact fixed-dimensional clock classification away from and at the critical scale:** consecutive equal-step Gram lag vectors are governed by Newton finite differences of the inverse Gram clock, with coherent, mixed critical, and Haar regimes determined by the corresponding shear scale.
+**Exact fixed-finite clock classification:** fixed commensurate lag geometries, including irregular integer nodes and fixed affine Gram-index sampling, are governed by the inverse Gram clock with coherent, Haar-fiber critical, and Haar regimes determined by the corresponding Vandermonde shear scale.
 
 ## Novelty/prior-art status
 
-VIS-151--VIS-153 explicitly use classical Gram asymptotics, exponential-sum bounds, and compact-group Fourier criteria and make no broad novelty claim. This intuition records their role as a Mathia control family.
+The findings use classical Gram asymptotics, uniform-distribution/exponential-sum tools, Vandermonde interpolation, and compact-group Fourier criteria and make no broad novelty claim. This intuition records their role as a Mathia control family.
 
 ## Falsification criterion
 
-Exhibit a fixed `r`, equal-step consecutive Gram-lag statistic whose limiting fixed-character behavior is not captured by the Newton-difference hierarchy under the hypotheses of VIS-151--VIS-153, or show that the critical product law fails for an admissible character. Either would invalidate the deterministic-null classification.
-
-## Lean-formalizable core
-
-The finite algebraic statement that the triangular lag-to-Newton-difference exponent matrix lies in `GL_r(Z)` and exactly converts lag coordinates into forward finite differences is a natural finite formal target; the asymptotic Fourier analysis is separate.
+Exhibit a fixed finite commensurate node set or fixed affine Gram-index subsequence satisfying the stated hypotheses whose fixed-character limiting behavior is not captured by VIS-154--VIS-156. Alternatively, show that the primitive critical quotient or Haar-fiber law fails for an admissible character.

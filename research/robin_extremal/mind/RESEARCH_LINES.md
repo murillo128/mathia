@@ -2,16 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Couple the adaptive selector fan to the arithmetic race uniformly across threshold exponents
+## Resolve the prime-power quantized common-source coupling below the current race error floor
 
 **Linked intuition:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`.
 
-RE-017--RE-037 reduce hypothetical Robin failure to adaptive CA-selected states satisfying an increasingly rigid standard/reciprocal prime-race relation. Finite packets on one off-critical vertical face can realize the required fixed-threshold sign geometry, while RE-037 removes the bounded one-parameter slack by placing selected states in a vanishing-width tube around an explicitly translated nonlinear race curve.
+RE-017--RE-039 reduce hypothetical Robin failure to an adaptive same-block selector fan coupled to a translated standard/reciprocal prime-race relation. Fixed-threshold spectral cones and the abstract convex-envelope fan are both realizable by synthetic controls, so neither sign geometry nor selector kinematics alone is selective.
 
-RE-038 adds a common-block selector fan across every `b` in a compact interval below `1/2`: the rightmost maximizer is monotone, selected states lie on one finite upper convex envelope, and switch points satisfy exact power-law secant relations. RE-039 is the decisive matched control. Every prescribed finite monotone switch pattern, the secant law, logarithmic intrinsic spacing, the small-height regime, and the inherited left-endpoint quantitative witness can be manufactured by positive synthetic heights with no arithmetic input. The convex-envelope fan is therefore **adaptive kinematics**, not by itself an arithmetic obstruction.
+RE-040 closes the earlier uniformity gap. On every sufficiently late common counterexample block, all threshold maximizers in a compact interval are simultaneously regular and satisfy the translated nonlinear prime-race law uniformly. The same argument gives a CA support-capacity budget from the genuine adjacent support slopes.
 
-The live theorem must couple the two structures that survive these controls: derive the RE-037 translated prime-race normal form with enough uniformity over `b` on one genuine counterexample block, and then use source/spectral information to show that the resulting family cannot realize the algebraically universal selector fan. A proof based only on switch counts, monotonicity, secant geometry, or one fixed threshold exponent has already lost the arithmetic content.
+RE-041 shows that support capacity and even an exact abstract event staircase are still not enough: synthetic concave support chains can realize them without primes. The surviving source datum is the **quantization/common-source identity** of a physical CA atom. Its jump, supporting slope, and location are tied to one prime-power label `(p,j)`, and the same primes generate the standard/reciprocal race coordinates.
 
-## Treat fixed-threshold spectral realizability and same-block selector kinematics as controls
+RE-042 tests the most immediate first-layer use of that identity. The first CA event for a large prime occurs at `eta_p=p+1/2+o(1)`, while the prime-race coordinates jump at `p`. This staggering is exact, but its normalized nonlinear residual signature is only `asymp (log p)/sqrt(p)`, whereas RE-040 currently supplies an unspecified uniform `o(1)` error. The first-layer event signal therefore lies below the present race-resolution theorem.
 
-Finite dominant packets can realize each fixed-threshold cone, and arbitrary synthetic positive states can realize the same-block convex-envelope fan. Neither side alone discriminates the physical CA selector. The remaining currency is the **joint arithmetic coupling** between the selector family and the standard/reciprocal prime-race values across the block.
+The live theorem must either sharpen the uniform translated-race remainder beneath the individual-prime `log Z/sqrt(Z)` scale **and** control selector placement across the staggered event, or aggregate many quantized prime-power atoms so that the common-source signal survives the normalization. A proof based only on switch counts, support capacity, or the existence of an event staircase has already lost the arithmetic content.
+
+## Treat selector kinematics, support capacity, and first-layer staggering as controls until they beat the error scale
+
+Synthetic models realize the fan and support budget; the physical first-layer prime/event mismatch is real but presently sub-resolution. The remaining currency is quantitative common-source coupling at a scale that the uniform race theorem can actually resolve.

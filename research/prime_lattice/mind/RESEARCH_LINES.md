@@ -2,16 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-side sign through nonlocal prime-event coupling, not event-local spectral geometry
+## Prove source-side positivity of the common localized Weil form, not a bridge between representations
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
-PL-259--PL-261 establish an observability hierarchy: bulk moment information forces a positive critical-line proportion, exact finite inertia detects finite off-line defects, and the semilocal Laurent core finitely detects every RH failure. PL-262--PL-263 then show that fixed-window sign does not automatically survive the expanding limit and that adding a spectral shift can manufacture real spectrum without preserving the original Weil sign.
+PL-259--PL-264 separate finite observability from global sign. Every RH failure is visible in a finite semilocal core and every prime-power event has a canonical local negative shock, but the complete one-edge singular jet is template-universal apart from its von Mangoldt weight and location. Event-local spectral geometry cannot create the missing Riemann-specific orientation.
 
-PL-264 sharpens the source-side boundary. At every prime-power threshold in the finite Connes--van Suijlekom path, the first derivative shock is a negative rank-one multiple of one universal matrix direction, and all higher singular jets are universal apart from the inserted von Mangoldt scalar and edge location. Single-edge interlacing, Weyl-resolvent identities, or higher local jet geometry therefore cannot be the missing Riemann-specific sign selector: once the local source atom is supplied, those structures are template-universal.
+PL-265 resolves the proposed CvS-to-Suzuki bridge by prior art and exact parameter matching: the finite Connes--van Suijlekom path and Suzuki localization evaluate the **same unshifted completed localized Weil form**. There is no separate transform whose sign preservation remains to be proved.
 
-The live theorem must couple **several** prime-power events or tie their accumulated path to the pole/archimedean completion with the original unshifted Weil orientation. Any finite-source transfer must also remain stable on the expanding Fourier cores required by PL-262. A local negative shock is useful source data, but its sign cannot be promoted to global Weil positivity without a nonlocal accumulation theorem.
+PL-266--PL-268 then organize the aperture dependence sharply. The ground energy `lambda_a` is strictly decreasing with support radius; finite Laurent compressions recover the onset of strict negativity without uniform-in-radius convergence; and translation symmetry rules out zero plateaus. Under RH every finite-radius ground energy is strictly positive, while off RH there is a unique finite zero crossing.
 
-## Treat finite detectability, local event sign, and global unshifted positivity as separate gates
+PL-269 adds the large-aperture endpoint:
 
-Every RH failure is visible in a finite semilocal compression, and every prime edge has a canonical local negative shock. Neither fact supplies the missing global sign. Future finite-path proposals should state explicitly what cross-event or completion identity converts these local observations into positivity of the original, unshifted decision form rather than a shifted or conditionally positive proxy.
+`RH  <=>  lambda_a -> 0 as a -> infinity`.
+
+This scalar is therefore an exact RH order parameter, not a cheaper surrogate. Proving its unconditional zero limit would already prove RH. The live theorem remains the original one in a cleaner form: explain from the completed rational-prime source why `lambda_a` stays positive for every finite aperture. Any useful finite-event argument must couple many prime-power atoms and the archimedean/polar completion in the original unshifted form; monotonicity, Galerkin detectability, or the order-parameter equivalence by themselves do not supply that sign.
+
+## Treat finite detectability, strict aperture geometry, and source positivity as separate gates
+
+Finite compressions detect every negative continuum direction. The aperture profile has a rigid single-crossing geometry and an exact RH limit characterization. Neither fact selects the positive branch. Future work should use these results as exact destination and falsification structure while keeping the missing arithmetic sign theorem explicit.

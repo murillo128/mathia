@@ -6,22 +6,20 @@ This file holds the current mathematical questions suggested by the durable prim
 
 **Linked intuition:** `MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap`.
 
-PF-271--PF-274 show why separated propagation initially looked promising: the naked finite seam has a positive Green mass gap and supercritical sublinear leakage, while the physical square-root source closes that gap to the critical mass-one continuum and admits exact continuous-Hahn diagonalization. PF-275--PF-277 then show that the fixed-axis normalized source reaches that threshold with a nonzero analytic branch germ rather than accidentally cancelling it.
+PF-271--PF-278 show why separated propagation initially looked promising and why the fixed-axis route nevertheless closes at the critical continuum threshold. The fully Robin-normalized fixed-row shell leakage is `asymp N^(-1)(log N)^(-3/2)`: logarithmically improved, but not supercritical by any fixed power. The fixed-axis Robin-homotopy route is closed rather than merely unresolved.
 
-PF-278 completes the transfer. The mass-one branch forces the fully Robin-normalized fixed-row shell leakage
-
-`||P_i B_w E_N|| asymp N^(-1) (log N)^(-3/2)`.
-
-The logarithm is a genuine improvement over the bare critical envelope, but no fixed exponent `q>1` survives. The PF-271 supercritical low-output gate therefore fails already on one fixed row, before shear, corridor transport, or canonical-tail uniformity enter. The fixed-axis Robin-homotopy route is closed rather than merely unresolved.
-
-## Control reservoir extension mass before extrapolating local corridor attenuation to a complete cut
+## Estimate the physical energy-normalized low/high cross form, not the unprojected cut
 
 **Linked intuition:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`.
 
-PF-228--PF-229 show that an isolated scalar seam and translation-invariant serial completion preserve the local corridor gain up to a fixed factor. PF-279 proves that positivity and scalarity do not extend this conclusion to variable reservoirs. The exact two-reservoir Schur formula contains not only the boundary impedances `beta_L,beta_R` but their spectral derivatives, equivalently the squared norms of endpoint-normalized harmonic extensions. A positive variable Jacobi family can make the isolated edge transmission `O(w/s)` while the complete half-chain cut stays bounded away from zero because the extension mass diverges.
+PF-228--PF-279 show that local corridor attenuation does not control an **unprojected** complete cut in a variable scalar reservoir. The exact Schur invariant includes endpoint-extension mass, and a positive reservoir can amplify that mass enough to erase the isolated edge gain.
 
-The live nested-cut theorem must therefore control the physical left/right extension Gram forms, or prove that the actual low/high projections suppress their amplification. Any continuation through shear or a variable flute should carry this invariant explicitly. Local edge attenuation, scalar positivity, and boundary impedance are controls, not substitutes for the complete-cut estimate.
+PF-280 separates this matched control from the actual physical low/high leakage. For a genuine `P/H` frequency split, same-sector reservoir completion cannot worsen the symmetric-ideal class of a one-sided decoupled cross transfer: the mixed inverse block factors through contractions. The scalar PF-279 amplifier, when it remains inside one sector, is therefore not by itself a counterexample to the mixed physical-frequency commutator.
 
-## Treat branch singularity and reservoir amplification as independent failure modes
+PF-281 removes the remaining raw-operator-domain artifact. The positive quadratic form canonically defines the bounded energy-normalized cross operator `T=A^(-1/2) B C^(-1/2)` even when the raw block `B` is unbounded. If `T` lies in the required symmetric ideal, then the full mixed inverse block and the reciprocal-prime commutator inherit that ideal membership. Positivity alone is insufficient: `T` can approach unit norm and the mixed inverse can remain noncompact.
 
-The fixed-axis source already fails the desired supercritical exponent through a nonremovable threshold branch. Separately, even a locally favorable scalar edge can lose its attenuation after embedding in variable reservoirs. A new Prime-Flute architecture must avoid both obstructions rather than repairing one and assuming the other remains harmless.
+The live theorem is now concrete: estimate the **complete physical energy-normalized `P/H` cross form `T`**, including finite-pant completion and neighboring-cell coupling, in the weak-trace or stronger ideal consumed by the coefficient-transfer endpoint. Reservoir extension mass remains a mandatory control for unprojected statements, but it should not be imported as an obstruction to the projected route without proving that it survives energy normalization and the physical frequency split.
+
+## Treat branch singularity, same-sector reservoir amplification, and cross-frequency conversion as distinct failure modes
+
+The fixed-axis source fails supercritical decay through a threshold branch. Variable same-sector reservoirs can erase an isolated unprojected seam gain. A genuine mixed low/high conversion channel can independently fail compactness even after energy normalization. A new Prime-Flute architecture must state which of these three mechanisms it controls rather than transfer conclusions from one to another.

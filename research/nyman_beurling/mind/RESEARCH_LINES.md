@@ -8,20 +8,18 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the useful rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force a near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Control the explicit Burnol-scale skeleton defect rather than treating the early-shell model as an oracle
+## Control the target-selected repair geometry without rebuilding the Nyman oracle
 
 **Linked intuitions:** `MI-001-coefficient-geometry-needs-target-coupling`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-024--NB-036 build a weighted moving-tail quotient that preserves source coordinates and has polynomial conditioning independent of the discarded upper section. NB-037--NB-038 show that the true retained Gram and target-correlation corrections are forced at the Burnol scale `d_N^2`, with one explicit Möbius/Vasyunin direction already carrying a multiplicatively accurate copy of the original distance.
+NB-024--NB-039 build a weighted moving-tail quotient that preserves source coordinates, has polynomial conditioning independent of the discarded upper section, and has a sharp target-loss floor `Theta(1/M)`. Its upper-section correction carries a multiplicatively accurate copy of the original distance in an explicit Möbius/Vasyunin direction. Representation compression, target preservation, and oracle cost are therefore separate gates.
 
-NB-039 makes the compression threshold itself sharp. The nuisance tail contains a dilated copy of a smaller canonical Nyman section, giving
+NB-040 shows that the target-loss floor is not dimensional. One additional retained direction gives an exactly zero-loss, still polynomially conditioned skeleton, but that unique direction is precisely the weighted-tail target projection `P_W e`. Exact repair therefore isolates rather than removes the target oracle.
 
-`(1-d_floor(N/M)^2)/M <= kappa_hat_(M,N)^2-d_N^2 <= 1/M`.
+NB-041 gives a nontrivial source reduction for the associated logarithmic tail scalar. An explicit Möbius dual `Omega_M`, independent of the upper section, predicts that scalar with stability norm `O(1/log M)`. NB-042 then identifies the sharp endpoint of this norm route: near-square-root decay `||Omega_M||=O_epsilon(M^(-1/2+epsilon))` for every `epsilon>0` is **equivalent to RH**. Pushing the ambient dual all the way to its geometric support floor is therefore not a cheap explicit-estimate improvement.
 
-For `N>=2M` the additive loss is therefore `asymp 1/M`, and multiplicative preservation holds exactly when `M d_N^2 -> infinity`. The familiar superlogarithmic cutoff is an unconditional sufficient condition and, under the expected `d_N^2 asymp 1/log N`, order-necessary for this quotient. At the same time, the explicit Burnol/source defect can already be seen under the weaker adaptive condition involving `d_floor(N/M)`.
+The live theorem is narrower. Obtain the projected repair geometry, the explicit Burnol-scale directional correction, or a one-sided target certificate at the required accuracy **without** proving an RH-equivalent norm estimate or solving an `N`-scale projection problem. Directional correlation may still be cheaper than ambient norm control; alternatively a materially different quotient could change the target-loss/oracle boundary for a structural reason.
 
-The live theorem is thus not to improve conditioning or pretend the `1/M` loss can be squeezed away inside this skeleton. It is to control the explicit Burnol-scale directional defect from source information genuinely cheaper than the Nyman distance itself, or to construct a materially different quotient whose target-loss floor changes for a mathematical reason rather than by reparameterization.
+## Treat compression, exact repair, scalar source access, and critical norm decay as separate gates
 
-## Treat representation compression, target-loss floor, and oracle cost as separate gates
-
-The weighted skeleton is a good representation: source-faithful and conditioned. Its target loss is nevertheless intrinsically `Theta(1/M)`, and the correction needed to recover the true geometry carries the original distance scale. Future compression claims should price all three quantities separately rather than infer source progress from low dimension or conditioning alone.
+The weighted skeleton is a good source representation but loses `Theta(1/M)` target energy. A rank-one target-selected repair removes that loss exactly. Its scalar coefficient has a source-defined shrinking dual, yet driving that dual to near-square-root norm decay is already RH-equivalent and still does not by itself give the required uniform Burnol-scale accuracy for every merely superlogarithmic cutoff. Future claims should price these four facts separately rather than infer cheap target access from low dimension or a shrinking scalar error.

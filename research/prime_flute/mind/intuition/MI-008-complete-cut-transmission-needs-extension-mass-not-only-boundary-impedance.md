@@ -1,47 +1,49 @@
-# MI-008 — Complete-cut transmission needs extension mass, not only boundary impedance
+# MI-008 — Complete-cut transmission needs the invariant matched to the consumed projection
 
 **Evidence level:** proved
 
 ## Core intuition
 
-Local corridor attenuation does not determine transmission across the same edge after it is embedded in variable reservoirs. The exact scalar Schur invariant contains a second quantity besides boundary impedance: the norm of the endpoint-normalized harmonic extension into each reservoir, equivalently the spectral derivative of the boundary impedance.
+Local corridor attenuation does not determine **unprojected** transmission after embedding in variable reservoirs. The exact scalar Schur invariant includes endpoint-normalized extension mass as well as boundary impedance, and that mass can erase an isolated edge gain.
 
-A variable background can make those extension masses diverge and erase a small isolated-edge factor while keeping the whole operator positive and scalar. Complete-cut control therefore needs a reservoir theorem, not just a seam theorem.
+For the physical Prime-Flute low/high leakage, however, same-sector reservoir amplification is not automatically the relevant invariant. After the `P/H` split, the mixed inverse block is controlled by the cross-frequency form itself. The correct source-side target is the energy-normalized cross operator, not an unprojected scalar cut norm.
 
 ## Strongest justified claim
 
-PF-228 computes the isolated straight-corridor edge and obtains the favorable local attenuation scale. PF-229 shows that a translation-invariant scalar serial completion preserves that scale up to a fixed factor, suggesting that the local gain might survive embedding.
+PF-228 computes the isolated corridor attenuation and PF-229 shows that a translation-invariant scalar serial completion preserves it up to a fixed factor. PF-279 gives the exact general two-reservoir formula: complete-cut norm depends on boundary impedances and their spectral derivatives, equivalently the squared norms of endpoint-normalized harmonic extensions. A positive variable scalar family can make the isolated transmission small while the complete unprojected cut remains bounded away from zero.
 
-PF-279 gives the exact general two-reservoir formula. If `beta_L,beta_R` are the inverse endpoint Green values and `c` is the cut conductance, then
+PF-280 then separates the mixed physical-frequency quantity. If the boundary space splits as `P+H`, the exact block resolvent identities give
 
-`||1_R M_eta^(-1) 1_L|| = c sqrt(beta_L'(eta) beta_R'(eta)) / (beta_L(eta) beta_R(eta)-c^2)`.
+`PDH=-A^(-1) B (HDH)=-(PDP) B C^(-1)`.
 
-The derivative `beta'` is exactly the squared Hilbert norm of the endpoint-normalized harmonic extension. PF-279 constructs a positive variable Jacobi family for which the isolated edge transmission is `O(w/s)` while the complete half-chain cut converges to a strictly positive constant because the reservoir extension mass compensates the local small factor.
+The outer full-resolvent blocks are contractions, so same-sector reservoir completion cannot worsen the symmetric-ideal class of either one-sided decoupled `P/H` transfer. A PF-279 amplifier confined to one frequency sector therefore contributes no mixed block by itself.
+
+PF-281 removes the assumption that the raw cross block `B` is bounded. Positivity of the closed form defines the canonical energy-normalized cross operator
+
+`T=A^(-1/2) B C^(-1/2)`, with `||T||<=1`.
+
+If `T` lies in a compact symmetric ideal `J`, then `||T||<1` and the mixed inverse block factors through `T`, hence `PDH in J`; the reciprocal-prime commutator inherits the same ideal membership. Conversely positivity alone does not force compactness: valid positive block examples can have `T_j->1` and noncompact mixed inverse.
 
 ## Synthesis of evidence
 
-The translation-invariant success of PF-229 was a special reservoir-control theorem in disguise. Once the background varies, scalar positivity and the endpoint Weyl value do not fix how much mass the normalized boundary state acquires in the bulk. That mass is exactly what the full cross-cut norm multiplies.
+PF-279 remains the exact warning against extrapolating a local seam coefficient to an unprojected complete cut. PF-280--PF-281 show why that warning must be matched to the statistic actually consumed downstream. For the coefficient-transfer route, the unresolved invariant is the singular-value decay of the **physical energy-normalized cross form `T`**. Same-sector extension mass matters only insofar as it feeds that mixed channel.
 
-This identifies a concrete invariant for the physical nested-cut problem: control the left/right extension Gram forms, or show that the low/high projections consumed by the Prime-Flute endpoint kill the dangerous extension directions.
+This is a more precise reservoir theorem than “bound all extension norms.” One may prove weak-trace or stronger ideal decay of `T` directly in the physical energy spaces, including finite-pant and neighboring-cell completion, even if some unprojected same-sector cut norms are large.
 
 ## Counterevidence / boundary cases
 
-PF-279 is a matched scalar Jacobi control, not the physical flute. It proves that local gain cannot be extrapolated from positivity/scalarity alone; it does not prove that the physical reservoirs amplify. Additional monotonicity, geometry, or projection structure could bound the extension masses.
+PF-279 is a scalar matched control, not the physical flute. PF-280 assumes the physical split is compatible with the stated block structure, and PF-281 gives only a sufficient ideal criterion; no finding yet proves the actual Prime-Flute `T` is weak trace class.
 
-The formula concerns one scalar cut after Schur reduction. Matrix-valued or genuinely nonlocal couplings may require a different invariant rather than a scalar `beta'`.
+Energy normalization is not automatically compactifying. The positive block counterexample in PF-281 shows that a genuine low/high conversion channel may survive with order-one strength.
 
 ## Epistemic status
 
-**Exact operator-theoretic boundary:** complete-cut transmission depends on boundary impedance and endpoint-extension mass; the latter can erase the isolated corridor gain in a positive variable scalar system.
+**Exact operator-theoretic boundary:** unprojected complete-cut transmission needs extension mass, while the projected physical route is controlled by an energy-normalized cross-frequency operator whose ideal decay is stable under same-sector reservoir completion but is not automatic from positivity.
 
 ## Novelty/prior-art status
 
-PF-279 treats the Schur/Weyl ingredients as standard operator theory. The Mathia contribution here is their role as the exact missing invariant in the current Prime-Flute cut extrapolation.
+Schur complements, block resolvent identities, form normalization, and symmetric ideals are standard operator theory as recorded in PF-279--PF-281. This intuition records their exact role in the Prime-Flute frontier.
 
 ## Falsification criterion
 
-Prove from the physical Prime-Flute reservoir equations that `beta_L'` and `beta_R'` remain uniformly controlled at the required seam scale, or that the consumed projections annihilate the extension amplification even when the unprojected cut norm is large. Either would show that PF-279's matched control does not obstruct the physical nested cut.
-
-## Lean-formalizable core
-
-The finite-dimensional Schur-complement identity expressing the off-diagonal inverse block through endpoint Green values and their resolvent derivatives is a natural formalizable linear-algebra statement.
+Show that the PF-280/PF-281 factorization fails for the actual form domain/split, or construct a same-sector reservoir completion that preserves the hypotheses yet worsens the ideal class of `PDH` beyond that of `T`. Conversely, proving the physical `T` belongs to the required weak-trace ideal would close the present gate.

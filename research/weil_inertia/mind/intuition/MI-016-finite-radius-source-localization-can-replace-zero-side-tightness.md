@@ -1,45 +1,47 @@
-# MI-016 — Finite-radius source localization can replace zero-side tightness
+# MI-016 — Finite-radius localization makes the missing source term explicit
 
 **Evidence level:** supported
 
 ## Core intuition
 
-Bombieri's finite negative matrices are not the only exact way a hypothetical off-line zero can become finitely visible. Localized Weil theory moves the obstruction to the source side: RH failure forces a first finite support radius where a self-adjoint localized Weil operator acquires a zero mode, and the kernel at that radius depends on only finitely many von Mangoldt coefficients plus explicit archimedean data.
+Bombieri's finite negative matrices are not the only exact way a hypothetical off-line zero can become finitely visible. Localized Weil theory moves the obstruction to the source side: RH failure forces a finite support radius where the completed Weil operator crosses zero, with only finitely many von Mangoldt coefficients entering at that radius.
 
-The passage from finite zero-side inertia to an infinite limiting eigenvector is therefore one route, not a logically necessary route. A second target is finite-radius source nondegeneracy.
+The later controls show that the value of this localization is not generic first-crossing geometry. The universal logarithmic core crosses zero by itself, and even the full gamma-plus-pole form with the prime source deleted develops unbounded negative index. The missing finite-radius theorem is therefore specifically about **von-Mangoldt compensation in the completed form**.
 
 ## Strongest justified claim
 
-WI-236 shows that Bombieri finite truncations detect every finite off-line packet with exact negative inertia, but a cofinal negative eigensequence may collapse toward zero and lose height tightness. WI-237 shows that generic interval-exponential separation cannot fix this: simple critical-line exponentials are complete on every bounded positive-measure window and are not Bessel, so an off-line packet can be approximated arbitrarily well in `L^2` without any useful unweighted frame geometry. What remains there is an eigenvector-specific coefficient-budget theorem.
+WI-236 shows that Bombieri finite truncations detect finite off-line packets but a cofinal negative eigensequence may collapse toward zero and lose height tightness. WI-237 shows that generic interval-exponential separation cannot prevent this: simple critical-line exponentials are complete and non-Bessel on bounded windows, leaving an eigenvector-specific coefficient-budget problem.
 
-WI-238 records Suzuki's independent localized criterion. For every support radius `a`, the localized Weil form is represented by a lower-bounded self-adjoint operator with discrete spectrum. The ground-state value `lambda_a` is continuous; nested support gives the exact monotonicity `lambda_b<=lambda_a` for `b>a`. If RH is false, `lambda_a` is positive for small radius and negative at some finite radius, so there is a first `a_*` with `lambda_{a_*}=0` and a nonzero ground-state zero mode.
+WI-238 supplies an independent source-side route. At every radius `a`, Suzuki's localized completed Weil form is represented by a discrete-spectrum self-adjoint operator and uses prime data only up to `n<=exp(2a)`. RH failure therefore yields a finite-radius zero/negative mode without taking a zero-side eigenvector limit.
 
-The explicit screw-function kernel at radius `a` uses the von Mangoldt sum only for `n<=exp(2a)`. Hence
+WI-239 shows that continuity, support nesting, compact resolvent, parity, the universal logarithmic singularity, and even an attained simple first zero mode are not enough. For the pure logarithmic core, dilation gives the exact spectral law
 
-`not RH => finite a_* => finite-prime localized Weil operator has a nonzero zero mode`.
+`lambda_{0,k}(a)=mu_k-1-log a`,
 
-This conclusion does not require a limiting zero-ordinate relation or a uniform negative margin in Bombieri's cofinal matrices.
+so every eigenvalue crosses zero at a finite radius.
+
+WI-240 restores all non-prime zeta terms while deleting only the von Mangoldt contribution. In the odd sector the gamma-plus-pole form has negative index tending to infinity with the radius. The pole part is nonpositive there, and scaled finite-dimensional odd spaces see the negative zero-frequency gamma multiplier. Hence the prime term is not a perturbative decoration: if the full form is nonnegative, its signed contribution must compensate an increasingly large negative non-prime sector.
 
 ## Synthesis of evidence
 
-The two routes expose different quantitative currencies. Bombieri starts from the zero divisor and needs coefficient cost/tightness to prevent a finite negative sector from dissolving. Suzuki starts from a compact source window and turns failure into a first ground-state crossing. The latter is finite in arithmetic input but still infinite-dimensional analytically.
+The two main routes now expose sharply different currencies. Bombieri starts from the zero divisor and needs coefficient cost/tightness. Suzuki localization starts from a finite source window and avoids that passage to the limit, but WI-239--WI-240 eliminate generic spectral geometry as the reason positivity might hold. The source-side problem has been reduced to the actual arithmetic prime term relative to a strongly indefinite completed background.
 
-This creates a cleaner source-side research question: can the first crossing be excluded by a structural property of the finite-prime kernel that is not merely a restatement of the full Weil criterion? Any proposed answer must use the nested-radius or source-locality structure; otherwise the RH-equivalent nondegeneracy theorem has only been renamed.
+A useful finite-radius advance should therefore identify how the finite collection of von Mangoldt translation/autocorrelation terms controls the dangerous negative subspaces, or derive a prime-specific nondegeneracy invariant. Proving another abstract property shared by the prime-deleted countermodel cannot close the gate.
 
 ## Counterevidence / boundary cases
 
-Suzuki's all-radius nondegeneracy is already equivalent to RH. Finite-prime locality does not imply a finite-dimensional problem, and no unconditional lower bound for `lambda_a` at arbitrary radius is supplied. The first-crossing viewpoint is a localization of the burden, not a solution.
+WI-240 does not say the von Mangoldt term is positive semidefinite, nor that its compensation can be checked event by event. The full sign may depend on interference among many prime-power translations and the background completion.
 
-WI-237's coefficient-budget route remains valid and may still be more tractable in some formulations. The two approaches should not be claimed equivalent without an explicit bridge.
+Suzuki's all-radius nondegeneracy remains RH-equivalent. Finite-prime locality narrows the input, but the localized operator remains analytically infinite-dimensional. The Bombieri coefficient-budget route also remains logically independent and may still be useful.
 
 ## Epistemic status
 
-**Supported structural redirect:** RH failure has an exact finite-radius source-side zero-mode consequence, so zero-side coefficient tightness is not a logically mandatory bridge; the alternative burden is to exploit finite-prime localized nondegeneracy or first-crossing structure.
+**Supported structural redirect plus decisive matched controls:** RH failure has a finite-radius source-side manifestation, but the logarithmic core and the complete prime-deleted non-prime form already exhibit the generic crossing/negative-inertia phenomena. The missing finite-radius currency is zeta-specific von-Mangoldt compensation.
 
 ## Novelty/prior-art status
 
-The localized nondegeneracy theorem and operator formulation are Suzuki/Yoshida prior art as recorded in WI-238. The Mathia synthesis is the comparison with the WI-236/WI-237 passage-to-limit obstruction and the explicit finite-prime interpretation.
+Suzuki/Yoshida localization, logarithmic-form structure, gamma/pole formulas, and related operator ingredients retain the prior-art boundaries recorded in WI-238--WI-240. This intuition is a synthesis.
 
 ## Falsification criterion
 
-Show that WI-238's finite-prime locality fails for the localized operator because the construction requires source values outside `n<=exp(2a)`, or that the claimed monotone first crossing does not follow from support nesting and continuity. More strategically, prove that excluding the finite-radius zero mode necessarily reconstructs the same Bombieri coefficient-tightness statement; that would collapse the two routes back into one.
+Show that the prime-deleted form of WI-240 does not have the stated unbounded odd negative index, or that the finite-radius full operator requires prime data beyond `exp(2a)`. Strategically, derive full localized positivity/nondegeneracy from a property also satisfied by the WI-239/WI-240 countermodels; that would show the present claim that von-Mangoldt-specific structure is necessary is too strong.
