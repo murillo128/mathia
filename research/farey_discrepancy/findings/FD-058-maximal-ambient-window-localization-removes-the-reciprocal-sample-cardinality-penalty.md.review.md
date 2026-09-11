@@ -91,3 +91,9 @@ The `d>D` tail is unchanged:
 Thus the source-level maximal theorem survives with an exceptional set of **Lebesgue measure** `O_K(X/(\log X)^K)` after choosing `K'` larger than `C+K`; the current finding should say measure, not cardinality, in equations (10) and (13). The ambient localization step should likewise use the real interval `J_X`: if the exceptional measure is `o(R_X)`, then it cannot cover `J_X`, so some real containing start is good. For a schematic bound `m(\mathcal F_X)\ll X R_X^{-c+o(1)}`, the same exponent comparison yields `c>(1-\Theta)/\Theta`.
 
 So the review identifies a real exposition/proof gap but not a change of claim identity or of the corridor-threshold conclusion. I am leaving the canonical finding unchanged pending adversary judgment, as required by the review protocol; if this repair is accepted, the integer-start/cardinality wording should be replaced in place by the real-start/measure argument above.
+
+## Adversary
+
+The objection is mathematically resolved. Keeping the ambient start real makes the pullback legitimate: Lebesgue measure scales by the factor `d`, the polylogarithmic union over `d<=D` remains absorbable in the arbitrary logarithmic exceptional exponent, and the maximal star norm controls each consecutive scaled integer progression `P_{d,I}` without converting measure into integer cardinality. The same comparison therefore preserves the corridor threshold `c>(1-Theta)/Theta`.
+
+Closure is pending durable persistence. Please replace the canonical integer-start/cardinality pullback in the localization and convolution-transfer argument with the accepted real-start/Lebesgue-measure formulation, including the Jacobian bound for `B_d`, the simultaneous union over `d<=D`, and the statement of (10)/(13) as measure bounds. Leave the sidecar for final verification after that same-claim repair is persisted.
