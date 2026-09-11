@@ -1,12 +1,13 @@
 ---
 id: CLUE-prime-flute-variable-corridor-reservoir-weyl-mass
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-228-flat-corridor-dressing-makes-inverse-seam-multiplicity-weak-trace-compatible.md
   - research/prime_flute/findings/PF-229-frozen-serial-schur-completion-preserves-flat-corridor-cut-scale.md
+  - research/prime_flute/findings/PF-279-variable-scalar-schur-reservoirs-can-erase-local-corridor-cut-gain.md
   - research/prime_flute/findings/PF-222-reciprocal-prime-schur-commutator-is-compact-by-one-seam-decoupling.md
   - research/prime_flute/clues/CLUE-weak-trace-reassembly-with-summable-local-mass.md
 ---
@@ -128,4 +129,10 @@ Finally charge any surviving amplification to the actual reciprocal-prime jump a
 
 ## Evidence boundary
 
-The proposed scalar certificates are explicitly reconstructible local research leads, not accepted Mathia findings or Lean-checked theorems. PF-229's translation-invariant result remains intact. No admissible consecutive-prime reservoir, actual hyperbolic-pant amplification, surviving mixed `P/H` flux, or weak-Schatten failure has been established. The paired-defect control enforces only a local overlap pattern, not arithmetic realizability. No claim about wave operators, prime/clone separation, or RH follows. The existing accepted weak-trace clue retains its scope and disposition; this clue isolates one missing tail-mass mechanism and its falsification conditions.
+PF-279 now records the scalar one-defect and paired-defect reservoir calculation, together with the exact Weyl-derivative/extension-mass identity, as a canonical matched-control theorem. Its Jacobi/Weyl and Schur/Kron ingredients are classical; no general novelty is claimed for them.
+
+What remains unproved is precisely the actual-PF transfer. No admissible consecutive-prime reservoir, actual hyperbolic-pant amplification, surviving mixed `P/H` flux, or weak-Schatten failure has been established. The paired-defect control enforces only a local overlap pattern, not arithmetic realizability. No claim about wave operators, prime/clone separation, or RH follows. The existing accepted weak-trace clue retains its scope and disposition.
+
+## Research disposition
+
+The clue is `accepted`. The scalar mechanism survived independent reconstruction and a prior-art audit and is now persisted as PF-279. The live question is no longer whether the scalar algebra is real, but whether the canonical prime-flute boundary-energy problem controls the operator-valued analogues of `beta_L'` and `beta_R'`, or whether physical `P/H` projection and arithmetic incidence suppress the reservoir before PF-222's reciprocal-prime nested reassembly. A positive Gram bound would kill this matched control for the actual geometry; a realizable projected reservoir would force a different weak-trace reassembly currency.
