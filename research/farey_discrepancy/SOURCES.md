@@ -44,6 +44,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - G. H. Hardy, *Sur les zéros de la fonction ζ(s) de Riemann*, Comptes rendus hebdomadaires des séances de l'Académie des sciences **158** (1914), 1012--1014. Role: primary source for Hardy's theorem that infinitely many nontrivial zeros of `zeta(s)` lie on `Re(s)=1/2`. `FD-033` uses only the existence of one such zero to force divergence of the critical Mellin square norm attached to the coefficient summatory function with Dirichlet series `zeta(s+1)/zeta(s)`; no RH assumption or zero-density input is used.
 
+## Squarefree-density zero-free auxiliary input
+
+- Arnold Walfisz, *Weylsche Exponentialsummen in der neueren Zahlentheorie*, Mathematische Forschungsberichte **15**, VEB Deutscher Verlag der Wissenschaften, Berlin, 1963, Satz §5.6.1. Role: primary source for the classical unconditional squarefree-counting estimate `Q(x)=x/zeta(2)+O(sqrt(x) exp(-c (log x)^(3/5)(log log x)^(-1/5)))`. `FD-045` transfers this estimate through an absolutely convergent weighted Jordan Euler factor, sharpening the centered nonsquarefree summatory law and extending the finite-row Mellin settling window past the square-root frequency scale without assuming RH.
+
 ## Zeta one-line frequency auxiliary input
 
 - Kevin Ford, *Vinogradov's Integral and Bounds for the Riemann Zeta Function*, Proceedings of the London Mathematical Society **85**(3) (2002), 565--633, DOI `10.1112/S0024611502013655`. Role: primary source for the Vinogradov--Korobov bound `|zeta(sigma+it)| << |t|^(B(1-sigma)^(3/2)) log^(2/3)|t|`; `FD-044` uses only its `sigma=1` specialization after exact cancellation of the centered Jordan-density pole, obtaining a `log^(2/3)` frequency cost for sub-square-root finite-row windows. No RH, zero-density, or zero-spacing input is imported.
