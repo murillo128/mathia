@@ -1,0 +1,310 @@
+# NB-056 — unit-outer control saturates raw-tail decay with stationary cell geometry
+
+**Status:** `EXACT-DERIVED + MATCHED-CONTROL + PALEY-WIENER-CELL-NORMAL-FORM + BROWNIAN-BRIDGE-GRAM + SHARP-RAW-TAIL + TARGET-TAIL-BENCHMARK + NEGATIVE/METHOD-BOUNDARY`.
+
+`NB-055` proves for the actual Blaschke-deflated Nyman family that the finite-grid quotient columns have near-critical raw-energy tail
+
+\[
+\frac1M\sum_{k/M\ge R}\operatorname{dist}(\phi_{M/k},\mathcal A_{\rm nat})^2
+\ll_\varepsilon R^{-1+\varepsilon},
+\tag{1}
+\]
+
+but explicitly leaves open whether the normalized quotient directions become harmless. The present finding gives a matched control showing that no such conclusion can follow from the logarithmic sampling geometry or from the raw `R^{-1}` scale alone.
+
+Remove the arithmetic outer factor and retain exactly the Hardy-space kernel
+
+\[
+q_a(s):=\frac{e^{-a}-e^{-as}}{s-1},\qquad a\ge0,
+\tag{2}
+\]
+
+so that the natural grid is `a=log n`. Let
+
+\[
+\mathcal S_{\rm nat}:=
+\overline{\operatorname{span}}\{q_{\log n}:n\ge2\}
+\subset H^2(\Re s>1/2),
+\qquad Q_0:=I-P_{\mathcal S_{\rm nat}}.
+\tag{3}
+\]
+
+Under the standard Paley--Wiener unitary from `L^2(0,infinity)` to this Hardy space,
+
+\[
+q_a\longleftrightarrow
+f_a(t):=e^{-a+t/2}\mathbf 1_{[0,a]}(t).
+\tag{4}
+\]
+
+This makes the control completely explicit. Put
+
+\[
+I_j=[\log j,\log(j+1)],\qquad j\ge1.
+\tag{5}
+\]
+
+Then `S_nat` is the orthogonal direct sum of the one-dimensional cell spaces
+
+\[
+\operatorname{span}\{e^{t/2}\mathbf1_{I_j}(t)\}.
+\tag{6}
+\]
+
+If
+
+\[
+a=\log(j+x),\qquad 0\le x\le1,
+\tag{7}
+\]
+
+then the quotient column is supported on the single cell `I_j` and satisfies
+
+\[
+\boxed{
+Q_0f_a(t)
+=
+\frac{e^{t/2}}{j+x}
+\left(
+\mathbf1_{[\log j,a]}(t)-x\mathbf1_{I_j}(t)
+\right).
+}
+\tag{8}
+\]
+
+Consequently
+
+\[
+\boxed{
+\|Q_0q_a\|^2
+=
+\frac{x(1-x)}{(j+x)^2}.
+}
+\tag{9}
+\]
+
+The endpoints `x=0,1` vanish exactly, as they must: they are the adjacent natural-grid points. Different logarithmic cells are orthogonal.
+
+The important point is that the small factor in (9) is only a scalar envelope. After removing it, the within-cell geometry is independent of `j`. If `a_x=\log(j+x)` and `a_y=\log(j+y)`, then
+
+\[
+\boxed{
+\left\langle
+(j+x)Q_0q_{a_x},
+(j+y)Q_0q_{a_y}
+\right\rangle
+=
+\min(x,y)-xy.
+}
+\tag{10}
+\]
+
+Thus every large logarithmic cell carries the same Brownian-bridge covariance kernel. On the finite `NB-050` grid `x_r=r/M`, `1<=r<=M-1`, the rescaled Gram matrix is
+
+\[
+K_M(r,s)
+=
+\frac{\min(r,s)}M-\frac{rs}{M^2},
+\tag{11}
+\]
+
+with the exact inverse
+
+\[
+\boxed{
+K_M^{-1}
+=
+M\,
+\begin{pmatrix}
+2&-1&&\\
+-1&2&-1&\\
+&\ddots&\ddots&\ddots\\
+&&-1&2
+\end{pmatrix}.
+}
+\tag{12}
+\]
+
+In particular `rank(K_M)=M-1`, and its condition number is asymptotic to `4 M^2/pi^2`; crucially, it has **no dependence on the cell index `j`**. The unrescaled cell Gram is just `D_j K_M D_j`, where `D_j=diag((j+r/M)^(-1))`, so for fixed `M` its condition number remains bounded uniformly in `j` and tends to that of `K_M` as `j->infinity`. Raw smallness therefore coexists with a stationary, non-collapsing normalized block geometry.
+
+## 1. The control saturates the `NB-055` raw-tail exponent
+
+For the finite grid `theta=M/k`, write
+
+\[
+\frac{k}{M}=j+\frac rM,
+\qquad
+1\le r\le M-1.
+\tag{13}
+\]
+
+Natural points `r=0` contribute zero to the quotient. Equation (9) gives
+
+\[
+\|Q_0q_{\log(k/M)}\|^2
+=
+\frac{(r/M)(1-r/M)}{(j+r/M)^2}.
+\tag{14}
+\]
+
+Set
+
+\[
+c_M:=\frac{1-M^{-2}}6.
+\tag{15}
+\]
+
+The elementary identity
+
+\[
+\frac1M\sum_{r=1}^{M-1}\frac rM\left(1-\frac rM\right)=c_M
+\tag{16}
+\]
+
+therefore yields, cell by cell,
+
+\[
+\boxed{
+\frac{c_M}{(j+1)^2}
+\le
+\frac1M\sum_{r=1}^{M-1}
+\|Q_0q_{\log(j+r/M)}\|^2
+\le
+\frac{c_M}{j^2}.
+}
+\tag{17}
+\]
+
+For an integer cutoff `R`, summing over `j>=R` gives
+
+\[
+\frac{c_M}{R+1}
+\lesssim
+\frac1M\sum_{k/M\ge R}\|Q_0q_{\log(k/M)}\|^2
+\lesssim
+\frac{c_M}{R-1},
+\tag{18}
+\]
+
+and more precisely
+
+\[
+\boxed{
+\frac1M\sum_{k/M\ge R}\|Q_0q_{\log(k/M)}\|^2
+\sim
+\frac{c_M}{R}
+\qquad(R\to\infty)
+}
+\tag{19}
+\]
+
+for every fixed `M>=2`.
+
+Thus the exponent approached from below in `NB-055` is exactly the natural critical exponent of the underlying logarithmic-cell geometry. Yet (10)--(12) show that the normalized cell blocks do not collapse at all as the ratio grows. A proof that starts only from an `O(R^{-1+epsilon})` Hilbert--Schmidt/raw-energy tail cannot infer a principal-angle or normalized-Gram degeneration: the present control has the same raw scale and explicitly violates that inference.
+
+## 2. The canonical target supplies a separate, much stronger tail law
+
+The control also shows what an actually useful target estimate would look like. Under Paley--Wiener,
+
+\[
+k_1(s)=\frac1s
+\longleftrightarrow
+e^{-t/2}.
+\tag{20}
+\]
+
+Inside one cell `I_j`, the full continuous off-grid quotient generated by all `0<x<1` is exactly
+
+\[
+L^2(I_j)\ominus
+\operatorname{span}\{e^{t/2}\mathbf1_{I_j}\}.
+\tag{21}
+\]
+
+The squared target gain from that complete cell is therefore
+
+\[
+\begin{aligned}
+g_j
+&=
+\int_{\log j}^{\log(j+1)}e^{-t}\,dt
+-
+\left(
+\int_{\log j}^{\log(j+1)}1\,dt
+\right)^2\\
+&=
+\boxed{
+\frac1{j(j+1)}-
+\log^2\!\left(1+\frac1j\right)
+}.
+\end{aligned}
+\tag{22}
+\]
+
+Expanding at infinity,
+
+\[
+\boxed{
+g_j=\frac1{12j^4}+O(j^{-5}).}
+\tag{23}
+\]
+
+Since the cell-detail spaces are mutually orthogonal,
+
+\[
+\boxed{
+\sum_{j\ge R}g_j
+=
+\frac1{36R^3}+O(R^{-4}).
+}
+\tag{24}
+\]
+
+The finite `M` grid gives only a subspace of (21), so its target gain is bounded above by the same cubic tail. Hence this flat-outer control simultaneously has
+
+\[
+\text{raw quotient energy}\asymp R^{-1}
+\qquad\text{but}\qquad
+\text{canonical target gain}=O(R^{-3}).
+\tag{25}
+\]
+
+The two phenomena are logically independent. The `R^{-1}` law says how much column norm is available. The `R^{-3}` law comes from how the smooth target sits relative to the normalized cell-detail directions. Equation (25) is exactly the distinction that `NB-055` could not obtain from raw norms alone.
+
+## 3. Adversarial controls and what the result does not prove
+
+The control is intentionally non-arithmetic: it replaces the actual deflated factor
+
+\[
+O(s)=\frac{s-1}{s}\frac{\zeta(s)}{B(s)}
+\tag{26}
+\]
+
+by the constant outer factor `1`, while preserving the same kernels `q_a`, the same natural logarithmic grid, the same off-grid finite sampling `M/k`, and the exact endpoint zeros. It therefore does **not** estimate the actual Nyman quotient, `delta_def`, `Delta_*`, or `d_N`.
+
+It does rule out two generic continuations of `NB-055`. First, raw near-critical tail decay does not force normalized quotient columns to become parallel, low-rank, or badly conditioned in the large-ratio variable: the control has stationary Brownian-bridge blocks. Second, even a very strong target-tail estimate cannot be read off from the raw energy exponent: the control improves from `R^{-1}` to `R^{-3}` only because of the separate target orientation in (22).
+
+There is an equally sharp adversarial target test. Choosing one normalized detail vector from each cell gives an orthonormal sequence. Therefore for any prescribed square-summable coefficient sequence `(a_j)`, the fixed target `h=sum a_j v_j` has tail projection
+
+\[
+\|P_{\oplus_{j\ge R}\mathbb Cv_j}h\|^2
+=
+\sum_{j\ge R}|a_j|^2,
+\tag{27}
+\]
+
+which can tend to zero arbitrarily slowly. For a moving target one may take `h_R=v_R`, giving tail projection exactly one. Thus no uniform target-angle rate can follow from (19) plus the cell sampling identities alone. Any such rate for the actual source must use additional structure of the zeta outer factor and/or of the canonical target residual.
+
+## 4. Consequence for the live bridge
+
+`NB-055` leaves two possibilities: the tiny large-ratio columns might become normalized-geometrically harmless, or they might retain target-bearing directions whose coefficients compensate for their shrinking norms. `NB-056` shows that the underlying logarithmic-grid geometry chooses neither outcome. In the unit-outer model the normalized blocks remain fully nondegenerate with ratio, while the canonical target nevertheless becomes cubic-tail poor.
+
+The next source-specific question can therefore be stated more sharply. One must control how multiplication by the actual arithmetic outer factor `O` deforms the flat Brownian-bridge cell model **in target angle or normalized Gram geometry**, not merely improve the raw norm estimate. A useful theorem would compare the actual quotient blocks with (10)--(12), or prove directly that the actual canonical target gain over cells `j>=R` is `o(1)` at a quantitative rate. Conversely, a construction showing that `O` can rotate the flat cell details into a persistent target-bearing sector would identify the genuine obstruction.
+
+This also gives a clean benchmark for finite experiments: rescale each quotient column by its cell envelope before examining singular values or principal angles. Unrescaled singular-value decay of order `1/j` is already present in the unit-outer control and carries no arithmetic information.
+
+## 5. Prior-art boundary
+
+The Paley--Wiener identification of half-plane `H^2` with `L^2(0,infinity)`, orthogonal projection onto step cells, and the covariance kernel `min(x,y)-xy` are standard analysis/probability facts; no novelty is claimed for them. A targeted search over Nyman--Beurling natural spaces, Hardy/Paley--Wiener representations of `(n^{-1}-n^{-s})/(s-1)`, and Brownian-bridge formulations did not reveal a source needed for the derivation above or an existing Nyman-specific use of this exact matched control. No specialized external theorem is load-bearing, so `SOURCES.md` is unchanged.
+
+The durable line-local content is the falsification boundary: the raw tail scale proved in `NB-055` is sharp already in the arithmetic-free logarithmic-cell model and is compatible with stationary normalized cell geometry. Therefore further progress on the weighted-repair route must extract **zeta-outer target geometry**, not another estimate of the same unnormalized tail energy.
