@@ -221,33 +221,81 @@ g(\eta_p)-H'(Y_+)
 \tag{22}
 \]
 
-`RE-040` already gives `Z_\pm/Y_\pm -> 1` uniformly over the compact fan. Equation (4) puts `eta_p` between these two tangent parameters. Hence
+Before treating the curvature as constant, the relevant scales must be bootstrapped without assuming `log p=o(Y)`. From (3) and the uniform small-height estimate in `RE-040`,
 
 \[
-Z_\pm\sim\eta_p\sim Y_\pm.
+\frac{H'(Y_\pm)}{g(Y_\pm)}
+=1-b(1-e^{-h(C_\pm)})\log Y_\pm
+=1-o_J(1).
 \tag{23}
 \]
 
-`RE-042` gives `eta_p\sim p`, so in particular
+Equations (18) and (23) imply
 
 \[
-\Delta=\log p=o(Y_-).
+g(\eta_p)<g(Y_-)
+\quad\Longrightarrow\quad
+\eta_p>Y_-,
 \tag{24}
 \]
+
+while
+
+\[
+g(\eta_p)>(1-o_J(1))g(Y_+).
+\tag{25}
+\]
+
+Because `g(x)=1/(x log x)` is regularly varying with index `-1`, (25) gives
+
+\[
+\eta_p\le(1+o_J(1))Y_+.
+\tag{26}
+\]
+
+`RE-042` gives `eta_p~p`; hence `p=O(Y_+)`, and therefore
+
+\[
+\Delta=\log p=O(\log Y_+)=o(Y_+).
+\tag{27}
+\]
+
+Using `Y_-=Y_+-Delta`, we obtain
+
+\[
+Y_-\sim Y_+.
+\tag{28}
+\]
+
+Now (24), (26), and (28) yield
+
+\[
+\eta_p\sim Y_-\sim Y_+.
+\tag{29}
+\]
+
+Finally `RE-040` gives `Z_\pm/Y_\pm->1` uniformly over the compact fan, so
+
+\[
+\boxed{Z_\pm\sim\eta_p\sim Y_\pm\sim p.}
+\tag{30}
+\]
+
+This removes any circular dependence between the shortness of the CA interval and the comparison of the event/tangent scales.
 
 The logarithmic derivative of
 
 \[
 |g'(x)|
 =\frac{\log x+1}{x^2(\log x)^2}
-\tag{25}
+\tag{31}
 \]
 
-is `O(1/x)`. Thus (23)--(24), together with the regular-variation form of (25), give uniformly on the short CA interval
+is `O(1/x)`. Equations (27)--(30) therefore give uniformly on the CA interval
 
 \[
 |g'(t)|=(1+o_J(1))|g'(\eta_p)|.
-\tag{26}
+\tag{32}
 \]
 
 Using (16)--(17),
@@ -255,7 +303,7 @@ Using (16)--(17),
 \[
 -H''(t)
 =(1+o_J(1))|g'(\eta_p)|
-\tag{27}
+\tag{33}
 \]
 
 uniformly for `Y_-<=t<=Y_+`. Substitution into (21)--(22) yields
@@ -264,17 +312,17 @@ uniformly for `Y_-<=t<=Y_+`. Substitution into (21)--(22) yields
 H'(Y_-)-g(\eta_p)
 =\left(\frac12+o_J(1)\right)
 |g'(\eta_p)|\Delta,
-\tag{28}
+\tag{34}
 \]
 
 \[
 g(\eta_p)-H'(Y_+)
 =\left(\frac12+o_J(1)\right)
 |g'(\eta_p)|\Delta.
-\tag{29}
+\tag{35}
 \]
 
-Now apply the mean-value theorem to `g` between `Z_-` and `eta_p`, and between `eta_p` and `Z_+`. By (23), the intermediate derivatives are again `(1+o_J(1))g'(eta_p)`. With (19), equations (28)--(29) therefore become
+Now apply the mean-value theorem to `g` between `Z_-` and `eta_p`, and between `eta_p` and `Z_+`. By (30), the intermediate derivatives are again `(1+o_J(1))g'(eta_p)`. With (19), equations (34)--(35) therefore become
 
 \[
 \eta_p-Z_-
@@ -282,7 +330,7 @@ Now apply the mean-value theorem to `g` between `Z_-` and `eta_p`, and between `
 \qquad
 Z_+-\eta_p
 =\left(\frac12+o_J(1)\right)\Delta,
-\tag{30}
+\tag{36}
 \]
 
 which proves (5)--(6).
@@ -297,17 +345,17 @@ The factor `1/2` is not imported from the half-unit physical offset in `RE-042`.
 \eta_p
 =p+\frac{\log p}{2(\log p+1)}+O(p^{-1})
 =p+\frac12+o(1).
-\tag{31}
+\tag{37}
 \]
 
-Combining this with (30),
+Combining this with (36),
 
 \[
 Z_-
 =p+\frac12
 -\left(\frac12+o_J(1)\right)\log p
 +o(1),
-\tag{32}
+\tag{38}
 \]
 
 \[
@@ -315,10 +363,10 @@ Z_+
 =p+\frac12
 +\left(\frac12+o_J(1)\right)\log p
 +o(1).
-\tag{33}
+\tag{39}
 \]
 
-Since `log p -> infinity`, (32)--(33) imply (8). Therefore a first-layer threshold switch supplies exactly the selector-side comparison that `RE-042` could not obtain from an arbitrary fan state: one tied selector lies before the ordinary-prime jump and the other lies after both the prime and its delayed CA event.
+Since `log p -> infinity`, (38)--(39) imply (8). Therefore a first-layer threshold switch supplies exactly the selector-side comparison that `RE-042` could not obtain from an arbitrary fan state: one tied selector lies before the ordinary-prime jump and the other lies after both the prime and its delayed CA event.
 
 The width in (6) is itself informative. It is asymptotic to the natural mean prime spacing `log p`. Consequently the bracketing theorem does **not** isolate the prime `p`: nearby ordinary primes may also lie between `Z_-` and `Z_+`. Any attempt to convert (8) directly into a race contradiction must therefore control a short interval of logarithmic length, not merely the single discontinuity at `p`.
 
@@ -335,17 +383,17 @@ The second input remains untouched. `RE-040` gives only
 
 \[
 \sup_{b\in J}|\mathcal R_b(Z_b)|\to0,
-\tag{34}
+\tag{40}
 \]
 
 whereas `RE-042` shows that one prime changes the nonlinear residual by only
 
 \[
 \asymp\frac{\log p}{\sqrt p}=o(1).
-\tag{35}
+\tag{41}
 \]
 
-Equation (8) therefore cannot be inserted into (34) to force a contradiction at present. In addition, a threshold fan may skip adjacent CA states, may switch across a higher-layer transition, or may cross a tied multi-atom CA event. This finding proves no lower bound on the number of adjacent first-layer switches inside a counterexample block.
+Equation (8) therefore cannot be inserted into (40) to force a contradiction at present. In addition, a threshold fan may skip adjacent CA states, may switch across a higher-layer transition, or may cross a tied multi-atom CA event. This finding proves no lower bound on the number of adjacent first-layer switches inside a counterexample block.
 
 The sharpened local target is now precise: either obtain a rate for the uniform `RE-040` residual that resolves the logarithmic bracket **and** its possible extra primes, or prove that the compact fan contains enough adjacent first-layer switches for a multi-switch aggregate whose common-source signal survives the square-root normalization. A proof based only on the existence of the fan or on abstract support capacity remains excluded by `RE-039` and `RE-041`.
 
