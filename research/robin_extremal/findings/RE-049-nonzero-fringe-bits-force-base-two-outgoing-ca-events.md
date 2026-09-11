@@ -1,6 +1,6 @@
 # RE-049 — nonzero fringe bits force base-two outgoing CA events
 
-**Status:** `EXACT-DERIVED + QUANTITATIVE-RH-FAILURE + CURVATURE-CLEARANCE + BASE-2-EVENT-REDUCTION + LOGARITHMIC-HOST-SPARSITY + COUNTEREXAMPLE-NARROWING + PRIOR-ART-BOUNDED`. `RE-048` pins every nonzero first-layer fringe switch to the final `O(1/log p)` fraction of the genuine CA support chamber of the entered state, but leaves the outgoing physical event completely unclassified. Strict concavity of the same adaptive barrier now supplies the missing lower clearance: a selected tangent cannot approach the outgoing support event more closely than one half of the logarithmic mass of that event. Combining that fact with the sub-half-unit fringe window collapses the outgoing CA transition to a single possibility.
+**Status:** `EXACT-DERIVED + QUANTITATIVE-RH-FAILURE + CURVATURE-CLEARANCE + BASE-2-EVENT-REDUCTION + LOGARITHMIC-HOST-SPARSITY + SUMMABLE-FRINGE-VARIATION + COUNTEREXAMPLE-NARROWING + PRIOR-ART-BOUNDED`. `RE-048` pins every nonzero first-layer fringe switch to the final `O(1/log p)` fraction of the genuine CA support chamber of the entered state, but leaves the outgoing physical event unclassified. Combining amplitude maximality with the strict concavity of the same adaptive barrier supplies a lower clearance from the outgoing event. Under the nonzero-fringe hypothesis, the two bounds collapse the outgoing CA transition to a single possibility: a deep exponent increment of the prime `2`.
 
 Assume RH is false, fix
 
@@ -40,81 +40,81 @@ Let `D` be the immediate next CA state after `C`, write
 \tag{4}
 \]
 
-and let `xi` be the outgoing CA event coordinate, so that
+and let `xi` be the outgoing CA event coordinate,
 
 \[
 \varepsilon_+(C)=g(\xi).
 \tag{5}
 \]
 
-Then every sufficiently late selected state satisfies the asymptotic **curvature-clearance inequality**
-
-\[
-\boxed{
-\xi-Z\ge\left(\frac12-o_J(1)\right)\Delta.
-}
-\tag{6}
-\]
-
-Now let `p^+` be the next ordinary prime and retain the fringe bit
+Let `p^+` be the next ordinary prime and retain the fringe bit
 
 \[
 \chi_p:=\mathbf 1_{\{p^+\le Z\}}.
-\tag{7}
+\tag{6}
 \]
 
 If
 
 \[
 \boxed{\chi_p=1,}
+\tag{7}
+\]
+
+then the entered state's amplitude maximality and barrier curvature imply
+
+\[
+\boxed{
+\xi-Z\ge\left(\frac12-o_J(1)\right)\Delta.
+}
 \tag{8}
 \]
 
-then `RE-048` gives
+On the other hand `RE-048` gives the source-specific upper clearance
 
 \[
-0<\xi-Z<\frac12.
+\boxed{0<\xi-Z<\frac12.}
 \tag{9}
 \]
 
-Equations (6) and (9) imply
+Therefore
 
 \[
 \Delta<1+o_J(1).
 \tag{10}
 \]
 
-But `D/C` is an integer product of the prime-layer atoms firing at the next CA event. Hence, for every sufficiently late nonzero-fringe switch,
+The exact CA event representation makes `D/C` an integer product of the prime-layer atoms firing at `xi`. Since `1<log 3`, equation (10) eventually forces
 
 \[
 \boxed{\frac DC=2.}
 \tag{11}
 \]
 
-The outgoing event is therefore neither an ordinary next-prime event, nor a generic higher-layer event, nor a tied transition. It is a **single base-two layer event**:
+Hence the outgoing event is neither a generic higher-layer event, nor the next ordinary first-layer event, nor a tied transition. It is one deep base-two layer:
 
 \[
 \boxed{\xi=\eta_{2,j}}
 \tag{12}
 \]
 
-for some layer `j->infinity`.
+for some `j->infinity`.
 
-This gives a second source-specific quantization. Since `RE-048` also gives
+The same argument gives a second quantization. `RE-048` also yields
 
 \[
-p^+\le Z<\xi\le\eta_{p^+,1}<p^++\frac12
+p^+\le Z<\xi\le\eta_{p^+,1}<p^++\frac12,
 \tag{13}
 \]
 
-for all sufficiently large switches, while (6) and (11) give
+while (8) and (11) imply
 
 \[
-\xi-Z\ge\frac{\log2}{2}-o_J(1),
+\xi-Z\ge\frac{\log2}{2}-o_J(1).
 \tag{14}
 \]
 
-we obtain
+Thus, for every sufficiently late nonzero-fringe switch,
 
 \[
 \boxed{
@@ -128,42 +128,74 @@ we obtain
 \tag{15}
 \]
 
-Thus a nonzero fringe bit can occur only when a deep event of the fixed base-`2` CA ladder lands in a narrow right-half subinterval above an ordinary prime, and that prime must be exactly the successor of the prime generating the incoming fan switch.
+So the remaining binary mismatch can occur only when a deep event of the **fixed base-2 CA ladder** lands in a narrow interval above an ordinary prime, and that prime is exactly the successor of the prime generating the incoming switch.
 
-The host set is consequently logarithmically sparse. If `N_1(X)` denotes the number of sufficiently late nonzero-fringe switches from these common fans whose outgoing event satisfies `xi<=X`, then
+These hosts are logarithmically sparse. If `N_1(X)` counts sufficiently late nonzero-fringe switches whose outgoing event satisfies `xi<=X`, then
 
 \[
-\boxed{N_1(X)=O(\log X).}
+\boxed{
+N_1(X)\le\log_2X+O(\log\log X)=O(\log X).
+}
 \tag{16}
 \]
 
-More precisely, distinct nonzero-fringe switches inject into distinct base-two layers, and
-
-\[
-N_1(X)
-\le
-\log_2 X+O(\log\log X).
-\tag{17}
-\]
-
-The corresponding physical host coordinates are multiplicatively lacunary: if `xi_n` are the distinct hosts in increasing order, then
+Their event coordinates are multiplicatively lacunary: for the distinct hosts `xi_n` in increasing order,
 
 \[
 \boxed{
 \liminf_{n\to\infty}\frac{\xi_{n+1}}{\xi_n}\ge2.
 }
+\tag{17}
+\]
+
+Since `p~p^+~xi`, the generating primes of the nonzero-fringe switches have the same asymptotic lacunarity.
+
+Finally, the `RE-045` first-prime-scale fringe increments are absolutely summable on this host set. If
+
+\[
+\Delta\mathcal R_p
+:=
+\mathcal R_\beta(Z_+)-\mathcal R_\beta(Z_-)
 \tag{18}
 \]
 
-Equivalently, the generating primes of successive nonzero-fringe switches have the same asymptotic lacunarity because `p~p^+~xi`.
+at a nonzero-fringe switch, then `RE-045` gives uniformly on `J`
 
-## 1. Maximality gives a lower bound on the distance to the outgoing support event
+\[
+|\Delta\mathcal R_p|
+\ll_J\frac{\log p}{\sqrt p}.
+\tag{19}
+\]
+
+Consequently
+
+\[
+\boxed{
+\sum_{\chi_p=1}|\Delta\mathcal R_p|<\infty,
+}
+\tag{20}
+\]
+
+and, more quantitatively,
+
+\[
+\boxed{
+\sum_{\substack{\chi_p=1\\p\ge X}}
+|\Delta\mathcal R_p|
+\ll_J\frac{\log X}{\sqrt X}.
+}
+\tag{21}
+\]
+
+Thus the binary fringe quantum isolated in `RE-045` cannot build an unbounded late-scale correction by accumulation. Any closing aggregate obstruction must use additional interruption data or a global common-source relation, not merely sum the surviving first-prime-scale bits.
+
+## 1. Maximality supplies the curvature-clearance inequality
 
 At the breakpoint `beta`, put
 
 \[
 c:=A_\beta(C)=Y^\beta(e^h-1)>0
-\tag{19}
+\tag{22}
 \]
 
 and use the adaptive barrier from `RE-034`, `RE-040`, and `RE-043`,
@@ -172,76 +204,76 @@ and use the adaptive barrier from `RE-034`, `RE-040`, and `RE-043`,
 \tau(x):=\log(1+cx^{-\beta}),
 \qquad
 H(x):=\log\log x+\tau(x).
-\tag{20}
-\]
-
-Since `c=Y^\beta(e^h-1)`,
-
-\[
-H(Y)=\log\log Y+h.
-\tag{21}
-\]
-
-Write
-
-\[
-F(E):=\log\rho(E)-\gamma
-=\log\log(\log E)+h(E)
-\tag{22}
-\]
-
-on CA states. The immediate successor `D` obeys
-
-\[
-h(D)\le\tau(\log D).
 \tag{23}
 \]
 
-Indeed, if `D` remains in the same positive block, (23) is exactly the maximality of `C` for `A_\beta`; if `D` is the first state outside that block, then `h(D)<=0<\tau(\log D)` and the inequality is even stronger. Therefore
+At `C`,
+
+\[
+H(Y)=\log\log Y+h.
+\tag{24}
+\]
+
+For a CA state `E`, write
+
+\[
+F(E):=\log\rho(E)-\gamma
+=\log\log(\log E)+h(E).
+\tag{25}
+\]
+
+The immediate successor `D` satisfies
+
+\[
+h(D)\le\tau(\log D).
+\tag{26}
+\]
+
+If `D` remains in the same positive block this is exactly the maximality of `C` for `A_\beta`; if `D` is the first state outside the block then `h(D)<=0<\tau(\log D)`. Hence
 
 \[
 F(D)\le H(Y+\Delta),
 \qquad
 F(C)=H(Y).
-\tag{24}
+\tag{27}
 \]
 
-The physical CA support identity gives
+The physical CA support identity is
 
 \[
-F(D)-F(C)=\varepsilon_+(C)\Delta=g(\xi)\Delta.
-\tag{25}
+F(D)-F(C)=\varepsilon_+(C)\Delta=g(\xi)\Delta,
+\tag{28}
 \]
 
-Combining (24)--(25),
+so
 
 \[
 g(\xi)
 \le
 \frac{H(Y+\Delta)-H(Y)}{\Delta}.
-\tag{26}
+\tag{29}
 \]
 
-At `Y`, the barrier tangent is exactly the selected slope,
+At the selected state the barrier tangent is
 
 \[
 H'(Y)
 =g(Y)-\frac{\beta a}{Y}
 =g(Z).
-\tag{27}
+\tag{30}
 \]
 
-The uniform small-height regime from `RE-040` gives on the whole neighboring CA interval
+`RE-040` gives the uniform small-height curvature control on the neighboring CA interval,
 
 \[
 -H''(x)
-=(1+o_J(1))|g'(Y)|.
-\tag{28}
+=(1+o_J(1))|g'(Y)|,
+\tag{31}
 \]
 
-Here the already-established neighboring-CA spacing `Delta=O(log Y)` makes `g'` asymptotically constant across the interval, while the positive curvature `tau''` is only `o_J(|g'|)`.
+because consecutive CA neighbors have `Delta=O(log Y)`, `g'` is asymptotically constant on that scale, and `tau''=o_J(|g'|)`.
 
-The exact tangent-minus-secant identity is
+The exact tangent-minus-secant identity gives
 
 \[
 H'(Y)-
@@ -249,136 +281,97 @@ H'(Y)-
 =
 \frac1\Delta
 \int_0^\Delta
-(\Delta-u)(-H''(Y+u))\,du.
-\tag{29}
+(\Delta-u)(-H''(Y+u))\,du,
+\tag{32}
 \]
 
-Using (28),
-
-\[
-H'(Y)-
-\frac{H(Y+\Delta)-H(Y)}{\Delta}
-=
-\left(\frac12+o_J(1)\right)|g'(Y)|\Delta.
-\tag{30}
-\]
-
-Equations (26)--(27) therefore imply
+hence
 
 \[
 g(Z)-g(\xi)
 \ge
 \left(\frac12+o_J(1)\right)|g'(Y)|\Delta.
-\tag{31}
+\tag{33}
 \]
 
-For the nonzero-fringe configuration, `RE-048` gives `0<xi-Z<1/2` and `Z~Y~p`. The mean-value theorem then gives
+Now use the nonzero-fringe hypothesis. `RE-048` gives `0<xi-Z<1/2` and `Z~Y~p`, so the mean-value theorem yields
 
 \[
 g(Z)-g(\xi)
 =(1+o_J(1))|g'(Y)|(\xi-Z).
-\tag{32}
+\tag{34}
 \]
 
-Cancelling the common derivative scale between (31) and (32) proves (6). Notice that the argument uses the **maximality of the entered amplitude state**, not merely the fact that `Z` lies inside its CA support chamber. An abstract chamber can place a selector arbitrarily close to its right edge; an exposed Robin-amplitude state must still leave enough curvature area to dominate its immediate physical successor.
+Cancelling the common derivative scale between (33) and (34) proves (8). The conditionality matters: the present finding needs the `chi_p=1` half-unit window to identify the derivative scales without introducing a separate large-gap estimate.
 
-## 2. Sub-half-unit fringe clearance forces quotient two
+The load-bearing point is that (29) uses **amplitude maximality**, not merely chamber membership. Abstract support geometry alone can place a selector arbitrarily near a support edge; an exposed Robin-amplitude state must also dominate its immediate physical successor, paying the tangent-secant curvature cost in (32).
 
-Under `chi_p=1`, the next ordinary prime has already crossed the selector while its own first-layer CA event is still pending. `RE-048` gives
+## 2. The half-unit window forces the integer quotient to be two
+
+Under `chi_p=1`, `RE-048` gives
 
 \[
 p^+\le Z<\xi\le\eta_{p^+,1}<p^++\frac12,
-\tag{33}
+\tag{35}
 \]
 
-and hence (9). Combining (6) with (9),
+so (9) holds. Combining (8) with (9),
 
 \[
 \Delta
 \le
 (2+o_J(1))(\xi-Z)
 <1+o_J(1).
-\tag{34}
-\]
-
-The CA event representation of `RE-001` writes every transition mass as a sum of prime logarithms. Thus
-
-\[
-\Delta=\sum_{(q,k)\text{ firing at }\xi}\log q
-=\log Q
-\tag{35}
-\]
-
-for the integer quotient `Q=D/C>=2`.
-
-Since
-
-\[
-1<\log3,
 \tag{36}
 \]
 
-equation (34) eventually gives `Delta<log3`. The only possible integer quotient is therefore
+The event representation of `RE-001` gives
 
 \[
-Q=2,
-\]
-
-proving (11). A tied event is impossible because any second atom would make the product quotient at least `2*3>2`; a prime base `q>=3` is impossible because its single mass is at least `log3`. Hence the sole outgoing atom is one exponent increment of the prime `2`, which proves (12).
-
-This classification is substantially stronger than the alternatives left open by `RE-046`--`RE-048`. A nonzero fringe bit does not merely require "some exceptional interruption" before a clean `p^+` exit. The physical event immediately ending the entered CA chamber is forced onto one fixed high-layer ladder.
-
-## 3. The same argument pins the base-two event above a prime
-
-With `Delta=log2`, equation (6) becomes
-
-\[
-\xi-Z
-\ge
-\frac{\log2}{2}-o_J(1).
+\Delta
+=\sum_{(q,k)\text{ firing at }\xi}\log q
+=\log Q,
+\qquad
+Q:=D/C\in\mathbf Z_{\ge2}.
 \tag{37}
 \]
 
-Put `q=p^+`. From `chi_p=1`, `q<=Z`, while (33) gives `xi<q+1/2`. Consequently
+Since `1<log3`, equation (36) eventually implies `Delta<log3`, so `Q=2`. Any tied event would have product quotient strictly larger than `2`, and any single base `q>=3` would contribute at least `log3`. Therefore the outgoing event is uniquely one exponent increment of the prime `2`, proving (11)--(12) without assuming the open Alaoglu--Erdos conjecture that all consecutive CA quotients are prime.
+
+With `Delta=log2`, (8) gives
 
 \[
-q+rac{\log2}{2}-o_J(1)
-\le
-\xi
-<q+\frac12.
+\xi-Z\ge\frac{\log2}{2}-o_J(1).
 \tag{38}
 \]
 
-For sufficiently large switches the interval in (38) lies strictly inside `(q,q+1)`. Therefore
+Together with (35), this places `xi` in
 
 \[
-q=\lfloor\xi\rfloor.
+p^++\frac{\log2}{2}-o_J(1)
+\le\xi<p^++\frac12,
 \tag{39}
 \]
 
-Since `xi=eta_(2,j)`, this proves the floor-prime and fractional-part restrictions (15).
-
-The width of the allowed fractional window tends to
+which proves the floor-prime and fractional-part restriction (15). The limiting width of this admissible fractional window is
 
 \[
-\frac12-\frac{\log2}{2}
-=\frac{1-\log2}{2}
-\approx0.1534.
+\frac{1-\log2}{2}\approx0.1534.
 \tag{40}
 \]
 
-No equidistribution claim for the fractional parts of `eta_(2,j)` is being made. Equation (15) is a necessary host condition, not an assertion that such layers occur infinitely often. It is nevertheless a much smaller arithmetic target than the unrestricted higher-layer/tied interruption class left by `RE-048`.
+No equidistribution statement for `\{eta_(2,j)\}` is assumed or claimed.
 
-## 4. Base-two hosts are logarithmically sparse and geometrically lacunary
+## 3. The fixed base-two ladder gives logarithmic host count
 
-For the base-two layer `j`, retain the exact notation from `RE-020`,
+For the base-two layer `j`, use the exact notation from `RE-020`,
 
 \[
 S_{2,j}=2+2^2+\cdots+2^j=2^{j+1}-2.
 \tag{41}
 \]
 
-The exact event equation there gives
+The exact event equation gives
 
 \[
 \boxed{
@@ -403,15 +396,13 @@ If `eta_(2,j)<=X`, then
 so
 
 \[
-j
-\le
-\log_2X+O(\log\log X).
+j\le\log_2X+O(\log\log X).
 \tag{44}
 \]
 
-Each physical CA state has one immediate outgoing event and each state can be entered at most once by the rightmost fan. Distinct nonzero-fringe switches therefore map to distinct base-two layers. Equations (43)--(44) prove (16)--(17).
+Each physical CA state has one immediate outgoing event and the rightmost fan enters a state at most once. Distinct nonzero-fringe switches therefore inject into distinct base-two layers, proving (16).
 
-Moreover (42) yields
+Equation (42) also gives
 
 \[
 \eta_{2,j}\log\eta_{2,j}
@@ -426,32 +417,73 @@ and hence
 \tag{46}
 \]
 
-Any increasing subsequence of distinct base-two layers is at least as lacunary asymptotically, proving (18). Because the first-layer switch geometry gives `p~Z~xi`, the same multiplicative separation transfers to the generating primes of the nonzero-fringe switches.
+Any increasing subsequence of distinct base-two layers is at least as lacunary asymptotically, proving (17). Since the incoming first-layer switch geometry gives `p~Z~xi`, the same multiplicative separation holds for the corresponding generating primes.
 
-This is much sharper than the generic zero-density statement for higher layers. A union over all higher-layer prime bases still has roughly square-root-scale complexity at event height `X`; the surviving nonzero fringe hosts have collapsed to one fixed-base ladder with only logarithmically many candidates below `X`.
+This is much sharper than generic zero density of higher CA layers. The union of all higher-layer bases still has roughly square-root-scale complexity at event height `X`; nonzero fringe hosts have collapsed to one fixed-base ladder with only logarithmically many candidates below `X`.
+
+## 4. Lacunarity makes the local fringe contribution absolutely summable
+
+At a nonzero-fringe switch, `RE-045` gives
+
+\[
+\Delta\mathcal R_p
+=
+\frac{\log p}{\beta\sqrt p}
++o_J\!\left(\frac{\log p}{\sqrt p}\right).
+\tag{47}
+\]
+
+Because `beta\in J` is bounded away from zero, for all sufficiently late hosts
+
+\[
+|\Delta\mathcal R_p|
+\ll_J\frac{\log p}{\sqrt p}.
+\tag{48}
+\]
+
+From (17), after discarding finitely many terms the host primes grow by a fixed ratio `r>1`; for example one may take any `r<2`. The function `(log x)/sqrt x` is eventually decreasing, and therefore the resulting geometric majorant gives
+
+\[
+\sum_{\chi_p=1}\frac{\log p}{\sqrt p}<\infty.
+\tag{49}
+\]
+
+If the first host above `X` is `P>=X`, the same geometric estimate gives
+
+\[
+\sum_{\substack{\chi_p=1\\p\ge X}}
+\frac{\log p}{\sqrt p}
+\ll\frac{\log P}{\sqrt P}
+\ll\frac{\log X}{\sqrt X},
+\tag{50}
+\]
+
+where the final comparison uses the eventual decrease of `(log x)/sqrt x`. Equations (48)--(50) prove (20)--(21), including the `o_J` remainder because it is eventually dominated by the same summable majorant.
+
+This closes one tempting continuation of `RE-045`: even if infinitely many nonzero bits exist, their individual-prime residual quanta cannot accumulate an unbounded tail. A viable aggregate contradiction must extract a different quantity from the exceptional interruption geometry or couple those sparse events to the full translated prime race.
 
 ## 5. Stress tests and boundary of the result
 
-The result does **not** prove that any nonzero fringe bit exists. It only classifies and counts the locations that could host one. If all sufficiently late adjacent first-layer switches have `chi_p=0`, the theorem is vacuous, exactly as `RE-048` is.
+The finding does **not** prove that any nonzero fringe bit exists. If all sufficiently late adjacent first-layer switches have `chi_p=0`, the theorem is vacuous. Nor does the `O(log X)` host count contradict false RH: the current fan theory has no theorem requiring positive-density or even infinite fringe-bit occurrence.
 
-Nor does logarithmic host sparsity by itself contradict false RH. The current fan theory supplies no lower bound requiring a positive density, a divergent weighted mass, or even infinitely many nonzero fringe bits. A false-RH fan could in principle place every surviving binary mismatch on a lacunary subsequence of base-two events. The next useful aggregate theorem must therefore force enough fringe mass, or show that the floor-prime/fractional condition (15) is itself too sparse to carry the required common-source race correction.
+The floor-prime condition (15) is a necessary host condition, not an assertion about the distribution of the fractional parts of `eta_(2,j)`. Proving that only finitely many such layers have prime floor, or that the extra predecessor-gap constraint inherited from `RE-045` is impossible infinitely often, would require new arithmetic input.
 
-The curvature-clearance step is load-bearing. Dropping amplitude maximality and retaining only the abstract support interval invalidates (26): a synthetic support staircase may place a selector arbitrarily close to an outgoing event without paying the tangent-secant curvature cost. Thus `RE-041` does not reproduce (6) unless the synthetic heights also satisfy the same next-state amplitude domination at the edge.
+The summability statement concerns the **binary first-prime-scale component isolated in `RE-045`**. It does not say that every contribution created by a skipped state, a base-two layer transition, or the global nonlinear race is summable. Those quantities may live on different scales and have not been reduced to (47).
 
-The argument does not assume the Alaoglu--Erdos conjecture that every consecutive CA quotient is prime. Equation (35) allows arbitrary tied or multi-atom transitions; the small-mass conclusion then forces the integer quotient to be `2`, which retrospectively makes the outgoing transition unique. This avoids importing the open consecutive-prime-quotient conjecture.
+The argument does not assume every consecutive CA quotient is prime. It allows an arbitrary tied/multi-atom outgoing event until (36)--(37) force its total integer quotient to equal `2`. This is why the conclusion is stronger than merely invoking the prime/semiprime neighboring-CA theorem.
 
-Finally, (18) is a host-count statement in physical event scale, not a density theorem in threshold `b`. The threshold fan may assign highly nonuniform cell widths to the surviving hosts. Any capacity argument still has to use the amplitude/support coupling rather than infer threshold measure directly from `O(log X)` event count.
+Finally, host sparsity is measured in physical event scale, not directly in threshold `b`. The fan can assign highly nonuniform threshold widths to the surviving hosts, so no threshold-capacity contradiction follows from (16) alone.
 
 ## 6. Prior-art boundary
 
-Alaoglu--Erdos supplies the classical CA prime-exponent threshold structure and the fact that CA transitions are products of prime-layer atoms; that material is already anchored in `SOURCES.md`. Mantovanelli's 2026 prime-layer workload formulation is the closest current event-coordinate representation, and Zimov studies restrictions coming from consecutive CA quotients. The fixed-base event equation and its exact geometric-sum bracket are already recorded and used in `RE-020`.
+Alaoglu--Erdos supplies the classical CA prime-exponent threshold structure and neighboring-transition quantization already anchored in `SOURCES.md`. Mantovanelli's August 2026 preprint gives the closest current prime-layer event-coordinate framework, and Zimov studies neighboring CA transition restrictions. The exact fixed-base event bracket (42) is already recorded in `RE-020`.
 
-A targeted current search found the classical prime/semiprime consecutive-quotient discussion, the recent exact prime-layer workload, and recent Robin-counterexample transition work, but no result coupling an adaptive Robin-amplitude fringe switch to a tangent-secant curvature clearance that **forces the outgoing quotient to equal `2`**, nor the resulting floor-prime condition for deep base-two event coordinates.
+A targeted current search found the classical prime/semiprime consecutive-quotient discussion, the recent exact prime-layer workload, and recent Robin-counterexample transition work, but no result coupling an adaptive Robin-amplitude fringe switch to a tangent-secant curvature clearance that forces the outgoing quotient to equal `2`, nor the resulting floor-prime restriction or summable binary-fringe host set.
 
-No new external theorem is load-bearing. The new content is obtained by combining `RE-040`'s strict adaptive-barrier concavity and local maximality with `RE-048`'s sub-half-unit support-edge window and the exact event quantization of `RE-001`. `SOURCES.md` therefore requires no new dependency.
+No new external theorem is load-bearing. The result combines `RE-040`'s strict adaptive-barrier concavity and local maximality, `RE-048`'s sub-half-unit support-edge window, `RE-001`'s exact event quantization, and `RE-020`'s fixed-base event bracket. `SOURCES.md` therefore requires no new dependency.
 
 ## Consequence
 
-The exceptional currency isolated by `RE-046`--`RE-048` is no longer an amorphous mixture of skipped states, higher layers, and tied events. **Every nonzero fringe bit forces the entered CA state to exit through the deep base-two ladder, within less than half a physical unit of the next ordinary prime.** Such hosts are only logarithmically numerous and asymptotically doubling in event scale.
+The exceptional currency isolated by `RE-046`--`RE-048` is no longer an amorphous mixture of skipped states, higher layers, and tied events. **Every nonzero fringe bit forces the entered CA state to exit through the deep base-two ladder, within less than half a physical unit of the next ordinary prime.** Such hosts are only logarithmically numerous, asymptotically doubling in event scale, and the associated `RE-045` binary residual quanta have finite total variation.
 
-This sharpens the live obstruction substantially. A closing argument no longer needs to control all exceptional CA transitions. It can target the one-dimensional sequence `eta_(2,j)`: either show that the prime/fractional window in (15) cannot support the fringe information demanded by a false-RH fan, or prove that any aggregate race correction carried by an `O(log X)` geometrically lacunary host set is too small to reconcile the uniform translated prime-race law.
+The next live target is correspondingly narrower. A closing argument can focus on the one-dimensional sequence `eta_(2,j)` and ask whether its prime/fractional hosts can carry any additional non-summable common-source statistic required by the false-RH fan. Merely accumulating the already-isolated binary fringe increments is now ruled out as a source of a divergent obstruction.
