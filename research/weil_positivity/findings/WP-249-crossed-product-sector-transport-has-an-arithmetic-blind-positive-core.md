@@ -20,30 +20,40 @@ Use the quasi-local algebra from `WP-248`,
 \tag{1}
 \]
 
-and let
+and for each finite `F` define the local tensor automorphism
 
 \[
-\alpha=\bigotimes_p\alpha_p
+\alpha_F=\bigotimes_{p\in F}\alpha_p
+\quad\text{on }\mathcal A_F,
 \tag{2}
 \]
 
-be the product automorphism induced by the local rotations carrying the spherical local lines toward the critical product data. Because every quasi-local observable has finite support, `alpha` is a well-defined C*-automorphism even at the critical scale where `WP-248` proves that it is nonspatial in the spherical product representation.
+where the `alpha_p` are the local rotations carrying the spherical local lines toward the critical product data. If `F\subset F'`, the canonical inclusion is `i_{F,F'}(a)=a\otimes 1`, and unitality of the local automorphisms gives
+
+\[
+\alpha_{F'}(i_{F,F'}(a))
+=\alpha_F(a)\otimes 1
+=i_{F,F'}(\alpha_F(a)).
+\tag{3}
+\]
+
+Hence the `alpha_F` are compatible and define a well-defined *-automorphism `alpha_0` on the algebraic local union `A_loc=\bigcup_F A_F`. Each `alpha_F` is isometric, so `alpha_0` is isometric and extends uniquely by continuity to an isometric *-endomorphism `alpha` of the norm completion `A`. Applying the same construction to `alpha_F^{-1}` gives an isometric extension `beta`; on the dense local union `beta alpha=alpha beta=id`, and therefore by continuity the same identities hold on all of `A`. Thus `alpha` is a C*-automorphism even at the critical scale where `WP-248` proves that it is nonspatial in the spherical product representation.
 
 Form the crossed product
 
 \[
 \mathcal B=\mathcal A\rtimes_\alpha\mathbb Z.
-\tag{3}
+\tag{4}
 \]
 
 Since `Z` is amenable, there is no full/reduced ambiguity relevant here. Let `u` be the canonical implementing unitary, with convention
 
 \[
 uau^*=\alpha(a),\qquad a\in\mathcal A.
-\tag{4}
+\tag{5}
 \]
 
-Equation (4) is the exact mechanism under test. No KMS state, modular Hamiltonian, extra boundary algebra, archimedean factor, or target-selected functional calculus is added.
+Equation (5) is the exact mechanism under test. No KMS state, modular Hamiltonian, extra boundary algebra, archimedean factor, or target-selected functional calculus is added.
 
 The representation audit is important. At the critical tail, `u` should **not** be interpreted as a unitary recovered inside the spherical GNS representation: `WP-248` rules out such a spatial implementer there. The crossed product instead adjoins a new abstract generator in a larger algebra. This legitimately changes category, but that category change must itself supply new arithmetic structure if it is to help Weil positivity.
 
@@ -53,24 +63,24 @@ The most primitive positive form supplied by the new generator is
 
 \[
 (1-u)^*(1-u)=2-u-u^*\succeq0.
-\tag{5}
+\tag{6}
 \]
 
 Its algebraic expression is independent of the local prime rotations defining `alpha`. Replacing `alpha` by any other automorphism of `A` still gives the same positive Laurent polynomial in the implementing unitary. In the regular covariant representation this is the ordinary discrete shift Laplacian in the `Z` direction.
 
-Therefore (5) cannot by itself distinguish the critical amplitudes `p^{-1/2}`, the Mangoldt amplitudes `(log p)/sqrt(p)`, a generalized-prime control, or even an automorphism unrelated to arithmetic. Any arithmetic dependence must enter through coefficient observables or through additional state/weight/domain data. The crossed-product shift is a transport coordinate, not a source-forced Weil kernel.
+Therefore (6) cannot by itself distinguish the critical amplitudes `p^{-1/2}`, the Mangoldt amplitudes `(log p)/sqrt(p)`, a generalized-prime control, or even an automorphism unrelated to arithmetic. Any arithmetic dependence must enter through coefficient observables or through additional state/weight/domain data. The crossed-product shift is a transport coordinate, not a source-forced Weil kernel.
 
 This matched control matters because it prevents the category enlargement itself from being counted as new arithmetic positivity. A positive operator that survives unchanged after the arithmetic automorphism is replaced is not the missing finite-prime sign mechanism.
 
 ## 3. Commutator squares with local observables remain local
 
-The first mixed positive object is also exact. From (4),
+The first mixed positive object is also exact. From (5),
 
 \[
 ua=\alpha(a)u,
 \qquad
 [u,a]=(\alpha(a)-a)u.
-\tag{6}
+\tag{7}
 \]
 
 Write `d_a=alpha(a)-a`. Then
@@ -80,14 +90,14 @@ Write `d_a=alpha(a)-a`. Then
 =u^*d_a^*d_a u
 =\alpha^{-1}(d_a^*d_a)
 \succeq0.
-\tag{7}
+\tag{8}
 \]
 
 Now let `a` have support in a finite set of primes `S`, so `a in A_S`. The product automorphism preserves every finite local algebra,
 
 \[
 \alpha(\mathcal A_S)=\mathcal A_S.
-\tag{8}
+\tag{9}
 \]
 
 Hence
@@ -96,7 +106,7 @@ Hence
 \boxed{
 [u,a]^*[u,a]\in\mathcal A_S.
 }
-\tag{9}
+\tag{10}
 \]
 
 Thus the canonical commutator energy does not spread one local observable into an all-prime object. It remains a positive observable on exactly the finite prime subsystem from which it started.
@@ -105,7 +115,7 @@ This is not a statement that `alpha-id` is nonclosable or unbounded. On the cont
 
 \[
 \|\alpha(a)-a\|\le2\|a\|.
-\tag{10}
+\tag{11}
 \]
 
 The obstruction is support and arithmetic content, not operator-domain pathology.
@@ -117,14 +127,14 @@ The local result extends from one commutator to the canonical dense Fourier *-al
 \[
 x=\sum_{n=-N}^{N}a_nu^n,
 \qquad a_n\in\mathcal A_S
-\tag{11}
+\tag{12}
 \]
 
 for one finite prime set `S`. Let
 
 \[
 E:\mathcal B\to\mathcal A
-\tag{12}
+\tag{13}
 \]
 
 be the canonical conditional expectation extracting Fourier degree zero. Expanding `x^*x`, all unequal Fourier degrees vanish under `E`, while the diagonal terms give
@@ -136,39 +146,39 @@ E(x^*x)
 \in\mathcal A_S,
 \qquad E(x^*x)\succeq0.
 }
-\tag{13}
+\tag{14}
 \]
 
-Equation (13) is the useful no-go statement. The standard source of scalar positivity on the finite crossed-product core factors through a sum of positive local terms and preserves the finite prime support of the coefficient data. If `omega` is any product/reference state on `A`, then
+Equation (14) is the useful no-go statement. The standard source of scalar positivity on the finite crossed-product core factors through a sum of positive local terms and preserves the finite prime support of the coefficient data. If `omega` is any product/reference state on `A`, then
 
 \[
 (\omega\circ E)(x^*x)
 =\sum_n\omega\!\left(\alpha^{-n}(a_n^*a_n)\right)
 \ge0
-\tag{14}
+\tag{15}
 \]
 
 depends only on the chosen finite subsystem and whatever local arithmetic was already put into the `a_n` and `alpha_p` there.
 
-Consequently, the finite Fourier core cannot *generate* the all-prime prime-power distribution required by the finite part of the Weil explicit formula from a local probe. Still less does it produce the Gamma factor or the polar/global counterterms: those objects are absent from (1)--(4).
+Consequently, the finite Fourier core cannot *generate* the all-prime prime-power distribution required by the finite part of the Weil explicit formula from a local probe. Still less does it produce the Gamma factor or the polar/global counterterms: those objects are absent from the defining crossed-product data above.
 
-The scope is exact. General elements of the C*-completion need not have finite prime support, and non-quasi-local states, weights, correspondences, cycles, or unbounded multipliers may carry genuinely global information. Equation (13) does not rule them out. It shows that such information would be **additional structure**, not a hidden consequence of adjoining `u` and taking canonical positive squares.
+The scope is exact. General elements of the C*-completion need not have finite prime support, and non-quasi-local states, weights, correspondences, cycles, or unbounded multipliers may carry genuinely global information. Equation (14) does not rule them out. It shows that such information would be **additional structure**, not a hidden consequence of adjoining `u` and taking canonical positive squares.
 
 ## 5. Aggressive falsification and matched controls
 
-**Automorphism control.** Replace the critical prime rotation by any other product automorphism preserving the local tensor factors. The pure shift energy (5) is unchanged, and the support theorem (13) still holds. The positivity mechanism is therefore generic crossed-product geometry, not Riemann-specific geometry.
+**Automorphism control.** Replace the critical prime rotation by any other product automorphism preserving the local tensor factors. The pure shift energy (6) is unchanged, and the support theorem (14) still holds. The positivity mechanism is therefore generic crossed-product geometry, not Riemann-specific geometry.
 
-**Finite-support control.** If the deformation is nontrivial at only finitely many primes, `alpha` is spatial in the obvious finite tensor representation, but (5)--(14) are unchanged. The same positive core exists on both sides of the critical representation transition. Hence its positivity does not detect the half-density boundary isolated by `WP-247`--`WP-248`.
+**Finite-support control.** If the deformation is nontrivial at only finitely many primes, `alpha` is spatial in the obvious finite tensor representation, but (6)--(15) are unchanged. The same positive core exists on both sides of the critical representation transition. Hence its positivity does not detect the half-density boundary isolated by `WP-247`--`WP-248`.
 
 **Subcritical control.** When the product deformation is square-summable and the spherical and deformed product states are quasi-equivalent, the crossed product can still be formed and has exactly the same Fourier-core identities. Crossing by `Z` therefore does not convert critical disjointness into a new sign theorem; it merely provides a uniform algebraic language for transport in both regimes.
 
 **Arithmetic-insertion control.** One may choose the local rotations `alpha_p` using `p^{-1/2}` or `(log p)/sqrt(p)`. Then mixed expressions can of course contain those numbers. But they have entered through the definition of `alpha`; the bare crossed-product positivity has not derived them. A successful route must explain why the source geometry forces the critical coefficients and why the resulting *global* form has the Weil orientation independently of the target.
 
-**Nonlocal-coefficient escape.** A quasi-local element may be a norm limit of observables with growing support, so this finding does not assert that every element of `A` is finitely supported. The decisive distinction is that the canonical crossed-product operations in (5)--(13) do not supply the missing global tail or its renormalization. If a specially chosen nonlocal coefficient is used, its existence, convergence, normalization, and arithmetic selection become separate obligations and must pass the same target-programmability controls as other inserted kernels.
+**Nonlocal-coefficient escape.** A quasi-local element may be a norm limit of observables with growing support, so this finding does not assert that every element of `A` is finitely supported. The decisive distinction is that the canonical crossed-product operations above do not supply the missing global tail or its renormalization. If a specially chosen nonlocal coefficient is used, its existence, convergence, normalization, and arithmetic selection become separate obligations and must pass the same target-programmability controls as other inserted kernels.
 
 ## 6. Prior-art and novelty audit
 
-The operator-algebra ingredients are classical, not novel. For a discrete-group crossed product, the canonical conditional expectation extracts the identity Fourier coefficient; for `Z`-crossed products the canonical implementing unitary and the covariance relation (4) are standard. See, for example, Dana P. Williams, *Crossed Products of C*-Algebras*, Mathematical Surveys and Monographs 134, AMS (2007), and the explicit `A rtimes_alpha Z`/canonical-expectation setup in Del Vecchio--Fidaleo--Rossi, *Skew-product dynamical systems for crossed product C*-algebras and their ergodic properties*, arXiv:2105.00197.
+The operator-algebra ingredients are classical, not novel. For a discrete-group crossed product, the canonical conditional expectation extracts the identity Fourier coefficient; for `Z`-crossed products the canonical implementing unitary and the covariance relation are standard. See, for example, Dana P. Williams, *Crossed Products of C*-Algebras*, Mathematical Surveys and Monographs 134, AMS (2007), and the explicit `A rtimes_alpha Z`/canonical-expectation setup in Del Vecchio--Fidaleo--Rossi, *Skew-product dynamical systems for crossed product C*-algebras and their ergodic properties*, arXiv:2105.00197.
 
 Arithmetic crossed products and quantum-statistical systems are also established prior art. Arledge--Laca--Raeburn, *Semigroup crossed products and Hecke algebras arising from number fields*, Documenta Math. 2 (1997), 115--138, DOI `10.4171/DM/25`, realizes number-field Hecke algebras as semigroup crossed products. Bost--Connes-type C*-dynamical systems, their zeta partition functions, KMS states, phase transitions, and arithmetic correspondences form a substantial existing literature; see also Cohen, *A C*-dynamical system with Dedekind zeta partition function and spontaneous symmetry breaking*, J. Théorie des Nombres de Bordeaux 11 (1999), 15--30, and Laca--Neshveyev--Trifković, *Bost--Connes systems, Hecke algebras, and induction*, J. Noncommut. Geom. 7 (2013), 525--546, DOI `10.4171/JNCG/125`.
 
@@ -188,7 +198,7 @@ A bounded search across crossed-product C*-algebras, product automorphisms, cond
 \not\Rightarrow
 \text{new arithmetic/global positivity}.
 }
-\tag{15}
+\tag{16}
 \]
 
 The surviving route is therefore narrower. A crossed-product continuation must add something that is not already contained in the universal transport core: for example a **source-forced** KMS/modular weight, a non-quasi-local boundary state, a Hilbert-C*-module correspondence, an infinite-rank finite--archimedean coupling, or an unbounded cycle with a proved domain/closability theorem. Whatever object is chosen must intrinsically generate the finite-prime coefficients **and** the Gamma/polar terms, and its nonnegativity must follow from an independent theorem rather than from a target-selected coefficient, state, quotient, or regularization.

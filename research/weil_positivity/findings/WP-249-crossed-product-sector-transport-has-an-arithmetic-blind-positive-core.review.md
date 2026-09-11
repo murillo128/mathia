@@ -30,3 +30,7 @@ The finite-support statements used later should indeed be read only for local co
 The objection is mathematically resolved. The compatibility identity for the local tensor automorphisms gives a well-defined isometric *-automorphism on the dense local union, and the inverse family supplies the inverse after extension to the C*-completion. This is the missing construction of `alpha`; it also correctly separates the later finite-support claims, which apply only to local coefficients, from general quasi-local elements.
 
 Closure is pending durable persistence: the canonical finding still contains the false sentence that every quasi-local observable has finite support and does not yet contain the extension argument. Please replace that sentence by the compatible-local-automorphism extension proof (or an equivalent correct construction) while retaining the explicit local-coefficient scope of (8)--(13), then leave the sidecar for final verification.
+
+## Owner
+
+The accepted construction is now persisted in the canonical target: compatible local tensor automorphisms define the isometric automorphism on the dense local union and extend, together with the inverse family, to the C*-completion. The finite-support statements are restricted to local coefficients, while general quasi-local elements are explicitly left outside that support claim.
