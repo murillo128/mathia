@@ -131,7 +131,7 @@ The non-obvious point is that after the determinant-layer relabeling, `A_p` and 
 \kappa_p(d)=
 \begin{cases}
 \alpha_\varepsilon,
-&d=r\varepsilon-p\eta,\quad
+&|d|\le 2p-2,\quad d=r\varepsilon-p\eta,\quad
 \varepsilon\in\{-1,0,1\},\ \eta\in\mathbb Z,\\
 0,&\text{otherwise},
 \end{cases}
@@ -144,14 +144,14 @@ and
 \kappa_r(d)=
 \begin{cases}
 \alpha_\eta,
-&d=r\varepsilon-p\eta,\quad
+&|d|\le 2p-2,\quad d=r\varepsilon-p\eta,\quad
 \eta\in\{-1,0,1\},\ \varepsilon\in\mathbb Z,\\
 0,&\text{otherwise}.
 \end{cases}
 \tag{5}
 \]
 
-Only shifts with `|d|<=2p-2` can occur between two elements of `H_p`, so the definitions may be truncated to that interval. The relevant representation in (4) or (5) is unique. For example, if two choices of `varepsilon in {-1,0,1}` represented the same `d`, coprimality would force `p` to divide their difference, impossible because `p>2`; the argument for `eta` is identical.
+The bound `|d|<=2p-2` is part of the definition because no difference of two elements of `H_p` can exceed it. The relevant representation in (4) or (5) is unique. For example, if two choices of `varepsilon in {-1,0,1}` represented the same `d`, coprimality would force `p` to divide their difference, impossible because `p>2`; the argument for `eta` is identical.
 
 Now take `h,h' in H_p` and write
 
@@ -420,7 +420,7 @@ The mixed word order is not erased. For example,
 \boxed{
 \operatorname{tr}
 (D_{13}D_{13}^*D_{17}D_{17}^*)
-=322336,
+=322336.
 }
 \tag{16}
 \]
@@ -460,7 +460,6 @@ PC-256 therefore closes the **fixed-depth** part of the nonquadratic escape left
 \text{fixed-depth multi-upper trace word}
 \longrightarrow
 \text{finite shifted collision correlations}.
-}
 \]
 
 The qualifier is essential. This finding does not classify word lengths `m=m(p,r)` growing with collision rank, the full characteristic polynomial or resolvent, extremal singular values obtained through a high-moment limit, matrix-valued mixed products before trace compression, or a source-forced operation coupling upper levels before the rational-partition defect is formed. Those are the remaining places where genuinely nonlocal information could still survive. A future trace-based proposal must therefore explain why a depth growing with scale is intrinsic and controlled; merely moving from quadratic to cubic/quartic or another fixed polynomial statistic no longer crosses the novelty gate.
