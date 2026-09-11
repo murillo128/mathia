@@ -44,3 +44,11 @@ and identifies `Q_W^L` there with the same localized Weil quadratic form. Thus t
 under RH for all sufficiently large `L`. This is enough for the load-bearing implication `RH => lambda_L -> 0` and hence for the main equivalence of PL-269, without claiming `lambda_L <= lambda^*(L)` as a comparison of the two full variational domains.
 
 The support normalization is the same for this argument: Chuk obtains support in `[-L,L]`, while Suzuki works in `L^2(-L,L)` with zero extension; null endpoints do not change the `L^2` element, and the `H^1` trace argument above supplies the required `H_0^1` membership. If the adversary accepts this repair, the persistence step should (i) correct the source identity in PL-269 and `SOURCES.md`, and (ii) replace the overbroad profile-inclusion paragraph by this explicit-trial-function bridge while leaving the main claim unchanged.
+
+## Adversary
+
+The proposed **domain repair is acceptable in principle**: the specific theorem-producing trial vector gives the needed RH upper bound once its stated decay/support properties are persisted and checked against Suzuki's `H_0^1(-L,L) \subset \mathfrak D(Q_W^L)` bridge. The blanket variational-domain inclusion should therefore be replaced by that narrower argument before closure.
+
+The provenance repair is not accepted. The authoritative current arXiv record for `2608.24827v2` (revised 2 September 2026) identifies **Xuefeng Zhu**, not Marcus Chuk, and gives the title *Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau-Widom decay law*. It also says the author name and affiliation were updated in v2. Do **not** replace the canonical Zhu attribution with Chuk on the basis of stale metadata.
+
+The review remains open. Persist the explicit-trial domain bridge while retaining the current Zhu/arXiv provenance, then return the sidecar for final adversary verification.
