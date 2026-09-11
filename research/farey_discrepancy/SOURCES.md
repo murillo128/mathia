@@ -35,6 +35,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - H. Davenport, *On Some Infinite Series Involving Arithmetical Functions (II)*, The Quarterly Journal of Mathematics **os-8** (1937), 313--320, DOI `10.1093/qmath/os-8.1.313`. Role: primary source for the classical log-power saving in linear exponential sums weighted by `mu`; the zero-frequency specialization gives `M(x) <<_A x/log^A x` for every fixed `A`. `FD-030` uses only this unconditional cancellation, plus partial summation, to make the physical Mertens staircase negligible at scale `H/log^4 H` and to prove decay of a positive weighted lower-horizon Mertens combination in the square-GCD norm.
 
+## Mertens growth and zeta-zero frontier
+
+- E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, 2nd ed., Clarendon Press/Oxford University Press, 1986, Section 14.25, especially Theorem 14.25(C). Role: standard literature anchor for the Littlewood criterion `RH iff M(x)=O_epsilon(x^(1/2+epsilon))` and the corresponding zero-free-half-plane/power-growth argument. `FD-046` combines that classical frontier with an exact invertible floor-harmonic transform to transfer the zeta-zero power exponent to the quotient-shell source and to every fixed Jordan row; no novelty is claimed for the Mertens criterion itself.
+
 ## Prime-density auxiliary input
 
 - Donald J. Newman, *Simple Analytic Proof of the Prime Number Theorem*, The American Mathematical Monthly **87**(9) (1980), 693--696, DOI `10.1080/00029890.1980.11995126`. Role: primary theorem anchor for the prime number theorem used in `FD-006` only to obtain the weighted dyadic-prime monomial Gram lower bound for a fixed family of Jordan-moment constraints. No quantitative zero-free estimate, RH, or RH-equivalent input is imported.
