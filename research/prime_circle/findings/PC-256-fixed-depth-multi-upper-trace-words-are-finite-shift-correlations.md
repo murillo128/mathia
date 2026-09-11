@@ -420,7 +420,7 @@ The mixed word order is not erased. For example,
 \boxed{
 \operatorname{tr}
 (D_{13}D_{13}^*D_{17}D_{17}^*)
-=322336.
+=322336,
 }
 \tag{16}
 \]
@@ -460,6 +460,7 @@ PC-256 therefore closes the **fixed-depth** part of the nonquadratic escape left
 \text{fixed-depth multi-upper trace word}
 \longrightarrow
 \text{finite shifted collision correlations}.
+}
 \]
 
 The qualifier is essential. This finding does not classify word lengths `m=m(p,r)` growing with collision rank, the full characteristic polynomial or resolvent, extremal singular values obtained through a high-moment limit, matrix-valued mixed products before trace compression, or a source-forced operation coupling upper levels before the rational-partition defect is formed. Those are the remaining places where genuinely nonlocal information could still survive. A future trace-based proposal must therefore explain why a depth growing with scale is intrinsic and controlled; merely moving from quadratic to cubic/quartic or another fixed polynomial statistic no longer crosses the novelty gate.
