@@ -14,14 +14,16 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Separate zeta collision geometry from the growing-support null at measurable mass
+## Separate bulk collision scaling from rare-collision sample complexity
 
 **Linked intuition:** `MI-009-stable-decoding-is-a-collision-geometry-question`.
 
-VIS-161--VIS-165 establish the held-out-prime fixed-support baseline. VIS-166--VIS-167 sharpen it to a full moment threshold at retained dimension `d` and transfer capped critical/supercritical moment growth to explicit polynomial cap ranges.
+VIS-161--VIS-168 establish the held-out-prime collision null and its growing-support rare-event barrier: large collision thresholds are high-dimensional small-ball events whose observable mass depends on `Q mu_d(L)`.
 
-VIS-168 gives the growing-support population barrier: `log mu_d(L)=-(d/2)log d-d log L+O(d)`. With only `Q` anchored samples, increasing support can make the matched null disappear simply because its expected exceedance count `Q mu_d(L)` tends to zero. A source-sensitive experiment must therefore choose `d(Q),L(Q)` in a regime with enough matched null mass and then prove quantitative separation; positive-power thresholds with fixed exponent are not meaningful once `d->infinity`.
+VIS-169--VIS-171 calibrate the ordinary bulk separately. The matched Haar collision score is generically `d^(-1/2)`; after `sqrt(d)` normalization it has an explicit arcsine-type limit, its first relative fluctuation is Gaussian, and finite `d` admits explicit Hoeffding and Berry--Esseen error control.
 
-## Keep source corrections, deterministic clock mixing, and collision sample complexity separate
+A source-sensitive growing-support experiment must therefore beat **both** null regimes: the calibrated `d^(-1/2)` bulk/fluctuation law and the rare-collision population barrier, while keeping enough matched-null mass to make the comparison observable. Neither a positive-power rare threshold nor an uncalibrated bulk width is arithmetic evidence once `d` grows.
 
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; held-out primes calibrate stable decoder failure. Growing support adds a population/sample-complexity gate that must be passed before any residual difference can be interpreted as arithmetic.
+## Keep source corrections, deterministic clock mixing, bulk collision calibration, and rare-event sample complexity separate
+
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; held-out primes calibrate stable decoder failure. Growing support adds distinct bulk and extreme-value/sample-complexity gates that must be passed before any residual difference can be interpreted as arithmetic.

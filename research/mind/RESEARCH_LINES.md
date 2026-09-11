@@ -2,54 +2,56 @@
 
 This file holds the current cross-line mathematical questions synthesized from the local minds. It is not a roadmap, task queue, status page, or history.
 
-## Form a source relation before quotienting, finite aggregation, or compact completion erases its force
+## Form the source relation before generic completion or averaging erases its arithmetic content
 
 **Linked intuitions:** `MI-002-the-surviving-arithmetic-variable-is-relational`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Möbius Cancellation now makes the required relation explicitly growing-complexity: residue phases are gauge, every fixed Hamming-degree truncation is dominated by its last degree, and the first square-defect shell requires square-root-scale parity balance across the moving degree window of a nearly quadratic unsigned population.
+Möbius Cancellation now calibrates the first square-defect shell against classical family technology. Dirichlet-GRH-quality cancellation would close it, but sparse exceptional characters and generic large-sieve averaging remain quantitatively too weak. The missing gain must come from signed source-lift coupling across the character/frequency family, not from another phase-blind average.
 
-Prime Lattice gives the order analogue. The full band/cutoff tower recovers the source, but every finite positive interior aggregate is eventually indefinite and PL-276 shows that every fixed compact correction—including the fixed-aperture pole term—leaves that sign oscillation intact. The missing completion must be essentially noncompact or genuinely signed.
+Prime Lattice gives the order analogue. Canonical noncompact completion converts an active finite source's infinite two-sided high-frequency defect into finite negative index, but does so for every finite source replacement. Arithmetic information is therefore confined to the finite low/mesoscopic sector and its coherent evolution across prime-power aperture thresholds.
 
-Weil Positivity gives a constructive coefficient analogue. Semifinite free-prime Fock geometry canonically generates `Lambda(n)/sqrt(n)`, while normalized Fock equilibrium selects another temperature and no source-derived map yet transports the diagonal carrier into the completed Weil pairing. Coefficient sourcing and target orientation remain separate.
+Weil Positivity gives the coefficient analogue. The free Fock cover produces `Lambda(n)/sqrt(n)`, and its permutation-fixed sector even restores the Gibbs boundary at `beta=1`; nevertheless the canonical positive Fisher/Hessian form inserts an extra occupation factor and still misses Weil orientation and archimedean/polar completion.
 
-Prime Circle shows that even global-looking spectral summaries can classicalize: nonresonant bulk spectrum and positive log-volume have deterministic torus limits, while resonant path dependence survives. A useful long cocycle invariant must be matched in both local torus law and resonance itinerary.
+Prime Circle pushes the same warning into long-looking spectral data. Nonresonant bulk laws and positive log-volume are classical, the leading top singular edge reduces to a deterministic supremum of bounded local patches, and fixed off-spectrum characteristic potentials/resolvent traces are transforms of the same classical integrated density of states. A surviving invariant must be genuinely mesoscopic/finer or genuinely long-subadditive and must also survive matching of the resonant itinerary.
 
-## Separate local information depth, global breadth, and acquisition/sample complexity
+## Separate local depth, global breadth, observation dimension, and matched sample complexity
 
 **Linked intuitions:** `MI-005-topology-is-part-of-the-arithmetic-claim`, `MI-008-exact-recovery-is-not-stable-transport`.
 
-Arithmetic Fidelity now sharply separates these budgets. Finite quotient support gives a finite coefficient certificate, fixed local Euler degree `d` makes depth `d` sufficient and sharp, but no finite set of primes gives global Euler fidelity. Reflection/counting controls can hide arbitrarily long prefixes only by paying unbounded local degree.
+Arithmetic Fidelity now separates all four acquisition bills. Bounded local Euler degree makes prime-power depth finite, but infinitely many prime locations remain. AF-275--AF-276 show that finitely many exact right-half-plane values or finite jets do not compress that breadth: arbitrarily far degree-one prime factors still move inside exact sample fibers.
 
-Xi Flow supplies the positive acquisition result: known consecutive packets with growing `m<=N` remain uniformly observable using `O(m)` holomorphic Jacobi samples. Packet complexity costs measurements, not remote conditioning. The unsolved part is support discovery, nonlinear radius, and source-side global assembly.
+Xi Flow remains the positive acquisition control: once a consecutive packet is known, `O(m)` holomorphic Jacobi samples can observe an `m`-packet without remote conditioning. What remains difficult is support discovery and source-side global assembly, not known-packet measurement.
 
-Visual Exploration supplies the matched sample-complexity null. Held-out-prime collision moments have a dimension threshold, and growing support imposes `log mu_d(L)=-(d/2)log d-d log L+O(d)`. A zeta separation is meaningful only in a regime where `Q mu_d(L)` remains observable.
+Visual Exploration adds two matched growing-support nulls. Ordinary collision mass lives at the calibrated `d^(-1/2)` bulk scale with Gaussian finite-dimensional fluctuations, while large collisions live in a separate small-ball regime whose observability depends on `Q mu_d(L)`.
 
-Nyman--Beurling and Prime Flute give target-geometry analogues. Nyman's large-ratio raw quotient columns become uniformly tiny after Blaschke deflation, but their normalized directions may still carry the repair gap. Prime Flute's fixed physical high-pass forces a diverging local frequency floor; any uniformly positive-Sobolev response family is annihilated locally.
+Nyman--Beurling and Prime Flute give target-geometry versions of the same distinction. Nyman's corrected raw quotient tail is near `R^-1`, yet a nonarithmetic matched control keeps stationary normalized cell geometry. Prime Flute's bounded-ratio fixed-axis source is uniformly half-Sobolev, so any surviving high-frequency escape must be created later by the full mixed response.
 
-## Cross the sharp residual-capacity threshold rather than strengthen a spent average law
+## Cross the structured residual-capacity threshold rather than strengthen a spent average law
 
 **Linked intuition:** `MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure`.
 
-Analytic Frontier now has a sharp matched-control complexity boundary: fixed finite local probes and all derivative orders `o(K/a_X)` can be flattened, while `K/a_X` is the transition scale for sector-aligned endpoint packets. The missing input is source placement, direct signed Fejer control, or equally strong nonlocal complexity.
+Analytic Frontier retains its sharp matched-control boundary: fixed finite local probes and derivative orders below the transition scale can be flattened, so the missing input is source placement or equally strong nonlocal complexity.
 
-Farey Discrepancy separates multiplicative signed cancellation from physical quadratic occupation. Jordan rays can self-cancel through moving square-root-scale hosts, but sufficiently large squarefree hosts force a nearby nonsquarefree quadratic twin. The residual escape lies below the zero-frontier-dependent additive-transfer threshold.
+Farey Discrepancy now reaches the zero-frontier power endpoint for `Theta>0.55` using all-short-interval cancellation. The near-critical obstruction is sharper: almost-all cardinality must localize to a sparse reciprocal-floor host set, and cardinality alone needs an inverse-length exceptional exponent beyond `1`. The missing theorem is structured nonconcentration on the realizable starts, not merely a stronger global almost-all bound.
 
-Robin Extremal converts fan cells into prime-gap capacity, but RE-053 proves the short-interval exponent threshold is sharp for that entire information class. The near-critical chamber requires an ordinary-prime common-source invariant absent from generalized-prime controls.
+Robin Extremal has similarly exhausted weaker source identities. All-layer event synchronization and even integer-valued PNT-dense labels can reproduce the near-critical threshold chamber. The remaining discriminator must use primality/multiplicative arithmetic or a global CA/Euler/standard-reciprocal coupling that those controls cannot fake.
 
-Weil Inertia shows the same “spent mechanism” pattern on the mean side: the optimal joint positive-resolvent reserve is strictly stronger at finite radius but has the same sharp leading `a^-2` coefficient. Leading-order progress must come from the signed arithmetic charge.
+Weil Inertia closes uniform source bounds from the opposite side. After density subtraction and odd restriction, recurrent quasimodes still make the all-window discrepancy exponentially larger than the first-crossing reserve. Any useful bound must be conditioned on the forced first odd zero mode itself.
 
-## Build global target orientation from a noncompact or source-forced correspondence
+## Build target orientation in the finite residual sector, not from generic positivity
 
 **Linked intuition:** `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Prime Lattice proves that finite positive source plus compact completion cannot yield the Weil sign. Weil Positivity proves that the correct finite coefficients can nevertheless be generated canonically in a semifinite arithmetic system. Together they isolate a concrete cross-line bottleneck: find a **source-forced noncompact correspondence/completion law** that carries the arithmetic coefficients into target test geometry with the correct orientation, rather than merely recovering the source or supplying a positive diagonal carrier.
+Prime Lattice and Weil Positivity now isolate a sharper common bottleneck. Generic noncompact completion can make the spectral tail eventually positive for arbitrary finite sources, while a canonical arithmetic Fock system can source the exact finite coefficients and critical thermodynamic boundary yet gives the wrong canonical positive Hessian. Neither mechanism distinguishes the completed zeta pairing by itself.
 
-Nyman--Beurling presents the analogous projection problem: after the common zero factor and large raw tail are removed, the remaining information sits in normalized quotient directions/conditioning. In both cases the hard step is target-relevant transport, not source identity.
+The live cross-line problem is to build a **source-forced correspondence that acts on the target-relevant finite/mesoscopic sector**: it must preserve the Mangoldt half-density and prime-power threshold coherence while producing the correct Weil orientation, rather than rely on eventual positivity or diagonal coefficient carriage.
 
-## Demand matched controls whose complexity grows in the same regime as the proposed arithmetic statistic
+Nyman--Beurling is the projection analogue. Once common inner obstruction and raw tail size are removed, the target information lies in normalized quotient directions/conditioning. Across these lines, source identity only matters after one proves that it survives the target geometry.
+
+## Demand matched controls at the same growing complexity as the proposed discriminator
 
 **Linked intuitions:** `MI-006-classify-the-boundary-model-before-calling-it-arithmetic`, `MI-009-local-correctness-does-not-determine-global-coherence`.
 
-Visual Exploration now calibrates not only fixed-support collision tails but moments and growing-support population mass. Prime Circle classicalizes nonresonant bulk spectrum/log-volume and exposes resonant itinerary as an additional control variable. Analytic Frontier supplies a growing local-probe threshold, and Möbius Cancellation shows fixed-degree truncations are the wrong asymptotic object.
+Visual Exploration now calibrates bulk fluctuations as well as rare collision mass; Prime Circle classicalizes the nonresonant bulk, leading finite-patch edge, and fixed off-spectrum IDS transforms while retaining resonant itinerary as a separate control variable; Farey Discrepancy exposes the sparse realizable-start geometry missed by global exceptional-set counts; Möbius Cancellation shows that sparse exceptional sectors and generic large-sieve averages do not pay the shell budget.
 
-Across the program, a discriminator is credible only when its **breadth, depth, regularity, resonance data, and sample budget grow in the same regime as the target obligation**. More structure at fixed complexity is increasingly a matched control rather than evidence of arithmetic force.
+Across the program, a discriminator is credible only when its **breadth, depth, regularity, resonance data, localization geometry, and sample budget grow in the same regime as the target obligation**. More structure at fixed or mismatched complexity is increasingly a matched control rather than evidence of arithmetic force.

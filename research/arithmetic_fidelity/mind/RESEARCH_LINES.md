@@ -20,18 +20,16 @@ AF-221--AF-233 show that localization has a real information bill and that contr
 
 AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. The live bridge must assemble the required cancellation orbit before the root-rate quotient is formed.
 
-## Separate exact source category, quotient complexity, local depth, and global breadth
+## Separate exact source category, local depth, global breadth, and finite observation dimension
 
 **Linked intuitions:** `MI-003-fidelity-endpoints-are-category-dependent`, `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`, `MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage`.
 
-AF-244--AF-270 show that coarse symmetry, zero counting, endpoint jets, compact-open proximity, and even exact Bohr recurrence plus one prime-power frequency ray do not characterize critical geometry. Finite-total transport leaves the exact source category, while infinite periodic transport can remain inside it.
+AF-244--AF-274 show that coarse symmetry, zero counting, endpoint jets, compact-open proximity, and periodic transport do not replace an exact source-category argument. Bounded Euler degree makes local prime-power depth finite and sharp, but global Euler fidelity still requires information at infinitely many prime locations.
 
-AF-272 corrects the finite-complexity certificate: the first `R` prime-power coefficients detect a quotient with `R` distinct signed divisor nodes **after cancellation**. If two controls separately have complexity at most `r`, the generic difference budget is `2r`. Stable finite-prefix fidelity additionally needs separation.
+AF-275--AF-276 close the obvious finite-global-summary escape. Even within degree-one Euler products on the ordinary rational primes, any finite collection of exact right-half-plane values, or arbitrary finite jets at finitely many points, leaves smooth positive-dimensional fibers obtained by perturbing arbitrarily far prime factors. Finite scalar analytic data can mix the whole prime tail without identifying it.
 
-AF-273 proves that reflection symmetry and exact ordinate matching do not bound that local complexity: an `M`-fold cyclotomic split can hide the first `M-1` source defects. AF-274 gives the sharp converse inside a fixed Euler-local degree class: the first `d` prime-power coefficients determine every degree-`d` local factor, while global Euler products still require information at infinitely many prime locations.
+The live theorem must therefore exploit a genuinely zeta-specific cross-prime coupling or an acquisition channel whose information dimension grows with prime breadth. Neither deeper coefficients at one prime nor finitely many exact global samples/jets can pay the infinite breadth bill.
 
-The live theorem must therefore use a genuinely zeta-specific restriction on **cross-prime breadth/coupling or the admissible local Euler category**, rather than ask for arbitrarily deep coefficients at one prime without a complexity reason.
+## Treat local depth, prime breadth, and observation dimension as different information bills
 
-## Treat local depth and prime breadth as different information bills
-
-Bounded Euler degree makes local prime-power depth finite and sharp; it does not make a finite set of primes globally faithful. Future source-fidelity claims must state separately the complexity of the difference object, the local depth consumed per prime, the prime breadth observed, and the metric modulus required downstream.
+A finite local degree determines how much prime-power depth is needed at one prime. It does not bound how many primes must be seen, and finite global sampling does not collapse that breadth. Future fidelity claims must state separately the complexity of the difference object, local depth, prime breadth, observation dimension, and the metric modulus required downstream.

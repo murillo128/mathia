@@ -2,20 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Transport the canonically sourced half-density into the completed Weil pairing
+## Build a nonseparable source-forced pairing that preserves the Mangoldt half-density
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`.
 
-WP-216--WP-254 show that the canonical gauge/Toeplitz/Morita family either lacks the critical equilibrium sector or restores it in a category that erases the needed Weil orientation.
+WP-216--WP-255 show that canonical gauge/Toeplitz/Morita/KMS routes either miss the critical sector, scalarize the needed relation, or cannot pack independent prime channels into a normalized `KMS_1` state.
 
-WP-255 proves that independent orthogonal prime channels cannot carry a normalized `KMS_1` state: their forced masses `1/p` do not pack into finite total state mass.
+WP-256 gives the positive intermediate carrier: free-prime Fock multiplicity canonically produces the exact diagonal coefficients `Lambda(n)/sqrt(n)`. WP-257--WP-258 show that the full free-word Gibbs and gauge/Gamma boundaries occur at `beta_*>1`, not at the Weil half-density boundary `beta=1`.
 
-WP-256 crosses that normalization barrier semifinitely and gives a substantive positive intermediate result. Free-prime Fock spectral multiplicity plus word length and arithmetic energy canonically produce the exact diagonal operator with coefficients `Lambda(n)/sqrt(n)`. The finite Weil coefficients can therefore be source-forced without being inserted by hand.
+WP-259 repairs that thermodynamic mismatch canonically by passing to the permutation-fixed sector while retaining the ambient prime-power selector. In that one-per-integer sector the Gibbs boundary is exactly `beta=1` and the diagonal Mangoldt half-density survives.
 
-WP-257 separates this coefficient scale from normalized free-Fock equilibrium. `beta=1` is the one-particle prime-zeta convergence boundary, while normalized Fock equilibrium turns on only at `beta_*>1` with `P(beta_*)=1`. The Weil half-density is canonical in the semifinite arithmetic spectral boundary, not selected by the normalized Fock phase transition.
+WP-260 closes the most canonical positivity upgrade inside that sector. The Gibbs/Fisher Hessian has prime-power coefficients `k a_p^2 p^(-k sigma)`; with the arithmetic source it is one occupation derivative too high and cannot equal the Weil coefficient `(log p)p^(-k sigma)` for all `k`. The mismatch already holds in every finite-prime truncation.
 
-The live theorem is now to build a **source-forced global pairing/correspondence** that transports this diagonal half-density into the correct finite Weil autocorrelation sign and simultaneously supplies the gamma/polar completion. Passive transport and the canonical Bost--Connes overlap remain matched wrong-sign controls.
+The live theorem must therefore use a **nonseparable correspondence/global pairing**, not a one-body Gibbs covariance or a same-temperature gauge determinant. It must preserve the source-forced half-density while generating the correct finite Weil autocorrelation orientation and the gamma/polar completion. Occupation-level weights that simply encode `k` are not a canonical solution unless independently sourced.
 
-## Treat coefficient sourcing, equilibrium normalization, and Weil orientation as separate gates
+## Treat coefficient sourcing, thermodynamic criticality, canonical positivity, and Weil orientation/completion as separate gates
 
-Semifinite free-Fock geometry solves a coefficient-carrier problem that the earlier KMS no-go left open. It does not solve normalized thermodynamic selection or the completed pairing. Future proposals should state explicitly which of these three structures they generate.
+The free/symmetric Fock hierarchy now solves the first two surprisingly well: the coefficient carrier is canonical and the symmetric Gibbs boundary aligns with `beta=1`. Canonical bosonic convexity nevertheless has the wrong coefficient law, and no source-derived map yet supplies the completed Weil sign. Future proposals must state exactly which gate they solve.

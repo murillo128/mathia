@@ -8,16 +8,18 @@ This file holds the current mathematical questions suggested by the durable prim
 
 PF-271--PF-278 show that the fully Robin-normalized fixed-row shell leakage is only logarithmically improved at the critical continuum threshold. The fixed-axis Robin-homotopy route is closed.
 
-## Decide whether the genuine mixed DtN response develops diverging local frequency
+## Locate any surviving frequency escape in the complete mixed response, not the bounded-ratio fixed-axis source
 
 **Linked intuition:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`.
 
-PF-279--PF-290 reduce the endpoint to heavy-range projection geometry and an exact scalar high-band shorting deficit. Persistent positive deficit on a separated tail immediately implies noncompactness.
+PF-279--PF-290 reduce the endpoint to heavy-range projection geometry and an exact scalar high-band shorting deficit. PF-291--PF-292 show that a positive local deficit requires response mass at a diverging physical tangential frequency unless amplitude/regularity control itself fails.
 
-PF-291 shows that every precompact fixed-window response family is annihilated by the increasingly dense physical low-frequency grid. PF-292 sharpens the required escape: the local Dirichlet frequency floor of the admissible high-pass space diverges, and any uniformly `L^2`-bounded response family with a fixed positive fractional Sobolev bound has vanishing high projection.
+PF-293 shows that each fixed normalized Robin source has exactly one Sobolev derivative. PF-294 removes the main shrinking-seam loophole inside that component: for every fixed source row and bounded seam ratio, the physical fixed-axis source is uniformly `H^(1/2)` as the seam shrinks. That family cannot supply the loss of every positive Sobolev norm required by PF-292.
 
-The live local question is therefore whether the actual normalized mixed DtN response develops nonvanishing mass at **diverging local tangential frequency**, or otherwise loses uniform amplitude/regularity. Proving a uniform positive Sobolev bound would close the local noncompactness falsifier and return the problem to quantitative global heavy-range counting.
+The live local theorem is therefore to extract the **complete normalized mixed Riesz response** after the fixed-axis source and the already-controlled PF-255/PF-256 transports are factored out. Either prove one uniform positive Sobolev bound and force the local shorting deficit to zero, or identify the exact escape—unbounded seam ratio, mixed/global Schur reassembly, neighboring-cell coupling, support migration/end completion, or another normalization effect—and show that it carries nonvanishing high projection.
 
-## Treat scalar geometry, local frequency escape, and weak-trace counting as separate gates
+If the local deficit vanishes, the problem returns to PF-287's global heavy-range essential-orthogonality/counting gate.
 
-Smooth fixed-window profiles are matched negative controls. A positive local shorting deficit requires genuinely increasing response complexity; even compactness after that test would still leave the stronger weak-trace endpoint distribution to prove.
+## Treat fixed-axis regularity, mixed-response frequency escape, and weak-trace counting as separate gates
+
+Smooth fixed-window profiles and bounded-ratio fixed-axis Robin columns are matched negative controls. Any positive local deficit must arise later in the simultaneous response. Even surviving noncompactness would still leave the stronger weak-trace endpoint distribution to prove.
