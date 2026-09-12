@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-early-cell-adjoint-duals-certify-target-tail
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -85,14 +85,15 @@ No adjoint lift, target-tail rate for zeta, cheaper projector algorithm, or impr
 
 ## Research disposition
 
-Accepted. `NB-058` identifies the entire late quotient exactly as the closed range of the compressed integer-log shift `V_R=Q U_(log R)|_(A^perp)` and proves
+Outcome: refuted
+
+Resolved by:
+- [[research/nyman_beurling/findings/NB-059-every-finite-time-arithmetic-defect-sector-is-trivial]]
+
+`NB-059` proves that for every finite `T`,
 
 \[
-\mathcal A^\perp\cap\mathcal T_R^\perp
-=
-\mathcal A^\perp\cap\ker U_{\log R}^*.
+\mathcal A^\perp\cap\ker U_T^*=\{0\}.
 \]
 
-Under Paley--Wiener, the right side is precisely the set of actual arithmetic defect vectors supported in `[0,log R]`. Thus any successful `h_R` in this clue must itself be a compact-time defect; the weak adjoint/cell-moment proposal is one possible construction mechanism, not merely a formal annihilation trick. `NB-058` also proves that the collective target gain tends to zero exactly when the canonical defect can be approximated by such finite-time defect vectors, and recovers the `NB-056` cubic tail in the unit-outer control.
-
-The direction remains open because no source-controlled construction or density theorem for these compact-time arithmetic defects is known. The next decisive question is whether the zeta-deflated space `A^perp` contains enough finite Paley--Wiener-support vectors to approximate the canonical defect with a quantitative remainder, or whether arithmetic structure forces those localized sectors to be too small.
+In particular, for every integer `R>=2`, `NB-058`'s early-time annihilator sector `K_R=A^perp cap T_R^perp` is zero and the complete late quotient satisfies `T_R=A^perp`. Hence any `h_R` required by this clue is necessarily zero. The proposed adjoint/cell-moment lift cannot supply a nontrivial compact-time arithmetic dual; with `h_R=0`, the certificate reduces to direct approximation of `e` by `A`, i.e. the original deflated Nyman problem rather than a distinct tail mechanism. The unit-outer calibration is not contradicted because its defect space does not satisfy the natural-Nyman local Dirichlet rigidity used in `NB-059`.
