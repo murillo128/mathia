@@ -4,12 +4,14 @@ title: Pole normalization turns Clark-model compression into a universal tautolo
 branch: weil_positivity
 status: supported
 kind: source-side-model-space-classification
-claim_strength: exact unconditional normalization plus classical Clark realization and universality no-go
+claim_strength: exact unconditional normalization plus classical Clark and de Branges inverse realizations with universality no-go
 created: 2026-09-12
 related: [WP-222, WP-269, WP-270, WP-272, WP-273]
 prior_art:
   - D. N. Clark, One dimensional perturbations of restricted shifts, Journal d'Analyse Mathematique 25 (1972), 169-191, DOI 10.1007/BF02790036
   - A. Poltoratski and D. Sarason, Aleksandrov-Clark measures, in Recent Advances in Operator-Related Function Theory, Contemporary Mathematics 393 (2006), 1-14
+  - Louis de Branges, Hilbert Spaces of Entire Functions, Prentice-Hall, 1968
+  - Jonathan Eckhardt and Aleksey Kostenko, Trace formulas and inverse spectral theory for generalized indefinite strings, Inventiones Mathematicae 238 (2024), 391-502, DOI 10.1007/s00222-024-01287-9
 ---
 
 # WP-274 — Pole normalization turns Clark-model compression into a universal tautology
@@ -104,9 +106,11 @@ So the nonlocal escape left open by `WP-273` is **nonempty**: an analytic model-
 
 But the same construction works for essentially every positive-minus-positive carrier whose normalized singular sampling measure satisfies the elementary Herglotz growth condition. The inner function in (7) is reconstructed *from the desired sampling measure itself*. Hence Clark realization supplies no independent Riemann sign theorem. It is a universal representation theorem that can manufacture a null positive compression from the Jordan data one started with.
 
-The consequence is a sharper gate than `WP-273`: **nonlocal analytic sampling is necessary as a possible escape from localization, but it is not evidence for Weil positivity when the model space is obtained by applying Herglotz--Clark inversion to the target carrier.** A viable model/de Branges route must derive its inner function, Hamiltonian, boundary law, or equivalent analytic space independently from Mathia/source geometry and only then show that its pre-existing sampling identity reproduces the Mangoldt, Gamma, and polar terms with the correct Weil orientation.
+The same verdict survives the apparently more geometric canonical-system reformulation. Once a Herglotz function is built from `sigma_Lambda`, de Branges inverse spectral theory produces a positive trace-normalized Hamiltonian having that Herglotz function as Weyl coefficient; after trace normalization the Hamiltonian is determined almost everywhere. Thus inverse canonical-system geometry does not add an independently selected positive object: it is another universal reconstruction of the target measure.
 
-**Classification:** `EXACT-DERIVED + RH-INDEPENDENT + CANONICAL-POLE-NORMALIZATION + POISSON-FINITE-MANGOLDT-MEASURE + CLASSICAL-CLARK-REALIZATION + NONLOCAL-NULL-COMPRESSION + GENERIC-JORDAN-PAIR-TAUTOLOGY + MATCHED-CONTROL-STABLE + PRIOR-ART-AUDITED + NOT-A-WEIL-POSITIVITY-PROOF`.
+The consequence is a sharper gate than `WP-273`: **nonlocal analytic sampling is necessary as a possible escape from localization, but neither a Clark model nor a canonical system counts as evidence for Weil positivity when it is reconstructed from the target carrier.** A viable model/de Branges route must derive its inner function, Hamiltonian, boundary law, or equivalent analytic space independently from Mathia/source geometry and only then show that its pre-existing sampling or Weyl law reproduces the Mangoldt, Gamma, and polar terms with the correct Weil orientation.
+
+**Classification:** `EXACT-DERIVED + RH-INDEPENDENT + CANONICAL-POLE-NORMALIZATION + POISSON-FINITE-MANGOLDT-MEASURE + CLASSICAL-CLARK-REALIZATION + DE-BRANGES-INVERSE-SPECTRAL-REALIZATION + NONLOCAL-NULL-COMPRESSION + GENERIC-JORDAN-PAIR-TAUTOLOGY + MATCHED-CONTROL-STABLE + PRIOR-ART-AUDITED + NOT-A-WEIL-POSITIVITY-PROOF`.
 
 ## 1. The pole density removes the critical square root exactly
 
@@ -282,15 +286,66 @@ Two apparent escapes do not change that diagnosis:
 
 Nor does (9) supply the missing completed Weil form. It accounts only for the positive Mangoldt atoms against the pole continuum in (1). The Gamma contribution, exact polar normalization in the full explicit formula, and the required Weil autocorrelation/test-function structure remain separate obligations.
 
-## 5. Prior-art and novelty audit
+## 5. De Branges inversion manufactures a positive Hamiltonian from the same target measure
+
+The Clark tautology does not disappear if the model space is replaced by a canonical system whose Hamiltonian is itself positive. Fix the same universal Herglotz normalization for every candidate measure satisfying (23): choose one real constant `a_0`, set the nonnegative linear coefficient to zero, and define
+
+\[
+m_\sigma(z)
+=a_0+\int_{\mathbb R}
+\left(\frac{1}{t-z}-\frac{t}{1+t^2}\right)d\sigma(t).
+\tag{25a}
+\]
+
+This is a Herglotz--Nevanlinna function. De Branges' inverse spectral theorem for two-dimensional canonical systems says that every Herglotz--Nevanlinna function occurs as the Weyl--Titchmarsh function of a Hamiltonian, and that the Weyl function determines the Hamiltonian almost everywhere up to reparametrization. With the standard trace normalization, the ambiguity disappears: there is a unique almost-everywhere Hamiltonian `H_sigma` with
+
+\[
+H_\sigma(x)\succeq0,
+\qquad
+\operatorname{tr}H_\sigma(x)=1
+\quad\text{for a.e. }x,
+\tag{25b}
+\]
+
+whose canonical system, in one standard sign convention,
+
+\[
+JY'(x)=zH_\sigma(x)Y(x),
+\qquad
+J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\tag{25c}
+\]
+
+has Weyl function `m_sigma`. The Herglotz representing measure of that Weyl function is exactly the input `sigma` in (25a).
+
+Applying this to `sigma=sigma_Lambda` gives a positive trace-normalized Hamiltonian `H_Lambda` **unconditionally**. But it does not provide the independent geometric positivity required by the branch mandate. Once (5) is used to define `m_Lambda`, the inverse theorem deterministically reconstructs `H_Lambda`; after trace normalization there is no further geometric degree of freedom from which an arithmetic sign theorem could emerge.
+
+The matched control is exact and broad. Every positive measure satisfying (23), including an arbitrary locally finite weighted discrete set unrelated to primes, yields by the same fixed prescription a Herglotz function and therefore a positive trace-normalized Hamiltonian. The positivity of `H_sigma` is a theorem of the representation class, not a discriminator for the Riemann carrier.
+
+Nor do the scalar freedoms in the Herglotz representation rescue the route. Allowing a different real additive constant or a nonnegative linear term changes the reconstructed canonical system, but unless those parameters are fixed by source geometry they are additional programmable inputs. Fixing them once and uniformly, as in (25a), removes that freedom and leaves the universality argument intact.
+
+Therefore the implication
+
+\[
+\text{target sampling measure}
+\longrightarrow
+\text{Herglotz Weyl function}
+\longrightarrow
+\text{positive trace-normalized Hamiltonian}
+\tag{25d}
+\]
+
+is an **inverse-spectral encoding** of the target data, not an independently derived Mathia geometry. The only live canonical-system route is the reverse causal direction: first derive a Hamiltonian or equivalent boundary geometry from Mathia without using the Mangoldt carrier, then prove that its already-fixed Weyl/sampling law reproduces the finite-prime data and that the same construction supplies the Gamma and polar terms with the required Weil sign.
+
+## 6. Prior-art and novelty audit
 
 The analytic machinery in this finding is classical. Clark's 1972 theorem identifies the spectral measures of one-dimensional unitary perturbations of the restricted shift and gives the model-space/measure unitary picture. Aleksandrov--Clark theory and later expositions, including Poltoratski--Sarason, make the measure/function correspondence and boundary transforms standard. The Herglotz--Nevanlinna representation used in (6) is older classical analysis.
 
-No novelty is claimed for constructing an inner function from a positive singular Herglotz measure, for the Clark isometry, or for model-space sampling. A directed literature search also finds contemporary RH work in which Clark/Caratheodory machinery and von Mangoldt-side trace filters coexist, so the presence of those ingredients alone cannot support a novelty claim.
+The canonical-system extension is equally classical. De Branges' inverse spectral theorem gives the correspondence between suitably normalized positive-semidefinite Hamiltonians and Nevanlinna/Weyl functions. Eckhardt--Kostenko's 2024 Appendix D gives an audit-friendly modern statement: the Weyl--Titchmarsh function determines a Hamiltonian up to reparametrization, uniquely determines a trace-normalized Hamiltonian, and every Herglotz--Nevanlinna function arises from a Hamiltonian.
 
-The durable content for this line is instead the exact source-side normalization (11) and the resulting falsification boundary: **the most immediate analytic escape suggested by `WP-273` can always be manufactured from the signed carrier itself and therefore cannot count as an independent Mathia positivity mechanism.** The construction is useful precisely because it separates existence of a nonlocal positive compression from source selection of that compression.
+No novelty is claimed for constructing an inner function from a positive singular Herglotz measure, for the Clark isometry, for model-space sampling, or for reconstructing a positive canonical Hamiltonian from a Herglotz function. The durable content for this line is instead the exact source-side normalization (11) and the resulting falsification boundary: **the immediate analytic escapes suggested by `WP-273` can be manufactured from the signed carrier itself and therefore cannot count as independent Mathia positivity mechanisms.**
 
-This does not rule out de Branges, model-space, canonical-system, or other analytic geometry. It rules out the inference
+This does not rule out de Branges, model-space, canonical-system, or other analytic geometry. It rules out the inferences
 
 \[
 \text{target sampling measure}
@@ -301,13 +356,13 @@ This does not rule out de Branges, model-space, canonical-system, or other analy
 \tag{26}
 \]
 
-as an explanation of the Weil sign. A successful route must reverse that causal order.
+and (25d) as explanations of the Weil sign. A successful route must reverse that causal order.
 
 ## Consequence
 
-`WP-273` showed that any positive compression of the canonical pole-completed carrier must abandon local cutoff freedom and behave as a global sampling/interpolation law. `WP-274` now shows that **global analytic sampling by itself is still too weak a criterion**: classical inverse Clark theory can build such a law for the normalized Mangoldt carrier, and equally for arbitrary matched singular carriers.
+`WP-273` showed that any positive compression of the canonical pole-completed carrier must abandon local cutoff freedom and behave as a global sampling/interpolation law. `WP-274` now shows that **global analytic sampling and inverse canonical-system positivity are both too weak as selection principles**. Classical inverse theory can manufacture them from the normalized Mangoldt carrier, and equally from arbitrary matched positive singular carriers.
 
-The remaining analytic route has a much sharper obligation. Mathia must independently force an inner function, canonical system, de Branges Hamiltonian, boundary correspondence, or equivalent nonlocal object from its intrinsic geometry **before** the target carrier is used to define that object. Only then is it meaningful to ask whether the object's pre-existing positive norm or intersection form reproduces the finite-prime term and, in the same construction, the Gamma and polar sectors of the completed Weil functional.
+The remaining analytic route has a sharper obligation. Mathia must independently force an inner function, canonical system, de Branges Hamiltonian, boundary correspondence, or equivalent nonlocal object from its intrinsic geometry **before** the target carrier is used to define that object. Only then is it meaningful to ask whether the object's pre-existing positive norm, Hamiltonian, or intersection form reproduces the finite-prime term and, in the same construction, the Gamma and polar sectors of the completed Weil functional.
 
 So the live bridge is no longer merely "find a nonlocal positive compression." It is:
 
