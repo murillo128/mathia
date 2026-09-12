@@ -1,6 +1,6 @@
 # FD-082 — subpower occupation first passage permits superexponential horizon sparsity
 
-**Status:** `EXACT-DERIVED + POINTWISE-FIRST-PASSAGE + LOGLOG-GAP-CLASSIFICATION + COUNTING-BOUNDARY + SUPEREXPONENTIAL-SPARSITY-COMPATIBILITY + FIXED-FACTOR-ACCUMULATION-OBSTRUCTION + NEGATIVE/OBSTRUCTION`.
+**Status:** `EXACT-DERIVED + POINTWISE-FIRST-PASSAGE + LOGLOG-GAP-CLASSIFICATION + COUNTING-BOUNDARY + INTEGER-RATIO-CONTROL + SUPEREXPONENTIAL-SPARSITY-COMPATIBILITY + FIXED-FACTOR-ACCUMULATION-OBSTRUCTION + NEGATIVE/OBSTRUCTION`.
 
 `FD-081` upgrades the annular recurrence mechanism to the physical horizon ratio
 
@@ -10,7 +10,7 @@
 
 and proves that, for every fixed admissible threshold `eta`, the first later horizon with `nu_(H,D)>eta` lies at `X^(1+o(1))`. The current downstream question is whether this **power-syndetic pointwise** set is already dense enough in scale for the accumulated GCD/Schur obstructions of `FD-022`--`FD-023` to force an RH-relevant power gain.
 
-There is an exact counting obstruction. The first-passage statement controls only the additive gaps after taking **two logarithms**. If the good horizons are enumerated increasingly, their log-log gaps tend to zero, which forces more than `log log X` good horizons below `X`; however it is fully compatible with only `(log log X)^2` good horizons below `X`, and hence with horizons that are superexponential in their index. That is precisely the sparsity regime that `FD-023` leaves open.
+There is an exact counting obstruction. The first-passage statement controls only the additive gaps after taking **two logarithms**. If the good horizons are enumerated increasingly, their log-log gaps tend to zero, which forces more than `log log X` good horizons below `X`; however it remains compatible with only `(log log X)^2` good horizons below `X`, and even with an integer-ratio horizon chain whose logarithmic entropy tends to infinity. That is precisely the qualitative sparsity escape left open by `FD-023`.
 
 Consequently, **`FD-081` cannot by itself be consumed by a proof that earns only a fixed scale-independent multiplicative gain once per good horizon.** Even granting such a favorable gain at every occupied horizon, the guaranteed accumulated improvement may remain `X^(-o(1))`, too small to change a power exponent. Closing the current frontier therefore requires a quantitative strengthening of pointwise recurrence, a gain that grows with the intervening scale geometry, or a mechanism that also uses the bad intervals rather than merely skipping them.
 
@@ -23,8 +23,7 @@ Fix `D>=1`, a fixed nonsquarefree dilation `q>1`, and
 as in `FD-081`. Let
 
 \[
-\mathcal G_\eta
-:=\{H\in\mathbb N:\nu_{H,D}>\eta\},
+\mathcal G_\eta:=\{H\in\mathbb N:\nu_{H,D}>\eta\},
 \]
 
 and enumerate its sufficiently large elements as
@@ -77,9 +76,7 @@ This is the universal counting content of the first-passage theorem. It is much 
 `FD-081` defines
 
 \[
-\sigma_\eta(X)
-:=
-\min\{H>X:\nu_{H,D}>\eta\}
+\sigma_\eta(X):=\min\{H>X:\nu_{H,D}>\eta\}
 \]
 
 and proves
@@ -89,13 +86,7 @@ and proves
 \tag{4}
 \]
 
-At a good horizon `X=g_n`, the next first passage is exactly
-
-\[
-\sigma_\eta(g_n)=g_{n+1}.
-\]
-
-Substituting into (4) proves (1). Taking one more logarithm gives
+At a good horizon `X=g_n`, the next first passage is exactly `sigma_eta(g_n)=g_(n+1)`, so (4) gives (1). Taking one more logarithm gives
 
 \[
 \log\log g_{n+1}-\log\log g_n
@@ -106,13 +97,7 @@ Substituting into (4) proves (1). Taking one more logarithm gives
 
 which is (2).
 
-Conversely, for any increasing unbounded integer sequence `g_n`, condition (1) already implies the full first-passage property (4) for the set `{g_n}`. Indeed, if
-
-\[
-g_n\le X<g_{n+1},
-\]
-
-then its next point is `sigma(X)=g_(n+1)` and
+Conversely, for any increasing unbounded integer sequence `g_n`, condition (1) already implies the full first-passage property (4) for the set `{g_n}`. Indeed, if `g_n<=X<g_(n+1)`, then its next point is `g_(n+1)` and
 
 \[
 1<\frac{\log\sigma(X)}{\log X}
@@ -138,13 +123,7 @@ From (2), Cesàro averaging gives
 \tag{6}
 \]
 
-Now let `g_n<=X<g_(n+1)`. Apart from an irrelevant finite initial offset,
-
-\[
-N_\eta(X)=n,
-\]
-
-while
+Now let `g_n<=X<g_(n+1)`. Apart from an irrelevant finite initial offset, `N_eta(X)=n`, while
 
 \[
 \log\log X<u_{n+1}=o(n).
@@ -161,65 +140,77 @@ Therefore
 
 which proves (3).
 
-This bound is genuinely weaker than any fixed positive power of `log X`. The first-passage theorem says that occupied horizons cannot have a fixed positive gap in the `log log` coordinate; it does not supply positive density in the `log` coordinate used by the horizon-entropy obstruction of `FD-023`.
+This is still far weaker than any fixed positive power of `log X`. The first-passage theorem says that occupied horizons cannot have a fixed positive gap in the `log log` coordinate; it does not supply positive density in the `log` coordinate used by the horizon-entropy obstruction of `FD-023`.
 
-## 3. An explicit admissible good set remains superexponential in its index
+## 3. An explicit integer-ratio control remains superexponential in its index
 
-Consider the abstract increasing integer sequence
+The compatibility with `FD-023` can be tested inside its own integer-ratio class, rather than with an arbitrary sparse sequence. Put
 
 \[
-\boxed{
-g_n:=\left\lceil\exp\!\bigl(\exp(\sqrt n)\bigr)\right\rceil.}
+m_n:=\left\lceil e^{\sqrt n}\right\rceil,
+\qquad
+g_n:=2^{m_n},
 \tag{7}
 \]
 
-The ceiling is asymptotically negligible. One has
+starting after the finite range where `m_n` may fail to increase strictly. Then
 
 \[
-\log g_n=\exp(\sqrt n)+o(1),
+\frac{g_{n+1}}{g_n}=2^{m_{n+1}-m_n}\in\mathbb Z_{\ge2},
+\tag{8}
 \]
 
-and hence
+so `{g_n}` is an exact integer-ratio horizon chain of the type admitted by `FD-023`.
+
+At the same time,
+
+\[
+\log g_n=(\log2)e^{\sqrt n}(1+o(1)),
+\]
+
+and therefore
 
 \[
 \frac{\log g_{n+1}}{\log g_n}
 =
-\exp(\sqrt{n+1}-\sqrt n)+o(1)
+\frac{m_{n+1}}{m_n}
+=
+\exp(\sqrt{n+1}-\sqrt n)(1+o(1))
 \longrightarrow1.
-\tag{8}
+\tag{9}
 \]
 
-By (5), this set satisfies exactly the same subpower first-passage geometry as `FD-081`. Its counting function, however, obeys
+By (5), this set has exactly the same subpower first-passage geometry as `FD-081`. Its counting function nevertheless obeys
 
 \[
 \boxed{
 N(X)=(1+o(1))(\log\log X)^2.
 }
-\tag{9}
+\tag{10}
 \]
 
 In particular, for every fixed `a>0`,
 
 \[
 N(X)=o\!\bigl((\log X)^a\bigr).
-\tag{10}
+\tag{11}
 \]
 
-At the same time its logarithmic horizon entropy in the sense of `FD-023` diverges:
+Its logarithmic horizon entropy in the notation of `FD-023` diverges:
 
 \[
 \boxed{
 \frac1n\log\frac{g_n}{g_1}
 \sim
-\frac{e^{\sqrt n}}n
+(\log2)\frac{e^{\sqrt n}}n
 \longrightarrow\infty.
 }
-\tag{11}
+\tag{12}
 \]
 
-Thus `g_n` is superexponential in its index: for every fixed `L`, eventually `g_n>e^{Ln}`. This is exactly the qualitative escape regime that `FD-023` proves is necessary for Cesàro saturation by a polynomial-growth source. Therefore the new pointwise recurrence of `FD-081` does **not** contradict the old superexponential-sparsity escape; the two conditions are simultaneously realizable.
+Thus the chain is superexponential in its index: for every fixed `L`, eventually `g_n>e^{Ln}`. This realizes, inside the exact integer-ratio setting, both the `FD-081` first-passage geometry and the qualitative entropy escape that `FD-023` requires of any Cesàro-saturating polynomial-growth source.
 
-The sequence (7) is a control for the information content of the recurrence theorem. It is not asserted to be the actual Farey/Mertens occupied set. Its purpose is to falsify the implication
+The sequence (7) is a control for the information content of the recurrence theorem. It is not asserted to be the actual Farey/Mertens occupied set, nor to realize the physical Schur ratios. Its purpose is to falsify the purely geometric implication
 
 \[
 \text{subpower first passage}
@@ -229,20 +220,9 @@ The sequence (7) is a control for the information content of the recurrence theo
 
 ## 4. Fixed-factor accumulation cannot change a power exponent from this input alone
 
-Suppose, optimistically, that a downstream argument could extract a uniform favorable factor
+Suppose, optimistically, that a downstream argument could extract a uniform favorable factor `0<kappa<1` at every occupied horizon and multiply those gains across the retained sequence. After `N(X)` usable hits the accumulated factor would be `kappa^(N(X))`.
 
-\[
-0<\kappa<1
-\]
-
-at every occupied horizon and multiply those gains across the retained sequence. After `N(X)` usable hits the accumulated factor would be
-
-\[
-\kappa^{N(X)}.
-\tag{12}
-\]
-
-For the admissible recurrence geometry (7)--(9),
+For the admissible recurrence geometry (7)--(10),
 
 \[
 \kappa^{N(X)}
@@ -262,9 +242,9 @@ N_\eta(X)\gg\log X
 \tag{14}
 \]
 
-for that purpose, whereas `FD-081` guarantees only (3) and is compatible with (9).
+for that purpose, whereas `FD-081` guarantees only (3) and is compatible with (10).
 
-The same observation explains why simply feeding the good horizons into `FD-023` does not close the loop. `FD-023` obtains a Cesàro obstruction when the sampled horizon entropy has a bounded subsequence; the model (7) satisfies the `FD-081` recurrence while its entropy tends to infinity, so the theorem's escape condition remains available.
+The same control explains why simply sampling the good horizons does not activate the `FD-023` obstruction. Its positive Cesàro conclusion is forced when the sampled logarithmic horizon entropy has a bounded subsequence. The integer-ratio chain (7) satisfies the `FD-081` first-passage condition while its entropy tends to infinity, so the theorem's necessary escape remains available.
 
 ## 5. Relation to the annular results
 
@@ -276,10 +256,10 @@ This identifies three mathematically distinct ways past the obstruction. One may
 
 ## 6. Boundary and prior-art audit
 
-The finding is an **information-sufficiency obstruction**, not a negative theorem about the actual physical set `G_eta`. It does not say that `N_eta(X)` is as small as `(log log X)^2`, that the physical good horizons have zero logarithmic density, or that a nonlocal Farey argument cannot use them. It proves only that none of those stronger conclusions follows from the subpower first-passage theorem presently available.
+The finding is an **information-sufficiency obstruction**, not a negative theorem about the actual physical set `G_eta`. It does not say that `N_eta(X)` is as small as `(log log X)^2`, that the physical good horizons form an integer-ratio chain, that they have zero logarithmic density, or that a nonlocal Farey argument cannot use them. It proves only that none of the stronger density/entropy conclusions follows from the subpower first-passage statement itself.
 
 Likewise, the fixed-factor conclusion concerns proof architectures whose guaranteed logarithmic gain is bounded per occupied hit. A mechanism whose gain depends on the intervening gap, on the size of `E_(H,D)`, on correlations between several horizons, or on the bad intervals themselves is outside the obstruction.
 
 No external theorem is load-bearing. Equations (1)--(6) are elementary sequence consequences of `FD-081`, while the comparison with superexponential index sparsity uses the exact horizon-entropy boundary already proved in `FD-023`. A targeted literature search around multiplicative/power syndeticity, sparse sequences, Farey discrepancy, and first-passage recurrence found standard notions of multiplicatively syndetic sets that impose a different bounded finite-multiplier condition, but no result needed by the argument here. No novelty claim is attached to the elementary sequence lemma, and `SOURCES.md` needs no new anchor.
 
-The decisive falsification test is explicit: derive from the current `FD-081` hypotheses alone either `N_eta(X) \gg log X` or a bounded subsequence of `(1/n) log g_n`. The control (7) satisfies the exact first-passage condition while violating both conclusions, so any such strengthening must use additional physical arithmetic or energy-distribution information not present in `FD-081`.
+The decisive falsification test is explicit: derive from the current `FD-081` hypotheses alone either `N_eta(X) \gg log X` or a bounded subsequence of `(1/n) log g_n`. The integer-ratio control (7) satisfies the exact first-passage condition while violating both conclusions, so any such strengthening must use additional physical arithmetic or energy-distribution information not present in `FD-081`.
