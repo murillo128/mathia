@@ -1,6 +1,6 @@
-# MI-004 — The collective late Nyman quotient is governed by one dyadic backward shift
+# MI-004 — The collective late Nyman quotient is a finite-window target-leakage problem, not a defect-existence problem
 
-**Evidence level:** proved structural identities through NB-060; whether the arithmetic generalized nullspace reaches the canonical residual remains open.
+**Evidence level:** proved structural identities through NB-061; whether the visible natural leakage of the canonical residual vanishes remains open.
 
 After removing the common off-critical Blaschke factor, the natural Nyman closure is `\mathcal A` and its defect space is
 
@@ -8,57 +8,55 @@ After removing the common off-critical Blaschke factor, the natural Nyman closur
 \mathcal D=\mathcal A^\perp.
 \]
 
-NB-053--NB-057 show that raw late quotient columns shrink and that the canonical finite residual becomes invisible to every sufficiently late **individual** shifted block. NB-058 identifies the collective loophole by the finite-time defect sectors
+NB-053--NB-058 show that raw late quotient columns shrink and that the canonical finite residual becomes invisible to every sufficiently late **individual** shifted block. The collective loophole is the family of finite-time defect sectors
 
 \[
-\mathcal K_R
-=\mathcal D\cap\ker U_{\log R}^*.
+\mathcal K_R=\mathcal D\cap\ker U_{\log R}^*.
 \]
 
-Under Paley--Wiener these are exactly the defect vectors supported in `[0,log R]`, and the collective late target mass is the distance of `h_*=Qe` from `\mathcal K_R`.
-
-NB-060 turns the whole finite-cutoff family into a one-operator root-space problem. Define
-
-\[
-B_2:=U_{\log2}^*|_{\mathcal D}.
-\]
-
-Integer-log invariance gives
+NB-060 turns this into a one-operator generalized-root problem. With `B_2=U_{\log2}^*|_\mathcal D`, dyadic cofinality gives
 
 \[
 \mathcal K_{2^k}=\ker B_2^k,
+\qquad
+\mathcal K_{\rm fin}=\overline{\bigcup_{k\ge1}\ker B_2^k}.
 \]
 
-and dyadic cofinality gives
+NB-061 now eliminates the unresolved existence branch. Let `J_R` be time truncation to `[0,\log R]` and set `\mathcal G_R=J_R\mathcal A`. The exact integer-log cocycle forces
 
 \[
-\mathcal K_{\rm fin}
-:=\overline{\bigcup_{R\ge2}\mathcal K_R}
+\mathcal G_R=\operatorname{span}\{J_RF_n:2\le n\le R\},
+\qquad \dim\mathcal G_R\le R-1.
+\]
+
+Inside the infinite-dimensional window space `\mathcal E_R=\ker U_{\log R}^*`, one has
+
+\[
+\mathcal K_R=\mathcal E_R\ominus\mathcal G_R.
+\]
+
+Therefore every `\mathcal K_R` is infinite-dimensional; in particular `\ker B_2=\mathcal K_2\ne0`. Compact-time arithmetic defects are abundant already in the first dyadic window.
+
+Abundance is still not the target theorem. For every `h\in\mathcal D`, NB-061 gives the exact orthogonal decomposition
+
+\[
+\operatorname{dist}(h,\mathcal K_R)^2
 =
-\overline{\bigcup_{k\ge1}\ker B_2^k}.
+\|(I-J_R)h\|^2
++
+\|P_{\mathcal G_R}J_Rh\|^2.
 \]
 
-Hence
+For the canonical residual `h_*=Qe`, the ordinary time tail tends to zero, so
 
 \[
-\mathcal K_2=\{0\}
+h_*\in\mathcal K_{\rm fin}
 \iff
-\mathcal K_R=\{0\}\text{ for every finite }R.
+\|P_{\mathcal G_R}J_Rh_*\|\to0.
 \]
 
-This is stronger than a convenient subsequence reduction. If any compact-time arithmetic defect exists at any scale, repeatedly applying the backward shift produces a nonzero defect already in the first window `[0,log2]`. Existence is therefore a fixed-scale question.
+The moving collective problem has therefore become a **finite-window leakage problem**: at scale `R`, only at most `R-1` natural directions are visible, but those directions may still retain a fixed component of the target. Finite rank is not quantitative decay.
 
-The canonical tail is a different question. Its limiting mass is exactly
+The reusable distinction is now sharper. Individual-column disappearance does not settle a collective span; nonzero localized kernels do not settle target approximation; and an infinite-dimensional defect sector can still fail to absorb a distinguished vector because a moving finite-dimensional complement captures it. A useful next theorem must estimate the target projection onto `\mathcal G_R` or provide an equivalent source-controlled dual certificate.
 
-\[
-\operatorname{dist}\!\left(
- h_*,
- \overline{\bigcup_{k\ge1}\ker B_2^k}
-\right)^2.
-\]
-
-A nonzero first-window kernel supplies only a seed; decay requires its generalized root tower to approximate `h_*`. Conversely, if `ker B_2=0`, every finite defect sector vanishes and the collective late quotient remains the entire defect space at every finite cutoff even though each sufficiently late individual block is weak against the canonical residual.
-
-The unit-outer control realizes the dense generalized-kernel branch: the dyadic root spaces exhaust the flat defect space. The arithmetic problem is precisely whether the actual deflated Nyman space has comparable root-space abundance.
-
-**Boundary.** NB-060 does not construct a nonzero element of `ker B_2`, prove density of the generalized nullspace, or transfer the flat model's cubic tail rate to zeta. It replaces a moving family of existence questions by one first-window kernel plus a separate generalized-root approximation problem.
+**Boundary.** NB-061 proves neither density of the generalized nullspace in the full defect space nor decay for a generic vector. It closes only the compact-time existence gate and isolates the remaining canonical-target quantity.

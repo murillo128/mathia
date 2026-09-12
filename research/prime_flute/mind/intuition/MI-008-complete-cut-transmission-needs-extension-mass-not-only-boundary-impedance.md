@@ -1,6 +1,6 @@
-# MI-008 — The flute mixed-response gate sits at a critical accumulated-loss exponent
+# MI-008 — The flute mixed-response gate has an intrinsic logarithmic accumulated-loss threshold
 
-**Evidence level:** proved local operator/source-space boundaries through PF-299; the factorization of the complete physical mixed response remains open.
+**Evidence level:** proved local operator/source-space and scalar accumulation boundaries through PF-300; the factorization of the complete physical mixed response remains open.
 
 For the fixed physical high-pass spaces, PF-292 gives a diverging local frequency floor. PF-296 proves that the canonical fixed-axis synthesis is uniformly bounded from the explicit weighted source space `ell^1(q)` into positive Sobolev regularity. A complete normalized response with uniformly bounded `sum_i q_i|a_i|`, controlled transport, and negligible residual therefore cannot sustain the PF-290 local high-band shorting deficit.
 
@@ -14,22 +14,34 @@ c_n\begin{pmatrix}1&-1\\-1&1\end{pmatrix}+\operatorname{diag}(\kappa_{n,L},\kapp
 
 with `c_n\gtrsim s_n^{-1}` and bounded nonnegative killing, so the isolated scalar loss satisfies `epsilon_n=O(s_n)`.
 
-PF-299 identifies the accumulation threshold of the **actual prime seam geometry**:
+PF-299 identifies the coarse endpoint: `sum s_n=infinity` while `sum s_n^q<infinity` for every `q>1`. PF-300 resolves the logarithmic refinements by using the intrinsic coordinate
 
 \[
-\sum_ns_n=\infty,
-\qquad
-\sum_ns_n^q<\infty\quad\text{for every }q>1.
+t_n=F(p_n),\qquad s_n=\frac{(t_n-t_{n-1})+(t_{n+1}-t_n)}2.
 \]
 
-Therefore `O(s_n)` is not merely a small local loss; it is exactly the unresolved `ell^1` endpoint. If a refinement proves
+For every nonnegative decreasing `phi`, the seam sum `sum s_n phi(t_n)` has the same convergence behavior as `int phi(t)dt`. Hence
 
 \[
-\epsilon_n=O(s_n^{1+\delta})
+\sum_n\frac{s_n}{(1+F(p_n))^\beta}
 \]
 
-for any fixed `delta>0`, the scalar losses are summable and the infinite scalar transmission remains positive. If instead `epsilon_n\ge c s_n` eventually, the scalar transmission product vanishes. Even `epsilon_n=o(s_n)` is not enough by itself: the endpoint must be settled by an actually summable majorant or a divergent lower law.
+diverges exactly for `0<=\beta<=1` and converges for `\beta>1`. Prime-gap irregularity is absorbed into the exact mesh; no average-gap replacement is needed.
 
-The scalar live quantity is consequently the first-order scale of `\kappa_n/c_n` or `epsilon_n`, not another contraction constant. But this remains only one compression of the physical problem. The PF-298 constant channel is not proved invariant under the complete `P/H` Schur return. The full gate is still the normalized mixed return/reassembly map, where accumulated nonconstant-mode damping, support loss, source-specific forcing/cancellation, or a change of coefficient currency may dominate the scalar chain.
+The scalar live quantity is consequently the relative killing **inside this quadrature currency**. If `epsilon_n\lesssim s_n(1+F(p_n))^{-\beta}` with `\beta>1`, the scalar transmission product stays positive. If `epsilon_n\gtrsim s_n(1+F(p_n))^{-\beta}` with `\beta<=1`, it vanishes. At the critical law
 
-**Boundary.** PF-299 proves the summability class of `s_n`, not the asymptotic of the actual pant loss and not a full mixed-response factorization. The critical scalar law must still be reassembled into the physical `P/H` problem before it can imply compactness or any RH-facing conclusion.
+\[
+\epsilon_n\sim a\frac{s_n}{1+F(p_n)},
+\]
+
+PF-300 gives the sharper prediction
+
+\[
+\prod_{k\le n}(1-\epsilon_k)=(\log p_n)^{-a+o(1)}.
+\]
+
+Thus “`epsilon_n=o(s_n)`” is still not a meaningful global criterion; the actual slowly varying factor decides accumulation.
+
+This remains only one compression of the physical problem. The PF-298 constant channel is not proved invariant under the complete `P/H` Schur return. The full gate is still the normalized mixed return/reassembly map, where accumulated nonconstant-mode damping, support loss, source-specific forcing/cancellation, or a change of coefficient currency may dominate the scalar chain.
+
+**Boundary.** PF-300 proves an intrinsic quadrature/integral test for monotone scalar weights, not the asymptotic of the actual pant killing and not a full mixed-response factorization. Highly oscillatory source-dependent weights require additional control.

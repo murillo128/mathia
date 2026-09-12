@@ -2,42 +2,42 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Penetrate below the deterministic critical host scale
+## Use short-interval source cancellation below the deterministic host scale
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-049--FD-055 reduce residual occupation collapse to a low-row source-localization problem and show that sufficiently strong short-interval cancellation transfers a zero-frontier spike to nearby nonsquarefree quadratic occupation.
+FD-049--FD-055 reduce residual occupation collapse to a low-row source-localization problem and show that sufficiently strong short-interval Möbius cancellation transfers a zero-frontier spike to nearby nonsquarefree occupation. FD-056--FD-058 distinguish sparse represented-start sampling from maximal ambient-window localization.
 
-FD-056--FD-058 distinguish sparse represented-start sampling from maximal ambient-window localization. A maximal source theorem can avoid the reciprocal-sample cardinality penalty, but its exceptional measure must still be smaller than the containing-start corridor at the desired transfer scale.
+FD-059 identifies the deterministic critical scale `Q_X=X/A_X`, where `A_X=|\mathcal H(X)|`: favorable residue-class selection plus the one-Lipschitz source forces a constant-fraction nonsquarefree twin at `q\asymp Q_X`. FD-060 shows that subpower slack above `Q_X` can produce a growing CRT packet.
 
-FD-059 identifies the deterministic critical scale `Q_X=X/A_X`, where `A_X=|\mathcal H(X)|`: favorable residue-class selection plus the one-Lipschitz source already forces a constant-fraction nonsquarefree twin at `q\asymp Q_X`. FD-060 shows that subpower slack above `Q_X` can produce a growing CRT packet of nonsquarefree rows carrying the same physical spike.
+FD-062 now crosses the deterministic scale with a **growing** packet when physical short-interval cancellation is available. If `A_X(\log X)^B\ge X^\vartheta` with `\vartheta>0.55` and `B+\kappa<1/3`, there are squarefree hosts and packet lengths `K_X\to\infty`, `K_X\le(\log X)^\kappa`, for which
 
-The deterministic source bill is therefore sharp at mechanism level. At `qA_X/X\asymp1`, bounded increments guarantee only bounded packet length; a growing fixed-fraction packet requires `qA_X/X\to\infty`. For `qA_X/X\to0`, even fixed-fraction one-row transfer needs genuine source cancellation/localization or a different source-coupled mechanism. The live below-critical theorem is to cross `X/A_X`, not merely reproduce its power exponent with subpower overhead.
+\[
+\frac{qA_X}{X}\asymp(\log X)^{-B}\to0
+\]
 
-## Improve the packet-horizon global occupation exponent or turn it into positive occupation
+while every packet row remains source-close to the selected spike. Thus growing local nonsquarefree occupation does **not** intrinsically require supercritical placement. The logarithmic short-interval saving is a budget that can be split between penetration below `X/A_X` and packet width.
+
+The remaining localization boundary is now explicit: the present theorem uses the all-short-interval range `\vartheta>0.55` and the available logarithmic saving. The unresolved source problem is what, if anything, can replace that input in the `\Theta\le0.55` range or improve the budget beyond `B+\kappa<1/3`.
+
+## Sharpen the same-horizon denominator rather than the packet geometry
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-061 closes the first denominator gap left by FD-060 at the power-exponent scale. Along a false-RH frontier spike `A_X=X^{\Theta+o(1)}`, `1/2<\Theta<1`, the CRT packet occurs at
+FD-061 measures the global loss of the supercritical packet. Along a false-RH frontier spike `A_X=X^{\Theta+o(1)}`, the packet horizon gives the exponent
 
 \[
-T_X=X^{2-\Theta+o(1)}
+\beta_\Theta=\frac{2\Theta(1-\Theta)}{2-\Theta},
 \]
 
-and the global nonsquarefree occupation satisfies, for every `eta>0`,
+which improves the all-horizon `2\Theta-1` barrier exactly for `\Theta>2/3`, but still does not give positive normalized occupation.
 
-\[
-T_X^{\beta_\Theta+\eta}\nu_{T_X,D}\to\infty,
-\qquad
-\beta_\Theta=\frac{2\Theta(1-\Theta)}{2-\Theta}.
-\]
+FD-062 strengthens the geometry without removing this global obstruction. The host can now satisfy `qA_X/X\to0` while carrying `K_X\to\infty`, and on false-RH frontier sequences one can take a fixed logarithmic packet power. Yet the generic denominator envelope on those **same source-selected horizons** absorbs the available subpower gains.
 
-Combined with the all-horizon exponent `2\Theta-1` from FD-049, the packet gives a strictly stronger polynomial-loss barrier exactly when `\Theta>2/3`; the two exponents meet at `\Theta=2/3`.
+The next global theorem should therefore control the energy denominator on the packet horizons themselves, or find a source-coupled transfer with a genuinely better row-count/horizon tradeoff. Another CRT refinement at the deterministic host scale is no longer the bottleneck.
 
-This is still not positive occupation. The generic global energy envelope is too coarse to prove `\liminf U/E>0`, and increasing the CRT packet by another subpower factor cannot improve the power exponent because the longer packet pushes the evaluation horizon outward. A stronger result must either sharpen the denominator on the **same packet horizons** or move many source-bearing nonsquarefree rows to a better row-count/horizon tradeoff.
+## Keep transfer accuracy, packet multiplicity, host scale, and normalized occupation as different currencies
 
-## Keep transfer accuracy, packet multiplicity, and normalized occupation as different currencies
+Bounded increments alone have a sharp host-scale bill. Genuine short-interval cancellation can cross it and can simultaneously support growing local multiplicity. Neither statement yields a positive fraction of the full energy.
 
-At `qA_X/X\asymp1`, favorable host selection gives constant-factor one-row transfer. At `qA_X/X\to\infty`, the same deterministic budget can produce `K_X\to\infty` fixed-fraction rows. FD-061 shows that this local multiplicity does not become an extra global power after division by the full energy: the horizon displacement absorbs it at exponent scale.
-
-Any use of the zero-frontier exponent must therefore keep the hidden subpower ratio `qA_X/X`, packet size, packet horizon, global energy envelope, and normalized occupation exponent explicit. Equal row exponents, an unbounded local packet/host ratio, and a positive global occupation fraction are not interchangeable statements.
+Any use of the zero-frontier exponent must therefore keep the source amplitude, `qA_X/X`, packet width, packet horizon, same-horizon denominator, localization range, and normalized occupation exponent explicit. Equal row exponents, an unbounded packet/host ratio, and positive global occupation are not interchangeable statements.

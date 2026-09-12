@@ -28,12 +28,18 @@ AF-244--AF-276 show that coarse symmetry, zero counting, endpoint jets, compact-
 
 AF-278--AF-281 separate continuous time breadth, one-lattice aliasing, marginal coupling loss, and exact mixed-channel recovery. If all mixed samples `F(c+i(k_1h_1+...+k_Jh_J))` are retained, ordinary Dirichlet coefficient fidelity is equivalent to `cap_j R_(h_j)={1}`; separate resonant marginals do not have the same information.
 
-AF-282 and AF-283 now close two finite-prefix bills for the concrete `log2/log3` repair. On the known prefix `1,...,N`, the joint phase spacing is `Theta(1/N)`, and **uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`**. In particular `L=o(N)` forces a diverging inverse modulus, while the full square with `L=30N` has a breadth-uniform least-squares inverse under per-sample absolute noise.
+AF-282--AF-284 now price three different finite-prefix resources for the concrete `log2/log3` repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)` and **uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`**. The dense `L=30N` square gives a stable frame, but AF-284 shows that its quadratic observation count is not intrinsic: classical matrix concentration extracts an **unweighted subset of distinct raw mixed moments of size `O(N log N)`** with a breadth-uniform inverse under adversarial per-sample absolute noise.
 
-The remaining acquisition gap is no longer pairwise phase resolution or mixed degree. The sufficient square uses `Theta(N^2)` scalar samples, while rank gives only the elementary `Omega(N)` lower bound. Determine whether the arithmetic node family admits a substantially sparser mixed-moment set with a comparable stable inverse, or prove a superlinear observation lower bound for the admissible timing geometry. Keep known support, timing precision, the weighted coefficients `b_n=a_n n^{-c}`, conversion back to an unweighted target, and the unrestricted infinite-source obstruction as separate costs.
+The remaining finite-prefix acquisition gap is therefore
+
+\[
+\Omega(N)\quad\text{versus}\quad O(N\log N),
+\]
+
+not `Omega(N)` versus `Theta(N^2)`. Determine whether the logarithmic factor is an artifact of generic row sampling or is forced by unweighted raw mixed-moment acquisition under a stated timing geometry. Weighted `O(N)` spectral sparsification is relevant prior art but changes the acquisition/noise semantics and must remain a separate model. Keep known support, maximal time horizon, timing precision, the weighted coefficients `b_n=a_n n^{-c}`, conversion back to an unweighted target, and the unrestricted infinite-source obstruction as separate costs.
 
 ## Treat the information bills separately
 
-A finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, phase labels are only `Theta(1/N)` apart and stable mixed **degree** is only `Theta(N)`, but the currently proved stable design still spends `Theta(N^2)` scalar observations.
+A finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, phase labels are only `Theta(1/N)` apart, stable mixed **degree** is `Theta(N)`, and an unweighted raw subset with `O(N log N)` scalar samples already suffices for breadth-uniform coefficient stability.
 
-Future fidelity claims must therefore state which resource is being bounded: difference-object complexity, local depth, prime breadth, observation dimension, coupling geometry, cadence/fiber geometry, label resolution, mixed degree, sample count, time horizon, coefficient-recovery norm, source weights, support knowledge, and downstream target metric. Exact injectivity, polynomial label spacing, and linear mixed degree are not substitutes for an observation-complexity theorem.
+Future fidelity claims must therefore state which resource is being bounded: difference-object complexity, local depth, prime breadth, observation dimension, coupling geometry, cadence/fiber geometry, label resolution, mixed degree, sample count, time horizon, coefficient-recovery norm, source weights, support knowledge, and downstream target metric. Exact injectivity, polynomial label spacing, linear mixed degree, and near-linear sample count are distinct statements.

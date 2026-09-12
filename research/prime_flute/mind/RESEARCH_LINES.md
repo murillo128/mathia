@@ -6,15 +6,21 @@ Can the actual normalized mixed Riesz response be written as `G_n=T_nY_n(a_n)+R_
 
 PF-297 removes one candidate for a hidden local discount: the fixed-axis Robin inverse is `ell^1(q)`-nonexpansive and its complete positive action conserves `q`-mass. PF-298 removes another: the constant-boundary response of a tight one-cusp pant is a large conductance edge plus bounded killing, with isolated scalar transmission `1-O(s_n)`.
 
-PF-299 now calibrates the only scale at which those small pant losses can accumulate. For the exact prime seam sequence,
+PF-299--PF-300 now calibrate the accumulated scalar loss in the **intrinsic prime coordinate** `t_n=F(p_n)`. The exact seam weights
 
 \[
-(s_n)\notin\ell^1,
-\qquad
-(s_n)\in\ell^q\quad(q>1).
+s_n=\frac{(t_n-t_{n-1})+(t_{n+1}-t_n)}2
 \]
 
-Thus the current `O(s_n)` loss estimate is exactly at the critical summability endpoint. A superlinear bound `epsilon_n=O(s_n^{1+delta})` would make the scalar loss summable and leave a positive infinite transmission product; an eventual lower bound `epsilon_n\gtrsim s_n` would force the scalar product to vanish. The scalar subproblem should therefore determine the first-order asymptotic of `kappa_n/c_n` or `epsilon_n`, not seek another depth-uniform contraction gap.
+form a symmetric Riemann quadrature: for every nonnegative decreasing `phi`, convergence of `sum s_n phi(t_n)` is equivalent to convergence of `int phi(t)dt`. In particular
+
+\[
+\sum_n\frac{s_n}{(1+F(p_n))^\beta}
+\]
+
+diverges for `beta<=1` and converges for `beta>1`. Thus the scalar gate is sharper than “linear versus a fixed superlinear power of `s_n`.” A killing law `epsilon_n\asymp s_n(\log p_n)^{-\beta}` still absorbs the scalar channel for `beta<=1`; for `beta>1` it is summable. At the critical `beta=1`, an asymptotic `epsilon_n\sim a s_n/(1+F(p_n))` would give transmission `(\log p_n)^{-a+o(1)}`.
+
+The next pant calculation should therefore determine the relative killing in the form `epsilon_n=s_n a_n` and control `a_n` in the intrinsic coordinate, rather than search for another depth-uniform contraction gap. Prime-gap irregularity no longer needs to be averaged at the accumulation stage once the exact `F(p_n)` mesh is used.
 
 The complete `P/H`-split return/reassembly map remains the real gate. The scalar constant compression is not known to be invariant under the full Schur problem, so even a resolved scalar accumulation law must be reassembled with nonconstant modes, support loss, source forcing/cancellation, and any residual physical-high term.
 
