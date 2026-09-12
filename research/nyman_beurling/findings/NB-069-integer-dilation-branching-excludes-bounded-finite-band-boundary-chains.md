@@ -46,14 +46,14 @@ therefore satisfies the block-renormalization law
 H_{ij}
 =
 \frac1m
-\sum_{k=mj}^{m(j+1)-1}
-\sum_{\ell=mi}^{m(i+1)-1}
-\langle D_k,D_\ell\rangle,
+\sum_{k=mi}^{m(i+1)-1}
+\sum_{\ell=mj}^{m(j+1)-1}
+\langle D_k,D_\ell\rangle.
 }
 \tag{5}
 \]
 
-with the two block indices interchanged harmlessly according to the inner-product convention. More invariantly, if
+More invariantly, if
 
 \[
 I_j^{(q)}:=\{qj,qj+1,\ldots,q(j+1)-1\},
@@ -197,7 +197,7 @@ G_{ij}=0.
 \tag{19}
 \]
 
-It remains to treat adjacent blocks, `j=i+1`. A nonzero entry across their common boundary must satisfy `|k-ell|<=L`. There are at most
+It remains to treat adjacent blocks, `j=i+1`. A nonzero entry across their common boundary must satisfy `|k-\ell|\le L`. There are at most
 
 \[
 C_L:=\frac{L(L+1)}2
@@ -294,7 +294,7 @@ m^r t_{n-1}t_{n+1}.
 \tag{30}
 \]
 
-But `t in ell^2` implies `t_j->0`, so the left-hand side tends to zero while the right-hand side grows without bound for every `n` because all `t_j` are strictly positive. This is impossible.
+But `t\in\ell^2` implies `t_j\to0`, so the left-hand side tends to zero while the right-hand side grows without bound for every `n` because all `t_j` are strictly positive. This is impossible.
 
 This sharper calculation shows that the mismatch is not a subtle failure of the Schur limit. A single family of adjacent Gram identities already detects it at geometrically separated scales.
 
@@ -330,7 +330,7 @@ The bidiagonal boundary chain is no longer such a mechanism.
 
 The integer-dilation semigroup underlying the natural Nyman--Beurling/Baez--Duarte family is classical; the line already anchors Baez-Duarte's discrete strengthening and Bagchi's Hilbert/semigroup formulation in `SOURCES.md`. Equation (3) is a direct telescoping consequence of that classical structure and is not presented as a new theorem about the Nyman family.
 
-A bounded prior-art audit also checked recent work on Nyman subspace-angle geometry and Gram structure, including Jongho Yang's 2026 Friedrichs-angle paper and Hugh Carvill's work on Mellin-smoothed Gram decay. The audit found no source using the block-renormalization identity (7) to test a finite-band boundary-at-infinity control of the form isolated in `NB-068`. No priority claim is made for the elementary rigidity lemma either.
+A bounded prior-art audit also checked recent work on Nyman subspace-angle geometry and Gram structure, including Jongho Yang's 2026 Friedrichs-angle paper and Hugh Carvill's 2025 preprint on Mellin-smoothed Gram decay (`arXiv:2510.18132`). The audit found no source using the block-renormalization identity (7) to test a finite-band boundary-at-infinity control of the form isolated in `NB-068`. No priority claim is made for the elementary rigidity lemma either.
 
 No external theorem is load-bearing: (3), (7), and the finite-band contradiction are direct calculations. `SOURCES.md` therefore needs no new anchor.
 
