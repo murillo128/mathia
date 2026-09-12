@@ -1,6 +1,6 @@
-# MI-010 — Scalar Green response is killing-normalized Markov averaging, not spectral-gap transport
+# MI-010 — Scalar Green response is killing-normalized averaging with an ideal-neutral middle
 
-**Evidence level:** proved for the finite scalar constant-mode pant chain by PF-303--PF-304; no full `P/H` mixed-response bound or arithmetic discrimination is claimed.
+**Evidence level:** proved for the finite scalar constant-mode pant chain by PF-303--PF-305; no full `P/H` mixed-response factorization or arithmetic discrimination is claimed.
 
 PF-298 writes every constant-boundary pant compression as a positive conductance edge plus positive shifted Robin killing. After assembling a finite chain,
 
@@ -12,46 +12,48 @@ D_N=\operatorname{diag}(d_0,\ldots,d_N),
 G_N=H_N^{-1}.
 \]
 
-The conductance Laplacian annihilates constants, so PF-303 obtains the exact identity
+PF-303 obtains the exact Green normalization `G_Nd=1`. PF-304 identifies `G_ND_N` as a reversible Markov kernel, so scalar forced response is contractive in the killing-weighted `ell^p(d)` scales. The absence of a depth-uniform scalar spectral gap is therefore not itself the forced-response obstruction.
+
+PF-305 exposes the corresponding Hilbert/operator-ideal structure. Define
 
 \[
-H_N\mathbf1=d,
+S_N=D_N^{1/2}G_ND_N^{1/2}.
+\]
+
+Then
+
+\[
+0<S_N\le I,
 \qquad
-G_Nd=\mathbf1.
-\]
-
-In return coordinates this says that the local escape deficit has exactly unit Green potential. A chain can be arbitrarily close to conservative at individual deep rows and still have a uniformly bounded response to forcing paid in the same currency as the escape.
-
-PF-304 identifies the stronger operator structure. Define
-
-\[
-P_N:=G_ND_N.
-\]
-
-Then `P_N` is nonnegative, row stochastic, and reversible with invariant weight `d`:
-
-\[
-P_N\mathbf1=\mathbf1,
+S_ND_N^{1/2}\mathbf1=D_N^{1/2}\mathbf1,
 \qquad
-d_i(P_N)_{ij}=d_j(P_N)_{ji}.
+\|S_N\|=1.
 \]
 
-Therefore `P_N` is a contraction on every weighted `ell^p(d)`, `1<=p<=infinity`, and every scalar forcing satisfies
+Thus killing normalization removes apparent Green amplification but does **not** create a strict contraction. More importantly, any scalar-mediated mixed response
 
 \[
-\boxed{
-\|G_Nf\|_{\ell^p(d)}
-\le
-\|D_N^{-1}f\|_{\ell^p(d)}.
-}
+M_N=R_NG_NF_N
 \]
 
-The familiar pointwise condition `|f|\lesssim d` is only the `p=infinity` endpoint. At `p=1`, bounded total source mass gives a bounded killing-weighted response; at `p=2`, bounded `\sum|f_j|^2/d_j` gives a bounded killing-weighted energy response. For nonnegative forcing the `p=1` mass balance is exact.
+has the exact factorization
 
-This changes the interpretation of PF-297--PF-302. The lack of a depth-uniform scalar spectral gap is not itself the forced-response obstruction. PF-302 proves that scalar round trips are extinguished by accumulated killing; PF-303--PF-304 show simultaneously that the scalar Green inverse is perfectly normalized once source injection is measured against that killing. **Survival and forced response are different questions, and the correct response norm is source-adapted rather than gap-adapted.**
+\[
+M_N=(R_ND_N^{-1/2})\,S_N\,(D_N^{-1/2}F_N).
+\]
 
-The unresolved theorem is now a representation/reassembly statement. The real finite `P/H` source extraction must be compared with `D_N`: does the PF-296 coefficient budget imply a uniform `ell^1`, `ell^2`, or `ell^infinity` bound for `D_N^{-1}f`? After scalar averaging, does the nonconstant-mode synthesis map the resulting `ell^p(d)` control into the positive Sobolev and physical-high norm needed by PF-292/PF-290? A failure should identify which source or reassembly component is not paid for by scalar killing rather than merely restating that local returns are nearly conservative.
+The scalar middle cannot worsen the compactness or symmetric-ideal class of a controlled normalized conversion vertex: bounded multiplication by a contraction preserves every two-sided symmetric ideal. But it cannot manufacture the missing ideal decay either, because its norm is exactly one and the conservative direction survives.
 
-The Markov/M-matrix mechanism is generic. Any positive conductance network with positive diagonal killing has the same stochasticization, so it carries no prime-specific or RH-specific information by itself. Arithmetic content can enter only through the actual prime-dependent source extraction, nonconstant-mode coupling, or final observable.
+The reusable lesson is that **return depth is not an independent compactness currency once the correct killing normalization is exposed**. Any scalar-mediated failure of the complete PF route must live at one of the two conversion interfaces—source injection relative to `D_N^{1/2}`, physical reassembly relative to the same scale—or in the failure of the true nonconstant response to factor through the scalar reservoir at all.
 
-**Boundary.** PF-303--PF-304 are finite-section scalar statements. The constant mode is not proved invariant under the complete boundary DtN/Schur problem, small killing weights can hide large pointwise response in integrated norms, and no bounded `P/H` reassembly map is established. The result removes a scalar spectral-gap requirement; it does not prove the physical global response theorem.
+This changes the next calculation. Rather than estimate `G_N` more sharply, derive the actual finite `P/H` forcing and reassembly maps and test
+
+\[
+D_N^{-1/2}F_N,
+\qquad
+R_ND_N^{-1/2}
+\]
+
+in the physical energy spaces required by the mixed target. A compact/weak-Schatten estimate on one vertex with a uniform bound on the other propagates automatically through the scalar chain; blowup or noncompactness identifies the genuine conversion obstruction.
+
+**Boundary.** PF-303--PF-305 are finite-section scalar statements. They do not prove that the constant mode is invariant under the complete boundary DtN/Schur problem, that the physical forcing factors through the scalar chain, or that either normalized conversion vertex has the required ideal bound. The mechanism is generic to positive conductance-plus-killing networks and carries no prime-specific information by itself.

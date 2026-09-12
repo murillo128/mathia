@@ -1,37 +1,55 @@
-# MI-005 — A persistent Nyman tail is a locally natural mode whose global extension cost has finite Schur certificates
+# MI-005 — Stable tails are a global continuation phenomenon, not a one-cell memory phenomenon
 
-**Evidence level:** supported by the exact causal recursion and stable-tail theorems NB-063--NB-066 and the finite future Gram/Schur characterization NB-067; no uniform bounded certificate is yet proved.
+**Evidence level:** supported by the exact causal recursion and stable-tail theorems NB-063--NB-066, finite future Gram/Schur characterization NB-067, and matched boundary-chain control NB-068; no bounded certificate for the actual Nyman source is yet proved.
 
-The late Nyman--Beurling quotient is not blocked by missing rank. NB-062--NB-063 show that visible natural spaces form a full causal flag and that old visible information enters the next logarithmic cell only through the finite-rank continuation map `Gamma_R`.
+The late Nyman--Beurling quotient is not blocked by missing finite rank. NB-062--NB-066 show that visible natural spaces form a causal flag and that a hypothetical persistent target would converge to one fixed stable-tail mode whose trace is natural on every finite window while the exact global continuation norm diverges. A bounded subsequence of the continuation constants `Lambda_R` excludes the entire stable-tail space.
 
-NB-064--NB-066 show what persistence would require. The canonical target would converge to one fixed nonzero stable-tail mode
-
-\[
-t_*\in\mathcal T_\infty
-=\{t:J_Rt\in\mathcal G_R\text{ for every }R\},
-\]
-
-which is exactly natural on every finite window while globally orthogonal to the natural closure. Its one-cell transmitted energy is square summable, but every exact global natural continuation of its finite trace has future norm tending to infinity. Equivalently, the worst minimal continuation constant `Lambda_R` must diverge. A bounded subsequence of `Lambda_R` rules out the entire stable-tail space.
-
-NB-067 makes this criterion finite and source-only. The kernel of `J_R` on the natural space is exactly the closed span of future innovations `D_j`, `j>=R`. If `A_R` is the visible prefix Gram and `S_(R,N)` is the finite Schur complement after optimizing over `D_R,...,D_N`, then
+NB-067 makes this global obstruction finitely observable. If `A_R` is the visible prefix Gram and `S_(R,N)` is the Schur complement after optimally using future innovations through horizon `N`, then
 
 \[
 \Xi_{R,N}
-:=
+=
 \lambda_{\max}(A_R^{-1/2}S_{R,N}A_R^{-1/2})
 \downarrow 1+\Lambda_R^2.
 \]
 
-Thus every finite future horizon gives a rigorous **upper** bound on the true continuation cost. A uniform inequality
+So finite source-only generalized eigenvalues give rigorous upper certificates for the infinite continuation problem.
+
+NB-068 proves that the canonical one-cell memory map is not a substitute for this quantity. There are two matched causal sources with the same finite visible/defect flag and
 
 \[
-S_{R_k,N_k}\preceq C^2A_{R_k}
+\Gamma_R=0
+\qquad\text{for every }R,
 \]
 
-on any unbounded sequence `R_k` already forces `T_infinity={0}`. If a stable tail exists, every choice of finite horizon schedule must instead make `Xi_(R,N(R))` diverge.
+for both sources. One has no stable tail. The other, a nearest-neighbor scalar boundary chain, has
 
-The reusable lesson is sharper than near-kernel tracking. **Local exact representability, one-step transmission, infinite-horizon continuation cost, and finite certifiability are distinct resources.** Here the infinite obstruction is not hidden beyond all finite access: its decisive upper bounds are monotone finite generalized eigenvalues, provided they are normalized by the actual visible Gram rather than by a global ambient norm.
+\[
+\mathcal T_\infty=\operatorname{span}\{t\}
+\]
 
-The remaining arithmetic task is concrete: bound these source-defined generalized eigenvalues on an unbounded window sequence, analytically or with rigorous finite certification. Failure is also informative because the growing extremal generalized eigenvectors identify the exact causal directions responsible for the continuation blow-up.
+and exact continuation blow-up
 
-**Boundary.** NB-067 does not supply the required bounded sequence; it only proves that such a finite certificate would be sufficient and cannot be a truncation artefact. Ordinary global Gram conditioning or floating-point spectra without rigorous control do not substitute for the normalized Schur inequality.
+\[
+\Lambda_R^2
+=
+\frac{T_{<R}^2}{T_{\ge R}^2}
+\to\infty.
+\]
+
+Its finite certificates satisfy
+
+\[
+\Xi_{R,N}
+=
+1+
+\frac{T_{<R}^2}{T_{R:N+1}^2},
+\]
+
+and therefore diverge for every horizon schedule. The hidden global mode is fully visible to the normalized Schur geometry while being completely invisible to every one-step `Gamma_R`.
+
+The reusable lesson is stronger than “local information may be insufficient.” **A global compatibility obstruction can be assembled entirely through directions that are removed as harmless at each individual step.** Finite causal bandwidth, zero one-cell memory, and identical local flags do not determine the stable tail; the cumulative extension cost does.
+
+The remaining arithmetic task is therefore to control the actual Nyman future Schur complements or prove a source-specific property that rules out the boundary-chain mechanism. A useful theorem must act on the cumulative continuation geometry, not merely sharpen local leakage estimates.
+
+**Boundary.** NB-068 is an abstract matched control, not a claim that the Nyman source contains such a boundary chain. It proves only that local-memory arguments cannot exclude one. NB-067 remains a sufficient finite certificate, but no uniformly bounded subsequence for the actual source has yet been established.

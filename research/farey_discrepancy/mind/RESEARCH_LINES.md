@@ -2,53 +2,71 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Cross the source-coherence threshold or control the sparse exceptional scales
+## Couple persistent source-spike capture to the same-horizon denominator
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-059--FD-066 reduce the direct packet route to one invariant source-side currency. If a zero-frontier spike `A_X=X^{Theta+o(1)}` remains comparable on a backward window `L_X=X^{ell+o(1)}`, then after reciprocal-floor transfer, same-horizon normalization, and Schur leverage are all paid, the direct coherent packet improves the deterministic terminal obstruction exactly when
+FD-059--FD-066 isolate the direct coherent-packet threshold. If a zero-frontier spike `A_X=X^{Theta+o(1)}` remains comparable on a backward window `L_X=X^{ell+o(1)}`, then after reciprocal-floor transfer, horizon normalization, and Schur leverage are all paid, the direct packet improves the deterministic terminal obstruction exactly when
 
 \[
 \ell>2(1-\Theta).
 \]
 
-Host placement and Schur-head motion cannot change this sign. The existing all-short-interval input does not provide the needed source-relative coherence below the `Theta=2/3` crossover.
+FD-067--FD-068 add an independent recurrence constraint: under q-subcovariant head growth, very low normalized nonsquarefree occupation cannot be typical in multiplicative or global logarithmic scale. That still allows an adaptively selected logarithmically sparse spike sequence.
 
-FD-067--FD-068 add a distinct cross-scale constraint. For a nonsquarefree dilation `q` and a deterministic head schedule satisfying
-
-\[
-\left\lfloor D_H/q\right\rfloor
-\le D_{\lfloor H/q\rfloor},
-\]
-
-the schedule-defined occupation satisfies
+FD-069 now supplies the missing **pointwise source-to-occupation** link at arbitrary later horizons. For
 
 \[
-\nu_H\ge
-w(q)\frac{E_{\lfloor H/q\rfloor}}{E_H}.
-\]
-
-Logarithmic integration over **all** horizons telescopes this multiplicative shift. If `D_H=H^{delta+o(1)}`, then
-
-\[
-\liminf
-\prod_{H<X}\nu_H^{\lambda_H/W_X}
-\ge
-w(q)q^{-\{\delta+2\Theta(1-\delta)\}},
+A_X=|\mathcal H(X)|,
 \qquad
-\lambda_H=\log\frac{H+1}{H}.
+U_{T,D}=\sum_{\substack{D<r\le T\\\mu(r)=0}}
+\frac{J_2(r)}{r^2}
+\mathcal H\!\left(\left\lfloor\frac Tr\right\rfloor\right)^2,
 \]
 
-Thus a q-subcovariant growing head cannot make low nonsquarefree occupation typical even by hopping between multiplicative rays: low occupation is sparse in global logarithmic scale. At the linear four-adic head the lower geometric-mean scale is the unconditional constant `3/16`, and the associated Schur loss is `gg 1/D_H` on a positive lower logarithmic density of horizons.
+round `T/X` upward to the next multiple of four. The resulting nonsquarefree row samples the source within reciprocal mesh `O(X^2/T)`, and the one-Lipschitz source gives
 
-This still does not touch an adaptively selected, logarithmically sparse zero-frontier spike sequence. The live alternatives are now sharper: prove the source-coherence inequality above; prove that dangerous spikes occupy nonnegligible logarithmic scale; couple spike size pointwise to occupation at the same horizon; control the sparse exceptional set directly; or bypass the reciprocal-floor/horizon normalization.
+\[
+U_{T,D}
+\ge
+\frac1{\zeta(2)}
+\left(A_X-\frac{4X^2}{T}-1\right)_+^2
+\]
 
-## Reach or bypass the square-root / cube-root phase boundary
+whenever that row survives the head. Equivalently,
 
-FD-064 shows that the direct packet row position reaches the cube-root Jordan core only when the source theorem transfers over square-root-scale intervals. FD-066 further shows that below `Theta=2/3`, merely lowering an admissible interval threshold is not enough: the actual spike amplitude must remain coherent over `ell>2(1-Theta)`.
+\[
+A_X
+\le
+1+\frac{4X^2}{T}+\sqrt{\zeta(2)U_{T,D}}.
+\]
 
-FD-068 rules out using ordinary q-subcovariant head growth as a substitute for that source theorem. Its global logarithmic recurrence is strong enough to prevent typical escape, but too weak to force a sparse adaptive spike onto a good horizon. Any almost-all/maximal input must therefore be checked against the selection mechanism of the dangerous spikes, not just against generic horizons.
+Thus every low-`U` horizon carves out a deterministic backward exclusion cone for large past source values. A spike becomes visible at constant factor once `T` reaches order `X^2/A_X`, and after that threshold the witness persists at every sufficiently later horizon rather than only on a selected host ray.
 
-## Keep local capacity, source coherence, logarithmic recurrence, exceptional-set localization, leverage, and horizon cost separate
+For a zero-frontier spike `A_X=X^{Theta+o(1)}`, the capture onset is
 
-Polynomial packet multiplicity, a large host corridor, or recurrent occupation can all coexist with failure of the pointwise normalized target. The current boundary has two independent pieces: the direct transfer needs source coherence beyond `2(1-Theta)`, while the dilation telescope says the defect cannot disappear on most multiplicative scale for covariant schedules. A future claim must state whether it is pointwise, along a selected sequence, on a fixed ray, or in logarithmic density; upgrading one of these quantifiers to another is itself the missing theorem.
+\[
+T_{\rm cap}=X^{2-\Theta+o(1)},
+\qquad
+r=T_{\rm cap}^{\alpha_\Theta+o(1)},
+\qquad
+\alpha_\Theta=\frac{1-\Theta}{2-\Theta}.
+\]
+
+With a moving head `D_T=T^{\delta+o(1)}`, source capture and head survival jointly begin at power exponent
+
+\[
+\tau_*(\delta,\Theta)
+=
+\max\left\{2-\Theta,\frac1{1-\delta}\right\}.
+\]
+
+The same `alpha_Theta` is exactly the crossover between source-sampling and head-deletion obstruction.
+
+The remaining normalization problem is now sharper. FD-069 gives a numerator witness `U_{T,D}` but not a lower bound for `U_{T,D}/E_{T,D}`. The next useful theorem must couple persistent spike capture to the **same-horizon denominator**, or show that zero-frontier spikes and candidate low-occupation horizons cannot remain separated by the capture/head scales above. Repeating favorable host selection is no longer the relevant quantifier improvement.
+
+## Keep source coherence, reciprocal-mesh capture, logarithmic recurrence, head survival, leverage, and denominator growth separate
+
+The direct coherent-packet threshold, the global logarithmic recurrence theorem, and the arbitrary-horizon four-adic sampler now control three different losses. FD-066 asks how long a large source excursion stays coherent. FD-068 says low normalized occupation cannot dominate logarithmic scale. FD-069 says a large source value itself becomes visible in the nonsquarefree numerator at every sufficiently late admissible horizon.
+
+None of these statements alone controls the full normalized target. In particular, persistent numerator occupation can coexist with faster growth of the total energy denominator. Future progress should identify the exact coupling that prevents this dilution rather than conflate pointwise spike capture with normalized obstruction.

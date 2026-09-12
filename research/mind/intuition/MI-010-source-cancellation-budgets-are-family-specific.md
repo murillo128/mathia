@@ -1,29 +1,23 @@
 # MI-010 — Source cancellation must be priced after the exact family, quantifier geometry, normalization, and blind modes are fixed
 
-**Evidence level:** supported by the Farey transfer/normalization/dilation results through FD-068 and the exact Möbius first-shell representation/subgroup results through MC-239; no cancellation theorem or operator is transferred between the two families.
+**Evidence level:** supported by the Farey transfer/normalization/dilation/spike-capture results through FD-069 and the exact Möbius first-shell representation/subgroup results through MC-240; no cancellation theorem or operator is transferred between the two families.
 
-Farey discrepancy has two independent quantitative gates. FD-066 gives the direct pointwise source-coherence threshold: a zero-frontier spike `X^{Theta+o(1)}` coherent on a window `X^{ell+o(1)}` improves the terminal scalar obstruction exactly when
+Farey discrepancy now has three independent quantitative gates. FD-066 gives the direct source-coherence threshold: a zero-frontier spike `X^{Theta+o(1)}` coherent on a window `X^{ell+o(1)}` improves the terminal scalar obstruction exactly when
 
 \[
 \ell>2(1-\Theta).
 \]
 
-Host position and Schur-head exponent cannot change that sign after the horizon and leverage bills are paid.
+FD-067--FD-068 expose a different multiplicative recurrence. For q-subcovariant head schedules, very low normalized nonsquarefree occupation cannot dominate global logarithmic scale, but a sparse adaptive spike sequence can still evade a density statement.
 
-FD-067--FD-068 expose a different multiplicative recurrence. For a nonsquarefree `q` and q-subcovariant head schedule,
+FD-069 supplies the missing pointwise source-to-numerator map. At an arbitrary later horizon `T`, four-adic reciprocal sampling finds a nonsquarefree row within source displacement `O(X^2/T)`. Hence a source spike of height `A_X` forces a numerator of order `A_X^2` once `T` reaches order `X^2/A_X`, and the witness persists at every sufficiently later admissible horizon. This closes host-selection as the missing quantifier. What remains is the same-horizon denominator: pointwise numerator capture is not yet normalized occupation.
 
-\[
-\nu_H\ge w(q)\frac{E_{\lfloor H/q\rfloor}}{E_H}.
-\]
+Möbius cancellation has a different family geometry. MC-238 identifies residue-spreading blindness as the annihilator of the small-prime-generated subgroup. MC-239 removes prime-square lift defects and one-coordinate blindness. MC-240 then rules out every nonprincipal blind character supported on at most six shell primes. In the quadratic sector the Legendre matrix has spark at least seven.
 
-The schedule closes to one multiplicative cocycle, so logarithmic integration telescopes across **all horizons**. Polynomial heads therefore have a positive global logarithmic geometric-mean occupation bound; low occupation cannot be typical even through cross-ray hopping. This still does not cross the pointwise FD-066 gate because an adaptive zero-frontier spike sequence may live in a logarithmically negligible exceptional set. Pointwise control, fixed-ray recurrence, and global logarithmic density are different quantifiers.
+Thus the Möbius algebraic frontier is now **high-support** common-quotient compatibility, not merely cross-prime compatibility. A large minimum support does not imply a trivial annihilator, and even trivial annihilator would leave the quantitative fixed-power Fourier/signed-amplitude requirement.
 
-Möbius cancellation has a different family geometry. MC-232--MC-237 show that both signs are abundant and the exact smooth CRT modulus lies inside a strong signed variance theorem, yet the available relative gain remains subpower where the first-shell target needs a fixed negative power.
+The cross-line lesson is stronger than “abundance is not cancellation.” A favorable theorem must survive the **exact downstream normalization and quantifier geometry of its family**. Farey has moved from selected-host recurrence to arbitrary-horizon numerator capture but still pays denominator dilution. Möbius has moved from local generation to exclusion of all low-support blind relations but still admits high-dimensional global blindness.
 
-MC-238 identifies the aggregate residue-spreading blind sector as the annihilator of the small-prime-generated subgroup. MC-239 then removes two apparent algebraic difficulties for the shell-square family: the entire prime-square congruence kernel is generated, and every individual shell-prime factor is generated asymptotically. Any remaining blind character is therefore a **cross-prime common-quotient relation**, with nonprincipal components at at least two shell primes. Character-order primes must divide at least two values `r-1`; no odd order prime above `y/2` can survive. The quadratic Legendre sector is the first ubiquitous shared quotient.
+Therefore source coherence length, exceptional-set size, reciprocal sampling mesh, denominator growth, horizon cost, leverage, signed amplitude, variance resolution, local generation, blind-character support size, global product generation, and Fourier decay are distinct currencies.
 
-The cross-line lesson is stronger than “abundance is not cancellation.” A favorable theorem must survive the **exact downstream normalization, its quantifiers, and the family support/character geometry**. Farey multiplicity can be irrelevant pointwise even when global recurrence is strong; Möbius local generation can be complete while global product generation still fails through common quotients.
-
-Therefore source coherence length, exceptional-set size, horizon cost, leverage, logarithmic recurrence, signed amplitude, variance/transference resolution, local generation, global common-quotient compatibility, and Fourier decay are distinct currencies.
-
-**Boundary.** FD-068 is an all-horizon logarithmic statement for q-subcovariant schedules, not a pointwise zero-free theorem. MC-239 is an algebraic classification of the blind sector, not a signed progression estimate or a Fourier-decay theorem. The two source families remain mathematically distinct.
+**Boundary.** FD-069 is a pointwise numerator theorem, not a normalized zero-free result. MC-240 is an algebraic support theorem, not a signed progression or Fourier-decay theorem. The two source families remain mathematically distinct.

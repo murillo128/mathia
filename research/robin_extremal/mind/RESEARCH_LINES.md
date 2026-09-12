@@ -2,29 +2,46 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control source-invisible matched packets through genuinely pre-compression geometry
+## Control matched first-layer packets through selector-induced Chebyshev underdensity
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`.
 
-RE-049--RE-067 reduce bounded near-zero behavior to a small set of packet geometries and show that nonzero bounded first-layer charge is essentially a logarithmic fringe phenomenon. Almost every bounded first-layer-only interruption is therefore forced into the charge-silent matched `0 -> 0` branch.
+RE-049--RE-067 reduce bounded near-zero behavior to a small set of packet geometries and force almost every bounded first-layer-only interruption into the charge-silent matched `0 -> 0` branch. RE-068 makes every additive endpoint prime statistic exactly blind on that branch, while RE-069 shows that direct prime-to-event timing transport is macroscopically large before readout but absolutely summable in the exact Robin workload.
 
-RE-068 makes that branch source-blind for every additive endpoint prime statistic. The ordinary primes crossed by the two selectors and the physical first-layer event labels are exactly the same multiset, so prime count, Chebyshev mass, logarithmic Mertens weights, residue indicators, and any other additive decoration agree identically, without a packet-cardinality hypothesis.
-
-RE-069 tests the strongest obvious residual datum: the physical event attached to `p` occurs at the delayed coordinate `eta_p>p`. The timing staircase difference is a sum of positive pulses and carries asymptotically half of a complete matched packet's raw logarithmic transport. But the exact Robin derivative kernel collapses each pulse to
+RE-070 identifies a pre-compression geometric datum that survives both nulls. Along a tied common-amplitude selector curve, the adaptive selector expands logarithmic state length:
 
 \[
-\kappa_p
+Z_c'(Y)-1
 =
-\frac1p-\log(1+1/p)
-<\frac1{2p^2}.
+b(1-b)a_c(Y)\log Y
+\left(1+O_J\!\left(\frac1{\log Y}+a_c(Y)\log Y\right)\right)>0
 \]
 
-Consequently the entire future first-layer timing contribution beyond scale `X` is `O(1/X)`, even if arbitrarily many first-layer events are present. Large raw transport therefore does not survive the exact destination readout.
+on sufficiently late false-RH blocks. Yet RE-068 keeps the exact prime mass fixed:
 
-The matched pure first-layer branch has now exhausted two natural source-local channels: endpoint additive prime data are exactly conserved, and direct linear prime/event timing transport is absolutely summable in the Robin workload. A successful continuation must use information **before** those compressions: selector placement relative to gaps, nonlinear relations among event delays, ordering/history across packets, higher-layer interaction, or another statistic whose kernel does not reduce the delay to a quadratic reciprocal remainder.
+\[
+\vartheta(Z_+)-\vartheta(Z_-)=Y_+-Y_-.
+\]
 
-## Treat local fidelity, destination sensitivity, deep-layer capacity, and packet history as separate currencies
+Therefore every matched first-layer packet forces a positive Chebyshev deficit increment
 
-Prime-source fidelity does not control an adaptive fan by itself. RE-069 is a particularly sharp warning: a variable may be macroscopically large in a natural raw metric and still be asymptotically invisible after the exact target kernel is applied.
+\[
+[Z-\vartheta(Z)]_{Z_-}^{Z_+}
+=(Z_+-Z_-)-(Y_+-Y_-)>0,
+\]
 
-This is still not a contradiction. Higher layers remain outside the first-layer timing bound, and event locations can influence support chambers and selector geometry before the final linear workload integration. Future progress must therefore state where in the pipeline a proposed statistic is evaluated and show that it survives the actual Robin readout rather than only a pre-readout transport norm.
+with asymptotic size
+
+\[
+b(1-b)\int_{Y_-}^{Y_+}a_c(t)\log t\,dt.
+\]
+
+For a sublinear packet the forced relative underdensity is of order at least `Y^{-b} log Y`. This survives unbounded packet cardinality: the same prime multiset is spread across a slightly longer adaptively selected interval.
+
+The live first-layer theorem is now precise. One needs source-specific control of `vartheta` on these **adaptive selector intervals** at a scale finer than the forced deficit, or a cross-packet argument showing that the fan cannot repeatedly accumulate the required positive excursions of `Z-vartheta(Z)` while remaining in the matched first-layer regime. Ordinary `o(H)` short-interval prime asymptotics are not enough because the required relative deficit tends to zero.
+
+## Treat local source fidelity, selector geometry, destination compression, higher layers, and packet history as separate currencies
+
+The matched first-layer branch now exhibits three different behaviors. Endpoint additive prime data are conserved exactly; direct linear timing displacement is suppressed by the final Robin kernel; but the geometry of the selector interval itself converts that same conserved mass into a signed density defect **before** the final compression.
+
+Thus “the packet is source-blind” is too coarse. It is blind to additive labels and direct timing workload, but not to the geometric interval needed to host those labels under the tied tangent relation. Future claims must state where the statistic is measured in the pipeline and whether the relevant prime-distribution theorem applies to the adaptively selected intervals produced by the fan. Higher-layer switches and packet-history constraints remain separate escape/obstruction channels.

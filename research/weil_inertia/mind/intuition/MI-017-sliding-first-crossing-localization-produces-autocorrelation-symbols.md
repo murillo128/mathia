@@ -1,6 +1,6 @@
-# MI-017 — Sliding first-crossing localization is information-complete only at the exact-profile level
+# MI-017 — Sliding first-crossing localization is information-complete only beyond the firstness envelope and null-equation redundancy
 
-**Evidence level:** supported by the exact sliding-window identity WI-253 and the profile inversion/small-radius saturation theorem WI-254; no incompatibility with a compactly supported global first zero mode is proved.
+**Evidence level:** supported by the exact sliding-window identity WI-253, profile inversion/saturation theorem WI-254, and the universal first subleading cancellation WI-255; no incompatibility with a compactly supported global first zero mode is proved.
 
 At the first unrestricted localized Weil crossing `a_*`, translation freedom produces for a normalized zero mode `v` an aperture profile
 
@@ -8,30 +8,38 @@ At the first unrestricted localized Weil crossing `a_*`, translation freedom pro
 \mathcal F_v(r)
 =
 \frac1{2\pi}\int\Sigma_r(z)|\widehat v(z)|^2\,dz
-\ge r\lambda_r>0,
-\qquad 0<r<a_*.
+\ge r\lambda_r>0.
 \]
 
-WI-253 derives this as a continuum of source-dependent spectral averages against one nonnegative density. The parameter `r` is not merely redundant repetition: the kernel changes at every prime-power threshold.
+WI-253--WI-254 show that the **exact** profile is information-complete for the real autocorrelation. Prime-power shifts appear as exact slope jumps and the continuous archimedean part is recovered between thresholds by distributional differentiation. The obstruction is not aperture information loss; it is that firstness supplies only a pointwise lower envelope for this profile.
 
-WI-254 identifies the exact information carried by that parameter. After writing the profile as a `min`-transform of the source-weighted real autocorrelation, distributional second differentiation recovers the source measure. The one-sided slope jump at `r=(log n)/2` is
+At small aperture the envelope is saturated at leading order,
 
 \[
--2\frac{\Lambda(n)}{\sqrt n}C(\log n),
+\mathcal F_v(r)\sim r\log(1/r)
+\sim r\lambda_r,
 \]
 
-and between thresholds the second derivative recovers the continuous archimedean-weighted autocorrelation. Apart from one removable zero of the continuous weight, the exact profile determines the whole real autocorrelation.
+so there is no fixed multiplicative reserve.
 
-The obstruction is therefore **not aperture information loss**. It is the replacement of the exact profile by the pointwise firstness inequality. A lower envelope cannot be differentiated into jump signs. Moreover the universal small-radius singularity already saturates firstness at leading order:
+WI-255 shows that the first additive correction is also unusable for a deeper reason. The exact expansion is
 
 \[
-\mathcal F_v(r)\sim r\log(1/r),
-\qquad
-r\lambda_r\sim r\log(1/r).
+\mathcal F_v(r)
+=
+r\log(1/r)
++r\bigl(\psi(2)-\log(4\pi)\bigr)
++o(r).
 \]
 
-There is no fixed multiplicative coercivity reserve to harvest as `r->0`.
+During the derivation the coefficient initially contains the prime autocorrelations and regular archimedean response. But on an actual zero mode the scalar identity `Q_W(v)=0` cancels all of those source-sensitive terms exactly. After comparison with the small-window ground state, firstness yields only the already-known variational inequality
 
-The live route must supply additional control on the exact profile: a source-sensitive subleading asymptotic, a medium-radius relation among curvature and prime jumps, or an identity from the zero-mode equation that couples several radii. More apertures without stronger profile control do not add a new inequality.
+\[
+\mu_1\le1-\log2.
+\]
 
-**Boundary.** Exact-profile invertibility does not mean firstness determines the profile. Positivity cannot be differentiated, and small-radius saturation is driven by the universal logarithmic core. No pointwise symbol sign, autocorrelation sign, global first-mode exclusion, or RH consequence follows.
+This reveals a second information-loss step: **a source-sensitive coefficient can be present in an exact representation yet become algebraically redundant once the defining null equation is imposed**. Reading more precision from the same scalar equation does not necessarily expose new arithmetic content.
+
+The live route must therefore escape both losses. It needs a higher-order invariant not fixed by `Q_W(v)=0`, an operator/eigen-equation identity independent of its scalar quadratic-form value, or medium-radius relations that compare several prime thresholds before they collapse into one integrated null condition.
+
+**Boundary.** WI-255 closes only the complete `O(r)` refinement. It does not show that all higher-order terms are universal, that the exact profile is source-independent, or that medium-radius threshold relations are redundant. Additional regularity may be required before a higher-order expansion is even defined.

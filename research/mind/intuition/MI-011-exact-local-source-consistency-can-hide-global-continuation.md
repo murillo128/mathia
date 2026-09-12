@@ -1,33 +1,35 @@
-# MI-011 — Exact local source consistency can hide a globally expensive or target-invisible continuation
+# MI-011 — Exact local source consistency can hide global continuation or preserve a pre-compression geometric defect
 
-**Evidence level:** supported by the stable-tail/finite-Schur theorems NB-066--NB-067 and the first-layer conservation/timing theorems RE-068--RE-069; no operator or contradiction is transferred between the lines.
+**Evidence level:** supported by the stable-tail/finite-Schur/boundary-chain results NB-066--NB-068 and the matched first-layer conservation/timing/selector results RE-068--RE-070; no operator or contradiction is transferred between the lines.
 
-Nyman--Beurling and Robin Extremal give two different examples of the same information boundary: **perfect local source consistency does not imply that the residual global variable is controlled or visible in the destination coordinates**.
+Nyman--Beurling and Robin Extremal now give two sharper examples of the same staged information boundary: **perfect local source consistency can discard the variable that controls global continuation, while a readout that suppresses one residual coordinate may leave a different pre-compression geometric coordinate intact**.
 
-In Nyman--Beurling, NB-066 characterizes a hypothetical stable-tail vector as globally orthogonal to the natural space while its trace is exactly natural on every finite Paley--Wiener window. The least compatible future norm nevertheless diverges. NB-067 adds that this infinite continuation cost is not inaccessible: if `A_R` is the visible prefix Gram and `S_(R,N)` the finite future Schur complement, then
+In Nyman--Beurling, NB-066--NB-067 characterize a hypothetical stable-tail mode as globally orthogonal to the natural space while every finite trace is exactly natural. Its least compatible future norm diverges, and that divergence is detected by finite normalized Schur complements.
 
-\[
-\lambda_{\max}(A_R^{-1/2}S_{R,N}A_R^{-1/2})
-\downarrow1+\Lambda_R^2.
-\]
-
-So a bounded finite generalized-eigenvalue subsequence already excludes every stable tail. Exact local representability can coexist with catastrophic global continuation, but the relevant continuation norm has rigorous finite source-only upper certificates.
-
-In Robin Extremal, RE-068 gives exact prime-multiset consistency for matched first-layer packets: every additive endpoint prime statistic agrees. RE-069 then follows the residual positional variable. The delayed event coordinates carry macroscopic raw transport, yet the exact Robin kernel converts each prime delay into
+NB-068 proves that even the canonical one-cell memory geometry need not see the obstruction. Two matched causal sources can have identical finite visible/defect flags, finite bandwidth, and
 
 \[
-\frac1p-\log(1+1/p)=O(p^{-2}),
+\Gamma_R=0
+\qquad\text{for every }R,
 \]
 
-so all future first-layer timing contributes only `O(1/X)` after scale `X`. Here the residual variable exists and can be large, but the requested linear readout is asymptotically blind to it.
+yet one has no stable tail while the other has a one-dimensional stable boundary mode. The latter has
 
-The cross-line relation is not that these mechanisms are the same. NB is a Hilbert-space extension-cost problem; RE is a source-set identity followed by kernel compression. The reusable separation has four stages:
+\[
+\Lambda_R^2=T_{<R}^2/T_{\ge R}^2\to\infty,
+\]
 
-1. exact local/source consistency;
-2. identification of what remains undetermined by that consistency;
-3. global cost or stability of the residual variable;
-4. sensitivity of the final target/readout to that variable.
+and every finite Schur certificate diverges accordingly. The global obstruction can therefore be assembled entirely through directions that each local quotient discards.
 
-NB-067 attacks stage 3 with finite certificates. RE-069 shows stage 4 can fail even when stage 2 carries macroscopic information. Improving the already-matched local statistic attacks the wrong resource in both cases.
+In Robin Extremal, RE-068 gives exact prime-multiset consistency for matched first-layer packets, and RE-069 shows that the obvious residual positional variable is strongly compressed by the exact Robin kernel. RE-070 then finds a different surviving coordinate: the tied selector map expands interval length while the conserved prime multiset keeps the exact Chebyshev mass fixed. The same locally matched packet must therefore occupy an adaptively selected interval with a positive `Z-vartheta(Z)` increment.
 
-**Boundary.** No Nyman extension estimate transfers to Robin packets, and no Robin timing kernel transfers to Nyman traces. The common statement is only the staged information separation above. Neither line by itself proves or disproves RH.
+The two mechanisms are not the same. NB is a cumulative compatibility-at-infinity problem; RE is a conserved-mass geometry problem before a destination compression. But they impose the same staged discipline:
+
+1. identify what the local/source matching actually fixes;
+2. identify what the local quotient or final kernel removes;
+3. determine whether a cumulative or geometric variable survives outside that removal;
+4. test that surviving variable in the exact global/target geometry.
+
+A local invariant can be identically zero while a global continuation defect survives; a direct residual can be summably invisible while a selector-density defect remains. Improving the already-null local statistic attacks the wrong resource in both cases.
+
+**Boundary.** No Nyman Schur estimate transfers to Robin selector intervals, and no Chebyshev underdensity theorem transfers to Nyman continuations. The common statement is only the staged separation of locally matched data, discarded coordinates, and surviving global geometry. Neither line by itself proves or disproves RH.

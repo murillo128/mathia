@@ -8,13 +8,11 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Prove a bounded finite future Gram certificate on an unbounded window sequence
+## Prove a bounded finite future Gram certificate or exclude the boundary-chain mechanism arithmetically
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
-NB-049--NB-066 reduce persistence of the collective late quotient to one fixed stable-tail mode that is exactly natural on every finite window but globally orthogonal to the natural Nyman closure. Any such mode forces the worst exact future-extension cost `Lambda_R` to diverge; a bounded subsequence of `Lambda_R` kills the entire stable-tail space.
-
-NB-067 removes the infinite-dimensional oracle from that criterion. The zero-trace natural space at window `R` is exactly the closed future innovation span. For a finite future horizon `N>=R`, let `A_R` be the visible prefix Gram matrix and `S_(R,N)` the Schur complement obtained after optimally eliminating innovations `D_R,...,D_N`. Then
+NB-049--NB-067 reduce persistence of the collective late quotient to one fixed stable-tail mode whose finite traces are all natural but whose exact global continuation cost diverges. For a finite future horizon `N>=R`, the normalized Schur certificate
 
 \[
 \Xi_{R,N}
@@ -24,24 +22,29 @@ NB-067 removes the infinite-dimensional oracle from that criterion. The zero-tra
 1+\Lambda_R^2
 \]
 
-as `N->infinity`. Every finite horizon therefore gives the rigorous source-only upper bound
+bounds the true continuation cost from above. A uniform finite bound on any unbounded window sequence kills the entire stable-tail space; a nonzero stable tail forces divergence for every horizon schedule.
+
+NB-068 closes the tempting local-memory shortcut. It constructs two matched causal sources with identical visible spaces, identical defect spaces, identical newest innovations, identical one-cell defect sectors, **and identically zero canonical one-cell memory maps `Gamma_R` at every step**, yet one source has no stable tail and the other has a one-dimensional stable tail.
+
+In the boundary-chain control,
 
 \[
-\Lambda_R^2\le\Xi_{R,N}-1.
+\Lambda_R^2
+=
+\frac{T_{<R}^2}{T_{\ge R}^2}
+\to\infty,
+\qquad
+\Xi_{R,N}
+=
+1+\frac{T_{<R}^2}{T_{R:N+1}^2},
 \]
 
-Consequently, if there are `R_k->infinity`, finite horizons `N_k>=R_k`, and one constant `C` with
+so every finite Schur certificate detects the hidden global mode even though every one-cell quotient map is zero. Finite causal bandwidth, small local transmission, square-summable local leakage, and even complete absence of the canonical one-cell memory channel are therefore insufficient.
 
-\[
-S_{R_k,N_k}\preceq C^2 A_{R_k},
-\]
+The live theorem is now genuinely global. Either prove a bounded source-defined generalized-eigenvalue subsequence for the actual Nyman innovations, or identify an arithmetic/coercive property that rules out the boundary-chain mechanism while remaining visible in those finite Schur complements. Further refinement of `Gamma_R` alone attacks a closed resource.
 
-then the stable-tail space is zero. Conversely a nonzero stable tail forces `Xi_(R,N(R))->infinity` for **every** finite horizon schedule.
+## Treat local naturality, one-cell memory, global continuation cost, and finite certification separately
 
-The live theorem is now a concrete finite block-Gram domination problem rather than a direct infinite-dimensional right-inverse estimate. Analytically, prove such a bounded generalized-eigenvalue subsequence from the explicit causal innovations. Computationally, a certified finite matrix bound would already be globally decisive; floating-point evidence without rigorous enclosure is not enough.
+Exact finite-window interpolation can coexist with catastrophic global continuation cost. NB-068 makes the separation strict: all canonical one-cell memory data may vanish while an infinite boundary mode survives. The obstruction is cumulative compatibility at infinity, not hidden one-step transmission.
 
-## Treat local naturality, one-cell transmission, global extension cost, and finite certification separately
-
-Exact finite-window interpolation can coexist with catastrophic global continuation cost. NB-067 adds that this global cost is nevertheless the monotone limit of finite source-only Schur complements. A finite certificate is strong because it bounds the true infinite continuation problem from above, not because finite rank or a small ordinary Gram eigenvalue is intrinsically meaningful.
-
-Future work should target the generalized ratio relative to the visible Gram `A_R`. Global Gram conditioning alone, local rank, or cheap near-kernel directions do not control the extension norm that NB-066 identifies as decisive.
+NB-067 remains the correct finite access point because its Schur complements see precisely the continuation energy that local quotient geometry discards. Future work should target the generalized ratio relative to the visible Gram `A_R`, or derive an actual-source estimate excluding `l^2` boundary-chain modes. Global Gram conditioning, local rank, finite bandwidth, or vanishing `Gamma_R` do not control the decisive extension norm.

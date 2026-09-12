@@ -14,28 +14,34 @@ WI-231--WI-237 show that finite negative inertia detects off-line packets exactl
 
 WI-238--WI-252 isolate the finite-radius first-odd-crossing witness. Layer-cake localization produces a signed radial von-Mangoldt flux, while prime reflection violates the first Beurling--Deny positivity criterion. The live odd-sector theorem remains source-specific: control that signed flux, derive a phase/nodal restriction from the eigen-equation plus arithmetic source, or find another order structure not contradicted by prime reflections.
 
-## Use the unrestricted first crossing only through information beyond the pointwise firstness envelope
+## Use the unrestricted first crossing only through information beyond the null-equation-determined small-aperture terms
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253 converts the first unrestricted localized crossing into a continuum of source-dependent sliding-window averages. WI-254 shows that the **exact** aperture profile is much richer than a single inequality: it is a `min`-transform whose distributional second derivative recovers the source-weighted real autocorrelation. Prime-power shifts appear as exact slope jumps and the continuous archimedean term recovers the remaining autocorrelation away from one removable zero of its weight.
+WI-253--WI-254 show that the exact sliding-aperture profile is information-rich: distributional derivatives recover source-weighted real autocorrelation and prime-power slope jumps. Firstness, however, gives only the lower envelope `F_v(r)>=r lambda_r`, which cannot be differentiated, and the leading small-radius term is universally saturated.
 
-But firstness supplies only the lower bound `F_v(r)>=r lambda_r`, not the exact profile, and that inequality cannot be differentiated to read the jump signs. Worse, the small-radius endpoint is saturated:
+WI-255 now closes the first obvious subleading escape. For a normalized first global zero mode,
 
 \[
-\mathcal F_v(r)\sim r\log(1/r),
-\qquad
-r\lambda_r\sim r\log(1/r),
-\qquad
-\frac{\mathcal F_v(r)}{r\lambda_r}\to1.
+\mathcal F_v(r)
+=
+r\log(1/r)
++r\bigl(\psi(2)-\log(4\pi)\bigr)
++o(r).
 \]
 
-So neither derivative-sign inference nor a fixed relative small-radius reserve can close the first crossing. The live target is additional source-sensitive control of the **exact profile**: a subleading small-radius term, a medium-radius curvature/slope relation, or a zero-mode equation constraint that couples several prime-power thresholds.
+Before the zero-mode equation is imposed, the `O(r)` coefficient contains the prime autocorrelations and the regular archimedean remainder. Using `Q_W(v)=0` cancels them **exactly**, leaving a coefficient independent of the mode, the first-crossing aperture, and the arithmetic source. Comparing with Suzuki's ground-state expansion reduces firstness at this order to
 
-The accepted local clue remains the right handoff, but its decisive test is now narrower: exploit information beyond the pointwise firstness envelope, not merely more radii.
+\[
+\mu_1\le1-\log2,
+\]
 
-## Treat exact-profile information, firstness envelopes, radial flux, and cone positivity as separate gates
+which is already the elementary constant-trial-function variational bound. Thus the entire first subleading small-aperture comparison contains no new arithmetic rigidity.
 
-The aperture representation itself is information-complete for the real autocorrelation if the exact profile were known. The loss occurs when exact profile information is replaced by a pointwise lower envelope. This is distinct from the odd route's signed radial source problem and from generic semigroup positivity.
+The live unrestricted route must therefore use information not determined by the single scalar null equation: a genuinely higher-order term if the mode has sufficient regularity, a medium-radius relation across several prime thresholds, or an additional operator/eigen-equation identity beyond the quadratic-form value `Q_W(v)=0`. “Compute the first correction” is now closed.
 
-A future contradiction must therefore use genuinely zeta-specific information that controls the profile more tightly than universal first-crossing asymptotics do. Failure of odd cone positivity, profile invertibility, or positivity of every sliding average is not by itself an RH consequence.
+## Treat exact-profile information, firstness envelopes, null-equation redundancy, radial flux, and cone positivity as separate gates
+
+The aperture representation is information-complete for the real autocorrelation if the exact profile is known. The loss occurs first when exact profile information is replaced by a pointwise lower envelope, and again when the first asymptotic correction is collapsed by the same null equation that defines the mode.
+
+This is distinct from the odd route's signed radial source problem and from generic semigroup positivity. A future contradiction must use a source-specific relation that survives these quotient/cancellation steps rather than repackage information already contained in `Q_W(v)=0`.

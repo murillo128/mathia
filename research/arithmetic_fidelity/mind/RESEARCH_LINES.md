@@ -35,18 +35,38 @@ r(\tau)=\inf_\sigma\max_j|\tau_j-\sigma|
 
 enters the coefficient-orbit estimate.
 
-AF-290 closes the first concrete target-level gap. For a finite Dirichlet polynomial `P_b` and a compact Jordan boundary `Gamma`, the exact coefficient-space distance to a boundary-zero collision is
+AF-290 identifies the exact finite zero-count gate. For a finite Dirichlet polynomial `P_b` and a compact Jordan boundary `Gamma`,
 
 \[
 d_\Gamma(b)
 =\min_{z\in\Gamma}
-\frac{|P_b(z)|}{(\sum_{n\le N}n^{-2\operatorname{Re}z})^{1/2}}.
+\frac{|P_b(z)|}{(\sum_{n\le N}n^{-2\operatorname{Re}z})^{1/2}}
 \]
 
-The zero count inside `Gamma` is protected for every coefficient perturbation smaller than this radius, and this margin is covariant under the common-clock vertical-translation gauge. Thus a decoder bound of size `eta` transfers to the zero-count target only after the independent gate `eta<d_Gamma(b)/||b||_2` is proved. There is no uniform coefficient-to-zero-count modulus on classes whose normalized boundary margin can approach zero.
+is the Euclidean distance to the boundary-zero discriminant. The zero count is protected only below this target-specific radius, independently of how well conditioned the acquisition map is.
 
-The live question is now target-specific rather than another acquisition refinement: identify natural RH-relevant finite carriers or approximants whose normalized distance to the appropriate zero/discriminant locus has a nontrivial lower bound, or prove that this margin necessarily collapses with breadth. Fixed-height observables that retain absolute imaginary origin must be treated separately because they do not descend through the common-clock quotient.
+AF-291 now resolves the first natural increasing-breadth test negatively. For the raw Dirichlet eta truncations on any fixed zero-free compact contour in `Re(s)>0`, the analytic boundary modulus stays uniformly separated from zero while the normalized coefficient-space margin
+
+\[
+\delta_{\Gamma,N}
+=\frac{d_{\Gamma,N}}{\|b^{(N)}\|_2}
+\]
+
+still collapses sharply. If `alpha=min_(z in Gamma) Re z`, then
+
+\[
+\delta_{\Gamma,N}\asymp
+\begin{cases}
+N^{-1/2}, & \alpha>1/2,\\
+(N\log N)^{-1/2}, & \alpha=1/2,\\
+N^{\alpha-1}, & 0<\alpha<1/2.
+\end{cases}
+\]
+
+Thus analytic convergence to the correct zero count and robustness to relative `ell^2` coefficient error are different resources. A decoder using the AF-290 gate must eventually keep its relative error strictly below this shrinking margin; a breadth-independent relative error cannot suffice for raw eta truncations.
+
+The live target is no longer to ask abstractly whether a natural RH-relevant carrier can lose target margin: one already does. The useful alternatives are to find a representation/preconditioner/quotient whose **target-relative** discriminant geometry has a genuinely better breadth law, or to prove that a broader class of RH-relevant carriers inherits an unavoidable collapse. Fixed-height observables that retain absolute imaginary origin remain separate because they do not descend through the common-clock quotient.
 
 ## Treat the information bills separately
 
-Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, and target distance to ill-posedness are distinct resources. Exact or stable upstream recovery is useful only if the final observable is stable in its own quotient geometry. A target-invariant nuisance should be removed before calibration; a target discriminant margin cannot be inferred from source conditioning.
+Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, and the **breadth law of that target distance** are distinct resources. Exact or stable upstream recovery is useful only if the final observable is stable in its own quotient geometry. A target-invariant nuisance should be removed before calibration; a target discriminant margin cannot be inferred from source conditioning or from uniform analytic convergence alone.
