@@ -106,7 +106,7 @@ Now enlarge each causal cell exactly as in the `NB-068` control:
 \tag{9}
 \]
 
-with each `Z_j` infinite-dimensional, and let `J_R` project onto the first `R-1` cells. Then the branching source (2) and the flat source
+with each `Z_j` infinite-dimensional, and let `J_R` project onto the first `R-1` cells. Extend `V_m` from the scalar spine to any isometry of `H` (for example by taking its orthogonal direct sum with the identity on `Z:=oplus_j Z_j`); only its action on the scalar source is used below. Then the branching source (2) and the flat source
 
 \[
 D_j^{(0)}:=e_j
@@ -194,7 +194,7 @@ In particular the global Gram conditioning can be made arbitrarily close to one 
 \tag{17}
 \]
 
-so fixed-size correlations recur along multiplicative edges `j -> k asymp mj` at arbitrarily large additive separation. This is exactly the nonlocal mechanism that `NB-070` proved unavoidable.
+so fixed-size correlations recur along multiplicative edges `j -> k`, with `k\asymp mj`, at arbitrarily large additive separation. This is exactly the nonlocal mechanism that `NB-070` proved unavoidable.
 
 The global continuation pathology is equally explicit. Taking the wandering vector `w=e_1` and the unit defect `t=t_(e_1)`, for the geometric windows
 
@@ -326,7 +326,11 @@ C_R=(J_{R+1}-J_R)D_R^{(\rho)}=e_R.
 
 Any old innovation can reach cell `R` only through the scalar coordinate `e_R`; after removing the new innovation direction there is therefore no old-memory component. This gives `Gamma_R=0`, while the untouched `Z_R` sector is exactly `X_R^circ=N_R`.
 
-For the flat source, `A_0=S`; its full orthogonal complement is the direct sum of the `Z_j`, and those are exhausted by the increasing compact-time defect spaces `K_R`, so `T_infinity(A_0)=0`.
+For the flat source, `A_0=S`; its full orthogonal complement is the direct sum of the `Z_j`, and those are exhausted by the increasing compact-time defect spaces `K_R`, so
+
+\[
+\mathcal T_\infty(\mathcal A_0)=\{0\}.
+\]
 
 For the branching source,
 
