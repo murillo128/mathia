@@ -1,29 +1,31 @@
-# MI-005 — Stable tails are the uncancelled cross-cut area of interval-conditioned correlations
+# MI-005 — Stable tails are the uncancelled cross-cut area; integer branching preserves that prediction information but not its locality
 
-**Evidence level:** supported by NB-063--NB-076. The stationary prediction/feedthrough criterion is exact for scalar branch filters, and NB-074--NB-076 give exact finite-dimensional continuation identities for the nonstationary causal geometry; no arithmetic estimate closing those criteria is proved.
+**Evidence level:** supported by NB-063--NB-077. The stationary prediction/feedthrough criterion is exact for scalar branch filters, and NB-074--NB-077 give exact finite-dimensional continuation and branching identities for the nonstationary causal geometry; no arithmetic estimate closing the stable-tail criterion is proved.
 
-NB-066--NB-073 reduce a hypothetical persistent Nyman target to a global continuation problem and show that local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning do not decide it. NB-074 gives the nonstationary charge `J_(R,N)`: bounded charge along an unbounded sequence rules out a stable tail, while any nonzero stable tail forces the charge to diverge for every finite horizon schedule.
+NB-066--NB-073 reduce a hypothetical persistent Nyman target to a global continuation problem. NB-074 gives the nonstationary charge `J_(R,N)`: bounded charge along an unbounded sequence rules out a stable tail, while any nonzero stable tail forces divergence for every finite horizon schedule.
 
-NB-075 resolves that determinant into raw continuation volume `L_R` minus nonnegative future-conditioned multiple-correlation charges. NB-076 resolves the multiple correlations one step further. For `j<n`, residualize `D_j` and `D_n` against the intervening span `D_(j+1),...,D_(n-1)`, let `rho_(j,n)` be their endpoint correlation, and put
+NB-075 resolves that determinant into raw continuation volume `L_R` minus nonnegative future-conditioned multiple-correlation charges. NB-076 resolves those charges into interval endpoint partial correlations. With
 
-`kappa_(j,n)=-log(1-|rho_(j,n)|^2)>=0`.
+`kappa_(j,n)=-log(1-|rho_(j,n)|^2)>=0`,
 
-Then the exact chain rule is
-
-`-log(1-beta_(R,n)) = sum_(j<R) kappa_(j,n)`,
-
-so
+one has
 
 `J_(R,N)=L_R-sum_(j<R<=n<=N) kappa_(j,n)`.
 
-Each lattice atom has the contiguous-Gram form
+Each `kappa` is a contiguous-Gram mixed log-determinant curvature, so future cancellation is exactly a nonnegative cross-cut area rather than an opaque high-dimensional regression.
 
-`kappa_(j,n)=log(Delta_(j,n-1) Delta_(j+1,n) / (Delta_(j,n) Delta_(j+1,n-1)))`.
+NB-077 adds the exact branching transport law at the level that matters after Schur conditioning. For any finite rectangle across the cut,
 
-It is therefore a nonnegative mixed log-determinant curvature for one contiguous interval. The entire future cancellation is the area of those atoms crossing the cut `R`; no atom is double-counted.
+`C_(a|R|b)=sum kappa_(j,n)=log(Delta_(a,R-1) Delta_(R,b)/Delta_(a,b))`.
 
-This produces a genuinely smaller source target. Define the width-`H` cross-cut band by summing `kappa_(j,j+h)` over `1<=h<=H` and intervals that cross `R`. If along unbounded `R_k` some finite `H_k` makes this band at least `L_(R_k)-C`, then the stable tail is zero. The stronger condition using the sum of `|rho_(j,j+h)|^2` also suffices.
+The integer-dilation identity makes each coarse past/future block a separate linear compression of its fine descendants. Log-determinant data processing therefore gives
 
-The durable interpretation is that the obstruction is not “future prediction” in the abstract. It is a **deficit of interval-conditioned correlation area** relative to the raw continuation volume. An arithmetic proof may attack a finite/mesoscopic family of contiguous Gram blocks near the cut rather than one growing inverse Gram matrix.
+`C_(a|R|b) <= C_(qa|qR|q(b+1)-1)`.
 
-**Boundary.** A nonzero stable tail forces the infinite remainder `L_R-sum_(j<R<=n)kappa_(j,n)` to diverge, but the converse is not asserted for a general growing-dimensional family. Raw pairwise correlations do not replace the conditioned `rho_(j,n)`; even raw-orthogonal endpoints can become strongly linked after the intervening block is removed. NB-076 supplies an exact localization of the cancellation budget, not the missing arithmetic lower bound.
+In particular `C_(R,N)<=C_(qR,q(N+1)-1)`. The raw continuation volume is also monotone, `L_R<=L_(qR)`. Thus exact branching cannot erase cross-cut predictive information through signed phase cancellation: every coarse determinant charge survives with at least the same total size in the descendant interval-conditioned lattice.
+
+The decisive limitation is locality. The descendant rectangle has width proportional to `q`; NB-077 does not force the preserved charge into bounded or even sublinear additive distance from the new cut. Since both raw volume and total cross-cut charge can grow, their difference `J` need not be monotone. Branching therefore changes the missing theorem from “show prediction information survives” to **show enough of the surviving information remains mesoscopically near the cut** to recover `L_R-O(1)`.
+
+A source-facing sufficient criterion remains the finite-band one: along unbounded `R_k`, find widths `H_k` for which the `kappa` mass of intervals of length at most `H_k` crossing the cut captures all but `O(1)` of `L_(R_k)`. NB-077 now says this target is compatible with, and should exploit, a multiscale monotone reservoir of cross-cut information generated by exact integer branching.
+
+**Boundary.** Branching monotonicity of `L` and `C` does not imply monotonicity or boundedness of `J`. NB-077 transports total conditioned information but does not localize it to a fixed band or compare its growth sharply with raw continuation volume. No RH consequence follows until that localization/growth gap is closed.

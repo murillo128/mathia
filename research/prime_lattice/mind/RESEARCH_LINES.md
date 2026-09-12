@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Quantify the actual simple ground branch beyond the sharp ambient inverse-log modulus
+## Quantify the actual simple ground branch with state-specific tail regularity, not one-stroke `L^2` localization alone
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
@@ -10,14 +10,12 @@ PL-280--PL-282 give the one-sided aperture ledger, global exhaustion, and a term
 
 PL-285--PL-286 identify the sharp worst-case transport obstruction on the full canonical logarithmic form ball. Active arithmetic channels are compressed translations, and even the complete `2,3,4` source comb retains the `Theta(1/log(1/|a-b|))` modulus by phase locking.
 
-PL-287 now separates that ambient obstruction from the actual isolated state. Every **compact** family in `H^log` has uniform translation-form modulus `o(1/log(1/|delta|))`; the sharp lower witnesses necessarily move Fourier mass to frequency `~1/delta` and therefore escape compact sets. At the conditionally certified simple ground state near `a=0.8`, common-domain form continuity yields an `H^log`-continuous normalized ground branch on a sufficiently small source-static neighborhood. Its image is compact, so
+PL-287 separates that ambient obstruction from the actual isolated state. Every compact family in `H^log` has uniform translation-form modulus `o(1/log(1/|delta|))`; conditional endpoint isolation makes the local ground branch compact in that topology. The improvement is real but qualitative.
 
-`|lambda_1(a)-lambda_1(b)| = o(1/log(1/|a-b|))`
+PL-288 tests whether the existing one-stroke finite reduction already supplies the missing quantitative tail control. It does not. The certified lower form has an order-one coercive discarded block and head-tail coupling below `10^-100`, while the exact ground eigenvalue is at most `2.27e-17`; this yields the strong exact-state bound `||tail||_2<6.65e-9`. But bounded shift expectations then carry `O(10^-8)` tail uncertainty—about nine orders above the certified positivity margin—and fixed-domain translations are not norm-continuous, so `L^2` smallness gains no factor of the aperture displacement. A two-dimensional model shows the `sqrt(lambda_1)` tail scale is sharp from these inputs even for an isolated exact eigenvector.
 
-as `a,b->0.8` within that neighborhood.
+The live theorem is therefore narrower: obtain **state-specific weighted Fourier-tail regularity with explicit constants**, a source/eigen-equation orthogonality that suppresses head-tail shift cross terms, or a direct finite certificate on a nontrivial aperture interval. Stronger bookkeeping of the one-stroke `L^2` decomposition cannot by itself transport the tiny endpoint margin.
 
-This is a real state-specific improvement, but only qualitative. It gives no computable radius over which the tiny positive endpoint margin survives and no bridge to the next prime-power activation. The live theorem is therefore **quantitative uniform logarithmic-tail control for the actual ground branch**, or another eigen-equation/source identity that turns branch compactness into an explicit transport modulus strong enough to preserve positivity.
+## Separate ambient topology, branch compactness, `L^2` tail localization, quantitative frequency regularity and global coercivity
 
-## Separate ambient topology, branch compactness, quantitative tail control and global coercivity
-
-A simple isolated ground state already gives local branch tracking, and PL-287 proves that the actual branch cannot asymptotically saturate the sharp ambient inverse-log modulus on a compact source-static neighborhood. What remains is not qualitative continuity but a quantitative tail/radius estimate. Endpoint isolation, compact-branch little-o regularity, explicit transport radius, and aperture-uniform positivity are distinct gates.
+PL-287 proves the actual compact branch beats the sharp ambient inverse-log modulus qualitatively. PL-288 proves that spectacular finite-block localization in ordinary `L^2` still does not price translation transport at the required scale. Endpoint isolation, compact-branch little-o regularity, small `L^2` tail norm, weighted frequency-tail control, explicit transport radius, and aperture-uniform positivity are distinct gates.

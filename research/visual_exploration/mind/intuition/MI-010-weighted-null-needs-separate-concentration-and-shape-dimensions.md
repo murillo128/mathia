@@ -1,23 +1,17 @@
-# MI-010 — Absolute resolution and signed start-averaged cancellation have different thresholds
+# MI-010 — Signed prime-ratio cancellation has a uniform finite-start window; its coarse horizon is set by worst frequency spacing
 
-**Evidence level:** supported by deterministic/prime-pair transfer controls through VIS-192; the signed mean-square statement is exact under long Cesàro averaging in the start variable, but no uniform-in-start or finite-window theorem and no RH-sensitive signal is established.
+**Evidence level:** supported by deterministic/prime-pair transfer controls through VIS-193. Uniform finite-window mean-square cancellation is proved at window length `L>=C y^2`, but no pointwise-in-start bound, optimal window scale, or RH-sensitive signal is established.
 
-VIS-187--VIS-190 remove endpoint artifacts and show that for a fixed endpoint-zero `C^2` taper the complete normalized **absolute** prime-pair off-diagonal is `O(y/(H log y))`. Hence absolute diagonalization holds uniformly in start whenever `H >> y/log y`.
+VIS-187--VIS-191 show that for a fixed endpoint-zero taper the complete normalized **absolute** prime-pair off-diagonal diagonalizes only above the sharp scale `y/log y`; below that scale ordinary consecutive-prime gaps force an order-one absolute floor.
 
-VIS-191 proves the opposite side for the absolute method. If `H=o(y/log y)`, a positive-density population of ordinary top-half consecutive-prime gaps remains unresolved by the kernel and forces an order-one normalized absolute floor. Extra fixed smoothness cannot remove that floor because the obstruction is near frequency zero, where every normalized taper kernel tends to one.
+VIS-192 keeps the signs and averages over the interval start. Distinct prime ratios `q/p` give distinct frequencies `log(q/p)`, so long-start Cesaro orthogonality eliminates all cross terms. For every diverging `H<=y`, the signed variance satisfies `R_v(y,H)<<1/H`, with matching `asymp 1/H` when `H log y/y->0`. Thus the absolute short-gap barrier is not a signed start-averaged barrier.
 
-VIS-192 then keeps the signs and averages only over the interval start. Distinct prime ratios `q/p` give distinct positive frequencies `log(q/p)`, so ordinary finite-frequency Cesàro orthogonality eliminates all cross terms exactly. The long-start variance is
+VIS-193 removes the qualitative dependence on an infinite start average. Writing the signed statistic as a finite exponential polynomial with frequencies `+/-log(q/p)`, distinct frequencies are separated uniformly by at least `log(1+y^(-2))`. Montgomery--Vaughan then yields, for every deterministic start `T0`,
 
-`R_v(y,H)=2 Q_y^(-2) sum_(p<q<=y) p^(-2alpha) q^(-2alpha) |kappa_v(H log(q/p))|^2`.
+`|R_(v,L)(T0;y,H)-R_v(y,H)| <= 2 pi (y^2+1) R_v(y,H)/L`.
 
-Squaring the taper kernel makes the near-pair energy summable at scale `1/H`. For every `H->infinity` with `H<=y`,
+Therefore `L>=C y^2` gives uniform `O(1/H)` mean-square cancellation on every start interval, while `L/y^2->infinity` recovers the Cesaro variance with vanishing relative error. The finite-start existence problem is solved at a coarse universal scale.
 
-`R_v(y,H) << 1/H`,
+The new boundary is not “deterministic versus averaged” but **worst spacing versus energy-weighted spacing**. The `y^2` horizon is obtained by protecting against the closest possible pair of prime-ratio frequencies regardless of how little coefficient mass that pair carries. It is only a sufficient scale. A substantially shorter window requires information about the weighted near-collision distribution of `log(q/p)`, a large-sieve/frame bound adapted to the tapered coefficients, or a theorem that the downstream target naturally supplies enough start length.
 
-and when `H log y/y -> 0`, ordinary prime-pair lower control gives the matching `R_v(y,H) asymp 1/H`. Thus the signed off-diagonal has start-RMS size `H^(-1/2)` throughout the diverging subcritical regime, even though its absolute envelope is still order one.
-
-The conceptual boundary has shifted. `y/log y` is the sharp threshold for **absolute** resolution, not for signed diagonalization after start averaging. The unresolved short-gap population is large in absolute mass but its distinct phase frequencies cancel in long-start `L^2`.
-
-The next resource is start control. A downstream theorem that requires one deterministic start, uniformity in `T`, or an averaging interval whose length scales with `y` cannot import the infinite-Cesàro identity for free. One must either prove a quantitative finite-start-window orthogonality estimate, identify a source-selected start family with enough phase dispersion, or show that the final target only needs an averaged/density-one statement.
-
-**Boundary.** VIS-192 is not a uniform-in-`T` bound and does not control start windows tied to the prime height. It uses exact uniqueness of prime-ratio frequencies but no random-phase hypothesis. The result closes the idea that macroscopic absolute short-gap mass by itself prevents signed subcritical diagonalization; it does not close the deterministic-start problem.
+**Boundary.** VIS-193 is an `L^2` finite-window theorem, not a pointwise bound on `M_v(y;H,T)`. It proves no lower bound showing that `y^2` is necessary and uses no random-phase hypothesis. The durable separation is now among absolute resolution (`y/log y`), signed Cesaro variance (`1/H`), uniform deterministic-window recovery (currently `y^2`), and the still-open optimal weighted dephasing horizon.
