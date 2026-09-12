@@ -98,4 +98,22 @@ No collar estimate, prime-phase exclusion, first-mode contradiction, or RH conse
 \frac14\zeta\!\left(3,\frac54\right)\|\chi'\|_\infty^2.
 \]
 
-The clue is therefore **accepted** as a viable first-mode-specific route, but not resolved. The exact IMS/source budget is now established; the unresolved gate is quantitative coercivity. Current results do not lower-bound the product `lambda_b^- ||chi v||_2^2` at a useful scale, do not force enough interior mass, and do not upper-bound the signed source flux on the actual zero-mode class. Future work should target those quantities, or a compatibility theorem for several nested cutoffs, rather than re-derive the localization identity or return to a uniform all-odd discrepancy bound.
+`WI-251-layer-cake-averaging-removes-the-smooth-ims-collar-cost.md` then integrates the full nested family of sharp radial cutoffs. Sharp cutoff multiplication is form-admissible for almost every radius, and the layer-cake identity converts the nested IMS defects to the absolute-radius metric `||x|-|y||`. This removes the artificial `O(ell^{-2})` smooth-collar cost and gives the single necessary first-mode constraint
+
+\[
+\int_0^{2a}R_v(h)\,d\nu_a(h)
+\ge
+\int_0^a\lambda_r^-\|\mathbf1_{|x|<r}v\|_2^2\,dr
+-C_{\rm lc}(a),
+\]
+
+where the gap-times-mass integral is strictly positive and
+
+\[
+C_{\rm lc}(a)
+=\frac14\sum_{m\ge1}
+\frac{(1-e^{-2b_ma})^2}{b_m^2}
+<\frac14\zeta\!\left(2,\frac54\right).
+\]
+
+The clue remains **accepted**, not resolved: localization and nested-cutoff compatibility now impose a finite quantitative signed-correlation restriction without choosing a collar width, but no zeta-specific upper bound for this radial von-Mangoldt flux is known. The live gate is therefore narrower: control that exact signed radial flux on the first-zero-mode class, or combine it with independent information on the positive integrated gap-times-mass term. Returning to a uniform all-odd discrepancy bound or optimizing a single smooth collar would discard structure already preserved by the layer-cake reduction.
