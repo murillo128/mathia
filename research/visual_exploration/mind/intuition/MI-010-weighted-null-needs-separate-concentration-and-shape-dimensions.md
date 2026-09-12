@@ -1,6 +1,6 @@
-# MI-010 — Weighted prime-phase nulls have separate concentration, shape, and transfer dimensions
+# MI-010 — Weighted prime-phase nulls have separate concentration, shape, and full-law transfer regimes
 
-**Evidence level:** supported by the weighted-Haar calculation of VIS-173 and the deterministic prime-log moment transfer of VIS-174; no full-distribution or optimal discrepancy theorem is claimed.
+**Evidence level:** supported by the weighted-Haar calculations and deterministic transfer theorems VIS-173--VIS-176.
 
 For positive weights `w_j`, put
 
@@ -14,29 +14,20 @@ and
 D_2=\frac{W^2}{Q},\qquad D_4=\frac{Q^2}{R}.
 \]
 
-VIS-173 shows that these control different parts of the matched Haar null. `D_2` governs leading concentration/effective support, while `D_4` governs whether the first standardized correction Gaussianizes. One can have `D_2 -> infinity` while `D_4` stays finite, so the bulk concentrates but heavy low-prime coordinates leave a persistent non-Gaussian fingerprint.
+VIS-173 shows that `D_2` and `D_4` control different parts of the matched Haar null. `D_2` governs leading concentration/effective support, while `D_4` governs whether the first standardized correction Gaussianizes. The bulk can concentrate while a finite set of heavy low-prime coordinates keeps the law non-Gaussian.
 
-VIS-174 now shows that this fingerprint can survive **deterministic prime-log averaging** without becoming source evidence. For the normalized weighted prime-phase observable over `p<=y`, every fixed moment order `k` satisfies
+VIS-174 shows that fixed moments of these matched Haar laws transfer to deterministic continuous prime-log averaging under the explicit horizon condition `y^k D_2(y)^(k/2)/H -> 0` for each declared order `k`.
 
-\[
-\left|\operatorname{Av}_{[T,T+H]} S_y(t)^k
--\mathbb E(S_y^{\rm Haar})^k\right|
-\le
-2^{2-k}\frac{y^k D_2(y)^{k/2}}{H}.
-\]
-
-Thus fixed moments transfer whenever `y^kD_2(y)^{k/2}/H -> 0`. The estimate is uniform in the starting height and follows from exact prime-log character resonance plus the elementary gap `|log(a/b)| \gtrsim y^{-k}`.
-
-The taper `w_p=1/p` is the decisive calibration. Here
+VIS-175 and VIS-176 turn the weight geometry into a complete weak-law phase boundary. In the square-summable regime `sum_p w_p^2<infinity`, the full bounded-Lipschitz law converges under `yW_y^2/H -> 0` to the infinite weighted Haar convolution, which can retain a strictly non-Gaussian fourth cumulant. In the Lindeberg regime
 
 \[
-D_2(y)\asymp (\log\log y)^2,
-\qquad
-D_4(y)\to \frac{P(2)^2}{P(4)}<\infty.
+\max_p\frac{w_p}{\sqrt{Q_y}}\to0,
 \]
 
-For any polylogarithmic cutoff `y=(\log H)^A`, every preassigned fixed moment transfers to the matched weighted Haar law, while the fourth cumulant stays nonzero. Persistent non-Gaussian low-prime shape in the actual continuous prime-log orbit is therefore a **representation-matched null effect** in this regime, not a discriminator.
+if the VIS-174 gate holds for every fixed moment order, the deterministic vertical law converges instead to `N(0,1/8)`.
 
-A source-sensitive statistic must now beat three separate budgets: concentration through `D_2`, null-shape persistence through `D_4` or the exact weighted Haar law, and deterministic transfer through the observation condition `H \gg y^kD_2^{k/2}` at the declared moment order. Rare collisions and full-distribution approximation remain separate gates.
+For prime-power weights `w_p=p^{-\alpha}` and any fixed polylogarithmic cutoff, these two theorems cover every `\alpha>=0`: the normalized law is Gaussian for `0<=\alpha<=1/2` and generally non-Gaussian infinite-Haar for `\alpha>1/2`. Both behaviors are representation-matched nulls. The change at `\alpha=1/2` is not a source discriminator.
 
-**Boundary.** VIS-174 treats continuous vertical averaging and fixed `k`. It does not cover Gram-point/discrete sampling, growing moment order, rare tails, total variation, or observables containing additional zero/hybrid factors.
+A source-sensitive statistic must therefore leave more than one side of the square-summability boundary. It must use a different sampling rule, a source-bearing hybrid/zero variable, a rare/shrinking or unbounded functional beyond weak convergence, support growth outside the available transfer gates, or another observable not determined by the normalized additive prime torus.
+
+**Boundary.** VIS-175--VIS-176 concern continuous vertical averaging and fixed bounded-continuous tests in their stated growth regimes. They do not cover Gram/discrete sampling, moving extreme thresholds, decoder singularities, hybrid variables, or arbitrary fast support growth.

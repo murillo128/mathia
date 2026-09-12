@@ -14,22 +14,16 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Beat the matched weighted deterministic/Haar null, not just the equal-weight Gaussian picture
+## Leave the full continuous additive prime-torus law, not merely one weight phase
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-161--VIS-171 calibrate held-out-prime collision sample complexity, equal-weight bulk scale, and first fluctuation shape. VIS-172--VIS-173 show that weighted support has two distinct effective dimensions: `D_2=W^2/sum w_j^2` controls leading concentration, while `D_4=(sum w_j^2)^2/sum w_j^4` controls Gaussianization of the first standardized correction.
+VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers every preassigned fixed moment of the matched weighted Haar null to the deterministic continuous prime-log orbit under an explicit horizon budget.
 
-VIS-174 adds the deterministic transfer gate. For every fixed moment order `k`, the continuous prime-log orbit matches the same weighted Haar moment with error bounded by
+VIS-175 and VIS-176 now close both full-law weight phases under broad polylogarithmic support. If the weights are square-summable, the empirical law converges to the generally non-Gaussian infinite weighted Haar law under `yW_y^2/H -> 0`. In the complementary Lindeberg regime, vanishing maximal normalized weight plus the fixed-moment transfer gates force the complete law to `N(0,1/8)`. For the prime-power family `w_p=p^(-alpha)`, every `alpha>=0` is therefore controlled at any fixed polylogarithmic cutoff: Gaussian for `alpha<=1/2`, generally non-Gaussian for `alpha>1/2`.
 
-\[
-O\!\left(\frac{y^kD_2(y)^{k/2}}H\right).
-\]
+The visible transition at `alpha=1/2` is itself a representation phase transition, not arithmetic evidence. A surviving statistic must leave the ordinary bounded-continuous additive prime-torus class in an essential way: use Gram/discrete sampling with its own clock control, a genuine hybrid prime/zero variable, a rare or shrinking event, an unbounded functional, substantially faster support growth beyond the current sufficient gates, or another source-dependent observable not reducible to the same normalized additive field.
 
-For `w_p=1/p` and any polylogarithmic support cutoff `y=(log H)^A`, all preassigned fixed moments transfer even though `D_4` stays finite and the weighted null remains non-Gaussian. Persistent low-prime shape in the deterministic prime-log orbit is therefore not source-sensitive by itself.
+## Keep source corrections, deterministic clock mixing, weighted null calibration, transfer horizon, and functional class separate
 
-A useful growing-support statistic must show a predeclared separation from the **same weighted prime-log control** after matching support, weights, height range, and observation budget. It must separately cross the concentration scale (`D_2`), the null-shape gate (`D_4` or exact weighted law), the deterministic finite-window transfer cost, and any rare-collision population threshold relevant to the readout.
-
-## Keep source corrections, deterministic clock mixing, weighted null calibration, transfer horizon, and rare-event complexity separate
-
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape; VIS-174 transfers fixed moments of that null to the actual continuous prime-log orbit under an explicit horizon budget; held-out primes calibrate stable-decoder failure. A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support growth, sampling geometry, and observation scale.
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape; VIS-175--VIS-176 cover the full bounded-continuous law on both prime-power weight phases under continuous vertical averaging; held-out primes calibrate stable-decoder failure. A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support growth, sampling geometry, observation scale, and functional class.

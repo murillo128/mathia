@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the finite residual negative sector through coherent multi-event prime-power structure
+## Prevent the first forbidden localized Weil crossing
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
@@ -10,10 +10,12 @@ PL-259--PL-276 show that source recovery is not positivity: finite positive inte
 
 PL-278 shows that canonical noncompact completion repairs the high-frequency source defect generically. The completed localized Weil operator has compact resolvent and only finitely many negative eigenvalues, and the eventually positive tail survives arbitrary finite signed source replacement. The RH-facing information is therefore confined to the finite low/mesoscopic negative sector.
 
-PL-279 now rules out an isolated threshold shock as the obvious mechanism for that sector. When a prime power `q` first enters at `2a=log q`, its canonical `H_0^1` Weil-form contribution is `O((2a-log q)^2 Lambda(q)/sqrt(q))` relative to derivative energy. The order-one edge effect of a cutoff-rescaled finite model is therefore representation-dependent; the canonical form turns on quadratically softly.
+PL-279 rules out an isolated threshold shock as the obvious mechanism for that sector. A newly active prime-power contribution turns on quadratically softly in the canonical `H_0^1` form topology.
 
-The live theorem is whether the actual zeta source forces zero residual negative index, or a source-specific coherent evolution of that finite sector across **many** genuine prime-power activation events. A viable mechanism must use accumulated source mass, interaction among active shifts, or cross-aperture spectral/index motion rather than the mere occurrence of one threshold.
+PL-280 now makes the cross-aperture direction one-sided. The localized form domains are nested, so the min-max levels satisfy `lambda_k(b)<=lambda_k(a)` for `a<b`; the negative Morse index is nondecreasing with aperture. Once a variational level becomes negative, later prime-power activation cannot heal it.
 
-## Treat source recovery, compact obstruction, generic noncompact tail repair, local threshold softness, and finite residual order as separate gates
+The live theorem is therefore crossing prevention. A viable arithmetic mechanism must prove a source-specific coercive inequality, constrain the first variational level, or control the accumulated low/mesoscopic source strongly enough that no forbidden crossing ever occurs. Later signed compensation after a crossing is no longer an available mechanism.
 
-The projective tower is source-lossless; finite positive aggregation is sign-indefinite; compact completion cannot repair it; canonical noncompact completion repairs the spectral tail generically; and individual source atoms enter the canonical form only quadratically at threshold. A successful arithmetic mechanism must therefore distinguish the finite residual sector or its coherent multi-event evolution.
+## Treat source recovery, compact obstruction, generic tail repair, local threshold softness, and one-sided residual order as separate gates
+
+The projective tower is source-lossless; finite positive aggregation is sign-indefinite; compact completion cannot repair it; canonical noncompact completion repairs the spectral tail generically; individual atoms enter softly; and negative variational levels persist once created. A successful arithmetic mechanism must distinguish the finite residual sector by preventing its crossings, not by hoping later source events restore positivity.

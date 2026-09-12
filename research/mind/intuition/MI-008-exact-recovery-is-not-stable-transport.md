@@ -1,15 +1,19 @@
-# MI-008 — Inverse separation, channel coupling, cadence, horizon, and operator order are different quantitative losses
+# MI-008 — Exact separation, joint coupling, finite-budget stability, and local contraction are different losses
 
 **Evidence level:** supported by the specified inverse, sampling, and propagation models; no common universal condition number is claimed.
 
-For a finite simple Blaschke product, AF-178 gives a local inverse constant proportional to the reciprocal zero-separation product. Exact recovery survives while conditioning diverges as zeros collide. This is a metric/local-degree statement, not a generic source-recovery law.
+For finite Blaschke inversion, AF-178 gives a local inverse constant controlled by zero separation: exact recovery survives while conditioning diverges as zeros collide. This is a local metric statement, not a generic source-recovery law.
 
-Dirichlet recovery has several different acquisition losses. AF-278 shows that continuous vertical averaging at fixed real part recovers each declared coefficient by paying phase-time breadth and noise amplification. AF-279 shows that regular vertical sampling first quotients frequencies through `lambda -> e^{-ih lambda}`: rational resonance can create exact aliases even with the full bilateral lattice, while a nonresonant cadence restores infinite-data injectivity without giving a uniform finite-window inverse modulus.
+Dirichlet acquisition separates several different losses. AF-279 shows that one regular vertical lattice first quotients frequencies through `lambda -> e^{-ih lambda}`. AF-280 shows that finitely many **separate** lattice marginals cannot repair several individually resonant quotients on the unrestricted weighted `ell^1` source class: a mixed interaction can lie in every marginal kernel even when the tuple of phase labels is injective.
 
-AF-280 adds a distinct **channel-coupling** gate. A finite family of regular lattices is injective on the unrestricted weighted `ell^1` ordinary-Dirichlet source class iff at least one cadence is already nonresonant. If every cadence has a rational alias, an explicit finite group-algebra interaction lies in the common kernel. Even when the tuple of phase labels is injective, keeping the complete one-coordinate lattice sequences separately can lose a mixed interaction that a genuinely joint phase observable would retain.
+AF-281 shows what genuine joint coupling changes. Complete mixed samples `F(c+i(k\cdot h))` are the Fourier coefficients of the joint torus pushforward, so ordinary Dirichlet coefficient fidelity is equivalent to
 
-Finite cadence diversity also does not cure finite-horizon instability: simultaneous torus recurrence makes a remote logarithmic frequency approach the target phase in every fixed cadence window while the target coefficient changes by order one. Therefore exact separation, retention of joint coupling, and finite-acquisition stability are genuinely different properties.
+\[
+\bigcap_jR_{h_j}=\{1\}.
+\]
 
-Prime Flute supplies a separate composition lesson. Exponential far propagation can change the frequency window in which a leakage estimate is needed; one cannot simply multiply local condition numbers. PF-297 adds that a finite-section contraction can itself be a truncation artifact: the canonical Robin factors are strict `ell^1(q)` contractions at finite depth but their norms tend to one, while the complete map preserves positive `q`-mass.
+If all individual cadences resonate, a strict repair requires their generated time subgroup to be dense rather than one discrete lattice. Exact repair therefore pays unbounded mixed integer-combination complexity. Even then every fixed mixed-index box has remote near-aliases and no uniform inverse modulus on the unrestricted infinite source. Known finite source breadth can be interpolated with finite mixed degree, but the required degree and conditioning depend on that breadth.
 
-Keep the relevant separation metric, source category, channel coupling, cadence fibers, observation horizon, forcing/escape balance, and composed frequency window explicit. None is supplied merely by exact uniqueness or strictness at an earlier finite stage, and there is no established theorem identifying their condition numbers across these models.
+Prime Flute supplies a separate composition warning. PF-297 shows that finite-section Robin contraction is truncation leakage: the norms tend to one and the complete positive map preserves `q`-mass. PF-298 shows that the neighboring pant's lowest constant channel is likewise nearly conservative, with transmission `1-O(s_n)`. Local strictness or coercivity therefore does not supply a depth-uniform return gap.
+
+Keep source breadth, phase fibers, joint versus marginal acquisition, generated-time geometry, mixed-word budget, observation horizon, forcing/escape balance, and composed frequency window explicit. Exact uniqueness, retention of coupling, finite-budget stability, and global return summability are different mathematical properties.

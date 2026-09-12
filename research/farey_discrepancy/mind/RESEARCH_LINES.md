@@ -2,22 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Cross the zero-frontier localization barrier with maximal source control
+## Penetrate below the deterministic critical host scale
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
 FD-049--FD-055 reduce residual occupation collapse to a low-row source-localization problem and show that sufficiently strong short-interval cancellation transfers a zero-frontier spike to nearby nonsquarefree quadratic occupation.
 
-FD-056--FD-057 distinguish corridor size from the sparse reciprocal-floor host sample. If one requires the represented start itself to avoid one exceptional set, cardinality alone pays an inverse-length threshold `c>1` for a schematic exceptional law `X R_X^{-c+o(1)}`.
+FD-056--FD-058 distinguish sparse represented-start sampling from maximal ambient-window localization. A maximal source theorem can avoid the reciprocal-sample cardinality penalty, but its exceptional measure must still be smaller than the containing-start corridor at the desired transfer scale.
 
-FD-058 shows that this is not the right threshold for a **maximal** short-interval theorem. A fixed reciprocal-floor transfer interval of length `\asymp R_X` is contained in ambient windows whose real starting points fill an interval of measure `\asymp R_X`. A maximal source theorem with exceptional measure `o(R_X)` therefore suffices, restoring the corridor exponent
+FD-059 changes where that machinery becomes necessary. If `A_X=|\mathcal H(X)|` and `Q_X=X/A_X`, a squarefree host `q=3 mod 4` exists at `q asymp lambda Q_X`; `q+1` is nonsquarefree and the one-Lipschitz source preserves a fixed positive fraction of the spike. Thus a comparable nonsquarefree quadratic twin exists deterministically at the exact critical scale `q asymp X/A_X`. Along a false-RH zero-frontier spike this reaches the critical row exponent for every `Theta>1/2`, and a subpower factor above `Q_X` gives first-order transfer at the same power exponent.
 
-\[
-c>\frac{1-\Theta}{\Theta}.
-\]
+The unresolved source-regularity bill begins only for `qA_X/X -> 0`, where the quotient displacement is larger than the spike height. FD-055 gives logarithmic penetration below this scale under strong short-interval cancellation; FD-056--FD-058 formulate the maximal exceptional-measure route for broader below-critical displacement. The live theorem is to penetrate below `X/A_X` or obtain a separate mechanism controlling the global occupation ratio; merely reaching the zero-frontier power exponent is no longer the hard step.
 
-The available 2026 maximal Möbius theorem transfers through the exact convolution to the physical source, but only with exceptional measure `O_K(X/(\log X)^K)`, still much larger than `R_X=X^{\Theta+o(1)}`. The live theorem is thus a quantitative **maximal exceptional-measure** improvement at the zero-frontier scale, or another source-coupled mechanism that avoids that localization bill.
+## Treat critical deterministic transfer, below-critical localization, and global occupation as different currencies
 
-## Treat signed multiplicative cancellation, pointwise-start sampling, maximal localization, and quadratic occupation as different currencies
-
-A complete Jordan ray may self-cancel, a sparse reciprocal-floor endpoint set may be too small for pointwise almost-all counting, yet the same desired interval can be certified by a nearby good maximal ambient window. Future arguments must preserve which of these geometries the analytic input actually controls; density-zero or logarithmic exceptional measure is not automatically enough at a prescribed zero-frontier spike.
+At `qA_X/X asymp 1`, favorable residue-class selection plus bounded increments already gives constant-factor quadratic transfer. At `qA_X/X -> infinity` it gives first-order transfer; at `qA_X/X -> 0` genuine source cancellation or localization is needed. None of these one-row statements alone lower-bounds `U/E`, so competition from the remaining low rows is a separate global gate.

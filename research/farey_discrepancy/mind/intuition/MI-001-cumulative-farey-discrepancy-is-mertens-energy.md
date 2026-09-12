@@ -1,37 +1,31 @@
-# MI-001 — Farey occupation is now a maximal-localization problem at the zero frontier
+# MI-001 — Farey occupation has a deterministic critical host and a below-critical localization barrier
 
-**Evidence level:** supported by the current FD-049--FD-058 source/occupation reductions; no positive occupation theorem is claimed.
+**Evidence level:** supported by exact source/occupation reductions through FD-059; no positive global occupation theorem is claimed.
 
-The cumulative Farey obstruction has been narrowed from generic regularity to a quantitative localization problem for the physical shell source
+The cumulative Farey obstruction is controlled by the physical shell source
 
 \[
 c(n)=\Delta\mathcal H(n)=\sum_{dm=n}\frac{\mu(m)}d.
 \]
 
-Signed multiplicative rays are not coercive: FD-052--FD-053 show squarefree Jordan-ray self-cancellation even for moving hosts near the geometric frontier. Quadratic occupation behaves differently. FD-054 gives a local additive twin mechanism, and FD-055 pushes it through strong short-interval Möbius cancellation wherever the zero frontier is sufficiently far right.
+Signed multiplicative rays are not coercive, while quadratic occupation admits an additive twin mechanism. FD-054--FD-058 separated deterministic transfer, strong short-interval cancellation, sparse represented-start sampling, and maximal ambient-window localization.
 
-FD-056--FD-058 identify the remaining near-critical geometry more sharply. If a false-RH spike has size
-
-\[
-A_X=|\mathcal H(X)|=X^{\Theta+o(1)},\qquad R_X=A_X(\log X)^B,
-\]
-
-a reciprocal-floor host produces a desired transfer interval `(x_q,X]` of length `\asymp R_X`. A theorem that insists the **represented start itself** avoid a common exceptional set pays the sparse-sample cardinality barrier of FD-057 and needs a schematic exponent `c>1`.
-
-Maximal short-interval control changes the geometry. The fixed transfer interval lies inside every ambient interval `(y,y+4R_X]` with `y` in a real interval `J_X` of length `\asymp R_X`. Therefore a maximal source theorem with exceptional **Lebesgue measure** `o(R_X)` already supplies one good containing start. For a schematic exceptional law
+FD-059 identifies the natural host scale sharply. Put `A_X=|\mathcal H(X)|` and `Q_X=X/A_X`. For every fixed `lambda>1`, a squarefree host `q=3 mod 4` can be selected with `q asymp lambda Q_X`; then `q+1` is nonsquarefree and the associated quotient point satisfies
 
 \[
-m(\mathcal F_X)\ll X R_X^{-c+o(1)},
+|\mathcal H(x^*)|\ge (1-1/\lambda)A_X-1.
 \]
 
-the threshold is only
+Therefore a comparable nonsquarefree quadratic contribution is forced at `q asymp X/A_X` with no short-interval theorem. Along a false-RH spike `A_X=X^{\Theta+o(1)}`, this reaches the critical row exponent
 
 \[
-c>\frac{1-\Theta}{\Theta}.
+\alpha_\Theta=\frac{1-\Theta}{2-\Theta}
 \]
 
-The current maximal Möbius theorem transfers to the physical convolution source through real-scaled pullbacks `y -> y/d`, but its exceptional measure is only `O_K(X/(\log X)^K)`. Since `R_X=X^{\Theta+o(1)}`, that set can still cover the whole containing-start corridor. So maximality removes the **reciprocal-sample cardinality penalty**, not the quantitative exceptional-measure barrier.
+for every `\Theta>1/2`. Taking a subpower `lambda_X -> infinity` gives first-order transfer while retaining the same power exponent.
 
-The next useful theorem is therefore precise: obtain a maximal source estimate at the zero-frontier scale with exceptional measure `o(R_X)` and source error `o(A_X)`, or find a different source-coupled mechanism that bypasses this localization requirement. Generic density-zero statements, signed-ray cancellation, and pointwise-start counting are now the wrong currencies.
+Thus the condition `qA_X/X -> infinity` from the earlier arbitrary-host transfer is the threshold for relative error `o(1)`, not the threshold for useful positive-fraction quadratic energy when a favorable host may be selected.
 
-**Boundary.** FD-058 does not prove the required power-saving exceptional estimate or positive nonsquarefree occupation. It distinguishes two proof paradigms: pointwise-start theorems pay the inverse-length sample penalty; maximal ambient-window theorems pay the corridor-scale measure threshold.
+The maximal-localization program becomes load-bearing only **below** the natural scale: `q=o(X/A_X)`, equivalently transfer lengths `R_X=A_XL_X` with `L_X -> infinity`. There bounded increments no longer prevent complete cancellation, so genuine short-interval/maximal source control or another source-coupled mechanism is needed.
+
+**Boundary.** A single comparable nonsquarefree row does not imply a fixed lower bound for the global ratio `U/E`; unrelated low rows may dominate. FD-059 relocates the source-regularity threshold but does not solve global occupation.

@@ -1,21 +1,15 @@
-# MI-013 — Critical half-density needs an infinite-dimensional closable source correspondence
+# MI-013 — Critical half-density needs a source-selected prime-layer correlation that survives normalization
 
-**Evidence level:** supported by the exact Fock coefficient carrier, symmetric-sector criticality, canonical-Hessian mismatch, and the finite-dimensional boundary nonclosability theorem through WP-261; Weil orientation/completion remain open.
+**Evidence level:** supported by the exact Fock coefficient carrier and correlation boundaries through WP-263; completed Weil orientation remains open.
 
-The Fock branch now separates coefficient sourcing from target geometry very sharply. WP-256 produces the exact positive Mangoldt half-density from prime-word multiplicity and arithmetic energy. WP-259 removes the free-Fock thermodynamic mismatch by passing canonically to the permutation-fixed sector: the Gibbs boundary is then `beta=1` while the prime-power diagonal `Lambda(n)/sqrt(n)` survives.
+WP-256 produces the exact positive Mangoldt half-density from prime-word multiplicity and arithmetic energy. WP-259 passes canonically to the permutation-fixed sector, restoring the `beta=1` Gibbs boundary while retaining the prime-power diagonal `Lambda(n)/sqrt(n)`. WP-260 shows that canonical bosonic Gibbs/Fisher convexity does not supply the desired pairing because it inserts an extra occupation factor.
 
-That still does not create the Weil pairing. WP-260 shows that the canonical bosonic Gibbs/Fisher Hessian inserts an extra occupation factor, so canonical convexity has the wrong prime-power coefficient law even in finite-prime truncations.
+WP-261 tests coherent cross-prime mixing through a common finite-dimensional boundary. Finite truncations have the correct diagonal and nonzero cross-prime entries, but the infinite boundary map is nonclosable throughout the critical regime.
 
-WP-261 tests a more relational operation. The compressed symmetric-Fock backward shifts send every first-layer prime state to a common vacuum. After the source-derived mean-energy and half-density weights, the resulting positive Gram form has exactly
+WP-262 shows that moving to infinite dimension does not solve source selection. For any locally finite graph on the primes, normalized pair-incidence vectors built from mixed-composite symmetric-Fock states define a bounded positive Gram with the same exact critical diagonal and nonzero cross-prime correlations. The graph support and edge phases are programmable while boundedness and positivity survive.
 
-\[
-q_{1/2}(e_{p^k},e_{p^k})=\frac{\Lambda(p^k)}{\sqrt{p^k}},
-\]
+WP-263 tests the most direct way to remove that freedom using the source Hamiltonian. Conditional-Gibbs complete incidence with partner weight `q^{-\beta k/2}` is canonical whenever `sum_q q^{-\beta k}` converges. Matching the Weil half-density fixes `beta=1`. Then the prime layer `k=1` hits the divergent boundary `sum_p1/p=infinity`: after finite-cutoff normalization preserving unit diagonal, every fixed prime-prime correlation tends to zero. The same construction remains nontrivial for `k>=2`, so the collapse is a critical prime-layer effect rather than a generic failure of Gibbs geometry.
 
-and genuinely nonzero cross-prime entries on the first layer. But that coherent boundary collapse is nonclosable throughout `0<sigma<=1`. More generally, no fixed finite-dimensional boundary Hilbert space can receive all prime-layer vectors with squared norms `(log p)p^{-sigma}` through a closable operator in that regime: closability would force bounded finite rank and hence the impossible summability `sum_p (log p)p^{-sigma}<infinity`.
+The missing object is therefore more specific than a closable infinite-dimensional correspondence. It must be **source-forced, nonprogrammable, and normalization-stable on the prime layer**. Its cross-prime interaction must arise before or outside the divergent conditional normalization while retaining the exact Mangoldt half-density. Only after that gate is passed can one test the completed Weil orientation and Gamma/polar sectors.
 
-The matched control exposes the tradeoff. Keeping the prime boundary label orthogonal gives a bounded exact Mangoldt carrier for every positive `sigma`, but restores prime separability. Collapsing the labels into finite dimension creates cross-prime coherence but becomes nonclosable at and well beyond the Weil exponent.
-
-The missing object is therefore narrower than “some global positivity.” It must be a source-forced **infinite-dimensional closable correlation/correspondence** (or a rigorously justified different operator category) that retains the critical Mangoldt half-density while creating the off-diagonal Weil orientation and incorporating the Gamma/polar sectors. Finite-dimensional coherent scalarization cannot supply that bridge.
-
-**Boundary.** WP-261 excludes finite-dimensional boundary reception with the exact critical prime norms in the ordinary Hilbert-space closability category. It does not exclude infinite-dimensional correspondences, renormalized constructions with an independently justified domain, or other non-equivalent operator categories. The exact diagonal and cross-prime positivity obtained in finite truncations are not themselves evidence for completed Weil positivity.
+**Boundary.** WP-263 excludes only this conditional-Gibbs complete-incidence completion. A quotient, boundary response, weighted dense kernel, cohomological construction, or another source-native global operation could still select a nontrivial critical prime-layer law.

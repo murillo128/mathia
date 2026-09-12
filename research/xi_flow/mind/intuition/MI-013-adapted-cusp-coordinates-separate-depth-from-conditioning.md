@@ -1,39 +1,19 @@
-# MI-013 — Xi packet complexity costs samples, not remote conditioning, in the holomorphic acquisition category
+# MI-013 — Xi packet complexity costs samples, not local nonlinear conditioning, in the holomorphic category
 
-**Evidence level:** proved local growing-packet linearized acquisition; global nonlinear source coercivity remains open
+**Evidence level:** proved growing-packet nonlinear local acquisition through XF-186; global unknown-support source coercivity remains open.
 
-## Core intuition
+Adapted coordinates remove remote inverse conditioning, and mesoscopic complex Jacobi phase removes the positive-real acquisition loss. XF-185 shows that this survives growing packet complexity: a known consecutive packet of `m<=N` remote atoms is observed by an explicit `O(m)` Fejer-overcomplete complex bank whose linearized singular values are comparable to `sqrt(m)` uniformly in both `N` and `m`.
 
-Remote packet location is not a fundamental instability of the Xi inverse. Adapted coordinates remove inverse conditioning, and mesoscopic complex Jacobi phase removes the positive-real acquisition loss. The newest result shows that this remains true when packet complexity itself grows through the natural lattice-scale regime: a packet of `m<=N` consecutive remote atoms can be observed with uniform conditioning using only `O(m)` complex samples.
+XF-186 closes the corresponding local nonlinear gap. On the cube
 
-The durable separation is now between **model complexity/sample count** and **conditioning**. The remaining obstacle is global source uncertainty—unknown support, nonlinear deformation, and analytic control of the actual Xi/Jacobi object—not deterioration of the known-packet linear acquisition matrix.
+\[
+\|h\|_\infty\le\frac{\kappa_\alpha}{m},
+\]
 
-## Strongest justified claim
+the same normalized Jacobi packet map is uniformly bi-Lipschitz, with constants independent of `N` and `m`. In physical lattice coordinates this cube contains displacements of a fixed size independent of both parameters. The reciprocal Jacobi image stays exponentially small across the moving frame, so the lower bound is not merely an infinitesimal statement.
 
-XF-177--XF-184 show that depth `m` is necessary for `m` moved atom pairs, packet-adapted coordinates remove remote inverse conditioning, positive-real acquisition has a graded/exponential visibility cost, and fixed-complexity complex Jacobi sampling turns the local linearized map into a DFT-like uniformly conditioned system.
+Consequently, once the ambient consecutive packet window is known, the inverse can recover zero and nonzero atom displacements together on a constant physical neighborhood. Growing lattice-scale complexity costs sample count, but it does not reintroduce a remote or local nonlinear condition-number penalty.
 
-XF-185 removes the fixed-`m` caveat on the natural lattice scale. For a known consecutive packet of `m` atoms beginning near `N` with `2<=m<=N`, an explicit Fejer-overcomplete bank of at most `6m-1` anisotropic complex Jacobi samples has linearized singular values comparable to `sqrt(m)` with constants independent of both `N` and `m`. Reciprocal-image contamination remains exponentially small even across the full bank, and the row normalization is uniformly bounded, so the raw complex samples already contain the same lower visibility.
+The remaining source problem is global: locate and recenter unknown windows, assemble multiple or multiscale packets, treat regimes outside `m<=N`, handle unknown weights only if the Xi source permits them, and justify the required complex samples from the physical Jacobi/Xi object. Even successful source reconstruction must then be transported to a zero-sensitive observable or de Bruijn--Newman constraint; reconstructing theta-side deformation alone is not an RH-facing theorem.
 
-## Synthesis of evidence
-
-Growing packet width no longer creates an intrinsic local conditioning barrier as long as sample count is allowed to scale linearly with complexity. A no-go based only on remote location or growing `m` is therefore too weak in the holomorphic category.
-
-The live theorem must handle **support discovery and nonlinear/global assembly**: show that the true Xi/Jacobi source supplies a feasible multiscale complex-sampling family from which unknown packets of varying location/width can be identified and controlled without importing zero data equivalent to the target.
-
-## Counterevidence / boundary cases
-
-XF-185 is linearized and assumes a known consecutive packet. It does not solve sparse support search among many possible locations, interaction between multiple packets, nonlinear displacement radius, or analytic bounds needed to evaluate the true source at all required complex sample points.
-
-The `O(m)` sample cost is real; the result removes condition-number growth, not information-theoretic complexity.
-
-## Epistemic status
-
-**Exact local complexity boundary:** for known lattice-scale packets, growing complexity costs linearly many holomorphic samples but does not worsen remote conditioning. The remaining problem is nonlinear unknown-support source coercivity and global acquisition.
-
-## Novelty/prior-art status
-
-Fourier frames, Fejer kernels, Jacobi transforms, and finite-dimensional conditioning retain their finding-level boundaries.
-
-## Falsification criterion
-
-Invalidate the XF-185 uniform frame bounds or show reciprocal Jacobi contamination grows enough across the bank to destroy the stated lower singular-value bound. Strategically, prove a support-unknown nonlinear source theorem using such banks.
+**Boundary.** XF-186 is local to a known consecutive ambient window and a fixed physical displacement radius. It does not solve global support search, multiple-packet interference, arbitrary weights, source-side sample accessibility, or the final Xi-zero bridge.
