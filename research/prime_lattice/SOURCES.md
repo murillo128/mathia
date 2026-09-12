@@ -50,7 +50,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 ## Infinite-polydisk Hardy evaluation boundary
 
 12. **Brian J. Cole, Theodore W. Gamelin**, “Representing Measures and Hardy Spaces for the Infinite Polydisk Algebra,” *Proceedings of the London Mathematical Society* (3) **53**(1) (1986), 112–142. DOI: https://doi.org/10.1112/plms/s3-53.1.112.
-    - Role: proves that, for every fixed `0<p<infinity` in the standard infinite-polydisk Hardy framework, point evaluation is continuous exactly on `Delta^infinity intersect ell^2`. This strengthens `PL-001`: the Bohr curve reaches the evaluation boundary at `Re(s)=1/2` throughout the classical `H^p` scale, not only in `H^2`.
+   - Role: proves that, for every fixed `0<p<infinity` in the standard infinite-polydisk Hardy framework, point evaluation is continuous exactly on `Delta^infinity intersect ell^2`. This strengthens `PL-001`: the Bohr curve reaches the evaluation boundary at `Re(s)=1/2` throughout the classical `H^p` scale, not only in `H^2`.
 
 ## Schatten/composition-operator context
 
@@ -378,3 +378,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 95. **Lluis Eriksson**, “Certified Localized Weil Positivity Through Support 0.72: Multiband Schur Complements and a Complete Stieltjes Hierarchy,” AIRR record `ARR-2026-7XT7AB8WJP9QPTGT`, version 1, published 13 August 2026. https://airr.science/papers/ARR-2026-7XT7AB8WJP9QPTGT/ . Public source/reproducibility bundle: https://github.com/arr-research/arr-research.github.io/tree/main/papers/2026/08/7X/ARR-2026-7XT7AB8WJP9QPTGT .
     - Role: main current-literature anchor for `PL-282`. Reports an interval-arithmetic certificate `A_0.72 >= 5.890e-17 I > 0` for the canonical localized Weil operator after the prime-power channels `2,3,4` are active; develops an increasing Gauss--Stieltjes lower hierarchy whose finite stages are complete certificates for strict positivity at each fixed support; and supplies public source, claim-ledger, and certificate artifacts. This is a founder-owned AIRR pilot record and explicitly does **not** claim independent peer review or independent mathematical validation. Mathia inspected the published formulas and reproducibility bundle but did not independently rerun the expensive Arb certificate, so the numerical margin is treated as non-peer-reviewed computer-assisted literature rather than independently reproduced evidence.
+
+## Dirichlet logarithmic Laplacian and the one-dimensional Weil graph domain
+
+96. **Huyuan Chen, Tobias Weth**, “The Dirichlet problem for the logarithmic Laplacian,” *Communications in Partial Differential Equations* **44**(11) (2019), 1100–1139. DOI: https://doi.org/10.1080/03605302.2019.1611851. arXiv: https://arxiv.org/abs/1710.03416.
+    - Role: primary logarithmic-Laplacian anchor for `PL-289`. Establishes the singular-integral realization with Fourier symbol `2 log|xi|`, including the explicit one-dimensional constants used to identify Suzuki's principal form with `(1/2)L_Delta + gamma`. The exact interval exterior-Carleman estimate, graph-domain equality, and resulting squared-log Weil-eigenstate moment in `PL-289` are Mathia derivations, not claims attributed to this paper.
