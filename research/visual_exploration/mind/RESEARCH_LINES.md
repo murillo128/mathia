@@ -14,20 +14,18 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Resolve cross-scale accumulation and the macroscopic gap regime at the full-prime linear-support boundary
+## Remove deterministic endpoint resonance before interpreting cross-scale prime-gap accumulation
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-179 variance-matches every strictly sublinear support law. VIS-180 shows that sparse bounded-gap two-prime supports can retain an order-one slow beat at linear support, while VIS-181--VIS-184 progressively show that this does not survive automatically in diffuse full-prime power profiles.
+VIS-179 variance-matches every strictly sublinear support law. VIS-180 shows that sparse bounded-gap two-prime supports can retain an order-one slow beat at linear support, while VIS-181--VIS-184 show that this does not survive automatically in diffuse full-prime power profiles.
 
-VIS-185 uses the actual interval kernel rather than the crude bound `|K|<=1` and kills every subpolynomial cumulative gap band at linear observation scale. VIS-186 now closes each **individual polynomial mesoscopic gap octave** as well. Uniformly for `y^epsilon<=D<=y^(1-epsilon)` and `H>=c y`,
+VIS-185 uses the exact interval kernel and kills every subpolynomial cumulative gap band at linear observation scale. VIS-186 then closes every **individual polynomial mesoscopic gap octave**. The remaining shellwise upper bound could still sum over `Theta(log y)` logarithmic scales.
 
-`R_shell(D) << (D/y)^(2-2alpha)(log y/log D) + 1/log y -> 0`.
+VIS-187 now shows that such logarithmic accumulation is not automatically arithmetic. For a flat deterministic even-gap null with `H=cp`, `T=tau p`, and cumulative range `M=o(p^(1/2))`, the sum reduces to a difference of harmonic exponential series. It has a `log M` term exactly when one scaled window endpoint `tau` or `tau+c` is resonant modulo `pi` and the other is not. Thus a rectangular observation window can itself create coherent cross-scale accumulation from a completely source-free gap profile.
 
-Thus no fixed shell `D=y^delta`, `0<delta<1`, can carry an order-one normalized contribution. The unresolved polynomial cumulative band can survive the current upper bound only through accumulation across `Theta(log y)` logarithmic scales, not concentration at one polynomial scale. The other untreated regime is genuinely macroscopic separation `d comparable to y`.
+The next positive test must therefore preserve or explicitly remove this endpoint-resonant null before asking whether prime-dependent weights create additional coherence across octaves. A surviving residual must distinguish **source coherence** from **window-endpoint coherence**. The other untreated regime remains genuinely macroscopic separation `d comparable to y`; VIS-187 does not address it.
 
-The next coherent test should therefore analyze the log-gap distribution of the **complete off-diagonal kernel**: prove enough cross-scale cancellation to sum the shell bounds, identify a source-specific correlation that coherently couples many octaves, or isolate a macroscopic contribution. Widening another local band is no longer the right question.
+## Keep weight geometry, transfer horizon, functional order, one-shell crowding, cross-scale accumulation, and endpoint resonance separate
 
-## Keep weight geometry, transfer horizon, functional order, one-shell crowding, and cross-scale accumulation separate
-
-A sparse close pair and a diffuse full-prime band live in different normalization regimes. VIS-186 shows that even a polynomially located mesoscopic shell becomes negligible once the exact time-averaging kernel and full-prefix normalization are paid. Any surviving claim must preserve the same weights, support law, observation scale, and quantitative gap geometry across a growing family of scales.
+A sparse close pair and a diffuse full-prime band live in different normalization regimes. VIS-186 shows that no single polynomial mesoscopic octave survives the exact time-averaging kernel and full-prefix normalization. VIS-187 shows that summing many small octaves can nevertheless produce a logarithm for purely deterministic reasons when a window endpoint resonates. Any arithmetic claim must preserve the same weights, support law, observation scale, endpoint geometry, and quantitative gap structure in its control.

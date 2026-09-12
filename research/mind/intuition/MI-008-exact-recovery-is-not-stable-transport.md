@@ -1,23 +1,17 @@
 # MI-008 — Exact recovery, source normalization, representation distortion, and target-conditioned robustness are different resources
 
-**Evidence level:** supported by AF-282--AF-293 and PF-303--PF-307; no universal target modulus or full mixed-response theorem is claimed.
+**Evidence level:** supported by AF-282--AF-294 and PF-303--PF-308; no universal target modulus or theorem for the final physical prime-flute mixed response is claimed.
 
 Arithmetic Fidelity separates acquisition from the final analytic target. AF-282--AF-289 classify mixed finite-prefix recovery, frame conditioning, and timing perturbations after removing the common-clock gauge. AF-290 then identifies a different resource: the exact coefficient perturbation radius preserving a finite zero count is distance to the boundary-zero discriminant.
 
-AF-291 shows that this target radius can shrink with breadth even while eta truncations converge correctly on the boundary. AF-292 rules out diagonal Hilbert repair. AF-293 extends the classification to arbitrary dense Hilbert metrics under a condition-number budget: with `kappa(G)<=K`, the best normalized margin is comparable to
+AF-291 shows that this target radius shrinks with breadth even while eta truncations converge correctly on the boundary. AF-292 rules out diagonal Hilbert repair, and AF-293 shows that arbitrary dense Hilbert mixing repairs the margin only by paying condition number at the reciprocal scale of the raw target margin.
 
-`min(1, sqrt(K)/(sqrt(N) H_N(alpha)))`.
+AF-294 moves the same accounting principle outside linear Hilbert geometry. A uniformly quasisymmetric nonlinear representation with honest transport of the discriminant preserves qualitative collapse of the normalized relative margin: if the source margin tends to zero, so does the represented margin. An order-one repair therefore requires relative distortion that degenerates at the shrinking margin scale, or a genuine category change such as a different target, quotient, enrichment, or uncontrolled/nonmetric geometry.
 
-An order-one repair therefore requires representation condition number at the reciprocal scale of the raw target margin. Dense mixing can move the instability, but it does not erase the bill unless the anisotropy has an independent mathematical justification.
+Prime Flute supplies the complementary normalization-and-conversion picture. PF-303--PF-305 make the scalar Green reservoir a norm-one positive contraction after killing normalization. PF-306 locates the first post-scalar instability at the constant-to-nonconstant Schur angle, and PF-307 proves that the global angle saturates on canonical tail blocks.
 
-Prime Flute supplies the complementary normalization-and-conversion picture. PF-303--PF-305 make the scalar Green reservoir a norm-one positive contraction after killing normalization. PF-306 then locates the first post-scalar instability exactly at the normalized constant-to-nonconstant Schur angle `K_N`; its squared norm is the maximal constant-energy fraction screened by nonconstant relaxation.
+PF-308 then shows that this is not merely an unrestricted operator-norm pathology. The explicit screened traces have macroscopic killing mass but sublinear shorted energy, forcing the **full killing-normalized constant Green block** to diverge in norm. Thus the canonical killing normalization does not make the dangerous directions source-invisible. Any remaining rescue must occur at the narrower physical `P/H` entrance/reassembly maps, through signed cancellation, or through multiplicity/ideal structure of the actually reached directions.
 
-PF-307 shows that even this normalized conversion cannot be controlled by a global gap. On canonical seam-cut tail blocks there are finite sections with
+The cross-line lesson is now sharper: **a representation or normalization can remove one instability only by paying the next interface in the geometry actually consumed by the destination**. AF-294 says uniformly controlled coordinate changes preserve a vanishing target-relative margin; PF-308 says a source normalization that neutralizes scalar depth can still expose an unbounded conversion on its full normalized constant sector. Once a coarse controlled category is exhausted, the theorem must justify either a genuinely narrower source/target range or a genuine change of information/category.
 
-`1-||C_(M,L(M))||^2 -> 0`.
-
-Thus the full Schur resolvent is necessarily ill-conditioned in operator norm along the tail. The live quantity is not another global norm but **source-accessed conditioning**: whether the physical forcing/reassembly maps overlap the nearly screened directions, with what multiplicity, and in which ideal norm.
-
-The cross-line lesson is concrete: **remove exact nuisance symmetries, normalize by the source's coercive currency, then price every representation and conversion map only on the directions the destination actually consumes**. A repair may relocate instability from target margin to representation distortion, or from scalar return to a nearly singular conversion angle. Once the global norm is forced to be bad, source-restricted geometry becomes part of the theorem rather than an optimization detail.
-
-**Boundary.** AF-293 concerns finite eta zero-count geometry under linear Hilbert metrics; PF-307 concerns the canonical finite seam-cut block response. Their operators do not transfer. The synthesis is the accounting principle that no favorable intermediate normalization counts as transport until the reached directions at the next interface are controlled.
+**Boundary.** AF-294 concerns finite eta zero-count geometry under quasisymmetric metric embeddings with honest bad-set transport; PF-308 concerns canonical finite seam-cut blocks and the full killing-normalized constant sector. Their operators do not transfer. The synthesis is an accounting principle about where conditioning lives, not a shared bound.

@@ -1,27 +1,31 @@
-# MI-010 — Scalar Green response is killing-normalized averaging; the global post-scalar Schur angle saturates
+# MI-010 — Scalar Green response is killing-normalized averaging, but nonconstant screening is visible to the full killing-normalized constant sector
 
-**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-307; no source-weighted Schur-resolvent bound, weak/Schatten estimate, or arithmetic discrimination is claimed.
+**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-308; no theorem for the final physical `P/H` entrance/reassembly compression, weak/Schatten estimate, or arithmetic discrimination is claimed.
 
 PF-298 writes every constant-boundary pant compression as a positive conductance edge plus positive shifted Robin killing. PF-303--PF-305 then normalize the assembled constant chain as
 
 `H_N=L_(c,N)+D_N`, `G_N=H_N^-1`, `S_N=D_N^(1/2)G_ND_N^(1/2)`,
 
-with `0<S_N<=I` and `||S_N||=1`. Scalar return depth is therefore ideal-neutral after killing normalization: a scalar-mediated mixed response must pay compactness or ideal decay at its normalized conversion interfaces.
+with `0<S_N<=I` and `||S_N||=1`. Scalar return depth is therefore ideal-neutral after killing normalization.
 
-PF-306 identifies the first operator omitted when constants are embedded back into the full positive response. With
+PF-306 identifies the first operator omitted when constants are embedded back into the full positive response. With `C_N=H_N^-1/2 B_N J_N^-1/2`, the constant Green block acquires the exact backreaction factor `(I-C_NC_N*)^-1`. PF-307 proves that the canonical tail geometry has no uniform angle gap: explicit long-block screening modes force `||C_(M,L(M))|| -> 1`.
 
-`A_N=[[H_N,B_N],[B_N*,J_N]]>0`,
+PF-308 resolves the source-access question for the **entire killing-normalized constant sector**. The same PF-217 screened traces satisfy
 
-set `K_N=H_N^-1/2 B_N J_N^-1/2`. Then `||K_N||<1` for each finite section, `||K_N||^2` is exactly the worst fraction of raw constant energy screened by nonconstant relaxation, and the constant Green block acquires `(I-K_NK_N*)^-1`.
+`<t,D_M t> >= c M`
 
-PF-307 decides the global-gap alternative for the canonical PF-205 seam-cut response. Combining PF-216's macroscopic raw constant floor with PF-217's cheap tangential relaxation produces tail blocks and growing finite tangential cutoffs for which the normalized conversion angle `C_(M,L)` satisfies
+while their fully shorted energy obeys
 
-`1-||C_(M,L(M))||^2 <= C[(1+log M)/M + P_M^-eta] -> 0`.
+`<t,H_(M,L)^eff t> <= C(1+log M+M P_M^-eta)`.
 
-Thus `sup_(M,L)||C_(M,L)||=1`. A depth-uniform global Schur-angle gap is not merely unavailable; it is false in this representation. The nearly unit directions are explicit constant-to-tangential screening modes on long tail blocks.
+Hence the generalized inverse Rayleigh quotient gives
 
-This does **not** imply a large physical mixed response. Operator-norm saturation can be harmless if the actual normalized source and reassembly maps have vanishing overlap with the screened directions, and one witness direction per block gives no singular-value counting law. The live object is therefore source- and target-adapted, for example a bound on `(I-CC*)^-1/2 Z` for the genuine source range or the corresponding two-sided compression.
+`||D_M^(1/2)(H_(M,L)^eff)^-1D_M^(1/2)|| -> infinity`.
 
-The reusable lesson is that **normalizing away scalar return exposes a conversion obstruction, but the full conversion norm is itself too pessimistic**. Once a near-unit angle is geometrically forced, the only useful currency is accessibility/multiplicity of those nearly screened directions under the actual physical vertices.
+The nearly screened directions are therefore not made harmless merely by weighting the constant source with the canonical killing. PF-305 remains exact inside the scalar chain, but the protection ends after nonconstant relaxation: the same normalization cannot simultaneously neutralize the Schur backreaction.
 
-**Boundary.** PF-307 concerns the canonical PF-205 constant/nonconstant split and proves existence of saturating directions, not density of near-unit singular values, noncompactness, weak-trace failure, or an RH consequence. Any materially different interface representation needs its own blockwise dictionary before importing the numerical angle statement.
+This narrows the surviving route again. The relevant object is no longer the full constant source space, but the **actual physical `P/H` source and reassembly maps that precede and follow it**. A positive theorem must show that those narrower maps avoid/suppress the screened profiles, that signed reassembly cancels their amplification, or that dangerous directions are sufficiently sparse for the final two-sided response to satisfy the required ideal estimate.
+
+The reusable lesson is that **a source normalization can remove one reservoir while leaving the next conversion singular on source-accessible directions**. After a global norm is bad, it is not enough to restrict to a coarse “physical-looking” sector; the restriction must be the exact source/target range consumed by the final observable.
+
+**Boundary.** PF-308 proves divergence of canonical finite-section killing-normalized constant Green blocks. It does not prove that the final physical `P/H` mixed response is unbounded, noncompact, or outside weak trace class, and it gives no density law for dangerous singular directions. A materially different interface representation requires its own blockwise dictionary.

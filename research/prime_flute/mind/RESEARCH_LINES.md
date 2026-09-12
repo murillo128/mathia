@@ -1,6 +1,6 @@
 # Prime-flute mathematical questions
 
-## Control source access to the nearly saturated constant–nonconstant screening directions
+## Control the actual physical P/H source and reassembly after killing-normalized constant access fails
 
 **Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`.
 
@@ -8,21 +8,21 @@ PF-303--PF-305 normalize the finite constant-mode chain so that the scalar Green
 
 PF-306 identifies the first post-scalar operator. For the full positive response split into constants and retained nonconstants,
 
-`A_N=[[H_N,B_N],[B_N*,J_N]]`, `K_N=H_N^-1/2 B_N J_N^-1/2`.
+`A_N=[[H_N,B_N],[B_N*,J_N]]`, `C_N=H_N^-1/2 B_N J_N^-1/2`.
 
-The squared angle norm is the worst constant-energy fraction screened by nonconstant relaxation, and `(I-K_NK_N*)^-1` is the exact first backreaction factor.
+PF-307 rules out a depth-uniform global Schur-angle gap: explicit screened tail blocks force `||C_(M,L(M))|| -> 1`. PF-308 now closes the next escape. The same screened traces carry macroscopic PF-303 killing mass while their fully shorted energy is sublinear, so
 
-PF-307 now rules out the simplest hoped-for estimate. In the canonical PF-205 seam-cut response, PF-216's raw constant floor and PF-217's tangential screening trial force finite tail blocks with
+`||D_M^(1/2) (H_(M,L)^eff)^-1 D_M^(1/2)|| -> infinity`.
 
-`1-||C_(M,L(M))||^2 <= C[(1+log M)/M + P_M^-eta] -> 0`.
+Thus the nearly screened directions are not hidden from the **full killing-normalized constant source sector**. Killing normalization removes scalar return depth but cannot neutralize the nonconstant screening backreaction.
 
-Hence no uniform global angle gap exists: `sup ||C_(M,L)||=1`. The live theorem must therefore be **source- and target-adapted**. Determine whether the genuine normalized `P/H` source/reassembly maps avoid the explicit nearly screened tail directions, or quantify their overlap/multiplicity strongly enough to prove the required weak/Schatten statement. Bounding the full Schur-resolvent norm is now a closed route.
+The live theorem is narrower and more physical. Determine whether the genuine `P/H` entrance and reassembly maps select a smaller source/target range that suppresses these screened modes, whether signed reassembly cancels them, or whether their multiplicity is small enough for the final two-sided response to satisfy the required weak/Schatten estimate. A uniform bound on either the full Schur resolvent or its full killing-normalized constant compression is now a closed route.
 
-## Global heavy-range projection counts after local witnesses vanish
+## Global heavy-range projection counts after one accessible screened direction is known
 
-For the PF-287 heavy low/high extension-range projection product, does the full tail have vanishing essential norm, and can its singular-value counting function satisfy the required weak-trace bound? PF-307 supplies one near-unit screening direction on growing tail blocks but not a density/count of such directions. Weak/Schatten conclusions require source-weighted accessibility or multiplicity, not operator-norm saturation alone.
+For the PF-287 heavy low/high extension-range projection product, does the full tail have vanishing essential norm, and can its singular-value counting function satisfy the required weak-trace bound? PF-308 supplies an explicit dangerous direction that is accessible to the killing-normalized constant sector, but still not a density/count of such directions and not a theorem about the final physical `P/H` two-sided response. Weak/Schatten conclusions require multiplicity plus the actual entrance/reassembly geometry, not one diverging generalized Rayleigh quotient.
 
-PF-305--PF-307 therefore localize the remaining burden sharply: ideal decay cannot come from scalar return depth or a global constant/nonconstant gap. It must enter through physical source/reassembly geometry, through restricted angle control on the reached subspaces, or at a later nonconstant vertex.
+PF-305--PF-308 therefore localize the remaining burden sharply: ideal decay cannot come from scalar return depth, a global constant/nonconstant angle gap, or a full killing-normalized constant-sector bound. It must enter through the narrower physical source/reassembly maps, signed structure, restricted angle control on the actually reached subspaces, or a later nonconstant vertex.
 
 ## Prime realization within the resolved upstream-memory window
 

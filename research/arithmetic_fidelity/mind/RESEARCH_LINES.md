@@ -26,14 +26,18 @@ AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error 
 
 AF-282--AF-289 show that a finite Dirichlet prefix can be recovered by a well-conditioned mixed frame after the common-clock gauge is removed. AF-290 then identifies a separate target gate: the exact coefficient radius preserving the zero count is distance to the boundary-zero discriminant.
 
-AF-291 proves that the normalized eta margin collapses on every fixed RH-relevant contour despite correct analytic boundary convergence. AF-292 shows that no positive diagonal Hilbert reweighting improves the critical-strip power. AF-293 now classifies arbitrary positive-definite Hilbert mixing under a condition-number budget:
+AF-291 proves that the normalized eta margin collapses on every fixed RH-relevant contour despite correct analytic boundary convergence. AF-292 shows that no positive diagonal Hilbert reweighting improves the critical-strip power. AF-293 classifies arbitrary positive-definite Hilbert mixing under a condition-number budget:
 
 `D_(Gamma,N)(K) asymp_Gamma min(1, sqrt(K)/(sqrt(N) H_N(alpha)))`.
 
-Thus bounded-condition dense mixing is no better asymptotically than the raw coordinates. Making the margin order one requires `kappa(G_N) asymp N H_N(alpha)^2`, or `kappa_2(A_N) asymp sqrt(N) H_N(alpha)` for `G=A* A`, exactly the reciprocal scale of the raw margin.
+AF-294 now closes the uniformly controlled nonlinear version of the same escape. For relative discriminator margin `rho_X=dist(x,D)/d(x,a)`, any injective `eta`-quasisymmetric representation with honest transport of the bad set satisfies
 
-The live escape is therefore not merely “use non-diagonal mixing.” It must supply an independently justified anisotropic geometry whose conditioning bill is mathematically meaningful, or use a nonlinear representation, target-relevant quotient, non-Hilbert topology, or another carrier whose upstream error can be proved small in the target's own stability geometry.
+`1/eta(1/rho_X) <= rho_Y <= eta(rho_X)`.
+
+Hence one uniform distortion function cannot turn `rho_N -> 0` into an order-one target margin. A nonlinear family that repairs the eta margin must let its relative distortion degenerate at the shrinking discriminator scale, change the bad set/target category, add genuinely new information, use a quotient/compression requiring its own fidelity analysis, or leave the quasisymmetric metric category.
+
+The live question is therefore not whether a clever coordinate system can enlarge the margin. It is whether the source supplies a **natural reason** for the required scale-dependent distortion or for a genuinely different target geometry, rather than merely relocating the same instability into the representation.
 
 ## Treat the information bills separately
 
-Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, and representation distortion are distinct resources. Exact or stable upstream recovery is useful only if the final observable remains stable in its own quotient geometry, and a coordinate transform does not remove instability when its condition number grows at the reciprocal target-margin scale.
+Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, linear condition number, and nonlinear relative distortion are distinct resources. Exact or stable upstream recovery is useful only if the final observable remains stable in its own quotient geometry. AF-293--AF-294 show that neither bounded-condition linear mixing nor uniformly quasisymmetric nonlinear reparameterization removes a vanishing target margin for free.
