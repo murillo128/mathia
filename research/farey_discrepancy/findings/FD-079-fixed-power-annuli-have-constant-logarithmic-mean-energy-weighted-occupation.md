@@ -1,0 +1,440 @@
+# FD-079 — fixed-power annuli have constant logarithmic-mean energy-weighted occupation
+
+**Status:** `EXACT-DERIVED + ANNULAR-DILATION + ENERGY-WEIGHTED-OCCUPATION + LOGARITHMIC-ENTROPY + CONSTANT-GEOMETRIC-MEAN + FOUR-ADIC-GAP`.
+
+`FD-078` proves that, in every fixed power annulus of horizons, the total physical Schur energy and its nonsquarefree part have the same full power exponent `2 Theta`. Equivalently, the annular energy-weighted occupation can lose only a subpower factor. That leaves an important slowly varying escape: the annular ratio could still tend to zero through inverse logarithms, stretched exponentials in `log H`, or another subpower law.
+
+The fixed nonsquarefree dilation of `FD-047` closes that escape **on logarithmic average over annulus endpoints**. The key point is that a complete `q`-block of horizons preserves the exact logarithmic weight. After aggregating over a fixed-power annulus, the pointwise row injection becomes a lower-scale copy of the entire annular energy. The same multiplicative telescoping mechanism behind `FD-050` can then be applied to the **energy-weighted annular ratio itself**, not merely to the unweighted pointwise occupations.
+
+Fix a Schur head `D>=1`, a power-annulus parameter `0<alpha<1`, and a nonsquarefree integer `q>1`. Write
+
+\[
+w(r):=\frac{J_2(r)}{r^2},
+\]
+
+\[
+E_{H,D}
+:=
+\sum_{D<r\le H}w(r)
+\mathcal H\!\left(\left\lfloor\frac Hr\right\rfloor\right)^2,
+\]
+
+\[
+U_{H,D}
+:=
+\sum_{\substack{D<r\le H\\\mu(r)=0}}w(r)
+\mathcal H\!\left(\left\lfloor\frac Hr\right\rfloor\right)^2,
+\]
+
+and
+
+\[
+\lambda_H:=\log\frac{H+1}{H}.
+\]
+
+For an integer endpoint `X`, define the fixed-power annular energies
+
+\[
+\mathscr E_{D,\alpha}(X)
+:=
+\sum_{X^{1-\alpha}<H\le X}
+\lambda_HE_{H,D},
+\]
+
+\[
+\mathscr U_{D,\alpha}(X)
+:=
+\sum_{X^{1-\alpha}<H\le X}
+\lambda_HU_{H,D},
+\]
+
+and their energy-weighted nonsquarefree occupation
+
+\[
+\Omega_{D,\alpha}(X)
+:=
+\frac{\mathscr U_{D,\alpha}(X)}
+{\mathscr E_{D,\alpha}(X)}.
+\]
+
+Let
+
+\[
+\Theta
+:=
+\sup\{\Re\rho:\zeta(\rho)=0,\ 0<\Re\rho<1\},
+\]
+
+and put
+
+\[
+L_q:=2\Theta\log q-\log w(q),
+\qquad
+c_q:=e^{-L_q}=w(q)q^{-2\Theta}.
+\]
+
+Then there is an endpoint `X_*` such that `Omega_(D,alpha)(X)>0` for `X>=X_*`, and with
+
+\[
+W_X:=\sum_{H=X_*}^{X}\lambda_H
+=\log\frac{X+1}{X_*},
+\]
+
+one has
+
+\[
+\boxed{
+\limsup_{X\to\infty}
+\frac1{W_X}
+\sum_{H=X_*}^{X}
+\lambda_H
+\log\frac1{\Omega_{D,\alpha}(H)}
+\le L_q.
+}
+\tag{1}
+\]
+
+Consequently the logarithmically weighted geometric and arithmetic means satisfy
+
+\[
+\boxed{
+\liminf_{X\to\infty}
+\prod_{H=X_*}^{X}
+\Omega_{D,\alpha}(H)^{\lambda_H/W_X}
+\ge c_q,
+}
+\tag{2}
+\]
+
+\[
+\boxed{
+\liminf_{X\to\infty}
+\frac1{W_X}
+\sum_{H=X_*}^{X}
+\lambda_H\Omega_{D,\alpha}(H)
+\ge c_q.
+}
+\tag{3}
+\]
+
+For every fixed `0<eta<1`, the lower tail obeys
+
+\[
+\boxed{
+\limsup_{X\to\infty}
+\frac1{W_X}
+\sum_{\substack{X_*\le H\le X\\
+\Omega_{D,\alpha}(H)\le\eta}}
+\lambda_H
+\le
+\min\!\left\{1,
+\frac{L_q}{\log(1/\eta)}
+\right\}.
+}
+\tag{4}
+\]
+
+In particular, if `eta_X -> 0` is any deterministic threshold, then
+
+\[
+\boxed{
+\frac1{W_X}
+\sum_{\substack{X_*\le H\le X\\
+\Omega_{D,\alpha}(H)\le\eta_X}}
+\lambda_H
+\longrightarrow0.
+}
+\tag{5}
+\]
+
+Thus the subpower escape left by `FD-078` cannot occur at almost every logarithmic scale. The annular energy-weighted occupation may still have arbitrarily deep sparse dips, but it cannot tend to zero along the full endpoint tail, and every threshold `eta<c_q` is exceeded on a positive lower logarithmic proportion of endpoints.
+
+For the four-adic dilation `q=4`, `w(4)=3/4`, so
+
+\[
+\boxed{
+c_4=\frac34\,4^{-2\Theta}\ge\frac3{64},
+\qquad
+L_4=2\Theta\log4-\log\frac34
+\le\log\frac{64}{3}.}
+\tag{6}
+\]
+
+Under RH these constants sharpen to `c_4=3/16` and `L_4=log(16/3)`.
+
+## 1. Complete dilation blocks inject a lower annulus with exactly the same logarithmic weight
+
+`FD-047` gives the pointwise nonsquarefree dilation inequality
+
+\[
+\boxed{
+U_{H,D}\ge w(q)E_{\lfloor H/q\rfloor,D}
+}
+\tag{7}
+\]
+
+whenever the lower horizon is beyond the fixed head. To aggregate it without losing scale weight, define
+
+\[
+P_q(X):=\left\lfloor\frac Xq\right\rfloor-1.
+\tag{8}
+\]
+
+Fix a sufficiently large endpoint `X`. For every integer
+
+\[
+P_q(X)^{1-\alpha}<K\le P_q(X),
+\]
+
+consider the complete block
+
+\[
+qK\le H\le q(K+1)-1.
+\tag{9}
+\]
+
+The upper edge lies below `X`, because
+
+\[
+q(K+1)-1
+\le q\left\lfloor\frac Xq\right\rfloor-1
+<X.
+\tag{10}
+\]
+
+The lower edge lies above the lower boundary of the target annulus for all sufficiently large `X`. Indeed,
+
+\[
+\frac{qP_q(X)^{1-\alpha}}{X^{1-\alpha}}
+\longrightarrow q^\alpha>1.
+\tag{11}
+\]
+
+Hence every horizon in every block (9) belongs to `(X^(1-alpha),X]`. On that block `floor(H/q)=K`, so (7) gives
+
+\[
+U_{H,D}\ge w(q)E_{K,D}.
+\tag{12}
+\]
+
+The decisive identity is that the logarithmic horizon weights telescope across the whole block:
+
+\[
+\boxed{
+\sum_{H=qK}^{q(K+1)-1}\lambda_H
+=
+\log\frac{q(K+1)}{qK}
+=
+\lambda_K.
+}
+\tag{13}
+\]
+
+Summing (12) over all the complete blocks generated by the lower annulus therefore yields the exact eventual inequality
+
+\[
+\boxed{
+\mathscr U_{D,\alpha}(X)
+\ge
+w(q)\,
+\mathscr E_{D,\alpha}(P_q(X)).
+}
+\tag{14}
+\]
+
+This is the new structural step. `FD-047` injects one lower horizon into one upper horizon; (14) injects an entire **energy-weighted fixed-power annulus** into the next scale with no loss in its natural logarithmic measure.
+
+## 2. The annular occupation is controlled by one scale difference
+
+Abbreviate
+
+\[
+A(X):=\mathscr E_{D,\alpha}(X),
+\qquad
+B(X):=\mathscr U_{D,\alpha}(X),
+\qquad
+F(X):=\log A(X).
+\tag{15}
+\]
+
+`FD-078` gives
+
+\[
+\frac{\log(1+A(X))}{\log X}\longrightarrow2\Theta,
+\tag{16}
+\]
+
+so `A(X)>1` for all sufficiently large `X`. From (14), after increasing `X_*` if necessary,
+
+\[
+\log\frac1{\Omega_{D,\alpha}(X)}
+\le
+-\log w(q)
++F(X)-F(P_q(X)).
+\tag{17}
+\]
+
+The same zero-frontier upper envelope used in `FD-078` also gives, for every fixed `sigma>Theta`,
+
+\[
+A(X)
+\le
+\sum_{H\le X}\lambda_HE_{H,D}
+\ll_{D,\sigma}X^{2\sigma},
+\]
+
+hence
+
+\[
+\boxed{
+F(X)\le2\sigma\log X+O_{D,\sigma,\alpha}(1).
+}
+\tag{18}
+\]
+
+Thus the entire problem is reduced to the average of the single scale difference in (17).
+
+## 3. Endpoint averaging cancels every interior scale
+
+The predecessor map has exact integer blocks. Namely,
+
+\[
+P_q(H)=N
+\quad\Longleftrightarrow\quad
+q(N+1)\le H\le q(N+2)-1.
+\tag{19}
+\]
+
+Therefore a complete predecessor block has weight
+
+\[
+\sum_{H=q(N+1)}^{q(N+2)-1}\lambda_H
+=
+\lambda_{N+1}.
+\tag{20}
+\]
+
+Let `M_X=floor(X/q)-2`. Dropping the final incomplete predecessor block can only increase the upper bound for the scale-difference sum once `F` is nonnegative. Up to a fixed initial contribution,
+
+\[
+\begin{aligned}
+&\sum_{H=X_*}^{X}\lambda_H
+\bigl(F(H)-F(P_q(H))\bigr)\\
+&\qquad\le
+\sum_{N=N_*}^{M_X}
+(\lambda_N-\lambda_{N+1})F(N)
++
+\sum_{N>M_X}^{X}\lambda_NF(N)
++O(1).
+\end{aligned}
+\tag{21}
+\]
+
+The first sum on the right is bounded uniformly in `X`: since
+
+\[
+\lambda_N-\lambda_{N+1}=O(N^{-2})
+\]
+
+and (18) gives `F(N)=O(log N)`, its infinite continuation converges.
+
+Only the top multiplicative boundary remains. Because `M_X=X/q+O(1)`, (18) gives
+
+\[
+\begin{aligned}
+\sum_{N>M_X}^{X}\lambda_NF(N)
+&\le
+(2\sigma\log X+O(1))
+\sum_{N>M_X}^{X}\lambda_N\\
+&=
+2\sigma(\log q)\log X+o(\log X).
+\end{aligned}
+\tag{22}
+\]
+
+Insert (21)--(22) into (17), divide by
+
+\[
+W_X=\log\frac{X+1}{X_*}=\log X+O(1),
+\]
+
+and let `X -> infinity`. This gives
+
+\[
+\limsup
+\frac1{W_X}
+\sum_{H=X_*}^{X}\lambda_H
+\log\frac1{\Omega_{D,\alpha}(H)}
+\le
+2\sigma\log q-\log w(q).
+\tag{23}
+\]
+
+Finally let `sigma` decrease to `Theta`, proving (1).
+
+The constant is exactly the same `L_q` that appears in the pointwise logarithmic-occupation theorem `FD-050`. The equality of constants is not a restatement: here each endpoint ratio already contains a second, **energy-weighted average across an entire power annulus** before the outer logarithmic endpoint average is taken.
+
+## 4. Constant recurrence follows from the entropy bound
+
+Every annular occupation satisfies `0<Omega<=1`. Exponentiating the negative of (1) proves the geometric-mean bound (2), and weighted AM--GM gives (3).
+
+On an endpoint with `Omega<=eta`,
+
+\[
+\log\frac1\Omega\ge\log\frac1\eta.
+\]
+
+Applying this to the nonnegative sum in (1) proves (4). Replacing `eta` by any deterministic `eta_X -> 0` proves (5), because the numerator in the entropy average remains bounded while `log(1/eta_X)` diverges.
+
+For every fixed `eta<c_q`, equation (4) gives explicitly
+
+\[
+\boxed{
+\liminf_{X\to\infty}
+\frac1{W_X}
+\sum_{\substack{X_*\le H\le X\\
+\Omega_{D,\alpha}(H)>\eta}}
+\lambda_H
+\ge
+1-\frac{L_q}{\log(1/\eta)}
+>0.
+}
+\tag{24}
+\]
+
+So constant-strength energy-weighted annular occupation recurs on a positive logarithmic proportion of endpoint scales. In particular `Omega_(D,alpha)(H)` cannot converge to zero.
+
+If
+
+\[
+\Pi_{D,\alpha}(H)
+:=
+\frac{\mathscr R_{D,\alpha}(H)}
+{\mathscr E_{D,\alpha}(H)}
+\]
+
+is the annular energy-weighted Schur projective defect of `FD-078`, then `Pi>=Omega` endpointwise. Hence (1)--(5) and (24) remain valid with `Omega` replaced by `Pi`.
+
+## 5. What this closes and what remains open
+
+`FD-078` left open the possibility that the energy-weighted annular occupation decays subpolynomially at every endpoint. Equations (1)--(5) rule that out. The remaining low-occupation endpoints may be arbitrarily bad, but as the threshold tends to zero they occupy asymptotically zero logarithmic measure. This supplies the nonvanishing aggregate recurrence that the post-`FD-078` frontier was missing.
+
+The result is still weaker than the accepted pointwise clue `CLUE-joint-nonsquarefree-jordan-energy-occupation`. It does **not** prove
+
+\[
+U_{H,D}\ge c_DE_{H,D}
+\]
+
+for every large `H`, nor even a pointwise lower bound for `Omega_(D,alpha)(H)`. A sequence of exceptional endpoints of zero logarithmic density may still carry arbitrarily deep occupation losses. The sparse matched-control behavior behind `FD-048` is therefore not contradicted.
+
+The fixed `alpha>0` hypothesis is load-bearing in (11). If `alpha` tends to zero with the endpoint, the dilation factor `q^alpha` may no longer separate the complete lower blocks from the target annulus boundary. The fixed-head hypothesis is also retained from `FD-047` and `FD-078`. Finally, `q` must be an integer and nonsquarefree: integrality gives the exact floor blocks (19), while nonsquarefreeness is what places the dilated rows inside `U`.
+
+At the critical boundary `Theta=1/2`, the theorem remains valid and gives the same positive logarithmic-mean constants, but it creates no contradiction with RH. Under false RH it likewise does not improve the Mertens exponent by itself; it says that the full off-critical annular energy cannot hide from the nonsquarefree transverse sector on almost every multiplicative endpoint scale.
+
+## 6. Prior-art boundary
+
+No new external theorem is needed. The load-bearing inputs are the exact nonsquarefree dilation injection already proved in `FD-047` and the zeta-zero energy envelope / annular growth theorem already persisted in `FD-046` and `FD-078`. The rest is an exact block identity for the weights `lambda_H` and a logarithmic scale-difference argument.
+
+A directed prior-art search over Farey discrepancy, Mertens/Jordan-totient energies, GCD matrices, nonsquarefree restrictions, and logarithmic averaging found the expected Farey local-discrepancy and Jordan/GCD-matrix literature but no result matching this energy-weighted fixed-power-annulus occupation statement. No priority claim is made. Because no new literature theorem is load-bearing, `SOURCES.md` is unchanged.
+
+The distinction from the closest canonical results is precise. `FD-050` controls the logarithmic mean of the **pointwise** ratio `U_(H,D)/E_(H,D)` under multiplicative horizon measure, while `FD-078` controls the **energy-weighted annular** ratio only at polynomial resolution. The present result combines the two levels: it gives a fixed positive logarithmic geometric/arithmetic mean and lower-tail bound for the already energy-weighted annular ratio itself.
