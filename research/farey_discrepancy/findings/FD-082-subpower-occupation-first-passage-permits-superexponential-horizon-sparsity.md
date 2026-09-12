@@ -57,8 +57,7 @@ u_n:=\log\log g_n,
 one has
 
 \[
-\boxed{
-u_{n+1}-u_n\longrightarrow0.}
+\boxed{u_{n+1}-u_n\longrightarrow0.}
 \tag{2}
 \]
 
