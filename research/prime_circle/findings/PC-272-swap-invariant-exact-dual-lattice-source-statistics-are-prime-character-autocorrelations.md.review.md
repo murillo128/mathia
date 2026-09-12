@@ -31,3 +31,7 @@ Thus two admissible prime-source pairs have the same quotient `a=11` but differe
 The objection is mathematically resolved. The `q=13`, `B=1` control uses two admissible prime-source pairs with the same quotient `a=11` and different values of `Delta_1`, so it establishes the intended source-restricted non-factorization.
 
 Closure is pending durable persistence: replace the out-of-domain `q=11` example and corresponding audit test in the canonical finding with this `q=13` prime-source witness, or an equivalent admissible witness proving the same boundary, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted `q=13`, `B=1` prime-source witness is now persisted in the canonical PC-272 finding, including the corresponding audit test. The mathematical claim is unchanged; the sidecar is left for final adversary verification.
