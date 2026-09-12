@@ -8,28 +8,22 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Compare continuation and prediction growth on the same q-adic refinement ledger
+## Compare residual discovery with future screening on the same q-adic refinement level
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
-NB-066--NB-076 reduce a persistent late quotient to the uncancelled continuation charge `J_(R,N)=L_R-C_(R,N)`, where `L_R` is raw continuation volume and `C` is a nonnegative cross-cut lattice of conditioned prediction charges. NB-077 proves that both `L` and finite cross-cut charge are monotone under exact integer branching.
+NB-066--NB-078 reduce a persistent late quotient to the uncancelled continuation charge `J`, then express its q-adic change as new continuation minus new prediction. NB-079 sharpens that ledger by canceling the common prediction mode before any source estimate is attempted.
 
-NB-078 resolves the **increment** created by each `q`-adic refinement. Block averages reproduce the coarse innovations exactly, while the complementary branch-contrast subspaces carry the entire fine-scale gain. Both
+At every exact refinement step,
 
-`L_(qR)-L_R`
+`ell=G+P` and `c=G+S`,
 
-and
+where `G` is fine-past predictability already supplied by the coarse future, `P` is residual continuation discovered after conditioning on that coarse future, and `S` is screening supplied by the new future contrasts. Hence
 
-`C_(qR,q(N+1)-1)-C_(R,N)`
+`J_m=J_0+sum_(r<=m)(P_r-S_r)`.
 
-split into explicit sums of nonnegative conditional mutual informations involving edge and branch-contrast coordinates. Along a `q`-adic ray, writing these increments as `ell_m` and `c_m`, one has the exact ledger
+The live theorem is now source-specific and smaller than the NB-078 raw comparison: prove that residual discovery cannot systematically outrun future screening, up to a summable total loss. A sufficient condition on one unbounded ray is `P_r<=S_r+e_r` with `sum e_r<infinity`. Large common prediction growth `G` is irrelevant to this criterion and should not consume arithmetic effort.
 
-`J_m = J_0 + sum_(r<=m) (ell_r-c_r)`.
+## Keep raw continuation, common coarse-future prediction, residual discovery, future screening and localization separate
 
-A nonzero stable tail therefore forces the cumulative refinement imbalance `sum(ell_r-c_r)` to diverge on every such ray. Conversely, if `ell_m <= c_m+e_m` with summable `e_m` on one unbounded ray, then `J` stays bounded and the stable tail is zero.
-
-The live theorem is now source-specific and scale-local: prove that new continuation information cannot systematically outrun new cross-cut prediction information, up to a summable total loss. Mesoscopic localization remains one possible route, but NB-078 shows it is not necessary to compare the two large final determinants directly; the arithmetic burden can be placed on the **new information created at each refinement level**.
-
-## Keep raw continuation, cross-cut prediction, refinement contrast, additive localization and uncancelled continuation separate
-
-NB-078 makes the common multiresolution currency exact, but it does not localize contrast correlations to bounded additive distance from the cut. Total prediction gain may still live on widening descendant rectangles. The new scale-by-scale imbalance criterion and the older finite-band localization criterion are therefore related but distinct sufficient routes. Neither is supplied by branching alone.
+NB-079 does not prove a sign for `P-S`. Mesoscopic additive localization may imply enough screening, but it is only one route. The exact target is the conditioned residual channel: edge/past-contrast continuation after coarse-future information is removed versus the future-contrast information that screens it.

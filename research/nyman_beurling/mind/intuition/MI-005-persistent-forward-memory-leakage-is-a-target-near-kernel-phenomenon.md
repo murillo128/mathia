@@ -1,31 +1,23 @@
-# MI-005 — Stable tails are cumulative imbalance between q-adic continuation and prediction-refinement charges
+# MI-005 — Stable tails are residual discovery minus future screening after the common prediction mode is removed
 
-**Evidence level:** supported by NB-063--NB-078. The finite-dimensional continuation, prediction, branching, and q-adic refinement identities are exact; no arithmetic estimate proving summable imbalance control or closing the stable-tail criterion is established.
+**Evidence level:** supported by NB-063--NB-079. The finite-dimensional continuation, prediction, branching and q-adic information identities are exact; no arithmetic estimate proving summable residual imbalance or closing the stable-tail criterion is established.
 
-NB-066--NB-073 reduce a hypothetical persistent Nyman target to a global continuation problem. NB-074 introduces the nonstationary charge `J_(R,N)`: bounded charge along an unbounded sequence rules out a stable tail, while any nonzero stable tail forces divergence for every finite horizon schedule. NB-075--NB-076 resolve it as
+NB-074--NB-076 write the uncancelled continuation charge as `J_(R,N)=L_R-C_(R,N)`, with `L` raw continuation volume and `C` a nonnegative cross-cut prediction charge. NB-077 shows both currencies survive exact integer branching. NB-078 then puts them on one q-adic refinement ledger: if `ell_m` and `c_m` are the new continuation and prediction charges, `J_m=J_0+sum(ell_m-c_m)`.
 
-`J_(R,N)=L_R-C_(R,N)`,
+NB-079 removes a common mode that made that comparison unnecessarily large. At each refinement there are three nonnegative charges `G`, `P`, and `S` with
 
-where `L_R` is raw continuation volume and `C` is a nonnegative cross-cut area built from future-conditioned partial-correlation charges.
+`ell=G+P`,
 
-NB-077 shows that exact integer branching preserves both currencies monotonically. A coarse cross-cut information charge survives in the fine descendants, and `L_R<=L_(qR)`. This removes signed Gram cancellation as an explanation for losing predictive information, but separate monotonicities do not compare their growth.
+`c=G+S`,
 
-NB-078 resolves that missing comparison coordinate. In each `q`-descendant block, the normalized average is exactly the shifted coarse innovation and the orthogonal complement is a canonical branch-contrast space. The cross-cut refinement gain is the sum of three nonnegative conditional mutual informations involving past/future contrasts. The raw continuation refinement gain has a parallel decomposition into nonnegative edge and contrast charges.
+so the net obstruction is exactly `P-S`. Here `G` is predictability of newly resolved fine past from the already available coarse future; it can be large but cancels identically. `P` is residual discovery: fine-past continuation information still present after coarse-future conditioning. `S` is future screening: the amount removed when the new future branch contrasts are admitted.
 
-Along a `q`-adic ray let
+Along an exact q-adic ray,
 
-`ell_m=L_(R_m)-L_(R_(m-1)) >=0`
+`J_m=J_0+sum_(r<=m)(P_r-S_r)`.
 
-and
+A nonzero stable tail must therefore make this residual sum diverge on every such ray. Conversely, one unbounded ray with `P_r<=S_r+e_r` and `sum e_r<infinity` kills the stable tail. The algebraic criterion is equivalent to NB-078's raw increment criterion, but the proof burden is smaller because all refinement growth already explained by coarse-future prediction has been eliminated before any arithmetic estimate is attempted.
 
-`c_m=C_(R_m,N_m)-C_(R_(m-1),N_(m-1)) >=0`.
+The live source theorem should now target the unresolved fine structure itself: edge/past-contrast continuation after coarse-future conditioning versus screening by future contrasts at the same refinement level. Mesoscopic localization remains one possible mechanism, but it is no longer necessary to control the full continuation and prediction volumes or even their common large component.
 
-Then the remaining continuation charge telescopes exactly:
-
-`J_m=J_0+sum_(r<=m)(ell_r-c_r)`.
-
-A stable tail must therefore create an unbounded cumulative excess of **new continuation information over new prediction information** on every such ray. Conversely, one ray satisfying `ell_m<=c_m+e_m` with `sum e_m<infinity` kills the stable tail. The final theorem can be attacked increment by increment rather than by comparing two large determinants at the endpoint.
-
-The remaining issue is source control of those increments. NB-078 does not prove that branch-contrast prediction stays near the cut, and contrast correlations may live on rectangles whose additive width grows with scale. Mesoscopic localization is still a plausible mechanism for proving `c_m` large enough, but the exact target is now broader: any arithmetic theorem that prevents persistent positive cumulative refinement imbalance suffices.
-
-**Boundary.** The Gaussian language is only an exact log-determinant representation of deterministic Gram matrices. NB-078 does not prove finite-band localization, `ell_m<=c_m`, or a stable-tail contradiction. Its durable contribution is the common nonnegative multiresolution ledger and the summable-error criterion.
+**Boundary.** Neither `P<=S` nor summability is automatic; the net increment can have either sign. The Gaussian language is an exact log-determinant representation of deterministic Gram matrices. NB-079 removes a universal common mode but supplies no Nyman-specific arithmetic inequality by itself.

@@ -1,28 +1,28 @@
 # Prime-flute mathematical questions
 
-## Identify the physical source representation before spending effort on another Green estimate
+## Estimate the two physical angle channels exposed by sequential elimination
 
-**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`.
+**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`.
 
-PF-303--PF-312 close scalar depth, entrance leakage, direct residual high conversion, and a supposed second inverse-normalized angle as missing mechanisms. PF-313 then identifies the exact diagonal-strength gate: for the post-low block `[[S,E],[E*,R]]>0`, bounded left source-weighted Green strength is equivalent to
+PF-303--PF-314 progressively close scalar depth, entrance leakage, direct residual high conversion, a supposed second inverse-normalized angle, and arbitrary internal-source amplification as independent missing mechanisms. PF-315 now resolves the remaining representation question for the actual PF-281 physical angle.
 
-`J_C J_C* <= K^2 F_C`,
+After shorting the retained nonconstant physical-low sector `L`, the full normalized `P/H` angle is unitarily the block column
 
-where `F_C=S-ER^(-1)E*`; after whitening this is defect-scale avoidance `Jhat_C Jhat_C* <= K^2(I-TT*)`.
+`(T_H V_H, Z_LH)^T`,
 
-PF-314 now closes that gate for an important source class. If the physical forcing is the residual coupling of a reserved source sector `U` inside the **same positive form**, and the source coefficients are uniformly bounded in their own source energy, sequentially shorting the high sector gives
+where `Z_LH` is the direct energy-normalized `L/H` angle and `V_H` is the canonical residual input to the conditional constant/high angle `T_H`. Their defects are complementary:
 
-`J_H A^(-1) J_H* <= F_C`,
+`V_H*V_H=I-Z_LH*Z_LH`,
 
-and hence the PF-313 defect domination automatically, with no extra inverse estimate. Near-unit post-low singular directions cannot independently amplify such an internal energy-normalized source.
+`I-T_(P/H)*T_(P/H)=V_H*(I-T_H*T_H)V_H`.
 
-The representation test is therefore prior to another return-potential theorem. For the actual canonical forcing, reserve the physical source degrees of freedom and perform the same eliminations that define the post-low constant/high block. If the resulting source is genuinely internal and energy-normalized, the left diagonal Green gate is already closed by positivity. If it is an external injection, such as the PF-308 killing source, or its source-energy norm grows, PF-313 remains a real estimate and that growth must be quantified explicitly.
+So source attenuation into `T_H` is never free. If `V_H` is small on a direction, `Z_LH` is already nearly isometric there; if `Z_LH` has a uniform gap, `V_H` is uniformly invertible and `T_HV_H` has the same compactness/ideal behavior as `T_H` up to constants.
 
-After an internal-source identification, the surviving burdens are the unchanged normalized angle `T_H`, source-reached multiplicity/ideal counting, the symmetric reassembly-side gate, and signed target reassembly. A raw diagonal Green norm is no longer an independent target.
+The next operator question is therefore the real two-channel one: first determine whether `Z_LH` already has a heavy or noncompact source-reached range on canonical tails. If it is uniformly gapped, transfer the singular-value problem to `T_H`; otherwise estimate `Z_LH` and `T_HV_H` together. A free-standing diagonal Green norm or arbitrary source map is no longer the right observable.
 
 ## Global heavy-range projection counts after strength/angle factorization
 
-For the PF-287 heavy low/high extension-range projection product, can the source-reached post-low singular directions have vanishing essential norm or the required singular-value counting law once PF-314's representation gate has removed every automatically controlled internal source factor? The burden is then localized in normalized angle, multiplicity/ideal counting, genuinely external source/reassembly growth, and signed composition.
+For the PF-287 heavy low/high extension-range projection product, can the source-reached directions in `Z_LH` and `T_HV_H` satisfy the compactness or weak-trace counting law required by the full physical angle? The remaining burdens are normalized angle, multiplicity/ideal counting, the symmetric reassembly side, and signed target composition.
 
 ## Prime realization within the resolved upstream-memory window
 
