@@ -192,3 +192,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-180-prime-scale-endpoint-loading-collapses-fixed-finite-local-twist-tomography-to-rank-one|ANF-180]]
 - [[research/analytic_frontier/findings/ANF-181-exact-log-frequency-centering-defeats-growing-local-derivative-jets-below-endpoint-memory-scale|ANF-181]]
 - [[research/analytic_frontier/findings/ANF-182-endpoint-geometry-makes-k-over-a-sharp-derivative-flattening-threshold|ANF-182]]
+- [[research/analytic_frontier/findings/ANF-183-endpoint-memory-has-a-sharp-physical-twist-aperture-threshold|ANF-183]]

@@ -195,3 +195,4 @@ This stable projection inventories every current canonical Xi Flow finding. Link
 - [[research/xi_flow/findings/XF-183-packet-relative-heat-acquisition-removes-remote-mode-loss-but-exposes-an-exponential-normalization-barrier|XF-183]]
 - [[research/xi_flow/findings/XF-184-mesoscopic-complex-jacobi-phases-remove-the-remote-packet-acquisition-barrier|XF-184]]
 - [[research/xi_flow/findings/XF-185-fejer-overcomplete-complex-jacobi-banks-make-lattice-scale-packets-uniformly-observable|XF-185]]
+- [[research/xi_flow/findings/XF-186-holomorphic-packet-banks-are-uniformly-bi-lipschitz-on-a-lattice-scale-nonlinear-cell|XF-186]]

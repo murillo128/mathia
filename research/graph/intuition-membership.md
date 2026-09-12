@@ -25,6 +25,9 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mind/intuition/MI-007-survival-requires-quantitative-non-escape-not-just-nonzero-structure]]
 - [[research/mind/intuition/MI-008-exact-recovery-is-not-stable-transport]]
 - [[research/mind/intuition/MI-009-local-correctness-does-not-determine-global-coherence]]
+- [[research/mind/intuition/MI-010-source-cancellation-budgets-are-family-specific]]
+- [[research/mind/intuition/MI-011-exact-local-source-consistency-can-hide-global-continuation]]
+- [[research/mind/intuition/MI-012-information-content-and-destination-sensitivity-are-separate-resources]]
 
 ### Analytic Frontier
 - [[research/analytic_frontier/mind/intuition/MI-001-global-conjugation-geometry-carries-horizontal-information]]
@@ -61,6 +64,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-025-regular-sampling-separates-aliasing-from-finite-window-stability]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-026-zero-count-fidelity-is-distance-to-the-boundary-zero-discriminant]]
 
 ### Farey Discrepancy
 - [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]
@@ -83,12 +87,15 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge]]
 - [[research/mobius_cancellation/mind/intuition/MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy]]
 - [[research/mobius_cancellation/mind/intuition/MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate]]
+- [[research/mobius_cancellation/mind/intuition/MI-018-nonnegative-transference-does-not-create-fixed-power-sign-balance]]
+- [[research/mobius_cancellation/mind/intuition/MI-019-shell-square-blindness-is-a-cross-prime-common-quotient-problem]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
 - [[research/nyman_beurling/mind/intuition/MI-002-small-shell-discrepancy-can-destroy-rooted-visibility]]
 - [[research/nyman_beurling/mind/intuition/MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal]]
 - [[research/nyman_beurling/mind/intuition/MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton]]
+- [[research/nyman_beurling/mind/intuition/MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -114,6 +121,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_flute/mind/intuition/MI-006-the-critical-endpoint-needs-structure-and-the-right-concentration-currency]]
 - [[research/prime_flute/mind/intuition/MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap]]
 - [[research/prime_flute/mind/intuition/MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance]]
+- [[research/prime_flute/mind/intuition/MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss]]
+- [[research/prime_flute/mind/intuition/MI-010-scalar-green-response-is-killing-normalized-markov-averaging]]
 
 ### Prime Lattice
 - [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding]]
@@ -136,6 +145,12 @@ This is a path-derived structural projection for graph topology. Each link means
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
 - [[research/robin_extremal/mind/intuition/MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer]]
+- [[research/robin_extremal/mind/intuition/MI-003-fixed-threshold-cells-freeze-prime-source-data]]
+- [[research/robin_extremal/mind/intuition/MI-004-higher-layer-ca-switches-carry-quantized-residual-charge]]
+- [[research/robin_extremal/mind/intuition/MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset]]
+- [[research/robin_extremal/mind/intuition/MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric]]
+- [[research/robin_extremal/mind/intuition/MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity]]
+- [[research/robin_extremal/mind/intuition/MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -166,6 +181,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-014-source-coercivity-must-survive-confluence-and-drifting-bows]]
 - [[research/weil_inertia/mind/intuition/MI-015-radial-depth-can-buy-localization-only-by-paying-source-mass]]
 - [[research/weil_inertia/mind/intuition/MI-016-finite-radius-source-localization-can-replace-zero-side-tightness]]
+- [[research/weil_inertia/mind/intuition/MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
