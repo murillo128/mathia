@@ -242,22 +242,31 @@ hp+kr\equiv r(ha+k)\pmod q,
 
 multiplication by the unit `r` does not preserve the least-residue distance to zero on `R/Z`. Consequently `Delta_B` is not determined by `a=pr^{-1}`.
 
-A minimal explicit control is `q=11`, `B=1`. The pairs
+An admissible prime-source control is `q=13`, `B=1`. Both pairs
 
 \[
-(p,r)=(2,1),\qquad (p',r')=(4,2)
+(p,r)=(3,5),\qquad (p',r')=(7,3)
 \]
 
-have the same quotient `a=2 mod 11`, but direct enumeration of the eight nonzero vectors in the unit sup-norm box gives
+lie in `P_{13}^2` and have the same quotient,
+
+\[
+3\,5^{-1}\equiv3\cdot8\equiv11\pmod{13},\qquad
+7\,3^{-1}\equiv7\cdot9\equiv11\pmod{13}.
+\]
+
+For `B=1`, the eight nonzero vectors in the unit sup-norm box reduce the least circular residue search to the classes `±p`, `±r`, and `±p±r`. For `(3,5)` the minimum distance to `0 mod 13` is `2`, attained by `-3+5`; for `(7,3)` the minimum is `3`, attained by `±3` (also `7+3=10` has circular distance `3`). Hence
 
 \[
 \boxed{
-\Delta_1(2,1;11)=\frac1{11},
+\Delta_1(3,5;13)=\frac2{13},
 \qquad
-\Delta_1(4,2;11)=\frac2{11}.
+\Delta_1(7,3;13)=\frac3{13}.
 }
 \tag{15}
 \]
+
+Thus `Delta_B` fails to factor through the quotient even after restricting to the actual prime source `P_q^2`, not merely on the ambient set of nonzero residue pairs.
 
 The same warning applies to orientation-sensitive shortest-vector data when one imposes the canonical order `p<r`: inversion `a <-> a^{-1}` swaps coordinates, so only inversion/swap-invariant observables admit the clean unordered formula (10).
 
@@ -280,7 +289,7 @@ The reduction has direct finite checks.
 1. For any prime `q`, enumerate `P_q`, form the ratio histogram (3), and compare every multiplicative-character moment with (4).
 2. Compute `lambda_q(a)` by exact lattice search and compare the direct prime-pair average with the character expansion (8) or, for canonical `p<r`, with (10).
 3. Multiply an arbitrary residue source set by a fixed unit `c`; the ratio histogram and every ratio-only exact-lattice statistic must remain unchanged while each character sum acquires the phase `chi(c)`.
-4. The explicit `q=11`, `B=1` control in (15) must distinguish two representatives with the same quotient; failure would contradict the stated boundary between exact-lattice and mesoscopic ordered-time data.
+4. The explicit prime-source `q=13`, `B=1` control in (15) must distinguish the two admissible representatives `(3,5)` and `(7,3)` with the same quotient `a=11`; failure would contradict the stated boundary between exact-lattice and mesoscopic ordered-time data.
 5. Any claimed fixed-upper exact-lattice prime discriminator should be tested against residue-source controls with the same multiplicative autocorrelation. If it distinguishes such controls while using only ratio-lattice data, the observable has been specified incorrectly or contains additional information not accounted for here.
 
 ## 8. Consequences for the research line
