@@ -1,35 +1,15 @@
-# MI-011 — Exact local source consistency can hide global continuation or preserve a pre-compression geometric defect
+# MI-011 — Exact local source consistency can hide global continuation or preserve a pre-compression joint defect
 
-**Evidence level:** supported by the stable-tail/finite-Schur/boundary-chain results NB-066--NB-068 and the matched first-layer conservation/timing/selector results RE-068--RE-070; no operator or contradiction is transferred between the lines.
+**Evidence level:** supported by NB-066--NB-069 and RE-068--RE-071; no operator or estimate is transferred between the lines.
 
-Nyman--Beurling and Robin Extremal now give two sharper examples of the same staged information boundary: **perfect local source consistency can discard the variable that controls global continuation, while a readout that suppresses one residual coordinate may leave a different pre-compression geometric coordinate intact**.
+Nyman--Beurling and Robin Extremal expose different staged failures of “local matching implies global harmlessness.”
 
-In Nyman--Beurling, NB-066--NB-067 characterize a hypothetical stable-tail mode as globally orthogonal to the natural space while every finite trace is exactly natural. Its least compatible future norm diverges, and that divergence is detected by finite normalized Schur complements.
+In Nyman, NB-066--NB-067 make the stable-tail obstruction a global continuation cost visible through finite Schur complements. NB-068 showed that zero one-cell memory and fixed finite Gram bandwidth do not by themselves prevent a hidden boundary mode. NB-069 then adds a source-specific correction: the actual innovations obey exact integer-dilation branching, and bounded fixed-band branching forces diagonal Gram geometry. The cheap nearest-neighbor boundary chain is therefore not a valid matched control once cross-scale source covariance is included.
 
-NB-068 proves that even the canonical one-cell memory geometry need not see the obstruction. Two matched causal sources can have identical finite visible/defect flags, finite bandwidth, and
+The Nyman survivor is now more constrained: any genuine obstruction must preserve branching while using nonlocal or scale-growing Gram structure, and the finite Schur geometry remains the natural place to measure its continuation cost.
 
-\[
-\Gamma_R=0
-\qquad\text{for every }R,
-\]
+In Robin, RE-068 fixes the prime multiset exactly and RE-069 suppresses direct timing through the final kernel. RE-070 finds a surviving selector-density defect in `Z-vartheta(Z)`. RE-071 shows that the same adaptive packet simultaneously forces the logarithmic Mertens-product error to drift in the opposite direction. The surviving coordinate is therefore a joint pre-compression trajectory, not an unmatched source label.
 
-yet one has no stable tail while the other has a one-dimensional stable boundary mode. The latter has
+The common discipline is: **match the exact source covariance first, identify what the local quotient/readout removes, and only then ask which global or geometric variable survives**. A control that matches local flags but not dilation branching is not source-faithful; a readout that kills direct timing need not kill selector-induced joint error drift.
 
-\[
-\Lambda_R^2=T_{<R}^2/T_{\ge R}^2\to\infty,
-\]
-
-and every finite Schur certificate diverges accordingly. The global obstruction can therefore be assembled entirely through directions that each local quotient discards.
-
-In Robin Extremal, RE-068 gives exact prime-multiset consistency for matched first-layer packets, and RE-069 shows that the obvious residual positional variable is strongly compressed by the exact Robin kernel. RE-070 then finds a different surviving coordinate: the tied selector map expands interval length while the conserved prime multiset keeps the exact Chebyshev mass fixed. The same locally matched packet must therefore occupy an adaptively selected interval with a positive `Z-vartheta(Z)` increment.
-
-The two mechanisms are not the same. NB is a cumulative compatibility-at-infinity problem; RE is a conserved-mass geometry problem before a destination compression. But they impose the same staged discipline:
-
-1. identify what the local/source matching actually fixes;
-2. identify what the local quotient or final kernel removes;
-3. determine whether a cumulative or geometric variable survives outside that removal;
-4. test that surviving variable in the exact global/target geometry.
-
-A local invariant can be identically zero while a global continuation defect survives; a direct residual can be summably invisible while a selector-density defect remains. Improving the already-null local statistic attacks the wrong resource in both cases.
-
-**Boundary.** No Nyman Schur estimate transfers to Robin selector intervals, and no Chebyshev underdensity theorem transfers to Nyman continuations. The common statement is only the staged separation of locally matched data, discarded coordinates, and surviving global geometry. Neither line by itself proves or disproves RH.
+**Boundary.** No Nyman Schur theorem transfers to Robin prime errors, and no Chebyshev--Mertens drift theorem transfers to Nyman continuation. The synthesis concerns the staged source/destination test only.

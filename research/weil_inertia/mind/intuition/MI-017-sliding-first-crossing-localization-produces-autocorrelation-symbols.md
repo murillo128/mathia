@@ -1,45 +1,15 @@
-# MI-017 — Sliding first-crossing localization is information-complete only beyond the firstness envelope and null-equation redundancy
+# MI-017 — Sliding first-crossing localization is useful only beyond envelope loss, null-equation redundancy, and generic regularity
 
-**Evidence level:** supported by the exact sliding-window identity WI-253, profile inversion/saturation theorem WI-254, and the universal first subleading cancellation WI-255; no incompatibility with a compactly supported global first zero mode is proved.
+**Evidence level:** supported by WI-253--WI-256; no incompatibility with a compactly supported global first zero mode is proved.
 
-At the first unrestricted localized Weil crossing `a_*`, translation freedom produces for a normalized zero mode `v` an aperture profile
+At a hypothetical first unrestricted localized Weil crossing, translation freedom produces an exact sliding-aperture profile whose Fourier representation averages explicit source symbols against the nonnegative density `|vhat|^2`. WI-253--WI-254 show that the full profile is information-complete for the real autocorrelation: prime-power shifts appear as slope changes and the continuous archimedean part can be reconstructed between thresholds.
 
-\[
-\mathcal F_v(r)
-=
-\frac1{2\pi}\int\Sigma_r(z)|\widehat v(z)|^2\,dz
-\ge r\lambda_r>0.
-\]
+Firstness does not expose all of that information. It gives only a pointwise lower envelope, and the small-aperture leading term is asymptotically saturated. WI-255 shows that the first additive correction is also unusable: before the zero-mode equation it contains source-sensitive prime and archimedean terms, but `Q_W(v)=0` cancels them exactly. The surviving linear coefficient is universal.
 
-WI-253--WI-254 show that the **exact** profile is information-complete for the real autocorrelation. Prime-power shifts appear as exact slope jumps and the continuous archimedean part is recovered between thresholds by distributional differentiation. The obstruction is not aperture information loss; it is that firstness supplies only a pointwise lower envelope for this profile.
+WI-256 shows that simply going to the next Taylor coefficient is not legitimate. The exact remainder contains a universal `7 r^2/2` term plus a nonnegative local translation-defect modulus `E_v(r)`. The known logarithmic form regularity controls only an integral of `(1-C(h))/h`; it does not force `E_v(r)` to be quadratic. Generic operator-domain membership also fails to determine the coefficient: admissible vectors can have different second-order translation behavior.
 
-At small aperture the envelope is saturated at leading order,
+The missing resource is therefore **zero-mode-specific regularity**, not more formal expansion. A small-radius bootstrap must derive an estimate or asymptotic for `E_v(r)` from the full equation `A_(a*)v=0`. Otherwise the useful information must come from medium-radius threshold coupling or another operator identity not reducible to the scalar null value.
 
-\[
-\mathcal F_v(r)\sim r\log(1/r)
-\sim r\lambda_r,
-\]
+The reusable lesson is that a representation may retain source information while the proof pipeline loses access to it through three distinct mechanisms: envelope replacement, algebraic redundancy, and insufficient regularity for the desired asymptotic readout.
 
-so there is no fixed multiplicative reserve.
-
-WI-255 shows that the first additive correction is also unusable for a deeper reason. The exact expansion is
-
-\[
-\mathcal F_v(r)
-=
-r\log(1/r)
-+r\bigl(\psi(2)-\log(4\pi)\bigr)
-+o(r).
-\]
-
-During the derivation the coefficient initially contains the prime autocorrelations and regular archimedean response. But on an actual zero mode the scalar identity `Q_W(v)=0` cancels all of those source-sensitive terms exactly. After comparison with the small-window ground state, firstness yields only the already-known variational inequality
-
-\[
-\mu_1\le1-\log2.
-\]
-
-This reveals a second information-loss step: **a source-sensitive coefficient can be present in an exact representation yet become algebraically redundant once the defining null equation is imposed**. Reading more precision from the same scalar equation does not necessarily expose new arithmetic content.
-
-The live route must therefore escape both losses. It needs a higher-order invariant not fixed by `Q_W(v)=0`, an operator/eigen-equation identity independent of its scalar quadratic-form value, or medium-radius relations that compare several prime thresholds before they collapse into one integrated null condition.
-
-**Boundary.** WI-255 closes only the complete `O(r)` refinement. It does not show that all higher-order terms are universal, that the exact profile is source-independent, or that medium-radius threshold relations are redundant. Additional regularity may be required before a higher-order expansion is even defined.
+**Boundary.** WI-256 closes only a generic second-order continuation. It does not show that the actual zero mode has poor regularity, that all higher-order terms are universal, or that medium-radius relations are redundant.

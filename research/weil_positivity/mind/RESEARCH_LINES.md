@@ -2,44 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Build a source-native critical boundary correspondence in a category large enough for the Mangoldt spectrum
+## Build a source-native critical boundary correspondence without assuming an RH-strength category descent
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`.
 
-WP-216--WP-266 separate coefficient sourcing, interaction, regulator covariance, critical normalization, and finite-part sign. Hamiltonian diagonal centering gives a regulator-independent trace-class index-one operator below critical scale, but source-canonical transport to the Weil half-density produces a non-square-summable critical row.
+WP-267 shows that ordinary linear-relation closure destroys the critical common-vacuum coherence. WP-268 shows that the critical amplitude is nevertheless hostable on the source-generated rapid-energy nuclear rigging, while WP-269 proves that its exact positive stationary Mangoldt spectrum is too large for tempered distributions and Fourier hyperfunctions.
 
-WP-267 shows that ordinary linear-relation closure is too destructive: it makes the critical boundary coordinate maximally multivalued and deletes the common-vacuum coherence. WP-268 then shows that the row itself is naturally hostable on the source-generated rapid-energy nuclear rigging
+WP-270 tests the first canonical cancellation left open by that category obstruction. Subtracting the zeta-pole density gives
 
-\[
-\Phi_{\exp}=\bigcap_{a>0}\operatorname{Dom}e^{aH},
-\]
+`T_pole = nu_(1/2) - cosh(x/2) dx`.
 
-although no finite polynomial Hamiltonian scale suffices.
+This cancellation has exactly the missing exponential size, but the resulting signed distribution is tempered **if and only if RH**. The statement is direct prior art, with an exact normalization match to Arias de Reyna's theorem. Thus ordinary temperedness after the classical pole subtraction cannot be treated as an unconditional preprocessing step before a later positivity argument; the category descent itself already has target strength.
 
-WP-269 now classifies the corresponding **stationary positive-covariance** category. The exact source-native critical spectral measure
+The live construction must therefore do something genuinely additional: remain in an admissible exponential-growth category and prove a source-forced sign/orientation theorem there, modify/quotient the spectrum before it becomes the classical pole-renormalized object, or derive the RH-equivalent descent from new source geometry rather than assume it. Mixed-prime coherence, category admissibility, pole/Gamma completion, and Weil orientation remain separate requirements.
 
-\[
-\nu_{1/2}
-=
-\frac12\sum_{p,k\ge1}
-(\log p)p^{-k/2}
-\bigl(\delta_{k\log p}+\delta_{-k\log p}\bigr)
-\]
+## Treat amplitude hostability, spectral growth, cancellation, and positivity separately
 
-is not tempered and is not infra-exponentially tempered. Its exponential damping threshold is exact:
-
-\[
-\int e^{-a|\xi|}\,d\nu_{1/2}(\xi)<\infty
-\quad\Longleftrightarrow\quad
-a>\frac12.
-\]
-
-Therefore ordinary positive-definite distributions are ruled out by Bochner--Schwartz, and positive-definite Fourier hyperfunctions are still too small. A source-faithful positive stationary covariance with these exact masses can live only in a larger exponential-growth category such as Fourier ultra-hyperfunctions, or after a source-forced cancellation/quotient changes the spectral growth before positivity is read.
-
-This sharpens the live theorem. Merely finding a topology that hosts the critical boundary functional is no longer enough, and neither is invoking ordinary generalized-function positivity. A viable construction must derive from the source a finite--archimedean correspondence in an admissible exponential-type category, preserve mixed-prime coherence, remain regulator-covariant, and still force the Weil translation/autocorrelation orientation. Alternatively it must change the positive spectrum structurally before the stationary boundary law is formed.
-
-## Treat amplitude hostability, spectral-growth category, mixed-prime coherence, and Weil orientation separately
-
-WP-268 and WP-269 expose two different category thresholds. The **amplitude** row becomes continuous at a single exponential Hilbert level only beyond energy exponent `1/4`; after squaring to spectral mass, the positive stationary measure requires damping beyond `1/2`. The factor of two is the expected amplitude-to-mass transition, not a new positivity mechanism.
-
-The reusable warning is that a canonical distributional host can coexist with failure of every standard positive-definite distribution/hyperfunction realization. Enlarging the test category preserves existence, but the source must still determine the boundary law and the completed finite--archimedean orientation. Ultra-hyperfunctional admissibility, if used, is only a category permission, not a Weil-positivity theorem.
+The amplitude and positive spectral mass have different exponential thresholds, and the canonical pole subtraction supplies a third boundary: enough cancellation to descend to the tempered category is already RH-sensitive. Even under RH, `T_pole` is signed, so temperedness still does not supply Weil positivity. Enlarging the category or cancelling growth is permission to formulate the object, not the missing sign theorem.

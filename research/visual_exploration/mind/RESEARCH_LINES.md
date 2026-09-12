@@ -14,38 +14,16 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Resolve the logarithmic and larger gap bands at the full-prime linear-support boundary
+## Resolve genuinely polynomial and larger gap scales at the full-prime linear-support boundary
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-179 variance-matches every strictly sublinear support law. VIS-180 shows that sparse bounded-gap two-prime supports can retain an order-one slow beat at linear support, while VIS-181 shows that natural full-prime power profiles with `alpha>=1/2` still have a quadratic null at `H asymp y`.
+VIS-179 variance-matches every strictly sublinear support law. VIS-180 shows that sparse bounded-gap two-prime supports can retain an order-one slow beat at linear support, while VIS-181--VIS-184 progressively show that this does not survive automatically in diffuse full-prime power profiles. VIS-184 already killed every predeclared `D=o(log y)` band by coefficient-mass dilution.
 
-VIS-182 kills every fixed finite bounded-gap family in the diffuse full-prime normalization. VIS-183 shows existentially that even some arbitrarily slowly growing bands have vanishing normalized pair mass.
+VIS-185 uses the actual interval kernel rather than the crude bound `|K|<=1`. On high dyadic blocks the kernel contributes a `1/d` factor, turning the averaged singular-series cost from order `D` into order `log D`. For fixed `alpha<1/2` and linear windows `H comparable to y`, every subpolynomial gap band `D=y^(o(1))` now has vanishing normalized contribution, uniformly in the interval start.
 
-VIS-184 makes the first explicit rate boundary. For fixed `0<=alpha<1/2` and weights `w_p=p^{-alpha}`, let `C_D(y)` be the normalized coefficient mass of pairs with positive gap at most `D`. Uniform two-shift Selberg-sieve control and the averaged singular series give
+Thus logarithmic and all other subpolynomial gap breadths are closed for this quadratic full-prefix mechanism. The first scale not killed by the present upper bound is genuinely polynomial, `D=y^delta`; failure of the bound there is not evidence of survival. The live object is the kernel-weighted all-gap off-diagonal sum, with polynomial and larger separations treated as part of the full distributed geometry rather than as another widening of a local band.
 
-\[
-C_D(y)
-\ll_\alpha
-\frac{D(y)}{\log y}
-+
-D(y)y^{-(1-2\alpha)/2}.
-\]
+## Keep weight geometry, transfer horizon, functional order, and crowding scale separate
 
-Hence every predeclared
-
-\[
-D(y)=o(\log y)
-\]
-
-band contributes `o(1)` coefficient mass, and therefore `o(1)` to any quadratic interval channel whose pair kernel has modulus at most one, uniformly in interval start and length. Sublogarithmic prime-gap crowding is not the missing full-prefix linear-support mechanism.
-
-The first scale not killed by this argument is `D(y) asymp log y`, but failure of the upper bound to vanish there is **not** positive evidence. The live question is now to control the logarithmic-scale band or, preferably, the naturally kernel-weighted aggregate over all gaps and determine whether source arithmetic leaves a non-negligible phase-coherent contribution.
-
-The stronger opportunities remain higher/growing functional complexity, discrete sampling, rare or shrinking observables, hybrid prime/zero information, or coefficient regimes outside the proven quadratic nulls.
-
-## Keep source corrections, weight geometry, transfer horizon, and crowding rate separate
-
-Close pairs, support at linear scale, and a diverging cutoff are insufficient summaries of the quadratic channel. The explicit `o(log y)` null now makes the crowding-rate currency quantitative: any candidate full-prime mechanism based on near-diagonal mass must reach at least logarithmic gap breadth before this control even stops being decisive.
-
-Failure of a sufficient upper bound beyond that point is never positive evidence by itself. A residual is arithmetic evidence only after the matched control preserves the same weights, support law, sampling geometry, observation scale, functional order, and quantitative frequency-crowding profile.
+A sparse close pair and a diffuse full-prime band live in different normalization regimes. VIS-185 shows that even an enormous subpolynomial collection of near-diagonal pairs can become negligible once the exact time-averaging kernel is paid. Future claims must preserve the same weights, support law, observation scale, and quantitative gap geometry in the matched control.

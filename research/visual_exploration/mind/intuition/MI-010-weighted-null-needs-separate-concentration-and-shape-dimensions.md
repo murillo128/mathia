@@ -1,37 +1,19 @@
-# MI-010 — Weighted prime-phase nulls have separate concentration, shape, support, leverage, complexity, and crowding-rate regimes
+# MI-010 — Weighted prime-phase nulls have separate concentration, support, kernel, and crowding-scale regimes
 
-**Evidence level:** supported by weighted-Haar calculations and deterministic transfer/control theorems VIS-173--VIS-184.
+**Evidence level:** supported by weighted-Haar calculations and deterministic transfer/control theorems through VIS-185.
 
-For positive weights `w_p`, put
+For positive prime weights, the effective dimensions controlling concentration and normalized shape are distinct. VIS-173--VIS-178 make that separation explicit, while VIS-179 shows that continuous quadratic variance is matched for every strictly sublinear support law. VIS-180 warns that arbitrary sparse subsets can still retain an order-one slow beat at linear support.
 
-\[
-W=\sum_pw_p,\qquad Q=\sum_pw_p^2,\qquad R=\sum_pw_p^4,
-\]
+The full-prime prefix behaves differently. VIS-181--VIS-184 show progressively that diffuse normalization kills fixed and slowly growing close-gap families. VIS-184 gave the first explicit coefficient-mass rate: every `D=o(log y)` band is negligible for fixed power weights `p^-alpha`, `alpha<1/2`.
 
-with `D_2=W^2/Q` and `D_4=Q^2/R`. VIS-173 shows that these dimensions govern different aspects of the matched Haar null: `D_2` controls leading concentration/effective support while `D_4` controls standardized shape.
+VIS-185 strengthens the boundary by using the actual interval-average kernel. For a pair gap `d` on a high dyadic block, the kernel supplies an additional factor comparable to `1/d` at linear observation scale. Combined with the averaged singular-series bound, the total normalized contribution of gaps up to `D` is controlled by
 
-VIS-174--VIS-178 price deterministic continuous prime-log transfer. Fixed weighted moments transfer under explicit support/height conditions; square-summable weights have an infinite weighted-Haar limit, Lindeberg weights Gaussianize, and prime-power weights retain a positive polynomial-support wedge for every fixed moment order. Exceeding a sufficient wedge opens a proof gap, not source evidence.
+`D y^(-(1-2alpha)/2) + log(2D)/log y`.
 
-VIS-179 shows that quadratic order is much better behaved than the generic character bound: every `y=o(H)` support law is variance-matched uniformly in interval start and arbitrary positive weights/subsets. VIS-180 gives the sharp warning at linear support for arbitrary sparse subsets: a bounded-gap two-prime support can leave an order-one slow beat.
+Consequently **every subpolynomial gap band `D=y^(o(1))` is null** at `H comparable to y`, uniformly in interval start. The earlier logarithmic frontier was an artifact of discarding kernel decay, not a surviving arithmetic scale.
 
-VIS-181 shows that this sparse obstruction does not survive automatically in a diffuse full-prime profile. VIS-182 then separates close-pair existence from normalized gap-band mass by killing every fixed finite additive-gap family. VIS-183 strengthens this qualitatively: some diverging gap windows, even below any prescribed diverging envelope, remain null.
+The first scale not removed by this mechanism is polynomial breadth. For `D=y^delta`, the current bound no longer vanishes, but this is only a proof gap. Stronger cancellation or the full all-gap structure may still kill it. The natural next object is therefore the complete kernel-weighted off-diagonal aggregate rather than another subpolynomial local-gap cutoff.
 
-VIS-184 supplies the missing explicit first rate. For the full prime prefix with `w_p=p^{-alpha}`, fixed `0<=alpha<1/2`, the normalized coefficient mass `C_D(y)` of all pairs with gap at most `D(y)` obeys
+The reusable separation is: weight concentration, support scale, functional order, observation horizon, local spacing, band breadth, and the exact readout kernel are different currencies. A dense family of close frequencies matters only after its mass survives the destination kernel and normalization.
 
-\[
-C_D(y)
-\ll_\alpha
-\frac{D(y)}{\log y}
-+
-D(y)y^{-(1-2\alpha)/2}.
-\]
-
-Consequently every predeclared `D(y)=o(log y)` band is negligible. Because the interval kernel has modulus at most one, no phase argument is even needed: coefficient-mass dilution alone kills the whole sublogarithmic near-diagonal channel uniformly at linear support.
-
-This turns “crowding rate” into a quantitative currency. A bounded-gap obstruction on a sparse support and a diverging-gap band on the full prime prefix live in different regimes. For the diffuse full-prime profile, a candidate quadratic mechanism must reach at least logarithmic gap breadth before the present null estimate ceases to force disappearance.
-
-The logarithmic scale is only the **first unresolved rate**, not evidence of survival. At `D(y) asymp log y` the current upper bound becomes order one, but stronger cancellation, a sharper sieve estimate, or the actual oscillatory kernel may still force a null. The live object is therefore the kernel-weighted distributed off-diagonal aggregate, with the `log y` band as the first explicit local frontier.
-
-The reusable separation is: weight concentration, limit-law shape, support scale, coefficient leverage, transfer horizon, functional order, local spacing, band breadth, and quantitative band-growth rate are different currencies. A residual is meaningful only after the matched control preserves the same frequency geometry and coefficient profile.
-
-**Boundary.** VIS-181--VIS-184 concern continuous second moments. VIS-184 uses full-prime power weights with fixed `alpha<1/2` and proves only a one-sided null for sublogarithmic gaps. It does not establish survival at logarithmic breadth and transfers neither to discrete Gram sampling nor to higher moments.
+**Boundary.** VIS-185 concerns continuous second moments for full-prime power weights with fixed `alpha<1/2`. It does not establish survival at polynomial gap breadth and does not transfer to discrete Gram sampling or higher moments.

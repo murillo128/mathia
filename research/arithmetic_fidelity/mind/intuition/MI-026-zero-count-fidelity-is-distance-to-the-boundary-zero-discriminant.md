@@ -1,63 +1,19 @@
-# MI-026 — Zero-count fidelity is distance to the boundary-zero discriminant, and that distance can collapse with breadth
+# MI-026 — Zero-count fidelity is distance to the boundary-zero discriminant, and diagonal reweighting cannot repair its critical-strip breadth law
 
-**Evidence level:** proved for finite Dirichlet polynomials on a fixed compact Jordan contour by AF-290, with the increasing-breadth eta specialization proved in AF-291; transfer from acquisition remains conditional on the actual coefficient-orbit error.
+**Evidence level:** proved for finite Dirichlet polynomials by AF-290, for raw eta breadth growth by AF-291, and for all positive diagonal Hilbert reweightings of that eta model by AF-292; transfer from acquisition remains conditional on the actual coefficient-orbit error.
 
-For
+For a finite Dirichlet polynomial `P_b`, AF-290 identifies the exact robustness radius for the zero count inside a fixed zero-free Jordan contour: it is the coefficient-space distance from `b` to the set of coefficients whose polynomial has a zero on the boundary. This is a target-conditioned quantity, not a consequence of frame conditioning or coefficient recovery alone.
 
-\[
-P_b(s)=\sum_{n=1}^N b_n n^{-s},
-\]
+AF-291 shows that the normalized radius can deteriorate as breadth grows even when the analytic approximation behaves perfectly well. For raw eta truncations on a contour with left edge `alpha > 0`, the boundary modulus stays uniformly separated from zero while the normalized coefficient-space margin tends to zero. In the RH-relevant regime `alpha < 1/2`, its scale is `N^(alpha-1)`.
 
-let `Delta_Gamma` be the coefficient vectors whose Dirichlet polynomial has a zero on a compact Jordan boundary `Gamma`. AF-290 identifies the exact Euclidean robustness radius
+AF-292 proves that this critical-strip exponent is not a coordinate-scaling artifact. For an arbitrary positive diagonal metric with weights `d_n`, the normalized margin is comparable to
 
-\[
-\operatorname{dist}_2(b,\Delta_\Gamma)
-=
-\min_{z\in\Gamma}
-\frac{|P_b(z)|}{\left(\sum_{n\le N}n^{-2\operatorname{Re}z}\right)^{1/2}}.
-\]
+`1 / sqrt[(sum d_n^2)(sum d_n^-2 n^-2alpha)]`.
 
-Below this radius the zero count inside the contour is constant by Rouché, and at the radius a boundary collision is reachable. The relevant conditioning is therefore not merely a norm bound on recovered coefficients; it is **distance of the requested analytic target to its own ill-posed locus**.
+Cauchy--Schwarz makes the optimization exact: the best diagonal geometry has `d_n^2 proportional to n^-alpha` and margin comparable to `1 / sum n^-alpha`. Thus every diagonal metric still has vanishing margin for `alpha <= 1`, and when `alpha < 1/2` it cannot improve even the power of `N` over the raw eta coordinates.
 
-This distance is compatible with the common-clock quotient from AF-289. The action `b_n -> b_n n^{-i sigma}` translates `P_b(s)` vertically, and the discriminant margin is unchanged when the contour is translated with it. Hence a common timing center is free for a vertically tracked zero-count target, while residual differential jitter matters only through the coefficient-orbit error it produces.
+The composition rule is therefore breadth-sensitive and representation-sensitive. If an upstream decoder has relative error `eta_N`, protecting the zero count requires `eta_N` to stay below the target margin in the metric actually used. A fixed relative guarantee fails for the raw eta geometry, and coordinatewise Hilbert preconditioning does not change that conclusion in the critical strip.
 
-AF-291 shows that the normalized target radius can deteriorate even when the analytic approximation itself behaves perfectly well. For the raw eta truncations
+The reusable lesson is that **source completeness, analytic convergence, coordinate conditioning, and target robustness are separate resources**. A useful repair must alter relational geometry rather than merely rescale coordinates: for example non-diagonal mixing, a nonlinear representation, a target-relevant quotient, or another topology with its own recovery theorem.
 
-\[
-\eta_N(s)=\sum_{n\le N}(-1)^{n-1}n^{-s},
-\]
-
-fix a zero-free compact Jordan boundary in `Re(s)>0` and put `alpha=min_Gamma Re(s)`. Local uniform convergence gives a boundary modulus bounded above and below independently of large `N`, but
-
-\[
-\delta_{\Gamma,N}
-:=
-\frac{\operatorname{dist}_2(b^{(N)},\Delta_{\Gamma,N})}{\|b^{(N)}\|_2}
-\asymp
-\frac1{\sqrt N\,H_N(\alpha)}
-\]
-
-and therefore
-
-\[
-\delta_{\Gamma,N}\asymp
-\begin{cases}
-N^{-1/2}, & \alpha>1/2,\\
-(N\log N)^{-1/2}, & \alpha=1/2,\\
-N^{\alpha-1}, & 0<\alpha<1/2.
-\end{cases}
-\]
-
-The collapse comes from the growth of the dual boundary-evaluation norm relative to coefficient size, not from the contour approaching a zero. In particular, eventual correctness of the zero count under analytic convergence does not imply robustness to a breadth-independent relative coefficient error.
-
-The composition rule is consequently breadth-sensitive. If a decoder gives relative coefficient-orbit error `eta_N`, the AF-290 gate protects the zero count only while
-
-\[
-\eta_N<\delta_{\Gamma,N}.
-\]
-
-For raw eta truncations this means the recovery accuracy must tighten with `N`; a fixed relative recovery guarantee cannot be promoted to a uniform zero-count theorem through this geometry alone.
-
-The reusable lesson is that **source completeness, analytic convergence, and target-conditioned robustness can move in opposite directions as breadth increases**. Adding coordinates may improve approximation while simultaneously shrinking the perturbation ball in the upstream norm that preserves the final discrete target.
-
-**Boundary.** AF-291 is a statement about the raw eta coefficient geometry on fixed compact contours. It does not prove that every RH-relevant representation has a collapsing margin, nor does it rule out a preconditioned norm, nonlinear representation, quotient, or target geometry with a better breadth law. It controls finite zero count, not global zero matching, exact ordinates, or RH.
+**Boundary.** AF-292 classifies only diagonal Hilbert metrics for this fixed-contour eta zero-count target. It does not rule out general positive-definite mixing, nonlinear encodings, quotients, alternative carriers, growing contours, exact zero locations, or a different target topology. None of those alternatives is automatically well conditioned.

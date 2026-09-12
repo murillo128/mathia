@@ -1,32 +1,15 @@
 # MI-008 — Exact recovery, source normalization, and target-conditioned robustness are different resources
 
-**Evidence level:** supported by the finite inverse/timing/zero-count results through AF-291 and the scalar propagation/Green results through PF-305; no universal target modulus or full mixed-response theorem is claimed.
+**Evidence level:** supported by AF-282--AF-292 and PF-303--PF-305; no universal target modulus or full mixed-response theorem is claimed.
 
-Arithmetic Fidelity separates acquisition from the final analytic target. AF-282--AF-289 classify genuinely mixed recovery, frame conditioning, and timing perturbations for finite Dirichlet coefficients, with the common timing center removed as the exact gauge `F(s)->F(s+i sigma)`.
+Arithmetic Fidelity separates acquisition from the final analytic target. AF-282--AF-289 classify mixed finite-prefix recovery, frame conditioning, and timing perturbations after removing the common-clock gauge. AF-290 then identifies a different resource: the exact coefficient perturbation radius preserving a finite zero count is distance to the boundary-zero discriminant.
 
-AF-290 identifies the finite zero-count target geometry itself. The exact coefficient perturbation radius protecting the zero count is distance to the boundary-zero discriminant,
+AF-291 shows that this target radius can shrink with breadth even while eta truncations converge correctly on the boundary. AF-292 proves that the RH-relevant power-law collapse is not repaired by any positive diagonal Hilbert reweighting. Cauchy--Schwarz exactly optimizes the diagonal geometry, and for a critical-strip contour the best diagonal metric has the same `N` exponent as raw coordinates.
 
-\[
-\operatorname{dist}_2(b,\Delta_\Gamma)
-=
-\min_{z\in\Gamma}
-\frac{|P_b(z)|}{(\sum_{n\le N}n^{-2\operatorname{Re}z})^{1/2}}.
-\]
+Thus stable acquisition plus coordinate preconditioning is still weaker than stable transport to the destination. A genuine repair must change relational geometry, quotient structure, representation, or target topology and then prove that the upstream error lands inside the new target margin.
 
-AF-291 then shows that this target radius can deteriorate systematically with breadth even while analytic approximation improves. For raw eta truncations on a fixed zero-free contour, the boundary modulus stays bounded away from zero but the normalized coefficient-space margin tends to zero with an explicit `N`-dependent rate. Thus a breadth-independent relative recovery error cannot be promoted to a uniform zero-count guarantee through this gate.
+Prime Flute supplies the complementary normalization phenomenon. PF-303--PF-305 factor a scalar-mediated response so that the normalized Green middle is a norm-one positive contraction. The scary bare return norm disappears after source normalization, but the missing compactness does not appear: all ideal decay remains at the conversion interfaces.
 
-Prime Flute supplies a complementary normalization phenomenon. PF-303--PF-304 turn the scalar killed Green response into reversible Markov averaging. PF-305 exposes the Hilbert factorization
+The cross-line lesson is concrete: **remove exact nuisance symmetries, normalize by the source's coercive currency, then price the destination's instability in the metric actually consumed downstream**. Coordinate scaling, bare intermediate norms, and exact recovery can each look favorable while leaving the final theorem untouched.
 
-\[
-R_NG_NF_N
-=(R_ND_N^{-1/2})\,S_N\,(D_N^{-1/2}F_N),
-\qquad
-0<S_N\le I,
-\quad\|S_N\|=1.
-\]
-
-The scalar middle is therefore neutral for symmetric operator ideals. It cannot destroy compactness/ideal decay already present at one normalized conversion vertex, but its exact unit direction means it cannot create the missing decay either. What matters is the geometry of the entrance and exit maps relative to the killing scale.
-
-The cross-line lesson is concrete: **remove exact nuisance symmetries, normalize by the source's own coercive currency, then price the destination's instability in the metric actually used downstream**. Each step can expose a different failure. Stable acquisition can feed a shrinking target margin; a bad bare Green norm can disappear after source normalization; a norm-one middle can still leave all compactness burden at conversion interfaces.
-
-**Boundary.** AF-291 concerns raw eta truncations on fixed compact contours and does not prove universal margin collapse. PF-305 concerns finite scalar-mediated responses and does not prove the physical `P/H` response factors through them. The two geometries are analogous only at the level of resource separation, not by transfer of operators or estimates.
+**Boundary.** AF-292 concerns diagonal metrics for raw eta zero-count geometry; PF-305 concerns scalar-mediated finite responses. Their operators and estimates do not transfer.

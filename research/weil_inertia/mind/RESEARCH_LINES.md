@@ -14,34 +14,20 @@ WI-231--WI-237 show that finite negative inertia detects off-line packets exactl
 
 WI-238--WI-252 isolate the finite-radius first-odd-crossing witness. Layer-cake localization produces a signed radial von-Mangoldt flux, while prime reflection violates the first Beurling--Deny positivity criterion. The live odd-sector theorem remains source-specific: control that signed flux, derive a phase/nodal restriction from the eigen-equation plus arithmetic source, or find another order structure not contradicted by prime reflections.
 
-## Use the unrestricted first crossing only through information beyond the null-equation-determined small-aperture terms
+## Use the unrestricted first crossing only through zero-mode information beyond generic regularity and the scalar null equation
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253--WI-254 show that the exact sliding-aperture profile is information-rich: distributional derivatives recover source-weighted real autocorrelation and prime-power slope jumps. Firstness, however, gives only the lower envelope `F_v(r)>=r lambda_r`, which cannot be differentiated, and the leading small-radius term is universally saturated.
+WI-253--WI-254 show that the exact sliding-aperture profile determines the source-weighted real autocorrelation, while firstness provides only a lower envelope. WI-255 proves that the full `O(r)` correction is universal after imposing `Q_W(v)=0`; the apparent prime dependence cancels and the resulting comparison gives only the old constant-trial-function bound.
 
-WI-255 now closes the first obvious subleading escape. For a normalized first global zero mode,
+WI-256 identifies the exact next obstruction instead of assuming a quadratic expansion. After the universal leading and linear terms,
 
-\[
-\mathcal F_v(r)
-=
-r\log(1/r)
-+r\bigl(\psi(2)-\log(4\pi)\bigr)
-+o(r).
-\]
+`F_v(r) = ... + E_v(r) + (7/2) r^2 + o(r^2)`,
 
-Before the zero-mode equation is imposed, the `O(r)` coefficient contains the prime autocorrelations and the regular archimedean remainder. Using `Q_W(v)=0` cancels them **exactly**, leaving a coefficient independent of the mode, the first-crossing aperture, and the arithmetic source. Comparing with Suzuki's ground-state expansion reduces firstness at this order to
+where `E_v(r)` is a nonnegative weighted local translation defect built from `1-C(h)`. The available `H^log` regularity does not imply `E_v(r)=O(r^2)`, and generic membership in the operator domain does not determine its quadratic coefficient. Different vectors in the same ambient domain can contribute different second-order behavior.
 
-\[
-\mu_1\le1-\log2,
-\]
+Therefore the next small-aperture theorem must use the **actual zero-mode equation** `A_(a*) v=0` to obtain a sharper translation/boundary modulus. Without such a theorem, a second-order bootstrap is not justified. The alternative live routes are medium radii across several prime thresholds or an operator-level identity independent of the scalar quadratic-form null equation.
 
-which is already the elementary constant-trial-function variational bound. Thus the entire first subleading small-aperture comparison contains no new arithmetic rigidity.
+## Treat exact-profile information, firstness, null-equation redundancy, and regularity as separate gates
 
-The live unrestricted route must therefore use information not determined by the single scalar null equation: a genuinely higher-order term if the mode has sufficient regularity, a medium-radius relation across several prime thresholds, or an additional operator/eigen-equation identity beyond the quadratic-form value `Q_W(v)=0`. “Compute the first correction” is now closed.
-
-## Treat exact-profile information, firstness envelopes, null-equation redundancy, radial flux, and cone positivity as separate gates
-
-The aperture representation is information-complete for the real autocorrelation if the exact profile is known. The loss occurs first when exact profile information is replaced by a pointwise lower envelope, and again when the first asymptotic correction is collapsed by the same null equation that defines the mode.
-
-This is distinct from the odd route's signed radial source problem and from generic semigroup positivity. A future contradiction must use a source-specific relation that survives these quotient/cancellation steps rather than repackage information already contained in `Q_W(v)=0`.
+The exact aperture profile is information-rich, but source information can be lost twice: first by replacing it with a pointwise firstness envelope, and again when coefficients are algebraically fixed by the same null identity already used to define the mode. WI-256 adds a third gate: higher-order extraction is meaningful only after the zero mode supplies enough local translation regularity.

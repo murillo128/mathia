@@ -1,55 +1,15 @@
-# MI-007 — Matched first-layer packets convert selector dilation into Chebyshev underdensity
+# MI-007 — Matched first-layer packets convert selector dilation into an opposite Chebyshev--Mertens error drift
 
-**Evidence level:** supported by the exact matched-packet prime-set identity RE-068, the Robin timing-compression theorem RE-069, and the selector-dilation/Chebyshev calculation RE-070; no contradiction with known prime-distribution estimates is claimed.
+**Evidence level:** supported by the exact matched-packet prime-set identity RE-068, timing compression RE-069, selector-dilation/Chebyshev law RE-070, and the reciprocal-prime error law RE-071; no contradiction with known joint prime-error estimates is claimed.
 
-The matched first-layer `0 -> 0` branch is exactly silent to every additive endpoint prime statistic. RE-068 shows that the physical first-layer labels crossed by the packet are precisely the ordinary primes in the selector interval, so count, Chebyshev mass, logarithmic weights, residue indicators, and other additive decorations agree identically between source and endpoint descriptions.
+The matched first-layer branch is exactly silent to additive endpoint prime statistics. RE-068 shows that the physical labels crossed by the packet are precisely the ordinary primes in the selector interval, while RE-069 shows that direct positional delay is compressed to an absolutely summable contribution by the Robin workload.
 
-RE-069 then shows that direct positional transport of those primes to their delayed event coordinates is also too weak in the final Robin metric: each delay is compressed to an `O(p^{-2})` contribution and the whole future first-layer timing tax is absolutely summable.
+RE-070 finds the first surviving coordinate before that compression. The tied common-amplitude selector expands the target interval while the exact Chebyshev mass remains equal to the logarithmic state increment. Therefore every sufficiently late matched packet forces a positive increment of the Chebyshev error `H_vartheta(Z)=Z-vartheta(Z)`.
 
-RE-070 finds a different surviving coordinate **before** that final compression. At a tied common-amplitude breakpoint, parameterize the selector by logarithmic state `Y` and write `Z_c(Y)` for the adaptive tangent selector. On sufficiently late false-RH blocks,
+RE-071 shows that the same packet forces a second, oppositely oriented coordinate. For the normalized logarithmic Mertens-product error `E_l`, the increment across the packet is negative. Both signs come from the same selector derivative: interval dilation makes the Chebyshev mass underdense, while the Robin-height/Mertens normalization turns the same matched prime set into a decrease of `E_l`. The prime-square correction between the two Euler weights is too small to change that sign, uniformly even when packet cardinality grows.
 
-\[
-Z_c'(Y)-1
-=
-b(1-b)a_c(Y)\log Y
-\left(1+O_J\!\left(\frac1{\log Y}+a_c(Y)\log Y\right)\right)>0.
-\]
+For sublinear packets, the two increments are tied asymptotically: the magnitude of the Mertens decrease is the Chebyshev increase divided by `Y log Y`. Thus the surviving object is not one prime statistic but a **joint trajectory in two differently normalized error coordinates** forced by one adaptive selector geometry.
 
-Thus the selector interval is longer than the logarithmic state interval. But the matched prime-set identity fixes its exact Chebyshev mass:
+This sharpens the target. A contradiction may come from a theorem controlling the admissible joint drift of `H_vartheta` and `E_l` on these source-selected intervals, or from a cross-packet argument showing that the required saddle cannot recur. Re-proving additive multiset identities or direct timing bounds attacks coordinates already known to be blind.
 
-\[
-\vartheta(Z_+)-\vartheta(Z_-)=Y_+-Y_-.
-\]
-
-Combining the two gives
-
-\[
-\boxed{
-[Z-\vartheta(Z)]_{Z_-}^{Z_+}
-=(Z_+-Z_-)-(Y_+-Y_-)
->0.
-}
-\]
-
-More precisely the deficit is asymptotic to
-
-\[
-b(1-b)\int_{Y_-}^{Y_+}a_c(t)\log t\,dt.
-\]
-
-For sublinear packets, the induced relative underdensity is
-
-\[
-1-
-\frac{\vartheta(Z_+)-\vartheta(Z_-)}{Z_+-Z_-}
-\asymp
-b(1-b)a_-(Y)\log Y,
-\]
-
-with a false-RH amplitude floor of order at least `Y^{-b}\log Y`.
-
-The reusable lesson is that **exact conservation of source mass does not imply geometric neutrality**. A matched transformation can preserve the complete labeled multiset yet force that same mass to occupy a longer target interval. The informative variable is then density relative to the adaptive selector geometry, not another additive weight on the conserved atoms.
-
-This also clarifies where the information survives. It is visible in the selector map before the Robin kernel compresses direct timing. A prime-distribution theorem capable of contradicting the matched branch must therefore control `vartheta` on these source-selected adaptive intervals at the scale of the dilation defect, not merely prove an ordinary relative `o(1)` error on generic intervals.
-
-**Boundary.** RE-070 derives a necessary underdensity pattern under the false-RH matched first-layer hypotheses. The required relative deficit tends to zero, so current generic short-interval asymptotics need not contradict it. The result does not treat higher CA layers, prove such matched packets recur indefinitely, or prove RH.
+**Boundary.** RE-071 gives a necessary opposite-drift law under the false-RH matched first-layer hypotheses. It does not prove the packets recur indefinitely, does not handle higher CA layers, and does not by itself contradict known Chebyshev/Mertens error estimates.
