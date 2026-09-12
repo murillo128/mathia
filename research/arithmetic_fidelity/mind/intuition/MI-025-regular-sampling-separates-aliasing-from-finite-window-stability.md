@@ -1,6 +1,6 @@
-# MI-025 — Regular sampling separates aliasing, coupling, degree, sample count, and timing provenance
+# MI-025 — Regular sampling separates aliasing, coupling, degree, sample count, timing provenance, and target quotient
 
-**Evidence level:** supported by exact phase-pushforward classifications AF-279--AF-281 and finite-prefix separation/stability/timing theorems AF-282--AF-287 on the stated known-support ordinary-Dirichlet coefficient class.
+**Evidence level:** supported by exact phase-pushforward classifications AF-279--AF-281 and finite-prefix separation/stability/timing theorems AF-282--AF-288 on the stated ordinary-Dirichlet coefficient/source classes.
 
 For
 
@@ -24,41 +24,38 @@ h_2=2\pi/\log2,\qquad h_3=2\pi/\log3,
 
 AF-282 proves that the joint nodes of the known prefix `1,...,N` have minimum spacing `Theta(1/N)`. AF-283 prices coefficient stability: if mixed indices range over `{0,...,L-1}^2`, a two-point test forces instability for `L=o(N)`, while `L=30N` admits a breadth-uniform stable inverse. AF-284--AF-285 separate degree from observation count: deterministic subset selection gives an unweighted linear-size family of raw complex mixed moments and rank forces at least `N` complex observations.
 
-AF-286 shows that **timing error itself splits into different information classes**. If every requested time has the same unknown offset `tau`, the observation matrix factors exactly as
+AF-286--AF-287 show that timing error itself splits into different information classes. A common offset `tau` factors exactly as
 
 \[
 \widetilde y=A D_\tau b,
 \qquad
-D_\tau=\operatorname{diag}(n^{-i\tau})_{n\le N}.
+D_\tau=\operatorname{diag}(n^{-i\tau})_{n\le N},
 \]
 
-The nominal exact decoder therefore returns `D_tau b`. For an arbitrary complex source class, `(b,tau)` is identifiable only modulo the gauge `(b,\tau)\sim(D_\epsilon b,\tau-\epsilon)`. Fixed relative coefficient distortion has the sharp common-clock scale `T=Theta(1/log N)`.
-
-AF-287 closes the apparent extra cost for arbitrary independent rowwise jitter. Starting from the uniformly conditioned complete two-prime Vandermonde frame, classical Kadison--Singer/frame sparsification yields an **unweighted `O(N)` raw subframe with condition number bounded independently of `N`**. For rowwise offsets `|tau_j|<=T`, the exact expansion
+so an arbitrary complex source is identifiable only modulo the coefficient gauge. Independent rowwise jitter is not a gauge, but after selecting an unweighted `O(N)` raw subframe with bounded condition number its perturbation obeys
 
 \[
-\widetilde A-A
-=\sum_{k\ge1}\frac{(-i)^k}{k!}D_{\tau^k}A\Lambda^k,
-\qquad \Lambda=\operatorname{diag}(\log1,\ldots,\log N),
+\|\widetilde A-A\|\le\|A\|\bigl(e^{T\log N}-1\bigr).
 \]
 
-gives
+The common-offset subclass supplies the matching obstruction, so full known-prefix coefficient recovery has the sharp worst-case scale
 
 \[
-\|\widetilde A-A\|
-\le\|A\|\bigl(e^{T\log N}-1\bigr).
+T_{\rm coefficient}(N)=\Theta(1/\log N)
 \]
 
-Hence the nominal decoder has relative `ell^2` error at most `K(e^{T\log N}-1)` for an absolute frame-condition constant `K`. The common-offset subclass supplies the matching lower-order obstruction, so
+for both common-mode and arbitrary rowwise jitter.
+
+AF-288 shows why that coefficient scale must not be charged blindly to every downstream target. The common-clock action is exactly vertical translation of the Dirichlet series:
 
 \[
-T_{\rm independent\ jitter}(N)=\Theta(1/\log N).
+F_{D_\tau a}(s)=F(s+i\tau).
 \]
 
-The earlier `sqrt(N)` loss came from passing through an `ell^1` source estimate after controlling only one side of the frame spectrum; it is not an intrinsic jitter information bill.
+It rigidly translates the zero/pole divisor in imaginary direction and preserves every zero real part. Therefore the RH yes/no predicate is constant on the whole common-clock orbit: **an exact vertically translated zeta carrier retains the RH discriminator without recovering the clock origin**.
 
-The reusable separation is therefore: **phase-fiber aliasing, retention of joint coupling, finite-prefix label spacing, stable mixed degree, raw sample count, frame conditioning, common-clock gauge, independent jitter, time horizon, and target norm are distinct resources**. Exact injectivity does not imply stable recovery; linear stable degree does not imply dense `N^2` acquisition; and a common-mode error that is an exact source symmetry should be quotiented or externally marked rather than priced as generic noise.
+Source restrictions can instead pin the gauge. If two known nonzero reference coefficients occur at multiplicatively independent indices `m,n`, equality of their phase ratios forces `tau` uniquely; the canonical zeta anchors `m=2,n=3` suffice. Exact identifiability is nevertheless not global robust calibration. Irrational torus recurrence gives `|tau_j|->infinity` with both anchor phases returning arbitrarily near their initial values, so no uniform inverse modulus exists on all of `R`. On a bounded clock interval, one anchor already gives a local inverse-Lipschitz chart.
 
-The remaining timing question is target-relative rather than frame-relative. A downstream functional invariant under `b -> D_tau b` needs no external clock-origin lift, while full coefficient recovery pays the inverse-log scale. Unknown support, infinite Dirichlet sources, different coefficient norms, drift/rate error, and source constraints remain separate problems.
+The reusable separation is therefore: **phase-fiber aliasing, retention of joint coupling, finite-prefix label spacing, stable mixed degree, raw sample count, frame conditioning, common-clock gauge, exact source anchoring, global calibration stability, independent jitter, and downstream target quotient are distinct resources**. A nuisance parameter can be costly for coefficient reconstruction, exactly identifiable from source provenance, and simultaneously irrelevant to an invariant target.
 
-**Boundary.** AF-282--AF-287 are finite known-support theorems. The frame-sparsification subset is existential and its constants are not optimized. The gauge nonidentifiability assumes arbitrary complex coefficients; constrained sources can break it. None of these results supplies analytic continuation, zero-location information, or infinite-source stability.
+**Boundary.** AF-282--AF-288 are finite known-support coefficient results except for the exact Dirichlet-series vertical-translation identity. The source-anchor statement assumes known nonzero phases at multiplicatively independent indices. RH invariance concerns horizontal zero geometry only; exact ordinates, fixed-height windows, canonical completed-zeta normalization, and independent rowwise perturbations are not gauge-invariant. None of these results supplies analytic continuation, a new zero-free region, or a proof of RH.

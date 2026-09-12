@@ -14,11 +14,11 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Match close-frequency crowding at the linear-support boundary
+## Match coefficient leverage and close-frequency crowding at the linear-support boundary
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-161--VIS-178 calibrate collision complexity, weighted null shape, deterministic moment transfer, and prime-power effective dimension. VIS-179 then shows that quadratic statistics have a much larger collective null region than generic character separation suggests. Montgomery--Vaughan mean-square control gives
+VIS-161--VIS-178 calibrate collision complexity, weighted null shape, deterministic moment transfer, and prime-power effective dimension. VIS-179 then shows that quadratic statistics have a much larger collective null region than generic character separation suggests:
 
 \[
 \left|\frac1H\int_T^{T+H}S_y(t)^2\,dt-\frac18\right|
@@ -27,18 +27,39 @@ VIS-161--VIS-178 calibrate collision complexity, weighted null shape, determinis
 
 uniformly in interval start, arbitrary positive prime weights, and arbitrary prime subsets below `y`. Thus every `y=o(H)` support law is already variance-matched.
 
-VIS-180 proves that the linear boundary is genuinely different for this broad uniform class, but not in a source-sensitive way. Bounded prime gaps give infinitely many fixed-gap pairs `q=p+d`; with equal weights on `{p,q}` and `H=p`, `y=q`, one has `y/H->1` while the deterministic variance tends to
+VIS-180 proves that the linear boundary is genuinely different for the broad arbitrary-subset class, but not in a source-sensitive way. Bounded prime gaps give sparse equal-weight two-prime supports with `y/H->1` and an `O(1)` slow-beat variance defect. The obstruction is deterministic close-frequency crowding.
+
+VIS-181 now separates that sparse obstruction from the natural full-prime coefficient profile. Keeping the weighted Montgomery--Vaughan error gives
 
 \[
-\frac18+\frac18\frac{\sin d}{d}\ne\frac18.
+\left|\frac1H\int_T^{T+H}S_y(t)^2dt-\frac18\right|
+\le C\left(\frac{L_y}{HQ_y}+\frac{D_2(y)}H\right),
 \]
 
-The surviving term is a slow beat between two close prime-log frequencies. Therefore the `O(y/H)` scale cannot be replaced by a uniform `o(1)` theorem at `y\asymp H` for arbitrary subsets, but **a linear-support variance residual is still not source evidence**. A valid matched control must preserve the relevant local frequency crowding, or a theorem for the natural full-support coefficient profile must show that this channel is washed out.
+where
 
-The remaining positive-power opportunity must state its functional complexity and control class explicitly. Higher fixed-order statistics must exceed their proven transfer gates and survive stronger collective mean-value controls; linear/superlinear quadratic statistics must first remove deterministic beat effects. Other live boundaries are growing order, Gram/discrete sampling, rare/shrinking or unbounded functionals, genuinely hybrid prime/zero information, or natural full-support observables with a crowding-preserving null.
+\[
+Q_y=\sum w_p^2,\qquad
+D_2(y)=\frac{(\sum w_p)^2}{Q_y},\qquad
+L_y=\sum p\,w_p^2.
+\]
 
-## Keep source corrections, clock mixing, weighted null shape, transfer horizon, functional order, and frequency crowding separate
+At `H\asymp y`, variance is therefore matched whenever `L_y/(yQ_y)->0` and `D_2(y)/y->0`. For the full prime set with `w_p=p^{-\alpha}`, both conditions hold for every fixed `\alpha\ge1/2`. At the critical profile `\alpha=1/2`,
 
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 closes the entire strictly sublinear quadratic regime, while VIS-180 shows that the first failure of that uniform theorem at linear support can itself be a deterministic representation effect.
+\[
+Q_y\sim\log\log y,
+\qquad L_y\sim\frac y{\log y},
+\qquad D_2(y)\sim\frac{4y}{(\log y)^2\log\log y},
+\]
 
-A residual becomes arithmetic evidence only after it survives a matched control at the same weights, support law, sampling geometry, observation scale, functional complexity, target statistic, and local frequency-crowding geometry. Failure of a sufficient transfer bound is never positive source evidence by itself.
+so the variance defect is only `O(1/(log y log log y))` uniformly in the interval start.
+
+Thus merely moving the natural critical-line prime field to `y\asymp H` is now a matched quadratic null, not a source signal. The unresolved linear-support quadratic region begins with more diffuse full-prime profiles `\alpha<1/2` or other coefficient families for which the weighted leverage criterion does not vanish, and even there failure of the sufficient bound is not evidence of a defect. One must derive the actual crowding-aware off-diagonal asymptotic or use a matched deterministic control.
+
+The stronger positive-power opportunities are now higher/growing complexity, genuinely discrete sampling, rare/shrinking or unbounded functionals, hybrid prime/zero information, or coefficient regimes outside the proven leverage null.
+
+## Keep source corrections, clock mixing, weighted concentration, leverage, transfer horizon, functional order, and frequency crowding separate
+
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 closes the strictly sublinear quadratic regime. VIS-180 shows that arbitrary sparse weights can retain linear-scale beats. VIS-181 shows that the natural full-prime `p^{-1/2}` profile suppresses that same channel strongly enough to restore the quadratic null at linear support.
+
+A residual becomes arithmetic evidence only after it survives a matched control at the same weights, support law, sampling geometry, observation scale, functional complexity, target statistic, and local frequency-crowding geometry. **The coefficient leverage profile is part of the control.** Failure of a sufficient transfer bound is never positive source evidence by itself.

@@ -2,38 +2,36 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control the negative-charge or structural interruption burden on polynomial fan spans
+## Control charge-silent first-layer takeover, negative source charge, or packet complexity on polynomial fan spans
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`.
 
-RE-049--RE-064 separate metric capacity from source fidelity and reduce every extended bounded near-zero-charge fan to fringe-free `0 -> 0` packets whose higher-layer depths diverge, with unbounded packet cardinality as a separate escape.
+RE-049--RE-064 separate metric capacity from source fidelity and reduce extended bounded near-zero behavior to highly constrained packet geometries, with unbounded packet cardinality as a separate escape. RE-065 then shows that the quiet bounded higher-layer architecture has only subpolynomial capacity on polynomial physical windows, forcing polynomially many interruptions under strong off-critical growth.
 
-RE-065 shows that this quiet bounded architecture has only subpolynomial capacity on polynomial physical windows. A strong off-critical polynomial-span fan therefore needs polynomially many nonquiet interruptions: packet cardinality exceeds the fixed bound, the packet has no higher-layer source event, or its normalized charge does not vanish.
+RE-066 makes the source-bearing nonvanishing-charge branch sharply one-sided. A bounded source-bearing packet with positive charge must be the unique fringe transition `0 -> 1`; such upper states lie in a lacunary base-two fringe-host family and contribute only `O(log T)` events up to scale `T`. If bounded source-bearing continuation persists, the successor is `1 -> 0` with charge at most `-1+o(1)`.
 
-RE-066 makes the nonvanishing-charge branch sharply one-sided. For a bounded source-bearing packet the uniform charge law is
-
-\[
-Q=-s+\chi_+-\chi_-+o(1),\qquad s>0.
-\]
-
-Any charge bounded positively away from zero must be the unique fringe transition `0 -> 1`. Such upper states are forced into the base-two fringe-host family of RE-063, so positive bounded charges are only `O(\log T)` up to physical scale `T` and are multiplicatively lacunary. If the next switch is again bounded and source-bearing, the fringe persists and the successor must be `1 -> 0`, giving
+RE-067 now resolves the previously coarse `no higher-layer source event` branch. For every bounded **first-layer-only** packet,
 
 \[
-Q_{\rm next}\le -1+o(1).
+Q=\chi_+-\chi_-+o(1).
 \]
 
-Thus positive bounded charge cannot carry polynomial fan complexity. On every polynomial-span strong-off-critical block, the remaining burden satisfies
+The double-fringe case `1 -> 1` is excluded, so the only asymptotic classes are `0 -> 0` with `Q=o(1)`, `0 -> 1` with `Q=1+o(1)`, and `1 -> 0` with `Q=-1+o(1)`. The two nonzero classes are again tied to fringe hosts and hence only `O(log T)` in number. Thus almost every bounded first-layer-only interruption is forced into a **charge-silent matched `0 -> 0` takeover**.
+
+On polynomial-span strong-off-critical blocks, the surviving polynomial burden can therefore be written as
 
 \[
-H_B+N_B^-\ge X_B^{\delta-o(1)},
+U_B+F_B^{00}+N^-_{\ge2,B}\ge X_B^{\delta-o(1)},
 \]
 
-where `H_B` counts structural interruptions (large packets or no higher-layer source event) and `N_B^-` counts genuinely negative bounded source-bearing charges.
+where `U_B` counts packets larger than the fixed cardinality bound, `F_B^{00}` counts bounded first-layer-only matched packets, and `N^-_{\ge2,B}` counts bounded higher-layer source-bearing packets with genuinely negative charge.
 
-The next theorem should therefore control one of two concrete currencies: prove that structural interruptions `H_B` are too sparse/rigid, or show that polynomially many negative charges cannot be reconciled with the continuous residual drift across exposed cells. If both ledgers can be avoided, the remaining escape is superpolynomial fan stretch and must be reconciled quantitatively with the older block-stretch geometry.
+The next theorem is now more concrete. Either prove that charge-silent first-layer takeover cannot occur polynomially often in an exposed fan, control unbounded packet complexity, or show that polynomially many negative higher-layer charges are incompatible with the continuous residual drift and changing normalization. Positive charge and nonzero first-layer-only charge are only logarithmic fringe phenomena and cannot carry the polynomial complexity.
 
-## Treat local fidelity, deep-layer capacity, fringe sign, interruption type, and physical span as separate currencies
+## Treat local fidelity, deep-layer capacity, fringe sign, first-layer matching, interruption type, and physical span as separate currencies
 
-Prime-source fidelity does not by itself control an adaptive fan. Bounded-packet charge classification does not imply global persistence. Deep prime-power events become subpolynomially scarce once quiet cancellation forces their depths to diverge, while RE-066 shows that positive nonquiet charge is logarithmically sparse and incurs an immediate negative successor debt inside the same bounded source-bearing regime.
+Prime-source fidelity does not by itself control an adaptive fan. Bounded-packet charge classification does not imply global persistence. Deep prime-power events become subpolynomially scarce once quiet cancellation forces their depths to diverge; positive bounded source-bearing charges are logarithmically sparse; and RE-067 shows that nonzero bounded first-layer-only charges are logarithmically sparse as well.
 
-This is still not a contradiction. Negative charges are evaluated at moving thresholds and normalizations, so they cannot simply be telescoped without controlling within-cell drift; structural interruptions may also carry the polynomial burden. Future progress must use those surviving source-bearing currencies explicitly rather than infer a sign contradiction from event scarcity alone.
+The remaining first-layer structural escape is not hidden signed drift but the opposite: **matched endpoint cancellation**. A packet can cross boundedly many ordinary first-layer events yet become invisible at the normalized charge scale once both endpoints are fringe-free. Any closing argument based on selected-residual charge must therefore add a statistic that sees these matched first-layer takeovers or prove independently that they cannot dominate.
+
+This is still not a contradiction. Negative charges are evaluated at moving thresholds and normalizations, `F_B^{00}` may be large, and unbounded packets remain outside the fixed-cardinality packet law. Future progress must control one of those three surviving currencies explicitly.

@@ -12,25 +12,25 @@ WP-267 closes the most direct category-change repair. The critical first-layer s
 
 Prime Circle remains beyond classical orbit closure and dual-lattice resonance carriers: after PC-271, a useful statistic must use source-specific distribution/coupling of those carriers or leave the Fourier-resolution class.
 
-Nyman--Beurling has moved from generic conditioning to target-bearing singular geometry. NB-063 gives the exact forward-memory recursion; NB-064 shows that a persistent collective tail would force the normalized canonical target projection into singular values of `Gamma_R` tending to zero. Mere existence of bad singular directions is cheap. The live theorem is to prove that the **distinguished target cannot track the moving near-kernel subspaces**, or equivalently that a fixed amount of it repeatedly occupies a transmitted singular sector.
+Nyman--Beurling has moved from generic conditioning to an accumulated target-transmission criterion. NB-063 gives the exact forward-memory recursion; NB-064 shows that a persistent collective tail would force the normalized canonical target projection into singular values of `Gamma_R` tending to zero. NB-065 strengthens this: the filtered target transmission has a finite total budget, and on the persistence branch the normalized transmission is summable. Thus a fixed fraction of target mass recurring above moving singular floors `eta_R` is already enough to kill persistence whenever `sum eta_R^2` diverges (for `eta_R<=1`). The missing theorem is now to prove that the **canonical target cannot track near-kernel sectors with square-summably collapsing transmission across every sufficiently rich scale set**.
 
-Robin Extremal now has a signed interruption ledger. RE-065 forces polynomially many nonquiet events on every polynomial-span strong-off-critical fan. RE-066 shows that positive bounded source-bearing charges are only logarithmically many, are fringe-host lacunary, and incur a negative successor debt when the next packet stays bounded/source-bearing. Thus polynomial complexity must be carried by structural interruptions, genuinely negative bounded charges, or superpolynomial fan stretch.
+Robin Extremal now has a three-currency interruption ledger. RE-065 forces polynomially many interruptions on every polynomial-span strong-off-critical fan. RE-066 shows that positive bounded source-bearing charges are only logarithmically many, are fringe-host lacunary, and incur a negative successor debt when bounded source-bearing continuation persists. RE-067 resolves the former `no higher-layer source event` bucket: every bounded first-layer-only packet has `Q=chi_+-chi_-+o(1)`, nonzero first-layer charges are again only logarithmically many fringe events, and the scalable source-free branch is a **matched `0 -> 0` first-layer takeover with asymptotically zero normalized charge**. The polynomial burden is therefore carried by unbounded packet complexity, charge-silent matched first-layer packets, or genuinely negative higher-layer source-bearing charge.
 
-Visual Exploration now separates the sublinear and linear quadratic control classes. VIS-179 variance-matches every continuous additive prime-log statistic with `y=o(H)`. VIS-180 proves that the uniform arbitrary-subset theorem cannot extend with `o(1)` error through `y\asymp H`: bounded prime gaps create an `O(1)` slow-beat variance defect. But that defect is itself deterministic frequency crowding. A linear-support residual becomes source-sensitive only after the matched control preserves that local crowding or the natural full-support weights are proved to suppress it.
+Visual Exploration now separates support scale from coefficient leverage. VIS-179 variance-matches every continuous additive prime-log statistic with `y=o(H)`. VIS-180 shows that sparse equal-weight bounded-gap pairs can retain an `O(1)` slow-beat defect at `y\asymp H`, so arbitrary-subset quadratic control really changes at linear support. VIS-181 then shows that the natural full-prime power profiles behave differently: keeping the weighted leverage `L_y=sum p w_p^2` gives a variance error `L_y/(HQ_y)+D_2/H`, and for every fixed `alpha>=1/2` with `w_p=p^{-alpha}` this still vanishes at `H\asymp y`. In particular the critical `p^{-1/2}` profile is already a linear-support quadratic null. A surviving source statistic must therefore exceed the matched coefficient/crowding class, not merely exceed the sublinear support regime.
 
-Across these lines the common warning is target-aware: a universal low mode, bad singular direction, sparse event, or residual is informative only if the **actual source-forced target occupies it after the relevant matched structure is preserved**.
+Across these lines the common warning is target-aware: a universal low mode, bad singular direction, sparse event, or residual is informative only if the **actual source-forced target occupies it after the relevant matched structure and accumulated budget are preserved**.
 
 ## Which observation family reaches the required source aperture at the right resource cost?
 
-With bounded local Euler degree, [MI-005](intuition/MI-005-topology-is-part-of-the-arithmetic-claim.md) separates finite prime-power depth from unbounded prime breadth. [MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now gives a sharper finite-prefix timing calibration.
+With bounded local Euler degree, [MI-005](intuition/MI-005-topology-is-part-of-the-arithmetic-claim.md) separates finite prime-power depth from unbounded prime breadth. [MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now gives a sharper target-relative timing calibration.
 
-For the two-prime mixed channel on known support `1,...,N`, AF-282--AF-285 give phase spacing `Theta(1/N)`, sharp mixed degree `Theta(N)`, and linear raw sample count. AF-287 strengthens the selected frame to an unweighted `O(N)` subframe with bounded condition number. The exact rowwise timing perturbation then shows that arbitrary independent jitter has the same sharp order as the common-clock subclass:
+For the two-prime mixed channel on known support `1,...,N`, AF-282--AF-285 give phase spacing `Theta(1/N)`, sharp mixed degree `Theta(N)`, and linear raw sample count. AF-287 strengthens the selected frame to an unweighted `O(N)` subframe with bounded condition number. Arbitrary independent rowwise jitter and common-offset coefficient recovery then have the same sharp scale
 
 \[
-T_{\rm jitter}(N)=\Theta(1/\log N).
+T_{\rm coefficient}(N)=\Theta(1/\log N).
 \]
 
-The old `sqrt(N)` loss was an estimate artifact. The remaining timing question is which downstream arithmetic functionals are invariant under the exact common-clock coefficient gauge and therefore need no external clock-origin lift.
+AF-288 shows that this is not automatically a target-level timing cost. The common offset is exactly `F(s)->F(s+i tau)`, so it preserves the horizontal zero divisor and therefore the RH yes/no predicate. For that target the clock origin can be quotiented rather than reconstructed. Conversely, two known multiplicatively independent source coefficients (for zeta, indices `2` and `3`) pin the offset exactly, but irrational recurrence prevents a global robust inverse modulus over an unbounded timing range. Thus **coefficient recovery, source anchoring, calibration stability, and target invariance are distinct information bills**.
 
 Analytic Frontier gives a different aperture law: endpoint memory can remain invisible to every physical twist window `o(X/a_X)` while a source-faithful curvature at separation `Theta(X/a_X)` would detect the dangerous packet. Xi Flow gives the converse local calibration: once a consecutive source window is known, `O(m)` holomorphic samples give a uniformly bi-Lipschitz nonlinear chart. In both cases the live problem has moved from local measurement conditioning to **source access/support discovery and transport to the final zero-sensitive target**.
 
@@ -38,11 +38,17 @@ Analytic Frontier gives a different aperture law: endpoint memory can remain inv
 
 [MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md) compares two Möbius-facing frontiers without identifying their operators.
 
-Farey discrepancy now closes two natural optimizations inside the direct-transfer family. FD-064 shows that polynomial packet growth still preserves the exact `Theta=2/3` crossover after horizon normalization. FD-065 shows that growing the Schur head also fails: tail occupation improves, but scalar leverage loses more, and both packet and terminal exponents acquire the same positive head-growth penalty. The missing theorem must change the denominator/quantifier/row-interaction ledger rather than enlarge the packet or move the cut.
+Farey discrepancy now has a source-coherence threshold for the whole direct packet family. FD-064--FD-065 show that neither polynomial packet growth nor Schur-head motion changes the `Theta=2/3` crossover after horizon/leverage normalization. FD-066 explains why: if a zero-frontier spike of size `X^Theta` remains coherent over `X^ell`, the direct packet improves the deterministic terminal obstruction **iff**
 
-Möbius cancellation now isolates the signed-information loss in the audited Linnik route. MC-235 shows that both signs already have essentially full occupancy exponent in every fixed interior hard progression. MC-236 shows that the sign-specific dense model preserves principal bias exactly, the downstream argument thresholds into one-sided coverage, and the published separate-sign transference precision is only subpower where the first-shell target needs fixed-power relative balance. A viable continuation must couple signs before the nonnegative quotient or exploit aggregate cancellation before componentwise triangle inequality.
+\[
+\ell>2(1-\Theta).
+\]
 
-The reusable rule is that **local abundance is valuable only if it survives the exact downstream normalization and signed target**. A favorable packet can be erased by leverage/horizon cost; abundant positive and negative populations can still have a large difference.
+Host and head exponents cannot change this sign. The present short-interval input supplies only `ell<Theta`, so below two thirds merely lowering the minimum interval length with logarithmic/o(L) error is power-insufficient. The missing input must give source-relative variation `o(A_X)` on super-amplitude windows, locate such coherence around adaptive spikes, or bypass the reciprocal-floor/horizon ledger.
+
+Möbius cancellation has now closed both a one-sided and a signed-subpower repair. MC-235 shows both signs already have essentially full occupancy exponent; MC-236 shows the audited nonnegative Linnik pipeline preserves principal bias and has only subpower separate-sign transference resolution. MC-237 adds that the exact deep CRT modulus already satisfies a strong individual smooth-modulus variance theorem, yet its signed residual RMS is still only a subpower relative improvement over trivial progression occupancy and reaches the `X^{1/2}` target only where support already does. The unresolved theorem must provide **fixed-power signed accuracy tracking the interior deficit**, or cancel across the smooth-dilation family before componentwise errors are paid.
+
+The reusable rule is that local abundance, longer coherence, smoothness, or a stronger average counts only after it survives the exact downstream normalization and signed target. A favorable intermediate theorem can be quantitatively irrelevant if its gain is subpower where the final deficit is fixed-power.
 
 ## Which source-specific inequality prevents the first completed-Weil crossing?
 
@@ -60,7 +66,7 @@ Weil Positivity contributes a category warning to the same global goal: a finite
 
 ## Does the complete flute response preserve enough source mass after scalar round trips die?
 
-[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now incorporates PF-302. PF-297--PF-301 show that complete Robin factors preserve positive `q`-mass and that each scalar directional transmission is governed exactly by its intrinsic attenuation mass. PF-302 proves the combined two-direction mass diverges:
+[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) also incorporates PF-302. PF-297--PF-301 show that complete Robin factors preserve positive `q`-mass and that each scalar directional transmission is governed exactly by its intrinsic attenuation mass. PF-302 proves the combined two-direction mass diverges:
 
 \[
 \sum_n\left(\frac{\kappa_{n,L}}{c_n}+\frac{\kappa_{n,R}}{c_n}\right)=\infty,

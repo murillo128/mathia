@@ -1,6 +1,6 @@
-# MI-005 — Persistent forward-memory leakage is a target-bearing near-kernel phenomenon
+# MI-005 — Persistent forward-memory leakage requires square-summably collapsing target transmission
 
-**Evidence level:** supported by the exact one-cell recursion NB-063 and the spectral concentration theorem NB-064; no vanishing theorem for the canonical collective tail is claimed.
+**Evidence level:** supported by the exact one-cell recursion NB-063, the target near-kernel theorem NB-064, and the finite transmission budget NB-065; no vanishing theorem for the canonical collective tail is claimed.
 
 The late Nyman--Beurling quotient is not blocked by missing rank. NB-062--NB-063 show that the visible natural spaces form a full causal flag and that old visible information can enter the new logarithmic cell only through the finite-rank continuation map
 
@@ -15,28 +15,50 @@ For the distinguished target, the exact gain from enlarging the window is
 =\langle z_R,(I+\Gamma_R\Gamma_R^*)^{-1}z_R\rangle.
 \]
 
-NB-064 shows that if `\delta_R` converges to a positive limit, then this is much more rigid than repeated alignment with some finite-dimensional memory channel. Writing `p_R=P_{\mathcal G_R}J_Rh_*`, `u_R=p_R/\|p_R\|`, and `T_R=\Gamma_R^*\Gamma_R`, one has
-
-\[
-\langle p_R,T_R(I+T_R)^{-1}p_R\rangle\to0.
-\]
-
-Consequently, for every fixed `eta>0`, the target mass in singular values at least `eta` vanishes:
+Writing `p_R=P_{\mathcal G_R}J_Rh_*`, `u_R=p_R/\|p_R\|`, and `T_R=\Gamma_R^*\Gamma_R`, NB-064 shows that a positive limiting defect forces `u_R` into singular values tending to zero. For every fixed `eta>0`,
 
 \[
 \|E_R^{\ge\eta}u_R\|\to0.
 \]
 
-Equivalently, the normalized canonical target direction itself admits representatives `v_R` with
+Thus bad conditioning matters only when the distinguished target occupies the bad singular directions.
+
+NB-065 strengthens this pointwise statement to a cumulative budget. The unnormalized filtered transmission
 
 \[
-\|u_R-v_R\|\to0,
-\qquad
-\|\Gamma_Rv_R\|\to0.
+\mathfrak t_R
+=\langle p_R,T_R(I+T_R)^{-1}p_R\rangle
 \]
 
-Thus **bad conditioning matters only when the distinguished target occupies the bad singular directions**. A large operator norm, an abstract small singular value, or an infinite-dimensional defect sector does not by itself obstruct capture.
+is summable with the explicit bound
 
-The useful contrapositive is correspondingly weak and target-specific. If along an unbounded sequence there exist fixed `eta,kappa>0` such that `u_R` keeps mass at least `kappa` in the `sigma(\Gamma_R)>=eta` sector, then the persistent collective tail is impossible. One does not need a uniform lower singular bound on the whole visible space.
+\[
+\sum_R\mathfrak t_R
+\le 2\|h_*\|^2+2\delta_2^2.
+\]
 
-**Boundary.** Near-kernel concentration is necessary, not sufficient. In the flat control `\Gamma_R=0`, every visible direction is a kernel direction while the actual tail still vanishes. The missing arithmetic theorem must therefore exclude near-kernel **tracking by the canonical target**, not merely prove that near-kernel vectors exist or control `\|\Gamma_R\|` globally.
+If `\delta_R\to\delta_\infty>0`, then `\|p_R\|\to\delta_\infty`, so the normalized transmission
+
+\[
+q_R=\langle u_R,T_R(I+T_R)^{-1}u_R\rangle
+\]
+
+is summable too.
+
+This gives a moving-threshold transversality test. Suppose on scales `R\in S` a fixed fraction of target mass satisfies
+
+\[
+\|E_R^{\ge\eta_R}u_R\|\ge\kappa>0.
+\]
+
+Then persistence requires
+
+\[
+\sum_{R\in S}\frac{\eta_R^2}{1+\eta_R^2}<\infty.
+\]
+
+For `\eta_R\le1`, divergence of `\sum_{R\in S}\eta_R^2` already forces `\delta_\infty=0`. The fixed-`eta` criterion from NB-064 is only the simplest special case. A target transmission floor may decay to zero and still be sufficient if it decays too slowly to be square-summable over the scales where a fixed target fraction is transmitted.
+
+The reusable lesson is: **persistent leakage requires not merely near-kernel tracking, but a finite accumulated target-transmission budget**. Isolated good scales can coexist with persistence when their squared floors are summable; repeated weak transversality can kill persistence without any uniform spectral gap. The right arithmetic target is therefore a nonsummable target-aware transmission lower bound, not a global condition number.
+
+**Boundary.** The criterion is one-sided. Summable transmission does not imply persistence, and the flat control `\Gamma_R=0` has zero transmission while its target tail still vanishes. The missing theorem must supply an oracle-free lower bound for the canonical target's occupation of transmitted sectors; NB-065 does not provide that arithmetic input.

@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Exclude target-bearing near-kernel modes of the forward-memory map
+## Exclude square-summably collapsing target transmission in the forward-memory map
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
@@ -19,18 +19,49 @@ NB-049--NB-063 reduce the collective late quotient to a finite-rank forward-memo
 =\langle z_R,(I+\Gamma_R\Gamma_R^*)^{-1}z_R\rangle.
 \]
 
-NB-064 turns the remaining alignment possibility into a sharp spectral condition. If a nonzero collective tail persists and `p_R=P_{\mathcal G_R}J_Rh_*`, then the normalized target direction `u_R=p_R/\|p_R\|` must leave every singular sector of `Gamma_R` bounded away from zero. For every fixed `eta>0`,
+NB-064 shows that if a nonzero collective tail persists and `p_R=P_{\mathcal G_R}J_Rh_*`, then the normalized target direction `u_R=p_R/\|p_R\|` must asymptotically leave every fixed singular sector of `\Gamma_R` bounded away from zero. Persistent leakage therefore requires the **distinguished target itself** to track approximate right-kernel directions.
+
+NB-065 strengthens this from a pointwise condition to a finite total transmission budget. With `T_R=\Gamma_R^*\Gamma_R`,
 
 \[
-\|E_R^{\ge\eta}u_R\|\to0,
+\mathfrak t_R
+=\langle p_R,T_R(I+T_R)^{-1}p_R\rangle
 \]
 
-and there are unit vectors `v_R` with `\|u_R-v_R\|\to0` and `\|\Gamma_Rv_R\|\to0`. Persistent leakage therefore requires the **distinguished target itself** to become an approximate right-kernel direction of the canonical forward-memory map.
+satisfies
 
-The live theorem is now target-aware and one-sided. It is enough to prove that along an unbounded sequence a fixed fraction of `u_R` lies in a singular sector transmitted by at least some fixed `eta>0`; that already forces `\delta_R\to0`. A uniform lower singular bound for all of `\mathcal G_R` is much stronger than necessary, while an upper bound on `\|\Gamma_R\|` is not the intrinsic quantity at all.
+\[
+\sum_R\mathfrak t_R<\infty
+\]
 
-## Treat individual disappearance, defect abundance, rank, forward memory, bad singular directions, and target occupation as separate gates
+unconditionally. On the persistence branch `\delta_\infty>0`, the normalized quantities
 
-Late individual shifts can vanish while the collective family remains visible. Every finite window already has infinite-dimensional defect; every visible natural window already has maximal causal rank. NB-064 further shows that merely having poorly transmitted singular directions is cheap: they obstruct only if the canonical target projection asymptotically tracks them.
+\[
+q_R=\langle u_R,T_R(I+T_R)^{-1}u_R\rangle
+\]
 
-Near-kernel tracking is necessary for persistent leakage, not sufficient. In the flat control `\Gamma_R=0`, every visible direction is a kernel direction while the collective target tail still vanishes. Future progress must therefore prove arithmetic transversality of the actual `p_R`, or otherwise show that the canonical target cannot follow the moving near-kernel subspaces.
+are summable as well.
+
+Consequently the live transversality theorem can be weaker than a fixed singular gap. If, on a set of scales `S`, a fixed fraction `\kappa` of `u_R` lies in singular values at least `\eta_R`, persistence forces
+
+\[
+\sum_{R\in S}\frac{\eta_R^2}{1+\eta_R^2}<\infty.
+\]
+
+For `\eta_R\le1`, it is enough to prove a **nonsummable squared transmission floor**
+
+\[
+\sum_{R\in S}\eta_R^2=\infty
+\]
+
+together with the fixed target-mass lower bound. For example, an eventually recurring floor `\eta_R\gg R^{-\alpha}` rules out persistence whenever `\alpha\le1/2`.
+
+The remaining theorem is therefore quantitative target transversality: show that the canonical target cannot track the moving near-kernel subspaces with transmission collapsing at a square-summable rate across every sufficiently rich set of cells. A uniform lower singular bound on the whole visible space remains far stronger than necessary.
+
+## Treat individual disappearance, defect abundance, rank, forward memory, bad singular directions, target occupation, and accumulated transmission as separate gates
+
+Late individual shifts can vanish while the collective family remains visible. Every finite window already has infinite-dimensional defect; every visible natural window already has maximal causal rank. Merely having poorly transmitted singular directions is cheap: they obstruct only if the canonical target occupies them.
+
+NB-065 adds a cumulative gate. Even target occupation of shrinking singular sectors is not enough for persistence unless the corresponding transmission floors collapse quickly enough for their squared strengths to be summable over the recurrence scales. Sparse good scales can be harmless if their transmission budget is summable; repeated weak transversality can be decisive if its total squared budget diverges.
+
+Near-kernel tracking remains necessary, not sufficient. In the flat control `\Gamma_R=0`, every visible direction is a kernel direction while the collective target tail still vanishes. Future progress must therefore establish an oracle-free arithmetic lower bound on the target's **accumulated transmitted mass**, not merely existence or absence of abstract small singular values.
