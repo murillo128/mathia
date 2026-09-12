@@ -90,7 +90,7 @@ That is precisely the currency targeted by the accepted source-weighted-return c
 
 ## Claim
 
-Work in any finite canonical PF-205 section after the retained physical-low variables have been shorted as in PF-311. Let
+Work in any finite canonical [[research/prime_flute/findings/PF-205-natural-width-cuff-smoothing-is-C1-uniform-and-critical-orlicz-summable|PF-205]] section after the retained physical-low variables have been shorted as in PF-311. Let
 
 \[
 \mathcal B=
