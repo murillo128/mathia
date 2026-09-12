@@ -1,6 +1,6 @@
 # FD-072 — source power records force constant causal four-adic occupation
 
-**Status:** `EXACT-DERIVED + SOURCE-POWER-RECORDS + EPISODE-ADAPTED-HORIZON + CAUSAL-DENOMINATOR + FIXED-FOUR-ADIC-WITNESS + CONSTANT-NONSQUAREFREE-OCCUPATION + SCHUR-GAP + ZERO-FRONTIER-CERTIFICATE`.
+**Status:** `EXACT-DERIVED + SOURCE-POWER-RECORDS + EPISODE-ADAPTED-HORIZON + CAUSAL-DENOMINATOR + FIXED-FOUR-ADIC-WITNESS + CONSTANT-NONSQUAREFREE-OCCUPATION + SCHUR-GAP + FALSE-RH-RECORD-SUBSEQUENCE`.
 
 `FD-069`--`FD-070` show that an arbitrary physical spike eventually generates persistent nonsquarefree occupation, while `FD-071` shows why persistence at arbitrarily later horizons is not enough: a later zero-frontier spike can dominate the same-horizon denominator and dilute every fixed earlier packet. The surviving question is therefore episode-adapted. Can one choose a horizon tied to the source episode so that the denominator is forced to see only source values already controlled by that episode?
 
@@ -220,7 +220,7 @@ Hence, for `X>=2`,
 
 Equations (7), (19), (21), and (6) prove (8). No asymptotic estimate for `Delta` is needed.
 
-## 3. False RH forces infinitely many constant-occupation record horizons
+## 3. A false-RH frontier cannot hide its normalized record episodes
 
 Let
 
@@ -244,64 +244,29 @@ the normalized values `R_sigma(n)` are unbounded. Therefore there is an unbounde
 \boxed{
 \Theta>\sigma>\frac12
 \quad\Longrightarrow\quad
-\limsup_{T\to\infty}\nu_{T,3}
-\ge\kappa_\sigma,
+\nu_{4X_j,3}\ge\kappa_\sigma
+\text{ for infinitely many strict }\sigma\text{-records }X_j,
 }
 \tag{24}
 \]
 
-and
+and on the same source-selected horizons
 
 \[
 \boxed{
-\Theta>\sigma>\frac12
-\quad\Longrightarrow\quad
-\limsup_{T\to\infty}\mathfrak D_{T,3}
+\mathfrak D_{4X_j,3}
 \ge\frac{\kappa_\sigma}{24}.
 }
 \tag{25}
 \]
 
-This yields a direct zero-frontier certificate by contraposition:
+The important information is **where** these lower bounds occur: exactly at horizons attached to normalized source records. `FD-050` already proves an unconditional positive logarithmic-average occupation bound for fixed heads, so merely deducing a positive global `limsup nu_(T,3)` would not be new. Equations (24)--(25) are instead a coupling theorem: if a supercritical source frontier exists, the episodes that create new normalized power records are themselves protected from the denominator-dilution mechanism of `FD-071`.
 
-\[
-\boxed{
-\limsup_{T\to\infty}\nu_{T,3}<\kappa_\sigma
-\quad\Longrightarrow\quad
-\Theta\le\sigma,
-}
-\tag{26}
-\]
+This does not turn the occupation ratio into a new RH criterion by itself. The existing global dilation results already prevent pointwise occupation from tending uniformly to zero. The gain is that the false-RH-facing spike subsequence can no longer be dismissed as potentially living entirely inside the sparse low-occupation exceptional set allowed by `FD-049`--`FD-050`.
 
-with the analogous implication from `limsup mathfrak D_(T,3)<kappa_sigma/24`.
+## 4. The record constant degenerates at the critical exponent
 
-In particular,
-
-\[
-\boxed{
-\nu_{T,3}\to0
-\quad\Longrightarrow\quad
-\mathrm{RH},
-}
-\tag{27}
-\]
-
-and likewise
-
-\[
-\boxed{
-\mathfrak D_{T,3}\to0
-\quad\Longrightarrow\quad
-\mathrm{RH}.
-}
-\tag{28}
-\]
-
-These are one-way criteria, not proofs that either geometric quantity tends to zero. They isolate a precise consequence that any future vanishing theorem for the physical occupation or fixed-head scalar saturation channel would have.
-
-## 4. The constant degenerates exactly at the critical exponent
-
-The record theorem does not smuggle in a uniform RH gap. Indeed
+The theorem does not smuggle in a uniform gap at `sigma=1/2`. Indeed
 
 \[
 \mathscr C_\sigma
@@ -309,7 +274,7 @@ The record theorem does not smuggle in a uniform RH gap. Indeed
 \sum_{r=4}^{\infty}\left(\frac4r\right)^{2\sigma}
 \longrightarrow\infty
 \qquad(\sigma\downarrow1/2),
-\tag{29}
+\tag{26}
 \]
 
 so
@@ -319,14 +284,12 @@ so
 \kappa_\sigma\longrightarrow0
 \qquad(\sigma\downarrow1/2).
 }
-\tag{30}
+\tag{27}
 \]
 
-Thus a frontier only infinitesimally to the right of the critical line forces only an correspondingly small positive occupation constant through this argument. The mechanism becomes quantitatively strong only when there is a fixed power gap above `1/2`.
+Thus a frontier only infinitesimally to the right of the critical line forces only a correspondingly small positive record-occupation constant through this argument. The mechanism becomes quantitatively strong only when there is a fixed power gap above `1/2`.
 
-Because each term `(4/r)^(2sigma)` decreases with `sigma`, `mathscr C_sigma` is decreasing and `kappa_sigma` increasing. Hence (24) can also be read as a monotone quantitative bridge: a measured or proved upper bound on the limsup occupation below `kappa_sigma` excludes every zeta zero to the right of `Re(s)=sigma`.
-
-No converse is asserted. RH gives the usual subcritical power envelopes but does not imply `nu_(T,3)->0`; `FD-047`, `FD-050`, and `FD-068` in fact show substantial recurrent nonsquarefree occupation under broader averaging quantifiers.
+Because each term `(4/r)^(2sigma)` decreases with `sigma`, `mathscr C_sigma` is decreasing and `kappa_sigma` increasing. This monotonicity is useful for calibration, but it does not alter the quantifier boundary: the theorem controls source-selected record horizons, not every horizon or a positive-density family of records.
 
 ## 5. Why this evades the `FD-071` dilution mechanism without contradicting it
 
@@ -340,6 +303,6 @@ This does not settle `CLUE-joint-nonsquarefree-jordan-energy-occupation`. That c
 
 ## 6. Prior-art boundary and falsification checks
 
-The only non-elementary analytic input in the zero-frontier consequence is the classical Mertens/zeta power-growth theorem already anchored through Titchmarsh in `SOURCES.md` and transferred to `mathcal H` by `FD-046`. The power-record envelope (9), the exact four-adic sample (16), and the summable denominator comparison (15) are elementary. A targeted audit over Mertens record values, Farey discrepancy, GCD/Jordan energies, and normalized power records did not identify an external theorem supplying this particular causal occupation bridge. No new external dependency is load-bearing, so `SOURCES.md` requires no addition and no broad novelty claim is made.
+The only non-elementary analytic input in the false-RH record consequence is the classical Mertens/zeta power-growth theorem already anchored through Titchmarsh in `SOURCES.md` and transferred to `mathcal H` by `FD-046`. The power-record envelope (9), the exact four-adic sample (16), and the summable denominator comparison (15) are elementary. A targeted audit over Mertens record values, Farey discrepancy, GCD/Jordan energies, and normalized power records did not identify an external theorem supplying this particular causal occupation bridge. No new external dependency is load-bearing, so `SOURCES.md` requires no addition and no broad novelty claim is made.
 
-The falsification boundary is explicit. The horizon must be tied to the record as `T=4X`; replacing it by an arbitrary much later horizon reopens the `FD-071` dilution mechanism. The head `D=3` is fixed so row `4` survives. The record must control the **same** physical source `mathcal H` used by the denominator; a record of an unrelated Mertens statistic would not imply (9). The exponent must satisfy `sigma>1/2`; at the endpoint the comparison series diverges. Finally, (27)--(28) are implications from a future vanishing theorem to RH, not evidence that such vanishing occurs. The durable gain is the exact source-adapted statement (6): every power record above the critical exponent forces a fixed positive same-horizon nonsquarefree fraction and a fixed positive Schur saturation loss.
+The falsification boundary is explicit. The horizon must be tied to the record as `T=4X`; replacing it by an arbitrary much later horizon reopens the `FD-071` dilution mechanism. The head `D=3` is fixed so row `4` survives. The record must control the **same** physical source `mathcal H` used by the denominator; a record of an unrelated Mertens statistic would not imply (9). The exponent must satisfy `sigma>1/2`; at the endpoint the comparison series diverges. Finally, the theorem says nothing about the spacing or density of the records and does not improve the zeta-zero frontier by itself. The durable gain is the exact source-adapted statement (6): every power record above the critical exponent forces a fixed positive same-horizon nonsquarefree fraction and a fixed positive Schur saturation loss.
