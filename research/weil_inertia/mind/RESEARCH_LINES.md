@@ -14,18 +14,20 @@ WI-231--WI-237 show that finite negative inertia detects off-line packets exactl
 
 WI-238--WI-252 isolate the finite-radius first-odd-crossing witness. Layer-cake localization produces a signed radial von-Mangoldt flux, while prime reflection violates the first Beurling--Deny positivity criterion. The live odd-sector theorem remains source-specific: control that signed flux, derive a phase/nodal restriction from the eigen-equation plus arithmetic source, or find another order structure not contradicted by prime reflections.
 
-## Independently recertify the exact first-prime matrix with a correct positivity judge, then test the one-prime phase cone
+## Recertify the first-prime operator, then use genuine first-crossing rigidity to defeat autocorrelation screening
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253--WI-259 isolate the phase-coupled source cone `S_v(r)+J_v(r,t)>=0` and show that prime activation first requires finite-scale positivity beyond `(log 2)/2`. Positivity at `r=7/20` would reduce the next phase problem to exactly the single atom `n=2`.
+WI-253--WI-259 isolate the phase-coupled source cone `S_v(r)+J_v(r,t)>=0` and show that prime activation first requires finite-scale positivity beyond `(log 2)/2`. WI-260--WI-262 prove that the public FP-0.35 paths do not yet certify the exact `r=7/20` premise: one route lacks rigorous enclosure/residual control, another assembles the wrong theorem object, and the interval LDL judge itself has an algebraic false-positive defect.
 
-WI-260--WI-261 show that the existing public FP-0.35 paths do not certify that premise. The reproduction script lacks rigorous enclosure/residual control, while the nominal exact-prime proofctl path assembles a midpoint surrogate and uses the wrong `c_L` for the theorem object.
+That independent recertification remains the first gate. But WI-263 now closes a tempting continuation even if the gate succeeds. For every `a` in `(7/20,log(3)/2)` there are smooth normalized full-span two-bump functions whose positive-definite autocorrelation has a zero gap containing `log 2`. The single `n=2` atom is screened exactly, while the short self-correlation and long opposite-sign cross-correlation align with the sign change of Suzuki's archimedean source so that
 
-WI-262 adds an independent judge-level failure. The interval LDL routine `_min_pivot_mpmath` updates every off-diagonal Schur entry twice. An exact rational indefinite `3x3` matrix with determinant `-3/50` is therefore reported with three positive pivots `1,1/4,21/100`. The defect survives arbitrary precision and zero-width intervals. Even after fixing it, the routine still needs genuine directed/outward interval arithmetic before its pivots can certify positivity.
+`J_v(r,t)>=0`
 
-The next gate is consequently an **independent two-stage certificate**: first assemble a dependency-safe enclosure of the intended exact operator with exact `tau`, prime terms and nonzero `c_L`; then prove positivity with a mathematically valid interval `LDL^T`/Cholesky or rigorous induced-norm residual theorem whose algebra and rounding are independently regression-tested. Only after both object identity and judge correctness are established should the line freeze `r=7/20` and attack the one-prime phase identity.
+for every frequency throughout the one-prime regime.
 
-## Treat source activation, exact object identity, enclosure correctness, judge algebra and phase-defect sign as separate gates
+Therefore compact support, full support span, positive-definiteness and the explicit one-prime source **cannot by themselves** force a negative localized phase defect. After recertification, the next theorem must actually consume first-crossing information that the two-bump control does not satisfy: the quantitative lower envelope `F_v(r)>=r lambda_r`, the exact zero-mode equation `A_(a_*)v=0`, or another source-specific consequence of firstness strong enough to exclude the screening geometry or force overlap at `h=log 2`.
 
-Numerical margin, exact-looking metadata, and positive pivots do not compose into a proof unless they concern the same exact matrix and the positivity predicate itself is valid. WI-260--WI-262 are certification barriers, not evidence that the intended FP-0.35 operator is negative. If recertification succeeds, the source-sign program resumes at one prime; if it fails, WI-259 remains only a conditional reduction.
+## Treat source activation, exact object identity, judge validity, autocorrelation screening and firstness as separate gates
+
+WI-263 is not a counterexample to the localized Weil zero-mode problem. Its two-bump model need not satisfy the first-crossing eigen-equation or lower envelope. It proves only that Bochner/autocorrelation positivity and support geometry leave enough freedom to erase the first prime exactly. A successful phase argument must identify the additional rigidity supplied by the actual first crossing rather than assume it from generic autocorrelation structure.

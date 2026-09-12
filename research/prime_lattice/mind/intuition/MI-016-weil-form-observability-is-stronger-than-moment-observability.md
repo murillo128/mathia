@@ -1,15 +1,27 @@
-# MI-016 — The actual Weil ground branch beats the ambient modulus, but one-stroke `L^2` localization still pays a square-root transport barrier
+# MI-016 — The actual Weil ground branch has a squared-log frequency moment, but the remaining transport bill is quantitative and source-specific
 
-**Evidence level:** proved for the fixed-domain logarithmic form geometry through PL-288, conditional on the PL-283--PL-284 finite spectral certificate at `a=0.8`; completed arithmetic positivity and a quantitative state-specific transport radius remain open.
+**Evidence level:** proved for the one-dimensional fixed-domain principal operator and its bounded-perturbation Weil eigenstates through PL-289, conditional on the PL-283--PL-284 finite spectral certificate at `a=0.8`. Completed arithmetic positivity and a quantitatively useful transport radius remain open.
 
 PL-285--PL-286 identify the sharp generic obstruction. On Suzuki's fixed interval, active arithmetic channels are compressed translations. Ambient `L^2` operator norm is discontinuous; on the canonical logarithmic form domain the worst-case quadratic-form modulus is sharply `Theta(1/log(1/|delta|))`, even for the complete active `2,3,4` source comb.
 
-PL-287 identifies the sharp witnesses as moving high-frequency packets: they push Fourier mass to frequency `~1/delta`. Every fixed vector, and uniformly every compact subset of `H^log`, has the strictly better `o(1/log(1/|delta|))` modulus. Conditional endpoint isolation makes the normalized ground state an `H^log`-continuous local branch, so its compact image cannot realize the ambient worst case. The missing ingredient is a quantitative tail profile.
+PL-287 identifies the sharp witnesses as moving high-frequency packets and proves that every compact subset of `H^log` has the strictly better `o(1/log(1/|delta|))` modulus. PL-288 then shows that the existing finite reduction does not quantify that improvement strongly enough: even an exact ground-state tail norm below `7e-9` gives bounded-shift uncertainty around `1e-8`, far above the certified `~1e-17` positivity margin.
 
-PL-288 asks whether the certified one-stroke finite reduction already provides that profile. Its answer is negative but precise. At `a=0.8`, the lower form's discarded Legendre block is coercive at order one and its head-tail coupling is below `10^-100`; combined with the exact-ground-state upper bound `lambda_1(Q)<=2.27e-17`, this proves `||tail||_2<6.65e-9` for the **exact** ground state.
+PL-289 reaches the stronger regularity through the eigen-equation rather than finite-dimensional localization. For the one-dimensional principal logarithmic operator `T`, zero extension satisfies
 
-That localization is far too weak for the moving-shift problem. For any bounded shift channel, replacing the exact state by its retained head incurs `O(||tail||_2)` uncertainty, about `10^-8`, while the certified positivity margin is about `10^-17`. Because fixed-domain translations are not operator-norm continuous on the ambient low-regularity space, ordinary `L^2` smallness does not acquire an extra `|delta|` factor. PL-288 also gives a finite-dimensional positive model in which an isolated exact eigenvector genuinely has tail size `Theta(sqrt(lambda_1))`, so the square-root loss cannot be removed from the existing block/eigenvector data alone.
+`D(T)={u : (log|xi|+gamma) Fourier(Eu) in L^2}`,
 
-The surviving resource is therefore **frequency-weighted state regularity**, not merely spatial/Legendre localization. An explicit logarithmic or stronger Fourier-tail bound for the ground branch could convert compactness into a usable transport modulus; alternatively an eigen-equation/source cancellation identity could kill the head-tail shift cross terms, or a finite certificate could cover an aperture interval directly.
+with the explicit graph estimate
 
-**Boundary.** PL-288 does not refute the local positivity branch and does not contradict PL-287's qualitative little-o improvement. It proves only that the existing one-stroke coercivity, tiny block coupling, exact eigenvector equation, and boundedness of shift channels do not supply the quantitative margin transport. The endpoint certificate remains conditional.
+`(1/(2 pi)) int (log|xi|+gamma)^2 |Fourier(Eu)|^2 <= ||Tu||_2^2 + (pi^2/2)||u||_2^2`.
+
+The proof uses the exterior Carleman transform and excludes endpoint-supported residual distributions. Since the canonical source-static Weil operator is `T+K_a` with `K_a` bounded, its normalized eigenstates inherit a uniform squared-log moment on compact source-static aperture intervals.
+
+This changes the transport currency. For such eigenstates, translation correlations have modulus
+
+`O(1/log^2(1/|delta|))`.
+
+The actual ground branch therefore beats the ambient inverse-log law by a full logarithmic power for a concrete operator-domain reason, not merely compactness. Ordinary `L^2` tail localization is no longer the only available state-specific information.
+
+The remaining barrier is the coefficient, not the logarithmic exponent alone. With an order-one squared-log moment constant, the `log^-2` modulus is still numerically incapable of transporting a `10^-17` margin over a useful aperture interval. A successful continuation must extract a much smaller state-specific constant from the arithmetic bounded remainder, exploit an eigen-equation/source cancellation that suppresses the relevant moving translation channel, or certify positivity directly across an interval.
+
+**Boundary.** PL-289 is one-dimensional and source-static. It does not eliminate activation bookkeeping, prove a practical transport radius, or complete the conditional positivity branch. Its durable gain is that the generic form-domain regularity obstruction has been replaced by a sharper eigenstate graph-domain resource whose remaining insufficiency is quantitative.

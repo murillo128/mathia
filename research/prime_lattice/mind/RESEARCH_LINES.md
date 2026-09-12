@@ -2,20 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Quantify the actual simple ground branch with state-specific tail regularity, not one-stroke `L^2` localization alone
+## Turn the exact squared-log eigenstate regularity into a quantitatively useful source-specific transport bound
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
 PL-280--PL-282 give the one-sided aperture ledger, global exhaustion, and a terminating finite positivity certificate at each fixed aperture. PL-283--PL-284 add a conditional computer-assisted positive endpoint at `a=0.8` with a simple isolated ground state and a tiny explicit positive margin.
 
-PL-285--PL-286 identify the sharp worst-case transport obstruction on the full canonical logarithmic form ball. Active arithmetic channels are compressed translations, and even the complete `2,3,4` source comb retains the `Theta(1/log(1/|a-b|))` modulus by phase locking.
+PL-285--PL-286 identify the sharp worst-case transport obstruction on the full canonical logarithmic form ball. PL-287 shows that the actual compact ground branch beats that inverse-log modulus qualitatively. PL-288 proves that even extremely strong ordinary `L^2` tail localization from the existing finite reduction still pays a square-root transport barrier and is many orders too weak for the certified margin.
 
-PL-287 separates that ambient obstruction from the actual isolated state. Every compact family in `H^log` has uniform translation-form modulus `o(1/log(1/|delta|))`; conditional endpoint isolation makes the local ground branch compact in that topology. The improvement is real but qualitative.
+PL-289 now supplies the missing state-specific frequency regularity exactly. For Suzuki's one-dimensional principal logarithmic operator `T` on `(-1,1)`,
 
-PL-288 tests whether the existing one-stroke finite reduction already supplies the missing quantitative tail control. It does not. The certified lower form has an order-one coercive discarded block and head-tail coupling below `10^-100`, while the exact ground eigenvalue is at most `2.27e-17`; this yields the strong exact-state bound `||tail||_2<6.65e-9`. But bounded shift expectations then carry `O(10^-8)` tail uncertainty—about nine orders above the certified positivity margin—and fixed-domain translations are not norm-continuous, so `L^2` smallness gains no factor of the aperture displacement. A two-dimensional model shows the `sqrt(lambda_1)` tail scale is sharp from these inputs even for an isolated exact eigenvector.
+`D(T) = {u : (log|xi|+gamma) Fourier(Eu)(xi) in L^2}`, 
 
-The live theorem is therefore narrower: obtain **state-specific weighted Fourier-tail regularity with explicit constants**, a source/eigen-equation orthogonality that suppresses head-tail shift cross terms, or a direct finite certificate on a nontrivial aperture interval. Stronger bookkeeping of the one-stroke `L^2` decomposition cannot by itself transport the tiny endpoint margin.
+and
 
-## Separate ambient topology, branch compactness, `L^2` tail localization, quantitative frequency regularity and global coercivity
+`(1/(2 pi)) int (log|xi|+gamma)^2 |Fourier(Eu)(xi)|^2 dxi <= ||Tu||_2^2 + (pi^2/2)||u||_2^2`.
 
-PL-287 proves the actual compact branch beats the sharp ambient inverse-log modulus qualitatively. PL-288 proves that spectacular finite-block localization in ordinary `L^2` still does not price translation transport at the required scale. Endpoint isolation, compact-branch little-o regularity, small `L^2` tail norm, weighted frequency-tail control, explicit transport radius, and aperture-uniform positivity are distinct gates.
+The canonical Weil operator is a bounded perturbation of `T` on every source-static aperture interval, so its eigenstates inherit a uniform squared-log Fourier moment. Their translation/autocorrelation modulus is consequently
+
+`O(1/log^2(1/|delta|))`,
+
+a full logarithmic power better than the sharp ambient `Theta(1/log)` law and stronger than the qualitative compact-family little-o from PL-287.
+
+The ambient regularity barrier is therefore no longer the live theorem. The remaining problem is quantitative and arithmetic: obtain a sufficiently small **state-specific constant**, an eigen-equation/source cancellation identity that suppresses the moving prime-shift contribution, or a direct finite certificate over a nontrivial aperture interval. A coefficient of ordinary size multiplying `log^-2` is still far too large to transport the `~10^-17` endpoint margin over a useful aperture displacement.
+
+## Separate ambient topology, graph-domain regularity, quantitative constant, source activations and global coercivity
+
+PL-289 is an operator-domain theorem, not an ambient form-domain estimate. It removes the generic inverse-log obstruction for actual eigenstates but does not make the resulting modulus numerically useful, and aperture activations still require the existing source bookkeeping. Endpoint isolation, squared-log moment, explicit transport constant, activation control and aperture-uniform positivity remain separate gates.

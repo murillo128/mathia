@@ -14,20 +14,32 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Estimate the coefficient-weighted prime-ratio collision horizon
+## Estimate the weighted top-scale bounded-determinant incidence mass
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`.
 
-VIS-187--VIS-191 establish the sharp `y/log y` boundary for the absolute pair envelope. VIS-192 shows that signed cancellation is much better after long start averaging: distinct prime-ratio frequencies give exact Cesaro orthogonality and variance `asymp 1/H` in the diverging subcritical regime. VIS-193 turns that into a uniform deterministic finite-start theorem at the coarse worst-gap horizon `L=O(y^2)`.
+VIS-187--VIS-191 establish the sharp `y/log y` boundary for the absolute pair envelope. VIS-192 shows that signed cancellation is much better after long start averaging: distinct prime-ratio frequencies give exact Cesaro orthogonality and variance `asymp 1/H`. VIS-193 transfers this to every deterministic start at the coarse worst-gap horizon `L=O(y^2)`, while VIS-194 replaces that global minimum spacing by the coefficient-weighted local-spacing resource
 
-VIS-194 replaces the global minimum spacing by the exact weighted Hilbert resource
+`D_v = [sum_lambda |c_lambda|^2/delta_lambda] / [sum_lambda |c_lambda|^2]`.
 
-`D_v(y,H) = [sum_lambda |c_lambda|^2/delta_lambda] / [sum_lambda |c_lambda|^2]`,
+VIS-195 now identifies exactly what an arithmetic improvement `D_v=o(y^2)` means. With `b_y=log(1+2/y^2)` and
 
-where `delta_lambda` is the individual nearest-neighbor spacing of each signed prime-ratio frequency. Uniformly in the start `T0`, the relative finite-window mean-square error is at most `3 pi D_v/L`. Thus `L>=C D_v` already gives the `O(1/H)` signed cancellation of VIS-192, and `L/D_v->infinity` recovers its Cesaro variance uniformly. The old `y^2` horizon is only the universal fallback `D_v<=y^2+1`.
+`C_(y,H)(A)=nu_(y,H){lambda: delta_lambda<=A b_y}`,
 
-The live theorem is now genuinely arithmetic: prove `D_v=o(y^2)` in a useful `(y,H)` regime by controlling the coefficient energy carried by near-colliding prime ratios, obtain a sharper weighted large-sieve/multiplicative-energy bound, or show that the downstream target supplies a deterministic start window that already dominates `D_v`. Reusing the single worst spacing cannot improve the horizon.
+one has
 
-## Keep absolute resolution, Cesaro cancellation, worst-gap finite-window control and weighted effective horizon separate
+`b_y D_v = integral_1^infinity C_(y,H)(A) A^(-2) dA`,
 
-VIS-191, VIS-192, VIS-193 and VIS-194 answer different questions. `D_v` is a sufficient weighted dephasing scale, not a proved necessary one; its improvement over `y^2` remains an arithmetic problem. A rare tiny gap matters only in proportion to the coefficient energy it carries.
+so `D_v=o(y^2)` if and only if `C_(y,H)(A)->0` for every fixed `A>1`. Fixed normalized crowding occurs only at top product scale and is equivalent to bounded even determinant relations
+
+`qr-ps=h` or `qs-pr=h`,
+
+with fixed nonzero even `h` and all participating primes `Omega_A(y)`.
+
+Equivalently, the desired subquadratic dephasing scale is exactly the statement that the **actual taper coefficient-energy measure** assigns vanishing mass to every fixed bounded-determinant incidence family at macroscopic prime-product scale. An unweighted count of prime quadruples is not the target unless it is strong enough to control that weighted mass.
+
+The live theorem is therefore concrete: estimate the VIS-192 taper-weighted prime solutions of these determinant equations, or derive a stronger weighted large-sieve/multiplicative-energy inequality that implies the same vanishing. Reusing the single worst spacing cannot improve the horizon.
+
+## Keep absolute resolution, Cesaro cancellation, worst-gap control, weighted spacing and bounded-determinant mass separate
+
+VIS-195 improves the universal spacing fallback only by a constant, `D_v<=b_y^-1=y^2/2+O(1)`. Its real gain is structural: the `o(y^2)` question has become a weighted top-scale determinant-incidence problem. `D_v` remains a sufficient Hilbert-inequality horizon, not a proved necessary optimal observation time.

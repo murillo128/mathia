@@ -1,17 +1,21 @@
-# MI-001 — Farey transfer is governed by causal protection plus subpower recurrence of energy-weighted frontier occupation
+# MI-001 — Farey transfer is governed by causal protection plus subpower pointwise recurrence of energy-weighted frontier occupation
 
-**Evidence level:** supported by the exact source/occupation reductions through FD-080 and the persisted Pintz inputs. No eventual pointwise occupation bound, bounded first-passage time, positive natural density, or RH criterion is claimed.
+**Evidence level:** supported by the exact source/occupation reductions through FD-081 and the persisted Pintz inputs. No eventual pointwise occupation bound, bounded multiplicative return time, positive natural density, or RH criterion is claimed.
 
-FD-071--FD-076 isolate causal record protection. FD-077 transfers Pintz's average absolute order into abundant frontier-near physical-source values. FD-078 then moves to the physically relevant energy weighting and proves that total annular energy, nonsquarefree annular energy, and the Schur residual all have the same full power exponent `2 Theta`.
+FD-071--FD-076 isolate causal record protection. FD-077 transfers Pintz's average absolute order into abundant frontier-near physical-source values. FD-078 moves to the physically relevant energy weighting and proves that total annular energy, nonsquarefree annular energy, and the Schur residual all have the same full power exponent `2 Theta`.
 
-FD-079 converts that exponent agreement into logarithmic recurrence. Exact nonsquarefree dilation preserves the natural logarithmic horizon weight, giving a finite logarithmic entropy budget for the annular occupation `Omega_(D,alpha)`. Its logarithmic geometric and arithmetic means stay bounded below by `c_q=w(q)q^(-2Theta)>0`; thresholds tending to zero occupy asymptotically zero logarithmic measure.
+FD-079 converts that exponent agreement into logarithmic recurrence. Exact nonsquarefree dilation preserves the natural logarithmic horizon weight, giving a finite logarithmic entropy budget for the annular occupation `Omega_(D,alpha)`. FD-080 then removes fixed-power bad deserts: for every fixed `eta<c_q`, the first occupied exact dilation descendant occurs after `o(log X)` steps and at scale `X^(1+o(1))`.
 
-FD-080 removes the remaining possibility of fixed-power bad deserts. For the exact successor `S_q(X)=q(X+1)` and any fixed `eta<c_q`, a bad successor forces annular energy growth by at least `w(q)/eta`. Because `log A(T)/log T -> 2Theta` is a full limit, such excess growth cannot persist for a positive fraction of `log X` refinement steps. The first occupied descendant therefore satisfies
+FD-081 shows that this recurrence is not confined to annular averages. Since
 
-`tau_eta(X)=o(log X)`, hence `Y/X=X^(o(1))` and, for every fixed `epsilon>0`, eventually some exact successor descendant obeys `X<Y<=X^(1+epsilon)` and `Omega(Y)>eta`.
+`Omega_(D,alpha)(Y) = [sum lambda_H E_(H,D) nu_(H,D)] / [sum lambda_H E_(H,D)]`
 
-For `q=4`, every `eta<3/64` is unconditional; under RH the admissible threshold extends to `eta<3/16`. The same subpower recurrence transfers to the annular Schur projective defect because it dominates `Omega`.
+is a positive weighted average, `Omega>eta` forces at least one physical horizon in the annulus with `nu_(H,D)>eta`. Rescaling the annulus lower edge beyond any prescribed `X` yields, for every fixed `epsilon>0`, eventually
 
-The remaining obstruction is now more specific than exceptional-scale localization. Isolated arbitrarily deep dips may still occur, and `tau_eta` need not be bounded or even `O(log log X)`. What is still missing is either a theorem that the downstream Farey criterion only needs this **power-syndetic** recurrence, a source-specific mechanism upgrading it to the actual horizon/pointwise currency, or additional arithmetic control on the subpower windows in which the residual dips may live.
+`X < H <= X^(1+epsilon)` and `nu_(H,D)>eta`.
 
-**Boundary.** The result keeps `D`, `alpha`, and integral nonsquarefree `q` fixed. It does not prove `U_(H,D)>=c_D E_(H,D)` at every large horizon, positive natural density of good endpoints, or absence of isolated deep losses. Its durable gain is that constant annular occupation now reappears before every fixed-power enlargement, not merely on a positive logarithmic proportion of scales.
+Thus the pointwise first-passage horizon satisfies `log sigma_eta(X)/log X -> 1`. For `q=4`, every `eta<3/64` is unconditional; under RH the admissible threshold extends to `eta<3/16`.
+
+The remaining obstruction is now sharply downstream-facing. Pointwise occupied horizons are power-syndetic, but isolated or subpower-length bad stretches may still exist. What is missing is either a theorem that the Farey/RH criterion is stable when evaluated on this subpower-dense subsequence, a quantitative restriction on the remaining bad gaps, or an upgrade to eventual pointwise occupation.
+
+**Boundary.** The result keeps `D`, the annular parameter used in each application, and the nonsquarefree dilation `q` fixed. The positive-average extraction proves existence of a good horizon but no count or natural density of such horizons. It does not justify replacing power-syndetic pointwise occupation by a uniform lower bound at every large `H`.

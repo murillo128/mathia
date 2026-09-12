@@ -26,14 +26,20 @@ AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error 
 
 AF-282--AF-299 progressively separate stable acquisition from the final zero-sensitive target and close several free linear/geometric repairs. AF-300 gives the exact complex-affine benchmark: an independently justified source dimension `r` changes the leverage bill from `N^(-1/2)` to `r^(-1/2)`, but every remaining complex direction is still essential.
 
-AF-301 replaces deleted linear directions by a positive reachable cone. AF-302 now closes the simplest normalization escape. On the coefficient simplex, a retained state `y` with unused mass `M(y)` has the exact fiberwise response body
+AF-301 replaces deleted linear directions by a positive reachable cone, and AF-302 takes the normalized cross-section. On the coefficient simplex, a retained state `y` with unused mass `M(y)` has the exact response body
 
 `r_S(y;z) + M(y) K_D(z)`,
 
-where `K_D(z)` is the convex hull of the discarded Dirichlet response rays. This yields genuine resource gates such as `|r_S| <= M R_D`, but total mass does not restore exact factorization: three discarded Q-independent logarithmic frequencies recur at arbitrarily large heights with `0` inside their response hull, already making the zero retained fiber contain both safe and failing normalized sources.
+where `K_D(z)` is the convex hull of the discarded Dirichlet response rays. Normalization bounds the correction body but does not restore exact factorization when recurrent discarded phases place zero inside that hull.
 
-The live source-relative escape is therefore narrower than “add positivity or normalization.” It must constrain the actual reachable body enough to avoid the target failure set: coefficient caps tied to barycentric weights, discreteness/integrality, sparsity, multiplicative coupling, support restrictions, nonlinear source relations, or a prescribed finite observation window are legitimate remaining categories. Each must be tested by computing its own fiberwise reachable set and resource budget.
+AF-303 now closes the simplest cap-only repair. A fixed source-independent coordinate cap `c_n<=alpha` merely carves the normalized fiber into a smaller polytope. If sufficiently many comparable discarded primes satisfy
+
+`beta_D(sigma)=max_j p_j^sigma / sum_k p_k^sigma < alpha`,
+
+Kronecker--Weyl recurrence produces arbitrarily large heights at which that capped polytope still contains an exact zero representation and a nearby safe source with the same retained coordinates. For every fixed `alpha>0` such prime blocks exist.
+
+The live source-relative escape is therefore narrower than positivity, normalization, or a universal coefficient cap. A successful restriction must constrain the **actual feasible fiberwise correction polytope** in a target-dependent way: bounded discarded support, geometry-adaptive caps, discreteness/integrality, multiplicative or nonlinear coupling, support restrictions, or a finite observation window remain legitimate categories. Each must be tested against the target failure set rather than inferred from a nominal reduction in source size.
 
 ## Treat the information bills separately
 
-Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, projective distance to failure, linear condition number, nonlinear relative distortion, radial metric singularity, observation leverage, admissible-source dimension, quotient geometry, source-derived anisotropy, and fiberwise reachability are distinct resources. AF-302 adds a useful distinction inside one-sided geometry: removing radial freedom changes an unbounded cone into a bounded mass-scaled convex body, which can prevent complete saturation without restoring exact target fidelity.
+Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, projective distance to failure, linear condition number, nonlinear relative distortion, radial metric singularity, observation leverage, admissible-source dimension, quotient geometry, source-derived anisotropy, and fiberwise reachability are distinct resources. AF-303 adds another distinction inside one-sided geometry: a coordinate cap is useful only relative to the barycentric weights required by the discarded response geometry. A fixed cap independent of that geometry is not a uniform fidelity resource.

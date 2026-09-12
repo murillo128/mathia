@@ -8,22 +8,24 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Compare residual discovery with future screening on the same q-adic refinement level
+## Remove the benign finite-depth boundary layer before using q-adic prediction volume as a tail diagnostic
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
-NB-066--NB-078 reduce a persistent late quotient to the uncancelled continuation charge `J`, then express its q-adic change as new continuation minus new prediction. NB-079 sharpens that ledger by canceling the common prediction mode before any source estimate is attempted.
+NB-066--NB-079 reduce a persistent late quotient to the uncancelled continuation charge `J` and then cancel the common coarse-future prediction mode. At each exact refinement step,
 
-At every exact refinement step,
+`ell=G+P`, `c=G+S`,
 
-`ell=G+P` and `c=G+S`,
-
-where `G` is fine-past predictability already supplied by the coarse future, `P` is residual continuation discovered after conditioning on that coarse future, and `S` is screening supplied by the new future contrasts. Hence
+so
 
 `J_m=J_0+sum_(r<=m)(P_r-S_r)`.
 
-The live theorem is now source-specific and smaller than the NB-078 raw comparison: prove that residual discovery cannot systematically outrun future screening, up to a summable total loss. A sufficient condition on one unbounded ray is `P_r<=S_r+e_r` with `sum e_r<infinity`. Large common prediction growth `G` is irrelevant to this criterion and should not consume arithmetic effort.
+A summable upper bound on `P-S` along one unbounded ray is still a sufficient stable-tail exclusion. NB-080 now shows that this fixed-ratio criterion is far stronger than stable-tail absence and cannot be justified from generic outerness or good conditioning.
 
-## Keep raw continuation, common coarse-future prediction, residual discovery, future screening and localization separate
+For the boundedly invertible outer control `D_j=(I-rho V_m)e_j`, `0<rho<1`, the stable tail is exactly zero and the global Gram is uniformly conditioned, yet on every exact `m`-adic refinement ray with fixed relative future depth the prediction-volume charge grows at least linearly in the prefix size. A positive-density boundary layer of newly exposed prefix innovations sees only a fixed number of descendant generations, so each pays a fixed benign finite-depth prediction cost. Consequently `sum(P-S)->+infinity` although no stable mode exists.
 
-NB-079 does not prove a sign for `P-S`. Mesoscopic additive localization may imply enough screening, but it is only one route. The exact target is the conditioned residual channel: edge/past-contrast continuation after coarse-future information is removed versus the future-contrast information that screens it.
+The live Nyman theorem must therefore remove that horizon artifact rather than merely sharpen the same fixed-ratio estimate. Viable routes are: let relative future depth grow with scale and extend the refinement ledger accordingly; explicitly subtract/renormalize the outer finite-depth boundary layer; or derive a genuinely target/stable-mode-sensitive arithmetic certificate that is not extensive on outer controls.
+
+## Keep stable modes, finite-depth boundary costs, residual discovery and future screening separate
+
+NB-079's implication remains valid: bounded residual ledger on one unbounded ray kills the stable tail. NB-080 proves the converse intuition false even for uniformly invertible outer sources. Divergence of the fixed-ratio ledger is therefore not itself evidence of an inner factor or persistent memory. Any arithmetic use of `P-S` must first distinguish durable continuation from the positive-density shallow boundary layer created by the chosen horizon geometry.
