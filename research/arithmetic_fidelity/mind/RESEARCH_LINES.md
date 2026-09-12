@@ -28,24 +28,26 @@ AF-244--AF-276 show that coarse symmetry, zero counting, endpoint jets, compact-
 
 AF-278--AF-281 separate continuous time breadth, one-lattice aliasing, marginal coupling loss, and exact mixed-channel recovery. If all mixed samples `F(c+i(k_1h_1+...+k_Jh_J))` are retained, ordinary Dirichlet coefficient fidelity is equivalent to `cap_j R_(h_j)={1}`; separate resonant marginals do not have the same information.
 
-AF-282--AF-285 price three finite-prefix resources for the concrete `log2/log3` repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)`, uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`, and deterministic frame subset selection gives an **unweighted subset of at most `8N` distinct raw complex mixed moments** with a breadth-uniform inverse under adversarial per-sample absolute noise. Rank forces at least `N` complex observations, hence
+AF-282--AF-285 price the finite-prefix two-prime repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)`, uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`, and linear-size raw acquisition is possible. AF-287 now strengthens the sample-selection statement: classical frame sparsification yields an **unweighted `O(N)` subset of raw mixed samples with uniformly bounded condition number**.
+
+That bounded-condition frame closes the independent-jitter gap left by AF-286. For arbitrary rowwise offsets `|tau_j|<=T`, the exact matrix expansion gives
 
 \[
-q_{\mathrm{stable,raw}}(N)=\Theta(N).
+\|\widetilde A-A\|\le \|A\|\bigl(e^{T\log N}-1\bigr),
 \]
 
-AF-286 now prices timing provenance separately. A common unknown clock offset `tau` factors exactly as the coefficient gauge `b -> D_tau b`, with worst-case displacement `2 sin(T log N/2)` before saturation. Fixed relative coefficient distortion therefore has the sharp calibration scale
+so a nominal least-squares decoder on the selected frame has fixed relative `ell^2` distortion whenever `T=O(1/\log N)`. The common-offset subclass from AF-286 already forces the same order. Hence full known-prefix coefficient recovery has the sharp worst-case timing scale
 
 \[
-T=\Theta(1/\log N),
+T_{\rm jitter}(N)=\Theta(1/\log N)
 \]
 
-or `Theta(log log N)` fractional clock bits in a fixed time unit. More samples do not identify an arbitrary-complex source beyond this gauge. Independent rowwise jitter is a different perturbation class: the current sufficient relative scale is `O(1/(sqrt(N) log N))`, while the common-offset subclass leaves only the necessary `O(1/log N)` obstruction.
+for both arbitrary independent rowwise jitter and common-mode timing uncertainty, even though the latter is an exact coefficient gauge rather than generic perturbation.
 
-The next finite-prefix timing theorem is therefore precise: determine whether a derivative-frame or more structured linear-size subset closes the `sqrt(N)` gap for independent jitter, and separately determine which downstream targets are invariant under the common-clock gauge and thus require no external clock lift.
+The finite-prefix timing frontier has therefore moved. The live questions are now target-sensitive: which RH-relevant or arithmetic downstream functionals descend through the common-clock gauge and need no clock-origin lift; what changes with unknown support or infinite Dirichlet sources; and which source constraints reduce the coefficient-level timing bill.
 
 ## Treat the information bills separately
 
-A finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, phase labels are `Theta(1/N)` apart, stable mixed degree is `Theta(N)`, stable raw sample count is `Theta(N)`, and common-clock calibration is only `Theta(1/log N)` in time precision. These orders arise from different mechanisms.
+Finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, label spacing, mixed degree, raw sample count, condition number, common-clock provenance, and independent jitter are distinct resources. AF-287 shows that the earlier `sqrt(N)` independent-jitter loss was an artifact of a weak frame estimate, not a new information scale.
 
-Future fidelity claims must state which resource is being bounded: difference-object complexity, local depth, prime breadth, observation dimension, coupling geometry, cadence/fiber geometry, label resolution, mixed degree, sample count, time horizon, common-mode provenance, independent jitter, coefficient-recovery norm, source weights, support knowledge, and downstream target metric. Exact injectivity, polynomial label spacing, linear mixed degree, linear sample count, and inverse-log clock calibration are distinct statements.
+Future fidelity claims must state which resource is being bounded: difference-object complexity, local depth, prime breadth, observation dimension, coupling geometry, cadence/fiber geometry, label resolution, mixed degree, sample count, time horizon, common-mode provenance, independent jitter, coefficient-recovery norm, source weights, support knowledge, and downstream target metric. Exact injectivity, polynomial label spacing, linear sample count, bounded condition number, and inverse-log timing stability are distinct statements.

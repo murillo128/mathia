@@ -2,29 +2,38 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force structure on the nonquiet interruptions or on the fan span
+## Control the negative-charge or structural interruption burden on polynomial fan spans
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`.
 
-RE-049--RE-058 separate metric capacity from source fidelity. Genuine primality removes composite local substitutes, but one fixed chamber still contains only finite source data. RE-060--RE-064 then identify the first source-bearing cross-cell observable and reduce every extended bounded near-zero-charge fan to one local architecture: fringe-free `0 -> 0` packets whose higher-layer depths diverge. Egyptian cancellation can occur only terminally inside such a bounded run, while the separate escape of unbounded packet cardinality remains open.
+RE-049--RE-064 separate metric capacity from source fidelity and reduce every extended bounded near-zero-charge fan to fringe-free `0 -> 0` packets whose higher-layer depths diverge, with unbounded packet cardinality as a separate escape.
 
-RE-065 shows that even the surviving bounded deep-layer architecture has too little capacity on polynomial physical windows. Uniformly in a growing depth cutoff,
+RE-065 shows that this quiet bounded architecture has only subpolynomial capacity on polynomial physical windows. A strong off-critical polynomial-span fan therefore needs polynomially many nonquiet interruptions: packet cardinality exceeds the fixed bound, the packet has no higher-layer source event, or its normalized charge does not vanish.
+
+RE-066 makes the nonvanishing-charge branch sharply one-sided. For a bounded source-bearing packet the uniform charge law is
 
 \[
-M_{\ge r}(T)
-\le
-\log_2\!\left(\frac{T\log T}{\log2}\right)
-\left(\frac{T\log T}{\log2}\right)^{1/r},
+Q=-s+\chi_+-\chi_-+o(1),\qquad s>0.
 \]
 
-so `r(T)->infinity` leaves only `T^{o(1)}` higher-layer event occurrences. Because vanishing bounded source-bearing charge forces precisely such growing depths, every consecutive quiet run with endpoint scales `X<=Y<=X^A` has length only `X^{o(1)}`.
+Any charge bounded positively away from zero must be the unique fringe transition `0 -> 1`. Such upper states are forced into the base-two fringe-host family of RE-063, so positive bounded charges are only `O(\log T)` up to physical scale `T` and are multiplicatively lacunary. If the next switch is again bounded and source-bearing, the fringe persists and the successor must be `1 -> 0`, giving
 
-In the strong off-critical regime of RE-051, a polynomial-span fan contains polynomially many exposed switches. It therefore needs polynomially many **nonquiet interruptions**. Each interruption must have at least one of three forms: packet cardinality exceeds the fixed bound, the packet contains no higher-layer source event (first-layer takeover), or its normalized charge fails to vanish. If such an interruption count is avoided for every fixed polynomial span, the remaining geometric escape is superpolynomial fan stretch.
+\[
+Q_{\rm next}\le -1+o(1).
+\]
 
-The next theorem should therefore attack these explicit alternatives rather than refine the bounded reciprocal-depth catalogue. A polynomial-span theorem would force polynomially many nonquiet events and make their aggregate charge/sign structure the natural target. Conversely, if superpolynomial stretch is genuinely possible, it must be reconciled quantitatively with the older block-stretch geometry.
+Thus positive bounded charge cannot carry polynomial fan complexity. On every polynomial-span strong-off-critical block, the remaining burden satisfies
 
-## Treat local fidelity, bounded packet charge, deep-layer capacity, interruption type, and physical span as separate currencies
+\[
+H_B+N_B^-\ge X_B^{\delta-o(1)},
+\]
 
-Prime-source fidelity does not by itself control an adaptive fan. Bounded-packet charge classification does not imply global persistence. RE-065 adds the missing capacity ledger: deep prime-power events become subpolynomially scarce once the depths required for quiet cancellation diverge.
+where `H_B` counts structural interruptions (large packets or no higher-layer source event) and `N_B^-` counts genuinely negative bounded source-bearing charges.
 
-This is still not a sign contradiction. Polynomially many interruptions can be first-layer-only, high-cardinality, or nonvanishing-charge events in different proportions, and a superpolynomial-span fan escapes the polynomial-window count. Future progress must therefore use one of those source-bearing alternatives explicitly rather than infer a contradiction from event scarcity alone.
+The next theorem should therefore control one of two concrete currencies: prove that structural interruptions `H_B` are too sparse/rigid, or show that polynomially many negative charges cannot be reconciled with the continuous residual drift across exposed cells. If both ledgers can be avoided, the remaining escape is superpolynomial fan stretch and must be reconciled quantitatively with the older block-stretch geometry.
+
+## Treat local fidelity, deep-layer capacity, fringe sign, interruption type, and physical span as separate currencies
+
+Prime-source fidelity does not by itself control an adaptive fan. Bounded-packet charge classification does not imply global persistence. Deep prime-power events become subpolynomially scarce once quiet cancellation forces their depths to diverge, while RE-066 shows that positive nonquiet charge is logarithmically sparse and incurs an immediate negative successor debt inside the same bounded source-bearing regime.
+
+This is still not a contradiction. Negative charges are evaluated at moving thresholds and normalizations, so they cannot simply be telescoped without controlling within-cell drift; structural interruptions may also carry the polynomial burden. Future progress must use those surviving source-bearing currencies explicitly rather than infer a sign contradiction from event scarcity alone.

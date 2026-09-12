@@ -14,33 +14,31 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Leave the continuous additive prime-torus null at the complexity actually tested
+## Match close-frequency crowding at the linear-support boundary
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers preassigned fixed moments of the matched weighted Haar null to deterministic continuous prime-log averaging. VIS-175--VIS-176 close the square-summable and Lindeberg full-law phases under their transfer gates.
-
-VIS-177 sharpens deterministic character separation, and VIS-178 inserts the prime-power effective dimension. For a polynomial cutoff `y=H^\delta`, the `k`th moment remains matched throughout the sufficient wedge
-
-\[
-\delta\le\frac1{\lfloor k/2\rfloor+k/2}.
-\]
-
-This still matters for genuinely higher fixed-order tests. But VIS-179 shows that **quadratic statistics have a substantially larger collective null region**. Montgomery--Vaughan mean-square control gives
+VIS-161--VIS-178 calibrate collision complexity, weighted null shape, deterministic moment transfer, and prime-power effective dimension. VIS-179 then shows that quadratic statistics have a much larger collective null region than generic character separation suggests. Montgomery--Vaughan mean-square control gives
 
 \[
 \left|\frac1H\int_T^{T+H}S_y(t)^2\,dt-\frac18\right|
 \ll\frac yH
 \]
 
-uniformly in the interval start, arbitrary positive prime weights, and arbitrary prime subsets below `y`. Thus every `y=o(H)` support law is already variance-matched. In particular every polynomial `y=H^\delta`, `\delta<1`, is closed as a standalone quadratic energy/variance discriminator.
+uniformly in interval start, arbitrary positive prime weights, and arbitrary prime subsets below `y`. Thus every `y=o(H)` support law is already variance-matched.
 
-The remaining positive-power opportunity must therefore state its **functional complexity** explicitly. A variance statistic cannot escape merely by taking `\delta>1/2`; a higher fixed-order statistic must first exceed its own proven transfer gate and then rule out stronger collective mean-value controls. Other live boundaries are growing complexity/order, Gram or other discrete sampling, rare/shrinking or unbounded functionals, genuinely hybrid prime/zero information, or behavior at/above the linear `y\asymp H` scale with an independently justified observable and matched control.
+VIS-180 proves that the linear boundary is genuinely different for this broad uniform class, but not in a source-sensitive way. Bounded prime gaps give infinitely many fixed-gap pairs `q=p+d`; with equal weights on `{p,q}` and `H=p`, `y=q`, one has `y/H->1` while the deterministic variance tends to
 
-Failure of a current sufficient transfer bound is never positive source evidence by itself.
+\[
+\frac18+\frac18\frac{\sin d}{d}\ne\frac18.
+\]
 
-## Keep source corrections, clock mixing, weighted null shape, transfer horizon, functional order, and sampling class separate
+The surviving term is a slow beat between two close prime-log frequencies. Therefore the `O(y/H)` scale cannot be replaced by a uniform `o(1)` theorem at `y\asymp H` for arbitrary subsets, but **a linear-support variance residual is still not source evidence**. A valid matched control must preserve the relevant local frequency crowding, or a theorem for the natural full-support coefficient profile must show that this channel is washed out.
 
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 now shows that collective Dirichlet-polynomial cancellation can enlarge one low-order null region far beyond what character-by-character frequency spacing predicts.
+The remaining positive-power opportunity must state its functional complexity and control class explicitly. Higher fixed-order statistics must exceed their proven transfer gates and survive stronger collective mean-value controls; linear/superlinear quadratic statistics must first remove deterministic beat effects. Other live boundaries are growing order, Gram/discrete sampling, rare/shrinking or unbounded functionals, genuinely hybrid prime/zero information, or natural full-support observables with a crowding-preserving null.
 
-A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support law, sampling geometry, observation scale, **functional complexity**, and target statistic. Polynomial support alone is not a sufficient description of an escape regime, and the quadratic `y=o(H)` closure must not be extrapolated to higher moments or full laws without a separate theorem.
+## Keep source corrections, clock mixing, weighted null shape, transfer horizon, functional order, and frequency crowding separate
+
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 closes the entire strictly sublinear quadratic regime, while VIS-180 shows that the first failure of that uniform theorem at linear support can itself be a deterministic representation effect.
+
+A residual becomes arithmetic evidence only after it survives a matched control at the same weights, support law, sampling geometry, observation scale, functional complexity, target statistic, and local frequency-crowding geometry. Failure of a sufficient transfer bound is never positive source evidence by itself.

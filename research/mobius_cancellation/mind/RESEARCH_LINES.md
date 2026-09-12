@@ -2,13 +2,11 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove signed near-balance on the reduced progressions exposed by the first-shell lift
+## Prove signed near-balance before the one-sided dense-model quotient
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`, `MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge`, `MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy`, `MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`, `MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge`, `MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy`, `MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate`, `MI-018-nonnegative-transference-does-not-create-fixed-power-sign-balance`.
 
-MC-188--MC-227 show that residue phases are gauge, fixed square-free Hamming degrees form an alternating cascade, and GRH-strength progression bounds are sufficient but too strong; sparse exceptions, generic large-sieve/BDH estimates, and fiberwise control lose the source-selected coupling.
-
-MC-228--MC-233 localize and simplify the first-shell obstruction. High incidence is support-harmless, Boolean inversion removes exact-cell conditioning at `X^{o(1)}` cost, and logarithmic smooth inversion removes the primorial roughness mask at `X^{o(1)}` multiplicity. The hard object is a sparse, source-coupled family of ordinary reduced-residue Möbius progression sums
+MC-188--MC-233 reduce the first-shell obstruction to a sparse source-coupled family of ordinary reduced-residue Möbius progression sums
 
 \[
 M_\mu(Z;q,a),
@@ -16,27 +14,18 @@ M_\mu(Z;q,a),
 \qquad Z=X^{1-\beta+o(1)}.
 \]
 
-Support closes `2\alpha+\beta\ge1/2`. In the strict hard region `2\alpha+\beta<1/2`, the componentwise sufficient target needs fixed-power cancellation `1/2-2\alpha-\beta`.
+Support closes `2\alpha+\beta\ge1/2`. In the strict hard region `2\alpha+\beta<1/2`, the componentwise sufficient target needs fixed-power relative cancellation `X^{-(1/2-2\alpha-\beta)+o(1)}`.
 
-MC-234 removes qualitative parity existence. MC-235 removes polynomial sign scarcity as well. Retaining the quantitative mass in the Matomäki--Teräväinen dense-model proof and amplifying by CRT gives, for every fixed `\eta>0` and each sign,
+MC-234--MC-235 remove qualitative parity and polynomial sign scarcity. The Matomäki--Teräväinen Linnik machinery already gives both signs essentially full occupancy exponent in every fixed interior hard progression. The missing quantity is therefore their **difference**, not their separate abundance.
 
-\[
-N_\pm(Z;q,a)\ge \frac Zq X^{-\eta}
-\]
+MC-236 identifies where the published dense-model route loses exactly that information. The sign-specific dense model preserves each principal-character mean exactly, so it transports any pre-existing sign bias rather than damping it. The subsequent threshold/product-set argument is deliberately one-sided, and the published separate-sign transference precision in the Möbius specialization is only `q^{-o(1)}` relative to its one-sided main scale. The first-shell target instead needs a fixed negative power of `q` at every fixed interior point.
 
-through every fixed interior hard pair. Both signs therefore occupy the progression at the full exponent, while the target still requires relative discrepancy
+Therefore the existing nonnegative pipeline cannot be upgraded by simply transferring `+` and `-` separately and subtracting at the end. A viable theorem must couple the signs **before** support thresholding and absolute-value errors, for example through a signed Fourier/convolution invariant with fixed-power resolution, or exploit coherent cancellation after recombining the subpower family of smooth dilations from MC-233.
 
-\[
-\frac{|N_+-N_-|}{N_{\rm sf}}
-\le X^{-(1/2-2\alpha-\beta)+o(1)}.
-\]
+## Treat gauge, support, Boolean conditioning, smooth inversion, sign abundance, transference resolution, and signed amplitude as separate gates
 
-The live theorem is now unambiguously **signed comparison/near-balance**, not existence or abundance. A useful use of the dense-model architecture must preserve information comparing the positive and negative masses, rather than merely strengthen separate positive lower bounds. The other surviving route is coherent cancellation across the subpower family of smooth dilations before triangle inequality.
+High incidence is cheap by support. Exact-cell membership and the Boolean transform cost only `X^{o(1)}`. At logarithmic smoothness, the primorial coprimality mask unfolds into only `X^{o(1)}` ordinary progression sums. Each Möbius sign already has essentially full-exponent abundance in every fixed strict hard component.
 
-## Treat gauge, support, Boolean conditioning, smooth inversion, sign abundance, and signed amplitude as separate gates
+None of these reductions supplies near-balance. MC-236 adds a sharper warning: a nonnegative dense model can be excellent for coverage while preserving the principal sign bias exactly, and a subpower relative comparison error is too coarse for a fixed-power signed target. The remaining theorem must be genuinely signed or exploit aggregate cancellation that avoids the componentwise triangle inequality.
 
-High incidence is cheap by support. Exact-cell membership and the Boolean transform cost only `X^{o(1)}`. At logarithmic smoothness, the primorial coprimality mask unfolds into only `X^{o(1)}` ordinary progression sums. MC-235 further shows that each Möbius sign already has essentially full-exponent abundance in every fixed strict hard component.
-
-None of these reductions supplies the near-balance demanded by the source-selected amplitude. Separate lower bounds on `N_+` and `N_-` can both be almost maximal while their difference stays at trivial power. MC-233 also remains only a sufficient componentwise reduction: triangle inequality can discard cancellation between smooth dilations, and the `d=1` term keeps the low-incidence source problem genuinely hard.
-
-Future progress must therefore be credited to a quantitative **signed** estimate for the selected progression family or to controlled aggregate cancellation, not to further removal of subpower masks, stronger representative-existence theorems, or higher unsigned sign counts.
+Future progress should therefore be credited only when it controls the source-selected **signed amplitude at the required power scale** or proves a recombination mechanism that makes that componentwise target unnecessary. More representative-existence theorems, unsigned density, or reuse of the current separate-sign transference bounds do not cross the live gate.

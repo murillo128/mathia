@@ -1,48 +1,41 @@
 # Prime-flute mathematical questions
 
-## Weighted source/escape balance of the complete mixed response
+## Reassemble the full mixed response after scalar round-trip extinction
 
-Can the actual normalized mixed Riesz response be written as `G_n=T_nY_n(a_n)+R_n`, where `Y_n` is the canonical fixed-axis synthesis, `T_n` is uniformly bounded in a positive Sobolev scale, `sup_n sum_i q_i|a_(n,i)|<infinity`, and the physical-high projection of `R_n` tends to zero? [MI-008](intuition/MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance.md) makes this sufficient to eliminate the local shorting-deficit witness.
+**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`.
 
-PF-297 removes one candidate for a hidden local discount: the fixed-axis Robin inverse is `ell^1(q)`-nonexpansive and its complete positive action conserves `q`-mass. PF-298 removes another: the constant-boundary response of a tight one-cusp pant is a large conductance edge plus bounded killing, with relative killing `r_n=\kappa_n/c_n=O(s_n)`.
+Can the actual normalized mixed Riesz response be written as `G_n=T_nY_n(a_n)+R_n`, where `Y_n` is the canonical fixed-axis synthesis, `T_n` is uniformly bounded in a positive Sobolev scale, `sup_n sum_i q_i|a_(n,i)|<infinity`, and the physical-high projection of `R_n` tends to zero? MI-008 makes this sufficient to eliminate the local shorting-deficit witness.
 
-PF-299--PF-300 identify the intrinsic prime coordinate `t_n=F(p_n)` and its symmetric seam quadrature. PF-301 now removes PF-300's monotonicity caveat for the actual scalar coefficients. With
+PF-297 removes a hidden local discount: the fixed-axis Robin inverse is `ell^1(q)`-nonexpansive and its complete positive action conserves `q`-mass. PF-298 writes the constant-boundary response of a tight one-cusp pant as a large conductance edge plus bounded killing. PF-299--PF-301 identify the intrinsic prime coordinate and show that each directional scalar transmission is governed exactly by the `L^1` mass of its bounded attenuation density, without any monotonicity assumption.
 
-\[
-b_n=\frac{\kappa_n}{c_ns_n}
-\]
-
-and `\psi_n` the triangular hat on the exact intrinsic mesh, `\int\psi_n=s_n` and
+PF-302 now closes the possibility that **both** scalar directions have finite total attenuation. A variational cutoff gives `E_{-,n}\lesssim L_n/s_n`, while the equal-sign pant energy has a uniform positive floor. Hence
 
 \[
-B_N(t)=\sum_{n\ge N}b_n\psi_n(t)
+\frac{\kappa_{n,L}+\kappa_{n,R}}{c_n}\gtrsim\frac{s_n}{L_n},
 \]
 
-obeys the exact identity
+and the exact prime mesh forces
 
 \[
-\int_{t_{N-1}}^\infty B_N(t)\,dt
-=\sum_{n\ge N}\frac{\kappa_n}{c_n}.
+\sum_n\frac{s_n}{L_n}=\infty.
 \]
 
-The coefficient sequence may be arbitrarily oscillatory and prime-gap correlated. Since `b_n` is bounded and `\sum s_n^2<\infty`, the directional scalar transmission satisfies
+Therefore the combined directional attenuation density is not integrable and
 
 \[
-\prod_{n\ge N}(1+\kappa_n/c_n)^{-1}>0
-\quad\Longleftrightarrow\quad
-B_N\in L^1,
+\prod_n\theta_{n,L\to R}\theta_{n,R\to L}=0.
 \]
 
-and its finite products are, up to one positive constant, `exp(-int B_N)` asymptotically. The scalar accumulation question is therefore no longer “find a monotone slowly varying envelope.” It is to determine the **total intrinsic mass of the actual bounded attenuation density** `b_(n,\pm)=\kappa_(n,\pm)/(c_ns_n)`, using any valid block, density, or oscillatory information.
+At least one scalar one-way transmission product vanishes; scalar round trips are necessarily extinguished at infinite depth.
 
-The complete `P/H`-split return/reassembly map remains the real gate. The scalar constant compression is not known to be invariant under the full Schur problem, so even a resolved intrinsic attenuation mass must be reassembled with nonconstant modes, support loss, source forcing/cancellation, and any residual physical-high term.
+This is not yet the physical theorem. PF-302 does not identify which orientation carries the divergent mass, the constant compression is not known to be invariant under the full boundary Schur problem, and nonconstant modes can screen or rearrange the scalar channel. The live gate is the complete `P/H` return/reassembly equation: combine nonconstant-mode damping, support loss, source forcing/cancellation, the directional split, and any physical-high remainder into a source-weighted global estimate.
 
 ## Global heavy-range projection counts after local witnesses vanish
 
-For the PF-287 heavy low/high extension-range projection product, does the full tail have vanishing essential norm, and can its singular-value counting function satisfy the required weak-trace bound? Local high-pass annihilation in [MI-008](intuition/MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance.md) alone supplies neither conclusion. The subtraction estimate in [MI-004](intuition/MI-004-coordinate-amplification-is-not-operator-amplification.md) controls only the artificial central-collar model, not this global product.
+For the PF-287 heavy low/high extension-range projection product, does the full tail have vanishing essential norm, and can its singular-value counting function satisfy the required weak-trace bound? Local high-pass annihilation in MI-008 alone supplies neither conclusion. The subtraction estimate in MI-004 controls only the artificial central-collar model, not this global product.
 
 ## Prime realization within the resolved upstream-memory window
 
-Can consecutive prime-gap isolation realize the moderate graded neck ratios of [MI-001](intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal.md), or can the surface-to-graph error be sharpened enough to resolve `w_j^2/w_(j-1)` in the hierarchies already known to occur? Arbitrarily strong separation is not the required condition: the correction must still dominate `w_j sqrt(w_1)`.
+Can consecutive prime-gap isolation realize the moderate graded neck ratios of MI-001, or can the surface-to-graph error be sharpened enough to resolve `w_j^2/w_(j-1)` in the hierarchies already known to occur? Arbitrarily strong separation is not the required condition: the correction must still dominate `w_j sqrt(w_1)`.
 
-The fixed-axis `q>1` Robin leakage route is excluded by [MI-007](intuition/MI-007-square-root-functional-calculus-closes-the-finite-seam-mass-gap.md), not an outstanding estimate. Generic conservative `L1` rigidity is excluded by [MI-005](intuition/MI-005-short-collar-multiplicity-reduces-to-one-local-splice.md); a construction matching only the particular canonical germ is a different claim.
+The fixed-axis `q>1` Robin leakage route is excluded by MI-007, not an outstanding estimate. Generic conservative `L1` rigidity is excluded by MI-005; a construction matching only the particular canonical germ is a different claim.

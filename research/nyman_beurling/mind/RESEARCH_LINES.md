@@ -8,40 +8,29 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Prove target transversality to the finite-rank forward-memory channel
+## Exclude target-bearing near-kernel modes of the forward-memory map
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
-NB-049--NB-061 reduce the collective late quotient to compact-time arithmetic defect sectors `\mathcal K_R=\mathcal E_R\ominus\mathcal G_R`; every `\mathcal K_R` is infinite-dimensional and the canonical question is whether the visible leakage `\|P_{\mathcal G_R}J_Rh_*\|` vanishes.
-
-NB-062 closes hidden rank loss: `\dim\mathcal G_R=R-1`, consecutive windows form a causal flag, and every new logarithmic cell adds exactly one natural innovation `C_R`. The arithmetic deformation is therefore forward memory, not missing rank.
-
-NB-063 localizes that memory exactly. On the new cell `\mathcal X_R`, the old visible space continues through a canonical finite-rank map
-
-\[
-\Gamma_R:\mathcal G_R\to\mathcal X_R^\circ,
-\]
-
-and
-
-\[
-\mathcal N_R=\mathcal X_R\ominus
-(\operatorname{span}\{C_R\}+\operatorname{Ran}\Gamma_R)
-\]
-
-is infinite-dimensional. The channel that can retain old natural-space memory has dimension at most `R`; all target energy in `\mathcal N_R` is absorbed into the enlarged defect space with unit efficiency.
-
-For `x_R=(J_{R+1}-J_R)h_*`, `p_R=P_{\mathcal G_R}J_Rh_*`, and `z_R=P_{\mathcal X_R^\circ}x_R-\Gamma_Rp_R`, the exact one-step capture law is
+NB-049--NB-063 reduce the collective late quotient to a finite-rank forward-memory channel. Every compact-time defect sector is infinite-dimensional, every visible natural window has maximal causal rank, and the newly opened cell splits into an infinite-dimensional memory-free defect sector plus `span{C_R}+Ran Gamma_R`. The exact one-step capture law is
 
 \[
 \delta_R^2-\delta_{R+1}^2
 =\langle z_R,(I+\Gamma_R\Gamma_R^*)^{-1}z_R\rangle.
 \]
 
-The live theorem is no longer a generic frame bound. Persistent leakage requires repeated target alignment with the finite-dimensional channel `span{C_R}+Ran Gamma_R`. Prove quantitative transversality of the canonical cell `x_R`, or control `\Gamma_R` and the mismatch `z_R` strongly enough to force cumulative capture. Another rank theorem or another infinite-dimensional defect construction cannot move the bottleneck.
+NB-064 turns the remaining alignment possibility into a sharp spectral condition. If a nonzero collective tail persists and `p_R=P_{\mathcal G_R}J_Rh_*`, then the normalized target direction `u_R=p_R/\|p_R\|` must leave every singular sector of `Gamma_R` bounded away from zero. For every fixed `eta>0`,
 
-## Treat individual disappearance, defect abundance, rank, forward memory, and target alignment as separate gates
+\[
+\|E_R^{\ge\eta}u_R\|\to0,
+\]
 
-Late individual shifts can vanish while the collective family remains visible. Every finite window already has infinite-dimensional defect; every visible natural window already has maximal causal rank. NB-063 now shows that most of each newly opened cell is exact memory-free defect space as well.
+and there are unit vectors `v_R` with `\|u_R-v_R\|\to0` and `\|\Gamma_Rv_R\|\to0`. Persistent leakage therefore requires the **distinguished target itself** to become an approximate right-kernel direction of the canonical forward-memory map.
 
-The surviving arithmetic content is exceptionally narrow: one new innovation plus the finite-rank forward continuation of old natural traces must repeatedly align with the distinguished target. In the flat control `\Gamma_R=0` and cellwise absorption is perfect. Any claimed arithmetic obstruction should therefore be expressed through the actual forward-memory map and target mismatch, not through dimension or conditioning language alone.
+The live theorem is now target-aware and one-sided. It is enough to prove that along an unbounded sequence a fixed fraction of `u_R` lies in a singular sector transmitted by at least some fixed `eta>0`; that already forces `\delta_R\to0`. A uniform lower singular bound for all of `\mathcal G_R` is much stronger than necessary, while an upper bound on `\|\Gamma_R\|` is not the intrinsic quantity at all.
+
+## Treat individual disappearance, defect abundance, rank, forward memory, bad singular directions, and target occupation as separate gates
+
+Late individual shifts can vanish while the collective family remains visible. Every finite window already has infinite-dimensional defect; every visible natural window already has maximal causal rank. NB-064 further shows that merely having poorly transmitted singular directions is cheap: they obstruct only if the canonical target projection asymptotically tracks them.
+
+Near-kernel tracking is necessary for persistent leakage, not sufficient. In the flat control `\Gamma_R=0`, every visible direction is a kernel direction while the collective target tail still vanishes. Future progress must therefore prove arithmetic transversality of the actual `p_R`, or otherwise show that the canonical target cannot follow the moving near-kernel subspaces.

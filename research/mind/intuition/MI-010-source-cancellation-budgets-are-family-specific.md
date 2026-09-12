@@ -1,34 +1,15 @@
 # MI-010 — Source cancellation must be priced after the exact family, normalization, and signed target are fixed
 
-**Evidence level:** supported by the proved Farey transfer geometry through FD-064 and the exact first-shell representation/dense-model reductions through MC-235; no cancellation theorem is transferred between the two families.
+**Evidence level:** supported by the proved Farey transfer/normalization geometry through FD-065 and the exact first-shell representation/dense-model reductions through MC-236; no cancellation theorem is transferred between the two families.
 
-Two Möbius-facing lines now expose complementary versions of the same quantitative lesson.
+Two Möbius-facing lines expose complementary versions of the same quantitative lesson.
 
-In Farey discrepancy, bounded increments identify the deterministic host scale `q\asymp X/A_X`, with `A_X=|\mathcal H(X)|`. FD-062--FD-063 show that an actual all-short-interval Möbius estimate can move below that scale, support growing packets, and make packet availability uniform across a whole host corridor. FD-064 then shows that substantially more **local abundance** still need not improve the global target. On a zero-frontier spike `A_X=X^{\Theta+o(1)}`, hosts `q\asymp X^\lambda` admit polynomial packets `K=X^{\kappa+o(1)}` whenever `\kappa<\Theta+\lambda-1`, but after paying the later horizon the optimized normalized loss is
+In Farey discrepancy, FD-062--FD-064 show that real short-interval cancellation can buy a host corridor and polynomial packet multiplicity, yet the later physical horizon preserves the exact `Theta=2/3` crossover. FD-065 then closes the most direct denominator-side optimization: growing the Schur head shortens the zero-frontier tail but the scalar leverage decays as `D^{-1}`. Both available scalar exponents pay the same positive penalty `2delta(1-Theta)/(1+lambda)`. Local occupancy can improve while the final scalar bound worsens.
 
-\[
-b_\Theta(\lambda)
-=\frac{1-\Theta+(2\Theta-1)\lambda}{1+\lambda},
-\qquad
-b_\Theta'(\lambda)=\frac{3\Theta-2}{(1+\lambda)^2}.
-\]
+In Möbius cancellation, MC-232--MC-235 reduce the hard first-shell coordinates to source-selected reduced-residue progression sums and show that both Möbius signs already occupy essentially the full progression exponent. MC-236 identifies why the audited Linnik pipeline still does not pay the signed target. The sign-specific dense model preserves principal means exactly, the later argument thresholds into one-sided coverage, and the published separate-sign transference precision is only subpower relative to its main threshold. A fixed interior first-shell point needs a fixed-power relative sign balance.
 
-Thus the full direct power-gap family preserves the `\Theta=2/3` crossover already visible in the previous bounds. Polynomial packet power is real, but the horizon cost neutralizes it. The same calculation identifies square-root short-interval cancellation as the direct-transfer threshold for reaching the cube-root Jordan boundary.
+The cross-line lesson is now stronger than “abundance is not cancellation.” **An improvement counts only after every downstream quotient has been priced.** Farey loses an apparent gain to horizon/leverage normalization; Möbius cancellation loses sign-comparison information when nonnegative models are thresholded and separately transferred. In both cases the missing theorem must act before the information-losing step or change the downstream metric itself.
 
-In Möbius cancellation, MC-232--MC-233 remove exact-incidence and primorial-roughness masks at subpower cost, leaving source-selected reduced-residue Möbius progression sums. Below `2\alpha+\beta=1/2`, the componentwise target needs fixed-power signed cancellation `1/2-2\alpha-\beta`. MC-234 removed qualitative parity existence as the bottleneck. MC-235 goes further: extracting the quantitative mass already present in the Matomäki--Teräväinen dense-model proof and amplifying by CRT gives, for every fixed `\eta>0`,
+Therefore packet width, tail shortening, scalar leverage, sign abundance, transference resolution, and signed amplitude are distinct currencies. The Farey escape requires a source-coupled denominator, a different host/source quantifier surface, or another row interaction. The Möbius escape requires a genuinely signed comparative invariant with fixed-power resolution or coherent recombination across smooth dilations before triangle inequality.
 
-\[
-N_\pm(Z;q,a)\ge \frac Zq X^{-\eta}
-\]
-
-through every fixed interior hard pair. Both signs therefore have the full occupancy exponent. Yet their difference may still be as large as the full square-free support; the required object is near-balance at relative scale
-
-\[
-X^{-(1/2-2\alpha-\beta)+o(1)}.
-\]
-
-The cross-line lesson is sharper than “match the theorem to the family.” **Abundance in the representation is useful only if it pays the metric consumed downstream.** Farey can create polynomially many favorable rows without improving the normalized exponent because the horizon denominator absorbs the gain. Möbius cancellation can create essentially full-exponent populations of both signs without improving the signed amplitude because separate lower bounds do not control their difference.
-
-Therefore representation simplification, local occupancy, unsigned abundance, horizon normalization, and signed cancellation must be priced separately. The current Farey escape requires a source-coupled denominator or a different short-interval/host quantifier surface; the current Möbius escape requires a signed-comparison theorem or coherent cancellation across the smooth dilation family. Further packet enlargement or representative counting inside the same ledgers cannot by itself pay the missing quantity.
-
-**Boundary.** FD-064 classifies a direct all-short-interval transfer combined with the generic zero-frontier denominator envelope; MC-235 is fixed-parameter/interior and its componentwise reduction is sufficient rather than necessary. The two families are not identified and no theorem is transferred between them.
+**Boundary.** FD-065 remains inside the direct-transfer plus generic zero-frontier/Schur framework. MC-236 audits the published separate-sign dense-model/transference architecture and does not prove that a stronger signed use of the method is impossible. The two source families are not identified and no estimate transfers from one to the other.

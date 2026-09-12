@@ -1,6 +1,6 @@
 # MI-025 — Regular sampling separates aliasing, coupling, degree, sample count, and timing provenance
 
-**Evidence level:** supported by exact phase-pushforward classifications AF-279--AF-281 and finite-prefix separation/stability/timing theorems AF-282--AF-286 on the stated known-support ordinary-Dirichlet coefficient class.
+**Evidence level:** supported by exact phase-pushforward classifications AF-279--AF-281 and finite-prefix separation/stability/timing theorems AF-282--AF-287 on the stated known-support ordinary-Dirichlet coefficient class.
 
 For
 
@@ -22,13 +22,9 @@ For the concrete two-prime repair
 h_2=2\pi/\log2,\qquad h_3=2\pi/\log3,
 \]
 
-AF-282 proves that the joint nodes of the known prefix `1,...,N` have minimum spacing `Theta(1/N)`. AF-283 prices coefficient stability: if mixed indices range over `{0,...,L-1}^2`, a two-point test forces instability for `L=o(N)`, while `L=30N` admits a breadth-uniform stable inverse. AF-284--AF-285 then separate degree from observation count: deterministic subset selection yields an unweighted set of at most `8N` raw complex mixed moments with a breadth-uniform least-squares inverse under samplewise absolute noise. Rank forces at least `N` complex observations, hence
+AF-282 proves that the joint nodes of the known prefix `1,...,N` have minimum spacing `Theta(1/N)`. AF-283 prices coefficient stability: if mixed indices range over `{0,...,L-1}^2`, a two-point test forces instability for `L=o(N)`, while `L=30N` admits a breadth-uniform stable inverse. AF-284--AF-285 separate degree from observation count: deterministic subset selection gives an unweighted linear-size family of raw complex mixed moments and rank forces at least `N` complex observations.
 
-\[
-q_{\mathrm{stable,raw}}(N)=\Theta(N).
-\]
-
-AF-286 shows that **timing error itself splits into different information classes**. If every requested time has the same unknown offset `tau`, the observation matrix does not suffer arbitrary rowwise noise:
+AF-286 shows that **timing error itself splits into different information classes**. If every requested time has the same unknown offset `tau`, the observation matrix factors exactly as
 
 \[
 \widetilde y=A D_\tau b,
@@ -36,26 +32,33 @@ AF-286 shows that **timing error itself splits into different information classe
 D_\tau=\operatorname{diag}(n^{-i\tau})_{n\le N}.
 \]
 
-The nominal exact decoder therefore returns exactly `D_tau b`. For an arbitrary complex source class, `(b,tau)` is identifiable only modulo the gauge
+The nominal exact decoder therefore returns `D_tau b`. For an arbitrary complex source class, `(b,tau)` is identifiable only modulo the gauge `(b,\tau)\sim(D_\epsilon b,\tau-\epsilon)`. Fixed relative coefficient distortion has the sharp common-clock scale `T=Theta(1/log N)`.
+
+AF-287 closes the apparent extra cost for arbitrary independent rowwise jitter. Starting from the uniformly conditioned complete two-prime Vandermonde frame, classical Kadison--Singer/frame sparsification yields an **unweighted `O(N)` raw subframe with condition number bounded independently of `N`**. For rowwise offsets `|tau_j|<=T`, the exact expansion
 
 \[
-(b,\tau)\sim(D_\epsilon b,\tau-\epsilon).
+\widetilde A-A
+=\sum_{k\ge1}\frac{(-i)^k}{k!}D_{\tau^k}A\Lambda^k,
+\qquad \Lambda=\operatorname{diag}(\log1,\ldots,\log N),
 \]
 
-The exact worst-case relative coefficient displacement is
+gives
 
 \[
-R_N(T)=
-\begin{cases}
-2\sin(T\log N/2),&0\le T\le\pi/\log N,\\
-2,&T\ge\pi/\log N,
-\end{cases}
+\|\widetilde A-A\|
+\le\|A\|\bigl(e^{T\log N}-1\bigr).
 \]
 
-so fixed relative distortion requires and suffices to have `T=Theta(1/log N)`, equivalently only `Theta(log log N)` fractional clock bits in a fixed time unit. This is a **provenance/gauge bill**, not a condition-number bill and not an observation-count bill.
+Hence the nominal decoder has relative `ell^2` error at most `K(e^{T\log N}-1)` for an absolute frame-condition constant `K`. The common-offset subclass supplies the matching lower-order obstruction, so
 
-Independent per-sample jitter is different. AF-286 only gives the elementary sufficient relative scale `T=O(1/(sqrt(N) log N))` from AF-285 plus `ell^1` control, while the common-offset subclass proves the necessary scale can be no better than `O(1/log N)`. The remaining `sqrt(N)` gap is therefore specifically a rowwise timing-jitter/derivative-frame question.
+\[
+T_{\rm independent\ jitter}(N)=\Theta(1/\log N).
+\]
 
-The reusable separation is now: **phase-fiber aliasing, retention of joint coupling, finite-prefix label spacing, stable mixed degree, raw sample count, common-clock gauge, independent jitter, time horizon, and target norm are distinct resources**. Exact injectivity does not imply stable recovery; linear stable degree does not imply dense `N^2` acquisition; linear sample count does not calibrate a clock; and an error mode that is an exact source symmetry should be quotiented or externally marked rather than priced as generic additive noise.
+The earlier `sqrt(N)` loss came from passing through an `ell^1` source estimate after controlling only one side of the frame spectrum; it is not an intrinsic jitter information bill.
 
-**Boundary.** AF-286 is still a finite known-support theorem and its exact gauge nonidentifiability assumes arbitrary complex coefficients. Source constraints can break the gauge. The independent-jitter upper bound may be nonsharp, and none of AF-282--AF-286 settles unknown support, conversion from `b_n=a_n n^{-c}` to another target norm, or unrestricted infinite-source stability.
+The reusable separation is therefore: **phase-fiber aliasing, retention of joint coupling, finite-prefix label spacing, stable mixed degree, raw sample count, frame conditioning, common-clock gauge, independent jitter, time horizon, and target norm are distinct resources**. Exact injectivity does not imply stable recovery; linear stable degree does not imply dense `N^2` acquisition; and a common-mode error that is an exact source symmetry should be quotiented or externally marked rather than priced as generic noise.
+
+The remaining timing question is target-relative rather than frame-relative. A downstream functional invariant under `b -> D_tau b` needs no external clock-origin lift, while full coefficient recovery pays the inverse-log scale. Unknown support, infinite Dirichlet sources, different coefficient norms, drift/rate error, and source constraints remain separate problems.
+
+**Boundary.** AF-282--AF-287 are finite known-support theorems. The frame-sparsification subset is existential and its constants are not optimized. The gauge nonidentifiability assumes arbitrary complex coefficients; constrained sources can break it. None of these results supplies analytic continuation, zero-location information, or infinite-source stability.
