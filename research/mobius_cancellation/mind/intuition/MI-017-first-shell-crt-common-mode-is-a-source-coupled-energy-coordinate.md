@@ -1,41 +1,46 @@
-# MI-017 — First-shell exact cells and roughness masks reduce to a two-parameter family of ordinary Möbius progressions
+# MI-017 — First-shell reduction exposes a two-parameter Möbius amplitude gap beyond parity existence
 
-**Evidence level:** supported by the exact CRT, Boolean-transform, and smooth-inversion reductions MC-228--MC-233; no new Möbius cancellation estimate is claimed.
+**Evidence level:** supported by the exact CRT, Boolean-transform, smooth-inversion, and sign-population analyses MC-228--MC-234; no new square-root Möbius progression bound is claimed.
 
-For the first square-defect shell, MC-228--MC-231 localize the difficult diagonalized target to low/mesoscopic incidence. MC-232 then replaces exact incidence cells by their upper Boolean zeta transform at only subpower condition cost. If
-
-\[
-B_S=\sum_{U\supseteq S}C_U,
-\]
-
-then the exact-cell and partial-intersection energies are equivalent at fixed-power resolution, and each `B_S` is a single source-selected CRT progression carrying the roughness condition `(n,P)=1`.
-
-MC-233 removes that final support mask algebraically. The logarithmic smooth inverse `g_y=\mu*s_y` gives
+For the first square-defect shell, MC-228--MC-231 localize the difficult diagonalized target to low/mesoscopic incidence. MC-232 replaces exact incidence cells by their upper Boolean zeta transform at only subpower condition cost. MC-233 then removes the primorial roughness mask algebraically. At logarithmic smoothness,
 
 \[
 B_S(X)=
 \sum_{\substack{d\le T\\P^+(d)\le y}}
 M_\mu\!\left(T/d;Q_S,-Pd^{-1}\bmod Q_S\right),
-\qquad Q_S=\prod_{r\in S}r^2.
+\qquad Q_S=\prod_{r\in S}r^2,
 \]
 
-Because the smooth primes and shell primes are disjoint, every inner sum is an ordinary reduced-residue Möbius progression at the same modulus `Q_S`. At `y=c\log X`, the number of smooth dilations is only `X^{o(1)}`. Thus neither exact-incidence exclusions nor primorial roughness are fixed-power obstructions for this stronger diagonal route.
+with only `X^{o(1)}` smooth dilations. Thus neither exact-cell exclusions nor roughness are fixed-power obstructions.
 
-The cancellation bill becomes two-dimensional. If
+If
 
 \[
 |S|=(\alpha+o(1))\frac{\log X}{\log\log X},
 \qquad d=X^{\beta+o(1)},
 \]
 
-then `Q_S=X^{2\alpha+o(1)}` and the corresponding progression has natural occupancy `X^{1-2\alpha-\beta+o(1)}`. The sufficient target is still `X^{1/2+o(1)}`, so the missing fixed-power gain is
+then `Q_S=X^{2\alpha+o(1)}`, `Z=T/d=X^{1-\beta+o(1)}`, and the progression occupancy is `X^{1-2\alpha-\beta+o(1)}`. The sufficient componentwise target remains `X^{1/2+o(1)}`, so the missing fixed-power gain is
 
 \[
 \boxed{\max(0,\tfrac12-2\alpha-\beta)}.
 \]
 
-Support alone handles `2\alpha+\beta\ge1/2`; genuine cancellation is needed below that line. Increasing incidence and increasing smooth dilation are therefore interchangeable only in the **trivial support budget**, not as sources of cancellation. The bottom-left corner `\alpha=\beta=0`, including the `d=1` component, remains a square-root-in-`X` source problem.
+MC-234 calibrates what modern parity-breaking prior art actually buys on this exact family. Matomäki--Teräväinen's Linnik-scale Möbius theorem places each sign in every reduced class by `q^{2+\varepsilon}`. In every fixed interior hard pair `2\alpha+\beta<1/2`, a CRT refinement forces
 
-This is a representation reduction, not an equivalence component by component. The smooth-dilation decomposition is exact, but bounding it by absolute values can lose cancellation across `d`. A future theorem may control individual source-selected progressions or exploit coherent cancellation among the subpower family; either way it must cross the explicit deficit above rather than merely manipulate support masks.
+\[
+N_\pm(Z;q,a)\ge Z^{1/2-\eta}/q.
+\]
 
-**Boundary.** The reduction concerns the stronger diagonalized first-shell target, not the original shell energy itself. It proves no estimate for the deterministic Möbius progression family and no Mertens/RH consequence.
+So **existence of both signs is not the remaining obstruction**. The same progression contains `(6/\pi^2+o(1))Z/q` square-free terms, while the desired amplitude bound would require the two signs to be nearly balanced:
+
+\[
+\frac{|N_+-N_-|}{N_{\rm sf}}
+\le X^{-(1/2-2\alpha-\beta)+o(1)}.
+\]
+
+The exponent deficit is therefore an amplitude/near-balance budget, not a parity-existence budget. A theorem can be qualitatively strong enough to break parity in every selected class and still be polynomially too weak for the first-shell energy.
+
+This remains a componentwise sufficient reduction rather than an equivalence. Cancellation among smooth dilations could bypass individual near-balance estimates. The two legitimate routes are therefore precise: prove signed discrepancy on the source-selected progression family at the required deficit, or exploit coherent cancellation across the `X^{o(1)}` dilation family. Further support-mask simplification or representative-existence bounds do not pay the missing power.
+
+**Boundary.** MC-234 uses the published Linnik-type theorem only at its stated sign-existence level and does not rule out stronger quantitative information inside its dense-model proof. Boundary scalings where `1/2-2\alpha-\beta` tends to zero need separate uniformity. No Mertens/RH consequence is proved.

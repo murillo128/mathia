@@ -14,26 +14,38 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Leave the full continuous additive prime-torus law, not merely one weight phase
+## Leave the continuous additive prime-torus null at the complexity actually tested
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers preassigned fixed moments of the matched weighted Haar null to deterministic continuous prime-log averaging.
+VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers preassigned fixed moments of the matched weighted Haar null to deterministic continuous prime-log averaging. VIS-175--VIS-176 close the square-summable and Lindeberg full-law phases under their transfer gates.
 
-VIS-175 and VIS-176 close both full-law weight phases in their original growth regimes. Square-summable weights converge to the generally non-Gaussian infinite weighted-Haar law; the complementary Lindeberg regime converges to `N(0,1/8)` when every fixed moment transfers.
-
-VIS-177 sharpens the elementary character-separation bill. A nonzero character in the `k`th moment has frequency at least
+VIS-177 sharpens the deterministic character-separation bill. A nonzero character in the `k`th moment has frequency at least `1/(2y^{floor(k/2)})`, giving a transfer cost proportional to
 
 \[
-\frac1{2y^{\lfloor k/2\rfloor}},
+\frac{y^{\lfloor k/2\rfloor}D_2(y)^{k/2}}H.
 \]
 
-so the transfer error uses `y^floor(k/2) D_2(y)^(k/2)/H` rather than the older `y^k` frequency bound. For prime-power weights `w_p=p^{-alpha}`, `0<=alpha<=1/2`, this extends the complete Gaussian weak law to **every subpolynomial cutoff `y(H)=H^{o(1)}`**.
+For prime-power weights this already keeps every subpolynomial cutoff `y(H)=H^{o(1)}` inside the matched Gaussian null.
 
-Thus merely moving beyond polylogarithmic support does not leave the representation-matched continuous null. A surviving Lindeberg-phase support escape must reach a genuinely polynomial-or-faster regime not controlled by the present all-fixed-moment argument, or change the functional/sampling class: Gram/discrete sampling, hybrid prime/zero variables, rare or shrinking events, unbounded observables, or another source-bearing statistic outside the additive prime torus.
+VIS-178 now calibrates the first genuinely polynomial-support boundary instead of merely declaring it open. For `w_p=p^{-\alpha}`, `0\le\alpha<1/2`,
 
-## Keep source corrections, clock mixing, weighted null shape, transfer horizon, and functional class separate
+\[
+D_2(y)\sim \frac{1-2\alpha}{(1-\alpha)^2}\frac y{\log y},
+\]
 
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-177 enlarges the continuous Lindeberg null from polylogarithmic to arbitrary subpolynomial support but does not prove failure at fixed positive-power support.
+while at `\alpha=1/2`, `D_2(y)\sim4y/((\log y)^2\log\log y)`. If `e_k=\lfloor k/2\rfloor+k/2`, the `k`th moment still transfers for a fixed polynomial law `y=H^\delta` throughout the closed wedge
 
-A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support law, sampling geometry, observation scale, and functional class. Polynomial support, discrete sampling, and stronger-than-weak observables remain open boundaries, not positive mechanisms.
+\[
+\delta\le\frac1{e_k}.
+\]
+
+Thus even positive-power support can remain representation-matched at any predeclared finite moment order. For a panel through order `K`, the null extends to `\delta\le1/K` when `K` is even and to `\delta\le1/(K-1/2)` when `K` is odd, including equality through the surviving logarithmic factors.
+
+The remaining positive-power opportunity must therefore state its complexity. It must exceed the relevant order-dependent wedge, let moment order grow with support, use a stronger-than-moment functional, change to Gram/discrete sampling, introduce hybrid prime/zero information, probe rare/shrinking events, or otherwise leave the additive prime-torus model. Failure of the current sufficient bound beyond the wedge is not evidence that the matched null actually fails there.
+
+## Keep source corrections, clock mixing, weighted null shape, transfer horizon, moment order, and functional class separate
+
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-177 closes all subpolynomial support for fixed moments, while VIS-178 gives an explicit parity-sensitive polynomial wedge for every fixed order.
+
+A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support law, sampling geometry, observation scale, **moment/functional complexity**, and target statistic. Polynomial support alone is no longer a sufficient description of the escape regime.

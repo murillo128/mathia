@@ -1,25 +1,10 @@
-# MI-016 — First-crossing localization compresses to one signed radial source-flux budget
+# MI-016 — First-crossing localization compresses to one signed radial source-flux budget, but prime reflection removes the generic positive-ground-state shortcut
 
-**Evidence level:** supported through WI-251; the finite-radius mean reserve, first-mode localization identities, and layer-cake reduction are exact in the persisted Weil model, while the arithmetic contradiction remains open.
+**Evidence level:** supported through WI-252; the finite-radius reserve, first-mode localization identities, layer-cake reduction, and odd-sector Beurling--Deny obstruction are exact/anchored in the persisted Weil model, while the arithmetic contradiction remains open.
 
 WI-244--WI-247 calibrate the positive archimedean reserve and force, under RH failure, an attained first odd zero mode `v` at a finite radius `a`, with strict odd positivity at every smaller radius. WI-248--WI-249 close phase-blind alternatives: uniform symbol and all-odd discrepancy bounds are exponentially more expensive than the first-crossing tariff, so the source estimate must be conditioned on the actual zero mode.
 
-WI-250 supplies that conditioning. For a real even smooth cutoff `chi` supported in `(-b,b)`, the zero-mode equation gives an exact signed source-flux inequality, with an explicit nonlocal IMS error bounded by a multiple of `||chi'||_infty^2`. This preserves the prime-minus-continuum orientation but leaves a collar-width optimization.
-
-WI-251 removes that optimization by averaging the full nested family of sharp radial cutoffs
-
-\[
-\eta_r=\mathbf1_{\{|x|<r\}}.
-\]
-
-Sharp multiplication is form-admissible for almost every radius, and the layer-cake identity
-
-\[
-\int_0^a(\eta_r(x)-\eta_r(y))^2dr
-=\bigl||x|-|y|\bigr|
-\]
-
-converts the family of cutoff defects into one exact radial kernel. For the same first zero mode,
+WI-250 supplies that conditioning. WI-251 then removes the arbitrary smooth-collar optimization by averaging the nested sharp cutoffs `eta_r=1_{|x|<r}`. The layer-cake identity turns the entire cutoff family into one radial metric and gives
 
 \[
 \overline{\mathcal E}_{a,\mathrm{mean}}(v)
@@ -28,23 +13,26 @@ converts the family of cutoff defects into one exact radial kernel. For the same
 \int_0^a\lambda_r^-\|\eta_rv\|_2^2\,dr,
 \]
 
-where
+where the right side is strictly positive and the mean localization cost has a finite universal bound. The remaining localization gate is therefore the **signed radial von-Mangoldt flux** of the forced first zero mode.
+
+A natural attempted shortcut is to prove that the positive-half profile of this first odd mode has one sign. For such a profile the radial correction satisfies a favorable sign identity, which would constrain the layer-cake flux. WI-252 shows why that sign cannot be imported from ordinary ground-state theory.
+
+Transfer the odd form to `L^2(0,a)`. A prime-power shift `h=log n` contributes
 
 \[
-R_v(h)=\int\bigl||x+h|-|x|\bigr|\,
-\operatorname{Re}(v(x+h)\overline{v(x)})\,dx.
+-2w_nA_h(g)+w_nH_h(g),
 \]
 
-The integrated gap-times-mass term is strictly positive. The mean localization cost is finite and universal at fixed radius:
+where `H_h` is a reflected anti-diagonal/Hankel interaction. For every `a>\log2/2`, the `p=2` term alone produces disjoint nonnegative bumps `f,g` with
 
 \[
-|\overline{\mathcal E}_{a,\mathrm{mean}}(v)|
-\le C_{\rm lc}(a)
-<\frac14\zeta\!\left(2,\frac54\right).
+q_a^-(f,g)>0.
 \]
 
-Thus the old `O(ell^{-2})` smooth-collar penalty is not a structural obstruction. The nested first-crossing constraints have been compressed to a single necessary arithmetic compatibility condition for the **signed radial von-Mangoldt flux** of the forced zero mode.
+This violates the first Beurling--Deny criterion, so the associated odd half-line semigroup is not positivity preserving. Zhu's certified compact-window positivity through `a=0.8` implies that any hypothetical first odd RH-failure crossing satisfies `a_*^->0.8>\log2/2`. The first crossing therefore occurs only after the arithmetic reflection has already destroyed the standard cone order.
 
-The remaining theorem must use the actual source. Either prove a zeta-specific upper/incompatibility bound for `int R_v dnu_a`, or obtain independent quantitative information on the positive integrated gap profile and combine it with that signed flux. Taking absolute values would return to the phase-blind losses already ruled out.
+The structural lesson is concrete: **the same prime source whose signed flux must be controlled also destroys the generic order mechanism that would have made that flux easy to sign**. Constant phase is not refuted, but it must come from the zeta-specific eigen-equation, another source-sensitive invariant, or a different cone/order compatible with the reflected atoms.
 
-**Boundary.** Layer-cake localization is classical and ordinary operators with a genuine first crossing can satisfy analogous identities. WI-251 does not supply the missing arithmetic sign, a lower rate for the interior eigenvalue profile, or RH. Its contribution is to remove the arbitrary collar parameter and identify one finite source-oriented observable as the remaining localization gate.
+The live routes are correspondingly narrow: prove a direct incompatibility/upper bound for `int R_v dnu_a`; obtain quantitative information on the positive integrated gap-times-mass term; derive a phase/nodal theorem from the signed source itself; or identify a genuinely different order structure. Taking absolute values or invoking Perron--Frobenius/Krein--Rutman without checking Beurling--Deny reintroduces a false shortcut.
+
+**Boundary.** WI-252 proves failure of positivity preservation, not a nodal theorem. The first zero mode may still be one-signed for a different reason. The application to the forced first crossing uses the external certified positivity radius; the local `p=2` obstruction itself does not.

@@ -8,33 +8,28 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 WI-231--WI-237 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows. The unconditional simple critical-line exponentials are complete on every bounded positive-measure window and are not a Bessel family, so ordinary separation/Riesz arguments cannot exclude spectral collapse. The surviving Bombieri-side currency is coefficient price together with height tightness.
 
-## Close the first odd crossing through the layer-cake signed radial flux
+## Close the first odd crossing through the signed radial source flux, not generic ground-state positivity
 
 **Linked intuition:** `MI-016-finite-radius-source-localization-can-replace-zero-side-tightness`.
 
 WI-238--WI-249 isolate the finite-radius first-crossing witness and close generic phase-blind alternatives. Under RH failure there is an attained first odd zero mode at a finite radius, while uniform-symbol and all-odd discrepancy estimates are exponentially too expensive; the useful source estimate must be conditioned on that actual mode.
 
-WI-250 gives the exact signed cutoff-flux identity for smooth interior cutoffs but pays a Lipschitz IMS cost `O(||chi'||_infty^2)`. WI-251 shows that this collar bill is not intrinsic. Averaging the full nested family of sharp radial cutoffs by the layer-cake identity replaces all collar widths by one radial metric and yields
+WI-250 gives the exact signed cutoff-flux identity for smooth interior cutoffs but pays a Lipschitz IMS cost. WI-251 removes that artificial collar bill by averaging the full nested family of sharp radial cutoffs. The resulting layer-cake inequality compresses the localization problem to the exact signed radial von-Mangoldt flux
 
 \[
-\overline{\mathcal E}_{a,\mathrm{mean}}(v)
-+\int_0^{2a}R_v(h)\,d\nu_a(h)
-\ge
-\int_0^a\lambda_r^-\|\mathbf1_{|x|<r}v\|_2^2\,dr.
+\int_0^{2a}R_v(h)\,d\nu_a(h)
 \]
 
-The right side is strictly positive, while the averaged mean localization error has the universal finite bound
+plus a finite universal mean-side term and a strictly positive integrated interior gap-times-mass term.
 
-\[
-|\overline{\mathcal E}_{a,\mathrm{mean}}(v)|
-\le C_{\rm lc}(a)
-<\frac14\zeta\!\left(2,\frac54\right).
-\]
+WI-252 closes the most tempting phase shortcut. On the positive half-interval, odd reflection turns each prime translation into a same-side attractive term plus a **positive reflected Hankel interaction**. Once `a>\log2/2`, the `p=2` reflection alone gives disjoint nonnegative bumps with positive cross form, violating the first Beurling--Deny criterion. Hence the odd localized operator does not generate a positivity-preserving semigroup in that regime.
 
-The live theorem is therefore narrower than optimizing one smooth collar. Control the exact **signed radial von-Mangoldt flux** `int R_v dnu_a` on the forced first-zero-mode class, or combine an independent lower bound for the integrated gap-times-mass term with a source-specific incompatibility. The useful arithmetic input must retain the orientation of the actual von-Mangoldt source.
+Zhu's certified positivity through radius `0.8` places any hypothetical first odd RH-failure crossing beyond `0.8>\log2/2`. Thus the forced first zero mode lies exactly in a regime where Perron--Frobenius/Krein--Rutman/Beurling--Deny theory cannot supply a one-signed positive-half profile. Constant phase may still be true for some zeta-specific reason, but it is not a generic ground-state consequence.
 
-## Treat global signed growth, finite-radius reserve, smooth-collar IMS cost, and radial first-mode flux as separate gates
+The live theorem is therefore narrower: control the **signed radial source flux of the actual first zero mode** directly, derive a phase/nodal restriction from the eigen-equation plus arithmetic source, find a different order structure not contradicted by prime reflections, or combine an independent lower bound for the integrated gap profile with a source-specific incompatibility. Returning to absolute values or generic positive-ground-state language discards the structure already isolated.
 
-Global subexponential discrepancy control is already RH. Uniform prime-symbol/all-odd bounds are too expensive. WI-250 converts strict interior positivity into a directional source constraint; WI-251 removes the artificial smooth-collar optimization by integrating the nested family exactly.
+## Treat global signed growth, finite-radius reserve, smooth-collar cost, radial flux, and cone positivity as separate gates
 
-What remains is not a generic localization estimate but a zeta-specific sign/correlation theorem for one forced eigenmode. Replacing that flux by total variation or returning to arbitrary odd test functions discards the structure the reduction was designed to preserve.
+Global subexponential discrepancy control is already RH. Uniform prime-symbol/all-odd bounds are too expensive. WI-250 converts strict interior positivity into a directional source constraint; WI-251 removes smooth-collar optimization; WI-252 shows that the arithmetic source itself destroys the standard positivity-preserving semigroup as soon as the first prime reflection is active.
+
+What remains is not a generic localization or Perron theorem but a zeta-specific sign/correlation statement for one forced eigenmode. Failure of semigroup positivity does not prove that the mode changes sign; it proves only that constant sign must be earned from additional arithmetic structure.

@@ -8,36 +8,30 @@ This file holds the current mathematical questions suggested by the durable fare
 
 FD-049--FD-055 reduce residual occupation collapse to a low-row source-localization problem and show that sufficiently strong short-interval Möbius cancellation transfers a zero-frontier spike to nearby nonsquarefree occupation. FD-056--FD-058 distinguish sparse represented-start sampling from maximal ambient-window localization.
 
-FD-059 identifies the deterministic critical scale `Q_X=X/A_X`, where `A_X=|\mathcal H(X)|`: favorable residue-class selection plus the one-Lipschitz source forces a constant-fraction nonsquarefree twin at `q\asymp Q_X`. FD-060 shows that subpower slack above `Q_X` can produce a growing CRT packet.
+FD-059 identifies the deterministic critical scale `Q_X=X/A_X`, where `A_X=|\mathcal H(X)|`: favorable residue-class selection plus the one-Lipschitz source forces a constant-fraction nonsquarefree twin at `q\asymp Q_X`. FD-060 shows that subpower slack above `Q_X` can instead be spent on multiplicity.
 
-FD-062 now crosses the deterministic scale with a **growing** packet when physical short-interval cancellation is available. If `A_X(\log X)^B\ge X^\vartheta` with `\vartheta>0.55` and `B+\kappa<1/3`, there are squarefree hosts and packet lengths `K_X\to\infty`, `K_X\le(\log X)^\kappa`, for which
+FD-062 crosses the deterministic scale with a growing packet when physical short-interval cancellation is available. If `A_X(\log X)^B\ge X^\vartheta` with `\vartheta>0.55` and `B+\kappa<1/3`, packet width `K_X\le(\log X)^\kappa` can grow while `qA_X/X\asymp(\log X)^{-B}\to0`.
+
+FD-063 removes the remaining CRT host-selection cost from that occupation mechanism. Put `R_X=A_X(\log X)^B`, `K_X=\lfloor(\log X)^\kappa\rfloor`, and `Y_X=X/(8R_X)`. The same short-interval transfer holds uniformly for **every** host `Y_X\le q\le2Y_X`, and the trivial density of multiples of four supplies at least `K_X/4+O(1)` nonsquarefree rows. Consequently
 
 \[
-\frac{qA_X}{X}\asymp(\log X)^{-B}\to0
+U_{qX,D}\ge\left(\frac1{4\zeta(2)}-o(1)\right)K_XA_X^2
 \]
 
-while every packet row remains source-close to the selected spike. Thus growing local nonsquarefree occupation does **not** intrinsically require supercritical placement. The logarithmic short-interval saving is a budget that can be split between penetration below `X/A_X` and packet width.
+uniformly across the whole below-critical corridor. A positive proportion of those hosts are squarefree. Packet existence therefore no longer consumes host entropy through a growing CRT congruence.
 
-The remaining localization boundary is now explicit: the present theorem uses the all-short-interval range `\vartheta>0.55` and the available logarithmic saving. The unresolved source problem is what, if anything, can replace that input in the `\Theta\le0.55` range or improve the budget beyond `B+\kappa<1/3`.
+The remaining localization boundary is the analytic input itself: the present theorem still uses `\vartheta>0.55` and the logarithmic budget `B+\kappa<1/3`. The unresolved source problem is what can replace that input for `\Theta\le0.55` or improve the available budget.
 
-## Sharpen the same-horizon denominator rather than the packet geometry
+## Sharpen the same-horizon denominator across the available host corridor
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-061 measures the global loss of the supercritical packet. Along a false-RH frontier spike `A_X=X^{\Theta+o(1)}`, the packet horizon gives the exponent
+FD-061 measures the global loss of the packet mechanism: generic zero-frontier bounds for the full energy denominator absorb the available subpower gains. FD-062 improves the local geometry without fixing this, and FD-063 now shows that the packet lower bound is uniform on a corridor of `\asymp X/(A_X(\log X)^B)` hosts.
 
-\[
-\beta_\Theta=\frac{2\Theta(1-\Theta)}{2-\Theta},
-\]
+The next global theorem should exploit that new quantifier. It may average `E_{qX,D}` over the host corridor, select a favorable host after estimating the denominator, or prove a source-coupled same-horizon bound. If all of those fail, the obstruction is genuinely in physical energy across the corridor rather than in packet availability or CRT sparsity.
 
-which improves the all-horizon `2\Theta-1` barrier exactly for `\Theta>2/3`, but still does not give positive normalized occupation.
+## Keep transfer accuracy, packet multiplicity, host entropy, host scale, and normalized occupation as different currencies
 
-FD-062 strengthens the geometry without removing this global obstruction. The host can now satisfy `qA_X/X\to0` while carrying `K_X\to\infty`, and on false-RH frontier sequences one can take a fixed logarithmic packet power. Yet the generic denominator envelope on those **same source-selected horizons** absorbs the available subpower gains.
+Bounded increments have a sharp deterministic host-scale bill. Genuine short-interval cancellation crosses it and supports growing local multiplicity. Four-adic row density then makes that multiplicity uniform over a macroscopic host corridor. None of these statements yields a positive fraction of the full energy.
 
-The next global theorem should therefore control the energy denominator on the packet horizons themselves, or find a source-coupled transfer with a genuinely better row-count/horizon tradeoff. Another CRT refinement at the deterministic host scale is no longer the bottleneck.
-
-## Keep transfer accuracy, packet multiplicity, host scale, and normalized occupation as different currencies
-
-Bounded increments alone have a sharp host-scale bill. Genuine short-interval cancellation can cross it and can simultaneously support growing local multiplicity. Neither statement yields a positive fraction of the full energy.
-
-Any use of the zero-frontier exponent must therefore keep the source amplitude, `qA_X/X`, packet width, packet horizon, same-horizon denominator, localization range, and normalized occupation exponent explicit. Equal row exponents, an unbounded packet/host ratio, and positive global occupation are not interchangeable statements.
+Any use of the zero-frontier exponent must therefore keep the source amplitude, `qA_X/X`, packet width, host-corridor size, packet horizon, same-horizon denominator, localization range, and normalized occupation exponent explicit. Uniform packet availability and positive global occupation remain different statements.

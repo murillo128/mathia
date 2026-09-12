@@ -28,18 +28,16 @@ AF-244--AF-276 show that coarse symmetry, zero counting, endpoint jets, compact-
 
 AF-278--AF-281 separate continuous time breadth, one-lattice aliasing, marginal coupling loss, and exact mixed-channel recovery. If all mixed samples `F(c+i(k_1h_1+...+k_Jh_J))` are retained, ordinary Dirichlet coefficient fidelity is equivalent to `cap_j R_(h_j)={1}`; separate resonant marginals do not have the same information.
 
-AF-282--AF-284 now price three different finite-prefix resources for the concrete `log2/log3` repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)` and **uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`**. The dense `L=30N` square gives a stable frame, but AF-284 shows that its quadratic observation count is not intrinsic: classical matrix concentration extracts an **unweighted subset of distinct raw mixed moments of size `O(N log N)`** with a breadth-uniform inverse under adversarial per-sample absolute noise.
-
-The remaining finite-prefix acquisition gap is therefore
+AF-282--AF-285 now price three distinct finite-prefix resources for the concrete `log2/log3` repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)` and uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`. The dense `L=30N` square is not an acquisition requirement: deterministic subset selection on the realified stable frame yields an **unweighted subset of at most `8N` distinct raw complex mixed moments** with a breadth-uniform inverse under adversarial per-sample absolute noise. Rank forces at least `N` complex observations, so the raw unweighted sample-count order is now closed:
 
 \[
-\Omega(N)\quad\text{versus}\quad O(N\log N),
+q_{\mathrm{stable,raw}}(N)=\Theta(N).
 \]
 
-not `Omega(N)` versus `Theta(N^2)`. Determine whether the logarithmic factor is an artifact of generic row sampling or is forced by unweighted raw mixed-moment acquisition under a stated timing geometry. Weighted `O(N)` spectral sparsification is relevant prior art but changes the acquisition/noise semantics and must remain a separate model. Keep known support, maximal time horizon, timing precision, the weighted coefficients `b_n=a_n n^{-c}`, conversion back to an unweighted target, and the unrestricted infinite-source obstruction as separate costs.
+The remaining finite-prefix questions are no longer about a logarithmic oversampling gap. They concern the arithmetic/explicit structure of good linear-size subsets, maximal time horizon and timestamp precision, unknown support, the weighted coefficients `b_n=a_n n^{-c}`, conversion to other target norms, and whether any finite-prefix mechanism survives a meaningful infinite-source limit.
 
 ## Treat the information bills separately
 
-A finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, phase labels are only `Theta(1/N)` apart, stable mixed **degree** is `Theta(N)`, and an unweighted raw subset with `O(N log N)` scalar samples already suffices for breadth-uniform coefficient stability.
+A finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, phase labels are only `Theta(1/N)` apart, stable mixed **degree** is `Theta(N)`, and stable raw unweighted **sample count** is also `Theta(N)` but for a different reason and with a different constant/geometry.
 
-Future fidelity claims must therefore state which resource is being bounded: difference-object complexity, local depth, prime breadth, observation dimension, coupling geometry, cadence/fiber geometry, label resolution, mixed degree, sample count, time horizon, coefficient-recovery norm, source weights, support knowledge, and downstream target metric. Exact injectivity, polynomial label spacing, linear mixed degree, and near-linear sample count are distinct statements.
+Future fidelity claims must therefore state which resource is being bounded: difference-object complexity, local depth, prime breadth, observation dimension, coupling geometry, cadence/fiber geometry, label resolution, mixed degree, sample count, time horizon, coefficient-recovery norm, source weights, support knowledge, and downstream target metric. Exact injectivity, polynomial label spacing, linear mixed degree, and linear sample count are distinct statements.

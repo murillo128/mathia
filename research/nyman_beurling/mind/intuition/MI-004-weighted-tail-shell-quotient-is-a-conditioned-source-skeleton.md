@@ -1,6 +1,6 @@
-# MI-004 — The collective late Nyman quotient is a finite-window target-leakage problem, not a defect-existence problem
+# MI-004 — The late Nyman quotient is a causal conditioning and target-leakage problem, not a rank problem
 
-**Evidence level:** proved structural identities through NB-061; whether the visible natural leakage of the canonical residual vanishes remains open.
+**Evidence level:** proved structural identities through NB-062; whether the visible natural leakage of the canonical residual vanishes remains open.
 
 After removing the common off-critical Blaschke factor, the natural Nyman closure is `\mathcal A` and its defect space is
 
@@ -8,55 +8,75 @@ After removing the common off-critical Blaschke factor, the natural Nyman closur
 \mathcal D=\mathcal A^\perp.
 \]
 
-NB-053--NB-058 show that raw late quotient columns shrink and that the canonical finite residual becomes invisible to every sufficiently late **individual** shifted block. The collective loophole is the family of finite-time defect sectors
+NB-053--NB-060 show that raw late quotient columns shrink and that the canonical residual becomes invisible to every sufficiently late **individual** shifted block, while the collective loophole is the family of finite-time defect sectors
 
 \[
 \mathcal K_R=\mathcal D\cap\ker U_{\log R}^*.
 \]
 
-NB-060 turns this into a one-operator generalized-root problem. With `B_2=U_{\log2}^*|_\mathcal D`, dyadic cofinality gives
+NB-061 eliminates defect existence as a bottleneck. Let `J_R` truncate to `[0,\log R]`, `\mathcal E_R=\ker U_{\log R}^*`, and `\mathcal G_R=J_R\mathcal A`. Then
 
 \[
-\mathcal K_{2^k}=\ker B_2^k,
-\qquad
-\mathcal K_{\rm fin}=\overline{\bigcup_{k\ge1}\ker B_2^k}.
+\mathcal K_R=\mathcal E_R\ominus\mathcal G_R,
 \]
 
-NB-061 now eliminates the unresolved existence branch. Let `J_R` be time truncation to `[0,\log R]` and set `\mathcal G_R=J_R\mathcal A`. The exact integer-log cocycle forces
+and every `\mathcal K_R` is infinite-dimensional. For the canonical residual `h_*=Qe`,
 
 \[
-\mathcal G_R=\operatorname{span}\{J_RF_n:2\le n\le R\},
-\qquad \dim\mathcal G_R\le R-1.
+\operatorname{dist}(h_*,\mathcal K_R)^2
+=\|(I-J_R)h_*\|^2
++\|P_{\mathcal G_R}J_Rh_*\|^2.
 \]
 
-Inside the infinite-dimensional window space `\mathcal E_R=\ker U_{\log R}^*`, one has
+The ordinary tail tends to zero, so the live question is the visible target leakage.
+
+NB-062 closes the next possible escape: hidden algebraic dependence in `\mathcal G_R`. Define
 
 \[
-\mathcal K_R=\mathcal E_R\ominus\mathcal G_R.
+D_j=(j+1)F_{j+1}-jF_j.
 \]
 
-Therefore every `\mathcal K_R` is infinite-dimensional; in particular `\ker B_2=\mathcal K_2\ne0`. Compact-time arithmetic defects are abundant already in the first dyadic window.
-
-Abundance is still not the target theorem. For every `h\in\mathcal D`, NB-061 gives the exact orthogonal decomposition
+The integer-log cocycle gives an exact shifted-cell representation for `D_j`, and outerness of the deflated factor guarantees that its first cell
 
 \[
-\operatorname{dist}(h,\mathcal K_R)^2
-=
-\|(I-J_R)h\|^2
-+
-\|P_{\mathcal G_R}J_Rh\|^2.
+C_j=(J_{j+1}-J_j)D_j
 \]
 
-For the canonical residual `h_*=Qe`, the ordinary time tail tends to zero, so
+is nonzero. The family is causally triangular, hence
 
 \[
-h_*\in\mathcal K_{\rm fin}
-\iff
-\|P_{\mathcal G_R}J_Rh_*\|\to0.
+\boxed{
+\mathcal G_R=\operatorname{span}\{J_RD_j:1\le j<R\},
+\qquad \dim\mathcal G_R=R-1.
+}
 \]
 
-The moving collective problem has therefore become a **finite-window leakage problem**: at scale `R`, only at most `R-1` natural directions are visible, but those directions may still retain a fixed component of the target. Finite rank is not quantitative decay.
+Moreover each new window adds exactly one innovation:
 
-The reusable distinction is now sharper. Individual-column disappearance does not settle a collective span; nonzero localized kernels do not settle target approximation; and an infinite-dimensional defect sector can still fail to absorb a distinguished vector because a moving finite-dimensional complement captures it. A useful next theorem must estimate the target projection onto `\mathcal G_R` or provide an equivalent source-controlled dual certificate.
+\[
+0\to\operatorname{span}\{C_R\}
+\to\mathcal G_{R+1}
+\xrightarrow{J_R}\mathcal G_R
+\to0.
+\]
 
-**Boundary.** NB-061 proves neither density of the generalized nullspace in the full defect space nor decay for a generic vector. It closes only the compact-time existence gate and isolates the remaining canonical-target quantity.
+Thus the actual arithmetic source and the flat `O=1` control have the same innovation count and causal ordering. In the flat case the innovations are orthogonal cell indicators; in the arithmetic case they acquire **forward tails**. The source deformation lives in this forward memory, not in a missing rank.
+
+The target pairing also becomes exact. Global orthogonality `h_*\perp D_j` implies
+
+\[
+\langle J_Rh_*,J_RD_j\rangle
+=-\langle(I-J_R)h_*,(I-J_R)D_j\rangle.
+\]
+
+If `H_R` is the positive-definite Gram matrix of `{J_RD_j}_{j<R}` and `b_R` this tail-induced pairing vector, then
+
+\[
+\boxed{
+\|P_{\mathcal G_R}J_Rh_*\|^2=b_R^*H_R^{-1}b_R.
+}
+\]
+
+This identifies the remaining mechanism precisely: very small tail pairings can still be amplified by poor triangular conditioning. A useful theorem must control the forward-tail/innovation ratio strongly enough to bound `H_R^{-1}` in the target direction, or exploit cancellation special to `b_R`. Full rank, nonzero `C_j`, and abundance of compact defects are no longer informative enough.
+
+**Boundary.** NB-062 proves no uniform frame bound, no lower bound on innovation size, no decay of `b_R^*H_R^{-1}b_R`, and no Nyman-distance estimate. It converts the live obstruction from algebraic rank to quantitative causal conditioning plus target alignment.

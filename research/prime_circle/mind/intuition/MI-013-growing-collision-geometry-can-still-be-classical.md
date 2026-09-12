@@ -1,31 +1,27 @@
-# MI-013 — Prime-Circle information survives only beyond classical bulk data and must retain the finite arithmetic lift
+# MI-013 — Prime-Circle bulk information is classical after the finite orbit closure is fixed
 
-**Evidence level:** proved structural boundary through PC-269; only finer or genuinely resonant spectral/transfer channels remain open.
+**Evidence level:** proved structural boundary through PC-270; only growing-complexity resonance or finer/singular channels remain open.
 
-Growing collision geometry is not enough. Common dilation is exact repetition, nonresonant bulk spectrum and normalized positive log-volume converge to classical torus-return limits, fixed off-spectrum characteristic potentials are transforms of the same IDS, and PC-266--PC-267 show that connected-component simplicity, nodal order, and reflection parity ordering are classical consequences of the collision matrix structure.
+Growing collision geometry is not enough. Common dilation is exact repetition, nonresonant bulk spectrum and normalized positive log-volume converge to classical torus-return limits, fixed off-spectrum characteristic potentials are transforms of the same IDS, and connected-component simplicity, nodal order, reflection parity ordering, and canonical total projective rotation are classical consequences of the collision matrix structure.
 
-PC-268 closes the canonical long-transfer escape as well. For the native symmetric Schur/Riccati sweep of `H_n-EI`, cumulative focal/projective rotation is exactly the eigenvalue-counting function. Recasting the same finite spectrum as a Pruefer/Maslov index therefore creates no new arithmetic observable.
+PC-269 shows that even a **rational limiting ratio pair** is not a nonuniversal regime by itself. If every fixed nonzero Fourier mode is eventually nonresonant at the finite prime levels, the raw orbit still equidistributes in Haar phase and the squared-singular empirical law converges to the periodic-Haar IDS of the finite-order limiting translation. Matching pairwise-coprime controls share that law.
 
-PC-269 adds a sharper finite-lift boundary. Suppose
-
-\[
-\frac{p_n}{q_n}\to\frac aQ,
-\qquad
-\frac{r_n}{q_n}\to\frac bQ
-\]
-
-with rational limiting ratios, but every fixed nonzero Fourier mode is eventually nonresonant:
+PC-270 gives the complementary exact-resonance classification. Suppose one fixed primitive relation
 
 \[
-q_n\nmid hp_n+kr_n
+hp_n+kr_n=\ell q_n
 \]
 
-for each fixed `(h,k)\ne(0,0)`. Then the finite prime orbits still equidistribute in Haar phase and the squared-singular-value empirical law converges to a deterministic **periodic-Haar IDS** for the finite-order limiting translation. Matched pairwise-coprime controls share the same law.
+holds eventually. Primality prevents any second fixed independent resonance from recurring. The finite orbit measures therefore converge to Haar measure on exactly one subtorus
 
-Exact resonance is different. At the same limiting point `(1/4,1/2)`, PC-261 and PC-269 exhibit genuine prime sequences with rank densities `0`, `1/8`, and `1/6`, depending on the finite congruence lift. The rational point itself therefore carries too little information; exact bounded resonances are singular finite-level constraints, while bounded-mode nonresonant approach remains bulk-classical.
+\[
+H_{h,k}=\{(x,y):hx+ky=0\pmod1\},
+\]
 
-Together with PC-266--PC-268, this removes internal degeneracy, ordinary nodal count, reflection parity order, leading normalized total projective rotation, and **bounded-mode nonresonant rational-limit bulk laws** as arithmetic carriers. The surviving information, if any, must retain data lost by these averages: exact resonances, growing resonance vectors, mesoscopic almost-resonant drift, microscopic spacing or shrinking-window placement, subleading projective fluctuations, individual matrix-valued phases, transfer-norm/Lyapunov growth, or another source-forced itinerary invariant.
+and every fixed bulk spectral moment converges to the finite-range collision IDS induced by the circle rotation on `H_{h,k}`. If the collision rectangle has zero Haar intersection, the bulk law collapses to `delta_0`; otherwise it is the corresponding one-circle phase average. Controls carrying the same fixed resonance reproduce the same bulk law.
 
-The matched-control requirement must now include the finite lift relevant to the proposed observable. Matching only the limiting ratios is too weak when exact congruences are the mechanism; conversely, calling a rational limit “near-resonant” is not enough when all bounded Fourier modes remain nonresonant.
+This resolves the apparent path dependence at `(1/4,1/2)`: the rank densities `0`, `1/8`, and `1/6` come from two distinct resonant subtori and the full two-torus. The finite arithmetic lift matters because it selects the orbit closure, but **fixed-complexity bulk averaging forgets everything beyond that closure**.
 
-**Boundary.** PC-269 classicalizes fixed spectral moments in the bounded-mode nonresonant rational regime. It does not classify growing resonance vectors, mesoscopic observation windows, microscopic spectral statistics, transfer norms, or every projective coordinate.
+The surviving information, if any, must therefore evade this classification. Concrete open channels are resonance vectors whose coefficients grow with the source, mesoscopic windows on the inverse near-resonance scale, microscopic spacing or shrinking energy windows, outliers/fine edges, subleading projective fluctuations, transfer-norm/Lyapunov growth, singular log-determinant functionals, or arithmetic statistics of how resonance sectors occur. Each proposal must be matched against controls carrying the same orbit closure and whatever finite lift the observable actually sees.
+
+**Boundary.** PC-270 is a bulk theorem for a fixed primitive resonance vector. It does not classify growing resonance complexity, mesoscopic drift, microscopic spectra, singular cocycle functionals, or the arithmetic frequency of resonance sectors.
