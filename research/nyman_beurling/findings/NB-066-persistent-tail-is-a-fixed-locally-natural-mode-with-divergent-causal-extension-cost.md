@@ -175,8 +175,7 @@ x_R^{(t)}:=(J_{R+1}-J_R)t.
 Since both `g_R in G_R` and `J_(R+1)t in G_(R+1)`, the graph decomposition of `NB-063` forces
 
 \[
-\boxed{
-x_R^{(t)}=\Gamma_Rg_R+\beta_RC_R}
+\boxed{x_R^{(t)}=\Gamma_Rg_R+\beta_RC_R}
 \tag{17}
 \]
 
@@ -262,7 +261,7 @@ P_{\mathcal T_R}h
 The spaces `T_R` are decreasing closed subspaces with intersection `T_infinity`. Orthogonal projections onto a decreasing family converge strongly to the projection onto the intersection, so
 
 \[
-P_{\mathcal T_R}h_*	o P_{\mathcal T_\infty}h_*=t_*.
+P_{\mathcal T_R}h_*\to P_{\mathcal T_\infty}h_*=t_*.
 \tag{25}
 \]
 
@@ -312,7 +311,7 @@ which is (10). Cauchy--Schwarz yields
 
 Taking the infimum over admissible `a` proves (11).
 
-The denominator in (11) cannot vanish for a nonzero stable mode. If `(I-J_R)t=0`, then `t in E_R intersect D`; because `J_Rt in G_R` and `K_R=E_R ominous G_R`, one would have simultaneously `t in G_R` and `t in D`, hence `t=0` after using `G_R=J_RA` together with (28). More directly, (28) would give `||t||^2=0`. Thus (11) is meaningful at every finite `R`.
+The denominator in (11) cannot vanish for a nonzero stable mode. If `(I-J_R)t=0`, then the second term in (28) vanishes and (28) gives `||J_Rt||^2=||t||^2=0`. Thus (11) is meaningful at every finite `R` for `t!=0`.
 
 As `R->infinity`,
 
@@ -355,8 +354,7 @@ J_Rs_R=J_Rt.
 Compatibility of the truncations forces
 
 \[
-\boxed{
-s_{R+1}-s_R=a_RD_R}
+\boxed{s_{R+1}-s_R=a_RD_R}
 \tag{34}
 \]
 
