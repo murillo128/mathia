@@ -1,74 +1,37 @@
-# MI-005 — A persistent Nyman tail would be one fixed locally natural mode with square-summable transmission and divergent global extension cost
+# MI-005 — A persistent Nyman tail is a locally natural mode whose global extension cost has finite Schur certificates
 
-**Evidence level:** supported by the exact one-cell recursion NB-063, target near-kernel theorem NB-064, finite transmission budget NB-065, and stable-tail/extension theorem NB-066; no vanishing theorem for the canonical collective tail is claimed.
+**Evidence level:** supported by the exact causal recursion and stable-tail theorems NB-063--NB-066 and the finite future Gram/Schur characterization NB-067; no uniform bounded certificate is yet proved.
 
-The late Nyman--Beurling quotient is not blocked by missing rank. NB-062--NB-063 show that the visible natural spaces form a full causal flag and that old visible information can enter the new logarithmic cell only through the finite-rank continuation map
+The late Nyman--Beurling quotient is not blocked by missing rank. NB-062--NB-063 show that visible natural spaces form a full causal flag and that old visible information enters the next logarithmic cell only through the finite-rank continuation map `Gamma_R`.
 
-\[
-\Gamma_R:\mathcal G_R\to\mathcal X_R^\circ.
-\]
-
-NB-064--NB-065 show that a positive limiting defect forces the normalized visible target into singular values tending to zero and gives its filtered transmission a finite total budget. If a fixed target fraction repeatedly lies above moving floors `eta_R`, persistence requires the corresponding squared floors to be summable. Thus no uniform singular gap is needed to kill persistence; a nonsummable weak transversality floor would already suffice.
-
-NB-066 identifies the object that would have to realize this pathology. With
+NB-064--NB-066 show what persistence would require. The canonical target would converge to one fixed nonzero stable-tail mode
 
 \[
-\mathcal T_\infty
-=\mathcal D\ominus\mathcal K_{\rm fin},
+t_*\in\mathcal T_\infty
+=\{t:J_Rt\in\mathcal G_R\text{ for every }R\},
 \]
 
-one has the exact characterization
+which is exactly natural on every finite window while globally orthogonal to the natural closure. Its one-cell transmitted energy is square summable, but every exact global natural continuation of its finite trace has future norm tending to infinity. Equivalently, the worst minimal continuation constant `Lambda_R` must diverge. A bounded subsequence of `Lambda_R` rules out the entire stable-tail space.
+
+NB-067 makes this criterion finite and source-only. The kernel of `J_R` on the natural space is exactly the closed span of future innovations `D_j`, `j>=R`. If `A_R` is the visible prefix Gram and `S_(R,N)` is the finite Schur complement after optimizing over `D_R,...,D_N`, then
 
 \[
-\boxed{
-\mathcal T_\infty
-=\{t\in\mathcal D:J_Rt\in\mathcal G_R\text{ for every }R\}.
-}
+\Xi_{R,N}
+:=
+\lambda_{\max}(A_R^{-1/2}S_{R,N}A_R^{-1/2})
+\downarrow 1+\Lambda_R^2.
 \]
 
-For the canonical residual `h_*`, the moving tail projections converge strongly to
+Thus every finite future horizon gives a rigorous **upper** bound on the true continuation cost. A uniform inequality
 
 \[
-t_*=P_{\mathcal T_\infty}h_*,
-\qquad
-\delta_\infty=\|t_*\|.
+S_{R_k,N_k}\preceq C^2A_{R_k}
 \]
 
-Hence, on the persistence branch, the normalized visible targets converge to one **fixed nonzero stable-tail mode** rather than rotating indefinitely among unrelated near-kernel directions.
+on any unbounded sequence `R_k` already forces `T_infinity={0}`. If a stable tail exists, every choice of finite horizon schedule must instead make `Xi_(R,N(R))` diverge.
 
-That fixed mode is locally indistinguishable from the natural space at every finite window but globally orthogonal to it. If `t in T_infinity` is nonzero and `E_R(t)` is the least future norm of a genuine natural vector `a` satisfying `J_Ra=J_Rt`, then global orthogonality gives
+The reusable lesson is sharper than near-kernel tracking. **Local exact representability, one-step transmission, infinite-horizon continuation cost, and finite certifiability are distinct resources.** Here the infinite obstruction is not hidden beyond all finite access: its decisive upper bounds are monotone finite generalized eigenvalues, provided they are normalized by the actual visible Gram rather than by a global ambient norm.
 
-\[
-\boxed{
-\mathfrak E_R(t)\,\|(I-J_R)t\|
-\ge\|J_Rt\|^2.
-}
-\]
+The remaining arithmetic task is concrete: bound these source-defined generalized eigenvalues on an unbounded window sequence, analytically or with rigorous finite certification. Failure is also informative because the growing extremal generalized eigenvectors identify the exact causal directions responsible for the continuation blow-up.
 
-Because `J_Rt->t` and `(I-J_R)t->0`, every exact natural continuation of the finite trace pays
-
-\[
-\mathfrak E_R(t)\to\infty.
-\]
-
-Thus persistence is stronger than bad local conditioning: it requires **perfect finite-window naturality together with catastrophic nonuniformity of all compatible global continuations**.
-
-This yields a target-free source criterion. Let `Lambda_R` be the worst minimal future-extension norm over unit vectors in `G_R`. A nonzero stable tail forces `Lambda_R->infinity` along the full tail. Therefore a bounded `Lambda_R` on any unbounded sequence of windows implies `T_infinity={0}` and kills every possible stable tail at once. This is strictly stronger in scope than controlling the canonical target alone.
-
-NB-066 also removes the spectral filter from the fixed-mode transmission statement. Writing `g_R=J_Rt`, the exact graph decomposition gives
-
-\[
-(J_{R+1}-J_R)t=\Gamma_Rg_R+\beta_RC_R
-\]
-
-orthogonally, and the cell energies telescope. For nonzero `t`,
-
-\[
-\sum_R\left\|\Gamma_R\frac{g_R}{\|g_R\|}\right\|^2<\infty.
-\]
-
-A persistent stable mode is therefore an **unfiltered square-summable approximate-kernel trajectory**, even while its globally natural continuation cost diverges.
-
-The reusable lesson is sharper than “persistent leakage requires near-kernel tracking.” **Local exact representability, one-step transmission, and globally bounded continuation are different resources.** A vector can be represented exactly on every finite observation window while no compatible global realization remains norm-controlled. The remaining arithmetic task can attack either side: force enough target transmission to violate square summability, or prove a uniform/recurring causal-extension bound that prevents such a locally natural but globally singular mode.
-
-**Boundary.** The criteria are one-sided. Square-summable transmission does not imply persistence, and the flat control can have zero transmission with no stable tail. NB-066 does not prove bounded causal-extension constants for the canonical arithmetic spaces; it identifies that bound as a sufficient source-only route. No RH conclusion follows without that missing arithmetic estimate.
+**Boundary.** NB-067 does not supply the required bounded sequence; it only proves that such a finite certificate would be sufficient and cannot be a truncation artefact. Ordinary global Gram conditioning or floating-point spectra without rigorous control do not substitute for the normalized Schur inequality.

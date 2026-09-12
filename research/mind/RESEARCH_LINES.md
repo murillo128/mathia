@@ -2,109 +2,77 @@
 
 ## Which source identity keeps a critical mixed-prime geometry canonical and globally admissible?
 
-[MI-009](intuition/MI-009-local-correctness-does-not-determine-global-coherence.md) shows that proper marginals, exact diagonal coefficients, positivity, regulator covariance, and even a sharp finite signature do not by themselves produce a valid critical global coupling.
-
-Weil Positivity now has a particularly sharp boundary. WP-266 removes the tested sharp/Gibbs finite-part ambiguity intrinsically: source-Hamiltonian diagonal centering makes both connected families converge to the same trace-class index-one operator `K=aa^*-D`. But transporting that geometry to the Weil half-density makes the coherent rank-one vector non-square-summable and the global form nonclosable.
-
-WP-267 closes the most direct category-change repair. The critical first-layer scalar row has full-product graph closure `ell^2(P) x C`, so its canonical regular part is zero; the full Fock relation retains only the bounded prime-separable higher-layer shift. Standard linear-relation closure therefore deletes exactly the critical mixed-prime coherence one wanted to preserve. A useful boundary/cohomological completion must add a **source-derived bulk-to-boundary law before closure**, remain regulator-covariant at critical scale, and also generate the missing archimedean/polar sector.
-
-## What readout retains source-dependent information after universal or locally exact structure is matched?
-
-[MI-011](intuition/MI-011-exact-local-source-consistency-can-hide-global-continuation.md) adds a new cross-line boundary: exact local source consistency can leave the decisive global continuation or readout completely unresolved.
-
-Prime Circle remains beyond classical orbit closure and dual-lattice resonance carriers: after PC-271, a useful statistic must use source-specific distribution/coupling of those carriers or leave the Fourier-resolution class.
-
-Nyman--Beurling has moved beyond a merely moving near-kernel picture. NB-063 gives the exact forward-memory recursion; NB-064--NB-065 show that persistence would force the canonical target into singular sectors with square-summably collapsing transmitted mass. NB-066 now identifies the persistent object itself. The stable-tail space is
+[MI-009](intuition/MI-009-local-correctness-does-not-determine-global-coherence.md) now separates two different category failures. WP-267 shows that ordinary linear-relation closure destroys the critical common-vacuum coherence: the first-layer row closes to a maximally multivalued product relation whose regular part is zero. WP-268 then shows that the row is nevertheless not intrinsically unhostable. It lies beyond every finite polynomial scale of the source Hamiltonian but is continuous on the canonical nuclear rapid-energy rigging
 
 \[
-\mathcal T_\infty
-=\{t\in\mathcal D:J_Rt\in\mathcal G_R\text{ for every }R\},
+\Phi_{\exp}=\bigcap_{a>0}\operatorname{Dom}e^{aH}.
 \]
 
-so a nonzero tail would be **globally orthogonal to the natural Nyman space while looking exactly natural on every finite window**. The canonical moving target projection converges to one fixed stable mode `t_*`, and every exact natural extension of `J_Rt_*` must develop an unseen-future norm tending to infinity. A bounded causal-extension constant on any unbounded window sequence would therefore kill the entire stable-tail space. The live theorem is now either a source-only controlled-extension bound or an equivalent arithmetic obstruction to this fixed locally natural mode.
+This removes “find any larger singular category” as the live question. The remaining theorem must derive a **source-native bulk-to-boundary correspondence** on such a category that retains mixed-prime coherence, is regulator-covariant at the critical half-density, and produces the missing finite--archimedean/Weil orientation rather than merely hosting a rank-one distribution.
 
-Robin Extremal has simultaneously sharpened its charge-silent branch. RE-065 forces polynomially many interruptions on every polynomial-span strong-off-critical fan; RE-066--RE-067 show that positive or otherwise nonzero bounded first-layer charge is only a logarithmic fringe phenomenon. RE-068 proves that a complete first-layer-only packet obeys an exact endpoint prime-multiset conservation law. In the matched `0 -> 0` branch, the ordinary primes crossed by the adaptive selectors are **exactly the physical event primes**, so every additive endpoint prime statistic agrees automatically, regardless of packet cardinality. The missing statistic must therefore use delayed event positions, selector geometry inside prime gaps, packet ordering/history, higher-layer information, or another non-additive relation. Merely changing the endpoint prime weight cannot reveal the matched takeover.
+## Which information survives the exact destination readout?
 
-Visual Exploration separates sparse close pairs from a diffuse full-prime crowding band. VIS-179 variance-matches every continuous additive prime-log statistic with `y=o(H)`. VIS-180 shows that sparse equal-weight bounded-gap pairs can retain an `O(1)` slow-beat defect at `y\asymp H`, so arbitrary-subset quadratic control really changes at linear support. VIS-181 then shows that the natural full-prime power profiles behave differently: keeping the weighted leverage `L_y=sum p w_p^2` gives a variance error `L_y/(HQ_y)+D_2/H`, and for every fixed `alpha>=1/2` with `w_p=p^{-alpha}` this still vanishes at `H\asymp y`.
+[MI-011](intuition/MI-011-exact-local-source-consistency-can-hide-global-continuation.md) and [MI-012](intuition/MI-012-information-content-and-destination-sensitivity-are-separate-resources.md) distinguish exact source information from what the downstream functional can actually use.
 
-VIS-182 removes the simplest explanation for the remaining `alpha<1/2` region. In the full prime prefix, every **fixed finite** set of bounded additive gaps has normalized coefficient mass tending to zero: `O(1/log y)` for `alpha<1/2` and `O(1/log log y)` at `alpha=1/2`. Thus the sparse bounded-gap obstruction does not survive merely by recurring inside the full prefix. Any quadratic defect below the leverage threshold must use a growing near-diagonal band, increasingly many gap classes, or another distributed organization.
-
-Across these lines the common warning is now two-sided. A universal low mode, bad singular direction, sparse event, or residual is informative only if the actual source-forced target occupies it after the matched structure is preserved; but **exact local source matching can itself become an information quotient**, forcing progress to move to global continuation cost, positional/history data, or another variable not already fixed by the local match.
-
-## Which observation family reaches the required source aperture at the right resource cost?
-
-With bounded local Euler degree, [MI-005](intuition/MI-005-topology-is-part-of-the-arithmetic-claim.md) separates finite prime-power depth from unbounded prime breadth. [MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now gives a sharper target-relative timing and source-normalized response calibration.
-
-For the two-prime mixed channel on known support `1,...,N`, AF-282--AF-285 give phase spacing `Theta(1/N)`, sharp mixed degree `Theta(N)`, and linear raw sample count. AF-287 strengthens the selected frame to an unweighted `O(N)` subframe with bounded condition number. Ambient full-coefficient recovery under arbitrary rowwise jitter remains on the inverse-log timing scale.
-
-AF-288 shows that this is not automatically a target-level timing cost: the common offset is exactly `F(s)->F(s+i tau)`, so it preserves horizontal zero geometry and the RH predicate. AF-289 sharpens the arbitrary-jitter geometry. If
+Nyman--Beurling now has a finite certificate for its global continuation bottleneck. NB-066 identifies a hypothetical stable tail as one fixed vector that is exactly natural on every finite window but whose exact global continuation cost diverges. NB-067 proves that this infinite cost is the monotone limit of finite source-only Schur complements: if `A_R` is the visible Gram and `S_(R,N)` the finite future Schur complement, then
 
 \[
-r(\tau)=\inf_\sigma\max_j|\tau_j-\sigma|
-=\frac{\operatorname{osc}(\tau)}2,
+\lambda_{\max}(A_R^{-1/2}S_{R,N}A_R^{-1/2})
+\downarrow1+\Lambda_R^2.
 \]
 
-then the frame factors into a common coefficient gauge plus residual jitter, and a condition-`K` nominal decoder obeys
+A uniform finite generalized-eigenvalue bound on any unbounded window sequence therefore kills the entire stable-tail space. The live theorem is a concrete finite block-Gram domination, not an abstract infinite-dimensional right-inverse estimate.
+
+Robin Extremal supplies the complementary readout obstruction. RE-068 says matched first-layer packets conserve every additive endpoint prime statistic. RE-069 shows that the residual prime/event displacement is genuinely macroscopic in raw transport—about half the packet logarithmic mass—yet the exact Robin kernel maps each delay to `1/p-log(1+1/p)=O(p^-2)`. The whole future first-layer timing tax is only `O(1/X)`. A successful statistic must therefore act before this linear compression, through selector geometry, nonlinear history, or higher layers.
+
+Visual Exploration sharpens the same warning for frequency crowding. VIS-182 kills every fixed finite bounded-gap band in the diffuse full-prime quadratic normalization; VIS-183 shows that even **some diverging bands**, below any prescribed diverging envelope, remain complete nulls by diagonal extraction. The unresolved `alpha<1/2` channel is a quantitative rate problem for a specified band or the full kernel-weighted gap sum, not the mere existence of close pairs or a growing cutoff.
+
+Across these lines, exact local richness is not the same as useful target sensitivity. Before treating a surviving coordinate as evidence, one must price the actual continuation norm, kernel, quotient, or discriminant seen by the destination.
+
+## Which observation family reaches the required source aperture at the right target-conditioned cost?
+
+[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now includes the first exact zero-sensitive target modulus. AF-282--AF-289 price the finite two-prime mixed acquisition channel and show that common timing origin is a vertical-translation gauge. Residual differential jitter controls coefficient-orbit error, not yet the final zero target.
+
+AF-290 identifies the missing target resource exactly for a finite Dirichlet zero count. If `Delta_Gamma` is the boundary-zero discriminant, then
 
 \[
-\inf_\sigma
-\frac{\|\widehat b-G_\sigma b\|_2}{\|b\|_2}
-\le K(e^{r(\tau)\log N}-1).
+\operatorname{dist}_2(b,\Delta_\Gamma)
+=
+\min_{z\in\Gamma}
+\frac{|P_b(z)|}{(\sum_{n\le N}n^{-2\operatorname{Re}z})^{1/2}}.
 \]
 
-An arbitrarily large common timing center is therefore free for a common-clock-invariant target; only differential jitter remains. Turning this into a target theorem still requires a stability modulus on the quotient. **Coefficient recovery, source anchoring, ambient calibration, quotient geometry, and target invariance are distinct information bills.**
+Coefficient-orbit recovery transfers to zero-count fidelity only while its error stays below this normalized margin. The margin is common-clock covariant, but it can collapse even at fixed breadth. The live arithmetic theorem is therefore a lower bound for a natural RH-relevant target discriminant margin—or a proof that no such bound survives increasing breadth—not another generic acquisition estimate.
 
-Analytic Frontier gives a different aperture law: endpoint memory can remain invisible to every physical twist window `o(X/a_X)` while a source-faithful curvature at separation `Theta(X/a_X)` would detect the dangerous packet. Xi Flow gives the converse local calibration: once a consecutive source window is known, `O(m)` holomorphic samples give a uniformly bi-Lipschitz nonlinear chart. In both cases the live problem has moved from local measurement conditioning to **source access/support discovery and transport to the final zero-sensitive target**.
+Analytic Frontier and Xi Flow retain the complementary aperture picture: endpoint memory can be invisible below a source-dependent physical scale, while a known consecutive source window can be encoded stably with linear sample complexity. Their bottleneck remains source access/support discovery and transport to the final zero-sensitive target.
 
 ## Which source cancellation theorem crosses the exact normalization, recurrence geometry, signed metric, and blind modes?
 
-[MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md) compares two Möbius-facing frontiers without identifying their operators.
+[MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md) compares the current Farey and Möbius frontiers without identifying their operators.
 
-Farey discrepancy now has both a pointwise source-coherence threshold and a recurrent dilation constraint. FD-064--FD-065 show that neither polynomial packet growth nor Schur-head motion changes the `Theta=2/3` crossover after horizon/leverage normalization. FD-066 explains why: if a zero-frontier spike of size `X^Theta` remains coherent over `X^ell`, the direct packet improves the deterministic terminal obstruction iff
+Farey discrepancy retains the exact pointwise source-coherence threshold `ell>2(1-Theta)` from FD-066. FD-068 now strengthens the independent recurrence side: for q-subcovariant polynomial heads, the nonsquarefree occupation has a positive global logarithmic geometric-mean lower bound over **all horizons**, not merely one q-adic ray. Thus cross-ray hopping cannot make low occupation typical. What still escapes is an adaptively selected logarithmically sparse spike sequence. The missing input must control that sparse exceptional set, couple spikes pointwise to occupation, supply the stronger source coherence, or change the normalization mechanism.
 
-\[
-\ell>2(1-\Theta).
-\]
+Möbius cancellation has also narrowed its blind sector. MC-238 shows that smooth-dilation averaging cannot cancel characters annihilating the small-prime-generated subgroup. MC-239 proves that, for the shell-square modulus, the entire square-lift kernel is already generated and every individual shell-prime factor is generated asymptotically. Any surviving blind character is therefore a **cross-prime common-quotient relation** with at least two nonprincipal local components; no odd character-order prime above `y/2` can survive. The algebraic frontier is simultaneous cross-prime compatibility, followed still by the quantitative fixed-power Fourier/signed-amplitude gate.
 
-FD-067 then shows that head growth does not create an all-scale escape on a fixed nonsquarefree dilation ray. The exact inequality `U_(H,D)>=w(q)E_(floor(H/q),floor(D/q))` telescopes along `q`-adic chains with subcovariant moving heads, forcing positive geometric-mean occupation and recurrent scalar loss of order at least `1/D`. This does not beat the pointwise FD-066 barrier because adaptive zero-frontier spikes may hop between rays. The missing input must therefore provide super-amplitude source coherence, couple adaptive spikes to recurrent multiplicative rays, produce a cross-ray recurrence, or bypass the reciprocal-floor/horizon ledger.
-
-Möbius cancellation has closed both componentwise subpower repairs and the naive residue-spreading version of aggregate recombination. MC-235 shows both signs already have essentially full occupancy exponent; MC-236 shows the audited nonnegative Linnik pipeline preserves principal bias and has only subpower separate-sign transference resolution. MC-237 adds that the exact deep CRT modulus already satisfies a strong individual smooth-modulus variance theorem, yet its signed residual RMS is still only a subpower relative improvement and reaches the `X^{1/2}` target only where support already does.
-
-MC-238 gives the aggregate route an exact character gate. Every smooth-dilation residue lies in one coset of the subgroup generated by primes `p<=y` modulo `Q_S`. Characters in the subgroup annihilator see **no Fourier cancellation at all** from the dilation average; the quadratic blind sector is the kernel of an explicit lower-prime/shell-prime Legendre matrix. The special shell-square family is not proved to have a nontrivial annihilator, but any residue-only recombination argument must now prove enough small-prime generation/Fourier decay or separately control the blind modes.
-
-The reusable rule is that local abundance, longer coherence, smoothness, recurrence, or a stronger average counts only after it survives the exact downstream normalization and the support/character geometry of the family. A favorable intermediate theorem can be quantitatively irrelevant if its gain is subpower where the final deficit is fixed-power, or structurally invisible on a blind mode.
+The common lesson is that a favorable theorem counts only after its quantifiers and gain survive the exact family geometry. Pointwise, logarithmic-density, subpower, fixed-power, local-generation, and global-product-generation statements are different currencies.
 
 ## Which source-specific inequality prevents the first completed-Weil crossing?
 
-Prime Lattice and Weil Inertia offer complementary aperture-localized views. PL-280--PL-282 show monotone support-localized negative index, exact exhaustion of compact-support negativity, and finite certification of strict positivity at every fixed aperture. PL-283 advances the externally certified finite boundary: a non-peer-reviewed computer-assisted source reports `Q_W(f)>=8.9e-18||f||^2` for all complex `f` supported in `[-0.8,0.8]`, and the audited common-form bridge transfers this exactly to
+Prime Lattice continues to provide certified finite-aperture positivity, while Weil Inertia studies how a first crossing would have to look once it occurs. The odd route remains a signed radial von-Mangoldt problem with no generic ground-state positivity.
+
+On the unrestricted route, WI-253 produces a continuum of positive sliding-aperture averages. WI-254 proves that the **exact aperture profile** is information-complete for the real autocorrelation: prime-power shifts are exact slope jumps and the continuous archimedean piece is recoverable by second differentiation. But firstness provides only a pointwise lower envelope, which cannot be differentiated, and the small-radius inequality is saturated at leading order:
 
 \[
-A_{0.8}\ge8.9\times10^{-18}I.
+\mathcal F_v(r)\sim r\log(1/r)
+\sim r\lambda_r.
 \]
 
-Conditional on that certificate, every `0<a<=0.8` is strictly positive. The next prime-power event is only at `log(5)/2\approx0.804719`, so the certificate reaches almost to that threshold while the active source set remains `2,3,4`. This remains finite-window evidence, not an aperture-uniform mechanism; the missing Prime-Lattice theorem is source control preventing the first crossing as infinitely many prime-power atoms enter.
+The next theorem must control subleading or medium-radius profile information through the source or zero-mode equation; merely adding more radii or demanding a fixed small-radius reserve is closed.
 
-Weil Inertia has two first-crossing representations. The odd route WI-250--WI-252 reduces localization to a signed radial von-Mangoldt flux but cannot use generic positive-ground-state theory because prime reflection breaks the Beurling--Deny criterion. WI-253 opens a parallel **unrestricted global-crossing** route: averaging translated windows produces, for every `r<a_*`, an explicit source symbol `Sigma_r` satisfying
-
-\[
-\frac1{2\pi}\int\Sigma_r(z)|\widehat v(z)|^2dz\ge r\lambda_r>0
-\]
-
-against one nonnegative spectral density. The proposed local clue asks whether the simultaneous family across prime-power threshold radii is incompatible with compact support plus the zero-mode equation. No such incompatibility is yet established.
-
-Weil Positivity contributes a category warning to the same global goal: a finite/source-canonical sign structure can be perfectly sharp while the critical global completion is analytically invalid or singularizes away its arithmetic coupling. A completed-Weil proof must therefore get coercivity from the actual source **in a category that survives the critical limit**.
+Weil Positivity adds the global analytic-category gate: even a perfectly source-selected singular row is insufficient unless the same construction forces the completed Weil coupling. A successful completed-Weil proof must obtain coercivity from the actual source in a category that both retains critical coherence and supplies the missing boundary law.
 
 ## Does the complete flute response preserve enough source mass after scalar round trips die?
 
-[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now incorporates PF-303--PF-304 as well as the extinction result PF-302. PF-297--PF-302 show that complete Robin factors preserve positive `q`-mass locally while accumulated scalar killing forces the combined round-trip product to vanish.
+Prime Flute remains at the map-level return/reassembly frontier. PF-303 identifies the scalar killing vector as the exact finite Green currency, and PF-304 makes `G_ND_N` a reversible Markov kernel, so the scalar Green response is nonamplifying in the matching killing-weighted norms even while scalar round trips die.
 
-PF-303 identifies the scalar killing vector `d` as the exact finite-chain Green currency: `H_N 1=d` and `G_Nd=1`. PF-304 strengthens this by showing that `P_N=G_ND_N` is a reversible Markov kernel. Consequently
-
-\[
-\|G_Nf\|_{\ell^p(d)}
-\le
-\|D_N^{-1}f\|_{\ell^p(d)},
-\qquad1\le p\le\infty.
-\]
-
-Thus the absence of a depth-uniform scalar spectral gap is no longer the scalar forced-response bottleneck. Pointwise domination by the deficit is only one endpoint; integrated source mass or energy can also be stable in the matching killing-weighted norm. The live theorem is now the complete **map-level `P/H` return/reassembly problem**: prove that the actual prime-dependent forcing is controlled in one of these source-adapted currencies and that the nonconstant-mode synthesis carries the resulting response into the PF-292/PF-290 physical norm. If that map fails, the failure must identify what escapes the scalar killing geometry rather than merely cite near-conservative local returns.
+The unresolved theorem is the complete `P/H` map: show that the true prime-dependent forcing is controlled in a source-adapted currency and that nonconstant-mode reassembly carries it into the physical norm. Failure must identify what escapes the scalar killing geometry rather than merely invoke a vanishing scalar spectral gap.

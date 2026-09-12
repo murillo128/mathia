@@ -1,39 +1,29 @@
-# MI-010 — Source cancellation must be priced after the exact family, cross-scale geometry, normalization, and blind modes are fixed
+# MI-010 — Source cancellation must be priced after the exact family, quantifier geometry, normalization, and blind modes are fixed
 
-**Evidence level:** supported by the proved Farey transfer/normalization/dilation geometry through FD-067 and the exact first-shell representation/transference/variance/subgroup reductions through MC-238; no cancellation theorem or operator is transferred between the two families.
+**Evidence level:** supported by the Farey transfer/normalization/dilation results through FD-068 and the exact Möbius first-shell representation/subgroup results through MC-239; no cancellation theorem or operator is transferred between the two families.
 
-Two Möbius-facing lines expose complementary versions of the same quantitative lesson.
-
-In Farey discrepancy, FD-062--FD-065 show that genuine short-interval cancellation can buy a host corridor and polynomial packet multiplicity, yet horizon normalization preserves the `Theta=2/3` crossover and Schur-head motion cannot repair the pointwise exponent ledger. FD-066 identifies the invariant source-side threshold. If a zero-frontier spike of size `X^{Theta+o(1)}` stays coherent on a window `X^{ell+o(1)}`, the direct packet improves the deterministic terminal obstruction exactly when
+Farey discrepancy has two independent quantitative gates. FD-066 gives the direct pointwise source-coherence threshold: a zero-frontier spike `X^{Theta+o(1)}` coherent on a window `X^{ell+o(1)}` improves the terminal scalar obstruction exactly when
 
 \[
 \ell>2(1-\Theta).
 \]
 
-Host and head exponents cannot change that sign. The current all-short-interval input supplies only `ell<Theta`, so below two thirds the missing theorem is not merely a shorter-interval theorem: it needs source-relative variation `o(A_X)` on super-amplitude windows or a mechanism that avoids the direct horizon ledger.
+Host position and Schur-head exponent cannot change that sign after the horizon and leverage bills are paid.
 
-FD-067 adds a separate recurrence law that prevents overinterpreting the pointwise head penalty. For every nonsquarefree `q`,
-
-\[
-U_{H,D}\ge w(q)E_{\lfloor H/q\rfloor,\lfloor D/q\rfloor}.
-\]
-
-Along a `q`-adic horizon chain with a subcovariant moving head, this telescopes into a positive geometric-mean occupation bound. Polynomial head growth therefore cannot make the defect disappear on essentially every member of one fixed multiplicative ray; on a positive lower proportion of the chain the scalar loss remains `\gg1/D`. The result does not cross FD-066 because adaptive zero-frontier spikes may hop between rays. **Pointwise normalization and recurrent cross-scale escape are different gates.**
-
-In Möbius cancellation, MC-232--MC-236 reduce the hard first-shell coordinates to source-selected progression sums, show that both signs already occupy essentially the full progression exponent, and identify why the audited Linnik pipeline still misses the target: principal bias is preserved, the later argument is one-sided, and the published separate-sign transference error is only subpower where a fixed interior point needs fixed-power relative balance.
-
-MC-237 shows that replacing one-sided transference by a strong signed variance theorem on the exact smooth CRT modulus still does not cross that scale. The individual smooth-modulus theorem applies directly, but its residual RMS is only `X^{-o(1)}` relative to trivial progression occupancy. It reaches the `X^{1/2}` target only where support already does.
-
-MC-238 then constrains the remaining aggregate escape. The smooth-dilation residues all lie in one coset of the small-prime-generated subgroup
+FD-067--FD-068 expose a different multiplicative recurrence. For a nonsquarefree `q` and q-subcovariant head schedule,
 
 \[
-H_y(Q_S)=\langle p\bmod Q_S:p\le y\rangle.
+\nu_H\ge w(q)\frac{E_{\lfloor H/q\rfloor}}{E_H}.
 \]
 
-Every character in `H_y(Q_S)^\perp` sees the weighted dilation measure with full, not decaying, Fourier coefficient. Thus recombining many smooth dilations cannot create cancellation on a blind character merely through residue motion. The quadratic blind sector is exactly the kernel of the lower-prime/shell-prime Legendre matrix; higher-order blind characters remain a separate issue. No theorem currently says that the special shell-square moduli have a nontrivial annihilator, but **subgroup generation is now an explicit prerequisite for the naive residue-spreading argument**.
+The schedule closes to one multiplicative cocycle, so logarithmic integration telescopes across **all horizons**. Polynomial heads therefore have a positive global logarithmic geometric-mean occupation bound; low occupation cannot be typical even through cross-ray hopping. This still does not cross the pointwise FD-066 gate because an adaptive zero-frontier spike sequence may live in a logarithmically negligible exceptional set. Pointwise control, fixed-ray recurrence, and global logarithmic density are different quantifiers.
 
-The cross-line lesson is stronger than “abundance is not cancellation.” A favorable local theorem must survive both the **downstream normalization** and the **cross-scale/support geometry of the family**. Farey packet multiplicity can be erased by horizon/leverage normalization even though fixed dilation rays still force recurrent occupation. Möbius smooth-dilation multiplicity can be erased spectrally on annihilator modes even before the signed progression amplitudes are estimated.
+Möbius cancellation has a different family geometry. MC-232--MC-237 show that both signs are abundant and the exact smooth CRT modulus lies inside a strong signed variance theorem, yet the available relative gain remains subpower where the first-shell target needs a fixed negative power.
 
-Therefore coherence length, packet width, horizon cost, scalar leverage, dilation-ray recurrence, sign abundance, smoothness, variance resolution, transference resolution, subgroup generation, Fourier blind modes, and signed amplitude are distinct currencies. The Farey escape requires source coherence beyond `2(1-Theta)`, a way to couple adaptive spikes to recurrent rays, source-coupled normalization, or another interaction. The Möbius escape requires fixed-power signed accuracy tied to `delta=1/2-2alpha-beta`, proof that the relevant blind sector is absent/controlled, or arithmetic coupling beyond the residue orbit.
+MC-238 identifies the aggregate residue-spreading blind sector as the annihilator of the small-prime-generated subgroup. MC-239 then removes two apparent algebraic difficulties for the shell-square family: the entire prime-square congruence kernel is generated, and every individual shell-prime factor is generated asymptotically. Any remaining blind character is therefore a **cross-prime common-quotient relation**, with nonprincipal components at at least two shell primes. Character-order primes must divide at least two values `r-1`; no odd order prime above `y/2` can survive. The quadratic Legendre sector is the first ubiquitous shared quotient.
 
-**Boundary.** FD-066 remains a conditional classification inside the direct reciprocal-floor/zero-frontier/Schur framework; FD-067 is recurrent on fixed multiplicative rays, not pointwise. MC-236--MC-238 audit exact representation/theorem surfaces but do not prove stronger signed, generator, or source-coupled theorems impossible. The two source families are not identified and no estimate transfers from one to the other.
+The cross-line lesson is stronger than “abundance is not cancellation.” A favorable theorem must survive the **exact downstream normalization, its quantifiers, and the family support/character geometry**. Farey multiplicity can be irrelevant pointwise even when global recurrence is strong; Möbius local generation can be complete while global product generation still fails through common quotients.
+
+Therefore source coherence length, exceptional-set size, horizon cost, leverage, logarithmic recurrence, signed amplitude, variance/transference resolution, local generation, global common-quotient compatibility, and Fourier decay are distinct currencies.
+
+**Boundary.** FD-068 is an all-horizon logarithmic statement for q-subcovariant schedules, not a pointwise zero-free theorem. MC-239 is an algebraic classification of the blind sector, not a signed progression estimate or a Fourier-decay theorem. The two source families remain mathematically distinct.

@@ -1,42 +1,33 @@
-# MI-011 — Exact finite-window source consistency can coexist with divergent or invisible global continuation
+# MI-011 — Exact local source consistency can hide a globally expensive or target-invisible continuation
 
-**Evidence level:** supported by the exact stable-tail/extension theorem NB-066 and exact first-layer prime-set conservation RE-068 on their stated models; no operator, source, or contradiction is transferred between the two lines.
+**Evidence level:** supported by the stable-tail/finite-Schur theorems NB-066--NB-067 and the first-layer conservation/timing theorems RE-068--RE-069; no operator or contradiction is transferred between the lines.
 
-Nyman--Beurling and Robin Extremal now give two mathematically different examples of the same information boundary: **perfect local source consistency does not imply that the missing global object is controlled or even visible in the same coordinates**.
+Nyman--Beurling and Robin Extremal give two different examples of the same information boundary: **perfect local source consistency does not imply that the residual global variable is controlled or visible in the destination coordinates**.
 
-In Nyman--Beurling, NB-066 characterizes the stable-tail space by
-
-\[
-\mathcal T_\infty
-=\{t\in\mathcal D:J_Rt\in\mathcal G_R\text{ for every }R\}.
-\]
-
-A nonzero stable-tail vector is globally orthogonal to the natural space while every finite Paley--Wiener truncation is exactly a natural trace. This finite compatibility is not approximate: the local synthesis problem is solved at every scale. Yet if `E_R(t)` is the least unseen-future norm of a genuine natural extension with the same finite trace, then
+In Nyman--Beurling, NB-066 characterizes a hypothetical stable-tail vector as globally orthogonal to the natural space while its trace is exactly natural on every finite Paley--Wiener window. The least compatible future norm nevertheless diverges. NB-067 adds that this infinite continuation cost is not inaccessible: if `A_R` is the visible prefix Gram and `S_(R,N)` the finite future Schur complement, then
 
 \[
-\mathfrak E_R(t)\,\|(I-J_R)t\|
-\ge\|J_Rt\|^2,
+\lambda_{\max}(A_R^{-1/2}S_{R,N}A_R^{-1/2})
+\downarrow1+\Lambda_R^2.
 \]
 
-so `E_R(t)->infinity`. The obstruction is therefore **global continuation cost**, not failure of local representability. The canonical persistent branch, if it exists, converges to one such fixed locally natural mode.
+So a bounded finite generalized-eigenvalue subsequence already excludes every stable tail. Exact local representability can coexist with catastrophic global continuation, but the relevant continuation norm has rigorous finite source-only upper certificates.
 
-In Robin Extremal, RE-068 gives an exact endpoint consistency law of a different kind. For every complete first-layer-only fan packet, the ordinary primes crossed by the adaptive selector interval and the physical event primes satisfy
+In Robin Extremal, RE-068 gives exact prime-multiset consistency for matched first-layer packets: every additive endpoint prime statistic agrees. RE-069 then follows the residual positional variable. The delayed event coordinates carry macroscopic raw transport, yet the exact Robin kernel converts each prime delay into
 
 \[
-\mathcal S\uplus\chi_-\{r_-\}
-=\mathcal E\uplus\chi_+\{r_+\}.
+\frac1p-\log(1+1/p)=O(p^{-2}),
 \]
 
-In the matched fringe-free branch, `S=E` exactly. Hence every additive endpoint prime statistic agrees automatically, for **any** prime weight `w`. A packet may therefore be physically nontrivial while the entire additive endpoint source algebra is blind to it. Increasing packet cardinality does not change that conclusion for a pure first-layer packet.
+so all future first-layer timing contributes only `O(1/X)` after scale `X`. Here the residual variable exists and can be large, but the requested linear readout is asymptotically blind to it.
 
-The cross-line relation is not that these mechanisms are the same. NB-066 is an inverse-limit/extension-norm obstruction in a Hilbert space; RE-068 is unique-factorization rigidity of a finite prime multiset. The reusable distinction is between three levels that must not be conflated:
+The cross-line relation is not that these mechanisms are the same. NB is a Hilbert-space extension-cost problem; RE is a source-set identity followed by kernel compression. The reusable separation has four stages:
 
-1. exact agreement on every finite/local source interface;
-2. bounded or stable global continuation of that compatible data;
-3. existence of a readout that sees information not already fixed by the local interface.
+1. exact local/source consistency;
+2. identification of what remains undetermined by that consistency;
+3. global cost or stability of the residual variable;
+4. sensitivity of the final target/readout to that variable.
 
-NB-066 shows that level 1 can hold while level 2 fails catastrophically. RE-068 shows that level 1 can make a whole class of level-3 additive readouts identically uninformative. In both cases, asking for a more accurate version of the same local statistic attacks the wrong resource.
+NB-067 attacks stage 3 with finite certificates. RE-069 shows stage 4 can fail even when stage 2 carries macroscopic information. Improving the already-matched local statistic attacks the wrong resource in both cases.
 
-This gives a concrete diagnostic for new constructions. When finite/local source matching is exact, first identify what information is **not determined** by that match. In NB the surviving variable is the norm cost of the unseen global continuation. In RE it is delayed event geometry, packet ordering, higher-layer history, or a non-additive relation. A useful theorem must control one of those residual variables rather than remeasure the already-matched local data.
-
-**Boundary.** No Nyman extension estimate transfers to Robin packets, and no prime-set conservation law transfers to Nyman traces. The common statement is only the information-theoretic separation above, grounded in the two exact project-specific theorems. Neither result by itself proves or disproves RH.
+**Boundary.** No Nyman extension estimate transfers to Robin packets, and no Robin timing kernel transfers to Nyman traces. The common statement is only the staged information separation above. Neither line by itself proves or disproves RH.

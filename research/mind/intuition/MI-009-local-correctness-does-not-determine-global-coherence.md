@@ -1,17 +1,19 @@
-# MI-009 — Source-native centering can fix regulator coherence while critical transport still fails analytically
+# MI-009 — Source-native hostability does not determine critical global coherence or Weil orientation
 
-**Evidence level:** supported by explicit collision constructions and the Fock complete-incidence/renormalization/category boundaries through WP-267; this is not a statement about every arithmetic completion.
+**Evidence level:** supported by the Fock complete-incidence, regulator-centering, relation-closure, and Hamiltonian-scale results through WP-268; this is not a statement about every arithmetic completion.
 
-Proper marginals do not identify a positive joint law: centered higher-order perturbations can preserve every retained lower-order marginal. The same issue appears in the prime-Cauchy/Fock setting, where exact diagonal coefficients and positivity do not uniquely determine mixed-prime interaction.
+Exact diagonal coefficients, positivity, and proper marginals do not determine a useful mixed-prime coupling. WP-262--WP-266 make this concrete in the Fock route: locally finite incidence is programmable, normalized complete incidence can scalarize, while source-Hamiltonian diagonal centering nevertheless fixes the tested sharp/Gibbs finite-part ambiguity and yields one regulator-independent trace-class index-one operator below critical scale.
 
-WP-262--WP-265 successively show programmability of locally finite incidence, collapse of normalized complete incidence, a nontrivial finite part, and genuine regulator dependence. WP-266 then demonstrates that the tested regulator mismatch is repairable intrinsically: the spectral-diagonal conditional expectation of the simple prime Hamiltonian selects the connected part before the limit, and both sharp and Gibbs families converge to the same trace-class index-one operator `K=aa^*-D`.
+Transporting that geometry to the critical Weil half-density produces a non-square-summable common-vacuum row. WP-267 shows that standard linear-relation closure repairs existence by forgetting the relation: the critical row closes to the whole product `ell^2(P) x C`, its regular part is zero, and the full Fock regular part retains only prime-separable higher layers.
 
-The next gate is analytic category at the **same critical scale**. The canonical Hamiltonian transport restoring the Weil prime amplitudes on finite compressions produces a non-square-summable coherent vector and hence a nonclosable global rank-one form.
+WP-268 proves that this failure is not the same as saying the row has no canonical analytic home. It lies outside every finite polynomial Hilbert scale of the source Hamiltonian and outside the ordinary smooth-vector Fréchet space, but it is continuous on the source-generated nuclear rapid-energy rigging
 
-WP-267 shows that standard linear-relation closure does not preserve a hidden arithmetic remnant of this coherence. For the critical first-layer scalar row, the graph closure is the whole product `ell^2(P) x C`; the regular part is zero. In the full Fock map the regular part keeps only the bounded prime-separable higher layers and deletes exactly the common-vacuum component responsible for all mixed-prime Gram entries and the critical first-prime amplitudes.
+\[
+\Phi_{\exp}=\bigcap_{a>0}\operatorname{Dom}e^{aH}.
+\]
 
-Thus **changing category is not enough if the canonical closure forgets the source relation one needs**. A multivalued boundary coordinate that is independent of the bulk after closure is not an automatically generated archimedean variable. Any useful boundary/cohomological completion must include a source-derived law coupling bulk and boundary before or as part of closure.
+Thus **changing category can preserve the singular coherence without producing the missing arithmetic boundary law**. The rigging hosts the exact algebraic critical row, but the resulting rank-one functional still lacks the Weil translation/autocorrelation structure, the Gamma/polar sector, and a source-forced embedding of the complete test class.
 
-This refines the global selection problem. It is not enough to choose the right coupling, finite part, sign class, or permissive operator category. A successful source identity must keep the construction globally admissible at critical scale, retain the mixed-prime coherence rather than singularize it away, and supply the missing archimedean/polar completion.
+This sharpens the global selection problem into two independent gates. First, the source must select an analytic category in which the critical coupling remains meaningful rather than being regularized away. Second, within that category the source must force the correct finite--archimedean/global interaction and orientation. Satisfying the first gate is not evidence for the second.
 
-**Boundary.** WP-267 classifies the standard linear-relation closure of the tested Fock boundary map. It does not rule out larger source-coupled boundary spaces, nonlinear quotients, cohomological completions, or other global mechanisms that add genuine arithmetic structure before closure.
+**Boundary.** WP-268 gives one canonical distributional host for the tested row; it does not construct a completed Weil-positive operator or rule out other source-derived categories. Arbitrarily strengthening a topology so that a desired functional becomes continuous remains programmable unless the same source also determines the global boundary correspondence.

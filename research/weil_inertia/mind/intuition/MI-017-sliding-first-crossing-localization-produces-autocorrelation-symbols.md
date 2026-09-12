@@ -1,38 +1,37 @@
-# MI-017 — Sliding first-crossing localization produces autocorrelation symbols
+# MI-017 — Sliding first-crossing localization is information-complete only at the exact-profile level
 
-**Evidence level:** supported by the exact unrestricted first-crossing sliding-window identity WI-253; the proposed incompatibility across radii remains unproved.
+**Evidence level:** supported by the exact sliding-window identity WI-253 and the profile inversion/small-radius saturation theorem WI-254; no incompatibility with a compactly supported global first zero mode is proved.
 
-At the first unrestricted localized Weil crossing `a_*`, translation freedom changes the localization geometry. For a normalized zero mode `v`, averaging all translated interval cutoffs of half-width `r<a_*` removes the window center and depends only on the ordinary real autocorrelation
-
-\[
-C_v(h)=\operatorname{Re}\int v(x+h)\overline{v(x)}\,dx.
-\]
-
-WI-253 proves the exact necessary family
+At the first unrestricted localized Weil crossing `a_*`, translation freedom produces for a normalized zero mode `v` an aperture profile
 
 \[
 \mathcal F_v(r)
-=\int_0^{2a_*}\min(h,2r)C_v(h)\,d\nu_{a_*}(h)
-+\int_0^{2a_*}\min(h,2r)\kappa(h)C_v(h)\,dh
-\ge r\lambda_r>0
+=
+\frac1{2\pi}\int\Sigma_r(z)|\widehat v(z)|^2\,dz
+\ge r\lambda_r>0,
+\qquad 0<r<a_*.
 \]
 
-for every `0<r<a_*`. Since
+WI-253 derives this as a continuum of source-dependent spectral averages against one nonnegative density. The parameter `r` is not merely redundant repetition: the kernel changes at every prime-power threshold.
+
+WI-254 identifies the exact information carried by that parameter. After writing the profile as a `min`-transform of the source-weighted real autocorrelation, distributional second differentiation recovers the source measure. The one-sided slope jump at `r=(log n)/2` is
 
 \[
-C_v(h)=\frac1{2\pi}\int\cos(zh)|\widehat v(z)|^2\,dz,
+-2\frac{\Lambda(n)}{\sqrt n}C(\log n),
 \]
 
-this is equivalently
+and between thresholds the second derivative recovers the continuous archimedean-weighted autocorrelation. Apart from one removable zero of the continuous weight, the exact profile determines the whole real autocorrelation.
+
+The obstruction is therefore **not aperture information loss**. It is the replacement of the exact profile by the pointwise firstness inequality. A lower envelope cannot be differentiated into jump signs. Moreover the universal small-radius singularity already saturates firstness at leading order:
 
 \[
-\frac1{2\pi}\int\Sigma_r(z)|\widehat v(z)|^2\,dz\ge r\lambda_r,
+\mathcal F_v(r)\sim r\log(1/r),
+\qquad
+r\lambda_r\sim r\log(1/r).
 \]
 
-where `Sigma_r` is an explicit prime-plus-archimedean cosine symbol. The spectral weight is nonnegative, so the first-crossing constraint has been converted from an odd reflected-Hankel problem into a continuum of ordinary spectral averages.
+There is no fixed multiplicative coercivity reserve to harvest as `r->0`.
 
-The important structural gain is **simultaneity in the aperture parameter**. The kernel `min(h,2r)` changes slope at the prime-power thresholds `r=(log n)/2`, so the family `{Sigma_r}` carries more information than any one localized inequality. A useful continuation should exploit relations between radii—one-sided derivatives, convexity/monotonicity failures, or incompatible moment demands—rather than bound one symbol uniformly.
+The live route must supply additional control on the exact profile: a source-sensitive subleading asymptotic, a medium-radius relation among curvature and prime jumps, or an identity from the zero-mode equation that couples several radii. More apertures without stronger profile control do not add a new inequality.
 
-This does not make the route automatically positive. A nonnegative spectral density can average a sign-changing symbol positively, and WI-253 does not prove that the family is inconsistent with compact support or with the zero-mode equation. The exact next question is whether the **same** compactly supported spectral density can satisfy every source-dependent inequality and `Q_W(v)=0` simultaneously.
-
-**Boundary.** This intuition concerns the unrestricted first crossing, not the odd first crossing. It proves no pointwise positivity of `Sigma_r`, no phase/nodal theorem, and no RH consequence. The proposed clue `CLUE-first-global-crossing-sliding-autocorrelation-symbol` remains a research question until an incompatibility or a matched countermodel is derived.
+**Boundary.** Exact-profile invertibility does not mean firstness determines the profile. Positivity cannot be differentiated, and small-radius saturation is driven by the universal logarithmic core. No pointwise symbol sign, autocorrelation sign, global first-mode exclusion, or RH consequence follows.

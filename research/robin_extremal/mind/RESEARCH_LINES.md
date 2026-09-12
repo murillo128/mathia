@@ -2,46 +2,29 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control source-invisible first-layer takeover, negative higher-layer charge, or packet complexity on polynomial fan spans
+## Control source-invisible matched packets through genuinely pre-compression geometry
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`.
 
-RE-049--RE-064 separate metric capacity from source fidelity and reduce extended bounded near-zero behavior to highly constrained packet geometries, with unbounded packet cardinality as a separate escape. RE-065 then shows that the quiet bounded higher-layer architecture has only subpolynomial capacity on polynomial physical windows, forcing polynomially many interruptions under strong off-critical growth.
+RE-049--RE-067 reduce bounded near-zero behavior to a small set of packet geometries and show that nonzero bounded first-layer charge is essentially a logarithmic fringe phenomenon. Almost every bounded first-layer-only interruption is therefore forced into the charge-silent matched `0 -> 0` branch.
 
-RE-066 makes the source-bearing nonvanishing-charge branch sharply one-sided. A bounded source-bearing packet with positive charge must be the unique fringe transition `0 -> 1`; such upper states lie in a lacunary base-two fringe-host family and contribute only `O(log T)` events up to scale `T`. If bounded source-bearing continuation persists, the successor is `1 -> 0` with charge at most `-1+o(1)`.
+RE-068 makes that branch source-blind for every additive endpoint prime statistic. The ordinary primes crossed by the two selectors and the physical first-layer event labels are exactly the same multiset, so prime count, Chebyshev mass, logarithmic Mertens weights, residue indicators, and any other additive decoration agree identically, without a packet-cardinality hypothesis.
 
-RE-067 resolves the previously coarse `no higher-layer source event` branch. For every bounded first-layer-only packet,
-
-\[
-Q=\chi_+-\chi_-+o(1).
-\]
-
-The double-fringe case `1 -> 1` is excluded, so the only asymptotic classes are `0 -> 0` with `Q=o(1)`, `0 -> 1` with `Q=1+o(1)`, and `1 -> 0` with `Q=-1+o(1)`. The two nonzero classes are fringe-host phenomena and only logarithmically many. Thus almost every bounded first-layer-only interruption is forced into a charge-silent matched `0 -> 0` takeover.
-
-RE-068 shows that the matched branch is more rigid than charge cancellation suggests. For any complete first-layer-only packet, let `E` be its physical prime labels and `S={q prime:Z_-<q<=Z_+}` the ordinary primes crossed by the two adaptive selectors. Then the exact endpoint fringe correction gives the prime-multiset identity
+RE-069 tests the strongest obvious residual datum: the physical event attached to `p` occurs at the delayed coordinate `eta_p>p`. The timing staircase difference is a sum of positive pulses and carries asymptotically half of a complete matched packet's raw logarithmic transport. But the exact Robin derivative kernel collapses each pulse to
 
 \[
-\boxed{
-\mathcal S\uplus\chi_-\{r_-\}
-=\mathcal E\uplus\chi_+\{r_+\}.
-}
+\kappa_p
+=
+\frac1p-\log(1+1/p)
+<\frac1{2p^2}.
 \]
 
-In the matched `0 -> 0` branch this reduces to `S=E` exactly. Therefore **every additive endpoint prime statistic is conserved** across such a packet: for any prime weight `w`,
+Consequently the entire future first-layer timing contribution beyond scale `X` is `O(1/X)`, even if arbitrarily many first-layer events are present. Large raw transport therefore does not survive the exact destination readout.
 
-\[
-\sum_{Z_-<q\le Z_+}w(q)
-=\sum_{p\in\mathcal E}w(p).
-\]
+The matched pure first-layer branch has now exhausted two natural source-local channels: endpoint additive prime data are exactly conserved, and direct linear prime/event timing transport is absolutely summable in the Robin workload. A successful continuation must use information **before** those compressions: selector placement relative to gaps, nonlinear relations among event delays, ordering/history across packets, higher-layer interaction, or another statistic whose kernel does not reduce the delay to a quadratic reciprocal remainder.
 
-This includes Chebyshev mass, logarithmic Mertens source, prime count, residue-class indicators, and any other additive decoration of the crossed prime set. The conclusion has no bounded-cardinality hypothesis. A large pure first-layer packet does not become source-visible merely because it contains many events.
+## Treat local fidelity, destination sensitivity, deep-layer capacity, and packet history as separate currencies
 
-On polynomial-span strong-off-critical blocks, the surviving burden therefore cannot be closed by changing the additive endpoint prime weight. A successful statistic must spend information outside the conserved prime multiset: delayed event locations `eta_(p,1)`, selector positions inside prime gaps, order/spacing of successive packets, higher-layer history, a non-additive functional of the packet, or another genuinely global feature. Mixed/unbounded packets with higher-layer events remain a separate escape because the conservation law is first-layer-only.
+Prime-source fidelity does not control an adaptive fan by itself. RE-069 is a particularly sharp warning: a variable may be macroscopically large in a natural raw metric and still be asymptotically invisible after the exact target kernel is applied.
 
-## Treat local fidelity, prime-set conservation, event timing, deep-layer capacity, fringe sign, interruption type, and physical span as separate currencies
-
-Prime-source fidelity does not by itself control an adaptive fan. Bounded-packet charge classification does not imply global persistence. Deep prime-power events become subpolynomially scarce once quiet cancellation forces their depths to diverge; positive bounded source-bearing charges are logarithmically sparse; and nonzero bounded first-layer-only charges are logarithmically sparse as well.
-
-RE-068 removes a broad family of proposed repairs for the matched branch. The `0 -> 0` packet is not merely small in one normalized scalar charge: its endpoint selector interval and physical first-layer packet contain the **same prime set**. Any additive source statistic built only from that set is therefore identically matched. The missing information must be relational, positional, historical, higher-layer, or otherwise non-additive.
-
-This is still not a contradiction. Consecutive prime blocks can satisfy the exact set identity, delayed coordinates can carry additional geometry, negative higher-layer charges are evaluated at moving thresholds and normalizations, and mixed large packets remain outside the pure first-layer conservation law. Future progress must control one of those surviving currencies explicitly.
+This is still not a contradiction. Higher layers remain outside the first-layer timing bound, and event locations can influence support chambers and selector geometry before the final linear workload integration. Future progress must therefore state where in the pipeline a proposed statistic is evaluated and show that it survives the actual Robin readout rather than only a pre-readout transport norm.

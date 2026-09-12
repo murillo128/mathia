@@ -1,30 +1,23 @@
-# MI-013 — Source-Hamiltonian centering fixes regulator covariance below critical scale; standard singular closure deletes critical coherence
+# MI-013 — Critical coherence needs a source-native rigging and a source-native boundary law
 
-**Evidence level:** supported by the exact Fock coefficient carrier and complete-incidence/renormalization/category boundaries through WP-267; a closable regulator-independent completed Weil orientation remains open.
+**Evidence level:** supported by the exact Fock carrier, regulator-centering, relation-closure, and Hamiltonian-scale classification through WP-268; a completed Weil-positive correspondence remains open.
 
-WP-256--WP-260 produce the exact positive Mangoldt half-density in symmetric Fock space but show that the most obvious canonical convex/Gibbs pairing has the wrong occupation factor. WP-261--WP-263 then test coherent and incidence-based cross-prime carriers: finite coherent collapse is nonclosable at the critical scale, locally finite incidence is programmable, and normalized complete-Gibbs incidence collapses fixed correlations.
+WP-256--WP-266 produce the exact Mangoldt half-density in symmetric Fock space and isolate a source-native regulator repair below critical scale. Hamiltonian diagonal centering makes sharp and Gibbs connected families converge to the same trace-class index-one operator. Transporting that geometry to the critical Weil half-density, however, produces a non-square-summable common-vacuum row.
 
-WP-264--WP-266 isolate and remove the tested finite-part ambiguity below critical scale. The simple prime Hamiltonian canonically determines its spectral-diagonal expectation `E_H`; applying `I-E_H` before taking the sharp or Gibbs limit yields the same trace-class connected operator
+WP-267 shows that standard linear-relation closure does not preserve this coherence. The critical scalar row closes to the whole product `ell^2(P) x C`; its regular operator part is zero. The full Fock relation keeps only the bounded prime-separable higher-layer shift. Allowing multivaluedness therefore solves existence by **forgetting** the bulk-to-boundary relation one needed.
 
-\[
-K=aa^*-D,
-\qquad d_p=\frac{\log p}{p^{3/2}},
-\]
-
-whose finite compressions have one positive direction and strict negativity on `ker a^*`. Thus source-native regulator covariance and a sharp primitive sign theorem can coexist.
-
-The obstruction appears when transporting that geometry to the Weil critical half-density. The source-Hamiltonian congruence `e^{H/2}` restores the critical finite-compression amplitudes but produces a non-square-summable coherent vector, so the rank-one quadratic form is globally nonclosable.
-
-WP-267 asks whether this can be repaired by changing category from operators to closed linear relations. For the first prime layer the answer is exact and negative. For every `0<sigma<=1`, the nonclosable scalar row has graph closure
+WP-268 sharpens the category boundary. Relative to the source Hamiltonian `H e_p=(log p)e_p`, the critical row lies beyond every finite polynomial Hilbert scale and beyond the ordinary smooth-vector projective limit. No finite resolvent power makes it a Hilbert defect vector. Yet the same Hamiltonian canonically defines
 
 \[
-\ell^2(\mathbb P)\times\mathbb C\Omega.
+\Phi_{\exp}
+=
+\bigcap_{a>0}\operatorname{Dom}e^{aH},
 \]
 
-Its multivalued part is the whole boundary target and its canonical regular part is zero. In the full Fock relation, the only surviving regular operator is the bounded prime-separable higher-layer shift. The closure therefore removes exactly the first-layer common-vacuum coherence that generated both the critical prime amplitudes and the mixed-prime Gram entries.
+a nuclear countably-Hilbert space on which the exact critical row is continuous. This rigging is invariant under positive affine changes of energy units and is therefore source-derived rather than tuned to the desired critical exponent.
 
-This sharpens the compatibility problem. **A singular completion is useful only if source structure couples bulk data to the singular boundary before closure.** Standard relation closure itself contains no such law: after closure every bulk prime vector is compatible with every boundary amplitude. Choosing a bounded single-valued section afterward is extra programmable structure and cannot preserve the original non-square-summable amplitudes.
+The new distinction is decisive: **hostability of the singular arithmetic row and construction of the Weil boundary law are different problems**. `Phi_exp` retains the algebraic coherence that relation closure deletes, but the resulting rank-one functional does not supply translation/autocorrelation geometry, the Gamma/polar sector, or a source-forced embedding of the full Weil test class. A single exponential Hilbert level also repairs boundedness only by moving normalized prime amplitudes into the ordinary Euler half-plane.
 
-The live target is a source-native completion in which regulator covariance, critical scaling, global analytic admissibility, mixed-prime coherence, and the archimedean/polar sector coexist by one structural mechanism. Neither a scalar counterterm nor the canonical regular part of the closed relation supplies it.
+The live target is a source-native finite--archimedean correspondence on this or another equally canonical rigging that preserves critical mixed-prime coherence and forces the Weil orientation before the destination is recognized.
 
-**Boundary.** WP-267 classifies the standard linear-relation closure of this specific Fock boundary map. It does not rule out nonlinear quotients, larger boundary/cohomological spaces with additional source laws, or other genuinely global completions. It shows that merely admitting multivaluedness does not rescue the critical coherent row.
+**Boundary.** WP-268 proves existence and sharp regularity of a canonical distributional category for the tested first-layer row. It does not produce a closed positive form on the ambient Hilbert space, a completed Weil operator, or RH. Arbitrarily choosing a stronger topology or a boundary section remains programmable unless the source also determines the global correspondence.

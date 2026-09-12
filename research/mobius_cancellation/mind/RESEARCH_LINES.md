@@ -2,60 +2,33 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove fixed-power signed near-balance or defeat the smooth-dilation character blind sector
+## Prove fixed-power signed near-balance or eliminate the cross-prime common-quotient blind sector
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`, `MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge`, `MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy`, `MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate`, `MI-018-nonnegative-transference-does-not-create-fixed-power-sign-balance`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`, `MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge`, `MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy`, `MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate`, `MI-018-nonnegative-transference-does-not-create-fixed-power-sign-balance`, `MI-019-shell-square-blindness-is-a-cross-prime-common-quotient-problem`.
 
-MC-188--MC-233 reduce the first-shell obstruction to a sparse source-coupled family of ordinary reduced-residue Möbius progression sums
+MC-188--MC-237 reduce the hard first-shell obstruction to source-selected signed Möbius progression sums. Support closes `2alpha+beta>=1/2`; in the strict hard region the target requires a fixed-power relative sign gain. Both signs already have essentially full occupancy, the audited Linnik transference precision is only subpower, and even the applicable individual smooth-modulus variance theorem improves the exact CRT progression scale only subpower relatively. None of those inputs reaches the required signed amplitude.
 
-\[
-B_S(X)=
-\sum_{\substack{d\le T\\P^+(d)\le y}}
-M_\mu(T/d;Q_S,-Pd^{-1}\bmod Q_S),
-\]
-
-with `Q_S=X^{2\alpha+o(1)}` and component scale `Z=X^{1-\beta+o(1)}`. Support closes `2\alpha+\beta\ge1/2`. In the strict hard region `2\alpha+\beta<1/2`, the componentwise sufficient target needs fixed-power relative cancellation `X^{-\delta+o(1)}` with `\delta=1/2-2\alpha-\beta>0`.
-
-MC-234--MC-235 remove qualitative parity and polynomial sign scarcity: the Linnik machinery already gives both signs essentially full occupancy exponent in every fixed interior hard progression. MC-236 identifies where the published dense-model route loses the missing information. The sign-specific dense model preserves each principal-character mean exactly, while the subsequent threshold/product-set argument is one-sided and the published separate-sign transference precision is only `q^{-o(1)}` relative to its one-sided main scale.
-
-MC-237 closes a different tempting repair. The exact deep CRT modulus `Q_S` is exceptionally smooth, so the Klurman--Mangerel--Teräväinen individual-smooth-modulus variance theorem applies directly to the source-selected modulus. Even after granting that the distinguished-character main term is harmless, its residue-class RMS residual is only
+MC-238 identifies the aggregate smooth-dilation character gate. Every selected residue lies in one coset of
 
 \[
-X^{1-\beta-2\alpha+o(1)}=\frac Zq X^{o(1)},
+H_y(Q_S)=\langle p\bmod Q_S:p\le y\text{ prime}\rangle,
 \]
 
-namely a subpower relative improvement over trivial occupancy. It reaches the `X^{1/2}` target only when `2\alpha+\beta\ge1/2`, exactly where support already closes the component.
+so characters in `H_y(Q_S)^perp` see no cancellation from residue spreading.
 
-MC-238 now puts an exact algebraic gate on the remaining suggestion to recombine the smooth dilations before triangle inequality. Let
+MC-239 sharply reduces what that blind sector can be for the shell-square modulus `Q_S=prod_{r in S}r^2`. The entire principal-congruence kernel of reduction to the squarefree radical lies in `H_y(Q_S)`, and for sufficiently large `y` the subgroup projects surjectively onto every individual shell-prime factor. Therefore any surviving blind character is genuinely **cross-prime**: it has nonprincipal components at at least two shell primes and can exist only through common quotient factors of their groups `(Z/rZ)^x`. If a prime `ell` divides the blind-character order, then `ell | r-1` for at least two shell primes; in particular no odd `ell>y/2` survives. The quadratic Legendre-matrix sector is the first ubiquitous common-quotient layer.
+
+The remaining algebraic question is no longer a local primitive-root or prime-square lift problem. It is whether simultaneous character relations
 
 \[
-H_y(Q_S)=\langle p\bmod Q_S:p\le y\text{ prime}\rangle
-\le(\mathbb Z/Q_S\mathbb Z)^\times.
+\prod_{r\in S}\chi_r(p)=1
+\quad\text{for every prime }p\le y
 \]
 
-Every `y`-smooth dilation `d` and the primorial factor `P` lie in this subgroup, so every source-selected residue `-Pd^{-1}` lies in the single coset `-H_y(Q_S)`. If `chi` is trivial on `H_y(Q_S)`, then for any dilation weights `w_d`,
+can persist on the shell family, and if so how large their contribution is. Even proving full subgroup generation would not finish the analytic route: the bounded smooth-dilation measure would still need quantitative Fourier decay strong enough to buy the missing fixed power, or the progression values must couple arithmetically to the dilation in a way not visible from residue support alone.
 
-\[
-\widehat\nu_w(\chi)
-=\overline{\chi(-1)}\sum_dw_d.
-\]
+## Treat support, signed amplitude, variance resolution, subgroup support, and cross-prime character compatibility separately
 
-For nonnegative weights this mode has normalized Fourier modulus one: **smooth-dilation averaging produces no cancellation at all on the annihilator `H_y(Q_S)^\perp`**. Thus residue-space spreading can help only after proving that the relevant annihilator is trivial or controlling its contribution by another source-coupled mechanism.
+High incidence, two-sign abundance, smooth modulus applicability, and local factor generation are now all known to be weaker than the live target. MC-239 removes square-lift and one-coordinate blind modes, but does not estimate `B_S(X)` or create signed cancellation.
 
-The quadratic blind sector has an exact finite diagnostic. With rows indexed by primes `p<=y`, columns by shell primes `r\in S`, and
-
-\[
-A_{p,r}=\frac{1-(\frac pr)}2\in\mathbb F_2,
-\]
-
-its dimension is `|S|-rank_F2(A)`. Full column rank eliminates quadratic blind characters but does not eliminate higher-order characters. Generic small-generator theorems do not settle the special shell-square family at the required logarithmic cutoff.
-
-The surviving alternatives are therefore sharper: prove source-selected fixed-power signed discrepancy directly; prove that small primes generate the relevant shell-square unit groups, or otherwise control every annihilator mode; prove quantitative Fourier decay of the bounded smooth-dilation measure on the remaining characters; or exploit arithmetic coupling between the dilation and the Möbius progression values that is not captured by the residue orbit itself.
-
-## Treat gauge, support, Boolean conditioning, smooth inversion, sign abundance, transference resolution, variance resolution, subgroup support, and signed amplitude as separate gates
-
-High incidence is cheap by support. Exact-cell membership and the Boolean transform cost only `X^{o(1)}`. At logarithmic smoothness, the primorial coprimality mask unfolds into only `X^{o(1)}` ordinary progression sums. Each Möbius sign already has essentially full-exponent abundance in every fixed strict hard component, and the exact deep CRT modulus already lies inside a strong unconditional smooth-modulus variance theorem.
-
-None of these reductions supplies near-balance. MC-236 shows that a nonnegative dense model can preserve principal bias exactly while proving excellent one-sided coverage. MC-237 shows that genuine signed second-moment dispersion on each smooth modulus can still have only subpower relative resolution where the target needs a fixed negative power. MC-238 adds that even aggregate recombination across dilations has an exact **support geometry**: all residues remain in one small-prime-generated coset, and annihilator characters are completely blind to the dilation average.
-
-Future progress should therefore be credited only when it controls the source-selected signed amplitude at the required power scale, proves enough generation/Fourier decay to make aggregate recombination effective, or uses a coupling not visible in the residue measure. More representative-existence theorems, unsigned density, smooth-modulus applicability, subpower variance/transference improvements, or the mere number of smooth dilations do not cross the live gate.
+Future progress should be credited only when it controls the source-selected signed amplitude at the required power scale, proves that all common-quotient blind relations are absent or harmless with quantitative decay, or exploits a source-value coupling beyond the residue orbit. More representative-existence results, local primitive-root bounds, or subpower variance/transference gains attack already-closed resources.
