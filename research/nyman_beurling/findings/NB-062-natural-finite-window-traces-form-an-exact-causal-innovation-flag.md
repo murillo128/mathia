@@ -81,7 +81,7 @@ Even more precisely, restriction to the previous window gives a short exact sequ
 
 So every new integer-log window contributes **exactly one** new visible natural direction, supported entirely on its newest cell. The arithmetic deformation from the flat `O=1` control is therefore not a rank defect. It lives in how each causal innovation continues into later cells and couples to the older ones.
 
-For the canonical defect `h_*=Qe in mathcal A^perp`, the same basis also gives an exact target-aware finite system. Since every `D_j` lies in `A`,
+For the canonical defect `h_*=Qe\in\mathcal A^\perp`, the same basis also gives an exact target-aware finite system. Since every `D_j` lies in `A`,
 
 \[
 \boxed{
@@ -110,6 +110,7 @@ For the continuous kernel
 
 \[
 q_a(s)=\frac{e^{-a}-e^{-as}}{s-1},
+\qquad F_a:=Oq_a,
 \tag{10}
 \]
 
@@ -193,14 +194,14 @@ To prove independence, suppose
 \tag{19}
 \]
 
-and choose the smallest `j_0` with `c_(j_0) != 0`. On the cell
+and choose the smallest `j_0` with `c_{j_0}\ne0`. On the cell
 
 \[
 I_{j_0}=[\log j_0,\log(j_0+1)],
 \tag{20}
 \]
 
-every `D_j` with `j>j_0` vanishes by (14), while there is no term with smaller nonzero index by construction. Restriction of (19) to `I_(j_0)` therefore gives
+every `D_j` with `j>j_0` vanishes by (14), while there is no term with smaller nonzero index by construction. Restriction of (19) to `I_{j_0}` therefore gives
 
 \[
 c_{j_0}C_{j_0}=0,
@@ -334,7 +335,7 @@ T_{j,R}:=(J_R-J_{j+1})D_j.
 \tag{34}
 \]
 
-The `C_j` occupy disjoint cells, while all cross-cell coupling comes from the forward tails `T_(j,R)`. Thus the passage from the flat control to the actual deflated source preserves the number and causal ordering of finite-window constraints exactly; what changes is their **forward memory**.
+The `C_j` occupy disjoint cells, while all cross-cell coupling comes from the forward tails `T_{j,R}`. Thus the passage from the flat control to the actual deflated source preserves the number and causal ordering of finite-window constraints exactly; what changes is their **forward memory**.
 
 This is the sharper mechanism boundary left by the finding. To improve (9), one must control those forward tails relative to the nonzero diagonal innovations, or obtain a target-specific cancellation that bypasses full conditioning. The flat cubic target law cannot be transferred merely from full rank or causal triangularity.
 
