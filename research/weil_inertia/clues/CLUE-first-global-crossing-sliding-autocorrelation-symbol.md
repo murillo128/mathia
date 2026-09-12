@@ -11,155 +11,109 @@ based_on:
   - research/weil_inertia/findings/WI-256-next-small-aperture-remainder-is-a-local-translation-defect-modulus.md
   - research/weil_inertia/findings/WI-257-bounded-perturbation-zero-modes-do-not-upgrade-translation-regularity.md
   - research/weil_inertia/findings/WI-258-phase-modulation-couples-firstness-slack-to-localized-cosine-defect.md
-  - research/weil_inertia/findings/WI-259-first-prime-finite-scale-positivity-is-the-gate-for-the-phase-defect-program.md
-  - research/weil_inertia/findings/WI-260-public-fp035-generator-does-not-yet-certify-the-exact-first-prime-matrix.md
-  - research/weil_inertia/findings/WI-261-the-proofctl-exact-prime-checker-does-not-enclose-the-first-prime-layer.md
-  - research/weil_inertia/findings/WI-262-the-fp035-interval-ldl-judge-double-updates-off-diagonal-schur-entries.md
   - research/weil_inertia/findings/WI-263-full-span-autocorrelations-can-null-the-first-prime-and-screen-the-localized-phase-defect.md
+  - research/weil_inertia/findings/WI-264-finite-aperture-endpoint-autocorrelations-screen-all-prime-layers.md
 ---
 
-# Can the sliding autocorrelation symbols exclude a first global Weil zero mode?
+# Can genuine first-crossing rigidity exclude finite-aperture source screening?
 
 ## Observation
 
-`WI-253` shows that under RH failure the first unrestricted localized Weil zero mode `v` must satisfy, for every `0<r<a_*`,
-
-\[
-\frac1{2\pi}\int_{\mathbb R}\Sigma_r(z)|\widehat v(z)|^2\,dz
-\ge r\lambda_r>0,
-\]
-
-where `Sigma_r` is an explicit finite-prime plus archimedean cosine symbol and `|vhat|^2` is a nonnegative spectral density. This sliding-center formulation bypasses the reflected half-line Hankel obstruction of the first-odd-mode route because arbitrary translated windows are allowed at the first global crossing.
-
-`WI-258` adds a second exact parameter without changing support. If
+`WI-253` and `WI-258` give two exact families that every hypothetical first unrestricted localized Weil zero mode must satisfy. With
 
 \[
 d\mu_v(h)=C_v(h)\left[
 \sum_{\log n<2a_*}\frac{\Lambda(n)}{\sqrt n}\,\delta_{\log n}(dh)
 +w(h)\,dh
-\right]
+\right],
 \]
 
-is the source-weighted autocorrelation object of `WI-254`, then phase modulation `v_t(x)=e^{itx}v(x)` gives
+the first-crossing null mode obeys
 
 \[
-\int_0^{2a_*}(1-\cos(th))\,d\mu_v(h)\ge0
-\qquad(t\in\mathbb R),
+\mathcal F_v(r)=\int_0^{2a_*}\min(h,2r)\,d\mu_v(h)
+\ge r\lambda_r>0
+\qquad(0<r<a_*),
 \]
 
-and, after the same translated-window averaging,
+and phase modulation gives
 
 \[
 \mathcal F_v(r)+J_v(r,t)\ge r\lambda_r,
-\]
-
-where
-
-\[
+\qquad
 J_v(r,t)=\int_0^{2r}(2r-h)(1-\cos(th))\,d\mu_v(h).
 \]
 
-Thus any source-forced negative value `J_v(r,t)<=-epsilon` gives at least `epsilon` of strict firstness slack at that radius.
+A negative `J_v(r,t)` would therefore force strict firstness slack. The open problem is no longer whether the explicit source by itself can force such negativity.
 
-`WI-259` identifies the missing gate before this can genuinely use a prime atom at every hypothetical first crossing. The first prime enters only for `r>(log 2)/2`. A validated finite-scale theorem `lambda_{7/20}>0` would force `a_*>7/20`; then the fixed radius `r=7/20` is admissible and, because `log 2<7/10<log 3`, its discrete source contains exactly the single atom `n=2`.
+`WI-264` closes that weaker route at **every finite aperture**. For any finite `a>h_0/2`, where `h_0` is the unique sign-change point of Suzuki's continuous source, an antisymmetric pair of sufficiently narrow endpoint bumps has a positive-definite full-span autocorrelation whose open zero interval contains every active prime-power lag `log n<2a`. Simultaneously its self-correlation lies where `w>0` and its cross-correlation lies where `w<0`. Hence every discrete von-Mangoldt mass is screened exactly and
 
-`WI-260`--`WI-262` sharpen the certification boundary for that gate. The public `telleroutlook/weil-first-prime` candidate does not yet supply a rigorous exact theorem: the reproduction route uses point/rationalized surrogates and an invalid residual aggregation; the nominal exact proofctl route rebuilds the prime matrix at a rational `TAU_MID`, uses the wrong `c_L=0` surrogate, and can be shown by exact rational arithmetic to miss the true `S2[0,0]` entry; and the shared `_min_pivot_mpmath` positivity judge double-updates off-diagonal Schur entries, with an explicit indefinite rational matrix on which it returns all-positive pivots. The gate therefore requires an independent exact theorem-object enclosure **and** a mathematically valid positivity judge, not another replay of either public verdict.
+\[
+\mathcal M_v(t)\ge0,
+\qquad
+J_v(r,t)\ge0,
+\qquad
+\mathcal F_v(r)\ge0
+\]
 
-`WI-263` then closes a weaker analytic continuation after the gate. In the entire one-prime window `7/20<a<log(3)/2`, there are full-span normalized autocorrelations that are positive-definite, satisfy `C(log2)=0`, and pair with Suzuki's continuous source so that `w(h)C(h)>=0` at every lag. For those models `J_v(r,t)>=0` for every `r,t`. Therefore compact support, full support span, positive-definiteness, and the explicit one-prime source **alone cannot force a negative localized cosine defect**. Any surviving phase argument must use quantitative firstness or the actual zero-mode equation, not merely source signs plus Bochner constraints.
+for all admissible `r,t` in that countermodel. This generalizes the one-prime obstruction of `WI-263`: adding more finite prime layers or more phase frequencies cannot by itself break screening.
+
+There is also no longer a finite-scale activation gate at `L=7/20`. `WI-253` already records the certified theorem `lambda_0.8>0` for arbitrary complex tests, so any hypothetical first global crossing satisfies `a_*>0.8`. The `FP-0.35` audits in `WI-259`--`WI-262` remain useful artifact audits, but they are not a prerequisite for this clue.
 
 ## Research question
 
-Can the actual first-crossing constraints rule out the source-screened autocorrelation geometries left open by `WI-263`? More precisely, after independently establishing `lambda_{7/20}>0`, can the exact one-prime identity at `r=7/20` together with the quantitative aperture inequalities
+Can the **genuine first-crossing information not reproduced by WI-264** forbid the endpoint-gap screening geometry? The two surviving inputs are especially concrete:
 
 \[
-\mathcal F_v(r)\ge r\lambda_r
-\]
-
-across radii and/or the exact null-vector equation `A_{a_*}v=0` force a negative localized cosine defect, a nonzero lower bound on the first-prime overlap, or another quantitative incompatibility?
-
-This is deliberately narrower than asking for generic zero-mode regularity or immediately introducing several prime powers. `WI-257` proves that an abstract bounded self-adjoint perturbation can realize arbitrary domain vectors as zero modes, `WI-259` shows that prime activation is not presently guaranteed without a finite-scale positivity theorem past `(log 2)/2`, and `WI-263` shows that support plus positive-definiteness still permits exact first-prime screening even after activation.
-
-## Why it may matter
-
-The scalar aperture family is information-complete only when its **exact** profile is known; firstness supplies merely a lower envelope. `WI-258` adds an independent inequality cone on profiles compatible with that lower envelope. At the abstract transform level the extra cone is genuinely nonredundant: a signed measure can have positive `min`-transform at every radius while violating the cosine-defect inequality.
-
-At `r=7/20`, once the positivity gate is established, the discrete part becomes maximally simple:
-
-\[
-\frac{\log2}{\sqrt2}
-\left(\frac7{10}-\log2\right)
-(1-\cos(t\log2))C_v(\log2),
-\]
-
-with no `n>=3` atom. But `WI-263` proves that this simplicity does not by itself create rigidity: a full-span positive-definite autocorrelation can have `C_v(log2)=0` exactly while matching the sign change of the archimedean density. The useful question is therefore whether **first-crossing information forbids that screening geometry**, not whether the first prime merely appears in the formula.
-
-## Decisive test
-
-First close the finite-scale gate in the **exact** localized-Weil normalization used by WI-238. The current external `FP-0.35` state is not upgraded by rerunning either public checker unchanged. A valid gate-closing artifact must assemble an enclosure of the intended theorem matrix using exact/enclosed `tau=20 log2/7`, `c_2=log2/sqrt2`, exact harmonic data, the theorem's nonzero `c_L`, and the correct archimedean/tail terms; then it must certify positivity using genuine directed/outward interval `LDL^T`/Cholesky or a rigorously submultiplicative residual theorem. It must also reject the exact WI-262 false-positive matrix and enclose the true WI-261 `S2[0,0]` entry. An independent analytic or formal proof of `lambda_{7/20}>0` is equally decisive.
-
-If the gate validates, freeze `r=7/20` and study the exact identity
-
-\[
-\begin{aligned}
-J_v(7/20,t)
-={}&\frac{\log2}{\sqrt2}
-\left(\frac7{10}-\log2\right)
-(1-\cos(t\log2))C_v(\log2)\\
-&+\int_0^{7/10}
-\left(\frac7{10}-h\right)(1-\cos(th))w(h)C_v(h)\,dh
-\end{aligned}
-\]
-
-under the full first-crossing constraints. Do not attempt to force negativity from compact support and positive-definiteness alone: `WI-263` supplies an exact countermodel to that weaker implication. Instead test whether the family `\mathcal F_v(r)\ge r\lambda_r`, the null equation `A_{a_*}v=0`, or a source-specific consequence of that equation quantitatively excludes the two-bump screening pattern, forces `C_v(log2)` away from zero, or yields another multi-frequency incompatibility.
-
-A meaningful positive outcome is a source-specific bound
-
-\[
-\inf_t J_v(7/20,t)\le-\varepsilon
-\]
-
-with `epsilon>0` forced for every admissible **first-crossing zero mode**, or an alternative exact inequality that rules out the screened models and gives quantitative strictness. By `WI-258` any negative defect immediately implies
-
-\[
-\mathcal F_v(7/20)-(7/20)\lambda_{7/20}\ge\varepsilon.
-\]
-
-A meaningful negative outcome is either failure of a corrected exact finite-scale positivity certificate, or a source-compatible compact-support autocorrelation model that also satisfies the **quantitative first-crossing lower envelope / null equation** strongly enough to show that the remaining rigidity still cannot distinguish it. The WI-263 two-bump construction is already sufficient to reject proposals that omit those first-crossing inputs, so do not rediscover that weaker counterexample.
-
-Stress-test every proposed implication against the pure logarithmic-core crossing of `WI-239`, the rank-two bounded-perturbation construction of `WI-257`, and the exact source-screening construction of `WI-263`. Also respect the external first-prime operator facts audited in `WI-259`: the prime overlap has operator norm one immediately after threshold and is indefinite, while the endpoint archimedean potential can absorb it at `L=7/20`. Therefore the gain must come from the full source coupling plus first-crossing structure, not from treating `n=2` as a small or automatically destabilizing perturbation.
-
-## Evidence boundary
-
-No incompatibility theorem for actual first-crossing zero modes is known. `WI-253` proves only a necessary continuum of positive aperture averages and does not assert pointwise positivity of `Sigma_r`, a lower rate for `lambda_r`, parity of the global first mode, or any RH consequence. `WI-254` proves that the exact aperture profile is an invertible `min`-transform of the source-weighted real autocorrelation, but pointwise firstness cannot be differentiated to read prime-threshold signs and the small-radius lower bound is asymptotically saturated at leading order.
-
-`WI-255` shows that the first `O(r)` correction is universal on a first-crossing null mode: the prime and regular archimedean pieces cancel against `Q_W(v)=0`. `WI-256` identifies the next remainder as the local translation-defect modulus
-
-\[
-E_v(r)=\int_0^{2r}\left(\frac rh-\frac12\right)(1-C(h))\,dh\ge0,
-\]
-
-but the available `H^log` control does not determine its quadratic coefficient. `WI-257` then proves that generic bounded-perturbation zero-modehood cannot supply the missing regularity.
-
-`WI-258` gives the exact identities
-
-\[
-Q_W^{a_*}(e^{itx}v)=2\int(1-\cos(th))\,d\mu_v(h)\ge0
+\boxed{\mathcal F_v(r)\ge r\lambda_r\quad\text{for every }0<r<a_*}
 \]
 
 and
 
 \[
-S_v(r)+J_v(r,t)\ge0,
-\qquad
-S_v(r)=\mathcal F_v(r)-r\lambda_r.
+\boxed{A_{a_*}v=0.}
 \]
 
-These are stronger than scalar `min`-transform positivity as inequality constraints, but analogous modulation inequalities exist for generic translation-invariant nonnegative forms. `WI-259` further shows that the first-prime version is conditional on a positivity margin past `(log2)/2`.
+The target is to derive from one or both a quantitative constraint on the autocorrelation that cannot be satisfied by the screened endpoint-bump family. Useful forms would include a lower bound on autocorrelation mass at one or more von-Mangoldt lags, a prohibition on a long interior autocorrelation gap, a quantitative support-spreading theorem for an actual null vector, or a source-specific relation coupling the zero interval of `C_v` to nonzero translated copies of `v`.
 
-`WI-260`--`WI-262` establish certification barriers, not failure of FP-0.35. The public corrected computations may still point to a true positive statement, but neither available public path currently establishes the exact theorem object with a valid positivity judge. `WI-263` is a separate analytic barrier: it does not construct a zeta zero mode, but it proves that positive-definiteness/full-span/source-sign arguments cannot force `J<0` because exact first-prime screening is compatible with all of those weaker constraints.
+The question is deliberately stronger than “can another prime threshold help?” `WI-264` proves that every finite set of active prime thresholds can be put in the same autocorrelation gap. A successful continuation must therefore use the **equation or firstness reserve**, not the cardinality or signs of the finite source.
+
+## Decisive test
+
+Start from a hypothetical first-crossing mode with `a_*>0.8`; do not recertify `FP-0.35` as a prerequisite. Test the endpoint-gap geometry directly against the two first-crossing constraints.
+
+A strong positive outcome would prove that if a normalized full-span `v` satisfies `A_a v=0` and `lambda_r>0` for every `r<a`, then its autocorrelation cannot vanish on an interval containing all active `log n`, or must satisfy a quantitative lower bound such as
+
+\[
+\sum_{\log n<2a} c_n\,|C_v(\log n)|\ge\eta(a)>0
+\]
+
+for source-justified nonnegative coefficients `c_n`. Any such theorem would invalidate the WI-264 screening model for genuine first-crossing modes and reopen the phase-defect mechanism.
+
+A second viable outcome would use the entire lower-envelope family rather than the null equation. For the explicit endpoint-bump family, compute or bound `\mathcal F_v(r)` uniformly in the bump width and compare it with rigorous information on `r\lambda_r`. If some radius forces
+
+\[
+\mathcal F_v(r)<r\lambda_r,
+\]
+
+then firstness alone rules out that screening geometry. The useful result is a uniform exclusion of the whole family, not a numerical failure of one chosen bump.
+
+A meaningful negative outcome is an explicit source-compatible compact-support family that simultaneously retains the all-prime screening of `WI-264` **and** satisfies the quantitative aperture lower envelope to the precision currently known, or an exact model satisfying an analogue of the null equation. That would show that even firstness-level scalar information remains too weak and would push the line toward genuinely operator-valued constraints.
+
+## Stress tests
+
+Any proposed implication must survive the existing countermodels. `WI-257` shows that generic bounded self-adjoint zero-modehood gives no useful translation regularity. `WI-263` rules out one-prime source-sign/Bochner arguments. `WI-264` rules out the stronger idea that activating finitely many additional prime powers removes the screening freedom. Therefore a proof that only uses compact support, positive-definiteness, the list of finite source atoms, or their signs is already known to be insufficient.
+
+The first-crossing operator equation is the most promising remaining discriminator because it couples `v` to all translations appearing in Suzuki's exact localized form rather than only to scalar autocorrelation moments. If that equation is reduced to a scalar inequality that WI-264 also satisfies, the reduction has discarded the very information this clue is trying to exploit.
+
+## Evidence boundary
+
+No theorem currently proves that an actual first-crossing null vector has nonzero autocorrelation at any prescribed prime-power lag. Nor is there a known quantitative theorem excluding a macroscopic autocorrelation zero interval from `A_{a_*}v=0`. `WI-264` is not itself a zeta zero mode and does not satisfy the firstness lower envelope by construction; it is only a decisive countermodel to weaker source-sign and positive-definiteness arguments.
+
+The certified `lambda_0.8>0` theorem is used only to remove the obsolete prime-activation dependency and to place any hypothetical first crossing beyond `0.8`. It does not provide a usable lower profile for `lambda_r` at all radii, and it does not approach RH by itself.
 
 ## Research disposition
 
-The direction remains `accepted`, but its dependency chain is now sharper. **First obtain an exact finite-scale recertification at `L=7/20`.** If that certificate validates, do not spend the next pass on source-sign or Bochner-only attempts to make the first-prime term nonzero: `WI-263` closes that route. Instead ask whether quantitative firstness across radii or the exact zeta-specific null equation forbids the screened autocorrelation geometry.
+The clue remains `accepted`, but its live gate has changed. **Do not spend further research passes recertifying `FP-0.35` merely to activate a prime, and do not enlarge the aperture merely to add more finite prime layers.** Instead attack whether the full firstness family or the exact localized null equation forbids the endpoint-gap autocorrelation screening proved in `WI-264`.
 
-If corrected certification fails, return to proving any rigorous positivity margin past `(log2)/2`; do not presume that a hypothetical first crossing sees a von-Mangoldt atom. If it succeeds but the stronger first-crossing constraints still admit a screened model, the one-prime phase-defect route should be regarded as blocked until genuinely new arithmetic or spectral information is added.
+If neither firstness nor the null equation can distinguish the screened family, record that barrier and retire the phase-defect route until a new operator or arithmetic invariant is available.
