@@ -1,52 +1,25 @@
-# MI-013 — Prime-Circle bulk and first mesoscopic resonance scales are classical after the orbit geometry is fixed
+# MI-013 — Prime-Circle bulk, exact-lattice source statistics, and first mesoscopic resonance scales are classical after their quotient geometry is fixed
 
-**Evidence level:** proved structural boundary through PC-271; arithmetic statistics of the dual lattice and finer/singular channels remain open.
+**Evidence level:** proved structural boundary through the unchallenged exact-lattice/autocorrelation part of PC-272; arithmetic information outside the ratio-only exact lattice remains open. PC-272's claimed prime-source counterexample for `Delta_B` is under unresolved adversarial review and is not used here as established support.
 
 Growing collision geometry is not enough. Common dilation is exact repetition, nonresonant bulk spectrum and normalized positive log-volume converge to classical torus-return limits, fixed off-spectrum characteristic potentials are transforms of the same IDS, and connected-component simplicity, nodal order, reflection parity ordering, and canonical total projective rotation are classical consequences of the collision matrix structure.
 
-PC-269 shows that even a **rational limiting ratio pair** is not a nonuniversal regime by itself. If every fixed nonzero Fourier mode is eventually nonresonant at the finite prime levels, the raw orbit still equidistributes in Haar phase and the squared-singular empirical law converges to the periodic-Haar IDS of the finite-order limiting translation. Matching pairwise-coprime controls share that law.
+PC-269 shows that even a rational limiting ratio pair is not a nonuniversal regime by itself. If every fixed nonzero Fourier mode is eventually nonresonant, the raw orbit still equidistributes in Haar phase and the squared-singular empirical law converges to the periodic-Haar IDS. PC-270 classifies the complementary fixed-resonance regime: one persistent primitive relation selects a one-dimensional subtorus, and matched controls carrying that relation reproduce the same bulk law.
 
-PC-270 gives the complementary fixed-resonance classification. If one primitive relation
+PC-271 identifies the next universal carrier. The dual lattice
 
-\[
-hp_n+kr_n=\ell q_n
-\]
+`Lambda_(p,r;q) = {(h,k) in Z^2 : hp+kr = 0 mod q}`
 
-persists with fixed coefficients, primality prevents a second fixed independent resonance from recurring. The orbit converges to Haar measure on the corresponding one-dimensional subtorus, and matched controls carrying the same resonance reproduce the same bulk law. Fixed arithmetic lifts can select the orbit closure, but fixed-complexity bulk averaging forgets everything beyond it.
+has an exact first Fourier detection scale given by its sup-norm systole `lambda_(p,r;q)`, with the universal ceiling `lambda <= floor(sqrt(q))`. The finite-window near-resonance quantity `Delta_B` is likewise subject to the classical Dirichlet bound `Delta_B<=1/(B+1)^2`, producing the generic parabolic resolution scale `B~sqrt(M)`.
 
-PC-271 now identifies the first previously open **growing-resonance and mesoscopic-near-resonance escape with a classical carrier**. For one finite lift define the dual lattice
+PC-272 closes the first source-statistics escape for the **fixed-upper exact lattice itself**. For fixed prime `q`, multiplication by `r^{-1}` shows that the full lattice depends only on the ratio `a=pr^{-1} mod q`. If `mu_q` is the prime-pair ratio distribution and `A_q(chi)=sum_(p<q) chi(p)`, then
 
-\[
-\Lambda_{p,r;q}=\{(h,k)\in\mathbb Z^2:hp+kr\equiv0\pmod q\}
-\]
+`sum_a mu_q(a) chi(a) = |A_q(chi)|^2/M_q^2`.
 
-and its sup-norm systole
+Thus every swap-invariant exact-lattice/full-orbit statistic factors through the multiplicative autocorrelation, or power spectrum, of the prime residue set. Common multiplicative translation changes the character phases but leaves this packet unchanged. Any critical-line sensitivity in this ratio-only branch is therefore inherited from classical prime character sums and Dirichlet `L`-theory, with phase/placement information already quotiented out.
 
-\[
-\lambda_{p,r;q}
-=\min_{m\in\Lambda_{p,r;q}\setminus\{0\}}\|m\|_\infty.
-\]
+This does **not** presently certify the stronger source-domain statement that the mesoscopic `Delta_B` observable fails to factor through the ratio. PC-272's displayed control for that claim uses inadmissible source pairs, and the adjacent adversarial review supplies a proposed admissible repair that has not yet been persisted into the canonical finding. Until that review converges, retain only the proved exact-lattice quotient boundary and treat the ordered mesoscopic branch as unresolved rather than proved distinct by PC-272.
 
-The full orbit integrates every trigonometric polynomial of bandwidth below `\lambda` exactly as Haar, while one shortest dual vector gives a detecting Fourier mode. Thus `\lambda` is the **exact first Fourier resolution scale**. PC-269 bounded-mode nonresonance is exactly the statement `\lambda->infinity`. Since the lattice has index `q`, a two-dimensional pigeonhole/geometry-of-numbers argument gives the universal ceiling
+The surviving source-sensitive routes must therefore retain information beyond swap-invariant fixed-upper exact-lattice statistics: ordered/partial-window data once its source-domain distinction is canonically established, microscopic or singular observables, transfer/Lyapunov growth, subleading projective data, or cross-level structure.
 
-\[
-\lambda_{p,r;q}\le\lfloor\sqrt q\rfloor.
-\]
-
-So an exact growing resonance must appear by square-root Fourier frequency; this is the classical spectral-test scale of a rank-one lattice rule, not a new prime-circle spectral object.
-
-Partial windows are controlled by the same geometry. With
-
-\[
-\Delta_B(p,r;q)
-=\min_{0<\max(|h|,|k|)\le B}
-\left\|\frac{hp+kr}{q}\right\|,
-\]
-
-one has the universal Dirichlet bound `\Delta_B<=1/(B+1)^2`. A bandwidth-`B`, length-`M` Fourier mode stays coherently visible when `M\Delta_B=O(1)`, and uniform mixing over all bandwidth-`B` modes cannot cross the generic parabolic scale `B\asymp\sqrt M` without extra Diophantine information. Matched rational-rotation controls have the same bounds.
-
-Therefore **the mere presence, resolution scale, or slow phase of a growing/near resonance is universal**. A source-sensitive continuation must prove arithmetic information about the *distribution* of these classical carriers along prime triples—such as statistics of `\lambda`, `\Delta_B`, shortest-vector directions, or coupling of those vectors to a genuinely source-forced nonlocal observable—and survive matched coprime/composite rational-rotation controls and the classical modular-lattice theory.
-
-Other channels remain outside this classification: microscopic/shrinking spectral windows, singular log-determinants, Lyapunov/transfer growth, subleading projective data, and cross-level operators. They are open because PC-271 does not reduce them to the dual-lattice spectral test, not because mesoscopic resonance itself has become arithmetic evidence.
-
-**Boundary.** PC-271 gives exact full-orbit Fourier resolution and finite-window Diophantine scales, but no typical law for `\lambda` or `\Delta_B` along primes and no RH consequence. The universal square-root/parabolic bounds are controls, not claims about source-specific distribution.
+**Boundary.** PC-272 classicalizes the ratio-only exact-lattice source law, not every statistic built from the prime-circle system. An open review is workflow uncertainty, not evidence for either the challenged or proposed repaired claim.

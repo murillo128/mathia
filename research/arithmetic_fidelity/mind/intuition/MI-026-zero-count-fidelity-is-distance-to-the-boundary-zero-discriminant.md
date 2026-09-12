@@ -1,19 +1,27 @@
-# MI-026 — Zero-count fidelity is distance to the boundary-zero discriminant, and diagonal reweighting cannot repair its critical-strip breadth law
+# MI-026 — Zero-count fidelity is distance to the boundary-zero discriminant, and Hilbert mixing pays the missing conditioning
 
-**Evidence level:** proved for finite Dirichlet polynomials by AF-290, for raw eta breadth growth by AF-291, and for all positive diagonal Hilbert reweightings of that eta model by AF-292; transfer from acquisition remains conditional on the actual coefficient-orbit error.
+**Evidence level:** proved for finite Dirichlet polynomials by AF-290, for raw eta breadth growth by AF-291, for all positive diagonal Hilbert reweightings by AF-292, and for arbitrary positive-definite Hilbert metrics under a condition-number budget by AF-293; transfer from acquisition remains conditional on the actual coefficient-orbit error.
 
-For a finite Dirichlet polynomial `P_b`, AF-290 identifies the exact robustness radius for the zero count inside a fixed zero-free Jordan contour: it is the coefficient-space distance from `b` to the set of coefficients whose polynomial has a zero on the boundary. This is a target-conditioned quantity, not a consequence of frame conditioning or coefficient recovery alone.
+For a finite Dirichlet polynomial `P_b`, AF-290 identifies the exact robustness radius for the zero count inside a fixed zero-free Jordan contour: it is the coefficient-space distance from `b` to the boundary-zero discriminant. This is a target-conditioned quantity, not a consequence of frame conditioning or coefficient recovery alone.
 
-AF-291 shows that the normalized radius can deteriorate as breadth grows even when the analytic approximation behaves perfectly well. For raw eta truncations on a contour with left edge `alpha > 0`, the boundary modulus stays uniformly separated from zero while the normalized coefficient-space margin tends to zero. In the RH-relevant regime `alpha < 1/2`, its scale is `N^(alpha-1)`.
+AF-291 shows that this normalized radius can deteriorate as breadth grows even when eta truncations converge correctly on the boundary. For a contour with left edge `alpha>0`, the raw margin is comparable to `1/(sqrt(N) H_N(alpha))`; in the RH-relevant regime `alpha<1/2` its power is `N^(alpha-1)`.
 
-AF-292 proves that this critical-strip exponent is not a coordinate-scaling artifact. For an arbitrary positive diagonal metric with weights `d_n`, the normalized margin is comparable to
+AF-292 proves that diagonal rescaling cannot repair that exponent. For weights `d_n`, the margin is comparable to
 
-`1 / sqrt[(sum d_n^2)(sum d_n^-2 n^-2alpha)]`.
+`1 / sqrt[(sum d_n^2)(sum d_n^-2 n^-2alpha)]`,
 
-Cauchy--Schwarz makes the optimization exact: the best diagonal geometry has `d_n^2 proportional to n^-alpha` and margin comparable to `1 / sum n^-alpha`. Thus every diagonal metric still has vanishing margin for `alpha <= 1`, and when `alpha < 1/2` it cannot improve even the power of `N` over the raw eta coordinates.
+whose optimum is attained at `d_n^2 proportional to n^-alpha`. The best diagonal margin is therefore comparable to `1/sum n^-alpha` and has the same critical-strip power as the raw coordinates.
 
-The composition rule is therefore breadth-sensitive and representation-sensitive. If an upstream decoder has relative error `eta_N`, protecting the zero count requires `eta_N` to stay below the target margin in the metric actually used. A fixed relative guarantee fails for the raw eta geometry, and coordinatewise Hilbert preconditioning does not change that conclusion in the critical strip.
+AF-293 closes the next linear-Hilbert escape. If `G>0` is an arbitrary dense coefficient metric with `kappa(G)<=K`, then the best achievable normalized margin satisfies
 
-The reusable lesson is that **source completeness, analytic convergence, coordinate conditioning, and target robustness are separate resources**. A useful repair must alter relational geometry rather than merely rescale coordinates: for example non-diagonal mixing, a nonlinear representation, a target-relevant quotient, or another topology with its own recovery theorem.
+`D_(Gamma,N)(K) asymp_Gamma min(1, sqrt(K)/(sqrt(N) H_N(alpha)))`.
 
-**Boundary.** AF-292 classifies only diagonal Hilbert metrics for this fixed-contour eta zero-count target. It does not rule out general positive-definite mixing, nonlinear encodings, quotients, alternative carriers, growing contours, exact zero locations, or a different target topology. None of those alternatives is automatically well conditioned.
+Hence bounded-condition non-diagonal mixing cannot improve the raw breadth exponent. An order-one margin requires, up to contour constants,
+
+`kappa(G_N) asymp N H_N(alpha)^2`.
+
+If `G=A* A`, this is `kappa_2(A_N) asymp sqrt(N) H_N(alpha)`, exactly the reciprocal scale of the raw normalized margin. Dense mixing can therefore stabilize the target, but only by relocating the same conditioning bill into the representation map.
+
+The reusable distinction is now sharper: **source completeness, analytic convergence, acquisition conditioning, representation distortion, and target robustness are separate resources**. A linear Hilbert change of coordinates is not a free repair when its anisotropy grows at the reciprocal target-margin scale.
+
+**Boundary.** AF-293 does not rule out a nonlinear representation, a target-relevant quotient, a non-Hilbert topology, or an anisotropic geometry justified independently by the source rather than designed to encode the eta coefficient ray. A diverging condition number is a price to explain, not by itself a proof that a representation is useless.

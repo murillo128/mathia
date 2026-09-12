@@ -1,15 +1,21 @@
-# MI-007 — Matched first-layer packets convert selector dilation into an opposite Chebyshev--Mertens error drift
+# MI-007 — Matched first-layer packets turn selector dilation into a one-sided Chebyshev--Mertens fan ledger
 
-**Evidence level:** supported by the exact matched-packet prime-set identity RE-068, timing compression RE-069, selector-dilation/Chebyshev law RE-070, and the reciprocal-prime error law RE-071; no contradiction with known joint prime-error estimates is claimed.
+**Evidence level:** supported by RE-068--RE-072; no contradiction with known joint prime-error estimates or proof that long matched fan runs must occur is claimed.
 
-The matched first-layer branch is exactly silent to additive endpoint prime statistics. RE-068 shows that the physical labels crossed by the packet are precisely the ordinary primes in the selector interval, while RE-069 shows that direct positional delay is compressed to an absolutely summable contribution by the Robin workload.
+The matched first-layer branch is exactly silent to additive endpoint prime statistics. RE-068 shows that the physical labels crossed by one matched packet are precisely the ordinary primes in the selector interval, while RE-069 shows that direct positional delay is absolutely summable after the Robin workload is applied.
 
-RE-070 finds the first surviving coordinate before that compression. The tied common-amplitude selector expands the target interval while the exact Chebyshev mass remains equal to the logarithmic state increment. Therefore every sufficiently late matched packet forces a positive increment of the Chebyshev error `H_vartheta(Z)=Z-vartheta(Z)`.
+RE-070 finds a pre-compression survivor. The tied common-amplitude selector expands the target interval while preserving the exact Chebyshev mass, so every sufficiently late matched packet forces a positive increment of `H_vartheta(Z)=Z-vartheta(Z)`. RE-071 adds the reciprocal coordinate: the normalized logarithmic Mertens-product error `E_l` decreases across the same packet. On sublinear packets the two increments are asymptotically tied by the factor `1/(Y log Y)`.
 
-RE-071 shows that the same packet forces a second, oppositely oriented coordinate. For the normalized logarithmic Mertens-product error `E_l`, the increment across the packet is negative. Both signs come from the same selector derivative: interval dilation makes the Chebyshev mass underdense, while the Robin-height/Mertens normalization turns the same matched prime set into a decrease of `E_l`. The prime-square correction between the two Euler weights is too small to change that sign, uniformly even when packet cardinality grows.
+RE-072 proves that this opposite drift does not cancel when matched packets are concatenated through the intervening threshold cells. If every switch in a consecutive first-layer fan run is matched, the fringe bit stays zero throughout each fixed-state cell. Along the entire selected path, `H_vartheta` increases through both cells and switches while `E_l` decreases through both. The total increments are sums of positive cell and switch masses, so there is no internal sign cancellation.
 
-For sublinear packets, the two increments are tied asymptotically: the magnitude of the Mertens decrease is the Chebyshev increase divided by `Y log Y`. Thus the surviving object is not one prime statistic but a **joint trajectory in two differently normalized error coordinates** forced by one adaptive selector geometry.
+The two errors are not independent currencies. On cells one has exactly `-dE_l = g(Z) dH_vartheta`, with `g(Z)=1/(Z log Z)`, and the switch law has the analogous positive weighted-average ratio. A whole matched run therefore remains inside one narrow Chebyshev--Mertens cone rather than wandering freely in two dimensions.
 
-This sharpens the target. A contradiction may come from a theorem controlling the admissible joint drift of `H_vartheta` and `E_l` on these source-selected intervals, or from a cross-packet argument showing that the required saddle cannot recur. Re-proving additive multiset identities or direct timing bounds attacks coordinates already known to be blind.
+RE-072 also prices threshold width. If a matched fan run spans `Delta beta=beta_m-beta_1` and its lower physical scale is `X`, then the continuous cell contribution alone forces
 
-**Boundary.** RE-071 gives a necessary opposite-drift law under the false-RH matched first-layer hypotheses. It does not prove the packets recur indefinitely, does not handle higher CA layers, and does not by itself contradict known Chebyshev/Mertens error estimates.
+`Delta H_vartheta >>_J X^(1-b_1) log X * Delta beta`.
+
+A positive threshold-width run therefore spends a monotone standard-prime excursion independently of packet cardinality. This cost is meaningful but not yet contradictory: because `b_1>1-Theta`, its exponent `1-b_1` remains below the false-RH frontier `Theta`.
+
+The live question is now global capacity. Either show that a false-RH counterexample architecture would require matched fan runs whose accumulated one-sided ledger exceeds what the coupled Chebyshev/Mertens errors can sustain, or show that the architecture must repeatedly leave the matched first-layer branch and then pay the higher-layer/fringe charges already isolated elsewhere.
+
+**Boundary.** RE-072 proves monotonicity only along the adaptively selected matched first-layer fan path, not globally in `x`. It does not prove that such runs have positive limiting threshold width, recur indefinitely, or by itself contradict available prime-error envelopes.

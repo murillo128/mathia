@@ -20,20 +20,20 @@ AF-221--AF-233 show that localization has a real information bill and that contr
 
 AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. The live bridge must assemble the required cancellation orbit before the root-rate quotient is formed.
 
-## Separate acquisition conditioning from zero-count conditioning, then test genuinely relational repairs
+## Separate acquisition conditioning from zero-count conditioning, then price representation distortion
 
 **Linked intuitions:** `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`, `MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage`, `MI-025-regular-sampling-separates-aliasing-from-finite-window-stability`, `MI-026-zero-count-fidelity-is-distance-to-the-boundary-zero-discriminant`.
 
 AF-282--AF-289 show that a finite Dirichlet prefix can be recovered by a well-conditioned mixed frame after the common-clock gauge is removed. AF-290 then identifies a separate target gate: the exact coefficient radius preserving the zero count is distance to the boundary-zero discriminant.
 
-AF-291 proves that this normalized radius collapses for raw eta truncations on every fixed RH-relevant contour even though the analytic boundary approximation converges correctly. AF-292 closes the simplest metric repair. For every positive diagonal Hilbert reweighting, the normalized margin is, up to contour constants,
+AF-291 proves that the normalized eta margin collapses on every fixed RH-relevant contour despite correct analytic boundary convergence. AF-292 shows that no positive diagonal Hilbert reweighting improves the critical-strip power. AF-293 now classifies arbitrary positive-definite Hilbert mixing under a condition-number budget:
 
-`1 / sqrt[(sum d_n^2)(sum d_n^-2 n^-2alpha)]`,
+`D_(Gamma,N)(K) asymp_Gamma min(1, sqrt(K)/(sqrt(N) H_N(alpha)))`.
 
-and the optimal diagonal choice is `d_n^2 proportional to n^-alpha`. Hence the best possible diagonal margin is `1 / sum n^-alpha`; for a critical-strip contour with `alpha < 1/2` this has exactly the same power `N^(alpha-1)` as the raw coordinates.
+Thus bounded-condition dense mixing is no better asymptotically than the raw coordinates. Making the margin order one requires `kappa(G_N) asymp N H_N(alpha)^2`, or `kappa_2(A_N) asymp sqrt(N) H_N(alpha)` for `G=A* A`, exactly the reciprocal scale of the raw margin.
 
-The live escape is therefore not another coordinatewise rescaling. It must use genuinely relational mixing, a nonlinear representation, a target-relevant quotient, or a different source/target topology, and it must show that the improved geometry composes with the AF-290 discriminant rather than hiding the same breadth bill elsewhere.
+The live escape is therefore not merely “use non-diagonal mixing.” It must supply an independently justified anisotropic geometry whose conditioning bill is mathematically meaningful, or use a nonlinear representation, target-relevant quotient, non-Hilbert topology, or another carrier whose upstream error can be proved small in the target's own stability geometry.
 
 ## Treat the information bills separately
 
-Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, and the breadth law of that target distance are distinct resources. AF-292 adds another separation: changing coordinate scales is weaker than changing relational geometry. Exact or stable upstream recovery is useful only if the final observable remains stable in its own quotient geometry.
+Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, and representation distortion are distinct resources. Exact or stable upstream recovery is useful only if the final observable remains stable in its own quotient geometry, and a coordinate transform does not remove instability when its condition number grows at the reciprocal target-margin scale.

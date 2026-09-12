@@ -14,16 +14,20 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Resolve genuinely polynomial and larger gap scales at the full-prime linear-support boundary
+## Resolve cross-scale accumulation and the macroscopic gap regime at the full-prime linear-support boundary
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-179 variance-matches every strictly sublinear support law. VIS-180 shows that sparse bounded-gap two-prime supports can retain an order-one slow beat at linear support, while VIS-181--VIS-184 progressively show that this does not survive automatically in diffuse full-prime power profiles. VIS-184 already killed every predeclared `D=o(log y)` band by coefficient-mass dilution.
+VIS-179 variance-matches every strictly sublinear support law. VIS-180 shows that sparse bounded-gap two-prime supports can retain an order-one slow beat at linear support, while VIS-181--VIS-184 progressively show that this does not survive automatically in diffuse full-prime power profiles.
 
-VIS-185 uses the actual interval kernel rather than the crude bound `|K|<=1`. On high dyadic blocks the kernel contributes a `1/d` factor, turning the averaged singular-series cost from order `D` into order `log D`. For fixed `alpha<1/2` and linear windows `H comparable to y`, every subpolynomial gap band `D=y^(o(1))` now has vanishing normalized contribution, uniformly in the interval start.
+VIS-185 uses the actual interval kernel rather than the crude bound `|K|<=1` and kills every subpolynomial cumulative gap band at linear observation scale. VIS-186 now closes each **individual polynomial mesoscopic gap octave** as well. Uniformly for `y^epsilon<=D<=y^(1-epsilon)` and `H>=c y`,
 
-Thus logarithmic and all other subpolynomial gap breadths are closed for this quadratic full-prefix mechanism. The first scale not killed by the present upper bound is genuinely polynomial, `D=y^delta`; failure of the bound there is not evidence of survival. The live object is the kernel-weighted all-gap off-diagonal sum, with polynomial and larger separations treated as part of the full distributed geometry rather than as another widening of a local band.
+`R_shell(D) << (D/y)^(2-2alpha)(log y/log D) + 1/log y -> 0`.
 
-## Keep weight geometry, transfer horizon, functional order, and crowding scale separate
+Thus no fixed shell `D=y^delta`, `0<delta<1`, can carry an order-one normalized contribution. The unresolved polynomial cumulative band can survive the current upper bound only through accumulation across `Theta(log y)` logarithmic scales, not concentration at one polynomial scale. The other untreated regime is genuinely macroscopic separation `d comparable to y`.
 
-A sparse close pair and a diffuse full-prime band live in different normalization regimes. VIS-185 shows that even an enormous subpolynomial collection of near-diagonal pairs can become negligible once the exact time-averaging kernel is paid. Future claims must preserve the same weights, support law, observation scale, and quantitative gap geometry in the matched control.
+The next coherent test should therefore analyze the log-gap distribution of the **complete off-diagonal kernel**: prove enough cross-scale cancellation to sum the shell bounds, identify a source-specific correlation that coherently couples many octaves, or isolate a macroscopic contribution. Widening another local band is no longer the right question.
+
+## Keep weight geometry, transfer horizon, functional order, one-shell crowding, and cross-scale accumulation separate
+
+A sparse close pair and a diffuse full-prime band live in different normalization regimes. VIS-186 shows that even a polynomially located mesoscopic shell becomes negligible once the exact time-averaging kernel and full-prefix normalization are paid. Any surviving claim must preserve the same weights, support law, observation scale, and quantitative gap geometry across a growing family of scales.
