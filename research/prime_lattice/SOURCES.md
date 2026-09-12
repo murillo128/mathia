@@ -210,7 +210,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 52. **Louis de Branges**, “A conjecture which implies the Riemann hypothesis,” *Journal of Functional Analysis* **121**(1) (1994), 117–184. DOI: https://doi.org/10.1006/jfan.1994.1046.
     - Role: classical prior-art anchor for `PL-043`. Places the RH problem in the framework of Hilbert spaces of entire functions/canonical systems, so a de Branges spectral route itself is established prior art rather than a new consequence of prime-exponent geometry.
 
-53. **Jean-François Burnol**, “Two complete and minimal systems associated with the zeros of the Riemann zeta function,” *Journal de Théorie des Nombres de Bordeaux* **16**(1) (2004), 65–94. DOI: https://doi.org/10.5802/jntb.434. arXiv: https://arxiv.org/abs/math/0203120.
+53. **Jean-François Burnol**, “Two complete and minimal systems associated with the zeros of the Riemann zeta function,” *Journal de Théorie des Nombres de Bordeaux* **16**(1) (2004), 65–94. DOI: https://doi.org/10.5802/jtnb.434. arXiv: https://arxiv.org/abs/math/0203120.
     - Role: main matched-control anchor for `PL-043`. Links Riemann-zero Hilbert-space properties, co-Poisson, and de Branges Sonine spaces; records special Sonine-cosine structure functions whose zeros lie on the symmetry axis, have a self-adjoint spectral interpretation, and share zeta's principal zero-density order; and explicitly states that generic Sonine functions may be given arbitrarily chosen zeros and can even have no zeros in the critical strip.
 
 54. **Jean-François Burnol**, “Des équations de Dirac et de Schrödinger pour la transformation de Fourier,” *Comptes Rendus Mathématique* **336**(11) (2003), 919–924. DOI: https://doi.org/10.1016/S1631-073X(03)00223-1. arXiv: https://arxiv.org/abs/math/0302102.
@@ -312,7 +312,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 ## Rédei matrices and support-dependent quadratic reciprocity
 
-79. **Jianing Li, Chia-Fu Yu**, “The Chevalley–Gras formula over global fields,” *Journal de Théorie des Nombres de Bordeaux* **32**(2) (2020), 525–543. DOI: https://doi.org/10.5802/jntb.1133.
+79. **Jianing Li, Chia-Fu Yu**, “The Chevalley–Gras formula over global fields,” *Journal de Théorie des Nombres de Bordeaux* **32**(2) (2020), 525–543. DOI: https://doi.org/10.5802/jtnb.1133.
     - Role: main theorem-level anchor for `PL-240`. Example 2.6 defines the Rédei matrix of a quadratic field by local Hilbert symbols, identifies its off-diagonal entries with additive Kronecker symbols between the prime discriminants, derives the row-sum relation from the Hilbert-symbol product formula, and states the exact narrow-class-group identity `rank_4 Cl^+(K)=t-1-rank(R)`.
 
 80. **Peter Stevenhagen**, “Rédei reciprocity, governing fields and negative Pell,” *Mathematical Proceedings of the Cambridge Philosophical Society* **172**(3) (2022), 627–654. DOI: https://doi.org/10.1017/S0305004121000335. arXiv: https://arxiv.org/abs/1806.06250.
@@ -369,7 +369,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 ## Finite Weil source quotients and positive discrete compression
 
 93. **Akiva Groskin**, “A finite Guinand–Weil dictionary and archimedean tail order for the truncated Weil quadratic form,” arXiv:2607.02828v3 [math.NT] (submitted 2 July 2026; revised 14 August 2026), preprint. https://arxiv.org/abs/2607.02828.
-    - Role: main exact source-calculus anchor for `PL-270`. Lemma 2.3 and Corollary 2.4 prove that the level-`N` finite source-to-form map factors through an injective quotient of exactly `2N+1` source coordinates; Theorem 2.5 identifies the resulting finite quadratic values with exact Guinand--Weil zero sums.
+    - Role: main exact source-calculus anchor for `PL-270`. Lemma 2.3 and Corollary 2.4 prove that the level-`N` finite source-to-form map factors through an injective quotient of exactly `2N+1` source coordinates; Theorem 2.5 identifies the resulting finite quadratic values with exact Guinand–Weil zero sums.
 
 94. **Federico Piazzon, Alvise Sommariva, Marco Vianello**, “Caratheodory-Tchakaloff Subsampling,” *Dolomites Research Notes on Approximation* **10**(1) (2017), 5–14. DOI: https://doi.org/10.14658/PUPJ-DRNA-2017-1-2. arXiv: https://arxiv.org/abs/1611.02065.
     - Role: classical compression anchor for `PL-270`. Theorem 1 gives the discrete Carathéodory–Tchakaloff theorem for an arbitrary finite-dimensional function space: a positive finite discrete measure can be replaced exactly, on that function space, by positive weights on at most the restricted dimension many nodes selected from its original support.
