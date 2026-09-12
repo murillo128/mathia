@@ -1,6 +1,6 @@
 # Mathia Research State
 
-Canonical evidence synthesized through `73d9e96301f09653d260d1066ff9595247f72962`. The latest independent adversarial checkpoint remains `b155177ebe27afc12e2ce9683240b1bb9444e4e4`, with `Adversarial-Reviewed-Through: a3be8c07a5a0e780a41a0d83838b65bc64a80a0c`. Current findings after that reviewed prefix are used as canonical repository evidence without being treated as adversarially cleared; the newest delta includes `AF-299`, `FD-077`, `MC-249`, `NB-076`, `RE-079`, `VIS-192`, `VIS-193`, and `WI-260`, in addition to the already post-checkpoint `PL-287`, `WP-273`, and `PF-313`. No `.review.md` sidecar is open in the current tree.
+Canonical evidence synthesized through `ceb28b7ab98ce0e936b762282f41a9009038735c`. The latest independent adversarial checkpoint is `ceb28b7ab98ce0e936b762282f41a9009038735c`, with `Adversarial-Reviewed-Through: 7b075df3be1137a982ce1587773dbc7cb67e15ad`. `MC-249` and `VIS-193` are later than that reviewed prefix and are used as current canonical evidence without being treated as adversarially cleared. No `.review.md` sidecar is open in the current tree.
 
 ## Global picture
 
