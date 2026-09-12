@@ -184,7 +184,7 @@ By Plancherel,
 \[
 \|(\tau_\delta-I)\widetilde f\|_2^2
 =
-\int_{ℝ}|e^{i\delta\xi}-1|^2|\widehat f(\xi)|^2\,d\xi.
+\int_{\mathbb R}|e^{i\delta\xi}-1|^2|\widehat f(\xi)|^2\,d\xi.
 \]
 
 Hence
@@ -244,7 +244,7 @@ For the zero extension of `f`,
 \[
 q_h(f)
 =
-\int_{ℝ}\widetilde f(x+h)\overline{\widetilde f(x)}\,dx.
+\int_{\mathbb R}\widetilde f(x+h)\overline{\widetilde f(x)}\,dx.
 \]
 
 With the unitary Fourier convention,
@@ -252,7 +252,7 @@ With the unitary Fourier convention,
 \[
 q_h(f)
 =
-\int_{ℝ}e^{ih\xi}|\widehat f(\xi)|^2\,d\xi.
+\int_{\mathbb R}e^{ih\xi}|\widehat f(\xi)|^2\,d\xi.
 \]
 
 Therefore
@@ -260,8 +260,7 @@ Therefore
 \[
 q_{h+\delta}(f)-q_h(f)
 =
-\int_{ℝ}
-e^{ih\xi}(e^{i\delta\xi}-1)|\widehat f(\xi)|^2\,d\xi,
+\int_{\mathbb R}e^{ih\xi}(e^{i\delta\xi}-1)|\widehat f(\xi)|^2\,d\xi,
 \]
 
 and directly
