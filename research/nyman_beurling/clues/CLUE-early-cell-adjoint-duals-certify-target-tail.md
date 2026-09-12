@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-early-cell-adjoint-duals-certify-target-tail
 type: research-clue
-status: resolved
+status: accepted
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -85,15 +85,13 @@ No adjoint lift, target-tail rate for zeta, cheaper projector algorithm, or impr
 
 ## Research disposition
 
-Outcome: refuted
-
-Resolved by:
-- [[research/nyman_beurling/findings/NB-059-every-finite-time-arithmetic-defect-sector-is-trivial]]
-
-`NB-059` proves that for every finite `T`,
+The direction remains in scope and worth investigating. `NB-058` gives the exact dual reduction
 
 \[
-\mathcal A^\perp\cap\ker U_T^*=\{0\}.
+\mathcal K_R=\mathcal A^\perp\cap\ker U_{\log R}^*
+=\mathcal A^\perp\cap\mathcal T_R^\perp,
 \]
 
-In particular, for every integer `R>=2`, `NB-058`'s early-time annihilator sector `K_R=A^perp cap T_R^perp` is zero and the complete late quotient satisfies `T_R=A^perp`. Hence any `h_R` required by this clue is necessarily zero. The proposed adjoint/cell-moment lift cannot supply a nontrivial compact-time arithmetic dual; with `h_R=0`, the certificate reduces to direct approximation of `e` by `A`, i.e. the original deflated Nyman problem rather than a distinct tail mechanism. The unit-outer calibration is not contradicted because its defect space does not satisfy the natural-Nyman local Dirichlet rigidity used in `NB-059`.
+but current evidence does not establish whether these finite-time arithmetic defect sectors are trivial or nontrivial. The available local-Dirichlet rigidity theorem for the disk Hardy Nyman span controls the distinguished boundary point `1`; no source-controlled bridge has been established that transports compact-time regularity in the half-plane model into that exact local class while preserving the relevant Nyman orthogonal complement.
+
+The decisive question therefore remains the original one: construct a nonzero member of `K_R` with usable source control, or prove `K_R={0}` by a correct representation-preserving argument. Until one of those succeeds, the early-cell adjoint certificate is neither established nor refuted.
