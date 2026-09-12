@@ -378,7 +378,6 @@ When `s=1`, the finite core belongs to a finite catalogue depending only on `K`.
 1=\frac1{d_1}+\cdots+\frac1{d_r},
 \qquad r\le K,
 \tag{40}
-\]
 
 the smallest denominator satisfies `d_1<=r`. Once `d_1,...,d_(a-1)` have been fixed, let
 
