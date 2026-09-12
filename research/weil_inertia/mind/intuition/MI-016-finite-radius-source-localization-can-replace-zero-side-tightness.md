@@ -1,44 +1,50 @@
-# MI-016 — First-crossing localization turns interior positivity into a signed source-flux budget
+# MI-016 — First-crossing localization compresses to one signed radial source-flux budget
 
-**Evidence level:** supported; the finite-radius mean reserve and the first-mode cutoff identity are exact in the persisted Weil model, while the arithmetic contradiction remains open.
+**Evidence level:** supported through WI-251; the finite-radius mean reserve, first-mode localization identities, and layer-cake reduction are exact in the persisted Weil model, while the arithmetic contradiction remains open.
 
-Localized Weil theory has now isolated the useful finite-radius object more sharply than a uniform discrepancy bound. WI-244--WI-246 calibrate the positive archimedean reserve and show that recombining the same positive digamma resolvents cannot improve its leading `a^-2` tariff. WI-247 then forces, under RH failure, an attained first odd zero mode `v` at a finite radius `a`, with strict odd positivity at every smaller radius `b<a`.
+WI-244--WI-247 calibrate the positive archimedean reserve and force, under RH failure, an attained first odd zero mode `v` at a finite radius `a`, with strict odd positivity at every smaller radius. WI-248--WI-249 close phase-blind alternatives: uniform symbol and all-odd discrepancy bounds are exponentially more expensive than the first-crossing tariff, so the source estimate must be conditioned on the actual zero mode.
 
-WI-248--WI-249 close the phase-blind alternatives. Uniform symbol control and even density-subtracted all-odd discrepancy estimates are exponentially more expensive than the first-crossing reserve. The source estimate must therefore be conditioned on the actual zero mode rather than hold over the whole odd window.
+WI-250 supplies that conditioning. For a real even smooth cutoff `chi` supported in `(-b,b)`, the zero-mode equation gives an exact signed source-flux inequality, with an explicit nonlocal IMS error bounded by a multiple of `||chi'||_infty^2`. This preserves the prime-minus-continuum orientation but leaves a collar-width optimization.
 
-WI-250 provides that conditioning exactly. For a real even smooth cutoff `chi` supported in `(-b,b)`, the zero-mode equation and the localized Weil decomposition give
+WI-251 removes that optimization by averaging the full nested family of sharp radial cutoffs
 
 \[
-q_b(\chi v)
-=\mathcal E_{\chi,\mathrm{mean}}(v)
-+\int_0^{2a}D_\chi(v;h)\,d\nu_a(h),
+\eta_r=\mathbf1_{\{|x|<r\}}.
 \]
 
-where `nu_a` is the signed von-Mangoldt-minus-continuum measure and
+Sharp multiplication is form-admissible for almost every radius, and the layer-cake identity
 
 \[
-D_\chi(v;h)=\int (\chi(x+h)-\chi(x))^2
+\int_0^a(\eta_r(x)-\eta_r(y))^2dr
+=\bigl||x|-|y|\bigr|
+\]
+
+converts the family of cutoff defects into one exact radial kernel. For the same first zero mode,
+
+\[
+\overline{\mathcal E}_{a,\mathrm{mean}}(v)
++\int_0^{2a}R_v(h)\,d\nu_a(h)
+\ge
+\int_0^a\lambda_r^-\|\eta_rv\|_2^2\,dr,
+\]
+
+where
+
+\[
+R_v(h)=\int\bigl||x+h|-|x|\bigr|\,
 \operatorname{Re}(v(x+h)\overline{v(x)})\,dx.
 \]
 
-The nonlocal IMS defect has the explicit universal bound
+The integrated gap-times-mass term is strictly positive. The mean localization cost is finite and universal at fixed radius:
 
 \[
-|\mathcal E_{\chi,\mathrm{mean}}(v)|
-\le \frac14\zeta(3,5/4)\|\chi'\|_\infty^2\|v\|_2^2.
+|\overline{\mathcal E}_{a,\mathrm{mean}}(v)|
+\le C_{\rm lc}(a)
+<\frac14\zeta\!\left(2,\frac54\right).
 \]
 
-Interior positivity therefore forces the directional arithmetic inequality
+Thus the old `O(ell^{-2})` smooth-collar penalty is not a structural obstruction. The nested first-crossing constraints have been compressed to a single necessary arithmetic compatibility condition for the **signed radial von-Mangoldt flux** of the forced zero mode.
 
-\[
-\int_0^{2a}D_\chi(v;h)\,d\nu_a(h)
-\ge
-\lambda_b^-\|\chi v\|_2^2
--\frac14\zeta(3,5/4)\|\chi'\|_\infty^2.
-\]
+The remaining theorem must use the actual source. Either prove a zeta-specific upper/incompatibility bound for `int R_v dnu_a`, or obtain independent quantitative information on the positive integrated gap profile and combine it with that signed flux. Taking absolute values would return to the phase-blind losses already ruled out.
 
-This is stronger conceptually than another global source envelope: every nested cutoff probes the same attained first-crossing mode, and the signed source term keeps its orientation instead of being replaced by total variation.
-
-The remaining theorem is now quantitative. One needs either a lower bound for the interior reserve times captured mode mass, a zeta-specific upper constraint on the signed cutoff flux, or a compatibility theorem showing that the same source cannot satisfy the nested cutoff inequalities simultaneously. Merely improving the mean-side resolvent decomposition or proving a radius-only bound over arbitrary odd tests cannot close this gap.
-
-**Boundary.** The localization identity and its IMS cost are not themselves RH evidence: ordinary operators with a genuine first crossing can satisfy analogous formulas. The missing contradiction must use the actual von-Mangoldt source. No lower rate for `lambda_b^-`, no uniform lower bound for `||chi v||`, and no incompatible signed-flux estimate has yet been proved.
+**Boundary.** Layer-cake localization is classical and ordinary operators with a genuine first crossing can satisfy analogous identities. WI-251 does not supply the missing arithmetic sign, a lower rate for the interior eigenvalue profile, or RH. Its contribution is to remove the arbitrary collar parameter and identify one finite source-oriented observable as the remaining localization gate.

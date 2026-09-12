@@ -1,6 +1,6 @@
-# MI-025 — Regular sampling separates aliasing, joint coupling, phase-label resolution, and coefficient stability
+# MI-025 — Regular sampling separates aliasing, joint coupling, label resolution, mixed degree, and observation count
 
-**Evidence level:** supported by the exact phase-pushforward classifications AF-279--AF-281 and the finite-prefix separation theorem AF-282 on the stated absolutely convergent ordinary-Dirichlet coefficient class.
+**Evidence level:** supported by the exact phase-pushforward classifications AF-279--AF-281 and the finite-prefix separation/stability theorems AF-282--AF-283 on the stated known-support ordinary-Dirichlet coefficient class.
 
 For
 
@@ -14,43 +14,33 @@ a single regular vertical lattice retains the phase `n -> e^{-ih log n}`, not `l
 R_h=\{r\in\mathbb Q_{>0}:h\log r\in2\pi\mathbb Z\},
 \]
 
-AF-279 gives exact coefficient fidelity for the complete bilateral lattice iff `R_h={1}`.
+AF-279 gives exact coefficient fidelity for the complete bilateral lattice iff `R_h={1}`. AF-280 shows that finitely many **separate lattice marginals** cannot generally repair individually resonant quotients on the unrestricted weighted `ell^1` source class, even when the tuple of phase labels is injective.
 
-AF-280 classifies a finite family observed as **separate lattice marginals**: it is faithful on the unrestricted weighted `ell^1` source class iff at least one cadence is individually nonresonant. If every cadence resonates, a finite group-algebra interaction lies in the common kernel. An injective tuple of phase labels is not enough when acquisition discards mixed moments.
+AF-281 gives the complementary classification for genuinely **joint mixed samples** `F(c+i(k\cdot h))`: they are the Fourier coefficients of the joint torus pushforward, so exact fidelity is equivalent to joint phase injectivity, namely `cap_j R_(h_j)={1}` for ordinary Dirichlet frequencies. Coupling can therefore repair exact aliases that separate marginals lose.
 
-AF-281 gives the complementary classification for genuinely **joint mixed samples** `F(c+i(k\cdot h))`. They are all Fourier coefficients of the joint torus pushforward, so exact fidelity is equivalent to joint phase injectivity; for ordinary Dirichlet frequencies this is precisely
-
-\[
-\bigcap_j R_{h_j}=\{1\}.
-\]
-
-Thus coupling can repair exact aliases that no separate marginal repairs. If all individual cadences resonate, strict repair requires their generated time subgroup to be dense rather than one discrete lattice, so complete exact recovery pays unbounded mixed integer-combination complexity.
-
-AF-282 prices a different finite-breadth resource for the concrete two-prime repair
+For the concrete two-prime repair
 
 \[
-h_2=2\pi/\log2,\qquad h_3=2\pi/\log3.
+h_2=2\pi/\log2,\qquad h_3=2\pi/\log3,
 \]
 
-For the joint phase nodes
+AF-282 proves that the joint nodes of the known prefix `1,...,N` have minimum spacing `Theta(1/N)`. Direct label discrimination therefore needs inverse-breadth phase accuracy, not exponentially fine resolution.
+
+AF-283 then prices the coefficient-stability degree itself. If mixed indices range over `{0,...,L-1}^2`, a two-point adjacent-coefficient test gives
 
 \[
-z_n=(e^{-2\pi i\log n/\log2},e^{-2\pi i\log n/\log3}),
-\qquad 1\le n\le N,
+\kappa_\infty(N,L)\ge
+\frac{(N-1)\log2}{4\pi(L-1)},
 \]
 
-the minimum coordinatewise chord separation satisfies
+so `L=o(N)` cannot have a breadth-uniform inverse modulus. Conversely the full square with `L=30N` is uniformly stable: the arithmetic node separation and the multivariate Vandermonde theorem give `sigma_min>0.9L`, hence per-sample error `||eta||_infty<=epsilon` yields least-squares coefficient error `||\hat b-b||_2<10epsilon/9` for `b_n=a_n n^{-c}`. Thus the sharp coordinatewise mixed-degree scale is
 
 \[
-\frac{4}{3^{1/4}\log6}\frac1N
-\le \delta_N
-\le \frac{2\pi}{\log2}\frac1{N-1}.
+L=\Theta(N).
 \]
 
-So the finite prefix's **labels themselves** separate at order `1/N`: direct noisy label identification needs `O(1/N)` phase accuracy, equivalently only `O(\log N)` bits of absolute resolution. Exact joint alias repair therefore does not hide an exponentially collapsing pairwise node spacing on the ordinary prefix.
+This closes a conditioning question but not the acquisition bill. The sufficient square contains `L^2=Theta(N^2)` scalar moments, while arbitrary recovery of `N` coefficients needs at least `N` scalar observations. Nothing in AF-283 decides whether a sparse arithmetic mixed-index family can achieve comparable stability with near-linear sample count. Nor does it remove the separate costs of timing precision, known support, the weighting `b_n=a_nn^{-c}`, or the unrestricted infinite-source near-collision obstruction.
 
-This does **not** price arbitrary coefficient recovery. Interpolating an unknown amplitude vector from mixed Fourier moments still pays mixed-mode degree, collective node geometry, observation design, and the inverse condition number of the resulting moment/Vandermonde system. On the unrestricted infinite source every fixed mixed-index box still has remote near-collisions and no source-breadth-independent inverse modulus.
+The reusable separation is therefore: **phase-fiber aliasing, retention of joint coupling, finite-prefix label spacing, stable mixed degree, scalar observation count, and target-norm conversion are different resources**. In this arithmetic channel the first four are now explicitly priced; the live finite-prefix uncertainty has moved to sparse observation design and target-sensitive recovery, not hidden exponential Vandermonde conditioning.
 
-The useful separation is therefore fourfold: **phase-fiber aliasing, retention of joint coupling, finite-prefix label resolution, and coefficient-recovery conditioning**. AF-282 removes pairwise phase-label collapse as the explanation for severe finite-prefix instability in the `log2/log3` channel; any stronger bill must enter through the moment budget, coefficient inversion, noise model, or a broader source category.
-
-**Boundary.** These statements concern declared ordinary Dirichlet frequencies and weighted `ell^1` amplitudes. Narrow Euler, automorphic, positive, sparse, or otherwise structured source categories can alter both the exact kernel and the conditioning problem. The `Theta(1/N)` result is pairwise joint-node separation, not a lower singular-value estimate for a multivariate interpolation matrix.
+**Boundary.** The stable theorem assumes the known prefix `1,...,N` and the dense rectangular mixed-moment set. It is not an unknown-support super-resolution result, a sparse-sampling theorem, or a breadth-uniform inverse for the unrestricted infinite weighted `ell^1` source.

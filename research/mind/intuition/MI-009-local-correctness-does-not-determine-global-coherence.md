@@ -1,13 +1,27 @@
-# MI-009 — Marginal correctness and positive global coherence do not select a unique arithmetic coupling
+# MI-009 — Positive global coherence can have the right index while its arithmetic scale remains programmable
 
-**Evidence level:** supported by explicit collision constructions and the Fock correlation boundaries through WP-263; this is not a statement about every restricted arithmetic source.
+**Evidence level:** supported by explicit collision constructions and the Fock correlation/finite-part boundaries through WP-264; this is not a statement about every restricted arithmetic source.
 
-On `{-1,+1}^r`, marginals of order at most `d` retain exactly Walsh moments of degree at most `d`. Positive laws of the form `2^-r(1 +/- theta chi_S)` collide under those marginals whenever `|S|>d` (AF-032). The same centered-product mechanism occurs in the prime-Cauchy Gram problem: WP-236 constructs positive critical kernels that agree with the Bost--Connes kernel on every valuation difference supported on at most `d` primes but differ on an interaction of `d+1` primes. Thus any fixed proper-marginal order leaves explicit higher-order directions invisible.
+Proper marginals do not identify a positive joint law: centered higher-order perturbations can preserve every retained lower-order marginal. The same phenomenon appears in the prime-Cauchy setting, where positive critical kernels can agree on all bounded-support valuation differences yet differ on a higher-order prime interaction.
 
-WP-262 adds a complementary obstruction. Even after demanding an actual global positive cross-prime Gram, the exact critical Mangoldt diagonal and bounded/closable infinite-dimensional realization still do not select the coupling. For every locally finite graph on the primes, normalized incidence through mixed-composite symmetric-Fock states gives the same critical diagonal while the off-diagonal support and edge phases remain programmable.
+The Fock branch adds increasingly global versions of the same selection problem. WP-262 shows that exact critical Mangoldt diagonal data plus a bounded positive cross-prime Gram still leave locally finite graph support and edge phases programmable. WP-263 lets the source Hamiltonian choose the obvious weighted complete graph, but critical unit-diagonal normalization collapses every fixed prime-prime correlation on the prime layer because `sum_p1/p` diverges.
 
-WP-263 then tests whether the source Hamiltonian supplies the missing selector. Conditional-Gibbs complete incidence does pick a canonical weighted complete graph, but matching the Weil half-density forces `beta=1`; on the prime layer the normalization contains `sum_p1/p`, which diverges. Finite-cutoff normalization preserving unit diagonal therefore drives every fixed prime-prime correlation to zero. The higher prime-power layers survive, but the critical prime layer loses the interaction one was trying to select.
+WP-264 shows that this normalized collapse hides a nontrivial finite part. Before normalization,
 
-The source-selection problem therefore has three independent parts. A valid arithmetic identity must exclude higher-order perturbations invisible to retained proper marginals, select one correlation geometry among many positive closable realizations with the same local coefficients, and keep that selected interaction nontrivial under the critical prime-layer normalization. Positivity, exact diagonal data, closability, and a natural Gibbs weight do not jointly guarantee these properties.
+\[
+M_X=H_XD_W+a_Xa_X^*-2D_X,
+\]
 
-Full independence is one exact mechanism that excludes centered-product perturbations in the Bost--Connes source, but it is not automatically the completed Weil coupling. A successful source identity must be derived from the intended arithmetic construction and then compared to the target pairing rather than chosen because its Gram is positive or canonical-looking.
+and subtracting the divergent `H_XD_W` leaves a trace-class remainder `R=aa^*-2D` with exactly one positive direction and strict negativity on the canonical primitive hyperplane `ker a^*`. Thus positive global coherence can acquire a sharp Hodge-like signature.
+
+That signature still does not select the arithmetic metric. A finite shift in the subtraction produces
+
+\[
+R_C=aa^*-2D+CD_W.
+\]
+
+Every `C<=0` has the same one-positive-direction sign pattern, while `C>0` has infinite positive index. The critical Weil half-density `D_W` is exactly the unfixed counterterm direction. Consequently even **global sign structure** can be insensitive to the finite normalization that determines the target coefficient scale.
+
+The source-selection problem therefore has at least four logically distinct parts: exclude hidden higher-order directions, select one correlation geometry, keep it nontrivial at the critical boundary, and fix its finite renormalization intrinsically. Positivity, closability, a natural Gibbs weight, and even an index-one signature do not jointly guarantee those properties.
+
+A successful source identity must be derived before comparison with the target and must determine the finite scale it uses. Choosing a counterterm because it produces the desired Weil coefficient is another form of programmability, even when the resulting form is positive on the intended primitive subspace.

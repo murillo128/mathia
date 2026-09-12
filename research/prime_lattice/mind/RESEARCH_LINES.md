@@ -8,14 +8,22 @@ This file holds the current mathematical questions suggested by the durable prim
 
 PL-259--PL-276 show that source recovery is not positivity: finite positive interior sources are eventually sign-indefinite and no fixed compact correction removes their two-sided high-frequency Morse defect.
 
-PL-278 shows that canonical noncompact completion repairs the high-frequency source defect generically. The completed localized Weil operator has compact resolvent and only finitely many negative eigenvalues, and the eventually positive tail survives arbitrary finite signed source replacement. The RH-facing information is therefore confined to the finite low/mesoscopic negative sector.
+PL-278 shows that canonical noncompact completion repairs the high-frequency source defect generically. The completed localized Weil operator has compact resolvent and only finitely many negative eigenvalues, so RH-facing information is confined to the finite low/mesoscopic residual sector. PL-279 shows individual newly activated prime-power terms enter quadratically softly in the canonical form topology.
 
-PL-279 rules out an isolated threshold shock as the obvious mechanism for that sector. A newly active prime-power contribution turns on quadratically softly in the canonical `H_0^1` form topology.
+PL-280 makes the cross-aperture direction one-sided: the localized form domains are nested, so every ordered min-max level is nonincreasing with aperture and the negative Morse index `nu(a)` is nondecreasing. Once a level crosses below zero, later source activation cannot heal it.
 
-PL-280 now makes the cross-aperture direction one-sided. The localized form domains are nested, so the min-max levels satisfy `lambda_k(b)<=lambda_k(a)` for `a<b`; the negative Morse index is nondecreasing with aperture. Once a variational level becomes negative, later prime-power activation cannot heal it.
+PL-281 closes the remaining localization-exhaustion loophole inside this canonical support family. If `kappa_c` is the negative index of the global compact-support Weil form, then
 
-The live theorem is therefore crossing prevention. A viable arithmetic mechanism must prove a source-specific coercive inequality, constrain the first variational level, or control the accumulated low/mesoscopic source strongly enough that no forbidden crossing ever occurs. Later signed compensation after a crossing is no longer an available mechanism.
+\[
+\kappa_c=\sup_{a>0}\nu(a)=\lim_{a\to\infty}\nu(a).
+\]
 
-## Treat source recovery, compact obstruction, generic tail repair, local threshold softness, and one-sided residual order as separate gates
+A finite global defect cannot drift outward while remaining invisible to every finite window. If `kappa_c=r<\infty`, the localized index stabilizes exactly at `r` after some finite aperture; if `kappa_c=\infty`, the finite-aperture indices become unbounded.
 
-The projective tower is source-lossless; finite positive aggregation is sign-indefinite; compact completion cannot repair it; canonical noncompact completion repairs the spectral tail generically; individual atoms enter softly; and negative variational levels persist once created. A successful arithmetic mechanism must distinguish the finite residual sector by preventing its crossings, not by hoping later source events restore positivity.
+The live theorem is therefore purely crossing prevention for the actual arithmetic form. There is no separate “negative direction at infinity” to exclude after positivity has been proved on every finite aperture. A viable source-specific mechanism must keep the first variational level from crossing, for example by a coercive completed-Weil inequality or another arithmetic restriction on the low/mesoscopic source.
+
+## Treat source recovery, generic tail repair, threshold softness, monotone index, and index exhaustion as separate gates
+
+The projective tower is source-lossless; finite positive aggregation is sign-indefinite; canonical noncompact completion repairs the spectral tail generically; individual atoms enter softly; negative levels persist once created; and nested support localization exhausts the compact-support negative index exactly.
+
+What remains unresolved is not visibility of a finite defect but its **existence**. PL-281 does not identify `kappa_c` with Bombieri's Fourier-side finite-defect count or with off-critical zeros. Any such arithmetic identification still needs its own theorem.

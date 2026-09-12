@@ -1,27 +1,27 @@
-# MI-008 — Exact separation, joint coupling, label resolution, coefficient stability, and local contraction are different losses
+# MI-008 — Exact separation, stable degree, scalar sample count, and accumulated local loss are different resources
 
-**Evidence level:** supported by the specified inverse, sampling, and propagation models; no common universal condition number is claimed.
+**Evidence level:** supported by the specified inverse, sampling, and propagation models through AF-283 and PF-299; no common universal condition number is claimed.
 
-For finite Blaschke inversion, AF-178 gives a local inverse constant controlled by zero separation: exact recovery survives while conditioning diverges as zeros collide. This is a local metric statement, not a generic source-recovery law.
+Dirichlet acquisition already separates phase fibers from coupling. AF-279 classifies one regular vertical lattice; AF-280 shows that several **separate** resonant marginals can lose mixed interactions even when their phase-label tuple is injective; AF-281 shows that complete mixed samples recover the joint torus law when the common resonance intersection is trivial.
 
-Dirichlet acquisition separates several different losses. AF-279 shows that one regular vertical lattice first quotients frequencies through `lambda -> e^{-ih lambda}`. AF-280 shows that finitely many **separate** lattice marginals cannot repair several individually resonant quotients on the unrestricted weighted `ell^1` source class: a mixed interaction can lie in every marginal kernel even when the tuple of phase labels is injective.
-
-AF-281 shows what genuine joint coupling changes. Complete mixed samples `F(c+i(k\cdot h))` are the Fourier coefficients of the joint torus pushforward, so ordinary Dirichlet coefficient fidelity is equivalent to
+AF-282 prices finite-prefix label geometry for the concrete cadences `2pi/log2` and `2pi/log3`: the joint phase nodes of `1,...,N` have minimum spacing `Theta(1/N)`. AF-283 then prices coefficient stability itself. On the known prefix, coordinatewise mixed degree has the sharp scale
 
 \[
-\bigcap_jR_{h_j}=\{1\}.
+L=\Theta(N).
 \]
 
-If all individual cadences resonate, a strict repair requires their generated time subgroup to be dense rather than one discrete lattice. Exact repair therefore pays unbounded mixed integer-combination complexity, and every fixed mixed-index box still has remote near-aliases on an unrestricted infinite source.
+A two-point lower bound makes `L=o(N)` uniformly unstable, while the dense square with `L=30N` has a breadth-uniform least-squares inverse under per-sample absolute noise. Thus pairwise spacing did not hide an exponential Vandermonde barrier in the **degree** resource.
 
-AF-282 isolates a narrower finite-prefix bill for the concrete joint cadences `2\pi/\log2` and `2\pi/\log3`. The joint phase nodes of `1,\ldots,N` have minimum coordinatewise chord separation
+But stable degree is not observation complexity. The proved design uses `Theta(N^2)` scalar mixed moments and only the elementary `Omega(N)` rank lower bound is known. Sparse sample design, timing precision, support knowledge, source weighting, and the target coefficient norm remain separate bills. Exact injectivity, inverse-breadth labels, and linear stable degree do not imply near-linear acquisition.
+
+Prime Flute supplies an analogous distinction for repeated local maps. PF-297 shows that finite-section Robin contraction is truncation leakage and the complete positive map preserves `q`-mass. PF-298 gives scalar pant transmission `1-O(s_n)`. PF-299 then proves
 
 \[
-\delta_N=\Theta(N^{-1}),
+(s_n)\notin\ell^1,
+\qquad
+(s_n)\in\ell^q\quad(q>1).
 \]
 
-with explicit upper and lower constants. Thus direct source-label discrimination needs only inverse-breadth phase accuracy (`O(\log N)` bits of absolute resolution), not exponentially fine phase resolution. Any substantially worse finite-prefix instability must come from mixed-mode degree, collective interpolation geometry, coefficient inversion, the noise/observation model, or a broader source class. Pairwise label separation is not a Vandermonde singular-value theorem.
+So `O(s_n)` is exactly a critical accumulation bound: any fixed superlinear loss law is summable, whereas an eventual linear lower law forces total scalar absorption. A local factor tending to the identity is therefore not enough information; the first-order loss scale matters.
 
-Prime Flute supplies a separate composition warning. PF-297 shows that finite-section Robin contraction is truncation leakage: the norms tend to one and the complete positive map preserves `q`-mass. PF-298 shows that the neighboring pant's lowest constant channel is likewise nearly conservative, with transmission `1-O(s_n)`. Local strictness or coercivity therefore does not supply a depth-uniform return gap.
-
-The common lesson is not merely that “conditioning matters,” but that the relevant loss must be attached to the actual map. Source breadth can create phase fibers; acquisition can discard cross-channel coupling; finite labels can approach at a known `1/N` scale; coefficient recovery can be much worse than pairwise separation; and repeated propagation can lose a uniform gap even when every finite stage contracts. These are different quantities and none can substitute for another without an explicit comparison theorem.
+The common structural lesson is map-specific. Source breadth can create aliases; acquisition can discard coupling; stable interpolation can require a known degree; observation count can remain open after conditioning is controlled; and repeated propagation can sit at a sharp summability threshold. Each loss needs its own quantitative theorem rather than being inferred from a neighboring resource.

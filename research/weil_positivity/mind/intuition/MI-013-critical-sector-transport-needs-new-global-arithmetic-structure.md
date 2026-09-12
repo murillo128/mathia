@@ -1,15 +1,33 @@
-# MI-013 — Critical half-density needs a source-selected prime-layer correlation that survives normalization
+# MI-013 — Critical prime-layer coherence exists as a finite part, but its Weil scale is not source-selected
 
-**Evidence level:** supported by the exact Fock coefficient carrier and correlation boundaries through WP-263; completed Weil orientation remains open.
+**Evidence level:** supported by the exact Fock coefficient carrier and correlation/renormalization boundaries through WP-264; completed Weil orientation remains open.
 
-WP-256 produces the exact positive Mangoldt half-density from prime-word multiplicity and arithmetic energy. WP-259 passes canonically to the permutation-fixed sector, restoring the `beta=1` Gibbs boundary while retaining the prime-power diagonal `Lambda(n)/sqrt(n)`. WP-260 shows that canonical bosonic Gibbs/Fisher convexity does not supply the desired pairing because it inserts an extra occupation factor.
+WP-256 produces the exact positive Mangoldt half-density from prime-word multiplicity and arithmetic energy. WP-259 passes canonically to the permutation-fixed sector, restoring the `beta=1` Gibbs boundary while retaining the prime-power diagonal `Lambda(n)/sqrt(n)`. WP-260 shows that canonical bosonic Gibbs/Fisher convexity inserts the wrong occupation factor.
 
-WP-261 tests coherent cross-prime mixing through a common finite-dimensional boundary. Finite truncations have the correct diagonal and nonzero cross-prime entries, but the infinite boundary map is nonclosable throughout the critical regime.
+WP-261--WP-263 test increasingly global cross-prime mechanisms. Finite-dimensional coherent collapse is nonclosable at the critical scale. Infinite-dimensional locally finite incidence is bounded but leaves support/phases programmable. Conditional-Gibbs complete incidence finally lets the source Hamiltonian choose a canonical weighted complete graph, but critical unit-diagonal normalization collapses its fixed prime-prime correlations because `sum_p1/p` diverges.
 
-WP-262 shows that moving to infinite dimension does not solve source selection. For any locally finite graph on the primes, normalized pair-incidence vectors built from mixed-composite symmetric-Fock states define a bounded positive Gram with the same exact critical diagonal and nonzero cross-prime correlations. The graph support and edge phases are programmable while boundedness and positivity survive.
+WP-264 shows that this collapse does not mean the pre-normalized prime layer is geometrically empty. Its cutoff Gram has the exact decomposition
 
-WP-263 tests the most direct way to remove that freedom using the source Hamiltonian. Conditional-Gibbs complete incidence with partner weight `q^{-\beta k/2}` is canonical whenever `sum_q q^{-\beta k}` converges. Matching the Weil half-density fixes `beta=1`. Then the prime layer `k=1` hits the divergent boundary `sum_p1/p=infinity`: after finite-cutoff normalization preserving unit diagonal, every fixed prime-prime correlation tends to zero. The same construction remains nontrivial for `k>=2`, so the collapse is a critical prime-layer effect rather than a generic failure of Gibbs geometry.
+\[
+M_X=H_XD_W+a_Xa_X^*-2D_X,
+\]
 
-The missing object is therefore more specific than a closable infinite-dimensional correspondence. It must be **source-forced, nonprogrammable, and normalization-stable on the prime layer**. Its cross-prime interaction must arise before or outside the divergent conditional normalization while retaining the exact Mangoldt half-density. Only after that gate is passed can one test the completed Weil orientation and Gamma/polar sectors.
+so subtracting the divergent diagonal coefficient produces
 
-**Boundary.** WP-263 excludes only this conditional-Gibbs complete-incidence completion. A quotient, boundary response, weighted dense kernel, cohomological construction, or another source-native global operation could still select a nontrivial critical prime-layer law.
+\[
+R=aa^*-2D.
+\]
+
+This trace-class remainder has exactly one positive direction and is strictly negative on `ker a^*`. The complete mixed-prime term therefore generates a genuine global Hodge-like signature rather than the programmable local-graph behavior alone.
+
+The missing source-selection problem has moved from **correlation support** to **finite-part normalization**. Replacing the subtraction by any asymptotically shifted scalar finite part yields
+
+\[
+R_C=aa^*-2D+CD_W.
+\]
+
+For every `C<=0`, the one-positive-direction sign theorem survives; for `C>0`, the positive index becomes infinite. Hence the sign theorem cannot determine the finite constant. Worse, the critical Weil carrier `D_W=diag((log p)/sqrt p)` is exactly the unfixed counterterm direction. At the minimal choice `C=0`, the primitive negative metric uses only `(log p)/p^{3/2}`.
+
+The source-forced object must therefore do more than preserve nonzero prime-prime coherence. It must **fix its finite renormalization intrinsically** while retaining the useful mixed-prime signature, and only then can the resulting pairing be compared with the completed Weil form and its Gamma/polar terms. A counterterm selected because it produces the desired coefficient is programmable even if the resulting form has the right index.
+
+**Boundary.** WP-264 does not rule out a canonical boundary response, quotient, cohomological construction, or non-scalar subtraction. It shows only that the current complete-incidence source plus its index-one sign condition is insufficient to select the Weil scale: a robust signature is weaker than a canonical arithmetic metric.

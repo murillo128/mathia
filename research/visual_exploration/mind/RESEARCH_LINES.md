@@ -18,12 +18,22 @@ VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic ar
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers every preassigned fixed moment of the matched weighted Haar null to the deterministic continuous prime-log orbit under an explicit horizon budget.
+VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers preassigned fixed moments of the matched weighted Haar null to deterministic continuous prime-log averaging.
 
-VIS-175 and VIS-176 now close both full-law weight phases under broad polylogarithmic support. If the weights are square-summable, the empirical law converges to the generally non-Gaussian infinite weighted Haar law under `yW_y^2/H -> 0`. In the complementary Lindeberg regime, vanishing maximal normalized weight plus the fixed-moment transfer gates force the complete law to `N(0,1/8)`. For the prime-power family `w_p=p^(-alpha)`, every `alpha>=0` is therefore controlled at any fixed polylogarithmic cutoff: Gaussian for `alpha<=1/2`, generally non-Gaussian for `alpha>1/2`.
+VIS-175 and VIS-176 close both full-law weight phases in their original growth regimes. Square-summable weights converge to the generally non-Gaussian infinite weighted-Haar law; the complementary Lindeberg regime converges to `N(0,1/8)` when every fixed moment transfers.
 
-The visible transition at `alpha=1/2` is itself a representation phase transition, not arithmetic evidence. A surviving statistic must leave the ordinary bounded-continuous additive prime-torus class in an essential way: use Gram/discrete sampling with its own clock control, a genuine hybrid prime/zero variable, a rare or shrinking event, an unbounded functional, substantially faster support growth beyond the current sufficient gates, or another source-dependent observable not reducible to the same normalized additive field.
+VIS-177 sharpens the elementary character-separation bill. A nonzero character in the `k`th moment has frequency at least
 
-## Keep source corrections, deterministic clock mixing, weighted null calibration, transfer horizon, and functional class separate
+\[
+\frac1{2y^{\lfloor k/2\rfloor}},
+\]
 
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape; VIS-175--VIS-176 cover the full bounded-continuous law on both prime-power weight phases under continuous vertical averaging; held-out primes calibrate stable-decoder failure. A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support growth, sampling geometry, observation scale, and functional class.
+so the transfer error uses `y^floor(k/2) D_2(y)^(k/2)/H` rather than the older `y^k` frequency bound. For prime-power weights `w_p=p^{-alpha}`, `0<=alpha<=1/2`, this extends the complete Gaussian weak law to **every subpolynomial cutoff `y(H)=H^{o(1)}`**.
+
+Thus merely moving beyond polylogarithmic support does not leave the representation-matched continuous null. A surviving Lindeberg-phase support escape must reach a genuinely polynomial-or-faster regime not controlled by the present all-fixed-moment argument, or change the functional/sampling class: Gram/discrete sampling, hybrid prime/zero variables, rare or shrinking events, unbounded observables, or another source-bearing statistic outside the additive prime torus.
+
+## Keep source corrections, clock mixing, weighted null shape, transfer horizon, and functional class separate
+
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-177 enlarges the continuous Lindeberg null from polylogarithmic to arbitrary subpolynomial support but does not prove failure at fixed positive-power support.
+
+A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support law, sampling geometry, observation scale, and functional class. Polynomial support, discrete sampling, and stronger-than-weak observables remain open boundaries, not positive mechanisms.

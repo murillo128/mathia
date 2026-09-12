@@ -1,6 +1,6 @@
-# MI-004 — The collective late Nyman quotient is exactly a finite-time defect problem
+# MI-004 — The collective late Nyman quotient is governed by one dyadic backward shift
 
-**Evidence level:** proved structural identities in NB-049--NB-058; whether the arithmetic defect is exhausted by finite-time sectors remains open.
+**Evidence level:** proved structural identities through NB-060; whether the arithmetic generalized nullspace reaches the canonical residual remains open.
 
 After removing the common off-critical Blaschke factor, the natural Nyman closure is `\mathcal A` and its defect space is
 
@@ -8,53 +8,57 @@ After removing the common off-critical Blaschke factor, the natural Nyman closur
 \mathcal D=\mathcal A^\perp.
 \]
 
-NB-053--NB-057 show that raw late quotient columns shrink and that the actual canonical finite residual becomes invisible to every sufficiently late **individual** shifted block. NB-058 identifies what remains when all late directions are taken collectively.
-
-For `R>=2`, let
-
-\[
-\mathcal T_R=
-\overline{\operatorname{span}}\{v_a:a\ge\log R\},
-\qquad
-V_R=Q U_{\log R}|_{\mathcal D}.
-\]
-
-The late quotient tail is exactly
-
-\[
-\mathcal T_R=\overline{\operatorname{Ran}V_R}.
-\]
-
-Its orthogonal complement inside the arithmetic defect is
+NB-053--NB-057 show that raw late quotient columns shrink and that the canonical finite residual becomes invisible to every sufficiently late **individual** shifted block. NB-058 identifies the collective loophole by the finite-time defect sectors
 
 \[
 \mathcal K_R
-=\mathcal D\cap\mathcal T_R^\perp
 =\mathcal D\cap\ker U_{\log R}^*.
 \]
 
-Under the Paley--Wiener representation, this has the concrete meaning
+Under Paley--Wiener these are exactly the defect vectors supported in `[0,log R]`, and the collective late target mass is the distance of `h_*=Qe` from `\mathcal K_R`.
+
+NB-060 turns the whole finite-cutoff family into a one-operator root-space problem. Define
 
 \[
-\mathcal K_R=
-\{h\in\mathcal D:
-\operatorname{supp}(\mathcal P^{-1}h)\subseteq[0,\log R]\}.
+B_2:=U_{\log2}^*|_{\mathcal D}.
 \]
 
-So the surviving multichannel question is no longer vague “conditioning of many weak columns.” It is whether the **actual arithmetic defect space contains enough compact-time vectors**.
-
-For the canonical limiting residual `h_*=Qe`, the collective late target mass satisfies the exact dual identity
+Integer-log invariance gives
 
 \[
-\|P_{\mathcal T_R}h_*\|^2
+\mathcal K_{2^k}=\ker B_2^k,
+\]
+
+and dyadic cofinality gives
+
+\[
+\mathcal K_{\rm fin}
+:=\overline{\bigcup_{R\ge2}\mathcal K_R}
 =
-\operatorname{dist}(h_*,\mathcal K_R)^2.
+\overline{\bigcup_{k\ge1}\ker B_2^k}.
 \]
 
-Hence the late-tail contribution tends to zero iff `h_*` lies in the norm closure of defect vectors with finite Paley--Wiener support. The unit-outer control realizes this mechanism explicitly and gives its familiar `1/(36R^3)+O(R^{-4})` tail through finite-cell detail spaces.
+Hence
 
-This sharply separates individual and collective disappearance. It is consistent with all current results that `\mathcal K_R={0}` for every finite `R`, in which case `\mathcal T_R=\mathcal D` for every cutoff even though every sufficiently late individual block has vanishing projection against the canonical moving residual.
+\[
+\mathcal K_2=\{0\}
+\iff
+\mathcal K_R=\{0\}\text{ for every finite }R.
+\]
 
-The next source theorem should therefore construct quantitative compact-time arithmetic defects approximating `h_*`, or prove that these localized sectors are too small. Another one-column estimate cannot decide the repair distance.
+This is stronger than a convenient subsequence reduction. If any compact-time arithmetic defect exists at any scale, repeatedly applying the backward shift produces a nonzero defect already in the first window `[0,log2]`. Existence is therefore a fixed-scale question.
 
-**Boundary.** This reduction does not prove that finite-time defects are dense, that the collective tail vanishes, or that the flat cubic rate transfers to zeta. It identifies the exact source-specific object whose geometry decides those questions.
+The canonical tail is a different question. Its limiting mass is exactly
+
+\[
+\operatorname{dist}\!\left(
+ h_*,
+ \overline{\bigcup_{k\ge1}\ker B_2^k}
+\right)^2.
+\]
+
+A nonzero first-window kernel supplies only a seed; decay requires its generalized root tower to approximate `h_*`. Conversely, if `ker B_2=0`, every finite defect sector vanishes and the collective late quotient remains the entire defect space at every finite cutoff even though each sufficiently late individual block is weak against the canonical residual.
+
+The unit-outer control realizes the dense generalized-kernel branch: the dyadic root spaces exhaust the flat defect space. The arithmetic problem is precisely whether the actual deflated Nyman space has comparable root-space abundance.
+
+**Boundary.** NB-060 does not construct a nonzero element of `ker B_2`, prove density of the generalized nullspace, or transfer the flat model's cubic tail rate to zeta. It replaces a moving family of existence questions by one first-window kernel plus a separate generalized-root approximation problem.

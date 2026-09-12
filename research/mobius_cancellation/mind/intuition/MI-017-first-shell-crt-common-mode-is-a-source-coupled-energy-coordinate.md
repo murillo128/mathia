@@ -1,33 +1,48 @@
-# MI-017 — First-shell parity is already a singleton-cell problem, but not a divisibility-pairing problem
+# MI-017 — First-shell exact cells can be replaced by graded CRT progression sums at subpower cost
 
-**Evidence level:** supported by the exact CRT and incidence-cell reductions in MC-228--MC-231; no new Möbius cancellation estimate is claimed.
+**Evidence level:** supported by the exact CRT, incidence-cell, and Boolean-transform reductions MC-228--MC-232; no new Möbius cancellation estimate is claimed.
 
-For the first square-defect shell, MC-228--MC-229 show that high incidence is cheap by support. Incidence above one quarter of `log X/loglog X` contributes only target-scale weighted energy, so the hard source region is low/mesoscopic incidence.
+For the first square-defect shell, MC-228--MC-229 show that high incidence is cheap by support. MC-230 then gives a sufficient diagonal target in terms of exact incidence cells `C_S`, while MC-231 shows that the difficult sign geometry is already present at incidence one and cannot be removed by a cheap same-cell divisibility involution.
 
-MC-230 removes a further apparent coupling obligation. If `C_S` is the signed Möbius sum on the exact incidence cell `I_y(n)=S` and
-
-\[
-\mathcal C_y(X)=\sum_S w(S)|C_S(X)|^2,
-\]
-
-then the number of possible shell subsets is `X^{o(1)}` and
+MC-232 changes the useful representation of that target. Define the upper Boolean zeta transform
 
 \[
-W_y(X)\le X^{o(1)}\mathcal C_y(X).
+B_S=\sum_{U\supseteq S}C_U.
 \]
 
-Thus cross-cell anti-alignment is not power-essential: target-scale aggregate cancellation inside the exact cells is already sufficient.
-
-MC-231 shows that this cellwise problem is not merely mesoscopic. For each shell coordinate `d`, the exact singleton cell retains asymptotically all of its nonzero square-free support and therefore reproduces the same unsigned `X^{2-o(1)}` energy scale. The difficult parity geometry is already present when the input hits exactly one shell square.
-
-At the same time, multiplicativity does not give a cheap internal involution. If `m<n` lie in the same singleton cell and `m|n`, then
+After decomposing the weighted energies coordinatewise, the Boolean transform and its inverse have squared `ell^2` condition factor
 
 \[
-\frac nm\equiv1\pmod{d^2},
+\kappa^{m_y-1},\qquad \kappa=\frac{3+\sqrt5}{2},
 \]
 
-so the ratio is at least `d^2+1`. Any disjoint opposite-sign pairing built from same-cell divisibility must use its smaller endpoint below `X/(d^2(d^2+1))` and can touch only an `o(1)` fraction of the singleton support. Adding or removing factors while preserving the cell therefore cannot be the missing parity certificate.
+where `m_y=O(log X/loglog X)`. Hence `\kappa^{m_y}=X^{o(1)}`: at fixed-power resolution the exact-cell energy and the partial-intersection energy are equivalent. The exclusions defining “exactly this incidence set” are therefore not power-essential inside the diagonal route.
 
-The remaining theorem must control Möbius signs among mostly divisibility-incomparable singleton inputs, or introduce genuinely additive, bilinear, harmonic, or cross-cell arithmetic information. The exact-cell diagonalization makes inter-cell cancellation optional; MC-231 makes naive intra-cell multiplicative matching ineffective.
+The arithmetic payoff is exact. For `Q_S=prod_(d in S)d^2`, each partial intersection is the single source-selected affine sum
 
-**Boundary.** The diagonal target is sufficient rather than necessary, and MC-231 rules out only disjoint same-cell divisibility pairings. It does not rule out many-to-many identities, additive pairings, spectral methods, or source-coupled mechanisms that move between cells.
+\[
+B_S(X)=
+\sum_{\substack{P/Q_S<k\le X/Q_S\\(k,P)=1}}
+\mu(kQ_S-P).
+\]
+
+Thus the hard object is no longer an exact-cell combinatorial mask. It is a sparse family of Möbius sums with moving coefficient `Q_S`, common primorial source `P`, and roughness condition `(k,P)=1`.
+
+The cancellation bill is graded by incidence depth. If
+
+\[
+|S|=(\alpha+o(1))\frac{\log X}{\log\log X},
+\qquad 0\le\alpha<\frac14,
+\]
+
+then `Q_S=X^{2\alpha+o(1)}` and the lifted interval length is `L_S=X^{1-2\alpha+o(1)}`. A sufficient uniform target is still
+
+\[
+|B_S(X)|\le X^{1/2+o(1)},
+\]
+
+so the missing gain over trivial support is `X^{1/2-2\alpha+o(1)}`. The bottom levels are genuine square-root-in-`X` problems; the required cancellation weakens continuously and becomes support-trivial at `\alpha=1/4`.
+
+This refines the MC-231 obstruction rather than contradicting it. Same-cell multiplicative pairing is ineffective, but Boolean inversion shows that the stronger diagonalized route can be attacked through additive/bilinear/harmonic structure of the clean CRT lifts without preserving exact-cell membership pointwise.
+
+**Boundary.** The Boolean equivalence is between two sufficient diagonal energies, not between either of them and the original shell energy `W_y`. Cross-cell cancellation may still help the original problem. MC-232 also proves no bound for deterministic Möbius on the affine family; it only identifies the exponent-resolved target that a source theorem must cross.

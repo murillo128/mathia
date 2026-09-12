@@ -1,6 +1,6 @@
-# MI-010 — Weighted prime-phase nulls have separate concentration, shape, and full-law transfer regimes
+# MI-010 — Weighted prime-phase nulls have separate concentration, shape, and support-transfer regimes
 
-**Evidence level:** supported by the weighted-Haar calculations and deterministic transfer theorems VIS-173--VIS-176.
+**Evidence level:** supported by weighted-Haar calculations and deterministic transfer theorems VIS-173--VIS-177.
 
 For positive weights `w_j`, put
 
@@ -14,20 +14,32 @@ and
 D_2=\frac{W^2}{Q},\qquad D_4=\frac{Q^2}{R}.
 \]
 
-VIS-173 shows that `D_2` and `D_4` control different parts of the matched Haar null. `D_2` governs leading concentration/effective support, while `D_4` governs whether the first standardized correction Gaussianizes. The bulk can concentrate while a finite set of heavy low-prime coordinates keeps the law non-Gaussian.
+VIS-173 shows that `D_2` and `D_4` control different parts of the matched Haar null. `D_2` governs leading concentration/effective support, while `D_4` governs whether standardized shape Gaussianizes. The bulk can concentrate while heavy low-prime coordinates keep a non-Gaussian law.
 
-VIS-174 shows that fixed moments of these matched Haar laws transfer to deterministic continuous prime-log averaging under the explicit horizon condition `y^k D_2(y)^(k/2)/H -> 0` for each declared order `k`.
-
-VIS-175 and VIS-176 turn the weight geometry into a complete weak-law phase boundary. In the square-summable regime `sum_p w_p^2<infinity`, the full bounded-Lipschitz law converges under `yW_y^2/H -> 0` to the infinite weighted Haar convolution, which can retain a strictly non-Gaussian fourth cumulant. In the Lindeberg regime
+VIS-174 transfers fixed moments of the matched Haar law to deterministic continuous prime-log averaging. VIS-177 sharpens its elementary character geometry: after balancing positive and negative multiplicities, every nonzero character in the `k`th moment has
 
 \[
-\max_p\frac{w_p}{\sqrt{Q_y}}\to0,
+|\lambda|\ge\frac1{2y^{\lfloor k/2\rfloor}},
 \]
 
-if the VIS-174 gate holds for every fixed moment order, the deterministic vertical law converges instead to `N(0,1/8)`.
+so the deterministic/Haar moment discrepancy is bounded at scale
 
-For prime-power weights `w_p=p^{-\alpha}` and any fixed polylogarithmic cutoff, these two theorems cover every `\alpha>=0`: the normalized law is Gaussian for `0<=\alpha<=1/2` and generally non-Gaussian infinite-Haar for `\alpha>1/2`. Both behaviors are representation-matched nulls. The change at `\alpha=1/2` is not a source discriminator.
+\[
+\frac{y^{\lfloor k/2\rfloor}D_2(y)^{k/2}}{H}
+\]
 
-A source-sensitive statistic must therefore leave more than one side of the square-summability boundary. It must use a different sampling rule, a source-bearing hybrid/zero variable, a rare/shrinking or unbounded functional beyond weak convergence, support growth outside the available transfer gates, or another observable not determined by the normalized additive prime torus.
+up to the explicit fixed-order constant. The improvement is purely representational—unique factorization plus near-resonant balance—not a new zeta signal.
 
-**Boundary.** VIS-175--VIS-176 concern continuous vertical averaging and fixed bounded-continuous tests in their stated growth regimes. They do not cover Gram/discrete sampling, moving extreme thresholds, decoder singularities, hybrid variables, or arbitrary fast support growth.
+VIS-175 and VIS-176 turn the weight geometry into full weak-law regimes. In the square-summable phase, the limit is the infinite weighted Haar convolution under its transfer gate. In the Lindeberg phase, vanishing maximal normalized weight plus transfer of every fixed moment gives `N(0,1/8)`.
+
+For prime-power weights `w_p=p^{-\alpha}`, `0<=\alpha<=1/2`, VIS-177 extends that Gaussian conclusion from the original polylogarithmic examples to every growing cutoff
+
+\[
+y(H)=H^{o(1)}.
+\]
+
+Indeed for fixed `k`, `D_2(y)<=y` and subpolynomial support makes the strengthened moment-transfer cost `o(1)`. Thus **all subpolynomial support growth remains inside the representation-matched Gaussian null** in the Lindeberg prime-power phase.
+
+A source-sensitive statistic must therefore leave more than the square-summability phase boundary or the polylogarithmic support example. It must change sampling, use a source-bearing hybrid/zero variable, enter a rare/shrinking or unbounded functional class, reach a genuinely polynomial-or-faster support regime requiring new transfer theory, or otherwise leave the normalized additive prime torus.
+
+**Boundary.** The moment order is fixed before the limit. VIS-177 does not control `k->infinity`, moving extremes, Gram/discrete sampling, hybrid variables, or a fixed positive-power support law `y=H^delta`. Failure of the current all-moment argument there is not evidence that the matched null fails.
