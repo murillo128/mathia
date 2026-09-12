@@ -41,6 +41,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 ## Mertens growth and zeta-zero frontier
 
 - E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, 2nd ed., Clarendon Press/Oxford University Press, 1986, Section 14.25, especially Theorem 14.25(C). Role: standard literature anchor for the Littlewood criterion `RH iff M(x)=O_epsilon(x^(1/2+epsilon))` and the corresponding zero-free-half-plane/power-growth argument. `FD-046` combines that classical frontier with an exact invertible floor-harmonic transform to transfer the zeta-zero power exponent to the quotient-shell source and to every fixed Jordan row; no novelty is claimed for the Mertens criterion itself.
+- János Pintz, *Oscillation of partial sums of the Möbius function and zeros of Riemann's zeta function*, arXiv `2608.24878v2` (2026), especially Theorems 2.1--2.2. Role: primary source for the fixed-power-window maximal order of the Mertens function. `FD-076` combines Theorem 2.2 with the exact inverse floor-harmonic transform of `FD-046` to transfer the full zeta-zero power exponent to every fixed power window of the physical quotient-shell source, forcing power-dense strict source records and sharpening the protected record-block/swarm exponents.
 
 ## Prime-density auxiliary input
 
