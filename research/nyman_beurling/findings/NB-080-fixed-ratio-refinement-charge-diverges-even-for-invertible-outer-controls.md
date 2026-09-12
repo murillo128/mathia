@@ -1,0 +1,464 @@
+# NB-080 — fixed-ratio refinement charge diverges even for invertible outer controls
+
+**Status:** `EXACT-DERIVED + MATCHED-OUTER-CONTROL + FIXED-RATIO-Q-ADIC-LEDGER + LINEAR-PREDICTION-VOLUME-DIVERGENCE + ZERO-STABLE-TAIL + WELL-CONDITIONED-GRAM + NEGATIVE-METHOD-BOUNDARY`.
+
+`NB-079` reduces the exact `q`-adic refinement ledger to
+
+\[
+\mathfrak J_m
+=
+\mathfrak J_0+
+\sum_{r=1}^m(P_r-S_r),
+\]
+
+where `P_r` is residual continuation discovery after coarse-future conditioning and `S_r` is screening supplied by the newly resolved future branch contrasts. A nonzero stable tail forces this residual sum to diverge on every fixed-ratio refinement ray, while a bound
+
+\[
+P_r\le S_r+e_r,
+\qquad \sum_r e_r<\infty,
+\]
+
+on one such ray is sufficient to kill the stable tail.
+
+The present finding stress-tests the converse direction on the strongest matched outer controls available from `NB-072`. The result is negative in a quantitatively sharp way. For every branching factor `m>=2` and every `0<rho<1`, the boundedly invertible outer filter
+
+\[
+D_j^{(\rho)}=(I-\rho V_m)e_j
+\]
+
+has **zero stable tail** and a uniformly well-conditioned global Gram, yet on **every** exact `m`-adic refinement ray with fixed relative future depth,
+
+\[
+R_r=m^rR_0,
+\qquad
+N_r=m^r(N_0+1)-1,
+\]
+
+its prediction-volume charge satisfies
+
+\[
+\boxed{
+\mathfrak J_{R_r,N_r}\ge \kappa\,R_r-O(1)
+}
+\]
+
+for an explicit constant `kappa=kappa(m,rho,R_0,N_0)>0`. Consequently
+
+\[
+\boxed{
+\sum_{s=1}^r(P_s-S_s)\longrightarrow+\infty
+}
+\]
+
+even though
+
+\[
+\boxed{\mathcal T_\infty=\{0\}.}
+\]
+
+Thus divergence of the fixed-ratio residual-discovery-minus-screening ledger is **not** an inner-factor or stable-tail signature, even inside the stationary branch-filter class and even with a boundedly invertible outer source. The fixed-ratio ledger retains an extensive benign boundary-layer cost caused by giving each newly enlarged prefix only a fixed number of descendant generations in the future horizon.
+
+The immediate methodological consequence is strict: `NB-079` remains a valid sufficient criterion, but proving it is substantially stronger than proving absence of a stable tail. A tail-characterizing refinement strategy must either let the relative future depth grow with scale, explicitly subtract the finite-depth boundary layer, or return to a more target/stable-mode-sensitive certificate. Branching plus outerness plus good conditioning cannot force the fixed-ratio residual sum to remain bounded.
+
+## 1. The control is outer, stable-tail-free, and uniformly conditioned
+
+Work in the scalar control sector `S=ell^2(N)` of `NB-071/072`. For `m>=2`, let
+
+\[
+V_me_j
+=
+\frac1{\sqrt m}
+\sum_{k=mj}^{m(j+1)-1}e_k.
+\]
+
+The descendant blocks are disjoint, so `V_m` is an isometry. Fix
+
+\[
+0<\rho<1
+\]
+
+and define
+
+\[
+D_j=(I-\rho V_m)e_j.
+\tag{1}
+\]
+
+The scalar filter is
+
+\[
+\psi_\rho(z)=1-\rho z.
+\]
+
+Because its zero lies at `rho^(-1)>1`, `psi_rho` is outer and boundedly invertible in `H^infty(D)`. `NB-072` therefore gives
+
+\[
+\boxed{\mathcal T_\infty=\{0\}.}
+\tag{2}
+\]
+
+Moreover the elementary isometry estimate gives
+
+\[
+(1-\rho)\|x\|
+\le
+\|(I-\rho V_m)x\|
+\le
+(1+\rho)\|x\|,
+\]
+
+hence the full Gram operator satisfies
+
+\[
+\boxed{
+(1-\rho)^2I
+\preceq H_\rho
+\preceq(1+\rho)^2I.
+}
+\tag{3}
+\]
+
+So the counterexample below is not produced by an inner factor, nonclosed range, or bad global conditioning. The endpoint `rho=1` is also outer and stable-tail-free but no longer boundedly invertible; it will be recorded separately because it makes the finite-depth penalty even slower to disappear.
+
+## 2. A shallow boundary innovation has an exact finite-depth prediction penalty
+
+Fix `N>=R>=2`. Recall the global finite-horizon prediction error from `NB-074`,
+
+\[
+\Pi_{j,N}^2
+=
+\inf_{a_{j+1},\ldots,a_N}
+\left\|
+D_j+
+\sum_{k=j+1}^N a_kD_k
+\right\|^2,
+\tag{4}
+\]
+
+and the visible error
+
+\[
+\widehat\Pi_{j,R}^2
+=
+\inf_{a_{j+1},\ldots,a_{R-1}}
+\left\|
+J_RD_j+
+\sum_{k=j+1}^{R-1}a_kJ_RD_k
+\right\|^2.
+\tag{5}
+\]
+
+Choose an integer `L>=0` and an index `j<R` for which all descendant generations through depth `L` lie in the future horizon while generation `L+1` lies completely beyond it:
+
+\[
+m^L(j+1)-1\le N<m^{L+1}j.
+\tag{6}
+\]
+
+Assume also `mj>=R`, so no child of `j` is visible before the cutoff. Then
+
+\[
+J_RD_j=e_j,
+\qquad
+\boxed{\widehat\Pi_{j,R}^2=1.}
+\tag{7}
+\]
+
+The global prediction problem has an exact radial reduction. Put
+
+\[
+f_r:=V_m^re_j,
+\qquad r\ge0.
+\]
+
+The vectors `f_r` are orthonormal because their generation supports are disjoint. Complete descendant generations split orthogonally into their normalized average direction and zero-sum contrast directions. Since `D_j=f_0-\rho f_1` is radial, its orthogonal projection onto the complete descendant future is radial as well; all contrast sectors are irrelevant to the optimum. The radial future span through depth `L` is generated by
+
+\[
+d_r:=f_r-\rho f_{r+1},
+\qquad 1\le r\le L.
+\tag{8}
+\]
+
+Therefore
+
+\[
+\Pi_{j,N}^2
+=
+1+\rho^2\,
+\operatorname{dist}\!\left(
+ f_1,
+ \operatorname{span}\{d_1,\ldots,d_L\}
+\right)^2.
+\tag{9}
+\]
+
+Inside `span{f_1,...,f_(L+1)}`, the orthogonal complement of the vectors in (8) is one-dimensional. An explicit spanning vector is
+
+\[
+w_L
+=
+\sum_{r=1}^{L+1}
+\rho^{-(r-1)}f_r,
+\]
+
+because
+
+\[
+\langle w_L,d_r\rangle
+=
+\rho^{-(r-1)}-
+\rho\rho^{-r}=0.
+\]
+
+Thus
+
+\[
+\operatorname{dist}(f_1,\operatorname{span}\{d_1,\ldots,d_L\})^2
+=
+\frac1{\sum_{s=0}^L\rho^{-2s}}
+=
+\frac{\rho^{2L}}{\sum_{s=0}^L\rho^{2s}}.
+\tag{10}
+\]
+
+Combining (7), (9), and (10) gives the exact finite-depth ratio
+
+\[
+\boxed{
+\frac{\Pi_{j,N}^2}{\widehat\Pi_{j,R}^2}
+=
+1+a_{\rho,L},
+\qquad
+ a_{\rho,L}
+:=
+\frac{\rho^{2L+2}}{\sum_{s=0}^L\rho^{2s}}>0.
+}
+\tag{11}
+\]
+
+For `0<rho<1`,
+
+\[
+a_{\rho,L}
+=
+\frac{(1-\rho^2)\rho^{2L+2}}
+{1-\rho^{2L+2}},
+\tag{12}
+\]
+
+while at the outer noninvertible endpoint `rho=1`,
+
+\[
+\boxed{a_{1,L}=\frac1{L+1}.}
+\tag{13}
+\]
+
+The penalty is therefore positive at every finite descendant depth. Invertibility makes it decay exponentially with depth, but a fixed depth never removes it.
+
+## 3. Every fixed relative future horizon leaves a positive-density shallow boundary layer
+
+Now specialize to the exact refinement geometry used by `NB-078/079`. Let
+
+\[
+R_r=m^rR_0,
+\qquad
+N_r=m^r(N_0+1)-1,
+\qquad N_0\ge R_0\ge2.
+\tag{14}
+\]
+
+The ratio
+
+\[
+c:=\frac{N_r+1}{R_r}
+=\frac{N_0+1}{R_0}
+\tag{15}
+\]
+
+is independent of `r`. Let
+
+\[
+L:=\lfloor\log_m c\rfloor,
+\qquad
+m^L\le c<m^{L+1}.
+\tag{16}
+\]
+
+Consider all integers
+
+\[
+\frac{N_r}{m^{L+1}}<j<R_r.
+\tag{17}
+\]
+
+For such `j`, generation `L+1` starts beyond `N_r` by construction. On the other hand, for every `j<=R_r-1`,
+
+\[
+m^L(j+1)-1
+\le m^LR_r-1
+\le N_r,
+\]
+
+so all generations through depth `L` are present. Finally (16)--(17) imply `mj>=R_r`, so no child is visible before the cutoff. Hence every index in (17) satisfies the hypotheses of (11).
+
+The number of such indices is
+
+\[
+K_r
+=
+R_r-1-
+\left\lfloor\frac{N_r}{m^{L+1}}\right\rfloor,
+\tag{18}
+\]
+
+and therefore
+
+\[
+\boxed{
+\frac{K_r}{R_r}
+\longrightarrow
+1-\frac{c}{m^{L+1}}
+>0.
+}
+\tag{19}
+\]
+
+So a fixed relative horizon does not leave a negligible edge. It leaves a **positive-density layer of prefix innovations with exactly the same finite descendant depth `L`**.
+
+## 4. The prediction-volume charge diverges linearly although the stable tail is zero
+
+`NB-074` gives the additive prediction-error representation
+
+\[
+\mathfrak J_{R,N}
+=
+\sum_{j=1}^{R-1}
+\log
+\frac{\Pi_{j,N}^2}
+{\widehat\Pi_{j,R}^2},
+\qquad
+\log
+\frac{\Pi_{j,N}^2}
+{\widehat\Pi_{j,R}^2}\ge0.
+\tag{20}
+\]
+
+Keeping only the indices (17) and applying (11) yields
+
+\[
+\boxed{
+\mathfrak J_{R_r,N_r}
+\ge
+K_r\log(1+a_{\rho,L}).
+}
+\tag{21}
+\]
+
+By (19), there is an explicit constant
+
+\[
+\kappa
+<
+\left(1-\frac{c}{m^{L+1}}\right)
+\log(1+a_{\rho,L})
+\]
+
+such that, for all sufficiently large `r`,
+
+\[
+\boxed{
+\mathfrak J_{R_r,N_r}
+\ge \kappa R_r.
+}
+\tag{22}
+\]
+
+Since `R_r=m^rR_0`, the charge grows exponentially in refinement depth. But (2) says the stable tail is exactly zero.
+
+Applying the exact `NB-079` recurrence on this same `m`-adic ray gives
+
+\[
+\mathfrak J_{R_r,N_r}
+=
+\mathfrak J_{R_0,N_0}
++
+\sum_{s=1}^r(P_s-S_s),
+\]
+
+hence
+
+\[
+\boxed{
+\sum_{s=1}^r(P_s-S_s)
+\ge \kappa R_r-O(1)
+\longrightarrow+\infty.
+}
+\tag{23}
+\]
+
+This is the same direction of divergence that `NB-079` proves is **necessary** when a stable tail exists, but here it occurs in a boundedly invertible outer control where no stable tail exists at all.
+
+The implication is not that `NB-079` is incorrect. Its one-way logic remains exact:
+
+\[
+\text{bounded residual ledger on one ray}
+\Longrightarrow
+\mathcal T_\infty=0.
+\]
+
+What fails is any hope that boundedness of that fixed-ratio ledger should be close to a characterization of stable-tail absence under generic causal/outer assumptions.
+
+## 5. What the false-positive charge is measuring
+
+The mechanism is transparent in the control. An innovation near the current cutoff has a root component `e_j` plus an unresolved descendant tail. The visible error sees only the root and equals one. A future horizon that reaches exactly `L` complete descendant generations can reduce the tail but cannot eliminate it; the remaining finite-depth cost is `a_(rho,L)`.
+
+Because a fixed-ratio horizon has the same `L` at every refinement level, a positive fraction of the `R` prefix innovations pay this same positive cost. The determinant charge sums those costs over coordinates, so it grows extensively even though the infinite future can remove them all. Indeed the filter is outer, and for `rho<1` it is even invertible: the benign continuation is synthesizable from sufficiently deep descendants, just not from a horizon whose **relative depth stays fixed**.
+
+This distinguishes two notions that the present ledger otherwise conflates:
+
+1. a genuine stable mode that survives arbitrarily deep future elimination; and
+2. a positive-density boundary layer of ordinary outer continuation that disappears only when the number of available descendant generations tends to infinity.
+
+The fixed-ratio `q`-adic recurrence keeps the second effect alive at every scale. Its divergence can therefore be a horizon artifact rather than an inner/stable-tail obstruction.
+
+The endpoint `rho=1` makes the distinction even sharper. The filter `1-z` is outer but not boundedly invertible, so `T_infinity=0`; nevertheless (13) says the unresolved finite-depth penalty is only `1/(L+1)`. Increasing the future by a fixed multiplicative factor still leaves a fixed `L`, hence again gives linear charge growth. This endpoint is not needed for the counterexample because every `0<rho<1` already has good conditioning and the same qualitative failure.
+
+## 6. Consequence for the live Nyman strategy
+
+The current live target after `NB-079` is to prove, from the actual Nyman source, that residual discovery does not systematically outrun future screening, for example
+
+\[
+P_r\le S_r+e_r,
+\qquad \sum_r e_r<\infty,
+\]
+
+on one exact `q`-adic ray. `NB-080` shows that this target cannot be justified merely by importing the strongest structural features of the matched controls: exact branching, outer cyclicity, zero stable tail, and uniform global Riesz conditioning all coexist with the opposite behavior (23) on every fixed-ratio ray.
+
+That does not disprove the estimate for the arithmetic source. It changes what such a proof would have to use. There are now three mathematically distinct ways forward:
+
+- derive a genuinely Nyman-specific mechanism strong enough to beat the extensive finite-depth boundary layer;
+- let the future depth grow relative to the prefix scale, rather than keeping `(N+1)/R` fixed, and extend the refinement ledger to include the additional screening obtained by horizon growth; or
+- renormalize/subtract the outer finite-depth prediction volume before asking whether the remainder detects a stable tail.
+
+The second option is particularly natural because `NB-074` already permits an arbitrary finite schedule `N(R)`. The restriction to fixed-ratio rays entered only when `NB-078/079` demanded exact self-similar refinement. The matched control shows that exact self-similarity has a real price: it freezes the number of future descendant generations available to the newest boundary layer.
+
+A useful next theorem would therefore introduce a **two-move ledger**: one move refines `R` and the corresponding future block `q`-adically, while a second move enlarges the future horizon at fixed prefix cutoff. The latter move can only decrease `mathfrak J_(R,N)` by Schur elimination and represents pure additional screening. A stable tail must defeat both moves by `NB-074`, whereas the outer controls above fail only because the first move is iterated without enough of the second.
+
+## 7. Stress tests, prior-art boundary, and strict limits
+
+The control is deliberately stronger than the earlier inner-factor counterexample. For `rho>1`, `NB-071/072` already produce a nonzero model-space stable tail. That regime cannot falsify a proposed stable-tail detector because the obstruction is genuinely present. Here `0<rho<1` moves the zero outside the disk, makes the filter boundedly invertible outer, removes the stable tail completely, and preserves good Gram conditioning, while the fixed-ratio charge still diverges linearly.
+
+The case `rho=0` is the flat control. Then `D_j=e_j`, `a_(rho,L)=0`, and every charge vanishes, exactly as it should. Thus the effect is not an artifact of the counting argument; it turns on continuously with forward memory.
+
+The calculation also respects the distinction between finite and infinite future. For every fixed `L`, `a_(rho,L)>0`; for `0<rho<1`, however,
+
+\[
+a_{\rho,L}\to0
+\qquad(L\to\infty).
+\]
+
+So nothing here contradicts outer cyclicity or `T_infinity=0`. It shows only that a future depth which is fixed in descendant generations is too shallow for a volume-summed certificate.
+
+A targeted prior-art audit found the contemporary Nyman Gram/block-compressibility work of Hugh Carvill and the classical Szego/Hardy prediction literature on outer filters and determinant asymptotics. Those bodies of work support the general warning that determinant prediction volumes can carry extensive finite-section effects, but the present tree-branching finite-depth formula (11) and its use as a matched-control falsification of the `NB-079` fixed-ratio ledger are derived directly here. No priority claim is made. No external estimate is load-bearing: the only Hardy-space input is the classical inner--outer classification already anchored in `SOURCES.md` for `NB-072`, so `SOURCES.md` remains unchanged.
+
+The boundary is strict. `NB-080` does **not** show that the actual Nyman source has divergent `mathfrak J` on fixed-ratio rays, does not refute the sufficient criterion of `NB-079`, and does not prove that a growing-horizon ledger will close the arithmetic problem. It proves a method boundary: **fixed-ratio residual discovery minus screening can diverge extensively for a stable-tail-free, uniformly conditioned outer source, so that divergence by itself cannot distinguish a genuine stable mode from ordinary outer continuation trapped behind a finite-depth future horizon.**
