@@ -1,25 +1,13 @@
-# MI-013 — Prime-Circle bulk, ratio statistics, and sublogarithmic raw near-resonance laws are classical after the relevant quotient is fixed
+# MI-013 — Prime-Circle raw near-resonance laws are classical at every bandwidth, and their first fixed-scale centered bias is Li data
 
-**Evidence level:** proved structural boundary through PC-273. PC-272's repaired admissible witness establishes that ordered finite-window `Delta_B` contains source information beyond the ratio-only exact lattice; PC-273 proves that the uncentered distribution of that extra information is nevertheless matched-control blind for `B=o(log q)`.
+**Evidence level:** proved structural boundary through PC-275. PC-272 establishes that ordered finite-window `Delta_B` contains source information beyond the ratio-only exact lattice; PC-274 proves the unscaled law is matched-control prime-blind for every bandwidth sequence; PC-275 identifies the first centered fixed-bandwidth correction as the classical normalized logarithmic-integral source bias.
 
-Growing collision geometry is not enough. Common dilation is exact repetition, nonresonant bulk spectrum and normalized positive log-volume converge to classical torus-return limits, fixed off-spectrum characteristic potentials are transforms of the same IDS, and connected-component simplicity, nodal order, reflection parity ordering, and canonical total projective rotation are classical consequences of the collision matrix structure.
+Growing collision geometry is not enough. Common dilation is exact repetition, nonresonant bulk spectra have classical torus-return limits, persistent primitive resonance selects a classical resonant subtorus, and the dual lattice supplies the standard Fourier/Diophantine carrier. PC-272 nevertheless finds a real information boundary: ordered partial-window timing keeps common source placement that the exact ratio quotient discards.
 
-PC-269 shows that even a rational limiting ratio pair is not a nonuniversal regime by itself. If every fixed nonzero Fourier mode is eventually nonresonant, the raw orbit still equidistributes in Haar phase and the squared-singular empirical law converges to the periodic-Haar IDS. PC-270 classifies the complementary fixed-resonance regime: one persistent primitive relation selects a one-dimensional subtorus, and matched controls carrying that relation reproduce the same bulk law.
+PC-273 first shows that this extra information is destination-neutral below logarithmic bandwidth: the prime/grid raw laws differ by at most `O(B/log q+log q/q)` in `W_1`. PC-274 removes the apparent large-`B` escape. Both laws are supported in `[0,(B+1)^(-2)]`, so once the bandwidth grows the observable itself collapses. Combining the small- and large-bandwidth bounds gives uniform convergence over every choice `B=B(q)`. The raw scalar `Delta_B` law is therefore asymptotically prime-blind across the full bandwidth axis.
 
-PC-271 identifies the next universal carrier. The dual lattice
+PC-275 then asks whether the first centered layer at fixed `B` contains hidden arithmetic. It does not: `log q` times the prime/grid signed difference converges to the pushforward through `D_B` of the smooth correction `-(1+log t)dt` in either source coordinate. This is exactly the first normalized logarithmic-integral correction to the scaled prime density.
 
-`Lambda_(p,r;q) = {(h,k) in Z^2 : hp+kr = 0 mod q}`
+The surviving source-sensitive routes must therefore alter the observable or the centering, not merely increase raw resolution. Moving-bandwidth normalized variables such as `(B+1)^2 Delta_B`, subtraction of the full Li profile, singular or directional minimizer data, conditioned source families, transfer/Lyapunov growth, microscopic spectra and cross-level couplings remain outside the theorem. At fixed bandwidth, simply magnifying the prime/grid difference exposes known PNT structure rather than a new critical-line channel.
 
-has an exact first Fourier detection scale given by its sup-norm systole, while the finite-window near-resonance quantity `Delta_B` obeys the universal Dirichlet parabolic scale.
-
-PC-272 then separates two source currencies. For fixed prime `q`, multiplication by `r^-1` shows that the full exact lattice depends only on the ratio `a=pr^-1 mod q`; swap-invariant full-orbit statistics therefore retain only the multiplicative autocorrelation/power spectrum of the prime residue set. But the repaired admissible witness proves that `Delta_B` is not a function of that ratio: ordered partial-window timing keeps common multiplicative placement information that the exact lattice quotients out.
-
-PC-273 supplies the missing matched-control test for this ordered information. Writing `Delta_B(p,r;q)=D_B(p/q,r/q)`, the scaled prime empirical measure is `O(1/log q)` from the uniform residue measure in `W_1`, while `D_B` is only `B`-Lipschitz. Consequently
-
-`W_1(rho_prime_(q,B),rho_grid_(q,B)) << B/log q + log q/q`,
-
-so every `B=o(log q)` raw `Delta_B` law is asymptotically prime-blind. The finite source information is real but destination-neutral at that resolution.
-
-The surviving source-sensitive routes therefore need a scale or observable that amplifies structure beyond this stability window: `B` at least comparable with `log q`, centered/subleading prime discrepancy, singular observables, conditioned source families, transfer/Lyapunov growth, microscopic spectra, subleading projective data, or cross-level structure.
-
-**Boundary.** PC-273 does not classicalize `Delta_B` for `B comparable to log q` or larger, centered fluctuations, singular probes, or coupled operators. Nor does the finite PC-272 witness alone imply arithmetic asymptotics. The durable distinction is between retaining extra source coordinates and retaining them strongly enough to separate primes from matched controls at the target resolution.
+**Boundary.** PC-274 concerns the unscaled scalar law, and PC-275 is fixed-bandwidth and Lipschitz-test based. Neither classicalizes moving-bandwidth normalized observables, Li-centered PNT remainders, discontinuous minimizer labels, singular shrinking targets or coupled operators. The durable distinction is between retaining source coordinates and retaining a normalized residual that survives the strongest matched control at the target scale.

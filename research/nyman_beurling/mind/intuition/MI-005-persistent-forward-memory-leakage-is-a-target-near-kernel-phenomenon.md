@@ -1,29 +1,17 @@
-# MI-005 — Stable-tail diagnostics must separate residual memory from finite-depth boundary prediction cost
+# MI-005 — Stable-tail diagnostics must price future depth against outer conditioning
 
-**Evidence level:** supported by NB-063--NB-080. The continuation, prediction, branching and q-adic information identities are exact; NB-080 supplies an exact matched outer counterexample to interpreting fixed-ratio residual-ledger divergence as a stable-tail signature. No arithmetic criterion closing the Nyman stable tail is established.
+**Evidence level:** supported by NB-063--NB-081. The continuation, prediction, branching, q-adic and variable-horizon identities are exact; NB-080 supplies an exact matched outer false positive for fixed depth, and NB-081 computes the sharp screening scale on the same controls. No arithmetic criterion closing the Nyman stable tail is established.
 
-NB-074--NB-079 write the uncancelled continuation charge as a refinement ledger and remove the universal common prediction mode. At each exact q-adic refinement there are nonnegative charges `G`, `P`, and `S` with
+NB-074--NB-079 write the uncancelled continuation charge as a refinement ledger and remove the universal common prediction mode. At each exact q-adic refinement there are nonnegative charges `G`, `P`, and `S` with `ell=G+P`, `c=G+S`, so `J_m=J_0+sum(P-S)`. A nonzero stable tail forces this residual to diverge on every fixed-ratio refinement ray, while boundedness on one unbounded ray kills the tail.
 
-`ell=G+P`, `c=G+S`,
+NB-080 shows why a fixed-ratio converse fails. The boundedly invertible outer control `D_j=(I-rho V_m)e_j`, `0<rho<1`, has zero stable tail and uniformly conditioned global Gram, yet a positive-density boundary layer receives only finitely many descendant generations and keeps `J` linear in the prefix size.
 
-so
+NB-081 makes future enlargement an exact part of the ledger rather than an ad hoc repair. If the copied horizon is enlarged, the gain is a nonnegative screening charge `H`, giving `J^+-J=P-S-H`. On the matched outer control, a depth-`L` future horizon satisfies
 
-`J_m=J_0+sum_(r<=m)(P_r-S_r)`.
+`J_(R,m^L R-1) ~ R rho^(2L)`
 
-A nonzero stable tail forces this residual sum to diverge on every fixed-ratio refinement ray, while one ray with `P_r<=S_r+e_r` and summable `e_r` is sufficient to kill the stable tail. That one-way criterion remains exact.
+for fixed `0<rho<1`. Thus the fixed-depth false positive disappears once `L` grows logarithmically in `R`; the critical depth is `L~log R/[2 log(1/rho)]`. At the outer but noninvertible endpoint `rho=1`, however, `J~R/(L+1)`, so boundedness requires `L` of order `R` and vanishing requires still deeper screening.
 
-NB-080 shows why the converse intuition fails. For every branching factor `m>=2` and `0<rho<1`, the control
+The reusable principle is that a finite-horizon prediction residual is meaningful only together with a **screening-depth/conditioning law**. The same outer source can look extensively nonlocal at fixed depth and asymptotically benign at a depth tuned to its inverse conditioning. A stable-tail diagnostic should either allow enough future depth for healthy controls, subtract the calibrated outer boundary cost, or isolate a mode that persists under arbitrarily deep screening.
 
-`D_j=(I-rho V_m)e_j`
-
-comes from a boundedly invertible outer filter, has zero stable tail, and has a uniformly well-conditioned Gram. Nevertheless, on every exact refinement ray with fixed ratio `(N+1)/R`, a positive-density set of prefix innovations receives only a fixed number `L` of descendant generations. Each such innovation retains the same strictly positive finite-depth prediction penalty, so
-
-`J_(R_r,N_r) >= kappa R_r-O(1)`
-
-and therefore `sum(P-S)->+infinity` despite `T_infinity={0}`.
-
-The fixed-ratio ledger is thus contaminated by an **extensive but benign boundary layer**: ordinary outer continuation that disappears with sufficiently deep future information but not when relative future depth is frozen. Divergence of `P-S` can measure this horizon artifact rather than persistent target-near-kernel memory.
-
-The stable-tail problem must therefore change scale or normalization. A more faithful criterion should let descendant depth grow, subtract the outer finite-depth prediction volume, or isolate a residual mode whose cost remains after arbitrarily deep screening. Arithmetic effort spent proving boundedness of the raw fixed-ratio ledger is proving a condition substantially stronger than tail absence.
-
-**Boundary.** NB-080 does not invalidate NB-079's sufficient criterion and does not show the arithmetic Nyman source has the same boundary-layer asymptotics. It proves only that branching, outerness, zero stable tail and excellent global conditioning do not control the fixed-ratio residual ledger in the desired direction.
+**Boundary.** NB-081 calibrates explicit stationary outer controls; it does not prove that the arithmetic Nyman innovations have the same screening law. Qualitative outerness is not enough to infer logarithmic depth because the `rho=1` endpoint is much slower. The remaining arithmetic work is to derive the relevant quantitative source conditioning or a different target-sensitive certificate.

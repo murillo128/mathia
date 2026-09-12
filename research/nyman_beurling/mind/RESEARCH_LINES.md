@@ -8,24 +8,16 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Remove the benign finite-depth boundary layer before using q-adic prediction volume as a tail diagnostic
+## Calibrate future depth against source conditioning before treating prediction volume as a tail diagnostic
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
-NB-066--NB-079 reduce a persistent late quotient to the uncancelled continuation charge `J` and then cancel the common coarse-future prediction mode. At each exact refinement step,
+NB-066--NB-079 reduce persistent continuation to the uncancelled charge `J` and cancel the common coarse-future prediction mode. NB-080 then proves that fixed relative future depth has an extensive benign false positive: even a boundedly invertible outer source with zero stable tail pays a linear prediction-volume boundary cost.
 
-`ell=G+P`, `c=G+S`,
+NB-081 resolves the variable-horizon calibration. Enlarging the future beyond the copied descendant horizon contributes an exact nonnegative screening charge `H`, so the refinement ledger becomes `J^+ - J = P-S-H`. On the matched outer control `D_j=(I-rho V_m)e_j`, a depth-`L` horizon satisfies `J~R rho^(2L)` for fixed `0<rho<1`; logarithmically many descendant generations are therefore sufficient and sharp at power scale, while the outer noninvertible endpoint `rho=1` instead has `J~R/(L+1)` and needs depth comparable with `R` merely for boundedness.
 
-so
+The live arithmetic theorem is no longer to justify a fixed-ratio ledger. It must determine how much future synthesis the actual Nyman innovations provide relative to their conditioning, prove an arithmetic analogue of the screening threshold, renormalize the finite-depth boundary layer, or isolate a stable-mode-sensitive quantity that remains after arbitrarily deep screening.
 
-`J_m=J_0+sum_(r<=m)(P_r-S_r)`.
+## Keep stable modes, residual discovery, future screening and outer conditioning separate
 
-A summable upper bound on `P-S` along one unbounded ray is still a sufficient stable-tail exclusion. NB-080 now shows that this fixed-ratio criterion is far stronger than stable-tail absence and cannot be justified from generic outerness or good conditioning.
-
-For the boundedly invertible outer control `D_j=(I-rho V_m)e_j`, `0<rho<1`, the stable tail is exactly zero and the global Gram is uniformly conditioned, yet on every exact `m`-adic refinement ray with fixed relative future depth the prediction-volume charge grows at least linearly in the prefix size. A positive-density boundary layer of newly exposed prefix innovations sees only a fixed number of descendant generations, so each pays a fixed benign finite-depth prediction cost. Consequently `sum(P-S)->+infinity` although no stable mode exists.
-
-The live Nyman theorem must therefore remove that horizon artifact rather than merely sharpen the same fixed-ratio estimate. Viable routes are: let relative future depth grow with scale and extend the refinement ledger accordingly; explicitly subtract/renormalize the outer finite-depth boundary layer; or derive a genuinely target/stable-mode-sensitive arithmetic certificate that is not extensive on outer controls.
-
-## Keep stable modes, finite-depth boundary costs, residual discovery and future screening separate
-
-NB-079's implication remains valid: bounded residual ledger on one unbounded ray kills the stable tail. NB-080 proves the converse intuition false even for uniformly invertible outer sources. Divergence of the fixed-ratio ledger is therefore not itself evidence of an inner factor or persistent memory. Any arithmetic use of `P-S` must first distinguish durable continuation from the positive-density shallow boundary layer created by the chosen horizon geometry.
+A nonzero stable tail still forces divergence for every finite horizon schedule, and boundedness on one unbounded schedule still excludes it. NB-080--NB-081 show that the converse cost depends strongly on horizon depth and outer conditioning. Fixed depth, logarithmic depth for a uniformly invertible outer, and the near-noninvertible endpoint are genuinely different regimes. Divergence of a shallow prediction-volume ledger is not by itself evidence of persistent memory.

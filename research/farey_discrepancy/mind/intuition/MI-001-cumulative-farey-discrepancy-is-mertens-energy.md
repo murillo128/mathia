@@ -1,21 +1,21 @@
-# MI-001 — Farey transfer is governed by causal protection plus subpower pointwise recurrence of energy-weighted frontier occupation
+# MI-001 — Farey transfer has reached subpower pointwise recurrence, but not yet a power-saving accumulation law
 
-**Evidence level:** supported by the exact source/occupation reductions through FD-081 and the persisted Pintz inputs. No eventual pointwise occupation bound, bounded multiplicative return time, positive natural density, or RH criterion is claimed.
+**Evidence level:** supported by the exact source/occupation reductions through FD-082 and the persisted Pintz inputs. No eventual pointwise occupation bound, logarithmic density lower bound, bounded logarithmic horizon entropy, or RH criterion is claimed.
 
-FD-071--FD-076 isolate causal record protection. FD-077 transfers Pintz's average absolute order into abundant frontier-near physical-source values. FD-078 moves to the physically relevant energy weighting and proves that total annular energy, nonsquarefree annular energy, and the Schur residual all have the same full power exponent `2 Theta`.
+FD-071--FD-081 build a strict ladder: causal record protection, abundant frontier-near values, physical-energy weighting, logarithmic annular recurrence, subpower annular first passage, and finally a good physical horizon in every sufficiently late fixed-power window. For every fixed `eta<c_q`, the first good horizon satisfies `log sigma_eta(X)/log X -> 1`.
 
-FD-079 converts that exponent agreement into logarithmic recurrence. Exact nonsquarefree dilation preserves the natural logarithmic horizon weight, giving a finite logarithmic entropy budget for the annular occupation `Omega_(D,alpha)`. FD-080 then removes fixed-power bad deserts: for every fixed `eta<c_q`, the first occupied exact dilation descendant occurs after `o(log X)` steps and at scale `X^(1+o(1))`.
+FD-082 identifies the exact counting content of this endpoint. If the good horizons are `g_n`, then the first-passage law is equivalent to
 
-FD-081 shows that this recurrence is not confined to annular averages. Since
+`log g_(n+1)/log g_n -> 1`,
 
-`Omega_(D,alpha)(Y) = [sum lambda_H E_(H,D) nu_(H,D)] / [sum lambda_H E_(H,D)]`
+or equivalently `log log g_(n+1)-log log g_n -> 0`. This forces `N_eta(X)/log log X -> infinity`, but no fixed positive power of `log X`. An explicit integer-ratio control with `g_n=2^(ceil(exp(sqrt n)))` has the same first-passage geometry while `N(X)~(log log X)^2` and its logarithmic horizon entropy diverges.
 
-is a positive weighted average, `Omega>eta` forces at least one physical horizon in the annulus with `nu_(H,D)>eta`. Rescaling the annulus lower edge beyond any prescribed `X` yields, for every fixed `epsilon>0`, eventually
+That control exposes the accumulation mismatch. If a downstream proof earns only a fixed favorable factor `kappa<1` at each good horizon, the recurrence information alone permits total gain
 
-`X < H <= X^(1+epsilon)` and `nu_(H,D)>eta`.
+`kappa^(N(X)) = X^(-o(1))`,
 
-Thus the pointwise first-passage horizon satisfies `log sigma_eta(X)/log X -> 1`. For `q=4`, every `eta<3/64` is unconditional; under RH the admissible threshold extends to `eta<3/16`.
+which cannot change a power exponent. Power-syndeticity is therefore a recurrence statement, not yet the scale-density currency needed by a fixed-per-hit proof architecture.
 
-The remaining obstruction is now sharply downstream-facing. Pointwise occupied horizons are power-syndetic, but isolated or subpower-length bad stretches may still exist. What is missing is either a theorem that the Farey/RH criterion is stable when evaluated on this subpower-dense subsequence, a quantitative restriction on the remaining bad gaps, or an upgrade to eventual pointwise occupation.
+The residual Farey problem is now precise. One must either strengthen pointwise occupation enough to produce roughly logarithmically many usable scales, prove anti-concentration that converts annular energy recurrence into many distinct witnesses, extract a gain that grows with the gaps or horizon energies, or use a nonlocal estimate that also consumes the bad intervals. Merely iterating the existing first-passage theorem with a bounded reward per hit cannot reach the RH-facing power threshold.
 
-**Boundary.** The result keeps `D`, the annular parameter used in each application, and the nonsquarefree dilation `q` fixed. The positive-average extraction proves existence of a good horizon but no count or natural density of such horizons. It does not justify replacing power-syndetic pointwise occupation by a uniform lower bound at every large `H`.
+**Boundary.** FD-082 is an information-sufficiency obstruction, not a theorem that the actual good set is as sparse as the control sequence. The physical set may be much denser. What is proved is that such density does not follow from FD-081 alone, so any argument requiring it must import additional arithmetic or energy-distribution information.
