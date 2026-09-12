@@ -2,20 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Exclude or source-control the power-separated transport fronts forced on long same-block fans
+## Exclude the continuous selector-dilation fronts forced on long same-block fans
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`.
 
-RE-076--RE-079 reduce the late positive fan to one positive transport measure `mu`: corrected Chebyshev growth is its total mass, while the fringe-corrected reciprocal/Mertens decrement plus the explicit first-layer-birth correction is its `1/(s log s)`-weighted mass. On bounded selector dilation the two Lyapunov coordinates are therefore one budget viewed through two kernels.
+RE-076--RE-079 reduce the late positive fan to one positive transport measure `mu`: corrected Chebyshev growth is its total mass, while the fringe-corrected reciprocal/Mertens decrement plus the explicit first-layer-birth correction is its `1/(s log s)`-weighted mass.
 
-RE-080 now resolves part of the remaining scale-distribution freedom on **long same-block fans**. If the selected logarithmic sizes satisfy `r=Y_1/Y_0->infinity` across a fixed threshold interval `[b_0,b_1]`, the effective transport selector obeys
+RE-080 shows that on long same-block fans, `r=Y_1/Y_0->infinity`, these two moments develop complementary power fronts. The effective selector lies between `Z_0 r^(1-b_1-o(1))` and `Z_0 r^(1-b_0+o(1))`; negligible unweighted mass lies below the first front and negligible kernel-weighted mass remains above the second.
 
-`Z_0 r^(1-b_1-o(1)) <= Z_eff <= Z_0 r^(1-b_0+o(1))`.
+RE-081 now removes the most obvious source of discreteness from that picture. The transport splits canonically as `mu=mu_dil+mu_(>=2)`, where `mu_(>=2)` is the complete discrete higher-layer prime-power event measure. Under the same false-RH long-fan normalization, both its total mass and its reciprocal-weighted mass are `o(1)` relative to the corresponding full moments; the first-layer birth correction is smaller still. Therefore `mu_dil` alone carries both Lyapunov changes and inherits the full RE-080 power-front law.
 
-Moreover the two moments develop complementary fronts: asymptotically negligible unweighted mass lies below `Z_0 r^(1-b_1-epsilon)`, while asymptotically negligible kernel-weighted mass remains above `Z_0 r^(1-b_0+epsilon)`. The false-RH long-stretch branch therefore cannot realize an arbitrary positive transport profile; it must move ordinary-prime transport through an intermediate power window governed by the complementary threshold exponent `1-b`.
+The live theorem has consequently moved away from prime-power atom sparsity, lacunarity, depth, or event rank. One must prove that the **continuous adaptive selector-dilation measure on the genuine CA state staircase** cannot realize the required moving two-front profile, obtain an external prime estimate incompatible with that profile, or rule out the long-stretch same-block branch itself. The bounded-stretch branch remains separate.
 
-This is not yet a contradiction because abstract positive measures can realize such fronts. The live theorem is now source-specific: prove that actual prime-layer transport cannot sustain these moving power-separated fronts, obtain an external prime estimate incompatible with the required two-tail profile, or show that the long-stretch branch itself cannot persist. The complementary bounded-stretch branch remains separate and must not be silently absorbed into the long-fan argument.
+## Treat continuous selector dilation, discrete higher-layer atoms, first-layer births, fan stretch and front location separately
 
-## Treat transport mass, kernel-weighted transport, first-layer births, fan stretch and front location separately
-
-RE-079 removes the illusion of two independent monotone budgets. RE-080 shows that once selector stretch is unbounded, convex-envelope geometry forces where the one transport measure can spend its two moments at power scale. First-layer births remain the sole exact mismatch and have summable late total. None of this bounds the rank/count of events, rules out an abstract admissible measure, or treats bounded selector stretch; those require distinct source information.
+RE-081 shows that the discrete higher-layer atoms are not the leading carrier of either moment on a long false-RH fan. Removing every such atom leaves the front. Thus an argument that only controls the count or mass of prime-power switches cannot close the long-stretch branch. The remaining source information must constrain the continuous selector path or the existence of the long fan itself.

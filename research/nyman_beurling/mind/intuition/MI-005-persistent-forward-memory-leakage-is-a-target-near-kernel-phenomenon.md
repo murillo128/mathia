@@ -1,31 +1,31 @@
-# MI-005 — Stable tails are the uncancelled cross-cut area; integer branching preserves that prediction information but not its locality
+# MI-005 — Stable tails are cumulative imbalance between q-adic continuation and prediction-refinement charges
 
-**Evidence level:** supported by NB-063--NB-077. The stationary prediction/feedthrough criterion is exact for scalar branch filters, and NB-074--NB-077 give exact finite-dimensional continuation and branching identities for the nonstationary causal geometry; no arithmetic estimate closing the stable-tail criterion is proved.
+**Evidence level:** supported by NB-063--NB-078. The finite-dimensional continuation, prediction, branching, and q-adic refinement identities are exact; no arithmetic estimate proving summable imbalance control or closing the stable-tail criterion is established.
 
-NB-066--NB-073 reduce a hypothetical persistent Nyman target to a global continuation problem. NB-074 gives the nonstationary charge `J_(R,N)`: bounded charge along an unbounded sequence rules out a stable tail, while any nonzero stable tail forces divergence for every finite horizon schedule.
+NB-066--NB-073 reduce a hypothetical persistent Nyman target to a global continuation problem. NB-074 introduces the nonstationary charge `J_(R,N)`: bounded charge along an unbounded sequence rules out a stable tail, while any nonzero stable tail forces divergence for every finite horizon schedule. NB-075--NB-076 resolve it as
 
-NB-075 resolves that determinant into raw continuation volume `L_R` minus nonnegative future-conditioned multiple-correlation charges. NB-076 resolves those charges into interval endpoint partial correlations. With
+`J_(R,N)=L_R-C_(R,N)`,
 
-`kappa_(j,n)=-log(1-|rho_(j,n)|^2)>=0`,
+where `L_R` is raw continuation volume and `C` is a nonnegative cross-cut area built from future-conditioned partial-correlation charges.
 
-one has
+NB-077 shows that exact integer branching preserves both currencies monotonically. A coarse cross-cut information charge survives in the fine descendants, and `L_R<=L_(qR)`. This removes signed Gram cancellation as an explanation for losing predictive information, but separate monotonicities do not compare their growth.
 
-`J_(R,N)=L_R-sum_(j<R<=n<=N) kappa_(j,n)`.
+NB-078 resolves that missing comparison coordinate. In each `q`-descendant block, the normalized average is exactly the shifted coarse innovation and the orthogonal complement is a canonical branch-contrast space. The cross-cut refinement gain is the sum of three nonnegative conditional mutual informations involving past/future contrasts. The raw continuation refinement gain has a parallel decomposition into nonnegative edge and contrast charges.
 
-Each `kappa` is a contiguous-Gram mixed log-determinant curvature, so future cancellation is exactly a nonnegative cross-cut area rather than an opaque high-dimensional regression.
+Along a `q`-adic ray let
 
-NB-077 adds the exact branching transport law at the level that matters after Schur conditioning. For any finite rectangle across the cut,
+`ell_m=L_(R_m)-L_(R_(m-1)) >=0`
 
-`C_(a|R|b)=sum kappa_(j,n)=log(Delta_(a,R-1) Delta_(R,b)/Delta_(a,b))`.
+and
 
-The integer-dilation identity makes each coarse past/future block a separate linear compression of its fine descendants. Log-determinant data processing therefore gives
+`c_m=C_(R_m,N_m)-C_(R_(m-1),N_(m-1)) >=0`.
 
-`C_(a|R|b) <= C_(qa|qR|q(b+1)-1)`.
+Then the remaining continuation charge telescopes exactly:
 
-In particular `C_(R,N)<=C_(qR,q(N+1)-1)`. The raw continuation volume is also monotone, `L_R<=L_(qR)`. Thus exact branching cannot erase cross-cut predictive information through signed phase cancellation: every coarse determinant charge survives with at least the same total size in the descendant interval-conditioned lattice.
+`J_m=J_0+sum_(r<=m)(ell_r-c_r)`.
 
-The decisive limitation is locality. The descendant rectangle has width proportional to `q`; NB-077 does not force the preserved charge into bounded or even sublinear additive distance from the new cut. Since both raw volume and total cross-cut charge can grow, their difference `J` need not be monotone. Branching therefore changes the missing theorem from “show prediction information survives” to **show enough of the surviving information remains mesoscopically near the cut** to recover `L_R-O(1)`.
+A stable tail must therefore create an unbounded cumulative excess of **new continuation information over new prediction information** on every such ray. Conversely, one ray satisfying `ell_m<=c_m+e_m` with `sum e_m<infinity` kills the stable tail. The final theorem can be attacked increment by increment rather than by comparing two large determinants at the endpoint.
 
-A source-facing sufficient criterion remains the finite-band one: along unbounded `R_k`, find widths `H_k` for which the `kappa` mass of intervals of length at most `H_k` crossing the cut captures all but `O(1)` of `L_(R_k)`. NB-077 now says this target is compatible with, and should exploit, a multiscale monotone reservoir of cross-cut information generated by exact integer branching.
+The remaining issue is source control of those increments. NB-078 does not prove that branch-contrast prediction stays near the cut, and contrast correlations may live on rectangles whose additive width grows with scale. Mesoscopic localization is still a plausible mechanism for proving `c_m` large enough, but the exact target is now broader: any arithmetic theorem that prevents persistent positive cumulative refinement imbalance suffices.
 
-**Boundary.** Branching monotonicity of `L` and `C` does not imply monotonicity or boundedness of `J`. NB-077 transports total conditioned information but does not localize it to a fixed band or compare its growth sharply with raw continuation volume. No RH consequence follows until that localization/growth gap is closed.
+**Boundary.** The Gaussian language is only an exact log-determinant representation of deterministic Gram matrices. NB-078 does not prove finite-band localization, `ell_m<=c_m`, or a stable-tail contradiction. Its durable contribution is the common nonnegative multiresolution ledger and the summable-error criterion.

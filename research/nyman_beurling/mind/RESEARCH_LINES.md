@@ -8,28 +8,28 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Force branch-stable cross-cut prediction information into a mesoscopic band
+## Compare continuation and prediction growth on the same q-adic refinement ledger
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
-NB-066--NB-073 reduce a persistent late quotient to a global continuation mode and show that exact branching, the full finite-window local flag, zero one-cell memory, ordinary global conditioning, and stationary matched controls do not determine whether a stable tail survives.
+NB-066--NB-076 reduce a persistent late quotient to the uncancelled continuation charge `J_(R,N)=L_R-C_(R,N)`, where `L_R` is raw continuation volume and `C` is a nonnegative cross-cut lattice of conditioned prediction charges. NB-077 proves that both `L` and finite cross-cut charge are monotone under exact integer branching.
 
-NB-074 introduces the nonstationary continuation charge `J_(R,N)`. NB-075 writes it as raw continuation volume `L_R` minus future-conditioned multiple-correlation charges. NB-076 resolves those charges into the nonnegative interval lattice `kappa_(j,n)=-log(1-|rho_(j,n)|^2)`, giving the exact cross-cut area
+NB-078 resolves the **increment** created by each `q`-adic refinement. Block averages reproduce the coarse innovations exactly, while the complementary branch-contrast subspaces carry the entire fine-scale gain. Both
 
-`J_(R,N)=L_R-sum_(j<R<=n<=N) kappa_(j,n)`.
+`L_(qR)-L_R`
 
-NB-077 now reconnects that **signed/conditioned** cancellation geometry to exact integer branching. For a finite rectangle across a cut,
+and
 
-`C_(a|R|b)=sum_(a<=j<R<=n<=b) kappa_(j,n)=log(Delta_(a,R-1) Delta_(R,b)/Delta_(a,b))`,
+`C_(qR,q(N+1)-1)-C_(R,N)`
 
-and integer dilation satisfies
+split into explicit sums of nonnegative conditional mutual informations involving edge and branch-contrast coordinates. Along a `q`-adic ray, writing these increments as `ell_m` and `c_m`, one has the exact ledger
 
-`C_(a|R|b) <= C_(qa|qR|q(b+1)-1)`.
+`J_m = J_0 + sum_(r<=m) (ell_r-c_r)`.
 
-Likewise the raw continuation volume obeys `L_R<=L_(qR)`. Thus coarse cross-cut prediction information cannot be destroyed by signed fine-scale cancellation: exact branching transports it monotonically into the descendant `kappa` lattice. This closes the phase-cancellation weakness of the earlier absolute-Gram branching argument.
+A nonzero stable tail therefore forces the cumulative refinement imbalance `sum(ell_r-c_r)` to diverge on every such ray. Conversely, if `ell_m <= c_m+e_m` with summable `e_m` on one unbounded ray, then `J` stays bounded and the stable tail is zero.
 
-The remaining gap is localization. The descendant rectangles widen proportionally with `q`, so branching preserves total predictive information without forcing it into bounded additive distance from the cut. The live arithmetic theorem is to show that enough branch-stable charge accumulates in a genuinely finite/mesoscopic band to recover `L_R-O(1)`, or otherwise compare the growth of raw volume and transported cross-cut charge strongly enough to make the uncancelled continuation `J` bounded along an unbounded sequence.
+The live theorem is now source-specific and scale-local: prove that new continuation information cannot systematically outrun new cross-cut prediction information, up to a summable total loss. Mesoscopic localization remains one possible route, but NB-078 shows it is not necessary to compare the two large final determinants directly; the arithmetic burden can be placed on the **new information created at each refinement level**.
 
-## Treat raw continuation volume, total cross-cut information, band localization and uncancelled continuation separately
+## Keep raw continuation, cross-cut prediction, refinement contrast, additive localization and uncancelled continuation separate
 
-NB-077 makes both `L_R` and the complete finite cross-cut charge monotone under integer branching, but their difference need not be monotone. Branching preservation is therefore not yet a stable-tail contradiction. The missing currency is **where** the preserved conditioned information lands relative to the cut, not whether it survives at all.
+NB-078 makes the common multiresolution currency exact, but it does not localize contrast correlations to bounded additive distance from the cut. Total prediction gain may still live on widening descendant rectangles. The new scale-by-scale imbalance criterion and the older finite-band localization criterion are therefore related but distinct sufficient routes. Neither is supplied by branching alone.
