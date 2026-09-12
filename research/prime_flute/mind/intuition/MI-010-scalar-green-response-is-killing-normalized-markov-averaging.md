@@ -1,31 +1,15 @@
-# MI-010 — Scalar Green response is killing-normalized averaging, but nonconstant screening is visible to the full killing-normalized constant sector
+# MI-010 — Scalar Green response is killing-normalized averaging, while the known screened backreaction is physical-low at entrance
 
-**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-308; no theorem for the final physical `P/H` entrance/reassembly compression, weak/Schatten estimate, or arithmetic discrimination is claimed.
+**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-309; no theorem for the full physical `P/H` entrance-to-reassembly composition, weak/Schatten estimate, or arithmetic discrimination is claimed.
 
-PF-298 writes every constant-boundary pant compression as a positive conductance edge plus positive shifted Robin killing. PF-303--PF-305 then normalize the assembled constant chain as
+PF-303--PF-305 normalize the assembled constant chain as a killed positive network whose Green response becomes a norm-one contraction after killing normalization. PF-306 locates the first omitted conversion in the constant-to-nonconstant Schur angle, and PF-307 proves that the canonical tail geometry has no uniform global angle gap.
 
-`H_N=L_(c,N)+D_N`, `G_N=H_N^-1`, `S_N=D_N^(1/2)G_ND_N^(1/2)`,
+PF-308 shows that this is not merely an unrestricted operator-norm pathology. The explicit PF-217 screened traces carry macroscopic killing mass but sublinear shorted energy, forcing the full killing-normalized constant Green block to diverge. The scalar normalization therefore stops protecting the source once nonconstant relaxation is allowed.
 
-with `0<S_N<=I` and `||S_N||=1`. Scalar return depth is therefore ideal-neutral after killing normalization.
+PF-309 resolves the first genuinely physical entrance test for that same witness in the opposite direction. Because the screening profiles are smooth dilates on a growing tangential scale, their energy above every fixed physical frequency cutoff decays faster than any prescribed inverse power of `log M`. Removing the constant module mode does not change this high-pass component. Relative to the killing-normalized source mass, the physical-high leakage tends to zero.
 
-PF-306 identifies the first operator omitted when constants are embedded back into the full positive response. With `C_N=H_N^-1/2 B_N J_N^-1/2`, the constant Green block acquires the exact backreaction factor `(I-C_NC_N*)^-1`. PF-307 proves that the canonical tail geometry has no uniform angle gap: explicit long-block screening modes force `||C_(M,L(M))|| -> 1`.
+The combined lesson is that **full-space source accessibility and physical-high source accessibility are different resources**. The known Schur witness is accessible to the full killing-normalized constant sector, yet asymptotically invisible to every fixed physical-high entrance. A bad generalized Rayleigh quotient does not become a bad physical `P/H` direction until the exact source map and later reassembly are included.
 
-PF-308 resolves the source-access question for the **entire killing-normalized constant sector**. The same PF-217 screened traces satisfy
+This narrows the surviving route from “restrict to the physical sector” to a concrete composition question: can low screened input be converted by exterior propagation/Schur inversion/moving support into dangerous high output, or do all near-screened directions remain suppressed on the actual source-reached subspace? Signed reassembly and dangerous-mode multiplicity remain separate possible mechanisms.
 
-`<t,D_M t> >= c M`
-
-while their fully shorted energy obeys
-
-`<t,H_(M,L)^eff t> <= C(1+log M+M P_M^-eta)`.
-
-Hence the generalized inverse Rayleigh quotient gives
-
-`||D_M^(1/2)(H_(M,L)^eff)^-1D_M^(1/2)|| -> infinity`.
-
-The nearly screened directions are therefore not made harmless merely by weighting the constant source with the canonical killing. PF-305 remains exact inside the scalar chain, but the protection ends after nonconstant relaxation: the same normalization cannot simultaneously neutralize the Schur backreaction.
-
-This narrows the surviving route again. The relevant object is no longer the full constant source space, but the **actual physical `P/H` source and reassembly maps that precede and follow it**. A positive theorem must show that those narrower maps avoid/suppress the screened profiles, that signed reassembly cancels their amplification, or that dangerous directions are sufficiently sparse for the final two-sided response to satisfy the required ideal estimate.
-
-The reusable lesson is that **a source normalization can remove one reservoir while leaving the next conversion singular on source-accessible directions**. After a global norm is bad, it is not enough to restrict to a coarse “physical-looking” sector; the restriction must be the exact source/target range consumed by the final observable.
-
-**Boundary.** PF-308 proves divergence of canonical finite-section killing-normalized constant Green blocks. It does not prove that the final physical `P/H` mixed response is unbounded, noncompact, or outside weak trace class, and it gives no density law for dangerous singular directions. A materially different interface representation requires its own blockwise dictionary.
+**Boundary.** PF-309 treats the explicit smooth PF-217/PF-308 family and a fixed physical cutoff. It does not classify every near-unit singular direction, moving cutoffs, or the final reassembled output. A different screened family could have genuine physical-high leakage, and later maps can generate high-frequency components from low input.

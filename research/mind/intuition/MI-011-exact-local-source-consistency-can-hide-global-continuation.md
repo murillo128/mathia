@@ -1,21 +1,17 @@
-# MI-011 — Exact local source consistency can hide nonlocal continuation or preserve a pre-compression joint defect
+# MI-011 — Exact local source consistency can hide an inner-factor continuation defect or an endpoint reset bill in new prime supports
 
-**Evidence level:** supported by NB-066--NB-071 and RE-068--RE-073; no operator or estimate is transferred between the lines.
+**Evidence level:** supported by NB-066--NB-072 and RE-068--RE-075; no operator or estimate is transferred between the lines.
 
 Nyman--Beurling and Robin Extremal expose complementary failures of “local matching implies global harmlessness.”
 
-In Nyman, NB-066--NB-067 make the stable-tail obstruction a global continuation cost visible through finite Schur complements. NB-068 shows that zero one-cell memory and a matching finite local flag do not determine that cost. NB-069--NB-070 then impose exact integer-dilation branching and prove that bounded nonorthogonality must carry persistent far Gram mass.
+In Nyman, NB-066--NB-071 make the stable-tail obstruction a global continuation problem and construct an exact-branching, locally indistinguishable, globally well-conditioned matched control with a nonzero stable tail. NB-072 classifies that stationary scalar mechanism exactly: for `psi(V_m)`, the stable tail is the model space of the inner factor, while the outer factor controls synthesis/conditioning. Local flags and exact branching cannot see the inner factor.
 
-NB-071 closes the hope that branching plus good global conditioning might suffice. It constructs an explicit exact-branching source with the same finite-window local flag as the flat control and a uniformly conditioned Gram operator, yet with an infinite-dimensional stable tail and exponentially diverging causal continuation certificates. The mechanism is a coherent multiplicative parent-child Gram tree whose signed correlations persist at unbounded additive distances. The missing Nyman theorem must therefore use arithmetic structure beyond local flags, exact branching, far-mass necessity, and ordinary Riesz conditioning.
+The Nyman target therefore becomes a source-specific outerness/cyclicity or no-inner-factor theorem in the actual nonstationary innovation geometry. Better generic condition numbers cannot address a defect that lives in a different factor.
 
-In Robin, RE-068 fixes the prime multiset exactly and RE-069 suppresses direct timing through the final kernel. RE-070--RE-072 find a surviving selector geometry that drives `H_vartheta` upward and the logarithmic Mertens error downward through complete matched fan runs. RE-073 strengthens that survivor to a span-free joint capacity law: for threshold width `w` beginning at physical scale `X`,
+In Robin, RE-068--RE-073 show that endpoint matching and summable direct timing coexist with a span-free Chebyshev--Mertens source budget along matched runs. RE-075 then identifies the exact reset currency: because `vartheta(Z)-delta_vartheta(Z)=log rad(C)`, higher-layer exponent changes disappear from the ordinary-prime ledger. Net recovery of the matched Mertens descent can be paid only by **new first-layer support primes**, up to the endpoint fringe correction.
 
-`Delta_H Delta_E >>_J X^(1-2b_1) log X * w^2`.
+A fixed-fraction reset after a run of scale `W` and width `w` requires `>> W^(1-b_1)w` new supports and physical logarithmic-state span `>> W^(1-b_1)w log W`, regardless of packet grouping or higher-layer complexity.
 
-Thus stretching the selected run cannot make both source coordinates cheap; it can only redistribute burden between them.
+The common discipline is sharper: **after exact local matching, identify the global factor or source-capacity variable that remains, then price the exact mechanism capable of erasing it**. In Nyman the survivor is an inner-factor/model-space continuation defect. In Robin the survivor is a coupled source displacement whose endpoint reset requires new ordinary-prime support births.
 
-The common discipline is now sharper: **match the exact source covariance and local observations first, then identify the global continuation/capacity variable that still distinguishes the real source from matched controls**. In Nyman even exact branching and excellent global Gram conditioning can coexist with hidden stable-tail continuation. In Robin even exact endpoint matching and summable timing can coexist with a span-free joint source burden before compression.
-
-The remaining work is correspondingly source-specific. Nyman must exclude or control the multiplicative-tree continuation mechanism using arithmetic Gram structure. Robin must combine matched-run joint budgets with higher-layer/fringe interruption charges into a global capacity theorem. Neither can be solved by adding another generic local regularity or conditioning assumption.
-
-**Boundary.** No Nyman Schur theorem transfers to Robin prime errors, and no Chebyshev--Mertens capacity law transfers to Nyman continuation. The synthesis concerns staged source/destination tests and the fact that locally perfect matching can leave decisive global geometry unresolved.
+**Boundary.** No Nyman factorization theorem transfers to Robin prime errors, and no Robin support-birth law transfers to Nyman continuation. The synthesis concerns staged source/destination tests: locally perfect matching can leave a decisive global survivor, and generic extra complexity is irrelevant unless it changes the exact currency that erases that survivor.

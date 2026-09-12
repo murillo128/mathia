@@ -2,18 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prevent the first forbidden localized Weil crossing in the correct form topology
+## Prevent the first forbidden localized Weil crossing with source-specific control beyond the sharp generic form modulus
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
 PL-280--PL-282 give the one-sided aperture ledger, global exhaustion, and a terminating finite positivity certificate at each fixed aperture. PL-283--PL-284 add a conditional computer-assisted positive endpoint at `a=0.8` with a simple isolated ground state and a tiny but explicit positive margin.
 
-PL-285 closes the naive perturbative bridge from that endpoint. After scaling to a fixed interval, each already-active prime-power term contains a compressed translation with shift `log(n)/a`. These translations are strongly continuous but maximally discontinuous in ambient `L^2` operator norm: an arbitrarily small nonzero shift change can have norm difference approaching two. Therefore “no new prime atom enters” does not imply a small bounded-operator perturbation, even inside the source-static interval before `log(5)/2`.
+PL-285 closes naive bounded-operator transport after scaling to a fixed interval. Already-active prime-power channels are compressed translations with shift `log(n)/a`; they are strongly continuous but maximally discontinuous in ambient `L^2` operator norm, even inside a source-static interval.
 
-The canonical logarithmic form domain restores continuity. On an `H^log` energy ball, the moving translations admit only a logarithmic generic modulus, of order roughly `1/sqrt(log(1/|delta|))`. This identifies the correct topology behind Suzuki's continuity theorem, but compared with the `8.9e-18` endpoint margin it is far too weak, without much stronger constants or regularity, to bridge the visible interval quantitatively.
+The canonical logarithmic form domain restores continuity, and the sharp rates are now known. The operator modulus `H^log -> L^2` is asymptotically `2/sqrt(log(1/|delta|))`, while the **quadratic form actually consumed by the variational problem gains one square root**: its sharp generic modulus is `Theta(1/log(1/|delta|))` in the logarithmic energy scale.
 
-The live theorem is therefore a **form-level source-specific transport law**. It must exploit uniform low-energy `H^log` bounds, stronger regularity of the ground branch, cancellation among the moving arithmetic channels, or another variational/Schur identity. Termwise `L^2` operator-norm perturbation is a closed route.
+This improves the earlier generic diagnosis but does not change the strategic boundary. Transporting the `8.9e-18` endpoint margin across a macroscopic fraction of the source-static interval would still require fantastically small aperture steps under a bare `H^log` estimate. The inverse-log order is sharp, so another generic frequency split cannot improve it.
 
-## Separate endpoint isolation, qualitative continuity, and aperture-uniform coercivity
+The live theorem must therefore exploit information absent from an arbitrary logarithmic-energy ball: uniform stronger regularity of the actual low branch, cancellation among the finitely many moving von-Mangoldt channels, a source-specific variational identity, or another structural estimate tied to the canonical ground state. Termwise `L^2` perturbation and bare `H^log` regularity are both exhausted as quantitative bridges.
 
-A simple positive ground state makes local spectral tracking meaningful, but PL-285 shows that the topology and modulus of that tracking are themselves part of the arithmetic problem. Qualitative continuity, a fixed-window gap, source-static support, and a usable quantitative positivity radius are different resources. A future endpoint certificate matters globally only if it composes with a transport estimate in the canonical form geometry.
+## Separate endpoint isolation, qualitative continuity, sharp generic form continuity, and aperture-uniform coercivity
+
+A simple positive ground state makes local tracking meaningful, but PL-285 shows that the topology and its quantitative modulus are themselves part of the arithmetic problem. Qualitative continuity, source-static support, a sharp inverse-log form modulus, and a useful positivity radius are different resources. A future endpoint certificate matters globally only if it composes with stronger source/state information than the generic form topology supplies.

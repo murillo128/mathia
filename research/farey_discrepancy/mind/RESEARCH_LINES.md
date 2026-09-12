@@ -2,20 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Propagate source-record causal control beyond a sparse protected subsequence
+## Turn amplitude-length protected record blocks into a global recurrence theorem
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-066 isolates the direct coherent-packet threshold, FD-068 shows that very low normalized nonsquarefree occupation cannot dominate logarithmic scale for q-subcovariant heads, and FD-069--FD-070 prove that a physical source spike eventually creates a growing nonsquarefree reciprocal packet. FD-071 then closes arbitrary-later-horizon persistence as a normalization argument: a later source spike can dominate the same-horizon denominator and dilute every fixed earlier episode.
+FD-066 isolates the direct coherent-packet threshold, FD-068 shows that very low normalized nonsquarefree occupation cannot dominate logarithmic scale for q-subcovariant heads, and FD-069--FD-071 separate pointwise capture from later-horizon dilution.
 
-FD-072 supplies the missing episode-adapted denominator theorem on a distinguished sparse subsequence. If `X` is a `sigma`-power record of the physical source with `sigma>1/2`, then at the causal horizon `T=4X`, `D=3`, every quotient sampled by the denominator lies at or before `X`. The record envelope therefore controls the entire denominator, while the nonsquarefree row `r=4` samples the record exactly. Consequently
+FD-072 supplies a source-selected positive mechanism. If `X` is a `sigma`-power record of the physical source with `sigma>1/2`, the causal horizon `T=4X`, `D=3` confines the complete denominator to the record-controlled prefix and forces a fixed positive nonsquarefree occupation and Schur defect.
 
-`nu_(4X,3) >= kappa_sigma > 0`
+FD-073 now shows that these protected episodes are not pointlike. The exact unit-increment law for the physical source propagates a record of amplitude `A=|H(X)|` to every `Y` with `|Y-X|<=eta A`; each recentered horizon `4Y` inherits a uniform positive occupation when `sigma>1/2`. Under a false-RH frontier, strict records therefore generate additive protected blocks of length `asymp A_j`, with `A_j/X_j^sigma -> infinity`.
 
-and the corresponding Schur saturation loss also has a fixed positive lower bound. Under a false-RH frontier `Theta>sigma>1/2`, infinitely many strict records give infinitely many such protected horizons.
+At the critical endpoint `sigma=1/2`, the same causal mechanism survives with the explicit loss `nu_(4Y,3) >>_eta 1/log Y`. This makes the endpoint degeneration quantitative but still does not produce a fixed critical-line gap.
 
-The live problem has therefore moved. It is no longer to show that *some* episode-adapted normalization exists. The missing theorem must control the **spacing, density, or propagation** of these protected record episodes, extend the causal-prefix argument to a richer near-record family, or find a mechanism that remains quantitative as `sigma downarrow 1/2`, where `kappa_sigma -> 0`.
+The live problem is now genuinely global recurrence geometry. One must control the spacing/overlap/density of the amplitude-length protected blocks, find a propagation mechanism extending beyond the one-Lipschitz amplitude radius, or convert the explicit `1/log` endpoint protection into a target estimate that survives its decay. Reproving existence of isolated protected records or short-interval packet multiplicity no longer addresses the frontier.
 
-## Keep coherence, capture, recurrence, causal horizon selection, head survival, leverage, episode location, and denominator growth separate
+## Keep coherence, capture, recurrence, causal horizon selection, block thickness, endpoint loss, leverage, and denominator growth separate
 
-FD-066--FD-072 control different losses. The cubic packet closes pointwise sparsity; FD-071 shows why later persistence can be normalized away; FD-072 shows that a source record can instead protect itself by choosing a horizon whose complete denominator is causally confined to the record-controlled prefix. This protection is sparse and exponent-dependent. Future progress should quantify how often that causal protection occurs or how far it can be transported, rather than repeating packet-multiplicity or arbitrary-host arguments.
+FD-071 explains why arbitrary-later persistence can be normalized away; FD-072 protects a causal record; FD-073 thickens that record into an intrinsic block and quantifies the exact endpoint loss. None of these results controls global record gaps. Future progress must turn local block thickness into a recurrence/density statement or discover a different source-specific domination principle.

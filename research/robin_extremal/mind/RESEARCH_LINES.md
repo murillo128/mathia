@@ -2,20 +2,32 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Accumulate span-free matched-run source budgets together with interruption charges
+## Convert matched-run source descent plus first-layer support-birth cost into a global fan obstruction
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`.
 
-RE-068 makes every additive endpoint prime statistic exactly blind on one matched first-layer `0 -> 0` packet, and RE-069 shows that direct prime-to-event timing is summable after the exact Robin readout. RE-070--RE-072 nevertheless expose a pre-compression two-source ledger: selector dilation forces `H_vartheta(Z)=Z-vartheta(Z)` upward and the logarithmic Mertens error `E_l(Z)` downward through every matched switch and intervening cell.
-
-RE-072 gives separate width costs, but its direct lower bound for the reciprocal-prime excursion weakens with the largest physical scale reached by a stretched fan. RE-073 removes that escape jointly. On every sufficiently late matched first-layer run of threshold width `w` beginning at physical scale `X`, the exact cell relation `-dE_l=g(Z)dH_vartheta` and Cauchy--Schwarz give the span-free law
+RE-068--RE-073 expose a pre-compression two-source ledger on matched first-layer fan runs. Selector dilation drives the Chebyshev deficit upward and the logarithmic Mertens-product error downward, and RE-073 gives the span-free joint law
 
 `Delta_H Delta_E >>_J X^(1-2b_1) log X * w^2`.
 
-The upper physical scale no longer appears. A superpolynomially stretched run may trade a smaller Mertens decrement for a larger Chebyshev excursion, or vice versa, but it cannot make both source burdens simultaneously cheap. This remains a capacity law rather than a contradiction; its exponent stays compatible with the false-RH source frontier.
+RE-074 first showed that bounded fan packets have limited reciprocal-source reset throughput. RE-075 removes the packet-size hypothesis entirely by returning to the exact fixed-cell identity
 
-The live theorem is now global accumulation. Show that a false-RH fan cannot partition a fixed threshold interval into maximal matched runs satisfying these joint span-free budgets plus the higher-layer/fringe charge laws of RE-060--RE-067, or identify an architecture in which the same off-critical source trajectory absorbs all of those costs without contradiction.
+`vartheta(Z)-delta_vartheta(Z) = log rad(C)`.
 
-## Treat source fidelity, selector geometry, destination compression, fan width, joint error drift, and physical span separately
+Higher-layer exponent changes vanish from the radical. Across any ordered selected fan segment, the ordinary primes crossed by the selector, up to the single endpoint fringe correction, are exactly the **new first-layer support primes** created by the CA state. Consequently higher-layer complexity has no independent Mertens-reset capacity.
 
-Exact conservation of the prime multiset does not imply geometric neutrality. Direct timing can be summably erased while selector dilation survives; RE-072 shows that the survivor accumulates coherently, and RE-073 shows that the two source coordinates possess a joint capacity that no longer loses strength merely because the selected fan stretches to a very large physical scale. Higher-layer events and unmatched fringe transitions remain distinct interruption mechanisms rather than cancellation hidden inside the matched ledger.
+If a later endpoint recovers a fixed fraction of the Mertens descent of a matched run with terminal scale `W` and threshold width `w`, RE-075 forces at least
+
+`F >> W^(1-b_1) w`
+
+new first-layer support primes, and therefore physical logarithmic-state span at least
+
+`Y_* - W >> W^(1-b_1) w log W`.
+
+For macroscopic `w`, the support-birth cost is already super-square-root. Grouping arbitrarily many higher-layer events into one enormous packet does not evade it.
+
+The live theorem is now sharper than a packet-complexity count. Either show that the false-RH fan cannot create the required polynomial number of new ordinary prime supports/physical span while remaining in the positive counterexample geometry, or identify a coherent architecture that pays this exact support-birth bill. Higher-layer rearrangement is no longer an unpriced reset escape.
+
+## Treat source fidelity, selector geometry, joint error drift, first-layer support births, and physical span separately
+
+Matched-run descent and later reset are both now tied to source-native quantities. RE-073 prices the coherent matched segment; RE-075 prices any endpoint-level recovery by new prime-support births regardless of intervening higher-layer complexity. The remaining global question is whether the counterexample fan can afford both costs simultaneously.

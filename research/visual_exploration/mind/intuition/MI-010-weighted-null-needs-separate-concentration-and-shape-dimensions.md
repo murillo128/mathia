@@ -1,21 +1,19 @@
-# MI-010 — Weighted prime-gap nulls have separate shell, cross-scale, and window-endpoint coherence regimes
+# MI-010 — Smooth endpoint regularity collapses the entire linear-scale quadratic prime-pair channel
 
-**Evidence level:** supported by weighted-Haar calculations and deterministic transfer/control theorems through VIS-187; no prime-pair asymptotic or arithmetic cross-scale term is claimed.
+**Evidence level:** supported by weighted-Haar calculations and deterministic/prime-pair transfer controls through VIS-189; no statement is made for higher moments, discrete sampling, hard windows, or RH.
 
-For positive prime weights, the effective dimensions controlling concentration and normalized shape are distinct. VIS-173--VIS-178 make that separation explicit, while VIS-179 shows that continuous quadratic variance is matched for every strictly sublinear support law. VIS-180 warns that arbitrary sparse subsets can still retain an order-one slow beat at linear support.
+VIS-181--VIS-186 show that the diffuse full-prime prefix suppresses every fixed and polynomial mesoscopic gap shell at linear observation scale. VIS-187 then reveals that summing many such shells under a rectangular window can still produce a deterministic `log M` resonance from a flat even-gap source when exactly one hard endpoint is resonant.
 
-The diffuse full-prime prefix behaves differently. VIS-181--VIS-184 progressively kill fixed and slowly growing close-gap families. VIS-185 uses the actual interval-average kernel, and VIS-186 sharpens the polynomial boundary: every fixed mesoscopic polynomial gap shell `d asymp y^delta`, `0<delta<1`, vanishes individually at linear observation scale. No single polynomial octave carries an order-one normalized contribution.
+VIS-188 identifies that logarithm as endpoint leakage. Making the window vanish at both ends removes the first Fourier boundary term and improves the kernel tail from `1/z` to `1/z^2`; the flat-gap cumulative resonance becomes uniformly bounded.
 
-VIS-187 shows why the remaining cross-scale question needs a stronger null. For the flat deterministic even-gap profile, with `H=cp`, `T=tau p`, and `M=o(p^(1/2))`, the cumulative kernel sum is
+VIS-189 shows that this is not merely a matched-null cleanup. Combining the same tapered kernel with standard prime-pair upper-bound sieve input yields, for fixed `alpha<1/2`,
 
-`[S_M(2(tau+c))-S_M(2tau)]/(2ci) + O(M^2/p)`,
+`Q_y^(-1) sum_(p<q<=y) p^(-alpha) q^(-alpha) |K_v(p,q)| << y^2/(H^2 log y)`.
 
-where `S_M(theta)=sum_(m<=M) exp(i theta m)/m`. A logarithmic term appears precisely when exactly one scaled window endpoint is resonant modulo `pi`. In particular, an anchored window can produce order-`log M` accumulation from a completely source-free even-gap profile.
+At `H>=c y` the entire absolute off-diagonal is therefore `O(1/log y)`. Near gaps are summable because the taper changes the gap weight from harmonic `1/d` to `1/d^2`; far multiplicative pairs are even smaller without pair-correlation input.
 
-Thus the shellwise picture and the cumulative picture are separated by a new deterministic currency: **window-endpoint coherence**. Small contributions from many octaves can add coherently because of the readout kernel itself, without any prime-dependent cross-scale correlation. An order-one cumulative signal is not arithmetic evidence until a matched control preserves the same scaled endpoints and coarse gap density, or the endpoint-resonant component is removed explicitly.
+The reusable intuition is now stronger than “control endpoint resonance”: **for a fixed endpoint-zero smooth window, the whole linear-scale quadratic full-prefix prime-log field asymptotically diagonalizes**. No choice of gap scale within that same observable can recover an order-one quadratic source signal once the absolute envelope already vanishes.
 
-The surviving positive question is correspondingly narrower. After endpoint resonance is controlled, does the actual prime-weighted off-diagonal kernel retain a residual cross-scale term that a flat/equidensity gap null cannot reproduce? Alternatively, does the nonresonant or endpoint-centered residual cancel across octaves, leaving only genuinely macroscopic separations `d asymp y`?
+This redirects the positive search. A surviving mechanism must change observation order, sampling, normalization/support geometry, or source coordinates rather than refine the quadratic gap decomposition. A hard rectangular window remains a different observable, but its slow Fourier leakage is a load-bearing feature that must be controlled explicitly.
 
-The reusable separation is: weight concentration, support scale, functional order, observation horizon, local spacing, one-shell mass, cross-scale accumulation, and endpoint resonance are different currencies. A dense family of close frequencies matters only after its mass survives both the destination kernel and the normalization, and coherent accumulation itself must be tested against the exact deterministic window geometry.
-
-**Boundary.** VIS-187 uses equal deterministic weight per even gap, fixed scaled endpoints, and `M=o(p^(1/2))`. It does not describe actual prime-pair multiplicities or singular-series weights, does not treat larger cumulative gap ranges or macroscopic `d comparable to y`, and does not show that subtracting the endpoint null removes every non-arithmetic contribution.
+**Boundary.** VIS-189 assumes fixed `alpha<1/2`, a fixed endpoint-zero `C^2` taper, continuous averaging, and the full-prefix quadratic normalization. Constants are not uniform at the critical `alpha=1/2`, and the result does not cover growing-order moments, discrete Gram sampling, nonlinear statistics, adaptive tapers with growing derivative norms, or sparse adversarial support normalizations.

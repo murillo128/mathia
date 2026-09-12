@@ -20,24 +20,22 @@ AF-221--AF-233 show that localization has a real information bill and that contr
 
 AF-234--AF-243 show that the RH root-rate endpoint tolerates large output error but is extremely sensitive to breaking the binomial cancellation orbit in the source representation. The live bridge must assemble the required cancellation orbit before the root-rate quotient is formed.
 
-## Separate acquisition conditioning from zero-count conditioning, then price representation distortion
+## Separate acquisition conditioning from zero-count conditioning, then justify any genuinely new target geometry
 
 **Linked intuitions:** `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`, `MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage`, `MI-025-regular-sampling-separates-aliasing-from-finite-window-stability`, `MI-026-zero-count-fidelity-is-distance-to-the-boundary-zero-discriminant`.
 
 AF-282--AF-289 show that a finite Dirichlet prefix can be recovered by a well-conditioned mixed frame after the common-clock gauge is removed. AF-290 then identifies a separate target gate: the exact coefficient radius preserving the zero count is distance to the boundary-zero discriminant.
 
-AF-291 proves that the normalized eta margin collapses on every fixed RH-relevant contour despite correct analytic boundary convergence. AF-292 shows that no positive diagonal Hilbert reweighting improves the critical-strip power. AF-293 classifies arbitrary positive-definite Hilbert mixing under a condition-number budget:
+AF-291 proves that the normalized eta margin collapses on every fixed RH-relevant contour despite correct analytic boundary convergence. AF-292--AF-294 show that this collapse cannot be repaired for free by positive diagonal Hilbert scaling, bounded-condition dense Hilbert mixing, or a uniformly quasisymmetric nonlinear reparameterization with honest bad-set transport.
 
-`D_(Gamma,N)(K) asymp_Gamma min(1, sqrt(K)/(sqrt(N) H_N(alpha)))`.
+AF-295 closes the most canonical quotient escape. For every homogeneous zero-count failure cone,
 
-AF-294 now closes the uniformly controlled nonlinear version of the same escape. For relative discriminator margin `rho_X=dist(x,D)/d(x,a)`, any injective `eta`-quasisymmetric representation with honest transport of the bad set satisfies
+`dist_gap([b], P D) = dist(b,D)/||b||`,
 
-`1/eta(1/rho_X) <= rho_Y <= eta(rho_X)`.
+so the normalized zero-count margin is exactly the projective distance obtained after removing global complex amplitude and phase. The eta margin therefore still collapses after the natural `C*` quotient with the same asymptotic law, and AF-293's condition-number bill becomes the corresponding projective Hilbert-geometry bill.
 
-Hence one uniform distortion function cannot turn `rho_N -> 0` into an order-one target margin. A nonlinear family that repairs the eta margin must let its relative distortion degenerate at the shrinking discriminator scale, change the bad set/target category, add genuinely new information, use a quotient/compression requiring its own fidelity analysis, or leave the quasisymmetric metric category.
-
-The live question is therefore not whether a clever coordinate system can enlarge the margin. It is whether the source supplies a **natural reason** for the required scale-dependent distortion or for a genuinely different target geometry, rather than merely relocating the same instability into the representation.
+The live question is no longer whether the denominator `||b||` retained a spurious scalar coordinate. A viable repair must identify an **additional target-null quotient**, a genuinely different source-natural target geometry, or genuinely new information, and then prove its own fidelity/conditioning theorem rather than merely relocating the same projective approach to the discriminant.
 
 ## Treat the information bills separately
 
-Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, linear condition number, and nonlinear relative distortion are distinct resources. Exact or stable upstream recovery is useful only if the final observable remains stable in its own quotient geometry. AF-293--AF-294 show that neither bounded-condition linear mixing nor uniformly quasisymmetric nonlinear reparameterization removes a vanishing target margin for free.
+Finite local degree, prime breadth, mixed-channel coupling, sample count, frame conditioning, nuisance gauge, residual jitter, target distance to ill-posedness, linear condition number, nonlinear relative distortion, and quotient geometry are distinct resources. Exact or stable upstream recovery is useful only if the final observable remains stable in its own quotient geometry. AF-295 shows that the obvious scalar quotient is already exactly encoded by the normalized margin rather than providing an independent escape.
