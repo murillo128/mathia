@@ -85,13 +85,34 @@ No adjoint lift, target-tail rate for zeta, cheaper projector algorithm, or impr
 
 ## Research disposition
 
-The direction remains in scope and worth investigating. `NB-058` gives the exact dual reduction
+The direction remains in scope and worth investigating, but `NB-061` settles its former existence gate. For every integer `R>=2`, if `J_R` denotes Paley--Wiener truncation to `[0,log R]`, then
 
 \[
-\mathcal K_R=\mathcal A^\perp\cap\ker U_{\log R}^*
-=\mathcal A^\perp\cap\mathcal T_R^\perp,
+J_R\mathcal A
+=
+\operatorname{span}\{J_RF_{\log n}:2\le n\le R\},
+\qquad
+\mathcal K_R
+=
+\ker U_{\log R}^*\ominus J_R\mathcal A.
 \]
 
-but current evidence does not establish whether these finite-time arithmetic defect sectors are trivial or nontrivial. The available local-Dirichlet rigidity theorem for the disk Hardy Nyman span controls the distinguished boundary point `1`; no source-controlled bridge has been established that transports compact-time regularity in the half-plane model into that exact local class while preserving the relevant Nyman orthogonal complement.
+Thus `K_R` is infinite-dimensional for every finite `R`; in particular `K_2` has codimension at most one inside `L^2([0,log 2])`. The negative branch `K_R={0}` is no longer live, and producing a nonzero compact-time annihilator is by itself no longer a meaningful success criterion.
 
-The decisive question therefore remains the original one: construct a nonzero member of `K_R` with usable source control, or prove `K_R={0}` by a correct representation-preserving argument. Until one of those succeeds, the early-cell adjoint certificate is neither established nor refuted.
+The unresolved part is now target-specific. `NB-061` gives the exact decomposition
+
+\[
+\|P_{\mathcal T_R}Qe\|^2
+=
+\|(I-J_R)Qe\|^2
++
+\|P_{J_R\mathcal A}J_RQe\|^2,
+\]
+
+so the first term vanishes automatically and the clue succeeds only if the second, finite-dimensional leakage term can be controlled from source-visible data. The decisive task is therefore to construct localized defects that approximate the canonical residual, or equivalently prove
+
+\[
+\|P_{J_R\mathcal A}J_RQe\|\to0
+\]
+
+with a quantitative oracle-free bound. The weak-adjoint construction remains one possible route to that estimate, but mere existence of compact-time defects has been resolved and should not be revisited.
