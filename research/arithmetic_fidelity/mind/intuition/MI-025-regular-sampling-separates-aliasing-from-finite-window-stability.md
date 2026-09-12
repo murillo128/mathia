@@ -1,6 +1,6 @@
-# MI-025 — Regular sampling separates marginal aliasing, joint coupling, and finite-budget stability
+# MI-025 — Regular sampling separates aliasing, joint coupling, phase-label resolution, and coefficient stability
 
-**Evidence level:** supported by the exact phase-pushforward classifications AF-279--AF-281 on the stated absolutely convergent ordinary-Dirichlet coefficient class.
+**Evidence level:** supported by the exact phase-pushforward classifications AF-279--AF-281 and the finite-prefix separation theorem AF-282 on the stated absolutely convergent ordinary-Dirichlet coefficient class.
 
 For
 
@@ -24,10 +24,33 @@ AF-281 gives the complementary classification for genuinely **joint mixed sample
 \bigcap_j R_{h_j}=\{1\}.
 \]
 
-Thus coupling can repair exact aliases that no separate marginal repairs.
+Thus coupling can repair exact aliases that no separate marginal repairs. If all individual cadences resonate, strict repair requires their generated time subgroup to be dense rather than one discrete lattice, so complete exact recovery pays unbounded mixed integer-combination complexity.
 
-The cost of that repair is geometrically explicit. The subgroup `sum_j Z h_j` is either one discrete lattice or dense in `R`. If all individual cadences resonate, strict repair cannot occur in the discrete case; it requires the dense case and therefore arbitrarily fine mixed times or unbounded integer combinations. On a known `M`-frequency truncation, mixed polynomials of degree at most `M-1` can interpolate distinct joint phase nodes, but on the unrestricted infinite source every fixed mixed-index box has no uniform inverse modulus because remote frequencies recur near the same joint phase.
+AF-282 prices a different finite-breadth resource for the concrete two-prime repair
 
-Hence three currencies remain independent: **fiber aliasing, retention of joint coupling, and finite acquisition stability**. Joint moments solve the second and can solve exact aliasing, but they do not make unbounded source breadth a finite-budget problem.
+\[
+h_2=2\pi/\log2,\qquad h_3=2\pi/\log3.
+\]
 
-**Boundary.** These statements concern declared ordinary Dirichlet frequencies and weighted `ell^1` amplitudes. Narrow Euler, automorphic, positive, sparse, or otherwise structured source categories can alter both the exact kernel and the conditioning problem.
+For the joint phase nodes
+
+\[
+z_n=(e^{-2\pi i\log n/\log2},e^{-2\pi i\log n/\log3}),
+\qquad 1\le n\le N,
+\]
+
+the minimum coordinatewise chord separation satisfies
+
+\[
+\frac{4}{3^{1/4}\log6}\frac1N
+\le \delta_N
+\le \frac{2\pi}{\log2}\frac1{N-1}.
+\]
+
+So the finite prefix's **labels themselves** separate at order `1/N`: direct noisy label identification needs `O(1/N)` phase accuracy, equivalently only `O(\log N)` bits of absolute resolution. Exact joint alias repair therefore does not hide an exponentially collapsing pairwise node spacing on the ordinary prefix.
+
+This does **not** price arbitrary coefficient recovery. Interpolating an unknown amplitude vector from mixed Fourier moments still pays mixed-mode degree, collective node geometry, observation design, and the inverse condition number of the resulting moment/Vandermonde system. On the unrestricted infinite source every fixed mixed-index box still has remote near-collisions and no source-breadth-independent inverse modulus.
+
+The useful separation is therefore fourfold: **phase-fiber aliasing, retention of joint coupling, finite-prefix label resolution, and coefficient-recovery conditioning**. AF-282 removes pairwise phase-label collapse as the explanation for severe finite-prefix instability in the `log2/log3` channel; any stronger bill must enter through the moment budget, coefficient inversion, noise model, or a broader source category.
+
+**Boundary.** These statements concern declared ordinary Dirichlet frequencies and weighted `ell^1` amplitudes. Narrow Euler, automorphic, positive, sparse, or otherwise structured source categories can alter both the exact kernel and the conditioning problem. The `Theta(1/N)` result is pairwise joint-node separation, not a lower singular-value estimate for a multivariate interpolation matrix.

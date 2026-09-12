@@ -1,4 +1,4 @@
-# MI-008 — Exact separation, joint coupling, finite-budget stability, and local contraction are different losses
+# MI-008 — Exact separation, joint coupling, label resolution, coefficient stability, and local contraction are different losses
 
 **Evidence level:** supported by the specified inverse, sampling, and propagation models; no common universal condition number is claimed.
 
@@ -12,8 +12,16 @@ AF-281 shows what genuine joint coupling changes. Complete mixed samples `F(c+i(
 \bigcap_jR_{h_j}=\{1\}.
 \]
 
-If all individual cadences resonate, a strict repair requires their generated time subgroup to be dense rather than one discrete lattice. Exact repair therefore pays unbounded mixed integer-combination complexity. Even then every fixed mixed-index box has remote near-aliases and no uniform inverse modulus on the unrestricted infinite source. Known finite source breadth can be interpolated with finite mixed degree, but the required degree and conditioning depend on that breadth.
+If all individual cadences resonate, a strict repair requires their generated time subgroup to be dense rather than one discrete lattice. Exact repair therefore pays unbounded mixed integer-combination complexity, and every fixed mixed-index box still has remote near-aliases on an unrestricted infinite source.
+
+AF-282 isolates a narrower finite-prefix bill for the concrete joint cadences `2\pi/\log2` and `2\pi/\log3`. The joint phase nodes of `1,\ldots,N` have minimum coordinatewise chord separation
+
+\[
+\delta_N=\Theta(N^{-1}),
+\]
+
+with explicit upper and lower constants. Thus direct source-label discrimination needs only inverse-breadth phase accuracy (`O(\log N)` bits of absolute resolution), not exponentially fine phase resolution. Any substantially worse finite-prefix instability must come from mixed-mode degree, collective interpolation geometry, coefficient inversion, the noise/observation model, or a broader source class. Pairwise label separation is not a Vandermonde singular-value theorem.
 
 Prime Flute supplies a separate composition warning. PF-297 shows that finite-section Robin contraction is truncation leakage: the norms tend to one and the complete positive map preserves `q`-mass. PF-298 shows that the neighboring pant's lowest constant channel is likewise nearly conservative, with transmission `1-O(s_n)`. Local strictness or coercivity therefore does not supply a depth-uniform return gap.
 
-Keep source breadth, phase fibers, joint versus marginal acquisition, generated-time geometry, mixed-word budget, observation horizon, forcing/escape balance, and composed frequency window explicit. Exact uniqueness, retention of coupling, finite-budget stability, and global return summability are different mathematical properties.
+The common lesson is not merely that “conditioning matters,” but that the relevant loss must be attached to the actual map. Source breadth can create phase fibers; acquisition can discard cross-channel coupling; finite labels can approach at a known `1/N` scale; coefficient recovery can be much worse than pairwise separation; and repeated propagation can lose a uniform gap even when every finite stage contracts. These are different quantities and none can substitute for another without an explicit comparison theorem.
