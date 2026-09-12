@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Break the direct-transfer normalization barrier by changing source coherence, not host/head bookkeeping
+## Break the direct-transfer normalization barrier by changing source coherence or cross-scale coupling, not host/head bookkeeping
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
@@ -30,13 +30,23 @@ Thus **every direct coherent packet beats the terminal scalar obstruction at pow
 
 The sign is independent of host placement and Schur-head exponent. Host displacement only converts source length into row multiplicity while paying the corresponding physical horizon; head motion changes denominator and leverage together.
 
-The current all-short-interval input guarantees coherence only for fixed powers `\ell<\Theta`, which recovers the `\Theta=2/3` crossover immediately. For `\Theta<2/3`, a direct packet would need super-amplitude coherence
+FD-067 adds a different cross-scale constraint that the pointwise exponent ledger does not see. For every nonsquarefree integer `q>1`,
 
 \[
-\ell>2(1-\Theta)>\Theta.
+U_{H,D}\ge w(q)E_{\lfloor H/q\rfloor,\lfloor D/q\rfloor},
+\qquad w(q)=J_2(q)/q^2.
 \]
 
-Therefore a theorem that merely lowers the **minimum interval length** while retaining only an `o(L)` or logarithmic relative error does not change the power ledger. A genuine advance must control source variation by `o(A_X)` on windows longer than the spike-amplitude scale, localize such windows around the adaptive zero-frontier spikes, or bypass the reciprocal-floor/horizon normalization entirely.
+Hence on a `q`-adic chain `H_j=q^jH_0` with a subcovariant head schedule `floor(D_j/q)<=D_(j-1)`, the actual nonsquarefree occupation telescopes:
+
+\[
+\prod_{j=1}^n\frac{U_{H_j,D_j}}{E_{H_j,D_j}}
+\ge w(q)^n\frac{E_{H_0,D_0}}{E_{H_n,D_n}}.
+\]
+
+For `D_j=H_j^{\delta+o(1)}`, this forces a positive geometric-mean occupation lower bound `w(q)q^{-a_\delta(\Theta)}` with `a_\delta(\Theta)=\delta+2\Theta(1-\delta)`. On a positive lower proportion of the chain the scalar Schur loss is therefore at least order `1/D_j`; at a linear head the `q=4` occupation bound becomes the `\Theta`-independent constant `3/16`.
+
+This does **not** defeat FD-066: an adaptive zero-frontier spike sequence may jump between multiplicative rays, so no pointwise all-horizon gap follows. It does rule out a weaker escape: growing the head cannot make the defect disappear on essentially every scale of any fixed nonsquarefree dilation chain. A genuine advance must now either produce source coherence beyond `2(1-\Theta)`, couple adaptive spike scales to recurrent multiplicative rays strongly enough to prevent cross-ray escape, derive a comparable cross-ray recurrence, or bypass the reciprocal-floor/horizon normalization.
 
 ## Reach or bypass the square-root / cube-root phase boundary
 
@@ -46,8 +56,12 @@ FD-064 shows that packet rows satisfy `r=T^{\lambda/(1+\lambda)+o(1)}`. A direct
 
 FD-066 sharpens what kind of stronger interval theorem would matter. Lowering the admissible interval threshold is useful for placement, but below `\Theta=2/3` the normalized scalar target needs coherence of the **actual spike amplitude** over `\ell>2(1-\Theta)`, not merely cancellation on shorter intervals. An almost-all/maximal theorem is useful only if its quantifiers can be coupled to the adaptive spike and provide that source-relative variation bound.
 
-## Keep local capacity, coherence length, host entropy, head location, leverage, horizon cost, and normalized occupation separate
+FD-067 adds that fixed multiplicative rays already contain recurrent good occupation even for moving heads. Thus an adaptive source theorem that can localize zero-frontier spikes onto a controlled family of dilation rays would buy more than another isolated packet estimate: it could convert recurrent occupation into a source-coupled obstruction. No such localization is currently proved.
 
-A physical short-interval theorem can buy subcritical placement, a macroscopic host corridor, and polynomial packet multiplicity. A larger Schur head can improve a tail-occupation lower bound. FD-066 shows that even source coherence itself has a precise normalization threshold: raw packet size is not the relevant currency once the same source window and physical horizon are priced.
+## Keep local capacity, coherence length, dilation recurrence, host entropy, head location, leverage, horizon cost, and normalized occupation separate
 
-Any proposed advance must state the source amplitude `A_X`, coherence length/exponent, host scale, packet exponent, row location, Schur-head scale when used, physical horizon, same-horizon denominator, scalar leverage, and resulting normalized exponent. The live bottleneck is now explicit: **obtain source coherence beyond `2(1-Theta)` or change the normalization mechanism that makes that threshold unavoidable**.
+A physical short-interval theorem can buy subcritical placement, a macroscopic host corridor, and polynomial packet multiplicity. A larger Schur head can improve a tail-occupation lower bound while losing scalar leverage. FD-066 shows that even source coherence itself has a precise normalization threshold: raw packet size is not the relevant currency once the same source window and physical horizon are priced.
+
+FD-067 shows that pointwise and recurrent statements must also be kept separate. The moving-head scalar gap may decay like `1/D`, yet fixed nonsquarefree dilation chains cannot evade it at essentially every scale. Conversely, positive-density recurrence on each fixed ray does not control an adaptive spike sequence that is free to change rays.
+
+Any proposed advance must therefore state the source amplitude `A_X`, coherence length/exponent, host scale, packet exponent, row location, dilation/ray structure, Schur-head scale when used, physical horizon, same-horizon denominator, scalar leverage, and resulting pointwise or recurrent normalized conclusion. The live bottleneck is explicit: **obtain source coherence beyond `2(1-Theta)`, couple adaptive spikes to the multiplicative recurrence, or change the normalization mechanism that makes the direct threshold unavoidable**.

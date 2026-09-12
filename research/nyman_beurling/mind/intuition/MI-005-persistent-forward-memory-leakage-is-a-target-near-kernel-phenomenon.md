@@ -1,6 +1,6 @@
-# MI-005 — Persistent forward-memory leakage requires square-summably collapsing target transmission
+# MI-005 — A persistent Nyman tail would be one fixed locally natural mode with square-summable transmission and divergent global extension cost
 
-**Evidence level:** supported by the exact one-cell recursion NB-063, the target near-kernel theorem NB-064, and the finite transmission budget NB-065; no vanishing theorem for the canonical collective tail is claimed.
+**Evidence level:** supported by the exact one-cell recursion NB-063, target near-kernel theorem NB-064, finite transmission budget NB-065, and stable-tail/extension theorem NB-066; no vanishing theorem for the canonical collective tail is claimed.
 
 The late Nyman--Beurling quotient is not blocked by missing rank. NB-062--NB-063 show that the visible natural spaces form a full causal flag and that old visible information can enter the new logarithmic cell only through the finite-rank continuation map
 
@@ -8,57 +8,67 @@ The late Nyman--Beurling quotient is not blocked by missing rank. NB-062--NB-063
 \Gamma_R:\mathcal G_R\to\mathcal X_R^\circ.
 \]
 
-For the distinguished target, the exact gain from enlarging the window is
+NB-064--NB-065 show that a positive limiting defect forces the normalized visible target into singular values tending to zero and gives its filtered transmission a finite total budget. If a fixed target fraction repeatedly lies above moving floors `eta_R`, persistence requires the corresponding squared floors to be summable. Thus no uniform singular gap is needed to kill persistence; a nonsummable weak transversality floor would already suffice.
+
+NB-066 identifies the object that would have to realize this pathology. With
 
 \[
-\delta_R^2-\delta_{R+1}^2
-=\langle z_R,(I+\Gamma_R\Gamma_R^*)^{-1}z_R\rangle.
+\mathcal T_\infty
+=\mathcal D\ominus\mathcal K_{\rm fin},
 \]
 
-Writing `p_R=P_{\mathcal G_R}J_Rh_*`, `u_R=p_R/\|p_R\|`, and `T_R=\Gamma_R^*\Gamma_R`, NB-064 shows that a positive limiting defect forces `u_R` into singular values tending to zero. For every fixed `eta>0`,
+one has the exact characterization
 
 \[
-\|E_R^{\ge\eta}u_R\|\to0.
+\boxed{
+\mathcal T_\infty
+=\{t\in\mathcal D:J_Rt\in\mathcal G_R\text{ for every }R\}.
+}
 \]
 
-Thus bad conditioning matters only when the distinguished target occupies the bad singular directions.
-
-NB-065 strengthens this pointwise statement to a cumulative budget. The unnormalized filtered transmission
+For the canonical residual `h_*`, the moving tail projections converge strongly to
 
 \[
-\mathfrak t_R
-=\langle p_R,T_R(I+T_R)^{-1}p_R\rangle
+t_*=P_{\mathcal T_\infty}h_*,
+\qquad
+\delta_\infty=\|t_*\|.
 \]
 
-is summable with the explicit bound
+Hence, on the persistence branch, the normalized visible targets converge to one **fixed nonzero stable-tail mode** rather than rotating indefinitely among unrelated near-kernel directions.
+
+That fixed mode is locally indistinguishable from the natural space at every finite window but globally orthogonal to it. If `t in T_infinity` is nonzero and `E_R(t)` is the least future norm of a genuine natural vector `a` satisfying `J_Ra=J_Rt`, then global orthogonality gives
 
 \[
-\sum_R\mathfrak t_R
-\le 2\|h_*\|^2+2\delta_2^2.
+\boxed{
+\mathfrak E_R(t)\,\|(I-J_R)t\|
+\ge\|J_Rt\|^2.
+}
 \]
 
-If `\delta_R\to\delta_\infty>0`, then `\|p_R\|\to\delta_\infty`, so the normalized transmission
+Because `J_Rt->t` and `(I-J_R)t->0`, every exact natural continuation of the finite trace pays
 
 \[
-q_R=\langle u_R,T_R(I+T_R)^{-1}u_R\rangle
+\mathfrak E_R(t)\to\infty.
 \]
 
-is summable too.
+Thus persistence is stronger than bad local conditioning: it requires **perfect finite-window naturality together with catastrophic nonuniformity of all compatible global continuations**.
 
-This gives a moving-threshold transversality test. Suppose on scales `R\in S` a fixed fraction of target mass satisfies
+This yields a target-free source criterion. Let `Lambda_R` be the worst minimal future-extension norm over unit vectors in `G_R`. A nonzero stable tail forces `Lambda_R->infinity` along the full tail. Therefore a bounded `Lambda_R` on any unbounded sequence of windows implies `T_infinity={0}` and kills every possible stable tail at once. This is strictly stronger in scope than controlling the canonical target alone.
+
+NB-066 also removes the spectral filter from the fixed-mode transmission statement. Writing `g_R=J_Rt`, the exact graph decomposition gives
 
 \[
-\|E_R^{\ge\eta_R}u_R\|\ge\kappa>0.
+(J_{R+1}-J_R)t=\Gamma_Rg_R+\beta_RC_R
 \]
 
-Then persistence requires
+orthogonally, and the cell energies telescope. For nonzero `t`,
 
 \[
-\sum_{R\in S}\frac{\eta_R^2}{1+\eta_R^2}<\infty.
+\sum_R\left\|\Gamma_R\frac{g_R}{\|g_R\|}\right\|^2<\infty.
 \]
 
-For `\eta_R\le1`, divergence of `\sum_{R\in S}\eta_R^2` already forces `\delta_\infty=0`. The fixed-`eta` criterion from NB-064 is only the simplest special case. A target transmission floor may decay to zero and still be sufficient if it decays too slowly to be square-summable over the scales where a fixed target fraction is transmitted.
+A persistent stable mode is therefore an **unfiltered square-summable approximate-kernel trajectory**, even while its globally natural continuation cost diverges.
 
-The reusable lesson is: **persistent leakage requires not merely near-kernel tracking, but a finite accumulated target-transmission budget**. Isolated good scales can coexist with persistence when their squared floors are summable; repeated weak transversality can kill persistence without any uniform spectral gap. The right arithmetic target is therefore a nonsummable target-aware transmission lower bound, not a global condition number.
+The reusable lesson is sharper than “persistent leakage requires near-kernel tracking.” **Local exact representability, one-step transmission, and globally bounded continuation are different resources.** A vector can be represented exactly on every finite observation window while no compatible global realization remains norm-controlled. The remaining arithmetic task can attack either side: force enough target transmission to violate square summability, or prove a uniform/recurring causal-extension bound that prevents such a locally natural but globally singular mode.
 
-**Boundary.** The criterion is one-sided. Summable transmission does not imply persistence, and the flat control `\Gamma_R=0` has zero transmission while its target tail still vanishes. The missing theorem must supply an oracle-free lower bound for the canonical target's occupation of transmitted sectors; NB-065 does not provide that arithmetic input.
+**Boundary.** The criteria are one-sided. Square-summable transmission does not imply persistence, and the flat control can have zero transmission with no stable tail. NB-066 does not prove bounded causal-extension constants for the canonical arithmetic spaces; it identifies that bound as a sufficient source-only route. No RH conclusion follows without that missing arithmetic estimate.

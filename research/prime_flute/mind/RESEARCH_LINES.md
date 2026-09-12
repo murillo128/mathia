@@ -1,34 +1,44 @@
 # Prime-flute mathematical questions
 
-## Reassemble the full mixed response after scalar round-trip extinction
+## Reassemble the full mixed response through the scalar killing-normalized Green currency
 
-**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`.
+**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`.
 
-Can the actual normalized mixed Riesz response be written as `G_n=T_nY_n(a_n)+R_n`, where `Y_n` is the canonical fixed-axis synthesis, `T_n` is uniformly bounded in a positive Sobolev scale, `sup_n sum_i q_i|a_(n,i)|<infinity`, and the physical-high projection of `R_n` tends to zero? MI-008 makes this sufficient to eliminate the local shorting-deficit witness.
+Can the actual normalized mixed Riesz response be written in a source-weighted form whose finite `P/H` forcing and nonconstant-mode reassembly are uniformly controlled by one of the killing-normalized scalar currencies now exposed by PF-303--PF-304? MI-008 makes a suitable positive-Sobolev reassembly sufficient to eliminate the local shorting-deficit witness.
 
-PF-297 removes a hidden local discount: the fixed-axis Robin inverse is `ell^1(q)`-nonexpansive and its complete positive action conserves `q`-mass. PF-298 writes the constant-boundary response of a tight one-cusp pant as a large conductance edge plus bounded killing. PF-299--PF-301 identify the intrinsic prime coordinate and show that each directional scalar transmission is governed exactly by the `L^1` mass of its bounded attenuation density, without any monotonicity assumption.
+PF-297 removes a hidden local discount: the fixed-axis Robin inverse is `ell^1(q)`-nonexpansive and its complete positive action conserves `q`-mass. PF-298 writes the constant-boundary response of a tight one-cusp pant as a large conductance edge plus bounded killing. PF-299--PF-301 identify the intrinsic prime coordinate and show that each directional scalar transmission is governed exactly by the `L^1` mass of its bounded attenuation density, without any monotonicity assumption. PF-302 then proves that the combined directional attenuation mass diverges, so scalar round trips are necessarily extinguished at infinite depth.
 
-PF-302 now closes the possibility that **both** scalar directions have finite total attenuation. A variational cutoff gives `E_{-,n}\lesssim L_n/s_n`, while the equal-sign pant energy has a uniform positive floor. Hence
-
-\[
-\frac{\kappa_{n,L}+\kappa_{n,R}}{c_n}\gtrsim\frac{s_n}{L_n},
-\]
-
-and the exact prime mesh forces
+PF-303 resolves the scalar **forced-response** question more sharply than a uniform spectral gap could. Assemble the finite constant-mode chain as
 
 \[
-\sum_n\frac{s_n}{L_n}=\infty.
+H_N=L_{c,N}+D_N,\qquad D_N=\operatorname{diag}(d),\qquad G_N=H_N^{-1}.
 \]
 
-Therefore the combined directional attenuation density is not integrable and
+The Robin killing vector is exactly the row defect of the conservative conductance part:
 
 \[
-\prod_n\theta_{n,L\to R}\theta_{n,R\to L}=0.
+H_N\mathbf1=d,\qquad G_Nd=\mathbf1.
 \]
 
-At least one scalar one-way transmission product vanishes; scalar round trips are necessarily extinguished at infinite depth.
+After return normalization, the substochastic deficit has unit Green potential. Thus forcing dominated by the local escape budget has a depth-uniform scalar response even though the one-step return can become arbitrarily close to conservative.
 
-This is not yet the physical theorem. PF-302 does not identify which orientation carries the divergent mass, the constant compression is not known to be invariant under the full boundary Schur problem, and nonconstant modes can screen or rearrange the scalar channel. The live gate is the complete `P/H` return/reassembly equation: combine nonconstant-mode damping, support loss, source forcing/cancellation, the directional split, and any physical-high remainder into a source-weighted global estimate.
+PF-304 exposes the full norm family hidden in that identity. The operator
+
+\[
+P_N=G_ND_N
+\]
+
+is a reversible Markov kernel with invariant weight `d`, hence for every `1<=p<=infinity`,
+
+\[
+\|G_Nf\|_{\ell^p(d)}
+\le
+\|D_N^{-1}f\|_{\ell^p(d)}.
+\]
+
+Pointwise domination `|f|\lesssim d` is only the `p=infinity` endpoint. Bounded integrated source mass or source energy may therefore suffice for a scalar response bound even when the physical forcing is signed and not componentwise controlled by `d`.
+
+The live gate is now **map-level rather than scalar-spectral**. Derive the true finite `P/H` source/reassembly equation and determine whether the PF-296 source coefficient budget maps uniformly into one of the natural `D_N^{-1}` weighted source norms, and whether the corresponding `ell^p(d)` response reassembles into the positive Sobolev/physical-high norm required by PF-292/PF-290. If no such map survives the nonconstant modes, identify the exact component that exceeds or escapes the scalar killing currency. The scalar Green operator itself no longer needs a depth-uniform gap.
 
 ## Global heavy-range projection counts after local witnesses vanish
 

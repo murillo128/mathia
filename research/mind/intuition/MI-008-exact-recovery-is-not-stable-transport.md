@@ -1,33 +1,57 @@
-# MI-008 — Exact recovery, target quotient, timing provenance, and accumulated local loss are different resources
+# MI-008 — Exact recovery, quotient geometry, source-normalized response, and accumulated local loss are different resources
 
-**Evidence level:** supported by the specified inverse, sampling, timing, and propagation models through AF-288 and PF-302; no common universal condition number or transport theorem is claimed.
+**Evidence level:** supported by the specified inverse, sampling, timing, and scalar propagation/Green models through AF-289 and PF-304; no common universal condition number, target modulus, or full mixed-response theorem is claimed.
 
 Dirichlet acquisition separates phase fibers from coupling. AF-279--AF-281 classify one-lattice aliasing, failure of separate resonant marginals, and exact recovery from genuinely joint mixed samples. AF-282--AF-285 then price the known-prefix `log2/log3` repair: joint phase spacing is `Theta(1/N)`, stable mixed degree is `Theta(N)`, and raw acquisition can be reduced to `Theta(N)` observations.
 
-AF-286--AF-287 add timing provenance. A common clock-origin offset factors exactly as a coefficient gauge `b -> D_tau b`, while independent rowwise jitter is a genuine operator perturbation. A bounded-condition unweighted `O(N)` raw subframe removes the apparent extra `sqrt(N)` penalty, leaving the same sharp coefficient-recovery scale
+AF-286--AF-287 add timing provenance. A common clock-origin offset factors exactly as a coefficient gauge `b -> D_tau b`, while independent rowwise jitter is a genuine operator perturbation. A bounded-condition unweighted `O(N)` raw subframe removes the apparent extra `sqrt(N)` penalty, leaving the same sharp ambient coefficient-recovery scale `Theta(1/log N)`.
+
+AF-288 shows that this coefficient scale is not automatically a target scale. The common gauge is vertical translation `F(s)->F(s+i tau)`, so it preserves every zero real part and therefore the RH yes/no predicate. For horizontal zero geometry, the clock origin should be quotiented rather than reconstructed. Exact source anchors can instead identify the gauge without providing a global robust inverse modulus.
+
+AF-289 makes the quotient quantitative for an arbitrary rowwise timing vector. With
 
 \[
-T_{\rm coefficient}(N)=\Theta(1/\log N)
+r(\tau)=\inf_\sigma\max_j|\tau_j-\sigma|
+=\frac{\operatorname{osc}(\tau)}2,
 \]
 
-for arbitrary rowwise jitter and the common-offset subclass.
-
-AF-288 shows that this coefficient scale is not automatically a target scale. The common gauge is vertical translation of the Dirichlet series,
+one has the exact decomposition of the perturbed frame into a common coefficient gauge plus residual differential jitter. For condition number at most `K`,
 
 \[
-F(s)\mapsto F(s+i\tau),
+\inf_\sigma
+\frac{\|\widehat b-G_\sigma b\|_2}{\|b\|_2}
+\le K\left(e^{r(\tau)\log N}-1\right).
 \]
 
-so it preserves every zero real part and therefore the RH yes/no predicate. For horizontal zero geometry, the clock origin should be quotiented rather than reconstructed. The same nuisance parameter can also be removed from the source side: two known nonzero coefficient phases at multiplicatively independent indices, such as zeta's `2` and `3`, determine `tau` exactly. Yet exact anchoring is not globally stable over an unbounded clock range because irrational torus recurrence produces arbitrarily remote near-returns. Thus **coefficient recovery, source identifiability, robust calibration, and target sufficiency are four different questions**.
+Thus an arbitrarily large common timing center is free for a common-clock-invariant target, while the differential diameter remains a real stability resource. The target still needs its own modulus on the quotient before coefficient-orbit control becomes a target theorem.
 
-Prime Flute supplies a complementary repeated-loss phenomenon. PF-297--PF-301 identify the intrinsic seam measure and show that arbitrary bounded directional attenuation coefficients accumulate according to their actual `L^1` mass; coefficient oscillation is not a separate escape. PF-302 then proves that the **sum of the two directional scalar attenuation masses diverges**:
+Prime Flute supplies a complementary source-normalized phenomenon. PF-297--PF-302 show that scalar directional losses accumulate in the intrinsic seam coordinate and force scalar round-trip extinction. PF-303 then identifies the finite scalar Robin killing vector `d` as the exact Green-potential currency:
 
 \[
-\sum_n\left(\frac{\kappa_{n,L}}{c_n}+\frac{\kappa_{n,R}}{c_n}\right)=\infty,
+H_N\mathbf1=d,
+\qquad
+G_Nd=\mathbf1.
 \]
 
-because it dominates `sum s_n/L_n`, whose partial sums grow at least like `log log p_M`. Hence the scalar round-trip product vanishes and at least one one-way scalar transmission is extinguished.
+PF-304 strengthens this to a full norm statement. With `D_N=diag(d)` and
 
-The cross-line lesson is structural, not numerical. **Classify the transformation by the action it induces and the target it must preserve before assigning a budget.** A common-mode acquisition error may be an exact source symmetry and free after quotienting the target; source provenance may pin it exactly without making the inverse globally robust; independent jitter is controlled by frame conditioning; repeated local losses are priced by an intrinsic accumulated measure. Apparent costs can disappear when they belong to the wrong quotient, while genuine accumulated loss can remain.
+\[
+P_N=G_ND_N,
+\]
 
-**Boundary.** AF-287 is finite known-support and coefficient-`ell^2`; AF-288's RH statement concerns horizontal zero geometry under exact common vertical translation and does not make fixed zero ordinates or independent jitter invariant. PF-302 concerns the scalar pant channel and only the combined bidirectional mass; it does not identify the killed orientation or prove that the complete `P/H` response factors through the scalar compression. Neither result transfers automatically to another measurement or global response category.
+`P_N` is a reversible Markov kernel, hence
+
+\[
+\|G_Nf\|_{\ell^p(d)}
+\le
+\|D_N^{-1}f\|_{\ell^p(d)},
+\qquad1\le p\le\infty.
+\]
+
+The absence of a depth-uniform scalar spectral gap is therefore not itself a forced-response obstruction. Once the source is measured in the killing currency, the scalar Green response is nonamplifying even while local returns approach conservativity. The unresolved burden is the physical map from the true `P/H` forcing and reassembly into these source-adapted norms.
+
+The cross-line lesson is concrete: **price perturbation and response only after removing exact nuisance symmetries and identifying the source measure against which the operator is normalized**. AF-289 replaces ambient timing radius by distance to the common-clock orbit. PF-304 replaces a bare spectral-gap demand by a killing-weighted source/response norm. In both cases a worst-case ambient cost can disappear because it lies in the wrong geometry; what remains is the residual direction actually seen by the target or source.
+
+This does not imply that quotienting or reweighting always helps. Differential jitter survives the AF gauge, and nonconstant `P/H` modes may escape the PF scalar killing currency. The gain is a sharper question: identify the exact residual geometry before asking for a bound.
+
+**Boundary.** AF-289 is finite known-support and coefficient-orbit `ell^2`; it supplies no target-specific quotient modulus. PF-303--PF-304 are finite scalar constant-mode statements and do not prove that the complete boundary response factors through their Markov normalization. Neither mechanism transfers automatically to another measurement, source, or global response category.

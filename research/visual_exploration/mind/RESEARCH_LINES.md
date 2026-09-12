@@ -14,7 +14,7 @@ VIS-130--VIS-150 show that one edge factor forces support-safe companions into a
 
 VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Match coefficient leverage and close-frequency crowding at the linear-support boundary
+## Resolve the growing-gap aggregate at the full-prime linear-support boundary
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
@@ -29,37 +29,29 @@ uniformly in interval start, arbitrary positive prime weights, and arbitrary pri
 
 VIS-180 proves that the linear boundary is genuinely different for the broad arbitrary-subset class, but not in a source-sensitive way. Bounded prime gaps give sparse equal-weight two-prime supports with `y/H->1` and an `O(1)` slow-beat variance defect. The obstruction is deterministic close-frequency crowding.
 
-VIS-181 now separates that sparse obstruction from the natural full-prime coefficient profile. Keeping the weighted Montgomery--Vaughan error gives
+VIS-181 separates that sparse obstruction from the natural full-prime coefficient profile. Keeping the weighted Montgomery--Vaughan error gives
 
 \[
 \left|\frac1H\int_T^{T+H}S_y(t)^2dt-\frac18\right|
 \le C\left(\frac{L_y}{HQ_y}+\frac{D_2(y)}H\right),
 \]
 
-where
+where `Q_y=sum w_p^2`, `D_2(y)=(sum w_p)^2/Q_y`, and `L_y=sum p w_p^2`. At `H\asymp y`, variance is matched whenever `L_y/(yQ_y)->0` and `D_2(y)/y->0`. For the full prime set with `w_p=p^{-\alpha}`, both conditions hold for every fixed `\alpha>=1/2`; in particular the critical `p^{-1/2}` profile is already a linear-support quadratic null.
+
+VIS-182 now removes the simplest candidate explanation for the unresolved full-prime region `0<=alpha<1/2`. For every **fixed finite** set of nonzero additive gaps `Delta`, the normalized coefficient mass of prime pairs in those gap classes obeys
 
 \[
-Q_y=\sum w_p^2,\qquad
-D_2(y)=\frac{(\sum w_p)^2}{Q_y},\qquad
-L_y=\sum p\,w_p^2.
+C_\Delta(y)\to0,
 \]
 
-At `H\asymp y`, variance is therefore matched whenever `L_y/(yQ_y)->0` and `D_2(y)/y->0`. For the full prime set with `w_p=p^{-\alpha}`, both conditions hold for every fixed `\alpha\ge1/2`. At the critical profile `\alpha=1/2`,
+with `C_\Delta(y)=O(1/\log y)` for `alpha<1/2` and `O(1/\log\log y)` at `alpha=1/2`. The input is only the classical fixed-shift Brun--Selberg upper-bound sieve plus prime-counting asymptotics. Thus the sparse two-prime bounded-gap mechanism of VIS-180 is diluted when the denominator is the whole prime prefix: **no pre-fixed finite bounded-gap band can carry an order-one normalized off-diagonal variance defect**.
 
-\[
-Q_y\sim\log\log y,
-\qquad L_y\sim\frac y{\log y},
-\qquad D_2(y)\sim\frac{4y}{(\log y)^2\log\log y},
-\]
+The open linear-support quadratic question is therefore a **growing-band problem**. If the full-prime `alpha<1/2` field has a real defect, it must use gap scales `d=d(y)` tending to infinity, an increasing family `1<=d<=D(y)`, or another distributed off-diagonal organization. The fixed-gap sieve bound is not uniform enough to sum over such a band, so VIS-182 does not close the region. The decisive next calculation is to combine coefficient mass with time-kernel coherence over a growing near-diagonal window, rather than infer a defect from failure of the coarse leverage upper bound.
 
-so the variance defect is only `O(1/(log y log log y))` uniformly in the interval start.
+The stronger positive-power opportunities remain higher/growing complexity, genuinely discrete sampling, rare/shrinking or unbounded functionals, hybrid prime/zero information, or coefficient regimes outside the proven quadratic nulls.
 
-Thus merely moving the natural critical-line prime field to `y\asymp H` is now a matched quadratic null, not a source signal. The unresolved linear-support quadratic region begins with more diffuse full-prime profiles `\alpha<1/2` or other coefficient families for which the weighted leverage criterion does not vanish, and even there failure of the sufficient bound is not evidence of a defect. One must derive the actual crowding-aware off-diagonal asymptotic or use a matched deterministic control.
+## Keep source corrections, clock mixing, weighted concentration, leverage, transfer horizon, functional order, and frequency-crowding bandwidth separate
 
-The stronger positive-power opportunities are now higher/growing complexity, genuinely discrete sampling, rare/shrinking or unbounded functionals, hybrid prime/zero information, or coefficient regimes outside the proven leverage null.
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 closes the strictly sublinear quadratic regime. VIS-180 shows that arbitrary sparse weights can retain linear-scale beats. VIS-181 shows that the natural full-prime `p^{-1/2}` profile suppresses that same channel strongly enough to restore the quadratic null at linear support. VIS-182 shows that even below the leverage threshold, any **fixed finite** bounded-gap family is too dilute in the full prime prefix to explain an order-one defect.
 
-## Keep source corrections, clock mixing, weighted concentration, leverage, transfer horizon, functional order, and frequency crowding separate
-
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 closes the strictly sublinear quadratic regime. VIS-180 shows that arbitrary sparse weights can retain linear-scale beats. VIS-181 shows that the natural full-prime `p^{-1/2}` profile suppresses that same channel strongly enough to restore the quadratic null at linear support.
-
-A residual becomes arithmetic evidence only after it survives a matched control at the same weights, support law, sampling geometry, observation scale, functional complexity, target statistic, and local frequency-crowding geometry. **The coefficient leverage profile is part of the control.** Failure of a sufficient transfer bound is never positive source evidence by itself.
+A residual becomes arithmetic evidence only after it survives a matched control at the same weights, support law, sampling geometry, observation scale, functional complexity, target statistic, and local frequency-crowding geometry. The relevant crowding variable now includes the **breadth of the near-diagonal gap band**, not just the existence of close prime pairs. Failure of a sufficient transfer bound is never positive source evidence by itself.

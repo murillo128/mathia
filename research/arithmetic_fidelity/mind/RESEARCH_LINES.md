@@ -28,22 +28,29 @@ AF-244--AF-276 show that coarse symmetry, zero counting, endpoint jets, compact-
 
 AF-278--AF-281 separate continuous time breadth, one-lattice aliasing, marginal coupling loss, and exact mixed-channel recovery. If all mixed samples `F(c+i(k_1h_1+...+k_Jh_J))` are retained, ordinary Dirichlet coefficient fidelity is equivalent to `cap_j R_(h_j)={1}`; separate resonant marginals do not have the same information.
 
-AF-282--AF-285 price the finite-prefix two-prime repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)`, uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`, and linear-size raw acquisition is possible. AF-287 strengthens the sample-selection statement: classical frame sparsification yields an **unweighted `O(N)` subset of raw mixed samples with uniformly bounded condition number**. For arbitrary rowwise offsets `|tau_j|<=T`, the exact matrix expansion gives fixed relative `ell^2` distortion exactly on the sharp scale `T=Theta(1/log N)`.
+AF-282--AF-285 price the finite-prefix two-prime repair. On the known prefix `1,...,N`, joint phase spacing is `Theta(1/N)`, uniform stable coefficient recovery has sharp coordinatewise mixed degree `Theta(N)`, and linear-size raw acquisition is possible. AF-287 strengthens the sample-selection statement: classical frame sparsification yields an **unweighted `O(N)` subset of raw mixed samples with uniformly bounded condition number**. For arbitrary rowwise offsets `|tau_j|<=T`, the exact matrix expansion gives fixed relative `ell^2` coefficient distortion on the sharp scale `T=Theta(1/log N)`.
 
-AF-288 now separates that coefficient-level timing bill from the target. A common offset acts by
+AF-288 separates that coefficient bill from the target: a common offset acts by `(a_n)->(a_n n^{-i tau})` and `F(s)->F(s+i tau)`, so horizontal zero geometry and the RH predicate are invariant under the common-clock orbit. AF-289 now performs the same separation for an arbitrary rowwise timing vector. Writing
 
 \[
-(a_n)\mapsto(a_n n^{-i\tau}),\qquad F(s)\mapsto F(s+i\tau).
+r(\tau)=\inf_{\sigma\in\mathbb R}\max_j|\tau_j-\sigma|
+=\frac{\max_j\tau_j-\min_j\tau_j}{2},
 \]
 
-Hence the horizontal zero divisor, and in particular the RH predicate `Re rho=1/2` for every nontrivial zero, is exactly invariant under the complete common-clock orbit. Common clock origin is therefore **free for that target**, even though full coefficient recovery still pays `Theta(1/log N)`.
+and decomposing `tau_j=sigma+epsilon_j`, the perturbed frame factors exactly as a common coefficient gauge followed by residual differential jitter. For a nominal frame with condition number at most `K`,
 
-The same finding also separates exact source anchoring from robust calibration. If two known nonzero source coefficients occur at multiplicatively independent indices (for zeta, `2` and `3`), their phases determine `tau` uniquely on all of `R`. But irrational torus recurrence gives arbitrarily remote near-returns, so there is no source-independent global inverse modulus on an unbounded timing range. A bounded clock prior restores an ordinary local inverse-Lipschitz chart.
+\[
+\inf_\sigma
+\frac{\|\widehat b-G_\sigma b\|_2}{\|b\|_2}
+\le K\left(e^{r(\tau)\log N}-1\right).
+\]
 
-The timing frontier is now narrower: determine which intermediate RH mechanisms genuinely depend on absolute imaginary origin rather than horizontal divisor data; how independent non-common-mode jitter behaves after target-specific quotienting; and what changes for unknown support or infinite Dirichlet sources.
+Thus an arbitrarily large common timing center is spectrally invisible; after quotienting the target's exact clock symmetry, the timing resource is the **differential jitter diameter** `osc(tau)=2r(tau)`. This is only a coefficient-orbit estimate. Turning it into a target theorem still requires a quantitative stability modulus for the actual target on that quotient, and targets depending on absolute phase, absolute zero ordinate, or fixed-height windows do not descend through the gauge.
+
+The timing frontier is therefore narrower: determine the quotient stability of concrete RH-relevant intermediate observables under residual non-common jitter; decide which observables genuinely retain absolute imaginary-origin information; and extend the analysis beyond known finite support to unknown or infinite Dirichlet sources.
 
 ## Treat the information bills separately
 
-Finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, label spacing, mixed degree, raw sample count, condition number, common-clock provenance, independent jitter, and the downstream target quotient are distinct resources.
+Finite local degree determines prime-power depth at one prime, not prime breadth. Separate marginal channels can destroy joint interaction; complete mixed channels can restore exact separation. On the `log2/log3` prefix, label spacing, mixed degree, raw sample count, condition number, common-clock provenance, differential jitter diameter, and the downstream target quotient are distinct resources.
 
-AF-288 adds the sharp warning that **recovering a nuisance parameter is unnecessary when the requested target is constant on its gauge orbit**. Exact source anchors can remove a gauge without making the inverse globally stable, while a gauge-invariant target can avoid the lift entirely. Future fidelity claims must therefore state both the source category and the target metric before assigning an acquisition or calibration cost.
+AF-288--AF-289 sharpen the warning that **recovering a nuisance parameter is unnecessary when the requested target is constant on its gauge orbit, and pricing residual noise should be done only after that quotient is taken**. Exact source anchors can remove a gauge without making the inverse globally stable, while a gauge-invariant target can avoid the lift entirely. Future fidelity claims must therefore state the source category, nuisance symmetry, residual perturbation geometry, and target metric before assigning an acquisition or calibration cost.
