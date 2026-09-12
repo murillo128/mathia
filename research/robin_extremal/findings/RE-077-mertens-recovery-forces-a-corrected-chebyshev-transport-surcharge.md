@@ -300,14 +300,14 @@ There is no contradiction with the expected false-RH source scale. For fixed pos
 W^{1-2b_1}(\log W)^2,
 \]
 
-while `b_1>1-\Theta` gives
+while `b_1>1-\Theta` and the classical zero-free line give
 
 \[
-1-2b_1<2\Theta-1<\Theta.
+1-2b_1<2\Theta-1\le\Theta.
 \tag{24}
 \]
 
-Thus an off-critical Chebyshev error of order `W^{\Theta+o(1)}` can still absorb the forced increase. The result rules out a cancellation architecture; it does not supply the missing prime-source upper-capacity theorem.
+In particular `1-2b_1<\Theta`. Thus an off-critical Chebyshev error of order `W^{\Theta+o(1)}` can still absorb the forced increase. The result rules out a cancellation architecture; it does not supply the missing prime-source upper-capacity theorem.
 
 Nor is monotonicity or integrality by itself sufficient. An abstract ordered event staircase with a positive amplitude floor can be designed to reproduce a span-coercive potential. The specifically arithmetic input in the splice is the first-layer support conservation of `RE-075`: **positive reciprocal recovery is forced to buy actual new prime supports**, and those supports necessarily move the genuine CA physical coordinate.
 
