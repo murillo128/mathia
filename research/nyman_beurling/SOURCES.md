@@ -17,7 +17,7 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 ## Orthogonal-complement boundary regularity
 
-- Francisco Calderaro, Juan Manzur, Waleed Noor, Charles F. Santos, *Orthogonality questions in the Hardy space related to zeta-zeros*, [arXiv:2203.05030](https://arxiv.org/abs/2203.05030). Role: Theorem 10 proves that the orthogonal complement of the natural Hardy-space Nyman span has trivial intersection with every local Dirichlet space `D_(delta_zeta)`; together with the paper's local Dirichlet characterization, this is the load-bearing boundary-regularity theorem in `NB-059` that rules out every compact-time vector in the Blaschke-deflated arithmetic defect.
+- Francisco Calderaro, Juan Manzur, Waleed Noor, Charles F. Santos, *Orthogonality questions in the Hardy space related to zeta-zeros*, [arXiv:2203.05030](https://arxiv.org/abs/2203.05030). Role: exact prior-art boundary for local Dirichlet rigidity of the disk Hardy Nyman span. In v4, Theorem 2 gives `N^perp ∩ D_(delta_1) = {0}` at the distinguished boundary point `1`, and Theorem 13 extends this to the `D_1^p` scale for `p>1`. The paper does not supply the corresponding rigidity at arbitrary `zeta in T`; any application at another boundary point requires an independent conjugacy or membership argument that preserves the relevant Nyman span.
 
 ## Zero-free-region approximation boundary
 
