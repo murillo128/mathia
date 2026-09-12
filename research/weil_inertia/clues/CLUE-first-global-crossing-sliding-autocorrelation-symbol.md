@@ -1,11 +1,12 @@
 ---
 id: CLUE-weil-inertia-first-global-crossing-sliding-autocorrelation-symbol
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-253-first-global-crossing-has-a-sliding-autocorrelation-flux-constraint.md
+  - research/weil_inertia/findings/WI-254-sliding-aperture-profile-is-invertible-but-small-scale-firstness-is-saturated.md
 ---
 
 # Can the sliding autocorrelation symbols exclude a first global Weil zero mode?
@@ -45,4 +46,10 @@ Stress-test any proposed implication against generic translation-invariant first
 
 ## Evidence boundary
 
-No incompatibility theorem is known. `WI-253` proves only a necessary continuum of positive averages and does not assert pointwise positivity of `Sigma_r`, a lower rate for `lambda_r`, parity of the global first mode, or any RH consequence. The clue is therefore a separate research question, not an extension of the finding's evidence.
+No incompatibility theorem is known. `WI-253` proves only a necessary continuum of positive averages and does not assert pointwise positivity of `Sigma_r`, a lower rate for `lambda_r`, parity of the global first mode, or any RH consequence. `WI-254` proves that the exact aperture profile is an invertible `min`-transform of the source-weighted real autocorrelation, but it also shows that pointwise firstness cannot be differentiated to read prime-threshold signs and that the small-radius lower bound is asymptotically saturated at leading order. The clue therefore remains a separate research question rather than an extension of either finding's evidence.
+
+## Research disposition
+
+The direction survives initial derivation, stress testing, and prior-art audit and is worth continued investigation. `WI-254` validates that the full aperture parameter carries the complete real-autocorrelation information of this source representation, while closing two naive routes: derivative-sign inference from the positivity inequality and a uniform multiplicative reserve as `r -> 0`.
+
+The precise unresolved gate is now to obtain **additional control on the exact profile**, not merely more radii. A useful next result would constrain the subleading small-radius term, the medium-radius curvature/slope jumps, or the profile through the zero-mode equation strongly enough to conflict with the recovered autocorrelation.
