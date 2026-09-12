@@ -1,25 +1,34 @@
-# MI-010 — Source cancellation must be priced on the exact selected family after representation and occupancy costs are removed
+# MI-010 — Source cancellation must be priced after the exact family, normalization, and signed target are fixed
 
-**Evidence level:** supported by the proved Farey transfer geometry through FD-063 and the exact first-shell representation/sign-population reductions through MC-234; no cancellation theorem is transferred between the two families.
+**Evidence level:** supported by the proved Farey transfer geometry through FD-064 and the exact first-shell representation/dense-model reductions through MC-235; no cancellation theorem is transferred between the two families.
 
-Two Möbius-facing lines expose complementary sides of the same quantitative boundary.
+Two Möbius-facing lines now expose complementary versions of the same quantitative lesson.
 
-In Farey discrepancy, bounded increments identify the deterministic host scale `q\asymp X/A_X`, with `A_X=|\mathcal H(X)|`. FD-062 shows that an actual all-short-interval Möbius estimate changes that scale: when `A_X(\log X)^B\ge X^\vartheta`, `\vartheta>0.55`, the available logarithmic saving can be split between penetration below the deterministic host and packet width with `B+\kappa<1/3`.
-
-FD-063 shows that the CRT packet construction was not the real occupancy cost. The same short-interval estimate holds uniformly on an entire host corridor `q\asymp X/(A_X(\log X)^B)`, while the elementary density of multiples of four supplies a linear-in-`K_X` nonsquarefree packet at every host. The known source theorem therefore buys both subcritical placement and **host-uniform packet availability**. The unresolved cost is the same-horizon denominator and the analytic localization range, not combinatorial host selection.
-
-In Möbius cancellation, MC-232--MC-233 remove exact-incidence and primorial-roughness masks at subpower cost, leaving a source-selected family of ordinary reduced-residue Möbius progression sums. At incidence/dilation scales `(\alpha,\beta)`, support alone suffices exactly when
+In Farey discrepancy, bounded increments identify the deterministic host scale `q\asymp X/A_X`, with `A_X=|\mathcal H(X)|`. FD-062--FD-063 show that an actual all-short-interval Möbius estimate can move below that scale, support growing packets, and make packet availability uniform across a whole host corridor. FD-064 then shows that substantially more **local abundance** still need not improve the global target. On a zero-frontier spike `A_X=X^{\Theta+o(1)}`, hosts `q\asymp X^\lambda` admit polynomial packets `K=X^{\kappa+o(1)}` whenever `\kappa<\Theta+\lambda-1`, but after paying the later horizon the optimized normalized loss is
 
 \[
-2\alpha+\beta\ge\frac12,
+b_\Theta(\lambda)
+=\frac{1-\Theta+(2\Theta-1)\lambda}{1+\lambda},
+\qquad
+b_\Theta'(\lambda)=\frac{3\Theta-2}{(1+\lambda)^2}.
 \]
 
-while below that line the componentwise sufficient target needs fixed-power gain `1/2-2\alpha-\beta`.
+Thus the full direct power-gap family preserves the `\Theta=2/3` crossover already visible in the previous bounds. Polynomial packet power is real, but the horizon cost neutralizes it. The same calculation identifies square-root short-interval cancellation as the direct-transfer threshold for reaching the cube-root Jordan boundary.
 
-MC-234 then removes **parity existence** as a plausible explanation for that fixed-power gap. The 2026 Linnik-type theorem places both Möbius signs in every reduced class by essentially `q^2`; inside every fixed strict hard component, CRT amplification gives at least `Z^{1/2-\eta}/q` representatives of each sign. Yet the square-free support has size `\asymp Z/q`, so these guaranteed representatives form a vanishing fraction. The amplitude target requires near-balanced sign mass at relative precision `X^{-(1/2-2\alpha-\beta)+o(1)}`.
+In Möbius cancellation, MC-232--MC-233 remove exact-incidence and primorial-roughness masks at subpower cost, leaving source-selected reduced-residue Möbius progression sums. Below `2\alpha+\beta=1/2`, the componentwise target needs fixed-power signed cancellation `1/2-2\alpha-\beta`. MC-234 removed qualitative parity existence as the bottleneck. MC-235 goes further: extracting the quantitative mass already present in the Matomäki--Teräväinen dense-model proof and amplifying by CRT gives, for every fixed `\eta>0`,
 
-The cross-line lesson is now more specific: **representation simplification, packet occupancy, parity breaking, and amplitude cancellation are different budgets**. A logarithmic theorem can move Farey geometry because it matches the exact interval family and consumed budget. A qualitatively strong sign-change theorem can still leave the Möbius progression amplitude at trivial power because the downstream object needs near-balance, not nonemptiness.
+\[
+N_\pm(Z;q,a)\ge \frac Zq X^{-\eta}
+\]
 
-Therefore “use Möbius cancellation” or “break parity” is not a transferable instruction. One must state the exact selected family, selection dependence, quantifiers/uniformity, and the exponent/logarithmic precision actually consumed. The current plausible MC route is either a quantitative signed-count estimate extracted from the multiplicative dense-model architecture or coherent cancellation across smooth dilations; the current Farey route is denominator control across the new host corridor or stronger short-interval source localization.
+through every fixed interior hard pair. Both signs therefore have the full occupancy exponent. Yet their difference may still be as large as the full square-free support; the required object is near-balance at relative scale
 
-**Boundary.** This intuition compares proved budget structures. It does not identify the MC progressions with the Farey intervals, transfer a theorem between them, or imply any new Mertens/RH estimate.
+\[
+X^{-(1/2-2\alpha-\beta)+o(1)}.
+\]
+
+The cross-line lesson is sharper than “match the theorem to the family.” **Abundance in the representation is useful only if it pays the metric consumed downstream.** Farey can create polynomially many favorable rows without improving the normalized exponent because the horizon denominator absorbs the gain. Möbius cancellation can create essentially full-exponent populations of both signs without improving the signed amplitude because separate lower bounds do not control their difference.
+
+Therefore representation simplification, local occupancy, unsigned abundance, horizon normalization, and signed cancellation must be priced separately. The current Farey escape requires a source-coupled denominator or a different short-interval/host quantifier surface; the current Möbius escape requires a signed-comparison theorem or coherent cancellation across the smooth dilation family. Further packet enlargement or representative counting inside the same ledgers cannot by itself pay the missing quantity.
+
+**Boundary.** FD-064 classifies a direct all-short-interval transfer combined with the generic zero-frontier denominator envelope; MC-235 is fixed-parameter/interior and its componentwise reduction is sufficient rather than necessary. The two families are not identified and no theorem is transferred between them.

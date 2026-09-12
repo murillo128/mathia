@@ -2,26 +2,40 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a source-sensitive invariant beyond every fixed-complexity bulk orbit closure
+## Find arithmetic statistics beyond the classical dual-lattice resonance carrier
 
 **Linked intuitions:** `MI-010-two-prime-resonance-needs-a-cross-prime-relation`, `MI-011-first-mixed-moment-can-still-be-pairwise-scalar`, `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`.
 
 PC-224--PC-260 close fixed-conductor packets, finite trace words, complete finite singular data, common-dilation growth, independent backward-word information, and establish the exact reflection symmetry of the shared-upper collision operator.
 
-PC-261--PC-269 separate finite-lift effects from bulk arithmetic. Exact bounded resonances can create source-realizable path dependence, whereas bounded-mode nonresonant irrational and rational limits have classical Haar/periodic-Haar bulk laws reproduced by matched controls.
+PC-261--PC-270 separate finite-lift effects from bulk arithmetic. Bounded-mode nonresonant irrational and rational limits have classical Haar/periodic-Haar bulk laws reproduced by matched controls. A persistent fixed primitive exact resonance only changes the orbit closure to one resonant subtorus; the resulting full bulk IDS is again the corresponding classical Haar average and is reproduced by controls carrying the same relation.
 
-PC-270 now closes the **fixed exact bounded-resonance bulk** escape as well. If one primitive relation
+PC-271 now classicalizes the first obvious **growing-resonance and inverse-near-resonance** escape as well. For the rational torus orbit, the annihilator lattice
 
 \[
-hp_n+kr_n=\ell q_n
+\Lambda_{p,r;q}=\{(h,k)\in\mathbb Z^2:hp+kr\equiv0\pmod q\}
 \]
 
-persists with fixed coefficients, primality forces it to be the only fixed independent Fourier resonance eventually. The raw orbit converges to Haar measure on the corresponding one-dimensional subtorus `H_{h,k}`, and the whole normalized bulk singular spectrum converges to the phase-averaged one-circle IDS. Matched pairwise-coprime controls carrying the same fixed resonance have the same limit. At `(1/4,1/2)`, the previously competing densities `0`, `1/8`, and `1/6` are simply Haar intersections for two different resonant circles and the full torus.
+has an exact first Fourier detection scale given by its shortest nonzero vector `\lambda_(p,r;q)`. Bounded-mode nonresonance is exactly `\lambda->infinity`, but every finite lift has
 
-Thus a fixed finite lift can select the orbit closure but, once that closure is fixed, its bulk law is classical. A surviving source-sensitive channel must retain information beyond fixed-complexity orbit-closure averaging: resonance vectors whose coefficients grow with the source, mesoscopic windows resolving inverse near-resonance drift, microscopic spacing or shrinking-window placement, subleading projective fluctuations, transfer-norm/Lyapunov growth, singular log-determinant data, arithmetic statistics of resonance-sector occurrence, or another observable still differing after controls match the relevant orbit closure and finite lift.
+\[
+\lambda_{p,r;q}\le\lfloor\sqrt q\rfloor.
+\]
 
-## Treat exact resonance, rational-limit approach, orbit closure, bulk universality, fine spectrum, and transfer growth as separate gates
+For a bandwidth cutoff `B`, the nearest phase resonance
 
-Common refinement repeats blocks; bounded-mode nonresonant irrational and rational limits have classical bulk laws; leading edges localize to finite patches; fixed off-spectrum transforms depend on the same IDS; finite connected components have classical simple oscillatory spectra with forced reflection parity order; and canonical total rotation is exactly cumulative eigenvalue count.
+\[
+\Delta_B(p,r;q)
+=\min_{0<\max(|h|,|k|)\le B}
+\left\|\frac{hp+kr}{q}\right\|
+\]
 
-PC-270 adds that a **fixed bounded exact resonance changes the orbit closure but does not by itself make the bulk IDS arithmetic**. Exact congruence is still discontinuously stronger than merely approaching a rational point, but the durable discriminator must now survive after the appropriate subtorus is included in the matched control. Growing resonance complexity and sub-bulk/singular observables remain open; fixed-resonance bulk spectral statistics do not.
+satisfies the universal Dirichlet bound `\Delta_B<=1/(B+1)^2`, and a length-`M` mesoscopic probe is governed by `M\Delta_B`. The parabolic resolution scale `B\asymp\sqrt M` and the square-root exact-resonance ceiling are classical rank-one lattice/spectral-test phenomena shared by matched rational-rotation controls.
+
+The next Prime-Circle theorem must therefore be about the **arithmetic distribution or coupling of this classical carrier**, not its existence. Concrete targets include prime-specific statistics of `\lambda_(p,r;q)`, `\Delta_B`, or shortest-vector directions after matched coprime/composite controls; or a proof that such resonance data couples nontrivially to a source-forced nonlocal transfer observable. Microscopic/shrinking spectra, singular log-determinants, Lyapunov/transfer growth, subleading projective fluctuations, and cross-level operators remain separate channels not classified by PC-271.
+
+## Treat orbit closure, Fourier resolution, near-resonance time, source statistics, and singular/fine observables as separate gates
+
+Fixed finite lifts can select the orbit closure but do not make its bulk law arithmetic. Growing Fourier frequency can resolve the finite orbit, but the first resolution scale is exactly a shortest-vector problem in the dual lattice. Short windows can see near resonances before the full orbit cancels them, but their coherence time is classical Diophantine data.
+
+A durable source discriminator must therefore survive controls matching not only the orbit closure but also the relevant rational-lattice resolution geometry. Failure of bounded or mesoscopic mixing at the universal `sqrt(q)` / `sqrt(M)` scales is not prime evidence by itself. What remains potentially arithmetic is the distribution of those scales and directions along the source, or information carried by observables outside this Fourier-resolution class.

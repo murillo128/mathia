@@ -1,6 +1,6 @@
-# MI-010 — Weighted prime-phase nulls have separate concentration, shape, support-transfer, and moment-complexity regimes
+# MI-010 — Weighted prime-phase nulls have separate concentration, shape, support-transfer, and complexity regimes
 
-**Evidence level:** supported by weighted-Haar calculations and deterministic transfer theorems VIS-173--VIS-178.
+**Evidence level:** supported by weighted-Haar calculations and deterministic transfer theorems VIS-173--VIS-179.
 
 For positive weights `w_j`, put
 
@@ -22,7 +22,7 @@ VIS-174 transfers fixed moments of the matched Haar law to deterministic continu
 |\lambda|\ge\frac1{2y^{\lfloor k/2\rfloor}},
 \]
 
-so the deterministic/Haar discrepancy is controlled at scale
+so the elementary deterministic/Haar discrepancy is controlled at scale
 
 \[
 \frac{y^{\lfloor k/2\rfloor}D_2(y)^{k/2}}H.
@@ -30,28 +30,29 @@ so the deterministic/Haar discrepancy is controlled at scale
 
 VIS-175 and VIS-176 turn the weight geometry into full weak-law regimes. In the square-summable phase the limit is the infinite weighted Haar convolution under its transfer gate. In the Lindeberg phase, vanishing maximal normalized weight plus transfer of every fixed moment gives `N(0,1/8)`. For prime-power weights, VIS-177 already extends that Gaussian conclusion to every subpolynomial cutoff `y(H)=H^{o(1)}`.
 
-VIS-178 shows that a **fixed positive-power support law is not automatically outside the null either**. For `w_p=p^{-\alpha}`, `0\le\alpha<1/2`,
+VIS-178 shows that a fixed positive-power support law is not automatically outside the null either. For `w_p=p^{-\alpha}`, `0\le\alpha<1/2`, one has `D_2(y)\asymp y/\log y` with the explicit constant recorded there, while at `\alpha=1/2`, `D_2(y)\asymp y/((\log y)^2\log\log y)`. If `e_k=\lfloor k/2\rfloor+k/2`, the `k`th deterministic moment still matches Haar for `y=H^\delta` throughout the sufficient wedge
 
 \[
-D_2(y)\sim\frac{1-2\alpha}{(1-\alpha)^2}\frac y{\log y},
+\delta\le1/e_k.
 \]
 
-and at `\alpha=1/2`,
+VIS-179 shows that **quadratic order is much better behaved than this generic character bound suggests**. For
 
 \[
-D_2(y)\sim\frac{4y}{(\log y)^2\log\log y}.
+S_y(t)=Q_y^{-1/2}\sum_{p\in P_y}w_p\left(\sin^2\frac{t\log p}{2}-\frac12\right),
 \]
 
-Let `e_k=\lfloor k/2\rfloor+k/2`. For `y=H^\delta`, the `k`th deterministic moment still matches Haar whenever
+write `A_y(t)=\sum_{p\in P_y}w_pp^{it}`. The identity for `S_y(t)^2` reduces its variance to the ordinary Dirichlet-polynomial mean square plus a nonconjugated square term. Montgomery--Vaughan then gives, uniformly in the interval start and for arbitrary positive weights and prime subsets below `y`,
 
 \[
-\boxed{\delta\le1/e_k,}
+\left|\frac1H\int_T^{T+H}S_y(t)^2\,dt-\frac18\right|
+\ll \frac yH.
 \]
 
-including the critical equality because the residual logarithmic denominator diverges. A fixed panel through order `K` therefore transfers for `\delta\le1/K` when `K` is even and `\delta\le1/(K-1/2)` when `K` is odd.
+Therefore **every strictly sublinear support law `y=o(H)` is variance-matched**, including every polynomial `y=H^\delta` with `\delta<1`. The region `1/2<\delta<1`, which lay beyond the generic `k=2` VIS-178 wedge, is not a new quadratic source-sensitive regime.
 
-The null boundary is consequently indexed by **test complexity**, not just by support growth. For any fixed `\delta>0`, sufficiently high moment order eventually leaves the proved wedge, so VIS-178 does not give a full polynomial-support weak law. But a finite-order statistic cannot claim source sensitivity merely because its support is polynomial; it must first exceed its own order-matched transfer threshold.
+This stronger conclusion is deliberately only quadratic. It does not upgrade higher fixed moments, establish a full weak law at any fixed positive `\delta`, control growing moment order, or cover Gram/discrete sampling, shrinking/rare events, unbounded functionals, hybrid prime/zero observables, or the transition `y\asymp H`. The null boundary is indexed by the **actual functional complexity**: variance has a near-linear collective mean-value theorem, while higher statistics retain their own transfer costs unless a stronger collective theorem is proved.
 
-A source-sensitive statistic must therefore change at least one actual gate: use moment/functional complexity growing with support, leave the order-dependent polynomial wedge, change sampling to Gram/discrete geometry, use a source-bearing hybrid/zero variable, enter a rare/shrinking or unbounded functional class, or otherwise leave the normalized additive prime torus.
+A source-sensitive statistic must therefore leave the relevant matched class in a mathematically declared way. At quadratic order under continuous averaging, `y=o(H)` is closed. For higher fixed order, exceeding the VIS-178 sufficient wedge only opens a proof gap, not evidence of separation. Genuine opportunities require higher or growing complexity, stronger functional classes, different sampling, hybrid source variables, rare/shrinking events, or behavior at/above the linear support scale with a separately justified control.
 
-**Boundary.** The transfer thresholds are sufficient, not known necessary. VIS-178 does not control `k->infinity`, all moments at one fixed `\delta>0`, moving extremes, Gram/discrete sampling, hybrid variables, or stronger-than-moment functionals. Failure of the bound beyond `1/e_k` is not evidence that the matched null fails.
+**Boundary.** VIS-179 controls only the second moment and its `O(y/H)` estimate is a sufficient matching theorem, not a sharp transition statement at `y\asymp H`. None of VIS-173--VIS-179 proves a zeta-versus-control separation or an RH consequence.

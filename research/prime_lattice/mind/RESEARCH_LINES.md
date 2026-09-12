@@ -2,28 +2,32 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prevent the first forbidden localized Weil crossing
+## Prevent the first forbidden localized Weil crossing uniformly in aperture
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
-PL-259--PL-276 show that source recovery is not positivity: finite positive interior sources are eventually sign-indefinite and no fixed compact correction removes their two-sided high-frequency Morse defect.
+PL-259--PL-276 show that source recovery is not positivity: finite positive interior sources are eventually sign-indefinite and no fixed compact correction removes their two-sided high-frequency Morse defect. PL-278 shows that canonical noncompact completion repairs that high-frequency defect generically, leaving a finite low/mesoscopic residual sector. PL-279 shows individual newly activated prime-power terms enter quadratically softly.
 
-PL-278 shows that canonical noncompact completion repairs the high-frequency source defect generically. The completed localized Weil operator has compact resolvent and only finitely many negative eigenvalues, so RH-facing information is confined to the finite low/mesoscopic residual sector. PL-279 shows individual newly activated prime-power terms enter quadratically softly in the canonical form topology.
-
-PL-280 makes the cross-aperture direction one-sided: the localized form domains are nested, so every ordered min-max level is nonincreasing with aperture and the negative Morse index `nu(a)` is nondecreasing. Once a level crosses below zero, later source activation cannot heal it.
-
-PL-281 closes the remaining localization-exhaustion loophole inside this canonical support family. If `kappa_c` is the negative index of the global compact-support Weil form, then
+PL-280 makes the cross-aperture direction one-sided: localized domains are nested, ordered min-max levels are nonincreasing with aperture, and the negative Morse index `nu(a)` is nondecreasing. PL-281 closes the localization-exhaustion loophole:
 
 \[
 \kappa_c=\sup_{a>0}\nu(a)=\lim_{a\to\infty}\nu(a).
 \]
 
-A finite global defect cannot drift outward while remaining invisible to every finite window. If `kappa_c=r<\infty`, the localized index stabilizes exactly at `r` after some finite aperture; if `kappa_c=\infty`, the finite-aperture indices become unbounded.
+A finite global compact-support defect cannot hide beyond every finite window.
 
-The live theorem is therefore purely crossing prevention for the actual arithmetic form. There is no separate “negative direction at infinity” to exclude after positivity has been proved on every finite aperture. A viable source-specific mechanism must keep the first variational level from crossing, for example by a coercive completed-Weil inequality or another arithmetic restriction on the low/mesoscopic source.
+PL-282 adds two finite-support facts. First, a recent non-peer-reviewed computer-assisted source reports `A_(0.72)>=5.890e-17 I`; conditional on successful independent reproduction, PL-280 propagates strict positivity to every `0<a<=0.72`, after the source channels `2,3,4` are already active. Second, and more structurally, a Gauss--Stieltjes lower hierarchy gives
 
-## Treat source recovery, generic tail repair, threshold softness, monotone index, and index exhaustion as separate gates
+\[
+L_a>0\quad\Longleftrightarrow\quad\exists m<\infty:\ L_{a,m}>0
+\]
 
-The projective tower is source-lossless; finite positive aggregation is sign-indefinite; canonical noncompact completion repairs the spectral tail generically; individual atoms enter softly; negative levels persist once created; and nested support localization exhausts the compact-support negative index exactly.
+for every fixed aperture. Strict positivity on a prescribed finite support is therefore finitely certifiable in principle.
 
-What remains unresolved is not visibility of a finite defect but its **existence**. PL-281 does not identify `kappa_c` with Bombieri's Fourier-side finite-defect count or with off-critical zeros. Any such arithmetic identification still needs its own theorem.
+The live theorem is not better finite-window diagonalization or generic completion. It is an **aperture-uniform arithmetic control** preventing the first crossing while infinitely many prime-power atoms enter. A useful source stratification or Schur-complement estimate must retain a positive margin as `a` grows, or otherwise prove that the monotone ledger never acquires its first negative level.
+
+## Separate source recovery, tail repair, threshold softness, finite certification, monotone index, and exhaustion
+
+The projective tower is source-lossless; finite positive aggregation is sign-indefinite; canonical noncompact completion repairs the spectral tail; individual atoms activate softly; fixed-support strict positivity has a terminating certificate hierarchy; negative levels persist once created; and support localization exhausts the compact-support negative index exactly.
+
+These gates do not combine into a global positivity theorem. In particular, a certificate at `a=0.72` does not imply positivity until the next prime threshold, and a fixed-support certificate hierarchy gives no uniform depth or positive gap as `a->infinity`. What remains unresolved is a source-specific mechanism that prevents the **existence** of the first crossing over the full aperture family.

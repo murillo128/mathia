@@ -1,6 +1,6 @@
-# MI-017 — First-shell reduction exposes a two-parameter Möbius amplitude gap beyond parity existence
+# MI-017 — First-shell reduction leaves a signed near-balance gap even after full-exponent sign abundance
 
-**Evidence level:** supported by the exact CRT, Boolean-transform, smooth-inversion, and sign-population analyses MC-228--MC-234; no new square-root Möbius progression bound is claimed.
+**Evidence level:** supported by the exact CRT, Boolean-transform, smooth-inversion, and dense-model sign-population analyses MC-228--MC-235; no square-root Möbius progression bound is claimed.
 
 For the first square-defect shell, MC-228--MC-231 localize the difficult diagonalized target to low/mesoscopic incidence. MC-232 replaces exact incidence cells by their upper Boolean zeta transform at only subpower condition cost. MC-233 then removes the primorial roughness mask algebraically. At logarithmic smoothness,
 
@@ -26,21 +26,25 @@ then `Q_S=X^{2\alpha+o(1)}`, `Z=T/d=X^{1-\beta+o(1)}`, and the progression occup
 \boxed{\max(0,\tfrac12-2\alpha-\beta)}.
 \]
 
-MC-234 calibrates what modern parity-breaking prior art actually buys on this exact family. Matomäki--Teräväinen's Linnik-scale Möbius theorem places each sign in every reduced class by `q^{2+\varepsilon}`. In every fixed interior hard pair `2\alpha+\beta<1/2`, a CRT refinement forces
+MC-234 already showed that parity existence is not the obstruction. MC-235 strengthens this decisively by retaining the quantitative mass in the 2026 Matomäki--Teräväinen Linnik dense-model proof. In every fixed interior hard pair `2\alpha+\beta<1/2` and for each sign,
 
 \[
-N_\pm(Z;q,a)\ge Z^{1/2-\eta}/q.
+\boxed{
+N_\pm(Z;q,a)\ge \frac Zq X^{-\eta}
+}
 \]
 
-So **existence of both signs is not the remaining obstruction**. The same progression contains `(6/\pi^2+o(1))Z/q` square-free terms, while the desired amplitude bound would require the two signs to be nearly balanced:
+for every fixed `\eta>0` and all sufficiently large `X`. Each sign therefore has the **full progression occupancy exponent**. No fixed negative-power sparsity of one sign remains available as an explanation of the amplitude gap.
+
+This still gives essentially no signed cancellation. The square-free population is `(6/\pi^2+o(1))Z/q`, and lower bounds of size `(Z/q)X^{-o(1)}` for both signs allow one sign to dominate by almost the entire support. The target instead requires
 
 \[
 \frac{|N_+-N_-|}{N_{\rm sf}}
 \le X^{-(1/2-2\alpha-\beta)+o(1)}.
 \]
 
-The exponent deficit is therefore an amplitude/near-balance budget, not a parity-existence budget. A theorem can be qualitatively strong enough to break parity in every selected class and still be polynomially too weak for the first-shell energy.
+Thus **representative abundance and signed balance are different currencies even at the exponent level**. The dense-model proof already spends enough information to populate both signs at full exponent; extracting still more representatives from the same positive lower-bound architecture cannot by itself pay the amplitude deficit. Any useful strengthening must preserve a comparison between the two sign masses, or exploit cancellation when the `X^{o(1)}` smooth-dilation components of MC-233 are recombined before triangle inequality.
 
-This remains a componentwise sufficient reduction rather than an equivalence. Cancellation among smooth dilations could bypass individual near-balance estimates. The two legitimate routes are therefore precise: prove signed discrepancy on the source-selected progression family at the required deficit, or exploit coherent cancellation across the `X^{o(1)}` dilation family. Further support-mask simplification or representative-existence bounds do not pay the missing power.
+The two surviving routes are therefore precise: prove signed discrepancy on the source-selected progression family at the required deficit, or prove coherent aggregate cancellation across the smooth dilations. Support-mask simplification, parity existence, and separate lower bounds for `N_+` and `N_-` are now exhausted as explanations of the missing power.
 
-**Boundary.** MC-234 uses the published Linnik-type theorem only at its stated sign-existence level and does not rule out stronger quantitative information inside its dense-model proof. Boundary scalings where `1/2-2\alpha-\beta` tends to zero need separate uniformity. No Mertens/RH consequence is proved.
+**Boundary.** MC-235 derives its counting statement from the quantitative lower bound inside the published dense-model proof and is fixed-parameter/interior; moving boundary scalings require renewed uniformity. The reduction remains componentwise sufficient rather than necessary, so aggregate cancellation can still bypass individual near-balance. No Mertens/RH consequence is proved.

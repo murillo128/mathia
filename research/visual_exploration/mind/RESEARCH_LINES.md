@@ -20,32 +20,27 @@ VIS-150--VIS-160 show that deterministic polynomial/power selectors can mimic ar
 
 VIS-161--VIS-173 calibrate collision complexity and separate weighted concentration from null shape. VIS-174 transfers preassigned fixed moments of the matched weighted Haar null to deterministic continuous prime-log averaging. VIS-175--VIS-176 close the square-summable and Lindeberg full-law phases under their transfer gates.
 
-VIS-177 sharpens the deterministic character-separation bill. A nonzero character in the `k`th moment has frequency at least `1/(2y^{floor(k/2)})`, giving a transfer cost proportional to
+VIS-177 sharpens deterministic character separation, and VIS-178 inserts the prime-power effective dimension. For a polynomial cutoff `y=H^\delta`, the `k`th moment remains matched throughout the sufficient wedge
 
 \[
-\frac{y^{\lfloor k/2\rfloor}D_2(y)^{k/2}}H.
+\delta\le\frac1{\lfloor k/2\rfloor+k/2}.
 \]
 
-For prime-power weights this already keeps every subpolynomial cutoff `y(H)=H^{o(1)}` inside the matched Gaussian null.
-
-VIS-178 now calibrates the first genuinely polynomial-support boundary instead of merely declaring it open. For `w_p=p^{-\alpha}`, `0\le\alpha<1/2`,
+This still matters for genuinely higher fixed-order tests. But VIS-179 shows that **quadratic statistics have a substantially larger collective null region**. Montgomery--Vaughan mean-square control gives
 
 \[
-D_2(y)\sim \frac{1-2\alpha}{(1-\alpha)^2}\frac y{\log y},
+\left|\frac1H\int_T^{T+H}S_y(t)^2\,dt-\frac18\right|
+\ll\frac yH
 \]
 
-while at `\alpha=1/2`, `D_2(y)\sim4y/((\log y)^2\log\log y)`. If `e_k=\lfloor k/2\rfloor+k/2`, the `k`th moment still transfers for a fixed polynomial law `y=H^\delta` throughout the closed wedge
+uniformly in the interval start, arbitrary positive prime weights, and arbitrary prime subsets below `y`. Thus every `y=o(H)` support law is already variance-matched. In particular every polynomial `y=H^\delta`, `\delta<1`, is closed as a standalone quadratic energy/variance discriminator.
 
-\[
-\delta\le\frac1{e_k}.
-\]
+The remaining positive-power opportunity must therefore state its **functional complexity** explicitly. A variance statistic cannot escape merely by taking `\delta>1/2`; a higher fixed-order statistic must first exceed its own proven transfer gate and then rule out stronger collective mean-value controls. Other live boundaries are growing complexity/order, Gram or other discrete sampling, rare/shrinking or unbounded functionals, genuinely hybrid prime/zero information, or behavior at/above the linear `y\asymp H` scale with an independently justified observable and matched control.
 
-Thus even positive-power support can remain representation-matched at any predeclared finite moment order. For a panel through order `K`, the null extends to `\delta\le1/K` when `K` is even and to `\delta\le1/(K-1/2)` when `K` is odd, including equality through the surviving logarithmic factors.
+Failure of a current sufficient transfer bound is never positive source evidence by itself.
 
-The remaining positive-power opportunity must therefore state its complexity. It must exceed the relevant order-dependent wedge, let moment order grow with support, use a stronger-than-moment functional, change to Gram/discrete sampling, introduce hybrid prime/zero information, probe rare/shrinking events, or otherwise leave the additive prime-torus model. Failure of the current sufficient bound beyond the wedge is not evidence that the matched null actually fails there.
+## Keep source corrections, clock mixing, weighted null shape, transfer horizon, functional order, and sampling class separate
 
-## Keep source corrections, clock mixing, weighted null shape, transfer horizon, moment order, and functional class separate
+Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-179 now shows that collective Dirichlet-polynomial cancellation can enlarge one low-order null region far beyond what character-by-character frequency spacing predicts.
 
-Moment-null controls attack low-frequency source corrections; Gram selectors attack apparent phase mixing; weighted Haar controls calibrate concentration and shape. VIS-177 closes all subpolynomial support for fixed moments, while VIS-178 gives an explicit parity-sensitive polynomial wedge for every fixed order.
-
-A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support law, sampling geometry, observation scale, **moment/functional complexity**, and target statistic. Polynomial support alone is no longer a sufficient description of the escape regime.
+A residual becomes arithmetic evidence only after it survives the matched control at the same weights, support law, sampling geometry, observation scale, **functional complexity**, and target statistic. Polynomial support alone is not a sufficient description of an escape regime, and the quadratic `y=o(H)` closure must not be extrapolated to higher moments or full laws without a separate theorem.

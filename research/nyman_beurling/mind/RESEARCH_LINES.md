@@ -8,60 +8,40 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Control the conditioning and target leakage of the causal finite-window innovation flag
+## Prove target transversality to the finite-rank forward-memory channel
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`.
 
-NB-049--NB-061 identify the finite repair gap, remove the common off-critical Blaschke factor, close the moving-single-shift escape, and reduce the collective late quotient to the finite-time arithmetic defect sectors
+NB-049--NB-061 reduce the collective late quotient to compact-time arithmetic defect sectors `\mathcal K_R=\mathcal E_R\ominus\mathcal G_R`; every `\mathcal K_R` is infinite-dimensional and the canonical question is whether the visible leakage `\|P_{\mathcal G_R}J_Rh_*\|` vanishes.
+
+NB-062 closes hidden rank loss: `\dim\mathcal G_R=R-1`, consecutive windows form a causal flag, and every new logarithmic cell adds exactly one natural innovation `C_R`. The arithmetic deformation is therefore forward memory, not missing rank.
+
+NB-063 localizes that memory exactly. On the new cell `\mathcal X_R`, the old visible space continues through a canonical finite-rank map
 
 \[
-\mathcal K_R=\mathcal E_R\ominus\mathcal G_R,
-\qquad
-\mathcal G_R=J_R\mathcal A.
+\Gamma_R:\mathcal G_R\to\mathcal X_R^\circ,
 \]
 
-NB-061 proves every `\mathcal K_R` is infinite-dimensional and leaves the canonical target question as
+and
 
 \[
-\|P_{\mathcal G_R}J_Rh_*\|\longrightarrow0,
-\qquad h_*=Qe.
+\mathcal N_R=\mathcal X_R\ominus
+(\operatorname{span}\{C_R\}+\operatorname{Ran}\Gamma_R)
 \]
 
-NB-062 now closes hidden finite-window rank loss completely. With `F_1=0` and
+is infinite-dimensional. The channel that can retain old natural-space memory has dimension at most `R`; all target energy in `\mathcal N_R` is absorbed into the enlarged defect space with unit efficiency.
+
+For `x_R=(J_{R+1}-J_R)h_*`, `p_R=P_{\mathcal G_R}J_Rh_*`, and `z_R=P_{\mathcal X_R^\circ}x_R-\Gamma_Rp_R`, the exact one-step capture law is
 
 \[
-D_j=(j+1)F_{j+1}-jF_j,
+\delta_R^2-\delta_{R+1}^2
+=\langle z_R,(I+\Gamma_R\Gamma_R^*)^{-1}z_R\rangle.
 \]
 
-the exact cocycle identity writes `D_j` as a shifted shrinking-cell generator whose first visible cell is nonzero. Consequently
+The live theorem is no longer a generic frame bound. Persistent leakage requires repeated target alignment with the finite-dimensional channel `span{C_R}+Ran Gamma_R`. Prove quantitative transversality of the canonical cell `x_R`, or control `\Gamma_R` and the mismatch `z_R` strongly enough to force cumulative capture. Another rank theorem or another infinite-dimensional defect construction cannot move the bottleneck.
 
-\[
-\mathcal G_R=\operatorname{span}\{J_RD_j:1\le j<R\},
-\qquad
-\dim\mathcal G_R=R-1,
-\]
+## Treat individual disappearance, defect abundance, rank, forward memory, and target alignment as separate gates
 
-and consecutive windows form the short exact sequence
+Late individual shifts can vanish while the collective family remains visible. Every finite window already has infinite-dimensional defect; every visible natural window already has maximal causal rank. NB-063 now shows that most of each newly opened cell is exact memory-free defect space as well.
 
-\[
-0\to\operatorname{span}\{C_R\}
-\to\mathcal G_{R+1}
-\xrightarrow{J_R}\mathcal G_R
-\to0.
-\]
-
-Every newly opened logarithmic cell contributes exactly one independent causal innovation. The arithmetic deformation is therefore **not a rank defect**. Relative to the flat `O=1` control, the innovation count and causal order are unchanged; the new information is entirely in the forward tails of those innovations and their coupling to earlier cells.
-
-The same basis makes the target leakage finite and explicit. Since `h_*\perp\mathcal A`, the early-window pairings are exactly the negatives of tail pairings. If `H_R` is the Gram matrix of `{J_RD_j}_{j<R}` and `b_R` the tail-induced pairing vector, then
-
-\[
-\|P_{\mathcal G_R}J_Rh_*\|^2=b_R^*H_R^{-1}b_R.
-\]
-
-The live theorem is therefore quantitative: control the triangular extension/conditioning cost strongly enough that the ordinary tail of `h_*` dominates this amplification, or find a target-specific cancellation that bypasses a full frame bound. Proving another innovation is nonzero or another localized annihilator exists no longer advances the bottleneck.
-
-## Treat individual-shift disappearance, defect existence, finite-window rank, causal conditioning, and target leakage as separate gates
-
-Large-ratio raw columns can be small, and every sufficiently late individual shifted block can be invisible to the canonical residual. NB-061 closes defect existence; NB-062 closes finite-window algebraic degeneracy and shows the visible natural space has maximal rank `R-1` with one innovation per cell.
-
-A triangular family can still be arbitrarily ill-conditioned. The surviving arithmetic content is forward memory plus target alignment. Future work should attack `H_R^{-1}` against the tail-induced vector `b_R`, not rank or defect abundance.
+The surviving arithmetic content is exceptionally narrow: one new innovation plus the finite-rank forward continuation of old natural traces must repeatedly align with the distinguished target. In the flat control `\Gamma_R=0` and cellwise absorption is perfect. Any claimed arithmetic obstruction should therefore be expressed through the actual forward-memory map and target mismatch, not through dimension or conditioning language alone.

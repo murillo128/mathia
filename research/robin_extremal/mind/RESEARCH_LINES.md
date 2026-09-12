@@ -2,33 +2,29 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Close the fringe-free deep-layer escape or force unbounded packet complexity
+## Force structure on the nonquiet interruptions or on the fan span
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`.
 
-RE-049--RE-058 progressively separate metric capacity from source fidelity. Gap geometry, synchronization, and integer labels can be reproduced by controls; ordinary `sigma` forces local matched atoms back to genuine prime coordinates, but that alone does not make one fixed chamber information-rich. RE-059 shows that after endpoint correction a single threshold cell contains only finite source data.
+RE-049--RE-058 separate metric capacity from source fidelity. Genuine primality removes composite local substitutes, but one fixed chamber still contains only finite source data. RE-060--RE-064 then identify the first source-bearing cross-cell observable and reduce every extended bounded near-zero-charge fan to one local architecture: fringe-free `0 -> 0` packets whose higher-layer depths diverge. Egyptian cancellation can occur only terminally inside such a bounded run, while the separate escape of unbounded packet cardinality remains open.
 
-RE-060--RE-062 identify the first source-bearing cross-cell observable and classify every bounded packet whose normalized higher-layer charge can vanish. Before using global geometry there are two asymptotic architectures: equal fringe bits with every higher-layer depth diverging, or a fixed finite Egyptian core with reciprocal-depth sum one and fringe change `0 -> 1`, while all remaining depths diverge.
-
-RE-063 locks every selected nonzero-fringe endpoint to a deep base-two successor. RE-064 uses the resulting multiplicative lacunarity against the `O_K(\log Y)` motion of a bounded physical packet. Two fringe endpoints cannot be joined by one bounded packet, so the equal-bit vanishing branch is forced to be
+RE-065 shows that even the surviving bounded deep-layer architecture has too little capacity on polynomial physical windows. Uniformly in a growing depth cutoff,
 
 \[
-\chi_- = \chi_+ =0,
-\qquad \min_i j_i\to\infty.
+M_{\ge r}(T)
+\le
+\log_2\!\left(\frac{T\log T}{\log2}\right)
+\left(\frac{T\log T}{\log2}\right)^{1/r},
 \]
 
-The Egyptian branch is now locally terminal in any run of bounded near-zero-charge switches. If a `0 -> 1` Egyptian switch is followed by another exposed state through a bounded packet, the next packet starts with fringe bit one, must end with fringe bit zero, and satisfies
+so `r(T)->infinity` leaves only `T^{o(1)}` higher-layer event occurrences. Because vanishing bounded source-bearing charge forces precisely such growing depths, every consecutive quiet run with endpoint scales `X<=Y<=X^A` has length only `X^{o(1)}`.
 
-\[
-Q_{\rm next}\le -1+o(1).
-\]
+In the strong off-critical regime of RE-051, a polynomial-span fan contains polynomially many exposed switches. It therefore needs polynomially many **nonquiet interruptions**. Each interruption must have at least one of three forms: packet cardinality exceeds the fixed bound, the packet contains no higher-layer source event (first-layer takeover), or its normalized charge fails to vanish. If such an interruption count is avoided for every fixed polynomial span, the remaining geometric escape is superpolynomial fan stretch.
 
-Thus recurrent Egyptian cancellation and the old `1 -> 1` deep-layer escape are closed for bounded packets. The only bounded architecture capable of supporting an extended near-zero-charge fan is the **fringe-free `0 -> 0` deep-layer regime**. The other explicit global escape is that packet cardinality itself becomes unbounded.
+The next theorem should therefore attack these explicit alternatives rather than refine the bounded reciprocal-depth catalogue. A polynomial-span theorem would force polynomially many nonquiet events and make their aggregate charge/sign structure the natural target. Conversely, if superpolynomial stretch is genuinely possible, it must be reconciled quantitatively with the older block-stretch geometry.
 
-The remaining theorem should therefore attack one of these two precise alternatives along the actual false-RH exposed sequence: show that fringe-free diverging-depth packets cannot persist globally, or prove that the forced exposure geometry supplies enough control even when packet size grows. Re-deriving Egyptian catalogues or nonzero-fringe successor sparsity is no longer the bottleneck.
+## Treat local fidelity, bounded packet charge, deep-layer capacity, interruption type, and physical span as separate currencies
 
-## Treat metric capacity, local sigma fidelity, chamber source dimension, packet charge, fringe support, successor geometry, and packet cardinality as separate currencies
+Prime-source fidelity does not by itself control an adaptive fan. Bounded-packet charge classification does not imply global persistence. RE-065 adds the missing capacity ledger: deep prime-power events become subpolynomially scarce once the depths required for quiet cancellation diverge.
 
-Genuine primality removes composite local substitutes but does not enrich a fixed chamber. New source information enters through event transitions. Reciprocal-depth charge classifies bounded packets; base-two lacunarity removes the double-fringe branch; and the monotone fringe handoff after an Egyptian cancellation forces an order-one negative rebound at the next bounded switch.
-
-These are still local/mesoscopic statements. They do not prove that the complete adaptive fan contains infinitely many bounded packets, exclude the fringe-free diverging-depth branch, or control an unbounded number of crossed events. The global proof obligation is now concentrated there.
+This is still not a sign contradiction. Polynomially many interruptions can be first-layer-only, high-cardinality, or nonvanishing-charge events in different proportions, and a superpolynomial-span fan escapes the polynomial-window count. Future progress must therefore use one of those source-bearing alternatives explicitly rather than infer a contradiction from event scarcity alone.

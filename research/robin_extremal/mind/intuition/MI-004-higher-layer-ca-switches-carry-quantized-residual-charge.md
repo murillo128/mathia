@@ -1,38 +1,45 @@
-# MI-004 — Bounded CA packet cancellation leaves only fringe-free deep layers; Egyptian cancellation rebounds
+# MI-004 — Bounded near-zero CA packets have subpolynomial deep-layer capacity on polynomial windows
 
-**Evidence level:** supported by the exact adjacent/bounded-packet asymptotics and successor geometry RE-060--RE-064; global forcing of the surviving fringe-free or unbounded-packet alternatives remains open.
+**Evidence level:** supported by exact bounded-packet charge/successor geometry RE-060--RE-064 and the growing-depth event-capacity theorem RE-065; the remaining interruption alternatives and superpolynomial-span escape are open.
 
-Inside a fixed CA support chamber, RE-059 shows that endpoint-corrected standard and reciprocal prime sources are frozen. RE-060 shows where new source information enters: one higher-layer boundary event produces a normalized nonzero residual charge.
-
-RE-061 identifies the finite-packet composition law. For a bounded packet whose higher-layer event depths are `j_1,...,j_m`, the selected residual jump has leading charge
+Inside a fixed CA support chamber, RE-059 shows that endpoint-corrected standard and reciprocal prime sources are frozen. RE-060--RE-062 identify where new source information enters and classify bounded packets whose normalized higher-layer charge can vanish. For higher-layer depths `j_i`, the leading charge is
 
 \[
--\sum_{i=1}^m\frac1{j_i}+\chi_+-\chi_-.
+-\sum_i\frac1{j_i}+\chi_+-\chi_-.
 \]
 
-RE-062 makes this uniform when the bounded number of depths move. If the charge tends to zero, subsequence compactness initially leaves two types: equal fringe bits with all depths diverging, or a fixed finite Egyptian core with reciprocal sum one and fringe change `0 -> 1`, while every other depth diverges.
-
-RE-063 identifies the source geometry behind a nonzero fringe bit. Such a selected endpoint is immediately followed by a unique deep base-two event, and distinct fringe hosts sit on a multiplicatively lacunary family whose successive event scales have ratio tending to two.
-
-RE-064 composes that lacunarity with bounded packet motion. A packet with at most `K` physical events changes the logarithmic state scale by only `O_K(\log Y)`, so its two endpoint scales have ratio tending to one. Two nonzero-fringe endpoints would instead have to lie on distinct base-two rungs with asymptotic ratio at least two. Therefore
-
-\[
-(\chi_-,\chi_+)\ne(1,1)
-\]
-
-eventually for every bounded packet. The equal-bit vanishing branch is consequently forced to be
+RE-063--RE-064 use the source geometry of nonzero fringe bits and deep base-two successors to collapse the bounded near-zero catalogue. Double-fringe bounded packets are eventually impossible, and a `0->1` Egyptian cancellation cannot recur inside a bounded near-zero run because the next bounded switch incurs an order-one negative rebound. Extended bounded near-zero behavior therefore has one surviving local architecture:
 
 \[
 \chi_- = \chi_+ =0,
 \qquad \min_i j_i\to\infty.
 \]
 
-The Egyptian branch is also nonrepeatable inside a bounded near-zero-charge run. A `0 -> 1` Egyptian switch lands on a fringe host. If the fan continues through another bounded packet, the fringe bit cannot turn off while the same state remains selected, while double-fringe is forbidden at the next endpoint. The following switch is therefore `1 -> 0`, and the charge law gives
+RE-065 now prices the **global capacity** of that escape. Let `M_(>=r)(T)` count higher-layer event occurrences with depth at least `r` up to event scale `T`. Uniformly in `r>=2`,
 
 \[
-Q_{\rm next}\le -1+o(1).
+M_{\ge r}(T)
+\le
+\log_2\!\left(\frac{T\log T}{\log2}\right)
+\left(\frac{T\log T}{\log2}\right)^{1/r}.
 \]
 
-So the bounded-packet problem is no longer a catalogue of several competing cancellations. **Extended bounded near-zero behavior has one surviving architecture: fringe-free deep-layer escape.** Egyptian cancellation can occur only terminally within such a bounded run. Outside this classification lies the separate possibility that physical packet cardinality grows without bound.
+Hence every growing depth cutoff `r(T)->infinity` has only
 
-**Boundary.** RE-064 does not exclude the `0 -> 0` diverging-depth branch, prove bounded packet cardinality along the full false-RH fan, or control an unbounded packet. The remaining information is global exposure order and packet-size growth, not another bounded reciprocal-depth identity.
+\[
+M_{\ge r(T)}(T)=T^{o(1)}
+\]
+
+capacity. A bounded source-bearing packet whose charge tends to zero is forced by RE-064 into precisely such growing depths. Therefore a consecutive bounded near-zero-charge run whose endpoint scales stay in any polynomial window `X<=Y<=X^A` has length only
+
+\[
+L_X=X^{o(1)}.
+\]
+
+This is the key splice: **vanishing charge forces deeper genuine prime-power events, but those events become subpolynomially scarce on every polynomial physical-scale window**. In the strong off-critical fan of RE-051, which requires polynomially many exposed switches, a polynomial-span fan must therefore contain polynomially many interruptions to the quiet bounded deep-layer regime. Each interruption has at least one explicit form: packet cardinality exceeds the fixed bound, the packet is first-layer-only, or its normalized charge does not vanish.
+
+The old surviving “fringe-free deep layers” branch is thus no longer a plausible single long bounded explanation of a polynomial fan. The global escape map is now discrete: **unbounded packet complexity, first-layer takeover, nonvanishing-charge interruptions, or superpolynomial physical fan stretch**. The last escape is genuine because RE-065 does not prove the fan lives inside any fixed polynomial span.
+
+The useful next theorem should attack one of these alternatives on the actual false-RH exposed sequence, rather than refine the bounded reciprocal-depth catalogue. In particular, a polynomial-span theorem would immediately force polynomially many nonquiet events, after which their charge/sign contribution becomes the natural target; conversely a superpolynomial-span mechanism must be reconciled with the older block-stretch geometry.
+
+**Boundary.** RE-065 is a capacity obstruction, not a sign contradiction. It assumes bounded packet cardinality for the quiet-run estimate, does not control first-layer-only packets, and does not exclude superpolynomial span. Polynomially many interruptions need not all have large charge.

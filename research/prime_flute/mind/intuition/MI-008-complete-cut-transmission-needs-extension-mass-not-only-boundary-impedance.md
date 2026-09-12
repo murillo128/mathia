@@ -1,6 +1,6 @@
-# MI-008 — The flute mixed-response gate has an intrinsic logarithmic accumulated-loss threshold
+# MI-008 — The flute mixed-response gate has an exact intrinsic attenuation-density reduction
 
-**Evidence level:** proved local operator/source-space and scalar accumulation boundaries through PF-300; the factorization of the complete physical mixed response remains open.
+**Evidence level:** proved local operator/source-space and scalar accumulation boundaries through PF-301; the factorization of the complete physical mixed response remains open.
 
 For the fixed physical high-pass spaces, PF-292 gives a diverging local frequency floor. PF-296 proves that the canonical fixed-axis synthesis is uniformly bounded from the explicit weighted source space `ell^1(q)` into positive Sobolev regularity. A complete normalized response with uniformly bounded `sum_i q_i|a_i|`, controlled transport, and negligible residual therefore cannot sustain the PF-290 local high-band shorting deficit.
 
@@ -12,36 +12,63 @@ PF-298 removes a second possible uniform discount. On constant boundary data a t
 c_n\begin{pmatrix}1&-1\\-1&1\end{pmatrix}+\operatorname{diag}(\kappa_{n,L},\kappa_{n,R}),
 \]
 
-with `c_n\gtrsim s_n^{-1}` and bounded nonnegative killing, so the isolated scalar loss satisfies `epsilon_n=O(s_n)`.
-
-PF-299 identifies the coarse endpoint: `sum s_n=infinity` while `sum s_n^q<infinity` for every `q>1`. PF-300 resolves the logarithmic refinements by using the intrinsic coordinate
+with `c_n\gtrsim s_n^{-1}` and bounded nonnegative killing. Writing
 
 \[
-t_n=F(p_n),\qquad s_n=\frac{(t_n-t_{n-1})+(t_{n+1}-t_n)}2.
+r_n=\frac{\kappa_n}{c_n},\qquad \theta_n=(1+r_n)^{-1},
 \]
 
-For every nonnegative decreasing `phi`, the seam sum `sum s_n phi(t_n)` has the same convergence behavior as `int phi(t)dt`. Hence
+one has `0\le r_n\le Cs_n`.
+
+PF-299 identifies the coarse endpoint: `sum s_n=infinity` while `sum s_n^q<infinity` for every `q>1`. PF-300 resolves monotone slowly varying refinements in the intrinsic coordinate `t_n=F(p_n)`. PF-301 removes the remaining monotonicity restriction for the **actual bounded pant coefficient sequence**.
+
+Put
 
 \[
-\sum_n\frac{s_n}{(1+F(p_n))^\beta}
+b_n=\frac{r_n}{s_n}=\frac{\kappa_n}{c_ns_n},
 \]
 
-diverges exactly for `0<=\beta<=1` and converges for `\beta>1`. Prime-gap irregularity is absorbed into the exact mesh; no average-gap replacement is needed.
-
-The scalar live quantity is consequently the relative killing **inside this quadrature currency**. If `epsilon_n\lesssim s_n(1+F(p_n))^{-\beta}` with `\beta>1`, the scalar transmission product stays positive. If `epsilon_n\gtrsim s_n(1+F(p_n))^{-\beta}` with `\beta<=1`, it vanishes. At the critical law
+and let `\psi_n` be the triangular hat at the exact intrinsic mesh point `t_n`, so that `\int\psi_n=s_n`. The piecewise-linear attenuation field
 
 \[
-\epsilon_n\sim a\frac{s_n}{1+F(p_n)},
+B_N(t)=\sum_{n\ge N}b_n\psi_n(t)
 \]
 
-PF-300 gives the sharper prediction
+then satisfies the exact identity
 
 \[
-\prod_{k\le n}(1-\epsilon_k)=(\log p_n)^{-a+o(1)}.
+\boxed{
+\int_{t_{N-1}}^\infty B_N(t)\,dt
+=\sum_{n\ge N}r_n.
+}
 \]
 
-Thus “`epsilon_n=o(s_n)`” is still not a meaningful global criterion; the actual slowly varying factor decides accumulation.
+No smoothness, monotonicity, or independence from the prime gaps is needed. Because PF-298 gives bounded `b_n` and PF-299 gives `\sum s_n^2<\infty`, one also has `\sum r_n^2<\infty`, so
 
-This remains only one compression of the physical problem. The PF-298 constant channel is not proved invariant under the complete `P/H` Schur return. The full gate is still the normalized mixed return/reassembly map, where accumulated nonconstant-mode damping, support loss, source-specific forcing/cancellation, or a change of coefficient currency may dominate the scalar chain.
+\[
+\boxed{
+\prod_{n\ge N}\theta_n>0
+\iff B_N\in L^1(t_{N-1},\infty),
+}
+\]
 
-**Boundary.** PF-300 proves an intrinsic quadrature/integral test for monotone scalar weights, not the asymptotic of the actual pant killing and not a full mixed-response factorization. Highly oscillatory source-dependent weights require additional control.
+and, up to one finite positive multiplicative renormalization,
+
+\[
+\prod_{n=N}^M\theta_n
+=C_N\exp\!\left(-\int_{t_{N-1}}^{t_M}B_N(t)\,dt\right)(1+o(1)).
+\]
+
+Thus prime-gap-correlated oscillation of the local killing is no longer an accumulation loophole. The symmetric seam weights are exactly the mass-lumped areas of the intrinsic hat basis, so the discrete scalar chain has a canonical continuous attenuation density for **every** bounded nonnegative coefficient sequence.
+
+The scalar live quantity is now sharply localized: determine whether the actual directional densities
+
+\[
+b_{n,\pm}=\frac{\kappa_{n,\pm}}{c_ns_n}
+\]
+
+have finite or infinite intrinsic mass, or obtain enough block/integral control to decide it. A monotone pointwise model is unnecessary. Raw relative killing and exact loss differ only by finite intrinsic mass, so either density gives the same survival/extinction classification.
+
+This remains only one compression of the physical problem. The PF-298 constant channel is not proved invariant under the complete `P/H` Schur return. The full gate is still the normalized mixed return/reassembly map, where accumulated nonconstant-mode damping, support loss, source-specific forcing/cancellation, physical-high remainders, or a change of coefficient currency may dominate the scalar chain.
+
+**Boundary.** PF-301 is an exact scalar accumulation reduction, not a calculation of the actual density and not a full mixed-response factorization. It gives no finite/infinite answer for `\int B_\pm`, and it does not justify replacing the complete `P/H` dynamics by the constant channel.
