@@ -4,7 +4,7 @@
 
 ## Claim
 
-AF-299 leaves one precise escape from the full-space no-quotient theorem: perhaps the admissible coefficient sources really live in a lower-dimensional family, so directions that reach boundary failure in the ambient coefficient space are not valid perturbations. For **complex-affine source models**, that escape can now be classified exactly.
+AF-299 leaves one precise escape from the full-space no-quotient theorem: perhaps the admissible coefficient sources really live in a lower-dimensional family, so directions that reach boundary failure in the ambient coefficient space are not valid perturbations. For **complex-affine source models**, that escape can be classified exactly.
 
 Let
 
@@ -55,19 +55,19 @@ For every boundary-safe `b\in\mathcal A`, the exact Euclidean distance to bounda
 
 with the ratio interpreted as `+infinity` when `\phi_z=0`.
 
-If a boundary-observation Gram metric is built only on admissible directions,
+If a boundary-observation Gram metric is built only on admissible directions, set
 
 \[
-G_{\mu,U}
-=
-\int_\Gamma u_z u_z^*\,d\mu(z),
+r_z=(n^{-\overline z})_{n=1}^N,
 \qquad
 u_z:=\Pi_U r_z,
 \qquad
-r_z=(n^{-\overline z})_{n=1}^N,
+G_{\mu,U}
+=
+\int_\Gamma u_z u_z^*\,d\mu(z).
 \]
 
-then every positive-definite such metric obeys the **source-relative leverage identity**
+Then every positive-definite such metric obeys the **source-relative leverage identity**
 
 \[
 \boxed{
@@ -254,7 +254,7 @@ U\cap
 
 which is (5).
 
-It is useful to spell out what this means operationally. Take any nonzero admissible direction `h\in U`. The Dirichlet polynomial `P_h` cannot vanish identically. Therefore there is some boundary point `z\in\Gamma` with
+Take any nonzero admissible direction `h\in U`. The Dirichlet polynomial `P_h` cannot vanish identically. Therefore there is some boundary point `z\in\Gamma` with
 
 \[
 P_h(z)\ne0.
@@ -300,13 +300,7 @@ If `\phi_z\ne0`, the minimum-norm solution in the Hilbert space `U` has norm
 
 If `\phi_z=0`, equation (9) has no solution because `b` is boundary-safe, so that boundary point contributes `+infinity`. Taking the minimum over the union of all reachable source-relative failure hyperplanes proves (1).
 
-In the standard Euclidean geometry, if `Pi_U` denotes orthogonal projection and
-
-\[
-r_z=(n^{-\overline z})_{n=1}^N,
-\]
-
-then
+In the standard Euclidean geometry,
 
 \[
 \|\phi_z\|_{U^*}
@@ -332,12 +326,6 @@ Because `|P_b|` has a positive minimum on the compact contour, points where `Pi_
 Equation (12) shows a real gain unavailable to AF-299's unrestricted quotient. Projection of the evaluation normals onto the **actually admissible perturbation directions** can enlarge the distance to boundary failure. Source restriction may therefore improve conditioning even though it does not create a target-null direction inside `U`.
 
 ## Source-relative observation design and the `r`-dimensional leverage law
-
-Let
-
-\[
-u_z:=\Pi_Ur_z\in U.
-\]
 
 The family `{u_z:z\in\Gamma}` spans `U`. If `h\in U` were orthogonal to every `u_z`, then
 
