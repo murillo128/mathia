@@ -12,6 +12,7 @@ based_on:
   - research/weil_inertia/findings/WI-257-bounded-perturbation-zero-modes-do-not-upgrade-translation-regularity.md
   - research/weil_inertia/findings/WI-258-phase-modulation-couples-firstness-slack-to-localized-cosine-defect.md
   - research/weil_inertia/findings/WI-259-first-prime-finite-scale-positivity-is-the-gate-for-the-phase-defect-program.md
+  - research/weil_inertia/findings/WI-260-public-fp035-generator-does-not-yet-certify-the-exact-first-prime-matrix.md
 ---
 
 # Can the sliding autocorrelation symbols exclude a first global Weil zero mode?
@@ -57,7 +58,9 @@ J_v(r,t)=\int_0^{2r}(2r-h)(1-\cos(th))\,d\mu_v(h).
 
 Thus any source-forced negative value `J_v(r,t)<=-epsilon` gives at least `epsilon` of strict firstness slack at that radius.
 
-`WI-259` identifies the missing gate before this can genuinely use a prime atom at every hypothetical first crossing. The first prime enters only for `r>(log 2)/2`. A validated finite-scale theorem `lambda_{7/20}>0` would force `a_*>7/20`; then the fixed radius `r=7/20` is admissible and, because `log 2<7/10<log 3`, its discrete source contains exactly the single atom `n=2`. A public `FP-0.35` computational candidate targets precisely this theorem, but Mathia does not yet treat it as established because the corrected post-fix certificate has not been independently replayed and the source repository's theorem-status metadata is inconsistent.
+`WI-259` identifies the missing gate before this can genuinely use a prime atom at every hypothetical first crossing. The first prime enters only for `r>(log 2)/2`. A validated finite-scale theorem `lambda_{7/20}>0` would force `a_*>7/20`; then the fixed radius `r=7/20` is admissible and, because `log 2<7/10<log 3`, its discrete source contains exactly the single atom `n=2`.
+
+`WI-260` sharpens the evidence boundary for that gate. A source audit of the latest public `telleroutlook/weil-first-prime` post-fix generator shows that a cold replay of the current script is **not sufficient**: the prime-layer matrix still uses rationalized / point-floating surrogates for exact `tau=20 log2/7`, `c_2=log2/sqrt2`, harmonic and `J/E` data without an enclosure or perturbation transfer, and its advertised Arb residual norm is computed with a partial-order entrywise `max` rather than a certified induced matrix norm. The public numerical margins may survive a repair, but the gate now requires independent **exact recertification**, not merely reproducibility of the existing output.
 
 ## Research question
 
@@ -85,7 +88,7 @@ with no `n>=3` atom. This removes multi-prime bookkeeping and exposes the exact 
 
 ## Decisive test
 
-First audit the finite-scale gate rather than presuming it. Independently replay or independently prove the public `FP-0.35` claim `lambda_{7/20}>0` in the same localized-Weil normalization used by WI-238. The current external state is only `COMPUTATIONAL-CERTIFICATE + NEEDS-INDEPENDENT-REPLAY`; README status or a finite Ritz eigenvalue is not sufficient.
+First close the finite-scale gate in the **exact** localized-Weil normalization used by WI-238. The current external `FP-0.35` state is not upgraded by rerunning `scripts/reproduce_fp035.py` unchanged. Following `WI-260`, a valid gate-closing artifact must either repair that generator or bypass it: enclose the exact first-prime constants/polynomials, use exact harmonic data, and certify positivity with a valid interval `LDL^T`/Cholesky argument or a rigorous submultiplicative residual norm (for example an induced infinity norm with certified row-sum upper bounds). Then independently replay the repaired certificate. An independent analytic or formal proof of `lambda_{7/20}>0` is equally decisive.
 
 If the gate validates, freeze `r=7/20` and study the exact identity
 
@@ -114,7 +117,7 @@ with `epsilon>0` forced for every admissible first-crossing mode, or another exa
 \mathcal F_v(7/20)-(7/20)\lambda_{7/20}\ge\varepsilon.
 \]
 
-A meaningful negative outcome is either failure of the finite-scale positivity gate under independent replay, or an explicit source-compatible compact-support autocorrelation model satisfying the scalar aperture bounds and the full phase-modulated cone at `r=7/20`.
+A meaningful negative outcome is either failure of a corrected exact finite-scale positivity certificate, or an explicit source-compatible compact-support autocorrelation model satisfying the scalar aperture bounds and the full phase-modulated cone at `r=7/20`.
 
 Stress-test every proposed implication against the pure logarithmic-core crossing of `WI-239` and the rank-two bounded-perturbation construction of `WI-257`. Also respect the external first-prime operator facts audited in `WI-259`: the prime overlap has operator norm one immediately after threshold and is indefinite, while the endpoint archimedean potential can absorb it at `L=7/20`. Therefore the gain must come from the full source coupling or first-crossing structure, not from treating `n=2` as a small or automatically destabilizing perturbation.
 
@@ -144,10 +147,12 @@ S_v(r)+J_v(r,t)\ge0,
 S_v(r)=\mathcal F_v(r)-r\lambda_r.
 \]
 
-These are stronger than scalar `min`-transform positivity as inequality constraints, but analogous modulation inequalities exist for generic translation-invariant nonnegative forms. `WI-259` further shows that the first-prime version is conditional on a positivity margin past `(log2)/2`. The public `FP-0.35` certificate is not yet part of Mathia's established evidence and must not be silently promoted to a theorem.
+These are stronger than scalar `min`-transform positivity as inequality constraints, but analogous modulation inequalities exist for generic translation-invariant nonnegative forms. `WI-259` further shows that the first-prime version is conditional on a positivity margin past `(log2)/2`.
+
+`WI-260` establishes only a certification boundary, not failure of FP-0.35. The public corrected computation still reports positive nominal margins, but its current generator does not enclose all exact prime-layer constants and does not rigorously bound the matrix residual norm it names. Therefore neither README status, a finite Ritz eigenvalue, nor an unchanged replay of the present generator is part of Mathia's established evidence for `lambda_{7/20}>0`.
 
 ## Research disposition
 
-The direction remains `accepted`, but the live branch is narrowed. **First settle the `L=7/20` finite-scale positivity gate.** If it validates, use the exact one-prime radius `r=7/20` before considering larger radii or several prime powers. If it fails, return to proving any rigorous positivity margin past `(log2)/2`; do not presume that a hypothetical first crossing sees a von-Mangoldt atom.
+The direction remains `accepted`, but the live branch is narrowed again. **First obtain an exact finite-scale recertification at `L=7/20`.** A reproducibility replay of the current public generator is no longer the decisive test by itself. If a corrected certificate validates, use the exact one-prime radius `r=7/20` before considering larger radii or several prime powers. If corrected certification fails, return to proving any rigorous positivity margin past `(log2)/2`; do not presume that a hypothetical first crossing sees a von-Mangoldt atom.
 
 After the gate, the target is still source-specific: combine the single `n=2` threshold weight, the sign-changing archimedean continuum, positive-definite autocorrelation constraints, and first-crossing slack to force or refute a negative localized cosine defect. A successful estimate should be stated directly as a quantitative lower bound for firstness slack through `WI-258`; a failure should identify a concrete source-compatible model rather than another generic bounded-perturbation example.
