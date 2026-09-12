@@ -1,31 +1,31 @@
-# MI-017 — Sliding first-crossing localization becomes a phase-coupled source cone after generic regularity fails
+# MI-017 — Sliding first-crossing localization becomes a phase-coupled source cone, but prime activation first needs finite-scale positivity past `log 2/2`
 
-**Evidence level:** supported by WI-253--WI-258; no incompatibility with a compactly supported global first zero mode is proved.
+**Evidence level:** supported by WI-253--WI-259. The phase-cone identities are exact, while the public `FP-0.35` positivity certificate used to cross the first-prime threshold remains computational evidence requiring independent replay; no incompatibility with a compactly supported global first zero mode is proved.
 
-At a hypothetical first unrestricted localized Weil crossing, translation freedom produces an exact sliding-aperture profile whose Fourier representation averages explicit source symbols against the nonnegative density `|vhat|^2`. WI-253--WI-254 show that the full profile is information-complete for the real autocorrelation: prime-power shifts appear as slope changes and the continuous archimedean part can be reconstructed between thresholds.
+At a hypothetical first unrestricted localized Weil crossing, translation freedom produces an exact sliding-aperture profile whose Fourier representation averages explicit source symbols against the nonnegative density `|vhat|^2`. WI-253--WI-254 show that the full profile is information-complete for the real autocorrelation, but firstness exposes only a lower envelope.
 
-Firstness does not expose all of that information. It gives only a pointwise lower envelope, and the small-aperture leading term is asymptotically saturated. WI-255 shows that the first additive correction is also unusable: before the zero-mode equation it contains source-sensitive prime and archimedean terms, but `Q_W(v)=0` cancels them exactly. The surviving linear coefficient is universal.
+WI-255--WI-257 close generic small-radius and regularity escapes. The first additive correction becomes universal after imposing the zero-mode equation, the next remainder contains a local translation-defect modulus not controlled quadratically by `H^log`, and common-domain bounded-perturbation zero-modehood cannot determine that modulus.
 
-WI-256 shows that simply going to the next Taylor coefficient is not legitimate. The exact remainder contains a universal `7r^2/2` term plus a nonnegative local translation-defect modulus `E_v(r)`. The known logarithmic form regularity controls only an integral of `(1-C(h))/h`; it does not force `E_v(r)` to be quadratic, and generic operator-domain membership does not determine its coefficient.
+WI-258 supplies a genuinely source-explicit replacement. Phase modulation gives
 
-WI-257 closes the generic regularity escape. After unitary scaling to `(-1,1)`, Suzuki's localized Weil operator has the form `T_a=T_0+K_a`, where `T_0` is one fixed logarithmic self-adjoint operator and `K_a` is bounded self-adjoint. Every normalized `u in D(T_0)` can be made a zero mode of some bounded rank-at-most-two self-adjoint perturbation, while vectors in that domain realize incompatible quadratic behavior of `E(r)`. Generic bounded-perturbation zero-modehood therefore cannot determine the needed translation modulus.
+`M_v(t)=int (1-cos(th)) dmu_v(h) >= 0`,
 
-WI-258 supplies a different exact variational family that uses the actual source decomposition. For the first-crossing null mode and its source-weighted autocorrelation measure `mu_v`, phase modulation `v_t(x)=e^{itx}v(x)` preserves support and gives
-
-`M_v(t)=int_0^(2a*) (1-cos(th)) dmu_v(h) >= 0`.
-
-Combining the same modulation with translated-window localization gives
+and the translated-window version gives
 
 `S_v(r)+J_v(r,t) >= 0`,
 
-with `S_v(r)=F_v(r)-r lambda_r` and
+where `J_v(r,t)` is the triangularly localized cosine transform of the von-Mangoldt/archimedean source-weighted autocorrelation. A negative localized source defect would force strict firstness slack.
 
-`J_v(r,t)=int_0^(2r) (2r-h)(1-cos(th)) dmu_v(h)`.
+WI-259 identifies a prerequisite that was implicit in that program. The first von-Mangoldt atom enters only when `r>(log 2)/2`. Existence of a first crossing alone does not guarantee that any prime atom is active. If one can establish strict finite-scale positivity at
 
-Hence a negative localized cosine defect `J_v(r,t)<=-epsilon` cannot be hidden by the scalar aperture lower envelope: it forces at least `epsilon` of strict firstness slack. In the explicit source expansion, each prime-power atom enters only after `2r>log n` and then carries the triangular phase weight `(2r-log n)(1-cos(t log n))`. Frequency can therefore suppress or emphasize source shifts without enlarging spatial support.
+`r=7/20=0.35`,
 
-This phase cone is genuinely additional to scalar `min`-transform positivity as an inequality constraint, but it is not yet a contradiction. Analogous modulation inequalities exist for generic translation-invariant nonnegative forms, and the exact aperture profile already determines `mu_v` distributionally. The missing theorem is specifically a **zeta-source sign theorem**: the von-Mangoldt atoms, archimedean density, compact support and positive-definiteness of `C_v` must force `inf_t J_v(r,t)<0` for some medium radius, or else a source-compatible autocorrelation model must demonstrate that all scalar and phase inequalities can coexist.
+then monotonicity forces `a_*>7/20`, and since `log 2 < 7/10 < log 3`, the fixed radius `r=7/20` is valid for every hypothetical first crossing and contains **exactly the single prime atom `n=2`**.
 
-The reusable lesson is that source information can survive the scalar envelope and generic-regularity barriers only if one introduces a variational family whose weights couple directly to the arithmetic source. Here phase modulation provides such weights, and the remaining difficulty is no longer abstract smoothness but the sign geometry of a concrete two-parameter source transform.
+That reduction is exact, but its current external input is not yet certified by Mathia. The public `FP-0.35` project reports a corrected positive certificate after fixing a load-bearing interval-construction bug, yet its public theorem/status artifacts are inconsistent and no independent cold replay of the post-fix certificate has been accepted here. The correct evidence boundary is therefore `COMPUTATIONAL-CERTIFICATE + NEEDS-INDEPENDENT-REPLAY`, not theorem.
 
-**Boundary.** WI-258 does not prove a negative phase defect, an RH contradiction, or a regularity improvement. The pure logarithmic core and generic bounded-perturbation controls remain valid falsifiers for arguments using modulation abstractly. Any gain must come from the explicit zeta factorization of `mu_v` together with compact-support/autocorrelation constraints.
+The live phase program is consequently ordered. First establish or independently replay finite-scale positivity beyond `(log 2)/2`. If the `7/20` gate survives, freeze that radius and attack the exact **one-prime** phase identity before enlarging to multi-prime radii. Even then, prime activation alone is not instability: the first-prime shift is indefinite but can be absorbed locally by the archimedean potential, so the needed theorem must use first-crossing structure plus the coupled source cone.
+
+The reusable lesson is that a source-specific inequality can still be unavailable because the relevant source atom has not been proved to lie inside the admissible localization radius. **Source activation is a separate gate from source sign.**
+
+**Boundary.** WI-259 does not prove `lambda_(7/20)>0`, a negative phase defect, or RH. If the external certificate fails, the exact conditional implication remains valid but the prime-coupled first-crossing argument must return to the prime-free regime until another positivity theorem crosses the threshold.

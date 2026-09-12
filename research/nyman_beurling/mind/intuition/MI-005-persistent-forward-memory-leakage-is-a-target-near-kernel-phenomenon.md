@@ -1,23 +1,31 @@
-# MI-005 — Stable tails are prediction/feedthrough gaps in stationary branch filters, not consequences of local flags or global conditioning
+# MI-005 — Stable tails force a renormalized nonstationary prediction-volume charge, not merely a raw prediction/feedthrough gap
 
-**Evidence level:** supported by NB-063--NB-073; the exact prediction/feedthrough criterion is proved only for stationary scalar branch filters, and no stable-tail triviality theorem for the actual nonstationary Nyman source is proved.
+**Evidence level:** supported by NB-063--NB-074. The stationary prediction/feedthrough criterion is exact for scalar branch filters, while NB-074 gives an exact finite-dimensional necessary divergence law and sufficient no-tail certificate for the actual nonstationary causal geometry; no arithmetic boundedness theorem for that charge is proved.
 
-NB-066--NB-067 show that a hypothetical persistent Nyman target is a global continuation problem visible through finite normalized Schur complements. NB-068--NB-071 then rule out local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning as sufficient invariants: an exact-branching matched control can remain uniformly Riesz-conditioned while carrying a nonzero stable tail.
+NB-066--NB-071 reduce a hypothetical persistent Nyman target to a global continuation problem and rule out local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning as sufficient invariants. NB-072--NB-073 identify the stationary mechanism: for `psi=theta g`, the stable tail is the inner model space, the global Gram sees only the outer factor, and comparing future-prediction energy `|g(0)|^2` with causal feedthrough `|psi(0)|^2` recovers the missing inner charge.
 
-NB-072 identifies the analytic mechanism. If `D_j=psi(V_m)e_j` and `psi=theta g` is the inner--outer factorization, then the stable tail is `K_theta tensor ker(V_m*)`; it vanishes exactly when `psi` is outer. The complete global Gram depends only on the outer factor because multiplication by `theta` is isometric, so the inner defect is erased from pure energy geometry.
+NB-074 gives the nonstationary analogue without pretending that the actual innovations form one stationary Wold ray. For the visible Gram `A_R` and finite-future Schur complement `S_(R,N)`, define
 
-NB-073 identifies exactly what restores the erased information. On one Wold ray define the future-prediction energy
+`J_(R,N)=log det(A_R^(-1/2) S_(R,N) A_R^(-1/2))`.
 
-`Pi(psi)^2 = inf_{x in future span} ||psi(V_m)(w+x)||^2`.
+The exact positive decomposition `S_(R,N)=A_R+E_(R,N)`, `E_(R,N)>=0`, makes `J_(R,N)>=0`, and the previous generalized-eigenvalue certificate satisfies
 
-It is the monotone limit of finite Gram Schur complements and equals `|g(0)|^2`. The actual first causal cell supplies the feedthrough energy `c(psi)^2=|psi(0)|^2`, hence
+`1+Lambda_R^2 <= Xi_(R,N) <= exp(J_(R,N))`.
 
-`c(psi)^2/Pi(psi)^2 = |theta(0)|^2`.
+Hence any nonzero stable-tail vector forces `J_(R,N(R))->infinity` for **every** finite horizon schedule `N(R)>=R`. Conversely, bounded `J_(R_k,N_k)` along any unbounded sequence of windows is already enough to rule out the entire stable tail. Even the one-step quantity `J_(R,R)` is a finite determinant ratio built from the source Gram.
 
-Therefore the stable tail is zero exactly when the Gram-predicted one-step error equals the actual causal feedthrough. A strict gap is precisely the inner obstruction. The logarithmic gap `log(Pi^2/c^2)=-2log|theta(0)|` also sees singular inner mass, not only Blaschke zeros.
+The determinant is not a cancellation artifact. Reverse prediction factorizes it as a sum of nonnegative coordinate charges,
 
-This criterion is distinct from conditioning. For `psi=1-rho z`, the inner defect appears only for `rho>1`; at `rho=1` the source is outer but noninvertible, the Gram lower bound collapses, yet the prediction/feedthrough gap remains zero. Thus **conditioning, future prediction, causal feedthrough, and continuation defect are separate resources**.
+`J_(R,N)=sum_(j<R) log(Pi_(j,N)^2 / PiHat_(j,R)^2)`,
 
-The reusable target for the arithmetic source is now a nonstationary prediction identity rather than an abstract factorization slogan. The genuine Nyman system already has causal newest-cell vectors and finite future Schur complements. The missing theorem is to construct a canonical prediction scale `Pi_R` from the actual future Gram geometry and show that `Pi_R^2/||C_R||^2 -> 1` (or a suitable uniform analogue). In the stationary control class this is exactly equivalent to excluding the stable tail.
+where `PiHat_(j,R)` is the prediction error already visible inside the current window. This denominator is load-bearing: raw comparison with the newest-cell feedthrough `||C_j||` would mix benign finite-window forward memory with genuinely unresolved continuation. NB-074 makes the correction explicit as
 
-**Boundary.** The actual Nyman innovation system is not shown to equal one stationary `psi(V_m)`, so the scalar Szego/Wold formula does not transfer automatically. Burnol's outer half-plane multiplier lives in a different analytic variable. NB-073 supplies the correct matched-control discriminator and a concrete nonstationary target; it does not prove the required arithmetic prediction theorem.
+`J_(R,N)=F_(R,N)-V_R`,
+
+where `F` is global prediction relative to feedthrough and `V` is the already-visible memory charge.
+
+On a stationary Wold ray this renormalized charge collapses exactly to the NB-073 inner charge: `J_L = -2L log|theta(0)|`. It vanishes for outer controls even at a conditioning-degenerate boundary such as `psi=1-z`, while nontrivial inner mass gives positive linear growth. Thus **conditioning, visible causal memory, unseen continuation, and stable-tail charge are separate resources**.
+
+The arithmetic target is now scalar and finite: prove that `J_(R,N(R))` stays bounded on some unbounded sequence for a legitimate finite future schedule, or derive a comparable source estimate strong enough to control the same renormalized quantity. This would rule out the stable tail without importing an RH-equivalent target norm.
+
+**Boundary.** Divergent `J_(R,N)` is necessary for a stable tail but not sufficient in a general nonstationary family; many moderate generalized eigenvalues can make the log determinant diverge while the largest stays bounded. The matrix certificate remains sharper. NB-074 identifies a usable sufficient no-tail criterion and the correct causal renormalization; it does not prove that the arithmetic Nyman source satisfies it.

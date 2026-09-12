@@ -1,15 +1,27 @@
-# MI-010 — Scalar Green response is killing-normalized averaging, while the known screened backreaction is physical-low at entrance
+# MI-010 — Low-band Schur screening leaves only a normalized post-screening high-angle/amplification problem
 
-**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-309; no theorem for the full physical `P/H` entrance-to-reassembly composition, weak/Schatten estimate, or arithmetic discrimination is claimed.
+**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-311; no theorem for the final physical `P/H` inverse/reassembly, normalized post-low angle gap, weak/Schatten estimate, or arithmetic discrimination is claimed.
 
-PF-303--PF-305 normalize the assembled constant chain as a killed positive network whose Green response becomes a norm-one contraction after killing normalization. PF-306 locates the first omitted conversion in the constant-to-nonconstant Schur angle, and PF-307 proves that the canonical tail geometry has no uniform global angle gap.
+PF-303--PF-305 normalize the assembled constant chain as a killed positive network. PF-306--PF-308 show that nonconstant Schur relaxation destroys any uniform global constant-sector protection and makes the killing-normalized constant Green block diverge on explicit screened tail traces.
 
-PF-308 shows that this is not merely an unrestricted operator-norm pathology. The explicit PF-217 screened traces carry macroscopic killing mass but sublinear shorted energy, forcing the full killing-normalized constant Green block to diverge. The scalar normalization therefore stops protecting the source once nonconstant relaxation is allowed.
+PF-309 shows that the original witness is asymptotically physical-low at entrance. PF-310 closes the loophole that a tiny high-frequency tail might be load-bearing: exact witnesses confined to one fixed physical low band still have macroscopic killing mass, vanishing low-shorted energy ratio, Schur conversion norm tending to one, and divergent killing-normalized constant Green response. The near-singular reservoir is genuinely low-band.
 
-PF-309 resolves the first genuinely physical entrance test for that same witness in the opposite direction. Because the screening profiles are smooth dilates on a growing tangential scale, their energy above every fixed physical frequency cutoff decays faster than any prescribed inverse power of `log M`. Removing the constant module mode does not change this high-pass component. Relative to the killing-normalized source mass, the physical-high leakage tends to zero.
+PF-311 then controls the first residual physical-high vertex after that low screening. Decompose a finite positive boundary form into constants `C`, retained physical-low modes `L`, and physical-high modes `H`. After shorting `L`, write the remaining blocks as
 
-The combined lesson is that **full-space source accessibility and physical-high source accessibility are different resources**. The known Schur witness is accessible to the full killing-normalized constant sector, yet asymptotically invisible to every fixed physical-high entrance. A bad generalized Rayleigh quotient does not become a bad physical `P/H` direction until the exact source map and later reassembly are included.
+`[[S_L, E_LH], [E_LH*, R_H]] > 0`.
 
-This narrows the surviving route from “restrict to the physical sector” to a concrete composition question: can low screened input be converted by exterior propagation/Schur inversion/moving support into dangerous high output, or do all near-screened directions remain suppressed on the actual source-reached subspace? Signed reassembly and dangerous-mode multiplicity remain separate possible mechanisms.
+Positivity gives the exact inequality
 
-**Boundary.** PF-309 treats the explicit smooth PF-217/PF-308 family and a fixed physical cutoff. It does not classify every near-unit singular direction, moving cutoffs, or the final reassembled output. A different screened family could have genuine physical-high leakage, and later maps can generate high-frequency components from low input.
+`||R_H^(-1/2) E_LH* x||^2 <= <x,S_L x>`.
+
+For PF-310's witnesses, `<x,S_Lx>/m_0[x] -> 0`, so their **absolute direct residual high-conversion energy is also `o(m_0)`**, uniformly through finite high Galerkin sections. The known low-band reservoir therefore cannot immediately eject macroscopic killing-normalized energy into the high sector before inversion.
+
+The sharp boundary is equally important. Defining the normalized post-low angle
+
+`T_H=S_L^(-1/2) E_LH R_H^(-1/2)`,
+
+positivity only gives `||T_H||<1` in each finite section. A scalar positive model realizes any fixed residual fraction `rho_H` in `[0,1)`, even while the absolute residual energy tends to zero. After the high sector is also shorted, the mixed inverse contains the amplifier `(I-T_HT_H*)^(-1)`. Thus small absolute coupling does **not** imply a harmless Green response.
+
+The reusable distinction is now four-way: full-space screening, fixed-low-band screening, absolute residual high conversion, and normalized inverse-amplified high output are separate resources. PF-311 removes raw post-screening high energy as the explanation for the explicit family. The next theorem must control the post-low normalized angle away from one on the source-reached subspace, control the source/reassembly overlap with near-unit directions, or prove a multiplicity/Schatten bound strong enough to absorb the inverse amplification.
+
+**Boundary.** PF-311 does not prove `rho_H(x^(M))->0`, a uniform gap `||T_H||<=1-delta`, or small final mixed inverse output. Its inequality is sharp at the fraction level. Later inversion/reassembly may still amplify a small residual coupling, and other source-accessible families remain possible.

@@ -1,22 +1,26 @@
 # Prime-flute mathematical questions
 
-## Control the actual physical P/H reassembly after the explicit screened Schur witness is filtered out at entrance
+## Control the normalized post-low screening angle and inverse/reassembly overlap
 
 **Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`.
 
-PF-303--PF-305 normalize the finite constant-mode chain so that scalar return depth is ideal-neutral after killing normalization. PF-306 identifies the first post-scalar Schur angle, PF-307 proves the global constant/nonconstant angle saturates on explicit screened tail blocks, and PF-308 shows that those same traces remain visible to the full killing-normalized constant source sector strongly enough to make its shorted inverse compression diverge.
+PF-303--PF-308 close scalar depth, global-angle control, and full killing-normalized constant-sector boundedness as missing mechanisms. PF-309 shows that the original explicit screened witness is asymptotically physical-low at every fixed high-pass entrance, and PF-310 proves that exact fixed-low-band witnesses still saturate the Schur screening.
 
-PF-309 now tests the narrower physical entrance on that explicit bad family. The PF-217 screening profiles are smooth dilates on scale `R_M~log P_M`; after the canonical PF-205 boundary-energy normalization, every fixed physical high pass `H_kappa` sees only a rapidly decaying tail. Summed across the bad block, the physical-high energy is `O((log M)^(-2r))` for arbitrary fixed `r`, and relative to the macroscopic killing mass it vanishes even faster.
+PF-311 controls the first residual high conversion after that low screening. Once physical-low modes have been shorted, positivity of the remaining constant/high block forces
 
-Thus the known Schur-angle/killing-normalized obstruction is **asymptotically physical-low at entrance**. It does not itself provide a dangerous physical-high source direction for the final `P/H` response. This is a genuine positive narrowing, not a proof of the final estimate: exterior propagation, Schur inversion, moving-end effects, signed reassembly, or a different near-screened family could still generate or expose physical-high output.
+`||R_H^(-1/2)E_LH^*x||^2 <= <x,S_Lx>`.
 
-The live theorem is therefore to control the full source-to-target composition after the initial physical split. Determine whether low screened input stays harmless under reassembly, whether every dangerous Schur direction is similarly physical-low, whether signed output cancels the converted component, or whether the multiplicity/counting law of the actually reached directions suffices for the required weak/Schatten estimate.
+Because PF-310's witnesses have `<x,S_Lx>/m_0[x] -> 0`, their direct residual physical-high energy is also `o(m_0)` uniformly over finite high Galerkin sections. The explicit low-band reservoir therefore cannot carry macroscopic killing-normalized high energy **before inversion**.
 
-## Global heavy-range projection counts after one full-space obstruction is known
+The inequality is sharp. The normalized residual fraction may remain any fixed value below one, and the mixed inverse contains the amplifier `(I-T_HT_H^*)^(-1)` with `T_H=S_L^(-1/2)E_LH R_H^(-1/2)`. Small absolute residual coupling is therefore compatible with large inverse-amplified output when the post-low angle approaches one.
 
-For the PF-287 heavy low/high extension-range projection product, does the full tail have vanishing essential norm, and can its singular-value counting function satisfy the required weak-trace bound? PF-309 removes the explicit PF-217/PF-308 witness from the fixed physical-high entrance, but gives no theorem for all near-unit Schur directions and no count of dangerous modes after the full source/reassembly maps.
+The live theorem is now narrower: prove a source-relevant gap for the normalized post-low angle, show that source/reassembly maps avoid its near-unit singular directions, or control the multiplicity/counting of those directions strongly enough for the required weak/Schatten estimate. Raw low-to-high coupling has been bounded at the natural energy scale; **inverse amplification and overlap** are now the decisive interface.
 
-PF-305--PF-309 therefore localize the remaining burden sharply: ideal decay cannot come from scalar return depth, a global angle gap, or a full killing-normalized constant-sector bound; but the explicit global obstruction is also not itself a fixed-high physical input. The missing mechanism now sits in **conversion and reassembly**, or in a different family of source-accessible directions.
+## Global heavy-range projection counts after the first residual conversion is controlled
+
+For the PF-287 heavy low/high extension-range projection product, can the source-reached post-low singular directions have vanishing essential norm or the required singular-value counting law? PF-311 removes macroscopic direct high energy for the explicit PF-310 family but does not give a uniform gap from `||T_H||=1` or bound the inverse-amplified mixed block.
+
+The burden is now sharply localized in normalized angle, inverse amplification, signed reassembly, and multiplicity—not in scalar return depth, a global pre-short angle gap, physical-high entrance leakage, or absolute first residual conversion.
 
 ## Prime realization within the resolved upstream-memory window
 

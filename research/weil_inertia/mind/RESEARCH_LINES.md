@@ -14,32 +14,22 @@ WI-231--WI-237 show that finite negative inertia detects off-line packets exactl
 
 WI-238--WI-252 isolate the finite-radius first-odd-crossing witness. Layer-cake localization produces a signed radial von-Mangoldt flux, while prime reflection violates the first Beurling--Deny positivity criterion. The live odd-sector theorem remains source-specific: control that signed flux, derive a phase/nodal restriction from the eigen-equation plus arithmetic source, or find another order structure not contradicted by prime reflections.
 
-## Use the unrestricted first crossing through the phase-coupled source cone, not generic zero-mode regularity
+## First cross the first-prime positivity gate, then test the one-prime phase cone
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253--WI-254 show that the exact sliding-aperture profile determines the source-weighted real autocorrelation, while firstness provides only a lower envelope. WI-255 proves that the full `O(r)` correction is universal after imposing `Q_W(v)=0`; the apparent prime dependence cancels and the resulting comparison gives only the old constant-trial-function bound.
-
-WI-256 identifies the next obstruction. After the universal leading and linear terms,
-
-`F_v(r) = ... + E_v(r) + (7/2) r^2 + o(r^2)`,
-
-where `E_v(r)` is a nonnegative weighted local translation defect. The available `H^log` regularity does not imply `E_v(r)=O(r^2)`.
-
-WI-257 proves that **generic zero-mode regularity cannot repair this**. After scaling, every localized Weil operator is `T_0+K_a` with one fixed logarithmic operator domain and bounded self-adjoint `K_a`. Every vector in that common domain can be made a zero mode of some bounded rank-at-most-two perturbation, while vectors in the domain realize incompatible quadratic `E(r)` behavior.
-
-WI-258 supplies the first exact source-specific replacement rather than another regularity upgrade. Phase modulation preserves support and forces the global cosine cone
-
-`M_v(t)=int (1-cos(th)) dmu_v(h) >= 0`,
-
-while combining modulation with translated windows gives
+WI-253--WI-257 show why scalar aperture firstness, the null equation and generic bounded-perturbation regularity do not supply the missing source control. WI-258 gives an exact source-explicit replacement: phase modulation and translated windows force
 
 `S_v(r)+J_v(r,t) >= 0`,
 
-where `S_v(r)=F_v(r)-r lambda_r` and `J_v(r,t)=int_0^(2r) (2r-h)(1-cos(th)) dmu_v(h)`. Therefore any source-forced negative localized cosine defect `J_v(r,t)<=-epsilon` yields at least `epsilon` of strict firstness slack. Prime-power atoms enter only after their aperture thresholds and carry explicit phase weights.
+with `J_v` a localized cosine transform of the von-Mangoldt/archimedean source-weighted autocorrelation. A source-forced negative `J_v` would create strict firstness slack.
 
-The next theorem is now a concrete medium-radius source-sign problem: use the actual von-Mangoldt atoms, archimedean density, compact-support autocorrelation, and positive-definiteness to force `inf_t J_v(r,t)<0` for some `r<a_*`, or construct a source-compatible compact-support autocorrelation satisfying the full scalar aperture and phase-modulated cones. Generic modulation positivity alone is not enough.
+WI-259 identifies the gate that must precede a prime-coupled use of this inequality. The first von-Mangoldt atom enters only above `r=(log 2)/2`; first crossing alone does not guarantee that radius is admissible. If strict positivity at `r=7/20` is established, monotonicity forces `a_*>7/20`, and because `log 2<7/10<log 3`, the fixed radius `7/20` contains exactly the single atom `n=2`.
 
-## Treat exact-profile information, firstness, null-equation redundancy, domain regularity, perturbation specificity, and phase-defect sign as separate gates
+The public `FP-0.35` certificate is currently only a candidate input: its post-fix computation has not been independently replayed by Mathia and the public theorem/status artifacts are inconsistent. Therefore the next gate is **independent finite-scale positivity beyond `(log 2)/2`**, not immediate optimization of the phase defect.
 
-The exact aperture profile is information-rich, but source information can be lost by envelope replacement, by algebraic cancellation against the null equation, by insufficient regularity for a desired asymptotic readout, and by replacing the arithmetic perturbation with an arbitrary bounded operator. WI-258 adds a genuinely source-explicit inequality family after those losses, but still leaves one decisive sign theorem open: the zeta factorization must force a negative localized phase defect rather than merely satisfy an abstract cosine-positivity cone.
+If that gate closes positively, freeze `r=7/20` and attack the exact one-prime identity using compact-support autocorrelation, positive-definiteness, first-crossing slack and the archimedean background. Prime activation alone is not enough: the first-prime shift can be absorbed locally by the endpoint potential, so the sign theorem must use the coupled source structure.
+
+## Treat exact-profile information, firstness, null-equation redundancy, domain regularity, source activation, certificate trust, and phase-defect sign as separate gates
+
+The phase cone survives the earlier abstraction losses, but WI-259 shows that its arithmetic usefulness also depends on proving that a prime threshold lies below every hypothetical first crossing. Do not smuggle a numerical/candidate positivity result into the source-sign argument. First certify the radius, then test the one-prime cone, and only then enlarge the source aperture if necessary.
