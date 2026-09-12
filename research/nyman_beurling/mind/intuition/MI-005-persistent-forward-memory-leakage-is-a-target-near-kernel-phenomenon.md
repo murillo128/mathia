@@ -1,31 +1,33 @@
-# MI-005 — Stable tails force a renormalized nonstationary prediction-volume charge, not merely a raw prediction/feedthrough gap
+# MI-005 — Stable tails are the uncancelled part of a future partial-correlation volume budget
 
-**Evidence level:** supported by NB-063--NB-074. The stationary prediction/feedthrough criterion is exact for scalar branch filters, while NB-074 gives an exact finite-dimensional necessary divergence law and sufficient no-tail certificate for the actual nonstationary causal geometry; no arithmetic boundedness theorem for that charge is proved.
+**Evidence level:** supported by NB-063--NB-075. The stationary prediction/feedthrough criterion is exact for scalar branch filters, and NB-074--NB-075 give exact finite-dimensional necessary/sufficient continuation criteria for the nonstationary causal geometry; no arithmetic estimate closing those criteria is proved.
 
-NB-066--NB-071 reduce a hypothetical persistent Nyman target to a global continuation problem and rule out local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning as sufficient invariants. NB-072--NB-073 identify the stationary mechanism: for `psi=theta g`, the stable tail is the inner model space, the global Gram sees only the outer factor, and comparing future-prediction energy `|g(0)|^2` with causal feedthrough `|psi(0)|^2` recovers the missing inner charge.
+NB-066--NB-071 reduce a hypothetical persistent Nyman target to a global continuation problem and show that local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning do not decide it. NB-072--NB-073 identify the stationary mechanism: inner--outer factorization separates stable-tail geometry from conditioning, and the missing inner charge is a future-prediction/feedthrough ratio.
 
-NB-074 gives the nonstationary analogue without pretending that the actual innovations form one stationary Wold ray. For the visible Gram `A_R` and finite-future Schur complement `S_(R,N)`, define
+NB-074 gives the nonstationary analogue. For visible Gram `A_R` and the prefix Gram `S_(R,N)` left after optimally eliminating future innovations `D_R,...,D_N`, define
 
 `J_(R,N)=log det(A_R^(-1/2) S_(R,N) A_R^(-1/2))`.
 
-The exact positive decomposition `S_(R,N)=A_R+E_(R,N)`, `E_(R,N)>=0`, makes `J_(R,N)>=0`, and the previous generalized-eigenvalue certificate satisfies
+A nonzero stable-tail vector forces `J_(R,N(R))->infinity` for every finite horizon schedule. Conversely, bounded `J_(R_k,N_k)` along any unbounded sequence rules out the stable tail.
 
-`1+Lambda_R^2 <= Xi_(R,N) <= exp(J_(R,N))`.
+NB-075 resolves this determinant into an exact scalar cancellation ledger. Before future elimination let
 
-Hence any nonzero stable-tail vector forces `J_(R,N(R))->infinity` for **every** finite horizon schedule `N(R)>=R`. Conversely, bounded `J_(R_k,N_k)` along any unbounded sequence of windows is already enough to rule out the entire stable tail. Even the one-step quantity `J_(R,R)` is a finite determinant ratio built from the source Gram.
+`L_R=log(det H_(<R) / det A_R)`
 
-The determinant is not a cancellation artifact. Reverse prediction factorizes it as a sum of nonnegative coordinate charges,
+be the raw continuation volume. Residualize each new `D_n` and the old prefix against the previously admitted future `D_R,...,D_(n-1)`, and let `beta_(R,n)` be the squared multiple correlation of the genuinely new part of `D_n` with the still-unresolved prefix. Then `0<=beta_(R,n)<1` and
 
-`J_(R,N)=sum_(j<R) log(Pi_(j,N)^2 / PiHat_(j,R)^2)`,
+`J_(R,N)=L_R-sum_(n=R)^N [-log(1-beta_(R,n))]`.
 
-where `PiHat_(j,R)` is the prediction error already visible inside the current window. This denominator is load-bearing: raw comparison with the newest-cell feedthrough `||C_j||` would mix benign finite-window forward memory with genuinely unresolved continuation. NB-074 makes the correction explicit as
+Thus later innovations remove raw continuation volume in nonnegative scalar increments, counted once after conditioning on the earlier future. Large raw tail energy or a large raw determinant ratio is not itself an obstruction: it may be cancelled completely by later innovations. The stable-tail currency is the **uncancelled remainder** after the whole future is allowed to explain the prefix.
 
-`J_(R,N)=F_(R,N)-V_R`,
+For fixed `R`, the infinite cancellation sum converges and
 
-where `F` is global prediction relative to feedthrough and `V` is the already-visible memory charge.
+`J_(R,infinity)=L_R-sum_(n>=R)[-log(1-beta_(R,n))] >= 0`.
 
-On a stationary Wold ray this renormalized charge collapses exactly to the NB-073 inner charge: `J_L = -2L log|theta(0)|`. It vanishes for outer controls even at a conditioning-degenerate boundary such as `psi=1-z`, while nontrivial inner mass gives positive linear growth. Thus **conditioning, visible causal memory, unseen continuation, and stable-tail charge are separate resources**.
+Any nonzero stable tail forces this remainder to diverge as `R->infinity`. Conversely it is enough to find unbounded `R_k`, finite `N_k`, and fixed `C` with
 
-The arithmetic target is now scalar and finite: prove that `J_(R,N(R))` stays bounded on some unbounded sequence for a legitimate finite future schedule, or derive a comparable source estimate strong enough to control the same renormalized quantity. This would rule out the stable tail without importing an RH-equivalent target norm.
+`sum_(n=R_k)^N_k [-log(1-beta_(R_k,n))] >= L_(R_k)-C`.
 
-**Boundary.** Divergent `J_(R,N)` is necessary for a stable tail but not sufficient in a general nonstationary family; many moderate generalized eigenvalues can make the log determinant diverge while the largest stays bounded. The matrix certificate remains sharper. NB-074 identifies a usable sufficient no-tail criterion and the correct causal renormalization; it does not prove that the arithmetic Nyman source satisfies it.
+Since `-log(1-x)>=x`, the stronger scalar condition `sum beta_(R_k,n)>=L_(R_k)-C` also suffices. The arithmetic target is therefore not “make the raw tail small”; it is to show that actual later Nyman innovations recover essentially all raw continuation volume, to `O(1)` accuracy along some unbounded sequence.
+
+**Boundary.** Divergent uncancelled volume is necessary for a stable tail but not sufficient in a general growing-dimensional family; determinant growth can come from many moderate directions. The individual `beta_(R,n)` depend on elimination order even though their total logarithmic cancellation for a fixed future span is invariant. NB-075 supplies an exact source-facing scalarization, not the missing arithmetic bound.

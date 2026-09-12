@@ -1,23 +1,31 @@
-# MI-001 — Farey transfer is governed by source coherence, causal reciprocal capture, and arithmetic recurrence geometry of protected blocks
+# MI-001 — Farey transfer is governed by causal protection plus the recurrence geometry of frontier-sized source blocks
 
-**Evidence level:** supported by the exact source/occupation reductions through FD-075 plus the cited short-interval Möbius input; no density theorem for protected blocks and no RH criterion are claimed.
+**Evidence level:** supported by the exact source/occupation reductions through FD-076 and the persisted Pintz local-Mertens input; no bounded multiplicative-gap, logarithmic-density, or RH criterion is claimed.
 
-FD-071 shows why persistence by itself does not improve normalization: an arbitrarily later source spike can dominate the same-horizon denominator and dilute every fixed earlier episode. FD-072 identifies the complementary positive mechanism. At a `sigma`-record `X`, `sigma>1/2`, choosing `T=4X`, `D=3` confines every reciprocal quotient to the record-controlled prefix while the nonsquarefree row `4` samples the record exactly, forcing `nu_(4X,3)>=kappa_sigma>0`.
+FD-071 shows why arbitrary-later persistence does not improve normalization: a later source spike can dominate the same-horizon denominator and dilute an earlier episode. FD-072 gives the complementary positive mechanism. At a `sigma`-record `X`, `sigma>1/2`, the causal choice `T=4X`, `D=3` confines every reciprocal quotient to the record-controlled prefix while row `4` samples the record exactly, forcing a fixed positive nonsquarefree occupation.
 
-FD-073 strengthens this from a sparse point theorem to an intrinsic block theorem. The physical source satisfies `|H(u)-H(v)|<=|u-v|`. If `A=|H(X)|` and `|Y-X|<=eta A`, then `Y` remains a quantitative near-record; re-centering at `T=4Y` transfers the protected occupation to the whole amplitude-scale block.
+FD-073 thickens this point mechanism. Since the physical source `H` is one-Lipschitz, a record of amplitude `A=|H(X)|` protects an additive block of radius comparable to `A`; every point in that block remains a quantitative near-record after recentering its causal horizon. FD-074 constrains strict record centers by `phi(rad X)>sigma|H(X)|` and aligns the sign with `mu(rad X)` once the amplitude is large. FD-075 then forces aligned coefficient mass throughout backward subwindows and, on amplitude scale, at least `>> A^2/X` same-parity hosts with radical `>> A`.
 
-FD-074 constrains the strict record center itself: `phi(rad X)>sigma|H(X)|`, and once the amplitude exceeds one the record sign equals `mu(rad X)=(-1)^omega(X)`. Under a false-RH frontier and `1/2<sigma<Theta`, strict record heights satisfy `rad X_j/X_j^sigma -> infinity`.
+FD-076 supplies the first genuinely global spacing information. Combining Pintz's fixed-power-window maximal-order theorem for the ordinary Mertens function with the exact inverse floor-harmonic transform gives, for every fixed `lambda in (0,1)`,
 
-FD-075 shows that this arithmetic constraint is not confined to the endpoint. For every backward window of length `h`, a strict record of amplitude `A` forces aligned physical coefficient mass `> sigma A h/X`. On any fixed amplitude-scale window `h~A`, a positive fraction of that mass must be carried by indices with the same squarefree-kernel parity as the record and `rad n` of order at least `A`. Quantitatively the protected block contains more than a constant multiple of `A^2/X` such large-radical aligned hosts.
+`max_(X^(1-lambda)<=n<=X) |H(n)| = X^(Theta+o(1))`,
 
-Along a false-RH supercritical record sequence `A_j=X_j^sigma R_j`, `R_j->infinity`, this becomes a **diverging arithmetic swarm** of size
+where `Theta` is the rightmost zeta-zero frontier. Consequently, for every `0<sigma<Theta`, the running normalized maximum satisfies
 
-`>> X_j^(2sigma-1) R_j^2`,
+`P_sigma(X)=X^(Theta-sigma+o(1))`,
 
-and every member lies inside the FD-073 protected block, so its own recentered causal horizon has the same positive occupation/Schur defect. The local source therefore forces many simultaneous arithmetic-and-causal anchors, not one exceptional record center.
+and every sufficiently large power window `[X^(1-lambda),X]` contains a strict `sigma`-record. If `X_j` are consecutive strict records, then
 
-The remaining gap is now sharply global. The forced swarm may still have relative density only of order `A/X`, and the amplitude-length blocks themselves may be multiplicatively sparse. The live recurrence theorem must convert the nested signed-mass constraints and growing large-radical same-parity cloud into logarithmic recurrence, or construct a source-faithful control where such clouds occur in arbitrarily sparse blocks.
+`log X_(j+1) / log X_j -> 1`,
 
-At `sigma=1/2`, the causal mechanism retains the previously quantified logarithmic loss; FD-075's growing-cloud conclusion specifically uses `2sigma-1>0` and does not remove that endpoint degeneration.
+and `|H(X_j)|=X_j^(Theta+o(1))`.
 
-**Boundary.** FD-075 proves local multiplicity inside each strict supercritical record block, not global density, bounded multiplicative record gaps, or an RH criterion. Large radical, fixed parity and a diverging number of local hosts can still coexist with globally sparse protected blocks.
+Under a false-RH frontier `Theta>1/2`, the protected blocks therefore have radius `X_j^(Theta+o(1))`, and FD-075's local cloud sharpens to
+
+`|Q_j| >= X_j^(2Theta-1-o(1))`,
+
+with `rad n >= X_j^(Theta-o(1))` for its selected hosts. The source cannot hide frontier-sized protected episodes behind any fixed power gap, and it cannot lower their amplitudes below the actual zero-frontier exponent.
+
+The remaining gap is now **subpower recurrence** rather than arbitrary multiplicative sparsity. The relation `X_(j+1)=X_j^(1+o(1))` still allows `X_(j+1)/X_j -> infinity`, while a protected block has relative width `X_j^(Theta-1+o(1))`. To force a global same-horizon occupation statement, the exact coefficient law must improve this power-scale recurrence to enough ordinary/logarithmic recurrence, or another argument must aggregate the power-dense local swarms without requiring overlap.
+
+**Boundary.** FD-076 rules out fixed power gaps but does not prove bounded multiplicative gaps, positive logarithmic density, overlap of protected blocks, or positive global occupation. At `Theta=1/2` the polynomial cloud exponent vanishes, so the supercritical swarm argument does not remove the critical logarithmic loss.

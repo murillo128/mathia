@@ -1,31 +1,37 @@
-# MI-026 — Zero-count fidelity is projective distance to the boundary-zero discriminant, and radial metric repair has an exact integrability price
+# MI-026 — Zero-count fidelity is projective distance to failure, with separate radial and effective-dimension bills
 
-**Evidence level:** proved for finite Dirichlet polynomials by AF-290, for raw eta breadth growth by AF-291, for positive diagonal Hilbert reweightings by AF-292, for arbitrary positive-definite Hilbert metrics under a condition-number budget by AF-293, for uniformly quasisymmetric nonlinear representations with honest transport of the discriminant by AF-294, for the canonical complex-scalar quotient by AF-295, for reciprocal-distance condition geometry by AF-296, and for the full target-radial conformal class by AF-297; transfer from acquisition remains conditional on the actual coefficient-orbit error.
+**Evidence level:** proved for finite Dirichlet-polynomial zero-count geometry by AF-290--AF-298; transfer from acquisition remains conditional on the actual coefficient-orbit error.
 
-For a finite Dirichlet polynomial `P_b`, AF-290 identifies the exact robustness radius for the zero count inside a fixed zero-free Jordan contour: it is the coefficient-space distance from `b` to the boundary-zero discriminant. This is a target-conditioned quantity, not a consequence of frame conditioning or coefficient recovery alone.
+AF-290 identifies the exact robustness radius for the zero count inside a fixed zero-free Jordan contour `Gamma`: the coefficient-space distance from `b` to the boundary-zero discriminant. AF-295 shows that, because this discriminant is a complex cone,
 
-AF-291 shows that this normalized radius can deteriorate as breadth grows even when eta truncations converge correctly on the boundary. AF-292--AF-294 progressively close diagonal Hilbert, bounded-condition dense Hilbert, and uniformly controlled quasisymmetric nonlinear repairs. An order-one represented margin requires the representation itself to become anisotropic/distorted at the shrinking discriminator scale, or the mathematical target/information category to change.
+`dist_gap([b], P Delta) = dist(b,Delta)/||b||`.
 
-AF-295 identifies the normalization geometrically rather than merely operationally. If the failure set `D` is a complex cone, then
+Thus the normalized margin is exactly intrinsic projective separation from failure after quotienting global complex amplitude and phase. AF-291 shows that this margin can still collapse with breadth even while eta truncations converge correctly on the contour.
 
-`dist_gap([b], P D) = dist(b,D)/||b||`,
+AF-292--AF-294 close positive diagonal Hilbert reweighting, bounded-condition dense Hilbert mixing, and uniformly quasisymmetric nonlinear transport as free repairs. AF-296--AF-297 classify target-radial conformal repair: if the radial density `phi(r)` is integrable at zero, a collapsing raw margin still collapses; if it is nonintegrable, failure is moved to an infinite-distance ideal boundary. A finite order-one repair at raw scale `r_N` must reach density at least `c/r_N` somewhere in the collapsing layer.
 
-with the corresponding Fubini--Study distance equal to `arcsin(dist(b,D)/||b||)`. The finite Dirichlet boundary-zero discriminant is such a cone because global complex rescaling changes neither the zero set nor the zero count. Therefore AF-290's normalized margin is **exactly the intrinsic projective separation from failure after quotienting global amplitude and phase**.
+AF-298 then tests a genuinely anisotropic but still target-observation-generated class. For
 
-AF-296 identifies one singular metric response to that collapse: weighting projective path length by reciprocal discriminant distance `1/r` makes the bad set an infinite-distance ideal boundary and turns multiplicative margin loss into additive logarithmic distance.
+`G_(mu,N)=int_Gamma r_z r_z^* dmu(z)`,
 
-AF-297 classifies the entire target-radial conformal family. In any proper geodesic metric space with closed bad set `D`, if a conformal path metric has density `phi(r)` depending only on ordinary distance `r=dist(.,D)`, then the exact distance from `r_0` to the level `r=epsilon` is
+with leverage
 
-`int_epsilon^r0 phi(t) dt`,
+`K_(mu,N)(z)=r_z^* G_(mu,N)^(-1) r_z`,
 
-and the boundary distance is `int_0^r0 phi(t) dt`. Hence for raw margins `r_N -> 0`, a fixed profile has only two outcomes: if `phi` is integrable at zero, the repaired margin still tends to zero; if it is not integrable, the bad set is at infinite distance. **No fixed target-radial conformal profile converts a vanishing raw margin into a finite positive asymptotic margin.**
+the exact zero-count margin is
 
-A scale-dependent finite repair also has a sharp price. If `int_0^rN phi_N(t) dt >= c>0`, then
+`delta_(mu,N)=min_z |eta_N(z)| / (||eta_N||_(L2(mu)) sqrt(K_(mu,N)(z)))`.
 
-`ess sup_(0<t<r_N) phi_N(t) >= c/r_N`.
+The trace identity
 
-For the eta projective margin `r_N ~ 1/(sqrt(N) H_N(alpha))`, any finite order-one radial repair must therefore reach conformal density at least of order `sqrt(N) H_N(alpha)` somewhere in the collapsing layer, with scalar metric multiplier at least of order `N H_N(alpha)^2`. This is the same reciprocal raw-margin scale exposed by the linear conditioning bill, although the mechanisms are different.
+`int_Gamma K_(mu,N)(z) dmu(z)=N`
 
-The reusable distinction is therefore stronger: **source completeness, analytic convergence, acquisition conditioning, target robustness, representation distortion, target-null quotienting, and target-aware metric geometry are separate resources**. A target-radial reparameterization cannot provide a finite stable margin for free. A viable geometric repair must either be source-natural for a reason independent of the discriminant, carry nonradial/anisotropic information, add genuinely new source information, or change the target/category with a separately justified theorem.
+forces `sup_z K_(mu,N)(z)>=N` for every full-rank boundary weighting. Conversely a `D`-optimal design equalizes the maximum leverage at `N`. Hence, uniformly over all `N`-dependent positive boundary-observation Gram metrics,
 
-**Boundary.** AF-297 does not rule out source-derived nonradial or anisotropic metrics, additional markings, a larger target-null quotient, enriched source data, or a different target category. It rules out a broad apparent escape: choosing a nicer fixed function of target distance merely reparameterizes the same collapsing margin, while an `N`-dependent finite repair must explicitly pay reciprocal-margin scale.
+`sup_mu delta_(mu,N) asymp_Gamma N^(-1/2)`.
+
+This separates two conditioning bills that the raw coefficient norm had conflated. Target-aligned anisotropy can remove the extra evaluation-growth factor `H_N(alpha)`, but a full-rank scalar boundary-observation family still pays an irreducible `sqrt(N)` effective-dimension bill. Reweighting sensitivity is not the same as reducing target-relevant dimension.
+
+The surviving geometric route is therefore precise. To beat the `N^(-1/2)` ceiling one must justify a target-null quotient that lowers effective dimension, use a richer coupled/vector/nonlocal observable whose failure kernels differ from the scalar evaluation discriminant, or inject source-derived arithmetic information not already contained in positive averages of the same boundary evaluations.
+
+**Boundary.** AF-298 does not rule out arbitrary source-derived SPD forms, singular quotients proved target-null, derivative/vector observations, nonlinear coupled observables, enriched source data, or another target category. It rules out the canonical hope that unrestricted anisotropic `L^2` reweighting of the same scalar contour observations can make zero-count fidelity breadth-uniform.
