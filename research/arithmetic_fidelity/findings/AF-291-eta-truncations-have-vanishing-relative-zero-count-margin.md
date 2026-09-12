@@ -75,7 +75,7 @@ N^{\alpha-1}, & 0<\alpha<1/2.
 
 The collapse is therefore present even on a fixed contour on which the limiting `eta` function has a positive boundary modulus. It is not caused by the contour drifting toward a zero. It comes from the growing coefficient-space breadth and the norm of the boundary evaluation functional.
 
-Consequently, no breadth-independent relative `ell^2` coefficient-recovery error can, through AF-290 alone, give a breadth-uniform zero-count guarantee for the raw eta truncations. A decoder intended to preserve the zero count on `Gamma` must eventually achieve relative coefficient error on the scale `o(delta_{Gamma,N})`, or use a different source/target geometry whose conditioning theorem is stronger.
+Consequently, no breadth-independent relative `ell^2` coefficient-recovery error can, through AF-290 alone, give a breadth-uniform zero-count guarantee for the raw eta truncations. A decoder using this gate must eventually keep its relative coefficient error strictly below `delta_{Gamma,N}` (for example, below `c delta_{Gamma,N}` for some fixed `c<1`), or use a different source/target geometry whose conditioning theorem is stronger.
 
 ## Uniform convergence on compact subsets of `Re(s)>0`
 
