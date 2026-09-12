@@ -1,28 +1,26 @@
-# FD-065 — growing Schur heads improve tail occupation but worsen scalar leverage
+# FD-065 — growing Schur heads improve the packet occupation bound but worsen scalar leverage
 
 **Status:** `EXACT-DERIVED + ZERO-FRONTIER-CALIBRATED + GROWING-SCHUR-HEAD + DIRECT-TRANSFER-PACKET + NORMALIZATION-TRADEOFF + TWO-THIRDS-INVARIANCE + ROUTE-OBSTRUCTION`.
 
-`FD-064` classifies the direct short-interval transfer family with a fixed Schur head. Moving the host outward can create a polynomial nonsquarefree packet, but the larger physical horizon offsets that gain in the normalized tail occupation. A natural response is to move the Schur head outward as well: deleting the small Jordan rows removes the fixed-row source samples at arguments much larger than the transferred spike, so the tail denominator becomes genuinely more local to the host scale.
+`FD-064` classifies direct short-interval packet transfer with a fixed Schur head. One possible repair is to let the head grow toward the packet host, deleting small Jordan rows whose source samples lie far beyond the transferred spike. This does make the **packet-based lower bound** for the tail occupation stronger, because the remaining denominator has a shorter power tail. It does not imply that the actual occupation ratio is monotone in the head size.
 
-That maneuver does improve the **raw tail occupation fraction**, but it does not improve the RH-facing scalar relaxation. The exact Schur leverage available after eliminating a head of size `D` is
+For the RH-facing scalar relaxation, however, the same maneuver is counterproductive. The Schur leverage after eliminating a head of size `D` is
 
 \[
-\Delta_{T,D}=C_T-C_D,
+\Delta_{T,D}=C_T-C_D\asymp D^{-1},
 \]
 
-and this shrinks like `D^{-1}`. At a zero frontier `Theta<1`, the denominator saving from a growing head is only `D^{2Theta-1}` at the power scale. Their product is therefore
+while the zero-frontier denominator saving is only `D^(2Theta-1)`. Their product contributes
 
 \[
 D^{-1}D^{2\Theta-1}=D^{-2(1-\Theta)},
 \]
 
-which is a **loss**, not a gain. Quantitatively, every positive head-growth exponent adds exactly the same penalty to both the packet obstruction of `FD-064` and the deterministic terminal-row obstruction of `FD-032`. The `Theta=2/3` crossover between those two mechanisms is unchanged.
+which is a genuine loss for every `Theta<1`. Quantitatively, every positive head-growth exponent adds the same penalty to both the packet obstruction of `FD-064` and the deterministic terminal-row obstruction of `FD-032`, so the `Theta=2/3` crossover survives unchanged.
 
-This closes one specific version of the "source-coupled same-horizon denominator" escape left open by `FD-064`: merely discarding the small rows until the denominator samples the source nearer the transferred spike cannot improve the scalar GCD-duality bound. A genuinely stronger same-horizon argument must improve the fixed-head denominator itself, couple numerator and denominator arithmetically, or use information not represented by Schur-head elimination.
+## 1. Growing-head packet setup
 
-## 1. Setup: let the Schur head grow inside the transferred host
-
-Retain the zero-frontier notation of `FD-064`. Let
+Retain the notation and direct-transfer regime of `FD-064`. Let
 
 \[
 \Theta:=\sup\{\Re\rho:\zeta(\rho)=0,\ 0<\Re\rho<1\},
@@ -42,26 +40,20 @@ Fix
 0.55<\vartheta<\Theta,
 \qquad
 1-\Theta<\lambda\le1-\vartheta,
-\]
-
-and a packet exponent
-
-\[
+\qquad
 0<\kappa<\Theta+\lambda-1.
 \tag{2}
 \]
 
-As in `FD-064`, let
+Let
 
 \[
 K_X=\lfloor X^\kappa\rfloor,
-\qquad
-q=X^{\lambda+o(1)},
-\qquad
-T=qX,
+\qquad q=X^{\lambda+o(1)},
+\qquad T=qX,
 \]
 
-with `q` in the same fixed host corridor, and put
+with `q` in the host corridor of `FD-064`, and set
 
 \[
 x_{q,d}:=\left\lfloor\frac{T}{q+d}\right\rfloor
@@ -69,19 +61,17 @@ x_{q,d}:=\left\lfloor\frac{T}{q+d}\right\rfloor
 \tag{3}
 \]
 
-The direct all-short-interval transfer already proved there gives uniformly
+The existing transfer gives uniformly
 
 \[
-\boxed{
-\mathcal H(x_{q,d})=\mathcal H(X)+o(A_X).
-}
+\boxed{\mathcal H(x_{q,d})=\mathcal H(X)+o(A_X).}
 \tag{4}
 \]
 
-Now allow a horizon-dependent Schur head `D=D_X` satisfying
+Now let the Schur head satisfy
 
 \[
-1\le D\le \frac q2,
+1\le D\le q/2,
 \qquad
 D=X^{\delta+o(1)},
 \qquad
@@ -89,19 +79,15 @@ D=X^{\delta+o(1)},
 \tag{5}
 \]
 
-The endpoint `delta=lambda` is represented, for example, by `D=floor(q/2)`. For `delta=0`, `D` may be fixed or subpower.
-
-Define the physical tail energy and its nonsquarefree part by
+The endpoint `delta=lambda` is represented by a fixed fraction of `q`, for example `D=floor(q/2)`. Define
 
 \[
-E_{T,D}
-:=\sum_{r>D}\frac{J_2(r)}{r^2}
+E_{T,D}:=\sum_{r>D}\frac{J_2(r)}{r^2}
 \mathcal H\!\left(\left\lfloor\frac Tr\right\rfloor\right)^2,
 \]
 
 \[
-U_{T,D}
-:=\sum_{\substack{r>D\\\mu(r)=0}}
+U_{T,D}:=\sum_{\substack{r>D\\\mu(r)=0}}
 \frac{J_2(r)}{r^2}
 \mathcal H\!\left(\left\lfloor\frac Tr\right\rfloor\right)^2,
 \qquad
@@ -109,13 +95,12 @@ U_{T,D}
 \tag{6}
 \]
 
-The Schur geometry of `FD-031`--`FD-032` gives
+For the Schur relaxation of `FD-031`--`FD-032`, write
 
 \[
 \varepsilon_{T,D}:=\frac{\rho_{T,D}^2}{E_{T,D}},
 \qquad
-\mathfrak D_{T,D}
-:=C_T-\widehat R_{T,D}
+\mathfrak D_{T,D}:=C_T-\widehat R_{T,D}
 =\Delta_{T,D}\varepsilon_{T,D},
 \]
 
@@ -124,129 +109,88 @@ The Schur geometry of `FD-031`--`FD-032` gives
 \tag{7}
 \]
 
-Because the equality ray is exactly zero on nonsquarefree Jordan rows,
+The distinguished equality ray vanishes on every nonsquarefree Jordan row, hence the finite-horizon support argument of `FD-032` gives, for growing `D` as well,
 
 \[
-\boxed{
-\varepsilon_{T,D}\ge\nu_{T,D}.
-}
+\boxed{\varepsilon_{T,D}\ge\nu_{T,D}.}
 \tag{8}
 \]
 
-All identities in (6)--(8) are finite-horizon statements and remain valid when `D` grows.
+## 2. Head growth saves denominator power but loses more leverage
 
-## 2. A growing head saves `D^(2Theta-1)` in energy but loses `D` in scalar leverage
-
-`FD-003` gives the exact coordinate constant
+`FD-003` gives
 
 \[
-C_N=\sum_{n\le N}\frac{\mu(n)^2}{J_2(n)}.
+C_N=\sum_{n\le N}\frac{\mu(n)^2}{J_2(n)},
+\]
+
+so
+
+\[
+\Delta_{T,D}=\sum_{D<n\le T}\frac{\mu(n)^2}{J_2(n)}.
 \tag{9}
 \]
 
-Hence
+Since `J_2(n)>=n^2/zeta(2)`, one has `Delta_(T,D)<<D^(-1)`. Conversely, restricting (9) to squarefree `D<n<=2D`, using the classical estimate
 
 \[
-\Delta_{T,D}
-=\sum_{D<n\le T}\frac{\mu(n)^2}{J_2(n)}.
+\sum_{n\le x}\mu(n)^2=\frac{x}{\zeta(2)}+O(\sqrt x),
+\]
+
+and `J_2(n)<=n^2`, gives `Delta_(T,D)>>D^(-1)` whenever `D->infinity` and `2D<T`. Thus
+
+\[
+\boxed{\Delta_{T,D}=X^{-\delta+o(1)}}
 \tag{10}
 \]
 
-The elementary bound `J_2(n)>=n^2/zeta(2)` gives
+at the power scale; for fixed or subpower `D`, this reads `Delta_(T,D)=X^{o(1)}`.
+
+For every fixed `sigma>Theta`, `FD-046` gives `|mathcal H(n)|<<_sigma n^sigma`, hence
 
 \[
-\Delta_{T,D}\ll \sum_{n>D}n^{-2}\ll D^{-1}.
+E_{T,D}
+\ll_\sigma
+T^{2\sigma}\sum_{r>D}r^{-2\sigma}
+\ll_\sigma T^{2\sigma}D^{1-2\sigma}.
 \tag{11}
 \]
 
-For the reverse power bound, restrict (10) to squarefree `D<n<=2D` (eventually `2D<T`). The classical squarefree count
+Therefore, for every `eta>0`,
 
 \[
-\sum_{n\le x}\mu(n)^2=\frac{x}{\zeta(2)}+O(\sqrt x)
-\]
-
-and `J_2(n)<=n^2` give
-
-\[
-\Delta_{T,D}\gg
-\sum_{\substack{D<n\le2D\\\mu(n)^2=1}}\frac1{n^2}
-\gg D^{-1}.
+\boxed{
+E_{T,D}
+\ll_\eta
+X^{2\Theta(1+\lambda)+\delta(1-2\Theta)+\eta}.
+}
 \tag{12}
 \]
 
-Thus, for `delta>0`,
+Relative to a fixed head, the power-level denominator bound is better by `D^(2Theta-1)`. But multiplying an angle or occupation bound by the scalar leverage (10) changes that apparent gain into
 
 \[
-\boxed{
-\Delta_{T,D}=X^{-\delta+o(1)}.
-}
+\boxed{D^{-1}D^{2\Theta-1}=D^{-2(1-\Theta)}.}
 \tag{13}
 \]
 
-For fixed or subpower `D`, the same exponent statement is `Delta_(T,D)=X^{o(1)}`, so (13) remains correct at `delta=0` in the power-scale sense used below.
+For every false frontier `Theta<1`, a positive power of head growth therefore worsens the scalar normalization supplied by this mechanism.
 
-On the denominator side, take any fixed `sigma>Theta`. The zero-frontier envelope from `FD-046` gives `|mathcal H(n)|<<_sigma n^sigma`; therefore
+## 3. Packet obstruction: the occupation bound improves, the scalar gap worsens
 
-\[
-\begin{aligned}
-E_{T,D}
-&\ll_\sigma
-T^{2\sigma}
-\sum_{r>D}r^{-2\sigma}\\
-&\ll_\sigma
-T^{2\sigma}D^{1-2\sigma}.
-\end{aligned}
-\tag{14}
-\]
-
-Since `T=X^{1+lambda+o(1)}` and `D=X^{delta+o(1)}`, allowing `sigma` to approach `Theta` from the right yields the power envelope
-
-\[
-\boxed{
-E_{T,D}
-\le
-X^{\,2\Theta(1+\lambda)+\delta(1-2\Theta)+o_{\rm up}(1)}.
-}
-\tag{15}
-\]
-
-Here `o_up(1)` denotes the usual arbitrarily small fixed loss coming from taking an exponent strictly to the right of the zero frontier; no assertion at `sigma=Theta` is needed.
-
-Relative to a fixed head, (15) gains the factor
-
-\[
-D^{-(2\Theta-1)}.
-\tag{16}
-\]
-
-But (13) says the scalar Schur leverage simultaneously loses a full factor `D^{-1}`. Consequently any lower bound for the angle/occupation factor that uses only the denominator saving is weakened in the scalar defect by
-
-\[
-\boxed{
-D^{-1}\,D^{2\Theta-1}
-=D^{-2(1-\Theta)}.
-}
-\tag{17}
-\]
-
-Because `Theta<1`, this is always a genuine loss at every positive power of `D`.
-
-## 3. The transferred packet inherits exactly the same head-growth penalty
-
-Since `D<=q/2`, every packet row `q+d` lies in the physical tail. Among `1<=d<=K_X`, one quarter up to `O(1)` satisfy `4|(q+d)` and are therefore nonsquarefree. Using (4) and `J_2(r)/r^2>=1/zeta(2)`, exactly as in `FD-063`--`FD-064`, gives
+Because `D<=q/2`, every packet row `q+d` lies in the physical tail. One quarter up to `O(1)` of the integers `q+d`, `1<=d<=K_X`, are divisible by `4`. Using (4) and `J_2(r)/r^2>=1/zeta(2)` gives
 
 \[
 \boxed{
 U_{T,D}
 \ge
-\left(\frac1{4\zeta(2)}-o(1)\right)
-K_XA_X^2
+\left(\frac1{4\zeta(2)}-o(1)\right)K_XA_X^2
 =X^{2\Theta+\kappa+o(1)}.
 }
-\tag{18}
+\tag{14}
 \]
 
-Combining (15) and (18), for every `eta>0`,
+Combining (12) and (14), for every `eta>0`,
 
 \[
 \boxed{
@@ -254,12 +198,10 @@ Combining (15) and (18), for every `eta>0`,
 \gg_\eta
 X^{-\{2\Theta\lambda-\kappa-\delta(2\Theta-1)\}-\eta}.
 }
-\tag{19}
+\tag{15}
 \]
 
-Thus the growing head really does improve raw occupation: the loss exponent is smaller by `delta(2Theta-1)`.
-
-However, the RH-facing scalar relaxation is `mathfrak D=Delta epsilon`, not `epsilon` alone. Equations (8), (13), and (19) give
+So the **packet-derived lower bound** for raw occupation becomes stronger as `delta` grows. But (8), (10), and (15) give
 
 \[
 \boxed{
@@ -267,10 +209,10 @@ However, the RH-facing scalar relaxation is `mathfrak D=Delta epsilon`, not `eps
 \gg_\eta
 X^{-\{2\Theta\lambda-\kappa+2\delta(1-\Theta)\}-\eta}.
 }
-\tag{20}
+\tag{16}
 \]
 
-In physical-horizon coordinates `T=X^(1+lambda+o(1))`, the packet loss exponent is therefore
+Since `T=X^(1+lambda+o(1))`, the associated physical-horizon loss exponent is
 
 \[
 \boxed{
@@ -278,33 +220,21 @@ In physical-horizon coordinates `T=X^(1+lambda+o(1))`, the packet loss exponent 
 =
 \frac{2\Theta\lambda-\kappa+2\delta(1-\Theta)}{1+\lambda}.
 }
-\tag{21}
+\tag{17}
 \]
 
-For fixed `Theta,lambda,kappa`, this is strictly increasing in `delta` whenever `Theta<1`. Hence **no growing Schur head can strengthen the packet-based scalar gap**. The optimal choice inside this whole family is `delta=0`, which returns exactly the fixed-head exponent of `FD-064`.
+For fixed `Theta,lambda,kappa`, this is strictly increasing in `delta`. Thus head growth cannot strengthen the packet-based **scalar** gap; its optimum is the fixed-head value `delta=0` already present in `FD-064`.
 
-## 4. The deterministic terminal-row obstruction pays the identical penalty
+## 4. The deterministic terminal obstruction pays the identical penalty
 
-The packet is not the only source of transverse mass. `FD-032` proves for every `D<T/2`
+Independently of the packet, `FD-032` gives for every `D<T/2`
 
 \[
-\boxed{
 \rho_{T,D}^2\gg T.
-}
-\tag{22}
+\tag{18}
 \]
 
-Our range `D<=q/2` and `T=qX` satisfies that hypothesis. Using (15),
-
-\[
-\varepsilon_{T,D}
-=\frac{\rho_{T,D}^2}{E_{T,D}}
-\gg_\eta
-X^{-(2\Theta-1)(1+\lambda)+\delta(2\Theta-1)-\eta}.
-\tag{23}
-\]
-
-Multiplication by (13) yields
+Using (12) and then (10), for every `eta>0`,
 
 \[
 \boxed{
@@ -312,44 +242,32 @@ Multiplication by (13) yields
 \gg_\eta
 X^{-\{(2\Theta-1)(1+\lambda)+2\delta(1-\Theta)\}-\eta}.
 }
-\tag{24}
+\tag{19}
 \]
 
-Equivalently the physical-horizon loss exponent is
+Its physical-horizon loss exponent is
 
 \[
 \boxed{
 \gamma_{\rm term}(\Theta,\lambda,\delta)
-=
-(2\Theta-1)
-+
-\frac{2\delta(1-\Theta)}{1+\lambda}.
+=(2\Theta-1)
++\frac{2\delta(1-\Theta)}{1+\lambda}.
 }
-\tag{25}
+\tag{20}
 \]
 
-The head-growth penalty is **exactly the same additive term** as in (21):
+Equations (17) and (20) contain the same head-growth penalty
 
 \[
-\boxed{
-\frac{2\delta(1-\Theta)}{1+\lambda}.
-}
-\tag{26}
+\boxed{\frac{2\delta(1-\Theta)}{1+\lambda}.}
+\tag{21}
 \]
 
-Thus the growing-head maneuver does not merely fail for the specific four-adic packet. It worsens both independent scalar obstructions presently available for this family by the same amount.
+At `delta=0`, the terminal exponent returns the zero-frontier bound `2Theta-1` underlying `FD-049`. Increasing the head may improve a denominator-side view of the tail, but the scalar leverage shrinks enough to make both currently available scalar obstructions weaker.
 
-At `delta=0`, (25) is the zero-frontier terminal exponent `2Theta-1` already underlying `FD-049`. A positive `delta` can make the raw tail angle larger by shrinking its denominator, but the available coordinate leverage `C_T-C_D` shrinks even faster at the scalar level.
+## 5. The two-thirds crossover is invariant under head growth
 
-## 5. The two-thirds crossover survives every head-growth exponent
-
-For fixed `lambda`, the largest direct packet allowed by `FD-064` approaches
-
-\[
-\kappa=\Theta+\lambda-1
-\]
-
-from below. Subtracting (25) from (21) and then taking that packet endpoint gives
+At the largest direct packet allowed by `FD-064`, let `kappa` approach `Theta+lambda-1` from below. Then
 
 \[
 \boxed{
@@ -357,45 +275,20 @@ from below. Subtracting (25) from (21) and then taking that packet endpoint give
 \longrightarrow
 \frac{2-3\Theta}{1+\lambda}.
 }
-\tag{27}
+\tag{22}
 \]
 
-The common head penalty (26) cancels identically. Therefore:
-
-- for `Theta<2/3`, the deterministic terminal-row obstruction is stronger;
-- for `Theta>2/3`, the transferred packet obstruction is stronger;
-- at `Theta=2/3`, they meet exactly.
-
-The switch remains at
+The common term (21) cancels. Hence the terminal obstruction is stronger for `Theta<2/3`, the packet obstruction is stronger for `Theta>2/3`, and they meet exactly at
 
 \[
-\boxed{\Theta=\frac23}
-\tag{28}
+\boxed{\Theta=\frac23.}
+\tag{23}
 \]
 
-for every admissible growing-head exponent `delta`. This is the same crossover exposed by the host/packet optimization of `FD-064`, now from an independent normalization direction.
+This is the same phase boundary found in `FD-064`, now after allowing every polynomial Schur-head scale up to the packet host. Moreover, both scalar exponents are minimized at `delta=0`. **Within the direct-transfer plus generic zero-frontier denominator framework, moving the Schur cut toward the host cannot repair the normalization barrier.**
 
-More importantly, because both exponents worsen monotonically with `delta`, optimizing over the head gives
+## 6. Prior-art boundary and what remains open
 
-\[
-\boxed{
-\inf_{\delta\ge0}\gamma_{\rm pkt}
-=\gamma_{\rm pkt}|_{\delta=0},
-\qquad
-\inf_{\delta\ge0}\gamma_{\rm term}
-=\gamma_{\rm term}|_{\delta=0}.
-}
-\tag{29}
-\]
+The load-bearing ingredients are already internal: `FD-003` supplies the exact GCD coordinate constants, `FD-031`--`FD-032` the Schur relaxation and terminal support defect, `FD-046` the zero-frontier source envelope, and `FD-064` the host/packet transfer. The squarefree counting estimate used to calibrate (10) is classical. A targeted literature audit across GCD/meet matrices, Schur complements, Farey--Franel criteria, Mertens transforms, and recent restricted-denominator Farey results located the expected classical GCD-matrix factorization/inverse literature and modern Farey variants, but no statement matching the head-growth tradeoff (13), exponents (17)/(20), or common penalty (21). No priority claim is made, and no new external theorem is load-bearing, so `SOURCES.md` does not need an update.
 
-So moving the Schur cut toward the host can improve the visual/raw occupation of nonsquarefree rows while **never improving the scalar GCD-duality obstruction obtained from that occupation**.
-
-## 6. Prior-art boundary, controls, and what remains open
-
-The matrix facts used here are the existing internal specialization of classical Smith/GCD-matrix algebra: `FD-003` supplies the exact coordinate constants `C_N`, while `FD-031`--`FD-032` supply the Schur relaxation and terminal-row distance. The zeta-zero envelope and direct packet are exactly `FD-046` and `FD-064`. The squarefree counting estimate used only to calibrate `Delta_(T,D)` is classical.
-
-A targeted literature audit across GCD/meet matrices, Schur complements, Farey--Franel criteria, Mertens transforms, and recent restricted-denominator Farey results located the expected classical GCD-matrix factorization/inverse literature and modern Farey variants, but no statement matching the head-growth normalization law (17), the scalar exponents (21)/(25), or their common penalty (26). No priority claim is made, and no new external theorem is load-bearing, so `SOURCES.md` requires no change.
-
-Several falsification boundaries matter. First, the result concerns the scalar relaxation `C_T-hat R_(T,D)=Delta epsilon`; a theorem whose target is the raw occupation fraction `nu` may genuinely benefit from growing `D`, as (19) shows. Second, `D` must stay below the host packet so that the packet remains in the physical tail; the exponent endpoint `delta=lambda` is represented by a fixed fraction of `q`, not by deleting the packet itself. Third, the zero-frontier denominator estimate uses only the generic pointwise source envelope. A new **fixed-head** estimate coupling `E_(T,D)` to the selected spike `A_X`, a host-average theorem exploiting correlations between numerator and denominator, or a different Farey-intrinsic information carrier is not ruled out.
-
-Finally, this is a route obstruction rather than an RH theorem. It does not prove a positive occupation constant, improve the Mertens exponent, or exclude cancellation below the square-root interval scale. What it does establish is an exact accounting principle for one proposed normalization repair: **head truncation cannot make the direct-transfer packet more useful for scalar extraction, because every power saved in the tail denominator is overpaid by the shrinking Schur leverage.**
+The boundary is narrow but useful. Equation (15) does **not** say the actual occupation ratio is monotone in `D`; it says the existing packet argument proves a stronger lower bound after the denominator tail is shortened. The result also does not rule out a new fixed-head estimate coupling `E_(T,D)` directly to the selected spike, host averaging that exploits numerator/denominator correlations, a stronger relation among Jordan rows, or source cancellation below the square-root interval scale. It rules out only the tempting normalization repair obtained by growing the Schur head while keeping the same direct-transfer and generic zero-frontier inputs.
