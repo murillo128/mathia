@@ -1,21 +1,21 @@
-# MI-007 — Matched first-layer runs force a span-free source budget, and any later Mertens reset must be paid by new first-layer prime supports
+# MI-007 — Matched source drift leaves a global corrected Chebyshev Lyapunov cost, while reciprocal reset requires new first-layer supports
 
-**Evidence level:** supported by RE-068--RE-075; no contradiction with false RH, no global fan impossibility theorem, and no proof that long matched runs must occur are claimed.
+**Evidence level:** supported by RE-068--RE-076; no contradiction with false RH, no global fan impossibility theorem, and no proof that long matched runs must occur are claimed.
 
 RE-068--RE-073 show that exact endpoint prime matching and summable direct timing can still leave a one-sided pre-compression source drift. Along matched runs the Chebyshev deficit increases and the logarithmic Mertens error decreases, with the span-free capacity law
 
 `Delta_H Delta_E >>_J X^(1-2b_1) log X * w^2`.
 
-RE-074 first bounded the reset throughput of bounded event packets. RE-075 reveals the stronger invariant: `vartheta(Z)-delta_vartheta(Z)=log rad(C)`. Higher-layer exponent changes do not alter the radical, so across an arbitrary ordered selected fan segment the ordinary primes crossed by the selector are exactly the newly born first-layer support primes, up to the single endpoint fringe discrepancy.
+RE-075 identifies the exact reset currency for the reciprocal component. Since `vartheta(Z)-delta_vartheta(Z)=log rad(C)`, higher-layer exponent changes do not alter the radical. Across an arbitrary ordered selected fan segment, ordinary primes crossed by the selector are exactly the newly born first-layer support primes up to the single endpoint fringe discrepancy. Thus a fixed-fraction later Mertens recovery requires `F >> W^(1-b_1)w` new supports and physical logarithmic-state span `>> W^(1-b_1)w log W`, regardless of packet grouping or higher-layer complexity.
 
-Therefore higher-layer complexity cannot supply hidden Mertens recovery. If a later endpoint has recovered a fixed fraction of a matched-run descent, the number `F` of new first-layer support primes must satisfy
+RE-076 closes the corresponding packet-reset escape on the standard-prime side by introducing the endpoint-corrected deficit
 
-`F >> W^(1-b_1) w`,
+`Hhat(C,b)=Z-vartheta(Z)+delta_vartheta(Z)=Z-log rad(C)=(Z-Y)+P_C`.
 
-and the physical logarithmic-state span must pay an additional `log W` factor. This conclusion is independent of how the intervening events are grouped into packets and remains valid with arbitrarily many higher-layer occurrences.
+On the sufficiently late positive rightmost fan this is a strict Lyapunov coordinate: it increases within each fixed-state threshold cell and across every exposed-state switch. At a switch, the increment splits into the strictly positive common-amplitude selector-dilation term plus the nonnegative total higher-layer event mass. Therefore matched-run Chebyshev gains persist through arbitrary higher-layer, unmatched, deep-layer, or unbounded packets; those interruptions do not furnish a hidden reset of `Hhat`.
 
-The reusable insight is now a two-sided source accounting law: **coherent matched motion creates a joint prime-error burden, and erasing the reciprocal component later requires a polynomial number of new ordinary prime-support births**. Pure exponent rearrangement may carry other residual charges, but it does not pay the ordinary Mertens reset bill.
+The source ledger is now asymmetric and substantially sharper. **The corrected Chebyshev burden accumulates globally with no packet reset channel, while erasing the reciprocal Mertens burden later requires polynomially many new first-layer prime supports and physical span.** The raw Chebyshev deficit can differ from this monotone coordinate only through the single current fringe atom.
 
-The global frontier is correspondingly concrete. A false-RH fan must either leave a substantial matched Mertens descent unrecovered or stretch far enough to activate the required first-layer support mass. The next theorem must show that this support-growth/physical-span payment is incompatible with the positive counterexample fan geometry, or exhibit a construction that genuinely pays it.
+The remaining theorem must splice these exact currencies with the capacity of the actual false-RH fan: either derive an upper bound showing that the prime source cannot sustain the accumulated corrected Chebyshev excursion while also paying the first-layer support-birth bill, or exhibit a coherent fan architecture that genuinely pays both. Searching for additional higher-layer reset mechanisms is no longer the relevant frontier.
 
-**Boundary.** RE-075 controls net endpoint recovery on an ordered fan segment, not arbitrary total positive variation along an oscillating path. It does not make higher-layer residual charges vanish and does not itself contradict false RH. Its advance is that the previous “unbounded packet” escape is no longer free: only new depth-one prime supports count toward ordinary Mertens recovery.
+**Boundary.** RE-076 is a late selected-fan theorem, not global monotonicity of `x-vartheta(x)` on the real line. Its forced growth exponent remains below the natural `X^Theta` scale allowed under false RH, so the Lyapunov law alone is not a contradiction. RE-075 controls net endpoint recovery, not arbitrary total variation. The advance is exact removal of packet complexity as a free erasure mechanism on both sides of the ledger.

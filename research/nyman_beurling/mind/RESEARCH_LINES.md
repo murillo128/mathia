@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Exclude a branch-inner factor in the actual nonstationary Nyman innovation system
+## Compare actual causal innovation energy with future-prediction energy in the nonstationary Nyman system
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`.
 
@@ -18,12 +18,22 @@ NB-072 classifies the matched-control mechanism exactly. For every stationary sc
 
 `stable tail ~= K_theta tensor ker(V_m*)`,
 
-so the stable tail vanishes exactly when `psi` is outer. The outer factor controls synthesis/conditioning; the inner factor alone controls the surviving orthogonal defect. The NB-071 example `1-rho z`, `rho>1`, is precisely a one-Blaschke-factor defect.
+so the stable tail vanishes exactly when `psi` is outer. The outer factor controls synthesis/conditioning; the inner factor alone controls the surviving orthogonal defect.
 
-This classification also explains why all finite causal trace data missed the obstruction: every filter with nonzero constant term has the same triangular finite-window span and the same exact integer branching, independently of its inner factor. The distinction is global analytic factorization, not another local-memory statistic or condition-number estimate.
+NB-073 identifies the scalar datum that the global Gram was missing. The one-step future-prediction energy
 
-The live theorem is now source-specific and narrower. The actual Nyman innovations are nonstationary because the cells shrink, so NB-072 does not itself provide a Wold variable in which the source has a scalar symbol. One must derive a legitimate branching-coordinate representation and prove its source is cyclic/outer, or extract from the exact Mellin/Paley--Wiener Gram structure a no-inner-factor statement that excludes the same model-space defect without assuming stationarity. Burnol's half-plane outer multiplier is suggestive but is not automatically the coefficient-side branch outer factor.
+`Pi(psi)^2 = inf ||psi(V_m)(w+x_future)||^2`
 
-## Treat local memory, branching covariance, inner-factor defect, global Gram conditioning, causal continuation cost, and finite certification separately
+is determined by the full Gram and equals `|g(0)|^2`, while the actual causal first-cell feedthrough is `c(psi)^2=|psi(0)|^2`. Their ratio is
 
-NB-072 makes the separation exact in the stationary control class. Good conditioning belongs to the outer factor; nonzero stable tail belongs to the inner factor. Future progress must connect the actual arithmetic source to this factorization boundary or prove a stronger nonstationary analogue, rather than strengthen generic locality or Riesz bounds.
+`c(psi)^2/Pi(psi)^2 = |theta(0)|^2`,
+
+and the stationary stable tail vanishes exactly when `c(psi)^2=Pi(psi)^2`. Thus the inner defect is not merely “invisible to Gram geometry”: it is exactly the **prediction/feedthrough gap** left after comparing global future energy with one time-oriented causal datum.
+
+This also separates the inner transition from ordinary conditioning. At the outer but noninvertible boundary `psi=1-z`, the Gram lower bound degenerates while the prediction/feedthrough gap is zero; nonconstant Blaschke or singular inner factors give a strict gap even when the outer factor is well conditioned.
+
+The live theorem is now more concrete than a generic outerness statement. For the actual shrinking-cell Nyman innovations, construct from the descendant/future Gram geometry a canonical nonstationary prediction energy `Pi_R^2` and compare it with the genuine newest-cell innovation energy `||C_R||^2`. Prove an asymptotic equality such as `Pi_R^2/||C_R||^2 -> 1`, or an appropriate uniform analogue, from the arithmetic Mellin/Paley--Wiener structure. In the complete stationary matched-control class this equality is exactly the no-inner-factor condition; a persistent gap would instead identify the surviving continuation defect directly.
+
+## Treat local memory, branching covariance, inner-factor defect, global Gram conditioning, future-prediction energy, causal feedthrough, continuation cost, and finite certification separately
+
+NB-072 separates outer conditioning from inner stable-tail geometry; NB-073 shows that the lost inner information is restored by comparing Gram-predicted future error with the causal diagonal. Future progress should seek this prediction/feedthrough comparison in the actual nonstationary arithmetic source rather than strengthening generic locality, Riesz bounds, or the global Gram alone.
