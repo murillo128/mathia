@@ -1,31 +1,17 @@
-# MI-001 — Farey transfer is governed by causal protection plus the recurrence geometry of frontier-sized source blocks
+# MI-001 — Farey transfer is governed by causal protection plus the abundance geometry of frontier-sized source values
 
-**Evidence level:** supported by the exact source/occupation reductions through FD-076 and the persisted Pintz local-Mertens input; no bounded multiplicative-gap, logarithmic-density, or RH criterion is claimed.
+**Evidence level:** supported by the exact source/occupation reductions through FD-077 and the persisted Pintz inputs; no positive natural/logarithmic density, fixed positive occupation, or RH criterion is claimed.
 
-FD-071 shows why arbitrary-later persistence does not improve normalization: a later source spike can dominate the same-horizon denominator and dilute an earlier episode. FD-072 gives the complementary positive mechanism. At a `sigma`-record `X`, `sigma>1/2`, the causal choice `T=4X`, `D=3` confines every reciprocal quotient to the record-controlled prefix while row `4` samples the record exactly, forcing a fixed positive nonsquarefree occupation.
+FD-071 shows why arbitrary-later persistence does not improve normalization: a later source spike can dominate the same-horizon denominator and dilute an earlier episode. FD-072 gives the complementary positive mechanism. At a `sigma`-record `X`, `sigma>1/2`, the causal choice `T=4X`, `D=3` confines every reciprocal quotient to the record-controlled prefix while row `4` samples the record exactly, forcing fixed positive nonsquarefree occupation.
 
-FD-073 thickens this point mechanism. Since the physical source `H` is one-Lipschitz, a record of amplitude `A=|H(X)|` protects an additive block of radius comparable to `A`; every point in that block remains a quantitative near-record after recentering its causal horizon. FD-074 constrains strict record centers by `phi(rad X)>sigma|H(X)|` and aligns the sign with `mu(rad X)` once the amplitude is large. FD-075 then forces aligned coefficient mass throughout backward subwindows and, on amplitude scale, at least `>> A^2/X` same-parity hosts with radical `>> A`.
+FD-073 thickens this point mechanism. Since the physical source `H` is one-Lipschitz, a record of amplitude `A=|H(X)|` protects an additive block of radius comparable to `A`; FD-074 constrains strict record centers and FD-075 forces aligned coefficient mass plus a same-parity large-radical cloud inside the block.
 
-FD-076 supplies the first genuinely global spacing information. Combining Pintz's fixed-power-window maximal-order theorem for the ordinary Mertens function with the exact inverse floor-harmonic transform gives, for every fixed `lambda in (0,1)`,
+FD-076 supplies global spacing information for strict records: frontier-sized physical-source values occur in every fixed power window, so consecutive normalized records satisfy `log X_(j+1)/log X_j -> 1`. That still permits unbounded multiplicative gaps.
 
-`max_(X^(1-lambda)<=n<=X) |H(n)| = X^(Theta+o(1))`,
+FD-077 changes the abundance currency. The inverse floor-harmonic identity transfers Pintz's **average absolute order**, not only maximal order, into logarithmic `L^1` source mass of exponent `Theta` in every fixed power annulus. Comparing this mass with the pointwise `H(n)<<n^(Theta+epsilon)` envelope forces, for every fixed `kappa>0`, the counting function of `|H(n)|>=X^(Theta-kappa)` to have polynomial exponent one. Frontier-near physical source values therefore cannot be confined to any polynomially sparse set.
 
-where `Theta` is the rightmost zeta-zero frontier. Consequently, for every `0<sigma<Theta`, the running normalized maximum satisfies
+A fixed nonsquarefree row `q>D` transports each such value to the causal horizon `qn`. For every fixed `eta>0`, a full-counting-exponent subfamily simultaneously satisfies source size `>=X^(Theta-eta/8)`, nonsquarefree occupation `nu_(qn,D)>=X^(-eta)`, and normalized Schur defect `epsilon_(qn,D)>=X^(-eta)`. Under false RH this gives off-critical-size source samples on an almost full polynomial counting scale without requiring those samples to be records.
 
-`P_sigma(X)=X^(Theta-sigma+o(1))`,
+The remaining gap is therefore stronger and cleaner than after FD-076. Counting exponent one does **not** imply positive natural or logarithmic density, and `X^(-eta)` for every fixed `eta` still allows subpower decay. The record mechanism supplies fixed occupation but may be sparse; the average-order mechanism supplies near-maximal counting abundance but only arbitrarily weak polynomial occupation loss. A global conclusion needs a theorem that joins these currencies, upgrades one of them, or aggregates the abundant causal samples without assuming block overlap.
 
-and every sufficiently large power window `[X^(1-lambda),X]` contains a strict `sigma`-record. If `X_j` are consecutive strict records, then
-
-`log X_(j+1) / log X_j -> 1`,
-
-and `|H(X_j)|=X_j^(Theta+o(1))`.
-
-Under a false-RH frontier `Theta>1/2`, the protected blocks therefore have radius `X_j^(Theta+o(1))`, and FD-075's local cloud sharpens to
-
-`|Q_j| >= X_j^(2Theta-1-o(1))`,
-
-with `rad n >= X_j^(Theta-o(1))` for its selected hosts. The source cannot hide frontier-sized protected episodes behind any fixed power gap, and it cannot lower their amplitudes below the actual zero-frontier exponent.
-
-The remaining gap is now **subpower recurrence** rather than arbitrary multiplicative sparsity. The relation `X_(j+1)=X_j^(1+o(1))` still allows `X_(j+1)/X_j -> infinity`, while a protected block has relative width `X_j^(Theta-1+o(1))`. To force a global same-horizon occupation statement, the exact coefficient law must improve this power-scale recurrence to enough ordinary/logarithmic recurrence, or another argument must aggregate the power-dense local swarms without requiring overlap.
-
-**Boundary.** FD-076 rules out fixed power gaps but does not prove bounded multiplicative gaps, positive logarithmic density, overlap of protected blocks, or positive global occupation. At `Theta=1/2` the polynomial cloud exponent vanishes, so the supercritical swarm argument does not remove the critical logarithmic loss.
+**Boundary.** FD-077 does not prove bounded multiplicative record gaps, positive density, a fixed positive lower bound for `U/E`, or that the abundant points are strict records. At `Theta=1/2` it also gives no supercritical polynomial separation. Its durable contribution is the transition from power-dense isolated frontier episodes to full-counting-exponent frontier-near source abundance.

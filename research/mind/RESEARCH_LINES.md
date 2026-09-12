@@ -1,57 +1,61 @@
 # Global mathematical questions
 
-## Which source identity keeps a critical mixed-prime geometry canonical without hiding RH in the host category or erasing the arithmetic atoms?
+## Which source identity turns critical mixed-prime data into a genuinely nonlocal positive sampling law?
 
-[MI-009](intuition/MI-009-local-correctness-does-not-determine-global-coherence.md) separates coherence, hostability, category descent, and final sign.
+[MI-009](intuition/MI-009-local-correctness-does-not-determine-global-coherence.md) separates coherence, hostability, category descent, scalar sign, and source-retaining compression.
 
-WP-267--WP-272 show that the critical Mangoldt amplitude can be hosted on a source-native rapid-energy rigging, while ordinary positive stationary spectral repairs either require a stronger category or erase the arithmetic atoms. Finite-order conditional positivity and continuous scalar filtering are both exhausted. The live geometry must mix or replace sectors before scalar sign reading rather than smoothly reweight the same carrier.
+WP-267--WP-272 show that the critical Mangoldt amplitude can be hosted on a source-native rapid-energy rigging, while ordinary positive stationary spectral repairs either require a stronger category or erase the arithmetic atoms. Finite-order conditional positivity and continuous scalar filtering are exhausted.
 
-## Which information survives the exact destination readout as breadth, resolution, source activation, and effective dimension change?
+WP-273 adds a stronger RH-independent compression boundary. In the canonical positive-minus-positive realization of the pole-completed carrier, every positive range is the graph of a contraction from weighted prime-power samples to the pole-continuum component. Any nonzero continuous test space stable under local cutoffs fails this inequality, and on a bounded interval with `N` prime-power atoms a supported positive subspace has dimension at most `N`.
 
-[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) and [MI-012](intuition/MI-012-information-content-and-destination-sensitivity-are-separate-resources.md) now have sharper geometry, observation-resolution, interface, activation, and dimension controls.
+The live geometry must therefore be globally nonlocal in a source-native way: an analytic/interpolation/model-space law, matrix/noncommutative coupling, or another construction that canonically reconstructs continuum mass from arithmetic samples before sign is read. Merely enlarging the host, filtering the same carrier, or choosing a localizable positive subspace is no longer enough.
 
-AF-295 identifies the eta zero-count margin as intrinsic projective distance after quotienting global complex amplitude/phase. AF-296--AF-297 close target-radial conformal repair as a free escape. AF-298 closes the canonical full-rank anisotropic boundary-observation repair: optimal weighting removes the extra evaluation-growth bill but the leverage identity `int K dmu=N` leaves a sharp `N^(-1/2)` normalized-margin ceiling. A successful representation must now lower justified target-relevant dimension, enrich the observable beyond positive scalar boundary evaluations, or add source information that changes the failure geometry.
+## Which information survives the exact destination readout after quotient, source restriction, resolution, and defect-scale interface losses?
 
-PF-309--PF-311 show that the known Schur-screening reservoir is genuinely fixed-low-band and that its first residual high-conversion energy is already small after low shorting. PF-312 then shows that inversion does not create a second normalized angle: the diagonal-normalized mixed Green block has exactly the singular values of the post-low angle `T_H`. The remaining interface currency is the **source-weighted diagonal Green strength** on those angle directions, plus their multiplicity/ideal decay.
+[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) and [MI-012](intuition/MI-012-information-content-and-destination-sensitivity-are-separate-resources.md) now have sharper geometry, observation-resolution, activation, and interface controls.
+
+AF-295 identifies eta zero-count margin as intrinsic projective distance after quotienting global complex amplitude/phase. AF-298 shows that optimal full-rank boundary-observation geometry still pays the sharp `N^(-1/2)` effective-dimension bill. AF-299 closes the literal low-rank repair: because the boundary-evaluation hyperplanes have trivial common kernel, every nontrivial additive linear quotient sends the failure set onto the whole quotient and every rank-deficient PSD metric has zero failure margin. Any true lower dimension must be justified by source restriction or nonlinear symmetry before quotienting, or by changing the observable/failure geometry.
+
+PF-312 separates normalized angle from diagonal inverse strength. PF-313 then identifies bounded source-weighted Green strength exactly with a form domination `J J* <= K^2 F`, equivalently defect-scale decay on near-unit singular directions. The destination interface is not controlled by a raw Green norm but by whether the actual source/reassembly maps avoid those directions at `sqrt(1-sigma^2)` scale.
 
 Prime Circle still supplies both sides of a quotient boundary: fixed-upper swap-invariant statistics factor through prime-ratio power-spectrum data, while the accepted ordered mesoscopic witness does not. The open question is whether that extra ordered information survives matched controls strongly enough to matter to the target.
 
-VIS-190 proves absolute quadratic diagonalization whenever `H >> y/log y`; VIS-191 shows that when `H=o(y/log y)` ordinary consecutive primes force an order-one absolute envelope. Thus `y/log y` is a genuine absolute-resolution boundary. Any surviving subcritical signal in the same observable must come from signed/source-specific cancellation inside the unresolved short-gap population, not from more fixed taper smoothness.
+VIS-190--VIS-191 identify `y/log y` as the sharp **absolute-envelope** resolution threshold. VIS-192 proves that this is not the signed start-averaged threshold: exact prime-ratio frequency orthogonality gives signed start variance `O(1/H)`, and `asymp 1/H` in the diverging subcritical regime. The remaining destination question is whether long-start averaging is the right readout or can be upgraded to the deterministic/finite start control actually consumed downstream.
 
-## Which source cancellation theorem crosses the exact normalization, recurrence geometry, and complete blind quotient?
+## Which source cancellation theorem crosses abundance, recurrence, and the complete blind quotient?
 
 [MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md) compares Farey and Möbius without transferring operators.
 
-FD-072--FD-075 build causal protected record blocks with growing same-parity large-radical swarms. FD-076 now transfers Pintz's fixed-power-window Mertens maximal order to the physical source: strict normalized records are frontier-sized and occur in every sufficiently large fixed power window, with `log X_(j+1)/log X_j -> 1`. Fixed power gaps are gone; the remaining resource is subpower-to-logarithmic recurrence or another aggregation mechanism for protected blocks whose relative widths still shrink.
+FD-072--FD-076 build causal protected record blocks and make frontier records power-dense. FD-077 goes beyond records: Pintz average absolute order transfers to full polynomial counting exponent for frontier-near physical-source values, and any fixed nonsquarefree Jordan row turns a full-counting-exponent subfamily into causal horizons with occupation/projective defect above every prescribed fixed polynomial decay. Positive/logarithmic density and fixed positive occupation remain open.
 
-MC-244--MC-246 collapse the complete blind family to one rough Möbius coset `-H`; the surviving algebraic object is `G/H`, not quadratic rank. MC-247 shows conditionally on ERH that every nonprincipal blind character must have support `>>sqrt(y)/log y`, but this still yields only `sqrt(y)`-scale generic rank pressure versus shell dimension `asymp y/log y`. Even very nonlocal blind modes do not force quotient triviality. The exact alternatives remain simultaneous shell generation `H=G` or signed cancellation of the complete rough-coset aggregate.
+MC-244--MC-246 collapse the complete blind family to one rough Möbius coset `-H`; the algebraic object is `G/H`. MC-248 proves that every generic witness theorem of fixed scale `O(log^A q)` with `A>1` yields only sublinear shell support, and matched code controls show that this information type cannot force full rank. Even reaching `A=1` would not make minimum support equivalent to quotient triviality. The exact exits are shell-specific simultaneous generation `H=G` or signed cancellation of the complete rough-coset aggregate.
 
 ## Which source-specific inequality prevents the first completed-Weil crossing?
 
 Prime Lattice and Weil Inertia now close complementary generic escapes.
 
-PL-285 identifies the sharp generic logarithmic form topology. PL-286 shows that even the complete active `2,3,4` von-Mangoldt comb retains the same inverse-logarithmic worst-case modulus by Kronecker phase locking. The remaining transport theorem must be state-specific to the actual low eigenbranch: stronger branch regularity/tail control, eigen-equation-forced cancellation, or another exact source identity.
+PL-285--PL-286 identify the sharp inverse-log ambient form modulus, including the complete active `2,3,4` arithmetic comb. PL-287 proves that a compact family in `H^log` has a strict little-o improvement and, conditional on the simple positive endpoint certificate, the actual ground branch near `a=0.8` is such a compact family. The remaining theorem is quantitative: control the branch's logarithmic Fourier tail strongly enough to obtain an explicit positivity transport radius.
 
-WI-253--WI-258 show why scalar firstness, the null equation and generic bounded-perturbation regularity do not supply the missing source control, while phase modulation produces the exact source-coupled cone `S_v(r)+J_v(r,t)>=0`. WI-259 adds a prerequisite: before a prime atom can be used at every hypothetical first crossing, one must certify finite-scale positivity past `(log 2)/2`. If positivity at `7/20` is independently established, the phase problem at that radius becomes an exact one-prime source identity; the current public certificate remains evidence requiring independent replay.
+WI-258 supplies the exact source-coupled phase cone; WI-259 shows that prime activation first requires finite-scale positivity beyond `(log 2)/2`. WI-260 audits the public `FP-0.35` generator and shows that replay of the current script is not enough: exact constants are not rigorously enclosed and the Arb residual test is not a valid certified matrix-norm bound. The next gate is exact recertification of `lambda_(7/20)>0`; only then does the one-prime phase problem become established input.
 
-Weil Positivity adds the global sign/category counterpart: pole completion reaches ordinary temperedness only at RH strength, and scalar positivity repairs that preserve arithmetic atoms are exhausted.
+Weil Positivity supplies the global counterpart: even if a carrier can be hosted, positivity that retains the arithmetic source now requires a nonlocal sampling/reconstruction law rather than a scalar or localizable repair.
 
-## Which global continuation or source-capacity geometry survives locally perfect matching?
+## Which scale-distribution or continuation geometry survives after local structure is exactly factored out?
 
-[MI-011](intuition/MI-011-exact-local-source-consistency-can-hide-global-continuation.md) has exact matched-control discriminators on Nyman and Robin sides.
+[MI-011](intuition/MI-011-exact-local-source-consistency-can-hide-global-continuation.md) now has sharper exact residual coordinates on both Nyman and Robin sides.
 
-NB-074 defines the nonstationary unseen-continuation charge `J_(R,N)`, whose boundedness along an unbounded sequence is enough to rule out a stable tail. NB-075 now resolves it into
+NB-074--NB-075 reduce stable continuation to raw volume minus future-conditioned cancellation. NB-076 resolves that cancellation into a nonnegative lattice `kappa_(j,n)` of endpoint partial correlations conditioned only on intervening innovations. The uncancelled charge is `L_R` minus the cross-cut area, and a finite band of contiguous Gram blocks is enough to rule out the stable tail if it recovers `L_R-O(1)` along an unbounded sequence.
 
-`J_(R,N)=L_R-sum_(n=R)^N[-log(1-beta_(R,n))]`,
+RE-076 and RE-078 give opposite monotone corrected coordinates on the same sufficiently late positive fan, but RE-079 proves that they are not independent budgets. There is one canonical positive fan-transport measure `mu`: corrected Chebyshev growth is its total mass, while fringe-corrected Mertens decrease plus the explicit first-layer-birth correction is its `1/(s log s)`-weighted mass. On bounded selector dilation the two costs are equivalent after the natural `Z log Z` factor; first-layer births are the sole structural mismatch and have summable late total.
 
-where `L_R` is raw continuation volume and each `beta_(R,n)` is a future-conditioned partial correlation credited after earlier future directions are removed. The live theorem is no longer an opaque determinant bound: show that actual future Nyman innovations cancel `L_R` to `O(1)` remainder along an unbounded sequence. Large raw continuation volume is harmless if the future explains it.
+The live Robin information is therefore the **selector-scale distribution** of `mu`, not a second monotone capacity. A contradiction must exploit scale separation, a source-specific restriction on where transport mass can concentrate, a first-layer arithmetic cost, or an external estimate that controls one moment more sharply than the other.
 
-RE-075 shows that substantial reciprocal-Mertens recovery can be paid only by new first-layer supports and physical fan span. RE-076 makes `Z-log rad(C)` a global corrected-Chebyshev Lyapunov coordinate. RE-077 couples them quantitatively: the physical span required to repair the reciprocal ledger forces an additional corrected-Chebyshev surcharge `>> W^(1-2b_1)w(log W)^2`. The live Robin question is an actual prime-source capacity bound strong enough to cap the accumulated coupled cost; one reset bill remains below the natural false-RH envelope.
+The common question is which renormalized global residue remains after local, future, or event-level structure has been factored exactly, and whether the arithmetic source controls the distribution of that residue strongly enough to matter.
 
-The common question is not whether local matching preserves information, but which **renormalized global residue** remains after subtracting locally or futurally explained structure and whether the source can afford or cancel that exact residue.
+## Does the complete flute response remain controlled after defect-scale source strength is separated from angle?
 
-## Does the complete flute response remain controlled after angle and diagonal Green strength are separated?
+Prime Flute remains at the final interface frontier. PF-303--PF-312 close scalar depth, entrance leakage, fixed-low-band screening, first residual conversion, and a supposed second inverse-normalized angle as explanations for the explicit reservoir.
 
-Prime Flute remains at the final interface frontier. PF-303--PF-311 close scalar depth, pre-short global-angle control, high entrance leakage, fixed-low-band screening, and macroscopic first residual high conversion as explanations for the explicit reservoir.
+PF-313 identifies the remaining diagonal Green factors exactly. Uniform boundedness of `G_C^(1/2)J_C` is equivalent to `J_C J_C* <= K^2(S-ER^(-1)E*)`, and similarly on the high side. On near-unit `T_H` directions, the actual source/reassembly must vanish at the defect scale `sqrt(1-sigma^2)` or the corresponding diagonal strength diverges.
 
-PF-312 factorizes the remaining mixed inverse exactly. After whitening, the normalized Green cross block is `-T_H`; in physical coordinates it is unitarily equivalent. Inversion amplifies diagonal Green strengths but does not create a stronger normalized angle. The unresolved theorem is therefore to control `G_C^(1/2)J_C` and `G_H^(1/2)J_H` on source-reached near-unit `T_H` directions, or prove enough angle/multiplicity/ideal decay to absorb those strengths. A source-weighted return-potential route is useful only if it bounds one of these diagonal factors.
+The unresolved theorem is therefore source-specific: prove these defect-scale dominations for the physical maps, or show that normalized angle, multiplicity/ideal decay, or signed reassembly absorbs any divergent side. A return-potential route is useful only if it proves one of these exact source-versus-shorted-energy inequalities.

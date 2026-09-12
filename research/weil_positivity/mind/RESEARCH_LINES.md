@@ -2,24 +2,20 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Build a source-native critical boundary correspondence that changes the carrier before scalar sign reading
+## Build a source-native nonlocal sampling correspondence before scalar sign reading
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`.
 
-WP-267--WP-269 separate critical common-vacuum coherence, source-native amplitude hostability, and the larger exponential-growth category required by the exact positive Mangoldt spectrum. WP-270 then shows that the canonical zeta-pole subtraction
+WP-267--WP-269 separate critical common-vacuum coherence, source-native amplitude hostability, and the larger exponential-growth category required by the exact positive Mangoldt spectrum. WP-270 shows that canonical zeta-pole completion descends to a tempered carrier if and only if RH. WP-271--WP-272 then close finite-order conditional positivity and continuous scalar spectral reweighting as arithmetic-preserving sign mechanisms.
 
-`T_pole = nu_(1/2) - cosh(x/2) dx`
+WP-273 tests the broader idea of compressing the signed pole-completed carrier to a proper positive test space. In the canonical positive-minus-positive Krein realization, every nonnegative subspace is the graph of a contraction over its arithmetic projection. For actual functions, positivity is exactly a weighted sampling inequality: the continuum `cosh(x/2) dx` norm must be contractively reconstructible from the Mangoldt prime-power samples.
 
-is tempered if and only if RH. Category descent after classical pole completion is therefore already target-strength rather than a free preprocessing step.
+That formulation yields an RH-independent local no-go. Any nonzero continuous test space stable under compactly supported smooth cutoffs contains a localization inside an atom-free interval; there the arithmetic sample term vanishes while the pole continuum is strictly negative. More quantitatively, on an interval containing `N` prime-power support points, a continuous supported subspace on which the form is nonnegative has algebraic dimension at most `N`.
 
-WP-271 closes the canonical finite-codimensional sign escape. Finite-order conditional positive definiteness can alter only a finite jet at spectral frequency zero, but `T_pole` has strictly negative smooth density on every atom-free interval below `log 2` and between Mangoldt atoms. Even on RH, no finite collection of moment/polynomial constraints can convert the pole-completed spectrum into the positive spectral measure required by the classical conditional-positivity representation theorem.
+A surviving positive compression therefore cannot be a localizable geometric test space. It must be genuinely **global and nonlocal**: an analytic/model/de Branges-type interpolation space, a distributional/source-derived space tied to the prime-power support, or another canonical structure in which local cutoffs are forbidden and the continuum component is controlled by arithmetic samples before sign is inspected.
 
-WP-272 closes a much broader scalar-filter escape before any global category issue. If a continuous real spectral multiplier `q` makes `q T_pole` a positive Radon measure, positivity on the open gaps forces `q<=0` there, while positivity of each Mangoldt atom forces `q>=0` at the atom. Continuity therefore forces `q` to vanish at every prime-power frequency. If `q>=0`, including every continuous square filter `|m|^2`, then `q` must vanish identically.
+The live construction should now state the sampling/interpolation mechanism explicitly. “Frequency mixing” or “larger category” is not enough unless it canonically produces the contraction from prime-power samples to the pole continuum without encoding the desired sign or support by hand.
 
-Thus smooth/continuous translation-invariant scalar processing can obtain positivity only by erasing the arithmetic atomic sector. A discontinuous multiplier can cheat by encoding the prime-power support directly, which exposes the exact boundary rather than providing a natural solution.
+## Treat hostability, category descent, scalar sign, localizability and sampling reconstruction separately
 
-The live construction must therefore act more structurally before the final sign is read: mix spectral frequencies or sectors, use a noncommutative/matrix-valued completion, derive a singular arithmetic boundary law independently rather than hand-picking the support, or replace the pole-completed finite--archimedean carrier itself. Larger categories remain relevant for hostability, but finite-order quotienting and continuous scalar reweighting are now closed sign mechanisms.
-
-## Treat amplitude hostability, category descent, local spectral sign, scalar filtering, and source retention separately
-
-WP-269--WP-272 identify distinct barriers. A host category may be large enough to contain the source; pole cancellation may descend only at RH strength; finite-order conditional positivity cannot hide negative nonzero-frequency density; and continuous scalar sign correction cannot retain the Mangoldt atoms. A viable positivity theorem must preserve arithmetic information while changing the coupling, not merely smooth or reweight the same signed carrier.
+WP-269--WP-273 identify distinct barriers. A category may host the source but fail to descend; pole completion may descend only at RH strength; scalar sign repair may erase the arithmetic atoms; and even a non-scalar positive compression fails if its test space is localizable. The surviving source-retaining route must be global enough for prime-power samples to control continuum mass through a genuine reconstruction law.

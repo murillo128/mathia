@@ -1,15 +1,19 @@
-# MI-009 — Source-native hostability does not determine category descent, local spectral sign, or arithmetic-preserving positivity
+# MI-009 — Source-native hostability does not determine category descent, scalar sign, or nonlocal arithmetic reconstruction
 
-**Evidence level:** supported by the Weil-positivity carrier/category/sign results through WP-272; this is not a statement about every arithmetic completion.
+**Evidence level:** supported by the Weil-positivity carrier/category/sign/compression results through WP-273; this is not a statement about every arithmetic completion.
 
-WP-267--WP-269 separate source coherence, critical-amplitude hostability, and positive spectral hostability. A source-generated rapid-energy rigging can host the singular critical amplitude while the exact positive Mangoldt spectrum still lies beyond tempered distributions and Fourier hyperfunctions.
+WP-267--WP-269 separate source coherence, critical-amplitude hostability, and positive spectral hostability. A source-generated rapid-energy rigging can host the singular critical amplitude while the exact positive Mangoldt spectrum still lies beyond ordinary tempered categories.
 
-WP-270 tests the canonical pole cancellation. The pole-completed signed carrier `T_pole` is tempered if and only if RH, so category descent to ordinary distributions is already target-strength rather than free preprocessing.
+WP-270 tests canonical pole cancellation. The pole-completed carrier `T_pole=nu_(1/2)-cosh(x/2) dx` is tempered if and only if RH, so category descent is already target-strength rather than free preprocessing.
 
-WP-271 then shows that successful descent still does not supply a finite-codimensional sign theorem. Classical conditional positivity of any finite order can hide only a finite jet at spectral frequency zero, whereas the pole completion has strictly negative density on ordinary nonzero-frequency atom-free intervals. RH can repair growth without repairing this sign.
+WP-271--WP-272 show that successful descent still does not supply the right sign. Finite-order conditional positivity cannot hide the negative density on nonzero atom-free intervals, and every continuous scalar multiplier that makes the carrier positive must annihilate the Mangoldt atoms. A nonnegative continuous square filter therefore vanishes identically.
 
-WP-272 closes continuous scalar spectral repair even before global category questions. If a continuous multiplier makes `qT_pole` positive, continuity across the locally discrete prime-power support forces `q` to vanish at every Mangoldt atom. If `q>=0`, as for a continuous square filter, then `q` vanishes identically. Positivity can be manufactured by a discontinuous support-aware selector, but only by explicitly encoding the arithmetic set into the filter.
+WP-273 then asks whether positivity could instead be obtained by compressing to a proper subspace. The canonical Jordan decomposition gives a Krein space `H_+ direct-sum H_-`; every nonnegative subspace is the graph of a contraction from its arithmetic projection to the continuum component. For function-generated ranges, positivity is exactly a weighted sampling inequality: prime-power samples must control the full `cosh(x/2) dx` norm.
 
-The reusable warning is therefore stronger: **hostability, category descent, local spectral sign, and arithmetic retention under the sign-producing operation are independent compatibility gates**. A completion that is large enough to exist may still have the wrong sign; a canonical cancellation may already encode RH; and a smooth scalar sign repair may succeed only by deleting the source information it was meant to explain.
+This exposes a new independent gate: **localizability**. A nonzero continuous test space stable under smooth compact cutoffs cannot satisfy that sampling inequality, since a nonzero function can be localized inside an atom-free interval. More quantitatively, a continuous supported positive subspace on an interval containing `N` arithmetic atoms has dimension at most `N`.
 
-**Boundary.** WP-272 does not rule out frequency-mixing operators, matrix/noncommutative completions, singular source-forced boundary laws, or a different finite--archimedean carrier. WP-271 does not assert a finite-order representation theorem in every ultra-hyperfunctional category. What is closed is finite-order conditional and continuous scalar repair of the canonical pole-completed carrier.
+The surviving possibility must therefore be global and nonlocal in a source-forced way: an analytic/interpolation/model space, a distributional source range, matrix/noncommutative structure, or another completion whose elements cannot be localized independently of their prime-power samples. Positivity has to arise from a reconstruction/coupling law before scalar sign reading, not from deleting the bad continuum regions after seeing them.
+
+The reusable warning is now fivefold: **hostability, category descent, local spectral sign, arithmetic retention, and nonlocal reconstruction are independent compatibility gates.** Passing one does not grant another.
+
+**Boundary.** WP-273 does not rule out genuinely nonlocal positive compressions or prove that any canonical sampling space exists. WP-271--WP-273 concern the specific pole-completed carrier. No generic representation theorem for every ultra-generalized category or every arithmetic completion is asserted.

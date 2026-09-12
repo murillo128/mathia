@@ -1,30 +1,30 @@
 # Prime-flute mathematical questions
 
-## Control source-weighted diagonal Green strength after low screening
+## Prove defect-scale source avoidance after low screening
 
 **Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`.
 
-PF-303--PF-308 close scalar depth, global-angle control, and full killing-normalized constant-sector boundedness as missing mechanisms. PF-309 shows that the original explicit screened witness is asymptotically physical-low at every fixed high-pass entrance, and PF-310 proves that exact fixed-low-band witnesses still saturate the Schur screening.
+PF-303--PF-308 close scalar depth, global-angle control, and full killing-normalized constant-sector boundedness as missing mechanisms. PF-309--PF-311 show that the explicit reservoir is genuinely physical-low and that direct residual high conversion is already small after low screening. PF-312 then proves that inversion creates no second normalized angle: the diagonal-normalized mixed Green block has exactly the singular values of the post-low angle `T_H`.
 
-PF-311 controls the first residual high conversion after that low screening. Once physical-low modes have been shorted, positivity forces the direct residual physical-high energy of the PF-310 witnesses to be `o(m_0)` uniformly over finite high Galerkin sections. Raw post-screening high coupling is therefore not the macroscopic mechanism.
+PF-313 turns the remaining diagonal-strength problem into an exact source criterion. If the post-low block is `[[S,E],[E*,R]]>0`, `T=S^(-1/2)ER^(-1/2)`, and `F_C=S-ER^(-1)E*`, then
 
-PF-312 now removes the apparent second angle created by inversion. If
+`||G_C^(1/2) J_C||^2 = sup_(x!=0) ||J_C* x||^2/<x,F_C x>`
 
-`T_H=S_L^(-1/2) E_LH R_H^(-1/2)`,
+and uniform boundedness is equivalent to
 
-then the diagonal-normalized constant/high Green cross block has exactly the same singular values as `T_H`; in energy coordinates it is exactly `-T_H`. The raw inverse growth is entirely carried by the two diagonal Green-strength factors around this unchanged angle.
+`J_C J_C* <= K^2 F_C`,
 
-The live theorem is therefore to control the actual source/reassembly maps through
+or, after whitening, `Jhat_C Jhat_C* <= K^2(I-TT*)`.
 
-`G_C^(1/2) J_C` and `G_H^(1/2) J_H`
+Hence on a singular direction with value `sigma`, every uniformly controlled physical source must vanish at least like `sqrt(1-sigma^2)` in the corresponding near-unit left singular direction. The symmetric criterion holds on the high/reassembly side. Diagonal Green control is therefore exactly **defect-scale source avoidance**, not another inverse estimate.
 
-on the source-reached near-unit `T_H` directions, or prove enough angle/multiplicity/ideal decay that these factors can be absorbed. A return-potential estimate matters only if it bounds one of these source-weighted diagonal Green factors. There is no need to invent or control a separate “inverse angle.”
+PF-313 also gives an explicit audit on the PF-308 screened traces: any source family with bounded source-weighted Green strength must have normalized overlap with those traces tending to zero at the fully-shorted-energy rate. If the actual physical source retains order-one overlap along such a subsequence, the diagonal Green factor necessarily diverges.
+
+The live theorem is now concrete: identify the actual physical `J_C,J_H` and prove the corresponding defect-scale domination on source-reached near-unit `T_H` directions, or show that angle/multiplicity/ideal decay or signed reassembly compensates when one of the diagonal strengths diverges. A return-potential theorem matters only insofar as it proves this domination.
 
 ## Global heavy-range projection counts after strength/angle factorization
 
-For the PF-287 heavy low/high extension-range projection product, can the source-reached post-low singular directions have vanishing essential norm or the required singular-value counting law once their diagonal Green strengths are separated from the unchanged `T_H` angle? PF-311 removes macroscopic direct high energy; PF-312 says all later raw amplification must enter through source-weighted diagonal strengths and their overlap with the same near-unit angle directions.
-
-The burden is now localized in diagonal Green strength, normalized angle, signed reassembly, and multiplicity—not in scalar return depth, a new inverse-normalized angle, physical-high entrance leakage, or absolute first residual conversion.
+For the PF-287 heavy low/high extension-range projection product, can the source-reached post-low singular directions have vanishing essential norm or the required singular-value counting law once PF-313's exact defect-scale source factors are separated from the unchanged `T_H` angle? The burden is localized in source-weighted diagonal strength, normalized angle, signed reassembly, and multiplicity—not scalar return depth, a new inverse angle, physical-high entrance leakage, or absolute first residual conversion.
 
 ## Prime realization within the resolved upstream-memory window
 

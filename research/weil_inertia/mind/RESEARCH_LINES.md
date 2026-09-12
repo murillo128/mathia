@@ -14,22 +14,18 @@ WI-231--WI-237 show that finite negative inertia detects off-line packets exactl
 
 WI-238--WI-252 isolate the finite-radius first-odd-crossing witness. Layer-cake localization produces a signed radial von-Mangoldt flux, while prime reflection violates the first Beurling--Deny positivity criterion. The live odd-sector theorem remains source-specific: control that signed flux, derive a phase/nodal restriction from the eigen-equation plus arithmetic source, or find another order structure not contradicted by prime reflections.
 
-## First cross the first-prime positivity gate, then test the one-prime phase cone
+## Exactly recertify first-prime positivity, then test the one-prime phase cone
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253--WI-257 show why scalar aperture firstness, the null equation and generic bounded-perturbation regularity do not supply the missing source control. WI-258 gives an exact source-explicit replacement: phase modulation and translated windows force
+WI-253--WI-258 isolate the phase-coupled source cone `S_v(r)+J_v(r,t)>=0`. WI-259 shows that a prime atom is not available at every hypothetical first crossing until finite-scale positivity has first been proved beyond `(log 2)/2`; positivity at `r=7/20` would reduce the next phase problem to exactly the single atom `n=2`.
 
-`S_v(r)+J_v(r,t) >= 0`,
+WI-260 audits the latest public post-fix `FP-0.35` generator and sharpens the gate. A replay of the current script is **not** yet a mathematical certificate of `lambda_(7/20)>0`: load-bearing transcendental/rational quantities are inserted as nearby point approximations rather than rigorous enclosures of the exact operator, and the advertised Arb inverse-residual test neither aggregates interval magnitudes safely under Arb's partial comparisons nor bounds a submultiplicative induced matrix norm.
 
-with `J_v` a localized cosine transform of the von-Mangoldt/archimedean source-weighted autocorrelation. A source-forced negative `J_v` would create strict firstness slack.
+The numerical margin remains encouraging, so WI-260 is an evidence/certification barrier rather than a negative result about FP-0.35. The next gate is independent **exact recertification**: enclose the exact `log 2`, `sqrt 2`, `tau=20 log 2/7`, harmonic values and `Q[tau]` entries, then use certified row-sum residual bounds or interval `LDL^T`/Cholesky to prove positivity of the exact finite matrix.
 
-WI-259 identifies the gate that must precede a prime-coupled use of this inequality. The first von-Mangoldt atom enters only above `r=(log 2)/2`; first crossing alone does not guarantee that radius is admissible. If strict positivity at `r=7/20` is established, monotonicity forces `a_*>7/20`, and because `log 2<7/10<log 3`, the fixed radius `7/20` contains exactly the single atom `n=2`.
+Only after that gate closes should the line freeze `r=7/20` and attack the exact one-prime phase identity. Prime activation alone is still insufficient: the first-prime shift can be absorbed locally by the endpoint potential, so the sign theorem must use first-crossing structure plus the coupled source cone.
 
-The public `FP-0.35` certificate is currently only a candidate input: its post-fix computation has not been independently replayed by Mathia and the public theorem/status artifacts are inconsistent. Therefore the next gate is **independent finite-scale positivity beyond `(log 2)/2`**, not immediate optimization of the phase defect.
+## Treat exact-profile information, firstness, source activation, certificate correctness and phase-defect sign as separate gates
 
-If that gate closes positively, freeze `r=7/20` and attack the exact one-prime identity using compact-support autocorrelation, positive-definiteness, first-crossing slack and the archimedean background. Prime activation alone is not enough: the first-prime shift can be absorbed locally by the endpoint potential, so the sign theorem must use the coupled source structure.
-
-## Treat exact-profile information, firstness, null-equation redundancy, domain regularity, source activation, certificate trust, and phase-defect sign as separate gates
-
-The phase cone survives the earlier abstraction losses, but WI-259 shows that its arithmetic usefulness also depends on proving that a prime threshold lies below every hypothetical first crossing. Do not smuggle a numerical/candidate positivity result into the source-sign argument. First certify the radius, then test the one-prime cone, and only then enlarge the source aperture if necessary.
+The current public numerical output is not evidence that may be promoted through synthesis. Source activation requires an exact finite-scale positivity theorem; reproducing a checker with unresolved proof-boundary defects does not supply it. If exact recertification succeeds, the source-sign problem resumes at one prime. If it fails, the conditional WI-259 implication survives but the line returns to the prime-free regime or seeks another positivity theorem past the threshold.

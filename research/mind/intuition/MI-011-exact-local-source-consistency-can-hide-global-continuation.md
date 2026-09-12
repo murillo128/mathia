@@ -1,27 +1,27 @@
-# MI-011 — Exact local source consistency can hide an uncancelled continuation budget or a coupled reset surcharge
+# MI-011 — Exact local source consistency can hide a cross-cut continuation deficit or one scale-distributed transport ledger
 
-**Evidence level:** supported by NB-066--NB-075 and RE-068--RE-077; no operator or estimate is transferred between the lines.
+**Evidence level:** supported by NB-066--NB-076 and RE-068--RE-079; no operator or estimate is transferred between the lines.
 
-Nyman--Beurling and Robin Extremal expose complementary failures of “local matching implies global harmlessness.” In both cases the useful advance is to subtract what local structure already explains, isolate the surviving global datum, and price the exact source operation that could remove it.
+Nyman--Beurling and Robin Extremal expose complementary failures of “local matching implies global harmlessness.” In both cases the useful move is to subtract what local/source geometry already explains and isolate the exact global residue that still has to be controlled.
 
-In Nyman, NB-066--NB-073 reduce a persistent target to a global continuation problem and separate it from local flags, branching, ordinary conditioning, and stationary prediction/feedthrough controls. NB-074 introduces the nonstationary renormalized continuation charge
+In Nyman, NB-074 introduces the renormalized continuation charge `J_(R,N)`. NB-075 writes it as raw continuation volume `L_R` minus sequential future-conditioned multiple-correlation charges. NB-076 resolves those charges into a nonnegative lattice of interval endpoint partial correlations. If `kappa_(j,n)=-log(1-|rho_(j,n)|^2)`, with endpoints conditioned only on the intervening innovations, then
 
-`J_(R,N)=log det(A_R^(-1/2) S_(R,N) A_R^(-1/2))`.
+`J_(R,N)=L_R-sum_(j<R<=n<=N) kappa_(j,n)`.
 
-Every persistent stable tail forces this charge to diverge for every finite horizon schedule; bounded charge along any unbounded sequence excludes the tail.
+Each `kappa` is a contiguous-Gram determinant cross-ratio. The surviving global datum is therefore the **uncancelled cross-cut log-Gram area**. It is enough to recover `L_R-O(1)` from a finite band of intervals crossing the cut along an unbounded sequence; one need not directly control the whole growing residualized-prefix inverse.
 
-NB-075 now factorizes the charge into an exact source-facing scalar ledger. With raw continuation volume
+Robin now supplies a different kind of exact factorization. RE-076 makes corrected Chebyshev `Hhat` increase, and RE-078 makes fringe-corrected logarithmic Mertens `Ehat` decrease on the same late fan. RE-079 proves that these opposite monotonicities are not two independent residual debts. For every oriented fan segment there is one positive measure `mu` such that
 
-`L_R=log(det H_(<R)/det A_R)`
+`Delta Hhat = int 1 dmu`
 
-and future-conditioned squared multiple correlations `beta_(R,n)`, one has
+while
 
-`J_(R,N)=L_R-sum_(n=R)^N[-log(1-beta_(R,n))]`.
+`-Delta Ehat + B_1 = int (1/(s log s)) dmu`.
 
-The subtraction is load-bearing. A large raw tail or raw determinant ratio can be harmless if later innovations explain it. The surviving global datum is precisely the **uncancelled continuation volume** after all admitted future innovations have been residualized and credited once. A sufficient no-tail theorem may therefore prove that the future cancellation budget tracks `L_R` to within `O(1)`; it need not keep `L_R` itself bounded.
+The first-layer birth correction `B_1` is the sole exact mismatch and has summable late tail. Higher-layer events pair exactly as atoms of the same transport measure. On bounded selector dilation, the two monotone increments are equivalent after the natural `Z log Z` scaling.
 
-In Robin, RE-068--RE-073 show that endpoint matching and summable direct timing coexist with a span-free Chebyshev--Mertens source budget. RE-075 identifies the reciprocal reset currency: substantial recovery requires many new first-layer supports and physical fan span. RE-076 makes `Z-log rad(C)` a strict corrected-Chebyshev Lyapunov coordinate, and RE-077 couples the two currencies: the span required for a fixed-fraction reciprocal recovery forces an additional surcharge `>> W^(1-2b_1) w(log W)^2`.
+So the Robin residual is no longer “two coupled capacities.” It is the **scale distribution of one positive transport ledger**. New leverage must come from where its mass is allowed to sit, from source-specific restrictions on concentration, from first-layer spacing/combinatorics, or from an external estimate controlling one moment more sharply than the other.
 
-The common discipline is therefore sharper: **do not price the unrenormalized global quantity if later source operations can cancel it for free in the target geometry. First factor out locally/futurally explained structure, then bound the residual source debt.** Nyman now does this sequentially through conditional partial correlations; Robin does it by charging reset span to a second monotone source coordinate.
+The common discipline is therefore: **factor the geometry until the final independent datum is exposed, and do not count two representations of that datum twice.** Nyman removes future-explained volume until only a cross-cut deficit remains. Robin removes event bookkeeping until two apparent source coordinates become moments of one measure.
 
-**Boundary.** No Nyman determinant/correlation identity transfers to Robin prime errors, and no Robin reset surcharge transfers to Nyman continuation. NB-075 gives an exact scalar cancellation budget but not the arithmetic lower bound needed to cancel it; RE-077 gives a necessary reset surcharge but not an upper-capacity contradiction. The synthesis is staged accounting, not a shared theorem.
+**Boundary.** No Nyman partial-correlation theorem transfers to Robin fan transport, and no Robin Stieltjes duality transfers to Nyman continuation. NB-076 supplies no arithmetic lower bound on the cross-cut area. RE-079 supplies no source-specific restriction strong enough to contradict false RH. The synthesis is exact residual accounting, not a shared operator theorem.

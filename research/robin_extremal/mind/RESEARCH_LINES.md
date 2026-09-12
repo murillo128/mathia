@@ -2,26 +2,26 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Cap the corrected-Chebyshev growth forced by every substantial reciprocal reset
+## Control the selector-scale distribution of the single fan transport measure
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`.
 
-RE-068--RE-073 expose a pre-compression two-source ledger on matched first-layer fan runs. RE-075 identifies the exact reciprocal reset currency: recovering a fixed fraction of a matched-run Mertens descent at scale `W` and width `w` requires `>> W^(1-b_1)w` new first-layer support primes and physical span `>> W^(1-b_1)w log W`.
+RE-076 makes the corrected Chebyshev coordinate `Hhat(C,b)=Z_b(C)-log rad(C)` strictly increasing along sufficiently late positive rightmost fans. RE-078 shows that after removing the single unmatched ordinary-prime fringe atom, the corrected logarithmic Mertens coordinate `Ehat(C,b)=E_l(Z_b(C))-delta_l(Z_b(C))` is strictly decreasing, and substantial later raw reset is asymptotically impossible once a matched-run descent dominates the fringe scale.
 
-RE-076 removes the standard-source reset ambiguity. The corrected deficit
+RE-079 shows that these are **not two independent irreversible source budgets**. For every oriented fan segment `0<1` there is a canonical positive transport measure `mu_(0,1)` on `[Z_0,Z_1]` such that
 
-`Hhat(C,b)=Z-log rad(C)`
+`mu_(0,1)([Z_0,Z_1]) = Hhat_1-Hhat_0`
 
-is a strict Lyapunov coordinate along the sufficiently late rightmost fan and survives arbitrary packet size/layer composition.
+and
 
-RE-077 now splices the two facts. Corrected Chebyshev growth is coercive in physical fan span, so the span bought by a fixed-fraction Mertens recovery forces an additional bill
+`Ehat_0-Ehat_1+B_1(0,1) = int dmu_(0,1)(s)/(s log s)`,
 
-`Hhat_* - Hhat_R >> W^(1-2b_1) w (log W)^2`.
+where `B_1` is exactly the finite-exponent-tail mass created by new first-layer support births. Cell motion contributes `dZ`, higher-layer events contribute atoms of mass `log p`, and first-layer births are the sole structural mismatch.
 
-Thus reciprocal recovery and corrected standard-prime growth are not independent escape channels. New first-layer supports that repair the Mertens ledger necessarily push the monotone corrected-Chebyshev ledger farther in the expensive direction; higher-layer activity can only add positive cost.
+Thus on bounded-dilation selector windows the two monotone increments are equivalent after the natural factor `Z log Z`. Counting increasing `Hhat` and decreasing `Ehat` as two same-scale coercive costs would double-count one transport ledger. The total future first-layer correction is itself summable, `B_1(0,infinity)<<1/Z_0`, but may still dominate an arbitrarily short local increment.
 
-The live theorem is a genuine **prime-source capacity bound**. One must cap the total corrected-Chebyshev growth sustainable on the false-RH positive fan, or show that repeated reciprocal reset cycles force an accumulated surcharge exceeding the available off-critical envelope. The exponent check remains essential: the single-reset surcharge is still below the natural `X^Theta` false-RH scale, so monotonicity plus one bill is not a contradiction.
+The live theorem is therefore finer: control **where the mass of `mu` sits in selector scale**, exploit scale separation where the kernel `1/(s log s)` changes materially, prove a prime-source restriction on allowable concentration profiles, or extract a separate first-layer spacing/combinatorial cost. An external source estimate that bounds one moment of `mu` more sharply than the other would also create new leverage.
 
-## Treat matched source drift, corrected Chebyshev Lyapunov growth, reciprocal reset, first-layer support births, reset surcharge, higher-layer mass, fringe, and physical span separately
+## Treat transport mass, kernel-weighted transport, first-layer births and scale distribution separately
 
-RE-073 prices coherent matched motion; RE-075 identifies the only positive reciprocal reset currency; RE-076 supplies a globally monotone corrected standard-source coordinate; RE-077 proves that paying the former necessarily increases the latter. The remaining problem is no longer a packet taxonomy or independence assumption between source ledgers, but an upper-capacity theorem for their accumulated coupled cost.
+RE-079 reinterprets the earlier two-source drift as one positive Stieltjes transport measure viewed through two kernels. Higher-layer activity pairs exactly in both ledgers; first-layer births supply the sole explicit correction and have an absolutely summable late tail. On bounded selector dilation, monotonicity alone is conceptually exhausted. New information must come from scale distribution or arithmetic structure, not from charging the two corrected coordinates independently.

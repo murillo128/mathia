@@ -1,35 +1,27 @@
-# MI-010 — Post-low inversion preserves the normalized angle; the remaining amplification is diagonal Green strength
+# MI-010 — Source-weighted Green strength is exactly defect-scale source avoidance after low screening
 
-**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-312; no final physical `P/H` weak/Schatten estimate, source-weighted Green bound, or arithmetic discrimination theorem is claimed.
+**Evidence level:** proved for finite positive sections of the canonical prime-flute boundary response through PF-313; no final physical `P/H` weak/Schatten estimate, actual-source defect domination, or arithmetic discrimination theorem is claimed.
 
-PF-303--PF-308 normalize the assembled constant chain as a killed positive network and show that nonconstant Schur relaxation destroys uniform global constant-sector protection. PF-309 proves that the explicit screened reservoir is asymptotically physical-low at entrance, and PF-310 shows that exact witnesses confined to one fixed physical low band still saturate the screening.
+PF-303--PF-308 normalize the assembled constant chain as a killed positive network and show that nonconstant Schur relaxation destroys uniform global constant-sector protection. PF-309--PF-311 then show that the explicit screened reservoir is physical-low at entrance and that its direct post-low high-conversion energy is already small.
 
-PF-311 controls the first residual physical-high conversion after those low modes are shorted. For the remaining positive constant/high block
+PF-312 identifies exactly what inversion can and cannot add. With `T=S^(-1/2)ER^(-1/2)` for the post-low constant/high block, the diagonal-normalized mixed Green block is unitarily equivalent to `-T`. Inversion does not create a new normalized angle; the raw factor `sigma/(1-sigma^2)` splits into the unchanged angle and two diagonal Green strengths.
 
-`[[S_L,E_LH],[E_LH*,R_H]] > 0`,
+PF-313 now characterizes those strengths without inversion. Let `F_C=S-ER^(-1)E*` and `G_C=F_C^(-1)`. For any source map `J_C`,
 
-positivity gives
+`||G_C^(1/2)J_C||^2 = sup_(x!=0) ||J_C* x||^2/<x,F_C x>`.
 
-`||R_H^(-1/2) E_LH* x||^2 <= <x,S_L x>`.
+Thus `||G_C^(1/2)J_C||<=K` is equivalent to the form inequality
 
-The PF-310 witnesses have `<x,S_Lx>/m_0[x] -> 0`, so their absolute direct high-conversion energy is also `o(m_0)`. The known low-band reservoir cannot eject macroscopic killing-normalized high energy before inversion.
+`J_C J_C* <= K^2 F_C`.
 
-PF-312 identifies exactly what inversion can and cannot add. Let
+In whitened coordinates this is `Jhat_C Jhat_C* <= K^2(I-TT*)`. If `Tv=sigma u`, every bounded source family must therefore satisfy
 
-`T_H=S_L^(-1/2) E_LH R_H^(-1/2)`
+`||Jhat_C* u|| <= K sqrt(1-sigma^2)`.
 
-and whiten the post-low block to `Q=[[I,T_H],[T_H*,I]]`. If `G_C,G_CH,G_H` are the inverse blocks, then
+Near-unit canonical-correlation directions are harmless only when the physical source dies at their defect scale. The right/reassembly side has the symmetric criterion with `I-T*T`.
 
-`G_C^(-1/2) G_CH G_H^(-1/2) = -T_H`.
+This converts a vague inverse problem into a source-versus-energy question. The PF-308 screened traces already give a concrete falsifier: any uniformly controlled source family must have normalized overlap with those traces tending to zero at the fully-shorted-energy rate. An order-one overlap would force the source-weighted Green strength to diverge.
 
-In the original physical coordinates the same normalized Green cross block is unitarily equivalent to `-T_H`. Therefore its singular values are **exactly the same** as the original post-low canonical-correlation singular values. Block inversion does not create a second or worse normalized angle.
+The remaining mixed response still contains three logically distinct currencies: left source defect domination, the unchanged normalized angle/multiplicity, and right reassembly defect domination, with signed cancellation possible after their composition. A return-potential estimate is relevant only if it proves one of the two form dominations; bounding a raw Green block without source alignment is no longer the right target.
 
-The raw factor `sigma/(1-sigma^2)` on a near-unit singular channel is instead the product of the unchanged angle `sigma` with diagonal Green strengths `(1-sigma^2)^(-1/2)` on the two sides. For external source/reassembly maps `J_C,J_H`, the mixed response factors exactly as
-
-`J_C* G_CH J_H = (G_C^(1/2)J_C)* Gamma_G (G_H^(1/2)J_H)`,
-
-where `Gamma_G` is a contraction with the singular values of `T_H`.
-
-The frontier is therefore sharper than after PF-311. One may still prove a source-relevant gap for `T_H`, but if near-unit directions survive, the missing quantity is the **source-weighted diagonal Green strength** carried by those directions: `G_C^(1/2)J_C` and `G_H^(1/2)J_H`, together with their counting/ideal behavior. The accepted return-potential route is relevant only if it can bound one of these source-weighted diagonal factors; PF-312 does not assume that identification.
-
-**Boundary.** PF-312 does not show that `||T_H||` stays away from one, that diagonal Green blocks remain bounded along the Galerkin limit, or that physical source/reassembly maps avoid their large directions. It removes a false extra obstruction: inverse amplification changes strength, not the normalized post-low angle.
+**Boundary.** PF-313 does not show that the actual physical source/reassembly maps satisfy the defect-scale inequalities, that `||T||` stays below one, or that divergence of one diagonal strength forces the final signed mixed response to diverge. It identifies the exact condition under which diagonal inverse amplification is invisible to the source.

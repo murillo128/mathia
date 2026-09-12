@@ -14,26 +14,20 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Prove signed cancellation in the kernel-unresolved short-gap population, or leave the smooth quadratic channel
+## Convert start-averaged signed cancellation into the start control actually consumed by the target
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`.
 
-VIS-179--VIS-186 separate sparse close-pair visibility from diffuse full-prefix behavior. VIS-187 finds a deterministic logarithmic accumulation under a hard rectangular window, while VIS-188 removes that endpoint artifact with an endpoint-zero taper.
+VIS-187--VIS-191 establish a sharp absolute-resolution boundary for a fixed endpoint-zero taper. The complete absolute off-diagonal vanishes above `y/log y` and has an order-one floor below that scale because ordinary consecutive-prime gaps remain kernel-unresolved.
 
-VIS-189 proves absolute diagonalization at linear observation scale, and VIS-190 sharpens the same mechanism to
+VIS-192 shows that this absolute barrier is **not** the signed barrier. Long Cesàro averaging in the interval start `T` gives an exact frequency-orthogonality identity for the signed off-diagonal variance. For every diverging `H<=y`,
 
-`O_v(y;H,T) << y/(H log y)` for `1<=H<=y`.
+`R_v(y,H) << 1/H`,
 
-Thus the absolute envelope vanishes uniformly whenever `H >> y/log y`.
+and in the strictly subcritical regime `H log y/y -> 0` the scale is sharp: `R_v(y,H) asymp 1/H`. Thus the signed quadratic off-diagonal has start-RMS size `H^(-1/2)` even while the absolute pair mass remains order one; at `H asymp y/log y` the start-averaged signed variance already tends to zero.
 
-VIS-191 supplies the opposite asymptotic side. If `H=o(y/log y)`, a positive-density population of ordinary top-half consecutive-prime gaps remains unresolved by the smooth kernel and contributes an order-one normalized absolute floor:
+The live theorem inside this observable is therefore no longer simply “prove signed cancellation among unresolved short gaps.” It is to upgrade the long-start Cesàro statement to the **start regime actually available to the target**: a uniform-in-start estimate, control on deterministic finite start windows tied to `y`, or a theorem showing that the target legitimately consumes only an averaged/density-one start statement. If none is available, the observable must change.
 
-`liminf O_v(y;H,T) >= (1-2alpha)/2`.
+## Keep absolute resolution, signed start-average cancellation and deterministic start control separate
 
-Therefore `y/log y` is order-sharp for absolute off-diagonal disappearance, not just an artifact of the VIS-190 summation. Making the same fixed taper smoother cannot remove this subcritical floor because the obstruction comes from near-zero frequencies where the kernel tends to one.
-
-The next genuinely different theorem inside this observable must exploit **signed cancellation or source-specific structure among those unresolved short-gap pairs**, especially in the critical corridor `H~y/log y`. The order-one absolute mass does not decide the signed tapered mean. If no such arithmetic cancellation is available, the observation must change: higher/growing-order information, source-adapted sampling, nonlinear statistics, different support/normalization geometry, or another controlled functional.
-
-## Keep absolute resolution and signed cancellation separate
-
-VIS-187--VIS-191 now bracket the absolute method from both sides. Endpoint regularity removes a deterministic false positive, Fourier decay kills resolved pairs above `y/log y`, and ordinary consecutive primes force nonvanishing absolute mass below it. Any claimed subcritical signal must therefore specify the signed arithmetic mechanism that acts **inside** the unresolved population rather than presenting absolute mass, extra smoothness, or finer gap bookkeeping as evidence.
+VIS-191 says unresolved near-zero frequencies keep the absolute envelope macroscopic below `y/log y`; VIS-192 says exact phase orthogonality nevertheless makes their signed energy small after long start averaging as soon as `H->infinity`. These are compatible. The remaining resource is not extra taper smoothness but how arithmetic/start geometry converts an averaged signed statement into the deterministic observation required downstream.

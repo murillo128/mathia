@@ -1,23 +1,23 @@
-# MI-010 — Smooth quadratic observation has a sharp absolute-envelope resolution barrier at `y/log y`
+# MI-010 — Absolute resolution and signed start-averaged cancellation have different thresholds
 
-**Evidence level:** supported by weighted-Haar calculations and deterministic/prime-pair transfer controls through VIS-191; no statement is made that the signed tapered mean fails to diagonalize at or below the boundary, nor is any RH-sensitive signal established.
+**Evidence level:** supported by deterministic/prime-pair transfer controls through VIS-192; the signed mean-square statement is exact under long Cesàro averaging in the start variable, but no uniform-in-start or finite-window theorem and no RH-sensitive signal is established.
 
-VIS-181--VIS-186 show that the diffuse full-prime prefix suppresses every fixed and polynomial mesoscopic gap shell at linear observation scale. VIS-187 reveals a deterministic logarithmic accumulation under a rectangular window, while VIS-188 identifies that effect as endpoint leakage and removes it with an endpoint-zero taper.
+VIS-187--VIS-190 remove endpoint artifacts and show that for a fixed endpoint-zero `C^2` taper the complete normalized **absolute** prime-pair off-diagonal is `O(y/(H log y))`. Hence absolute diagonalization holds uniformly in start whenever `H >> y/log y`.
 
-VIS-189 proves that for a fixed endpoint-zero `C^2` taper the complete absolute normalized prime-pair off-diagonal is `O(1/log y)` at linear observation length. VIS-190 sharpens the upper scale to
+VIS-191 proves the opposite side for the absolute method. If `H=o(y/log y)`, a positive-density population of ordinary top-half consecutive-prime gaps remains unresolved by the kernel and forces an order-one normalized absolute floor. Extra fixed smoothness cannot remove that floor because the obstruction is near frequency zero, where every normalized taper kernel tends to one.
 
-`O_v(y;H,T) << y/(H log y)` for `1<=H<=y`,
+VIS-192 then keeps the signs and averages only over the interval start. Distinct prime ratios `q/p` give distinct positive frequencies `log(q/p)`, so ordinary finite-frequency Cesàro orthogonality eliminates all cross terms exactly. The long-start variance is
 
-uniformly in interval start, so every regime `H log y/y -> infinity` has quadratic diagonalization by absolute control.
+`R_v(y,H)=2 Q_y^(-2) sum_(p<q<=y) p^(-2alpha) q^(-2alpha) |kappa_v(H log(q/p))|^2`.
 
-VIS-191 proves that this threshold is not merely a weakness of that upper bound. For every fixed `0<=alpha<1/2`, if `H log y/y -> 0`, ordinary consecutive prime pairs in `(y/2,y]` already contribute
+Squaring the taper kernel makes the near-pair energy summable at scale `1/H`. For every `H->infinity` with `H<=y`,
 
-`liminf O_v(y;H,T) >= (1-2alpha)/2`.
+`R_v(y,H) << 1/H`,
 
-The input is only the prime number theorem, telescoping of top-half consecutive gaps, and continuity of the taper Fourier kernel at zero. A positive proportion of consecutive gaps are `O(log y)`; at subcritical `H` their frequencies satisfy `H log(q/p)=o(1)`, so the kernel sees them with modulus tending to one. Their normalized absolute mass is order one.
+and when `H log y/y -> 0`, ordinary prime-pair lower control gives the matching `R_v(y,H) asymp 1/H`. Thus the signed off-diagonal has start-RMS size `H^(-1/2)` throughout the diverging subcritical regime, even though its absolute envelope is still order one.
 
-Hence `y/log y` is a genuine Fourier-resolution boundary for the **absolute-value method**: above it by a diverging factor the full envelope vanishes, while below it by a vanishing factor the envelope is bounded away from zero. Extra fixed smoothness cannot repair the unresolved consecutive-prime population because the obstruction comes from kernel continuity near frequency zero, not tail decay.
+The conceptual boundary has shifted. `y/log y` is the sharp threshold for **absolute** resolution, not for signed diagonalization after start averaging. The unresolved short-gap population is large in absolute mass but its distinct phase frequencies cancel in long-start `L^2`.
 
-The remaining route inside this observable is therefore specifically **signed cancellation** among kernel-unresolved short-gap pairs at the critical/subcritical scale. The order-one absolute envelope does not imply that the signed mean `M_v-1` stays large. If such signed cancellation cannot be proved from the arithmetic source, the observable must change—through higher/growing-order information, source-adapted/discrete sampling, nonlinear statistics, or another controlled representation.
+The next resource is start control. A downstream theorem that requires one deterministic start, uniformity in `T`, or an averaging interval whose length scales with `y` cannot import the infinite-Cesàro identity for free. One must either prove a quantitative finite-start-window orthogonality estimate, identify a source-selected start family with enough phase dispersion, or show that the final target only needs an averaged/density-one statement.
 
-**Boundary.** VIS-191 does not prove a critical-scale constant, signed prime-pair correlation, failure of mean-square diagonalization below `y/log y`, or any RH consequence. It closes only the idea that stronger absolute prime-pair estimates or a smoother fixed taper can push the same absolute-envelope argument below that scale.
+**Boundary.** VIS-192 is not a uniform-in-`T` bound and does not control start windows tied to the prime height. It uses exact uniqueness of prime-ratio frequencies but no random-phase hypothesis. The result closes the idea that macroscopic absolute short-gap mass by itself prevents signed subcritical diagonalization; it does not close the deterministic-start problem.

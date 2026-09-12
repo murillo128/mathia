@@ -1,33 +1,29 @@
-# MI-005 — Stable tails are the uncancelled part of a future partial-correlation volume budget
+# MI-005 — Stable tails are the uncancelled cross-cut area of interval-conditioned correlations
 
-**Evidence level:** supported by NB-063--NB-075. The stationary prediction/feedthrough criterion is exact for scalar branch filters, and NB-074--NB-075 give exact finite-dimensional necessary/sufficient continuation criteria for the nonstationary causal geometry; no arithmetic estimate closing those criteria is proved.
+**Evidence level:** supported by NB-063--NB-076. The stationary prediction/feedthrough criterion is exact for scalar branch filters, and NB-074--NB-076 give exact finite-dimensional continuation identities for the nonstationary causal geometry; no arithmetic estimate closing those criteria is proved.
 
-NB-066--NB-071 reduce a hypothetical persistent Nyman target to a global continuation problem and show that local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning do not decide it. NB-072--NB-073 identify the stationary mechanism: inner--outer factorization separates stable-tail geometry from conditioning, and the missing inner charge is a future-prediction/feedthrough ratio.
+NB-066--NB-073 reduce a hypothetical persistent Nyman target to a global continuation problem and show that local memory, finite causal flags, exact branching, far-mass necessity, and ordinary global Gram conditioning do not decide it. NB-074 gives the nonstationary charge `J_(R,N)`: bounded charge along an unbounded sequence rules out a stable tail, while any nonzero stable tail forces the charge to diverge for every finite horizon schedule.
 
-NB-074 gives the nonstationary analogue. For visible Gram `A_R` and the prefix Gram `S_(R,N)` left after optimally eliminating future innovations `D_R,...,D_N`, define
+NB-075 resolves that determinant into raw continuation volume `L_R` minus nonnegative future-conditioned multiple-correlation charges. NB-076 resolves the multiple correlations one step further. For `j<n`, residualize `D_j` and `D_n` against the intervening span `D_(j+1),...,D_(n-1)`, let `rho_(j,n)` be their endpoint correlation, and put
 
-`J_(R,N)=log det(A_R^(-1/2) S_(R,N) A_R^(-1/2))`.
+`kappa_(j,n)=-log(1-|rho_(j,n)|^2)>=0`.
 
-A nonzero stable-tail vector forces `J_(R,N(R))->infinity` for every finite horizon schedule. Conversely, bounded `J_(R_k,N_k)` along any unbounded sequence rules out the stable tail.
+Then the exact chain rule is
 
-NB-075 resolves this determinant into an exact scalar cancellation ledger. Before future elimination let
+`-log(1-beta_(R,n)) = sum_(j<R) kappa_(j,n)`,
 
-`L_R=log(det H_(<R) / det A_R)`
+so
 
-be the raw continuation volume. Residualize each new `D_n` and the old prefix against the previously admitted future `D_R,...,D_(n-1)`, and let `beta_(R,n)` be the squared multiple correlation of the genuinely new part of `D_n` with the still-unresolved prefix. Then `0<=beta_(R,n)<1` and
+`J_(R,N)=L_R-sum_(j<R<=n<=N) kappa_(j,n)`.
 
-`J_(R,N)=L_R-sum_(n=R)^N [-log(1-beta_(R,n))]`.
+Each lattice atom has the contiguous-Gram form
 
-Thus later innovations remove raw continuation volume in nonnegative scalar increments, counted once after conditioning on the earlier future. Large raw tail energy or a large raw determinant ratio is not itself an obstruction: it may be cancelled completely by later innovations. The stable-tail currency is the **uncancelled remainder** after the whole future is allowed to explain the prefix.
+`kappa_(j,n)=log(Delta_(j,n-1) Delta_(j+1,n) / (Delta_(j,n) Delta_(j+1,n-1)))`.
 
-For fixed `R`, the infinite cancellation sum converges and
+It is therefore a nonnegative mixed log-determinant curvature for one contiguous interval. The entire future cancellation is the area of those atoms crossing the cut `R`; no atom is double-counted.
 
-`J_(R,infinity)=L_R-sum_(n>=R)[-log(1-beta_(R,n))] >= 0`.
+This produces a genuinely smaller source target. Define the width-`H` cross-cut band by summing `kappa_(j,j+h)` over `1<=h<=H` and intervals that cross `R`. If along unbounded `R_k` some finite `H_k` makes this band at least `L_(R_k)-C`, then the stable tail is zero. The stronger condition using the sum of `|rho_(j,j+h)|^2` also suffices.
 
-Any nonzero stable tail forces this remainder to diverge as `R->infinity`. Conversely it is enough to find unbounded `R_k`, finite `N_k`, and fixed `C` with
+The durable interpretation is that the obstruction is not “future prediction” in the abstract. It is a **deficit of interval-conditioned correlation area** relative to the raw continuation volume. An arithmetic proof may attack a finite/mesoscopic family of contiguous Gram blocks near the cut rather than one growing inverse Gram matrix.
 
-`sum_(n=R_k)^N_k [-log(1-beta_(R_k,n))] >= L_(R_k)-C`.
-
-Since `-log(1-x)>=x`, the stronger scalar condition `sum beta_(R_k,n)>=L_(R_k)-C` also suffices. The arithmetic target is therefore not “make the raw tail small”; it is to show that actual later Nyman innovations recover essentially all raw continuation volume, to `O(1)` accuracy along some unbounded sequence.
-
-**Boundary.** Divergent uncancelled volume is necessary for a stable tail but not sufficient in a general growing-dimensional family; determinant growth can come from many moderate directions. The individual `beta_(R,n)` depend on elimination order even though their total logarithmic cancellation for a fixed future span is invariant. NB-075 supplies an exact source-facing scalarization, not the missing arithmetic bound.
+**Boundary.** A nonzero stable tail forces the infinite remainder `L_R-sum_(j<R<=n)kappa_(j,n)` to diverge, but the converse is not asserted for a general growing-dimensional family. Raw pairwise correlations do not replace the conditioned `rho_(j,n)`; even raw-orthogonal endpoints can become strongly linked after the intervening block is removed. NB-076 supplies an exact localization of the cancellation budget, not the missing arithmetic lower bound.
