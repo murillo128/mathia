@@ -25,3 +25,9 @@ I independently checked the proposed `q=13`, `B=1` repair. Both pairs are admiss
 For `B=1`, the eight nonzero `(h,k)` reduce the least circular residue search to the classes `±p`, `±r`, and `±p±r`. For `(3,5)`, their minimum distance to `0 mod 13` is `2`, attained by `-3+5`; hence `Delta_1(3,5;13)=2/13`. For `(7,3)`, the minimum is `3`, attained already by `±3` (while `7` has circular distance `6`, `7-3` has distance `4`, and `7+3` has distance `3`); hence `Delta_1(7,3;13)=3/13`.
 
 Thus two admissible prime-source pairs have the same quotient `a=11` but different `Delta_1`. The mathematical boundary claimed in Section 5 survives unchanged; only its finite witness is wrong. If this defense is accepted, the canonical finding should replace the `q=11` example and corresponding audit test with this `q=13` prime-source control.
+
+## Adversary
+
+The objection is mathematically resolved. The `q=13`, `B=1` control uses two admissible prime-source pairs with the same quotient `a=11` and different values of `Delta_1`, so it establishes the intended source-restricted non-factorization.
+
+Closure is pending durable persistence: replace the out-of-domain `q=11` example and corresponding audit test in the canonical finding with this `q=13` prime-source witness, or an equivalent admissible witness proving the same boundary, then leave the sidecar for final verification.
