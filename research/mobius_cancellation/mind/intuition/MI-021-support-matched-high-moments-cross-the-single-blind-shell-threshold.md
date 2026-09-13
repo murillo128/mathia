@@ -1,37 +1,21 @@
-# MI-021 — Support-matched high moments reduce to a radial signed source-walk theorem
+# MI-021 — Support-matched high moments reduce to arithmetic information in the Legendre sign distribution
 
-**Evidence level:** the amplification threshold and tensor/Krawtchouk representation are exact through [MC-264](../../findings/MC-264-support-matched-high-moment-blind-threshold.md); [MC-265](../../findings/MC-265-even-support-central-krawtchouk-balance-obstruction.md) rules out first-order balance plus termwise absolute values; [MC-266](../../findings/MC-266-tensor-pair-krawtchouk-radial-source-walk-collapse.md) exactly collapses the weighted pair geometry to a radial `2m`-step Boolean-cube source walk. The required signed support-resolved estimate remains open.
+**Evidence level:** the amplification threshold is exact through [MC-264](../../findings/MC-264-support-matched-high-moment-blind-threshold.md); [MC-265](../../findings/MC-265-even-support-central-krawtchouk-balance-obstruction.md) rules out first-order balance plus termwise absolute values; [MC-266](../../findings/MC-266-tensor-pair-krawtchouk-radial-source-walk-collapse.md) collapses the weighted pair geometry to a radial Boolean-cube source walk; and [MC-267](../../findings/MC-267-krawtchouk-source-hierarchy-amplitude-duality.md) proves that this radial hierarchy is exactly a Krawtchouk change of basis for the original shell-amplitude distribution. The required arithmetic cancellation remains open.
 
-The surviving blind relation lives on a shell-prime subset of size `t`. At the first admissible support `t~(1/log 2)log log y`, low moments cannot isolate one exceptional subset from the fixed-weight family. MC-264 shows that one extra tensor power is enough: at `m=t+1`, the normalized diagonal cost is of order
+The surviving blind relation lives on a shell-prime subset of size `t`. At the first admissible support `t~(1/log 2)log log y`, MC-264 shows that moment order `2(t+1)` has enough diagonal leverage to exclude one blind atom if a near-diagonal moment estimate can be proved. MC-265 shows that generic first-order Hamming balance is far too weak after absolute values.
 
-`2^(t+1) sqrt(t)/k_y`,
+MC-266 rewrites the moment as
 
-which tends rapidly to zero. Thus a near-diagonal `2(t+1)`-th moment estimate has ample room to exclude every blind subset.
+`S_(2m,y)(t)=sum_(s even) C_(2m,k_y)(s) H_(s,y)(t)`,
 
-MC-265 identifies why generic shell balance is not that estimate. Even at exact Hamming balance, the even Krawtchouk kernel is still parametrically too large for pairwise triangle-inequality control. The needed gain has to occur before absolute values are taken.
+where `H_(s,y)(t)` is the signed shell aggregate over products of exactly `s` lower primes. MC-267 identifies what this representation does and does not buy. If `b_y(T)` is the number of negative lower-prime Legendre signs on a shell subset `T`, then
 
-MC-266 then removes the pair indices themselves. If `a_y=sum_p delta_(e_p)` on the lower-prime Boolean cube and `c_m=a_y^(*m)`, exponent two gives the exact autocorrelation identity
+`H_(s,y)(t)=sum_(|T|=t) K_s(b_y(T);k_y)`.
 
-`sum_u c_m(u)c_m(uq)=c_(2m)(q)`.
+Thus the complete support profile is exactly the Krawtchouk transform of the empirical Hamming-weight histogram of the original sign vectors. At finite depth the even layers `H_0,H_2,...,H_(2m)` are triangularly equivalent to the even amplitude moments `M_0,M_2,...,M_(2m)`.
 
-Therefore
+This makes the algebraic boundary precise. Krawtchouk orthogonality, the three-term recurrence, Hamming-association-scheme identities and radial hypercube-walk structure are **information-neutral** until extra arithmetic input is inserted. They can reorganize the target moment but cannot themselves force the missing cancellation. A neighboring-layer recurrence is useful only if its coefficients or right-hand side are controlled by a theorem about the actual Legendre sign image, not if it is merely the universal Krawtchouk recurrence in another notation.
 
-`S_(2m,y)(t)=sum_q c_(2m,y)(q) K_t(d_y(q);N_y)`.
+The live route is therefore a source theorem: constrain the distribution of `T -> (sigma_p(T))_p`, its Hamming histogram `A_(y,t)(b)`, a genuinely non-radial refinement, or an equivalent signed combination strongly enough at `m=t+1` to beat the MC-264 threshold before absolute values destroy cancellation. The `H_s` basis may still be the easiest place to state such a theorem, but success must come from arithmetic, not from the basis transform itself.
 
-The coefficient `c_(2m,y)(q)` is radial in `s=omega(q)`. Writing
-
-`H_(s,y)(t)=sum_(omega(q)=s) K_t(d_y(q);N_y)`
-
-and
-
-`C_(2m,k)(s)=(2m)! [z^(2m)] (sinh z)^s (cosh z)^(k-s)`,
-
-the whole target becomes
-
-`S_(2m,y)(t)=sum_(s even, 0<=s<=2m) C_(2m,k_y)(s) H_(s,y)(t)`.
-
-The diagonal is `s=0`. Every nontrivial collision-depth layer can have raw positive coefficient mass of higher polynomial degree in `k_y` than the diagonal, so radial reduction is not a small-error argument. Its value is structural: **the missing theorem is a finite hierarchy of signed arithmetic shell sums over products of exactly `s` lower primes, not an arbitrary weighted two-source distance distribution.**
-
-At the live `m=t+1~log log y`, one can therefore attack the support layers directly, derive recurrences that couple neighboring even `s`, or estimate the exact radial mixture without absoluteizing each layer. If available character-sum technology only controls `H_s` at the scale of its raw layer mass, the route still fails; if arithmetic produces signed cancellation across the hierarchy, this is the direct route back to the MC-264 threshold.
-
-**Boundary.** Radiality is source-side only: the Legendre-signature distance `d_y(q)` need not depend only on `omega(q)`. MC-266 proves no new moment estimate and excludes no blind relation. It changes the primitive analytic object that must be controlled.
+**Boundary.** MC-267 proves no new moment estimate and excludes no blind relation. Full Krawtchouk invertibility does not make individual support-layer estimates useless; it says only that universal transform identities add no scalar-distribution information. The surviving gain may still arise from arithmetic cancellation visible more naturally in the support basis than in raw amplitude moments.

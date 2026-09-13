@@ -1,8 +1,8 @@
-# MI-003 — Bounded normalized record defect closes every current one-step predecessor branch
+# MI-003 — Source-record slowdown supplies bounded defect; the remaining loss is depth growth
 
-**Evidence level:** exact through [FD-094](../../findings/FD-094-normalized-schur-energy-records-upgrade-frontier-carriers-to-fixed-occupation.md) for the exact lower transports and through [FD-095](../../findings/FD-095-bounded-record-defect-turns-the-source-head-into-an-amplitude-scale-predecessor.md) for the formerly terminal source-head branch. Existence of sufficiently sharp occupied packets with bounded defect, and uniform control through many predecessor steps, remain open.
+**Evidence level:** exact through [FD-094](../../findings/FD-094-normalized-schur-energy-records-upgrade-frontier-carriers-to-fixed-occupation.md) for repairable lower transports, [FD-095](../../findings/FD-095-bounded-record-defect-turns-the-source-head-into-an-amplitude-scale-predecessor.md) for the formerly terminal source-head branch, and [FD-096](../../findings/FD-096-source-record-doubling-slowdown-forces-sharp-occupied-bounded-defect-horizons.md) for existence of infinitely many sharp occupied bounded-defect entry states under a false-RH frontier. Uniform control through a depth growing with the starting scale remains open.
 
-For fixed `sigma>1/2`, normalize the complete Schur energy by
+For fixed `1/2<sigma<Theta`, normalize the complete Schur energy by
 
 `F_sigma(N)=E_(N,1)/N^(2 sigma)`
 
@@ -10,24 +10,20 @@ and measure the parent's backward record defect by
 
 `R_sigma(H)=max(1, sup_(2<=N<H) F_sigma(N)/F_sigma(H))`.
 
-For every branch that already admits an exact lower mask at `C<H`, FD-094 shows that the gap between frontier-normalized size and fixed lower-state occupation is exactly priced by `R_sigma(H)`: if
+FD-094 shows that `R_sigma(H)` is exactly the price that turns a frontier-sized transported carrier into a fixed lower-state occupation fraction. FD-095 removes the qualitatively different dyadic source-head atom: source Lipschitz coherence permits an amplitude-scale backward move and four-adic reembedding, again with bounded inherited defect whenever the parent defect is bounded.
 
-`M_C/C^(2 sigma) >= (a-o(1)) F_sigma(H)`,
+FD-096 closes the previously missing entry theorem without intersecting two unrelated packet families. For the normalized physical source record
 
-then
+`P_sigma(X)=max_(n<=X) |mathcal H(n)|/n^sigma`,
 
-`M_C/E_(C,1) >= (a-o(1))/R_sigma(H)`.
+the global power frontier forces infinitely many strict records with bounded doubling, for example `P_sigma(2X)<=2P_sigma(X)`. Set `H=4X`. Every complete Schur row `r>=2` then samples the source at an argument at most `2X`, while the nonsquarefree row `r=4` samples the sharp record value at `X` exactly. The same two-scale source envelope yields simultaneously
 
-FD-095 removes the only qualitatively different one-step branch. If the dyadic row-two/source-head value `S_H=|mathcal H(B_H)|` carries a fixed parent share, use the source's exact one-Lipschitz law instead of insisting on literal source preservation. Retreat by `h=floor(lambda S_H)` with fixed `0<lambda<1`, put `C=4(B_H-h)`, and reembed the nearby source value on the nonsquarefree row `4`. Then `C<H`, the source amplitude retains a `(1-lambda)` fraction, and bounded `R_sigma(H)` again upgrades the transported mass to a fixed occupation fraction of `E_(C,1)`.
+`E_(H,1)=H^(2Theta+o(1))`, `U_(H,1)/E_(H,1)>=c_sigma>0`, and `R_sigma(H)<=C_sigma`.
 
-On a sharp false-RH frontier the head backstep is not infinitesimal: `H-C >= H^(Theta-o(1))` while `C` remains comparable with `H`. The predecessor also inherits a bounded record defect, with a constant depending only on the parent's defect and the fixed transport parameters. The same inheritance is immediate for the other FD-094 branches.
+Thus the old coupling problem “find a sharp occupied packet with bounded historical defect” is no longer live under false RH. Infinitely many such packets are forced directly from source records, and every one admits a genuine lower sharp occupied bounded-defect continuation by FD-094--FD-095.
 
-Thus the current exact one-step statement has a single common hypothesis:
+The remaining obstruction is **iteration depth**. The inherited occupation and defect constants can deteriorate at each predecessor step. Odd-prime repairs may contract multiplicatively, whereas a source-head move can retreat only additively by `H^(Theta-o(1))`. FD-096 does imply chains of every fixed finite depth by starting sufficiently far out, but it does not give a chain whose depth tends to infinity with the starting horizon.
 
-**sharp occupied parent + `R_sigma(H)=O(1)` => some genuinely lower sharp occupied state + bounded inherited record defect.**
+A final contradiction therefore needs a depth-uniform invariant, a recurrent return to fresh source/energy records, or another quantitative mechanism showing that accumulated transport losses grow slowly enough relative to the number and geometry of predecessor steps. Re-proving one-step representability or bounded-defect entry no longer attacks the active boundary.
 
-The former source-head representability obstruction is no longer independent. The first residual is to couple the abundant sharp occupied packet family to bounded historical defect. False RH supplies infinitely many strict records of `F_sigma`, but that does not yet show that the occupied packet horizons hit records or even stay within a bounded factor of them.
-
-A second, logically later residual appears only after one-step closure: the inherited constants can deteriorate under iteration. Odd-prime branches may contract multiplicatively, while a head step can descend only additively by `H^(Theta-o(1))`. An infinite or sufficiently long descent therefore needs a uniform invariant, recurrent return to fresh records, or another mechanism preventing occupation/defect constants from degrading with depth.
-
-**Boundary.** FD-094--FD-095 do not prove a bounded-defect occupied sequence, a uniform multistep invariant, or the final false-RH contradiction. They do prove that, conditional on bounded record defect at the parent, no currently known local predecessor branch—including the source head—requires a separate representability theorem.
+**Boundary.** FD-096 is conditional on the false-RH frontier `Theta>1/2` and a fixed `sigma in (1/2,Theta)`. It proves neither a depth-uniform descent nor a contradiction to false RH. The convergence threshold `sigma>1/2` is structural in the Schur-row sum used to control the complete history.

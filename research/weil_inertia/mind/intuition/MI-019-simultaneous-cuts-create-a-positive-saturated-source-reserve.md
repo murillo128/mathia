@@ -1,36 +1,37 @@
-# MI-019 — Simultaneous cuts have a sharp harmonic mass-only reserve
+# MI-019 — Simultaneous cuts have complementary sharp mass and cross-cut shift reserves
 
-**Evidence level:** exact at a hypothetical attained first unrestricted Suzuki crossing through [WI-274](../../findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md) and [WI-275](../../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md). The total reserve is sign-independent. The prime-overlap corollary remains conditional on a one-signed null mode, and no theorem yet forces the harmonic reserve above the positive archimedean budget.
+**Evidence level:** exact at a hypothetical attained first unrestricted Suzuki crossing through [WI-274](../../findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md), [WI-275](../../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md), and [WI-276](../../findings/WI-276-cross-cut-energy-obeys-a-sharp-nilpotent-shift-reserve.md). The total reserves are sign-independent. The prime-overlap corollary remains conditional on a one-signed null mode, and no theorem yet forces the combined reserve above the positive archimedean budget.
 
-Single-cut localization prices each cut separately and hits a sharp Carleman wall as an internal gap closes. WI-274 changes the order of operations: impose firstness for all sharp cuts and integrate the family before estimating the source. A source pair at lag `h` crosses a set of cuts of length exactly `h`, so the lag weight regularizes the short-range archimedean singularity and leaves a positive saturated source reserve even though the endpoint eigenvalue is zero.
+Single-cut localization prices each cut separately and hits a sharp Carleman wall as an internal gap closes. WI-274 changes the order of operations: impose firstness for all sharp cuts and integrate the family before estimating the source. A source pair at lag `h` crosses a set of cuts of length exactly `h`, leaving a positive saturated source reserve even though the endpoint eigenvalue is zero.
 
-WI-275 shows that averaging the two complementary inequalities is not optimal. For each cut,
+WI-275 computes the sharp envelope of the complementary **mass-only** information. With
 
 `Q_t >= A_t M_L(t)`, `Q_t >= B_t M_R(t)`, `M_L+M_R=1`,
 
-with `A_t=lambda_((a+t)/2)` and `B_t=lambda_((a-t)/2)`. Therefore
+where `A_t=lambda_((a+t)/2)` and `B_t=lambda_((a-t)/2)`, one gets
 
 `Q_t >= A_t B_t/(A_t+B_t)`
 
-pointwise. Integrating gives the exact harmonic reserve
+and hence
 
 `S_v >= R_harm(a) := 2 integral_0^a lambda_r lambda_(a-r)/(lambda_r+lambda_(a-r)) dr`.
 
-This dominates the WI-274 area reserve, with the explicit gain
+The equality mass profile is monotone, so CDF monotonicity cannot improve this envelope. The complementary-mass relaxation is exhausted.
 
-`R_harm(a) - 2 integral_(a/2)^a lambda_s ds`
-`= 2 integral_0^(a/2) lambda_(a-r)(lambda_r-lambda_(a-r))/(lambda_r+lambda_(a-r)) dr >= 0`.
+WI-276 then retains information that WI-275 discards: the same null vector couples **different cuts**. Put `f(t)=sqrt(Q_t)`. Splitting the null mode at `t` and `t+2r` gives
 
-The improvement is also a sharpness theorem for the available information. The minimax equality mass profile
+`|F_v(r)-S_v| <= integral f(t) f(t+2r) dt`.
 
-`M_L^*(t)=B_t/(A_t+B_t)`
+Because `f` is supported in `[-a,a]`, translation by `2r` is a nilpotent contraction of order `N=ceil(a/r)`. The sharp Haagerup--de la Harpe numerical-radius inequality yields
 
-is monotone in `t`, so monotonicity of the left-mass CDF alone cannot strengthen the envelope. Any additional reserve must use information discarded by the two scalar cut bounds: regularity/differential constraints of the actual mass profile, relations among different `Q_t`, the Suzuki null equation, the PSD signed-source multiplier family, or nodal/source geometry.
+`S_v >= R_shift(r) := r lambda_r/(1+cos(pi/(ceil(a/r)+1)))`.
 
-On a one-signed branch the weighted prime overlap satisfies
+Therefore the current sign-free reserve is
 
-`P_v >= R_harm(a)-K_+`.
+`S_v >= max(R_harm(a), sup_(0<r<a) R_shift(r))`.
 
-Thus the immediate scalar test is no longer the old spectral area but the paired-radius harmonic functional. If rigorous constraints on `r -> lambda_r` force `R_harm(a)>K_+`, complete prime screening is impossible on that branch. If an admissible spectral profile can keep `R_harm(a)<=K_+`, the mass-only spectral route is exhausted and the next theorem must couple cuts through genuinely source-specific structure.
+The shift coefficient is itself sharp if one retains only `Q>=0` and compact support. This is a second relaxation boundary: generic one-shift decorrelation cannot improve WI-276. Any further reserve must exploit information absent from both sharp relaxations, such as the exact Weil-source shape of `Q_t`, compatibility among several shifts, regularity/nodal constraints of the actual first null mode, or a finite compression of the PSD signed-source multiplier family.
 
-**Boundary.** The harmonic reserve does not prove that the first null mode is one-signed, does not force prime overlap on a sign-changing branch, and does not assert that the minimax equality profile is realized by an actual Suzuki eigenfunction. Its role is to mark the exact boundary of the complementary-mass relaxation.
+On a one-signed branch the weighted prime overlap obeys `P_v >= S_v-K_+`. The immediate scalar test is therefore the **maximum** of the harmonic and shift reserves against `K_+`, not either bound in isolation. If rigorous constraints on `r -> lambda_r` force this maximum above `K_+`, complete prime screening is impossible on that branch. If an admissible profile keeps both below the budget, the next theorem must use source/eigenfunction shape rather than another universal relaxation.
+
+**Boundary.** Neither reserve proves that the first null mode is one-signed or forces prime overlap on a sign-changing branch. Their abstract sharpness extremizers need not be simultaneously compatible with Suzuki's exact null equation; that possible incompatibility is now one of the main remaining sources of quantitative gain.

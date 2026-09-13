@@ -8,36 +8,30 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Test the harmonic simultaneous-cut reserve against the archimedean budget, then use genuinely cross-cut source information
+## Test the combined harmonic and nilpotent-shift reserve against the archimedean budget
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`.
 
-The first-crossing source equation has defeated finite-lag screening and generic positivity shortcuts. WI-273 shows that every mass-only single-cut `L^2` refinement hits the half-Carleman wall as the gap closes. WI-274 escapes that pointwise degeneration by imposing the entire family of complementary sharp cuts before integrating the source.
+The first-crossing source equation has defeated finite-lag screening and generic positivity shortcuts. WI-274 turns the whole family of complementary sharp cuts into a positive saturated source reserve. [WI-275](../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md) computes the sharp mass-only envelope
 
-[WI-275](../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md) sharpens the same data at each cut. If
+`R_harm(a)=2 integral_0^a lambda_r lambda_(a-r)/(lambda_r+lambda_(a-r)) dr`.
 
-`A_t=lambda_((a+t)/2)`, `B_t=lambda_((a-t)/2)`
+Its equality mass profile is monotone, so scalar CDF information cannot strengthen it.
 
-and `M_L+M_R=1`, simultaneous firstness gives
+[WI-276](../findings/WI-276-cross-cut-energy-obeys-a-sharp-nilpotent-shift-reserve.md) adds genuinely cross-cut information. For `f(t)=sqrt(Q_t)`, two separated cuts and the PSD null-form geometry give `|F_v(r)-S_v|` bounded by the shift correlation of `f`. Compact support makes translation by `2r` nilpotent of order `ceil(a/r)`, so the sharp numerical-radius theorem yields
 
-`Q_t >= A_t M_L`, `Q_t >= B_t M_R`,
+`S_v >= r lambda_r/(1+cos(pi/(ceil(a/r)+1)))`.
 
-hence the exact minimax floor
+The sign-free source reserve is therefore bounded below by the maximum of this shift family and `R_harm(a)`. On a one-signed branch complete prime screening is possible only if that maximum stays at or below `K_+`.
 
-`Q_t >= A_t B_t/(A_t+B_t)`.
+The immediate theorem is quantitative: derive enough rigorous information on `lambda_r` to decide the combined budget test. If current spectral constraints permit both reserves to remain below `K_+`, further progress must use structure discarded by **both** sharp relaxations. WI-275 exhausts complementary masses; WI-276's coefficient is sharp for arbitrary nonnegative compactly supported cut-energy profiles. The surviving inputs are actual Weil-source shape, regularity/nodal constraints of the null eigenfunction, compatibility among several shifts, or a source-preserving compression of the exact multiplier form.
 
-After integration the saturated source satisfies
+## Treat support-only sharpness as a boundary, not as source sharpness
 
-`S_v >= R_harm(a) = 2 integral_0^a lambda_r lambda_(a-r)/(lambda_r+lambda_(a-r)) dr`.
+WI-276's Haagerup--de la Harpe extremizer proves that compact support plus `Q_t>=0` cannot yield a better one-shift constant. It does not prove that an actual Suzuki first-crossing energy profile can realize that extremizer while also saturating the harmonic mass envelope and the signed source equation.
 
-This strictly improves the WI-274 area reserve whenever the paired-radius eigenvalue profile is genuinely asymmetric. On a one-signed branch it yields
+That compatibility question is now a precise opportunity. A multi-shift or finite-partition argument is useful only if it keeps constraints that an arbitrary nonnegative support profile does not satisfy. Replacing the exact source by another unsigned compact-support inequality cannot cross the new boundary.
 
-`P_v >= R_harm(a)-K_+`,
+## Keep endpoint firstness, source reserve, sign geometry and prime overlap as separate gates
 
-so complete prime screening is possible only if `R_harm(a)<=K_+`.
-
-The mass-only optimization is now exhausted: the pointwise equality profile `M_L^*(t)=B_t/(A_t+B_t)` is monotone, so CDF monotonicity alone cannot improve the harmonic envelope. The immediate theorem is to obtain enough rigorous information on the paired-radius curve `lambda_r` to force `R_harm(a)>K_+`. If that comparison is compatible with all known spectral constraints, the next input must genuinely couple different cuts through the Suzuki null equation, signed-source multiplier form, regularity/nodal structure, or another relation absent from the scalar mass relaxation.
-
-## Treat endpoint firstness, harmonic reserve, sign geometry and prime overlap as separate gates
-
-The positive harmonic reserve is sign-independent but remains a bound for the total saturated source. The one-signed prime-overlap tariff does not transfer to a sign-changing null mode, and ordinary semigroup positivity is unavailable in the relevant regime. Future work should preserve the simultaneous-cut reserve while adding exactly the source/sign information needed either to beat `K_+` or to prevent prime and archimedean cancellation from hiding inside the positive total reserve. Re-averaging the same two complementary mass inequalities is no longer a new mechanism.
+The combined reserve is sign-independent but remains a bound for the total saturated source. The one-signed prime-overlap tariff does not transfer to a sign-changing null mode, and ordinary semigroup positivity is unavailable in the relevant regime. Future work should preserve the exact reserve while adding only the source/sign information needed either to beat `K_+` or to prevent prime and archimedean cancellation from hiding inside the positive total reserve.

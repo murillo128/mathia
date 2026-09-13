@@ -1,35 +1,27 @@
-# MI-010 — An actual off-critical zero is coordinate-small but collectively leverage-large after normalization
+# MI-010 — Finite distinct off-critical zero states add their normalized growing-depth volume repair
 
-**Evidence level:** exact through [NB-092](../../findings/NB-092-growing-depth-mobius-annulus-mode-forces-polynomial-blaschke-gram-gain.md), [NB-093](../../findings/NB-093-single-zero-growing-depth-gram-gain-is-rank-one-causal-state-leverage.md), and [NB-094](../../findings/NB-094-zero-cancellation-keeps-coordinate-state-cost-bounded-while-leverage-grows.md) for one actual zero `rho=beta+i gamma` with `beta>1/2`. Multiple interacting zero states and any final Nyman-distance implication remain open.
+**Evidence level:** exact through [NB-092](../../findings/NB-092-growing-depth-mobius-annulus-mode-forces-polynomial-blaschke-gram-gain.md), [NB-093](../../findings/NB-093-single-zero-growing-depth-gram-gain-is-rank-one-causal-state-leverage.md), [NB-094](../../findings/NB-094-zero-cancellation-keeps-coordinate-state-cost-bounded-while-leverage-grows.md), and [NB-095](../../findings/NB-095-finite-distinct-zero-states-add-their-growing-depth-volume-repair.md) for every fixed finite set of pairwise distinct actual zeros `rho_r=beta_r+i gamma_r` with `beta_r>1/2`. Growing-cardinality divisors, repeated zeros, and any final Nyman-distance implication remain open.
 
-Growing multiplicative depth exposes a genuine arithmetic near-kernel. On the band `m<=j<mq`, NB-092 constructs a canonical Möbius annulus whose raw Gram energy becomes small while an off-critical Blaschke factor repairs the same direction at scale `q^(2beta-1)`. NB-093 shows that for one zero this repair is exactly one causal-state rank-one update
+Growing multiplicative depth exposes a genuine arithmetic near-kernel. On the band `m<=j<mq`, NB-092 constructs a canonical Möbius annulus whose raw Gram energy becomes small while an off-critical Blaschke factor repairs the same direction at scale `q^(2beta-1)`. NB-093 identifies the one-zero repair as a causal-state rank-one update, and NB-094 uses the exact zero identity to show that every state coordinate is only `O_rho(R^(-1/2))` even while inverse-Gram leverage grows like `q^(2beta-1)`. Diagonal normalization therefore costs only `O_rho(1)` and retains the full one-zero exponent.
 
-`K_R^(rho)=A_R+s_R s_R^*`,
+NB-095 closes the fixed finite-state interaction problem. For a fixed set `F={rho_1,...,rho_d}` of distinct right-half zeros, successive causal states on partially deflated sources are a **fixed invertible triangular transform** of the raw single-zero state vectors. After the anisotropic scaling by `q^(rho_r-1/2)`, the raw inverse-Gram interaction converges uniformly to a positive Cauchy/model-space Gram of the exponentials `e^(-(rho_r-1/2)t)` on `[0,log q]`. Distinct zero directions therefore remain linearly independent rather than collapsing into the largest one.
 
-with inverse-Gram leverage `tau_(m,R)=s_R^*A_R^(-1)s_R`.
+If
 
-NB-094 resolves the diagonal-normalization ambiguity by using the zero condition itself. In the finite-cutoff state formula, `zeta(rho)=0` cancels the only large coordinate term. Uniformly for every `1<=j<R`,
+`A_F=sum_r (beta_r-1/2)`,
 
-`|s_(j,R)| <= C_rho R^(-1/2)`.
+then for `R=mq`, uniformly for `m` sufficiently large and every `q>=2`,
 
-Since the raw diagonal is bounded below, the total coordinatewise normalization bill satisfies
+`det R_(m,mq)^[F] / det R_tilde_(m,mq) asymp_F q^(2A_F)`.
 
-`sum_(j=m)^(R-1) log(1+nu_(j,R)) = O_rho(1)`
+Equivalently,
 
-for every band. This is not a generic all-pass fact: away from a zero the uncancelled `j^(1-w)` term prevents the same coordinate suppression.
+`log(det R^[F]/det R_tilde)=2 sum_r(beta_r-1/2) log q + O_F(1)`.
 
-At the same time the leverage has an exact orthogonal-cell formula and, for `R=mq`, obeys
+Thus finite distinct zero interactions do not screen the normalized volume repair: **their horizontal masses add**. The centered correlation-entropy sign remains the same as for one zero—a repair/entropy deficit, not a positive entropy charge.
 
-`1+tau_(m,mq) asymp_rho q^(2beta-1)`.
+This changes the residual problem. One-state normalization and fixed finite-state interaction are both closed. A genuinely new obstruction must appear only when the divisor is no longer a fixed finite set: growing state count with depth, repeated/multiple zeros, loss of uniform conditioning of the model-space Gram as ordinates/real parts vary, or the separate step converting the determinant repair into the target Nyman distance.
 
-Therefore the normalized correlation determinant keeps the whole exponent:
+The structural lesson is that coordinate smallness and collective leverage remain different resources even for several zeros. Exact source cancellation keeps each raw state cheap in the generator coordinates, while the inverse-Gram geometry retains their independent horizontal directions. Any future screening mechanism must therefore exploit a limit in the zero family, not merely finite nonorthogonality among causal states.
 
-`log(det R_(m,mq)^(rho)/det R_tilde_(m,mq)) = (2beta-1) log q + O_rho(1)`.
-
-This fixes both survival and sign. The state is tiny in every generator coordinate but large in the inverse-correlation geometry because the coordinates combine coherently along a near-kernel. **False RH appears here as a correlation-volume repair, equivalently a centered correlation-entropy deficit, not a positive entropy excess.**
-
-The remaining difficulty is no longer normalization of one state. Several Blaschke factors create a finite/multiple-state update on successively deflated sources; the states can interact, and coordinate renormalization after one factor changes the geometry seen by the next. A valid multi-zero theorem must control that interaction directly rather than sum isolated one-zero formulas.
-
-**Research consequence.** Treat `NB-094` as the closed single-zero bridge. Seek a finite-state or aggregate invariant whose normalized volume repair cannot be cancelled by interactions among off-critical zero states, or prove a monotonicity/interlacing law for the successive causal-state updates. Any target statistic must use the sign established here rather than expect a positive centered-entropy charge.
-
-**Boundary.** The result does not prove that the full Burnol product has an additive exponent, does not show that the largest off-critical zero dominates after all other factors, and does not by itself lower-bound the Nyman distance. It proves that diagonal normalization alone cannot erase the polynomial one-zero signal.
+**Boundary.** NB-095's constants depend on the fixed set `F`; it does not give estimates uniform in `|F|`, in close/confluent zero configurations, or in an infinite Blaschke divisor. Additivity for every fixed finite set is not yet an infinite-divisor theorem and does not by itself produce a lower bound for the Nyman distance.

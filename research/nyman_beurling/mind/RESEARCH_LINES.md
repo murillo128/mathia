@@ -8,22 +8,24 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Extend the single-zero normalized leverage law to the interacting zero family
+## Extend fixed-finite zero additivity to the growing divisor or to the target Nyman observable
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`.
 
-The fixed-depth story is calibrated: terminal scalar channels, the full terminal Gram, and fixed-ratio bands can remain source-silent after universal subtraction. NB-092 shows that growing depth is different: a canonical Möbius annulus is a raw near-kernel and one off-critical zero repairs that direction by `q^(2beta-1)`.
+The fixed-depth story is calibrated: terminal scalar channels, the full terminal Gram and fixed-ratio bands can remain source-silent after universal subtraction. NB-092 shows that growing multiplicative depth is different: a canonical Möbius annulus is a raw near-kernel and an off-critical zero repairs that direction polynomially.
 
-NB-093 identifies the single-zero update as one causal-state rank-one Gram perturbation with leverage `tau=s^*A^(-1)s` and an exact diagonal-normalization bill `prod_j(1+nu_j)`. [NB-094](../findings/NB-094-zero-cancellation-keeps-coordinate-state-cost-bounded-while-leverage-grows.md) closes that bridge for an actual zeta zero. The zero identity cancels the large coordinate term, giving uniformly `|s_(j,R)|=O_rho(R^(-1/2))` and hence only `O_rho(1)` total coordinate-inflation cost, while the inverse-Gram leverage on `R=mq` grows two-sided like `q^(2beta-1)`.
+NB-093 identifies the single-zero update as one causal-state rank-one Gram perturbation. NB-094 closes diagonal normalization for an actual zero: the zero identity keeps every coordinate `O_rho(R^(-1/2))`, so the coordinate-normalization cost is bounded, while inverse-Gram leverage on `R=mq` grows like `q^(2beta-1)`.
 
-Consequently the normalized determinant retains the full zero exponent:
+[NB-095](../findings/NB-095-finite-distinct-zero-states-add-their-growing-depth-volume-repair.md) now closes the interaction problem for every fixed finite set `F` of pairwise distinct off-critical zeros. Successive states on partially deflated sources are a fixed invertible triangular transform of the raw zero states, whose scaled inverse-Gram matrix has a uniformly positive Cauchy/model-space limit. Consequently
 
-`log(det R_(m,mq)^(rho) / det R_tilde_(m,mq)) = (2beta-1) log q + O_rho(1)`.
+`log(det R_(m,mq)^[F]/det R_tilde_(m,mq)) = 2 sum_(rho in F)(Re rho-1/2) log q + O_F(1)`.
 
-The sign is now fixed as well: one off-critical zero repairs the raw correlation volume, so the centered correlation entropy is **lower**, not higher, by `(2beta-1)log q+O(1)`. The old question “does diagonal normalization erase the growing-depth gain?” is closed for one actual zero.
+Finite distinct states therefore do not screen one another: their normalized volume-repair exponents add with the same sign as the one-zero law. The old question “does finite multi-state interaction erase the signal?” is closed.
 
-The live theorem is the interacting-zero extension. Successive Blaschke factors act on partially deflated intermediate sources, their causal states need not be orthogonal, and diagonal normalization is not monotone under adding states. Determine whether a finite or growing off-critical divisor still forces a calibrated volume-repair/entropy-deficit observable with a lower bound controlled by the largest real part or an additive state-space invariant, and whether that observable can be converted into a target-relevant Nyman obstruction.
+The live theorem begins only beyond fixed finite dimension. Determine whether the additive law remains quantitatively useful when the selected divisor grows with depth, when zero states become poorly conditioned or confluent, or when multiplicities must be retained; alternatively, convert the fixed-finite normalized volume repair directly into a target-relevant Nyman obstruction before taking such a limit. Any growing-family theorem must make the dependence on the zero set explicit rather than hide it in `O_F(1)`.
 
-## Keep coordinate suppression, collective leverage, normalized sign and multi-state interaction separate
+## Keep fixed-finite additivity, growing-family conditioning and target conversion separate
 
-NB-094 shows a particularly sharp source effect: every individual coordinate is small because `zeta(rho)=0`, yet the same state has polynomial inverse-correlation leverage because it aligns with a collective raw near-kernel. Rowwise energy and global leverage are therefore different resources. The single-zero normalized sign is no longer open; what remains is how several source states interact after each successive deflation and normalization. Future work should not return to an unnormalized determinant gain or assume that independent single-zero exponents simply add.
+NB-095 proves a strong finite-dimensional fact but not uniformity in the state count. The positive model-space Gram is uniformly controlled for one fixed distinct set, while its conditioning can in principle deteriorate as more zeros are inserted or parameters approach one another. That is a different resource from diagonal normalization, which is already controlled zero by zero.
+
+Future work should therefore distinguish three questions: the exact additive exponent for fixed finite divisors is settled; the stability of the constants and Gram geometry for a growing/confluent divisor is open; and the conversion from correlation-volume repair to Nyman distance remains a separate target-sensitivity problem. Returning to isolated one-zero estimates or assuming finite exponents merely sum in an infinite limit would discard the boundary identified by NB-095.

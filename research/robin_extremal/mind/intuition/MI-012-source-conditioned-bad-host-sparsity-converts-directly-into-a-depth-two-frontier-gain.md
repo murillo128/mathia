@@ -1,35 +1,37 @@
-# MI-012 — Robin needs sparse-sample information beyond ambient exceptional-set packing
+# MI-012 — Robin's direct sparse-host route is now a shifted four-zero/phase-kernel problem
 
-**Evidence level:** the host-to-frontier conversion is exact through [RE-095](../../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md); [RE-096](../../findings/RE-096-depth-two-bad-hosts-reduce-to-a-phase-stable-deformed-quadratic-sequence.md) gives the all-integer deformed-quadratic host reduction and phase geometry; [RE-097](../../findings/RE-097-bazzanella-quadratic-threshold-is-ambient-packing-not-phase-control.md) audits the quadratic prior art and proves that ambient exceptional-set packing cannot improve the existing Robin envelope. A direct sparse-sequence scarcity theorem below the required exponent remains open.
+**Evidence level:** the host-to-frontier conversion is exact through [RE-095](../../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md); [RE-096](../../findings/RE-096-depth-two-bad-hosts-reduce-to-a-phase-stable-deformed-quadratic-sequence.md) gives the all-integer deformed-quadratic host reduction and phase geometry; [RE-097](../../findings/RE-097-bazzanella-quadratic-threshold-is-ambient-packing-not-phase-control.md) proves that ambient exceptional-set packing cannot improve the Robin envelope; and [RE-098](../../findings/RE-098-resonant-four-zero-energy-already-clears-the-robin-host-window.md) shows that known near-resonant four-zero additive energy already crosses the required Robin exponent window. The shifted/nonresonant fourth-moment term remains open.
 
 After the higher-depth reductions, the residual mixed first/depth-two cells are sampled at
 
 `x(n)=eta_1^(-1)(eta_2(n))`, `n~X^(1/2)`.
 
-RE-095 shows that any fixed power saving in the bad-host count at interval length `X^vartheta`, with `vartheta<73/200`, lowers the `173/200` frontier. RE-096 shows the analytic upper bound need not retain prime host indices: it is enough to control all integer hosts on the exact deformed sequence.
+RE-095 shows that any fixed power saving in the bad-host count at interval length `X^vartheta`, with `vartheta<73/200`, lowers the `173/200` frontier. RE-096 shows that the analytic upper bound may enlarge to all integer hosts and that the logarithmic phase remains quadratically stable even though the physical displacement from `n^2/2` is large.
 
-The sample has two very different notions of closeness. In position space,
+RE-097 separates ambient packing from genuine sparse-sample information. Bazzanella's published quadratic `13/32` threshold in the relevant range comes from embedding sparse exceptions into an ordinary ambient PNT exceptional set. That mechanism transfers to the CA sample by spacing but cannot improve Robin beyond the existing ambient frontier. The useful quadratic analogy must therefore enter through a direct phase-sensitive estimate.
 
-`x(n)-n^2/2 ~ X/log X`,
+RE-098 tests the natural fourth-moment route and finds that its **near-resonant zero energy is already strong enough**. If
 
-so interval inclusion from ordinary square starts is useless at the Robin scale. In logarithmic phase geometry,
+`N^*(sigma,T)=#{|gamma_1+gamma_2-gamma_3-gamma_4|<=1}`,
 
-`(log x)' = 2/t + O(1/(t(log t)^2))`,
+then the known Heath-Brown/Bazzanella bound gives a power saving on the resonant contribution whenever
 
-`(log x)'' = -2/t^2 + O(1/(t^2(log t)^2))`,
+`vartheta > vartheta_res = (69-16 sqrt(3))/121 = 0.3412164221...`,
 
-so zero-sum phases remain a slowly deformed quadratic family.
+which lies strictly below `73/200=0.365`. Thus there is a nonempty exponent window in which the resonant quartets are not the bottleneck.
 
-RE-097 clarifies exactly where these facts matter. Bazzanella's published quadratic threshold `13/32` in the relevant small-interval regime is obtained by packing each sparse exception into an ordinary ambient PNT exceptional set. That proof uses spacing, not quadratic oscillation. The same packing transfers to `x(n)` despite its physical drift, but its information content is already available to Robin through the RE-094 ambient frontier.
+The unresolved term is shifted. Writing `Omega=gamma_1+gamma_2-gamma_3-gamma_4` and
 
-More generally, if a proof bounds bad sampled hosts only by attaching disjoint `H`-packets to an ambient exceptional set, RE-097 proves that the resulting Robin frontier is never better than the existing envelope. Thus **ambient scarcity is not source-conditioned scarcity merely because it is evaluated on a sparse host sequence**.
+`S_X(Omega)=sum_(n~X^(1/2)) exp(i Omega log x(n))`,
 
-The potentially useful part of the quadratic analogy is the genuinely direct sparse-sequence architecture used in other parameter regimes: higher moments, zero additive energy, exponent-pair/oscillatory estimates, or another argument that sees the phase family itself. The target is now precise: prove
+the nonresonant fourth moment reduces dyadically to weighted shifted energies of the form
 
-`#Z_vartheta(X) <= X^(1/2-delta+o(1))`
+`X^(4sigma-4) sum_U K_X(U) N^*_sh(sigma,T;U)`,
 
-for some `vartheta<73/200`, `delta>0`, by an argument that does not factor solely through one-variable ambient exceptional-set measure.
+where `K_X(U)=sup_(U<|omega|<=2U)|S_X(omega)|`. Ordinary unshifted additive energy plus a generic count of possible shifts loses the entire gain and reproduces the square-root barrier `vartheta>1/2`.
 
-**Research consequence.** Do not try to transfer the numerical `13/32` threshold or improve the ambient packet-counting step. Use the stable derivatives of `log x(n)` only in a direct sparse-sample estimate capable of producing information unavailable to RE-094. That is the first mechanism that can genuinely lower the mixed depth-two Robin frontier.
+So the live resource is the **coupling between shifted zero-additive energy and the deformed-quadratic oscillatory kernel**, not a better estimate for the near-resonant energy alone. RE-096's stable derivatives of `log x(n)` now have a precise place to enter: they must produce cancellation in `K_X(U)`, support a stronger shifted-energy estimate, or combine both strongly enough to yield a power-saving bad-host count for some `vartheta` in `(vartheta_res,73/200)`.
 
-**Boundary.** RE-097 does not prove such a sparse-sample estimate and does not show that the phase-stable deformation is sufficient. It only classifies the ambient-packing proof family as non-improving for this target and leaves the direct phase-sensitive route open.
+**Research consequence.** Do not spend the next step improving ambient exceptional-set packing or ordinary `N^*(sigma,T)` unless the improvement is explicitly coupled to the shifted kernel. The resonant exponent budget already clears the Robin window. The target is the weighted nonresonant sum, and any claimed fourth-moment advance should be measured directly against it.
+
+**Boundary.** RE-098 does not prove sparse-host scarcity, does not show that the CA deformation itself creates cancellation, and does not control `|Omega|>1`. Its resonant calculation is equally valid for exact quadratic starts. The remaining theorem is source/sample-specific precisely because the shifted phase kernel is where the deformed sequence first matters.
