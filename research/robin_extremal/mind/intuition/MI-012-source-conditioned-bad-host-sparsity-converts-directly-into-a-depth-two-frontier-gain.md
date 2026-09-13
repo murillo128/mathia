@@ -1,25 +1,39 @@
-# MI-012 — Source-conditioned bad-host sparsity converts directly into a depth-two frontier gain
+# MI-012 — Depth-two bad-host sparsity can be proved on the full deformed quadratic host sequence
 
-**Evidence level:** the exponent conversion is exact through [RE-095](../../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md), conditional on a sampled-host scarcity estimate at the CA depth-two source points. The required source-conditioned prime theorem is not proved, and ambient exceptional-set estimates alone do not supply it.
+**Evidence level:** the frontier conversion is exact through [RE-095](../../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md). [RE-096](../../findings/RE-096-depth-two-bad-hosts-reduce-to-a-phase-stable-deformed-quadratic-sequence.md) proves that the prime-host bad set embeds in an all-integer deformed-quadratic bad set and gives the exact leading deformation/phase geometry. The required scarcity theorem is still open.
 
-After the higher-depth reductions, the residual mixed first/depth-two cells are indexed by ordinary primes `q` with analytic sample points
+After the higher-depth reductions, the residual mixed first/depth-two cells are indexed by ordinary primes `q` and sampled at
 
-`x_q = eta_1^(-1)(eta_2(q)) ~ q^2/2`.
+`x_q = eta_1^(-1)(eta_2(q))`.
 
-RE-094 priced an ambient short-interval theorem by the measure of bad starts near scale `X`. RE-095 asks for less but more source-specific information: count only prime hosts `q~X^(1/2)` for which one of the one-sided intervals of length `2X^vartheta` adjacent to `x_q` is prime-free.
-
-If that bad-host set has size
-
-`#B_vartheta(X) <= X^(kappa(vartheta)+o(1))`,
-
-then the residual mixed-cell threshold mass is bounded by the sum of a small-chamber term and a bad-host/prime-gap-moment term. At the exponent level the resulting false-RH frontier is
+RE-095 shows that if the bad prime-host count at one-sided interval length `2X^vartheta` is `X^(kappa(vartheta)+o(1))`, then the false-RH frontier becomes
 
 `Theta > max(1/2+vartheta, 123/200 + kappa(vartheta)/2)`.
 
-The trivial host count `kappa=1/2` reproduces the existing `173/200` barrier exactly. Any genuine polynomial host saving `kappa=1/2-delta` lowers the second term by `delta/2`. Thus **any** fixed power saving in bad prime-indexed hosts, at some `vartheta<73/200`, is quantitatively useful; no full PNT asymptotic at the sample points is required.
+Any fixed saving below the trivial `kappa=1/2` is useful when `vartheta<73/200`.
 
-The important control is negative. Turning an ambient exceptional-start measure `X^(m(vartheta)+o(1))` into a host count cannot beat the direct RE-094 max law. Either it leaves the trivial square-root host count, or the interval-length term `1/2+vartheta` already dominates. Therefore a useful `kappa<1/2` estimate must exploit information genuinely conditioned on the sparse prime source—`q` prime, the deformed quadratic map `x_q`, or additional CA selector structure—not merely repackage an ambient almost-all theorem.
+RE-096 removes an unnecessary restriction from the analytic theorem. The map extends canonically to every large integer host, and the prime-host bad set is a subset of the integer bad set for the sequence `x(n)`. Therefore it is sufficient to prove
 
-**Research consequence.** The `173/200` frontier now has an exact source-information price: prove polynomial scarcity of bad prime hosts at the sampled depth-two points. The gain converts linearly, by one half, through Cauchy--Schwarz against the existing prime-gap second moment. This makes the missing theorem much narrower than a new uniform short-interval PNT and separates it from stronger but source-insensitive ambient estimates.
+`#Z_vartheta(X) <= X^(1/2-delta+o(1))`
 
-**Boundary.** RE-095 is a conditional conversion theorem. It neither proves the sampled-host scarcity estimate nor shows that the actual CA selector forces it. The `173/200` number remains a frontier of the present information package, not an intrinsic transition of Robin/CA geometry.
+for some `vartheta<73/200` and `delta>0`, where `Z_vartheta(X)` counts **all integers** `n~X^(1/2)` whose adjacent interval at `x(n)` is prime-free. The CA selector still uses prime hosts, but the upper-bound theorem need not.
+
+The sample is not physically close to a fixed quadratic lattice at the required interval scale. RE-096 gives
+
+`x(t)=t^2/2 * (1 + (log 2)/(2 log t) + O(1/(log t)^2))`,
+
+so `x(t)-t^2/2 ~ (log 2)t^2/(4 log t)`, much larger than `X^vartheta` for every fixed `vartheta<1`. Pointwise transfer from intervals beginning at `n^2/2` is therefore invalid.
+
+Yet the oscillatory geometry is stable:
+
+`d/dt log x(t) = 2/t + O(1/(t(log t)^2))`
+
+and
+
+`d^2/dt^2 log x(t) = -2/t^2 + O(1/(t^2(log t)^2))`.
+
+Thus zero-sum phases have the same first/second derivative scales as a quadratic sequence up to logarithmic errors. The nearest fixed-power prior art still works only at a longer interval exponent than the Robin window, but its analytic phase architecture is now a meaningful comparison class.
+
+**Research consequence.** The missing theorem is no longer inherently prime-indexed. Adapt sparse-sequence/explicit-formula machinery to the exact smooth deformed quadratic sequence `x(n)` and prove a power saving in bad integer hosts. Physical closeness to squares is false; phase-derivative closeness is the resource that survives.
+
+**Boundary.** RE-096 does not provide the scarcity bound, and the fixed-power literature does not transfer automatically. The deformation must be carried through every zero-sum, amplitude and uniformity range.

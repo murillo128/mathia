@@ -2,18 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Turn frontier-normalized predecessor transport into genuinely composable recurrence
+## Couple occupied frontier packets to bounded normalized-energy record defect
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`, `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`, `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`, `MI-003-normalized-record-defect-is-the-composition-loss`.
 
-The false-RH frontier construction has already passed the abundance and predecessor-entropy gates. The physical Jordan packet is coherent on long occupied blocks; repeated-prime deflation transports a fixed positive parent share to exact lower anchors; canonical prime contractions compress the predecessor family; and pricing each lower state at its own scale makes the prime family summable instead of paying its cardinality.
+The false-RH frontier construction has already passed the abundance and predecessor-entropy gates. Repeated-prime deflation transports fixed positive parent shares to exact lower nonsquarefree masks, and every dyadic terminal coordinate except the row-two/source-head atom has an exact lower repair.
 
-For every odd repeated-prime channel, the second prime copy can be stripped and the row reembedded four-adically at scale `4H/p^2`. Quotient-shell source values are preserved exactly, the resulting mask is nonsquarefree, and the normalized carrier weights are summable. The remaining odd-branch obstruction is therefore **composition strength**: a lower mask can have the full frontier exponent without occupying a fixed fraction of the complete lower-state energy.
+[FD-094](../findings/FD-094-normalized-schur-energy-records-upgrade-frontier-carriers-to-fixed-occupation.md) identifies the composition loss exactly. For `F_sigma(N)=E_(N,1)/N^(2 sigma)`, a repaired lower carrier with the current frontier-normalized lower bound occupies at least a fixed transport constant divided by the parent's backward record defect
 
-[FD-093](../findings/FD-093-dyadic-terminal-obstruction-collapses-to-the-single-row-two-head-atom.md) corrects and sharpens the dyadic branch. The withdrawn FD-092 omitted the `m=1` image of the parent row `r=4`. The exact terminal decomposition is a single head term `(3/4)|H(B)|^2` plus a complete odd-squarefree nonhead prefix at quarter scale. Every nonhead coordinate has an odd prime divisor and admits an exact lower nonsquarefree repair at scale at most `(1/3+o(1))H`. Thus the only dyadic coordinate that universal quotient-preserving repair cannot lower is the row-two/source-head atom itself.
+`R_sigma(H)=max(1, sup_(N<H) F_sigma(N)/F_sigma(H))`.
 
-A live contradiction now has two sharply separated obligations. Either use source coherence to show that a fixed frontier share cannot keep concentrating on that single head value `|H(B)|^2`, or prove a composition law that upgrades the repaired lower masks from frontier-normalized size to fixed occupation of their complete lower states. More occupation geometry, predecessor counting, or another universal square multiplier does not address either gate.
+At an `F_sigma` record this upgrades automatically to fixed lower-state occupation, and any uniform bound `R_sigma(H)=O(1)` is enough. False RH supplies infinitely many strict records because `F_sigma` is unbounded for `1/2<sigma<Theta`, but it is not yet known that the occupied packet sequence intersects them or has bounded defect.
 
-## Keep representation, normalized size and recursive strength separate
+The live composition theorem is therefore concrete: **show bounded normalized-energy record defect along some sharp occupied packet sequence**, or prove a different mechanism that supplies the same fixed lower-state occupation. Full exponent alone is no longer the right target.
 
-Exact lower representation does not imply fixed lower-state occupation, and full frontier exponent does not imply an iterable contraction. The current hierarchy ends with exact repair of every odd channel and every nonhead dyadic terminal coordinate; the surviving information is concentrated in **one source atom plus one quantitative composition problem**. Any next theorem should state explicitly which of those two residuals it controls.
+## Eliminate or exploit the row-two/source-head atom
+
+**Linked intuitions:** `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`, `MI-003-normalized-record-defect-is-the-composition-loss`.
+
+The dyadic decomposition leaves one coordinate that record normalization does not repair: the row-two/source-head value. Preserving that source argument on a nonsquarefree physical row returns to the original scale instead of a genuine predecessor.
+
+A contradiction must therefore either show that a fixed frontier share cannot keep concentrating on this atom, using source coherence or the underlying Mertens dynamics, or derive useful structure from such concentration. Another universal square multiplier or another local normalization of the repairable branches does not address this gate.
+
+## Keep representation, normalized size, historical record defect and source-head concentration separate
+
+Exact lower representation does not imply fixed occupation, but FD-094 shows that for every repairable branch the gap is measured by one historical scalar rather than an unknown local loss. The only qualitatively different representability failure is the single source-head atom. Future work should state which of these two residuals it controls.

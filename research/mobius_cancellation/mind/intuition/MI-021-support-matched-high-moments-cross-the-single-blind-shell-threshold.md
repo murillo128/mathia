@@ -1,37 +1,35 @@
-# MI-021 — Support-matched high moments cross the single-blind shell threshold
+# MI-021 — Support-matched high moments cross the blind threshold, but first-order shell balance is still too weak
 
-**Evidence level:** the moment threshold, tensor coefficient mass and Krawtchouk identity are exact through [MC-264](../../findings/MC-264-support-matched-high-moment-blind-threshold.md). The required sparse shell high-moment estimate is a candidate inequality, not a theorem. No blind relation, rank defect or bound for `M(X)` is excluded here.
+**Evidence level:** the moment threshold, tensor coefficient mass and Krawtchouk identity are exact through [MC-264](../../findings/MC-264-support-matched-high-moment-blind-threshold.md). [MC-265](../../findings/MC-265-even-support-central-krawtchouk-balance-obstruction.md) proves that even perfect first-order shell balance is parametrically insufficient for a pointwise-absolute-value proof of the candidate high-moment estimate. The required signed fixed-weight high-moment theorem remains open.
 
-The surviving quadratic blind relation lives on a shell-prime subset `T` of size `t` and is detected by the shell sum
+The surviving quadratic blind relation lives on a shell-prime subset `T` of size `t`. Low moments cannot see one exceptional subset against the whole fixed-weight family at the first admissible support scale `t~(1/log 2) log log y`. MC-264 identifies exactly where moment amplification becomes strong enough.
 
-`B_y(T)=sum_(p<=y, p odd prime) prod_(r in T) (p/r)`.
-
-A blind subset has `B_y(T)=k_y`, where `k_y` is the number of lower primes. Low moments cannot see one exceptional subset against the whole fixed-weight family at the first admissible support scale `t~(1/log 2) log log y`. MC-264 identifies exactly where moment amplification becomes strong enough.
-
-After raising `B_y(T)` to the `m`-th power and reducing lower-prime products modulo squares, the coefficient vector has quadratic mass
+After raising the shell character sum to tensor order `m` and reducing products modulo squares, the coefficient vector has quadratic mass
 
 `D_(m,y) ~ (2m-1)!! k_y^m`
 
-uniformly for `m=O(log log y)`. The double factorial is the correct quadratic-character diagonal: squarefree-kernel equality identifies many ordinary product diagonals, so replacing it by `m!` would underprice the tensor mass.
+uniformly for `m=O(log log y)`. At `m=t`, the natural diagonal still sits above one blind atom. At **one extra tensor power**, `m=t+1`, the normalized diagonal cost drops to order
 
-Suppose one could prove the shell-specific estimate
+`2^(t+1) sqrt(t)/k_y`,
 
-`S_(2m,y)(t) <= L_y binom(N_y,t) D_(m,y)`
+which tends rapidly to zero at the first unresolved support. Thus the family-size obstruction is genuinely a low-moment obstruction: a support-matched `2(t+1)`-th moment estimate near diagonal scale would have ample room to exclude every blind subset.
 
-for the `2m`-th moment over all weight-`t` shell subsets. At `m=t`, the natural diagonal still sits above one blind atom by about `2^t/sqrt(pi t)`. At **one extra tensor power**, `m=t+1`, the normalized diagonal cost instead falls to order
+The exact arithmetic kernel is the fixed-weight Krawtchouk transform
 
-`2^(t+1) sqrt(t)/k_y`.
+`S_(2m,y)(t) = sum_(u,v) c_m(u)c_m(v) K_t(d_y(u,v);N_y)`.
 
-At the first unresolved support size this tends to zero roughly like `y^(-1)` times polylogarithmic factors. Consequently an estimate at `m=t+1` can tolerate a very large analytic loss and still exclude every blind subset of that weight. The obstruction found at second moment is therefore a **low-moment obstruction**, not an intrinsic family-size barrier to all moment methods.
+MC-265 now closes the tempting shortcut “prove every product character is nearly balanced, then bound the off-diagonal terms separately.” At perfect Hamming balance `d=floor(N/2)`, the even layer already satisfies
 
-The arithmetic content of the missing estimate is also exact. Expanding the fixed-weight shell average gives a Krawtchouk kernel:
+`|K_t(d;N)|/binom(N,t) ~ (t/(eN))^(t/2)`
 
-`S_(2m,y)(t) = sum_(u,v) c_m(u)c_m(v) K_t(d_y(u,v);N_y)`,
+for even `t`, up to the explicit constant-scale asymptotic. At the live support this is larger than the pointwise scale required by the diagonal target by
 
-where `d_y(u,v)` is the Hamming distance between the Legendre-signature vectors of the squarefree kernels `u` and `v` across shell primes. Thus the unresolved object is the **off-diagonal Krawtchouk-weighted distance distribution of the support-matched tensor family**, not generic pairwise balance.
+`(k_y/t)^(t/2+o(t))`.
 
-Ordinary tensorization followed by the all-squarefree-moduli quadratic large sieve does not deliver this estimate: at `m=t+1` the coefficient length reaches about `y^(t+1)` and overwhelms the sparse shell-family scale. The new target is genuinely family-specific.
+So even ideal first-order sign balance leaves a universal without-replacement parity correlation far too large for triangle-inequality control.
 
-**Research consequence.** The analytic exit is now precise: control the `2(t+1)`-th moment directly on the fixed-weight shell-product family, equivalently control its off-diagonal Krawtchouk signature distribution strongly enough to stay near diagonal scale, or prove that such control is impossible. Asking only for a “stronger large sieve” hides the support-matched structure that makes the threshold favorable.
+This does **not** lower-bound the actual arithmetic moment. The off-diagonal Krawtchouk terms are signed and may cancel. That cancellation is now the mathematical content of the open route. A successful theorem must control the weighted signed distance distribution as a whole, force the relevant weighted mass close enough to Krawtchouk zeros, or estimate the sparse shell moment directly without absoluteizing pairwise terms.
 
-**Boundary.** MC-264 calibrates what would be sufficient; it does not establish the candidate moment inequality. A theorem at one support order would exclude blindness there, not automatically prove full generation or the RH-scale Möbius bound.
+**Research consequence.** Keep the favorable `m=t+1` amplification, but stop asking for generic pairwise shell balance as the missing input. The required source theorem is an association-scheme/Fourier cancellation statement at order `t`, not a first-moment pseudorandomness estimate.
+
+**Boundary.** MC-264--MC-265 neither prove the candidate moment inequality nor exclude a blind relation. They identify a sufficient amplification scale and rule out one broad proof class for reaching it.

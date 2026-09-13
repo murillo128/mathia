@@ -2,28 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-conditioned scarcity at the prime-indexed depth-two sample points
+## Prove bad-host scarcity on the phase-stable deformed quadratic sequence
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`, `MI-010-deep-support-boundaries-have-vanishing-threshold-measure`, `MI-011-depth-two-short-interval-elimination-is-governed-by-an-exceptional-mass-max-law`, `MI-012-source-conditioned-bad-host-sparsity-converts-directly-into-a-depth-two-frontier-gain`.
 
-The selector geometry has already removed deep boundaries and same-depth higher-layer chambers. Above `Theta>469/600`, every surviving cell has first-layer contact on at least one side; the remaining depth-two mixed channel has the scalar host/gap-moment frontier `173/200`. Pairing both anchored gap magnitudes, preserving the exact map `q -> x_q=eta_1^(-1)(eta_2(q))~q^2/2`, common-source membership, orientation and full event-staircase adjacency do not improve that frontier by themselves.
+The selector geometry has removed deep boundaries and same-depth higher-layer chambers. Above `Theta>469/600`, the residual mixed first/depth-two channel has the scalar host/gap-moment frontier `173/200`. RE-095 gives its exact information price: a polynomial saving in the count of bad sampled hosts at some `vartheta<73/200` lowers that frontier linearly.
 
-Ambient short-interval exceptional sets also have an exact limitation. If bad starts at interval length `X^vartheta` have ambient measure exponent `m(vartheta)`, the best direct splice works only beyond `Theta>max(1/2+vartheta,m(vartheta))`. Merely converting that ambient measure into counts of sampled hosts cannot do better.
+[RE-096](../findings/RE-096-depth-two-bad-hosts-reduce-to-a-phase-stable-deformed-quadratic-sequence.md) shows that the upper-bound theorem need not condition on host primality. The actual prime-host bad set embeds in the all-integer bad set for
 
-[RE-095](../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md) identifies the missing source theorem precisely. Let `B_vartheta(X)` be the ordinary primes `q~X^(1/2)` for which a one-sided interval of length `2X^vartheta` adjacent to `x_q` is prime-free. If
+`x(n)=eta_1^(-1)(eta_2(n))`.
 
-`#B_vartheta(X) <= X^(kappa(vartheta)+o(1))`,
+Thus it is sufficient to prove `#Z_vartheta(X) <= X^(1/2-delta+o(1))` for the integer sequence at one-sided interval length `X^vartheta`.
 
-then the residual false-RH frontier becomes
+The sequence is a genuine logarithmic deformation of `n^2/2`, not a perturbation small on the physical short-interval scale: its displacement is `~X/log X`. Direct interval inclusion from a fixed quadratic lattice is therefore impossible. But `log x(n)` has the same first- and second-derivative scales as `2 log n`, up to `O((log n)^-2)` relative errors. The live analytic target is consequently an adaptation of sparse-power zero-sum machinery to this **phase-stable deformed quadratic sequence**, not a prime-indexed counting theorem and not a physical-nearness argument.
 
-`Theta > max(1/2+vartheta, 123/200 + kappa(vartheta)/2)`.
+The nearest located fixed-power result at quadratic scale still requires interval exponent `13/32`, above the needed `73/200`, so both a shorter interval and deformation-uniformity remain to be earned.
 
-The trivial `kappa=1/2` reproduces `173/200`; any fixed saving `kappa=1/2-delta` lowers the moment barrier by exactly `delta/2`. Hence it is enough to prove a polynomial saving for bad **prime-indexed** hosts at some `vartheta<73/200`. No full asymptotic prime theorem at every sample is required.
+## Keep physical displacement, oscillatory phase geometry and selector source restriction separate
 
-The live route is therefore source-conditioned: exploit primality of `q`, arithmetic of the deformed quadratic sample `x_q`, standard/reciprocal prime-race coupling, accumulated CA height, skipped-span constraints, or actual rightmost-maximizer compatibility to prove `kappa<1/2`. An ambient almost-all theorem that treats arbitrary starts is in the wrong information class even if its intervals are much shorter.
-
-Below `Theta=469/600`, the finite mixed-depth reduction remains the weaker frontier; above `173/200`, the existing depth-two host/moment estimate already closes the residual channel.
-
-## Keep ambient exceptional mass and sampled-source sparsity separate
-
-The current numerical frontiers are information-class thresholds, not phase transitions of the CA mechanism. RE-094 prices arbitrary bad starts; RE-095 prices only the prime hosts the selector can actually use. A useful improvement must demonstrate new sparsity on that source-conditioned set, not rename ambient exceptional measure or strengthen gap moments without changing which hosts survive.
+The CA selector uses prime hosts, but an upper-bound theorem may enlarge them to all integers. The sample is far from `n^2/2` in position space while remaining close in logarithmic derivative geometry. Future arguments should exploit the latter explicitly; neither ambient exceptional-start measure nor pointwise transfer from ordinary square starts supplies the required saving.

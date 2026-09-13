@@ -8,18 +8,24 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Transfer the growing-depth Möbius/Blaschke gain into normalized radial entropy
+## Compare causal-state leverage with coordinate energy after correlation normalization
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`.
 
-The finite-depth story is now calibrated. Fixed terminal scalar channels, the full terminal Gram, and every fixed-ratio contiguous band can remain source-silent after subtracting their universal raw baseline when the horizontal off-critical mass is summable. Moving from `R/2` to `R/q` for another constant `q` does not create arithmetic information.
+The fixed-depth story is calibrated: terminal scalar channels, the full terminal Gram, and fixed-ratio bands can remain source-silent after universal calibration. [NB-092](../findings/NB-092-growing-depth-mobius-annulus-mode-forces-polynomial-blaschke-gram-gain.md) shows that growing depth is different: the canonical Möbius annulus produces a raw near-kernel, and an off-critical zero repairs that same direction by `q^(2beta-1)`.
 
-[NB-092](../findings/NB-092-growing-depth-mobius-annulus-mode-forces-polynomial-blaschke-gram-gain.md) shows that the growing-depth frontier is different. On `m<=j<mq`, a canonical coefficient vector built from the weighted Möbius sums synthesizes an exact flat logarithmic annulus. Its norm is governed by `Q_q=sum_(r<q)|sum_(d<=r)mu(d)/d|^2`, and false RH forces `Q_q` to grow at zero-frontier exponent at least `2Theta-1`, producing a raw Gram near-kernel.
+[NB-093](../findings/NB-093-single-zero-growing-depth-gram-gain-is-rank-one-causal-state-leverage.md) now resolves the single-zero mechanism exactly. At finite cutoff one elementary Blaschke factor changes the visible Gram by one positive rank-one causal-state update. The full unnormalized single-zero gain is the single leverage scalar
 
-The same off-critical zero that forces this deterioration also amplifies the visible annulus through its Blaschke factor by `q^(2beta-1)`. Consequently the generalized determinant ratio `det K/det K_tilde` gains at least `(2beta-1)log q+O(1)` in logarithmic scale. Growing depth therefore already contains a source-specific signal; the old question “does any growing-depth signal exist?” is closed.
+`tau_R=s_R^*A_R^(-1)s_R`,
 
-The remaining theorem is destination-specific. Show that this unnormalized generalized Gram gain survives diagonal/correlation normalization strongly enough to make the normalized visible entropy or NB-086 radial charge diverge, or embed the same Möbius annulus mode into an inter-scale statistic with a proved lower bridge to the Nyman obstruction. A polynomial determinant repair is not sufficient if normalization removes exactly that volume gain.
+and the Möbius annulus forces `tau_R>=q^(2beta-1+o(1))`.
 
-## Keep raw near-kernel, Blaschke amplification and normalized entropy distinct
+The normalized correlation determinant is also exact:
 
-NB-092 couples two exact source effects on one direction: Möbius inversion makes the raw band nearly singular at the zero-frontier scale, and the off-critical inner factor repairs that direction polynomially. Neither fact alone proves the target radial divergence. The next step must preserve their relative gain through the normalization actually consumed by the Nyman criterion rather than return to another fixed-depth Gram observable.
+`det R_R^(rho)/det R_tilde_R = (1+tau_R)/prod_j(1+nu_j)`,
+
+where `nu_j` is the same state energy measured coordinatewise. The remaining theorem is therefore no longer “does the determinant gain survive somehow?” It is to compare inverse-correlation leverage against coordinate inflation for the **actual Nyman causal state**, then extend the conclusion coherently to the finite/multiple-zero state family or an aggregate radial statistic.
+
+## Keep raw near-kernel, causal-state leverage and normalized entropy distinct
+
+A polynomial generalized eigenvalue can be erased completely by diagonal normalization in abstract controls. NB-093 shows exactly what extra source geometry must prevent that: the causal state must align with a collective raw near-kernel more strongly than its energy is visible coordinate by coordinate. Any entropy/radial proof should expose that inequality directly instead of returning to another fixed-depth or unnormalized Gram observable.

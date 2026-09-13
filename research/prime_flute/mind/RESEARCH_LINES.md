@@ -1,30 +1,20 @@
 # Prime-flute mathematical questions
 
-## Control the shear-deleted local pant angle and the independent conditional channel
+## Control the shear-deleted local pant angle after the compactification-critical packet, and the independent conditional channel
 
-**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`, `MI-012-corridor-form-smallness-needs-seam-metric-locality`.
+**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`, `MI-012-corridor-form-smallness-needs-seam-metric-locality`, `MI-013-compactification-critical-low-packets-block-uniform-taylor-smallness`.
 
-PF-303--PF-316 progressively close scalar depth, entrance leakage, direct residual high conversion, a supposed second inverse-normalized angle, and arbitrary internal-source amplification as independent missing mechanisms. Sequential elimination gives `T_(P/H) ~= (T_H V_H, Z_LH)^T`, and PF-316 proves that compactness/weak trace of the full physical angle is equivalent to compactness/weak trace of both `T_H` and `Z_LH`; attenuation by `V_H` cannot hide a bad conditional direction without paying through the direct channel.
+PF-303--PF-316 reduce the physical angle to a direct channel and an independent conditional channel `T_H`. PF-317--PF-320 then localize the direct channel and show that hypercycle shear is already endpoint-small in the **intrinsic angle metric** even though raw seam-normalized mixed blocks can amplify. With local low rank `O(1+log P_n)`, the shear correction costs only `O((1+log P_n)/P_n^2)` in squared Hilbert--Schmidt mass.
 
-PF-317 localizes the direct channel. In simultaneous seam-energy coordinates the positive precision is `I+K` with nearest-neighbor cuff-module coupling, same-sector completion is contractive, and `K_LH` decomposes into only three module offsets. PF-318 then removes the unnecessarily strong pointwise local target: because the retained low target on module `n` has rank `O(1+log P_n)`, the mean-square scale
+The remaining direct theorem is therefore about the **shear-deleted local pant angle** with actual seam normalization and common finite-pant completion. [PF-322](../findings/PF-322-physical-low-packets-retain-critical-compactified-transverse-energy.md) closes one tempting proof shortcut for that theorem. Fixed physical low bands contain zero-mean packets with a nonzero fraction of mass at the receding cuff seam, while fixed compactification weights that region by `cosh^2(ell_n/2)`. The exact relation `s_n cosh(ell_n/2)>1` makes the nominal `s_n^2` transverse factor critical rather than uniformly small.
 
-`O((1+log P_n)/P_n^2)`
+Consequently PF-233's even Taylor expansion cannot be applied uniformly to the entire unprojected physical-low sector and then promoted to the angle. The next calculation must be **downstream**: pass the explicit seam-centered packet through the pant quotient, PF-205 seam-energy normalization, physical `L/H` projections and PF-320 completion. If those operations cancel the critical component, quantify the resulting mixed angle; if not, price its singular-value leakage using PF-318 rather than returning to raw form smallness.
 
-per local low/high block is already endpoint-complete after prime threshold counting.
-
-PF-319 correctly closes one overly strong route. PF-232's `O(P_n^-1)` relative form sandwich is measured in the diagonal corridor energy, while the raw mixed physical precision can be normalized by a very different seam form; a two-metric countermodel shows that the latter raw block can amplify. Thus corridor form-smallness alone does not imply a seam-normalized `K_LH` estimate.
-
-PF-320 shows that this raw-block obstruction is **not** an obstruction to the actual direct angle. The angle of a positive block form is normalized by that form's own low/high diagonal energies. Multiplicative closeness of two whole positive forms makes these intrinsic angles `O(beta)`-close, independently of anisotropy in a common external seam metric. With PF-232's `beta_n=O(P_n^-1)` and local low rank `O(1+log P_n)`, the actual hypercycle-shear correction has squared Hilbert--Schmidt mass
-
-`O((1+log P_n)/P_n^2)`,
-
-exactly the PF-318 endpoint budget. Positive local pant forms also reassemble by a contraction sandwich, so this angle-level shear error survives finite-pant/global assembly without first controlling the raw `K_LH` block.
-
-The direct channel is therefore reduced again. A sufficient remaining theorem is a weak-`S_1`-compatible singular-value envelope for the **shear-deleted local pant angles** `T_(0,n)`, with actual seam normalization and the full common finite-pant completion retained. Once that reference family is controlled, PF-320 makes the hypercycle shear perturbative at the endpoint. The strengthened PF-242 coefficient locality remains consistent supporting structure but is no longer the missing metric bridge for the shear correction itself. The second genuine channel `T_H` remains independent.
+The second genuine channel `T_H` remains independent.
 
 ## Global heavy-range projection counts after strength/angle factorization
 
-For the PF-287 heavy low/high extension-range projection product, can the conditional channel `T_H` satisfy the required ideal count once the direct channel has been reduced to the shear-deleted local pant-angle family plus an endpoint-small perturbation? PF-318 gives the endpoint counting mechanism and PF-320 supplies the shear-error budget. What remains is the reference-angle envelope, `T_H`, the compatible infinite realization, symmetric side and signed target composition. Constant-mode pant blowup remains a required negative control.
+For the PF-287 heavy low/high extension-range projection product, determine whether the conditional channel `T_H` and the now sharply defined shear-deleted reference-angle family satisfy the required ideal counts. PF-318 supplies the endpoint counting mechanism and PF-320 supplies the shear-error budget; PF-322 specifies a necessary negative control for any reference-angle proof.
 
 ## Prime realization within the resolved upstream-memory window
 

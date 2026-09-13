@@ -14,28 +14,20 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Control shell packing or introduce a genuinely signed dephasing resource below the square-root-log method threshold
+## Bound weighted dangerous-pair incidence, or introduce a genuinely signed dephasing resource
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`.
 
-VIS-192--VIS-199 reduce deterministic finite-start dephasing to the weighted local-spacing resource `D_v` and prove `D_v=o(y^2)` through a broad stretched-exponential/subpolynomial corridor by combining taper localization with a four-form upper-bound sieve.
+VIS-192--VIS-202 reduce the scalar cutoff/taper architecture to a sharp method threshold `log H/sqrt(log y)->infinity`; re-optimizing the scalar split cannot cross it within the persisted four-form/fiber-averaged majorant.
 
-VIS-200 closes scalar cutoff engineering before local-factor averaging: changing only the split point cannot remove the pointwise four-form singular-series threshold. VIS-201 then removes that pointwise loss itself. The nondegenerate four-form conductor reduces to three primitive affine polynomial values, and Henriot's discriminant-uniform Nair--Tenenbaum theorem supplies a bounded-mean arithmetic majorant after the second-gap fiber is averaged. The normalized collision energy becomes
+VIS-203 shows that shifted-autocorrelation tapers do not hide cancellation inside exact frequency shells: all representations reinforce. VIS-204 bounds dangerous fixed-scale shell multiplicity by four. [VIS-205](../findings/VIS-205-dangerous-shell-energy-pair-crowding.md) therefore identifies the exact weaker positive target. The normalized dangerous shell energy is comparable within factor four to the two-sample crowding probability
 
-`O((log y)^2/log(H/L)^4 + (log y)^2/L^3 + H/(y log y))`.
+`Q(A)=sum_(lambda!=mu, close) nu(lambda)nu(mu)`.
 
-VIS-202 closes scalar cutoff engineering **after** that improvement as well. Within this exact dimension-four fiberwise sieve plus taper-tail architecture, some admissible cutoff `L` makes the displayed bound vanish if and only if
+This is weaker than the one-sided nearest-neighbor mass `C(A)` used by the old `D_v=o(y^2)` route, since `Q(A)<=C(A)` with no converse in general. The line no longer needs to prove that most coefficient mass has no close neighbor. It is enough to show that **dangerous close pairs carry vanishing product weight** under the actual taper-energy measure.
 
-`log H / sqrt(log y) -> infinity`.
+The next coherent theorem is therefore a direct weighted incidence estimate for the top-scale bounded-determinant prime-product pairs encoded by `Q(A)`, or a lower-bound construction showing that this quadratic crowding remains macroscopic. If the positive-taper route fails there, the alternative must genuinely change sign structure or exploit interference across distinct shell frequencies.
 
-Necessity comes directly from the positive four-form term; sufficiency already follows from `L=log y`. Thus the remaining `sqrt(log y)` scale is a sharp **method threshold** of the persisted majorant, not merely the current sufficient choice and not a lower bound for the true collision energy.
+## Keep local admissibility, method thresholds, exact-shell multiplicity and weighted pair mass separate
 
-VIS-203 tests the most immediate interpretation of “couple dangerous fibers before scalarization.” For every shifted-autocorrelation taper, the centered Fourier amplitude is nonnegative, so every prime-ratio coefficient is a common linear phase times a nonnegative number. Grouping by exact frequency difference `xi` produces shell amplitudes `B_xi>=0`: all representations of the same `xi` reinforce, and the long-start error energy is exactly `sum_(xi!=0) B_xi^2 sinc^2(Lxi/2)`. At the dangerous `|xi|=O(y^-2)` scale, `L=o(y^2)` leaves the sinc factor asymptotically one. Exact-shell multiplicity therefore supplies no cancellation for this broad taper class.
-
-The remaining frontier must now distinguish three genuinely different resources: prove a **shell-packing/energy bound** for the positive `B_xi`, exploit interference across distinct shell frequencies in a way strong enough for uniform starts, or choose a centered taper with signed/complex shell amplitudes and then prove that its sign pattern correlates usefully with the arithmetic fibers. Re-optimizing the scalar cutoff or merely grouping equal-difference fibers cannot cross the current boundary.
-
-## Keep local admissibility, pointwise tuple bounds, averaged local-factor mass, method thresholds, exact-shell aggregation and true dephasing separate
-
-VIS-197 controls local factors pointwise; VIS-198--VIS-199 purchase global incidence from sieve dimension; VIS-200 proves cutoff optimization cannot remove the pointwise loss; VIS-201 proves that discriminant-uniform fiber averaging can remove that loss without changing the sieve dimension or resource; VIS-202 proves that the resulting `sqrt(log y)` boundary is exact for the **displayed proof architecture**; VIS-203 proves that, for autocorrelation tapers, equal-difference fibers aggregate with one sign rather than supplying a hidden cancellation mechanism.
-
-The four-form condition and `D_v` remain sufficient machinery, not known sharp descriptions of the true source. Further progress must now change aggregate shell incidence, cross-shell cancellation, taper sign structure, the tail mechanism, or the resource itself rather than revisit the already-closed scalar cutoff optimization.
+The square-root-log boundary is a threshold of the persisted scalar majorant, not a lower bound for the true problem. Exact-shell multiplicity is now bounded and no longer the main unknown. The live positive-shell resource is the weighted pair mass `Q`, which can be much smaller than nearest-neighbor crowding. Future work should not pay for the stronger `D_v` criterion unless the actual weights force the two resources to be comparable.
