@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-first-global-crossing-sliding-autocorrelation-symbol
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: weil_inertia
 based_on:
@@ -24,6 +24,7 @@ based_on:
   - research/weil_inertia/findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md
   - research/weil_inertia/findings/WI-276-cross-cut-energy-obeys-a-sharp-nilpotent-shift-reserve.md
   - research/weil_inertia/findings/WI-277-commensurate-cross-cut-shifts-obey-a-sharp-finite-toeplitz-reserve.md
+  - research/weil_inertia/findings/WI-278-certified-profile-data-do-not-force-the-source-reserve-past-the-archimedean-budget.md
 ---
 
 # Can the first-crossing saturated source reserve force unscreenable arithmetic overlap?
@@ -137,4 +138,9 @@ The sharpness statements are relaxation statements. `WI-275` is sharp for the ma
 
 ## Research disposition
 
-The clue remains `accepted`. The immediate target is now the **spectral-profile / finite-Toeplitz budget test** above, not another one-shift decorrelation bound. If known `lambda_r` constraints cannot force `max(R_harm,R_multi)>K_+`, construct a rigorous compatible profile if possible and then move to source-specific shape/sign information rather than further optimizing the same support-only relaxation.
+Outcome: refuted
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-278-certified-profile-data-do-not-force-the-source-reserve-past-the-archimedean-budget.md]]
+
+`WI-278` constructs a rigorous continuous decreasing first-crossing profile that matches Suzuki's small-aperture asymptotic, respects the certified compact-window constraints used here, and nevertheless keeps both `R_harm` and every commensurate `R_multi` reserve below `K_+`. The generic scalar spectral-profile / mass-support route is therefore closed at the presently proved information level. Further progress on this branch requires source/eigenfunction-specific structure rather than further optimization of the same scalar support-only relaxation.
