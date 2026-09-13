@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-zero-order-hadamard-boundary-stress
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_lattice
 based_on:
@@ -100,3 +100,13 @@ A decisive negative outcome is any of: renormalized traces have no regularizatio
 The fractional Hadamard formula is prior art: Sidy Moctar Djitte, Mouhamed Moustapha Fall and Tobias Weth, *A fractional Hadamard formula and applications*, Calc. Var. PDE **60** (2021), 231, DOI `10.1007/s00526-021-02094-3`. The small-order spectral and eigenfunction convergence is prior art: Pierre Aime Feulefack, Sven Jarohs and Tobias Weth, *Small Order Asymptotics of the Dirichlet Eigenvalue Problem for the Fractional Laplacian*, J. Fourier Anal. Appl. **28** (2022), 18, DOI `10.1007/s00041-022-09908-8`.
 
 The displayed `sqrt(s)` endpoint normalization on `(-1,1)` is an immediate exact consequence of those established formulas and scaling; it is a control calculation, not a new zeta mechanism. No theorem has been established here that the renormalized fractional trace converges to the coefficient of the logarithmic `ell(delta)^{1/2}` boundary law, that Suzuki's completed-Weil perturbation admits the same Hadamard formula, or that any resulting stress has the sign needed for RH. Those are precisely the missing statements that keep this as a clue rather than a finding.
+
+## Research disposition
+
+Outcome: accepted as a narrow technical route; no logarithmic Hadamard theorem or arithmetic sign mechanism is established.
+
+A structure-based prior-art audit strengthens the fixed-order side of the proposal but leaves its decisive small-order step open. Djitte--Sueur, *Pointwise Hadamard variational formula for the fractional Laplacian* (arXiv:`2602.07214`, 2026), prove shape differentiability for fixed `s in (0,1)` and express the derivative through fractional boundary traces. Feulefack--Jarohs--Weth prove more small-order compactness than the original observation used: on regular bounded domains the relevant fractional eigenfunctions are relatively compact in `C_0` and converge uniformly on the closure, with an `s`-uniform bound of the form `|u_s(x)| <= C delta(x)^s` for small `s`. None of these results gives convergence of the quotient trace `u_s/delta^s`, however, and uniform convergence of `u_s` itself cannot control that singular boundary quotient. The required `s^{-1/2}` trace limit therefore remains a genuine analytic gate rather than a consequence already present in the literature audited here.
+
+There is also a sharp matched control on what such a limit could mean. For the pure logarithmic principal operator, spatial dilation shifts the Dirichlet spectrum by the universal logarithmic scale term (equivalently, the multiplier `log|xi|` acquires `-log R` under dilation). Thus the principal-part shape response is universal and cannot itself be rational-prime rigidity. Any useful Weil derivative must obtain its non-universal content from the completed arithmetic/archimedean remainder or from a state-dependent boundary stress whose limiting law changes under a matched nonarithmetic replacement of the prime weights.
+
+The exact unresolved question is therefore narrower than the proposal: can the small-`s` regularization of the actual isolated completed-Weil branch produce a regularization-independent limit of `s^{-1/2}(u_{s,a}/delta^s)|_{partial I_a}` (or an intrinsic boundary measure), together with a Hadamard identity whose non-universal term is uniformly controlled by the rational-prime remainder, without importing `H^{1/2}` or absolute first-frequency-moment differentiability? Failure of trace compactness/uniqueness, loss of uniform control in the bounded remainder, or persistence of the same limiting derivative under matched nonarithmetic source weights rejects the route.
