@@ -1,27 +1,27 @@
-# MI-014 — Single-source positive spectral lifts of the dual phase field are pure gauge
+# MI-014 — Complete single-source torus spectralizations are gauge/permutation quotients
 
-**Evidence level:** exact for fixed source-independent masks and Hermitian kernels through [PC-278](../../findings/PC-278-single-source-dual-window-phase-spectra-are-diagonal-unitary-pure-gauge.md). Source-dependent selection, anchor-sensitive nonlinearities, genuine flux, cross-source/cross-level couplings, and nonnormal constructions outside unitary invariants remain open.
+**Evidence level:** exact for fixed source-independent positive/Hermitian wrappers through [PC-278](../../findings/PC-278-single-source-dual-window-phase-spectra-are-diagonal-unitary-pure-gauge.md), and for arbitrary anchored pointwise nonlinearities on the complete coefficient torus through [PC-279](../../findings/PC-279-full-dual-torus-anchor-nonlinearities-are-source-blind-fourier-data.md). Truncated non-invariant windows, genuine flux, cross-source/cross-level couplings and other constructions outside these equivalences remain open.
 
-Retaining the full dual-window phase field looks strictly richer than minimizing it to one scalar near-resonance. For a single source pair `(p,r)`, however, a fixed two-dimensional mask
+For a fixed coefficient mask, the single-source dual phase field
 
 `W_(p,r)(h,k)=A_(h,k) zeta_q^(hp+kr)`
 
-factorizes exactly as
+factorizes as `D_p A E_r`. Hence every singular value, Schatten norm, rank and Gram spectrum is exactly source-independent. The analogous Hermitian coefficient-graph phase is a discrete gradient, so the source modulation is a unitary conjugacy with zero cycle holonomy.
 
-`W_(p,r)=D_p A E_r`
+PC-279 shows that anchoring/nonlinearity alone does not escape once both coefficient axes are complete. For any function `f: Z/qZ -> C`, including discontinuous source-selected thresholds,
 
-with diagonal unitaries `D_p,E_r`. Therefore every singular value, Schatten norm, rank and Gram spectrum is independent of the source. The source phases survive entrywise but disappear completely under the positive spectral quotient.
+`M_(p,r)^f(h,k)=f(hp+kr)`
 
-The same statement holds for a fixed Hermitian coefficient-graph kernel. Source modulation has the form
+is obtained from `M_(1,1)^f` by permuting rows by multiplication with `p` and columns by multiplication with `r`. Its entire singular spectrum is
 
-`K^(p,r) = U_(p,r) K U_(p,r)^*`,
+`{|f_hat(j)| : j mod q}`.
 
-because the edge phase is the discrete gradient `(u-v).(p,r)`. Every cycle has trivial holonomy. The source contributes only an exact coboundary gauge, so Hermitian spectrum, resolvent traces, heat traces and inertia are all source-independent.
+Thus a genuinely source-dependent entrywise threshold can still have exactly universal positive spectral data. Likewise a full translation-invariant Hermitian kernel depending only on `(u-v).(p,r)` has only the Fourier modes parallel to the source direction as nonzero modes, with a source-independent eigenvalue multiset.
 
-This is stronger than a matched-control asymptotic. **Every source pair is exactly isospectral at every finite denominator and bandwidth** inside this category. Merely retaining vector/directional phase information does not help if the next operation immediately quotients it by diagonal-unitary equivalence.
+The two collapses are different but complementary. PC-278 removes phase modulation by **unitary gauge** when the mask/kernel is fixed. PC-279 removes arbitrary anchored scalar profiles by **index permutation** when the coefficient torus is complete. Merely putting a nonlinear selector between the raw phase field and a positive spectrum does not create a Prime-Circle carrier if the complete domain still lets source multiplication relabel everything.
 
-The scalar near-resonance observable escapes because it first compares each phase to the distinguished anchor `1`; that nonlinearity breaks the gauge before compression. Other genuine escapes must likewise introduce a gauge-invariant source relation before taking positive spectral invariants: source-dependent phase selection, nonzero cycle flux, relative phases between different sources or levels, or a justified nonnormal identification not preserved by left/right unitary equivalence.
+The surviving finite-window near-resonance mechanism has a precise source of information: a truncated box such as `|h|,|k|<=B<q/2` is not preserved by multiplication by `p,r`. Restriction converts what was a pure relabeling on the full torus into a source-dependent boundary/intersection problem. The potential carrier is therefore the **mismatch between the distinguished window and the source permutation**, not the local profile `f` itself.
 
-**Research consequence.** Do not use a fixed positive/Hermitian spectral wrapper as the default “richer” continuation of PC-277. First identify what breaks the single-source coboundary gauge, then audit that new object against source-only controls.
+**Research consequence.** Before spectralizing a richer single-source observable, identify the symmetry that remains on its full domain. To escape the current no-go family one must break complete-domain relabeling or gauge before the invariant is taken—for example through a source-sensitive non-invariant window, genuine cycle flux, or a relative/cross-level construction with no single relabeling that removes all source data—and then audit that residual against the strongest source-only control.
 
-**Boundary.** PC-278 does not say that every spectralization is source-blind, and it does not close the intermediate scalar rational-microscopic window. It closes the fixed single-source positive/Hermitian route.
+**Boundary.** PC-279 does not close truncated windows or the intermediate scalar rational-microscopic regime. It also does not say every nonlinear or nonnormal construction is source-blind. It closes the complete-torus class whose source dependence factors only through the scalar phase coordinate `hp+kr`.

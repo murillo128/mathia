@@ -8,24 +8,36 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Convert the simultaneous-cut reserve into unavoidable arithmetic overlap
+## Test the harmonic simultaneous-cut reserve against the archimedean budget, then use genuinely cross-cut source information
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`.
 
-The first-crossing source equation has defeated finite-lag screening and generic positivity shortcuts. WI-273 sharpened one-signed positive-gap screening with the exact positive-source Hankel norm, but proved that every mass-only single-cut `L^2` refinement hits the half-Carleman wall as the gap closes.
+The first-crossing source equation has defeated finite-lag screening and generic positivity shortcuts. WI-273 shows that every mass-only single-cut `L^2` refinement hits the half-Carleman wall as the gap closes. WI-274 escapes that pointwise degeneration by imposing the entire family of complementary sharp cuts before integrating the source.
 
-[WI-274](../findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md) uses the information that this norm discards. Integrating the **entire family of sharp cuts** counts each translated pair for exactly its lag and forces, for an arbitrary real first null mode,
+[WI-275](../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md) sharpens the same data at each cut. If
 
-`S_v >= 2 integral_(a/2)^a lambda_r dr > 0`.
+`A_t=lambda_((a+t)/2)`, `B_t=lambda_((a-t)/2)`
 
-The saturated endpoint source therefore retains a strictly positive reserve even though the single-radius lower bound can vanish at the crossing.
+and `M_L+M_R=1`, simultaneous firstness gives
 
-On a one-signed branch this yields the explicit screening condition
+`Q_t >= A_t M_L`, `Q_t >= B_t M_R`,
 
-`P_v >= 2 integral_(a/2)^a lambda_r dr - K_+`.
+hence the exact minimax floor
 
-The live one-signed theorem is now to make the spectral-area reserve exceed the finite archimedean budget, or to strengthen the integrated inequality using the null-mode equation. On sign-changing branches, use the PSD/nodal family to prevent prime and archimedean cancellation from hiding inside the positive total reserve.
+`Q_t >= A_t B_t/(A_t+B_t)`.
 
-## Treat endpoint firstness, integrated reserve, sign geometry and prime overlap as separate gates
+After integration the saturated source satisfies
 
-A positive saturated source functional is stronger than the degenerating endpoint cut but weaker than positive prime overlap. The one-signed budget does not transfer to a sign-changing mode, and the existence of a spectral gap does not supply the needed sign. Future work should preserve the simultaneous-cut reserve while adding exactly the source/sign information needed to separate its prime and archimedean components.
+`S_v >= R_harm(a) = 2 integral_0^a lambda_r lambda_(a-r)/(lambda_r+lambda_(a-r)) dr`.
+
+This strictly improves the WI-274 area reserve whenever the paired-radius eigenvalue profile is genuinely asymmetric. On a one-signed branch it yields
+
+`P_v >= R_harm(a)-K_+`,
+
+so complete prime screening is possible only if `R_harm(a)<=K_+`.
+
+The mass-only optimization is now exhausted: the pointwise equality profile `M_L^*(t)=B_t/(A_t+B_t)` is monotone, so CDF monotonicity alone cannot improve the harmonic envelope. The immediate theorem is to obtain enough rigorous information on the paired-radius curve `lambda_r` to force `R_harm(a)>K_+`. If that comparison is compatible with all known spectral constraints, the next input must genuinely couple different cuts through the Suzuki null equation, signed-source multiplier form, regularity/nodal structure, or another relation absent from the scalar mass relaxation.
+
+## Treat endpoint firstness, harmonic reserve, sign geometry and prime overlap as separate gates
+
+The positive harmonic reserve is sign-independent but remains a bound for the total saturated source. The one-signed prime-overlap tariff does not transfer to a sign-changing null mode, and ordinary semigroup positivity is unavailable in the relevant regime. Future work should preserve the simultaneous-cut reserve while adding exactly the source/sign information needed either to beat `K_+` or to prevent prime and archimedean cancellation from hiding inside the positive total reserve. Re-averaging the same two complementary mass inequalities is no longer a new mechanism.

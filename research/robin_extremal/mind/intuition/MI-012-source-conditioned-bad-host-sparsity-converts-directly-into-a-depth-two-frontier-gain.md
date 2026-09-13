@@ -1,39 +1,35 @@
-# MI-012 — Depth-two bad-host sparsity can be proved on the full deformed quadratic host sequence
+# MI-012 — Robin needs sparse-sample information beyond ambient exceptional-set packing
 
-**Evidence level:** the frontier conversion is exact through [RE-095](../../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md). [RE-096](../../findings/RE-096-depth-two-bad-hosts-reduce-to-a-phase-stable-deformed-quadratic-sequence.md) proves that the prime-host bad set embeds in an all-integer deformed-quadratic bad set and gives the exact leading deformation/phase geometry. The required scarcity theorem is still open.
+**Evidence level:** the host-to-frontier conversion is exact through [RE-095](../../findings/RE-095-source-conditioned-sampled-gap-sparsity-lowers-the-depth-two-moment-frontier.md); [RE-096](../../findings/RE-096-depth-two-bad-hosts-reduce-to-a-phase-stable-deformed-quadratic-sequence.md) gives the all-integer deformed-quadratic host reduction and phase geometry; [RE-097](../../findings/RE-097-bazzanella-quadratic-threshold-is-ambient-packing-not-phase-control.md) audits the quadratic prior art and proves that ambient exceptional-set packing cannot improve the existing Robin envelope. A direct sparse-sequence scarcity theorem below the required exponent remains open.
 
-After the higher-depth reductions, the residual mixed first/depth-two cells are indexed by ordinary primes `q` and sampled at
+After the higher-depth reductions, the residual mixed first/depth-two cells are sampled at
 
-`x_q = eta_1^(-1)(eta_2(q))`.
+`x(n)=eta_1^(-1)(eta_2(n))`, `n~X^(1/2)`.
 
-RE-095 shows that if the bad prime-host count at one-sided interval length `2X^vartheta` is `X^(kappa(vartheta)+o(1))`, then the false-RH frontier becomes
+RE-095 shows that any fixed power saving in the bad-host count at interval length `X^vartheta`, with `vartheta<73/200`, lowers the `173/200` frontier. RE-096 shows the analytic upper bound need not retain prime host indices: it is enough to control all integer hosts on the exact deformed sequence.
 
-`Theta > max(1/2+vartheta, 123/200 + kappa(vartheta)/2)`.
+The sample has two very different notions of closeness. In position space,
 
-Any fixed saving below the trivial `kappa=1/2` is useful when `vartheta<73/200`.
+`x(n)-n^2/2 ~ X/log X`,
 
-RE-096 removes an unnecessary restriction from the analytic theorem. The map extends canonically to every large integer host, and the prime-host bad set is a subset of the integer bad set for the sequence `x(n)`. Therefore it is sufficient to prove
+so interval inclusion from ordinary square starts is useless at the Robin scale. In logarithmic phase geometry,
+
+`(log x)' = 2/t + O(1/(t(log t)^2))`,
+
+`(log x)'' = -2/t^2 + O(1/(t^2(log t)^2))`,
+
+so zero-sum phases remain a slowly deformed quadratic family.
+
+RE-097 clarifies exactly where these facts matter. Bazzanella's published quadratic threshold `13/32` in the relevant small-interval regime is obtained by packing each sparse exception into an ordinary ambient PNT exceptional set. That proof uses spacing, not quadratic oscillation. The same packing transfers to `x(n)` despite its physical drift, but its information content is already available to Robin through the RE-094 ambient frontier.
+
+More generally, if a proof bounds bad sampled hosts only by attaching disjoint `H`-packets to an ambient exceptional set, RE-097 proves that the resulting Robin frontier is never better than the existing envelope. Thus **ambient scarcity is not source-conditioned scarcity merely because it is evaluated on a sparse host sequence**.
+
+The potentially useful part of the quadratic analogy is the genuinely direct sparse-sequence architecture used in other parameter regimes: higher moments, zero additive energy, exponent-pair/oscillatory estimates, or another argument that sees the phase family itself. The target is now precise: prove
 
 `#Z_vartheta(X) <= X^(1/2-delta+o(1))`
 
-for some `vartheta<73/200` and `delta>0`, where `Z_vartheta(X)` counts **all integers** `n~X^(1/2)` whose adjacent interval at `x(n)` is prime-free. The CA selector still uses prime hosts, but the upper-bound theorem need not.
+for some `vartheta<73/200`, `delta>0`, by an argument that does not factor solely through one-variable ambient exceptional-set measure.
 
-The sample is not physically close to a fixed quadratic lattice at the required interval scale. RE-096 gives
+**Research consequence.** Do not try to transfer the numerical `13/32` threshold or improve the ambient packet-counting step. Use the stable derivatives of `log x(n)` only in a direct sparse-sample estimate capable of producing information unavailable to RE-094. That is the first mechanism that can genuinely lower the mixed depth-two Robin frontier.
 
-`x(t)=t^2/2 * (1 + (log 2)/(2 log t) + O(1/(log t)^2))`,
-
-so `x(t)-t^2/2 ~ (log 2)t^2/(4 log t)`, much larger than `X^vartheta` for every fixed `vartheta<1`. Pointwise transfer from intervals beginning at `n^2/2` is therefore invalid.
-
-Yet the oscillatory geometry is stable:
-
-`d/dt log x(t) = 2/t + O(1/(t(log t)^2))`
-
-and
-
-`d^2/dt^2 log x(t) = -2/t^2 + O(1/(t^2(log t)^2))`.
-
-Thus zero-sum phases have the same first/second derivative scales as a quadratic sequence up to logarithmic errors. The nearest fixed-power prior art still works only at a longer interval exponent than the Robin window, but its analytic phase architecture is now a meaningful comparison class.
-
-**Research consequence.** The missing theorem is no longer inherently prime-indexed. Adapt sparse-sequence/explicit-formula machinery to the exact smooth deformed quadratic sequence `x(n)` and prove a power saving in bad integer hosts. Physical closeness to squares is false; phase-derivative closeness is the resource that survives.
-
-**Boundary.** RE-096 does not provide the scarcity bound, and the fixed-power literature does not transfer automatically. The deformation must be carried through every zero-sum, amplitude and uniformity range.
+**Boundary.** RE-097 does not prove such a sparse-sample estimate and does not show that the phase-stable deformation is sufficient. It only classifies the ambient-packing proof family as non-improving for this target and leaves the direct phase-sensitive route open.

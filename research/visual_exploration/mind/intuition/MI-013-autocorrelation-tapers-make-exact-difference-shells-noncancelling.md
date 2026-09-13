@@ -1,14 +1,10 @@
-# MI-013 — Autocorrelation shell energy is exactly a weighted two-sample crowding problem
+# MI-013 — Fixed-scale autocorrelation shell energy is dilute even when one-sided crowding is not controlled
 
-**Evidence level:** exact for the autocorrelation-taper subclass through [VIS-203](../../findings/VIS-203-autocorrelation-tapers-make-exact-difference-shells-noncancelling.md), the fixed-scale exact-shell multiplicity theorem of VIS-204, and [VIS-205](../../findings/VIS-205-dangerous-shell-energy-pair-crowding.md). No theorem yet makes the resulting pair-crowding mass vanish for the prime-ratio weights or improves the VIS-202 method threshold.
+**Evidence level:** exact for the autocorrelation-taper subclass through [VIS-203](../../findings/VIS-203-autocorrelation-tapers-make-exact-difference-shells-noncancelling.md), VIS-204, [VIS-205](../../findings/VIS-205-dangerous-shell-energy-pair-crowding.md), and [VIS-206](../../findings/VIS-206-fixed-scale-pair-crowding-bounded-degree.md). The conclusion is for fixed normalized collision width `A` in the strictly subcritical regime; growing `A(y)`, the full sinc-weighted intermediate shell range, and sign-changing tapers remain open.
 
-For a shifted autocorrelation taper, the centered Fourier kernel has a common linear phase and nonnegative amplitude. Prime-ratio coefficients can therefore be written `c_lambda=e^(iH lambda/2)b_lambda` with `b_lambda>=0`. Grouping the finite-start energy by exact differences produces nonnegative shell amplitudes
+For a shifted autocorrelation taper, the centered Fourier kernel has a common linear phase and nonnegative amplitude. Prime-ratio coefficients can be written `c_lambda=e^(iH lambda/2)b_lambda` with `b_lambda>=0`, so exact-difference shell amplitudes are nonnegative and multiplicity reinforces rather than cancels.
 
-`B_xi = sum_(lambda-mu=xi) b_lambda b_mu >= 0`.
-
-Thus multiplicity inside one exact shell reinforces rather than cancels.
-
-VIS-204 adds a fixed normalized-scale multiplicity cap: every dangerous nonzero shell has at most four ordered representations for sufficiently large `y`. VIS-205 then removes the remaining representation ambiguity. With `R=sum b_lambda^2`, `nu(lambda)=b_lambda^2/R`, and
+VIS-204 bounds every dangerous fixed-scale exact-shell multiplicity by four. VIS-205 then identifies the correct normalized resource: with `R=sum b_lambda^2`, `nu(lambda)=b_lambda^2/R`, and
 
 `Q(A)=sum_(lambda!=mu, 0<|lambda-mu|<=A b_y) nu(lambda)nu(mu)`,
 
@@ -16,16 +12,20 @@ the dangerous exact-shell energy satisfies
 
 `Q(A) <= S(A)/R^2 <= 4 Q(A)`.
 
-So after nonnegative shell aggregation and bounded exact multiplicity, **the fixed-scale shell-energy problem is, up to a universal factor, exactly the probability that two independent energy-weighted frequency samples form a dangerous close pair.**
+This is strictly weaker than the one-sided nearest-neighbor mass `C(A)`. VIS-206 proves that the distinction is enough to cross the old fixed-scale obstruction. For fixed `A`, every dangerous prime-ratio frequency lies at top prime scale and has only `O_A(1)` dangerous neighbors: fixing one ratio turns each bounded-determinant relation into a one-dimensional Diophantine progression whose step is already comparable with the full prime box.
 
-This is strictly weaker than the previous nearest-neighbor resource. If
+At the same time each dangerous vertex has
 
-`C(A)=sum_(delta_lambda<=A b_y) nu(lambda)`,
+`nu(lambda) <<_(A,alpha,v) H (log y)^2/y^2`.
 
-then `Q(A)<=C(A)`, so `D_v=o(y^2)` still suffices, but the converse need not hold. A heavy frequency can have only extremely light close partners: it is fully charged by `C` but contributes little to `Q`. The shell-energy route can therefore succeed even when the stronger one-sided crowding criterion is unavailable.
+Under `H log y/y -> 0`, this tends to zero. Bounded local degree therefore gives
 
-At the dangerous `|xi|=O(y^-2)` scale, subquadratic start windows do not attenuate these shells. The cheapest surviving positive-taper target is now a **weighted pair-incidence theorem** for bounded-determinant prime-product collisions, not a maximum spacing theorem and not a proof that close neighbors are absent.
+`Q_(y,H)(A) << H (log y)^2/y^2 -> 0`,
 
-**Research consequence.** Estimate `Q(A)` directly from the explicit taper weights, or construct a source-valid lower bound showing it remains macroscopic. Only if that fails should the line pay for a genuinely signed/complex taper or cross-shell interference mechanism.
+and hence `S_(y,H)(A)=o(R_v(y,H)^2)` for every fixed `A`.
 
-**Boundary.** The comparison is for fixed normalized windows and the nonnegative autocorrelation class. Growing shell windows and sign-changing centered tapers remain separate.
+So the square-root-log barrier in VIS-202 is not a barrier for the weaker two-sample shell resource. It belongs to the stronger one-sided crowding quantity and the proof architecture used to control it. **At fixed normalized scale, the actual positive shell energy is already dilute because no dangerous vertex can combine large normalized mass with large local degree.**
+
+The remaining positive-taper problem begins when the collision window widens. If `A=A(y)` grows, the determinant difference range, lower bound on participating primes and local degree can all deteriorate. The next theorem should quantify that deterioration far enough to sum the sinc-weighted intermediate shells up to the dephasing scale, or identify where a genuinely signed/complex taper becomes necessary.
+
+**Boundary.** VIS-206 proves neither `C(A)->0` nor `D_v=o(y^2)`, and does not contradict the VIS-202 method threshold. It gives no uniform bound for growing `A(y)` and no complete finite-start theorem below the coarse Hilbert horizon.

@@ -1,35 +1,37 @@
-# MI-021 — Support-matched high moments cross the blind threshold, but first-order shell balance is still too weak
+# MI-021 — Support-matched high moments reduce to a radial signed source-walk theorem
 
-**Evidence level:** the moment threshold, tensor coefficient mass and Krawtchouk identity are exact through [MC-264](../../findings/MC-264-support-matched-high-moment-blind-threshold.md). [MC-265](../../findings/MC-265-even-support-central-krawtchouk-balance-obstruction.md) proves that even perfect first-order shell balance is parametrically insufficient for a pointwise-absolute-value proof of the candidate high-moment estimate. The required signed fixed-weight high-moment theorem remains open.
+**Evidence level:** the amplification threshold and tensor/Krawtchouk representation are exact through [MC-264](../../findings/MC-264-support-matched-high-moment-blind-threshold.md); [MC-265](../../findings/MC-265-even-support-central-krawtchouk-balance-obstruction.md) rules out first-order balance plus termwise absolute values; [MC-266](../../findings/MC-266-tensor-pair-krawtchouk-radial-source-walk-collapse.md) exactly collapses the weighted pair geometry to a radial `2m`-step Boolean-cube source walk. The required signed support-resolved estimate remains open.
 
-The surviving quadratic blind relation lives on a shell-prime subset `T` of size `t`. Low moments cannot see one exceptional subset against the whole fixed-weight family at the first admissible support scale `t~(1/log 2) log log y`. MC-264 identifies exactly where moment amplification becomes strong enough.
-
-After raising the shell character sum to tensor order `m` and reducing products modulo squares, the coefficient vector has quadratic mass
-
-`D_(m,y) ~ (2m-1)!! k_y^m`
-
-uniformly for `m=O(log log y)`. At `m=t`, the natural diagonal still sits above one blind atom. At **one extra tensor power**, `m=t+1`, the normalized diagonal cost drops to order
+The surviving blind relation lives on a shell-prime subset of size `t`. At the first admissible support `t~(1/log 2)log log y`, low moments cannot isolate one exceptional subset from the fixed-weight family. MC-264 shows that one extra tensor power is enough: at `m=t+1`, the normalized diagonal cost is of order
 
 `2^(t+1) sqrt(t)/k_y`,
 
-which tends rapidly to zero at the first unresolved support. Thus the family-size obstruction is genuinely a low-moment obstruction: a support-matched `2(t+1)`-th moment estimate near diagonal scale would have ample room to exclude every blind subset.
+which tends rapidly to zero. Thus a near-diagonal `2(t+1)`-th moment estimate has ample room to exclude every blind subset.
 
-The exact arithmetic kernel is the fixed-weight Krawtchouk transform
+MC-265 identifies why generic shell balance is not that estimate. Even at exact Hamming balance, the even Krawtchouk kernel is still parametrically too large for pairwise triangle-inequality control. The needed gain has to occur before absolute values are taken.
 
-`S_(2m,y)(t) = sum_(u,v) c_m(u)c_m(v) K_t(d_y(u,v);N_y)`.
+MC-266 then removes the pair indices themselves. If `a_y=sum_p delta_(e_p)` on the lower-prime Boolean cube and `c_m=a_y^(*m)`, exponent two gives the exact autocorrelation identity
 
-MC-265 now closes the tempting shortcut “prove every product character is nearly balanced, then bound the off-diagonal terms separately.” At perfect Hamming balance `d=floor(N/2)`, the even layer already satisfies
+`sum_u c_m(u)c_m(uq)=c_(2m)(q)`.
 
-`|K_t(d;N)|/binom(N,t) ~ (t/(eN))^(t/2)`
+Therefore
 
-for even `t`, up to the explicit constant-scale asymptotic. At the live support this is larger than the pointwise scale required by the diagonal target by
+`S_(2m,y)(t)=sum_q c_(2m,y)(q) K_t(d_y(q);N_y)`.
 
-`(k_y/t)^(t/2+o(t))`.
+The coefficient `c_(2m,y)(q)` is radial in `s=omega(q)`. Writing
 
-So even ideal first-order sign balance leaves a universal without-replacement parity correlation far too large for triangle-inequality control.
+`H_(s,y)(t)=sum_(omega(q)=s) K_t(d_y(q);N_y)`
 
-This does **not** lower-bound the actual arithmetic moment. The off-diagonal Krawtchouk terms are signed and may cancel. That cancellation is now the mathematical content of the open route. A successful theorem must control the weighted signed distance distribution as a whole, force the relevant weighted mass close enough to Krawtchouk zeros, or estimate the sparse shell moment directly without absoluteizing pairwise terms.
+and
 
-**Research consequence.** Keep the favorable `m=t+1` amplification, but stop asking for generic pairwise shell balance as the missing input. The required source theorem is an association-scheme/Fourier cancellation statement at order `t`, not a first-moment pseudorandomness estimate.
+`C_(2m,k)(s)=(2m)! [z^(2m)] (sinh z)^s (cosh z)^(k-s)`,
 
-**Boundary.** MC-264--MC-265 neither prove the candidate moment inequality nor exclude a blind relation. They identify a sufficient amplification scale and rule out one broad proof class for reaching it.
+the whole target becomes
+
+`S_(2m,y)(t)=sum_(s even, 0<=s<=2m) C_(2m,k_y)(s) H_(s,y)(t)`.
+
+The diagonal is `s=0`. Every nontrivial collision-depth layer can have raw positive coefficient mass of higher polynomial degree in `k_y` than the diagonal, so radial reduction is not a small-error argument. Its value is structural: **the missing theorem is a finite hierarchy of signed arithmetic shell sums over products of exactly `s` lower primes, not an arbitrary weighted two-source distance distribution.**
+
+At the live `m=t+1~log log y`, one can therefore attack the support layers directly, derive recurrences that couple neighboring even `s`, or estimate the exact radial mixture without absoluteizing each layer. If available character-sum technology only controls `H_s` at the scale of its raw layer mass, the route still fails; if arithmetic produces signed cancellation across the hierarchy, this is the direct route back to the MC-264 threshold.
+
+**Boundary.** Radiality is source-side only: the Legendre-signature distance `d_y(q)` need not depend only on `omega(q)`. MC-266 proves no new moment estimate and excludes no blind relation. It changes the primitive analytic object that must be controlled.
