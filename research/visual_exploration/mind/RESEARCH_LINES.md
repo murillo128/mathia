@@ -14,24 +14,22 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Cross the one-cancellation scale or upgrade typical-start control to uniform control
+## Control the diagonal one-cancellation energy after exact anchor decoupling
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`.
 
-VIS-203--VIS-207 identify positive autocorrelation shell energy with a two-sample close-pair probability and show that fixed and growing noncancelling windows dilute. VIS-208 now prices the **actual finite-start sinc kernel** rather than the unweighted shell mass. The cumulative bound
+VIS-203--VIS-208 identify positive autocorrelation shell energy with close-pair geometry and then use the actual finite-start sinc kernel to make the entire **noncancelling** determinant band negligible in long-start Cesaro mean square under explicit window conditions.
 
-`S_(y,H)(A)/R^2 << H A^(2+4 alpha)(log y)^2/y^2`
+VIS-209 packages the first surviving layer into one PSD anchor Gram kernel. VIS-210 then resolves its support geometry in the thin-window regime: if `L_tri>5R-5`, distinct shell indices have disjoint six-anchor supports and the fluctuation Gram is exactly diagonal. In the narrower fringe `L_tri>4R-3`, the only possible off-diagonal coupling is the explicit `6/5` resonance `L_tri=5s-6r+1`.
 
-holds uniformly all the way to `A<=kappa y` for fixed `kappa<1/2`, even when its right-hand side is not small. Abel/Stieltjes summation against `sinc^2` then gives, for `0<alpha<1/2`,
+The live theorem in the collision-free cone is therefore no longer generic spectral spreading. It is a uniform decay or concentration law for the diagonal energies
 
-`W_kappa << H y^(2+4 alpha)(log y)^2/L^2`,
+`E_r=sum_(c in C_r) alpha_r(c)^2`,
 
-with the corresponding logarithmic endpoint correction at `alpha=0`. Under the stated window conditions this makes the entire noncancelling determinant band negligible in long-start Cesaro mean square and hence for a density-one set of starts.
+with `||G||_op=max_r E_r`. Near the boundary, add only the explicit sparse resonance contribution. Below `4R-3`, where more anchor families can collide, the broader Gram problem may re-enter.
 
-The positive-shell frontier has therefore moved to two genuinely different questions. First, understand the **one-cancellation-and-above** shells where the bounded-multiplicity determinant model changes. Second, determine whether the start-averaged gain can be upgraded to uniform-in-`T0` control, or whether rare coherent starts carry a real obstruction. Reopening the subcritical noncancelling band without one of these new ingredients no longer addresses the surviving problem.
+A separate unresolved axis remains: VIS-208 gives start-averaged/density-one control, not worst-start control. Uniform-in-`T0` cancellation must be proved separately or a rare coherent-start obstruction exhibited.
 
-## Keep unweighted shell mass, sinc-weighted destination energy and uniform start control separate
+## Keep anchor support geometry, diagonal energy, resonance coupling and uniform start control separate
 
-VIS-207's dilution condition is sufficient for the raw cumulative shell mass itself to be small. VIS-208 shows the destination can be much cheaper: even when that raw bound grows, the sinc kernel suppresses wider shells strongly enough to make the long-start energy vanish. But an `L^2`-in-start conclusion still does not imply a uniform pointwise bound.
-
-Future claims should therefore state which of three currencies they control: cumulative shell mass, sinc-weighted Cesaro energy, or worst-start amplitude. A failure of the strongest currency is not automatically a failure of the weaker destination.
+VIS-209 shows that raw shell multiplicity is the wrong organization; VIS-210 shows that even a generic full-Gram bound can be wasteful when support disjointness makes cross-shell covariance identically zero. Future claims should state whether they control exact anchor collisions, diagonal shell energy, the sparse resonance fringe, sinc-weighted Cesaro energy, or worst-start amplitude.

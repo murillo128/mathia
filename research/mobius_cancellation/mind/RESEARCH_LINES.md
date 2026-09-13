@@ -2,22 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove flat-vector cancellation for the exact sparse quadratic-character matrix
+## Prove phase-sensitive cancellation for the exact flat quadratic-character coefficient
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`, `MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge`, `MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy`, `MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate`, `MI-018-nonnegative-transference-does-not-create-fixed-power-sign-balance`, `MI-019-shell-square-blindness-is-a-cross-prime-common-quotient-problem`, `MI-020-explicit-large-sieve-uniformity-stops-before-blind-support-scale`, `MI-021-support-matched-high-moments-cross-the-single-blind-shell-threshold`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category`, `MI-014-centered-parity-and-zero-mode-are-separate-currencies`, `MI-015-sign-support-covariance-gives-a-conditioned-quadratic-bridge`, `MI-016-source-aligned-shifts-face-a-defect-or-mertens-dichotomy`, `MI-017-first-shell-crt-common-mode-is-a-source-coupled-energy-coordinate`, `MI-018-nonnegative-transference-does-not-create-fixed-power-sign-balance`, `MI-019-shell-square-blindness-is-a-cross-prime-common-quotient-problem`, `MI-020-explicit-large-sieve-uniformity-stops-before-blind-support-scale`, `MI-021-support-matched-high-moments-cross-the-single-blind-shell-threshold`, `MI-022-positive-shell-envelopes-erase-the-phase-cancellation-needed-below-the-blind-atom`.
 
-MC-266--MC-267 show that the radial support hierarchy is only a Krawtchouk re-expression of the actual lower-prime Legendre sign distribution. MC-268 replaces the wasteful monomial detector by the endpoint-optimal Christoffel square, and MC-269 writes its arithmetic content exactly as
+MC-266--MC-269 reduce the radial/tensor description to the actual Legendre-sign source and then to the endpoint-optimal flat quadratic-character second moment
 
-`F=||A 1_Z||_2^2 = sum_(|T|=t) |sum_(S in B_m) chi_T(q_S)|^2`,
+`F_t = sum_(|T|=t) |sum_(S in B_m) chi_T(q_S)|^2`,
 
-with literal diagonal `CZ`. At the useful choice `m=t+1`, excluding one blind row requires a loss strictly below `Z/C~k_y/(t+1)`.
+whose diagonal scale is exactly the scale of one blind row. MC-270 proves that coefficient-uniform operator estimates cannot cross that scale because the exact matrix already has row norm `Z`.
 
-MC-270 closes the coefficient-uniform large-sieve escape even for this exact sparse matrix. Every row of `A` has squared norm `Z`, so `||A||_op^2>=Z`. Any inequality uniform over arbitrary coefficients therefore gives at best `||A 1_Z||^2<=D Z` with `D>=Z`, exactly the `Z^2` contribution of one blind row. In the target normalization this forces `L_y>=Z/C`, while blind exclusion needs the opposite strict inequality.
+MC-271--MC-272 close two further relaxations that still preserve the flat source vector. The nonnegative shell generating polynomial cannot isolate `F_t` below the blind scale by any positive-real majorant, and complex Cauchy extraction followed by any raw circle `L^p`/Hardy norm remains above the same threshold for every radius. The obstruction is therefore not merely generic coefficient uniformization: **positive scalar envelopes of the full shell family also erase the required gain**.
 
-The live theorem is therefore **vector-specific**: exploit the all-one source vector before any Cauchy--Schwarz/duality step enlarges it to arbitrary coefficients. Equivalently, control the signed off-diagonal part of `<1_Z,A^*A1_Z>` directly at `o(Z^2)`, or construct an admissible arithmetic configuration showing that such cancellation fails. Better operator norms, generic sparse large sieves and unrestricted coefficient duality cannot cross the threshold by themselves.
+The live theorem must keep the target phase/sign structure until after extraction. Equivalent forms are direct `o(Z^2)` control of the signed off-diagonal part of `<1_Z,A^*A1_Z>`, a genuinely phase-sensitive Fourier/Cauchy coefficient estimate for the exact shell polynomial, or a source-specific relaxation whose norm floor is strictly below one blind atom. Better operator norms, nonnegative generating majorants and absolute circle norms are now known dead ends for this endpoint.
 
-## Keep basis changes, detector efficiency, arithmetic cancellation and coefficient uniformization separate
+## Keep basis changes, detector efficiency, flat-vector structure and phase extraction separate
 
-MC-267 says Krawtchouk coordinates do not create information. MC-268 says detector choice can remove large artificial loss. MC-269 says the residual is a flat quadratic second moment. MC-270 says replacing that one flat vector by the whole coefficient space loses exactly the remaining blind-atom budget.
+MC-267 says Krawtchouk coordinates do not create information. MC-268 says detector choice can remove artificial high-moment loss. MC-269 identifies the distinguished flat source vector. MC-270 says enlarging that vector to arbitrary coefficients spends the blind-row budget. MC-271--MC-272 say collapsing the remaining shell data to a positive scalar envelope spends the same budget even without coefficient uniformization.
 
-The unresolved arithmetic resource is therefore not “a stronger large sieve” in the usual uniform sense. It is cancellation attached to the specific flat lower-prime subset family, or another source-specific structured coefficient class whose relaxation still stays strictly below the blind-row atom.
+The unresolved arithmetic currency is consequently narrower: signed/angular cancellation attached to the exact flat lower-prime subset family at the target shell, before absolute values or positive majorants destroy it.

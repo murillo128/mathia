@@ -1,0 +1,13 @@
+# MI-016 — Exact Weil-square targets linearize, while positive additive preservation cannot absorb the critical source
+
+**Evidence level:** supported by WP-269 and WP-287--WP-289 on the full `C_c^\infty(R)` Weil test class. These are category/no-go results, not a proof of Weil positivity.
+
+WP-287 already shows that arbitrary nonlinear processing of a scalar Arthur-height profile does not enlarge the class of **linear** target distributions. WP-288 closes the apparent cone-only escape at the target end. Any continuous scalar functional on test functions that satisfies the degree-two homogeneity, parallelogram law and translation invariance forced by convolution squares polarizes to a unique translation-invariant Hermitian distribution. If it is nonnegative, Bochner--Schwartz makes that distribution positive definite; if it agrees with the Weil quadratic form on every square, Dixmier--Malliavin factorization forces the distribution itself to be the Weil distribution.
+
+So exactness on the square cone does not buy a genuinely nonlinear target category. A determinant, entropy, minimum or other nonlinear statistic is relevant only if an independent theorem makes it obey the exact Hilbertian identities; once that happens it has already linearized.
+
+WP-289 supplies the complementary source-side obstruction. The critical Mangoldt covariance measure is positive but non-tempered. Therefore no continuous translation-invariant positive quadratic form can dominate every finite critical source covariance while preserving those finite blocks monotonically: its positive tempered spectral measure would have to dominate the full non-tempered source measure.
+
+Together these results squeeze the completion architecture from both ends. The final exact Weil target must satisfy rigid quadratic/translation identities, but the critical arithmetic block cannot simply be carried forward as a positive summand and repaired by adding more positivity. A successful construction must **change the source block before final positivity is read**—through signed finite--archimedean interference, quotient/compression, nonlocal coupling or another source-forced operation—and then prove that the resulting quadratic form satisfies the exact target identities.
+
+**Boundary.** WP-289 rules out monotone positive additive preservation of all finite critical cylinders, not every signed or nonlinear pre-quadratic coupling. WP-288 does not establish positivity of the Weil distribution; it says what any exact cone realization would necessarily become.

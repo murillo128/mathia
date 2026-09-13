@@ -4,20 +4,16 @@ This file holds the current mathematical questions suggested by the durable prim
 
 ## Resolve the critical finite-section transition or leave the single-profile architecture
 
-**Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`.
+**Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`.
 
-PC-224--PC-277 close fixed-conductor packets, finite trace words, complete finite singular data, common-dilation growth and broad normalized moving-band regimes, leaving the intermediate rational-microscopic scalar window between current PNT transport and universal denominator resonance.
+PC-224--PC-280 reduce the positive spectral construction to a two-sided finite section of one source-independent cyclic convolution operator. PC-281 closes the regular-profile side by transporting the complete normalized singular spectrum to the denominator-`q` Li-grid control. PC-282 closes the opposite boundary-first side: the normalized radial logarithmic singularity collapses to the exact modular collision selector.
 
-PC-278--PC-280 classify the positive spectral escape. Complete-domain phase wrappers are unitary gauge, complete-torus pointwise nonlinearities are source-blind Fourier data, and a truncated coefficient window is exactly a two-sided finite section of one source-independent cyclic convolution operator `P_(p,B)D_fP_(r,B)`.
+PC-283 now closes the most immediate renormalized escape. After the canonical anchor-local selector subtraction, the full cyclic logarithmic remainder has strictly negative nonconstant Fourier multipliers, an explicit digamma boundary spectrum and the classical logarithmic Green-kernel low-mode limit. The complete-domain scalar remainder is therefore harmonic background, not a new arithmetic symbol.
 
-PC-281 closes the regular-profile side: whenever the profile regularity is inside the explicit PNT transport regime, the complete normalized singular spectrum is reproduced by the denominator-`q` Li-grid control. PC-282 closes the opposite boundary-first logarithmic side. For the intrinsic radial logarithm `f_rho(t)=log|1-rho zeta_q^t|`, normalization by the divergent anchor value `a_rho=-log(1-rho)` gives
+The live single-profile question is narrower: the **simultaneous critical regime** where regular transport, selector divergence and finite-section placement interact before any one limit dominates. The observable must subtract or control both the exact selector and the classical digamma/Green remainder and then show that source-dependent two-sided projection placement contributes a residual not reproduced by the strongest rational control. If that residual also classicalizes, the architecture must leave the one-profile category through source-dependent, cross-level or cross-source coupling.
 
-`L_(p,r;B)^(rho)/a_rho -> -Z_(p,r;B)`
+## Keep complete-domain symbols, projection placement and arithmetic discrimination separate
 
-in operator norm, uniformly whenever `a_rho/(N log q)->infinity`. The selector `Z` is only the exact modular collision pattern and depends on the source through the quotient `p r^(-1)`, already inside the classical ratio-statistic framework.
+Complete-domain phase wrappers are gauge; regular complete symbols transport to rational controls; the singular boundary anchor becomes an exact selector; and PC-283 shows the selector-subtracted scalar boundary symbol is classical harmonic data. None of these statements alone removes the arithmetic information that may live in the relative placement of the finite projections.
 
-Thus “make the profile singular” is not itself a surviving mechanism. The live single-profile question is the **critical coupled regime** where neither PC-281 regular transport nor PC-282 selector dominance is small, or the renormalized finite remainder after subtracting the exact selector divergence. Any claimed residual must survive the strongest matched rational control. A distinct escape is to leave the one-profile finite-section category through source-dependent, cross-level or cross-source coupling.
-
-## Keep retained information, boundary divergence, transport regularity and arithmetic discrimination separate
-
-Truncation can retain projection placement after complete-domain gauge removal. PC-281 shows regular placement can still be transported away. PC-282 shows a divergent anchored profile can instead collapse to a classical selector before any new spectral information appears. A viable Prime-Circle mechanism must identify the finite or critically scaled residual left after both reductions and prove that this residual, rather than the universal transport or selector term, carries prime-specific information.
+A viable Prime-Circle mechanism must therefore identify a critically scaled finite-section residual after both universal boundary pieces are removed and prove that this residual, rather than the complete-domain symbol or modular selector, carries prime-specific information.

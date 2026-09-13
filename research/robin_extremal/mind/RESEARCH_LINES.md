@@ -2,26 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Recompute the dominant Robin frontier after the mixed first/depth-two channel drops below 173/200
+## Resolve the nonlocal source-conditioned assembly after local boundary-depth closure
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`, `MI-010-deep-support-boundaries-have-vanishing-threshold-measure`, `MI-011-depth-two-short-interval-elimination-is-governed-by-an-exceptional-mass-max-law`, `MI-012-source-conditioned-bad-host-sparsity-converts-directly-into-a-depth-two-frontier-gain`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`, `MI-010-deep-support-boundaries-have-vanishing-threshold-measure`, `MI-011-depth-two-short-interval-elimination-is-governed-by-an-exceptional-mass-max-law`, `MI-012-source-conditioned-bad-host-sparsity-converts-directly-into-a-depth-two-frontier-gain`, `MI-013-the-local-robin-boundary-hierarchy-collapses-to-prime-gap-geometry-before-the-global-obstruction`.
 
-RE-095 reduces the residual mixed first/depth-two channel to a polynomial saving for bad deformed-quadratic sampled hosts. RE-096 supplies the phase geometry; RE-097 rules out ambient exceptional-set packing. RE-098--RE-100 progressively isolate and then bypass the apparent fourth-moment/critical-strip barriers.
+RE-095--RE-101 close the mixed first/depth-two channel and lower its frontier to `Theta_*=265657/307200`. RE-102 then recomputes the full local support-boundary decomposition. Above `Theta_*`, outside vanishing threshold measure, both adjacent boundaries of every surviving selected cell contain first-layer CA events, and the open chamber pulls back to the full gap between consecutive ordinary primes.
 
-RE-101 closes the remaining sampled-host theorem. Expanding the second moment directly over zero pairs replaces the large-sieve span cost by
+This closes the current hierarchy of **local support-boundary depth channels**. Deep boundaries, same-depth higher-layer chambers and the one-sided depth-two escape are all below the new threshold. The remaining local chamber metric is ordinary-prime-gap geometry passed through the deterministic first-layer event map.
 
-`M N(sigma,T) + T^(1/2) N(sigma,T)^2`.
+The next theorem must therefore use information not determined by those two local boundary coordinates. Candidate residual currencies are the nonlocal assembly of selected states across the fan, higher-layer ties and switches, correlations between successive prime-gap chambers, or selector constraints that couple the first-layer support to the full CA source. Improving another local host-count exponent cannot move a frontier whose local depth hierarchy is already closed.
 
-Kusmin--Landau controls near differences, second-derivative van der Corput controls far differences, Bourgain density handles the finite high-beta strip, and the very-high-beta tail is absolutely negligible. Consequently every fixed `1901/5216 < vartheta < 73/200` gives a polynomial saving for the **complete** bad-host set.
+## Recompute the global Robin obstruction in the new source-assembly currency
 
-Feeding that saving through RE-095 lowers the mixed first/depth-two frontier to the explicit balanced value
+RE-102 is not a global RH frontier. A selected state may have first-layer contact on both adjacent boundaries while depth-two events tie those boundaries, and higher-layer events may alter selected states elsewhere or enter state switches. The next program-level calculation should identify which of these nonlocal/source-conditioned mechanisms still carries a false-RH obstruction above `Theta_*`, and state its destination event before opening another analytic estimate.
 
-`265657/307200 = 0.8647688802... < 173/200`.
+## Keep method obstructions, local channel frontiers and global assembly separate
 
-The sparse-host/high-beta problem is therefore no longer the active obstruction for this channel. The next line-level task is to return to the other surviving Robin channels and selector constraints, identify which one now sets the global frontier, and apply the same destination-sensitive discipline before opening a new analytic estimate.
-
-## Keep method obstructions separate from channel frontiers
-
-RE-099's `3/8` fourth-moment floor remains a correct statement about that architecture. RE-100 shows a second moment bypasses it over most of the strip; RE-101 shows direct pair-kernel analysis closes the rest. A genuine obstruction in a stronger method need not bound a destination that can be reached with a cheaper statistic.
-
-The reusable lesson is to optimize the statistic against the channel's exact failure event. Once one channel moves, recompute the program-level maximum rather than continuing to improve a theorem whose destination is already below another surviving boundary.
+RE-099's fourth-moment floor is a method boundary; RE-100--RE-101 bypass it for the sampled-host channel. RE-102 goes further and closes the whole current **local boundary-depth** hierarchy. The surviving problem is now how locally ordinary-prime-gap chambers are selected and coupled by the full CA source. A stronger estimate inside an already-subcritical local channel does not address that residual.

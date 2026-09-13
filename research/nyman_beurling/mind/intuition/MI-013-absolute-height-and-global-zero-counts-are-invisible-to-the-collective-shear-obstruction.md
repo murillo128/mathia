@@ -1,0 +1,11 @@
+# MI-013 — Absolute height and global zero counts are invisible to the collective-shear obstruction
+
+**Evidence level:** supported by NB-098--NB-099 for the canonical finite right-half-plane Blaschke-deflated state geometry. This is a source-boundary result, not a claim that the actual zeta divisor realizes the synthetic bad clusters.
+
+NB-098 shows that pairwise conditioning is the wrong scale: three distinct states can have unit canonical pivots and uniformly benign two-state subsystems while the full transformed Gram develops `epsilon^-1` triangular shear and `epsilon^-4` condition-number growth. NB-099 identifies which familiar zeta data cannot repair this.
+
+The canonical Gram and deflation matrices depend on real parts, relative ordinates and reflected sums, and are **exactly invariant under common vertical translation**. The bad three-state geometry can therefore be moved to arbitrarily large height without changing its conditioning. Completing it by the standard zeta involutions also leaves the right-half triple intact. By placing such symmetry-closed clusters sufficiently sparsely, one can build synthetic divisors compatible with simplicity, the Riemann--von Mangoldt global counting law and arbitrarily sparse off-critical populations while retaining unbounded collective shear.
+
+Hence absolute ordinate, quartet symmetry and global counting density are too coarse for a separation-insensitive canonical-conditioning theorem. A successful source restriction must be local in the geometry that the Gram actually sees: it must couple nearby ordinate spacings to horizontal displacements, exclude the transverse three-state pattern, change the representation by treating symmetry/confluence jointly, or avoid requiring dimension-free conditioning at the target.
+
+**Boundary.** The synthetic controls show insufficiency of those coarse source facts, not existence of corresponding zeta-zero clusters. A theorem using stronger local zero-spacing, horizontal-location or symmetry-block information remains open.

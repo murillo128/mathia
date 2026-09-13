@@ -2,22 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force source-scale descent, not merely horizon descent
+## Lift the finite carrier-inventory charge to adaptive energy packets
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`, `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`, `MI-003-normalized-record-defect-is-the-composition-loss`, `MI-004-multiplicative-horizon-descent-can-preserve-the-source-quotient`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`, `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`, `MI-003-normalized-record-defect-is-the-composition-loss`, `MI-004-multiplicative-horizon-descent-can-preserve-the-source-quotient`, `MI-005-source-neutral-carrier-descent-spends-a-strict-finite-row-potential`.
 
-FD-094--FD-096 close one-step representation, the source-head branch and the existence of infinitely many sharp occupied bounded-defect entry states under false RH. FD-097 removes the apparent superexponential multistep loss: projective occupation/defect quality loses only a fixed branch factor. FD-098 then charges the strongest current uniform short-interval Möbius input and shows that the all-head branch gains only a logarithmic additive corridor, still `o(X)`.
+FD-094--FD-098 close one-step representation, projective composition loss and the strongest current uniform short-interval regularity gain. FD-099 then gives the decisive matched obstruction: for every fixed depth, false-RH source records support genuine multiplicative predecessor chains whose physical horizon contracts while the sampled quotient `H/r` remains unchanged.
 
-FD-099 closes another natural escape. For every fixed depth `m`, false-RH source records support an exact chain of `m` genuine `4/9` multiplicative predecessors with sharp occupation and bounded defect, and after diagonalization the projective losses are only subpower. Yet every state samples the **same** source quotient `H_j/q_j=X`: the contraction is prepaid by repeated-prime inventory `9^m`, with each step replacing one `3^2` factor by `2^2`.
+FD-100 sharpens that obstruction rather than extending it indefinitely. On an exact carrier `H=rX`, every source-neutral non-head repair sends the nonsquarefree row to `r'<=r/2`. The strict potential `I(r)=log_2(r/4)` therefore drains to zero in finitely many steps, and the genealogy terminates at the four-adic head. A fixed carrier has only finite prepaid source-neutral inventory.
 
-Therefore neither good projective composition nor a positive density—even 100% density—of fixed-factor horizon contractions implies descent through the source hierarchy. The live theorem must force **source refresh**: prove that the sampled quotient eventually decreases, charge the finite repeated-prime inventory that can finance quotient-preserving contractions, or exploit exact signed/divisibility structure that prevents indefinite reuse of one source spike.
+The live theorem is now an **amortized packet theorem**. Show that the adaptive predecessor-energy selection cannot repeatedly escape this row-potential charge while preserving enough occupation/defect quality, or identify the exact mechanism by which it can. Once source-neutral inventory is exhausted, quantify how genuinely source-moving head steps accumulate despite their currently only additive or logarithmically thick displacement.
 
-## Find a scale-sensitive invariant that sees the sampled source quotient
+## Find a scale-sensitive invariant that couples packet quality to source refresh
 
-The projective certificate deliberately quotients a common normalized-energy factor and therefore controls composition quality rather than source progress. FD-099 identifies the missing second scale explicitly: a state `(H,r)` can contract `H` while preserving `H/r` exactly.
+The projective certificate controls composition quality but intentionally quotients out a common normalized-energy factor. FD-099 shows that this can hide source-neutral contraction; FD-100 shows that the hidden resource is finite on each exact carrier.
 
-A decisive invariant must therefore couple projective quality to at least one non-projective resource such as sampled source scale, remaining repeated-prime inventory, row complexity, signed source increments or transport error. A monotone quantity that decreases only when `H/r` decreases would distinguish genuine source descent from factorization transport. Improving the already-exponential projective loss or merely counting contractive branch types cannot do this.
+A decisive invariant should therefore carry both currencies: projective quality and remaining source-neutral carrier inventory. It should decrease under non-head transport or prove that any reset of the inventory necessarily changes the sampled source quotient. Merely improving the already-controlled branch factor, counting contractive branch types, or proving physical horizon descent cannot distinguish factorization transport from genuine movement through the source hierarchy.
 
-## Keep entry existence, projective composition, source regularity, horizon descent and source descent distinct
+## Keep entry existence, composition, carrier inventory and source descent distinct
 
-Source-record slowdown supplies the entry family; FD-094--FD-095 supply exact one-step closure; FD-097 supplies projective multistep accounting; FD-098 prices current endpoint regularity; FD-099 proves that even exponentially strong relative horizon descent can be source-neutral. Future synthesis should not reopen bounded-defect entry, independent occupation/defect bookkeeping, generic endpoint smoothing, or multiplicative-step density after those gates have been isolated.
+Source-record slowdown supplies the entry family; FD-094--FD-095 supply exact one-step closure; FD-097 supplies projective multistep accounting; FD-098 prices current endpoint regularity; FD-099 separates horizon descent from source descent; FD-100 proves that exact source-neutral carrier genealogies nevertheless have finite inventory. The remaining gap is the passage from that coordinate-level finite resource to the adaptive mass selected by the full predecessor argument, followed by enough accumulated source movement to change the false-RH scale.
