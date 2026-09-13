@@ -2,20 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Upgrade power-syndetic pointwise occupation to a scale budget the Farey/RH criterion can consume
+## Convert full-counting pointwise occupation into compatible accumulation geometry
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-072--FD-081 push the recurrence currency from protected records through counting abundance, physical-energy weighting, logarithmic annular recurrence and annular first passage all the way to physical horizons. For every fixed admissible `eta`, the first later horizon with `nu_(H,D)>eta` lies at `X^(1+o(1))`.
+FD-072--FD-081 push the recurrence currency from protected records through counting abundance, physical-energy weighting, logarithmic annular recurrence and annular first passage to good physical horizons. FD-082 shows that subpower first passage by itself is too weak for fixed-per-hit accumulation: it permits only `(log log X)^2` usable horizons.
 
-FD-082 now determines the exact amount of scale density contained in that statement. If the good horizons are `g_n`, then subpower first passage is equivalent to
+FD-083 removes that cardinality escape for the actual physical occupation set. The uniform atom cap `a_H<<H^(2sigma-1)` together with annular energy `Y^(2Theta+o(1))` forces a fixed occupied energy fraction to be carried by `Y^(1-o(1))` distinct horizons. For every fixed `epsilon>0` and admissible `eta`, the set `nu_(H,D)>eta` has full ambient counting exponent inside `(X,X^(1+epsilon)]`, and cumulatively `N_eta(X)=X^(1-o(1))`.
 
-`log g_(n+1) / log g_n -> 1`,
+The live theorem is therefore no longer an anti-concentration or abundance theorem. It must show that sufficiently many of these occupied horizons can be **composed by the actual Farey/RH mechanism**: produce a compatible integer-ratio or multiplicative chain, a transport estimate that accumulates across many occupied horizons, a gain depending on the intervening scale geometry, or another nonlocal inequality that can use the dense-but-unstructured occupied set.
 
-or vanishing gaps in the coordinate `log log H`. It forces only `N_eta(X)/log log X -> infinity` and remains compatible with an integer-ratio chain having `N(X)~(log log X)^2` and logarithmic horizon entropy tending to infinity. Even a favorable fixed multiplicative gain at every good horizon can then accumulate to only `X^(-o(1))`, not a fixed power saving.
+## Keep recurrence, counting abundance and transport compatibility separate
 
-The live theorem must therefore add information beyond pointwise power-syndeticity. Viable forms are a genuinely stronger count of distinct good horizons, an anti-concentration theorem that converts annular energy recurrence into many separate pointwise witnesses, a gap-sensitive/nonlocal estimate whose gain grows with the intervening scale geometry, or a mechanism that also consumes the bad intervals instead of merely skipping them.
+FD-082 remains the exact control showing that recurrence alone does not imply abundance. FD-083 supplies the extra physical energy information and proves abundance, but abundance does not imply the coherence needed by the GCD/Schur accumulation steps. The current hierarchy is therefore
 
-## Keep recurrence currencies and accumulation currencies separate
+`recurrence -> physical anti-concentration -> full-counting occupation -> compatible transport`,
 
-Record protection, counting abundance, annular energy weighting, logarithmic recurrence, annular first passage, pointwise first passage and usable scale density are distinct statements. FD-081 supplies existence of a good horizon in every sufficiently late fixed-power window. FD-082 proves that this does **not** imply logarithmically many usable horizons, finite logarithmic horizon entropy, or enough fixed-per-hit gain to move a power exponent. Any later Farey argument must state which accumulation currency it actually needs rather than silently upgrading power-syndetic recurrence.
+with only the last arrow still open. Do not silently replace exponent-one counting by positive density, a divisor chain, or multiplicative composability.

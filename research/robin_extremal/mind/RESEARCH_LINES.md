@@ -2,16 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Constrain genuinely cross-layer assembly of the continuous selector-dilation front on the CA staircase
+## Constrain singular cross-layer state selection on the CA staircase
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`.
 
-RE-076--RE-082 reduce the late positive long fan to a continuous selector-dilation carrier and show that the smooth common-amplitude law itself can realize the required complementary power front. RE-083 then closes additive first-layer support mismatch and the direct linear Robin timing tax on arbitrary mixed fan segments.
+RE-076--RE-082 reduce the late positive long fan to a continuous selector-dilation carrier and show that the smooth common-amplitude law itself can realize the required complementary power front. RE-083--RE-084 then show that the complete first-layer birth set and threshold timeline are reconstructed from selected endpoints; late first-layer geometry is just an ordinary-prime configuration shifted by one half, and its direct Robin timing tail is summable.
 
-RE-084 closes the remaining first-layer-only nonlinear timing escape. The endpoint selector prime set, together with the two possible fringe primes, reconstructs the entire labeled first-layer event set exactly because `p -> eta_p` is fixed and event order is prime order. Uniformly late, `eta_p=p+1/2+O(1/log Z_0)`, so pure first-layer chamber widths are ordinary prime gaps up to `o(1)` and every fixed Lipschitz one-prime delay statistic collapses to the universal half-delay profile. There is no hidden independent first-layer assembly coordinate left once endpoint prime support is known.
+RE-085 now removes every **regular bounded fixed-order mixed-event statistic** as a leading escape on stretched same-block fans. If the complete physical CA event measure gives each event `(p,j)` its logarithmic state mass `log p` and is normalized by total log-state growth, the higher-layer mass fraction is
 
-The live theorem must therefore be genuinely joint: use relative placement of first- and higher-layer thresholds, how mixed events constrain adjacent selected states or tied spans, supporting-slope capacity, or another state/barrier condition that cannot be reduced to the endpoint ordinary-prime configuration plus its deterministic first-layer threshold map. Ordinary prime-gap input may still matter, but then it is explicitly a restriction on the endpoint prime set rather than a new CA timing mechanism.
+`P_01/L_01 << Y_1^(-1/2) (log Y_1)^(3/2) -> 0`.
 
-## Keep endpoint support, first-layer timeline and cross-layer assembly separate
+The full normalized event measure therefore converges in total variation to its endpoint-determined first-layer part. Every bounded one-event observable and every bounded fixed-order mass-polynomial correlation has the same asymptotic value after all higher-layer events are removed.
 
-RE-083--RE-084 do not make first-layer events irrelevant; they locate exactly where their information lives. The complete first-layer timeline is endpoint-determined and asymptotically a half-translation of the ordinary primes, while its direct Robin-weighted timing tail is summable. What remains uncompressed is the interaction with higher-layer thresholds and state admissibility. Any candidate depending only on the labeled first-layer point configuration should first be reduced through the endpoint reconstruction before being treated as new assembly information.
+The live theorem must consequently use a **singular cross-layer channel**: adjacency or chamber splitting by rare higher-layer events, conditioning on an exceptional threshold, tied spans, supporting-slope changes, exponent-vector/state admissibility, rightmost-maximizer selection, or another rule whose effect can stay order one despite vanishing higher-layer log-mass. Ordinary prime gaps may still matter, but only through how a sparse higher-layer event changes the admissible CA state geometry, not as another regular statistic of the mixed event distribution.
+
+## Keep event mass and structural influence separate
+
+RE-085 does not make higher layers irrelevant. It proves only that their normalized physical log-mass vanishes and hence that bounded fixed-order mass observables are asymptotically first-layer. A single rare event may still change adjacency or the selected state discontinuously. The remaining Robin obstruction must exploit precisely such non-mass-continuous structure rather than amplify another bounded moment of event locations.

@@ -1,17 +1,27 @@
-# MI-005 — Stable-tail diagnostics must price future depth against outer conditioning
+# MI-005 — Stable-tail diagnostics are governed by finite prediction error, not qualitative outerness alone
 
-**Evidence level:** supported by NB-063--NB-081. The continuation, prediction, branching, q-adic and variable-horizon identities are exact; NB-080 supplies an exact matched outer false positive for fixed depth, and NB-081 computes the sharp screening scale on the same controls. No arithmetic criterion closing the Nyman stable tail is established.
+**Evidence level:** supported by NB-063--NB-082. The continuation, prediction, branching, q-adic and variable-horizon identities are exact; NB-082 gives an exact stationary branch-filter classification in terms of finite prediction error. No arithmetic criterion closing the Nyman stable tail is established.
 
-NB-074--NB-079 write the uncancelled continuation charge as a refinement ledger and remove the universal common prediction mode. At each exact q-adic refinement there are nonnegative charges `G`, `P`, and `S` with `ell=G+P`, `c=G+S`, so `J_m=J_0+sum(P-S)`. A nonzero stable tail forces this residual to diverge on every fixed-ratio refinement ray, while boundedness on one unbounded ray kills the tail.
+NB-074--NB-079 write the uncancelled continuation charge as a refinement ledger and remove the universal common prediction mode. A nonzero stable tail forces the residual charge to diverge on every fixed-ratio refinement ray, while boundedness on one unbounded schedule excludes such a tail.
 
-NB-080 shows why a fixed-ratio converse fails. The boundedly invertible outer control `D_j=(I-rho V_m)e_j`, `0<rho<1`, has zero stable tail and uniformly conditioned global Gram, yet a positive-density boundary layer receives only finitely many descendant generations and keeps `J` linear in the prefix size.
+NB-080 shows why a shallow converse fails: a boundedly invertible outer source with zero stable tail can still pay a linear finite-horizon boundary cost. NB-081 makes future enlargement an exact screening operation and computes two first-order calibrations: geometric decay for `1-rho z`, `0<rho<1`, and only harmonic decay for the outer boundary filter `1-z`.
 
-NB-081 makes future enlargement an exact part of the ledger rather than an ad hoc repair. If the copied horizon is enlarged, the gain is a nonnegative screening charge `H`, giving `J^+-J=P-S-H`. On the matched outer control, a depth-`L` future horizon satisfies
+NB-082 identifies the general invariant behind those examples. For a stationary branch filter `D_j^(psi)=psi(V_m)e_j`, define
 
-`J_(R,m^L R-1) ~ R rho^(2L)`
+`epsilon_L(psi)=inf_{deg p<=L, p(0)=1} ||psi p||_(H^2)^2`
 
-for fixed `0<rho<1`. Thus the fixed-depth false positive disappears once `L` grows logarithmically in `R`; the critical depth is `L~log R/[2 log(1/rho)]`. At the outer but noninvertible endpoint `rho=1`, however, `J~R/(L+1)`, so boundedness requires `L` of order `R` and vanishing requires still deeper screening.
+and the normalized finite-prediction excess
 
-The reusable principle is that a finite-horizon prediction residual is meaningful only together with a **screening-depth/conditioning law**. The same outer source can look extensively nonlocal at fixed depth and asymptotically benign at a depth tuned to its inverse conditioning. A stable-tail diagnostic should either allow enough future depth for healthy controls, subtract the calibrated outer boundary cost, or isolate a mode that persists under arbitrarily deep screening.
+`a_(psi,L)=epsilon_L(psi)/|psi(0)|^2-1`.
 
-**Boundary.** NB-081 calibrates explicit stationary outer controls; it does not prove that the arithmetic Nyman innovations have the same screening law. Qualitative outerness is not enough to infer logarithmic depth because the `rho=1` endpoint is much slower. The remaining arithmetic work is to derive the relevant quantitative source conditioning or a different target-sensitive certificate.
+At the depth-`L` horizon `N=m^L R-1`, a fixed positive fraction of prefix indices realizes this same scalar prediction defect, and the complete prediction-volume charge satisfies
+
+`K_(m,R,L) log(1+a_(psi,L)) <= J_(R,N) <= (R-1) log(1+a_(psi,L))`,
+
+with `K_(m,R,L)/R -> 1-1/m` uniformly in `L`. For outer `psi` and `L->infinity`, this is exactly `J asymp_m R a_(psi,L)`. Hence bounded screening is equivalent to `R a_(psi,L)=O(1)` and vanishing screening to `R a_(psi,L)->0`.
+
+Inner--outer factorization gives the infinite-depth classification: `a_(psi,L)` decreases to `|theta(0)|^(-2)-1`, so it tends to zero exactly when `psi` is outer. Qualitative outerness therefore answers only whether arbitrarily deep prediction can eventually remove the boundary layer. The amount of future needed is determined by the **rate** of finite cyclic prediction. The earlier models are calibrations: `1-rho z` has geometric prediction excess and needs logarithmic depth, while `1-z` has `a_L=1/(L+1)` and needs depth of order `R` merely for bounded charge.
+
+The reusable principle is sharper than a generic conditioning warning: a finite-horizon continuation residual is meaningful only after pricing the source-specific finite-prediction excess at the depth actually used. A source may be perfectly outer and have zero stable tail while remaining a false positive until its prediction error has fallen to the `1/R` scale.
+
+**Boundary.** NB-082 is exact for stationary scalar filters of the branching isometry. The actual Nyman innovations are nonstationary shrinking-cell outputs, and no theorem identifies their finite-prediction profile with one fixed Hardy filter. The remaining arithmetic work is to derive an analogue of `a_(psi,L)` with enough decay after an affordable future depth, or to find a certificate that avoids this boundary-layer payment altogether.
