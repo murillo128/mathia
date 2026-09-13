@@ -1,33 +1,33 @@
-# MI-018 — One-signed first crossings expose a quantitative source-tail budget for screened gaps
+# MI-018 — One-signed first crossings have an exact positive-tail operator budget, with a Carleman wall at zero gap
 
-**Evidence level:** exact on the one-signed branch of a hypothetical first unrestricted Suzuki crossing through WI-272. WI-270 gives the general cut tariff using the classical Hilbert--Carleman inequality, WI-271 forces arithmetic overlap across gaps at least as wide as `h_0=log rho`, and WI-272 extends that conclusion below `h_0` whenever the remaining positive archimedean tail is too small to pay firstness. No theorem makes the actual first null mode one-signed or proves RH.
+**Evidence level:** exact on the one-signed branch of a hypothetical first unrestricted Suzuki crossing through [WI-273](../../findings/WI-273-positive-tail-hankel-norm-sharpens-gap-screening-but-hits-the-carleman-wall.md). No theorem makes the actual first null mode one-signed, forces an internal gap, or proves RH. The sign-changing branch remains governed by the PSD/nodal compensation structure.
 
-WI-269 gives the exact source-ground-state transform at a first crossing: multiplier energies form a positive-semidefinite signed-source Laplacian, while the archimedean source changes sign once at `h_0`. WI-270 sharpens that structure when the null mode `v` is one-signed. For almost every cut, a positive proper-aperture firstness cost must be paid either by positive prime-power crossing overlap or by bilateral short-range mass in the region where the archimedean source is positive.
+At a first crossing, the source-ground-state transform makes every bounded Lipschitz multiplier energy nonnegative. On the one-signed branch, a genuine internal support gap `(alpha,beta)` can be used to split the mode into exact left and right pieces. The cut energy must then be financed by prime-power crossing overlap plus the positive part of Suzuki's archimedean source.
 
-For a genuine internal support gap `(alpha,beta)` of width `L`, a smooth multiplier can transition entirely through the zero region and split the mode into exact left and right pieces. WI-271 observes that when `L>=h_0`, every cross-gap archimedean edge has nonpositive source weight, so the continuous source cannot finance the strictly positive side-mode energy. The von-Mangoldt source must then carry the balance and some active prime-power lag has `C_v(log n)>0`.
+Earlier scalar control priced that continuous contribution by the tail mass
 
-WI-272 shows that `h_0` is not a hard boundary. Put
+`B(L)=integral_L^h0 w(h) dh`,
 
-`B(L) = integral_L^{h_0} w(h) dh`
+where `L=beta-alpha` and `h_0` is the unique sign-change length of the archimedean kernel. WI-273 identifies the actual `L^2` object instead. After translating the two sides of the gap, the positive continuous term is exactly the bilinear form of the Hankel operator
 
-for `0<L<h_0`, and `B(L)=0` for `L>=h_0`. The positive cross-gap continuous term is a convolution pairing between the two side modes. Young's `L^1*L^2 -> L^2` inequality bounds it by
+`K_L(u,y)=w(L+u+y) 1_(u+y<h_0-L)`
 
-`B(L) sqrt(M_L M_R)`.
+with norm `Theta(L)`. Only the two collars of width `h_0-L` can contribute. The sharp source-conditioned tariff is therefore
 
-Consequently the prime cross-gap mass satisfies
+`P_gap >= max(lambda_(r_L) M_L, lambda_(r_R) M_R) - Theta(L) sqrt(m_L^col m_R^col)`.
 
-`P_gap >= max(lambda_(r_L) M_L, lambda_(r_R) M_R) - B(L) sqrt(M_L M_R)`.
+This strictly sharpens the mass-only estimate at positive gap width. One has
 
-Complete prime screening therefore requires simultaneously
+`Theta(L) <= min(B(L), H(L), pi/2)`,
 
-`B(L) >= lambda_(r_L) sqrt(M_L/M_R)` and `B(L) >= lambda_(r_R) sqrt(M_R/M_L)`,
+where `H(L)^2=integral_L^h0 (h-L)w(h)^2 dh`. Near `h_0`, the Hilbert--Schmidt envelope improves the scalar tail by the exact leading factor `1/sqrt(3)`. Complete screening also forces a quantitative collar-concentration inequality, not merely a total left/right mass ratio.
 
-so in particular
+The important negative result is the zero-gap limit. The exact positive Suzuki kernel has the same leading `1/(2h)` singularity as one half of the Carleman kernel, and WI-273 proves
 
-`B(L)^2 >= lambda_(r_L) lambda_(r_R)`.
+`Theta(L)<pi/2` for every `L>0`, but `Theta(0)=pi/2` and `Theta(L)->pi/2` as `L downarrow 0`.
 
-The two inequalities also pin the admissible mass ratio; a screened gap cannot escape merely by moving almost all mass to one side. Since `B(L)` vanishes quadratically as `L` approaches `h_0` from below, every fixed proper-aperture margin has a strict exclusion collar below the sign-change scale. WI-271 is the zero-tail endpoint of this continuous tariff, not a separate mechanism.
+Thus replacing the previous Young `L^1` tail bound by the **exact** positive-source `L^2` operator norm removes the artificial logarithmic divergence but does not create a uniform narrow-gap gain. The mass-only operator route itself reaches a sharp Carleman wall.
 
-The remaining one-signed geometry is correspondingly sharper: a completely screened first mode must avoid any gap whose positive source tail is too small, and must maintain enough short-range mass/coupling to pay firstness everywhere. The scalar tail estimate itself cannot exclude arbitrarily narrow gaps because `w(h)~1/(2h)` and hence `B(L)` diverges logarithmically as `L` tends to zero. Progress in that regime needs the full cut/null-equation family, more local information about the mode, or a sharper source-conditioned operator norm rather than another total-mass estimate.
+**Research consequence.** For positive-width gaps, use `Theta(L)` and the visible collar masses rather than the coarser scalar tail `B(L)`. For the gapless or arbitrarily narrow regime, another refinement of the same global `L^2` operator norm cannot supply a strict uniform improvement: progress must exploit additional structure of the null mode, the simultaneous family of cuts, or the distributional null equation. The one-signed residual has therefore moved from “find a sharper source-conditioned norm” to “use information that an operator norm deliberately forgets.”
 
-**Boundary.** The one-signed assumption and the genuine separating gap are load-bearing. WI-272 does not force a gap to exist, does not make the first null mode one-signed, and does not transfer to sign-changing cross-gap products. The sign-changing branch remains governed by WI-269's PSD/nodal compensation law.
+**Boundary.** The tariff is conditional on a one-signed first null mode and a genuine separating gap. It does not transfer to sign-changing cross-gap products, where long-range negative archimedean compensation remains active.
