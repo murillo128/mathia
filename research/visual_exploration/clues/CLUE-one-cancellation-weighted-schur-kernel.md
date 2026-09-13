@@ -7,6 +7,7 @@ target_line: visual_exploration
 based_on:
   - research/visual_exploration/findings/VIS-192-start-averaged-signed-offdiagonal-energy.md
   - research/visual_exploration/findings/VIS-203-autocorrelation-taper-shell-noncancellation.md
+  - research/visual_exploration/findings/VIS-204-dangerous-prime-ratio-shell-multiplicity.md
   - research/visual_exploration/findings/VIS-209-one-cancellation-shell-anchor-gram-kernel.md
 ---
 
@@ -91,4 +92,4 @@ Outcome: supported
 Resolved by:
 - [[research/visual_exploration/findings/VIS-211-brun-titchmarsh-schur-closes-one-cancellation]]
 
-`VIS-211` proves the sufficient Schur target `S_(y,H)=o(Q_y/sqrt(H))` throughout every diverging strictly subcritical scale and therefore closes the one-cancellation Gram frontier in the long-start mean-square regime. The sharper heuristic `S_(y,H)<<Q_y/H`, worst-start uniformity, and higher-cancellation shells remain separate questions.
+`VIS-211` proves the sufficient Schur target `S_(y,H)=o(Q_y/sqrt(H))` throughout every diverging strictly subcritical scale and therefore closes the one-cancellation Gram frontier in the long-start mean-square regime. The sharper heuristic `S_(y,H)<<Q_y/H` and worst-start uniformity remain separate questions. `VIS-204` already exhausts the nonzero cancellation taxonomy for the present exact pair-difference shell expansion: two cancellations give only `xi=0`, so there is no additional nonzero higher-cancellation shell family in this model.
