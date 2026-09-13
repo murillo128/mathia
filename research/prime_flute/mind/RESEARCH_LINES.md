@@ -4,27 +4,19 @@
 
 **Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`.
 
-PF-303--PF-314 progressively close scalar depth, entrance leakage, direct residual high conversion, a supposed second inverse-normalized angle, and arbitrary internal-source amplification as independent missing mechanisms. PF-315 resolves the representation of the actual PF-281 physical angle:
+PF-303--PF-316 progressively close scalar depth, entrance leakage, direct residual high conversion, a supposed second inverse-normalized angle, and arbitrary internal-source amplification as independent missing mechanisms. Sequential elimination gives
 
 `T_(P/H) ~= (T_H V_H, Z_LH)^T`,
 
-with `V_H*V_H=I-Z_LH*Z_LH`.
+and PF-316 proves that compactness/weak trace of the full physical angle is equivalent to compactness/weak trace of both `T_H` and `Z_LH`; attenuation by `V_H` cannot hide a bad conditional direction without paying through the direct channel.
 
-PF-316 now removes `V_H` as an independent endpoint regularizer. If `V_H=W_H D_H` and `C_H=I-D_H`, then
+PF-317 now localizes the direct channel. In simultaneous seam-energy coordinates the positive precision is `I+K` with nearest-neighbor cuff-module coupling, and same-sector diagonal completion is contractive. Therefore `s_j(Z_LH)<=s_j(K_LH)`, while `K_LH` decomposes into only three module offsets. Together with the prime-density low-band count, a uniform local pant estimate `||L_(n+r) K H_n|| <= C/P_n` for `r=-1,0,1` is already sufficient for `Z_LH in S_(1,infinity)`. The seam normalizer can be replaced by the explicit flat shifted-strip DtN form at `1+O(P_n^-2)` cost.
 
-`s_j(C_H)=1-sqrt(1-s_j(Z_LH)^2) <= s_j(Z_LH)^2`,
-
-and Fan's inequality gives
-
-`s_(2j-1)(T_H) <= s_j(T_(P/H)) + s_j(T_(P/H))^2`.
-
-Thus no uniform gap for `Z_LH` is needed to recover the conditional endpoint. On canonical finite sections, and on compatible limiting realizations, the full physical angle is compact or weak trace class exactly when **both** `T_H` and `Z_LH` are. If the residual map suppresses a bad conditional direction, the direct channel pays for that attenuation.
-
-The operator question is therefore simpler and harder in the right place: obtain compactness/weak-`S_1` singular-value counts separately for the conditional post-low angle `T_H` and the direct retained-low/high angle `Z_LH`. There is no third source-avoidance channel hidden in `V_H`.
+The direct-channel gate is therefore a **local thin-pant mixed-frequency estimate**, not a global inverse or pseudodifferential reassembly theorem. PF-215 remains the negative control: the complete adjacent pant block diverges on constant modes, so the estimate must exploit the nonconstant low/high split rather than an all-frequency norm bound. The second genuine channel `T_H` remains independent.
 
 ## Global heavy-range projection counts after strength/angle factorization
 
-For the PF-287 heavy low/high extension-range projection product, can the source-reached directions in `T_H` and `Z_LH` satisfy the compactness or weak-trace counting law required by the full physical angle? PF-316 makes failure of either channel a necessary full-angle obstruction. The remaining burdens are multiplicity/ideal counting, a compatible infinite realization, the symmetric reassembly side, and signed target composition.
+For the PF-287 heavy low/high extension-range projection product, can the conditional channel `T_H` satisfy the required ideal count once the direct channel is reduced to local pant corners? PF-317 supplies finite-band reassembly for `Z_LH`; it does not estimate `T_H`, build the compatible infinite realization, close the symmetric side, or supply signed target composition.
 
 ## Prime realization within the resolved upstream-memory window
 

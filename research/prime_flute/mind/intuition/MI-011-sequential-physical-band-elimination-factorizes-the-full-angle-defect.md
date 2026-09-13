@@ -1,27 +1,13 @@
-# MI-011 — Sequential physical elimination reduces the weak-trace endpoint to two visible angle channels
+# MI-011 — Sequential elimination leaves two visible angle channels, and the direct one is locally banded
 
-**Evidence level:** exact on every finite strictly positive canonical section through PF-316. Compatible infinite-section realization and the required channel singular-value estimates remain open.
+**Evidence level:** exact on every finite strictly positive canonical section through PF-317. Compatible infinite-section realization and the required local mixed-frequency estimate remain open.
 
-PF-281 identifies the physical target as the energy-normalized angle between the full physical-low space `P=C+L` and the physical-high space `H`. PF-311 shorts the retained nonconstant low modes `L` and exposes the conditional constant/high angle `T_H`. PF-315 determines exactly how that conditional channel sits inside the original physical angle:
+PF-315--PF-316 reduce the physical low/high angle to the pair `(T_H,Z_LH)`. The residual map `V_H` is not a third endpoint regularizer: if it attenuates a conditional direction, the defect is quadratically controlled by the direct angle, and weak trace of the full angle is equivalent to weak trace of both channels.
 
-`T_(P/H) ~= (T_H V_H, Z_LH)^T`,
+PF-317 adds a second exact simplification for `Z_LH`. In simultaneous seam-energy coordinates the positive precision is `I+K` with `K>=0`. The diagonal completion factors around `K_LH` are contractions, so `s_j(Z_LH)<=s_j(K_LH)`. Moreover `K` is nearest-neighbor in cuff-module index, making the direct cross block a sum of only the three offsets `r=-1,0,1`, each an orthogonal direct sum of local pant blocks.
 
-`V_H*V_H=I-Z_LH*Z_LH`.
+Because the retained nonconstant low band on module `n` has only `O(1+log P_n)` dimensions, a local normalized pant estimate `||L_(n+r) K H_n|| <= C/P_n` is already sufficient for the global weak-`S_1` count. The collapsing seam normalizer is not the remaining obstacle: PF-317 compares the true strip energy to the explicit flat shifted-strip DtN matrix at relative error `1+O(P_n^-2)`.
 
-PF-315 already shows that attenuation into `T_H` is complementary to saturation of the direct `L/H` angle `Z_LH`. PF-316 makes that complementarity quantitative without assuming a uniform gap. Writing the polar decomposition `V_H=W_H D_H`, the defect `C_H=I-D_H` satisfies
+The load-bearing obstruction is frequency-selective. PF-215 shows that the complete adjacent normalized pant transfer can diverge on constant-to-constant data, so no proof may bound the whole pant block and infer the desired corner. The unresolved theorem must use the physical high/nonconstant-low split to show reciprocal-prime decay, or produce an equally strong local singular-value envelope.
 
-`s_j(C_H)=1-sqrt(1-s_j(Z_LH)^2) <= s_j(Z_LH)^2`.
-
-Since `T_H W_H=T_HV_H+T_HW_HC_H`, Fan's inequality yields
-
-`s_(2j-1)(T_H) <= s_j(T_HV_H)+s_j(Z_LH)^2 <= s_j(T_(P/H))+s_j(T_(P/H))^2`.
-
-Thus a conditional singular direction cannot be hidden by a small residual input: making `V_H` small forces the direct channel `Z_LH` to become correspondingly visible. At the compactness and weak-trace endpoints this closes the previous gap completely:
-
-`T_(P/H) in S_(1,infinity)  <=>  T_H in S_(1,infinity) and Z_LH in S_(1,infinity)`,
-
-with the analogous compactness statement and finite-section Schatten consequences.
-
-The residual map `V_H` remains essential for exact representation but is not a third endpoint regularizer. The physical endpoint burden is exactly the pair `(T_H,Z_LH)`. A proof may estimate the two channels by different mechanisms, but failure of either one is already a full-angle obstruction.
-
-**Boundary.** PF-316 is singular-value calculus on the canonical finite-section factorization and compatible limiting realizations; it does not prove either channel is compact or weak trace, construct the infinite operator by itself, close symmetric reassembly, or supply the final signed target composition.
+**Boundary.** This localization closes the organizational and reassembly burden only for the direct channel. It does not estimate `T_H`, prove the local `C/P_n` bound, construct the infinite operator, or close the signed target composition.

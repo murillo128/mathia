@@ -12,14 +12,14 @@ WI-231--WI-237 show that finite negative inertia detects off-line packets exactl
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253--WI-258 isolate the phase-coupled source cone and exact lower-envelope information at a hypothetical first localized Weil crossing. WI-264 constructs endpoint-bump modes that screen every active von-Mangoldt autocorrelation lag, and WI-265 shows that generic nested positivity/first-crossing structure cannot rule that geometry out.
+WI-253--WI-267 isolate the phase-coupled source cone, defeat finite-lag screening and generic first-crossing substitutes, and finally prove from Suzuki's actual null equation that every point outside a nonzero null mode's support is reached by at least one active prime-power translation. Pointwise translated activity is therefore unavoidable, but global lag autocorrelations can still cancel.
 
-WI-266 uses Suzuki's actual null equation to exclude that explicit two-endpoint family. WI-267 now removes the dependence on that geometry: for **every nonzero localized Weil null vector**, every point outside its essential support must be reached from the support by at least one active prime-power translation. Equivalently, a null mode has no open support gap on which the mode and all active translations simultaneously vanish.
+WI-268 closes a tempting sign shortcut. The unrestricted localized Weil cross kernel is exactly `-w(h)` away from active prime lags, and its archimedean factor changes sign at `h_0=log rho`, `rho^3-rho-1=0`. Hence the full semigroup is not positivity preserving for every `a>h_0/2`, already before the first prime translation activates. Ordinary Perron--Frobenius/Beurling--Deny theory cannot make a first-crossing null mode one-signed in the relevant regime.
 
-This is an exact source-specific support-propagation theorem, but it is not yet the desired arithmetic non-screening statement. Pointwise translated activity can still cancel the regular convolution while every global prime-lag autocorrelation vanishes. The live theorem is therefore to combine the support cover with the distributional null equation and/or sliding lower-envelope inequalities to force a quantitative overlap or symbol that cannot be screened.
+The live theorem must therefore couple the **actual Suzuki equation**, translation-dominating support and first-crossing lower-envelope constraints to force a quantitative overlap/flux invariant that survives signs and phases. A source-compatible multi-component screened mode would be the decisive negative control. Generic support counting and generic ground-state positivity are both exhausted.
 
-## Treat translated activity, autocorrelation overlap and first-crossing positivity as separate gates
+## Treat translated activity, autocorrelation overlap and sign coherence as separate gates
 
-WI-267 proves that the arithmetic source must be active across every support gap; it does **not** prove `C_v(log n) != 0` for some active prime power. A multi-component vector may have translated mass everywhere while signs/phases cancel its global autocorrelations.
+WI-267 proves support domination, not `C_v(log n) != 0`. WI-268 proves failure of standard positivity preservation, not that the particular first-crossing mode changes sign. These are independent boundaries.
 
-The next advance must retain enough of Suzuki's exact source equation to turn translation domination into a quantitative non-screenable overlap. Returning to generic Hilbert-space positivity would discard precisely the structure that strengthened WI-266 into WI-267.
+Any one-sign theorem or overlap lower bound must therefore be zeta/Suzuki-specific. It cannot be imported from ordinary order-preserving semigroup theory, and it cannot be inferred from the existence of translated mass alone.

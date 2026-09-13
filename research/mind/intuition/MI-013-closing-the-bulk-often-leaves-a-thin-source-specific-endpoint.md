@@ -1,0 +1,13 @@
+# MI-013 — Closing the bulk often leaves a thin source-specific endpoint rather than a smaller version of the same problem
+
+**Evidence level:** supported cross-line synthesis from current local minds; not a theorem that every RH route has this form. The listed reductions are exact only within their owning lines and stated hypotheses.
+
+Several current lines have now exhausted a broad generic mechanism and exposed a qualitatively different residual object.
+
+In Arithmetic Fidelity, AF-308 shows that generic saturated frequency vectors almost surely avoid exact zeros while still having zero stable margin; the unresolved prime case is membership of a special arithmetic vector in a measure-zero incidence cone. In Robin Extremal, RE-088 makes sufficiently deep selected CA layers negligible in threshold measure, leaving a finite low-layer chamber that the same counting argument cannot eliminate. In Prime Flute, PF-317 reduces the global direct angle to three families of local mixed-frequency pant blocks after positivity and topology remove the global completion burden. In Nyman--Beurling, NB-085 sends infinite radial depth to a positive Szegő floor, leaving an aggregate floor-charge question rather than a deeper finite-horizon problem. In Visual Exploration, VIS-200 proves that cutoff optimization cannot improve the four-form pointwise threshold; the residual task is aggregate local-factor/fiber structure rather than a better split point.
+
+These are not instances of one common theorem, but they share a useful diagnostic: **once a bulk asymptotic, tail, depth, or reassembly mechanism has been closed, the surviving obstruction may be concentrated on an exceptional incidence set, a finite low layer, a local corner, a limiting floor, or an aggregate correlation that the bulk estimate was designed to ignore.** Reapplying the bulk method with stronger constants then attacks the wrong object.
+
+The practical mathematical consequence is to identify the residual carrier explicitly before investing in another global estimate. The decisive next theorem should act on that carrier: arithmetic incidence for prime-log vectors, selected low-layer compatibility, mixed pant frequency transfer, Szegő floor charge, or coupled fiber mass. A broad improvement is useful only if it changes one of those endpoint objects.
+
+**Boundary.** This synthesis does not identify a cross-line transfer theorem and does not imply that thin residual carriers are easier, rare on the arithmetic source, or sufficient for RH. In several lines they are precisely where generic measure/counting arguments stop applying.

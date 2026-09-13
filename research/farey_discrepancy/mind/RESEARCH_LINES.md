@@ -2,18 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Use source-specific arithmetic to turn additive occupation into composable transport
+## Transport the coherent Jordan/Schur direction between separated frontier blocks
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-072--FD-084 push the physical occupation geometry from recurrence to full counting exponent and then to consecutive occupied blocks of length `H^(Theta-delta)` inside every sufficiently late fixed-power future window. Scarcity and isolated recurrence are no longer the bottleneck.
+FD-072--FD-084 push the physical occupation geometry from recurrence to full counting exponent and then to consecutive occupied blocks of length `H^(Theta-delta)` inside every sufficiently late fixed-power future window. FD-085 shows that this set geometry alone cannot supply the finite-entropy multiplicative chain required by the existing GCD-duality accumulation mechanism.
 
-FD-085 closes the tempting purely geometric continuation. A synthetic set can satisfy stronger versions of the same power-window abundance and additive-block conclusions while every infinite integer-ratio chain has transition ratios tending to infinity; its logarithmic horizon growth per retained scale is necessarily superexponential. Thus **full-counting abundance plus even linear additive blocks do not imply the finite-entropy multiplicative chain required by the existing GCD-duality accumulation mechanism**.
+FD-086 now restores source information before scalarization. The complete physical Jordan vector `V_(H,D)` has divisor-supported horizon increments and satisfies `||V_(M+h,D)-V_(M,D)||_2^2 << h^2+h(M+h)^gamma`. On the near-frontier seeds from FD-084 this makes every horizon in the whole `H^(Theta-delta)` block asymptotically collinear in normalized Jordan space; the normalized Schur equality direction and transverse defect are coherent on the same block.
 
-The live theorem must use information absent from that matched control: the actual Farey/Mertens quotient-shell or Jordan-energy identities, a source-specific restriction on where occupied blocks can occur, a transport inequality that composes gains under nearby additive horizon motion, or another nonlocal mechanism that bypasses integer-ratio chaining. Reproving abundance or additive thickness in a different norm cannot cross the remaining gate.
+The live gap is therefore no longer transport *inside* a good additive block. It is transport **between separated coherent blocks**, or a multihorizon functional that composes their already-coherent directions without requiring a low-entropy integer-ratio chain. A theorem must use the signed Jordan configuration or another source-specific quantity that FD-085's synthetic occupation set does not carry.
 
-## Keep recurrence, counting abundance, additive persistence and source-specific transport separate
+## Keep set occupation, within-block direction coherence and inter-block composition separate
 
-The established hierarchy is `recurrence -> physical anti-concentration -> full-counting occupation -> polynomial additive blocks`. FD-085 proves that the next arrow to finite-logarithmic-entropy multiplicative transport is **not a consequence of this set geometry alone**.
+The established hierarchy is now `recurrence -> full-counting occupation -> polynomial additive blocks -> source-specific projective coherence within each block`. FD-085 proves that coarse set geometry cannot imply multiplicative composability; FD-086 proves that the physical source has much stronger vector coherence locally.
 
-A successful continuation must therefore carry some arithmetic identity or transport law from the physical source into the composition step. The synthetic superexponential-chain control does not show that the true occupied set realizes that escape; it shows only that any proof excluding the escape must use more than cardinality and additive block placement.
+Neither result connects different frontier blocks. Superexponentially separated coherent blocks remain compatible with the present evidence. The next theorem must control relative Jordan/Schur direction across blocks or replace the multiplicative-chain destination by a composition law adapted to additive coherent packets.
