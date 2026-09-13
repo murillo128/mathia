@@ -18,135 +18,111 @@ based_on:
   - research/weil_inertia/findings/WI-267-suzuki-null-modes-admit-no-prime-translation-free-support-gap.md
   - research/weil_inertia/findings/WI-268-archimedean-sign-change-breaks-unrestricted-semigroup-positivity.md
   - research/weil_inertia/findings/WI-269-first-crossing-null-modes-induce-a-psd-signed-source-laplacian.md
+  - research/weil_inertia/findings/WI-270-sharp-cut-localization-reduces-one-signed-prime-screening-to-a-carlman-threshold.md
+  - research/weil_inertia/findings/WI-273-first-question-crossing-is-equivalent-to-vanishing-of-a-positive-source-hankel-norm.md
+  - research/weil_inertia/findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md
+  - research/weil_inertia/findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md
 ---
 
-# Can Suzuki-specific first-crossing rigidity force unscreenable arithmetic overlap?
+# Can the first-crossing saturated source reserve force unscreenable arithmetic overlap?
 
 ## Observation
 
-`WI-253` and `WI-258` give exact lower-envelope families that every hypothetical first unrestricted localized Weil zero mode must satisfy. With
+The first-crossing route has narrowed from generic support geometry to a quantitative source-budget problem. `WI-253` and `WI-258` supplied lower-envelope constraints for every hypothetical first unrestricted localized Weil zero mode. `WI-264` and `WI-265` showed that finite prime layers and generic first-crossing positivity can be screened at the autocorrelation level, while `WI-266` and `WI-267` restored Suzuki-specific rigidity: the actual null equation excludes the endpoint screen and no nonzero null vector can have an open support gap simultaneously free of every active prime translation. `WI-268` rules out ordinary positivity-preserving-semigroup/Perron--Frobenius shortcuts in the relevant radius regime, and `WI-269` replaces them with the exact PSD signed-source multiplier Laplacian conditioned on the null mode.
+
+`WI-273` then identified the remaining narrow-gap obstruction as a positive-source Hankel/Hardy saturation problem. `WI-274` bypassed the single-cut saturation loss by integrating all complementary sharp cuts. For an attained first crossing `a`, normalized real null mode `v`, common complementary cut energy `Q_t`, and first-eigenvalue profile `\lambda_r`, it proved
 
 \[
-d\mu_v(h)=C_v(h)\left[
-\sum_{\log n<2a_*}\frac{\Lambda(n)}{\sqrt n}\,\delta_{\log n}(dh)
-+w(h)\,dh
-\right],
+\mathcal S_v=\int_{-a}^{a}Q_t\,dt
+\ge 2\int_{a/2}^{a}\lambda_r\,dr>0,
 \]
 
-the first-crossing mode obeys
+where `\mathcal S_v` is the exact saturated prime-plus-archimedean source functional. On the one-signed branch this reduces complete prime screening to comparison of that reserve with the finite positive archimedean budget
 
 \[
-\mathcal F_v(r)=\int_0^{2a_*}\min(h,2r)\,d\mu_v(h)
-\ge r\lambda_r>0
-\qquad(0<r<a_*),
+K_+=\int_0^{h_0}h\,w(h)\,dh.
 \]
 
-while phase modulation supplies the additional localized cosine-defect family from `WI-258`.
-
-`WI-264` showed that source signs and finitely many prime-power layers can be screened at the level of autocorrelation by a two-endpoint construction, and `WI-265` showed that generic abstract first-crossing positivity does not defeat that geometry. `WI-266` then used Suzuki's actual null equation to exclude the explicit endpoint family.
-
-`WI-267` extracts a geometry-independent source-specific theorem from the same operator. For any nonzero null vector `A_a v=0`, with closed essential support `S` and active lag set
+`WI-275` now sharpens the same cut data before integration. The two simultaneous inequalities
 
 \[
-\mathcal P_a=\{\log n:\Lambda(n)>0,\ \log n\le2a\},
+Q_t\ge \lambda_{(a+t)/2}M_L(t),
+\qquad
+Q_t\ge \lambda_{(a-t)/2}M_R(t),
+\qquad M_L+M_R=1,
 \]
 
-one has
+imply the exact pointwise minimax floor. Consequently
 
 \[
 \boxed{
-(-a,a)\subset
-S\cup\bigcup_{\ell\in\mathcal P_a}
-\bigl((S-\ell)\cup(S+\ell)\bigr).
+\mathcal S_v\ge R_{\rm harm}(a)
+:=2\int_0^a
+\frac{\lambda_r\lambda_{a-r}}
+{\lambda_r+\lambda_{a-r}}\,dr.
 }
 \]
 
-Thus no open support gap can be simultaneously free of `v` and every active prime translation. The proof works for the full operator domain `D(A_a)`, not only the `H_0^1` core: Suzuki's form-core identity yields `(-g'')*v=0` distributionally, and on a prime-translation-free gap the regular kernel has the exact exponential expansion
+This dominates the `WI-274` reserve by the exact nonnegative difference
 
 \[
-k(h)=e^{h/2}-\sum_{m\ge0}e^{-(5/2+2m)h}.
-\]
-
-Splitting the convolution across the gap produces a Laurent series with disjoint exponent families; local nullity forces all coefficients to vanish, and polynomial moment uniqueness then forces both sides of `v` to vanish. Hence the only translation-free-gap null vector is the zero vector.
-
-This resolves the clue's previous **support-spreading/no-long-gap sub-gate**. The remaining issue is stronger: prime translations may be active at every gap point and still cancel the continuous convolution without forcing a nonzero global autocorrelation at any one lag.
-
-`WI-268` closes a separate tempting shortcut. For the unrestricted localized Weil form, the off-diagonal continuous cross kernel is exactly `-w(h)` after the logarithmic singularity cancels Suzuki's regular remainder. Since `w(h)` changes sign at `h_0=\log\rho`, `\rho^3-\rho-1=0`, the full semigroup fails the first Beurling--Deny positivity criterion for every `a>h_0/2=0.1405997871...`, already before the first prime lag can activate. Thus a hypothetical first-crossing ground/null mode cannot be declared one-signed by ordinary Perron--Frobenius or positivity-preserving-semigroup theory. Any sign or overlap rigidity must come from the actual Suzuki equation, firstness, or a genuinely different cone/order structure.
-
-`WI-269` now supplies such a source-conditioned structure. If `v` is the real first null mode, then every bounded real Lipschitz multiplier satisfies
-
-\[
-q_{a_*}(\chi v)
+R_{\rm harm}(a)-2\int_{a/2}^{a}\lambda_s\,ds
 =
-\sum_{\log n<2a_*}\frac{\Lambda(n)}{\sqrt n}D_\chi(v;\log n)
-+
-\int_0^{2a_*}w(h)D_\chi(v;h)\,dh
-\ge0.
+2\int_0^{a/2}
+\frac{\lambda_{a-r}(\lambda_r-\lambda_{a-r})}
+{\lambda_r+\lambda_{a-r}}\,dr.
 \]
 
-Polarizing this identity shows that every finite multiplier partition of unity produces a positive-semidefinite signed Laplacian with zero row sums. For a sign-changing mode, the positive/negative nodal cut further gives the cancellation-free tariff
+The improvement is also a boundary result. The pointwise equality mass
 
 \[
-\sum_{\log n<2a_*}\frac{\Lambda(n)}{\sqrt n}A_-(\log n)
-+
-\int_0^{h_0}w(h)A_-(h)\,dh
-\le
-\int_{h_0}^{2a_*}|w(h)|A_-(h)\,dh,
+M_L^*(t)=
+\frac{\lambda_{(a-t)/2}}
+{\lambda_{(a+t)/2}+\lambda_{(a-t)/2}}
 \]
 
-where `A_-(h)` is the total opposite-sign overlap at lag `h`. This does not yet force a prime-lag overlap, but it replaces a single cancellation-prone scalar by a PSD family of localized source couplings and identifies exactly which long-range archimedean interaction can finance nodal prime overlap.
+is monotone in `t`. Therefore CDF monotonicity alone cannot strengthen the harmonic envelope; any further reserve must use more of the actual null eigenfunction/source coupling than complementary masses and firstness.
 
 ## Research question
 
-Can the exact Suzuki null equation, the pointwise translation domination from `WI-267`, and the PSD signed-source Laplacian from `WI-269` force a **quantitative unscreenable arithmetic overlap** for a hypothetical first-crossing mode?
-
-The live target is no longer merely to prove that prime translations reach every support gap. That is exact. Nor is it enough to add scalar autocorrelation constraints. What is needed is a bridge from translated activity to a localized source coupling that cannot be screened by phases/signs—for example a finite multiplier compression whose PSD/effective-resistance conditions force
+Can the paired-radius spectral profile be controlled strongly enough to force
 
 \[
-\sum_{\ell\in\mathcal P_{a_*}}c_\ell |C_v(\ell)|
-\ge \eta(a_*)>0,
+R_{\rm harm}(a)>K_+
 \]
 
-or force a positive amount of prime-lag overlap before scalar cancellation, or yield a source-weighted signed lower bound strong enough to enter `\mathcal F_v(r)`. Any such bound must preserve the actual Suzuki source rather than return to generic support counting or generic ground-state positivity.
+at a hypothetical first crossing, thereby ruling out complete prime-lag screening on the one-signed branch? If not, can the exact Suzuki null equation or the PSD signed-source multiplier family force an additional positive correction to the harmonic reserve, or force arithmetic overlap directly, by coupling different cuts rather than treating their mass partitions independently?
+
+The key distinction is now explicit. Improving the scalar optimization of the two complementary inequalities is exhausted by `WI-275`. A successful next step must either constrain `r\mapsto\lambda_r` quantitatively or introduce information that the mass-only relaxation discards: regularity of `M_L`, source-dependent relations between different `Q_t`, nodal/source geometry, or a finite compression of the exact multiplier form.
 
 ## Decisive test
 
-Start from a nonzero hypothetical first-crossing mode with `a_*>0.8`, its exact distributional equation
+First attack the spectral-budget comparison with exact inequalities. Derive rigorous lower information on the paired-radius profile `\lambda_r,\lambda_{a-r}` from domain monotonicity plus any Suzuki-specific variational identity that is genuinely available, and test whether it implies
 
 \[
-(-g'')*v=0\quad\text{on }(-a_*,a_*),
+2\int_0^a
+\frac{\lambda_r\lambda_{a-r}}
+{\lambda_r+\lambda_{a-r}}\,dr>K_+.
 \]
 
-the support cover from `WI-267`, and the multiplier form `\mathcal B_v` from `WI-269`. Choose a finite partition of unity adapted to support components, nodal components, or prime-translation neighborhoods. The decisive positive route is to prove that, if all source-relevant prime overlaps are below a proposed threshold, then the resulting signed Laplacian violates PSD—equivalently, a Schur-complement/effective-resistance or cut inequality becomes negative.
+A proof of this inequality would force positive weighted prime overlap for a one-signed first null mode. A rigorous admissible profile satisfying every presently proved spectral constraint while keeping the harmonic reserve at or below `K_+` would close the mass-only spectral route and redirect the clue to cross-cut source coupling.
 
-This test must retain the continuum archimedean edges and their sign change at `h_0`; replacing them by unsigned mass would erase the exact screening channel exposed by `WI-268` and `WI-269`. A useful finite theorem would therefore come with an error-controlled continuum-to-partition compression, not merely a heuristic graph picture.
-
-The decisive negative test is a **source-compatible multi-component mode or asymptotically exact family** that satisfies the actual local convolution equation and the `WI-267` support cover while all finite source-adapted multiplier compressions remain PSD and all prime-lag autocorrelations relevant to the current first-crossing inequalities remain screened. Another abstract self-adjoint operator, another translation-free gap, another endpoint-bump construction, or another appeal to ordinary positive-semigroup ground-state theory no longer reaches the gate.
+If the spectral-budget test does not close, preserve the exact source. Use the Suzuki null equation or `WI-269` multiplier form to derive a relation between multiple cuts that excludes the minimax equality profile or adds a positive correction to `Q_t`. Any finite-partition argument must retain the continuum archimedean edges and their sign change at `h_0`; unsigned compression erases the known screening channel.
 
 ## Stress tests
 
-Any proposed bootstrap must survive all existing boundary results. `WI-257` rules out obtaining the needed regularity from generic bounded-self-adjoint zero-mode arguments. `WI-263` defeats one-prime sign/Bochner reasoning. `WI-264` shows that finitely many source atoms can be hidden from autocorrelation observables. `WI-265` shows that generic first-crossing positivity does not recover the missing source geometry. `WI-266` excludes the simplest endpoint screen only after restoring Suzuki's operator, `WI-267` proves that every surviving null mode must have prime translations active throughout every support gap, and `WI-268` shows that ordinary Beurling--Deny/Perron--Frobenius order structure is unavailable for the unrestricted form throughout the relevant first-crossing regime. `WI-269` adds PSD only after conditioning on the actual null mode; it must not be misread as restoring a Markov sign pattern for the original operator.
+Any proposed bootstrap must survive the existing obstructions. `WI-257` blocks generic bounded-self-adjoint regularity upgrades. `WI-263` defeats one-prime sign/Bochner reasoning. `WI-264` shows that finitely many source atoms can be hidden from autocorrelation observables, and `WI-265` shows generic first-crossing positivity does not recover the missing source geometry. `WI-268` prevents silently assuming a one-signed ground state from standard semigroup theory. `WI-273` shows why the single narrow-cut Carleman route saturates. `WI-275` now prevents counting a different convex combination of the same two complementary mass inequalities as new progress: their sharp mass-only envelope is already the harmonic minimax reserve.
 
-The support cover is necessary but not sufficient. It must not be silently upgraded to `C_v(\log n)\ne0`: a gap point `x` can have `v(x)=0` but `v(x+\ell)\ne0`, so translated activity there contributes to the pointwise null equation while contributing nothing directly to the autocorrelation integrand `v(x+\ell)\overline{v(x)}`. Likewise, finite-union support measure bounds from the cover are too weak on their own.
+The support cover from `WI-267` remains necessary but insufficient. Translated activity at a gap point does not by itself imply nonzero `C_v(\log n)`, because the autocorrelation integrand also contains the unshifted value. Likewise the PSD multiplier form of `WI-269` does not by itself force a positive prime edge: long-range archimedean interaction can finance short-range/nodal overlap unless a quantitative source-specific obstruction rules that channel out.
 
-Nor may one silently add a one-sign hypothesis for the ground/null mode. `WI-268` proves failure of positivity preservation of the full localized Weil semigroup once `a>h_0/2`, but that failure is not itself a nodal theorem: a particular ground state could still be one-signed for a more specialized reason. `WI-269` remains nontrivial in that case through its multiplier PSD family, but its nodal tariff becomes vacuous.
-
-Conversely, for a sign-changing mode the nodal inequality in `WI-269` is not yet an arithmetic lower bound. Long-range archimedean opposite-sign overlap may finance all short-range and prime opposite-sign overlap. Any effective-resistance or cut argument must therefore prove that this financing channel is quantitatively insufficient in the actual source geometry, rather than simply discarding it.
-
-Any argument using Suzuki's pointwise formula must also respect the full-domain warning. General ground states lie in `D(A_a)`, not necessarily `H_0^1`. `WI-267` resolves this for the null equation by a form-core/distributional passage; `WI-269` uses only the closed-form domain and normal contraction for nodal parts. Subsequent pointwise steps must explicitly justify any stronger regularity they need.
+Any argument using pointwise formulas must respect the full-domain issue. The first null mode lies in `D(A_a)`, not automatically in `H_0^1`; stronger regularity used to constrain `M_L` or couple cuts must be proved from Suzuki's operator/form rather than assumed.
 
 ## Evidence boundary
 
-`WI-267` proves exact pointwise translation domination of the support complement. It does **not** prove that arbitrary macroscopic support gaps are impossible; a gap is allowed when active prime translates cover it. It does not prove a positive prime-lag autocorrelation, a lower bound on overlap measure, a sign rule for translated pieces, or incompatibility of a translation-dominating multi-component support with the actual null equation.
+The harmonic reserve is an exact consequence of the already established complementary cut inequalities and the exact identity `\int Q_tdt=\mathcal S_v`. It does not prove `R_{\rm harm}(a)>K_+`, does not prove that the first null mode is one-signed, and does not force a prime-lag autocorrelation on the sign-changing branch.
 
-`WI-268` proves that the unrestricted localized semigroup is not positivity preserving for `a>h_0/2`. It does **not** prove that the first-crossing null mode changes sign. Its role here is narrower and decisive: the standard positive-semigroup route cannot supply the missing sign/phase coherence.
-
-`WI-269` proves that the actual first null mode induces a PSD signed-source multiplier form and, when sign-changing, satisfies an exact cancellation-free nodal compensation law. It does **not** prove that any prime-lag overlap is positive, that the long-range archimedean budget is too small, or that a finite effective-resistance obstruction exists. Those are now the live quantitative gates.
-
-The first-crossing lower-envelope constraints from `WI-253`/`WI-258`, the pointwise support theorem from `WI-267`, and the multiplier PSD family from `WI-269` are independent necessary views of the same hypothetical mode. The open problem is to couple them without discarding the source geometry that made `WI-266`, `WI-267`, and `WI-269` possible.
+The mass-only sharpness statement is a relaxation statement. The minimax equality profile is compatible with monotonicity of a CDF, but this does not assert that it is the actual absolutely continuous mass profile of a Suzuki null eigenfunction. Failure of that profile to satisfy additional eigenfunction/source constraints is precisely one of the remaining opportunities.
 
 ## Research disposition
 
-The clue remains `accepted`, with the activity-to-overlap gate narrowed to a concrete source-conditioned matrix problem. Do not spend further passes trying to prove merely that a Suzuki null vector cannot have a prime-translation-free gap; `WI-267` already gives the exact full-domain statement. Do not infer constant sign from ordinary Perron--Frobenius/Krein--Rutman or positivity-preserving-semigroup theory; `WI-268` gives an exact archimedean obstruction long before the relevant first crossing.
-
-Attack the **finite signed-source compression** next: choose partitions adapted to the actual support/nodal geometry, preserve the continuous `w(h)` edges, and test PSD by cut, Schur-complement, or effective-resistance inequalities under the hypothesis that prime overlap is screened. Persist a quantitative obstruction that forces arithmetic overlap, or a genuine source-compatible multi-component countermodel whose exact multiplier Laplacians remain PSD while the prime observables stay screened. Either outcome materially advances the defect-to-zero program.
+The clue remains `accepted`. The immediate target is the **harmonic spectral-budget test** `R_{\rm harm}(a)>K_+`. Do not spend further passes optimizing scalar averages of the two complementary cut inequalities; `WI-275` is sharp for that information. If the budget comparison cannot be forced from the known `\lambda_r` constraints, move to a genuinely stronger input that couples cuts through the exact Suzuki source or the PSD signed-source multiplier form.
