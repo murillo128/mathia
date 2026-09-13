@@ -1,19 +1,19 @@
-# MI-011 — Weighted prime-ratio dephasing survives down to a four-form stretched-exponential horizon; the slow-horizon frontier is quantitative
+# MI-011 — Finite-start dephasing has a worst-spacing baseline and a sharper weighted-collision currency
 
-**Evidence level:** exact deterministic weighted-Hilbert and same-sign gap-fiber reduction through VIS-197, plus the literature-backed sieve closures VIS-198--VIS-199. The conclusion `D_v=o(y^2)` is proved throughout polynomially growing strictly subcritical horizons and, under VIS-199's logarithmic condition, through a broad subpolynomial corridor. Polylogarithmic/arbitrarily slow growth, the critical-scale transition and optimality of `D_v` remain open.
+**Evidence level:** exact deterministic weighted-Hilbert and same-sign gap-fiber reduction through VIS-197, literature-backed sieve closures VIS-198--VIS-199, and the uniform finite-window baseline [VIS-212](../../findings/VIS-212-prime-ratio-spacing-quantifies-finite-start-dephasing.md). Pointwise worst-start cancellation, the critical-scale transition and optimal finite-window length remain open.
 
 VIS-192--VIS-195 reduce deterministic finite-start dephasing to the coefficient-weighted local-spacing resource `D_v` and make `D_v=o(y^2)` equivalent to vanishing taper-energy mass on every fixed normalized top-scale collision family. VIS-196 removes the opposite-sign branch at subquadratic cost and writes each dangerous same-sign collision as a one-parameter affine prime-gap fiber. VIS-197 shows that local congruence geometry is not the power-scale obstruction: outside an explicit finite conductor, the four-form system has only polylogarithmic local-product inflation.
 
-VIS-198 closes every polynomially growing strictly subcritical corridor. Dropping one primality condition and using a dimension-three upper-bound sieve already supplies enough logarithmic saving when the relevant parameter intervals have polynomial length.
+VIS-198 closes every polynomially growing strictly subcritical corridor, while VIS-199 pushes the weighted route deep into the subpolynomial regime by retaining all four primality conditions and moving the sieve/taper split. These results show that global minimum spacing is often too pessimistic: coefficient mass on near-collisions, not the closest formal pair alone, controls the useful averaging cost.
 
-VIS-199 shows exactly how to go further. Retaining all four primality conditions gives a fourth inverse logarithm, while moving the sieve/taper split to `X=y log y/H` makes the unsieved tail only `O(1/log y)`. The resulting normalized collision bound tends to zero when
+VIS-212 supplies the complementary unconditional baseline. The symmetric prime-ratio frequencies `+/- log(q/p)` are globally separated by at least `y^-2`, because two distinct reduced ratios satisfy `|qr-ps|>=1`. Montgomery--Vaughan therefore gives, uniformly in the position `T_0` of the averaging interval,
 
-`(1+log log(3+y)) sqrt(log y) = o(log(H/log y))`
+`L^(-1) int_(T_0)^(T_0+L) |M_v(y;H,T)-1|^2 dT = R_v(y,H)[1+O(y^2/L)]`.
 
-and `H log y/y -> 0`. In particular every fixed `eta>0` permits `H >= exp((log y)^(1/2+eta))`, far below every fixed power of `y`.
+Hence `L>=c y^2` already yields `O(R_v)` mean square in **every** sliding start window, and when `H->infinity` this gives density-one cancellation inside every such window. Infinite Cesaro averaging is not essential.
 
-The main lesson is now quantitative rather than categorical. **Polynomial horizon length was only a sieve-length convenience; the actual present barrier is whether the available logarithm of the affine-fiber parameter range dominates the worst-case four-form local-factor cost.** Local admissibility and weighted collision geometry remain under control well into the subpolynomial regime.
+The two conclusions use different currencies and should not be conflated. The quadratic scale comes from worst deterministic separation of bounded rational ratios and ignores coefficient weights. The `D_v` theory can beat that baseline by proving that dangerous small determinants carry little normalized mass, but it requires more arithmetic input and currently has its own slow-horizon restrictions. Neither statement is pointwise in `T`.
 
-The next useful theorem should therefore improve aggregate local-factor/fiber control near `log H = O(sqrt(log y) log log y)`, or identify a different sufficient dephasing resource whose finite-start cost is smaller than `D_v`. Repeating the same worst-case singular-series majorant cannot by itself reach polylogarithmic horizons.
+The next finite-window theorem should therefore quantify the weighted distribution of small cross-determinants `|qr-ps|` strongly enough to replace the crude `delta^-1<=y^2` cost by the coefficient-weighted scale relevant to the taper. Separately, a worst-start theorem must rule out or classify rare coherent phases that can survive every mean-square statement. Shortening the averaging interval and proving pointwise cancellation are not the same problem.
 
-**Boundary.** VIS-199 is an upper-bound-sieve result for fixed normalized crowding scale and the stated endpoint-zero taper. It does not prove necessity of `D_v`, uniformity for growing crowding multiplier, a prime-tuple asymptotic, or any result at arbitrary slow/critical horizons.
+**Boundary.** VIS-212 proves a sufficient quadratic window, not necessity. VIS-198--VIS-199 do not establish arbitrary-slow or critical-scale control, and none of these results excludes exceptional individual starts. The exact pair-difference cancellation taxonomy is independent of this averaging-horizon question.

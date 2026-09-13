@@ -1,31 +1,25 @@
-# MI-005 — The sharp logarithmic predecessor window is source-tagged above the linear mass floor
+# MI-005 — Critical excess transport localizes the source-neutral loss to the terminal harmonic fan
 
-**Evidence level:** proved for the current predecessor geometry by [FD-102](../../findings/FD-102-adaptive-nonhead-retagging-has-an-exact-logarithmic-source-budget.md), [FD-103](../../findings/FD-103-power-dense-record-ladders-saturate-the-logarithmic-source-budget.md), [FD-104](../../findings/FD-104-direct-core-compression-uniformizes-predecessor-transport-above-the-linear-mass-floor.md) and [FD-105](../../findings/FD-105-adaptive-low-source-cap-keeps-logarithmic-predecessor-chains-at-polynomial-source-scale.md). No branch-sensitive contradiction or RH consequence is claimed.
+**Evidence level:** proved for the current predecessor geometry by [FD-102](../../findings/FD-102-adaptive-nonhead-retagging-has-an-exact-logarithmic-source-budget.md)--[FD-106](../../findings/FD-106-critical-excess-mass-transport-localizes-endpoint-entropy-to-the-terminal-prime-fan.md). No endpoint `epsilon=0` theorem for the terminal fan and no RH consequence is claimed.
 
 FD-102 removes carrier identity from the deterministic nonhead budget. For a state with horizon `H` and sampled source quotient `x`,
 
 `A(H,x)=log_2((H-1)/(8x-1))`
 
-drops by one under a nonhead predecessor unless retagging pays through genuine source descent. FD-103 proves that the resulting `(1-Theta+o(1)) log_2 H` source-neutral window is geometrically sharp on actual power-dense source-record ladders.
+drops by the full logarithmic contraction unless retagging pays through genuine source descent. FD-103 proves that this source-neutral logarithmic window is sharp on actual power-dense source-record ladders, so deterministic floor geometry cannot be improved enough to force an earlier descent.
 
-FD-104 closes the old fixed-certificate transport caveat above the linear nonsquarefree-mass floor. If `U_H>=H^(1+delta)`, direct single-state core compression gives, for fixed `1/2<sigma<Theta`, a genuine predecessor `C<H` with
+FD-104--FD-105 show that above the linear nonsquarefree-mass floor the same predecessor calculus transports real mass and real source scale. Direct compression no longer needs a fixed projective certificate, while the adaptive cutoff `L_H=floor(U_H/(H log H))` makes high mass carry its own source tag. Thus logarithmic chains seeded by false-RH source records remain at polynomial physical and source scales; bounded-scale escape is closed.
 
-`U_C/C^(2sigma) >= b_sigma U_H/H^(2sigma)`.
+FD-106 supplies the branch-sensitive currency that was previously missing. With critical excess `R_H=U_H/H`, every sufficiently large high-mass state has a source-tagged predecessor `C` such that, for each fixed `epsilon>0`,
 
-The construction no longer needs an occupied additive block or fixed projective-quality lower bound. The actual normalized mass is the induction currency.
+`R_C >= a_epsilon (C/H)^epsilon R_H`.
 
-FD-105 then shows that high mass carries its own source tag. The exact low-source cap
+The power loss is not generic. Odd repeated-square children have `C_p/H~4/p^2`, the eligible dyadic branch has one half-scale child, and source-head retreat has one selected child; their contraction sums are summable and they transport `R_H` with `epsilon=0`. Only the repaired dyadic-terminal family has `C_p/H~1/p`, whose critical contraction sum is harmonic. Every positive `epsilon` makes that family summable, giving the displayed law.
 
-`E_H^(<=L) <= 2H(L+1)`
+This identifies an exact amortization with the FD-102 potential. On a source-neutral segment, the contraction `H/C` spends `log(H/C)` units of the deterministic source-neutral budget, while critical excess pays only `epsilon log(H/C)`. Large geometric contraction therefore cannot be counted once as source-neutral descent and again as a full fixed normalized-mass loss. The remaining repeated cost is the fixed selection factor `a_epsilon` per step.
 
-allows the adaptive threshold `L_H=floor(U_H/(H log H))`. Almost all high-mass nonsquarefree energy lies above `L_H`, and the exact predecessor repairs preserve a destination mask above `L_H/2`. Thus the same step can be chosen with
+The terminal `epsilon` is also a genuine information boundary of the current aggregate packet theorem. FD-106 constructs a matched nonnegative allocation with total terminal mass bounded below and `C_p~H/p` in which every child carries only a `1/sum_{p<=P}1/p` fraction of the parent critical excess. Hence no uniform `epsilon=0` conclusion follows from total packet mass and the horizon law alone. Any endpoint improvement must use the least-prime-factor partition and common quotient-shell source coherence of the **actual** terminal prefix, or show that source-descending/head events occur often enough to defeat the accumulated selection tax.
 
-`U_C^(>L_H/2)/C^(2sigma) >= b_sigma U_H/H^(2sigma)`
+The durable lesson is that horizon contraction, source-neutral potential, packet-family entropy and source progress are different currencies but are no longer independent. The exact contraction can amortize the first three except at one harmonic fan. The unresolved theorem is therefore localized: either prove that the physical terminal fan cannot realize the harmonic matched allocation because of its source coherence, or make the remaining fixed selection loss incompatible with the finite source-neutral budget and required source descent.
 
-and consequently `C >> U_H/(H log H)`.
-
-Starting from a strict false-RH record entry, the guaranteed `xi log H_0` chain therefore cannot escape by collapsing to bounded physical or source scale. For every admissible `xi`, both the realized horizons and the transported source quotients remain at a positive power of the original `H_0` throughout the guaranteed window.
-
-The remaining obstruction is finer than survival. The scalar constant `b_sigma` takes the worst branch and discards the correlation between **how much normalized mass is lost, how strongly the horizon contracts, and how much source descent occurs**. FD-102 shows the deterministic source-neutral ceiling is already sharp, so a contradiction must recover this branchwise joint information rather than improve a global minimum constant.
-
-**Boundary.** The theorem needs fixed-power high mass; the source tag degenerates at the exact linear floor. The logarithmic chain and its polynomial source scale do not by themselves force source descent faster than the sharp FD-102 budget.
+**Boundary.** All mass/source localization statements still require fixed-power excess above the linear floor. FD-106 does not prove a uniform critical constant on the terminal family, does not force source descent on every long chain, and does not eliminate the quotient-preserving cascades of MI-004.

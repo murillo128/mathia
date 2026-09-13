@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Use the exact null equation or quantitative mode geometry beyond complete screening
+## Use amplitude-bearing null-mode structure beyond complete screening and support topology
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`, `MI-020-complete-one-signed-screening-trades-discrete-vanishing-for-support-packing`.
 
@@ -16,19 +16,21 @@ WI-274--WI-280 separate scalar firstness, retained Hilbert orientation and sourc
 
 WI-281 shows that actual arithmetic screening can shrink the one-signed admissible class: powers of two force support packing modulo `log 2`, yielding the strict budget `K_pack<K_+`.
 
-WI-282 now proves that this packing mechanism is already sharp under two obvious refinements. The length-`log 2` optimizer automatically screens every prime-power lag, so adding the other primes does not lower the relaxed supremum. Requiring full essential span also leaves the same supremum because arbitrarily small boundary satellites can enforce span while preserving all finitely active forbidden distances and converging back to the packing optimizer.
+WI-282 proves that this packing mechanism is already sharp under two obvious refinements. The length-`log 2` optimizer automatically screens every active prime-power lag, so adding the other primes does not lower the relaxed supremum. Requiring full essential span also leaves the same supremum because arbitrarily small boundary satellites can enforce span while converging back to the packing optimizer.
 
-The next one-signed theorem must therefore consume information not present in the relaxation
+WI-283 now closes the remaining qualitative support-topology refinement coming from the actual Suzuki null equation. Every true null mode satisfies a prime-translation support-domination condition, but a maximal open finite-distance-avoiding set can satisfy that domination while remaining exactly screened. Adding arbitrarily small `L^2` mass on the saturated support changes the support topology drastically while changing `B_+` arbitrarily little. Consequently
 
-`f>=0`, `||f||_2=1`, complete prime-power screening, full essential span.
+`nonnegativity + complete screening + full span + support domination`
 
-Promising load-bearing inputs are the exact null equation `A_a f=0`, a quantitative lower mass requirement in separated regions, regularity/nodal constraints of the localized operator, a balance identity between the archimedean and prime-power source terms, a positive first-crossing spectral-area margin, or simultaneous-cut relations coupling more than autocorrelation zero sets. The target is a strict decrement below `K_pack` or another contradiction-strength invariant derived from actual null-mode structure.
+still has exact supremum `K_pack`.
+
+The next one-signed theorem must therefore consume **amplitude-bearing** information that the support relaxation discards: the full distributional equation `A_a f=0`, a quantitative lower mass requirement in prime-translated regions, regularity/nodal/boundary-flux estimates that force non-negligible amplitude at the support contacts, a signed balance identity between archimedean and von-Mangoldt terms, a positive first-crossing spectral-area margin, or simultaneous-cut relations coupling amplitudes at several cuts. The target remains a strict decrement below `K_pack` or another contradiction-strength invariant derived from actual null-mode structure.
 
 The sign-changing branch remains separate. Screening no longer implies support disjointness there, so the one-signed packing argument cannot simply be transferred.
 
-## Keep relaxation sharpness and source realization distinct
+## Keep relaxation sharpness, support topology and source realization distinct
 
-WI-281 proves a source-induced packing bound; WI-282 proves that the corresponding relaxed class contains exact or arbitrarily close budget extremizers even after all prime lags and qualitative full span are imposed. Those profiles are not asserted to satisfy the Suzuki null equation. A future improvement must distinguish realizable first null modes from relaxed screened profiles rather than add another scalar condition already compatible with the `K_pack` extremizer.
+WI-281 proves a source-induced packing bound; WI-282 proves that complete screening and full span do not lower it; WI-283 proves that even the exact support-domination shadow of the null equation can be imposed at arbitrarily small analytic cost. None of those profiles is asserted to satisfy `A_a f=0`. A future improvement must distinguish realizable first null modes by a **quantitative amplitude/operator law**, not by another qualitative property of their support.
 
 ## Keep endpoint firstness, source reserve and sign geometry as separate gates
 

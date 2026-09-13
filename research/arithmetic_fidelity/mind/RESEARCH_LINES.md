@@ -26,13 +26,15 @@ The RH root-rate endpoint tolerates large output error but is highly sensitive t
 
 AF-320--AF-325 separate exact algebraic recovery, fixed-support conditioning, bounded-support-height geometry and unrestricted support variation. AF-326 transfers the finite-height source margin into the retained second harmonic on the exact centered middle-singular stratum.
 
-AF-327 now moves from one coordinate to the complete retained `{1,z,z^2,z^4}` feature geometry. Its moment Gram determinant is strictly positive on every nonzero eight-prime common-time orbit, and for `p_j<=H`, `|t|>=1` it obeys the same qualitative Baker--Wüstholz height/time envelope
+AF-327 moves from one coordinate to the complete retained `{1,z,z^2,z^4}` feature geometry. Its moment Gram determinant is strictly positive on every nonzero eight-prime common-time orbit, and for `p_j<=H`, `|t|>=1` it obeys the qualitative Baker--Wüstholz height/time envelope
 
 `D_0124 >= exp[-C (log H)^2 log(e+|t| log H)]`.
 
 The proof identifies rank loss with a collision geometry incompatible with the prime relation lattice, then transfers arithmetic separation to determinant slack by Łojasiewicz. On `s_1=e_4=0`, the determinant is exactly the slack in the curved AF-326 moment inequality, so the source stays quantitatively away from the entire equality face, not merely from `|s_3|=0` or `|s_2|=4`.
 
-The remaining arithmetic question is still exact incidence of `s_1=e_4=0` for an eight-prime common-time orbit. If exact hits exist, determine whether the joint `H,t` Gram/eigenvalue margin is strong enough in the metric consumed by the downstream theorem, or which richer provenance than maximum-prime height must be retained.
+AF-328 closes the natural factorization/common-zero shortcut to the remaining exact incidence. For fixed eight distinct primes, the singular condition `s_1=e_4=0` is exactly the imaginary-axis common-zero condition `F(it)=G(it)=0` for two finite exponential sums. The prime-frequency sum `F` is irreducible and the pair `(F,G)` is coprime in the full finite-exponential-sum ring. Consequently common-factor theory, including the Shapiro program, can at best control repeated or infinitely many common zeros; it cannot exclude one isolated common zero. The surviving question is a **pointwise incidence problem** for the one-parameter prime-log subgroup with `V(e_1,e_4)`, not a hidden factorization problem.
+
+The remaining arithmetic question is therefore still exact incidence of `s_1=e_4=0` for an eight-prime common-time orbit, but its viable mechanisms are narrower: prove a pointwise transcendence/incidence obstruction on the imaginary axis, derive an exact source identity forcing a forbidden multiplicative relation, or construct an actual hit. If exact hits exist, determine whether the joint `H,t` Gram/eigenvalue margin is strong enough in the metric consumed by the downstream theorem, or which richer provenance than maximum-prime height must be retained.
 
 ## Derive an equicoercive quartic profile restriction from source structure
 
@@ -44,4 +46,4 @@ The remaining question is provenance of the non-escape resource. Can the arithme
 
 ## Keep incidence, source resources and destination slack as different currencies
 
-The eight-point branch now separates exact algebraic recovery, fixed-support Diophantine conditioning, bounded-height support-union geometry, unrestricted support-union topology, coordinate-level moment transfer and whole-Gram boundary separation. AF-327 shows that a source-specific finite-resource margin can become target-native determinant/eigenvalue slack, but it does not decide incidence or downstream sufficiency. Future claims must state which layer they consume rather than treating “finite prime support” or “stable recovery” as one qualitative hypothesis.
+The eight-point branch now separates exact algebraic recovery, fixed-support Diophantine conditioning, bounded-height support-union geometry, unrestricted support-union topology, coordinate-level moment transfer, whole-Gram boundary separation and pointwise common-zero incidence. AF-327 shows that a source-specific finite-resource margin can become target-native determinant/eigenvalue slack; AF-328 shows that even irreducibility and common-factor exclusion do not decide a single exact hit. Future claims must state which layer they consume rather than treating “finite prime support”, “stable recovery” or “coprime exponential sums” as one qualitative hypothesis.
