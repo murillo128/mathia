@@ -14,9 +14,9 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Couple dangerous fibers or change the dephasing resource below the square-root-log method threshold
+## Control shell packing or introduce a genuinely signed dephasing resource below the square-root-log method threshold
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`.
 
 VIS-192--VIS-199 reduce deterministic finite-start dephasing to the weighted local-spacing resource `D_v` and prove `D_v=o(y^2)` through a broad stretched-exponential/subpolynomial corridor by combining taper localization with a four-form upper-bound sieve.
 
@@ -24,16 +24,18 @@ VIS-200 closes scalar cutoff engineering before local-factor averaging: changing
 
 `O((log y)^2/log(H/L)^4 + (log y)^2/L^3 + H/(y log y))`.
 
-VIS-202 now closes scalar cutoff engineering **after** that improvement as well. Within this exact dimension-four fiberwise sieve plus taper-tail architecture, some admissible cutoff `L` makes the displayed bound vanish if and only if
+VIS-202 closes scalar cutoff engineering **after** that improvement as well. Within this exact dimension-four fiberwise sieve plus taper-tail architecture, some admissible cutoff `L` makes the displayed bound vanish if and only if
 
 `log H / sqrt(log y) -> infinity`.
 
 Necessity comes directly from the positive four-form term; sufficiency already follows from `L=log y`. Thus the remaining `sqrt(log y)` scale is a sharp **method threshold** of the persisted majorant, not merely the current sufficient choice and not a lower bound for the true collision energy.
 
-The remaining frontier must change a structural ingredient: couple dangerous fibers before scalarization, exploit cancellation or packing across fibers, lower the effective incidence dimension, strengthen the fourth-prime input, sharpen the tail by a genuinely new mechanism, or replace `D_v` by a dephasing resource with a different collision cost. Re-optimizing the scalar cutoff cannot reach `log H=Theta(sqrt(log y))`, polylogarithmic horizons, or slower scales within the current architecture.
+VIS-203 tests the most immediate interpretation of “couple dangerous fibers before scalarization.” For every shifted-autocorrelation taper, the centered Fourier amplitude is nonnegative, so every prime-ratio coefficient is a common linear phase times a nonnegative number. Grouping by exact frequency difference `xi` produces shell amplitudes `B_xi>=0`: all representations of the same `xi` reinforce, and the long-start error energy is exactly `sum_(xi!=0) B_xi^2 sinc^2(Lxi/2)`. At the dangerous `|xi|=O(y^-2)` scale, `L=o(y^2)` leaves the sinc factor asymptotically one. Exact-shell multiplicity therefore supplies no cancellation for this broad taper class.
 
-## Keep local admissibility, pointwise tuple bounds, averaged local-factor mass, method thresholds and true dephasing separate
+The remaining frontier must now distinguish three genuinely different resources: prove a **shell-packing/energy bound** for the positive `B_xi`, exploit interference across distinct shell frequencies in a way strong enough for uniform starts, or choose a centered taper with signed/complex shell amplitudes and then prove that its sign pattern correlates usefully with the arithmetic fibers. Re-optimizing the scalar cutoff or merely grouping equal-difference fibers cannot cross the current boundary.
 
-VIS-197 controls local factors pointwise; VIS-198--VIS-199 purchase global incidence from sieve dimension; VIS-200 proves cutoff optimization cannot remove the pointwise loss; VIS-201 proves that discriminant-uniform fiber averaging can remove that loss without changing the sieve dimension or resource; VIS-202 proves that the resulting `sqrt(log y)` boundary is exact for the **displayed proof architecture**.
+## Keep local admissibility, pointwise tuple bounds, averaged local-factor mass, method thresholds, exact-shell aggregation and true dephasing separate
 
-The four-form condition and `D_v` remain sufficient machinery, not known sharp descriptions of the true source. Further progress must now change aggregate incidence, cancellation, the tail mechanism, or the resource itself rather than revisit the already-closed scalar cutoff optimization.
+VIS-197 controls local factors pointwise; VIS-198--VIS-199 purchase global incidence from sieve dimension; VIS-200 proves cutoff optimization cannot remove the pointwise loss; VIS-201 proves that discriminant-uniform fiber averaging can remove that loss without changing the sieve dimension or resource; VIS-202 proves that the resulting `sqrt(log y)` boundary is exact for the **displayed proof architecture**; VIS-203 proves that, for autocorrelation tapers, equal-difference fibers aggregate with one sign rather than supplying a hidden cancellation mechanism.
+
+The four-form condition and `D_v` remain sufficient machinery, not known sharp descriptions of the true source. Further progress must now change aggregate shell incidence, cross-shell cancellation, taper sign structure, the tail mechanism, or the resource itself rather than revisit the already-closed scalar cutoff optimization.

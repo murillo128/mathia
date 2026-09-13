@@ -1,19 +1,21 @@
-# MI-012 — Coefficient-level shear locality is strong; seam-metric transport is the remaining direct-angle gate
+# MI-012 — Raw seam amplification does not prevent intrinsic direct-angle stability
 
-**Evidence level:** exact for the two-metric obstruction of PF-319 and for the strengthened coefficient-level Pöschl--Teller locality of PF-242. PF-242 proves exponential mode separation and cut-uniform trace/Hilbert--Schmidt leakage for the raw hypercycle shear multiplier; it does not prove the seam-normalized mixed corner of the full normalized Schur difference required by PF-318.
+**Evidence level:** exact for the two-metric raw-block obstruction of PF-319 and the positive-form angle perturbation theorem of PF-320, with PF-242 providing an independent coefficient-locality control. PF-320 controls the hypercycle-shear correction to the physical direct angle; it does not prove the shear-deleted reference angle or the independent conditional channel `T_H` is weak trace class.
 
-PF-319 separates two metrics that cannot be identified for free. If positive forms `A` and `B` satisfy a small relative Loewner error, then `E=B^(-1/2)(A-B)B^(-1/2)` is small in operator norm, and low rank would convert that into the PF-318 mean-square scale **in the same `B` metric**. The physical direct angle is instead normalized by the seam form `Q`, where
+PF-319 remains a real warning about the **wrong target**. Corridor-relative Loewner smallness does not control a raw mixed block after normalization by an unrelated seam metric: an external congruence can amplify a small relative perturbation arbitrarily. Thus no theorem should infer a seam-normalized `K_LH` estimate merely from the PF-232 corridor sandwich.
 
-`D_Q=Q^(-1/2)(A-B)Q^(-1/2)=C^* E C`, `C=B^(1/2)Q^(-1/2)`.
+PF-320 shows why the actual PF-315/PF-317 direct angle is better behaved than that raw block. For a positive low/high block form
 
-The two-dimensional countermodel in PF-319 shows that fixed small `||E||` gives no bound on a mixed low/high corner of `D_Q` unless the relevant source/target pieces of `C` are controlled. Thin flat corridors exhibit exactly the potentially large conversion, so a stronger corridor Loewner sandwich alone cannot close the physical angle.
+`M = [[A,B],[B*,C]]`,
 
-The strengthened PF-242 now proves that the **canonical coefficient itself is not the source of broad mode mixing**. In the exact Pöschl--Teller basis, `cos(theta)` is tridiagonal and the hypercycle slope is an analytic function of that Jacobi operator. Consequently a jump of `d` mode indices costs `O(beta^d)`. Across an unbuffered contiguous cut, the same expansion gives uniformly
+the intrinsic angle is `T=A^(-1/2)BC^(-1/2)`. If two whole positive forms satisfy a multiplicative sandwich `(1-epsilon)M_0 <= M_1 <= (1+delta)M_0`, then after harmless low/high unitaries their angles differ by `O(max(epsilon,delta))`, **independently of anisotropy in any common external seam normalization**. The form's own diagonal energies absorb the amplification that defeats the raw-block shortcut.
 
-`||L_M M_b H_M||_(S_1)=O(beta)`, `||L_M M_b H_M||_(S_2)^2=O(beta^2)`.
+For the canonical hypercycle shear, PF-232 has `beta_n=O(P_n^-1)` and the local retained low rank is `O(1+log P_n)`. PF-320 therefore gives directly
 
-With `beta_n=O(P_n^-1)`, the raw shear already has the squared Hilbert--Schmidt scale required by PF-318, even without paying the logarithmic low-rank factor. Thus the earlier alternative “prove actual mode locality” has been resolved at the multiplier level.
+`||T_(1,n)-T_(0,n)||_(S_2)^2 = O((1+log P_n)/P_n^2)`,
 
-The remaining theorem is more specific: **transport this ideal locality through the physical normalization and nonlinear operator assembly**. One needs a restricted corridor-to-seam conversion on the low/high pieces that does not destroy the `P_n^-2` cut leakage, or a direct estimate showing that resolvent/Schur completion and finite-pant geometry preserve an equivalent mean-square bound. The unresolved issue is no longer whether the hypercycle coefficient can directly throw mass across the spectral cut; it is whether the physical metric and elimination map amplify that already-local coefficient.
+up to sectorwise unitaries. This is exactly the PF-318 endpoint budget. Moreover sums of positive local pant forms reassemble through a contraction sandwich of the orthogonal direct sum of their intrinsic angles, so the local shear-error estimate survives global assembly without returning to the raw mixed precision block.
 
-**Boundary.** PF-242 does not imply the PF-318 seam-normalized estimate, compactness of `Z_LH`, or control of the independent channel `T_H`. PF-319 does not show that the real metric conversion is bad; it only proves that such control cannot be inferred from corridor-relative form smallness alone.
+The direct-channel frontier is consequently narrower than after PF-319. **The shear correction is already endpoint-small at angle level.** What remains is the weak-`S_1` envelope for the **shear-deleted local pant angles** with actual seam energy and common finite-pant completion retained; once that reference family is controlled, the shear error can be added perturbatively. PF-242's exponential Jacobi locality remains useful structure but is no longer required merely to bridge the PF-232 shear through the seam metric.
+
+**Boundary.** PF-320 uses multiplicative order of the complete local positive forms and a common normalization/completion; an additive error in an unrelated metric does not suffice. It gives a sufficient local-to-global route, not a characterization, and does not control `T_H`, the shear-deleted reference family, scattering, determinants or RH.
