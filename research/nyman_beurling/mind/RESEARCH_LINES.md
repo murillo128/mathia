@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Make the collective Blaschke tail visible in terminal energy, or leave the scalar sibling direction
+## Make genuinely nonsummable Blaschke structure visible in terminal energy, or leave the scalar sibling direction
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`.
 
@@ -20,14 +20,18 @@ NB-086 lower-bounds that infinite-depth charge by the normalized Gram determinan
 
 whose squared mass already pays a compulsory part of the radial entropy. Bounded radial charge therefore forces an `l^2` budget on `asymp R` scalar visible-energy distortions.
 
-NB-088 identifies the exact arithmetic content of that scalar channel in the dyadic case. Restoring Burnol's off-critical Blaschke factor makes the raw terminal visible norm elementary: `||J_X \widetilde D_j||^2=1-1/X`. The full deflated norm differs only by a nonnegative causal Blaschke-delay energy `Lambda_(j,X)(B)`, so `eta_(j,R)^(2)` is exactly a parent-versus-two-children three-delay imbalance plus the universal `O(1/R)` term.
+NB-088 identifies the exact arithmetic content of that scalar channel in the dyadic case. Restoring Burnol's off-critical Blaschke factor makes the raw terminal visible norm elementary: `||J_X \widetilde D_j||^2=1-1/X`. The full deflated norm differs only by a nonnegative causal Blaschke-delay energy `Lambda_(j,X)(B)`, so `eta_(j,R)^(2)` is exactly a parent-versus-two-children three-delay imbalance plus the universal `O(1/R)` term. Every fixed finite Blaschke divisor is scalar-silent at this scale.
 
-This sharpens the falsification boundary. If `B=1`, the dyadic distortion is exactly `-1/(R-1)`. More strongly, every **fixed finite** Blaschke divisor contributes only `O(R^-1)` per terminal sibling block, so the total squared scalar distortion is `O(R^-1)` and vanishes. One or finitely many off-critical zeros are therefore asymptotically silent in the NB-087 scalar average-direction channel.
+NB-089 extends that silence to a genuine infinite class. If the total horizontal off-critical mass
 
-The live theorem is now collective. To make this scalar channel decisive, prove that the **nonuniform infinite-product Blaschke tail** creates nonsummable parent/child delay imbalance as `R` grows. If no such collective estimate exists, leave the scalar sibling-average direction and attack the contrast directions, cross-block correlations, earlier indices or the remaining positive radial floor charge. A finite-zero local footprint cannot by itself drive divergence here.
+`A=sum_(Re rho>1/2) (Re rho-1/2)`
+
+is finite, the full infinite Blaschke product still gives `Lambda_(j,X)(B)=O_A(j^-1)` on terminal windows, hence `eta_(j,R)^(2)=O_A(R^-1)` and total squared scalar distortion `O_A(R^-1)->0`. Infinitude of the inner defect is therefore not enough: even infinitely many off-critical zeros can be invisible to the compulsory scalar average-direction channel.
+
+The scalar route now needs a substantially stronger collective theorem. It must exclude summable horizontal off-critical mass and then prove that the surviving non-summable geometry actually forces nonsummable parent/child delay imbalance. Divergence of the horizontal mass is only a necessary escape from NB-089, not a sufficient entropy theorem. If no such estimate is available, leave the scalar sibling-average direction and attack contrast directions, cross-block correlations, earlier indices or the remaining positive radial floor charge.
 
 ## Keep stationary inverse singularities, aliasing, prediction floor, visible entropy, scalar branching and collective inner delay separate
 
-NB-083 remains the matched control for a genuine unit-circle zero of a stationary symbol. NB-084 replaces that symbol by the arithmetic alias-periodized density; NB-085 gives its positive geometric-mean floor; NB-086 exposes the terminal determinant bill; NB-087 extracts from exact branching a canonical scalar Rayleigh defect; NB-088 decomposes that defect into a universal raw term plus Blaschke-delay imbalance and proves finite-product silence.
+NB-083 remains the matched control for a genuine unit-circle zero of a stationary symbol. NB-084 replaces that symbol by the arithmetic alias-periodized density; NB-085 gives its positive geometric-mean floor; NB-086 exposes the terminal determinant bill; NB-087 extracts from exact branching a canonical scalar Rayleigh defect; NB-088 decomposes that defect into a universal raw term plus Blaschke-delay imbalance; NB-089 shows that even an infinite defect with summable horizontal zero mass remains silent in that scalar channel.
 
-A bounded scalar distortion budget is only necessary, not sufficient, for bounded aggregate charge: entropy may still live in sibling contrasts, cross-block correlations, earlier indices or nonterminal floors. Conversely, false RH with only finitely many right-half zeros would pass this scalar test. The remaining scalar obstruction, if any, must be genuinely collective in the full inner factor rather than merely detect nontriviality of `B`.
+A bounded scalar distortion budget is only necessary, not sufficient, for bounded aggregate charge: entropy may still live in sibling contrasts, cross-block correlations, earlier indices or nonterminal floors. Conversely, false RH is compatible with this scalar test whenever the right-half zero set has finite total horizontal displacement. The remaining scalar obstruction, if any, must use a genuinely nonsummable collective property of the full inner factor rather than merely nontriviality or infinitude of `B`.

@@ -1,6 +1,6 @@
 # Prime-flute mathematical questions
 
-## Estimate the two genuine physical angle channels exposed by sequential elimination
+## Transport coefficient-level mode locality into the seam-normalized physical angle
 
 **Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`, `MI-012-corridor-form-smallness-needs-seam-metric-locality`.
 
@@ -12,13 +12,15 @@ PF-317 localizes the direct channel. In simultaneous seam-energy coordinates the
 
 This Hilbert--Schmidt average already gives `K_LH,Z_LH in S_(1,infinity)` by two-scale prime threshold counting. No worst-case `C/P_n` operator-norm bound is required.
 
-PF-319 now closes a tempting shortcut to that estimate. PF-232 gives an `O(P_n^-1)` relative Loewner perturbation after normalization by the diagonal **corridor** energy, and low rank would indeed give the PF-318 mean-square scale in that same metric. But the direct physical angle is normalized by the PF-205 seam form. A two-metric countermodel proves that corridor-relative form smallness alone gives no seam-normalized mixed-corner bound unless the source/target metric conversion is controlled. Thin flat corridors exhibit exactly the potentially large metric ratio.
+PF-319 closes the purely metric shortcut. PF-232 gives an `O(P_n^-1)` relative Loewner perturbation after normalization by the diagonal **corridor** energy, but the direct physical angle is normalized by the PF-205 seam form. A two-metric countermodel proves that corridor-relative form smallness alone gives no seam-normalized mixed-corner bound unless the source/target metric conversion is controlled.
 
-The direct channel is therefore a **local thin-pant seam-normalized mean-square mixed-frequency estimate**. A positive proof must use actual mode locality/almost-diagonality of the canonical hypercycle shear, prove a restricted corridor-to-seam metric conversion, or estimate the physical mixed corner directly. PF-215 remains the negative control on constant modes. The second genuine channel `T_H` remains independent.
+The strengthened PF-242 now supplies a missing positive ingredient that PF-319 had left as an option. In the exact Pöschl--Teller basis the hypercycle shear coefficient is an analytic function of the tridiagonal Jacobi operator `cos(theta)`, so mode jumps by `d` indices are `O(beta^d)`. More importantly for PF-318, across every contiguous mode cut the raw shear multiplier has cut-uniform trace mass `O(beta)` and squared Hilbert--Schmidt leakage `O(beta^2)`; on the canonical tail `beta_n=O(P_n^-1)`. There is therefore **no coefficient-level accumulation over the low band**.
+
+The direct channel is now a transport problem, not a locality-conjecture problem. A positive proof must show that this exact Jacobi locality survives the corridor-to-seam metric conversion and the resolvent/Schur/finite-pant operations strongly enough to retain the PF-318 seam-normalized mean-square bound, or estimate the final physical corner directly. PF-215 remains the negative control on constant modes. The second genuine channel `T_H` remains independent.
 
 ## Global heavy-range projection counts after strength/angle factorization
 
-For the PF-287 heavy low/high extension-range projection product, can the conditional channel `T_H` satisfy the required ideal count once the direct channel is reduced to a Hilbert--Schmidt local leakage criterion? PF-318 supplies endpoint-complete finite-band reassembly for `Z_LH`; PF-319 only narrows the local proof mechanism. Neither estimates `T_H`, builds the compatible infinite realization, closes the symmetric side, or supplies signed target composition.
+For the PF-287 heavy low/high extension-range projection product, can the conditional channel `T_H` satisfy the required ideal count once the direct channel is reduced to transporting an already-proved coefficient-level Hilbert--Schmidt locality estimate into the physical seam metric? PF-318 supplies endpoint-complete finite-band reassembly for `Z_LH`; PF-242 supplies raw shear locality; PF-319 identifies the missing metric bridge. None estimates `T_H`, builds the compatible infinite realization, closes the symmetric side, or supplies signed target composition.
 
 ## Prime realization within the resolved upstream-memory window
 
