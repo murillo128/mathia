@@ -1,17 +1,33 @@
-# MI-018 — One-signed first crossings expose prime overlap once a gap crosses the source sign-change scale
+# MI-018 — One-signed first crossings expose a quantitative source-tail budget for screened gaps
 
-**Evidence level:** exact on the one-signed branch of a hypothetical first unrestricted Suzuki crossing through WI-271. WI-270 gives the general cut tariff using the classical Hilbert--Carleman inequality; WI-271 proves a stronger source-specific arithmetic conclusion for genuine internal gaps of width at least `h_0=log rho`. No theorem makes the actual first null mode one-signed or proves RH.
+**Evidence level:** exact on the one-signed branch of a hypothetical first unrestricted Suzuki crossing through WI-272. WI-270 gives the general cut tariff using the classical Hilbert--Carleman inequality, WI-271 forces arithmetic overlap across gaps at least as wide as `h_0=log rho`, and WI-272 extends that conclusion below `h_0` whenever the remaining positive archimedean tail is too small to pay firstness. No theorem makes the actual first null mode one-signed or proves RH.
 
 WI-269 gives the exact source-ground-state transform at a first crossing: multiplier energies form a positive-semidefinite signed-source Laplacian, while the archimedean source changes sign once at `h_0`. WI-270 sharpens that structure when the null mode `v` is one-signed. For almost every cut, a positive proper-aperture firstness cost must be paid either by positive prime-power crossing overlap or by bilateral short-range mass in the region where the archimedean source is positive.
 
-WI-271 identifies the regime where that second currency disappears. Suppose an internal essential-support gap `(alpha,beta)` separates positive mass and has width `L>=h_0`. A Lipschitz transition placed entirely inside the zero gap splits the mode into exact left and right pieces without a sharp-cut domain issue. Every cross-gap pair then has separation at least `L`, hence lies where the continuous source weight is nonpositive.
+For a genuine internal support gap `(alpha,beta)` of width `L`, a smooth multiplier can transition entirely through the zero region and split the mode into exact left and right pieces. WI-271 observes that when `L>=h_0`, every cross-gap archimedean edge has nonpositive source weight, so the continuous source cannot finance the strictly positive side-mode energy. The von-Mangoldt source must then carry the balance and some active prime-power lag has `C_v(log n)>0`.
 
-Firstness makes the common cross-gap cut energy strictly positive, while one-signedness makes every cross-gap overlap nonnegative. The archimedean contribution can therefore only lower that energy. The von-Mangoldt source must carry the positive balance:
+WI-272 shows that `h_0` is not a hard boundary. Put
 
-`P_(alpha,beta) >= max(lambda_(r_L) M_L, lambda_(r_R) M_R) > 0`.
+`B(L) = integral_L^{h_0} w(h) dh`
 
-Because all prime-power terms are nonnegative, some active lag necessarily satisfies `C_v(log n)>0`; quantitatively its autocorrelation is bounded below by the firstness cost divided by the available von-Mangoldt weight. Thus complete prime screening on the one-signed branch forces the support to be **`h_0`-gap-connected**. This sharpens WI-270's `2h_0` no-gap corollary and, more importantly, turns a sufficiently wide geometric defect directly into arithmetic overlap.
+for `0<L<h_0`, and `B(L)=0` for `L>=h_0`. The positive cross-gap continuous term is a convolution pairing between the two side modes. Young's `L^1*L^2 -> L^2` inequality bounds it by
 
-The surviving one-signed problem is no longer whether a wide gap can be screened. It is whether a completely screened first null mode can maintain short-range archimedean connectivity across every cut with no internal `h_0` bottleneck, or whether firstness plus the full cut family forces such a bottleneck somewhere. The sign-changing branch remains governed by WI-269's nodal compensation law because cross-gap products no longer have fixed sign.
+`B(L) sqrt(M_L M_R)`.
 
-**Boundary.** The one-signed assumption and the genuine separating gap are load-bearing. For `L<h_0`, positive short-range archimedean edges can pay part of the cut cost and WI-270 is the correct quantitative interface. WI-271 does not show that an `h_0` gap must exist, that the first null mode is one-signed, or that every prime lag overlaps.
+Consequently the prime cross-gap mass satisfies
+
+`P_gap >= max(lambda_(r_L) M_L, lambda_(r_R) M_R) - B(L) sqrt(M_L M_R)`.
+
+Complete prime screening therefore requires simultaneously
+
+`B(L) >= lambda_(r_L) sqrt(M_L/M_R)` and `B(L) >= lambda_(r_R) sqrt(M_R/M_L)`,
+
+so in particular
+
+`B(L)^2 >= lambda_(r_L) lambda_(r_R)`.
+
+The two inequalities also pin the admissible mass ratio; a screened gap cannot escape merely by moving almost all mass to one side. Since `B(L)` vanishes quadratically as `L` approaches `h_0` from below, every fixed proper-aperture margin has a strict exclusion collar below the sign-change scale. WI-271 is the zero-tail endpoint of this continuous tariff, not a separate mechanism.
+
+The remaining one-signed geometry is correspondingly sharper: a completely screened first mode must avoid any gap whose positive source tail is too small, and must maintain enough short-range mass/coupling to pay firstness everywhere. The scalar tail estimate itself cannot exclude arbitrarily narrow gaps because `w(h)~1/(2h)` and hence `B(L)` diverges logarithmically as `L` tends to zero. Progress in that regime needs the full cut/null-equation family, more local information about the mode, or a sharper source-conditioned operator norm rather than another total-mass estimate.
+
+**Boundary.** The one-signed assumption and the genuine separating gap are load-bearing. WI-272 does not force a gap to exist, does not make the first null mode one-signed, and does not transfer to sign-changing cross-gap products. The sign-changing branch remains governed by WI-269's PSD/nodal compensation law.
