@@ -5,103 +5,52 @@ status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
-  - research/prime_flute/findings/PF-001-exact-cuff-coordinate.md
-  - research/prime_flute/findings/PF-205-natural-width-cuff-smoothing-is-C1-uniform-and-critical-orlicz-summable.md
-  - research/prime_flute/findings/PF-212-thin-fermi-boundary-frequency-split-closes-local-high-mode-gate.md
-  - research/prime_flute/findings/PF-233-variable-width-diagonal-corridor-has-exact-operator-valued-transfer-law.md
-  - research/prime_flute/findings/PF-235-hypercycle-boundary-compactification-has-only-quadratic-prime-dependent-defect.md
-  - research/prime_flute/findings/PF-247-fixed-axis-compactification-is-parity-jacobi-in-corridor-modes.md
-  - research/prime_flute/findings/PF-299-prime-seam-scale-has-critical-ell-one-accumulation.md
   - research/prime_flute/findings/PF-315-sequential-physical-band-elimination-factorizes-the-full-angle-defect.md
   - research/prime_flute/findings/PF-316-direct-channel-payment-makes-the-conditional-angle-endpoint-visible.md
   - research/prime_flute/findings/PF-317-positive-diagonal-completion-reduces-the-direct-angle-to-local-pant-crossing.md
   - research/prime_flute/findings/PF-318-logarithmic-rank-hilbert-schmidt-averages-already-close-the-direct-angle-at-weak-trace.md
-  - research/prime_flute/findings/PF-319-corridor-form-smallness-alone-does-not-control-the-seam-normalized-direct-angle.md
   - research/prime_flute/findings/PF-320-form-smallness-controls-the-direct-angle-even-when-raw-seam-blocks-amplify.md
   - research/prime_flute/findings/PF-321-superlinear-seam-scale-local-angle-decay-is-trace-class.md
-  - research/prime_flute/findings/PF-322-physical-low-packets-retain-critical-compactified-transverse-energy.md
-  - research/prime_flute/findings/PF-323-interior-critical-low-packets-avoid-the-cuff-seam.md
   - research/prime_flute/findings/PF-324-critical-packet-seam-distance-remembers-consecutive-prime-gap-ratio.md
   - research/prime_flute/findings/PF-325-physical-translations-convert-the-local-hilbert-schmidt-gate-into-a-packet-position-integral.md
   - research/prime_flute/findings/PF-326-seam-normalization-preserves-fixed-band-packet-localization.md
+  - research/prime_flute/findings/PF-327-seam-normalized-critical-packet-shapes-retain-compactified-transverse-energy.md
+  - research/prime_flute/findings/PF-328-critical-packet-intervals-restore-explicit-seam-parity-scales.md
+  - research/prime_flute/findings/PF-329-final-diagonal-normalization-turns-seam-pulled-packets-into-total-energy-unit-traces.md
 ---
 
-# Can the shear-deleted local pant angle gain any fixed superlinear power of the seam scale?
+# Can the shear-deleted local pant angle meet the direct-channel endpoint budget?
 
 ## Observation
 
-PF-315--PF-316 reduce the physical `P/H` endpoint to the conditional post-low angle `T_H` and the direct angle. PF-317 localizes the direct channel to finitely many positive local pant crossings; PF-318 shows that the local squared Hilbert--Schmidt budget
+PF-315--PF-318 isolate the direct retained-low/high angle and show that the global weak-`S_1` endpoint follows from the local squared Hilbert--Schmidt budget
 
 \[
-O\!\left(\frac{1+\log P_n}{P_n^2}\right)
+\|T_{0,n}^{(r)}\|_{\mathcal S_2}^2
+\lesssim
+\frac{1+\log P_n}{P_n^2}
 \]
 
-already closes the global weak-`S_1` endpoint. PF-320 moves the geometric problem to the **shear-deleted intrinsic local pant angle**, because the actual PF-232 shear changes that angle only at the already-affordable reciprocal-prime scale. PF-321 further shows that any fixed superlinear seam gain
+for the shear-deleted local one-cusp-pant angle. PF-320 pays the actual hypercycle shear at the already-affordable reciprocal-prime scale, while PF-321 shows that any fixed superlinear seam gain `O(s_n^{1+\varepsilon})` would close the reference direct channel even in trace class.
+
+PF-324--PF-328 supply a sharp adversarial packet calibration. Critical fixed-band packets occupy a positive-length interval in the exact PF-325 translation variable. Their seam-only raw traces remain localized and retain nonzero compactified transverse energy, while the distance to the outgoing seam has both finite-boundary and escaping-boundary prime-gap-ratio regimes. PF-328 also restores the explicit pre-angle face-parity scales: symmetric energy of order `w_n^{-1}` and antisymmetric energy of order `w_n`.
+
+PF-329 closes an important representation loophole in that calibration. A unit packet `\psi_{n,t}` of the **completed intrinsic angle** does not enter the raw pant as the seam-only trace `Q_{L,n}^{-1/2}\psi_{n,t}`. Its exact raw low trace is
 
 \[
-\|T_{0,n}^{(r)}\|=O(s_n^{1+\varepsilon}),
-\qquad \varepsilon>0,
-\]
-
-would make the shear-deleted reference direct channel trace class.
-
-PF-322 blocks the naive proof of such a gain: zero-mean packets entirely inside the fixed physical-low band have order-one `s_n^2`-scaled compactified transverse energy. PF-323 removes the seam-artifact escape by recentering the same critical family at the interior point `tau_{n,lambda}` defined by
-
-\[
-s_n\cosh\tau_{n,\lambda}=\lambda,
-\qquad 0<\lambda<1,
-\]
-
-while keeping every prescribed fixed window strictly inside the cuff cell.
-
-PF-324 shows that the remaining distance from this critical packet to the outgoing seam is itself arithmetic. With `r_n=h_{n+1}/h_n`,
-
-\[
-D_{n,\lambda}:=\frac{\ell_n}{2}-\tau_{n,\lambda}
-=\log\frac{1+r_n}{\lambda}+o(1),
-\]
-
-and `r_n=(g_{n+1}/g_n)(1+o(1))`. The audited Pintz ratio theorem therefore supplies subsequences with
-
-\[
-D_{n,\lambda}\to\log(1/\lambda)
-\]
-
-and subsequences with
-
-\[
-D_{n,\lambda}\to\infty.
-\]
-
-Thus the downstream projected-angle calculation has two genuinely different canonical boundary regimes. A single gap-independent seam-local picture is no longer an adequate falsification model.
-
-PF-325 identifies the exact bridge from those localized packets back to PF-318. In the normalized physical-low Hilbert coordinates, the translations of one equal-amplitude fixed-band packet form a continuous tight frame, and for every local block `B`
-
-\[
-\|B\|_{\mathcal S_2}^2
-=\frac{m_n}{\ell_n}
-\int_0^{\ell_n}\|B^*\psi_{n,t}\|^2dt,
+\boxed{
+g_{n,t}=Q_{L,n}^{-1/2}A_n^{-1/2}\psi_{n,t},}
 \qquad
-\frac{m_n}{\ell_n}\to\frac\kappa\pi.
+A_n=I+(K_n)_{LL},
 \]
 
-PF-326 now removes the remaining **seam-localization** ambiguity in that bridge. Pullback through the exact seam normalizer commutes with physical translations. On every fixed physical band, after raw `L^2` renormalization, its symmetric and antisymmetric parity weights converge uniformly to
+and this trace has unit total raw low energy. Equivalently, the completed packet response is the canonical correlation of `g_{n,t}` against raw high traces normalized by the full high diagonal energy. The block-diagonal seam congruence itself changes the intrinsic angle only by left/right unitaries.
 
-\[
-(1+\xi^2)^{-1/2}
-\qquad\text{and}\qquad
-1,
-\]
-
-respectively. The pulled-back packet is therefore an explicit weighted translation orbit with a nonzero fixed-width limiting profile; seam normalization alone cannot spread it over the growing cuff.
-
-This does not estimate the completed angle. It narrows the surviving uncertainty to the genuinely pant-side operations: the one-cusp-pant crossing, physical `L/H` projection, and common positive completion, with the exact seam multiplier retained in the packet shape and scale.
+Therefore PF-328's positive-measure family is a valid **pre-angle** obstruction candidate but not yet an angle lower bound. The final low diagonal preconditioner `A_n^{-1/2}` may reshape the packet and need not commute with translations. The remaining direct-channel question is now exactly whether that completed diagonal normalization preserves enough critical structure to obstruct the endpoint, or instead supplies the suppression needed for it.
 
 ## Research question
 
-For one canonical one-cusp pant contribution, delete only the PF-232 hypercycle-straightening shear while retaining the actual PF-205 seam energy, the variable-width diagonal corridor, the full common finite-pant/cusp-side completion, and the fixed physical low/high cutoff from PF-212. After distributing the positive identity share as in PF-320, let `T_{0,n}^{(r)}` be the intrinsic local low/high angle for one neighboring offset `r`.
-
-Does the **completed projected angle** satisfy either
+For one canonical shear-deleted one-cusp-pant contribution with the actual seam energy, variable-width corridor, physical low/high split, and common finite-pant/cusp completion retained, determine whether the intrinsic local direct angle `T_{0,n}^{(r)}` satisfies either
 
 \[
 \boxed{\|T_{0,n}^{(r)}\|\le Cs_n^{1+\varepsilon}}
@@ -112,91 +61,73 @@ for some fixed `\varepsilon>0`, or, failing that,
 \[
 \boxed{
 \|T_{0,n}^{(r)}\|_{\mathcal S_2}^2
-\le C\frac{1+\log P_n}{P_n^2}?
+\le C\frac{1+\log P_n}{P_n^2}.
 }
 \]
 
-The first closes the reference direct channel in trace class by PF-321; the second closes it at the weak-trace endpoint by PF-318. PF-320 then restores the actual shear. The independent conditional channel `T_H` remains outside this clue.
-
-By PF-325 the second condition may equivalently be tested, up to the fixed finite boundary-component bookkeeping, as
+In the PF-325 packet representation, the second condition is equivalent up to fixed cutoff/component constants to
 
 \[
-\boxed{
 \int_0^{\ell_n}
 \|(T_{0,n}^{(r)})^*\psi_{n,t}\|^2dt
 \lesssim
-\frac{1+\log P_n}{P_n^2},
-}
+\frac{1+\log P_n}{P_n^2}.
 \]
 
-where `psi_{n,t}` is the translated equal-amplitude packet in the actual seam-normalized low Hilbert coordinates. PF-326 gives its correct raw-boundary representative: a parity-dependent fixed-band weighted packet, not the unweighted PF-323 Dirichlet packet.
+The raw-PDE version of each integrand must use the PF-329 total-energy-unit trace `g_{n,t}`, or the equivalent raw variational correlation, rather than the seam-only packet from PF-326--PF-328.
 
 ## Why it may matter
 
-The open calculation is now sharply localized. PF-233 still gives exact operator-valued corridor transfer and an even transfer function `F(x)=x/sinh x`, but PF-322--PF-323 prove that the retained physical-low space contains genuine compactification-critical packets for which a blanket small-argument Taylor estimate fails even away from the quotient seam.
+This is the remaining local PDE gate for the direct channel. The earlier seam/corridor calculations have already removed several false shortcuts: raw seam amplification is not the intrinsic angle, fixed critical packets prevent a blanket small-argument corridor estimate, and a single distinguished packet center is insufficient because PF-325 measures the whole translation orbit.
 
-PF-324 makes the test more discriminating. If suppression of the critical packet is fundamentally a bounded-distance gluing effect, the `r_n->infinity` subsequence is adversarial because the outgoing seam escapes every fixed critical window. If the completed angle nevertheless gains a superlinear seam power there, the mechanism must come from the physical `L/H` projection or genuinely nonlocal finite-pant/common completion rather than from merely placing the packet near a seam.
+The two PF-324 arithmetic boundary regimes remain genuinely discriminating. In the finite-boundary regime the outgoing seam stays a bounded recentered distance from the critical packet; in the escaping-boundary regime it leaves every fixed critical window. If the completed total-energy correlation behaves differently in those regimes, adjacent-prime ordering has survived into the local angle response. If both regimes meet the same endpoint estimate, this packet route is suppressed despite the pre-angle critical energy.
 
-PF-325 removes the need to return to mode-by-mode bookkeeping if the strong operator-norm target fails: the weak endpoint is exactly the integrated packet-response profile. PF-326 then removes a coordinate loophole in that physical test. The seam normalizer changes the profile by an explicit bounded fixed-band multiplier after common scaling, but preserves physical translation and fixed-scale localization. A downstream disappearance of the critical response therefore has to be produced by the pant-side geometry/completion rather than by cuff-scale delocalization at the seam-normalization step.
-
-A difference between the PF-324 finite-boundary and escaping-boundary response profiles would be a concrete way for adjacent prime ordering to survive into the completed local response. PF-324--PF-326 do not establish such a difference; they isolate the arithmetic parameter and provide a coordinate-honest packet family on which to test it.
+PF-329 makes the next step more precise and prevents a false obstruction. The `w_n^{-1}` versus `w_n` parity factors from PF-328 cannot be carried as standalone response amplitudes through the intrinsic angle: the same pant energy enters the completed diagonal denominator, and the correction is generally operator-valued rather than scalar.
 
 ## Decisive test
 
-Use PF-326's seam-normalized pullback of the PF-325 translation orbit as the boundary input. Equivalently, in each seam face-parity channel use the exact Fourier weights
+Start from the PF-325 unit packet orbit `\psi_{n,t}` in the normalized physical-low angle coordinate. For the shear-deleted local pant form, compute or bound
 
 \[
-q_{n,\pm}(\xi_{n,k})^{-1/2},
+A_n^{-1/2}\psi_{n,t},
+\qquad
+A_n=I+(K_n)_{LL},
 \]
 
-whose raw-`L^2` normalized fixed-band shapes converge to `(1+xi^2)^(-1/2)` and `1`. Keep their common seam-scale factors when computing the intrinsic response magnitude; PF-326 removes only the localization ambiguity, not those energetic factors.
-
-Propagate this weighted packet through the **actual shear-deleted one-cusp pant**, retain the finite-pant quotient, apply the physical `L/H` mixed corner and the common positive completion used by PF-320, and record
+on the PF-328 critical interval. Equivalently, work directly in raw coordinates with
 
 \[
-a_{n,r}(t):=\|(T_{0,n}^{(r)})^*\psi_{n,t}\|.
+g_{n,t}=Q_{L,n}^{-1/2}A_n^{-1/2}\psi_{n,t}
 \]
 
-Run the same completed calculation on both arithmetic subsequences singled out by PF-324: the finite-boundary regime `r_n->0`, where `D_{n,lambda}->log(1/lambda)`, and the escaping-boundary regime `r_n->infinity`, where `D_{n,lambda}->infinity`.
-
-The two endpoint routes have distinct exact tests. If
+and the exact PF-329 variational response
 
 \[
-\sup_t a_{n,r}(t)=O(s_n^{1+\varepsilon}),
+\|(T_{0,n}^{(r)})^*\psi_{n,t}\|
+=
+\sup_{0\ne h\in H}
+\frac{|\Lambda_{HL,n}[g_{n,t},h]|}
+{\langle h,(Q_{H,n}+\Lambda_{HH,n})h\rangle^{1/2}}.
 \]
 
-PF-321 closes the reference channel strongly. If that fails, compute
+Run this completed calculation on both PF-324 regimes: `r_n\to0`, where the outgoing seam remains at finite recentered distance, and `r_n\to\infty`, where it escapes. The strongest useful outcomes are:
 
-\[
-\int_0^{\ell_n}a_{n,r}(t)^2dt.
-\]
+- a uniform `O(s_n^{1+\varepsilon})` bound, which closes the reference channel by PF-321;
+- the integrated PF-325 budget `O((1+\log P_n)/P_n^2)`, which closes it at the PF-318 endpoint;
+- or a verified positive-measure lower response after **total diagonal normalization**, which would genuinely falsify that local Hilbert--Schmidt route.
 
-PF-325 and PF-318 close the weak endpoint exactly when this is `O((1+log P_n)/P_n^2)` up to fixed cutoff/component constants. Conversely, if even one unit normalized packet has
-
-\[
-a_{n,r}(t)\gg\frac{\sqrt{1+\log P_n}}{P_n},
-\]
-
-then the PF-318 Hilbert--Schmidt fallback fails for that local block. A fixed-width set of such centers gives the same obstruction directly through the integrated identity.
-
-The first especially useful discriminator remains the escaping-boundary regime. Determine whether the completed response near the PF-323 critical center is suppressed after the outgoing seam escapes every fixed critical window. PF-326 shows that seam normalization itself has not destroyed that fixed-window probe. Do not stop at one center if its response is small: the positive PF-318 route requires the full integrated packet-position budget.
-
-A negative conclusion must still be expressed at the **intrinsic angle** level. Large compactified `A`-form energy, raw seam-block amplification, or the PF-215 constant mode are not sufficient witnesses.
+A lower bound for `Q^{-1/2}\psi_{n,t}` before `A_n^{-1/2}`, including PF-328's restored parity scales, is not a decisive test. To use the PF-328 critical family positively, prove that the completed diagonal preconditioner preserves enough localization/critical content on a positive-measure set. To use it negatively, show that this preconditioner or the raw high-energy correlation suppresses the family strongly enough to meet the integrated endpoint budget.
 
 ## Evidence boundary
 
-PF-321 is an implication theorem, not the missing local PDE estimate. PF-233 supplies exact transfer structure but does not make its unbounded transverse operator uniformly small on the growing physical-low space. PF-322 proves that such uniform smallness is false at the cell-energy level; PF-323 moves the witness into the cuff interior; PF-324 proves that its recentered seam distance has non-universal arithmetic subsequences.
+The direct-angle endpoint is still open. PF-325 gives an exact packet integral, and PF-326--PF-328 give exact pre-angle localization/energy information, but none controls the completed low diagonal inverse square root. PF-329 proves only the exact representation identity and identifies the correct total-energy-normalized raw trace; it does not show that `A_n^{-1/2}` preserves or destroys the critical packet.
 
-PF-325 is an exact Hilbert--Schmidt/packet-position reduction. PF-326 resolves one narrow coordinate issue left open there: on a fixed physical band, seam-energy pullback preserves the translation orbit and a uniform positive fraction of raw-trace mass remains in a fixed physical window. It does **not** preserve the raw Dirichlet packet exactly, does not transport PF-322's exact compactified-energy constant, and does not estimate the common seam-scale amplitude factors in the final intrinsic response.
+The seam form still matters as the raw positive summand `Q`; PF-329 does not remove the geometry. It removes only coordinate-amplitude reasoning that treats `Q^{-1/2}` or PF-328's common parity factors as if they were already intrinsic-angle amplitudes.
 
-Most importantly, PF-326 does not control the one-cusp-pant crossing, physical `L/H` projection, or common positive completion. Those operations may still suppress, redistribute, or erase the critical component, including on the escaping-boundary subsequence. Conversely, no current finding proves that they do. The superlinear angle estimate and the PF-318/PF-325 integrated Hilbert--Schmidt fallback remain open.
-
-PF-320 controls only the difference between the actual sheared and shear-deleted local angles at the established reciprocal-prime cost. It does not transfer PF-233's formal quadratic cancellation through the reference problem. PF-324's gap-ratio dependence is geometric input to this test, not yet a spectral invariant or RH-relevant arithmetic recovery theorem.
-
-The clue remains `accepted`, not `resolved`.
+No current finding proves a superlinear local angle gain, the PF-318 Hilbert--Schmidt budget, a positive completed-angle lower bound, scattering/determinant control, a zeta-zero correspondence, the critical line, or RH.
 
 ## Research disposition
 
 Outcome: `accepted`.
 
-PF-322--PF-324 complete the unprojected adversarial calibration, PF-325 converts the weak endpoint into an exact physical-position packet integral, and PF-326 removes seam-normalization-induced cuff-scale delocalization as an escape route. The surviving target is now strictly pant-side: compute the **completed physical projected intrinsic-angle response profile** for the explicit seam-weighted packet family, separately on the finite-boundary and escaping-boundary prime-gap-ratio subsequences. Any fixed superlinear seam gain closes the reference channel by PF-321; otherwise the integrated squared packet response must meet the PF-318 reciprocal-prime Hilbert--Schmidt budget.
+The clue remains live, but its decisive packet input is now sharper. The next calculation is not to propagate the seam-only PF-328 packet with its raw parity scale. It is to understand the **completed total-energy packet** `Q^{-1/2}A_n^{-1/2}\psi_{n,t}` — or the equivalent raw canonical correlation — across the actual one-cusp pant in both arithmetic boundary regimes.
