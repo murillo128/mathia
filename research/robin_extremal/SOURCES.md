@@ -34,6 +34,11 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - Chiara Bellotti, *A new zero-density estimate for zeta(s) and the error term in the prime number theorem*, Bulletin of the London Mathematical Society **58** (2026), Paper e70442, DOI `10.1112/blms.70442`, arXiv:2508.02041. Role: current sharp treatment of the Korobov--Vinogradov zero-free-region error term in the prime number theorem. `RE-015` uses only the standard unconditional consequence that, for some absolute `a>0`, `psi(x)-x << x exp(-a (log x)^(3/5) (log log x)^(-1/5))`; it transfers this elementarily to `theta` and does not depend on the best constant.
 
+## Short-interval exceptional sets and sparse starts
+
+- Danilo Bazzanella, *Prime Numbers in Intervals Starting at a Fixed Power of the Integers*, Journal of the Australian Mathematical Society **87** (2009), 83-99, DOI `10.1017/S1446788709000020`. Role: primary sparse-start prior-art boundary for `RE-096`--`RE-097`. Lemma 5 separates a direct explicit-formula/Kusmin--Landau branch from a small-`H` branch that packs sparse exceptions into the ambient PNT exceptional set; the paper's displayed quadratic value `c(2)=13/32` is derived through the latter ambient-packing mechanism, not through quadratic phase cancellation.
+- Ayla Gafni and Terence Tao, *On the number of exceptional intervals to the prime number theorem in short intervals*, Essential Number Theory **5** (2026), 221-241, DOI `10.2140/ent.2026.5.221`, arXiv:2505.24017. Role: current exceptional-set exponent framework used in `RE-094` and prior-art boundary for `RE-097`. Equation (1.6) records the standard packet conversion from ambient exceptional-set exponent `mu(vartheta)` to a count `N^(mu(vartheta)-vartheta+o(1))` of large prime gaps, confirming that the `m-vartheta` loss is generic exceptional-set packing rather than CA-specific source information.
+
 ## Mertens-product boundaries
 
 - Harold G. Diamond and Janos Pintz, *Oscillation of Mertens' product formula*, Journal de Theorie des Nombres de Bordeaux **21** (2009), no. 3, 523-533, DOI `10.5802/jtnb.687`. Role: primary boundary showing that the ordinary Mertens prime product changes sign in both directions. `RE-008` therefore does not interpret the sign of the unmodified Mertens-product error as a new Robin mechanism.
