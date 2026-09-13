@@ -1,27 +1,25 @@
-# MI-014 — Complete single-source torus spectralizations are gauge/permutation quotients
+# MI-014 — Complete-domain spectralization quotients the source; truncation leaves only window placement
 
-**Evidence level:** exact for fixed source-independent positive/Hermitian wrappers through [PC-278](../../findings/PC-278-single-source-dual-window-phase-spectra-are-diagonal-unitary-pure-gauge.md), and for arbitrary anchored pointwise nonlinearities on the complete coefficient torus through [PC-279](../../findings/PC-279-full-dual-torus-anchor-nonlinearities-are-source-blind-fourier-data.md). Truncated non-invariant windows, genuine flux, cross-source/cross-level couplings and other constructions outside these equivalences remain open.
+**Evidence level:** exact for fixed source-independent positive/Hermitian wrappers through [PC-278](../../findings/PC-278-single-source-dual-window-phase-spectra-are-diagonal-unitary-pure-gauge.md), complete-torus anchored nonlinearities through [PC-279](../../findings/PC-279-full-dual-torus-anchor-nonlinearities-are-source-blind-fourier-data.md), and the truncated-window classification through [PC-280](../../findings/PC-280-window-source-mismatch-is-a-cyclic-convolution-finite-section.md). Whether the surviving finite-section placement carries an arithmetic discriminator remains open.
 
-For a fixed coefficient mask, the single-source dual phase field
+For a fixed coefficient mask, the single-source dual phase field factorizes as `D_p A E_r`, so singular values, Schatten norms, rank and Gram spectrum are source-independent. PC-279 shows that arbitrary anchored pointwise nonlinearities remain equally blind on the complete coefficient torus: multiplication by `p,r` only permutes rows and columns, leaving a one-dimensional Fourier-magnitude spectrum.
 
-`W_(p,r)(h,k)=A_(h,k) zeta_q^(hp+kr)`
+PC-280 identifies exactly what survives when the coefficient domain is truncated. For a symmetric window `H_B` and profile `f`,
 
-factorizes as `D_p A E_r`. Hence every singular value, Schatten norm, rank and Gram spectrum is exactly source-independent. The analogous Hermitian coefficient-graph phase is a discrete gradient, so the source modulation is a unitary conjugacy with zero cycle holonomy.
+`M_(p,r;B)^f(h,k)=f(ph+rk)`
 
-PC-279 shows that anchoring/nonlinearity alone does not escape once both coefficient axes are complete. For any function `f: Z/qZ -> C`, including discontinuous source-selected thresholds,
+is, up to row/column permutation, the two-sided finite section
 
-`M_(p,r)^f(h,k)=f(hp+kr)`
+`E_(pH_B) C_f E_(rH_B)^*`
 
-is obtained from `M_(1,1)^f` by permuting rows by multiplication with `p` and columns by multiplication with `r`. Its entire singular spectrum is
+of one **source-independent cyclic convolution operator** `C_f`. After Fourier diagonalization it is unitarily equivalent to
 
-`{|f_hat(j)| : j mod q}`.
+`P_(p,B) D_f P_(r,B)`,
 
-Thus a genuinely source-dependent entrywise threshold can still have exactly universal positive spectral data. Likewise a full translation-invariant Hermitian kernel depending only on `(u-v).(p,r)` has only the Fourier modes parallel to the source direction as nonzero modes, with a source-independent eigenvalue multiset.
+where `D_f` depends only on the profile and the source enters only through the two rank-`N` Dirichlet-kernel projections associated with the dilated windows.
 
-The two collapses are different but complementary. PC-278 removes phase modulation by **unitary gauge** when the mask/kernel is fixed. PC-279 removes arbitrary anchored scalar profiles by **index permutation** when the coefficient torus is complete. Merely putting a nonlinear selector between the raw phase field and a positive spectrum does not create a Prime-Circle carrier if the complete domain still lets source multiplication relabel everything.
+This sharpens the surviving carrier. Truncation does not create a new source-dependent symbol or two-dimensional phase operator. It prevents the multiplicative source action from being quotiented out because the distinguished additive window is not invariant. The only source information left in this class is therefore **where the two source-dilated windows sit around a fixed convolution/Fourier multiplier**.
 
-The surviving finite-window near-resonance mechanism has a precise source of information: a truncated box such as `|h|,|k|<=B<q/2` is not preserved by multiplication by `p,r`. Restriction converts what was a pure relabeling on the full torus into a source-dependent boundary/intersection problem. The potential carrier is therefore the **mismatch between the distinguished window and the source permutation**, not the local profile `f` itself.
+A viable positive spectral mechanism in this family must show that the concentration spectrum of `P_(p,B) D_f P_(r,B)` retains a source-specific residual after the strongest source-only matched control. Pure phases and the complete-window limit remain exact controls. Genuine coefficient-graph flux, cross-source/cross-level couplings and other constructions not reducible to this finite-section placement are separate escape classes.
 
-**Research consequence.** Before spectralizing a richer single-source observable, identify the symmetry that remains on its full domain. To escape the current no-go family one must break complete-domain relabeling or gauge before the invariant is taken—for example through a source-sensitive non-invariant window, genuine cycle flux, or a relative/cross-level construction with no single relabeling that removes all source data—and then audit that residual against the strongest source-only control.
-
-**Boundary.** PC-279 does not close truncated windows or the intermediate scalar rational-microscopic regime. It also does not say every nonlinear or nonnormal construction is source-blind. It closes the complete-torus class whose source dependence factors only through the scalar phase coordinate `hp+kr`.
+**Boundary.** PC-280 does not make the truncated spectrum source-blind and does not solve the intermediate rational-microscopic scalar regime. It classifies the retained information channel so future work can attack window/source mismatch directly instead of adding more local nonlinear structure that only changes `D_f`.

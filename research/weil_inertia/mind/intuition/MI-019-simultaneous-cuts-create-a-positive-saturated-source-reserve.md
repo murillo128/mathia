@@ -1,37 +1,23 @@
-# MI-019 — Simultaneous cuts have complementary sharp mass and cross-cut shift reserves
+# MI-019 — Sharp multi-cut reserves exhaust scalar-profile/support-only leverage before the archimedean budget
 
-**Evidence level:** exact at a hypothetical attained first unrestricted Suzuki crossing through [WI-274](../../findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md), [WI-275](../../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md), and [WI-276](../../findings/WI-276-cross-cut-energy-obeys-a-sharp-nilpotent-shift-reserve.md). The total reserves are sign-independent. The prime-overlap corollary remains conditional on a one-signed null mode, and no theorem yet forces the combined reserve above the positive archimedean budget.
+**Evidence level:** exact at a hypothetical attained first unrestricted Suzuki crossing through [WI-274](../../findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md), [WI-275](../../findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md), [WI-276](../../findings/WI-276-cross-cut-energy-obeys-a-sharp-nilpotent-shift-reserve.md), [WI-277](../../findings/WI-277-commensurate-cross-cut-shifts-obey-a-sharp-finite-toeplitz-reserve.md), and the scalar-profile countermodeled barrier [WI-278](../../findings/WI-278-certified-profile-data-do-not-force-the-source-reserve-past-the-archimedean-budget.md). Prime-overlap remains conditional on a one-signed null mode.
 
-Single-cut localization prices each cut separately and hits a sharp Carleman wall as an internal gap closes. WI-274 changes the order of operations: impose firstness for all sharp cuts and integrate the family before estimating the source. A source pair at lag `h` crosses a set of cuts of length exactly `h`, leaving a positive saturated source reserve even though the endpoint eigenvalue is zero.
+WI-275 exhausts complementary mass information through the sharp harmonic reserve
 
-WI-275 computes the sharp envelope of the complementary **mass-only** information. With
+`R_harm(a)=2 integral_0^a lambda_r lambda_(a-r)/(lambda_r+lambda_(a-r)) dr`.
 
-`Q_t >= A_t M_L(t)`, `Q_t >= B_t M_R(t)`, `M_L+M_R=1`,
+WI-276 retains one cross-cut correlation and obtains a sharp compact-support/nilpotent-shift reserve. WI-277 then consumes **several commensurate shifts jointly**. For nonnegative weights `alpha_k`, base radius `r`, and the finite shift matrix
 
-where `A_t=lambda_((a+t)/2)` and `B_t=lambda_((a-t)/2)`, one gets
+`H_N(alpha)=1/2 sum_k alpha_k (J_N^k+(J_N^*)^k)`,
 
-`Q_t >= A_t B_t/(A_t+B_t)`
+one has
 
-and hence
+`S_v >= (sum_k alpha_k k r lambda_(kr))/(sum_k alpha_k + rho_N(alpha))`,
 
-`S_v >= R_harm(a) := 2 integral_0^a lambda_r lambda_(a-r)/(lambda_r+lambda_(a-r)) dr`.
+where `rho_N(alpha)` is the top eigenvalue of `H_N(alpha)`. The correlation coefficient is sharp even under the restriction to nonnegative compactly supported energy profiles. Several shifts can beat both individually sharp one-shift bounds because one profile must realize all correlations simultaneously.
 
-The equality mass profile is monotone, so CDF monotonicity cannot improve this envelope. The complementary-mass relaxation is exhausted.
+WI-278 then asks whether the currently certified scalar function `a -> lambda_a` is already strong enough to make these sharp reserves cross the positive archimedean budget. It is not. An explicit continuous decreasing counterprofile can satisfy the known small-aperture asymptotic, the certified compact-window data and published upper bounds while keeping **every commensurate Toeplitz reserve and the harmonic reserve below `K_+`**.
 
-WI-276 then retains information that WI-275 discards: the same null vector couples **different cuts**. Put `f(t)=sqrt(Q_t)`. Splitting the null mode at `t` and `t+2r` gives
+So the scalar-profile route is now logically exhausted at the present information level. Better optimization of the same `lambda_a` data, another complementary-mass rearrangement, or another finite commensurate support-only correlation inequality cannot force the desired crossing. The next gain must use information absent from the counterprofile: the exact Suzuki null/source equation, PSD signed-source multiplier structure, actual null-mode shape/nodal constraints, a source-specific noncommensurate compatibility relation, or archimedean sign geometry.
 
-`|F_v(r)-S_v| <= integral f(t) f(t+2r) dt`.
-
-Because `f` is supported in `[-a,a]`, translation by `2r` is a nilpotent contraction of order `N=ceil(a/r)`. The sharp Haagerup--de la Harpe numerical-radius inequality yields
-
-`S_v >= R_shift(r) := r lambda_r/(1+cos(pi/(ceil(a/r)+1)))`.
-
-Therefore the current sign-free reserve is
-
-`S_v >= max(R_harm(a), sup_(0<r<a) R_shift(r))`.
-
-The shift coefficient is itself sharp if one retains only `Q>=0` and compact support. This is a second relaxation boundary: generic one-shift decorrelation cannot improve WI-276. Any further reserve must exploit information absent from both sharp relaxations, such as the exact Weil-source shape of `Q_t`, compatibility among several shifts, regularity/nodal constraints of the actual first null mode, or a finite compression of the PSD signed-source multiplier family.
-
-On a one-signed branch the weighted prime overlap obeys `P_v >= S_v-K_+`. The immediate scalar test is therefore the **maximum** of the harmonic and shift reserves against `K_+`, not either bound in isolation. If rigorous constraints on `r -> lambda_r` force this maximum above `K_+`, complete prime screening is impossible on that branch. If an admissible profile keeps both below the budget, the next theorem must use source/eigenfunction shape rather than another universal relaxation.
-
-**Boundary.** Neither reserve proves that the first null mode is one-signed or forces prime overlap on a sign-changing branch. Their abstract sharpness extremizers need not be simultaneously compatible with Suzuki's exact null equation; that possible incompatibility is now one of the main remaining sources of quantitative gain.
+**Boundary.** WI-278 is a logical countermodel, not an alternative Weil operator and not evidence that the actual source fails the budget test. WI-277's sharpness is for arbitrary nonnegative compact-support profiles; the actual null-mode energy may satisfy additional constraints capable of strengthening the reserve.

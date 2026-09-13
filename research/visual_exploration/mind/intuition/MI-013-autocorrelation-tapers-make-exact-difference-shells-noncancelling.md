@@ -1,31 +1,23 @@
-# MI-013 — Fixed-scale autocorrelation shell energy is dilute even when one-sided crowding is not controlled
+# MI-013 — Autocorrelation shell energy remains dilute through a growing collision window
 
-**Evidence level:** exact for the autocorrelation-taper subclass through [VIS-203](../../findings/VIS-203-autocorrelation-tapers-make-exact-difference-shells-noncancelling.md), VIS-204, [VIS-205](../../findings/VIS-205-dangerous-shell-energy-pair-crowding.md), and [VIS-206](../../findings/VIS-206-fixed-scale-pair-crowding-bounded-degree.md). The conclusion is for fixed normalized collision width `A` in the strictly subcritical regime; growing `A(y)`, the full sinc-weighted intermediate shell range, and sign-changing tapers remain open.
+**Evidence level:** exact for the autocorrelation-taper subclass through [VIS-203](../../findings/VIS-203-autocorrelation-tapers-make-exact-difference-shells-noncancelling.md), VIS-204--VIS-206, and the growing-window extension [VIS-207](../../findings/VIS-207-growing-window-pair-crowding-bound.md). The limiting window, prime/prime cancellation scale and full sinc-weighted intermediate-shell sum remain open.
 
-For a shifted autocorrelation taper, the centered Fourier kernel has a common linear phase and nonnegative amplitude. Prime-ratio coefficients can be written `c_lambda=e^(iH lambda/2)b_lambda` with `b_lambda>=0`, so exact-difference shell amplitudes are nonnegative and multiplicity reinforces rather than cancels.
+For a shifted autocorrelation taper the frequency coefficients share a linear phase, so exact-difference shell amplitudes are nonnegative. With coefficient-energy probability `nu` and normalized collision width `A`, VIS-205 reduces normalized dangerous shell energy to the two-sample close-pair probability `Q(A)` up to a factor four as long as the shell remains in the noncancelling determinant regime.
 
-VIS-204 bounds every dangerous fixed-scale exact-shell multiplicity by four. VIS-205 then identifies the correct normalized resource: with `R=sum b_lambda^2`, `nu(lambda)=b_lambda^2/R`, and
+VIS-206 proved `Q(A)->0` for fixed `A`. VIS-207 shows the mechanism is genuinely uniform over a widening family. If `0<=alpha<1/2` and
 
-`Q(A)=sum_(lambda!=mu, 0<|lambda-mu|<=A b_y) nu(lambda)nu(mu)`,
+`H A^(2+4 alpha) (log y)^2 / y^2 -> 0`,
 
-the dangerous exact-shell energy satisfies
+then every non-isolated frequency uses primes `gg y/A`, the close-pair graph has degree `O(A^2)`, each dangerous vertex has
 
-`Q(A) <= S(A)/R^2 <= 4 Q(A)`.
+`nu(lambda) << H A^(4 alpha) (log y)^2/y^2`,
 
-This is strictly weaker than the one-sided nearest-neighbor mass `C(A)`. VIS-206 proves that the distinction is enough to cross the old fixed-scale obstruction. For fixed `A`, every dangerous prime-ratio frequency lies at top prime scale and has only `O_A(1)` dangerous neighbors: fixing one ratio turns each bounded-determinant relation into a one-dimensional Diophantine progression whose step is already comparable with the full prime box.
+and therefore
 
-At the same time each dangerous vertex has
+`Q_(y,H)(A) << H A^(2+4 alpha) (log y)^2/y^2 -> 0`.
 
-`nu(lambda) <<_(A,alpha,v) H (log y)^2/y^2`.
+The same condition forces `A=o(y/log y)`, so one-cancellation prime/prime shells stay outside the window and the exact-shell multiplicity comparison remains valid. For `alpha=0`, the positive shell energy is negligible for every `A=o(y/(sqrt(H) log y))`.
 
-Under `H log y/y -> 0`, this tends to zero. Bounded local degree therefore gives
+This moves the real boundary substantially beyond “fixed normalized width.” The elementary local-degree argument fails only when widening has made either determinant multiplicity or top-scale coefficient mass large enough that the displayed product is no longer small, or when the window approaches the prime/prime cancellation scale. The remaining positive-taper problem is to control the limiting/intermediate region with its actual sinc weights.
 
-`Q_(y,H)(A) << H (log y)^2/y^2 -> 0`,
-
-and hence `S_(y,H)(A)=o(R_v(y,H)^2)` for every fixed `A`.
-
-So the square-root-log barrier in VIS-202 is not a barrier for the weaker two-sample shell resource. It belongs to the stronger one-sided crowding quantity and the proof architecture used to control it. **At fixed normalized scale, the actual positive shell energy is already dilute because no dangerous vertex can combine large normalized mass with large local degree.**
-
-The remaining positive-taper problem begins when the collision window widens. If `A=A(y)` grows, the determinant difference range, lower bound on participating primes and local degree can all deteriorate. The next theorem should quantify that deterioration far enough to sum the sinc-weighted intermediate shells up to the dephasing scale, or identify where a genuinely signed/complex taper becomes necessary.
-
-**Boundary.** VIS-206 proves neither `C(A)->0` nor `D_v=o(y^2)`, and does not contradict the VIS-202 method threshold. It gives no uniform bound for growing `A(y)` and no complete finite-start theorem below the coarse Hilbert horizon.
+**Boundary.** VIS-207 gives an upper regime, not the sharp transition. It does not control the full intermediate-shell sum, does not prove one-sided crowding small, and says nothing about sign-changing/complex tapers beyond the autocorrelation subclass.

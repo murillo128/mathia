@@ -14,20 +14,18 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Control growing-scale shell crowding or introduce a genuinely signed dephasing resource
+## Control the limiting collision window or the full sinc-weighted shell tail
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`.
 
-VIS-192--VIS-202 reduce the scalar cutoff/taper architecture to the square-root-log threshold only when one pays the stronger one-sided nearest-neighbor resource. VIS-203--VIS-205 isolate a weaker quantity for autocorrelation tapers: the normalized dangerous exact-shell energy is comparable, within factor four, to the two-sample close-pair probability `Q(A)` under the actual coefficient-energy measure.
+VIS-203--VIS-206 identify positive autocorrelation shell energy with a two-sample close-pair probability and prove fixed normalized windows dilute. VIS-207 extends that conclusion to growing width: whenever
 
-[VIS-206](../findings/VIS-206-fixed-scale-pair-crowding-bounded-degree.md) closes that fixed normalized-scale target throughout the strictly subcritical regime `H log y / y -> 0`. For every fixed `A`, the prime-ratio close-pair graph at scale `A b_y` has uniformly bounded local degree, while every participating frequency has normalized mass
+`H A^(2+4 alpha) (log y)^2 / y^2 -> 0`,
 
-`nu(lambda) << H (log y)^2 / y^2 -> 0`.
+the close-pair graph has degree `O(A^2)`, dangerous vertex mass is `O(H A^(4 alpha)(log y)^2/y^2)`, and both close-pair probability and normalized exact-shell energy vanish. For `alpha=0`, this includes `A=o(y/(sqrt(H)log y))`.
 
-Therefore `Q_(y,H)(A)->0`, and for autocorrelation tapers the corresponding exact-shell energy is `o(R_v^2)`. No four-prime sieve or one-sided crowding theorem is needed at fixed `A`.
+The live positive-shell boundary is therefore later than previously thought. Determine the transition when the above product is no longer small, or control the complete sinc-weighted intermediate region up to the dephasing/prime-cancellation scale. If that positive route fails, change the sign/interference class rather than reopening fixed or subcritical growing windows already closed by local-degree dilution.
 
-The live positive-shell boundary has moved outward in scale. Determine what happens when the normalized collision width `A=A(y)` grows, or sum the sinc-weighted shell contribution from the intermediate region between the `y^-2` determinant scale and the eventual dephasing scale. If that positive route fails, then change the sign/interference class rather than reopening a fixed-`A` problem already closed by bounded local degree.
+## Keep method thresholds, pair-mass thresholds and the true shell sum separate
 
-## Keep method thresholds, fixed-scale pair mass and widening-window behavior separate
-
-The VIS-202 square-root-log boundary is a limitation of the stronger `C(A)`/four-form majorant, not a lower bound for the two-sample shell energy. VIS-206 proves the distinction is real in the prime-ratio weights: fixed-`A` `Q` vanishes even without proving the stronger nearest-neighbor mass small. Future work should price how degree, top-scale localization and coefficient mass deteriorate when `A` grows, because that is the first place the fixed-scale argument genuinely loses uniformity.
+The VIS-202 square-root-log boundary is a limitation of a stronger one-sided/four-form majorant. VIS-206--VIS-207 show that the actual two-sample positive shell resource stays small well beyond that method threshold. A future barrier should be stated for the sinc-weighted shell observable itself, not inferred from failure of a stronger auxiliary crowding norm.

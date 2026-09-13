@@ -2,18 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Separate the positive-order transport problem from the source-specific ground-sign problem
+## Separate positive-order transport from the source-specific ground-sign theorem
 
 **Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
 
-PL-280--PL-284 give the aperture ledger, terminating fixed-aperture positivity certificate, and a conditional endpoint at `a=0.8` with a simple isolated ground state. PL-285--PL-292 separate generic form/graph regularity from the much stronger all-log regularity of actual source-static eigenstates, but the optimized transport modulus remains sub-Hölder.
+PL-280--PL-292 give the aperture ledger, a conditional isolated ground state, generic regularity ceilings and all-log subpower transport for actual source-static eigenstates. PL-293 shows that the universal zero-exterior logarithmic-Laplacian boundary channel blocks `H^(1/2)` and above when its natural `ell(delta)^(1/2)` amplitude survives. PL-294 ends ordinary Beurling--Deny positivity before the first prime translation, and PL-295 shows that subcritical Sobolev continuity does not protect sign while eventual positivity strong enough to help already contains the missing sign theorem.
 
-PL-293 shows that the universal Dirichlet logarithmic-Laplacian boundary channel blocks `H^(1/2)` and above when its natural `ell(t)^(1/2)` amplitude survives. PL-294 shows that ordinary Beurling--Deny positivity preservation ends at the archimedean aperture `a_BD`, before the first prime-power translation.
+The **regularity** route remains useful only for transport: prove source-specific suppression of the universal boundary channel strongly enough to gain some `H^s`, `0<s<1/2`, or derive a non-absolute translation identity by another method. The **sign** route must use additional arithmetic eigen-equation structure rather than continuity, parity, simplicity, a gap, or delayed positivity.
 
-[PL-295](../findings/PL-295-hlog-hhalf-sign-cone-eventual-positivity-obstruction.md) now separates the two residuals more sharply. Even if the selected eigenbranch were upgraded to continuous `H^s` control for any `s<=1/2`, topology alone could not propagate fixed sign: arbitrarily small parity-preserving boundary perturbations can flip sign. And eventual/asymptotic semigroup positivity is circular for this purpose, because with a simple gapped ground state it forces positivity of the limiting ground projection and therefore already contains the missing sign theorem.
+## Do not use the Volterra ball formula to bypass the boundary obstruction
 
-The **regularity** route remains useful only for transport: prove source-specific suppression of the universal boundary channel strongly enough to gain some `H^s`, `0<s<1/2`, or derive a non-absolute translation identity by another method. The **sign** route must use additional arithmetic eigen-equation structure—such as a boundary-weighted lower law, a source-specific maximum/oscillation principle, or an absolute-value defect—not merely continuity, parity, simplicity, a gap, or delayed positivity.
+PL-296 shows that a recent explicit Volterra candidate for the zero-exterior logarithmic-Laplacian torsion problem has boundary order `ell(delta)`, incompatible on sufficiently small balls with the sharp two-sided `ell(delta)^(1/2)` torsion theorem under the same operator normalization. Its semigroup derivation also mixes the indefinite whole-space multiplier with the restricted Dirichlet inverse.
 
-## Keep ambient topology, translation regularity and order structure separate
+That explicit inverse route is therefore closed as a shortcut around PL-293. A useful boundary improvement must come from the **actual localized-Weil source/eigen-equation**, not from replacing the audited zero-exterior boundary law with the Volterra profile.
 
-`H^log`/subcritical Sobolev control measures closeness, not membership in the positive cone. A spectral gap measures isolation, not order. Failure of Beurling--Deny positivity does not imply sign change, while eventual positivity strong enough to matter implies the desired ground sign. Future arguments should state explicitly whether they buy a translation modulus or a sign theorem; one no longer substitutes for the other.
+## Keep ambient topology, translation regularity, order structure and operator model separate
+
+`H^log`/subcritical Sobolev control measures closeness, not cone membership. A spectral gap measures isolation, not order. Failure of Beurling--Deny positivity does not imply sign change, and an inconsistent explicit inverse formula is not evidence that the generic boundary scale can be improved. Future arguments should state exactly which resource they buy and against which operator realization.
