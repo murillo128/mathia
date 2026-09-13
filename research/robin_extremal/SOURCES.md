@@ -26,7 +26,8 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 ## Large-prime-gap mass
 
-- D. R. Heath-Brown, *The Differences Between Consecutive Primes, V*, International Mathematics Research Notices **2021** (22), 17514-17562, DOI `10.1093/imrn/rnz295`, arXiv:1906.09555. Role: load-bearing aggregate large-gap theorem for `RE-089`: for every `epsilon>0`, the total length of consecutive-prime gaps with `p_{n+1}-p_n >= sqrt(p_n)` and `p_n <= x` is `O_epsilon(x^(3/5+epsilon))`. `RE-089` couples this ordinary-prime result to same-depth higher-layer CA chamber adjacency; the source itself contains no adaptive Robin-fan or CA-threshold-measure statement.
+- D. R. Heath-Brown, *The Differences Between Consecutive Primes, V*, International Mathematics Research Notices **2021** (22), 17514-17562, DOI `10.1093/imrn/rnz295`, arXiv:1906.09555. Role: predecessor aggregate square-root-gap mass theorem giving the `3/5+epsilon` exponent later improved by Järviniemi. It remains useful as historical and methodological context but is not the load-bearing exponent for the current same-depth chamber frontier.
+- Olli Järviniemi, *On large differences between consecutive primes*, arXiv:2212.10965v2 (29 December 2022), DOI `10.48550/arXiv.2212.10965`. Role: load-bearing aggregate large-gap theorem for `RE-090`: for every `epsilon>0`, on each dyadic shell `[x,2x]`, the total length of consecutive-prime gaps with `p_{n+1}-p_n >= x^(1/2)` is `O_epsilon(x^(0.57+epsilon))`. `RE-090` couples this ordinary-prime result to same-depth higher-layer CA chamber adjacency and `RE-040` threshold capacity; the source itself contains no adaptive Robin-fan or CA-threshold-measure statement.
 
 ## Prime-number-theorem tail control
 
