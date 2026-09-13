@@ -17,6 +17,7 @@ based_on:
   - research/prime_flute/findings/PF-327-seam-normalized-critical-packet-shapes-retain-compactified-transverse-energy.md
   - research/prime_flute/findings/PF-328-critical-packet-intervals-restore-explicit-seam-parity-scales.md
   - research/prime_flute/findings/PF-329-final-diagonal-normalization-turns-seam-pulled-packets-into-total-energy-unit-traces.md
+  - research/prime_flute/findings/PF-330-completed-low-normalization-rotates-packet-frame-instead-of-damping-total-energy-mass.md
 ---
 
 # Can the shear-deleted local pant angle meet the direct-channel endpoint budget?
@@ -38,15 +39,28 @@ PF-324--PF-328 supply a sharp adversarial packet calibration. Critical fixed-ban
 PF-329 closes an important representation loophole in that calibration. A unit packet `\psi_{n,t}` of the **completed intrinsic angle** does not enter the raw pant as the seam-only trace `Q_{L,n}^{-1/2}\psi_{n,t}`. Its exact raw low trace is
 
 \[
-\boxed{
-g_{n,t}=Q_{L,n}^{-1/2}A_n^{-1/2}\psi_{n,t},}
+\boxed{g_{n,t}=Q_{L,n}^{-1/2}A_n^{-1/2}\psi_{n,t}},
 \qquad
 A_n=I+(K_n)_{LL},
 \]
 
-and this trace has unit total raw low energy. Equivalently, the completed packet response is the canonical correlation of `g_{n,t}` against raw high traces normalized by the full high diagonal energy. The block-diagonal seam congruence itself changes the intrinsic angle only by left/right unitaries.
+and this trace has unit total raw low energy. The block-diagonal seam congruence itself changes the intrinsic angle only by left/right unitaries.
 
-Therefore PF-328's positive-measure family is a valid **pre-angle** obstruction candidate but not yet an angle lower bound. The final low diagonal preconditioner `A_n^{-1/2}` may reshape the packet and need not commute with translations. The remaining direct-channel question is now exactly whether that completed diagonal normalization preserves enough critical structure to obstruct the endpoint, or instead supplies the suppression needed for it.
+PF-330 sharpens what that last diagonal factor can and cannot do. Writing
+
+\[
+U_{L,n}=A_{0,n}^{1/2}Q_{L,n}^{-1/2}A_n^{-1/2},
+\]
+
+one has `U_{L,n}` unitary and
+
+\[
+A_{0,n}^{1/2}g_{n,t}=U_{L,n}\psi_{n,t}.
+\]
+
+Hence the completed packets are still an exact same-density tight frame in the raw **total-energy** Hilbert space. The low diagonal normalization cannot close the PF-318 Hilbert--Schmidt budget merely by damping the total-energy mass of the packet family. What it may destroy is the **physical localization associated with the center `t`**, because the polar unitary `U_{L,n}` need not commute with physical translations.
+
+The remaining direct-channel problem therefore has two distinct forms. An upper-bound proof may estimate the basis-free raw canonical correlation directly. A PF-328 obstruction must additionally prove that the unitary-rotated total-energy frame remains localized enough for the finite-boundary/escaping-boundary geometry to survive.
 
 ## Research question
 
@@ -65,69 +79,73 @@ for some fixed `\varepsilon>0`, or, failing that,
 }
 \]
 
-In the PF-325 packet representation, the second condition is equivalent up to fixed cutoff/component constants to
+In raw total-energy coordinates PF-330 gives the exact finite-section formula
 
 \[
-\int_0^{\ell_n}
-\|(T_{0,n}^{(r)})^*\psi_{n,t}\|^2dt
-\lesssim
-\frac{1+\log P_n}{P_n^2}.
+\boxed{
+\|T_{0,n}^{(r)}\|_{\mathcal S_2}^2
+=\operatorname{Tr}
+\bigl(A_{0,n}^{-1}B_{0,n}C_{0,n}^{-1}B_{0,n}^*\bigr),
+}
 \]
 
-The raw-PDE version of each integrand must use the PF-329 total-energy-unit trace `g_{n,t}`, or the equivalent raw variational correlation, rather than the seam-only packet from PF-326--PF-328.
+and the equivalent PF-325 packet integral over the rotated unit-energy frame. Thus the endpoint can be attacked without first proving pointwise localization of `A_n^{-1/2}\psi_{n,t}`.
+
+For a negative packet obstruction, however, determine whether the polar unitary `U_{L,n}` preserves enough of the PF-328 critical physical localization on a positive-measure family of centers to distinguish the two PF-324 arithmetic boundary regimes.
 
 ## Why it may matter
 
 This is the remaining local PDE gate for the direct channel. The earlier seam/corridor calculations have already removed several false shortcuts: raw seam amplification is not the intrinsic angle, fixed critical packets prevent a blanket small-argument corridor estimate, and a single distinguished packet center is insufficient because PF-325 measures the whole translation orbit.
 
-The two PF-324 arithmetic boundary regimes remain genuinely discriminating. In the finite-boundary regime the outgoing seam stays a bounded recentered distance from the critical packet; in the escaping-boundary regime it leaves every fixed critical window. If the completed total-energy correlation behaves differently in those regimes, adjacent-prime ordering has survived into the local angle response. If both regimes meet the same endpoint estimate, this packet route is suppressed despite the pre-angle critical energy.
+PF-330 removes another false shortcut in the opposite direction. The completed low normalization cannot be credited with an endpoint gain merely because `A_n^{-1/2}\psi_{n,t}` is small in some intermediate coordinate norm: after transport to the raw completed-energy Hilbert space every packet has unit energy and the family remains tight. Endpoint smallness must come from the normalized low/high **correlation**, not loss of low frame mass.
 
-PF-329 makes the next step more precise and prevents a false obstruction. The `w_n^{-1}` versus `w_n` parity factors from PF-328 cannot be carried as standalone response amplitudes through the intrinsic angle: the same pant energy enters the completed diagonal denominator, and the correction is generally operator-valued rather than scalar.
+The two PF-324 arithmetic boundary regimes remain genuinely discriminating only if physical localization survives the polar rotation. In the finite-boundary regime the outgoing seam stays a bounded recentered distance from the critical packet; in the escaping-boundary regime it leaves every fixed critical window. Without a locality theorem for `U_{L,n}`, the parameter `t` remains a valid frame label but need not remain the raw spatial center.
 
 ## Decisive test
 
-Start from the PF-325 unit packet orbit `\psi_{n,t}` in the normalized physical-low angle coordinate. For the shear-deleted local pant form, compute or bound
+There are now two legitimate decisive routes.
+
+For the **upper-bound route**, estimate directly
 
 \[
-A_n^{-1/2}\psi_{n,t},
-\qquad
-A_n=I+(K_n)_{LL},
+T_{0,n}^{(r)}
+=A_{0,n}^{-1/2}B_{0,n}C_{0,n}^{-1/2}
 \]
 
-on the PF-328 critical interval. Equivalently, work directly in raw coordinates with
+or its Hilbert--Schmidt trace
 
 \[
-g_{n,t}=Q_{L,n}^{-1/2}A_n^{-1/2}\psi_{n,t}
+\operatorname{Tr}
+\bigl(A_{0,n}^{-1}B_{0,n}C_{0,n}^{-1}B_{0,n}^*\bigr).
 \]
 
-and the exact PF-329 variational response
+A uniform `O(s_n^{1+\varepsilon})` operator bound closes the reference channel by PF-321; the trace bound `O((1+\log P_n)/P_n^2)` closes it at the PF-318 endpoint. This route does not require recovering a translated raw packet profile.
+
+For the **PF-328 obstruction route**, let `\tau_t` be physical translation on the retained low band and write `\psi_{n,t}=\tau_t\psi_{n,0}`. PF-330 identifies the exact localization defect
 
 \[
-\|(T_{0,n}^{(r)})^*\psi_{n,t}\|
-=
-\sup_{0\ne h\in H}
-\frac{|\Lambda_{HL,n}[g_{n,t},h]|}
-{\langle h,(Q_{H,n}+\Lambda_{HH,n})h\rangle^{1/2}}.
+\boxed{
+U_{L,n}\psi_{n,t}-\tau_tU_{L,n}\psi_{n,0}
+=[U_{L,n},\tau_t]\psi_{n,0}.
+}
 \]
 
-Run this completed calculation on both PF-324 regimes: `r_n\to0`, where the outgoing seam remains at finite recentered distance, and `r_n\to\infty`, where it escapes. The strongest useful outcomes are:
+Prove a commutator/quasilocality estimate, or an equivalent concentration statement for the raw total-energy packet `g_{n,t}`, on a positive-measure subset of the PF-328 critical interval. Then evaluate the completed raw correlation separately in the `r_n\to0` and `r_n\to\infty` regimes. A verified positive-measure lower response after this total-energy normalization would genuinely falsify the local Hilbert--Schmidt route.
 
-- a uniform `O(s_n^{1+\varepsilon})` bound, which closes the reference channel by PF-321;
-- the integrated PF-325 budget `O((1+\log P_n)/P_n^2)`, which closes it at the PF-318 endpoint;
-- or a verified positive-measure lower response after **total diagonal normalization**, which would genuinely falsify that local Hilbert--Schmidt route.
-
-A lower bound for `Q^{-1/2}\psi_{n,t}` before `A_n^{-1/2}`, including PF-328's restored parity scales, is not a decisive test. To use the PF-328 critical family positively, prove that the completed diagonal preconditioner preserves enough localization/critical content on a positive-measure set. To use it negatively, show that this preconditioner or the raw high-energy correlation suppresses the family strongly enough to meet the integrated endpoint budget.
+A lower bound for `Q^{-1/2}\psi_{n,t}` before total-energy normalization, a scalar lower bound for `\|A_n^{-1/2}\psi_{n,t}\|`, or PF-328's restored parity scales alone is not decisive. The obstruction needs **spatial survival through the polar unitary**, while the positive endpoint route needs only the normalized correlation estimate.
 
 ## Evidence boundary
 
-The direct-angle endpoint is still open. PF-325 gives an exact packet integral, and PF-326--PF-328 give exact pre-angle localization/energy information, but none controls the completed low diagonal inverse square root. PF-329 proves only the exact representation identity and identifies the correct total-energy-normalized raw trace; it does not show that `A_n^{-1/2}` preserves or destroys the critical packet.
+The direct-angle endpoint is still open. PF-325 gives an exact packet integral, PF-326--PF-328 give exact pre-angle localization/energy information, PF-329 identifies the correct total-energy-unit raw trace, and PF-330 proves that these completed packets form a unitary-rotated tight frame in raw total-energy coordinates.
 
-The seam form still matters as the raw positive summand `Q`; PF-329 does not remove the geometry. It removes only coordinate-amplitude reasoning that treats `Q^{-1/2}` or PF-328's common parity factors as if they were already intrinsic-angle amplitudes.
+None of those results proves locality of the polar unitary, a completed-angle lower bound, a superlinear local angle gain, or the PF-318 Hilbert--Schmidt budget. The fact that total-energy packet mass is preserved does **not** imply that the packet remains near its original physical center.
 
-No current finding proves a superlinear local angle gain, the PF-318 Hilbert--Schmidt budget, a positive completed-angle lower bound, scattering/determinant control, a zeta-zero correspondence, the critical line, or RH.
+The seam form still matters as the raw positive summand in `A_0,C_0`; the new reduction removes only the interpretation of completed low normalization as an independent packet-mass damping mechanism.
+
+No scattering/determinant theorem, zeta-zero correspondence, critical-line result, or RH implication is established.
 
 ## Research disposition
 
 Outcome: `accepted`.
 
-The clue remains live, but its decisive packet input is now sharper. The next calculation is not to propagate the seam-only PF-328 packet with its raw parity scale. It is to understand the **completed total-energy packet** `Q^{-1/2}A_n^{-1/2}\psi_{n,t}` — or the equivalent raw canonical correlation — across the actual one-cusp pant in both arithmetic boundary regimes.
+The clue remains live. For a positive endpoint proof, attack the basis-free raw canonical-correlation operator or trace directly. For a PF-328 obstruction, the next missing theorem is locality/concentration of the polar unitary `U_{L,n}` on the critical packet family; only then do the two arithmetic seam-distance regimes become completed-angle tests.
