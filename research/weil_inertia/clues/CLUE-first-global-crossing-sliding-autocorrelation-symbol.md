@@ -13,9 +13,10 @@ based_on:
   - research/weil_inertia/findings/WI-258-phase-modulation-couples-firstness-slack-to-localized-cosine-defect.md
   - research/weil_inertia/findings/WI-263-full-span-autocorrelations-can-null-the-first-prime-and-screen-the-localized-phase-defect.md
   - research/weil_inertia/findings/WI-264-finite-aperture-endpoint-autocorrelations-screen-all-prime-layers.md
+  - research/weil_inertia/findings/WI-265-endpoint-screening-survives-an-abstract-first-crossing-compression-model.md
 ---
 
-# Can genuine first-crossing rigidity exclude finite-aperture source screening?
+# Can Suzuki-specific first-crossing rigidity exclude finite-aperture source screening?
 
 ## Observation
 
@@ -58,11 +59,19 @@ J_v(r,t)\ge0,
 
 for all admissible `r,t` in that countermodel. This generalizes the one-prime obstruction of `WI-263`: adding more finite prime layers or more phase frequencies cannot by itself break screening.
 
+`WI-265` closes a second generic escape route. The **same screened endpoint-bump vector** can be made the exact terminal zero mode of the positive rank-one-defect operator
+
+\[
+A=I-|v\rangle\langle v|,
+\]
+
+while every proper centered compression is strictly positive. For every fixed `r<a`, every translated interval of length `2r` even has a common positive Rayleigh reserve, and the localized terminal mode obeys the corresponding center-averaged firstness inequality. Thus endpoint screening is compatible with an exact abstract first crossing, an exact null equation, all proper aperture positivity, and the generic sliding-localization argument. What the model does **not** reproduce is the arithmetic identity that turns that localization defect into the particular source functional `mathcal F_v`.
+
 There is also no longer a finite-scale activation gate at `L=7/20`. `WI-253` already records the certified theorem `lambda_0.8>0` for arbitrary complex tests, so any hypothetical first global crossing satisfies `a_*>0.8`. The `FP-0.35` audits in `WI-259`--`WI-262` remain useful artifact audits, but they are not a prerequisite for this clue.
 
 ## Research question
 
-Can the **genuine first-crossing information not reproduced by WI-264** forbid the endpoint-gap screening geometry? The two surviving inputs are especially concrete:
+Can the **Suzuki-specific information not reproduced by WI-264/WI-265** forbid the endpoint-gap screening geometry? The two surviving constraints still have the same formal statements,
 
 \[
 \boxed{\mathcal F_v(r)\ge r\lambda_r\quad\text{for every }0<r<a_*}
@@ -71,49 +80,59 @@ Can the **genuine first-crossing information not reproduced by WI-264** forbid t
 and
 
 \[
-\boxed{A_{a_*}v=0.}
+\boxed{A_{a_*}^{\rm Weil}v=0,}
 \]
 
-The target is to derive from one or both a quantitative constraint on the autocorrelation that cannot be satisfied by the screened endpoint-bump family. Useful forms would include a lower bound on autocorrelation mass at one or more von-Mangoldt lags, a prohibition on a long interior autocorrelation gap, a quantitative support-spreading theorem for an actual null vector, or a source-specific relation coupling the zero interval of `C_v` to nonzero translated copies of `v`.
+but `WI-265` changes what may legitimately be extracted from them. Generic zero-modehood, generic nested positivity, uniform positivity on translated shorter windows, and their averaged localization reserve are now known to be insufficient. A successful argument must use the **specific equality between Suzuki's quadratic form and the von-Mangoldt/archimedean autocorrelation functional**, or the detailed arithmetic kernel in the null equation.
 
-The question is deliberately stronger than “can another prime threshold help?” `WI-264` proves that every finite set of active prime thresholds can be put in the same autocorrelation gap. A successful continuation must therefore use the **equation or firstness reserve**, not the cardinality or signs of the finite source.
+The target is therefore a source-specific quantitative constraint on the autocorrelation that cannot be satisfied by the screened endpoint-bump family. Useful forms would include a rigorous lower bound on the actual `mathcal F_v(r)` relative to `r lambda_r`, a lower bound on autocorrelation mass at one or more von-Mangoldt lags derived from the explicit null equation, a prohibition on a long interior autocorrelation gap for Suzuki's kernel, or a global Fourier/moment identity unavailable to arbitrary positive compression families.
 
 ## Decisive test
 
-Start from a hypothetical first-crossing mode with `a_*>0.8`; do not recertify `FP-0.35` as a prerequisite. Test the endpoint-gap geometry directly against the two first-crossing constraints.
+Start from a hypothetical first-crossing mode with `a_*>0.8`; do not recertify `FP-0.35` as a prerequisite. Do not attempt to rule out endpoint bumps from abstract first-crossing spectral structure: `WI-265` already supplies an exact countermodel to that implication.
 
-A strong positive outcome would prove that if a normalized full-span `v` satisfies `A_a v=0` and `lambda_r>0` for every `r<a`, then its autocorrelation cannot vanish on an interval containing all active `log n`, or must satisfy a quantitative lower bound such as
+The first direct test is the actual lower-envelope family. For the complete screened endpoint-bump family of `WI-264`, compute or bound
 
 \[
-\sum_{\log n<2a} c_n\,|C_v(\log n)|\ge\eta(a)>0
+\mathcal F_v(r)
 \]
 
-for source-justified nonnegative coefficients `c_n`. Any such theorem would invalidate the WI-264 screening model for genuine first-crossing modes and reopen the phase-defect mechanism.
-
-A second viable outcome would use the entire lower-envelope family rather than the null equation. For the explicit endpoint-bump family, compute or bound `\mathcal F_v(r)` uniformly in the bump width and compare it with rigorous information on `r\lambda_r`. If some radius forces
+uniformly in the bump width and compare it with rigorous information on `r lambda_r`. If some radius forces
 
 \[
 \mathcal F_v(r)<r\lambda_r,
 \]
 
-then firstness alone rules out that screening geometry. The useful result is a uniform exclusion of the whole family, not a numerical failure of one chosen bump.
+uniformly for every screened member, then the **source-specific** firstness identity rules out the geometry even though abstract firstness does not. The useful result is a uniform analytic exclusion, not a numerical failure of one chosen bump.
 
-A meaningful negative outcome is an explicit source-compatible compact-support family that simultaneously retains the all-prime screening of `WI-264` **and** satisfies the quantitative aperture lower envelope to the precision currently known, or an exact model satisfying an analogue of the null equation. That would show that even firstness-level scalar information remains too weak and would push the line toward genuinely operator-valued constraints.
+The second direct test is the actual null equation. Insert the endpoint-gap geometry into Suzuki's explicit kernel/operator equation and ask whether the finite von-Mangoldt translations plus the archimedean term force nonzero mass in the autocorrelation gap or another contradiction. A theorem of the form
+
+\[
+A_a^{\rm Weil}v=0
+\quad\Longrightarrow\quad
+\sum_{\log n<2a}c_n|C_v(\log n)|\ge\eta(a)>0
+\]
+
+for source-justified `c_n>=0` would invalidate `WI-264`; an analogous theorem for a continuous set of lags or a Fourier moment would be equally useful.
+
+A meaningful negative outcome now has to pass the stronger gate: construct a **source-compatible** compact-support family retaining the all-prime screening of `WI-264` and satisfying the actual quantitative aperture lower envelope to the available rigorous precision, or construct a screened vector satisfying Suzuki's actual null equation. Another abstract operator model is no longer enough; `WI-265` has already supplied that barrier.
 
 ## Stress tests
 
-Any proposed implication must survive the existing countermodels. `WI-257` shows that generic bounded self-adjoint zero-modehood gives no useful translation regularity. `WI-263` rules out one-prime source-sign/Bochner arguments. `WI-264` rules out the stronger idea that activating finitely many additional prime powers removes the screening freedom. Therefore a proof that only uses compact support, positive-definiteness, the list of finite source atoms, or their signs is already known to be insufficient.
+Any proposed implication must survive the existing countermodels. `WI-257` shows that generic bounded self-adjoint zero-modehood gives no useful translation regularity. `WI-263` rules out one-prime source-sign/Bochner arguments. `WI-264` rules out the idea that activating finitely many additional prime powers removes the screening freedom. `WI-265` further rules out deductions from generic exact zero-modehood plus strict positivity of every proper centered or translated shorter window.
 
-The first-crossing operator equation is the most promising remaining discriminator because it couples `v` to all translations appearing in Suzuki's exact localized form rather than only to scalar autocorrelation moments. If that equation is reduced to a scalar inequality that WI-264 also satisfies, the reduction has discarded the very information this clue is trying to exploit.
+Therefore a proof that uses only compact support, positive-definiteness, the finite source atoms and their signs, nested Rayleigh positivity, or a generic Hilbert-space null equation is already known to be insufficient. The arithmetic operator must enter before the argument discards the distinction between Suzuki's form and the rank-one compression countermodel.
 
 ## Evidence boundary
 
-No theorem currently proves that an actual first-crossing null vector has nonzero autocorrelation at any prescribed prime-power lag. Nor is there a known quantitative theorem excluding a macroscopic autocorrelation zero interval from `A_{a_*}v=0`. `WI-264` is not itself a zeta zero mode and does not satisfy the firstness lower envelope by construction; it is only a decisive countermodel to weaker source-sign and positive-definiteness arguments.
+No theorem currently proves that an actual Suzuki first-crossing null vector has nonzero autocorrelation at any prescribed prime-power lag. Nor is there a known quantitative theorem excluding a macroscopic autocorrelation zero interval from the **specific** equation `A_{a_*}^{Weil}v=0`.
+
+`WI-264` is not itself a zeta zero mode. `WI-265` upgrades it only to an abstract exact zero mode with a complete positive first-crossing compression profile; it deliberately does not satisfy Suzuki's source identity by construction. Consequently neither finding settles whether the actual inequality `mathcal F_v(r) >= r lambda_r` excludes the endpoint family. That is now the sharp scalar gate.
 
 The certified `lambda_0.8>0` theorem is used only to remove the obsolete prime-activation dependency and to place any hypothetical first crossing beyond `0.8`. It does not provide a usable lower profile for `lambda_r` at all radii, and it does not approach RH by itself.
 
 ## Research disposition
 
-The clue remains `accepted`, but its live gate has changed. **Do not spend further research passes recertifying `FP-0.35` merely to activate a prime, and do not enlarge the aperture merely to add more finite prime layers.** Instead attack whether the full firstness family or the exact localized null equation forbids the endpoint-gap autocorrelation screening proved in `WI-264`.
+The clue remains `accepted`, but its live gate is now explicitly **source-specific**. Do not spend further research passes recertifying `FP-0.35` merely to activate a prime, enlarging the aperture merely to add finite prime layers, or deriving endpoint coercivity from abstract nested positivity/null-vector facts.
 
-If neither firstness nor the null equation can distinguish the screened family, record that barrier and retire the phase-defect route until a new operator or arithmetic invariant is available.
+Attack either the actual source-side lower-envelope family `mathcal F_v(r) >= r lambda_r` on the complete screened endpoint family, or the detailed Suzuki null equation before reducing it to generic spectral information. If both of those source-specific constraints can also be matched by a screened family, record that barrier and retire the present phase-defect route until a genuinely stronger arithmetic or operator invariant is available.
