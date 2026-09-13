@@ -8,18 +8,22 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Decide the radial Szegő floor charge, then go cross-ray if it diverges
+## Decide the terminal visible correlation entropy of the radial certificate
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`.
 
-NB-066--NB-084 reduce persistent continuation to finite-future prediction and identify an exact actual-source Toeplitz certificate along every integer-dilation descendant ray. The relevant periodized density `W_(j,q)` is positive almost everywhere, so ordinary critical-line zeros do not reproduce the stationary unit-circle-zero mechanism of NB-083.
+NB-066--NB-084 reduce persistent continuation to finite-future prediction and identify an exact actual-source Toeplitz certificate along every integer-dilation descendant ray. NB-085 settles the infinite-depth radial limit: the actual periodized density has `log W_(j,q) in L^1`, giving a strictly positive Szegő floor `G_(j,q)` and reducing qualitative success to boundedness of the aggregate floor charge `S_(R,q)`.
 
-NB-085 now settles the infinite-depth radial limit. For every `j,q`, the actual density satisfies `log W_(j,q) in L^1`, so Szegő--Kolmogorov gives a strictly positive floor `G_(j,q)` and `E_(j,q,L) -> G_(j,q)`. The qualitative radial problem therefore no longer depends on how fast finite depth approaches the floor. Define the aggregate floor charge `S_(R,q)=sum_(j<R) log(G_(j,q)/PiHat_(j,R)^2)`. Boundedness of this charge on an unbounded sequence is exactly enough to choose finite depths that exclude a stable tail; divergence means that no amount of depth on that single ray can produce a bounded radial certificate.
+NB-086 now lower-bounds that infinite-depth charge by a completely visible finite-window quantity. On the terminal fraction `j>=ceil(R/q)`, the radial future starts beyond the current cutoff while the unrestricted causal predictor still sees the intermediate innovations. If `R_(R,q)` is the normalized Gram matrix of those terminal visible innovations, then
 
-The live theorem is thus to estimate `S_(R,q)` from the actual periodized spectra. If it stays bounded, qualitative stable-tail exclusion follows without a prescribed depth rate. If it diverges, the next mechanism must be genuinely cross-ray or otherwise nonradial. Finite-depth convergence rates matter only for stronger quantitative horizon constraints.
+`S_(R,q) >= -log det R_(R,q) >= 0`.
 
-## Keep stationary inverse singularities, aliasing, prediction floor, convergence rate and future geometry separate
+Moreover bounded charge forces the sum of squared off-diagonal terminal correlations to remain `O(1)`. Therefore divergence of the normalized terminal visible pair-correlation energy is already enough to rule out every fixed-`q` radial certificate, without estimating the individual aliased Szegő floors.
 
-NB-083 remains the matched control for a genuine unit-circle zero of a stationary symbol. NB-084 replaces that symbol by the arithmetic alias-periodized density; NB-085 further shows that this density has a positive geometric-mean floor.
+The live theorem is now to estimate this terminal correlation entropy for the actual Nyman source. If it diverges, the next mechanism must be cross-ray or otherwise nonradial. If it stays bounded, that necessary condition removes one obstruction but does not by itself prove the full floor charge bounded; the remaining nonterminal contribution must still be controlled.
 
-A positive floor is not the same as a good certificate: what matters is its ratio to the visible causal prediction error after summing over innovations. Conversely, a bad radial floor is only a failure of one restricted future geometry, not evidence for a nonzero stable tail, because the full nonstationary future can exploit cross-ray cancellation.
+## Keep stationary inverse singularities, aliasing, prediction floor, visible correlation entropy and future geometry separate
+
+NB-083 remains the matched control for a genuine unit-circle zero of a stationary symbol. NB-084 replaces that symbol by the arithmetic alias-periodized density; NB-085 gives its positive geometric-mean floor; NB-086 exposes an independent finite-window correlation-volume bill on the terminal block.
+
+A positive ray floor is not the same as a good certificate, and a bounded terminal determinant deficit is only necessary, not sufficient, for bounded aggregate charge. Conversely, a bad single-ray charge is a failure of one restricted future geometry, not evidence for a nonzero stable tail, because the full nonstationary future can exploit cross-ray cancellation.

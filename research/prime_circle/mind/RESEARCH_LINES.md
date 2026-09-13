@@ -2,20 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find arithmetic information beyond the ratio quotient, raw near-resonance law and the entire fixed-bandwidth Li hierarchy
+## Resolve the intermediate rational-microscopic window or leave scalar near-resonance
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`.
 
 PC-224--PC-271 close fixed-conductor packets, finite trace words, complete finite singular data, common-dilation growth and the main bounded-mode orbit regimes, then isolate the classical dual-lattice carriers `lambda_(p,r;q)` and `Delta_B`.
 
-PC-272 proves that the finite-window `Delta_B` statistic retains ordered source placement lost by the exact ratio quotient. PC-273--PC-274 nevertheless show that its raw scalar law is asymptotically prime-blind over **every** bandwidth sequence: below logarithmic scale the prime/grid laws converge directly, while growing bandwidth collapses the observable itself.
+PC-272 proves that finite-window `Delta_B` retains ordered source placement lost by the exact ratio quotient. PC-273--PC-274 nevertheless show that its raw scalar law is asymptotically prime-blind over every bandwidth sequence: below logarithmic scale the prime/grid laws converge directly, while growing bandwidth collapses the observable itself. PC-275--PC-276 then close every finite fixed-bandwidth logarithmic recentering as normalized `Li` source data.
 
-PC-275 identifies the first fixed-bandwidth centered correction as the classical normalized logarithmic-integral source bias. PC-276 closes the whole finite algebraic continuation: for every fixed `K`, the first `K` powers of `1/log q` are deterministic pushforwards of the normalized `Li` source expansion, while the genuine prime-minus-`Li` residual is smaller than every fixed logarithmic power under the classical PNT estimate.
+PC-277 now closes a large part of the normalized moving-band escape. For `X_B=(B+1)^2 Delta_B`, an exact-`Li` source discretized onto the same denominator-`q` grid is a source-only matched control whose law converges to the prime law whenever `log B=o(sqrt(log q))`. At the other endpoint, `(B+1)^2>q` forces exact rational resonance for every denominator-`q` pair, so both laws are exactly `delta_0`.
 
-The live ordered-time branch must therefore leave this closed hierarchy. Honest continuations include exact `Li`-centering followed by a non-logarithmic scale with an explicit matched control, moving-bandwidth normalized variables such as `(B+1)^2 Delta_B`, singular or directional minimizer data, conditioned source families, microscopic/transfer observables, or genuinely nonlocal/cross-level couplings. If a fixed Lipschitz observable merely detects the exact `Li`-centered PNT remainder, its zero-sensitive content is inherited classical explicit-formula data unless the Prime-Circle geometry adds an independent mechanism.
+The surviving scalar branch is therefore the intermediate rational-microscopic window between those two regimes. The current PNT transport estimate is too weak there after the `B(B+1)^2` Lipschitz amplification, but exact denominator resonance has not yet taken over. A useful theorem must either close that window with a sharper source-only control or exhibit a genuinely geometric residual that survives such a control. Otherwise move to singular/directional minimizer data, conditioned source families, microscopic transfer observables or nonlocal/cross-level couplings.
 
-## Keep information retention, normalization and arithmetic discrimination separate
+## Keep retained information, normalization, matched source control and arithmetic discrimination separate
 
-PC-272 proves that ordered source information survives the ratio quotient. PC-274 proves that the unscaled scalar law loses asymptotic discrimination at every bandwidth. PC-276 now proves that **every fixed finite logarithmic recentering at fixed bandwidth is still classical source-density data**.
+Ordered information survives the ratio quotient, but survival alone is not discrimination. PC-276 shows the entire fixed finite logarithmic hierarchy is classical source-density data; PC-277 shows that intrinsic normalization does not change that verdict through a broad subexponential bandwidth range and that the far endpoint is universally rational.
 
-A durable Prime-Circle mechanism must therefore state what is normalized or subtracted, why the surviving residual is not already present in the strongest source-only matched control, and how the destination uses genuinely new geometric or cross-level information.
+Any future Prime-Circle mechanism must state its normalization, its strongest source-only matched control, the exact bandwidth/horizon where comparison is proved, and what geometric information remains after that control. A gap in a transport bound is not itself evidence of a new arithmetic scale.

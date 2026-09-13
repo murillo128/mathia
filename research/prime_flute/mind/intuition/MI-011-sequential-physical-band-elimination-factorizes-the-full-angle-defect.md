@@ -1,13 +1,17 @@
-# MI-011 — Sequential elimination leaves two visible angle channels, and the direct one is locally banded
+# MI-011 — Sequential elimination leaves two angle channels, and mean-square local leakage is enough for the direct endpoint
 
-**Evidence level:** exact on every finite strictly positive canonical section through PF-317. Compatible infinite-section realization and the required local mixed-frequency estimate remain open.
+**Evidence level:** exact on every finite strictly positive canonical section through PF-318. Compatible infinite-section realization, the required Hilbert--Schmidt leakage estimate, and the independent conditional channel remain open.
 
 PF-315--PF-316 reduce the physical low/high angle to the pair `(T_H,Z_LH)`. The residual map `V_H` is not a third endpoint regularizer: if it attenuates a conditional direction, the defect is quadratically controlled by the direct angle, and weak trace of the full angle is equivalent to weak trace of both channels.
 
-PF-317 adds a second exact simplification for `Z_LH`. In simultaneous seam-energy coordinates the positive precision is `I+K` with `K>=0`. The diagonal completion factors around `K_LH` are contractions, so `s_j(Z_LH)<=s_j(K_LH)`. Moreover `K` is nearest-neighbor in cuff-module index, making the direct cross block a sum of only the three offsets `r=-1,0,1`, each an orthogonal direct sum of local pant blocks.
+PF-317 localizes `Z_LH`. In simultaneous seam-energy coordinates the positive precision is `I+K` with `K>=0`; diagonal completion factors are contractions, so `s_j(Z_LH)<=s_j(K_LH)`. Nearest-neighbor cuff topology leaves only the three offsets `r=-1,0,1`, each an orthogonal direct sum of local high-to-nonconstant-low pant blocks.
 
-Because the retained nonconstant low band on module `n` has only `O(1+log P_n)` dimensions, a local normalized pant estimate `||L_(n+r) K H_n|| <= C/P_n` is already sufficient for the global weak-`S_1` count. The collapsing seam normalizer is not the remaining obstacle: PF-317 compares the true strip energy to the explicit flat shifted-strip DtN matrix at relative error `1+O(P_n^-2)`.
+PF-318 lowers the actual endpoint burden. Because each retained low target has rank only `O(1+log P_n)`, no pointwise operator bound `||L_(n+r) K H_n||=O(P_n^(-1))` is required. It is enough that
 
-The load-bearing obstruction is frequency-selective. PF-215 shows that the complete adjacent normalized pant transfer can diverge on constant-to-constant data, so no proof may bound the whole pant block and infer the desired corner. The unresolved theorem must use the physical high/nonconstant-low split to show reciprocal-prime decay, or produce an equally strong local singular-value envelope.
+`||L_(n+r) K H_n||_(S_2)^2 <= C (1+log P_n)/P_n^2`.
 
-**Boundary.** This localization closes the organizational and reassembly burden only for the direct channel. It does not estimate `T_H`, prove the local `C/P_n` bound, construct the infinite operator, or close the signed target composition.
+Threshold counting uses rank below `P_n<=sigma^(-1)` and Hilbert--Schmidt mass above it; Chebyshev prime density and the tail `sum_(p>X)(1+log p)/p^2=O(X^(-1))` then give the required `O(sigma^(-1))` singular count. Individual local singular values may be larger than `1/P_n` by a `sqrt(log P_n)` factor without spoiling weak trace.
+
+By self-adjointness, the Hilbert--Schmidt quantity is exactly aggregate high-frequency leakage of an orthonormal basis of the retained low target. The direct channel has therefore become an **average-square local Fourier/DtN leakage problem**, not a worst-input operator-norm problem. PF-215 remains the negative control: the complete adjacent pant block diverges on constant modes, so the estimate must still exploit the physical frequency split.
+
+**Boundary.** PF-318 does not prove the local Hilbert--Schmidt estimate, estimate `T_H`, construct the compatible infinite operator, close the symmetric side, or supply signed target composition. It only identifies a strictly weaker endpoint-complete local criterion for `Z_LH`.
