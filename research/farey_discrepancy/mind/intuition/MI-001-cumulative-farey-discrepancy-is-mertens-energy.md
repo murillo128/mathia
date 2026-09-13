@@ -1,23 +1,15 @@
-# MI-001 — Farey occupation has full counting exponent; compatible accumulation is now the bottleneck
+# MI-001 — Farey occupation persists in polynomial additive blocks; multiplicative compatibility remains the bottleneck
 
-**Evidence level:** supported by the exact source/occupation reductions through FD-083 and the persisted Pintz inputs. Full polynomial counting exponent of constant-strength occupied horizons is proved, but no positive density, compatible integer-ratio chain, transport inequality, or RH criterion is claimed.
+**Evidence level:** supported by the exact source/occupation reductions through FD-084 and the persisted Pintz inputs. Full counting exponent and polynomial-length consecutive additive blocks of constant-strength occupied horizons are proved; no positive density, compatible integer-ratio chain, multiplicative transport inequality, or RH criterion is claimed.
 
-FD-071--FD-081 build a strict ladder from causal record protection and frontier-near abundance through physical-energy weighting, logarithmic annular recurrence and subpower pointwise first passage. FD-082 then identifies the exact information contained in first passage alone: `log g_(n+1)/log g_n -> 1` is compatible with only `(log log X)^2` good horizons, so a fixed gain per hit need not accumulate to a power saving.
+FD-071--FD-081 build a ladder from causal record protection and frontier-near abundance through physical-energy weighting, logarithmic annular recurrence and pointwise first passage. FD-082 identifies the weakness of recurrence alone: subpower first passage is compatible with only `(log log X)^2` usable horizons, so fixed gains need not accumulate.
 
-FD-083 imports the missing physical anti-concentration information rather than strengthening first passage abstractly. If
+FD-083 imports physical anti-concentration. The per-horizon atom cap together with annular energy `Y^(2Theta+o(1))` forces the actual constant-occupation set to have full counting exponent inside every fixed-power future window. Scarcity is therefore not the obstruction.
 
-`a_H = log((H+1)/H) E_(H,D)`,
+FD-084 strengthens the geometry again. Increasing the horizon by one changes only divisor-indexed Jordan rows, so both the full and nonsquarefree Schur energies vary by at most `N^(Theta+o(1))` per step. Annular occupation supplies seeds with energy `H^(2Theta-o(1))`; hence a constant occupied fraction cannot disappear immediately. For every fixed `delta>0`, an occupied seed persists across a consecutive block of length `H^(Theta-delta)`, and every fixed-power future window contains such a whole block.
 
-then the zero-frontier envelope gives `a_H << H^(2 sigma-1)` for every `sigma>Theta`, while every fixed power annulus has total energy `Y^(2Theta+o(1))`. A constant energy-weighted nonsquarefree occupation therefore cannot be concentrated on a sparse set of physical horizons: a fixed positive fraction of the annular energy requires `Y^(1-o(1))` distinct atoms.
+This removes the isolated-point escape but still does not create the geometry consumed by the existing accumulation mechanism. A long additive interval need not contain two distinct horizons with an integer ratio, and successive occupied blocks can lie on mutually incompatible multiplicative rays. Additive persistence, multiplicative compatibility and transport composability are different resources.
 
-Consequently, for every fixed `epsilon>0` and every admissible occupation threshold `eta`, the actual good set satisfies
+The next useful theorem must therefore exploit the **internal structure of the occupied blocks or their placement across scales**: derive a compatible integer-ratio/multiplicative chain, prove a transport estimate that accumulates across additive motion, or find another nonlocal inequality that converts polynomial block persistence into a power-scale gain. Reproving abundance or additive thickness in another norm does not address the remaining gate.
 
-`# {H : X < H <= X^(1+epsilon), nu_(H,D)>eta} = X^(1+epsilon-o(1))`,
-
-in logarithmic-exponent form, and cumulatively `N_eta(X)=X^(1-o(1))`. The cardinality obstruction isolated by FD-082 is therefore absent for the physical Schur/Jordan occupation set. FD-082 remains the correct control showing that this density does not follow from recurrence alone; FD-083 is precisely the extra source-specific atom cap that rules out the sparse control.
-
-The remaining Farey obstruction is **compatibility, not scarcity**. A set of `X^(1-o(1))` occupied integers need not contain the multiplicative or integer-ratio geometry required by the existing GCD/Schur transport steps, and favorable projective gains at unrelated horizons cannot simply be multiplied. Nor does exponent-one counting imply positive natural or logarithmic density.
-
-The next useful theorem must therefore convert full-counting occupation into a scale geometry that the RH-facing accumulation mechanism can consume: for example a compatible chain, a transport inequality across many occupied horizons, a gap-sensitive gain, or a genuinely nonlocal estimate that couples occupied and intervening scales. Reproving abundance in another counting norm without solving that compatibility step does not address the current bottleneck.
-
-**Boundary.** FD-083 uses the physical per-horizon energy envelope and annular total-energy exponent; it does not upgrade arbitrary power-syndetic sets. Its count is `X^(1-o(1))`, not positive density. No statement is made that the good horizons form a suitable divisor chain or that the fixed gains of earlier local inequalities compose across them.
+**Boundary.** FD-084 is a source-specific consequence of the divisor-local energy increment law and near-frontier energy seeds. It does not imply positive natural/logarithmic density, a divisor chain, or multiplicative composability. Its additive block length is any fixed exponent below `Theta`; the theorem does not by itself turn those blocks into an RH contradiction.

@@ -1,27 +1,15 @@
-# MI-016 — The actual Weil ground branch has a squared-log frequency moment, but the remaining transport bill is quantitative and source-specific
+# MI-016 — The Weil graph domain gives a sharp inverse-squared-log transport class; any stronger aperture control must be branch-specific
 
-**Evidence level:** proved for the one-dimensional fixed-domain principal operator and its bounded-perturbation Weil eigenstates through PL-289, conditional on the PL-283--PL-284 finite spectral certificate at `a=0.8`. Completed arithmetic positivity and a quantitatively useful transport radius remain open.
+**Evidence level:** proved for the one-dimensional fixed-domain principal operator and its source-static Weil form through PL-290, conditional on the PL-283--PL-284 finite spectral certificate at `a=0.8`. Completed arithmetic positivity and a quantitatively useful aperture transport theorem remain open.
 
-PL-285--PL-286 identify the sharp generic obstruction. On Suzuki's fixed interval, active arithmetic channels are compressed translations. Ambient `L^2` operator norm is discontinuous; on the canonical logarithmic form domain the worst-case quadratic-form modulus is sharply `Theta(1/log(1/|delta|))`, even for the complete active `2,3,4` source comb.
+PL-285--PL-286 identify the sharp ambient obstruction: on the canonical logarithmic form domain the moving prime-shift contribution has worst-case modulus `Theta(1/log(1/|delta|))`. PL-287 shows that the actual compact ground branch beats that scale qualitatively, and PL-288 shows that ordinary `L^2` tail localization still cannot quantify the improvement near the tiny certified endpoint margin.
 
-PL-287 identifies the sharp witnesses as moving high-frequency packets and proves that every compact subset of `H^log` has the strictly better `o(1/log(1/|delta|))` modulus. PL-288 then shows that the existing finite reduction does not quantify that improvement strongly enough: even an exact ground-state tail norm below `7e-9` gives bounded-shift uncertainty around `1e-8`, far above the certified `~1e-17` positivity margin.
+PL-289 upgrades actual source-static Weil eigenstates to the graph domain of the principal logarithmic operator. Zero extension then has a squared-log Fourier moment, yielding the stronger translation/autocorrelation modulus `O(log^-2(1/|delta|))`.
 
-PL-289 reaches the stronger regularity through the eigen-equation rather than finite-dimensional localization. For the one-dimensional principal logarithmic operator `T`, zero extension satisfies
+PL-290 proves that this graph-domain gain is also the **generic endpoint of the available regularity**. Modulated interval states belong to the exact graph domain, and Kronecker phase locking of the active `2,3,4` von-Mangoldt channels makes the full source-static arithmetic comb attain a matching `Omega(log^-2)` form difference. The scalar and continuous-kernel pieces are only `O(|a-b|)` on those witnesses and cannot cancel the obstruction. Hence the complete source-static fixed-domain Weil form has sharp graph-norm modulus `Theta(log^-2)`.
 
-`D(T)={u : (log|xi|+gamma) Fourier(Eu) in L^2}`,
+The consequence is categorical. Membership in `D(T)` does not make the aperture family locally Lipschitz or differentiable in the natural graph-form topology; dividing the sharp modulus by `|a-b|` still diverges. A formal Feynman--Hellmann differentiation of the moving translations would require substantially stronger frequency control than a squared logarithmic moment.
 
-with the explicit graph estimate
+The remaining route must therefore exclude the sharp graph-ball witnesses using information specific to the **actual low eigenbranch**: an eigen-equation cancellation identity, stronger branch regularity, a much smaller explicit state-specific moment constant, or a direct finite positivity certificate over an aperture interval. Another generic consequence of the already-known graph domain cannot improve the transport order.
 
-`(1/(2 pi)) int (log|xi|+gamma)^2 |Fourier(Eu)|^2 <= ||Tu||_2^2 + (pi^2/2)||u||_2^2`.
-
-The proof uses the exterior Carleman transform and excludes endpoint-supported residual distributions. Since the canonical source-static Weil operator is `T+K_a` with `K_a` bounded, its normalized eigenstates inherit a uniform squared-log moment on compact source-static aperture intervals.
-
-This changes the transport currency. For such eigenstates, translation correlations have modulus
-
-`O(1/log^2(1/|delta|))`.
-
-The actual ground branch therefore beats the ambient inverse-log law by a full logarithmic power for a concrete operator-domain reason, not merely compactness. Ordinary `L^2` tail localization is no longer the only available state-specific information.
-
-The remaining barrier is the coefficient, not the logarithmic exponent alone. With an order-one squared-log moment constant, the `log^-2` modulus is still numerically incapable of transporting a `10^-17` margin over a useful aperture interval. A successful continuation must extract a much smaller state-specific constant from the arithmetic bounded remainder, exploit an eigen-equation/source cancellation that suppresses the relevant moving translation channel, or certify positivity directly across an interval.
-
-**Boundary.** PL-289 is one-dimensional and source-static. It does not eliminate activation bookkeeping, prove a practical transport radius, or complete the conditional positivity branch. Its durable gain is that the generic form-domain regularity obstruction has been replaced by a sharper eigenstate graph-domain resource whose remaining insufficiency is quantitative.
+**Boundary.** PL-290 is source-static and sharp on the full graph ball; its witness is not claimed to be a ground state. Individual isolated eigenvalue branches may still be smoother, and source activation thresholds still require separate bookkeeping. The theorem closes only graph-domain regularity as a free route to a stronger aperture modulus.
