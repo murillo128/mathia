@@ -16,9 +16,10 @@ based_on:
   - research/prime_flute/findings/PF-315-sequential-physical-band-elimination-factorizes-the-full-angle-defect.md
   - research/prime_flute/findings/PF-316-direct-channel-payment-makes-the-conditional-angle-endpoint-visible.md
   - research/prime_flute/findings/PF-317-positive-diagonal-completion-reduces-the-direct-angle-to-local-pant-crossing.md
+  - research/prime_flute/findings/PF-318-logarithmic-rank-hilbert-schmidt-averages-already-close-the-direct-angle-at-weak-trace.md
 ---
 
-# Can the local pant `L/H` block reach the reciprocal-prime scale?
+# Can the local pant `L/H` block reach reciprocal-prime mean-square leakage?
 
 ## Observation
 
@@ -51,32 +52,53 @@ s_j(Z_{LH})\le s_j(K_{LH}).
 
 Same-sector pant completion therefore does not need to be inverted or localized for this sufficient direction.
 
-PF-214 also makes `K` exactly nearest-neighbor in the cuff-module index. Consequently `K_{LH}` is the sum of only the three offsets `r=-1,0,1`, and each fixed-offset family is a two-sided orthogonal direct sum of local pant blocks. The low target on one module has only `O(1+\log P_n)` dimensions. PF-210 then shows that the concrete local estimate
+PF-214 also makes `K` exactly nearest-neighbor in the cuff-module index. Consequently `K_{LH}` is the sum of only the three offsets `r=-1,0,1`, and each fixed-offset family is a two-sided orthogonal direct sum of local pant blocks. The low target on one module has only `O(1+\log P_n)` dimensions. PF-210 therefore makes the pointwise estimate
+
+\[
+\|L_{n+r}KH_n\|\le C/P_n
+\]
+
+sufficient, but PF-318 shows that this is not the cheapest endpoint theorem.
+
+The actual weak-trace target is only the Hilbert--Schmidt average
 
 \[
 \boxed{
-\|L_{n+r}KH_n\|\le C/P_n,
-\qquad r=-1,0,1,
+\|L_{n+r}KH_n\|_{\mathcal S_2}^2
+\le
+C\frac{1+\log P_n}{P_n^2},
+\qquad r=-1,0,1.
 }
 \]
 
-is already sufficient for
+PF-318 proves that this mean-square reciprocal-prime scale already gives
 
 \[
-Z_{LH}\in\mathcal S_{1,\infty}.
+K_{LH},Z_{LH}\in\mathcal S_{1,\infty}
 \]
 
-No additional global reassembly theorem is required for this direct channel once those local bounds hold.
+by splitting singular-value counting at `P_n\asymp\sigma^{-1}`: logarithmic target rank controls the lower-prime side and Hilbert--Schmidt counting plus the Chebyshev prime tail controls the upper-prime side. In particular the largest local singular value may lose a factor `\sqrt{\log P_n}` relative to `P_n^{-1}` without breaking the endpoint.
 
-PF-317 also extends PF-234's coefficient comparison to the full two-face strip DtN form. Thus the local block may be normalized by the explicit flat shifted-strip DtN matrix rather than by an unknown collapsing-collar pseudodifferential model, at only a `1+O(P_n^{-2})` multiplicative loss. This removes the seam-normalizer degeneration from the live estimate.
+This changes the analytic proof obligation in a useful way. Since `K` is self-adjoint and the low output is finite dimensional,
 
-PF-215 is the essential negative control. The **complete** adjacent normalized pant block diverges on constant-to-constant data, so no proof may bound `Q_{n+1}KQ_n` wholesale. That obstruction lies in the cuff-constant channel removed before `Z_{LH}` is formed. The remaining question is specifically whether frequency separation makes the nonconstant-low/high corner small even though the all-frequency pant transfer is large.
+\[
+\|L_{n+r}KH_n\|_{\mathcal S_2}^2
+=
+\sum_{e\in\mathcal E_{n+r}^{L}}
+\|H_nKe\|^2
+\]
 
-The fixed-geometry DtN facts from the previous audit remain background rather than the target. Girouard--Karpukhin--Levitin--Polterovich (JST 2022, DOI `10.4171/JST/399`) identify the standard local pseudodifferential structure, and Hislop--Lutzer (Inverse Problems 2001, DOI `10.1088/0266-5611/17/6/313`) give fixed-domain component decoupling. Romain Speciel (JST 2026, DOI `10.4171/JST/617`) confirms that global commutation with the boundary Laplacian is restrictive. None supplies the canonical degenerating-pant estimate below, and PF-317 means a global pseudodifferential calculus is no longer required merely to organize the endpoint count.
+for any orthonormal basis of the retained low band. One may therefore estimate the **aggregate high-frequency leakage of explicit low Fourier modes** rather than the worst unit vector in the entire high source.
+
+PF-317 also extends PF-234's coefficient comparison to the full two-face strip DtN form. Thus this Hilbert--Schmidt leakage may be computed after normalizing by the explicit flat shifted-strip DtN matrix rather than by an unknown collapsing-collar pseudodifferential model, at only a `1+O(P_n^{-2})` bounded-factor loss.
+
+PF-215 remains the essential negative control. The **complete** adjacent normalized pant block diverges on constant-to-constant data, so no proof may bound `Q_{n+1}KQ_n` wholesale. That obstruction lies in the cuff-constant channel removed before `Z_{LH}` is formed. The remaining question is specifically whether the nonconstant retained-low rows have only reciprocal-prime **mean-square** leakage into physical high frequencies even though the all-frequency pant transfer is large.
+
+The fixed-geometry DtN facts from the previous audit remain background rather than the target. Girouard--Karpukhin--Levitin--Polterovich (JST 2022, DOI `10.4171/JST/399`) identify the standard local pseudodifferential structure, and Hislop--Lutzer (Inverse Problems 2001, DOI `10.1088/0266-5611/17/6/313`) give fixed-domain component decoupling. Romain Speciel (JST 2026, DOI `10.4171/JST/617`) confirms that global commutation with the boundary Laplacian is restrictive. None supplies the canonical degenerating-pant estimate below. PF-318's counting step itself uses only standard Hilbert--Schmidt singular-value counting, Ky Fan finite-sum inequalities, and the elementary Chebyshev prime bound already audited in PF-199/PF-210.
 
 ## Research question
 
-For one canonical one-cusp pant core and its two neighboring PF-205 artificial boundaries, let `\Lambda_E` be the positive shifted pant DtN form and let `\Lambda_Q^0` be the explicit flat shifted-strip energy on the adjacent seam modules. At fixed physical cutoff, do the three possible local mixed-frequency blocks
+For one canonical one-cusp pant core and its neighboring PF-205 artificial boundaries, let `\Lambda_E` be the positive shifted pant DtN form and let `\Lambda_Q^0` be the explicit flat shifted-strip energy on the seam modules. At fixed physical cutoff define
 
 \[
 \widetilde B_{n+r,n}
@@ -84,26 +106,34 @@ For one canonical one-cusp pant core and its two neighboring PF-205 artificial b
 L_{n+r}(\Lambda_Q^0)^{-1/2}
 \Lambda_E
 (\Lambda_Q^0)^{-1/2}H_n,
-\qquad r=-1,0,1,
+\qquad r=-1,0,1.
 \]
 
-satisfy
+Do the three local mixed-frequency blocks satisfy the endpoint-complete mean-square estimate
 
 \[
 \boxed{
-\|\widetilde B_{n+r,n}\|\le C/P_n
+\|\widetilde B_{n+r,n}\|_{\mathcal S_2}^2
+\le
+C\frac{1+\log P_n}{P_n^2}
 }
 \]
 
 uniformly on the canonical tail?
 
-A positive answer closes the direct-angle weak-`S_1` gate through PF-317 and PF-210. A slower norm rate does not automatically kill the route if the local singular values have additional decay, but `O(P_n^{-1})` is now the cheapest sufficient theorem.
+A positive answer closes the direct-angle weak-`S_1` gate through PF-317/PF-318. The stronger operator-norm estimate
+
+\[
+\|\widetilde B_{n+r,n}\|\le C/P_n
+\]
+
+would still suffice, but it is no longer the preferred target unless the geometry naturally yields it.
 
 ## Why it may matter
 
-PF-316 reduces the full physical endpoint to two genuine channels, `Z_{LH}` and `T_H`. PF-317 shows that the direct channel is substantially more local than previously thought: topology already supplies its finite reassembly, positivity makes same-sector completion contractive, and the seam normalization can be made explicit.
+PF-316 reduces the full physical endpoint to two genuine channels, `Z_{LH}` and `T_H`. PF-317 shows that the direct channel is substantially more local than previously thought: topology already supplies its finite reassembly, positivity makes same-sector completion contractive, and the seam normalization can be made explicit. PF-318 now removes an additional worst-case requirement: the local theorem need only control total squared leakage across the logarithmic retained-low band.
 
-The unresolved mathematics is therefore concentrated in a single geometric issue: whether a thin one-cusp pant can transfer a physical-high trace into the retained nonconstant-low band at reciprocal-prime strength after the correct boundary-energy normalization. This is exactly where PF-215's huge constant-mode conductance and PF-212/PF-255's favorable frequency-decoupling mechanisms meet.
+The unresolved mathematics is therefore concentrated in a concrete geometric/spectral quantity. For each of only `O(\log P_n)` low Fourier rows, apply the actual one-pant normalized DtN map and measure the part landing above the fixed physical cutoff on the neighboring/source module. The sum of those squared high tails must be `O((1+\log P_n)/P_n^2)`. This is closer to an averaged symbol/off-diagonal-energy estimate than to a uniform block norm, and may be accessible even if isolated near-cutoff rows are worse than `P_n^{-1}`.
 
 ## Decisive test
 
@@ -122,17 +152,34 @@ Work on one actual PF pant core at a time, with no global inverse. Use the expli
 
 and the fixed physical low/high cutoff from PF-212.
 
-First, estimate each of the three local form corners `L_{n+r}\Lambda_EH_n` after these source/target energy normalizers. Any positive proof must visibly exploit low/high frequency separation; PF-215 forbids replacing this by an all-frequency pant norm estimate.
+First choose an orthonormal basis `\mathcal E_{n+r}^{L}` for the retained nonconstant-low target and estimate
 
-Second, track the estimate in the canonical parameters `w_n\asymp P_n^{-1}`, cuff length `O(\log P_n)`, and tight-pant separation. The preferred endpoint is `C/P_n` with a constant independent of the pant index and finite Fourier cutoff. PF-317 then supplies the actual-strip comparison automatically.
+\[
+\sum_{e\in\mathcal E_{n+r}^{L}}
+\left\|
+H_n(\Lambda_Q^0)^{-1/2}\Lambda_E(\Lambda_Q^0)^{-1/2}e
+\right\|^2.
+\]
 
-Third, if the block norm does not reach `O(P_n^{-1})`, compute a local singular-value envelope rather than abandoning the route. Because each fixed module offset is already a literal orthogonal sum, the only acceptable weaker result is one whose prime-density threshold count still gives `N(a)=O(a^{-1})`.
+The endpoint target is
 
-For a negative result, isolate a sequence of **nonconstant-low/high** normalized local vectors whose mixed pant correlation violates every weak-`S_1`-compatible count. Constant-mode growth from PF-215 is not such a witness, and a large unnormalized pant DtN coefficient is not enough.
+\[
+C(1+\log P_n)P_n^{-2}.
+\]
+
+This formulation allows cancellation/decay to be proved row by row or in aggregate and avoids taking a supremum over all high inputs before summing the low rows.
+
+Second, separate mechanisms already controlled by local geometry. PF-231--PF-233 show that the ultraparallel corridor and variable-width diagonal part have explicit operator-valued transfer laws, while PF-232/PF-255 make the hypercycle/shear transport reciprocal-prime small or graph-local in the relevant normalized senses. Any remaining leakage estimate must identify which part of the actual finite pant completion mixes the physical low rows into high frequencies; it should not repackage PF-215's constant-mode conductance as a mixed-frequency obstruction.
+
+Third, if the Hilbert--Schmidt target fails, compute the local singular-value distribution rather than falling back immediately to operator norm. PF-318 gives one sufficient envelope but not a necessary one: any per-module law whose fixed-offset prime-density threshold count yields `N(a)=O(a^{-1})` can still close `Z_{LH}`.
+
+For a negative result, isolate a sequence of **nonconstant-low/high** local blocks whose squared singular mass violates every weak-`S_1`-compatible prime-density envelope. Constant-mode growth from PF-215 is not such a witness, and a single singular value larger than `C/P_n` is no longer enough after PF-318.
 
 ## Evidence boundary
 
-PF-317 proves only the structural reduction and the explicit normalization comparison. It does **not** prove the reciprocal-prime local block estimate, weak-`S_1` membership of `K_{LH}`, or weak-`S_1` membership of `Z_{LH}`. PF-212 controls particular local recoupling words, PF-255 controls the prime-dependent hypercycle footpoint transport, and PF-215 rules out a uniform bound on the complete neighboring pant block; none of those statements determines the specific local `L/H` corner above.
+PF-317 proves only the structural reduction and explicit normalization comparison. PF-318 proves only that reciprocal-prime **mean-square** local leakage is sufficient for the endpoint. Neither proves the Hilbert--Schmidt estimate for the actual canonical pant.
+
+PF-212 controls particular local recoupling words, PF-231--PF-233 control corridor models and their variable-width normalization, PF-255 controls the prime-dependent hypercycle footpoint transport, and PF-215 rules out a uniform bound on the complete neighboring pant block. None of those statements determines the specific nonconstant `L/H` Hilbert--Schmidt corner above.
 
 The fixed-domain DtN literature remains prior-art guidance, not a degeneration theorem. The clue therefore remains `accepted`, not `resolved`.
 
@@ -140,4 +187,11 @@ The fixed-domain DtN literature remains prior-art guidance, not a degeneration t
 
 Outcome: `accepted`.
 
-PF-317 replaces the previous broad global principal/remainder task by a sharper local obligation. The next preferred positive target is the three-offset flat-seam-normalized estimate `\|\widetilde B_{n+r,n}\|=O(P_n^{-1})`; PF-210 and PF-317 then perform the global weak-trace counting automatically. If that rate fails, the fallback is a local singular-value law strong enough to give the same prime-density count. The direction remains open until one of those local estimates is proved or a genuine nonconstant-low/high obstruction is exhibited.
+PF-318 materially weakens the local obligation left by PF-317. The preferred next target is now
+
+\[
+\|\widetilde B_{n+r,n}\|_{\mathcal S_2}^2
+=O((1+\log P_n)/P_n^2)
+\]
+
+for each of the three pant offsets. Equivalently, prove reciprocal-prime root-mean-square singular scale across the logarithmic retained-low band. The former `O(P_n^{-1})` operator-norm target remains a sufficient stronger theorem but is no longer required. The direction stays open until this averaged leakage, another weak-`S_1`-compatible singular-value envelope, or a genuine nonconstant-low/high obstruction is established.
