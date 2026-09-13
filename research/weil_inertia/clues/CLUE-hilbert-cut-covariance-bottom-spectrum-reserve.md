@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-hilbert-cut-covariance-bottom-spectrum-reserve
 type: research-clue
-status: proposed
+status: resolved
 origin: independent-review
 target_line: weil_inertia
 based_on:
@@ -72,3 +72,12 @@ This is a proposed source-to-formal information-loss lead. Lean proves the finit
 The ordinary positive-ground-state/weighted-square proof and the nonnegative multishift candidate were eliminated as standalone leads: the former gives an immediate remainder identity, while WI-277 already proves the latter. The surviving question concerns a different endpoint of the joint operator spectrum after restoring the common cut-vector path. Finite shift spectral theory itself is classical; see Haagerup--de la Harpe, *The numerical radius of a nilpotent operator on a Hilbert space*, DOI `10.1090/S0002-9939-1992-1072339-6`, and WI-277's operator references. No novelty or priority claim is made.
 
 Nothing here proves a spectral budget crossing, one-signedness of a null mode, arithmetic overlap for sign-changing modes, or RH. The rank-one extremizer only tests the abstract PSD relaxation and need not satisfy the exact Suzuki source equation.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-279-hilbert-cut-covariance-yields-a-bottom-toeplitz-reserve-but-does-not-break-the-scalar-profile-wall.md]]
+
+`WI-279` proves the proposed covariance identity and bottom-spectrum reserve without adding regularity assumptions: the finite-shift argument can be run through scalar polarization of the a.e. sharp cuts, so a separate Bochner-measurability theorem is not load-bearing. The reserve dominates the `WI-277` top-spectrum bound for every fixed weight vector and is strictly stronger in the three-vertex odd-cycle example. However, `WI-278`'s scalar counterprofile still keeps every such bottom-spectrum reserve below `K_+`, so the clue is supported only as a refinement of the PSD cut geometry, not as an escape from the scalar-profile budget wall. Further RH-facing progress requires genuinely source/eigenfunction-specific information.
