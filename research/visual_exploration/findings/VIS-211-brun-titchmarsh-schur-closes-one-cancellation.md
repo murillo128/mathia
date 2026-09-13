@@ -48,7 +48,7 @@ Thus the **entire one-cancellation prime/prime shell energy is negligible in lon
 
 **Evidence/status:** `LITERATURE+DERIVED + UNIFORM SCHUR BOUND + ONE-CANCELLATION FRONTIER CLOSED + NO-NOVELTY-CLAIM`.
 
-This does not prove worst-start uniformity, control higher-cancellation shell families, or establish the sharper heuristic `S(y,H)<<Q_y/H` uniformly.
+This does not prove worst-start uniformity or establish the sharper heuristic `S(y,H)<<Q_y/H` uniformly. Within this exact pair-difference shell model there is no further nonzero higher-cancellation family: `VIS-204` already proves that two cancellations reduce to `xi=0`, the diagonal removed in `VIS-203`.
 
 ## 1. Weighted Schur reduces the operator norm to one prime-window supremum
 
@@ -254,7 +254,7 @@ The conclusion is asymptotic and strictly subcritical:
 
 It does not claim the same estimate at the critical scale `H asymp y/log y`, nor does it prove the stronger orientation `S<<Q_y/H` uniformly. The translated Brun–Titchmarsh bound is used only as an upper bound; no short-interval prime asymptotic is assumed.
 
-Most importantly, `E_1=o(R_v^2)` is a **long-start mean-square** statement inherited from the `VIS-192`--`VIS-209` framework. It does not yield a uniform-in-start estimate. Higher cancellation classes and the remaining finite-start coherence problem require separate arguments.
+Most importantly, `E_1=o(R_v^2)` is a **long-start mean-square** statement inherited from the `VIS-192`--`VIS-209` framework. It does not yield a uniform-in-start estimate. There is no further nonzero higher-cancellation class inside this exact pair-difference shell expansion: by the exact `VIS-204` trichotomy, zero cancellations give the four-prime shells, one cancellation gives the prime/prime shells treated here, and two cancellations give only `xi=0`. The remaining unresolved problem in this framework is finite-start coherence/uniformity; any genuinely higher-order cancellation hierarchy would require a different higher-moment or higher-degree expansion and a new classification.
 
 Falsify this finding by locating an error in the weighted Schur reduction, the multiplicative-to-additive band comparison, the translated-interval prime count, the endpoint maximization of `z^beta/log z`, the normalization by `Q_y`, or the use of `VIS-192`'s `R_v asymp 1/H` regime.
 
@@ -262,4 +262,4 @@ Falsify this finding by locating an error in the weighted Schur reduction, the m
 
 The one-cancellation Gram operator is no longer the unresolved obstruction in the diverging strictly subcritical long-start regime. Its complete shell energy is `o(R_v^2)`.
 
-The active frontier should therefore move to mechanisms not covered by this theorem: higher cancellation classes in the exact difference-shell expansion, or the separate problem of upgrading start-averaged/density-one control to a genuinely uniform finite-start statement. Those are new coherent investigations rather than reasons to extend this finding further.
+Within the current exact pair-difference model, `VIS-204` already exhausts the cancellation taxonomy, so there is no additional nonzero "higher-cancellation shell" frontier to pursue. The active frontier is instead the separate problem of upgrading start-averaged/density-one control to a genuinely uniform finite-start statement. A future higher-moment or higher-degree expansion may introduce new cancellation classes, but that would be a different mathematical object requiring its own representation dictionary rather than a continuation of the present shell trichotomy.
