@@ -1,31 +1,21 @@
-# MI-020 — Complete one-signed screening trades discrete vanishing for support packing
+# MI-020 — Complete one-signed screening reaches the log-2 packing ceiling even with all prime lags and full span
 
-**Evidence level:** exact on the hypothetical one-signed first unrestricted Suzuki crossing under complete active prime-power screening, by [WI-281](../../findings/WI-281-complete-one-signed-prime-screening-forces-log2-support-packing-and-a-smaller-archimedean-budget.md). No theorem that the first null mode is one-signed, no exclusion of complete screening, and no RH consequence is claimed.
+**Evidence level:** exact on the relaxed one-signed first-crossing class isolated by [WI-281](../../findings/WI-281-complete-one-signed-prime-screening-forces-log2-support-packing-and-a-smaller-archimedean-budget.md) and sharpened by [WI-282](../../findings/WI-282-complete-prime-screening-and-full-span-do-not-lower-the-log2-packing-budget.md). No theorem that the first null mode is one-signed, no exact-null-equation realization, and no RH consequence is claimed.
 
-Suppose the first null mode can be chosen `v>=0` and every active prime-power autocorrelation vanishes. The powers of two already impose a rigid geometric consequence. Since
+WI-281 shows that if a hypothetical first null mode satisfies `v>=0` and all active prime-power autocorrelations vanish, the powers of two already force its positive set to be a measurable selector modulo `L=log 2`. Hence `|{v>0}|<=L`, and Riesz rearrangement lowers the positive archimedean budget from the unrestricted `K_+` to
 
-`C_v(k log 2)=0`
+`K_pack=(1/2) lambda_max(T_L)<K_+`.
 
-and the integrand is nonnegative, the nonzero set `E={v>0}` cannot contain two points in the same `log 2` lattice fiber. Hence
+WI-282 identifies the exact limit of this support-packing mechanism. Every positive von-Mangoldt lag is at least `log 2`, so the top eigenfunction on one interval of length `L` already screens **all** prime-power lags, not only powers of two. Therefore complete prime-power screening has exact relaxed supremum `K_pack`.
 
-`|E|<=log 2`.
+Qualitative first-crossing full span does not lower that supremum either. One can truncate the interval optimizer, add arbitrarily small boundary satellites reaching both aperture endpoints, and remove the finitely many core points that create active forbidden distances. The resulting nonnegative profiles screen every active prime-power lag, have full essential span, and converge in `L^2` to the `K_pack` optimizer. Thus no uniform gap
 
-So complete arithmetic screening is not merely absence of a discrete source term. It forces the mode to be a measurable selector modulo the smallest prime-power lattice. First-crossing geometry simultaneously requires full essential span, so the screened mode must be sparse across the whole aperture rather than a short compact bump.
+`B_+(f) <= K_pack-c(a)`
 
-WI-281 converts this support restriction into the continuous source budget. The positive part of the Suzuki archimedean kernel is symmetric decreasing, so Riesz rearrangement shows that the largest possible positive contribution under the packing constraint is exactly
+can follow from nonnegativity, normalization, complete screening and full essential span alone.
 
-`K_pack=(1/2) lambda_max(T_L)`,  `L=log 2`,
+The source-specific bootstrap has therefore reached a precise relaxation boundary. “Use the other primes” and “use full span” are closed as standalone scalar refinements. Any strict improvement must use information excluded by the relaxation: the exact null equation `A_a v=0`, quantitative mass in separated regions, nodal/regularity constraints, balance between archimedean and prime source terms, a first-crossing spectral-area margin, or a simultaneous-cut identity coupling more than the zero set of autocorrelations.
 
-where `T_L` is the positive kernel compressed to one interval of length `L`. Finite support makes this strictly smaller than the unrestricted convolution budget:
+The durable point is that a source constraint can shrink the continuous admissible class without shrinking it enough. Once the relaxed class contains profiles arbitrarily close to the packing extremizer, adding more constraints that are already satisfied by those profiles cannot improve the budget. The next theorem has to distinguish actual null modes from those relaxed near-extremizers.
 
-`0<K_pack<K_+`.
-
-Therefore complete one-signed screening implies the sharpened necessary condition
-
-`2 int_(a/2)^a lambda_r dr <= K_pack<K_+`.
-
-This is a source-specific bootstrap that generic cut geometry cannot see. The assumption used to erase the prime source feeds back and reduces the archimedean freedom available to do the erasing. In that sense screening consumes its own continuous budget.
-
-The strongest current interpretation is not that screening is impossible, but that **discrete vanishing and continuous admissibility are coupled by the arithmetic lag semigroup**. Power-of-two packing is the first exact instance. Any stronger contradiction must use additional prime lags, the null equation, first-crossing structure, nodal regularity, or another source constraint to shrink the admissible class below the actual spectral-area requirement.
-
-**Boundary.** The packing argument uses `v>=0`; it does not apply directly to sign-changing null modes because zero autocorrelation no longer forces pointwise disjointness. `K_pack<K_+` is strict but not numerically shown to contradict the source reserve. The result supplies a sharper necessary condition, not an exclusion theorem.
+**Boundary.** The sharpness construction is not a Suzuki null mode and says nothing about the sign-changing branch. The full-span satellites may carry vanishing mass, so a *quantitative* two-sided mass condition could still lower the budget.

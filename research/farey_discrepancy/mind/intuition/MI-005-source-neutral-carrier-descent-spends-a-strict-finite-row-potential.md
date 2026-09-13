@@ -1,31 +1,31 @@
-# MI-005 — Adaptive nonhead descent has a sharp carrier-free logarithmic source budget
+# MI-005 — The sharp logarithmic predecessor window is source-tagged above the linear mass floor
 
-**Evidence level:** proved for the current nonhead predecessor branches by [FD-102](../../findings/FD-102-adaptive-nonhead-retagging-has-an-exact-logarithmic-source-budget.md); [FD-103](../../findings/FD-103-power-dense-record-ladders-saturate-the-logarithmic-source-budget.md) shows the logarithmic coefficient is geometrically sharp on actual source-record carriers. No logarithmic-depth packet-transport theorem or RH contradiction is claimed.
+**Evidence level:** proved for the current predecessor geometry by [FD-102](../../findings/FD-102-adaptive-nonhead-retagging-has-an-exact-logarithmic-source-budget.md), [FD-103](../../findings/FD-103-power-dense-record-ladders-saturate-the-logarithmic-source-budget.md), [FD-104](../../findings/FD-104-direct-core-compression-uniformizes-predecessor-transport-above-the-linear-mass-floor.md) and [FD-105](../../findings/FD-105-adaptive-low-source-cap-keeps-logarithmic-predecessor-chains-at-polynomial-source-scale.md). No branch-sensitive contradiction or RH consequence is claimed.
 
-FD-100--FD-101 first show that a fixed/tagged nonhead carrier cannot preserve one source quotient indefinitely: row inventory drains, and floor/ceiling drift changes the source shell at most once before exactifying the carrier. FD-102 removes the remaining retagging loophole entirely at the geometric level.
+FD-102 removes carrier identity from the deterministic nonhead budget. For a state with horizon `H` and sampled source quotient `x`,
 
-For a nonhead state at horizon `H` sampling source quotient `x`, define
+`A(H,x)=log_2((H-1)/(8x-1))`
 
-`A(H,x)=log_2((H-1)/(8x-1))`.
+drops by one under a nonhead predecessor unless retagging pays through genuine source descent. FD-103 proves that the resulting `(1-Theta+o(1)) log_2 H` source-neutral window is geometrically sharp on actual power-dense source-record ladders.
 
-Every current nonhead predecessor satisfies `H'<=ceil(H/2)`. After arrival the packet may retag onto **any** nonhead row with new source quotient `y`, yet
+FD-104 closes the old fixed-certificate transport caveat above the linear nonsquarefree-mass floor. If `U_H>=H^(1+delta)`, direct single-state core compression gives, for fixed `1/2<sigma<Theta`, a genuine predecessor `C<H` with
 
-`A(H',y) <= A(H,x)-1 + log_2((8x-1)/(8y-1))`.
+`U_C/C^(2sigma) >= b_sigma U_H/H^(2sigma)`.
 
-Hence carrier switching cannot reset source-neutral inventory for free. If the retag does not move to a smaller source (`y>=x`), one full unit of `A` is spent. Along any `m` consecutive nonhead predecessor states, irrespective of carrier identity,
+The construction no longer needs an occupied additive block or fixed projective-quality lower bound. The actual normalized mass is the induction currency.
 
-`8x_m-1 <= (H_0-1)/2^m`.
+FD-105 then shows that high mass carries its own source tag. The exact low-source cap
 
-A segment that never drops below its initial source scale therefore has length at most `A(H_0,x_0)`. On the false-RH frontier core this is
+`E_H^(<=L) <= 2H(L+1)`
 
-`m <= (1-Theta+delta+o(1)) log_2 H_0`.
+allows the adaptive threshold `L_H=floor(U_H/(H log H))`. Almost all high-mass nonsquarefree energy lies above `L_H`, and the exact predecessor repairs preserve a destination mask above `L_H/2`. Thus the same step can be chosen with
 
-FD-103 shows that this is not merely a proof artifact. Power-dense strict source records seed dyadic nonhead ladders with constant sampled source `X`, and those ladders satisfy
+`U_C^(>L_H/2)/C^(2sigma) >= b_sigma U_H/H^(2sigma)`
 
-`m=A(2^k X,X)+o(1)`.
+and consequently `C >> U_H/(H log H)`.
 
-At frontier scaling `X=H_0^(Theta+o(1))` they realize the coefficient `(1-Theta+o(1)) log_2 H_0`. Their intrinsic projective quality remains only polynomially small, with the top-scale lower bound `H_0^(-2Theta(1-Theta)-o(1))`. Thus no argument using only horizon contraction, row eligibility, floor geometry or source-record recurrence can shorten the logarithmic source-neutral window.
+Starting from a strict false-RH record entry, the guaranteed `xi log H_0` chain therefore cannot escape by collapsing to bounded physical or source scale. For every admissible `xi`, both the realized horizons and the transported source quotients remain at a positive power of the original `H_0` throughout the guaranteed window.
 
-The live obstruction has moved from **retagging** to **packet strength across logarithmic depth**. The deterministic geometry already forces either a head, genuine source descent, or exhaustion after `c log H` nonhead steps. What is missing is a uniform predecessor-energy theorem showing that sufficiently strong mass survives long enough for this deterministic budget to matter, or an argument that extracts enough progress from the intervening head/source-descending events.
+The remaining obstruction is finer than survival. The scalar constant `b_sigma` takes the worst branch and discards the correlation between **how much normalized mass is lost, how strongly the horizon contracts, and how much source descent occurs**. FD-102 shows the deterministic source-neutral ceiling is already sharp, so a contradiction must recover this branchwise joint information rather than improve a global minimum constant.
 
-**Boundary.** FD-103 supplies matched sharp carriers, not a counterexample to a future fixed-occupation packet theorem. The projective quality bound is polynomial and does not by itself guarantee the packet strength required at every step.
+**Boundary.** The theorem needs fixed-power high mass; the source tag degenerates at the exact linear floor. The logarithmic chain and its polynomial source scale do not by themselves force source descent faster than the sharp FD-102 budget.

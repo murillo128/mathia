@@ -1,27 +1,23 @@
-# MI-014 — The one-cancellation anchor Gram is negligible in the strictly subcritical long-start regime
+# MI-014 — The exact pair-difference cancellation taxonomy closes after the one-cancellation Schur bound
 
-**Evidence level:** supported by VIS-204, [VIS-209](../../findings/VIS-209-one-cancellation-shell-anchor-gram-kernel.md) and [VIS-211](../../findings/VIS-211-brun-titchmarsh-schur-closes-one-cancellation.md). The withdrawn VIS-210 finite-support diagonalization supplies no current evidence. No worst-start, higher-cancellation or critical-scale theorem is claimed.
+**Evidence level:** supported by VIS-204, [VIS-209](../../findings/VIS-209-one-cancellation-shell-anchor-gram-kernel.md) and [VIS-211](../../findings/VIS-211-brun-titchmarsh-schur-closes-one-cancellation.md). The withdrawn VIS-210 finite-support diagonalization supplies no current evidence. No worst-start or critical-scale theorem is claimed.
 
-VIS-209 identifies the first surviving one-cancellation layer with one positive semidefinite prime-anchor Gram kernel. If `G` is the Gram matrix of anchor profiles, then
+VIS-204 gives an exact trichotomy for the current pair-difference shell expansion: zero cancellations produce the four-prime shells, one cancellation produces prime/prime shells, and two cancellations force only `xi=0`, the diagonal already removed from the off-diagonal problem. There is therefore no further nonzero “higher-cancellation shell” hidden inside this exact representation.
 
-`E_1=4[tr(G^2)-sum_u G_(u,u)^2]`.
-
-This exact reduction makes cross-anchor concentration, not raw shell multiplicity, the relevant quantity. The former VIS-210 claim that thin windows diagonalize the anchor family was withdrawn, so any valid estimate has to retain the true prime-ratio couplings.
-
-VIS-211 does exactly that for the autocorrelation taper. With
+VIS-209 identifies the one-cancellation family with a positive semidefinite prime-anchor Gram kernel. For the autocorrelation taper,
 
 `Psi_(u,t)=Q_y^(-1)(ut)^(-alpha) rho(H log(u/t))`,
 
-weighted Schur reduces the operator norm to one translated prime-window supremum. A location-uniform Brun--Titchmarsh bound plus rapid taper decay gives, throughout every diverging strictly subcritical scale `H log y/y -> 0`,
+and the exact energy is controlled by its coupled anchor geometry rather than individual shell counts. VIS-211 keeps those true couplings and uses weighted Schur plus translated Brun--Titchmarsh to prove, throughout every diverging strictly subcritical scale `H log y/y -> 0`,
 
 `||Psi||_op=o(H^(-1/2))`.
 
-Since `R_v(y,H) asymp 1/H` in the same regime, the exact VIS-209 inequality implies
+Since `R_v(y,H) asymp 1/H` in the same regime, the exact VIS-209 inequality yields
 
 `E_1=o(R_v^2)`.
 
-The one-cancellation anchor geometry is therefore no longer merely a candidate concentration problem: **its full long-start mean-square contribution is asymptotically negligible in the whole diverging strictly subcritical window**. This closure uses the coupled kernel itself and does not resurrect any unsupported diagonalization.
+Thus the complete nonzero cancellation taxonomy of the present pair-difference model is exhausted in the long-start strictly subcritical regime: the one-cancellation family is negligible, while the two-cancellation family contains no off-diagonal shell at all. Continuing to search for a “next cancellation class” inside this same expansion would invent a nonexistent object.
 
-The research frontier moves one layer outward. Higher cancellation classes may contain new coupled combinatorics not reduced by the same one-anchor Schur estimate. Separately, long-start mean-square suppression does not control every starting height; rare coherent starts could survive even when their density tends to zero. The critical `H asymp y/log y` scale also remains outside the theorem.
+The unresolved directions are orthogonal to that taxonomy. First, the theorem is start-averaged/long-start; it does not exclude rare coherent starting heights. Second, the critical scale `H asymp y/log y` is outside the strictly subcritical estimate. A genuinely higher cancellation hierarchy could still appear after changing the observable to a higher moment or higher-degree expansion, but that would require a new representation dictionary and new exact shell classification rather than being a continuation of VIS-204.
 
-**Boundary.** VIS-211 assumes a fixed autocorrelation taper with nonnegative rapidly decaying spectrum and `0<=alpha<1/2`. It proves neither a sharper uniform `Q_y/H` Schur law nor any worst-start estimate. The durable conclusion is only that the one-cancellation shell is closed for the stated long-start strictly subcritical problem.
+**Boundary.** VIS-211 fixes `0<=alpha<1/2` and a smooth autocorrelation taper with nonnegative rapidly decaying spectrum. It proves neither worst-start uniformity nor the critical-scale estimate. The closure here is representation-specific: it says the current exact pair-difference shell has no unanalysed nonzero higher-cancellation class.

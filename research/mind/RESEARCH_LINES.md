@@ -8,46 +8,54 @@ Weil Positivity has closed positive additive preservation and nonlinear target s
 
 The open theorem is therefore sharper than “find a signed completion.” Derive an admissible source-native coupling or category descent **without assuming the RH-equivalent growth statement**, then prove that its final degree-two, parallelogram and translation identities identify the exact Weil quadratic form. Matched counting controls should distinguish generic pole removal from arithmetic zero information.
 
-## Which source resources survive into the exact destination margin?
+## Which source resources survive into the exact destination margin and resolution?
 
-[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md) now has explicit source-to-target and destination-locality examples.
+[MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md), [MI-014](intuition/MI-014-componentwise-coercivity-needs-a-switching-cost-before-globalization.md) and [MI-015](intuition/MI-015-relaxations-that-retain-an-endpoint-extremizer-cannot-prove-the-endpoint.md) separate source-resource pricing, component globalization, representation resolution and relaxation sharpness.
 
-Arithmetic Fidelity gives a two-resource source window and an exact margin-transfer law. AF-324--AF-325 quantify how support height `H` both fills bad phase geometry and weakens uniform Diophantine separation. AF-326 then shows, conditional on exact middle-singular incidence, that the source lower bound on `|s_3|` forces a retained second-harmonic margin `4-|s_2|>=|s_3|^2/64`. The missing question is exact incidence plus whether the resulting `H,t` target margin is strong enough for the downstream theorem.
+Arithmetic Fidelity has moved from a recovery denominator to the whole retained Gram boundary. AF-327 proves that the `{1,z,z^2,z^4}` moment Gram of every nonzero eight-prime common-time orbit stays quantitatively interior, with a support-height/time-height Baker--Wüstholz envelope transferred to determinant/eigenvalue slack. The missing theorem is exact middle-singular incidence plus whether this target-native margin is strong enough for the downstream argument.
 
-Prime Flute gives the complementary destination geometry. PF-330 conserves total packet mass and PF-331 removes polar instability. PF-332 goes further: the completed square-root defect `F-I` is exactly a resolvent-dressed pant/core insertion, and its physical translation commutator is sourced only by `[Lambda_LL,tau]`. The open theorem is uniform control of that relative resolvent transfer, not another scalar packet norm or independent seam-square-root estimate.
+Prime Flute now separates operator norm from the endpoint norm. PF-333 shows that generic positive relative square-root perturbations can pay a logarithmic operator-norm penalty, while PF-334 proves dimension-free Hilbert--Schmidt control and a nonlinear `S_2` transfer under a uniform normalized-insertion envelope. The open theorem is localized reciprocal-prime `S_2` control of the actual pant/core insertion and its resolvent-dressed low/high geometry, not an unnecessary `S_infinity` bound.
 
-Nyman--Beurling now separates two destination currencies. NB-102 says local three-state conditioning is governed by dimensionless Menger curvature. NB-103 says fixed-multiplicity confluent determinant volume is curvature-blind and depends instead on radial depth `2 Re(lambda_*) log q`. Source geometry must be tested against the quantity the final Nyman argument actually consumes.
+Nyman--Beurling has added a finite-window resolution currency. NB-103 gives fixed-multiplicity confluent volume as a Laguerre law in radial depth `x=2a log q`; NB-104 shows that near the boundary the cells spend an ordinate delay `y=2a log^+(|Gamma|/m)`, leaving `e^(-dy)Delta_d(x-y)` when `y<x`. The live question is whether a target-aware choice of `m,q` can preserve a source-useful post-delay margin; absolute ordinate alone is not an invariant because moving the band start changes the delay.
 
-## Which cancellation theorem remains after exact simplifications have moved the cost elsewhere?
+## Which cancellation theorem remains after transport and normalization shortcuts are closed?
 
-[MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md) tracks the relocated endpoint costs.
+[MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md), [MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) and [MI-015](intuition/MI-015-relaxations-that-retain-an-endpoint-extremizer-cannot-prove-the-endpoint.md) track the relocated endpoint costs.
 
-Farey Discrepancy has eliminated adaptive carrier retagging as an independent obstruction. FD-102 gives a carrier-free logarithmic source-neutral budget and FD-103 shows it is sharp on actual record ladders. The remaining theorem is uniform packet strength/source progress at depth proportional to `log H`, with the explicit polynomial projective tax accounted for.
+Farey Discrepancy has crossed the old logarithmic-depth packet-strength barrier. FD-104 transports actual normalized mass above the linear floor, and FD-105 makes the resulting `c log H` predecessor chain source-tagged and polynomially large in both physical and source scale. The remaining theorem is branch-sensitive: couple normalized-mass loss, horizon contraction and source descent strongly enough to beat the sharp FD-102 source-neutral budget. A single worst-branch constant discards the information now needed.
 
-Möbius Cancellation now distinguishes witness use from witness normalization. MC-273 gives the homogeneous-shell collapse; MC-274 prices atomwise witness search; MC-275 shows all negative witnesses can be aggregated at degree `m+1`, but normalizing that overlap reconstructs Boolean OR and costs endpoint-scale exact/approximate degree on the generic cube. The surviving route must exploit the tightly localized arithmetic image, a distributional surrogate on that image, or the unnormalized signed aggregate without division by witness count.
+Möbius Cancellation has closed both generic normalization extremes. MC-275 shows pointwise normalization reconstructs OR and is too expensive; MC-276 shows L2 normalization is cheap because it subtracts the blind atom exactly. The surviving target is the signed linear residual at source depth `m`, or another uncentered observable that retains the blind atom and prevents nonblind arithmetic phase from masking it.
 
-Prime Lattice has removed the pure-branch singular derivative obstruction. PL-297 blocks a uniform half-Sobolev shortcut; PL-298 gives fixed-order `C^1` shift response; PL-299 proves `C_s->C_0` in `C^1` on the pure principal branch by uniform BV. The residual is to obtain comparable BV/derivative-measure compactness and completion control for the actual completed-Weil eigenbranch, while the independent source-specific sign gate remains open.
+Prime Lattice has removed the pure-branch singular derivative obstruction. PL-297 blocks a uniform half-Sobolev shortcut; PL-299 gives fixed-order `C^1` shift response and pure-branch `C^1` convergence by uniform BV. The residual is comparable compactness and completion control for the actual completed-Weil eigenbranch, while the independent source-specific sign gate remains open.
 
-## Can a globally selected Robin fan realize the only remaining raw reset?
+## Can positive whole-fan Robin transport be globalized across source blocks?
 
-Robin Extremal has moved beyond both local endpoint classification and matched-run bookkeeping. RE-104 forces near-square-root fan complexity or huge stretch. RE-106 then shows that the corrected Chebyshev coordinate accumulates power-scale debt across the **whole** compact threshold fan, regardless of intermediate fringe pattern.
+[MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) records that the last intra-fan reset branch is closed.
 
-All intermediate fringe corrections telescope when returning to the raw Chebyshev deficit. A complete raw reset can come only from the terminal fringe atom, which forces the stronger super-stretch `log R_B >= c X_B^(1-b_1) log X_B` and places the endpoint on the deep base-two successor ladder. The live global theorem is whether false-RH source geometry can realize that extreme lacunary endpoint, or whether the stretch itself forces a contradiction-strength source signal.
+RE-107 feeds the scale of a hypothetical terminal fringe reset back into the same false-RH amplitude floor and proves
 
-## What remains after the one-cancellation visual shell is suppressed?
+`H_vartheta(Z_R)-H_vartheta(Z_L) >= c_J X^(1-b_1) log X > 0`
 
-Visual Exploration retains the exact VIS-209 coupled anchor-Gram reduction and does not use the withdrawn VIS-210 diagonalization. VIS-211 now proves the weighted-Schur route directly: throughout every diverging strictly subcritical long-start regime, the full one-cancellation shell satisfies `E_1=o(R_v^2)`.
+across every sufficiently late compact positive fan, uniformly in physical stretch. The super-stretched base-two endpoint cannot erase the whole-fan raw Chebyshev debt.
 
-The frontier therefore moves to higher cancellation classes, the critical `H` scale, and the separate problem of upgrading start-averaged/density-one control to worst-start uniformity or finding a rare coherent-start obstruction. The one-cancellation Schur problem itself is no longer live in the VIS-211 regime.
+The open problem is therefore inter-block rather than intra-fan. Determine whether repeated power-scale positive raw Chebyshev transport can coexist with the reciprocal-Mertens coordinate and the source phase required to seed later positive Robin-counterexample blocks, or whether block-to-block recurrence forces an impossible accumulated drift.
 
-## Can arithmetic screening constrain its own continuous admissible class strongly enough?
+## What remains after the exact visual pair-difference cancellation taxonomy is exhausted?
 
-Weil Inertia has crossed from generic Hilbert geometry to one exact source-specific compatibility law. WI-280 proves that arbitrary finite covariance mixtures on the generic PSD/null-partition class cannot break the scalar wall. WI-281 shows that complete one-signed prime-power screening is much more restrictive: powers of two force the null-mode support to be a selector modulo `log 2`, and the resulting Riesz packing lowers the positive archimedean budget from `K_+` to an exact `K_pack<K_+`.
+Visual Exploration retains the exact VIS-209 coupled anchor-Gram reduction. VIS-211 proves `E_1=o(R_v^2)` throughout every diverging strictly subcritical long-start regime. The exact VIS-204 boundary is that there is no further nonzero higher-cancellation shell in this pair-difference representation: two cancellations give only the removed diagonal.
 
-The question is whether additional actual-source constraints—other prime lags, firstness/null-equation structure, nodal regularity or a nonlinear joint invariant—lower that admissible budget enough to cross the spectral-area requirement. The sign-changing branch remains logically separate because the packing implication uses nonnegativity.
+The frontier is therefore worst-start coherence and the critical scale `H asymp y/log y`. Any genuinely higher cancellation hierarchy would require a new higher-moment/higher-degree observable and its own exact representation dictionary, not another pass over the closed pair-difference shell taxonomy.
+
+## Which exact null-mode constraint can lower the sharp one-signed Weil packing budget?
+
+[MI-015](intuition/MI-015-relaxations-that-retain-an-endpoint-extremizer-cannot-prove-the-endpoint.md) captures why the current screened relaxation is exhausted.
+
+WI-281 shows that complete one-signed screening forces `log 2` support packing and lowers the positive archimedean budget to `K_pack<K_+`. WI-282 proves this relaxation is sharp even after **all** prime-power lags and qualitative full essential span are imposed: the same `K_pack` supremum remains attainable or arbitrarily approachable.
+
+The next theorem must therefore distinguish actual first null modes from relaxed screened profiles. Candidates include the exact equation `A_a v=0`, quantitative mass in separated regions, nodal/regularity information, source-balance identities, a spectral-area margin, or simultaneous-cut constraints that couple more than autocorrelation zero sets. The sign-changing branch remains logically separate.
 
 ## Where does classical reproducibility finally stop in Prime Circle?
 
-PC-282--PC-283 show that the boundary selector and selector-subtracted scalar symbol are classical. PC-284 now proves that even the exact logarithmic finite-section normalized singular-spectrum law is Li-grid reproducible whenever `log B=o(sqrt(log q))`.
+PC-282--PC-283 show that the boundary selector and selector-subtracted scalar symbol are classical. PC-284 proves that even the exact logarithmic finite-section normalized singular-spectrum law is Li-grid reproducible whenever `log B=o(sqrt(log q))`.
 
 The one-profile source-placement frontier therefore begins only in the rational-microscopic regime at or beyond `sqrt(log q)` bandwidth, in a simultaneous three-parameter scaling, or after enriching the observable beyond one finite section and its ordered singular spectrum. A candidate effect inside the PC-284 transport window is a control artifact, not a new arithmetic carrier.

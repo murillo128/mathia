@@ -1,29 +1,31 @@
-# MI-037 — Support height, time height and target margin form a three-stage conditioning window
+# MI-037 — Support height and time height control the whole retained Gram boundary
 
-**Evidence level:** supported by [AF-324](../../findings/AF-324-bounded-prime-height-quantifies-fixed-time-phase-covering.md), [AF-325](../../findings/AF-325-bounded-support-height-uniformizes-prime-antipodal-conditioning.md) and [AF-326](../../findings/AF-326-toeplitz-moment-positivity-couples-singular-second-and-third-harmonics.md), building on AF-322--AF-323. No exact middle-singular incidence theorem or sharp covering asymptotic is claimed.
+**Evidence level:** supported by [AF-324](../../findings/AF-324-bounded-prime-height-quantifies-fixed-time-phase-covering.md), [AF-325](../../findings/AF-325-bounded-support-height-uniformizes-prime-antipodal-conditioning.md), [AF-326](../../findings/AF-326-toeplitz-moment-positivity-couples-singular-second-and-third-harmonics.md) and [AF-327](../../findings/AF-327-prime-height-time-separates-lacunary-moment-gram-boundary.md). No exact middle-singular incidence theorem or downstream sufficiency theorem is claimed.
 
-The support parameter missing from the AF-322/AF-323 quantifier split can be priced explicitly. Fix `m` and `tau != 0`, and let `rho_(m,tau)(H)` be the covering radius in `(S^1)^m` of distinct-prime phase tuples with every prime at most `H`. AF-324 proves
+The conditioning picture now has a source modulus and a destination boundary certificate on the same finite-resource scale. AF-324 shows that bounded prime supports still become dense in finite phase space as the support cap `H` grows. AF-325 gives the complementary finite-height exclusion: for eight primes `p_j<=H` and `|t|>=1`, the prime phase orbit stays a quantitatively controlled distance from the four-antipodal-pair singularity, with a Baker--Wüstholz envelope of the form
 
-`pi/pi(H) <= rho_(m,tau)(H) <<_(m,tau) H^(-19/40)`.
+`exp[-C (log H)^2 log(e+|t| log H)]`.
 
-Thus bounded support height does not restore a fixed phase-space gap. It gives a finite-resolution net whose mesh still shrinks polynomially. AF-325 supplies the complementary finite-height exclusion. Uniformly over every eight-prime support `P` with `max P<=H` and `|t|>=1`, the distance from the four-antipodal-pair locus obeys
-
-`delta_P(t) >= exp[-C (log H)^2 log(e+|t| log H)]`.
-
-On a hypothetical exact middle-singular hit, the same joint `H,t` envelope transfers to the reconstruction denominator `|s_3|`. AF-326 adds a second transfer that is entirely source-independent once the incidence constraints hold. Toeplitz moment positivity gives
-
-`|s_3|^2 <= 8(16-|s_2|^2)(32+|s_2|^2)/(64-|s_2|^2)`
-
-and in particular
+AF-326 transferred that source separation, conditional on the centered middle-singular incidence, into one retained coordinate through
 
 `4-|s_2| >= |s_3|^2/64`.
 
-Therefore the source-specific Baker margin does not have to remain hidden in the coordinate used for inversion. Conditional on an exact prime middle-singular hit, it forces an explicit gap from the extremal second-harmonic face. The conditioning chain is now concrete:
+AF-327 strengthens the destination statement. For the retained monomials `{1,z,z^2,z^4}`, let `G_0124` be the normalized moment Gram and `D_0124=det G_0124`. Cauchy--Binet expresses `D_0124` as a sum of nonnegative four-subset certificates. Rank loss forces at most four distinct phases, hence two disjoint collisions; the prime phase relation lattice excludes that geometry at every nonzero common time. Therefore
 
-`bounded source/time resources -> |s_3| margin -> retained |s_2| margin`.
+`D_0124(Z_P(t))>0`,
 
-The implication direction matters. Moment positivity by itself does not lower-bound `|s_3|`; the arithmetic source theorem supplies that input. Conversely, the arithmetic lower bound becomes useful downstream only after one proves that the target representation consumes a coordinate or norm in which the margin survives. AF-326 exhibits one exact instance of such a transfer.
+and the same height/time arithmetic separation plus a semialgebraic Łojasiewicz inequality gives
 
-The durable object is therefore a staged resource law rather than a support-independent condition number. Increasing support height enlarges the admissible source family; increasing time allows recurrence on each support; and the destination may consume a different geometric margin than the source theorem naturally controls. A faithful compression theorem must price all three stages under the correct quantifier order.
+`D_0124(Z_P(t)) >= exp[-C (log H)^2 log(e+|t| log H)]`.
 
-**Boundary.** AF-324 is a near-incidence theorem, not exact incidence or equidistribution. AF-325 does not decide whether `s_1=e_4=0` is ever attained. AF-326 is conditional on that exact centered middle-singular stratum and does not reverse the moment inequality. The lower and upper `H` scales remain far apart, so no sharp asymptotic for the source separation is known.
+Because `trace G_0124=4`, this also lower-bounds `lambda_min(G_0124)` up to an absolute factor. The source margin therefore reaches the **whole four-feature rank boundary**, not only the recovery denominator `|s_3|` or the extremal face seen by `|s_2|`.
+
+On the hypothetical stratum `s_1=e_4=0`, the exact identity
+
+`4096 D_0124 = 8(16-|s_2|^2)(32+|s_2|^2) - (64-|s_2|^2)|s_3|^2`
+
+shows precisely which curved equality face is excluded at finite `H,t`. This is stronger than saying that a coordinate remains nonzero: it gives a target-native slack with an operator-conditioning interpretation.
+
+The remaining gate is not generic stability. Exact incidence of `s_1=e_4=0` is still undecided, and even a positive Gram margin helps only if the downstream theorem consumes this retained four-feature geometry at a compatible quantitative scale. Support height, observation time, incidence and destination slack must therefore remain separate currencies.
+
+**Boundary.** The exponent in AF-327 is structural rather than sharp; `D_0124>0` does not imply exact middle-singular incidence or complete prime recovery; and the condition-number consequence concerns only the retained four-feature Gram.

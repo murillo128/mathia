@@ -1,19 +1,19 @@
-# MI-014 — Globalization needs either a component budget or an index-free coercive potential
+# MI-014 — Globalization needs either a priced component family or an index-free/source-tagged coercive state
 
-**Evidence level:** supported by Arithmetic Fidelity through [AF-325](../../arithmetic_fidelity/findings/AF-325-bounded-support-height-uniformizes-prime-antipodal-conditioning.md) and Farey Discrepancy through [FD-103](../../farey_discrepancy/findings/FD-103-power-dense-record-ladders-saturate-the-logarithmic-source-budget.md). The two mechanisms are logically analogous but mathematically distinct.
+**Evidence level:** supported by Arithmetic Fidelity through [AF-327](../../arithmetic_fidelity/findings/AF-327-prime-height-time-separates-lacunary-moment-gram-boundary.md) and Farey Discrepancy through [FD-105](../../farey_discrepancy/findings/FD-105-adaptive-low-source-cap-keeps-logarithmic-predecessor-chains-at-polynomial-source-scale.md). The two mechanisms are logically analogous but mathematically distinct.
 
-The earlier version of this note isolated a common failure mode: componentwise coercivity need not survive free switching between source components. Current evidence sharpens that diagnosis because the two lines have now resolved it in **different ways**.
+Componentwise coercivity can fail under free switching unless the component freedom itself is priced or removed from the state variable. The current corpus now exhibits both architectures with quantitative downstream consequences.
 
-Arithmetic Fidelity retains the component parameter. Fixing a prime support gives a time-height modulus; letting supports vary freely destroys every time-only gap. AF-324--AF-325 show that bounding the component family by maximum prime `H` restores a uniform but degenerating two-resource envelope. The cost of changing support is therefore recorded by an explicit source-size resource rather than eliminated.
+Arithmetic Fidelity retains and prices the component family. Fixed prime support gives a time-height modulus, while unrestricted support variation destroys every time-only gap. Bounding maximum prime by `H` restores a uniform but degenerating source envelope. AF-327 then transfers that `H,t` control into the determinant/eigenvalue slack of a retained four-feature Gram. Support height is not an auxiliary label: it is part of the quantitative destination margin.
 
-Farey Discrepancy instead removes the component index from the coercive quantity. FD-102 replaces per-carrier row inventory by
+Farey Discrepancy removes the carrier index from the deterministic budget. FD-102's
 
-`A(H,x)=log_2((H-1)/(8x-1))`,
+`A(H,x)=log_2((H-1)/(8x-1))`
 
-which survives arbitrary retagging. A carrier switch can replenish potential only by paying through a smaller source quotient, so the local termination theorem globalizes without tracking carrier identity. FD-103 then proves that this index-free logarithmic budget is sharp on actual record ladders.
+survives arbitrary retagging and can be replenished only through genuine source descent. FD-104--FD-105 show that, above the linear mass floor, this index-free geometry can be paired with actual mass transport and an adaptive source tag `L_H~U_H/(H log H)`. The chain therefore remains at polynomial source scale for logarithmic depth without remembering carrier identity.
 
-These are two reusable globalization architectures. One may **retain and price the component label** in a destination-visible parameter, as Arithmetic Fidelity does with support height, or derive an **index-free potential** whose dissipation already absorbs switching, as Farey does with `(H,x)`. Asking for an extra switching cost is necessary only when neither architecture is available.
+The remaining Farey difficulty illustrates the next gate: once an index-free/source-tagged state exists, globalization may still require **branch coupling**. The worst branch constant `b_sigma` forgets how mass loss, horizon contraction and source descent co-vary, so the sharp deterministic budget cannot yet be converted into a contradiction.
 
-The adversarial test is consequently stronger than “is the fixed-component estimate uniform?” If not, identify whether the degeneration can be parameterized by a source resource that the final theorem can keep. Independently ask whether the component index can be quotiented out by a coercive state variable that telescopes across switches. Only if both fail is an explicit switch-count/variation penalty still the missing theorem.
+These are two reusable architectures. One may retain a component parameter and propagate its quantitative cost into the destination, or quotient out component identity by a coercive state that survives switching and still carries enough source information. If either architecture succeeds only after taking a worst-case scalar envelope, test whether that envelope has erased the correlation needed by the final theorem.
 
-**Boundary.** AF support height does not determine exact support provenance and its current upper/lower moduli are far from sharp. FD's carrier-free potential controls deterministic source-neutral depth, not packet energy. No numerical potential transfers between the lines.
+**Boundary.** AF support height does not determine exact support provenance or exact middle-singular incidence. FD's adaptive source tag needs fixed-power high mass and does not yet close the branch-sensitive source-descent budget. No numerical potential transfers between the lines.

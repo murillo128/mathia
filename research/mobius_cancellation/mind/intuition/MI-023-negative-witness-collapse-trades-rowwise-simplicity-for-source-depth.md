@@ -1,31 +1,29 @@
-# MI-023 — Negative witnesses aggregate cheaply; normalization is an OR barrier
+# MI-023 — Generic witness normalization is either expensive or blind to the blind atom
 
-**Evidence level:** proved for the flat Christoffel source by [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md), [MC-274](../../findings/MC-274-negative-witness-conditioning-fourier-depth-tax.md) and [MC-275](../../findings/MC-275-witness-normalization-approximate-degree-barrier.md). No low-degree theorem on the actual localized Legendre-shell image or endpoint cancellation estimate is claimed.
+**Evidence level:** proved for the current flat Christoffel source by [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md), [MC-274](../../findings/MC-274-negative-witness-conditioning-fourier-depth-tax.md), [MC-275](../../findings/MC-275-witness-normalization-approximate-degree-barrier.md) and [MC-276](../../findings/MC-276-distributional-witness-normalization-christoffel-collapse.md). No signed arithmetic cancellation theorem or blind-support exclusion is claimed.
 
-MC-273 gives an exact rowwise simplification. If a target sign vector has a negative lower-prime coordinate `i`, then
+MC-273 gives an exact rowwise simplification after any negative lower-prime witness, and MC-275 shows that using **all** such witnesses simultaneously is cheap. With `b(x)` the number of negative coordinates,
 
-`g_m(x)=sum_(|S|<=m)x_S=e_m(x_hat_i)`.
+`U_m(x)=b(x)g_m(x)=1/2[(k-m)e_m-(m+1)e_(m+1)]`,
 
-MC-274 shows that selecting such witnesses atom by atom can be expensive: conditioning through query depth `J` raises the Walsh/source degree of the energy from `2m` to `2m+J`, and resolving an atom-scale family naturally asks for `J` much larger than the original `m=Theta(log log y)`.
+so overlap itself costs only one extra Walsh/source degree. MC-274 shows that selecting witnesses atom by atom can still be expensive, but first-witness search is not intrinsically required.
 
-MC-275 corrects the over-broad reading of that obstruction. Witness **aggregation itself is cheap**. Writing `b(x)` for the number of negative coordinates,
+The obstruction is normalization. Exact normalization to one unit per nonblind row reconstructs Boolean OR and has full degree `k`; uniform approximation costs `Theta(sqrt(k log(1/epsilon)))` on the generic cube. MC-276 now closes the most natural weaker escape. If a degree-`m` selector `Q` is constrained by `Q(x_*)=0` at the blind point and `P=1-Q`, then under any measure `rho` with blind mass `a`,
 
-`U_m(x)=sum_i n_i(x)e_m(x_hat_i)=b(x)g_m(x)`
+`||Q-NB||_(L2(rho))^2 = ||P||_(L2(rho))^2-a`.
 
-and
+Under the uniform cube the optimum is exactly the existing Christoffel kernel `P_m=g_m/Z_m`, with minimum error `1/Z_m-2^(-k)`. On the actual arithmetic shell,
 
-`U_m=1/2[(k-m)e_m-(m+1)e_(m+1)]`.
+`empirical L2 error = (E_(m,y)(t)-A_y(t))/C`.
 
-Thus all negative witnesses can be retained simultaneously with only one extra source degree. No decision tree or first-witness choice is required.
+Thus distributional least-squares normalization is cheap precisely because the loss **subtracts the blind mass one is trying to exclude**. It can be perfect when every sampled row is blind. This is not a softer route to the endpoint; it is an information-losing reformulation of the old positive Christoffel energy.
 
-The hard operation is dividing away the multiplicity `b`. An exact normalized decomposition must sum to the nonblind selector `NB=1_(b>0)`, whose multilinear representation is
+MC-276 also shows that support-respecting signed witness allocation is not the missing complexity. The radial optimizer factors as `Q_m(b)=b h_m(b)`, so signed weights `phi_i=n_i h_m(b)` have degree at most `m`, vanish when witness `i` is absent, and sum exactly to `Q_m`.
 
-`NB(x)=1-2^(-k) prod_i(1+x_i)`.
+The unresolved object is therefore the **signed linear residual**, not another classifier:
 
-Hence exact polynomial normalization has degree `k`. The symmetric `1/b` normalization has the same endpoint cost: polynomial interpolation on `b=1,...,k` needs degree at least `k-1`. Even approximate normalization is generically expensive because `NB` is OR: uniform error `epsilon` needs degree `Theta(sqrt(k log(1/epsilon)))`. Constant error already exceeds the live Christoffel depth, while atom-sensitive error is parametrically worse.
+`A_y(t)-L_(m,y)(t)=sum_T (Q_m(T)-NB(T))`,
 
-So the endpoint distinction is now three-way: **rowwise collapse is cheap, overlapping witness use is cheap, generic normalization/classification is expensive**. A useful continuation must avoid reconstructing OR on the full cube. It can instead exploit the tightly localized Legendre-shell image, prove a distributional surrogate only on that arithmetic image, or use the signed aggregate `b g_m` directly without division.
+where `L_(m,y)` uses source depth only `m`. A useful theorem must prevent nonblind arithmetic phase from cancelling an integer blind contribution, or control the uncentered Christoffel energy strongly enough to retain the atom. Pointwise OR approximation and L2 classification have now failed for opposite reasons: one is too expensive, the other deletes the target.
 
-MC-252 is the matched control. Once the upper primes are allowed to separate from the moving shell, genuine Legendre-symbol configurations realize the full Boolean cube. Therefore a low-depth escape cannot follow merely from quadratic reciprocity or primality; it must use the tight source-size coupling that the separated-prime control destroys.
-
-**Boundary.** The approximate-degree theorem is a worst-case full-cube obstruction, not a lower bound on the actual localized arithmetic image. MC-275 does not rule out distributional approximation or signed identities that never normalize witness multiplicity. Nothing here excludes blind support or improves `M(X)`.
+**Boundary.** The cube approximate-degree obstruction is worst-case; MC-276 does not compute the best polynomial for the empirical arithmetic measure. The independent-sign fluctuation scale is only a matched control, not arithmetic evidence. Signed cancellation on the localized Legendre shell remains open.

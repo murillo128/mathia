@@ -14,24 +14,22 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Move beyond the now-closed one-cancellation long-start frontier
+## Upgrade long-start shell suppression to worst-start control, or expose the coherent obstruction
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`.
 
-VIS-203--VIS-209 reduce the first surviving one-cancellation layer to a positive prime-anchor Gram kernel. After the withdrawal of VIS-210, cross-anchor couplings remain essential and no finite-support diagonalization is current evidence.
+VIS-203--VIS-209 reduce the only nonzero one-cancellation layer in the exact pair-difference expansion to a positive prime-anchor Gram kernel. VIS-211 proves, for the autocorrelation taper and every diverging strictly subcritical scale `H log y/y -> 0`,
 
-VIS-211 now proves the weighted-Schur route that had remained only a clue. For the autocorrelation taper and every diverging strictly subcritical scale `H log y/y -> 0`, translated Brun--Titchmarsh bounds give
+`||Psi||_op=o(H^(-1/2))`
 
-`||Psi||_op=o(H^(-1/2))`,
+and hence `E_1=o(R_v^2)` in long-start mean square.
 
-hence the exact VIS-209 identity yields
+The updated VIS-211 boundary is important: VIS-204 already exhausts the cancellation taxonomy of this exact pair-difference model. Zero cancellations give the four-prime shells, one cancellation gives the prime/prime family now suppressed, and two cancellations give only `xi=0`, the removed diagonal. There is **no further nonzero higher-cancellation shell** to attack inside this representation.
 
-`E_1=o(R_v^2)`.
+The live frontier is therefore temporal rather than another shell class. Either upgrade the start-averaged/density-one suppression to a genuinely uniform finite-start theorem, or construct and quantify rare coherent starting heights that survive the averaged estimate. The critical scale `H asymp y/log y` also remains outside VIS-211 and should be treated separately.
 
-Thus the **entire one-cancellation prime/prime shell energy is negligible in long-start mean square** throughout that regime. The one-cancellation anchor kernel is no longer the active obstruction there.
+A future higher-moment or higher-degree observable may create a new cancellation hierarchy, but that is a different mathematical object. It requires a fresh exact representation and shell classification rather than reusing the pair-difference terminology.
 
-The live frontier splits cleanly. One direction is combinatorial/spectral: control the higher-cancellation classes in the exact difference-shell expansion after the first cancellation has been removed. The other is temporal: upgrade the existing long-start/density-one control to a genuinely uniform finite-start statement, or construct a rare coherent-start obstruction. The critical scale `H asymp y/log y` is also outside VIS-211 and must not be silently imported from the strictly subcritical theorem.
+## Keep representation closure, critical scale and worst-start coherence separate
 
-## Keep long-start shell suppression, higher cancellations and worst-start coherence separate
-
-VIS-211 is an averaged theorem for one cancellation and a fixed autocorrelation taper. It does not diagonalize the kernel, prove worst-start cancellation, treat higher cancellation classes, or close the critical `H` scale. Future work should say which of those distinct residuals it attacks rather than continuing to optimize a Schur bound for a layer that is already negligible in the stated regime.
+VIS-211 closes the one-cancellation Gram frontier only in the stated strictly subcritical long-start regime. It does not prove worst-start cancellation or the critical-scale estimate. Conversely, the absence of another nonzero pair-difference cancellation class is exact and should not be reopened by heuristic language about “higher cancellations” unless the observable itself changes.

@@ -8,28 +8,28 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Use source/eigenfunction structure beyond scalar profiles and generic cut covariance
+## Use the exact null equation or quantitative mode geometry beyond complete screening
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`, `MI-020-complete-one-signed-screening-trades-discrete-vanishing-for-support-packing`.
 
-WI-274--WI-280 separate scalar firstness, retained Hilbert orientation and source-specific compatibility. Oriented cut covariance is stronger than scalar norm profiles, but arbitrary finite covariance mixtures on the generic PSD/null-partition class still admit two-pulse countergeometry. Noncommensurate shifts and more generic Hilbert optimization therefore do not cross the scalar budget wall by themselves.
+WI-274--WI-280 separate scalar firstness, retained Hilbert orientation and source-specific compatibility. Arbitrary finite covariance mixtures on the generic PSD/null-partition class still admit two-pulse countergeometry, so generic Hilbert optimization does not cross the scalar budget wall by itself.
 
-WI-281 now shows that the actual arithmetic lags can feed back into the admissible geometry on the **one-signed complete-screening branch**. If every active prime-power autocorrelation vanishes, the powers of two alone force the nonzero set of the hypothetical first null mode to be a measurable selector modulo `log 2`, hence of measure at most `log 2`. Riesz rearrangement converts that packing into an exact positive archimedean budget
+WI-281 shows that actual arithmetic screening can shrink the one-signed admissible class: powers of two force support packing modulo `log 2`, yielding the strict budget `K_pack<K_+`.
 
-`K_pack=(1/2) lambda_max(T_(log 2))`,
+WI-282 now proves that this packing mechanism is already sharp under two obvious refinements. The length-`log 2` optimizer automatically screens every prime-power lag, so adding the other primes does not lower the relaxed supremum. Requiring full essential span also leaves the same supremum because arbitrarily small boundary satellites can enforce span while preserving all finitely active forbidden distances and converging back to the packing optimizer.
 
-with the strict inequality `K_pack<K_+` against the unrestricted WI-274 budget. Complete screening therefore implies the stronger necessary condition
+The next one-signed theorem must therefore consume information not present in the relaxation
 
-`2 int_(a/2)^a lambda_r dr <= K_pack<K_+`.
+`f>=0`, `||f||_2=1`, complete prime-power screening, full essential span.
 
-This is the kind of source-specific compatibility missing from WI-280: the discrete arithmetic hypothesis shrinks the continuous admissible class. It still does not finish the branch. The new constant need not lie below the actual spectral-area lower bound, and the first null mode has not been proved one-signed.
+Promising load-bearing inputs are the exact null equation `A_a f=0`, a quantitative lower mass requirement in separated regions, regularity/nodal constraints of the localized operator, a balance identity between the archimedean and prime-power source terms, a positive first-crossing spectral-area margin, or simultaneous-cut relations coupling more than autocorrelation zero sets. The target is a strict decrement below `K_pack` or another contradiction-strength invariant derived from actual null-mode structure.
 
-The live continuation is to exploit **more of the actual source equation than power-of-two packing**. Add other prime lags, firstness/null-equation constraints, nodal/regularity information, or a nonlinear invariant that lowers the admissible budget further. In parallel, the sign-changing branch remains separate and needs its own mechanism; one-signed packing cannot simply be transferred to it.
+The sign-changing branch remains separate. Screening no longer implies support disjointness there, so the one-signed packing argument cannot simply be transferred.
 
-## Keep scalar exhaustion, generic Hilbert geometry and arithmetic compatibility distinct
+## Keep relaxation sharpness and source realization distinct
 
-WI-279 proves that scalarizing the cut path loses information. WI-280 proves that generic Hilbert orientation is still too large a class. WI-281 proves that a concrete arithmetic screening hypothesis can shrink that class quantitatively. The next theorem should identify which additional source constraints survive without assuming the desired sign or RH conclusion.
+WI-281 proves a source-induced packing bound; WI-282 proves that the corresponding relaxed class contains exact or arbitrarily close budget extremizers even after all prime lags and qualitative full span are imposed. Those profiles are not asserted to satisfy the Suzuki null equation. A future improvement must distinguish realizable first null modes from relaxed screened profiles rather than add another scalar condition already compatible with the `K_pack` extremizer.
 
-## Keep endpoint firstness, source reserve, sign geometry and prime overlap as separate gates
+## Keep endpoint firstness, source reserve and sign geometry as separate gates
 
-The reserve inequalities are sign-independent, while the packing bootstrap and prime-overlap tariff currently use a one-signed mode. A successful packing improvement does not prove that the relevant null mode has one sign, and a sign theorem does not by itself close the quantitative reserve. Future work should state which gate is being crossed.
+The reserve inequalities are sign-independent, while the packing bootstrap uses a one-signed mode. A stronger one-signed null-equation theorem would not prove that the relevant first mode has one sign, and a sign theorem would not by itself close the quantitative reserve. Future work should state which gate is being crossed.
