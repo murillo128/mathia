@@ -9,7 +9,7 @@ Continue the exact logarithmic-shell source isolated in `MC-258`--`MC-259`. Writ
 \[
 y=c\log X,
 \qquad
-R=\prod_{y<r\le 2y\atop r\ {m prime}}r,
+R=\prod_{y<r\le 2y\atop r\ {\rm prime}}r,
 \qquad
 T=X-P=X^{1+o(1)},
 \]
