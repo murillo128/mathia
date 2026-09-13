@@ -11,7 +11,9 @@ based_on:
   - research/prime_flute/findings/PF-214-simultaneous-seam-precision-is-block-jacobi-and-uniform-adjacent-hopping-would-force-exponential-schur-locality.md
   - research/prime_flute/findings/PF-215-thin-pant-corridors-force-normalized-adjacent-hopping-to-diverge.md
   - research/prime_flute/findings/PF-232-hypercycle-straightening-shear-is-reciprocal-prime-form-small.md
+  - research/prime_flute/findings/PF-233-variable-width-diagonal-corridor-has-exact-operator-valued-transfer-law.md
   - research/prime_flute/findings/PF-234-pf205-symmetric-seam-normalizer-is-quadratically-flat-comparable.md
+  - research/prime_flute/findings/PF-238-one-sided-seam-domination-closes-complete-lift-dressed-diagonal-transfer.md
   - research/prime_flute/findings/PF-239-reciprocal-prime-shear-makes-critical-band-leakage-absolutely-trace-summable.md
   - research/prime_flute/findings/PF-242-hypercycle-shear-is-exponentially-local-in-poschl-teller-mode-index.md
   - research/prime_flute/findings/PF-255-hypercycle-compactification-transport-is-a-parity-local-flow-with-a-two-derivative-leakage-bound.md
@@ -21,9 +23,10 @@ based_on:
   - research/prime_flute/findings/PF-317-positive-diagonal-completion-reduces-the-direct-angle-to-local-pant-crossing.md
   - research/prime_flute/findings/PF-318-logarithmic-rank-hilbert-schmidt-averages-already-close-the-direct-angle-at-weak-trace.md
   - research/prime_flute/findings/PF-319-corridor-form-smallness-alone-does-not-control-the-seam-normalized-direct-angle.md
+  - research/prime_flute/findings/PF-320-form-smallness-controls-the-direct-angle-even-when-raw-seam-blocks-amplify.md
 ---
 
-# Can the local pant `L/H` block reach reciprocal-prime mean-square leakage?
+# Can the shear-deleted local pant angle reach reciprocal-prime mean-square leakage?
 
 ## Observation
 
@@ -33,99 +36,97 @@ PF-315--PF-316 reduce the full physical `P/H` endpoint to two genuine angle chan
 Z_{LH}=J_{LL}^{-1/2}J_{LH}J_{HH}^{-1/2}.
 \]
 
-PF-317 localizes the direct channel. In PF-214's simultaneous seam-energy coordinates the positive precision is `I+K`, with
+PF-317 shows that the direct channel may be bounded through local pant crossing, and PF-318 shows that logarithmic low rank makes the endpoint tolerant of mean-square leakage: a local squared Hilbert--Schmidt budget
 
 \[
-K=\Lambda_Q^{-1/2}\Lambda_E\Lambda_Q^{-1/2}\ge0,
+C\frac{1+\log P_n}{P_n^2}
 \]
 
-and
+is enough for the prime-density weak-`S_1` count.
+
+PF-319 then blocks one apparently easy route. PF-232's `O(P_n^{-1})` form-smallness is measured in the diagonal corridor energy, while the raw pant cross block in PF-317 is normalized by the seam energy. An arbitrary change between those positive metrics can amplify a mixed raw block, so the PF-232 Loewner sandwich does not by itself prove the PF-318 estimate for
 
 \[
-Z_{LH}
-=(I+K_{LL})^{-1/2}K_{LH}(I+K_{HH})^{-1/2}.
+LQ^{-1/2}\Lambda_EQ^{-1/2}H.
 \]
 
-The diagonal factors are contractions, so `s_j(Z_{LH})<=s_j(K_{LH})`. Nearest-neighbor cuff topology then reduces `K_{LH}` to the three offsets `r=-1,0,1`, each an orthogonal direct sum of local pant blocks.
-
-PF-318 weakens the required local theorem further. Since each retained low target has rank only `O(1+log P_n)`, it is enough to prove
+PF-320 changes the preferred target. Multiplicative closeness of positive forms **does** control their intrinsic low/high cross angles, because each angle divides by the same form's own diagonal low and high energies. For the PF-232 sandwich there are local low/high unitaries such that the actual sheared local angle differs from the shear-deleted local angle by operator norm `O(\beta_n)`, `\beta_n=O(P_n^{-1})`. Since the retained low sector has rank `O(1+\log P_n)`, the shear-angle error automatically satisfies
 
 \[
 \boxed{
-\|L_{n+r}KH_n\|_{\mathcal S_2}^2
-\le
-C\frac{1+\log P_n}{P_n^2},
-\qquad r=-1,0,1.
+\|E_n^{\rm shear}\|_{\mathcal S_2}^2
+\lesssim
+\frac{1+\log P_n}{P_n^2}.
 }
 \]
 
-Threshold counting then gives `K_{LH},Z_{LH} in S_{1,infinity}`. The largest local singular value may therefore lose a factor `sqrt(log P_n)` relative to `P_n^{-1}` without breaking the endpoint. Equivalently, by self-adjointness, the target is aggregate high-frequency leakage of an orthonormal basis of retained low modes rather than a worst-input operator norm.
+PF-320 also proves that sums of positive local forms reassemble by a contraction sandwich of the orthogonal direct sum of their local angles. Common positive finite-pant completion may remain in both the actual and shear-deleted forms without changing PF-232's multiplicative sandwich. Therefore the shear no longer has to be transported through PF-242/PF-255 into the final seam-normalized raw `K_{LH}` representation merely to meet the direct-angle endpoint budget.
 
-PF-319 closes an important proof-strategy loophole. PF-232's `O(P_n^{-1})` relative form-smallness of the hypercycle straightening shear is small in the **diagonal corridor energy metric**, whereas the direct angle is normalized by the PF-205 seam energy. PF-319 proves abstractly and by an exact `2x2` countermodel that a small Loewner-relative perturbation in one positive metric can be arbitrarily amplified after normalization by another. In particular PF-232's reciprocal-prime form sandwich cannot simply be combined with logarithmic low rank to infer the PF-318 estimate.
-
-The shear is not thereby shown to be bad. PF-239, PF-242 and PF-255 give additional structure absent from the PF-319 countermodel: critical-band trace summability, strong mode locality and a parity-local two-derivative leakage bound. A positive proof should exploit that actual locality **after placing the perturbation in the same seam-normalized physical-frequency representation as `K`**, or estimate the required rows directly. The remaining finite-pant completion must be treated separately rather than hidden inside a generic form comparison.
-
-PF-215 remains the essential negative control. The complete adjacent normalized pant block diverges on the cuff-constant channel, so no proof may bound the whole neighboring pant transfer uniformly. The target below is specifically the nonconstant-low/high corner after constants have been removed.
+PF-215 remains the essential negative control: the complete adjacent normalized pant block diverges on the cuff-constant channel. The target is still specifically the retained nonconstant-low/high angle after constants are removed.
 
 ## Research question
 
-For one canonical one-cusp pant core and its neighboring PF-205 artificial boundaries, let `Lambda_E` be the positive shifted pant DtN form and let `Lambda_Q^0` be the explicit flat shifted-strip seam energy. At a fixed physical cutoff define
+For one canonical one-cusp pant contribution, delete only the PF-232 hypercycle-straightening shear while retaining:
+
+- the actual PF-205 seam energy used by simultaneous normalization;
+- the variable-width diagonal corridor;
+- the full common finite-pant/cusp-side completion;
+- the fixed physical low/high cutoff from PF-212.
+
+After distributing a positive block-diagonal share of the identity as in PF-320, let
 
 \[
-\widetilde B_{n+r,n}
-:=
-L_{n+r}(\Lambda_Q^0)^{-1/2}
-\Lambda_E
-(\Lambda_Q^0)^{-1/2}H_n,
-\qquad r=-1,0,1.
+T_{0,n}^{(r)}
 \]
 
-Do the three local mixed-frequency blocks satisfy
+be the intrinsic local low/high angle of this **shear-deleted** positive pant form for one of the finitely many neighboring offsets `r`.
+
+Does the local reference family satisfy the endpoint-compatible estimate
 
 \[
 \boxed{
-\|\widetilde B_{n+r,n}\|_{\mathcal S_2}^2
+\|T_{0,n}^{(r)}\|_{\mathcal S_2}^2
 \le
-C\frac{1+\log P_n}{P_n^2}
+C\frac{1+\log P_n}{P_n^2},
 }
 \]
 
-uniformly on the canonical tail?
+or another singular-value envelope that places the orthogonal direct sum of the local reference angles in `\mathcal S_{1,\infty}`?
 
-A positive answer closes the direct-angle weak-`S_1` gate through PF-317/PF-318. The stronger operator-norm estimate `||\widetilde B_{n+r,n}||<=C/P_n` remains sufficient but is no longer the preferred target unless the geometry yields it naturally.
+A positive answer closes the **direct-angle** weak-`S_1` gate: PF-320 adds the actual shear with an error already inside the PF-318 mean-square budget, and its positive-sum factorization passes the local ideal estimate to the global direct angle. The separate conditional post-low angle `T_H` remains independent.
 
 ## Why it may matter
 
-The direct endpoint has become a concrete local geometric/spectral estimate. For only `O(log P_n)` retained low Fourier rows, apply the actual one-pant seam-normalized DtN map and measure the component landing above the fixed physical cutoff on the neighboring/source module. Total squared leakage must be `O((1+log P_n)/P_n^2)`.
+The live theorem is now materially narrower than the previous raw-block question. PF-319 still says not to infer seam-normalized raw `K_{LH}` smallness from corridor form-smallness. PF-320 shows that this stronger raw estimate is unnecessary for controlling the shear contribution to the actual direct angle.
 
-PF-319 also tells us what **not** to prove. Reciprocal-prime form perturbation before the final normalization is insufficient unless the corresponding change of energy metric is controlled on the source/target sectors. The most promising surviving route is therefore to transport the actual PF-239/PF-242/PF-255 locality into the seam-normalized low/high corner, where it can be summed rowwise, rather than try to close the endpoint by a global Loewner sandwich.
+The reference problem can therefore concentrate on the geometry that survives after the shear is removed. PF-233 gives an exact operator-valued transfer law for the variable-width diagonal corridor, and PF-238 shows that the actual complete-lift seam is compatible with the required dressed transfer envelope through one-sided domination. What remains is to turn that diagonal transfer structure, together with the physical `L/H` split and finite pant completion, into the local intrinsic angle envelope above.
+
+This also separates two difficulties that were previously entangled. The reciprocal-prime shear is now perturbative at angle level; the unresolved issue is whether the **diagonal/reference pant itself** has sufficiently little retained-low/high correlation.
 
 ## Decisive test
 
-Work on one actual PF pant core at a time, with no global inverse. Use the explicit flat two-face seam multiplier controlled by PF-234/PF-317 and the fixed physical low/high cutoff from PF-212.
+Work on one local positive pant form and its fixed physical `L/H` split. Keep the actual seam normalizer, but replace the PF-232 sheared corridor by its shear-deleted variable-width diagonal form while leaving every common completion term unchanged.
 
-Choose an orthonormal basis `E_{n+r}^L` for the retained nonconstant-low target and estimate directly
+Estimate the intrinsic angle
 
 \[
-\sum_{e\in\mathcal E_{n+r}^{L}}
-\left\|
-H_n(\Lambda_Q^0)^{-1/2}\Lambda_E(\Lambda_Q^0)^{-1/2}e
-\right\|^2.
+T_{0,n}^{(r)}
+=A_{0,n}^{-1/2}B_{0,n}^{(r)}C_{0,n}^{-1/2}
 \]
 
-The endpoint target is `C(1+log P_n)P_n^{-2}`.
+directly, rather than the raw externally normalized block `B_{0,n}^{(r)}`. Use PF-233's exact mass-conjugated transfer law and PF-238's one-sided actual-seam domination to identify which parts of the diagonal corridor already have the required prime-scale damping. Then isolate the finite one-cusp-pant completion and determine whether it preserves the mean-square physical low/high envelope.
 
-Decompose only by mechanisms that remain meaningful in this final metric. The diagonal ultraparallel/variable-width corridor has explicit transfer laws from PF-231--PF-233. For the hypercycle/shear contribution, do **not** use PF-232's relative form error alone: PF-319 shows that the corridor-to-seam metric conversion can amplify it. Instead, conjugate the actual shear transport into the seam-normalized physical-frequency representation and use PF-239/PF-242/PF-255 to prove either a direct rowwise Hilbert--Schmidt bound or a source/target-restricted metric-conversion/locality estimate that preserves reciprocal-prime leakage.
+If a Hilbert--Schmidt estimate is unavailable, determine the local singular-value distribution and test it against PF-318's threshold count. A negative result must exhibit nonconstant-low/high angle mass incompatible with every weak-`S_1` prime-density envelope; constant-mode growth from PF-215 and raw metric amplification from PF-319 are not such witnesses.
 
-Then isolate whatever part of the finite one-cusp pant completion remains after these controlled pieces. If the Hilbert--Schmidt target fails, determine the actual local singular-value distribution rather than falling back immediately to operator norm: PF-318 gives one sufficient envelope, not a necessary one. A negative result must exhibit nonconstant-low/high squared singular mass incompatible with every weak-`S_1` prime-density envelope; constant-mode growth from PF-215 is not such a witness.
+PF-242/PF-255 remain available as independent structural information, but under PF-320 they are no longer the mandatory bridge for the shear term. Reintroduce them only if the shear-deleted reference estimate itself exposes a representation issue they genuinely resolve.
 
 ## Evidence boundary
 
-PF-317 proves the structural localization and PF-318 proves that reciprocal-prime mean-square local leakage is sufficient. Neither proves the estimate for the actual canonical pant.
+PF-320 does not prove the shear-deleted local angle estimate. It proves that PF-232's actual shear changes the local angle only by `O(P_n^{-1})` in operator norm, hence by the PF-318-compatible squared Hilbert--Schmidt budget after logarithmic low-rank counting, and that positive local angles admit contraction-sandwich reassembly.
 
-PF-232 proves only corridor-relative form-smallness of the straightening shear. PF-319 proves that this statement is not stable under an uncontrolled change to the seam energy metric. PF-239/PF-242/PF-255 provide stronger structural locality for the real shear/compactification, but no current finding completes their conversion into the exact local `L/H` Hilbert--Schmidt corner above. The finite pant completion is also still open.
+PF-233 and PF-238 control diagonal-corridor transfer in useful operator-energy representations, but neither currently proves the physical retained-low/high local angle with the complete pant attached. The finite pant completion therefore remains part of the live reference problem rather than an afterthought.
 
-The fixed-domain DtN literature remains prior-art guidance rather than a degeneration theorem. Girouard--Karpukhin--Levitin--Polterovich identify standard local DtN pseudodifferential structure, Hislop--Lutzer give fixed-domain component decoupling, and Speciel shows that global commutation with the boundary Laplacian is restrictive; none supplies the canonical degenerating-pant endpoint estimate.
+The fixed-domain DtN literature remains prior-art guidance rather than a degeneration theorem. No current external source supplies this canonical shrinking-pant physical-angle endpoint.
 
 The clue therefore remains `accepted`, not `resolved`.
 
@@ -133,4 +134,4 @@ The clue therefore remains `accepted`, not `resolved`.
 
 Outcome: `accepted`.
 
-PF-318 leaves the mean-square reciprocal-prime leakage estimate as the endpoint-complete local target. PF-319 removes the shortcut through PF-232's Loewner sandwich and narrows the next step to a same-metric argument: transfer the actual shear locality into the seam-normalized physical low/high representation, then bound the remaining finite-pant completion. The direction stays open until that estimate, another weak-`S_1`-compatible singular-value envelope, or a genuine nonconstant-low/high obstruction is established.
+PF-320 materially changes the preferred proof obligation. The previous same-seam raw `K_{LH}` shear estimate is stronger than necessary and is no longer the primary target. The next decisive step is the shear-deleted local pant **angle** with actual seam energy and full common completion. If that reference family meets a PF-318-compatible singular-value envelope, PF-320 adds the real shear at no additional endpoint cost and reassembles the direct angle through positive-form contraction.
