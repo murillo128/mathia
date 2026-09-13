@@ -279,3 +279,15 @@ Role: primary smooth-modulus dispersion source for `MC-188`. Theorem 1.3 gives a
 Todd Cochrane, Andrew Granville and Junren Zheng, *Mixed incomplete character sums of rational functions with smooth moduli*, arXiv:2601.10927v1 (submitted 16 January 2026). https://arxiv.org/abs/2601.10927.
 
 Role: primary smooth-modulus character-sum source for `MC-241` and `MC-242`. Theorem 1 and Corollary 2 give power-saving incomplete character sums when the modulus is smooth essentially up to the interval scale, which yields the fixed-support exclusion in `MC-241`. For the quantitative growing-support refinement `MC-242`, the fixed-parameter theorem statement is not used as a black box: Proposition 7 supplies the explicit iterated `q`-van der Corput inequality, Proposition 6 gives the prime complete-sum estimate with its dependence on the differencing depth, and Lemma 7 controls displacement collisions. The paper describes Proposition 7 as closely related to Graham–Ringrose's earlier iterative lemma. No novelty is claimed for these analytic estimates.
+
+## MC-S47 — Bourgain, Ford, Konyagin and Shparlinski, least nonvanishing Fermat quotient
+
+Jean Bourgain, Kevin Ford, Sergei V. Konyagin and Igor E. Shparlinski, *On the divisibility of Fermat quotients*, Michigan Mathematical Journal 59 (2010), no. 2, 313–328. DOI: https://doi.org/10.1307/mmj/1281531459. Author PDF: https://www.ford126.web.illinois.edu/wwwpapers/FermatQuot.pdf.
+
+Role: primary prior-art anchor for `MC-257`. Theorem 1 proves that for a prime `r` the least positive integer `a` with `a^(r-1) != 1 (mod r^2)`, equivalently `q_r(a) != 0`, is at most `(log r)^(463/252+o(1))`, improving earlier `O((log r)^2)` bounds. By Fermat-quotient additivity, factorizing such an `a` also gives a prime divisor with nonvanishing quotient at no larger scale. Thus the existence of a very small nonvanishing prime base is classical and much stronger asymptotically than the elementary shell-width witness used in `MC-257`.
+
+## MC-S48 — Shparlinski, vanishing Fermat quotients on prime arguments
+
+Igor E. Shparlinski, *On vanishing Fermat quotients and a bound of the Ihara sum*, Kodai Mathematical Journal 36 (2013), no. 1, 99–108. DOI: https://doi.org/10.2996/kmj/1364562722. arXiv: https://arxiv.org/abs/1104.3910.
+
+Role: direct prime-argument prior-art boundary for `MC-257`. The paper studies primes `ell<=N` for which `q_r(ell)=0`, improves estimates for their number, and connects the vanishing-Fermat-quotient sum to subfields of the cyclotomic field `Q(exp(2 pi i/r^2))`. `MC-257` therefore makes no novelty claim for the prime-base vanishing mechanism or its prime-square cyclotomic interpretation; it uses those classical facts only to audit the exact Mathia shell quotient.
