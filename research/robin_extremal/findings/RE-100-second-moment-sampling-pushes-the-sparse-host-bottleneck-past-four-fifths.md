@@ -1,6 +1,6 @@
 # RE-100 — second-moment sampling pushes the sparse-host bottleneck past four fifths
 
-**Status:** `EXACT-DERIVED + DEFORMED-QUADRATIC-SPARSE-HOSTS + EXPLICIT-FORMULA-INTEGRAL + SECOND-MOMENT-LARGE-SIEVE + ZERO-DENSITY-SPLICE + GUTH-MAYNARD + BOURGAIN-DENSITY-HYPOTHESIS + FOUR-FIFTHS-BOTTLENECK-RELOCATION + FOURTH-MOMENT-STRESS-TEST + PRIOR-ART-AUDITED`.
+**Status:** `EXACT-DERIVED + DEFORMED-QUADRATIC-SPARSE-HOSTS + EXPLICIT-FORMULA-INTEGRAL + SECOND-MOMENT-LARGE-SIEVE + ZERO-DENSITY-SPLICE + INGHAM + GUTH-MAYNARD + BOURGAIN-DENSITY-HYPOTHESIS + FOUR-FIFTHS-BOTTLENECK-RELOCATION + FOURTH-MOMENT-STRESS-TEST + PRIOR-ART-AUDITED`.
 
 `RE-098` and `RE-099` isolate a genuine obstruction inside the direct **fourth-moment** route for the residual mixed first/depth-two Robin channel. Near-resonant four-zero energy is already strong enough below the Robin window, but a high-shift fourth moment that separates the sample kernel from the zero quartets has a `3/8` floor. That left the critical real-part slab `sigma=1/2` looking like the natural source of the obstruction.
 
@@ -224,18 +224,38 @@ At the Robin endpoint `vartheta=73/200`, the exponent is only
 
 far below `1/2`. The critical line therefore has abundant room; the `3/8` phenomenon in `RE-099` comes from insisting on a fourth moment there, not from the sampled-host geometry itself.
 
-## 3. Guth--Maynard controls the whole lower strip up to the Bourgain handoff
+## 3. Ingham and Guth--Maynard control the lower strip below the Bourgain handoff
 
-Guth--Maynard's zero-density bound can be written
+For the lower half of the strip, use Ingham's classical density estimate
+
+\[
+A(\sigma)\le\frac{3}{2-\sigma}
+\qquad\left(\frac12\le\sigma\le\frac7{10}\right).
+\tag{26}
+
+Substitution into (23) simplifies the threshold exactly to
+
+\[
+\boxed{\vartheta>\frac\sigma2.}
+\tag{27}
+
+Its maximum on this range is only `7/20=0.35`.
+
+For
+
+\[
+\frac7{10}\le\sigma\le\frac{25}{32},
+\]
+
+use the Guth--Maynard zero-density bound in the convenient form
 
 \[
 A(\sigma)
 \le
-\frac{15}{3+5\sigma}
-\qquad(1/2<\sigma<1),
-\tag{26}
+\frac{15}{3+5\sigma}.
+\tag{28}
 
-with the bound outside its genuinely new middle range also following from the classical Ingham/Huxley estimates. Inserting (26) into (23), the threshold for `vartheta` is
+Inserting (28) into (23), the threshold becomes
 
 \[
 \vartheta>
@@ -244,15 +264,9 @@ G_{\rm GM}(\sigma)
 1-
 \frac{\frac52-2\sigma}
 {1+\frac{15(1-\sigma)}{3+5\sigma}}.
-\tag{27}
+\tag{29}
 
-On the range relevant here the right-hand side is increasing beyond the Ingham--Guth--Maynard crossover, so its maximum on
-
-\[
-\frac12\le\sigma\le\frac{25}{32}
-\]
-
-occurs at `sigma=25/32`. Direct substitution gives
+The right-hand side is increasing on `[7/10,25/32]`, so its maximum occurs at `sigma=25/32`. Direct substitution gives
 
 \[
 \boxed{
@@ -261,9 +275,9 @@ G_{\rm GM}\!\left(\frac{25}{32}\right)
 \frac{1901}{5216}
 =0.3644555214\ldots .
 }
-\tag{28}
+\tag{30}
 
-This is strictly below the Robin requirement `73/200=0.365`, by exactly (4). Consequently every fixed `vartheta` in (1) controls all slabs up to `25/32` with a uniform positive host saving. The numerical margin is narrow but genuine: `vartheta` is fixed before `X->infinity`, so every strict choice in (1) leaves a fixed positive exponent gap.
+This is strictly below the Robin requirement `73/200=0.365`, by exactly (4), and it dominates the Ingham-side maximum `7/20`. Consequently every fixed `vartheta` in (1) controls **all** slabs from `1/2` through `25/32` with a uniform positive host saving. The numerical margin is narrow but genuine: `vartheta` is fixed before `X->infinity`, so every strict choice in (1) leaves a fixed positive exponent gap.
 
 ## 4. Bourgain's density-hypothesis range pushes the handoff beyond `4/5`
 
@@ -271,22 +285,22 @@ Bourgain proved the density hypothesis
 
 \[
 A(\sigma)\le2
-\tag{29}
+\tag{31}
 
 for
 
 \[
 \sigma\ge\frac{25}{32}.
-\tag{30}
+\tag{32}
 
-With (29), condition (23) simplifies exactly to
+With (31), condition (23) simplifies exactly to
 
 \[
 \vartheta>
 \frac{1}{2(3-2\sigma)}.
-\tag{31}
+\tag{33}
 
-For fixed `vartheta`, equality in (31) occurs at
+For fixed `vartheta`, equality in (33) occurs at
 
 \[
 \boxed{
@@ -294,7 +308,7 @@ For fixed `vartheta`, equality in (31) occurs at
 =
 \frac{6\vartheta-1}{4\vartheta}.
 }
-\tag{32}
+\tag{34}
 
 Therefore every compact slab range
 
@@ -311,7 +325,7 @@ At the bottom of the admissible `vartheta` window,
 =
 \frac{3095}{3802}
 =0.8140452393\ldots,
-\tag{33}
+\tag{35}
 
 while as `vartheta` approaches `73/200` from below, (5) gives `119/146=0.815068...`. So the second-moment argument relocates the unresolved beta range to roughly
 
@@ -319,7 +333,7 @@ while as `vartheta` approaches `73/200` from below, (5) gives `119/146=0.815068.
 \boxed{
 \beta\gtrsim0.814.
 }
-\tag{34}
+\tag{36}
 
 This is a much smaller target than the full critical strip treated by the fourth-moment bookkeeping of `RE-098`--`RE-099`.
 
@@ -336,13 +350,13 @@ For fixed `u`, square the zero sum in (13), bin the pair differences `gamma_1-ga
 H^4X^{4\sigma-4}(T+M)
 N^*(\sigma,T)X^{o(1)}.
 }
-\tag{35}
+\tag{37}
 
 At `sigma=1/2`, the Heath-Brown bound used in `RE-098` has
 
 \[
 N^*(1/2,T)\ll T^{3+o(1)}.
-\tag{36}
+\tag{38}
 
 Since `T>>M`, fourth-moment Markov at the bad-host threshold `|F|>=HX^(-o(1))` yields
 
@@ -352,26 +366,26 @@ Since `T>>M`, fourth-moment Markov at the bad-host threshold `|F|>=HX^(-o(1))` y
 X^{-2}T^{4+o(1)}
 =
 X^{2-4\vartheta+o(1)}.
-\tag{37}
+\tag{39}
 
 Beating `X^(1/2)` again requires exactly
 
 \[
 \vartheta>\frac38.
-\tag{38}
+\tag{40}
 
-So even a genuinely coupled large-sieve treatment of the ordinary four-zero energy does not improve the `RE-099` critical fourth-moment exponent. This is not because the known exponent in (36) is loose at power scale. If `N=N(1/2,T)=T^(1+o(1))`, the `N^2` ordered pairs occupy only `O(T)` unit sum/difference bins, and Cauchy gives
+So even a genuinely coupled large-sieve treatment of the ordinary four-zero energy does not improve the `RE-099` critical fourth-moment exponent. This is not because the known exponent in (38) is loose at power scale. If `N=N(1/2,T)=T^(1+o(1))`, the `N^2` ordered pairs occupy only `O(T)` unit sum/difference bins, and Cauchy gives
 
 \[
 N^*(1/2,T)
 \gg
 \frac{N^4}{T}
 =T^{3-o(1)}.
-\tag{39}
+\tag{41}
 
 Thus the power `3` is forced combinatorially on the critical line.
 
-There is also a matched synthetic control showing that the extra factor `T` in (35) cannot be replaced generically by `M`. Let `T=KM`, take equally spaced frequencies `gamma_r=2pi r/L`, `1<=r<=T`, and sample points `t_n=Ln/M`, `0<=n<M`, on a fixed interval of length `L`. Then
+There is also a matched synthetic control showing that the extra factor `T` in (37) cannot be replaced generically by `M`. Let `T=KM`, take equally spaced frequencies `gamma_r=2pi r/L`, `1<=r<=T`, and sample points `t_n=Ln/M`, `0<=n<M`, on a fixed interval of length `L`. Then
 
 \[
 \sum_{r=1}^{T}e^{i\gamma_rt_n}
@@ -380,20 +394,20 @@ There is also a matched synthetic control showing that the extra factor `T` in (
 T,&n=0,\\
 0,&1\le n<M,
 \end{cases}
-\tag{40}
+\tag{42}
 
 while the corresponding unit-scale four-frequency additive energy is `Theta(T^3)`. Hence
 
 \[
 \sum_n|Z(t_n)|^4=T^4
 \asymp T\,N^*.
-\tag{41}
+\tag{43}
 
 The control is not a model of zeta zeros; it is a falsification test for any claim that sample separation, bounded logarithmic range, and ordinary four-frequency energy alone remove the full bandwidth factor. They do not.
 
 ## 6. Prior-art boundary and research consequence
 
-The trigonometric large sieve used above is classical; no novelty is claimed for that inequality. Montgomery--Vaughan's large-sieve work is the relevant primary source. The zero-density inputs are likewise external: Guth--Maynard supply (26), while Bourgain supplies the density-hypothesis range (29)--(30). Bazzanella remains the closest sparse-start precedent, but its direct branch is organized around a fourth moment, a low/high quartet-shift split, and pointwise exponential-sum estimates. The line-specific result here is the splice of the **second-moment large sieve on the exact CA-deformed sample** with the `RE-095` Robin host-count target and the current zero-density exponents.
+The trigonometric large sieve used above is classical; no novelty is claimed for that inequality. Montgomery--Vaughan's large-sieve work is the relevant primary source. The zero-density inputs are likewise external: Ingham supplies (26), Guth--Maynard supplies (28), and Bourgain supplies the density-hypothesis range (31)--(32). Bazzanella remains the closest sparse-start precedent, but its direct branch is organized around a fourth moment, a low/high quartet-shift split, and pointwise exponential-sum estimates. The line-specific result here is the splice of the **second-moment large sieve on the exact CA-deformed sample** with the `RE-095` Robin host-count target and the current zero-density exponents.
 
 The consequence is a genuine redirect. `RE-099` correctly says that a fourth-moment proof cannot cross the Robin window by improving the pointwise CA phase kernel alone. But the next theorem no longer needs to repair that fourth moment across the whole critical strip. A hybrid proof can use the second moment for
 
@@ -407,6 +421,6 @@ and reserve shifted-quartet/oscillatory-kernel machinery only for the high-beta 
 \boxed{
 \beta\ge\sigma_*(\vartheta)\approx0.814\text{--}0.815.
 }
-\tag{42}
+\tag{44}
 
 That is now the sharper analytic frontier. The most discriminating next calculation is not another global fourth-moment estimate. It is to re-optimize the high-shift branch **only on the residual beta tail**, where zero density is already much thinner, and determine whether the existing exponent-pair/shifted-energy inputs overlap the second-moment range. If they do not, the missing theorem can be stated on that narrow tail rather than on all zeta zeros.
