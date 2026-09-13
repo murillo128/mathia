@@ -2,18 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the critical finite-section transition or leave the single-profile architecture
+## Resolve the rational-microscopic finite-section transition or leave the single-profile architecture
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`.
 
-PC-224--PC-280 reduce the positive spectral construction to a two-sided finite section of one source-independent cyclic convolution operator. PC-281 closes the regular-profile side by transporting the complete normalized singular spectrum to the denominator-`q` Li-grid control. PC-282 closes the opposite boundary-first side: the normalized radial logarithmic singularity collapses to the exact modular collision selector.
+PC-224--PC-280 reduce the positive spectral construction to a two-sided finite section of one source-independent cyclic convolution operator. PC-281 transports every regular-profile normalized singular spectrum to the denominator-`q` Li-grid control. PC-282 identifies the opposite boundary-first limit with the exact modular collision selector, and PC-283 shows that selector subtraction leaves only the classical digamma/logarithmic Green symbol on the complete cyclic domain.
 
-PC-283 now closes the most immediate renormalized escape. After the canonical anchor-local selector subtraction, the full cyclic logarithmic remainder has strictly negative nonconstant Fourier multipliers, an explicit digamma boundary spectrum and the classical logarithmic Green-kernel low-mode limit. The complete-domain scalar remainder is therefore harmonic background, not a new arithmetic symbol.
+PC-284 now closes the immediate source-placement escape for that exact logarithmic remainder throughout the classical transport window. After microscopic clipping that preserves the anchor, the law of the **complete normalized singular spectrum** on the prime source is asymptotically reproduced by the Li-grid control whenever
 
-The live single-profile question is narrower: the **simultaneous critical regime** where regular transport, selector divergence and finite-section placement interact before any one limit dominates. The observable must subtract or control both the exact selector and the classical digamma/Green remainder and then show that source-dependent two-sided projection placement contributes a residual not reproduced by the strongest rational control. If that residual also classicalizes, the architecture must leave the one-profile category through source-dependent, cross-level or cross-source coupling.
+`log B=o(sqrt(log q))`.
 
-## Keep complete-domain symbols, projection placement and arithmetic discrimination separate
+Thus source-dependent two-sided placement does not create a prime-specific positive spectral law anywhere in the sub-`exp(sqrt(log q))` bandwidth regime, even for the exact selector-subtracted boundary logarithm.
 
-Complete-domain phase wrappers are gauge; regular complete symbols transport to rational controls; the singular boundary anchor becomes an exact selector; and PC-283 shows the selector-subtracted scalar boundary symbol is classical harmonic data. None of these statements alone removes the arithmetic information that may live in the relative placement of the finite projections.
+The live one-profile question begins only at the **rational-microscopic critical regime** where `log B` is comparable to `sqrt(log q)` or larger, or where another simultaneous scaling prevents the clipping/PNT transport from closing. A surviving observable must either produce a source-specific residual at that scale after both universal boundary pieces are removed, magnify a prime-minus-control residual in a quantitatively justified way, or leave the one-profile/singular-spectrum category through cross-level, cross-source or richer non-spectral structure.
 
-A viable Prime-Circle mechanism must therefore identify a critically scaled finite-section residual after both universal boundary pieces are removed and prove that this residual, rather than the complete-domain symbol or modular selector, carries prime-specific information.
+## Keep complete-domain symbols, transported finite sections and genuinely enriched observables separate
+
+Complete-domain phase wrappers are gauge; the singular anchor is an exact selector; its scalar remainder is classical harmonic data; and PC-284 shows that the full normalized finite-section singular spectrum is still Li-grid reproducible throughout the classical source-transport regime.
+
+None of these results is a theorem about every possible critical coupled scaling or enriched observable. But a future Prime-Circle mechanism must identify exactly which information survives beyond the PC-284 transport boundary. Reintroducing the selector, the Green remainder, or a subcritical source-placement statistic cannot supply new arithmetic discrimination.

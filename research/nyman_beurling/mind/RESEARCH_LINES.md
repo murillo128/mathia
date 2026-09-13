@@ -8,24 +8,26 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Test actual zero triples against the dimensionless Menger-curvature threshold
+## Separate local conditioning from finite-window volume and test the source in the right currency
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`, `MI-011-canonical-deflation-cancels-raw-cauchy-crowding-volume`, `MI-012-three-state-transverse-confluence-exposes-collective-shear`, `MI-013-absolute-height-and-global-zero-counts-are-invisible-to-the-collective-shear-obstruction`, `MI-014-quadratic-horizontal-tangency-is-the-three-state-conditioning-threshold`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`, `MI-011-canonical-deflation-cancels-raw-cauchy-crowding-volume`, `MI-012-three-state-transverse-confluence-exposes-collective-shear`, `MI-013-absolute-height-and-global-zero-counts-are-invisible-to-the-collective-shear-obstruction`, `MI-014-quadratic-horizontal-tangency-is-the-three-state-conditioning-threshold`, `MI-015-confluent-volume-is-curvature-blind-and-controlled-by-radial-depth`.
 
-NB-098--NB-100 isolate a collective three-state shear that survives good pairwise conditioning and show on a symmetric slice that quadratic horizontal tangency is the bounded-conditioning threshold. NB-101 identifies reciprocal circumradius as the invariant on regular common-scale triples.
+NB-098--NB-102 classify the local three-state **conditioning** problem. For sufficiently local distinct triples, the canonically deflated condition number is governed by dimensionless Menger curvature `a/R`; hierarchical pairwise gaps add no independent scale.
 
-NB-102 removes the common-scale hypothesis. For every sufficiently local triple, including arbitrarily hierarchical pairwise gaps, the canonically deflated Gram satisfies
+NB-103 now shows that the fixed-multiplicity normalized **determinant volume** sees a different invariant. Its confluence singularity is removable and path-independent. After the large-cell limit, the confluent coefficient depends only on multiplicity `d` and radial depth
 
-`kappa_2(C) asy (1+a/R)^4`,
+`x=2 Re(lambda_*) log q`
 
-where `a` is the local right-half-plane scale and `R` is the triangle circumradius. The dimensionless Menger curvature `a/R` is invariant under the exact translation/dilation gauges of the construction, and bounded conditioning is equivalent to `a/R=O(1)`.
+through the Laguerre moment determinant `Delta_d(x)`. High Menger curvature may make the canonical coordinates arbitrarily ill-conditioned while leaving this normalized volume coefficient unchanged. The sharp-volume limit is controlled by `Re(lambda_*) log q -> infinity`, not by bounded curvature.
 
-The source theorem is now coordinate-free: determine whether actual relevant zeta-zero triples obey a uniform local Menger-curvature bound, or identify a source mechanism that permits large curvature but makes the destination insensitive to the resulting shear. A tiny nested pair is not a separate obstruction; hierarchical confluence is already covered by the same curvature law. Global zero-density bookkeeping, absolute height, simplicity and quartet symmetry remain insufficient by themselves.
+The source question must therefore state which destination quantity is actually load-bearing. If uniform inversion/conditioning is needed, test actual zero triples against the Menger-curvature threshold. If the argument only consumes fixed-cardinality normalized volume, curvature is the wrong target and the relevant source resource is radial depth. If both are used, they must be controlled separately rather than inferred from one another.
+
+## Decide the first genuinely new invariant beyond fixed three-state geometry
+
+NB-102 closes the three-distinct-state local conditioning classification; NB-103 closes the corresponding fixed-multiplicity confluent volume law at the determinant level. The remaining geometric directions are larger packets, growing multiplicity, genuine repeated-zero derivative/Jordan states, diagonal normalization, or a target conversion showing which of conditioning or volume matters for Nyman approximation.
 
 A separate route remains available: convert the sharp fixed-finite repair directly into a target-relevant Nyman obstruction before taking a growing-divisor limit.
 
-## Keep local curvature, larger clusters, repeated zeros and target conversion separate
+## Keep curvature, radial depth, growing multiplicity and target conversion separate
 
-NB-102 closes the three-distinct-state geometric classification in the local regime, not the source problem. Larger packets may contain additional collective invariants, and genuine repeated zeros require derivative/Jordan states rather than a limit of three distinct kernels. Even an unbounded local Menger curvature matters for RH only if the target argument actually requires uniform conditioning of this canonical representation.
-
-The next useful step should therefore be source-facing: test or bound the dimensionless Menger curvature of actual zero triples, derive a target conversion robust to high curvature, or identify the first genuinely new invariant in four-state/higher confluence. Re-optimizing pairwise gaps or symmetric coordinates no longer addresses the classified three-state obstruction.
+Curvature is a spectral-conditioning resource. Radial depth is the fixed-multiplicity confluent-volume resource. Neither statement decides the source geometry of actual zeta zeros or whether the final Nyman target is sensitive to that resource. Future arguments should avoid using a conditioning blow-up as evidence for determinant-volume loss, or vice versa.

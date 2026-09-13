@@ -1,21 +1,31 @@
-# MI-023 — Negative-witness collapse trades rowwise simplicity for source depth
+# MI-023 — Negative witnesses aggregate cheaply; normalization is an OR barrier
 
-**Evidence level:** proved for the flat Christoffel source by [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md) and [MC-274](../../findings/MC-274-negative-witness-conditioning-fourier-depth-tax.md). No atom-scale witness-search theorem or endpoint cancellation estimate is claimed.
+**Evidence level:** proved for the flat Christoffel source by [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md), [MC-274](../../findings/MC-274-negative-witness-conditioning-fourier-depth-tax.md) and [MC-275](../../findings/MC-275-witness-normalization-approximate-degree-barrier.md). No low-degree theorem on the actual localized Legendre-shell image or endpoint cancellation estimate is claimed.
 
-MC-273 gives an exact rowwise simplification. If a target sign vector has at least one negative lower-prime coordinate, then choosing any negative witness converts the mixed Hamming-ball coefficient
+MC-273 gives an exact rowwise simplification. If a target sign vector has a negative lower-prime coordinate `i`, then
 
-`g_m(x)=sum_(|S|<=m) x_S`
+`g_m(x)=sum_(|S|<=m)x_S=e_m(x_hat_i)`.
 
-into the homogeneous degree-`m` shell on the remaining coordinates. Equivalently, `sum_(s<=m) K_s(b;k)=K_m(b-1;k-1)`. Every nonblind row therefore has amplitude at most `C(k-1,m)`, while the blind row has amplitude `Z_(k,m)=sum_(s<=m) C(k,s)`.
+MC-274 shows that selecting such witnesses atom by atom can be expensive: conditioning through query depth `J` raises the Walsh/source degree of the energy from `2m` to `2m+J`, and resolving an atom-scale family naturally asks for `J` much larger than the original `m=Theta(log log y)`.
 
-The simplification does not automatically globalize. MC-274 conditions on a witness through a deterministic coordinate-query tree and computes the exact Walsh/source degree of the conditioned energy. A leaf found after `j` queries has
+MC-275 corrects the over-broad reading of that obstruction. Witness **aggregation itself is cheap**. Writing `b(x)` for the number of negative coordinates,
 
-`deg_W(I_j g_m^2)=2m+j`,
+`U_m(x)=sum_i n_i(x)e_m(x_hat_i)=b(x)g_m(x)`
 
-and recombining all witness leaves through depth `J` still gives degree `2m+J`. The extra depth is not an artifact of treating leaves separately: exact conditioning has inserted `J` additional lower-prime source coordinates into the observable.
+and
 
-There is also a cardinality tax. If `C` target rows are compared with independent signs, a depth-`J` witness search leaves natural unresolved mass `C 2^(-J)`. Eliminating every unresolved row by such atomwise conditioning requires roughly `J>log_2 C` (up to the allowed loss), which at the live Christoffel scale is of order `log y log log y`, far larger than the original detector depth `m=O(log log y)`.
+`U_m=1/2[(k-m)e_m-(m+1)e_(m+1)]`.
 
-So MC-273 does not turn the endpoint into an easy homogeneous-shell bound. It identifies a useful **conditional normal form**, while MC-274 shows that discovering the conditioning atom by atom can spend more source complexity than the original problem. A viable use of the collapse must therefore find the negative-witness information collectively, average it without resolving every row, or exploit a source identity that supplies the witness partition at much lower effective Fourier depth.
+Thus all negative witnesses can be retained simultaneously with only one extra source degree. No decision tree or first-witness choice is required.
 
-**Boundary.** The Fourier-depth tax applies to exact coordinate-query conditioning and the atom-scale elimination argument. It does not rule out a different aggregate certificate of nonblindness, a phase-sensitive averaging identity, or another source-specific mechanism that uses the MC-273 collapse without materializing every witness leaf.
+The hard operation is dividing away the multiplicity `b`. An exact normalized decomposition must sum to the nonblind selector `NB=1_(b>0)`, whose multilinear representation is
+
+`NB(x)=1-2^(-k) prod_i(1+x_i)`.
+
+Hence exact polynomial normalization has degree `k`. The symmetric `1/b` normalization has the same endpoint cost: polynomial interpolation on `b=1,...,k` needs degree at least `k-1`. Even approximate normalization is generically expensive because `NB` is OR: uniform error `epsilon` needs degree `Theta(sqrt(k log(1/epsilon)))`. Constant error already exceeds the live Christoffel depth, while atom-sensitive error is parametrically worse.
+
+So the endpoint distinction is now three-way: **rowwise collapse is cheap, overlapping witness use is cheap, generic normalization/classification is expensive**. A useful continuation must avoid reconstructing OR on the full cube. It can instead exploit the tightly localized Legendre-shell image, prove a distributional surrogate only on that arithmetic image, or use the signed aggregate `b g_m` directly without division.
+
+MC-252 is the matched control. Once the upper primes are allowed to separate from the moving shell, genuine Legendre-symbol configurations realize the full Boolean cube. Therefore a low-depth escape cannot follow merely from quadratic reciprocity or primality; it must use the tight source-size coupling that the separated-prime control destroys.
+
+**Boundary.** The approximate-degree theorem is a worst-case full-cube obstruction, not a lower bound on the actual localized arithmetic image. MC-275 does not rule out distributional approximation or signed identities that never normalize witness multiplicity. Nothing here excludes blind support or improves `M(X)`.

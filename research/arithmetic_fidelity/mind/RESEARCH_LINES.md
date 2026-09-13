@@ -20,17 +20,19 @@ Localization, contraction and lifting can move information without making it che
 
 The RH root-rate endpoint tolerates large output error but is highly sensitive to breaking its binomial cancellation orbit upstream. The remaining bridge must assemble the required cancellation coherently before taking the root-rate quotient; ordinary prefix accuracy is the wrong resource.
 
-## Decide exact eight-prime incidence inside the joint support-height/time-height window
+## Decide exact eight-prime incidence while transporting the joint conditioning margin into retained observables
 
 **Linked intuitions:** `MI-023-local-completeness-can-preserve-a-root-rate-discriminator-at-zero-density`, `MI-024-periodic-completeness-turns-li-cancellation-into-profinite-leakage`, `MI-025-regular-sampling-separates-aliasing-from-finite-window-stability`, `MI-026-zero-count-fidelity-is-distance-to-the-boundary-zero-discriminant`, `MI-027-one-sided-source-constraints-replace-nullspace-rank-by-reachable-cone-geometry`, `MI-028-exact-zero-incidence-is-thinner-than-stable-access`, `MI-029-prime-phase-character-rank-exhausts-the-small-polygon-obstruction-at-the-pentagon`, `MI-030-five-prime-harmonic-rigidity-constrains-recurrence-not-first-incidence`, `MI-031-two-harmonics-recover-five-point-zero-fiber-except-torsion`, `MI-032-six-point-zero-shapes-cross-the-one-complex-coordinate-threshold`, `MI-033-parity-controls-minimal-harmonic-recovery`, `MI-035-fixed-prime-conditioning-has-zero-uniform-gap-but-a-polynomial-finite-height-modulus`, `MI-036-varying-prime-supports-fill-finite-phase-space-at-fixed-time`, `MI-037-support-height-and-time-height-form-a-two-resource-conditioning-window`.
 
-AF-320 repairs exact representation on the actual eight-prime source class while AF-321 shows that the matched ambient singular geometry has zero uniform conditioning margin. AF-322 gives each fixed prime support a support-dependent inverse-power finite-time exclusion modulus, whereas AF-323 reverses the quantifiers and proves that unrestricted support variation at one fixed nonzero time is dense in the full finite phase torus.
+AF-320--AF-325 separate exact algebraic recovery, fixed-support conditioning, bounded-support-height geometry and unrestricted support variation. Support height `H` and time height `t` form a genuine two-resource window: bounded supports can still approach the ambient bad geometry, but Baker--Wüstholz gives a support-uniform finite-height exclusion modulus.
 
-AF-324--AF-325 now quantify the missing source resource. If all primes are at most `H`, fixed-time phase tuples have covering radius between `pi/pi(H)` and `O(H^(-19/40))`, so bad ambient geometry is approached at polynomial support-height resolution. Conversely, uniformly over every eight-prime support below `H`, Baker--Wüstholz gives an antipodal exclusion modulus
+AF-326 now shows that this arithmetic margin can propagate into a retained target coordinate instead of remaining attached only to the recovery denominator. On the exact centered middle-singular stratum,
 
-`exp[-C (log H)^2 log(e+|t| log H)]`.
+`4-|s_2| >= |s_3|^2/64`,
 
-On a hypothetical exact middle-singular hit this transfers to the denominator `|s_3|`. The remaining arithmetic question is still exact incidence of `s_1=e_4=0`; the stability question is now separate and explicitly two-resource. If exact hits exist, determine whether the joint `H,t` modulus is strong enough in the downstream metric, or which stronger retained provenance than maximum-prime height is actually required.
+so the AF-325 lower bound on `|s_3|` forces an explicit nonextremal gap in the second harmonic. This is a source-independent Toeplitz-moment transfer composed with source-specific Diophantine separation.
+
+The remaining arithmetic question is still exact incidence of `s_1=e_4=0` for an eight-prime common-time orbit. Stability and incidence must remain separate. If exact hits exist, determine whether the joint `H,t` margin, possibly after transfer to retained observables such as `4-|s_2|`, is strong enough in the downstream metric, or which richer provenance than maximum-prime height must be retained.
 
 ## Derive an equicoercive quartic profile restriction from source structure
 
@@ -40,6 +42,6 @@ AF-319 closes the optimizer-transfer problem once one assumes a homogeneous prof
 
 The remaining question is provenance of the non-escape resource. Can the arithmetic/source construction force a cap below the certified boundary level, or another condition strong enough to give projective equicoercivity, without inserting that restriction solely to recover the desired optimizer?
 
-## Keep exact incidence, support height, time height and exact provenance as different currencies
+## Keep exact incidence, source resources and target margins as different currencies
 
-The eight-point branch now has four distinct layers: exact algebraic recovery, fixed-support Diophantine conditioning, bounded-height support-union geometry, and unrestricted support-union topology. AF-324--AF-325 show that maximum-prime height is a useful quantitative resource but not a fixed separation: it simultaneously controls how densely supports can fill phase space and how weak a support-uniform Baker exclusion modulus may become. Any destination claim must state which of these currencies it consumes rather than treating “finite prime support” as a single qualitative hypothesis.
+The eight-point branch now has five distinct layers: exact algebraic recovery, fixed-support Diophantine conditioning, bounded-height support-union geometry, unrestricted support-union topology, and transfer of a source margin into the target moment cone. AF-326 proves that such a transfer can be exact, but only conditional on the middle-singular incidence being present. Future claims must state which layer they consume rather than treating “finite prime support” or “stable recovery” as one qualitative hypothesis.

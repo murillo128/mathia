@@ -1,23 +1,29 @@
-# MI-037 — Support height and time height form a two-resource conditioning window
+# MI-037 — Support height, time height and target margin form a three-stage conditioning window
 
-**Evidence level:** supported by [AF-324](../../findings/AF-324-bounded-prime-height-quantifies-fixed-time-phase-covering.md) and [AF-325](../../findings/AF-325-bounded-support-height-uniformizes-prime-antipodal-conditioning.md), building on AF-322--AF-323. No exact middle-singular incidence theorem or sharp covering asymptotic is claimed.
+**Evidence level:** supported by [AF-324](../../findings/AF-324-bounded-prime-height-quantifies-fixed-time-phase-covering.md), [AF-325](../../findings/AF-325-bounded-support-height-uniformizes-prime-antipodal-conditioning.md) and [AF-326](../../findings/AF-326-toeplitz-moment-positivity-couples-singular-second-and-third-harmonics.md), building on AF-322--AF-323. No exact middle-singular incidence theorem or sharp covering asymptotic is claimed.
 
 The support parameter missing from the AF-322/AF-323 quantifier split can be priced explicitly. Fix `m` and `tau != 0`, and let `rho_(m,tau)(H)` be the covering radius in `(S^1)^m` of distinct-prime phase tuples with every prime at most `H`. AF-324 proves
 
 `pi/pi(H) <= rho_(m,tau)(H) <<_(m,tau) H^(-19/40)`.
 
-Thus bounding support height does not restore a fixed phase-space gap. It gives a finite-resolution net whose mesh still shrinks polynomially. In the eight-point singular problem, supports below `H` approach the bad set `s_1=e_4=s_3=0` at `O_tau(H^(-19/40))`; any Lipschitz finite-phase compression inherits the same upper filling scale.
-
-AF-325 supplies the opposite inequality in the resource direction relevant to conditioning. For every eight-prime support `P` with `max P<=H` and `|t|>=1`, its distance from the four-antipodal-pair locus satisfies
+Thus bounded support height does not restore a fixed phase-space gap. It gives a finite-resolution net whose mesh still shrinks polynomially. AF-325 supplies the complementary finite-height exclusion. Uniformly over every eight-prime support `P` with `max P<=H` and `|t|>=1`, the distance from the four-antipodal-pair locus obeys
 
 `delta_P(t) >= exp[-C (log H)^2 log(e+|t| log H)]`.
 
-On a hypothetical exact middle-singular hit, the same joint `H,t` envelope transfers by a support-independent Łojasiewicz inequality to `|s_3|`. At fixed nonzero `tau`, if `Delta_tau(H)` is the smallest antipodal distance among supports below `H`, the two results give
+On a hypothetical exact middle-singular hit, the same joint `H,t` envelope transfers to the reconstruction denominator `|s_3|`. AF-326 adds a second transfer that is entirely source-independent once the incidence constraints hold. Toeplitz moment positivity gives
 
-`exp[-C (log H)^2 log(e+|tau| log H)] <= Delta_tau(H) <<_tau H^(-19/40)`.
+`|s_3|^2 <= 8(16-|s_2|^2)(32+|s_2|^2)/(64-|s_2|^2)`
 
-The important object is therefore not a support-independent condition number but a **two-resource modulus**. Time recurrence degrades conditioning on each fixed support; increasing support height enlarges the admissible family and lets actual prime configurations approximate ambient collision geometry. The exact prime labels contain more information than the scalar height `H`, but retaining only `H` is already enough to make the degeneration quantitatively visible and uniform.
+and in particular
 
-This sharpens the fidelity question. A downstream theorem that varies supports must state which source-height/provenance resource it retains and compare the modulus it consumes with the joint `H,t` window above. Merely declaring each support finite is not a stability statement, while AF-323's unrestricted density does not erase the useful finite-height lower envelope supplied by AF-325.
+`4-|s_2| >= |s_3|^2/64`.
 
-**Boundary.** AF-324 is a near-incidence theorem, not exact incidence or equidistribution. AF-325 does not decide whether `s_1=e_4=0` is ever attained by an eight-prime orbit. The lower and upper `H` scales are far apart, so no sharp asymptotic for `Delta_tau(H)` is known.
+Therefore the source-specific Baker margin does not have to remain hidden in the coordinate used for inversion. Conditional on an exact prime middle-singular hit, it forces an explicit gap from the extremal second-harmonic face. The conditioning chain is now concrete:
+
+`bounded source/time resources -> |s_3| margin -> retained |s_2| margin`.
+
+The implication direction matters. Moment positivity by itself does not lower-bound `|s_3|`; the arithmetic source theorem supplies that input. Conversely, the arithmetic lower bound becomes useful downstream only after one proves that the target representation consumes a coordinate or norm in which the margin survives. AF-326 exhibits one exact instance of such a transfer.
+
+The durable object is therefore a staged resource law rather than a support-independent condition number. Increasing support height enlarges the admissible source family; increasing time allows recurrence on each support; and the destination may consume a different geometric margin than the source theorem naturally controls. A faithful compression theorem must price all three stages under the correct quantifier order.
+
+**Boundary.** AF-324 is a near-incidence theorem, not exact incidence or equidistribution. AF-325 does not decide whether `s_1=e_4=0` is ever attained. AF-326 is conditional on that exact centered middle-singular stratum and does not reverse the moment inequality. The lower and upper `H` scales remain far apart, so no sharp asymptotic for the source separation is known.

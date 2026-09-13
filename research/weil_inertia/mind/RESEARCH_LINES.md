@@ -10,20 +10,26 @@ Finite negative inertia detects off-line packets exactly but can lose coercivity
 
 ## Use source/eigenfunction structure beyond scalar profiles and generic cut covariance
 
-**Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`.
+**Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`, `MI-020-complete-one-signed-screening-trades-discrete-vanishing-for-support-packing`.
 
-WI-274--WI-277 progressively sharpen the first-crossing source reserve. Complementary masses give the sharp harmonic envelope; one shift gives a sharp nilpotent reserve; finite commensurate families give a scalarized Toeplitz reserve. WI-279 restores the Hilbert orientation of the cut path and obtains the stronger bottom-spectrum reserve from signed cut covariance.
+WI-274--WI-280 separate scalar firstness, retained Hilbert orientation and source-specific compatibility. Oriented cut covariance is stronger than scalar norm profiles, but arbitrary finite covariance mixtures on the generic PSD/null-partition class still admit two-pulse countergeometry. Noncommensurate shifts and more generic Hilbert optimization therefore do not cross the scalar budget wall by themselves.
 
-WI-278 nevertheless blocks every reserve whose numerator is controlled only by the currently certified scalar function `a -> lambda_a`: its explicit admissible profile keeps `sup a lambda_a` below the positive archimedean budget. WI-280 now closes the generic **noncommensurate** escape as well. For any finite family of arbitrary shifts with nonnegative weights, abstract PSD/null-partition cut geometry admits a two-pulse path with negative covariance at one selected shift and zero covariance at the others. Therefore every universal weighted covariance coefficient is negative somewhere, and the resulting reserve remains strictly below the scalar average, hence below `sup a lambda_a`.
+WI-281 now shows that the actual arithmetic lags can feed back into the admissible geometry on the **one-signed complete-screening branch**. If every active prime-power autocorrelation vanishes, the powers of two alone force the nonzero set of the hypothetical first null mode to be a measurable selector modulo `log 2`, hence of measure at most `log 2`. Riesz rearrangement converts that packing into an exact positive archimedean budget
 
-Noncommensurability, denser shift selection and further generic Hilbert-space optimization are therefore not new resources. A successful continuation must prove a compatibility law for the **actual Suzuki null mode** that excludes the two-pulse countergeometry, strengthen the numerator through the exact signed prime-plus-archimedean source equation, use nodal/regularity information, or introduce a genuinely nonlinear joint invariant not reducible to a positive linear mixture of cut covariances.
+`K_pack=(1/2) lambda_max(T_(log 2))`,
 
-## Keep scalar-profile exhaustion, retained Hilbert orientation and source-specific compatibility distinct
+with the strict inequality `K_pack<K_+` against the unrestricted WI-274 budget. Complete screening therefore implies the stronger necessary condition
 
-WI-279 proves that scalarizing the cut path to a norm profile discards usable orientation: the bottom-Toeplitz reserve can strictly improve the coefficient. WI-280 proves that this extra generic orientation is still insufficient once its numerator remains the same scalar firstness data. The distinction is now exact: **Hilbert geometry contains more information than the scalar profile, but generic Hilbert geometry still admits counterpaths that prevent a budget crossing.**
+`2 int_(a/2)^a lambda_r dr <= K_pack<K_+`.
 
-The remaining opportunity is not another universal covariance inequality. It is a theorem showing that the source-generated cut path occupies a strictly smaller admissible class than generic PSD null partitions, in a way that quantitatively improves the limiting numerator/covariance combination.
+This is the kind of source-specific compatibility missing from WI-280: the discrete arithmetic hypothesis shrinks the continuous admissible class. It still does not finish the branch. The new constant need not lie below the actual spectral-area lower bound, and the first null mode has not been proved one-signed.
+
+The live continuation is to exploit **more of the actual source equation than power-of-two packing**. Add other prime lags, firstness/null-equation constraints, nodal/regularity information, or a nonlinear invariant that lowers the admissible budget further. In parallel, the sign-changing branch remains separate and needs its own mechanism; one-signed packing cannot simply be transferred to it.
+
+## Keep scalar exhaustion, generic Hilbert geometry and arithmetic compatibility distinct
+
+WI-279 proves that scalarizing the cut path loses information. WI-280 proves that generic Hilbert orientation is still too large a class. WI-281 proves that a concrete arithmetic screening hypothesis can shrink that class quantitatively. The next theorem should identify which additional source constraints survive without assuming the desired sign or RH conclusion.
 
 ## Keep endpoint firstness, source reserve, sign geometry and prime overlap as separate gates
 
-The reserves are sign-independent, while the prime-overlap tariff is currently one-signed. A successful source-specific reserve improvement does not by itself solve the sign-changing branch, and a sign theorem does not replace the quantitative reserve. Future work should state which gate is being crossed.
+The reserve inequalities are sign-independent, while the packing bootstrap and prime-overlap tariff currently use a one-signed mode. A successful packing improvement does not prove that the relevant null mode has one sign, and a sign theorem does not by itself close the quantitative reserve. Future work should state which gate is being crossed.

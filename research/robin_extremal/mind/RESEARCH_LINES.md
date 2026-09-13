@@ -2,24 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert fan complexity/stretch and matched-run debt into one global contradiction
+## Convert whole-fan Chebyshev debt and the super-stretched reset into one contradiction
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`, `MI-010-deep-support-boundaries-have-vanishing-threshold-measure`, `MI-011-depth-two-short-interval-elimination-is-governed-by-an-exceptional-mass-max-law`, `MI-012-source-conditioned-bad-host-sparsity-converts-directly-into-a-depth-two-frontier-gain`, `MI-013-the-local-robin-boundary-hierarchy-collapses-to-prime-gap-geometry-before-the-global-obstruction`, `MI-014-the-last-local-endpoint-tie-is-a-four-exponentials-boundary`, `MI-015-surviving-robin-fans-pay-near-square-root-complexity-or-exponential-stretch`.
 
-RE-102--RE-103 close the typical local endpoint geometry above `Theta_*`: surviving chambers are ordinary consecutive-prime-gap chambers, with only one optional binary first/depth-two exact tie behind Four Exponentials.
+RE-102--RE-104 reduce the typical local geometry to ordinary consecutive-prime-gap chambers and force either near-square-root fan complexity or huge physical stretch. RE-105 shows higher-layer mass cannot cancel matched-run Chebyshev debt.
 
-RE-104 turns this local injectivity into a nonlocal capacity law. A bounded-dilation late fan carrying positive threshold measure must expose essentially a square-root power of distinct chambers; a substantially sparser fan must instead stretch across an exponentially huge physical scale ratio. This removes the broad regime of sparse, moderately coherent selected-state assembly.
+RE-106 removes the need to find long matched runs before accumulating the main debt. The globally corrected coordinate increases across **every** positive-width threshold cell and every switch, giving a whole-fan rise of order
 
-RE-105 supplies a complementary sign law on matched `0 -> 0` runs. Higher-layer event mass does not interrupt or cancel the common-amplitude Chebyshev deficit; it contributes additively through `P_C=log C-log rad(C)`. Along a matched run the total Chebyshev debt is a sum of nonnegative cell transport, nonnegative switch transport and the accumulated higher-layer mass.
+`X_B^(1-b_1) log X_B`.
 
-The live global theorem should splice these two constraints. Show that any fan satisfying the RE-104 complexity/stretch dichotomy must contain enough matched-run structure, or that the unmatched fringe alternatives themselves carry a compensating cost, so that the accumulated Chebyshev debt becomes incompatible with the false-RH selector law. Huge stretch is now the main geometric escape; unmatched fringe switching is the main sign/assembly escape.
+When converted back to the raw Chebyshev deficit, all intermediate fringe corrections telescope. Only the final fringe atom can reset the accumulated rise. Therefore any fan whose raw deficit fails to increase must satisfy the much stronger stretch condition
+
+`log R_B >= c_J X_B^(1-b_1) log X_B`,
+
+and its final state must lie on the deep base-two fringe-host ladder with immediate physical successor quotient `2`.
+
+The live global theorem is now to rule out, or exploit, this **super-stretched base-two reset branch**. Either false-RH source geometry cannot place a selected fan endpoint that far out on the lacunary base-two host family, or the huge stretch itself must force enough Chebyshev/Mertens structure to contradict the selector law. Ordinary unmatched fringe switching is no longer a local sign escape.
 
 ## Isolate the exact binary tie without letting it dominate the global calculation
 
-The surviving local first/depth-two tie remains an exact Four-Exponentials contingency. It should be carried as a discrete boundary alternative in the global assembly theorem, not mixed back into short-interval host density. RE-104 does not require resolving that tie to obtain its prime-gap capacity law, while RE-105 shows that arbitrary deeper mass is benign on matched zero-fringe runs.
+The surviving local first/depth-two tie remains a Four-Exponentials contingency. RE-104 and RE-106 do not need to resolve it to obtain the prime-gap capacity law or the whole-fan debt/reset dichotomy. A global argument should therefore remain robust to this binary alternative unless it reaches a point where exact transcendence is genuinely load-bearing.
 
-A useful global argument should therefore either be robust to the binary tie or state precisely where exact transcendence enters. Proving more near-incidence sparsity for the tie is not a substitute for controlling the fan path.
+## Keep local geometry, capacity, corrected debt and terminal reset distinct
 
-## Keep local geometry, global capacity and switch-sign structure separate
-
-The local boundary-depth hierarchy, the RE-104 complexity/stretch tradeoff and the RE-105 Chebyshev-debt identity are distinct resources. The first identifies the chambers, the second limits how they can cover threshold measure, and the third controls the sign of one important class of transitions. A contradiction needs a theorem coupling these resources along the same selected fan rather than further optimizing any one of them in isolation.
+The chamber classification identifies local states; RE-104 limits how they can cover threshold measure; RE-106 forces corrected Chebyshev transport across that measure; and the raw reset is one terminal fringe prime on a lacunary base-two family. A contradiction needs a theorem coupling the extreme terminal stretch to the false-RH source, not another local host-density refinement or another matched-run decomposition.

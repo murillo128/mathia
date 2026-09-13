@@ -14,18 +14,24 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Control the coupled one-cancellation anchor kernel
+## Move beyond the now-closed one-cancellation long-start frontier
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`.
 
-VIS-203--VIS-208 identify positive autocorrelation shell energy with close-pair geometry and use the actual finite-start sinc kernel to make the entire noncancelling determinant band negligible in long-start Cesaro mean square under explicit window conditions.
+VIS-203--VIS-209 reduce the first surviving one-cancellation layer to a positive prime-anchor Gram kernel. After the withdrawal of VIS-210, cross-anchor couplings remain essential and no finite-support diagonalization is current evidence.
 
-VIS-209 packages the first surviving layer into a PSD prime-anchor Gram kernel and expresses its energy through the off-diagonal part of `tr(G^2)`. That reduction remains current. The former VIS-210 thin-window exact diagonalization has been withdrawn; its finite anchor-support model and `6/5` resonance cannot be used as current evidence. Cross-anchor couplings must therefore remain in the live problem.
+VIS-211 now proves the weighted-Schur route that had remained only a clue. For the autocorrelation taper and every diverging strictly subcritical scale `H log y/y -> 0`, translated Brun--Titchmarsh bounds give
 
-The live theorem is a uniform concentration estimate for the actual positive prime-ratio kernel, or a concrete obstruction showing where such concentration fails. The existing proposed weighted-Schur clue gives a precise candidate reduction to weighted prime counts in multiplicative windows, but its asymptotic estimate remains unproved and must be tested by the Research Watch rather than promoted by Mind.
+`||Psi||_op=o(H^(-1/2))`,
 
-A separate unresolved axis remains: VIS-208 gives start-averaged/density-one control, not worst-start control. Uniform-in-`T0` cancellation must be proved separately or a rare coherent-start obstruction exhibited.
+hence the exact VIS-209 identity yields
 
-## Keep exact Gram reduction, conjectural kernel bounds and start uniformity separate
+`E_1=o(R_v^2)`.
 
-VIS-209 is evidence; a proposed Schur estimate is a research direction; the withdrawn VIS-210 support geometry is neither. Future claims should state whether they control the exact PSD kernel, one deterministic norm bound for it, the sinc-weighted Cesaro energy, or worst-start amplitude. Do not reintroduce diagonalization unless a current canonical finding proves it for the actual kernel.
+Thus the **entire one-cancellation prime/prime shell energy is negligible in long-start mean square** throughout that regime. The one-cancellation anchor kernel is no longer the active obstruction there.
+
+The live frontier splits cleanly. One direction is combinatorial/spectral: control the higher-cancellation classes in the exact difference-shell expansion after the first cancellation has been removed. The other is temporal: upgrade the existing long-start/density-one control to a genuinely uniform finite-start statement, or construct a rare coherent-start obstruction. The critical scale `H asymp y/log y` is also outside VIS-211 and must not be silently imported from the strictly subcritical theorem.
+
+## Keep long-start shell suppression, higher cancellations and worst-start coherence separate
+
+VIS-211 is an averaged theorem for one cancellation and a fixed autocorrelation taper. It does not diagonalize the kernel, prove worst-start cancellation, treat higher cancellation classes, or close the critical `H` scale. Future work should say which of those distinct residuals it attacks rather than continuing to optimize a Schur bound for a layer that is already negligible in the stated regime.

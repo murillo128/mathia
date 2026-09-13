@@ -1,23 +1,25 @@
-# MI-015 — Surviving Robin fans pay either assembly complexity, scale stretch or positive Chebyshev debt
+# MI-015 — Surviving Robin fans pay corrected debt; raw reset requires super-stretch
 
-**Evidence level:** supported by [RE-104](../../findings/RE-104-two-sided-gap-injectivity-forces-near-square-root-fan-complexity-or-huge-stretch.md) and [RE-105](../../findings/RE-105-matched-mixed-fan-runs-turn-higher-layer-mass-into-additive-chebyshev-debt.md), on the stated sufficiently late false-RH fan regimes. No global contradiction for arbitrary selected fans is claimed.
+**Evidence level:** supported by [RE-104](../../findings/RE-104-two-sided-gap-injectivity-forces-near-square-root-fan-complexity-or-huge-stretch.md), [RE-105](../../findings/RE-105-matched-mixed-fan-runs-turn-higher-layer-mass-into-additive-chebyshev-debt.md) and [RE-106](../../findings/RE-106-whole-fan-chebyshev-debt-forces-super-stretched-base-two-fringe-reset.md) on the stated sufficiently late false-RH fan regime. No global contradiction excluding the extreme terminal reset branch is claimed.
 
-Once RE-102 makes the typical local chamber an injective image of one consecutive ordinary-prime gap, mean-square prime-gap information becomes a global assembly constraint rather than another local boundary estimate. RE-104 proves that on a dyadic physical shell the number `N_X` of distinct exposed good chambers obeys
+RE-104 turns ordinary-prime-gap injectivity into a nonlocal capacity law: bounded-dilation fans need nearly square-root many exposed chambers, while substantially lower complexity forces huge physical stretch. RE-105 shows that on matched `0 -> 0` runs, higher-layer event mass adds to the Chebyshev debt rather than cancelling it.
 
-`N_X >> m_X^2 X^(77/100-2b_1-epsilon) (log X)^2`.
+RE-106 reveals that the main sign accumulation does not actually require matched runs. The globally corrected Chebyshev coordinate
 
-Since `b_1<1-Theta_*`, the exponent is strictly larger than `0.499537...`. In all-block form,
+`widehat H=Z-log rad(C)`
 
-`N_B (1+log R_B) >> X_B^(77/100-2b_1-epsilon) (log X_B)^2`.
+increases inside every threshold cell and jumps positively at every selected switch. Across a fixed compact threshold fan this forces a rise
 
-Thus a bounded-dilation surviving fan needs nearly square-root many exposed states. If the fan has substantially lower polynomial complexity, its physical scale ratio must instead be enormous: `log R_B` itself grows like a positive power of the minimum scale. Sparse, moderately stretched assembly is no longer available.
+`widehat H_R-widehat H_L >= c_J X_B^(1-b_1) log X_B`.
 
-RE-105 constrains a different possible escape. Along a matched `0 -> 0` fan switch, arbitrary higher-layer events do not cancel the common-amplitude Chebyshev deficit. Their active log-mass
+Converting back to the raw Chebyshev deficit leaves only the endpoint fringe correction. All intermediate unmatched fringe episodes telescope. Hence if the raw deficit does not increase across the fan, the terminal fringe atom must absorb the entire corrected rise, which forces
 
-`P_C=log C-log rad(C)`
+`log R_B >= c_J X_B^(1-b_1) log X_B`.
 
-enters with the **same sign**, and along a run the exact deficit decomposes into nonnegative cell transport, nonnegative switch transport, and the additive debt `P_(C_m)-P_(C_0)`. Higher-layer mass is therefore not a free interruption currency on these matched runs; it strengthens the monotone Chebyshev debt.
+This is substantially stronger than the RE-104 low-complexity stretch scale. Moreover the reset endpoint must carry a nonzero fringe, and RE-063 then puts it on the deep base-two host ladder with immediate physical CA successor quotient exactly `2`.
 
-Together the findings narrow the nonlocal problem without solving it. A surviving false-RH fan must combine enough exposed prime-gap chambers or huge physical stretch, while matched mixed runs cannot use deeper events to cancel the selector-dilation deficit. The remaining assembly theorem must control unmatched fringe switches, quantify how often matched runs occur, or couple the complexity/stretch dichotomy to accumulated Chebyshev debt strongly enough to force a contradiction.
+The durable picture is therefore no longer “many chambers or huge stretch, plus perhaps unmatched fringe cancellation.” A surviving fan always pays the corrected source debt; **raw cancellation is compressed to one super-expensive terminal reset on a lacunary source family**. The live theorem must couple that extreme endpoint geometry back to the false-RH selector/source law.
 
-**Boundary.** RE-104 permits huge stretch, and RE-105 assumes matched zero fringe at each switch. Neither result proves that every selected fan contains a sufficiently long matched run or that the global fan cannot alternate through the remaining unmatched configurations.
+This also changes how RE-105 should be used. Matched-run positivity remains a valid local sign identity, but it is not needed to establish the whole-fan corrected debt. Its role is now secondary unless a later argument needs detailed switch decomposition rather than the endpoint telescope.
+
+**Boundary.** RE-106 deliberately permits the reset once the physical span is super-stretched enough, and an off-critical Chebyshev fluctuation can still be of the required scale. The base-two classification is lacunary, not empty. No contradiction follows without a new theorem controlling that extreme terminal branch.
