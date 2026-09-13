@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-eight-point-middle-singular-character-rank
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -46,3 +46,12 @@ A single exact rank-`0/1` witness is enough to kill the universal rank-two hypot
 ## Evidence boundary
 
 AF-317 supplies only a nontorsion, non-globally-antipodal point in `M_8^sing`; it does not bound that point's full relation-lattice rank. AF-310 bounds rational-prime common-time phase points by rank one but does not imply such a point exists in the singular fiber. No eight-prime exact zero, singular-fiber incidence, or RH consequence is established by this clue.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-318-antipodal-extension-has-residual-rank-one-character-lattice.md]]
+
+AF-318 proves a stronger version of the first alternative: inside AF-317's exact middle-singular antipodal-extension family, the normalized integer-character relation lattice has rank exactly one on a dense residual subset. Hence the universal rank-at-least-two alternative is false. This resolves only the source-independent character-rank gate; rational-prime incidence in the singular fiber remains open.
