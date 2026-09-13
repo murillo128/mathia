@@ -154,10 +154,12 @@ Therefore
 \tag{17}
 \]
 
-As in `RE-088`, the adjacent support coordinates of an exposed late-fan state satisfy
+`RE-088` proves uniformly on the exposed late fan that the adjacent support coordinates satisfy
 
 \[
-\xi_\pm(C)\asymp_J Y_C.
+\boxed{
+\frac{\xi_\pm(C)}{Y_C}\longrightarrow1.
+}
 \tag{18}
 \]
 
@@ -168,7 +170,7 @@ Together with (12), this implies
 \tag{19}
 \]
 
-For `j=2` the constant is safely above the square-root threshold: because `eta_2(p)~p^2/2`, (17) gives
+For `j=2` the constant is safely above the square-root threshold: because `eta_2(p)~p^2/2` and `xi_-(C)~Y_C`, (17) gives
 
 \[
 \Delta_C\ge(2\sqrt2-o(1))\sqrt{Y_C}.
@@ -184,7 +186,7 @@ Q_C
 \tag{21}
 \]
 
-The interval `Q_C` contains no ordinary prime. Indeed, a prime `s in Q_C` would place its first-layer CA event `eta_1(s)` strictly inside the support chamber (14), contradicting adjacency. Since `RE-054` with `j=1` gives
+The interval `Q_C` contains no ordinary prime. Indeed, a prime `s\in Q_C` would place its first-layer CA event `eta_1(s)` strictly inside the support chamber (14), contradicting adjacency. Since `RE-054` with `j=1` gives
 
 \[
 \eta_1'(x)=1+O(1/\log x),
