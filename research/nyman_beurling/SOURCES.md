@@ -19,6 +19,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Arne Beurling, *On two problems concerning linear transformations in Hilbert space*, Acta Math. 81 (1949), 239–255, DOI `10.1007/BF02395019`. Role: classical source boundary for invariant subspaces of the unilateral shift, inner–outer factorization, and outer cyclicity. `NB-072` uses this classical Hardy-space structure after the explicit Wold identification of the block-branching isometry to classify stationary branch-filter stable tails by the filter's inner factor; no novelty is claimed for the underlying operator theorem.
 
+## Szegő–Kolmogorov prediction
+
+- Tryphon T. Georgiou, *The error variance of the optimal linear smoother and maximum-variance fractional pole models*, Proceedings of the 45th IEEE Conference on Decision and Control (2006), 1685–1691, DOI `10.1109/CDC.2006.377324`. Role: stable source for the classical Szegő–Kolmogorov formula identifying infinite one-sided linear prediction error with the geometric mean of a log-integrable spectral density. `NB-085` first proves the required logarithmic integrability for the actual aliased Nyman spectrum and then uses this formula to identify its positive infinite-depth radial prediction floor.
+
 ## Orthogonal-complement boundary regularity
 
 - Francisco Calderaro, Juan Manzur, Waleed Noor, Charles F. Santos, *Orthogonality questions in the Hardy space related to zeta-zeros*, [arXiv:2203.05030](https://arxiv.org/abs/2203.05030). Role: exact prior-art boundary for local Dirichlet rigidity of the disk Hardy Nyman span. In v4, Theorem 2 gives `N^perp ∩ D_(delta_1) = {0}` at the distinguished boundary point `1`, and Theorem 13 extends this to the `D_1^p` scale for `p>1`. The paper does not supply the corresponding rigidity at arbitrary `zeta in T`; any application at another boundary point requires an independent conjugacy or membership argument that preserves the relevant Nyman span.
