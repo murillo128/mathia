@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-quartic-euler-localization-uniformity
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -40,44 +40,13 @@ Issue #131 certifies only the homogeneous quartic objective and does so computer
 
 ## Research disposition
 
-`AF-200` independently verifies the clue's first decisive test and strengthens it: for every fixed positive `W_1=delta`, the fixed-band Euler discrepancy tends to zero along the symmetric degeneration `t downarrow 0`, so no positive recovery modulus depending only on `W_1` exists even before taking `delta -> 0`. The specific `t=delta^3` family satisfies `D_T ~ (M_0/2) delta^6`, hence `D_T/delta^4 -> 0`.
+Outcome: supported
 
-AF-200 also rewrites the full normalized Euler discrepancy exactly through the AF-199 Peano B-spline carrier. Its barycentric displacement from the fixed endpoint is `(1+t)h`, and a uniform derivative estimate gives the explicit sufficient varying-shape gate
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-200-fixed-band-euler-fidelity-collapses-under-quartic-mass-escape.md]]
+- [[research/arithmetic_fidelity/findings/AF-204-weighted-euler-localization-exactly-calibrates-varying-profile-transfer.md]]
+- [[research/arithmetic_fidelity/findings/AF-319-profile-capped-quartic-euler-minimizers-converge-to-the-certified-homogeneous-optimizer.md]]
 
-`delta (1+t)^11 (2t+1) / (t^3 (3t+1)^5) -> 0`.
+AF-200 proves that `W_1` alone cannot provide the required coercivity. AF-204 identifies the exact varying-profile full-band transfer gate in this source class as `Q D -> 0`, where `D` is the anchored knot diameter. AF-319 closes the optimizer-transfer component on the natural profile-capped class `Q <= C < 3`: the issue-#131 boundary certificate makes that projective sublevel compact, AF-203 forces `QD -> 0` uniformly as `W_1 -> 0`, and the full Euler objectives converge uniformly to the homogeneous `Q` objective. Their minimizers therefore converge to the unique certified shape `(1,t_*,t_*,1)`, with `O(delta)` profile excess and `O(sqrt(delta))` projective shape error.
 
-AF-201 resolves the observation-side localization topology on any two-sided bounded homogeneous profile `0<q_-<=Q<=q_+<infinity`. For the normalized Peano probability carrier `beta`, uniform transfer of the full finite-band Euler transform to the quartic endpoint model is equivalent to weak concentration `beta => delta_x`. A single real-axis defect
-
-`Lambda_sigma(beta) = 1 - int F_sigma^(4) d beta / F_sigma^(4)(x)`
-
-is equivalent to that weak concentration and gives explicit tail bounds. This is strictly weaker as a topology than requiring convergence of the carrier first moment; AF-200's `Q W_1(beta,delta_x)->0` condition is therefore sufficient but not the intrinsic finite-band requirement.
-
-AF-202 translates that observation topology exactly back to fixed-order minimal-support source geometry. By the classical Genocchi-Hermite/Dirichlet representation, the normalized Peano carrier is the law of a uniform-simplex convex combination of the knots. If `D=u_4-x` is the anchored five-knot diameter, then
-
-`2^-4 c(D/2) <= Lambda_sigma(beta) <= c(D)`,
-
-so `Lambda_sigma(beta)->0`, weak carrier concentration, and `D->0` are equivalent. Compact gap-ratio control and bounded `D/W_1` are therefore stronger than the intrinsic localization requirement.
-
-AF-203 closes the projective-properness test left open after AF-202. Every five-node quartic minimal-support source satisfies the exact nonsharp inequality
-
-`D <= 3 Q W_1`.
-
-Hence bounded `Q` together with `W_1->0` already forces `D->0`; no separate source-localization assumption is needed on a bounded-profile class. Combining the same inequality with the Peano derivative estimate gives the purely profile-scale sufficient gate
-
-`Q^2 W_1 -> 0`,
-
-which allows `Q` to grow and still yields uniform fixed-band transfer.
-
-AF-204 closes the remaining varying-profile **full-band transfer** question exactly. The real-axis localization defect quantitatively calibrates the whole fixed complex band:
-
-`full-band transfer error ~ Q Lambda_sigma(beta)`
-
-up to constants depending only on the fixed anchor, half-plane edge, and finite vertical band. In the exact five-node quartic minimal-support class, AF-202 and AF-203 then give the equivalent source criterion
-
-`Q D -> 0`.
-
-Thus `Q^2 W_1->0` is a convenient sufficient surrogate, not the intrinsic varying-profile gate. The retained quartic response amplitude and physical knot-localization scale have to vanish in product.
-
-The unrestricted normalized full-Euler objective still does not generate this coercivity automatically: AF-200's escape family lies in vanishing normalized Euler sublevels while `Q->infinity` and the physical diameter escapes. Therefore unrestricted full-Euler sublevel compactness, and with it unrestricted minimizer transfer to the homogeneous `Q`-optimizer, remains ruled out by existing evidence.
-
-The clue remains accepted rather than resolved because its optimizer-transfer component is still open. The live residual is now narrower: identify a mathematically natural constrained source class or Euler objective for which low scalar objective forces `QD->0` **and** enough projective compactness to transfer the unique homogeneous `Q`-optimizer to actual full-Euler minimizers, or prove that no natural such class exists. AF-204 concerns the full band profile; AF-201 already warns that convergence of a scalar band supremum alone need not imply profile convergence, so the minimizer step requires an additional argument rather than following formally from the exact transfer gate.
+The cap is a sufficient retained source resource, not claimed to be the weakest possible one. The unrestricted full-Euler problem remains negatively settled by AF-200 because low scalar Euler objective does not itself prevent profile/diameter escape.
