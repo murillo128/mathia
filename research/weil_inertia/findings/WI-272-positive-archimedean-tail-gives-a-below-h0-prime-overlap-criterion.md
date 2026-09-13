@@ -166,7 +166,7 @@ B(L)
 \tag{16}
 \]
 
-Equivalently,
+In particular, (16) already forces `B(L)>0`, hence every completely screened gap has `L<h_0`. For such a screened gap one may divide by `B(L)` and rewrite (16) as
 
 \[
 \boxed{
@@ -174,12 +174,12 @@ Equivalently,
 \le
 \sqrt{\frac{M_L}{M_R}}
 \le
-\frac{B(L)}{\lambda_{r_L}},
+\frac{B(L)}{\lambda_{r_L}}.
 }
 \tag{17}
 \]
 
-which is possible only if
+This is possible only if
 
 \[
 \boxed{B(L)^2\ge\lambda_{r_L}\lambda_{r_R}.}
@@ -338,7 +338,7 @@ C_v(\log n)
 \tag{31}
 \]
 
-Under complete screening, `P_{\alpha,\beta}=0`; rearranging (11) separately against each firstness term gives (16)--(17), and multiplying the two inequalities in (16) gives (18).
+Under complete screening, `P_{\alpha,\beta}=0`; rearranging (11) separately against each firstness term gives (16), then the preceding positivity observation gives (17), and multiplying the two inequalities in (16) gives (18).
 
 The mass-ratio constraint is useful because a screened gap cannot evade the width tariff merely by putting almost all `L^2` mass on one side. Making `M_L/M_R` large relaxes the right-side inequality only while simultaneously tightening the left-side one.
 
@@ -383,7 +383,7 @@ r_L,r_R\le a-\delta
 \tag{34}
 \]
 
-for some `\delta>0`, monotonicity of the ground-state energy gives
+for some `0<\delta<a`, monotonicity of the ground-state energy gives
 
 \[
 \sqrt{\lambda_{r_L}\lambda_{r_R}}
