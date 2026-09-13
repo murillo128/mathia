@@ -20,13 +20,19 @@ Source 58, arXiv:`2608.24827v2`, proves parity-resolved computer-assisted min--m
 \lambda^{\mathrm{odd}}_1\ge8.206\times10^{-15}.
 \]
 
-Using the exact source-58/Suzuki quadratic-form dictionary already audited in `PL-265`, `PL-269`, and `PL-283`, these bounds transfer to the parity reductions of Suzuki's canonical Friedrichs operator `A_0.8` on `L^2(-0.8,0.8)`. Hence the global ground eigenvalue is the first even eigenvalue, it is simple and even, and
+The same `v2` also gives an independent certified global variational upper bound at `L=0.8`, reported in its abstract and Table 3,
+
+\[
+\lambda_{\min}(0.8)\le2.27\times10^{-17}.
+\]
+
+Using the exact source-58/Suzuki quadratic-form dictionary already audited in `PL-265`, `PL-269`, and `PL-283`, these bounds transfer to the parity reductions and global ground level of Suzuki's canonical Friedrichs operator `A_0.8` on `L^2(-0.8,0.8)`. The parity bounds first show that the global ground eigenvalue is the first even eigenvalue and is simple; the stronger global variational certificate then sharpens its upper bound. Thus
 
 \[
 \boxed{
 8.9\times10^{-18}
 \le \lambda_1(A_{0.8})
-\le2.523\times10^{-16}.
+\le2.27\times10^{-17}.
 }
 \]
 
@@ -39,12 +45,12 @@ Moreover the next global eigenvalue satisfies
 }
 \]
 
-so the spectral gap obeys the explicit lower bound
+so the spectral gap obeys the strengthened explicit lower bound
 
 \[
 \boxed{
 \lambda_2(A_{0.8})-\lambda_1(A_{0.8})
-\ge7.9537\times10^{-15}.
+\ge8.1833\times10^{-15}.
 }
 \]
 
@@ -98,7 +104,7 @@ Because the full spectrum is the multiset union of the even and odd spectra,
 \lambda_1(A_{0.8})=\min(e_1,o_1).
 \]
 
-The certified inequalities give
+The parity-resolved certified inequalities give
 
 \[
 e_1\le2.523\times10^{-16}
@@ -120,6 +126,14 @@ Therefore `e_1` has multiplicity one within the even sector and no odd eigenvalu
 \boxed{\lambda_1(A_{0.8})=e_1\text{ is simple and even}.}
 \]
 
+At this point the separate global variational certificate from source 58 applies to that same eigenvalue. Its `L=0.8` value
+
+\[
+\lambda_{\min}(0.8)\le2.27\times10^{-17}
+\]
+
+therefore sharpens the upper bound on `e_1` by more than an order of magnitude while leaving the parity argument unchanged.
+
 The second global eigenvalue must be
 
 \[
@@ -136,17 +150,17 @@ hence
 8.206\times10^{-15}.
 \]
 
-Combining this with the certified upper bound on the ground level yields
+Combining this with the stronger certified global upper bound on the ground level yields
 
 \[
 \lambda_2-\lambda_1
 \ge
-8.206\times10^{-15}-2.523\times10^{-16}
+8.206\times10^{-15}-2.27\times10^{-17}
 =
-7.9537\times10^{-15}.
+8.1833\times10^{-15}.
 \]
 
-The gap estimate uses the **upper** certificate for `e_1`; using only the positive lower bound from `PL-283` would not justify it.
+The gap estimate uses an **upper** certificate for the ground level and a **lower** certificate for the second global level. The older `7.9537e-15` bound followed from the coarser parity-sector upper `2.523e-16`; the `v2` global variational certificate sharpens it without changing the spectral identification.
 
 ## 3. Consequence for Suzuki's finite-window spectral construction
 
@@ -156,7 +170,15 @@ Suzuki's localized theory uses the Friedrichs ground level `lambda_a` as the low
 0<8.9\times10^{-18}\le\lambda_1(A_{0.8}),
 \]
 
-and the ground level is isolated from the rest of the spectrum by at least `7.9537e-15` under the source certificate.
+and the ground level is isolated from the rest of the spectrum by at least `8.1833e-15` under the source certificate. The certified enclosure of the ground level itself is now
+
+\[
+8.9\times10^{-18}
+\le\lambda_1(A_{0.8})
+\le2.27\times10^{-17},
+\]
+
+so the upper/lower enclosure ratio is below `2.56` rather than the much looser parity-only ratio.
 
 This verifies, at `a=0.8`, a concrete finite-window regime in which the canonical localized operator has a nondegenerate even ground state and a positive spectral separation. It can be used as a stable local base point for perturbative or continuation questions in aperture, provided any such argument separately controls how the parity-reduced eigenvalues move with `a`.
 
@@ -164,17 +186,17 @@ It does **not** imply that the ground state remains simple, even, or uniformly g
 
 ## 4. Evidence and novelty audit
 
-The parity-resolved inequalities are not Mathia computations. They are taken from Theorem 6.2 of source 58, a recent non-peer-reviewed arXiv preprint whose `v2` provenance is pinned in `research/prime_lattice/SOURCES.md`. This Research Watch inspected the load-bearing theorem in the primary paper but did not independently reconstruct its interval-arithmetic certificate. All numerical constants therefore remain **literature-level computer-assisted evidence** until independently reproduced.
+The parity-resolved inequalities and the stronger global upper bound are not Mathia computations. They are taken from source 58, a recent non-peer-reviewed arXiv preprint whose `v2` provenance is pinned in `research/prime_lattice/SOURCES.md`. The parity data come from Theorem 6.2; the certified global upper `2.27e-17` at `L=0.8` is reported in the `v2` abstract and Table 3 as a geometric-side variational upper bound evaluated with interval arithmetic and without assuming RH. This Research Watch inspected the load-bearing source statements but did not independently reconstruct their interval-arithmetic certificates. All numerical constants therefore remain **literature-level computer-assisted evidence** until independently reproduced.
 
-The source theorem itself already concludes that the compact-window ground state at `L=0.8` is simple and even. Accordingly there is **no novelty claim** for that qualitative fact. Suzuki independently proves simplicity/evenness only in a sufficiently small-aperture regime in his canonical operator framework. The line-local contribution here is narrower: because `PL-265`, `PL-269`, and `PL-283` have already established that source 58 and Suzuki use the same localized completed Weil form with the same aperture normalization, the parity-resolved source bounds can be read as spectral bounds for the canonical `A_0.8`. The explicit global lower bound for `lambda_2(A_0.8)` and the `7.9537e-15` gap are immediate but useful consequences of that transfer.
+The source theorem itself already concludes that the compact-window ground state at `L=0.8` is simple and even, and the source abstract already records the tight global enclosure `8.9e-18 <= lambda_min(0.8) <= 2.27e-17`. Accordingly there is **no novelty claim** for those source-level facts. Suzuki independently proves simplicity/evenness only in a sufficiently small-aperture regime in his canonical operator framework. The line-local contribution here is narrower: because `PL-265`, `PL-269`, and `PL-283` have already established that source 58 and Suzuki use the same localized completed Weil form with the same aperture normalization, the source certificates can be read as spectral bounds for the canonical `A_0.8`. The explicit global lower bound for `lambda_2(A_0.8)` and the strengthened `8.1833e-15` gap are immediate but useful consequences of that transfer.
 
 No new `SOURCES.md` entry is required: source 58 already records arXiv:`2608.24827v2`, and source 56 already records Suzuki's localized operator theory.
 
 ## 5. Adversarial checks and boundaries
 
 - **No parity promotion without reduction.** The full-operator conclusion uses reflection invariance and the reducing decomposition into even and odd subspaces; it does not infer a global statement from an even-sector computation alone.
-- **Ground simplicity uses both sectors.** `e_2>e_1` excludes even multiplicity, while `o_1>e_1` excludes an odd degeneracy at the same eigenvalue.
-- **Gap arithmetic.** The lower bound `7.9537e-15` is obtained from the certified lower bound on the second global level and the certified upper bound on the first, not from two lower bounds.
+- **Ground simplicity uses both sectors.** `e_2>e_1` excludes even multiplicity, while `o_1>e_1` excludes an odd degeneracy at the same eigenvalue. The stronger global upper is applied only after this identification; it is not misrepresented as a parity-resolved theorem.
+- **Gap arithmetic.** The strengthened lower bound `8.1833e-15` is obtained from the certified lower bound on the second global level and the certified global upper bound on the first, not from two lower bounds.
 - **Common-form normalization.** The transfer relies on the exact support-radius and quadratic-form dictionary already audited in `PL-265`, `PL-269`, and `PL-283`; no new factor-of-two convention is introduced.
 - **Certificate status.** The tiny values make ordinary floating-point reproduction inadequate. The numerical inequalities remain contingent on the source's rigorous computer-assisted certificate.
 - **No all-aperture gap.** Neither min--max monotonicity nor positivity through `0.8` gives a uniform lower bound on `lambda_2-lambda_1` as `a` grows.
@@ -189,19 +211,19 @@ No new `SOURCES.md` entry is required: source 58 already records arXiv:`2608.248
 \boxed{
 0<8.9\times10^{-18}
 \le\lambda_1(A_{0.8})
-\le2.523\times10^{-16}
+\le2.27\times10^{-17}
 <8.206\times10^{-15}
 \le\lambda_2(A_{0.8}),
 }
 \]
 
-with a **simple even** ground state and a certified gap of at least `7.9537e-15`, conditional only on the correctness of source 58's computer-assisted proof.
+with a **simple even** ground state and a certified gap of at least `8.1833e-15`, conditional only on the correctness of source 58's computer-assisted proof.
 
-This does not change the global first-crossing target: the missing mechanism is still an aperture-uniform, source-specific prevention of negative crossing for the rational-prime completed Weil form. What it does provide is a rigorously isolated canonical ground state very near the next prime-power activation at `log(5)/2`, giving a sharper finite-window boundary condition for any future perturbative analysis of that first crossing.
+This does not change the global first-crossing target: the missing mechanism is still an aperture-uniform, source-specific prevention of negative crossing for the rational-prime completed Weil form. What it does provide is a substantially tighter certified endpoint enclosure for the isolated canonical ground state very near the next prime-power activation at `log(5)/2`, giving a sharper finite-window boundary condition for any future perturbative analysis of that first crossing.
 
 ## Sources
 
-- arXiv:`2608.24827v2`, source 58 in `research/prime_lattice/SOURCES.md`, Theorem 6.2: certified parity-resolved min--max bounds at `L=0.8`, including the simple/even ground-state conclusion.
+- Xuefeng Zhu, *Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau-Widom decay law*, arXiv:`2608.24827v2`, source 58 in `research/prime_lattice/SOURCES.md`: Theorem 6.2 gives the certified parity-resolved min--max bounds at `L=0.8`; the `v2` abstract and Table 3 give the certified global enclosure `8.9e-18 <= lambda_min(0.8) <= 2.27e-17`.
 - Masatoshi Suzuki, *Weil's quadratic form via the screw function*, arXiv:`2606.09096`, source 56: canonical localized closed form, Friedrichs operator `A_a`, and finite-window spectral framework.
 - `PL-265`: exact CvS/Suzuki common-form and support-radius dictionary.
 - `PL-269`: audited source-58/Suzuki test-space bridge.
