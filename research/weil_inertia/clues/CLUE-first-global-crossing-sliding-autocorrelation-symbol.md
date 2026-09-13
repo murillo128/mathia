@@ -15,13 +15,14 @@ based_on:
   - research/weil_inertia/findings/WI-264-finite-aperture-endpoint-autocorrelations-screen-all-prime-layers.md
   - research/weil_inertia/findings/WI-265-endpoint-screening-survives-an-abstract-first-crossing-compression-model.md
   - research/weil_inertia/findings/WI-266-suzuki-null-equation-rules-out-endpoint-bump-screening.md
+  - research/weil_inertia/findings/WI-267-suzuki-null-modes-admit-no-prime-translation-free-support-gap.md
 ---
 
-# Can Suzuki-specific first-crossing rigidity exclude general finite-aperture screening?
+# Can Suzuki-specific first-crossing rigidity force unscreenable arithmetic overlap?
 
 ## Observation
 
-`WI-253` and `WI-258` give two exact families that every hypothetical first unrestricted localized Weil zero mode must satisfy. With
+`WI-253` and `WI-258` give exact lower-envelope families that every hypothetical first unrestricted localized Weil zero mode must satisfy. With
 
 \[
 d\mu_v(h)=C_v(h)\left[
@@ -30,7 +31,7 @@ d\mu_v(h)=C_v(h)\left[
 \right],
 \]
 
-the first-crossing null mode obeys
+the first-crossing mode obeys
 
 \[
 \mathcal F_v(r)=\int_0^{2a_*}\min(h,2r)\,d\mu_v(h)
@@ -38,85 +39,79 @@ the first-crossing null mode obeys
 \qquad(0<r<a_*),
 \]
 
-and phase modulation gives
+while phase modulation supplies the additional localized cosine-defect family from `WI-258`.
+
+`WI-264` showed that source signs and finitely many prime-power layers can be screened at the level of autocorrelation by a two-endpoint construction, and `WI-265` showed that generic abstract first-crossing positivity does not defeat that geometry. `WI-266` then used Suzuki's actual null equation to exclude the explicit endpoint family.
+
+`WI-267` now extracts a geometry-independent source-specific theorem from the same operator. For any nonzero null vector `A_a v=0`, with closed essential support `S` and active lag set
 
 \[
-\mathcal F_v(r)+J_v(r,t)\ge r\lambda_r,
-\qquad
-J_v(r,t)=\int_0^{2r}(2r-h)(1-\cos(th))\,d\mu_v(h).
+\mathcal P_a=\{\log n:\Lambda(n)>0,\ \log n\le2a\},
 \]
 
-`WI-264` showed that the explicit source signs and any finite collection of prime-power layers can be screened by two sufficiently narrow antisymmetric endpoint bumps. `WI-265` strengthened that barrier: the same screened vector can be the exact terminal zero mode of an abstract positive rank-one-defect operator with strict positivity on every proper centered and translated shorter window. Generic first-crossing spectral structure therefore does not defeat the geometry.
-
-`WI-266` now supplies the missing source-specific discrimination. Suzuki's actual null equation has regular kernel
+one has
 
 \[
-k(h)=e^{h/2}-\frac{e^{-5h/2}}{1-e^{-2h}},
-\qquad k'(h)>0\quad(h>0),
+\boxed{
+(-a,a)\subset
+S\cup\bigcup_{\ell\in\mathcal P_a}
+\bigl((S-\ell)\cup(S+\ell)\bigr).
+}
 \]
 
-away from the local singularity and von-Mangoldt atoms. For every `WI-264` endpoint bump there is a nonempty open interval in the middle support gap on which the vector and all prime translations vanish. On that interval the exact null equation reduces to the continuous convolution, and strict monotonicity makes the positive left endpoint bump dominate the negative right endpoint bump pointwise. Hence `A_a^{Weil}v` has a fixed nonzero sign there, contradicting nullity.
+Thus no open support gap can be simultaneously free of `v` and every active prime translation. The proof works for the full operator domain `D(A_a)`, not only the `H_0^1` core: Suzuki's form-core identity yields `(-g'')*v=0` distributionally, and on a prime-translation-free gap the regular kernel has the exact exponential expansion
 
-Thus the two-endpoint screening family is no longer a live countermodel. The remaining question is whether this source-specific rigidity extends from that geometry to arbitrary first-crossing modes, or whether a more complicated multi-component support can use prime translations to cancel the continuous kernel.
+\[
+k(h)=e^{h/2}-\sum_{m\ge0}e^{-(5/2+2m)h}.
+\]
 
-There is also no finite-scale activation gate at `L=7/20`. `WI-253` records the certified theorem `lambda_0.8>0` for arbitrary complex tests, so any hypothetical first global crossing satisfies `a_*>0.8`. The `FP-0.35` audits in `WI-259`--`WI-262` remain useful artifact audits but are not prerequisites for this clue.
+Splitting the convolution across the gap produces a Laurent series with disjoint exponent families; local nullity forces all coefficients to vanish, and polynomial moment uniqueness then forces both sides of `v` to vanish. Hence the only translation-free-gap null vector is the zero vector.
+
+This resolves the clue's previous **support-spreading/no-long-gap sub-gate**. The remaining issue is stronger: prime translations may be active at every gap point and still cancel the continuous convolution without forcing a nonzero global autocorrelation at any one lag.
 
 ## Research question
 
-Can Suzuki's **specific localized null equation and source identity** force a support-spreading or no-long-gap constraint strong enough to exclude every screened first-crossing mode?
+Can the exact Suzuki null equation plus the pointwise translation domination from `WI-267` force a **quantitative unscreenable arithmetic overlap** for a hypothetical first-crossing mode?
 
-The two source-specific inputs remain
-
-\[
-\boxed{\mathcal F_v(r)\ge r\lambda_r\quad\text{for every }0<r<a_*}
-\]
-
-and
+The live target is no longer merely to prove that prime translations reach every support gap. That is now exact. What is needed is a bridge from translated activity to an invariant that cannot cancel globally, for example one of the following kinds of conclusions:
 
 \[
-\boxed{A_{a_*}^{\rm Weil}v=0.}
+\sum_{\ell\in\mathcal P_{a_*}}c_\ell |C_v(\ell)|
+\ge \eta(a_*)>0,
 \]
 
-but `WI-266` changes the target. It is no longer useful to test the already-excluded two-endpoint family or to ask whether abstract nesting alone forces overlap at a prime lag. The live issue is whether the pointwise/distributional equation can be converted into a geometry-independent theorem: for example, a quantitative prohibition on a macroscopic support gap, a lower bound on support propagation under the translations `\pm\log n`, a forced nonzero autocorrelation mass at some arithmetic lag, or a sign/maximum-principle argument for a suitable extremal component of a null vector.
+or a source-weighted signed lower bound strong enough to enter `\mathcal F_v(r)`, or a quantitative overlap/flux inequality on the finite translation graph that survives phases and signs. Any such bound must be derived from the actual equation rather than from generic support counting.
 
 ## Decisive test
 
-Start from a hypothetical first-crossing mode with `a_*>0.8` and use Suzuki's exact operator before collapsing to generic spectral data. Write the null equation on a connected component of a support gap or on a region where only a controlled subset of prime translations can be active. Test whether strict monotonicity of the continuous kernel, together with the finite translation graph generated by the active `\log n`, forces one-sided sign or propagation.
-
-A strong positive outcome would prove a source-specific statement of the schematic form
+Start from a nonzero hypothetical first-crossing mode with `a_*>0.8`, its exact distributional equation
 
 \[
-A_a^{\rm Weil}v=0
-\quad\Longrightarrow\quad
-\text{every gap/component configuration obeys a quantitative propagation constraint},
+(-g'')*v=0\quad\text{on }(-a_*,a_*),
 \]
 
-with a consequence that rules out all finite-aperture source screening relevant to first crossing. A weaker but still useful result would characterize exactly which support graphs can evade the `WI-266` sign argument and thereby reduce the possible exceptional geometries to a rigid class.
+and the support cover from `WI-267`. Decompose the complement of `S=supp(v)` into connected components. On each component, at least one active translate is present everywhere. The decisive positive route is to show that the finite family of translated pieces cannot cancel the analytic archimedean convolution on all components unless some arithmetic overlap carries a definite amount of mass or phase coherence.
 
-The corresponding decisive negative test is now harder than in `WI-265`: construct a **source-compatible multi-component vector** whose prime translations are active in just the right places to cancel the monotone continuous convolution and which satisfies either Suzuki's actual null equation or the full lower-envelope family to established precision. Another abstract operator or another two-endpoint bump does not meet the gate.
+Useful formulations may include a finite translation graph on support components, a local linear system obtained by differentiating or analytically continuing the gap equation, or a conservation/flux identity that sums over components and removes pointwise phase cancellation. A successful theorem should produce a quantity that is visible to the sliding lower-envelope family or another established Weil-form invariant.
 
-The scalar lower-envelope route remains available independently. If one can show for every member of a broader screened class that
-
-\[
-\mathcal F_v(r)<r\lambda_r
-\]
-
-at some common radius, that also excludes the class. But `WI-266` shows that the pointwise null equation already contains strictly more discriminatory information than the sign-screened autocorrelation observables used in `WI-264`.
+The decisive negative test is a **source-compatible multi-component mode or asymptotically exact family** that satisfies the actual local convolution equation while obeying the `WI-267` translation cover and still screens all prime-lag autocorrelations relevant to the current first-crossing inequalities. Another abstract self-adjoint operator, another translation-free gap, or another endpoint-bump construction no longer reaches the gate.
 
 ## Stress tests
 
-Any proposed implication must survive the existing boundary results. `WI-257` rules out generic bounded-self-adjoint zero-mode regularity. `WI-263` rules out one-prime source-sign/Bochner arguments. `WI-264` shows that all finitely many active source atoms can be placed in one autocorrelation gap. `WI-265` shows that this geometry can coexist with an exact **abstract** first crossing. `WI-266`, however, proves that it cannot coexist with Suzuki's **actual** null equation.
+Any proposed bootstrap must survive all existing boundary results. `WI-257` rules out obtaining the needed regularity from generic bounded-self-adjoint zero-mode arguments. `WI-263` defeats one-prime sign/Bochner reasoning. `WI-264` shows that finitely many source atoms can be hidden from autocorrelation observables. `WI-265` shows that generic first-crossing positivity does not recover the missing source geometry. `WI-266` excludes the simplest endpoint screen only after restoring Suzuki's operator, and `WI-267` proves that every surviving null mode must have prime translations active throughout every support gap.
 
-Therefore the arithmetic operator must enter before any reduction that forgets the relative support geometry of `v`, its prime translates, and the strictly monotone regular kernel. Conversely, a proposed generalization of `WI-266` must not assume that every support gap is prime-translation-free: a multi-component vector can have translated mass inside the gap, and those discrete terms are the obvious cancellation mechanism that the next proof must control.
+The new support cover is therefore necessary but not sufficient. It must not be silently upgraded to `C_v(\log n)\ne0`: a gap point `x` can have `v(x)=0` but `v(x+\ell)\ne0`, so translated activity there contributes to the pointwise null equation while contributing nothing directly to the autocorrelation integrand `v(x+\ell)\overline{v(x)}`. Likewise, finite-union support measure bounds from the cover are too weak on their own.
+
+Any argument using Suzuki's pointwise formula must also respect the full-domain warning. General ground states lie in `D(A_a)`, not necessarily `H_0^1`. `WI-267` resolves this for the null equation by a form-core/distributional passage; subsequent steps should remain distributional or explicitly prove whatever additional regularity they need.
 
 ## Evidence boundary
 
-`WI-266` proves only that the explicit `WI-264` antisymmetric two-endpoint family cannot be an actual localized Weil null vector. It does not prove that every null vector has nonzero autocorrelation at a prescribed prime-power lag, that arbitrary macroscopic support gaps are impossible, or that no multi-component source-compatible screen exists. It also does not establish a positive lower profile for `lambda_r` beyond the already certified finite-window inputs.
+`WI-267` proves exact pointwise translation domination of the support complement. It does **not** prove that arbitrary macroscopic support gaps are impossible; a gap is allowed when active prime translates cover it. It does not prove a positive prime-lag autocorrelation, a lower bound on overlap measure, a sign rule for translated pieces, or incompatibility of a translation-dominating multi-component support with the actual null equation.
 
-The exact null equation is available on Suzuki's `H_0^1` core through `B_a=D^*G_aD`, while a general ground-state vector in `D(A_a)` need not have that regularity. Any extension of the pointwise argument to arbitrary first-crossing modes must either prove enough regularity/approximation to justify the equation on the region used, or work distributionally/form-theoretically without inserting unjustified pointwise values.
+The first-crossing lower-envelope constraints from `WI-253`/`WI-258` and the pointwise support theorem from `WI-267` are presently independent necessary conditions on the same hypothetical mode. The open problem is to couple them without discarding the source geometry that made `WI-266` and `WI-267` possible.
 
 ## Research disposition
 
-The clue remains `accepted`, but its live gate has advanced beyond endpoint screening. Do not spend further passes rebuilding the `WI-264` two-bump geometry, deriving coercivity from abstract nested positivity, or enlarging the aperture merely to activate more prime layers.
+The clue remains `accepted`, but the support-propagation subproblem is resolved. Do not spend further passes trying to prove merely that a Suzuki null vector cannot have a prime-translation-free gap; `WI-267` already gives the exact full-domain statement.
 
-Attack the **source-specific propagation problem** exposed by `WI-266`: determine whether the monotone continuous kernel plus the exact finite von-Mangoldt translation graph forbids any macroscopic screened geometry compatible with a null mode. If a multi-component source-compatible countermodel survives the actual equation, persist that barrier and retarget toward a stronger invariant. If the null equation forces propagation, quantify it tightly enough to connect a hypothetical first crossing to a contradiction or an iterative defect-to-zero mechanism.
+Attack the **activity-to-overlap** step: classify translation-dominating support graphs compatible with the null equation, then determine whether phase/sign cancellation can keep every source-relevant autocorrelation screened. Persist a positive quantitative overlap/flux theorem, or a genuine source-compatible multi-component countermodel that survives the actual equation. Either outcome materially advances the defect-to-zero program.
