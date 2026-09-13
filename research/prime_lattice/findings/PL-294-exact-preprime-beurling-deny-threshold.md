@@ -59,7 +59,7 @@ where `P_a` is the finite prime-power translation contribution and
 \mathcal L(u)
 =
 \frac14\iint_{I^2}\frac{|u(x)-u(y)|^2}{|x-y|}\,dx\,dy
--rac12\int_I |u(x)|^2\log(1-x^2)\,dx.
+-\frac12\int_I |u(x)|^2\log(1-x^2)\,dx.
 \]
 
 For real `u`, put
