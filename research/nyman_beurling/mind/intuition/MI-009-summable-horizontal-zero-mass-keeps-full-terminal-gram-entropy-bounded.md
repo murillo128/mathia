@@ -1,19 +1,23 @@
-# MI-009 — Summable horizontal zero mass keeps the full terminal Gram entropy bounded
+# MI-009 — Fixed-ratio visible Gram bands are source-silent after universal calibration
 
-**Evidence level:** exact under the conditional source hypothesis `A=sum_(Re rho>1/2)(Re rho-1/2)<infinity` through NB-090. The result controls the complete dyadic terminal visible Gram matrix, not the full radial charge or nonterminal scales.
+**Evidence level:** exact under the conditional source hypothesis `A=sum_(Re rho>1/2)(Re rho-1/2)<infinity` through NB-091. The statement covers every fixed multiplicative depth `q`, but not a growing ratio `q=q(R)`, the full radial charge, or genuinely inter-scale statistics.
 
-NB-089 showed that summable horizontal off-critical mass makes the canonical dyadic **scalar sibling-average** distortion asymptotically silent. NB-090 closes the natural matrix escape inside the same terminal window. Before Blaschke deflation, the complete terminal innovation Gram is exactly
+NB-090 closed the complete dyadic terminal matrix: under `A<infinity`, its normalized determinant entropy is `O_A(1)`. NB-091 shows that widening the contiguous visible window to any other **fixed** ratio does not recover source sensitivity. For indices `m,...,R-1`, the raw Nyman innovation Gram has the exact determinant
 
-`K_tilde = I - (1/R) 11*`,
+`det K_tilde_(m,R)=m/R`.
 
-so its spectrum is uniformly bounded below and its normalized determinant has only finite correlation cost. Under `A<infinity`, the full Blaschke deformation changes every terminal Gram entry by only `O_A(1/R)`, giving bounded Frobenius correlation energy.
+For `m=ceil(R/q)` with fixed `q`, that raw Gram also has a uniform spectral floor `K_tilde_(R,q) >= c_q I`. After diagonal normalization its correlation entropy is
 
-Entrywise smallness alone would not exclude one hidden near-zero eigenvalue. The decisive extra structure is causal inner order: multiplication by the Blaschke factor is a causal isometry, and finite-prefix compression gives the quadratic-form comparison `K_R >= K_tilde_R >= (1/2)I`. After diagonal normalization the terminal correlation matrix therefore retains a uniform spectral floor. Combining that floor with the `O_A(1)` Frobenius deviation gives
+`-log det R_tilde_(R,q) = R Phi_q + O_q(1)`,
 
-`-log det R_R = O_A(1)`.
+where `Phi_2=0` and `Phi_q>0` for every fixed `q>=3`. The apparent linear entropy gained by looking deeper is therefore already present in the raw `B=1` calibration; it is not arithmetic information from off-critical zeros.
 
-Thus **all current-window terminal directions are silent in the summable-horizontal-mass regime**, including sibling contrasts and cross-block correlations that the scalar reduction discarded. The next Nyman obstruction cannot simply recover entropy by replacing the scalar sibling statistic with the full terminal determinant.
+The decisive comparison is the **centered excess** between the actual Blaschke-deflated Gram and that universal raw baseline. Causal inner order gives `K_(R,q)>=K_tilde_(R,q)`, while summable horizontal zero mass gives only `O_A,q(1)` total trace deformation on a fixed-ratio band. The spectral floor converts that trace budget into
 
-What remains live is outside that carrier: exclude summable horizontal mass by a stronger zero statistic, exploit earlier/nonterminal scale coupling, quantify excess above the positive aliased prediction floors, or find a genuinely inter-scale determinant/charge not dominated by this terminal Gram block.
+`|-log det R_(R,q) + log det R_tilde_(R,q)| = O_A,q(1)`.
 
-**Boundary.** Bounded terminal determinant deficit is only a bounded lower bound for the radial charge; it does not prove the charge itself bounded, Nyman approximation, false RH, or RH.
+Thus all contiguous visible Gram determinants at fixed multiplicative depth are silent after calibration in the summable-horizontal-mass regime. The important lesson is stronger than “the terminal block is too small”: **fixed depth itself is the wrong asymptotic carrier**. Enlarging a window from `R/2` to `R/q` with constant `q` only exposes a universal correlation baseline.
+
+What remains live is genuinely nonuniform in scale: prove that false-RH zero geometry forces a nonsummable effective horizontal statistic, let `q=q(R)->infinity` and control how the spectral/inverse/delay constants deteriorate, or construct an inter-scale statistic coupling different bands rather than taking one fixed-ratio determinant. Earlier indices help only if the depth actually grows or the statistic preserves coupling that a single band determinant discards.
+
+**Boundary.** The `O_A,q(1)` calibration is conditional on `A<infinity` and keeps `q` fixed. It does not control any regime with `q=q(R)->infinity`, prove the radial charge bounded, prove false RH compatible with all Nyman obstructions, or imply RH.
