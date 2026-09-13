@@ -22,6 +22,7 @@ based_on:
   - research/prime_flute/findings/PF-322-physical-low-packets-retain-critical-compactified-transverse-energy.md
   - research/prime_flute/findings/PF-323-interior-critical-low-packets-avoid-the-cuff-seam.md
   - research/prime_flute/findings/PF-324-critical-packet-seam-distance-remembers-consecutive-prime-gap-ratio.md
+  - research/prime_flute/findings/PF-325-physical-translations-convert-the-local-hilbert-schmidt-gate-into-a-packet-position-integral.md
 ---
 
 # Can the shear-deleted local pant angle gain any fixed superlinear power of the seam scale?
@@ -73,6 +74,18 @@ D_{n,\lambda}\to\infty.
 
 Thus the downstream projected-angle calculation has two genuinely different canonical boundary regimes. A single gap-independent seam-local picture is no longer an adequate falsification model.
 
+PF-325 now identifies the correct bridge from those localized packets back to PF-318. In the normalized physical-low Hilbert coordinates, the translations of one equal-amplitude fixed-band packet form a continuous tight frame, and for every local block `B`
+
+\[
+\|B\|_{\mathcal S_2}^2
+=\frac{m_n}{\ell_n}
+\int_0^{\ell_n}\|B^*\psi_{n,t}\|^2dt,
+\qquad
+\frac{m_n}{\ell_n}\to\frac\kappa\pi.
+\]
+
+So the Hilbert--Schmidt fallback is not a separate opaque Fourier-row problem: it is exactly an integrated physical-position response test at constant packet density. The seam-energy normalization must still be accounted for when comparing the normalized packet orbit with PF-323's raw `L^2` packet; PF-325 does not identify those coordinates silently.
+
 ## Research question
 
 For one canonical one-cusp pant contribution, delete only the PF-232 hypercycle-straightening shear while retaining the actual PF-205 seam energy, the variable-width diagonal corridor, the full common finite-pant/cusp-side completion, and the fixed physical low/high cutoff from PF-212. After distributing the positive identity share as in PF-320, let `T_{0,n}^{(r)}` be the intrinsic local low/high angle for one neighboring offset `r`.
@@ -94,26 +107,59 @@ for some fixed `\varepsilon>0`, or, failing that,
 
 The first closes the reference direct channel in trace class by PF-321; the second closes it at the weak-trace endpoint by PF-318. PF-320 then restores the actual shear. The independent conditional channel `T_H` remains outside this clue.
 
+By PF-325 the second condition may equivalently be tested, up to the fixed finite boundary-component bookkeeping, as
+
+\[
+\boxed{
+\int_0^{\ell_n}
+\|(T_{0,n}^{(r)})^*\psi_{n,t}\|^2dt
+\lesssim
+\frac{1+\log P_n}{P_n^2},
+}
+\]
+
+where `psi_{n,t}` is the translated equal-amplitude packet built from an orthonormal Fourier basis in the **actual normalized low Hilbert space**.
+
 ## Why it may matter
 
 The open calculation is now sharply localized. PF-233 still gives exact operator-valued corridor transfer and an even transfer function `F(x)=x/\sinh x`, but PF-322--PF-323 prove that the retained physical-low space contains genuine compactification-critical packets for which a blanket small-argument Taylor estimate fails even away from the quotient seam.
 
 PF-324 makes the test more discriminating. If suppression of the critical packet is fundamentally a bounded-distance seam/gluing effect, the `r_n->infinity` subsequence is adversarial because the outgoing seam escapes every fixed critical window. If the completed angle nevertheless gains a superlinear seam power there, the mechanism must come from the physical `L/H` projection, seam-energy normalization, or genuinely nonlocal finite-pant completion rather than from merely placing the packet near a seam. Conversely the `r_n->0` subsequence keeps the seam at the minimal finite critical distance and maximizes the opportunity for a local boundary cancellation.
 
-A difference between these two regimes would be a concrete way for adjacent prime ordering to survive into the completed local response. PF-324 does not establish such a difference; it only supplies the canonical arithmetic parameter and the two subsequences on which to test it.
+PF-325 removes a second ambiguity. A failure of the strong operator-norm target does not force the research back into mode-by-mode bookkeeping. The weak endpoint can be decided by the spatial packet-response profile itself. Any unit normalized packet response exceeding `O(sqrt(1+log P_n)/P_n)` already violates the PF-318 local Hilbert--Schmidt budget, while a positive proof can estimate the integrated response over perturbative, critical, and boundary regions of the cuff.
+
+A difference between the PF-324 finite-boundary and escaping-boundary response profiles would be a concrete way for adjacent prime ordering to survive into the completed local response. PF-324 does not establish such a difference; it only supplies the canonical arithmetic parameter and the two subsequences on which to test it.
 
 ## Decisive test
 
-Use PF-323's **interior critical packets** at one fixed `lambda`, not only the seam-centered PF-322 packet. Propagate them through the actual shear-deleted one-cusp-pant construction: retain the finite-pant quotient, transport into the PF-205 physical cuff representation, apply the true seam-energy diagonal normalization, keep the common positive completion used by PF-320, then form the physical `L/H` mixed corner and its intrinsic angle.
+Use PF-323's **interior critical packets** at one fixed `lambda`, but carry the packet through the coordinate changes honestly. Propagate the raw physical packet through the actual shear-deleted one-cusp-pant construction, retain the finite-pant quotient, apply the true seam-energy diagonal normalization, keep the common positive completion used by PF-320, and form the physical `L/H` mixed corner and intrinsic angle. In parallel construct PF-325's translated packet orbit directly in the final normalized low Hilbert coordinates and pull it back through the Fourier-diagonal seam normalization so that the raw and normalized packet descriptions are compared rather than conflated.
 
-Run the same calculation on both arithmetic subsequences singled out by PF-324:
+Run the same completed calculation on both arithmetic subsequences singled out by PF-324:
 
 1. **finite-boundary regime:** `r_n->0`, hence `D_{n,lambda}->log(1/lambda)`;
 2. **escaping-boundary regime:** `r_n->infinity`, hence `D_{n,lambda}->infinity`.
 
-For each regime distinguish three outcomes. If the compactification-critical component cancels and one gets `O(s_n^{1+epsilon})`, PF-321 closes the reference channel strongly. If operator-norm superlinear decay fails but the local squared Hilbert--Schmidt leakage remains `O((1+log P_n)/P_n^2)`, PF-318 still closes the endpoint. If a nonconstant PF-323 packet survives the complete quotient/normalization/completion with angle mass incompatible with both criteria, the direct-angle route is genuinely obstructed.
+Record the normalized completed response
 
-The first especially useful discriminator is the escaping-boundary regime. Determine whether the completed normalized `L/H` response of the interior critical packet still tends to zero faster than `s_n`, or whether an order-`s_n`, order-one, or PF-318-incompatible singular direction remains when the outgoing seam is arbitrarily far away in the natural critical coordinate.
+\[
+a_{n,r}(t):=\|(T_{0,n}^{(r)})^*\psi_{n,t}\|.
+\]
+
+The two endpoint routes now have distinct exact tests. If `sup_t a_{n,r}(t)=O(s_n^{1+epsilon})`, PF-321 closes the reference channel strongly. If that fails, compute the position integral
+
+\[
+\int_0^{\ell_n}a_{n,r}(t)^2dt.
+\]
+
+PF-325 and PF-318 close the weak endpoint exactly when this is `O((1+log P_n)/P_n^2)` up to fixed cutoff/component constants. Conversely, if even one unit packet has
+
+\[
+a_{n,r}(t)\gg\frac{\sqrt{1+\log P_n}}{P_n},
+\]
+
+then the PF-318 Hilbert--Schmidt fallback fails for that local block. A fixed-width set of such centers gives the same obstruction directly through the integrated identity.
+
+The first especially useful discriminator remains the escaping-boundary regime. Determine whether the completed normalized response near the PF-323 critical center is suppressed once the outgoing seam is arbitrarily far away in the natural critical coordinate. But do not stop at that single center if it is small: the positive PF-318 route requires the full integrated packet-position budget.
 
 A negative conclusion must be expressed at the **intrinsic angle** level. Large compactified `A`-form energy, raw seam-block amplification, or the PF-215 constant mode are not sufficient witnesses.
 
@@ -121,7 +167,9 @@ A negative conclusion must be expressed at the **intrinsic angle** level. Large 
 
 PF-321 is an implication theorem, not the missing local PDE estimate. PF-233 supplies exact transfer structure but does not make its unbounded transverse operator uniformly small on the growing physical-low space. PF-322 proves that such uniform smallness is false at the cell-energy level; PF-323 moves the witness into the cuff interior; PF-324 proves that its recentered seam distance has non-universal arithmetic subsequences.
 
-None of PF-322--PF-324 proves that the completed shear-deleted local angle is large. The finite-pant quotient, seam normalization, `L/H` projection, and common completion may erase the critical component, including on the escaping-boundary subsequence. Conversely, no current finding proves that they do. The superlinear angle estimate and the PF-318 Hilbert--Schmidt fallback remain open.
+PF-325 is likewise an exact reduction, not a completed-angle estimate. Its tight-frame identity applies in the normalized Hilbert coordinates on which the tested local block acts. PF-323's raw `L^2` packet must be transported through the seam-energy multiplier before the two packet descriptions can be identified. The pant completion itself need not be translation invariant and remains inside the response function `a_{n,r}(t)`.
+
+None of PF-322--PF-325 proves that the completed shear-deleted local angle is large. The finite-pant quotient, seam normalization, `L/H` projection, and common completion may erase the critical component, including on the escaping-boundary subsequence. Conversely, no current finding proves that they do. The superlinear angle estimate and the PF-318/PF-325 integrated Hilbert--Schmidt fallback remain open.
 
 PF-320 controls only the difference between the actual sheared and shear-deleted local angles at the established reciprocal-prime cost. It does not transfer PF-233's formal quadratic cancellation through the reference problem. PF-324's gap-ratio dependence is geometric input to this test, not yet a spectral invariant or RH-relevant arithmetic recovery theorem.
 
@@ -131,4 +179,4 @@ The clue remains `accepted`, not `resolved`.
 
 Outcome: `accepted`.
 
-PF-322--PF-324 have completed the unprojected adversarial calibration. The surviving target is strictly downstream: compute the **completed physical projected intrinsic angle** on PF-323's interior critical packet, separately on the finite-boundary and escaping-boundary prime-gap-ratio subsequences. Any fixed superlinear seam gain closes the reference channel by PF-321; otherwise measure singular-value/Hilbert--Schmidt leakage against PF-318.
+PF-322--PF-324 complete the unprojected adversarial calibration, and PF-325 turns the PF-318 fallback into an exact physical-position packet integral. The surviving target is strictly downstream: compute the **completed physical projected intrinsic-angle response profile**, separately on the finite-boundary and escaping-boundary prime-gap-ratio subsequences. Any fixed superlinear seam gain closes the reference channel by PF-321; otherwise the integrated squared packet response must meet the PF-318 reciprocal-prime Hilbert--Schmidt budget.
