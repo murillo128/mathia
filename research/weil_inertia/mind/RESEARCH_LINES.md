@@ -12,19 +12,23 @@ Finite negative inertia detects off-line packets exactly but can lose coercivity
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`.
 
-WI-274--WI-277 progressively sharpen the first-crossing source reserve. Complementary masses give the sharp harmonic envelope; one shift gives a sharp nilpotent reserve; and finite commensurate families give the sharp Toeplitz reserve
+WI-274--WI-277 progressively sharpen the first-crossing source reserve. Complementary masses give the sharp harmonic envelope; one shift gives a sharp nilpotent reserve; and finite commensurate families give the scalarized Toeplitz reserve based on the top eigenvalue of `H_N(alpha)`.
 
-`S_v >= (sum alpha_k k r lambda_(kr))/(sum alpha_k + rho_N(alpha))`.
+WI-279 shows that retaining the Hilbert orientation of the cut path gives strictly more information. The signed cut covariance obeys `F_v(kh/2)=S_v-C_k(h)`, and the same commensurate family yields the bottom-spectrum reserve
 
-The multishift theorem is a real compatibility gain: one cut-energy profile must realize several correlations simultaneously. But WI-278 shows that the presently certified **scalar** information about `lambda_a` still cannot force any of these reserves above the positive archimedean budget. A profile satisfying the known small-aperture asymptotic and compact-window certification can keep both the harmonic and every commensurate Toeplitz reserve below `K_+`.
+`S_v >= (sum alpha_k k r lambda_(kr))/(sum alpha_k-eta_N(alpha))`,
 
-The next theorem must therefore preserve information erased by the scalar profile/support-only relaxations: the exact Suzuki null/source equation, PSD signed-source multiplier family, nodal/regularity shape of the actual null mode, source-specific noncommensurate compatibility, or archimedean sign geometry. Further optimization of the same scalar `lambda_a` data is no longer a live route.
+where `eta_N(alpha)=lambda_min(H_N(alpha))`. It is always no worse than the WI-277 reserve and can be strictly stronger; the `N=3`, two-shift example improves the denominator from `3` to `5/2`. The coefficient is sharp for abstract PSD null-partition geometry.
 
-## Keep support-only sharpness, source sharpness and sign geometry separate
+But WI-278 still blocks every reserve whose numerator is controlled only by the currently certified scalar function `a -> lambda_a`. Its explicit admissible profile keeps `sup a lambda_a` below `K_+`, and the WI-279 denominator cannot reverse that ceiling. The next theorem must therefore preserve **source/eigenfunction information that strengthens the numerator or creates a new compatibility constraint**, not merely optimize another universal coefficient around the same scalar profile.
 
-WI-277's Toeplitz coefficient is sharp for arbitrary nonnegative compactly supported cut-energy profiles; WI-278 proves only that current scalar constraints admit a low-reserve counterprofile. Neither statement says an actual Suzuki first-crossing profile can realize those abstract extremizers while satisfying the exact source equation.
+Live candidates are the exact Suzuki signed-source multiplier equation, source-specific noncommensurate cut compatibility, nodal/regularity shape of the actual null mode, or archimedean sign geometry. Further scalar-profile optimization is no longer a live route.
 
-That incompatibility is now the opportunity. A useful multi-cut argument must keep a source/eigenfunction constraint absent from the scalar countermodel rather than add another universal support inequality.
+## Keep scalar-profile exhaustion and Hilbert-orientation information distinct
+
+WI-279 corrects an overstrong reading of WI-278. Passing from cut vectors to the norm profile `sqrt(Q)` really does discard usable covariance orientation, and restoring it can improve a multishift reserve. What is exhausted is the ability of the **current scalar `lambda_a` data** to force a budget crossing, not every geometric refinement of the cut path.
+
+That distinction is the opportunity. A successful argument must couple the extra Hilbert/source structure to information not admitted by the WI-278 counterprofile. Another support-only or PSD-only extremal inequality cannot suffice, because WI-279 is already sharp at that generic level.
 
 ## Keep endpoint firstness, source reserve, sign geometry and prime overlap as separate gates
 
