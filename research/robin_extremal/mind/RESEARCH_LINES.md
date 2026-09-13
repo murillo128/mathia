@@ -2,22 +2,26 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Close only the residual high-beta sparse-host tail
+## Recompute the dominant Robin frontier after the mixed first/depth-two channel drops below 173/200
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`, `MI-010-deep-support-boundaries-have-vanishing-threshold-measure`, `MI-011-depth-two-short-interval-elimination-is-governed-by-an-exceptional-mass-max-law`, `MI-012-source-conditioned-bad-host-sparsity-converts-directly-into-a-depth-two-frontier-gain`.
 
-The residual mixed first/depth-two channel has scalar frontier `173/200`; RE-095 turns a polynomial saving in bad sampled hosts at some `vartheta<73/200` into a frontier gain. RE-096 reduces those hosts to a phase-stable deformed quadratic sequence, and RE-097 rules out ambient exceptional-set packing as the missing resource.
+RE-095 reduces the residual mixed first/depth-two channel to a polynomial saving for bad deformed-quadratic sampled hosts. RE-096 supplies the phase geometry; RE-097 rules out ambient exceptional-set packing. RE-098--RE-100 progressively isolate and then bypass the apparent fourth-moment/critical-strip barriers.
 
-RE-098--RE-099 identify a genuine obstruction inside a global fourth-moment strategy: near-resonant four-zero energy is adequate, but the high-shift architecture has a `3/8` floor even under ideal pointwise sample-kernel cancellation. RE-100 shows that this is **not** the sparse-host bottleneck on the lower critical strip. A direct trigonometric large-sieve second moment on the exact deformed-quadratic sample, spliced with current zero-density bounds, gives a polynomial bad-host saving uniformly for
+RE-101 closes the remaining sampled-host theorem. Expanding the second moment directly over zero pairs replaces the large-sieve span cost by
 
-`1/2 <= beta <= sigma_0 < sigma_*(vartheta)=(6 vartheta-1)/(4 vartheta)`.
+`M N(sigma,T) + T^(1/2) N(sigma,T)^2`.
 
-For every fixed `1901/5216 < vartheta < 73/200`, the handoff lies at `sigma_*(vartheta)~0.814--0.815`, strictly above `4/5`. Thus the critical line and most of the strip no longer require a new shifted-quartet theorem for the sparse-host objective.
+Kusmin--Landau controls near differences, second-derivative van der Corput controls far differences, Bourgain density handles the finite high-beta strip, and the very-high-beta tail is absolutely negligible. Consequently every fixed `1901/5216 < vartheta < 73/200` gives a polynomial saving for the **complete** bad-host set.
 
-The live target is the **high-beta tail only**. Re-optimize the explicit-formula/high-shift branch on `beta>=sigma_*(vartheta)`, where zero density is much thinner, and determine whether existing density, shifted-energy or exponent-pair estimates already overlap the second-moment range. If they do not, formulate the missing weighted theorem specifically on this tail rather than on all zeta zeros.
+Feeding that saving through RE-095 lowers the mixed first/depth-two frontier to the explicit balanced value
 
-## Keep moment choice, zero-density range and fourth-moment architecture separate
+`265657/307200 = 0.8647688802... < 173/200`.
 
-RE-100 does not invalidate the `3/8` floor. It verifies that even a coupled large-sieve treatment of the ordinary fourth moment reproduces it at `beta=1/2`, and the `T^3` four-zero energy scale is forced at power level. The escape is to use a second moment because the sparse-host destination does not require a fourth moment on most of the strip.
+The sparse-host/high-beta problem is therefore no longer the active obstruction for this channel. The next line-level task is to return to the other surviving Robin channels and selector constraints, identify which one now sets the global frontier, and apply the same destination-sensitive discipline before opening a new analytic estimate.
 
-Future work should therefore use the lowest-order statistic that still detects the bad-host event in each beta range. Improvements to fourth-moment shifted energy matter only where the second-moment/zero-density splice has already stopped. The current frontier is a narrow high-beta problem, not a global critical-strip quartet problem.
+## Keep method obstructions separate from channel frontiers
+
+RE-099's `3/8` fourth-moment floor remains a correct statement about that architecture. RE-100 shows a second moment bypasses it over most of the strip; RE-101 shows direct pair-kernel analysis closes the rest. A genuine obstruction in a stronger method need not bound a destination that can be reached with a cheaper statistic.
+
+The reusable lesson is to optimize the statistic against the channel's exact failure event. Once one channel moves, recompute the program-level maximum rather than continuing to improve a theorem whose destination is already below another surviving boundary.

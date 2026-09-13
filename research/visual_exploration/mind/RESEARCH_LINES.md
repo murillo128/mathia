@@ -14,18 +14,24 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Control the limiting collision window or the full sinc-weighted shell tail
+## Cross the one-cancellation scale or upgrade typical-start control to uniform control
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`.
 
-VIS-203--VIS-206 identify positive autocorrelation shell energy with a two-sample close-pair probability and prove fixed normalized windows dilute. VIS-207 extends that conclusion to growing width: whenever
+VIS-203--VIS-207 identify positive autocorrelation shell energy with a two-sample close-pair probability and show that fixed and growing noncancelling windows dilute. VIS-208 now prices the **actual finite-start sinc kernel** rather than the unweighted shell mass. The cumulative bound
 
-`H A^(2+4 alpha) (log y)^2 / y^2 -> 0`,
+`S_(y,H)(A)/R^2 << H A^(2+4 alpha)(log y)^2/y^2`
 
-the close-pair graph has degree `O(A^2)`, dangerous vertex mass is `O(H A^(4 alpha)(log y)^2/y^2)`, and both close-pair probability and normalized exact-shell energy vanish. For `alpha=0`, this includes `A=o(y/(sqrt(H)log y))`.
+holds uniformly all the way to `A<=kappa y` for fixed `kappa<1/2`, even when its right-hand side is not small. Abel/Stieltjes summation against `sinc^2` then gives, for `0<alpha<1/2`,
 
-The live positive-shell boundary is therefore later than previously thought. Determine the transition when the above product is no longer small, or control the complete sinc-weighted intermediate region up to the dephasing/prime-cancellation scale. If that positive route fails, change the sign/interference class rather than reopening fixed or subcritical growing windows already closed by local-degree dilution.
+`W_kappa << H y^(2+4 alpha)(log y)^2/L^2`,
 
-## Keep method thresholds, pair-mass thresholds and the true shell sum separate
+with the corresponding logarithmic endpoint correction at `alpha=0`. Under the stated window conditions this makes the entire noncancelling determinant band negligible in long-start Cesaro mean square and hence for a density-one set of starts.
 
-The VIS-202 square-root-log boundary is a limitation of a stronger one-sided/four-form majorant. VIS-206--VIS-207 show that the actual two-sample positive shell resource stays small well beyond that method threshold. A future barrier should be stated for the sinc-weighted shell observable itself, not inferred from failure of a stronger auxiliary crowding norm.
+The positive-shell frontier has therefore moved to two genuinely different questions. First, understand the **one-cancellation-and-above** shells where the bounded-multiplicity determinant model changes. Second, determine whether the start-averaged gain can be upgraded to uniform-in-`T0` control, or whether rare coherent starts carry a real obstruction. Reopening the subcritical noncancelling band without one of these new ingredients no longer addresses the surviving problem.
+
+## Keep unweighted shell mass, sinc-weighted destination energy and uniform start control separate
+
+VIS-207's dilution condition is sufficient for the raw cumulative shell mass itself to be small. VIS-208 shows the destination can be much cheaper: even when that raw bound grows, the sinc kernel suppresses wider shells strongly enough to make the long-start energy vanish. But an `L^2`-in-start conclusion still does not imply a uniform pointwise bound.
+
+Future claims should therefore state which of three currencies they control: cumulative shell mass, sinc-weighted Cesaro energy, or worst-start amplitude. A failure of the strongest currency is not automatically a failure of the weaker destination.

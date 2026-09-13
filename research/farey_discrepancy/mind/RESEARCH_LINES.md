@@ -2,24 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Quantify physical descent as a function of growing predecessor depth
+## Force source-scale descent, not merely horizon descent
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`, `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`, `MI-003-normalized-record-defect-is-the-composition-loss`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`, `MI-002-odd-prime-square-reembedding-localizes-recursive-failure-to-dyadic-channel`, `MI-003-normalized-record-defect-is-the-composition-loss`, `MI-004-multiplicative-horizon-descent-can-preserve-the-source-quotient`.
 
-FD-094--FD-096 close one-step representation, the source-head branch and the existence of infinitely many sharp occupied bounded-defect entry states under false RH. FD-097 removes the apparent superexponential multistep loss: if `eta` is an occupation lower bound and `K` a backward-record-defect upper bound, the projective quality `q=eta/K` loses only a fixed branch factor because both quantities inherit the same destination ratio `F_sigma(H)/F_sigma(C)`.
+FD-094--FD-096 close one-step representation, the source-head branch and the existence of infinitely many sharp occupied bounded-defect entry states under false RH. FD-097 removes the apparent superexponential multistep loss: projective occupation/defect quality loses only a fixed branch factor. FD-098 then charges the strongest current uniform short-interval Möbius input and shows that the all-head branch gains only a logarithmic additive corridor, still `o(X)`.
 
-FD-098 then strengthens the negative control. For `11/20<Theta<1`, the current uniform short-interval Möbius theorem protects a frontier source record of amplitude `A=X^(Theta+o(1))` throughout a backward corridor of length `A(log X)^kappa` for every fixed `kappa<1/3`. Every four-adic reembedding in that corridor stays sharp, occupied and bounded-defect. The all-head repair therefore gains a logarithmic factor over one-Lipschitz continuity, but its guaranteed physical retreat is still `o(X)`.
+FD-099 closes another natural escape. For every fixed depth `m`, false-RH source records support an exact chain of `m` genuine `4/9` multiplicative predecessors with sharp occupation and bounded defect, and after diagonalization the projective losses are only subpower. Yet every state samples the **same** source quotient `H_j/q_j=X`: the contraction is prepaid by repeated-prime inventory `9^m`, with each step replacing one `3^2` factor by `2^2`.
 
-The live theorem is therefore effective **physical descent versus depth after the strongest current uniform source regularity is charged**. Relate the number and types of predecessor steps to actual horizon decrease, control accumulated asymptotic transport errors, and show that a sufficiently long admissible chain reaches a scale incompatible with the assumed false-RH frontier. A proof must force enough genuinely multiplicative branches, obtain source refueling on a shorter additive scale, or exploit exact signed/divisibility structure beyond endpoint short-interval bounds.
+Therefore neither good projective composition nor a positive density—even 100% density—of fixed-factor horizon contractions implies descent through the source hierarchy. The live theorem must force **source refresh**: prove that the sampled quotient eventually decreases, charge the finite repeated-prime inventory that can finance quotient-preserving contractions, or exploit exact signed/divisibility structure that prevents indefinite reuse of one source spike.
 
-For `1/2<Theta<=11/20`, the current all-interval theorem does not even enlarge the `O(A)` Lipschitz corridor; above `11/20` the logarithmic enlargement is still submacroscopic. Merely improving the projective constants or reusing the same endpoint regularity cannot close either regime.
+## Find a scale-sensitive invariant that sees the sampled source quotient
 
-## Find a scale-sensitive invariant beyond projective certificate quality
+The projective certificate deliberately quotients a common normalized-energy factor and therefore controls composition quality rather than source progress. FD-099 identifies the missing second scale explicitly: a state `(H,r)` can contract `H` while preserving `H/r` exactly.
 
-The projective certificate deliberately quotients the common normalized-energy factor and therefore controls composition quality rather than absolute descent. FD-098 shows that adding the strongest anchored uniform local source regularity still does not turn the all-head route into fixed-factor contraction.
+A decisive invariant must therefore couple projective quality to at least one non-projective resource such as sampled source scale, remaining repeated-prime inventory, row complexity, signed source increments or transport error. A monotone quantity that decreases only when `H/r` decreases would distinguish genuine source descent from factorization transport. Improving the already-exponential projective loss or merely counting contractive branch types cannot do this.
 
-A final invariant may need to combine `q`, horizon loss, branch type, signed source increments and transport error in one monotone quantity, or prove recurrent returns to source records that reset the absolute scale ledger. A useful strengthening must beat the logarithmically thickened all-head control; improving the already-exponential projective loss without changing physical progress is not enough.
+## Keep entry existence, projective composition, source regularity, horizon descent and source descent distinct
 
-## Keep entry existence, projective composition, source regularity and physical descent distinct
-
-Source-record slowdown supplies the entry family; FD-094--FD-095 supply exact one-step closure; FD-097 supplies the correct projective multistep accounting; FD-098 prices the current uniform short-interval source regularity. None gives a macroscopic depth-to-scale law. Future synthesis should not reopen bounded-defect entry, independent occupation/defect bookkeeping, or generic endpoint smoothing after those gates have been isolated.
+Source-record slowdown supplies the entry family; FD-094--FD-095 supply exact one-step closure; FD-097 supplies projective multistep accounting; FD-098 prices current endpoint regularity; FD-099 proves that even exponentially strong relative horizon descent can be source-neutral. Future synthesis should not reopen bounded-defect entry, independent occupation/defect bookkeeping, generic endpoint smoothing, or multiplicative-step density after those gates have been isolated.

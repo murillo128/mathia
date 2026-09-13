@@ -1,31 +1,21 @@
-# MI-014 — Complete-domain spectralization quotients the source; regular finite sections transport to Li-grid controls
+# MI-014 — Complete-domain spectralization quotients the source; regular transport and singular selector dominance squeeze finite sections
 
-**Evidence level:** exact for fixed source-independent positive/Hermitian wrappers through [PC-278](../../findings/PC-278-single-source-dual-window-phase-spectra-are-diagonal-unitary-pure-gauge.md), complete-torus anchored nonlinearities through [PC-279](../../findings/PC-279-full-dual-torus-anchor-nonlinearities-are-source-blind-fourier-data.md), the truncated-window classification through [PC-280](../../findings/PC-280-window-source-mismatch-is-a-cyclic-convolution-finite-section.md), and regular-profile whole-spectrum transport through [PC-281](../../findings/PC-281-regular-window-spectra-are-li-grid-reproducible.md). Microscopic/sharp profiles and non-single-phase constructions remain open.
+**Evidence level:** exact for fixed source-independent positive/Hermitian wrappers through [PC-278](../../findings/PC-278-single-source-dual-window-phase-spectra-are-diagonal-unitary-pure-gauge.md), complete-torus anchored nonlinearities through [PC-279](../../findings/PC-279-full-dual-torus-anchor-nonlinearities-are-source-blind-fourier-data.md), truncated-window classification through [PC-280](../../findings/PC-280-window-source-mismatch-is-a-cyclic-convolution-finite-section.md), regular-profile whole-spectrum transport through [PC-281](../../findings/PC-281-regular-window-spectra-are-li-grid-reproducible.md), and boundary-first logarithmic selector collapse through [PC-282](../../findings/PC-282-boundary-first-radial-log-operator-collapses-to-the-exact-selector.md). The critical coupled transition, renormalized remainder and non-single-profile constructions remain open.
 
-For a fixed coefficient mask, the single-source dual phase field factorizes as `D_p A E_r`, so singular values, Schatten norms, rank and Gram spectrum are source-independent. PC-279 shows that arbitrary anchored pointwise nonlinearities remain equally blind on the complete coefficient torus: multiplication by `p,r` only permutes rows and columns, leaving a one-dimensional Fourier-magnitude spectrum.
+For a fixed coefficient mask, the single-source dual phase field factorizes as `D_p A E_r`, so singular values, Schatten norms, rank and Gram spectrum are source-independent. PC-279 shows arbitrary anchored pointwise nonlinearities remain blind on the complete coefficient torus: source multiplication only permutes rows and columns.
 
-PC-280 identifies exactly what survives when the coefficient domain is truncated. For a symmetric window `H_B` and profile `f`,
+PC-280 identifies exactly what survives truncation. For a symmetric window `H_B`, the matrix `M_(p,r;B)^f(h,k)=f(ph+rk)` is a two-sided finite section of one source-independent cyclic convolution operator, equivalently `P_(p,B)D_fP_(r,B)`. Truncation therefore retains window placement around a fixed multiplier rather than a new source-dependent symbol.
 
-`M_(p,r;B)^f(h,k)=f(ph+rk)`
+PC-281 closes the sufficiently regular side of this placement escape. If the profile has Lipschitz scale `L_q`, the complete normalized singular spectrum varies at most by `B L_q` times the phase displacement. Denominator-`q` prime-to-Li transport then reproduces the full spectral law whenever the explicit error vanishes. Smooth chord profiles, mollified anchor potentials and other regular multipliers therefore carry no order-one prime residual in that regime.
 
-is, up to row/column permutation, the two-sided finite section
+PC-282 closes the opposite, boundary-first logarithmic extreme. For `f_rho(t)=log|1-rho zeta_q^t|`, write `a_rho=-log(1-rho)`. The finite section decomposes exactly into a divergent collision selector plus a bounded remainder, and
 
-`E_(pH_B) C_f E_(rH_B)^*`
+`L_(p,r;B)^(rho)/a_rho -> -Z_(p,r;B)`
 
-of one source-independent cyclic convolution operator `C_f`. After Fourier diagonalization it is unitarily equivalent to
+in operator norm at fixed parameters, uniformly when `a_rho/(N log q)->infinity`. The selector is a partial permutation determined solely by the quotient `p r^(-1) mod q`; its source dependence is exactly the ratio geometry already classicalized earlier in the line.
 
-`P_(p,B) D_f P_(r,B)`,
+The surviving carrier is therefore squeezed between two no-go regimes. Making the profile smoother lets matched source transport reproduce it; making the anchored logarithm overwhelmingly singular leaves only a classical exact selector. A viable single-profile construction must live in the coupled transition where neither estimate is negligible, or in the **renormalized remainder after subtracting the selector divergence**, and must prove that this residual survives matched rational controls. Otherwise the architecture must introduce source-dependent or cross-level information before the finite-section quotient.
 
-where `D_f` depends only on the profile and the source enters only through the two rank-`N` Dirichlet-kernel projections associated with the dilated windows. Truncation therefore retains only **window placement around a fixed multiplier**, not a new source-dependent symbol.
+The durable lesson is that sharpness alone is not arithmetic information. **A singularity can defeat a regularity estimate yet still collapse, after its natural normalization, to a lower-information boundary object.** The relevant question is what finite residual remains after the universal divergent term is removed and whether that residual is source-specific.
 
-PC-281 now closes a broad part of that escape. If the phase profile is sampled from a bounded Lipschitz function `F_q` on the circle, the complete normalized ordered singular spectrum obeys
-
-`||Sigma(x,y)-Sigma(x',y')||_infinity <= B L_q (d(x,x')+d(y,y'))`.
-
-Combining this deterministic perturbation bound with the PC-277 prime-to-Li denominator-`q` transport shows that the **entire** spectral law is reproduced by the matched Li-grid control whenever the explicit transport error tends to zero; in particular for bounded amplitude and `B L_q=exp(o(sqrt(log q)))`. Smooth chord profiles, mollified anchor potentials and other regular Fourier multipliers therefore cannot produce an order-one prime-specific spectral residual in that regime.
-
-This sharpens the surviving carrier again. It is not enough that truncation breaks the complete-domain permutation quotient. The retained placement information must vary at a scale too sharp for the classical source transport to follow, or the construction must leave the one-profile finite-section category entirely. Viable cases include exact microscopic selectors, the unsmoothed logarithmic anchor singularity, transition widths/Lipschitz constants large enough to defeat the PC-281 bound, source-dependent profiles, or genuinely cross-level/cross-source operators.
-
-The intermediate rational-microscopic scalar window remains a separate unresolved channel. PC-281 does not close it merely by closing regular finite-section spectra.
-
-**Boundary.** PC-281 is a no-go for regular profiles in its quantitative transport regime, not a theorem that every truncated spectrum is source-blind. Exact selectors and singular profiles deliberately fall outside its Lipschitz hypothesis. A future positive spectral claim must state both which complete-domain symmetry was broken and why the surviving sharp structure is not transported by the strongest matched source control.
+**Boundary.** PC-282 does not classicalize the finite remainder, the critical simultaneous `q,B,rho` regime, or constructions outside one source-independent profile. PC-281 and PC-282 are sufficient no-go regions with a genuine gap between them; no theorem here says every truncated spectrum is source-blind.

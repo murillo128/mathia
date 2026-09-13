@@ -8,27 +8,21 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Use source/eigenfunction structure beyond the scalar aperture profile
+## Use source/eigenfunction structure beyond scalar profiles and generic cut covariance
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`.
 
-WI-274--WI-277 progressively sharpen the first-crossing source reserve. Complementary masses give the sharp harmonic envelope; one shift gives a sharp nilpotent reserve; and finite commensurate families give the scalarized Toeplitz reserve based on the top eigenvalue of `H_N(alpha)`.
+WI-274--WI-277 progressively sharpen the first-crossing source reserve. Complementary masses give the sharp harmonic envelope; one shift gives a sharp nilpotent reserve; finite commensurate families give a scalarized Toeplitz reserve. WI-279 restores the Hilbert orientation of the cut path and obtains the stronger bottom-spectrum reserve from signed cut covariance.
 
-WI-279 shows that retaining the Hilbert orientation of the cut path gives strictly more information. The signed cut covariance obeys `F_v(kh/2)=S_v-C_k(h)`, and the same commensurate family yields the bottom-spectrum reserve
+WI-278 nevertheless blocks every reserve whose numerator is controlled only by the currently certified scalar function `a -> lambda_a`: its explicit admissible profile keeps `sup a lambda_a` below the positive archimedean budget. WI-280 now closes the generic **noncommensurate** escape as well. For any finite family of arbitrary shifts with nonnegative weights, abstract PSD/null-partition cut geometry admits a two-pulse path with negative covariance at one selected shift and zero covariance at the others. Therefore every universal weighted covariance coefficient is negative somewhere, and the resulting reserve remains strictly below the scalar average, hence below `sup a lambda_a`.
 
-`S_v >= (sum alpha_k k r lambda_(kr))/(sum alpha_k-eta_N(alpha))`,
+Noncommensurability, denser shift selection and further generic Hilbert-space optimization are therefore not new resources. A successful continuation must prove a compatibility law for the **actual Suzuki null mode** that excludes the two-pulse countergeometry, strengthen the numerator through the exact signed prime-plus-archimedean source equation, use nodal/regularity information, or introduce a genuinely nonlinear joint invariant not reducible to a positive linear mixture of cut covariances.
 
-where `eta_N(alpha)=lambda_min(H_N(alpha))`. It is always no worse than the WI-277 reserve and can be strictly stronger; the `N=3`, two-shift example improves the denominator from `3` to `5/2`. The coefficient is sharp for abstract PSD null-partition geometry.
+## Keep scalar-profile exhaustion, retained Hilbert orientation and source-specific compatibility distinct
 
-But WI-278 still blocks every reserve whose numerator is controlled only by the currently certified scalar function `a -> lambda_a`. Its explicit admissible profile keeps `sup a lambda_a` below `K_+`, and the WI-279 denominator cannot reverse that ceiling. The next theorem must therefore preserve **source/eigenfunction information that strengthens the numerator or creates a new compatibility constraint**, not merely optimize another universal coefficient around the same scalar profile.
+WI-279 proves that scalarizing the cut path to a norm profile discards usable orientation: the bottom-Toeplitz reserve can strictly improve the coefficient. WI-280 proves that this extra generic orientation is still insufficient once its numerator remains the same scalar firstness data. The distinction is now exact: **Hilbert geometry contains more information than the scalar profile, but generic Hilbert geometry still admits counterpaths that prevent a budget crossing.**
 
-Live candidates are the exact Suzuki signed-source multiplier equation, source-specific noncommensurate cut compatibility, nodal/regularity shape of the actual null mode, or archimedean sign geometry. Further scalar-profile optimization is no longer a live route.
-
-## Keep scalar-profile exhaustion and Hilbert-orientation information distinct
-
-WI-279 corrects an overstrong reading of WI-278. Passing from cut vectors to the norm profile `sqrt(Q)` really does discard usable covariance orientation, and restoring it can improve a multishift reserve. What is exhausted is the ability of the **current scalar `lambda_a` data** to force a budget crossing, not every geometric refinement of the cut path.
-
-That distinction is the opportunity. A successful argument must couple the extra Hilbert/source structure to information not admitted by the WI-278 counterprofile. Another support-only or PSD-only extremal inequality cannot suffice, because WI-279 is already sharp at that generic level.
+The remaining opportunity is not another universal covariance inequality. It is a theorem showing that the source-generated cut path occupies a strictly smaller admissible class than generic PSD null partitions, in a way that quantitatively improves the limiting numerator/covariance combination.
 
 ## Keep endpoint firstness, source reserve, sign geometry and prime overlap as separate gates
 
