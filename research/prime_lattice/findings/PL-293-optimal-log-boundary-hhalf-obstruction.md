@@ -46,13 +46,13 @@ This is a route restriction, not a theorem that Suzuki's `a=0.8` ground state la
 
 ## 1. The sharp Dirichlet logarithmic boundary law
 
-Source 97 studies the Dirichlet logarithmic Laplacian with Fourier symbol
+Hernández-Santamaría--López Ríos--Saldaña study the Dirichlet logarithmic Laplacian with Fourier symbol
 
 \[
 \widehat{L_\Delta u}(\xi)=2\log|\xi|\,\widehat u(\xi).
 \]
 
-For bounded domains satisfying a uniform exterior sphere condition, Theorem 1.1 proves that every bounded weak solution of
+For bounded domains satisfying a uniform exterior sphere condition, their Theorem 1.1 proves that every bounded weak solution of
 
 \[
 L_\Delta u=f\in L^\infty(\Omega),
@@ -144,7 +144,7 @@ Eu\notin H^s(\mathbb R)\ \text{for all }s\ge\tfrac12.
 }
 \]
 
-The torsion function from source 97 therefore provides an explicit theorem-backed matched control inside the same zero-order Dirichlet geometry for which the `H^{1/2}` threshold fails.
+The torsion function of Hernández-Santamaría--López Ríos--Saldaña therefore provides an explicit theorem-backed matched control inside the same zero-order Dirichlet geometry for which the `H^{1/2}` threshold fails.
 
 ## 3. Why `H^{1/2}` is the natural derivative threshold for the moving-shift route
 
@@ -195,7 +195,7 @@ T=\frac12L_\Delta+\gamma I
 
 in the exact zero-extension Fourier sense and proves the squared-log graph-domain estimate. `PL-291`--`PL-292` then bootstrap actual source-static Weil eigenstates through all finite logarithmic Fourier moments, but the constants grow too rapidly to yield a positive Sobolev exponent by the generic cutoff argument.
 
-Source 97 now explains why one particularly tempting repair is not generic. Optimal boundary behavior for the underlying logarithmic Dirichlet equation is **slow**, not power-like, and canonical positive solutions need not cross the `H^{1/2}` threshold. Therefore a proof that the actual Weil ground branch lies in `H^{1/2}` cannot be justified merely by invoking boundedness, continuity, positivity of a principal state, or the universal logarithmic-Laplacian boundary theory.
+The optimal boundary theorem now explains why one particularly tempting repair is not generic. Optimal boundary behavior for the underlying logarithmic Dirichlet equation is **slow**, not power-like, and canonical positive solutions need not cross the `H^{1/2}` threshold. Therefore a proof that the actual Weil ground branch lies in `H^{1/2}` cannot be justified merely by invoking boundedness, continuity, positivity of a principal state, or the universal logarithmic-Laplacian boundary theory.
 
 There is, however, no direct contradiction with a zeta-specific `H^{1/2}` theorem. Suzuki's full operator is
 
@@ -203,7 +203,7 @@ There is, however, no direct contradiction with a zeta-specific `H^{1/2}` theore
 A_a=T+K_a,
 \]
 
-where `K_a` contains the finite von-Mangoldt translation comb and the continuous bounded remainder. At `a=0.8`, `PL-284` certifies a simple even ground state conditional on source 58's computer-assisted bounds, but the current evidence does **not** prove that this state is a nonnegative `L_Delta` supersolution satisfying the hypotheses of source 97's Hopf theorem. The arithmetic perturbation could in principle change the endpoint coefficient or produce cancellation.
+where `K_a` contains the finite von-Mangoldt translation comb and the continuous bounded remainder. At `a=0.8`, `PL-284` certifies a simple even ground state conditional on source 58's computer-assisted bounds, but the current evidence does **not** prove that this state is a nonnegative `L_Delta` supersolution satisfying the hypotheses of the Hopf theorem. The arithmetic perturbation could in principle change the endpoint coefficient or produce cancellation.
 
 The precise surviving question is therefore source-specific:
 
@@ -236,7 +236,7 @@ So the result blocks the generic **half-derivative/absolute-differentiation** up
 
 - **Matched control, not the zeta state.** The torsion solution is used to falsify a universal regularity inference from the logarithmic principal geometry. It is not substituted for Suzuki's actual ground state.
 - **Hopf hypotheses matter.** The general lower law requires nonnegativity and the weak supersolution inequality. Those hypotheses are not currently established for the full `A_0.8` ground state relative to the bare `L_Delta` operator.
-- **Small-ball condition is sufficient.** Source 97's torsion theorem requires a sufficiently small ball. A single admissible canonical Dirichlet control is enough to disprove a universal `H^{1/2}` consequence; no claim is made for torsion on every interval size.
+- **Small-ball condition is sufficient.** The torsion theorem requires a sufficiently small ball. A single admissible canonical Dirichlet control is enough to disprove a universal `H^{1/2}` consequence; no claim is made for torsion on every interval size.
 - **No claim below `1/2`.** The cross-boundary integral converges at the model lower-law scale for every `s<1/2`. Interior oscillation could still obstruct such Sobolev regularity, but this finding does not establish that.
 - **No converse from Fourier moments.** Failure of `H^{1/2}` rules out the standard absolute first-moment differentiation argument. It does not prove that an autocorrelation derivative cannot exist conditionally at a particular nonzero lag.
 - **No positivity transport yet.** Even a future `H^s`, `0<s<1/2`, estimate would still need quantitative constants strong enough to propagate the tiny `a=0.8` margin and handle source activations.
@@ -250,7 +250,7 @@ Accordingly, a differentiable prime-shift/Feynman--Hellmann continuation theorem
 
 ## Sources
 
-- Source 97 in `research/prime_lattice/SOURCES.md`: Víctor Hernández-Santamaría, Luis Fernando López Ríos, Alberto Saldaña, *Optimal boundary regularity and a Hopf-type lemma for Dirichlet problems involving the logarithmic Laplacian*, DCDS **45** (2025), 1--36, DOI `10.3934/dcds.2024084`, arXiv:`2401.18033`; Theorems 1.1, 1.2 and 1.4.
+- Víctor Hernández-Santamaría, Luis Fernando López Ríos, Alberto Saldaña, “Optimal boundary regularity and a Hopf-type lemma for Dirichlet problems involving the logarithmic Laplacian,” *Discrete and Continuous Dynamical Systems* **45**(1) (2025), 1--36. DOI `10.3934/dcds.2024084`; arXiv:`2401.18033`. Theorems 1.1, 1.2 and 1.4 are the load-bearing literature inputs.
 - Source 96: Huyuan Chen, Tobias Weth, *The Dirichlet problem for the logarithmic Laplacian*; Dirichlet logarithmic-Laplacian framework used by `PL-289`.
 - Source 56: Masatoshi Suzuki, *Weil's quadratic form via the screw function*; canonical localized Weil operator and fixed-domain decomposition.
 - `PL-289`, `PL-291`, `PL-292`: graph-domain, all-log, and quantified source-static eigenstate regularity leading to the present endpoint question.
