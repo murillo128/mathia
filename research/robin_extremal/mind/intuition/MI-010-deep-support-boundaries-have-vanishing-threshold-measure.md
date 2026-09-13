@@ -1,13 +1,21 @@
-# MI-010 — Deep layers and same-depth higher-layer chambers become threshold-negligible above the `0.57` frontier; mixed low-depth selection remains
+# MI-010 — Aggregate prime-gap moments can force first-layer attachment after deep-layer sparsity
 
-**Evidence level:** exact under the off-RH exponent-gap hypotheses of RE-088, strengthened by the adversarially corrected same-depth chamber theorem RE-090 when `Theta>0.57`. The withdrawn RE-089 `3/5` formulation is not current evidence. The result narrows the positive-threshold-measure carrier but does not eliminate first-layer-touching or mixed-depth low-layer cells.
+**Evidence level:** exact under the off-RH exponent-gap hypotheses of RE-088, strengthened by RE-090 for same-depth higher-layer chambers and by RE-091 when `Theta>469/600`, conditional on the stated external prime-gap aggregate theorems. The withdrawn RE-089 `3/5` formulation is not current evidence. The result narrows the positive-threshold-measure carrier but does not eliminate first-layer-attached cells.
 
-RE-086 turns selection of a CA layer-`j` event as an adjacent support boundary into an ordinary-prime-gap cost. RE-087 shows that the total marginal one-sided gap pool is too abundant to force a contradiction when selection compatibility is ignored. RE-088 instead weights selected cells by depth: if `delta=1-b_1-theta>1/r`, the total threshold measure of cells touching depth-`>=r` boundaries tends to zero. Under a hypothetical exponent gap `Theta>theta`, sufficiently deep layers are therefore negligible.
+RE-086 turns selection of a CA layer-`j` event as an adjacent support boundary into an ordinary-prime-gap cost. RE-087 shows that the total marginal one-sided gap pool is too abundant when selection compatibility is ignored. RE-088 instead weights selected cells by depth: sufficiently deep boundaries become threshold-negligible under an off-RH exponent gap.
 
-RE-090 replaces the challenged same-depth step with a sharper theorem. If both adjacent support boundaries of an exposed chamber contain the same fixed higher depth `j>=2`, the event-free physical chamber pulls back through the first-layer event map into one ordinary consecutive-prime gap of at least square-root size. Järviniemi's dyadic bound on the **total length** of square-root-sized prime gaps is `O(X^(0.57+epsilon))`. Combining that aggregate gap mass with CA support capacity makes the threshold measure of every fixed `j/j` chamber family vanish whenever `Theta>0.57`.
+RE-090 removes a different family. If both adjacent support boundaries contain the same fixed higher depth `j>=2`, their event-free chamber pulls back through the first-layer event map into a large ordinary consecutive-prime gap. Järviniemi's `0.57+epsilon` aggregate gap-length bound makes every fixed `j/j` chamber family threshold-negligible whenever `Theta>0.57`.
 
-The important case is still `j=2`, but the corrected frontier is stronger: pure second-layer chambers are threshold-negligible above `0.57`, not merely above `3/5`. Using the currently anchored all-large short-interval exponent `0.52`, RE-088 and RE-090 give an explicit finite-depth reduction: outside vanishing threshold measure, every sufficiently late selected cell either touches a first-layer atom or has two disjoint nonempty boundary-depth sets contained in `{2,...,19}`. In the untied case this is simply `2<=j_-!=j_+<20`.
+RE-091 shows how to attack the mixed-depth survivor without controlling each gap pointwise. A cell touching depth `3` or deeper has only `X^(1/3+o(1))` possible boundary hosts. Its first-layer inverse image is a disjoint prime-free interval contained in an ordinary prime gap. Pairing the sparse host count by Cauchy--Schwarz with Stadlmann's mean-square gap estimate
 
-The live theorem is therefore a finite **mixed-depth/first-layer compatibility** problem. Same-depth scarcity no longer attacks the survivor: one must control cross-layer resonances, tied power events with disjoint depth sets, simultaneous left/right constraints, skipped spans, or rightmost-maximizer dynamics.
+`sum_(p_n<=X) (p_(n+1)-p_n)^2 << X^(1.23+epsilon)`
 
-**Boundary.** The `0.57` number is the frontier of the current large-gap-mass/capacity splice, not a claimed phase transition. Same-depth scarcity does not imply mixed-depth scarcity, and first-layer-touching cells remain a separate carrier. A stronger aggregate square-root-gap theorem would lower this frontier according to the same exponent bookkeeping.
+prices the total physical chamber width at exponent
+
+`(1/2)(1/3+1.23)=469/600`.
+
+The CA support-capacity conversion then makes every depth-`>=3` boundary family threshold-negligible for `Theta>469/600`. In that regime RE-090 simultaneously removes the only purely higher-layer survivor left after this reduction: a cell with no first-layer boundary atom would have to be `2/2`-bounded. Hence, outside threshold measure `o(1)`, every sufficiently late selected cell has a **first-layer atom on at least one boundary**.
+
+The live object has therefore changed from finite mixed-depth scarcity to **first-layer-attached joint selection**. A successful estimate must use the ordinary-prime boundary together with the opposite boundary, ties, skipped spans, matched packet structure, or the rightmost-maximizer rule. More independent depth counting or same-depth scarcity does not touch the survivor.
+
+**Boundary.** The `469/600` number is the frontier of this depth-three/second-moment splice, not a claimed phase transition. RE-091 does not force both boundaries to be first-layer, remove depth `2`, or prove that first-layer-attached cells have small threshold measure. Below `469/600`, the weaker finite mixed-depth carrier from RE-088--RE-090 remains live.
