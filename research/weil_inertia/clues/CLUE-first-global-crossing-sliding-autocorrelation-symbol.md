@@ -22,6 +22,7 @@ based_on:
   - research/weil_inertia/findings/WI-273-first-question-crossing-is-equivalent-to-vanishing-of-a-positive-source-hankel-norm.md
   - research/weil_inertia/findings/WI-274-simultaneous-cuts-create-a-positive-saturated-source-reserve.md
   - research/weil_inertia/findings/WI-275-a-harmonic-minimax-reserve-is-the-sharp-mass-only-cut-bound.md
+  - research/weil_inertia/findings/WI-276-cross-cut-energy-obeys-a-sharp-nilpotent-shift-reserve.md
 ---
 
 # Can the first-crossing saturated source reserve force unscreenable arithmetic overlap?
@@ -43,7 +44,7 @@ where `\mathcal S_v` is the exact saturated prime-plus-archimedean source functi
 K_+=\int_0^{h_0}h\,w(h)\,dh.
 \]
 
-`WI-275` now sharpens the same cut data before integration. The two simultaneous inequalities
+`WI-275` sharpens the same cut data before integration. The two simultaneous inequalities
 
 \[
 Q_t\ge \lambda_{(a+t)/2}M_L(t),
@@ -83,46 +84,63 @@ M_L^*(t)=
 
 is monotone in `t`. Therefore CDF monotonicity alone cannot strengthen the harmonic envelope; any further reserve must use more of the actual null eigenfunction/source coupling than complementary masses and firstness.
 
-## Research question
-
-Can the paired-radius spectral profile be controlled strongly enough to force
+`WI-276` supplies the first such cross-cut correction without assuming a sign for the null mode. If `f(t)=\sqrt{Q_t}` and `h=2r`, the PSD null-form geometry of the three consecutive pieces cut at `t` and `t+h` gives
 
 \[
-R_{\rm harm}(a)>K_+
+|\mathcal F_v(r)-\mathcal S_v|
+\le \int f(t)f(t+h)\,dt.
 \]
 
-at a hypothetical first crossing, thereby ruling out complete prime-lag screening on the one-signed branch? If not, can the exact Suzuki null equation or the PSD signed-source multiplier family force an additional positive correction to the harmonic reserve, or force arithmetic overlap directly, by coupling different cuts rather than treating their mass partitions independently?
+Because `f` is supported on an interval of length `2a`, translation by `h` is a nilpotent contraction of order `N=\lceil a/r\rceil`. The sharp Haagerup--de la Harpe numerical-radius inequality therefore yields
 
-The key distinction is now explicit. Improving the scalar optimization of the two complementary inequalities is exhausted by `WI-275`. A successful next step must either constrain `r\mapsto\lambda_r` quantitatively or introduce information that the mass-only relaxation discards: regularity of `M_L`, source-dependent relations between different `Q_t`, nodal/source geometry, or a finite compression of the exact multiplier form.
+\[
+\boxed{
+\mathcal S_v\ge
+\sup_{0<r<a}
+\frac{r\lambda_r}
+{1+\cos\!\left(\pi/(\lceil a/r\rceil+1)\right)}.
+}
+\]
+
+This information is independent of the mass-only minimax relaxation, so the live reserve is the maximum of this shift bound and `R_harm(a)`. The numerical-radius coefficient is itself sharp for arbitrary nonnegative cut-energy profiles with only the support constraint `supp Q\subset[-a,a]`. Hence any further cross-cut gain must use actual Weil-source/eigenfunction structure or simultaneous relations at several shifts, not merely generic compact-support decorrelation.
+
+## Research question
+
+Can the combined harmonic and cross-cut shift reserve be controlled strongly enough to force the relevant source budget at a hypothetical first crossing, thereby ruling out complete prime-lag screening on the one-signed branch? If not, can the exact Suzuki null equation or the PSD signed-source multiplier family force an additional positive correction by constraining the *actual shape* of `Q_t` or by coupling several translations simultaneously?
+
+The key distinction is now explicit. Improving the scalar optimization of the two complementary inequalities is exhausted by `WI-275`, while improving the one-shift support-only correlation constant is exhausted by `WI-276`. A successful next step must either constrain `r\mapsto\lambda_r` quantitatively or introduce information these relaxations discard: source-dependent shape restrictions on `Q_t`, regularity/nodal geometry of the actual null eigenfunction, multi-shift consistency, or a finite compression of the exact multiplier form.
 
 ## Decisive test
 
-First attack the spectral-budget comparison with exact inequalities. Derive rigorous lower information on the paired-radius profile `\lambda_r,\lambda_{a-r}` from domain monotonicity plus any Suzuki-specific variational identity that is genuinely available, and test whether it implies
+First attack the combined spectral-budget comparison with exact inequalities. Derive rigorous lower information on the first-eigenvalue profile and test whether
 
 \[
-2\int_0^a
-\frac{\lambda_r\lambda_{a-r}}
-{\lambda_r+\lambda_{a-r}}\,dr>K_+.
+\max\!\left\{
+R_{\rm harm}(a),
+\sup_{0<r<a}
+\frac{r\lambda_r}
+{1+\cos\!\left(\pi/(\lceil a/r\rceil+1)\right)}
+\right\}>K_+.
 \]
 
-A proof of this inequality would force positive weighted prime overlap for a one-signed first null mode. A rigorous admissible profile satisfying every presently proved spectral constraint while keeping the harmonic reserve at or below `K_+` would close the mass-only spectral route and redirect the clue to cross-cut source coupling.
+A proof would force positive weighted prime overlap for a one-signed first null mode. A rigorous admissible profile satisfying every presently proved spectral constraint while keeping both reserves at or below `K_+` would close the scalar spectral-profile route and redirect the clue entirely to source/eigenfunction shape.
 
-If the spectral-budget test does not close, preserve the exact source. Use the Suzuki null equation or `WI-269` multiplier form to derive a relation between multiple cuts that excludes the minimax equality profile or adds a positive correction to `Q_t`. Any finite-partition argument must retain the continuum archimedean edges and their sign change at `h_0`; unsigned compression erases the known screening channel.
+If the budget test does not close, preserve the exact source. Use the Suzuki null equation or `WI-269` multiplier form to constrain the translated correlations of `sqrt(Q_t)` beyond the sharp support-only Haagerup--de la Harpe bound. The most concrete next experiment is a multi-shift/finite-partition compression that keeps several `Q_{t+h_j}` simultaneously and retains the continuum archimedean edges and their sign change at `h_0`; unsigned compression erases the known screening channel.
 
 ## Stress tests
 
-Any proposed bootstrap must survive the existing obstructions. `WI-257` blocks generic bounded-self-adjoint regularity upgrades. `WI-263` defeats one-prime sign/Bochner reasoning. `WI-264` shows that finitely many source atoms can be hidden from autocorrelation observables, and `WI-265` shows generic first-crossing positivity does not recover the missing source geometry. `WI-268` prevents silently assuming a one-signed ground state from standard semigroup theory. `WI-273` shows why the single narrow-cut Carleman route saturates. `WI-275` now prevents counting a different convex combination of the same two complementary mass inequalities as new progress: their sharp mass-only envelope is already the harmonic minimax reserve.
+Any proposed bootstrap must survive the existing obstructions. `WI-257` blocks generic bounded-self-adjoint regularity upgrades. `WI-263` defeats one-prime sign/Bochner reasoning. `WI-264` shows that finitely many source atoms can be hidden from autocorrelation observables, and `WI-265` shows generic first-crossing positivity does not recover the missing source geometry. `WI-268` prevents silently assuming a one-signed ground state from standard semigroup theory. `WI-273` shows why the single narrow-cut Carleman route saturates. `WI-275` prevents counting a different convex combination of the same two complementary mass inequalities as new progress: their sharp mass-only envelope is already the harmonic minimax reserve. `WI-276` additionally prevents claiming a better one-shift compact-support decorrelation constant without using extra structure: its nilpotent-shift coefficient is sharp even for nonnegative square-root energy profiles.
 
 The support cover from `WI-267` remains necessary but insufficient. Translated activity at a gap point does not by itself imply nonzero `C_v(\log n)`, because the autocorrelation integrand also contains the unshifted value. Likewise the PSD multiplier form of `WI-269` does not by itself force a positive prime edge: long-range archimedean interaction can finance short-range/nodal overlap unless a quantitative source-specific obstruction rules that channel out.
 
-Any argument using pointwise formulas must respect the full-domain issue. The first null mode lies in `D(A_a)`, not automatically in `H_0^1`; stronger regularity used to constrain `M_L` or couple cuts must be proved from Suzuki's operator/form rather than assumed.
+Any argument using pointwise formulas must respect the full-domain issue. The first null mode lies in `D(A_a)`, not automatically in `H_0^1`; stronger regularity used to constrain `M_L`, `Q_t`, or couple cuts must be proved from Suzuki's operator/form rather than assumed.
 
 ## Evidence boundary
 
-The harmonic reserve is an exact consequence of the already established complementary cut inequalities and the exact identity `\int Q_tdt=\mathcal S_v`. It does not prove `R_{\rm harm}(a)>K_+`, does not prove that the first null mode is one-signed, and does not force a prime-lag autocorrelation on the sign-changing branch.
+The harmonic reserve and the cross-cut shift reserve are exact consequences of the already established first-crossing form identities plus, for the latter, the classical nilpotent numerical-radius theorem. Neither proves that the combined reserve exceeds `K_+`, neither proves that the first null mode is one-signed, and neither forces a prime-lag autocorrelation on the sign-changing branch.
 
-The mass-only sharpness statement is a relaxation statement. The minimax equality profile is compatible with monotonicity of a CDF, but this does not assert that it is the actual absolutely continuous mass profile of a Suzuki null eigenfunction. Failure of that profile to satisfy additional eigenfunction/source constraints is precisely one of the remaining opportunities.
+The sharpness statements are relaxation statements. `WI-275` is sharp for the mass-only pointwise problem, and `WI-276` is sharp for the one-shift compact-support correlation problem. Their abstract extremizers need not be compatible with the exact Suzuki source equation simultaneously. That incompatibility is now one of the main remaining opportunities.
 
 ## Research disposition
 
-The clue remains `accepted`. The immediate target is the **harmonic spectral-budget test** `R_{\rm harm}(a)>K_+`. Do not spend further passes optimizing scalar averages of the two complementary cut inequalities; `WI-275` is sharp for that information. If the budget comparison cannot be forced from the known `\lambda_r` constraints, move to a genuinely stronger input that couples cuts through the exact Suzuki source or the PSD signed-source multiplier form.
+The clue remains `accepted`. The immediate target is the **combined spectral-budget test** using `max(R_harm, R_shift)` rather than `R_harm` alone. Do not spend further passes optimizing scalar averages of the two complementary cut inequalities or generic one-shift support bounds; `WI-275` and `WI-276` are sharp for those information sets. If the combined budget cannot be forced from known `\lambda_r` constraints, move to genuine source-shape or multi-shift information from the exact Suzuki null equation/PSD signed-source multiplier form.
