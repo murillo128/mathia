@@ -20,56 +20,53 @@ then
 
 \[
 \mathfrak S_{R,q}\ge-\log\det\mathcal R_{R,q}.
+\tag{1}
 \]
 
-The live problem was still apparently quadratic-dimensional: estimate the full family of normalized correlations inside a terminal block containing `asymp R` innovations. Exact integer branching collapses a large part of that test to **one scalar per q-adic sibling block**.
+The unresolved test in `NB-086` is still apparently quadratic-dimensional: it asks about all normalized pairings in a terminal block of size `asymp R`. Exact integer branching collapses a substantial part of that test to **one scalar norm ratio per q-adic sibling block**.
 
-For real `x>=1`, let `J_x` denote Paley--Wiener truncation to `[0,log x]`; this extends the integer-cutoff notation already used in the line. Fix an integer `R>=2` and let
+For real `x>=1`, let `J_x` denote Paley--Wiener truncation to `[0,log x]`. Define the complete terminal parent set
 
 \[
 \mathcal P_{R,q}
 :=
 \left\{
- j:\
+ j:
  \left\lceil\frac{R}{q^2}\right\rceil
  \le j\le
  \left\lfloor\frac{R}{q}\right\rfloor-1
 \right\}.
-\tag{1}
-\]
-
-For every `j in mathcal P_(R,q)`, the complete descendant block
-
-\[
-B_j^{(q)}:=\{qj,qj+1,\ldots,q(j+1)-1\}
 \tag{2}
 \]
 
-lies inside the terminal set `I_(R,q)`. Put
+For `j in mathcal P_(R,q)`, its entire descendant block
+
+\[
+B_j^{(q)}:=\{qj,qj+1,\ldots,q(j+1)-1\}
+\tag{3}
+\]
+
+lies in `I_(R,q)`. Put
 
 \[
 n_{k,R}:=\|J_RD_k\|^2,
 \qquad
 S_{j,R}^{(q)}:=\sum_{k\in B_j^{(q)}}n_{k,R},
-\tag{3}
+\tag{4}
 \]
 
-and define the dimensionless **visible branch-energy distortion**
+and define the dimensionless visible branch-energy distortion
 
 \[
 \boxed{
 \eta_{j,R}^{(q)}
 :=
-\frac{
-q\,\|J_{R/q}D_j\|^2
-}{
-S_{j,R}^{(q)}
-}-1.
+\frac{q\,\|J_{R/q}D_j\|^2}{S_{j,R}^{(q)}}-1.
 }
-\tag{4}
+\tag{5}
 \]
 
-Then there is a constant `c_q>0`, depending only on the fixed branching factor `q`, such that
+Then there is an explicit constant `c_q>0`, depending only on `q`, such that
 
 \[
 \boxed{
@@ -77,29 +74,22 @@ Then there is a constant `c_q>0`, depending only on the fixed branching factor `
 \ge
 c_q
 \sum_{j\in\mathcal P_{R,q}}
-\left|\eta_{j,R}^{(q)}\right|^2.
-}
-\tag{5}
-\]
-
-The constant is completely explicit. With
-
-\[
-\phi(x)=x-1-\log x,
-\]
-
-and the quotient extended continuously by `1/2` at `x=1`, one may take
-
-\[
-\boxed{
-c_q=
-\min_{0<x\le q}
-\frac{\phi(x)}{(x-1)^2}>0.
+|\eta_{j,R}^{(q)}|^2.
 }
 \tag{6}
 \]
 
-For `q=2` the block algebra gives the sharper constant `1`:
+One may take
+
+\[
+c_q
+=
+\min_{0<x\le q}
+\frac{x-1-\log x}{(x-1)^2}>0,
+\tag{7}
+\]
+
+with the quotient extended continuously by `1/2` at `x=1`. In the dyadic case the block algebra improves the constant to one:
 
 \[
 \boxed{
@@ -107,95 +97,80 @@ For `q=2` the block algebra gives the sharper constant `1`:
 \ge
 \sum_{j=\lceil R/4\rceil}^{\lfloor R/2\rfloor-1}
 \left(
-\frac{
-2\,\|J_{R/2}D_j\|^2
-}{
-\|J_RD_{2j}\|^2+\|J_RD_{2j+1}\|^2
-}
+\frac{2\,\|J_{R/2}D_j\|^2}
+{\|J_RD_{2j}\|^2+\|J_RD_{2j+1}\|^2}
 -1
 \right)^2.
-}
-\tag{7}
-\]
-
-Thus bounded fixed-`q` radial charge has a strong scalar consequence. Along any sequence on which `mathfrak S_(R,q)<=M`,
-
-\[
-\boxed{
-\sum_{j\in\mathcal P_{R,q}}
-|\eta_{j,R}^{(q)}|^2
-\le \frac{M}{c_q}.
 }
 \tag{8}
 \]
 
-Since
+Hence bounded fixed-`q` radial charge forces
+
+\[
+\sum_{j\in\mathcal P_{R,q}}
+|\eta_{j,R}^{(q)}|^2=O_q(1)
+\tag{9}
+\]
+
+along the same sequence. Since
 
 \[
 |\mathcal P_{R,q}|
 =\frac{q-1}{q^2}R+O_q(1),
-\tag{9}
-\]
-
-the root-mean-square branch-energy distortion must be `O_q,M(R^(-1/2))`. Even more sharply, for every fixed `epsilon>0`, the number of terminal sibling blocks with
-
-\[
-|\eta_{j,R}^{(q)}|\ge\epsilon
-\]
-
-is bounded independently of `R` by `M/(c_q epsilon^2)`.
-
-So a bounded-charge radial proof cannot merely require small **average pair correlation**. On all but `O(1)` complete terminal sibling blocks, the visible energy of the exact branch average must become extremely close to the diagonal child-energy average. Conversely, proving
-
-\[
-\sum_{j\in\mathcal P_{R,q}}
-|\eta_{j,R}^{(q)}|^2\longrightarrow\infty
 \tag{10}
 \]
 
-already forces `mathfrak S_(R,q)->infinity` and rules out that fixed-`q` radial certificate, without estimating any individual aliased Szegő floor and without reconstructing the full terminal correlation matrix.
+the mean square distortion is `O_q(R^(-1))` and its RMS is `O_q(R^(-1/2))`. More sharply, for every fixed `epsilon>0`, bounded charge permits only `O_(q,epsilon)(1)` complete terminal blocks with `|eta_(j,R)^(q)|>=epsilon`.
 
-This does **not** decide the actual source. The new scalar distortions may in principle be square-summable across the terminal blocks. The gain is that the `NB-086` frontier has been reduced from an `O(R^2)` family of normalized pairings to `O(R)` explicit two-scale norm ratios tied directly to exact arithmetic branching.
+Conversely,
 
-## 1. Exact branching identifies the average-direction Rayleigh quotient
+\[
+\boxed{
+\sum_{j\in\mathcal P_{R,q}}
+|\eta_{j,R}^{(q)}|^2\longrightarrow\infty
+\quad\Longrightarrow\quad
+\mathfrak S_{R,q}\longrightarrow\infty.
+}
+\tag{11}
+\]
 
-`NB-084` gives the exact integer-dilation identity
+Thus a fixed-`q` radial route can be falsified without estimating any aliased Szegő floor and without reconstructing the full terminal correlation matrix. The live source problem is reduced from `O(R^2)` normalized pairings to `O(R)` explicit two-scale visible norms.
+
+## 1. Exact branching selects a canonical terminal Rayleigh quotient
+
+`NB-084` gives
 
 \[
 U_{\log q}D_j
 =\frac1{\sqrt q}
 \sum_{k=qj}^{q(j+1)-1}D_k.
-\tag{11}
-\]
-
-Paley--Wiener translation intertwines the two cutoffs exactly:
-
-\[
-J_RU_{\log q}
-=U_{\log q}J_{R/q}.
 \tag{12}
 \]
 
-Therefore, with
+Paley--Wiener translation intertwines the matched cutoffs,
 
 \[
-v_k:=J_RD_k,
-\qquad k\in B_j^{(q)},
-\]
-
-we have
-
-\[
-\boxed{
-\frac1{\sqrt q}
-\sum_{k\in B_j^{(q)}}v_k
-=
-U_{\log q}J_{R/q}D_j.
-}
+J_RU_{\log q}=U_{\log q}J_{R/q}.
 \tag{13}
 \]
 
-Taking norms gives
+For a complete block set
+
+\[
+v_k:=J_RD_k,
+\qquad k\in B_j^{(q)}.
+\]
+
+Equations (12)--(13) give
+
+\[
+\frac1{\sqrt q}
+\sum_{k\in B_j^{(q)}}v_k
+=U_{\log q}J_{R/q}D_j,
+\]
+
+and therefore
 
 \[
 \left\|\sum_{k\in B_j^{(q)}}v_k\right\|^2
@@ -203,31 +178,22 @@ Taking norms gives
 \tag{14}
 \]
 
-Let `mathcal R_(j;R,q)` be the normalized `q x q` correlation matrix of these child vectors. Every `v_k` is nonzero and the family is independent by `NB-062`, so this matrix is positive definite with diagonal one. Define
+Let `mathcal R_(j;R,q)` be the normalized `q x q` correlation matrix of the child vectors. `NB-062` implies that these vectors are nonzero and independent, so the matrix is positive definite with diagonal one. With
 
 \[
-a_j=(\sqrt{n_{k,R}})_{k\in B_j^{(q)}}.
-\tag{15}
+a_j=(\sqrt{n_{k,R}})_{k\in B_j^{(q)}},
 \]
 
-By the definition of a correlation matrix,
+we have
 
 \[
 a_j^*\mathcal R_{j;R,q}a_j
-=
-\left\|\sum_{k\in B_j^{(q)}}v_k\right\|^2
-=q\,\|J_{R/q}D_j\|^2,
-\tag{16}
-\]
-
-while
-
-\[
+=\left\|\sum_{k\in B_j^{(q)}}v_k\right\|^2,
+\qquad
 \|a_j\|^2=S_{j,R}^{(q)}.
-\tag{17}
 \]
 
-Hence the branch-energy distortion is exactly one Rayleigh deviation from the identity:
+Thus
 
 \[
 \boxed{
@@ -235,10 +201,10 @@ Hence the branch-energy distortion is exactly one Rayleigh deviation from the id
 =
 \frac{a_j^*(\mathcal R_{j;R,q}-I)a_j}{\|a_j\|^2}.
 }
-\tag{18}
+\tag{15}
 \]
 
-Consequently
+In particular,
 
 \[
 |\eta_{j,R}^{(q)}|
@@ -246,51 +212,32 @@ Consequently
 \|\mathcal R_{j;R,q}-I\|_{\rm op}
 \le
 \|\mathcal R_{j;R,q}-I\|_F.
-\tag{19}
+\tag{16}
 \]
 
-This is the scalarization. No individual child pairing has been estimated; exact branching selects one canonical coefficient direction whose Rayleigh defect is determined only by parent and child visible norms.
+The scalar in (5) is therefore not an arbitrary compression. Exact Nyman branching chooses the average coefficient direction, and its normalized Rayleigh defect is determined entirely by the parent visible norm at scale `R/q` and the diagonal child energy at scale `R`.
 
-## 2. Every sibling energy distortion costs normalized Gram volume
+## 2. Sibling energy distortion has a compulsory determinant cost
 
-Let
-
-\[
-\lambda_1,\ldots,\lambda_q>0
-\]
-
-be the eigenvalues of `mathcal R_(j;R,q)`. Since its diagonal is one,
-
-\[
-\sum_{r=1}^q\lambda_r=q,
-\qquad
-0<\lambda_r\le q.
-\tag{20}
-\]
-
-As in `NB-086`, trace normalization gives
+Let `lambda_1,...,lambda_q` be the eigenvalues of `mathcal R_(j;R,q)`. Their sum is `q` and each lies in `(0,q]`. Hence
 
 \[
 -\log\det\mathcal R_{j;R,q}
 =
 \sum_{r=1}^q
-\bigl(\lambda_r-1-\log\lambda_r\bigr).
-\tag{21}
+(\lambda_r-1-\log\lambda_r)
+\ge
+c_q\sum_{r=1}^q(\lambda_r-1)^2.
 \]
 
-By the definition of `c_q` in (6),
+Since the matrix is Hermitian,
 
 \[
--\log\det\mathcal R_{j;R,q}
-\ge
-c_q
 \sum_{r=1}^q(\lambda_r-1)^2
-=
-c_q\|\mathcal R_{j;R,q}-I\|_F^2.
-\tag{22}
+=\|\mathcal R_{j;R,q}-I\|_F^2.
 \]
 
-Combining (19) and (22),
+Combining with (16),
 
 \[
 \boxed{
@@ -298,122 +245,78 @@ Combining (19) and (22),
 \ge
 c_q|\eta_{j,R}^{(q)}|^2.
 }
-\tag{23}
+\tag{17}
 \]
 
-Now partition the full terminal index set `I_(R,q)` into all complete sibling blocks `B_j^(q)` with `j in mathcal P_(R,q)` plus the remaining individual coordinates. Repeated Fischer determinant inequality for positive-definite principal blocks gives
+Partition the full terminal correlation matrix into all complete sibling blocks together with leftover singleton coordinates. Repeated Fischer determinant inequality gives
 
 \[
 \det\mathcal R_{R,q}
 \le
 \prod_{j\in\mathcal P_{R,q}}
 \det\mathcal R_{j;R,q},
-\tag{24}
+\tag{18}
 \]
 
-because each leftover singleton correlation block has determinant one. Therefore
+because every leftover singleton block has determinant one. Therefore
 
 \[
 -\log\det\mathcal R_{R,q}
 \ge
+c_q
 \sum_{j\in\mathcal P_{R,q}}
--\log\det\mathcal R_{j;R,q}.
-\tag{25}
+|\eta_{j,R}^{(q)}|^2.
+\tag{19}
 \]
 
-Insert (23), then use the `NB-086` lower bound
+Equation (6) now follows from the terminal entropy bound (1).
 
-\[
-\mathfrak S_{R,q}\ge-\log\det\mathcal R_{R,q}
-\tag{26}
-\]
-
-to prove (5).
-
-For `q=2`, write the sibling correlation as `rho`. Equation (18) gives
+For `q=2`, if `rho` is the normalized sibling correlation, then (15) becomes
 
 \[
 \eta
 =
 \frac{2\Re\langle v_{2j},v_{2j+1}\rangle}
 {\|v_{2j}\|^2+\|v_{2j+1}\|^2}.
-\tag{27}
 \]
 
-Hence arithmetic--geometric mean gives
+Arithmetic--geometric mean gives `|rho|^2>=eta^2`, so
 
 \[
-|\rho|^2
-\ge
-\eta^2,
-\tag{28}
+-\log(1-|\rho|^2)\ge|\rho|^2\ge\eta^2,
 \]
 
-and therefore
+which proves the sharper dyadic inequality (8).
+
+## 3. The bounded-charge threshold is now scalar and quantitative
+
+Suppose `mathfrak S_(R,q)<=M` along an unbounded sequence. Equation (6) gives
 
 \[
--\log\det
-\begin{pmatrix}
-1&\rho\\
-\overline\rho&1
-\end{pmatrix}
-=
--\log(1-|\rho|^2)
-\ge|\rho|^2
-\ge\eta^2.
-\tag{29}
-\]
-
-This proves the sharper dyadic bound (7).
-
-## 3. Bounded radial charge forces near-exact visible energy conservation on almost every branch
-
-Suppose `mathfrak S_(R,q)<=M` along an unbounded sequence. Equation (5) immediately gives (8). Since the number of complete terminal sibling blocks grows linearly with `R`,
-
-\[
-\frac1{|\mathcal P_{R,q}|}
 \sum_{j\in\mathcal P_{R,q}}
 |\eta_{j,R}^{(q)}|^2
-=O_{q,M}(R^{-1}).
-\tag{30}
+\le\frac{M}{c_q}.
+\tag{20}
 \]
 
-Thus the relevant scalar balance is much stronger than convergence in density at an unspecified rate. The `L^2` average distortion itself must decay at least on the `R^(-1)` scale, and the RMS distortion at least on the `R^(-1/2)` scale.
-
-For a fixed `epsilon>0`, Chebyshev applied to (8) yields
+Dividing by (10) yields the `O(R^(-1))` mean-square law. For any fixed tolerance `epsilon>0`, Chebyshev also gives
 
 \[
 \#\{j\in\mathcal P_{R,q}:|\eta_{j,R}^{(q)}|\ge\epsilon\}
 \le
-\frac{M}{c_q\epsilon^2},
-\tag{31}
+\frac{M}{c_q\epsilon^2}.
+\tag{21}
 \]
 
-uniformly in `R`. Therefore all but a bounded number of complete terminal branches must satisfy
+The precise consequence is therefore an `l^2` budget, not uniform pointwise convergence: a bounded number of order-one failures is allowed at each scale, and an unbounded number of smaller failures is allowed only if their squared total remains bounded.
 
-\[
-q\,\|J_{R/q}D_j\|^2
-=
-\left(1+o(1)\right)
-\sum_{k=qj}^{q(j+1)-1}\|J_RD_k\|^2
-\tag{32}
-\]
+This makes the falsification threshold transparent. If a positive fraction of the `asymp R` complete terminal branches has distortion bounded below by a fixed constant, the charge grows linearly. More generally, distortion of common size `a_R` on `asymp R` branches forces a lower bound of order `R a_R^2`. Any actual-source estimate substantially larger than the `R^(-1/2)` RMS threshold therefore kills the fixed-`q` radial route.
 
-in the quantitative mean-square sense of (30).
+No such visible-norm asymptotic is claimed here. Full innovation norms are insufficient: (5) uses the matched truncated norms `||J_(R/q)D_j||` and `||J_RD_k||`. Estimating those quantities is the next source-specific problem.
 
-This is a source-facing target that uses only scalar norms at two matched scales. The parent and children have the same relative horizon geometry: the parent is observed up to `R/q`, while its descendants are observed up to `R`. That exact matching comes from the Nyman dilation law rather than from a generic correlation estimate.
+## 4. Controls, prior art, and the new frontier
 
-A useful falsification threshold follows immediately. If a positive fraction of terminal branches has distortion bounded away from zero, then the radial charge grows linearly. More generally, even distortions of common size `a_R` on `asymp R` branches force a lower bound of order `R a_R^2`. Thus a source asymptotic producing, for example, `a_R` of logarithmic size rather than `R^(-1/2)` size would already destroy the fixed-`q` radial route.
-
-No such asymptotic is asserted here. Establishing it requires actual control of the visible norms `||J_RD_j||`, not merely the full norms or raw untruncated Gram entries.
-
-## 4. Relation to the earlier q-adic information ledger and controls
-
-`NB-077`--`NB-079` use integer branching to compare full continuation and prediction information under q-adic refinement, resolving the new fine coordinates into average and contrast channels. The present result uses the same exact branching structure at a different boundary: the terminal visible suffix of `NB-086`, where the radial future is absent from the current window.
-
-The distinction is useful. The earlier ledger still contains conditional-information quantities for complete past/future blocks. Equations (4)--(7) extract from each terminal sibling block a **single canonical Rayleigh quotient** that already has to satisfy a square-summable budget if the infinite radial floor charge is bounded. This does not replace the refinement ledger; it gives a cheaper necessary test for the particular fixed-`q` radial certificate.
-
-The unit-outer control `O=1` calibrates the result exactly. `NB-062` gives orthogonal unit cell innovations, so for every complete sibling block
+For the unit-outer control `O=1`, `NB-062` gives orthogonal unit cell innovations. Every complete sibling block has
 
 \[
 \|J_RD_k^{(0)}\|^2=1,
@@ -421,42 +324,26 @@ The unit-outer control `O=1` calibrates the result exactly. `NB-062` gives ortho
 \|J_{R/q}D_j^{(0)}\|^2=1,
 \]
 
-and hence
+so `eta_(j,R)^(q)=0` identically. The new obstruction therefore does not manufacture entropy in the memory-free control.
 
-\[
-\eta_{j,R}^{(q)}=0.
-\tag{33}
-\]
+The exact-branching stable-tail controls of `NB-071/072` are also not contradicted. They may keep the scalar ratios in (5) sufficiently balanced while sustaining their obstruction through other nonlocal directions. Equation (6) is a necessary condition for bounded radial charge, not a source-free stable-tail theorem.
 
-The scalar budget and the terminal determinant deficit both vanish, as they should.
+`NB-077`--`NB-079` already resolve q-adic refinement into average and contrast information channels. The present result acts at a different boundary: the terminal visible suffix where `NB-086` makes the radial future completely invisible. Its extra content is that one canonical average-direction Rayleigh quotient per terminal sibling block already carries a compulsory determinant cost. Passing this scalar test does not control the remaining within-block directions, cross-block correlations, earlier indices, or the aliased Szegő floors.
 
-At the opposite extreme, the exact-branching stable-tail controls of `NB-071/072` are not contradicted. They may arrange the visible branch-energy ratios in (4) close enough to one while sustaining their obstruction through other nonlocal geometry. The theorem is therefore a necessary condition for bounded radial charge, not a source-free proof that exact branching eliminates stable tails.
+Fischer's determinant inequality, Rayleigh/Frobenius comparison, and the convex identity `x-1-log x` are classical matrix facts; no novelty is claimed for them. The prior-art audit checked Werner Ehm's explicit Nyman Gram/quadratic-form analysis (`arXiv:2405.06349`), Hugh Carvill's Mellin-smoothed ladder Gram and block-compressibility analysis (`arXiv:2510.18132`), and the classical Báez--Duarte dilation literature. Those works do not supply this splice between the exact innovation branching law, the terminal **truncated** determinant of `NB-086`, and the two-scale scalar visible-energy ratio (5). No priority claim is made.
 
-The normalization in (4) is also essential. Raw parent or child norms may grow with the scale, and a fixed additive energy mismatch can become negligible. The radial entropy only sees the mismatch after normalization by the total visible child energy, exactly as (18) records.
+No specialized external estimate is load-bearing, so `SOURCES.md` requires no new anchor.
 
-## 5. Prior-art boundary and consequence for the live frontier
-
-Fischer's determinant inequality, the Rayleigh-quotient bound by Frobenius norm, and the convex identity `x-1-log x` are classical finite-dimensional matrix facts; no novelty is claimed for them. Exact integer-dilation covariance of the Báez--Duarte family is likewise classical at the generator level and was converted into the innovation branching identity earlier in this line.
-
-The prior-art audit checked Werner Ehm's explicit Nyman Gram-matrix/quadratic-form analysis (`arXiv:2405.06349`) and Hugh Carvill's Mellin-smoothed ladder Gram/block-compressibility analysis (`arXiv:2510.18132`), together with the classical Báez--Duarte dilation literature. Those works study global or smoothed Gram structure, not the present splice between the exact innovation branching law, the **terminal truncated** correlation determinant of `NB-086`, and the scalar two-scale energy ratio (4). A targeted search did not locate this specific visible-energy necessary condition; no priority claim is made.
-
-No specialized external estimate is load-bearing in (5)--(31), so `SOURCES.md` requires no new anchor.
-
-The live fixed-`q` test is now simpler. Before estimating aliased Szegő floors or even individual terminal correlations, estimate
+The live fixed-`q` question can now be attacked before any detailed Toeplitz/Szegő analysis: estimate
 
 \[
 \boxed{
 \eta_{j,R}^{(q)}
 =
-\frac{
-q\,\|J_{R/q}D_j\|^2
-}{
-\sum_{k=qj}^{q(j+1)-1}\|J_RD_k\|^2
-}-1
+\frac{q\,\|J_{R/q}D_j\|^2}
+{\sum_{k=qj}^{q(j+1)-1}\|J_RD_k\|^2}-1
 }
-\tag{34}
+\tag{22}
 \]
 
-for `j asyp R` in the complete terminal sibling blocks. If its squared mass diverges, the fixed-`q` radial certificate is dead. If its squared mass remains bounded, that necessary test is passed but the remaining within-block directions, cross-block correlations, earlier indices, and the aliased Szegő floors can still make the full charge diverge.
-
-This reduction is therefore deliberately one-sided: it replaces a large matrix obstruction by a scalar arithmetic energy-balance problem without pretending that passing the scalar test proves radial screening or the Nyman closure.
+for `j\asymp R` in the complete terminal sibling blocks. Divergent squared mass kills that radial certificate. Bounded squared mass only passes this necessary test; it does not prove radial screening or the Nyman closure.
