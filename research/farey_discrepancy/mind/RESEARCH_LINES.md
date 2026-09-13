@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Transport coherent Jordan/Schur packets between separated frontier blocks without small terminal anchors
+## Compose coherent row-adaptive super-block anchor packets between separated frontier blocks
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
@@ -10,12 +10,14 @@ FD-072--FD-084 push the physical occupation geometry from recurrence to full cou
 
 FD-086 restores source information before scalarization. The complete physical Jordan vector `V_(H,D)` has divisor-supported horizon increments, making every horizon in the whole `H^(Theta-delta)` block asymptotically collinear in normalized Jordan space; the normalized Schur equality direction and transverse defect are coherent on the same block.
 
-FD-087 resolves the first exact common-multiple idea. Integer dilation embeds `V_(H,D)` inside `V_(qH,D)` with uniform condition number at most `sqrt(zeta(2))`, so large least common multiples are not themselves an information-loss problem. But every exact copy arising from an anchor `a<=L_H` lies in the terminal quotient sector `floor(N/r)<=L_H`, and the **entire** such sector has `o(1)` normalized near-frontier energy. Additive block thickness can force only anchors on this small scale, so even the union of all exact small-anchor copies cannot transport the bulk frontier packet.
+FD-087 resolves the first exact common-multiple idea. Integer dilation embeds `V_(H,D)` inside `V_(qH,D)` with uniform condition number at most `sqrt(zeta(2))`, but every exact copy arising from an anchor `a<=L_H` lies in a terminal quotient sector carrying only `o(1)` normalized frontier energy. Additive block thickness alone therefore cannot transport the bulk packet through one small common divisor.
 
-The live inter-block theorem must therefore escape that terminal-sector capacity bound: force an anchor substantially larger than the block length, exploit a signed/bulk quantity outside the terminal quotient sector, prove a destination-energy saving that changes the normalization, or replace common-divisor transport by a multihorizon composition law adapted to coherent packets.
+FD-088 now finds the missing large-anchor carrier. On a false-RH near-frontier block, the occupied nonsquarefree core can be stitched at rowwise next multiples inside the same block with only `o(sqrt(E_H))` distortion. Repeated-prime deflation preserves the Jordan weight exactly and represents a fixed positive share of the `D=1` frontier energy by exact lower anchors satisfying uniformly `a_r >> sqrt(H L_H) >> L_H`.
 
-## Keep set occupation, within-block coherence, exact embedding and normalized capacity separate
+The destinations remain projectively coherent because they all stay inside the same occupied block. Thus the terminal-sector capacity obstruction is genuinely escaped; the remaining difficulty is that the lower anchors are **row-adaptive and multihorizon**. The live theorem must compose these exact witnesses across rows and then across separated frontier blocks into a finite-entropy physical transport, or prove that such a composition is impossible. For a fixed general head, the same question survives outside only a finite exceptional band.
 
-The established hierarchy is now `recurrence -> full-counting occupation -> polynomial additive blocks -> source-specific projective coherence within each block -> uniformly conditioned exact dilation copies`. None of these implies that the available copies carry a nonvanishing fraction of the normalized frontier state.
+## Keep set occupation, within-block coherence, exact embedding, normalized capacity and multihorizon composability separate
 
-FD-085 proves that coarse set geometry cannot imply multiplicative composability; FD-086 proves much stronger local vector coherence; FD-087 proves both that dilation itself is well conditioned and that the small-anchor sector forced by current block thickness is asymptotically negligible. The next theorem must control **where the transported mass lives**, not merely whether an exact copy exists.
+The established hierarchy is now `recurrence -> full-counting occupation -> polynomial additive blocks -> source-specific projective coherence -> uniformly conditioned exact dilation -> positive-mass super-block anchor packet`. None of these implies that the packet can be aggregated into the single lower-horizon energy required by the current accumulation mechanism.
+
+FD-085 proves that coarse set geometry cannot imply multiplicative composability; FD-086 proves local vector coherence; FD-087 proves both that dilation itself is well conditioned and that small-anchor capacity vanishes; FD-088 proves that row-adaptive repeated-prime deflation recovers positive bulk mass at anchors much larger than the block length. The next theorem must control **composition of the rowwise anchors**, not merely existence, conditioning, or normalized mass of exact copies.

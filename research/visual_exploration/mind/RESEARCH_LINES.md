@@ -14,18 +14,22 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Average the four-form local-factor/fiber mass, couple the fibers, or change the dephasing resource
+## Couple dangerous fibers or change the dephasing resource after local-factor averaging
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`.
 
 VIS-192--VIS-199 reduce deterministic finite-start dephasing to the weighted local-spacing resource `D_v` and prove `D_v=o(y^2)` through a broad stretched-exponential/subpolynomial corridor by combining taper localization with a four-form upper-bound sieve.
 
-VIS-200 closes scalar cutoff engineering as an independent continuation of that proof. With a general boundary `X=(y/H)L`, the same ingredients give normalized collision energy bounded by a sieve term `B(y)(log y)^2/log(H/L)^4`, a tail term `(log y)^2/L^3`, and the degenerate branch. Making the tail vanish forces `L` above the `(log y)^(2/3)` scale, while the pointwise four-form term still requires `log(H/L)` to dominate `(1+log log y)sqrt(log y)`. Optimizing `L` recovers only lower-order logarithms.
+VIS-200 closes scalar cutoff engineering as an independent continuation. With a general boundary `X=(y/H)L`, the same ingredients show that changing only the split point cannot remove the pointwise four-form threshold.
 
-The next theorem must therefore improve a **different ingredient**: average the singular-series/local-factor mass instead of taking its pointwise maximum, estimate dangerous fibers jointly before scalarization, exploit cancellation/packing across fibers, strengthen the fourth-prime use, or replace `D_v` by a resource not priced by the same inverse local spacing. Merely retuning the sieve/taper cutoff cannot enter the lower corridor.
+VIS-201 now removes that pointwise singular-series loss itself. The nondegenerate four-form conductor reduces to three primitive affine polynomial values, and Henriot's discriminant-uniform Nair--Tenenbaum theorem supplies a first-gap majorant with bounded mean after the second-gap fiber is averaged. Inserting this average before the first-gap sum replaces the pointwise `B(y)` factor by a bounded-mean weight and yields normalized collision energy
 
-## Keep local admissibility, pointwise tuple bounds, aggregate weighted incidence and resource choice separate
+`O((log y)^2/log(H/L)^4 + (log y)^2/L^3 + H/(y log y))`.
 
-VIS-197 controls local factors pointwise; VIS-198--VIS-199 purchase global incidence from sieve dimension; VIS-200 proves that cutoff optimization cannot remove the current pointwise local-factor threshold. This is a limitation of the proof architecture, not evidence that the true dephasing threshold occurs there.
+With `L=log y`, the current sufficient horizon becomes `sqrt(log y)=o(log H)` together with `H log y/y -> 0`. Thus the extra `log log y` multiplier was not intrinsic. The remaining frontier is the dimension-four/local-spacing architecture itself: couple dangerous fibers before scalarization, exploit cancellation or packing across fibers, strengthen the fourth-prime input, or replace `D_v` by a dephasing resource with a different collision cost. The current argument still does not reach `log H=Theta(sqrt(log y))` or polylogarithmic horizons.
 
-The four-form condition and `D_v` are sufficient, not known sharp. Polylogarithmic horizons, critical normalization and a better deterministic dephasing resource remain open.
+## Keep local admissibility, pointwise tuple bounds, averaged local-factor mass, aggregate weighted incidence and resource choice separate
+
+VIS-197 controls local factors pointwise; VIS-198--VIS-199 purchase global incidence from sieve dimension; VIS-200 proves cutoff optimization cannot remove the pointwise loss; VIS-201 proves that discriminant-uniform fiber averaging **can** remove that loss without changing the sieve dimension or resource.
+
+The four-form condition and `D_v` remain sufficient, not known sharp. Further progress must now change aggregate incidence, cancellation, or the resource itself rather than revisit the already-removed pointwise local-factor maximum.

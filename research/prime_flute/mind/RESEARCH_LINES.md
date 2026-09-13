@@ -2,7 +2,7 @@
 
 ## Estimate the two genuine physical angle channels exposed by sequential elimination
 
-**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`.
+**Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`, `MI-012-corridor-form-smallness-needs-seam-metric-locality`.
 
 PF-303--PF-316 progressively close scalar depth, entrance leakage, direct residual high conversion, a supposed second inverse-normalized angle, and arbitrary internal-source amplification as independent missing mechanisms. Sequential elimination gives `T_(P/H) ~= (T_H V_H, Z_LH)^T`, and PF-316 proves that compactness/weak trace of the full physical angle is equivalent to compactness/weak trace of both `T_H` and `Z_LH`; attenuation by `V_H` cannot hide a bad conditional direction without paying through the direct channel.
 
@@ -10,13 +10,15 @@ PF-317 localizes the direct channel. In simultaneous seam-energy coordinates the
 
 `||L_(n+r) K H_n||_(S_2)^2 <= C (1+log P_n)/P_n^2`, `r=-1,0,1`.
 
-This Hilbert--Schmidt average already gives `K_LH,Z_LH in S_(1,infinity)` by two-scale prime threshold counting. Equivalently, the direct-channel gate is aggregate high-frequency leakage of an orthonormal basis of the retained nonconstant low target. No worst-case `C/P_n` operator-norm bound is required. The explicit flat shifted-strip DtN normalization remains valid at relative `1+O(P_n^-2)` cost.
+This Hilbert--Schmidt average already gives `K_LH,Z_LH in S_(1,infinity)` by two-scale prime threshold counting. No worst-case `C/P_n` operator-norm bound is required.
 
-The direct channel is therefore a **local thin-pant mean-square mixed-frequency estimate**. PF-215 remains the negative control: the complete adjacent pant block diverges on constant modes, so the estimate must exploit the nonconstant low/high split rather than an all-frequency norm bound. The second genuine channel `T_H` remains independent.
+PF-319 now closes a tempting shortcut to that estimate. PF-232 gives an `O(P_n^-1)` relative Loewner perturbation after normalization by the diagonal **corridor** energy, and low rank would indeed give the PF-318 mean-square scale in that same metric. But the direct physical angle is normalized by the PF-205 seam form. A two-metric countermodel proves that corridor-relative form smallness alone gives no seam-normalized mixed-corner bound unless the source/target metric conversion is controlled. Thin flat corridors exhibit exactly the potentially large metric ratio.
+
+The direct channel is therefore a **local thin-pant seam-normalized mean-square mixed-frequency estimate**. A positive proof must use actual mode locality/almost-diagonality of the canonical hypercycle shear, prove a restricted corridor-to-seam metric conversion, or estimate the physical mixed corner directly. PF-215 remains the negative control on constant modes. The second genuine channel `T_H` remains independent.
 
 ## Global heavy-range projection counts after strength/angle factorization
 
-For the PF-287 heavy low/high extension-range projection product, can the conditional channel `T_H` satisfy the required ideal count once the direct channel is reduced to a Hilbert--Schmidt local leakage criterion? PF-318 supplies endpoint-complete finite-band reassembly for `Z_LH`; it does not estimate `T_H`, build the compatible infinite realization, close the symmetric side, or supply signed target composition.
+For the PF-287 heavy low/high extension-range projection product, can the conditional channel `T_H` satisfy the required ideal count once the direct channel is reduced to a Hilbert--Schmidt local leakage criterion? PF-318 supplies endpoint-complete finite-band reassembly for `Z_LH`; PF-319 only narrows the local proof mechanism. Neither estimates `T_H`, builds the compatible infinite realization, closes the symmetric side, or supplies signed target composition.
 
 ## Prime realization within the resolved upstream-memory window
 
