@@ -1,6 +1,6 @@
 # NB-083 — boundary zeros force reciprocal-depth screening
 
-**Status:** `CLASSICAL-OPA-BOUNDARY + EXACT-DERIVED + STATIONARY-BRANCH-CALIBRATION + SHARP-PREDICTION-RATE + HORIZON-DICHOTOMY + METHOD-BOUNDARY`.
+**Status:** `EXACT-DERIVED + ANCHORED-POLYNOMIAL-PREDICTION + STATIONARY-BRANCH-CALIBRATION + SHARP-PREDICTION-RATE + HORIZON-DICHOTOMY + METHOD-BOUNDARY`.
 
 `NB-082` identifies the normalized finite-prediction excess
 
@@ -89,7 +89,7 @@ Thus, inside the polynomial matched-control class, **polynomial-size future scre
 
 This is a calibration theorem, not an arithmetic Nyman estimate. Its relevance is that an affordable source-facing theorem cannot be obtained by replacing the missing prediction-rate estimate with qualitative cyclicity or smoothness of the forward filter. Even an entire polynomial outer filter can require `L` of order `R` when its inverse is singular on the boundary. For the actual nonstationary Nyman innovations, one therefore needs either a quantitative inverse/prediction statement strong enough to beat this boundary mechanism, or a certificate that does not pay the finite-prediction layer.
 
-## 1. The prediction excess is exactly an optimal-polynomial-approximant error
+## 1. The prediction excess is an anchored polynomial inverse problem
 
 Normalize by (2). Since every admissible `p` satisfies `p(0)=1`, the polynomial
 
@@ -117,12 +117,12 @@ a_{\psi,L}
 \tag{11}
 \]
 
-The condition `p(0)=1` is actually automatic for the ordinary optimal polynomial approximant to `1/f`: if `p=p_0+zp_1`, the constant coefficient of `fp-1` is `p_0-1`, while all remaining coefficients are independent of the orthogonal constant direction. Minimization forces `p_0=1`. Thus `a_(psi,L)` is the standard squared OPA error for `1/f`.
+The anchor `p(0)=1` is essential. Equation (11) is closely related to the standard optimal-polynomial-approximant problem for `1/f`, but it is **not** the same minimization: an unconstrained OPA need not have constant coefficient one. The anchored form is the quantity selected by the branch-prediction normalization in `NB-082` and is treated directly below.
 
 Let `d=deg f` and `M=L+d`. Writing
 
 \[
-e(z)=\sum_{n=1}^{M}u_nz^n,
+e(z)=\sum_{n=1}^{M}u_nz^n
 \tag{12}
 \]
 
@@ -149,7 +149,7 @@ a_{\psi,L}
 \tag{14}
 \]
 
-This representation makes the boundary rate elementary: the only growing objects are finite Gram matrices of evaluation and derivative rows.
+This exact interpolation representation, rather than unconstrained OPA normalization, is what drives the rate below.
 
 ## 2. Boundary Hermite constraints contribute `k^2/M`
 
@@ -208,7 +208,7 @@ which are one power of `M` smaller than the corresponding diagonal sums. After t
 
 before the constraints from exterior zeros are imposed.
 
-Exterior zeros do not alter this leading term. Their evaluation/derivative Gram blocks grow geometrically in `M`; boundary--exterior cross blocks have the same exponential factor but one fewer power of `M` than the boundary diagonal. Eliminating the fixed-dimensional exterior block by its Schur complement therefore changes each scaled boundary block by `O(M^{-1})`. Equivalently, the exterior Hermite constraints can be enforced at a cost lower than the leading boundary `M^{-1}` energy. Thus (21) remains the full minimum in (14). Since `M=L+d`, this proves (4).
+Exterior zeros do not alter this leading term. Their evaluation/derivative Gram blocks grow geometrically in `M`; boundary--exterior cross blocks carry the same geometric endpoint factor but one fewer power of `M` than the boundary diagonal after the exterior block is eliminated. The fixed-dimensional Schur complement therefore perturbs each scaled boundary block by `O(M^{-1})`. Thus the leading matrix in (16) and the energy in (21) are unchanged. Since `M=L+d`, this proves (4).
 
 The asymptotic passes two sharp calibrations already present in the line. For `f=1-z`, `kappa=1` and `NB-082` gives the exact value `a_(psi,L)=1/(L+1)`. For `f=(1-z)^k`, the same confluent-Hilbert calculation gives
 
@@ -276,16 +276,16 @@ with `K_(m,R,L)/R -> 1-1/m` uniformly in `L`. If a boundary zero is present, (4)
 
 Because the physical future size is `m^L R`, those two conditions are exactly the exponential and super-fixed-exponential costs stated in (7).
 
-If the inverse is analytic through the unit circle, (5) allows `L=C log R`. Taking `C` so that `R r^(-2L)->0` forces `mathfrak J->0`, while `m^L R` remains polynomial in `R`. Thus the branch geometry amplifies a scalar analytic distinction into a qualitative computational/geometric distinction in the amount of future required by the certificate.
+If the inverse is analytic through the unit circle, (5) allows `L=C log R`. Taking `C` so that `R r^(-2L)->0` forces `mathfrak J->0`, while `m^L R` remains polynomial in `R`. Thus the branch geometry amplifies a scalar analytic distinction into a qualitative distinction in the amount of future required by the certificate.
 
 ## 5. Prior-art boundary, falsification tests, and consequence
 
-The scalar approximation problem in (11) is classical optimal-polynomial-approximant theory. Bénéteau, Manolaki and Seco, *Boundary Behavior of Optimal Polynomial Approximants*, Constructive Approximation 54 (2021), 157--183, DOI `10.1007/s00365-020-09508-z`, gives the finite zero-Gram representation for polynomial `f`, the `1/L` Hardy rate when boundary zeros are present, and a confluent/Hilbert-matrix analysis for a higher-multiplicity boundary zero. No novelty is claimed for the OPA mechanism or for the general fact that boundary zeros slow cyclic approximation. The mixed-multiplicity constant in (4) is derived here directly from the same finite Hermite Gram geometry; no priority claim is made for that constant either.
+The unconstrained neighboring approximation problem is classical optimal-polynomial-approximant theory. Bénéteau, Manolaki and Seco, *Boundary Behavior of Optimal Polynomial Approximants*, Constructive Approximation 54 (2021), 157--183, DOI `10.1007/s00365-020-09508-z`, gives finite zero-Gram formulas for polynomial `f`, the Hardy `1/L` boundary-zero rate in the ordinary OPA setting, and a confluent/Hilbert-matrix analysis for a higher-multiplicity boundary zero. No novelty is claimed for those OPA mechanisms or for the general phenomenon that boundary zeros slow cyclic approximation.
 
-The line-local content is the insertion of this sharp scalar rate into the `NB-082` branch-screening theorem. It identifies a complete polynomial calibration of future cost: zero-free continuation across the circle admits polynomial-size horizons, while any finite-order boundary zero forces exponential-size horizons despite outerness and despite the filter being a polynomial.
+The exact scalar in `NB-082` carries the additional anchor `p(0)=1`, so the literature result is a prior-art boundary rather than a substituted theorem. Equations (9)--(21) derive the anchored rate directly. The line-local consequence is then the insertion of that rate into the branch-screening theorem, which identifies a complete polynomial calibration of future cost: zero-free continuation across the circle admits polynomial-size horizons, while any finite-order boundary zero forces exponential-size horizons despite outerness and despite the filter being a polynomial.
 
-The obvious falsification checks agree. The flat filter has `a=0`; `1-rho z`, `rho<1`, has geometric decay; `1-z` has exactly reciprocal decay; repeated boundary zeros retain reciprocal decay with the predicted multiplicity-squared constant. Interior zeros are deliberately excluded: they create a nonconstant inner factor, so `NB-082` already gives a positive limiting excess and a linear-in-`R` charge at every depth.
+The falsification checks agree. The flat filter has `a=0`; `1-rho z`, `rho<1`, has geometric decay; `1-z` has exactly reciprocal decay; repeated boundary zeros retain reciprocal decay with the predicted multiplicity-squared constant. Interior zeros are deliberately excluded: they create a nonconstant inner factor, so `NB-082` already gives a positive limiting excess and a linear-in-`R` charge at every depth.
 
-No specialized external estimate is load-bearing in the derivation above, and the classical OPA source is used only to delimit prior art, so `SOURCES.md` is unchanged.
+No specialized external estimate is load-bearing in the derivation above, and the OPA paper is used only to delimit prior art, so `SOURCES.md` is unchanged.
 
-The research consequence is negative but concrete. The actual Nyman innovations are nonstationary, so (4) cannot simply be transferred to them. But any attempt to obtain the required `1/R` finite-prediction accuracy from outerness or forward regularity alone is now calibrated against an analytic polynomial control where those qualitative properties coexist with the worst `1/L` boundary law. An affordable arithmetic horizon must exploit stronger source information: quantitative inverse stability away from a boundary singularity, genuinely nonstationary arithmetic cancellation, or a stable-mode certificate that avoids finite prediction altogether.
+The research consequence is negative but concrete. The actual Nyman innovations are nonstationary, so (4) cannot simply be transferred to them. But any attempt to obtain the required `1/R` finite-prediction accuracy from outerness or forward regularity alone is calibrated against an analytic polynomial control where those qualitative properties coexist with the `1/L` boundary law. An affordable arithmetic horizon must exploit stronger source information: quantitative inverse stability away from a boundary singularity, genuinely nonstationary arithmetic cancellation, or a stable-mode certificate that avoids finite prediction altogether.
