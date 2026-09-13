@@ -8,18 +8,22 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem remains whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Derive an arithmetic inverse-prediction rate that beats the boundary-zero calibration
+## Control the actual aliased descendant spectra at the `1/R` prediction scale
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`.
 
-NB-066--NB-079 reduce persistent continuation to the uncancelled charge and cancel the common coarse-future prediction mode. NB-080 shows that fixed relative future depth has an extensive benign false positive, while NB-081 calibrates explicit outer controls. NB-082 then identifies the exact stationary scalar resource: at depth `L`, the global prediction-volume charge is comparable to `R a_(psi,L)`. Outerness gives only `a_(psi,L)->0`; bounded screening needs `O(1/R)`.
+NB-066--NB-082 reduce persistent continuation to a finite-future prediction charge and show that qualitative outerness is insufficient: a depth-`L` stationary excess must reach the destination scale `O(1/R)`. NB-083 calibrates the stationary boundary: a unit-circle zero gives only `Theta(1/L)` prediction improvement and forces linear depth, whereas a strictly exterior zero set gives geometric prediction.
 
-NB-083 now makes the stationary matched-control boundary sharp for outer polynomials. If the normalized filter has a unit-circle zero of multiplicity `k`, the anchored prediction excess decays only like `k^2/L`; several boundary zeros contribute the sum of multiplicity squares. Consequently bounded screening requires depth `L=Omega(R)` and therefore an exponential-size future. If every zero lies strictly outside the closed disk, the excess decays geometrically and logarithmic depth gives a polynomial-size future.
+NB-084 now identifies the corresponding **actual-source** finite certificate along every integer-dilation descendant ray. Exact Nyman branching makes `U_(r log q)D_j` an admissible combination of genuine later innovations, and the radial prediction error is an anchored Toeplitz problem with periodized boundary density
 
-The live arithmetic theorem is therefore stricter than “prove outerness.” Identify the corresponding nonstationary inverse/prediction quantity for the actual Nyman innovations and prove that it avoids the boundary-singular `1/L` regime strongly enough to reach `1/R` at an affordable horizon, or construct a stable-mode-sensitive certificate that does not pay finite prediction at all. Forward smoothness, exact branching and good global Gram conditioning do not determine that rate.
+`W_(j,q)(theta)=(1/log q) sum_k |D_j(1/2+i(theta+2pi k)/log q)|^2`.
 
-## Keep stable modes, inverse boundary regularity, prediction rate and future cost separate
+This changes the boundary-zero test. An individual critical-line zero removes only one alias; a zero of `W_(j,q)` would require an entire two-sided alias class to vanish. Moreover `W_(j,q)>0` almost everywhere. Thus the reciprocal-depth law of NB-083 cannot be transferred to the arithmetic source merely from ordinary zeta zeros.
 
-A nonzero stable tail still forces divergence for every finite horizon schedule, and boundedness on one unbounded schedule still excludes it. But inside the zero-stable-tail class, NB-083 shows that qualitative regularity splits into radically different costs: a boundary singularity of the inverse forces reciprocal-depth convergence, whereas analytic continuation through the circle gives geometric convergence.
+The live theorem is now quantitative and source-specific: estimate the Toeplitz errors `E_(j,q,L)` relative to the visible causal prediction errors strongly enough that `sum_(j<R) log(E_(j,q,L)/PiHat_(j,R)^2)=O(1)` on an affordable choice of `L(R)`, or improve the certificate using cross-ray combinations. Positivity almost everywhere of the aliased spectrum is only qualitative; deep valleys may still make prediction expensive.
 
-The actual arithmetic source may lie in neither stationary polynomial regime. These controls classify what must be beaten; they are not a substitute for a source-specific nonstationary theorem.
+## Keep stationary inverse singularities, aliasing, prediction rate and future cost separate
+
+NB-083 remains the correct matched control for a genuine unit-circle zero of a stationary symbol. NB-084 shows that the actual integer-descendant symbol is not the unaliased Mellin factor but its nonnegative alias-periodized energy. Source zeros, aliased spectral valleys, Toeplitz conditioning and total future cost are therefore distinct gates.
+
+The radial certificate is one-sided: a good bound excludes a stable tail, while a poor radial bound does not rule out stronger prediction from the full nonstationary future. The next advance should estimate the actual periodized spectra rather than transplant stationary zero heuristics.

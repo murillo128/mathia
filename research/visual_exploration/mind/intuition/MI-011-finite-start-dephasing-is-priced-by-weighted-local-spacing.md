@@ -1,17 +1,19 @@
-# MI-011 — Polynomially long subcritical dephasing is controlled by a three-form sieve on weighted same-sign prime-gap fibers
+# MI-011 — Weighted prime-ratio dephasing survives down to a four-form stretched-exponential horizon; the slow-horizon frontier is quantitative
 
-**Evidence level:** exact deterministic weighted-Hilbert and same-sign gap-fiber reduction through VIS-197, plus the literature-backed dimension-three upper-bound sieve closure VIS-198. The conclusion `D_v=o(y^2)` is proved whenever `H>=y^epsilon` and `H log y/y->0`. Arbitrarily slowly growing `H`, critical-scale behavior and optimality of `D_v` remain open.
+**Evidence level:** exact deterministic weighted-Hilbert and same-sign gap-fiber reduction through VIS-197, plus the literature-backed sieve closures VIS-198--VIS-199. The conclusion `D_v=o(y^2)` is proved throughout polynomially growing strictly subcritical horizons and, under VIS-199's logarithmic condition, through a broad subpolynomial corridor. Polylogarithmic/arbitrarily slow growth, the critical-scale transition and optimality of `D_v` remain open.
 
-VIS-192--VIS-195 reduce deterministic finite-start dephasing to the coefficient-weighted local-spacing resource
+VIS-192--VIS-195 reduce deterministic finite-start dephasing to the coefficient-weighted local-spacing resource `D_v` and make `D_v=o(y^2)` equivalent to vanishing taper-energy mass on every fixed normalized top-scale collision family. VIS-196 removes the opposite-sign branch at subquadratic cost and writes each dangerous same-sign collision as a one-parameter affine prime-gap fiber. VIS-197 shows that local congruence geometry is not the power-scale obstruction: outside an explicit finite conductor, the four-form system has only polylogarithmic local-product inflation.
 
-`D_v=[sum_lambda |c_lambda|^2/delta_lambda]/sum_lambda |c_lambda|^2`
+VIS-198 closes every polynomially growing strictly subcritical corridor. Dropping one primality condition and using a dimension-three upper-bound sieve already supplies enough logarithmic saving when the relevant parameter intervals have polynomial length.
 
-and make `D_v=o(y^2)` equivalent to vanishing taper-energy mass on every fixed normalized top-scale collision family. VIS-196 removes the opposite-sign branch at subquadratic cost and writes each dangerous same-sign collision as `d r-e p=+/-h`, producing one-parameter affine prime fibers after the gap data are fixed.
+VIS-199 shows exactly how to go further. Retaining all four primality conditions gives a fourth inverse logarithm, while moving the sieve/taper split to `X=y log y/H` makes the unsieved tail only `O(1/log y)`. The resulting normalized collision bound tends to zero when
 
-VIS-197 shows that local congruence geometry is not the power-scale obstruction. Outside an explicit finite conductor, the nondegenerate four-form fiber has the generic local root pattern and only polylogarithmic singular-series inflation; the zero-conductor branch collapses to finitely many fixed-shift three-prime progressions.
+`(1+log log(3+y)) sqrt(log y) = o(log(H/log y))`
 
-VIS-198 closes the remaining aggregate estimate throughout every polynomially growing strictly subcritical corridor. The key simplification is that an upper bound does **not** need all four primality conditions: forgetting the fourth and sieving only three affine forms already supplies an `N/(log N)^3` saving. For gaps up to `y^(1-epsilon/2)`, the parameter interval is polynomially long, so this logarithmic saving is uniform enough. The `O_A(d)` possible companion gaps cancel the `1/d` fiber length, leaving one summable taper profile. Larger gaps are negligible from taper decay alone, and the degenerate branch is smaller still.
+and `H log y/y -> 0`. In particular every fixed `eta>0` permits `H >= exp((log y)^(1/2+eta))`, far below every fixed power of `y`.
 
-Consequently, for every fixed normalized crowding scale, the weighted collision energy tends to zero and hence `D_v=o(y^2)`. The prior “global weighted sieve” frontier is therefore solved in this corridor. The remaining question is specifically the **slow-horizon transition**: can the sieve/taper argument be made uniform when `H` grows more slowly than every power of `y`, or is there a genuine weighted-crowding obstruction there?
+The main lesson is now quantitative rather than categorical. **Polynomial horizon length was only a sieve-length convenience; the actual present barrier is whether the available logarithm of the affine-fiber parameter range dominates the worst-case four-form local-factor cost.** Local admissibility and weighted collision geometry remain under control well into the subpolynomial regime.
 
-**Boundary.** The lower condition `H>=y^epsilon` is load-bearing because it keeps the useful fiber parameter intervals polynomially long; `H log y/y->0` is load-bearing for the denominator comparison. The three-form sieve is used only as an upper bound and does not imply a four-prime asymptotic. The result proves sufficiency of a subquadratic weighted spacing horizon, not that `D_v` is the optimal deterministic dephasing time.
+The next useful theorem should therefore improve aggregate local-factor/fiber control near `log H = O(sqrt(log y) log log y)`, or identify a different sufficient dephasing resource whose finite-start cost is smaller than `D_v`. Repeating the same worst-case singular-series majorant cannot by itself reach polylogarithmic horizons.
+
+**Boundary.** VIS-199 is an upper-bound-sieve result for fixed normalized crowding scale and the stated endpoint-zero taper. It does not prove necessity of `D_v`, uniformity for growing crowding multiplier, a prime-tuple asymptotic, or any result at arbitrary slow/critical horizons.

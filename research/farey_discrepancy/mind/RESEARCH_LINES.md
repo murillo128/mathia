@@ -2,22 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert polynomial additive occupation blocks into compatible accumulation geometry
+## Use source-specific arithmetic to turn additive occupation into composable transport
 
 **Linked intuition:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy`.
 
-FD-072--FD-081 push the recurrence currency from protected records through physical-energy weighting, logarithmic annular recurrence and first passage to good physical horizons. FD-082 shows that recurrence alone can remain too sparse for fixed-per-hit accumulation.
+FD-072--FD-084 push the physical occupation geometry from recurrence to full counting exponent and then to consecutive occupied blocks of length `H^(Theta-delta)` inside every sufficiently late fixed-power future window. Scarcity and isolated recurrence are no longer the bottleneck.
 
-FD-083 removes that cardinality escape for the actual physical occupation set: the atom cap plus annular energy force constant-strength occupied horizons to have full counting exponent inside every fixed-power future window.
+FD-085 closes the tempting purely geometric continuation. A synthetic set can satisfy stronger versions of the same power-window abundance and additive-block conclusions while every infinite integer-ratio chain has transition ratios tending to infinity; its logarithmic horizon growth per retained scale is necessarily superexponential. Thus **full-counting abundance plus even linear additive blocks do not imply the finite-entropy multiplicative chain required by the existing GCD-duality accumulation mechanism**.
 
-FD-084 now removes the stronger escape in which those many horizons are still isolated. The exact divisor-local horizon increment law gives per-step energy variation `N^(Theta+o(1))`, while annular occupation produces seeds at energy `H^(2Theta-o(1))`. Consequently every fixed-power future window contains a consecutive block of occupied horizons of length `H^(Theta-delta)` for every fixed `delta>0`.
+The live theorem must use information absent from that matched control: the actual Farey/Mertens quotient-shell or Jordan-energy identities, a source-specific restriction on where occupied blocks can occur, a transport inequality that composes gains under nearby additive horizon motion, or another nonlocal mechanism that bypasses integer-ratio chaining. Reproving abundance or additive thickness in a different norm cannot cross the remaining gate.
 
-The live theorem is therefore no longer recurrence, abundance, or additive persistence. It must show that these polynomial additive blocks can be **composed by the actual Farey/RH mechanism**: produce an integer-ratio or multiplicative chain, a transport estimate that accumulates across many nearby occupied horizons, a gain depending on block placement across scales, or another nonlocal inequality that converts additive thickness into the required power-scale improvement.
+## Keep recurrence, counting abundance, additive persistence and source-specific transport separate
 
-## Keep recurrence, counting abundance, additive persistence and multiplicative transport separate
+The established hierarchy is `recurrence -> physical anti-concentration -> full-counting occupation -> polynomial additive blocks`. FD-085 proves that the next arrow to finite-logarithmic-entropy multiplicative transport is **not a consequence of this set geometry alone**.
 
-The current hierarchy is
-
-`recurrence -> physical anti-concentration -> full-counting occupation -> polynomial additive blocks -> compatible transport`.
-
-Only the last arrow remains open. A consecutive interval of good horizons is much stronger than exponent-one counting, but it still does not imply that two useful horizons lie on one multiplicative ray or that local GCD/Schur gains compose. Do not replace additive thickness by multiplicative compatibility without a theorem that performs that conversion.
+A successful continuation must therefore carry some arithmetic identity or transport law from the physical source into the composition step. The synthetic superexponential-chain control does not show that the true occupied set realizes that escape; it shows only that any proof excluding the escape must use more than cardinality and additive block placement.

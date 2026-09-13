@@ -8,18 +8,18 @@ This file holds the current mathematical questions suggested by the durable weil
 
 WI-231--WI-237 show that finite negative inertia detects off-line packets exactly but can lose coercivity as height grows. The unconditional simple critical-line exponentials are complete on bounded windows and are not a Bessel family, so ordinary separation/Riesz arguments cannot exclude spectral collapse. The surviving currency is coefficient price together with height tightness.
 
-## Generalize Suzuki-null rigidity from endpoint bumps to arbitrary screened support geometry
+## Turn Suzuki support-spreading into quantitative non-screenable arithmetic overlap
 
 **Linked intuition:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`.
 
-WI-253--WI-258 isolate the phase-coupled source cone and the exact lower-envelope information available at a hypothetical first localized Weil crossing. WI-264 shows that every finite aperture admits an antisymmetric endpoint-bump autocorrelation which screens every active von-Mangoldt lag while the continuous source has favorable sign. WI-265 shows that the same geometry can satisfy every generic first-crossing operator condition in a flexible rank-one model.
+WI-253--WI-258 isolate the phase-coupled source cone and exact lower-envelope information at a hypothetical first localized Weil crossing. WI-264 constructs endpoint-bump modes that screen every active von-Mangoldt autocorrelation lag, and WI-265 shows that generic nested positivity/first-crossing structure cannot rule that geometry out.
 
-WI-266 now proves that this explicit screening family is **not compatible with Suzuki's actual null equation**. The support gap contains an interval where all active prime translations vanish, while the regular kernel is strictly increasing with separation; the antisymmetric endpoint contributions therefore have a strict nonzero sign there. The actual localized Weil operator cannot annihilate the endpoint-bump vector.
+WI-266 uses Suzuki's actual null equation to exclude that explicit two-endpoint family. WI-267 now removes the dependence on that geometry: for **every nonzero localized Weil null vector**, every point outside its essential support must be reached from the support by at least one active prime-power translation. Equivalently, a null mode has no open support gap on which the mode and all active translations simultaneously vanish.
 
-The live theorem is to extend that source-specific contradiction beyond two separated endpoint components. Determine whether every genuine first-crossing null vector satisfies a support-spreading/no-long-gap condition forced by the prime translations plus the monotone continuous kernel, or construct a more complicated screened geometry whose translated components cancel the continuous convolution on every gap. The arithmetic null equation, not generic compression positivity, is now the controlling object.
+This is an exact source-specific support-propagation theorem, but it is not yet the desired arithmetic non-screening statement. Pointwise translated activity can still cancel the regular convolution while every global prime-lag autocorrelation vanishes. The live theorem is therefore to combine the support cover with the distributional null equation and/or sliding lower-envelope inequalities to force a quantitative overlap or symbol that cannot be screened.
 
-## Treat source activation, autocorrelation screening, abstract firstness and arithmetic null-equation rigidity as separate gates
+## Treat translated activity, autocorrelation overlap and first-crossing positivity as separate gates
 
-Finite source activation does not prevent screening, and abstract firstness does not prevent it either. WI-266 shows that the true arithmetic equation can still eliminate a geometry surviving both controls. This is a one-family exclusion, not a general no-screening theorem.
+WI-267 proves that the arithmetic source must be active across every support gap; it does **not** prove `C_v(log n) != 0` for some active prime power. A multi-component vector may have translated mass everywhere while signs/phases cancel its global autocorrelations.
 
-The next advance must preserve the exact source equation far enough to distinguish arbitrary support geometry. Reducing firstness back to generic Hilbert-space positivity before using the arithmetic kernel would discard precisely the information that produced WI-266.
+The next advance must retain enough of Suzuki's exact source equation to turn translation domination into a quantitative non-screenable overlap. Returning to generic Hilbert-space positivity would discard precisely the structure that strengthened WI-266 into WI-267.

@@ -14,20 +14,18 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Resolve the slow-horizon weighted-crowding transition
+## Push weighted dephasing below the four-form sieve threshold, or change the resource
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`.
 
-VIS-192--VIS-195 reduce deterministic finite-start dephasing to the coefficient-weighted local-spacing resource `D_v`. VIS-196 reduces every quadratic dangerous same-sign collision to one-parameter affine prime-gap fibers, and VIS-197 proves that their local congruence inflation is only polylogarithmic outside an explicit finite conductor.
+VIS-192--VIS-197 reduce deterministic finite-start dephasing to the coefficient-weighted local-spacing resource `D_v` and then to same-sign affine prime-gap fibers with controlled local congruence inflation.
 
-VIS-198 now closes the aggregate weighted sieve whenever the observation horizon is polynomially large but strictly subcritical: for every fixed `epsilon>0`,
+VIS-198 proves `D_v=o(y^2)` throughout every polynomially growing strictly subcritical horizon using a three-form upper-bound sieve plus taper localization. VIS-199 shows that polynomial growth was not structural: retaining the fourth primality condition adds one logarithm of sieve saving and extends the same conclusion to a broad genuinely subpolynomial corridor. A sufficient regime is `H >= exp((log y)^(1/2+eta))` for fixed `eta>0`, together with `H log y/y -> 0`.
 
-`H>=y^epsilon` and `H log y/y -> 0`
-
-imply `D_v=o(y^2)`. The key is that a three-form upper-bound sieve already supplies enough logarithmic saving; the fourth primality condition can be discarded for an upper bound. Taper localization collapses the fiber sum to one gap profile, large gaps are negligible without sieving, and the degenerate conductor-zero branch is smaller still.
-
-The live theorem has therefore moved to the boundary excluded by that proof: **horizons growing more slowly than every fixed power of `y`**, and the transition toward the critical scale where the denominator asymptotic changes. Determine whether weighted crowding still vanishes uniformly there, find a different dephasing resource, or exhibit a genuine obstruction. Repeating fixed-power sieve estimates no longer addresses the remaining case.
+The live boundary is therefore below the current four-form threshold, roughly where `log H` is no longer larger than `sqrt(log y)` by the required local-factor margin. The next theorem should average or otherwise control the singular-series/fiber mass strongly enough to enter that corridor, or replace `D_v` by a different deterministic dephasing resource before attempting polylogarithmic and slower horizons. Another fixed-power sieve refinement is no longer relevant.
 
 ## Keep local admissibility, tuple upper bounds, weighted incidence and horizon scale separate
 
-VIS-197 controls local factors, while VIS-198 adds the global weighted incidence estimate only when the useful parameter intervals are polynomially long. The lower bound on `H` is therefore an information-scale condition, not a cosmetic technicality. Local admissibility, affine tuple counts, taper-weighted incidence, deterministic start horizon and critical-scale normalization remain distinct gates.
+VIS-197 controls local factors; VIS-198--VIS-199 show how much global weighted incidence can be purchased from three- and four-form sieve dimension at the parameter lengths supplied by the horizon. The remaining loss is now a quantitative sieve-length/local-factor problem, not evidence of a prime-ratio collision obstruction.
+
+The four-form condition is sufficient rather than known sharp, and `D_v` itself is only a sufficient dephasing horizon. Polylogarithmic horizons, the transition to critical normalization and the possibility of a better resource remain open.
