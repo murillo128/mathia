@@ -1,10 +1,11 @@
 ---
 id: CLUE-prime-flute-direct-angle-dtn-principal-symbol-decoupling
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
+  - research/prime_flute/findings/PF-205-natural-width-cuff-smoothing-is-C1-uniform-and-critical-orlicz-summable.md
   - research/prime_flute/findings/PF-212-thin-fermi-boundary-frequency-split-closes-local-high-mode-gate.md
   - research/prime_flute/findings/PF-255-hypercycle-compactification-transport-is-a-parity-local-flow-with-a-two-derivative-leakage-bound.md
   - research/prime_flute/findings/PF-281-energy-normalized-cross-form-removes-bounded-frequency-coupling-gate.md
@@ -22,62 +23,76 @@ PF-316 isolates
 Z_{LH}=J_{LL}^{-1/2}J_{LH}J_{HH}^{-1/2}
 \]
 
-as one of the two exact weak-`S_1` gates for the full physical `P/H` angle. PF-212 also shows that the canonical PF-205 seam strip is translation invariant in the tangential coordinate, so its principal local DtN model is diagonal in physical Fourier modes and does not itself mix the fixed physical low/high split. PF-255 separately shows that the prime-dependent hypercycle footpoint transport has a two-derivative high-to-low barrier and differs from the identity only at quadratic width scale.
+as one of the two exact weak-`S_1` gates for the full physical `P/H` angle. PF-212 shows that the canonical PF-205 seam strip is exactly translation invariant in the tangential coordinate, so its local DtN model is diagonal in physical Fourier modes and does not itself mix the fixed physical low/high split. PF-255 separately shows that the prime-dependent hypercycle footpoint transport has a two-derivative high-to-low barrier and differs from the identity only at quadratic width scale.
 
-This suggests attacking `Z_{LH}` by subtracting the exact frequency-diagonal principal boundary operator before estimating any global cross block. Classical compact-boundary DtN theory supports the shape of that strategy but not the needed uniform conclusion. Girouard--Karpukhin--Levitin--Polterovich, *The Dirichlet-to-Neumann map, the boundary Laplacian, and Hörmander's rediscovered manuscript*, Journal of Spectral Theory 12 (2022), DOI `10.4171/jst/399`, studies the closeness of the DtN map to the square root of the boundary Laplacian. Hislop--Lutzer, *Spectral asymptotics of the Dirichlet-to-Neumann map on multiply connected domains in R^d*, Inverse Problems 17 (2001), DOI `10.1088/0266-5611/17/6/313`, proves an approximately component-diagonal decomposition with smoothing off-component remainder for a fixed smooth bounded multiply connected domain.
+The fixed-geometry part of a principal/remainder split is classical rather than a new prime-flute mechanism. For a smooth compact boundary the DtN map is an elliptic order-one pseudodifferential operator whose full symbol is determined by an arbitrarily small boundary neighborhood. Girouard--Karpukhin--Levitin--Polterovich, *The Dirichlet-to-Neumann map, the boundary Laplacian, and Hörmander's rediscovered manuscript*, Journal of Spectral Theory 12 (2022), DOI `10.4171/JST/399`, writes the harmonic DtN map as `sqrt(Delta_boundary)+B` with `B` of order zero and principal symbol
 
-Neither result is uniform for the degenerating, infinitely repeated prime-flute geometry. The potentially useful point is therefore not to import a compact-domain smoothing theorem, but to ask whether the exact PF-205 normalization exposes an analogous principal/remainder split with constants that improve along the canonical tail.
+\[
+\frac12\left(\frac{\mathcal I(\xi,\xi)}{|\xi|^2}-H\right).
+\]
+
+For a surface the boundary is one-dimensional, so this order-zero principal symbol vanishes identically. Thus the surface case is microlocally more favorable than the generic-dimensional statement at fixed geometry. Hislop--Lutzer, *Spectral asymptotics of the Dirichlet-to-Neumann map on multiply connected domains in R^d*, Inverse Problems 17 (2001), DOI `10.1088/0266-5611/17/6/313`, additionally gives an approximately component-diagonal decomposition with smoothing off-component remainder on a fixed smooth multiply connected domain.
+
+Those facts do **not** supply the required prime-flute estimate. PF-205 uses physical seam neighborhoods of width `w_n\asymp d_n\asymp p_n^{-1}` and proves only the particular uniform `C^1` geometry needed there; it explicitly does not assert a uniform pseudodifferential constant on the shrinking collars. The question is therefore no longer whether a fixed finite surface admits a smoothing/nonprincipal remainder. The live issue is whether the classical fixed-geometry remainder can be represented in the exact PF energy coordinates with quantitative constants that survive the collapsing-collar exhaustion and yield the endpoint singular-value count.
+
+A further control is important. Romain Speciel, *Surfaces with commuting boundary Laplacian and Dirichlet-to-Neumann map*, Journal of Spectral Theory (2026), DOI `10.4171/JST/617`, shows that global commutation of the boundary Laplacian and DtN map is a restrictive geometric property even for surfaces. Therefore only the deliberately chosen translation-invariant model `J_0` may be assumed to commute with the physical cutoff; no argument may silently promote that commutation to the full prime-flute boundary precision `J`.
 
 ## Research question
 
-On the finite canonical PF-311 sections, can the nonconstant boundary precision `J` be decomposed at form level as
+On the finite canonical PF-311 sections, choose an intrinsic local model `J_0` in the **same PF boundary-energy normalization** as the actual nonconstant precision `J`, using the exact translation-invariant Fermi-strip/collar response wherever that model is genuinely defined. Can one write at form level
 
 \[
 J=J_0+R,
 \]
 
-where `J_0` is the exact translation-invariant seam principal part and commutes with the physical cutoff `P_\kappa`, while the normalized cross form generated by
+with
 
 \[
-P_LRP_H
+P_LJ_0P_H=0,
 \]
 
-has the singular-value count required for
+and prove directly, with constants uniform in the canonical exhaustion, that the energy-normalized cross form generated by `P_LRP_H` gives
 
 \[
-Z_{LH}\in\mathcal S_{1,\infty}
+Z_{LH}=J_{LL}^{-1/2}J_{LH}J_{HH}^{-1/2}\in\mathcal S_{1,\infty}?
 \]
 
-uniformly in the canonical exhaustion?
-
-The decomposition need not produce a bounded raw operator `R`; PF-281 already shows that the correct object is the energy-normalized form cross operator. What matters is whether the principal frequency-diagonal contribution can be removed exactly and the remaining finite-pant, neighboring-cell, shear, and reassembly terms can be counted at the endpoint.
+The fixed-section smoothing statement is not the target. The target is a **scale-explicit uniform degeneration estimate** for the exact prime-flute family. The model must include whatever local shift/Robin normalization is actually present in `J`; the harmonic compact-surface formula above is prior-art guidance, not permission to replace the PF precision by an unshifted DtN map.
 
 ## Why it may matter
 
-PF-316 shows that proving the full physical angle weak trace requires independent weak-`S_1` estimates for `Z_{LH}` and `T_H`. The direct channel is therefore no longer merely a source-invertibility nuisance. A principal-symbol reduction would give it a dedicated geometric target: all dangerous low/high mixing would have to live in the nonprincipal boundary response rather than in the universal seam DtN growth.
+PF-316 shows that proving the full physical angle weak trace requires independent weak-`S_1` estimates for `Z_{LH}` and `T_H`. The direct channel is therefore no longer merely a source-invertibility nuisance. Subtracting a frequency-diagonal local model would isolate the only part capable of mixing physical low and high frequencies, while preserving the exact diagonal energy factors that PF-281 requires.
 
-It also provides a clean negative test. If, after removing the exact frequency-diagonal seam part and applying the physical energy normalization, the remainder still contains infinitely many tail-local low/high blocks with a fixed singular-value floor, then `Z_{LH}` is noncompact and PF-316 kills the current weak-trace route immediately. Conversely, tail-small local blocks are useful only if their multiplicity and global reassembly satisfy the endpoint count; operator-norm decay alone is insufficient.
+The literature audit sharpens rather than closes the route. Ordinary compact-boundary pseudodifferential smoothing is prior art. What is potentially new and useful is a uniform estimate through the prime-flute degeneration, where cuff lengths grow while the relevant physical collars shrink. Conversely, if those shrinking collars make the normalized remainder retain infinitely many tail-local singular directions above a fixed threshold, then `Z_{LH}` is noncompact and PF-316 kills this weak-trace route immediately.
 
 ## Decisive test
 
-Work first on the exact finite PF-205/PF-311 boundary section and keep the physical cutoff fixed. Identify an intrinsic `J_0` from the translation-invariant Fermi-strip DtN form, or prove that no such subtraction is compatible with the actual Schur normalization. Verify explicitly that `P_LJ_0P_H=0` in the same energy coordinates used to define `Z_{LH}`.
+Work on the exact finite PF-205/PF-311 boundary section at fixed physical cutoff and carry out four checks in the same energy coordinates used by `Z_{LH}`.
 
-Then express the actual cross form solely through `R=J-J_0` and carry the diagonal energy factors `J_{LL}^{-1/2}` and `J_{HH}^{-1/2}` throughout. Do not replace them by base-space norms or by a bounded raw cross block. Separate the contributions already controlled by PF-212 and PF-255 from the unresolved finite-pant completion, neighboring-cell coupling, and nested reassembly.
+First, construct the local model `J_0` from the exact translation-invariant seam/collar problem, including the actual shift and boundary normalization, and verify `P_LJ_0P_H=0` exactly. Do not use global commutation of `J` with the boundary Laplacian or the physical cutoff.
 
-For a positive result, derive a uniform counting estimate
+Second, express the actual cross form solely through `R=J-J_0` and retain `J_{LL}^{-1/2}` and `J_{HH}^{-1/2}` throughout. Separate the contributions already controlled by PF-212 and PF-255 from finite-pant completion, neighboring-cell coupling, and nested reassembly.
+
+Third, replace qualitative words such as "smoothing" by a scale-explicit estimate in the canonical parameters. A positive result must derive
 
 \[
 N_{Z_{LH}}(a)\le C/a
 \]
 
-on the canonical finite sections, or a stronger summable estimate, with constants independent of the geometric truncation. A modulewise estimate is insufficient unless the exact global placement is orthogonal, finitely colored, or otherwise reassembled with a proved counting inequality. In particular, fixed-domain pseudodifferential smoothing estimates cannot be used if their constants deteriorate as cuff lengths grow or pant/seam widths shrink.
+uniformly on the canonical finite sections, or a stronger summable estimate, with `C` independent of the geometric truncation. It is enough to prove local estimates only when their exact global placement is orthogonal, finitely colored, or accompanied by another proved singular-value counting inequality. Any fixed-domain pseudodifferential constant must be tracked as `w_n\to0` and cuff length grows; an unspecified smoothing seminorm is not usable evidence.
 
-For a negative result, exhibit normalized low/high vectors on a separated tail for which the remainder cross correlation stays bounded below after the exact diagonal energy normalization. A fixed positive limsup on infinitely many orthogonal windows is enough to disprove compactness of `Z_{LH}`; merely showing that an unnormalized DtN remainder is large is not.
+Fourth, run the matching negative test. Search for normalized low/high vectors supported on separated tail windows for which the remainder correlation stays bounded below after the exact diagonal energy normalization. A fixed positive limsup on infinitely many orthogonal windows disproves compactness of `Z_{LH}`. A large unnormalized DtN remainder does not.
 
-As a literature audit, compare any proposed decomposition against the compact-boundary principal-symbol results above and state exactly which uniform degenerating-geometry estimate is new. The classical theorem that a DtN map is an elliptic order-one pseudodifferential operator, or is close to a boundary square root on a fixed compact geometry, is not a prime-flute result.
+The closest degeneration literature located in this audit concerns Steklov spectra or scalar DtN determinants under degeneration rather than a uniform weak-`S_1` bound for this normalized low/high cross form. In particular, fixed-geometry symbol locality and smoothing do not themselves control the constants needed here. Any claimed positive theorem must identify precisely the extra prime-flute scale estimate beyond that classical theory.
 
 ## Evidence boundary
 
-No principal/remainder decomposition with uniform prime-flute constants is established here, and no weak-`S_1`, compactness, or noncompactness conclusion for `Z_{LH}` follows from the cited fixed-domain DtN theory. PF-212 controls specific local Poisson/Dirichlet recoupling words only under its placement/reassembly hypotheses; PF-255 controls the prime-dependent hypercycle transport but leaves other fixed-axis and finite-pant effects; PF-281 identifies the form-normalized currency; PF-315--PF-316 show only that the direct channel is an exact independent endpoint gate.
+No uniform prime-flute bound for the normalized remainder is established here, and no weak-`S_1`, compactness, or noncompactness conclusion for `Z_{LH}` follows from the cited fixed-domain DtN theory. The surface subprincipal cancellation is a classical fixed-geometry microlocal fact; it is not a uniform degeneration theorem. PF-212 controls specific local Poisson/Dirichlet recoupling words only under its placement/reassembly hypotheses; PF-255 controls the prime-dependent hypercycle transport but leaves other fixed-axis and finite-pant effects; PF-281 identifies the form-normalized currency; PF-315--PF-316 show only that the direct channel is an exact independent endpoint gate.
 
-The clue is therefore a proposed route to the geometric estimate, not evidence that pseudodifferential smoothing survives the infinite degenerating exhaustion.
+The clue remains below the finding threshold. Its accepted content is the narrowed research obligation: **do not spend effort reproving ordinary fixed-surface smoothing; prove or refute uniform energy-normalized low/high counting through the canonical shrinking-collar family.**
+
+## Research disposition
+
+Outcome: `accepted`.
+
+The direction survives scope, falsification, and prior-art triage because the fixed-geometry decomposition is classical while the required uniform degenerating-family estimate is neither supplied by that theory nor implied by current PF findings. The acceptance narrows the task to the quantitative endpoint statement above. A future positive result must produce a truncation-independent counting law; a future negative result should exhibit separated normalized tail witnesses. Until one of those occurs, this clue is a research direction rather than evidence for the direct-angle endpoint.
