@@ -12,7 +12,7 @@
 
 For `r=3` this is `469/600`; for `r=2` it is `173/200`. The live frontier after `RE-091` suggests an apparently stronger input from `RE-086`: once a selected cell has a first-layer boundary on one side and a depth-`r` boundary on the other, the **same cell** forces two anchored ordinary-prime gaps, one at scale `X` and one at the host base-prime scale `X^(1/r)`. Perhaps paying both gap costs simultaneously could improve (1).
 
-At the level of gap magnitudes and separate prime-gap moment information, it cannot. There is a full-width matched control in which the first-layer gap burden saturates exactly the `RE-091` host/moment exponent while the depth-`r` anchored gap requirement tends to zero and is therefore automatically satisfied by every sufficiently large ordinary-prime gap. For the two depths relevant to the current frontier, `r=2,3`, this control is also compatible with the currently anchored large-gap theorems: the forced first-layer gaps stay below the `x^0.45` threshold where Järviniemi's stronger aggregate estimate begins.
+At the level of gap magnitudes and separate prime-gap moment information, it cannot. There is a full-width matched control in which the first-layer gap burden saturates exactly the `RE-091` host/moment exponent while the depth-`r` anchored gap requirement tends to zero and is therefore automatically satisfied by every sufficiently large ordinary-prime gap. For the two depths relevant to the current frontier, `r=2,3`, this control is also compatible with the currently anchored large-gap theorems: throughout its admissible range the required first-layer gaps stay below the `x^0.45` threshold where Järviniemi's stronger aggregate estimate begins.
 
 The result is an information-class sharpness statement, not an existence theorem for a genuine CA fan. It shows that adding the **second anchored-gap magnitude on the same cell** to the scalar package used by `RE-091` does not buy a better exponent. Any improvement must use information discarded by that package: the exact cross-scale incidence `eta_1(p)` versus `eta_r(q)`, which host primes actually occur as adjacent support boundaries, rightmost-maximizer compatibility, or another correlation between the two prime-gap locations.
 
@@ -45,7 +45,7 @@ a_X:=X^{-b}.
 \tag{5}
 \]
 
-This is compatible with the uniform small-height law because `a_X log X -> 0`, and it is exactly the polynomial amplitude scale used in the compact-fan lower-bound arguments.
+This is compatible with the uniform small-height law because `a_X log X -> 0`, and it matches the polynomial amplitude floor used in the compact-fan elimination arguments.
 
 For a first-layer boundary prime `p\asymp X`, `RE-086` forces the chamber-facing ordinary gap to satisfy
 
@@ -63,22 +63,22 @@ d_r
 \tag{7}
 \]
 
-Substituting (2)--(5) gives the two radically different scales
+For the matched control, choose the first-layer gap at the smallest admissible order in (6). Equations (2)--(5) then give
 
 \[
 \boxed{
-d_1
+d_1^{\rm ctrl}
 \asymp_r
-X^{1-b-1/r}(\log X)^2,
+X^{1-b-1/r}(\log X)^2.
 }
 \tag{8}
 \]
 
-while
+The lower bound required by the host-layer inequality (7) is only
 
 \[
 \boxed{
-d_r
+d_r^{\rm req}
 \asymp_r
 X^{-b}(\log X)^2
 \longrightarrow0.
@@ -86,15 +86,15 @@ X^{-b}(\log X)^2
 \tag{9}
 \]
 
-Thus, in the equal-width full-host regime, the anchored gap at the **host layer itself is asymptotically slack**. Since every ordinary prime gap beyond `2` has length at least `2`, (7) eventually imposes no restriction at all on which depth-`r` host primes may be paired with the cells. The only nontrivial scalar gap burden is the first-layer one in (8).
+Thus, in the equal-width full-host regime, the anchored gap at the **host layer itself is asymptotically slack**. Every gap between sufficiently large consecutive primes has length at least `2`, so (7) eventually imposes no additional restriction on which depth-`r` host primes may be paired with the cells. The only nontrivial scalar gap burden is the first-layer one in (8).
 
 ## 1. The second-moment cost reproduces the `RE-091` exponent exactly
 
-The forced first-layer gaps in (8) would contribute square mass
+The control gaps in (8) contribute square mass
 
 \[
 \begin{aligned}
-N_r(X)d_1^2
+N_r(X)(d_1^{\rm ctrl})^2
 &\asymp_r
 \frac{X^{1/r}}{\log X}
 X^{2-2b-2/r}(\log X)^4\\
@@ -114,7 +114,7 @@ Stadlmann's load-bearing theorem used in `RE-091` is
 \tag{11}
 \]
 
-Consequently the matched control is compatible, at exponent level including all logarithms inside `X^epsilon`, precisely when
+Consequently the matched control is compatible, at exponent level with all fixed logarithmic powers absorbed into `X^epsilon`, precisely when
 
 \[
 2-2b-\frac1r
@@ -139,7 +139,7 @@ This is exactly the complement of the sufficient elimination frontier in `RE-091
 The control also respects the first-moment geometry. Its total exceptional first-layer gap length is
 
 \[
-N_r(X)d_1
+N_r(X)d_1^{\rm ctrl}
 \asymp_r
 X^{1-b}\log X=o(X),
 \tag{14}
@@ -147,7 +147,7 @@ X^{1-b}\log X=o(X),
 
 for every fixed `b>0`. Hence these exceptional gaps occupy only a vanishing fraction of a bounded-ratio shell and can be embedded in a PNT-scale abstract prime mesh while the remaining gaps carry the ordinary `log X` average spacing. Likewise the total physical width of the corresponding support chambers is `O(X^{1-b}\log X)=o(X)`, so disjoint placement is not itself an obstruction.
 
-At the host scale `Q\asymp_r X^{1/r}`, equation (9) is eventually below the deterministic lower bound `2` for gaps between odd primes. Thus enforcing the paired host-layer inequality contributes no selected square-mass burden beyond the ordinary prime sequence itself; Stadlmann's theorem at scale `Q` remains automatically compatible.
+At the host scale `Q\asymp_r X^{1/r}`, equation (9) is eventually below the deterministic lower bound `2` for gaps between odd primes. Thus enforcing the paired host-layer inequality contributes no extra selected-gap condition beyond the ordinary prime sequence itself; the complete second-moment theorem at scale `Q` remains compatible automatically.
 
 This is the promised strengthening of `RE-087`. That finding showed that **marginal** anchored-gap capacities diverge when each layer is summed separately. Here the two anchored inequalities are imposed **cell by cell on the same abstract mixed `1/r` family**, together with the same second-moment budget that powers `RE-091`. The paired magnitude constraints still admit fixed total threshold width.
 
@@ -164,7 +164,7 @@ b_3^*=\frac{131}{600}.
 \tag{15}
 \]
 
-At the critical control scale, the forced first-layer gaps have exponent
+At the critical control scale, the required first-layer gaps have exponent
 
 \[
 1-b_3^*-\frac13
@@ -177,7 +177,7 @@ This provides a useful prior-art calibration. Järviniemi's stronger aggregate l
 
 \[
 \frac{269}{600}
-=rac{270}{600}-\frac1{600}
+=\frac{270}{600}-\frac1{600}
 <0.45.
 \tag{17}
 \]
@@ -197,7 +197,7 @@ Hence the `469/600` frontier of `RE-091` is not merely the output of one conveni
 \tag{18}
 \]
 
-it is the sharp exponent boundary. Improving it requires a relation between **which** depth-3 host `q` occurs and **which** first-layer gap at scale `X` contains its event image, not another separate estimate for `d_3`.
+it is the sharp exponent boundary. Improving it requires a relation between **which** depth-3 host `q` occurs and **which** first-layer gap at scale `X` contains its event image, not another separate estimate for the size of `d_3`.
 
 ## 3. Depth two: the surviving mixed `1/2` channel has a `173/200` scalar barrier
 
@@ -212,10 +212,10 @@ b_2^*=\frac{27}{200}=0.135.
 \tag{19}
 \]
 
-At the critical scale the forced first-layer gaps have size
+At the critical scale the required first-layer gaps have size
 
 \[
-d_1
+d_1^{\rm ctrl}
 =X^{73/200+o(1)},
 \tag{20}
 \]
@@ -223,7 +223,7 @@ d_1
 while the depth-2 anchored lower bound is only
 
 \[
-d_2
+d_2^{\rm req}
 =X^{-27/200+o(1)}.
 \tag{21}
 \]
@@ -239,7 +239,7 @@ Consequently, in the whole regime
 \tag{22}
 \]
 
-`RE-091` can force one-sided first-layer boundary contact on almost all threshold mass, but **the paired first/depth-2 gap magnitudes plus current separate moment bounds cannot force the opposite boundary to be first-layer as well**. Every admissible compact fan interval has `b>1-Theta>=27/200` at the lower end of this regime, exactly where the matched control is available.
+`RE-091` can force one-sided first-layer boundary contact on almost all threshold mass, but **the paired first/depth-2 gap magnitudes plus current separate moment bounds cannot force the opposite boundary to be first-layer as well**. Every admissible compact fan interval lies above `1-Theta>=27/200` at the lower end of this regime, exactly where the matched control remains compatible with the scalar inputs.
 
 For `Theta>173/200`, the general `RE-091` host/moment calculation with `r=2` can already be run with `b<27/200`; depth-2 boundaries then become threshold-negligible. That positive extreme-frontier corollary is immediate from the existing exponent law. The new information here is why the same scalar route has no exponent room before that point, even after the two gap requirements are paired cell by cell.
 
