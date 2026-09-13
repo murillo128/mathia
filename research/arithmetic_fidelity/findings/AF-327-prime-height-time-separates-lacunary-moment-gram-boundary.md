@@ -13,8 +13,13 @@ P=\{p_1,\ldots,p_8\},\qquad p_j\le H,
 be eight distinct rational primes, let `t\ne0`, and write
 
 \[
-z_j=p_j^{-it},\qquad
-m_k=\frac18\sum_{j=1}^8z_j^k.
+z_j=p_j^{-it},
+\qquad
+F_P(u)=\sum_{j=1}^8p_j^{-iu},
+\qquad
+s_k=\sum_{j=1}^8z_j^k=F_P(kt),
+\qquad
+m_k=\frac{s_k}{8}.
 \tag{1}
 \]
 
@@ -23,7 +28,7 @@ Consider the four-feature moment Gram matrix indexed by the lacunary monomials `
 \[
 G_{0124}(Z)
 =
-\left(m_{b-a}\right)_{a,b\in\{0,1,2,4\}},
+\left(m_{a-b}\right)_{a,b\in\{0,1,2,4\}},
 \qquad m_{-k}=\overline{m_k},
 \tag{2}
 \]
@@ -73,7 +78,7 @@ put
 x=|s_2|,\qquad y=|s_3|.
 \]
 
-AF-326's moment matrix is exactly `G_{0124}` after a harmless common rotation, and direct rescaling gives
+AF-326's moment matrix is the same `G_{0124}` up to the harmless transpose convention for moments. After a common rotation and direct rescaling,
 
 \[
 4096D_{0124}
@@ -382,9 +387,9 @@ G_{0124}
 =
 \begin{pmatrix}
 1&0&r&4r^2\\
-0&1&0&m_3\\
+0&1&0&\overline{m_3}\\
 r&0&1&r\\
-4r^2&\overline{m_3}&r&1
+4r^2&m_3&r&1
 \end{pmatrix}.
 \tag{32}
 \]
