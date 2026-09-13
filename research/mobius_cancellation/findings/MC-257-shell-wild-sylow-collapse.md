@@ -52,7 +52,7 @@ G/H\text{ is a quotient of }(\mathbb Z/R\mathbb Z)^\times.
 
 Equivalently, every character in the annihilator `H^perp` modulo `q` is trivial on `U` and therefore factors through the squarefree modulus `R`; its primitive conductor divides `R` rather than requiring a square factor from any shell prime.
 
-This closes one of the explicit possibilities left by `MC-256`: the order-`r` wild direction of `(Z/r^2 Z)^times` does **not** survive the actual moving shell. Any remaining blind arithmetic is already contained in the tame squarefree shell quotient.
+This closes one of the explicit possibilities left by `MC-256`: the order-`r` wild direction of \((\mathbb Z/r^2\mathbb Z)^\times\) does **not** survive the actual moving shell. Any remaining blind arithmetic is already contained in the tame squarefree shell quotient.
 
 ## 1. Fermat quotients detect the local wild component
 
@@ -109,7 +109,7 @@ A_k=\left\{kn:\ \left\lfloor\frac{(k-1)m}{k}\right\rfloor<n\le m\right\}.
 \tag{7}
 \]
 
-Here both `k` and `n` are at most `m`, hence both lie in `K_r`; multiplicativity gives `A_k subseteq K_r`. Moreover
+Here both `k` and `n` are at most `m`, hence both lie in `K_r`; multiplicativity gives \(A_k\subseteq K_r\). Moreover
 
 \[
 A_k\subset ((k-1)m,km],
@@ -184,7 +184,7 @@ Doing this independently for every `r in S` proves `(1)`.
 
 ## 4. The blind quotient descends exactly to the squarefree shell
 
-Since `U=ker pi subseteq H`, one has
+Since \(U=\ker\pi\subseteq H\), one has
 
 \[
 H=\pi^{-1}(\pi(H)).
@@ -223,7 +223,7 @@ Therefore **no novelty is claimed** for Fermat quotients, their kernels, least n
 - The direct proof of `(6)` uses the shell relation `r<=2y`; outside this geometry, use of the classical polylogarithmic least-nonvanishing theorem has a different quantitative interface.
 - Any claimed analytic gain from the conductor descent `q -> R` must be re-derived against the exact character-sum theorem being used. The group-theoretic descent alone supplies no cancellation.
 
-The decisive audit test is algebraic and finite: for any finite shell, compute `H` inside `(Z/qZ)^times` and verify that each generator `1+r mod r^2` of the local wild kernel is contained in the projection of `H`. The proof above establishes this exactly, so a counterexample would identify an arithmetic or CRT error rather than a statistical failure.
+The decisive audit test is algebraic and finite: for any finite shell, compute `H` inside \((\mathbb Z/q\mathbb Z)^\times\) and, for each `r in S`, verify that the **global CRT element** whose `r`-component is `1+r mod r^2` and whose `s`-component is `1 mod s^2` for every `s != r` belongs to `H`. The proof above establishes this exactly, so a counterexample would identify an arithmetic or CRT error rather than a statistical failure.
 
 ## Updated frontier
 
