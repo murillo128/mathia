@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual_exploration-one-cancellation-weighted-schur-kernel
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -84,3 +84,11 @@ The route succeeds if these pieces give `S_(y,H)=o(Q_y/sqrt(H))` throughout the 
 The weighted Schur inequality above is an elementary exact consequence of the persisted `VIS-209` kernel and standard matrix analysis. The asymptotic bound on `S_(y,H)` is **not established** here, and this clue does not claim that Brun--Titchmarsh, the prime number theorem, or any other existing short-interval result is already sufficient uniformly in the required regime.
 
 The bulk `Q_y/H` scale is a heuristic orientation, not evidence. No conclusion about `||Psi||_op`, effective rank, one-cancellation decay, or an improved finite-start horizon is being promoted to a finding. In particular, no finite six-anchor support model or diagonal Gram claim from the withdrawn `VIS-210` is used.
+
+## Research disposition
+Outcome: supported
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-211-brun-titchmarsh-schur-closes-one-cancellation]]
+
+`VIS-211` proves the sufficient Schur target `S_(y,H)=o(Q_y/sqrt(H))` throughout every diverging strictly subcritical scale and therefore closes the one-cancellation Gram frontier in the long-start mean-square regime. The sharper heuristic `S_(y,H)<<Q_y/H`, worst-start uniformity, and higher-cancellation shells remain separate questions.
