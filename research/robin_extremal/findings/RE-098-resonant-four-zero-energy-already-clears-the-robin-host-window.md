@@ -23,7 +23,7 @@ This finding evaluates that part exactly enough to locate the real obstruction. 
 
 \[
 \boxed{
-\vartheta>artheta_{\rm res}
+\vartheta>\vartheta_{\rm res}
 :=\frac{69-16\sqrt3}{121}
 =0.3412164221\ldots,
 }
