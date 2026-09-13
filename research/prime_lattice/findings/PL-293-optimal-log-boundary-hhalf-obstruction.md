@@ -152,8 +152,7 @@ For a compactly supported state `u`, its translation autocorrelation is
 
 \[
 F_u(h)=\langle S_hu,u\rangle
-=\frac1{2\pi}\int_{\mathbb R}
-e^{ih\xi}|\widehat{Eu}(\xi)|^2\,d\xi.
+=\frac1{2\pi}\int_{\mathbb R} e^{ih\xi}|\widehat{Eu}(\xi)|^2\,d\xi.
 \]
 
 A standard dominated-convergence differentiation requires
