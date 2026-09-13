@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-four-form-average-local-factor
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -90,6 +90,11 @@ Kill this route if the corrected theorem is not uniform in the required coeffici
 
 ## Evidence boundary
 
-No averaged four-form singular-series estimate for the Mathia fibers is established here, and the Henriot theorem has **not yet been checked line by line against this coefficient-dependent specialization and its erratum**. The displayed improved crowding bound and `sqrt(log y)` horizon are conditional consequences of the proposed average estimate, not findings.
+The clue itself is not evidence. Its two-stage test has now been discharged in `VIS-201`: the corrected non-monic discriminant support is carried by fixed primes together with primes dividing `d_0`, its multiplicative correction has bounded first mean, and the resulting weighted average removes the pointwise `(log log y)^4` factor from the `VIS-200` sieve term. The durable claim, hypotheses, prior-art audit, and remaining boundaries are recorded in that finding.
 
-The observation only isolates a concrete route that appears compatible with existing discriminant-uniform multiplicative polynomial-average machinery. It makes no novelty claim for Nair--Tenenbaum bounds, Henriot's discriminant uniformity, Gallagher singular-series averaging, Selberg sieve, or average orders of elementary multiplicative products.
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-201-averaged-local-factor-mass-removes-loglog-loss.md]]

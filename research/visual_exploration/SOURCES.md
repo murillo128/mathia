@@ -124,3 +124,9 @@ This file records durable external literature dependencies used to support or de
 ## Almost-periodic value distributions
 
 - Børge Jessen and Aurel Wintner, **Distribution Functions and the Riemann Zeta Function**, *Transactions of the American Mathematical Society* 38:1 (1935), 48–88. DOI: `10.1090/S0002-9947-1935-1501802-5`. Role: classical prior-art boundary for `VIS-175`; develops infinite-convolution and Fourier-transform methods for distributions arising from sums of independent variables and applies them to almost-periodic functions and the Riemann zeta function. `VIS-175` claims no new general value-distribution theorem; it gives an elementary sufficient growing-cutoff/window condition for Mathia's square-summable weighted prime-phase control.
+
+## Discriminant-uniform polynomial-value averages
+
+- Kevin Henriot, **Nair--Tenenbaum bounds uniform with respect to the discriminant**, *Mathematical Proceedings of the Cambridge Philosophical Society* 152:3 (2012), 405--424. DOI: `10.1017/S0305004111000752`; arXiv `1102.1643`. Role: decisive prior-art input for `VIS-201`; Theorem 5 and Corollary 2 give short-interval upper bounds for multiplicative functions on polynomial values with constants uniform in the polynomial discriminant and an explicit exceptional-prime factor. `VIS-201` specializes this established theorem to the three primitive affine factors carried by the `VIS-197` conductor.
+
+- Kevin Henriot, **Nair--Tenenbaum uniform with respect to the discriminant--ERRATUM**, *Mathematical Proceedings of the Cambridge Philosophical Society* 157:2 (2014), 375--377. DOI: `10.1017/S0305004114000280`. Role: load-bearing correction for `VIS-201`; the upper bounds remain valid, but for non-monic polynomial products Corollaries 1--2 must use exceptional support `a_*D_*` rather than `D_*` alone. `VIS-201` computes this corrected support explicitly before taking the first-gap average.
