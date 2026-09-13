@@ -50,6 +50,7 @@ Evenness of the principal state therefore forces the exact endpoint identity
 \left(\frac{u_s}{\delta^s}\Big|_{x=\pm1}\right)^2
 =s\lambda_s(\Omega).
 }
+\]
 
 Feulefack--Jarohs--Weth prove `lambda_s=1+s lambda_L+o(s)` and convergence of the normalized fractional principal eigenfunction to the logarithmic-Laplacian principal eigenfunction as `s->0+`. Hence the fractional normal trace has the forced scale
 
