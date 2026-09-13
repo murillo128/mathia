@@ -37,9 +37,9 @@ For fixed harmless shell constants `0<c<C`, define the two-sided bad-host set
 :=
 \left\{
 q\in\mathbb P:\ cX^{1/2}\le q\le CX^{1/2},\
-(x_q-H,x_q)\cap\mathbb P=\varnothing
+(x_q-2H,x_q)\cap\mathbb P=\varnothing
 \text{ or }
-(x_q,x_q+H)\cap\mathbb P=\varnothing
+(x_q,x_q+2H)\cap\mathbb P=\varnothing
 \right\}.
 \tag{1}
 \]
@@ -198,7 +198,7 @@ If
 \tag{14}
 \]
 
-then for sufficiently large `X`, (13) implies that the appropriate one-sided interval of length `H` adjacent to `x_q` is contained in `Q_C`. Hence
+then for sufficiently large `X`, (13) implies that the appropriate one-sided interval of length `2H` adjacent to `x_q` is contained in `Q_C`. Hence
 
 \[
 \boxed{
@@ -289,7 +289,7 @@ Suppose an ambient short-interval result at length `H=X^vartheta` gives exceptio
 \tag{21}
 \]
 
-A bad host from (1) supplies, after shrinking constants harmlessly, an interval of `\gg H` nearby start points whose `H`-interval is prime-free and hence PNT-exceptional. Meanwhile `RE-093` gives, for distinct integer hosts,
+A bad host from (1) has a prime-free one-sided interval of length `2H`, so it supplies an interval of `\gg H` nearby start points whose `H`-interval is prime-free. As in `RE-094`, prime powers contribute only `o(H)` for `vartheta<1/2`, so these starts are PNT-exceptional. Meanwhile `RE-093` gives, for distinct integer hosts,
 
 \[
 x_{q'}-x_q\gg X^{1/2}
@@ -308,16 +308,18 @@ X^{m(\vartheta)-\vartheta+o(1)}
 \tag{23}
 \]
 
-Thus ambient information can certify at best the exponent
+Thus the exponent furnished by this ambient-measure-to-host-count conversion is
 
 \[
-\kappa_{\rm amb}(\vartheta)
-\le
+\boxed{
+\bar\kappa_{\rm amb}(\vartheta)
+:=
 \min\!\left(\frac12,\,m(\vartheta)-\vartheta\right).
+}
 \tag{24}
 \]
 
-But (24) gives **no new frontier beyond the direct RE-094 packing argument**. There are two cases.
+A smaller host exponent could of course hold, but proving it would require information beyond this bare ambient exceptional-measure estimate. The exponent in (24) gives **no new frontier beyond the direct RE-094 packing argument**. There are two cases.
 
 If
 
@@ -371,7 +373,7 @@ This is an information-class statement about this particular conversion, not a c
 
 A targeted literature search checked the two nearest short-interval regimes.
 
-Danilo Bazzanella, *Prime Numbers in Intervals Starting at a Fixed Power of the Integers*, J. Aust. Math. Soc. **87** (2009), 83--99, DOI `10.1017/S1446788709000020`, studies almost-all intervals `[n^alpha,n^alpha+H]`. This is structurally much closer than an ambient theorem because the starts already lie on a sparse power sequence. However, its main theorem is an almost-all statement over integer `n`; it does not provide the required fixed polynomial saving for the **prime-indexed**, deformed samples `x_q=eta_1^{-1}(eta_2(q))`, nor does it condition on `q` being prime.
+Danilo Bazzanella, *Prime Numbers in Intervals Starting at a Fixed Power of the Integers*, J. Aust. Math. Soc. **87** (2009), 83--99, DOI `10.1017/S1446788709000020`, studies almost-all intervals `[n^alpha,n^alpha+H]`. This is structurally much closer than an ambient theorem because the starts already lie on a sparse power sequence. However, its stated main theorem is an almost-all statement over integer `n`; as stated, it does not furnish the fixed polynomial `kappa<1/2` saving required at the **prime-indexed**, deformed samples `x_q=eta_1^{-1}(eta_2(q))`.
 
 The current manuscript of Runbo Li, *Primes in Almost All Short Intervals III* (2026), proves that `[n-n^(1/24+epsilon),n]` contains primes for all but `O(X(log X)^(-B))` integers `n in [X,2X]`. The interval exponent is far shorter than anything needed here, but the exceptional set is still `X^(1+o(1))` in ambient power-law terms. Such a theorem alone can contain every `X^(1/2+o(1))` CA depth-two sample and therefore gives no estimate of the form (8).
 
