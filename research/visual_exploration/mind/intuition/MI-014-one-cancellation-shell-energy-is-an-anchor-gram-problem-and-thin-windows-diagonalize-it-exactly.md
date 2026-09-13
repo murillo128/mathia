@@ -1,15 +1,21 @@
-# MI-014 — One-cancellation shell energy is an anchor Gram problem, and thin windows diagonalize it exactly
+# MI-014 — One-cancellation shell energy is a coupled positive anchor-Gram problem
 
-**Evidence level:** proved by VIS-204 and VIS-209--VIS-210 for the autocorrelation-taper one-cancellation shell family. No uniform diagonal-energy decay or theorem outside the stated thin-window cone is claimed.
+**Evidence level:** supported by VIS-204 and [VIS-209](../../findings/VIS-209-one-cancellation-shell-anchor-gram-kernel.md). The former VIS-210 thin-window diagonalization is withdrawn and supplies no current evidence. No uniform spectral-concentration estimate is claimed.
 
-VIS-208 closes the entire noncancelling determinant band in start-averaged energy under explicit window conditions. VIS-209 then shows that the first surviving layer is not an arbitrary high-multiplicity shell family. With `Psi_(u,t)=b_(log(u/t))` and `G=Psi^2`, every one-cancellation shell is an off-diagonal entry of one PSD Gram kernel, `tr G=R`, and
+After the noncancelling determinant band is removed in start-averaged energy, VIS-209 identifies the first surviving one-cancellation layer with one positive semidefinite anchor Gram kernel. If `G` is the Gram matrix of the prime-anchor profiles, then
 
 `E_1 = 4[tr(G^2)-sum_u G_(u,u)^2]`.
 
-That reduction initially makes spectral spreading of the anchor profiles the natural target. VIS-210 shows that even this can be too coarse in the thin-window regime. After the exact six-anchor reduction, if `L_tri>5R-5` then the anchor supports of distinct shell indices are disjoint, so the fluctuation Gram is **exactly diagonal**. In the fringe `L_tri>4R-3`, the only possible cross-shell coupling is the explicit `6/5` resonance `L_tri=5s-6r+1`.
+This is the durable structural reduction. Raw shell multiplicity is not the correct object; the endpoint is the off-diagonal concentration of the actual prime-ratio kernel. Any useful bound must retain the real anchor couplings rather than replace them by an unsupported finite-support picture.
 
-The endpoint therefore changes again. Inside the collision-free cone, there is no cross-shell spectral-spreading problem at all: `||G||_op=max_r G_rr`, and the remaining theorem is a uniform bound or asymptotic for the diagonal shell energies `G_rr=sum_c alpha_r(c)^2`. Near the cone boundary one must add only the explicitly parameterized sparse resonance fringe, not a generic dense covariance estimate.
+The previously stored claim that a thin-window cone makes distinct shell supports exactly disjoint depended on VIS-210. That finding has been withdrawn, so exact diagonalization, the six-anchor support model and its claimed `6/5` resonance are no longer part of the current mind. They cannot be used to reduce `||G||_op` to its largest diagonal entry.
 
-This gives a useful hierarchy for the one-cancellation layer: first expose the PSD Gram structure; then determine whether support geometry diagonalizes it; only after those exact reductions estimate the surviving diagonal weights or resonance amplitudes. Bounding shell multiplicities or a full generic Gram norm before this support analysis pays for interactions that may be identically absent.
+The current exact kernel remains sufficiently structured to support narrower questions. For the autocorrelation taper, the positive symmetric anchor matrix has entries of the form
 
-**Boundary.** VIS-210 does not bound the diagonal energies, and outside `L_tri>4R-3` additional anchor families can collide. Neither VIS-209 nor VIS-210 addresses higher-cancellation shells or upgrades start-averaged control to uniform-in-start control.
+`Psi_(u,t)=Q_y^(-1)(ut)^(-alpha) rho(H log(u/t))`.
+
+VIS-209 makes its operator concentration the relevant quantity. A proposed weighted-Schur reduction in the local clue inbox gives one possible route, but its required uniform prime-window estimate is not established and therefore is not promoted here.
+
+The live theorem is to control the coupled anchor kernel itself—by a valid Schur estimate, spectral spreading, sparse-window analysis, or a counterexample showing concentration at a particular anchor scale—while preserving the actual prime-ratio geometry and the start-averaged sinc weighting already proved upstream.
+
+**Boundary.** This note records the surviving exact Gram reduction after the VIS-210 withdrawal. It does not assert the proposed Schur asymptotic, effective rank, diagonal dominance, or uniform-in-start control.

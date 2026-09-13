@@ -2,20 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Separate positive-order transport from the source-specific ground-sign theorem
+## Pass the fixed-order physical-space shift derivative to the zero-order completed-Weil branch
 
-**Linked intuition:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`.
+**Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`, `MI-017-fixed-order-shift-differentiability-survives-without-uniform-half-sobolev-control`.
 
-PL-280--PL-292 give the aperture ledger, a conditional isolated ground state, generic regularity ceilings and all-log subpower transport for actual source-static eigenstates. PL-293 shows that the universal zero-exterior logarithmic-Laplacian boundary channel blocks `H^(1/2)` and above when its natural `ell(delta)^(1/2)` amplitude survives. PL-294 ends ordinary Beurling--Deny positivity before the first prime translation, and PL-295 shows that subcritical Sobolev continuity does not protect sign while eventual positivity strong enough to help already contains the missing sign theorem.
+PL-280--PL-296 separate source-static all-log transport, the universal zero-exterior boundary obstruction, the source-specific sign problem and the failure of an explicit Volterra shortcut. PL-297--PL-298 now sharpen the regularity route in a different direction.
 
-The **regularity** route remains useful only for transport: prove source-specific suppression of the universal boundary channel strongly enough to gain some `H^s`, `0<s<1/2`, or derive a non-absolute translation identity by another method. The **sign** route must use additional arithmetic eigen-equation structure rather than continuity, parity, simplicity, a gap, or delayed positivity.
+PL-297 proves that the renormalized fractional Hadamard boundary stress can converge to a finite nonzero value while the zero extensions diverge in `H^(1/2)`. Thus the boundary stress cannot be used as a surrogate for the critical Fourier moment. PL-298 nevertheless proves that every fixed positive-order fractional state has enough physical-space regularity, `W^(1,1) cap L^infty`, to make its translation autocorrelation `C^1`; new prime-power shifts activate with both value and first derivative zero.
 
-## Do not use the Volterra ball formula to bypass the boundary obstruction
+The live derivative theorem is therefore a **small-order uniformization problem**, not a fixed-`s` differentiability problem. Establish the required boundary/state regularity for the actual regularized completed-Weil simple eigenbranch and pass the physical-space prime-shift derivative plus completion/remainder terms through `s->0+` without assuming a uniform `H^(1/2)` moment. Identify exactly which weaker compactness or weighted boundary quantity is sufficient.
 
-PL-296 shows that a recent explicit Volterra candidate for the zero-exterior logarithmic-Laplacian torsion problem has boundary order `ell(delta)`, incompatible on sufficiently small balls with the sharp two-sided `ell(delta)^(1/2)` torsion theorem under the same operator normalization. Its semigroup derivation also mixes the indefinite whole-space multiplier with the restricted Dirichlet inverse.
+## Keep the source-specific sign theorem separate
 
-That explicit inverse route is therefore closed as a shortcut around PL-293. A useful boundary improvement must come from the **actual localized-Weil source/eigen-equation**, not from replacing the audited zero-exterior boundary law with the Volterra profile.
+Fixed-order differentiability does not restore positivity. PL-294--PL-295 still show that ordinary Beurling--Deny positivity ends before the first prime translation and that ambient `H^log`/subcritical Sobolev closeness does not protect the sign of the selected ground state.
 
-## Keep ambient topology, translation regularity, order structure and operator model separate
+The sign gate therefore continues to require an arithmetic mechanism from the actual rational-prime eigen-equation: a boundary-weighted lower law, source-specific oscillation/maximum principle, absolute-value defect identity or another order structure unavailable to matched generic operators. The fractional Hadamard route can improve aperture differentiation without solving this independent gate.
 
-`H^log`/subcritical Sobolev control measures closeness, not cone membership. A spectral gap measures isolation, not order. Failure of Beurling--Deny positivity does not imply sign change, and an inconsistent explicit inverse formula is not evidence that the generic boundary scale can be improved. Future arguments should state exactly which resource they buy and against which operator realization.
+## Keep boundary stress, Fourier moment, physical-space variation and order structure distinct
+
+PL-297 supplies an explicit family where stress is finite while the half-Sobolev moment diverges. PL-298 supplies `C^1` shift response through a different `L^infty x W^(1,1)` pairing. Neither controls cone membership. Future arguments should state which of these resources is being used and prove the corresponding uniformity in the actual operator model rather than substitute one for another.

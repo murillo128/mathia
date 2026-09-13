@@ -2,20 +2,26 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive a source-native signed completion before final positive quadratic readout
+## Turn an irreducibly signed source-native remainder into the exact Weil quadratic target
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`, `MI-014-nontrivial-zero-modes-screen-the-gamma-tangent-layer`, `MI-015-nonlinear-postprocessing-after-scalarization-cannot-create-a-new-distribution`, `MI-016-exact-weil-square-targets-linearize-while-positive-additive-preservation-cannot-absorb-the-critical-source`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`, `MI-014-nontrivial-zero-modes-screen-the-gamma-tangent-layer`, `MI-015-nonlinear-postprocessing-after-scalarization-cannot-create-a-new-distribution`, `MI-016-exact-weil-square-targets-linearize-while-positive-additive-preservation-cannot-absorb-the-critical-source`, `MI-017-source-native-pole-cancellation-is-rh-complete-but-irreducibly-signed`.
 
-WP-267--WP-286 leave a source-native critical arithmetic sector but close fixed finite-state, positive Stieltjes, fixed compact-memory and broad positive-memory scalar completions. WP-287 closes arbitrary nonlinear post-processing of the scalar Arthur-height profile whenever the output is still a linear Weil-type distribution.
+WP-287--WP-289 close arbitrary nonlinear post-processing of a scalar profile, exact cone-only nonlinear target escapes, and monotone positive preservation of the non-tempered critical Mangoldt covariance.
 
-WP-288 closes the apparent exact cone-only target escape. On the full Weil test class, any continuous degree-two, parallelogram, translation-invariant scalar functional polarizes to a unique translation-invariant Hermitian distribution; positivity makes it positive definite, and exact agreement with Weil convolution squares forces that distribution to be the Weil distribution itself. Exact cone matching therefore does not create a larger nonlinear target category.
+WP-290 now supplies an explicit source-native signed transformation. The integer-dilation coboundary
 
-WP-289 closes the complementary monotone source-preservation route. The critical Mangoldt covariance measure is positive but non-tempered, so no continuous positive translation-invariant quadratic form can dominate every finite critical covariance while preserving those blocks as positive summands. A positive archimedean/global add-on cannot absorb the source unchanged into a tempered Weil candidate.
+`Delta_q mu = mu - sqrt(q) S_(log q) mu`
 
-The live completion problem is consequently upstream and signed. The arithmetic block must be transformed **before** final positivity is read, through finite--archimedean interference, quotient/compression, nonlocal operator coupling, a cohomological/intersection pairing, or another source-forced operation that removes the non-tempered positive mass without discarding the arithmetic information. The resulting object must then independently satisfy the exact quadratic and translation identities that WP-288 shows are forced by the Weil target.
+kills the zeta-pole tangent exactly and uses only the multiplicative source semigroup. But `Delta_q mu` is tempered if and only if RH, and both of its Jordan parts remain individually non-tempered. The useful cancellation cannot be separated into positive channels.
 
-## Treat source transformation and target quadraticity as separate hard gates
+The live construction problem is therefore sharper. Find a globally admissible signed/non-monotone coupling—possibly using this coboundary only as a diagnostic—that proves the needed growth/category descent without assuming RH, and then show that the final readout obeys the exact degree-two, parallelogram and translation identities that force the Weil distribution. A source-native pole killer alone is not progress if its admissibility is already RH-equivalent.
 
-Arithmetic provenance is not enough, and positivity is not enough. WP-289 says monotone positive preservation of the critical source is too large; WP-288 says a purported exact cone functional is not free to remain an arbitrary nonlinear scalar statistic.
+## Treat cancellation, admissibility and final positivity as three distinct gates
 
-A future candidate must therefore answer two questions independently: what signed or non-monotone source-native operation turns the finite arithmetic cylinders into a globally admissible object, and why does the final readout obey degree-two homogeneity, the parallelogram law, translation invariance and the exact Weil identification? A construction that solves only one gate has not reached Weil positivity.
+WP-290 shows that source-native cancellation can remove the leading pole while leaving the full arithmetic difficulty in the temperedness of the remainder. WP-289 shows that preserving positive source pieces independently is too large. WP-288 shows that an exact final square functional has no freedom to remain an arbitrary nonlinear statistic.
+
+A future candidate must therefore answer three questions separately: what signed source transformation is mathematically forced; why the transformed object belongs to the category required by the construction without assuming RH; and why the final positive quadratic form is exactly the Weil form. The first gate is now exemplified explicitly, not merely requested abstractly.
+
+## Use matched nonarithmetic controls to identify what the source transformation actually buys
+
+The same integer-dilation coboundary applied to the matched counting half-density is tempered unconditionally. This separates generic pole removal from arithmetic zero information. Any proposed source transformation should be tested against such matched controls: if it succeeds equally there, its value is architectural; the RH-sensitive content must be located in the residual arithmetic category descent or coupling, not attributed to the transformation itself.

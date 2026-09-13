@@ -1,23 +1,27 @@
-# MI-015 — Intrinsic-angle packets must be normalized by completed diagonal energy
+# MI-015 — Completed normalization preserves packet mass; the live gate is DtN square-root locality
 
-**Evidence level:** exact finite-section block algebra from [PF-329](../../findings/PF-329-final-diagonal-normalization-turns-seam-pulled-packets-into-total-energy-unit-traces.md). No Hilbert--Schmidt endpoint estimate or packet-survival theorem is claimed.
+**Evidence level:** exact finite-section algebra from [PF-329](../../findings/PF-329-final-diagonal-normalization-turns-seam-pulled-packets-into-total-energy-unit-traces.md), [PF-330](../../findings/PF-330-completed-low-normalization-rotates-packet-frame-instead-of-damping-total-energy-mass.md) and [PF-331](../../findings/PF-331-completed-low-polar-factor-has-uniform-gap-and-cannot-amplify-locality-defects.md). No endpoint Hilbert--Schmidt estimate or uniform locality theorem is claimed.
 
-Let the raw completed boundary form be `M_raw=Q+Lambda`, where the positive seam form `Q` respects the physical `L/H` split. After seam normalization, `M=Q^(-1/2) M_raw Q^(-1/2)` has diagonal blocks `A,C` and cross block `B`. PF-329 proves that the intrinsic angles formed before and after this block-diagonal congruence are unitarily equivalent.
+Let `A_0=Q_L+Lambda_LL` be the raw completed low energy, `A=Q_L^(-1/2)A_0Q_L^(-1/2)`, and let `psi_t` be the PF-325 unit translation frame in the final normalized low angle coordinate. PF-329 identifies the raw trace entering canonical correlation as
 
-The consequence is stronger than cancellation of a common scalar. Seam normalization is a coordinate change at the intrinsic-angle level: singular values and symmetric-ideal norms are unchanged after the corresponding unitary identification. The physical seam energy still matters inside the raw diagonal forms, but its inverse-square-root amplitude cannot by itself create a completed-angle gain.
+`g_t=Q_L^(-1/2) A^(-1/2) psi_t`.
 
-For a unit packet `psi` in the normalized low angle coordinate, the raw low boundary trace actually entering canonical correlation is
+PF-330 factors the same map through the unitary
 
-`g = Q_L^(-1/2) A^(-1/2) psi`,
+`U_L=A_0^(1/2) Q_L^(-1/2) A^(-1/2)`
 
-not the seam-only pullback `Q_L^(-1/2) psi`. The corrected trace satisfies the exact identity
+and writes `g_t=A_0^(-1/2) U_L psi_t`. The family `U_L psi_t` remains a tight frame, every `g_t` has exactly unit `A_0`-energy, and the completed direct-angle Hilbert--Schmidt mass is exactly the raw total-energy packet average. Completed diagonal normalization therefore cannot solve the endpoint by damping total packet mass; it only rotates how that mass is located relative to the physical critical window.
 
-`<g,A_0 g>=1`,
+PF-331 removes a second apparent instability. Put
 
-so it is normalized by the **completed total low energy**. Its angle response is equivalently the raw cross-correlation divided by the raw completed high energy. This is the representation in which the PF-318 endpoint must be tested.
+`F=A_0^(1/2) Q_L^(-1/2)`.
 
-This changes how packet witnesses should be interpreted. A large seam-only transverse energy may be accompanied by an equally large contribution to the low diagonal block, and the operator `A^(-1/2)` can reshape the packet rather than merely rescale it. Since `A^(-1/2)` need not commute with translations, a translated normalized packet family need not remain a translated family after pullback to raw pant coordinates.
+Then `F^*F=A=I+K_LL>=I`, so the polar factor `U_L` has a uniform singular-value gap before extraction. For every bounded spatial localizer or translation,
 
-The live positive route is therefore to prove that completed diagonal preconditioning preserves enough localization or critical cross-correlation for a positive-measure packet family. The live negative route is to show that this preconditioner suppresses or redistributes almost all critical packets strongly enough to satisfy the Hilbert--Schmidt budget. Estimating seam-only amplitudes cannot decide between these routes.
+`||[U_L,X]|| <= ||[F,X]||`.
 
-**Boundary.** The unitary-equivalence statement is finite-section linear algebra and does not make the seam geometry physically irrelevant. It supplies the correct normalization and packet variable; it neither proves nor refutes the completed direct-angle estimate.
+Since the seam normalizer commutes with the physical translations, the remaining translation defect is controlled by the concrete completed-energy square-root map `A_0^(1/2)Q_L^(-1/2)`. Polar extraction cannot amplify that defect.
+
+The endpoint has therefore become a **completed DtN square-root locality problem**. To transfer the PF-328 positive-measure packet obstruction, prove cutoff/translation commutators or quasilocal off-diagonal bounds for `F` strong enough on the critical center family. A failure of such locality would explain how total packet mass survives while its physical-window meaning is redistributed; a success transfers locality automatically to the polar unitary.
+
+**Boundary.** The statements are finite-section and do not prove a uniform limit across the arithmetic terminal regimes. Tight-frame mass conservation is not spatial localization, and the gapped polar estimate does not itself bound `[F,X]`.
