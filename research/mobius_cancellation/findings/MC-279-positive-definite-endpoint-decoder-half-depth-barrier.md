@@ -52,14 +52,14 @@ L_m(D)
 \tag{4}
 \]
 
-Consequently, suppose `\varepsilon=\varepsilon_k\to0` and
+Consequently, for **every** family with
 
 \[
-\log\frac1\varepsilon=o(k).
+\varepsilon=\varepsilon_k\to0,
 \tag{5}
 \]
 
-Then for every fixed `\delta>0`,
+and every fixed `0<\delta<1/2`,
 
 \[
 \boxed{
@@ -68,7 +68,7 @@ L_{\lfloor(1/2-\delta)k\rfloor}(D)=o(1).
 \tag{6}
 \]
 
-Thus the half-depth phenomenon found for the particular reciprocal-power decoder in `MC-278` is not a peculiarity of that rational function or its Gamma mixture. **Every positive-definite endpoint decoder that is uniformly sharp off the blind atom must place asymptotically all of its nonnegative Walsh/source mass at degrees at least `(1/2-o(1))k`.**
+Thus the half-depth phenomenon found for the particular reciprocal-power decoder in `MC-278` is not a peculiarity of that rational function or its Gamma mixture. **Every positive-definite endpoint decoder that becomes uniformly sharp off the blind atom must place asymptotically all of its nonnegative Walsh/source mass at degrees at least `(1/2-o(1))k`.**
 
 At the live blind-count scale, let
 
@@ -83,21 +83,13 @@ be the number of target rows. Any pointwise decoder intended to recover the inte
 \tag{7}
 \]
 
-From `MC-275` and `MC-278`,
+Since `C\to\infty`, this automatically gives `(5)`, with no restriction on how much smaller `\varepsilon` might be. Therefore `(6)` applies even to endpoint decoders much sharper than the minimally atom-sensitive scale. In particular the current source depth
 
 \[
-k\sim\frac y{\log y},
+m=t+1=\Theta(\log\log y)=o(k),
 \qquad
-\log C
-=\left(\frac1{\log2}+o(1)\right)
-\log y\,\log\log y,
+k\sim\frac y{\log y},
 \tag{8}
-\]
-
-so `\log(1/\varepsilon)=O(\log C)=o(k)` at the natural atom-sensitive scale. Therefore `(6)` applies. In particular the current source depth
-
-\[
-m=t+1=\Theta(\log\log y)
 \]
 
 captures `o(1)` of the positive coefficient mass of **every** decoder satisfying `(2)`, not merely of `(1+b)^{-q}`.
@@ -175,79 +167,107 @@ p_*(\rho)+\varepsilon.
 
 Combining `(11)` and `(14)` proves `(4)`. Notice that pointwise nonnegativity of `D` is not required; the absolute off-atom bound in `(2)` is enough. Positivity is needed only in Fourier space so that the low-degree mass cannot cancel inside `(11)`.
 
-The mechanism is therefore very simple: a positive Fourier measure concentrated at low source degree survives the noise operator strongly at `x_*`, but a decoder that is almost zero at every other cube point can survive only through the exponentially unlikely event that the noisy point remains exactly at `x_*`.
+The mechanism is therefore simple: positive Fourier mass concentrated at low source degree survives the noise operator strongly at `x_*`, but a decoder that is almost zero at every other cube point can survive only through the increasingly rare event that the noisy point remains exactly at `x_*`.
 
-## 2. Atom sensitivity forces the mass to the middle of the source cube
+## 2. Vanishing atom error universally forces half-depth
 
-Put
+Fix `0<\delta<1/2` and put
 
 \[
+\alpha=\frac12-\delta,
+\qquad
 L=\log(1/\varepsilon).
 \]
 
-Under `(5)`, fix `\delta>0`, set
+By `(5)`, `L\to\infty`. Write
 
 \[
-c=2+\delta,
+\rho=e^{-\beta},
 \qquad
-\rho=1-\frac{cL}{k},
+\beta
+=
+\min\left\{
+2\delta,
+\frac{L}{2\alpha k}
+\right\}.
 \tag{15}
 \]
 
-and take `k` large enough that `0<\rho<1`. Then
+For `m\le\alpha k`, the first term in `(4)` becomes
 
 \[
+\rho^{-m}
 \left(\frac{1+\rho}{2}\right)^k
-=
-\left(1-\frac{cL}{2k}\right)^k
 \le
-\exp\left(-\frac c2L\right)
-=
-\varepsilon^{c/2}.
+\exp(\beta\alpha k)
+\left(\frac{1+e^{-\beta}}2\right)^k.
 \tag{16}
 \]
 
-Also
+Using the exact identity
 
 \[
--\log\rho
-=
-\frac{cL}{k}+O\left(\frac{L^2}{k^2}\right).
+\frac{1+e^{-\beta}}2
+=e^{-\beta/2}\cosh(\beta/2),
+\]
+
+and the standard bound `\log\cosh u\le u^2/2`, `(16)` is at most
+
+\[
+\exp\left[
+-\delta\beta k+\frac{\beta^2k}{8}
+\right].
 \tag{17}
 \]
 
-For
+Because `\beta\le2\delta`,
 
 \[
-m\le(1/2-\delta)k,
+-\delta\beta+\frac{\beta^2}{8}
+\le
+-\frac34\delta\beta,
 \]
 
-substitution into `(4)` yields
+so the first term is bounded by
 
 \[
-L_m(D)
-\le
-\exp\left(
- c(1/2-\delta)L+o(L)
-\right)
-\left(e^{-L}+e^{-cL/2}\right).
+\exp\left(-\frac34\delta\beta k\right).
 \tag{18}
 \]
 
-Since
+The second term in `(4)` satisfies
 
 \[
-c(1/2-\delta)
-=(2+\delta)(1/2-\delta)
-=1-\frac32\delta-\delta^2<1,
+\rho^{-m}\varepsilon
+\le
+\exp(\beta\alpha k-L)
+\le
+\exp(-L/2),
 \tag{19}
 \]
 
-both terms in `(18)` tend to zero. This proves `(6)`.
+because the choice `(15)` ensures `\beta\alpha k\le L/2`.
 
-The constant `1/2` has a structural meaning. To make a noise cloud around `x_*` miss the endpoint with probability comparable to the atom error `\varepsilon`, one must choose noise level `1-\rho` of order `2\log(1/\varepsilon)/k`. A positive Fourier character of degree `j` is damped by approximately `\exp(-(1-\rho)j)`. Balancing these two effects places the transition at `j\sim k/2`.
+Finally,
 
-This argument does not identify the precise degree distribution of an arbitrary decoder. It proves only the one-sided statement needed by the research line: no fixed fraction of its positive source mass can live below `(1/2-\delta)k` while the decoder remains uniformly atom-sensitive.
+\[
+\beta k
+=
+\min\left\{
+2\delta k,
+\frac{L}{2\alpha}
+\right\}
+\longrightarrow\infty,
+\tag{20}
+\]
+
+since both `k` and `L` diverge. Equations `(18)`–`(20)` prove `(6)`.
+
+This proof is stronger than the first Gamma-mixture argument of `MC-278`: there is no assumption on the rate at which `\varepsilon` tends to zero. Very mild sharpening, atom-sensitive `1/C` sharpening, exponentially small error, and still smaller error all force the same asymptotic half-depth barrier as long as Fourier coefficients remain nonnegative.
+
+The constant `1/2` also has a direct harmonic meaning. Under Boolean noise, a degree-`j` character is damped by `\rho^j`, while the probability of keeping all `k` coordinates at the endpoint behaves like `((1+\rho)/2)^k`. The transition at which a positive spectral measure can support an increasingly point-like kernel occurs at the middle of the Hamming spectrum.
+
+This argument does not identify the precise degree distribution of an arbitrary decoder. It proves only the one-sided statement needed by the research line: no fixed fraction of its positive source mass can live below `(1/2-\delta)k` while the decoder becomes uniformly atom-sensitive.
 
 ## 3. `MC-278` is an instance, not the source of the barrier
 
@@ -275,7 +295,7 @@ It does **not** close arbitrary rational approximation. A rational decoder with 
 
 ## 4. Prior art and novelty boundary
 
-The analytic ingredients are classical. Ryan O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014), DOI `10.1017/CBO9781139814782`, develops the Walsh expansion and the Boolean noise operator used in `(10)`–`(12)`. Philippe Delsarte and Vladimir I. Levenshtein, *Association schemes and coding theory*, IEEE Transactions on Information Theory 44 (1998), 2477–2504, DOI `10.1109/18.720545`, is a standard coding-theory source for the Hamming association scheme and its Krawtchouk harmonic analysis. On a finite abelian group, the equivalence between positive definiteness and nonnegative Fourier coefficients is the finite Bochner theorem.
+The analytic ingredients are classical. Ryan O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014), DOI `10.1017/CBO9781139814782`, develops the Walsh expansion and Boolean noise operator used in `(10)`–`(12)`. Philippe Delsarte and Vladimir I. Levenshtein, *Association schemes and coding theory*, IEEE Transactions on Information Theory 44 (1998), 2477–2504, DOI `10.1109/18.720545`, is a standard coding-theory source for the Hamming association scheme and its Krawtchouk harmonic analysis. On a finite abelian group, the equivalence between positive definiteness and nonnegative Fourier coefficients is the finite Bochner theorem.
 
 A targeted literature search through 14 September 2026 did not locate this exact atom-sensitive inequality `(4)` or the half-depth corollary `(6)` stated for endpoint decoders on the Boolean cube. That search result is not evidence of novelty. The proof is an elementary combination of standard Fourier/noise facts, so no novelty is claimed for the abstract Boolean theorem.
 
@@ -290,7 +310,7 @@ The durable Mathia contribution is the frontier consequence: `MC-278`'s half-dep
 - **No claim about optimal signed decoders.** `(6)` is not an approximate-degree or rational-degree lower bound once coefficient signs are unrestricted.
 - **No RH or Mertens consequence.** Excluding a representation class does not supply the missing arithmetic cancellation estimate.
 
-A direct falsification would be a decoder satisfying `(2)` for which `(4)` fails, or a family satisfying `(5)` with a fixed positive fraction of nonnegative Fourier mass below `(1/2-\delta)k`. Equations `(10)`–`(19)` exclude both.
+A direct falsification would be a decoder satisfying `(2)` for which `(4)` fails, or a family satisfying `(5)` with a fixed positive fraction of nonnegative Fourier mass below `(1/2-\delta)k`. Equations `(10)`–`(20)` exclude both.
 
 ## Consequence for the research line
 
