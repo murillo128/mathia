@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Quarantine the main zeta background without spending an unbounded source certificate
+## Quarantine the main zeta background without moving prime-scale complexity into the baseline
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
@@ -10,15 +10,21 @@ AF-217--AF-220 show that the relevant observation theorem is finite-order sign r
 
 AF-339--AF-340 isolate the source-side cost. The pole-cancelled discrepancy `Lambda-1` retains the zeta-zero divisor but has ordered sign variation `Theta(P/log P)`, while uncentered `Lambda` is sign-simple and still zero-sensitive. Within the constant backgrounds `Lambda-c`, `c=1` is the unique choice cancelling the pole at `s=1`, so retuning a scalar baseline cannot buy both pole isolation and bounded sign complexity.
 
-AF-341 now shows that the cost is not an artifact of higher prime powers either. Remove every `p^k`, `k>=2`, and retain only the prime layer `a(p)=log p`. Its discarded tail has a Dirichlet transform holomorphic on `Re(s)>1/2`; after centering the prime layer by `1`, the transform still has exactly the zeta-zero poles in that half-plane while the pole at `1` cancels. Hence this prime-only centered source is already RH-complete as a right-half-plane pole discriminator, yet its ordered sign variation remains `Theta(P/log P)`. Conversely, the higher-prime-power tail is one-signed but carries none of those zero poles there.
+AF-341 shows that the cost is not an artifact of higher prime powers. Remove every `p^k`, `k>=2`, and retain only the prime layer `a(p)=log p`. Its discarded tail has a Dirichlet transform holomorphic on `Re(s)>1/2`; after centering the prime layer by `1`, the transform still has exactly the zeta-zero poles in that half-plane while the pole at `1` cancels. Hence this prime-only centered source is already RH-complete as a right-half-plane pole discriminator, yet its ordered sign variation remains `Theta(P/log P)`.
 
-Thus the first prime layer itself jointly carries the relevant zero discriminator and the leading sign-complexity burden. The remaining bridge must use genuinely more structure: a nonconstant or multiscale background, grouping or transform that makes the prime-layer discriminator cheaply certifiable while proving recoverability of its zero information; a growing-order observation theorem uniform in the source scale; or another source-complexity invariant with a finite certificate. Neither constant centering nor exponent-layer stripping solves the interface.
+AF-342 closes the next obvious escape: nonconstant centering by itself does not make the prime layer cheap. For an arbitrary real baseline `b`, let `E_b` be prime sites where `b(p)>=log p` and `C_b` prime-adjacent composite sites where `b<=0`. On every fixed multiplicative window,
+
+`V(a-b) >= 2 #primes - 2|E_b| - 4|C_b| - O(1)`.
+
+Thus reducing ordered sign variation below prime scale forces `|E_b|+2|C_b|` to be comparable with the number of primes. In particular every eventually positive baseline that stays below `log p` on primes retains the full leading `2(B-1)P/log P` variation. If the baseline transform cancels only the pole at `1` and is holomorphic at zeta zeros in `Re(s)>1/2`, the residual still carries the RH pole discriminator. The information can therefore be moved from the residual into a prime-scale exceptional pattern of the baseline, but it has not thereby been shown cheaper.
+
+The live bridge is now narrower. Exhibit a canonical nonconstant/multiscale transform whose prime-scale exceptional structure is generated from genuinely cheaper retained data while remaining zero-pole-blind, prove a growing-order observation theorem that can consume the actual source complexity, or replace ordered sign variation by another finite source certificate with a proved RH-facing recovery theorem. Merely choosing a varying background is not a new compression mechanism.
 
 ## Price the actual target metric before calling a representation compressed
 
 **Linked intuitions:** `MI-019-faithful-translation-lifts-are-affine`, `MI-020-prime-tail-localization-has-an-information-conservation-law`.
 
-Localization, contraction and lifting can move information without making it cheaper in the metric used by the final theorem. A useful compression claim needs both a genuinely smaller target geometry and a theorem that the downstream argument consumes only that target rather than the hidden source detail used to construct it.
+Localization, contraction and lifting can move information without making it cheaper in the metric used by the final theorem. A useful compression claim needs both a genuinely smaller target geometry and a theorem that the downstream argument consumes only that target rather than the hidden source detail used to construct it. AF-342 is another instance of the same warning: exceptional-set cardinality prices where a baseline must react, but it is not by itself a bit-, entropy-, circuit- or description-complexity lower bound.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -46,4 +52,4 @@ The remaining question is provenance of the non-escape resource. Can the arithme
 
 ## Keep observation order, source complexity, main-term isolation, exponent layers and destination slack as different currencies
 
-Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence, main-term cancellation and destination sensitivity are distinct resources. AF-338 improves the observation-side bill by preserving collision geometry. AF-339--AF-341 show that zero sensitivity can coexist with a one-signed source only while the dominant background remains: once the RH-relevant prime layer is isolated from the pole at `1`, its leading sign complexity reappears even after all higher prime powers are removed. None of these currencies supplies another for free.
+Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence, main-term cancellation and destination sensitivity are distinct resources. AF-338 improves the observation-side bill by preserving collision geometry. AF-339--AF-342 show that zero sensitivity can coexist with a one-signed source only while the dominant background remains: once the RH-relevant prime layer is isolated from the pole at `1`, the leading sign burden survives exponent-layer stripping and every baseline that does not itself react on a prime-scale exceptional set. None of these currencies supplies another for free.

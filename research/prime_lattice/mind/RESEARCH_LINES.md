@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove source-structured small-order convergence on the stretched boundary scale
+## Prove completed-Weil compactness on the universal stretched Green profile and identify its amplitude
 
 **Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`, `MI-017-fixed-order-shift-differentiability-survives-without-uniform-half-sobolev-control`.
 
@@ -12,20 +12,32 @@ PL-306--PL-308 remove fixed-order shape calculus and regularity as independent g
 
 `Gamma(1+s)^2/(2s) (|tau_+|^2+|tau_-|^2) = E_s(w)+a^(2s)[b_a(w)+V_a(w)]`.
 
-PL-309 now shows why ordinary bulk compactness cannot close the singular limit. The explicit one-dimensional fractional Green trace has stretched coordinate
+PL-309 shows why ordinary bulk compactness cannot close the singular limit. The explicit one-dimensional fractional Green trace has stretched coordinate `r=-s log((1-x)/2)`, so fixed `r=O(1)` samples physical distances `exp(-Theta(1/s))` from the boundary. Smooth forcings with `||f_s||_infty=O(sqrt(s))->0` can nevertheless prescribe a finite limit of `tau_(s,+)/sqrt(s)`.
 
-`r=-s log((1-x)/2)`,
+PL-310 now determines the principal stretched Green geometry exactly. After pushing the interval Green measure into the coordinate `x_s(r)=1-2e^(-r/s)`, one has for fixed `r`
 
-so fixed `r=O(1)` samples physical distances `exp(-Theta(1/s))` from the boundary. Smooth forcings with `||f_s||_infty=O(sqrt(s))->0` can nevertheless produce any prescribed finite limit of `tau_(s,+)/sqrt(s)`. Thus `C_0`, `L^infty`, norm-resolvent or generic bulk forcing convergence cannot determine the renormalized trace/stress.
+`d mu_(s,r) => e^(-r-q) 1_(0<q<r) dq + e^(-2r) delta_r`.
 
-This does not refute the actual completed-Weil eigenbranch; it identifies the scale on which its extra source structure must act. The analytic burden is now to prove **uniform source-structured control on the exponential boundary layer**, or uniform convergence of the weak virial / derivative-measure mechanism strong enough to identify the same scalar stress without recovering the trace pointwise. A generic bulk `C_0+BV` statement is useful only if it controls the relevant stretched boundary profile or the virial pairing uniformly as `s->0`.
+The limiting operator
 
-## Prove a rational-prime-specific sign or first-crossing law for the resulting derivative
+`(TF)(r)=e^(-2r)F(r)+e^(-r) integral_0^r e^(-q)F(q)dq`
 
-The Pohozaev/virial identity does not supply the missing sign. Generic positivity, spectral gaps, transmission regularity, BV transport, ambient forcing norms and the Green trace representation do not force the rational-prime branch to move in the required direction.
+has a one-dimensional nonzero fixed cone,
 
-The sign theorem must come from the actual rational-prime eigen-equation: a boundary-weighted lower law, source-specific oscillation/maximum principle, an absolute-value defect identity, or another order structure unavailable to matched locally finite shift systems. Analytic existence/convergence of the stress and arithmetic control of its sign remain distinct.
+`F(r)=C/sqrt(e^(2r)-1)`.
 
-## Keep fixed-order admissibility, bulk convergence, stretched-boundary control, scalar squared stress and signed boundary information separate
+Its `r->0` face is the logarithmic-Laplacian `r^(-1/2)` boundary scale and its `r->infinity` face is the fixed-order fractional `e^(-r)` scale. This profile is universal: it comes from the fractional principal operator and survives bounded matched lower-order perturbations. It is therefore not rational-prime evidence by itself.
 
-PL-308 closes fixed-`s` admissibility. PL-309 shows that the singular trace is concentrated on `exp(-Theta(1/s))` boundary scales and explicitly falsifies passage from ordinary bulk convergence to the renormalized trace. A moving-domain Hadamard theory may still matter for stronger boundary observables, but neither it nor high-Hölder regularity is load-bearing for the finite-`s` scalar stress. The live zero-order theorem must control the actual source on the scale consumed by the endpoint.
+The analytic endpoint is now narrower than “control an arbitrary boundary layer.” For the actual completed-Weil branch, prove enough compactness/uniform integrability of `U_s(r)=s^(-1/2)w_s(x_s(r))` to pass through the Green representation, or recover the same scalar through a uniformly convergent weak virial. Under the natural bounded-source hypothesis, every nonzero subsequential stretched-profile limit is already forced to the `PL-310` shape. The remaining data are its amplitude `C` and the justification that the actual branch reaches the limiting operator.
+
+## Prove a rational-prime-specific sign or first-crossing law for the resulting amplitude/stress
+
+The Pohozaev/virial identity and the universal Green profile do not supply the missing sign. Generic positivity, spectral gaps, transmission regularity, BV transport, ambient forcing norms and the principal stretched shape are all compatible with matched lower-order perturbations.
+
+The sign theorem must come from the actual rational-prime eigen-equation: a boundary-weighted lower law, source-specific oscillation/maximum principle, an absolute-value defect identity, a source-sensitive amplitude matching condition, or another order structure unavailable to matched locally finite shift systems. Analytic existence of the limiting amplitude/stress and arithmetic control of its sign remain distinct.
+
+## Keep fixed-order admissibility, bulk convergence, stretched-profile compactness, universal shape, amplitude and signed arithmetic information separate
+
+PL-308 closes fixed-`s` admissibility. PL-309 identifies the exponential layer and falsifies passage from ordinary bulk convergence to the renormalized trace. PL-310 then shows that once one can pass to the stretched limit, the principal Green operator leaves only one profile degree of freedom. A moving-domain Hadamard theory may still matter for stronger observables, but neither it nor generic bulk regularity is load-bearing for this endpoint.
+
+The live zero-order theorem must therefore control the actual branch strongly enough to reach the universal fixed profile or the equivalent scalar virial limit, and then identify the **source-specific amplitude/sign**. Re-deriving the profile from generic fractional geometry cannot advance the arithmetic endpoint.
