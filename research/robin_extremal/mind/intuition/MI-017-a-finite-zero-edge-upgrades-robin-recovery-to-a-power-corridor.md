@@ -1,29 +1,33 @@
-# MI-017 — A finite zero edge upgrades Robin recovery to the true Theta-scale power corridor
+# MI-017 — A finite zero edge upgrades Robin recovery to a phase-locked power corridor
 
-**Evidence level:** exact consequence of the strengthened [RE-112](../../findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md), using its persisted truncated explicit-formula and off-line zero-density argument. No contradiction with false RH or density theorem for selected CA blocks is claimed.
+**Evidence level:** exact consequence of [RE-112](../../findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md) and [RE-113](../../findings/RE-113-edge-zero-phase-locking-rules-out-sublinear-minimal-robin-recovery.md), using the persisted truncated explicit-formula and off-line zero-density inputs. No contradiction with false RH or density theorem for selected CA blocks is claimed.
 
-Let `Theta=sup Re(rho)`. In the false-RH finite-edge regime `1/2<Theta<1`, RE-112 improves the textbook `x^Theta log^2 x` envelope. A fixed strip strictly to the right of the critical line has sublinear zero density, so its reciprocal-ordinate mass is summable; combining that with the truncated Riemann--von Mangoldt formula yields
+Let `Theta=sup Re(rho)`. In the false-RH finite-edge regime `1/2<Theta<1`, RE-112 first replaces the textbook `x^Theta log^2 x` bound by the log-free envelope
 
-`psi(x)-x = O_Theta(x^Theta)`.
+`psi(x)-x = O_Theta(x^Theta)`
 
-The full CA event sweep therefore satisfies `Phi(x)=x+O_Theta(x^Theta)`. Inserting this **true Theta-scale source envelope** into RE-110's exact one-sided recovery workload gives, for a positive CA state at scale `Y` recovering to a later nonpositive state at `V`,
+and transfers it to the full CA event sweep. RE-110 then forces the scalar recovery corridor
 
 `V-Y >>_Theta h(C) Y^(2-Theta) log Y`.
 
-For adaptive quantitative false-RH witnesses with `h(C) >> Y^(-b)`, this becomes
+RE-113 shows that the scalar envelope still discards decisive information. The same high-strip reciprocal summability projects the normalized source onto the actual rightmost zero face:
 
-`V-Y >>_(Theta,b) Y^(2-Theta-b) log Y`.
+`x-vartheta(x) = x^Theta(F_Theta(log x)+o(1))`,
 
-Choosing `b=1-Theta+eta` gives almost-linear spacing `Y^(1-eta) log Y` and fixed-`eta` dyadic packing `O_(Theta,eta)(T^eta/log T)`. The logarithm now helps separation rather than being lost to a coarse PNT envelope.
+where `F_Theta` is the absolutely convergent real almost-periodic sum over zeros with `Re rho=Theta`; the full CA event sweep has the same leading profile. The adaptive RE-034 selector locks this phase to the selected Robin height:
 
-RE-112 also sharpens the source-side saturation statement. If a short recovery is within a constant factor of this minimum, then a fixed positive fraction of the crossed physical mass must come from ordinary first-layer primes with
+`F_Theta(log Y) = b h(C) Y^(1-Theta) log Y + o(1)`.
 
-`p-vartheta(p) asy Y^Theta`
+This has an important dynamical consequence. If the first recovery is genuinely sublinear, `V-Y=o(Y)`, the scalar corridor already forces the dimensionless height `lambda_Y=h(C)Y^(1-Theta)log Y` to tend to zero. The selector phase therefore tends to zero as well, and uniform continuity makes every crossed event see the same vanishing edge phase. Hence the forward workload is `o(Y^Theta)`, not merely `O(Y^Theta)`, and
 
-and the recovery-favorable sign. The required packet has at least `gg h(C)Y^(2-Theta)` distinct primes. Thus improving the finite-edge frontier means ruling out **CA-selected one-sided saturation of the actual Theta-scale prime-source envelope**, not repairing a logarithmic artifact.
+`V-Y = omega(h(C) Y^(2-Theta) log Y)`.
 
-This changes the meaning of the RE-111 Korobov--Vinogradov obstruction. The unconditional KV minimum is only the right source scale in the extreme branch `Theta=1`. For every fixed `Theta<1`, the zero-edge source law already forces a polynomially larger recovery corridor; the live question is whether zero density/phase or another selected-corridor coordinate forbids saturation of the `Y^Theta` workload itself.
+So **sublinear selected recoveries cannot saturate the scalar finite-edge minimum**. If a fixed-constant near-minimal family exists under the short condition `V-Y<=Y`, it must instead be macroscopic and edge-amplitude:
 
-The reusable split is spectral. **Finite zero edge (`Theta<1`)** gives a genuine power corridor at the sharp source exponent and isolates a same-sign first-layer saturation packet on that scale. **Extreme edge (`Theta=1`)** leaves the unconditional RE-109--RE-111 KV saturation problem alive.
+`h(C) asy Y^(Theta-1)/log Y`, `V-Y asy Y`, and `F_Theta(log Y) asy 1` with the favorable sign. If the supremum `Theta` is not attained by a zeta zero, `F_Theta` vanishes identically and such a near-minimal family is impossible.
 
-**Boundary.** The exponent `Theta` is the source scale extracted from edge location plus the persisted zero-density input; improving the corridor exponent requires information beyond the scalar edge. The packing estimate is for a fixed quantitative family selected by `b`/`eta`, not a simultaneous `T^(o(1))` theorem for all witnesses.
+This refines the RE-112 first-layer packet frontier. The live finite-edge obstruction is no longer merely a positive-mass packet with `p-vartheta(p) asy Y^Theta`; near-minimal recovery requires an **attained edge line, a positive edge phase at the adaptive selector, full spectral-scale Robin height, and macroscopic recovery**. The natural next source test is recurrence of that phase-lock, preferably coupled to the reciprocal-Mertens coordinate already tied to the same selector in RE-034.
+
+The reusable split is now sharper. **Finite zero edge (`Theta<1`)** has a phase-resolved source law: sublinear recovery is automatically super-minimal, while fixed-constant near-minimal recovery is forced to macroscopic edge amplitude. **Extreme edge (`Theta=1`)** still leaves the unconditional RE-109--RE-111 Korobov--Vinogradov saturation problem alive.
+
+**Boundary.** The almost-periodic organization of prime-counting errors is classical; the durable Mathia content is the selector-conditioned phase lock and its recovery consequence. The fixed-constant qualifier is essential in the near-minimal statement, and none of these estimates combines varying `b`/`eta` families into a single uniform counting theorem.
