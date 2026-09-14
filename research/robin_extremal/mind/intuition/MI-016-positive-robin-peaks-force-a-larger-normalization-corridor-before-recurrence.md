@@ -1,25 +1,27 @@
-# MI-016 — Positive Robin peaks force a normalization corridor larger than the intra-fan transport scale
+# MI-016 — Positive Robin peaks force a PNT-priced normalization corridor before recurrence
 
-**Evidence level:** exact for the colossally abundant recurrence geometry isolated by [RE-108](../../findings/RE-108-quantitative-robin-peaks-force-inter-block-normalization-corridors.md), combined with the false-RH quantitative block family and the intra-fan transport of RE-107. No contradiction to false RH and no RH consequence is claimed.
+**Evidence level:** exact for the colossally abundant recurrence geometry through [RE-108](../../findings/RE-108-quantitative-robin-peaks-force-inter-block-normalization-corridors.md)--[RE-109](../../findings/RE-109-pnt-regular-event-sweeps-stretch-inter-block-robin-recovery-corridors.md), combined with the false-RH quantitative block family and the intra-fan transport of RE-107. No contradiction to false RH and no RH consequence is claimed.
 
-Let `C<D` be colossally abundant states, write `Y=log C`, `V=log D`, and suppose the Robin logarithmic excess satisfies `h(C)>0` but `h(D)<=0`. Along the CA sequence the numerator `rho(n)=sigma(n)/n` is strictly increasing, so the only way the normalized Robin ratio can return to the threshold is for the denominator `log log n` to grow enough. RE-108 converts that observation into the exact inequality
+RE-108 shows that a quantitative positive Robin state cannot return to a nonpositive CA state before the denominator normalization grows by at least `R_C Y log Y`, with `Y=log C`. That bound is sharp if one remembers only monotonicity of `sigma(n)/n`; a frozen-numerator control saturates it.
 
-`V>Y^(1+R_C)`, where `R_C=e^(h(C))-1`,
+RE-109 restores a source constraint that the matched control discards. The same prime-layer event atoms generate both the numerator increment and the physical logarithmic mass. Their cumulative event staircase satisfies a Vinogradov--Korobov PNT discrepancy
 
-and hence
+`Phi(x)=x+O(x E(x))`,
 
-`V-Y >= R_C Y log Y`.
+with `E(x)=exp[-a(log x)^(3/5)(log log x)^(-1/5)]`. Coupling each event atom to the physical mass interval it creates rewrites Robin recovery as a quadrature error between `g(s)=1/(s log s)` and `g(eta_e)`.
 
-Thus a quantitative positive peak carries its own mandatory **normalization corridor** before any later nonpositive CA state can occur. Under the false-RH block amplitude `R_C >= c_0 Y^(-b)`, every selected state in a compact threshold fan satisfies a corridor of order `Y^(1-b) log Y`. For successive quantitative blocks the left threshold gives
+On a corridor of scale `Y`, this gives
 
-`X_(k+1)-X_k >>_J X_k^(1-b_0) log X_k`,
+`|h(C)-h(D)| << (V-Y) E(Y)/(Y log Y)`.
 
-so the block count obeys `N_J(T)<<_J T^(b_0)/log T`.
+Hence a positive height `h(C)` requires, unless the corridor already exceeds a fixed multiple of `Y`,
 
-This spacing is not itself contradictory. The normalization-only matched control, where the numerator is frozen after `C`, returns to the threshold exactly at `V=Y^(1+R_C)`, showing that the corridor exponent cannot be improved from numerator monotonicity alone. Likewise the abstract recurrence `x_(k+1)=x_k+c x_k^(1-b_0) log x_k` realizes the same packing order. Infinitely many quantitative blocks are therefore compatible with the current recurrence information.
+`V-Y >> h(C) Y log Y / E(Y)`.
 
-The important scale comparison is with RE-107. The positive raw Chebyshev debt forced across one whole fan is of order `X^(1-b_1) log X`, whereas RE-108 forces a subsequent normalization corridor of order `X^(1-b_0) log X`. Since `b_0<b_1`, the uncontrolled corridor is polynomially longer. Endpoint accumulation of positive fan debts cannot therefore be treated as if successive blocks were adjacent; the source has a larger interval in which to reorganize before the next witness is seeded.
+For the false-RH quantitative states `h(C_b)>>Y_b^(-b)`, the recovery corridor therefore acquires the stretched-subpower factor `E(Y)^(-1)`. Successive block starts satisfy the same strengthened spacing, and their dyadic packing gains the reciprocal factor.
 
-The reusable lesson is that **excursion amplitude prices recovery time, but recovery time is not recurrence rigidity**. Once a positive event forces a long normalization corridor, the next proof obligation moves from the event endpoints into the dynamics across that corridor. A contradiction must couple a source-sensitive coordinate—such as the reciprocal-Mertens phase or a Chebyshev deficit—to the descent of `h` through zero, or prove that paying the corridor destroys the capacity to regenerate the next quantitative positive witness.
+The key change is conceptual: **recovery time is now priced by source/event coherence, not only normalization monotonicity.** The frozen-numerator matched control is no longer source-admissible once the same PNT-regular atoms must create numerator and physical mass. But the resulting spacing remains subpower on the exponent scale and still does not contradict infinitely many false-RH blocks.
 
-**Boundary.** RE-108 uses only CA numerator monotonicity and the already-established false-RH amplitude family. It does not control primes or source phase inside the corridor, does not exclude infinitely many blocks, and does not show that the intra-fan Chebyshev debt persists until the next block. The Four-Exponentials local tie remains irrelevant to this inter-block scale law.
+The next theorem must use selection-conditioned source phase, not merely a sharper global PNT error. One must show that CA-selected recovery intervals cannot keep the extremal sign/magnitude needed to saturate the quadrature bound, or couple Chebyshev and reciprocal-Mertens coordinates across those intervals so that the next quantitative witness cannot regenerate.
+
+**Boundary.** RE-109 uses the global sup-norm PNT envelope for the event staircase and is sharp for that information class by a synthetic staircase control. It does not prove favorable discrepancy sign on CA-selected corridors, does not exclude recurrence, and does not propagate the RE-107 intra-fan debt unchanged to the next block.

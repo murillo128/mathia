@@ -1,15 +1,23 @@
-# MI-013 — Prime-Circle scalar near-resonance is classical across fixed scales and two large moving-band regimes
+# MI-013 — Prime-Circle one-profile laws are classical far into the rational-microscopic regime
 
-**Evidence level:** proved structural boundary through PC-277. PC-272 establishes ordered information beyond the ratio quotient; PC-274 closes the unscaled near-resonance law at every bandwidth; PC-275--PC-276 classicalize every finite fixed-bandwidth logarithmic centering; PC-277 closes the intrinsically normalized moving-band law through `log B=o(sqrt(log q))` and again after the exact denominator resonance threshold. The intermediate rational-microscopic window remains open.
+**Evidence level:** unconditional boundary through [PC-285](../../findings/PC-285-vinogradov-korobov-transport-pushes-li-grid-boundary-beyond-sqrt-log.md) and RH-conditional boundary through [PC-286](../../findings/PC-286-rh-pushes-boundary-log-li-grid-collapse-to-near-square-root-bandwidth.md). No converse to RH and no unconditional closure of the remaining bandwidth window is claimed.
 
-Growing collision geometry is not enough. PC-272 finds a real information boundary: ordered finite-window timing retains common source placement discarded by the exact ratio quotient. PC-273--PC-274 then show that this retained information does not survive as a raw arithmetic discriminator. Small bandwidth is controlled by prime/grid convergence, while growing bandwidth collapses the unscaled observable itself.
+PC-272--PC-284 show that ordered finite-window source placement contains real information but repeatedly collapses to matched non-prime controls in the one-profile normalized spectrum. The exact selector-subtracted logarithmic boundary profile is already included in this classicalization mechanism.
 
-PC-275--PC-276 show that fixed-resolution recentering does not rescue the branch. Every finite `1/log q` coefficient is the deterministic pushforward of the normalized logarithmic-integral source profile. The genuine prime-minus-exact-`Li` residual lies beyond every fixed logarithmic order under the classical PNT remainder.
+PC-285 corrects the unconditional source-transport frontier. Replacing the nonoptimal de la Vallée-Poussin remainder by the classical Vinogradov--Korobov scale
 
-PC-277 addresses the first normalized moving-band escape. For `X_B=(B+1)^2 D_B`, discretize the exact normalized `Li` source onto the same denominator-`q` rational grid as the prime points. The resulting non-prime matched control preserves both the smooth source profile and the exact rational denominator geometry. Prime/control Wasserstein distance still tends to zero whenever `log B=o(sqrt(log q))`; this includes every polylogarithmic bandwidth and much more.
+`V(q)=(log q)^(3/5)/(log log q)^(1/5)`
 
-At the opposite endpoint, denominator geometry itself forces exact resonance: once `(B+1)^2>q`, every denominator-`q` pair has `D_B=0`, prime or not. The normalized law is then exactly `delta_0` on both sides. Thus the surviving scalar window is genuinely intermediate: bandwidth too large for the available PNT transport estimate after its cubic Lipschitz amplification, but still below the universal rational exact-resonance transition.
+pushes Li-grid reproduction of the exact boundary-log spectrum to `log B=o(V(q))`. The older `sqrt(log q)` threshold was therefore only a proof artifact.
 
-The thresholds supplied by PC-277 are proof boundaries, not asserted arithmetic critical scales. A viable continuation must resolve that intermediate window with a sharper matched control or leave the scalar normalized observable for singular/directional minimizer data, conditioned source families, microscopic transfer observables, or nonlocal/cross-level coupling.
+PC-286 then asks what RH itself predicts for the same experiment. Schoenfeld's classical RH prime-counting bound gives source Wasserstein distance `O(q^(-1/2)(log q)^2)`. Feeding that into the already-proved PC-284 transport and optimizing the clipping scale yields Li-grid reproduction whenever
 
-**Boundary.** PC-277 does not prove prime-blindness throughout the entire intermediate window and does not claim `sqrt(log q)` in the exponent or `sqrt(q)` in bandwidth is a new critical prime scale. Detecting an exact `Li`-centered PNT residual still does not by itself make Prime-Circle geometry explanatory.
+`B=o(sqrt(q)/(log q)^6)`.
+
+Thus under RH the one-profile boundary-log spectrum becomes non-prime almost all the way to the natural square-root rational scale, up to a polylogarithmic gap. A persistent order-one prime-versus-Li separation in that conditional range would be evidence **against** RH, not in favor of it.
+
+The surviving one-profile frontier is consequently asymmetric. Unconditionally, it begins beyond the Vinogradov--Korobov transport window. Under RH, the same observable is forced to remain classical until near `sqrt(q)`. Any proposed Prime-Circle RH mechanism based on an order-one one-profile spectral separation must therefore live in the narrow remaining denominator-microscopic region or use a different logical signature than “prime data separates from the Li-grid control.”
+
+The reusable lesson is that an RH-sensitive observable can be informative through **conditional collapse** rather than conditional separation. If RH improves source equidistribution, a robust geometric statistic may become *less* prime-specific under RH.
+
+**Boundary.** PC-286 is one-way: collapse does not imply RH, and a finite discrepancy does not falsify RH. The polylogarithmic power comes from current clipping/transport losses rather than a proposed arithmetic critical exponent. Cross-level, multi-source, directional, noncommuting or otherwise enriched observables remain outside this no-go.

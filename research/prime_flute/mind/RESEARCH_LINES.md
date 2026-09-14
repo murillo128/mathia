@@ -1,24 +1,24 @@
 # Prime-flute mathematical questions
 
-## Prove localized reciprocal-prime Hilbert--Schmidt control for the actual pant/core insertion
+## Prove reciprocal-prime Hilbert--Schmidt locality for the normalized pant insertion
 
 **Linked intuitions:** `MI-008-complete-cut-transmission-needs-extension-mass-not-only-boundary-impedance`, `MI-009-bidirectional-scalar-survival-is-killed-by-accumulated-pant-loss`, `MI-010-scalar-green-response-is-killing-normalized-markov-averaging`, `MI-011-sequential-physical-band-elimination-factorizes-the-full-angle-defect`, `MI-012-corridor-form-smallness-needs-seam-metric-locality`, `MI-013-compactification-critical-low-packets-block-uniform-taylor-smallness`, `MI-014-critical-packet-leakage-occupies-a-positive-measure-center-family-with-explicit-parity-scales`, `MI-015-intrinsic-angle-packets-must-be-normalized-by-completed-diagonal-energy`.
 
-PF-303--PF-328 produce a positive-length family of compactification-critical physical packets before final completed normalization. PF-329--PF-331 show that completed normalization preserves total packet mass as a unitary-rotated tight frame and that polar extraction cannot amplify an already-controlled defect.
+PF-303--PF-328 produce a positive-length family of compactification-critical physical packets before final completed normalization. PF-329--PF-332 show that completion preserves packet mass up to a polar rotation and that the relative square-root defect is a resolvent-dressed pant/core insertion.
 
-PF-332 removes the seam square root as an independent source of nonlocality: the completed relative defect is a resolvent-dressed pant/core insertion, and its physical translation commutator is sourced by `[Lambda_LL,tau]`.
+PF-333 rules out a generic operator-norm shortcut; PF-334 shows the relative square-root map is dimension-free in Hilbert--Schmidt norm. PF-335 now makes the translation branch explicit. For
 
-PF-333 shows that a generic operator-norm repair is too expensive: positive relative square-root sensitivity can still grow like `log r`. PF-334 then separates the norm actually needed by the endpoint. At Hilbert--Schmidt level the relative derivative is dimension-free, and for the positive nonlinear insertion
+`K_n=Q_(L,n)^(-1/2) Lambda_(LL,n) Q_(L,n)^(-1/2)`
 
-`||F-I||_(S2) <= C_2(||K||) ||K||_(S2)`,  `K=Q^(-1/2)Lambda_LLQ^(-1/2)>=0`.
+and physical translations commuting with `Q_(L,n)`, an `S_2` commutator bound for `K_n` transfers directly to the completed square root with constant `sqrt(1+||K_n||)/sqrt(2)`, and then through the polar step. No retained-rank or shrinking-seam factor is created by completion.
 
-Therefore growing retained rank does not by itself impose another logarithmic square-root loss in the `S_2` currency used by PF-318. The direct theorem is now to prove a **localized reciprocal-prime Hilbert--Schmidt estimate for the actual normalized pant/core insertion or exact PF-318 low/high block**, with a uniform `||K||` envelope and enough spatial control that PF-332's resolvent dressing preserves the required low/high geometry. Alternatively, show that the PF-328 critical packets force a positive-measure lower obstruction after that structured transfer.
+The direct theorem is now to prove a **uniform operator envelope for `K_n` and an `o(1)` reciprocal-prime Hilbert--Schmidt translation commutator on the PF-328 critical interval**. That resolves the completion part of translation compatibility. A separate concentration theorem for one reference profile, or a stronger fixed-window cutoff/off-diagonal estimate, is still needed because spatial cutoffs generally do not commute with `Q`.
 
-Do not replace this target by an `S_infinity` estimate: PF-333 shows that norm is generically more expensive than necessary. Do not replace it by a global `S_2` norm either: Hilbert--Schmidt size alone is not locality and may hide exceptional directions.
+Do not replace this target by a generic `S_infinity` perturbation theorem, and do not treat a global `S_2` norm as locality. The remaining work is geometric/PDE control of the normalized insertion and physical concentration, not generic square-root or polar functional calculus.
 
 ## Close the global heavy-range ideal counts after the localized S2 decision
 
-For the PF-287 heavy low/high extension-range projection product, determine whether the conditional channel `T_H` and the shear-deleted reference-angle family satisfy the required ideal counts once the completed local block behavior is known. PF-318 supplies endpoint counting; PF-320 supplies the shear-error budget; PF-325 supplies the position-space frame; PF-330 gives exact packet-energy conservation; PF-331 controls polar extraction; PF-332 identifies the pant/core source of the relative defect; PF-334 shows the relative square-root operation itself need not add dimension loss in `S_2`.
+For the PF-287 heavy low/high extension-range projection product, determine whether the conditional channel `T_H` and the shear-deleted reference-angle family satisfy the required ideal counts once the completed local block behavior is known. PF-318 supplies endpoint counting; PF-320 supplies the shear-error budget; PF-325 supplies the position-space frame; PF-330 gives exact packet-energy conservation; PF-331 controls polar extraction; PF-332 identifies the insertion source; and PF-335 shows that translation compatibility can be transferred from the normalized insertion without dimension or seam-conditioning loss.
 
 Any argument replacing the terminal geometry by one fixed finite-pant model remains invalid because the critical packet sees both finite-boundary and escaping-boundary subsequences. Any argument obtaining the needed gain merely from seam normalization is also invalid because the completed intrinsic angle is unitary under that congruence.
 

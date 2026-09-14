@@ -1,31 +1,19 @@
-# MI-023 — Blindness survives rowwise; normalization and aggregation are the expensive steps
+# MI-023 — Blindness survives rowwise; normalization can move rather than remove source depth
 
-**Evidence level:** proved for the current flat Christoffel source by [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md)--[MC-277](../../findings/MC-277-christoffel-endpoint-margin-conditioning.md). No signed arithmetic cancellation theorem or blind-support exclusion is claimed.
+**Evidence level:** proved for the current flat Christoffel source through [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md)--[MC-278](../../findings/MC-278-rational-endpoint-decoder-hidden-half-depth.md). No signed arithmetic cancellation theorem or blind-support exclusion is claimed.
 
-MC-273 gives an exact rowwise simplification after any negative lower-prime witness, and MC-275 shows that using **all** such witnesses simultaneously is cheap. With `b(x)` the number of negative coordinates,
+MC-273--MC-277 separate representation, conditioning, normalization and aggregation. A negative witness collapses one row to a homogeneous shell, all negative witnesses can be aggregated at only one extra Walsh degree, and the normalized Christoffel scalar still retains the exact blind bit with rowwise margin `delta_(k,m)~2m/k`. The catastrophic one-exception loss appears when normalization or aggregation discards row provenance, not because the low-depth row representation has already forgotten blindness.
 
-`U_m(x)=b(x)g_m(x)=1/2[(k-m)e_m-(m+1)e_(m+1)]`,
+MC-278 shows that replacing polynomial normalization by a rational decoder changes the algebraic complexity but not the source-information bill. The exact endpoint function
 
-so overlap itself costs only one extra Walsh/source degree. MC-274 shows that selecting witnesses atom by atom can still be expensive, but first-witness search is not intrinsically required.
+`F_q(x)=(1+b(x))^(-q)`
 
-The first obstruction is normalization. Exact normalization to one unit per nonblind row reconstructs Boolean OR and has full degree `k`; uniform approximation costs `Theta(sqrt(k log(1/epsilon)))` on the generic cube. MC-276 closes the natural distributional relaxation: if a degree-`m` selector is forced to vanish at the blind point, its L2 classification loss subtracts the blind mass exactly. On the arithmetic shell,
+recovers the blind-row count by rounding once `C 2^(-q)<1/2`, so rational degree only `q=Theta(log C)` is enough. But its unique Walsh expansion has nonnegative radial coefficients whose degree distribution satisfies `E J=(k/2)(1-2^(-q))` and, at the atom-sensitive scale, concentrates around `k/2`. For every source cutoff `m=o(k)`, the coefficient mass below degree `m` is `o(1)`.
 
-`empirical L2 error = (E_(m,y)(t)-A_y(t))/C`.
+Thus denominator inversion does not make the endpoint cheap in the canonical arithmetic source hierarchy. It converts a low-degree statistic `b(x)` into a function whose Walsh/Krawtchouk realization imports essentially half-cube source depth. At the live support-matched depth `m=Theta(log log y)`, almost all positive coefficient mass of this rational decoder lies outside the available hierarchy.
 
-Distributional normalization is therefore cheap precisely because its objective is allowed to forget the target atom.
+The reusable distinction is stronger than polynomial versus rational degree. **Algebraic description complexity and source-support depth are different currencies.** A nonlinear inverse can be concise before expansion while still depending on macroscopic source depth after translation into the characters actually supplied by the arithmetic problem.
 
-MC-277 identifies what survives before that loss. For the normalized Christoffel scalar `P_m=g_m/Z_m`, the blind point has value `1`, every nonblind point has value at most
+This leaves one precise escape open: control a natural arithmetic resolvent, inverse operator or rational aggregate directly, without expanding the denominator into source subsets. Such a mechanism would have to be native to the localized Legendre-shell structure; MC-278 does not rule it out.
 
-`h=binom(k-1,m)/Z_m`,
-
-and one-negative vectors attain `h`. The exact rowwise gap is
-
-`delta_(k,m)=1-h = 2 sum_(s=0)^(m-1) binom(k-1,s)/Z_m ~ 2m/k`.
-
-A scalar decoder is uniformly robust to additive error exactly below `delta_(k,m)/2`, and its optimal Lipschitz condition number is `1/delta_(k,m)`. At the support-matched arithmetic scale this margin is of order `log y log log y/y`, while a single target-row mass is exponentially smaller in `log y log log y`. Hence the low-depth row representation has **not** erased the blind bit. The difficult one-exception problem is created when `C` row identities are aggregated and the exceptional provenance is discarded.
-
-The unresolved object is still the signed linear residual, but its role is now more precise. A successful theorem must either control each relevant Christoffel scalar to its natural `delta_(k,m)` margin before aggregation, or prove signed cross-row cancellation while retaining enough information that an integer blind contribution cannot be hidden by the nonblind rows. Replacing the row scalar by another generic classifier is not the missing step.
-
-The reusable distinction is **representation / conditioning / normalization / aggregation**. A representation may encode the exact bit with a shrinking margin; a stable decoder then costs the reciprocal margin; a normalization may delete the bit from its objective; and an aggregate may make one exceptional row invisible even when every row is individually decodable. These losses should not be conflated.
-
-**Boundary.** The margin theorem is deterministic on the full Boolean cube and is not arithmetic specificity. It does not show that the actual row scalars can be estimated to the required accuracy, and it does not control the aggregate signed phase. The cube approximate-degree obstruction remains relevant to polynomial normalization, while the localized arithmetic cross-row theorem remains open.
+**Boundary.** MC-278 analyzes one explicit rational decoder and does not prove an optimal rational lower bound. High positive Walsh coefficient mass is decisive at the blind vector, where all characters equal `+1`; it is not a claim that every nonblind row receives a large numerical contribution. The original signed cross-row residual and direct arithmetic inversion routes remain open.

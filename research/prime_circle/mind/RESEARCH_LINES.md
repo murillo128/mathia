@@ -2,22 +2,26 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the rational-microscopic finite-section transition or leave the single-profile architecture
+## Resolve the near-square-root conditional frontier or leave the single-profile architecture
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`.
 
-PC-224--PC-280 reduce the positive spectral construction to a two-sided finite section of one source-independent cyclic convolution operator. PC-281 transports every regular-profile normalized singular spectrum to the denominator-`q` Li-grid control. PC-282 identifies the opposite boundary-first limit with the exact modular collision selector, and PC-283 shows that selector subtraction leaves only the classical digamma/logarithmic Green symbol on the complete cyclic domain.
+PC-224--PC-284 reduce the positive spectral construction to a two-sided finite section of one source-independent cyclic convolution operator, identify the exact modular collision selector, and show that selector subtraction leaves the classical digamma/logarithmic Green symbol. The complete normalized singular-spectrum law remains reproducible by a denominator-`q` Li-grid control over the available source-transport range.
 
-PC-284 now closes the immediate source-placement escape for that exact logarithmic remainder throughout the classical transport window. After microscopic clipping that preserves the anchor, the law of the **complete normalized singular spectrum** on the prime source is asymptotically reproduced by the Li-grid control whenever
+PC-285 pushes the unconditional boundary to the classical Vinogradov--Korobov scale
 
-`log B=o(sqrt(log q))`.
+`log B=o((log q)^(3/5)/(log log q)^(1/5))`.
 
-Thus source-dependent two-sided placement does not create a prime-specific positive spectral law anywhere in the sub-`exp(sqrt(log q))` bandwidth regime, even for the exact selector-subtracted boundary logarithm.
+PC-286 then shows that **assuming RH** pushes the exact boundary-log spectral collapse much farther:
 
-The live one-profile question begins only at the **rational-microscopic critical regime** where `log B` is comparable to `sqrt(log q)` or larger, or where another simultaneous scaling prevents the clipping/PNT transport from closing. A surviving observable must either produce a source-specific residual at that scale after both universal boundary pieces are removed, magnify a prime-minus-control residual in a quantitatively justified way, or leave the one-profile/singular-spectrum category through cross-level, cross-source or richer non-spectral structure.
+`B=o(sqrt(q)/(log q)^6)`.
 
-## Keep complete-domain symbols, transported finite sections and genuinely enriched observables separate
+Thus the old square-root-log scale was not intrinsic, and an order-one prime-versus-Li spectral separation at polynomial sub-square-root bandwidth would contradict RH rather than support it. Under RH this one-profile statistic is forced to become asymptotically non-prime nearly up to the natural rational square-root scale.
 
-Complete-domain phase wrappers are gauge; the singular anchor is an exact selector; its scalar remainder is classical harmonic data; and PC-284 shows that the full normalized finite-section singular spectrum is still Li-grid reproducible throughout the classical source-transport regime.
+The live one-profile question is now the remaining polylogarithmic neighborhood of the denominator-microscopic transition, together with any construction whose RH signature is not an order-one separation from the matched Li-grid law. Otherwise leave the architecture through cross-level, multi-source, directional, noncommuting or richer non-spectral information.
 
-None of these results is a theorem about every possible critical coupled scaling or enriched observable. But a future Prime-Circle mechanism must identify exactly which information survives beyond the PC-284 transport boundary. Reintroducing the selector, the Green remainder, or a subcritical source-placement statistic cannot supply new arithmetic discrimination.
+## Keep unconditional classicalization, RH-conditional collapse and exact denominator geometry separate
+
+PC-285 is an unconditional matched-control boundary; PC-286 is a one-way RH consequence; denominator resonance is a separate exact rational effect. None is a converse RH criterion. A future Prime-Circle mechanism must state whether it seeks an unconditional discriminator, an RH-forced collapse rate, or an enriched observable outside the one-profile normalized singular spectrum.
+
+The strongest warning is now logical as well as quantitative: **more prime-specific separation is not automatically more RH-like**. In this branch RH itself improves the prime-to-Li source match and therefore suppresses the proposed spectral distinction.

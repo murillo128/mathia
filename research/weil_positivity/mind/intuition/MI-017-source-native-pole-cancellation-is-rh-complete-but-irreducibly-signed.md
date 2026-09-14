@@ -1,23 +1,25 @@
-# MI-017 — Source-native pole cancellation is RH-complete but irreducibly signed
+# MI-017 — Finite source-native pole cancellation is RH-complete and irreducibly signed at every order
 
-**Evidence level:** supported by [WP-290](../../findings/WP-290-critical-mangoldt-dilation-coboundary-is-rh-equivalent-and-jordan-parts-remain-nontempered.md), together with the positive-completion obstructions of WP-288--WP-289. No Weil-positivity proof is claimed.
+**Evidence level:** supported by [WP-290](../../findings/WP-290-critical-mangoldt-dilation-coboundary-is-rh-equivalent-and-jordan-parts-remain-nontempered.md)--[WP-291](../../findings/WP-291-finite-dilation-coboundary-products-remain-rh-equivalent-and-sign-indivisible.md), together with the positive-completion obstructions of WP-288--WP-289. No Weil-positivity proof is claimed.
 
-The signed source transformation demanded after WP-289 can be made completely intrinsic. For the critical Mangoldt half-density
+For the critical Mangoldt half-density
 
-`mu=sum_(n>=2) Lambda(n)/sqrt(n) delta_(log n)`
+`mu=sum_(n>=2) Lambda(n)/sqrt(n) delta_(log n)`,
 
-and any integer `q>=2`, define the multiplicative dilation coboundary
+WP-290 introduces the intrinsic dilation coboundary `Delta_q=I-sqrt(q)S_(log q)`. Its transform multiplier `1-q^(1/2-s)` cancels the zeta-pole tangent exactly, and `Delta_q mu` is tempered if and only if RH. Both Jordan parts remain individually non-tempered, so the category descent exists only through signed cancellation.
 
-`Delta_q mu = mu - sqrt(q) S_(log q) mu`.
+WP-291 closes the obvious finite-order escape. For any finite nonempty list `q_1,...,q_r`, the product
 
-Its Laplace transform acquires the factor `1-q^(1/2-s)`. This cancels the zeta pole at `s=1/2` exactly, without adjoining a separate continuous pole sector, but it does not cancel poles from nontrivial zeros. WP-290 proves the exact category statement
+`D_q=Delta_(q_1)...Delta_(q_r)`
 
-`Delta_q mu in S'(R) <=> RH`.
+remains tempered exactly under RH. Every factor vanishes at the pole location, so repeated differencing can annihilate the pole tangent to arbitrarily high finite order. But no factor vanishes at a nontrivial zeta-zero pole because `q^(1-rho)=1` would force `Re rho=1`. Hence the complete nontrivial zero divisor survives every finite product.
 
-The transformation therefore exposes a source-native RH-complete remainder rather than solving it. A matched nonarithmetic counting measure becomes tempered under the same coboundary unconditionally, so integer dilation differencing itself is only generic pole removal; the arithmetic content is the growth of the post-cancellation Mangoldt remainder.
+The sign obstruction is equally rigid. The positive Jordan channel retains the original coefficient `log p/sqrt(p)` on every prime, while a universal negative prime ray survives at `d p`, where `d=min q_j`. Both Jordan parts therefore have `e^(x/2)` mass growth and are non-tempered for every finite hierarchy, unconditionally.
 
-More importantly for positivity, the cancellation is irreducibly signed. Both Jordan parts `(Delta_q mu)_+` and `(Delta_q mu)_-` are individually non-tempered. Taking absolute value, total variation, or preserving the positive and negative channels as separate positive summands destroys the category descent. This is a concrete realization of the source-side requirement in MI-016: the critical source must be changed before positivity is read, and the change may rely on cancellation that no componentwise positive completion can retain.
+The matched counting half-density becomes tempered after the same finite coboundary hierarchy. Finite dilation differencing is therefore generic homogeneous pole removal; the RH-sensitive content is precisely the residual Mangoldt zero structure.
 
-The remaining Weil question is not to find a pole-killing multiplier; one already exists inside the arithmetic semigroup. It is to embed this or another signed source-native remainder into a globally admissible construction whose final quadratic readout satisfies the exact Weil identities without assuming the RH-equivalent temperedness one is trying to prove.
+The reusable conclusion is stronger than “one pole-killing difference is insufficient.” **No finite iteration of the canonical source-native dilation ideal changes the admissibility gate or separates the signed cancellation into positive channels.** More finite pole annihilation is mathematically irrelevant to the remaining obstruction.
 
-**Boundary.** WP-290 does not show that this specific coboundary is the right intermediate object for a Weil construction. Its temperedness is already equivalent to RH, so treating it as an admissible distribution without an independent argument would be circular.
+The live Weil problem must therefore leave this finite hierarchy in a substantive way: prove unconditional admissibility through a different signed/global coupling, or use the hierarchy only diagnostically while constructing an exact Weil quadratic object by another mechanism. Treating any `D_q mu` as already admissible is circular because that admissibility is RH-equivalent.
+
+**Boundary.** WP-291 closes products of the canonical elementary dilation coboundaries, not every finite signed translation filter. Zero-selected filters are outside the mandate, and an arbitrary source-native filter with genuinely different structure would require its own analysis.
