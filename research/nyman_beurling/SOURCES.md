@@ -31,6 +31,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Eva A. Gallardo-Gutiérrez and Daniel Seco, *Zero-Free Regions of the Riemann Zeta Function and Approximation in Weighted Dirichlet Spaces*, Complex Analysis and Operator Theory 19 (2025), article 38, DOI `10.1007/s11785-025-01661-2`. Role: contemporary prior-art boundary for deriving zeta zero-free half-planes from Nyman--Beurling-type approximation in weighted spaces. `NB-043` does not claim the generic approximation-to-zero-free mechanism as new; its line-local contribution is the quantitative realization through the explicit logarithmic tail dual `Omega_M`.
 
+## Near-one zero-free region
+
+- Chiara Bellotti, *Explicit bounds for the Riemann zeta function and a new zero-free region*, J. Math. Anal. Appl. 536 (2024), 128249, DOI `10.1016/j.jmaa.2024.128249`, [arXiv:2306.10680](https://arxiv.org/abs/2306.10680). Role: Theorem 1.2 gives the explicit Vinogradov--Korobov zero-free region `sigma >= 1 - 1/(53.989 (log |t|)^(2/3) (log log |t|)^(1/3))` for `|t|>=3`; `NB-125` uses this as the load-bearing source law converting its rootwise horizontal-depth requirement for actual zero packets into an additive log-log height budget.
+
 ## Quantitative approximation boundary
 
 - Jean-François Burnol, *A lower bound in an approximation problem involving the zeros of the Riemann zeta function*, Adv. Math. 170 (2002), 56–70, DOI `10.1006/aima.2001.2066`, [arXiv:math/0103058](https://arxiv.org/abs/math/0103058). Role: zero-sensitive lower-bound boundary for claims about asymptotic Nyman approximation rates.
