@@ -1,7 +1,7 @@
 ---
 id: CLUE-analytic-frontier-odd-dilation-two-sided-return-and-physical-activation
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: analytic_frontier
 based_on:
@@ -56,3 +56,12 @@ Calibrate with a single old maximum and then with a genuine two-frequency stage.
 ## Evidence boundary
 
 The upper bound and the existential positive-slack construction are already supplied by ANF-143. This clue supplies neither the lower bound nor computable global stage constants, an efficient construction, a universal depth rate, or the downstream affine completion. Failure to obtain an effective rate does not refute the existing existence theorem. Check the current finding and adjacent review sidecar before using the stage assumptions; a correctness objection belongs in the normal review workflow.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/analytic_frontier/findings/ANF-184-odd-dilation-return-has-a-sharp-ell-squared-physical-threshold.md]]
+
+The exact first-return variational formula and the binomial product bound give the missing lower estimate `theta_ell>=c_G ell^-2`, while ANF-143 supplies the matching upper estimate. Hence `theta_ell=Theta_G(ell^-2)` at every frozen stage for sufficiently large odd `ell`. Integer flooring then makes `A~ell^2` the activation crossover, and the first-return saddle lies `Theta_G(ell^-1)` from the old skeleton and annihilator walls, so `A>>ell^2` is also the natural chamber-resolution regime for the fixed-stage Laplace source. The constants remain stage-dependent; no depth-uniform effective cascade rate or downstream near-extremizer conclusion is claimed.
