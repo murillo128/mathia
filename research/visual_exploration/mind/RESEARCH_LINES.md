@@ -26,16 +26,12 @@ and hence `E_1=o(R_v^2)` in long-start mean square.
 
 The exact VIS-204 boundary remains important: zero cancellations give the four-prime shells, one cancellation gives the prime/prime family now suppressed, and two cancellations give only `xi=0`, the removed diagonal. There is **no further nonzero higher-cancellation shell** to attack inside this representation.
 
-VIS-212 now makes the start variable quantitative without taking an unspecified infinite Cesaro limit. Distinct symmetric prime-ratio frequencies are separated by at least `y^-2`, so Montgomery--Vaughan gives, uniformly in the interval location `T_0`,
+VIS-193 supplies the unconditional finite-start baseline already present in the canonical corpus. Distinct symmetric prime-ratio frequencies are separated at scale at least `y^-2`, so Montgomery--Vaughan gives a uniform finite-window comparison with the long-start variance and every sliding window of length `L>=c y^2` inherits `O(R_v)` mean square. VIS-194--VIS-202 then replace worst spacing by coefficient-weighted collision geometry and beat that quadratic baseline in substantial subcritical corridors.
 
-`L^(-1) int_(T_0)^(T_0+L) |M_v(y;H,T)-1|^2 dT = R_v(y,H)[1+O(y^2/L)]`.
-
-Thus every sliding window with `L>=c y^2` already has mean square `O(R_v)` and therefore density-one cancellation when `H->infinity`. This is a deterministic finite-start baseline, not a pointwise theorem and not a claim that the quadratic horizon is optimal.
-
-The live frontier therefore has two distinct parts. First, compress the `y^2` worst-spacing baseline by exploiting the **coefficient-weighted** geometry of small determinants `|qr-ps|` rather than global frequency separation; the earlier weighted-local-spacing/sieve route shows that such compression is possible in substantial subcritical corridors. Second, decide genuinely pointwise worst-start behavior or construct rare coherent starts that survive all averaged estimates. The critical scale `H asymp y/log y` remains separate.
+The deleted VIS-212 was a duplicate of this existing VIS-193 finite-window result and contributes no independent evidence. The live frontier is unchanged: compress the deterministic horizon using weighted small-determinant geometry, decide genuinely pointwise worst-start behavior or construct rare coherent starts, and keep the critical scale `H asymp y/log y` separate.
 
 A future higher-moment or higher-degree observable may create a new cancellation hierarchy, but that is a different mathematical object. It requires a fresh exact representation and shell classification rather than reusing the pair-difference terminology.
 
 ## Keep representation closure, averaging horizon and pointwise coherence separate
 
-VIS-211 closes the one-cancellation Gram frontier only in the stated strictly subcritical averaged regime. VIS-212 replaces infinite Cesaro averaging by a uniform quadratic finite window, but still does not prove pointwise-in-start cancellation. Conversely, the absence of another nonzero pair-difference cancellation class is exact. Any improvement below the quadratic start window must come from weighted frequency-collision structure, while any worst-start theorem must control coherent phases rather than merely shorten an averaging interval.
+VIS-211 closes the one-cancellation Gram frontier only in the stated strictly subcritical averaged regime. VIS-193 gives a uniform quadratic finite-window baseline, and VIS-194--VIS-202 show that weighted collision information can improve the relevant averaging cost. None proves pointwise-in-start cancellation. Conversely, the absence of another nonzero pair-difference cancellation class is exact. Any worst-start theorem must control coherent phases rather than merely shorten an averaging interval.

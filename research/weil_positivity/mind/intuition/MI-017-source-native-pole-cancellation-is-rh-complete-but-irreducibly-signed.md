@@ -1,25 +1,15 @@
-# MI-017 — Finite source-native pole cancellation is RH-complete and irreducibly signed at every order
+# MI-017 — Admissibility can be bought either by signed cancellation or by erasing arithmetic localization
 
-**Evidence level:** supported by [WP-290](../../findings/WP-290-critical-mangoldt-dilation-coboundary-is-rh-equivalent-and-jordan-parts-remain-nontempered.md)--[WP-291](../../findings/WP-291-finite-dilation-coboundary-products-remain-rh-equivalent-and-sign-indivisible.md), together with the positive-completion obstructions of WP-288--WP-289. No Weil-positivity proof is claimed.
+**Evidence level:** supported by [WP-290](../../findings/WP-290-critical-mangoldt-dilation-coboundary-is-rh-equivalent-and-jordan-parts-remain-nontempered.md)--[WP-292](../../findings/WP-292-counting-convolution-removes-zero-screen-only-by-erasing-mangoldt-localization.md), together with the positive-completion obstructions of WP-288--WP-289. No Weil-positivity proof is claimed.
 
-For the critical Mangoldt half-density
+For the critical Mangoldt half-density `mu`, WP-290 introduces the intrinsic dilation coboundary `Delta_q`. Its multiplier cancels the zeta-pole tangent exactly, but `Delta_q mu` is tempered if and only if RH and both Jordan parts remain individually non-tempered. WP-291 closes every finite iteration of that canonical operation: finite products can annihilate the pole tangent to arbitrary finite order, yet cancel no nontrivial zeta-zero pole and remain RH-equivalent in admissibility.
 
-`mu=sum_(n>=2) Lambda(n)/sqrt(n) delta_(log n)`,
+WP-292 shows that unconditional category descent is possible if one changes the source carrier. Convolution with the critical counting half-density turns the Mangoldt transform `-zeta'/zeta` into `-zeta'`, so the nontrivial-zero poles disappear. After two canonical dilation differences the resulting all-integer source is unconditionally tempered.
 
-WP-290 introduces the intrinsic dilation coboundary `Delta_q=I-sqrt(q)S_(log q)`. Its transform multiplier `1-q^(1/2-s)` cancels the zeta-pole tangent exactly, and `Delta_q mu` is tempered if and only if RH. Both Jordan parts remain individually non-tempered, so the category descent exists only through signed cancellation.
+That success has an exact price: the convolution has erased prime-power/Mangoldt localization. Möbius deconvolution restores the original arithmetic source and with it the zero screen; after deconvolution, the corresponding finite-difference object is again tempered exactly under RH. The same phenomenon survives generalized-prime controls, so unconditional admissibility of the smoothed carrier is not itself Riemann-specific information.
 
-WP-291 closes the obvious finite-order escape. For any finite nonempty list `q_1,...,q_r`, the product
+The reusable conclusion is a three-way separation. **Pole cancellation, category admissibility and arithmetic localization are independent currencies.** Finite signed differences preserve localization but cannot buy unconditional admissibility; counting convolution buys admissibility by discarding localization; exact recovery of that localization recreates the hard gate.
 
-`D_q=Delta_(q_1)...Delta_(q_r)`
+The live Weil problem must therefore find a transformation outside the finite dilation ideal that preserves enough arithmetic localization for the final quadratic form while proving admissibility unconditionally, or identify a non-exact recovery mechanism whose retained localized information is sufficient for Weil positivity without reconstructing the RH-complete Mangoldt source.
 
-remains tempered exactly under RH. Every factor vanishes at the pole location, so repeated differencing can annihilate the pole tangent to arbitrarily high finite order. But no factor vanishes at a nontrivial zeta-zero pole because `q^(1-rho)=1` would force `Re rho=1`. Hence the complete nontrivial zero divisor survives every finite product.
-
-The sign obstruction is equally rigid. The positive Jordan channel retains the original coefficient `log p/sqrt(p)` on every prime, while a universal negative prime ray survives at `d p`, where `d=min q_j`. Both Jordan parts therefore have `e^(x/2)` mass growth and are non-tempered for every finite hierarchy, unconditionally.
-
-The matched counting half-density becomes tempered after the same finite coboundary hierarchy. Finite dilation differencing is therefore generic homogeneous pole removal; the RH-sensitive content is precisely the residual Mangoldt zero structure.
-
-The reusable conclusion is stronger than “one pole-killing difference is insufficient.” **No finite iteration of the canonical source-native dilation ideal changes the admissibility gate or separates the signed cancellation into positive channels.** More finite pole annihilation is mathematically irrelevant to the remaining obstruction.
-
-The live Weil problem must therefore leave this finite hierarchy in a substantive way: prove unconditional admissibility through a different signed/global coupling, or use the hierarchy only diagnostically while constructing an exact Weil quadratic object by another mechanism. Treating any `D_q mu` as already admissible is circular because that admissibility is RH-equivalent.
-
-**Boundary.** WP-291 closes products of the canonical elementary dilation coboundaries, not every finite signed translation filter. Zero-selected filters are outside the mandate, and an arbitrary source-native filter with genuinely different structure would require its own analysis.
+**Boundary.** WP-292 does not prove that every admissible smoothing must erase localization, nor that every partial recovery is RH-equivalent. It establishes this tradeoff for the canonical counting convolution and exact Möbius deconvolution. A genuinely different signed/global coupling remains open.

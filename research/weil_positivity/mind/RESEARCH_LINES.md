@@ -2,24 +2,24 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave the finite dilation-coboundary hierarchy before trying to read positivity
+## Preserve arithmetic localization while leaving the finite dilation-coboundary hierarchy
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`, `MI-014-nontrivial-zero-modes-screen-the-gamma-tangent-layer`, `MI-015-nonlinear-postprocessing-after-scalarization-cannot-create-a-new-distribution`, `MI-016-exact-weil-square-targets-linearize-while-positive-additive-preservation-cannot-absorb-the-critical-source`, `MI-017-source-native-pole-cancellation-is-rh-complete-but-irreducibly-signed`.
 
 WP-287--WP-289 close arbitrary nonlinear post-processing of a scalar profile, exact cone-only nonlinear target escapes, and monotone positive preservation of the non-tempered critical Mangoldt covariance.
 
-WP-290 supplies the first explicit source-native signed transformation: the integer-dilation coboundary cancels the zeta-pole tangent exactly but is tempered if and only if RH, with both Jordan parts individually non-tempered.
+WP-290--WP-291 identify the finite source-native dilation hierarchy: any finite product of canonical coboundaries cancels the pole tangent but no nontrivial zero pole, remains tempered exactly under RH, and leaves both Jordan channels individually non-tempered. More finite differencing does not move the admissibility gate.
 
-WP-291 shows that **every finite product** of these canonical coboundaries has exactly the same boundary. Repeated differences may annihilate the pole tangent to arbitrarily high finite order, but their multipliers cancel no nontrivial zeta-zero pole. The positive channel always retains every prime half-density, and a universal negative prime ray survives every finite hierarchy. Both Jordan parts remain non-tempered while the signed whole is tempered exactly under RH.
+WP-292 exhibits the opposite escape. Convolving the critical Mangoldt half-density with the canonical counting half-density integrates `-zeta'/zeta` to `-zeta'`, removing the nontrivial-zero poles; after two dilation differences the result is unconditionally tempered. But this works by replacing prime-power localization with an all-integer counting carrier. Exact Möbius deconvolution restores the Mangoldt source and simultaneously restores the RH-equivalent admissibility obstruction.
 
-The live construction problem must therefore leave the finite canonical dilation ideal rather than add more of the same operation. Find a genuinely different signed/global source coupling whose admissibility can be proved without assuming RH, and then show that its final degree-two, parallelogram and translation identities identify the exact Weil quadratic form. The dilation hierarchy remains useful as a diagnostic for what generic pole removal can and cannot buy.
+The live construction problem is therefore sharper than “find another pole killer.” Find a signed/global transformation that obtains unconditional admissibility **without erasing the Riemann-specific localization needed by the final Weil form**, or prove that a controlled amount of localization can be recovered after admissible smoothing without recreating the zero screen. The final degree-two, parallelogram and translation identities must still identify the exact Weil quadratic form.
 
-## Treat cancellation, admissibility and final positivity as three distinct gates
+## Treat cancellation, admissibility, localization and final positivity as distinct gates
 
-WP-290--WP-291 show that source-native cancellation can remove the entire leading pole tangent, even to arbitrary finite order, while leaving the full arithmetic difficulty in the category of the signed remainder. WP-289 shows that preserving positive source pieces independently is too large. WP-288 shows that an exact final square functional has no freedom to remain an arbitrary nonlinear statistic.
+Finite dilation cancellation can remove the leading pole to arbitrary order while leaving admissibility RH-equivalent. Counting convolution can make admissibility unconditional while erasing the Mangoldt localization. Exact deconvolution can restore localization while restoring the RH gate. These are different operations and different resources.
 
-A future candidate must therefore answer separately: what signed source transformation is forced; why the transformed object belongs to the required category **unconditionally**; and why the final positive quadratic form is exactly the Weil form. Passing the first gate repeatedly does not make progress on the second.
+A future candidate must answer separately: what signed source transformation is forced; why the transformed object belongs to the required category unconditionally; which arithmetic localization survives or is recoverable; and why the final positive quadratic form is exactly the Weil form. Passing one gate by destroying the input needed by the next is not progress toward the endpoint.
 
-## Use matched controls to distinguish pole removal from zero information
+## Use matched controls to distinguish pole/zero removal from arithmetic information
 
-The matched counting half-density is tempered after every finite canonical coboundary hierarchy. This identifies finite dilation differencing as a generic homogeneity cancellation. Any proposed source transformation should be tested against such controls so that arithmetic content is attributed to the residual zero-sensitive structure rather than to pole removal itself.
+The matched counting half-density is tempered after every finite canonical coboundary hierarchy, and WP-292 itself shows that an all-integer counting convolution can screen the nontrivial-zero poles. These controls identify pole removal and category descent as potentially arithmetic-blind operations. Any proposed source transformation should be tested against counting/generalized-prime controls and against the localization lost under convolution, so that any claimed Weil content is attributed to structure that genuinely distinguishes the Mangoldt source.

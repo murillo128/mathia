@@ -1,19 +1,15 @@
-# MI-023 — Blindness survives rowwise; normalization can move rather than remove source depth
+# MI-023 — Blindness survives rowwise; positive endpoint decoding forces macroscopic source depth
 
-**Evidence level:** proved for the current flat Christoffel source through [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md)--[MC-278](../../findings/MC-278-rational-endpoint-decoder-hidden-half-depth.md). No signed arithmetic cancellation theorem or blind-support exclusion is claimed.
+**Evidence level:** proved for the current flat Christoffel source through [MC-273](../../findings/MC-273-christoffel-negative-witness-homogeneous-collapse.md)--[MC-279](../../findings/MC-279-positive-definite-endpoint-decoder-half-depth-barrier.md). No signed arithmetic cancellation theorem or blind-support exclusion is claimed.
 
 MC-273--MC-277 separate representation, conditioning, normalization and aggregation. A negative witness collapses one row to a homogeneous shell, all negative witnesses can be aggregated at only one extra Walsh degree, and the normalized Christoffel scalar still retains the exact blind bit with rowwise margin `delta_(k,m)~2m/k`. The catastrophic one-exception loss appears when normalization or aggregation discards row provenance, not because the low-depth row representation has already forgotten blindness.
 
-MC-278 shows that replacing polynomial normalization by a rational decoder changes the algebraic complexity but not the source-information bill. The exact endpoint function
+MC-278 first showed that replacing polynomial normalization by one rational decoder changes algebraic complexity but not the source-information bill. Its endpoint function has low rational degree, yet its nonnegative Walsh mass concentrates near degree `k/2`; at every source cutoff `m=o(k)`, the low-degree mass is `o(1)`.
 
-`F_q(x)=(1+b(x))^(-q)`
+MC-279 turns that example into a representation boundary. If a Boolean endpoint decoder has nonnegative Fourier/Walsh coefficients, equals one at the blind vector and is uniformly small away from it, then for every fixed `delta>0` the total coefficient mass below degree `(1/2-delta)k` tends to zero. Radiality, the Gamma form and the specific resolvent of MC-278 are irrelevant. Positive definiteness plus pointlike endpoint localization itself forces essentially half-cube source depth.
 
-recovers the blind-row count by rounding once `C 2^(-q)<1/2`, so rational degree only `q=Theta(log C)` is enough. But its unique Walsh expansion has nonnegative radial coefficients whose degree distribution satisfies `E J=(k/2)(1-2^(-q))` and, at the atom-sensitive scale, concentrates around `k/2`. For every source cutoff `m=o(k)`, the coefficient mass below degree `m` is `o(1)`.
+The reusable distinction is now sharper than polynomial versus rational degree. **Algebraic description complexity, positivity and source-support depth are different currencies.** A concise positive scalar inverse can still require macroscopic character depth when translated into the source basis actually supplied by the arithmetic problem.
 
-Thus denominator inversion does not make the endpoint cheap in the canonical arithmetic source hierarchy. It converts a low-degree statistic `b(x)` into a function whose Walsh/Krawtchouk realization imports essentially half-cube source depth. At the live support-matched depth `m=Theta(log log y)`, almost all positive coefficient mass of this rational decoder lies outside the available hierarchy.
+This closes the generic positive-definite scalar-decoder escape. A viable alternative must use signed Fourier mass, exploit restrictions of the actual localized Legendre image that are absent on the full Boolean cube, or act as a genuinely source-native operator/resolvent before reduction to a positive point-selector.
 
-The reusable distinction is stronger than polynomial versus rational degree. **Algebraic description complexity and source-support depth are different currencies.** A nonlinear inverse can be concise before expansion while still depending on macroscopic source depth after translation into the characters actually supplied by the arithmetic problem.
-
-This leaves one precise escape open: control a natural arithmetic resolvent, inverse operator or rational aggregate directly, without expanding the denominator into source subsets. Such a mechanism would have to be native to the localized Legendre-shell structure; MC-278 does not rule it out.
-
-**Boundary.** MC-278 analyzes one explicit rational decoder and does not prove an optimal rational lower bound. High positive Walsh coefficient mass is decisive at the blind vector, where all characters equal `+1`; it is not a claim that every nonblind row receives a large numerical contribution. The original signed cross-row residual and direct arithmetic inversion routes remain open.
+**Boundary.** MC-279 is a lower bound for positive-definite endpoint decoders on the Boolean cube; it is not a lower bound for arbitrary signed decoders or for operators whose action cannot be represented by such a scalar function. The original signed cross-row residual and arithmetic source restriction remain open.
