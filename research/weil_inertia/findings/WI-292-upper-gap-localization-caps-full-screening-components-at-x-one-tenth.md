@@ -16,7 +16,7 @@
   \boxed{\#\pi_0(F_c(X))\ll_{c,\varepsilon}X^{1/10+\varepsilon}}
   \]
 
-  connected components on `[X,2X]`. More strongly, at most `O_{c,epsilon}(X^{1/10+epsilon})` connected components of `R_c(X)` can meet `A_c(X)` at all. Combining this with the published Peck--Maynard baseline in `WI-290`, which gives at least `X^{3/8-o(1)}` positive-length components of `R_c(X)`, shows that only an `X^{-11/40+o(1)}` fraction of the composite-safe component reservoir can even enter an ordinary-prime screening host.
+  connected components on `[X,2X]`. More strongly, at most `O_{c,epsilon}(X^{1/10+epsilon})` positive-length connected components of `R_c(X)` can meet `A_c(X)` at all. Combining this with the published Peck--Maynard baseline in `WI-290`, which gives at least `X^{3/8-o(1)}` positive-length components of `R_c(X)`, shows that only an `X^{-11/40+o(1)}` fraction of the positive-length composite-safe component reservoir can even enter an ordinary-prime screening host.
 - **Consequence:** `WI-291` already showed that raw abundance of lower-scale safe windows cannot force an intersection with the rare upper prime deserts. The present result makes that failure quantitative and deterministic: after localizing to the Heath-Brown-large host family, composite prime-power cuts can create only `X^{1/10+o(1)}` candidate pieces, not the `X^{3/8-o(1)}` pieces available globally. The unresolved branch is therefore concentrated on a polynomially tiny subfamily of the lower-scale reservoir.
 - **What it does not claim:** no candidate component is ruled out; no upper host is proved composite-unsafe; no statistical independence or cross-scale decorrelation is assumed; no simple-critical-zero proportion is improved; and no statement is made for sign-changing, incomplete-screening, many-island, or non-symmetric support topologies.
 - **Novelty boundary:** Heath-Brown's large-gap estimate and the prime-power/perfect-power-in-large-gap literature are prior art. `WI-289`--`WI-291` provide the line-local Lambert geometry and the host-count/measure inputs. The new deduction is the deterministic incidence count below, obtained by expanding the rare upper host intervals by one Lambert radius and counting possible `k`-th-power cuts through elementary spacing. Targeted searches around large prime gaps containing perfect powers or prime powers, prime-square incidence, and recent large-gap surveys did not locate this component-incidence statement; search absence is audit context only, not a priority claim.
@@ -61,11 +61,11 @@ Then for every fixed `epsilon>0`,
 \tag{5}
 \]
 
-If `I_c(X)` denotes the number of connected components of `R_c(X)` that intersect `A_c(X)`, then likewise
+If `I_c^+(X)` denotes the number of **positive-length** connected components of `R_c(X)` that intersect `A_c(X)`, then likewise
 
 \[
 \boxed{
-I_c(X)\ll_{c,\varepsilon}X^{1/10+\varepsilon}.
+I_c^+(X)\ll_{c,\varepsilon}X^{1/10+\varepsilon}.
 }
 \tag{6}
 \]
@@ -83,7 +83,7 @@ Consequently, after the usual harmless adjustment of `epsilon`,
 
 \[
 \boxed{
-\frac{I_c(X)}{M_c(X)}
+\frac{I_c^+(X)}{M_c(X)}
 \ll_{c,\varepsilon}
 X^{-11/40+\varepsilon}
 \left(\frac{\log X}{\log\log X}\right)^2
@@ -92,7 +92,7 @@ X^{-11/40+\varepsilon}
 \tag{8}
 \]
 
-Thus a density-one fraction of the **components** of the composite-safe reservoir, in the component-count sense, is deterministically irrelevant to complete screening on this topology.
+Thus all but a polynomially vanishing fraction of the positive-length components of the composite-safe reservoir are deterministically irrelevant to complete screening on this topology.
 
 ## 1. The ordinary-prime safe set has only rare giant-gap hosts
 
@@ -112,7 +112,7 @@ K\ll_{c,\varepsilon}
 \tag{10}
 \]
 
-Each `A_c(X) cap H_j` is an interval for all sufficiently large `X`. To see this directly, if `p_-<x<p_+` are the fixed neighboring primes defining one host, the two conditions are
+Each `A_c(X) \cap H_j` is an interval for all sufficiently large `X`. To see this directly, if `p_-<x<p_+` are the fixed neighboring primes defining one host, the two conditions are
 
 \[
 \log(x/p_-)\ge D_c(x),
@@ -121,7 +121,7 @@ Each `A_c(X) cap H_j` is an interval for all sufficiently large `X`. To see this
 \tag{11}
 \]
 
-Writing `t=sqrt(x)` and `w=W(ct)`, the derivative already recorded in `WI-289` is
+Writing `t=\sqrt{x}` and `w=W(ct)`, the derivative already recorded in `WI-289` is
 
 \[
 \frac{d}{dt}\frac{W(ct)}t
@@ -147,25 +147,25 @@ so
 
 for large `X`. Thus the two one-sided constraints cut out one central interval, possibly empty, inside each host.
 
-This small monotonicity point is useful: any fragmentation of `F_c(X)` inside one ordinary-prime host must come from the composite prime-power neighborhoods, not from a pathological shape of `A_c(X)` itself.
+This monotonicity point is useful: any fragmentation of `F_c(X)` inside one ordinary-prime host must come from the composite prime-power neighborhoods, not from a pathological shape of `A_c(X)` itself.
 
 ## 2. Only `X^(1/10+o(1))` composite prime powers can cut the eligible hosts
 
-Uniformly for `x in [X,2X]`,
+Uniformly for `x\in[X,2X]`,
 
 \[
 D_c(x)\ll_c\frac{\log X}{\sqrt X}.
 \tag{15}
 \]
 
-Therefore, if the Lambert neighborhood of a prime power `q=p^k`, `k>=2`, meets `A_c(X) cap H_j`, then its center `q` lies within additive distance
+Therefore, if the Lambert neighborhood of a prime power `q=p^k`, `k>=2`, meets `A_c(X)\cap H_j`, then its center `q` lies within additive distance
 
 \[
 O_c(\sqrt X\log X)
 \tag{16}
 \]
 
-of that interval. Let `H_j^+` denote the corresponding additive enlargement of `H_j cap [X,2X]`. From (9)--(10),
+of that interval. Indeed, `|\log(q/x)|<D_c(x)` implies `|q-x|\le x(e^{D_c(x)}-1)=O_c(\sqrt X\log X)`. Let `H_j^+` denote the corresponding additive enlargement of `H_j\cap[X,2X]`. From (9)--(10),
 
 \[
 \sum_{j=1}^K |H_j^+|
@@ -176,16 +176,18 @@ X^{3/5+\varepsilon}
 \tag{17}
 \]
 
-All relevant prime powers are then in a fixed multiplicative shell `q asymp X`.
+All relevant prime powers are then in a fixed multiplicative shell, say `[X/2,3X]`, for sufficiently large `X`.
 
-For fixed `k>=2`, forget primality of the base and count all integer `k`-th powers. Consecutive `k`-th powers near `X` are separated by
+For fixed `k>=2`, forget primality of the base and count all integer `k`-th powers. If `m^k\in[X/2,3X]`, then uniformly in `k`,
 
 \[
-(m+1)^k-m^k\gg_k X^{1-1/k}.
+(m+1)^k-m^k
+\ge m^{k-1}
+\ge \frac13 X^{1-1/k}.
 \tag{18}
 \]
 
-Consequently the number of incidences `(j,m)` with `m^k in H_j^+` obeys
+Consequently the number of incidences `(j,m)` with `m^k\in H_j^+` obeys, with an absolute implied constant,
 
 \[
 N_k
@@ -204,7 +206,7 @@ K+X^{-1/2}X^{3/5+\varepsilon}
 \tag{20}
 \]
 
-For every `k>=3`,
+For every `k>=3`, uniformly in `k`,
 
 \[
 N_k
@@ -214,7 +216,7 @@ K+X^{-2/3}X^{3/5+\varepsilon}
 \tag{21}
 \]
 
-A prime power `p^k asymp X` has `k<=log_2(3X)`. Summing (21) over all `k>=3` and using (10), with logarithms absorbed into `X^epsilon`, yields
+A prime power `p^k\in[X/2,3X]` has `k\le\log_2(3X)`. Summing (21) over all `k>=3` and using (10), with logarithms absorbed into `X^epsilon`, yields
 
 \[
 \sum_{k\ge3}N_k
@@ -232,13 +234,13 @@ Together with (20),
 \tag{23}
 \]
 
-No prime number theorem, independence hypothesis, or lower-scale gap estimate is used in this counting step. Prime powers are bounded by the much larger set of integer powers, and (18) supplies all the spacing needed.
+No prime number theorem, independence hypothesis, or lower-scale gap estimate is used in this counting step. Prime powers are bounded by the much larger set of integer powers, and the uniform spacing estimate (18) supplies all the spacing needed.
 
 ## 3. Incidence counting gives the component bound
 
 For sufficiently large `X`, the Lambert neighborhood associated with one fixed `q` is itself an interval. Indeed, on the left and right of `q`, the two boundary functions are the same monotone functions appearing in (11)--(14). Removing one interval from another increases the number of connected components by at most one.
 
-Inside the `j`-th ordinary-prime host, `A_c(X) cap H_j` starts as one interval. It can therefore be split into at most one plus the number of composite-power neighborhoods that meet it. Summing over the `K` hosts and applying (23),
+Inside the `j`-th ordinary-prime host, `A_c(X)\cap H_j` starts as one interval. It can therefore be split into at most one plus the number of composite-power neighborhoods that meet it. Summing over the `K` hosts and applying (23),
 
 \[
 \#\pi_0(F_c(X))
@@ -249,10 +251,10 @@ Inside the `j`-th ordinary-prime host, `A_c(X) cap H_j` starts as one interval. 
 
 which proves (5). Endpoint contacts or singleton remnants do not change the estimate; on a fixed dyadic shell only finitely many relevant prime-power boundaries occur, and they are already charged by the same incidence count.
 
-Every connected component of `R_c(X)` that meets `A_c(X)` contains at least one connected component of `F_c(X)`. Distinct components of `R_c(X)` cannot share the same component of `F_c(X)`. Hence
+Every positive-length connected component of `R_c(X)` that meets `A_c(X)` contains at least one connected component of `F_c(X)`. Distinct components of `R_c(X)` cannot share the same component of `F_c(X)`. Hence
 
 \[
-I_c(X)\le\#\pi_0(F_c(X)),
+I_c^+(X)\le\#\pi_0(F_c(X)),
 \tag{25}
 \]
 
@@ -265,17 +267,17 @@ Combining (6) with the published baseline (7) gives (8), since
 \tag{26}
 \]
 
-The exponent gap is therefore not merely a comparison of two unrelated counts: after localization, it proves that only a polynomially vanishing fraction of the actual composite-safe components can even meet the upper ordinary-prime candidate set.
+The exponent gap is therefore not merely a comparison of two unrelated counts: after localization, it proves that only a polynomially vanishing fraction of the actual positive-length composite-safe components can even meet the upper ordinary-prime candidate set.
 
 ## 4. Stress tests and limits
 
 The estimate is deliberately worst-case. A single prime-power neighborhood may meet more than one eligible host, so the proof counts **incidences**, not merely distinct prime powers. Equation (19) remains valid after summing host by host, so no hidden disjointness assumption is present.
 
-Very large upper prime gaps do not break the argument. Their full lengths are already paid for by the Heath-Brown total-length budget (9); after the `O(sqrt(X) log X)` enlargement, (17) remains of the same `X^(3/5+epsilon)` order because the number of hosts is controlled separately by (10).
+Very large upper prime gaps do not break the argument. Their full lengths are already paid for by the Heath-Brown total-length budget (9); after the `O(\sqrt X\log X)` enlargement, (17) remains of the same `X^{3/5+\varepsilon}` order because the number of hosts is controlled separately by (10).
 
-The `k>=3` layers also do not accumulate a larger exponent. For each fixed `k` their power spacing is at least `X^(2/3)` on the shell, while there are only `O(log X)` possible exponents. The entire deeper-power family is therefore absorbed by the same one-tenth host exponent.
+The `k>=3` layers also do not accumulate a larger exponent. Uniformly over every admissible exponent, their integer-power spacing is at least a constant multiple of `X^{2/3}` on the shell, while there are only `O(\log X)` possible exponents. The entire deeper-power family is therefore absorbed by the same one-tenth host exponent.
 
-Most importantly, (5)--(8) are **not** an exclusion theorem. They are compatible with one, finitely many, or `X^(1/10-o(1))` genuinely fully screened candidate components. A proof of RH cannot be obtained by counting the global residual windows more accurately: almost all of those windows are now known to live outside the only upper hosts that matter. The remaining arithmetic task is local to the rare host family.
+Most importantly, (5)--(8) are **not** an exclusion theorem. They are compatible with one, finitely many, or `X^{1/10-o(1)}` genuinely fully screened candidate components. A proof of RH cannot be obtained by counting the global residual windows more accurately: almost all of those windows are now known to live outside the only upper hosts that matter. The remaining arithmetic task is local to the rare host family.
 
 ## 5. Prior-art audit
 
