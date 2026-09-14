@@ -404,3 +404,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 101. **Gerd Grubb**, “Integration by parts and Pohozaev identities for space-dependent fractional-order operators,” *Journal of Differential Equations* **261**(3) (2016), 1835–1879. DOI: https://doi.org/10.1016/j.jde.2016.04.017. arXiv: https://arxiv.org/abs/1511.03901.
      - Role: main low-regularity Pohozaev anchor for `PL-308`. Theorem 4.7 extends the radial integration-by-parts identity to transmission solutions above the `s+1/2` threshold with singular products interpreted as Sobolev dualities; Corollary 4.8 specializes homogeneous translation-invariant symbols to the Pohozaev identity and uses the interior normal convention that gives the endpoint sign on `(-1,1)`.
+
+## Fractional Green traces and the small-order boundary layer
+
+102. **Claudia Bucur**, “Some observations on the Green function for the ball in the fractional Laplace framework,” *Communications on Pure and Applied Analysis* **15**(2) (2016), 657–699. DOI: https://doi.org/10.3934/cpaa.2016.15.657. arXiv: https://arxiv.org/abs/1502.06468.
+     - Role: primary Green-kernel anchor for `PL-309`. Theorems 3.1--3.3 give the explicit fractional Dirichlet Green function on a ball, the zero-exterior Poisson representation, and the normalization constant. `PL-309` specializes these formulas to `(-1,1)`, derives the exact boundary quotient and logarithmic rescaling `t=e^{-r/s}`, and uses a smooth exponentially localized forcing family to prove that bulk `L^infty` convergence alone cannot determine the `s^{-1/2}` boundary trace.
