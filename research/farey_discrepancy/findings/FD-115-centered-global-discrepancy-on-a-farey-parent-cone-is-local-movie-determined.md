@@ -50,6 +50,7 @@ Order these visible rays by their positions and define the local rank from the l
 \#\left\{
 (m,n):
 \gcd(m,n)=1,
+\ m,n\ge0,
 \ mb+nd\le Q,
 \ A<x_{m,n}\le x_{u,v}
 \right\}.
