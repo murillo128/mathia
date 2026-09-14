@@ -1,17 +1,19 @@
-# MI-010 — Fixed rational anchor histories are periodic Möbius filters
+# MI-010 — The complete cumulative Farey discrepancy field is a reversible Mertens representation
 
-**Evidence level:** exact representation classification from [FD-116](../../findings/FD-116-fixed-rational-anchor-horizon-dynamics-is-a-periodic-mobius-transform.md), using the canonical denominator-shell identity already stored in the line. This does not bound Mertens cancellation and does not cover moving or growing-denominator anchors.
+**Evidence level:** exact representation classification from [FD-116](../../findings/FD-116-fixed-rational-anchor-horizon-dynamics-is-a-periodic-mobius-transform.md) and [FD-117](../../findings/FD-117-full-farey-discrepancy-field-is-invertibly-equivalent-to-the-quotient-mertens-staircase.md), using the denominator-shell/Fourier identities already canonical in the line. This is not a new Mertens bound and does not prove RH.
 
-For a fixed reduced rational endpoint `A=a/b`, the only absolute discrepancy coordinate left open by FD-115 has exact horizon increments
+FD-116 showed that every fixed rational anchor history is only a periodic Möbius filter. FD-117 removes the apparent moving-anchor escape. For every horizon `N`, the entire cumulative discrepancy function satisfies
 
-`D_Q(A)-D_(Q-1)(A)=e_Q(A)=sum_(m|Q) mu(Q/m) g_A(m)`,
+`D_N(x)=x-floor(x)+sum_(m<=N) (floor(mx)-mx) M(floor(N/m))`.
 
-where `g_A` is a zero-mean `b`-periodic sequence. Equivalently,
+Thus arbitrary moving endpoints, growing denominators, growing endpoint families, or same-field adaptive selectors are all functionals of the same quotient-Mertens staircase. The converse is exact as well: for `1<=k<=N` the Fourier coefficients obey
 
-`D_Q(A)=A+sum_(m<=Q) f_A(m) M(floor(Q/m))`.
+`1+2 pi i k \hat D_N(k)=sum_(d|k) d M(floor(N/d))`,
 
-Thus retaining the anchor through many horizons does not create a second Farey state: it feeds one finite periodic table through the same Möbius/Mertens source already present in the denominator shells. For finitely many fixed rational anchors, the vector kernel is still periodic with period the lcm of their denominators.
+and divisor Möbius inversion recovers every quotient value `M(floor(N/k))`. The complete discrepancy field therefore has exactly the same arithmetic information as that quotient-Mertens state, up to explicit finite transforms.
 
-The useful boundary is exact. A higher-dimensional embedding, Plücker coordinate, antisymmetric statistic or nonlinear functional of finitely many fixed anchor histories may still prove a stronger estimate for this Möbius-filtered object, but it cannot claim information independence merely from the added coordinates. A genuinely new anchor channel must make its kernel vary with scale: a moving endpoint `A_Q`, denominator or family size growing with `Q`, a global cross-cone selection law, or another source-conditioned construction not reducible to a fixed periodic filter.
+Across horizons the conclusion becomes stronger rather than weaker: `(D_2,...,D_N)` and `(M(1),...,M(N))` are mutually reconstructible. Moving the observation rule can change the geometry of the representation, but it cannot create a second source channel.
 
-This is a representation obstruction, not a smallness theorem. The filtered path may remain arithmetically difficult because it still contains Mertens cancellation; what is removed is the hypothesis that fixed rational cross-horizon anchoring supplies new Farey geometry beyond that source.
+The remaining value of a Farey/geometric reorganization is therefore **proof-theoretic, not informational**. An ordered refinement, exterior coordinate, moving selector, or nonlinear transform can still expose positivity, locality, coercivity, or cancellation that is difficult to see in Mertens coordinates. To count as progress it must yield a quantitatively stronger theorem for the same source, not merely a higher-dimensional or moving representation.
+
+**Boundary.** Information equivalence does not imply equal proof difficulty. FD-117 rules out source independence, not the possibility that a reversible geometric transform makes an RH-critical estimate easier to prove.

@@ -1,67 +1,59 @@
 # Global mathematical questions
 
-## Can a source-native signed transformation become admissible without collapsing to Möbius, flat gauge, or programmable support deletion?
+## Can a source-native signed transformation become admissible without collapsing to Möbius, flat gauge, invisible curvature, or programmable support deletion?
 
-[MI-009](intuition/MI-009-local-correctness-does-not-determine-global-coherence.md), [MI-012](intuition/MI-012-information-content-and-destination-sensitivity-are-separate-resources.md), [MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) and [MI-016](intuition/MI-016-genuine-relational-information-first-appears-as-holonomy-after-gauge-quotient.md) separate source provenance, target sensitivity and relational structure.
+[MI-009](intuition/MI-009-local-correctness-does-not-determine-global-coherence.md), [MI-012](intuition/MI-012-information-content-and-destination-sensitivity-are-separate-resources.md), [MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) and [MI-016](intuition/MI-016-genuine-relational-information-first-appears-as-holonomy-after-gauge-quotient.md) separate source provenance, target sensitivity, relational structure and reachability.
 
-Weil Positivity has now closed scalar recovery, fixed positive multi-channel recovery, finite multiplicative-equivariant linear depth, flat site-dependent transport, and faithful nonparallel pointwise metrics. WP-295--WP-298 imply that exact mixed-composite deletion in the flat linear pointwise class either returns to the visible Möbius direction or uses an actual sitewise nullspace. Arbitrary nullspaces can program the Mangoldt support, so a meaningful pointwise escape must derive a moving kernel from source geometry. The cleaner surviving linear alternative is genuine non-flat prime-diamond curvature; other escapes must change category before scalarization.
+Weil Positivity has closed scalar recovery, fixed positive multi-channel recovery, finite multiplicative-equivariant linear depth, flat site transport and faithful nonparallel pointwise metrics. WP-299 now shows that **ambient output curvature is not enough either**: exact equivariance from the ordinary commuting multiplicative source forces the output prime shifts to commute on the source-generated image, so that image lies in the holonomy-fixed sector. Scalar/projective curvature is trivial on every nonzero reachable channel; nonabelian curvature may survive only in a source-unreachable complement.
 
-The global test is therefore sharper than “add channels or site dependence.” First quotient gauge. If the transport remains flat, faithful positive variation cannot alter exact support; any degeneracy must be independently source-forced rather than fitted to the answer.
+The live linear escape must therefore make mixed-prime curvature source-visible through a genuine upstream category change, or derive a moving nullspace canonically from source geometry. “Non-flat somewhere in the bundle” is no longer a sufficient escape condition.
 
 ## Which source resources survive into the exact destination margin and resolution?
 
 [MI-008](intuition/MI-008-exact-recovery-is-not-stable-transport.md), [MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) and [MI-015](intuition/MI-015-relaxations-that-retain-an-endpoint-extremizer-cannot-prove-the-endpoint.md) keep conditioning, source supply and target sensitivity distinct.
 
-Arithmetic Fidelity still has two different endpoints: its strongest exact fibre rigidity does not remove the weaker middle-singular target unconditionally, while its finite sign-complexity theorem is quantitative only deep in `Re s>1`. The missing bridge remains transport of source-forced low complexity toward a zero-sensitive destination without losing the information being transported.
+Arithmetic Fidelity still has two different endpoints: exact fibre rigidity does not remove the weaker middle-singular target unconditionally, while finite sign-complexity is quantitative only deep in `Re s>1`. The missing bridge remains transport of source-forced low complexity toward a zero-sensitive destination without losing the information being transported.
 
-Nyman--Beurling has now localized the finite high-zero escape. NB-113--NB-114 show that high packets can have severe internal shear while their continuum Burnol target mass vanishes. NB-115 proves that order-one target access after canonical integer-cell compression must put at least half of the finite target projection into modes whose retained-energy eigenvalues are `O(d/G^2+1/R)`, and `O(log G/G+1/R)` for an actual fixed-ratio zeta shell. A uniformly well-retained packet cannot rescue the target; the remaining theorem is to rule out **target-bearing** compression near-kernels, not merely small Gram eigenvalues.
+Nyman--Beurling has narrowed the high-zero escape again. NB-115 says any order-one finite target access from a target-poor Burnol packet must load target-bearing integer-cell compression near-kernels. NB-116 keeps the horizontal displacement in the Burnol weight and applies Selberg zero density, improving the entire actual right-half target tail above height `G` to `O(1/G)` independently of packet rank and width. Thus for `R/G->infinity` any surviving finite rescue must put substantial target weight on compression modes with retention `O(1/G)`, not merely `O(log G/G)`.
 
-Prime Flute has crossed a stronger negative boundary. PF-337--PF-341 kill normalized-insertion translation locality, and PF-342 shows that the direct completed angle for the same sharp fixed physical cutoff is noncompact: adjacent Fourier modes straddling the hard cutoff become indistinguishable on the collapsing corridor and generate order-one canonical correlations on infinitely many separated modules. A viable continuation must change the splitting/observable rather than sharpen the same Hilbert--Schmidt estimate.
+Prime Flute's current sharp-cutoff completed-angle branch remains noncompact: adjacent Fourier modes straddling the hard cutoff generate order-one canonical correlations on infinitely many separated modules. A viable continuation must change splitting/observable rather than sharpen the same compactness estimate.
 
-## Which cancellation theorem remains after local algebra, fixed anchors and generic perturbative shortcuts are closed?
+Prime Lattice has also removed one analytic gate. PL-306 shows conditionally that once the mixed fractional Hadamard/Feynman--Hellmann law and source-structured derivative convergence are available, the renormalized squared endpoint stress follows from the same virial identity. The independent analytic burden is now the actual shape formula plus branch `C_0+BV`/derivative-measure control; the arithmetic sign of the resulting derivative remains separate.
 
-[MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md), [MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) and [MI-015](intuition/MI-015-relaxations-that-retain-an-endpoint-extremizer-cannot-prove-the-endpoint.md) track the relocated endpoint costs.
+## Which cancellation theorem remains after representation enlargement stops adding source information?
 
-Farey Discrepancy has now classified not only the local refinement movie and centered discrepancy but also the simplest absolute-anchor escape. FD-116 proves that every fixed rational anchor history is a finite periodic kernel passed through Möbius/Mertens, and the same holds for any fixed finite rational family. A new coordinate must therefore move with scale: growing denominator/family size, cross-cone selection, or another source-conditioned state not reconstructible from fixed periodic filters.
+[MI-010](intuition/MI-010-source-cancellation-budgets-are-family-specific.md), [MI-013](intuition/MI-013-closing-the-bulk-often-leaves-a-thin-source-specific-endpoint.md) and [MI-015](intuition/MI-015-relaxations-that-retain-an-endpoint-extremizer-cannot-prove-the-endpoint.md) track relocated endpoint costs.
 
-Möbius Cancellation now has a rigid odd-support dichotomy. MC-287 adds to the exact affine criterion of MC-286: if more than half of `F_2^d` is occupied and collision excess is at least `t-1`, a three-or-smaller odd nucleus plus equal-cell pairs forces the endpoint row. Every energy-`<1` odd certificate must therefore have either `K<=2^(d-1)` or `N-K<=t-2`. The second branch is near-injective and pays the same logarithmic-support/primorial-conductor scale as the even obstruction. The source theorem is to exclude half-cube concentration and near-injective encoding, not to prove full Boolean universality.
+Farey Discrepancy now has a complete information classification for its cumulative field. FD-117 proves that the entire function `D_N(x)` is an explicit affine transform of the quotient-Mertens staircase and that its Fourier coefficients invert the transform. Moving endpoints, growing denominators/families and the full horizon history therefore do not create a source independent of Mertens. A Farey continuation must obtain a quantitatively stronger theorem from a reversible reorganization of that source, or leave cumulative discrepancy as the source object.
 
-Prime Lattice remains a state-side regularity problem. Once a fixed state is already `C_0 cap BV`, lower-order prime-shift/completion terms are differentiable through aperture activation; the missing theorem is source-structured uniform BV/derivative-measure control for the varying ground branch, followed separately by branch differentiation and a rational-prime-specific sign law.
+Möbius Cancellation has sharpened the odd-support escape from a half-cube dichotomy to a trichotomy. MC-288 combines the exact padding criterion with Geelen's odd-girth density theorem: an energy-`<1` odd certificate must be near-injective, lie in an affine hyperplane with one generated character constantly `-1`, or have non-affine occupancy `K/2^r <= (t+2)/2^(t+1)`. At the live `t~log log y` scale the last branch is only `(log y)^(-1+o(1))` dense in its own span. Full Boolean universality is far stronger than the remaining source theorem requires.
 
 ## Which exact null-mode constraint survives support relaxation in Weil Inertia?
 
-WI-284 still gives the operator target: complete one-signed screening forces the prime-deleted gamma-plus-pole form to have bottom exactly zero on the supported domain. WI-288 now shows that, for symmetric two-island support, retaining the whole aperture-growing prime-power family adds **no extra support geometry** beyond the actual nearest-prime-power gap:
+WI-288 reduces complete one-signed symmetric two-island screening to the nearest-prime-power Lambert gap. WI-289 resolves the composite layers: prime squares are the unique critical extra layer, imposing an approximately mean-gap-sized prime-free interval near `sqrt(x)`, while higher prime powers contribute only subunit root windows. Their dyadic neighborhoods still leave order `X log log X/log X` uncovered.
 
-`2b <= delta_pp(x)`
-
-is equivalent to complete screening. Combining this with the zero-bottom condition forces
-
-`sqrt(x) delta_pp(x) >= W(c_0 sqrt(x))`.
-
-Thus the two-island route now requires a genuine prime-power gap of roughly `sqrt(x) log x`; current short-interval input does not contradict it. Further “full-family” geometry must leave this topology or use null-equation amplitudes/sign information beyond support disjointness.
+The live obstruction is therefore a coupled two-scale placement theorem: a hypothetical `sqrt(x) log x`-scale prime desert near `x` must also avoid the critical square layer near `sqrt(x)`. Current support screening supplies no correlation between those events; null-equation amplitudes/signs or a different support topology remain separate escapes.
 
 ## What should Prime Circle do with an observable that RH itself makes non-prime?
 
-PC-285 is the unconditional matched-control boundary. PC-286--PC-288 show conditionally on RH that the exact one-profile normalized boundary-log spectrum collapses toward the Li-grid model much farther. PC-288 replaces global Lipschitz transport by one-dimensional path variation plus Kolmogorov discrepancy and reaches
+PC-285 is the unconditional matched-control boundary. PC-286--PC-289 show conditionally on RH that the exact one-profile normalized boundary-log spectrum collapses toward the Li-grid model almost to square-root scale. PC-289 prices the clipped singular set by short-interval prime mass rather than its largest atom and reaches
 
-`B=o(sqrt(q)/(log q)^(5/2))`.
+`B=o(sqrt(q)/(log q)^2)`.
 
-The remaining polylogarithmic neighborhood of square-root scale is now a transport/end-point question, not evidence that prime-specific separation should persist. An order-one separation inside the proven range would contradict RH; if the desired signal is separation rather than collapse, the observable must retain richer cross-level, multi-source, directional or noncommuting information.
+The residual `log^2 q` neighborhood is now tied to the RH prime-to-Li source discrepancy/transport interface, not the old clipping singularity. An order-one separation inside the proven range would contradict RH; if the desired signal is persistent separation, the observable must retain richer cross-level, multi-source, directional, phase-sensitive or noncommuting information.
 
-## Which Robin recovery obstruction remains after the entire leading corridor collapses to one stable-filter state?
+## Which Robin obstruction remains after endpoint, recovery and block maximality all collapse to one stable-filter state?
 
-RE-112--RE-116 show that fixed rays and the self-consistent moving endpoint ray are syndetically compatible on an attained finite edge. RE-117 now proves that the full macroscopic first-recovery corridor is also reconstructible from the same state `J=F_Theta+G_Theta`:
+RE-117 shows that the macroscopic first-recovery corridor is a translated positive lobe of `J=F_Theta+G_Theta`. RE-118 absorbs rightmost block maximality too: after edge normalization the corridor is `(1+t/U)J(U+t)+o(1)`, so the selected block is a forward weighted record of `uJ(u)`.
 
-`Y^(1-Theta) log Y h(N)=e^(-(1-Theta)t)J(U+t)+o(1)`.
-
-The first recovery is therefore first exit from a positive `J`-lobe, and compatible selector-plus-first-zero lobes occur syndetically. The live theorem must control arithmetic selector placement inside these lobes, a sharper recovery endpoint, or lower-order/discrete source information; another leading stable filter cannot create a new coordinate.
+But the same almost-periodic `J` has syndetically many exact positive lobes with an exact weighted critical point, forward-record property, uniform amplitude and bounded-distance first zero. The live attained-edge theorem must therefore control arithmetic selector placement below leading edge resolution, a finer discrete-versus-continuous extremal discrepancy, or another source coordinate not reconstructible from `J`.
 
 ## How large can a pointwise prime-phase fluctuation be after distributed gauge-invariant frustration is priced?
 
-VIS-213 reduces fixed-dimensional worst starts to unit-modulus quadratic optimization; VIS-214 identifies cycle holonomy as the gauge-invariant obstruction to coefficient-envelope attainment. VIS-215 now accumulates that obstruction through a fractional cycle-packing linear program. If `P_±` are the optimal weighted holonomy rewards, then
+VIS-213--VIS-215 reduce fixed-dimensional worst starts to unit-modulus torus optimization and give cycle-holonomy/fractional-packing certificates. VIS-216 adds a normalized magnetic-Laplacian relaxation:
 
-`max_z |z^*Az| <= B(A)-min(P_+,P_-)`.
+`max |z^*Az|/B(A) <= 1-min(bar_lambda_+,bar_lambda_-)`.
 
-The live arithmetic problem is to estimate `P_±` for the actual prime coefficient graph relative to the envelope and Haar RMS. Growing-dimensional access time of the one-parameter prime-log orbit remains separate.
+The Haar variance fixes the quantitative target. With effective edge count `N_eff`, this spectral certificate reaches RMS scale only if `1-min(bar_lambda_+,bar_lambda_-)=O(N_eff^(-1/2))`; a constant positive magnetic gap is only a constant-fraction envelope improvement. The live static theorem must prove nearly maximal frustration for the actual prime graph, or show that the exact fixed-modulus torus minimum substantially beats these relaxations. One-parameter access time remains a separate gate.
 
-The cross-line lesson with Weil Positivity is methodological, not an identification of models: local gauge variation is not relational information. Closed-loop holonomy is the first invariant transport datum; where only a pointwise positive readout remains, exact support can instead change only through an actual kernel, which must itself be source-forced rather than programmed.
+The cross-line lesson with Weil Positivity is now sharper: gauge-invariant loop structure is not enough by itself. It must be **reached by the source** and have the **right quantitative strength at the destination scale**. Ambient curvature in an unused sector and weak magnetic frustration are both structurally real but mathematically inert for the target conclusion.

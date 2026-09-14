@@ -1,25 +1,17 @@
-# MI-017 — The attained-edge selector and its macroscopic recovery are one stable-filter lobe
+# MI-017 — Selector, recovery and block maximality are one weighted stable-filter lobe
 
-**Evidence level:** exact consequence of RE-112--[RE-117](../../findings/RE-117-finite-edge-robin-recovery-profiles-collapse-to-stable-filter-positive-lobes.md). No contradiction with false RH or density theorem for actual selected CA blocks is claimed.
+**Evidence level:** exact attained-edge reduction through RE-112--[RE-118](../../findings/RE-118-edge-normalized-block-maxima-are-weighted-stable-filter-lobe-records.md). No contradiction with false RH or theorem on the arithmetic placement of actual CA selectors is claimed.
 
-Let `Theta=sup Re(rho)` be attained with `1/2<Theta<1`, write `c=1-Theta`, and use the edge profiles `F=F_Theta`, `G=G_Theta`, `J=F+G`. RE-114--RE-116 show that fixed mixed rays, the adaptive edge-normalized ray and its exact self-consistent moving exponent are all realized at positive syndetic phases.
+Let `Theta` be an attained finite off-critical edge, `c=1-Theta`, and `J=F_Theta+G_Theta`. RE-114--RE-116 show that fixed rays and the self-consistent moving endpoint ray are spectrally compatible at syndetic phases. RE-117 then shows that the macroscopic first-recovery corridor is reconstructible from the same translated stable-filter state.
 
-RE-117 shows that the later recovery corridor does not add another leading state. For an adaptive witness `C`, put `Y=log C`, `U=log Y`; for a later CA state with `X=log N` and `t=log(X/Y)` in a fixed bounded interval,
+RE-118 adds the apparently stronger fact that the selected CA state is the **rightmost block maximum**. If `U=log log C` and `t=log(log N/log C)` stays in the first recovery corridor, then
 
-`Y^c log Y (h(C)-h(N)) = int_0^t e^(-cs) F(U+s) ds + o(1)`.
+`B_Theta(N) = (1+t/U) J(U+t) + o(1)`.
 
-Because the stable filter satisfies
+Hence block maximality becomes a forward record condition for the weighted state `u J(u)`, while first recovery is the end of its positive lobe. The actual packet also satisfies the moving-ray residual `J'(U)+J(U)/U=o(1)`.
 
-`J(U)=int_0^t e^(-cs)F(U+s)ds + e^(-ct)J(U+t)`,
+This still does not distinguish the arithmetic selector. The same almost-periodic profile `J` contains syndetically many exact positive lobes whose rightmost global weighted maximum satisfies `(uJ(u))'=0`, remains the forward record until the first zero, has a uniform amplitude floor, and reaches that zero at bounded positive distance. Endpoint criticality, positive recovery and block-record maximality therefore remain mutually compatible inside the leading spectral control.
 
-the selector normalization collapses the complete recovery profile to
+The missing datum is now unequivocally **placement below leading edge resolution**: how the discrete CA selector chooses among these compatible weighted lobes, a finer-than-`o(1)` discrepancy between the actual maximum and the continuous weighted record, or another source coordinate not reconstructible from `J`. Adding another leading-order extremality condition on the same lobe cannot supply it.
 
-`Y^c log Y h(N)=e^(-ct)J(U+t)+o(1)`.
-
-Hence a first later nonpositive CA state is, at leading edge scale, a first zero at the end of a positive `J`-lobe. This looks stronger than the endpoint ray but is still spectrally noncoercive: RE-117 proves that for every fixed admissible selector parameter there are syndetically many exact selector roots with `J(u)` bounded below, followed at a bounded positive distance by the first zero of `J`.
-
-The key representation lesson is that **macroscopic recovery is reconstructible from the same stable-filter state that already controls the endpoint**. Integrating the edge profile over a fixed multiplicative corridor does not manufacture a new source coordinate; it only compares two shifted samples of `J`.
-
-The live obstruction must therefore be arithmetic rather than spectral-existence at this scale: actual CA selector placement inside the compatible positive lobes, a sharper law for the exact recovery endpoint, or lower-order/discrete information invisible to the leading almost-periodic state. Another fixed stable linear filtering of `F` cannot by itself escape this closure.
-
-**Boundary.** Syndetic compatible lobes do not show that the arithmetic selectors land in them. The `Theta=1` branch remains separate, and RE-117 concerns fixed multiplicative recovery corridors on an attained finite edge.
+**Boundary.** The conclusion concerns the attained finite-edge branch and leading `Y^(-c)/log Y` normalization. It does not exclude lower-order arithmetic selection, the nonattained-edge branch or the separate `Theta=1` regime.

@@ -6,7 +6,7 @@ This file holds the current mathematical questions suggested by the durable visu
 
 **Linked intuitions:** `MI-006-nonlocal-information-and-macroscopic-amplitude-are-separate-gates`, `MI-007-moment-null-packets-pay-an-order-matched-variation-gate`.
 
-VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequency channel where finite signed moment-null packets can erase finite-order response. The decisive evidence must come from a source-side lower-order term that survives the matched null, not from a visually striking residual after universal control subtraction.
+VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequency channel where finite signed moment-null packets can erase finite-order response. Decisive evidence must come from a source-side lower-order term that survives the matched null, not from a visually striking residual after universal control subtraction.
 
 ## Treat every fixed finite-order Gram-phase mixing test as a deterministic clock control
 
@@ -14,24 +14,24 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Prove an asymptotic weighted-frustration certificate, then price access time separately
+## Prove nearly maximal weighted frustration, or show that the exact torus constraint beats its relaxations
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`, `MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization`.
 
-VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quadratic optimum `max |z^*A_(y,H)z|`; Kronecker density settles existence but not the size of the optimum or the time required to reach a near-optimizer. VIS-214 quotients vertex gauge and identifies cycle holonomy as the exact obstruction to coefficient-envelope attainment.
+VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quadratic optimum. VIS-214 identifies cycle holonomy as the exact gauge-invariant envelope obstruction, and VIS-215 accumulates it through fractional weighted cycle packing.
 
-VIS-215 makes that obstruction additive and weight-sensitive. For a support cycle `C` with harmonic resistance `R(C)=sum_(e in C)1/w_e`, the positive/negative synchronization deficits satisfy
+VIS-216 adds the normalized magnetic-Laplacian relaxation. If `bar_lambda_±` are the coefficient-mass-weighted positive/negative ground-state averages,
 
-`E_± >= |1-H_±(C)|^2/R(C)`.
+`max |z^*Az|/B(A) <= 1-min(bar_lambda_+,bar_lambda_-)`.
 
-For every fractional cycle packing `lambda_C` with edge capacities `sum_(C contains e) lambda_C<=1`, these rewards add. If `P_±` is the optimal packing value, then uniformly on the torus
+The exact Haar variance calibrates the strength required: with effective edge count `N_eff`, RMS-scale suppression from this spectral certificate alone needs
 
-`max |G(z)| <= B(A)-min(P_+,P_-)`.
+`1-min(bar_lambda_+,bar_lambda_-) = O(N_eff^(-1/2))`.
 
-The deterministic optimization is now explicit. The live arithmetic theorem is to show that the **actual prime coefficient graph** has packing reward on a scale strong enough to separate the torus optimum from the absolute envelope or compare it sharply with the Haar RMS scale. A single visibly frustrated light cycle is not enough; the relevant quantity is distributed holonomy weighted by harmonic edge resistance and shared-edge capacity.
+A constant positive gap is therefore not enough. The live static theorem must show nearly maximal magnetic/cycle frustration for the actual prime graph, or prove that the fixed-modulus torus minimum is materially smaller than these relaxations alone can certify when their gaps are weak.
 
-Separately, even a strong static packing certificate says nothing about the one-parameter access time to the relevant torus region. Growing-dimensional simultaneous Diophantine approximation remains a distinct gate.
+Separately, any static bound leaves the one-parameter access time to near-extremal torus regions unresolved.
 
-## Keep representation closure, torus optimization and access time separate
+## Keep representation closure, relaxation strength, exact torus optimization and access time separate
 
-Pair-difference cancellation has no hidden higher shell in the current quadratic statistic. Averaged suppression does not imply pointwise suppression. Cycle-packing reward lower-bounds unavoidable synchronization energy but does not reconstruct the torus optimizer. Access time is another problem again. A higher-degree observable would be a new mathematical object and requires its own cancellation/gauge classification.
+Cycle holonomy decides exact envelope attainability; cycle packing and magnetic spectra only certify lower bounds on frustration. Their failure to reach RMS scale does not imply the exact torus optimum is envelope-scale. Conversely, a strong static certificate does not solve growing-dimensional Diophantine access time.

@@ -1,29 +1,25 @@
-# MI-017 — Finite high-zero target access requires a target-bearing compression near-kernel
+# MI-017 — Finite high-zero target access requires target weight at inverse-height compression retention
 
-**Evidence level:** exact finite-section reduction from [NB-115](../../findings/NB-115-order-one-finite-high-zero-target-access-must-live-in-vanishing-cell-compression-modes.md), combined there with the Burnol target-mass bound of NB-114 and the current zeta zero-count input. This does not prove a lower bound on the cell-compression spectrum or a Nyman distance estimate.
+**Evidence level:** exact finite-section reduction from [NB-115](../../findings/NB-115-order-one-finite-high-zero-target-access-must-live-in-vanishing-cell-compression-modes.md), sharpened by [NB-116](../../findings/NB-116-selberg-density-upgrades-the-high-zero-burnol-tail-to-inverse-height.md) using classical Selberg zero density. This does not prove a lower bound on the cell-compression spectrum or a Nyman distance estimate.
 
-Let `K_F` be a finite Burnol packet and `Q_R` the canonical orthogonal projection onto the first integer cells. In orthonormal coordinates on `K_F`, define
+Let `K_F` be a finite Burnol packet and `Q_R` the canonical orthogonal projection onto the first integer cells. In orthonormal packet coordinates, `H_(F,R)=A^*Q_RA` records retained continuum energy, while the finite target projection is exactly
 
-`H_(F,R)=A^* Q_R A`,
+`b_(F,R)^* H_(F,R)^+ b_(F,R)`.
 
-so its eigenvalues `lambda_j` are exactly the fractions of continuum packet energy retained by the finite arithmetic window. If `b_(F,R)=A^* e_R` are the finite target coordinates, then the target projection onto the compressed packet is not heuristic but exactly
+NB-115 proves that if a target-poor continuum packet nevertheless captures a fixed positive fraction of the finite Nyman target, at least half of that finite target projection must lie in eigenmodes with
 
-`||P_(Q_R K_F)e_R||^2 = b_(F,R)^* H_(F,R)^+ b_(F,R)`.
+`lambda = O(tau(F)+1/R)`.
 
-The numerator remains controlled by continuum target mass:
+NB-116 identifies the correct source scale for actual high zeta zeros. The Burnol defect weights a zero by its horizontal displacement, and Selberg density controls the first horizontal moment:
 
-`||b_(F,R)|| <= sqrt(tau(F)) + R^(-1/2)`.
+`sum_(0<gamma<=T, beta>1/2) (beta-1/2) = O(T)`.
 
-Therefore a fixed positive finite target fraction cannot arise perturbatively from a target-poor continuum packet. NB-115 proves that at least half of that target projection must be carried by eigenmodes with
+Consequently the **entire** actual right-half Blaschke tail above height `G` has `tau=O(1/G)`, uniformly over packet cardinality, multiplicity and ordinate spread. Therefore any order-one finite target access from any finite packet above `G` must load compression modes with
 
-`lambda_j = O(tau(F)+1/R)`.
+`lambda = O(1/G+1/R)`.
 
-For `d` zeros above height `G`, `tau(F)<=d/G^2`, so the required retained-energy scale is `O(d/G^2+1/R)`. For the actual right-half zeta zeros in a fixed-ratio shell, `d=O_A(G log G)`, hence any order-one finite target access must load modes with
+For `R/G -> infinity`, the live threshold is inverse height. The earlier `log G/G` scale was an artifact of charging every high zero equally through raw zero counting. Adding wider packets or more zero rank cannot recover that logarithm because their total target mass is already bounded by the horizontal first moment.
 
-`lambda_j = O_A(log G/G + 1/R)`.
+The remaining escape is sharply target-specific: the actual integer-cell compression would need to place substantial target spectral weight on modes retaining only `O(1/G)` of their packet energy. Small Gram eigenvalues, severe internal shear or large high-zero rank are irrelevant unless the target occupies precisely those near-kernel directions.
 
-This separates **bad compression** from **target-bearing bad compression**. An irrelevant near-kernel of `H_(F,R)` does not rescue the Nyman target; the target coordinates themselves must concentrate spectrally in the vanishing-retention sector. Likewise large zero-state shear or a poorly conditioned raw Gram does not establish the required effect.
-
-The live arithmetic question is now a spectral localization problem for the actual integer-cell map: can source structure rule out target weight on the low-retention modes, even if such modes exist? Any proposed finite high-zero rescue must exhibit the opposite mechanism explicitly.
-
-**Boundary.** Abstract Hilbert geometry allows perfect target amplification by a projection whose sole retention eigenvalue equals the tiny continuum target mass, so no universal functional-analytic argument can remove this escape. The missing input must use the arithmetic cell structure and the actual zeta packet.
+**Boundary.** Abstract Hilbert geometry permits such target-bearing near-kernels. Ruling them out requires arithmetic structure of the integer-cell map and the actual zeta packet; Selberg density alone reaches the `1/G` endpoint but does not control the compression eigenvectors.

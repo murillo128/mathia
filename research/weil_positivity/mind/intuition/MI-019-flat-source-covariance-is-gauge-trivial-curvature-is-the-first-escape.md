@@ -1,25 +1,23 @@
-# MI-019 — Flat covariance and faithful site metrics cannot create Weil support; escape starts at curvature or source-forced nullspace
+# MI-019 — Output curvature is useful only if the source-generated sector can feel it
 
-**Evidence level:** exact linear classification from [WP-295](../../findings/WP-295-hilbert-valued-prime-power-support-forces-one-mobius-direction.md), [WP-296](../../findings/WP-296-multiplicative-shift-equivariant-nonlocal-couplings-are-dirichlet-convolution.md), [WP-297](../../findings/WP-297-flat-multiplicative-boundary-cocycles-are-gauge-trivial.md), and [WP-298](../../findings/WP-298-faithful-nonparallel-site-metrics-cannot-evade-mobius-support-rigidity.md). This closes a representation class; it does not construct the surviving geometry or prove Weil positivity.
+**Evidence level:** exact linear classification from WP-295--WP-298 and sharpened by [WP-299](../../findings/WP-299-source-equivariant-linear-response-lives-in-the-holonomy-fixed-sector.md). This closes a broader linear representation class; it does not construct a surviving arithmetic geometry or prove Weil positivity.
 
-Exact finite Weil localization is rigid under fixed positive channels and equivariant linear depth. WP-295 forces one visible direction `u Lambda` with upstream kernel `u mu`; WP-296 shows finite multiplicative-equivariant linear networks collapse to one operator-valued Dirichlet convolution.
+WP-295--WP-298 show that exact finite Weil localization is rigid under fixed positive channels, multiplicative-equivariant linear depth, flat transport and faithful site metrics. Flat cocycles are pure gauge; faithful positive site variation cannot change exact mixed-composite support; arbitrary nullspaces can only do so by risking programmable support deletion.
 
-WP-297 shows that flat site-dependent transport is only gauge. A multiplicative cocycle has
+WP-299 tests the cleanest remaining linear escape: make the **output** connection genuinely non-flat. Exact source equivariance still imposes a selection rule. If
 
-`C(m,n)=G(mn)G(n)^(-1)`,
+`T S_p = U_p T`
 
-so after the pointwise gauge the architecture returns to ordinary equivariance. A metric parallel under that transport becomes fixed.
+and the scalar multiplicative source shifts commute, then
 
-WP-298 shows that **dropping metric parallelity is still not enough**. After the flat gauge reduction, take arbitrary invertible `G(N)` and arbitrary positive-semidefinite pointwise metrics `Q_N`. If `Q_N` is faithful at every mixed composite and the scalar readout is exactly `Lambda(N)`, positivity implies the vector response itself vanishes at every mixed composite. WP-295 then forces the same Möbius direction.
+`[U_p,U_q] T = 0`.
 
-The support-changing datum of a pointwise positive metric is therefore not its orientation or conditioning but its nullspace. In general exact mixed-composite deletion requires
+At every site the image of `T` therefore lies in the common fixed sector of every prime-diamond holonomy. Ambient curvature may exist, but the source-generated subrepresentation is flat. Scalar/projective holonomy `omega I` with `omega!=1` annihilates every reachable vector; a nonzero exact Mangoldt prime response plus invertible transport forces such scalar holonomy to be trivial everywhere.
 
-`B(N) in G(N)^(-1) ker Q_N`.
+Nonabelian curvature can coexist with exact Mangoldt recovery only on a complementary source-unreachable sector. WP-299 gives an explicit matched control: a curved ambient bundle with a flat fixed line carrying `mu*f`, hence `Lambda`; the curvature is real but arithmetically irrelevant. Standard positive holonomy-defect energies vanish on that reachable line.
 
-A non-Möbius pointwise escape must contain genuine source-forced degeneracy. This is necessary but not automatically meaningful: an arbitrary moving kernel can program the Mangoldt support directly, so its zero directions must be derived independently from the geometry and survive matched generalized-prime controls.
+The surviving linear question is therefore stricter than “introduce curvature.” A useful mechanism must explain how arithmetic data reaches a curvature-sensitive sector **without** contradicting the commutative source representation. That requires a genuine upstream category change: source-native projective/curved incidence, additional finite--archimedean structure, a nonlinear relation formed before scalarization, or another source action not equivalent to the ordinary commuting multiplicative shifts.
 
-The first genuine linear transport escape remains **non-flat mixed-prime incidence**. A prime diamond must carry nontrivial holonomy/curvature so that the two paths to `pqn` cannot be gauged into agreement. Other category changes include extra boundary topology/orbits, nonlinear support-sensitive structure before scalarization, genuinely nonlocal positive forms coupling sites, or finite--archimedean geometry.
+Source-forced moving degeneracy remains a separate possible escape, but its kernel must be derived independently rather than fitted to the Mangoldt zero set.
 
-The reusable test is now two-stage. First quotient removable gauge freedom and ask whether a closed-loop invariant survives. If transport is flat, pointwise positive site variation still cannot change exact support unless it becomes degenerate. Second, if degeneracy appears, ask whether its kernel is source-forced rather than an encoded selector.
-
-**Boundary.** Curvature or a canonical moving nullspace only escapes the localization no-go. Either must still reproduce the archimedean/polar terms and support an independent positivity theorem; neither by itself implies Weil positivity or RH.
+**Boundary.** WP-299 does not forbid ambient curvature. It proves that output curvature alone is decoupled from any exactly equivariant linear response of the ordinary commuting source unless the response leaves the holonomy-fixed sector through additional source structure.

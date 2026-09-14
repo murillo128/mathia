@@ -1,35 +1,31 @@
-# MI-023 — Two-island complete screening is exactly a nearest-prime-power Lambert-W gap constraint
+# MI-023 — Two-island Lambert screening is a coupled prime-gap problem at `x` and `sqrt(x)`
 
-**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through [WI-288](../../findings/WI-288-two-island-complete-screening-is-exactly-a-nearest-prime-power-gap-condition.md), using the prime-deleted spectral endpoint of WI-284/WI-287. This is not a theorem for many-component supports, sign-changing modes, incomplete screening, or existence/nonexistence of prime-power gaps of the required size.
+**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288 and sharpened by [WI-289](../../findings/WI-289-lambert-prime-power-screening-has-a-critical-prime-square-layer.md). This is not a theorem that the required coupled gaps exist or cannot exist.
 
-For two symmetric narrow islands
-
-`E=(-R-b,-R+b) union (R-b,R+b)`,
-
-let `Delta=2R` and `x=e^Delta`. Same-island overlaps with prime-power translations are impossible once `b<log(2)/4`; cross-island overlap occurs exactly when a translation lag lies in `(Delta-2b,Delta+2b)`. Therefore complete screening by **all** active prime powers is equivalent, without approximation, to
+WI-288 reduces complete screening on two symmetric narrow islands to the nearest-prime-power condition
 
 `2b <= delta_pp(x)`,
 
-where
+and combines it with the prime-deleted spectral zero-bottom condition to require
 
-`delta_pp(x)=min_(q prime power)|log q-log x|`.
+`sqrt(x) delta_pp(x) >= W(c sqrt(x))`.
 
-This changes the interpretation of the earlier nearest-prime width relaxation. On the symmetric two-island topology, retaining the whole aperture-growing family does not reveal an additional many-prime support invariant: its support content is exactly the actual nearest-prime-power gap. A coarse short-interval theorem loses information only because it upper-bounds that actual gap, not because the full family contains hidden extra overlap geometry.
+WI-289 resolves what the composite prime powers contribute to that arithmetic obstruction. Exactly,
 
-The spectral zero-bottom condition supplies the opposite inequality. WI-287's gamma uncertainty and exact pole edge imply that a hypothetical completely screened first-crossing null support must have
+`delta_pp(x)=min_(k>=1) k delta_p(x^(1/k))`.
 
-`2b sqrt(x) >= W(c_0 sqrt(x))`.
+At the Lambert radius `D_c(x)=W(c sqrt(x))/sqrt(x)`, the corresponding root-scale prime-free interval has length
 
-Combining with exact screening gives
+`(2/k) x^(1/k-1/2) W(c sqrt(x))(1+o(1))`.
 
-`sqrt(x) delta_pp(x) >= W(c_0 sqrt(x)) = (1/2)log x - log log x + O(1)`.
+Only `k=2` is macroscopically critical beyond the prime layer. The prime condition near `x` demands a desert of size about `sqrt(x) log x`; the square condition becomes a prime-free interval near `sqrt(x)` of length
 
-Thus the consecutive prime-power gap containing `x` must have additive length at least
+`log sqrt(x)-log log sqrt(x)+O(1)`,
 
-`sqrt(x) log x - 2 sqrt(x) log log x + O(sqrt(x))`
+approximately one mean prime gap. Every `k>=3` root window is subunit and contributes only sparse resonance exclusions.
 
-at the necessary scale. This is a condition on the hypothetical RH-failure branch, not a claim that such gaps occur.
+The dyadic coverage calculation makes this structural distinction quantitative. Composite prime-power Lambert neighborhoods cannot cover `[X,2X]`: the square layer leaves a deficit of order `X log log X/log X`, while all deeper powers occupy only `O(X^(5/6) log X)`. Thus “prime powers are denser than primes” is not enough to close the two-island route.
 
-The live two-island problem is now sharply arithmetic. Improving how many screening lags are retained cannot beat this reduction; one must rule out the required actual prime-power gaps, or introduce amplitude information from the null equation beyond support disjointness. Any genuinely new support-geometric use of simultaneous screening must change the topology (for example many components) or the sign/completeness assumptions.
+The live obstruction is a **coupled two-scale placement problem**. One must show that a hypothetical `sqrt(x) log x`-scale prime desert near `x` cannot simultaneously avoid the critical prime-square layer near `sqrt(x)` (and the sparse deeper resonances), or use null-equation amplitude/sign information beyond support screening. WI-289 does not supply the needed correlation between the two scales.
 
-**Boundary.** Current unconditional prime short-interval theorems still permit gaps much larger than the Lambert scale needed here, so no contradiction follows. Prime powers rather than primes are the exact support object, although prime-gap theorems provide valid upper bounds because primes are prime powers.
+**Boundary.** The square-layer coverage deficit does not prove that centers of enormous prime gaps intersect the composite-power-free residual set. No independence between gap events at `x` and `sqrt(x)` is assumed or obtained.

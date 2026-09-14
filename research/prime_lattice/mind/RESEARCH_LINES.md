@@ -2,24 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Derive source-structured completed-Weil BV/derivative-measure compactness from the actual eigen-equation
+## Prove the mixed Hadamard identity and source-structured BV derivative convergence
 
 **Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`, `MI-017-fixed-order-shift-differentiability-survives-without-uniform-half-sobolev-control`.
 
-PL-297--PL-304 isolate the state-side obstruction. Renormalized boundary stress does not control the half-Sobolev moment; generic spectral stability does not preserve BV; the exact Suzuki remainder is BV-stable but the arithmetic shift comb is not contractive at the working aperture; and the exact odd resolvent is not an `L^p -> BV_0` or finite-measure-to-BV smoother for any ordinary forcing norm. A viable inverse estimate must therefore use a proper source-generated forcing range, an exact commutator/cancellation identity, a graph norm that charges first-order frequency, or a direct branch-variation principle.
+PL-297--PL-304 isolate the state-side obstruction: renormalized boundary stress does not control the half-Sobolev moment, generic spectral stability does not preserve BV, and the exact logarithmic resolvent is not an ordinary `L^p`- or measure-to-BV smoother. PL-305 proves that once a fixed state is in `C_0 cap BV_0`, the lower-order prime-shift and completion terms are already `C^1` through aperture activations.
 
-PL-305 now removes the remaining **lower-order aperture-regularity** concern conditional on that state control. For every fixed `w in C_0 cap BV_0`, the translation autocorrelation is `C^1`; newly active prime-power terms enter with both value and first derivative zero at the support edge; and the completed archimedean remainder has a bounded `L^2` aperture derivative. Thus all prime-shift and completion terms are `C^1` through activation thresholds without an `H^(1/2)` bound.
+PL-306 removes a previously separate target. If the actual fractionalized completed-Weil branch admits both fixed-domain Feynman--Hellmann and the moving-domain fractional Hadamard formula, comparison forces the renormalized squared endpoint stress from the same lower-order virial derivative. With derivative convergence,
 
-The live analytic theorem is therefore narrower: obtain the uniform `C_0+BV`/derivative-measure control for the **actual varying regularized ground branch**, then justify the zero-order branch derivative and intrinsic boundary stress. Once that is done, PL-305 says there is no second hidden regularity gate in the lower-order kernels.
+`lim (|tau_+|^2+|tau_-|^2)/(2s) = 1-a partial_a b_a(w_0) = -a lambda_0'(a)`.
+
+Therefore the live analytic work has **two** load-bearing gates: establish the mixed fractional/completed-Weil shape identity on the actual regularization, and derive source-structured `C_0+BV`/derivative-measure compactness strong enough to pass PL-305's derivative through `s->0`. Separate trace-square compactness is no longer required for the scalar Hadamard stress.
 
 ## Prove a rational-prime-specific sign or first-crossing law for the resulting derivative
 
-PL-294--PL-304 show that cone membership is not supplied by generic positivity, subcritical Sobolev closeness, BV transport, a spectral gap, or an ambient forcing norm. PL-305 adds an exact fixed-state derivative formula but does not give its sign.
+The virial identity does not supply the missing sign. Generic positivity, spectral gaps, BV transport and ambient forcing norms do not force the rational-prime branch to move in the required direction.
 
-The sign theorem must therefore come from the actual rational-prime eigen-equation: a boundary-weighted lower law, source-specific oscillation/maximum principle, an absolute-value defect identity, or another order structure unavailable to matched locally finite shift systems. Analytic differentiability and arithmetic sign are distinct gates.
+The sign theorem must come from the actual rational-prime eigen-equation: a boundary-weighted lower law, source-specific oscillation/maximum principle, an absolute-value defect identity, or another order structure unavailable to matched locally finite shift systems. Analytic existence of `lambda_0'(a)` and arithmetic control of its sign remain distinct.
 
-## Keep boundary stress, branch regularity, fixed-state kernel differentiability, source-range coercivity and order structure separate
+## Keep state coercivity, shape calculus, squared stress and signed boundary information separate
 
-PL-297 separates stress from the half-Sobolev moment. PL-299 shows that BV can carry fixed-lag derivatives to zero order on the pure branch. PL-300--PL-304 show that no generic ambient perturbative principle supplies that BV currency. PL-305 proves that, **if the state is already in `C_0 cap BV`**, the arithmetic/completion aperture terms themselves are first-order regular, including at prime activations.
-
-Future arguments should state which missing implication they prove: source-side BV compactness, eigenbranch differentiability, intrinsic boundary stress, or rational-prime sign. None follows automatically from the others.
+PL-306 identifies the squared stress once the first two analytic gates are met, but it does not recover a signed trace, pointwise logarithmic boundary coefficient or new arithmetic observable. Future work should not spend effort proving more endpoint compactness than the eigenvalue shape law needs unless that extra signed boundary information is itself part of the proposed arithmetic mechanism.

@@ -1,21 +1,21 @@
-# MI-024 — Arithmetic-image leverage has a parity-sensitive occupancy dichotomy
+# MI-024 — Arithmetic-image leverage reduces to near-injectivity, affine obstruction, or exponentially sparse support
 
-**Evidence level:** exact variational/certificate reduction from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened by [MC-282](../../findings/MC-282-separated-simplex-leverage-failure.md), [MC-284](../../findings/MC-284-page-siegel-stretched-exponential-shell-legendre-universality.md), [MC-285](../../findings/MC-285-even-shell-pairing-christoffel-support-barrier.md), [MC-286](../../findings/MC-286-odd-shell-affine-span-criterion.md), and [MC-287](../../findings/MC-287-dense-odd-shell-near-injectivity-dichotomy.md). No theorem is claimed that the required Christoffel certificate exists for the actual shell.
+**Evidence level:** exact variational/certificate reduction from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened through MC-282, MC-284--MC-287 and [MC-288](../../findings/MC-288-geelen-odd-girth-density-trichotomy.md). The Geelen step is established finite-geometric prior art composed with the line's exact padding criterion. No theorem is claimed that the desired Christoffel certificate exists for the actual shell.
 
-For feature matrix `A` on the actual arithmetic shell and blind row `v`, the endpoint-normalized energy
+For feature matrix `A` on the actual arithmetic shell and blind row `v`, the endpoint-normalized energy is directional synthesis cost, not generic nonblindness. Moderate-conductor Legendre shadows can already be Boolean-complete, yet favorable endpoint leverage still requires stronger geometry.
 
-`C=inf_(v^*a=1)||Aa||_2^2`
+For odd target weight `t`, MC-286 identifies the exact affine obstruction: failure of an odd zero-sum row is equivalent to `0 notin aff(S)`, hence to one generated product character that is constantly `-1` on the occupied shell. MC-287 showed that support denser than half the cube plus enough collisions already forces the target row.
 
-satisfies `C=1/Lambda`, where `Lambda` is the minimum synthesis cost of `v` from actual rows. MC-282 shows this is directional leverage, not generic nonblindness: an arithmetic realization can have no blind direction and still have poor synthesis leverage. MC-284 further shows that moderate-conductor Legendre shadows are already Boolean-complete.
+MC-288 makes the surviving concentration branch much sharper. If the collision excess satisfies `N-K>=t-1` and no target row exists, the occupied support has odd girth greater than `t`. Geelen's geometric Andrásfai--Erdős--Sós theorem then gives, in the support's own rank-`r` span, either the exact affine obstruction or
 
-The decisive simplification is now combinatorial. For even shell weight, MC-285 shows that equal-pattern pairs create the all-positive endpoint unless projected occupancy is almost injective. For odd weight `t`, MC-286 identifies the exact support obstruction as affine-hyperplane concentration: `0 notin aff(S)`, equivalently some generated product character is `-1` on every shell prime.
+`K/2^r <= (t+2)/2^(t+1)`.
 
-MC-287 shows that this affine obstruction cannot coexist with both dense support and substantial collisions. If `K=|S|>2^(d-1)`, the support already contains an odd zero-sum nucleus of size at most three. If also `N-K>=t-1`, equal-cell pairs pad it to an exact odd `t`-row. Hence any energy-`<1` odd certificate must obey
+Together with the collision-poor case, every odd energy-`<1` candidate must therefore satisfy at least one of three rigid alternatives:
 
-`K<=2^(d-1)  or  N-K<=t-2`.
+`N-K <= t-2`, or `0 notin aff(S)`, or `K/2^r <= (t+2)/2^(t+1)`.
 
-The second branch is near-injective. At live `t=O(log log y)`, it forces `d>=log_2 y-log_2 log y+O(1)` and the same primorial-scale conductor cost already visible in the even branch. Thus the unresolved odd obstruction is no longer “some generated character might be constant-negative” in isolation. It must arise through one of two rigid source geometries: **support compressed into at most half of the Boolean cube**, or **almost every shell prime encoded by a distinct projected pattern**.
+At the live `t=(1/log 2+o(1)) log log y` scale, the non-affine branch occupies only `(log y)^(-1+o(1))` of its own span. The old undifferentiated “half-cube concentration” escape has split into an exact one-character obstruction and an exponentially sparse non-affine image.
 
-This gives a sharper target for arithmetic input. A theorem need not realize every Boolean pattern. It is enough to exclude both branches at the support scales relevant to the Christoffel certificate. Conversely, proving only high rank, generic pattern diversity or nonblindness does not remove either branch.
+The arithmetic target is correspondingly sharper. One can attack the affine branch by ruling out a constant-negative generated quadratic character; attack the sparse branch by proving a much weaker occupancy lower bound than full cube coverage; and attack near-injectivity through its already expensive rank/conductor cost. High rank or generic diversity alone does not remove these three alternatives.
 
-**Boundary.** The density threshold `2^(d-1)` is sufficient rather than necessary for a short odd nucleus, and the collision bound is sufficient rather than necessary for padding a particular nucleus. The dichotomy is a necessary condition for the current endpoint architecture, not an RH estimate or existence theorem for the inverse.
+**Boundary.** The Geelen density threshold is sharp for general binary matroids. Improving it for the actual Legendre shell requires additional arithmetic structure. None of the three necessary branches is itself excluded by MC-288, and no Möbius summatory estimate follows.

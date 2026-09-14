@@ -2,28 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the near-square-root conditional frontier or leave the one-profile architecture
+## Decide whether the residual log-squared square-root gap is intrinsic to one-profile source transport
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`.
 
-PC-224--PC-284 reduce the positive spectral construction to one source-independent cyclic convolution finite section, identify the modular collision selector, and show that selector subtraction leaves a classical digamma/logarithmic Green symbol. PC-285 gives unconditional matched-control reproduction through the Vinogradov--Korobov source-transport range.
+PC-224--PC-285 reduce the positive spectral construction to a source-independent cyclic convolution finite section, isolate the modular collision selector and show unconditional matched-control reproduction through the Vinogradov--Korobov range.
 
-PC-286--PC-288 show that **assuming RH** the same exact normalized boundary-log singular-spectrum law classicalizes much farther. PC-287 replaced worst-case singular depth by flat clipping and an `L^2` exceptional-set cost, reaching `B=o(sqrt(q)/(log q)^3)`. PC-288 sharpens the remaining source transport: along one source coordinate, the clipped spectral path has bounded variation
+PC-286--PC-289 show that **assuming RH** the same exact normalized boundary-log singular-spectrum law classicalizes much farther. PC-288 replaces global Lipschitz transport by one-coordinate path variation. PC-289 then replaces maximal-atom charging of the clipped singular arc by short-interval prime mass on logarithmic-depth bands. The resulting bound
 
-`Var <= O(B/sqrt(epsilon))`,
+`W_1 << sqrt(epsilon+(log q)^3/q) + (B/sqrt(epsilon)) Delta_q + (log q)^2/q`
 
-so one-dimensional Koksma/Stieltjes transport pairs it with the source Kolmogorov discrepancy rather than a global Lipschitz constant. Under RH,
+combined with the RH source discrepancy and `epsilon=B q^(-1/2)(log q)^2` gives collapse for
 
-`Delta_q << q^(-1/2)(log q)^2 + (log q)/q`,
+`B=o(sqrt(q)/(log q)^2)`.
 
-and optimizing `epsilon` yields collapse whenever
+The old clipping loss is no longer the bottleneck. The residual logarithmic gap is tied to the RH prime-to-Li discrepancy entering the transport step. The live one-profile question is whether a sharper source metric/coupling can improve that interface without smuggling in stronger prime information, or whether `log^2 q` marks the natural limit of this normalized finite-section observable.
 
-`B=o(sqrt(q)/(log q)^(5/2))`.
+The logical direction remains one-way: persistent order-one prime/Li separation in the proven RH range would contradict RH; collapse does not imply RH. If a useful criterion requires separation rather than disappearance, the architecture must retain cross-level, multi-source, directional, phase-sensitive or noncommuting information before the singular-spectrum summary.
 
-The remaining polylogarithmic gap is therefore not the old clipping singularity: half a logarithmic power disappears once integrated path variation replaces pointwise derivative control. The live one-profile question is whether a still sharper source/path metric reaches the denominator-microscopic square-root boundary, or whether the residual loss reflects a genuine finite-section transition.
+## Keep unconditional classicalization, RH-conditional collapse and denominator geometry separate
 
-The logical warning is unchanged: this is a one-way RH consequence. Persistent order-one prime-versus-Li separation inside the proven RH range would contradict RH; collapse does not imply RH. If the desired RH signature is an order-one distinction, the architecture must move to cross-level, multi-source, directional, noncommuting or otherwise information-preserving observables.
-
-## Keep unconditional classicalization, RH-conditional collapse and exact denominator geometry separate
-
-PC-285 is unconditional. PC-286--PC-288 import RH through prime-counting discrepancy. Exact denominator resonance is a third mechanism. A future construction must state which regime it addresses and must not reinterpret an RH-forced disappearance of prime/Li separation as positive evidence for RH.
+PC-285 is unconditional. PC-286--PC-289 import RH through prime-counting discrepancy; PC-289's Brun--Titchmarsh step only removes a clipping-mass loss. Exact denominator resonance is a third mechanism. Future claims must identify which input supplies each scale and must not reinterpret RH-forced classicalization as positive RH evidence.
