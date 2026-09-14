@@ -186,18 +186,11 @@ The selector therefore does not sample an arbitrary point beneath the scalar `Y^
 
 ## 3. Sublinear recovery forces phase anti-saturation
 
-Let the crossed event groups have coordinates `eta_e` and physical left coordinates
-
-\[
-u_e:=\Phi(\eta_e^-).
-\tag{17}
-\]
-
-`RE-110` defines
+Let the crossed event groups have event coordinates `eta_e` and physical left coordinates `u_e:=Phi(eta_e^-)`. `RE-110` defines
 
 \[
 M_+(C,D):=\max_e(\eta_e-u_e)_+
-\tag{18}
+\tag{17}
 \]
 
 and proves the exact one-sided recovery budget
@@ -205,7 +198,7 @@ and proves the exact one-sided recovery budget
 \[
 L M_+(C,D)
 \ge(1+o(1))h(C)Y^2\log Y.
-\tag{19}
+\tag{18}
 \]
 
 Assume `L=o(Y)`. Equation (3) gives `lambda_Y=o(1)`, hence (6) gives `F_Theta(log Y)=o(1)`. For every crossed event with positive forward defect, `u_e in [Y,V]=Y+o(Y)`. Writing the left-limit form of (5) as
@@ -215,16 +208,16 @@ Assume `L=o(Y)`. Equation (3) gives `lambda_Y=o(1)`, hence (6) gives `F_Theta(lo
 =x-x^\Theta\bigl(F_\Theta(\log x)+r(x)\bigr),
 \qquad
 \sup_{x\ge X}|r(x)|\to0,
-\tag{20}
+\tag{19}
 \]
 
-boundedness of `F_Theta` and `Theta<1` first force `eta_e asy Y` uniformly. Hence `log eta_e-log Y=o(1)` uniformly. Uniform continuity then gives `F_Theta(log eta_e)=o(1)` for all crossed events, and (20) yields
+boundedness of `F_Theta` and `Theta<1` first force `eta_e asy Y` uniformly. Hence `log eta_e-log Y=o(1)` uniformly. Uniform continuity then gives `F_Theta(log eta_e)=o(1)` for all crossed events, and (19) yields
 
 \[
 \eta_e-u_e=o(Y^\Theta)
 \]
 
-uniformly. This proves (7); inserting it into (19) proves (8).
+uniformly. This proves (7); inserting it into (18) proves (8).
 
 Now suppose a fixed-constant near-minimal family satisfies (9). If `lambda_Y` had a subsequence tending to zero, (9) would make that subsequence sublinear and contradict (8). Hence `liminf lambda_Y>0`; boundedness from (6) gives `lambda_Y asy 1`. Equations (3), (9), and (16) then imply (10).
 
@@ -236,7 +229,7 @@ If the edge is not attained, `F_Theta` is identically zero, so (6) gives `lambda
 \Longrightarrow
 \exists\rho:\Re\rho=\Theta.
 }
-\tag{21}
+\tag{20}
 \]
 
 ## 4. Prior-art boundary and new source target
