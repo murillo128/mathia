@@ -264,7 +264,7 @@ S_{\rm all}(G)
 
 If one symmetry-completes with the conjugate negative-ordinate right-half zeros as Burnol's full divisor does, the same estimate holds with at most twice the envelope in `(23)`. The order remains `O(log G/G)`.
 
-This is stronger than a shell count: even pooling **every** high right-half zero, no matter how many ordinate scales are used, produces order-one classical target mass.
+This is stronger than a shell count: even pooling **every** high right-half zero, no matter how many ordinate scales are used, cannot produce order-one classical target mass.
 
 ## 4. Collective shear and classical target access are quantitatively decoupled
 
