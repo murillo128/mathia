@@ -1,29 +1,37 @@
-# MI-015 — Prime-phase worst starts outlive magnetic and cycle certificates; the correlation SDP is the next exact-scale test
+# MI-015 — Prime-phase worst starts are constant-factor equivalent to the full correlation SDP
 
-**Evidence level:** exact finite-dimensional reduction from VIS-213, exact holonomy and fractional cycle-packing certificates from VIS-214--VIS-215, normalized magnetic-ground-state certificate from VIS-216, exact relaxation lower bound from VIS-217, prime-graph asymptotics in VIS-218, destination pricing in VIS-219, universal simple-cycle packing ceiling in [VIS-220](../../findings/VIS-220-simple-cycle-packing-universal-envelope-ceiling.md), and exact SDP hierarchy/stress certification in [VIS-221](../../findings/VIS-221-sdp-stress-certificate-retains-torus-interactions.md). No asymptotic SDP-tightness theorem, lower bound for the exact torus optimum, recurrence-time theorem or RH consequence is claimed.
+**Evidence level:** exact finite-dimensional reduction from VIS-213, exact holonomy and fractional cycle-packing certificates from VIS-214--VIS-215, normalized magnetic-ground-state certificate from VIS-216, exact relaxation lower bound from VIS-217, prime-graph asymptotics in VIS-218, destination pricing in VIS-219, universal simple-cycle packing ceiling in [VIS-220](../../findings/VIS-220-simple-cycle-packing-universal-envelope-ceiling.md), exact SDP hierarchy/stress certification in [VIS-221](../../findings/VIS-221-sdp-stress-certificate-retains-torus-interactions.md), and the classical complex symmetric-Grothendieck comparison specialized in [VIS-222](../../findings/VIS-222-symmetric-grothendieck-constant-factor-sdp-torus-equivalence.md). No prime-specific asymptotic SDP estimate, recurrence-time theorem or RH consequence is claimed.
 
-For fixed `y,H`, the worst start is exactly the unit-modulus quadratic optimum `max_|z_p|=1 |z^*A_(y,H)z|`. Kronecker density settles existence of torus phases, not the size of this optimum or the time needed to approach it.
+For fixed `y,H`, VIS-213 identifies the worst start exactly with the unit-modulus quadratic optimum
 
-VIS-214 identifies cycle holonomy as the gauge-invariant obstruction to exact coefficient-envelope attainment. VIS-215 turns that obstruction into weighted fractional cycle-packing certificates. VIS-216 adds a normalized magnetic-Laplacian relaxation. VIS-217--VIS-218 prove that this spectral certificate misses Haar-RMS scale by a diverging factor in the strictly subcritical prime regime, and VIS-219 shows that simple-cycle packing would need near-total envelope saturation. VIS-220 proves that impossible inside that LP: every simple support graph leaves at least `7B/9` residual, so the normalized certificate diverges like `sqrt(N_eff)`.
+`M_abs(A_(y,H)) = max_(|z_p|=1) |z^*A_(y,H)z|`.
 
-VIS-221 identifies a stronger global interaction class that is **not** closed by those failures. The standard correlation SDP
+Kronecker density settles equality of the one-parameter supremum with this finite torus optimum; it does not determine its size or the time required to approach a near-maximizer.
 
-`U_+(A)=max Tr(AX),  X>=0, X_ii=1`
+VIS-214 identifies cycle holonomy as the gauge-invariant obstruction to exact coefficient-envelope attainment. VIS-215 turns that obstruction into weighted fractional cycle-packing certificates. VIS-216 adds a normalized magnetic-Laplacian relaxation. VIS-217--VIS-218 prove that this spectral certificate misses Haar-RMS scale by a diverging factor in the strictly subcritical prime regime, and VIS-219--VIS-220 show that simple-cycle packing also remains on the coefficient-envelope scale.
 
-with dual `min sum_i d_i` subject to `Diag(d)-A>=0` upper-bounds the positive torus optimum; applying it to `-A` controls the negative side. The VIS-216 magnetic bound is one particular degree-proportional feasible dual point inside this SDP. Hence failure of the magnetic ansatz does not imply failure of the full correlation relaxation.
+VIS-221 moves to the full correlation SDP
 
-A stationary torus candidate carries an exact a-posteriori tightness test. If `d_i(z)=conj(z_i)(Az)_i` is real and
+`U_abs(A)=max_(X>=0, diag(X)=1) |Tr(A X)|`.
 
-`S_z=Diag(d(z))-A >= 0`,
+The old magnetic certificate is one restricted degree-proportional dual stress inside this SDP. A stationary torus candidate `z` with
 
-then `z` is a global maximizer and the SDP is rank-one exact. Conversely, an optimal rank-one SDP solution has this PSD stress. This separates “found a plausible phase pattern” from a finite-dimensional proof of the exact torus optimum.
+`S_z = Diag(conj(z_i)(Az)_i) - A >= 0`
 
-The destination scale still controls whether the stronger certificate is useful. With `B=2 sum_e w_e`, `R=2 sum_e w_e^2`, `N_eff=(sum_e w_e)^2/(sum_e w_e^2)` and signed SDP deficits `Delta_±^SDP=B-U_±`,
+is a certified global maximizer and gives rank-one SDP tightness; conversely an optimal rank-one SDP solution has this stress certificate.
 
-`U_abs/sqrt(R)=sqrt(2N_eff)[1-min(Delta_+^SDP,Delta_-^SDP)/B]`.
+VIS-222 removes the remaining objective-scale ambiguity. Friedland--Lim's complex symmetric Grothendieck inequality identifies `U_abs` and `M_abs` with the corresponding symmetric Grothendieck seminorms and gives the dimension-free comparison
 
-Therefore the SDP proves Haar-RMS worst-start control only if its smaller signed deficit is `B-O(sqrt(R))`. A constant-factor improvement over the coefficient envelope is not enough.
+`M_abs(A) <= U_abs(A) <= K_gamma^C M_abs(A)`,
 
-The live fork is precise. If the canonical prime matrices have `U_abs=O(sqrt(R))`, the desired static upper bound follows even without rank-one exactness. If a rank-one optimizer with PSD stress appears, the exact finite torus optimum is certified. If instead the SDP value is large but the optimizer is high rank, only the relaxation has failed; that gives no lower bound on the exact unit-modulus problem.
+with `K_gamma^C <= 8/pi - 1 < 1.547`.
 
-**Boundary.** VIS-221 does not prove that the correlation SDP is asymptotically tight or that prime phases create enough frustration. The exact torus objective remains strictly below the SDP unless rank-one tightness is established. One-parameter access time is still separate and should not be mixed into the static certificate question.
+Therefore high rank can obstruct exact optimizer recovery but **cannot create an unbounded multiplicative relaxation gap in the objective value**. For the canonical prime matrices,
+
+`U_abs/K_gamma^C <= sup_T |M_v(y;H,T)-1| <= U_abs`.
+
+After normalization by the exact Haar scale `sqrt(R_v)`, boundedness or divergence of the SDP ratio is equivalent to boundedness or divergence of the exact torus/worst-start ratio. The live static problem is therefore simply to determine the asymptotic scale of `U_abs(A_(y,H))/sqrt(R_v(y,H))`. If it is `O(1)`, the exact worst-start amplitude is at RMS scale; if it diverges, the exact worst-start amplitude diverges relative to RMS as well, up to the same universal constant.
+
+Rank-one stress remains useful for exact finite optimizers and values, but it is no longer required for asymptotic scale transfer. Likewise, failure of the magnetic or cycle certificates says nothing by itself about the SDP scale, while a large **optimal** SDP value now has direct lower-bound content for the exact torus optimum.
+
+**Boundary.** VIS-222 does not determine the prime-specific SDP scale, SDP rank, exact finite relaxation gap, maximizing phase assignment or one-parameter access time. The symmetric-Grothendieck comparison is multiplicative and static; quantitative recurrence along the prime-log orbit remains a separate simultaneous-Diophantine problem.

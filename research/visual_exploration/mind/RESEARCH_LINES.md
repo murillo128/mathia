@@ -14,7 +14,7 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Test the full correlation SDP before returning to the exact fixed-modulus torus problem
+## Determine the full correlation-SDP scale on the canonical prime matrices
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`, `MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization`.
 
@@ -22,24 +22,22 @@ VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quad
 
 VIS-217--VIS-218 close the normalized spectral branch throughout `H log y/y->0`: the actual prime graph has `N_eff/n->infinity`, forcing the magnetic certificate above Haar-RMS scale by a diverging factor regardless of edge phases. VIS-219 prices the stronger cycle-packing certificate, and VIS-220 proves a phase-independent ceiling: for support-graph girth `g`, `P_+,P_- <= (2/g^2)B`, so every simple graph leaves at least `7B/9` residual. The simple-cycle LP is therefore exhausted regardless of how many cycles are enumerated.
 
-VIS-221 opens a strictly stronger certificate rather than returning immediately to the nonconvex torus problem. For the Hermitian coefficient matrix `A`, the correlation SDP
+VIS-221 opens the full correlation SDP
 
-`U_+(A)=max Tr(AX)` subject to `X>=0`, `X_ii=1`
+`U_abs(A)=max_(X>=0,diag(X)=1)|Tr(A X)|`.
 
-and its analogue for `-A` upper-bound both signed torus optima. The old magnetic certificate is exactly a restricted feasible dual ansatz inside this SDP, so VIS-218 does not close the larger class. A stationary torus point `z` is certified as a global maximizer, with rank-one SDP tightness, whenever its stress matrix
+It retains all pair correlations and contains the old magnetic certificate as a restricted dual ansatz. A stationary torus point is a certified global maximizer with rank-one SDP tightness when its full stress matrix `Diag(conj(z_i)(Az)_i)-A` is positive semidefinite.
 
-`S_z = Diag(conj(z_i)(Az)_i) - A`
+VIS-222 then changes the role of the SDP completely. The complex symmetric Grothendieck inequality gives, for every finite Hermitian `A`,
 
-is positive semidefinite.
+`M_abs(A) <= U_abs(A) <= K_gamma^C M_abs(A)`, `K_gamma^C<=8/pi-1`.
 
-The destination calibration remains severe. With `B=2 sum_e w_e`, `R=2 sum_e w_e^2` and `N_eff=(sum_e w_e)^2/(sum_e w_e^2)`, the signed SDP deficit must satisfy
+Thus the SDP is a universal constant-factor surrogate for the exact torus objective, not merely an upper certificate of unknown multiplicative quality. For the canonical prime matrices, `M_abs` is exactly the fixed-parameter worst-start supremum by VIS-213. Consequently `U_abs/sqrt(R_v)` is bounded iff the exact torus/worst-start ratio is bounded, and it diverges iff the exact ratio diverges.
 
-`U_abs/sqrt(R) = sqrt(2N_eff) [1-min(Delta_+^SDP,Delta_-^SDP)/B]`.
+The live static question is therefore the prime-specific asymptotic scale of `U_abs(A_(y,H))/sqrt(R_v(y,H))`. An RMS-scale SDP value proves the exact worst-start amplitude is RMS-scale. A divergent SDP ratio proves the exact worst-start ratio diverges as well, within the universal Grothendieck factor. Rank-one stress remains useful only for recovering the exact finite optimizer/value rather than for deciding asymptotic objective scale.
 
-Thus Haar-RMS certification requires `min(Delta_+^SDP,Delta_-^SDP)=B-O(sqrt(R))`; a constant-fraction envelope improvement is still useless when `N_eff` diverges. The live static test is now whether the **canonical prime matrices** achieve this scale in the full correlation SDP. If the SDP is bounded at RMS scale, the desired static upper bound follows. If it is rank-one with PSD stress, the exact finite torus optimum is certified. If it diverges only through high-rank relaxation, the SDP certificate has failed but the exact torus optimum remains open.
+## Keep representation closure, relaxation strength, optimizer recovery and access time separate
 
-## Keep representation closure, relaxation strength, rank-one exactness and access time separate
+Cycle holonomy decides exact envelope attainability; magnetic spectra, simple-cycle packing and the correlation SDP are progressively stronger static objects. VIS-218 and VIS-220 prove ceilings only for the first two certificate families. VIS-221 shows the full SDP retains interactions they discard, and VIS-222 proves that its **optimal value** is nevertheless constant-factor equivalent to the exact unit-modulus optimum for every Hermitian matrix.
 
-Cycle holonomy decides exact envelope attainability; magnetic spectra, simple-cycle packing and the correlation SDP are progressively stronger upper-bound mechanisms. VIS-218 and VIS-220 prove universal ceilings only for the first two relaxations. VIS-221 proves that the correlation SDP retains interactions discarded by those certificates, but does not prove asymptotic tightness on the prime matrices.
-
-A large high-rank SDP value is not a lower bound on the exact torus objective. Conversely, an RMS-scale SDP upper bound is already sufficient even without rank-one tightness. One-parameter orbit access time remains a separate problem and matters only after a useful static pointwise bound or exact torus characterization exists.
+High SDP rank therefore has a narrower meaning than before: it can block exact phase recovery or rank-one certification, but it cannot explain away a parametrically large SDP objective. Conversely, an RMS-scale SDP upper bound already transfers to the exact torus objective without rank-one tightness. One-parameter prime-log access time remains a separate problem and matters only when converting static torus information into quantitative finite-time recurrence.
