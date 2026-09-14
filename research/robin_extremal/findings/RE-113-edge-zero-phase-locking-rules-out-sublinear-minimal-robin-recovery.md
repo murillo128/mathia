@@ -212,15 +212,8 @@ M_+(C,D)
 =
 \max_e(\eta_e-u_e)_+,
 \qquad
-u_e:=\Phi(\eta_e^-).
+u_e:=u_e:=\Phi(\eta_e^-).
 \tag{14}
-\]
-
-Here the second displayed symbol is only a typographical label; throughout the proof the physical left coordinate is
-
-\[
-\boxed{u_e:=\Phi(\eta_e^-).}
-\tag{15}
 \]
 
 Assume `L=o(Y)`. The scalar `RE-112` lower bound gives
@@ -238,10 +231,10 @@ Write (9) as
 \Phi(x^-)=x-x^\Theta\bigl(F_\Theta(\log x)+r(x)\bigr),
 \qquad
 \sup_{x\ge X}|r(x)|\to0.
-\tag{16}
+\tag{15}
 \]
 
-For every crossed event with positive forward defect, `u_e in [Y,V]=Y+o(Y)`. Boundedness of `F_Theta`, (16), and `Theta<1` first imply `eta_e asy Y` uniformly. Hence `log eta_e-log Y=o(1)` uniformly. Uniform continuity of `F_Theta` and the uniform tail bound for `r` then give
+For every crossed event with positive forward defect, `u_e in [Y,V]=Y+o(Y)`. Boundedness of `F_Theta`, (15), and `Theta<1` first imply `eta_e asy Y` uniformly. Hence `log eta_e-log Y=o(1)` uniformly. Uniform continuity of `F_Theta` and the uniform tail bound for `r` then give
 
 \[
 F_\Theta(\log\eta_e)+r(\eta_e)=o(1)
@@ -253,7 +246,7 @@ uniformly over crossed events. Therefore
 \eta_e-u_e=o(Y^\Theta),
 \qquad
 \boxed{M_+(C,D)=o(Y^\Theta).}
-\tag{17}
+\tag{16}
 \]
 
 The exact one-sided budget from `RE-110`,
@@ -268,7 +261,7 @@ now gives (4):
 \[
 L=\omega\!\left(hY^{2-\Theta}\log Y\right)
 =\omega(\lambda_YY).
-\tag{18}
+\tag{17}
 \]
 
 This is a qualitative but strict gain over `RE-112`: every genuinely sublinear adaptive recovery pays an unbounded factor beyond the scalar edge minimum.
@@ -280,21 +273,21 @@ Consider an unbounded adaptive family satisfying `L<=Y` and, for one fixed `K`,
 \[
 L\le K hY^{2-\Theta}\log Y
 =K\lambda_YY.
-\tag{19}
+\tag{18}
 \]
 
-If `lambda_Y` had a subsequence tending to zero, (19) would make that recovery sublinear, contradicting (18). Hence `liminf lambda_Y>0`. Together with (13),
+If `lambda_Y` had a subsequence tending to zero, (18) would make that recovery sublinear, contradicting (17). Hence `liminf lambda_Y>0`. Together with (13),
 
 \[
 \lambda_Y\asymp_{\Theta,b,K}1,
 \qquad
 h(C)\asymp_{\Theta,b,K}\frac{Y^{\Theta-1}}{\log Y}.
-\tag{20}
+\tag{19}
 \]
 
 The scalar lower bound and `L<=Y` then yield `L asy Y`, while (12) gives a positive edge phase bounded away from zero. This proves (5).
 
-If no zero satisfies `Re rho=Theta`, then `F_Theta` is identically zero. Equation (12) gives `lambda_Y->0`, so any fixed-constant upper bound (19) would force `L=o(Y)` and contradict (18). Therefore
+If no zero satisfies `Re rho=Theta`, then `F_Theta` is identically zero. Equation (12) gives `lambda_Y->0`, so any fixed-constant upper bound (18) would force `L=o(Y)` and contradict (17). Therefore
 
 \[
 \boxed{
@@ -302,7 +295,7 @@ If no zero satisfies `Re rho=Theta`, then `F_Theta` is identically zero. Equatio
 \Longrightarrow
 \exists\rho:\ \Re\rho=\Theta.
 }
-\tag{21}
+\tag{20}
 \]
 
 The `RE-112` saturation packet, if it occurs near the scalar minimum infinitely often, therefore cannot be a small-amplitude sublinear phenomenon. It requires an attained rightmost zero line, positive edge phase at the selected scale, edge-sized Robin height, and a macroscopic recovery corridor.
@@ -311,7 +304,7 @@ The `RE-112` saturation packet, if it occurs near the scalar minimum infinitely 
 
 Explicit-formula spectral expansions and almost-periodic organization of prime-number-theorem errors are classical. Wintner's limiting-distribution work and the modern Akbary--Ng--Shahabi framework are conceptual prior-art boundaries for almost-periodic prime-counting errors. Their general limiting-distribution theory is not invoked as the exact uniform finite-edge expansion (2). That expansion is derived here directly from the specific high-strip reciprocal summability already established in `RE-112`; no novelty is claimed for the general principle that zero phases organize prime-counting errors.
 
-The prior-art audit found no theorem imposing the selector-conditioned phase lock (12) or deriving the sublinear anti-saturation consequence (18) for colossally abundant Robin recovery. The line-specific contribution is the coupling of the extreme zero face to the exact adaptive selector and the one-sided CA workload budget.
+The prior-art audit found no theorem imposing the selector-conditioned phase lock (12) or deriving the sublinear anti-saturation consequence (17) for colossally abundant Robin recovery. The line-specific contribution is the coupling of the extreme zero face to the exact adaptive selector and the one-sided CA workload budget.
 
 The finite-edge frontier is therefore narrower than in `RE-112`. Sublinear recoveries cannot realize the scalar minimum. Fixed-constant near-minimal recoveries, if any, are forced into a **macroscopic edge-amplitude phase-lock regime**. The next useful source theorem should attack recurrence of
 
