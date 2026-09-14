@@ -3,131 +3,118 @@
 ## Status
 
 - **Evidence:** `EXACT-DERIVED + LITERATURE+DERIVED + STRUCTURAL-RIGIDITY + DECISIVE-BARRIER + PRIOR-ART-AUDITED`.
-- **Scope:** the arithmetic endpoint isolated by `WI-288` for the **one-signed, completely screened, symmetric two-island** branch. This finding asks whether the union of higher prime powers can itself supply enough extra local density to make the nearest-prime-power Lambert obstruction substantially stronger than an ordinary prime-gap obstruction.
-- **Result:** the full nearest-prime-power condition admits an exact root-scale decomposition. At the `WI-288` Lambert threshold, prime squares are the unique higher-power layer with a macroscopic root-scale constraint: they demand a prime-free interval of length about one mean prime gap around `sqrt(x)`. Every exponent `k>=3` produces only a subunit root-scale window and, on a dyadic `x`-shell, the union of all corresponding Lambert neighborhoods has measure `O(X^(5/6) log X)`. The square layer is genuinely critical rather than negligible: its total interval budget on `[X,2X]` is
+- **Scope:** the arithmetic endpoint isolated by `WI-288` for the **one-signed, completely screened, symmetric two-island** branch. The question is whether higher prime powers make the nearest-prime-power Lambert obstruction substantially stronger than an ordinary prime-gap obstruction.
+- **Result:** the nearest-prime-power condition has an exact root-scale decomposition. At the `WI-288` Lambert threshold, prime squares are the unique higher-power layer with a macroscopic root-scale constraint: they demand a prime-free interval of approximately one mean prime gap around `sqrt(x)`. Every exponent `k>=3` produces only a subunit root-scale window. On a dyadic `x`-shell, all `k>=3` Lambert neighborhoods together have measure `O(X^(5/6) log X)`, while the square layer has total interval budget
 
   \[
   X-\left(2+o(1)\right)\frac{X\log\log X}{\log X}.
   \]
 
-  Consequently the union of **all composite prime-power** Lambert neighborhoods still leaves a set of measure at least
+  Therefore all **composite** prime-power Lambert neighborhoods together leave at least
 
   \[
-  \boxed{
-  \left(2+o(1)\right)\frac{X\log\log X}{\log X}
-  }
+  \boxed{\left(2+o(1)\right)\frac{X\log\log X}{\log X}}
   \]
 
-  uncovered. Thus higher powers cannot uniformly fill the arithmetic gap left by current prime-in-short-interval theorems. The unresolved two-island obstruction reduces, at this scale, to a coupled two-scale problem: a very large prime desert near `x`, together with an approximately mean-gap prime desert near `sqrt(x)`; exponents `k>=3` impose only sparse resonance exclusions.
-- **What it does not claim:** this does not produce an `x` satisfying the full `WI-288` condition, does not prove that a large prime gap near `x` can be chosen simultaneously away from prime-square neighborhoods, does not rule out the two-island branch, and does not assert statistical independence between prime gaps at `x` and at `sqrt(x)`. Existing large-gap constructions containing powers of primes are a specific warning against such an independence assumption.
-- **Novelty boundary:** the prime number theorem, the parametrization `p^k` of prime powers, average prime-gap scale, and the Lambert-`W` asymptotic are classical. Ford--Heath-Brown--Konyagin and Maier--Rassias show that long prime gaps can be arranged to contain perfect powers, including fixed powers of primes. The new line-local deductions are the exact root-scale decomposition of `WI-288`'s nearest-prime-power distance, the identification of `k=2` as the unique critical higher-power layer at the Lambert endpoint, and the dyadic measure barrier showing that even the entire composite-prime-power union leaves `gg X log log X / log X` of each large dyadic shell uncovered. Targeted searches did not locate this specific Lambert-scale decomposition or coverage estimate; search absence is audit context only, not a priority claim.
+  of `[X,2X]` uncovered. Higher powers cannot uniformly fill the arithmetic gap left by current prime-in-short-interval information. At this scale the unresolved two-island obstruction is a coupled two-scale problem: a very large prime desert near `x` plus an approximately mean-gap prime desert near `sqrt(x)`, with `k>=3` contributing only sparse resonance exclusions.
+- **What it does not claim:** this does not construct a center satisfying the full `WI-288` condition, prove that a sufficiently large prime gap near `x` intersects the composite-power-free residual set, rule out the two-island branch, or assert independence of prime-gap events at `x` and `sqrt(x)`.
+- **Novelty boundary:** prime-power parametrization, the prime number theorem, average prime-gap scale, and the Lambert-`W` expansion are classical. Ford--Heath-Brown--Konyagin and Maier--Rassias show that long prime gaps can contain fixed perfect powers, including powers of primes. The line-local deductions here are the exact root decomposition at the `WI-288` threshold, the identification of `k=2` as the unique critical higher-power layer, and the dyadic coverage barrier. Targeted searches found the classical large-gap/power-placement literature but not this particular Lambert-scale reduction or coverage estimate; search absence is audit context only.
 
 ## Claim
 
-For `y>1`, define the nearest-prime logarithmic distance
+For `y>1`, let
 
 \[
-\delta_{\rm p}(y)
-:=\min_{p\ {m prime}}|\log p-\log y|.
+\delta_{\mathrm p}(y)
+:=\min_{p\,\text{prime}}|\log p-\log y|,
 \tag{1}
 \]
 
-Recall from `WI-288`
+and recall
 
 \[
-\delta_{\rm pp}(x)
-:=\min_{p\ {m prime},\ k\ge1}|k\log p-\log x|.
+\delta_{\mathrm{pp}}(x)
+:=\min_{p\,\text{prime},\,k\ge1}|k\log p-\log x|.
 \tag{2}
 \]
 
-Then, **exactly**,
+Then exactly
 
 \[
 \boxed{
-\delta_{\rm pp}(x)
-=\min_{k\ge1} k\,\delta_{\rm p}(x^{1/k}).
+\delta_{\mathrm{pp}}(x)
+=\min_{k\ge1}k\,\delta_{\mathrm p}(x^{1/k}).
 }
 \tag{3}
 \]
 
-Let `c>0` be fixed and put
+Fix `c>0` and define the Lambert radius
 
 \[
 D_c(x):=\frac{W(c\sqrt{x})}{\sqrt{x}}.
 \tag{4}
 \]
 
-Thus the `WI-288` necessary condition has the form
+The `WI-288` necessary condition is of the form
 
 \[
-\delta_{\rm pp}(x)\ge D_c(x)
+\delta_{\mathrm{pp}}(x)\ge D_c(x)
 \tag{5}
 \]
 
-for some absolute fixed `c>0`. By (3), (5) is equivalent to the simultaneous family
+for one fixed absolute `c>0`. By (3), this is equivalent to
 
 \[
 \boxed{
-\delta_{\rm p}(x^{1/k})\ge\frac{D_c(x)}{k}
+\delta_{\mathrm p}(x^{1/k})\ge\frac{D_c(x)}k
 \qquad(k\ge1).
 }
 \tag{6}
 \]
 
-At the first three depth regimes this says:
+The corresponding prime-free interval around `x^(1/k)` has exact additive length
 
 \[
-\begin{aligned}
-k=1:&\quad
-\text{a prime-free interval around }x
-\text{ of total length }
-2\sqrt{x}\,W(c\sqrt{x})(1+o(1));\\
-
-k=2:&\quad
-\text{a prime-free interval around }\sqrt{x}
-\text{ of total length }
-W(c\sqrt{x})(1+o(1));\\
-
-k\ge3:&\quad
-\text{a prime-free interval around }x^{1/k}
-\text{ of total length }
-\frac{2}{k}x^{1/k-1/2}W(c\sqrt{x})(1+o(1)).
-\end{aligned}
+2x^{1/k}\sinh\!\left(\frac{D_c(x)}k\right)
+=\frac2k x^{1/k-1/2}W(c\sqrt{x})(1+o(1)).
 \tag{7}
 \]
 
-In particular,
+Thus
+
+\[
+\begin{aligned}
+k=1:&\quad 2\sqrt{x}\,W(c\sqrt{x})(1+o(1)),\\
+k=2:&\quad W(c\sqrt{x})(1+o(1)),\\
+k\ge3:&\quad O(x^{-1/6}\log x)=o(1).
+\end{aligned}
+\tag{8}
+\]
+
+Since
 
 \[
 W(c\sqrt{x})
 =\log\sqrt{x}-\log\log\sqrt{x}+O(1),
-\tag{8}
-\]
-
-so the square constraint has length
-
-\[
-\boxed{
-\log\sqrt{x}-\log\log\sqrt{x}+O(1),
-}
 \tag{9}
 \]
 
-which is just below the classical mean prime-gap scale `log sqrt(x)`, while uniformly for every `k>=3`
+the square condition is a prime-free interval around `sqrt(x)` of length
 
 \[
-\frac{2}{k}x^{1/k-1/2}W(c\sqrt{x})\to0.
+\boxed{\log\sqrt{x}-\log\log\sqrt{x}+O(1),}
 \tag{10}
 \]
 
-There is also a quantitative coverage barrier. Define the composite-prime-power Lambert neighborhood on the dyadic shell by
+just below the classical mean prime-gap scale there.
+
+Now define the composite-prime-power Lambert neighborhood
 
 \[
 \mathcal C_{\ge2}(X)
-:=\left\{
- x\in[X,2X]:
- \exists\ p\text{ prime},\ k\ge2,
- \ |k\log p-\log x|<D_c(x)
+:=\left\{x\in[X,2X]:
+\exists\ p\,\text{prime},\ k\ge2,
+\ |k\log p-\log x|<D_c(x)
 \right\}.
 \tag{11}
 \]
@@ -144,19 +131,18 @@ Then
 \tag{12}
 \]
 
-More precisely, if `\mathcal C_2(X)` is the contribution from prime squares and `\mathcal C_{\ge3}(X)` the contribution from exponents at least three, then
+If `\mathcal C_2(X)` denotes the square contribution and `\mathcal C_{\ge3}(X)` all deeper powers, the stronger component estimates are
 
 \[
 \boxed{
 |\mathcal C_2(X)|
-\le
-X-\left(2+o(1)\right)
+\le X-\left(2+o(1)\right)
 \frac{X\log\log X}{\log X},
 }
 \tag{13}
 \]
 
-whereas
+and
 
 \[
 \boxed{
@@ -167,206 +153,127 @@ whereas
 \tag{14}
 \]
 
-Thus prime squares are the only composite layer whose Lambert neighborhoods have first-order dyadic coverage. Even they are slightly subcritical because the `-log log` correction in `W` leaves a deterministic coverage deficit larger than the entire contribution of all `k>=3` layers.
+## 1. Exact root decomposition
 
-## 1. Exact root-scale decomposition
-
-For each fixed `k>=1`,
+For each fixed `k`,
 
 \[
-\begin{aligned}
-\min_{p\ {m prime}}
-|k\log p-\log x|
-&=k\min_{p\ {m prime}}
-\left|\log p-\frac1k\log x\right|\\
-&=k\,\delta_{\rm p}(x^{1/k}).
-\end{aligned}
+\min_{p\,\text{prime}}|k\log p-\log x|
+=k\min_{p\,\text{prime}}\left|\log p-\frac1k\log x\right|
+=k\,\delta_{\mathrm p}(x^{1/k}).
 \tag{15}
 \]
 
-Taking the minimum over `k` proves (3). No asymptotic arithmetic input is used here.
-
-The logarithmic condition in (6) says that the interval
+Taking the minimum over `k` proves (3). Equation (6) follows immediately. The empty-prime interval is
 
 \[
-\left(
- x^{1/k}e^{-D_c(x)/k},
- x^{1/k}e^{D_c(x)/k}
-\right)
+\left(x^{1/k}e^{-D_c(x)/k},\ x^{1/k}e^{D_c(x)/k}\right),
 \tag{16}
 \]
 
-contains no prime. Its additive length is exactly
-
-\[
-2x^{1/k}\sinh\!\left(\frac{D_c(x)}k\right).
-\tag{17}
-\]
-
-Since
-
-\[
-D_c(x)
-=O\!\left(\frac{\log x}{\sqrt{x}}\right)\to0,
-\tag{18}
-\]
-
-(17) equals
-
-\[
-\frac{2}{k}x^{1/k-1/2}W(c\sqrt{x})(1+o(1)).
-\tag{19}
-\]
-
-This proves (7). For `k=2`, putting `y=sqrt(x)` gives
-
-\[
-2y\sinh\!\left(\frac{W(cy)}{2y}\right)
-=W(cy)+o(1),
-\tag{20}
-\]
-
-and the standard expansion
-
-\[
-W(cy)=\log y-\log\log y+O(1)
-\tag{21}
-\]
-
-gives (9). For `k>=3`,
+whose length is (7). Because `D_c(x)=O(log x/sqrt(x))`, the small-argument expansion of `sinh` is uniform for all fixed or growing `k>=1`. For `k>=3`,
 
 \[
 x^{1/k-1/2}W(c\sqrt{x})
 \le x^{-1/6}W(c\sqrt{x})
 =O(x^{-1/6}\log x),
-\tag{22}
+\tag{17}
 \]
 
-which proves (10).
+so every deeper root interval is subunit. This does **not** delete its exact arithmetic condition; it classifies it as a thin resonance constraint rather than a macroscopic prime-free interval.
 
-This identifies the scale transition exactly:
+## 2. Prime squares are the critical layer
 
-\[
-\boxed{
-\text{prime layer: macroscopic }\sqrt{x}\log x;
-\quad
-\text{square layer: mean-gap }\log\sqrt{x};
-\quad
-k\ge3: o(1).
-}
-\tag{23}
-\]
-
-The `k>=3` statement is about the additive size of the forbidden interval in the root variable. It does not say the corresponding exact arithmetic exclusions disappear; it says they are thin resonance conditions rather than macroscopic prime-free intervals.
-
-## 2. A single prime square consumes `2 p W(cp)` of x-space
-
-The criticality of squares is more precise than the scale comparison (23). Put
+Put
 
 \[
 Y:=\sqrt X,
 \qquad
-w(t):=W(ct).
-\tag{24}
+w(t):=W(ct),
+\tag{18}
 \]
 
-Write `x=z^2`, so `z in [Y,sqrt(2)Y]`. A prime square `p^2` excludes those `z` satisfying
+and write `x=z^2`. For `z in [Y,sqrt(2)Y]`, a prime square `p^2` violates the Lambert separation precisely when
 
 \[
-2|\log(z/p)|<\frac{w(z)}{z}.
-\tag{25}
+2|\log(z/p)|<\frac{w(z)}z.
+\tag{19}
 \]
 
-Any solution with `p\asymp Y` has
-
-\[
-|z-p|=O(\log Y),
-\tag{26}
-\]
-
-because the right side of (25) is `O(log Y/Y)`. On this window,
+Any solution with `p` in the relevant fixed multiplicative range has `|z-p|=O(log Y)`. On that window,
 
 \[
 2\log(z/p)
 =\frac{2(z-p)}p
-+O\!\left(\frac{(\log Y)^2}{Y^2}\right),
-\tag{27}
++O\!\left(\frac{(\log Y)^2}{Y^2}\right).
+\tag{20}
 \]
 
-while the exact derivative identity
+Also
 
 \[
 \frac{d}{dt}\left(\frac{W(ct)}t\right)
-=-\frac{W(ct)^2}{t^2(1+W(ct))}
-\tag{28}
+=-\frac{W(ct)^2}{t^2(1+W(ct))},
+\tag{21}
 \]
 
-gives
+hence
 
 \[
 \frac{w(z)}z
 =\frac{w(p)}p
 +O\!\left(\frac{(\log Y)^2}{Y^2}\right).
-\tag{29}
+\tag{22}
 \]
 
-Therefore the two endpoints of the forbidden `z`-interval satisfy
+The two endpoints of the forbidden `z`-interval are therefore
 
 \[
 z_\pm
-=p\pm\frac12w(p)
-+O\!\left(\frac{(\log Y)^2}{Y}\right).
-\tag{30}
+=p\pm\frac12W(cp)
++O\!\left(\frac{(\log Y)^2}{Y}\right),
+\tag{23}
 \]
 
-Returning to `x=z^2`, the corresponding interval has length
+and the corresponding interval in `x=z^2` has length
 
 \[
 \boxed{
 z_+^2-z_-^2
 =2pW(cp)+O((\log Y)^2).
 }
-\tag{31}
+\tag{24}
 \]
 
-This explains why squares are exactly critical. Near height `p`, the average prime spacing is `log p`; the square-neighborhood width in the root variable is `W(cp)=log p-log log p+O(1)`, just short of that spacing.
+This is the scale match: the root-variable width is `W(cp)=log p-log log p+O(1)`, just below the mean spacing `log p` of primes near `p`.
 
-## 3. PNT gives a logarithmic coverage deficit for the square layer
+## 3. PNT exposes the square-layer deficit
 
-The union of square neighborhoods is at most the sum of their lengths. Squares whose neighborhoods meet the endpoints of `[X,2X]` but whose roots lie just outside `[Y,sqrt(2)Y]` contribute only
-
-\[
-O(Y(\log Y)^2),
-\tag{32}
-\]
-
-which is negligible below. Summing (31) over the interior primes gives
+The square union is bounded by the sum of its interval lengths. Roots just outside the two endpoints but whose neighborhoods still meet the shell contribute only `O(Y(log Y)^2)`. Thus
 
 \[
 |\mathcal C_2(X)|
 \le
 2\sum_{Y<p\le\sqrt2Y}pW(cp)
 +O(Y(\log Y)^2).
-\tag{33}
+\tag{25}
 \]
 
-Use the classical prime number theorem with its standard zero-free-region error term and partial summation. Since `t` remains in a fixed multiplicative interval,
+The classical prime number theorem with a standard zero-free-region error term, followed by partial summation, gives
 
 \[
 2\sum_{Y<p\le\sqrt2Y}pW(cp)
 =
-\int_Y^{\sqrt2Y}
-\frac{2tW(ct)}{\log t}\,dt
+\int_Y^{\sqrt2Y}\frac{2tW(ct)}{\log t}\,dt
 +o\!\left(\frac{Y^2}{\log Y}\right).
-\tag{34}
+\tag{26}
 \]
 
-Uniformly on this interval,
+Uniformly over this fixed multiplicative interval,
 
 \[
-W(ct)
-=\log t-\log\log t+O(1),
-\tag{35}
+W(ct)=\log t-\log\log t+O(1),
+\tag{27}
 \]
 
 so
@@ -375,209 +282,147 @@ so
 \frac{W(ct)}{\log t}
 =1-\frac{\log\log Y}{\log Y}
 +O\!\left(\frac1{\log Y}\right).
-\tag{36}
+\tag{28}
 \]
 
-Because
+Since
 
 \[
 \int_Y^{\sqrt2Y}2t\,dt=Y^2=X,
-\tag{37}
+\tag{29}
 \]
 
 we obtain
 
 \[
 2\sum_{Y<p\le\sqrt2Y}pW(cp)
-=
-X-X\frac{\log\log Y}{\log Y}
+=X-X\frac{\log\log Y}{\log Y}
 +O\!\left(\frac X{\log Y}\right).
-\tag{38}
+\tag{30}
 \]
 
-Since
+Finally
 
 \[
 \frac{\log\log Y}{\log Y}
-=
-\left(2+o(1)\right)
-\frac{\log\log X}{\log X},
-\tag{39}
+=\left(2+o(1)\right)\frac{\log\log X}{\log X},
+\tag{31}
 \]
 
-(13) follows.
+which proves (13). No disjointness or random-spacing model is used: overlaps only reduce the union.
 
-The key point is the second-order term. If the square-root forbidden radius had been based on `log p+O(1)` rather than
+The `-log log` term in Lambert `W` is load-bearing. A root width `log p+O(1)` would have first-order interval budget `X`; the actual `log p-log log p+O(1)` width leaves the deterministic deficit in (13).
 
-\[
-W(cp)=\log p-\log\log p+O(1),
-\tag{40}
-\]
+## 4. Exponents k>=3 cannot fill that deficit
 
-its summed interval budget would already be of order the full dyadic shell. The Lambert `-log log` correction leaves a macroscopic deficit of order `X log log X / log X`.
-
-No disjointness between the square neighborhoods is assumed. Overlaps only decrease their union, so (13) is an unconditional upper bound.
-
-## 4. All exponents k>=3 are negligible even in union
-
-Suppose a prime power `q=p^k`, `k>=3`, has a Lambert neighborhood meeting `[X,2X]`. Since
-
-\[
-D_c(x)=O(\log X/\sqrt X)
-\tag{41}
-\]
-
-uniformly on the shell, such a `q` lies in `[X/2,3X]` for all sufficiently large `X`. The number of prime powers of exponent at least three in that range is bounded by
+If `q=p^k`, `k>=3`, has a Lambert neighborhood meeting `[X,2X]`, then `q in [X/2,3X]` for all large `X`. The number of such prime powers is at most
 
 \[
 \sum_{3\le k\le\log_2(3X)}(3X)^{1/k}
 =O(X^{1/3}).
-\tag{42}
+\tag{32}
 \]
 
-For each such `q`, the set of `x\asymp X` satisfying
-
-\[
-|\log q-\log x|<D_c(x)
-\tag{43}
-\]
-
-has length
+For each one, `D_c(x)=O(log X/sqrt(X))` on the shell, so its excluded `x`-interval has length
 
 \[
 O\!\left(q\frac{\log X}{\sqrt X}\right)
 =O(\sqrt X\log X).
-\tag{44}
+\tag{33}
 \]
 
-A union bound therefore gives
+A union bound yields
 
 \[
 |\mathcal C_{\ge3}(X)|
-\ll X^{1/3}\sqrt X\log X
-=X^{5/6}\log X,
-\tag{45}
+\ll X^{5/6}\log X,
+\tag{34}
 \]
 
-which is (14).
+which is negligible compared with `X log log X/log X`. Equations (13) and (14) then imply (12).
 
-Combining (13) and (14),
+This is stronger than the statement that higher prime powers have zero natural density: the neighborhoods here themselves expand with `X`, at exactly the Lambert radius forced by the `WI-288` spectral balance.
 
-\[
-\begin{aligned}
-|\mathcal C_{\ge2}(X)|
-&\le |\mathcal C_2(X)|+|\mathcal C_{\ge3}(X)|\\
-&\le X-
-\left(2+o(1)\right)
-\frac{X\log\log X}{\log X},
-\end{aligned}
-\tag{46}
-\]
-
-and (12) follows.
-
-This is a stronger statement than the elementary fact that higher prime powers have zero natural density. The relevant neighborhoods themselves grow with `X`; (12) says that even after thickening every composite prime power by exactly the Lambert radius forced by the Suzuki spectral balance, they still fail to cover every possible center.
-
-## 5. The unresolved arithmetic target is now explicitly two-scale
+## 5. What remains is a two-scale prime-gap problem
 
 Let
 
 \[
 \mathcal R(X):=[X,2X]\setminus\mathcal C_{\ge2}(X).
-\tag{47}
+\tag{35}
 \]
 
-For `x in \mathcal R(X)`, every composite prime power already satisfies
-
-\[
-|k\log p-\log x|\ge D_c(x)
-\qquad(k\ge2).
-\tag{48}
-\]
-
-Hence on this residual set the full `WI-288` arithmetic condition reduces exactly to the ordinary prime condition
+For every `x in R(X)`, all composite prime powers are already at logarithmic distance at least `D_c(x)`. Therefore
 
 \[
 \boxed{
-\delta_{\rm pp}(x)\ge D_c(x)
-\quad\Longleftrightarrow\quad
-\delta_{\rm p}(x)\ge D_c(x)
+\delta_{\mathrm{pp}}(x)\ge D_c(x)
+\iff
+\delta_{\mathrm p}(x)\ge D_c(x)
 \qquad(x\in\mathcal R(X)).
 }
-\tag{49}
+\tag{36}
 \]
 
-But (12) alone gives no reason for the set of centers of very large prime gaps to meet `\mathcal R(X)`. Equivalently, before passing to the measure relaxation, the exact root formulation (6) shows that the load-bearing simultaneous constraints are
+But (12) does not show that centers of the enormous prime gaps demanded by the right side meet `\mathcal R(X)`. In the exact root formulation, the two load-bearing conditions are
 
 \[
 \boxed{
-\begin{cases}
-\delta_{\rm p}(x)\ge D_c(x),\\[2mm]
-\delta_{\rm p}(\sqrt{x})\ge D_c(x)/2,
-\end{cases}
+\delta_{\mathrm p}(x)\ge D_c(x),
+\qquad
+\delta_{\mathrm p}(\sqrt{x})\ge\frac12D_c(x),
 }
-\tag{50}
+\tag{37}
 \]
 
-plus the sparse `k>=3` resonance exclusions.
+plus the sparse deeper-root resonances.
 
-The first line of (50) is the very large prime-gap obstruction already exposed by `WI-288`. The second is qualitatively different: it asks only for a prime gap around `sqrt(x)` of total length
+The first condition asks for the `WI-288` prime gap of total size about `sqrt(x) log x`. The second asks for a prime gap around `sqrt(x)` of total size
 
 \[
 W(c\sqrt{x})+o(1)
 =\log\sqrt{x}-\log\log\sqrt{x}+O(1),
-\tag{51}
+\tag{38}
 \]
 
-which is at approximately the average prime-gap scale. Thus prime squares do not create another square-root-scale miracle requirement; they create a **critical root-scale compatibility condition**.
+which is only at the average-gap scale. Thus squares create a genuine compatibility condition, but not a second square-root-scale obstruction.
 
-This changes the useful arithmetic question. A route trying to close the two-island branch via prime powers should not seek a generic theorem saying merely that prime powers are denser than primes. It needs a theorem coupling a hypothetical prime desert of size about `sqrt(x) log x` near `x` to prime occurrence in the much shorter interval (51) near `sqrt(x)`, or else a direct uniform bound for nearest prime powers at the `WI-288` Lambert scale.
+A useful arithmetic closure theorem would therefore have to couple a hypothetical `sqrt(x) log x`-scale prime desert near `x` to prime occurrence in the much shorter root interval (38), or directly bound the nearest prime power at the `WI-288` Lambert scale. Merely observing that prime powers are denser than primes is insufficient.
 
-## 6. Prior-art audit and why independence is not available
+## 6. Prior-art audit
 
-The prime-counting input in (34) is classical. A quantitative prime number theorem with the classical de la Vallee Poussin zero-free-region error is far stronger than the precision needed to detect the `log log / log` deficit in (38).
+The counting step uses only the classical prime number theorem and the standard large-argument expansion of Lambert `W` already present in `WI-287`--`WI-288`.
 
-The relevant large-gap literature gives an important falsification control. Kevin Ford, D. R. Heath-Brown and Sergei Konyagin, **Large Gaps Between Consecutive Prime Numbers Containing Perfect Powers**, in *Analytic Number Theory* (2015), 83--92, DOI `10.1007/978-3-319-22240-0_5`, prove that for every fixed `k` there are very long prime gaps containing perfect `k`-th powers. Helmut Maier and Michael Th. Rassias, **Large gaps between consecutive prime numbers containing perfect k-th powers of prime numbers**, *Journal of Functional Analysis* 272:6 (2017), 2659--2696, DOI `10.1016/j.jfa.2016.08.014`, strengthen this in the direction relevant here by placing `k`-th powers of primes inside infinitely many long prime gaps for fixed `k>=2`.
+Kevin Ford, D. R. Heath-Brown and Sergei Konyagin, **Large Gaps Between Consecutive Prime Numbers Containing Perfect Powers**, in *Analytic Number Theory* (2015), 83--92, DOI `10.1007/978-3-319-22240-0_5`, prove that for every fixed `k` very long prime gaps can contain perfect `k`-th powers. Helmut Maier and Michael Th. Rassias, **Large gaps between consecutive prime numbers containing perfect k-th powers of prime numbers**, *Journal of Functional Analysis* 272:6 (2017), 2659--2696, DOI `10.1016/j.jfa.2016.08.014`, place fixed `k`-th powers of primes inside infinitely many long prime gaps. These results are on the Erdos--Rankin polylogarithmic scale, far below the hypothetical `sqrt(x) log x` scale here, but they are a decisive warning that prime-gap and prime-power placement cannot be treated as independent random events.
 
-These gaps are on the Erdos--Rankin polylogarithmic scale, far below the hypothetical `sqrt(x) log x` gap forced by `WI-288`, so they neither prove nor refute (50). They do show that one cannot justify (50) by pretending that prime-gap location and prime-power location are independent random events.
+For large-gap scale context, Kevin Ford, Ben Green, Sergei Konyagin and Terence Tao, **Large gaps between consecutive prime numbers**, *Annals of Mathematics* 183 (2016), 935--974, DOI `10.4007/annals.2016.183.3.4`, gives the modern unconditional large-gap lower-bound framework. On the uniform short-interval side, the Baker--Harman--Pintz peer-reviewed baseline and Runbo Li preprint frontier are already audited in `WI-286` and `SOURCES.md`; neither reaches the Lambert endpoint from `WI-288`.
 
-For scale context, Kevin Ford, Ben Green, Sergei Konyagin and Terence Tao, **Large gaps between consecutive prime numbers**, *Annals of Mathematics* 183 (2016), 935--974, DOI `10.4007/annals.2016.183.3.4`, gives the modern unconditional large-gap lower-bound framework. On the opposite side, the peer-reviewed uniform short-interval baseline and the stronger current-preprint frontier remain the Baker--Harman--Pintz and Runbo Li inputs already audited in `WI-286` and `SOURCES.md`; neither approaches the Lambert endpoint needed by `WI-288`.
-
-Targeted searches around consecutive prime powers, prime powers in short intervals, perfect powers inside prime gaps, and prime-square placement found the above prime-avoidance constructions and numerical/sequence literature, but no theorem coupling an every-`x` `sqrt(x) log x`-scale prime gap constraint to the mean-gap-scale square-root condition (51), and no uniform nearest-prime-power theorem at the required Lambert scale. This absence is not used as a historical-priority claim.
+Targeted searches around consecutive prime powers, prime powers in short intervals, perfect powers inside prime gaps, and prime-square placement found these power-placement constructions and numerical/sequence literature, but no theorem coupling an every-center `sqrt(x) log x`-scale prime-gap constraint to the mean-gap-scale square-root condition (38), and no uniform nearest-prime-power theorem at the required Lambert scale. This absence is not used as a historical-priority claim.
 
 ## 7. Stress tests and boundaries
 
-- **The root identity is exact, not heuristic.** Equation (3) is simply the minimization over the unique prime-base/exponent representation of prime powers. No density model enters it.
-- **The square layer is not declared negligible.** Its Lambert neighborhoods have first-order total budget `X`; the useful fact is the negative second-order correction in (38). Calling all higher powers sparse without isolating squares would miss the critical layer.
-- **The coverage estimate is one-sided.** The sum of square-neighborhood lengths bounds the union from above. Overlap can only make the uncovered set larger; no spacing independence or pair-correlation theorem for primes is used.
-- **The residual set is not a counterexample.** Equation (12) says many centers avoid composite prime powers at Lambert resolution, not that any of those centers also have the enormous prime-free interval required by `k=1`.
-- **No statistical independence.** Maier--Rassias and Ford--Heath-Brown--Konyagin explicitly demonstrate arithmetic constructions where large prime gaps contain prescribed kinds of powers. Any future intersection argument must use an actual theorem, not a random-model product.
-- **The `k>=3` union estimate is deliberately crude.** It is already `o(X log log X/log X)`, so improving its exponent cannot alter the conclusion that squares are the unique critical composite layer.
-- **Fixed `c>0`.** The unknown absolute constant inherited from the `WI-288` spectral inequality affects only `O(1)` terms in `W(c sqrt(x))`. It does not change the `-log log` coverage deficit or the scale classification.
-- **Only the symmetric two-island complete-screening branch is addressed.** Sign-changing cancellation, incomplete screening, many-component supports, and amplitude information from the global Suzuki null equation remain outside this reduction.
+- Equation (3) is exact; no density or randomness model enters it.
+- Squares are **not** discarded as sparse. Their neighborhoods have first-order total budget `X`; the useful information is the second-order `-log log` deficit.
+- The coverage estimate is one-sided and robust to overlap. Any overlap among square neighborhoods only increases the uncovered set.
+- The residual set in (12) is not a counterexample: it need not contain a center of a prime gap large enough to satisfy the `k=1` condition.
+- No statistical independence is assumed. The Ford--Heath-Brown--Konyagin and Maier--Rassias constructions explicitly forbid that shortcut.
+- The `k>=3` estimate is intentionally crude because it is already negligible relative to the square-layer deficit.
+- The fixed constant `c>0` inherited from `WI-288` changes only `O(1)` terms in `W(c sqrt(x))`, not the `-log log` deficit or the exponent classification.
+- Only the symmetric two-island complete-screening branch is addressed. Sign-changing cancellation, incomplete screening, many-component supports, and global-null-equation amplitude information remain outside this reduction.
 
 ## Research consequence
 
-`WI-288` reduced complete two-island support screening to a nearest-prime-power gap. The present finding resolves what the higher-power part of that arithmetic object can buy at the exact spectral endpoint:
+At the exact endpoint exposed by `WI-288`, the full prime-power obstruction has the structure
 
 \[
 \boxed{
-\text{Lambert nearest-prime-power obstruction}
-=
 \text{huge prime-gap condition at }x
 +\text{critical prime-square condition at }\sqrt{x}
 +\text{sparse higher-root resonances}.
 }
-\tag{52}
+\tag{39}
 \]
 
-The tempting route
+Therefore the route “use all prime powers because they are denser than primes” is closed at the support-geometric level. Exponents `k>=3` cannot fill the square-layer coverage deficit, and the square layer itself leaves `\gg X\log\log X/\log X` of every sufficiently large dyadic shell untouched at the required Lambert resolution.
 
-\[
-\text{``use all prime powers because they are denser than primes''}
-\tag{53}
-\]
-
-is therefore too coarse. Exponents `k>=3` are quantitatively incapable of filling the square-layer coverage deficit, and squares themselves leave `gg X log log X/log X` of every large dyadic shell untouched at the required Lambert resolution.
-
-The live arithmetic escape is sharper: prove that centers of prime gaps large enough for `WI-288` cannot simultaneously satisfy the square-root prime-gap condition in (50), or obtain a direct uniform nearest-prime-power bound at that scale. Otherwise the source-specific route remains the global Suzuki null equation or a support topology with genuinely several independent macroscopic separations.
+The remaining arithmetic target is much sharper: prove that centers of prime gaps large enough for `WI-288` cannot simultaneously satisfy the square-root prime-gap condition (37), or prove a direct uniform nearest-prime-power bound at that scale. Otherwise the surviving source-specific alternatives remain the global Suzuki null equation or a support topology with several genuinely independent macroscopic separations.
