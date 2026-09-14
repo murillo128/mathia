@@ -396,3 +396,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 99. **Xavier Ros-Oton, Joaquim Serra**, “The Pohozaev identity for the fractional Laplacian,” *Archive for Rational Mechanics and Analysis* **213**(2) (2014), 587–628. DOI: https://doi.org/10.1007/s00205-014-0740-2. arXiv: https://arxiv.org/abs/1207.5986.
     - Role: load-bearing prior-art anchor for `PL-307`. Proposition 1.6 gives a state-level fractional Pohozaev identity for zero-exterior functions satisfying explicit regularity and boundedness hypotheses, with boundary term `Gamma(1+s)^2 (u/delta^s)^2`. `PL-307` combines that theorem with the exact dilation covariance of Suzuki's lower-order global Weil form to recover the finite-`s` squared boundary-stress virial identity directly, without requiring a mixed moving-domain Hadamard theorem.
+
+## Fractional transmission regularity and low-regularity Pohozaev duality
+
+100. **Gerd Grubb**, “Fractional Laplacians on domains, a development of Hörmander's theory of `mu`-transmission pseudodifferential operators,” *Advances in Mathematics* **268** (2015), 478–528. DOI: https://doi.org/10.1016/j.aim.2014.09.018. arXiv: https://arxiv.org/abs/1310.0951.
+     - Role: primary transmission-regularity anchor for `PL-308`. Develops the `H^{mu(s)}` Sobolev solution spaces and proves the elliptic implication `r^+Pu in H^{sigma-m} => u in H^{mu(sigma)}` for operators of type/factorization index `mu`; for `(-Delta)^s` this supplies the finite-step bootstrap of the actual completed-Weil eigenstate into the transmission range needed by the radial identity.
+
+101. **Gerd Grubb**, “Integration by parts and Pohozaev identities for space-dependent fractional-order operators,” *Journal of Differential Equations* **261**(3) (2016), 1835–1879. DOI: https://doi.org/10.1016/j.jde.2016.04.017. arXiv: https://arxiv.org/abs/1511.03901.
+     - Role: main low-regularity Pohozaev anchor for `PL-308`. Theorem 4.7 extends the radial integration-by-parts identity to transmission solutions above the `s+1/2` threshold with singular products interpreted as Sobolev dualities; Corollary 4.8 specializes homogeneous translation-invariant symbols to the Pohozaev identity and uses the interior normal convention that gives the endpoint sign on `(-1,1)`.
