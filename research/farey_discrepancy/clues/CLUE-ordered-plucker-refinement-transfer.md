@@ -66,3 +66,15 @@ The clue therefore remains `proposed`, not `accepted`: its broader carrier is st
 `FD-113` extends the representation kill test from one mediant split to any fixed or predeclared finite Stern--Brocot descendant template. After affine normalization of a parent edge `a/b<c/d`, every descendant position and selected descendant gap is a rational function of `r=b/d`, hence of the same root split imbalance `s=(d-b)/(d+b)`. Retaining a deeper Euclidean fan therefore increases ambient dimension without adding a second scalar shape parameter.
 
 Unlike `FD-112`, deeper normalized gap vectors can have nonzero centered Plücker minors because the one-scalar image is a nonlinear curve in the gap simplex. Such a minor is still only a two-point kernel of the ordered scalar split sequence; nonzero exterior area is not evidence of an independent local residual coordinate. The clue remains `proposed` only for carriers whose second coordinate is not reconstructible from the declared parent scale, root split, and predeclared ancestry control. A state-dependent ancestry/template choice may count as a separate combinatorial channel and an independently defined discrepancy/source residual remains live, but either must be declared explicitly and tested against the classical local-order/index reductions. Fixed deeper ancestry, more descendant gaps, or nonlinear re-embeddings of those gaps do not pass the representation gate by themselves.
+
+## Research-watch disposition after `FD-114`
+
+`FD-114` closes the most canonical version of the state-dependent-ancestry escape left open by `FD-113`. For a unimodular parent edge `a/b<c/d`, let `H=max(b,d)` be the first Farey order containing both parents and put `r=b/d`. Every primitive descendant ray `(u,v)` is born at relative time
+
+\[
+\frac{ub+vd}{H}=\frac{ur+v}{\max(r,1)}
+\]
+
+and has affine-normalized position `v/(ur+v)`. Hence the complete denominator-truncated local refinement movie—visible ancestry, event times, order, normalized positions and gaps at every relative horizon—is already a deterministic function of the same single scalar `r`, equivalently the root split `s=(d-b)/(d+b)`.
+
+At a fixed absolute Farey order `Q`, the moving template depends on `(r,Q^2G)`, where `G=1/(bd)` is the parent gap, so its apparent extra state dependence only re-encodes parent scale rather than supplying a new third local coordinate. The clue therefore remains `proposed` only for a carrier whose second coordinate lives outside the canonical local denominator-cutoff movie: an independently defined discrepancy/source residual, global rank information, cross-horizon source state, or a genuinely global selection rule not reconstructible from `(r,G,Q)`. Ordinary horizon-dependent Stern--Brocot ancestry by itself no longer passes the representation gate.
