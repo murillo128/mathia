@@ -1,6 +1,6 @@
 # MI-038 — Exponential-algebraic incidence is a pointwise gate, not a stability margin
 
-**Evidence level:** exact consequence of [AF-330](../../findings/AF-330-exact-eight-prime-incidence-forces-exponential-algebraic-time.md) and [AF-331](../../findings/AF-331-exponential-algebraic-exceptional-time-gate-is-countable-dense.md). No exact eight-prime incidence or non-incidence theorem is claimed.
+**Evidence level:** exact consequence of [AF-330](../../findings/AF-330-exact-prime-algebraic-incidence-forces-exponentially-algebraic-time.md) and [AF-331](../../findings/AF-331-exponential-algebraic-exceptional-time-gate-is-countable-dense.md). No exact eight-prime incidence or non-incidence theorem is claimed.
 
 AF-330 turns an exact middle-singular hit into an arithmetic restriction on time: if the prime-phase orbit reaches the target then `e^{it}` must be algebraic. That sounds like a thin exceptional set, but AF-331 shows why thinness is not a usable local separator. The real exponentially algebraic time set is countable and dense; it contains `2\pi\mathbb Q`, while its complement is also dense and has full measure and comeager size.
 
