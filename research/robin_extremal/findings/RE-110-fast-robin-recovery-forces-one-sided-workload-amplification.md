@@ -333,7 +333,7 @@ LM\asymp h(C)Y^2\log Y
 \tag{33}
 \]
 
-therefore realizes the recovery scale of (7). If `M asy Y E(Y)`, the construction also reproduces the `RE-109` corridor scale.
+therefore realizes the recovery scale of (7). If `M\asymp Y\mathcal E(Y)`, the construction also reproduces the `RE-109` corridor scale.
 
 This control is deliberately a relaxed event staircase, not a claim that the ordinary primes or the CA event set realize such an excursion. Its role is adversarial: the initial adaptive selector relation and the global PNT envelope do not by themselves prevent the required amplification. Any further gain has to use arithmetic information about the **phase of the actual event discrepancy on the selected recovery interval**, not just its endpoint value or global supremum norm.
 
@@ -345,4 +345,4 @@ The current Bhattacharya--Martin--Simpson work on correlations of weighted prime
 
 No new external theorem is load-bearing here: the event-workload framework, Robin quantitative witnesses, and unconditional PNT envelope are already anchored in `SOURCES.md`.
 
-The frontier after `RE-109` can therefore be stated more sharply. A fast inter-block recovery must not merely use a large generic PNT error; it must **build a positive full-event workload from the adaptive selector scale up to the PNT envelope during the recovery itself**. Excluding that selected one-sided saturation, even by an `o(1)` factor, would immediately strengthen the recurrence spacing. Proving such a selected-source anti-saturation statement is now a strictly more targeted goal than sharpening the unconditional PNT remainder.
+The frontier after `RE-109` can therefore be stated more sharply. A recovery on the natural `RE-109` scale must not merely use a large generic PNT error; it must **build a positive full-event workload from the adaptive selector scale up to the PNT envelope during the recovery itself**. Excluding that selected one-sided saturation, even by an `o(1)` factor, would immediately strengthen the recurrence spacing. Proving such a selected-source anti-saturation statement is now a strictly more targeted goal than sharpening the unconditional PNT remainder.
