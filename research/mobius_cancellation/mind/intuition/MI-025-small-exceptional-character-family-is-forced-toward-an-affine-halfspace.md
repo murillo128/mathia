@@ -1,25 +1,21 @@
-# MI-025 — A small exceptional character family is forced toward an affine halfspace
+# MI-025 — Near-negative exceptional characters obey dual odd-girth and occupancy rigidity
 
-**Evidence level:** exact finite Fourier consequence of [MC-289](../../findings/MC-289-odd-moment-character-bias-from-collision-rich-shells.md) and [MC-290](../../findings/MC-290-odd-moment-exception-set-near-affine-rigidity.md). The statement is an interface theorem for the collision-rich odd shell; it supplies no new character-sum estimate or bound for `M(x)`.
+**Evidence level:** exact finite Fourier consequence of [MC-289](../../findings/MC-289-odd-moment-character-bias-from-collision-rich-shells.md), [MC-290](../../findings/MC-290-odd-moment-exception-set-near-affine-rigidity.md), and [MC-291](../../findings/MC-291-near-negative-spectrum-dual-odd-girth.md). These are interface theorems for the collision-rich odd shell; they supply no new character-sum estimate or bound for `M(x)`.
 
-Let `eta=N^2/(2^r sum_s n_s^2)` be the effective occupancy and let `A_lambda` be the generated quadratic-character shell sums. When short odd relations up to weight `t` are absent, MC-289 gives exact odd moments. MC-290 shows how those moments constrain an analytic theorem that controls all but `J` characters.
+Let `eta=N^2/(2^r sum_s n_s^2)` be the effective occupancy and let `A_lambda` be the generated quadratic-character shell sums. When short odd relations are absent, MC-289 gives exact odd moments. MC-290 shows that if analytic input controls all but `J` characters above `-delta`, those moments force the exceptional family toward the affine endpoint: when `epsilon_m=delta^(m-2)(eta^-1-1)` is small and `log J=o(m)`, one exceptional character is `-1` on a `1-o(1)` fraction of weighted shell mass.
 
-If for an odd `m<=t` every nonexceptional character obeys
+MC-291 adds a collective constraint that does not come from another moment estimate. Write the positive-side defect of a negative character as `d_lambda=(1+A_lambda/N)/2` and let `E_tau={lambda ne 0:d_lambda<=tau}`. If distinct `lambda_1,...,lambda_j in E_tau` have odd cardinality and sum to zero, then
 
-`A_lambda/N >= -delta`,
+`sum_i d_(lambda_i) >= 1`.
 
-and `a_lambda=-A_lambda/N` on the exceptional set `E`, then
+Hence `E_tau` has no odd circuit of length `j` with `j tau<1`. The near-negative spectrum itself therefore inherits a dual odd-girth gap. Applying finite-geometric rigidity to its span gives a second dichotomy: either `E_tau` is exponentially sparse in that span, or all near-negative modes are compatible with one common source cell on which they simultaneously take the preferred value `-1`.
 
-`1-sum_(lambda in E) a_lambda^m <= delta^(m-2) (1/eta - 1 - sum_(lambda in E) a_lambda^2)`.
+Effective occupancy controls how large that compatible family can be. If `R` linearly independent near-negative modes satisfy `R tau<1`, their common preferred-sign cell contains at least `(1-R tau)N` weighted shell mass, and Cauchy--Schwarz gives
 
-Writing `epsilon_m=delta^(m-2)(1/eta-1)`, some exceptional character satisfies
+`eta <= 2^(-R)/(1-R tau)^2`.
 
-`-A_lambda/N >= ((1-epsilon_m)/J)^(1/m)`.
+In particular, when `R tau<=1/2`, `R<=log_2(4/eta)`. A collision-rich shell with non-negligible participation ratio therefore cannot support a high-rank family of almost constant-negative generated characters.
 
-Thus if `epsilon_m=o(1)` and `log J=o(m)`, one exceptional generated character is `-1` on a `1-o(1)` fraction of the weighted shell. The residual escape is not an arbitrary uncontrolled mode: it is quantitatively close to the exact affine obstruction.
+The reusable interface is now two-level. A small analytically exceptional family is forced **toward** the affine endpoint by MC-290; MC-291 then constrains the geometry of all modes that get sufficiently close. Future arithmetic input can attack exceptional-family size, one-sided threshold, effective occupancy, conductor, dual rank, or the impossibility of concentrating most source mass in a common preferred-sign cell for the actual Legendre shell.
 
-At the natural Geelen-scale occupancy `eta~t 2^-t`, taking `m=t` exposes a sharp one-sided threshold. With one exception and `delta=1/2`, the exceptional character's positive-side shell mass is only `O(t^-2)`; any fixed `delta<1/2` makes the approach to the affine endpoint exponentially stronger.
-
-The reusable interface is therefore: **family cancellation with a small exceptional set converts finite-geometric odd-girth information into near-affine concentration.** Future arithmetic input can attack the size of the exceptional family, the one-sided threshold, the effective occupancy, or the impossibility of such concentration for the actual Legendre shell, rather than trying to control every generated character uniformly.
-
-**Boundary.** The conclusion depends on the exact odd-moment identities and on `eta` not being too small. It does not exclude the affine endpoint, prove a lower bound on `eta`, control conductor, or supply the required exceptional-character theorem.
+**Boundary.** These conclusions depend on the exact finite Fourier identities and on `eta` not being too small. They do not exclude the affine endpoint, prove a lower bound on `eta`, control conductor, or supply the required exceptional-character theorem. The common sign cell is a structural alternative, not evidence that the actual arithmetic shell realizes it.
