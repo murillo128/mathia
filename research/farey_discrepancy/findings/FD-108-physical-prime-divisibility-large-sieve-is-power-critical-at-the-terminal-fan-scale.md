@@ -34,10 +34,12 @@ U_H=H^{2\Theta+o(1)},
 \tag{3}
 \]
 
-the adaptive source cutoff of `FD-105` permits terminal least-prime labels up to
+the adaptive source cutoff of `FD-105` permits terminal least-prime labels only up to
 
 \[
-P_*(X)=X^{2-2\Theta+o(1)}.
+P_*(X)
+\ll \frac{X^2\log X}{U_H}
+=X^{2-2\Theta+o(1)}.
 \tag{4}
 \]
 
@@ -53,17 +55,18 @@ S(P):=\sum_{3\le p\le P}\frac1p,
 \tag{5}
 \]
 
-has total large-sieve cost at most
+has reciprocal-sample large-sieve cost, by the prime number theorem,
 
 \[
-\frac{X^{2\Theta+o(1)}P_*}{S(P_*)}
-+o(X^2)
-=
-\frac{X^{2+o(1)}}{S(P_*)}+o(X^2),
+\ll
+\frac{U_H P_*}{S(P_*)\log P_*}
+\ll_\Theta
+\frac{X^2}{S(P_*)}
+=o(X^2).
 \tag{6}
 \]
 
-which lies inside the unavoidable `X^2` term on the right of (2), since `P_*(X)` grows polynomially and therefore `S(P_*)->infinity`. Thus the basic first-order prime-divisibility consequence of the physical coefficient law does **not** remove the `epsilon` in `FD-106` for any fixed `Theta<1`.
+The deterministic centering term in (2) is also `o(X^2)`. Thus this harmonic profile lies inside the unavoidable `X^2` term on the right of (2). The basic first-order prime-divisibility consequence of the physical coefficient law therefore does **not** remove the `epsilon` in `FD-106` for any fixed `Theta<1`.
 
 This does not show that the physical coefficient law is insufficient. It identifies the information lost by this particular reduction. Any successful coefficient-law attack must exploit structure beyond the first-order residue-class `L^2` budget: higher-order prime incidence, the complete least-prime-factor tree, multiplicative sign coherence, or an amortized coupling to source descent/head events. The boundary case `Theta=1` is not decided by the power audit below because the terminal prime range is then only subpower and logarithmic factors become first-order.
 
@@ -259,17 +262,13 @@ L_H
 A retained terminal prime row has source argument `floor(X/p)>L_H`, so
 
 \[
-p\ll\frac{X}{L_H}.
+p\ll\frac{X}{L_H}
+\ll\frac{XH\log H}{U_H}
+\asymp\frac{X^2\log X}{U_H}.
 \tag{24}
 \]
 
-On a sharp false-RH state (3), logarithms and fixed constants are absorbed in the `o(1)` exponent and
-
-\[
-L_H=H^{2\Theta-1+o(1)},
-\]
-
-hence
+On a sharp false-RH state (3), logarithms and fixed constants are absorbed in the `o(1)` exponent, giving
 
 \[
 \boxed{
@@ -306,11 +305,11 @@ Then by (22), uniformly up to harmless fixed factors,
 \mathcal H\!\left(\left\lfloor\frac Xp\right\rfloor\right)
 \right|^2
 \asymp
-\frac{X^{2\Theta+o(1)}}{S(P)p}.
+\frac{U_H}{S(P)p}.
 \tag{28}
 \]
 
-The contribution of the reciprocal samples themselves to the left side of (2) is bounded by
+Hence the reciprocal-sample contribution to the left side of (2) satisfies
 
 \[
 \sum_{p\le P}p
@@ -318,71 +317,85 @@ The contribution of the reciprocal samples themselves to the left side of (2) is
 \mathcal H\!\left(\left\lfloor\frac Xp\right\rfloor\right)
 \right|^2
 \ll
-\frac{X^{2\Theta+o(1)}\pi(P)}{S(P)}
-\le
-\frac{X^{2\Theta+o(1)}P}{S(P)}.
+\frac{U_H\pi(P)}{S(P)}.
 \tag{29}
 \]
 
-Now take the full source-rich power range
+Now take `P` at the full source-rich scale (24), so that
 
 \[
-P=P_*(X)=X^{2-2\Theta+o(1)}.
+P\ll\frac{X^2\log X}{U_H},
+\qquad
+P=X^{2-2\Theta+o(1)}.
 \tag{30}
 \]
 
-For every fixed `Theta<1`, this tends to infinity polynomially. Euler's divergence of the reciprocal prime sum therefore gives `S(P)->infinity`, and (29) becomes
+For every fixed `Theta<1`, `P` tends to infinity polynomially and
 
 \[
-\boxed{
-\sum_{p\le P_*}p
-\left|
-\mathcal H\!\left(\left\lfloor\frac Xp\right\rfloor\right)
-\right|^2
-\le
-\frac{X^{2+o(1)}}{S(P_*)}
-=o(X^{2+o(1)}).
-}
+\log P=(2-2\Theta+o(1))\log X.
 \tag{31}
 \]
 
-The centering term in (2) also fits. `FD-046` gives, for every fixed `tau>Theta`,
+The prime number theorem gives `pi(P)<<P/log P`, so (29)--(31) imply
 
 \[
-|\mathcal H(X)|\ll_\tau X^\tau.
+\begin{aligned}
+\sum_{p\le P}p
+\left|
+\mathcal H\!\left(\left\lfloor\frac Xp\right\rfloor\right)
+\right|^2
+&\ll
+\frac{U_HP}{S(P)\log P}\\
+&\ll_\Theta
+\frac{X^2\log X}{S(P)\log P}\\
+&\ll_\Theta
+\boxed{\frac{X^2}{S(P)}}.
+\end{aligned}
 \tag{32}
 \]
 
-Choose `tau<1`. Since
+Euler's divergence of the reciprocal-prime sum gives `S(P)->infinity`, so the quantity in (32) is `o(X^2)`.
+
+The deterministic centering term in (2) also fits. `FD-046` gives, for every fixed `tau>Theta`,
 
 \[
-\sum_{p\le P}\frac{p}{(p-1)^2}
-\ll\log P,
+|\mathcal H(X)|\ll_\tau X^\tau.
 \tag{33}
 \]
 
-the total centered contribution is
+Because `Theta<1`, choose `tau` with `Theta<tau<1`. The elementary bound
 
 \[
-\ll
-X^{2\tau}\log P_*
-=o(X^2).
+\sum_{p\le P}\frac{p}{(p-1)^2}
+\ll\log P
 \tag{34}
 \]
 
-Consequently the complete harmonic profile (26), including the deterministic center in (2), consumes at most `X^{2+o(1)}` and in fact has logarithmic slack, while the right side of (2) is always at least a constant multiple of `X^2`. The prime-divisibility large sieve therefore has exactly the wrong scale to forbid the matched endpoint.
+gives
+
+\[
+|\mathcal H(X)|^2
+\sum_{p\le P}\frac{p}{(p-1)^2}
+\ll_\tau
+X^{2\tau}\log P
+=o(X^2).
+\tag{35}
+\]
+
+Using `|u+v|^2<=2|u|^2+2|v|^2`, equations (32) and (35) show that the complete harmonic profile (26), including the deterministic center in (2), consumes only `o(X^2)`. The right side of (2), however, contains the unavoidable term `X^2`. Thus the prime-divisibility large sieve has enough capacity to accommodate the matched endpoint throughout the full source-rich power range.
 
 This comparison is deliberately a **stress test of the theorem**, not a construction of a physical source with profile (26). Its conclusion is information-theoretic: inequality (2), even though it is a genuine consequence of the physical coefficient law, is compatible with the terminal harmonic allocation at the full power range that the source-rich predecessor mechanism can expose.
 
-The special case `Theta=1` is excluded from this power audit. Then `P_*(X)=X^{o(1)}` and logarithmic factors are no longer subordinate to a fixed positive power. Equation (2) remains true, but (31)--(34) no longer classify the endpoint sharply.
+The special case `Theta=1` is excluded from this power audit. Then `P_*(X)=X^{o(1)}` and logarithmic factors are no longer subordinate to a fixed positive power. Equation (2) remains true, but (30)--(35) no longer classify the endpoint sharply.
 
 ## 5. Prior-art calibration and the new frontier
 
-The load-bearing external input is the classical additive large-sieve inequality for separated rational points; a primary anchor is H. L. Montgomery and R. C. Vaughan, *The large sieve*, Mathematika **20** (1973), 119--134, DOI `10.1112/S0025579300004708`. The large sieve itself is classical and no novelty is claimed for (15).
+The load-bearing external input is the classical additive large-sieve inequality for separated rational points; a primary anchor is H. L. Montgomery and R. C. Vaughan, *The large sieve*, Mathematika **20** (1973), 119--134, DOI `10.1112/S0025579300004708`. The prime-number-theorem upper bound used in (32) is already anchored for this line through D. J. Newman's PNT source in `SOURCES.md`. No novelty is claimed for either theorem.
 
 Prime-denominator refinements are also a real neighboring literature. Henryk Iwaniec, *The large sieve with prime moduli*, Revista Matemática Iberoamericana **38** (2022), 2337--2354, DOI `10.4171/RMI/1381`, surveys the classical prime-modulus problem and proves sharper estimates under additional coefficient-support or `L^2` hypotheses. `FD-108` does **not** claim that (15) is the best possible prime-modulus inequality for the physical coefficients. Its durable statement is narrower: the immediate first-order divisibility projection of (1), closed only with the standard coefficient norm `sum|a(n)|^2<=X`, is power-critical at the exact terminal range (25).
 
-The literature audit did not locate a result tying this particular coefficient sequence `mu(rad n)phi(rad n)/n`, the reciprocal samples `mathcal H(floor(X/p))`, and the Farey/Schur terminal least-prime fan into a stronger inequality. The exact recurrence (10)--(11) is elementary once (1) is known; the Mathia-specific content is its use as the first physical-law test of the `FD-106` endpoint and the scale comparison (25)--(34).
+The literature audit did not locate a result tying this particular coefficient sequence `mu(rad n)phi(rad n)/n`, the reciprocal samples `mathcal H(floor(X/p))`, and the Farey/Schur terminal least-prime fan into a stronger inequality. The exact recurrence (10)--(11) is elementary once (1) is known; the Mathia-specific content is its use as the first physical-law test of the `FD-106` endpoint and the scale comparison (24)--(35).
 
 The next useful coefficient-law attack therefore has a more precise target. A first-order prime incidence estimate loses too much. One needs either a **higher-order incidence inequality** that sees simultaneous divisibility by `pq`, `pqr`, ... and hence the complete least-prime-factor tree, or a signed/multiplicative constraint that couples those levels before squaring. The other live route remains the global one from `FD-102`/`FD-106`: make repeated source descent or head events pay the selection tax that terminal prime entropy can otherwise sustain.
 
