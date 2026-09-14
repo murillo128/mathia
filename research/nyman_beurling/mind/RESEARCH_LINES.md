@@ -8,32 +8,24 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Rule out harmonic-profile interpolation by high-zero power sums at inverse-height cost
+## Rule out strong target capture by actual zero-power packets at inverse-section retention
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`, `MI-011-canonical-deflation-cancels-raw-cauchy-crowding-volume`, `MI-012-three-state-transverse-confluence-exposes-collective-shear`, `MI-013-absolute-height-and-global-zero-counts-are-invisible-to-the-collective-shear-obstruction`, `MI-014-quadratic-horizontal-tangency-is-the-three-state-conditioning-threshold`, `MI-015-confluent-volume-is-curvature-blind-and-controlled-by-radial-depth`, `MI-016-growing-confluent-rank-is-limited-by-endpoint-extrapolation-cost`, `MI-017-finite-high-zero-target-access-requires-a-target-bearing-compression-near-kernel`.
 
-NB-115 localizes the only canonical finite-section escape: order-one finite target access from a target-poor packet must load cell-compression modes whose retained continuum energy is `O(tau(F)+1/R)`. NB-116 uses the horizontal Burnol weight plus Selberg density to sharpen the actual high-zero packet mass to `tau(F)=O(1/G)`, so the relevant retention scale is `O(1/G+1/R)` independently of packet rank and width.
+NB-115 localizes the canonical finite-section escape to target-bearing cell-compression modes. NB-116 uses horizontal Burnol mass plus Selberg density to put every high-zero packet above height `G` on retention scale `O(1/G+1/R)`. NB-117 then removes the spectral-coordinate ambiguity: in natural-cell coordinates, finite target access is exactly weighted interpolation of the harmonic minimizer `C+D/n` by confluent zero-power sums.
 
-NB-117 removes the remaining spectral-coordinate ambiguity. For every packet vector `f`, let
+NB-118 adds an independent source equation that does not use zero height. Every finite packet of actual zeta zeros is orthogonal to every fixed finite Nyman generator space `V_M`. Writing `p_M=P_(V_M)e`, `r_M=e-p_M`, `d_M=||r_M||`, this forces any packet whose finite target capture exceeds the residual baseline `d_M^2` to cancel its visible correlation with `p_M` beyond the cell cutoff. Since the tail of each fixed `p_M` has norm squared `O_M(1/R)`, a target-bearing witness must satisfy
 
-`P_f(n)=<f,e 1_[log n,infinity)>`.
+`||Q_R f||^2/||f||^2 = O_(M,c)(1/R)`
 
-Then exactly
+for every fixed capture fraction `c>d_M^2`.
 
-`||Q_R f||^2 = sum_(n<R) n(n+1)|Delta P_f(n)|^2`
+The first finite sections are already quantitative: `d_2^2=1-log 2`, while the two-generator space `{g_2,g_3}` gives `d_3^2≈0.09575`. Thus capture above about `9.6%` already forces inverse-section, rather than merely inverse-height, retention. When `R/G->infinity`, the `1/G` escape from NB-116--NB-117 disappears for such strong capture.
 
-and
+The live source theorem is now sharper: **exclude actual zero-power packets that achieve a prescribed target angle while hiding all but `O(1/R)` of their continuum norm in the first `R` natural cells**, or construct such a packet and determine what it implies. The theorem may exploit the confluent power-sum form, several fixed Nyman orthogonality equations, conductor/height geometry, or another source-specific constraint, but sending `M` to infinity is not free because `d_M->0` is itself the Nyman/RH approximation problem and the tail constants may deteriorate.
 
-`<Q_R f,e_R> = P_f(1)-P_f(R)`.
+## Keep target baseline, zero height, continuum mass, cell retention and interpolation geometry separate
 
-Among sequences with those endpoint values, the unique minimum-energy profile is affine in `1/n`. Therefore fixed positive target access is equivalent to the packet primitive approximating `C+D/n` with bounded weighted first-difference excess. For a finite zero packet, that primitive is exactly a confluent zero-power sum
+NB-118 is not another Gram-conditioning estimate. It combines actual-zero annihilation of fixed Nyman generators with the finite target geometry. A fixed source section controls only capture above its residual threshold `d_M^2`; below that threshold it says nothing. Conversely, high-zero height controls continuum mass but is no longer the limiting retention scale once capture clears a fixed Nyman baseline.
 
-`sum_rho c_rho n^-conj(rho) (log n)^k`.
-
-In the regime `R/G -> infinity`, an order-one target witness can be normalized to have `O(1)` discrete harmonic-profile energy while its continuum model-space norm is `Omega(G)`. The live theorem is now concrete: **exclude an inverse-height-cost approximation of the harmonic `1/n` profile by finite power sums formed from actual off-critical zeros**, or construct such an approximation and understand its consequences.
-
-## Keep conditioning, rank supply, continuum mass, compression retention and interpolation geometry separate
-
-Raw Gram conditioning and canonical packet shear are nuisance coordinates for the exact target quotient in NB-117: any invertible packet-coordinate change leaves the attainable primitive sequences and weighted Dirichlet quotient unchanged. Small compression eigenvalues are still insufficient unless the target occupies them, but the target-bearing condition can now be stated without diagonalizing the Gram matrix.
-
-Future claims should distinguish available zero rank, horizontal zero mass, continuum norm, retained cell energy and approximation of the unique harmonic minimizer. Only the last three enter the exact finite target normal form.
+Future claims should distinguish available zero rank, horizontal zero mass, finite-section target baseline, continuum norm, retained cell energy and approximation of the harmonic minimizer. The unresolved object is the actual zero-power interpolation class under these simultaneous constraints, not an abstract small eigenvalue.

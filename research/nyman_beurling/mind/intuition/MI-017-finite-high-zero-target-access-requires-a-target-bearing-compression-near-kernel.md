@@ -1,27 +1,19 @@
-# MI-017 — High-zero target rescue is weighted harmonic-profile interpolation at inverse-height cost
+# MI-017 — Strong high-zero target rescue must compress to the inverse-section scale once it exceeds a finite Nyman baseline
 
-**Evidence level:** exact finite-section reduction from NB-115, sharpened by NB-116 using classical Selberg zero density and converted to an exact scalar normal form by [NB-117](../../findings/NB-117-finite-high-zero-target-rescue-is-exactly-a-weighted-power-sum-interpolation-problem.md). This does not exclude the required interpolation or prove a Nyman distance estimate.
+**Evidence level:** exact finite-section reduction from NB-115--NB-117, sharpened by [NB-118](../../findings/NB-118-finite-nyman-orthogonality-forces-strong-zero-packet-target-capture-into-inverse-section-modes.md). The result constrains finite packets of actual zeta zeros through exact Nyman source orthogonality; it does not exclude the required `O(1/R)` compression mode or prove a Nyman distance estimate.
 
-NB-115 proves that if a target-poor continuum packet captures a fixed positive fraction of the finite Nyman target, substantial target weight must pass through cell-compression modes with retained-energy fraction `O(tau(F)+1/R)`. NB-116 identifies the actual high-zero source scale: for every finite packet above height `G`, the Burnol mass satisfies `tau(F)=O(1/G)` independently of cardinality, multiplicity and ordinate spread.
+NB-115 proves that if a target-poor continuum packet captures a fixed positive fraction of the finite Nyman target, substantial target weight must pass through cell-compression modes. NB-116 identifies the high-zero height scale: a packet above ordinate `G` has Burnol mass `O(1/G)`, leading to retained-energy fraction `O(1/G+1/R)`. NB-117 turns this into an exact interpolation problem: the cell primitive of a finite actual-zero packet is a confluent power sum, and the unique minimum-energy profile for fixed target endpoint difference is `C+D/n`.
 
-NB-117 shows that the pseudoinverse language is not the intrinsic endpoint. Define the target-tail primitive
+NB-118 adds a source constraint independent of zero height. Every finite actual-zero packet is orthogonal to each fixed Nyman generator `g_b`, hence to every fixed finite space `V_M=span{g_2,...,g_M}`. Let `p_M=P_(V_M)e`, `r_M=e-p_M`, and `d_M=||r_M||`. If a packet captures a target fraction `c>d_M^2`, then the visible correlation exceeding the residual baseline cannot come from `r_M`; it must use `p_M` and, by exact source orthogonality, be cancelled in the cells beyond the cutoff.
 
-`P_f(n)=<f,e 1_[log n,infinity)>`.
+The tail of a fixed `p_M` has squared norm `O_M(1/R)`. Consequently every sufficiently large finite section with capture `c>d_M^2` contains a target-bearing witness satisfying
 
-Then the visible cell norm and target coordinate are exactly
+`||Q_R f||^2/||f||^2 = O_(M,c)(1/R)`.
 
-`||Q_R f||^2 = sum_(n<R) n(n+1)|P_f(n)-P_f(n+1)|^2`,
+This removes the inverse-height branch for strong capture when `R/G->infinity`. The first thresholds are already nontrivial: `d_2^2=1-log 2≈0.30685`, while `M=3` gives `d_3^2≈0.09575`. Thus two fixed Nyman source equations force any capture above about `9.6%` onto the inverse-section retention scale, with no zero-counting, zero-density or packet-width input.
 
-`<Q_R f,e_R> = P_f(1)-P_f(R)`.
+The conceptual point is that **source orthogonality can strengthen a target-bearing compression law without improving ambient conditioning**. Height controls how expensive the packet is in continuum norm; finite Nyman equations control how much of a strongly target-aligned packet may remain visible before the cutoff. These are independent resources, and after NB-118 the latter dominates the retention scale for capture above a fixed source baseline.
 
-For fixed endpoint difference, the unique minimizer of this weighted Dirichlet energy is the harmonic profile `C+D/n`. The energy splits orthogonally into the sharp endpoint cost plus the excess energy of `P_f-(C+D/n)`. Thus order-one finite target access is equivalent to approximating that harmonic profile with bounded relative excess in the exact metric consumed by the target.
+The live theorem is therefore to rule out, for actual off-critical zero powers, simultaneous strong target alignment and `O(1/R)` visible retention in the exact weighted harmonic-profile geometry of NB-117. Sending `M` upward is not a free way to drive the target baseline to zero: `d_M->0` is itself the Nyman approximation/RH problem, and the tail constants of `p_M` can deteriorate.
 
-For a finite packet of actual zeros, the attainable primitive is not arbitrary. Up to invertible coefficient changes it is a confluent power sum
-
-`P_f(n)=sum_rho sum_k c_(rho,k) n^-conj(rho) (log n)^k`.
-
-If all packet zeros lie above height `G` and `R/G->infinity`, any order-one target witness can be normalized to have `O(1)` discrete harmonic-profile energy while NB-116 forces its continuum model-space norm to be `Omega(G)`. The inverse-height compression near-kernel is therefore an **extrapolation cost for zero-power interpolation**, not merely a small Gram eigenvalue.
-
-The live source theorem is precise: show that finite power sums generated by actual off-critical zeros cannot approximate `C+D/n` on `1<=n<=R` at this weighted-energy/continuum-norm ratio, or construct the approximation. Packet basis, raw Cauchy conditioning and internal shear matter only insofar as they change this attainable interpolation class; invertible reparameterization does not.
-
-**Boundary.** Abstract Hilbert geometry permits target-bearing near-kernels, and NB-117 does not supply a lower bound on the interpolation excess for zeta zeros. Selberg density fixes the inverse-height norm budget but not the geometry of the actual power sums.
+**Boundary.** Abstract exponential-polynomial packets may still possess such compression modes, and an arbitrarily large invisible tail can enforce the finite Nyman orthogonality equations. A fixed `M` gives no constraint below `d_M^2`. NB-118 narrows the source-specific escape; it does not close it.

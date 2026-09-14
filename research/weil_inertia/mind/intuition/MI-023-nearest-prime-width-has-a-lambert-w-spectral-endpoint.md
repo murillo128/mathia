@@ -1,25 +1,31 @@
-# MI-023 — Two-island Lambert screening is a cross-scale incidence problem with polynomially many safe windows
+# MI-023 — Two-island Lambert screening is an incidence problem between many lower safe windows and rare upper prime deserts
 
-**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288, sharpened by WI-289 and [WI-290](../../findings/WI-290-mean-square-prime-gaps-force-polynomially-many-composite-screening-windows.md). This is not a theorem that the required coupled gaps exist or cannot exist.
+**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288--WI-290, with the ordinary-prime host sparsity sharpened by [WI-291](../../findings/WI-291-heath-brown-large-gap-sparsity-confines-screening-to-x-one-tenth-upper-deserts.md). Heath-Brown's large-gap theorem is prior art; no theorem coupling the upper and lower prime processes is claimed.
 
 WI-288 reduces complete screening on two symmetric narrow islands to the nearest-prime-power condition and the Lambert-scale separation
 
 `sqrt(x) delta_pp(x) >= W(c sqrt(x))`.
 
-WI-289 resolves the composite layers through
+WI-289 resolves the prime-power layers through
 
 `delta_pp(x)=min_(k>=1) k delta_p(x^(1/k))`.
 
-The prime layer near `x` demands an enormous `sqrt(x) log x`-scale desert. Prime squares are the unique macroscopically critical composite layer, requiring an approximately mean-gap-sized prime-free interval near `sqrt(x)`; every `k>=3` root window is subunit. On a dyadic shell the composite exclusions still leave residual measure of order `X log log X/log X`.
+The ordinary-prime layer near `x` demands a `sqrt(x) log x`-scale desert. Prime squares are the unique macroscopically critical composite layer, requiring an approximately mean-gap-sized prime-free interval near `sqrt(x)`; every `k>=3` root window is subunit. On a dyadic shell the composite exclusions still leave residual measure of order `X log log X/log X`.
 
-WI-290 adds the missing topological information. Every prime square is an exact separator of the residual. If the prime-gap second moment at scale `y` is `O(y^(1+theta+epsilon))`, then Cauchy--Schwarz converts the residual mass into at least
+WI-290 shows that this lower-scale reservoir is highly fragmented. Using the published prime-gap second moment with exponent `theta=1/4`, it has at least `X^(3/8-o(1))` positive-length safe components on `[X,2X]`.
 
-`X^((1-theta)/2-epsilon) (log log X/log X)^2`
+WI-291 supplies the complementary upper-scale sparsity. The Lambert ordinary-prime condition forces its host prime gap to be at least `gg sqrt(X) log X`, hence among the square-root-large gaps controlled by Heath-Brown. Consequently the set of eligible centers has total length
 
-positive-length safe components. The published `theta=1/4` theorem already yields `X^(3/8-o(1))` such windows. Thus the composite-safe reservoir cannot concentrate into bounded, logarithmic or subpolynomially many exceptional intervals.
+`O_(c,epsilon)(X^(3/5+epsilon))`
 
-The live obstruction is therefore a **cross-scale incidence problem, not a scarcity problem**. A hypothetical giant prime desert near `x` must systematically avoid a polynomial family of composite-safe windows generated primarily by the prime-gap geometry near `sqrt(x)`. Current theorems provide no correlation between those events.
+and is contained in at most
 
-This narrows what a closing theorem must do. It can prove a deterministic coupling between the two scales, exploit null-equation amplitudes/signs that support screening discards, or leave the symmetric two-island topology. Merely improving the total residual measure or showing that one safe interval exists no longer targets the bottleneck.
+`O_(c,epsilon)(X^(1/10+epsilon)/log X)`
 
-**Boundary.** WI-290 gives no lower bound on individual safe-window length and no independence/coupling theorem. The recent `77/200` exponent uses an unrefereed preprint; the published `3/8` baseline is sufficient for the qualitative polynomial-fragmentation conclusion.
+ordinary-prime gap hosts. In logarithmic separation coordinate its dyadic measure is `O(X^(-2/5+epsilon))`, summable for fixed `epsilon<2/5`.
+
+The bottleneck is therefore not scarcity on either side. It is a **localization/correlation theorem between a polynomially fragmented lower-scale safe reservoir near `sqrt(x)` and a much rarer arithmetically selected family of giant upper gaps near `x`**. The exponent mismatch alone gives no intersection or avoidance result; all lower safe components could, on current information, miss the eligible upper hosts.
+
+This closes the raw-abundance route. More composite-safe windows do not help unless one proves where they sit relative to the rare upper deserts. A closing theorem must couple the two prime scales, exploit null-equation amplitudes/signs discarded by pure support screening, or leave the symmetric two-island topology.
+
+**Boundary.** WI-291 does not rule out any completely screened center, prove cross-scale independence, or make the candidate set discrete. Finite/summable logarithmic measure still permits infinitely many candidate separations. The conclusion is confined to complete one-signed symmetric two-island screening.

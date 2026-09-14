@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Transport a source sign budget without paying away the zero-sensitive region
+## Compress a zero-sensitive source without hiding the complexity that makes it zero-sensitive
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
@@ -18,9 +18,19 @@ The decisive accounting identity is that a higher-harmonic tuple loses a first-h
 
 `X(m) <= (k-1) S(m)`.
 
-Thus each unit of harmonic tail can destroy at most `k-1` collision factors; the depth budget is linear in the requested sign order and independent of `h` at exponent level.
+Thus each unit of harmonic tail can destroy at most `k-1` collision factors; the observation-side depth budget is linear in the requested sign order and independent of `h` at exponent level.
 
-The remaining theorem is not another determinant-margin improvement. The sign-regular observation is still non-prime-specific and remains inside absolute convergence. One must **force a small source sign budget and carry its certificate toward a zero-sensitive destination without the required growing half-plane depth erasing the destination signal**, or find a different destination that consumes the finite-order certificate before that transport.
+AF-339 now closes the most canonical source-side shortcut. The zero-sensitive discrepancy `d_n=Lambda(n)-1` has
+
+`sum_(n>=2) d_n n^-s = -zeta'(s)/zeta(s)-zeta(s)+1`,
+
+so its meromorphic continuation retains the zeta zero divisor, but on every fixed multiplicative window `[P,AP]` its ordered sign variation is
+
+`V=(2(A-1)+o(1)) P/log P`.
+
+Therefore the raw zero-sensitive source eventually lies outside every fixed-order AF-216/AF-338 sign budget. AF-338 cannot be extrapolated to growing `r` without a new uniform theorem.
+
+The remaining bridge is now precise: find an **intrinsic recoding/grouping of a zero-sensitive source whose effective ordered complexity is bounded or otherwise cheaply certifiable while the zero-divisor discriminator remains recoverable**, prove a joint growing-order observation theorem strong enough for the raw source, or replace ordered sign variation by another source-complexity invariant with a finite certificate that survives toward the zero-sensitive destination. Compression counts only if the destination information lost in buying the simpler source geometry is audited explicitly.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -56,4 +66,4 @@ The remaining question is provenance of the non-escape resource. Can the arithme
 
 ## Keep incidence, source resources and destination slack as different currencies
 
-Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence and destination sensitivity are distinct resources. AF-338 shows why this accounting matters even inside one determinant proof: preserving the actual collision geometry changes a quadratic apparent transport bill into a linear one, but it does not make the transported certificate prime-specific or move it to the critical region.
+Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence and destination sensitivity are distinct resources. AF-338 shows why this accounting matters on the observation side: preserving the actual collision geometry changes a quadratic apparent transport bill into a linear one. AF-339 supplies the complementary source-side warning: direct zero sensitivity may come with a sign budget that diverges like `P/log P`. Neither improvement supplies the other currency for free.

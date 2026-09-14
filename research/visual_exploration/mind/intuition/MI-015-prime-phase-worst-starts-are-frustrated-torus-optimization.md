@@ -1,6 +1,6 @@
-# MI-015 — Prime-phase worst starts are a torus-frustration problem whose magnetic relaxation has a dimension floor
+# MI-015 — Prime-phase worst starts are a torus-frustration problem whose normalized magnetic relaxation fails in the subcritical regime
 
-**Evidence level:** exact finite-dimensional reduction from VIS-213, exact holonomy and fractional cycle-packing certificates from VIS-214--VIS-215, normalized magnetic-ground-state certificate from VIS-216, and the exact relaxation lower bound from [VIS-217](../../findings/VIS-217-normalized-spectral-certificate-dimension-floor.md). No asymptotic theorem for the actual prime graph, exact torus optimum, recurrence time or RH consequence is claimed.
+**Evidence level:** exact finite-dimensional reduction from VIS-213, exact holonomy and fractional cycle-packing certificates from VIS-214--VIS-215, normalized magnetic-ground-state certificate from VIS-216, exact relaxation lower bound from VIS-217, and its prime-graph asymptotic specialization in [VIS-218](../../findings/VIS-218-subcritical-effective-edge-density-closes-magnetic-rms.md). No lower bound for the exact torus optimum, recurrence-time theorem or RH consequence is claimed.
 
 For fixed `y,H`, the worst start is exactly the unit-modulus quadratic optimum `max_|z_p|=1 |z^*A_(y,H)z|`. Kronecker density settles existence of torus phases, not the size of this optimum or the time needed to approach it.
 
@@ -22,10 +22,26 @@ then
 
 `U_spec/sqrt(R(A)) >= sqrt(2 N_eff/(n-1))`.
 
-This makes the first spectral gate purely structural: **the normalized magnetic relaxation can reach Haar-RMS scale only if `N_eff=O(n)`.** When effective edge mass is superlinear in the number of active vertices, no choice of phases or holonomies can repair the spectral certificate; its Frobenius mass already enforces too large an operator norm.
+VIS-218 now prices this gate on the actual prime coefficient graph throughout the strictly subcritical regime `H log y/y -> 0`. There
 
-The live arithmetic problem therefore branches cleanly. First determine the actual scale of `N_eff(y,H)/n(y,H)`. If it diverges, the normalized spectral route is closed as a standalone RMS certificate and one must use stronger cycle packing or the exact fixed-modulus torus constraint. If it stays bounded, the dimension floor does not kill the route, but one still needs the near-extremal eigenvalue control demanded by VIS-216.
+`W_1 asymp y/(H log y)`,
 
-Only after a static pointwise bound is established does one-parameter access time become relevant.
+`W_2 asymp 1/H`,
 
-**Boundary.** VIS-217 limits the relaxation, not the exact torus optimum. A weak spectral certificate does not prove a large worst-start value, and `N_eff=O(n)` is only necessary, not sufficient, for RMS-scale spectral suppression.
+and hence
+
+`N_eff asymp y^2/(H (log y)^2)`.
+
+Since the number of active prime vertices is at most `pi(y)`,
+
+`N_eff/n >> y/(H log y) -> infinity`.
+
+Therefore
+
+`U_spec/sqrt(R_v) >> sqrt(y/(H log y)) -> infinity`.
+
+The normalized magnetic relaxation is thus **closed as a standalone Haar-RMS certificate on the entire strictly subcritical prime regime**. No choice of edge phases, cycle holonomies or magnetic ground state can repair that relaxation, because its phase-blind effective dimension is already too large.
+
+The live static branch is now the stronger fractional cycle-packing/frustration route or the exact fixed-modulus torus optimization, both of which retain information discarded by the variable-amplitude normalized spectral relaxation. One-parameter access time remains a separate question and becomes relevant only after a pointwise static bound exists.
+
+**Boundary.** VIS-218 limits the relaxation, not the exact torus optimum. A large spectral upper certificate does not prove that the true worst-start value is large. The conclusion is also restricted to the strictly subcritical scale; the constant critical transition `H asymp y/log y` is not covered by the same effective-edge-density asymptotic.
