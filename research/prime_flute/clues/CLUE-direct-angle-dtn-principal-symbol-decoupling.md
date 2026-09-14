@@ -14,6 +14,7 @@ based_on:
   - research/prime_flute/findings/PF-330-completed-low-normalization-rotates-packet-frame-instead-of-damping-total-energy-mass.md
   - research/prime_flute/findings/PF-336-relative-polar-transport-removes-the-normalized-insertion-envelope.md
   - research/prime_flute/findings/PF-337-critical-translations-expose-the-frequency-off-diagonal-mass-of-the-normalized-pant-insertion.md
+  - research/prime_flute/findings/PF-338-finite-boundary-critical-translations-force-total-half-cuff-mixing-to-vanish.md
 ---
 
 # Can the shear-deleted local pant angle meet the direct-channel endpoint budget?
@@ -44,13 +45,21 @@ and `U_n` is the completed polar rotation, then
 
 Thus no separate bound on `\|K_n\|`, no seam condition number, and no retained-rank factor is needed to transfer physical translations through the polar rotation.
 
-PF-337 makes the remaining translation gate directly testable. Averaging `\|[K_n,\tau_t]\|_{\mathcal S_2}^2` over the PF-328 critical interval is an exact positive weighted sum of the Fourier matrix mass `|K_{n;jk}|^2`. Therefore a successful translation gate forces all Hilbert--Schmidt mass at every fixed nonzero physical-frequency separation to vanish. On PF-324's finite-boundary subsequence `r_n\to0`, the critical translations are asymptotically half-cuff translations, so every fixed odd Fourier diagonal has asymptotic commutator weight `4`; in particular
+PF-337 makes the remaining translation gate directly testable. Averaging `\|[K_n,\tau_t]\|_{\mathcal S_2}^2` over the PF-328 critical interval is an exact positive weighted sum of the Fourier matrix mass `|K_{n;jk}|^2`. Therefore a successful translation gate forces all Hilbert--Schmidt mass at every fixed nonzero physical-frequency separation to vanish.
+
+PF-338 strengthens the finite-boundary arithmetic test. Along PF-324's subsequence `r_n\to0`, the whole retained **odd-offset** Fourier sector has one uniform positive critical-interval weight, not only each fixed odd diagonal separately. With the half-cuff translation
 
 \[
-\sum_k|K_{n;k+1,k}|^2=o(1)
+H_n:=\tau_{\ell_n/2},
 \]
 
-is a necessary condition for the translation route.
+one therefore has the necessary condition
+
+\[
+\|[K_n,H_n]\|_{\mathcal S_2}=o(1).
+\]
+
+Equivalently the normalized pant quadratic form must become invariant, on the retained low space, under shifting a boundary datum by half a cuff. Any order-one normalized pant-energy contrast between a low-band profile and its half-cuff translate already kills the translation route.
 
 ## Research question
 
@@ -69,13 +78,13 @@ for some fixed `\varepsilon>0`, or the PF-318 Hilbert--Schmidt endpoint
 \le C\frac{1+\log P_n}{P_n^2}.
 \]
 
-For the **PF-328 obstruction route**, work before the nonlinear completion and determine the physical-frequency structure of the normalized pant insertion `K_n`. Does
+For the **PF-328 obstruction route**, work before the nonlinear completion and determine whether
 
 \[
 \sup_{t\in I_n}\|[K_n,\tau_t]\|_{\mathcal S_2}=o(1)
 \]
 
-hold? PF-336 would then transfer the estimate directly to `U_n`. The first falsification target should be PF-337's nearest odd Fourier diagonal on the finite-boundary subsequence. If that band has positive lower-limit Hilbert--Schmidt mass, the translation-transport route fails without any further square-root or polar analysis.
+can hold. PF-336 would transfer that estimate directly to `U_n`. On the PF-324 finite-boundary subsequence, PF-338 makes the first aggregate test basis-free: does the actual normalized pant response become asymptotically invariant under the half-cuff translation? A persistent cross block between the `H_n=+1` and `H_n=-1` sectors, or one retained-low datum with persistent half-cuff energy contrast, refutes the route without computing the completed square root or polar factor.
 
 Even a positive translation result is not enough by itself: one completed reference packet must still be shown spatially concentrated, or a stronger fixed-window cutoff/off-diagonal estimate must be proved. Spatial cutoffs do not commute with `Q`, so that stronger route remains distinct.
 
@@ -83,26 +92,54 @@ Even a positive translation result is not enough by itself: one completed refere
 
 Most abstract operator-theoretic uncertainty has now been removed. The shear is already affordable at the endpoint, completed-energy normalization cannot erase packet mass by scalar damping, and the polar rotation cannot create an independent translation-locality obstruction. What remains is the geometry of the shear-deleted one-cusp pant/core DtN response in the exact seam-energy metric.
 
-PF-337 also makes a negative result cheap enough to be valuable. Instead of attempting the full nonlinear packet transport and only then discovering nonlocality, one can test explicit positive Fourier-matrix mass of `K_n`. A persistent first odd diagonal on the arithmetic finite-boundary subsequence, or persistent mass across any fixed physical-frequency gap in any regime, is already incompatible with the PF-336 translation gate.
+PF-338 makes the negative test cheaper and more geometric than an entry-by-entry Fourier calculation. The translation route demands approximate **half-cuff symmetry of normalized pant energy** on the entire retained low space along `r_n\to0`. If the one-cusp pant/core response distinguishes a profile from its antipodal half-cuff translate by order one after seam normalization, the critical-translation commutator has a positive lower bound automatically.
 
 ## Decisive test
 
-For the obstruction branch, compute or estimate the physical Fourier matrix of
+For the obstruction branch, work on the exact shear-deleted one-cusp-pant low section and set
 
 \[
-K_n=Q_{L,n}^{-1/2}\Lambda_{LL,n}Q_{L,n}^{-1/2}
+K_n=Q_{L,n}^{-1/2}\Lambda_{LL,n}Q_{L,n}^{-1/2},
+\qquad
+H_n=\tau_{\ell_n/2}.
 \]
 
-on the exact shear-deleted one-cusp-pant low section. Start with the PF-324 subsequence `r_n\to0` and the PF-337 quantity
+Start on the PF-324 subsequence `r_n\to0`. The strongest cheap target is now
 
 \[
 \boxed{
-M_n^{(1)}:=\sum_{k:\,k,k+1\ \mathrm{retained}}
-|K_{n;k+1,k}|^2.
+\|K_n-H_nK_nH_n\|_{\mathcal S_2}
+=\|[K_n,H_n]\|_{\mathcal S_2}.
 }
 \]
 
-A positive `\limsup M_n^{(1)}` refutes the translation-transport route. If `M_n^{(1)}\to0`, test the other fixed odd offsets and the fixed-physical-separation tail from PF-337 before attempting the full uniform commutator. A proof of the full `o(1)` commutator may then be passed through PF-336 with constant `1/\sqrt2`, but it must still be paired with concentration of one reference profile before the PF-324 finite-boundary/escaping-boundary comparison is meaningful.
+Equivalently, with `P_{n,\pm}=(I\pm H_n)/2`, test
+
+\[
+\boxed{
+\|P_{n,+}K_nP_{n,-}\|_{\mathcal S_2}.
+}
+\]
+
+A positive lower limsup of either quantity refutes the translation-transport route. It is enough to exhibit unit retained-low data `f_n` with
+
+\[
+\limsup_n
+\left|
+\langle f_n,K_nf_n\rangle-
+\langle H_nf_n,K_nH_nf_n\rangle
+\right|>0.
+\]
+
+This energy comparison should be attempted directly from the one-cusp-pant/core geometry and seam-energy normalization before resolving individual Fourier entries. PF-337's nearest odd band
+
+\[
+M_n^{(1)}=\sum_k|K_{n;k+1,k}|^2
+\]
+
+remains a valid scalar subtest, but PF-338 shows that it is unnecessarily narrow: the critical interval sees the complete retained odd-offset sector with a uniform positive weight.
+
+If the half-cuff cross block tends to zero, continue with the surviving even-offset and fixed-physical-separation tails from PF-337 before attempting the full uniform commutator. A proof of the full `o(1)` commutator may then be passed through PF-336 with constant `1/\sqrt2`, but it must still be paired with concentration of one reference profile before the PF-324 finite-boundary/escaping-boundary comparison is meaningful.
 
 For the upper-bound branch, estimate directly the basis-free raw canonical correlation or its trace form from PF-318/PF-320 rather than proving a stronger locality theorem than the endpoint needs. A uniform `O(s_n^{1+\varepsilon})` operator bound closes the reference channel by the existing superlinear criterion; the squared Hilbert--Schmidt budget above closes it at the weak-trace endpoint.
 
@@ -110,7 +147,9 @@ Do not return to generic square-root sensitivity, polar condition numbers, or a 
 
 ## Evidence boundary
 
-The direct-angle endpoint remains open. PF-337 gives necessary Fourier conditions for the PF-336 translation gate, not a lower bound for the actual pant matrix and not a proof that the gate succeeds or fails. PF-336 transfers a normalized-insertion commutator to the completed polar rotation but does not provide physical concentration of a reference packet. PF-325/PF-328 supply the positive-measure critical packet family, while PF-329/PF-330 identify its correct completed-energy normalization; none proves a nonzero completed low/high correlation.
+The direct-angle endpoint remains open. PF-337 gives necessary Fourier conditions for the PF-336 translation gate. PF-338 strengthens those conditions on the `r_n\to0` subsequence to total odd-sector/half-cuff invariance, but it does **not** prove that the actual pant matrix violates that invariance. The required quantitative one-cusp-pant DtN comparison is still missing.
+
+PF-336 transfers a normalized-insertion commutator to the completed polar rotation but does not provide physical concentration of a reference packet. PF-325/PF-328 supply the positive-measure critical packet family, while PF-329/PF-330 identify its correct completed-energy normalization; none proves a nonzero completed low/high correlation.
 
 The upper-bound route is likewise unresolved: no superlinear local-angle estimate and no PF-318 Hilbert--Schmidt endpoint estimate has been established for the full shear-deleted pant completion.
 
@@ -120,4 +159,4 @@ No scattering/determinant theorem, zeta-zero correspondence, critical-line resul
 
 Outcome: `accepted`.
 
-The clue remains live, but its obstruction branch is now narrower. The first translation-side PDE test is the normalized pant insertion itself, not the completed square-root map: evaluate PF-337's explicit Fourier off-diagonal masses, beginning with the nearest odd diagonal on the PF-324 finite-boundary subsequence. Only if those tests survive should effort move to the full `S_2` translation commutator and then to reference-packet concentration or the stronger cutoff route.
+The clue remains live, with a sharper obstruction-side PDE target. On the PF-324 finite-boundary subsequence, test the **half-cuff normalized pant-energy defect** before individual odd Fourier diagonals. A persistent energy contrast or `H_n` cross-sector Hilbert--Schmidt mass kills the PF-336 translation route. Only if this aggregate defect vanishes should effort move to the surviving even/fixed-physical-separation commutator mass and then to reference-packet concentration or the stronger cutoff route.
