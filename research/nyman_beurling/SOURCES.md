@@ -57,6 +57,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - V. I. Vasyunin, *On a biorthogonal system associated with the Riemann hypothesis*, Algebra i Analiz 7:3 (1995), 118–135; English translation St. Petersburg Math. J. 7:3 (1996), 405–419, [MathNet](https://www.mathnet.ru/eng/aa557). Role: Theorem 7 gives the classical finite-support biorthogonal family for the canonical Nyman step functions. `NB-036` uses this result after converting Vasyunin's floor-function sign convention to the fractional-part convention of this line, then derives the weighted-skeleton dual-defect reduction.
 
+## Near-critical zero density
+
+- Aleksander Simonič, *Explicit zero density estimate for the Riemann zeta-function near the critical line*, J. Math. Anal. Appl. 491 (2020), no. 1, 124303, DOI `10.1016/j.jmaa.2020.124303`, [arXiv:1910.08274](https://arxiv.org/abs/1910.08274). Role: explicit modern source for Selberg's estimate `N(sigma,T) << T^(1-(sigma-1/2)/4) log T` near the critical line, with uniform explicit control on a fixed strip containing `[1/2,3/4]`; `NB-116` integrates this estimate in `sigma` to obtain the horizontal first-moment bound `sum_{0<gamma<=T, beta>1/2}(beta-1/2) << T`, which removes the logarithm from the global high-zero Burnol target tail.
+
 ## Zero counting and zero multiplicity
 
 - Chiara Bellotti, Peng-Jie Wong, with an appendix by Andrew Fiori, *Improved estimates for the argument and zero-counting function of the Riemann zeta-function*, Mathematics of Computation, published electronically 14 November 2025, DOI `10.1090/mcom/4133`, [arXiv:2412.15470v2](https://arxiv.org/abs/2412.15470). Role: primary source for the uniform explicit zero-counting error `|N(T) - (T/(2*pi)) log(T/(2*pi*e))| <= 0.10076 log T + 0.24460 log log T + 8.08344`; `NB-112` combines this with off-critical functional-equation symmetry to put the true multiplicity of every zero with `Re rho > 1/2` strictly below the `NB-111` one-eighth logarithmic target-poorness window.
