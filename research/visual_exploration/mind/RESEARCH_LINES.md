@@ -14,34 +14,32 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Leave simple-cycle packing and attack the exact fixed-modulus torus problem or a genuinely stronger certificate
+## Test the full correlation SDP before returning to the exact fixed-modulus torus problem
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`, `MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization`.
 
 VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quadratic optimum. VIS-214 identifies cycle holonomy as the exact gauge-invariant envelope obstruction, VIS-215 accumulates it through fractional weighted simple-cycle packing, and VIS-216 adds the normalized magnetic-Laplacian relaxation.
 
-VIS-217--VIS-218 close the normalized spectral branch throughout `H log y/y->0`: the actual prime graph has `N_eff/n->infinity`, forcing the magnetic certificate above Haar-RMS scale by a diverging factor regardless of edge phases.
+VIS-217--VIS-218 close the normalized spectral branch throughout `H log y/y->0`: the actual prime graph has `N_eff/n->infinity`, forcing the magnetic certificate above Haar-RMS scale by a diverging factor regardless of edge phases. VIS-219 prices the stronger cycle-packing certificate, and VIS-220 proves a phase-independent ceiling: for support-graph girth `g`, `P_+,P_- <= (2/g^2)B`, so every simple graph leaves at least `7B/9` residual. The simple-cycle LP is therefore exhausted regardless of how many cycles are enumerated.
 
-VIS-219 prices the stronger cycle-packing certificate in destination units. If `P=min(P_+,P_-)`, then exactly
+VIS-221 opens a strictly stronger certificate rather than returning immediately to the nonconvex torus problem. For the Hermitian coefficient matrix `A`, the correlation SDP
 
-`(B-P)/sqrt(R) = sqrt(2 N_eff) (1-P/B)`.
+`U_+(A)=max Tr(AX)` subject to `X>=0`, `X_ii=1`
 
-Thus Haar-RMS certification would require near-total weighted-envelope saturation, with relative deficit `O(N_eff^-1/2)`.
+and its analogue for `-A` upper-bound both signed torus optima. The old magnetic certificate is exactly a restricted feasible dual ansatz inside this SDP, so VIS-218 does not close the larger class. A stationary torus point `z` is certified as a global maximizer, with rank-one SDP tightness, whenever its stress matrix
 
-VIS-220 now proves that such saturation is structurally impossible for the `VIS-215` relaxation before any arithmetic phase information is used. For support-graph girth `g`, every simple-cycle reward and the edge-capacity packing constraint give
+`S_z = Diag(conj(z_i)(Az)_i) - A`
 
-`P_+,P_- <= (2/g^2) B`.
+is positive semidefinite.
 
-For an ordinary simple graph `g>=3`, so `P_+,P_-<=2B/9`, the residual obeys `B-min(P_+,P_-)>=7B/9`, and
+The destination calibration remains severe. With `B=2 sum_e w_e`, `R=2 sum_e w_e^2` and `N_eff=(sum_e w_e)^2/(sum_e w_e^2)`, the signed SDP deficit must satisfy
 
-`D_pack >= (7/9)sqrt(2N_eff)`.
+`U_abs/sqrt(R) = sqrt(2N_eff) [1-min(Delta_+^SDP,Delta_-^SDP)/B]`.
 
-Hence `D_pack->infinity` throughout the strictly subcritical prime regime. The packing clue is resolved negatively: adding more cycles or optimizing the same LP cannot fix a ceiling built into its reward/capacity geometry.
+Thus Haar-RMS certification requires `min(Delta_+^SDP,Delta_-^SDP)=B-O(sqrt(R))`; a constant-fraction envelope improvement is still useless when `N_eff` diverges. The live static test is now whether the **canonical prime matrices** achieve this scale in the full correlation SDP. If the SDP is bounded at RMS scale, the desired static upper bound follows. If it is rank-one with PSD stress, the exact finite torus optimum is certified. If it diverges only through high-rank relaxation, the SDP certificate has failed but the exact torus optimum remains open.
 
-The live static object is therefore the **exact fixed-modulus torus optimization** from VIS-213, or a genuinely stronger certificate that retains interactions discarded by both the magnetic and fractional simple-cycle relaxations. Failure of those relaxations is not a lower bound on the exact torus optimum. One-parameter orbit access time remains separate and matters only after a useful static pointwise bound exists.
+## Keep representation closure, relaxation strength, rank-one exactness and access time separate
 
-## Keep representation closure, relaxation strength, certificate ceilings, exact torus optimization and access time separate
+Cycle holonomy decides exact envelope attainability; magnetic spectra, simple-cycle packing and the correlation SDP are progressively stronger upper-bound mechanisms. VIS-218 and VIS-220 prove universal ceilings only for the first two relaxations. VIS-221 proves that the correlation SDP retains interactions discarded by those certificates, but does not prove asymptotic tightness on the prime matrices.
 
-Cycle holonomy decides exact envelope attainability; magnetic spectra and simple-cycle packing only certify bounds. VIS-218 gives a destination-scale limitation of the normalized spectral relaxation. VIS-220 gives a universal limitation of the simple-cycle packing relaxation. Neither result says the exact unit-modulus optimum is large.
-
-Future work should therefore test any new relaxation against its own best possible destination-normalized ceiling before investing in arithmetic phase structure. A certificate family that cannot in principle leave `O(sqrt(R))` residual when `N_eff` diverges is exhausted even if its local geometric interpretation is genuine.
+A large high-rank SDP value is not a lower bound on the exact torus objective. Conversely, an RMS-scale SDP upper bound is already sufficient even without rank-one tightness. One-parameter orbit access time remains a separate problem and matters only after a useful static pointwise bound or exact torus characterization exists.

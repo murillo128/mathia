@@ -1,33 +1,29 @@
-# MI-015 — Prime-phase worst starts survive both magnetic and simple-cycle relaxations; the exact torus problem remains
+# MI-015 — Prime-phase worst starts outlive magnetic and cycle certificates; the correlation SDP is the next exact-scale test
 
-**Evidence level:** exact finite-dimensional reduction from VIS-213, exact holonomy and fractional cycle-packing certificates from VIS-214--VIS-215, normalized magnetic-ground-state certificate from VIS-216, exact relaxation lower bound from VIS-217, prime-graph asymptotics in VIS-218, destination pricing in VIS-219, and the universal simple-cycle packing ceiling in [VIS-220](../../findings/VIS-220-simple-cycle-packing-universal-envelope-ceiling.md). No lower bound for the exact torus optimum, recurrence-time theorem or RH consequence is claimed.
+**Evidence level:** exact finite-dimensional reduction from VIS-213, exact holonomy and fractional cycle-packing certificates from VIS-214--VIS-215, normalized magnetic-ground-state certificate from VIS-216, exact relaxation lower bound from VIS-217, prime-graph asymptotics in VIS-218, destination pricing in VIS-219, universal simple-cycle packing ceiling in [VIS-220](../../findings/VIS-220-simple-cycle-packing-universal-envelope-ceiling.md), and exact SDP hierarchy/stress certification in [VIS-221](../../findings/VIS-221-sdp-stress-certificate-retains-torus-interactions.md). No asymptotic SDP-tightness theorem, lower bound for the exact torus optimum, recurrence-time theorem or RH consequence is claimed.
 
 For fixed `y,H`, the worst start is exactly the unit-modulus quadratic optimum `max_|z_p|=1 |z^*A_(y,H)z|`. Kronecker density settles existence of torus phases, not the size of this optimum or the time needed to approach it.
 
-VIS-214 identifies cycle holonomy as the gauge-invariant obstruction to exact coefficient-envelope attainment. VIS-215 turns that obstruction into weighted fractional cycle-packing certificates `P_+` and `P_-`. VIS-216 adds a global normalized magnetic-Laplacian relaxation.
+VIS-214 identifies cycle holonomy as the gauge-invariant obstruction to exact coefficient-envelope attainment. VIS-215 turns that obstruction into weighted fractional cycle-packing certificates. VIS-216 adds a normalized magnetic-Laplacian relaxation. VIS-217--VIS-218 prove that this spectral certificate misses Haar-RMS scale by a diverging factor in the strictly subcritical prime regime, and VIS-219 shows that simple-cycle packing would need near-total envelope saturation. VIS-220 proves that impossible inside that LP: every simple support graph leaves at least `7B/9` residual, so the normalized certificate diverges like `sqrt(N_eff)`.
 
-VIS-217--VIS-218 close the normalized spectral relaxation in the whole strictly subcritical prime regime. The actual coefficient graph satisfies `N_eff~y^2/[H(log y)^2]` while the active vertex count is at most `pi(y)`, so `N_eff/n->infinity`; the normalized magnetic certificate therefore misses Haar-RMS scale by a diverging factor regardless of edge phases.
+VIS-221 identifies a stronger global interaction class that is **not** closed by those failures. The standard correlation SDP
 
-VIS-219 identifies what the stronger packing route would have to achieve. With `P=min(P_+,P_-)`, `B=2 sum_e w_e`, and `R=2 sum_e w_e^2`,
+`U_+(A)=max Tr(AX),  X>=0, X_ii=1`
 
-`(B-P)/sqrt(R)=sqrt(2 N_eff)(1-P/B)`.
+with dual `min sum_i d_i` subject to `Diag(d)-A>=0` upper-bounds the positive torus optimum; applying it to `-A` controls the negative side. The VIS-216 magnetic bound is one particular degree-proportional feasible dual point inside this SDP. Hence failure of the magnetic ansatz does not imply failure of the full correlation relaxation.
 
-So a useful RMS certificate would require `1-P/B=O(N_eff^-1/2)`: almost the entire weighted absolute envelope would have to be consumed by both signed packings.
+A stationary torus candidate carries an exact a-posteriori tightness test. If `d_i(z)=conj(z_i)(Az)_i` is real and
 
-VIS-220 proves this is impossible for the exact `VIS-215` simple-cycle LP. For every support graph of girth `g`, weighted Cauchy--Schwarz on each cycle and the unit edge-capacity constraint give
+`S_z=Diag(d(z))-A >= 0`,
 
-`P_+,P_- <= (2/g^2)B`.
+then `z` is a global maximizer and the SDP is rank-one exact. Conversely, an optimal rank-one SDP solution has this PSD stress. This separates “found a plausible phase pattern” from a finite-dimensional proof of the exact torus optimum.
 
-For an ordinary simple graph `g>=3`, this yields `P_+,P_-<=2B/9`, hence
+The destination scale still controls whether the stronger certificate is useful. With `B=2 sum_e w_e`, `R=2 sum_e w_e^2`, `N_eff=(sum_e w_e)^2/(sum_e w_e^2)` and signed SDP deficits `Delta_±^SDP=B-U_±`,
 
-`B-min(P_+,P_-) >= 7B/9`
+`U_abs/sqrt(R)=sqrt(2N_eff)[1-min(Delta_+^SDP,Delta_-^SDP)/B]`.
 
-and
+Therefore the SDP proves Haar-RMS worst-start control only if its smaller signed deficit is `B-O(sqrt(R))`. A constant-factor improvement over the coefficient envelope is not enough.
 
-`D_pack=(B-P)/sqrt(R) >= (7/9)sqrt(2N_eff)`.
+The live fork is precise. If the canonical prime matrices have `U_abs=O(sqrt(R))`, the desired static upper bound follows even without rank-one exactness. If a rank-one optimizer with PSD stress appears, the exact finite torus optimum is certified. If instead the SDP value is large but the optimizer is high rank, only the relaxation has failed; that gives no lower bound on the exact unit-modulus problem.
 
-Thus the simple-cycle packing certificate stays on the absolute-envelope scale and diverges from Haar-RMS scale whenever `N_eff->infinity`. This is a **certificate-family ceiling**, not a statement that the prime phases lack frustration. No amount of cycle enumeration or better optimization inside the same reward/capacity LP can remove it.
-
-The exact fixed-modulus torus problem therefore remains strictly stronger than both exhausted relaxations. A useful continuation must attack that amplitude-constrained optimization directly or construct a genuinely stronger certificate that couples information discarded by magnetic spectra and independent simple-cycle packing. Only after a static pointwise bound exists does one-parameter access time become the next resource.
-
-**Boundary.** VIS-220 does not lower-bound the exact torus optimum and does not apply automatically to a different nonlinear, overlapping-cycle or non-packing certificate. Failure of a relaxation is not evidence that the exact problem is hard at the same scale. The conclusion is only that the current magnetic and simple-cycle certificates cannot certify Haar-RMS worst-start suppression in the subcritical regime.
+**Boundary.** VIS-221 does not prove that the correlation SDP is asymptotically tight or that prime phases create enough frustration. The exact torus objective remains strictly below the SDP unless rank-one tightness is established. One-parameter access time is still separate and should not be mixed into the static certificate question.
