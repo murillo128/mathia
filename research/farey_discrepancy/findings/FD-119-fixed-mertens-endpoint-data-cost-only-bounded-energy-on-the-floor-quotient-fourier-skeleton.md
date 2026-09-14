@@ -369,7 +369,7 @@ N^2\prod_{p\mid N}(1+p^{-2})-\mu(N)^2.
 
 Equality is attained by taking all nondivisor skeleton modes zero and the divisor modes proportional to `mu(N/d)d^2`, so (35) is a true sharp relaxation, not merely a lower bound.
 
-For the actual target `m=M(N)`, the numerator in (35) cannot vanish at large scale for a trivial physical reason. If `mu(N)=0`, it equals `N`. If `mu(N)=+-1`, then
+For the actual target `m=M(N)`, the numerator in (35) cannot vanish at large scale for a trivial physical reason. If `mu(N)=0`, it equals `N`. If `mu(N)=\pm1`, then
 
 \[
 N-\mu(N)M(N)
@@ -411,11 +411,15 @@ The lower bound tends `pi^2/240`, while the sharp endpoint-only excess is unifor
 The answer is negative at fixed arithmetic depth. The native positive Fourier norm has an exact Möbius equality ray. The physical endpoint `M(1)=1` breaks the ray only by `O(1)` energy, and any fixed number of further exact Mertens endpoint values can be imposed with the same bounded cost. Even adding the exact global floor-quotient identity (1) still leaves synthetic critical-scale sources with
 
 \[
-\mathcal E_N^{\mathcal Q}=N+O_R(1)
+\mathcal E_N^{\mathcal Q}
+=
+m_N^2+O_R(1)
+=
+N+o(N)
 \tag{40}
 \]
 
-when `m_N~sqrt(N)`.
+whenever `m_N~sqrt(N)`.
 
 Therefore a useful coercivity theorem for the minimal skeleton must consume a **growing-depth** feature of the physical Mertens trajectory: bounded increments over a growing range, the squarefree/multiplicative sign law, growing divisor compatibility, cross-horizon coherence, or another arithmetic restriction strong enough to make departure from the Möbius equality ray cost a positive fraction of the critical energy. Fixed endpoint normalization and one global identity are not enough.
 
