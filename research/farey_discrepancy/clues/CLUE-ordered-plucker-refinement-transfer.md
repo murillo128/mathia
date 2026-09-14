@@ -46,3 +46,17 @@ If that algebraic gate survives, compare the unchanged statistic with a realizab
 Determinants, orientation, mediant refinement, modular cocycles, and signed Farey transfer structures are classical. The closest literature located in the campaign audit includes Morier-Genoud--Ovsienko, *Farey boat I* (Jahresber. DMV 121, 2019; DOI `10.1365/s13291-019-00197-7`, arXiv:`1811.01229`), Bruggeman--Muehlenbruch, *Eigenfunctions of transfer operators and cohomology* (J. Number Theory 129, 2009; DOI `10.1016/j.jnt.2008.08.003`, arXiv:`0707.1203`), and Bonanno--Isola, *A thermodynamic approach to two-variable Ruelle and Selberg zeta functions via the Farey map* (Nonlinearity 27, 2014; DOI `10.1088/0951-7715/27/5/897`, arXiv:`0907.1471`). No novelty is claimed for those ingredients, and failure to locate the exact controlled discrepancy-increment Plücker residual is not evidence of novelty.
 
 Nothing here proves that the proposed field is nonzero, independent of scalar discrepancy, asymptotically stable, or RH-relevant. The first task is deliberately a kill test: establish the exact finite-order algebra and matched-control behavior before any asymptotic or spectral interpretation.
+
+## Research-watch disposition after `FD-112`
+
+`FD-112` kills the minimal local realization in which a refinement vector consists only of the two Euclidean child gaps created by one Farey mediant, with parent size removed as the nuisance coordinate. After normalization the child vector is
+
+\[
+\left(\frac{d}{b+d},\frac{b}{b+d}\right)
+=\frac12(1,1)
++\frac{d-b}{2(b+d)}(1,-1),
+\]
+
+so the controlled residual is one-dimensional and every centered Plücker minor vanishes. Even the uncentered determinant is only a first difference of the scalar split imbalance `(d-b)/(d+b)`.
+
+The clue therefore remains `proposed`, not `accepted`: its broader carrier is still plausible only if the predeclared refinement vector contains **at least two independent residual coordinates after nuisance removal**. A next test must define those coordinates self-containedly inside the Farey line—e.g. by coupling ancestry with a discrepancy/source residual—and derive their exact finite-order reduction before any diagnostic is inspected. Merely enriching the notation around left/right child gaps, or applying a nonlinear feature map to their single imbalance scalar, does not pass the representation gate.
