@@ -1,6 +1,6 @@
-# MI-024 — Arithmetic-image blind exclusion is directional leverage, and localization must control that direction
+# MI-024 — Arithmetic-image blind exclusion is directional leverage, and low-conductor shell richness does not supply it
 
-**Evidence level:** exact variational reduction/certificate from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened by the exact separated-prime matched control [MC-282](../../findings/MC-282-separated-simplex-leverage-failure.md). No theorem is claimed that the required rank/leverage alternative holds for the actual tight arithmetic shell matrix.
+**Evidence level:** exact variational reduction/certificate from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened by the exact separated-prime matched control [MC-282](../../findings/MC-282-separated-simplex-leverage-failure.md) and the stretched-exponential shell-pattern obstruction [MC-284](../../findings/MC-284-page-siegel-stretched-exponential-shell-legendre-universality.md). No theorem is claimed that the required rank/leverage alternative holds for the actual full tight-shell feature matrix.
 
 Let `A` be the degree-`m` feature matrix of the actual fixed-weight arithmetic shell and let `v=1_Z` be the virtual blind feature row. Instead of constructing a scalar decoder that is uniformly sharp on the full Boolean cube, optimize only on the arithmetic image:
 
@@ -18,10 +18,22 @@ MC-282 shows that **even exact absence of blindness does not force this sufficie
 
 which is already `13/45<1` at `d=5` and tends to zero like `d^3/(3*4^d)`. The virtual endpoint can therefore be synthesized extremely cheaply from genuinely arithmetic, completely nonblind rows.
 
-This sharpens the interpretation of the certificate. Favorable leverage is not a generic consequence of Legendre provenance, reciprocity, a feature surplus, low-degree moment geometry, or even the truth of the desired no-blind conclusion. It is a **stronger directional property** that must be forced by the specific source/target coupling of the live shell.
+MC-284 adds a different obstruction **inside the localized shell itself**. For any finite lower-prime coordinate set `U` whose effective conductor
 
-Generic coefficient-uniform large-sieve/operator-norm control still cannot cross the threshold: the row norm forces any uniform bound `||Aa||_2^2<=D||a||_2^2` to have `D>=Z`, while the dual argument yields only `Lambda>=Z/D<=1`. MC-282 additionally rules out the hope that one could justify `Lambda>1` merely from abstract nonblindness of the arithmetic image.
+`Q(U)=4 product_(p in U) p`
 
-The surviving theorem is consequently quantitative prime localization. A proof must use a property that the separated simplex realization cannot preserve—most naturally that all target primes occupy the same moving shell `(y,2y]`, or another comparably strong coupling—to show that the virtual endpoint leaves the row span or becomes expensive to synthesize. A source-native arithmetic/operator inverse remains a qualitatively different escape.
+satisfies `Q(U)<=exp(b sqrt(log y))`, every prescribed Legendre sign cell occurs among primes `r in (y,2y]`, uniformly with at least `y exp(-B sqrt(log y))` representatives. The fixed-weight product image is therefore the full Boolean cube on `U` throughout this conductor range at the live weight `t~log log y`. Page's theorem leaves at most one exceptional Fourier mode, and Siegel's lower bound prevents that mode from emptying a cell when the conductor constant is sufficiently small.
 
-**Boundary.** `Lambda<=1` does not imply a blind row; MC-282 is an explicit counterexample. Conversely the separated control says nothing about the actual tight shell. The certificate remains sufficient and potentially useful, but any proof of it must exploit localization-specific arithmetic rather than generic matrix geometry.
+Consequently a Christoffel certificate with empirical energy below one cannot be supported entirely on such a coordinate set: its effective coordinate conductor must satisfy
+
+`Q(a)>exp(b sqrt(log y))`
+
+eventually. Tight localization by itself does not make moderate-conductor coordinates directionally special; on those coordinates the arithmetic image remains Boolean-complete. The certificate must import genuinely higher-conductor information, exploit interaction with coordinates beyond this range, or use a different source-native operator/inverse mechanism.
+
+This sharpens the interpretation of the variational certificate. Favorable leverage is not a generic consequence of Legendre provenance, reciprocity, a feature surplus, low-degree moment geometry, shell localization, or even the truth of the desired no-blind conclusion. It is a **stronger directional property** that must be forced in a part of the arithmetic image not already saturated by the Page--Siegel pattern-realization mechanism.
+
+Generic coefficient-uniform large-sieve/operator-norm control still cannot cross the threshold: the row norm forces any uniform bound `||Aa||_2^2<=D||a||_2^2` to have `D>=Z`, while the dual argument yields only `Lambda>=Z/D<=1`. MC-282 additionally rules out inferring `Lambda>1` from abstract nonblindness, and MC-284 rules out obtaining it merely by restricting to any stretched-exponential-conductor coordinate shadow of the actual shell.
+
+The surviving theorem is consequently quantitative and source-specific: either prove that the full localized feature family forces the virtual endpoint out of the row span or makes it expensive to synthesize **because of information beyond the Page--Siegel-complete conductor window**, or construct a source-native arithmetic/operator inverse. Any proposed low-depth Christoffel separator should first expose which coordinates push its effective conductor past `exp(b sqrt(log y))`; otherwise MC-284 already embeds an all-positive shell cell on every coordinate it uses.
+
+**Boundary.** `Lambda<=1` does not imply a blind row; MC-282 is an explicit counterexample. MC-284 gives a necessary support-complexity condition for the Christoffel route, not a proof that high-conductor support yields favorable leverage. Its constants inherit the ineffective Siegel input, and the result does not improve `M(X)` or exclude the blind row directly. The actual full tight-shell matrix may still have additional collective structure outside every bounded-conductor projection.

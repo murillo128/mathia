@@ -1,6 +1,6 @@
-# MI-017 — A finite zero edge upgrades Robin recovery to a phase-locked power corridor
+# MI-017 — A finite zero edge upgrades Robin recovery to a phase-locked corridor, but the full edge face still realizes the adaptive ray
 
-**Evidence level:** exact consequence of [RE-112](../../findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md) and [RE-113](../../findings/RE-113-edge-zero-phase-locking-rules-out-sublinear-minimal-robin-recovery.md), using the persisted truncated explicit-formula and off-line zero-density inputs. No contradiction with false RH or density theorem for selected CA blocks is claimed.
+**Evidence level:** exact consequence of [RE-112](../../findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md), [RE-113](../../findings/RE-113-edge-zero-phase-locking-rules-out-sublinear-minimal-robin-recovery.md), and [RE-114](../../findings/RE-114-actual-finite-edge-zero-face-realizes-the-adaptive-mixed-race-ray-syndetically.md). No contradiction with false RH or density theorem for selected CA blocks is claimed.
 
 Let `Theta=sup Re(rho)`. In the false-RH finite-edge regime `1/2<Theta<1`, RE-112 first replaces the textbook `x^Theta log^2 x` bound by the log-free envelope
 
@@ -10,24 +10,40 @@ and transfers it to the full CA event sweep. RE-110 then forces the scalar recov
 
 `V-Y >>_Theta h(C) Y^(2-Theta) log Y`.
 
-RE-113 shows that the scalar envelope still discards decisive information. The same high-strip reciprocal summability projects the normalized source onto the actual rightmost zero face:
+RE-113 shows that the scalar envelope discards decisive phase information. The same high-strip reciprocal summability projects the normalized source onto the actual rightmost zero face:
 
 `x-vartheta(x) = x^Theta(F_Theta(log x)+o(1))`,
 
-where `F_Theta` is the absolutely convergent real almost-periodic sum over zeros with `Re rho=Theta`; the full CA event sweep has the same leading profile. The adaptive RE-034 selector locks this phase to the selected Robin height:
+where `F_Theta` is an absolutely convergent real almost-periodic sum over zeros with `Re rho=Theta`. The adaptive RE-034 selector locks this phase to the selected Robin height:
 
 `F_Theta(log Y) = b h(C) Y^(1-Theta) log Y + o(1)`.
 
-This has an important dynamical consequence. If the first recovery is genuinely sublinear, `V-Y=o(Y)`, the scalar corridor already forces the dimensionless height `lambda_Y=h(C)Y^(1-Theta)log Y` to tend to zero. The selector phase therefore tends to zero as well, and uniform continuity makes every crossed event see the same vanishing edge phase. Hence the forward workload is `o(Y^Theta)`, not merely `O(Y^Theta)`, and
+If the first recovery is genuinely sublinear, `V-Y=o(Y)`, the scalar corridor forces `lambda_Y=h(C)Y^(1-Theta)log Y -> 0`; uniform continuity then makes every crossed event see vanishing edge phase. Hence the forward workload is `o(Y^Theta)`, not merely `O(Y^Theta)`, and
 
 `V-Y = omega(h(C) Y^(2-Theta) log Y)`.
 
-So **sublinear selected recoveries cannot saturate the scalar finite-edge minimum**. If a fixed-constant near-minimal family exists under the short condition `V-Y<=Y`, it must instead be macroscopic and edge-amplitude:
+So sublinear selected recoveries cannot saturate the scalar finite-edge minimum. A fixed-constant near-minimal family, if it exists under `V-Y<=Y`, must instead be macroscopic and edge-amplitude:
 
-`h(C) asy Y^(Theta-1)/log Y`, `V-Y asy Y`, and `F_Theta(log Y) asy 1` with the favorable sign. If the supremum `Theta` is not attained by a zeta zero, `F_Theta` vanishes identically and such a near-minimal family is impossible.
+`h(C) asy Y^(Theta-1)/log Y`, `V-Y asy Y`, and `F_Theta(log Y) asy 1`.
 
-This refines the RE-112 first-layer packet frontier. The live finite-edge obstruction is no longer merely a positive-mass packet with `p-vartheta(p) asy Y^Theta`; near-minimal recovery requires an **attained edge line, a positive edge phase at the adaptive selector, full spectral-scale Robin height, and macroscopic recovery**. The natural next source test is recurrence of that phase-lock, preferably coupled to the reciprocal-Mertens coordinate already tied to the same selector in RE-034.
+RE-114 tests the most immediate strengthening: combine this Chebyshev edge phase with the reciprocal-Mertens coordinate already selected by RE-034. It derives a second actual-edge profile
 
-The reusable split is now sharper. **Finite zero edge (`Theta<1`)** has a phase-resolved source law: sublinear recovery is automatically super-minimal, while fixed-constant near-minimal recovery is forced to macroscopic edge amplitude. **Extreme edge (`Theta=1`)** still leaves the unconditional RE-109--RE-111 Korobov--Vinogradov saturation problem alive.
+`G_Theta(u)=sum_(Re rho=Theta) exp(i Im(rho)u)/(1-rho)`
 
-**Boundary.** The almost-periodic organization of prime-counting errors is classical; the durable Mathia content is the selector-conditioned phase lock and its recovery consequence. The fixed-constant qualifier is essential in the near-minimal statement, and none of these estimates combines varying `b`/`eta` families into a single uniform counting theorem.
+and the joint selector lock
+
+`F_Theta(log Y)=b lambda_Y+o(1)`,
+
+`G_Theta(log Y)=(1-b)lambda_Y+o(1)`.
+
+The corresponding ray residual `K_(Theta,b)=bG_Theta-(1-b)F_Theta` is not coercive. Writing the exponentially stable filter `J_Theta` with `G_Theta=J_Theta-F_Theta`, one gets
+
+`K_(Theta,b)=J_Theta' + (b-(1-Theta))J_Theta`.
+
+Uniform almost-periodicity of the absolutely convergent actual edge face then forces exact sign-correct ray phases to occur **syndetically**: every sufficiently late logarithmic interval of bounded length contains a phase where `K_(Theta,b)=0` and both `F_Theta` and `G_Theta` are bounded below positively. Thus adding the reciprocal coordinate sharpens the selector dictionary but does not by itself obstruct the attained-edge branch.
+
+The live finite-edge problem is now **selector placement relative to syndetic compatibility windows**, or a source coordinate beyond the leading edge face. A closing theorem must show that the CA selector cannot repeatedly land in those bounded-gap edge-ray windows, exploit a lower-order term at finer resolution, or couple recovery geometry to selector placement in a way the almost-periodic edge model does not preserve.
+
+The reusable split is sharper. If the finite edge is not attained, RE-113 already excludes unbounded fixed-constant near-minimal recovery. If it is attained, RE-114 shows that the full leading edge spectrum itself supplies compatible order-one mixed Chebyshev/Mertens phases with bounded logarithmic gaps. The extreme `Theta=1` branch remains the separate unconditional RE-109--RE-111 problem.
+
+**Boundary.** Almost-periodicity and the standard/reciprocal explicit-formula coefficients are classical. The durable Mathia content is the selector-conditioned edge projection, the sublinear anti-saturation law, and the fact that the complete attained edge face still realizes the adaptive mixed ray syndetically. None of this proves that actual CA selectors hit those phases.
