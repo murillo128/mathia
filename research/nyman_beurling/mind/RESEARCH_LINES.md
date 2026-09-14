@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Rule out strong target capture by actual zero-power packets at inverse-section retention
+## Separate actual zero-power packets from inverse-section matched controls
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`, `MI-011-canonical-deflation-cancels-raw-cauchy-crowding-volume`, `MI-012-three-state-transverse-confluence-exposes-collective-shear`, `MI-013-absolute-height-and-global-zero-counts-are-invisible-to-the-collective-shear-obstruction`, `MI-014-quadratic-horizontal-tangency-is-the-three-state-conditioning-threshold`, `MI-015-confluent-volume-is-curvature-blind-and-controlled-by-radial-depth`, `MI-016-growing-confluent-rank-is-limited-by-endpoint-extrapolation-cost`, `MI-017-finite-high-zero-target-access-requires-a-target-bearing-compression-near-kernel`.
 
@@ -18,14 +18,28 @@ NB-118 adds an independent source equation that does not use zero height. Every 
 
 `||Q_R f||^2/||f||^2 = O_(M,c)(1/R)`
 
-for every fixed capture fraction `c>d_M^2`.
+for every fixed capture fraction `c>d_M^2`. The first finite sections are already quantitative: `d_2^2=1-log 2`, while the two-generator space `{g_2,g_3}` gives `d_3^2≈0.09575`.
 
-The first finite sections are already quantitative: `d_2^2=1-log 2`, while the two-generator space `{g_2,g_3}` gives `d_3^2≈0.09575`. Thus capture above about `9.6%` already forces inverse-section, rather than merely inverse-height, retention. When `R/G->infinity`, the `1/G` escape from NB-116--NB-117 disappears for such strong capture.
+NB-119 proves that this inverse-section exponent is **sharp under fixed finite Nyman orthogonality alone**. The tail Gram matrix of the fixed generators satisfies
 
-The live source theorem is now sharper: **exclude actual zero-power packets that achieve a prescribed target angle while hiding all but `O(1/R)` of their continuum norm in the first `R` natural cells**, or construct such a packet and determine what it implies. The theorem may exploit the confluent power-sum form, several fixed Nyman orthogonality equations, conductor/height geometry, or another source-specific constraint, but sending `M` to infinity is not free because `d_M->0` is itself the Nyman/RH approximation problem and the tail constants may deteriorate.
+`Gamma_(M,R)=C_M/R+O_M(1/R^2)`
 
-## Keep target baseline, zero height, continuum mass, cell retention and interpolation geometry separate
+with `C_M>0`. Consequently the perfect visible target `e_R` can be repaired by a unique minimum-norm invisible tail into a vector `f_(M,R) in V_M^perp` with
 
-NB-118 is not another Gram-conditioning estimate. It combines actual-zero annihilation of fixed Nyman generators with the finite target geometry. A fixed source section controls only capture above its residual threshold `d_M^2`; below that threshold it says nothing. Conversely, high-zero height controls continuum mass but is no longer the limiting retention scale once capture clears a fixed Nyman baseline.
+`Q_R f_(M,R)=e_R`, `q_R(f_(M,R))=1`,
 
-Future claims should distinguish available zero rank, horizontal zero mass, finite-section target baseline, continuum norm, retained cell energy and approximation of the harmonic minimizer. The unresolved object is the actual zero-power interpolation class under these simultaneous constraints, not an abstract small eigenvalue.
+and
+
+`||Q_R f_(M,R)||^2/||f_(M,R)||^2 = 1/(kappa_M R)+O_M(1/R^2)`
+
+for an explicit `kappa_M>0`. Thus no theorem using only a fixed finite family of source equations `<f,g_b>=0` can improve the `1/R` exponent uniformly over that source-equation class.
+
+The live source theorem is therefore sharper than after NB-118: **exclude actual zero-power packets from the inverse-section matched-control class**. The required input must distinguish the confluent power sums of NB-117 from arbitrary vectors in `V_M^perp`. Plausible routes are a source-aware coercive inequality for confluent power sums at `O(1/R)` retention, a growing family of Nyman equations with constants controlled independently of the desired Nyman conclusion, cross-cutoff coherence that prevents rebuilding the witness for each `R`, or another identity specific to actual zeta zeros.
+
+Sending `M` to infinity is not free. The baseline `d_M->0` is itself the Nyman/RH approximation problem, while the periodic-tail repair constants `kappa_M` and the corresponding source conditioning may deteriorate. Any growing-`M` argument must expose that dependence rather than hide it in fixed-section notation.
+
+## Keep target baseline, zero height, continuum mass, cell retention and source coherence separate
+
+NB-118 is not another Gram-conditioning estimate: it combines actual-zero annihilation of fixed Nyman generators with finite target geometry. NB-119 supplies the matched control showing exactly where that information stops. A fixed source section controls capture above its residual threshold `d_M^2`, but once one allows an arbitrary invisible tail, the same finite equations permit perfect target alignment at retention `Theta_M(1/R)`.
+
+Future claims should therefore distinguish available zero rank, horizontal zero mass, finite-section target baseline, continuum norm, retained cell energy, approximation of the harmonic minimizer, and **coherence of the source representation across cells, generators and cutoffs**. The unresolved object is no longer an abstract inverse-section near-kernel mode; it is whether the actual zero-power interpolation class can occupy the matched-control mode that the finite Nyman equations themselves allow.
