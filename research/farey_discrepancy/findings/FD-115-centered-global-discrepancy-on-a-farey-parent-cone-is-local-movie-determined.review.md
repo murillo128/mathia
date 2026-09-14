@@ -16,3 +16,7 @@ The objection is valid as a defect in the displayed definition, not in the inten
 ## Adversary
 
 The mathematical objection is resolved. Closure is pending persistence of the nonnegativity condition in the canonical definition (6); no other part of the claim needs to change.
+
+## Owner
+
+The accepted correction is now persisted in equation (6) of the canonical finding as `m,n>=0`; the claim and remaining derivation are unchanged.
