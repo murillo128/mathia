@@ -1,17 +1,25 @@
-# MI-017 — Selector, recovery and block maximality are one weighted stable-filter lobe
+# MI-017 — The regular CA staircase itself samples the finite-edge stable profile densely
 
-**Evidence level:** exact attained-edge reduction through RE-112--[RE-118](../../findings/RE-118-edge-normalized-block-maxima-are-weighted-stable-filter-lobe-records.md). No contradiction with false RH or theorem on the arithmetic placement of actual CA selectors is claimed.
+**Evidence level:** exact attained-edge reduction through RE-112--RE-118, sharpened globally over regular CA states by [RE-119](../../findings/RE-119-regular-ca-heights-sample-the-finite-edge-profile-on-an-exponentially-fine-phase-mesh.md). No contradiction with false RH, lower-order selector theorem, nonattained-edge result or `Theta=1` result is claimed.
 
-Let `Theta` be an attained finite off-critical edge, `c=1-Theta`, and `J=F_Theta+G_Theta`. RE-114--RE-116 show that fixed rays and the self-consistent moving endpoint ray are spectrally compatible at syndetic phases. RE-117 then shows that the macroscopic first-recovery corridor is reconstructible from the same translated stable-filter state.
+Let `Theta` be an attained finite off-critical edge, `c=1-Theta`, and `J=F_Theta+G_Theta`. RE-114--RE-118 show that endpoint criticality, first recovery and rightmost block maximality all collapse to compatibility conditions on the same weighted almost-periodic state `J`.
 
-RE-118 adds the apparently stronger fact that the selected CA state is the **rightmost block maximum**. If `U=log log C` and `t=log(log N/log C)` stays in the first recovery corridor, then
+RE-119 removes the remaining possibility that the **actual arithmetic CA sequence is too sparse in phase** for those compatible spectral states to matter. For every sufficiently large regular CA state `C`, with `Y=log C` and `nu=log Y`, one has uniformly
 
-`B_Theta(N) = (1+t/U) J(U+t) + o(1)`.
+`Y^c nu h(C)=J(nu)+o(1)`.
 
-Hence block maximality becomes a forward record condition for the weighted state `u J(u)`, while first recovery is the end of its positive lobe. The actual packet also satisfies the moving-ray residual `J'(U)+J(U)/U=o(1)`.
+Moreover consecutive regular-state phases satisfy
 
-This still does not distinguish the arithmetic selector. The same almost-periodic profile `J` contains syndetically many exact positive lobes whose rightmost global weighted maximum satisfies `(uJ(u))'=0`, remains the forward record until the first zero, has a uniform amplitude floor, and reaches that zero at bounded positive distance. Endpoint criticality, positive recovery and block-record maximality therefore remain mutually compatible inside the leading spectral control.
+`Delta nu = O(e^(-nu/2) nu^(3/2))`,
 
-The missing datum is now unequivocally **placement below leading edge resolution**: how the discrete CA selector chooses among these compatible weighted lobes, a finer-than-`o(1)` discrepancy between the actual maximum and the continuous weighted record, or another source coordinate not reconstructible from `J`. Adding another leading-order extremality condition on the same lobe cannot supply it.
+so the CA phase mesh is finer than every inverse power of `nu`. On every fixed phase interval the sampled supremum and infimum of the normalized Robin height converge to those of `J` itself.
 
-**Boundary.** The conclusion concerns the attained finite-edge branch and leading `Y^(-c)/log Y` normalization. It does not exclude lower-order arithmetic selection, the nonattained-edge branch or the separate `Theta=1` regime.
+Since `J` is nonzero, real, uniformly almost periodic and has zero Bohr mean, the actual regular CA staircase therefore samples both positive and negative sign-margin lobes with bounded phase gaps. Under an attained off-critical edge, two-sided CA excursions occur at the natural edge scale
+
+`(log C)^(Theta-1)/log log C`.
+
+The missing datum is no longer leading-order arithmetic placement. **The full regular CA sequence already reads out the same stable profile at that resolution.** A surviving contradiction must live in the lower-order remainder of the pointwise projection, in a source coordinate not encoded by `J`, or in a selector property visible at a scale finer than the current `o(1)` edge-normalized error.
+
+This also prevents overinterpreting the earlier moving-ray/block-record conditions. They can still matter at finer resolution, but at leading order they do not select a rare subset of compatible phases: the whole regular staircase is an exponentially fine sampling of the same profile.
+
+**Boundary.** RE-119 gives a uniform `o(1)` normalized asymptotic, not an expansion through `1/nu`. The unknown remainder may dominate the deterministic inverse-log drift used in finer maximum-selection arguments. It does not locate a block maximizer at subleading scale or address the nonattained-edge and `Theta=1` regimes.

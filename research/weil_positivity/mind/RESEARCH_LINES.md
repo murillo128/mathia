@@ -2,20 +2,28 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force source-visible mixed-prime curvature or a canonically source-forced degeneracy before positivity
+## Force arithmetic curvature beyond the prime-symmetric scalar projective category
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`, `MI-014-nontrivial-zero-modes-screen-the-gamma-tangent-layer`, `MI-015-nonlinear-postprocessing-after-scalarization-cannot-create-a-new-distribution`, `MI-016-exact-weil-square-targets-linearize-while-positive-additive-preservation-cannot-absorb-the-critical-source`, `MI-017-source-native-pole-cancellation-is-rh-complete-but-irreducibly-signed`, `MI-018-exact-weil-square-equality-makes-coarse-scalar-relocalization-exact`, `MI-019-flat-source-covariance-is-gauge-trivial-curvature-is-the-first-escape`.
 
-WP-293--WP-298 close scalar/fixed-positive recovery, finite multiplicative-equivariant linear depth, flat site transport and faithful nonparallel pointwise metrics. Flat support deletion either returns to the Möbius direction or requires an actual moving nullspace; arbitrary degeneracy is programmable unless its kernel is source-forced.
+WP-293--WP-299 close scalar/fixed-positive recovery, finite multiplicative-equivariant linear depth, flat site transport, faithful pointwise metrics and ambient output curvature invisible to the commuting source-generated sector.
 
-WP-299 now closes **ambient non-flat output curvature by itself**. For an exactly equivariant linear response from the ordinary commuting multiplicative source, the output prime shifts must commute on the image. Every source-generated vector lies in the common fixed sector of prime-diamond holonomy. Scalar/projective curvature is therefore trivial on every nonzero reachable channel, and nonabelian ambient curvature can survive only on directions the arithmetic response does not occupy.
+WP-300 tests the cleanest upstream scalar-projective escape. If scalar prime-diamond commutator holonomy is invariant under finite relabelings of the prime generators, the alternating commutator law forces exactly two possibilities on distinct primes:
 
-The live linear category must make curvature source-visible, not merely ambient. A candidate must supply upstream mixed-prime incidence—a source-native projective/curved action, additional finite--archimedean data, or another genuine category change—so that the arithmetic response can enter a curvature-sensitive sector without violating its source law. Alternatively, a pointwise approach must derive a moving nullspace canonically from source geometry.
+`beta(p,q)=+1` or `beta(p,q)=-1`.
 
-## Treat localization, reachability, curvature/degeneracy and sign as distinct gates
+The flat branch is trivial. The unique nonflat branch is the universal fermionic/Koszul sign already realized by Mathia's Clifford generators. Its positive plaquette-defect zero space selects exactly support size at most one; multiplying by the Clifford radius recovers `Lambda(n)` on prime powers. But this selector is generalized-prime generic, detects only Boolean support, and an equal-footing always-present archimedean Clifford direction destroys it. After coefficient extraction the same indefinite Weil autocorrelation lift from WP-005 remains.
 
-Nonzero holonomy is no longer enough. The response must actually populate the holonomy-sensitive sector. Likewise a source-forced kernel can solve localization without providing positivity. Every candidate must state which source structure creates the mixed-prime relation or degeneracy, why matched generalized-prime controls do not reproduce it, how archimedean/polar terms enter, and why the final quadratic form has the Weil sign.
+Thus **prime-symmetric scalar projective source curvature is exhausted as a rich arithmetic escape**. A viable curvature route must use a genuinely richer non-scalar/projective/cohomological source structure, or a forced nonseparable finite--archimedean geometry, whose curvature contains rational-prime information and whose final sign follows from an independent theorem. Relaxing prime symmetry merely to insert arbitrary pair phases is programmable input unless another source theorem forces them.
 
-## Use matched controls against invisible curvature and programmable site dependence
+A pointwise moving-nullspace route remains separate, but its degeneracy must likewise be canonically source-forced rather than chosen to encode Mangoldt support.
 
-WP-299 supplies the decisive curved control: exact Mangoldt recovery can live entirely in a flat fixed line inside a genuinely curved ambient bundle. Thus ambient curvature is not evidence of arithmetic coupling. Future constructions must measure curvature on the source-reachable subspace itself, just as any moving nullspace must be independently derived rather than selected to encode `Lambda`.
+## Treat localization, reachability, curvature/degeneracy, completion and sign as distinct gates
+
+WP-300 shows that even source-visible local curvature plus exact positive Mangoldt extraction does not supply global Weil positivity. The finite selector is universal support geometry; the archimedean completion does not join it automatically; and the final autocorrelation sign is unchanged.
+
+Every candidate must therefore state which source structure creates the mixed-prime relation, why generalized-prime controls do not reproduce it, how finite and archimedean places couple before positivity is taken, and why the resulting global quadratic form has the Weil sign.
+
+## Use matched controls against universal fermionic curvature and programmable site dependence
+
+The fermionic sign is genuine curvature but not rational-prime-specific curvature. WP-299 and WP-300 together give two distinct controls: curvature may be unreachable from the ordinary source, or reachable only after enriching the source by a universal Clifford law that generalized-prime monoids reproduce exactly. Future constructions must survive both tests.

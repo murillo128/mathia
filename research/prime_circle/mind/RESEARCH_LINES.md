@@ -2,24 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Decide whether the residual log-squared square-root gap is intrinsic to one-profile source transport
+## Decide whether any one-profile signal survives once total source count is matched
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`.
 
 PC-224--PC-285 reduce the positive spectral construction to a source-independent cyclic convolution finite section, isolate the modular collision selector and show unconditional matched-control reproduction through the Vinogradov--Korobov range.
 
-PC-286--PC-289 show that **assuming RH** the same exact normalized boundary-log singular-spectrum law classicalizes much farther. PC-288 replaces global Lipschitz transport by one-coordinate path variation. PC-289 then replaces maximal-atom charging of the clipped singular arc by short-interval prime mass on logarithmic-depth bands. The resulting bound
+PC-286--PC-289 show that under RH the exact normalized boundary-log singular-spectrum law classicalizes almost to square-root scale, leaving a `log^2 q` loss in the pointwise prime-versus-Li source discrepancy. PC-290 identifies that loss as one scalar normalization mismatch rather than positional prime information.
 
-`W_1 << sqrt(epsilon+(log q)^3/q) + (B/sqrt(epsilon)) Delta_q + (log q)^2/q`
+Give the matched control the total prime-source cardinality `M_q` but no individual prime locations, and localize the count correction near the endpoint. Brent--Platt--Trudgian's RH mean-square PNT error then yields an `L^2` CDF discrepancy of order `q^-1/2`, which pairs exactly with the `L^2` spectral path-energy estimate from PC-288. The resulting one-profile law collapses for every
 
-combined with the RH source discrepancy and `epsilon=B q^(-1/2)(log q)^2` gives collapse for
+`B=o(sqrt(q))`.
 
-`B=o(sqrt(q)/(log q)^2)`.
+Thus below denominator-microscopic square-root scale, **exact prime locations carry no order-one information in this normalized one-profile singular-spectrum law once total source count is supplied**. The old `log^2 q` neighborhood was not an intrinsic geometric barrier.
 
-The old clipping loss is no longer the bottleneck. The residual logarithmic gap is tied to the RH prime-to-Li discrepancy entering the transport step. The live one-profile question is whether a sharper source metric/coupling can improve that interface without smuggling in stronger prime information, or whether `log^2 q` marks the natural limit of this normalized finite-section observable.
+The live question is now sharper. Does anything nonclassical happen at the actual `B~sqrt(q)` rational-resolution boundary, or must a useful RH-sensitive architecture retain information discarded before the one-profile singular-spectrum summary—cross-level, multi-source, directional, phase-sensitive or noncommuting data? A control that knows `M_q` is not arithmetic-free, so the scalar count itself remains a separate source resource.
 
-The logical direction remains one-way: persistent order-one prime/Li separation in the proven RH range would contradict RH; collapse does not imply RH. If a useful criterion requires separation rather than disappearance, the architecture must retain cross-level, multi-source, directional, phase-sensitive or noncommuting information before the singular-spectrum summary.
+## Keep unconditional classicalization, RH-conditional collapse, count information and denominator geometry separate
 
-## Keep unconditional classicalization, RH-conditional collapse and denominator geometry separate
+PC-285 is unconditional. PC-286--PC-290 import RH through prime-counting information. PC-290 deliberately gives the control one scalar arithmetic datum, `M_q`, to falsify whether exact source positions matter after count is fixed. Exact denominator resonance at `B~sqrt(q)` is a third mechanism.
 
-PC-285 is unconditional. PC-286--PC-289 import RH through prime-counting discrepancy; PC-289's Brun--Titchmarsh step only removes a clipping-mass loss. Exact denominator resonance is a third mechanism. Future claims must identify which input supplies each scale and must not reinterpret RH-forced classicalization as positive RH evidence.
+Future claims must identify whether their signal comes from total count, prime placement, rational-resolution geometry or a richer observable. Collapse of the count-matched one-profile law below square-root scale is not a converse RH criterion.

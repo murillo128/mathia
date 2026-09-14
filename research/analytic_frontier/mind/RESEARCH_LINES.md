@@ -6,7 +6,15 @@ This file holds the current mathematical questions suggested by the durable anal
 
 **Linked intuition:** `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.
 
-ANF-134--ANF-143 remove raw depth, span, slack-spend, coefficient-spread, and fixed exponential zero-pinching as existential obstructions to a same-profile cascade. The live gate remains whether the positive late cloud carries source energy/coherence that is fatal for the near-extremizer or can always be excised as negligible mass while preserving the source objective.
+ANF-134--ANF-143 remove raw depth, span, slack-spend, coefficient-spread, fixed exponential zero-pinching and finite-stage conditioning as existential obstructions to a same-profile cascade. ANF-184 now makes the late-layer activation scale explicit. At every frozen admissible stage, the first positive odd-dilation return satisfies
+
+`c_G ell^-2 <= theta_ell <= C_G ell^-2`,
+
+and both integer activation and geometric source resolution occur at the same physical crossover `A~ell^2`: the new saddle lies at distance `Theta_G(ell^-1)` from the old critical skeleton while its Laplace width is `Theta_G(A^-1/2)`.
+
+This removes another qualitative ambiguity from ANF-143. A frozen late layer is not merely cheap; its coefficient density, chamber scale and physical activation clock are quantitatively locked together. What remains uncontrolled is **depth uniformity**: the frozen-stage constants may deteriorate arbitrarily as the cascade evolves.
+
+The live gate is therefore still source-side. Prove that the controlled finite-prefix plus late cloud carries source energy/coherence that cannot be excised without destroying the near-extremizer, or prove a converse excision theorem. Any positive continuation that uses the `ell^2` clock across growing depth must additionally control the stage dependence of the return, curvature and recurrence constants rather than treating the frozen-stage law as uniform.
 
 ## Cross the sharp endpoint-memory aperture with source information
 
@@ -22,4 +30,4 @@ The remaining theorem is source-side: prove that actual prime/rough placement fo
 
 ## Treat subcritical local complexity and subcritical physical aperture as matched controls
 
-Low-spectrum abundance, carrier resonance, phase-blind uniformity, coefficient quantization, fixed finite tomography, derivative depth `o(K/a_X)`, and total physical twist aperture `o(X/a_X)` are controls. A viable source theorem must cross the absolute endpoint-memory scale or exploit arithmetic placement/nonlocal structure that those controls cannot preserve.
+Low-spectrum abundance, carrier resonance, phase-blind uniformity, coefficient quantization, fixed finite tomography, derivative depth `o(K/a_X)`, and total physical twist aperture `o(X/a_X)` are controls. On the same-profile branch, frozen-stage odd-dilation activation below `A~ell^2` is likewise a control: the layer is absent or unresolved there. A viable source theorem must cross the relevant absolute endpoint-memory or physical-resolution scale, or exploit arithmetic placement/nonlocal structure that those controls cannot preserve.

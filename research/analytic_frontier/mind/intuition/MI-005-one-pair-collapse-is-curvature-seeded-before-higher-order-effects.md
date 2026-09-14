@@ -1,31 +1,37 @@
-# MI-005 — Same-profile cascade geometry can be stabilized; fatality now depends on source-energy non-excisability
+# MI-005 — Same-profile cascade geometry has a sharp physical clock; fatality still depends on source-energy non-excisability
 
-**Evidence level:** exact cascade/slack/span/conditioning results through ANF-143
+**Evidence level:** exact cascade/slack/span/conditioning results through ANF-143, sharpened at every frozen stage by [ANF-184](../../findings/ANF-184-odd-dilation-return-has-a-sharp-ell-squared-physical-threshold.md). No depth-uniform activation theorem, fatal source obstruction or RH consequence is established.
 
 ## Core intuition
 
-The same-profile obstruction is not forced to collapse because depth grows. The later analytic-frontier findings show that residual slack, translated span, coefficient concentration, active-tail scale, and every finite collection of local conditioning losses can all be kept under quantitative control while the exact annihilation survives.
+The same-profile obstruction is not forced to collapse because depth grows. Residual slack, translated span, coefficient concentration, active-tail scale and every finite collection of local conditioning losses can be controlled while exact annihilation survives. ANF-184 adds a quantitative physical law: for a frozen stage the first positive odd-dilation return has density
 
-The remaining issue is qualitatively different: **does the controlled late cloud carry source energy that cannot be removed without destroying the near-extremizer?** Geometry and local conditioning can no longer substitute for that source-coupling question.
+`theta_ell = Theta_G(ell^-2)`,
+
+so the integer copy count activates at `A~ell^2`, exactly the scale at which the `Theta_G(ell^-1)` return chamber becomes resolvable by a Laplace packet of width `Theta_G(A^-1/2)`.
+
+The remaining issue is therefore not whether one late layer can be made geometrically real. It is **whether the controlled late cloud carries source energy that cannot be removed without destroying the near-extremizer, with enough uniformity in depth to use the frozen-stage clock repeatedly.**
 
 ## Strongest justified principle
 
-ANF-137 identifies the slack-spend ratio controlling historical zero pinching. ANF-138 shows that slow diagonalization can absorb arbitrary finite-depth conditioning costs. ANF-139--ANF-142 show that positive residual slack concentrates coefficient mass, makes late active tails source-tight, confines them to a mesoscopic scale, and excludes a fixed positive exponential zero-pinching loss.
+ANF-137--ANF-143 show that slow diagonalization can absorb arbitrary finite-depth conditioning costs while preserving a positive residual notch, summable slack/span and only subexponential source distortion. ANF-184 proves that the odd-dilation coefficient cost is two-sided rather than merely an upper bound: return-capable points must stay `Omega_G(ell^-1)` from every old zero maximum, forcing an `Omega_G(ell^-2)` old-pressure payment, while ANF-143 supplies the matching upper return.
 
-ANF-143 supplies the decisive closure of the earlier existential concern: sufficiently large odd dilations at each stage can keep the exact annihilation while making slack spend and translated span summable, retaining fixed residual notch, `O(A)` support, and only subexponential source distortion after diagonalization.
+At the first return the active saddle is `Theta_G(ell^-1)` from the old critical skeleton and stays uniformly nondegenerate at that frozen stage. Hence floor activation and geometric source resolution are not separate clocks; both are controlled by `A/ell^2`.
 
 ## Program consequence
 
-Future work should stop asking whether a long same-profile cascade can merely exist with controlled geometry. It can. The useful theorem is a non-excisability/source-energy theorem for the finite-prefix plus late-cloud decomposition, or a converse excision theorem showing that every such controlled cascade is harmless to the source optimization.
+Future work should stop treating late-layer existence, coefficient cheapness or physical activation as qualitative unknowns at a fixed stage. The useful theorem is a source-energy/non-excisability theorem for the finite-prefix plus late-cloud decomposition, or a converse excision theorem showing that every such controlled cascade is harmless.
+
+If a continuation needs an infinite cascade at a prescribed physical rate, it must also control the stage dependence of `c_G`, `C_G`, recurrence radii, chamber geometry and curvature constants. ANF-184 does not turn the slow diagonal of ANF-143 into a uniform depth law.
 
 ## Counterevidence / boundary
 
-ANF-143 does not prove that its constructed cascade is a fatal near-extremizer, and coefficient concentration does not imply coherent source amplification. A source norm may still discard the late cloud cheaply, or finite-prefix cancellation may dominate the relevant functional.
+A physically activated layer need not carry coherent source mass, and coefficient concentration does not imply source amplification. A source norm may still discard the late cloud cheaply, or finite-prefix cancellation may dominate the relevant functional. The `ell^2` law is frozen-stage and cannot be iterated uniformly without new estimates.
 
 ## Epistemic status
 
-**Supported structural synthesis from exact same-profile cascade theorems; no fatal source obstruction or RH consequence is established.**
+**Supported structural synthesis from exact same-profile cascade theorems; no fatal source obstruction or depth-uniform effective rate is established.**
 
 ## Falsification criterion
 
-Produce a source-compatible excision theorem that removes every ANF-143-style late cloud at negligible objective cost, or show that one of the claimed slack/span/conditioning controls necessarily fails under the exact source constraints. A positive continuation should instead prove a lower bound on the source contribution of the controlled cloud that survives admissible excision.
+Produce a source-compatible excision theorem that removes every ANF-143/ANF-184 late cloud at negligible objective cost, or show that one of the asserted frozen-stage return/activation laws fails. A positive continuation should prove a source lower bound that survives admissible excision and, when growing depth is essential, quantify the stage constants strongly enough to keep the physical clock usable.

@@ -6,11 +6,21 @@ This file holds the current mathematical questions suggested by the durable arit
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
-AF-217--AF-220 show that the relevant observation theorem is finite-order sign regularity, not all-order total positivity. AF-337 now supplies an explicit full-Euler modulus: for fixed order `r`, spacing `h`, and multiplicative window `q_j in [P,AP]`, the full Euler-log sampling matrix is strictly sign-regular through order `r` for all sufficiently large `P` once
+AF-217--AF-220 show that the relevant observation theorem is finite-order sign regularity, not all-order total positivity. AF-337 supplied an explicit full-Euler modulus but paid a quadratic sufficient depth by bounding higher-harmonic determinants independently of the first-harmonic collision structure.
 
-`sigma > (h+1) binom(r,2)`.
+AF-338 removes that artificial quadratic bill. For fixed requested order `r`, spacing `h`, multiplicative window `q_j in [P,AP]`, and
 
-The exact finite-instance gate is that the combined higher-harmonic Euler tail is smaller than the first-harmonic Vandermonde minor margin. Hence any nonzero source with at most `r-1` ordered sign changes is detected by `r` samples. The remaining theorem is no longer “find some quantitative modulus”: it is to **force a small enough source sign budget and carry its certificate toward the analytically relevant region without the required half-plane depth erasing the destination signal**. AF-337 is exact detection, not a uniform inverse bound, and its sufficient depth grows quadratically with order.
+`sigma > r-1`,
+
+the full Euler-log sampling matrix is eventually strictly sign-regular through order `r`, uniformly over the allowed integer source sets. Quantitatively the relative error of every full-Euler minor against its first-harmonic generalized Vandermonde minor is `O(P^-(sigma-(r-1)))`.
+
+The decisive accounting identity is that a higher-harmonic tuple loses a first-harmonic pairwise collision factor only when the two column harmonic labels differ. If `X(m)` counts those unequal-label pairs and `S(m)=sum_j(m_j-1)` is the extra-harmonic order, then
+
+`X(m) <= (k-1) S(m)`.
+
+Thus each unit of harmonic tail can destroy at most `k-1` collision factors; the depth budget is linear in the requested sign order and independent of `h` at exponent level.
+
+The remaining theorem is not another determinant-margin improvement. The sign-regular observation is still non-prime-specific and remains inside absolute convergence. One must **force a small source sign budget and carry its certificate toward a zero-sensitive destination without the required growing half-plane depth erasing the destination signal**, or find a different destination that consumes the finite-order certificate before that transport.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -32,11 +42,9 @@ AF-320--AF-329 separate exact recovery, conditioning, support-union geometry and
 
 AF-333 gives the first joint algebraic-dimension closure, but conditionally on Schanuel: a common-time tuple from multiplicatively independent algebraic bases has algebraic codimension at most one, whereas a unitary zero `e_1=0` forces the independent reciprocal relation `e_(n-1)=0`, consuming at least two codimensions. For the eight-prime target, Schanuel already forbids `e_1=0`.
 
-AF-335 fixes the information budget on the weaker even middle-singular branch. Near a regular `2m`-gon, `e_m=0` removes one real source degree while the low-harmonic image loses two; adjoining the product phase `E in S^1` is therefore dimension-minimal as a continuous exact lift. AF-336 now closes the **maximally singular consecutive-half-spectrum endpoint**: `s_1=...=s_floor(n/2)=0` forces a rotated regular `n`-gon, and a nonzero prime-time tuple cannot realize that fibre. For every shorter consecutive block, positive shape dimension remains after rotation.
+AF-335 fixes the information budget on the weaker even middle-singular branch. Near a regular `2m`-gon, `e_m=0` removes one real source degree while the low-harmonic image loses two; adjoining the product phase `E in S^1` is therefore dimension-minimal as a continuous exact lift. AF-336 closes the maximally singular consecutive-half-spectrum endpoint: `s_1=...=s_floor(n/2)=0` forces a rotated regular `n`-gon, and a nonzero prime-time tuple cannot realize that fibre. For every shorter consecutive block, positive shape dimension remains after rotation.
 
-This sharpens rather than solves the eight-prime question. The actual target `e_1=e_4=0` is weaker than half-spectrum vanishing and still retains the one-real fidelity defect isolated by AF-335. The unconditional theorem remains: **rule out the required independent polynomial relations on the common prime-phase tuple without Schanuel, or find another prime-source theorem strong enough to exclude the middle-singular fibre.** Exact endpoint rigidity, exceptional-time provenance and coordinatewise transcendence are not enough.
-
-Stable conditioning, ambient topology, measure/category genericity, proximity to the exceptional set, algebraic/torsion target classification, near-zero numerics, common-factor theory and finite exponential-sum ideal separation remain exhausted for this predicate. If exact hits survive unconditionally, the downstream question is still whether the finite-height Gram/eigenvalue margin is strong enough in the metric consumed by the final theorem.
+The actual target `e_1=e_4=0` is weaker than half-spectrum vanishing and still retains the one-real fidelity defect isolated by AF-335. The unconditional theorem remains: rule out the required independent polynomial relations on the common prime-phase tuple without Schanuel, or find another prime-source theorem strong enough to exclude the middle-singular fibre.
 
 ## Derive an equicoercive quartic profile restriction from source structure
 
@@ -48,4 +56,4 @@ The remaining question is provenance of the non-escape resource. Can the arithme
 
 ## Keep incidence, source resources and destination slack as different currencies
 
-The eight-point branch now separates exact algebraic recovery, the exact one-real middle-singular fidelity defect, the globally rigid half-spectrum endpoint, fixed-support Diophantine conditioning, bounded-height support-union geometry, unrestricted support-union topology, coordinate-level moment transfer, whole-Gram boundary separation, common-factor exclusion, unit-ideal separation, exact pointwise incidence, exponential-algebraic parameter provenance, coordinatewise algebraic sparsity and joint algebraic codimension. Future claims must state which layer they consume rather than treating “finite prime support”, “stable recovery”, “one missing phase”, “half-spectrum rigidity”, “exponentially algebraic time”, “algebraic target point”, “coprime exponential sums”, “transcendental coordinates” or “zero-free” as one qualitative hypothesis.
+Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence and destination sensitivity are distinct resources. AF-338 shows why this accounting matters even inside one determinant proof: preserving the actual collision geometry changes a quadratic apparent transport bill into a linear one, but it does not make the transported certificate prime-specific or move it to the critical region.

@@ -1,21 +1,25 @@
-# MI-015 — Selector-subtracted one-profile spectra are classically reproducible up to a log-squared neighborhood of square-root scale
+# MI-015 — Count-matched one-profile spectra are classically reproducible throughout every sub-square-root bandwidth
 
-**Evidence level:** unconditional classicalization from PC-282--PC-285 and conditional RH sharpening from PC-286--[PC-289](../../findings/PC-289-short-interval-sieve-pushes-rh-boundary-log-collapse-to-log-squared-gap.md). No converse RH criterion is claimed, and no theorem is claimed for richer observables outside the normalized one-profile singular-spectrum law.
+**Evidence level:** unconditional classicalization from PC-282--PC-285 and conditional RH sharpening through [PC-290](../../findings/PC-290-count-matched-l2-transport-reaches-square-root-boundary.md). The count-matched control is deliberately given the scalar source cardinality `M_q`; no converse RH criterion or theorem at `B~sqrt(q)` is claimed.
 
-After selector subtraction, the complete-domain remainder is a classical logarithmic/digamma Green symbol. Prime dependence in this branch survives only through source placement inside the finite section. PC-285 already reproduces that placement with the matched Li-grid control through the unconditional Vinogradov--Korobov range.
+After selector subtraction, the complete-domain remainder is a classical logarithmic/digamma Green symbol. Prime dependence in this branch survives only through source placement inside the finite section. PC-285 reproduces that placement with a matched Li-grid control through the unconditional Vinogradov--Korobov range.
 
-PC-287--PC-288 showed under RH that flat clipping plus one-dimensional path variation pushes the same exact statistic to `B=o(sqrt(q)/(log q)^(5/2))`. PC-289 removes another artificial loss by estimating the clipping region **after pulling it back to prime intervals**. A Brun--Titchmarsh-type bound gives arc-length mass on every logarithmic-depth band until a tiny tail, improving the clipping second moment from `epsilon log q` to `epsilon`.
+PC-287--PC-289 progressively remove artificial transport losses under RH: one-dimensional path variation replaces global Lipschitz control, and source-aware short-interval charging removes the clipping atom loss. The remaining `log^2 q` factor in PC-289 came from the pointwise normalized prime-to-Li source discrepancy.
 
-With `L=log q`, the resulting deterministic transport bound is
+PC-290 shows that this factor is exactly the cost of spreading the scalar endpoint count mismatch through the normalized CDF. Give the control only the total prime-source count `M_q` in addition to the Li profile, and localize the correction near `q`. The RH mean-square PNT estimate then gives
 
-`W_1 << sqrt(epsilon+L^3/q) + (B/sqrt(epsilon)) Delta_q + L^2/q`
+`||F_prime-F_control||_2 = O(q^-1/2)`
 
-under the stated long-preimage condition. RH supplies `Delta_q << q^(-1/2)L^2+L/q`; choosing `epsilon=B q^(-1/2)L^2` yields collapse whenever
+up to lower-order terms. This norm matches the existing spectral path derivative estimate
 
-`B=o(sqrt(q)/L^2)`.
+`||F_y'||_2 << B/sqrt(epsilon)`.
 
-The reusable lesson is now two-layered. Integrated output-path variation is cheaper than global Lipschitz control, and **source-aware mass estimates inside the singular set are cheaper than charging that set by the worst atom**. Once both losses are removed, the remaining `log^2 q` gap comes from the pointwise RH prime-to-Li source discrepancy itself.
+With `epsilon=B q^-1/2`, the normalized boundary-log singular-spectrum laws collapse for every
 
-This makes the interpretation sharper. RH drives this one-profile observable toward the classical control almost to square-root scale. Further improvement within the same architecture must beat the source discrepancy/transport interface rather than the clipping geometry. If the desired RH signature is persistent order-one prime-specific separation, a different observable must retain information that the ordered one-profile singular spectrum discards.
+`B=o(sqrt(q))`.
 
-**Boundary.** PC-289 is still a one-way RH consequence. It uses classical short-interval sieve input plus RH prime-counting discrepancy and says nothing about multi-source, cross-level, phase-sensitive or noncommuting observables.
+The reusable lesson is now three-layered. Integrated output-path variation is cheaper than global Lipschitz control; source-aware mass inside the singular set is cheaper than worst-atom charging; and **a pointwise source discrepancy can still be the wrong transport norm once the destination already supplies an `L^2` path-energy estimate**. Matching the scalar endpoint mass exposes the actual positional discrepancy seen by that duality.
+
+The interpretation is correspondingly stronger. Under RH, below the rational square-root resolution boundary, the exact prime locations do not create order-one separation in this one-profile observable once total source count is fixed. If the desired RH signature is persistent prime-specific separation, the architecture must retain richer information or operate at the true denominator-microscopic boundary rather than another sub-square-root refinement of the same statistic.
+
+**Boundary.** The count-matched control is not arithmetic-free: it receives `M_q`. PC-290 therefore falsifies positional information conditional on total count; it does not show that the source count itself is irrelevant. No claim is made at `B` comparable with `sqrt(q)`.

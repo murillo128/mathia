@@ -1,21 +1,21 @@
-# MI-018 — Finite sign complexity transfers only after the Euler tail loses to the sampling margin
+# MI-018 — Finite sign complexity transfers once harmonic tail cost beats collision loss
 
-**Evidence level:** supported by AF-217--AF-220 and sharpened quantitatively by [AF-337](../../findings/AF-337-deep-half-plane-harmonic-tail-restores-finite-euler-sign-regularity.md). The result is a fixed-finite-order theorem in the absolutely convergent half-plane; no uniform all-order total positivity, critical-line transport, or stable inverse bound is claimed.
+**Evidence level:** supported by AF-217--AF-220 and sharpened quantitatively by [AF-338](../../findings/AF-338-harmonic-collision-count-reduces-euler-sign-depth-to-linear-order.md), which improves the sufficient depth in AF-337. The result is a fixed-finite-order theorem in the absolutely convergent half-plane; no uniform all-order total positivity, critical-line transport or stable inverse bound is claimed.
 
-The useful source currency is not positivity of every minor. It is a **finite sign-variation budget matched to a finite observation order**. AF-217 shows that the Euler-log family is not globally totally positive, while AF-218--AF-220 recover strict sign regularity at each fixed order when the sampling geometry has a quantitative separation/curvature modulus. This is enough to detect any nonzero coefficient vector with fewer sign changes than the observation order.
+The useful source currency is not positivity of every minor. It is a **finite sign-variation budget matched to a finite observation order**. AF-217 shows that the Euler-log family is not globally totally positive, while AF-218--AF-220 recover strict sign regularity at fixed order under quantitative sampling geometry.
 
-AF-337 makes that qualitative principle explicit for the full Euler logarithm rather than its first harmonic. For fixed order `r`, row spacing `h`, and distinct multiplicative sites `q_j in [P,AP]`, the sampling matrix
+AF-337 made the full-Euler tail comparison explicit but paid a quadratic sufficient depth by comparing higher harmonics to the first-harmonic determinant after discarding their inherited source collisions. AF-338 keeps those collisions. For a `k x k` minor, let `m_j` be the column harmonic labels, `S(m)=sum_j(m_j-1)` their total excess order, and `X(m)` the number of column pairs carrying unequal labels. Then exactly at the exponent-budget level
 
-`E_(sigma+(i-1)h)(q_j) = -log(1-q_j^(-sigma-(i-1)h))`
+`X(m) <= (k-1) S(m)`.
 
-is strictly sign-regular through order `r` for all sufficiently large `P` whenever
+Equal harmonic labels preserve the first-harmonic Vandermonde zero; only unequal labels can spend an inverse source-gap factor. The generalized Schur row-shape factor creates no positive power of the source scale. Consequently, for fixed order `r`, row spacing `h`, and `q_j in [P,AP]`, the full Euler-log sampling matrix is eventually strictly sign-regular through order `r` whenever
 
-`sigma > Gamma_(r,h) := (h+1) binom(r,2)`.
+`sigma > r-1`,
 
-The mechanism is an exact margin comparison. The first Euler harmonic has a Vandermonde-type minor with a polynomially small lower margin in `P`; the sum of all higher harmonics is `O(P^-sigma)`. Once the latter is smaller than the former, the checkerboard minor signs survive. Equivalently, the full nonlinear Euler logarithm inherits the finite-order variation-diminishing test because its harmonic tail is below the determinant margin actually consumed by that test.
+with every full-Euler minor differing relatively from its first-harmonic minor by `O(P^-(sigma-(r-1)))`.
 
-This supplies a reusable transfer rule: **a source sign budget becomes observable only after the unresolved tail is quantitatively smaller than the finite-order sign-regularity margin.** Merely knowing that the leading kernel has the right sign pattern is not enough, and demanding all-order positivity is stronger than needed.
+The reusable principle is more precise than “tail below margin”: **price how much of the leading determinant's collision geometry each tail component actually destroys.** Treating every tail determinant independently can invent a much larger transport cost than the nonlinear expansion really pays.
 
-The remaining arithmetic problem is now sharper rather than solved. The sufficient depth `sigma>Gamma_(r,h)` grows quadratically with `r` and lies deep in `Re s>1`; it can destroy the zero-sensitive information that motivated the Euler representation. A useful bridge must therefore force a small enough source sign budget and transport that finite-order certificate toward the analytically relevant region without paying a depth cost that erases the destination signal. Exact sign detection is also weaker than a uniform inverse/conditioning theorem.
+The remaining arithmetic problem is still a destination problem. The depth budget is now linear rather than quadratic, but it grows with the desired sign order and remains in `Re s>1`; moreover the theorem is equally valid for primes, composites and mixed integer controls. A useful RH-facing bridge must force a small source sign budget and transport or consume the resulting finite-order certificate before the required half-plane depth erases the zero-sensitive signal.
 
-**Boundary.** AF-337 works for primes and composites alike, so the sign-regular observation geometry is not itself a prime-specific theorem. Its role is to state the quantitative interface that a prime-specific source restriction would have to exploit.
+**Boundary.** AF-338 is an exact finite-order sign theorem, not a prime discriminator or uniform inverse theorem. The exponent threshold is independent of `h`, but constants and the onset scale still depend on `r,h,A,sigma`.

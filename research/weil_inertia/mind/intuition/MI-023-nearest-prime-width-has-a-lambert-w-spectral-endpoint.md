@@ -1,31 +1,25 @@
-# MI-023 — Two-island Lambert screening is a coupled prime-gap problem at `x` and `sqrt(x)`
+# MI-023 — Two-island Lambert screening is a cross-scale incidence problem with polynomially many safe windows
 
-**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288 and sharpened by [WI-289](../../findings/WI-289-lambert-prime-power-screening-has-a-critical-prime-square-layer.md). This is not a theorem that the required coupled gaps exist or cannot exist.
+**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288, sharpened by WI-289 and [WI-290](../../findings/WI-290-mean-square-prime-gaps-force-polynomially-many-composite-screening-windows.md). This is not a theorem that the required coupled gaps exist or cannot exist.
 
-WI-288 reduces complete screening on two symmetric narrow islands to the nearest-prime-power condition
-
-`2b <= delta_pp(x)`,
-
-and combines it with the prime-deleted spectral zero-bottom condition to require
+WI-288 reduces complete screening on two symmetric narrow islands to the nearest-prime-power condition and the Lambert-scale separation
 
 `sqrt(x) delta_pp(x) >= W(c sqrt(x))`.
 
-WI-289 resolves what the composite prime powers contribute to that arithmetic obstruction. Exactly,
+WI-289 resolves the composite layers through
 
 `delta_pp(x)=min_(k>=1) k delta_p(x^(1/k))`.
 
-At the Lambert radius `D_c(x)=W(c sqrt(x))/sqrt(x)`, the corresponding root-scale prime-free interval has length
+The prime layer near `x` demands an enormous `sqrt(x) log x`-scale desert. Prime squares are the unique macroscopically critical composite layer, requiring an approximately mean-gap-sized prime-free interval near `sqrt(x)`; every `k>=3` root window is subunit. On a dyadic shell the composite exclusions still leave residual measure of order `X log log X/log X`.
 
-`(2/k) x^(1/k-1/2) W(c sqrt(x))(1+o(1))`.
+WI-290 adds the missing topological information. Every prime square is an exact separator of the residual. If the prime-gap second moment at scale `y` is `O(y^(1+theta+epsilon))`, then Cauchy--Schwarz converts the residual mass into at least
 
-Only `k=2` is macroscopically critical beyond the prime layer. The prime condition near `x` demands a desert of size about `sqrt(x) log x`; the square condition becomes a prime-free interval near `sqrt(x)` of length
+`X^((1-theta)/2-epsilon) (log log X/log X)^2`
 
-`log sqrt(x)-log log sqrt(x)+O(1)`,
+positive-length safe components. The published `theta=1/4` theorem already yields `X^(3/8-o(1))` such windows. Thus the composite-safe reservoir cannot concentrate into bounded, logarithmic or subpolynomially many exceptional intervals.
 
-approximately one mean prime gap. Every `k>=3` root window is subunit and contributes only sparse resonance exclusions.
+The live obstruction is therefore a **cross-scale incidence problem, not a scarcity problem**. A hypothetical giant prime desert near `x` must systematically avoid a polynomial family of composite-safe windows generated primarily by the prime-gap geometry near `sqrt(x)`. Current theorems provide no correlation between those events.
 
-The dyadic coverage calculation makes this structural distinction quantitative. Composite prime-power Lambert neighborhoods cannot cover `[X,2X]`: the square layer leaves a deficit of order `X log log X/log X`, while all deeper powers occupy only `O(X^(5/6) log X)`. Thus “prime powers are denser than primes” is not enough to close the two-island route.
+This narrows what a closing theorem must do. It can prove a deterministic coupling between the two scales, exploit null-equation amplitudes/signs that support screening discards, or leave the symmetric two-island topology. Merely improving the total residual measure or showing that one safe interval exists no longer targets the bottleneck.
 
-The live obstruction is a **coupled two-scale placement problem**. One must show that a hypothetical `sqrt(x) log x`-scale prime desert near `x` cannot simultaneously avoid the critical prime-square layer near `sqrt(x)` (and the sparse deeper resonances), or use null-equation amplitude/sign information beyond support screening. WI-289 does not supply the needed correlation between the two scales.
-
-**Boundary.** The square-layer coverage deficit does not prove that centers of enormous prime gaps intersect the composite-power-free residual set. No independence between gap events at `x` and `sqrt(x)` is assumed or obtained.
+**Boundary.** WI-290 gives no lower bound on individual safe-window length and no independence/coupling theorem. The recent `77/200` exponent uses an unrefereed preprint; the published `3/8` baseline is sufficient for the qualitative polynomial-fragmentation conclusion.
