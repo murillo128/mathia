@@ -1,0 +1,20 @@
+---
+type: adversarial-review
+target: research/robin_extremal/findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md
+---
+
+# Adversarial review
+
+## Adversary
+
+The core power-corridor mechanism appears sound, but four points need resolution before the claim is durable.
+
+First, equations (11) and (13) use `nu_e` although `RE-110` defines the physical coordinate as `u_e`; as written the localization step does not literally bind the variable entering `M_+`.
+
+Second, the left-limit form of the spectral event-sweep estimate should not rely on the assertion that an event group has only logarithmic mass unless that tie bound is explicitly imported. The stronger and cleaner route is to take the left limit directly in the uniform estimate `Phi(x)=x+O_Theta(x^Theta(log x)^2)`.
+
+Third, the phrase “subpolynomially sparse” overstates (22): changing `eta` changes `b` and hence changes the selected quantitative family. What is proved is that choosing `b` arbitrarily close to `1-Theta` gives corresponding families with arbitrarily small fixed packing exponent; it is not a single fixed family with a `T^{o(1)}` count.
+
+Fourth, the elimination of the `RE-111` Korobov--Vinogradov-minimal branch invokes the short-corridor estimate (15), which was proved under `L<=Y`. `RE-111` does impose `L<=Y`, but that hypothesis must be stated at the point of comparison. Without it, (28) is not justified from the stored derivation.
+
+These are same-claim repairs. The objection is resolved if the canonical finding corrects the variable, derives the left-limit bound without an extra tie hypothesis, narrows the packing interpretation, and explicitly carries the `L<=Y` hypothesis into the `RE-111` comparison.
