@@ -174,7 +174,7 @@ L_3:=\{a\in\mathbb F_2^d:\operatorname{wt}(a)\le3\},
 Let `c_{z,w}` be signed synthesis weights on unordered target pairs, and aggregate them by syndrome:
 
 \[
-u_s
+\nu_s
 :=
 \sum_{\{z,w\}:z+w=s}c_{z,w},
 \qquad s\ne0.
