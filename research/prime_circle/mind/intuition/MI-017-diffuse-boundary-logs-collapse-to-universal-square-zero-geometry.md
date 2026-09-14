@@ -1,15 +1,18 @@
-# MI-017 — Diffuse one-profile boundary logs collapse to universal square-zero geometry
+# MI-017 — Diffuse one-profile boundary logs collapse to universal square-zero geometry down to their defect scale
 
-**Evidence level:** exact asymptotic operator statement from [PC-295](../../findings/PC-295-diffuse-boundary-log-singular-spectrum-is-classical-green.md)--[PC-297](../../findings/PC-297-diffuse-boundary-log-pseudospectrum-is-universal-square-zero.md) under their diffuseness hypothesis. The conclusion is fixed-scale and one-profile; non-diffuse and joint-profile regimes remain open.
+**Evidence level:** exact asymptotic operator statement from [PC-295](../../findings/PC-295-diffuse-boundary-log-singular-spectrum-is-classical-green.md)--[PC-298](../../findings/PC-298-quantitative-square-zero-approximation-reaches-shrinking-pseudospectral-scales.md) under their diffuseness hypothesis. The conclusion remains one-profile and diffuse; joint/noncommuting and non-diffuse regimes remain open.
 
-PC-295 shows that diffuse boundary-log matrices keep a nonzero deterministic Green singular spectrum. PC-296 simultaneously shows their eigenvalues collapse to zero because the left and right low-Fourier frames become mutually orthogonal. PC-297 identifies the operator geometry behind both facts: after polar normalization and an asymptotically negligible correction, the dominant left/right frames can be made exactly orthogonal, producing a square-zero approximant
+PC-295 shows that diffuse boundary-log matrices keep a nonzero deterministic Green singular spectrum. PC-296 simultaneously shows their eigenvalues collapse because the left and right low-Fourier frames become mutually orthogonal. PC-297 identifies the operator geometry: after an asymptotically negligible correction the dominant frames can be made exactly orthogonal, producing a square-zero approximant `S=UDW*` with `S^2=0` and `||S||->1/2`.
 
-`S=U D W*`, `W*U=0`, hence `S^2=0`,
+PC-298 replaces the qualitative compactness choice by an explicit defect rate. With `delta_q=sqrt(q beta_q/N)`,
 
-with `||S||->1/2`, and the full matrix approaches this class in operator norm.
+`E ||T_q-S_q||_op <= C r_q`,
+`r_q=delta_q^(1/3)+delta_q^(1/2)log q+(log q)/N`,
 
-For a square-zero operator the fixed-`epsilon` pseudospectrum is exactly a disk controlled only by `||S||`. Therefore the diffuse prime matrix has the same limiting fixed-scale pseudospectrum and resolvent profile as every matched diffuse control satisfying the same frame estimates. The nonnormal bulge is real, but its shape is universal rather than arithmetic.
+and `||S_q||=1/2+O(q^-3)`. The `delta_q^(1/3)` term comes from balancing growing low-frame error against the universal Green tail; it is not claimed sharp.
 
-This changes the surviving currency. Singular strength, eigenvalue loops and fixed-scale pseudospectral amplification are not three independent source signals here; they are different projections of the same asymptotic square-zero geometry. A prime-specific invariant must retain relational information that the left/right orthogonalization discards, use several coupled profiles/levels, probe a scale comparable to the vanishing operator defect, or leave the diffuse regime.
+This quantitative rate pushes universality into shrinking resolution. If `epsilon_q->0` but `r_q/epsilon_q->0`, the `epsilon_q`-pseudospectrum, after its natural `epsilon_q^-1/2` rescaling, still converges to the same universal disk. Therefore “probe a smaller pseudospectral scale” is not by itself a surviving arithmetic route. The probe must resolve the actual square-zero defect, or retain relational information destroyed by the one-profile orthogonalization.
 
-**Boundary.** PC-297 does not say that pseudospectra at `epsilon=epsilon(q)->0` are universal at every rate, nor that all joint/noncommuting observables classicalize. Those are genuinely different questions because operator-norm closeness only transfers structure above its error scale.
+The surviving currency is now explicit: singular strength, eigenvalue loops and pseudospectral amplification above `r_q` are different projections of one universal square-zero geometry. Prime-specific information must live in the `O(r_q)` remainder (or a sharper subscale if `r_q` is improved), in several coupled profiles/levels, in source-coupled frame relations, or outside diffuseness.
+
+**Boundary.** PC-298 proves universality only for shrinking scales satisfying `epsilon_q >> r_q`; it does not classify the critical/subdefect regime, prove `r_q` sharp, or classicalize joint noncommuting observables. Those are genuinely different questions.

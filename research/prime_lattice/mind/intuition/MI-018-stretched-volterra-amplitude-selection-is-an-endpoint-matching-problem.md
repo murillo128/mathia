@@ -1,47 +1,18 @@
-# MI-018 — Stretched Volterra amplitude selection reduces to one endpoint cancellation plus singular-mode matching
+# MI-018 — Stretched Volterra amplitude selection is a rank-one corner matching problem
 
-**Evidence level:** exact consequence of [PL-310](../../findings/PL-310-stretched-fractional-green-limit-is-a-volterra-plus-diagonal-fixed-profile.md)--[PL-312](../../findings/PL-312-volterra-regular-range-right-inverse.md). The limiting regular range and right inverse are exact. No finite-`s` matched asymptotic expansion, actual completed-Weil endpoint forcing, amplitude formula or RH consequence is claimed.
+**Evidence level:** exact consequence of [PL-310](../../findings/PL-310-stretched-fractional-green-limit-is-a-volterra-plus-diagonal-fixed-profile.md)--[PL-313](../../findings/PL-313-corner-to-outer-rank-one-transfer.md). The limiting regular range and the compact-corner Green transfer are exact. No complete finite-`s` expansion for the actual completed-Weil eigenbranch, amplitude formula, arithmetic sign or RH consequence is claimed.
 
-PL-310 shows that the small-order fractional Green geometry has a universal fixed-`r` limit. After stretching the right boundary by
+PL-310 shows that the small-order fractional Green geometry has a universal fixed-`r` limit with one singular homogeneous profile `C/sqrt(e^(2r)-1)`. PL-311--PL-312 show that regular outer corrections have exactly one solvability obstruction: for `C^1` forcing, `(I-T)f=h` is solvable in the continuous gauge iff `h(0)=0`. Once that scalar is cancelled, the regular correction is unique.
 
-`x_s(r)=1-2e^(-r/s)`, 
+PL-313 identifies how the physical `r=O(s)` corner reaches this one-dimensional cokernel. If `m` is a compact physical mismatch and `F_(s,m)=s^(-1/2)m(x_s(.))`, then locally for `r>0`,
 
-the limiting Green operator is
+`(1/sqrt(s))(T_s F_(s,m))(r) -> e^(-r) M_+(m)`,
+`M_+(m)=integral_(-1)^1 m(y)/(1-y) dy`.
 
-`(TF)(r)=e^(-2r)F(r)+e^(-r) integral_0^r e^(-q)F(q)dq`,
+Reflection gives `M_-(m)=integral m(y)/(1+y)dy`. The full compact corner shape is therefore compressed to one weighted scalar per endpoint, carried by the very outer direction whose endpoint value violates the PL-312 range condition.
 
-and its nonzero fixed profiles form the one-dimensional cone
+This is the missing structural match: the physical corner does not feed an uncontrolled functional family into the outer problem. At first regular order it communicates through a **rank-one endpoint channel**. Under a justified expansion with no other endpoint-active `O(sqrt(s))` term, solvability would force a scalar balance between `M_±` and the completed source.
 
-`F(r)=C/sqrt(e^(2r)-1)`.
+The remaining difficulty is not conceptual but genuinely analytic. The actual singular profile behaves like `C/sqrt(2r)`; in the overlap `r=sQ` it corresponds to a physical `Q^-1/2` boundary law. Before `M_±` is finite for the actual mismatch, the amplitude `C` must be matched strongly enough that this leading boundary tail cancels and the residual lies in `L^1(dQ)`. Then all other `O(sqrt(s))` errors must be shown not to create an additional endpoint-active scalar.
 
-The principal shape is therefore universal. Source information can only enter through the scalar amplitude or lower-order matching data.
-
-PL-311 identifies the endpoint obstruction: if `f` is endpoint-integrable, `(I-T)f=h`, and `h` is continuous at `0`, then `h(0)=0`. A nonzero constant endpoint forcing cannot be absorbed by an ordinary regular outer correction.
-
-PL-312 proves that, in the continuous correction gauge, there is **no further smooth solvability obstruction hidden behind that condition**. Writing `D(r)=1-e^(-2r)`, one has
-
-`Ran((I-T):C([0,R])->C([0,R])) = {h: h(0)=0, lim_(r->0) h(r)/r exists}`,
-
-and the unique regular preimage is
-
-`Rh = h/D + e^(-r)/sqrt(D) integral_0^r e^(-q)h(q)/D(q)^(3/2)dq`.
-
-For `h in C^1`, solvability is equivalent simply to `h(0)=0`, with `(Rh)(0)=h'(0)`. Thus once the constant endpoint mismatch is cancelled, the remainder is automatically and uniquely absorbed by the regular outer inverse.
-
-The homogeneous equation supplies exactly one excluded mode:
-
-`f_C(r)=C/sqrt(e^(2r)-1) ~ C/sqrt(2r)`.
-
-It is endpoint-integrable but not continuous. This is precisely the PL-310 amplitude profile. Restricting the correction to `C([0,R])` therefore gauges out the amplitude direction rather than determining it.
-
-The missing compensation has a canonical geometric location. Every fixed physical point `x in (-1,1)` satisfies `r_s(x)=O(s)`, so the full macroscopic bulk collapses into a shrinking `r=O(s)` corner. The fixed-`r>0` limit forgets exactly the region in which bulk source information remains spatially resolved.
-
-This makes the finite-`s` matching obligation scalar and explicit. A valid overlap expansion must determine the total first-order outer forcing `h_tot`, enforce
-
-`h_tot(0)=0`,
-
-and simultaneously select the coefficient `C` of the singular homogeneous profile. Once that cancellation holds, no additional family of regular outer Fredholm conditions remains to be solved. Any further difficulty must come from deriving the finite-`s` forcing uniformly, controlling a more singular correction class, or extracting the arithmetic sign of the selected amplitude.
-
-The next theorem should therefore quantify `T_s-T` across the corner/outer overlap or derive an equivalent endpoint cancellation from a uniformly convergent weak/virial identity. Another inversion of the limiting outer operator is no longer useful: PL-312 has completed that problem.
-
-**Boundary.** The exact right inverse applies to the limiting operator and continuous corrections; more singular forcing/corrections occupy a larger class. PL-312 does not prove that the finite-`s` completed-Weil equation has a first-order expansion in this gauge or that the corner term supplies the needed cancellation. The durable conclusion is narrower: for regular outer data, source selection is a one-scalar endpoint matching problem plus the separate singular amplitude mode.
+**Boundary.** PL-313 proves the transfer for compact physical mismatches and identifies the canonical functional; it does not prove the weighted decomposition of the actual eigenbranch or the illustrative identity `M_+(m)=2g_+`. The arithmetic sign remains completely open after matching.

@@ -2,7 +2,7 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force genuinely new finite--archimedean structure beyond every affine source recentering
+## Force genuinely new finite--archimedean structure beyond affine spectral and scalar projective gauges
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-022-pole-normalized-curvature-is-an-affine-source-invariant`.
 
@@ -10,24 +10,26 @@ WP-293--WP-303 close scalar/fixed-positive recovery, finite multiplicative-equiv
 
 WP-305 finds the first source-specific remainder and the wrong sign: after reflection the Mangoldt curvature is positive, while the Riemann-Gamma coefficient is `-1/24`. WP-306 shows support-preserving translations cannot repair it.
 
-WP-307 removes the support restriction and the remaining positive affine freedom. If
+WP-307 removes the support restriction and the full positive affine freedom of the **spectral input coordinate**. If
 
 `F(s)=1/s+C_+ + A_0 s+...`,
 
-then the pole-normalized logarithmic curvature
+then
 
 `J=[s^2] log(sF(s))=A_0-C_+^2/2`
 
-is strictly positive for the Mangoldt source (`J>7/300`). Translation leaves `J` invariant; after density-normalized `E -> aE+t`, `a>0`, the reflected curvature is exactly
+is strictly positive for the Mangoldt source. Translation leaves `J` invariant and positive dilation scales it by `a^2`, so every density-normalized orientation-preserving affine recentering retains positive reflected curvature.
 
-`A_(a,t)=a^2 J + (t-a C_+)^2/2 > 0`.
+WP-308 now closes the canonical scalar **output-coordinate** repair as well. Every constant positivity-preserving projective recoding of the scalar Herglotz response is a real Möbius automorphism. If it is non-affine (`c!=0`), it sends the logarithmic end to a finite boundary value and destroys the required `log y` growth. If it fixes infinity, it is necessarily `T(w)=alpha w+beta` with `alpha>0`, so after normalizing the unit logarithmic coefficient it preserves the same positive `y^-2` curvature.
 
-Thus no real translation, positive dilation, or combination of the two can reach the Gamma sign, even if finitely many source atoms are moved to negative energy. The remaining route must introduce a genuinely different boundary/archimedean sector, quotient/compression, non-affine finite--infinite coupling, determinant/scattering mechanism or another source-native operation with an independent sign theorem.
+Thus neither an affine change of spectral variable nor a scalar self-adjoint Herglotz/Weyl boundary-coordinate change can repair the Mangoldt--Gamma mismatch. The remaining route must introduce genuinely new geometry: an operator/matrix-valued boundary space, a source-derived `z`-dependent transform with independent meaning, a quotient/compression with a new positivity theorem, determinant/scattering structure, or a nonseparable finite--archimedean coupling before scalarization.
 
-## Treat mass class, orientation and affine curvature as separate gates
+## Treat mass class, orientation, affine curvature and projective boundary gauge as separate gates
 
-Matching `log y` establishes only the infinite-mass class. Producing a nonuniversal `y^-2` coefficient establishes arithmetic sensitivity but not the correct orientation. WP-307 identifies an exact affine-covariant invariant controlling that remainder, so “choose a better origin/scale” is now closed rather than merely unsupported.
+Matching `log y` establishes only the infinite-mass class. Producing a nonuniversal `y^-2` coefficient establishes arithmetic sensitivity but not the correct orientation. WP-307 closes affine input recentering through the invariant `J`. WP-308 shows that the standard scalar Herglotz projective gauge cannot evade that conclusion: preserving positivity and the logarithmic end collapses the whole Möbius freedom back to a positive affine output map.
+
+A proposal that uses a `z`-dependent transfer, matrix-valued Weyl object or additional boundary sector is therefore genuinely outside the closed gauge class and must supply its own source-native construction and sign theorem.
 
 ## Use matched controls against universal leading scale and source-specific curvature
 
-Unit-density positive measures control the leading logarithm. Generic positive measures can have either sign of the logarithmic quadratic coefficient, so `J>0` is source-specific rather than a generic positivity artifact. Any future construction must explain which new source-native operation changes this invariant before comparing with the Gamma target.
+Unit-density positive measures control the leading logarithm. Generic positive measures can have either sign of the logarithmic quadratic coefficient, so `J>0` is source-specific rather than a generic positivity artifact. WP-308 adds a coordinate audit: a non-affine scalar Möbius map can change asymptotics only by compactifying the logarithmic end, while every end-preserving projective map keeps the curvature sign. Future constructions must alter the geometry before that scalar response is formed rather than recode it afterward.

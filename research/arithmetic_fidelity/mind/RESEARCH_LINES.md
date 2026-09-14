@@ -8,19 +8,19 @@ This file holds the current mathematical questions suggested by the durable arit
 
 AF-338 proves eventual fixed-order sign regularity for the Euler-log observation matrix. AF-339--AF-344 then expose the source escape: prime-independent weighted perfect-power backgrounds preserve the right-half-plane RH pole discriminator while collapsing residual sign variation. AF-345 identifies that sign statistic exactly with occupied prime gaps, and AF-346 shows the same perfect-power family saturates the resulting mass-concentration exponent.
 
-AF-347 closes the next naive repair. For the weighted `k`-th-power background, order-`r` Riesz smoothing along `X=M^k` gives
+AF-347 showed on exact-power cutoffs that finite Riesz smoothing can erase the much stronger raw locality contrast. AF-348 removes the alignment escape. For every fixed `k>=2` and smoothing order `r>=0`, uniformly for all real cutoffs `X`,
 
 `R_(k,r)(X)=X/(r+1)+O_(k,r)(X^max(1-(r+1)/k,0))`.
 
-Once `r>=k-1`, the smoothed mass differs from dense unit mass by only `O_(k,r)(1)`, even though the raw source still has support size `asymp X^(1/k)`, gaps and amplitudes on scale `X^(1-1/k)`. A stronger raw locality profile is therefore not enough: the missing certificate must be **transported through the actual destination map with a quantitative non-erasure bound**, or the observation theorem itself must charge the source before that information is averaged away.
+Hence once `r>=k-1`, the sparse weighted `k`-power source is only `O_(k,r)(1)` away from dense unit mass under this observable **throughout the cutoff axis**, not merely on `X=M^k`. The terminal fractional cell does not restore locality; exact finite-difference cancellation deforms into enough high-order vanishing to preserve the same exponent.
 
-The live theorem is to identify a normalized source functional that excludes the perfect-power controls and prove that the intended critical-line operation preserves or consumes it at the needed scale. A certificate that is visible only before a smoothing/compression step is not yet a usable resource.
+The live theorem is therefore not to strengthen the raw locality statistic again. It is to identify a normalized source functional that excludes the perfect-power controls and prove that the intended critical-line operation preserves or consumes it with a quantitative margin. A certificate visible only before smoothing/compression is not a usable endpoint resource.
 
 ## Price the actual target metric before calling a representation compressed
 
 **Linked intuitions:** `MI-019-faithful-translation-lifts-are-affine`, `MI-020-prime-tail-localization-has-an-information-conservation-law`.
 
-Localization, contraction and lifting can move information without making it cheaper in the metric used by the final theorem. AF-342--AF-347 now show two distinct failure modes: a source can preserve the RH discriminator while reducing sign/gap statistics, and a later smoothing can erase even a much stronger raw locality contrast. Any claimed compression must identify both the source resource and the destination operator that still sees it.
+Localization, contraction and lifting can move information without making it cheaper in the metric used by the final theorem. AF-342--AF-348 now show two distinct failure modes: a source can preserve the RH discriminator while reducing sign/gap statistics, and a later smoothing can erase even a much stronger raw locality contrast uniformly in the cutoff. Any claimed compression must identify both the source resource and the destination operator that still sees it.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -42,4 +42,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity and transport loss as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order and destination slack are now provably different resources. AF-346 shows one sharp source concentration bill can be saturated; AF-347 shows a stronger raw locality contrast can then disappear under a finite destination smoothing. Future work must price the composed map `source -> observation -> endpoint`, not only the richness of the source before compression.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order and destination slack are provably different resources. AF-346 shows one sharp source concentration bill can be saturated; AF-348 shows a stronger raw locality contrast can then disappear uniformly under a finite destination smoothing. Future work must price the composed map `source -> observation -> endpoint`, not only the richness of the source before compression.

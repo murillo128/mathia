@@ -14,24 +14,24 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Move past strictly subcritical static divergence to the transition, controls and access time
+## Move to the transition, optimizer structure and access time: the subcritical static scale is closed
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-016-coherent-prime-blocks-force-super-rms-ising-energy`.
 
-VIS-213--VIS-224 reduce fixed-`(y,H)` worst starts to a midpoint-gauged real signed ratio-shell Hamiltonian and show that the binary Ising optimum, exact torus optimum and real correlation SDP have the same bounded-versus-divergent scale up to a universal factor.
+VIS-213--VIS-224 reduce fixed-`(y,H)` worst starts to a midpoint-gauged real signed ratio-shell Hamiltonian and compare the binary Ising optimum, exact torus optimum and real correlation SDP within universal constants.
 
-VIS-225 decides that scale throughout the strictly subcritical regime. On top-half prime cells of width `asymp y/H`, the centered taper kernel has one positive sign. One Rademacher sign per cell cancels cross-cell terms in expectation while preserving all coherent within-cell edges, yielding
+VIS-225 proves a coherent-block lower bound throughout `H log y/y ->0`. VIS-226 supplies the matching upper bound from the already-audited absolute tapered envelope. Consequently,
 
-`I_abs(B_(y,H)) >> y/(H log y)`.
+`I_abs(B_(y,H)) asy y/(H log y)`,
 
-Since `R_v(y,H) asymp 1/H`,
+and the exact torus and real SDP objectives have the same order. Since `R_v(y,H) asy 1/H`, all three Haar-normalized objectives have the exact order
 
-`I_abs(B_(y,H))/sqrt(R_v) >> y/(sqrt(H) log y) -> infinity`
+`y/(sqrt(H) log y)`
 
-whenever `H log y/y ->0`. Continuous phases and SDP rank are not responsible for the divergence; a coarse binary block assignment already forces it.
+up to fixed constants. The strictly subcritical static question is therefore closed at the coarse scale: neither a different relaxation nor subtler global phase optimization can change the asymptotic order.
 
-The strictly subcritical static boundedness question is therefore closed. Live questions are the critical/supercritical transition, sharper optimizer/energy structure, representation-matched controls for the divergence, and the one-parameter time needed for the physical prime-log orbit to approach a near-optimal torus point.
+Live questions are the critical/supercritical transition, sharp constants and optimizer geometry inside the known scale, representation-matched controls that distinguish arithmetic organization rather than magnitude alone, and the one-parameter time needed for the physical prime-log orbit to approach a near-optimal torus point.
 
-## Keep static energy, optimizer recovery and dynamical access separate
+## Keep static scale, optimizer recovery and dynamical access separate
 
-VIS-225 proves existence of a high-energy binary assignment but does not identify the exact optimizer or show that the physical one-parameter orbit reaches it on a useful time scale. Critical/supercritical behavior is also outside the theorem. These are now separate currencies rather than unfinished parts of the strictly subcritical bound.
+VIS-226 fixes the static supremum scale but does not identify the exact optimizer, a canonical sign pattern, a sharp constant or any recurrence/access time. It also says nothing about `H asy y/log y` or supercritical windows. These are now genuinely separate currencies rather than unfinished parts of the subcritical energy estimate.

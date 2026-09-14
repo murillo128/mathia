@@ -2,20 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Move beyond the entire fixed-scale one-profile spectral and pseudospectral package
+## Move below the quantitative square-zero defect or beyond the one-profile quotient
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`, `MI-016-diffuse-independent-dilations-preserve-singular-channels-but-break-eigenvalue-loops`, `MI-017-diffuse-boundary-logs-collapse-to-universal-square-zero-geometry`.
 
-PC-295 closes the complete absolute singular spectrum under diffuse averaging: it converges to the deterministic Green sequence. PC-296 closes raw eigenvalues: the spectral radius tends to zero even while the operator norm tends to `1/2` because the left/right cross-Gram loops vanish.
+PC-295 closes the complete absolute singular spectrum under diffuse averaging, PC-296 closes raw eigenvalues, and PC-297 identifies their common fixed-scale explanation: the normalized boundary-log matrix approaches a universal square-zero class of norm `1/2`, so every fixed positive pseudospectral scale is classicalized.
 
-PC-297 closes the most direct fixed-scale nonnormal escape. The normalized boundary-log matrix is asymptotically close in operator norm to a square-zero matrix `S` with `||S||->1/2`. Hence `T^2->0`, and for every fixed `epsilon>0` the complete pseudospectrum converges to the universal disk
+PC-298 makes the approximation quantitative. Under the same diffuseness regime, there is a square-zero `S_q` with deterministic norm `1/2+O(q^-3)` and
 
-`|z| <= sqrt(epsilon(epsilon+1/2))`.
+`E ||T_q-S_q||_op <= C r_q`,
 
-The minimum-singular-value/resolvent profile is radial and depends only on that universal top singular value. Prime sources and matched diffuse controls therefore share singular values, eigenvalue collapse and fixed-`epsilon` pseudospectral geometry.
+where
 
-A surviving prime-specific construction must retain information before this square-zero collapse: joint spectra or words of several noncommuting profiles, source-coupled left/right geometry, cross-level relations, a perturbation scale shrinking with the source parameters, or a genuinely non-diffuse regime. Recomputing another fixed-scale statistic of the same one-profile operator is now strongly constrained.
+`r_q = delta_q^(1/3) + delta_q^(1/2) log q + (log q)/N`.
 
-## Keep singular channels, loop closure and perturbation scale separate
+Consequently, for every shrinking pseudospectral scale `epsilon_q` with `r_q/epsilon_q -> 0`, the rescaled `epsilon_q`-pseudospectrum still converges to the universal square-zero disk. The escape left by PC-297 is therefore not “take epsilon to zero”; it must probe at or below the actual defect scale `r_q`, improve the approximation enough to identify a finer threshold, or retain information outside the diffuse one-profile quotient.
 
-Diffuse averaging preserves same-side singular channels but makes left and right frames asymptotically orthogonal. PC-297 shows that this is stronger than eigenvalue collapse: at fixed pseudospectral scale the operator itself approaches the universal square-zero class. Any next nonnormal observable must explain which source relation survives that operator-norm approximation or why its scale resolves the vanishing defect.
+A surviving prime-specific construction must use joint/noncommuting profiles, source-coupled left/right relations, cross-level structure, a genuinely non-diffuse regime, or an observable whose normalization resolves the `O(r_q)` defect rather than the order-one universal square-zero geometry.
+
+## Keep singular strength, loop closure and perturbation resolution separate
+
+Diffuse averaging preserves same-side singular channels but makes the left/right frames asymptotically orthogonal. PC-298 shows quantitatively how fast the complete operator enters that square-zero class. Any next nonnormal observable must state the scale at which it resolves the defect; a shrinking parameter is not informative unless it shrinks at least comparably to `r_q`.
