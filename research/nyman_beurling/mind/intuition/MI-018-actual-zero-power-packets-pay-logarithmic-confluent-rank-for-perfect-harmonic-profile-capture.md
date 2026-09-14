@@ -1,27 +1,33 @@
-# MI-018 — Actual zero-power packets pay logarithmic confluent rank for perfect harmonic-profile capture
+# MI-018 — Actual zero-power packets have a stable annihilator gap; near-perfect capture must spend rank or horizontal depth
 
-**Evidence level:** exact consequence of [NB-123](../../findings/NB-123-perfect-target-capture-by-a-finite-zero-packet-requires-logarithmic-confluent-rank.md), using the target equality characterization of NB-117 and the elementary annihilating recurrence of finite confluent exponential-polynomial sequences. No stable near-perfect capture bound, zero-spacing estimate, RH consequence or novelty claim for Prony/annihilating-filter theory is made.
+**Evidence level:** exact consequence of [NB-123](../../findings/NB-123-perfect-target-capture-by-a-finite-zero-packet-requires-logarithmic-confluent-rank.md) and [NB-124](../../findings/NB-124-weighted-annihilator-duality-gives-a-stable-target-angle-gap-for-finite-zero-packets.md), using the target equality/energy characterization of NB-117 and the elementary annihilating recurrence of finite confluent exponential-polynomial sequences. No RH consequence or uniform growing-rank zero-packet bound is claimed.
 
 The matched controls of NB-119--NB-122 show that increasingly rich Nyman orthogonality and even the entire nested cutoff prefix do not exclude perfect visible target capture. NB-123 identifies the first exact separator coming from the **actual zero-power representation itself**.
 
-For a finite packet `F` of actual nontrivial zeta zeros, let `d(F)` be its total confluent multiplicity. Sampling its primitive on a geometric grid `n=q^k` gives a finite exponential-polynomial sequence
+For a finite packet `F` of actual nontrivial zeta zeros, let `d(F)` be its total confluent multiplicity. Sampling its primitive on a geometric grid `n=q^k` gives a finite exponential-polynomial sequence with characteristic roots `q^(-conj(rho))`. Perfect target capture forces its geometric block increments to be the pure missing mode `q^-k`, but every actual nontrivial zero has `Re rho<1`, so `q^-1` is not a characteristic root. NB-123 therefore gives `d(F)>=floor(log_q R)` for exact capture.
 
-`u_k = sum_j lambda_j^k p_j(k)`, `lambda_j=q^(-conj(rho_j))`,
+NB-124 makes this separator stable without reconstructing the packet parameters. Let
 
-with total recurrence order at most `d(F)`. Its block increments obey the same annihilating polynomial `A_(F,q)(E)`.
+`A_(F,q)(z)=sum_(j=0)^d a_j z^j`
 
-Perfect target capture at cutoff `R` forces, by the NB-117 equality case, the primitive to equal `C+D/n` on `1<=n<=R` with `D!=0`. Hence the first `K=floor(log_q R)` geometric block increments are the pure mode
+be the annihilator and define
 
-`v_k = D(1-q^-1)q^-k`.
+`mathfrak s_(F,q)=(1-q^-1)|A_(F,q)(q^-1)|^2 / sum_(j=0)^d |a_j|^2 q^-j`.
 
-But every actual nontrivial zero has `Re rho<1`, so `q^-1` is not a characteristic root of the zero packet: `A_(F,q)(q^-1)!=0`. If `K>d(F)`, the first recurrence equation applied to the forced target blocks gives a contradiction. Therefore
+The margin is strictly positive for every fixed actual finite packet. The annihilator applied to the first geometric block errors is an exact scalar functional whose right-hand side is proportional to `A_(F,q)(q^-1)`. Cauchy--Schwarz in the reciprocal block weights of the Nyman cell energy then gives, once `R>=q^(d+1)`,
 
-`d(F) >= floor(log_q R)`,
+`chi_(F,R) <= (1+mathfrak s_(F,q)/L_R)^-1 <= 1/(1+mathfrak s_(F,q)) < 1`.
 
-and in particular `d(F)>=floor(log_2 R)`.
+Thus **every fixed finite actual zero packet is uniformly separated from perfect target capture** for all sufficiently large cutoffs. Node collisions may make Prony parameter recovery ill-conditioned, but they do not by themselves destroy this target-angle certificate because no parameter inversion is used.
 
-This sharply separates **source equations** from **source representation**. The inverse-section controls can satisfy all audited nested Nyman equations while remaining outside the finite zero-power class. Once the actual transformation law is imposed, bounded-rank and sublogarithmic-rank packets cannot realize the perfect target extremizer.
+There is also a coarse source-only lower bound. If `beta_F=max_(rho in F) Re rho`, then
 
-The next quantity is not another nested projection. It is the conditioning of the approximate annihilator. Near-perfect capture would make the observed geometric increments only approximately equal to the missing `q^-1` mode, and converting that error into a target-angle gap requires control of `|A_(F,q)(q^-1)|` and of coefficient amplification when the sampled zero nodes cluster or the confluent rank grows.
+`mathfrak s_(F,q) >= (1-q^-1)((q^-beta_F-q^-1)/(1+q^-1/2))^(2d)`.
 
-**Boundary.** The theorem excludes exact perfect capture only below logarithmic packet rank. It does not bound capture uniformly away from one, does not control high-rank packets, and does not show that actual zero configurations have a well-conditioned annihilator. The durable new resource is the finite recurrence forced by zero-power structure, not zero count by itself.
+Consequently, in any fixed strip `beta_F<=1-sigma`, polynomially near-perfect capture `chi_(F,R)>=1-R^-alpha` forces `d(F)>=c_(q,sigma,alpha) log R-O(1)`. The exact equality separator of NB-123 therefore extends to a quantitative near-perfect separator as long as horizontal approach to `Re s=1` is controlled.
+
+The remaining degeneration has a concrete source geometry. The normalized missing-root margin can shrink because the confluent rank grows and/or because packet zeros move horizontally toward `Re s=1`, bringing the sampled zero radii toward `q^-1`. Fine phase separation may improve the crude bound, but generic Prony instability is no longer the identified obstacle.
+
+The next theorem should therefore control `mathfrak s_(F,q)` for the actual endpoint-relevant zero packets, combine it with NB-116's height/horizontal-mass restrictions, or prove that any family with enough target access pays a rank/height/horizontal-depth cost incompatible with the continuum norm budget. Another nested source equation cannot substitute for that bound.
+
+**Boundary.** NB-124 gives a uniform gap only for each fixed finite packet and a logarithmic rank consequence inside a fixed horizontal strip. It does not control arbitrary growing-rank packets whose rightmost zeros approach `Re s=1`, nor does it turn the finite-packet gap into an RH theorem. The durable resource is the annihilator margin in the same weighted geometry as the destination, not recurrence rank or zero separation alone.

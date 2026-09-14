@@ -2,31 +2,27 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Quarantine the main zeta background without moving prime-scale complexity into the baseline
+## Quarantine the main zeta background while pricing the resource used to simplify the residual
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
 AF-217--AF-220 show that the relevant observation theorem is finite-order sign regularity, not all-order total positivity. AF-338 removes the artificial quadratic harmonic-depth bill: for fixed requested order `r`, spacing `h`, multiplicative window `q_j in [P,AP]`, and `sigma>r-1`, the full Euler-log sampling matrix is eventually strictly sign-regular through order `r`, with relative minor error `O(P^-(sigma-(r-1)))`.
 
-AF-339--AF-340 isolate the source-side cost. The pole-cancelled discrepancy `Lambda-1` retains the zeta-zero divisor but has ordered sign variation `Theta(P/log P)`, while uncentered `Lambda` is sign-simple and still zero-sensitive. Within the constant backgrounds `Lambda-c`, `c=1` is the unique choice cancelling the pole at `s=1`, so retuning a scalar baseline cannot buy both pole isolation and bounded sign complexity.
+AF-339--AF-341 isolate the source-side cost. After pole cancellation, the prime layer alone remains an RH-complete right-half-plane pole discriminator and has `Theta(P/log P)` ordered sign variation; higher prime powers are holomorphic in `Re(s)>1/2` and do not carry the relevant zero poles. AF-342 shows that an arbitrary baseline can lower this sign variation only by reacting on a prime-scale set of prime or prime-adjacent sites, while AF-343 proves that fixed periodic or more generally syndetic positive-composite backgrounds cannot do so.
 
-AF-341 shows that the cost is not an artifact of higher prime powers. Remove every `p^k`, `k>=2`, and retain only the prime layer `a(p)=log p`. Its discarded tail has a Dirichlet transform holomorphic on `Re(s)>1/2`; after centering the prime layer by `1`, the transform still has exactly the zeta-zero poles in that half-plane while the pole at `1` cancels. Hence this prime-only centered source is already RH-complete as a right-half-plane pole discriminator, yet its ordered sign variation remains `Theta(P/log P)`.
+AF-344 closes the inference that this exceptional geometry must itself be arithmetically complicated. For every fixed `k>=2`, the prime-independent perfect-`k`th-power background
 
-AF-342 closes the next obvious escape: nonconstant centering by itself does not make the prime layer cheap. For an arbitrary real baseline `b`, let `E_b` be prime sites where `b(p)>=log p` and `C_b` prime-adjacent composite sites where `b<=0`. On every fixed multiplicative window,
+`b_k(m^k)=k m^(k-1)`, `b_k(n)=0` otherwise,
 
-`V(a-b) >= 2 #primes - 2|E_b| - 4|C_b| - O(1)`.
+has Dirichlet transform `k(\zeta(ks-k+1)-1)`, hence residue one at `s=1` and no zeta-zero poles in `Re(s)>1/2`. The residual still carries the RH pole discriminator, but on every fixed multiplicative window its zero-deleted sign variation is only `O(P^(1/k))`. The price has moved into a sparse support of size `asymp P^(1/k)` with amplitudes `asymp P^(1-1/k)` and total mass `asymp P`.
 
-Thus reducing ordered sign variation below prime scale forces `|E_b|+2|C_b|` to be comparable with the number of primes. In particular every eventually positive baseline that stays below `log p` on primes retains the full leading `2(B-1)P/log P` variation. If the baseline transform cancels only the pole at `1` and is holomorphic at zeta zeros in `Re(s)>1/2`, the residual still carries the RH pole discriminator. The information can therefore be moved from the residual into a prime-scale exceptional pattern of the baseline, but it has not thereby been shown cheaper.
-
-AF-343 closes the fixed-period/fixed-syndetic version of that representation escape. If positive composite witnesses for the baseline occur with a fixed bounded gap, then the zero-deleted residual can contain only boundedly many primes in each positive run, forcing `V(a-b)=Theta_b(P/log P)` on fixed multiplicative windows. Every fixed nonnegative periodic background of positive mean is syndetic in this sense. With mean one, its Dirichlet transform cancels the pole at `1` and is zero-pole-blind, so it preserves the RH discriminator while still paying prime-scale sign order.
-
-The live bridge is therefore narrower. A successful baseline must evade the syndetic theorem by developing unbounded composite-witness gaps or growing structural resolution, neutralize a prime-scale set of prime coefficients, or abandon ordered sign variation for another source certificate. Merely choosing a nonconstant or fixed periodic background is not a compression mechanism. The remaining representation question is whether a genuinely multiscale/non-syndetic pattern can be generated from cheaper retained data while staying zero-pole-blind.
+So ordered sign variation by itself is not a conserved source-complexity currency. A fixed short algebraic rule can preserve the zero discriminator while trading prime-scale sign density for dynamic range and support gaps. The live bridge is now to identify a **joint source certificate** actually consumed by the observation theorem—sign order together with amplitude, local concentration, support-gap geometry or another norm—or to prove a growing-order observation theorem that prices the resource into which AF-344 moves the source. Description complexity and exceptional-site cardinality alone are no longer viable lower bounds.
 
 ## Price the actual target metric before calling a representation compressed
 
 **Linked intuitions:** `MI-019-faithful-translation-lifts-are-affine`, `MI-020-prime-tail-localization-has-an-information-conservation-law`.
 
-Localization, contraction and lifting can move information without making it cheaper in the metric used by the final theorem. A useful compression claim needs both a genuinely smaller target geometry and a theorem that the downstream argument consumes only that target rather than the hidden source detail used to construct it. AF-342--AF-343 sharpen the same warning: exceptional-set cardinality and syndeticity price where a baseline must react, but neither is by itself a bit-, entropy-, circuit- or description-complexity lower bound.
+Localization, contraction and lifting can move information without making it cheaper in the metric used by the final theorem. A useful compression claim needs both a genuinely smaller target geometry and a theorem that the downstream argument consumes only that target rather than the hidden source detail used to construct it. AF-342--AF-344 sharpen the warning: exceptional-set cardinality, syndeticity and ordered sign count can all be reduced or rearranged while another resource such as amplitude concentration grows. Any claimed source compression must audit the full resource bundle used by the destination.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -52,6 +48,6 @@ AF-319 closes the optimizer-transfer problem once one assumes a homogeneous prof
 
 The remaining question is provenance of the non-escape resource. Can the arithmetic/source construction force a cap below the certified boundary level, or another condition strong enough to give projective equicoercivity, without inserting that restriction solely to recover the desired optimizer?
 
-## Keep observation order, source complexity, main-term isolation, exponent layers and destination slack as different currencies
+## Keep observation order, sign density, amplitude concentration, main-term isolation and destination slack as different currencies
 
-Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence, main-term cancellation and destination sensitivity are distinct resources. AF-338 improves the observation-side bill by preserving collision geometry. AF-339--AF-343 show that zero sensitivity can coexist with a one-signed source only while the dominant background remains: once the RH-relevant prime layer is isolated from the pole at `1`, the leading sign burden survives exponent-layer stripping, arbitrary baselines that do not react on a prime-scale exceptional set, and every fixed periodic/syndetic zero-pole-blind repair. None of these currencies supplies another for free.
+Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence, main-term cancellation and destination sensitivity are distinct resources. AF-338 improves the observation-side bill by preserving collision geometry. AF-339--AF-343 show that pole isolation leaves a prime-scale sign burden against broad low-amplitude/syndetic baseline classes. AF-344 then proves that a sparse high-amplitude zero-pole-blind background can collapse that burden to `O(P^(1/k))` without learning the prime set. Any next source theorem must therefore state which combination of sign order, amplitude, concentration, support geometry or other norm is genuinely conserved and transported to the destination.
