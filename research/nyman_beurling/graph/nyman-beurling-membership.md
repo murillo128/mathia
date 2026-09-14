@@ -124,3 +124,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-114-high-multi-ordinate-zero-packets-have-a-quadratic-classical-target-barrier|NB-114]]
 - [[research/nyman_beurling/findings/NB-115-order-one-finite-high-zero-target-access-must-live-in-vanishing-cell-compression-modes|NB-115]]
 - [[research/nyman_beurling/findings/NB-116-selberg-density-upgrades-the-high-zero-burnol-tail-to-inverse-height|NB-116]]
+- [[research/nyman_beurling/findings/NB-117-finite-high-zero-target-rescue-is-exactly-a-weighted-power-sum-interpolation-problem|NB-117]]

@@ -128,3 +128,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-116-self-consistent-moving-endpoint-ray-is-syndetically-realized|RE-116]]
 - [[research/robin_extremal/findings/RE-117-finite-edge-robin-recovery-profiles-collapse-to-stable-filter-positive-lobes|RE-117]]
 - [[research/robin_extremal/findings/RE-118-edge-normalized-block-maxima-are-weighted-stable-filter-lobe-records|RE-118]]
+- [[research/robin_extremal/findings/RE-119-regular-ca-heights-sample-the-finite-edge-profile-on-an-exponentially-fine-phase-mesh|RE-119]]
