@@ -37,6 +37,7 @@ This file records durable literature dependencies for `research/robin_extremal/`
 ## Prime-number-theorem tail control
 
 - Chiara Bellotti, *A new zero-density estimate for zeta(s) and the error term in the prime number theorem*, Bulletin of the London Mathematical Society **58** (2026), Paper e70442, DOI `10.1112/blms.70442`, arXiv:2508.02041. Role: current sharp treatment of the Korobov--Vinogradov zero-free-region error term in the prime number theorem. `RE-015` uses only the standard unconditional consequence that, for some absolute `a>0`, `psi(x)-x << x exp(-a (log x)^(3/5) (log log x)^(-1/5))`; it transfers this elementarily to `theta` and does not depend on the best constant.
+- Hugh L. Montgomery and Robert C. Vaughan, *Multiplicative Number Theory I: Classical Theory*, Cambridge Studies in Advanced Mathematics **97**, Cambridge University Press (2007), ISBN `9780521849036`, Chapter 15, p. 463 (referring back to Exercise 13.1.1). Role: classical zero-edge PNT input for `RE-112`: if `Theta` is the supremum of the real parts of the nontrivial zeros of `zeta(s)`, then `psi(x)=x+O(x^Theta (log x)^2)`. `RE-112` transfers this to the full CA event sweep and combines it with the exact one-sided recovery budget; the book contains no CA recovery or block-packing statement.
 
 ## Short-interval exceptional sets and sparse starts
 
