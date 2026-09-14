@@ -391,3 +391,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 98. **Alejandro Ortega**, “Explicit solutions for the Poisson problem in a ball for the logarithmic Laplacian,” *Carpathian Mathematical Publications* **18**(1) (2026), 111–116. DOI: https://doi.org/10.15330/cmp.18.1.111-116. Published online 15 May 2026.
     - Role: recent-literature audit target for `PL-296`. Uses the same `2 log|xi|` Fourier normalization, formally identifies an integrated whole-space inverse-multiplier family with `L_Delta^(-1)`, substitutes compactly supported fractional Dirichlet torsion profiles, and in dimension one obtains `(1/2) nu(sqrt(r^2-|x-x0|^2))`. `PL-296` derives that this profile has boundary order `ell(dist)`, contradicting source 97's sharp `ell(dist)^(1/2)` torsion law on sufficiently small intervals; no correction or erratum was located in the targeted audit as of 13 September 2026.
+
+## Fractional Pohozaev boundary stress and virial identity
+
+99. **Xavier Ros-Oton, Joaquim Serra**, “The Pohozaev identity for the fractional Laplacian,” *Archive for Rational Mechanics and Analysis* **213**(2) (2014), 587–628. DOI: https://doi.org/10.1007/s00205-014-0740-2. arXiv: https://arxiv.org/abs/1207.5986.
+    - Role: load-bearing prior-art anchor for `PL-307`. Proposition 1.6 gives a state-level fractional Pohozaev identity for zero-exterior functions satisfying explicit regularity and boundedness hypotheses, with boundary term `Gamma(1+s)^2 (u/delta^s)^2`. `PL-307` combines that theorem with the exact dilation covariance of Suzuki's lower-order global Weil form to recover the finite-`s` squared boundary-stress virial identity directly, without requiring a mixed moving-domain Hadamard theorem.
