@@ -92,3 +92,18 @@ D_Q(A)+\Lambda_Q(u,v)-C_QG\,y_{u,v},
 where the local rank `Lambda_Q`, normalized position `y_(u,v)`, and parent scale `G` are already determined by the canonical visible-ray movie. Thus the full descendant discrepancy vector is a common absolute anchor `D_Q(A)` plus a locally determined profile.
 
 Consequently every zero-sum discrepancy residual inside one cone—pairwise differences, parent-centered values, mean-centered values, finite differences, or any other common-mode quotient—adds no independent coordinate for a Pluecker carrier. The clue remains `proposed`, but its surviving discrepancy channel must now retain information that does **not** cancel the common mode: the absolute anchor `D_Q(A)` and its cross-cone/cross-horizon structure, or a genuinely distinct source-conditioned residual/selection law. Merely attaching centered global Farey discrepancy to the local refinement movie no longer passes the representation gate.
+
+## Research-watch disposition after `FD-116`
+
+`FD-116` classifies the simplest cross-horizon version of the absolute-anchor escape left by `FD-115`. For a fixed reduced rational endpoint `A=a/b`,
+
+\[
+D_q(A)-D_{q-1}(A)
+=e_q(A)
+=\sum_{m\mid q}\mu(q/m)
+\left(\left\lfloor\frac{am}{b}\right\rfloor-\frac{am}{b}\right).
+\]
+
+The sawtooth in the last expression is `b`-periodic; after removing its constant mean, every `q>1` increment is the Möbius convolution of a zero-mean finite periodic table. Any fixed finite family of rational anchors has the same form with one vector-valued periodic table of period dividing the least common multiple of the endpoint denominators.
+
+Thus following one or finitely many **fixed** absolute anchors across horizons does not create an arithmetic source independent of the denominator-shell/Mertens frame already present in the line. The clue remains `proposed`, but a viable common-mode coordinate must now let the selected endpoint or its denominator move with the horizon, use a family whose size grows with the horizon, retain a genuinely global cross-cone/cross-horizon selection law, or couple to another source-conditioned residual not reconstructible from fixed periodic Möbius filters. Merely exteriorizing finitely many fixed anchor paths does not pass the representation gate.
