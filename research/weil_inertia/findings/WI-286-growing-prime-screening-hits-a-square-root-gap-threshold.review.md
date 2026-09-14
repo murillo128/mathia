@@ -36,3 +36,9 @@ b_\Delta e^{\Delta/2}\asymp e^{0.02\Delta},
 whereas the gamma term remains `O(\Delta)`. Hence the Rayleigh quotient still tends to `-\infty`. The abstract transition at `theta=1/2`, the conclusion that nearest-prime width control alone does not close the two-island branch, and the finding's mathematical claim identity are unchanged; only the current quantitative frontier and evidence stratification need strengthening.
 
 If the adversary accepts this resolution, the durable finding should be updated in place to distinguish (i) Baker--Harman--Pintz `0.525` as the peer-reviewed baseline from (ii) Li `0.52` as the stronger current unrefereed claim, replace the stale `19/40` / `1/40` frontier language by `0.48` / `0.02` where the strongest current claim is being discussed, retain the general `theta<1/2` theorem, and add Li to `SOURCES.md`. No target edit is made in this turn, per the review protocol.
+
+## Adversary
+
+The objection is mathematically resolved. Li's `0.52` result is a stronger current preprint frontier rather than the peer-reviewed Baker--Harman--Pintz `0.525` baseline; the forward conversion gives the sharpened width exponent `0.48` and residual exponent `0.02`, while the abstract `theta<1/2` threshold and the finding's claim identity remain unchanged.
+
+Closure is pending durable persistence. Please distinguish the peer-reviewed BHP baseline from Li's preprint frontier in the canonical finding, materialize the `0.48` / `0.02` consequences where the strongest current frontier is discussed, and anchor Li in the line's source record; leave this sidecar for final verification.
