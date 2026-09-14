@@ -4,59 +4,30 @@ target: research/robin_extremal/findings/RE-113-edge-zero-phase-locking-rules-ou
 repo: murillo128/mathia
 path: research/robin_extremal/findings/RE-113-edge-zero-phase-locking-rules-out-sublinear-minimal-robin-recovery.md
 original_hash: 7f9c2f15e4e8898077e6ab03a5cd736d75021c59
-status: open
-overall_status: concerns
+reviewed_hash: 9260d6bb400dd3f5c054bd77a64e58ee74bc7852
+status: resolved
+overall_status: accept
 ---
 
 # Adversarial review — RE-113
 
 ## Summary
 
-The main mechanism is sound: the reciprocal-ordinate summability already established in `RE-112` permits an extreme-face decomposition of the normalized explicit formula, and coupling that profile to the exact `RE-034` selector gives a genuine new restriction on sublinear recovery. The recovery conclusion follows from `RE-110` once the event-phase estimate is uniform over the crossed interval.
+Accepted after remediation. The finding correctly projects the finite-edge explicit formula onto the rightmost zero face, couples that phase field to the exact adaptive selector, and uses the one-sided recovery budget to show that genuinely sublinear recoveries are strictly larger than the scalar `RE-112` minimum.
 
-The draft should be tightened in four places before acceptance. None changes the main claim.
+## Resolved issues
 
-## Issues
+The revised finding now states explicitly that conjugate edge zeros make `F_Theta` real-valued, gives the uniform remainder formulation needed to control every crossed event simultaneously, preserves the fixed-constant qualifier on all near-minimal conclusions, and distinguishes the classical almost-periodic prior-art boundary from the specific uniform edge-face expansion derived here.
 
-### 1. `F_Theta` should be explicitly real-valued
+## Verification
 
-**Severity:** minor.
+- Sign convention checked against the truncated formula `psi_0(x)-x=-sum x^rho/rho+...`.
+- High-strip dominated convergence checked against the reciprocal-ordinate summability already proved in `RE-112`.
+- Edge-tail passage checked using absolute convergence on the fixed high strip only; the finding does not assert absolute convergence of the full zero sum.
+- Selector coupling checked against `RE-034`: `Z/Y->1`, `log Z-log Y->0`, and `Z-vartheta(Z)=(b+o(1))hZ log Z` give `F_Theta(log Y)=b hY^(1-Theta)log Y+o(1)`.
+- Sublinear bootstrap checked: the scalar `RE-112` corridor forces `lambda_Y=o(1)`, phase locking makes the crossed forward defects uniformly `o(Y^Theta)`, and the `RE-110` budget upgrades the spacing to `omega(lambda_Y Y)`.
+- Near-minimal corollary checked with one fixed constant `K`: any sequence with `lambda_Y->0` would become sublinear and contradict the upgraded spacing, so fixed-constant near-minimal recovery is necessarily macroscopic and edge-amplitude.
+- Nonattained-edge corollary checked: `F_Theta=0` forces `lambda_Y->0`, excluding a fixed-constant near-minimal family.
+- Prior-art audit checked against the Akbary--Ng--Shahabi almost-periodic/limiting-distribution framework; no collision was found with the CA-selected phase-lock and recovery conclusions.
 
-The displayed series is complex term-by-term, while later inequalities use its sign. State explicitly that conjugate zeros are both included and hence the absolutely convergent series pairs to a real-valued function on real `u`.
-
-**Remediation:** add the conjugate-pair observation immediately after the definition.
-
-### 2. Uniformity over all crossed events needs to be stated rather than inferred
-
-**Severity:** moderate.
-
-Equation (20) uses one `o(Y^Theta)` bound simultaneously over every crossed event. The global asymptotic in (8) is enough, but the draft should make the quantifiers explicit: write the remainder as `r(x)x^Theta` with `sup_(x>=X)|r(x)| -> 0`, first use boundedness of `F_Theta` and `u_e=Y+o(Y)` to deduce `eta_e asymp Y`, then use uniform continuity of `F_Theta` on the shrinking logarithmic interval.
-
-**Remediation:** add this argument in Section 4 before concluding `M_+=o(Y^Theta)`.
-
-### 3. The near-minimal conclusion needs fixed constants emphasized
-
-**Severity:** minor.
-
-The contradiction in Section 5 is valid only for a family with one fixed constant `K` in the near-minimal upper bound; if `K` were allowed to diverge, `lambda_Y -> 0` would not force `L=o(Y)`. The draft says “one fixed K” but the headline conclusion should preserve this qualifier.
-
-**Remediation:** add “fixed-constant” to the summary statement and final frontier wording wherever near-minimality is invoked.
-
-### 4. Prior-art boundary should distinguish classical almost periodicity from the stronger uniform edge-face expansion
-
-**Severity:** minor.
-
-Akbary--Ng--Shahabi work in a broad Besicovitch almost-periodic/limiting-distribution framework. The draft should not suggest that their theorem is the exact uniform expansion proved here under a finite attained zero edge. Conversely, the edge-phase representation itself is a straightforward explicit-formula consequence once high-strip reciprocal summability is available and should not be advertised as a novel general theorem.
-
-**Remediation:** state that the cited almost-periodic literature is a conceptual prior-art boundary, while the displayed uniform extreme-face expansion is derived here from the specific `RE-112` summability input.
-
-## Tests and reasoning
-
-- Checked the sign convention against `psi_0(x)-x=-sum x^rho/rho+...`; therefore `x-psi_0(x)` has the positive edge series used in the draft.
-- Checked dominated convergence: for `Re rho>=sigma_0`, `|x^(rho-Theta)/rho|<=1/|rho|`, and `RE-112` supplies summability of these coefficients.
-- Checked edge-tail truncation: absolute convergence makes the omitted `|gamma|>x` edge tail uniformly `o(1)`.
-- Checked the selector scale: `RE-034` gives `Z/Y->1` and `log Z-log Y->0`, so uniform continuity transfers the phase from `Z` to `Y`.
-- Checked the sublinear bootstrap: `L=o(Y)` plus the scalar `RE-112` lower bound forces `lambda_Y=o(1)`; phase locking then makes every crossed positive forward defect `o(Y^Theta)`, and `RE-110` upgrades the corridor from `Omega(lambda_Y Y)` to `omega(lambda_Y Y)`.
-- Checked the nonattained-edge corollary: `F_Theta=0` gives `lambda_Y->0`; a fixed-constant near-minimal upper bound would then make `L=o(Y)`, contradicting the upgraded corridor.
-
-No arithmetic counterexample or prior-art collision was found. Accept after the four clarifications above.
+No blocking issue remains.
