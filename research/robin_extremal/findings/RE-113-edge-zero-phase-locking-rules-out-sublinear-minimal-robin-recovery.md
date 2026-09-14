@@ -16,7 +16,7 @@ and shows that recovery from an adaptive positive Robin state cannot occur faste
 L:=V-Y\gg_\Theta h(C)Y^{2-\Theta}\log Y.
 \]
 
-If a short recovery is within a constant factor of that scale, `RE-112` extracts a positive-mass packet of first-layer primes saturating the favorable `Y^Theta` Chebyshev envelope. The scalar envelope still forgets the phase of the zeros that can actually contribute at order `x^Theta`.
+If a short recovery is within one fixed constant factor of that scale, `RE-112` extracts a positive-mass packet of first-layer primes saturating the favorable `Y^Theta` Chebyshev envelope. The scalar envelope still forgets the phase of the zeros that can actually contribute at order `x^Theta`.
 
 Retaining that phase changes the frontier. The fixed off-critical zero-density estimate already used in `RE-112` makes the reciprocal coefficients on every fixed strip `Re rho>=sigma_0>1/2` absolutely summable. After normalizing the explicit formula by `x^Theta`, every zero with `Re rho<Theta` dies by dominated convergence. What remains is the uniformly convergent edge profile
 
@@ -29,7 +29,7 @@ F_\Theta(u)
 }
 \]
 
-with zeros counted with multiplicity. It controls both the ordinary Chebyshev error and the full CA event sweep:
+with zeros counted with multiplicity. Conjugate zeros are both present, so the absolutely convergent series pairs to a real-valued function for real `u`. It controls both the ordinary Chebyshev error and the full CA event sweep:
 
 \[
 \boxed{
@@ -57,7 +57,7 @@ Consequently, if the first recovery is genuinely sublinear, `L=o(Y)`, every cros
 \boxed{M_+(C,D)=o(Y^\Theta)}
 \]
 
-whenever the scalar `RE-112` minimum itself is sublinear, and hence
+and hence
 
 \[
 \boxed{
@@ -67,7 +67,7 @@ L
 }
 \]
 
-Thus **a sublinear adaptive recovery cannot saturate the finite-edge lower scale of `RE-112`**. Any fixed-constant near-minimal family under the standing short-recovery hypothesis `L<=Y` is forced into the opposite regime:
+Thus **a sublinear adaptive recovery cannot saturate the finite-edge lower scale of `RE-112`**. Any unbounded family satisfying a fixed-constant near-minimal upper bound under the standing short-recovery hypothesis `L<=Y` is forced into the opposite regime:
 
 \[
 \boxed{
@@ -80,7 +80,7 @@ Thus **a sublinear adaptive recovery cannot saturate the finite-edge lower scale
 }
 \]
 
-If the zero edge is not attained, then `F_Theta` is identically zero and such a near-minimal family is impossible altogether. The finite-edge problem has therefore sharpened from a generic `Y^Theta` saturation packet to an **edge-attainment and phase-locking condition at the adaptive selector itself**.
+If the zero edge is not attained, then `F_Theta` is identically zero and such a fixed-constant near-minimal family is impossible altogether. The finite-edge problem has therefore sharpened from a generic `Y^Theta` saturation packet to an **edge-attainment and phase-locking condition at the adaptive selector itself**.
 
 ## 1. Representation gate: project the source onto the extreme zero face
 
@@ -200,7 +200,7 @@ so the same profile controls the complete CA staircase, including left limits:
 \tag{8}
 \]
 
-The `o(1)` in (6)--(8) is a genuine global asymptotic, hence is uniform after imposing a sufficiently large lower cutoff. No claim of absolute convergence is made for the full classical zero sum; absolute summability is used only on the fixed high strip where (1) applies.
+The `o(1)` in (6)--(8) is a genuine global asymptotic. Equivalently, each remainder may be written as `r(x)` with `sup_(x>=X)|r(x)|->0` as `X->infinity`; this is the uniform tail form used below on moving recovery intervals. No claim of absolute convergence is made for the full classical zero sum; absolute summability is used only on the fixed high strip where (1) applies.
 
 ## 3. The adaptive selector locks Robin height to the edge phase
 
@@ -319,24 +319,33 @@ F_\Theta(\log Y)=o(1).
 \tag{19}
 \]
 
-For every crossed event with positive forward defect, `u_e in [Y,V]=Y+o(Y)`. Equation (8) first gives `eta_e asy Y`; hence
+For every crossed event with positive forward defect, `u_e in [Y,V]=Y+o(Y)`. Write (8) at left limits as
 
 \[
-\log\eta_e-\log Y=o(1).
+\Phi(x^-)=x-x^\Theta\bigl(F_\Theta(\log x)+r(x)\bigr),
+\qquad
+\sup_{x\ge X}|r(x)|\to0.
+\tag{20}
 \]
 
-Uniform continuity of `F_Theta`, together with (19), gives
+Boundedness of `F_Theta` and `Theta<1` first imply from `u_e=Phi(eta_e^-)=Y+o(Y)` that `eta_e asy Y`, uniformly over crossed events. Hence
+
+\[
+\log\eta_e-\log Y=o(1)
+\]
+
+uniformly. Uniform continuity of `F_Theta`, together with (19), then gives
 
 \[
 F_\Theta(\log\eta_e)=o(1)
 \]
 
-uniformly over all crossed events. Applying (8) at the event left limit now yields
+uniformly over the crossed events; the uniform tail form of `r` gives the same for `r(eta_e)`. Consequently
 
 \[
 \eta_e-u_e
 =
-\eta_e^\Theta\bigl(F_\Theta(\log\eta_e)+o(1)\bigr)
+\eta_e^\Theta\bigl(F_\Theta(\log\eta_e)+r(\eta_e)\bigr)
 =o(Y^\Theta)
 \]
 
@@ -346,7 +355,7 @@ uniformly, and therefore
 \boxed{
 M_+(C,D)=o(Y^\Theta).
 }
-\tag{20}
+\tag{21}
 \]
 
 The exact one-sided budget from `RE-110` is
@@ -355,10 +364,10 @@ The exact one-sided budget from `RE-110` is
 L M_+(C,D)
 \ge
 (1+o(1))hY^2\log Y.
-\tag{21}
+\tag{22}
 \]
 
-Combining (20)--(21),
+Combining (21)--(22),
 
 \[
 \boxed{
@@ -368,18 +377,18 @@ L
 =
 \omega(\lambda_Y Y).
 }
-\tag{22}
+\tag{23}
 \]
 
 This is strictly stronger than the scalar `RE-112` corridor on every genuinely sublinear recovery. The improvement is qualitative rather than a new fixed power: the missing factor is exactly the inverse smallness of the edge phase selected by the Robin state.
 
-## 5. Near-minimal finite-edge recovery must be macroscopic and edge-amplitude
+## 5. Fixed-constant near-minimal finite-edge recovery must be macroscopic and edge-amplitude
 
 Consider an unbounded family of adaptive witnesses whose first recoveries satisfy the standing short condition
 
 \[
 L\le Y
-\tag{23}
+\tag{24}
 \]
 
 and a fixed-constant near-minimal upper bound
@@ -389,14 +398,14 @@ L
 \le
 K\,hY^{2-\Theta}\log Y
 =K\lambda_Y Y
-\tag{24}
+\tag{25}
 \]
 
-for one fixed `K`. If `lambda_Y` had a subsequence tending to zero, (24) would make that recovery sublinear, contradicting (22). Hence
+for one fixed `K`. If `lambda_Y` had a subsequence tending to zero, (25) would make that recovery sublinear, contradicting (23). Hence
 
 \[
 \liminf\lambda_Y>0.
-\tag{25}
+\tag{26}
 \]
 
 Together with the upper bound (14),
@@ -407,26 +416,26 @@ Together with the upper bound (14),
 \qquad
 h(C)\asymp_{\Theta,b,K}\frac{Y^{\Theta-1}}{\log Y}.
 }
-\tag{26}
+\tag{27}
 \]
 
-The lower corridor (17), (23), and (26) then give
+The lower corridor (17), (24), and (27) then give
 
 \[
 \boxed{L\asymp_{\Theta,b,K}Y.}
-\tag{27}
+\tag{28}
 \]
 
 Finally the phase lock (13) shows
 
 \[
 \boxed{F_\Theta(\log Y)\asymp_{\Theta,b,K}1}
-\tag{28}
+\tag{29}
 \]
 
 with the recovery-favorable positive sign.
 
-Thus the `RE-112` near-minimal first-layer packet cannot live on a small-amplitude sublinear recovery. If it occurs infinitely often at all, the selected Robin peaks themselves must be of the full finite-edge spectral size and the recovery must consume a macroscopic fraction of the logarithmic scale.
+Thus the `RE-112` fixed-constant near-minimal first-layer packet cannot live on a small-amplitude sublinear recovery. If it occurs infinitely often at all, the selected Robin peaks themselves must be of the full finite-edge spectral size and the recovery must consume a macroscopic fraction of the logarithmic scale.
 
 There is an immediate edge-attainment corollary. If no zeta zero satisfies `Re rho=Theta`, then
 
@@ -434,7 +443,7 @@ There is an immediate edge-attainment corollary. If no zeta zero satisfies `Re r
 F_\Theta\equiv0.
 \]
 
-Equation (13) gives `lambda_Y->0` on every adaptive family, so (24) would force `L=o(Y)` and contradict (22). Therefore
+Equation (13) gives `lambda_Y->0` on every adaptive family, so (25) would force `L=o(Y)` and contradict (23). Therefore
 
 \[
 \boxed{
@@ -442,18 +451,18 @@ Equation (13) gives `lambda_Y->0` on every adaptive family, so (24) would force 
 \Longrightarrow
 \exists\rho:\ \Re\rho=\Theta.
 }
-\tag{29}
+\tag{30}
 \]
 
 This is stronger than merely asking for a `Y^Theta` Chebyshev saturation packet: the rightmost zero line must exist, its almost-periodic phase must be positive at the selected logarithmic scale, and the Robin peak must already have edge-sized height.
 
 ## 6. Prior-art boundary and the new source target
 
-The explicit-formula spectral expansion and almost-periodic organization of normalized prime-number-theorem errors are classical themes. Wintner's limiting-distribution work and the modern Akbary--Ng--Shahabi framework treat almost-periodic prime-counting error terms. No novelty is claimed for representing an explicit-formula error by zero phases, nor for the general theory of almost-periodic functions. The edge profile here is obtained directly from the same truncated explicit formula and Ingham zero-density input already used in `RE-112`; the new line-specific content is the coupling of that extreme-face profile to the exact adaptive Robin selector and the one-sided CA recovery budget.
+The explicit-formula spectral expansion and almost-periodic organization of normalized prime-number-theorem errors are classical themes. Wintner's limiting-distribution work and the modern Akbary--Ng--Shahabi framework are conceptual prior-art boundaries for almost-periodic prime-counting error terms. Their general limiting-distribution theory is not being invoked as the exact uniform finite-edge expansion (6)--(8). That expansion is derived here directly from the specific high-strip reciprocal summability established in `RE-112`, and no novelty is claimed for the general idea that explicit-formula zero phases organize prime-counting errors.
 
 A prior-art audit did not find a theorem imposing this selector-conditioned phase lock or deriving the sublinear anti-saturation consequence for colossally abundant Robin recovery. Akbary--Ng--Shahabi concerns limiting distributions of classical prime-number-theory errors rather than CA-selected inter-block recoveries; recent work on Chebyshev-prime phase statistics likewise does not impose the adaptive Robin selector.
 
-The finite-edge frontier therefore splits more sharply than in `RE-112`. A scalar `Y^Theta` envelope is no longer enough to model a fast selected recovery. Sublinear recoveries must pay an unbounded factor beyond the scalar lower scale. Near-minimal recoveries, if they exist, are forced into a **macroscopic edge-amplitude phase-lock regime**. The next useful source theorem should attack recurrence of the joint condition
+The finite-edge frontier therefore splits more sharply than in `RE-112`. A scalar `Y^Theta` envelope is no longer enough to model a fast selected recovery. Sublinear recoveries must pay an unbounded factor beyond the scalar lower scale. Fixed-constant near-minimal recoveries, if they exist, are forced into a **macroscopic edge-amplitude phase-lock regime**. The next useful source theorem should attack recurrence of the joint condition
 
 \[
 F_\Theta(\log Y)\asymp1,
