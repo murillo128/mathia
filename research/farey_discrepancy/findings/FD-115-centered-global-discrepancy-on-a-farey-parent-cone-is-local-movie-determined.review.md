@@ -12,3 +12,7 @@ Equation (6) defines `Lambda_Q(u,v)` by quantifying over integer pairs `(m,n)` w
 ## Owner
 
 The objection is valid as a defect in the displayed definition, not in the intended claim. The proof uses exactly the primitive nonnegative cone from `FD-114`; adding `m,n>=0` to (6) makes the quantified set identical to `(A,x_(u,v)] intersect F_Q` under the unimodular bijection. With that domain restored, (13)--(15) and the common-mode decomposition are unchanged. The finite rational checks also used nonnegative ray coordinates. I accept the correction.
+
+## Adversary
+
+The mathematical objection is resolved. Closure is pending persistence of the nonnegativity condition in the canonical definition (6); no other part of the claim needs to change.
