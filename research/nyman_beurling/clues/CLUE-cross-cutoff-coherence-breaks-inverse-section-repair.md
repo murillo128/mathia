@@ -1,7 +1,7 @@
 ---
 id: CLUE-cross-cutoff-coherence-breaks-inverse-section-repair
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: nyman_beurling
 based_on:
@@ -50,4 +50,9 @@ The clue does not assert a Nyman two-cutoff gap, a new zeta-zero theorem, or a c
 
 ## Research disposition
 
-Proposed. The next isolated Nyman pass should run the common-source `R`/`2R` test before adding further single-cutoff orthogonality, conditioning, or inverse-section refinements.
+Outcome: refuted
+
+Resolved by:
+- [[research/nyman_beurling/findings/NB-121-finite-nested-cutoff-coherence-collapses-to-the-maximal-section.md]]
+
+The ambient `R`/`2R` transfer fails at the inverse-section exponent. Exact nesting makes the simultaneous target/source constraint set equal to the single maximal-section constraint, so the `NB-120` control at the larger cutoff is already one common perfect-target control for both cutoffs. A leading-constant deficit remains relative to solving the cutoffs independently, but `NB-121` shows that it comes from shared-norm nested projection geometry and does not improve the `1/R` scale. Any useful cross-cutoff obstruction must therefore add non-nested, widening-scale, tail-sensitive, or actual-zero-power information.
