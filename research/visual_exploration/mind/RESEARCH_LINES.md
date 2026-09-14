@@ -14,32 +14,32 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Determine the real-elliptope scale on the centered symmetric-taper prime matrices
+## Determine the Ising scale of the centered symmetric-taper prime Hamiltonian
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`, `MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization`.
 
-VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quadratic optimum. VIS-214 identifies cycle holonomy as the exact gauge-invariant envelope obstruction, VIS-215 accumulates it through fractional weighted simple-cycle packing, and VIS-216 adds the normalized magnetic-Laplacian relaxation.
+VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quadratic optimum. VIS-214--VIS-221 build exact holonomy and progressively stronger static relaxations; VIS-222 shows through the complex symmetric Grothendieck inequality that the full correlation SDP is a universal constant-factor surrogate for the exact torus objective.
 
-VIS-217--VIS-220 close the normalized magnetic and simple-cycle certificate branches: both remain on the coefficient-envelope scale in the strictly subcritical prime regime. VIS-221 opens the full correlation SDP, and VIS-222 makes its objective scale decisive through the complex symmetric Grothendieck inequality:
+VIS-223 removes the observation-origin phase for midpoint-symmetric tapers. After midpoint centering and diagonal gauge, the canonical Hermitian matrix becomes a real symmetric signed ratio-shell matrix `B`, and the complex correlation SDP collapses exactly to the real elliptope.
 
-`M_abs(A) <= U_abs(A) <= K_gamma^C M_abs(A)`, `K_gamma^C<=8/pi-1`.
+VIS-224 removes one more representation degree of freedom at the level of **coarse asymptotic scale**. Define
 
-Thus the SDP is a universal constant-factor surrogate for the exact torus objective, not merely an upper certificate of unknown multiplicative quality.
+`I_abs(B)=max_(epsilon_i in {+1,-1}) |epsilon^T B epsilon|`.
 
-VIS-223 then removes a representation degree of freedom for the canonical symmetric tapers. Writing the taper around its midpoint gives
+For every midpoint-symmetric instance,
 
-`kappa_v(u)=exp(iu/2)[C_v(u)+iS_v(u)]`.
+`I_abs(B) <= M_abs(A) <= U_abs^R(B) <= K_gamma^R I_abs(B)`,
 
-The factor `exp(iu/2)` is pure vertex gauge. If `v(x)=v(1-x)`, then `S_v=0`, so after diagonal switching the canonical Hermitian matrix becomes a **real symmetric signed ratio-shell matrix** `B`. For every real symmetric objective, taking the real part of a complex correlation matrix preserves positive semidefiniteness and the diagonal, hence
+with the universal real symmetric Grothendieck bound `K_gamma^R<2.188`. Therefore boundedness or divergence after Haar-RMS normalization is the same for the binary Ising optimum, the exact continuous-phase torus optimum and the full real SDP, up to a fixed factor.
 
-`U_abs(A)=U_abs(B)=max_(X in E_n^R)|Tr(BX)|`.
+The live static question is consequently the prime-specific asymptotic scale of
 
-The SDP therefore lives exactly in the ordinary real elliptope for midpoint-symmetric tapers. The torus variables remain continuous `U(1)` phases; only the coefficient matrix and SDP relaxation become real. For the quadratic taper the remaining edge signs are explicit shells determined by the zeros of `12[2 sin(u/2)-u cos(u/2)]/u^3`, and cycle holonomy reduces from general `U(1)` phase to `+-1` sign parity.
+`I_abs(B_(y,H))/sqrt(R_v(y,H))`.
 
-The live static question is now the prime-specific asymptotic scale of this **real signed elliptope value** relative to `sqrt(R_v)`. A generic complex-phase null is not representation-matched to the symmetric-taper branch because it injects continuous edge phase that midpoint centering removes. Useful controls should preserve edge magnitudes and the signed ratio-shell class before randomizing arithmetic organization.
+For the quadratic taper, `B` is an explicit weighted signed ratio-shell Hamiltonian whose edge signs are determined by the zeros of the centered taper response. Continuous vertex phases and high-rank SDP correlations can improve finite optimizers, but they cannot create an unbounded scale separation from the binary problem.
 
-## Keep representation gauge, coefficient sign geometry, relaxation strength, optimizer recovery and access time separate
+## Keep representation gauge, binary objective scale, optimizer recovery and access time separate
 
-Cycle holonomy decides exact envelope attainability; magnetic spectra, simple-cycle packing and the correlation SDP are progressively stronger static objects. VIS-218 and VIS-220 prove ceilings only for the first two certificate families. VIS-222 proves that the full SDP objective is constant-factor equivalent to the exact unit-modulus optimum for every Hermitian matrix.
+The static bounded-versus-divergent question no longer needs the full continuous torus or SDP. The Ising reduction does **not** identify the exact optimizer or make the binary problem easy, and one-parameter prime-log access time to a near-optimal torus point remains a separate simultaneous-Diophantine problem.
 
-VIS-223 adds a representation audit. For symmetric tapers the apparent continuous edge phase is mostly observation-origin gauge; after centering, the coefficient matrix is real signed and the complex SDP collapses exactly to the real elliptope. High SDP rank can still block exact phase recovery, but generic complex edge-phase frustration is no longer a matched description of this branch. One-parameter prime-log access time remains a separate problem and matters only when converting static torus information into quantitative finite-time recurrence.
+A representation-matched control should preserve edge magnitudes and the real signed-shell class while perturbing arithmetic organization. Generic independent complex edge phases are no longer a faithful null for the midpoint-symmetric branch.

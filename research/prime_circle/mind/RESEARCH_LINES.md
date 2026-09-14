@@ -2,28 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Move beyond the complete absolute one-profile boundary-log singular spectrum
+## Move beyond both the absolute singular spectrum and the diffuse raw-eigenvalue spectrum of the one-profile boundary log
 
-**Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`.
+**Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`, `MI-016-diffuse-independent-dilations-preserve-singular-channels-but-break-eigenvalue-loops`.
 
-PC-224--PC-285 reduce the positive spectral construction to a source-independent cyclic convolution finite section, isolate the modular collision selector and show unconditional matched-control reproduction through the Vinogradov--Korobov range. PC-286--PC-290 show under RH that the exact normalized boundary-log singular-spectrum law classicalizes for every `B=o(sqrt(q))` once the matched control is given the total source cardinality `M_q`.
+PC-224--PC-290 reduce the positive spectral construction to classical source quotients and matched controls. PC-291--PC-294 separate microscopic relation onset, fixed-pair mesoscopic amplitude, diffuse averaged local mass and the universal total Hilbert--Schmidt scale.
 
-PC-291--PC-293 resolve the first local square-root-scale escape. Microscopic residue relations are spectrally negligible; a fixed same-source pair develops order-one normalized operator norm on a mesoscopic band `T~N/log q`; but diffuse source averaging suppresses every local band `T=O(N)` at `N~sqrt(q)` in averaged normalized Frobenius mass. PC-294 then shows that the full normalized Hilbert--Schmidt mass is source-universal and tends to `pi^2/12` for prime and count-matched diffuse controls.
-
-PC-295 closes the remaining absolute spectral-shape branch under the natural diffuseness condition
+PC-295 closes the complete **absolute ordered singular spectrum** under
 
 `(log q)^2 sqrt(q beta_q/N) -> 0`.
 
-For any such source law, the complete ordered singular-value vector of the normalized boundary-log matrix converges in expected `ell^infinity` distance to the deterministic Green sequence
+The normalized boundary-log matrix has singular values converging to the deterministic Green sequence
 
-`s_j^(N)=1/(2 ceil(j/2))`.
+`(1/2,1/2,1/4,1/4,1/6,1/6,...)`,
 
-The fixed low Fourier modes asymptotically orthogonalize under diffuse source dilations, while the full high-frequency remainder becomes operator-small; the limiting sequence is exactly the classical logarithmic Green/single-layer spectrum on the circle. For prime-scale diffuse sources `beta_q=O(log q/q)`, it suffices that `N/(log q)^5->infinity`, so the result includes `N~sqrt(q)` unconditionally. The prime source and count-matched Li-grid control therefore have the same **complete absolute ordered singular-spectrum limit** at the first square-root collision scale.
+for both diffuse prime sources and count-matched controls in the square-root regime.
 
-This closes higher absolute spectral moments, top-edge redistribution and other continuous statistics determined by that ordered singular vector as one-profile prime carriers in this regime. A surviving construction must retain information discarded before absolute singular-value compression: phase/orientation, signed or nonnormal data, joint spectra of several profiles, cross-level/source coupling, exceptional non-diffuse conditioning, or another relational observable. Recomputing another scalar functional of the same absolute spectrum is no longer a live direction.
+PC-296 now closes the most direct nonnormal escape left by that result. In the same diffuseness regime, the normalized spectral radius tends to zero in mean even while the operator norm tends to `1/2`. The fixed low Fourier channels remain almost orthogonal on each side, preserving their singular magnitudes, but the cross-Gram matrix connecting left and right source dilations vanishes. A resolvent argument shows that the Fourier tail cannot resurrect order-one eigenvalues.
 
-## Keep count information, fixed-pair geometry, source averaging, absolute spectrum and pre-spectral relational data separate
+Thus neither absolute singular values nor raw one-profile eigenvalues carry a diffuse prime-specific signal at this scale. The nonnormality is real—nonzero singular spectrum coexists with eigenvalue collapse—but it is reproduced by the matched diffuse controls.
 
-PC-285 is unconditional. PC-286--PC-290 deliberately give the control `M_q` and are RH-conditional in their approach to the square-root boundary. PC-291 separates microscopic relation onset from destination amplitude. PC-292 separates worst-case fixed-pair amplitude from average behavior. PC-293 shows diffuse averaging washes out every local band. PC-294 fixes the aggregate Hilbert--Schmidt mass, and PC-295 fixes the complete absolute ordered singular spectrum under the stronger but still square-root-compatible diffuseness condition.
+A surviving construction must retain information **before these scalar spectral compressions**: a pseudospectral/transient observable with a source-specific theorem, joint spectra of several noncommuting profiles, source-coupled left/right geometry, cross-level relations, or a genuinely non-diffuse source regime. PC-296 does not prove pseudospectral collapse, so that remains a logically open but much more demanding nonnormal route.
 
-The remaining distinction is therefore before or outside that compression. A future claim must identify a source-sensitive phase, orientation, coupling or exceptional source class that is not a function of the one-profile absolute singular values. Neither first resonance, worst-case local norm, total Hilbert--Schmidt mass nor higher absolute one-profile spectral shape can now serve as the averaged prime-specific carrier in the PC-295 regime.
+## Keep fixed-pair geometry, diffuse averaging, singular channels, eigenvalue loops and pseudospectral data separate
+
+PC-292 shows that exceptional fixed pairs can have order-one mesoscopic structure. PC-295 says that diffuse averaging preserves the universal singular channels. PC-296 says that the same averaging breaks the cross-Gram loops required for order-one eigenvalues. These statements are compatible rather than contradictory.
+
+Future work must identify an observable that depends on relational left/right information not already determined by the one-profile singular sequence or the collapsed eigenvalue set. Recomputing another statistic of either scalar spectrum is closed in the PC-295/296 regime.
