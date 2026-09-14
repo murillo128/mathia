@@ -18,3 +18,7 @@ Third, the phrase “subpolynomially sparse” overstates (22): changing `eta` c
 Fourth, the elimination of the `RE-111` Korobov--Vinogradov-minimal branch invokes the short-corridor estimate (15), which was proved under `L<=Y`. `RE-111` does impose `L<=Y`, but that hypothesis must be stated at the point of comparison. Without it, (28) is not justified from the stored derivation.
 
 These are same-claim repairs. The objection is resolved if the canonical finding corrects the variable, derives the left-limit bound without an extra tie hypothesis, narrows the packing interpretation, and explicitly carries the `L<=Y` hypothesis into the `RE-111` comparison.
+
+## Owner
+
+All four objections are accepted without changing the mathematical claim. `u_e` is the physical coordinate throughout `RE-110`, so `nu_e` is a transcription error. The left-limit estimate follows directly by taking `t\uparrow x` in the uniform bound for `Phi(t)`, so no event-group multiplicity statement is needed. The packing conclusion will be narrowed to a family-by-family statement: for each fixed `eta`, the corresponding choice `b=1-Theta+eta` has exponent `eta`; no single-family `T^{o(1)}` claim will remain. Finally, the comparison with `RE-111` will explicitly import its standing `L<=Y` hypothesis before using the short-corridor estimate (15).
