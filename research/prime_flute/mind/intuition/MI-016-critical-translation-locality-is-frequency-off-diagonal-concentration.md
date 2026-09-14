@@ -1,23 +1,39 @@
-# MI-016 — Critical translation locality is frequency-off-diagonal concentration
+# MI-016 — Critical translation locality is a seam-normalized raw Fourier-coupling test
 
-**Evidence level:** exact necessary-condition reduction from [PF-337](../../findings/PF-337-critical-translations-expose-the-frequency-off-diagonal-mass-of-the-normalized-pant-insertion.md), strengthened on the finite-boundary subsequence by [PF-338](../../findings/PF-338-finite-boundary-critical-translations-force-total-half-cuff-mixing-to-vanish.md). No pant-matrix lower bound, concentration theorem or direct-angle endpoint is claimed.
+**Evidence level:** exact necessary-condition reduction from [PF-337](../../findings/PF-337-critical-translations-expose-the-frequency-off-diagonal-mass-of-the-normalized-pant-insertion.md)--[PF-339](../../findings/PF-339-half-cuff-invariance-forces-raw-symmetric-pant-fourier-coupling-below-seam-width.md). No raw pant-energy lower bound, concentration theorem or direct-angle endpoint is claimed.
 
-PF-336 reduces completed polar translation transport to the Hilbert--Schmidt commutator of the normalized pant insertion `K=Q_L^(-1/2) Lambda_LL Q_L^(-1/2)`. PF-337 diagonalizes the translation action and identifies exactly what this commutator measures:
+PF-336 reduces completed polar translation transport to the Hilbert--Schmidt commutator of the normalized pant insertion `K=Q_L^(-1/2) Lambda_LL Q_L^(-1/2)`. PF-337 diagonalizes the translation action:
 
 `||[K,tau_t]||_(S2)^2 = sum_(j,k) 4 sin^2((xi_j-xi_k)t/2) |K_(jk)|^2`.
 
-Averaging over the positive-length PF-328 critical interval produces a nonnegative weight on every Fourier matrix coefficient. Any fixed physical-frequency separation receives a uniform positive weight, so an `o(1)` translation commutator forces the Hilbert--Schmidt mass at every fixed nonzero physical-frequency separation to vanish.
+Averaging over the positive-length critical interval turns locality into a positive frequency-mixing statement. PF-338 then makes the finite-boundary subsequence much stronger: when `r_n=h_(n+1)/h_n -> 0`, the whole retained odd-offset sector is controlled by half-cuff translation `H_n=tau_(ell_n/2)`, so the route requires
 
-PF-338 makes the finite-boundary test substantially stronger. Along `r_n=h_(n+1)/h_n -> 0`, every retained **odd** Fourier offset has a common positive lower weight, including offsets growing proportionally to the cuff length. If `H_n=tau_(ell_n/2)` is half-cuff translation, then the whole odd sector is exactly its cross-parity block and
+`||[K_n,H_n]||_(S2)=o(1)`,
 
-`avg_(t in I_n) ||[K_n,tau_t]||_(S2)^2 >= (c_*/4)||[K_n,H_n]||_(S2)^2`.
+equivalently vanishing cross-parity mass `||P_(n,+)K_nP_(n,-)||_(S2)=o(1)`.
 
-Hence the translation route requires `||[K_n,H_n]||_(S2)=o(1)`, equivalently `||P_(n,+) K_n P_(n,-)||_(S2)=o(1)`. The old nearest-neighbor test is only one component of this stronger aggregate obstruction.
+PF-339 removes most of the normalized-operator bookkeeping from the obstruction side. In the symmetric seam-parity channel, PF-326 gives for every fixed nonzero Fourier mode
 
-There is a basis-free falsifier. Because `H_n` is an involution, `||K_n-H_nK_nH_n||_(S2)=||[K_n,H_n]||_(S2)`. Thus one retained-low unit profile whose normalized pant energy differs by order one from the energy of its half-cuff translate kills the PF-336 translation route without resolving individual Fourier matrix entries.
+`q_(n,+)(k)=w_n(1+o(1))`,
 
-The reusable point is that critical “quasilocality” is now a **positive frequency-mixing statement** with an especially cheap geometric test on the finite-boundary subsequence. The first obstruction target should be the aggregate half-cuff defect; only if it vanishes is it useful to resolve surviving even-offset/fixed-physical-separation mass.
+with seam half-width `w_n asy P_n^(-1)`. Hence for every fixed odd-offset pair `j-k`,
 
-This remains separate from physical concentration of a completed reference packet. Translation compatibility does not by itself localize a packet in space, because spatial cutoffs need not commute with `Q`.
+`(K_n)_(jk)=lambda_(n;jk)^(+)/w_n (1+o(1))`.
 
-**Boundary.** PF-337--PF-338 give necessary conditions, not sufficiency. PF-338 is restricted to the finite-boundary subsequence and fixed physical low band; even-offset mass and other translation defects can still survive after the half-cuff cross block vanishes. A successful commutator still does not establish the final low/high correlation estimate or reference-packet concentration.
+The half-cuff gate therefore forces the **raw** pant DtN coupling
+
+`lambda_(n;jk)^(+) = o(w_n) = o(P_n^(-1))`.
+
+This is a much cheaper falsifier than estimating a large matrix. The fixed pair of modes `1,2` already suffices: if their raw symmetric-channel coupling is merely comparable to seam width, the entire PF-336 translation route fails on the finite-boundary subsequence.
+
+PF-339 also gives a basis-free two-mode witness. For explicit normalized cosine combinations `f_(n,+),f_(n,-)` exchanged by half-cuff translation, the route requires
+
+`|E_n^(+)(f_(n,+))-E_n^(+)(f_(n,-))| = o(w_n)`.
+
+The pair is geometrically aligned with the common-perpendicular corridor: one profile is nonzero at the corridor foot while its half-cuff mate vanishes quadratically there. But corridor asymmetry is only motivation until the **total** one-cusp-pant energy contrast is bounded below at seam-width scale.
+
+The live PDE problem is therefore scalar and quantitative: prove that one explicit symmetric-parity two-mode energy contrast has nonzero limsup after division by `w_n`. Only if this test is `o(w_n)` is it useful to return to higher odd modes, surviving even-offset/fixed-physical-separation mass, or a positive full-commutator estimate.
+
+This remains separate from physical concentration of a completed reference packet. Translation compatibility does not localize a packet in space because spatial cutoffs need not commute with `Q`.
+
+**Boundary.** PF-337--PF-339 give necessary conditions only. PF-338--PF-339 apply on the source-realized finite-boundary subsequence and retained physical-low space. PF-339 does not prove the raw energy contrast is large; the unresolved calculation is exactly whether the actual one-cusp-pant DtN response can satisfy the unusually small `o(w_n)` threshold.

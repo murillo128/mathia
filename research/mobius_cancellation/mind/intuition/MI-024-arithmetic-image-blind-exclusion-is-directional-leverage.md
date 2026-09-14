@@ -1,23 +1,27 @@
-# MI-024 — Arithmetic-image blind exclusion is directional leverage, not a uniform decoder norm
+# MI-024 — Arithmetic-image blind exclusion is directional leverage, and localization must control that direction
 
-**Evidence level:** exact reduction and certificate from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md). No theorem is claimed that the required rank/leverage alternative actually holds for the arithmetic shell matrix.
+**Evidence level:** exact variational reduction/certificate from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened by the exact separated-prime matched control [MC-282](../../findings/MC-282-separated-simplex-leverage-failure.md). No theorem is claimed that the required rank/leverage alternative holds for the actual tight arithmetic shell matrix.
 
 Let `A` be the degree-`m` feature matrix of the actual fixed-weight arithmetic shell and let `v=1_Z` be the virtual blind feature row. Instead of constructing a scalar decoder that is uniformly sharp on the full Boolean cube, optimize only on the arithmetic image:
 
-`C = inf_{v^* a=1} ||A a||_2^2`.
+`C = inf_(v^* a=1) ||A a||_2^2`.
 
-Every blind row contributes exactly one to this energy, so the blind count satisfies `A_y(t)<=C`; in particular `C<1` is an exact blind-exclusion certificate. This uses the same degree-`m` source features as the earlier flat Christoffel detector and can only improve that detector.
-
-The dual quantity is the minimum signed shell-synthesis cost
+Every blind row contributes exactly one to this energy, so the blind count satisfies `A_y(t)<=C`; in particular `C<1` is an exact blind-exclusion certificate. The dual quantity is the minimum signed shell-synthesis cost
 
 `Lambda = inf{ ||c||_2^2 : A^* c = v }`,
 
-with `C=1/Lambda`. If `v` is outside `ran(A^*)`, then a kernel vector gives a degree-`m` polynomial that vanishes on every actual shell row and equals one at the blind endpoint, so `C=0`. If `v` lies in the row span, then `Lambda=v^*(A^*A)^+v` and blindness is excluded once `Lambda>1`.
+with `C=1/Lambda`. If `v` is outside `ran(A^*)`, then a kernel vector separates the virtual endpoint exactly. If `v` lies in the row span, blindness is excluded once `Lambda>1`.
 
-Thus the surviving low-depth question is **directional endpoint geometry**: the orientation of the blind vector relative to the arithmetic row span, and conditional on membership, its inverse-Gram leverage. A wide matrix or large kernel is not enough; the kernel must have a component in the blind direction.
+MC-282 shows that **even exact absence of blindness does not force this sufficient certificate to succeed** once tight localization is removed. A separated-prime realization of the simplex/Hamming Legendre pattern has no blind pair at all, yet at the same low source depth `m=t+1=3` its synthesis cost is
 
-Generic coefficient-uniform large-sieve/operator-norm control cannot cross this threshold. The row norm forces any uniform bound `||Aa||_2^2<=D||a||_2^2` to have `D>=Z`, while the dual argument yields only `Lambda>=Z/D<=1`. Such a theorem can neither force `Lambda>1` nor prove the rank-increment alternative.
+`Lambda_(3,d)^sep = Z_3(d)/((2^(d-1)-1)(2^d-Z_3(d)))`,
 
-This identifies precisely what the arithmetic-image escape left by MC-280 would need: signed cancellation across actual target rows before scalarization, strong enough to separate the virtual blind endpoint in one distinguished direction. It is not another full-cube approximation problem.
+which is already `13/45<1` at `d=5` and tends to zero like `d^3/(3*4^d)`. The virtual endpoint can therefore be synthesized extremely cheaply from genuinely arithmetic, completely nonblind rows.
 
-**Boundary.** MC-281 gives a rigorous certificate and exact variational reformulation, not an unconditional estimate of `Lambda` or proof that `v` leaves the arithmetic row span. Determining that directional geometry may encode the same exceptional-row arithmetic one is trying to control.
+This sharpens the interpretation of the certificate. Favorable leverage is not a generic consequence of Legendre provenance, reciprocity, a feature surplus, low-degree moment geometry, or even the truth of the desired no-blind conclusion. It is a **stronger directional property** that must be forced by the specific source/target coupling of the live shell.
+
+Generic coefficient-uniform large-sieve/operator-norm control still cannot cross the threshold: the row norm forces any uniform bound `||Aa||_2^2<=D||a||_2^2` to have `D>=Z`, while the dual argument yields only `Lambda>=Z/D<=1`. MC-282 additionally rules out the hope that one could justify `Lambda>1` merely from abstract nonblindness of the arithmetic image.
+
+The surviving theorem is consequently quantitative prime localization. A proof must use a property that the separated simplex realization cannot preserve—most naturally that all target primes occupy the same moving shell `(y,2y]`, or another comparably strong coupling—to show that the virtual endpoint leaves the row span or becomes expensive to synthesize. A source-native arithmetic/operator inverse remains a qualitatively different escape.
+
+**Boundary.** `Lambda<=1` does not imply a blind row; MC-282 is an explicit counterexample. Conversely the separated control says nothing about the actual tight shell. The certificate remains sufficient and potentially useful, but any proof of it must exploit localization-specific arithmetic rather than generic matrix geometry.

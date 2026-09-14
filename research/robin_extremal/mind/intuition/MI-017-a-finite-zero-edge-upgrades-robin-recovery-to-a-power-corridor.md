@@ -1,21 +1,29 @@
-# MI-017 — A finite zero edge upgrades Robin recovery from KV scale to a power corridor
+# MI-017 — A finite zero edge upgrades Robin recovery to the true Theta-scale power corridor
 
-**Evidence level:** exact consequence of [RE-112](../../findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md) using the classical `Theta`-conditioned PNT envelope already persisted there. No contradiction with false RH or density theorem for selected CA blocks is claimed.
+**Evidence level:** exact consequence of the strengthened [RE-112](../../findings/RE-112-finite-zero-edge-forces-power-scale-robin-recovery-corridors.md), using its persisted truncated explicit-formula and off-line zero-density argument. No contradiction with false RH or density theorem for selected CA blocks is claimed.
 
-Let `Theta=sup Re(rho)`. When `Theta<1`, the classical explicit-formula bound `psi(x)-x=O_Theta(x^Theta log^2 x)` transfers to the full CA event sweep. Combining that source envelope with RE-110's exact one-sided workload identity gives, for a positive CA state at logarithmic scale `Y` recovering to a later nonpositive state at `V`,
+Let `Theta=sup Re(rho)`. In the false-RH finite-edge regime `1/2<Theta<1`, RE-112 improves the textbook `x^Theta log^2 x` envelope. A fixed strip strictly to the right of the critical line has sublinear zero density, so its reciprocal-ordinate mass is summable; combining that with the truncated Riemann--von Mangoldt formula yields
 
-`V-Y >>_Theta h(C) Y^(2-Theta) / log Y`
+`psi(x)-x = O_Theta(x^Theta)`.
 
-up to the harmless long-corridor branch.
+The full CA event sweep therefore satisfies `Phi(x)=x+O_Theta(x^Theta)`. Inserting this **true Theta-scale source envelope** into RE-110's exact one-sided recovery workload gives, for a positive CA state at scale `Y` recovering to a later nonpositive state at `V`,
 
-For the adaptive quantitative false-RH witnesses with `h(C) >> Y^(-b)`, this becomes
+`V-Y >>_Theta h(C) Y^(2-Theta) log Y`.
 
-`V-Y >>_(Theta,b) Y^(2-Theta-b) / log Y`.
+For adaptive quantitative false-RH witnesses with `h(C) >> Y^(-b)`, this becomes
 
-Choosing `b=1-Theta+eta` yields almost-linear spacing `Y^(1-eta)/log Y` and at most `O(T^eta log T)` selected blocks with `Y in [T,2T]` for that fixed `eta` family.
+`V-Y >>_(Theta,b) Y^(2-Theta-b) log Y`.
 
-This changes the meaning of the RE-111 packet obstruction. The Korobov--Vinogradov envelope is only the right minimal-recovery currency in the extreme branch `Theta=1`. For every fixed `Theta<1`, an unbounded family of recoveries at the unconditional KV minimum is already impossible: the zero-edge PNT envelope forces a polynomially larger corridor before any same-sign saturation-packet theorem is needed.
+Choosing `b=1-Theta+eta` gives almost-linear spacing `Y^(1-eta) log Y` and fixed-`eta` dyadic packing `O_(Theta,eta)(T^eta/log T)`. The logarithm now helps separation rather than being lost to a coarse PNT envelope.
 
-The reusable split is therefore spectral. **Finite zero edge (`Theta<1`)** moves the frontier to whether additional zero-density/phase or source information can improve or forbid saturation of the `Y^Theta` workload on the CA-selected corridors. **Extreme edge (`Theta=1`)** leaves the unconditional RE-109--RE-111 first-layer KV saturation problem alive.
+RE-112 also sharpens the source-side saturation statement. If a short recovery is within a constant factor of this minimum, then a fixed positive fraction of the crossed physical mass must come from ordinary first-layer primes with
 
-**Boundary.** The exponent `Theta` itself is the classical sharp scale available from zero-edge location alone; improving the corridor exponent requires information beyond the scalar edge. The dyadic packing estimate applies to the fixed quantitative family selected by a chosen `b` (or `eta`), not simultaneously to all witnesses and not as a `T^{o(1)}` theorem for one fixed family.
+`p-vartheta(p) asy Y^Theta`
+
+and the recovery-favorable sign. The required packet has at least `gg h(C)Y^(2-Theta)` distinct primes. Thus improving the finite-edge frontier means ruling out **CA-selected one-sided saturation of the actual Theta-scale prime-source envelope**, not repairing a logarithmic artifact.
+
+This changes the meaning of the RE-111 Korobov--Vinogradov obstruction. The unconditional KV minimum is only the right source scale in the extreme branch `Theta=1`. For every fixed `Theta<1`, the zero-edge source law already forces a polynomially larger recovery corridor; the live question is whether zero density/phase or another selected-corridor coordinate forbids saturation of the `Y^Theta` workload itself.
+
+The reusable split is spectral. **Finite zero edge (`Theta<1`)** gives a genuine power corridor at the sharp source exponent and isolates a same-sign first-layer saturation packet on that scale. **Extreme edge (`Theta=1`)** leaves the unconditional RE-109--RE-111 KV saturation problem alive.
+
+**Boundary.** The exponent `Theta` is the source scale extracted from edge location plus the persisted zero-density input; improving the corridor exponent requires information beyond the scalar edge. The packing estimate is for a fixed quantitative family selected by `b`/`eta`, not a simultaneous `T^(o(1))` theorem for all witnesses.
