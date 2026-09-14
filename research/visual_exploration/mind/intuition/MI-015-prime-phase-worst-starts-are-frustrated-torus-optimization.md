@@ -1,27 +1,33 @@
-# MI-015 — Pointwise worst starts are a prime-phase torus optimization whose exact envelope is controlled by cycle holonomy
+# MI-015 — Prime-phase worst starts are a torus optimization with a fractional cycle-frustration certificate
 
-**Evidence level:** exact finite-dimensional reduction from [VIS-213](../../findings/VIS-213-worst-start-prime-phase-torus-optimization.md) and exact gain-graph envelope criterion from [VIS-214](../../findings/VIS-214-cycle-holonomy-frustration-envelope.md). No asymptotic lower bound beyond the RMS scale, useful recurrence-time bound, or RH consequence is claimed.
+**Evidence level:** exact finite-dimensional reduction from [VIS-213](../../findings/VIS-213-worst-start-prime-phase-torus-optimization.md), exact holonomy criterion from [VIS-214](../../findings/VIS-214-cycle-holonomy-frustration-envelope.md), and exact weighted fractional-packing lower bound from [VIS-215](../../findings/VIS-215-weighted-cycle-frustration-packing.md). No asymptotic lower bound for the actual prime graph, useful recurrence-time bound, or RH consequence is claimed.
 
-For fixed `y,H`, the tapered statistic satisfies
+For fixed `y,H`, the start variable traces a dense prime-phase torus and
 
-`M_v(y;H,T)-1 = z(T)^* A_(y,H) z(T)`, `z_p(T)=exp(iT log p)`.
+`sup_(T>=T_0)|M_v(y;H,T)-1| = max_(|z_p|=1)|z^*A_(y,H)z|`.
 
-Unique factorization makes the finite prime logarithms rationally independent, so the one-parameter flow is dense in the full prime torus. Therefore
+Thus coherent pointwise starts are a finite torus optimization problem, not an existence problem. The long-start variance gives the Haar `L^2` scale of the same objective but does not determine whether the optimum is close to the absolute coefficient envelope.
 
-`sup_(T>=T_0) |M_v(y;H,T)-1| = max_(|z_p|=1) |z^*A_(y,H)z|`
+VIS-214 identifies the exact gauge-invariant obstruction. Vertex phases can switch edge phases, so raw preferred phases are not invariant; products around support cycles are. Exact positive or negative envelope attainment is equivalent to the corresponding cycle holonomies being trivial.
 
-for every fixed starting threshold `T_0`. Pointwise coherent starts are not an existence problem at fixed dimension: every torus neighborhood of a maximizer is revisited arbitrarily late. The real questions are the **size of the torus optimum as `y,H` grow** and the Diophantine access time needed to enter a near-maximizing region.
+VIS-215 quantifies distributed frustration. With edge weights `w_e`, cycle harmonic resistance
 
-The long-start variance is the Haar `L^2` norm of the same torus objective, so the optimum is at least `sqrt(R_v(y,H))`; in the strictly subcritical regime this is `\gtrsim H^-1/2`. That lower bound does not say whether coherent optimization produces order-one or otherwise macroscopic amplification.
+`R(C)=sum_(e in C)1/w_e`,
 
-VIS-214 identifies the exact obstruction to attaining the absolute coefficient envelope. Write each nonzero Hermitian edge coefficient as `w_uv exp(i theta_uv)`. Vertex phases are a gauge action on the edge phases. The positive coefficient envelope is attained iff every cycle has zero holonomy; the negative envelope is attained iff every cycle has the corresponding all-negative holonomy. Otherwise the envelope is strictly unattainable. A cycle `C` with holonomy defect `h_+(C)` gives the explicit positive deficit
+and positive/negative holonomy `H_±(C)`, every torus point satisfies
 
-`B(A)-G(z) >= 2 m(C) [1-cos(h_+(C)/|C|)]`,
+`E_± >= |1-H_±(C)|^2/R(C)`.
 
-and analogously for the negative envelope.
+More importantly, for any fractional cycle packing `lambda_C>=0` obeying `sum_(C contains e)lambda_C<=1`, the cycle rewards add:
 
-Thus the invariant geometry is not the raw preferred phase on an edge but **weighted cycle holonomy after vertex-gauge quotient**. A large torus optimum requires substantial edge weight to remain nearly globally switchable; visible phase disorder on small-weight cycles is irrelevant. Conversely, one heavy frustrated cycle supplies a rigorous coherent-amplification deficit.
+`E_± >= sum_C lambda_C |1-H_±(C)|^2/R(C)`.
 
-The next quantitative theorem should therefore compare a weighted holonomy/frustration scale with the Haar RMS scale and with the relevant recurrence horizon. This cleanly separates three resources: coefficient mass, gauge-invariant frustration, and one-parameter access time.
+Let `P_±` be the optimal values of these linear programs. Then
 
-**Boundary.** Unit-modulus quadratic programming, Kronecker--Weyl recurrence, gain-graph balance and switching are classical. The line-specific content is their exact identification with the actual prime-ratio statistic and its coefficient normalization.
+`max_z |z^*Az| <= B(A)-min(P_+,P_-)`.
+
+This replaces “find one frustrated cycle” with a concrete global certificate. Shared edges cannot be counted twice beyond their capacity, while many overlapping short cycles can contribute fractionally. For an equal-weight `k`-cycle at small holonomy, the one-cycle reward scales like `w h^2/k`, improving the earlier minimum-edge `w h^2/k^2` certificate before any packing gain is used.
+
+The live arithmetic question is now precise: determine the scale of `P_+` and `P_-` for the actual prime coefficient graph and compare it with both the coefficient envelope and Haar RMS. Only after that static geometry is understood does the separate one-parameter access-time problem matter.
+
+**Boundary.** Fractional packing is a lower bound on unavoidable frustration, not an exact formula for the torus optimum. Trees give zero certificate as they should. The cycle/synchronization framework is classical; the current content is its exact normalization for the prime-phase objective and the source-specific asymptotic question it exposes.

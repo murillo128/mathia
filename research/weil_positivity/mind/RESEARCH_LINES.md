@@ -2,28 +2,28 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force genuine mixed-prime curvature before positivity, rather than adding flat linear channels
+## Force genuine mixed-prime curvature or a source-forced degeneracy before positivity
 
 **Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`, `MI-014-nontrivial-zero-modes-screen-the-gamma-tangent-layer`, `MI-015-nonlinear-postprocessing-after-scalarization-cannot-create-a-new-distribution`, `MI-016-exact-weil-square-targets-linearize-while-positive-additive-preservation-cannot-absorb-the-critical-source`, `MI-017-source-native-pole-cancellation-is-rh-complete-but-irreducibly-signed`, `MI-018-exact-weil-square-equality-makes-coarse-scalar-relocalization-exact`, `MI-019-flat-source-covariance-is-gauge-trivial-curvature-is-the-first-escape`.
 
-WP-287--WP-294 close scalar nonlinear post-processing, positive additive preservation, finite dilation-coboundary pole killing, all-integer counting convolution as a localization-preserving route, exact scalar relocalization, and the apparent “coarse coefficients but exact final Weil square” escape. Exact scalar arithmetic recovery is Möbius and restores the reciprocal-zeta zero screen.
+WP-293--WP-295 show that exact scalar or fixed positive Hilbert-valued prime-power recovery exposes one Möbius direction. WP-296 closes finite linear multiplicative-equivariant nonlocal depth by reducing it to operator-valued Dirichlet convolution. WP-297 closes flat site-dependent transport: a rooted multiplicative cocycle is pure gauge, and a parallel metric becomes site-independent after gauge.
 
-WP-295 shows that fixed positive **multi-channel pointwise** recovery does not escape this rigidity. A Hilbert-valued divisor convolution of the logarithmic carrier which vanishes off prime powers has one visible direction `u Lambda`, and its kernel is `u mu`.
+WP-298 closes the remaining **faithful nonparallel pointwise-metric** escape. After the flat gauge reduction, let `B=A*L`, `F(N)=G(N)B(N)` and use arbitrary positive-semidefinite site metrics `Q_N`. Exact scalar readout `||Q_N^(1/2)F(N)||=Lambda(N)` forces `F(N)=0` at every mixed composite whenever `Q_N` is faithful there. WP-295 then gives
 
-WP-296 then closes multiplicative-shift-equivariant linear nonlocality. Every coefficientwise-continuous equivariant linear map is an operator-valued Dirichlet convolution, and every finite linear channel cascade collapses to one effective kernel. WP-295 therefore forces Möbius on the visible endpoint even after arbitrary finite channel depth.
+`B(N)=u Lambda(N)`, `A(N)=u mu(N)`.
 
-WP-297 closes the corresponding flat site-dependent boundary escape. A multiplicative transport cocycle satisfies `C(m,n)=G(mn)G(n)^(-1)` and is exactly gauge-trivial because the multiplicative action is rooted at `1`. Unitary transport leaves the positive norm unchanged; a parallel site-dependent metric becomes one fixed metric after gauge. Flat source-covariant boundary variation therefore carries no new arithmetic invariant.
+Arbitrary basis rotation, noncommutation, poor conditioning or eigenvalues tending to zero do not change exact support. In the pointwise metric class, the only way to delete a nonzero mixed-composite response without Möbius is an actual moving nullspace
 
-The live construction problem is now precise: produce a **non-flat, gauge-invariant mixed-prime response before scalarization** or leave the linear source-covariant category altogether. The smallest linear certificate is nontrivial prime-diamond holonomy; other surviving categories include a source-forced nonparallel metric, additional boundary topology/orbits, nonlinear support-sensitive geometry formed upstream, or a genuinely global finite--archimedean coupling. Any candidate must still survive generalized-prime controls and prove the final sign independently.
+`B(N) in G(N)^(-1) ker Q_N`.
 
-## Treat cancellation, admissibility, localization, recovery architecture, curvature and target exactness as distinct gates
+But arbitrary degeneracy is programmable: a one-dimensional control can encode the desired Mangoldt zero set directly into `Q_N`. A viable metric escape must therefore derive its moving kernel canonically from source geometry and distinguish it from generalized-prime controls before scalarization.
 
-Finite dilation cancellation can remove the leading pole while leaving admissibility RH-equivalent. Counting convolution can make admissibility unconditional while erasing Mangoldt localization. Exact scalar or Hilbert-valued pointwise recovery is uniquely Möbius on the visible channel. Equivariant linear nonlocality is still convolution, and flat site dependence is still only a gauge.
+The cleanest remaining linear category is still **non-flat mixed-prime curvature**, such as nontrivial prime-diamond holonomy. Other genuine category changes are extra boundary topology/orbits, nonlinear support-sensitive structure formed upstream, nonlocal positive forms coupling sites before scalarization, or finite--archimedean constructions. All still need exact Weil normalization and an independent sign theorem.
 
-A future candidate must answer separately: what source transformation is forced; why it is admissible unconditionally; which arithmetic localization survives; where genuinely non-flat mixed-prime information enters; why that information is not present in free generalized-prime clones; and why the final positive quadratic form is exactly the Weil form. Passing one gate by destroying the input needed by the next is not progress.
+## Treat localization, admissibility, curvature/degeneracy and sign as distinct gates
 
-## Use matched controls to distinguish genuine curvature from programmable site dependence
+A construction can solve support by inserting a programmable kernel and thereby contain no arithmetic explanation. Likewise nonzero holonomy only escapes the flat no-go; it does not supply positivity. Future candidates must state which source structure forces the mixed-prime relation or nullspace, why it survives matched generalized-prime controls, how archimedean/polar terms enter, and why the final quadratic form has the Weil sign.
 
-WP-004 remains the exact control showing that breaking multiplicative-shift equivariance can select prime-power support, but its axis selector is generic free-prime geometry and lacks the required global sign completion. WP-297 adds a sharper control: site-dependent transport and metrics that are merely parallel are gauge artifacts, not symmetry breaking.
+## Use matched controls against programmable site dependence
 
-The next candidate should therefore expose an explicit shortest-loop invariant—such as a prime-diamond response—before any determinant, norm or positivity projection. If that invariant vanishes after a canonical gauge, the architecture has fallen back into WP-295--WP-297. If it survives, the separate task is to show that the curvature is Riemann-specific and couples to the archimedean place strongly enough to support Weil positivity.
+Faithful site variation is now known to be support-neutral in the flat linear class. Nonfaithful variation can program the answer. The next pointwise metric candidate must therefore expose an independently derived gauge-invariant degeneracy pattern, not merely fit sitewise weights to `Lambda`; otherwise the search should move to non-flat or genuinely global categories.

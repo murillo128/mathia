@@ -1,29 +1,21 @@
-# MI-016 — The seam-normalized two-pant translation test is exact, and the prime-flute tail fails it
+# MI-016 — Both translation locality and the sharp physical direct-angle route are obstructed
 
-**Evidence level:** exact necessary-condition reduction from PF-337--PF-340 and decisive tail obstruction from [PF-341](../../findings/PF-341-thin-pant-self-dtn-contrast-has-common-positive-sign.md). This kills the PF-336 normalized-insertion translation route; it does not prove the completed-angle lower bound sought by the independent direct Hilbert--Schmidt route.
+**Evidence level:** exact necessary-condition reduction and tail obstruction from PF-337--PF-341, sharpened by the direct canonical-correlation obstruction [PF-342](../../findings/PF-342-sharp-physical-cutoff-forces-order-one-direct-angle-correlation.md). This rules out the current sharp fixed physical `L/H` split as a compact/Hilbert--Schmidt completed-angle architecture; it does not rule out a materially different splitting or observable.
 
-PF-336 reduces completed polar translation transport to a Hilbert--Schmidt commutator of the normalized pant insertion. PF-337 diagonalizes the translation action, PF-338 compresses the finite-boundary odd sector to half-cuff cross-parity mass, and PF-339 converts the normalized condition into a raw seam-width test: every fixed odd-offset symmetric-channel coupling must be `o(w_n)`.
+PF-337--PF-341 show that the normalized-insertion translation route fails because the symmetric two-pant self-DtN contrast required to be `o(w_n)` is instead positive on both adjacent pants and diverges relative to the seam scale.
 
-PF-340 identifies the exact scalar hidden by that channel. The symmetric response on cuff module `n` averages the self-DtN blocks of the two adjacent pant cores, so the explicit two-mode witness is
+PF-342 shows that bypassing translation and attacking the direct angle does not save the same hard physical split. With cutoff `kappa` and boundary period `L`, the adjacent lattice frequencies
 
-`Delta_n^sym = (Delta_n^-+Delta_n^+)/2`.
+`xi_L=2pi floor(kappa L/(2pi))/L`,
 
-The translation route therefore requires `Delta_n^-+Delta_n^+=o(w_n)`. Before PF-341 this left a genuine cancellation loophole because the right-pant geometry alone could not control the left response.
+`xi_H=xi_L+2pi/L`
 
-PF-341 closes that loophole. For the half-cuff-exchanged pair `f_+=(c_2+c_1)/sqrt 2`, `f_-=(c_2-c_1)/sqrt 2`, the collapsing finite-finite corridor sees `f_+` with nonzero boundary value but `f_-` with a quadratic zero. On a tail pant with boundary period `L` and finite-finite separation `s`,
+lie on opposite sides of the cutoff while converging to each other. On the collapsing finite--finite corridor their normalized cosine traces are therefore almost identical. The symmetric combination has nonzero corridor value and DtN energy of order `1/(sL)`; the difference inherits the `2pi/L` frequency gap and has only `O(1+1/(sL^3))` energy. Since `sL->0`, polarization forces the low/high matrix element itself to be order `1/(sL)`.
 
-`<f_+,Af_+> >= c/(sL)`,
+Zero twist gives the same sign on the two adjacent pants. In the symmetric seam-parity channel the seam energy is negligible on this fixed band, so the raw low/high canonical correlation stays above a constant `rho_0`. Choosing tail modules separated by at least three indices yields arbitrarily many orthogonal witnesses. Hence the direct angle has singular values bounded below uniformly along arbitrarily large finite sections and is not compact.
 
-while the explicit `f_-` extension has singular cost only `O(1/(sL^5))` plus a bounded remainder. Since `sL->0`, the contrast is eventually positive. Applied on both sides of cuff `n`,
+The reusable mechanism is a **hard-boundary aliasing obstruction**: a fixed physical threshold separates two Fourier modes whose physical frequencies differ by the vanishing lattice spacing, while the local PDE cannot distinguish them on the collapsing region. Compact off-diagonal angle decay is therefore incompatible with that sharp partition.
 
-`Delta_n^+ >= c/(s_n L_n)`, `Delta_n^- >= c/(s_(n-1)L_n)`.
+A viable continuation must change a load-bearing part of the representation. A smooth or scale-dependent decomposition would have to prevent adjacent near-identical modes from becoming opposite hard sectors and then rederive the completed operator/trace-ideal statement in that new geometry. Alternatively the final observable must not require compact suppression of this canonical low/high correlation.
 
-Thus the two adjacent terms have the **same positive sign**, and
-
-`Delta_n^sym / w_n \gtrsim P_n^1.475/log P_n -> infinity`.
-
-The necessary `o(w_n)` condition fails by a diverging factor on the whole tail. The normalized-insertion translation-locality architecture is therefore not merely unproved; it is falsified by the explicit lowest two-mode seam witness.
-
-The reusable lesson is representation-specific: once a completed translation criterion is reduced to a raw local PDE response, one must test the exact bidirectional scalar produced by the cut geometry. Here that scalar survives completion but is forced large by a corridor zero/nonzero dichotomy. Returning to higher odd modes cannot repair the failed necessary condition.
-
-**Boundary.** PF-341 does not localize a completed packet in physical space and does not rule out the independent PF-318/PF-320 direct Hilbert--Schmidt upper-bound route. Translation compatibility and direct angle control are now separate branches rather than two versions of the same endpoint.
+**Boundary.** PF-342 is specific to the canonical sharp fixed physical cutoff and its completed angle. It does not prove that every frequency decomposition or every geometric spectral invariant has the same obstruction.

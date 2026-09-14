@@ -1,27 +1,25 @@
-# MI-019 — Flat source covariance is gauge-trivial; genuine escape starts at mixed-prime curvature
+# MI-019 — Flat covariance and faithful site metrics cannot create Weil support; escape starts at curvature or source-forced nullspace
 
-**Evidence level:** exact linear classification from [WP-295](../../findings/WP-295-hilbert-valued-prime-power-support-forces-one-mobius-direction.md), [WP-296](../../findings/WP-296-multiplicative-shift-equivariant-nonlocal-couplings-are-dirichlet-convolution.md), and [WP-297](../../findings/WP-297-flat-multiplicative-boundary-cocycles-are-gauge-trivial.md). This closes a representation class; it does not construct the non-flat geometry or prove Weil positivity.
+**Evidence level:** exact linear classification from [WP-295](../../findings/WP-295-hilbert-valued-prime-power-support-forces-one-mobius-direction.md), [WP-296](../../findings/WP-296-multiplicative-shift-equivariant-nonlocal-couplings-are-dirichlet-convolution.md), [WP-297](../../findings/WP-297-flat-multiplicative-boundary-cocycles-are-gauge-trivial.md), and [WP-298](../../findings/WP-298-faithful-nonparallel-site-metrics-cannot-evade-mobius-support-rigidity.md). This closes a representation class; it does not construct the surviving geometry or prove Weil positivity.
 
-Exact finite Weil localization is much more rigid than “use multiple channels” or “mix sites nonlocally.” WP-295 shows that a Hilbert-valued divisor convolution of the logarithmic carrier which vanishes off prime powers has only one visible direction:
+Exact finite Weil localization is rigid under fixed positive channels and equivariant linear depth. WP-295 forces one visible direction `u Lambda` with upstream kernel `u mu`; WP-296 shows finite multiplicative-equivariant linear networks collapse to one operator-valued Dirichlet convolution.
 
-`F(N)=u Lambda(N)`, `A(N)=u mu(N)`.
+WP-297 shows that flat site-dependent transport is only gauge. A multiplicative cocycle has
 
-A positive channel norm can hide the sign after the fact, but the upstream inverse is still Möbius and its Dirichlet transform still contains `1/zeta`.
+`C(m,n)=G(mn)G(n)^(-1)`,
 
-WP-296 closes the linear nonlocal equivariant escape. Every coefficientwise-continuous linear map commuting with multiplicative shifts is an operator-valued Dirichlet convolution,
+so after the pointwise gauge the architecture returns to ordinary equivariance. A metric parallel under that transport becomes fixed.
 
-`(Tf)(N)=sum_(d|N) K(d) f(N/d)`.
+WP-298 shows that **dropping metric parallelity is still not enough**. After the flat gauge reduction, take arbitrary invertible `G(N)` and arbitrary positive-semidefinite pointwise metrics `Q_N`. If `Q_N` is faithful at every mixed composite and the scalar readout is exactly `Lambda(N)`, positivity implies the vector response itself vanishes at every mixed composite. WP-295 then forces the same Möbius direction.
 
-Finite stacks collapse to one effective kernel. Therefore linear depth and channel width do not enlarge the visible architecture as long as multiplicative translation symmetry is preserved; WP-295 applies to the composite.
+The support-changing datum of a pointwise positive metric is therefore not its orientation or conditioning but its nullspace. In general exact mixed-composite deletion requires
 
-WP-297 closes a natural site-dependent weakening. If the output fibers are transported by a flat multiplicative cocycle `C(m,n)`, then the rooted action at `1` trivializes it exactly:
+`B(N) in G(N)^(-1) ker Q_N`.
 
-`C(m,n)=G(mn)G(n)^(-1)`.
+A non-Möbius pointwise escape must contain genuine source-forced degeneracy. This is necessary but not automatically meaningful: an arbitrary moving kernel can program the Mangoldt support directly, so its zero directions must be derived independently from the geometry and survive matched generalized-prime controls.
 
-After the pointwise gauge `G`, every intertwiner is again an ordinary equivariant convolution. Unitary transport leaves the norm unchanged, and a positive metric parallel under the transport becomes one fixed metric after gauge. Exact Weil localization therefore forces the same visible Möbius direction.
+The first genuine linear transport escape remains **non-flat mixed-prime incidence**. A prime diamond must carry nontrivial holonomy/curvature so that the two paths to `pqn` cannot be gauged into agreement. Other category changes include extra boundary topology/orbits, nonlinear support-sensitive structure before scalarization, genuinely nonlocal positive forms coupling sites, or finite--archimedean geometry.
 
-The first genuine linear escape is consequently **non-flat mixed-prime incidence**. On a prime diamond the flat cocycle forces the two paths `n -> pn -> pqn` and `n -> qn -> pqn` to agree. A candidate outside the theorem must produce a canonical nontrivial holonomy/curvature there, or else break the category in another explicit way: a nonparallel source-forced metric, extra boundary topology/orbits, nonlinear support-sensitive geometry before scalarization, or a genuinely global finite--archimedean operation.
+The reusable test is now two-stage. First quotient removable gauge freedom and ask whether a closed-loop invariant survives. If transport is flat, pointwise positive site variation still cannot change exact support unless it becomes degenerate. Second, if degeneracy appears, ask whether its kernel is source-forced rather than an encoded selector.
 
-This is a stronger boundary than “nonlocal versus local.” Site dependence that is only parallel transport is not new arithmetic information; it is a coordinate choice. The useful question is whether the source supplies a gauge-invariant mixed-prime obstruction before positivity is formed.
-
-**Boundary.** Nonzero curvature would only escape the no-go. It would still need to be canonical, distinguish the Riemann system from free generalized-prime clones, couple correctly to the real place, preserve exact Weil localization, and support an independent sign theorem.
+**Boundary.** Curvature or a canonical moving nullspace only escapes the localization no-go. Either must still reproduce the archimedean/polar terms and support an independent positivity theorem; neither by itself implies Weil positivity or RH.

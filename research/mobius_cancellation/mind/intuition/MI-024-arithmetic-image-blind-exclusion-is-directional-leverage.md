@@ -1,31 +1,21 @@
-# MI-024 — Arithmetic-image blind exclusion is directional leverage with a parity-sensitive support barrier
+# MI-024 — Arithmetic-image leverage has a parity-sensitive occupancy dichotomy
 
-**Evidence level:** exact variational reduction/certificate from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened by the separated-prime control [MC-282](../../findings/MC-282-separated-simplex-leverage-failure.md), the Page--Siegel shell-universality obstruction [MC-284](../../findings/MC-284-page-siegel-stretched-exponential-shell-legendre-universality.md), the deterministic even-weight support barrier [MC-285](../../findings/MC-285-even-shell-pairing-christoffel-support-barrier.md), and the exact odd-weight affine-span criterion [MC-286](../../findings/MC-286-odd-shell-affine-span-criterion.md). No theorem is claimed that the required Christoffel certificate exists for the actual shell.
+**Evidence level:** exact variational/certificate reduction from [MC-281](../../findings/MC-281-empirical-christoffel-leverage-blind-certificate.md), sharpened by [MC-282](../../findings/MC-282-separated-simplex-leverage-failure.md), [MC-284](../../findings/MC-284-page-siegel-stretched-exponential-shell-legendre-universality.md), [MC-285](../../findings/MC-285-even-shell-pairing-christoffel-support-barrier.md), [MC-286](../../findings/MC-286-odd-shell-affine-span-criterion.md), and [MC-287](../../findings/MC-287-dense-odd-shell-near-injectivity-dichotomy.md). No theorem is claimed that the required Christoffel certificate exists for the actual shell.
 
-Let `A` be the degree-`m` feature matrix of the actual fixed-weight arithmetic shell and `v=1_Z` the virtual blind row. The endpoint-normalized energy
+For feature matrix `A` on the actual arithmetic shell and blind row `v`, the endpoint-normalized energy
 
-`C = inf_(v^*a=1) ||Aa||_2^2`
+`C=inf_(v^*a=1)||Aa||_2^2`
 
-kills blindness when `C<1`; dually the minimum synthesis cost `Lambda` of `v` from the actual rows satisfies `C=1/Lambda`. MC-282 shows why this is a genuinely directional property: a structured separated-prime realization can be completely nonblind while still having `Lambda<1`, even tending to zero. Nonblindness, feature surplus and Legendre provenance do not imply favorable leverage.
+satisfies `C=1/Lambda`, where `Lambda` is the minimum synthesis cost of `v` from actual rows. MC-282 shows this is directional leverage, not generic nonblindness: an arithmetic realization can have no blind direction and still have poor synthesis leverage. MC-284 further shows that moderate-conductor Legendre shadows are already Boolean-complete.
 
-MC-284 then shows that the localized shell is Boolean-complete on every lower-prime coordinate set whose effective conductor satisfies `Q(U)<=exp(b sqrt(log y))`. A certificate with energy below one therefore cannot live entirely in that moderate-conductor shadow.
+The decisive simplification is now combinatorial. For even shell weight, MC-285 shows that equal-pattern pairs create the all-positive endpoint unless projected occupancy is almost injective. For odd weight `t`, MC-286 identifies the exact support obstruction as affine-hyperplane concentration: `0 notin aff(S)`, equivalently some generated product character is `-1` on every shell prime.
 
-MC-285 makes the obstruction much stronger for **even shell weight**. If `U` uses `d` sign coordinates, `K_U` projected patterns are occupied, and `N_y-K_U>=t`, equal-pattern pairing produces a size-`t` shell row whose projected product is the all-positive endpoint. Hence an even-weight certificate with energy `<1` must satisfy
+MC-287 shows that this affine obstruction cannot coexist with both dense support and substantial collisions. If `K=|S|>2^(d-1)`, the support already contains an odd zero-sum nucleus of size at most three. If also `N-K>=t-1`, equal-cell pairs pad it to an exact odd `t`-row. Hence any energy-`<1` odd certificate must obey
 
-`K_U>N_y-t`, and therefore `2^d>N_y-t`.
+`K<=2^(d-1)  or  N-K<=t-2`.
 
-At live weight `t=O(log log y)` this forces `d` of order `log y` and, for prime coordinates, `log Q(U) >= (1/log 2+o(1)) log y log log y`. The even branch is therefore blocked by elementary multiplicity geometry far beyond the Page--Siegel conductor window; no delicate character-distribution theorem is needed to reach that necessary support scale.
+The second branch is near-injective. At live `t=O(log log y)`, it forces `d>=log_2 y-log_2 log y+O(1)` and the same primorial-scale conductor cost already visible in the even branch. Thus the unresolved odd obstruction is no longer “some generated character might be constant-negative” in isolation. It must arise through one of two rigid source geometries: **support compressed into at most half of the Boolean cube**, or **almost every shell prime encoded by a distinct projected pattern**.
 
-MC-286 identifies the exact surviving **odd-weight** obstruction. Writing the distinct occupied projected cells as `S subset F_2^d`, some odd endpoint row exists iff
+This gives a sharper target for arithmetic input. A theorem need not realize every Boolean pattern. It is enough to exclude both branches at the support scales relevant to the Christoffel certificate. Conversely, proving only high rank, generic pattern diversity or nonblindness does not remove either branch.
 
-`0 in aff_F2(S)`.
-
-Equivalently, there is no nonzero linear functional `lambda` that equals `1` on every occupied cell. In product-character language, the only support-level obstruction is a nonempty coordinate set `J` for which
-
-`chi_J(r) = prod_(p in J) (p/r) = -1`
-
-for every shell prime `r`. For a prescribed odd weight, MC-286 adds the exact same-cell pair-capacity condition after choosing an odd zero-sum nucleus; a minimal nucleus has size at most `d+1`.
-
-The live source-native theorem is therefore no longer generic “high-conductor directional separation.” It is parity-sensitive. Even weights already face a deterministic logarithmic-support barrier. Odd weights reduce to a precise arithmetic question: **can the actual shell sustain a generated product-character direction that is identically negative, or can prime-character information rule out every such affine-hyperplane concentration in the growing-support regime?** Full Boolean pattern realization is sufficient but stronger than necessary.
-
-**Boundary.** Excluding all affine obstructions would produce projected endpoint rows, not an RH bound by itself. The exact fixed-size occupancy condition still matters, and large coordinate support does not imply that a favorable Christoffel certificate exists. The result narrows the obstruction; it does not construct the inverse.
+**Boundary.** The density threshold `2^(d-1)` is sufficient rather than necessary for a short odd nucleus, and the collision bound is sufficient rather than necessary for padding a particular nucleus. The dichotomy is a necessary condition for the current endpoint architecture, not an RH estimate or existence theorem for the inverse.
