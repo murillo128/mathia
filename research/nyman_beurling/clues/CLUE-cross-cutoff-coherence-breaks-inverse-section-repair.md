@@ -54,5 +54,8 @@ Outcome: refuted
 
 Resolved by:
 - [[research/nyman_beurling/findings/NB-121-finite-nested-cutoff-coherence-collapses-to-the-maximal-section.md]]
+- [[research/nyman_beurling/findings/NB-122-full-prefix-nested-coherence-still-admits-one-perfect-target-inverse-section-control.md]]
 
-The ambient `R`/`2R` transfer fails at the inverse-section exponent. Exact nesting makes the simultaneous target/source constraint set equal to the single maximal-section constraint, so the `NB-120` control at the larger cutoff is already one common perfect-target control for both cutoffs. A leading-constant deficit remains relative to solving the cutoffs independently, but `NB-121` shows that it comes from shared-norm nested projection geometry and does not improve the `1/R` scale. Any useful cross-cutoff obstruction must therefore add non-nested, widening-scale, tail-sensitive, or actual-zero-power information.
+`NB-121` refutes the original ambient `R`/`2R` transfer: exact nesting makes the simultaneous target/source constraint set equal to the single maximal-section constraint, so the `NB-120` control at the larger cutoff is already one common perfect-target control for both cutoffs. `NB-122` closes the natural widening follow-up as well. The same maximal repair satisfies `Q_r f=e_r` for **every** `2<=r<=R`; early widening scales merely have the stronger compression `o(1/r)`, which is still compatible with the source-side upper bounds from `NB-116` and `NB-118`.
+
+The surviving cross-scale candidates must therefore add information not inherited from the maximal nested section: a non-nested or explicitly tail-sensitive law, a source-depth transition outside the audited `NB-120` mixed regime, or the actual confluent zero-power transformation/interpolation structure. A nested widening ladder by itself is no longer a live escape.
