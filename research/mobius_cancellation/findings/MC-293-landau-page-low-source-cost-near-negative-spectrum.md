@@ -339,7 +339,7 @@ after harmlessly weakening the fixed-modulus prime-number-theorem error. Combini
 \frac1y
 \frac{(2y)^{\beta_*}-y^{\beta_*}}{\beta_*}
 \ge
-1-O\!left(\tau+(\log y)^{-4}\right).
+1-O\!\left(\tau+(\log y)^{-4}\right).
 \tag{31}
 \]
 
