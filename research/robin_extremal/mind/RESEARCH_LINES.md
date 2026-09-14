@@ -2,27 +2,23 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## In the attained finite-edge branch, align inverse-window companion spacing with cancelling phase or eliminate the diffuse cloud
+## In the attained finite-edge branch, exclude the required dominant cancelling pairs or the diffuse cloud
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps`, `MI-002-ordinary-sigma-rejects-composite-substitute-atoms-at-every-fixed-ca-layer`, `MI-003-fixed-threshold-cells-freeze-prime-source-data`, `MI-004-higher-layer-ca-switches-carry-quantized-residual-charge`, `MI-005-matched-first-layer-packets-conserve-the-endpoint-prime-multiset`, `MI-006-first-layer-timing-is-large-in-transport-but-summable-in-robin-metric`, `MI-007-matched-packets-convert-selector-dilation-into-chebyshev-underdensity`, `MI-008-reciprocal-mertens-recovery-forces-corrected-chebyshev-growth`, `MI-009-smooth-dilation-front-is-not-the-obstruction`, `MI-010-deep-support-boundaries-have-vanishing-threshold-measure`, `MI-011-depth-two-short-interval-elimination-is-governed-by-an-exceptional-mass-max-law`, `MI-012-source-conditioned-bad-host-sparsity-converts-directly-into-a-depth-two-frontier-gain`, `MI-013-the-local-robin-boundary-hierarchy-collapses-to-prime-gap-geometry-before-the-global-obstruction`, `MI-014-the-last-local-endpoint-tie-is-a-four-exponentials-boundary`, `MI-015-surviving-robin-fans-pay-near-square-root-complexity-or-exponential-stretch`, `MI-016-positive-robin-peaks-force-a-larger-normalization-corridor-before-recurrence`, `MI-017-a-finite-zero-edge-upgrades-robin-recovery-to-a-power-corridor`, `MI-018-an-isolated-finite-zero-edge-determines-every-fixed-algebraic-ca-height-correction`, `MI-019-strong-finite-edge-atoms-can-only-hide-through-reciprocal-scale-annular-phase-competition`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-019-strong-finite-edge-atoms-can-only-hide-through-reciprocal-scale-annular-phase-competition`.
 
-RE-112--RE-123 reduce the attained finite-edge branch to a signed subedge zero packet and show that regular CA states sample every fixed algebraic continuum excursion with superalgebraic phase accuracy. RE-124--RE-126 then localize hiding of an individually strong atom to a logarithmically comparable distinct near-edge companion.
+RE-112--RE-123 reduce the attained finite-edge branch to a signed subedge zero packet and transfer continuum excursions to regular CA states. RE-124--RE-128 progressively show that hiding an algebraically strong atom requires logarithmically comparable near-edge companions, with magnitude localized to essentially the inverse observation-window scale and cancelling sign previously known only in a wider annulus.
 
-RE-127 supplies the missing sign: if the target remains hidden on the matched observation window, some companion in the older annulus has negative target-demodulated center projection and therefore satisfies a fixed cancellation-arc condition modulo `2pi`.
-
-RE-128 now sharpens the **magnitude/spacing** localization to the physical observation resolution. If the residual is hidden throughout `|u-U|<=H`, with `H=U^(1-theta)`, a distinct logarithmically comparable companion must occur at
+RE-129 closes that mismatch for a canonical dominant atom. If the packet is hidden on `|u-U|<=H`, `H=U^(1-theta)`, and the dominant coefficient is algebraically strong, then a distinct companion satisfies
 
 `c_*/U < |gamma_1-gamma_0| <= C H^-1 (log U)^(1+epsilon)`
 
-for every fixed `epsilon>0`. It lies in the same `O(log U/U)` horizontal edge layer and at polynomial height. For the earlier observation window this improves the outer spacing exponent from `U^(-1+eta)` to `U^(-1+eta/2)` up to a near-logarithmic factor.
+and has cancelling target-demodulated projection at least `c M_K(U)/log U`. Dominance makes the aggregate Taylor contamination small relative to the target, so spacing, logarithmically comparable magnitude and the required phase sign now occur in the **same inverse-window companion**.
 
-The remaining strong-atom gate is now a precise mismatch between two localizations: RE-128 forces a **very close strong companion**, while RE-127 forces a **cancelling-phase companion** but does not prove that the signed companion is the one in the narrower inverse-window annulus. A useful theorem should either localize the negative projection at the RE-128 scale, or rule out the required near-edge pair geometry strongly enough that magnitude localization alone contradicts the zeta-zero source. The genuinely diffuse branch, where no individual coefficient is algebraically strong, remains separate.
+The remaining strong-atom gate is no longer an internal localization mismatch. It is a zero-geometry question: can an attained off-critical edge support infinitely many dominant near-edge pairs with that spacing and cancelling phase? If not, algebraic excursions survive and transfer to CA states. The genuinely diffuse many-mode branch, nonattained edge and `Theta=1` remain separate.
 
-If the edge is not attained, RE-113's separate obstruction remains. The `Theta=1` branch also remains separate.
+## Keep dominant-pair geometry and diffuse cancellation distinct
 
-## Keep pair spacing, companion magnitude, cancelling phase and diffuse cancellation distinct
-
-RE-128 does not strengthen the phase conclusion by fiat. The Gevrey transition region controls absolute filtered mass but positive Taylor terms can prevent transferring the center sign to the narrow annulus. Thus “there is a very close companion” and “there is a cancelling companion” are now different proved resources. Closing the branch requires connecting them or excluding one of them by an independent zero theorem.
+RE-129 is existential at the packet level. It does not prove the narrow signed conclusion for every prescribed nonmaximal strong zero, require consecutive zeros, or rule out the required pairs for zeta. The useful reduction is that any hidden strong packet contains a dominant atom for which the narrow spacing and cancellation requirements coincide.
 
 ## Keep the exact binary tie local
 

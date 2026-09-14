@@ -14,32 +14,24 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Determine the Ising scale of the centered symmetric-taper prime Hamiltonian
+## Move past strictly subcritical static divergence to the transition, controls and access time
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`, `MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-016-coherent-prime-blocks-force-super-rms-ising-energy`.
 
-VIS-213 identifies the fixed-`(y,H)` worst start with the full unit-modulus quadratic optimum. VIS-214--VIS-221 build exact holonomy and progressively stronger static relaxations; VIS-222 shows through the complex symmetric Grothendieck inequality that the full correlation SDP is a universal constant-factor surrogate for the exact torus objective.
+VIS-213--VIS-224 reduce fixed-`(y,H)` worst starts to a midpoint-gauged real signed ratio-shell Hamiltonian and show that the binary Ising optimum, exact torus optimum and real correlation SDP have the same bounded-versus-divergent scale up to a universal factor.
 
-VIS-223 removes the observation-origin phase for midpoint-symmetric tapers. After midpoint centering and diagonal gauge, the canonical Hermitian matrix becomes a real symmetric signed ratio-shell matrix `B`, and the complex correlation SDP collapses exactly to the real elliptope.
+VIS-225 decides that scale throughout the strictly subcritical regime. On top-half prime cells of width `asymp y/H`, the centered taper kernel has one positive sign. One Rademacher sign per cell cancels cross-cell terms in expectation while preserving all coherent within-cell edges, yielding
 
-VIS-224 removes one more representation degree of freedom at the level of **coarse asymptotic scale**. Define
+`I_abs(B_(y,H)) >> y/(H log y)`.
 
-`I_abs(B)=max_(epsilon_i in {+1,-1}) |epsilon^T B epsilon|`.
+Since `R_v(y,H) asymp 1/H`,
 
-For every midpoint-symmetric instance,
+`I_abs(B_(y,H))/sqrt(R_v) >> y/(sqrt(H) log y) -> infinity`
 
-`I_abs(B) <= M_abs(A) <= U_abs^R(B) <= K_gamma^R I_abs(B)`,
+whenever `H log y/y ->0`. Continuous phases and SDP rank are not responsible for the divergence; a coarse binary block assignment already forces it.
 
-with the universal real symmetric Grothendieck bound `K_gamma^R<2.188`. Therefore boundedness or divergence after Haar-RMS normalization is the same for the binary Ising optimum, the exact continuous-phase torus optimum and the full real SDP, up to a fixed factor.
+The strictly subcritical static boundedness question is therefore closed. Live questions are the critical/supercritical transition, sharper optimizer/energy structure, representation-matched controls for the divergence, and the one-parameter time needed for the physical prime-log orbit to approach a near-optimal torus point.
 
-The live static question is consequently the prime-specific asymptotic scale of
+## Keep static energy, optimizer recovery and dynamical access separate
 
-`I_abs(B_(y,H))/sqrt(R_v(y,H))`.
-
-For the quadratic taper, `B` is an explicit weighted signed ratio-shell Hamiltonian whose edge signs are determined by the zeros of the centered taper response. Continuous vertex phases and high-rank SDP correlations can improve finite optimizers, but they cannot create an unbounded scale separation from the binary problem.
-
-## Keep representation gauge, binary objective scale, optimizer recovery and access time separate
-
-The static bounded-versus-divergent question no longer needs the full continuous torus or SDP. The Ising reduction does **not** identify the exact optimizer or make the binary problem easy, and one-parameter prime-log access time to a near-optimal torus point remains a separate simultaneous-Diophantine problem.
-
-A representation-matched control should preserve edge magnitudes and the real signed-shell class while perturbing arithmetic organization. Generic independent complex edge phases are no longer a faithful null for the midpoint-symmetric branch.
+VIS-225 proves existence of a high-energy binary assignment but does not identify the exact optimizer or show that the physical one-parameter orbit reaches it on a useful time scale. Critical/supercritical behavior is also outside the theorem. These are now separate currencies rather than unfinished parts of the strictly subcritical bound.

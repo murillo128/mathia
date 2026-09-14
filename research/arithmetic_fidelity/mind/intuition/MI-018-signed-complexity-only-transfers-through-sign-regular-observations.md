@@ -1,27 +1,17 @@
-# MI-018 — Finite sign complexity transfers only through a source certificate that survives recoding
+# MI-018 — Source complexity matters only when the destination transports it
 
-**Evidence level:** supported by AF-217--AF-220 and sharpened quantitatively by [AF-338](../../findings/AF-338-harmonic-collision-count-reduces-euler-sign-depth-to-linear-order.md), with the source-side boundary localized through [AF-341](../../findings/AF-341-prime-layer-retains-rh-pole-discriminator-and-leading-sign-complexity.md)--[AF-346](../../findings/AF-346-power-backgrounds-saturate-prime-gap-concentration-exponent.md). The observation theorem is fixed-finite-order in the absolutely convergent half-plane; no uniform growing-order total positivity, critical-line transport or stable inverse bound is claimed.
+**Evidence level:** supported by AF-217--AF-220 and sharpened by [AF-338](../../findings/AF-338-harmonic-collision-count-reduces-euler-sign-depth-to-linear-order.md), [AF-341](../../findings/AF-341-prime-layer-retains-rh-pole-discriminator-and-leading-sign-complexity.md)--[AF-347](../../findings/AF-347-finite-riesz-smoothing-erases-power-background-locality.md). The observation theorem remains fixed-finite-order in the absolutely convergent half-plane; no growing-order critical-line transport theorem is claimed.
 
-The useful observation currency is a finite sign-variation budget matched to a finite observation order. AF-338 proves that, for fixed order `r`, spacing `h` and `q_j in [P,AP]`, the full Euler-log sampling matrix is eventually strictly sign-regular through order `r` whenever `sigma>r-1`.
+AF-338 identifies a genuine observation currency: finite source sign variation transfers through a finite sign-regular observation order. But AF-344--AF-346 show that the source side can be recoded cheaply. Prime-independent weighted `k`-th-power backgrounds preserve the right-half-plane RH pole discriminator while reducing ordered sign variation to `O(P^(1/k))`; sign variation is exactly prime-gap occupancy, and the same family saturates the forced occupancy/mass-moment trade.
 
-The source side is much less rigid. AF-339--AF-341 isolate a centered prime layer that still carries the RH-complete right-half-plane pole discriminator and `Theta(P/log P)` ordered sign variation. AF-342--AF-343 rule out broad low-exception and periodic/syndetic positive repairs. AF-344 then gives a fixed prime-independent perfect-power background that remains residue-one and zero-pole-blind while reducing the residual variation to `O(P^(1/k))`.
+AF-347 adds a separate transport obstruction. The same background has extremely sparse support, large gaps and large amplitudes, so replacing sign count by a stronger raw locality profile looks promising. Yet after polynomial Riesz smoothing of order `r`, its mass on `X=M^k` obeys
 
-AF-345 identifies the exact quotient seen by that sign statistic. For nonnegative backgrounds below prime height, if `m_j` is the composite mass in the `j`-th consecutive-prime gap and `J_b=# {j:m_j>0}`, then
+`R_(k,r)(X)=X/(r+1)+O(X^max(1-(r+1)/k,0))`,
 
-`V = 2 J_b`,
+and for `r>=k-1` it is only `O(1)` away from the corresponding dense unit background. Finite differences in the smoothing annihilate the polynomial-scale Faulhaber corrections. The raw locality distinction is real, but the chosen destination can stop seeing it.
 
-and for `M=sum m_j`, `S_q=sum m_j^q`,
+The durable lesson is therefore stronger than “use a richer source statistic.” A source certificate is useful only together with a **transport theorem for the exact destination operation**. One must show either that the destination consumes the certificate before averaging, or that the certificate survives the averaging with a quantitative margin that reaches the final endpoint. Otherwise source complexity can be genuine and still be mathematically unavailable downstream.
 
-`V^(q-1) S_q >= 2^(q-1) M^q`.
+This separates three questions that should not be collapsed: what the arithmetic source contains, what the observation map preserves, and what the endpoint theorem charges. A growing-order sign-regular theorem could couple these currencies if its constants price the full source geometry; alternatively a different normalized source functional could work if it is provably stable under the required smoothing/compression.
 
-Thus ordered sign variation is exactly prime-gap occupancy; lowering it forces retained mass to concentrate into fewer gaps.
-
-AF-346 closes the possibility that this Holder trade is already the missing representation-invariant source bill. For every fixed `k>=3`, the same prime-independent weighted `k`-th-power backgrounds satisfy on fixed multiplicative windows
-
-`V asy X^(1/k)`, `M asy X`, `S_q asy X^(q-(q-1)/k)`.
-
-They therefore attain the AF-345 exponent exactly, and on thin multiplicative windows their Holder ratio approaches the sharp constant. The family keeps the RH pole discriminator while saturating the concentration law. Hence neither sign count nor the unavoidable prime-gap `q`-moment, by itself, distinguishes the arithmetic source from this explicit recoding.
-
-The next bridge must use a stronger source certificate: a normalized concentration/locality profile that these power backgrounds violate and the destination actually consumes, or a growing-order observation theorem whose constants quantitatively charge more than one occupancy/moment statistic. Merely strengthening the AF-345 inequality at the same level is impossible at the exponent scale under its present hypotheses.
-
-**Boundary.** AF-345 assumes nonnegative backgrounds and positive prime landmarks. AF-346 proves sharpness only for fixed `k>=3`; the square case is separated by the unresolved consecutive-square prime-gap boundary. None of these findings shows that a particular concentration functional is sufficient for critical-line transport. The durable conclusion is narrower: after source recoding, finite sign complexity survives only through a quotient that simple prime-independent backgrounds can already saturate, so the missing certificate must retain more structure than that quotient.
+**Boundary.** AF-347 is stated on exact-power cutoffs and for one family of polynomial Riesz means; it does not prove that every locality functional is erased or that no critical-line transport can use the perfect-power geometry. The supported conclusion is only that raw locality, like sign count and one mass moment, cannot be promoted to a source certificate without proving its survival through the destination map.

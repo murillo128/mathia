@@ -8,20 +8,20 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Resolve cross-scale incidence inside the rare upper host family, not in the global lower reservoir
+## Use one-signedness before relaxing to the full supported spectral bottom
 
-**Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`, `MI-020-complete-one-signed-screening-trades-discrete-vanishing-for-support-packing`, `MI-021-complete-screening-promotes-support-avoidance-to-prime-deleted-spectral-criticality`, `MI-022-fixed-finite-prime-power-screening-cannot-buy-prime-deleted-spectral-coercivity`, `MI-023-nearest-prime-width-has-a-lambert-w-spectral-endpoint`.
+**Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols` through `MI-024-one-signed-complete-screening-imposes-a-support-measure-floor`.
 
-WI-284 supplies the operator target: complete one-signed screening forces the prime-deleted gamma-plus-pole form to have bottom exactly zero. WI-288 reduces the symmetric two-island screening family to the nearest-prime-power Lambert gap condition, and WI-289 identifies prime squares as the unique critical composite layer at root scale.
+WI-284 says a completely screened one-signed first-crossing null mode `v>=0` satisfies `q_arch(v)=0`. WI-286--WI-293 studied the harder relaxation obtained by minimizing the prime-deleted form over **all signed functions** on the same support; that route exposed a negative odd pole direction and led to Lambert-width/rare-host conditions.
 
-WI-290 gives at least `X^(3/8-o(1))` positive-length composite-safe components on `[X,2X]`. WI-291 confines eligible ordinary-prime centers to at most `O(X^(1/10+epsilon)/log X)` giant upper hosts, and WI-292 localizes the lower reservoir against them: after one Lambert-radius enlargement, only `O(X^(1/10+epsilon))` composite-power neighborhoods can cut the host family. Thus only an `X^(-11/40+o(1))` fraction of the global lower safe components can even enter an eligible host.
+WI-294 restores the sign constraint of the actual null vector and changes the asymptotic frontier. For nonzero `v>=0`, the pole term is strictly positive. Therefore `q_arch(v)=0` forces the gamma contribution negative. The support-measure uncertainty bound from WI-287 then gives an absolute floor
 
-This deterministic localization closes global lower-reservoir abundance as a route. The live theorem is inside the rare host family: prove that none of the `X^(1/10+o(1))` host-localized candidate pieces survives all prime-power cuts infinitely often, or derive a source/sign/null-equation law that excludes them.
+`|{v>0}| > mu_0 > 0`.
 
-WI-293 audits a superficially decisive shortcut. A current preprint claims the unconditional Cramér-scale bound `g_n<(13/3)log^2 p_n`, which would immediately contradict the Lambert-scale gap required by WI-288. But its load-bearing Lemma 2.3 uses a false weighted telescope; the claimed theorem is therefore not established by that manuscript and cannot be imported as evidence. This does **not** disprove the claimed prime-gap bound or preclude a future valid theorem. It leaves the WI-292 frontier unchanged.
+For symmetric two-island complete screening, the prime number theorem alone forces the island width, hence total support measure, to tend to zero at large aperture. This contradicts the floor. The large one-signed completely screened two-island branch is therefore closed without a Cramér-scale prime-gap theorem or rare-host incidence estimate.
 
-## Keep support screening, host localization, literature provenance and surviving incidence separate
+The live complete one-signed question is now topological/measure-theoretic: can any many-component support retain a fixed positive total measure while avoiding every active prime-power translation and satisfying the null equation? Bounded-aperture two-island cases, sign-changing first modes and incomplete screening remain separate branches.
 
-A genuine unconditional Cramér-scale prime-gap theorem would close the symmetric two-island complete-screening branch outright, so proof provenance is load-bearing. Until such an input is established, the line must work with the known rare-host geometry rather than a headline bound whose proof fails.
+## Keep constrained null-vector geometry and unrestricted spectral relaxation separate
 
-Many-component supports, sign-changing modes and incomplete screening remain different geometries and must not inherit the two-island reduction without a new proof.
+WI-286--WI-293 remain valid for the unrestricted supported spectral bottom and useful as diagnostics of the relaxation gap. WI-293 also remains a provenance warning: an unverified prime-gap headline cannot be imported merely because it would close a relaxed branch. But those rare-host estimates are no longer load-bearing for the large **one-signed** symmetric two-island contradiction after WI-294.

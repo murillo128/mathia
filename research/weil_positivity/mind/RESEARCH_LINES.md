@@ -2,26 +2,32 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force a source law beyond bounded resolvents, universal logarithms, wrong curvature and support-preserving translation
+## Force genuinely new finite--archimedean structure beyond every affine source recentering
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation`, `MI-011-prime-ray-marginals-do-not-determine-mixed-prime-coupling`, `MI-012-automorphic-multiplicity-does-not-prevent-global-scalarization`, `MI-013-critical-sector-transport-needs-new-global-arithmetic-structure`, `MI-014-nontrivial-zero-modes-screen-the-gamma-tangent-layer`, `MI-015-nonlinear-postprocessing-after-scalarization-cannot-create-a-new-distribution`, `MI-016-exact-weil-square-targets-linearize-while-positive-additive-preservation-cannot-absorb-the-critical-source`, `MI-017-source-native-pole-cancellation-is-rh-complete-but-irreducibly-signed`, `MI-018-exact-weil-square-equality-makes-coarse-scalar-relocalization-exact`, `MI-019-flat-source-covariance-is-gauge-trivial-curvature-is-the-first-escape`, `MI-020-moving-nullspace-geometry-is-trapped-between-homogeneous-rigidity-and-free-programmability-unless-the-source-forces-the-motion`, `MI-021-bounded-source-resolvents-cannot-reach-gamma-and-the-first-renormalized-log-is-universal`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-022-pole-normalized-curvature-is-an-affine-source-invariant`.
 
-WP-293--WP-303 close scalar/fixed-positive recovery, finite multiplicative-equivariant depth, flat site transport, faithful pointwise metrics, universal local curvature, common-kernel readout, homogeneous moving kernels and fixed-source spectral interpolation. Unrestricted moving positive representations are programmable rather than explanatory.
+WP-293--WP-303 close scalar/fixed-positive recovery, finite multiplicative-equivariant depth, flat transport and freely programmable moving representations. WP-304 identifies the mass-class barrier: bounded source resolvents are too small, while the pole-normalized Mangoldt carrier reaches the required leading logarithm only through an infinite-mass class whose first term is universal.
 
-WP-304 adds the mass-class barrier. Bounded source resolvents decay like `1/y`; the pole-normalized positive Mangoldt energy is the narrow infinite-mass escape, but its leading Herglotz logarithm is unit-density universal. WP-305 then shows that reflecting the canonical one-sided source to obtain the desired leading orientation gives the wrong first Riemann-specific even curvature: `+A_0/y^2` with `A_0>0` instead of the Gamma coefficient `-1/(24y^2)`. Constants and positive dilation cannot repair that sign.
+WP-305 finds the first source-specific remainder and the wrong sign: after reflection the Mangoldt curvature is positive, while the Riemann-Gamma coefficient is `-1/24`. WP-306 shows support-preserving translations cannot repair it.
 
-WP-306 closes the simplest remaining affine repair. Translating the source energies by `t` changes the curvature exactly to
+WP-307 removes the support restriction and the remaining positive affine freedom. If
 
-`A_t = A_0 - t C_+ + t^2/2`.
+`F(s)=1/s+C_+ + A_0 s+...`,
 
-Preserving the intrinsic nonnegative carrier requires `t>=-log 2`. On that entire range `A_t` is strictly increasing and already satisfies `A_(-log2)>583/60000>0`. Thus reflection, additive renormalization, positive dilation and **every support-preserving spectral translation** of the canonical carrier still have the wrong Gamma curvature.
+then the pole-normalized logarithmic curvature
 
-The surviving route must therefore derive genuinely new finite--archimedean structure before exact Gamma comparison: an independently forced boundary/archimedean sector, quotient/compression, nonlocal finite--infinite coupling, determinant/scattering object or another intrinsic observable with its own positivity theorem. A shift that introduces negative low-energy states is not ruled out abstractly, but it is admissible only if the geometry forces that new spectrum independently of the target coefficient; choosing it to flip the sign would be target programming.
+`J=[s^2] log(sF(s))=A_0-C_+^2/2`
 
-## Treat mass class, orientation, support, subleading curvature and completion as distinct gates
+is strictly positive for the Mangoldt source (`J>7/300`). Translation leaves `J` invariant; after density-normalized `E -> aE+t`, `a>0`, the reflected curvature is exactly
 
-Matching `log y` proves only the infinite-mass class. Producing a source-specific `y^-2` term proves only arithmetic sensitivity. WP-305 shows that the canonical term points the wrong way, and WP-306 shows that the entire support-preserving translation family cannot cross zero. A candidate completion must state which new structure changes that remainder and why the operation is source-native before the Gamma target is consulted.
+`A_(a,t)=a^2 J + (t-a C_+)^2/2 > 0`.
 
-## Use matched controls against both universal leading scale and affine source repair
+Thus no real translation, positive dilation, or combination of the two can reach the Gamma sign, even if finitely many source atoms are moved to negative energy. The remaining route must introduce a genuinely different boundary/archimedean sector, quotient/compression, non-affine finite--infinite coupling, determinant/scattering mechanism or another source-native operation with an independent sign theorem.
 
-Unit-density positive measures are the control for the leading logarithm. The exact Mangoldt source is the control for the first nonuniversal curvature. WP-306 adds a third control: ordinary support-preserving recentering of that source cannot fix the mismatch. Any future positive construction must survive all three rather than fit the completed-zeta asymptotic after the fact.
+## Treat mass class, orientation and affine curvature as separate gates
+
+Matching `log y` establishes only the infinite-mass class. Producing a nonuniversal `y^-2` coefficient establishes arithmetic sensitivity but not the correct orientation. WP-307 identifies an exact affine-covariant invariant controlling that remainder, so “choose a better origin/scale” is now closed rather than merely unsupported.
+
+## Use matched controls against universal leading scale and source-specific curvature
+
+Unit-density positive measures control the leading logarithm. Generic positive measures can have either sign of the logarithmic quadratic coefficient, so `J>0` is source-specific rather than a generic positivity artifact. Any future construction must explain which new source-native operation changes this invariant before comparing with the Gamma target.
