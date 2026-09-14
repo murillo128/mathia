@@ -152,7 +152,7 @@ Jim Geelen's geometric Andrásfai--Erdős--Sós theorem states that, for each od
 \tag{12}
 \]
 
-is a restriction of the rank-`r` binary affine geometry. The bound is sharp for `r>=k-1`. See `MC-S49`.
+is a restriction of the rank-`r` binary affine geometry. The bound is sharp for `r>=k-1`.
 
 Set
 
@@ -219,7 +219,7 @@ That separation is the durable gain. `MC-284` showed full cube coverage only for
 
 ## 5. Prior art and novelty audit
 
-The decisive external theorem is established prior art: Jim Geelen, *A geometric version of the Andrásfai--Erdős--Sós Theorem*, Advances in Applied Mathematics 59 (2014), 1--7, DOI `10.1016/j.aam.2014.02.002`, arXiv `1401.5769`. Theorem 1.1 is exactly the implication used in `(12)`, including the sharp threshold and rank condition. The author's published PDF and arXiv record agree on the theorem statement. See `MC-S49`.
+The decisive external theorem is established prior art: Jim Geelen, *A geometric version of the Andrásfai--Erdős--Sós Theorem*, Advances in Applied Mathematics 59 (2014), 1--7, DOI `10.1016/j.aam.2014.02.002`, arXiv `1401.5769`. Theorem 1.1 is exactly the implication used in `(12)`, including the sharp threshold and rank condition. The author's published PDF and arXiv record agree on the theorem statement.
 
 The equivalence between a binary matroid being affine and having no odd circuit is classical binary-matroid theory and is also the finite-linear-algebra content already isolated in `MC-286`. The pair-padding inequality comes from `MC-287` and is elementary.
 
