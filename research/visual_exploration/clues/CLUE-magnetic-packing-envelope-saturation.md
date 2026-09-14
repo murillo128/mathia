@@ -1,13 +1,14 @@
 ---
 id: CLUE-visual_exploration-magnetic-packing-envelope-saturation
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: visual_exploration
 based_on:
   - research/visual_exploration/findings/VIS-215-weighted-cycle-frustration-packing.md
   - research/visual_exploration/findings/VIS-218-subcritical-effective-edge-density-closes-magnetic-rms.md
   - research/visual_exploration/findings/VIS-219-cycle-packing-must-saturate-envelope-to-rms.md
+  - research/visual_exploration/findings/VIS-220-simple-cycle-packing-universal-envelope-ceiling.md
 ---
 
 # Can weighted cycle frustration saturate the prime-phase envelope to RMS precision?
@@ -60,4 +61,17 @@ Kill this certificate route if one can prove `D_pack->infinity`, or if every pla
 
 ## Evidence boundary
 
-No near-saturation result is currently known. `VIS-219` establishes only the threshold that this certificate must meet; it does not show whether the canonical prime-phase graph lies on the saturating or non-saturating side. Finite LP behavior would be exploratory evidence until converted into a durable asymptotic argument.
+`VIS-219` establishes the saturation threshold that this certificate must meet. `VIS-220` now proves a phase-independent ceiling for the exact `VIS-215` LP: on a simple support graph every simple-cycle packing satisfies `P_+,P_-<=2B/9`, so the residual is always at least `7B/9`. The clue is therefore resolved for this certificate family. The result does not constrain stronger non-packing certificates or the exact torus optimum.
+
+## Research disposition
+
+Outcome: refuted
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-220-simple-cycle-packing-universal-envelope-ceiling]]
+
+The proposed near-saturation regime is algebraically impossible for the `VIS-215` fractional simple-cycle packing certificate. `VIS-220` proves
+
+`D_pack >= (7/9)sqrt(2N_eff)`
+
+for every simple support graph, hence `D_pack->infinity` throughout the strictly subcritical prime-phase regime of `VIS-218`. Further work should move to the exact fixed-modulus torus optimization or to a genuinely stronger certificate rather than enlarging or reoptimizing this packing LP.
