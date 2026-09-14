@@ -10,9 +10,7 @@
 \Theta:=\sup_{\zeta(\rho)=0}\Re\rho,
 \]
 
-and obtained a power-scale inter-block corridor. In the false-RH finite-edge regime this still leaves two unnecessary logarithms. The reason is structural: once `Theta>1/2`, any fixed strip strictly to the right of the critical line contains only a sublinear number of zeros, so its reciprocal-ordinate mass is summable.
-
-Combining the standard truncated Riemann--von Mangoldt formula with Ingham's classical zero-density estimate gives the sharper endpoint bound
+and obtained a power-scale inter-block corridor. In the false-RH finite-edge regime the two logarithms are not intrinsic. Once `Theta>1/2`, any fixed strip strictly to the right of the critical line contains only a sublinear number of zeros, so its reciprocal-ordinate mass is summable. Combining the standard truncated Riemann--von Mangoldt formula with Ingham's classical zero-density estimate gives
 
 \[
 \boxed{
@@ -37,7 +35,7 @@ V-Y\gg_\Theta h(C)Y^{2-\Theta}\log Y.
 }
 \]
 
-For an adaptive false-RH witness of exponent `b`, this becomes
+For an adaptive false-RH witness of exponent `b`, this yields
 
 \[
 \boxed{
@@ -47,26 +45,26 @@ V-Y\gg_{\Theta,b}Y^{2-\Theta-b}\log Y.
 
 Thus for `b=1-Theta+eta` the selected quantitative blocks are separated on the almost-linear scale `Y^(1-eta) log Y`, and their fixed-`eta` packing in `[T,2T]` is `O_{Theta,eta}(T^eta/log T)`.
 
-There is also a source-level rigidity statement. If recovery is within a constant factor of this sharpened minimum, then a fixed positive fraction of the crossed physical mass must be carried by ordinary first-layer prime events satisfying
+There is also a source-level rigidity statement. If a **short** recovery is within a constant factor of this sharpened minimum, then a fixed positive fraction of its crossed physical mass must be carried by ordinary first-layer prime events satisfying
 
 \[
 p-\vartheta(p)\asymp Y^\Theta
 \]
 
-with the recovery-favorable sign. The packet contains at least `gg h(C)Y^(2-Theta)` distinct primes, hence `gg_b Y^(2-Theta-b)` for the adaptive witnesses. So the finite-edge frontier is no longer a logarithmic artifact of the textbook PNT bound: improving it requires ruling out **CA-selected one-sided saturation of the true `Theta`-scale source envelope**.
+with the recovery-favorable sign. The packet contains at least `gg h(C)Y^(2-Theta)` distinct primes, hence `gg_b Y^(2-Theta-b)` for the adaptive witnesses. The finite-edge frontier is therefore no longer a logarithmic artifact of the textbook PNT bound: improving it requires ruling out **CA-selected one-sided saturation of the true `Theta`-scale source envelope**.
 
-No novelty is claimed for the truncated explicit formula, zero-density estimates, or their standard PNT consequences separately. The line-specific content is the density-assisted endpoint sharpening and its coupling to the exact CA recovery workload, block packing, and first-layer packet extraction.
+No novelty is claimed for the truncated explicit formula or zero-density estimates separately. The line-specific content is their endpoint sharpening in this false-RH regime and its coupling to the exact CA recovery workload, block packing, and first-layer packet extraction.
 
-## 1. Off-line zero density removes the textbook `log^2 x` loss when `Theta>1/2`
+## 1. Off-line zero density removes the textbook `log^2 x` loss
 
-Assume RH is false and
+Assume
 
 \[
 \frac12<\Theta<1.
 \tag{1}
 \]
 
-Choose once and for all
+Choose a fixed
 
 \[
 \sigma_0
@@ -77,89 +75,69 @@ Choose once and for all
 \tag{2}
 \]
 
-Then
-
-\[
-\frac12<\sigma_0<\Theta,
-\qquad
-\sigma_0\le\frac35.
-\]
-
-Ingham's classical zero-density estimate, in the notation already used in `RE-100`, gives
+Then `1/2<sigma_0<Theta` and `sigma_0<=3/5`. Ingham's zero-density estimate, already anchored and used in `RE-100`, gives
 
 \[
 N(\sigma_0,T)
 \ll_{\sigma_0}
-T^{\kappa}(\log T)^A,
+T^\kappa(\log T)^A,
 \qquad
-\kappa
-:=
-\frac{3(1-\sigma_0)}{2-\sigma_0}
-<1
+\kappa:=\frac{3(1-\sigma_0)}{2-\sigma_0}<1
 \tag{3}
 \]
 
-for some fixed `A`. The strict inequality is exactly equivalent to `sigma_0>1/2`.
-
-Dyadic summation now gives an elementary but decisive consequence:
+for some fixed `A`. Dyadic summation therefore yields
 
 \[
-\begin{aligned}
+\boxed{
 \sum_{\substack{\zeta(\rho)=0\\ \Re\rho\ge\sigma_0}}
-\frac1{1+|\Im\rho|}
-&\ll_{
-\sigma_0}
-1+
-\sum_{j\ge0}
-2^{-j}N(\sigma_0,2^{j+1})\\
-&\ll_{
-\sigma_0}
-1+
-\sum_{j\ge0}
-2^{-(1-\kappa)j}(1+j)^A
-<\infty.
-\end{aligned}
+\frac1{1+|\Im\rho|}<\infty.
+}
 \tag{4}
 \]
 
-Thus the zero contribution from the fixed off-critical half-strip `Re rho>=sigma_0` is absolutely summable after the natural `1/rho` weight.
+Indeed the `j`-th dyadic block is
 
-Use the standard truncated Riemann--von Mangoldt formula for the half-jump convention `psi_0`. Taking a truncation height `T\asymp x` away from zero ordinates gives uniformly for `x>=2`
+\[
+\ll_{\sigma_0}
+2^{-j}N(\sigma_0,2^{j+1})
+\ll
+2^{-(1-\kappa)j}(1+j)^A,
+\]
+
+and this is summable. Thus the zero contribution from a fixed off-critical half-strip is absolutely summable after the natural `1/rho` weight.
+
+Use the standard truncated Riemann--von Mangoldt formula for the half-jump convention `psi_0`. Taking `T\asymp x` away from zero ordinates gives uniformly for `x>=2`
 
 \[
 \psi_0(x)-x
 =
--
-\sum_{|\Im\rho|\le T}
-\frac{x^\rho}{\rho}
+-\sum_{|\Im\rho|\le T}\frac{x^\rho}{\rho}
 +O((\log x)^2).
 \tag{5}
 \]
 
-Split the zero sum at `sigma_0`. For the left part, the ordinary zero count gives
+For zeros with `Re rho<sigma_0`, the ordinary zero count gives
 
 \[
 \sum_{\substack{|\Im\rho|\le T\\ \Re\rho<\sigma_0}}
 \left|\frac{x^\rho}{\rho}\right|
-\ll
-x^{\sigma_0}(\log T)^2
 \ll
 x^{\sigma_0}(\log x)^2
 =o_\Theta(x^\Theta).
 \tag{6}
 \]
 
-For the right part, (4) and `Re rho<=Theta` give the uniform absolute estimate
+For the complementary zeros, (4) and `Re rho<=Theta` give
 
 \[
 \sum_{\substack{|\Im\rho|\le T\\ \Re\rho\ge\sigma_0}}
 \left|\frac{x^\rho}{\rho}\right|
-\ll_\Theta
-x^\Theta.
+\ll_\Theta x^\Theta.
 \tag{7}
 \]
 
-Equations (5)--(7) therefore yield
+Hence
 
 \[
 \boxed{
@@ -168,7 +146,7 @@ Equations (5)--(7) therefore yield
 \tag{8}
 \]
 
-At a prime power, `psi-psi_0=O(log x)`, so the same estimate holds for the usual right-continuous Chebyshev function:
+At a prime power, `psi-psi_0=O(log x)`, so
 
 \[
 \boxed{
@@ -177,15 +155,12 @@ At a prime power, `psi-psi_0=O(log x)`, so the same estimate holds for the usual
 \tag{9}
 \]
 
-This sharpening fails exactly at the RH edge `Theta=1/2`: there is then no fixed `sigma_0` between `1/2` and `Theta`, and the reciprocal-ordinate mass of the critical-line zeros has the familiar logarithmic divergence. That is why the standard RH bound retains logarithms while a genuinely off-critical finite edge does not.
-
-Finally,
+This mechanism fails exactly at `Theta=1/2`: there is then no fixed `sigma_0` strictly between the critical line and the zero edge, and the reciprocal-ordinate mass of critical-line zeros has the familiar logarithmic divergence. Finally,
 
 \[
 \psi(x)-\vartheta(x)
 =O\!\left(x^{1/2}(\log x)^2\right)
 =o_\Theta(x^\Theta),
-\tag{10}
 \]
 
 so
@@ -194,61 +169,40 @@ so
 \boxed{
 \vartheta(x)-x=O_\Theta(x^\Theta).
 }
-\tag{11}
+\tag{10}
 \]
 
-The exponent `Theta` cannot be replaced by any fixed smaller exponent on the basis of the zero edge alone: the classical Landau/explicit-formula mechanism gives `Omega(x^(Theta-epsilon))` for every fixed `epsilon>0`.
+The exponent `Theta` cannot be replaced by any fixed smaller exponent using the zero edge alone: the classical Landau/explicit-formula mechanism gives errors of size `Omega(x^(Theta-epsilon))` for every fixed `epsilon>0`.
 
-## 2. The full CA event sweep inherits the log-free `Theta` envelope
+## 2. The CA event sweep and Robin recovery inherit the log-free envelope
 
-For the full CA event sweep `Phi`, `RE-069` gives
+For the full CA event sweep, `RE-069` gives
 
 \[
 \Phi_1(x)=\vartheta(x)+O(\log x),
-\tag{12}
+\tag{11}
 \]
 
-while all higher active layers together contribute only
+while all higher active layers contribute only
 
 \[
 \Phi_{\ge2}(x)
 =O\!\left(x^{1/2}(\log x)^{3/2}\right).
+\tag{12}
+\]
+
+Since `Theta>1/2`, (10)--(12) imply
+
+\[
+\boxed{
+\Phi(x)=x+O_\Theta(x^\Theta),
+\qquad
+\Phi(x^-)=x+O_\Theta(x^\Theta).
+}
 \tag{13}
 \]
 
-Since `Theta>1/2`, equations (11)--(13) give
-
-\[
-\boxed{
-\Phi(x)=x+O_\Theta(x^\Theta).
-}
-\tag{14}
-\]
-
-Taking `t\uparrow x` in the uniform estimate gives the same bound for the left limit,
-
-\[
-\boxed{
-\Phi(x^-)=x+O_\Theta(x^\Theta).
-}
-\tag{15}
-\]
-
-and hence the forward workload envelope
-
-\[
-\boxed{
-\bigl(x-\Phi(x^-)\bigr)_+
-\ll_\Theta x^\Theta.
-}
-\tag{16}
-\]
-
-This is the key correction to the first version of the finding. The two logarithms in the earlier workload height were not intrinsic to a finite false-RH zero edge; they came from using a textbook bound that does not exploit the unconditional sparsity of off-critical zeros.
-
-## 3. The `RE-110` recovery budget gains two logarithms
-
-Let `C<D` be CA states with
+Let `C<D` be CA states and put
 
 \[
 Y:=\log C,
@@ -256,19 +210,10 @@ Y:=\log C,
 V:=\log D,
 \qquad
 L:=V-Y,
-\tag{17}
+\tag{14}
 \]
 
-and suppose
-
-\[
-h(C)>0,
-\qquad
-h(D)\le0.
-\tag{18}
-\]
-
-For the crossed event groups, `RE-110` defines
+with `h(C)>0` and `h(D)<=0`. For crossed event groups, `RE-110` defines
 
 \[
 M_+(C,D)
@@ -276,7 +221,7 @@ M_+(C,D)
 \max_e(\eta_e-u_e)_+,
 \qquad
 u_e:=\Phi(\eta_e^-),
-\tag{19}
+\tag{15}
 \]
 
 and proves
@@ -287,38 +232,34 @@ L M_+(C,D)
 \ge
 (1+o(1))h(C)Y^2\log Y.
 }
-\tag{20}
+\tag{16}
 \]
 
-First suppose `L<=Y`. Then every physical coordinate `u_e` lies in `[Y,2Y]`. If a crossed event has positive forward defect, (15) gives
+First suppose `L<=Y`. Every physical coordinate `u_e` then lies in `[Y,2Y]`. If a crossed event has positive forward defect, (13) gives
 
 \[
-u_e
-=\eta_e+O_\Theta(\eta_e^\Theta).
-\tag{21}
+u_e=\eta_e+O_\Theta(\eta_e^\Theta).
 \]
 
-Because `Theta<1`, the error is `o(eta_e)`. Hence every event contributing to `M_+` has `eta_e\asymp Y`, and therefore
+Because `Theta<1`, any event contributing to `M_+` has `eta_e\asymp Y`, so
 
 \[
 \boxed{
 M_+(C,D)\ll_\Theta Y^\Theta.
 }
-\tag{22}
+\tag{17}
 \]
 
-Substituting into (20),
+Substitution in (16) gives
 
 \[
 \boxed{
-L
-\gg_\Theta
-h(C)Y^{2-\Theta}\log Y.
+L\gg_\Theta h(C)Y^{2-\Theta}\log Y.
 }
-\tag{23}
+\tag{18}
 \]
 
-If `L>Y`, that already supplies a larger corridor whenever the right side of (23) is `o(Y)`. Uniformly one may write
+If `L>Y`, that branch already supplies a larger displacement whenever the right side of (18) is sublinear. Uniformly,
 
 \[
 \boxed{
@@ -329,65 +270,59 @@ Y,
  h(C)Y^{2-\Theta}\log Y
 \right\}.
 }
-\tag{24}
+\tag{19}
 \]
 
-The power exponent is the same as in the first version of `RE-112`, but the exact corridor scale is larger by `(log Y)^2`.
+Relative to the first version of `RE-112`, the power exponent is unchanged but the exact corridor scale is larger by `(log Y)^2`.
 
-## 4. Adaptive false-RH blocks are almost linearly separated with improved packing
+## 3. Adaptive false-RH blocks are almost linearly separated
 
 Let `C=C_b` be a regular adaptive-amplitude witness from `RE-034`, for fixed
 
 \[
 1-\Theta<b<\frac12.
-\tag{25}
+\tag{20}
 \]
 
 Its actual Robin height satisfies
 
 \[
-\boxed{
-h(C)\gg_b Y^{-b}.}
-\tag{26}
+h(C)\gg_bY^{-b}.
+\tag{21}
 \]
 
-Put
+Set
 
 \[
 \alpha:=2-\Theta-b.
-\tag{27}
 \]
 
-The lower condition `b>1-Theta` gives `alpha<1`, while `Theta<1` and `b<1/2` give
+Then
 
 \[
-\boxed{
 \frac12<\alpha<1.
-}
-\tag{28}
+\tag{22}
 \]
 
-Thus `Y^alpha log Y=o(Y)`, so (24)--(26) imply in either the short- or long-corridor branch
+Since `Y^alpha log Y=o(Y)`, equations (19)--(21) give
 
 \[
 \boxed{
-V-Y
-\gg_{\Theta,b}
-Y^{2-\Theta-b}\log Y.
+V-Y\gg_{\Theta,b}Y^{2-\Theta-b}\log Y.
 }
-\tag{29}
+\tag{23}
 \]
 
-Order the adaptive selected states belonging to distinct quantitative counterexample blocks for this fixed `b` by logarithmic scales `Y_k`. Before the next positive block can begin, the current block must pass through its first nonpositive state. Hence
+Order the selected states belonging to distinct quantitative counterexample blocks for this fixed `b` by logarithmic scales `Y_k`. The next positive block cannot begin before the current one reaches its first nonpositive state, hence
 
 \[
 Y_{k+1}-Y_k
 \gg_{\Theta,b}
 Y_k^{2-\Theta-b}\log Y_k.
-\tag{30}
+\tag{24}
 \]
 
-Consequently the number `N_b(T)` of these selected quantitative blocks with `T<=Y_k<2T` satisfies
+Therefore the number `N_b(T)` of selected quantitative blocks with `T<=Y_k<2T` obeys
 
 \[
 \boxed{
@@ -395,69 +330,59 @@ N_b(T)
 \ll_{\Theta,b}
 \frac{T^{\Theta+b-1}}{\log T}.
 }
-\tag{31}
+\tag{25}
 \]
 
-For every fixed
-
-\[
-0<\eta<\Theta-\frac12,
-\tag{32}
-\]
-
-choose
-
-\[
-b=1-\Theta+\eta.
-\tag{33}
-\]
-
-Then
+For every fixed `0<eta<Theta-1/2`, choose `b=1-Theta+eta`. Then
 
 \[
 \boxed{
-V-Y
-\gg_{\Theta,\eta}
-Y^{1-\eta}\log Y,
+V-Y\gg_{\Theta,\eta}Y^{1-\eta}\log Y,
 \qquad
 N_\eta(T)
 \ll_{\Theta,\eta}
 \frac{T^\eta}{\log T}.
 }
-\tag{34}
+\tag{26}
 \]
 
-As before, this is a family-by-family statement for each fixed `eta`; varying `eta` changes the selected adaptive family and does not imply a single-family `T^{o(1)}` bound.
+This remains a family-by-family statement for each fixed `eta`; varying `eta` changes the selected adaptive family and does not imply a single-family `T^{o(1)}` bound.
 
-## 5. Near-minimal finite-edge recovery forces a positive-mass `Theta`-saturation packet
+## 4. Near-minimal short recovery forces a positive-mass `Theta`-saturation packet
 
-The log-free envelope also upgrades the packet mechanism of `RE-111`. Assume `C=C_b` is an adaptive witness as above and that its first recovery to `h(D)<=0` is within a fixed constant factor of the new minimum,
+The log-free envelope also upgrades the packet mechanism of `RE-111`. Assume `C=C_b` is an adaptive witness as above and that its first recovery satisfies both
+
+\[
+L\le Y
+\tag{27}
+\]
+
+and the near-minimal upper bound
 
 \[
 L
 \ll_{\Theta,b}
  h(C)Y^{2-\Theta}\log Y.
-\tag{35}
+\tag{28}
 \]
 
-By (23), `L` is then comparable with that scale. Because `alpha<1`, this branch automatically has `L<=Y` for large `Y`.
+By (18), `L` is then comparable with the spectral minimum.
 
 Use the physical/event partition from `RE-110`. A crossed event group at coordinate `eta_e`, with logarithmic mass `m_e`, occupies
 
 \[
 I_e=(u_e,u_e+m_e],
 \qquad
-u_e=\Phi(\eta_e^-),
-\tag{36}
+u_e:=\Phi(\eta_e^-),
+\tag{29}
 \]
 
-and the intervals `I_e` partition `(Y,V]`. On `I_e` put
+and these intervals partition `(Y,V]`. On `I_e` set
 
 \[
 Q(s):=\eta_e,
 \qquad
 f(s):=(Q(s)-s)_+.
-\tag{37}
 \]
 
 Then
@@ -470,26 +395,25 @@ Then
 (1-o(1))A,
 \qquad
 A:=h(C)Y^2\log Y.
-\tag{38}
+\tag{30}
 \]
 
-Equation (16) gives the uniform height bound
+Equation (13) gives the uniform height bound
 
 \[
 0\le f(s)\ll_\Theta Y^\Theta.
-\tag{39}
+\tag{31}
 \]
 
-Set
+Put
 
 \[
 T_*:=\frac{A}{4L},
 \qquad
 S:=\{s\in(Y,V]:f(s)\ge T_*\}.
-\tag{40}
 \]
 
-The same layer-cake estimate as in `RE-111` gives
+The layer-cake estimate used in `RE-111` gives
 
 \[
 \boxed{
@@ -499,34 +423,27 @@ The same layer-cake estimate as in `RE-111` gives
 =
  h(C)Y^{2-\Theta}\log Y.
 }
-\tag{41}
+\tag{32}
 \]
 
-Under (35), equations (23) and (41) show `|S|\gg L`: the marked workload occupies a fixed positive proportion of the recovery mass.
+Together with (28), this shows `|S|\gg L`: a fixed positive fraction of the recovery mass lies in marked event groups.
 
-The total higher-layer atomic mass available at scale `Y` is only
+The entire higher-layer atomic mass at scale `Y` is only
 
 \[
 O\!\left(Y^{1/2}(\log Y)^{3/2}\right).
-\tag{42}
+\tag{33}
 \]
 
-For the adaptive witnesses, (26), (28), and (41) give
+Using (21) and `alpha>1/2`, the right side of (32) is
 
 \[
-|S|
-\gg_b
-Y^{2-\Theta-b}\log Y
-=
-Y^{\alpha}\log Y,
-\qquad
-\alpha>\frac12.
-\tag{43}
+\gg_bY^\alpha\log Y,
 \]
 
-Thus (42) is `o(|S|)`. After deleting all higher-layer atoms from the marked event groups, a fixed positive fraction of the marked mass remains on distinct ordinary first-layer prime events.
+so (33) is `o(|S|)`. After deleting every higher-layer atom from the marked groups, a fixed positive fraction of the marked mass remains on distinct ordinary first-layer prime events.
 
-For every surviving marked first-layer prime `p`, the transfer argument of `RE-111` gives
+For each surviving marked first-layer prime `p`, the transfer argument of `RE-111` gives
 
 \[
 p-\vartheta(p)
@@ -534,29 +451,26 @@ p-\vartheta(p)
 T_*
 \asymp
 \frac{h(C)Y^2\log Y}{L}.
-\tag{44}
+\tag{34}
 \]
 
-The near-minimal upper bound (35) therefore implies
+The near-minimal upper bound (28) yields
 
 \[
-p-\vartheta(p)
-\gg_\Theta
-Y^\Theta.
-\tag{45}
+p-\vartheta(p)\gg_\Theta Y^\Theta,
 \]
 
-On the other hand, (11) gives the matching global upper bound for `p\asymp Y`. Hence every marked first-layer prime satisfies
+while (10) supplies the matching global upper bound for `p\asymp Y`. Therefore
 
 \[
 \boxed{
 p-\vartheta(p)\asymp_\Theta Y^\Theta}
-\tag{46}
+\tag{35}
 \]
 
-with the same recovery-favorable sign.
+with the recovery-favorable sign for every marked first-layer prime.
 
-Their total first-layer logarithmic mass is `gg L`, so, since `log p\asymp log Y`, the packet has cardinality
+Their total first-layer logarithmic mass is `gg L`; since `log p\asymp log Y`,
 
 \[
 \boxed{
@@ -566,10 +480,10 @@ Their total first-layer logarithmic mass is `gg L`, so, since `log p\asymp log Y
 \gg_\Theta
 h(C)Y^{2-\Theta}.
 }
-\tag{47}
+\tag{36}
 \]
 
-For the adaptive amplitude floor,
+For adaptive witnesses this becomes
 
 \[
 \boxed{
@@ -577,14 +491,12 @@ For the adaptive amplitude floor,
 \gg_{\Theta,b}
 Y^{2-\Theta-b}.
 }
-\tag{48}
+\tag{37}
 \]
 
-In particular, for `b=1-Theta+eta`, a near-minimal recovery forces at least `gg Y^(1-eta)` distinct first-layer primes at which the one-sided Chebyshev deficit is of full `Theta`-scale.
+In particular, choosing `b=1-Theta+eta`, a near-minimal short recovery forces at least `gg Y^(1-eta)` distinct first-layer primes with one-sided Chebyshev deficit of full `Theta`-scale. A single extreme event, sparse higher-layer activity, or the logarithmic slack in the textbook PNT bound cannot pay the recovery bill.
 
-This is the finite-edge analogue of `RE-111`, but with the correct spectral envelope. A single extreme event, a sparse collection of higher-layer events, or the logarithmic slack in the textbook PNT bound cannot pay the bill.
-
-## 6. The unconditional KV-minimal branch can occur only at `Theta=1`
+## 5. The unconditional KV-minimal branch survives only at `Theta=1`
 
 Write the unconditional envelope used by `RE-109`--`RE-111` as
 
@@ -592,79 +504,57 @@ Write the unconditional envelope used by `RE-109`--`RE-111` as
 \mathcal E(Y)
 =
 \exp\!\left[-a(\log Y)^{3/5}(\log\log Y)^{-1/5}\right].
-\tag{49}
 \]
 
-Within its standing short-corridor hypothesis, `RE-111` studies recovery on the unconditional minimum scale
+Within its standing short-corridor hypothesis, `RE-111` studies recovery on the scale
 
 \[
 L
 \ll
 \frac{h(C)Y\log Y}{\mathcal E(Y)}.
-\tag{50}
+\tag{38}
 \]
 
-If `Theta<1`, the sharpened spectral lower scale (23) divided by the right side of (50) is
+If `Theta<1`, the sharpened lower scale (18) divided by the right side of (38) is
 
 \[
-\frac{
- h(C)Y^{2-\Theta}\log Y
-}{
- h(C)Y\log Y/\mathcal E(Y)
-}
-=
 Y^{1-\Theta}\mathcal E(Y)
 \longrightarrow\infty,
-\tag{51}
+\tag{39}
 \]
 
-because `mathcal E(Y)=Y^{-o(1)}`. Therefore the KV-minimal branch is asymptotically incompatible with every fixed finite edge `Theta<1`.
-
-Hence
+because `mathcal E(Y)=Y^{-o(1)}`. Hence
 
 \[
 \boxed{
 \text{an unbounded family of `RE-111` KV-minimal recoveries}
-\quad\Longrightarrow\quad
+\Longrightarrow
 \Theta=1.
 }
-\tag{52}
+\tag{40}
 \]
 
-The first-layer KV-saturation packet of `RE-111` remains relevant only in that extreme branch. For every finite zero edge, the correct packet is instead the `Theta`-scale packet of Section 5.
+For every finite zero edge, the relevant saturation object is instead the `Theta`-scale first-layer packet of Section 4.
 
-## 7. Matched control, prior-art boundary, and the new source target
+## 6. Matched control, prior-art boundary, and the new source target
 
-The improved corridor and packet scales are already sharp for the information used here. A relaxed monotone event staircase on an interval of length
+The sharpened scales are already optimal for the information used here. A relaxed monotone event staircase on a physical interval of length
 
 \[
-L_0
-\asymp
-hY^{2-\Theta}\log Y
-\tag{53}
+L_0\asymp hY^{2-\Theta}\log Y
 \]
 
-with forward defect
+with forward defect `M\asymp Y^Theta` has area
 
 \[
-M\asymp Y^\Theta
-\tag{54}
+L_0M\asymp hY^2\log Y,
 \]
 
-has positive workload area
+exactly matching the `RE-110` recovery budget. Splitting that interval into logarithmic atoms produces `asymp hY^(2-Theta)` marked atoms, matching (36). This synthetic control is not asserted to arise from the ordinary primes; it shows that **recovery area + scalar zero edge + event atomicity** cannot improve the new orders.
 
-\[
-L_0M
-\asymp
-hY^2\log Y,
-\tag{55}
-\]
+The analytic sharpening in Section 1 uses only standard ingredients already anchored in `SOURCES.md`: the truncated Riemann--von Mangoldt explicit formula and Ingham's fixed off-critical zero-density theorem. A current prior-art audit also found modern refinements of the explicit truncation error and work on large PNT-error sets, but no CA-selected recovery implication of the form above. No novelty is claimed for the analytic ingredients or for generic PNT large-value questions; the novelty claim is restricted to their coupling with the CA recovery identity and adaptive Robin witnesses.
 
-exactly matching `RE-110`. Splitting the interval into logarithmic atoms gives `asymp hY^(2-Theta)` marked atoms, matching (47). This synthetic control is not asserted to arise from the ordinary primes; it shows that **recovery area + scalar zero edge + event atomicity** alone cannot improve the new scales.
-
-The analytic sharpening in Section 1 uses only standard ingredients: the truncated Riemann--von Mangoldt explicit formula and a fixed off-critical zero-density estimate. Ingham's density theorem is already load-bearing elsewhere in the line (`RE-100`), and Montgomery--Vaughan is already the source anchor for the zero-edge PNT relation used by the first version of this finding. A current prior-art search also found modern work sharpening the explicit truncation error and work on large PNT-error sets, but no CA-selected recovery statement of the form above. No novelty is claimed for the analytic ingredients or for generic large-value questions; the novelty claim is restricted to their coupling with the CA recovery identity and adaptive Robin witnesses.
-
-The finite-edge research target is now more precise than the first version of `RE-112` suggested. It is not enough to improve the global PNT bound by logarithms: those logarithms have disappeared. To beat (29), one must show that CA-selected recovery intervals cannot carry a positive-mass packet of ordinary first-layer primes with
+The finite-edge target is now precise. Improving (23) cannot come from recovering the two textbook logarithms; they are already absent. One must show that CA-selected recovery intervals cannot carry a positive-mass packet of ordinary first-layer primes with
 
 \[
 p-\vartheta(p)\asymp Y^\Theta
