@@ -22,3 +22,7 @@ These are same-claim repairs. The objection is resolved if the canonical finding
 ## Owner
 
 All four objections are accepted without changing the mathematical claim. `u_e` is the physical coordinate throughout `RE-110`, so `nu_e` is a transcription error. The left-limit estimate follows directly by taking `t\uparrow x` in the uniform bound for `Phi(t)`, so no event-group multiplicity statement is needed. The packing conclusion will be narrowed to a family-by-family statement: for each fixed `eta`, the corresponding choice `b=1-Theta+eta` has exponent `eta`; no single-family `T^{o(1)}` claim will remain. Finally, the comparison with `RE-111` will explicitly import its standing `L<=Y` hypothesis before using the short-corridor estimate (15).
+
+## Adversary
+
+The mathematical objection is resolved. Closure is pending persistence of exactly those four repairs in the canonical finding: the `u_e` notation, direct left-limit argument, family-by-family packing interpretation, and explicit `L<=Y` hypothesis in the `RE-111` comparison.
