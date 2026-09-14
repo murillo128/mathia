@@ -1,39 +1,29 @@
-# MI-016 — Critical translation locality is a seam-normalized two-pant Fourier-coupling test
+# MI-016 — The seam-normalized two-pant translation test is exact, and the prime-flute tail fails it
 
-**Evidence level:** exact necessary-condition reduction from [PF-337](../../findings/PF-337-critical-translations-expose-the-frequency-off-diagonal-mass-of-the-normalized-pant-insertion.md)--[PF-340](../../findings/PF-340-symmetric-seam-parity-averages-two-adjacent-pant-self-responses.md). No two-pant no-cancellation theorem, raw energy lower bound, concentration theorem or direct-angle endpoint is claimed.
+**Evidence level:** exact necessary-condition reduction from PF-337--PF-340 and decisive tail obstruction from [PF-341](../../findings/PF-341-thin-pant-self-dtn-contrast-has-common-positive-sign.md). This kills the PF-336 normalized-insertion translation route; it does not prove the completed-angle lower bound sought by the independent direct Hilbert--Schmidt route.
 
-PF-336 reduces completed polar translation transport to the Hilbert--Schmidt commutator of the normalized pant insertion `K=Q_L^(-1/2) Lambda_LL Q_L^(-1/2)`. PF-337 diagonalizes the translation action:
+PF-336 reduces completed polar translation transport to a Hilbert--Schmidt commutator of the normalized pant insertion. PF-337 diagonalizes the translation action, PF-338 compresses the finite-boundary odd sector to half-cuff cross-parity mass, and PF-339 converts the normalized condition into a raw seam-width test: every fixed odd-offset symmetric-channel coupling must be `o(w_n)`.
 
-`||[K,tau_t]||_(S2)^2 = sum_(j,k) 4 sin^2((xi_j-xi_k)t/2) |K_(jk)|^2`.
+PF-340 identifies the exact scalar hidden by that channel. The symmetric response on cuff module `n` averages the self-DtN blocks of the two adjacent pant cores, so the explicit two-mode witness is
 
-Averaging over the positive-length critical interval turns locality into a positive frequency-mixing statement. PF-338 then makes the finite-boundary subsequence much stronger: when `r_n=h_(n+1)/h_n -> 0`, the whole retained odd-offset sector is controlled by half-cuff translation `H_n=tau_(ell_n/2)`, so the route requires
+`Delta_n^sym = (Delta_n^-+Delta_n^+)/2`.
 
-`||[K_n,H_n]||_(S2)=o(1)`,
+The translation route therefore requires `Delta_n^-+Delta_n^+=o(w_n)`. Before PF-341 this left a genuine cancellation loophole because the right-pant geometry alone could not control the left response.
 
-equivalently vanishing cross-parity mass `||P_(n,+)K_nP_(n,-)||_(S2)=o(1)`.
+PF-341 closes that loophole. For the half-cuff-exchanged pair `f_+=(c_2+c_1)/sqrt 2`, `f_-=(c_2-c_1)/sqrt 2`, the collapsing finite-finite corridor sees `f_+` with nonzero boundary value but `f_-` with a quadratic zero. On a tail pant with boundary period `L` and finite-finite separation `s`,
 
-PF-339 removes most of the normalized-operator bookkeeping from the obstruction side. In the symmetric seam-parity channel, every fixed nonzero Fourier mode has seam energy
+`<f_+,Af_+> >= c/(sL)`,
 
-`q_(n,+)(k)=w_n(1+o(1))`,
+while the explicit `f_-` extension has singular cost only `O(1/(sL^5))` plus a bounded remainder. Since `sL->0`, the contrast is eventually positive. Applied on both sides of cuff `n`,
 
-with seam half-width `w_n asy P_n^(-1)`. Hence every fixed odd-offset raw symmetric-channel Fourier coupling must be `o(w_n)`.
+`Delta_n^+ >= c/(s_n L_n)`, `Delta_n^- >= c/(s_(n-1)L_n)`.
 
-PF-340 identifies the exact raw object hidden by that symmetric channel. After the simultaneous seam cut, the two faces of cuff module `n` belong to different adjacent pant cores. If `A_n^-` and `A_n^+` are the left and right self-DtN blocks, then
+Thus the two adjacent terms have the **same positive sign**, and
 
-`Lambda_n^(+) = (A_n^- + A_n^+)/2`.
+`Delta_n^sym / w_n \gtrsim P_n^1.475/log P_n -> infinity`.
 
-Thus a fixed Fourier matrix element and the two-mode energy witness are **averages of two adjacent pant responses**, not one-pant quantities. For the explicit half-cuff-exchanged cosine pair, if `Delta_n^-` and `Delta_n^+` are the left/right pant contrasts, then
+The necessary `o(w_n)` condition fails by a diverging factor on the whole tail. The normalized-insertion translation-locality architecture is therefore not merely unproved; it is falsified by the explicit lowest two-mode seam witness.
 
-`Delta_n^sym = (Delta_n^- + Delta_n^+)/2`.
+The reusable lesson is representation-specific: once a completed translation criterion is reduced to a raw local PDE response, one must test the exact bidirectional scalar produced by the cut geometry. Here that scalar survives completion but is forced large by a corridor zero/nonzero dichotomy. Returning to higher odd modes cannot repair the failed necessary condition.
 
-The PF-336 translation route therefore requires
-
-`Delta_n^- + Delta_n^+ = o(w_n)`
-
-along the `r_n->0` subsequence. A right-pant lower bound `|Delta_n^+| gtrsim w_n` is not by itself a contradiction because the left pant can in principle cancel it. The arithmetic regime controls `h_(n+1)/h_n` and therefore the right pant geometry, but says nothing comparable about `h_(n-1)/h_n`.
-
-The cheapest obstruction-side PDE theorem is consequently still scalar, but it is a **two-pant no-cancellation test**. It suffices to prove one of three mathematically distinct statements: the two contrasts have a common eventual sign, one dominates the other with a seam-scale lower bound, or their sum can be estimated directly and has nonzero seam-normalized limsup. Only if the actual sum is `o(w_n)` is it useful to return to higher odd modes, surviving even-offset/fixed-physical-separation mass, or a positive full-commutator estimate.
-
-This remains separate from physical concentration of a completed reference packet. Translation compatibility does not localize a packet in space because spatial cutoffs need not commute with `Q`.
-
-**Boundary.** PF-337--PF-340 give necessary conditions only. PF-340 proves the exact decomposition and exposes a cancellation channel; it does not assert that cancellation occurs or that the two pant contrasts have opposite signs. Zero twist aligns the test profiles but does not equalize the adjacent self-responses. A one-sided corridor calculation remains useful input, but it is not a completed falsifier until the other side is controlled.
+**Boundary.** PF-341 does not localize a completed packet in physical space and does not rule out the independent PF-318/PF-320 direct Hilbert--Schmidt upper-bound route. Translation compatibility and direct angle control are now separate branches rather than two versions of the same endpoint.

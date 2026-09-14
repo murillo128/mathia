@@ -14,24 +14,24 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders, and a growing-complexity diagonal selector can pass every fixed finite-prime finite-order Haar test. A useful theorem needs a predeclared joint complexity/height growth law or source information outside the sampled phase-clock state.
 
-## Compress the finite-start dephasing horizon or expose genuinely pointwise coherent starts
+## Quantify weighted cycle frustration and near-maximizer access time for pointwise worst starts
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question`, `MI-010-weighted-null-needs-separate-concentration-and-shape-dimensions`, `MI-011-finite-start-dephasing-is-priced-by-weighted-local-spacing`, `MI-012-cutoff-tuning-cannot-beat-the-four-form-pointwise-threshold`, `MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling`, `MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly`, `MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization`.
 
-VIS-203--VIS-209 reduce the only nonzero one-cancellation layer in the exact pair-difference expansion to a positive prime-anchor Gram kernel. VIS-211 proves, for the autocorrelation taper and every diverging strictly subcritical scale `H log y/y -> 0`,
+VIS-203--VIS-211 close the nonzero one-cancellation shell in long-start mean square throughout the strictly subcritical regime. VIS-193 gives the unconditional quadratic finite-window baseline, and VIS-194--VIS-202 compress that horizon using coefficient-weighted collision geometry.
 
-`||Psi||_op=o(H^(-1/2))`
+VIS-213 resolves the fixed-`(y,H)` **pointwise existence** question exactly. The start variable traces a dense prime-phase torus orbit and
 
-and hence `E_1=o(R_v^2)` in long-start mean square.
+`sup_(T>=T_0) |M_v(y;H,T)-1| = max_(|z_p|=1) |z^* A_(y,H) z|`
 
-The exact VIS-204 boundary remains important: zero cancellations give the four-prime shells, one cancellation gives the prime/prime family now suppressed, and two cancellations give only `xi=0`, the removed diagonal. There is **no further nonzero higher-cancellation shell** to attack inside this representation.
+for every finite `T_0`. Every near-maximizing torus configuration is therefore revisited arbitrarily late. The long-start variance is the Haar `L^2` norm of the same objective, giving a universal optimum lower bound `sqrt(R_v)` but no macroscopic amplification theorem.
 
-VIS-193 supplies the unconditional finite-start baseline already present in the canonical corpus. Distinct symmetric prime-ratio frequencies are separated at scale at least `y^-2`, so Montgomery--Vaughan gives a uniform finite-window comparison with the long-start variance and every sliding window of length `L>=c y^2` inherits `O(R_v)` mean square. VIS-194--VIS-202 then replace worst spacing by coefficient-weighted collision geometry and beat that quadratic baseline in substantial subcritical corridors.
+VIS-214 makes the coherent-amplitude obstruction gauge-invariant. The absolute coefficient envelope is attained exactly when the complex edge gains are balanced or antibalanced; cycle holonomy is the invariant obstruction after vertex phases are quotiented. A frustrated weighted cycle gives an explicit envelope deficit.
 
-The deleted VIS-212 was a duplicate of this existing VIS-193 finite-window result and contributes no independent evidence. The live frontier is unchanged: compress the deterministic horizon using weighted small-determinant geometry, decide genuinely pointwise worst-start behavior or construct rare coherent starts, and keep the critical scale `H asymp y/log y` separate.
+The live pointwise theorem is now two-dimensional in a precise sense: determine whether the actual weighted prime graph has enough **heavy cycle frustration** to keep the torus optimum near the RMS scale, or instead enough near-balance to amplify it; separately, quantify how long the one-parameter prime-log orbit needs to reach the relevant near-optimizer region as the torus dimension grows. Kronecker density settles only existence at fixed dimension.
 
-A future higher-moment or higher-degree observable may create a new cancellation hierarchy, but that is a different mathematical object. It requires a fresh exact representation and shell classification rather than reusing the pair-difference terminology.
+## Keep representation closure, averaging horizon, torus optimum and access time separate
 
-## Keep representation closure, averaging horizon and pointwise coherence separate
+The pair-difference cancellation taxonomy is exact and has no further nonzero higher-cancellation shell. Averaged suppression does not imply pointwise suppression. The torus optimum is a finite graph optimization problem; access time is simultaneous Diophantine approximation; raw edge phases are gauge-dependent while cycle holonomies are invariant.
 
-VIS-211 closes the one-cancellation Gram frontier only in the stated strictly subcritical averaged regime. VIS-193 gives a uniform quadratic finite-window baseline, and VIS-194--VIS-202 show that weighted collision information can improve the relevant averaging cost. None proves pointwise-in-start cancellation. Conversely, the absence of another nonzero pair-difference cancellation class is exact. Any worst-start theorem must control coherent phases rather than merely shorten an averaging interval.
+A future higher-moment/higher-degree observable may create a new cancellation hierarchy, but it is a different mathematical object and must be classified from scratch rather than reusing pair-difference language.

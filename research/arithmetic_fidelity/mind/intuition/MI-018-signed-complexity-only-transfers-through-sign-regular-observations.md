@@ -1,25 +1,21 @@
-# MI-018 — Signed complexity transfers only through a quantitatively sign-regular observation window
+# MI-018 — Finite sign complexity transfers only after the Euler tail loses to the sampling margin
 
-**Evidence level:** exact source sign-complexity and Euler-log sign-regularity results through AF-220
+**Evidence level:** supported by AF-217--AF-220 and sharpened quantitatively by [AF-337](../../findings/AF-337-deep-half-plane-harmonic-tail-restores-finite-euler-sign-regularity.md). The result is a fixed-finite-order theorem in the absolutely convergent half-plane; no uniform all-order total positivity, critical-line transport, or stable inverse bound is claimed.
 
-## Core intuition
+The useful source currency is not positivity of every minor. It is a **finite sign-variation budget matched to a finite observation order**. AF-217 shows that the Euler-log family is not globally totally positive, while AF-218--AF-220 recover strict sign regularity at each fixed order when the sampling geometry has a quantitative separation/curvature modulus. This is enough to detect any nonzero coefficient vector with fewer sign changes than the observation order.
 
-A source sign budget is useful only when the observation kernel has a matching finite-order variation-diminishing modulus at the scale actually occupied by the source. Global all-order positivity is unnecessary, but qualitative finite-order positivity without a separation modulus is also insufficient.
+AF-337 makes that qualitative principle explicit for the full Euler logarithm rather than its first harmonic. For fixed order `r`, row spacing `h`, and distinct multiplicative sites `q_j in [P,AP]`, the sampling matrix
 
-## Strongest justified principle
+`E_(sigma+(i-1)h)(q_j) = -log(1-q_j^(-sigma-(i-1)h))`
 
-AF-216 gives the sharp source currency: exact cancellation of `m` ordered moments/Dirichlet samples forces at least `m` sign changes. AF-217 rules out total nonnegativity of the full Euler-log kernel as a universal rescue. AF-218 and AF-219 establish global strict sign regularity through orders two and three. AF-220 then shows that for every prescribed finite order, positive curvature together with sufficient coordinate separation yields strict sign regularity on compact interaction windows.
+is strictly sign-regular through order `r` for all sufficiently large `P` whenever
 
-Thus the next bridge is not “prove the kernel totally positive.” It is to match a source-forced finite sign budget to a scale where the Euler kernel has a quantitative finite-order determinant margin that survives tail refinement and inversion.
+`sigma > Gamma_(r,h) := (h+1) binom(r,2)`.
 
-## Counterevidence / boundary
+The mechanism is an exact margin comparison. The first Euler harmonic has a Vandermonde-type minor with a polynomially small lower margin in `P`; the sum of all higher harmonics is `O(P^-sigma)`. Once the latter is smaller than the former, the checkerboard minor signs survive. Equivalently, the full nonlinear Euler logarithm inherits the finite-order variation-diminishing test because its harmonic tail is below the determinant margin actually consumed by that test.
 
-AF-220 does not give global order-four positivity and its separation condition can fail as prime differences become dense. Arbitrary-order Prouhet constructions remain available on genuine prime support, so a fixed observation order cannot control an unbounded source sign budget.
+This supplies a reusable transfer rule: **a source sign budget becomes observable only after the unresolved tail is quantitatively smaller than the finite-order sign-regularity margin.** Merely knowing that the leading kernel has the right sign pattern is not enough, and demanding all-order positivity is stronger than needed.
 
-## Epistemic status
+The remaining arithmetic problem is now sharper rather than solved. The sufficient depth `sigma>Gamma_(r,h)` grows quadratically with `r` and lies deep in `Re s>1`; it can destroy the zero-sensitive information that motivated the Euler representation. A useful bridge must therefore force a small enough source sign budget and transport that finite-order certificate toward the analytically relevant region without paying a depth cost that erases the destination signal. Exact sign detection is also weaker than a uniform inverse/conditioning theorem.
 
-**Supported finite-order synthesis; the tail-uniform quantitative modulus needed for an RH-facing recovery theorem remains open.**
-
-## Falsification criterion
-
-Show that every source-relevant tail window necessarily violates the separation/curvature condition before reaching the required sign order, or construct a bounded-sign-complexity source theorem whose required determinant margin cannot be obtained from AF-220. A positive result should prove the matched source-budget/observation-modulus estimate with explicit scale dependence.
+**Boundary.** AF-337 works for primes and composites alike, so the sign-regular observation geometry is not itself a prime-specific theorem. Its role is to state the quantitative interface that a prime-specific source restriction would have to exploit.
