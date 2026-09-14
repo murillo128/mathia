@@ -1,6 +1,6 @@
-# MI-023 — Two-island Lambert screening is an incidence problem between many lower safe windows and rare upper prime deserts
+# MI-023 — Two-island Lambert screening localizes to only `X^(1/10+o(1))` candidate pieces inside rare upper prime deserts
 
-**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288--WI-290, with the ordinary-prime host sparsity sharpened by [WI-291](../../findings/WI-291-heath-brown-large-gap-sparsity-confines-screening-to-x-one-tenth-upper-deserts.md). Heath-Brown's large-gap theorem is prior art; no theorem coupling the upper and lower prime processes is claimed.
+**Evidence level:** exact for the one-signed, completely screened, symmetric two-island branch through WI-288--[WI-292](../../findings/WI-292-upper-gap-localization-caps-full-screening-components-at-x-one-tenth.md). Heath-Brown's large-gap theorem and the Peck/Maynard prime-gap second-moment input are prior art. No theorem excludes all remaining candidate components or proves cross-scale independence.
 
 WI-288 reduces complete screening on two symmetric narrow islands to the nearest-prime-power condition and the Lambert-scale separation
 
@@ -10,22 +10,22 @@ WI-289 resolves the prime-power layers through
 
 `delta_pp(x)=min_(k>=1) k delta_p(x^(1/k))`.
 
-The ordinary-prime layer near `x` demands a `sqrt(x) log x`-scale desert. Prime squares are the unique macroscopically critical composite layer, requiring an approximately mean-gap-sized prime-free interval near `sqrt(x)`; every `k>=3` root window is subunit. On a dyadic shell the composite exclusions still leave residual measure of order `X log log X/log X`.
+The ordinary-prime layer near `x` demands a `sqrt(x) log x`-scale desert. Prime squares are the unique macroscopically critical composite layer, requiring an approximately mean-gap-sized prime-free interval near `sqrt(x)`; every `k>=3` root window is subunit.
 
-WI-290 shows that this lower-scale reservoir is highly fragmented. Using the published prime-gap second moment with exponent `theta=1/4`, it has at least `X^(3/8-o(1))` positive-length safe components on `[X,2X]`.
+WI-290 shows that the composite-safe lower-scale reservoir is highly fragmented: using the published prime-gap second moment, it has at least `X^(3/8-o(1))` positive-length safe components on `[X,2X]`. WI-291 supplies complementary upper-scale sparsity: the ordinary-prime condition lives in at most `O(X^(1/10+epsilon)/log X)` giant gap hosts of total length `O(X^(3/5+epsilon))`.
 
-WI-291 supplies the complementary upper-scale sparsity. The Lambert ordinary-prime condition forces its host prime gap to be at least `gg sqrt(X) log X`, hence among the square-root-large gaps controlled by Heath-Brown. Consequently the set of eligible centers has total length
+WI-292 proves that these two facts can be partially coupled **without any stochastic cross-scale theorem**. Enlarge each eligible upper host by the additive Lambert radius `O(sqrt(X) log X)`. The enlarged total length remains `O(X^(3/5+epsilon))`. A `k`-th power in the dyadic shell has spacing at least a constant multiple of `X^(1-1/k)`, so counting all integer powers—not merely prime powers—through those enlarged hosts gives only `O(X^(1/10+epsilon))` relevant incidences after summing over `k>=2`.
 
-`O_(c,epsilon)(X^(3/5+epsilon))`
+Removing one prime-power Lambert neighborhood can increase the number of components inside an upper host by at most one. Therefore
 
-and is contained in at most
+`# pi_0(F_c(X)) << X^(1/10+epsilon)`
 
-`O_(c,epsilon)(X^(1/10+epsilon)/log X)`
+for the full screened candidate set `F_c=A_c intersect R_c`, and at most that many positive-length components of the composite-safe residual can meet the ordinary-prime safe set. Since the global residual has `X^(3/8-o(1))` positive components, the fraction that can even enter an eligible host is at most
 
-ordinary-prime gap hosts. In logarithmic separation coordinate its dyadic measure is `O(X^(-2/5+epsilon))`, summable for fixed `epsilon<2/5`.
+`X^(-11/40+o(1))`.
 
-The bottleneck is therefore not scarcity on either side. It is a **localization/correlation theorem between a polynomially fragmented lower-scale safe reservoir near `sqrt(x)` and a much rarer arithmetically selected family of giant upper gaps near `x`**. The exponent mismatch alone gives no intersection or avoidance result; all lower safe components could, on current information, miss the eligible upper hosts.
+The bottleneck has therefore shifted from a global cross-scale abundance problem to a **rare-host incidence problem**. Almost every lower-scale safe component is deterministically irrelevant. Improving the global count of lower windows cannot close the branch because the surviving arithmetic lives inside only `X^(1/10+o(1))` host-localized pieces.
 
-This closes the raw-abundance route. More composite-safe windows do not help unless one proves where they sit relative to the rare upper deserts. A closing theorem must couple the two prime scales, exploit null-equation amplitudes/signs discarded by pure support screening, or leave the symmetric two-island topology.
+This is meaningful pruning, not exclusion. The remaining pieces may all be empty after finer arithmetic checks, or some may survive infinitely often. A closing theorem must now show that composite prime powers necessarily hit the rare upper-safe cores, establish a cross-scale avoidance/correlation law strong enough on this selected host family, exploit amplitudes/signs from the null equation, or leave the symmetric two-island topology.
 
-**Boundary.** WI-291 does not rule out any completely screened center, prove cross-scale independence, or make the candidate set discrete. Finite/summable logarithmic measure still permits infinitely many candidate separations. The conclusion is confined to complete one-signed symmetric two-island screening.
+**Boundary.** WI-292 uses only worst-case spacing of integer powers once the upper hosts are localized; it does not prove independence between primes near `x` and `sqrt(x)`, does not rule out any particular candidate host, and says nothing about sign-changing, incomplete-screening or many-island geometries. The exact conclusion is a localization theorem: complete two-island screening can occupy only a polynomially tiny subfamily of the lower safe reservoir.

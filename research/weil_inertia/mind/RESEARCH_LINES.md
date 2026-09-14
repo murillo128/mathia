@@ -8,28 +8,26 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 Finite negative inertia detects off-line packets exactly but can lose coercivity with height. The unconditional critical-line exponentials are complete on bounded windows without forming a Bessel/Riesz family, so ordinary separation cannot rule out spectral collapse. Any truncation route still has to price coefficient growth and height tightness explicitly.
 
-## Couple a polynomial lower-scale safe reservoir to the rare giant upper prime-gap hosts
+## Resolve cross-scale incidence inside the rare upper host family, not in the global lower reservoir
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols`, `MI-018-one-signed-first-crossings-pay-prime-overlap-or-short-range-mass`, `MI-019-simultaneous-cuts-create-a-positive-saturated-source-reserve`, `MI-020-complete-one-signed-screening-trades-discrete-vanishing-for-support-packing`, `MI-021-complete-screening-promotes-support-avoidance-to-prime-deleted-spectral-criticality`, `MI-022-fixed-finite-prime-power-screening-cannot-buy-prime-deleted-spectral-coercivity`, `MI-023-nearest-prime-width-has-a-lambert-w-spectral-endpoint`.
 
-WI-284 supplies the operator target: complete one-signed screening forces the prime-deleted gamma-plus-pole form to have bottom exactly zero. WI-288 shows that the symmetric two-island screening family is exactly the nearest-prime-power Lambert gap condition, and WI-289 decomposes it into root-scale prime gaps. Prime squares are the unique critical composite layer; all `k>=3` layers are subunit at the root scale. Composite prime powers nevertheless leave residual measure of order `X log log X/log X` on `[X,2X]`.
+WI-284 supplies the operator target: complete one-signed screening forces the prime-deleted gamma-plus-pole form to have bottom exactly zero. WI-288 shows that the symmetric two-island screening family is exactly the nearest-prime-power Lambert gap condition, and WI-289 decomposes it into root-scale prime gaps. Prime squares are the unique critical composite layer; all `k>=3` layers are subunit at the root scale.
 
-WI-290 shows that this lower-scale residual cannot hide in a few intervals. Prime squares are exact separators, and the published prime-gap second-moment exponent `theta=1/4` already forces `X^(3/8-o(1))` positive-length composite-safe components.
+WI-290 proves that the composite-safe residual has at least `X^(3/8-o(1))` positive-length components on `[X,2X]`. WI-291 supplies the opposite upper-scale sparsity: the ordinary-prime Lambert threshold confines eligible centers to total length `O(X^(3/5+epsilon))` and at most `O(X^(1/10+epsilon)/log X)` giant ordinary-prime gap hosts.
 
-WI-291 now quantifies the opposite side of the incidence problem. The ordinary-prime Lambert threshold forces a host gap of size `gg sqrt(X) log X`. Heath-Brown's published large-gap theorem therefore confines eligible centers to total length
+WI-292 localizes these two facts against each other. After enlarging the rare upper hosts by one Lambert radius, elementary spacing of integer powers shows that only
 
-`O_(c,epsilon)(X^(3/5+epsilon))`
+`O_(c,epsilon)(X^(1/10+epsilon))`
 
-and to at most
+composite prime-power neighborhoods can cut them. Consequently the full screened candidate set `F_c(X)=A_c(X) intersect R_c(X)` has at most `O(X^(1/10+epsilon))` connected components, and at most that many positive-length composite-safe components can meet the ordinary-prime safe set at all.
 
-`O_(c,epsilon)(X^(1/10+epsilon)/log X)`
+Compared with the global `X^(3/8-o(1))` composite-safe reservoir, only an `X^(-11/40+o(1))` fraction of its positive-length components can even enter an eligible upper host. This is deterministic and requires no cross-scale independence hypothesis. It closes the idea that more global lower safe windows, or a sharper count of them, can force a candidate by abundance.
 
-ordinary-prime gap hosts on `[X,2X]`. In logarithmic separation coordinate the eligible upper set has summable dyadic measure `O(X^(-2/5+epsilon))`.
+What remains is much smaller and more arithmetic: determine whether any of the `X^(1/10+o(1))` host-localized candidate pieces actually survive all prime-power cuts infinitely often, or prove that the actual upper/lower prime incidence excludes them. The relevant theorem must work **inside the rare host family**. A cross-scale correlation/avoidance law, null-equation amplitude/sign information, or a different support topology could still close the branch.
 
-Thus the remaining theorem is no longer “produce many safe windows” or “show giant gaps are rare.” Both facts are available in incompatible coordinates. The hard step is a genuine **cross-scale localization/correlation theorem** showing how the `X^(3/8-o(1))` lower-scale safe components generated near `sqrt(x)` meet or avoid the far rarer `X^(1/10+o(1))` family of upper ordinary-prime deserts selected near `x`. Raw exponent comparison or pigeonhole does not provide that coupling.
+## Keep support screening, global reservoir topology, host localization, surviving candidate incidence, null amplitudes and sign geometry separate
 
-A second route is to use amplitudes/signs from the actual null equation, or leave the symmetric two-island topology.
+WI-290 rigidifies the topology of the global composite-safe reservoir. WI-291 rigidifies the rarity of the ordinary-prime hosts. WI-292 shows that almost all lower safe components are deterministically irrelevant after localization: only `X^(1/10+o(1))` can meet an eligible host.
 
-## Keep support screening, residual topology, host sparsity, cross-scale placement, null amplitudes and sign geometry separate
-
-WI-290 rigidifies the topology of the composite-safe reservoir; WI-291 rigidifies the rarity of the ordinary-prime hosts. Neither gives an intersection theorem. A set of summable logarithmic measure may still contain infinitely many candidate separations, and a polynomial number of lower safe components can all miss the exceptional upper hosts. Many-component supports, sign-changing modes and incomplete screening remain different geometries and must not inherit the two-island reduction without a new proof.
+This is still not an exclusion theorem. A polynomially tiny subfamily can contain infinitely many survivors, and no cross-scale decorrelation has been proved. Many-component supports, sign-changing modes and incomplete screening remain different geometries and must not inherit the two-island reduction without a new proof.
