@@ -4,7 +4,7 @@
 
 `RE-110` shows that recovery from a positive adaptive Robin witness cannot be fast unless the full CA event workload develops a large positive forward defect. In particular, a recovery at the natural `RE-109` scale forces at least one crossed event to reach the full one-sided PNT envelope. That leaves a serious loophole: perhaps the recovery can be paid by one isolated extreme event, with the rest of the source behaving normally.
 
-It cannot. The recovery budget is an **area** budget, while the PNT controls the height of the workload. Combining those two facts forces a packet of positive workload of macroscopic event mass. In the quantitative false-RH regime, the total higher-layer mass is asymptotically too small to carry that packet, so almost all of it must lie on ordinary first-layer prime events. This converts the full-event statement of `RE-110` into a multiplicity statement for the ordinary Chebyshev error.
+It cannot. The recovery budget is an **area** budget, while the PNT controls the height of the workload. Combining those two facts forces a packet of positive workload of macroscopic event mass. In the quantitative false-RH regime, the total higher-layer mass is asymptotically too small to carry that packet, so almost all of the marked event mass must lie on ordinary first-layer prime events. This converts the full-event statement of `RE-110` into a multiplicity statement for the ordinary Chebyshev error.
 
 Let `C<D` be CA states, put
 
@@ -57,7 +57,7 @@ p-\vartheta(p)
 \tag{5}
 \]
 
-Since all these primes satisfy `p asymp Y`, (4) gives
+Since all these primes satisfy `p\asymp Y`, (4) gives
 
 \[
 \boxed{
@@ -143,11 +143,17 @@ A:=h(C)Y^2\log Y.
 `RE-110` gives
 
 \[
-\mathcal W_+(C,D)\ge(1+o(1))A.
+\mathcal W_+(C,D)\ge(1-o(1))A.
 \tag{14}
 \]
 
-Because `L<=Y`, every physical coordinate `s` lies in `[Y,2Y]`. If `f(s)>0`, then `Q(s)>s`; the PNT estimate `Phi(x)=x+O(x mathcal E(x))` from `RE-109` forces `Q(s) asymp Y` and hence uniformly
+Because `L\le Y`, every physical coordinate `s` lies in `[Y,2Y]`. If `f(s)>0`, then `Q(s)>s`; the PNT estimate
+
+\[
+\Phi(x)=x+O(x\mathcal E(x))
+\]
+
+from `RE-109` forces `Q(s)\asymp Y` and hence uniformly
 
 \[
 0\le f(s)\ll Y\mathcal E(Y).
@@ -157,7 +163,7 @@ Because `L<=Y`, every physical coordinate `s` lies in `[Y,2Y]`. If `f(s)>0`, the
 Let
 
 \[
-T:=\frac{A}{2L}
+T:=\frac{A}{4L}
 \tag{16}
 \]
 
@@ -168,14 +174,14 @@ S:=\{s\in(Y,V]:f(s)\ge T\}.
 \tag{17}
 \]
 
-Writing `M:=sup f`, equations (14)--(17) give, after absorbing the harmless `o(1)`,
+Writing `M:=\sup f`, equation (14) is at least `3A/4` for all sufficiently large witnesses, while
 
 \[
-A
+\int_Y^V f(s)\,ds
 \le
 TL+M|S|
 =
-\frac A2+M|S|.
+\frac A4+M|S|.
 \tag{18}
 \]
 
@@ -203,11 +209,11 @@ T
 
 The statement is a deterministic layer-cake consequence of the one-sided recovery area and the PNT supremum envelope. No distributional theorem for primes is used here.
 
-## 2. Higher layers have too little mass to carry the packet
+## 2. Higher layers have too little mass to carry the marked event groups
 
-The packet in (19) is initially a packet of **full CA events**, so it could in principle be supported on higher layers. The quantitative false-RH range excludes that possibility by a power margin.
+Let `G_S` be the set of crossed event groups whose physical intervals `I_e` meet `S`. Since the intervals are disjoint and their union covers `S`, the total logarithmic mass of groups in `G_S` is at least `|S|`.
 
-As in `RE-109`, the total logarithmic mass of all higher-layer events up to scale `x` satisfies
+The packet is initially a packet of **full CA event groups**, so it could in principle be supported mostly on higher layers. The quantitative false-RH range excludes that possibility by a power margin. As in `RE-109`, the total logarithmic mass of all higher-layer events up to scale `x` satisfies
 
 \[
 \Phi_{\ge2}(x)
@@ -216,7 +222,7 @@ As in `RE-109`, the total logarithmic mass of all higher-layer events up to scal
 \tag{21}
 \]
 
-All event coordinates that contribute to `S` are `asymp Y`, so the entire higher-layer atomic mass available to the recovery is at most
+All event coordinates in `G_S` are `\asymp Y` by the same PNT localization used in (15), so the entire higher-layer atomic mass available to those groups is at most
 
 \[
 O\!\left(\sqrt Y(\log Y)^{3/2}\right).
@@ -243,7 +249,7 @@ Y^{b-1/2}(\log Y)^{1/2}\mathcal E(Y)
 \tag{24}
 \]
 
-Tied event groups cause no problem. As already allowed in `RE-109`--`RE-110`, one may subdivide a tied group into atomic physical intervals carrying the individual logarithmic masses while retaining the common event coordinate. Removing every higher-layer atomic interval costs at most (22). Equations (19) and (24) therefore leave first-layer atomic mass
+Consequently, after removing **all** higher-layer atoms from the marked groups, their remaining first-layer atomic mass is still
 
 \[
 \boxed{
@@ -253,20 +259,20 @@ Tied event groups cause no problem. As already allowed in `RE-109`--`RE-110`, on
 \tag{25}
 \]
 
-inside `S`.
+Ties cause no allocation ambiguity here: the argument counts the complete mass of every group meeting `S` and then subtracts the total higher-layer mass globally. It does not assign points of `S` to individual tied atoms.
 
-Each surviving first-layer atom is indexed by one distinct ordinary prime `p`, has mass `log p`, and has event coordinate `eta_1(p)`. Since `eta_1(p)-p=O(1)` by `RE-042`/`RE-069` and `eta_1(p) asymp Y`, we have `p asymp Y` and `log p asymp log Y`. Dividing (25) by the maximal atomic mass proves (4) and (6).
+Each surviving first-layer atom is indexed by one distinct ordinary prime `p`, has mass `\log p`, and has event coordinate `\eta_1(p)`. Since `\eta_1(p)-p=O(1)` by `RE-042`/`RE-069` and `\eta_1(p)\asymp Y`, we have `p\asymp Y` and `\log p\asymp\log Y`. Dividing (25) by the maximal atomic mass proves (4) and (6).
 
-## 3. Large full-event forward defect transfers to the ordinary Chebyshev deficit
+## 3. Every marked first-layer group transfers to an ordinary Chebyshev deficit
 
-It remains to show that the packet is not merely a multiplicity statement about the full CA staircase. Let a surviving first-layer atom belong to an event group at `eta=eta_1(p)` and suppose its atomic interval meets `S`. If `s` is a point of that intersection, then
+Let a marked group in `G_S` contain a first-layer atom indexed by `p`, and write `\eta=\eta_1(p)`. Since its interval meets `S`, there exists `s\in I_e\cap S`, and therefore
 
 \[
 \eta-s\ge T.
 \tag{26}
 \]
 
-Since the group begins at `Phi(eta^-)<=s`,
+The group begins at `u_e=\Phi(\eta^-)\le s`, so
 
 \[
 \eta-\Phi(\eta^-)
@@ -284,7 +290,7 @@ The decomposition used in `RE-109` gives, uniformly on this scale,
 \tag{28}
 \]
 
-The threshold (20) is much larger than this error throughout the quantitative false-RH branch. Indeed `L<=Y` and `h(C)\gg_JY^{-b}` imply
+The threshold (20) is much larger than this error throughout the quantitative false-RH branch. Indeed `L\le Y` and `h(C)\gg_JY^{-b}` imply
 
 \[
 T
@@ -293,7 +299,7 @@ Y^{1-b}\log Y,
 \tag{29}
 \]
 
-whereas the error in (28) is only `Y^{1/2}(log Y)^{3/2}`; their ratio tends to infinity because `b<1/2`. Thus (27)--(29) give
+whereas the error in (28) is only `Y^{1/2}(\log Y)^{3/2}`; their ratio tends to infinity because `b<1/2`. Thus (27)--(29) give
 
 \[
 \eta-\vartheta(\eta^-)
@@ -309,7 +315,7 @@ p<\eta_1(p)<p+\frac12
 \tag{31}
 \]
 
-for all sufficiently large `p`. Hence there is no ordinary prime between `p` and `eta_1(p)`, so
+for all sufficiently large `p`. Hence there is no ordinary prime between `p` and `\eta_1(p)`, so
 
 \[
 \vartheta(\eta_1(p)^-)=\vartheta(p),
@@ -356,9 +362,9 @@ Y\mathcal E(Y)
 \tag{36}
 \]
 
-uniformly for `p asymp Y`. This proves (9).
+uniformly for `p\asymp Y`. This proves (9).
 
-Moreover (4) and (34) show that the marked first-layer mass is `gg L` in this branch. Since it is also at most the total crossed physical mass `L`, a fixed positive proportion of the whole recovery is supported on first-layer events whose ordinary Chebyshev error has the favorable sign and saturates the unconditional PNT envelope up to constants.
+Moreover (4) and the near-minimal upper bound (8) show that the marked first-layer mass is `\gg L`. Since it is also at most the total crossed physical mass `L`, a fixed positive proportion of the whole recovery is carried by first-layer atoms in marked groups whose ordinary Chebyshev error has the favorable sign and saturates the unconditional PNT envelope up to constants.
 
 Thus the minimal-scale escape remaining after `RE-109`--`RE-110` has become substantially more rigid:
 
@@ -384,7 +390,7 @@ L_0
 \tag{38}
 \]
 
-Split the interval into atoms of mass `asymp log Y`, and place their event coordinates so that each forward defect is
+Split the interval into atoms of mass `\asymp\log Y`, and place their event coordinates so that each forward defect is
 
 \[
 M\asymp Y\mathcal E(Y).
@@ -420,13 +426,13 @@ Large-value and concentration questions for the PNT error are classical, and rec
 
 No new external theorem is load-bearing. The PNT envelope, first-layer timing law, higher-layer mass estimate, adaptive amplitude floor, and recovery quadrature are all already anchored in `SOURCES.md` through earlier findings.
 
-The next source-specific target is therefore sharper than the `RE-110` maximum-defect condition. It is enough to rule out, on CA-selected recovery intervals, packets of
+The next source-specific target is therefore sharper than the `RE-110` maximum-defect condition. It is enough to rule out, among the first-layer primes selected by a CA recovery, packets of
 
 \[
 \gg_J Y^{1-b}/\mathcal E(Y)
 \]
 
-distinct first-layer primes simultaneously satisfying
+distinct primes simultaneously satisfying
 
 \[
 p-\vartheta(p)\asymp Y\mathcal E(Y)
