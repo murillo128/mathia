@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 834376c2cef6466d9a7835745c20b608b2a692d3
+source_revision: 856cbb07faa1977c9c44ec8443b15949edb113f3
 derived: true
 ---
 
@@ -28,44 +28,25 @@ Thus:
 - pruned share of visited mass = **18.3%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-No v1 territory changes state in the current source window. The denominator and all state masses remain unchanged; the new findings sharpen boundaries inside represented territories or initialize line-level evidence without a source-backed Atlas transition.
+The v1 denominator and territory states are unchanged by this structural reconciliation and the scoped Euler harmonic refinement. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
 
-## Largest unvisited territories
+## Atlas scope and confidence
 
-1. Levinson–Conrey mollifier machinery — **5.0%**
-2. classical Dirichlet-polynomial zero detection — **4.0%**
-3. RMT/GUE universality as a primary route — **3.5%**
-4. zero-density as a primary attack — **2.5%**
-5. direct abstract Hilbert–Pólya zero operator — **2.5%**
+The atlas retains 10 macro-families and 37 leaf territories. Its known-space taxonomy and masses are versioned modeling choices, not a percentage of RH solved. The world-literature denominator remains unknown; see [[research/graph/atlas/v1|v1 model and calibration]].
 
-## Scoped hard closures
+The five hard-pruned interfaces retain their existing scoped canonical evidence: ordinary Prime-Flute global Selberg/Ruelle machinery (3.0%), ordinary positive-calculus closures (2.5%), standard prime-shift covariance (2.5%), single-profile Gram compression (2.0%), and symmetric full-cover uniformization (1.2%). The Euler sampling refinement does not alter those closures.
 
-Hard-pruned mass remains concentrated in the same five scoped interfaces: ordinary Prime-Flute global Selberg/Ruelle/Fredholm machinery (**3.0%**), ordinary positive-calculus/Hodge/Fisher/DtN closures (**2.5%**), standard prime-shift covariance/log-Hamiltonian (**2.5%**), single-profile Gram-defect compression in Weil Inertia (**2.0%**), and the symmetric full-cover Weil–Petersson/uniformization package (**1.2%**). The current findings sharpen neighboring boundaries but do not justify expanding those closures.
+## Structural and semantic scope
 
-## Live frontier concentration
-
-Largest live family masses remain B moments/inertia/statistics (**8.5%**), C explicit-formula/positivity (**8.5%**), H geometric/cohomological/adelic (**6.8%**), A classical analytic localization (**6.5%**), G arithmetic/harmonic (**5.0%**), F equivalent criteria (**4.0%**), and E scattering/dynamical (**3.5%**).
-
-The source window has four narrow positive movements: Analytic Frontier makes positive-cascade slack and span budgets summable, Prime Flute reduces the remaining shear question to actual-seam separated Poisson regularity, Robin Extremal makes the half-jump peak gate uniform on the genuine CA ladder, and Visual Exploration isolates a collision-free third-factorial carrier with a precise remaining CUE calibration. Prime Circle classicalizes repeated-prime depth through the squarefree radical. Arithmetic Fidelity, Farey Discrepancy, Möbius Cancellation, Nyman–Beurling, Prime Lattice, Weil Inertia, Weil Positivity and Xi Flow each establish a new quantitative or structural barrier to their current finite/scalar/symmetric compression route.
-
-## Structural signals
-
-- **13** research-line hubs are materialized and all thirteen now have canonical finding evidence.
-- Atlas v1 still has **10 macro-families and 37 leaf territories**; the denominator is unchanged.
-- The current curator source window adds **59 canonical findings**. Durable intuition membership and canonical prior-art membership have no source-window additions or removals.
-- No new cross-line semantic relation is promoted; structural line ownership is refreshed independently of semantic linking.
-- The default Obsidian Graph View remains compatible with the curator contract; there is no presentation-model change in this source window.
+The exact tree projections contain 13 research lines, 3,066 findings, 249 durable intuitions and 58 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The newest classifiable source window is `6bdd034286634bc4e096acccbbe981d1e49cbacd` → `834376c2cef6466d9a7835745c20b608b2a692d3` and contributes **13** episodes: **4 viable extensions**, **1 known-prior-art collision**, **0 internal duplicates**, and **8 new barriers**.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-337 and AF-338 contribute one coherent finite-order Euler-transport extension. This is a selected episode sample, not a census of the source window.
 
-The canonical trailing prospective window in [[research/graph/atlas/telemetry/frontier-events.jsonl|frontier-events.jsonl]] contains **20** episodes: **7 viable extensions**, **2 known-prior-art collisions**, **0 internal duplicates**, and **11 new barriers**. Therefore:
-
-- **FrontierFertilityEpisodes = 35.0%**
-- **BarrierRate = 55.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 50.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
-- **InsufficientEvidence = 0**
 
-See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for episode-level provenance and interpretation. Atlas state masses and marginal telemetry answer different questions; neither signal alone justifies changing the research portfolio.
+See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for per-line sample sizes and [[research/graph/atlas/telemetry/frontier-events.jsonl|the event set]] for exact source provenance. Retrospective and prospective evidence are separate, and no metric alone justifies a portfolio decision.

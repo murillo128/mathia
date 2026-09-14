@@ -4,7 +4,7 @@
 
 ## Claim
 
-AF-216 proves an all-order sign-complexity theorem for the first Dirichlet harmonic and explicitly leaves open the missing transfer to the full Euler logarithm. AF-217 shows that such a transfer cannot hold globally at every order, while AF-218--AF-220 recover only low order or separation-dependent regimes.
+[[research/arithmetic_fidelity/findings/AF-216-ordered-sign-complexity-caps-moment-and-dirichlet-cancellation|AF-216]] proves an all-order sign-complexity theorem for the first Dirichlet harmonic and explicitly leaves open the missing transfer to the full Euler logarithm. [[research/arithmetic_fidelity/findings/AF-217-nontrivial-zeta-zeros-obstruct-all-order-euler-total-positivity|AF-217]] shows that such a transfer cannot hold globally at every order, while AF-218--AF-220 recover only low order or separation-dependent regimes.
 
 There is nevertheless an exact regime in which the full Euler logarithm inherits **any prescribed finite sign order** from its first harmonic: move sufficiently far into the positive real half-plane relative to the requested order, and restrict the source to a fixed multiplicative integer window escaping to infinity.
 
@@ -514,11 +514,11 @@ No fixed `sigma` satisfies `(10)` for all `r`. The theorem therefore supplies a 
 
 ### AF-218 and AF-219 remain stronger at low order
 
-AF-218 and AF-219 establish the correct full-Euler signs globally at orders two and three without a far-tail assumption and without requiring large `sigma`. AF-337 is weaker there. Its new content is that **arbitrary fixed order** becomes available on escaping integer/prime windows once the real sampling depth beats the explicit order-dependent exponent.
+[[research/arithmetic_fidelity/findings/AF-218-full-euler-log-is-strictly-sign-regular-of-order-two|AF-218]] and [[research/arithmetic_fidelity/findings/AF-219-full-euler-log-is-strictly-sign-regular-of-order-three|AF-219]] establish the correct full-Euler signs globally at orders two and three without a far-tail assumption and without requiring large `sigma`. AF-337 is weaker there. Its new content is that **arbitrary fixed order** becomes available on escaping integer/prime windows once the real sampling depth beats the explicit order-dependent exponent.
 
 ### AF-220's collapsing curvature certificate is not the end of the finite-order route
 
-AF-220 supplies a curvature/separation certificate whose usable margin degenerates when transformed source columns coalesce on prime tails. AF-337 exposes a different resource balance. Even though `q^{-h}` nodes coalesce as `P->infinity`, their Vandermonde margin decays only like a finite power `P^{-Gamma}` at fixed order, while every extra Euler harmonic pays an additional `P^{-sigma}` factor. If `sigma>Gamma`, harmonic suppression wins.
+[[research/arithmetic_fidelity/findings/AF-220-curvature-separation-certifies-finite-order-euler-sign-regularity|AF-220]] supplies a curvature/separation certificate whose usable margin degenerates when transformed source columns coalesce on prime tails. AF-337 exposes a different resource balance. Even though `q^{-h}` nodes coalesce as `P->infinity`, their Vandermonde margin decays only like a finite power `P^{-Gamma}` at fixed order, while every extra Euler harmonic pays an additional `P^{-sigma}` factor. If `sigma>Gamma`, harmonic suppression wins.
 
 Thus a failed **local-separation certificate** does not imply failure of the underlying sign property. The correct tail audit must compare the rate of source-column collision with the rate at which unwanted harmonics are attenuated.
 

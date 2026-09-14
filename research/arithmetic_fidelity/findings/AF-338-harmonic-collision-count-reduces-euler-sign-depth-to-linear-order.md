@@ -4,7 +4,7 @@
 
 ## Claim
 
-AF-337 proves that every fixed sign order of the full Euler-log sampling matrix is eventually recovered on escaping integer windows once the left sample depth satisfies
+[[research/arithmetic_fidelity/findings/AF-337-deep-half-plane-harmonic-tail-restores-finite-euler-sign-regularity|AF-337]] proves that every fixed sign order of the full Euler-log sampling matrix is eventually recovered on escaping integer windows once the left sample depth satisfies
 
 \[
 \sigma>(h+1)\binom r2.
@@ -457,7 +457,7 @@ For sufficiently large `P`, the right side of `(4)` is strictly below `1`. Every
 
 ## Consequence for bounded source sign complexity
 
-Strict sign regularity through order `r` gives the same oscillation/nullspace consequence used in AF-216 and AF-337. Once `P>=P_0`, a nonzero signed source supported on the selected integer or prime norms and having at most `r-1` ordered sign changes cannot annihilate all `r` full-Euler samples
+Strict sign regularity through order `r` gives the same oscillation/nullspace consequence used in [[research/arithmetic_fidelity/findings/AF-216-ordered-sign-complexity-caps-moment-and-dirichlet-cancellation|AF-216]] and AF-337. Once `P>=P_0`, a nonzero signed source supported on the selected integer or prime norms and having at most `r-1` ordered sign changes cannot annihilate all `r` full-Euler samples
 
 \[
 \sigma,\ \sigma+h,\ \ldots,\ \sigma+(r-1)h.
@@ -495,7 +495,7 @@ The constants in `(19)`, `(22)`, and `(25)` use `q_j/P` bounded above and below.
 
 ### The threshold `sigma>r-1` is sufficient, not claimed sharp
 
-The proof takes absolute values over all higher-harmonic tuples and then bounds every unequal-harmonic pair by the worst possible one-power loss. It does not exploit cancellation among harmonic tuples, the favorable factors in `(20)` and `(23)`, or special source spacing. AF-218 and AF-219 already show that low orders can perform much better globally.
+The proof takes absolute values over all higher-harmonic tuples and then bounds every unequal-harmonic pair by the worst possible one-power loss. It does not exploit cancellation among harmonic tuples, the favorable factors in `(20)` and `(23)`, or special source spacing. [[research/arithmetic_fidelity/findings/AF-218-full-euler-log-is-strictly-sign-regular-of-order-two|AF-218]] and [[research/arithmetic_fidelity/findings/AF-219-full-euler-log-is-strictly-sign-regular-of-order-three|AF-219]] already show that low orders can perform much better globally.
 
 No claim is made that `r-1` is the optimal asymptotic threshold.
 
