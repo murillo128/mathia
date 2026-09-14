@@ -57,7 +57,7 @@ Nothing here proves that the proposed field is nonzero, independent of scalar di
 +\frac{d-b}{2(b+d)}(1,-1),
 \]
 
-so the controlled residual is one-dimensional and every centered Plücker minor vanishes. Even the uncentered determinant is only a first difference of the scalar split imbalance `(d-b)/(d+b)`.
+so the controlled residual is one-dimensional and every centered Plücker minor vanishes. Even the uncentered determinant is only a first difference of the scalar split imbalance `(d-b)/(b+d)`.
 
 The clue therefore remains `proposed`, not `accepted`: its broader carrier is still plausible only if the predeclared refinement vector contains **at least two independent residual coordinates after nuisance removal**. A next test must define those coordinates self-containedly inside the Farey line—e.g. by coupling ancestry with a discrepancy/source residual—and derive their exact finite-order reduction before any diagnostic is inspected. Merely enriching the notation around left/right child gaps, or applying a nonlinear feature map to their single imbalance scalar, does not pass the representation gate.
 
@@ -78,3 +78,17 @@ Unlike `FD-112`, deeper normalized gap vectors can have nonzero centered Plücke
 and has affine-normalized position `v/(ur+v)`. Hence the complete denominator-truncated local refinement movie—visible ancestry, event times, order, normalized positions and gaps at every relative horizon—is already a deterministic function of the same single scalar `r`, equivalently the root split `s=(d-b)/(d+b)`.
 
 At a fixed absolute Farey order `Q`, the moving template depends on `(r,Q^2G)`, where `G=1/(bd)` is the parent gap, so its apparent extra state dependence only re-encodes parent scale rather than supplying a new third local coordinate. The clue therefore remains `proposed` only for a carrier whose second coordinate lives outside the canonical local denominator-cutoff movie: an independently defined discrepancy/source residual, global rank information, cross-horizon source state, or a genuinely global selection rule not reconstructible from `(r,G,Q)`. Ordinary horizon-dependent Stern--Brocot ancestry by itself no longer passes the representation gate.
+
+## Research-watch disposition after `FD-115`
+
+`FD-115` narrows the “discrepancy residual” escape left by `FD-114`. At fixed absolute order `Q`, the global discrepancy of every visible descendant in a unimodular parent cone satisfies
+
+\[
+D_Q(x_{u,v})
+=
+D_Q(A)+\Lambda_Q(u,v)-C_QG\,y_{u,v},
+\]
+
+where the local rank `Lambda_Q`, normalized position `y_(u,v)`, and parent scale `G` are already determined by the canonical visible-ray movie. Thus the full descendant discrepancy vector is a common absolute anchor `D_Q(A)` plus a locally determined profile.
+
+Consequently every zero-sum discrepancy residual inside one cone—pairwise differences, parent-centered values, mean-centered values, finite differences, or any other common-mode quotient—adds no independent coordinate for a Pluecker carrier. The clue remains `proposed`, but its surviving discrepancy channel must now retain information that does **not** cancel the common mode: the absolute anchor `D_Q(A)` and its cross-cone/cross-horizon structure, or a genuinely distinct source-conditioned residual/selection law. Merely attaching centered global Farey discrepancy to the local refinement movie no longer passes the representation gate.
