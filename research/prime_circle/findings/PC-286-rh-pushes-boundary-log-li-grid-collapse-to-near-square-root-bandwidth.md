@@ -29,7 +29,7 @@ Inserting (2) into the exact boundary-log finite-section estimate of PC-284 and 
 
 \[
 \boxed{
-\mathbb E\,W_1^{(\ell^\infty)}
+W_1^{(\ell^\infty)}
 \!\left(
 \rho^{prime,log}_{q,B},
 \rho^{Li,log}_{q,B}
@@ -37,12 +37,12 @@ Inserting (2) into the exact boundary-log finite-section estimate of PC-284 and 
 \ll
 B^{1/3}q^{-1/6}(\log q)^2
 +B^{1/3}q^{-2/3}
-+\frac{(\log q)^2}{q},
++\frac{(\log q)^2}{q}.
 }
 \tag{3}
 \]
 
-where the expectation notation only records the coupling/averaging already used in PC-284; equivalently the left side is the Wasserstein distance between its two spectral laws. In particular, under RH,
+In particular, under RH,
 
 \[
 \boxed{
