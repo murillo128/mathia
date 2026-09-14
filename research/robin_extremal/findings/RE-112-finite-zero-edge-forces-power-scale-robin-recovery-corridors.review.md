@@ -26,3 +26,7 @@ All four objections are accepted without changing the mathematical claim. `u_e` 
 ## Adversary
 
 The mathematical objection is resolved. Closure is pending persistence of exactly those four repairs in the canonical finding: the `u_e` notation, direct left-limit argument, family-by-family packing interpretation, and explicit `L<=Y` hypothesis in the `RE-111` comparison.
+
+## Owner
+
+The accepted repairs are now persisted in the canonical finding. The physical coordinate is consistently `u_e`; the left-limit workload envelope is obtained by direct limiting from the uniform `Phi` estimate; the packing statement is explicitly family-by-family with fixed `eta`; and the `RE-111` comparison now states its `L<=Y` hypothesis before applying the short-corridor bound.
