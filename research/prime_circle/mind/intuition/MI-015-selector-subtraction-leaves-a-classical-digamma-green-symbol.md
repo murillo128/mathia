@@ -1,25 +1,23 @@
-# MI-015 — Count-matched one-profile spectra are classically reproducible throughout every sub-square-root bandwidth
+# MI-015 — Count-matched one-profile spectra remain blind to the first denominator-microscopic resonance
 
-**Evidence level:** unconditional classicalization from PC-282--PC-285 and conditional RH sharpening through [PC-290](../../findings/PC-290-count-matched-l2-transport-reaches-square-root-boundary.md). The count-matched control is deliberately given the scalar source cardinality `M_q`; no converse RH criterion or theorem at `B~sqrt(q)` is claimed.
+**Evidence level:** unconditional classicalization from PC-282--PC-285, conditional RH sharpening through [PC-290](../../findings/PC-290-count-matched-l2-transport-reaches-square-root-boundary.md), and an unconditional representation-level boundary result at square-root resolution from [PC-291](../../findings/PC-291-microscopic-resonance-band-is-spectrally-invisible-at-square-root-resolution.md). The count-matched control is deliberately given the scalar source cardinality `M_q`; PC-291 does not extend the full prime-versus-control collapse to `B~sqrt(q)`.
 
 After selector subtraction, the complete-domain remainder is a classical logarithmic/digamma Green symbol. Prime dependence in this branch survives only through source placement inside the finite section. PC-285 reproduces that placement with a matched Li-grid control through the unconditional Vinogradov--Korobov range.
 
-PC-287--PC-289 progressively remove artificial transport losses under RH: one-dimensional path variation replaces global Lipschitz control, and source-aware short-interval charging removes the clipping atom loss. The remaining `log^2 q` factor in PC-289 came from the pointwise normalized prime-to-Li source discrepancy.
-
-PC-290 shows that this factor is exactly the cost of spreading the scalar endpoint count mismatch through the normalized CDF. Give the control only the total prime-source count `M_q` in addition to the Li profile, and localize the correction near `q`. The RH mean-square PNT estimate then gives
-
-`||F_prime-F_control||_2 = O(q^-1/2)`
-
-up to lower-order terms. This norm matches the existing spectral path derivative estimate
-
-`||F_y'||_2 << B/sqrt(epsilon)`.
-
-With `epsilon=B q^-1/2`, the normalized boundary-log singular-spectrum laws collapse for every
+PC-287--PC-290 progressively remove artificial transport losses under RH. Give the control only the total prime-source count `M_q` in addition to the Li profile, localize the correction near `q`, and the RH mean-square PNT estimate yields the `L^2` source discrepancy needed by the spectral path-energy bound. The normalized one-profile singular-spectrum laws therefore collapse for every
 
 `B=o(sqrt(q))`.
 
-The reusable lesson is now three-layered. Integrated output-path variation is cheaper than global Lipschitz control; source-aware mass inside the singular set is cheaper than worst-atom charging; and **a pointwise source discrepancy can still be the wrong transport norm once the destination already supplies an `L^2` path-energy estimate**. Matching the scalar endpoint mass exposes the actual positional discrepancy seen by that duality.
+PC-291 tests the most tempting explanation for why that theorem stops at square-root scale. PC-271 says `B~sqrt(q)` is the first denominator-microscopic window where an exact or bounded-residue integer relation is forced. But in the PC-283 boundary-log matrix, every fixed residue class is a partial permutation. The complete residue band `|ph+rk|_q<=T` therefore obeys
 
-The interpretation is correspondingly stronger. Under RH, below the rational square-root resolution boundary, the exact prime locations do not create order-one separation in this one-profile observable once total source count is fixed. If the desired RH signature is persistent prime-specific separation, the architecture must retain richer information or operate at the true denominator-microscopic boundary rather than another sub-square-root refinement of the same statistic.
+`||(K^{<=T})/N||_op <= [log q + 2 sum_(t<=T)|k_q(t)|]/N`.
 
-**Boundary.** The count-matched control is not arithmetic-free: it receives `M_q`. PC-290 therefore falsifies positional information conditional on total count; it does not show that the source count itself is irrelevant. No claim is made at `B` comparable with `sqrt(q)`.
+At `N~sqrt(q)`, every fixed `T`—and more generally every `T=o(sqrt(q)/log q)` under the stated sufficient bound—moves the complete ordered singular spectrum by `o(1)`. The exact square-root resonance lies inside such an invisible microscopic band.
+
+So the denominator-microscopic **onset of rational resonance is geometric but not itself an order-one spectral-amplitude threshold** for this normalized one-profile observable. PC-291 does not prove that the whole `B~sqrt(q)` regime classicalizes: a wider mesoscopic part of the log-sine Green remainder can still matter, and architectures that preserve raw resonance support, phase, direction, cross-level structure or noncommuting information lie outside the singular-spectrum summary.
+
+The reusable lesson is now four-layered. Integrated output-path variation is cheaper than global Lipschitz control; source-aware mass is cheaper than worst-atom charging; matching scalar endpoint count exposes the actual positional transport norm; and **the first exact source relation can still be too small in the destination normalization to matter**. Geometric resolution and destination amplitude must be priced separately.
+
+The live question is therefore not whether an exact denominator relation first appears at `sqrt(q)`. It is whether a mesoscopic residue band can produce order-one prime-specific separation there, or whether the architecture must retain information discarded before one-profile singular-spectrum scalarization.
+
+**Boundary.** PC-290 remains RH-conditional and gives the control `M_q`. PC-291 is an unconditional matrix-norm obstruction for the microscopic residue band only; it neither controls the complement nor proves prime-versus-control collapse at `B` comparable with `sqrt(q)`.

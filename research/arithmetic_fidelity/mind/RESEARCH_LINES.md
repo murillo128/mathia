@@ -2,35 +2,21 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Compress a zero-sensitive source without hiding the complexity that makes it zero-sensitive
+## Quarantine the main zeta background without spending an unbounded source certificate
 
 **Linked intuition:** `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`.
 
-AF-217--AF-220 show that the relevant observation theorem is finite-order sign regularity, not all-order total positivity. AF-337 supplied an explicit full-Euler modulus but paid a quadratic sufficient depth by bounding higher-harmonic determinants independently of the first-harmonic collision structure.
-
-AF-338 removes that artificial quadratic bill. For fixed requested order `r`, spacing `h`, multiplicative window `q_j in [P,AP]`, and
+AF-217--AF-220 show that the relevant observation theorem is finite-order sign regularity, not all-order total positivity. AF-338 then removes the artificial quadratic harmonic-depth bill: for fixed requested order `r`, spacing `h`, multiplicative window `q_j in [P,AP]`, and
 
 `sigma > r-1`,
 
-the full Euler-log sampling matrix is eventually strictly sign-regular through order `r`, uniformly over the allowed integer source sets. Quantitatively the relative error of every full-Euler minor against its first-harmonic generalized Vandermonde minor is `O(P^-(sigma-(r-1)))`.
+the full Euler-log sampling matrix is eventually strictly sign-regular through order `r`, with relative minor error `O(P^-(sigma-(r-1)))`. The key accounting identity is `X(m) <= (k-1)S(m)`: a higher harmonic spends a first-harmonic collision factor only when two column harmonic labels differ.
 
-The decisive accounting identity is that a higher-harmonic tuple loses a first-harmonic pairwise collision factor only when the two column harmonic labels differ. If `X(m)` counts those unequal-label pairs and `S(m)=sum_j(m_j-1)` is the extra-harmonic order, then
+AF-339 shows that the pole-cancelled source `Lambda-1` retains the zeta zero divisor but has ordered sign variation `V=(2(A-1)+o(1))P/log P` on every fixed multiplicative window. AF-340 now supplies the matched control that identifies what causes that cost. In the full constant-background family `Lambda-c`, every `c` retains the zeta-zero poles; `c<=0` is one-signed after zero deletion, while every `c>0` has prime-scale sign variation. The pole at `s=1` is cancelled **if and only if** `c=1`.
 
-`X(m) <= (k-1) S(m)`.
+Thus zero sensitivity alone is not the expensive source resource: uncentered `Lambda` is zero-sensitive and sign-simple. The obstruction is that, within constant backgrounds, **isolating the zero-sensitive fluctuation from the main zeta pole creates an unbounded ordered sign budget**. Tuning the constant baseline cannot buy both exact pole cancellation and bounded sign complexity.
 
-Thus each unit of harmonic tail can destroy at most `k-1` collision factors; the observation-side depth budget is linear in the requested sign order and independent of `h` at exponent level.
-
-AF-339 now closes the most canonical source-side shortcut. The zero-sensitive discrepancy `d_n=Lambda(n)-1` has
-
-`sum_(n>=2) d_n n^-s = -zeta'(s)/zeta(s)-zeta(s)+1`,
-
-so its meromorphic continuation retains the zeta zero divisor, but on every fixed multiplicative window `[P,AP]` its ordered sign variation is
-
-`V=(2(A-1)+o(1)) P/log P`.
-
-Therefore the raw zero-sensitive source eventually lies outside every fixed-order AF-216/AF-338 sign budget. AF-338 cannot be extrapolated to growing `r` without a new uniform theorem.
-
-The remaining bridge is now precise: find an **intrinsic recoding/grouping of a zero-sensitive source whose effective ordered complexity is bounded or otherwise cheaply certifiable while the zero-divisor discriminator remains recoverable**, prove a joint growing-order observation theorem strong enough for the raw source, or replace ordered sign variation by another source-complexity invariant with a finite certificate that survives toward the zero-sensitive destination. Compression counts only if the destination information lost in buying the simpler source geometry is audited explicitly.
+The remaining bridge must therefore use genuinely more structure: a nonconstant or multiscale background, grouping or transform that makes the centered discriminator cheaply certifiable while proving recoverability of the zero-divisor information; a growing-order observation theorem uniform in the relevant source scale; or another source-complexity invariant with a finite certificate. Pole cancellation itself is not assumed logically necessary for every RH-facing route, so any alternative may also avoid this interface if it proves that the retained main term is harmless downstream.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -64,6 +50,6 @@ AF-319 closes the optimizer-transfer problem once one assumes a homogeneous prof
 
 The remaining question is provenance of the non-escape resource. Can the arithmetic/source construction force a cap below the certified boundary level, or another condition strong enough to give projective equicoercivity, without inserting that restriction solely to recover the desired optimizer?
 
-## Keep incidence, source resources and destination slack as different currencies
+## Keep observation order, source complexity, main-term isolation and destination slack as different currencies
 
-Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence and destination sensitivity are distinct resources. AF-338 shows why this accounting matters on the observation side: preserving the actual collision geometry changes a quadratic apparent transport bill into a linear one. AF-339 supplies the complementary source-side warning: direct zero sensitivity may come with a sign budget that diverges like `P/log P`. Neither improvement supplies the other currency for free.
+Finite sign order, exact algebraic recovery, conditioning, support-union geometry, common-time incidence, main-term cancellation and destination sensitivity are distinct resources. AF-338 improves the observation-side bill by preserving collision geometry. AF-339 shows the centered zero-sensitive source spends `Theta(P/log P)` sign complexity. AF-340 then separates zero sensitivity from centering: `Lambda` is sign-simple and zero-sensitive, while the unique pole-cancelling constant background is the growing-complexity member `Lambda-1`. None of these currencies supplies another for free.

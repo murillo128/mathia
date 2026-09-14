@@ -16,18 +16,22 @@ This removes another qualitative ambiguity from ANF-143. A frozen late layer is 
 
 The live gate is therefore still source-side. Prove that the controlled finite-prefix plus late cloud carries source energy/coherence that cannot be excised without destroying the near-extremizer, or prove a converse excision theorem. Any positive continuation that uses the `ell^2` clock across growing depth must additionally control the stage dependence of the return, curvature and recurrence constants rather than treating the frozen-stage law as uniform.
 
-## Cross the sharp endpoint-memory aperture with source information
+## Prove or kill the deterministic critical high-pass on the actual source
 
 **Linked intuition:** `MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist`.
 
-ANF-150--ANF-179 reduce bow variance to a phase-sensitive endpoint problem and show that target-sized memory can survive fixed-log cancellation, prime-scale sparse loading, the full local coherence window, every fixed magnitude norm, and every fixed derivative hierarchy.
+ANF-150--ANF-183 reduce bow variance to a phase-sensitive endpoint-memory problem and identify the sharp physical resolution: a target-sized packet of width `Theta(a_X)` can remain invisible throughout every aperture `o(X/a_X)`, while aperture `Theta(X/a_X)` must detect a sector-aligned dangerous packet.
 
-ANF-180--ANF-182 quantify the local-complexity barrier. Fixed finite continuous probe families can collapse to rank one, exact log-frequency centering defeats derivative jets whenever `r_X a_X/K -> 0`, and the sector-aligned matched-control class must be detected once derivative order reaches `Theta(K/a_X)`.
+ANF-185 turns that existential/adaptive detector into one fixed observable. Triangular twist averaging at the deterministic base `X` has Fourier multiplier
 
-ANF-183 gives the equivalent physical-frequency boundary. A dangerous packet of width `Theta(a_X)` stays `o(a_X)`-flat throughout every physical twist aperture `o(X/a_X)`, while a rephased symmetric three-point curvature detects every sector-aligned target-sized packet within aperture `Theta(X/a_X)`. The derivative and physical thresholds describe the same packet in normalized and physical coordinates.
+`W(y)=1-sinc^2(y/2)`,
 
-The remaining theorem is source-side: prove that actual prime/rough placement forbids the matched packet, control the signed Fejer scale difference directly at absolute error `o(a_X)`, or obtain absolute `o(a_X)` control of a source-faithful three-height curvature at separation `Theta(X/a_X)`. The sharp aperture theorem is a discrimination result, not such an arithmetic estimate.
+so at `T=CX/a_X` it detects every sector-aligned target-sized packet, while every subcritical aperture still admits a blind matched packet. The same operator is exactly a **one-height weighted residual sum at the original distinguished twist**, with transition scale `X/T~a_X` and uniformly bounded weight variation.
 
-## Treat subcritical local complexity and subcritical physical aperture as matched controls
+This removes packet-dependent sample location and first-site rephasing from the source target. The remaining theorem is no longer “find some shifted twist that sees the packet.” It is to prove absolute `o(a_X)` control of this deterministic weighted prime-minus-Ramanujan residual at critical aperture, prove the signed Fejer scale-difference estimate directly, or show that the actual source cannot realize the sector-aligned matched packet. ANF-185 is only the discrimination/representation theorem; it does not estimate the true residual.
 
-Low-spectrum abundance, carrier resonance, phase-blind uniformity, coefficient quantization, fixed finite tomography, derivative depth `o(K/a_X)`, and total physical twist aperture `o(X/a_X)` are controls. On the same-profile branch, frozen-stage odd-dilation activation below `A~ell^2` is likewise a control: the layer is absent or unresolved there. A viable source theorem must cross the relevant absolute endpoint-memory or physical-resolution scale, or exploit arithmetic placement/nonlocal structure that those controls cannot preserve.
+## Treat subcritical local complexity and physical aperture as controls, not targets
+
+Low-spectrum abundance, carrier resonance, phase-blind uniformity, coefficient quantization, fixed finite tomography, derivative depth `o(K/a_X)`, and physical twist aperture `o(X/a_X)` are matched controls. ANF-185 additionally shows that once the critical aperture is reached, no adaptive search is required: the obstruction can be exposed by a fixed positive high-pass. On the same-profile branch, frozen-stage odd-dilation activation below `A~ell^2` is likewise a control because the layer is absent or unresolved there.
+
+A viable source theorem must therefore cross the relevant absolute endpoint-memory or physical-resolution scale, or exploit arithmetic placement/nonlocal structure that the controls cannot preserve.
