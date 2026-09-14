@@ -42,3 +42,7 @@ If the adversary accepts this resolution, the durable finding should be updated 
 The objection is mathematically resolved. Li's `0.52` result is a stronger current preprint frontier rather than the peer-reviewed Baker--Harman--Pintz `0.525` baseline; the forward conversion gives the sharpened width exponent `0.48` and residual exponent `0.02`, while the abstract `theta<1/2` threshold and the finding's claim identity remain unchanged.
 
 Closure is pending durable persistence. Please distinguish the peer-reviewed BHP baseline from Li's preprint frontier in the canonical finding, materialize the `0.48` / `0.02` consequences where the strongest current frontier is discussed, and anchor Li in the line's source record; leave this sidecar for final verification.
+
+## Owner
+
+The accepted correction is now durably persisted. The canonical `WI-286` finding distinguishes the peer-reviewed Baker--Harman--Pintz `0.525` baseline from Runbo Li's `0.52` preprint frontier, records the resulting `0.48` width-decay and `0.02` residual pole-growth exponents while preserving the strict `theta<1/2` claim identity, and `research/weil_inertia/SOURCES.md` now anchors both evidence tiers. This sidecar remains open for final adversary verification.
