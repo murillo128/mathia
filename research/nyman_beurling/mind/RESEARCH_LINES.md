@@ -8,32 +8,24 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Move from one-zero confluent packets to genuinely multi-zero target geometry
+## Convert multi-zero geometry into a genuinely finite-section target effect
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal`, `MI-004-weighted-tail-shell-quotient-is-a-conditioned-source-skeleton`, `MI-005-persistent-forward-memory-leakage-is-a-target-near-kernel-phenomenon`, `MI-006-boundary-zeros-force-reciprocal-depth-screening`, `MI-007-aliased-radial-prediction-has-a-positive-szego-floor`, `MI-008-finite-blaschke-defects-are-silent-in-terminal-scalar-energy`, `MI-009-summable-horizontal-zero-mass-keeps-full-terminal-gram-entropy-bounded`, `MI-010-growing-depth-mobius-annulus-exposes-off-critical-blaschke-amplification`, `MI-011-canonical-deflation-cancels-raw-cauchy-crowding-volume`, `MI-012-three-state-transverse-confluence-exposes-collective-shear`, `MI-013-absolute-height-and-global-zero-counts-are-invisible-to-the-collective-shear-obstruction`, `MI-014-quadratic-horizontal-tangency-is-the-three-state-conditioning-threshold`, `MI-015-confluent-volume-is-curvature-blind-and-controlled-by-radial-depth`, `MI-016-growing-confluent-rank-is-limited-by-endpoint-extrapolation-cost`.
 
-NB-103--NB-106 separate fixed-multiplicity volume depth `L=2a log(B/G)` from target-access depth `H=2ad log G`. NB-107 shows that restoring every earlier integer cell down to any fixed natural scale does not rotate the maximal one-zero state toward the target and gives the sharp rank-one leverage-target frontier `sup_(eta>=theta) chi=1-theta+o(1)`.
+The one-zero route is closed at the scales currently available. NB-111 converts growing confluent rank into exact Laguerre geometry and proves target-poorness whenever `d <= (1/8-epsilon) log G`. NB-112 then uses same-ordinate zeta symmetry together with the Bellotti--Wong zero-counting error to bound the **true** multiplicity of every sufficiently high off-critical zero by `(0.10076+o(1)) log G`, strictly inside that window. Improving the `1/8` constant is therefore not needed merely to eliminate actual one-zero multiplicity.
 
-NB-108 closes every fixed-dimensional confluent/Jordan repair. NB-109 extends that target-poorness to a genuinely growing one-zero packet without relying on monomial Gram conditioning. NB-111 then retains the exact radial weight and converts the packet into Laguerre geometry. With intrinsic depth
+Distinct zeros do create genuinely new conditioning geometry, but the continuum target audit now sharply separates that geometry from target access. NB-113 proves that every finite common-ordinate packet is exactly orthogonal after canonical deflation, while its Burnol model-space target mass tends to zero. NB-114 removes the common-ordinate restriction on the **target** side: for any finite high packet `F`,
 
-`T=2(1-a) log(m/r)`,
+`tau(F)=1-|B_F(1)|^2 <= sum_(rho in F) 1/gamma_rho^2 <= |F|/G^2`.
 
-the early cells resolve weighted polynomial mass out to `X=T/2+o(T)`, while degree-`<d` Laguerre mass has its deterministic turning scale at `X=4d`. Hence
+Thus order-one classical Hardy target mass above height `G` needs `Omega(G^2)` rank. Actual zeta supplies only `O(G log G)` zeros in a fixed-ratio shell, and even pooling the entire positive high-zero tail gives only
 
-`limsup d/T < 1/8  =>  delta -> 0`,
+`tau_+(G)=O(log G/G) -> 0`.
 
-and uniformly `d <= (1/8-epsilon) log G` is target-poor.
+At the same time NB-098--NB-099 show that relative-ordinate collective shear can remain arbitrarily bad at arbitrarily high absolute ordinate. Hence **large multi-zero shear does not convert into large classical model-space target occupation**. The live zero-state theorem is now finite-section specific: compare a finite target quantity such as `b_N^* G_N^+ b_N` (or a norm-controlled dual certificate) with the continuum Burnol projection and isolate the arithmetic truncation/source term that can either create or fail to create target access. A new high-zero packet, by itself, is no longer enough.
 
-NB-112 closes the remaining **true one-zero multiplicity rescue**. An off-critical zero `beta+i gamma` has the same multiplicity as the distinct zero `1-beta+i gamma` at the same ordinate, so its multiplicity is paid twice in the zero-counting jump. The Bellotti--Wong explicit zero-counting error therefore gives
+## Keep conditioning, rank supply, continuum target mass and finite arithmetic target access separate
 
-`mult(beta+i gamma) <= (0.10076+o(1)) log gamma`,
+Curvature and collective shear control conditioning; they do not determine target occupation. `L=2a log(B/G)` is a fixed-multiplicity volume depth, `H=2ad log G` is an ambient target-access scale in the one-zero packet, and `T=2(1-a)log(m/r)` is the intrinsic Laguerre depth governing the deterministic `d/T` window. True multiplicity is a source-supply constraint, not another conditioning parameter.
 
-strictly below the `1/8` Laguerre window. Thus the complete derivative packet supplied by the actual multiplicity of every sufficiently high off-critical zeta zero is target-poor in the NB-111 geometry. Improving the one-zero `1/8` constant is no longer needed merely to eliminate true multiplicity.
-
-The surviving zero-state frontier is structurally different: build growing rank from **several distinct zeros**, or leave the terminal-band/full-backfill representation in a way that changes the target geometry rather than only the derivative basis. The central question is how principal angle, source coupling and absolute height interact for a multi-center zero packet whose rank comes from distinct ordinates/real parts rather than confluence at one zero.
-
-## Keep volume depth, target-access depth, intrinsic Laguerre depth, true multiplicity and multi-zero rank separate
-
-Curvature controls local conditioning. `L=2a log(B/G)` controls optimally placed fixed-multiplicity determinant volume. `H=2ad log G` controls ambient target access. NB-107--NB-111 add the principal-angle leverage fraction and the intrinsic one-zero extrapolation coordinate `T=2(1-a)log(m/r)`. In the exact weighted representation the decisive deterministic ratio is `d/T`; the `1/8` window comes from resolving about half of `T` against the Laguerre `4d` turning scale.
-
-NB-112 adds a different source currency: the true multiplicity of a single off-critical zero is bounded by the same-ordinate zero-counting jump and falls strictly inside that deterministic window. This does **not** control the number or geometry of distinct zeros used simultaneously. Future claims must therefore distinguish derivative rank at one zero from multi-center rank across zeros; neither is the Nyman distance by itself.
+NB-113--NB-114 add another independent currency: the classical Hardy/model-space mass `tau(F)`. It is controlled by the inverse-square ordinate defects of the selected zeros and can vanish even when the canonical transformed Gram is arbitrarily ill-conditioned. Future claims must therefore distinguish at least four questions: how bad the finite state geometry is, how much actual zeta rank is available, how much continuum Burnol target mass that zero packet carries, and whether the finite arithmetic Nyman section produces an additional target-sensitive transfer. None of these quantities is the Nyman distance by itself.
