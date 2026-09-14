@@ -2,9 +2,9 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Move below the quantitative square-zero defect or beyond the one-profile quotient
+## Move below the quantitative square-zero defect without collapsing to the Fejer power quotient
 
-**Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra`, `MI-013-growing-collision-geometry-can-still-be-classical`, `MI-014-single-source-positive-spectral-lifts-are-pure-gauge`, `MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol`, `MI-016-diffuse-independent-dilations-preserve-singular-channels-but-break-eigenvalue-loops`, `MI-017-diffuse-boundary-logs-collapse-to-universal-square-zero-geometry`.
+**Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra` through `MI-018-quadratic-square-zero-defect-is-fejer-autocorrelation-and-forgets-source-phase`.
 
 PC-295 closes the complete absolute singular spectrum under diffuse averaging, PC-296 closes raw eigenvalues, and PC-297 identifies their common fixed-scale explanation: the normalized boundary-log matrix approaches a universal square-zero class of norm `1/2`, so every fixed positive pseudospectral scale is classicalized.
 
@@ -16,10 +16,14 @@ where
 
 `r_q = delta_q^(1/3) + delta_q^(1/2) log q + (log q)/N`.
 
-Consequently, for every shrinking pseudospectral scale `epsilon_q` with `r_q/epsilon_q -> 0`, the rescaled `epsilon_q`-pseudospectrum still converges to the universal square-zero disk. The escape left by PC-297 is therefore not “take epsilon to zero”; it must probe at or below the actual defect scale `r_q`, improve the approximation enough to identify a finer threshold, or retain information outside the diffuse one-profile quotient.
+Consequently, for every shrinking pseudospectral scale `epsilon_q` with `r_q/epsilon_q -> 0`, the rescaled `epsilon_q`-pseudospectrum still converges to the universal square-zero disk. The surviving one-profile information must therefore live at or below the actual defect scale `r_q`.
 
-A surviving prime-specific construction must use joint/noncommuting profiles, source-coupled left/right relations, cross-level structure, a genuinely non-diffuse regime, or an observable whose normalization resolves the `O(r_q)` defect rather than the order-one universal square-zero geometry.
+PC-299 identifies the first intrinsic low-mode defect there. If `C=Z^*X` is the cross-Gram matrix, then `A^2=X D C D Z^*`; source-averaged quadratic loop closure is exactly a Fejer autocorrelation. The opposite-mode channel has universal floor `1/N` plus a positive weighted sum of `|muhat(mt)|^2`, and the symmetric Frobenius energy has the analogous universal baseline plus source power. For primes, the excess is a classical mean-square exponential-sum packet.
 
-## Keep singular strength, loop closure and perturbation resolution separate
+This narrows the subdefect route again. Resolving `O(r_q)` is not enough if the observable immediately squares and averages the cross-Gram coefficients: that quotient discards Fourier phase and lands in the classical additive prime-pair/exponential-sum interface. A surviving prime-specific construction must preserve phase or higher joint structure, use source-coupled left/right relations, noncommuting multiple profiles, cross-level structure, or otherwise prove information beyond the Fejer power spectrum.
 
-Diffuse averaging preserves same-side singular channels but makes the left/right frames asymptotically orthogonal. PC-298 shows quantitatively how fast the complete operator enters that square-zero class. Any next nonnormal observable must state the scale at which it resolves the defect; a shrinking parameter is not informative unless it shrinks at least comparably to `r_q`.
+## Keep singular strength, loop closure, source phase and perturbation resolution separate
+
+Diffuse averaging preserves same-side singular channels but makes the left/right frames asymptotically orthogonal. PC-298 quantifies how fast the operator enters the square-zero class. PC-299 then shows that the first positive quadratic measure of the residual loop is not a new spectral variable: it is source autocorrelation with a universal baseline.
+
+Any next nonnormal observable must state both **the scale at which it resolves the defect** and **which information of `C` it retains**. A shrinking parameter is not informative unless it reaches `O(r_q)`, and reaching that scale is still insufficient if the final statistic forgets the source phase or reduces to a known additive-power quantity.
