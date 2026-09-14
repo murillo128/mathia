@@ -1,23 +1,17 @@
-# MI-017 — Zero-order shift transport needs BV structure, not merely spectral stability
+# MI-017 — Zero-order shift transport needs coupled source-specific BV coercivity, not spectral stability
 
-**Evidence level:** supported by [PL-297](../../findings/PL-297-renormalized-hadamard-stress-hhalf-decoupling.md)--[PL-300](../../findings/PL-300-norm-small-perturbation-bv-shift-transport-obstruction.md). The needed source-structured compactness for the actual completed-Weil eigenbranch remains open.
+**Evidence level:** supported by [PL-297](../../findings/PL-297-renormalized-hadamard-stress-hhalf-decoupling.md)--[PL-302](../../findings/PL-302-suzuki-prime-comb-sharp-bv-contraction-threshold.md). The needed uniform BV/derivative-measure estimate for the actual completed-Weil ground branch remains open.
 
-PL-297 separates two singular resources in the small-order fractional control. The renormalized boundary stress has a finite nonzero limit while the zero extensions satisfy
+PL-297 separates the renormalized Hadamard boundary stress from the critical Fourier first moment: the stress can converge while the zero extensions diverge in `H^(1/2)`. PL-298 nevertheless gives `C^1` translation autocorrelations at every fixed positive fractional order, and PL-299 transports them to zero order on the pure principal branch using uniform convergence plus uniform bounded variation rather than half-Sobolev control.
 
-`||E u_s||_(H^(1/2)) -> infinity`.
+PL-300 shows why ordinary Hilbert-space stability cannot supply that currency. Norm-small self-adjoint perturbations can preserve a unique simple isolated ground branch and uniform state convergence while injecting tiny-amplitude, huge-variation oscillations that make a prescribed shift derivative diverge.
 
-So a finite Hadamard stress does not imply the critical Fourier first moment used by routine absolute differentiation. PL-298 nevertheless shows that every fixed `s>0` has a `C^1` translation autocorrelation through physical-space `W^(1,1) cap L^infty` regularity.
+PL-301 checks the exact Suzuki remainder against that adversary and removes one false obstruction. Compressed prime-power shifts are total-variation nonexpansive channel by channel, and the archimedean completion maps `L^1` uniformly into `BV`. The rough high-frequency packet mechanism of PL-300 therefore cannot be hidden in the actual lower-order remainder.
 
-PL-299 closes the `s->0+` passage for the pure principal branch by a different compactness currency. On the centered interval the positive principal eigenfunctions are even and decreasing; uniform `L^infty` control gives a uniform BV bound, while the small-order theory gives uniform convergence `u_s->u_0`. Uniform convergence plus uniform BV transports the derivative measures through convolution and yields
+But BV stability is not BV coercivity. PL-302 proves that the finite arithmetic shift comb itself ceases to be a contraction exactly when the `n=3` channel becomes active: endpoint-localized test functions give an operator-norm lower bound above one for every `a>log(3)/2`, including the working `a=0.8` aperture. No sharper shift-only norm estimate can close the branch there.
 
-`C_s -> C_0 in C^1(R)`.
+The missing resource is now precise: a **coupled eigen-equation mechanism** in which the principal logarithmic/fractional operator, finite prime shifts, completion smoothing and the tracked ground state jointly control derivative measure. A useful theorem may be a principal resolvent estimate that absorbs the comb, cancellation between source channels, graph-norm coercivity, or a direct variation inequality on the eigenbranch. Generic Kato tracking and standalone remainder boundedness are both too weak.
 
-Thus failure of the half-Sobolev route is not evidence that the zero-order prime-shift derivative is singular. The load-bearing property is finite-measure derivative compactness, not an absolute Fourier first moment.
+The reusable distinction is between spectral identification, BV transport and BV coercivity. The first says which state is followed; the second says the exact remainder does not manufacture arbitrary variation from nowhere; only the third can prevent the tracked state from accumulating large variation through the coupled equation.
 
-PL-300 shows just as sharply what does **not** imply that property. One can add self-adjoint perturbations of rank at most two with `||B_j||->0`, preserve a unique simple isolated ground branch and uniform convergence of the eigenstates to `u_0`, yet force both `TV(v_j)->infinity` and `|C'_(v_j)(h_0)|->infinity` at any prescribed nonzero lag. The high-frequency contamination is cheap in the logarithmic graph norm, `O(log K)`, but expensive in variation and shift derivative, `O(K)`.
-
-Therefore Kato tracking, norm-resolvent convergence, a persistent spectral gap, bounded perturbation size and even uniform `C_0` convergence are not substitutes for the exact destination regularity. A proof for the completed-Weil branch must exploit a structural property of its **actual rational-prime/completion remainder** that the PL-300 finite-rank controls lack: for example a uniform BV mapping/coercive estimate, variation diminution, a source-specific order law, or a direct compactness equation for the derivative measures.
-
-The reusable distinction is between Hilbert-space spectral stability and **stronger geometric regularity of the tracked state**. The former can identify which eigenvector is being followed while remaining completely insensitive to oscillations of tiny amplitude and huge variation. If the endpoint differentiates translations, the proof has to price precisely that stronger regularity.
-
-**Boundary.** PL-300 is a matched adversarial perturbation, not a model of Suzuki's remainder, and does not prove that the actual completed-Weil branch loses BV. PL-299 remains a valid transport theorem once uniform BV/derivative-measure compactness is established. The independent sign gate and the renormalized Hadamard-trace problem are not resolved by either result.
+**Boundary.** PL-301--PL-302 do not prove uniform BV of the completed-Weil branch and do not resolve the independent source-specific sign gate. The endpoint test used in PL-302 acts on unrestricted BV data and does not rule out contraction or cancellation on the actual ground-state manifold produced by the full operator.

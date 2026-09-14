@@ -1,21 +1,21 @@
-# MI-016 — Positive Robin recovery is priced by PNT coherence and one-sided selected workload
+# MI-016 — Near-minimal Robin recovery forces a packet of first-layer one-sided PNT saturation
 
-**Evidence level:** exact for the colossally abundant recurrence geometry through [RE-108](../../findings/RE-108-quantitative-robin-peaks-force-inter-block-normalization-corridors.md)--[RE-110](../../findings/RE-110-fast-robin-recovery-forces-one-sided-workload-amplification.md), combined with the false-RH quantitative block family and the intra-fan transport of RE-107. No contradiction to false RH and no RH consequence is claimed.
+**Evidence level:** exact for the colossally abundant recurrence geometry through [RE-108](../../findings/RE-108-quantitative-robin-peaks-force-inter-block-normalization-corridors.md)--[RE-111](../../findings/RE-111-near-minimal-robin-recovery-forces-first-layer-pnt-saturation-packets.md), combined with the false-RH quantitative block family and the intra-fan transport of RE-107. No selected anti-saturation theorem or RH consequence is claimed.
 
-RE-108 shows that a quantitative positive Robin state cannot return to a nonpositive CA state before the denominator normalization grows by at least `R_C Y log Y`, with `Y=log C`. That bound is sharp if one remembers only monotonicity of `sigma(n)/n`; a frozen-numerator control saturates it.
+RE-108 shows that a quantitative positive Robin state cannot return to a nonpositive CA state before the denominator normalization grows by a substantial corridor. RE-109 restores the event-source coupling and uses the Vinogradov--Korobov PNT envelope to strengthen that corridor to the natural scale `h(C)Y log Y/E(Y)` when the recovery remains submacroscopic.
 
-RE-109 restores a source constraint that the matched control discards. The same prime-layer event atoms generate both the numerator increment and physical logarithmic mass, and their cumulative staircase satisfies a Vinogradov--Korobov PNT discrepancy. Robin recovery becomes a quadrature error, forcing a corridor
+RE-110 identifies what recovery near that price must spend: a positive one-sided workload `W_+ >= (1+o(1))h(C)Y^2 log Y`. Hence some selected event must approach the favorable PNT discrepancy envelope. That still allowed the workload to be concentrated on one exceptional event.
 
-`V-Y >> h(C) Y log Y / E(Y)`
+RE-111 removes that concentration loophole. The workload is an area budget under a height cap `O(YE(Y))`, so a positive mass of the recovery interval must carry a large forward defect. In the quantitative false-RH branch `h(C) gg_J Y^(-b)` with `b<1/2`, higher-layer event mass is asymptotically too small to carry this set. The required mass therefore falls on ordinary first-layer prime events.
 
-for a positive height `h(C)` unless the corridor is already macroscopic. The global PNT envelope therefore adds a stretched-subpower recovery price.
+At near-minimal recovery scale this forces at least
 
-RE-110 resolves what *fast* recovery at that price would have to look like. It introduces the positive one-sided workload `W_+` of event atoms lying ahead of the physical mass they generate and proves
+`gg_J Y^(1-b)/E(Y)`
 
-`W_+ >= (1+o(1)) h(C)Y^2 log Y`.
+distinct first-layer primes, all with the recovery-favorable sign and all satisfying `p-vartheta(p) asymp Y E(Y)`. The corridor must contain a **macroscopic packet of one-sided PNT-envelope saturation**, not one isolated extreme prime or a higher-layer anomaly.
 
-Consequently `L M_+` must carry the same scale, where `L=V-Y` and `M_+` is the largest forward event defect. Relative to the initial selector defect, every sublinear recovery corridor forces unbounded one-sided amplification. If recovery occurs near the RE-109 lower scale, some selected event must have `M_+` of order `Y E(Y)`, i.e. must essentially saturate the favorable side of the global PNT envelope.
+The reusable endpoint is now selection-conditioned multiplicity plus sign coherence. A global PNT sup-norm estimate permits individual errors of this size; what the Robin mechanism demands is many such errors, with the same favorable sign, on a CA-selected interval whose location is itself determined by the extremal recurrence.
 
-The endpoint is therefore no longer simply “selection-conditioned source phase.” It is a concrete **selected anti-saturation problem**: show that CA-selected recovery corridors cannot repeatedly realize the positive PNT envelope at the required scale, or couple another source coordinate to that workload so that such saturation destroys the next positive witness.
+The next source theorem should therefore attack packet formation: bound the number or logarithmic mass of such selected saturation primes by `o(hY/E(Y))`, or show that another exact arithmetic coordinate (for example the reciprocal-Mertens side of the same recurrence) must cancel or destabilize a packet of this size.
 
-**Boundary.** RE-110 is a necessary workload statement, not an anti-saturation theorem. The global PNT envelope permits defects of the required order, so no contradiction follows without information tied to the CA selector, discrepancy sign, or a coupled arithmetic coordinate.
+**Boundary.** RE-111 is a necessary consequence of fast recovery, not a theorem that ordinary primes cannot realize the packet. Its first-layer extraction uses the quantitative false-RH amplitude floor `b<1/2`; outside that regime the available higher-layer mass may no longer be negligible.
