@@ -6,23 +6,7 @@
 
 ## Precise claim
 
-`PL-314` proves the rank-one corner transfer under the sufficient assumptions
-
-\[
-m\in L^1(0,\infty),
-\qquad
-Qm(Q)\to0,
-\]
-
-while `PL-320` shows that convergence of the full logarithmic source trace and singular translation remainder naturally gives only
-
-\[
-Qm(Q)\to0
-\quad\text{and}\quad
-\int_0^R m(Q)\,dQ\to M
-\]
-
-with the residual moment possibly only conditionally convergent. The absolute `L^1` gap is not genuine: the exact pre-diagonal Green kernel has a bounded-variation Abel weight, so conditional convergence is enough.
+`PL-314` proves the rank-one corner transfer under the sufficient assumptions `m in L^1(dQ)` and `Qm(Q)->0`. `PL-320` naturally produces the second condition together with only a conditionally convergent residual moment. The absolute `L^1` gap is not genuine.
 
 Fix `r>0`, put
 
@@ -30,7 +14,7 @@ Fix `r>0`, put
 x_s(r)=1-2e^{-r/s},
 \]
 
-and define, exactly as in `PL-314`,
+and define, as in `PL-314`,
 
 \[
 \mathcal A_s[m](r)
@@ -40,14 +24,14 @@ and define, exactly as in `PL-314`,
 \tag{PL321-1}
 \]
 
-Assume only
+Assume
 
 \[
 m\in L^1_{\rm loc}(0,\infty),
 \qquad
-\boxed{\lim_{R\to\infty}\int_0^R m(Q)\,dQ=M\in\mathbb C,}
+\lim_{R\to\infty}\int_0^R m(Q)\,dQ=M\in\mathbb C,
 \qquad
-\boxed{Qm(Q)\to0.}
+Qm(Q)\to0.
 \tag{PL321-2}
 \]
 
@@ -55,31 +39,21 @@ Then
 
 \[
 \boxed{
-\mathcal A_s[m](r)
-\longrightarrow
- e^{-r}M
+\mathcal A_s[m](r)\longrightarrow e^{-r}M
 \qquad(s\downarrow0).
 }
 \tag{PL321-3}
 \]
 
-No absolute integrability of `m` is required. In particular, the smooth control from `PL-320`,
+No absolute integrability is required. In particular, after a harmless cutoff, the `PL-320` control
 
 \[
 m_*(Q)=\frac{\sin Q}{Q\log Q}
 \]
 
-after a harmless cutoff, satisfies the theorem despite `m_*\notin L^1`.
+satisfies the theorem although `m_*` is not in `L^1(dQ)`.
 
-Consequently the last absolute-integrability gate left by `PL-320` is removed. If the actual completed-Weil tail satisfies the single local condition
-
-\[
-H_{Q_0}g(Q)\to H_\infty,
-\]
-
-then `PL-320` already produces a coefficient `C`, a residual `m=g-CQ^{-1/2}` with `Qm(Q)->0`, and a convergent improper residual moment. After splitting off the compact endpoint complement, (PL321-3) applies. The remaining endpoint matching problem is therefore the convergence of the singular remainder itself, not absolute `L^1(dQ)` control.
-
-## 1. Exact factorization before the moving diagonal
+## 1. Exact pre-diagonal Green factorization
 
 Write the stretched Green measure from `PL-310` as
 
@@ -87,7 +61,7 @@ Write the stretched Green measure from `PL-310` as
 d\mu_{s,r}(q)=k_s(r,q)\,dq,
 \]
 
-so that
+so
 
 \[
 \mathcal A_s[m](r)
@@ -96,239 +70,180 @@ so that
 \tag{PL321-4}
 \]
 
-Split at
-
-\[
-B_s:=\frac{r}{2s}.
-\tag{PL321-5}
-\]
-
-For `0<q<r`, `PL-314` records Bucur's exact one-dimensional Green formula in the variables
+Split at `B_s=r/(2s)`. For `0<q<r`, set
 
 \[
 t=e^{-r/s},
 \qquad
-u=e^{-q/s},
+u=e^{-q/s}.
 \]
 
-as
+Bucur's exact interval Green formula, in the form already recorded in `PL-314`, is
 
 \[
 k_s(r,q)
 =\frac{u(u-t)^{2s-1}}{s\Gamma(s)^2}
 \int_0^R\frac{z^{s-1}}{\sqrt{1+z}}\,dz,
-\]
-
-where
-
-\[
+\qquad
 R=\frac{4tu(1-t)(1-u)}{(u-t)^2}.
-\tag{PL321-6}
+\tag{PL321-5}
 \]
 
-Define
+For `R>=0` define
 
 \[
 \vartheta_s(R)
 :=sR^{-s}\int_0^R\frac{z^{s-1}}{\sqrt{1+z}}\,dz,
 \]
 
-with the continuous value `1` at `R=0`. Since the integrand factor `(1+z)^{-1/2}` lies between `(1+R)^{-1/2}` and `1`, one has the exact bounds
+with continuous value `1` at `R=0`. Then
 
 \[
 (1+R)^{-1/2}\le\vartheta_s(R)\le1.
-\tag{PL321-7}
+\tag{PL321-6}
 \]
 
-Now set `q=sQ`, so `u=e^{-Q}`. Substituting `R^s` from (PL321-6), using `s^2\Gamma(s)^2=\Gamma(1+s)^2`, and using `t^s=e^{-r}`, gives the exact factorization
+Putting `q=sQ`, hence `u=e^{-Q}`, and using `s^2\Gamma(s)^2=\Gamma(1+s)^2` gives the exact identity
 
 \[
-\boxed{k_s(r,sQ)=a_s(r)\,w_s(Q)\,E_s(r,Q),}
-\tag{PL321-8}
+\boxed{
+k_s(r,sQ)=a_s(r)w_s(Q)E_s(r,Q),}
+\tag{PL321-7}
 \]
 
 where
 
 \[
-a_s(r)=e^{-r}\frac{(1-e^{-r/s})^s}{\Gamma(1+s)^2},
-\tag{PL321-9}
+a_s(r)=e^{-r}\frac{(1-e^{-r/s})^s}{\Gamma(1+s)^2}\to e^{-r},
+\tag{PL321-8}
 \]
 
 \[
 \boxed{w_s(Q)=\bigl(4e^{-Q}(1-e^{-Q})\bigr)^s,}
-\tag{PL321-10}
+\tag{PL321-9}
 \]
 
 and
 
 \[
-E_s(r,Q)=\frac{1}{1-t/u}\,\vartheta_s(R).
-\tag{PL321-11}
+E_s(r,Q)=\frac{1}{1-t/u}\vartheta_s(R).
+\tag{PL321-10}
 \]
 
-The scalar satisfies
+The Abel weight has the crucial uniform geometry
 
 \[
-a_s(r)\to e^{-r}.
-\tag{PL321-12}
-\]
-
-The key point is that `w_s`, not the residual `m`, carries all the relevant pre-diagonal variation. It obeys
-
-\[
-0\le w_s(Q)\le1,
+0\le w_s\le1,
 \qquad
-w_s(Q)\to1\quad(Q>0\text{ fixed}),
-\tag{PL321-13}
+w_s(Q)\to1\quad(Q>0),
 \]
 
-and is increasing on `(0,\log2)` and decreasing on `(\log2,\infty)`, with maximum `w_s(\log2)=1`. Thus its total variation is at most `2`, uniformly in `s`; on every tail `[A,\infty)` with `A>\log2` it is simply monotone decreasing.
+and is increasing up to `Q=log 2` and decreasing afterwards, with maximum exactly `1`. Thus its total variation is at most `2`, uniformly in `s`.
 
-For `0<Q\le B_s`, equivalently `0<q\le r/2`,
+For `0<Q<=B_s`, equivalently `0<q<=r/2`,
 
 \[
-\varepsilon:=\frac tu
-=e^{-(r-q)/s}
-\le e^{-r/(2s)}=:\eta_s.
+\varepsilon:=t/u=e^{-(r-q)/s}\le e^{-r/(2s)}=:\eta_s,
 \]
 
-Equation (PL321-6) gives
+and
 
 \[
 0\le R\le\frac{4\eta_s}{(1-\eta_s)^2}.
 \]
 
-Combining this with (PL321-7) yields
+Using (PL321-6),
 
 \[
 \boxed{
-\sup_{0<Q\le B_s}|E_s(r,Q)-1|
-=O_r(\eta_s).
+\sup_{0<Q\le B_s}|E_s(r,Q)-1|=O_r(e^{-r/(2s)}).
 }
-\tag{PL321-14}
+\tag{PL321-11}
 \]
 
-Hence, before the moving diagonal, the exact Green kernel is an exponentially accurate perturbation of the explicit bounded-variation Abel weight `a_s(r)w_s(Q)`.
+So, a fixed stretched distance before the moving pole, the exact kernel is an exponentially accurate perturbation of the explicit bounded-variation weight `a_s(r)w_s(Q)`.
 
-## 2. Conditional moments pass through the Abel weight
+## 2. Conditional convergence passes through the Abel weight
 
 Let
 
 \[
-T(A):=\int_A^\infty m(Q)\,dQ,
+T(A):=\int_A^\infty m(Q)\,dQ.
 \]
 
-which is well-defined by (PL321-2). The Cauchy criterion for the improper integral gives
+The improper convergence in (PL321-2) implies
 
 \[
-\sup_{Q\ge A}|T(Q)|\longrightarrow0
+\sup_{Q\ge A}|T(Q)|\to0
 \qquad(A\to\infty).
-\tag{PL321-15}
+\tag{PL321-12}
 \]
 
-Fix `A>\log2`. On `[A,B_s]`, `w_s` is decreasing. Since `m=-T'` almost everywhere on finite intervals, integration by parts gives
+Fix `A>log 2`. On `[A,B_s]`, `w_s` is decreasing. Since `m=-T'` almost everywhere on finite intervals, Stieltjes integration by parts gives
 
 \[
 \int_A^{B_s}w_s(Q)m(Q)\,dQ
-=
-w_s(A)T(A)-w_s(B_s)T(B_s)
+=w_s(A)T(A)-w_s(B_s)T(B_s)
 +\int_A^{B_s}T(Q)\,dw_s(Q).
-\tag{PL321-16}
 \]
 
-Therefore
+Hence
 
 \[
 \left|\int_A^{B_s}w_s m\right|
-\le3\sup_{Q\ge A}|T(Q)|,
-\tag{PL321-17}
+\le3\sup_{Q\ge A}|T(Q)|.
+\tag{PL321-13}
 \]
 
-uniformly for all sufficiently small `s` with `B_s>A`. On the fixed interval `(0,A)`, `w_s(Q)->1` for almost every `Q` and `|w_s|\le1`, so local dominated convergence gives
-
-\[
-\int_0^A w_s(Q)m(Q)\,dQ
-\to\int_0^A m(Q)\,dQ.
-\tag{PL321-18}
-\]
-
-Letting first `s->0` and then `A->infty`, (PL321-15)--(PL321-18) prove
+On every fixed `(0,A)`, local dominated convergence gives `\int_0^A w_s m -> \int_0^A m`. Letting first `s->0` and then `A->infinity` yields
 
 \[
 \boxed{
-\int_0^{B_s}w_s(Q)m(Q)\,dQ\longrightarrow M.
+\int_0^{B_s}w_s(Q)m(Q)\,dQ\to M.
 }
-\tag{PL321-19}
+\tag{PL321-14}
 \]
 
-This is the only Abelian step. It is the standard Dirichlet/Stieltjes mechanism for a conditionally convergent improper integral; the line-specific content is that the exact fractional Green kernel factorizes into precisely such a uniformly bounded-variation weight.
+This is a standard Abel/Dirichlet bounded-variation argument. The line-specific fact is the exact Green factorization (PL321-7).
 
-## 3. The exact-kernel error is exponentially negligible
+## 3. Exact-kernel and moving-diagonal errors
 
-It remains to replace `w_s` by the exact pre-diagonal kernel. From `Qm(Q)->0`, there are `A_0` and `C<infinity` such that
-
-\[
-|m(Q)|\le\frac{C}{Q}
-\qquad(Q\ge A_0).
-\tag{PL321-20}
-\]
-
-Consequently
+Because `Qm(Q)->0`, for large `Q` one has `|m(Q)|<=C/Q`. Therefore
 
 \[
 \int_0^{B_s}|m(Q)|\,dQ
-=O_m\!\left(1+\log\frac1s\right).
-\tag{PL321-21}
+=O_m(1+\log(1/s)).
+\tag{PL321-15}
 \]
 
-Equations (PL321-8), (PL321-14), and `0\le w_s\le1` then imply
+Combining (PL321-7), (PL321-11), and `0<=w_s<=1`,
 
 \[
-\begin{aligned}
-&\left|
+\left|
 \int_0^{B_s}k_s(r,sQ)m(Q)\,dQ
 -a_s(r)\int_0^{B_s}w_s(Q)m(Q)\,dQ
-\right|\\
-&\hspace{25mm}\le
-C_r e^{-r/(2s)}
-\int_0^{B_s}|m(Q)|\,dQ
-=o(1).
-\end{aligned}
-\tag{PL321-22}
+\right|
+=o(1),
+\tag{PL321-16}
 \]
 
-Together with (PL321-12) and (PL321-19), the entire pre-diagonal part converges to
+because the exponentially small factor `e^{-r/(2s)}` dominates the logarithm in (PL321-15). Thus the pre-diagonal contribution tends to `e^{-r}M`.
+
+For the remaining region define
 
 \[
-e^{-r}M.
-\tag{PL321-23}
+\omega(R):=\sup_{Q\ge R}Q|m(Q)|\to0.
 \]
 
-The role of `Qm(Q)->0` here is mild: it only supplies logarithmic growth of the finite absolute integral needed to absorb the exponentially small kernel-factorization error. The main pre-diagonal passage uses the conditional moment itself.
-
-## 4. The moving and post-diagonal region is still killed by `Qm(Q)->0`
-
-Define
-
-\[
-\omega(R):=\sup_{Q\ge R}Q|m(Q)|.
-\]
-
-Then `\omega(R)->0`. For `q\ge r/2`, so that `Q=q/s\ge B_s`,
+When `q>=r/2`, `Q=q/s>=B_s`, so
 
 \[
 \frac1s|m(q/s)|
-\le\frac{\omega(B_s)}{q}
-\le\frac{2}{r}\omega(B_s).
+\le\frac{\omega(B_s)}q
+\le\frac2r\omega(B_s).
 \]
 
-Since the total Green mass is uniformly bounded by the exact torsion identity already used in `PL-310` and `PL-314`,
-
-\[
-\mu_{s,r}((0,\infty))=O_r(1),
-\]
-
-we obtain
+The exact torsion identity used in `PL-310` and `PL-314` gives a uniformly bounded total Green mass. Hence
 
 \[
 \boxed{
@@ -337,20 +252,24 @@ we obtain
 \right|
 \le C_r\omega(B_s)\to0.
 }
-\tag{PL321-24}
+\tag{PL321-17}
 \]
 
-Equations (PL321-23) and (PL321-24) prove (PL321-3).
+This proves (PL321-3).
 
-## 5. Consequence for the completed-Weil boundary program
+## 4. Consequence for the completed-Weil endpoint
 
-The implication chain from `PL-319` and `PL-320` now closes without an absolute residual estimate. For the actual completed-Weil endpoint, the eigen-equation already supplies a finite source trace, and the logarithmic-Laplacian boundary theory supplies `g(Q)=O(Q^{-1/2})`. If the remaining local singular remainder has a limit,
+`PL-320` proves that if the actual endpoint tail `g` satisfies
 
 \[
+g(Q)\to0,
+\qquad
+F(Q)\to F_\infty,
+\qquad
 H_{Q_0}g(Q)\to H_\infty,
 \]
 
-then `PL-320` gives
+then a coefficient `C` emerges automatically and
 
 \[
 g(Q)=CQ^{-1/2}+m(Q),
@@ -358,44 +277,43 @@ g(Q)=CQ^{-1/2}+m(Q),
 Qm(Q)\to0,
 \qquad
 \int_{Q_0}^R m(Q)\,dQ\to M.
-\tag{PL321-25}
+\tag{PL321-18}
 \]
 
-A compactly supported complement is handled by `PL-313`; the tail residual satisfies the present theorem. Hence the rank-one corner/source balance is stable under exactly the information produced by the Volterra source trace. The oscillatory example `sin Q/(Q log Q)` from `PL-320` is no longer an obstruction: its conditional moment is sufficient.
+The completed-Weil eigen-equation already supplies the finite source trace `F(Q)->F_infinity`, while the established logarithmic-Laplacian boundary estimate gives `g(Q)=O(Q^{-1/2})`. A compactly supported endpoint complement is handled by `PL-313`. Therefore the present theorem removes the only extra absolute-`L^1` requirement left in `PL-320`.
 
-The analytic frontier is therefore reduced to
+The current endpoint-transfer frontier is reduced to the single local statement
 
 \[
 \boxed{H_{Q_0}g(Q)\text{ has a finite endpoint limit}.}
-\tag{PL321-26}
+\tag{PL321-19}
 \]
 
-Once this is established for the actual isolated completed-Weil branch, the endpoint transfer part of the current matching chain has no separate absolute-`L^1` gate. This still does not determine the sign of the resulting scalar or prove an arithmetic first-crossing theorem; those remain separate rational-prime-specific tasks.
+If that holds for the actual isolated completed-Weil branch, the same condition generates the leading coefficient, the `o(1/Q)` residual, the conditional endpoint moment, and now the full rank-one Green transfer. The separate rational-prime sign/first-crossing problem remains downstream.
 
 ## Prior-art and novelty audit
 
-The bounded-variation integration-by-parts argument in Section 2 is classical Abel/Dirichlet analysis and is not claimed as new. Bucur's interval Green formula is likewise classical and is already ledgered as source `102`. A targeted audit around Abelian theorems for conditionally convergent improper integrals, bounded-variation/Stieltjes kernels, small-order fractional Green kernels, and boundary-layer limits recovered the standard Dirichlet/Stieltjes mechanism and established fractional Green formulas, but no theorem directly covering the present `Q=q/s` moving Green family with its separate diagonal atom. Search absence is not used as evidence of broad novelty.
+The Stieltjes integration-by-parts step is classical Abel/Dirichlet analysis and is not claimed as new. Bucur's Green formula is classical and already ledgered as source `102`. A targeted audit around Abelian theorems for conditionally convergent improper integrals, bounded-variation kernels, small-order fractional Green kernels, and boundary-layer limits recovered the standard Dirichlet/Stieltjes mechanism and established fractional Green formulas, but no theorem directly covering this `Q=q/s` Green family with its separate moving diagonal atom. Search absence is not used as evidence of broad novelty.
 
-The durable line-local result is narrower and exact: **the absolute `L^1(dQ)` assumption in `PL-314` is not load-bearing.** The exact pre-diagonal Green factorization produces a canonical Abel weight of uniformly bounded variation, while the already-required condition `Qm(Q)->0` controls both the exponentially small factorization error and the moving/post-diagonal Green mass. This is precisely the missing bridge identified in `PL-320`.
+The durable line-local statement is exact and narrower: **the absolute `L^1(dQ)` assumption in `PL-314` is not load-bearing.** The pre-diagonal Green kernel itself supplies the bounded-variation Abel weight, while the already-required law `Qm(Q)->0` controls the exponentially small factorization error and the moving/post-diagonal mass.
 
 ## Adversarial controls and limits
 
-- **Conditional convergence alone is not enough.** The pointwise law `Qm(Q)->0` is still used to suppress the moving diagonal and post-diagonal region. Sparse `Theta(1/Q)` bumps of the type in `PL-314` remain excluded for exactly the same reason as before.
-- **No regularity of `m` beyond local integrability is hidden in the Abel step.** The bounded variation belongs to the explicit kernel weight `w_s`; the residual itself need not be monotone, BV, Sobolev, or absolutely integrable.
-- **The split stays a fixed distance from the diagonal in stretched coordinates.** The exact approximation (PL321-14) is used only for `q<=r/2`. No shrinking-neighborhood control of the Green atom is assumed.
-- **The result is pointwise in the outer coordinate.** It is proved for each fixed `r>0`; no uniform claim as `r->0`, `r->infinity`, or across an aperture activation is made.
-- **The theorem is universal analytic geometry, not arithmetic rigidity.** It closes an endpoint-transfer gate but supplies no sign, positivity, zero-localization, or rational-prime specificity by itself.
-- **No analytic continuation is involved.** The argument stays entirely in the real-variable fractional/logarithmic Green representation already justified in `PL-310`--`PL-320`.
+- Conditional convergence by itself is insufficient; `Qm(Q)->0` is still required to suppress the moving diagonal. The sparse `Theta(1/Q)` construction of `PL-314` remains excluded for exactly this reason.
+- No monotonicity, BV, Sobolev regularity, or absolute integrability of `m` is assumed. Bounded variation belongs to the explicit kernel weight `w_s`.
+- The exponentially accurate factorization is used only on `q<=r/2`, a fixed stretched distance from the diagonal. No shrinking-neighborhood estimate for the atom is smuggled in.
+- The theorem is pointwise for each fixed `r>0`; no uniform statement as `r->0`, `r->infinity`, or across aperture activations is made.
+- This closes a universal analytic matching gate only. It provides no arithmetic sign, positivity, zero-localization, or rational-prime rigidity.
 
 ## Verdict
 
-**Exact analytic gate closure.** A conditionally convergent endpoint moment plus the already-required moving-tail law `Qm(Q)->0` is sufficient for the full rank-one Green transfer. The absolute residual integrability left open in `PL-320` is unnecessary. For the completed-Weil branch, convergence of the singular translation remainder now simultaneously generates the leading `Q^{-1/2}` coefficient, the moving-tail anti-concentration, the conditional residual moment, and—by the present theorem—the required Green transfer. The downstream arithmetic sign/first-crossing problem remains untouched.
+**Exact analytic gate closure.** A conditionally convergent endpoint moment plus `Qm(Q)->0` is sufficient for the rank-one Green transfer. The absolute residual integrability left open by `PL-320` is unnecessary. For the completed-Weil branch, convergence of the singular translation remainder is now the sole unresolved endpoint-transfer condition in this chain; the arithmetic sign/first-crossing problem remains separate.
 
 ## Sources
 
-- Source `102` in `research/prime_lattice/SOURCES.md`: Claudia Bucur, “Some observations on the Green function for the ball in the fractional Laplace framework,” *Communications on Pure and Applied Analysis* **15**(2) (2016), 657–699. Supplies the exact interval Green kernel used in (PL321-6).
-- `PL-310`: stretched Green measure, diagonal atom, and exact total-mass control.
+- Source `102` in `research/prime_lattice/SOURCES.md`: Claudia Bucur, “Some observations on the Green function for the ball in the fractional Laplace framework,” *Communications on Pure and Applied Analysis* **15**(2) (2016), 657–699. Supplies the exact interval Green kernel used above.
+- `PL-310`: stretched Green measure, moving diagonal atom, and exact total-mass control.
 - `PL-313`: compact-support rank-one corner transfer.
 - `PL-314`: previous sufficient theorem with absolute `L^1(dQ)` and the sparse-diagonal counterexample.
-- `PL-319`: exact logarithmic endpoint source identity and source-trace convergence for the completed-Weil state.
+- `PL-319`: exact logarithmic endpoint source identity and completed-Weil source-trace convergence.
 - `PL-320`: full-tail Volterra reduction giving `Qm(Q)->0` and a convergent improper residual moment from convergence of the singular remainder trace.
