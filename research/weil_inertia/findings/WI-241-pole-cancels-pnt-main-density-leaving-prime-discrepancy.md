@@ -1,14 +1,14 @@
-# WI-241 — On odd tests the pole cancels the PNT main density, leaving a bounded resolvent plus prime discrepancy
+# WI-241 — The pole cancels the PNT main density for every test, leaving a bounded resolvent plus prime discrepancy
 
 **Status:** `LITERATURE+DERIVED + EXACT-DERIVED + STRUCTURAL-RIGIDITY + PRIOR-ART-AUDITED`.
 
-WI-240 shows that the gamma-plus-pole part of Suzuki's localized Weil form has unbounded negative index in the odd sector, so any all-radius positivity mechanism must use the von Mangoldt translation term. A sharper decomposition shows that **the bulk prime density itself is not the missing compensation**. On odd test functions, replacing the discrete von Mangoldt measure by its Prime Number Theorem main density cancels the polar term exactly up to a bounded positive convolution operator. The resulting mean-density model still has unbounded odd negative index.
+WI-240 shows that the gamma-plus-pole part of Suzuki's localized Weil form has unbounded negative index in the odd sector, so any all-radius positivity mechanism must use the von Mangoldt translation term. A sharper decomposition shows that **the bulk prime density itself is not the missing compensation**. For every compactly supported complex test, replacing the discrete von Mangoldt measure by its Prime Number Theorem main density cancels the polar term exactly up to a bounded positive convolution operator. Oddness is not needed for this cancellation; it enters only in the subsequent negative-index consequence. The resulting mean-density model still has unbounded odd negative index.
 
 Consequently, in this source-side formulation the genuinely load-bearing arithmetic object is the **signed discrepancy of the von Mangoldt measure from density one**, tested against localized autocorrelations. In particular, if the full zeta Weil form is nonnegative on odd tests, that discrepancy must supply a uniform negative charge on every fixed finite-dimensional family of slowly varying odd dilates.
 
-This is an exact operator identity in Suzuki's normalization. It does not assume RH and it does not assert a new form of the Prime Number Theorem.
+This is an exact operator identity in Suzuki's normalization. It does not assume RH and it does not assert a new form of the Prime Number Theorem. The parity-free form below corrects the original version of this finding, which unnecessarily treated oddness as load-bearing for the pole--density cancellation itself.
 
-## 1. Suzuki's exact odd-sector decomposition
+## 1. Suzuki's exact decomposition and the general polar factor
 
 For `v\in C_c^\infty(-a,a)`, extend `v` by zero to the real line and define the real autocorrelation
 
@@ -33,21 +33,30 @@ m(z)=\operatorname{Re}\psi\!\left(\frac14+\frac{iz}{2}\right)-\log\pi,
 \tag{3}
 \]
 
-and the factor `s(s-1)` contributes the polar term isolated in WI-240. For odd `v`, if
+and the factor `s(s-1)` contributes the polar term isolated in WI-240. Put
 
 \[
-L_\pm(v):=\int_{-a}^{a}v(x)e^{\pm x/2}\,dx,
+L_\pm(v):=\int_{-a}^{a}v(x)e^{\pm x/2}\,dx.
 \tag{4}
 \]
 
-then `L_-(v)=-L_+(v)` and the exact polar contribution is
+Applying the two exponential terms in Suzuki's Weil functional to `v*\widetilde v` gives, for arbitrary complex `v`,
 
 \[
-Q_{\rm pole}^a(v)=-2|L_+(v)|^2.
+\boxed{
+Q_{\rm pole}^a(v)
+=2\operatorname{Re}\!\left(L_+(v)\overline{L_-(v)}\right).
+}
 \tag{5}
 \]
 
-Thus on odd functions Suzuki's formula may be written
+For odd `v`, `L_-(v)=-L_+(v)`, so (5) specializes to the formula used in WI-240,
+
+\[
+Q_{\rm pole}^a(v)=-2|L_+(v)|^2.
+\]
+
+Without any parity assumption, Suzuki's quadratic form may therefore be written
 
 \[
 Q_W^a(v)=Q_\gamma(v)+Q_{\rm pole}^a(v)+Q_\Lambda^a(v),
@@ -62,7 +71,7 @@ Q_\gamma(v)
 \tag{7}
 \]
 
-Primary source: Masatoshi Suzuki, **Weil's quadratic form via the screw function**, arXiv:2606.09096 (2026), especially equations (2.5)--(2.7) and the exact translation formula preceding (2.5): <https://arxiv.org/abs/2606.09096>.
+Primary source: Masatoshi Suzuki, **Weil's quadratic form via the screw function**, arXiv:2606.09096v2 (17 Aug 2026), especially the exact Weil functional and equations (2.5)--(2.7): <https://arxiv.org/abs/2606.09096>. The parity-free formula (5) is the direct convolution/Laplace factorization of Suzuki's two polar exponentials; Suzuki is the source of the form, not of the present rearrangement of its terms.
 
 ## 2. Replace the von Mangoldt atoms by their PNT main density
 
@@ -89,9 +98,9 @@ This is the quadratic-form replacement corresponding to the classical main term
 \tag{10}
 \]
 
-The relevance of density one is not heuristic: the `X` main term in the explicit formula is the contribution of the pole of `\zeta(s)` at `s=1`. The next calculation shows that, in the odd localized quadratic form, this continuum source and Suzuki's explicit polar factor are algebraically paired.
+The relevance of density one is not heuristic: the `X` main term in the explicit formula is the contribution of the pole of `\zeta(s)` at `s=1`. The next calculation shows that this continuum source and Suzuki's explicit polar factor are algebraically paired for every test, not only in the odd sector.
 
-## 3. Exact pole--density cancellation
+## 3. Exact parity-free pole--density cancellation
 
 Let
 
@@ -112,15 +121,18 @@ Fubini gives the exact bilateral Laplace factorization
 \tag{12}
 \]
 
-For odd `v`, `L_-=-L_+`, hence the right-hand side is `-|L_+|^2`. Also `A_v(-h)=\overline{A_v(h)}`, so taking real parts in (12) yields
+Since `A_v(-h)=\overline{A_v(h)}`, taking real parts in (12) gives for arbitrary complex `v`
 
 \[
-\int_0^\infty\left(e^{h/2}+e^{-h/2}\right)C_v(h)\,dh
-=-|L_+(v)|^2.
+\boxed{
+\operatorname{Re}\!\left(L_+(v)\overline{L_-(v)}\right)
+=
+\int_0^\infty\left(e^{h/2}+e^{-h/2}\right)C_v(h)\,dh.
+}
 \tag{13}
 \]
 
-Combining (5), (9), and (13) gives
+Combining (5), (9), and (13) gives, with no parity assumption,
 
 \[
 \boxed{
@@ -156,7 +168,7 @@ Therefore
 \tag{17}
 \]
 
-This is the central cancellation. The individually large continuum-prime and polar pieces do not add to a large coercive term; on odd tests they collapse exactly to a bounded positive resolvent.
+This is the central cancellation. The individually large continuum-prime and polar pieces do not add to a large coercive term: for every test they collapse exactly to a bounded positive resolvent. The earlier odd-only formulation was stronger than necessary in its hypotheses.
 
 ## 4. The exact remaining arithmetic is the von Mangoldt discrepancy
 
@@ -169,17 +181,16 @@ Define
 \tag{18}
 \]
 
-Since `C_v` vanishes beyond `2a`, the cutoff is intrinsic to the test and may be omitted from either expression without changing its value. Subtracting (8) from (2) and using (15) gives the exact odd-sector identity
+Since `C_v` vanishes beyond `2a`, the cutoff is intrinsic to the test and may be omitted from either expression without changing its value. Subtracting (8) from (2) and using (15) gives the exact parity-free identity
 
 \[
 \boxed{
-Q_W^a(v)=Q_\gamma(v)+R(v)-2\Delta_\Lambda^a(v),
-\qquad v\ \text{odd}.
+Q_W^a(v)=Q_\gamma(v)+R(v)-2\Delta_\Lambda^a(v).
 }
 \tag{19}
 \]
 
-Equivalently, the explicit pole and the **density-one** part of the prime-power source have already been accounted for by the bounded positive operator `R`; everything arithmetic beyond that main density enters through `\Delta_\Lambda^a`.
+Equivalently, the explicit pole and the **density-one** part of the prime-power source have already been accounted for by the bounded positive operator `R`; everything arithmetic beyond that main density enters through `\Delta_\Lambda^a`. This statement is valid on the full compactly supported test space, not merely its odd subspace.
 
 In Stieltjes notation, (18) is simply a smoothed Prime Number Theorem remainder:
 
@@ -266,7 +277,7 @@ n_-\!\left(Q_{\rm mean}^a\big|_{\rm odd}\right)\ge N.
 \tag{28}
 \]
 
-So even the PNT main density, combined exactly with the pole and the complete gamma factor, does not restore odd-sector coercivity.
+So even the PNT main density, combined exactly with the pole and the complete gamma factor, does not restore odd-sector coercivity. Oddness first becomes load-bearing here: it supplies the particular negative-index sector inherited from WI-240, not the cancellation (14) or decomposition (19).
 
 ## 6. Necessary discrepancy charge under Weil positivity
 
@@ -320,15 +331,15 @@ This does **not** prove that standard PNT error bounds are formally incapable of
 
 The load-bearing ingredients divide as follows.
 
-- **Literature-backed exact input:** Suzuki supplies the localized translation formula (2), the gamma multiplier (3), and the polar factor used in (5). WI-240 already audited their signs against arXiv:2606.09096.
+- **Literature-backed exact input:** Suzuki supplies the localized translation formula (2), the gamma multiplier (3), and the two polar exponentials whose convolution factorization gives (5). WI-240 already audited their signs and normalization against arXiv:2606.09096v2.
 - **Classical explicit-formula input:** the interpretation `\psi(x)=x+(\text{fluctuation})` and the fact that the `x` term corresponds to the pole at `s=1` are classical von Mangoldt/Riemann explicit-formula structure. No novelty is claimed for subtracting the Prime Number Theorem main term as an arithmetic device.
-- **Mathia deduction:** equations (12)--(19) identify the exact odd-sector operator cancellation, (22)--(28) show that the resulting density-one model still has unbounded odd negative index, and (31) isolates the fixed-order signed discrepancy charge required by positivity.
+- **Mathia deduction:** equations (12)--(19) identify the exact **parity-free** operator cancellation; (22)--(28) then specialize to the odd sector to show that the resulting density-one model still has unbounded odd negative index; and (31) isolates the fixed-order signed discrepancy charge required by odd positivity.
 
-A targeted prior-art search around Weil quadratic forms, `\psi(x)-x`, von Mangoldt density-one subtraction, and Suzuki's localized operator found the classical explicit-formula decomposition and Suzuki's exact form, but did not locate this specific odd autocorrelation/resolvent identity or its negative-index consequence. Search absence is not a priority claim.
+The parity-free correction was checked directly against Suzuki's primary formula rather than inferred from the previous odd specialization. A targeted prior-art search around Weil quadratic forms, `\psi(x)-x`, von Mangoldt density-one subtraction, autocorrelations, and resolvent kernels found the classical explicit-formula decomposition and Suzuki's exact form, but did not locate this specific autocorrelation/resolvent identity or its negative-index consequence. Search absence is audit context only, not a priority claim.
 
 ## 9. Stress tests and boundaries
 
-1. **Oddness is load-bearing.** The factorization (12) holds generally, but the cancellation (14) uses `L_-=-L_+`. The finding makes no corresponding full-space identity with the same sign.
+1. **Oddness is not needed for (14) or (19).** Those identities hold for arbitrary compactly supported complex `v`. Oddness is load-bearing only for the negative-index specialization (28) and the necessary signed charge (31) inherited from that sector.
 2. **No asymptotic substitution is used in (14) or (19).** `Q_1` is a deliberately defined density-one comparison form. The difference between the actual primes and this comparison is retained exactly as `\Delta_\Lambda`.
 3. **The cutoff is exact.** Because `v` is supported in `(-a,a)`, `C_v(h)=0` for `h\ge2a`; writing sums/integrals up to `e^{2a}` or to infinity is equivalent.
 4. **The resolvent is positive but bounded.** It contributes at most `4\|v\|^2`, and its low-frequency value `4` is not enough to overturn the negative gamma value `m(0)`.
@@ -338,7 +349,7 @@ A targeted prior-art search around Weil quadratic forms, `\psi(x)-x`, von Mangol
 
 ## Consequence for the research line
 
-WI-240 said that the prime term is indispensable. WI-241 makes that statement substantially sharper:
+WI-240 said that the prime term is indispensable. The strengthened WI-241 makes that statement substantially sharper on the full test space:
 
 \[
 \boxed{
@@ -347,4 +358,12 @@ WI-240 said that the prime term is indispensable. WI-241 makes that statement su
 \tag{33}
 \]
 
-The live finite-radius problem should therefore be formulated directly in terms of the operator generated by (18), rather than by the total prime translation sum. A promising next test is to integrate (18) by parts against `\psi(x)-x` and determine whether known unconditional one-sided information, explicit-formula identities, or a first-crossing zero-mode equation constrain this autocorrelation-weighted discrepancy strongly enough to supply (31). Conversely, a barrier showing that all available PNT-error estimates are too weak after the exact pole cancellation would close another broad source-side route cleanly.
+This also changes how the post-WI-301 quantitative-unscreening question must be interpreted. WI-301 proves, for one-signed dyadically screened `f` with `Q_W(f)\le0`, a positive lower bound on the **total discrete prime-power source**
+
+\[
+2\sum_{\Lambda(n)>0}\frac{\Lambda(n)}{\sqrt n}C_f(\log n).
+\]
+
+But (14)--(19) now show that a lower bound on this total source is not by itself a lower bound on arithmetic discrepancy: its density-one component is algebraically paired with the pole before the sign of the residual operator is decided. Thus merely localizing WI-301's reserve to one or several odd-prime lags would not yet produce a defect bootstrap unless the localization also proves a signed surplus or deficit **relative to the corresponding density-one autocorrelation mass**, or supplies another genuinely discrete invariant. No sign bound for `\Delta_\Lambda` follows from WI-301 alone.
+
+The live finite-radius problem should therefore be formulated directly in terms of the operator generated by (18), rather than by the total prime translation sum. A promising next test is to integrate (18) by parts against `\psi(x)-x` and determine whether known unconditional one-sided information, explicit-formula identities, first-crossing zero-mode structure, or the dyadic screening geometry constrain this autocorrelation-weighted discrepancy strongly enough to supply a coercive charge. Conversely, a barrier showing that all available PNT-error estimates are too weak after the exact pole cancellation would close another broad source-side route cleanly.
