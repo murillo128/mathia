@@ -317,3 +317,9 @@ Role: prior-art boundary for the generic-code control in `MC-313`. The paper pro
 Jozefien D'haeseleer and Sascha Kurz, *Generalized Hamming weights of additive codes and geometric counterparts*, Designs, Codes and Cryptography 94 (2026), published online 18 June 2026. DOI: https://doi.org/10.1007/s10623-026-01889-9. Current Bayreuth repository version: https://doi.org/10.15495/EPub_UBT_00009151. arXiv: https://arxiv.org/abs/2512.16327.
 
 Role: primary finite-geometric prior-art anchor for `MC-315`. The paper defines projective `(h,f)-(n,r,s)_q` systems and the extremal parameter `n_q(r,h,f;s)`, with the `h=1` case corresponding to linear codes and codimension-`f` occupancy equal to `n-d_f`. Lemma 4.2 gives the double-counting upper bound `n_q(r,h,f;s) <= ([r choose f]_q/[r-h choose f]_q) s`. `MC-315` specializes this framework to the diagonal binary regime `r=R`, `f=ceil(2 log_2(R+1))`, `s<=R+2` and shows that the general incidence bound is only `O(R^3)`, far above the `2R` threshold relevant to the exact-natural-scale source code.
+
+## MC-S54 — Schmidt, probabilistic Möbius partial sums
+
+Maxie Dion Schmidt, *Picking up the partial sums of the Möbius function problem with probabilistic number theory*, arXiv:2604.23517 (submitted 26 April 2026). https://arxiv.org/abs/2604.23517.
+
+Role: primary manuscript source for `MC-318`. The audit uses Assertion 1.10 (IH-A), which asserts independence between squarefreeness and `Omega(n)=k`, and Theorem 2.2 equations (8a)–(8b), which define `Q_{1,n}(x)=sum_{j<=x} lambda(nj) mu^2(j)` and assign it an `n`-independent leading asymptotic. `MC-318` checks these displayed statements against the exact `Omega=1` stratum and the pointwise identity `lambda(j)mu^2(j)=mu(j)`; no secondary summary is used as theorem evidence.
