@@ -44,10 +44,7 @@ with `E_0(y)=0` below the first coefficient. Then the Riesz transform has the ex
 
 \[
 \boxed{
-E_\delta(y)
-=
-\delta\int_0^1
-u^{1/2}E_0(y+\log u)(1-u)^{\delta-1}\,du.
+E_\delta(y)=\delta\int_0^1 u^{1/2}E_0(y+\log u)(1-u)^{\delta-1}\,du.
 }
 \tag{5}
 \]
@@ -254,9 +251,7 @@ C(t)\left(1-\frac tX\right)^{\delta-1}dt.
 Substitute `t=Xu`. Since
 
 \[
-e^{-y/2}C(e^yu)
-=
-u^{1/2}E_0(y+\log u),
+e^{-y/2}C(e^yu)=u^{1/2}E_0(y+\log u),
 \tag{24}
 \]
 
