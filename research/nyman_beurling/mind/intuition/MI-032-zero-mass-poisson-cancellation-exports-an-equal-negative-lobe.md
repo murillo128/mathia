@@ -1,17 +1,15 @@
-# MI-032 — Cancelling the universal Hadamard log budget exports an equal negative Poisson lobe
+# MI-032 — Cancelling the Hadamard log budget creates a sign debt that Jordan domination cannot repay cheaply
 
-**Evidence level:** exact signed-kernel conservation law from [NB-148](../../findings/NB-148-cancelling-the-hadamard-log-budget-forces-an-equal-mass-negative-poisson-lobe.md), complementing the positive reflection-closure classification NB-147.
+**Evidence level:** exact signed-kernel conservation law from [NB-148](../../findings/NB-148-cancelling-the-hadamard-log-budget-forces-an-equal-mass-negative-poisson-lobe.md), sharpened by the source-specific method obstruction [NB-149](../../findings/NB-149-jordan-domination-reinstates-the-positive-poisson-log-budget.md), complementing the positive reflection-closure classification NB-147.
 
-Positive exterior Poisson sampling has a rigid advantage: every zero contributes with one sign, but the universal Hadamard/archimedean term consumes a leading `(1/2)log G` budget. A natural escape is to use a signed exterior sampler `nu` with total mass zero so that the leading universal term cancels.
+Positive exterior Poisson sampling has a rigid advantage: every zero contributes with one sign, but the universal Hadamard/archimedean term consumes a leading `(1/2)log G` budget. A zero-mass signed exterior sampler can cancel that universal term.
 
-NB-148 shows the exact price of that cancellation. The corresponding zero-side Poisson kernel `K_(nu,beta)` has vertical integral
+NB-148 gives the exact price. The associated zero-side Poisson kernel has zero vertical integral, so any positive lobe of integrated mass `A` is accompanied by exactly `A` negative mass. Cancelling the universal logarithmic budget exchanges a scalar budget for a **sign debt**; it does not create net positive zero mass.
 
-`integral K_(nu,beta)(t) dt = pi M_nu`,
+NB-149 now classifies the most immediate repair. If the adverse contribution is bounded by the negative Jordan part, `(K_nu)_- <= K_(nu_-)`, or the whole signed expression is bounded by total variation, `|K_nu| <= K_|nu|`, the argument re-enters the positive Poisson cone. For a zero-mass sampler, `nu_+` and `nu_-` have equal total mass. Under the cheap-exterior regime, the Jordan majorant therefore carries a genuine logarithmic zero budget again; in the natural normalization `nu_+(Omega_G)=nu_-(Omega_G)=1`, the negative-piece bound costs `(1/2+o(1))log G`.
 
-where `M_nu` is the total signed mass of the sampler. Thus `M_nu=0` forces the kernel itself to have zero total mass. If its positive lobe has integrated mass `A`, its negative lobe has integrated mass exactly `A` as well.
+The same issue appears on the prime side: replacing the signed logarithmic-derivative combination by an absolute-value majorant discards the cancellation that removed the common Hadamard term. Thus **signed cancellation is useful only while the subsequent argument remains signed or location-sensitive**. Taking absolute values after cancellation forfeits the gain.
 
-Under the quantitative width/total-variation condition used in NB-148, zero mass really does remove the leading logarithmic Hadamard budget on the relevant local window. But it cannot preserve the positive zero-side comparison at the same time. The universal term has been cancelled by exchanging a scalar budget for a **sign debt**: every useful positive target lobe exports equally much negative kernel mass elsewhere.
+The live source question is now precise. A successful signed route must show that the actual zeta zeros sample the negative lobe unusually weakly, exploit cancellation/correlation in the von Mangoldt series, or couple positive and negative pieces directly to the Nyman target before any Jordan or triangle-inequality domination. Oscillatory coefficients alone are not a resource once their adverse part is estimated by positive machinery.
 
-This turns “try signed sampling” into a concrete source question. A signed route can only improve the positive reflection-closure barrier if another theorem controls the zeros seen by the negative lobe, or if prime-side cancellation pays for that lobe without reintroducing a target-equivalent assumption. Merely choosing more oscillatory coefficients cannot create net positive zero mass after the universal logarithmic term has been removed.
-
-**Boundary.** The conservation law constrains the integrated signed Poisson kernel, not its detailed pointwise shape. It does not rule out a sampler whose negative lobe lands in a region where actual zeta zeros are independently controlled, nor a prime-side identity that compensates it. Those are now the precise missing resources.
+**Boundary.** NB-149 is a method obstruction, not a lower bound on the true negative contribution. Actual zeros may miss most of the negative lobe, and a genuinely signed prime-side identity may still compensate it. Those possibilities are exactly what the Jordan bound cannot see.

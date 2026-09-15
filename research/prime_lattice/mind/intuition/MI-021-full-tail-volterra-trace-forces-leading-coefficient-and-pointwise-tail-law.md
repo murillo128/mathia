@@ -1,27 +1,25 @@
-# MI-021 — One convergent singular-remainder trace now closes the full moving Green endpoint transfer
+# MI-021 — The source-coupled endpoint equation closes the moving Green transfer without an extra trace hypothesis
 
-**Evidence level:** exact conditional reduction from [PL-320](../../findings/PL-320-source-trace-full-tail-volterra-matching.md), completed by the conditional-moment Green theorem [PL-321](../../findings/PL-321-conditional-moment-green-transfer.md), using the endpoint identity of PL-319.
+**Evidence level:** exact line-specific closure from [PL-321](../../findings/PL-321-conditional-moment-green-transfer.md)--[PL-323](../../findings/PL-323-coercive-tail-comparison-closes-pointwise-flux.md), using the endpoint identity of PL-319. The comparison principle is standard nonlocal analysis; the completed-Weil consequence is the durable delta.
 
-For the logarithmic endpoint coordinate `Q`, PL-320 writes the full tail profile `g` as
+The exact logarithmic endpoint equation has the form
 
 `F(Q)=2Q g(Q)-U(Q)+H_(Q0)g(Q)+c_(Q0)(Q)g(Q)`,  `U(Q)=int_(Q0)^Q g(P)dP`.
 
-Assume `g(Q)->0`, the completed-Weil source trace `F(Q)->F_infinity`, and the local singular translation remainder `H_(Q0)g(Q)->H_infinity`. Then the residual right-hand side converges and the exact Volterra equation forces a coefficient `C` with
+PL-320 originally closed the transfer conditionally on a finite limit of the singular translation remainder `H_(Q0)g`. PL-322 shows that this extra trace hypothesis is not needed to select the critical profile or its residual moment. Because the kernel in `H` is symmetric, the primitive of `H g` is only a boundary flux and tends to zero under the sharp `g(Q)=O(Q^-1/2)` envelope. Together with the convergent completed-Weil source trace `F(Q)->F_infinity`, this forces a unique primitive coefficient `C` with
 
-`g(Q)=C Q^(-1/2)+m(Q)`,  `Qm(Q)->0`,
+`U(X)=2C sqrt(X)-F_infinity+o(1)`
 
-while the improper integral `int m(Q)dQ` converges. Thus the leading half-order coefficient and the pointwise anti-concentration needed at the moving diagonal are consequences of the same singular-remainder trace rather than separate assumptions.
+and makes the improper moment of `m(Q)=g(Q)-C Q^-1/2` converge automatically. The same identity then yields
 
-PL-321 closes the remaining transfer gap. If `m` is locally integrable, has a convergent improper moment `M`, and satisfies `Qm(Q)->0`, then for every fixed `r>0` the moving Green functional obeys
+`2Qm(Q)+H_(Q0)m(Q) -> 0`.
 
-`A_s[m](r) -> e^-r M` as `s->0`.
+PL-323 closes the remaining pointwise gate. Positivity of the jump kernel and the growing potential `2Q` give a maximum-principle comparison with `1/Q` as an explicit supersolution; from the residual equation and continuity one obtains
 
-The mechanism is explicit: before the moving diagonal the exact Green kernel factors into `a_s(r) w_s(Q) E_s(r,Q)`, where `a_s->e^-r`, `w_s` tends pointwise to `1` and has uniformly bounded variation, and `E_s-1` is exponentially small. Stieltjes/Dirichlet summation therefore transports a conditionally convergent moment. The condition `Qm->0` controls the moving and post-diagonal mass. Absolute `L^1` is unnecessary.
+`Qm(Q) -> 0`.
 
-For the actual completed-Weil branch, the source equation already provides the convergent full source trace and established boundary theory gives `g=O(Q^-1/2)`. The analytic endpoint-transfer problem is therefore reduced to the single local condition
+No sign of `m` is required. PL-321 then transports the conditionally convergent residual moment through the moving Green kernel. Thus the analytic moving-diagonal obstruction that survived PL-314--PL-321 is closed for the actual source-coupled completed-Weil branch **without** an independent `H g` convergence theorem or absolute `L^1` control.
 
-`H_(Q0)g(Q) -> H_infinity`.
+The remaining endpoint problem is no longer ambient regularity. The transferred rank-one datum still needs a rational-prime-specific sign, first-crossing or scalar compatibility theorem strong enough to exclude the RH-obstructing branch. The mechanisms in PL-322--PL-323 are universal real-variable/nonlocal geometry and do not supply that arithmetic orientation.
 
-Once that is proved, the coefficient, residual moment, moving-diagonal law and rank-one Green transfer follow in sequence from PL-320--PL-321.
-
-**Boundary.** This is universal endpoint analysis, not an arithmetic sign mechanism. It does not prove convergence of the singular translation remainder, positivity of the endpoint moment, rational-prime rigidity, or RH. The important change is narrower: the previous absolute-integrability alternative is gone, so no extra `L^1` theorem should be counted as an independent endpoint gate.
+**Boundary.** This closure depends on the exact source equation, its convergent source trace, the sharp half-order boundary envelope, continuity and pointwise realization of the singular operator. It is not a generic theorem that every critical tail has `o(1/Q)` residual, and it is not an RH proof.

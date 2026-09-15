@@ -2,28 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove the singular endpoint remainder trace; conditional moments already close the Green transfer
+## Return to the arithmetic sign gate after closing the moving Green endpoint transfer
 
 **Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability` through `MI-021-full-tail-volterra-trace-forces-leading-coefficient-and-pointwise-tail-law`.
 
 PL-313 identifies the one-dimensional endpoint-moment channel by which a resolved physical corner reaches the obstructed regular outer direction. PL-314--PL-318 show why generic tail size, smoothness, critical Sobolev control and bounded logarithmic forcing do not control the moving Green atom.
 
-PL-319 gives the exact endpoint-coordinate identity. PL-320 applies it before assuming a leading coefficient: if the actual tail `g(Q)->0`, the completed-Weil source trace `F(Q)` converges, and the local singular translation remainder `H_(Q0)g(Q)` converges, then the Volterra relation forces
+PL-319 gives the exact endpoint-coordinate source identity. PL-322 uses the conservative symmetry of its singular kernel to show that the integrated endpoint flux vanishes under the sharp `O(Q^-1/2)` boundary scale. Source convergence then forces the primitive critical coefficient and makes the residual moment conditionally convergent without assuming a pointwise limit for the singular remainder.
 
-`g(Q)=C Q^(-1/2)+m(Q)`,  `Qm(Q)->0`,
+The residual satisfies `2Qm+H m->0`. PL-323 uses the positive jump-kernel maximum principle and the growing `2Q` potential to force `Qm(Q)->0`. Combined with PL-321, the moving Green transfer is therefore closed for the actual source-coupled completed-Weil branch. There is no longer a separate analytic task to prove `H g` has a finite limit or to upgrade the residual to absolute `L^1`.
 
-and the improper residual moment `int m(Q)dQ` converges.
+The live theorem is now downstream and arithmetic: determine whether the transferred rank-one endpoint datum couples to the rational-prime Weil form with a sign, first-crossing or scalar compatibility constraint strong enough to exclude the off-critical branch. Any such theorem must use source-specific arithmetic unavailable to the universal endpoint comparison mechanism.
 
-PL-321 now removes the remaining absolute-`L^1` gap. For any locally integrable `m` with a convergent improper moment and `Qm(Q)->0`, the moving Green transfer converges to the rank-one endpoint value `e^-r M`. The pre-diagonal kernel supplies an explicit bounded-variation Abel weight, while `Qm->0` suppresses the moving/post-diagonal mass. Absolute residual integrability is not load-bearing.
+## Keep analytic transport and arithmetic orientation separate
 
-Therefore the analytic endpoint-transfer frontier has collapsed to one local statement for the actual completed-Weil branch:
+PL-322--PL-323 are real-variable/nonlocal endpoint analysis. Their coercivity selects and transports the critical tail but does not orient the resulting scalar. The same distinction that motivated the line now becomes sharper: **information reaches the outer mode, but RH requires a prime-specific theorem about what sign or crossing that information can have**.
 
-`H_(Q0)g(Q) -> H_infinity`.
-
-If this holds, PL-320 generates the coefficient and residual laws and PL-321 completes the Green transfer. The previous alternative “prove absolute `L^1` or weaken the transfer theorem” is closed; only the singular remainder trace remains.
-
-## Keep endpoint matching and arithmetic sign separate
-
-The Volterra and Abel/Green mechanisms are real-variable endpoint analysis and are not prime-specific. Even after the boundary transfer is closed, the scalar endpoint moment can have either sign. Rational-prime specificity must enter through the actual completed-Weil mismatch/source relation, a first-crossing/order principle, or another sign-producing structure unavailable to matched locally finite shift systems.
-
-A future argument should not treat the forced coefficient `C` or the now-closed conditional Green transfer as an arithmetic sign theorem. They establish that the endpoint information reaches the outer mode under one remaining trace hypothesis; they do not orient the RH-relevant scalar compatibility condition.
+Future work should not spend effort reproving generic endpoint regularity that the exact source equation already supplies. It should isolate the source term or first-crossing relation that distinguishes the rational-prime completed-Weil state from matched analytic controls, while preserving the now-closed Green transport as a reusable interface.

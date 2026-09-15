@@ -2,38 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Retain or neutralize every dangerous arithmetic channel; the obstruction begins at the first prime
+## Control the finite negative sector after admissible reserve lifting
 
-**Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols` through `MI-031-compressed-translation-autocorrelation-has-no-same-width-shape-slack`.
+**Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols` through `MI-032-reserve-lifting-converts-the-frozen-essential-obstruction-into-a-finite-negative-index-problem`.
 
-WI-298--WI-301 close complete one-signed dyadic screening and show that such screening leaves a uniform archimedean reserve. WI-241 separately identifies the source quantity after pole/main-density cancellation as signed prime discrepancy, not total prime-power mass.
+WI-304--WI-306 exactly classify the frozen-reserve tail-dropped comparison. With Liu's support and `beta_0=1/16`, the first active prime already creates an essential negative band, and the compressed-translation numerical-radius bound is sharp. No same-width reshaping of the localizer repairs that fixed comparison.
 
-WI-302--WI-304 study a different compact-positivity architecture. For an individually isolatable active prime-power atom `q`, the tail-dropped comparison has essential numerical-range band
+WI-307 changes the architectural conclusion. The unit-window archimedean symbol is unbounded above, so at every fixed aperture `L` the exterior reserve can be raised to any prescribed `B` by moving the Fourier cutoff. The localized comparison becomes
 
-`[beta-w_q,beta+w_q]`,  `w_q=(Lambda(q)/sqrt(q))(1-rho_chi(log q))`.
+`D_(chi,B)=B I-A_(L,chi)+K_(L,chi,B)`,
 
-Because essential numerical range is invariant under compact perturbations, `w_q>beta` forbids positivity after any fixed compact self-adjoint repair.
+with `A_(L,chi)` the finite active prime-power translation sum and `K` compact. Choosing `B>||A_(L,chi)||` moves the essential spectrum strictly positive. The remaining negativity, if any, is finite/discrete rather than essential.
 
-WI-305 makes the onset exact for Liu's normalized support and reserve `beta_0=1/16`: at `q=2`, the compressed translation bound forces
+The live fixed-aperture theorem is therefore **source-valid control of that finite negative sector**. An abstract finite-rank negative-part repair exists, but it is not automatically dominated by the omitted positive source remainder. A successful positivity argument must pay for those modes using retained arithmetic/tail information rather than insert an operator-theoretic patch after the fact.
 
-`w_2 >= (log 2/sqrt(2))(1-1/sqrt(2)) > 1/16`.
+## Price reserve lifting uniformly as the aperture grows
 
-The obstruction therefore starts immediately when the first prime channel becomes active, at `L>log(2)/2`.
+Reserve lifting is free only in the qualitative fixed-`L` sense. The Fourier cutoff needed to produce a large reserve grows rapidly with `B`, while the norm and number of active arithmetic translations grow with the aperture. A genuine global obstruction or construction must track this joint scaling.
 
-WI-306 removes the last same-support shape loophole. For translation by `a` compressed to an interval of length `ell`, the exact numerical radius is
-
-`cos(pi/(ceil(ell/a)+1))`,
-
-with a smooth translated-bump sine extremizer. The WI-305 atomwise lower envelope is therefore sharp. At `q=2`, no shape optimization inside support length `2` helps. If the reserve is artificially frozen at `1/16`, even varying support alone cannot cross the isolated first-prime gate until `ell>5 log 2`; widening the support in the full certificate, however, changes other terms and is not itself a positivity construction.
-
-A redesigned localization must therefore change something visible on the same weakly-null sequence: retain noncompact source-exact information, increase the high-frequency reserve, substantially change the support architecture, or add another noncompact term. A finite-rank/compact after-the-fact patch, or a cleverer same-width localizer shape, cannot repair the first active channel.
+The next useful result should therefore either derive a uniform reserve/tail domination strong enough to control the discrete negative sector as `L->infinity`, or prove a scale incompatibility that survives **all** admissible reserve choices. Reusing the `beta_0=1/16` essential-band obstruction as if the reserve were intrinsic is no longer valid.
 
 ## Keep compact certificate design separate from full Weil positivity
 
-The first-prime essential-band theorem is a necessary obstruction for the specified tail-dropped bounded comparison, not a negativity theorem for the full Weil form. It does not validate the unreplayed `17/16` certificate and does not say that every prime channel must be retained separately. The full source-exact positive remainder can contain noncompact information invisible to the compact-repair model.
-
-Finite-dimensional trial-subspace optimization remains certificate design downstream of the noncompact information-retention question.
+Finite-dimensional trial-subspace optimization remains certificate design downstream of the source-valid information-retention question. WI-303 already shows that the rank of a finite Loewner minorant is not structural. WI-307 reinforces the distinction: finite negative index does not imply the source pays for the corresponding correction.
 
 ## Preserve the signed-density quotient
 
-Even a successful tail-retaining architecture must eventually survive the exact density-one cancellation of WI-241. The RH-relevant source variable is the signed discrepancy after the universal prime main density and pole cancel. “Retained arithmetic mass” or “positive source tail” is not yet the required sign-producing discrepancy theorem.
+Even a successful reserve-lifted/tail-retaining architecture must eventually survive the exact density-one cancellation of WI-241. The RH-relevant source variable is the signed discrepancy after the universal prime main density and pole cancel. A large positive reserve or retained arithmetic mass is not yet the required sign-producing discrepancy theorem.

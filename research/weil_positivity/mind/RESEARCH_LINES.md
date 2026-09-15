@@ -2,28 +2,28 @@
 
 This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a scalar invariant discontinuous under all-gap atomwise smoothing, or leave the scalar Julia category
+## Find an exact scalar invariant outside Pick positivity, or leave the scalar Herglotz category
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-034-all-gap-weak-julia-coherence-is-still-atomwise-smoothing-universal`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-035-exact-finite-cross-gap-pick-positivity-is-a-universal-resolvent-gram`.
 
-WP-293--WP-318 close the natural pure-measure scalar Julia orbit at one node: derivative normalization reduces the response to `tau-K_nu`, whose Pick positivity is universal for every probability law. WP-319 makes the arithmetic gap laws tight and source-specific, but one law still has a positive matched control. WP-320 shows that sparse infinitely-many-node same-source coherence can be assembled by one non-atomic source.
+WP-293--WP-318 close the natural pure-measure scalar Julia orbit at one node: derivative normalization reduces the response to a universal Pick/Boolean self-energy form. WP-319--WP-321 then show that source-specific gap laws, sparse common-source coherence and even the full unthinned bounded-gap Julia family remain matched-control realizable in the natural weak topology by one atomlessly smoothed positive source.
 
-WP-321 removes the sparsity loophole for the natural weak topology. By smoothing each Mangoldt atom once at a sufficiently small radius, one obtains a **single positive non-atomic locally absolutely continuous Herglotz source** for which every consecutive prime-power gap midpoint remains regular and
+WP-322 closes the canonical exact finite-node escape. For any positive scalar Herglotz source, the boundary Loewner matrix at arbitrary regular real nodes is the resolvent Gram
 
-`Dhat_j/D_j -> 1`,  `d_BL(rhohat_j,rho_j) -> 0`
+`L_ij = a + int dmu(x)/[(x-t_i)(x-t_j)]`,
 
-along the full unthinned gap sequence. On the entire fixed-additive-gap family of WP-319, tightness upgrades this to local uniform convergence of the normalized scalar Julia profiles.
+so every finite multipoint Pick matrix and its principal minors are positive for universal reasons. Finite Julia reductions are Schur complements of the same Gram and inherit that positivity. Exact arithmetic nodes can change entries but not the provenance of the sign.
 
-Thus non-sparse provenance, every-gap coherence and the natural bounded-Lipschitz/Julia topology are still not arithmetic-selective. The next scalar theorem cannot merely strengthen family density inside the same continuity class. It must use an exact cross-gap/support invariant that is **discontinuous under atomwise smoothing**, detect atomic or multiplicative support arithmetic itself, or couple the finite source to Gamma/pole/trivial-zero data before scalar Julia reduction. Otherwise the route should change category to a genuinely matrix/operator-valued or other non-scalar structure.
+The next scalar theorem therefore cannot be another Pick determinant, principal minor, finite exact cross-gap positivity condition or finite Julia-reduction inequality. It must use exact atomic/support/multiplicative information through an invariant whose sign is **not** automatic for arbitrary positive scalar Herglotz measures. Otherwise the route should change category to genuinely matrix/operator-valued, indefinite-to-positive, infinite-domain or direct finite--archimedean structure with its own positivity theorem.
 
-## Separate local arithmetic fingerprint from source-selective positivity
+## Separate source fingerprint from source-selective positivity
 
-Shifted-lattice support, quantized Mangoldt coefficients and tight derivative-biased laws are genuine source information. The positivity of `-K_rho` is not. WP-321 now shows that even the whole consecutive-gap family can be reproduced asymptotically after atomwise smoothing in the topology consumed by scalar Julia kernels.
+Shifted-lattice support, quantized Mangoldt coefficients, tight derivative-biased laws and exact multipoint matrix entries can all be source-specific. The positivity of the scalar Pick kernel is not. WP-321 says weakly continuous scalar family statistics are reproducible after atomwise smoothing; WP-322 says even exact finite Pick positivity remains universal without any smoothing at all.
 
-Future scalar arguments should therefore state the exact feature that fails under smoothing. A statistic continuous under bounded-Lipschitz convergence, or under the induced local-uniform Cauchy/Julia convergence on tight families, has already lost the required atomic specificity.
+Future scalar arguments should identify the precise feature that fails both tests: it must survive as exact arithmetic information while its **sign theorem** fails for a broad positive-measure control class. Numerical arithmetic detail inside a universally positive Gram is not enough.
 
-## Preserve mass class, curvature, compactness, family topology and global coupling as distinct gates
+## Preserve mass class, curvature, topology, finite-section category and global coupling as distinct gates
 
-WP-314--WP-321 expose successive independent gates: universal moving tangents, noncompact atom-mass scaling, universal normalized positivity, source-specific compact limits with individual matched controls, sparse same-source grafting, and now full all-gap atomwise smoothing. Passing local compactness, common-source provenance or non-sparse family coherence still does not produce finite--archimedean completion.
+WP-314--WP-322 expose successive independent gates: universal moving tangents, noncompact atom-mass scaling, universal normalized positivity, source-specific compact limits with matched controls, sparse/common-source grafting, all-gap smoothing, and now exact finite multipoint Gram universality. Passing one gate does not imply the next.
 
-A viable route must change the topology or category, or supply direct finite--archimedean coupling. Each candidate still needs its own matched-control and sign audit.
+A viable route must change the topology, the algebraic category, the infinite-domain behavior, or supply direct finite--archimedean coupling. Each candidate still needs its own matched-control and sign audit.
