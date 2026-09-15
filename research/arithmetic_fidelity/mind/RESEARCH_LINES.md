@@ -24,13 +24,19 @@ on the half-integer mesh, so sufficiently fast moving orders inherit Hardy--Litt
 
 Consequently every polynomially vanishing order `delta_N=N^-a`, `a>0`, is still too close to the endpoint to satisfy the sharp `O(sqrt(N))` profile under RH. The unresolved moving regime begins around the much slower scale `delta_N >=~ logloglog(N)/log^3(N)`; failure of the known obstruction there is not a positive theorem.
 
-AF-356 now separates that extremal obstruction from average spectral stability. Under RH the log-normalized profiles satisfy
+AF-356 separates that extremal obstruction from average spectral stability. Under RH the log-normalized profiles satisfy
 
 `||E_delta-E_0||_(B^2)=O(delta)`
 
 and their limiting distributions converge at the same linear scale in bounded-Lipschitz distance, even though `K(delta)->infinity`. The endpoint is therefore not generically unstable: it is specifically unstable in the uniform/extremal topology consumed by the critical bound.
 
-The live theorem is no longer merely to offset the `delta^-2` absolute budget or to prove another mean-square continuity statement. It is to identify a **source-native tail/peak/phase-coherence estimate with uniform moving-parameter control** in the surviving slow-vanishing regime, or prove that no such schedule can retain the critical supremum norm. Any candidate must distinguish the absolute zero-mode budget, the `B^2`/limiting-law topology, the physical supremum norm, and the source-to-endpoint comparison rather than infer one from another.
+AF-357 now identifies the source scale hidden by the formal smoothing parameter. The exact one-sided Beta kernel has lag variable `W_delta~Beta(delta,3/2)` with
+
+`-delta log W_delta => Exp(1)`,
+
+so a fixed kernel quantile lies at relative lag `exp(-Theta(1/delta))`, not at scale `delta`. It also proves that the `min(1,delta log X)` endpoint modulus is the exact worst-case order for a scalar partial-sum envelope, and remains sharp after adding a pointwise jump bound. For the RH-calibrated resources `sup|psi(x)-x|` and `|Lambda(n)-1|`, Abel/envelope sharpening alone therefore cannot improve the slow moving-order comparison.
+
+The live theorem is to identify a **source-native cross-scale constraint on the actual prime error** that excludes the extremal profiles saturating AF-357 at the Beta-distributed lag hierarchy, with enough uniformity to control the critical supremum norm in the surviving slow regime. Candidate maximal, short-interval, signed-average, endpoint-to-past correlation or zero-phase estimates must be translated to the physical lag `w~exp(-Theta(1/delta))`; another scalar envelope, jump bound or mean-square estimate is already known to be insufficient.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -40,9 +46,9 @@ Localization, contraction, lifting and smoothing can move or attenuate informati
 
 AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. AF-353--AF-355 add the limiting-parameter audit: fixed-`delta` boundedness does not imply a useful moving family, and even under RH every polynomial approach to the unsmoothed endpoint retains the endpoint oscillation at the critical scale.
 
-AF-356 gives the sharpest current metric split. The smoothed family is Lipschitz at `delta=0` in Besicovitch `B^2` and in its limiting distribution while the uniform critical norm is singular. Thus a representation may be stable in a natural average topology and still be unusable in the stronger destination topology; the missing information is carried by rare coherent excursions invisible to second-mean control.
+AF-356 gives the sharpest topology split, while AF-357 prices the corresponding physical resolution. The smoothed family is Lipschitz at `delta=0` in Besicovitch `B^2` and in its limiting distribution while the uniform critical norm is singular; at the same time the kernel samples endpoint shells on the exponential scale `exp(-Theta(1/delta))`, and scalar `L^infinity` plus jump information is already sharp there. The missing resource is therefore neither generic continuity nor a better estimate in the same source norm, but arithmetic coupling across exactly the scales the supremum observer can exploit.
 
-Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale, discriminator and parameter regime required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and fixed-parameter or mean-square conditioning is not a uniform resource unless its constants and source comparison remain controlled in the limit and topology actually used.
+Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale, discriminator and parameter regime required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and fixed-parameter or mean-square conditioning is not a uniform resource unless its constants and source comparison remain controlled in the limit, topology and physical resolution actually used.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -64,4 +70,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity, transform fidelity, terminal loss and parameter-uniform conditioning as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class, destination topology and destination slack are provably different resources. AF-349--AF-356 now separate the complete representation, weak terminal quotient, fixed-order critical threshold, absolute spectral conditioning cost, moving-order source obstruction, and the `B^2`-stable but uniformly singular endpoint. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility, fixed-parameter smoothing or average spectral stability alone.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class, destination topology, physical lag resolution and destination slack are provably different resources. AF-349--AF-357 now separate the complete representation, weak terminal quotient, fixed-order critical threshold, absolute spectral conditioning cost, moving-order source obstruction, the `B^2`-stable but uniformly singular endpoint, and the exponentially thin source shells actually sampled as `delta->0`. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility, fixed-parameter smoothing, average spectral stability or scalar source envelopes alone.

@@ -1,6 +1,6 @@
-# MI-027 — Rearrangement collapses one-signed complete screening to the first-prime aperture, where only a finite low-mode certificate remains
+# MI-027 — Rearrangement collapses one-signed complete screening below any validated positive compact window
 
-**Evidence level:** exact rearrangement/structural-rigidity theorem from [WI-298](../../findings/WI-298-rearrangement-collapses-complete-one-signed-screening-to-first-prime-aperture.md), with the analytic tail barrier removed through the exact aperture by [WI-299](../../findings/WI-299-smooth-kernel-tail-bound-reaches-the-first-prime-aperture.md)
+**Evidence level:** exact rearrangement/structural-rigidity theorem from [WI-298](../../findings/WI-298-rearrangement-collapses-complete-one-signed-screening-to-first-prime-aperture.md), with the first-prime analytic tail controlled by [WI-299](../../findings/WI-299-smooth-kernel-tail-bound-reaches-the-first-prime-aperture.md) and a conditional prior-art redirect through [WI-300](../../findings/WI-300-l08-compact-window-certificate-would-kill-complete-one-signed-screening.md)
 
 For a nonnegative completely screened Weil null mode `v`, the powers of the first prime imply that its positivity set is a measurable selector modulo `log 2`, hence has measure at most `log 2`. Symmetric decreasing rearrangement therefore compresses `v` into the centered interval of radius
 
@@ -20,10 +20,16 @@ WI-299 removes a separate analytic-domain concern at exactly this boundary. For 
 
 `0 <= delta(s) < 0.21621 |s|`  for `0<|s|<=log 2`,
 
-which yields the residual bound `||R_a|| <= 0.353143 a^2` for every `0<a<=r_2`. The earlier smooth-kernel cutoff below the first-prime aperture is therefore not the obstruction to certifying `lambda_(r_2)>0`.
+which yields the residual bound `||R_a|| <= 0.353143 a^2` for every `0<a<=r_2`. Thus the smooth-kernel cutoff is not the obstruction to certifying strict positivity at the structural endpoint.
 
-The branch is now concentrated at one finite aperture and one finite unresolved component. A rigorous strict positivity certificate `lambda_(r_2)>0` would exclude the entire one-signed complete-screening first-crossing scenario, and the smooth tail estimate is already valid through that endpoint. The remaining burden is an **independent finite low-mode/interval-Schur certificate** on the narrow terminal aperture region rather than another improvement of the smooth tail constant.
+WI-300 exposes a stronger finite-threshold route using recent prior art. Zhu's v2 compact-window theorem reports
 
-The reusable mechanism is that structural reduction and analytic tail control can remove all asymptotic degrees of freedom while still leaving a finite spectral sign problem. Once the tail estimate reaches the exact structural aperture, further tail sharpening is not progress unless it changes the finite low-mode certificate consumed by the positivity test.
+`Q(f) >= 8.9e-18 ||f||_2^2`
 
-**Boundary.** No strict positivity at `r_2` is proved. WI-299 does not certify the remaining low-mode block or import any nearby numerical/Eureka certificate as established. The argument is specific to nonnegative complete-screening modes; sign-changing and incomplete-screening branches remain separate.
+for arbitrary complex `f` supported in `[-0.8,0.8]`. WI-300 audits the theorem surface and shows that, **if this computer-assisted certificate is independently replayed and validated**, it is exactly a positive lower bound for Suzuki's localized form: `lambda_0.8>0`. Monotonicity would then force the first crossing to satisfy `a_*>0.8`, contradicting the rearrangement consequence `a_*<=r_2≈0.3466` for complete one-signed screening.
+
+The reusable mechanism is therefore broader than “prove positivity at the smallest structural aperture.” Once a source-side theorem compresses an entire failure branch below a finite aperture `r`, **any independently validated positive compact window at a larger aperture kills that branch by monotonicity**. The structural reduction and the positivity certificate can be developed independently; they meet only through the ordering of localized ground-state energies.
+
+For the current line, the shortest evidence-changing test is the independent replay of the reported `L=0.8` certificate, not further optimization of the `r_2` low-mode calculation. A failed replay would not invalidate WI-298--WI-299; it would simply restore `lambda_(r_2)>0` as the direct fallback certificate.
+
+**Boundary.** WI-300 does not itself establish `lambda_0.8>0` as independently verified Mathia evidence; its unconditional content is the exact implication from a valid published certificate to exclusion of the screened branch. Even successful validation would be specific to one-signed complete screening. It would not settle sign-changing modes, incomplete screening, unrestricted positivity beyond `0.8`, spectral simplicity, or RH.

@@ -28,16 +28,22 @@ VIS-232 adds a model-admission gate that is logically prior to those formulas. S
 
 any confirmation-sample randomization preserving the realized occupancy histogram fixes `S`. Exact transition-count preservation plus endpoints also fixes the histogram and therefore gives zero conditional variance.
 
-VIS-233 makes the escape criterion exact. Endpoints plus first-order transition counts determine **every translation-invariant additive range-one observable**, not just `S`. The lag-two return statistic
+VIS-233 makes the escape criterion structural. Endpoints plus first-order transition counts determine **every translation-invariant additive range-one observable**, not just `S`. The lag-two return statistic
 
 `T_2=sum_(t=1)^(m-2) 1_{x_t=x_(t+2)}`
 
-is the first simple counterexample: it depends on length-three block counts and can vary inside one endpoint-matched first-order type. The explicit binary type `00010,00100,01000` has identical transition counts but `T_2=2,1,2`.
+depends on length-three blocks and can vary inside one endpoint-matched first-order type.
 
-The live critical test therefore has two honest routes. Either fit a stochastic dependence model from independent calibration information and allow confirmation occupancies to fluctuate, carrying estimation uncertainty into the VIS-230/VIS-231 standardization; or preserve realized first-order structure and predeclare a **range-two-or-higher** observable such as `T_2`, first proving that it has nonzero conditional variance on the actual critical prime-phase type. Only after that admission gate is passed is a prime-specific residual meaningful.
+VIS-234 supplies the exact finite admission test left open there. For a fixed transition-count matrix `C`, endpoints `s,t`, remaining transition counts `R` and current suffix `(u,v)`, the probability-generating polynomial obeys the recursion
+
+`F_(R;u,v)(q)=sum_(w:R_vw>0) q^(1_{u=w}) F_(R-E_vw;v,w)(q)`
+
+with `F_(0;u,v)=1_{v=t}`. The resulting polynomial `Z_(C;s,t)` gives the complete conditional law of `T_2`; `T_2` is nondegenerate exactly when `Z` is not a monomial. The same state recursion can propagate support or moments without enumerating individual realizations.
+
+The live exact-control route is therefore concrete: construct the **actual predeclared critical prime-phase first-order type**, evaluate `Z` or at least its exact support/variance, and kill `T_2` immediately if that conditional law is degenerate or nearly degenerate. If the exact state space is too large, a conditional sampler must first be validated against this recursion on tractable reductions. Only after that admission gate is frozen should the observed prime-phase value be compared with the conditional law and tested for representation stability and signed-kernel relevance.
 
 ## Keep static scale, occupancy baseline, dependence law, conditional sigma-field and observable interaction order separate
 
-The deterministic floor, one-point law, lag-return center, higher return covariance, conditional randomization class and interaction order of the tested statistic are distinct objects. VIS-232 shows that matching more realized structure is not monotonically safer; VIS-233 sharpens this into a hierarchy: preserving length-two block counts fixes the entire additive range-one class, while a length-three statistic may still survive.
+The deterministic floor, one-point law, lag-return center, higher return covariance, conditional randomization class and interaction order of the tested statistic are distinct objects. VIS-232 shows that matching more realized structure is not monotonically safer; VIS-233 sharpens this into a hierarchy: preserving length-two block counts fixes the entire additive range-one class, while a length-three statistic may still survive. VIS-234 shows that “may survive” is itself testable exactly for each realized first-order type rather than assumed from one witness.
 
-A critical observable must therefore declare both the stochastic model and what is conditioned on. If the null is strengthened to preserve length-three block counts, `T_2` is conditioned away and the statistic must move outward again. Source sensitivity must survive parameter estimation, representation perturbations and the exact conditional sigma-field before any bridge to the signed prime-phase Hamiltonian, optimizer geometry or physical prime-log orbit is interpreted.
+A critical observable must therefore declare both the stochastic model and what is conditioned on. If the null is strengthened to preserve length-three block counts, `T_2` is conditioned away and the statistic must move outward again. Source sensitivity must survive parameter estimation, representation perturbations and the exact conditional sigma-field, and it must first pass the type-specific nondegeneracy recursion before any bridge to the signed prime-phase Hamiltonian, optimizer geometry or physical prime-log orbit is interpreted.
