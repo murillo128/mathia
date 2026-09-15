@@ -23,6 +23,10 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - K. Ramachandra, *Contributions to the theory of transcendental numbers (II)*, Acta Arithmetica **14** (1968), 73-88, DOI `10.4064/aa-14-1-73-88`. Role: primary source for the Six Exponentials theorem used load-bearingly in `RE-103` to cap a simultaneous CA event coordinate at two distinct base primes. The neighboring Four Exponentials statement remains conjectural; `RE-103` invokes it only conditionally and uses Alaoglu--Erdos for the original CA special-case framing.
 
+## Exponential-polynomial observability
+
+- F. L. Nazarov, *Local estimates for exponential polynomials and their applications to inequalities of the uncertainty principle type*, Algebra i Analiz **5** (1993), no. 4, 3-66; English translation, St. Petersburg Mathematical Journal **5** (1994), no. 4, 663-717; primary bibliographic page: `https://www.mathnet.ru/eng/aa397`. Role: load-bearing measurable Turan--Nazarov propagation-of-smallness theorem for `RE-137`; for complex exponential polynomials its interval-to-measurable-set factor depends exponentially on the largest absolute real part of the exponents and algebraically on the number of terms, but not on the imaginary frequencies. `RE-137` combines this classical theorem with the Robin coefficient sector to make vertical packet diameter disappear from the leading-order observability cost.
+
 ## Square-root frontier boundaries
 
 - Jean-Louis Nicolas, *The sum of divisors function and the Riemann hypothesis*, The Ramanujan Journal **58** (2022), 1113-1157, DOI `10.1007/s11139-021-00491-y`. Role: prior-art boundary for Ramanujan's classical RH-conditional divisor-sum expansion containing the coefficient `2(sqrt(2)-1)/sqrt(log n)`. Mathia does not claim novelty for the appearance of `sqrt(2)-1`; `RE-007` instead isolates how that scale arises in the exact clean self-tangent prime-layer selector.
