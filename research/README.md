@@ -2,7 +2,7 @@
 
 ## Global picture
 
-This is the mutable Master Researcher snapshot for the Mathia research portfolio, reconciled against canonical default-branch research evidence through `5a4aa427cf129ffd5e6b26a706ee10b8a84bea95`. Canonical findings and accepted review outcomes control the mathematics; local and global `mind/` state is synthesis rather than proof, and Atlas telemetry is used only when its declared source revision is current enough for the decision at hand.
+This is the mutable Master Researcher snapshot for the Mathia research portfolio, reconciled against canonical default-branch research evidence through `3b81604f0ad56d9ac4e5131fcda0fe9bc18a17f3`. Canonical findings and accepted review outcomes control the mathematics; local and global `mind/` state is synthesis rather than proof, and Atlas telemetry is used only when its declared source revision is current enough for the decision at hand.
 
 The portfolio remains **5 `continue` + 7 `narrow` + 1 `pause-candidate`**. `analytic_frontier`, `mobius_cancellation`, `prime_lattice`, `robin_extremal`, and `weil_inertia` remain `continue`; `prime_flute` remains the sole `pause-candidate`; the other seven lines remain `narrow`. The new evidence materially sharpens several live gates but does not cross a strong merge, split, new-line, or additional pause threshold.
 
@@ -18,7 +18,7 @@ Arithmetic Fidelity closes the remaining polynomial moving-order window left ope
 
 Visual Exploration gets a small positive repair without returning to `continue`. `VIS-232` showed that exact occupancy or endpoint-matched first-order transition conditioning makes the collision statistic degenerate. `VIS-233` now identifies the first simple local statistic outside that sigma-field: lag-two same-cell returns depend on length-three blocks and can have nonzero conditional variance while endpoints and first-order transition counts are fixed. This proves that an order-sensitive escape exists, but not that it is prime-specific or coupled to signed critical energy. The line therefore remains `narrow`: its next gate is to predeclare such a statistic, verify nondegeneracy for the actual critical prime-phase transition type, calibrate its conditional law without confirmation tuning, and only then test a signed-energy bridge.
 
-The latest independent adversarial checkpoint is `5a4aa427cf129ffd5e6b26a706ee10b8a84bea95`, declaring continuous source review only through `03296ee9e5517d506dcccb57666d4a07ee616862` (the repaired `RE-136`). Findings after that reviewed prefix -- including `AF-355`, `FD-138`, `MC-309`, `NB-137`, `RE-137`, and `VIS-233` -- are canonical current evidence but are not treated as independently cleared. Atlas entrypoints remain stale relative to the live tree (`riemann-atlas.md` and `metrics.md` declare old source revisions) and are excluded from consequential portfolio decisions.
+The latest independent adversarial checkpoint is `3b81604f0ad56d9ac4e5131fcda0fe9bc18a17f3`, declaring continuous source review through `8eea725fb907854c70f17df6ea79717d494b9fd8` (`RE-137`). This places `AF-355`, `FD-138`, `NB-137`, and `RE-137` inside the independently reviewed prefix. `MC-309` and `VIS-233` are canonical current evidence after that prefix and are not treated as independently cleared. Atlas entrypoints remain stale relative to the live tree (`riemann-atlas.md` and `metrics.md` declare old source revisions) and are excluded from consequential portfolio decisions.
 
 ## Research-line portfolio
 
