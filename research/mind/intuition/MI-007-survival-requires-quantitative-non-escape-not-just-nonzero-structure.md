@@ -1,23 +1,17 @@
-# MI-007 — Weak disappearance can reduce to drift, norm-controlled escape, or a finite target-transmission budget
+# MI-007 — Survival requires quantitative exposure or transmission, not merely nonzero structure
 
-**Evidence level:** supported by the cited line-specific mechanisms through NB-065; no universal equivalence among them is claimed.
+**Evidence level:** supported cross-line synthesis from the cited line-specific mechanisms, now including [FD-146](../../farey_discrepancy/findings/FD-146-anchor-connectivity-alone-does-not-control-normalized-ancestry-energy.md) and [WI-303](../../weil_inertia/findings/WI-303-finite-rank-tail-rank-is-noncanonical.md). No universal equivalence among their operators, norms or bottlenecks is claimed.
 
 Prime Circle gives **ballistic drift**: a refined coordinate can leave a fixed packet window while preserving its norm, and following the moving frame returns the channel to an already-classified quotient algebra. Weak invisibility there is relocation, not decay.
 
 Prime Flute gives **quantitative escape exclusion**: the fixed physical high-pass spaces have a diverging local frequency floor, and the canonical synthesis has uniform positive-Sobolev control whenever its weighted source moment is bounded. A response with that family bound cannot maintain a local high-frequency witness.
 
-Nyman--Beurling supplies a third mechanism. NB-057 makes every sufficiently late individual shifted block invisible to the canonical residual, while NB-058--NB-062 show that collective visibility can coexist with infinite-dimensional defect sectors and maximal finite-window causal rank. Exact nondegeneracy is therefore not quantitative non-escape.
+Nyman--Beurling supplies a transmission mechanism. Late individual shifted blocks become invisible to the canonical residual even while collective defect sectors remain large. The actual old-to-new carrier is a finite-rank forward-memory map. NB-065 turns this into a finite accumulated target-transmission budget: repeated weak transmission can kill persistence even without a uniform spectral gap, but only insofar as the canonical target occupies the charged singular sectors.
 
-NB-063--NB-064 identify the relevant carrier: old visible information enters the next logarithmic cell through a finite-rank forward-memory map `Gamma_R`, and persistence would force the normalized canonical target direction into singular values tending to zero. Bad singular directions matter only when the actual target tracks them.
+Farey Discrepancy adds a different quantitative failure that begins **after exact connectivity has been repaired**. FD-145 shows that an unanchored ancestry component has a `Z_2` orientation gauge. FD-146 restores the full connected graph and every local edge, yet a fixed rank-wall source has vanishing uniformly normalized finite-`L^q` edge energy while its coefficient error stays macroscopic. The anchor is reachable, but only through a cut whose share of observation mass tends to zero. Qualitative graph connectivity is therefore not quantitative exposure.
 
-NB-065 strengthens this to a **finite accumulated transmission budget**. With `T_R=Gamma_R^*Gamma_R`, the filtered target transmission
+Weil Inertia gives the operator analogue of a false finite-dimensional repair. WI-303 shows that the finite-rank tail terms in a post-threshold Schur certificate are optional minorants of a stronger positive tail operator. A separate obstruction rules out repairing the tail-dropped architecture by any fixed compact operator. What matters structurally is retaining the noncompact positive tail supplier, not merely exhibiting a nonzero finite-rank correction.
 
-\[
-\mathfrak t_R=\langle p_R,T_R(I+T_R)^{-1}p_R\rangle
-\]
+The reusable rule is therefore more precise than “weak limits can hide mass.” First identify what must survive at the destination: moving-frame mass, a family norm, target transmission, weighted cut exposure, or noncompact tail supply. Then prove a **quantitative lower/upper budget in that exact currency**. Pointwise nonvanishing, graph connectivity, full finite-window rank, an available finite-rank correction, or isolated good scales do not provide such a budget by themselves.
 
-is summable unconditionally. If a positive defect persists, the normalized transmission is summable too. Hence if a fixed fraction of the target recurs in singular sectors above `eta_R`, persistence requires `sum eta_R^2<infinity` in the small-threshold regime. A uniform spectral gap is unnecessary: repeated weak transmission already kills persistence when its squared floor is nonsummable.
-
-The reusable rule is sharper than “weak limits can hide mass.” First identify the actual mechanism: a permitted moving frame, a family norm that forbids escape, or a target projection through a causal channel whose **accumulated transmitted mass** is constrained. Pointwise disappearance, nonzero kernels, full finite-window rank, and isolated good scales settle none of this geometry.
-
-**Boundary.** The comparison among lines is structural, not an identification of their operators. NB-065 gives a necessary budget on the persistence branch, not a sufficient characterization of vanishing; the flat control can have zero forward transmission and still have no persistent target tail.
+**Boundary.** These examples share an accounting failure, not a common theorem. FD-146 concerns finite-`L^q` normalization on a squarefree ancestry graph; WI-303 concerns positive operators and compact versus noncompact tail retention; NB-065 concerns a canonical target through a causal channel. Rates and conclusions do not transfer between lines. The synthesis only says that qualitative access must be upgraded to quantitative destination exposure before it can be used as coercivity.
