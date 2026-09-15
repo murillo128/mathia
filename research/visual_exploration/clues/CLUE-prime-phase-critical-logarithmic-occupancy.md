@@ -15,6 +15,7 @@ based_on:
   - research/visual_exploration/findings/VIS-232-transition-conditioned-collision-controls-are-occupancy-degenerate.md
   - research/visual_exploration/findings/VIS-233-lag-two-returns-escape-first-order-markov-type.md
   - research/visual_exploration/findings/VIS-234-markov-type-lag-two-pgf-recursion.md
+  - research/visual_exploration/findings/VIS-235-lag-two-markov-type-mean-by-two-step-deletion.md
 ---
 
 # Is there prime-specific critical phase-cell structure after dependent occupancy calibration?
@@ -47,13 +48,19 @@ conditioning on the exact confirmation-sample occupancy histogram fixes `S`. Pre
 
 depends on length-three block counts and can vary inside the same endpoint-matched first-order type.
 
-`VIS-234` now closes the remaining abstract calibration step for `T_2`. For any finite endpoint-matched transition type it gives an exact generating recursion
+`VIS-234` closes the abstract full-law calibration step for `T_2`. For any finite endpoint-matched transition type it gives an exact generating recursion
 
 `Z_(C;s,t)(q)=sum_(x in Omega(C;s,t)) q^(T_2(x))`
 
-whose coefficients are the complete conditional law under the uniform type ensemble. The statistic is conditionally nondegenerate exactly when this polynomial is not a monomial. Thus the next question no longer needs a generic witness or an assumed sampler: it can be asked on the actual critical prime-phase transition table with an exact finite benchmark.
+whose coefficients are the complete conditional law under the uniform type ensemble. The statistic is conditionally nondegenerate exactly when this polynomial is not a monomial.
 
-The live critical problem therefore has two honest routes. Either keep the scalar collision statistic `S` and use a stochastic dependence model fitted independently of confirmation, leaving confirmation occupancies random; or preserve stronger realized first-order structure and move to a predeclared higher-order observable such as `T_2`, whose exact conditional law is first calibrated inside that realized type.
+`VIS-235` then separates the cheapest exact screening from that full recursion. Marking a return `u,v,u` and deleting its two transitions gives
+
+`E[T_2 | C,s,t] = [sum_(u,v) a_u(C^(u,v);t) W(C^(u,v);s,t)] / W(C;s,t)`,
+
+where every `W` is an ordinary endpoint-matched fixed-transition type cardinality. Whittle's determinant formula can therefore evaluate the exact center from the original type plus sparse two-step deletions. Because every numerator term is nonnegative, the same calculation is an exact zero-support gate: if the mean is zero then `T_2` is identically zero and the candidate dies without constructing `Z`. A positive mean does not establish nondegeneracy, since a type can in principle force one positive constant value; that case still requires the `VIS-234` support/variance/PGF test.
+
+The live critical problem therefore has two honest routes. Either keep the scalar collision statistic `S` and use a stochastic dependence model fitted independently of confirmation, leaving confirmation occupancies random; or preserve stronger realized first-order structure and move to a predeclared higher-order observable such as `T_2`, whose exact conditional law is calibrated inside that realized type.
 
 ## Research question
 
@@ -61,13 +68,13 @@ For fixed critical `lambda`, after choosing a dependence control independently o
 
 For the stochastic route, if a stationary first-order Markov surrogate is justified from an independently frozen calibration range or analytic local model, use the exact `VIS-230` center and `VIS-231` variance and propagate parameter-estimation uncertainty. Does the predeclared scalar collision residual remain non-generic across increasing scales and reasonable fixed cell-origin perturbations?
 
-For the exact first-order-type route, does the predeclared lag-two statistic `T_2` have a nondegenerate and sufficiently broad conditional law for the actual critical prime-phase transition type, and does the observed value separate from that law without choosing the statistic from confirmation data? If so, can that separation be translated into a lower bound or obstruction for the signed prime-phase quadratic energy rather than remaining a generic higher-order pattern statistic?
+For the exact first-order-type route, does the predeclared lag-two statistic `T_2` have a nonzero and then genuinely nondegenerate conditional law for the actual critical prime-phase transition type, and does the observed value separate from that law without choosing the statistic from confirmation data? If so, can that separation be translated into a lower bound or obstruction for the signed prime-phase quadratic energy rather than remaining a generic higher-order pattern statistic?
 
 ## Why it may matter
 
 The deterministic floor, independent uniform baseline, nonuniform categorical baseline, Markov centering, exact Markov covariance, conditional-degeneracy obstruction, range-one/range-two information boundary, and exact fixed-type `T_2` law remove eight increasingly strong sources of false arithmetic structure or circular control design.
 
-`VIS-234` is especially useful because it separates two questions that were previously easy to conflate. Whether `T_2` survives the chosen conditioning is now an exact combinatorial admission test; whether the admitted statistic is anomalous for primes is a later scientific test. Failure of the first kills the statistic without touching prime data, while success still grants no arithmetic significance by itself.
+`VIS-235` does not add evidence of prime specificity; it makes the admission test cheaper and more falsifiable. The exact first moment and zero-support test can be computed before invoking the full remaining-transition recursion. This separates three questions that should not be conflated: whether the candidate is even possible in the realized type, whether it varies inside that type, and whether the observed prime value is unusual after a frozen calibration.
 
 ## Decisive test
 
@@ -75,7 +82,9 @@ Freeze the taper, phase tolerance, cell-origin convention, a finite set of `lamb
 
 For the scalar collision statistic `S`, do **not** condition the confirmation null on the exact occupancy histogram or endpoint-matched exact transition counts. Estimate any stochastic null parameters from an analytic model, an independently frozen calibration range, or another source that leaves confirmation occupancies random. Use `VIS-229` for an independent categorical null and the exact `VIS-230`/`VIS-231` moments for a specified stationary first-order Markov null, carrying parameter-estimation uncertainty when `pi,P` are estimated.
 
-For an exact first-order transition-count-preserving control, predeclare `T_2`. Build the actual endpoint-matched transition table `C` for each predeclared critical representation and evaluate the `VIS-234` recursion before comparing with the observed `T_2`. If `Z_(C;s,t)` is a monomial, or its support is too narrow for a meaningful confirmation test, kill `T_2` for that representation. Otherwise use the exact coefficient law when tractable. If the full dynamic program is too large, validate any conditional sampler against the exact recursion on reduced/coarsened instances before using its tails, and do not tune the statistic from the confirmation value.
+For an exact first-order transition-count-preserving control, predeclare `T_2` and build the actual endpoint-matched transition table `C` for each predeclared critical representation. First evaluate the `VIS-235` deletion center. If it is zero, kill `T_2` immediately for that representation: the conditional support is exactly `{0}`. If the mean is positive, do not infer nondegeneracy. Next use the `VIS-234` min/max recursion, exact support/variance, or full coefficient law; if `Z_(C;s,t)` is a monomial, or its support is too narrow for a meaningful confirmation test, kill `T_2` for that representation.
+
+When the full dynamic program is tractable, use the exact coefficient law for confirmation. If it is too large, use the exact deletion center as an implementation/calibration check and validate any conditional sampler against the `VIS-234` recursion on reduced or coarsened instances before trusting its tails. Do not tune the statistic from the confirmation value.
 
 Account for the predeclared `lambda`/cell-origin family jointly rather than treating searched views as independent confirmations. If the admitted control is strengthened to preserve all length-three block counts, `T_2` is again conditioned away and is no longer admissible; any successor must lie outside the stronger preserved sigma-field rather than merely renormalize fixed counts.
 
@@ -83,10 +92,10 @@ Only if a residual survives these gates should it be translated back through the
 
 ## Evidence boundary
 
-`VIS-227` establishes the deterministic occupancy floor. `VIS-228` and `VIS-229` establish exact independent uniform/nonuniform collision baselines. `VIS-230` and `VIS-231` establish the exact stationary first-order Markov center and variance. `VIS-232` proves that `S` is conditioned away by exact occupancy or endpoint-matched first-order transition counts. `VIS-233` proves that the same first-order type fixes every translation-invariant additive range-one observable but need not fix a lag-two return statistic. `VIS-234` gives the exact finite generating recursion for the full `T_2` law inside any specified endpoint-matched transition type.
+`VIS-227` establishes the deterministic occupancy floor. `VIS-228` and `VIS-229` establish exact independent uniform/nonuniform collision baselines. `VIS-230` and `VIS-231` establish the exact stationary first-order Markov center and variance. `VIS-232` proves that `S` is conditioned away by exact occupancy or endpoint-matched first-order transition counts. `VIS-233` proves that the same first-order type fixes every translation-invariant additive range-one observable but need not fix a lag-two return statistic. `VIS-234` gives the exact finite generating recursion for the full `T_2` law inside any specified endpoint-matched transition type. `VIS-235` gives its exact deletion-count mean and zero-support gate through ordinary Markov-type cardinalities.
 
-None of these results establishes a faithful prime dependence model, the actual prime residual under a frozen stochastic or conditional calibration, a central limit theorem for the chosen null, prime specificity of `T_2`, any critical-scale optimizer separation, or any RH consequence.
+None of these results establishes a faithful prime dependence model, the actual prime residual under a frozen stochastic or conditional calibration, nondegeneracy of `T_2` on the actual prime-phase type, prime specificity of `T_2`, any critical-scale optimizer separation, or any RH consequence.
 
 ## Research disposition
 
-The clue remains accepted. The generic combinatorial and calibration questions for the first lag-two escape are now resolved by `VIS-233` and `VIS-234`. The next gate is concrete: instantiate the exact conditional `T_2` law on the predeclared critical prime-phase transition type, reject the statistic immediately if that law is degenerate or practically uninformative, and only then test a frozen prime residual for stability and signed-kernel relevance. The scalar-collision route remains viable only under an independently calibrated stochastic dependence model that leaves confirmation occupancies random.
+The clue remains accepted. The generic combinatorial and calibration questions for the first lag-two escape are now resolved by `VIS-233`--`VIS-235`. The next gate is concrete and staged: instantiate the actual predeclared critical prime-phase transition type, use the deletion center to reject zero-support cases cheaply, then use the exact support/variance/PGF only on survivors. Only after that conditional law is frozen should an observed prime residual be tested for representation stability and signed-kernel relevance. The scalar-collision route remains viable only under an independently calibrated stochastic dependence model that leaves confirmation occupancies random.
