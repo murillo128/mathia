@@ -1,27 +1,23 @@
-# MI-030 — Omitted prime-power atoms create compact-invariant essential obstruction bands
+# MI-030 — Omitted prime-power atoms create compact-invariant bands, and the first prime already beats the reserve
 
-**Evidence level:** exact-derived operator obstruction from [WI-304](../../findings/WI-304-omitted-prime-power-atoms-create-essential-obstruction-bands.md), generalizing the source-exact `q=8` construction recorded around WI-302--WI-303.
+**Evidence level:** exact-derived operator obstruction from [WI-304](../../findings/WI-304-omitted-prime-power-atoms-create-essential-obstruction-bands.md), sharpened to the exact first-prime threshold by [WI-305](../../findings/WI-305-first-prime-activation-already-obstructs-compact-repair.md).
 
-Consider a tail-dropped localized comparison whose high-frequency modulations of a fixed compact test have Rayleigh quotient tending to `beta>0`. If an active prime-power atom `q` at `a=log q` is geometrically isolatable by a two-bump test, phase-modulating that test yields weakly-null unit vectors with limiting Rayleigh quotients
+Consider a tail-dropped localized comparison whose high-frequency modulations have Rayleigh quotient tending to `beta>0`. If an active prime-power atom `q` at `a=log q` is geometrically isolatable, phase modulation yields a weakly-null family with limiting Rayleigh quotients
 
-`beta - w_q cos(theta)`,
+`beta-w_q cos(theta)`,  `w_q=(Lambda(q)/sqrt(q))(1-rho_chi(log q))`.
 
-where
+Hence the whole interval `[beta-w_q,beta+w_q]` lies in the essential numerical range. Since compact perturbations leave that set invariant, `w_q>beta` implies that no fixed compact self-adjoint correction can make the tail-dropped comparison positive.
 
-`w_q=(Lambda(q)/sqrt(q))(1-rho_chi(log q))`.
+WI-305 shows that, for Liu's normalized real localizers `chi in C_c^infty((-1,1))`, this obstruction is already unavoidable at `q=2`. Let `S_a` be translation by `a` compressed to `L^2(-1,1)`. If `S_a^m=0`, the Haagerup--de la Harpe inequality gives
 
-Varying `theta` therefore places the whole interval
+`|rho_chi(a)| <= cos(pi/(m+1))`.
 
-`[beta-w_q,beta+w_q]`
+At `a=log 2`, `S_a^3=0`, so `rho_chi(log 2)<=1/sqrt(2)`. With the comparison reserve `beta_0=1/16`,
 
-inside the essential numerical range of the tail-dropped comparison. Since essential numerical range is invariant under compact perturbations, the criterion
+`w_2 >= (log 2/sqrt(2))(1-1/sqrt(2)) > 1/16`.
 
-`w_q>beta`
+The atom `q=2` is active exactly when `L>log(2)/2`; below that aperture no prime-power atom is active. Thus, within this localization/tail-dropping architecture, the essential compact-repair obstruction begins at the **first arithmetically possible threshold**. The earlier `q=8` witness is not the structural onset; it is only the first shift where support makes the autocorrelation vanish without a sharper operator bound.
 
-implies that **no fixed compact self-adjoint correction can make the comparison positive**.
+The design consequence is stronger than a generic “noncompact tail matters” statement. Once the first prime channel enters, any successful comparison must alter something that survives the same weakly-null sequence: retain source-exact noncompact information, increase the positive reserve, reduce the defect through a genuinely stronger localizer mechanism, or add another noncompact contribution. A compact/finitely ranked patch is invisible to the obstruction.
 
-This turns a qualitative “noncompact tail matters” statement into a channel-by-channel design invariant. An omitted arithmetic atom is dangerous when its localization defect weight exceeds the comparison's high-frequency positive reserve. A successful architecture must retain noncompact information for that channel, raise the reserve, reduce the atom's defect through the localizer, or add another noncompact mechanism that survives the same weakly-null sequence.
-
-The criterion does not require retaining every prime power. For a fixed positive reserve and a localizer with `rho_chi(log q)=0` eventually, `Lambda(q)/sqrt(q)->0`, so only finitely many channels can violate the inequality. What is structurally forbidden is replacing a dangerous omitted channel by any fixed compact/finitely ranked patch.
-
-**Boundary.** The interval theorem concerns the bounded tail-dropped comparison and individually isolatable atoms. It is a necessary obstruction, not a sufficient positivity test after all dangerous channels are treated, and it does not validate the unreplayed `17/16` certificate or claim negativity of the full Weil form retaining its source-exact positive remainder.
+**Boundary.** The result concerns the specified bounded tail-dropped comparison plus fixed compact correction. It is not a negative test for the full Weil form, does not validate or refute the unreplayed finite certificate, and does not prove that every prime-power channel must be retained individually. The full source-exact remainder can supply noncompact compensation absent from the reduced comparison.

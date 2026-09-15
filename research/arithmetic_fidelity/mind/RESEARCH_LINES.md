@@ -2,39 +2,27 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Price source information after separating exact discriminator survival, target conditioning and destination consumption
+## Price source information after separating global discriminator survival from finite-horizon completion freedom
 
-**Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`, `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`, `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`.
+**Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`, `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`, `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`, `MI-042-finite-prefix-pole-fidelity-needs-a-tail-class`.
 
-AF-351--AF-360 isolate the moving Riesz endpoint. Every fixed positive order crosses the critical regularity threshold without moving the zero discriminator; absolute endpoint defect appears first at height `T=exp(Theta(1/delta))`; bounded-ratio shells become projectively scalar after removing one common complex factor.
+AF-351--AF-365 separate exact discriminator survival from target-relative inversion cost. Every fixed real Riesz order has a zero-free Mellin multiplier on `Re s>0`, so a **global eventual** profile error `O(X^theta)` preserves every Dirichlet principal part in `Re s>theta`. At the same time, finite-band coordinate recovery can cost `e^u`, `e^(u+v)`, or `e^(u+v)/sqrt(v)` depending on the target. Exact pole fidelity and stable reconstruction are therefore different currencies.
 
-AF-361 resolves the finite exponentially broad worst-case escape. On a band
+AF-366 closes the finite-horizon loophole sharply. Any observation that factors through finitely many coefficients is blind to a tail
 
-`T < gamma <= T exp(v/delta)`
+`d_n = r n^(rho-1) 1_(n>N)`
 
-with fixed `v`, normalization by the lower-edge scalar gives the deterministic envelope `e^{-x}`, `x=delta log(gamma/T)`, and relative condition number tending to `e^v`. The separate base-height variable `u=delta log T` controls common attenuation `e^{-u}`.
+that inserts a prescribed Dirichlet pole at `rho`, even though its unweighted tail amplitude tends to zero as `N->infinity` when `Re rho<1`. Thus a large finite Riesz window does **not** inherit AF-365's global pole-fidelity conclusion merely by being accurate on its visible prefix.
 
-AF-362 replaces hard bandwidth by the exact target-relative recovery currency. For a declared target representer `a`, normalized optimal recovery from the diagonal Riesz channel costs
+The complementary source gate is exact: if two coefficient sequences differ by `O(n^(theta-1))` in the tail, their Dirichlet transforms differ holomorphically on `Re s>theta`; hence all principal parts there agree. Away from the boundary, the tail transform is bounded by `O(N^-eta/eta)` on `Re s>=theta+eta`. The live question is therefore to identify an independently justified arithmetic tail/continuation class, or another genuinely nonlocal certificate, strong enough for the destination to consume the preserved prime-pole discriminator without reconstructing the whole source.
 
-`(int e^(2x) dmu_a(x))^(1/2)`,
+## Couple the preserved prime-pole discriminator to a stably usable destination
 
-where `mu_a` is the target-energy distribution on scaled log-frequency. AF-363--AF-364 then give the source-native Sobolev transition: `beta<1/2` pays the full normalized `e^v` edge cost, `beta>1/2` is uniformly conditioned on every fixed scaled band, and the critical `beta=1/2` target has growing-band cost `Theta(e^v/sqrt(v))`. Absolute recovery still pays the separate factor `e^u`.
+**Linked intuitions:** `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`, `MI-042-finite-prefix-pole-fidelity-needs-a-tail-class`.
 
-AF-365 now closes the fractional-order fidelity audit that this conditioning sequence had left open. For every fixed real `delta>=0`, the Mellin multiplier of the Riesz mean is `B(s,delta+1)`, which is zero-free on `Re s>0`. Therefore an `O(X^theta)` Riesz error forces the underlying Dirichlet-series difference to be holomorphic on `Re s>theta`: all meromorphic principal parts above the error line survive the quotient exactly. For the independently specified centered prime-only source, the surviving principal parts include the poles at zeta zeros in `Re s>1/2`; an `O_epsilon(X^(1/2+epsilon))` bound for every `epsilon>0` would exclude every off-critical zero.
+AF-365 says what survives under global transformed control; AF-366 says what finite data cannot determine over an unrestricted completion class. A destination theorem must therefore declare three objects separately: the finite data actually observed, the admissible source-tail or continuation class, and the topology/modulus in which the pole-sensitive conclusion is inferred.
 
-This gives an exact separation that was previously only implicit. **Arithmetic discriminator survival and stable coordinate recovery are different currencies.** The same fractional Riesz channel can preserve the prime/zero pole divisor perfectly while detailed finite-band inversion costs `e^u`, `e^(u+v)`, or `e^(u+v)/sqrt(v)` depending on the target.
-
-The missing theorem is no longer to show that some arithmetic information survives small positive Riesz order. The live problem is to identify a destination observable and error model that can **consume the preserved principal-part discriminator without first reconstructing an exponentially ill-conditioned amount of source detail**. The Mellin principal-part quotient and the Hilbert-space target-recovery problem are different categories; a bridge between them must be proved rather than inferred from either exact injectivity or a favorable Sobolev profile.
-
-## Couple the preserved prime-pole discriminator to a stably usable endpoint
-
-**Linked intuition:** `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`.
-
-AF-365 provides a source-specified discriminator before the channel: the meromorphic pole divisor of the centered rational-prime Dirichlet transform. Fractional Riesz smoothing does not move or cancel that divisor in the positive half-plane. AF-362--AF-364, however, show that extracting stronger coordinate-level information from the same channel can be badly conditioned.
-
-The next sharp question is therefore a destination-interface problem. Specify the desired endpoint independently of the Riesz multiplier, determine exactly what quotient or functional of the Riesz profile it consumes, and prove whether that functional can read the pole/principal-part information under the available absolute error. If it factors through a linear Hilbert target, derive its representer and Picard profile and price the `u` and `v` costs. If it instead uses a Mellin/analytic-continuation quotient, state the topology and stability needed to infer the relevant principal part from finite or noisy data. Do not silently replace one problem by the other.
-
-A useful endpoint must satisfy both gates: it must remain sensitive to the rational-prime pole divisor rather than a matched frequency background, and it must reach that discriminator with a quantitative modulus strong enough for the final argument. AF-365 proves exact survival; it does not provide stable numerical extraction.
+If the destination factors through a linear Hilbert target, derive its representer and Picard profile and price the `u,v` costs. If it uses Mellin continuation or principal parts, prove the source-tail/global hypothesis that makes the continuation unique and quantitatively usable. Exact finite-horizon data, increasingly large `N`, and small unweighted tail coefficients are not substitutes for that hypothesis.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -48,6 +36,6 @@ The RH root-rate endpoint tolerates large output error but is highly sensitive t
 
 AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and exact incidence. The unconditional target remains to rule out the required independent polynomial relations on the common prime-phase tuple without Schanuel, or find another prime-source theorem strong enough to exclude the middle-singular fibre.
 
-## Keep source complexity, transform fidelity, terminal loss and target-uniform conditioning as different currencies
+## Keep source class, transform fidelity, finite observation and target conditioning as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, absolute attenuation, inverse conditioning, target spectral distribution, target regularity, singularity class, destination topology, physical lag resolution, spectral bandwidth, projective quotient and destination slack are different resources. AF-362--AF-364 show that `delta log R` controls only a worst target unless the target-energy profile is specified. AF-365 adds the complementary fact that a zero-free transform multiplier may preserve an arithmetic singularity exactly while inverse recovery remains poorly conditioned. Future work must keep **exact discriminator survival, stable extraction, target-relative recovery and arithmetic specificity** separate until a theorem connects them at the destination.
+Observation horizon, admissible tail class, smoothing order, principal-part fidelity, absolute attenuation, inverse conditioning, target spectral distribution, destination topology and destination slack are distinct resources. AF-362--AF-364 price target recovery, AF-365 proves global principal-part survival, and AF-366 shows that finite-prefix observation has an enormous completion fibre unless the source class constrains the unseen tail. Future work must keep these layers separate until a theorem explicitly connects them.

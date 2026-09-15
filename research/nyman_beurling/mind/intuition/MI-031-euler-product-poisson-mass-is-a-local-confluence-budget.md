@@ -1,23 +1,27 @@
-# MI-031 — Positive Euler-product Poisson sampling is sharp off the line but has a self-dual boundary jump
+# MI-031 — Positive Euler-product Poisson occupancy is exactly a reflection-closure budget
 
-**Evidence level:** exact source-specific occupancy theorem from [NB-144](../../findings/NB-144-euler-product-poisson-mass-forces-logarithmic-confluence-away-from-the-one-line.md), with corrected minimax classification from [NB-146](../../findings/NB-146-separated-right-half-poisson-optimality-has-a-factor-two-self-dual-boundary-jump.md). NB-146 supersedes the withdrawn NB-145.
+**Evidence level:** exact source-specific occupancy theorem from [NB-144](../../findings/NB-144-euler-product-poisson-mass-forces-logarithmic-confluence-away-from-the-one-line.md), with endpoint correction NB-146 and the complete reflection-closure classification [NB-147](../../findings/NB-147-reflection-closure-exactly-interpolates-the-positive-poisson-occupancy-coefficient.md).
 
-For exterior samples `s=1+delta+iv`, the explicit formula and the absolutely convergent Euler product give one positive budget: the zero Poisson mass is bounded by `(1/2)log G` plus the `delta^(-1)` Euler-side cost. The useful charge per counted zero depends on its functional-equation reflection orbit.
+For exterior samples `s=1+delta+iv`, the explicit formula and absolutely convergent Euler product give one positive budget: zero Poisson mass is bounded by `(1/2)log G` plus the `delta^-1` Euler-side cost. NB-147 identifies the exact packet variable charged by this architecture.
 
-For a packet centered at `beta_G=1-epsilon_G>1/2` and separated from the critical line by more than its horizontal width, each counted zero has a **distinct reflected partner outside the packet**. Using only zero-side positivity and the pointwise absolute majorant for `zeta'/zeta`, arbitrary positive superpositions of exterior samples have sharp leading floor
+For any tight interior packet `C_G`, let `J(rho)=1-conj(rho)` and let `Chat_G=C_G union J(C_G)` be the multiset reflection closure, without double-counting partners already present. Then
 
-`(1/2) epsilon_G(1-epsilon_G) log G`.
+`sum_(rho in Chat_G) 1/(1-Re rho) <= (1/2+o(1)) log G`.
 
-The one-point sampler of NB-144 attains this floor when `epsilon_G log G -> infinity`. Thus more positive samples do not buy more arithmetic information in the separated right-half regime.
+This is not merely a one-sample estimate. Arbitrary positive multi-point or continuous exterior sampling, when the prime side is controlled only by the pointwise absolute Euler-product majorant, cannot lower the leading threshold for this weighted closure mass. A single sample with `delta=(log G)^-1/2` at the packet ordinate asymptotically saturates it.
 
-At a symmetric packet centered on `Re s=1/2`, the counting changes. A line zero is fixed by reflection, and an off-line reflected pair inside the symmetric packet already contributes two counted occurrences. The usable Poisson charge per counted occurrence is therefore half the formal off-line pair charge. The exact minimax coefficient becomes
+Near the critical line each closure weight is `2+o(1)`. If `d_G=|C_G|` and `b_G` is the number of packet occurrences whose reflected partner is absent from the packet, then
 
-`(1/4) log G`,
+`d_G+b_G <= (1/4+o(1)) log G`.
 
-whereas `lim_(epsilon->1/2-) (1/2)epsilon(1-epsilon) log G = (1/8)log G`.
+With `q_G=b_G/d_G`, this is
 
-The factor-two jump is not a discontinuity of the Poisson kernel. It is an **orbit-counting discontinuity**: off the line, a distinct uncounted partner contributes positive mass for free; at the self-dual boundary it does not.
+`d_G <= (1/[4(1+q_G)]+o(1)) log G`.
 
-The reusable conclusion has two parts. First, within the positive exterior-sampling architecture the off-line coefficient is already optimized, so the fixed-interior gap requires a new mathematical resource rather than denser sampling. Second, any argument moving the packet toward the critical line must track whether reflection remains a distinct outside occurrence; one cannot pass to the endpoint by continuity in `epsilon` alone.
+Thus the old `1/8` separated coefficient and `1/4` self-dual coefficient are the endpoints of one orbit-exposure law: `q=1` when every partner lies outside, `q=0` when the packet is reflection-saturated. The Poisson kernel never jumps; only the counted packet's closure deficit changes.
 
-**Boundary.** This is a method-optimality theorem for positive weights, Poisson positivity and the pointwise absolute Euler-product bound. Signed combinations, prime correlations, higher moments and target-projection information remain outside the classification.
+A useful rigidity consequence is quantitative. If a near-critical packet approaches the maximal `1/4 log G` occupancy, then `b_G=o(log G)`: almost all reflected partners must already lie in the packet. This does not prove RH or target bearing, but it identifies exactly what positive Poisson sampling can force about packet geometry.
+
+The reusable conclusion is therefore sharp: **within the positive exterior-sampling/absolute-Euler-majorant proof cone, reflection-closure mass is the complete local occupancy currency**. Denser positive sampling cannot improve it. Any stronger confluence theorem must use a different resource such as signed cancellation, prime correlations, higher moments, or target-projection information.
+
+**Boundary.** The theorem requires a tight packet in a fixed compact substrip and controls local occupancy, not Nyman target coercivity. It still permits `Theta(log G)` reflection-saturated packets and does not exclude off-critical zeros. Signed combinations, correlation information and target-bearing structure remain outside the classified positive cone.

@@ -1,31 +1,27 @@
-# MI-021 — A convergent full-tail Volterra trace forces both the boundary coefficient and the pointwise moving-tail law
+# MI-021 — One convergent singular-remainder trace now closes the full moving Green endpoint transfer
 
-**Evidence level:** exact conditional reduction from [PL-320](../../findings/PL-320-source-trace-full-tail-volterra-matching.md), using the endpoint identity of PL-319.
+**Evidence level:** exact conditional reduction from [PL-320](../../findings/PL-320-source-trace-full-tail-volterra-matching.md), completed by the conditional-moment Green theorem [PL-321](../../findings/PL-321-conditional-moment-green-transfer.md), using the endpoint identity of PL-319.
 
-For the logarithmic endpoint coordinate `Q`, write the full tail profile `g` in the exact form
+For the logarithmic endpoint coordinate `Q`, PL-320 writes the full tail profile `g` as
 
-`F(Q)=2Q g(Q)-U(Q)+H_(Q0)g(Q)+c_(Q0)(Q)g(Q)`,
+`F(Q)=2Q g(Q)-U(Q)+H_(Q0)g(Q)+c_(Q0)(Q)g(Q)`,  `U(Q)=int_(Q0)^Q g(P)dP`.
 
-`U(Q)=int_(Q0)^Q g(P)dP`.
+Assume `g(Q)->0`, the completed-Weil source trace `F(Q)->F_infinity`, and the local singular translation remainder `H_(Q0)g(Q)->H_infinity`. Then the residual right-hand side converges and the exact Volterra equation forces a coefficient `C` with
 
-Assume `g(Q)->0`, the source trace `F(Q)->F_infinity`, and the local singular translation remainder `H_(Q0)g(Q)->H_infinity`. Since `c_(Q0)(Q)` has a finite limit, the remainder
+`g(Q)=C Q^(-1/2)+m(Q)`,  `Qm(Q)->0`,
 
-`R(Q)=F(Q)-H_(Q0)g(Q)-c_(Q0)(Q)g(Q)`
+while the improper integral `int m(Q)dQ` converges. Thus the leading half-order coefficient and the pointwise anti-concentration needed at the moving diagonal are consequences of the same singular-remainder trace rather than separate assumptions.
 
-converges and the equation becomes `2Q g-U=R`.
+PL-321 closes the remaining transfer gap. If `m` is locally integrable, has a convergent improper moment `M`, and satisfies `Qm(Q)->0`, then for every fixed `r>0` the moving Green functional obeys
 
-The right variable is `W(Q)=U(Q)/sqrt(Q)`. Exactly,
+`A_s[m](r) -> e^-r M` as `s->0`.
 
-`W'(Q)=R(Q)/(2 Q^(3/2))`.
+The mechanism is explicit: before the moving diagonal the exact Green kernel factors into `a_s(r) w_s(Q) E_s(r,Q)`, where `a_s->e^-r`, `w_s` tends pointwise to `1` and has uniformly bounded variation, and `E_s-1` is exponentially small. Stieltjes/Dirichlet summation therefore transports a conditionally convergent moment. The condition `Qm->0` controls the moving and post-diagonal mass. Absolute `L^1` is unnecessary.
 
-Because the right side is integrable, `W(Q)->2C`. Solving back gives `sqrt(Q)g(Q)->C`. More importantly, with `m(Q)=g(Q)-C Q^(-1/2)`, the exact remainder formula makes the limiting `R_infinity/(2Q)` terms cancel, so
+For the actual completed-Weil branch, the source equation already provides the convergent full source trace and established boundary theory gives `g=O(Q^-1/2)`. The analytic endpoint-transfer problem is therefore reduced to the single local condition
 
-`m(Q)=o(1/Q)`,
+`H_(Q0)g(Q) -> H_infinity`.
 
-hence `Qm(Q)->0`. The improper moment `int m` also converges.
+Once that is proved, the coefficient, residual moment, moving-diagonal law and rank-one Green transfer follow in sequence from PL-320--PL-321.
 
-This changes the endpoint gate: **the leading `Q^(-1/2)` coefficient and the pointwise moving-diagonal anti-concentration are consequences of one convergent singular-remainder trace**, rather than two separate matching assumptions. For the actual completed-Weil state, PL-319 already supplies convergence of the full source trace and the literature supplies `g=O(Q^(-1/2))`; the remaining pointwise condition is convergence of `H_(Q0)g`.
-
-Absolute integrability remains independent. The smooth control `m_*(Q)=sin Q/(Q log Q)` has `Qm_*->0`, convergent improper integral and `H m_*->0`, but `int |m_*|=infinity`. Thus PL-320 does not by itself activate every dominated-convergence step in PL-314.
-
-**Boundary.** The Volterra deduction is universal endpoint analysis, not an arithmetic sign mechanism. Closing the analytic transfer still requires either source-specific absolute `L^1` for the actual residual or a proof that the Green transfer tolerates the weaker conditional moment; the later rational-prime sign/first-crossing problem remains separate.
+**Boundary.** This is universal endpoint analysis, not an arithmetic sign mechanism. It does not prove convergence of the singular translation remainder, positivity of the endpoint moment, rational-prime rigidity, or RH. The important change is narrower: the previous absolute-integrability alternative is gone, so no extra `L^1` theorem should be counted as an independent endpoint gate.
