@@ -57,7 +57,6 @@ Role: Liouville comparison baseline for `MC-003`. The paper records the classica
 NIST Digital Library of Mathematical Functions, §27.6, *Divisor Sums*, equation 27.6.1; notes cite Apostol, *Introduction to Analytic Number Theory* (1976), Chapter 2. https://dlmf.nist.gov/27.6.
 
 Role: authoritative classical anchor for the square-divisor identity used in `MC-003`. DLMF records `sum_{d|n} lambda(d)=1` when `n` is a square and `0` otherwise. Möbius/Dirichlet inversion yields `lambda(n)=sum_{d^2|n} mu(n/d^2)`, from which the exact summatory square-convolution relation follows.
-
 ## MC-S10 — Shi, Chowla sequences and independent random constructions
 
 Ruxi Shi, *Construction of some Chowla sequences*, Monatshefte für Mathematik 194 (2021), 193–224. DOI: https://doi.org/10.1007/s00605-020-01448-x.
@@ -117,7 +116,6 @@ Role: authoritative classical anchor for `MC-008`. DLMF records `zeta(s)=eta(s)/
 János Pintz, *Oscillation of partial sums of the Möbius function and zeros of Riemann's zeta function*, arXiv:2608.24878 (submitted 25 August 2026; revised 26 August 2026). https://arxiv.org/abs/2608.24878.
 
 Role: primary source for `MC-009`. Theorems 2.1 and 2.2 relate the mean absolute statistic `D_M(x)=x^(-1) int_0^x |M(u)|du` and the near-end maximum `S_{M,delta}(x)` to the zero-edge quantities `Z(x)` and `W(x)`, yielding logarithmic order governed by `vartheta=sup_{zeta(rho)=0} Re(rho)`. This is a very recent arXiv preprint; its theorem-level proof is treated as literature evidence pending independent audit rather than as independently verified Mathia derivation.
-
 ## MC-S20 — Ford, explicit Korobov–Vinogradov zeta bound
 
 Kevin Ford, *Vinogradov's Integral and Bounds for the Riemann Zeta Function*, Proceedings of the London Mathematical Society 85 (2002), no. 3, 565–633. DOI: https://doi.org/10.1112/S0024611502013655.
@@ -177,7 +175,6 @@ Role: primary higher-correlation theorem for `MC-040`. Corollary 1.6 states that
 Jizhou Guo, *Quantitative Logarithmic Chowla Correlations Uniformly over Growing Shifts*, arXiv:2608.23500 (submitted 24 August 2026; manuscript dated 26 August 2026). https://arxiv.org/abs/2608.23500.
 
 Role: recent preprint boundary for `MC-041`. Theorem 1.6 gives a fixed power-of-log saving for logarithmically weighted two-point Liouville correlations uniformly over every fixed polylogarithmic shift range. Theorem 1.3 gives maximal fixed-moment bounds over shift windows `H>=x^theta`, `theta>1/3`, and an arbitrarily fixed power-of-log saving for the harmonic tail above `n>H`. The paper explicitly notes that these logarithmically weighted results do not prove the ordinary Cesàro two-point Chowla conjecture. `MC-041` audits the exact Tauberian step required before such harmonic correlation estimates can enter an unweighted van der Corput bound.
-
 ## MC-S30 — Sitaraman, logarithmic summability and Tauberian side conditions
 
 Y. Sitaraman, *A Note on Logarithmic Summability (L)*, Proceedings of the Edinburgh Mathematical Society 15 (1966), no. 1, 47–55. DOI: https://doi.org/10.1017/S0013091500013183.
@@ -237,7 +234,6 @@ Role: direct prior-art anchor for `MC-064`. Lemma 2.3 defines `S_free_chi(x)=sum
 John B. Friedlander and Henryk Iwaniec, *What is ... the parity phenomenon?*, Notices of the American Mathematical Society 56 (2009), no. 7, 817–818.
 
 Role: classical sieve-theory prior-art anchor for `MC-082`. The note explains the parity phenomenon: ordinary sieve axioms and local divisibility information can fail to distinguish integers according to the parity of the number of prime factors. `MC-082` supplies an exact Liouville-divisor-density specialization and treats the phenomenon as established prior art, not as a new obstruction theorem.
-
 ## MC-S40 — Friedlander and Iwaniec, parity-sensitive sieve
 
 John B. Friedlander and Henryk Iwaniec, *Using a parity-sensitive sieve to count prime values of a polynomial*, Proceedings of the National Academy of Sciences of the United States of America 94 (1997), no. 4, 1054–1058. DOI: https://doi.org/10.1073/pnas.94.4.1054. Open full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC19742/.
@@ -291,3 +287,27 @@ Role: primary prior-art anchor for `MC-257`. Theorem 1 proves that for a prime `
 Igor E. Shparlinski, *On vanishing Fermat quotients and a bound of the Ihara sum*, Kodai Mathematical Journal 36 (2013), no. 1, 99–108. DOI: https://doi.org/10.2996/kmj/1364562722. arXiv: https://arxiv.org/abs/1104.3910.
 
 Role: direct prime-argument prior-art boundary for `MC-257`. The paper studies primes `ell<=N` for which `q_r(ell)=0`, improves estimates for their number, and connects the vanishing-Fermat-quotient sum to subfields of the cyclotomic field `Q(exp(2 pi i/r^2))`. `MC-257` therefore makes no novelty claim for the prime-base vanishing mechanism or its prime-square cyclotomic interpretation; it uses those classical facts only to audit the exact Mathia shell quotient.
+
+## MC-S49 — Helleseth, Kløve and Ytrehus, generalized Hamming weights and Griesmer bounds
+
+Tor Helleseth, Torleiv Kløve and Øyvind Ytrehus, *Generalized Hamming weights of linear codes*, IEEE Transactions on Information Theory 38 (1992), no. 3, 1133–1140. DOI: https://doi.org/10.1109/18.135655.
+
+Role: classical higher-support coding source for `MC-313`. The paper develops generalized Hamming weights and lower bounds on code parameters, including the generalized Griesmer framework used to test whether a stronger generic coding inequality can improve the source-redundancy conclusion of `MC-312`.
+
+## MC-S50 — Guruswami, erasure list decoding and generalized Hamming weights
+
+Venkatesan Guruswami, *List decoding from erasures: bounds and code constructions*, IEEE Transactions on Information Theory 49 (2003), no. 11, 2826–2833. DOI: https://doi.org/10.1109/TIT.2003.815776.
+
+Role: classical coding-theory boundary for `MC-313`. The paper makes explicit the equivalence between generalized-Hamming-weight bounds and adversarial erasure list decoding, and shows that achievable code rates approach the erasure capacity as the allowed list size grows. `MC-313` derives the exact shortened-code/coset dictionary needed for the Mathia source-incidence code and does not claim novelty for the coding interpretation itself.
+
+## MC-S51 — Kurz, Landjev and Rousseva, modern generalized Griesmer formulation
+
+Sascha Kurz, Ivan Landjev and Assia Rousseva, *Optimal codes and arcs for the generalized Hamming weights*, arXiv:2601.00250 (2026). arXiv: https://arxiv.org/abs/2601.00250. Repository version DOI: https://doi.org/10.15495/EPub_UBT_00008792.
+
+Role: exact theorem-form anchor for `MC-313`. Theorem 1 states the generalized Griesmer inequality `n >= d_r + sum_(i=1)^(k-r) ceil(d_r/(q^i v_r))`, with `v_r=(q^r-1)/(q-1)`, and attributes the result to the classical 1992/1995 literature. The binary specialization is used to prove that when `d_t < 2^t-1`, every extra ceiling equals one and the bound collapses exactly to generalized Singleton.
+
+## MC-S52 — Ding, Jin and Xing, random erasure list-decodable linear codes
+
+Yang Ding, Lingfei Jin and Chaoping Xing, *Erasure List-Decodable Codes From Random and Algebraic Geometry Codes*, IEEE Transactions on Information Theory 60 (2014), no. 7, 3889–3894. DOI: https://doi.org/10.1109/TIT.2014.2314468.
+
+Role: prior-art boundary for the generic-code control in `MC-313`. The paper proves that random linear codes attain the information-theoretic erasure rate/fraction tradeoff with constant list size `2^{O(1/epsilon)}` at fixed positive gap `epsilon` from capacity. `MC-313` gives its own elementary Gaussian-binomial union bound for the particular growing-list, rate-one-half generalized-weight profile needed as a matched source-code control.
