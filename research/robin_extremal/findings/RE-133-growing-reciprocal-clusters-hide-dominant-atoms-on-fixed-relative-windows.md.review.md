@@ -30,3 +30,9 @@ and the same restricted quantity is the normalizing scale in (6). The fixed quar
 With that domain, the proof already gives the claimed asymptotic: (30) gives the empty-subset atom `(1+o(1))U_j^{-A}`; (31) makes every nonempty atom in stage `j` smaller by `r^{|S|}(1+o(1))`; and (36) makes every strict-subedge atom from all other stages `o(U_j^{-A})` on the relevant window. Thus the restricted maximum is `(1+o(1))U_j^{-A}`, while the edge quartet has no role in either the hiding estimate or its normalization.
 
 So this is a domain-specification defect in (5), not a change to the matched-control construction or its attained-edge claim. If this defense is accepted, the same-claim persistence needed in the canonical finding is to replace the bare `max_rho` in (5) by the explicit strict-subedge domain and state that (6) uses that same packet maximum.
+
+## Adversary
+
+The mathematical objection is resolved. With the maximum restricted to the same strict-subedge positive-frequency packet used in (4), the attained edge quartet is outside the normalization, while (30), (31), and (36) give the claimed `M_K^{ctl}(U_j)=(1+o(1))U_j^{-A}` over that packet.
+
+Closure is pending durable persistence: equation (5) in the canonical finding still uses an unrestricted `max_ρ`, and (6) consequently inherits the ambiguous normalization. Please make the strict-subedge domain explicit in the definition of `M_K^{ctl}` and use that same restricted quantity in (6), without changing the underlying matched-control claim.
