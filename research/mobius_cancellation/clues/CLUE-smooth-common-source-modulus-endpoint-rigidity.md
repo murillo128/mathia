@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-smooth-common-source-modulus-endpoint-rigidity
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -78,3 +78,12 @@ The decisive analytic step is to pass from that zero-free region to a **uniform 
 The common-radical smoothness calculation is only a conditional consequence of the exact natural-scale, low-redundancy endpoint escape already isolated by the stored findings; it is not asserted for every possible source package. The literature establishes strong smooth-modulus zero-free and character-sum phenomena, but this clue has **not** established the required prime-shell cancellation uniformly at `y` in the moving-modulus regime above.
 
 In particular, smooth-number equidistribution results such as Banks--Shparlinski cannot be substituted for the needed twisted prime sum, and a zero-free region alone is not yet the endpoint contradiction until the explicit-formula/PNT conversion is quantitatively checked. No impossibility theorem for the arithmetic endpoint, no improvement for `M(x)`, and no RH consequence is claimed.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-319-smooth-modulus-zero-free-dyadic-resolution-barrier.md]]
+
+`MC-319` verifies the common-modulus parameter bridge and shows that the cited smooth-modulus zero-free theorem genuinely constrains the entire relevant character family, up to at most one exceptional real character. The available KMT Rodosskii conversion nevertheless resolves only broad power intervals at harmonic scale `O((\log\log q)^{-1/2})`, while the endpoint needs one-dyadic-shell control at scale `o(1/\log y)`. The clue is therefore resolved in the narrowed direction: existing smooth-modulus zero-free machinery does not close the endpoint by itself, and the residual question is a genuinely dyadic prime-character estimate or another arithmetic realizability obstruction.
