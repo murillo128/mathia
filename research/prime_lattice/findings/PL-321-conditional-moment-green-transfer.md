@@ -143,8 +143,7 @@ with the continuous value `1` at `R=0`. Since the integrand factor `(1+z)^{-1/2}
 Now set `q=sQ`, so `u=e^{-Q}`. Substituting `R^s` from (PL321-6), using `s^2\Gamma(s)^2=\Gamma(1+s)^2`, and using `t^s=e^{-r}`, gives the exact factorization
 
 \[
-\boxed{
-k_s(r,sQ)=a_s(r)\,w_s(Q)\,E_s(r,Q),}
+\boxed{k_s(r,sQ)=a_s(r)\,w_s(Q)\,E_s(r,Q),}
 \tag{PL321-8}
 \]
 
@@ -156,8 +155,7 @@ a_s(r)=e^{-r}\frac{(1-e^{-r/s})^s}{\Gamma(1+s)^2},
 \]
 
 \[
-\boxed{
-w_s(Q)=\bigl(4e^{-Q}(1-e^{-Q})\bigr)^s,}
+\boxed{w_s(Q)=\bigl(4e^{-Q}(1-e^{-Q})\bigr)^s,}
 \tag{PL321-10}
 \]
 
@@ -254,7 +252,7 @@ uniformly for all sufficiently small `s` with `B_s>A`. On the fixed interval `(0
 \tag{PL321-18}
 \]
 
-Letting first `s->0` and then `A->infinity`, (PL321-15)--(PL321-18) prove
+Letting first `s->0` and then `A->infty`, (PL321-15)--(PL321-18) prove
 
 \[
 \boxed{
@@ -339,7 +337,7 @@ we obtain
 \right|
 \le C_r\omega(B_s)\to0.
 }
-\tag{PL321-24]
+\tag{PL321-24}
 \]
 
 Equations (PL321-23) and (PL321-24) prove (PL321-3).
