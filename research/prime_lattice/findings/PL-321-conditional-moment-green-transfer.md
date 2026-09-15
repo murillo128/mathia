@@ -45,13 +45,7 @@ Then
 \tag{PL321-3}
 \]
 
-No absolute integrability is required. In particular, after a harmless cutoff, the `PL-320` control
-
-\[
-m_*(Q)=\frac{\sin Q}{Q\log Q}
-\]
-
-satisfies the theorem although `m_*` is not in `L^1(dQ)`.
+No absolute integrability is required. In particular, after a harmless cutoff, the `PL-320` control `m_*(Q)=\sin Q/(Q\log Q)` satisfies the theorem although `m_*` is not in `L^1(dQ)`.
 
 ## 1. Exact pre-diagonal Green factorization
 
@@ -130,15 +124,7 @@ E_s(r,Q)=\frac{1}{1-t/u}\vartheta_s(R).
 \tag{PL321-10}
 \]
 
-The Abel weight has the crucial uniform geometry
-
-\[
-0\le w_s\le1,
-\qquad
-w_s(Q)\to1\quad(Q>0),
-\]
-
-and is increasing up to `Q=log 2` and decreasing afterwards, with maximum exactly `1`. Thus its total variation is at most `2`, uniformly in `s`.
+The Abel weight satisfies `0<=w_s<=1`, converges pointwise to `1` for every fixed `Q>0`, is increasing up to `Q=log 2`, and is decreasing afterwards, with maximum exactly `1`. Its total variation is therefore at most `2`, uniformly in `s`.
 
 For `0<Q<=B_s`, equivalently `0<q<=r/2`,
 
@@ -161,7 +147,7 @@ Using (PL321-6),
 \tag{PL321-11}
 \]
 
-So, a fixed stretched distance before the moving pole, the exact kernel is an exponentially accurate perturbation of the explicit bounded-variation weight `a_s(r)w_s(Q)`.
+Thus a fixed stretched distance before the moving pole, the exact kernel is an exponentially accurate perturbation of the explicit bounded-variation weight `a_s(r)w_s(Q)`.
 
 ## 2. Conditional convergence passes through the Abel weight
 
