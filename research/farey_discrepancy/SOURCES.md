@@ -55,6 +55,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 ## Squarefree Erdős--Kac auxiliary input
 
 - Huixi Li, Biao Wang, Chunlin Wang and Shaoyun Yi, *Some ergodic theorems over squarefree numbers and squarefull numbers*, Acta Arithmetica **221** (2025), 117--140, DOI `10.4064/aa240909-18-6`, arXiv `2405.18157`. Role: primary theorem anchor for the squarefree Erdős--Kac law with any fixed finite set of excluded prime divisors. `FD-132` uses the `k=0` specialization of current arXiv Theorem 1.2(1), only with the excluded set empty or `{p}`, to show that a bounded-width central `omega(n)` layer has zero relative density while either Gaussian half-space has asymptotic mass one half. No uniformity in a prime `p=p(H)` is imported.
+- Kai (Steve) Fan, *Weighted Erdős--Kac theorems via computing moments*, Acta Arithmetica **217** (2025), 99--158, DOI `10.4064/aa231014-9-8`, arXiv `2306.11289`. Role: primary theorem anchor for weighted Gaussian laws of bounded strongly additive functions under nonnegative multiplicative weights; the paper explicitly includes `mu^2` as an admissible squarefree weight. `FD-138` applies Theorem 2.1 to `omega` and to the signed mod-4 prime-color sum `D(n)=sum_(p|n) chi_4(p)`, using only weak Gaussian convergence and not a local limit theorem or any uniformity in an excluded prime.
 
 ## Prime-divisibility large-sieve auxiliary input
 
