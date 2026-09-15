@@ -108,9 +108,11 @@ one has
 Thus at `t=t_R`,
 
 \[
-d_{t_R}(C)=R-O\!\left(\frac{R}{\log R}\right)=(1-o(1))R.
+d_{t_R}(C)\ge R-O\!\left(\frac{R}{\log R}\right).
 \tag{9}
 \]
+
+Together with generalized Singleton, `d_{t_R}\le R+t_R`, this gives `d_{t_R}(C)/R\to1`.
 
 So the coarse `MC-312` conclusion `n\ge2R-o(R)` at source scale `Z\le y^{(1+o(1))/R}` is compatible with ordinary rate-one-half binary code geometry. The source-incidence route has reached a genuine boundary: **generic generalized-weight geometry can accommodate the required linear redundancy and near-half erasure resilience.** Any further coercion must use arithmetic realizability of the incidence columns, a quantitatively sharper second-order source-scale budget, several generalized weights jointly, or another structure absent from a generic binary code.
 
@@ -294,13 +296,13 @@ A targeted literature check on 15 September 2026 found the generalized-weight, g
 - **The random code is not an arithmetic realization.** It matches only the binary representation-code geometry. Its columns are not asserted to be attainable as lower-prime Legendre incidence vectors for the endpoint shell.
 - **The result does not prove that `n=2R` is attainable by the source system.** It proves that ordinary binary coding constraints cannot rule out that scale at the coarse generalized-weight level.
 - **Generalized Griesmer is killed only in the stated regime.** Once `d_t\ge2^t-1`, its extra ceilings can exceed one. At `t_R\asymp2\log R`, every `n=O(R)` candidate lies below that threshold, which is exactly the current redundancy regime.
-- **The generic control gives a second-order deficit.** At `t_R`, `(8)` gives `R-d_t=O(R/\log R)`, not `O(1)`. A source-scale theorem precise enough to demand `d_{t_R}=R-o(R/\log R)` would therefore exceed this particular control and could reopen a coding obstruction.
+- **The generic control has a second-order gap.** At `t_R`, `(8)` guarantees only `d_{t_R}\ge R-O(R/\log R)`. A source-scale theorem precise enough to demand `d_{t_R}=R-o(R/\log R)` would therefore exceed this particular control and could reopen a coding obstruction.
 - **The `o(1)` source-scale allowance matters.** The current `Z\le y^{(1+o(1))/R}` specialization permits relative slack of order `1/\log R`; such slack is large enough at the level of orders to coexist with `(9)`. An exact or much sharper source-prime cap could change the conclusion.
 - **One generalized weight is not the whole hierarchy.** The control `(8)` handles a broad range simultaneously, but arithmetic may impose relations among all weights, column multiplicities, source-prime sizes, and representative products that random codes do not satisfy.
 - **No RH or Mertens estimate follows.** This is a negative structural result about the representation-code branch of the localized endpoint program.
 
 ## Consequence for the research line
 
-`MC-312` showed that a fixed endpoint representation must pay either source-coordinate redundancy or a larger individual source scale. The present finding says that the first escape is **not chargeable by the obvious next layer of generic coding theory**: generalized Griesmer reduces exactly to Singleton throughout the linear-length regime, and a full-length generic `[2R,R]` code can simultaneously have `d_t=(1-o(1))R` from logarithmic `t` upward.
+`MC-312` showed that a fixed endpoint representation must pay either source-coordinate redundancy or a larger individual source scale. The present finding says that the first escape is **not chargeable by the obvious next layer of generic coding theory**: generalized Griesmer reduces exactly to Singleton throughout the linear-length regime, and a full-length generic `[2R,R]` code can simultaneously have `d_t\ge(1-o(1))R` from logarithmic `t` upward.
 
 The live target should therefore move from scalar code bounds to the arithmetic realization problem. A useful next theorem must exploit a property that a random binary code does not possess: for example, the fact that every column is attached to a concrete lower prime, that source supports represent quadratic characters on one common prime shell, that source-prime products carry analytic cost, or that the entire weight hierarchy must coexist with those product labels. Equivalently, one can sharpen the second-order budget enough that the `O(R/\log R)` generic erasure-list slack becomes visible. Replacing Singleton by another generic one-weight bound at the same scale is no longer a live route.
