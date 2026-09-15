@@ -1,23 +1,21 @@
-# MI-023 — Fixed reciprocal-box packets have a cardinality-free visibility floor
+# MI-023 — Reciprocal-box visibility decays exponentially with scaled radius, and that rate is sharp
 
-**Evidence level:** exact reciprocal-box visibility theorem from [RE-135](../../findings/RE-135-fixed-reciprocal-box-packets-have-a-cardinality-free-visibility-floor.md), strengthening the bounded-cardinality compactness theorem [RE-134](../../findings/RE-134-bounded-reciprocal-box-packets-have-a-fixed-relative-visibility-floor.md)
+**Evidence level:** exact reciprocal-box visibility theorem from [RE-135](../../findings/RE-135-fixed-reciprocal-box-packets-have-a-cardinality-free-visibility-floor.md), quantitatively sharpened by [RE-136](../../findings/RE-136-reciprocal-box-visibility-has-a-sharp-exponential-radius-law.md)
 
-For the attained finite-edge Robin/CA packet, fix a relative observation window and a fixed scaled reciprocal box around a target strict-subedge zero. RE-135 removes the cardinality hypothesis from RE-134: for **any finite nonempty multiset** `C_U` inside that box,
+RE-135 removes occupancy as an escape mechanism. For any fixed scaled reciprocal box around a target strict-subedge zero, an arbitrary finite local Robin packet has a cardinality-free visibility floor because its normalized local spectrum is a probability measure on one compact set and its Fourier--Laplace transform satisfies `F(0)=1`.
 
-`sup_((1-kappa)U<=u<=U) |S_(C_U,K)(u)| >= c_0 #C_U |a_(rho_0,K)(U)|`,
+RE-136 prices the only remaining local noncompactness. For normalized positive-measure transforms supported in a scaled box of radius `R`, a fixed relative interval has visibility at least
 
-with `c_0>0` depending only on the fixed box/window/strip parameters, not on `#C_U`.
+`exp(-C_kappa R)`.
 
-The reason is stronger than bounded-term exponential-polynomial compactness. Inside a fixed `R/U` box the Robin coefficient ratios have one common orientation up to `O(U^-1)`. After dividing by `#C_U`, the local packet is the Fourier--Laplace transform
+The order is sharp: matched subset-product packets achieve residual `exp(-c_kappa R)`. Thus hiding by a factor `epsilon` costs scaled radius `Omega(log(1/epsilon))`; the deterioration of the compactness constant is not merely a proof artifact.
 
-`F_mu(x)=int exp(lambda x) dmu(lambda)`
+The same quantitative floor transfers to the physical Robin packet for radii `R(U)` up to a sufficiently small constant multiple of `log U`:
 
-of an empirical **probability measure** on one fixed compact set, plus a uniform `O(U^-1)` error. Probability measures on that compact set are weakly compact, while `F_mu(0)=1`; no limiting transform can vanish on a real interval. A uniform complex `L^2` floor follows, and the fast target carrier transfers it to the real Robin packet.
+`sup_((1-kappa)U<=u<=U)|S_(C_U,K)(u)| >= exp(-C_*R(U)) #C_U |a_(rho_0,K)(U)|`.
 
-This collapses the earlier concentration--compactness alternative. Growing occupancy inside a fixed scaled reciprocal box is not an escape mechanism. If the full packet hides at `o(M_K(U))` on a fixed-relative window, then for every fixed scaled radius `R` the complement of that box must supply order-`M_K(U)` cancellation. **Macroscopic hiding forces failure of reciprocal-scale tightness; scaled diameter, not local cardinality, is the unavoidable noncompact direction.**
+So the surviving attained-edge problem is no longer qualitative reciprocal-scale tightness. It is a **competition of exponents**: source information about the actual exterior packet must make the mass available beyond scaled radius `R` decay faster than the local visibility floor `exp(-C R)`, at least over the logarithmic radius window where the transfer is valid.
 
-The accepted growing-cluster control RE-133 is consistent with this sharpening. Its hiding packet has many atoms but also scaled vertical diameter tending to infinity, so no fixed reciprocal box contains the full cancelling cluster. RE-135 identifies that growing diameter as load-bearing and removes the need for a source-side bounded-occupancy theorem.
+This turns concentration--compactness into a quantitative budget. Local cardinality is irrelevant; radius buys cancellation only exponentially; and the formal matched class shows that this exchange rate cannot be improved without additional zeta-specific information.
 
-The next source theorem is therefore an exterior-tightness statement or a quantitative cost for escape as the scaled radius grows. If, along a hypothetical hiding sequence, the contribution outside some fixed `R/U` box were `o(M_K(U))`, the cardinality-free local floor would already give a contradiction.
-
-**Boundary.** The result is local to a fixed scaled radius. The visibility constant may deteriorate as `R->infinity`, and no rate is proved for `R=R(U)->infinity`. It does not show that actual off-critical zeta zeros satisfy reciprocal-scale tightness, that such zeros exist, or that the nonattained edge and `Theta=1` branches behave the same way.
+**Boundary.** RE-136 does not prove reciprocal-scale tightness for actual zeros or control the exterior mass. The exponential floor is a local visibility theorem and matched formal packets show sharpness only in the admitted formal class. The nonattained edge and `Theta=1` branches remain separate.

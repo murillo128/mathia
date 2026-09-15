@@ -2,31 +2,29 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Price a source resource that survives the destination operation
+## Price a source resource that survives the destination operation and the moving-parameter limit
 
 **Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`, `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`, `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`.
 
-AF-338 proves eventual fixed-order sign regularity for the Euler-log observation matrix. AF-339--AF-346 expose a source escape: prime-independent weighted perfect-power backgrounds preserve the right-half-plane RH pole discriminator while collapsing residual sign variation, and the same family saturates the resulting mass-concentration exponent.
+AF-338--AF-350 separate source richness, transform fidelity and terminal quotienting. In particular, the complete finite-order Riesz cutoff profile is exactly stable in the source-matched derivative-variation norm, while raw profile amplitude can collapse distinct sources; nevertheless an `O(X^theta)` terminal quotient still preserves Dirichlet principal parts strictly to the right of `Re s=theta`.
 
-AF-347--AF-349 locate the Riesz loss precisely. Sufficiently high fixed-order Riesz observation makes sparse perfect-power backgrounds and dense unit mass differ by only `O(1)` in raw profile amplitude, yet the **complete** finite-order Riesz cutoff profile remains injective and exactly stable in the source-matched derivative-variation norm:
-
-`TV(D^r F_r)=r! sum |a_n|`.
-
-AF-350 calibrates the weaker terminal quotient. If two fixed-order Riesz profiles differ by `O(X^theta)`, then the difference of their Dirichlet transforms is holomorphic on `Re s>theta`; every meromorphic principal part strictly to the right of the error line survives. For `Lambda-1`, an `O(X^theta)` Riesz bound therefore gives a zero-free half-plane `Re s>theta`.
-
-AF-351--AF-352 identify the open critical conditioning transition. For every fixed real `delta>0`,
+AF-351--AF-352 identify the fixed-order critical transition: every fixed real `delta>0` gives
 
 `RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))`,
 
-while the unsmoothed `delta=0` profile cannot satisfy the same sharp boundary norm. The critical-zero multiplier decays like `|gamma|^(-1-delta)`, so every positive decay gain crosses the absolute-summability threshold without moving the off-critical Mellin discriminator.
+whereas the unsmoothed endpoint `delta=0` cannot satisfy the same bound. AF-353 prices the fixed-parameter approach to zero: the absolute critical-zero budget diverges like `1/(2*pi*delta^2)`, while the actual cancellation-aware norm `K(delta)` is also unbounded under RH but can be much smaller.
 
-AF-353 now prices that gain. The positive-ordinate absolute zero-mode budget has
+AF-354--AF-355 now show that the endpoint singularity is already visible in the physical source. Unconditionally,
 
-`A_+(delta)=1/(2*pi*delta^2) - (log(2*pi)+gamma_E)/(2*pi*delta) + O(1)`
+`|R_delta(X_N)-R_0(X_N)| << delta X_N`
 
-as `delta->0+`, while under RH the optimal prime-profile norm `K(delta)` also diverges as `delta->0+` although no rate is proved for it. The qualitative threshold is therefore cheap in exponent but singular in constants.
+on the half-integer mesh, so sufficiently fast moving orders inherit Hardy--Littlewood endpoint oscillation. Under RH the cancellation-aware comparison improves to
 
-The live theorem is to derive a **target-scale conditioning gain from admissible source structure with quantitative parameter control**. For a moving order `delta=delta(X)->0`, what source-native estimate can offset the diverging conditioning budget without importing RH or the desired zero-free region? Any proposed gain must distinguish the exact `delta^-2` triangle-inequality spectral cost from the unknown cancellation-aware growth of the physical profile.
+`|R_delta(X_N)-R_0(X_N)| << sqrt(X_N) log^2(2X_N) min(1,delta log(2X_N))`.
+
+Consequently every polynomially vanishing order `delta_N=N^-a`, `a>0`, is still too close to the endpoint to satisfy the sharp `O(sqrt(N))` profile under RH. The unresolved moving regime begins around the much slower scale `delta_N >=~ logloglog(N)/log^3(N)`; failure of the known obstruction there is not a positive theorem.
+
+The live theorem is therefore no longer merely to offset the `delta^-2` absolute budget. It is to identify a **source-native cancellation estimate with uniform moving-parameter control** in the surviving slow-vanishing regime, or prove that no such schedule can retain the critical norm. Any candidate must distinguish the absolute zero-mode budget, the physical profile norm, and the source-to-endpoint comparison rather than infer one from another.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -34,9 +32,9 @@ The live theorem is to derive a **target-scale conditioning gain from admissible
 
 Localization, contraction, lifting and smoothing can move or attenuate information without making it cheaper in the metric used by the final theorem. AF-349 makes this metric dependence exact: the full Riesz map is an isometry up to `r!` from local coefficient `ell^1` into derivative variation, yet there is no scale-uniform inverse modulus from raw `C^0` profile amplitude to that coefficient distance on the perfect-power controls.
 
-AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. AF-353 adds the missing parameter audit: fixed-`delta` boundedness does not imply uniform stability as the representation approaches `delta=0`; the absolute spectral conditioning constant diverges quadratically and the actual critical profile norm is necessarily unbounded.
+AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. AF-353--AF-355 add the limiting-parameter audit: fixed-`delta` boundedness does not imply a useful moving family, and even under RH every polynomial approach to the unsmoothed endpoint retains the endpoint oscillation at the critical scale.
 
-Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale, discriminator and parameter regime required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and fixed-parameter conditioning is not a uniform resource unless its constants remain controlled in the limit actually used.
+Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale, discriminator and parameter regime required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and fixed-parameter conditioning is not a uniform resource unless its constants and source comparison remain controlled in the limit actually used.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -58,4 +56,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity, transform fidelity, terminal loss and parameter-uniform conditioning as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class and destination slack are provably different resources. AF-349--AF-353 now separate five levels in one example: the complete Riesz representation preserves coefficient distance exactly in a source-matched derivative-variation norm; raw amplitude can collapse distinct sources; the quotient by `O(X^theta)` still preserves Dirichlet principal parts in `Re s>theta`; every fixed positive real Riesz order improves critical boundary conditioning without removing the zero discriminator; and the constants become singular as that order approaches the unsmoothed endpoint. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer loss or usefulness from source richness, transformed amplitude, intermediate invertibility or fixed-parameter smoothing alone.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class and destination slack are provably different resources. AF-349--AF-355 now separate the complete representation, weak terminal quotient, fixed-order critical threshold, absolute spectral conditioning cost, and moving-order source obstruction. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility or fixed-parameter smoothing alone.

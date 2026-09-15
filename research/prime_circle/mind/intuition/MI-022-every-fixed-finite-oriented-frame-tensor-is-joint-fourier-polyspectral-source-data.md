@@ -1,0 +1,13 @@
+# MI-022 — Every fixed finite oriented-frame tensor is joint Fourier/polyspectral source data
+
+**Evidence level:** exact finite-tensor classification and prior-art classicalization from [PC-303](../../findings/PC-303-finite-oriented-frame-tensors-are-joint-fourier-polyspectra.md), extending the quadratic boundary [PC-302](../../findings/PC-302-oriented-cross-frame-repair-is-mode-reversal-gauge-or-sine-fourier-covariance.md)
+
+PC-302 shows that retaining labelled oriented frames before same-source Gram formation restores a genuine reflection-odd channel, but its first quadratic statistic is classical sine/cosine Fourier covariance. PC-303 classifies the whole fixed finite tensor hierarchy.
+
+A monomial in labelled frame entries and conjugates is exactly one additive character of the source coordinates. Averaging against an arbitrary joint source law therefore returns one coefficient of its joint additive Fourier transform. If the frames are averaged first and then fed into any fixed polynomial invariant, the result is a finite polynomial in the ordinary source Fourier coefficients. Requiring translation invariance restricts those monomials to the classical zero-sum polyspectral algebra; the cubic bispectrum is the first phase-sensitive scalar.
+
+So higher tensor order **does** retain phase that positive quadratic geometry discards, but fixed finite order does not create a new Prime-Circle carrier. It simply exposes higher joint Fourier/polyspectral data already belonging to the source distribution. For the canonical distinct-prime source, partition-lattice inclusion--exclusion reduces every fixed-order joint transform to a finite polynomial in the ordinary prime exponential sums `S_q(a)`.
+
+The useful dividing line is therefore not quadratic versus higher-order. It is **fixed finite character algebra versus a genuinely new operation**. A surviving Prime-Circle construction must use growing tensor order with a quantitative nonclassical limit, couple several levels/moduli before reduction to additive characters, or introduce a geometry-forced order-sensitive operation whose output is not already determined by the finite joint Fourier packet.
+
+**Boundary.** PC-303 does not close growing tensor degree, cross-level constructions, asymmetric windows justified by the source, or nonpolynomial operators acting before character reduction. It classifies only finite polynomial/tensor observables of the current oriented-frame representation.

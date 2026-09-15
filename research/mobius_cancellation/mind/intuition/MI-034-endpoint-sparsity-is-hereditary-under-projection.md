@@ -1,31 +1,25 @@
-# MI-034 — Endpoint sparsity is hereditary under projection and forces polynomial source cost
+# MI-034 — Endpoint sparsity is hereditary under both target projection and source cuts
 
-**Evidence level:** exact endpoint-projection source-complexity obstruction from [MC-307](../../findings/MC-307-hereditary-endpoint-projection-polynomial-source-cost.md), using the source-cost setup of MC-293 and the audited Brun--Titchmarsh mechanism of MC-305
+**Evidence level:** exact endpoint-projection/source-complexity obstruction from [MC-307](../../findings/MC-307-hereditary-endpoint-projection-polynomial-source-cost.md), dualized and sharpened by [MC-308](../../findings/MC-308-dual-source-cut-endpoint-occupancy.md), using the audited Brun--Titchmarsh mechanism of MC-305
 
-The one-defect endpoint law remains sparse after forgetting coordinates. If `I` is any proper set of `k` selected shell functionals, then the projected sign vector can only be all minus or have its unique plus in one of the `k` retained coordinates. Thus the projected shell occupies at most `k+1` sign cells out of `2^k`.
-
-Let `P_I` be the squarefree radical of minimum lower-prime representatives for those coordinates. Applying Brun--Titchmarsh to the available residue classes gives
-
-`log(y/P_I) <= (2+o(1))(k+1)log y/2^k + O(1)`,
-
-so
+MC-307 shows that the one-defect endpoint law remains exponentially sparse after forgetting selected **target coordinates**. For any `k` retained endpoint functionals, at most the all-minus cell and the `k` one-defect cells survive. If `P_I` is the common radical of minimum lower-prime representatives for those directions, Brun--Titchmarsh forces
 
 `P_I >= y^(1-(2+o(1))(k+1)/2^k)e^(-O(1))`.
 
-Because `P_I <= prod_{i in I} Q_i`, the same exponent lower-bounds the product of the minimum source costs. At the strongest fixed projection dimension `k=6`, every six selected directions satisfy
+So source complexity cannot be supplied only in aggregate by many cheap almost-disjoint coordinates: it must survive restriction to small endpoint subfamilies.
 
-`prod_{i in I} Q_i >= y^(25/32-o(1))`,
+MC-308 identifies the dual invariant when one instead forgets **source primes**. Attach to each source prime `p` its incidence column `a_p in F_2^k`. For a retained source set `J`, quotient the endpoint space by the span of the omitted source columns. If the quotient has dimension `t_J` and the images of `0,e_1,...,e_k` occupy `h_J` distinct states, then the exact endpoint occupies exactly the fraction
 
-and hence the sixth-smallest selected cost obeys
+`h_J / 2^(t_J)`
 
-`Q_(6) >= y^(25/192-o(1))`.
+of source-sign assignments modulo `P_J=prod_(p in J)p`. Brun--Titchmarsh gives
 
-So all but at most five endpoint directions are individually expensive at a fixed polynomial scale. In the growing regime `k/2^k -> 0`, every `k`-subfamily must collectively see radical `y^(1-o(1))`.
+`P_J >= y^(1-(2+o(1)) h_J/2^(t_J)) e^(-O(1))`.
 
-This changes the source geometry. A near-shell **full** radical can be assembled from many cheap almost-disjoint coordinates, as MC-306 demonstrates, but such a construction collapses under restriction: for fixed `k`, its projected radical is only `y^o(1)`. The actual endpoint cannot collapse this way. Its source complexity must survive coordinate deletion.
+The useful threshold is therefore not the cardinality of the source cut. It is whether deleting complementary source coordinates leaves a quotient in which the one-defect simplex still occupies less than half the available states. The MC-307 theorem is the special case retaining all source primes.
 
-The reusable principle is therefore: **for a sparse endpoint law, test complexity hereditarily, not only in aggregate.** A source model is not genuinely matched merely because it reproduces full-family rank, energy, conductor, radical and quotient capacities; it must also reproduce the capacities of the endpoint after projection to smaller coordinate sets.
+The reusable principle is now two-sided: **endpoint source complexity must survive the restrictions induced on both sides of the incidence map.** Target-coordinate projections test whether complexity is hereditary across endpoint subfamilies; source cuts test whether that sparsity is already visible through a low-product subset of the underlying prime coordinates. A model that matches only full rank, full radical, energy or full quotient occupancy can still fail either hereditary audit.
 
-For the Möbius line this leaves a concrete arithmetic frontier. Any surviving independent endpoint family must obtain the hereditary profile from polynomially expensive directions, heavy overlap of minimum lower-prime representatives, or a different source mechanism with the same restriction stability.
+For the Möbius line this turns overlap geometry into a concrete object. The next useful theorem should exploit how minimum lower-prime representatives share source columns across many endpoint directions, and determine whether enough low-product source cuts retain a sparse quotient simplex to contradict the actual available radical budget.
 
-**Boundary.** The projected bounds are necessary conditions for the exact endpoint partition. They do not rule that partition out, determine the minimum representatives, imply global Möbius cancellation, or show that hereditary source complexity is sufficient for an RH-scale estimate.
+**Boundary.** These are necessary conditions for the exact endpoint partition. They do not prove that the actual Legendre system cannot realize the required hereditary profile, nor that any particular family of cuts is sufficient for RH-scale cancellation.

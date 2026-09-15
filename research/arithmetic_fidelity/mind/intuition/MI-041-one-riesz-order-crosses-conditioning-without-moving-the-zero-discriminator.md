@@ -1,39 +1,35 @@
-# MI-041 — Any positive Riesz order crosses the critical conditioning threshold, but the endpoint cost is singular
+# MI-041 — Fixed positive Riesz order crosses the critical conditioning threshold, but the moving endpoint has its own scale
 
-**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) and refining the integer-order result [AF-351](../../findings/AF-351-one-riesz-order-is-the-critical-boundary-conditioning-threshold.md)
+**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md), [AF-354](../../findings/AF-354-fast-vanishing-riesz-order-inherits-endpoint-oscillation.md), and [AF-355](../../findings/AF-355-rh-cancellation-strengthens-moving-riesz-endpoint-obstruction.md)
 
-For fixed real `delta>=0`, let
+For fixed real `delta>0`, the Riesz profile
 
-`R_delta[Lambda-1](X)=sum_(n<=X)(Lambda(n)-1)(1-n/X)^delta`.
+`R_delta[Lambda-1](X)=sum_(n<=X)(Lambda(n)-1)(1-n/X)^delta`
 
-AF-352 identifies the exact qualitative transition at the sharp `sqrt(X)` boundary:
+has the exact qualitative transition
 
-`RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))` for every fixed `delta>0`,
+`RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))`,
 
-whereas `delta=0` cannot satisfy the same bound because `psi(X)-X=Omega_±(sqrt(X) log log log X)`.
+whereas `delta=0` cannot satisfy the same bound because `psi(X)-X=Omega_±(sqrt(X) log log log X)`. The Mellin multiplier `B(rho,delta+1)` decays like `Gamma(1+delta)|gamma|^(-1-delta)` on the critical line, so every fixed positive order crosses the absolute-summability threshold without moving the off-critical singularity discriminator.
 
-The mechanism is the Mellin multiplier
+The endpoint is nevertheless singular in two different senses. AF-353 gives the absolute zero-mode budget
 
-`B(rho,delta+1)=Gamma(rho)Gamma(delta+1)/Gamma(rho+delta+1)`.
+`A_+(delta)=1/(2*pi*delta^2) - (log(2*pi)+gamma_E)/(2*pi*delta) + O(1)`,
 
-On the critical line its size is asymptotic to `Gamma(1+delta)|gamma|^(-1-delta)`. Since `N(T)=O(T log T)`, every fixed `delta>0` makes the critical-zero coefficient tail absolutely summable; at `delta=0` the `1/|gamma|` endpoint does not. At the same time the beta multiplier is nonzero in `Re s>1/2`, so an `O(sqrt(X))` profile still excludes every off-critical zero through the Mellin singularity argument.
+while the cancellation-aware physical norm `K(delta)=sup X^(-1/2)|R_delta[Lambda-1](X)|` also diverges as `delta->0+` under RH but need not have the same rate.
 
-AF-353 prices the approach to the open endpoint. For positive ordinates,
+AF-354 and AF-355 show that a moving order cannot be treated by plugging `delta=delta(X)` into the fixed-parameter theorem. On the half-integer mesh `X_N=N+1/2`, the unconditional source comparison is
 
-`A_+(delta)=sum_(gamma>0)|B(rho,1+delta)|`
+`|R_delta(X_N)-R_0(X_N)| << delta X_N`.
 
-has the unconditional Laurent law
+Hence orders with `delta_N sqrt(N)/logloglog(N)->0` inherit the Hardy--Littlewood endpoint oscillation and cannot be `O(sqrt(N))`; in particular every power `N^-a` with `a>=1/2` fails.
 
-`A_+(delta)=1/(2*pi*delta^2) - (log(2*pi)+gamma_E)/(2*pi*delta) + O(1)`.
+Under RH, Abel summation retains cancellation and improves the comparison to
 
-The quadratic pole comes from the secondary zero zeta `sum gamma^(-s)`: the target mode density and the barely summable multiplier meet at a double pole. Thus arbitrarily weak positive smoothing crosses the summability threshold, but it does so with an absolute conditioning budget that diverges like `delta^(-2)`.
+`|R_delta(X_N)-R_0(X_N)| << sqrt(X_N) log^2(2X_N) min(1, delta log(2X_N))`.
 
-There is a separate, weaker statement for the actual prime profile. Under RH, if
+Therefore, if `delta_N log^3(N)/logloglog(N)->0`, the moving profile still has `Omega_±(sqrt(N) logloglog(N))`. This rules out **every polynomially vanishing order** `delta_N=N^-a`, `a>0`, on the RH side. AF-355 also forces a subsequential lower rate `K(delta_j) >> log log(1/delta_j)`.
 
-`K(delta)=sup_(X>=2, X noninteger) X^(-1/2)|R_delta[Lambda-1](X)|`,
+The reusable point is that crossing a fixed-parameter summability threshold and controlling a moving family are different theorems. The relevant moving quantity is the competition between the representation parameter and the source's own endpoint excursion; fixed-`delta` constants do not commute automatically with `X->infinity`.
 
-then `K(delta)<infinity` for every fixed `delta>0` but `K(delta)->infinity` as `delta->0+`. AF-353 does **not** identify the growth rate of `K(delta)` with `delta^(-2)`; cancellation among zero modes may make the optimal profile norm much smaller than the absolute spectral budget.
-
-The reusable point is therefore two-dimensional. A representation can preserve the discriminator and improve fixed-parameter conditioning, yet become singular as it approaches a less-smoothed boundary. The correct audit is not only whether multiplier decay lies on the summable side of the target mode density, but also the distance to the density singularity and the resulting dependence of constants on the representation parameter.
-
-**Boundary.** All RH equivalences remain fixed-`delta` statements. No criterion is proved for `delta=delta(X)->0`, no `delta`-rate is known for the optimal prime profile norm `K(delta)`, and the conditioning gain does not supply the missing arithmetic estimate. The `delta^(-2)` law prices the triangle-inequality zero-mode budget, not the best possible cancellation-aware norm.
+**Boundary.** No moving-order RH criterion is proved. The region `delta_N` comparable to or larger than `logloglog(N)/log^3(N)` remains open to these arguments, and the true growth of `K(delta)` is still unknown. The `delta^-2` law is the triangle-inequality zero-mode budget, not the optimal cancellation-aware norm.
